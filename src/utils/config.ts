@@ -124,37 +124,25 @@ const templateConfig: TemplateConfig = {
       id: "how-it-works",
       title: "So funktioniert's",
       subtitle:
-        "In fünf einfachen Schritten zu deinem persönlichen Ernährungstracker – von der Installation bis zum ersten Erfolg",
+        "Tracken war nie einfacher – drei Schritte zu deinem Ziel",
       steps: [
         {
-          title: "App installieren",
+          title: "Ziel setzen & loslegen",
           subtitle:
-            "Lade Mahlzait kostenlos aus dem App Store oder Google Play Store herunter und installiere die App auf deinem iPhone oder Android-Gerät.",
-          image: "/stock/01.webp",
+            "Account erstellen, Kalorien- & Makroziele eingeben – fertig in 60 Sekunden. Keine nervigen Onboardings, keine Zwangstutorials. Einfach starten.",
+          image: "/screenshots/1.webp",
         },
         {
-          title: "Ziele festlegen",
+          title: "Essen loggen – so wie DU willst",
           subtitle:
-            "Erstelle dein Profil und definiere deine persönlichen Ziele: Kalorien, Makronährstoffe (Protein, Kohlenhydrate, Fette) und Gewichtsziel.",
-          image: "/stock/02.webp",
+            "Chatte mit der KI ('Hab grad ne Pizza vom Italiener gegessen'), scanne Barcodes, durchsuche 500.000+ Lebensmittel oder lass YouTube-Rezepte analysieren. Auch offline.",
+          image: "/screenshots/2.webp",
         },
         {
-          title: "Essen loggen",
+          title: "Smart tracken & Ziele erreichen",
           subtitle:
-            "Erfasse deine Mahlzeiten per Suche, Barcode-Scan oder KI – in Sekunden hast du alle Nährwerte im Blick und dein Tagesfortschritt ist aktualisiert.",
-          image: "/stock/03.webp",
-        },
-        {
-          title: "Rezepte erstellen & teilen",
-          subtitle:
-            "Speichere wiederkehrende Mahlzeiten als Rezepte – aus YouTube-Videos, manuell oder per Suche – und teile sie mit Freunden per Link.",
-          image: "/stock/04.webp",
-        },
-        {
-          title: "Fortschritt checken",
-          subtitle:
-            "Behalte deinen Fortschritt im Kalender und in den Insights im Blick: Diagramme, Trends und Gewichtsverlauf zeigen dir, wie du deine Ziele erreichst.",
-          image: "/stock/05.webp",
+            "Die KI schlägt dir passende Mahlzeiten vor – basierend auf Tageszeit und bereits Gegessenem. Teile Rezepte per Link, level up durch konsequentes Tracking, sync mit Apple Health.",
+          image: "/screenshots/3.webp",
         },
       ],
     },

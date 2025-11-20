@@ -25,7 +25,7 @@ interface Message {
 const DEMO_SUGGESTIONS = [
     "Ich habe gerade Pizza gegessen",
     "200g Hähnchenbrust mit Reis",
-    "Apfel mit Erdnussbutter",
+    "https://www.chefkoch.de/rezepte/3134181466859477/Gebackene-Camembert-Happen.html",
 ];
 
 const MAX_DEMO_MESSAGES = 3;
@@ -169,19 +169,19 @@ export default function LiveDemo() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="relative h-[548px] 2xs:h-[720px] sm:h-[648px] md:h-[548px] w-[280px] 2xs:w-[360px] sm:w-[320px] md:w-[280px] rounded-[3rem] mx-auto"
+                        className="relative h-[580px] 2xs:h-[740px] sm:h-[680px] md:h-[600px] w-[280px] 2xs:w-[360px] sm:w-[320px] md:w-[290px] rounded-[3rem] mx-auto"
                     >
                         {/* Screen Content */}
-                        <div className="absolute top-4 left-3 w-[calc(100%-40px)] h-[calc(100%-32px)] rounded-[1.2rem] 2xs:rounded-[1.8rem] overflow-hidden">
+                        <div className="absolute top-[12px] 2xs:top-[16px] sm:top-[14px] md:top-[13px] bottom-[20px] 2xs:bottom-[26px] sm:bottom-[23px] md:bottom-[21px] left-[12px] 2xs:left-[16px] sm:left-[14px] md:left-[13px] right-[12px] 2xs:right-[16px] sm:right-[14px] md:right-[13px] rounded-[1.6rem] 2xs:rounded-[2rem] sm:rounded-[1.8rem] md:rounded-[1.7rem] overflow-hidden shadow-inner">
                             <div className="flex flex-col h-full bg-base-100">
                                 {/* Status Bar */}
-                                <div className="bg-primary/10 px-3 py-2 flex justify-between items-center">
-                                    <span className="font-semibold text-[11px]">Mahlzait</span>
-                                    <span className="opacity-70 text-[10px]">🔴 Live</span>
+                                <div className="bg-primary/10 px-3 2xs:px-4 py-2 2xs:py-2.5 flex justify-between items-center flex-shrink-0">
+                                    <span className="font-semibold text-[11px] 2xs:text-xs">Mahlzait</span>
+                                    <span className="opacity-70 text-[10px] 2xs:text-[11px]">🔴 Live</span>
                                 </div>
 
                                 {/* Messages Area */}
-                                <div className="flex-1 overflow-y-auto overflow-x-hidden p-2 space-y-3">
+                                <div className="flex-1 overflow-y-auto overflow-x-hidden p-2 2xs:p-3 space-y-2 2xs:space-y-3">
                                     <AnimatePresence>
                                         {messages.map((msg, idx) => (
                                             <motion.div
@@ -192,26 +192,26 @@ export default function LiveDemo() {
                                                 className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                                             >
                                                 <div
-                                                    className={`max-w-[85%] px-3 py-2 rounded-2xl ${msg.role === "user"
+                                                    className={`max-w-[85%] px-2.5 2xs:px-3 py-1.5 2xs:py-2 rounded-2xl ${msg.role === "user"
                                                         ? "bg-primary text-primary-content"
                                                         : "bg-base-200 text-base-content"
                                                         }`}
                                                 >
-                                                    <p className="text-xs leading-relaxed">{msg.content}</p>
+                                                    <p className="text-[11px] 2xs:text-xs leading-relaxed">{msg.content}</p>
                                                     
                                                     {/* Meal Cards */}
                                                     {msg.meals && msg.meals.length > 0 && (
-                                                        <div className="mt-2 space-y-2">
+                                                        <div className="mt-1.5 2xs:mt-2 space-y-1.5 2xs:space-y-2">
                                                             {msg.meals.map((meal) => (
-                                                                <div key={meal.id} className="bg-base-300 rounded-lg p-2 border border-success/20">
-                                                                    <div className="font-semibold flex items-center gap-1 text-[11px]">
-                                                                        <span className="text-xs">🍽️</span>
+                                                                <div key={meal.id} className="bg-base-300 rounded-lg p-1.5 2xs:p-2 border border-success/20">
+                                                                    <div className="font-semibold flex items-center gap-1 text-[10px] 2xs:text-[11px]">
+                                                                        <span className="text-[11px] 2xs:text-xs">🍽️</span>
                                                                         <span className="truncate">{meal.name}</span>
                                                                     </div>
-                                                                    <div className="text-base-content/70 mt-0.5 text-[10px]">
+                                                                    <div className="text-base-content/70 mt-0.5 text-[9px] 2xs:text-[10px]">
                                                                         {meal.quantity.value}{meal.quantity.unit} · {Math.round(meal.macros.kcal)} kcal
                                                                     </div>
-                                                                    <div className="flex gap-2 mt-0.5 text-base-content/60 text-[10px]">
+                                                                    <div className="flex gap-1.5 2xs:gap-2 mt-0.5 text-base-content/60 text-[9px] 2xs:text-[10px]">
                                                                         <span>P: {meal.macros.protein_g.toFixed(1)}g</span>
                                                                         <span>C: {meal.macros.carbs_g.toFixed(1)}g</span>
                                                                         <span>F: {meal.macros.fat_g.toFixed(1)}g</span>
@@ -220,9 +220,9 @@ export default function LiveDemo() {
                                                                     {/* Ingredients */}
                                                                     {meal.ingredients && meal.ingredients.length > 0 && (
                                                                         <div className="mt-1 pt-1 border-t border-base-content/10">
-                                                                            <div className="text-base-content/60 mb-0.5 text-[9px]">Zutaten:</div>
+                                                                            <div className="text-base-content/60 mb-0.5 text-[8px] 2xs:text-[9px]">Zutaten:</div>
                                                                             {meal.ingredients.map((ing, ingIdx) => (
-                                                                                <div key={ingIdx} className="text-base-content/70 ml-2 text-[9px] truncate">
+                                                                                <div key={ingIdx} className="text-base-content/70 ml-1.5 2xs:ml-2 text-[8px] 2xs:text-[9px] truncate">
                                                                                     • {ing.name} ({ing.quantity.value}{ing.quantity.unit})
                                                                                 </div>
                                                                             ))}
@@ -243,11 +243,11 @@ export default function LiveDemo() {
                                             animate={{ opacity: 1 }}
                                             className="flex justify-start"
                                         >
-                                            <div className="bg-base-200 px-3 py-1.5 rounded-2xl">
+                                            <div className="bg-base-200 px-2.5 2xs:px-3 py-1.5 2xs:py-2 rounded-2xl">
                                                 <div className="flex space-x-1">
-                                                    <div className="w-1.5 h-1.5 bg-base-content/50 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-                                                    <div className="w-1.5 h-1.5 bg-base-content/50 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-                                                    <div className="w-1.5 h-1.5 bg-base-content/50 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+                                                    <div className="w-1 2xs:w-1.5 h-1 2xs:h-1.5 bg-base-content/50 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
+                                                    <div className="w-1 2xs:w-1.5 h-1 2xs:h-1.5 bg-base-content/50 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
+                                                    <div className="w-1 2xs:w-1.5 h-1 2xs:h-1.5 bg-base-content/50 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
                                                 </div>
                                             </div>
                                         </motion.div>
@@ -258,37 +258,37 @@ export default function LiveDemo() {
 
                                 {/* Input Area */}
                                 {userMessageCount >= MAX_DEMO_MESSAGES ? (
-                                    <div className="p-3 bg-gradient-to-r from-primary/10 to-secondary/10 border-t border-primary/20">
-                                        <div className="text-center space-y-1.5">
-                                            <p className="text-xs font-semibold text-primary">
+                                    <div className="p-2.5 2xs:p-3 bg-gradient-to-r from-primary/10 to-secondary/10 border-t border-primary/20 flex-shrink-0">
+                                        <div className="text-center space-y-1 2xs:space-y-1.5">
+                                            <p className="text-[11px] 2xs:text-xs font-semibold text-primary">
                                                 🎉 Demo abgeschlossen!
                                             </p>
-                                            <p className="text-[10px] text-base-content/70">
+                                            <p className="text-[9px] 2xs:text-[10px] text-base-content/70">
                                                 Für unbegrenztes Tracking
                                             </p>
                                             <a
                                                 href="/app"
-                                                className="btn btn-xs btn-primary"
+                                                className="btn btn-xs btn-primary text-[10px] 2xs:text-[11px]"
                                             >
                                                 📱 App laden
                                             </a>
                                         </div>
                                     </div>
                                 ) : (
-                                    <form onSubmit={handleSubmit} className="py-3 pl-2 pr-[100px] bg-base-200">
-                                        <div className="flex gap-2">
+                                    <form onSubmit={handleSubmit} className="p-1.5 2xs:p-2 bg-base-200 flex-shrink-0">
+                                        <div className="flex gap-1 2xs:gap-1.5">
                                             <input
                                                 type="text"
                                                 value={input}
                                                 onChange={(e) => setInput(e.target.value)}
                                                 placeholder="Nachricht..."
-                                                className="flex-1 input input-xs input-bordered bg-base-100 text-xs"
+                                                className="flex-1 input input-xs input-bordered bg-base-100 text-[11px] 2xs:text-xs min-w-0 h-7 2xs:h-8"
                                                 disabled={isLoading}
                                             />
                                             <button
                                                 type="submit"
                                                 disabled={!input.trim() || isLoading}
-                                                className="btn btn-xs btn-primary min-w-[28px] px-1.5"
+                                                className="btn btn-xs btn-primary min-w-[24px] 2xs:min-w-[28px] px-1 2xs:px-1.5 flex-shrink-0 h-7 2xs:h-8 text-sm"
                                             >
                                                 →
                                             </button>
@@ -326,18 +326,23 @@ export default function LiveDemo() {
                             <div>
                                 <p className="text-sm font-semibold mb-3 text-base-content/80">Beispiele zum Testen:</p>
                                 <div className="space-y-2">
-                                    {DEMO_SUGGESTIONS.map((suggestion, idx) => (
-                                        <motion.button
-                                            key={idx}
-                                            whileHover={{ scale: 1.02 }}
-                                            whileTap={{ scale: 0.98 }}
-                                            onClick={() => sendMessage(suggestion)}
-                                            disabled={isLoading}
-                                            className="w-full text-left px-4 py-3 bg-base-200 hover:bg-base-300 rounded-lg transition-all text-sm disabled:opacity-50 disabled:cursor-not-allowed"
-                                        >
-                                            💬 {suggestion}
-                                        </motion.button>
-                                    ))}
+                                    {DEMO_SUGGESTIONS.map((suggestion, idx) => {
+                                        const isLink = suggestion.startsWith('http');
+                                        const displayText = isLink ? '🔗 Gebackene Camembert-Happen (Link)' : `💬 ${suggestion}`;
+                                        
+                                        return (
+                                            <motion.button
+                                                key={idx}
+                                                whileHover={{ scale: 1.02 }}
+                                                whileTap={{ scale: 0.98 }}
+                                                onClick={() => sendMessage(suggestion)}
+                                                disabled={isLoading}
+                                                className="w-full text-left px-4 py-3 bg-base-200 hover:bg-base-300 rounded-lg transition-all text-sm disabled:opacity-50 disabled:cursor-not-allowed"
+                                            >
+                                                {displayText}
+                                            </motion.button>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         )}

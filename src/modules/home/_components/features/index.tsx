@@ -1,14 +1,21 @@
 import AnimatedText from "../../../../components/animatedText";
-import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
+import FlipCard from "../../../../components/flipCard";
 
 function Features() {
   const {
     home: { features },
   } = useContext(ConfigContext)!;
   if (!features) return null;
+
+  // Screenshots für die Rückseite der Karten
+  const screenshots = [
+    "/screenshots/1.webp",
+    "/screenshots/2.webp",
+    "/screenshots/3.webp",
+  ];
 
   return (
     <section id={features.id} className="max-w-screen-lg mx-auto px-4 py-12">
@@ -39,35 +46,16 @@ function Features() {
         className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6"
       >
         {features.cards.map((feat, index) => (
-          <motion.div
+          <FlipCard
             key={index}
-            variants={{
-              hidden: { x: "-100%", opacity: 0 },
-              visible: { x: 0, opacity: 1 },
+            frontContent={{
+              icon: feat.icon,
+              title: feat.title,
+              subtitle: feat.subtitle,
             }}
-            transition={{ delay: 0.25 + index * 0.25 }}
-            className="shadow-md border-primary/10 border-2 card relative overflow-hidden group px-12"
-          >
-            <div className="relative mb-4 mt-4">
-              <div
-                className={clsx(
-                  "absolute left-0 right-0 top-0 bottom-0 bg-secondary/50 -z-10 rounded-lg"
-                )}
-              />
-              <figure className="py-4">
-                <img
-                  src={feat.icon}
-                  alt="feature icon"
-                  className="w-40 transition-transform group-hover:scale-90"
-                />
-              </figure>
-            </div>
-            <div className="w-full pt-0 px-0 card-body items-center text-center transition-transform max-w-none group-hover:scale-95">
-              <h2 className="card-title text-2xl font-bold">{feat.title}</h2>
-              <div className="h-0.5 w-full bg-primary/10" />
-              <p className="opacity-[.7]">{feat.subtitle}</p>
-            </div>
-          </motion.div>
+            backImage={screenshots[index % screenshots.length]}
+            index={index}
+          />
         ))}
       </motion.div>
     </section>
