@@ -1,0 +1,125 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro"
+import defaultTemplateConfig from "utils/config";
+import Footer from "@components/footer";
+
+const impressumSeo = {
+  title: "Impressum - Mahlzait",
+  description: "Impressum und Anbieterkennzeichnung für Mahlzait - Kalorienzähler App",
+};
+
+const impressumContent = `# Impressum
+
+## Angaben gemäß § 5 TMG
+
+**PromptIt GmbH**  
+[Straße und Hausnummer]  
+[PLZ] [Ort]  
+Deutschland
+
+## Kontakt
+
+**Telefon:** [Telefonnummer]  
+**E-Mail:** info@mahlzait.de  
+**Website:** https://www.mahlzait.de
+
+## Vertreten durch
+
+Geschäftsführer: [Name des Geschäftsführers]
+
+## Registereintrag
+
+**Registergericht:** [Registergericht]  
+**Registernummer:** [HRB-Nummer]
+
+## Umsatzsteuer-ID
+
+Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz:  
+DE [Umsatzsteuer-ID]
+
+## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
+
+[Name]  
+[Adresse]  
+[PLZ, Ort]
+
+## EU-Streitschlichtung
+
+Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:  
+https://ec.europa.eu/consumers/odr
+
+Unsere E-Mail-Adresse finden Sie oben im Impressum.
+
+## Verbraucherstreitbeilegung / Universalschlichtungsstelle
+
+Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+
+## Haftung für Inhalte
+
+Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+
+Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.
+
+## Haftung für Links
+
+Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.
+
+Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+
+## Urheberrecht
+
+Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+
+Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.
+
+## Bildnachweise
+
+Icons: [3D Icons von 3dicons.co]  
+Screenshots: [Figma Community]  
+Weitere Assets: Siehe README.md im Repository
+
+## App Store Informationen
+
+### iOS (Apple App Store)
+Mahlzait ist verfügbar im Apple App Store für iOS-Geräte.  
+Apple, iPhone, und App Store sind Marken von Apple Inc.
+
+### Android (Google Play Store)
+Mahlzait ist verfügbar im Google Play Store für Android-Geräte.  
+Google Play und das Google Play-Logo sind Marken von Google LLC.
+
+## Technischer Betrieb
+
+**Hosting:** Vercel Inc.  
+**Backend:** Firebase (Google LLC)  
+**Analytics:** Vercel Analytics
+
+## Kontakt für Datenschutzanfragen
+
+Datenschutzbeauftragter:  
+E-Mail: datenschutz@mahlzait.de
+
+---
+
+**Stand:** November 2024
+`;
+---
+
+<Layout {...defaultTemplateConfig} seo={impressumSeo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Impressum" />
+  <main class="prose prose-lg max-w-4xl mx-auto px-6 py-16">
+    <div set:html={impressumContent.split('\n').map(line => {
+      if (line.startsWith('# ')) return `<h1>${line.substring(2)}</h1>`;
+      if (line.startsWith('## ')) return `<h2>${line.substring(3)}</h2>`;
+      if (line.startsWith('### ')) return `<h3>${line.substring(4)}</h3>`;
+      if (line.startsWith('**') && line.endsWith('**')) return `<p><strong>${line.substring(2, line.length - 2)}</strong></p>`;
+      if (line.startsWith('- ')) return `<li>${line.substring(2)}</li>`;
+      if (line.trim() === '---') return '<hr>';
+      if (line.trim() === '') return '<br>';
+      return `<p>${line}</p>`;
+    }).join('\n')} />
+  </main>
+  <Footer client:load config={defaultTemplateConfig} />
+</Layout>
+

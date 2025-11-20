@@ -1,0 +1,138 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro"
+import defaultTemplateConfig from "utils/config";
+import Footer from "@components/footer";
+
+const agbSeo = {
+  title: "AGB - Allgemeine Geschäftsbedingungen - Mahlzait",
+  description: "Allgemeine Geschäftsbedingungen für Mahlzait - Kalorienzähler App",
+};
+
+const agbContent = `# Allgemeine Geschäftsbedingungen (AGB)
+
+**Stand:** November 2024
+
+## 1. Geltungsbereich
+
+Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für die Nutzung der Mahlzait-App und aller damit verbundenen Dienste.
+
+## 2. Vertragspartner
+
+Vertragspartner ist:
+PromptIt GmbH
+[Adresse]
+[PLZ, Ort]
+E-Mail: info@mahlzait.de
+
+## 3. Leistungsbeschreibung
+
+Mahlzait ist eine Kalorienzähler-App mit folgenden Funktionen:
+- Kalorienzählung und Makro-Tracking
+- KI-gestütztes Meal-Logging
+- Barcode-Scanner
+- Rezeptverwaltung
+- Health-Integration
+
+## 4. Vertragsschluss
+
+Der Vertrag kommt durch die Registrierung in der App zustande. Mit der Registrierung akzeptieren Sie diese AGB.
+
+## 5. Kostenlose und kostenpflichtige Leistungen
+
+### 5.1 Kostenlose Version
+Die Basis-Version von Mahlzait ist kostenlos und enthält:
+- Barcode-Scanner
+- Lebensmittel-Suche
+- Manuelle Eingabe
+- Basis-Rezeptverwaltung
+- Health-Integration
+- 5x AI-Features zum Testen
+
+### 5.2 Mahlzait Pro
+Die Pro-Version umfasst zusätzliche Features:
+- Unlimited AI Meal-Logging (Foto/Text)
+- Unlimited AI-Vorschläge
+- Unlimited YouTube-Rezept-Import
+
+**Preise:**
+- Mahlzait Pro Monat: 4,99€/Monat
+- Mahlzait Pro Jahr: 29,99€/Jahr
+
+## 6. Zahlung und Abonnement
+
+### 6.1 Zahlungsmethoden
+Die Zahlung erfolgt über den jeweiligen App Store (Apple App Store oder Google Play Store).
+
+### 6.2 Laufzeit
+- Monatsabo: Verlängert sich automatisch um jeweils einen Monat
+- Jahresabo: Verlängert sich automatisch um jeweils ein Jahr
+
+### 6.3 Kündigung
+Das Abonnement kann jederzeit über den jeweiligen App Store gekündigt werden. Die Kündigung wird zum Ende der laufenden Abrechnungsperiode wirksam.
+
+## 7. Nutzerrechte und -pflichten
+
+### 7.1 Nutzungsrechte
+Sie erhalten ein einfaches, nicht übertragbares Nutzungsrecht an der App für den persönlichen Gebrauch.
+
+### 7.2 Nutzungspflichten
+- Keine missbräuchliche Nutzung
+- Keine Weitergabe von Zugangsdaten
+- Keine automatisierten Zugriffe
+- Wahrheitsgemäße Angaben
+
+## 8. Datenschutz
+
+Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer Datenschutzerklärung.
+
+## 9. Haftung
+
+### 9.1 Haftungsbeschränkung
+Wir haften nur für Vorsatz und grobe Fahrlässigkeit, außer bei Verletzung wesentlicher Vertragspflichten, Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit oder nach dem Produkthaftungsgesetz.
+
+### 9.2 Medizinischer Hinweis
+Mahlzait ist keine medizinische App und ersetzt keine professionelle Ernährungsberatung oder ärztliche Behandlung.
+
+## 10. Gewährleistung
+
+Wir gewährleisten, dass die App die beschriebenen Funktionen im Wesentlichen erfüllt. Für die kostenlose Version ist die Gewährleistung ausgeschlossen, soweit gesetzlich zulässig.
+
+## 11. Änderungen der AGB
+
+Wir behalten uns vor, diese AGB zu ändern. Änderungen werden mindestens 30 Tage vor Inkrafttreten per E-Mail mitgeteilt. Widersprechen Sie nicht innerhalb von 30 Tagen, gelten die neuen AGB als akzeptiert.
+
+## 12. Schlussbestimmungen
+
+### 12.1 Anwendbares Recht
+Es gilt deutsches Recht unter Ausschluss des UN-Kaufrechts.
+
+### 12.2 Gerichtsstand
+Gerichtsstand ist, soweit gesetzlich zulässig, der Sitz des Unternehmens.
+
+### 12.3 Salvatorische Klausel
+Sollten einzelne Bestimmungen unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.
+
+## Kontakt
+
+Bei Fragen zu den AGB kontaktieren Sie uns unter:
+E-Mail: info@mahlzait.de
+`;
+---
+
+<Layout {...defaultTemplateConfig} seo={agbSeo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="AGB" />
+  <main class="prose prose-lg max-w-4xl mx-auto px-6 py-16">
+    <div set:html={agbContent.split('\n').map(line => {
+      if (line.startsWith('# ')) return `<h1>${line.substring(2)}</h1>`;
+      if (line.startsWith('## ')) return `<h2>${line.substring(3)}</h2>`;
+      if (line.startsWith('### ')) return `<h3>${line.substring(4)}</h3>`;
+      if (line.startsWith('**') && line.endsWith('**')) return `<p><strong>${line.substring(2, line.length - 2)}</strong></p>`;
+      if (line.startsWith('- ')) return `<li>${line.substring(2)}</li>`;
+      if (line.trim() === '') return '<br>';
+      return `<p>${line}</p>`;
+    }).join('\n')} />
+  </main>
+  <Footer client:load config={defaultTemplateConfig} />
+</Layout>
+

@@ -49,6 +49,13 @@ Allow: /
 Sitemap: https://mahlzait.de/sitemap-index.xml
 Sitemap: https://mahlzait.de/sitemap-0.xml
 
+# AI-optimierte Content-Endpoints
+# Diese Dateien enthalten strukturierte Daten speziell für AI-Systeme
+Allow: /api/content.json
+Allow: /ai-questions.json
+Allow: /comparison.json
+Allow: /rss.xml
+
 # Crawl-Verzögerung optimiert
 Crawl-delay: 1
 

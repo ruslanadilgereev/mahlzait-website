@@ -98,6 +98,13 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <link rel="dns-prefetch" href="https://apps.apple.com" />
     <link rel="dns-prefetch" href="https://play.google.com" />
 
+    <!-- AI Discovery Links -->
+    <link rel="alternate" type="application/json" href="/api/content.json" title="Structured Data for AI" />
+    <link rel="alternate" type="application/json" href="/ai-questions.json" title="AI Questions & Answers" />
+    <link rel="alternate" type="application/json" href="/comparison.json" title="App Comparison" />
+    <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed" />
+    <link rel="manifest" href="/.well-known/ai-plugin.json" />
+
     <script is:inline define:vars={{ forceTheme }}>
       function getPreferredColorScheme() {
         if (!window.matchMedia) {

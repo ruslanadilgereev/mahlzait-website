@@ -1,0 +1,21 @@
+---
+import TermsAndConditionsPage from "@modules/termsAndConditions";
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro"
+import defaultTemplateConfig from "utils/config";
+
+// German version of Terms and Conditions
+const germanSeo = {
+  title: "Nutzungsbedingungen - Mahlzait",
+  description: "Nutzungsbedingungen für Mahlzait - Kalorienzähler App",
+};
+---
+
+<Layout
+  {...defaultTemplateConfig}
+  seo={germanSeo}
+>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Nutzungsbedingungen" />
+  <TermsAndConditionsPage client:load config={defaultTemplateConfig} />
+</Layout>
+
