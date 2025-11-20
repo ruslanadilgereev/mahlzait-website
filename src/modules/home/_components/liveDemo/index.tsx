@@ -23,7 +23,7 @@ interface Message {
 }
 
 const DEMO_SUGGESTIONS = [
-    "Ich habe gerade Pizza gegessen",
+    "1 Riegel ESN Pistachio",
     "200g Hähnchenbrust mit Reis",
     "https://www.chefkoch.de/rezepte/3134181466859477/Gebackene-Camembert-Happen.html",
 ];
