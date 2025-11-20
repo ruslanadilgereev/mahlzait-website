@@ -90,7 +90,12 @@ export type TemplateConfig = {
         partners?: {
             id?: string | undefined;
             title: string;
-            logos: string[];
+            logos?: string[];
+            stats?: {
+                icon: string;
+                number: string;
+                label: string;
+            }[];
         } | undefined;
         faq?: {
             id?: string | undefined;

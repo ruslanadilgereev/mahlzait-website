@@ -316,217 +316,233 @@ const templateConfig: TemplateConfig = {
   },
   privacyPolicy: {
     seo: {
-      title: "Privacy Policy - Mobile App Landing Template",
-      description: "Privacy Policy",
+      title: "Datenschutzerklärung - Mahlzait",
+      description: "Datenschutzerklärung für Mahlzait Kalorienzähler App",
     },
-    content: `# Privacy Policy
+    content: `# Datenschutzerklärung
 
-**Effective Date:** [Insert Date]
+**Stand:** November 2024
 
-## Introduction
+## Einleitung
 
-Welcome to [Your App Name] (the "App"). [Your Company Name] ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share your personal information when you use our App.
+Willkommen bei Mahlzait. Ruslan Adilgereev ("wir", "uns" oder "unser") verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzerklärung erklärt, wie wir Ihre personenbezogenen Daten erheben, verwenden und weitergeben, wenn Sie unsere App nutzen.
 
-## Information We Collect
+## Welche Daten wir erheben
 
-### 1. Information You Provide
-- **Account Information:** When you sign up for our App, we may collect your name, email address, and other contact information.
-- **User Content:** We may collect any content you upload, post, or otherwise transmit through the App, including messages, photos, and other media.
+### 1. Von Ihnen bereitgestellte Informationen
+- **Account-Informationen:** Wenn Sie sich für unsere App registrieren, erheben wir Ihren Namen, E-Mail-Adresse und andere Kontaktinformationen.
+- **Nutzerdaten:** Wir erheben Inhalte, die Sie hochladen, posten oder anderweitig über die App übermitteln, einschließlich Mahlzeiten-Logs, Fotos und andere Medien.
+- **Ernährungsdaten:** Ihre getrackten Mahlzeiten, Kalorien, Makronährstoffe, Gewicht und Ziele.
 
-### 2. Information We Collect Automatically
-- **Usage Data:** We collect information about your interactions with the App, such as the features you use and the time spent on the App.
-- **Device Information:** We collect information about the device you use to access the App, including IP address, device type, and operating system.
+### 2. Automatisch erhobene Informationen
+- **Nutzungsdaten:** Wir erfassen Informationen über Ihre Interaktionen mit der App, z.B. welche Funktionen Sie nutzen und wie lange.
+- **Geräteinformationen:** Wir erfassen Informationen über das Gerät, mit dem Sie auf die App zugreifen, einschließlich IP-Adresse, Gerätetyp und Betriebssystem.
 
-### 3. Information from Third Parties
-- **Third-Party Services:** If you connect to the App through a third-party service (e.g., social media), we may collect information from that service as permitted by their privacy policies.
+### 3. Informationen von Drittanbietern
+- **Drittanbieter-Dienste:** Wenn Sie die App über einen Drittanbieter-Service verbinden (z.B. Apple Health, Google Fit), können wir Informationen von diesem Service gemäß deren Datenschutzrichtlinien erfassen.
 
-## How We Use Your Information
+## Wie wir Ihre Daten verwenden
 
-We may use the information we collect for the following purposes:
-- **To Provide and Maintain Our Service:** We use your information to operate and improve the App.
-- **To Communicate with You:** We may use your contact information to send you updates, notifications, and other communications related to the App.
-- **To Personalize Your Experience:** We may use your information to personalize your experience with the App and to offer you content tailored to your interests.
-- **For Analytics and Research:** We use the information to analyze how our users interact with the App and to improve our services.
+Wir können die erhobenen Informationen für folgende Zwecke verwenden:
+- **Bereitstellung und Wartung unseres Services:** Wir nutzen Ihre Daten, um die App zu betreiben und zu verbessern.
+- **Kommunikation mit Ihnen:** Wir können Ihre Kontaktdaten nutzen, um Ihnen Updates, Benachrichtigungen und andere Mitteilungen bezüglich der App zu senden.
+- **Personalisierung:** Wir können Ihre Daten nutzen, um Ihr Erlebnis in der App zu personalisieren und Ihnen auf Ihre Interessen zugeschnittene Inhalte anzubieten (z.B. KI-Essensvorschläge).
+- **Analytik und Forschung:** Wir nutzen die Daten, um zu analysieren, wie Nutzer mit der App interagieren und unsere Dienste zu verbessern.
 
-## Sharing Your Information
+## Weitergabe Ihrer Daten
 
-We do not share your personal information with third parties except in the following circumstances:
-- **With Your Consent:** We may share your information with third parties if you give us explicit consent to do so.
-- **Service Providers:** We may share your information with third-party service providers who perform services on our behalf.
-- **Legal Requirements:** We may disclose your information if required by law, or if we believe that such action is necessary to comply with legal obligations, protect our rights, or prevent fraud.
+Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, außer in folgenden Fällen:
+- **Mit Ihrer Zustimmung:** Wir können Ihre Daten mit Dritten teilen, wenn Sie uns ausdrücklich dazu ermächtigen.
+- **Dienstleister:** Wir können Ihre Daten mit Drittanbietern teilen, die Dienste in unserem Auftrag erbringen (z.B. Firebase für Backend, Apple/Google für In-App-Käufe).
+- **Gesetzliche Anforderungen:** Wir können Ihre Daten offenlegen, wenn dies gesetzlich vorgeschrieben ist oder wenn wir glauben, dass dies notwendig ist, um rechtlichen Verpflichtungen nachzukommen, unsere Rechte zu schützen oder Betrug zu verhindern.
 
-## Your Rights and Choices
+## Ihre Rechte und Wahlmöglichkeiten
 
-- **Access and Correction:** You have the right to access and correct the personal information we hold about you.
-- **Data Deletion:** You may request that we delete your personal information by contacting us at [Your Contact Information].
-- **Opt-Out:** You may opt out of receiving promotional communications from us by following the instructions in those communications.
+Gemäß DSGVO haben Sie folgende Rechte:
+- **Auskunft und Korrektur:** Sie haben das Recht, auf die personenbezogenen Daten, die wir über Sie speichern, zuzugreifen und diese zu korrigieren.
+- **Löschung:** Sie können die Löschung Ihrer personenbezogenen Daten verlangen, indem Sie uns unter datenschutz@mahlzait.de kontaktieren oder die Löschfunktion in der App nutzen.
+- **Widerspruch:** Sie können der Verarbeitung Ihrer Daten widersprechen.
+- **Datenübertragbarkeit:** Sie haben das Recht, Ihre Daten in einem strukturierten, maschinenlesbaren Format zu erhalten.
+- **Opt-Out:** Sie können Marketing-Kommunikation jederzeit abbestellen.
 
-## Security
+## Sicherheit
 
-We take reasonable measures to protect your personal information from unauthorized access, use, or disclosure. However, no security system is completely secure, and we cannot guarantee the absolute security of your information.
+Wir ergreifen angemessene Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Nutzung oder Offenlegung zu schützen. Wir nutzen Firebase (Google) als Backend mit verschlüsselter Datenübertragung. Dennoch ist kein Sicherheitssystem vollständig sicher, und wir können die absolute Sicherheit Ihrer Daten nicht garantieren.
 
-## Changes to This Privacy Policy
+## Änderungen dieser Datenschutzerklärung
 
-We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Effective Date" above. Your continued use of the App after such changes signifies your acceptance of the revised Privacy Policy.
+Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das "Stand"-Datum oben aktualisieren. Ihre fortgesetzte Nutzung der App nach solchen Änderungen bedeutet Ihre Zustimmung zur überarbeiteten Datenschutzerklärung.
 
-## Contact Us
+## Kontakt
 
-If you have any questions or concerns about this Privacy Policy, please contact us at:
+Bei Fragen oder Bedenken zu dieser Datenschutzerklärung kontaktieren Sie uns unter:
 
-[Your Company Name]  
-[Your Contact Information]  
-[Email Address]  
-[Phone Number (optional)]
+Mahlzait  
+Ruslan Adilgereev  
+Am Tierpark 62  
+10319 Berlin  
+E-Mail: datenschutz@mahlzait.de  
+Telefon: 017643657343
 
 `,
   },
   cookiesPolicy: {
     seo: {
-      title: "Cookies Policy - Mobile App Landing Template",
-      description: "Cookies Policy",
+      title: "Cookie-Richtlinie - Mahlzait",
+      description: "Cookie-Richtlinie für Mahlzait Kalorienzähler App",
     },
-    content: `# Cookies Policy
+    content: `# Cookie-Richtlinie
 
-**Effective Date:** [Insert Date]
+**Stand:** November 2024
 
-## Introduction
+## Einleitung
 
-This Cookies Policy explains how [Your Company Name] ("we," "our," or "us") uses cookies and similar technologies to recognize you when you visit our app, [Your App Name] (the "App"). It explains what these technologies are and why we use them, as well as your rights to control their use.
+Diese Cookie-Richtlinie erklärt, wie Mahlzait (Ruslan Adilgereev) Cookies und ähnliche Technologien verwendet, um Sie zu erkennen, wenn Sie unsere App nutzen. Sie erläutert, was diese Technologien sind, warum wir sie verwenden und welche Rechte Sie haben, deren Nutzung zu kontrollieren.
 
-## What Are Cookies?
+## Was sind Cookies?
 
-Cookies are small data files that are placed on your device when you visit a website or use an app. Cookies are widely used by online service providers to facilitate and help to make the interaction between users and websites/apps faster and easier, as well as to provide reporting information.
+Cookies sind kleine Datendateien, die auf Ihrem Gerät abgelegt werden, wenn Sie eine Website besuchen oder eine App nutzen. Cookies werden häufig von Online-Dienstanbietern verwendet, um die Interaktion zwischen Nutzern und Websites/Apps zu erleichtern und schneller zu machen sowie Berichtsinformationen bereitzustellen.
 
-### Types of Cookies We Use
+### Arten von Cookies, die wir verwenden
 
-We use the following types of cookies in our App:
+Wir verwenden folgende Arten von Cookies in unserer App:
 
-1. **Strictly Necessary Cookies:**  
-   These cookies are essential for you to use some of the features of our App. Without these cookies, some services cannot be provided.
+1. **Unbedingt erforderliche Cookies:**  
+   Diese Cookies sind für die Nutzung einiger Funktionen unserer App unerlässlich. Ohne diese Cookies können einige Dienste nicht bereitgestellt werden (z.B. Login, Theme-Einstellung).
 
-2. **Performance and Analytics Cookies:**  
-   These cookies collect information about how users interact with our App, including which pages are visited most often. We use this information to improve how our App works.
+2. **Performance- und Analytics-Cookies:**  
+   Diese Cookies sammeln Informationen darüber, wie Nutzer mit unserer App interagieren. Wir nutzen diese Informationen, um die Funktionsweise unserer App zu verbessern (Vercel Analytics).
 
-3. **Functionality Cookies:**  
-   These cookies allow our App to remember choices you make when you use the App, such as remembering your login details or language preference.
+3. **Funktionalitäts-Cookies:**  
+   Diese Cookies ermöglichen es unserer App, sich an Ihre Entscheidungen zu erinnern, z.B. Login-Daten oder Sprachpräferenz (Deutsch, Englisch, Russisch).
 
-4. **Targeting and Advertising Cookies:**  
-   These cookies are used to deliver advertisements that are relevant to you. They also limit the number of times you see an ad and help measure the effectiveness of advertising campaigns.
+4. **Keine Werbe-Cookies:**  
+   Mahlzait verwendet KEINE Werbe- oder Tracking-Cookies von Drittanbietern für Werbezwecke.
 
-### Cookies From Third Parties
+### Cookies von Drittanbietern
 
-In addition to our own cookies, we may also use various third-party cookies to report usage statistics of the App and to deliver advertisements on and through the App.
+Wir nutzen ausschließlich Vercel Analytics zur Nutzungsanalyse. Keine Werbe-Cookies.
 
-## How We Use Cookies
+## Wie wir Cookies verwenden
 
-We use cookies to:
+Wir verwenden Cookies, um:
 
-- **Remember your login details and preferences.**
-- **Analyze usage patterns and improve the functionality of our App.**
-- **Deliver relevant content and advertisements.**
-- **Understand your preferences based on previous or current App activity.**
+- **Ihre Login-Daten und Präferenzen zu speichern (Theme, Sprache).**
+- **Nutzungsmuster zu analysieren und die Funktionalität unserer App zu verbessern.**
+- **Relevante Inhalte bereitzustellen (KI-Vorschläge basierend auf Ihren Präferenzen).**
+- **Ihre Präferenzen basierend auf früheren App-Aktivitäten zu verstehen.**
 
-## Your Choices Regarding Cookies
+**Wichtig:** Wir verwenden KEINE Werbe-Cookies oder Tracking für Marketing-Zwecke!
 
-You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by adjusting the settings in your browser. Most browsers allow you to:
+## Ihre Wahlmöglichkeiten bezüglich Cookies
 
-- **View what cookies are stored on your device and delete them individually.**
-- **Block third-party cookies.**
-- **Block cookies from particular websites.**
-- **Block all cookies from being set.**
-- **Delete all cookies when you close your browser.**
+Sie haben das Recht zu entscheiden, ob Sie Cookies akzeptieren oder ablehnen. Sie können Ihre Cookie-Präferenzen anpassen, indem Sie die Einstellungen in Ihrem Browser ändern. Die meisten Browser ermöglichen Ihnen:
 
-Please note that if you block or delete cookies, some features of the App may not function properly.
+- **Anzuzeigen, welche Cookies auf Ihrem Gerät gespeichert sind und diese einzeln zu löschen.**
+- **Drittanbieter-Cookies zu blockieren.**
+- **Cookies von bestimmten Websites zu blockieren.**
+- **Alle Cookies zu blockieren.**
+- **Alle Cookies beim Schließen des Browsers zu löschen.**
 
-## Changes to This Cookies Policy
+Bitte beachten Sie, dass einige Funktionen der App möglicherweise nicht ordnungsgemäß funktionieren, wenn Sie Cookies blockieren oder löschen (z.B. Theme-Speicherung, Login-Status).
 
-We may update this Cookies Policy from time to time. We will notify you of any changes by posting the new Cookies Policy on this page and updating the "Effective Date" above. Your continued use of the App after such changes signifies your acceptance of the revised Cookies Policy.
+## Änderungen dieser Cookie-Richtlinie
 
-## Contact Us
+Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Cookie-Richtlinie auf dieser Seite veröffentlichen und das "Stand"-Datum oben aktualisieren.
 
-If you have any questions or concerns about our use of cookies, please contact us at:
+## Kontakt
 
-[Your Company Name]  
-[Your Contact Information]  
-[Email Address]  
-[Phone Number (optional)]
+Bei Fragen oder Bedenken zu unserer Verwendung von Cookies kontaktieren Sie uns unter:
+
+Mahlzait  
+Ruslan Adilgereev  
+Am Tierpark 62  
+10319 Berlin  
+E-Mail: datenschutz@mahlzait.de  
+Telefon: 017643657343
 `,
   },
   termsAndConditions: {
     seo: {
-      title: "Terms and conditions - Mobile App Landing Template",
-      description: "Terms and conditions",
+      title: "Nutzungsbedingungen - Mahlzait",
+      description: "Nutzungsbedingungen für Mahlzait Kalorienzähler App",
     },
-    content: `# Terms and Conditions
+    content: `# Nutzungsbedingungen
 
-**Effective Date:** [Insert Date]
+**Stand:** November 2024
 
-## Introduction
+## Einleitung
 
-Welcome to [Your App Name] (the "App"). These Terms and Conditions ("Terms") govern your use of the App provided by [Your Company Name] ("we," "our," or "us"). By accessing or using our App, you agree to be bound by these Terms. If you do not agree to these Terms, please do not use the App.
+Willkommen bei Mahlzait (die "App"). Diese Nutzungsbedingungen regeln Ihre Nutzung der App, die von Ruslan Adilgereev ("wir", "uns" oder "unser") bereitgestellt wird. Durch den Zugriff auf oder die Nutzung unserer App stimmen Sie diesen Bedingungen zu. Wenn Sie mit diesen Bedingungen nicht einverstanden sind, nutzen Sie die App bitte nicht.
 
-## Use of the App
+## Nutzung der App
 
-### 1. Eligibility
-To use our App, you must be at least [Insert Age] years old and capable of entering into a legally binding agreement. By using the App, you represent and warrant that you meet these eligibility requirements.
+### 1. Berechtigung
+Um unsere App zu nutzen, müssen Sie mindestens 16 Jahre alt sein und in der Lage sein, eine rechtsverbindliche Vereinbarung einzugehen. Durch die Nutzung der App versichern Sie, dass Sie diese Voraussetzungen erfüllen.
 
-### 2. User Accounts
-- **Registration:** You may be required to create an account to access certain features of the App. You must provide accurate and complete information when creating your account.
-- **Account Security:** You are responsible for maintaining the confidentiality of your account login details and for all activities that occur under your account. You agree to notify us immediately of any unauthorized use of your account.
-- **Account Termination:** We reserve the right to terminate or suspend your account at any time, without notice, for any reason, including if we believe you have violated these Terms.
+### 2. Benutzerkonten
+- **Registrierung:** Sie müssen ein Konto erstellen, um auf bestimmte Funktionen der App zuzugreifen. Sie müssen bei der Erstellung Ihres Kontos genaue und vollständige Informationen angeben.
+- **Kontosicherheit:** Sie sind für die Geheimhaltung Ihrer Konto-Anmeldedaten und für alle Aktivitäten verantwortlich, die unter Ihrem Konto stattfinden. Sie verpflichten sich, uns unverzüglich über jede unbefugte Nutzung Ihres Kontos zu informieren.
+- **Konto-Kündigung:** Wir behalten uns das Recht vor, Ihr Konto jederzeit ohne Vorankündigung aus beliebigem Grund zu kündigen oder zu sperren, auch wenn wir glauben, dass Sie gegen diese Bedingungen verstoßen haben.
 
-### 3. Prohibited Conduct
-You agree not to:
-- Use the App for any illegal or unauthorized purpose.
-- Interfere with or disrupt the operation of the App or the servers or networks used to make the App available.
-- Upload or transmit any viruses, malware, or other harmful code.
-- Attempt to gain unauthorized access to any part of the App or to other accounts, systems, or networks connected to the App.
+### 3. Verbotenes Verhalten
+Sie verpflichten sich, Folgendes nicht zu tun:
+- Die App für illegale oder unbefugte Zwecke zu nutzen.
+- Den Betrieb der App oder der Server oder Netzwerke, die zur Bereitstellung der App verwendet werden, zu stören.
+- Viren, Malware oder anderen schädlichen Code hochzuladen oder zu übertragen.
+- Zu versuchen, unbefugten Zugriff auf Teile der App oder auf andere Konten, Systeme oder Netzwerke zu erlangen.
 
-## Intellectual Property
+## Geistiges Eigentum
 
-### 1. Ownership
-All content and materials available on the App, including but not limited to text, graphics, logos, and software, are the property of [Your Company Name] or its licensors and are protected by intellectual property laws.
+### 1. Eigentum
+Alle Inhalte und Materialien, die in der App verfügbar sind, einschließlich, aber nicht beschränkt auf Text, Grafiken, Logos und Software, sind Eigentum von Mahlzait (Ruslan Adilgereev) oder deren Lizenzgebern und durch Gesetze zum Schutz geistigen Eigentums geschützt.
 
-### 2. License
-We grant you a limited, non-exclusive, non-transferable license to access and use the App for your personal, non-commercial use. This license is subject to your compliance with these Terms.
+### 2. Lizenz
+Wir gewähren Ihnen eine beschränkte, nicht exklusive, nicht übertragbare Lizenz zum Zugriff auf und zur Nutzung der App für Ihren persönlichen, nicht kommerziellen Gebrauch. Diese Lizenz unterliegt Ihrer Einhaltung dieser Bedingungen.
 
-### 3. Restrictions
-You may not:
-- Reproduce, distribute, modify, or create derivative works of any content or materials on the App without our prior written consent.
-- Use any data mining, robots, or similar data gathering or extraction methods on the App.
+### 3. Beschränkungen
+Sie dürfen nicht:
+- Inhalte oder Materialien der App ohne unsere vorherige schriftliche Zustimmung reproduzieren, verteilen, modifizieren oder abgeleitete Werke erstellen.
+- Data Mining, Robots oder ähnliche Datensammelmethoden in der App verwenden.
 
-## Disclaimers and Limitation of Liability
+## Haftungsausschluss und Haftungsbeschränkung
 
-### 1. Disclaimers
-The App is provided on an "as is" and "as available" basis. We make no warranties or representations about the accuracy or completeness of the content available on or through the App. We disclaim all warranties, whether express or implied, including any warranties of merchantability, fitness for a particular purpose, and non-infringement.
+### 1. Haftungsausschluss
+Die App wird auf "wie besehen" und "wie verfügbar" Basis bereitgestellt. Wir geben keine Garantien oder Zusicherungen über die Genauigkeit oder Vollständigkeit der in oder über die App verfügbaren Inhalte. Wir lehnen alle Garantien ab, ob ausdrücklich oder stillschweigend.
 
-### 2. Limitation of Liability
-To the fullest extent permitted by law, [Your Company Name] shall not be liable for any indirect, incidental, special, consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from:
-- Your use or inability to use the App;
-- Any unauthorized access to or use of our servers and/or any personal information stored therein;
-- Any bugs, viruses, or other harmful code that may be transmitted to or through the App;
-- Any errors or omissions in any content or for any loss or damage incurred as a result of your use of any content posted, emailed, transmitted, or otherwise made available through the App.
+**Medizinischer Hinweis:** Mahlzait ist KEINE medizinische App und ersetzt keine professionelle Ernährungsberatung oder ärztliche Behandlung. Die berechneten Werte sind Richtwerte und keine medizinischen Empfehlungen.
 
-## Indemnification
+### 2. Haftungsbeschränkung
+Im gesetzlich zulässigen Umfang haftet Mahlzait nicht für indirekte, zufällige, besondere, Folge- oder Strafschäden oder für Gewinn- oder Umsatzverluste, die direkt oder indirekt entstehen aus:
+- Ihrer Nutzung oder Unfähigkeit, die App zu nutzen;
+- Unbefugtem Zugriff auf oder Nutzung unserer Server und/oder darin gespeicherte personenbezogene Daten;
+- Bugs, Viren oder anderem schädlichen Code;
+- Fehlern oder Auslassungen in Inhalten.
 
-You agree to indemnify, defend, and hold harmless [Your Company Name], its affiliates, and their respective officers, directors, employees, and agents from and against any claims, liabilities, damages, losses, and expenses, including without limitation reasonable legal and accounting fees, arising out of or in any way connected with your access to or use of the App or your violation of these Terms.
+Wir haften unbeschränkt für Vorsatz und grobe Fahrlässigkeit sowie für Schäden aus der Verletzung des Lebens, des Körpers oder der Gesundheit.
 
-## Governing Law
+## Freistellung
 
-These Terms shall be governed by and construed in accordance with the laws of [Your Jurisdiction], without regard to its conflict of law principles. You agree to submit to the exclusive jurisdiction of the courts located in [Your Jurisdiction] to resolve any legal matter arising from these Terms.
+Sie verpflichten sich, Mahlzait, Ruslan Adilgereev und verbundene Personen von allen Ansprüchen, Verbindlichkeiten, Schäden, Verlusten und Kosten, einschließlich angemessener Rechts- und Buchhaltungsgebühren, freizustellen, die sich aus oder in Verbindung mit Ihrem Zugriff auf oder Ihrer Nutzung der App oder Ihrer Verletzung dieser Bedingungen ergeben.
 
-## Changes to These Terms
+## Anwendbares Recht
 
-We may update these Terms from time to time. We will notify you of any changes by posting the new Terms on this page and updating the "Effective Date" above. Your continued use of the App after such changes signifies your acceptance of the revised Terms.
+Diese Bedingungen unterliegen den Gesetzen der Bundesrepublik Deutschland und sind nach diesen auszulegen, unter Ausschluss des UN-Kaufrechts. Gerichtsstand ist, soweit gesetzlich zulässig, Berlin.
 
-## Contact Us
+## Änderungen dieser Bedingungen
 
-If you have any questions or concerns about these Terms, please contact us at:
+Wir können diese Bedingungen von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neuen Bedingungen auf dieser Seite veröffentlichen und das "Stand"-Datum oben aktualisieren. Ihre fortgesetzte Nutzung der App nach solchen Änderungen bedeutet Ihre Zustimmung zu den überarbeiteten Bedingungen.
 
-[Your Company Name]  
-[Your Contact Information]  
-[Email Address]  
-[Phone Number (optional)]
+## Kontakt
+
+Bei Fragen oder Bedenken zu diesen Bedingungen kontaktieren Sie uns unter:
+
+Mahlzait  
+Ruslan Adilgereev  
+Am Tierpark 62  
+10319 Berlin  
+E-Mail: info@mahlzait.de  
+Telefon: 017643657343
 `,
   },
 };
