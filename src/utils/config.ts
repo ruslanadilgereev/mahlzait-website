@@ -24,9 +24,10 @@ const templateConfig: TemplateConfig = {
       privacyPolicy: true,
     },
     socials: {
-      instagram: "https://instagram.com/google",
-      facebook: "https://facebook.com/google",
-      twitter: "https://x.com/google",
+      // Füge hier deine echten Social-Media-Links ein, oder entferne sie
+      // instagram: "https://instagram.com/mahlzait",
+      // facebook: "https://facebook.com/mahlzait",
+      // twitter: "https://x.com/mahlzait",
     },
     links: [
       { href: "/#features", title: "Funktionen" },
@@ -321,7 +322,7 @@ const templateConfig: TemplateConfig = {
     },
     content: `# Datenschutzerklärung
 
-**Stand:** November 2024
+**Stand:** November 2025
 
 ## Einleitung
 
@@ -393,7 +394,7 @@ Telefon: 017643657343
     },
     content: `# Cookie-Richtlinie
 
-**Stand:** November 2024
+**Stand:** November 2025
 
 ## Einleitung
 
@@ -469,7 +470,7 @@ Telefon: 017643657343
     },
     content: `# Nutzungsbedingungen
 
-**Stand:** November 2024
+**Stand:** November 2025
 
 ## Einleitung
 

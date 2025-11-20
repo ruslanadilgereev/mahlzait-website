@@ -89,9 +89,9 @@ function Footer() {
                 }}
                 transition={{ delay: 0.25 }}
                 className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
-                href="/terms-and-conditions"
+                href="/nutzungsbedingungen"
               >
-                Terms & conditions
+                Nutzungsbedingungen
               </motion.a>
             )}
             {legalLinks.privacyPolicy && (
@@ -102,11 +102,33 @@ function Footer() {
                 }}
                 transition={{ delay: 0.5 }}
                 className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
-                href="/privacy-policy"
+                href="/datenschutz"
               >
-                Privacy policy
+                Datenschutz
               </motion.a>
             )}
+            <motion.a
+              variants={{
+                hidden: { opacity: 0, scale: 0.4 },
+                visible: { opacity: 1, scale: 1 },
+              }}
+              transition={{ delay: 0.6 }}
+              className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+              href="/impressum"
+            >
+              Impressum
+            </motion.a>
+            <motion.a
+              variants={{
+                hidden: { opacity: 0, scale: 0.4 },
+                visible: { opacity: 1, scale: 1 },
+              }}
+              transition={{ delay: 0.7 }}
+              className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+              href="/agb"
+            >
+              AGB
+            </motion.a>
             {legalLinks.cookiesPolicy && (
               <motion.a
                 variants={{
@@ -117,7 +139,7 @@ function Footer() {
                 className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
                 href="/cookies-policy"
               >
-                Cookies policy
+                Cookies
               </motion.a>
             )}
           </div>
@@ -129,7 +151,7 @@ function Footer() {
             transition={{ delay: 1 }}
             className="mt-0.5 md:ml-4 md:whitespace-nowrap"
           >
-            All rights reserved © {new Date().getFullYear()}
+            Alle Rechte vorbehalten © {new Date().getFullYear()}
           </motion.p>
         </aside>
       </motion.div>
