@@ -5,7 +5,7 @@ interface ThemeLogoProps {
   alt?: string;
 }
 
-function ThemeLogo({ className = "h-7", alt = "Mahlzait Logo" }: ThemeLogoProps) {
+function ThemeLogo({ className = "h-8 w-auto", alt = "Mahlzait Logo" }: ThemeLogoProps) {
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {

@@ -53,9 +53,9 @@ function Navbar() {
           )}
         />
         <div className="navbar-start">
-          <a href="/" className="flex items-center">
-            <ThemeLogo className="h-7" alt="Mahlzait Logo" />
-            <span className="font-bold mx-1 md:text-lg">
+          <a href="/" className="flex items-center gap-2">
+            <ThemeLogo className="h-8 w-auto" alt="Mahlzait Logo" />
+            <span className="font-bold text-base md:text-lg">
               {name}
             </span>
           </a>
