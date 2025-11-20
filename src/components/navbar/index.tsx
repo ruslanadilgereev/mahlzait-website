@@ -5,11 +5,11 @@ import { easeIn, motion, useScroll, useTransform } from "framer-motion";
 import { useContext, useState } from "react";
 import { ConfigContext } from "../../utils/configContext";
 import ThemeSwitcher from "./themeSwitcher";
+import ThemeLogo from "../logo/ThemeLogo";
 
 function Navbar() {
   const {
     name,
-    logo,
     showThemeSwitch,
     topNavbar,
     googlePlayLink,
@@ -54,11 +54,7 @@ function Navbar() {
         />
         <div className="navbar-start">
           <a href="/" className="flex items-center">
-            <img 
-              className="h-10 [html[data-theme='mahlzait-dark']_&]:invert" 
-              src={logo} 
-              alt="logo" 
-            />
+            <ThemeLogo className="h-7" alt="Mahlzait Logo" />
             <span className="font-bold mx-1 md:text-lg">
               {name}
             </span>

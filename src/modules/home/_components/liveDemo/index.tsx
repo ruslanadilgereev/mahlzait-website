@@ -181,7 +181,14 @@ export default function LiveDemo() {
                                 </div>
 
                                 {/* Messages Area */}
-                                <div className="flex-1 overflow-y-auto overflow-x-hidden p-2 2xs:p-3 space-y-2 2xs:space-y-3">
+                                <div className="flex-1 overflow-y-auto overflow-x-hidden p-2 2xs:p-3 space-y-2 2xs:space-y-3 relative">
+                                    {/* Background Logo Watermark */}
+                                    <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none opacity-[0.04] select-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="80px" viewBox="0 -960 960 960" width="80px" fill="currentColor" className="text-base-content">
+                                            <path d="M280-80v-366q-51-14-85.5-56T160-600v-280h80v280h40v-280h80v280h40v-280h80v280q0 56-34.5 98T360-446v366h-80Zm400 0v-320H560v-280q0-83 58.5-141.5T760-880v800h-80Z"/>
+                                        </svg>
+                                        <div className="text-base-content font-bold text-2xl mt-2">Mahlzait</div>
+                                    </div>
                                     <AnimatePresence>
                                         {messages.map((msg, idx) => (
                                             <motion.div
