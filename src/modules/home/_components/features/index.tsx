@@ -36,7 +36,7 @@ function Features() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-6"
+        className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6"
       >
         {features.cards.map((feat, index) => (
           <motion.div
@@ -46,14 +46,7 @@ function Features() {
               visible: { x: 0, opacity: 1 },
             }}
             transition={{ delay: 0.25 + index * 0.25 }}
-            className={clsx(
-              "shadow-md border-primary/10 border-2 card relative overflow-hidden group px-12",
-              {
-                "col-span-2":
-                  index === features!.cards.length - 1 &&
-                  features!.cards.length % 2 === 1,
-              }
-            )}
+            className="shadow-md border-primary/10 border-2 card relative overflow-hidden group px-12"
           >
             <div className="relative mb-4 mt-4">
               <div

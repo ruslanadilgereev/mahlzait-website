@@ -53,7 +53,7 @@ function Pricing() {
             }}
           >
             {plan.featured && (
-              <div className="absolute top-0 bottom-1 right-1 left-0 bg-secondary -z-10 rounded-[var(--rounded-box)]" />
+              <div className="absolute top-0 bottom-1 right-1 left-0 bg-mahlzait-teal -z-10 rounded-[var(--rounded-box)]" />
             )}
             <div
               className={clsx(
@@ -66,11 +66,11 @@ function Pricing() {
             >
               <div className="card-body p-0 text-center">
                 <div className="flex relative">
-                  {plan.featured && (
-                    <div className="rounded-none badge badge-info top-0 right-0 absolute">
-                      Best Price
-                    </div>
-                  )}
+                {plan.featured && (
+                  <div className="rounded-none badge top-0 right-0 absolute bg-mahlzait-teal text-white border-mahlzait-teal">
+                    Best Price
+                  </div>
+                )}
                   <div className={clsx("h-32 w-[40%] p-4", planBGs[index])}>
                     <img
                       src={planImages[index]}
@@ -87,8 +87,8 @@ function Pricing() {
                   {plan.rows.map((row, index) => (
                     <div key={index} className="flex relative items-center">
                       <span className="relative flex h-3 w-3 mx-6">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-mahlzait-teal opacity-75"></span>
+                        <span className="relative inline-flex rounded-full h-3 w-3 bg-mahlzait-teal"></span>
                       </span>
                       <p className="flex-1 text-left my-2">{row}</p>
                     </div>

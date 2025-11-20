@@ -11,7 +11,7 @@ function ThemeSwitcher() {
         return;
       }
       if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-        return "dark";
+        return "mahlzait-dark";
       }
     }
     const theme = localStorage.getItem("theme") ?? getPreferredColorScheme();
@@ -38,12 +38,12 @@ function ThemeSwitcher() {
       <input
         type="checkbox"
         autoComplete="off"
-        checked={mode === "dark"}
+        checked={mode === "mahlzait-dark"}
         className="toggle toggle-sm"
         onChange={(event) => {
           let mode: string | undefined;
           if (event.currentTarget.checked) {
-            mode = "dark";
+            mode = "mahlzait-dark";
           } else {
             mode = config?.theme;
           }

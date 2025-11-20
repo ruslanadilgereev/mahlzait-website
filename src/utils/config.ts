@@ -1,22 +1,22 @@
 import type { TemplateConfig } from "./configType";
 
 const templateConfig: TemplateConfig = {
-  name: "Lorem Ipsum",
+  name: "Mahlzait",
   seo: {
-    title: "Mobile App Landing Template",
-    description: "Mobile App Landing Template",
+    title: "Mahlzait – Kalorienzähler & Food-Tracker mit KI",
+    description: "Tracke Mahlzeiten per Suche, Barcode oder KI. Rezepte erstellen & teilen, Ziele setzen, Gewicht tracken, Insights & Health-Integration. Deutsch, Englisch, Russisch. Kostenlos starten!",
   },
   // Draws grid behind main container
   backgroundGrid: false,
-  logo: "/logo.svg",
-  theme: "corporate",
+  logo: "/logo.png",
+  theme: "mahlzait",
   // Forces theme to be chosen above, no matter what user prefers
   forceTheme: false,
   // Shows switch to toggle between dark and light modes
   showThemeSwitch: true,
-  appStoreLink: "https://apps.apple.com/us/app/google/id284815942",
+  appStoreLink: "https://apps.apple.com/de/app/mahlzait-kalorienz%C3%A4hler/id6747400456",
   googlePlayLink:
-    "https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox",
+    "https://play.google.com/store/apps/details?id=com.promptit.mytemple",
   footer: {
     legalLinks: {
       termsAndConditions: true,
@@ -29,29 +29,29 @@ const templateConfig: TemplateConfig = {
       twitter: "https://x.com/google",
     },
     links: [
-      { href: "/#features", title: "Features" },
-      { href: "/#how-it-works", title: "How it works" },
-      { href: "/#pricing", title: "Pricing" },
+      { href: "/#features", title: "Funktionen" },
+      { href: "/#how-it-works", title: "So funktioniert's" },
+      { href: "/#pricing", title: "Preise" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
   topNavbar: {
-    cta: "Get the app",
+    cta: "App herunterladen",
     disableWidthAnimation: false,
     hideAppStore: false,
     hideGooglePlay: false,
     links: [
-      { href: "/#features", title: "Features" },
-      { href: "/#how-it-works", title: "How it works" },
-      { href: "/#pricing", title: "Pricing" },
+      { href: "/#features", title: "Funktionen" },
+      { href: "/#how-it-works", title: "So funktioniert's" },
+      { href: "/#pricing", title: "Preise" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
   appBanner: {
     id: "app-banner",
-    title: "Download Our Mobile App Today!",
+    title: "Jetzt Mahlzait laden!",
     subtitle:
-      "Unlock the full potential of our services with seamless access at your fingertips. Stay connected, informed, and in control wherever you are.",
+      "Schnell, leicht und auch offline nutzbar – dein Kalorienzähler mit KI. Tracke Mahlzeiten in Sekunden und erreiche deine Ziele.",
     screenshots: [
       "/screenshots/1.webp",
       "/screenshots/2.webp",
@@ -60,195 +60,265 @@ const templateConfig: TemplateConfig = {
   },
   home: {
     seo: {
-      title: "Mobile App Landing Template",
-      description: "Mobile App Landing Template",
+      title: "Mahlzait – Kalorienzähler mit KI | Tracke Mahlzeiten in Sekunden",
+      description: "Mahlzait ist dein schneller Kalorienzähler mit KI. Logge Mahlzeiten per Suche, Barcode oder Foto. Rezepte teilen, Ziele erreichen, Gewicht tracken. Kostenlos für iOS & Android.",
     },
     testimonials: {
       id: "testimonials",
-      title: "Testimonials",
-      subtitle: "Check out a few of our customer stories",
+      title: "Kundenstimmen",
+      subtitle: "Das sagen unsere zufriedenen Nutzer",
       cards: [
         {
-          name: "Alice Johnson",
+          name: "Anna Müller",
           comment:
-            "The service was fantastic! Highly recommended. The team was very professional and attentive to our needs. They went above and beyond to ensure we were satisfied with the results. I will definitely be using their services again in the future.",
+            "Endlich eine Tracking-App, die nicht nervt! Die Foto-Funktion ist der Hammer – einfach abfotografieren und die KI erkennt alles. Spare mir so viel Zeit beim Eingeben. Nach 3 Wochen schon 4kg runter!",
         },
         {
-          name: "Bob Smith",
+          name: "Ben Wagner",
           comment:
-            "Great value for the price. Very satisfied with the overall experience. The product quality is top-notch and the customer service is excellent. I appreciate the prompt responses to my inquiries and the helpful advice provided. Highly recommend.",
+            "Der Barcode-Scanner ist mega praktisch! Einkaufen scannen, fertig. Und dass die App kostenlos ist – krass! Hab schon mehrere Apps ausprobiert, aber Mahlzait ist mit Abstand die beste. Tracke jetzt seit 2 Monaten konsequent.",
         },
         {
-          name: "Charlie Brown",
+          name: "Chris Becker",
           comment:
-            "An excellent experience from start to finish. The onboarding process was smooth and the support team was very responsive. I felt valued as a customer and the results exceeded my expectations. I am impressed with the level of detail and care put into their work.",
+            "Die Rezept-Funktion ist genial! Hab meine Lieblingsgerichte einmal eingegeben und kann sie jetzt immer wieder loggen. Das Gewichts-Tracking zeigt mir schön meine Fortschritte. Bin nach 6 Wochen endlich bei meinem Wunschgewicht!",
         },
         {
-          name: "Dana White",
+          name: "Diana Weber",
           comment:
-            "Superb customer service and high-quality products. The team demonstrated great expertise and patience throughout the project. They addressed all my concerns and provided valuable insights. The end product was delivered on time and surpassed my expectations.",
+            "Hab ewig nach einer simplen Kalorienzähler-App gesucht. Mahlzait ist so intuitiv! Die Suche findet alles sofort und die KI-Vorschläge sind richtig gut. Keine nervigen Premium-Features hinter Paywalls. Einfach perfekt!",
         },
         {
-          name: "Eve Adams",
+          name: "Eva Schmidt",
           comment:
-            "I couldn't be happier with the results! The attention to detail and the level of customization provided was outstanding. The team was friendly and professional, making the entire process enjoyable. I highly recommend their services to anyone looking for top-quality work.",
+            "Was ich liebe: Mahlzeiten in Sekunden geloggt! Foto machen, fertig. Die App lernt mit und erkennt meine Standard-Mahlzeiten inzwischen automatisch. Super motivierend, seine Ziele jeden Tag zu sehen. 10/10!",
         },
       ],
     },
     partners: {
-      title: "As seen on",
-      logos: [
-        "/misc/companies/apple.svg",
-        "/misc/companies/aws.svg",
-        "/misc/companies/google.svg",
-        "/misc/companies/tumblr.svg",
+      title: "Mahlzait in Zahlen",
+      stats: [
+        {
+          icon: "🍽️",
+          number: "6.000+",
+          label: "Geloggte Mahlzeiten",
+        },
+        {
+          icon: "👥",
+          number: "300+",
+          label: "Aktive User",
+        },
+        {
+          icon: "📖",
+          number: "120+",
+          label: "Geteilte Rezepte",
+        },
+        {
+          icon: "💡",
+          number: "3.000+",
+          label: "Essensvorschläge",
+        },
       ],
     },
     howItWorks: {
       id: "how-it-works",
-      title: "How it works",
+      title: "So funktioniert's",
       subtitle:
-        "Explore our comprehensive step-by-step guide to understand how our process ensures seamless and effective results",
+        "In fünf einfachen Schritten zu deinem persönlichen Ernährungstracker – von der Installation bis zum ersten Erfolg",
       steps: [
         {
-          title: "Install the App",
+          title: "App installieren",
           subtitle:
-            "Download and install the app on your device to get started quickly and easily.",
+            "Lade Mahlzait kostenlos aus dem App Store oder Google Play Store herunter und installiere die App auf deinem iPhone oder Android-Gerät.",
           image: "/stock/01.webp",
         },
         {
-          title: "Create an Account",
+          title: "Ziele festlegen",
           subtitle:
-            "Sign up by entering your personal details and verifying your email to create a new account in just a few minutes.",
+            "Erstelle dein Profil und definiere deine persönlichen Ziele: Kalorien, Makronährstoffe (Protein, Kohlenhydrate, Fette) und Gewichtsziel.",
           image: "/stock/02.webp",
         },
         {
-          title: "Set Up Your Profile",
+          title: "Essen loggen",
           subtitle:
-            "Complete your profile by adding necessary information and preferences to personalize your experience on the platform.",
+            "Erfasse deine Mahlzeiten per Suche, Barcode-Scan oder KI – in Sekunden hast du alle Nährwerte im Blick und dein Tagesfortschritt ist aktualisiert.",
           image: "/stock/03.webp",
         },
         {
-          title: "Explore Features",
+          title: "Rezepte erstellen & teilen",
           subtitle:
-            "Navigate through the app to discover various features and tools designed to enhance your productivity and engagement.",
+            "Speichere wiederkehrende Mahlzeiten als Rezepte – aus YouTube-Videos, manuell oder per Suche – und teile sie mit Freunden per Link.",
           image: "/stock/04.webp",
         },
         {
-          title: "Connect with Others",
+          title: "Fortschritt checken",
           subtitle:
-            "Start connecting with friends, colleagues, and like-minded individuals to expand your network and collaborate efficiently.",
+            "Behalte deinen Fortschritt im Kalender und in den Insights im Blick: Diagramme, Trends und Gewichtsverlauf zeigen dir, wie du deine Ziele erreichst.",
           image: "/stock/05.webp",
         },
       ],
     },
     features: {
       id: "features",
-      title: "Transform Your Daily Routine",
+      title: "Alle Funktionen auf einen Blick",
       subtitle:
-        "Elevate your lifestyle with our innovative mobile app, designed for seamless living",
+        "Mahlzait vereint alles, was du für erfolgreiches Tracking brauchst – von KI bis Health-Integration",
       cards: [
         {
-          title: "Seamless Integration",
+          title: "Lebensmittel-Suche",
           subtitle:
-            "Connect effortlessly with all your devices, ensuring smooth and efficient workflows across different platforms and applications without any disruptions",
+            "Durchsuche eine umfangreiche Datenbank mit tausenden Lebensmitteln und finde schnell die Nährwerte, die du brauchst",
+          icon: "/3D/zoom-front-color.webp",
+        },
+        {
+          title: "Barcode-Scan",
+          subtitle:
+            "Scanne Strichcodes in Sekunden und erfasse Produkte automatisch – schnell, präzise und ohne Tipparbeit",
+          icon: "/3D/camera-front-color.webp",
+        },
+        {
+          title: "Manuelle Eingabe",
+          subtitle:
+            "Erstelle eigene Einträge mit individuellen Portionsgrößen und Nährwerten – flexibel und präzise für jede Mahlzeit",
+          icon: "/3D/pencil-front-color.webp",
+        },
+        {
+          title: "KI-Logging",
+          subtitle:
+            "Erfasse Mahlzeiten per Foto oder Text – die KI analysiert und schlägt Nährwerte vor, die du bestätigen oder anpassen kannst",
+          icon: "/3D/bulb-front-color.webp",
+        },
+        {
+          title: "Rezepte & YouTube",
+          subtitle:
+            "Erstelle Rezepte aus YouTube-Videos, manuell oder per Suche – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
+          icon: "/3D/video-camera-front-color.webp",
+        },
+        {
+          title: "Einfach teilen",
+          subtitle:
+            "Teile Rezepte und Mahlzeiten mit einem Link – perfekt für Freunde, Familie oder deine Community",
           icon: "/3D/link-front-color.webp",
         },
         {
-          title: "24/7 Customer Support",
+          title: "Ziele & Makros",
           subtitle:
-            "Get assistance whenever you need it with our dedicated customer support team, available around the clock to help resolve any issues you may encounter",
-          icon: "/3D/clock-front-color.webp",
+            "Setze individuelle Ziele für Kalorien und Makronährstoffe – ob Abnehmen, Muskelaufbau oder einfach gesünder leben",
+          icon: "/3D/target-front-color.webp",
         },
         {
-          title: "Intuitive Design",
+          title: "Gewicht & Kalender",
           subtitle:
-            "Navigate through our intuitive and easy-to-use interface designed to enhance user experience, making it accessible for users of all skill levels",
-          icon: "/3D/roll-brush-front-color.webp",
+            "Tracke dein Gewicht und sieh deinen Fortschritt in einer übersichtlichen Kalenderansicht mit allen Mahlzeiten",
+          icon: "/3D/calender-front-color.webp",
         },
         {
-          title: "Top-Notch Security",
+          title: "Insights & Trends",
           subtitle:
-            "Protect your data with our top-notch security protocols, offering robust encryption and real-time monitoring to keep your information safe and secure",
-          icon: "/3D/sheild-front-color.webp",
+            "Visualisiere deine Ernährung mit Diagrammen für Kalorien, Makros und Trends – behalte den Überblick über deine Fortschritte",
+          icon: "/3D/chart-front-color.webp",
+        },
+        {
+          title: "Health-Integration",
+          subtitle:
+            "Verbinde Mahlzait mit Apple Health oder Google Fit und synchronisiere Schritte, Gewicht und weitere Gesundheitsdaten",
+          icon: "/3D/heart-front-color.webp",
+        },
+        {
+          title: "Mehrsprachig",
+          subtitle:
+            "Nutze die App auf Deutsch, Englisch oder Russisch – wechsle jederzeit die Sprache nach deinen Vorlieben",
+          icon: "/3D/text-front-color.webp",
+        },
+        {
+          title: "Level-System",
+          subtitle:
+            "Erreiche täglich deine Ziele, sammle Level und bleib motiviert – gamifiziertes Tracking für langfristigen Erfolg",
+          icon: "/3D/trophy-front-color.webp",
         },
       ],
     },
     faq: {
       id: "faq",
-      title: "Frequently Asked Questions",
+      title: "Häufig gestellte Fragen",
       qa: [
         {
-          question: "How can I create an account on your website?",
+          question: "Wie funktioniert das KI-Logging?",
           answer:
-            "To create an account, click on the 'Sign Up' button located at the top right corner of our homepage. Fill in the required information, including your name, email address, and password. Once you submit the form, you will receive a confirmation email. Click the link in the email to verify your account, and you're all set!",
+            "Mit dem KI-Logging kannst du Mahlzeiten per Foto oder Text erfassen. Die KI analysiert deine Eingabe und schlägt passende Lebensmittel mit Nährwerten vor. Du kannst die Vorschläge bestätigen, anpassen oder ergänzen – so hast du volle Kontrolle über deine Einträge.",
         },
         {
-          question: "What payment methods do you accept?",
+          question: "Kann ich Mahlzait auch offline nutzen?",
           answer:
-            "We accept a variety of payment methods to ensure convenience for our customers. These include major credit cards (Visa, MasterCard, American Express), PayPal, Apple Pay, and Google Pay. For more details, visit our Payments page.",
+            "Ja, Mahlzait funktioniert auch offline! Du kannst Mahlzeiten loggen, Rezepte erstellen und deine Daten einsehen, auch ohne Internetverbindung. Sobald du wieder online bist, werden deine Daten automatisch synchronisiert.",
         },
         {
-          question: "How can I track my order?",
+          question: "Unterstützt Mahlzait Health-Dienste wie Apple Health oder Google Fit?",
           answer:
-            "Once your order is shipped, you will receive an email with a tracking number. You can use this tracking number on our website under the 'Track Order' section to see the current status and estimated delivery date of your package.",
+            "Ja, Mahlzait lässt sich mit Apple Health und Google Fit verbinden. So kannst du Schritte, Gewicht und weitere Gesundheitsdaten automatisch synchronisieren und in der App im Blick behalten.",
         },
         {
-          question: "What is your return policy?",
+          question: "In welchen Sprachen ist die App verfügbar?",
           answer:
-            "We offer a 30-day return policy for unused and unopened items. If you are not satisfied with your purchase, please contact our customer support team to initiate a return. Refunds will be processed within 7-10 business days after we receive the returned item.",
+            "Mahlzait ist auf Deutsch, Englisch und Russisch verfügbar. Du kannst die Sprache jederzeit in den Einstellungen wechseln.",
         },
         {
-          question: "How can I contact customer support?",
+          question: "Was kostet Mahlzait?",
           answer:
-            "You can contact our customer support team through the 'Contact Us' page on our website. We are available via email, phone, and live chat. Our support hours are Monday to Friday, 9 AM to 5 PM.",
+            "Mahlzait ist kostenlos nutzbar und bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makros. Für erweiterte Features wie zusätzliche Auswertungen und Komfortfunktionen gibt es optional Mahlzait Pro ab 3,99 € pro Monat oder 29,99 € pro Jahr.",
         },
       ],
     },
     header: {
-      headline: "Your Ultimate App for Every Need",
+      headline: "Mahlzait – Kalorienzähler mit KI",
       subtitle:
-        "Streamline your tasks, boost your productivity, and accomplish more every day. Unlock a world of possibilities with our cutting-edge mobile application.",
+        "Tracke Mahlzeiten in Sekunden: Suche, Barcode oder KI. Behalte Kalorien, Makros und Gewicht im Blick – für Abnehmen, Muskelaufbau und mehr.",
       screenshots: [
         "/screenshots/1.webp",
         "/screenshots/2.webp",
         "/screenshots/3.webp",
       ],
-      rewards: ["App of the year \n 1st", "Product of the day"],
-      usersDescription: "100+ people already using the app",
-      headlineMark: [1, 3],
+      rewards: ["5,0 Sterne \n im App Store", "Jetzt mit \n AI-Chat"],
+      usersDescription: "100+ Nutzer:innen tracken bereits mit Mahlzait",
+      headlineMark: [0, 1],
     },
     pricing: {
       id: "pricing",
-      title: "Pricing",
-      subtitle: "Flexible costs to meet your budget",
-      actionText: "Download the app",
+      title: "Preise",
+      subtitle: "Kostenlos starten – Pro für unlimited AI",
+      actionText: "App herunterladen",
       plans: [
         {
-          title: "Basic Plan",
-          price: "$9.99/month",
-          rows: ["Access to basic features", "Email support", "1 GB storage"],
-        },
-        {
-          title: "Standard Plan",
-          price: "$19.99/month",
-          featured: true,
+          title: "Kostenlos",
+          price: "0 €",
           rows: [
-            "Access to all basic features",
-            "Priority email support",
-            "10 GB storage",
-            "Monthly webinars",
+            "Mahlzeiten loggen (Suche, Barcode, manuell)",
+            "Rezepte erstellen & teilen (manuell)",
+            "Kalorien & Makros tracken",
+            "Gewichtsverlauf & Kalender",
+            "Health-Integration",
+            "Je 5x AI-Features testen",
           ],
         },
         {
-          title: "Premium Plan",
-          price: "$29.99/month",
+          title: "Mahlzait Pro Jahr",
+          price: "29,99 €/Jahr",
+          featured: true,
           rows: [
-            "Access to all features",
-            "24/7 support",
-            "100 GB storage",
-            "Weekly webinars",
-            "Exclusive content",
+            "Unlimited AI Meal Logging (Foto/Text)",
+            "Unlimited AI-Vorschläge (Kühlschrank etc.)",
+            "Unlimited Rezepte aus YouTube-Videos",
+            "Spare 50% (nur 2,50 €/Monat)",
+          ],
+        },
+        {
+          title: "Mahlzait Pro Monat",
+          price: "4,99 €/Monat",
+          rows: [
+            "Unlimited AI Meal Logging (Foto/Text)",
+            "Unlimited AI-Vorschläge (Kühlschrank etc.)",
+            "Unlimited Rezepte aus YouTube-Videos",
+            "Monatlich kündbar",
           ],
         },
       ],
