@@ -2,7 +2,8 @@
 import "swiper/css";
 import "@styles/styles.scss";
 import type { TemplateConfig } from "utils/configType";
-import { SpeedInsights } from "@vercel/speed-insights/astro";
+import SpeedInsights from "@vercel/speed-insights/astro";
+import Analytics from "@vercel/analytics/astro";
 
 const { backgroundGrid, seo, logo, theme, forceTheme } =
   Astro.props as TemplateConfig;
@@ -54,11 +55,6 @@ const { backgroundGrid, seo, logo, theme, forceTheme } =
     {backgroundGrid && <div class="backgroundGrid" />}
     <slot />
     <SpeedInsights />
-    
-    <!-- Vercel Analytics -->
-    <script>
-      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+    <Analytics />
   </body>
 </html>
