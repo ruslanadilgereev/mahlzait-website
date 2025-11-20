@@ -1,23 +1,21 @@
+import { useThemedScreenshot } from "../../hooks/useThemedScreenshot";
+
 interface Props {
   src: string;
   alt?: string;
 }
 
 function IphoneFrame({ src, alt = "Mahlzait App Screenshot" }: Props) {
+  const themedSrc = useThemedScreenshot(src);
+  
   return (
-    <div className="relative h-full overflow-hidden">
-      <div className="absolute top-2 bottom-2 left-2.5">
-        <img
-          src={src}
-          alt={alt}
-          className="rounded-2xl h-full"
-          loading="lazy"
-        />
-      </div>
+    <div className="relative h-full flex items-center justify-center">
+      {/* Screenshot mit integriertem iPhone Frame */}
       <img
-        src="/misc/iphone-frame.webp"
-        alt="iPhone Rahmen"
-        className="relative z-10 h-full"
+        src={themedSrc}
+        alt={alt}
+        className="h-full w-auto object-contain"
+        loading="lazy"
       />
     </div>
   );

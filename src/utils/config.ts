@@ -56,9 +56,9 @@ const templateConfig: TemplateConfig = {
     subtitle:
       "Schnell, leicht und auch offline nutzbar – dein Kalorienzähler mit KI. Tracke Mahlzeiten in Sekunden und erreiche deine Ziele.",
     screenshots: [
-      "/screenshots/1.webp",
-      "/screenshots/2.webp",
-      "/screenshots/3.webp",
+      "/screenshots/untenmitte.webp",
+      "/screenshots/untenlinks.webp",
+      "/screenshots/untenrechts.webp",
     ],
   },
   home: {
@@ -82,9 +82,9 @@ const templateConfig: TemplateConfig = {
             "Der Barcode-Scanner ist mega praktisch! Einkaufen scannen, fertig. Und dass die App kostenlos ist – krass! Hab schon mehrere Apps ausprobiert, aber Mahlzait ist mit Abstand die beste. Tracke jetzt seit 2 Monaten konsequent.",
         },
         {
-          name: "Chris Becker",
+          name: "Dendrit99",
           comment:
-            "Die Rezept-Funktion ist genial! Hab meine Lieblingsgerichte einmal eingegeben und kann sie jetzt immer wieder loggen. Das Gewichts-Tracking zeigt mir schön meine Fortschritte. Bin nach 6 Wochen endlich bei meinem Wunschgewicht!",
+            "Früher habe ich immer ChatGPT genutzt um zu fragen wie viel Kalorien etwas hat. Mahlzait kann das genau so gut und ich habe sofort einen viel besseren Überblick! Seit 5 Wochen nutze ich bisher und 5kg abgenommen.",
         },
         {
           name: "Diana Weber",
@@ -127,25 +127,25 @@ const templateConfig: TemplateConfig = {
       id: "how-it-works",
       title: "So funktioniert's",
       subtitle:
-        "Kalorienzählen war nie einfacher – in 3 Schritten zum erfolgreichen Food-Tracking",
+        "Starte in unter 60 Sekunden – 3 einfache Schritte zum personalisierten Kalorienziel",
       steps: [
         {
-          title: "Ziel setzen & loslegen",
+          title: "Persönliche Daten eingeben",
           subtitle:
-            "Account erstellen, Kalorien- & Makroziele eingeben – fertig in 60 Sekunden. Keine nervigen Onboardings, keine Zwangstutorials. Einfach starten.",
-          image: "/screenshots/1.webp",
+            "Gib dein Alter, Geschlecht, Größe und aktuelles Gewicht ein. Mahlzait benötigt diese Infos, um deinen individuellen Kalorienbedarf zu berechnen – so werden deine Ziele realistisch und erreichbar.",
+          image: "/screenshots/welcome1.webp",
         },
         {
-          title: "Essen loggen – so wie DU willst",
+          title: "Gewichtsziel festlegen",
           subtitle:
-            "Food-Tracking flexibel: KI-Chat ('Hab grad Pizza gegessen'), Barcode-Scanner, Suche in 500.000+ Lebensmitteln oder YouTube-Rezept-Import. Funktioniert auch offline.",
-          image: "/screenshots/2.webp",
+            "Definiere dein Zielgewicht und wähle, wie schnell du es erreichen möchtest. Abnehmen, zunehmen oder halten – du entscheidest das Tempo (z.B. 0,5 kg pro Woche) für nachhaltigen Erfolg.",
+          image: "/screenshots/welcome2.webp",
         },
         {
-          title: "Smart tracken & Ziele erreichen",
+          title: "Aktivitätslevel auswählen",
           subtitle:
-            "Die KI schlägt dir passende Mahlzeiten vor – basierend auf Tageszeit und bereits Gegessenem. Teile Rezepte per Link, level up durch konsequentes Tracking, sync mit Apple Health.",
-          image: "/screenshots/3.webp",
+            "Wähle dein tägliches Aktivitätslevel: von sesshaft bis sehr aktiv. Damit passt Mahlzait deine Kalorienziele automatisch an deinen Lebensstil an – fertig in unter 60 Sekunden!",
+          image: "/screenshots/welcome3.webp",
         },
       ],
     },
@@ -156,76 +156,67 @@ const templateConfig: TemplateConfig = {
         "Dein kompletter Food-Tracker: Von KI-Logging über Barcode-Scanner bis Health-Integration – alle Features für erfolgreiches Kalorien-Tracking",
       cards: [
         {
-          title: "Lebensmittel-Suche",
-          subtitle:
-            "Durchsuche die umfangreiche Food-Datenbank mit tausenden Lebensmitteln. Finde Nährwerte und Kalorien in Sekunden – perfekt für schnelles Meal-Tracking",
-          icon: "/3D/zoom-front-color.webp",
-        },
-        {
-          title: "Barcode-Scan",
-          subtitle:
-            "Scanne Produkt-Barcodes für automatisches Kalorien-Tracking. Schneller Barcode-Scanner ohne Tipparbeit – ideal für den Supermarkt-Einkauf",
-          icon: "/3D/camera-front-color.webp",
-        },
-        {
-          title: "Manuelle Eingabe",
-          subtitle:
-            "Erstelle eigene Einträge mit individuellen Portionsgrößen und Nährwerten – flexibel und präzise für jede Mahlzeit",
-          icon: "/3D/pencil-front-color.webp",
-        },
-        {
           title: "KI-Logging",
           subtitle:
             "Revolutionäres Food-Tracking mit künstlicher Intelligenz: Mahlzeiten per Foto oder Text loggen. Die KI erkennt Lebensmittel und berechnet Kalorien automatisch",
           icon: "/3D/bulb-front-color.webp",
+          screenshot: "/screenshots/chat.webp",
+        },
+        {
+          title: "KI-Vorschläge",
+          subtitle:
+            "Die KI schlägt dir passende Mahlzeiten vor, wenn du nicht weißt was du essen sollst. Basierend auf deinen Zielen und bereits gegessenen Lebensmitteln – smart und personalisiert",
+          icon: "/3D/bulb-front-color.webp",
+          screenshot: "/screenshots/aivorschlag.webp",
         },
         {
           title: "Rezepte & YouTube",
           subtitle:
             "Erstelle Rezepte aus YouTube-Videos, manuell oder per Suche – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
           icon: "/3D/video-camera-front-color.webp",
+          screenshot: "/screenshots/rezept.webp",
         },
         {
-          title: "Einfach teilen",
+          title: "Barcode-Scan",
           subtitle:
-            "Teile Rezepte und Mahlzeiten mit einem Link – perfekt für Freunde, Familie oder deine Community",
-          icon: "/3D/link-front-color.webp",
-        },
-        {
-          title: "Ziele & Makros",
-          subtitle:
-            "Setze Kalorienziele und tracke Makronährstoffe (Protein, Kohlenhydrate, Fett). Perfekt für Abnehmen, Diät, Muskelaufbau und gesunde Ernährung",
-          icon: "/3D/target-front-color.webp",
-        },
-        {
-          title: "Gewicht & Kalender",
-          subtitle:
-            "Gewichtstracking mit Fortschritts-Diagramm. Kalenderansicht zeigt alle getrackten Mahlzeiten und Kalorien – perfekt für Diät-Kontrolle",
-          icon: "/3D/calender-front-color.webp",
+            "Scanne Produkt-Barcodes für automatisches Kalorien-Tracking. Schneller Barcode-Scanner ohne Tipparbeit – ideal für den Supermarkt-Einkauf",
+          icon: "/3D/camera-front-color.webp",
+          screenshot: "/screenshots/barcode.webp",
         },
         {
           title: "Insights & Trends",
           subtitle:
             "Visualisiere deine Ernährung mit Diagrammen für Kalorien, Makros und Trends – behalte den Überblick über deine Fortschritte",
           icon: "/3D/chart-front-color.webp",
+          screenshot: "/screenshots/insights.webp",
         },
         {
           title: "Health-Integration",
           subtitle:
             "Verbinde Mahlzait mit Apple Health oder Google Fit und synchronisiere Schritte, Gewicht und weitere Gesundheitsdaten",
           icon: "/3D/heart-front-color.webp",
+          screenshot: "/screenshots/health.webp",
         },
         {
-          title: "Mehrsprachig",
+          title: "Gewicht & Kalender",
           subtitle:
-            "Nutze die App auf Deutsch, Englisch oder Russisch – wechsle jederzeit die Sprache nach deinen Vorlieben",
-          icon: "/3D/text-front-color.webp",
+            "Gewichtstracking mit Fortschritts-Diagramm. Kalenderansicht zeigt alle getrackten Mahlzeiten und Kalorien – perfekt für Diät-Kontrolle",
+          icon: "/3D/calender-front-color.webp",
+          screenshot: "/screenshots/kalendar.webp",
         },
         {
-          title: "Level-System",
+          title: "Lebensmittel-Suche",
           subtitle:
-            "Erreiche täglich deine Ziele, sammle Level und bleib motiviert – gamifiziertes Tracking für langfristigen Erfolg",
-          icon: "/3D/trophy-front-color.webp",
+            "Durchsuche die umfangreiche Food-Datenbank mit tausenden Lebensmitteln. Finde Nährwerte und Kalorien in Sekunden – perfekt für schnelles Meal-Tracking",
+          icon: "/3D/zoom-front-color.webp",
+          screenshot: "/screenshots/suche.webp",
+        },
+        {
+          title: "Manuelle Eingabe",
+          subtitle:
+            "Erstelle eigene Einträge mit individuellen Portionsgrößen und Nährwerten – flexibel und präzise für jede Mahlzeit",
+          icon: "/3D/pencil-front-color.webp",
+          screenshot: "/screenshots/manuell.webp",
         },
       ],
     },
@@ -234,29 +225,39 @@ const templateConfig: TemplateConfig = {
       title: "Häufig gestellte Fragen",
       qa: [
         {
-          question: "Wie funktioniert das KI-Logging?",
+          question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
-            "Mit dem KI-Logging kannst du Mahlzeiten per Foto oder Text erfassen. Die KI analysiert deine Eingabe und schlägt passende Lebensmittel mit Nährwerten vor. Du kannst die Vorschläge bestätigen, anpassen oder ergänzen – so hast du volle Kontrolle über deine Einträge.",
+            "Ja, Mahlzait ist kostenlos! Die App bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makronährstoffen ohne Abo-Zwang. Du kannst Lebensmittel suchen, per Barcode scannen, manuell eingeben und Rezepte erstellen – komplett gratis. Für unbegrenzte KI-Features (AI Meal Logging, KI-Vorschläge, YouTube-Rezept-Import) gibt es optional Mahlzait Pro ab 4,99 € pro Monat oder 29,99 € pro Jahr.",
         },
         {
-          question: "Kann ich Mahlzait auch offline nutzen?",
+          question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
           answer:
-            "Ja, Mahlzait funktioniert auch offline! Du kannst Mahlzeiten loggen, Rezepte erstellen und deine Daten einsehen, auch ohne Internetverbindung. Sobald du wieder online bist, werden deine Daten automatisch synchronisiert.",
+            "Mit dem KI-Logging von Mahlzait kannst du Mahlzeiten per Foto oder Text erfassen – einfach schreiben 'Hab grad Pizza gegessen' oder ein Foto hochladen. Die KI erkennt deutsche und internationale Lebensmittel, analysiert die Nährwerte und schlägt passende Einträge vor. Du kannst Portionsgrößen anpassen und Vorschläge korrigieren – so behältst du volle Kontrolle über dein Kalorienzählen.",
         },
         {
-          question: "Unterstützt Mahlzait Health-Dienste wie Apple Health oder Google Fit?",
+          question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
           answer:
-            "Ja, Mahlzait lässt sich mit Apple Health und Google Fit verbinden. So kannst du Schritte, Gewicht und weitere Gesundheitsdaten automatisch synchronisieren und in der App im Blick behalten.",
+            "Der Barcode-Scanner von Mahlzait nutzt eine umfangreiche Lebensmitteldatenbank mit hunderttausenden Produkten. Nach dem Scannen werden Kalorien, Makros (Protein, Kohlenhydrate, Fett) und Nährwerte automatisch übernommen. Du kannst die Portionsgröße anpassen. Falls ein Produkt fehlt, kannst du es manuell hinzufügen und für andere Nutzer verfügbar machen.",
         },
         {
-          question: "In welchen Sprachen ist die App verfügbar?",
+          question: "Kann ich eigene Rezepte erstellen und speichern?",
           answer:
-            "Mahlzait ist auf Deutsch, Englisch und Russisch verfügbar. Du kannst die Sprache jederzeit in den Einstellungen wechseln.",
+            "Ja! Mit Mahlzait kannst du eigene Rezepte erstellen, manuell eingeben oder direkt aus YouTube-Videos importieren. Speichere deine Lieblingsgerichte und logge sie mit einem Klick. Du kannst Rezepte auch per Link mit Freunden teilen. Perfekt für wiederkehrende Mahlzeiten wie Frühstück oder Meal Prep.",
         },
         {
-          question: "Was kostet Mahlzait?",
+          question: "Unterstützt Mahlzait Apple Health und Google Fit Integration?",
           answer:
-            "Mahlzait ist kostenlos nutzbar und bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makros. Für erweiterte Features wie zusätzliche Auswertungen und Komfortfunktionen gibt es optional Mahlzait Pro ab 3,99 € pro Monat oder 29,99 € pro Jahr.",
+            "Ja, Mahlzait synchronisiert sich mit Apple Health (iOS) und Google Fit (Android). Die App übernimmt automatisch Schritte, verbrannte Kalorien und Gewichtsdaten aus deinen Gesundheits-Apps und passt dein Kalorienziel entsprechend an. So hast du alle Fitness- und Ernährungsdaten zentral an einem Ort.",
+        },
+        {
+          question: "Wie viele Kalorien sollte ich essen zum Abnehmen?",
+          answer:
+            "Mahlzait berechnet deinen individuellen Kalorienbedarf basierend auf Alter, Geschlecht, Größe, Gewicht und Aktivitätslevel. Zum gesunden Abnehmen empfiehlt die App ein moderates Kaloriendefizit von 300-500 kcal pro Tag, was etwa 0,5 kg Gewichtsverlust pro Woche entspricht. Die KI-Vorschläge helfen dir, deine Ziele zu erreichen ohne zu hungern.",
+        },
+        {
+          question: "Was macht Mahlzait besser als andere Kalorienzähler Apps?",
+          answer:
+            "Mahlzait kombiniert klassisches Food-Tracking mit KI-Power: Mahlzeiten per Foto oder Chat loggen (statt mühsames Tippen), KI-Vorschläge wenn du nicht weißt was du essen sollst, YouTube-Rezept-Import, Barcode-Scanner, Offline-Funktion und Health-Integration. Alles kostenlos nutzbar, ohne Abo-Zwang. Die App ist auf Deutsch optimiert und erkennt deutsche Lebensmittel perfekt.",
         },
       ],
     },

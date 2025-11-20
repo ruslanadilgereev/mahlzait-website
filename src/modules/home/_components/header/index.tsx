@@ -22,7 +22,7 @@ function Header() {
       <div className="max-w-screen-lg mx-auto py-4 px-4 md:py-16">
         <div className="flex flex-col md:flex-row">
           <div className="flex flex-1 items-center md:items-start md:h-[300vh]">
-            <div className="static top-40 flex flex-col prose justify-center py-8 md:sticky md:h-[548px]">
+            <div className="static top-40 flex flex-col prose justify-center py-8 md:sticky md:h-[70vh] md:min-h-[600px] md:max-h-[900px]">
               <div className="flex flex-col gap-2 my-4 3xs:flex-row">
                 {header.rewards?.map((reward, index) => (
                   <motion.div
@@ -160,7 +160,7 @@ function Header() {
                   duration: 0.5,
                   delay: 0.3,
                 }}
-                className="relative h-[548px] 2xs:h-[720px] sm:h-[648px] md:h-[548px] rounded-[3rem]"
+                className="relative h-[70vh] min-h-[600px] max-h-[900px] rounded-[3rem]"
               >
                 <div className="absolute top-2.5 left-3 w-[calc(100%-24px)] h-[calc(100%-16px)] rounded-[1rem] 2xs:rounded-[2rem] overflow-hidden">
                   {header.screenshots.map((src, index) => (

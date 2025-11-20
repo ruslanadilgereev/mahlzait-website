@@ -10,13 +10,6 @@ function Features() {
   } = useContext(ConfigContext)!;
   if (!features) return null;
 
-  // Screenshots für die Rückseite der Karten
-  const screenshots = [
-    "/screenshots/1.webp",
-    "/screenshots/2.webp",
-    "/screenshots/3.webp",
-  ];
-
   return (
     <section id={features.id} className="max-w-screen-lg mx-auto px-4 py-12">
       <div className="mb-12 max-w-none flex flex-col items-center prose prose-lg text-center">
@@ -53,7 +46,7 @@ function Features() {
               title: feat.title,
               subtitle: feat.subtitle,
             }}
-            backImage={screenshots[index % screenshots.length]}
+            backImage={feat.screenshot}
             index={index}
           />
         ))}

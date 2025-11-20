@@ -1,5 +1,6 @@
 import { motion, transform, useTransform } from "framer-motion";
 import type { MotionValue } from "framer-motion";
+import { useThemedScreenshot } from "../../../../hooks/useThemedScreenshot";
 
 interface Props {
   index: number;
@@ -9,6 +10,7 @@ interface Props {
 }
 
 function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
+  const themedSrc = useThemedScreenshot(src);
   const x = useTransform(scrollYProgress, (y) => {
     if (index > 0 && index % 2 === 0) {
       const i = totalCount - index;
@@ -33,10 +35,10 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
   });
   return (
     <motion.img
-      src={src}
+      src={themedSrc}
       alt={`Mahlzait App Screenshot ${index + 1} - Kalorienzähler Funktion`}
       style={{ translateX: x, translateY: y, scale: 1 }}
-      className="absolute overflow-hidden w-full h-full"
+      className="absolute overflow-hidden w-full h-full object-cover"
     />
   );
 }

@@ -123,6 +123,7 @@ export type TemplateConfig = {
                 icon: string;
                 title: string;
                 subtitle: string;
+                screenshot: string;
             }[];
         } | undefined;
         pricing?: {

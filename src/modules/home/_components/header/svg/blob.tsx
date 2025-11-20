@@ -1,5 +1,6 @@
-import { easeIn, motion, useTransform } from "framer-motion";
+import { easeIn, motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import type { MotionValue } from "framer-motion";
+import { useEffect } from "react";
 
 interface Props {
   className?: string;
@@ -10,11 +11,37 @@ function SVGBlob({ className, scrollYProgress }: Props) {
   const y = useTransform(scrollYProgress, [0.85, 1], ["0%", "-30%"], {
     ease: easeIn,
   });
+
+  // Cursor tracking
+  const mouseX = useMotionValue(0);
+  const mouseY = useMotionValue(0);
+
+  const springConfig = { damping: 25, stiffness: 150 };
+  const rotateX = useSpring(useTransform(mouseY, [-0.5, 0.5], [7, -7]), springConfig);
+  const rotateY = useSpring(useTransform(mouseX, [-0.5, 0.5], [-7, 7]), springConfig);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      const x = (e.clientX / window.innerWidth) - 0.5;
+      const y = (e.clientY / window.innerHeight) - 0.5;
+      mouseX.set(x);
+      mouseY.set(y);
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, [mouseX, mouseY]);
+
   return (
     <motion.svg
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      style={{ y }}
+      style={{ 
+        y,
+        rotateX,
+        rotateY,
+        transformPerspective: 1000,
+      }}
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       viewBox="0 0 800 800"

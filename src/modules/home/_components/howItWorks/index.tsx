@@ -3,6 +3,7 @@ import clsx from "clsx";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
+import StepScreenshot from "./StepScreenshot";
 import SwirlArrowBottomLeft from "./svg/swirlArrowBottomLeft";
 import SwirlArrowBottomRight from "./svg/swirlArrowBottomRight";
 import SwirlArrowBottom from "./svg/swirlArrowBottom";
@@ -101,13 +102,11 @@ function HowItWorks() {
                 hidden: { x: index % 2 === 1 ? "100%" : "-100%", opacity: 0 },
                 visible: { x: "0%", opacity: 1 },
               }}
-              className="flex-1 flex justify-center"
+              className="flex-1 flex justify-center items-center"
             >
-              <img
-                className="rounded-3xl lg:w-[75%]"
-                src={step.image}
+              <StepScreenshot
+                imagePath={step.image}
                 alt={`Schritt ${index + 1}: ${step.title} - Mahlzait Anleitung`}
-                loading="lazy"
               />
             </motion.div>
           </motion.div>

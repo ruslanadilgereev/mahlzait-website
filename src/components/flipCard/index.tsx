@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import clsx from "clsx";
 import { useState } from "react";
+import { useThemedScreenshot } from "../../hooks/useThemedScreenshot";
 
 interface FlipCardProps {
   frontContent: {
@@ -14,6 +15,7 @@ interface FlipCardProps {
 
 function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
   const [isFlipped, setIsFlipped] = useState(false);
+  const themedBackImage = useThemedScreenshot(backImage);
 
   return (
     <motion.div
@@ -63,21 +65,13 @@ function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
           style={{ transform: "rotateY(180deg)" }}
         >
           <div className="relative w-full h-full flex items-center justify-center">
-            {/* iPhone Frame */}
-            <div className="relative w-full max-w-[280px] h-full max-h-[560px] bg-black rounded-[3rem] p-2 shadow-2xl border-8 border-gray-800">
-              {/* Notch */}
-              <div className="absolute top-2 left-1/2 -translate-x-1/2 w-32 h-6 bg-black rounded-b-3xl z-10" />
-              
-              {/* Screen */}
-              <div className="relative w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
-                <img
-                  src={backImage}
-                  alt={`${frontContent.title} - Mahlzait App Ansicht`}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            </div>
+            {/* Screenshot mit integriertem iPhone Frame */}
+            <img
+              src={themedBackImage}
+              alt={`${frontContent.title} - Mahlzait App Ansicht`}
+              className="h-full w-auto object-contain"
+              loading="lazy"
+            />
           </div>
         </div>
       </motion.div>
