@@ -2,7 +2,6 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro"
 import defaultTemplateConfig from "utils/config";
-import Footer from "@components/footer";
 
 const widerrufSeo = {
   title: "Widerrufsbelehrung - Mahlzait",
@@ -107,6 +106,5 @@ E-Mail: info@mahlzait.de
       return `<p>${line}</p>`;
     }).join('\n')} />
   </main>
-  <Footer client:load config={defaultTemplateConfig} />
 </Layout>
 
