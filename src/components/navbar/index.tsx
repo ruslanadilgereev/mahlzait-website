@@ -59,7 +59,9 @@ function Navbar() {
               src={logo} 
               alt="logo" 
             />
-            <span className="font-bold mx-1 md:text-lg">{name}</span>
+            <span className="font-bold mx-1 md:text-lg">
+              {name}
+            </span>
           </a>
         </div>
         <div className="navbar-end md:hidden">
@@ -70,12 +72,12 @@ function Navbar() {
           />
         </div>
         <div className="navbar-end hidden font-semibold md:flex">
-          <ul className="flex gap-4 px-1 items-center">
+          <ul className="flex gap-2 lg:gap-3 px-1 items-center">
             {showThemeSwitch && <ThemeSwitcher />}
             {topNavbar.links.map(({ title, href }, index) => (
               <li key={index}>
                 <a
-                  className="text-sm whitespace-nowrap link link-hover"
+                  className="text-xs lg:text-sm whitespace-nowrap link link-hover"
                   href={href}
                 >
                   {title}
@@ -84,7 +86,7 @@ function Navbar() {
             ))}
           </ul>
           {topNavbar.cta && (
-            <a href="/app" className="ml-3 btn btn-primary btn-outline py-4">
+            <a href="/app" className="ml-2 lg:ml-3 btn btn-primary btn-outline btn-sm lg:btn-md">
               {topNavbar.cta}
             </a>
           )}

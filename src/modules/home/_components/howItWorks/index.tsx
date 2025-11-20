@@ -106,7 +106,8 @@ function HowItWorks() {
               <img
                 className="rounded-3xl lg:w-[75%]"
                 src={step.image}
-                alt={`step ${index}`}
+                alt={`Schritt ${index + 1}: ${step.title} - Mahlzait Anleitung`}
+                loading="lazy"
               />
             </motion.div>
           </motion.div>

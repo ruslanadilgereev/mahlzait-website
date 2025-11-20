@@ -31,11 +31,11 @@ function Header() {
                     animate={{ opacity: 1, scale: 1 }}
                     className="flex items-center self-center h-8 md:h-12"
                   >
-                    <img src="/misc/wreath-left.webp" className="h-full" />
+                    <img src="/misc/wreath-left.webp" className="h-full" alt="Auszeichnung Dekoration links" />
                     <p className="text-xs text-gray-500 whitespace-pre text-center">
                       {reward}
                     </p>
-                    <img src="/misc/wreath-right.webp" className="h-full" />
+                    <img src="/misc/wreath-right.webp" className="h-full" alt="Auszeichnung Dekoration rechts" />
                   </motion.div>
                 ))}
               </div>
@@ -175,7 +175,7 @@ function Header() {
                 </div>
                 <img
                   src="/misc/iphone-frame.webp"
-                  alt="iphone-frame"
+                  alt="Mahlzait App auf iPhone - Kalorienzähler Interface"
                   className="relative z-10 h-full"
                 />
               </motion.div>

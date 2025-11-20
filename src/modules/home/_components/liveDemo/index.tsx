@@ -145,7 +145,7 @@ export default function LiveDemo() {
     };
 
     return (
-        <section className="py-20 bg-gradient-to-b from-base-100 to-base-200">
+        <section id="live-demo" className="py-20 bg-gradient-to-b from-base-100 to-base-200">
             <div className="container mx-auto px-4">
                 {/* Header */}
                 <motion.div
@@ -301,7 +301,7 @@ export default function LiveDemo() {
                         {/* iPhone Frame Image - Same as Header */}
                         <img
                             src="/misc/iphone-frame.webp"
-                            alt="iphone-frame"
+                            alt="Mahlzait Live Demo auf iPhone - Interaktive Kalorienzähler Demo"
                             className="relative z-10 h-full pointer-events-none"
                         />
                     </motion.div>

@@ -30,19 +30,21 @@ const templateConfig: TemplateConfig = {
     },
     links: [
       { href: "/#features", title: "Funktionen" },
+      { href: "/#live-demo", title: "Live Demo" },
       { href: "/#how-it-works", title: "So funktioniert's" },
       { href: "/#pricing", title: "Preise" },
       { href: "/#faq", title: "FAQ" },
     ],
   },
   topNavbar: {
-    cta: "App herunterladen",
+    cta: "App laden",
     disableWidthAnimation: false,
     hideAppStore: false,
     hideGooglePlay: false,
     links: [
-      { href: "/#features", title: "Funktionen" },
-      { href: "/#how-it-works", title: "So funktioniert's" },
+      { href: "/#features", title: "Features" },
+      { href: "/#live-demo", title: "Demo" },
+      { href: "/#how-it-works", title: "Anleitung" },
       { href: "/#pricing", title: "Preise" },
       { href: "/#faq", title: "FAQ" },
     ],
@@ -124,7 +126,7 @@ const templateConfig: TemplateConfig = {
       id: "how-it-works",
       title: "So funktioniert's",
       subtitle:
-        "Tracken war nie einfacher – drei Schritte zu deinem Ziel",
+        "Kalorienzählen war nie einfacher – in 3 Schritten zum erfolgreichen Food-Tracking",
       steps: [
         {
           title: "Ziel setzen & loslegen",
@@ -135,7 +137,7 @@ const templateConfig: TemplateConfig = {
         {
           title: "Essen loggen – so wie DU willst",
           subtitle:
-            "Chatte mit der KI ('Hab grad ne Pizza vom Italiener gegessen'), scanne Barcodes, durchsuche 500.000+ Lebensmittel oder lass YouTube-Rezepte analysieren. Auch offline.",
+            "Food-Tracking flexibel: KI-Chat ('Hab grad Pizza gegessen'), Barcode-Scanner, Suche in 500.000+ Lebensmitteln oder YouTube-Rezept-Import. Funktioniert auch offline.",
           image: "/screenshots/2.webp",
         },
         {
@@ -150,18 +152,18 @@ const templateConfig: TemplateConfig = {
       id: "features",
       title: "Alle Funktionen auf einen Blick",
       subtitle:
-        "Mahlzait vereint alles, was du für erfolgreiches Tracking brauchst – von KI bis Health-Integration",
+        "Dein kompletter Food-Tracker: Von KI-Logging über Barcode-Scanner bis Health-Integration – alle Features für erfolgreiches Kalorien-Tracking",
       cards: [
         {
           title: "Lebensmittel-Suche",
           subtitle:
-            "Durchsuche eine umfangreiche Datenbank mit tausenden Lebensmitteln und finde schnell die Nährwerte, die du brauchst",
+            "Durchsuche die umfangreiche Food-Datenbank mit tausenden Lebensmitteln. Finde Nährwerte und Kalorien in Sekunden – perfekt für schnelles Meal-Tracking",
           icon: "/3D/zoom-front-color.webp",
         },
         {
           title: "Barcode-Scan",
           subtitle:
-            "Scanne Strichcodes in Sekunden und erfasse Produkte automatisch – schnell, präzise und ohne Tipparbeit",
+            "Scanne Produkt-Barcodes für automatisches Kalorien-Tracking. Schneller Barcode-Scanner ohne Tipparbeit – ideal für den Supermarkt-Einkauf",
           icon: "/3D/camera-front-color.webp",
         },
         {
@@ -173,7 +175,7 @@ const templateConfig: TemplateConfig = {
         {
           title: "KI-Logging",
           subtitle:
-            "Erfasse Mahlzeiten per Foto oder Text – die KI analysiert und schlägt Nährwerte vor, die du bestätigen oder anpassen kannst",
+            "Revolutionäres Food-Tracking mit künstlicher Intelligenz: Mahlzeiten per Foto oder Text loggen. Die KI erkennt Lebensmittel und berechnet Kalorien automatisch",
           icon: "/3D/bulb-front-color.webp",
         },
         {
@@ -191,13 +193,13 @@ const templateConfig: TemplateConfig = {
         {
           title: "Ziele & Makros",
           subtitle:
-            "Setze individuelle Ziele für Kalorien und Makronährstoffe – ob Abnehmen, Muskelaufbau oder einfach gesünder leben",
+            "Setze Kalorienziele und tracke Makronährstoffe (Protein, Kohlenhydrate, Fett). Perfekt für Abnehmen, Diät, Muskelaufbau und gesunde Ernährung",
           icon: "/3D/target-front-color.webp",
         },
         {
           title: "Gewicht & Kalender",
           subtitle:
-            "Tracke dein Gewicht und sieh deinen Fortschritt in einer übersichtlichen Kalenderansicht mit allen Mahlzeiten",
+            "Gewichtstracking mit Fortschritts-Diagramm. Kalenderansicht zeigt alle getrackten Mahlzeiten und Kalorien – perfekt für Diät-Kontrolle",
           icon: "/3D/calender-front-color.webp",
         },
         {
@@ -260,7 +262,7 @@ const templateConfig: TemplateConfig = {
     header: {
       headline: "Mahlzait – Kalorienzähler mit KI",
       subtitle:
-        "Tracke Mahlzeiten in Sekunden: Suche, Barcode oder KI. Behalte Kalorien, Makros und Gewicht im Blick – für Abnehmen, Muskelaufbau und mehr.",
+        "Der intelligente Kalorienzähler für schnelles Food-Tracking: Per Barcode-Scanner, KI-Logging oder Suche. Tracke Kalorien, Makros und Gewicht – ideal zum Abnehmen, Muskelaufbau und gesunde Ernährung.",
       screenshots: [
         "/screenshots/1.webp",
         "/screenshots/2.webp",
@@ -273,7 +275,7 @@ const templateConfig: TemplateConfig = {
     pricing: {
       id: "pricing",
       title: "Preise",
-      subtitle: "Kostenlos starten – Pro für unlimited AI",
+      subtitle: "Kostenloser Kalorienzähler – Pro-Version für unlimited AI-Features",
       actionText: "App herunterladen",
       plans: [
         {

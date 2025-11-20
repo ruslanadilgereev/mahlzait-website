@@ -1,9 +1,11 @@
 ---
 import AppRedirectionPage from "@modules/app"
 import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro"
 import defaultTemplateConfig from "utils/config";
 ---
 
 <Layout {...defaultTemplateConfig}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="App" />
   <AppRedirectionPage client:load config={defaultTemplateConfig} />
 </Layout>

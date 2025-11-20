@@ -42,8 +42,9 @@ function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
             <figure className="py-4">
               <img
                 src={frontContent.icon}
-                alt="feature icon"
+                alt={`${frontContent.title} Icon - Mahlzait Feature`}
                 className="w-40 transition-transform group-hover:scale-90"
+                loading="lazy"
               />
             </figure>
           </div>
@@ -71,8 +72,9 @@ function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
               <div className="relative w-full h-full bg-white rounded-[2.5rem] overflow-hidden">
                 <img
                   src={backImage}
-                  alt="App Screenshot"
+                  alt={`${frontContent.title} - Mahlzait App Ansicht`}
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

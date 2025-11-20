@@ -1,6 +1,7 @@
 ---
 import PrivacyPolicyPage from "@modules/privacyPolicy";
 import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro"
 import defaultTemplateConfig from "utils/config";
 ---
 
@@ -8,5 +9,6 @@ import defaultTemplateConfig from "utils/config";
   {...defaultTemplateConfig}
   seo={defaultTemplateConfig.privacyPolicy?.seo}
 >
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Privacy Policy" />
   <PrivacyPolicyPage client:load config={defaultTemplateConfig} />
 </Layout>

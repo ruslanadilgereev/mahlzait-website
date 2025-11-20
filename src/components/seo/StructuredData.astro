@@ -1,0 +1,111 @@
+---
+import type { TemplateConfig } from "utils/configType";
+import { generateWebsiteSchema } from "./schemas/website";
+import { generateOrganizationSchema } from "./schemas/organization";
+import { generateMobileAppSchema } from "./schemas/mobileApp";
+import { generateFAQSchema } from "./schemas/faq";
+import { generateReviewSchema } from "./schemas/review";
+import { generateHowToSchema } from "./schemas/howto";
+import { generateBreadcrumbSchema } from "./schemas/breadcrumb";
+
+interface Props {
+  config: TemplateConfig;
+  type?: "homepage" | "page";
+  pageTitle?: string;
+}
+
+const { config, type = "page", pageTitle } = Astro.props;
+const siteUrl = "https://mahlzait.de";
+const currentUrl = new URL(Astro.url.pathname, siteUrl).href;
+
+// Basis-Schemas für alle Seiten
+const websiteSchema = generateWebsiteSchema(
+  siteUrl,
+  config.name,
+  config.seo.description
+);
+
+const organizationSchema = generateOrganizationSchema(
+  siteUrl,
+  config.name,
+  new URL(config.logo, siteUrl).href
+);
+
+const mobileAppSchema = generateMobileAppSchema(
+  siteUrl,
+  config.name,
+  config.seo.description,
+  config.appStoreLink,
+  config.googlePlayLink
+);
+
+// Homepage-spezifische Schemas
+let faqSchema = null;
+let reviewSchemas = null;
+let howToSchema = null;
+let breadcrumbSchema = null;
+
+if (type === "homepage" && config.home) {
+  // FAQ Schema
+  if (config.home.faq) {
+    faqSchema = generateFAQSchema(
+      siteUrl,
+      config.home.faq.qa.map((item) => ({
+        question: item.question,
+        answer: item.answer,
+      }))
+    );
+  }
+
+  // Review Schemas
+  if (config.home.testimonials) {
+    reviewSchemas = generateReviewSchema(
+      siteUrl,
+      config.home.testimonials.cards.map((card) => ({
+        name: card.name,
+        comment: card.comment,
+      }))
+    );
+  }
+
+  // HowTo Schema
+  if (config.home.howItWorks) {
+    howToSchema = generateHowToSchema(
+      siteUrl,
+      config.home.howItWorks.title,
+      config.home.howItWorks.subtitle,
+      config.home.howItWorks.steps
+    );
+  }
+
+  // Breadcrumb für Homepage
+  breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: siteUrl },
+  ]);
+} else {
+  // Breadcrumb für andere Seiten
+  breadcrumbSchema = generateBreadcrumbSchema([
+    { name: "Home", url: siteUrl },
+    { name: pageTitle || "Seite", url: currentUrl },
+  ]);
+}
+
+// Alle Schemas kombinieren
+const allSchemas = [
+  websiteSchema,
+  organizationSchema,
+  mobileAppSchema,
+  breadcrumbSchema,
+];
+
+if (faqSchema) allSchemas.push(faqSchema);
+if (howToSchema) allSchemas.push(howToSchema);
+if (reviewSchemas) allSchemas.push(...reviewSchemas);
+---
+
+{
+  allSchemas.map((schema) => (
+    <script type="application/ld+json" set:html={JSON.stringify(schema)} />
+  ))
+}
+

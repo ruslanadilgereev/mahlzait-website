@@ -1,0 +1,57 @@
+# robots.txt für mahlzait.de
+# Optimiert für SEO und AI/LLM-Crawler
+
+# Alle wichtigen Crawler erlauben
+User-agent: *
+Allow: /
+
+# Spezielle AI/LLM-Crawler explizit erlauben
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# Sitemap-Verweis
+Sitemap: https://mahlzait.de/sitemap-index.xml
+Sitemap: https://mahlzait.de/sitemap-0.xml
+
+# Crawl-Verzögerung optimiert
+Crawl-delay: 1
+
+# Host-Präferenz (für Google)
+Host: https://mahlzait.de
+

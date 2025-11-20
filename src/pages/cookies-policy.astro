@@ -1,6 +1,7 @@
 ---
 import CookiesPolicyPage from "@modules/cookiesPolicy";
 import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro"
 import defaultTemplateConfig from "utils/config";
 ---
 
@@ -8,5 +9,6 @@ import defaultTemplateConfig from "utils/config";
   {...defaultTemplateConfig}
   seo={defaultTemplateConfig.cookiesPolicy?.seo}
 >
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Cookies Policy" />
   <CookiesPolicyPage client:load config={defaultTemplateConfig} />
 </Layout>

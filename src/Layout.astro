@@ -7,10 +7,14 @@ import Analytics from "@vercel/analytics/astro";
 
 const { backgroundGrid, seo, logo, theme, forceTheme } =
   Astro.props as TemplateConfig;
+
+const siteUrl = "https://mahlzait.de";
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const logoFullUrl = new URL(logo, siteUrl).href;
 ---
 
 <!doctype html>
-<html lang="en" data-theme={theme}>
+<html lang="de" data-theme={theme}>
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -22,20 +26,77 @@ const { backgroundGrid, seo, logo, theme, forceTheme } =
     <title>{seo.title}</title>
     <meta name="title" content={seo.title} />
     <meta name="description" content={seo.description} />
+    <meta
+      name="keywords"
+      content="kalorienzähler, kalorienzähler app, food tracker, kalorienzähler mit ki, kalorienzähler kostenlos, kalorien tracker, mahlzeiten tracken, barcode scanner, rezepte teilen, gewicht tracken, makros tracken, ernährungstagebuch, diät app, abnehmen app, fitness tracker"
+    />
+    <meta name="author" content="Mahlzait" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="theme-color" content="#10b981" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Alternate hreflang -->
+    <link rel="alternate" hreflang="de" href={canonicalUrl} />
+    <link rel="alternate" hreflang="de-DE" href={canonicalUrl} />
+    <link rel="alternate" hreflang="x-default" href={canonicalUrl} />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content={Astro.url} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Mahlzait" />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
-    <meta property="og:image" content={new URL(logo, Astro.url)} />
+    <meta property="og:image" content={logoFullUrl} />
+    <meta property="og:image:width" content="512" />
+    <meta property="og:image:height" content="512" />
+    <meta property="og:image:alt" content="Mahlzait Logo" />
+    <meta property="og:locale" content="de_DE" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content={Astro.url} />
-    <meta property="twitter:title" content={seo.title} />
-    <meta property="twitter:description" content={seo.description} />
-    <meta property="twitter:image" content={new URL(logo, Astro.url)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={canonicalUrl} />
+    <meta name="twitter:title" content={seo.title} />
+    <meta name="twitter:description" content={seo.description} />
+    <meta name="twitter:image" content={logoFullUrl} />
+    <meta name="twitter:image:alt" content="Mahlzait Logo" />
+
+    <!-- Apple Mobile Web App -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Mahlzait" />
+    <link rel="apple-touch-icon" href={logo} />
+
+    <!-- Microsoft -->
+    <meta name="msapplication-TileColor" content="#10b981" />
+    <meta name="msapplication-tap-highlight" content="no" />
+
+    <!-- Preload kritische Ressourcen -->
+    <link
+      rel="preload"
+      href="/fonts/Rowdies-Bold.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="/fonts/CabinSketch.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
+
+    <!-- Prefetch wichtige Seiten -->
+    <link rel="prefetch" href="/app" />
+
+    <!-- DNS Prefetch für externe Ressourcen -->
+    <link rel="dns-prefetch" href="https://apps.apple.com" />
+    <link rel="dns-prefetch" href="https://play.google.com" />
 
     <script is:inline define:vars={{ forceTheme }}>
       function getPreferredColorScheme() {

@@ -74,8 +74,9 @@ function Pricing() {
                   <div className={clsx("h-32 w-[40%] p-4", planBGs[index])}>
                     <img
                       src={planImages[index]}
-                      alt="pricing plan"
+                      alt={`${plan.title} - Mahlzait Preisplan Icon`}
                       className="m-0 h-full w-full object-contain"
+                      loading="lazy"
                     />
                   </div>
                   <div className="mt-8 flex-1 font-bold">
