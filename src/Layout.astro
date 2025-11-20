@@ -2,6 +2,8 @@
 import "swiper/css";
 import "@styles/styles.scss";
 import type { TemplateConfig } from "utils/configType";
+import { Analytics } from "@vercel/analytics/astro";
+import { SpeedInsights } from "@vercel/speed-insights/astro";
 
 const { backgroundGrid, seo, logo, theme, forceTheme } =
   Astro.props as TemplateConfig;
@@ -52,5 +54,7 @@ const { backgroundGrid, seo, logo, theme, forceTheme } =
   <body class="relative">
     {backgroundGrid && <div class="backgroundGrid" />}
     <slot />
+    <Analytics />
+    <SpeedInsights />
   </body>
 </html>
