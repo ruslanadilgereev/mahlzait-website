@@ -259,6 +259,11 @@ const templateConfig: TemplateConfig = {
           answer:
             "Mahlzait kombiniert klassisches Food-Tracking mit KI-Power: Mahlzeiten per Foto oder Chat loggen (statt mühsames Tippen), KI-Vorschläge wenn du nicht weißt was du essen sollst, YouTube-Rezept-Import, Barcode-Scanner, Offline-Funktion und Health-Integration. Alles kostenlos nutzbar, ohne Abo-Zwang. Die App ist auf Deutsch optimiert und erkennt deutsche Lebensmittel perfekt.",
         },
+        {
+          question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
+          answer:
+            "Ja! Mahlzait bietet praktische Homescreen-Widgets für iOS und Android. Das Übersichts-Widget zeigt dir deine täglichen Kalorien, Makros und Fortschritte direkt auf dem Homescreen. Zusätzlich gibt es Quick-Launch-Widgets für alle 4 Logging-Methoden: Direktzugriff auf Lebensmittel-Suche, Barcode-Scanner, manuelle Eingabe oder KI-Logging – einfach antippen und sofort loslegen, ohne die App zu öffnen.",
+        },
       ],
     },
     header: {
