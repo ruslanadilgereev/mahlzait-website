@@ -548,7 +548,7 @@ Mahlzait
 Ruslan Adilgereev  
 Am Tierpark 62  
 10319 Berlin  
-E-Mail: info@mahlzait.de  
+E-Mail: kontakt@mahlzait.de  
 Telefon: 017643657343
 `,
   },
