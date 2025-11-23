@@ -367,7 +367,7 @@ Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, außer in folgend
 
 Gemäß DSGVO haben Sie folgende Rechte:
 - **Auskunft und Korrektur:** Sie haben das Recht, auf die personenbezogenen Daten, die wir über Sie speichern, zuzugreifen und diese zu korrigieren.
-- **Löschung:** Sie können die Löschung Ihrer personenbezogenen Daten verlangen, indem Sie uns unter datenschutz@mahlzait.de kontaktieren oder die Löschfunktion in der App nutzen.
+- **Löschung:** Sie können die Löschung Ihrer personenbezogenen Daten verlangen, indem Sie uns unter kontakt@mahlzait.de kontaktieren oder die Löschfunktion in der App nutzen.
 - **Widerspruch:** Sie können der Verarbeitung Ihrer Daten widersprechen.
 - **Datenübertragbarkeit:** Sie haben das Recht, Ihre Daten in einem strukturierten, maschinenlesbaren Format zu erhalten.
 - **Opt-Out:** Sie können Marketing-Kommunikation jederzeit abbestellen.
@@ -388,7 +388,7 @@ Mahlzait
 Ruslan Adilgereev  
 Am Tierpark 62  
 10319 Berlin  
-E-Mail: datenschutz@mahlzait.de  
+E-Mail: kontakt@mahlzait.de  
 Telefon: 017643657343
 
 `,
@@ -465,7 +465,7 @@ Mahlzait
 Ruslan Adilgereev  
 Am Tierpark 62  
 10319 Berlin  
-E-Mail: datenschutz@mahlzait.de  
+E-Mail: kontakt@mahlzait.de  
 Telefon: 017643657343
 `,
   },
