@@ -119,7 +119,7 @@ function Header() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8 }}
-                className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-base-200/80 backdrop-blur-sm border border-base-300 hover:bg-base-300/80 transition-colors no-underline group"
+                className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-base-200/80 backdrop-blur-sm border border-base-300 hover:bg-base-300/80 transition-colors no-underline group w-fit"
               >
                 <svg 
                   className="w-5 h-5 text-success" 

@@ -38,7 +38,7 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
       src={themedSrc}
       alt={`Mahlzait App Screenshot ${index + 1} - Kalorienzähler Funktion`}
       style={{ translateX: x, translateY: y, scale: 1 }}
-      className="absolute overflow-hidden w-full h-full object-cover"
+      className="absolute overflow-hidden w-full h-full object-contain object-top"
     />
   );
 }
