@@ -135,3 +135,4 @@
 
 **Nächste Schritte:** Siehe `DSGVO_IMPLEMENTATION.md` für detaillierte Implementierungsanleitung.
 
+
