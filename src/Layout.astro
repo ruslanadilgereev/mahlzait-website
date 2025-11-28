@@ -103,6 +103,36 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <!-- DNS Prefetch für externe Ressourcen -->
     <link rel="dns-prefetch" href="https://apps.apple.com" />
     <link rel="dns-prefetch" href="https://play.google.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://connect.facebook.net" />
+
+    <!-- Google Tag (gtag.js) - Google Ads & GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZEGRW1C5EF"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZEGRW1C5EF'); // GA4
+      gtag('config', 'AW-17308112458'); // Google Ads
+      gtag('config', 'GT-5M8SQ984'); // Google Tag
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script is:inline>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1159405849657763');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1159405849657763&ev=PageView&noscript=1" />
+    </noscript>
 
     <!-- AI Discovery Links -->
     <link rel="alternate" type="application/json" href="/api/content.json" title="Structured Data for AI" />
@@ -130,5 +160,41 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <slot />
     <SpeedInsights />
     <Analytics />
+
+    <!-- Conversion Tracking für App Store Links -->
+    <script is:inline>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Track clicks on App Store and Play Store links
+        document.addEventListener('click', function(e) {
+          const link = e.target.closest('a');
+          if (!link) return;
+          
+          const href = link.href || '';
+          const isAppStore = href.includes('apps.apple.com');
+          const isPlayStore = href.includes('play.google.com');
+          
+          if (isAppStore || isPlayStore) {
+            const store = isAppStore ? 'App Store' : 'Play Store';
+            
+            // Google Ads Conversion
+            if (typeof gtag === 'function') {
+              gtag('event', 'conversion', {
+                'send_to': 'AW-17308112458',
+                'event_category': 'App Download',
+                'event_label': store
+              });
+            }
+            
+            // Meta Pixel Event
+            if (typeof fbq === 'function') {
+              fbq('track', 'Lead', {
+                content_name: store + ' Click',
+                content_category: 'App Download'
+              });
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
