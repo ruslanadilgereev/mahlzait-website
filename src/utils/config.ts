@@ -342,8 +342,13 @@ Willkommen bei Mahlzait. Ruslan Adilgereev ("wir", "uns" oder "unser") verpflich
 - **Ernährungsdaten:** Ihre getrackten Mahlzeiten, Kalorien, Makronährstoffe, Gewicht und Ziele.
 
 ### 2. Automatisch erhobene Informationen
-- **Nutzungsdaten:** Wir erfassen Informationen über Ihre Interaktionen mit der App, z.B. welche Funktionen Sie nutzen und wie lange.
-- **Geräteinformationen:** Wir erfassen Informationen über das Gerät, mit dem Sie auf die App zugreifen, einschließlich IP-Adresse, Gerätetyp und Betriebssystem.
+- **Nutzungsdaten:** Wir erfassen Informationen über Ihre Interaktionen mit der App und Website, z.B. welche Funktionen Sie nutzen und wie lange.
+- **Geräteinformationen:** Wir erfassen Informationen über das Gerät, mit dem Sie auf die App/Website zugreifen, einschließlich IP-Adresse (anonymisiert), Gerätetyp und Betriebssystem.
+- **Website-Analytics:** Mit Ihrer Einwilligung nutzen wir folgende Analytics-Tools:
+  - **Google Analytics 4**: Erfassung von Nutzungsstatistiken (IP-Adressen werden anonymisiert)
+  - **Microsoft Clarity**: Heatmaps und Session Recordings zur Verbesserung der Benutzerfreundlichkeit
+  - **Meta Pixel**: Conversion-Tracking für Werbung (nur mit Einwilligung)
+  - **Google Ads**: Conversion-Tracking für Werbung (nur mit Einwilligung)
 
 ### 3. Informationen von Drittanbietern
 - **Drittanbieter-Dienste:** Wenn Sie die App über einen Drittanbieter-Service verbinden (z.B. Apple Health, Google Fit), können wir Informationen von diesem Service gemäß deren Datenschutzrichtlinien erfassen.
@@ -359,8 +364,14 @@ Wir können die erhobenen Informationen für folgende Zwecke verwenden:
 ## Weitergabe Ihrer Daten
 
 Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, außer in folgenden Fällen:
-- **Mit Ihrer Zustimmung:** Wir können Ihre Daten mit Dritten teilen, wenn Sie uns ausdrücklich dazu ermächtigen.
-- **Dienstleister:** Wir können Ihre Daten mit Drittanbietern teilen, die Dienste in unserem Auftrag erbringen (z.B. Firebase für Backend, Apple/Google für In-App-Käufe).
+- **Mit Ihrer Zustimmung:** Wir können Ihre Daten mit Dritten teilen, wenn Sie uns ausdrücklich dazu ermächtigen (z.B. durch Cookie-Consent).
+- **Dienstleister:** Wir können Ihre Daten mit Drittanbietern teilen, die Dienste in unserem Auftrag erbringen:
+  - **Firebase (Google LLC)**: Backend-Services und Datenbank
+  - **Apple/Google**: In-App-Käufe und App-Store-Services
+  - **Google Analytics**: Website-Analyse (nur mit Einwilligung, IP-Adressen anonymisiert)
+  - **Microsoft Clarity**: Website-Analyse und Heatmaps (nur mit Einwilligung)
+  - **Meta Platforms**: Conversion-Tracking für Werbung (nur mit Einwilligung)
+  - **Vercel**: Hosting und Analytics (Privacy-freundlich)
 - **Gesetzliche Anforderungen:** Wir können Ihre Daten offenlegen, wenn dies gesetzlich vorgeschrieben ist oder wenn wir glauben, dass dies notwendig ist, um rechtlichen Verpflichtungen nachzukommen, unsere Rechte zu schützen oder Betrug zu verhindern.
 
 ## Ihre Rechte und Wahlmöglichkeiten
@@ -418,17 +429,31 @@ Wir verwenden folgende Arten von Cookies in unserer App:
    Diese Cookies sind für die Nutzung einiger Funktionen unserer App unerlässlich. Ohne diese Cookies können einige Dienste nicht bereitgestellt werden (z.B. Login, Theme-Einstellung).
 
 2. **Performance- und Analytics-Cookies:**  
-   Diese Cookies sammeln Informationen darüber, wie Nutzer mit unserer App interagieren. Wir nutzen diese Informationen, um die Funktionsweise unserer App zu verbessern (Vercel Analytics).
+   Diese Cookies sammeln Informationen darüber, wie Nutzer mit unserer Website interagieren. Wir nutzen diese Informationen, um die Funktionsweise unserer Website zu verbessern. Diese Cookies werden nur mit Ihrer Einwilligung gesetzt.
+   
+   **Verwendete Services:**
+   - **Google Analytics 4** (G-ZEGRW1C5EF): Analyse des Nutzerverhaltens, anonymisierte IP-Adressen
+   - **Microsoft Clarity** (ud4zp58j1r): Heatmaps und Session Recordings zur Verbesserung der Benutzerfreundlichkeit
+   - **Vercel Analytics**: Privacy-freundliche Website-Analyse (wird automatisch geladen)
 
-3. **Funktionalitäts-Cookies:**  
-   Diese Cookies ermöglichen es unserer App, sich an Ihre Entscheidungen zu erinnern, z.B. Login-Daten oder Sprachpräferenz (Deutsch, Englisch, Russisch).
+3. **Marketing-Cookies:**  
+   Diese Cookies werden verwendet, um Werbung zu messen und zu optimieren. Sie werden nur mit Ihrer ausdrücklichen Einwilligung gesetzt.
+   
+   **Verwendete Services:**
+   - **Meta Pixel** (1159405849657763): Conversion-Tracking für Facebook/Instagram Werbung
+   - **Google Ads** (AW-17308112458): Conversion-Tracking für Google Werbung
 
-4. **Keine Werbe-Cookies:**  
-   Mahlzait verwendet KEINE Werbe- oder Tracking-Cookies von Drittanbietern für Werbezwecke.
+4. **Funktionalitäts-Cookies:**  
+   Diese Cookies ermöglichen es unserer Website, sich an Ihre Entscheidungen zu erinnern, z.B. Theme-Einstellung oder Sprachpräferenz. Diese sind notwendig für die Grundfunktionen.
 
 ### Cookies von Drittanbietern
 
-Wir nutzen ausschließlich Vercel Analytics zur Nutzungsanalyse. Keine Werbe-Cookies.
+Wir nutzen folgende Drittanbieter-Services zur Analyse und Werbung (nur mit Ihrer Einwilligung):
+- Google Analytics 4 (Google LLC)
+- Microsoft Clarity (Microsoft Corporation)
+- Meta Pixel (Meta Platforms Ireland Limited)
+- Google Ads Conversion Tracking (Google LLC)
+- Vercel Analytics (Vercel Inc.) - Privacy-freundlich, keine Einwilligung erforderlich
 
 ## Wie wir Cookies verwenden
 
@@ -439,7 +464,7 @@ Wir verwenden Cookies, um:
 - **Relevante Inhalte bereitzustellen (KI-Vorschläge basierend auf Ihren Präferenzen).**
 - **Ihre Präferenzen basierend auf früheren App-Aktivitäten zu verstehen.**
 
-**Wichtig:** Wir verwenden KEINE Werbe-Cookies oder Tracking für Marketing-Zwecke!
+**Wichtig:** Analytics- und Marketing-Cookies werden nur mit Ihrer ausdrücklichen Einwilligung gesetzt. Sie können Ihre Cookie-Präferenzen jederzeit ändern.
 
 ## Ihre Wahlmöglichkeiten bezüglich Cookies
 

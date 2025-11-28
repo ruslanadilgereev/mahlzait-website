@@ -142,6 +142,22 @@ function Footer() {
                 Cookies
               </motion.a>
             )}
+            <motion.button
+              variants={{
+                hidden: { opacity: 0, scale: 0.4 },
+                visible: { opacity: 1, scale: 1 },
+              }}
+              transition={{ delay: 0.8 }}
+              className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap cursor-pointer bg-transparent border-none"
+              onClick={() => {
+                if (typeof window !== "undefined" && (window as any).revokeCookieConsent) {
+                  (window as any).revokeCookieConsent();
+                }
+              }}
+              title="Cookie-Einstellungen widerrufen"
+            >
+              Opt-Out
+            </motion.button>
           </div>
           <motion.p
             variants={{
