@@ -199,12 +199,12 @@ export default function LiveDemo() {
                                                 className={`flex ${msg.role === "user" ? "justify-end" : "justify-start"}`}
                                             >
                                                 <div
-                                                    className={`max-w-[85%] px-2.5 2xs:px-3 py-1.5 2xs:py-2 rounded-2xl ${msg.role === "user"
+                                                    className={`max-w-[85%] px-2.5 2xs:px-3 py-1.5 2xs:py-2 rounded-2xl overflow-hidden ${msg.role === "user"
                                                         ? "bg-primary text-primary-content"
                                                         : "bg-base-200 text-base-content"
                                                         }`}
                                                 >
-                                                    <p className="text-[11px] 2xs:text-xs leading-relaxed">{msg.content}</p>
+                                                    <p className="text-[11px] 2xs:text-xs leading-relaxed break-words">{msg.content}</p>
                                                     
                                                     {/* Meal Cards */}
                                                     {msg.meals && msg.meals.length > 0 && (
