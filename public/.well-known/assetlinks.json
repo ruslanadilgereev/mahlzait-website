@@ -1,0 +1,16 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls",
+      "delegate_permission/common.get_login_creds"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.promptit.mytemple",
+      "sha256_cert_fingerprints": [
+        "74:E9:C0:6C:9C:2B:88:8A:85:F5:84:BE:89:A6:3C:E7:4F:10:E8:EE:C8:5A:88:8D:F1:5C:9E:3E:1F:E8:80:5E"
+      ]
+    }
+  }
+]
+
