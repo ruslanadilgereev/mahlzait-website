@@ -48,6 +48,7 @@ const templateConfig: TemplateConfig = {
       { href: "/#how-it-works", title: "Anleitung" },
       { href: "/#pricing", title: "Preise" },
       { href: "/#faq", title: "FAQ" },
+      { href: "/team", title: "Team" },
     ],
   },
   appBanner: {

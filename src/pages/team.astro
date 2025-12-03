@@ -1,0 +1,69 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import TeamPage from "@modules/team";
+
+const teamSeo = {
+  title: "Team - Mahlzait | Smartes Tracking statt Barcode-Frust",
+  description:
+    "Das Team hinter Mahlzait. Wir ersetzen nerviges Barcode-Scannen durch intelligente AI. Gründer Ruslan Adilgereev baut das Tool, das er selbst vermisst hat.",
+};
+
+const company = {
+  name: "Mahlzait",
+  mission: "Abnehmen durch Präzision: Das einfachste Tracking-Erlebnis der Welt bauen.",
+  founded: "2025",
+  location: "Berlin",
+  email: "kontakt@mahlzait.de",
+  website: "https://mahlzait.de",
+};
+
+const founder = {
+  id: `${company.website}/#person-ruslan`,
+  name: "Ruslan Adilgereev",
+  role: "Founder & Product",
+  bio:
+    "Ingenieur & Pragmatiker. Hat Mahlzait gebaut, weil ihm existierende Apps zu ungenau und Barcodes zu nervig waren. Setzt auf modernste AI (LLMs mit Grounding) statt veralteter Datenbanken. Fokus: UX, die funktioniert.",
+  linkedin: "https://www.linkedin.com/in/ruslanadilgereev",
+  image: null,
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={teamSeo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Team" />
+
+  <!-- Zusätzliche strukturierte Daten: Person + erweiterte Organisation -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "@id": founder.id,
+      name: founder.name,
+      jobTitle: "Founder & Product",
+      worksFor: {
+        "@type": "Organization",
+        "@id": `${company.website}#organization`,
+        name: company.name,
+      },
+      url: `${company.website}/team`,
+      sameAs: [founder.linkedin],
+    })}
+  </script>
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": `${company.website}#organization`,
+      name: company.name,
+      email: `mailto:${company.email}`,
+      foundingDate: company.founded,
+      foundingLocation: { "@type": "Place", name: "Berlin, Germany" },
+      founder: { "@id": founder.id },
+    })}
+  </script>
+
+  <TeamPage client:load config={defaultTemplateConfig} />
+</Layout>
+
+
