@@ -575,8 +575,8 @@ Diese ist für Grundfunktionen erforderlich und kann nicht deaktiviert werden:
 ### 2.2 Analytics/Statistik (nur mit Einwilligung)
 
 Wenn du zustimmst, nutzen wir Analyse‑Tools, um die Website zu verbessern:
-- **Google Analytics 4** (Kennung: G‑ZEGRW1C5EF) – Reichweitenmessung und Nutzungsanalyse,
-- **Microsoft Clarity** (Kennung: ud4zp58j1r) – Heatmaps und Session‑Replays zur UX‑Optimierung.
+- **Google Analytics 4** – Reichweitenmessung und Nutzungsanalyse,
+- **Microsoft Clarity** – Heatmaps und Session‑Replays zur UX‑Optimierung.
 
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
 
@@ -586,8 +586,8 @@ Je nach Ausgestaltung kann dies auf Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Int
 ### 2.3 Marketing (nur mit Einwilligung)
 
 Wenn du zustimmst, nutzen wir Marketing‑Tracking zur Kampagnenmessung:
-- **Meta Pixel** (Kennung: 1159405849657763),
-- **Google Ads Conversion Tracking** (Kennung: AW‑17308112458).
+- **Meta Pixel**,
+- **Google Ads Conversion Tracking**.
 
 Dabei können z.B. Kampagnenparameter (utm_*, gclid, fbclid) und Ereignisse wie ein Klick auf einen App‑Store‑Link verarbeitet werden.
 
