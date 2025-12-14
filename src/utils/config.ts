@@ -329,80 +329,216 @@ const templateConfig: TemplateConfig = {
     },
     content: `# Datenschutzerklärung
 
-**Stand:** November 2025
+**Stand:** Dezember 2025
 
-## Einleitung
+Diese Datenschutzerklärung gilt für:
+- die Website "mahlzait.de" inkl. aller Unterseiten,
+- die mobile App "Mahlzait" (iOS/Android),
+- die dazugehörigen Backend‑Dienste (z.B. Login, Speicherung, Synchronisation, KI‑Funktionen).
 
-Willkommen bei Mahlzait. Ruslan Adilgereev ("wir", "uns" oder "unser") verpflichtet sich, Ihre Privatsphäre zu schützen. Diese Datenschutzerklärung erklärt, wie wir Ihre personenbezogenen Daten erheben, verwenden und weitergeben, wenn Sie unsere App nutzen.
+## 1. Verantwortlicher
 
-## Welche Daten wir erheben
-
-### 1. Von Ihnen bereitgestellte Informationen
-- **Account-Informationen:** Wenn Sie sich für unsere App registrieren, erheben wir Ihren Namen, E-Mail-Adresse und andere Kontaktinformationen.
-- **Nutzerdaten:** Wir erheben Inhalte, die Sie hochladen, posten oder anderweitig über die App übermitteln, einschließlich Mahlzeiten-Logs, Fotos und andere Medien.
-- **Ernährungsdaten:** Ihre getrackten Mahlzeiten, Kalorien, Makronährstoffe, Gewicht und Ziele.
-
-### 2. Automatisch erhobene Informationen
-- **Nutzungsdaten:** Wir erfassen Informationen über Ihre Interaktionen mit der App und Website, z.B. welche Funktionen Sie nutzen und wie lange.
-- **Geräteinformationen:** Wir erfassen Informationen über das Gerät, mit dem Sie auf die App/Website zugreifen, einschließlich IP-Adresse (anonymisiert), Gerätetyp und Betriebssystem.
-- **Website-Analytics:** Mit Ihrer Einwilligung nutzen wir folgende Analytics-Tools:
-  - **Google Analytics 4**: Erfassung von Nutzungsstatistiken (IP-Adressen werden anonymisiert)
-  - **Microsoft Clarity**: Heatmaps und Session Recordings zur Verbesserung der Benutzerfreundlichkeit
-  - **Meta Pixel**: Conversion-Tracking für Werbung (nur mit Einwilligung)
-  - **Google Ads**: Conversion-Tracking für Werbung (nur mit Einwilligung)
-
-### 3. Informationen von Drittanbietern
-- **Drittanbieter-Dienste:** Wenn Sie die App über einen Drittanbieter-Service verbinden (z.B. Apple Health, Google Fit), können wir Informationen von diesem Service gemäß deren Datenschutzrichtlinien erfassen.
-
-## Wie wir Ihre Daten verwenden
-
-Wir können die erhobenen Informationen für folgende Zwecke verwenden:
-- **Bereitstellung und Wartung unseres Services:** Wir nutzen Ihre Daten, um die App zu betreiben und zu verbessern.
-- **Kommunikation mit Ihnen:** Wir können Ihre Kontaktdaten nutzen, um Ihnen Updates, Benachrichtigungen und andere Mitteilungen bezüglich der App zu senden.
-- **Personalisierung:** Wir können Ihre Daten nutzen, um Ihr Erlebnis in der App zu personalisieren und Ihnen auf Ihre Interessen zugeschnittene Inhalte anzubieten (z.B. KI-Essensvorschläge).
-- **Analytik und Forschung:** Wir nutzen die Daten, um zu analysieren, wie Nutzer mit der App interagieren und unsere Dienste zu verbessern.
-
-## Weitergabe Ihrer Daten
-
-Wir geben Ihre personenbezogenen Daten nicht an Dritte weiter, außer in folgenden Fällen:
-- **Mit Ihrer Zustimmung:** Wir können Ihre Daten mit Dritten teilen, wenn Sie uns ausdrücklich dazu ermächtigen (z.B. durch Cookie-Consent).
-- **Dienstleister:** Wir können Ihre Daten mit Drittanbietern teilen, die Dienste in unserem Auftrag erbringen:
-  - **Firebase (Google LLC)**: Backend-Services und Datenbank
-  - **Apple/Google**: In-App-Käufe und App-Store-Services
-  - **Google Analytics**: Website-Analyse (nur mit Einwilligung, IP-Adressen anonymisiert)
-  - **Microsoft Clarity**: Website-Analyse und Heatmaps (nur mit Einwilligung)
-  - **Meta Platforms**: Conversion-Tracking für Werbung (nur mit Einwilligung)
-  - **Vercel**: Hosting und Analytics (Privacy-freundlich)
-- **Gesetzliche Anforderungen:** Wir können Ihre Daten offenlegen, wenn dies gesetzlich vorgeschrieben ist oder wenn wir glauben, dass dies notwendig ist, um rechtlichen Verpflichtungen nachzukommen, unsere Rechte zu schützen oder Betrug zu verhindern.
-
-## Ihre Rechte und Wahlmöglichkeiten
-
-Gemäß DSGVO haben Sie folgende Rechte:
-- **Auskunft und Korrektur:** Sie haben das Recht, auf die personenbezogenen Daten, die wir über Sie speichern, zuzugreifen und diese zu korrigieren.
-- **Löschung:** Sie können die Löschung Ihrer personenbezogenen Daten verlangen, indem Sie uns unter kontakt@mahlzait.de kontaktieren oder die Löschfunktion in der App nutzen.
-- **Widerspruch:** Sie können der Verarbeitung Ihrer Daten widersprechen.
-- **Datenübertragbarkeit:** Sie haben das Recht, Ihre Daten in einem strukturierten, maschinenlesbaren Format zu erhalten.
-- **Opt-Out:** Sie können Marketing-Kommunikation jederzeit abbestellen.
-
-## Sicherheit
-
-Wir ergreifen angemessene Maßnahmen, um Ihre personenbezogenen Daten vor unbefugtem Zugriff, Nutzung oder Offenlegung zu schützen. Wir nutzen Firebase (Google) als Backend mit verschlüsselter Datenübertragung. Dennoch ist kein Sicherheitssystem vollständig sicher, und wir können die absolute Sicherheit Ihrer Daten nicht garantieren.
-
-## Änderungen dieser Datenschutzerklärung
-
-Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen und das "Stand"-Datum oben aktualisieren. Ihre fortgesetzte Nutzung der App nach solchen Änderungen bedeutet Ihre Zustimmung zur überarbeiteten Datenschutzerklärung.
-
-## Kontakt
-
-Bei Fragen oder Bedenken zu dieser Datenschutzerklärung kontaktieren Sie uns unter:
-
-Mahlzait  
-Ruslan Adilgereev  
+**Mahlzait (Einzelunternehmen)**  
+Inhaber: Ruslan Adilgereev  
 Am Tierpark 62  
 10319 Berlin  
+Deutschland  
 E-Mail: kontakt@mahlzait.de  
 Telefon: 017643657343
 
+**Kontakt für Datenschutzanfragen:** kontakt@mahlzait.de
+
+## 2. Grundsätze
+
+Wir verarbeiten personenbezogene Daten nur, wenn dies erforderlich ist, eine Rechtsgrundlage besteht und/oder Sie eingewilligt haben.
+
+Hinweis: Mahlzait ist eine Ernährungs‑ und Fitness‑App. Dabei können je nach Nutzung auch Daten verarbeitet werden, die Rückschlüsse auf Gesundheit und Lebensweise zulassen. Für optionale Funktionen (z.B. Health‑Sync, KI‑Analyse von Bildern/Audio) holen wir – soweit erforderlich – Ihre Einwilligung ein.
+
+## 3. Datenverarbeitung bei Besuch der Website
+
+### 3.1 Hosting, Server‑Logfiles
+
+Unsere Website wird über einen Hosting‑Dienstleister bereitgestellt (derzeit: Vercel).
+Beim Aufruf der Website werden technisch notwendige Daten verarbeitet, z.B.:
+- IP‑Adresse,
+- Datum/Uhrzeit,
+- angeforderte Seite/Datei,
+- Referrer‑URL,
+- User‑Agent (Browser/OS),
+- technische Fehlerdaten.
+
+**Zweck:** Auslieferung der Website, Stabilität, Sicherheit (z.B. Missbrauchserkennung) und Fehleranalyse.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherem Betrieb) bzw. Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung angeforderter Inhalte).  
+**Speicherdauer:** Logdaten werden grundsätzlich nur so lange gespeichert, wie es für den Betrieb/Sicherheitszwecke erforderlich ist und anschließend gelöscht oder anonymisiert (typischerweise Tage bis wenige Wochen, abhängig vom Hosting‑Setup).
+
+### 3.2 Consent‑Management, lokale Speicherung
+
+Wir speichern Ihre Auswahl zu Cookies/Tracking in der Regel lokal im Browser (z.B. localStorage), damit wir Ihre Entscheidung bei künftigen Besuchen berücksichtigen können.
+Außerdem kann die Website funktionale Einstellungen speichern (z.B. Theme/Darkmode).
+
+**Zweck:** Merken Ihrer Entscheidung und funktionaler Einstellungen.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. c DSGVO (Nachweispflichten, soweit anwendbar) und/oder Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an nutzerfreundlicher Website‑Bedienung).
+
+### 3.3 Vercel Analytics & Speed Insights
+
+Wir nutzen Performance‑/Reichweitenmessung über Vercel (z.B. Speed Insights/Analytics). Dabei können technische Informationen (z.B. Performance‑Metriken, Seitenaufrufe, grobe Geräte‑/Browserinformationen) verarbeitet werden.
+
+**Zweck:** Performance‑Optimierung und Reichweitenmessung.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Optimierung) bzw. – falls erforderlich – Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
+
+### 3.4 Google Analytics 4 (nur mit Einwilligung)
+
+Wenn Sie zustimmen, nutzen wir Google Analytics 4 (Google Ireland Limited / Google LLC) zur Website‑Analyse.
+Dabei können insbesondere folgende Daten verarbeitet werden:
+- pseudonyme Nutzungs‑/Ereignisdaten (z.B. Seitenaufrufe, Klicks),
+- Geräte‑/Browserinformationen,
+- ungefähre Standortinformationen (abgeleitet),
+- IP‑Adresse (in der Regel gekürzt/anonymisiert, soweit konfiguriert).
+
+**Kennung (Beispiel):** G‑ZEGRW1C5EF  
+**Zweck:** Reichweitenmessung und Verbesserung der Website.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
+**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.
+
+### 3.5 Microsoft Clarity (nur mit Einwilligung)
+
+Wenn Sie zustimmen, nutzen wir Microsoft Clarity (Microsoft Corporation) zur Analyse der Website‑Nutzung (Heatmaps, Session‑Replays).
+Dabei können Interaktionen auf der Website (z.B. Scrollen, Klicks) verarbeitet werden. Clarity bietet Funktionen zum Maskieren sensibler Inhalte; dennoch kann es zu Aufzeichnungen von Eingaben/Interaktionen kommen.
+
+**Kennung (Beispiel):** ud4zp58j1r  
+**Zweck:** UX‑Optimierung und Fehleranalyse.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
+**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.
+
+### 3.6 Meta Pixel & Google Ads Conversion Tracking (nur mit Einwilligung)
+
+Wenn Sie zustimmen, setzen wir Marketing‑Tracking ein (z.B. Meta Pixel, Google Ads Conversion Tracking), um die Wirksamkeit von Werbekampagnen zu messen.
+Dabei können u.a. verarbeitet werden:
+- Ereignisse (z.B. Klick auf App‑Store‑Link),
+- technische Identifier (z.B. Cookie‑/Pixel‑IDs),
+- ggf. Kampagnenparameter (utm_*, gclid, fbclid).
+
+**Meta Pixel (Beispiel):** 1159405849657763  
+**Google Ads (Beispiel):** AW‑17308112458  
+**Zweck:** Kampagnenmessung, Attribution, Marketing‑Optimierung.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
+**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.
+
+## 4. Datenverarbeitung in der App
+
+### 4.1 Konto, Login und Nutzerverwaltung (Firebase Auth)
+
+Für Registrierung/Login nutzen wir Firebase Authentication (Google).
+Dabei verarbeiten wir z.B.:
+- E‑Mail‑Adresse,
+- Auth‑Provider (z.B. Google, Apple),
+- technische Kennungen (z.B. Firebase‑User‑ID).
+
+**Zweck:** Authentifizierung, Kontoverwaltung, Sicherheit.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Anbahnung) und Art. 6 Abs. 1 lit. f DSGVO (Sicherheit/Missbrauchsschutz).
+
+### 4.2 Inhalte und App‑Daten (Firebase Firestore/Storage, lokale Speicherung)
+
+Je nach Nutzung verarbeiten wir in der App insbesondere:
+- Profilangaben (z.B. Alter, Größe, Gewicht, Ziele, Aktivitätslevel, Präferenzen),
+- Ernährungs‑/Trackingdaten (Mahlzeiten, Nährwerte, Rezepte, Einträge),
+- Fotos/Bilder, die Sie zum Loggen/Analysieren bereitstellen,
+- lokale Daten für Offline‑Funktionalität (z.B. Cache, Einstellungen).
+
+**Zweck:** Bereitstellung der Kernfunktionen (Tracking, Auswertungen, Synchronisation, Rezepte).  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Vertrag/Anbahnung).
+
+### 4.3 Gesundheitsdaten & Health‑Sync (Apple Health/HealthKit, Google Health Connect)
+
+Wenn Sie die Health‑Integration aktivieren, kann Mahlzait – abhängig von Ihrer Freigabe – Gesundheitsdaten lesen und/oder schreiben, z.B.:
+- Schritte,
+- Gewicht (lesen/schreiben),
+- Ernährung/Nutrition (lesen/schreiben),
+- Aktivitätsdaten (z.B. Kalorien),
+- Schlafdaten.
+
+Die Freigabe erfolgt über die System‑Berechtigungen von iOS/Android und ist jederzeit widerrufbar (in den jeweiligen Systemeinstellungen).
+
+**Zweck:** Synchronisation und Darstellung Ihrer Gesundheits‑/Fitnessdaten in der App.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und – soweit Gesundheitsdaten betroffen sind – Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung).  
+**Hinweis:** Ohne Aktivierung/Einwilligung findet keine Health‑Sync statt.
+
+### 4.4 KI‑Funktionen (Text, Bild, Audio, YouTube‑URL)
+
+Mahlzait bietet KI‑Funktionen (z.B. Chat, Vorschläge, Analyse von Fotos, Transkription von Sprache, YouTube‑Rezept‑Analyse). Dafür werden Inhalte verarbeitet, die Sie aktiv bereitstellen, z.B.:
+- Texteingaben,
+- Bilder/Fotos,
+- Audioaufnahmen (für Transkription),
+- YouTube‑Links (für Video‑Analyse).
+
+Je nach Funktion werden diese Daten an KI‑Dienstleister übertragen (z.B. Google über Firebase AI / Vertex AI bzw. Gemini‑API, sowie Vertex AI Agent Engine über unsere Backend‑Dienste), um die gewünschten Ergebnisse zu erzeugen.
+
+**Zweck:** Bereitstellung der KI‑Funktionen, Verbesserung der Nutzererfahrung.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung angeforderter Funktion) und – soweit Gesundheitsdaten betroffen sind – Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung).  
+**Wichtig:** Bitte geben Sie keine Inhalte ein, die Sie nicht verarbeitet haben möchten. Inhalte können Hinweise auf Gesundheit/Lebensweise enthalten.
+
+### 4.5 In‑App‑Käufe (Apple App Store / Google Play)
+
+Wenn Sie ein Abo/einen Kauf tätigen, erfolgt die Zahlungsabwicklung über Apple bzw. Google.
+Wir erhalten und verarbeiten in der App typischerweise Informationen zum Kaufstatus (z.B. aktiv/inaktiv), Produkt‑ID und Transaktions‑/Beleg‑IDs für Support und Entitlement‑Prüfung.
+
+**Zweck:** Abwicklung/Verwaltung von Abonnements und Freischaltung von Funktionen.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO.
+
+### 4.6 App‑Analytics & Session‑Replay (nur mit Einwilligung)
+
+Wenn Sie zustimmen, nutzen wir in der App:
+- Firebase Analytics (Google) zur Nutzungsanalyse,
+- Microsoft Clarity (Mobile SDK) für Session‑Replay/Interaktionsanalyse.
+
+**Zweck:** Verbesserung der App, Fehler‑/UX‑Analyse.  
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
+**Widerruf:** jederzeit in den App‑Datenschutz‑Einstellungen.
+
+## 5. Empfänger / Kategorien von Empfängern
+
+Je nach Nutzung können Daten an folgende Kategorien von Empfängern übermittelt werden:
+- Hosting/Content‑Delivery (z.B. Vercel),
+- Cloud‑/Backend‑Dienstleister (z.B. Firebase/Google Cloud),
+- Analytics‑/Marketing‑Dienstleister (z.B. Google Analytics, Microsoft Clarity, Meta, Google Ads) – nur mit Einwilligung,
+- App‑Store‑Betreiber & Zahlungsabwicklung (Apple, Google),
+- Datenbank‑/API‑Dienste (z.B. Open Food Facts) zur Produktrecherche,
+- KI‑Dienstleister (z.B. Google über Firebase AI / Vertex AI / Gemini).
+
+## 6. Drittlandübermittlungen
+
+Einige der genannten Anbieter können Daten auch außerhalb der EU/des EWR verarbeiten (z.B. in den USA oder globalen Regionen).
+Soweit erforderlich, erfolgt die Übermittlung auf Grundlage geeigneter Garantien (z.B. Standardvertragsklauseln) und/oder anerkannter Angemessenheitsbeschlüsse (z.B. EU‑US Data Privacy Framework, soweit anwendbar).
+
+## 7. Speicherdauer und Löschung
+
+Wir speichern personenbezogene Daten nur so lange, wie es für die jeweiligen Zwecke erforderlich ist:
+- App‑Daten i.d.R. bis zur Löschung Ihres Kontos bzw. solange Sie die App nutzen,
+- technische Logs entsprechend Abschnitt 3.1,
+- Analytics/Marketing‑Daten entsprechend den Einstellungen/Retention‑Vorgaben der jeweiligen Anbieter (nur mit Einwilligung).
+
+Sie können Ihr Konto in der App löschen. Dabei werden die in Ihrem Konto gespeicherten App‑Daten grundsätzlich gelöscht, soweit keine gesetzlichen Aufbewahrungspflichten entgegenstehen.
+
+## 8. Ihre Rechte
+
+Sie haben – je nach Voraussetzung – folgende Rechte:
+- Auskunft (Art. 15 DSGVO),
+- Berichtigung (Art. 16 DSGVO),
+- Löschung (Art. 17 DSGVO),
+- Einschränkung der Verarbeitung (Art. 18 DSGVO),
+- Datenübertragbarkeit (Art. 20 DSGVO),
+- Widerspruch (Art. 21 DSGVO),
+- Widerruf erteilter Einwilligungen (Art. 7 Abs. 3 DSGVO) mit Wirkung für die Zukunft.
+
+Außerdem haben Sie das Recht, sich bei einer Datenschutz‑Aufsichtsbehörde zu beschweren (Art. 77 DSGVO).
+
+## 9. Sicherheit
+
+Wir treffen angemessene technische und organisatorische Maßnahmen, um Daten zu schützen (z.B. verschlüsselte Übertragung, Zugriffsbeschränkungen). Dennoch kann keine Methode eine absolute Sicherheit garantieren.
+
+## 10. Änderungen dieser Datenschutzerklärung
+
+Wir können diese Datenschutzerklärung aktualisieren. Die jeweils aktuelle Version ist auf dieser Seite veröffentlicht; das Datum ("Stand") wird angepasst.
 `,
   },
   cookiesPolicy: {
@@ -410,82 +546,62 @@ Telefon: 017643657343
       title: "Cookie-Richtlinie - Mahlzait",
       description: "Cookie-Richtlinie für Mahlzait Kalorienzähler App",
     },
-    content: `# Cookie-Richtlinie
+    content: `# Cookie-Richtlinie / Cookie-Einstellungen (Website)
 
-**Stand:** November 2025
+**Stand:** Dezember 2025
 
-## Einleitung
+Diese Cookie‑Richtlinie gilt für die Website mahlzait.de.
+Die App selbst verwendet keine Browser‑Cookies, sondern – je nach Plattform – systemnahe Speichermechanismen (z.B. lokale App‑Einstellungen). Details zur App findest du in der Datenschutzerklärung.
 
-Diese Cookie-Richtlinie erklärt, wie Mahlzait (Ruslan Adilgereev) Cookies und ähnliche Technologien verwendet, um Sie zu erkennen, wenn Sie unsere App nutzen. Sie erläutert, was diese Technologien sind, warum wir sie verwenden und welche Rechte Sie haben, deren Nutzung zu kontrollieren.
+## 1. Was sind Cookies und ähnliche Technologien?
 
-## Was sind Cookies?
+Cookies sind kleine Textdateien, die im Browser gespeichert werden. Daneben gibt es ähnliche Technologien, z.B.:
+- localStorage/sessionStorage (Speicher im Browser),
+- Pixel‑/Tracking‑Tags (z.B. Meta Pixel),
+- Geräte‑/Browser‑Identifier und Skripte von Drittanbietern.
 
-Cookies sind kleine Datendateien, die auf Ihrem Gerät abgelegt werden, wenn Sie eine Website besuchen oder eine App nutzen. Cookies werden häufig von Online-Dienstanbietern verwendet, um die Interaktion zwischen Nutzern und Websites/Apps zu erleichtern und schneller zu machen sowie Berichtsinformationen bereitzustellen.
+Wir verwenden solche Technologien, um die Website zu betreiben, zu messen und – mit Einwilligung – Marketing zu optimieren.
 
-### Arten von Cookies, die wir verwenden
+## 2. Kategorien
 
-Wir verwenden folgende Arten von Cookies in unserer App:
+### 2.1 Notwendige (essenzielle) Speicherung
 
-1. **Unbedingt erforderliche Cookies:**  
-   Diese Cookies sind für die Nutzung einiger Funktionen unserer App unerlässlich. Ohne diese Cookies können einige Dienste nicht bereitgestellt werden (z.B. Login, Theme-Einstellung).
+Diese ist für Grundfunktionen erforderlich und kann nicht deaktiviert werden:
+- Speichern deiner Einwilligungsentscheidung (Cookie‑Banner),
+- Speichern funktionaler Einstellungen (z.B. Theme/Darkmode).
 
-2. **Performance- und Analytics-Cookies:**  
-   Diese Cookies sammeln Informationen darüber, wie Nutzer mit unserer Website interagieren. Wir nutzen diese Informationen, um die Funktionsweise unserer Website zu verbessern. Diese Cookies werden nur mit Ihrer Einwilligung gesetzt.
-   
-   **Verwendete Services:**
-   - **Google Analytics 4** (G-ZEGRW1C5EF): Analyse des Nutzerverhaltens, anonymisierte IP-Adressen
-   - **Microsoft Clarity** (ud4zp58j1r): Heatmaps und Session Recordings zur Verbesserung der Benutzerfreundlichkeit
-   - **Vercel Analytics**: Privacy-freundliche Website-Analyse (wird automatisch geladen)
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an nutzerfreundlichem und rechtssicherem Betrieb) bzw. Art. 6 Abs. 1 lit. c DSGVO (soweit Nachweis/Umsetzung von Einwilligungen erforderlich ist).
 
-3. **Marketing-Cookies:**  
-   Diese Cookies werden verwendet, um Werbung zu messen und zu optimieren. Sie werden nur mit Ihrer ausdrücklichen Einwilligung gesetzt.
-   
-   **Verwendete Services:**
-   - **Meta Pixel** (1159405849657763): Conversion-Tracking für Facebook/Instagram Werbung
-   - **Google Ads** (AW-17308112458): Conversion-Tracking für Google Werbung
+### 2.2 Analytics/Statistik (nur mit Einwilligung)
 
-4. **Funktionalitäts-Cookies:**  
-   Diese Cookies ermöglichen es unserer Website, sich an Ihre Entscheidungen zu erinnern, z.B. Theme-Einstellung oder Sprachpräferenz. Diese sind notwendig für die Grundfunktionen.
+Wenn du zustimmst, nutzen wir Analyse‑Tools, um die Website zu verbessern:
+- **Google Analytics 4** (Kennung: G‑ZEGRW1C5EF) – Reichweitenmessung und Nutzungsanalyse,
+- **Microsoft Clarity** (Kennung: ud4zp58j1r) – Heatmaps und Session‑Replays zur UX‑Optimierung.
 
-### Cookies von Drittanbietern
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
 
-Wir nutzen folgende Drittanbieter-Services zur Analyse und Werbung (nur mit Ihrer Einwilligung):
-- Google Analytics 4 (Google LLC)
-- Microsoft Clarity (Microsoft Corporation)
-- Meta Pixel (Meta Platforms Ireland Limited)
-- Google Ads Conversion Tracking (Google LLC)
-- Vercel Analytics (Vercel Inc.) - Privacy-freundlich, keine Einwilligung erforderlich
+Zusätzlich setzen wir Performance‑Messung (z.B. Speed Insights/Analytics über Vercel) ein, die typischerweise ohne Cookies auskommt und vor allem aggregierte Performance‑Metriken liefert.
+Je nach Ausgestaltung kann dies auf Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an Performance‑Optimierung) oder – falls erforderlich – ebenfalls auf Einwilligung gestützt sein.
 
-## Wie wir Cookies verwenden
+### 2.3 Marketing (nur mit Einwilligung)
 
-Wir verwenden Cookies, um:
+Wenn du zustimmst, nutzen wir Marketing‑Tracking zur Kampagnenmessung:
+- **Meta Pixel** (Kennung: 1159405849657763),
+- **Google Ads Conversion Tracking** (Kennung: AW‑17308112458).
 
-- **Ihre Login-Daten und Präferenzen zu speichern (Theme, Sprache).**
-- **Nutzungsmuster zu analysieren und die Funktionalität unserer App zu verbessern.**
-- **Relevante Inhalte bereitzustellen (KI-Vorschläge basierend auf Ihren Präferenzen).**
-- **Ihre Präferenzen basierend auf früheren App-Aktivitäten zu verstehen.**
+Dabei können z.B. Kampagnenparameter (utm_*, gclid, fbclid) und Ereignisse wie ein Klick auf einen App‑Store‑Link verarbeitet werden.
 
-**Wichtig:** Analytics- und Marketing-Cookies werden nur mit Ihrer ausdrücklichen Einwilligung gesetzt. Sie können Ihre Cookie-Präferenzen jederzeit ändern.
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).
 
-## Ihre Wahlmöglichkeiten bezüglich Cookies
+## 3. Wie kannst du deine Auswahl ändern oder widerrufen?
 
-Sie haben das Recht zu entscheiden, ob Sie Cookies akzeptieren oder ablehnen. Sie können Ihre Cookie-Präferenzen anpassen, indem Sie die Einstellungen in Ihrem Browser ändern. Die meisten Browser ermöglichen Ihnen:
+Du kannst deine Auswahl jederzeit über das Cookie‑Banner bzw. die Cookie‑Einstellungen auf der Website ändern oder widerrufen. Bei einem Widerruf werden – soweit technisch möglich – die entsprechenden Skripte nicht weiter geladen und ggf. lokal gespeicherte Einträge (z.B. Einwilligungsstatus) aktualisiert.
 
-- **Anzuzeigen, welche Cookies auf Ihrem Gerät gespeichert sind und diese einzeln zu löschen.**
-- **Drittanbieter-Cookies zu blockieren.**
-- **Cookies von bestimmten Websites zu blockieren.**
-- **Alle Cookies zu blockieren.**
-- **Alle Cookies beim Schließen des Browsers zu löschen.**
+Zusätzlich kannst du in deinem Browser Cookies und Website‑Daten löschen oder blockieren. Beachte: Wenn du essenzielle Website‑Daten löschst, kann z.B. das Cookie‑Banner erneut angezeigt werden.
 
-Bitte beachten Sie, dass einige Funktionen der App möglicherweise nicht ordnungsgemäß funktionieren, wenn Sie Cookies blockieren oder löschen (z.B. Theme-Speicherung, Login-Status).
+## 4. Kontakt
 
-## Änderungen dieser Cookie-Richtlinie
-
-Wir können diese Cookie-Richtlinie von Zeit zu Zeit aktualisieren. Wir werden Sie über Änderungen informieren, indem wir die neue Cookie-Richtlinie auf dieser Seite veröffentlichen und das "Stand"-Datum oben aktualisieren.
-
-## Kontakt
-
-Bei Fragen oder Bedenken zu unserer Verwendung von Cookies kontaktieren Sie uns unter:
+Bei Fragen zur Cookie‑Richtlinie:
 
 Mahlzait  
 Ruslan Adilgereev  

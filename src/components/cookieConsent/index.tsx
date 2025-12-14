@@ -71,34 +71,59 @@ function CookieConsent() {
 
     // Marketing scripts
     if (prefs.marketing) {
+      loadGoogleAds();
       loadMetaPixel();
     }
   };
 
+  const ensureGtagJsLoaded = (tagIdForSrc: string) => {
+    if (typeof window === "undefined") return;
+    // Prevent duplicate loads (any gtag.js is sufficient)
+    if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]'))
+      return;
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(
+      tagIdForSrc,
+    )}`;
+    document.head.appendChild(script);
+  };
+
+  const ensureGtagInitialized = () => {
+    if (typeof window === "undefined") return;
+    if ((window as any).gtag) return;
+
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    (window as any).gtag = function gtag() {
+      (window as any).dataLayer.push(arguments);
+    };
+    (window as any).gtag("js", new Date());
+  };
+
   const loadGoogleAnalytics = () => {
-    if (typeof window === "undefined" || (window as any).gtag) return;
+    if (typeof window === "undefined") return;
+    // Load gtag.js (needed for GA4)
+    ensureGtagJsLoaded("G-ZEGRW1C5EF");
+    ensureGtagInitialized();
 
-    // Load gtag.js
-    const script1 = document.createElement("script");
-    script1.async = true;
-    script1.src = "https://www.googletagmanager.com/gtag/js?id=G-ZEGRW1C5EF";
-    document.head.appendChild(script1);
+    // Configure GA4 (analytics only)
+    (window as any).gtag("config", "G-ZEGRW1C5EF", {
+      anonymize_ip: true,
+      allow_google_signals: false,
+      allow_ad_personalization_signals: false,
+    });
+  };
 
-    // Initialize gtag
-    const script2 = document.createElement("script");
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ZEGRW1C5EF', {
-        'anonymize_ip': true,
-        'allow_google_signals': false,
-        'allow_ad_personalization_signals': false
-      });
-      gtag('config', 'AW-17308112458');
-      gtag('config', 'GT-5M8SQ984');
-    `;
-    document.head.appendChild(script2);
+  const loadGoogleAds = () => {
+    if (typeof window === "undefined") return;
+    // Load gtag.js (needed for Google Ads conversions)
+    ensureGtagJsLoaded("AW-17308112458");
+    ensureGtagInitialized();
+
+    // Configure Google Ads / Google Tag (marketing only)
+    (window as any).gtag("config", "AW-17308112458");
+    (window as any).gtag("config", "GT-5M8SQ984");
   };
 
   const loadMetaPixel = () => {
@@ -138,10 +163,41 @@ function CookieConsent() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       (window as any).revokeCookieConsent = () => {
+        // Remove stored consent
         localStorage.removeItem(COOKIE_CONSENT_KEY);
+
+        // Remove tracking-related keys we created
+        const localKeysToRemove = [
+          "visitor_id",
+          "visit_count",
+          "first_visit",
+          "acquisition_source",
+          "clicked_download",
+          "download_store",
+        ];
+        localKeysToRemove.forEach((k) => localStorage.removeItem(k));
+        try {
+          sessionStorage.removeItem("page_views");
+        } catch {
+          // ignore
+        }
+
         // Remove tracking scripts
-        const scripts = document.querySelectorAll('script[src*="googletagmanager"], script[src*="clarity"], script[src*="facebook"]');
+        const scripts = document.querySelectorAll(
+          'script[src*="googletagmanager"], script[src*="clarity"], script[src*="facebook"]',
+        );
         scripts.forEach((script) => script.remove());
+
+        // Best-effort cleanup of globals (will be recreated only after new consent)
+        try {
+          delete (window as any).gtag;
+          delete (window as any).dataLayer;
+          delete (window as any).fbq;
+          delete (window as any).clarity;
+        } catch {
+          // ignore
+        }
+
         // Reload page to apply changes
         window.location.reload();
       };
@@ -195,7 +251,7 @@ function CookieConsent() {
               // Main Banner
               <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold mb-2">🍪 Cookie-Einstellungen</h3>
+                  <h3 className="text-lg font-bold mb-2">Cookie-Einstellungen</h3>
                   <p className="text-sm text-base-content/80">
                     Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unsere Website zu analysieren. 
                     Einige Cookies sind notwendig für den Betrieb der Website, andere helfen uns, die Nutzung zu verstehen. 
@@ -238,7 +294,7 @@ function CookieConsent() {
                     onClick={() => setShowSettings(false)}
                     className="btn btn-ghost btn-sm btn-circle"
                   >
-                    ✕
+                    x
                   </button>
                 </div>
 
