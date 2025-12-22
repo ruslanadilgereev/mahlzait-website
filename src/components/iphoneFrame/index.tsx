@@ -15,6 +15,8 @@ function IphoneFrame({ src, alt = "Mahlzait App Screenshot" }: Props) {
         src={themedSrc}
         alt={alt}
         className="h-full w-auto object-contain"
+        width={540}
+        height={1143}
         loading="lazy"
       />
     </div>
