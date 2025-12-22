@@ -61,13 +61,13 @@ const siteUrl = "https://DEINE-ECHTE-DOMAIN.de";
 Ersetze `mahlzait.de` mit deiner Domain:
 
 ```
-✅ https://mahlzait.de
-✅ https://mahlzait.de/sitemap-index.xml
-✅ https://mahlzait.de/robots.txt
-✅ https://mahlzait.de/rss.xml
-✅ https://mahlzait.de/api/content.json
-✅ https://mahlzait.de/ai-questions.json
-✅ https://mahlzait.de/comparison.json
+✅ https://www.mahlzait.de
+✅ https://www.mahlzait.de/sitemap-index.xml
+✅ https://www.mahlzait.de/robots.txt
+✅ https://www.mahlzait.de/rss.xml
+✅ https://www.mahlzait.de/api/content.json
+✅ https://www.mahlzait.de/ai-questions.json
+✅ https://www.mahlzait.de/comparison.json
 ```
 
 **Alle sollten laden ohne 404!**
@@ -91,7 +91,7 @@ Ersetze `mahlzait.de` mit deiner Domain:
 2. **Domain-Property** wählen: `mahlzait.de`
 3. **Verifizieren** (DNS-Eintrag oder HTML-Tag)
 4. Nach Verifizierung:
-   - **Sitemap einreichen**: `https://mahlzait.de/sitemap-index.xml`
+   - **Sitemap einreichen**: `https://www.mahlzait.de/sitemap-index.xml`
    - **URL-Prüfung**: Homepage testen
    - **Indexierung anfordern**: "Indexierung beantragen" klicken
 
@@ -104,7 +104,7 @@ Google weiß sonst nicht, dass deine Website existiert!
 #### Schritte:
 1. Website hinzufügen
 2. Verifizieren
-3. Sitemap einreichen: `https://mahlzait.de/sitemap-index.xml`
+3. Sitemap einreichen: `https://www.mahlzait.de/sitemap-index.xml`
 
 **Warum wichtig?**  
 Bing = Microsoft = ChatGPT nutzt Bing für Web Search!
@@ -147,14 +147,14 @@ Prompt: "Erzähl mir über Mahlzait Kalorienzähler"
 ### 1. Google Rich Results Test
 **URL:** https://search.google.com/test/rich-results
 
-- Gib deine URL ein: `https://mahlzait.de`
+- Gib deine URL ein: `https://www.mahlzait.de`
 - Klicke "Test URL"
 - **Sollte zeigen**: ✅ FAQPage, MobileApplication, Organization, etc.
 
 ### 2. Schema.org Validator
 **URL:** https://validator.schema.org/
 
-- URL eingeben: `https://mahlzait.de`
+- URL eingeben: `https://www.mahlzait.de`
 - **Sollte zeigen**: Alle Schemas valide, keine Errors
 
 ### 3. Google PageSpeed Insights
@@ -174,13 +174,13 @@ Prompt: "Erzähl mir über Mahlzait Kalorienzähler"
 ### 5. XML Sitemap Validator
 **URL:** https://www.xml-sitemaps.com/validate-xml-sitemap.html
 
-- Sitemap URL: `https://mahlzait.de/sitemap-index.xml`
+- Sitemap URL: `https://www.mahlzait.de/sitemap-index.xml`
 - **Sollte zeigen**: Valide, alle URLs erreichbar
 
 ### 6. robots.txt Tester
 **URL:** https://www.google.com/webmasters/tools/robots-testing-tool
 
-- robots.txt URL: `https://mahlzait.de/robots.txt`
+- robots.txt URL: `https://www.mahlzait.de/robots.txt`
 - **Sollte zeigen**: Alle User-agents erlaubt, Sitemap gefunden
 
 ---

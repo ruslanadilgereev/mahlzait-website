@@ -6,7 +6,7 @@ import { agentsSummary } from "@nuasite/agent-summary";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://mahlzait.de",
+  site: "https://www.mahlzait.de",
   vite: {
     css: {
       preprocessorOptions: {
@@ -23,29 +23,53 @@ export default defineConfig({
       changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date(),
-      customPages: [
-        "https://mahlzait.de/",
-        "https://mahlzait.de/app",
-        "https://mahlzait.de/privacy-policy",
-        "https://mahlzait.de/terms-and-conditions",
-        "https://mahlzait.de/cookies-policy",
-      ],
       serialize(item) {
-        // Homepage höchste Priorität
-        if (item.url === "https://mahlzait.de/") {
+        const url = item.url;
+        
+        // Homepage hoechste Prioritaet
+        if (url === "https://www.mahlzait.de/" || url === "https://www.mahlzait.de") {
           item.priority = 1.0;
           item.changefreq = "daily";
         }
-        // App-Seite hohe Priorität
-        if (item.url === "https://mahlzait.de/app") {
+        // Hub-Seiten (Wissen, Rechner) hohe Prioritaet
+        else if (url.endsWith("/wissen") || url.endsWith("/wissen/") || url.endsWith("/rechner") || url.endsWith("/rechner/")) {
+          item.priority = 0.8;
+          item.changefreq = "weekly";
+        }
+        // Wissen-Artikel hohe Prioritaet (SEO-Content)
+        else if (url.includes("/wissen/")) {
+          item.priority = 0.85;
+          item.changefreq = "monthly";
+        }
+        // Rechner-Seiten hohe Prioritaet
+        else if (
+          url.includes("/kalorienbedarf-berechnen") ||
+          url.includes("/kaloriendefizit-berechnen") ||
+          url.includes("/makros-berechnen")
+        ) {
+          item.priority = 0.8;
+          item.changefreq = "monthly";
+        }
+        // App-Redirect Seite
+        else if (url.includes("/app")) {
           item.priority = 0.9;
           item.changefreq = "weekly";
         }
-        // Legal-Seiten niedrigere Priorität
-        if (
-          item.url.includes("privacy-policy") ||
-          item.url.includes("terms-and-conditions") ||
-          item.url.includes("cookies-policy")
+        // Team-Seite mittlere Prioritaet
+        else if (url.includes("/team")) {
+          item.priority = 0.6;
+          item.changefreq = "monthly";
+        }
+        // Legal-Seiten niedrigere Prioritaet
+        else if (
+          url.includes("privacy-policy") ||
+          url.includes("datenschutz") ||
+          url.includes("terms-and-conditions") ||
+          url.includes("nutzungsbedingungen") ||
+          url.includes("cookies-policy") ||
+          url.includes("impressum") ||
+          url.includes("agb") ||
+          url.includes("widerrufsbelehrung")
         ) {
           item.priority = 0.3;
           item.changefreq = "monthly";

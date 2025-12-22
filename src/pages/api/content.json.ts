@@ -1,10 +1,11 @@
 import type { APIRoute } from "astro";
 import templateConfig from "../../utils/config";
+import { articlesMeta } from "@content/wissen";
 
 export const GET: APIRoute = async () => {
-  const siteUrl = "https://mahlzait.de";
+  const siteUrl = "https://www.mahlzait.de";
 
-  // Strukturierte Content-Daten für AI/LLM-Crawler
+  // Strukturierte Content-Daten fuer AI/LLM-Crawler
   const contentData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -45,6 +46,25 @@ export const GET: APIRoute = async () => {
       },
     },
 
+    // Wissen-Artikel (Paper-Analysen)
+    wissenArticles: articlesMeta.map((article) => ({
+      "@type": "Article",
+      headline: article.title,
+      description: article.description,
+      url: `${siteUrl}/wissen/${article.slug}`,
+      datePublished: article.publishedAt,
+      dateModified: article.updatedAt || article.publishedAt,
+      keywords: article.tags,
+      readingTime: `${article.readingTime} Minuten`,
+      sources: article.sources.map((s) => ({
+        title: s.title,
+        authors: s.authors,
+        journal: s.journal,
+        year: s.year,
+        doi: s.doi,
+      })),
+    })),
+
     // Features
     features: templateConfig.home?.features?.cards.map((card) => ({
       title: card.title,
@@ -72,54 +92,59 @@ export const GET: APIRoute = async () => {
       description: step.subtitle,
     })) || [],
 
-    // Keywords für AI
+    // Keywords fuer AI
     keywords: [
-      "kalorienzähler",
-      "kalorienzähler app",
+      "kalorienzaehler",
+      "kalorienzaehler app",
       "food tracker",
-      "kalorienzähler mit ki",
-      "kalorienzähler kostenlos",
+      "kalorienzaehler mit ki",
+      "kalorienzaehler kostenlos",
       "kalorien tracker",
       "mahlzeiten tracken",
       "barcode scanner",
       "rezepte teilen",
       "gewicht tracken",
       "makros tracken",
-      "ernährungstagebuch",
-      "diät app",
+      "ernaehrungstagebuch",
+      "diaet app",
       "abnehmen app",
       "fitness tracker",
       "ai food logging",
-      "künstliche intelligenz ernährung",
+      "kuenstliche intelligenz ernaehrung",
       "health tracking",
+      "ernaehrungswissen",
+      "wissenschaft ernaehrung",
+      "paper analyse",
     ],
 
-    // Hauptmerkmale für AI-Zusammenfassung
+    // Hauptmerkmale fuer AI-Zusammenfassung
     summary: {
-      whatIsIt: "Mahlzait ist ein moderner Kalorienzähler mit KI-Unterstützung für iOS und Android. Die App ermöglicht schnelles und präzises Tracking von Mahlzeiten durch verschiedene Methoden: Suche in einer umfangreichen Datenbank, Barcode-Scanner, manuelle Eingabe oder KI-gestütztes Logging per Foto oder Text.",
+      whatIsIt: "Mahlzait ist ein moderner Kalorienzaehler mit KI-Unterstuetzung fuer iOS und Android. Die App ermoeglicht schnelles und praezises Tracking von Mahlzeiten durch verschiedene Methoden: Suche in einer umfangreichen Datenbank, Barcode-Scanner, manuelle Eingabe oder KI-gestuetztes Logging per Foto oder Text.",
       mainFeatures: [
-        "KI-gestütztes Meal-Logging per Foto oder Text",
-        "Barcode-Scanner für schnelles Erfassen von Produkten",
+        "KI-gestuetztes Meal-Logging per Foto oder Text",
+        "Barcode-Scanner fuer schnelles Erfassen von Produkten",
         "Umfangreiche Lebensmitteldatenbank mit Suche",
         "Rezepte erstellen und mit der Community teilen",
         "Integration mit YouTube-Rezepten",
-        "Ziele für Kalorien und Makronährstoffe setzen",
+        "Ziele fuer Kalorien und Makronaehrstoffe setzen",
         "Gewichtstracking mit Kalenderansicht",
-        "Insights und Trends zur Ernährung",
+        "Insights und Trends zur Ernaehrung",
         "Integration mit Apple Health und Google Fit",
         "Mehrsprachig: Deutsch, Englisch, Russisch",
         "Gamification durch Level-System",
-        "Offline-Nutzung möglich",
+        "Offline-Nutzung moeglich",
+        "Wissenschaftlich fundierte Wissens-Artikel",
       ],
-      targetAudience: "Personen, die ihre Ernährung tracken möchten - ob zum Abnehmen, Muskelaufbau oder für ein gesünderes Leben. Besonders geeignet für alle, die eine schnelle, unkomplizierte Lösung mit modernen KI-Features suchen.",
-      pricing: "Kostenlos nutzbar mit allen Basis-Features. Pro-Version ab 4,99€/Monat oder 29,99€/Jahr für unlimited AI-Features.",
+      targetAudience: "Personen, die ihre Ernaehrung tracken moechten - ob zum Abnehmen, Muskelaufbau oder fuer ein gesuenderes Leben. Besonders geeignet fuer alle, die eine schnelle, unkomplizierte Loesung mit modernen KI-Features suchen.",
+      pricing: "Kostenlos nutzbar mit allen Basis-Features. Pro-Version ab 4,99 Euro/Monat oder 29,99 Euro/Jahr fuer unlimited AI-Features.",
       platforms: "iOS (App Store) und Android (Google Play Store)",
+      wissen: `Wissenschaftlich fundierte Artikel zu Ernaehrung, Abnehmen und Stoffwechsel. Aktuell ${articlesMeta.length} Paper-Analysen verfuegbar.`,
     },
 
     // Metadaten
     metadata: {
       lastUpdated: new Date().toISOString(),
-      version: "1.0.0",
+      version: "1.1.0",
       contentType: "structured-data-for-ai",
       language: "de-DE",
     },
@@ -134,4 +159,3 @@ export const GET: APIRoute = async () => {
     },
   });
 };
-

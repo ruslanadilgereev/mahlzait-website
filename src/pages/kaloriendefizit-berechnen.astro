@@ -1,0 +1,93 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import KaloriendefizitPage from "@modules/kaloriendefizit";
+
+const seo = {
+  title: "Kaloriendefizit berechnen - Abnehmen mit Plan | Mahlzait",
+  description:
+    "Berechne dein ideales Kaloriendefizit zum Abnehmen. Kostenloser Rechner zeigt: Wie viele Kalorien zum Abnehmen? Wann erreichst du dein Zielgewicht? Mit Prognose und Tipps.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kaloriendefizit berechnen" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie gross sollte mein Kaloriendefizit sein?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein Defizit von 300-500 kcal pro Tag ist optimal fuer nachhaltiges Abnehmen. Das entspricht etwa 0,3-0,5 kg pro Woche. Hoehe Defizite (750+) nur kurzzeitig und unter Beobachtung.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie viel kann ich pro Woche abnehmen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Gesund sind 0,5-1 kg pro Woche. Bei 500 kcal Defizit taeglich verlierst du etwa 0,5 kg Fett pro Woche. Schnellerer Gewichtsverlust ist oft Wasser oder Muskelmasse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie berechne ich mein Kaloriendefizit?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Berechne zuerst deinen Gesamtbedarf (TDEE) basierend auf Gewicht, Groesse, Alter und Aktivitaet. Dann ziehe 300-500 kcal ab. Beispiel: TDEE 2000 kcal - 500 kcal = 1500 kcal Ziel.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wann sehe ich Ergebnisse beim Abnehmen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Erste sichtbare Ergebnisse zeigen sich oft nach 2-4 Wochen. Gewichtsschwankungen von 1-2 kg sind normal (Wasser). Beurteile deinen Fortschritt am Wochendurchschnitt.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Im Kaloriendefizit abnehmen",
+      description: "So erreichst du dein Zielgewicht mit einem Kaloriendefizit",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Kalorienbedarf ermitteln",
+          text: "Berechne deinen taeglichen Gesamtbedarf (TDEE) mit dem Rechner",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Defizit festlegen",
+          text: "Waehle ein Defizit von 300-500 kcal fuer nachhaltiges Abnehmen",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Kalorien tracken",
+          text: "Logge deine Mahlzeiten taeglich um im Defizit zu bleiben",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Geduld haben",
+          text: "Bleib 2-4 Wochen konstant und beobachte den Wochendurchschnitt",
+        },
+      ],
+    })}
+  </script>
+
+  <KaloriendefizitPage client:load config={defaultTemplateConfig} />
+</Layout>
+

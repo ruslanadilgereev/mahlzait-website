@@ -126,9 +126,9 @@ curl http://localhost:4321/rss.xml
 
 ### Google Search Console:
 1. Gehe zu: https://search.google.com/search-console
-2. Property hinzufügen: `https://mahlzait.de`
+2. Property hinzufügen: `https://www.mahlzait.de`
 3. Verifizieren (DNS/HTML-Tag)
-4. **Sitemap einreichen**: `https://mahlzait.de/sitemap-index.xml`
+4. **Sitemap einreichen**: `https://www.mahlzait.de/sitemap-index.xml`
 5. **URL-Prüfung**: Teste einzelne Seiten
 6. **Indexierung anfordern**
 
@@ -194,7 +194,7 @@ JSON.parse(document.querySelector('script[type="application/ld+json"]').textCont
 
 ### Problem: Sitemap nicht gefunden
 - Prüfe: `public/robots.txt` enthält Sitemap-URL
-- Prüfe: `astro.config.mjs` hat `site: "https://mahlzait.de"`
+- Prüfe: `astro.config.mjs` hat `site: "https://www.mahlzait.de"`
 
 ### Problem: Meta-Tags fehlen
 - Prüfe: `Layout.astro` enthält alle Tags

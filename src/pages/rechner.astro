@@ -1,0 +1,55 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import RechnerPage from "@modules/rechner";
+
+const seo = {
+  title: "Ernaehrungsrechner - Kalorien, Makros & Defizit berechnen | Mahlzait",
+  description:
+    "Kostenlose Rechner fuer Kalorienbedarf, Kaloriendefizit und Makros. Berechne deinen persoenlichen Bedarf und starte mit dem Tracking. Wissenschaftlich fundiert.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Rechner" />
+
+  <!-- CollectionPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      name: "Ernaehrungsrechner",
+      description: seo.description,
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Kalorienbedarf berechnen",
+            description: "Berechne deinen taeglichen Kalorienbedarf mit der Mifflin-St Jeor Formel",
+            url: "https://www.mahlzait.de/kalorienbedarf-berechnen",
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Kaloriendefizit berechnen",
+            description: "Plane dein Abnehm-Ziel mit dem Defizit-Rechner",
+            url: "https://www.mahlzait.de/kaloriendefizit-berechnen",
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: "Makros berechnen",
+            description: "Berechne deine optimale Makroverteilung",
+            url: "https://www.mahlzait.de/makros-berechnen",
+          },
+        ],
+      },
+    })}
+  </script>
+
+  <RechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
+

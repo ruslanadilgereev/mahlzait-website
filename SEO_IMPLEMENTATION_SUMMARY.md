@@ -17,7 +17,7 @@
 - ✅ Automatische XML-Sitemap-Generierung
 - ✅ Dynamische Prioritäten: Homepage (1.0), App (0.9), Legal (0.3)
 - ✅ changefreq-Angaben: daily, weekly, monthly
-- ✅ URL: https://mahlzait.de/sitemap-index.xml
+- ✅ URL: https://www.mahlzait.de/sitemap-index.xml
 
 ### Canonical URLs & hreflang
 - ✅ Canonical Tags auf allen Seiten
@@ -201,8 +201,8 @@ src/modules/home/_components/liveDemo/index.tsx (Alt-Tags)
 
 ### Sofort nach Deployment:
 1. **Google Search Console** einrichten
-   - Property hinzufügen: https://mahlzait.de
-   - Sitemap einreichen: https://mahlzait.de/sitemap-index.xml
+   - Property hinzufügen: https://www.mahlzait.de
+   - Sitemap einreichen: https://www.mahlzait.de/sitemap-index.xml
    - URL-Inspektion durchführen
 
 2. **Bing Webmaster Tools** einrichten

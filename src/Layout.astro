@@ -9,7 +9,7 @@ import CookieConsent from "@components/cookieConsent";
 const { backgroundGrid, seo, logo, theme, forceTheme } =
   Astro.props as TemplateConfig;
 
-const siteUrl = "https://mahlzait.de";
+const siteUrl = "https://www.mahlzait.de";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
 const logoFullUrl = new URL(logo, siteUrl).href;
 ---
@@ -129,6 +129,20 @@ const logoFullUrl = new URL(logo, siteUrl).href;
       const theme = localStorage.getItem("theme") ?? getPreferredColorScheme();
       if (theme === "dark" && !forceTheme)
         document.documentElement.setAttribute("data-theme", theme);
+    </script>
+
+    <!-- Hash Navigation Fix: Scroll nach React Hydration -->
+    <script is:inline>
+      if (window.location.hash) {
+        var hash = window.location.hash;
+        // Warte bis React hydrated ist
+        setTimeout(function() {
+          var el = document.querySelector(hash);
+          if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 500);
+      }
     </script>
   </head>
   <body class="relative">

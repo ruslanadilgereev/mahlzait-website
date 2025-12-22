@@ -34,7 +34,18 @@ const templateConfig: TemplateConfig = {
       { href: "/#live-demo", title: "Live Demo" },
       { href: "/#how-it-works", title: "So funktioniert's" },
       { href: "/#pricing", title: "Preise" },
+    ],
+    // SEO-Links fuer Calculator-Seiten
+    calculatorLinks: [
+      { href: "/kalorienbedarf-berechnen", title: "Kalorienbedarf berechnen" },
+      { href: "/kaloriendefizit-berechnen", title: "Kaloriendefizit berechnen" },
+      { href: "/makros-berechnen", title: "Makros berechnen" },
+    ],
+    // SEO-Links fuer App-Landingpages und Info
+    appLinks: [
       { href: "/#faq", title: "FAQ" },
+      { href: "/team", title: "Team" },
+      { href: "/wissen", title: "Wissen" },
     ],
   },
   topNavbar: {
@@ -43,12 +54,12 @@ const templateConfig: TemplateConfig = {
     hideAppStore: false,
     hideGooglePlay: false,
     links: [
-      { href: "/#features", title: "Features" },
       { href: "/#live-demo", title: "Demo" },
+      { href: "/#features", title: "Features" },
       { href: "/#how-it-works", title: "Anleitung" },
       { href: "/#pricing", title: "Preise" },
-      { href: "/#faq", title: "FAQ" },
-      { href: "/team", title: "Team" },
+      { href: "/wissen", title: "Wissen" },
+      { href: "/rechner", title: "Rechner" },
     ],
   },
   appBanner: {

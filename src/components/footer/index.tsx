@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Footer() {
   const {
-    footer: { links, legalLinks, socials },
+    footer: { links, legalLinks, socials, calculatorLinks, appLinks },
   } = useContext(ConfigContext)!;
 
   return (
@@ -19,22 +19,68 @@ function Footer() {
         viewport={{ once: true, amount: 0.4 }}
         className="max-w-screen-lg mx-auto mt-12"
       >
-        <nav className="flex flex-col items-start gap-4">
-          {links.map(({ title, href }, index) => (
-            <motion.a
-              key={index}
-              variants={{
-                hidden: { opacity: 0, x: "-100%" },
-                visible: { opacity: 1, x: 0 },
-              }}
-              transition={{ delay: index * 0.25 }}
-              className="text-xl font-bold block uppercase whitespace-nowrap link no-underline text-primary hover:text-primary/50 md:text-4xl"
-              href={href}
-            >
-              {title}
-            </motion.a>
-          ))}
-        </nav>
+        <div className="grid gap-8 md:grid-cols-3 mb-8">
+          {/* Main Links */}
+          <nav className="flex flex-col items-start gap-2">
+            <span className="text-sm uppercase opacity-60 mb-2">Navigation</span>
+            {links.map(({ title, href }, index) => (
+              <motion.a
+                key={index}
+                variants={{
+                  hidden: { opacity: 0, x: "-50px" },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ delay: index * 0.1 }}
+                className="text-lg font-bold link no-underline text-primary hover:text-primary/50"
+                href={href}
+              >
+                {title}
+              </motion.a>
+            ))}
+          </nav>
+
+          {/* Calculator Links */}
+          {calculatorLinks && calculatorLinks.length > 0 && (
+            <nav className="flex flex-col items-start gap-2">
+              <span className="text-sm uppercase opacity-60 mb-2">Rechner</span>
+              {calculatorLinks.map(({ title, href }, index) => (
+                <motion.a
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, x: "-50px" },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ delay: index * 0.1 + 0.2 }}
+                  className="text-lg font-bold link no-underline text-primary hover:text-primary/50"
+                  href={href}
+                >
+                  {title}
+                </motion.a>
+              ))}
+            </nav>
+          )}
+
+          {/* App Links */}
+          {appLinks && appLinks.length > 0 && (
+            <nav className="flex flex-col items-start gap-2">
+              <span className="text-sm uppercase opacity-60 mb-2">App & Features</span>
+              {appLinks.map(({ title, href }, index) => (
+                <motion.a
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, x: "-50px" },
+                    visible: { opacity: 1, x: 0 },
+                  }}
+                  transition={{ delay: index * 0.1 + 0.4 }}
+                  className="text-lg font-bold link no-underline text-primary hover:text-primary/50"
+                  href={href}
+                >
+                  {title}
+                </motion.a>
+              ))}
+            </nav>
+          )}
+        </div>
         <aside className="flex flex-col items-center justify-between mt-4 w-full overflow-hidden md:flex-row lg:overflow-visible">
           <div className="flex items-center gap-3 w-full text-primary">
             {socials?.facebook && (

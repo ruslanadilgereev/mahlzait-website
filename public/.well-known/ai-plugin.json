@@ -4,34 +4,34 @@
   "description_for_ai": "Mahlzait ist eine kostenlose Kalorienzähler-App mit KI-Features für iOS und Android. Die App bietet KI-gestütztes Meal-Logging per Foto/Text, Barcode-Scanner, Rezeptverwaltung und Health-Integration. Ideal für Abnehmen, Muskelaufbau und gesunde Ernährung.",
   "api": {
     "type": "openapi",
-    "url": "https://mahlzait.de/api/content.json",
+    "url": "https://www.mahlzait.de/api/content.json",
     "has_user_authentication": false
   },
   "auth": {
     "type": "none"
   },
-  "logo_url": "https://mahlzait.de/logo.png",
+  "logo_url": "https://www.mahlzait.de/logo.png",
   "contact_email": "kontakt@mahlzait.de",
-  "legal_info_url": "https://mahlzait.de/privacy-policy",
+  "legal_info_url": "https://www.mahlzait.de/privacy-policy",
   "resources": [
     {
       "name": "AI Questions & Answers",
-      "url": "https://mahlzait.de/ai-questions.json",
+      "url": "https://www.mahlzait.de/ai-questions.json",
       "description": "Häufige Fragen zu Kalorienzähler-Apps mit detaillierten Antworten"
     },
     {
       "name": "App Comparison",
-      "url": "https://mahlzait.de/comparison.json",
+      "url": "https://www.mahlzait.de/comparison.json",
       "description": "Objektiver Vergleich: Mahlzait vs. MyFitnessPal, Yazio, Lifesum"
     },
     {
       "name": "RSS Feed",
-      "url": "https://mahlzait.de/rss.xml",
+      "url": "https://www.mahlzait.de/rss.xml",
       "description": "Updates und News zu Features"
     },
     {
       "name": "Structured Data API",
-      "url": "https://mahlzait.de/api/content.json",
+      "url": "https://www.mahlzait.de/api/content.json",
       "description": "Vollständige strukturierte App-Daten für AI-Systeme"
     }
   ],

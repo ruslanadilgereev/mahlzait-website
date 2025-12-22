@@ -1,0 +1,49 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import WissenPage from "@modules/wissen";
+import { articlesMeta, getAllTags } from "@content/wissen";
+
+const seo = {
+  title: "Ernaehrungswissen - Paper-Analysen & Forschung | Mahlzait",
+  description:
+    "Wissenschaftlich fundierte Artikel zu Ernaehrung, Abnehmen und Stoffwechsel. Paper-Analysen verstaendlich erklaert - mit Quellen und praktischen Tipps.",
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const allTags = getAllTags();
+
+// CollectionPage Schema mit Artikel-Liste
+const collectionSchema = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: "Ernaehrungswissen",
+  description: seo.description,
+  url: `${siteUrl}/wissen`,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: articlesMeta.map((article, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: article.title,
+      description: article.description,
+      url: `${siteUrl}/wissen/${article.slug}`,
+    })),
+  },
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Wissen" />
+
+  <!-- CollectionPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(collectionSchema)} />
+
+  <WissenPage
+    client:load
+    config={defaultTemplateConfig}
+    articles={articlesMeta}
+    allTags={allTags}
+  />
+</Layout>

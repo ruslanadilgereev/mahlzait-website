@@ -23,8 +23,8 @@ function Home({ config }: Props) {
         <Navbar />
         <Header />
         <Partners />
-        <Features />
         <LiveDemo />
+        <Features />
         <HowItWorks />
         <Pricing />
         <Testimonials />

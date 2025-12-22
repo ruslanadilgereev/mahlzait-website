@@ -1,0 +1,120 @@
+---
+import Layout from "Layout.astro";
+import defaultTemplateConfig from "utils/config";
+import ArticlePage from "@modules/wissen/article";
+import {
+  getAllSlugs,
+  getArticleMeta,
+  getArticleContent,
+  type ArticleMeta,
+} from "@content/wissen";
+
+export async function getStaticPaths() {
+  const slugs = getAllSlugs();
+  return slugs.map((slug) => ({
+    params: { slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const article = getArticleMeta(slug as string);
+
+if (!article) {
+  return Astro.redirect("/wissen");
+}
+
+const content = await getArticleContent(slug as string);
+
+if (!content) {
+  return Astro.redirect("/wissen");
+}
+
+const seo = {
+  title: `${article.title} | Mahlzait Wissen`,
+  description: article.description,
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const articleUrl = `${siteUrl}/wissen/${article.slug}`;
+
+// JSON-LD Schemas
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    {
+      "@type": "ListItem",
+      position: 1,
+      name: "Home",
+      item: siteUrl,
+    },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Wissen",
+      item: `${siteUrl}/wissen`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: article.title,
+      item: articleUrl,
+    },
+  ],
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: article.title,
+  description: article.description,
+  datePublished: article.publishedAt,
+  dateModified: article.updatedAt || article.publishedAt,
+  author: {
+    "@type": "Organization",
+    name: "Mahlzait Redaktion",
+    url: siteUrl,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: siteUrl,
+    logo: {
+      "@type": "ImageObject",
+      url: `${siteUrl}/logo.png`,
+    },
+  },
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": articleUrl,
+  },
+  keywords: article.tags.join(", "),
+  citation: article.sources.map((s) => ({
+    "@type": "ScholarlyArticle",
+    name: s.title,
+    author: s.authors,
+    datePublished: s.year.toString(),
+    isPartOf: {
+      "@type": "Periodical",
+      name: s.journal,
+    },
+    sameAs: s.doi ? `https://doi.org/${s.doi}` : undefined,
+  })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Article Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <ArticlePage
+    client:load
+    config={defaultTemplateConfig}
+    article={article}
+    content={content}
+  />
+</Layout>
+

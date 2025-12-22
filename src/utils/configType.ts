@@ -47,6 +47,14 @@ export type TemplateConfig = {
             instagram?: string | undefined;
             twitter?: string | undefined;
         } | undefined;
+        calculatorLinks?: {
+            title: string;
+            href: string;
+        }[] | undefined;
+        appLinks?: {
+            title: string;
+            href: string;
+        }[] | undefined;
     };
     topNavbar: {
         cta?: string | undefined;
