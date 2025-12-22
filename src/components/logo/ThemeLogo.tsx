@@ -32,6 +32,8 @@ function ThemeLogo({ className = "h-8 w-auto", alt = "Mahlzait Logo" }: ThemeLog
       src={isDark ? "/logo-white.svg" : "/logo-black.svg"}
       alt={alt}
       className={className}
+      width={32}
+      height={32}
     />
   );
 }

@@ -116,14 +116,14 @@ function Navbar() {
           {googlePlayLink && (
             <li className="mb-2">
               <a href={googlePlayLink} target="_blank" rel="noopener noreferrer">
-                <img className="h-12" src="/stores/google-play.svg" alt="Bei Google Play herunterladen" />
+                <img className="h-12" src="/stores/google-play.svg" alt="Bei Google Play herunterladen" width={154} height={48} />
               </a>
             </li>
           )}
           {appStoreLink && (
             <li className="mb-2">
               <a href={appStoreLink} target="_blank" rel="noopener noreferrer">
-                <img className="h-12" src="/stores/app-store.svg" alt="Im App Store herunterladen" />
+                <img className="h-12" src="/stores/app-store.svg" alt="Im App Store herunterladen" width={154} height={48} />
               </a>
             </li>
           )}

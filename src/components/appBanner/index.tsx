@@ -64,8 +64,10 @@ function AppBanner() {
                   <a href={googlePlayLink}>
                     <img
                       className="h-14"
-                      alt="google play logo"
+                      alt="Bei Google Play herunterladen"
                       src="/stores/google-play.svg"
+                      width={180}
+                      height={56}
                     />
                   </a>
                 </li>
@@ -75,8 +77,10 @@ function AppBanner() {
                   <a href={appStoreLink}>
                     <img
                       className="h-14"
-                      alt="app store logo"
+                      alt="Im App Store herunterladen"
                       src="/stores/app-store.svg"
+                      width={180}
+                      height={56}
                     />
                   </a>
                 </li>
