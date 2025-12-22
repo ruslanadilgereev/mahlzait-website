@@ -98,7 +98,7 @@ function HowItWorks() {
                 {index < 10 && 0}
                 {index + 1}
               </div>
-              <h4 className="mt-0 text-2xl font-bold">{step.title}</h4>
+              <h3 className="mt-0 text-2xl font-bold">{step.title}</h3>
               <p className="mx-auto max-w-sm opacity-[.7]">{step.subtitle}</p>
             </motion.div>
             <motion.div

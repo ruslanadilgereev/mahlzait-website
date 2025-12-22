@@ -115,8 +115,8 @@ function Partners() {
                   href="/datenschutz" 
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-neutral-content text-neutral font-medium text-sm hover:bg-neutral-content/90 transition-colors no-underline"
                 >
-                  Mehr erfahren
-                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  Datenschutz lesen
+                  <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>
                 </a>

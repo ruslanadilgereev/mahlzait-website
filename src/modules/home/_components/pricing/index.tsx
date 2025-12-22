@@ -81,7 +81,7 @@ function Pricing() {
                     />
                   </div>
                   <div className="mt-8 flex-1 font-bold">
-                    <h4 className="text-xl my-1">{plan.title}</h4>
+                    <h3 className="text-xl my-1">{plan.title}</h3>
                     <p className="my-1">{plan.price}</p>
                   </div>
                 </div>

@@ -69,7 +69,7 @@ function Navbar() {
         </div>
         <div className="navbar-end hidden font-semibold md:flex">
           <ul className="flex gap-2 lg:gap-3 px-1 items-center">
-            {showThemeSwitch && <ThemeSwitcher />}
+            {showThemeSwitch && <li><ThemeSwitcher /></li>}
             {topNavbar.links.map(({ title, href }, index) => (
               <li key={index}>
                 <a
@@ -82,7 +82,7 @@ function Navbar() {
             ))}
           </ul>
           {topNavbar.cta && (
-            <a href="/app" className="ml-2 lg:ml-3 btn btn-primary btn-outline btn-sm lg:btn-md">
+            <a href="/app" className="ml-2 lg:ml-3 btn btn-primary btn-sm lg:btn-md">
               {topNavbar.cta}
             </a>
           )}
@@ -115,15 +115,15 @@ function Navbar() {
         >
           {googlePlayLink && (
             <li className="mb-2">
-              <a href={googlePlayLink} target="_blank">
-                <img className="h-12" src="/stores/google-play.svg" />
+              <a href={googlePlayLink} target="_blank" rel="noopener noreferrer">
+                <img className="h-12" src="/stores/google-play.svg" alt="Bei Google Play herunterladen" />
               </a>
             </li>
           )}
           {appStoreLink && (
             <li className="mb-2">
-              <a href={appStoreLink} target="_blank">
-                <img className="h-12" src="/stores/app-store.svg" />
+              <a href={appStoreLink} target="_blank" rel="noopener noreferrer">
+                <img className="h-12" src="/stores/app-store.svg" alt="Im App Store herunterladen" />
               </a>
             </li>
           )}

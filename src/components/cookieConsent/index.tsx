@@ -290,9 +290,9 @@ function CookieConsent() {
                   </p>
                   <a
                     href="/cookies-policy"
-                    className="text-sm text-primary hover:underline mt-2 inline-block"
+                    className="text-sm font-medium underline mt-2 inline-block"
                   >
-                    Mehr erfahren
+                    Cookie-Richtlinie lesen
                   </a>
                 </div>
                 <div className="flex flex-col gap-2 md:flex-row md:items-center">
