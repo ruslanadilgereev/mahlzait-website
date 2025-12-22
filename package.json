@@ -9,7 +9,10 @@
     "build": "astro build",
     "build:prod": "NODE_ENV=production astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "wissen:extract": "node scripts/wissen/extract-pdfs.cjs",
+    "wissen:resolve": "node scripts/wissen/resolve-crossref.cjs",
+    "wissen:check": "node scripts/wissen/check-wissen-slugs.cjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",

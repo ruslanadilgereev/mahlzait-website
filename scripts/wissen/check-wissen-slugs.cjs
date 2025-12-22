@@ -18,7 +18,8 @@ function main() {
   const mdFiles = new Set(
     fs
       .readdirSync(MD_DIR, { withFileTypes: true })
-      .filter((d) => d.isFile() && d.name.endsWith(".md"))
+      // Ignore helper files like _template.md
+      .filter((d) => d.isFile() && d.name.endsWith(".md") && !d.name.startsWith("_"))
       .map((d) => d.name.replace(/\.md$/, ""))
   );
 
