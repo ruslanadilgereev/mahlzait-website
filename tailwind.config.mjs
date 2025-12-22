@@ -27,7 +27,19 @@ export default {
       },
       fontFamily: {
         sketch: ["CabinSketch", ...defaultTheme.fontFamily.mono],
-        sans: ["Rowdies", ...defaultTheme.fontFamily.sans],
+        sans: [
+          "system-ui",
+          "-apple-system",
+          "BlinkMacSystemFont",
+          "Segoe UI",
+          "Roboto",
+          "Oxygen",
+          "Ubuntu",
+          "Cantarell",
+          "Open Sans",
+          "Helvetica Neue",
+          "sans-serif",
+        ],
       },
       animation: {
         "meteor-effect": "meteor 5s linear infinite",

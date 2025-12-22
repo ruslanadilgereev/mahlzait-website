@@ -28,9 +28,10 @@ function Pricing() {
           <AnimatedText text={pricing.title} />
         </h2>
         <motion.p
-          initial={{ y: "100%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 0.7 }}
+          initial={{ y: 15, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 0.7 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="text-xl max-w-lg"
         >
           {pricing.subtitle}
@@ -45,11 +46,11 @@ function Pricing() {
         {pricing.plans?.map((plan, index) => (
           <motion.div
             key={index}
-            transition={{ delay: 0.25 + index * 0.25 }}
+            transition={{ delay: 0.1 + index * 0.1, duration: 0.4, ease: "easeOut" }}
             className="md:w-1/3 flex relative"
             variants={{
-              hidden: { x: "-100%", opacity: 0 },
-              visible: { x: 0, opacity: 1 },
+              hidden: { y: 20, opacity: 0 },
+              visible: { y: 0, opacity: 1 },
             }}
           >
             {plan.featured && (

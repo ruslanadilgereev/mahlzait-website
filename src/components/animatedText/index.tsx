@@ -17,10 +17,10 @@ function AnimatedText({ text, initial, whileInView }: Props) {
           <motion.span
             key={index}
             className="inline-block whitespace-pre z-10"
-            initial={{ opacity: 0, y: "-80%", ...initial }}
+            initial={{ opacity: 0, y: "-20%", ...initial }}
             whileInView={{ opacity: 1, y: "0%", ...whileInView }}
             viewport={{ once: true }}
-            transition={{ ease: "easeInOut", delay: charIndex * 0.05 }}
+            transition={{ ease: "easeOut", duration: 0.4, delay: charIndex * 0.02 }}
           >
             {char}
           </motion.span>

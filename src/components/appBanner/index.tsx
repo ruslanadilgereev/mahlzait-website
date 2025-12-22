@@ -38,25 +38,25 @@ function AppBanner() {
         <div className="p-4 bg-primary text-primary-content rounded-t-[var(--rounded-box)] flex flex-col items-center md:flex-row">
           <div className="flex-1 flex flex-col items-center justify-center min-h-full">
             <motion.h2
-              initial={{ opacity: 0, y: "-100%" }}
+              initial={{ opacity: 0, y: -15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
+              transition={{ delay: 0.15, duration: 0.4, ease: "easeOut" }}
               className="mt-0 mb-4 text-4xl md:text-6xl"
             >
               {appBanner.title}
             </motion.h2>
             <motion.p
-              initial={{ opacity: 0, y: "100%" }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.5 }}
+              transition={{ delay: 0.25, duration: 0.4, ease: "easeOut" }}
               className="text-primary-content/70 whitespace-pre-wrap text-left m-0 mt-1 md:text-lg"
             >
               {appBanner.subtitle}
             </motion.p>
             <motion.ul
-              initial={{ opacity: 0, y: "100%" }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8 }}
+              transition={{ delay: 0.35, duration: 0.4, ease: "easeOut" }}
               className="list-none flex gap-4 my-6 p-0 w-full"
             >
               {googlePlayLink && (
@@ -105,10 +105,9 @@ function AppBanner() {
                   },
                 }}
                 transition={{
-                  stiffness: 150,
-                  mass: 0.5,
-                  type: "spring",
-                  delay: index > 0 ? 0.8 : 0.5,
+                  duration: 0.5,
+                  ease: "easeOut",
+                  delay: index > 0 ? 0.4 : 0.2,
                 }}
                 className={clsx(
                   "h-[30rem]",

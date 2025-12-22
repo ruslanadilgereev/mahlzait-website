@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 function NeonHexagon() {
   return (
     <motion.div
-      initial={{ opacity: 0.2 }}
-      whileInView={{ opacity: 0.6 }}
-      transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
+      initial={{ opacity: 0.15 }}
+      whileInView={{ opacity: 0.25 }}
+      transition={{ duration: 3, repeat: Infinity, repeatType: "reverse" }}
       viewport={{ once: true, amount: 0.4 }}
       className="absolute -z-10 left-0 -top-4 h-full w-full overflow-hidden md:top-0"
     >
@@ -14,7 +14,7 @@ function NeonHexagon() {
         whileInView={{ scale: "var(--sc)" }}
         transition={{ duration: 1, stiffness: 150, type: "spring" }}
         viewport={{ once: true, amount: 0.4 }}
-        className="h-full w-full [--sc:2] md:[--sc:1]"
+        className="h-full w-full [--sc:2.5] md:[--sc:1.4]"
         viewBox="0 0 800 800"
       >
         <defs>

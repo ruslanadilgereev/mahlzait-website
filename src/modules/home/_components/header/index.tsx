@@ -27,8 +27,9 @@ function Header() {
                 {header.rewards?.map((reward, index) => (
                   <motion.div
                     key={index}
-                    initial={{ opacity: 0, scale: 0 }}
+                    initial={{ opacity: 0, scale: 0.9 }}
                     animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
                     className="flex items-center self-center h-8 md:h-12"
                   >
                     <img src="/misc/wreath-left.webp" className="h-full" alt="Auszeichnung Dekoration links" />
@@ -40,8 +41,9 @@ function Header() {
                 ))}
               </div>
               <motion.h1
-                initial={{ opacity: 0, rotateZ: -10 }}
-                animate={{ opacity: 1, rotateZ: 0 }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
                 className="mt-0 mb-4 text-4xl md:text-6xl"
               >
                 {header.headlineMark ? (
@@ -76,17 +78,17 @@ function Header() {
                 )}
               </motion.h1>
               <motion.p
-                initial={{ opacity: 0, x: -50 }}
+                initial={{ opacity: 0, x: -15 }}
                 animate={{ opacity: 0.7, x: 0 }}
-                transition={{ delay: 0.5, ease: "easeInOut" }}
+                transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}
                 className="whitespace-pre-wrap text-left m-0 my-1 max-w-md md:text-lg md:max-w-lg"
               >
                 {header.subtitle}
               </motion.p>
               <motion.ul
-                initial={{ opacity: 0, y: "100%" }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
+                transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}
                 className="list-none flex gap-4 m-0 p-0"
               >
                 {googlePlayLink && (
@@ -116,9 +118,9 @@ function Header() {
               {/* DSGVO Trust Badge */}
               <motion.a
                 href="/datenschutz"
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.8 }}
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
                 className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-base-200/80 backdrop-blur-sm border border-base-300 hover:bg-base-300/80 transition-colors no-underline group w-fit"
               >
                 <svg 
@@ -147,9 +149,9 @@ function Header() {
                     {Array.from(Array(5)).map((_, index) => (
                       <motion.li
                         key={index}
-                        initial={{ scale: 0, opacity: 0 }}
+                        initial={{ scale: 0.8, opacity: 0 }}
                         animate={{ scale: 1, opacity: 1 }}
-                        transition={{ delay: 0.3 + index * 0.2 }}
+                        transition={{ delay: 0.3 + index * 0.08, duration: 0.3, ease: "easeOut" }}
                         className="avatar"
                       >
                         <div className="w-8">
@@ -163,9 +165,9 @@ function Header() {
                   </ul>
                   <motion.p
                     className="text-sm"
-                    initial={{ scale: 0, opacity: 0, y: "100%" }}
-                    animate={{ scale: 1, opacity: 1, y: 0 }}
-                    transition={{ delay: 1.1 }}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.6, duration: 0.4, ease: "easeOut" }}
                   >
                     {header.usersDescription}
                   </motion.p>
@@ -180,14 +182,12 @@ function Header() {
                 className="-z-10 absolute hidden w-[800px] -top-20 -right-60 md:hidden xl:block"
               />
               <motion.div
-                initial={{ scale: 0.4, opacity: 0 }}
+                initial={{ scale: 0.95, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{
-                  type: "spring",
-                  stiffness: 200,
-                  mass: 0.4,
                   duration: 0.5,
-                  delay: 0.3,
+                  ease: "easeOut",
+                  delay: 0.2,
                 }}
                 className="relative h-[70vh] min-h-[600px] max-h-[900px] rounded-t-[3rem] rounded-b-[4.5rem]"
               >

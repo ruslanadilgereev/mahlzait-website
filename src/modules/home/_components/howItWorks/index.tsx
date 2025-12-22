@@ -26,9 +26,10 @@ function HowItWorks() {
         </h2>
         {howItWorks.subtitle && (
           <motion.p
-            initial={{ y: "100%", opacity: 0 }}
-            whileInView={{ y: "0%", opacity: 0.7 }}
+            initial={{ y: 15, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 0.7 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className="text-md max-w-lg"
           >
             {howItWorks.subtitle}
@@ -54,12 +55,13 @@ function HowItWorks() {
                 <motion.div
                   variants={{
                     hidden: {
-                      scale: 0,
+                      scale: 0.8,
+                      opacity: 0,
                       translateX: "-50%",
                     },
-                    visible: { scale: 1, translateX: "-50%" },
+                    visible: { scale: 1, opacity: 1, translateX: "-50%" },
                   }}
-                  transition={{ stiffness: 150, type: "spring" }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
                   className="hidden w-48 absolute -bottom-44 left-1/2 md:block"
                 >
                   {index % 2 === 0 ? (
@@ -71,12 +73,13 @@ function HowItWorks() {
                 <motion.div
                   variants={{
                     hidden: {
-                      scale: 0,
+                      scale: 0.8,
+                      opacity: 0,
                       translateX: "-50%",
                     },
-                    visible: { scale: 1, translateX: "-50%" },
+                    visible: { scale: 1, opacity: 1, translateX: "-50%" },
                   }}
-                  transition={{ stiffness: 150, type: "spring" }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
                   className="w-16 absolute -bottom-48 left-1/2 md:hidden md:-bottom-36"
                 >
                   <SwirlArrowBottom />
@@ -85,9 +88,10 @@ function HowItWorks() {
             )}
             <motion.div
               variants={{
-                hidden: { x: index % 2 === 0 ? "100%" : "-100%", opacity: 0 },
-                visible: { x: "0%", opacity: 1 },
+                hidden: { x: index % 2 === 0 ? 30 : -30, opacity: 0 },
+                visible: { x: 0, opacity: 1 },
               }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className="mb-8 flex flex-col text-center justify-center prose flex-1"
             >
               <div className="pb-0 font-sketch text-8xl text-primary">
@@ -99,9 +103,10 @@ function HowItWorks() {
             </motion.div>
             <motion.div
               variants={{
-                hidden: { x: index % 2 === 1 ? "100%" : "-100%", opacity: 0 },
-                visible: { x: "0%", opacity: 1 },
+                hidden: { x: index % 2 === 1 ? 30 : -30, opacity: 0 },
+                visible: { x: 0, opacity: 1 },
               }}
+              transition={{ duration: 0.5, ease: "easeOut" }}
               className="flex-1 flex justify-center items-center"
             >
               <StepScreenshot

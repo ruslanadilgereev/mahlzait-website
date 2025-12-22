@@ -19,18 +19,20 @@ function Testimonials() {
           <AnimatedText text={testimonials.title} />
         </h2>
         <motion.p
-          initial={{ y: "100%", opacity: 0 }}
-          whileInView={{ y: "0%", opacity: 0.7 }}
+          initial={{ y: 15, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 0.7 }}
           viewport={{ once: true }}
+          transition={{ duration: 0.4, ease: "easeOut" }}
           className="text-xl max-w-lg"
         >
           {testimonials.subtitle}
         </motion.p>
       </div>
       <motion.div
-        initial={{ scale: 0, opacity: 0 }}
+        initial={{ scale: 0.95, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         viewport={{ once: true }}
+        transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <Swiper
           loop

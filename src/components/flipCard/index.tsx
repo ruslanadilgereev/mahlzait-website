@@ -20,10 +20,10 @@ function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
   return (
     <motion.div
       variants={{
-        hidden: { x: "-100%", opacity: 0 },
-        visible: { x: 0, opacity: 1 },
+        hidden: { y: 20, opacity: 0 },
+        visible: { y: 0, opacity: 1 },
       }}
-      transition={{ delay: 0.25 + index * 0.25 }}
+      transition={{ delay: 0.05 + index * 0.1, duration: 0.4, ease: "easeOut" }}
       className="relative h-[600px] perspective-1000"
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}

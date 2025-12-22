@@ -19,7 +19,7 @@ function Faq() {
         <div className="relative flex-1 flex items-center">
           <NeonHexagon />
           <div className="h-full w-full flex items-center justify-center">
-            <h3 className="text-center font-bold text-3xl flex flex-col items-center mb-8 md:mb-0 md:text-left">
+            <h3 className="text-center font-bold text-3xl leading-snug flex flex-col items-center mb-8 md:mb-0 md:text-left">
               <AnimatedText text={faq.title} initial={{ y: "0%" }} />
             </h3>
           </div>
@@ -34,10 +34,10 @@ function Faq() {
             <motion.div
               key={index}
               variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1 },
+                hidden: { opacity: 0, y: 10 },
+                visible: { opacity: 1, y: 0 },
               }}
-              transition={{ delay: 0.25 + index * 0.25 }}
+              transition={{ delay: 0.05 + index * 0.08, duration: 0.3, ease: "easeOut" }}
               className={clsx(
                 "border-2 border-primary/30 my-2 collapse collapse-arrow",
                 {

@@ -23,9 +23,10 @@ function Features() {
         />
         {features.subtitle && (
           <motion.p
-            initial={{ y: "100%", opacity: 0 }}
-            whileInView={{ y: "0%", opacity: 0.7 }}
+            initial={{ y: 15, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 0.7 }}
             viewport={{ once: true }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
             className="text-md max-w-lg"
           >
             {features.subtitle}
