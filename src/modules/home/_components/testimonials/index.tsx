@@ -1,3 +1,4 @@
+import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import AnimatedText from "../../../../components/animatedText";

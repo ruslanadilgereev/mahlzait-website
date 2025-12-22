@@ -60,6 +60,34 @@ function CookieConsent() {
     setShowSettings(false);
   };
 
+  const loadMahlzaitTracking = (prefs: ConsentPreferences) => {
+    if (typeof window === "undefined") return;
+    if (!prefs.analytics && !prefs.marketing) return;
+
+    const run = async () => {
+      try {
+        // Load as external ES module from /public (keeps base HTML small and cacheable)
+        const trackingUrl = "/scripts/mahlzait-tracking.js";
+        const mod: any = await import(/* @vite-ignore */ trackingUrl);
+        if (typeof mod?.initMahlzaitTracking === "function") {
+          mod.initMahlzaitTracking(prefs);
+        }
+      } catch {
+        // ignore
+      }
+    };
+
+    // Defer to idle time to avoid competing with critical rendering
+    const ric = (window as any).requestIdleCallback as
+      | ((cb: () => void, opts?: { timeout?: number }) => void)
+      | undefined;
+    if (typeof ric === "function") {
+      ric(run, { timeout: 2000 });
+    } else {
+      setTimeout(run, 0);
+    }
+  };
+
   const loadScripts = (prefs: ConsentPreferences) => {
     if (typeof window === "undefined") return;
 
@@ -74,6 +102,9 @@ function CookieConsent() {
       loadGoogleAds();
       loadMetaPixel();
     }
+
+    // Custom tracking (only after optional consent)
+    loadMahlzaitTracking(prefs);
   };
 
   const ensureGtagJsLoaded = (tagIdForSrc: string) => {

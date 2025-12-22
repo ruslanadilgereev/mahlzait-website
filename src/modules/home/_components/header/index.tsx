@@ -1,5 +1,5 @@
 import { motion, useScroll } from "framer-motion";
-import { useContext, useRef } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
 import SingleScreenshot from "./singleScreenshot";
 import SVGWave from "./svg/wave";
@@ -16,6 +16,17 @@ function Header() {
   const { scrollYProgress } = useScroll({
     target: ref,
   });
+
+  // Performance: render only the first screenshot on the server/initial paint.
+  // Once hydrated, we render the full interactive stack (prevents downloading all hero screenshots immediately).
+  const [isHydrated, setIsHydrated] = useState(false);
+  useEffect(() => {
+    setIsHydrated(true);
+  }, []);
+
+  const screenshotsToRender = isHydrated
+    ? header.screenshots
+    : header.screenshots.slice(0, 1);
 
   return (
     <section id={header.id} className="relative pb-8 md:pb-4">
@@ -192,7 +203,7 @@ function Header() {
                 className="relative h-[70vh] min-h-[600px] max-h-[900px] rounded-t-[3rem] rounded-b-[4.5rem]"
               >
                 <div className="absolute top-2.5 left-[3px] w-[calc(100%-6px)] h-[calc(100%-16px)] rounded-t-[2rem] rounded-b-[3rem] 2xs:rounded-t-[3rem] 2xs:rounded-b-[4.5rem] overflow-hidden">
-                  {header.screenshots.map((src, index) => (
+                  {screenshotsToRender.map((src, index) => (
                     <SingleScreenshot
                       key={src}
                       src={src}
@@ -206,6 +217,8 @@ function Header() {
                   src="/misc/iphone-frame.webp"
                   alt="Mahlzait App auf iPhone - Kalorienzähler Interface"
                   className="relative z-10 h-full"
+                  loading="eager"
+                  decoding="async"
                 />
               </motion.div>
             </div>
