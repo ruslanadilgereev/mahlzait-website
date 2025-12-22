@@ -1,0 +1,50 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import KalorienZaehlenAppPage from "@modules/kalorienzaehlenApp";
+import {
+  kalorienZaehlenAppFaq,
+  kalorienZaehlenAppHowToSteps,
+  kalorienZaehlenAppSeo,
+} from "@modules/kalorienzaehlenApp/content";
+
+const seo = kalorienZaehlenAppSeo;
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kalorien zählen App" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: kalorienZaehlenAppFaq.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Kalorien zählen mit App",
+      description: seo.description,
+      step: kalorienZaehlenAppHowToSteps.map((s, i) => ({
+        "@type": "HowToStep",
+        position: i + 1,
+        name: s.name,
+        text: s.text,
+      })),
+    })}
+  </script>
+
+  <KalorienZaehlenAppPage client:load config={defaultTemplateConfig} />
+</Layout>
+
+

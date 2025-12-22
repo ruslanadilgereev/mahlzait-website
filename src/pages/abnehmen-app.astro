@@ -1,0 +1,46 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import AbnehmenAppPage from "@modules/abnehmenApp";
+import { abnehmenAppFaq, abnehmenAppHowToSteps, abnehmenAppSeo } from "@modules/abnehmenApp/content";
+
+const seo = abnehmenAppSeo;
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Abnehmen App" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: abnehmenAppFaq.map((item) => ({
+        "@type": "Question",
+        name: item.q,
+        acceptedAnswer: { "@type": "Answer", text: item.a },
+      })),
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Abnehmen mit App",
+      description: seo.description,
+      step: abnehmenAppHowToSteps.map((s, i) => ({
+        "@type": "HowToStep",
+        position: i + 1,
+        name: s.name,
+        text: s.text,
+      })),
+    })}
+  </script>
+
+  <AbnehmenAppPage client:load config={defaultTemplateConfig} />
+</Layout>
+
+

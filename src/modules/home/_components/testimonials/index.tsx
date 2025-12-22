@@ -15,9 +15,9 @@ function Testimonials() {
   return (
     <section className="max-w-screen-lg mx-auto px-4 py-12">
       <div className="mb-6 max-w-none flex flex-col items-center prose prose-lg text-center">
-        <h1 className="mb-0">
+        <h2 className="mb-0">
           <AnimatedText text={testimonials.title} />
-        </h1>
+        </h2>
         <motion.p
           initial={{ y: "100%", opacity: 0 }}
           whileInView={{ y: "0%", opacity: 0.7 }}

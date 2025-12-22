@@ -21,9 +21,9 @@ function HowItWorks() {
       className="overflow-hidden max-w-screen-lg mx-auto px-4 py-12"
     >
       <div className="mb-12 max-w-none flex flex-col items-center prose prose-lg text-center">
-        <h1 className="mb-3">
+        <h2 className="mb-3">
           <AnimatedText text={howItWorks.title} />
-        </h1>
+        </h2>
         {howItWorks.subtitle && (
           <motion.p
             initial={{ y: "100%", opacity: 0 }}

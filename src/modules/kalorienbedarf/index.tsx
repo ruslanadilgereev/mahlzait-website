@@ -358,6 +358,12 @@ function KalorienbedarfPage({ config }: Props) {
               <a href="/makros-berechnen" className="btn btn-outline">
                 Makros berechnen
               </a>
+              <a href="/kalorien-zaehlen" className="btn btn-outline">
+                Kalorien zählen
+              </a>
+              <a href="/abnehmen" className="btn btn-outline">
+                Abnehmen
+              </a>
               <a href="/#features" className="btn btn-outline">
                 Alle Features
               </a>

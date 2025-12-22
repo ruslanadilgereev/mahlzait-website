@@ -31,14 +31,33 @@ export default defineConfig({
           item.priority = 1.0;
           item.changefreq = "daily";
         }
-        // Hub-Seiten (Wissen, Rechner) hohe Prioritaet
-        else if (url.endsWith("/wissen") || url.endsWith("/wissen/") || url.endsWith("/rechner") || url.endsWith("/rechner/")) {
+        // Hub-Seiten (Wissen, Rechner, Guides) hohe Prioritaet
+        else if (
+          url.endsWith("/wissen") ||
+          url.endsWith("/wissen/") ||
+          url.endsWith("/rechner") ||
+          url.endsWith("/rechner/") ||
+          url.endsWith("/kalorien-zaehlen") ||
+          url.endsWith("/kalorien-zaehlen/") ||
+          url.endsWith("/abnehmen") ||
+          url.endsWith("/abnehmen/")
+        ) {
           item.priority = 0.8;
           item.changefreq = "weekly";
         }
         // Wissen-Artikel hohe Prioritaet (SEO-Content)
         else if (url.includes("/wissen/")) {
           item.priority = 0.85;
+          item.changefreq = "monthly";
+        }
+        // App-Intent Guides (long-tail, hohe Conversion)
+        else if (
+          url.endsWith("/kalorien-zaehlen-app") ||
+          url.endsWith("/kalorien-zaehlen-app/") ||
+          url.endsWith("/abnehmen-app") ||
+          url.endsWith("/abnehmen-app/")
+        ) {
+          item.priority = 0.75;
           item.changefreq = "monthly";
         }
         // Rechner-Seiten hohe Prioritaet
