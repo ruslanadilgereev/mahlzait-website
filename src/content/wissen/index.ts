@@ -46,6 +46,365 @@ export const articlesMeta: ArticleMeta[] = [
       },
     ],
   },
+  {
+    slug: "zeitfenster-essen-ohne-kalorien-zaehlen",
+    title: "Zeitfenster-Essen ohne Kalorien zaehlen: Was eine 12-Monats-Studie zeigt",
+    description:
+      "Randomisierte 12-Monats-Studie: 8h Time-Restricted Eating vs. taegliche Kalorienrestriktion vs. Kontrolle. Ergebnis: ~5% Gewichtsverlust – TRE nicht besser als Kalorienzaehlen.",
+    tags: ["Abnehmen", "Intervallfasten", "Studie", "Kalorien"],
+    publishedAt: "2025-12-22",
+    readingTime: 7,
+    sources: [
+      {
+        title:
+          "Time-Restricted Eating Without Calorie Counting for Weight Loss in a Racially Diverse Population: A Randomized Controlled Trial",
+        authors: "Lin S, Cienfuegos S, Ezpeleta M, et al.",
+        journal: "Ann Intern Med",
+        year: 2023,
+        doi: "10.7326/M23-0052",
+        pmid: "37364268",
+      },
+    ],
+  },
+  {
+    slug: "protein-ballaststoffe-training-gewichtsmanagement-review",
+    title: "Protein, Ballaststoffe & Training: 3 Hebel fuer Gewichtsmanagement (Review)",
+    description:
+      "Narrativer Review (2025): Warum mehr Protein, mehr Ballaststoffe und regelmaessige Bewegung beim Abnehmen und Gewicht halten helfen koennen – inkl. kardiometabolischer Effekte.",
+    tags: ["Abnehmen", "Protein", "Ballaststoffe", "Bewegung", "Review"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Protein, fiber, and exercise: a narrative review of their roles in weight management and cardiometabolic health",
+        authors: "Guarneiri L, et al.",
+        journal: "Lipids in Health and Disease",
+        year: 2025,
+        doi: "10.1186/s12944-025-02659-7",
+      },
+    ],
+  },
+  {
+    slug: "facebook-post-typen-abnehmen-engagement",
+    title: "Facebook-Gruppe beim Abnehmen: Welche Post-Typen erzeugen Engagement?",
+    description:
+      "Studie (2014): Umfragen und interaktive Posts erzeugen mehr Engagement in Facebook-Supportgruppen – und Engagement war in der Erhaltungsphase mit Gewichtsverlust assoziiert.",
+    tags: ["Abnehmen", "Social Media", "Verhalten", "Studie"],
+    publishedAt: "2025-12-22",
+    readingTime: 5,
+    sources: [
+      {
+        title:
+          "Varying social media post types differentially impacts engagement in a behavioral weight loss intervention",
+        authors: "Hales S, et al.",
+        journal: "Translational Behavioral Medicine",
+        year: 2014,
+        doi: "10.1007/s13142-014-0274-z",
+      },
+    ],
+  },
+  {
+    slug: "kalorienzaehlen-apps-effektivitaet-studie",
+    title: "Kalorienzaehlen-Apps: Wie gut sind sie wirklich? (Studie)",
+    description:
+      "Analyse + 8-Wochen-Studie (2019): Qualitaet und Effekt von Kalorienzaehlen-Apps. Viele Apps verfehlen Standards; kurzzeitig keine klaren Unterschiede in Anthropometrie.",
+    tags: ["Kalorien", "Tracking", "App", "Studie"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Calorie counting smart phone apps: Effectiveness in nutritional awareness, lifestyle modification and weight management among young Indian adults",
+        authors: "Banerjee P, et al.",
+        journal: "Health Informatics Journal",
+        year: 2019,
+        doi: "10.1177/1460458219852531",
+      },
+    ],
+  },
+  {
+    slug: "intervallfasten-strategien-netzwerk-meta-analyse",
+    title: "Intervallfasten: Welche Strategie wirkt am besten? (BMJ Meta-Analyse)",
+    description:
+      "Netzwerk-Metaanalyse (BMJ, 2025) mit 99 RCTs: Intervallfasten vs. Kaloriendefizit vs. ad libitum. Kleine Unterschiede; ADF teils leicht besser als TRE.",
+    tags: ["Intervallfasten", "Meta-Analyse", "Abnehmen", "Studie"],
+    publishedAt: "2025-12-22",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials",
+        authors: "Semnani-Azad Z, et al.",
+        journal: "BMJ",
+        year: 2025,
+        doi: "10.1136/bmj-2024-082007",
+      },
+    ],
+  },
+  {
+    slug: "protein-abnehmen-muskelmasse-aeltere-meta-analyse",
+    title: "Mehr Protein beim Abnehmen (50+): weniger Muskelverlust? (Meta-Analyse)",
+    description:
+      "Systematische Uebersicht/Meta-Analyse (2016): Bei aelteren Erwachsenen kann ein hoeherer Proteinanteil helfen, fettfreie Masse beim Abnehmen besser zu erhalten.",
+    tags: ["Protein", "Abnehmen", "Meta-Analyse", "Muskel"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Effects of dietary protein intake on body composition changes after weight loss in older adults: a systematic review and meta-analysis",
+        authors: "Kim JE, et al.",
+        journal: "Nutrition Reviews",
+        year: 2016,
+        doi: "10.1093/nutrit/nuv065",
+      },
+    ],
+  },
+  {
+    slug: "low-carb-vs-low-fat-meta-analyse",
+    title: "Low-Carb vs. Low-Fat: Was ist besser zum Abnehmen? (Meta-Analyse)",
+    description:
+      "Meta-Analyse (2015) zu RCTs: Low-Carb (≤120 g/Tag) vs. Low-Fat (≤30% Fett). Praxis-Fazit: Adhaerenz und Kalorienbilanz sind meist der groessere Hebel.",
+    tags: ["Abnehmen", "Kalorien", "Meta-Analyse", "Ernaehrung"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Dietary Intervention for Overweight and Obese Adults: Comparison of Low-Carbohydrate and Low-Fat Diets. A Meta-Analysis",
+        authors: "Sackner-Bernstein J, et al.",
+        journal: "PLOS ONE",
+        year: 2015,
+        doi: "10.1371/journal.pone.0139817",
+      },
+    ],
+  },
+  {
+    slug: "ki-ernaehrungsanalyse-aus-fotos-review",
+    title: "KI-Ernaehrungsanalyse per Foto: Wie genau ist das? (Review)",
+    description:
+      "Systematischer Review (Annals of Medicine, 2023): KI-basierte Ernaehrungsanalyse aus Essensfotos im Vergleich zu Menschen/Ground Truth. Ergebnis: stark variable Fehler – gut bei einfachen Foods, schwieriger bei komplexen Gerichten.",
+    tags: ["KI", "Tracking", "Ernaehrung", "Review"],
+    publishedAt: "2025-12-22",
+    readingTime: 7,
+    sources: [
+      {
+        title:
+          "AI-based digital image dietary assessment methods compared to humans and ground truth: a systematic review",
+        authors: "Shonkoff E, et al.",
+        journal: "Annals of Medicine",
+        year: 2023,
+        doi: "10.1080/07853890.2023.2273497",
+      },
+    ],
+  },
+  {
+    slug: "schnell-vs-langsam-abnehmen-studie",
+    title: "Schnell vs. langsam abnehmen: was ist besser? (Studie)",
+    description:
+      "Randomisierte Studie (2017): 5% Gewichtsverlust in 5 Wochen vs 15 Wochen. Beide verbessern Werte; langsam kann Koerperzusammensetzung beguenstigen, schnell zeigte teils staerkere metabolische Effekte.",
+    tags: ["Abnehmen", "Studie", "Koerperzusammensetzung", "Stoffwechsel"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Rapid Weight Loss vs. Slow Weight Loss: Which is More Effective on Body Composition and Metabolic Risk Factors?",
+        authors: "Ashtary-Larky D, et al.",
+        journal: "International Journal of Endocrinology and Metabolism",
+        year: 2017,
+        doi: "10.5812/ijem.13249",
+      },
+    ],
+  },
+  {
+    slug: "schlaf-verlaengern-weniger-kalorien-rct",
+    title: "Mehr Schlaf, weniger Kalorien: Sleep-Extension RCT",
+    description:
+      "Randomisierte Studie (JAMA Intern Med, 2022): Schlafdauer +~1.2 h/Nacht durch Schlafhygiene-Coaching; Energieaufnahme −270 kcal/Tag vs Kontrolle – ohne Diaetvorgaben.",
+    tags: ["Schlaf", "Abnehmen", "Studie", "Kalorien"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Effect of Sleep Extension on Objectively Assessed Energy Intake Among Adults With Overweight in Real-life Settings",
+        authors: "Tasali E, et al.",
+        journal: "JAMA Internal Medicine",
+        year: 2022,
+        doi: "10.1001/jamainternmed.2021.8098",
+      },
+    ],
+  },
+  {
+    slug: "aerobes-training-abnehmen-dosis-wirkung-meta-analyse",
+    title: "Ausdauertraining zum Abnehmen: Dosis-Wirkung (Meta-Analyse)",
+    description:
+      "Dose-Response Meta-Analyse (2024) mit 116 RCTs: pro +30 Min/Woche aerobes Training −0.52 kg Gewicht und −0.56 cm Taille im Mittel. 150 Min/Woche als sinnvoller Zielwert.",
+    tags: ["Training", "Abnehmen", "Meta-Analyse", "Bewegung"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Aerobic Exercise and Weight Loss in Adults",
+        authors: "Jayedi A, et al.",
+        journal: "JAMA Network Open",
+        year: 2024,
+        doi: "10.1001/jamanetworkopen.2024.52185",
+      },
+    ],
+  },
+  {
+    slug: "digitales-abnehmprogramm-12-monate-csiro-studie",
+    title: "Digitales Abnehmprogramm: 12 Monate Daten (24.000+ Nutzer)",
+    description:
+      "Kohorten-Auswertung (JMIR, 2025) eines kommerziellen Programms: 24.035 Mitglieder, nach 12 Monaten ~5.5 kg (imputation) im Mittel; 52% erreichen ≥5% Gewichtsverlust. Engagement korreliert mit Erfolg.",
+    tags: ["Abnehmen", "App", "Tracking", "Studie"],
+    publishedAt: "2025-12-22",
+    readingTime: 7,
+    sources: [
+      {
+        title:
+          "Weight Loss Patterns and Outcomes Over 12 Months on a Commercial Weight Management Program (CSIRO Total Wellbeing Diet Online): Large-Community Cohort Evaluation Study",
+        authors: "Hendrie G, et al.",
+        journal: "Journal of Medical Internet Research",
+        year: 2025,
+        doi: "10.2196/65122",
+      },
+    ],
+  },
+  {
+    slug: "high-protein-diet-abnehmen-mechanismen-uebersicht",
+    title: "High-Protein Diet: Mechanismen & Evidenz fuer Gewichtsverlust",
+    description:
+      "Uebersicht (2020): Proteinreiche Ernaehrung kann Abnehmen unterstuetzen (Sattigungshormone, DIT) und fettfreie Masse eher erhalten. Laengere Trials (6–12 Monate) berichten auch weniger Regain.",
+    tags: ["Protein", "Abnehmen", "Ernaehrung", "Review"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Clinical Evidence and Mechanisms of High-Protein Diet-Induced Weight Loss",
+        authors: "Moon J, et al.",
+        journal: "Journal of Obesity & Metabolic Syndrome",
+        year: 2020,
+        doi: "10.7570/jomes20028",
+      },
+    ],
+  },
+  {
+    slug: "vereinfachtes-tracking-vs-kalorienzaehlen-studie",
+    title: "Tracking ohne Kalorienzaehlen: Vereinfachtes Monitoring (Studie)",
+    description:
+      "Pilot-RCT (Obesity, 2022): Simplified Tracking (High-Calorie Foods) vs Standard-Kalorientracking in einer mobilen Intervention. Nach 6 Monaten aehnliche, klinisch relevante Gewichtsverluste.",
+    tags: ["Tracking", "Kalorien", "Abnehmen", "Studie", "App"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "A pilot randomized trial of simplified versus standard calorie dietary self‐monitoring in a mobile weight loss intervention",
+        authors: "Nezami B, et al.",
+        journal: "Obesity",
+        year: 2022,
+        doi: "10.1002/oby.23377",
+      },
+    ],
+  },
+  {
+    slug: "calerie-studie-design-25-prozent-kalorienrestriktion",
+    title: "CALERIE: 25% Kalorienrestriktion ueber 2 Jahre (Design & Methoden)",
+    description:
+      "Design-&-Methods Paper (2011): Multi-Center RCT mit 220 nicht-adipoesen Erwachsenen (BMI 22–<28), 2 Jahre 25% Kalorienrestriktion. Fokus: Interventions-Mechanik (Training, Tools, Feedback, Toolbox).",
+    tags: ["Kalorien", "Studie", "Verhalten", "Ernaehrung"],
+    publishedAt: "2025-12-22",
+    readingTime: 7,
+    sources: [
+      {
+        title: "The CALERIE Study: Design and methods of an innovative 25% caloric restriction intervention",
+        authors: "Rickman A, et al.",
+        journal: "Contemporary Clinical Trials",
+        year: 2011,
+        doi: "10.1016/j.cct.2011.07.002",
+      },
+    ],
+  },
+  {
+    slug: "chronotyp-schlafqualitaet-gewichthalten-studie",
+    title: "Gewicht halten: Morgen-Typ und besserer Schlaf? (Studie)",
+    description:
+      "Vergleichsstudie (2015): Erfolgreiche Gewicht-Halter (NWCR, n=690) waren haeufiger Morgen-Typen und berichteten bessere Schlafqualitaet als Teilnehmende klassischer Abnehm-Interventionen.",
+    tags: ["Gewicht halten", "Schlaf", "Studie", "Verhalten"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Successful weight loss maintenance associated with morning chronotype and better sleep quality",
+        authors: "Ross K, et al.",
+        journal: "Journal of Behavioral Medicine",
+        year: 2015,
+        doi: "10.1007/s10865-015-9704-8",
+      },
+    ],
+  },
+  {
+    slug: "gewichthalten-health-tracking-apps-nwcr",
+    title: "Gewicht halten: Warum Tracking-Apps so haeufig sind (NWCR)",
+    description:
+      "Studie (2017): NWCR-Gewicht-Halter nutzen Self-Monitoring-Technologie und Smartphone-Tracking-Apps haeufiger als eine nationale Vergleichsstichprobe. Tracking wirkt als Routine- und Feedback-System.",
+    tags: ["Gewicht halten", "Tracking", "App", "Studie"],
+    publishedAt: "2025-12-22",
+    readingTime: 6,
+    sources: [
+      {
+        title:
+          "Successful weight loss maintainers use health-tracking smartphone applications more than a nationally representative sample: comparison of the National Weight Control Registry to Pew Tracking for Health",
+        authors: "Goldstein C, et al.",
+        journal: "Obesity Science & Practice",
+        year: 2017,
+        doi: "10.1002/osp4.102",
+      },
+    ],
+  },
+  {
+    slug: "app-self-monitoring-adhaerenz-gewichtsverlust",
+    title: "Tracking in Apps: Konsistenz schlaegt Perfektion (Studie)",
+    description:
+      "Studie (2021): Bei App-basiertem Ernaehrungs-Tracking waren Konsistenz und Frequenz mit Gewichtsverlust assoziiert – Vollstaendigkeit weniger. Praxis: lieber regelmaessig loggen als perfekt.",
+    tags: ["Tracking", "App", "Abnehmen", "Studie"],
+    publishedAt: "2025-12-22",
+    readingTime: 5,
+    sources: [
+      {
+        title: "Adherence to mobile‐app‐based dietary self‐monitoring—Impact on weight loss in adults",
+        authors: "Payne J, et al.",
+        journal: "Obesity Science & Practice",
+        year: 2021,
+        doi: "10.1002/osp4.566",
+      },
+    ],
+  },
+  {
+    slug: "gewichtsverlust-halten-10-jahre-nwcr",
+    title: "Gewichtsverlust halten: 10 Jahre Daten aus dem NWCR",
+    description:
+      "10-Jahres-Auswertung (2014) im National Weight Control Registry: durchschnittlich ~23 kg Gewichtsverlust nach 10 Jahren; >87% halten ≥10% Gewichtsverlust. Routinen und Self-Monitoring sind zentrale Marker.",
+    tags: ["Gewicht halten", "Abnehmen", "Studie", "Langzeit"],
+    publishedAt: "2025-12-22",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title: "Weight-Loss Maintenance for 10 Years in the National Weight Control Registry",
+        authors: "Thomas J, et al.",
+        journal: "American Journal of Preventive Medicine",
+        year: 2014,
+        doi: "10.1016/j.amepre.2013.08.019",
+      },
+    ],
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (fuer getStaticPaths)
