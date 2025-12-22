@@ -43,11 +43,11 @@ function Header() {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                     className="flex items-center self-center h-8 md:h-12"
                   >
-                    <img src="/misc/wreath-left.webp" className="h-full" alt="Auszeichnung Dekoration links" />
+                    <img src="/misc/wreath-left.webp" className="h-full" width={29} height={56} alt="Auszeichnung Dekoration links" />
                     <p className="text-xs text-gray-500 whitespace-pre text-center">
                       {reward}
                     </p>
-                    <img src="/misc/wreath-right.webp" className="h-full" alt="Auszeichnung Dekoration rechts" />
+                    <img src="/misc/wreath-right.webp" className="h-full" width={29} height={56} alt="Auszeichnung Dekoration rechts" />
                   </motion.div>
                 ))}
               </div>
@@ -107,8 +107,10 @@ function Header() {
                     <a href={googlePlayLink}>
                       <img
                         className="h-14"
-                        alt="google play logo"
+                        alt="Bei Google Play herunterladen"
                         src="/stores/google-play.svg"
+                        width={180}
+                        height={56}
                       />
                     </a>
                   </li>
@@ -118,8 +120,10 @@ function Header() {
                     <a href={appStoreLink}>
                       <img
                         className="h-14"
-                        alt="app store logo"
+                        alt="Im App Store herunterladen"
                         src="/stores/app-store.svg"
+                        width={180}
+                        height={56}
                       />
                     </a>
                   </li>
@@ -169,6 +173,9 @@ function Header() {
                           <img
                             src={`/avatars/${index + 1}.webp`}
                             alt={`app user ${index + 1}`}
+                            width={32}
+                            height={32}
+                            loading="lazy"
                           />
                         </div>
                       </motion.li>
@@ -216,9 +223,12 @@ function Header() {
                 <img
                   src="/misc/iphone-frame.webp"
                   alt="Mahlzait App auf iPhone - Kalorienzähler Interface"
-                  className="relative z-10 h-full"
+                  className="relative z-10 h-full pointer-events-none"
+                  width={432}
+                  height={885}
                   loading="eager"
                   decoding="async"
+                  fetchPriority="high"
                 />
               </motion.div>
             </div>

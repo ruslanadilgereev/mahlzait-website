@@ -37,8 +37,12 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
     <motion.img
       src={themedSrc}
       alt={`Mahlzait App Screenshot ${index + 1} - Kalorienzähler Funktion`}
+      width={460}
+      height={1022}
       loading={index === 0 ? "eager" : "lazy"}
       decoding="async"
+      // @ts-expect-error fetchPriority is valid HTML but not in React types yet
+      fetchPriority={index === 0 ? "high" : "auto"}
       style={{ translateX: x, translateY: y, scale: 1.02 }}
       className="absolute overflow-hidden w-full h-full object-contain object-center"
     />
