@@ -169,7 +169,7 @@ export default function LiveDemo() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="relative h-[580px] 2xs:h-[740px] sm:h-[680px] md:h-[600px] w-[280px] 2xs:w-[360px] sm:w-[320px] md:w-[290px] rounded-[3rem] mx-auto"
+                        className="relative h-[580px] 2xs:h-[740px] sm:h-[680px] md:h-[600px] w-[283px] 2xs:w-[361px] sm:w-[332px] md:w-[293px] rounded-[3rem] mx-auto"
                     >
                         {/* Screen Content */}
                         <div className="absolute top-[12px] 2xs:top-[16px] sm:top-[14px] md:top-[13px] bottom-[20px] 2xs:bottom-[26px] sm:bottom-[23px] md:bottom-[21px] left-[12px] 2xs:left-[16px] sm:left-[14px] md:left-[13px] right-[12px] 2xs:right-[16px] sm:right-[14px] md:right-[13px] rounded-[1.6rem] 2xs:rounded-[2rem] sm:rounded-[1.8rem] md:rounded-[1.7rem] overflow-hidden shadow-inner">
