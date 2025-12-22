@@ -335,8 +335,8 @@ const templateConfig: TemplateConfig = {
   },
   privacyPolicy: {
     seo: {
-      title: "Datenschutzerklärung - Mahlzait",
-      description: "Datenschutzerklärung für Mahlzait Kalorienzähler App",
+      title: "Privacy Policy - Mahlzait Calorie Counter App",
+      description: "Learn how Mahlzait protects your data: GDPR compliant, data stored in Germany, no third-party sharing. Transparent privacy policy for our calorie counter app.",
     },
     content: `# Datenschutzerklärung
 
@@ -554,8 +554,8 @@ Wir können diese Datenschutzerklärung aktualisieren. Die jeweils aktuelle Vers
   },
   cookiesPolicy: {
     seo: {
-      title: "Cookie-Richtlinie - Mahlzait",
-      description: "Cookie-Richtlinie für Mahlzait Kalorienzähler App",
+      title: "Cookie-Richtlinie - Mahlzait Kalorienzähler App",
+      description: "Cookie-Einstellungen für Mahlzait: Erfahre welche Cookies wir nutzen (Analytics, Marketing) und wie du sie verwalten kannst. DSGVO-konforme Cookie-Richtlinie.",
     },
     content: `# Cookie-Richtlinie / Cookie-Einstellungen (Website)
 
@@ -624,8 +624,8 @@ Telefon: 017643657343
   },
   termsAndConditions: {
     seo: {
-      title: "Nutzungsbedingungen - Mahlzait",
-      description: "Nutzungsbedingungen für Mahlzait Kalorienzähler App",
+      title: "Terms and Conditions - Mahlzait Calorie Counter",
+      description: "Terms of Service for Mahlzait app: Usage rights, limitations, liability and data protection. Clear terms for Free and Pro versions on iOS & Android.",
     },
     content: `# Nutzungsbedingungen
 
