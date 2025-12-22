@@ -4,7 +4,7 @@ const templateConfig: TemplateConfig = {
   name: "Mahlzait",
   seo: {
     title: "Mahlzait – Kalorienzähler & Food-Tracker mit KI",
-    description: "Tracke Mahlzeiten per Suche, Barcode oder KI. Rezepte erstellen & teilen, Ziele setzen, Gewicht tracken, Insights & Health-Integration. Deutsch, Englisch, Russisch. Kostenlos starten!",
+    description: "Kalorienzähler mit KI: Mahlzeiten per Foto, Barcode oder Text tracken. Rezepte teilen, Gewicht verfolgen, Makros im Blick. Kostenlos starten!",
   },
   // Draws grid behind main container
   backgroundGrid: false,
