@@ -77,6 +77,8 @@ function Pricing() {
                       src={planImages[index]}
                       alt={`${plan.title} - Mahlzait Preisplan Icon`}
                       className="m-0 h-full w-full object-contain"
+                      width={128}
+                      height={128}
                       loading="lazy"
                     />
                   </div>

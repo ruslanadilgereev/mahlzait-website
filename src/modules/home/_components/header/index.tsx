@@ -43,11 +43,11 @@ function Header() {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                     className="flex items-center self-center h-8 md:h-12"
                   >
-                    <img src="/misc/wreath-left.webp" className="h-full" width={29} height={56} alt="Auszeichnung Dekoration links" />
+                    <img src="/misc/wreath-left-small.webp" className="h-full" width={41} height={80} alt="Auszeichnung Dekoration links" />
                     <p className="text-xs text-gray-500 whitespace-pre text-center">
                       {reward}
                     </p>
-                    <img src="/misc/wreath-right.webp" className="h-full" width={29} height={56} alt="Auszeichnung Dekoration rechts" />
+                    <img src="/misc/wreath-right-small.webp" className="h-full" width={41} height={80} alt="Auszeichnung Dekoration rechts" />
                   </motion.div>
                 ))}
               </div>
@@ -171,10 +171,10 @@ function Header() {
                       >
                         <div className="w-8">
                           <img
-                            src={`/avatars/${index + 1}.webp`}
+                            src={`/avatars/optimized/${index + 1}.webp`}
                             alt={`app user ${index + 1}`}
-                            width={32}
-                            height={32}
+                            width={64}
+                            height={64}
                             loading="lazy"
                           />
                         </div>

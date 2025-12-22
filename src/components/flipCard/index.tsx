@@ -46,6 +46,8 @@ function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
                 src={frontContent.icon}
                 alt={`${frontContent.title} Icon - Mahlzait Feature`}
                 className="w-40 transition-transform group-hover:scale-90"
+                width={160}
+                height={160}
                 loading="lazy"
               />
             </figure>
@@ -70,6 +72,8 @@ function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
               src={themedBackImage}
               alt={`${frontContent.title} - Mahlzait App Ansicht`}
               className="h-full w-auto object-contain"
+              width={540}
+              height={1143}
               loading="lazy"
             />
           </div>
