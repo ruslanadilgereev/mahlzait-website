@@ -11,6 +11,12 @@ interface Props {
 
 function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
   const themedSrc = useThemedScreenshot(src);
+  
+  // Generate srcset paths for responsive images
+  // Mobile: 300w, Desktop: 540w
+  const mobileSrc = themedSrc.replace('/screenshots/optimized/', '/screenshots/mobile/');
+  const srcSet = `${mobileSrc} 300w, ${themedSrc} 540w`;
+  
   const x = useTransform(scrollYProgress, (y) => {
     if (index > 0 && index % 2 === 0) {
       const i = totalCount - index;
@@ -36,6 +42,8 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
   return (
     <motion.img
       src={themedSrc}
+      srcSet={srcSet}
+      sizes="(max-width: 768px) 300px, 540px"
       alt={`Mahlzait App Screenshot ${index + 1} - Kalorienzähler Funktion`}
       width={540}
       height={1200}

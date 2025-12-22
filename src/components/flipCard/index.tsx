@@ -70,6 +70,8 @@ function FlipCard({ frontContent, backImage, index }: FlipCardProps) {
             {/* Screenshot mit integriertem iPhone Frame */}
             <img
               src={themedBackImage}
+              srcSet={`${themedBackImage.replace('/screenshots/optimized/', '/screenshots/mobile/')} 300w, ${themedBackImage} 540w`}
+              sizes="(max-width: 768px) 300px, 540px"
               alt={`${frontContent.title} - Mahlzait App Ansicht`}
               className="h-full w-auto object-contain"
               width={540}

@@ -7,12 +7,15 @@ interface StepScreenshotProps {
 
 function StepScreenshot({ imagePath, alt }: StepScreenshotProps) {
   const themedImage = useThemedScreenshot(imagePath);
+  const mobileImage = themedImage.replace('/screenshots/optimized/', '/screenshots/mobile/');
 
   return (
     <div className="relative h-[500px] md:h-[600px] flex items-center justify-center">
       {/* Screenshot mit integriertem iPhone Frame */}
       <img
         src={themedImage}
+        srcSet={`${mobileImage} 300w, ${themedImage} 540w`}
+        sizes="(max-width: 768px) 300px, 540px"
         alt={alt}
         className="h-full w-auto object-contain"
         width={540}
