@@ -1,4 +1,4 @@
-Fitness-Mythen sind selten böse Absicht – meistens sind es eingängige Slogans, die komplexe Physiologie zu stark vereinfachen. Dieser Beitrag dekonstruiert 10 häufige Cardio-/Fitness-Mythen (aus dem Video "Busting Cardio Myths Everyone STILL Believes") und ordnet sie evidenzbasiert ein. Quellen sind im Text als Zahlen markiert und unten gesammelt.
+Fitness-Mythen sind selten böse Absicht – meistens sind es eingängige Slogans, die komplexe Physiologie zu stark vereinfachen. Dieser Beitrag dekonstruiert 10 häufige Cardio-/Fitness-Mythen (aus dem Video "Busting Cardio Myths Everyone STILL Believes") und ordnet sie evidenzbasiert ein. Qüllen sind im Text als Zahlen markiert und unten gesammelt.
 
 **Hauptquelle:** Das YouTube-Video ist die Leitlinie für die 10 Mythen. [[1]](#ref-1) Die zusätzlichen Quellen nutze ich, um einzelne Aussagen (z.B. Interval Walking, Schritte, Wearables, Exercise Snacks, concurrent training) zu unterfüttern.
 
@@ -31,7 +31,7 @@ Fitness-Mythen sind selten böse Absicht – meistens sind es eingängige Slogan
 
 Der Zugang zu Studien ist heute so einfach wie nie – und trotzdem dominieren in Social Media oft "Bro-Science" und Fitness-Folklore. Das führt zu ineffizienten Strategien (und manchmal zu unnötigem Stress), weil physiologische Zusammenhänge auf griffige, aber falsche Regeln reduziert werden.
 
-Ziel dieses Beitrags ist nicht nur "Mythos widerlegt", sondern ein besseres Verständnis der Mechanismen dahinter: von Substratoxidation über kardiovaskuläre Drift bis zu "concurrent training" (Ausdauer + Kraft).
+Ziel dieses Beitrags ist nicht nur "Mythos widerlegt", sondern ein besseres Verständnis der Mechanismen dahinter: von Substratoxidation über kardiovaskuläre Drift bis zu "concurrent training" (Ausdaür + Kraft).
 
 ---
 
@@ -88,7 +88,7 @@ Wichtig: In den Daten zeigte sich eine Dosis-Wirkung: Verbesserungen korrelierte
 
 Die Intuition "mehr Schweiss = mehr Fett" ist physiologisch falsch. Schweiss ist Wasserverlust zur Kühlung, nicht direkt Fettabbau. [[1]](#ref-1)
 
-Unter Hitzestress passiert häufig kardiovaskuläre Drift: mehr Blut fliesst zur Haut (Vasodilatation), venöser Rückstrom sinkt, Schlagvolumen sinkt – Herzfrequenz steigt kompensatorisch. Hohe Herzfrequenz bedeutet dann nicht automatisch mehr mechanische Arbeit. In der Praxis kann Leistung (Watt/Tempo) sogar sinken, wodurch der Kalorienverbrauch niedriger ausfällt – trotz "mehr Schweiss". [[1]](#ref-1)
+Unter Hitzestress passiert häufig kardiovaskuläre Drift: mehr Blut fliesst zur Haut (Vasodilatation), venöser Rückstrom sinkt, Schlagvolumen sinkt – Herzfreqünz steigt kompensatorisch. Hohe Herzfreqünz bedeutet dann nicht automatisch mehr mechanische Arbeit. In der Praxis kann Leistung (Watt/Tempo) sogar sinken, wodurch der Kalorienverbrauch niedriger ausfällt – trotz "mehr Schweiss". [[1]](#ref-1)
 
 Was viele dann auf der Waage sehen (schnell -1 kg) ist fast immer **Wasser**, nicht Fett. Wenn du danach normal trinkst/isst, ist das Gewicht wieder da – weil die Fettmasse sich in Stunden nicht "wegschmelzen" kann. [[1]](#ref-1)
 
@@ -131,13 +131,13 @@ Limitationen bleiben: Hautfarbe, Tattoos, Schweiss, lockerer Sitz, erratische Ar
 
 ### Energieverbrauch (Kalorien): häufig deutlich daneben
 
-Energieverbrauch ist bei Wearables meist ein Algorithmus-Output aus Herzfrequenz, Bewegungssensoren und Basisdaten. Validierungen berichten regelmässig deutliche Abweichungen (grobe Grössenordnung **20–50%**). [[1]](#ref-1)
+Energieverbrauch ist bei Wearables meist ein Algorithmus-Output aus Herzfreqünz, Bewegungssensoren und Basisdaten. Validierungen berichten regelmässig deutliche Abweichungen (grobe Grössenordnung **20–50%**). [[1]](#ref-1)
 
 **Tabelle 2: Wearables vs. metabolischer Goldstandard**
 
 | Messgrösse | Technologie | Genauigkeit (vs. Goldstandard) | Limitierende Faktoren |
 | --- | --- | --- | --- |
-| Herzfrequenz (HR) | Optisch (PPG) | Hoch (Abweichung < 5%) | Hautfarbe, Tattoos, Schweiss, Sitz, Armbewegungen |
+| Herzfreqünz (HR) | Optisch (PPG) | Hoch (Abweichung < 5%) | Hautfarbe, Tattoos, Schweiss, Sitz, Armbewegungen |
 | Energieverbrauch (EE) | Algorithmus | Niedrig (Abweichung 20–50%) | Individülle Stoffwechselrate, Bewegungseffizienz, Modellannahmen |
 
 **Praxis:**
@@ -163,7 +163,7 @@ Praktische Uebersetzung: Der grösste "Return" liegt oft beim Sprung von sehr ni
 
 Wenn du die Studie nachlesen willst: der sauberste Einstieg ist PubMed. [[13]](#ref-13) Falls du keinen Zugriff auf den Volltext hast, gibt es teils auch zugängliche Kopien (z.B. über ResearchGate). [[14]](#ref-14)
 
-Und ja: Neben dieser Meta-Analyse gibt es weitere, neüre Auswertungen/Reviews zur Dosis-Wirkung von Schritten und Gesundheit. [[15]](#ref-15) [[16]](#ref-16)
+Und ja: Neben dieser Meta-Analyse gibt es weitere, neuere Auswertungen/Reviews zur Dosis-Wirkung von Schritten und Gesundheit. [[15]](#ref-15) [[16]](#ref-16)
 
 Für eine alltagsnahe, nicht-wissenschaftliche Zusammenfassung (\"Japanese walking\" vs. 10.000 Schritte) kann auch ein populärwissenschaftlicher Artikel helfen. [[12]](#ref-12)
 
@@ -216,7 +216,7 @@ Die alte Daumenregel "unter 20–30 Minuten bringt es nichts" ist zu grob. Kurze
 
 In Studien mit Treppen-Sprints (z.B. 3x20 Sekunden, über den Tag verteilt, mit Stunden Pause) wurden nach wenigen Wochen Verbesserungen von VO2peak berichtet – trotz extrem geringer Nettozeit. [[18]](#ref-18)
 
-Falls du dir den Paper-Text anschaün willst: PubMed ist der Einstieg. [[18]](#ref-18) Es gibt ausserdem auch einen ResearchGate-Link als alternativen Zugang. [[17]](#ref-17)
+Falls du dir den Paper-Text anschauen willst: PubMed ist der Einstieg. [[18]](#ref-18) Es gibt ausserdem auch einen ResearchGate-Link als alternativen Zugang. [[17]](#ref-17)
 
 **Praxis (realistisch):**
 
@@ -246,7 +246,7 @@ Praxis: Für die meisten Ziele ist nicht "entweder/oder", sondern "beides" sinnv
 
 Der Interferenz-Mythos stammt u.a. aus frühen concurrent-training Arbeiten, ist aber in der Praxis stark von **Modalität** und **Timing** abhängig.
 
-Beispiel: In einer Studie mit unilateralem Krafttraining (ein Bein) und zusätzlicher Ausdauereinheit (anderes Bein, 6 Stunden Abstand) zeigte das Bein mit beidem (AE+RE) sogar **mehr** Hypertrophie (+17% vs. +9%). [[19]](#ref-19)
+Beispiel: In einer Studie mit unilateralem Krafttraining (ein Bein) und zusätzlicher Ausdaüreinheit (anderes Bein, 6 Stunden Abstand) zeigte das Bein mit beidem (AE+RE) sogar **mehr** Hypertrophie (+17% vs. +9%). [[19]](#ref-19)
 
 Wichtig ist die Modalität: Radfahren (konzentrisch, wenig Impact) interferiert in der Regel weniger als Laufen (mehr exzentrische Belastung/Muskelschäden). [[19]](#ref-19)
 

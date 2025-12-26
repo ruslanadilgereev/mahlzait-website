@@ -2,7 +2,7 @@ Viele wollen abnehmen, ohne ständig Hunger zu haben. Zwei Klassiker dabei sind 
 
 ## Das Wichtigste in Kürze
 
-- Es handelt sich um einen **narrativen Review** (keine neü Intervention am Menschen), der die Studienlage zu Protein, Ballaststoffen und Training zusammenfasst.
+- Es handelt sich um einen **narrativen Review** (keine neue Intervention am Menschen), der die Studienlage zu Protein, Ballaststoffen und Training zusammenfasst.
 - Kerngedanke: Nach Gewichtsverlust treten oft **metabolische Anpassungen** auf (mehr Hunger/Cravings, weniger Energieverbrauch). Protein, Ballaststoffe und Bewegung können diese Effekte teilweise abpuffern.
 - Höheres Protein und mehr Ballaststoffe können **Sattigung** verbessern und den Alltag leichter machen – vor allem in einem Kaloriendefizit.
 - Training kann helfen, den **Energieverbrauch** zu stützen und Gewichtsregain zu reduzieren (insb. übers Erhalten von fettfreier Masse).
@@ -12,7 +12,7 @@ Viele wollen abnehmen, ohne ständig Hunger zu haben. Zwei Klassiker dabei sind 
 
 ## Was wurde untersucht?
 
-Der Artikel ist ein **Uebersichtsartikel**, der drei Stellschrauben für nachhaltiges Gewichtsmanagement beleuchtet:
+Der Artikel ist ein **Übersichtsartikel**, der drei Stellschrauben für nachhaltiges Gewichtsmanagement beleuchtet:
 
 - **Protein** (höherer Anteil in der Ernährung)
 - **Ballaststoffe** (mehr Volumen, bessere Sattigung, bessere Mahlzeitenstruktur)
@@ -44,7 +44,7 @@ Wenn du „Kalorien zählen“ nicht daürhaft willst, funktionieren oft einfach
 
 - **Protein zu jeder Mahlzeit** (z.B. Skyr/Quark, Eier, Fisch, mageres Fleisch, Tofu, Hülsenfrüchte)
 - **Ballaststoffe hoch** (Gemüse, Beeren, Vollkorn, Bohnen/Linsen)
-- **Bewegung planbar machen** (Alltagsschritte + 2–3x/Woche Kraft oder Ausdauer)
+- **Bewegung planbar machen** (Alltagsschritte + 2–3x/Woche Kraft oder Ausdaür)
 
 Tools wie Mahlzait können helfen, diese Stellschrauben sichtbar zu machen (Protein/Ballaststoffe/Training), ohne dass du alles perfekt machen musst.
 
@@ -63,7 +63,7 @@ Tools wie Mahlzait können helfen, diese Stellschrauben sichtbar zu machen (Prot
 
 ---
 
-## Quellen
+## Qüllen
 
 Guarneiri L, et al. *Protein, fiber, and exercise: a narrative review of their roles in weight management and cardiometabolic health.* Lipids in Health and Disease. 2025. doi: [10.1186/s12944-025-02659-7](https://doi.org/10.1186/s12944-025-02659-7).
 

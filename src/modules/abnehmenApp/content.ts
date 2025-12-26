@@ -34,7 +34,7 @@ export const abnehmenAppHowToSteps: { name: string; text: string }[] = [
   },
   {
     name: "Mahlzeiten loggen",
-    text: "Logge Essen & Getränke schnell per Foto, Text oder Barcode – die großen Kalorienquellen zuerst.",
+    text: "Logge Essen & Getränke schnell per Foto, Text oder Barcode – die großen Kalorienqüllen zürst.",
   },
   {
     name: "Wochentrend auswerten",

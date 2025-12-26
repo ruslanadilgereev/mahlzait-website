@@ -1,6 +1,6 @@
 Abnehmen ist gesund – aber bei älteren Menschen (50+) gibt es eine berechtigte Sorge: **Geht beim Gewichtsverlust zu viel Muskelmasse verloren?** Genau hier kommt Protein ins Spiel.
 
-Diese systematische Uebersicht mit Meta-Analyse hat ausgewertet, ob **höheres Protein** bei älteren Menschen nach Gewichtsverlust die **Körperzusammensetzung** verbessert.
+Diese systematische Übersicht mit Meta-Analyse hat ausgewertet, ob **höheres Protein** bei älteren Menschen nach Gewichtsverlust die **Körperzusammensetzung** verbessert.
 
 ## Das Wichtigste in Kürze
 
@@ -52,7 +52,7 @@ Bei älteren Menschen ist Abnehmen dann am wertvollsten, wenn Fettmasse runterge
 
 ---
 
-## Quellen
+## Qüllen
 
 Kim JE, et al. *Effects of dietary protein intake on body composition changes after weight loss in older adults: a systematic review and meta-analysis.* Nutrition Reviews. 2016. doi: [10.1093/nutrit/nuv065](https://doi.org/10.1093/nutrit/nuv065).
 

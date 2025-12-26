@@ -57,7 +57,7 @@ export const kalorienZaehlenAppFaq: { q: string; a: string }[] = [
   },
   {
     q: "Muss ich alles abwiegen?",
-    a: "Nicht unbedingt. Für schnelle Fortschritte reicht oft: kalorien-dichte Zutaten genauer (Öl, Snacks), den Rest mit Standardportionen. Wichtig ist Konstanz.",
+    a: "Nicht unbedingt. Für schnelle Fortschritte reicht oft: kalorien-dichte Zutaten genaür (Öl, Snacks), den Rest mit Standardportionen. Wichtig ist Konstanz.",
   },
   {
     q: "Kann Mahlzait Kalorien per Foto erkennen?",

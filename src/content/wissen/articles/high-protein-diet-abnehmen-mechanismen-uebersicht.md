@@ -1,19 +1,19 @@
 High-Protein Diets sind ein Daürbrenner: „Mehr Protein = mehr Sattigung = leichter abnehmen“. Klingt simpel – aber was sind die Mechanismen und wie sieht die klinische Evidenz aus?
 
-Ein Uebersichtsartikel fasst klinische Daten und plausible Mechanismen zusammen, wie **proteinreiches Essen** beim Abnehmen und Gewicht halten helfen kann.
+Ein Übersichtsartikel fasst klinische Daten und plausible Mechanismen zusammen, wie **proteinreiches Essen** beim Abnehmen und Gewicht halten helfen kann.
 
 ## Das Wichtigste in Kürze
 
 - Klinische Studien zeigen: Höherer Proteinanteil kann **Körpergewicht reduzieren** und die **Körperzusammensetzung** verbessern (mehr Fett runter, fettfreie Masse eher erhalten).
 - Längere Studien (6–12 Monate) berichten, dass High-Protein-Ansätze Gewichtsverlust unterstützen und **Gewichtszunahme nach Diät** reduzieren können.
 - Mechanismen laufen u.a. über **Sattigungshormone** (GLP-1, CCK, PYY rauf; Ghrelin runter) und über **höheren thermischen Effekt** von Protein (DIT).
-- In der Uebersicht wird betont: Bei gesunden Erwachsenen wurden in diesen Kontexten keine klaren Nachteile für Knochen oder Nierenfunktion berichtet – trotzdem gilt: medizinische Individualfaktoren beachten.
+- In der Übersicht wird betont: Bei gesunden Erwachsenen wurden in diesen Kontexten keine klaren Nachteile für Knochen oder Nierenfunktion berichtet – trotzdem gilt: medizinische Individualfaktoren beachten.
 
 ---
 
 ## Was wurde untersucht?
 
-Es handelt sich um einen **klinischen Uebersichtsartikel**: Die Autoren diskutieren Ergebnisse aus Studien und erklären, warum ein höherer Proteinanteil physiologisch Sinn machen kann – insbesondere beim Abnehmen.
+Es handelt sich um einen **klinischen Übersichtsartikel**: Die Autoren diskutieren Ergebnisse aus Studien und erklären, warum ein höherer Proteinanteil physiologisch Sinn machen kann – insbesondere beim Abnehmen.
 
 ---
 
@@ -43,7 +43,7 @@ Ein wiederkehrender Vorteil: Protein kann helfen, **fettfreie Masse** beim Abneh
 
 ## Limitationen und Einordnung
 
-- Uebersichtsartikel: gute Einordnung, aber keine einzelne „eine Zahl“-Aussage.
+- Übersichtsartikel: gute Einordnung, aber keine einzelne „eine Zahl“-Aussage.
 - Was „high protein“ bedeutet, variiert zwischen Studien (g/kg/Tag, % der Energie).
 - Wer Vorerkrankungen (z.B. Nieren) hat, sollte Proteinziele medizinisch abklären.
 
@@ -55,7 +55,7 @@ Mehr Protein ist einer der pragmatischsten Hebel für Abnehmen: bessere Sattigun
 
 ---
 
-## Quellen
+## Qüllen
 
 Moon J, et al. *Clinical Evidence and Mechanisms of High-Protein Diet-Induced Weight Loss.* Journal of Obesity & Metabolic Syndrome. 2020. doi: [10.7570/jomes20028](https://doi.org/10.7570/jomes20028).
 

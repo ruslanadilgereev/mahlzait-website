@@ -61,7 +61,7 @@ Menschen, die ihr Gewicht langfristig halten, nutzen Tracking-Tools häufig – 
 
 ---
 
-## Quellen
+## Qüllen
 
 Goldstein C, et al. *Successful weight loss maintainers use health-tracking smartphone applications more than a nationally representative sample: comparison of the National Weight Control Registry to Pew Tracking for Health.* Obesity Science & Practice. 2017. doi: [10.1002/osp4.102](https://doi.org/10.1002/osp4.102).
 

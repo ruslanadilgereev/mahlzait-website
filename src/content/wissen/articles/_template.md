@@ -6,9 +6,9 @@ Wichtig:
 - Dateiname muss exakt dem slug in src/content/wissen/index.ts entsprechen.
 -->
 
-Kurzer Einstieg in 2–3 Saetzen: Warum ist das Paper relevant und was kann man daraus fuer die Praxis lernen?
+Kurzer Einstieg in 2–3 Saetzen: Warum ist das Paper relevant und was kann man daraus für die Praxis lernen?
 
-## Das Wichtigste in Kuerze
+## Das Wichtigste in Kürze
 
 - Punkt 1 (harte Zahl/Outcome, wenn vorhanden)
 - Punkt 2
@@ -22,7 +22,7 @@ Kurzer Einstieg in 2–3 Saetzen: Warum ist das Paper relevant und was kann man 
 - Design (RCT, Meta-Analyse, Review, Kohorte, ...)
 - Teilnehmer (n, Zielgruppe)
 - Intervention/Vergleich (wenn relevant)
-- Dauer
+- Daür
 - Outcomes
 
 ---
@@ -48,7 +48,7 @@ Kurz, konkret.
 
 ## Limitationen und Einordnung
 
-- Limitation 1 (z.B. kurze Dauer, unkontrolliert, kleine Stichprobe)
+- Limitation 1 (z.B. kurze Daür, unkontrolliert, kleine Stichprobe)
 - Limitation 2
 
 ---

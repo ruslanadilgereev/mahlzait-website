@@ -67,7 +67,7 @@ Wenn Social-Media-Support in deinem Abnehmprozess eine Rolle spielt, liefern **U
 
 ---
 
-## Quellen
+## Qüllen
 
 Hales S, et al. *Varying social media post types differentially impacts engagement in a behavioral weight loss intervention.* Translational Behavioral Medicine. 2014. doi: [10.1007/s13142-014-0274-z](https://doi.org/10.1007/s13142-014-0274-z).
 

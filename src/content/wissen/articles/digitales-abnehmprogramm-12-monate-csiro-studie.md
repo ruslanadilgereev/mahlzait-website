@@ -1,4 +1,4 @@
-Digitale Abnehmprogramme sind bequem: App öffnen, Essen loggen, Plan folgen. Aber funktionieren sie auch **über 12 Monate** – und was unterscheidet „Erfolg“ von „Abbruch“?
+Digitale Abnehmprogramme sind beqüm: App öffnen, Essen loggen, Plan folgen. Aber funktionieren sie auch **über 12 Monate** – und was unterscheidet „Erfolg“ von „Abbruch“?
 
 Eine sehr grosse Kohorten-Auswertung hat genau das für ein kommerzielles Programm untersucht (CSIRO Total Wellbeing Diet Online).
 
@@ -64,11 +64,11 @@ Mehr Interaktion mit dem Programm (z.B. häufigeres Einloggen/Tracking) war mit 
 
 ## Fazit
 
-Digitale Programme können über 12 Monate messbar helfen – besonders, wenn Nutzer regelmässig interagieren. Der grösste Hebel ist weniger „welche App“, sondern **wie konsequent** sie in deinen Alltag eingebaut wird.
+Digitale Programme können über 12 Monate messbar helfen – besonders, wenn Nutzer regelmässig interagieren. Der grösste Hebel ist weniger „welche App", sondern **wie konsequent** sie in deinen Alltag eingebaut wird.
 
 ---
 
-## Quellen
+## Qüllen
 
 Hendrie G, et al. *Weight Loss Patterns and Outcomes Over 12 Months on a Commercial Weight Management Program (CSIRO Total Wellbeing Diet Online): Large-Community Cohort Evaluation Study.* Journal of Medical Internet Research. 2025. doi: [10.2196/65122](https://doi.org/10.2196/65122).
 

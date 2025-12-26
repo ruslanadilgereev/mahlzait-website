@@ -34,7 +34,7 @@ export const abnehmenHowToSteps: { name: string; text: string }[] = [
   },
   {
     name: "Protein priorisieren",
-    text: "Baue proteinreiche Mahlzeiten ein (z.B. Joghurt/Skyr, mageres Fleisch/Fisch, Hülsenfrüchte, Tofu).",
+    text: "Baü proteinreiche Mahlzeiten ein (z.B. Joghurt/Skyr, mageres Fleisch/Fisch, Hülsenfrüchte, Tofu).",
   },
   {
     name: "Einfache Regeln nutzen",
@@ -49,7 +49,7 @@ export const abnehmenHowToSteps: { name: string; text: string }[] = [
 export const abnehmenFaq: { q: string; a: string }[] = [
   {
     q: "Wie kann ich am schnellsten abnehmen?",
-    a: "„Schnell“ klingt gut, ist aber selten nachhaltig. Starte mit einem moderaten Defizit, hoher Protein-Zufuhr und konsequentem Tracking. So erreichst du Ergebnisse mit weniger Rückfall-Risiko.",
+    a: "„Schnell" klingt gut, ist aber selten nachhaltig. Starte mit einem moderaten Defizit, hoher Protein-Zufuhr und konsequentem Tracking. So erreichst du Ergebnisse mit weniger Rückfall-Risiko.",
   },
   {
     q: "Wie viele Kalorien brauche ich zum Abnehmen?",
@@ -61,7 +61,7 @@ export const abnehmenFaq: { q: string; a: string }[] = [
   },
   {
     q: "Warum stagniert mein Gewicht?",
-    a: "Häufige Gründe: Defizit zu klein, Portionsfehler, mehr Essen am Wochenende, weniger Bewegung oder Wasserbindung. Prüfe zuerst Tracking-Genauigkeit und den Wochentrend.",
+    a: "Häufige Gründe: Defizit zu klein, Portionsfehler, mehr Essen am Wochenende, weniger Bewegung oder Wasserbindung. Prüfe zürst Tracking-Genauigkeit und den Wochentrend.",
   },
   {
     q: "Wie hilft Mahlzait beim Abnehmen?",

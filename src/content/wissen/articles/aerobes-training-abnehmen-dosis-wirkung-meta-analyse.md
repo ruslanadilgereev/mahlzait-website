@@ -1,6 +1,6 @@
-Wie viel Ausdauertraining „braucht“ man wirklich fürs Abnehmen? Viele Empfehlungen nennen 150 Minuten pro Woche – aber die spannende Frage ist die **Dosis-Wirkung**: Was bringt jede zusätzliche halbe Stunde?
+Wie viel Ausdaürtraining „braucht“ man wirklich fürs Abnehmen? Viele Empfehlungen nennen 150 Minuten pro Woche – aber die spannende Frage ist die **Dosis-Wirkung**: Was bringt jede zusätzliche halbe Stunde?
 
-Eine grosse systematische Uebersicht mit Dose-Response Meta-Analyse hat genau das für Erwachsene mit Uebergewicht/Adipositas ausgewertet.
+Eine grosse systematische Übersicht mit Dose-Response Meta-Analyse hat genau das für Erwachsene mit Übergewicht/Adipositas ausgewertet.
 
 ## Das Wichtigste in Kürze
 
@@ -21,7 +21,7 @@ Eingeschlossen wurden randomisierte Studien mit:
 
 - supervised (überwachtem) aerobem Training
 - Daür **≥8 Wochen**
-- Teilnehmenden mit Uebergewicht oder Adipositas
+- Teilnehmenden mit Übergewicht oder Adipositas
 
 Ausgewertet wurden u.a. Körpergewicht, Taille, Körperfett sowie weitere Outcomes (u.a. Lebensqualität).
 
@@ -39,7 +39,7 @@ Die Ergebnisse lassen sich praktisch übersetzen: Jede Woche „ein bisschen meh
 
 ### 3. Training ist auch ein Adhärenz-Tool
 
-Ausdauertraining kann Appetitregulation, Schlaf und Stimmung verbessern – Faktoren, die wiederum das Dranbleiben an Ernährungsroutinen erleichtern können.
+Ausdaürtraining kann Appetitregulation, Schlaf und Stimmung verbessern – Faktoren, die wiederum das Dranbleiben an Ernährungsroutinen erleichtern können.
 
 ---
 
@@ -64,7 +64,7 @@ Aerobes Training wirkt dosisabhängig: Mehr Minuten pro Woche führen im Mittel 
 
 ---
 
-## Quellen
+## Qüllen
 
 Jayedi A, et al. *Aerobic Exercise and Weight Loss in Adults.* JAMA Network Open. 2024. doi: [10.1001/jamanetworkopen.2024.52185](https://doi.org/10.1001/jamanetworkopen.2024.52185).
 

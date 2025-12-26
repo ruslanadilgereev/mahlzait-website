@@ -1,6 +1,6 @@
 Intervallfasten ist ein Sammelbegriff: **Alternate Day Fasting (ADF)**, **Time-Restricted Eating (TRE)** oder **Whole-Day Fasting**. Die grosse Frage ist: *Welche Strategie bringt beim Abnehmen wirklich mehr – und wie sehen die Effekte auf Blutwerte aus?*
 
-Eine aktülle Arbeit im **BMJ** hat dazu eine **Netzwerk-Metaanalyse** von randomisierten Studien ausgewertet.
+Eine aktuelle Arbeit im **BMJ** hat dazu eine **Netzwerk-Metaanalyse** von randomisierten Studien ausgewertet.
 
 ## Das Wichtigste in Kürze
 
@@ -68,7 +68,7 @@ Intervallfasten funktioniert für Gewichtsverlust ähnlich gut wie klassische Ka
 
 ---
 
-## Queellen
+## Qüellen
 
 Semnani-Azad Z, et al. *Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials.* BMJ. 2025. doi: [10.1136/bmj-2024-082007](https://doi.org/10.1136/bmj-2024-082007).
 

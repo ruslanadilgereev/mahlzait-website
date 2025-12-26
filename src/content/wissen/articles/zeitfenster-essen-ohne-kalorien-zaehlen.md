@@ -93,9 +93,9 @@ Die wahrscheinlich beste Strategie ist die, die du langfristig durchhältst: Wen
 
 ---
 
-## Quellen
+## Qüllen
 
-Lin S, Cienfügos S, Ezpeleta M, et al. *Time-Restricted Eating Without Calorie Counting for Weight Loss in a Racially Diverse Population: A Randomized Controlled Trial.* Ann Intern Med. 2023 Jul;176(7):885-895. doi: [10.7326/M23-0052](https://doi.org/10.7326/M23-0052). PMID: [37364268](https://pubmed.ncbi.nlm.nih.gov/37364268/). ClinicalTrials.gov: [NCT04692532](https://clinicaltrials.gov/study/NCT04692532).
+Lin S, Cienfuegos S, Ezpeleta M, et al. *Time-Restricted Eating Without Calorie Counting for Weight Loss in a Racially Diverse Population: A Randomized Controlled Trial.* Ann Intern Med. 2023 Jul;176(7):885-895. doi: [10.7326/M23-0052](https://doi.org/10.7326/M23-0052). PMID: [37364268](https://pubmed.ncbi.nlm.nih.gov/37364268/). ClinicalTrials.gov: [NCT04692532](https://clinicaltrials.gov/study/NCT04692532).
 
 ---
 

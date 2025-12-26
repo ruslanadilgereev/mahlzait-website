@@ -84,7 +84,7 @@ function AbnehmenPage({ config }: Props) {
                     keine Perfektion – nur Leitplanken.
                   </p>
                   <div className="card-actions mt-4">
-                    <a className="btn btn-outline" href="/makros-berechnen">
+                    <a className="btn btn-primary" href="/makros-berechnen">
                       Makro-Rechner
                     </a>
                   </div>
@@ -186,7 +186,7 @@ function AbnehmenPage({ config }: Props) {
               <a href="/kalorienbedarf-berechnen" className="btn btn-outline">
                 Kalorienbedarf-Rechner
               </a>
-              <a href="/makros-berechnen" className="btn btn-outline">
+              <a href="/makros-berechnen" className="btn btn-primary">
                 Makro-Rechner
               </a>
               <a href="/wissen" className="btn btn-outline">

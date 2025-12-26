@@ -67,7 +67,7 @@ Wenn Kalorienrestriktion langfristig funktionieren soll, braucht es ein System: 
 
 ---
 
-## Quellen
+## Qüllen
 
 Rickman A, et al. *The CALERIE Study: Design and methods of an innovative 25% caloric restriction intervention.* Contemporary Clinical Trials. 2011. doi: [10.1016/j.cct.2011.07.002](https://doi.org/10.1016/j.cct.2011.07.002).
 

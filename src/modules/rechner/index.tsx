@@ -11,10 +11,10 @@ interface Props {
 const calculators = [
   {
     title: "Kalorienbedarf berechnen",
-    desc: "Berechne deinen taeglichen Kalorienbedarf mit der Mifflin-St Jeor Formel. Erfahre deinen Grundumsatz (BMR) und Gesamtbedarf (TDEE).",
+    desc: "Berechne deinen täglichen Kalorienbedarf mit der Mifflin-St Jeor Formel. Erfahre deinen Grundumsatz (BMR) und Gesamtbedarf (TDEE).",
     link: "/kalorienbedarf-berechnen",
     icon: "/3D/bulb-front-color.webp",
-    features: ["Grundumsatz (BMR)", "Gesamtbedarf (TDEE)", "Aktivitaetslevel"],
+    features: ["Grundumsatz (BMR)", "Gesamtbedarf (TDEE)", "Aktivitätslevel"],
     color: "primary",
   },
   {
@@ -27,7 +27,7 @@ const calculators = [
   },
   {
     title: "Makros berechnen",
-    desc: "Berechne deine optimale Makroverteilung fuer Abnehmen, Muskelaufbau oder Gewicht halten. Protein, Carbs und Fett in Gramm.",
+    desc: "Berechne deine optimale Makroverteilung für Abnehmen, Muskelaufbau oder Gewicht halten. Protein, Carbs und Fett in Gramm.",
     link: "/makros-berechnen",
     icon: "/3D/chart-front-color.webp",
     features: ["Protein in Gramm", "Kohlenhydrate in Gramm", "Fett in Gramm"],
@@ -46,10 +46,10 @@ function RechnerPage({ config }: Props) {
           <header className="text-center mb-12">
             <span className="badge badge-primary badge-lg mb-4">Kostenlose Tools</span>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Ernaehrungsrechner
+              Ernährungsrechner
             </h1>
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
-              Kostenlose Rechner fuer Kalorien, Makros und mehr. 
+              Kostenlose Rechner für Kalorien, Makros und mehr. 
               Berechne deinen Bedarf und starte mit dem Tracking.
             </p>
           </header>
@@ -94,7 +94,7 @@ function RechnerPage({ config }: Props) {
                       ))}
                     </ul>
                     <div className="card-actions justify-end mt-6">
-                      <span className={`btn btn-${calc.color}`}>Rechner oeffnen</span>
+                      <span className="btn btn-primary">Rechner öffnen</span>
                     </div>
                   </div>
                 </a>
@@ -124,7 +124,7 @@ function RechnerPage({ config }: Props) {
                   <div className="text-4xl mb-4">2</div>
                   <h3 className="font-bold">Personalisiert</h3>
                   <p className="opacity-80 text-sm">
-                    Die Ergebnisse werden individuell auf dein Alter, Gewicht, Groesse und Ziel angepasst.
+                    Die Ergebnisse werden individuell auf dein Alter, Gewicht, Grösse und Ziel angepasst.
                   </p>
                 </div>
               </div>
@@ -168,7 +168,7 @@ function RechnerPage({ config }: Props) {
             <h3 className="text-lg font-bold mb-6 text-center">Mehr entdecken</h3>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="/wissen" className="btn btn-outline">
-                Ernaehrungswissen
+                Ernährungswissen
               </a>
               <a href="/kalorien-zaehlen" className="btn btn-outline">
                 Kalorien zählen

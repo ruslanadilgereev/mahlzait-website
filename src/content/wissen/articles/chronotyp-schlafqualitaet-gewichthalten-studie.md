@@ -15,13 +15,13 @@ Eine Studie verglich deshalb sehr erfolgreiche „Gewicht-Halter“ aus dem Nati
 
 Design: Vergleichsstudie anhand etablierter Fragebögen:
 
-- Morningness-Eveningness Questionnaire (Chronotyp)
+- Morningness-Eveningness Qüstionnaire (Chronotyp)
 - Pittsburgh Sleep Quality Index (Schlafqualität)
 
 Gruppen:
 
 - NWCR: Personen, die grosse Gewichtsverluste langfristig halten
-- Vergleich: Teilnehmende aus zwei behavioralen Abnehm-Interventionen (Uebergewicht/Adipositas)
+- Vergleich: Teilnehmende aus zwei behavioralen Abnehm-Interventionen (Übergewicht/Adipositas)
 
 ---
 
@@ -65,7 +65,7 @@ Erfolgreiches Gewichthalten ist oft eine Kombination aus Routinen. Diese Studie 
 
 ---
 
-## Quellen
+## Qüllen
 
 Ross K, et al. *Successful weight loss maintenance associated with morning chronotype and better sleep quality.* Journal of Behavioral Medicine. 2015. doi: [10.1007/s10865-015-9704-8](https://doi.org/10.1007/s10865-015-9704-8).
 

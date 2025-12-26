@@ -23,13 +23,13 @@ export interface ArticleMeta {
   featured?: boolean;
 }
 
-// Metadata fuer alle Artikel (ohne Body, fuer schnelle Uebersicht)
+// Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
     slug: "gewichtsverlust-halten-wissenschaft",
     title: "Warum Gewicht halten so schwer ist - Was die Wissenschaft sagt",
     description:
-      "Eine Analyse aktueller Forschung zu den Mechanismen hinter Weight-Loss Maintenance. Erfahre, warum der Koerper sich gegen Abnehmen wehrt und was du dagegen tun kannst.",
+      "Eine Analyse aktueller Forschung zu den Mechanismen hinter Weight-Loss Maintenance. Erfahre, warum der Körper sich gegen Abnehmen wehrt und was du dagegen tun kannst.",
     tags: ["Abnehmen", "Stoffwechsel", "Forschung", "Gewicht halten"],
     publishedAt: "2025-01-15",
     readingTime: 8,
@@ -68,9 +68,9 @@ export const articlesMeta: ArticleMeta[] = [
   },
   {
     slug: "protein-ballaststoffe-training-gewichtsmanagement-review",
-    title: "Protein, Ballaststoffe & Training: 3 Hebel fuer Gewichtsmanagement (Review)",
+    title: "Protein, Ballaststoffe & Training: 3 Hebel für Gewichtsmanagement (Review)",
     description:
-      "Narrativer Review (2025): Warum mehr Protein, mehr Ballaststoffe und regelmaessige Bewegung beim Abnehmen und Gewicht halten helfen koennen – inkl. kardiometabolischer Effekte.",
+      "Narrativer Review (2025): Warum mehr Protein, mehr Ballaststoffe und regelmaessige Bewegung beim Abnehmen und Gewicht halten helfen können – inkl. kardiometabolischer Effekte.",
     tags: ["Abnehmen", "Protein", "Ballaststoffe", "Bewegung", "Review"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -147,7 +147,7 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "protein-abnehmen-muskelmasse-aeltere-meta-analyse",
     title: "Mehr Protein beim Abnehmen (50+): weniger Muskelverlust? (Meta-Analyse)",
     description:
-      "Systematische Uebersicht/Meta-Analyse (2016): Bei aelteren Erwachsenen kann ein hoeherer Proteinanteil helfen, fettfreie Masse beim Abnehmen besser zu erhalten.",
+      "Systematische Übersicht/Meta-Analyse (2016): Bei aelteren Erwachsenen kann ein höherer Proteinanteil helfen, fettfreie Masse beim Abnehmen besser zu erhalten.",
     tags: ["Protein", "Abnehmen", "Meta-Analyse", "Muskel"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -166,7 +166,7 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "low-carb-vs-low-fat-meta-analyse",
     title: "Low-Carb vs. Low-Fat: Was ist besser zum Abnehmen? (Meta-Analyse)",
     description:
-      "Meta-Analyse (2015) zu RCTs: Low-Carb (≤120 g/Tag) vs. Low-Fat (≤30% Fett). Praxis-Fazit: Adhaerenz und Kalorienbilanz sind meist der groessere Hebel.",
+      "Meta-Analyse (2015) zu RCTs: Low-Carb (≤120 g/Tag) vs. Low-Fat (≤30% Fett). Praxis-Fazit: Adhaerenz und Kalorienbilanz sind meist der grössere Hebel.",
     tags: ["Abnehmen", "Kalorien", "Meta-Analyse", "Ernaehrung"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -204,8 +204,8 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "schnell-vs-langsam-abnehmen-studie",
     title: "Schnell vs. langsam abnehmen: was ist besser? (Studie)",
     description:
-      "Randomisierte Studie (2017): 5% Gewichtsverlust in 5 Wochen vs 15 Wochen. Beide verbessern Werte; langsam kann Koerperzusammensetzung beguenstigen, schnell zeigte teils staerkere metabolische Effekte.",
-    tags: ["Abnehmen", "Studie", "Koerperzusammensetzung", "Stoffwechsel"],
+      "Randomisierte Studie (2017): 5% Gewichtsverlust in 5 Wochen vs 15 Wochen. Beide verbessern Werte; langsam kann Körperzusammensetzung begünstigen, schnell zeigte teils staerkere metabolische Effekte.",
+    tags: ["Abnehmen", "Studie", "Körperzusammensetzung", "Stoffwechsel"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -223,7 +223,7 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "schlaf-verlaengern-weniger-kalorien-rct",
     title: "Mehr Schlaf, weniger Kalorien: Sleep-Extension RCT",
     description:
-      "Randomisierte Studie (JAMA Intern Med, 2022): Schlafdauer +~1.2 h/Nacht durch Schlafhygiene-Coaching; Energieaufnahme −270 kcal/Tag vs Kontrolle – ohne Diaetvorgaben.",
+      "Randomisierte Studie (JAMA Intern Med, 2022): Schlafdaür +~1.2 h/Nacht durch Schlafhygiene-Coaching; Energieaufnahme −270 kcal/Tag vs Kontrolle – ohne Diaetvorgaben.",
     tags: ["Schlaf", "Abnehmen", "Studie", "Kalorien"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -240,7 +240,7 @@ export const articlesMeta: ArticleMeta[] = [
   },
   {
     slug: "aerobes-training-abnehmen-dosis-wirkung-meta-analyse",
-    title: "Ausdauertraining zum Abnehmen: Dosis-Wirkung (Meta-Analyse)",
+    title: "Ausdaürtraining zum Abnehmen: Dosis-Wirkung (Meta-Analyse)",
     description:
       "Dose-Response Meta-Analyse (2024) mit 116 RCTs: pro +30 Min/Woche aerobes Training −0.52 kg Gewicht und −0.56 cm Taille im Mittel. 150 Min/Woche als sinnvoller Zielwert.",
     tags: ["Training", "Abnehmen", "Meta-Analyse", "Bewegung"],
@@ -277,9 +277,9 @@ export const articlesMeta: ArticleMeta[] = [
   },
   {
     slug: "high-protein-diet-abnehmen-mechanismen-uebersicht",
-    title: "High-Protein Diet: Mechanismen & Evidenz fuer Gewichtsverlust",
+    title: "High-Protein Diet: Mechanismen & Evidenz für Gewichtsverlust",
     description:
-      "Uebersicht (2020): Proteinreiche Ernaehrung kann Abnehmen unterstuetzen (Sattigungshormone, DIT) und fettfreie Masse eher erhalten. Laengere Trials (6–12 Monate) berichten auch weniger Regain.",
+      "Übersicht (2020): Proteinreiche Ernaehrung kann Abnehmen unterstützen (Sattigungshormone, DIT) und fettfreie Masse eher erhalten. Laengere Trials (6–12 Monate) berichten auch weniger Regain.",
     tags: ["Protein", "Abnehmen", "Ernaehrung", "Review"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -314,9 +314,9 @@ export const articlesMeta: ArticleMeta[] = [
   },
   {
     slug: "calerie-studie-design-25-prozent-kalorienrestriktion",
-    title: "CALERIE: 25% Kalorienrestriktion ueber 2 Jahre (Design & Methoden)",
+    title: "CALERIE: 25% Kalorienrestriktion über 2 Jahre (Design & Methoden)",
     description:
-      "Design-&-Methods Paper (2011): Multi-Center RCT mit 220 nicht-adipoesen Erwachsenen (BMI 22–<28), 2 Jahre 25% Kalorienrestriktion. Fokus: Interventions-Mechanik (Training, Tools, Feedback, Toolbox).",
+      "Design-&-Methods Paper (2011): Multi-Center RCT mit 220 nicht-adipösen Erwachsenen (BMI 22–<28), 2 Jahre 25% Kalorienrestriktion. Fokus: Interventions-Mechanik (Training, Tools, Feedback, Toolbox).",
     tags: ["Kalorien", "Studie", "Verhalten", "Ernaehrung"],
     publishedAt: "2025-12-22",
     readingTime: 7,
@@ -372,7 +372,7 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "app-self-monitoring-adhaerenz-gewichtsverlust",
     title: "Tracking in Apps: Konsistenz schlaegt Perfektion (Studie)",
     description:
-      "Studie (2021): Bei App-basiertem Ernaehrungs-Tracking waren Konsistenz und Frequenz mit Gewichtsverlust assoziiert – Vollstaendigkeit weniger. Praxis: lieber regelmaessig loggen als perfekt.",
+      "Studie (2021): Bei App-basiertem Ernaehrungs-Tracking waren Konsistenz und Freqünz mit Gewichtsverlust assoziiert – Vollstaendigkeit weniger. Praxis: lieber regelmaessig loggen als perfekt.",
     tags: ["Tracking", "App", "Abnehmen", "Studie"],
     publishedAt: "2025-12-22",
     readingTime: 5,
@@ -441,7 +441,7 @@ export const articlesMeta: ArticleMeta[] = [
   },
 ];
 
-// Helper: Alle Artikel-Slugs (fuer getStaticPaths)
+// Helper: Alle Artikel-Slugs (für getStaticPaths)
 export function getAllSlugs(): string[] {
   return articlesMeta.map((a) => a.slug);
 }
@@ -470,7 +470,7 @@ export function getAllTags(): string[] {
   return Array.from(tags).sort();
 }
 
-// Helper: Artikel-Content laden (async, fuer Detailseite)
+// Helper: Artikel-Content laden (async, für Detailseite)
 // Nutzt import.meta.glob um Markdown-Dateien zu laden
 const articleModules = import.meta.glob<{ default: string }>(
   "./articles/*.md",

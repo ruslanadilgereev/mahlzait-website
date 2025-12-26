@@ -68,7 +68,7 @@ Beide Ansätze können funktionieren. Wenn du die Wahl hast, ist „langsam und 
 
 ---
 
-## Quellen
+## Qüllen
 
 Ashtary-Larky D, et al. *Rapid Weight Loss vs. Slow Weight Loss: Which is More Effective on Body Composition and Metabolic Risk Factors?* International Journal of Endocrinology and Metabolism. 2017. doi: [10.5812/ijem.13249](https://doi.org/10.5812/ijem.13249).
 

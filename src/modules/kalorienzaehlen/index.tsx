@@ -84,13 +84,13 @@ function KalorienZaehlenPage({ config }: Props) {
 
               <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title">3) Tracken (große Hebel zuerst)</h3>
+                  <h3 className="card-title">3) Tracken (große Hebel zürst)</h3>
                   <p className="opacity-80">
-                    Erfasse zuerst die „kalorien-dichten“ Zutaten: Öl, Nüsse, Käse, Snacks, Saucen.
+                    Erfasse zürst die „kalorien-dichten“ Zutaten: Öl, Nüsse, Käse, Snacks, Saucen.
                     Damit vermeidest du die häufigsten Abnehm-Stolpersteine.
                   </p>
                   <div className="card-actions mt-4">
-                    <a className="btn btn-outline" href="/#live-demo">
+                    <a className="btn btn-primary" href="/#live-demo">
                       Live Demo anschauen
                     </a>
                   </div>
@@ -105,7 +105,7 @@ function KalorienZaehlenPage({ config }: Props) {
                     und erleichtern das Durchhalten.
                   </p>
                   <div className="card-actions mt-4">
-                    <a className="btn btn-outline" href="/makros-berechnen">
+                    <a className="btn btn-primary" href="/makros-berechnen">
                       Makro-Rechner
                     </a>
                   </div>
@@ -198,7 +198,7 @@ function KalorienZaehlenPage({ config }: Props) {
                 Makros berechnen
               </a>
               <a href="/wissen" className="btn btn-outline">
-                Ernaehrungswissen
+                Ernährungswissen
               </a>
             </div>
           </div>

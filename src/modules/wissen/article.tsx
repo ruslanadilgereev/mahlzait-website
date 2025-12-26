@@ -64,7 +64,7 @@ function ArticlePage({ config, article, content }: Props) {
 
           {/* Meta */}
           <div className="flex flex-wrap items-center gap-4 text-sm opacity-70 mb-8">
-            <span>Veroeffentlicht: {formatDate(article.publishedAt)}</span>
+            <span>Veröffentlicht: {formatDate(article.publishedAt)}</span>
             {article.updatedAt && (
               <span>Aktualisiert: {formatDate(article.updatedAt)}</span>
             )}
@@ -141,8 +141,8 @@ function ArticlePage({ config, article, content }: Props) {
             </svg>
             <span className="text-sm">
               Dieser Artikel dient der allgemeinen Information und ersetzt keine
-              aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich
-              bitte an einen Arzt oder eine Ernaehrungsfachkraft.
+              ärztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich
+              bitte an einen Arzt oder eine Ernährungsfachkraft.
             </span>
           </div>
         </article>
@@ -154,7 +154,7 @@ function ArticlePage({ config, article, content }: Props) {
               Erkenntnisse in die Praxis umsetzen?
             </h2>
             <p className="opacity-90 max-w-lg mx-auto mb-6">
-              Mit Mahlzait trackst du deine Ernaehrung einfach und schnell -
+              Mit Mahlzait trackst du deine Ernährung einfach und schnell -
               damit du deine Ziele erreichst.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

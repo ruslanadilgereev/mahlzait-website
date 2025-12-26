@@ -28,7 +28,7 @@ function MakrosPage({ config }: Props) {
   const [result, setResult] = useState<MacroResult | null>(null);
 
   const calculateMacros = () => {
-    // Mifflin-St Jeor Formel fuer BMR
+    // Mifflin-St Jeor Formel für BMR
     let bmr: number;
     if (gender === "male") {
       bmr = 10 * weight + 6.25 * height - 5 * age + 5;
@@ -58,13 +58,13 @@ function MakrosPage({ config }: Props) {
 
     switch (goal) {
       case "lose":
-        // Hoeherer Protein-Anteil beim Abnehmen
+        // Höherer Protein-Anteil beim Abnehmen
         proteinPercent = 30;
         fatPercent = 30;
         carbsPercent = 40;
         break;
       case "gain":
-        // Mehr Carbs fuer Muskelaufbau
+        // Mehr Carbs für Muskelaufbau
         proteinPercent = 25;
         fatPercent = 25;
         carbsPercent = 50;
@@ -176,7 +176,7 @@ function MakrosPage({ config }: Props) {
                       checked={gender === "male"}
                       onChange={() => setGender("male")}
                     />
-                    <span className="label-text">Maennlich</span>
+                    <span className="label-text">Männlich</span>
                   </label>
                   <label className="label cursor-pointer gap-2">
                     <input
@@ -208,7 +208,7 @@ function MakrosPage({ config }: Props) {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text font-semibold">Groesse (cm)</span>
+                    <span className="label-text font-semibold">Grösse (cm)</span>
                   </label>
                   <input
                     type="number"
@@ -237,7 +237,7 @@ function MakrosPage({ config }: Props) {
               {/* Activity Level */}
               <div className="form-control mb-6">
                 <label className="label">
-                  <span className="label-text font-semibold">Aktivitaetslevel</span>
+                  <span className="label-text font-semibold">Aktivitätslevel</span>
                 </label>
                 <select
                   className="select select-bordered w-full"
@@ -262,7 +262,7 @@ function MakrosPage({ config }: Props) {
                   <div className="divider">Deine Makros</div>
 
                   <div className="text-center mb-4">
-                    <p className="text-sm opacity-70">Taegliches Kalorienziel</p>
+                    <p className="text-sm opacity-70">Tägliches Kalorienziel</p>
                     <p className="text-4xl font-bold text-primary">{result.calories} kcal</p>
                   </div>
 
@@ -344,7 +344,7 @@ function MakrosPage({ config }: Props) {
                     <div>
                       <p className="font-semibold">Tracke deine Makros mit Mahlzait!</p>
                       <p className="text-sm">
-                        Die App zeigt dir Protein, Carbs und Fett fuer jede Mahlzeit.
+                        Die App zeigt dir Protein, Carbs und Fett für jede Mahlzeit.
                       </p>
                     </div>
                   </div>
@@ -358,7 +358,7 @@ function MakrosPage({ config }: Props) {
         <section className="bg-base-200 py-16">
           <div className="max-w-screen-lg mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Was sind Makronaehrstoffe?
+              Was sind Makronährstoffe?
             </h2>
             <div className="grid gap-6 md:grid-cols-3">
               <div className="card bg-base-100 shadow-xl">
@@ -366,11 +366,11 @@ function MakrosPage({ config }: Props) {
                   <div className="badge badge-error mb-2">Protein</div>
                   <h3 className="card-title">4 kcal pro Gramm</h3>
                   <p className="opacity-80">
-                    Baustein fuer Muskeln, Haut, Haare. Wichtig fuer Saettigung und Erhalt der
-                    Muskelmasse beim Abnehmen. Empfehlung: 1,6-2,2g pro kg Koerpergewicht.
+                    Baustein für Muskeln, Haut, Haare. Wichtig für Sättigung und Erhalt der
+                    Muskelmasse beim Abnehmen. Empfehlung: 1,6-2,2g pro kg Körpergewicht.
                   </p>
                   <div className="mt-2">
-                    <p className="text-xs opacity-60">Gute Quellen:</p>
+                    <p className="text-xs opacity-60">Gute Qüllen:</p>
                     <p className="text-sm">Fleisch, Fisch, Eier, Quark, Huelsenfruechte</p>
                   </div>
                 </div>
@@ -381,12 +381,12 @@ function MakrosPage({ config }: Props) {
                   <div className="badge badge-warning mb-2">Kohlenhydrate</div>
                   <h3 className="card-title">4 kcal pro Gramm</h3>
                   <p className="opacity-80">
-                    Hauptenergiequelle fuer Gehirn und Muskeln. Besonders wichtig fuer Sport und
-                    Leistung. Qualitaet zaehlt: komplexe Carbs bevorzugen.
+                    Hauptenergieqülle für Gehirn und Muskeln. Besonders wichtig für Sport und
+                    Leistung. Qualität zählt: komplexe Carbs bevorzugen.
                   </p>
                   <div className="mt-2">
-                    <p className="text-xs opacity-60">Gute Quellen:</p>
-                    <p className="text-sm">Vollkorn, Kartoffeln, Reis, Obst, Gemuese</p>
+                    <p className="text-xs opacity-60">Gute Qüllen:</p>
+                    <p className="text-sm">Vollkorn, Kartoffeln, Reis, Obst, Gemüse</p>
                   </div>
                 </div>
               </div>
@@ -396,12 +396,12 @@ function MakrosPage({ config }: Props) {
                   <div className="badge badge-info mb-2">Fett</div>
                   <h3 className="card-title">9 kcal pro Gramm</h3>
                   <p className="opacity-80">
-                    Wichtig fuer Hormone, Gehirnfunktion und Vitaminaufnahme. Nicht unter 0,5g pro
-                    kg Koerpergewicht gehen. Ungesaettigte Fette bevorzugen.
+                    Wichtig für Hormone, Gehirnfunktion und Vitaminaufnahme. Nicht unter 0,5g pro
+                    kg Körpergewicht gehen. Ungesättigte Fette bevorzugen.
                   </p>
                   <div className="mt-2">
-                    <p className="text-xs opacity-60">Gute Quellen:</p>
-                    <p className="text-sm">Nuesse, Avocado, Olivenoel, fetter Fisch</p>
+                    <p className="text-xs opacity-60">Gute Qüllen:</p>
+                    <p className="text-sm">Nüsse, Avocado, Olivenöl, fetter Fisch</p>
                   </div>
                 </div>
               </div>
@@ -430,7 +430,7 @@ function MakrosPage({ config }: Props) {
                     </li>
                     <li className="flex gap-2">
                       <span className="font-bold">30%</span>
-                      <span>Fett (Saettigung)</span>
+                      <span>Fett (Sättigung)</span>
                     </li>
                   </ul>
                   <p className="text-sm mt-4 opacity-80">
@@ -457,7 +457,7 @@ function MakrosPage({ config }: Props) {
                     </li>
                   </ul>
                   <p className="text-sm mt-4 opacity-80">
-                    Ausgewogene Verteilung fuer langfristige Gesundheit.
+                    Ausgewogene Verteilung für langfristige Gesundheit.
                   </p>
                 </div>
               </div>
@@ -480,7 +480,7 @@ function MakrosPage({ config }: Props) {
                     </li>
                   </ul>
                   <p className="text-sm mt-4 opacity-80">
-                    Mehr Carbs liefern Energie fuer intensives Training.
+                    Mehr Carbs liefern Energie für intensives Training.
                   </p>
                 </div>
               </div>
@@ -493,7 +493,7 @@ function MakrosPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Makros tracken mit Mahlzait</h2>
             <p className="opacity-90 max-w-xl mx-auto mb-8">
-              Die App zeigt dir Protein, Kohlenhydrate und Fett fuer jede Mahlzeit. Mit KI-Logging
+              Die App zeigt dir Protein, Kohlenhydrate und Fett für jede Mahlzeit. Mit KI-Logging
               trackst du in Sekunden - per Foto oder Text.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -530,7 +530,7 @@ function MakrosPage({ config }: Props) {
               <a href="/#features" className="btn btn-outline">
                 Alle Features
               </a>
-              <a href="/#live-demo" className="btn btn-outline">
+              <a href="/#live-demo" className="btn btn-primary">
                 Live Demo
               </a>
             </div>

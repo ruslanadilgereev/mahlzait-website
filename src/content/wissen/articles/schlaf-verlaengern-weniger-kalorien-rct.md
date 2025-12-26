@@ -65,7 +65,7 @@ Schlaf verlängern kann **messbar Kalorien senken** – ganz ohne explizite Diä
 
 ---
 
-## Quellen
+## Qüllen
 
 Tasali E, et al. *Effect of Sleep Extension on Objectively Assessed Energy Intake Among Adults With Overweight in Real-life Settings.* JAMA Internal Medicine. 2022. doi: [10.1001/jamainternmed.2021.8098](https://doi.org/10.1001/jamainternmed.2021.8098). ClinicalTrials.gov: [NCT02253368](https://clinicaltrials.gov/study/NCT02253368).
 

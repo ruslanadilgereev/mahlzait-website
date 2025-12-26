@@ -128,7 +128,7 @@ function AbnehmenAppPage({ config }: Props) {
                 Kalorien zählen (Anleitung)
               </a>
               <a href="/wissen" className="btn btn-outline">
-                Ernaehrungswissen
+                Ernährungswissen
               </a>
             </div>
           </div>

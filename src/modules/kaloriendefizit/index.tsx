@@ -111,7 +111,7 @@ function KaloriendefizitPage({ config }: Props) {
                       checked={gender === "male"}
                       onChange={() => setGender("male")}
                     />
-                    <span className="label-text">Maennlich</span>
+                    <span className="label-text">Männlich</span>
                   </label>
                   <label className="label cursor-pointer gap-2">
                     <input
@@ -144,7 +144,7 @@ function KaloriendefizitPage({ config }: Props) {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text font-semibold">Groesse</span>
+                    <span className="label-text font-semibold">Grösse</span>
                     <span className="label-text-alt">{height} cm</span>
                   </label>
                   <input
@@ -162,7 +162,7 @@ function KaloriendefizitPage({ config }: Props) {
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text font-semibold">Aktuelles Gewicht</span>
+                    <span className="label-text font-semibold">Aktülles Gewicht</span>
                     <span className="label-text-alt">{currentWeight} kg</span>
                   </label>
                   <input
@@ -202,7 +202,7 @@ function KaloriendefizitPage({ config }: Props) {
               {/* Activity Level */}
               <div className="form-control mb-4">
                 <label className="label">
-                  <span className="label-text font-semibold">Aktivitaetslevel</span>
+                  <span className="label-text font-semibold">Aktivitätslevel</span>
                 </label>
                 <select
                   className="select select-bordered w-full"
@@ -220,7 +220,7 @@ function KaloriendefizitPage({ config }: Props) {
               {/* Deficit Level */}
               <div className="form-control mb-6">
                 <label className="label">
-                  <span className="label-text font-semibold">Gewuenschtes Defizit</span>
+                  <span className="label-text font-semibold">Gewünschtes Defizit</span>
                 </label>
                 <div className="grid grid-cols-2 gap-2">
                   {deficitOptions.map((option) => (
@@ -259,7 +259,7 @@ function KaloriendefizitPage({ config }: Props) {
 
                   <div className="stats stats-vertical lg:stats-horizontal shadow w-full">
                     <div className="stat">
-                      <div className="stat-title">Taegliches Ziel</div>
+                      <div className="stat-title">Tägliches Ziel</div>
                       <div className="stat-value text-primary">{result.targetCalories}</div>
                       <div className="stat-desc">kcal pro Tag</div>
                     </div>
@@ -280,7 +280,7 @@ function KaloriendefizitPage({ config }: Props) {
                           <p className="text-xl font-bold">{result.weeklyLoss} kg</p>
                         </div>
                         <div>
-                          <p className="text-sm opacity-70">Dauer bis Zielgewicht</p>
+                          <p className="text-sm opacity-70">Daür bis Zielgewicht</p>
                           <p className="text-xl font-bold">{result.weeksToGoal} Wochen</p>
                         </div>
                       </div>
@@ -308,7 +308,7 @@ function KaloriendefizitPage({ config }: Props) {
                       </svg>
                       <span>
                         Ein Defizit von {result.deficit} kcal ist aggressiv. Achte auf ausreichend
-                        Protein und hoere auf deinen Koerper.
+                        Protein und höre auf deinen Körper.
                       </span>
                     </div>
                   )}
@@ -364,8 +364,8 @@ function KaloriendefizitPage({ config }: Props) {
                   <div className="text-4xl text-warning mb-2">750</div>
                   <h3 className="card-title">Obere Grenze</h3>
                   <p className="opacity-80">
-                    750 kcal Defizit ist fuer kurze Phasen vertretbar (z.B. 4-8 Wochen). Achte auf
-                    genug Protein und Mikro-naehrstoffe.
+                    750 kcal Defizit ist für kurze Phasen vertretbar (z.B. 4-8 Wochen). Achte auf
+                    genug Protein und Mikro-nährstoffe.
                   </p>
                 </div>
               </div>
@@ -375,8 +375,8 @@ function KaloriendefizitPage({ config }: Props) {
                   <div className="text-4xl text-error mb-2">1000+</div>
                   <h3 className="card-title">Vorsicht</h3>
                   <p className="opacity-80">
-                    Defizite ueber 1000 kcal koennen zu Muskelabbau, Naehrstoffmangel und Jo-Jo
-                    Effekt fuehren. Nur unter aerztlicher Aufsicht.
+                    Defizite über 1000 kcal können zu Muskelabbau, Nährstoffmangel und Jo-Jo
+                    Effekt führen. Nur unter ärztlicher Aufsicht.
                   </p>
                 </div>
               </div>
@@ -388,29 +388,29 @@ function KaloriendefizitPage({ config }: Props) {
         <section className="py-16">
           <div className="max-w-screen-lg mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Haeufige Fehler beim Abnehmen
+              Häufige Fehler beim Abnehmen
             </h2>
             <div className="grid gap-4 md:grid-cols-2 max-w-3xl mx-auto">
               {[
                 {
-                  mistake: "Zu hohes Defizit waehlen",
+                  mistake: "Zu hohes Defizit wählen",
                   solution:
                     "Start mit 300-500 kcal Defizit. Lieber langsam und nachhaltig als schnell mit Jo-Jo.",
                 },
                 {
                   mistake: "Kalorien nicht tracken",
                   solution:
-                    "Die meisten Menschen unterschaetzen ihre Kalorienzufuhr um 20-40%. Tracking schafft Klarheit.",
+                    "Die meisten Menschen unterschätzen ihre Kalorienzufuhr um 20-40%. Tracking schafft Klarheit.",
                 },
                 {
                   mistake: "Zu wenig Protein essen",
                   solution:
-                    "1,6-2,2g Protein pro kg Koerpergewicht schuetzt Muskelmasse im Defizit.",
+                    "1,6-2,2g Protein pro kg Körpergewicht schuetzt Muskelmasse im Defizit.",
                 },
                 {
                   mistake: "Keine Geduld haben",
                   solution:
-                    "Gewicht schwankt taeglich. Beurteile Fortschritt ueber 2-4 Wochen, nicht taeglich.",
+                    "Gewicht schwankt täglich. Beurteile Fortschritt über 2-4 Wochen, nicht täglich.",
                 },
               ].map((item, i) => (
                 <div key={i} className="card bg-base-100 shadow">
@@ -446,7 +446,7 @@ function KaloriendefizitPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Starte dein Defizit mit Mahlzait</h2>
             <p className="opacity-90 max-w-xl mx-auto mb-8">
-              Setze dein Kalorienziel in der App und tracke muehleos. Mit KI-Logging loggst du
+              Setze dein Kalorienziel in der App und tracke mühleos. Mit KI-Logging loggst du
               Mahlzeiten in Sekunden - per Foto oder Text.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -483,7 +483,7 @@ function KaloriendefizitPage({ config }: Props) {
               <a href="/#features" className="btn btn-outline">
                 Alle Features
               </a>
-              <a href="/#live-demo" className="btn btn-outline">
+              <a href="/#live-demo" className="btn btn-primary">
                 Live Demo
               </a>
             </div>

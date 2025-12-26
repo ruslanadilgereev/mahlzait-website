@@ -22,7 +22,7 @@ Die NWCR ist eine Registry von Menschen, die grosse Gewichtsverluste langfristig
 - Gewicht
 - Aktivität
 - Ernährungsverhalten
-- Self-Monitoring (z.B. Wiegefrequenz)
+- Self-Monitoring (z.B. Wiegefreqünz)
 
 erhoben und analysiert.
 
@@ -67,7 +67,7 @@ Die NWCR-Daten zeigen: Gewicht halten über 10 Jahre ist möglich, aber es brauc
 
 ---
 
-## Quellen
+## Qüllen
 
 Thomas J, et al. *Weight-Loss Maintenance for 10 Years in the National Weight Control Registry.* American Journal of Preventive Medicine. 2014. doi: [10.1016/j.amepre.2013.08.019](https://doi.org/10.1016/j.amepre.2013.08.019).
 

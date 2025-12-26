@@ -35,13 +35,13 @@ const templateConfig: TemplateConfig = {
       { href: "/#how-it-works", title: "So funktioniert's" },
       { href: "/#pricing", title: "Preise" },
     ],
-    // SEO-Links fuer Calculator-Seiten
+    // SEO-Links für Calculator-Seiten
     calculatorLinks: [
       { href: "/kalorienbedarf-berechnen", title: "Kalorienbedarf berechnen" },
       { href: "/kaloriendefizit-berechnen", title: "Kaloriendefizit berechnen" },
       { href: "/makros-berechnen", title: "Makros berechnen" },
     ],
-    // SEO-Links fuer App-Landingpages und Info
+    // SEO-Links für App-Landingpages und Info
     appLinks: [
       { href: "/#faq", title: "FAQ" },
       { href: "/team", title: "Team" },
@@ -184,7 +184,7 @@ const templateConfig: TemplateConfig = {
         {
           title: "Rezepte & YouTube",
           subtitle:
-            "Erstelle Rezepte aus YouTube-Videos, manuell oder per Suche – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
+            "Erstelle Rezepte aus YouTube-Videos, manüll oder per Suche – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
           icon: "/3D/video-camera-front-color.webp",
           screenshot: "/screenshots/rezept.webp",
         },
@@ -224,7 +224,7 @@ const templateConfig: TemplateConfig = {
           screenshot: "/screenshots/suche.webp",
         },
         {
-          title: "Manuelle Eingabe",
+          title: "Manülle Eingabe",
           subtitle:
             "Erstelle eigene Einträge mit individuellen Portionsgrößen und Nährwerten – flexibel und präzise für jede Mahlzeit",
           icon: "/3D/pencil-front-color.webp",
@@ -237,44 +237,44 @@ const templateConfig: TemplateConfig = {
       title: "Häufig gestellte Fragen",
       qa: [
         {
-          question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
+          qüstion: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
-            "Ja, Mahlzait ist kostenlos! Die App bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makronährstoffen ohne Abo-Zwang. Du kannst Lebensmittel suchen, per Barcode scannen, manuell eingeben und Rezepte erstellen – komplett gratis. Für unbegrenzte KI-Features (AI Meal Logging, KI-Vorschläge, YouTube-Rezept-Import) gibt es optional Mahlzait Pro ab 4,99 € pro Monat oder 29,99 € pro Jahr.",
+            "Ja, Mahlzait ist kostenlos! Die App bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makronährstoffen ohne Abo-Zwang. Du kannst Lebensmittel suchen, per Barcode scannen, manüll eingeben und Rezepte erstellen – komplett gratis. Für unbegrenzte KI-Features (AI Meal Logging, KI-Vorschläge, YouTube-Rezept-Import) gibt es optional Mahlzait Pro ab 4,99 € pro Monat oder 29,99 € pro Jahr.",
         },
         {
-          question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
+          qüstion: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
           answer:
             "Mit dem KI-Logging von Mahlzait kannst du Mahlzeiten per Foto oder Text erfassen – einfach schreiben 'Hab grad Pizza gegessen' oder ein Foto hochladen. Die KI erkennt deutsche und internationale Lebensmittel, analysiert die Nährwerte und schlägt passende Einträge vor. Du kannst Portionsgrößen anpassen und Vorschläge korrigieren – so behältst du volle Kontrolle über dein Kalorienzählen.",
         },
         {
-          question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
+          qüstion: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
           answer:
-            "Der Barcode-Scanner von Mahlzait nutzt eine umfangreiche Lebensmitteldatenbank mit hunderttausenden Produkten. Nach dem Scannen werden Kalorien, Makros (Protein, Kohlenhydrate, Fett) und Nährwerte automatisch übernommen. Du kannst die Portionsgröße anpassen. Falls ein Produkt fehlt, kannst du es manuell hinzufügen und für andere Nutzer verfügbar machen.",
+            "Der Barcode-Scanner von Mahlzait nutzt eine umfangreiche Lebensmitteldatenbank mit hunderttausenden Produkten. Nach dem Scannen werden Kalorien, Makros (Protein, Kohlenhydrate, Fett) und Nährwerte automatisch übernommen. Du kannst die Portionsgröße anpassen. Falls ein Produkt fehlt, kannst du es manüll hinzufügen und für andere Nutzer verfügbar machen.",
         },
         {
-          question: "Kann ich eigene Rezepte erstellen und speichern?",
+          qüstion: "Kann ich eigene Rezepte erstellen und speichern?",
           answer:
-            "Ja! Mit Mahlzait kannst du eigene Rezepte erstellen, manuell eingeben oder direkt aus YouTube-Videos importieren. Speichere deine Lieblingsgerichte und logge sie mit einem Klick. Du kannst Rezepte auch per Link mit Freunden teilen. Perfekt für wiederkehrende Mahlzeiten wie Frühstück oder Meal Prep.",
+            "Ja! Mit Mahlzait kannst du eigene Rezepte erstellen, manüll eingeben oder direkt aus YouTube-Videos importieren. Speichere deine Lieblingsgerichte und logge sie mit einem Klick. Du kannst Rezepte auch per Link mit Freunden teilen. Perfekt für wiederkehrende Mahlzeiten wie Frühstück oder Meal Prep.",
         },
         {
-          question: "Unterstützt Mahlzait Apple Health und Google Fit Integration?",
+          qüstion: "Unterstützt Mahlzait Apple Health und Google Fit Integration?",
           answer:
             "Ja, Mahlzait synchronisiert sich mit Apple Health (iOS) und Google Fit (Android). Die App übernimmt automatisch Schritte, verbrannte Kalorien und Gewichtsdaten aus deinen Gesundheits-Apps und passt dein Kalorienziel entsprechend an. So hast du alle Fitness- und Ernährungsdaten zentral an einem Ort.",
         },
         {
-          question: "Wie viele Kalorien sollte ich essen zum Abnehmen?",
+          qüstion: "Wie viele Kalorien sollte ich essen zum Abnehmen?",
           answer:
             "Mahlzait berechnet deinen individuellen Kalorienbedarf basierend auf Alter, Geschlecht, Größe, Gewicht und Aktivitätslevel. Zum gesunden Abnehmen empfiehlt die App ein moderates Kaloriendefizit von 300-500 kcal pro Tag, was etwa 0,5 kg Gewichtsverlust pro Woche entspricht. Die KI-Vorschläge helfen dir, deine Ziele zu erreichen ohne zu hungern.",
         },
         {
-          question: "Was macht Mahlzait besser als andere Kalorienzähler Apps?",
+          qüstion: "Was macht Mahlzait besser als andere Kalorienzähler Apps?",
           answer:
             "Mahlzait kombiniert klassisches Food-Tracking mit KI-Power: Mahlzeiten per Foto oder Chat loggen (statt mühsames Tippen), KI-Vorschläge wenn du nicht weißt was du essen sollst, YouTube-Rezept-Import, Barcode-Scanner, Offline-Funktion und Health-Integration. Alles kostenlos nutzbar, ohne Abo-Zwang. Die App ist auf Deutsch optimiert und erkennt deutsche Lebensmittel perfekt.",
         },
         {
-          question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
+          qüstion: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
           answer:
-            "Ja! Mahlzait bietet praktische Homescreen-Widgets für iOS und Android. Das Übersichts-Widget zeigt dir deine täglichen Kalorien, Makros und Fortschritte direkt auf dem Homescreen. Zusätzlich gibt es Quick-Launch-Widgets für alle 4 Logging-Methoden: Direktzugriff auf Lebensmittel-Suche, Barcode-Scanner, manuelle Eingabe oder KI-Logging – einfach antippen und sofort loslegen, ohne die App zu öffnen.",
+            "Ja! Mahlzait bietet praktische Homescreen-Widgets für iOS und Android. Das Übersichts-Widget zeigt dir deine täglichen Kalorien, Makros und Fortschritte direkt auf dem Homescreen. Zusätzlich gibt es Quick-Launch-Widgets für alle 4 Logging-Methoden: Direktzugriff auf Lebensmittel-Suche, Barcode-Scanner, manülle Eingabe oder KI-Logging – einfach antippen und sofort loslegen, ohne die App zu öffnen.",
         },
       ],
     },
@@ -301,8 +301,8 @@ const templateConfig: TemplateConfig = {
           title: "Kostenlos",
           price: "0 €",
           rows: [
-            "Mahlzeiten loggen (Suche, Barcode, manuell)",
-            "Rezepte erstellen & teilen (manuell)",
+            "Mahlzeiten loggen (Suche, Barcode, manüll)",
+            "Rezepte erstellen & teilen (manüll)",
             "Kalorien & Makros tracken",
             "Gewichtsverlauf & Kalender",
             "Health-Integration",
@@ -406,7 +406,6 @@ Dabei können insbesondere folgende Daten verarbeitet werden:
 - ungefähre Standortinformationen (abgeleitet),
 - IP‑Adresse (in der Regel gekürzt/anonymisiert, soweit konfiguriert).
 
-**Kennung (Beispiel):** G‑ZEGRW1C5EF  
 **Zweck:** Reichweitenmessung und Verbesserung der Website.  
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
 **Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.
@@ -416,7 +415,6 @@ Dabei können insbesondere folgende Daten verarbeitet werden:
 Wenn Sie zustimmen, nutzen wir Microsoft Clarity (Microsoft Corporation) zur Analyse der Website‑Nutzung (Heatmaps, Session‑Replays).
 Dabei können Interaktionen auf der Website (z.B. Scrollen, Klicks) verarbeitet werden. Clarity bietet Funktionen zum Maskieren sensibler Inhalte; dennoch kann es zu Aufzeichnungen von Eingaben/Interaktionen kommen.
 
-**Kennung (Beispiel):** ud4zp58j1r  
 **Zweck:** UX‑Optimierung und Fehleranalyse.  
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
 **Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.
@@ -426,11 +424,8 @@ Dabei können Interaktionen auf der Website (z.B. Scrollen, Klicks) verarbeitet 
 Wenn Sie zustimmen, setzen wir Marketing‑Tracking ein (z.B. Meta Pixel, Google Ads Conversion Tracking), um die Wirksamkeit von Werbekampagnen zu messen.
 Dabei können u.a. verarbeitet werden:
 - Ereignisse (z.B. Klick auf App‑Store‑Link),
-- technische Identifier (z.B. Cookie‑/Pixel‑IDs),
-- ggf. Kampagnenparameter (utm_*, gclid, fbclid).
+- technische Identifier (z.B. Cookie‑/Pixel‑IDs).
 
-**Meta Pixel (Beispiel):** 1159405849657763  
-**Google Ads (Beispiel):** AW‑17308112458  
 **Zweck:** Kampagnenmessung, Attribution, Marketing‑Optimierung.  
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
 **Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.

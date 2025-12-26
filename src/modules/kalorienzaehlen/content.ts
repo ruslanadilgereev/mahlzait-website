@@ -19,7 +19,7 @@ export const kalorienZaehlenKeyPoints: { title: string; text: string }[] = [
   },
   {
     title: "Protein & Portionsgrößen",
-    text: "Protein hilft bei Sättigung und Muskelerhalt. Portionsgrößen (v.a. Öle/Snacks) sind die häufigste Fehlerquelle.",
+    text: "Protein hilft bei Sättigung und Muskelerhalt. Portionsgrößen (v.a. Öle/Snacks) sind die häufigste Fehlerqülle.",
   },
 ];
 
@@ -34,7 +34,7 @@ export const kalorienZaehlenHowToSteps: { name: string; text: string }[] = [
   },
   {
     name: "Mahlzeiten tracken (einfach halten)",
-    text: "Logge Essen und Getränke. Fokus auf die großen Kalorienquellen: Öl, Snacks, Saucen, Käse, Nüsse.",
+    text: "Logge Essen und Getränke. Fokus auf die großen Kalorienqüllen: Öl, Snacks, Saucen, Käse, Nüsse.",
   },
   {
     name: "Makros grob ausrichten",
@@ -61,18 +61,18 @@ export const kalorienZaehlenFaq: { q: string; a: string }[] = [
   },
   {
     q: "Wie kann ich Kalorien zählen, ohne ständig zu wiegen?",
-    a: "Nutze Standardportionen (Handmaß), starte mit wiederkehrenden Mahlzeiten und tracke „kalorien-dichte“ Zutaten genauer. Die App kann dir das Logging deutlich beschleunigen.",
+    a: "Nutze Standardportionen (Handmaß), starte mit wiederkehrenden Mahlzeiten und tracke „kalorien-dichte“ Zutaten genaür. Die App kann dir das Logging deutlich beschleunigen.",
   },
   {
     q: "Wie hilft Mahlzait beim Kalorien zählen?",
-    a: "Du kannst per Foto, Text oder Barcode loggen. Die KI erkennt Lebensmittel und schlägt passende Einträge vor – schneller als manuelles Suchen.",
+    a: "Du kannst per Foto, Text oder Barcode loggen. Die KI erkennt Lebensmittel und schlägt passende Einträge vor – schneller als manülles Suchen.",
   },
 ];
 
 export const kalorienZaehlenMistakes: { mistake: string; solution: string }[] = [
   {
     mistake: "Öl, Snacks und Saucen nicht tracken",
-    solution: "Gerade Öl/Nüsse/Käse sind extrem kaloriendicht. Diese Zutaten zuerst sauber erfassen.",
+    solution: "Gerade Öl/Nüsse/Käse sind extrem kaloriendicht. Diese Zutaten zürst sauber erfassen.",
   },
   {
     mistake: "Wochenenden unterschätzen",

@@ -66,7 +66,7 @@ function KalorienbedarfPage({ config }: Props) {
               Kalorienbedarf berechnen
             </h1>
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
-              Berechne deinen taeglichen Kalorienbedarf mit der wissenschaftlich fundierten
+              Berechne deinen täglichen Kalorienbedarf mit der wissenschaftlich fundierten
               Mifflin-St Jeor Formel. Erfahre, wie viele Kalorien du zum Abnehmen, Halten oder
               Zunehmen brauchst.
             </p>
@@ -91,7 +91,7 @@ function KalorienbedarfPage({ config }: Props) {
                       checked={gender === "male"}
                       onChange={() => setGender("male")}
                     />
-                    <span className="label-text">Maennlich</span>
+                    <span className="label-text">Männlich</span>
                   </label>
                   <label className="label cursor-pointer gap-2">
                     <input
@@ -125,7 +125,7 @@ function KalorienbedarfPage({ config }: Props) {
               {/* Height */}
               <div className="form-control mb-4">
                 <label className="label">
-                  <span className="label-text font-semibold">Groesse</span>
+                  <span className="label-text font-semibold">Grösse</span>
                   <span className="label-text-alt">{height} cm</span>
                 </label>
                 <input
@@ -157,7 +157,7 @@ function KalorienbedarfPage({ config }: Props) {
               {/* Activity Level */}
               <div className="form-control mb-6">
                 <label className="label">
-                  <span className="label-text font-semibold">Aktivitaetslevel</span>
+                  <span className="label-text font-semibold">Aktivitätslevel</span>
                 </label>
                 <select
                   className="select select-bordered w-full"
@@ -207,7 +207,7 @@ function KalorienbedarfPage({ config }: Props) {
                       <div className="card-body py-4">
                         <h3 className="font-bold text-info">Zum Zunehmen</h3>
                         <p className="text-2xl font-bold">{result.surplus} kcal</p>
-                        <p className="text-sm opacity-70">+300 kcal Ueberschuss = Muskelaufbau</p>
+                        <p className="text-sm opacity-70">+300 kcal Überschuss = Muskelaufbau</p>
                       </div>
                     </div>
                   </div>
@@ -251,16 +251,16 @@ function KalorienbedarfPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">Grundumsatz (BMR)</h3>
                   <p className="opacity-80">
-                    Der Grundumsatz ist die Kalorienmenge, die dein Koerper im Ruhezustand
-                    verbraucht - also fuer Atmung, Herzschlag und andere lebenswichtige Funktionen.
+                    Der Grundumsatz ist die Kalorienmenge, die dein Körper im Ruhezustand
+                    verbraucht - also für Atmung, Herzschlag und andere lebenswichtige Funktionen.
                   </p>
                   <div className="mt-4 p-4 bg-base-200 rounded-lg">
                     <p className="font-mono text-sm">
                       <strong>Mifflin-St Jeor Formel:</strong>
                       <br />
-                      Maenner: 10 x Gewicht + 6.25 x Groesse - 5 x Alter + 5
+                      Männer: 10 x Gewicht + 6.25 x Grösse - 5 x Alter + 5
                       <br />
-                      Frauen: 10 x Gewicht + 6.25 x Groesse - 5 x Alter - 161
+                      Fraün: 10 x Gewicht + 6.25 x Grösse - 5 x Alter - 161
                     </p>
                   </div>
                 </div>
@@ -270,14 +270,14 @@ function KalorienbedarfPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">Gesamtbedarf (TDEE)</h3>
                   <p className="opacity-80">
-                    Der Gesamtbedarf (Total Daily Energy Expenditure) beruecksichtigt dein
-                    Aktivitaetslevel. Je aktiver du bist, desto mehr Kalorien verbrauchst du.
+                    Der Gesamtbedarf (Total Daily Energy Expenditure) berücksichtigt dein
+                    Aktivitätslevel. Je aktiver du bist, desto mehr Kalorien verbrauchst du.
                   </p>
                   <div className="mt-4 p-4 bg-base-200 rounded-lg">
                     <p className="font-mono text-sm">
-                      <strong>TDEE = BMR x Aktivitaetsfaktor</strong>
+                      <strong>TDEE = BMR x Aktivitätsfaktor</strong>
                       <br />
-                      Faktoren: 1.2 bis 1.9 je nach Aktivitaet
+                      Faktoren: 1.2 bis 1.9 je nach Aktivität
                     </p>
                   </div>
                 </div>
@@ -290,13 +290,13 @@ function KalorienbedarfPage({ config }: Props) {
         <section className="py-16">
           <div className="max-w-screen-lg mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Haeufig gestellte Fragen
+              Häufig gestellte Fragen
             </h2>
             <div className="space-y-4 max-w-2xl mx-auto">
               {[
                 {
                   q: "Wie genau ist die Kalorienberechnung?",
-                  a: "Die Mifflin-St Jeor Formel gilt als genaueste Methode zur Schaetzung des Grundumsatzes. Individuelle Abweichungen von 10-15% sind moeglich. Beobachte dein Gewicht ueber 2-3 Wochen und passe dann an.",
+                  a: "Die Mifflin-St Jeor Formel gilt als genaüste Methode zur Schätzung des Grundumsatzes. Individuelle Abweichungen von 10-15% sind möglich. Beobachte dein Gewicht über 2-3 Wochen und passe dann an.",
                 },
                 {
                   q: "Welches Kaloriendefizit ist gesund?",
@@ -304,7 +304,7 @@ function KalorienbedarfPage({ config }: Props) {
                 },
                 {
                   q: "Muss ich jeden Tag genau diese Kalorien essen?",
-                  a: "Nein, es geht um den Durchschnitt. Du kannst auch wochenweise rechnen. Wichtig ist die Konstanz ueber Zeit.",
+                  a: "Nein, es geht um den Durchschnitt. Du kannst auch wochenweise rechnen. Wichtig ist die Konstanz über Zeit.",
                 },
                 {
                   q: "Wie tracke ich meine Kalorien am einfachsten?",
@@ -330,7 +330,7 @@ function KalorienbedarfPage({ config }: Props) {
               Jetzt Kalorien tracken mit Mahlzait
             </h2>
             <p className="opacity-90 max-w-xl mx-auto mb-8">
-              Du kennst jetzt deinen Kalorienbedarf. Mit Mahlzait trackst du deine Ernaehrung in
+              Du kennst jetzt deinen Kalorienbedarf. Mit Mahlzait trackst du deine Ernährung in
               Sekunden - per Foto, Text oder Barcode.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -367,7 +367,7 @@ function KalorienbedarfPage({ config }: Props) {
               <a href="/#features" className="btn btn-outline">
                 Alle Features
               </a>
-              <a href="/#live-demo" className="btn btn-outline">
+              <a href="/#live-demo" className="btn btn-primary">
                 Live Demo
               </a>
             </div>

@@ -17,7 +17,7 @@ Die Autoren haben eine systematische Literaturrecherche (PubMed, 1966–2014) ge
 
 - Low-Carb vs Low-Fat direkt vergleichen
 - mindestens 8 Wochen daürn
-- Uebergewicht/Adipositas adressieren
+- Übergewicht/Adipositas adressieren
 
 ---
 
@@ -58,7 +58,7 @@ Lipid- und Glukosemarker reagieren individüll – daher lohnt sich bei längere
 
 ---
 
-## Quellen
+## Qüllen
 
 Sackner-Bernstein J, et al. *Dietary Intervention for Overweight and Obese Adults: Comparison of Low-Carbohydrate and Low-Fat Diets. A Meta-Analysis.* PLOS ONE. 2015. doi: [10.1371/journal.pone.0139817](https://doi.org/10.1371/journal.pone.0139817).
 

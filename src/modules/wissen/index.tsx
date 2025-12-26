@@ -23,7 +23,7 @@ function formatDate(dateStr: string): string {
 
 function WissenPage({ config, articles, allTags }: Props) {
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState("");
+  const [searchquery, setSearchquery] = useState("");
 
   const filteredArticles = useMemo(() => {
     return articles.filter((article) => {
@@ -31,12 +31,12 @@ function WissenPage({ config, articles, allTags }: Props) {
         !selectedTag ||
         article.tags.some((t) => t.toLowerCase() === selectedTag.toLowerCase());
       const matchesSearch =
-        !searchQuery ||
+        !searchquery ||
         article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         article.description.toLowerCase().includes(searchQuery.toLowerCase());
       return matchesTag && matchesSearch;
     });
-  }, [articles, selectedTag, searchQuery]);
+  }, [articles, selectedTag, searchquery]);
 
   return (
     <ConfigContext.Provider value={config}>
@@ -50,12 +50,12 @@ function WissenPage({ config, articles, allTags }: Props) {
               Wissenschaftlich fundiert
             </span>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Wissen rund um Kalorien & Ernaehrung
+              Wissen rund um Kalorien & Ernährung
             </h1>
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
-              Paper-Analysen und Forschungserkenntnisse - verstaendlich
-              aufbereitet. Lerne, was die Wissenschaft wirklich ueber Abnehmen,
-              Stoffwechsel und Ernaehrung sagt.
+              Paper-Analysen und Forschungserkenntnisse - verständlich
+              aufbereitet. Lerne, was die Wissenschaft wirklich über Abnehmen,
+              Stoffwechsel und Ernährung sagt.
             </p>
           </header>
 
@@ -66,8 +66,8 @@ function WissenPage({ config, articles, allTags }: Props) {
                 type="text"
                 placeholder="Artikel durchsuchen..."
                 className="input input-bordered w-full"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
+                value={searchquery}
+                onChange={(e) => setSearchquery(e.target.value)}
               />
             </div>
           </div>
@@ -147,7 +147,7 @@ function WissenPage({ config, articles, allTags }: Props) {
                       {article.sources.length > 0 && (
                         <div className="mt-2 text-xs opacity-50">
                           {article.sources.length}{" "}
-                          {article.sources.length === 1 ? "Quelle" : "Quellen"}
+                          {article.sources.length === 1 ? "Qülle" : "Qüllen"}
                         </div>
                       )}
 
@@ -171,16 +171,16 @@ function WissenPage({ config, articles, allTags }: Props) {
             <div className="card bg-base-100 shadow-lg">
               <div className="card-body">
                 <h3 className="card-title text-lg">
-                  Ueber unsere Paper-Analysen
+                  Über unsere Paper-Analysen
                 </h3>
                 <p className="opacity-80">
                   Alle Artikel basieren auf peer-reviewed Studien aus
-                  anerkannten wissenschaftlichen Journals. Wir uebersetzen
-                  komplexe Forschungsergebnisse in verstaendliche Sprache - ohne
+                  anerkannten wissenschaftlichen Journals. Wir übersetzen
+                  komplexe Forschungsergebnisse in verständliche Sprache - ohne
                   zu vereinfachen oder wichtige Nuancen zu verlieren.
                 </p>
                 <p className="opacity-80 mt-2">
-                  Jeder Artikel enthaelt Quellenangaben mit DOI, damit du die
+                  Jeder Artikel enthält Qüllenangaben mit DOI, damit du die
                   Originalstudien selbst nachlesen kannst.
                 </p>
                 <div className="card-actions mt-4">
@@ -203,7 +203,7 @@ function WissenPage({ config, articles, allTags }: Props) {
               Wissen in die Praxis umsetzen
             </h2>
             <p className="opacity-90 max-w-xl mx-auto mb-8">
-              Mit Mahlzait trackst du deine Ernaehrung in Sekunden. Nutze die
+              Mit Mahlzait trackst du deine Ernährung in Sekunden. Nutze die
               wissenschaftlichen Erkenntnisse und starte noch heute mit dem
               Tracking.
             </p>

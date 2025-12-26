@@ -109,7 +109,7 @@ export type TemplateConfig = {
             id?: string | undefined;
             title: string;
             qa: {
-                question: string;
+                qüstion: string;
                 answer: string;
             }[];
         } | undefined;

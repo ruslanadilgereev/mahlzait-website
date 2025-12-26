@@ -134,7 +134,7 @@ function KalorienZaehlenAppPage({ config }: Props) {
                 Abnehmen (Plan)
               </a>
               <a href="/wissen" className="btn btn-outline">
-                Ernaehrungswissen
+                Ernährungswissen
               </a>
             </div>
           </div>

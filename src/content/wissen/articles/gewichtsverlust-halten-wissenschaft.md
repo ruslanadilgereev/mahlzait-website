@@ -2,17 +2,17 @@ Du hast erfolgreich abgenommen - aber nach ein paar Monaten sind die Kilos wiede
 
 ## Das Wichtigste in Kürze
 
-- Nach dem Abnehmen kämpft dein Körper aktiv gegen das neü Gewicht
+- Nach dem Abnehmen kämpft dein Körper aktiv gegen das neue Gewicht
 - Etwa 50% des verlorenen Gewichts wird innerhalb von 2 Jahren wieder zugenommen
 - Der Körper senkt den Energieverbrauch und steigert den Appetit - oft für Jahre
-- Verhaltensstrategien (z.B. konsequentes Tracking) können helfen, aber es bleibt eine Daüraufgabe
+- Verhaltensstrategien (z.B. konsequentes Tracking) können helfen, aber es bleibt eine Daueraufgabe
 - Bariatrische Chirurgie zeigt die besten Langzeitergebnisse, aber auch hier gibt es Rückfälle
 
 ---
 
 ## Was wurde untersucht?
 
-Diese Analyse basiert auf einem Symposium-Bericht des Pennington Biomedical Research Center, veröffentlicht 2023 in *Obesity (Silver Spring)*. Führende Wissenschaftler fassten den aktüllen Forschungsstand zu den **Mechanismen der Gewichtsstabilisierung nach Gewichtsverlust** zusammen.
+Diese Analyse basiert auf einem Symposium-Bericht des Pennington Biomedical Research Center, veröffentlicht 2023 in *Obesity (Silver Spring)*. Führende Wissenschaftler fassten den aktuellen Forschungsstand zu den **Mechanismen der Gewichtsstabilisierung nach Gewichtsverlust** zusammen.
 
 Das Paper ist kein einzelnes Experiment, sondern ein **wissenschaftlicher Review** - also eine Zusammenfassung vieler Studien. Das macht die Aussagen besonders robust, da sie auf breiter Evidenz basieren.
 
@@ -76,7 +76,7 @@ Das Paper betont die Bedeutung von **Selbstmonitoring**:
 
 > "Self-regulation program for maintenance of weight loss" - Studien zeigen, dass regelmässiges Wiegen und Ernährungstracking die Langzeitergebnisse verbessern.
 
-Genau hier kann eine App wie Mahlzait unterstützen: Durch einfaches Logging behältst du den Ueberblick, ohne dass es zur Last wird.
+Genau hier kann eine App wie Mahlzait unterstützen: Durch einfaches Logging behältst du den Überblick, ohne dass es zur Last wird.
 
 ### Bewegung ist entscheidend
 
@@ -103,7 +103,7 @@ Die Forschung zeigt: In einer "obesogenen Umgebung" (überall verfügbares, kalo
 - Die meisten Studien betrachten Durchschnittswerte - individülle Ergebnisse können stark variieren
 - Viele Mechanismen sind noch nicht vollständig verstanden
 - Genetik spielt eine Rolle, aber das Ausmass ist noch unklar
-- Die Forschung entwickelt sich weiter - neü Medikamente (z.B. GLP-1-Agonisten) zeigen vielversprechende Ergebnisse
+- Die Forschung entwickelt sich weiter - neue Medikamente (z.B. GLP-1-Agonisten) zeigen vielversprechende Ergebnisse
 
 ---
 
@@ -120,9 +120,9 @@ Wenn du nach dem Abnehmen wieder zunimmst, ist das kein persönliches Versagen -
 
 ---
 
-## Quellen
+## Qüllen
 
-**Hauptquelle:**
+**Hauptqülle:**
 Flanagan EW, Spann R, Berry SE, Berthoud HR, Broyles S, Foster GD, et al. New insights in the mechanisms of weight-loss maintenance: Summary from a Pennington symposium. *Obesity (Silver Spring)*. 2023 Dec;31(12):2895-2908. doi: [10.1002/oby.23905](https://doi.org/10.1002/oby.23905). PMID: 37794657.
 
 ---

@@ -226,7 +226,7 @@ src/modules/home/_components/liveDemo/index.tsx (Alt-Tags)
 ### Content-Strategie (optional):
 - Blog-Artikel zu Long-tail Keywords
 - Video-Content für YouTube
-- Social Media Präsenz aufbauen
+- Social Media Präsenz aufbaün
 - Backlinks generieren (PR, Gastbeiträge)
 
 ---
