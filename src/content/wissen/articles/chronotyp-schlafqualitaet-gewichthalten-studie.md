@@ -15,7 +15,7 @@ Eine Studie verglich deshalb sehr erfolgreiche „Gewicht-Halter“ aus dem Nati
 
 Design: Vergleichsstudie anhand etablierter Fragebögen:
 
-- Morningness-Eveningness Qüstionnaire (Chronotyp)
+- Morningness-Eveningness Questionnaire (Chronotyp)
 - Pittsburgh Sleep Quality Index (Schlafqualität)
 
 Gruppen:

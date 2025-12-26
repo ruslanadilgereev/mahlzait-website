@@ -1,7 +1,7 @@
 import type { Thing, WithContext } from "schema-dts";
 
 interface FAQItem {
-  qüstion: string;
+  question: string;
   answer: string;
 }
 
@@ -14,8 +14,8 @@ export function generateFAQSchema(
     "@type": "FAQPage",
     "@id": `${url}#faq`,
     mainEntity: faqs.map((faq) => ({
-      "@type": "Qüstion",
-      name: faq.qüstion,
+      "@type": "Question",
+      name: faq.question,
       acceptedAnswer: {
         "@type": "Answer",
         text: faq.answer,

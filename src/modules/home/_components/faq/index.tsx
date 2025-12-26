@@ -53,7 +53,7 @@ function Faq() {
                 }
                 className="text-start collapse-title text-lg font-medium"
               >
-                {qa.qüstion}
+                {qa.question}
               </button>
               <div
                 className={clsx(
