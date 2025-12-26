@@ -44,7 +44,7 @@ Wenn du „Kalorien zählen“ nicht daürhaft willst, funktionieren oft einfach
 
 - **Protein zu jeder Mahlzeit** (z.B. Skyr/Quark, Eier, Fisch, mageres Fleisch, Tofu, Hülsenfrüchte)
 - **Ballaststoffe hoch** (Gemüse, Beeren, Vollkorn, Bohnen/Linsen)
-- **Bewegung planbar machen** (Alltagsschritte + 2–3x/Woche Kraft oder Ausdaür)
+- **Bewegung planbar machen** (Alltagsschritte + 2–3x/Woche Kraft oder Ausdauer)
 
 Tools wie Mahlzait können helfen, diese Stellschrauben sichtbar zu machen (Protein/Ballaststoffe/Training), ohne dass du alles perfekt machen musst.
 

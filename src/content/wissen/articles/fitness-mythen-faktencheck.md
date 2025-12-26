@@ -31,7 +31,7 @@ Fitness-Mythen sind selten böse Absicht – meistens sind es eingängige Slogan
 
 Der Zugang zu Studien ist heute so einfach wie nie – und trotzdem dominieren in Social Media oft "Bro-Science" und Fitness-Folklore. Das führt zu ineffizienten Strategien (und manchmal zu unnötigem Stress), weil physiologische Zusammenhänge auf griffige, aber falsche Regeln reduziert werden.
 
-Ziel dieses Beitrags ist nicht nur "Mythos widerlegt", sondern ein besseres Verständnis der Mechanismen dahinter: von Substratoxidation über kardiovaskuläre Drift bis zu "concurrent training" (Ausdaür + Kraft).
+Ziel dieses Beitrags ist nicht nur "Mythos widerlegt", sondern ein besseres Verständnis der Mechanismen dahinter: von Substratoxidation über kardiovaskuläre Drift bis zu "concurrent training" (Ausdauer + Kraft).
 
 ---
 
@@ -49,13 +49,13 @@ Die Annahme "Gehen bringt nichts" wurde in Feldstudien (u.a. Shinshu University,
 
 **Studiendesign (vereinfacht):**
 
-1. Kontrollgruppe: keine Aenderung.
+1. Kontrollgruppe: keine Änderung.
 2. Moderate-Intensity Continuous Walking (MCT): täglich ~8.000 Schritte bei ~50% VO2peak.
 3. High-Intensity Interval Walking (IWT): 3 Min <40% VO2peak, dann 3 Min >70% VO2peak; mehrere Sätze pro Tag. [[2]](#ref-2)
 
 **Ergebnisse (Auswahl):**
 
-- **VO2peak**: IWT **+13% bis +17%** (MCT: kaum Aenderung). [[4]](#ref-4)
+- **VO2peak**: IWT **+13% bis +17%** (MCT: kaum Änderung). [[4]](#ref-4)
 - **Blutdruck**: im Mittel **-9 mmHg** systolisch und **-5 mmHg** diastolisch. [[6]](#ref-6)
 - **Kraft**: Kniestreckkraft **+13%**, Knieflexionskraft **+17%**. [[4]](#ref-4)
 
@@ -63,14 +63,14 @@ Die Annahme "Gehen bringt nichts" wurde in Feldstudien (u.a. Shinshu University,
 
 | Parameter | Moderate Continuous Walking (MCT) | Interval Walking Training (IWT) | Signifikanz |
 | --- | --- | --- | --- |
-| VO2peak (Aerobe Kapazität) | Minimale Aenderung | +13% bis +17% | p < 0.001 |
-| Systolischer Blutdruck | Keine signifikante Aenderung | -9 mmHg | p < 0.01 |
-| Kniestreckkraft | Keine signifikante Aenderung | +13% | p < 0.001 |
+| VO2peak (Aerobe Kapazität) | Minimale Änderung | +13% bis +17% | p < 0.001 |
+| Systolischer Blutdruck | Keine signifikante Änderung | -9 mmHg | p < 0.01 |
+| Kniestreckkraft | Keine signifikante Änderung | +13% | p < 0.001 |
 | Lifestyle-Related Disease Score | Geringe Verbesserung | -20% | p < 0.001 |
 
 ### Mechanismen und Dosis-Wirkung
 
-Kontinuierliches Gehen im Komfortbereich rekrutiert v.a. Typ-I-Fasern und verursacht weniger starke homöostatische Störungen. Die hochintensiven Phasen (>70% VO2peak) rekrutieren zusätzlich mehr Typ-IIa-Fasern und triggern typische Ausdaür-Anpassungen (u.a. mitochondriale Biogenese). [[8]](#ref-8)
+Kontinuierliches Gehen im Komfortbereich rekrutiert v.a. Typ-I-Fasern und verursacht weniger starke homöostatische Störungen. Die hochintensiven Phasen (>70% VO2peak) rekrutieren zusätzlich mehr Typ-IIa-Fasern und triggern typische Ausdauer-Anpassungen (u.a. mitochondriale Biogenese). [[8]](#ref-8)
 
 Wichtig: In den Daten zeigte sich eine Dosis-Wirkung: Verbesserungen korrelierten mit der Zeit im hochintensiven Bereich – bis zu einem Plateau (ca. 50 Min/Woche). [[3]](#ref-3)
 
@@ -182,7 +182,7 @@ Der Mythos "nur Zone 2 verbrennt Fett" verwechselt **relativen Anteil** mit **ab
 
 Bei niedriger Intensität ist der Fettanteil am höchsten (FatMax). Bei höherer Intensität steigt aber der Gesamtverbrauch pro Minute – und damit kann die absolute Fettmenge/Minute trotz niedrigerem Fettanteil höher sein. [[1]](#ref-1)
 
-Entscheidend für langfristigen Fettverlust ist die **negative Tagesbilanz**. Substratnutzung wird über den Tag reguliert; hohe Kohlenhydratnutzung im Training kann in Ruhephasen durch höheren Fettanteil kompensiert werden. Zone 2 ist exzellent für Ausdaür-Basis und mitochondriale Gesundheit, aber kein "Kalorienbilanz-Freifahrtschein". [[1]](#ref-1)
+Entscheidend für langfristigen Fettverlust ist die **negative Tagesbilanz**. Substratnutzung wird über den Tag reguliert; hohe Kohlenhydratnutzung im Training kann in Ruhephasen durch höheren Fettanteil kompensiert werden. Zone 2 ist exzellent für Ausdauer-Basis und mitochondriale Gesundheit, aber kein "Kalorienbilanz-Freifahrtschein". [[1]](#ref-1)
 
 **Praxis:**
 
@@ -246,7 +246,7 @@ Praxis: Für die meisten Ziele ist nicht "entweder/oder", sondern "beides" sinnv
 
 Der Interferenz-Mythos stammt u.a. aus frühen concurrent-training Arbeiten, ist aber in der Praxis stark von **Modalität** und **Timing** abhängig.
 
-Beispiel: In einer Studie mit unilateralem Krafttraining (ein Bein) und zusätzlicher Ausdaüreinheit (anderes Bein, 6 Stunden Abstand) zeigte das Bein mit beidem (AE+RE) sogar **mehr** Hypertrophie (+17% vs. +9%). [[19]](#ref-19)
+Beispiel: In einer Studie mit unilateralem Krafttraining (ein Bein) und zusätzlicher Ausdauereinheit (anderes Bein, 6 Stunden Abstand) zeigte das Bein mit beidem (AE+RE) sogar **mehr** Hypertrophie (+17% vs. +9%). [[19]](#ref-19)
 
 Wichtig ist die Modalität: Radfahren (konzentrisch, wenig Impact) interferiert in der Regel weniger als Laufen (mehr exzentrische Belastung/Muskelschäden). [[19]](#ref-19)
 
