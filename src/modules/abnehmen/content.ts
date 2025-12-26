@@ -49,7 +49,7 @@ export const abnehmenHowToSteps: { name: string; text: string }[] = [
 export const abnehmenFaq: { q: string; a: string }[] = [
   {
     q: "Wie kann ich am schnellsten abnehmen?",
-    a: "„Schnell" klingt gut, ist aber selten nachhaltig. Starte mit einem moderaten Defizit, hoher Protein-Zufuhr und konsequentem Tracking. So erreichst du Ergebnisse mit weniger Rückfall-Risiko.",
+    a: '"Schnell" klingt gut, ist aber selten nachhaltig. Starte mit einem moderaten Defizit, hoher Protein-Zufuhr und konsequentem Tracking. So erreichst du Ergebnisse mit weniger Rückfall-Risiko.',
   },
   {
     q: "Wie viele Kalorien brauche ich zum Abnehmen?",
