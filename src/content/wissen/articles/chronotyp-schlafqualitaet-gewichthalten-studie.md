@@ -1,22 +1,22 @@
-Viele nehmen ab – aber das Gewicht zu halten ist die eigentliche Herausforderung. Neben Ernaehrung und Bewegung koennte auch **Schlaf** eine Rolle spielen: Chronotyp („Morgenmensch“ vs „Abendtyp“) und Schlafqualitaet beeinflussen Appetit, Routine und Tagesstruktur.
+Viele nehmen ab – aber das Gewicht zu halten ist die eigentliche Herausforderung. Neben Ernährung und Bewegung könnte auch **Schlaf** eine Rolle spielen: Chronotyp („Morgenmensch“ vs „Abendtyp“) und Schlafqualität beeinflussen Appetit, Routine und Tagesstruktur.
 
 Eine Studie verglich deshalb sehr erfolgreiche „Gewicht-Halter“ aus dem National Weight Control Registry (NWCR) mit Teilnehmenden klassischer Abnehm-Interventionen.
 
-## Das Wichtigste in Kuerze
+## Das Wichtigste in Kürze
 
 - Verglichen wurden **690** NWCR-Mitglieder (langfristige Gewichtserhaltung) mit **75** Personen aus Verhaltens-Abnehmprogrammen.
-- NWCR-Mitglieder waren (kontrolliert fuer Alter) haeufiger **Morgen-Typen** und seltener Abendtypen.
-- Sie berichteten **bessere Schlafqualitaet**, **laengere Schlafdauer** und **kuerzere Einschlaflatenz**.
-- In der Studie berichteten weniger NWCR-Mitglieder sehr kurze Schlafdauer (<6 h oder <7 h).
+- NWCR-Mitglieder waren (kontrolliert für Alter) häufiger **Morgen-Typen** und seltener Abendtypen.
+- Sie berichteten **bessere Schlafqualität**, **längere Schlafdaür** und **kürzere Einschlaflatenz**.
+- In der Studie berichteten weniger NWCR-Mitglieder sehr kurze Schlafdaür (<6 h oder <7 h).
 
 ---
 
 ## Was wurde untersucht?
 
-Design: Vergleichsstudie anhand etablierter Frageboegen:
+Design: Vergleichsstudie anhand etablierter Fragebögen:
 
 - Morningness-Eveningness Questionnaire (Chronotyp)
-- Pittsburgh Sleep Quality Index (Schlafqualitaet)
+- Pittsburgh Sleep Quality Index (Schlafqualität)
 
 Gruppen:
 
@@ -27,17 +27,17 @@ Gruppen:
 
 ## Kernerkenntnisse
 
-### 1. Schlaf und Gewichthalten haengen zusammen
+### 1. Schlaf und Gewichthalten hängen zusammen
 
 Die Daten deuten darauf hin, dass erfolgreiche Gewicht-Halter im Schnitt **besser schlafen**. Ob das Ursache oder Folge ist, bleibt offen – aber die Verbindung ist plausibel.
 
-### 2. Morgen-Typ kann ein Vorteil fuer Routinen sein
+### 2. Morgen-Typ kann ein Vorteil für Routinen sein
 
-Wer eher morgens aktiv ist, schafft oft stabilere Strukturen (Fruehstueck/Routinen/Training). Das kann indirekt beim Gewichthalten helfen.
+Wer eher morgens aktiv ist, schafft oft stabilere Strukturen (Frühstück/Routinen/Training). Das kann indirekt beim Gewichthalten helfen.
 
-### 3. Schlaf ist ein „Verstaerker“ fuer die Basics
+### 3. Schlaf ist ein „Verstärker“ für die Basics
 
-Guter Schlaf macht Ernaehrung/Bewegung nicht ueberfluessig, aber er kann Hunger/Impulsessen und Tagesmuedigkeit reduzieren – und damit Adhaerenz verbessern.
+Guter Schlaf macht Ernährung/Bewegung nicht überflüssig, aber er kann Hunger/Impulsessen und Tagesmüdigkeit reduzieren – und damit Adhärenz verbessern.
 
 ---
 
@@ -47,21 +47,21 @@ Guter Schlaf macht Ernaehrung/Bewegung nicht ueberfluessig, aber er kann Hunger/
 - Einfache Hebel:
   - feste Aufstehzeit (auch am Wochenende)
   - Licht am Morgen
-  - Koffein nicht zu spaet
+  - Koffein nicht zu spät
   - Abendroutine (Screen/helles Licht reduzieren)
 
 ---
 
 ## Limitationen und Einordnung
 
-- Beobachtungs-/Vergleichsdesign: keine harte Kausalitaet.
-- NWCR ist eine spezielle Gruppe (sehr erfolgreiche Gewicht-Halter) – nicht automatisch repraesentativ.
+- Beobachtungs-/Vergleichsdesign: keine harte Kausalität.
+- NWCR ist eine spezielle Gruppe (sehr erfolgreiche Gewicht-Halter) – nicht automatisch repräsentativ.
 
 ---
 
 ## Fazit
 
-Erfolgreiches Gewichthalten ist oft eine Kombination aus Routinen. Diese Studie legt nahe: **Morgen-Chronotyp und gute Schlafqualitaet** koennten Teil dieses Erfolgs-Puzzles sein.
+Erfolgreiches Gewichthalten ist oft eine Kombination aus Routinen. Diese Studie legt nahe: **Morgen-Chronotyp und gute Schlafqualität** könnten Teil dieses Erfolgs-Puzzles sein.
 
 ---
 
@@ -71,6 +71,6 @@ Ross K, et al. *Successful weight loss maintenance associated with morning chron
 
 ---
 
-*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernaehrungsfachkraft.*
+*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine ärztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernährungsfachkraft.*
 
 

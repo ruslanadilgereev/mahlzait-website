@@ -1,13 +1,13 @@
-Viele Apps versprechen: „Tracke Gewicht, Essen und Bewegung – dann bleibst du dran.“ Spannend ist die umgekehrte Frage: **Nutzen Menschen, die ihr Gewicht langfristig halten, solche Tracking-Tools tatsaechlich haeufiger?**
+Viele Apps versprechen: „Tracke Gewicht, Essen und Bewegung – dann bleibst du dran.“ Spannend ist die umgekehrte Frage: **Nutzen Menschen, die ihr Gewicht langfristig halten, solche Tracking-Tools tatsächlich häufiger?**
 
 Eine Studie hat dazu Daten aus dem National Weight Control Registry (NWCR) mit einer nationalen Umfrage verglichen.
 
-## Das Wichtigste in Kuerze
+## Das Wichtigste in Kürze
 
-- NWCR-Teilnehmende (≥13.6 kg Gewichtsverlust ≥1 Jahr gehalten) nutzten Self-Monitoring/Tracking **haeufiger** als eine demografisch aehnliche Stichprobe aus einer nationalen Umfrage.
-- Sie trackten Gewicht, Ernaehrung oder Bewegung haeufiger „in irgendeiner Form“ (in der Studie: **92.8% vs 71.3%**).
-- Smartphone-Besitz war im NWCR hoeher (**80.2% vs 52.8%**).
-- Unter Smartphone-Ownern waren die Odds fuer **Food/Calorie Counter Apps** und **Gewichts-Apps** im NWCR deutlich hoeher.
+- NWCR-Teilnehmende (≥13.6 kg Gewichtsverlust ≥1 Jahr gehalten) nutzten Self-Monitoring/Tracking **häufiger** als eine demografisch ähnliche Stichprobe aus einer nationalen Umfrage.
+- Sie trackten Gewicht, Ernährung oder Bewegung häufiger „in irgendeiner Form“ (in der Studie: **92.8% vs 71.3%**).
+- Smartphone-Besitz war im NWCR höher (**80.2% vs 52.8%**).
+- Unter Smartphone-Ownern waren die Odds für **Food/Calorie Counter Apps** und **Gewichts-Apps** im NWCR deutlich höher.
 
 ---
 
@@ -16,9 +16,9 @@ Eine Studie hat dazu Daten aus dem National Weight Control Registry (NWCR) mit e
 Die Autoren verglichen:
 
 - **NWCR**: erfolgreiche Gewicht-Halter (online Survey zu Tracking-Technologie)
-- **Pew Tracking for Health Survey**: national repraesentative Umfrage, demografisch aehnlich gematcht
+- **Pew Tracking for Health Survey**: national repräsentative Umfrage, demografisch ähnlich gematcht
 
-Fokus: Wie haeufig werden Technologien genutzt, um Gewicht/Ernaehrung/Bewegung zu tracken?
+Fokus: Wie häufig werden Technologien genutzt, um Gewicht/Ernährung/Bewegung zu tracken?
 
 ---
 
@@ -30,11 +30,11 @@ Das passt zu vielen anderen Daten aus Gewichtsmanagement: Selbstmonitoring (Wieg
 
 ### 2. Technologie ist ein Tool – Verhalten ist der Effekt
 
-Interessant: In der Studie wird auch beschrieben, dass Personen aus der nationalen Umfrage ihre Daten teils haeufiger als Anlass fuer Verhaltensänderung nutzten. Das ist eine gute Erinnerung: **Tracking allein reicht nicht** – es braucht Feedback-Schleifen.
+Interessant: In der Studie wird auch beschrieben, dass Personen aus der nationalen Umfrage ihre Daten teils häufiger als Anlass für Verhaltensänderung nutzten. Das ist eine gute Erinnerung: **Tracking allein reicht nicht** – es braucht Feedback-Schleifen.
 
-### 3. Apps koennen Reibung reduzieren
+### 3. Apps können Reibung reduzieren
 
-Wenn Tracken leichter wird (Barcode, Foto, Standard-Mahlzeiten), sinkt die Huerde und die Chance steigt, dass man es langfristig macht.
+Wenn Tracken leichter wird (Barcode, Foto, Standard-Mahlzeiten), sinkt die Hürde und die Chance steigt, dass man es langfristig macht.
 
 ---
 
@@ -50,14 +50,14 @@ Wenn Tracken leichter wird (Barcode, Foto, Standard-Mahlzeiten), sinkt die Huerd
 
 ## Limitationen und Einordnung
 
-- Vergleichsstudie/Survey-Daten: keine Kausalitaet.
+- Vergleichsstudie/Survey-Daten: keine Kausalität.
 - NWCR ist selektiert (sehr erfolgreiche Gewicht-Halter) – die Erkenntnisse sind aber gerade deshalb interessant als „Best Practice“-Signale.
 
 ---
 
 ## Fazit
 
-Menschen, die ihr Gewicht langfristig halten, nutzen Tracking-Tools haeufig – deutlich haeufiger als eine nationale Vergleichsstichprobe. Entscheidend ist, dass Tracking zu **Handlungen** fuehrt (Feedback-Schleife).
+Menschen, die ihr Gewicht langfristig halten, nutzen Tracking-Tools häufig – deutlich häufiger als eine nationale Vergleichsstichprobe. Entscheidend ist, dass Tracking zu **Handlungen** führt (Feedback-Schleife).
 
 ---
 
@@ -67,6 +67,6 @@ Goldstein C, et al. *Successful weight loss maintainers use health-tracking smar
 
 ---
 
-*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernaehrungsfachkraft.*
+*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine ärztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernährungsfachkraft.*
 
 

@@ -1,54 +1,54 @@
-Abnehmen ist gesund – aber bei aelteren Menschen (50+) gibt es eine berechtigte Sorge: **Geht beim Gewichtsverlust zu viel Muskelmasse verloren?** Genau hier kommt Protein ins Spiel.
+Abnehmen ist gesund – aber bei älteren Menschen (50+) gibt es eine berechtigte Sorge: **Geht beim Gewichtsverlust zu viel Muskelmasse verloren?** Genau hier kommt Protein ins Spiel.
 
-Diese systematische Uebersicht mit Meta-Analyse hat ausgewertet, ob **hoeheres Protein** bei aelteren Menschen nach Gewichtsverlust die **Koerperzusammensetzung** verbessert.
+Diese systematische Uebersicht mit Meta-Analyse hat ausgewertet, ob **höheres Protein** bei älteren Menschen nach Gewichtsverlust die **Körperzusammensetzung** verbessert.
 
-## Das Wichtigste in Kuerze
+## Das Wichtigste in Kürze
 
-- Untersucht wurden Studien mit **Energierestriktion** (Kaloriendefizit) bei Erwachsenen **ueber 50**.
-- Verglichen wurden **hoeherer Proteinanteil** (z.B. ≥25% der Energie oder ≥1.0 g/kg/Tag) vs. niedrigerer Proteinanteil.
+- Untersucht wurden Studien mit **Energierestriktion** (Kaloriendefizit) bei Erwachsenen **über 50**.
+- Verglichen wurden **höherer Proteinanteil** (z.B. ≥25% der Energie oder ≥1.0 g/kg/Tag) vs. niedrigerer Proteinanteil.
 - Fazit der Meta-Analyse: Mit mehr Protein wurde tendenziell **mehr fettfreie Masse erhalten** und **mehr Fettmasse verloren**.
-- Das spricht dafuer, dass Protein besonders in der Diät-Phase ein wichtiger „Schutzfaktor“ fuer Koerperkomposition ist.
+- Das spricht dafür, dass Protein besonders in der Diät-Phase ein wichtiger „Schutzfaktor“ für Körperkomposition ist.
 
 ---
 
 ## Was wurde untersucht?
 
-Die Autoren haben systematisch Studien gesammelt und zusammengefasst, die bei aelteren Menschen Gewichtsverlust durch Kaloriendefizit untersuchten – und dabei den Proteinanteil variierten.
+Die Autoren haben systematisch Studien gesammelt und zusammengefasst, die bei älteren Menschen Gewichtsverlust durch Kaloriendefizit untersuchten – und dabei den Proteinanteil variierten.
 
-Ziel: Herausfinden, ob die Proteinhoehe beeinflusst, wie viel **Lean Mass** und **Fat Mass** sich waehrend des Abnehmens veraendern.
+Ziel: Herausfinden, ob die Proteinhöhe beeinflusst, wie viel **Lean Mass** und **Fat Mass** sich während des Abnehmens verändern.
 
 ---
 
 ## Kernerkenntnisse
 
-### 1. Protein kann helfen, Lean Mass zu schuetzen
+### 1. Protein kann helfen, Lean Mass zu schützen
 
-Beim Abnehmen sinkt nicht nur Fettmasse, sondern oft auch fettfreie Masse. Hoeheres Protein ist ein plausibler Hebel, um das abzufedern – besonders in Kombination mit Krafttraining.
+Beim Abnehmen sinkt nicht nur Fettmasse, sondern oft auch fettfreie Masse. Höheres Protein ist ein plausibler Hebel, um das abzufedern – besonders in Kombination mit Krafttraining.
 
-### 2. Koerperzusammensetzung ist wichtiger als nur „Gewicht“
+### 2. Körperzusammensetzung ist wichtiger als nur „Gewicht“
 
-Zwei Personen koennen gleich viel abnehmen – aber wenn eine Person mehr Muskelmasse behaelt, ist das meist besser fuer Funktion, Stoffwechsel und langfristige Stabilitaet.
+Zwei Personen können gleich viel abnehmen – aber wenn eine Person mehr Muskelmasse behält, ist das meist besser für Funktion, Stoffwechsel und langfristige Stabilität.
 
 ---
 
 ## Was heisst das praktisch?
 
-- Zielwerte fuer viele: **Protein pro Mahlzeit** sichern (statt nur „pro Tag“).
-- Krafttraining (oder zumindest regelmaessige Belastung) macht den Protein-Hebel oft deutlich staerker.
-- Tracking hilft: Wer Protein „nur nach Gefuehl“ schaetzt, liegt oft daneben.
+- Zielwerte für viele: **Protein pro Mahlzeit** sichern (statt nur „pro Tag“).
+- Krafttraining (oder zumindest regelmässige Belastung) macht den Protein-Hebel oft deutlich stärker.
+- Tracking hilft: Wer Protein „nur nach Gefühl“ schätzt, liegt oft daneben.
 
 ---
 
 ## Limitationen und Einordnung
 
-- Meta-Analyse bedeutet: Die Ergebnisse sind ein Mittelwert ueber Studien – konkrete Proteinziele und Trainingsprogramme unterscheiden sich.
-- „Mehr Protein“ ist nicht automatisch besser, wenn Gesamtqualitaet der Ernaehrung oder Adhaerenz leidet.
+- Meta-Analyse bedeutet: Die Ergebnisse sind ein Mittelwert über Studien – konkrete Proteinziele und Trainingsprogramme unterscheiden sich.
+- „Mehr Protein“ ist nicht automatisch besser, wenn Gesamtqualität der Ernährung oder Adhärenz leidet.
 
 ---
 
 ## Fazit
 
-Bei aelteren Menschen ist Abnehmen dann am wertvollsten, wenn Fettmasse runtergeht und **Muskelmasse moeglichst erhalten bleibt**. Diese Meta-Analyse stuetzt den Ansatz, dass ein **hoeherer Proteinanteil** dabei helfen kann.
+Bei älteren Menschen ist Abnehmen dann am wertvollsten, wenn Fettmasse runtergeht und **Muskelmasse möglichst erhalten bleibt**. Diese Meta-Analyse stützt den Ansatz, dass ein **höherer Proteinanteil** dabei helfen kann.
 
 ---
 
@@ -58,6 +58,6 @@ Kim JE, et al. *Effects of dietary protein intake on body composition changes af
 
 ---
 
-*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernaehrungsfachkraft.*
+*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine ärztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernährungsfachkraft.*
 
 

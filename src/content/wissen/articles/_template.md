@@ -4,7 +4,6 @@ WISSEN Artikel Template
 Wichtig:
 - KEIN Markdown-H1 (# ...) verwenden (die Seite rendert bereits ein <h1> im UI).
 - Dateiname muss exakt dem slug in src/content/wissen/index.ts entsprechen.
-- Nur ASCII: ae/oe/ue statt Umlauten, klein, mit '-'.
 -->
 
 Kurzer Einstieg in 2–3 Saetzen: Warum ist das Paper relevant und was kann man daraus fuer die Praxis lernen?

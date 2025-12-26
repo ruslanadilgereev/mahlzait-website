@@ -64,17 +64,20 @@ function CookieConsent() {
     if (typeof window === "undefined") return;
     if (!prefs.analytics && !prefs.marketing) return;
 
-    const run = async () => {
-      try {
-        // Load as external ES module from /public (keeps base HTML small and cacheable)
-        const trackingUrl = "/scripts/mahlzait-tracking.js";
-        const mod: any = await import(/* @vite-ignore */ trackingUrl);
-        if (typeof mod?.initMahlzaitTracking === "function") {
-          mod.initMahlzaitTracking(prefs);
+    // Prevent duplicate loads
+    if (document.querySelector('script[src="/scripts/mahlzait-tracking.js"]')) return;
+
+    const run = () => {
+      const script = document.createElement("script");
+      script.src = "/scripts/mahlzait-tracking.js";
+      script.type = "module";
+      script.onload = () => {
+        // After script loads, call init if available
+        if (typeof (window as any).initMahlzaitTracking === "function") {
+          (window as any).initMahlzaitTracking(prefs);
         }
-      } catch {
-        // ignore
-      }
+      };
+      document.head.appendChild(script);
     };
 
     // Defer to idle time to avoid competing with critical rendering

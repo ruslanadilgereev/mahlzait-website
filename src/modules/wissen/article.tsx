@@ -5,6 +5,8 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import type { ArticleMeta } from "@content/wissen";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
 
 interface Props {
   config: TemplateConfig;
@@ -75,8 +77,8 @@ function ArticlePage({ config, article, content }: Props) {
           </p>
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-blockquote:border-primary prose-blockquote:bg-base-200 prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:rounded-r-lg">
-            <ReactMarkdown>{content}</ReactMarkdown>
+          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-blockquote:border-primary prose-blockquote:bg-base-200 prose-blockquote:py-1 prose-blockquote:px-4 prose-blockquote:rounded-r-lg prose-table:border-collapse prose-th:border prose-th:border-base-300 prose-th:bg-base-200 prose-th:p-2 prose-td:border prose-td:border-base-300 prose-td:p-2">
+            <ReactMarkdown remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw]}>{content}</ReactMarkdown>
           </div>
 
           {/* Sources Box */}

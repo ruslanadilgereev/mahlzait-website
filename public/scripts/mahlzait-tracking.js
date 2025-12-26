@@ -413,4 +413,9 @@ export function initMahlzaitTracking(prefs) {
   }
 }
 
+// Also expose on window so it can be called after script-tag load
+if (typeof window !== "undefined") {
+  window.initMahlzaitTracking = initMahlzaitTracking;
+}
+
 

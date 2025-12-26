@@ -405,6 +405,40 @@ export const articlesMeta: ArticleMeta[] = [
       },
     ],
   },
+  {
+    slug: "fitness-mythen-faktencheck",
+    title: "Fitness-Mythen im Faktencheck: 10 Cardio-Mythen, die sich hartnaeckig halten",
+    description:
+      "Evidenzbasierter Faktencheck zu 10 verbreiteten Cardio-/Fitness-Mythen: Gehen, Schweiss, 10.000 Schritte, Zone 2, Wearables und \"Cardio killt Gains\" – mit Studien und Mechanismen.",
+    tags: ["Training", "Fitness", "Cardio", "Mythen"],
+    publishedAt: "2025-12-26",
+    readingTime: 10,
+    sources: [
+      {
+        title:
+          "Effects of high-intensity interval walking training on physical fitness and blood pressure in middle-aged and older people",
+        authors: "Nemoto K, et al.",
+        journal: "Mayo Clinic Proceedings",
+        year: 2007,
+        pmid: "17605959",
+      },
+      {
+        title: "Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts",
+        authors: "Paluch AE, et al.",
+        journal: "The Lancet Public Health",
+        year: 2022,
+        pmid: "35247352",
+      },
+      {
+        title:
+          "Aerobic exercise does not compromise muscle hypertrophy response to short-term resistance training",
+        authors: "Lundberg TR, et al.",
+        journal: "Journal of Applied Physiology",
+        year: 2013,
+        doi: "10.1152/japplphysiol.01013.2012",
+      },
+    ],
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (fuer getStaticPaths)

@@ -16,7 +16,7 @@ Optional (aber empfohlen): Lege auch das PDF unter `src/modules/wissen/` ab, dam
 - **Nur ASCII**, alles klein, mit `-`:
   - `ernaehrung` statt `ernährung`
   - `kalorien` statt `kalorien`
-  - `ae/oe/ue` statt Umlauten
+  - `ä/ö/ü` statt ae oe ue
   - keine Sonderzeichen
 
 Beispiel:

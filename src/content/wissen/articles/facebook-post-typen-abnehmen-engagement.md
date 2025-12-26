@@ -1,32 +1,32 @@
-Viele Abnehmprogramme setzen heute auf **Facebook-Gruppen** oder andere Social-Media-Communities, um Motivation und Support nach der „intensiven Phase“ zu halten. Aber: **Welche Post-Arten bringen wirklich Engagement – und haengt Engagement mit Gewichtsverlust zusammen?**
+Viele Abnehmprogramme setzen heute auf **Facebook-Gruppen** oder andere Social-Media-Communities, um Motivation und Support nach der „intensiven Phase“ zu halten. Aber: **Welche Post-Arten bringen wirklich Engagement – und hängt Engagement mit Gewichtsverlust zusammen?**
 
 Diese Studie untersuchte genau das in einem Gewichtsverlust-Programm mit privater Facebook-Gruppe.
 
-## Das Wichtigste in Kuerze
+## Das Wichtigste in Kürze
 
-- Untersucht wurden **verschiedene Post-Typen** (z.B. Rezepte, Umfragen, Gewicht/Verhalten, Ernaehrungsinfos, „Vorschlaege erbeten“).
+- Untersucht wurden **verschiedene Post-Typen** (z.B. Rezepte, Umfragen, Gewicht/Verhalten, Ernährungsinfos, „Vorschläge erbeten“).
 - **Umfragen (Polls)** erzielten im Schnitt die meiste Interaktion (Votes/Kommentare).
 - „Vorschlags“-Posts und gewichtbezogene Posts lagen dahinter; reine Info-Posts waren tendenziell weniger interaktiv.
-- Hoeheres Facebook-Engagement war in dieser Auswertung **mit mehr Gewichtsverlust** in der Erhaltungsphase assoziiert.
+- Höheres Facebook-Engagement war in dieser Auswertung **mit mehr Gewichtsverlust** in der Erhaltungsphase assoziiert.
 
 ---
 
 ## Was wurde untersucht?
 
-Die Daten stammen aus einer **randomisierten Gewichtsverlust-Studie** mit einer **4-monatigen Follow-up/Erhaltungsphase**, in der die Teilnehmer zusaetzlich Support ueber **private Facebook-Gruppen** erhielten.
+Die Daten stammen aus einer **randomisierten Gewichtsverlust-Studie** mit einer **4-monatigen Follow-up/Erhaltungsphase**, in der die Teilnehmer zusätzlich Support über **private Facebook-Gruppen** erhielten.
 
 Counselors posteten pro Woche verschiedene Inhalte, u.a.:
 
 - Gewicht/Verhalten („weight-related“)
 - Rezepte
-- Ernaehrungsinformationen
+- Ernährungsinformationen
 - **Umfragen** (Poll votes)
-- Bitten um Vorschlaege/Ideen
+- Bitten um Vorschläge/Ideen
 
 Gemessen wurde:
 
 - **Engagement** (Likes, Kommentare/Poll-Votes, Views)
-- Zusammenhang zwischen Engagement und Gewichtsveraenderung in der Maintenance-Phase
+- Zusammenhang zwischen Engagement und Gewichtsveränderung in der Maintenance-Phase
 
 ---
 
@@ -34,30 +34,30 @@ Gemessen wurde:
 
 ### 1. Polls schlagen „Infos“
 
-In dieser Auswertung waren **Umfragen** am engagierendsten (im Paper als Mittelwerte fuer Votes/Kommentare berichtet), gefolgt von „Vorschlags“- und gewichtbezogenen Posts.
+In dieser Auswertung waren **Umfragen** am engagierendsten (im Paper als Mittelwerte für Votes/Kommentare berichtet), gefolgt von „Vorschlags“- und gewichtbezogenen Posts.
 
 ### 2. Engagement korreliert mit Gewichtsverlust (Maintenance)
 
-Die Auswertung berichtet einen statistischen Zusammenhang zwischen Facebook-Engagement und Gewichtsverlust waehrend der 4-monatigen Erhaltungsphase (Assoziation, nicht automatisch Kausalitaet).
+Die Auswertung berichtet einen statistischen Zusammenhang zwischen Facebook-Engagement und Gewichtsverlust während der 4-monatigen Erhaltungsphase (Assoziation, nicht automatisch Kausalität).
 
 ---
 
 ## Was heisst das praktisch?
 
-Wenn du eine Community (oder eine eigene Gruppe) nutzt, kannst du das Paper in eine einfache Regel uebersetzen:
+Wenn du eine Community (oder eine eigene Gruppe) nutzt, kannst du das Paper in eine einfache Regel übersetzen:
 
 - **Aktive Formate** (Umfragen, kurze Fragen, „Was war heute deine beste Entscheidung?“) > lange Info-Posts.
 - **Reibung runter**: Inhalte, die in 5 Sekunden beantwortbar sind, erzeugen Momentum.
 - **Self-Monitoring plus Support**: Tracking (Gewicht, Mahlzeiten, Schritte) wird leichter, wenn es sozial eingebettet ist.
 
-Mahlzait kann hier als Tracking-Tool dienen, waehrend Social Support (Gruppe/Accountability) die Umsetzung stabilisiert.
+Mahlzait kann hier als Tracking-Tool dienen, während Social Support (Gruppe/Accountability) die Umsetzung stabilisiert.
 
 ---
 
 ## Limitationen und Einordnung
 
-- Es ist eine **Subanalyse** und nicht primär dafuer designt, kausale Effekte einzelner Post-Typen auf Gewichtsverlust „hart“ zu beweisen.
-- Engagement kann auch ein Marker fuer Motivation sein (motivierte Personen interagieren mehr **und** nehmen eher ab).
+- Es ist eine **Subanalyse** und nicht primär dafür designt, kausale Effekte einzelner Post-Typen auf Gewichtsverlust „hart“ zu beweisen.
+- Engagement kann auch ein Marker für Motivation sein (motivierte Personen interagieren mehr **und** nehmen eher ab).
 
 ---
 
@@ -73,6 +73,6 @@ Hales S, et al. *Varying social media post types differentially impacts engageme
 
 ---
 
-*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernaehrungsfachkraft.*
+*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine ärztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernährungsfachkraft.*
 
 
