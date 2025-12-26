@@ -55,9 +55,3 @@ Allow: /ai-questions.json
 Allow: /comparison.json
 Allow: /rss.xml
 
-# Crawl-Verzögerung optimiert
-Crawl-delay: 1
-
-# Host-Präferenz (für Google)
-Host: https://www.mahlzait.de
-
