@@ -83,7 +83,7 @@ function ArticlePage({ config, article, content }: Props) {
 
           {/* Sources Box */}
           {article.sources.length > 0 && (
-            <div className="mt-12 card bg-base-200">
+            <div id="quellen" className="mt-12 card bg-base-200 scroll-mt-24">
               <div className="card-body">
                 <h3 className="card-title text-lg">
                   Wissenschaftliche Quellen

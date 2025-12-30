@@ -415,6 +415,21 @@ export const articlesMeta: ArticleMeta[] = [
     readingTime: 10,
     sources: [
       {
+        title: "Beyond epidemiology: field studies and the physiology laboratory as the whole world",
+        authors: "Nose H, et al.",
+        journal: "The Journal of Physiology",
+        year: 2009,
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC2805369/",
+      },
+      {
+        title:
+          "High-Intensity Walking Time Is a Key Determinant to Increase Physical Fitness and Improve Health Outcomes After Interval Walking Training in Middle-Aged and Older People",
+        authors: "Masuki S, et al.",
+        journal: "Mayo Clinic Proceedings",
+        year: 2019,
+        pmid: "31477320",
+      },
+      {
         title:
           "Effects of high-intensity interval walking training on physical fitness and blood pressure in middle-aged and older people",
         authors: "Nemoto K, et al.",
@@ -423,11 +438,56 @@ export const articlesMeta: ArticleMeta[] = [
         pmid: "17605959",
       },
       {
+        title: "Health benefits of interval walking training",
+        authors: "Karstoft K, et al.",
+        journal: "Applied Physiology, Nutrition, and Metabolism",
+        year: 2024,
+        doi: "10.1139/apnm-2023-0595",
+      },
+      {
+        title:
+          "Accuracy of Heart Rate and Energy Expenditure Estimations of Wrist-Worn and Arm-Worn Apple Watches",
+        authors: "Falter M, et al.",
+        journal: "Journal for the Measurement of Physical Behaviour",
+        year: 2019,
+        doi: "10.1123/jmpb.2018-0037",
+      },
+      {
+        title:
+          "Accuracy of the Apple Watch Series 9 for Measures of Energy Expenditure and Heart Rate at Rest and During Exercise: Impact of Skin Pigmentation",
+        authors: "Etiwy M, et al.",
+        journal: "Sports",
+        year: 2024,
+        pmid: "39728259",
+      },
+      {
         title: "Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts",
         authors: "Paluch AE, et al.",
         journal: "The Lancet Public Health",
         year: 2022,
         pmid: "35247352",
+      },
+      {
+        title: "Daily steps and all-cause mortality: An umbrella review and meta-analysis",
+        authors: "Kazemi A, et al.",
+        journal: "Journal of Cachexia, Sarcopenia and Muscle",
+        year: 2024,
+        doi: "10.1002/jcsm.13525",
+      },
+      {
+        title:
+          "Daily steps and health outcomes in adults: a systematic review and dose-response meta-analysis",
+        authors: "Banach M, et al.",
+        journal: "European Journal of Preventive Cardiology",
+        year: 2024,
+        pmid: "40713949",
+      },
+      {
+        title: "Brief Intense Stair Climbing Improves Cardiorespiratory Fitness",
+        authors: "Allison MK, et al.",
+        journal: "Medicine & Science in Sports & Exercise",
+        year: 2017,
+        pmid: "28009784",
       },
       {
         title:
