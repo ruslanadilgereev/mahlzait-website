@@ -184,7 +184,7 @@ const templateConfig: TemplateConfig = {
         {
           title: "Rezepte & YouTube",
           subtitle:
-            "Erstelle Rezepte aus YouTube-Videos, manüll oder per Suche – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
+            "Erstelle Rezepte aus YouTube-Videos, manuell oder per Suche – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
           icon: "/3D/video-camera-front-color.webp",
           screenshot: "/screenshots/rezept.webp",
         },
@@ -239,7 +239,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
-            "Ja, Mahlzait ist kostenlos! Die App bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makronährstoffen ohne Abo-Zwang. Du kannst Lebensmittel suchen, per Barcode scannen, manüll eingeben und Rezepte erstellen – komplett gratis. Für unbegrenzte KI-Features (AI Meal Logging, KI-Vorschläge, YouTube-Rezept-Import) gibt es optional Mahlzait Pro ab 4,99 € pro Monat oder 29,99 € pro Jahr.",
+            "Ja, Mahlzait ist kostenlos! Die App bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makronährstoffen ohne Abo-Zwang. Du kannst Lebensmittel suchen, per Barcode scannen, manuell eingeben und Rezepte erstellen – komplett gratis. Für unbegrenzte KI-Features (AI Meal Logging, KI-Vorschläge, YouTube-Rezept-Import) gibt es optional Mahlzait Pro ab 4,99 € pro Monat oder 29,99 € pro Jahr.",
         },
         {
           question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
@@ -249,12 +249,12 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
           answer:
-            "Der Barcode-Scanner von Mahlzait nutzt eine umfangreiche Lebensmitteldatenbank mit hunderttausenden Produkten. Nach dem Scannen werden Kalorien, Makros (Protein, Kohlenhydrate, Fett) und Nährwerte automatisch übernommen. Du kannst die Portionsgröße anpassen. Falls ein Produkt fehlt, kannst du es manüll hinzufügen und für andere Nutzer verfügbar machen.",
+            "Der Barcode-Scanner von Mahlzait nutzt eine umfangreiche Lebensmitteldatenbank mit hunderttausenden Produkten. Nach dem Scannen werden Kalorien, Makros (Protein, Kohlenhydrate, Fett) und Nährwerte automatisch übernommen. Du kannst die Portionsgröße anpassen. Falls ein Produkt fehlt, kannst du es manuell hinzufügen und für andere Nutzer verfügbar machen.",
         },
         {
           question: "Kann ich eigene Rezepte erstellen und speichern?",
           answer:
-            "Ja! Mit Mahlzait kannst du eigene Rezepte erstellen, manüll eingeben oder direkt aus YouTube-Videos importieren. Speichere deine Lieblingsgerichte und logge sie mit einem Klick. Du kannst Rezepte auch per Link mit Freunden teilen. Perfekt für wiederkehrende Mahlzeiten wie Frühstück oder Meal Prep.",
+            "Ja! Mit Mahlzait kannst du eigene Rezepte erstellen, manuell eingeben oder direkt aus YouTube-Videos importieren. Speichere deine Lieblingsgerichte und logge sie mit einem Klick. Du kannst Rezepte auch per Link mit Freunden teilen. Perfekt für wiederkehrende Mahlzeiten wie Frühstück oder Meal Prep.",
         },
         {
           question: "Unterstützt Mahlzait Apple Health und Google Fit Integration?",
@@ -274,7 +274,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
           answer:
-            "Ja! Mahlzait bietet praktische Homescreen-Widgets für iOS und Android. Das Übersichts-Widget zeigt dir deine täglichen Kalorien, Makros und Fortschritte direkt auf dem Homescreen. Zusätzlich gibt es Quick-Launch-Widgets für alle 4 Logging-Methoden: Direktzugriff auf Lebensmittel-Suche, Barcode-Scanner, manülle Eingabe oder KI-Logging – einfach antippen und sofort loslegen, ohne die App zu öffnen.",
+            "Ja! Mahlzait bietet praktische Homescreen-Widgets für iOS und Android. Das Übersichts-Widget zeigt dir deine täglichen Kalorien, Makros und Fortschritte direkt auf dem Homescreen. Zusätzlich gibt es Quick-Launch-Widgets für alle 4 Logging-Methoden: Direktzugriff auf Lebensmittel-Suche, Barcode-Scanner, manuelle Eingabe oder KI-Logging – einfach antippen und sofort loslegen, ohne die App zu öffnen.",
         },
       ],
     },
@@ -301,8 +301,8 @@ const templateConfig: TemplateConfig = {
           title: "Kostenlos",
           price: "0 €",
           rows: [
-            "Mahlzeiten loggen (Suche, Barcode, manüll)",
-            "Rezepte erstellen & teilen (manüll)",
+            "Mahlzeiten loggen (Suche, Barcode, manuell)",
+            "Rezepte erstellen & teilen (manuell)",
             "Kalorien & Makros tracken",
             "Gewichtsverlauf & Kalender",
             "Health-Integration",

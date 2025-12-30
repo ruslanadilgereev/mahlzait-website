@@ -63,7 +63,7 @@ Tools wie Mahlzait können helfen, diese Stellschrauben sichtbar zu machen (Prot
 
 ---
 
-## Qüllen
+## Quellen
 
 Guarneiri L, et al. *Protein, fiber, and exercise: a narrative review of their roles in weight management and cardiometabolic health.* Lipids in Health and Disease. 2025. doi: [10.1186/s12944-025-02659-7](https://doi.org/10.1186/s12944-025-02659-7).
 

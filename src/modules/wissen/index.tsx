@@ -147,7 +147,7 @@ function WissenPage({ config, articles, allTags }: Props) {
                       {article.sources.length > 0 && (
                         <div className="mt-2 text-xs opacity-50">
                           {article.sources.length}{" "}
-                          {article.sources.length === 1 ? "Qülle" : "Qüllen"}
+                          {article.sources.length === 1 ? "Quelle" : "Quellen"}
                         </div>
                       )}
 
@@ -180,7 +180,7 @@ function WissenPage({ config, articles, allTags }: Props) {
                   zu vereinfachen oder wichtige Nuancen zu verlieren.
                 </p>
                 <p className="opacity-80 mt-2">
-                  Jeder Artikel enthält Qüllenangaben mit DOI, damit du die
+                  Jeder Artikel enthält Quellenangaben mit DOI, damit du die
                   Originalstudien selbst nachlesen kannst.
                 </p>
                 <div className="card-actions mt-4">

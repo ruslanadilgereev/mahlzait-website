@@ -64,7 +64,7 @@ Aerobes Training wirkt dosisabhängig: Mehr Minuten pro Woche führen im Mittel 
 
 ---
 
-## Qüllen
+## Quellen
 
 Jayedi A, et al. *Aerobic Exercise and Weight Loss in Adults.* JAMA Network Open. 2024. doi: [10.1001/jamanetworkopen.2024.52185](https://doi.org/10.1001/jamanetworkopen.2024.52185).
 

@@ -120,9 +120,9 @@ Wenn du nach dem Abnehmen wieder zunimmst, ist das kein persönliches Versagen -
 
 ---
 
-## Qüllen
+## Quellen
 
-**Hauptqülle:**
+**Hauptquelle:**
 Flanagan EW, Spann R, Berry SE, Berthoud HR, Broyles S, Foster GD, et al. New insights in the mechanisms of weight-loss maintenance: Summary from a Pennington symposium. *Obesity (Silver Spring)*. 2023 Dec;31(12):2895-2908. doi: [10.1002/oby.23905](https://doi.org/10.1002/oby.23905). PMID: 37794657.
 
 ---

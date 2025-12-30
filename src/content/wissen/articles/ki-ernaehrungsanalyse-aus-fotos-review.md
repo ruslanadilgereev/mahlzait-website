@@ -65,7 +65,7 @@ KI-basierte Ernährungsanalyse aus Bildern ist vielversprechend und kann Mensche
 
 ---
 
-## Qüllen
+## Quellen
 
 Shonkoff E, et al. *AI-based digital image dietary assessment methods compared to humans and ground truth: a systematic review.* Annals of Medicine. 2023. doi: [10.1080/07853890.2023.2273497](https://doi.org/10.1080/07853890.2023.2273497).
 

@@ -52,7 +52,7 @@ Bei älteren Menschen ist Abnehmen dann am wertvollsten, wenn Fettmasse runterge
 
 ---
 
-## Qüllen
+## Quellen
 
 Kim JE, et al. *Effects of dietary protein intake on body composition changes after weight loss in older adults: a systematic review and meta-analysis.* Nutrition Reviews. 2016. doi: [10.1093/nutrit/nuv065](https://doi.org/10.1093/nutrit/nuv065).
 

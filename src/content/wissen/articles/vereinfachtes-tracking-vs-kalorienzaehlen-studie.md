@@ -63,7 +63,7 @@ Vereinfachtes Tracking kann eine echte Alternative sein: weniger Aufwand, trotzd
 
 ---
 
-## Qüllen
+## Quellen
 
 Nezami B, et al. *A pilot randomized trial of simplified versus standard calorie dietary self-monitoring in a mobile weight loss intervention.* Obesity. 2022. doi: [10.1002/oby.23377](https://doi.org/10.1002/oby.23377). ClinicalTrials.gov: [NCT03973424](https://clinicaltrials.gov/study/NCT03973424).
 

@@ -68,7 +68,7 @@ Intervallfasten funktioniert für Gewichtsverlust ähnlich gut wie klassische Ka
 
 ---
 
-## Qüellen
+## Quellen
 
 Semnani-Azad Z, et al. *Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials.* BMJ. 2025. doi: [10.1136/bmj-2024-082007](https://doi.org/10.1136/bmj-2024-082007).
 

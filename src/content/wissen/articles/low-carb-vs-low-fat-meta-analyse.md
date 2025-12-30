@@ -58,7 +58,7 @@ Lipid- und Glukosemarker reagieren individüll – daher lohnt sich bei längere
 
 ---
 
-## Qüllen
+## Quellen
 
 Sackner-Bernstein J, et al. *Dietary Intervention for Overweight and Obese Adults: Comparison of Low-Carbohydrate and Low-Fat Diets. A Meta-Analysis.* PLOS ONE. 2015. doi: [10.1371/journal.pone.0139817](https://doi.org/10.1371/journal.pone.0139817).
 

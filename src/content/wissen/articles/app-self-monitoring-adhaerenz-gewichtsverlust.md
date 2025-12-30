@@ -40,7 +40,7 @@ Wenn Vollständigkeit nicht der Haupttreiber ist, ist das eine gute Nachricht: S
 
 - Setze dir ein Ziel wie „5–6 Tage/Woche loggen“ statt „jeden Bissen perfekt“.
 - Nutze vereinfachtes Tracking, wenn du merkst, dass du sonst abbrichst.
-- Führe eine wöchentliche Review ein: Was waren die 2 grössten Kalorienqüllen? Was sättigt gut? Was wiederholt sich?
+- Führe eine wöchentliche Review ein: Was waren die 2 grössten Kalorienquellen? Was sättigt gut? Was wiederholt sich?
 
 ---
 
@@ -57,7 +57,7 @@ Beim App-Tracking scheint **Konsistenz und Freqünz** wichtiger zu sein als Voll
 
 ---
 
-## Qüllen
+## Quellen
 
 Payne J, et al. *Adherence to mobile‐app‐based dietary self‐monitoring—Impact on weight loss in adults.* Obesity Science & Practice. 2021. doi: [10.1002/osp4.566](https://doi.org/10.1002/osp4.566).
 

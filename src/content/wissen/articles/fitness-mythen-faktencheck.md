@@ -1,4 +1,4 @@
-Fitness-Mythen sind selten böse Absicht – meistens sind es eingängige Slogans, die komplexe Physiologie zu stark vereinfachen. Dieser Beitrag dekonstruiert 10 häufige Cardio-/Fitness-Mythen (aus dem Video "Busting Cardio Myths Everyone STILL Believes") und ordnet sie evidenzbasiert ein. Qüllen sind im Text als Zahlen markiert und unten gesammelt.
+Fitness-Mythen sind selten böse Absicht – meistens sind es eingängige Slogans, die komplexe Physiologie zu stark vereinfachen. Dieser Beitrag dekonstruiert 10 häufige Cardio-/Fitness-Mythen (aus dem Video "Busting Cardio Myths Everyone STILL Believes") und ordnet sie evidenzbasiert ein. Quellen sind im Text als Zahlen markiert und unten gesammelt.
 
 **Hauptquelle:** Das YouTube-Video ist die Leitlinie für die 10 Mythen. [[1]](#ref-1) Die zusätzlichen Quellen nutze ich, um einzelne Aussagen (z.B. Interval Walking, Schritte, Wearables, Exercise Snacks, concurrent training) zu unterfüttern.
 

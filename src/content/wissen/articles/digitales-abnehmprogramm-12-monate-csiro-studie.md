@@ -68,7 +68,7 @@ Digitale Programme können über 12 Monate messbar helfen – besonders, wenn Nu
 
 ---
 
-## Qüllen
+## Quellen
 
 Hendrie G, et al. *Weight Loss Patterns and Outcomes Over 12 Months on a Commercial Weight Management Program (CSIRO Total Wellbeing Diet Online): Large-Community Cohort Evaluation Study.* Journal of Medical Internet Research. 2025. doi: [10.2196/65122](https://doi.org/10.2196/65122).
 

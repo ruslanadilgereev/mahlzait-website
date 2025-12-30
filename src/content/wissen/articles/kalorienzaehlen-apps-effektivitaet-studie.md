@@ -15,7 +15,7 @@ Eine Studie aus dem Bereich Health Informatics hat genau das untersucht: **Quali
 
 Die Arbeit kombiniert zwei Bausteine:
 
-1) **App-Qualität**: Bewertung der Top-Apps nach Kriterien wie Standards, Content-Accuracy, UI und Datenbankqüllen.  
+1) **App-Qualität**: Bewertung der Top-Apps nach Kriterien wie Standards, Content-Accuracy, UI und Datenbankquellen.  
 2) **Wirksamkeit in der Nutzung**: Freiwillige nutzten über **8 Wochen** eine der Apps (Intervention) vs. Kontrollgruppe ohne App-Nutzung (laut Studiendesign).
 
 ---
@@ -57,7 +57,7 @@ Kalorienzählen-Apps können beim Tracken helfen – aber die Studie zeigt auch:
 
 ---
 
-## Qüllen
+## Quellen
 
 Banerjee P, et al. *Calorie counting smart phone apps: Effectiveness in nutritional awareness, lifestyle modification and weight management among young Indian adults.* Health Informatics Journal. 2019. doi: [10.1177/1460458219852531](https://doi.org/10.1177/1460458219852531).
 

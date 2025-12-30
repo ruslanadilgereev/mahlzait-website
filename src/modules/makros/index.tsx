@@ -370,7 +370,7 @@ function MakrosPage({ config }: Props) {
                     Muskelmasse beim Abnehmen. Empfehlung: 1,6-2,2g pro kg Körpergewicht.
                   </p>
                   <div className="mt-2">
-                    <p className="text-xs opacity-60">Gute Qüllen:</p>
+                    <p className="text-xs opacity-60">Gute Quellen:</p>
                     <p className="text-sm">Fleisch, Fisch, Eier, Quark, Huelsenfruechte</p>
                   </div>
                 </div>
@@ -381,11 +381,11 @@ function MakrosPage({ config }: Props) {
                   <div className="badge badge-warning mb-2">Kohlenhydrate</div>
                   <h3 className="card-title">4 kcal pro Gramm</h3>
                   <p className="opacity-80">
-                    Hauptenergieqülle für Gehirn und Muskeln. Besonders wichtig für Sport und
+                    Hauptenergiequelle für Gehirn und Muskeln. Besonders wichtig für Sport und
                     Leistung. Qualität zählt: komplexe Carbs bevorzugen.
                   </p>
                   <div className="mt-2">
-                    <p className="text-xs opacity-60">Gute Qüllen:</p>
+                    <p className="text-xs opacity-60">Gute Quellen:</p>
                     <p className="text-sm">Vollkorn, Kartoffeln, Reis, Obst, Gemüse</p>
                   </div>
                 </div>
@@ -400,7 +400,7 @@ function MakrosPage({ config }: Props) {
                     kg Körpergewicht gehen. Ungesättigte Fette bevorzugen.
                   </p>
                   <div className="mt-2">
-                    <p className="text-xs opacity-60">Gute Qüllen:</p>
+                    <p className="text-xs opacity-60">Gute Quellen:</p>
                     <p className="text-sm">Nüsse, Avocado, Olivenöl, fetter Fisch</p>
                   </div>
                 </div>

@@ -55,7 +55,7 @@ Mehr Protein ist einer der pragmatischsten Hebel für Abnehmen: bessere Sattigun
 
 ---
 
-## Qüllen
+## Quellen
 
 Moon J, et al. *Clinical Evidence and Mechanisms of High-Protein Diet-Induced Weight Loss.* Journal of Obesity & Metabolic Syndrome. 2020. doi: [10.7570/jomes20028](https://doi.org/10.7570/jomes20028).
 
