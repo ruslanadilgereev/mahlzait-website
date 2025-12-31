@@ -407,7 +407,7 @@ export const articlesMeta: ArticleMeta[] = [
   },
   {
     slug: "fitness-mythen-faktencheck",
-    title: "Fitness-Mythen im Faktencheck: 10 Cardio-Mythen, die sich hartnaeckig halten",
+    title: "Fitness-Mythen im Faktencheck: 10 Cardio-Mythen, die sich hartnäckig halten",
     description:
       "Evidenzbasierter Faktencheck zu 10 verbreiteten Cardio-/Fitness-Mythen: Gehen, Schweiss, 10.000 Schritte, Zone 2, Wearables und \"Cardio killt Gains\" – mit Studien und Mechanismen.",
     tags: ["Training", "Fitness", "Cardio", "Mythen"],
