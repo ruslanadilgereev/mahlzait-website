@@ -177,7 +177,7 @@ export default function LiveDemo() {
                                 {/* Status Bar */}
                                 <div className="bg-primary/10 px-3 2xs:px-4 py-2 2xs:py-2.5 flex justify-between items-center flex-shrink-0">
                                     <span className="font-semibold text-[11px] 2xs:text-xs">Mahlzait</span>
-                                    <span className="opacity-70 text-[10px] 2xs:text-[11px]">🔴 Live</span>
+                                    <span className="opacity-70 text-[10px] 2xs:text-[11px]">🟢 Live</span>
                                 </div>
 
                                 {/* Messages Area */}
