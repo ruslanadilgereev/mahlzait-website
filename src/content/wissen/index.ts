@@ -26,6 +26,25 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "ernaehrungswissenschaft-grundlagen-erklaert",
+    title: "Ernährungswissenschaft einfach erklärt: 13 Minuten für deine Gesundheit",
+    description:
+      "Eine wissenschaftlich fundierte Zusammenfassung der wichtigsten Ernährungs-Basics. Von Verdauung über Makros bis zu praktischen Tipps – ohne Bullshit.",
+    tags: ["Ernährung", "Wissenschaft", "Grundlagen", "Gesundheit"],
+    publishedAt: "2026-01-04",
+    readingTime: 10,
+    featured: true,
+    sources: [
+      {
+        title: "ALL OF NUTRITION SCIENCE in 13 Minutes (No BS)",
+        authors: "Dabby",
+        journal: "YouTube",
+        year: 2023,
+        url: "https://www.youtube.com/watch?v=YDDjkxz2_1k",
+      },
+    ],
+  },
+  {
     slug: "gewichtsverlust-halten-wissenschaft",
     title: "Warum Gewicht halten so schwer ist - Was die Wissenschaft sagt",
     description:
