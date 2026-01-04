@@ -90,32 +90,49 @@ function ArticlePage({ config, article, content }: Props) {
                 </h3>
                 <ul className="space-y-3">
                   {article.sources.map((source, idx) => (
-                    <li key={idx} className="text-sm">
-                      <p className="font-medium">{source.title}</p>
-                      <p className="opacity-70">
-                        {source.authors} ({source.year}). <em>{source.journal}</em>.
-                      </p>
-                      <div className="flex flex-wrap gap-2 mt-1">
-                        {source.doi && (
-                          <a
-                            href={`https://doi.org/${source.doi}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="link link-primary text-xs"
-                          >
-                            DOI: {source.doi}
-                          </a>
-                        )}
-                        {source.pmid && (
-                          <a
-                            href={`https://pubmed.ncbi.nlm.nih.gov/${source.pmid}/`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="link link-primary text-xs"
-                          >
-                            PubMed: {source.pmid}
-                          </a>
-                        )}
+                    <li key={idx} className="text-sm flex gap-3">
+                      <span className="font-mono text-xs opacity-50 mt-0.5 shrink-0">
+                        [{idx + 1}]
+                      </span>
+                      <div>
+                        <p>
+                          <span className="font-semibold">{source.authors}</span>.{" "}
+                          "{source.title}."{" "}
+                          <em className="opacity-80">{source.journal}</em>,{" "}
+                          {source.year}.
+                        </p>
+                        <div className="flex flex-wrap gap-2 mt-1">
+                          {source.doi && (
+                            <a
+                              href={`https://doi.org/${source.doi}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="link link-primary text-xs"
+                            >
+                              DOI: {source.doi}
+                            </a>
+                          )}
+                          {source.pmid && (
+                            <a
+                              href={`https://pubmed.ncbi.nlm.nih.gov/${source.pmid}/`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="link link-primary text-xs"
+                            >
+                              PubMed: {source.pmid}
+                            </a>
+                          )}
+                          {source.url && !source.doi && !source.pmid && (
+                            <a
+                              href={source.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="link link-primary text-xs"
+                            >
+                              Link
+                            </a>
+                          )}
+                        </div>
                       </div>
                     </li>
                   ))}
