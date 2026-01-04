@@ -5,32 +5,18 @@
   "devCommand": "pnpm run dev",
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "mahlzait.de"
+        }
+      ],
+      "destination": "https://www.mahlzait.de/:path*",
+      "permanent": true
+    },
+    {
       "source": "/sitemap.xml",
-      "destination": "/sitemap-index.xml",
-      "permanent": true
-    },
-    {
-      "source": "/wp-sitemap.xml",
-      "destination": "/sitemap-index.xml",
-      "permanent": true
-    },
-    {
-      "source": "/wp-sitemap-posts-page-1.xml",
-      "destination": "/sitemap-index.xml",
-      "permanent": true
-    },
-    {
-      "source": "/wp-sitemap-posts-post-1.xml",
-      "destination": "/sitemap-index.xml",
-      "permanent": true
-    },
-    {
-      "source": "/wp-sitemap-taxonomies-category-1.xml",
-      "destination": "/sitemap-index.xml",
-      "permanent": true
-    },
-    {
-      "source": "/wp-sitemap-users-1.xml",
       "destination": "/sitemap-index.xml",
       "permanent": true
     }
