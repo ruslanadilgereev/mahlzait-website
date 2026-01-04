@@ -1,4 +1,4 @@
-Digitale Abnehmprogramme sind beqüm: App öffnen, Essen loggen, Plan folgen. Aber funktionieren sie auch **über 12 Monate** – und was unterscheidet „Erfolg“ von „Abbruch“?
+Digitale Abnehmprogramme sind bequem: App öffnen, Essen loggen, Plan folgen. Aber funktionieren sie auch **über 12 Monate** – und was unterscheidet „Erfolg“ von „Abbruch“?
 
 Eine sehr grosse Kohorten-Auswertung hat genau das für ein kommerzielles Programm untersucht (CSIRO Total Wellbeing Diet Online).
 

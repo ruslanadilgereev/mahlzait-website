@@ -26,7 +26,7 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
-    slug: "ernaehrungswissenschaft-grundlagen-erklaert",
+    slug: "ernährungswissenschaft-grundlagen-erklaert",
     title: "Ernährungswissenschaft einfach erklärt: 13 Minuten für deine Gesundheit",
     description:
       "Eine wissenschaftlich fundierte Zusammenfassung der wichtigsten Ernährungs-Basics. Von Verdauung über Makros bis zu praktischen Tipps – ohne Bullshit.",
@@ -248,7 +248,7 @@ export const articlesMeta: ArticleMeta[] = [
     title: "Low-Carb vs. Low-Fat: Was ist besser zum Abnehmen? (Meta-Analyse)",
     description:
       "Meta-Analyse (2015) zu RCTs: Low-Carb (≤120 g/Tag) vs. Low-Fat (≤30% Fett). Praxis-Fazit: Adhaerenz und Kalorienbilanz sind meist der grössere Hebel.",
-    tags: ["Abnehmen", "Kalorien", "Meta-Analyse", "Ernaehrung"],
+    tags: ["Abnehmen", "Kalorien", "Meta-Analyse", "Ernährung"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -263,11 +263,11 @@ export const articlesMeta: ArticleMeta[] = [
     ],
   },
   {
-    slug: "ki-ernaehrungsanalyse-aus-fotos-review",
-    title: "KI-Ernaehrungsanalyse per Foto: Wie genau ist das? (Review)",
+    slug: "ki-ernährungsanalyse-aus-fotos-review",
+    title: "KI-Ernährungsanalyse per Foto: Wie genau ist das? (Review)",
     description:
-      "Systematischer Review (Annals of Medicine, 2023): KI-basierte Ernaehrungsanalyse aus Essensfotos im Vergleich zu Menschen/Ground Truth. Ergebnis: stark variable Fehler – gut bei einfachen Foods, schwieriger bei komplexen Gerichten.",
-    tags: ["KI", "Tracking", "Ernaehrung", "Review"],
+      "Systematischer Review (Annals of Medicine, 2023): KI-basierte Ernährungsanalyse aus Essensfotos im Vergleich zu Menschen/Ground Truth. Ergebnis: stark variable Fehler – gut bei einfachen Foods, schwieriger bei komplexen Gerichten.",
+    tags: ["KI", "Tracking", "Ernährung", "Review"],
     publishedAt: "2025-12-22",
     readingTime: 7,
     sources: [
@@ -304,7 +304,7 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "schlaf-verlaengern-weniger-kalorien-rct",
     title: "Mehr Schlaf, weniger Kalorien: Sleep-Extension RCT",
     description:
-      "Randomisierte Studie (JAMA Intern Med, 2022): Schlafdaür +~1.2 h/Nacht durch Schlafhygiene-Coaching; Energieaufnahme −270 kcal/Tag vs Kontrolle – ohne Diaetvorgaben.",
+      "Randomisierte Studie (JAMA Intern Med, 2022): Schlafdauer +~1.2 h/Nacht durch Schlafhygiene-Coaching; Energieaufnahme −270 kcal/Tag vs Kontrolle – ohne Diaetvorgaben.",
     tags: ["Schlaf", "Abnehmen", "Studie", "Kalorien"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -321,7 +321,7 @@ export const articlesMeta: ArticleMeta[] = [
   },
   {
     slug: "aerobes-training-abnehmen-dosis-wirkung-meta-analyse",
-    title: "Ausdaürtraining zum Abnehmen: Dosis-Wirkung (Meta-Analyse)",
+    title: "Ausdauertraining zum Abnehmen: Dosis-Wirkung (Meta-Analyse)",
     description:
       "Dose-Response Meta-Analyse (2024) mit 116 RCTs: pro +30 Min/Woche aerobes Training −0.52 kg Gewicht und −0.56 cm Taille im Mittel. 150 Min/Woche als sinnvoller Zielwert.",
     tags: ["Training", "Abnehmen", "Meta-Analyse", "Bewegung"],
@@ -360,8 +360,8 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "high-protein-diet-abnehmen-mechanismen-uebersicht",
     title: "High-Protein Diet: Mechanismen & Evidenz für Gewichtsverlust",
     description:
-      "Übersicht (2020): Proteinreiche Ernaehrung kann Abnehmen unterstützen (Sattigungshormone, DIT) und fettfreie Masse eher erhalten. Laengere Trials (6–12 Monate) berichten auch weniger Regain.",
-    tags: ["Protein", "Abnehmen", "Ernaehrung", "Review"],
+      "Übersicht (2020): Proteinreiche Ernährung kann Abnehmen unterstützen (Sattigungshormone, DIT) und fettfreie Masse eher erhalten. Laengere Trials (6–12 Monate) berichten auch weniger Regain.",
+    tags: ["Protein", "Abnehmen", "Ernährung", "Review"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -398,7 +398,7 @@ export const articlesMeta: ArticleMeta[] = [
     title: "CALERIE: 25% Kalorienrestriktion über 2 Jahre (Design & Methoden)",
     description:
       "Design-&-Methods Paper (2011): Multi-Center RCT mit 220 nicht-adipösen Erwachsenen (BMI 22–<28), 2 Jahre 25% Kalorienrestriktion. Fokus: Interventions-Mechanik (Training, Tools, Feedback, Toolbox).",
-    tags: ["Kalorien", "Studie", "Verhalten", "Ernaehrung"],
+    tags: ["Kalorien", "Studie", "Verhalten", "Ernährung"],
     publishedAt: "2025-12-22",
     readingTime: 7,
     sources: [
@@ -415,7 +415,7 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "chronotyp-schlafqualitaet-gewichthalten-studie",
     title: "Gewicht halten: Morgen-Typ und besserer Schlaf? (Studie)",
     description:
-      "Vergleichsstudie (2015): Erfolgreiche Gewicht-Halter (NWCR, n=690) waren haeufiger Morgen-Typen und berichteten bessere Schlafqualitaet als Teilnehmende klassischer Abnehm-Interventionen.",
+      "Vergleichsstudie (2015): Erfolgreiche Gewicht-Halter (NWCR, n=690) waren häufiger Morgen-Typen und berichteten bessere Schlafqualitaet als Teilnehmende klassischer Abnehm-Interventionen.",
     tags: ["Gewicht halten", "Schlaf", "Studie", "Verhalten"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -432,9 +432,9 @@ export const articlesMeta: ArticleMeta[] = [
   },
   {
     slug: "gewichthalten-health-tracking-apps-nwcr",
-    title: "Gewicht halten: Warum Tracking-Apps so haeufig sind (NWCR)",
+    title: "Gewicht halten: Warum Tracking-Apps so häufig sind (NWCR)",
     description:
-      "Studie (2017): NWCR-Gewicht-Halter nutzen Self-Monitoring-Technologie und Smartphone-Tracking-Apps haeufiger als eine nationale Vergleichsstichprobe. Tracking wirkt als Routine- und Feedback-System.",
+      "Studie (2017): NWCR-Gewicht-Halter nutzen Self-Monitoring-Technologie und Smartphone-Tracking-Apps häufiger als eine nationale Vergleichsstichprobe. Tracking wirkt als Routine- und Feedback-System.",
     tags: ["Gewicht halten", "Tracking", "App", "Studie"],
     publishedAt: "2025-12-22",
     readingTime: 6,
@@ -453,7 +453,7 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "app-self-monitoring-adhaerenz-gewichtsverlust",
     title: "Tracking in Apps: Konsistenz schlaegt Perfektion (Studie)",
     description:
-      "Studie (2021): Bei App-basiertem Ernaehrungs-Tracking waren Konsistenz und Freqünz mit Gewichtsverlust assoziiert – Vollstaendigkeit weniger. Praxis: lieber regelmaessig loggen als perfekt.",
+      "Studie (2021): Bei App-basiertem Ernährungs-Tracking waren Konsistenz und Frequenz mit Gewichtsverlust assoziiert – Vollstaendigkeit weniger. Praxis: lieber regelmaessig loggen als perfekt.",
     tags: ["Tracking", "App", "Abnehmen", "Studie"],
     publishedAt: "2025-12-22",
     readingTime: 5,

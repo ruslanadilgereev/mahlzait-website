@@ -355,6 +355,6 @@ If you find bugs, provide:
 1. Test scenario that failed
 2. Browser + OS version
 3. Console errors (screenshot)
-4. Network tab showing failed reqüst
+4. Network tab showing failed request
 5. Expected vs actual behavior
 

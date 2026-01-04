@@ -51,7 +51,7 @@ Ein wiederkehrender Vorteil: Protein kann helfen, **fettfreie Masse** beim Abneh
 
 ## Fazit
 
-Mehr Protein ist einer der pragmatischsten Hebel für Abnehmen: bessere Sattigung, höherer DIT, häufig bessere Körperzusammensetzung. Entscheidend bleibt die Umsetzung: alltagstauglich, daürhaft, kombiniert mit Bewegung.
+Mehr Protein ist einer der pragmatischsten Hebel für Abnehmen: bessere Sattigung, höherer DIT, häufig bessere Körperzusammensetzung. Entscheidend bleibt die Umsetzung: alltagstauglich, dauerhaft, kombiniert mit Bewegung.
 
 ---
 

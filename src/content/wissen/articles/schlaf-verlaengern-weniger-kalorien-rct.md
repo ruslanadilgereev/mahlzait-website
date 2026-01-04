@@ -1,4 +1,4 @@
-Schlaf wird beim Abnehmen oft unterschätzt. Dabei ist kurze Schlafdaür nicht nur „müde sein“, sondern kann Hunger, Heisshunger und Essverhalten beeinflussen.
+Schlaf wird beim Abnehmen oft unterschätzt. Dabei ist kurze Schlafdauer nicht nur „müde sein“, sondern kann Hunger, Heisshunger und Essverhalten beeinflussen.
 
 Eine randomisierte Studie hat getestet, ob **Schlaf verlängern** in echten Alltagsbedingungen die Energieaufnahme senken kann – ohne vorgeschriebene Diät oder Sportprogramm.
 
@@ -6,7 +6,7 @@ Eine randomisierte Studie hat getestet, ob **Schlaf verlängern** in echten Allt
 
 - Randomisierte klinische Studie mit **80** Erwachsenen (BMI 25–29.9), die habitül **<6.5 h** pro Nacht schliefen.
 - Intervention: **Schlafhygiene-Coaching**, Ziel **8.5 h** Bettzeit vs. Kontrollgruppe (gewohnter Schlaf).
-- Ergebnis: Schlafdaür stieg im Schnitt um **~1.2 Stunden/Nacht**.
+- Ergebnis: Schlafdauer stieg im Schnitt um **~1.2 Stunden/Nacht**.
 - Energieaufnahme sank im Vergleich zur Kontrolle um **−270 kcal/Tag** (objektiv gemessen).
 - Kein signifikanter Effekt auf Gesamt-Energieverbrauch; insgesamt ergab sich eine **negative Energiebilanz** und Gewichtsreduktion vs. Kontrolle.
 

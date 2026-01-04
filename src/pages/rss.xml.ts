@@ -33,7 +33,7 @@ export const GET: APIRoute = async (context) => {
         categories: [
           "Gesundheit",
           "Fitness",
-          "Ernaehrung",
+          "Ernährung",
           "Apps",
           "KI",
           "Technologie",
@@ -45,7 +45,7 @@ export const GET: APIRoute = async (context) => {
         description:
           "Mit Mahlzait's KI-Feature loggst du Mahlzeiten in Sekunden. Einfach Foto machen oder per Text beschreiben - die KI analysiert und schlaegt Naehrwerte vor. Schneller war Kalorienzaehlen noch nie.",
         pubDate: new Date("2024-11-15"),
-        categories: ["KI", "Ernaehrung", "Innovation", "Features"],
+        categories: ["KI", "Ernährung", "Innovation", "Features"],
       },
       {
         title: "Barcode-Scanner und riesige Lebensmitteldatenbank",
@@ -53,7 +53,7 @@ export const GET: APIRoute = async (context) => {
         description:
           "Scanne Produkte mit dem integrierten Barcode-Scanner oder durchsuche eine umfangreiche Datenbank mit tausenden Lebensmitteln. Praezise Naehrwertangaben in Sekundenschnelle.",
         pubDate: new Date("2024-11-18"),
-        categories: ["Features", "Convenience", "Ernaehrung"],
+        categories: ["Features", "Convenience", "Ernährung"],
       },
       {
         title: "Rezepte erstellen und teilen - Mahlzait Community",
@@ -95,7 +95,7 @@ export const GET: APIRoute = async (context) => {
       <docs>https://www.mahlzait.de</docs>
       <generator>Astro RSS</generator>
       <category>Gesundheit & Fitness</category>
-      <category>Ernaehrung</category>
+      <category>Ernährung</category>
       <category>Mobile Apps</category>
       <category>Kuenstliche Intelligenz</category>
       <category>Wissen</category>

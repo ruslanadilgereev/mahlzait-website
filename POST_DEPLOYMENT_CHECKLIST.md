@@ -301,7 +301,7 @@ git push
 ```
 
 ### 2. Nach Push - Screenshot machen:
-- Homepage Seitenqülltext mit Schemas
+- Homepage Seitenquelltext mit Schemas
 - Google Search Console "Property verifiziert"
 - Rich Results Test "Passed"
 

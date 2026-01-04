@@ -6,8 +6,8 @@ Eine Studie verglich deshalb sehr erfolgreiche „Gewicht-Halter“ aus dem Nati
 
 - Verglichen wurden **690** NWCR-Mitglieder (langfristige Gewichtserhaltung) mit **75** Personen aus Verhaltens-Abnehmprogrammen.
 - NWCR-Mitglieder waren (kontrolliert für Alter) häufiger **Morgen-Typen** und seltener Abendtypen.
-- Sie berichteten **bessere Schlafqualität**, **längere Schlafdaür** und **kürzere Einschlaflatenz**.
-- In der Studie berichteten weniger NWCR-Mitglieder sehr kurze Schlafdaür (<6 h oder <7 h).
+- Sie berichteten **bessere Schlafqualität**, **längere Schlafdauer** und **kürzere Einschlaflatenz**.
+- In der Studie berichteten weniger NWCR-Mitglieder sehr kurze Schlafdauer (<6 h oder <7 h).
 
 ---
 

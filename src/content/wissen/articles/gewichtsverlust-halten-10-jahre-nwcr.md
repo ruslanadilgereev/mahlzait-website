@@ -22,7 +22,7 @@ Die NWCR ist eine Registry von Menschen, die grosse Gewichtsverluste langfristig
 - Gewicht
 - Aktivität
 - Ernährungsverhalten
-- Self-Monitoring (z.B. Wiegefreqünz)
+- Self-Monitoring (z.B. Wiegefrequenz)
 
 erhoben und analysiert.
 
@@ -34,7 +34,7 @@ erhoben und analysiert.
 
 Die Ergebnisse zeigen: Ein grosser Teil der Registry-Teilnehmenden behält einen erheblichen Teil des Gewichtsverlusts über 10 Jahre.
 
-### 2. Der Erfolg ist verhaltensgetrieben – daürhaft
+### 2. Der Erfolg ist verhaltensgetrieben – dauerhaft
 
 Die „Basics“ tauchen wieder auf: Aktivität, Ernährungsroutinen und Self-Monitoring. Und vor allem: Das Ganze muss **über Jahre** stabil bleiben.
 

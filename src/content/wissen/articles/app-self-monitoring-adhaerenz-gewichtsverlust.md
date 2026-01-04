@@ -7,7 +7,7 @@ Eine Studie hat untersucht, welche Aspekte der Adhärenz bei **App-basiertem Ern
 - Prospektive Studie (single-arm, unkontrolliert) mit **N = 90** Personen mit Übergewicht/Adipositas.
 - Daür: **8 Wochen** Ernährungs-Tracking in einer App (Calorie Counter by FatSecret).
 - Ergebnis: durchschnittliche Gewichtsveränderung nach 8 Wochen **−1.5 ± 2.1 kg**.
-- **Konsistenz** (wie viele Wochen regelmässig getrackt wurde) und **Freqünz** waren signifikant mit Prozent-Gewichtsverlust assoziiert.
+- **Konsistenz** (wie viele Wochen regelmässig getrackt wurde) und **Frequenz** waren signifikant mit Prozent-Gewichtsverlust assoziiert.
 - „Vollständigkeit“ war in dieser Analyse nicht klar assoziiert.
 
 ---
@@ -16,7 +16,7 @@ Eine Studie hat untersucht, welche Aspekte der Adhärenz bei **App-basiertem Ern
 
 Die Studie schaute sich drei typische „Adhärenz“-Dimensionen beim Tracking an:
 
-- **Freqünz**: wie oft wird getrackt?
+- **Frequenz**: wie oft wird getrackt?
 - **Konsistenz**: über wie viele Wochen bleibt das Tracking regelmässig?
 - **Vollständigkeit**: wie „komplett“ sind die Einträge?
 
@@ -53,7 +53,7 @@ Wenn Vollständigkeit nicht der Haupttreiber ist, ist das eine gute Nachricht: S
 
 ## Fazit
 
-Beim App-Tracking scheint **Konsistenz und Freqünz** wichtiger zu sein als Vollständigkeit. Für die Praxis heisst das: baü ein System, das du langfristig machst – nicht eins, das „perfekt“ wäre.
+Beim App-Tracking scheint **Konsistenz und Frequenz** wichtiger zu sein als Vollständigkeit. Für die Praxis heisst das: baü ein System, das du langfristig machst – nicht eins, das „perfekt“ wäre.
 
 ---
 

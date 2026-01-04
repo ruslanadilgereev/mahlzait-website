@@ -65,6 +65,6 @@ Autor A, et al. *Titel.* Journal. Jahr. doi: [DOI](https://doi.org/DOI). PMID: [
 
 ---
 
-*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernaehrungsfachkraft.*
+*Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernährungsfachkraft.*
 
 

@@ -37,7 +37,7 @@ Die Ergebnisse zeigen kein einzelnes „KI ist immer besser/schlechter“, sonde
 
 Wegen der starken Heterogenität (unterschiedliche Datensätze, Metriken, Reporting) war keine saubere meta-analytische Zusammenfassung möglich. Genau das ist ein Hinweis darauf, was der Forschung aktuell fehlt: **vergleichbare Benchmarks**.
 
-### 3. Praxis-Konseqünz: KI ist ein Assistenzsystem, kein Richter
+### 3. Praxis-Konsequenz: KI ist ein Assistenzsystem, kein Richter
 
 Für Nutzer ist das eigentlich eine gute Nachricht: KI kann dir das Logging massiv beschleunigen – aber für Genauigkeit brauchst du **Feedback/Bestätigung** (Portion, Zutaten, Zubereitung).
 

@@ -14,7 +14,7 @@ Optional (aber empfohlen): Lege auch das PDF unter `src/modules/wissen/` ab, dam
 
 - **Dateiname = Slug**: `src/content/wissen/articles/<slug>.md`
 - **Nur ASCII**, alles klein, mit `-`:
-  - `ernaehrung` statt `ernährung`
+  - `ernährung` statt `ernährung`
   - `kalorien` statt `kalorien`
   - `ä/ö/ü` statt ae oe ue
   - keine Sonderzeichen

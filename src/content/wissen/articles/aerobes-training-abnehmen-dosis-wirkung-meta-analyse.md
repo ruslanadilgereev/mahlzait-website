@@ -1,4 +1,4 @@
-Wie viel Ausdaürtraining „braucht“ man wirklich fürs Abnehmen? Viele Empfehlungen nennen 150 Minuten pro Woche – aber die spannende Frage ist die **Dosis-Wirkung**: Was bringt jede zusätzliche halbe Stunde?
+Wie viel Ausdauertraining „braucht“ man wirklich fürs Abnehmen? Viele Empfehlungen nennen 150 Minuten pro Woche – aber die spannende Frage ist die **Dosis-Wirkung**: Was bringt jede zusätzliche halbe Stunde?
 
 Eine grosse systematische Übersicht mit Dose-Response Meta-Analyse hat genau das für Erwachsene mit Übergewicht/Adipositas ausgewertet.
 
@@ -39,7 +39,7 @@ Die Ergebnisse lassen sich praktisch übersetzen: Jede Woche „ein bisschen meh
 
 ### 3. Training ist auch ein Adhärenz-Tool
 
-Ausdaürtraining kann Appetitregulation, Schlaf und Stimmung verbessern – Faktoren, die wiederum das Dranbleiben an Ernährungsroutinen erleichtern können.
+Ausdauertraining kann Appetitregulation, Schlaf und Stimmung verbessern – Faktoren, die wiederum das Dranbleiben an Ernährungsroutinen erleichtern können.
 
 ---
 

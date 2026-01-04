@@ -81,7 +81,7 @@ function CookieConsent() {
     };
 
     // Defer to idle time to avoid competing with critical rendering
-    const ric = (window as any).reqüstIdleCallback as
+    const ric = (window as any).requestIdleCallback as
       | ((cb: () => void, opts?: { timeout?: number }) => void)
       | undefined;
     if (typeof ric === "function") {

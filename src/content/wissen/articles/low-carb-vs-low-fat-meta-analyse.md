@@ -16,7 +16,7 @@ Low-Carb oder Low-Fat – welche Ernährungsstrategie ist beim Abnehmen „besse
 Die Autoren haben eine systematische Literaturrecherche (PubMed, 1966–2014) gemacht und Studien eingeschlossen, die:
 
 - Low-Carb vs Low-Fat direkt vergleichen
-- mindestens 8 Wochen daürn
+- mindestens 8 Wochen dauern
 - Übergewicht/Adipositas adressieren
 
 ---
