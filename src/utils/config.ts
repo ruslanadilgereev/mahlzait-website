@@ -224,7 +224,7 @@ const templateConfig: TemplateConfig = {
           screenshot: "/screenshots/suche.webp",
         },
         {
-          title: "Manülle Eingabe",
+          title: "Manuelle Eingabe",
           subtitle:
             "Erstelle eigene Einträge mit individuellen Portionsgrößen und Nährwerten – flexibel und präzise für jede Mahlzeit",
           icon: "/3D/pencil-front-color.webp",

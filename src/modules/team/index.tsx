@@ -171,7 +171,7 @@ function TeamPage({ config }: Props) {
                 <h3 className="text-lg font-bold">Nächste Schritte</h3>
                 <ul className="mt-2 space-y-2">
                   <li>Marketing & Wachstum fokussieren</li>
-                  <li>Strategische Partnerschaften aufbaün</li>
+                  <li>Strategische Partnerschaften aufbauen</li>
                   <li>Noch schnellere AI‑Performance</li>
                 </ul>
               </div>

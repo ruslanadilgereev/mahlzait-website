@@ -260,7 +260,7 @@ function KalorienbedarfPage({ config }: Props) {
                       <br />
                       Männer: 10 x Gewicht + 6.25 x Grösse - 5 x Alter + 5
                       <br />
-                      Fraün: 10 x Gewicht + 6.25 x Grösse - 5 x Alter - 161
+                      Frauen: 10 x Gewicht + 6.25 x Grösse - 5 x Alter - 161
                     </p>
                   </div>
                 </div>

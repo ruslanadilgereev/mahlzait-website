@@ -35,7 +35,7 @@ Ein wiederkehrender Vorteil: Protein kann helfen, **fettfreie Masse** beim Abneh
 
 ## Was heisst das praktisch?
 
-- Ziel: **Protein in jede Mahlzeit** einbaün (statt alles „abends reinzuschieben“).
+- Ziel: **Protein in jede Mahlzeit** einbauen (statt alles „abends reinzuschieben“).
 - Kombiniere Protein mit **Ballaststoffen/Volumen** (Gemüse, Hülsenfrüchte), damit Sattigung nicht nur über „Kalorien“ kommt.
 - Für Körperzusammensetzung: **Krafttraining** macht den Protein-Hebel deutlich stärker.
 
