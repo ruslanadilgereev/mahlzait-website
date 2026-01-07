@@ -98,6 +98,7 @@ function CookieConsent() {
     if (prefs.analytics) {
       loadGoogleAnalytics();
       loadMicrosoftClarity();
+      loadMetricool();
     }
 
     // Marketing scripts
@@ -193,6 +194,16 @@ function CookieConsent() {
     document.head.appendChild(script);
   };
 
+  const loadMetricool = () => {
+    if (typeof window === "undefined" || (window as any).beTracker) return;
+
+    const script = document.createElement("script");
+    script.innerHTML = `
+      function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"c7fdef1e28285ccf0e869c509ee83b27"})});
+    `;
+    document.head.appendChild(script);
+  };
+
   // Expose revokeConsent function globally for opt-out links
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -218,7 +229,7 @@ function CookieConsent() {
 
         // Remove tracking scripts
         const scripts = document.querySelectorAll(
-          'script[src*="googletagmanager"], script[src*="clarity"], script[src*="facebook"]',
+          'script[src*="googletagmanager"], script[src*="clarity"], script[src*="facebook"], script[src*="metricool"]',
         );
         scripts.forEach((script) => script.remove());
 
@@ -228,6 +239,7 @@ function CookieConsent() {
           delete (window as any).dataLayer;
           delete (window as any).fbq;
           delete (window as any).clarity;
+          delete (window as any).beTracker;
         } catch {
           // ignore
         }
@@ -356,7 +368,7 @@ function CookieConsent() {
                     <div className="flex-1">
                       <h4 className="font-semibold">Analytics Cookies</h4>
                       <p className="text-sm text-base-content/70">
-                        Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren (Google Analytics, Microsoft Clarity).
+                        Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren (Google Analytics, Microsoft Clarity, Metricool).
                       </p>
                     </div>
                     <input
