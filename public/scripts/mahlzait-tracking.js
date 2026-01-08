@@ -46,6 +46,10 @@ function fbEvent(name, params) {
   if (typeof fbq === "function") fbq("track", name, params);
 }
 
+function pinterestEvent(name, params) {
+  if (typeof pintrk === "function") pintrk("track", name, params);
+}
+
 function computeContext(state) {
   const urlParams = new URLSearchParams(window.location.search);
   const utmSource = urlParams.get("utm_source");
@@ -184,6 +188,20 @@ function bootstrapAnalytics(state) {
         ? "legal"
         : "subpage",
   );
+
+  // Pinterest PageVisit tracking for article and product pages
+  if (state.prefs.marketing && typeof pintrk === "function") {
+    const isArticlePage = path.startsWith("/wissen/") && path !== "/wissen";
+    const isProductPage = ["/app", "/kalorien-zaehlen-app", "/abnehmen-app", "/kalorien-zaehlen", "/abnehmen", "/rechner", "/makros-berechnen"].includes(path);
+    
+    if (isArticlePage || isProductPage) {
+      // Generate unique event_id based on path and timestamp
+      const eventId = "pagevisit_" + path.replace(/\//g, "_").replace(/^_/, "") + "_" + Date.now();
+      pinterestEvent("pagevisit", {
+        event_id: eventId
+      });
+    }
+  }
 
   // Page views this session
   let pageViews = 1;
