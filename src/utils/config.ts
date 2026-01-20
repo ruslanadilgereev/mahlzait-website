@@ -340,7 +340,7 @@ const templateConfig: TemplateConfig = {
     },
     content: `# Datenschutzerklärung
 
-**Stand:** Dezember 2025
+**Stand:** Januar 2026
 
 Diese Datenschutzerklärung gilt für:
 - die Website "mahlzait.de" inkl. aller Unterseiten,
@@ -469,6 +469,19 @@ Die Freigabe erfolgt über die System‑Berechtigungen von iOS/Android und ist j
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und – soweit Gesundheitsdaten betroffen sind – Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung).  
 **Hinweis:** Ohne Aktivierung/Einwilligung findet keine Health‑Sync statt.
 
+#### 4.3.1 Cloud‑Synchronisierung von Gesundheitsdaten (optional)
+
+Zusätzlich zur lokalen Health‑Integration bietet Mahlzait die Möglichkeit, Gesundheitsdaten (Schritte, Gewicht, Schlaf, Aktivitäten) geräteübergreifend über unsere Cloud (Firebase/Google Cloud) zu synchronisieren.
+
+**Diese Cloud‑Synchronisierung erfordert eine separate, ausdrückliche Einwilligung** im Datenschutz‑Dialog der App („Gesundheitsdaten‑Sync").
+
+- **Mit Einwilligung:** Ihre Gesundheitsdaten werden verschlüsselt an Firebase Firestore übertragen und dort gespeichert, um sie auf mehreren Geräten verfügbar zu machen.
+- **Ohne Einwilligung:** Ihre Gesundheitsdaten bleiben ausschließlich lokal auf Ihrem Gerät (in Apple Health/HealthKit bzw. Google Health Connect). Es findet keine Cloud‑Übertragung statt.
+
+**Zweck:** Geräteübergreifende Synchronisierung Ihrer Gesundheitsdaten.  
+**Rechtsgrundlage:** Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung für besondere Kategorien personenbezogener Daten).  
+**Widerruf:** Sie können die Einwilligung jederzeit in den Datenschutz‑Einstellungen der App widerrufen. Bei Widerruf werden keine weiteren Gesundheitsdaten in die Cloud synchronisiert; bereits gespeicherte Daten können Sie über die Kontolöschung entfernen.
+
 ### 4.4 KI‑Funktionen (Text, Bild, Audio, YouTube‑URL)
 
 Mahlzait bietet KI‑Funktionen (z.B. Chat, Vorschläge, Analyse von Fotos, Transkription von Sprache, YouTube‑Rezept‑Analyse). Dafür werden Inhalte verarbeitet, die Sie aktiv bereitstellen, z.B.:
@@ -491,7 +504,22 @@ Wir erhalten und verarbeiten in der App typischerweise Informationen zum Kaufsta
 **Zweck:** Abwicklung/Verwaltung von Abonnements und Freischaltung von Funktionen.  
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO.
 
-### 4.6 App‑Analytics & Session‑Replay (nur mit Einwilligung)
+### 4.6 Consent‑Management in der App
+
+Beim ersten Start der App sowie bei Aktualisierungen der Datenschutzrichtlinie wird Ihnen ein Datenschutz‑Dialog angezeigt. Sie können dort granular entscheiden, welche optionalen Datenverarbeitungen Sie erlauben:
+
+| Kategorie | Beschreibung | Standard |
+|-----------|--------------|----------|
+| **Essenziell** | Für die App‑Funktion notwendig (Login, Speicherung) | Immer aktiv |
+| **Gesundheitsdaten‑Sync** | Cloud‑Synchronisierung von Health‑Daten (Art. 9 DSGVO) | Aus (Opt‑in) |
+| **Analytics** | Firebase Analytics zur Nutzungsanalyse | Aus (Opt‑in) |
+| **Marketing** | Microsoft Clarity Session‑Recording | Aus (Opt‑in) |
+
+**Wichtig:** Alle optionalen Kategorien sind standardmäßig deaktiviert. Ohne Ihre ausdrückliche Einwilligung werden keine Daten an Analytics‑/Marketing‑Dienste gesendet und keine Gesundheitsdaten in die Cloud übertragen.
+
+**Widerruf:** Sie können Ihre Einwilligungen jederzeit in den Datenschutz‑Einstellungen der App (Profil → Datenschutz‑Einstellungen) ändern oder widerrufen.
+
+### 4.7 App‑Analytics & Session‑Replay (nur mit Einwilligung)
 
 Wenn Sie zustimmen, nutzen wir in der App:
 - Firebase Analytics (Google) zur Nutzungsanalyse,
