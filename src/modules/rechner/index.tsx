@@ -33,6 +33,14 @@ const calculators = [
     features: ["Protein in Gramm", "Kohlenhydrate in Gramm", "Fett in Gramm"],
     color: "secondary",
   },
+  {
+    title: "Abnahmedatum berechnen",
+    desc: "Wann erreichst du dein Zielgewicht? Berechne dein exaktes Datum basierend auf deinem geplanten Defizit.",
+    link: "/abnahmedatum-berechnen",
+    icon: "/3D/calender-front-color.webp",
+    features: ["Exaktes Zieldatum", "Tage bis zum Ziel", "Defizit-Slider"],
+    color: "accent",
+  },
 ];
 
 function RechnerPage({ config }: Props) {
