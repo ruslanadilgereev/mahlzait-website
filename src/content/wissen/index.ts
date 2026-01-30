@@ -26,6 +26,32 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "stoffwechsel-eingeschlafen-mythos",
+    title: "Stoffwechsel eingeschlafen? Warum du nicht abnimmst (Mythos & Wahrheit)",
+    description:
+      "Der 'Hungerstoffwechsel' ist ein Mythos. Erfahre, was metabolische Anpassung wirklich ist, warum dein Plateau nicht am Stoffwechsel liegt und wie du es brichst. Wissenschaft vs. Bro-Science.",
+    tags: ["Stoffwechsel", "Abnehmen", "Mythen", "Plateau", "Kalorien"],
+    publishedAt: "2026-01-30",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title: "Metabolic adaptation is not a major barrier to weight-loss maintenance",
+        authors: "Martins C, et al.",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2020,
+        doi: "10.1093/ajcn/nqaa220",
+      },
+      {
+        title: "Metabolic adaptation to weight loss: implications for the athlete",
+        authors: "Trexler ET, et al.",
+        journal: "Journal of the International Society of Sports Nutrition",
+        year: 2014,
+        doi: "10.1186/1550-2783-11-7",
+      },
+    ],
+  },
+  {
     slug: "ernährungswissenschaft-grundlagen-erklaert",
     title: "Ernährungswissenschaft einfach erklärt: 13 Minuten für deine Gesundheit",
     description:
