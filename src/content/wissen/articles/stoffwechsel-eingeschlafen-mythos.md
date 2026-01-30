@@ -75,11 +75,3 @@ Wenn dein Gewicht stagniert ("Plateau"), tue folgendes:
 Dein Stoffwechsel ist nicht "kaputt" oder "eingeschlafen". Er arbeitet einfach effizienter, weil du weniger wiegst und dein Körper Energie sparen will. Der "Hungerstoffwechsel", der eine Zunahme trotz Defizit verursacht, ist ein Märchen.
 
 Wenn du nicht mehr abnimmst, liegt es meist daran, dass dein Defizit durch weniger Bewegung (NEAT) und ungenaues Tracking aufgefressen wurde.
-
----
-
-## Quellen
-
-Martins C, et al. *Metabolic adaptation is not a major barrier to weight-loss maintenance.* Am J Clin Nutr. 2020. doi: [10.1093/ajcn/nqaa220](https://doi.org/10.1093/ajcn/nqaa220).
-
-Trexler ET, Smith-Ryan AE, Norton LE. *Metabolic adaptation to weight loss: implications for the athlete.* J Int Soc Sports Nutr. 2014. doi: [10.1186/1550-2783-11-7](https://doi.org/10.1186/1550-2783-11-7).
