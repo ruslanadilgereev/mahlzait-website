@@ -41,6 +41,14 @@ const calculators = [
     features: ["Exaktes Zieldatum", "Tage bis zum Ziel", "Defizit-Slider"],
     color: "accent",
   },
+  {
+    title: "Kalorienverbrauch Rechner",
+    desc: "Wie lange musst du joggen für einen Döner? Finde heraus, wie viel Sport dein Essen kostet.",
+    link: "/kalorienverbrauch-rechner",
+    icon: "/3D/gym-front-color.webp",
+    features: ["10 beliebte Foods", "6 Sportarten", "Minuten-Berechnung"],
+    color: "warning",
+  },
 ];
 
 function RechnerPage({ config }: Props) {
