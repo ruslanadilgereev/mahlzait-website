@@ -1,0 +1,38 @@
+---
+import Layout from "../Layout.astro";
+import WeightLossDateCalculator from "../components/calculators/WeightLossDateCalculator";
+import defaultTemplateConfig from "../utils/config";
+
+const seo = {
+  title: "Wann bin ich schlank? Abnahmedatum berechnen | Mahlzait",
+  description: "Berechne dein exaktes Zieldatum fürs Abnehmen. Kostenloser Rechner basierend auf deinem Kaloriendefizit. Wann erreichst du dein Wunschgewicht?",
+  image: defaultTemplateConfig.seo.image
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <div class="container mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-black mb-4">Wann erreichst du dein Wunschgewicht? 🎯</h1>
+      <p class="text-xl opacity-80 max-w-2xl mx-auto">
+        Gib dein Start- und Zielgewicht ein. Wir berechnen wissenschaftlich fundiert, an welchem Tag du dein Ziel erreichst.
+      </p>
+    </div>
+
+    <WeightLossDateCalculator client:load />
+
+    <div class="prose max-w-2xl mx-auto mt-16">
+      <h2>Wie funktioniert der Rechner?</h2>
+      <p>
+        Der Rechner basiert auf der <strong>7700-kcal-Regel</strong>. Um 1 Kilogramm Körperfett zu verlieren, musst du rechnerisch etwa 7700 Kalorien einsparen.
+      </p>
+      <ul>
+        <li><strong>Tägliches Defizit:</strong> Die Differenz zwischen deinem Verbrauch und dem, was du isst.</li>
+        <li><strong>Dauer:</strong> (Gewichtsdifferenz × 7700) ÷ Defizit = Tage bis zum Ziel.</li>
+      </ul>
+      <p>
+        Beachte: Dein Stoffwechsel passt sich mit der Zeit an. Der Rechner gibt dir einen linearen Richtwert, der als Motivation dient. Um das Datum wirklich zu treffen, hilft nur eines: <strong>Konsequentes Tracking.</strong>
+      </p>
+    </div>
+  </div>
+</Layout>
