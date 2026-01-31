@@ -26,6 +26,33 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "cheat-days-wahrheit-mythos-studie",
+    title: "Cheat Days: Helfen sie wirklich beim Abnehmen? (Scoping Review 2025)",
+    description:
+      "Die Wahrheit über Cheat Days: Was sagt die Wissenschaft zu Stoffwechsel-Boost, Muskelerhalt und psychologischen Effekten? Ein aktueller Scoping Review klärt auf.",
+    tags: ["Abnehmen", "Cheat Day", "Mythen", "Psychologie", "Diät"],
+    publishedAt: "2026-01-31",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title: "The Role of Cheat Meals in Dieting: A Scoping Review of Physiological and Psychological Responses",
+        authors: "Tan JH, Pang ETC, et al.",
+        journal: "Nutrition Reviews",
+        year: 2025,
+        doi: "10.1093/nutrit/nuaf077",
+        pmid: "40517327",
+      },
+      {
+        title: "Caloric restriction with or without time-restricted eating in weight loss",
+        authors: "Davoodi SH, et al.",
+        journal: "Journal of Research in Medical Sciences",
+        year: 2014,
+        pmid: "25635156",
+      },
+    ],
+  },
+  {
     slug: "stoffwechsel-eingeschlafen-mythos",
     title: "Stoffwechsel eingeschlafen? Warum du nicht abnimmst (Mythos & Wahrheit)",
     description:
