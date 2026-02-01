@@ -26,6 +26,32 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "restaurant-kalorien-unterschaetzung-studie",
+    title: "Warum du im Restaurant mehr isst als du denkst (Studie 2023)",
+    description:
+      "Restaurant-Portionen haben durchschnittlich 1.200 Kalorien – oft doppelt so viel wie gedacht. Warum wir so schlecht schätzen und was du dagegen tun kannst.",
+    tags: ["Restaurant", "Kalorien", "Portionen", "Tracking", "Abnehmen"],
+    publishedAt: "2026-02-01",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title: "Energy content of menus offered in fast food and sit-down restaurants",
+        authors: "Urban LE, Roberts SB, et al.",
+        journal: "JAMA Internal Medicine",
+        year: 2016,
+        doi: "10.1001/jamainternmed.2016.2198",
+      },
+      {
+        title: "The accuracy of stated energy contents of reduced-energy, commercially prepared foods",
+        authors: "Urban LE, Dallal GE, et al.",
+        journal: "Journal of the American Dietetic Association",
+        year: 2010,
+        doi: "10.1016/j.jada.2009.10.003",
+      },
+    ],
+  },
+  {
     slug: "cheat-days-wahrheit-mythos-studie",
     title: "Cheat Days: Helfen sie wirklich beim Abnehmen? (Scoping Review 2025)",
     description:
