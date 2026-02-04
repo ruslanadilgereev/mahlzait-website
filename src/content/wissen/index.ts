@@ -26,6 +26,17 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "ballaststoffe-saettigung-quick-fact",
+    title: "Ballaststoffe und Sättigung: Der unterschätzte Abnehm-Hebel",
+    description:
+      "Warum Ballaststoffe länger satt machen und wie du mit einfachen Tricks auf 25–30 g pro Tag kommst.",
+    tags: ["Ballaststoffe", "Sättigung", "Abnehmen", "Ernährung"],
+    publishedAt: "2026-02-05",
+    readingTime: 2,
+    featured: false,
+    sources: [],
+  },
+  {
     slug: "protein-timing-vor-nach-training-studie",
     title: "Protein-Timing: Direkt nach dem Training oder egal wann?",
     description:
