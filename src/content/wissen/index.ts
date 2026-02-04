@@ -26,6 +26,26 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "protein-timing-vor-nach-training-studie",
+    title: "Protein-Timing: Direkt nach dem Training oder egal wann?",
+    description:
+      "RCT mit 31 trainierten Männern zeigt: Ob Protein direkt oder 3h vor/nach dem Training – kein Unterschied bei Muskelaufbau.",
+    tags: ["Protein", "Muskelaufbau", "Training", "Timing", "Studie"],
+    publishedAt: "2026-02-04",
+    readingTime: 5,
+    featured: false,
+    sources: [
+      {
+        title: "Timing matters? The effects of two different timing of high protein diets on body composition",
+        authors: "Nabavizadeh P, Mohammadi H, et al.",
+        journal: "Frontiers in Nutrition",
+        year: 2024,
+        doi: "10.3389/fnut.2024.1397090",
+        url: "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1397090/full",
+      },
+    ],
+  },
+  {
     slug: "restaurant-kalorien-unterschaetzung-studie",
     title: "Warum du im Restaurant mehr isst als du denkst (Studie 2023)",
     description:
