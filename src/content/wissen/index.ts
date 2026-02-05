@@ -26,6 +26,28 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "wasser-trinken-abnehmen-meta-analyse",
+    title: "Hilft Wasser trinken beim Abnehmen? (Meta-Analyse 2024)",
+    description:
+      "Meta-Analyse von 8 RCTs: Mehr Wasser trinken allein macht nicht schlank. Der Effekt entsteht nur, wenn kalorienhaltige Getränke ersetzt werden. Light-Drinks sind kein Problem.",
+    tags: ["Abnehmen", "Wasser", "Mythen", "Meta-Analyse", "Getränke"],
+    publishedAt: "2026-02-05",
+    readingTime: 6,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Water Intake and Adiposity Outcomes among Overweight and Obese Individuals: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        authors: "Chen QY, Khil J, Keum N",
+        journal: "Nutrients",
+        year: 2024,
+        doi: "10.3390/nu16070963",
+        pmid: "38612997",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11013432/",
+      },
+    ],
+  },
+  {
     slug: "ballaststoffe-saettigung-quick-fact",
     title: "Ballaststoffe und Sättigung: Der unterschätzte Abnehm-Hebel",
     description:
