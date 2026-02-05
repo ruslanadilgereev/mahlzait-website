@@ -13,7 +13,7 @@ const calculators = [
     title: "BMI Rechner",
     desc: "Berechne deinen Body Mass Index (BMI) und finde heraus, ob dein Gewicht im gesunden Bereich liegt. Mit WHO-Kategorien und Idealgewicht.",
     link: "/bmi-rechner",
-    icon: "/3D/scale-front-color.webp",
+    icon: "/3D/heart-front-color.webp",
     features: ["BMI berechnen", "WHO-Kategorien", "Idealgewicht"],
     color: "info",
   },
