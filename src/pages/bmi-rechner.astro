@@ -1,0 +1,109 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import BMIRechnerPage from "@modules/bmi";
+
+const seo = {
+  title: "BMI Rechner - Body Mass Index kostenlos berechnen | Mahlzait",
+  description:
+    "Berechne deinen BMI (Body Mass Index) kostenlos mit unserem Online-Rechner. Inklusive BMI-Tabelle, Interpretation und Tipps zum Idealgewicht. Wissenschaftlich fundiert nach WHO.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="BMI Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Was ist ein guter BMI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein BMI zwischen 18.5 und 24.9 gilt als Normalgewicht und ist mit dem geringsten Gesundheitsrisiko verbunden. Der optimale BMI liegt bei etwa 22.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist der BMI für alle Menschen geeignet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein, der BMI eignet sich nicht für Kinder, Schwangere, Stillende, sehr muskulöse Personen und Menschen über 65. Für diese Gruppen gibt es spezielle Bewertungsmethoden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie kann ich meinen BMI verbessern?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Durch eine ausgewogene Ernährung und regelmässige Bewegung. Mit Kalorientracking kannst du dein Ziel kontrolliert erreichen – ohne Crash-Diäten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie genau ist der BMI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Der BMI ist ein grober Richtwert. Für eine genaue Beurteilung solltest du auch den Bauchumfang, Körperfettanteil und andere Faktoren berücksichtigen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Warum verwenden Ärzte den BMI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Der BMI ist einfach zu berechnen und liefert einen schnellen Anhaltspunkt. Er korreliert auf Bevölkerungsebene gut mit gesundheitlichen Risiken wie Diabetes und Herz-Kreislauf-Erkrankungen.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "BMI berechnen",
+      description: "Berechne deinen Body Mass Index in 2 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Körpergrösse eingeben",
+          text: "Gib deine Körpergrösse in Zentimetern ein (z.B. 175 cm)",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Körpergewicht eingeben",
+          text: "Gib dein aktuelles Körpergewicht in Kilogramm ein (z.B. 75 kg)",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- MedicalWebPage Schema for health content -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      name: "BMI Rechner",
+      headline: "BMI Rechner - Body Mass Index kostenlos berechnen",
+      description: "Kostenloser BMI-Rechner zur Berechnung des Body Mass Index. Inklusive Interpretation nach WHO-Kategorien.",
+      medicalAudience: {
+        "@type": "MedicalAudience",
+        audienceType: "Patient"
+      },
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      }
+    })}
+  </script>
+
+  <BMIRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
