@@ -93,52 +93,76 @@ function BMIRechnerPage({ config }: Props) {
 
           {/* Calculator */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto">
-            <div className="card-body">
-              <h2 className="card-title text-2xl mb-6">BMI berechnen</h2>
+            <div className="card-body p-6 md:p-8">
+              <h2 className="card-title text-2xl mb-8">BMI berechnen</h2>
 
-              {/* Height */}
-              <div className="form-control mb-4">
-                <label className="label">
-                  <span className="label-text font-semibold">Körpergrösse</span>
-                  <span className="label-text-alt">{height} cm</span>
-                </label>
+              {/* Height - Prominent Display */}
+              <div className="mb-8">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-lg font-semibold">Körpergrösse</span>
+                  <div className="flex items-baseline gap-1">
+                    <input
+                      type="number"
+                      min="140"
+                      max="220"
+                      value={height}
+                      onChange={(e) => setHeight(Math.min(220, Math.max(140, Number(e.target.value))))}
+                      className="input input-bordered input-lg w-24 text-center text-3xl font-bold text-primary"
+                    />
+                    <span className="text-xl font-medium opacity-70">cm</span>
+                  </div>
+                </div>
                 <input
                   type="range"
                   min="140"
                   max="220"
                   value={height}
                   onChange={(e) => setHeight(Number(e.target.value))}
-                  className="range range-primary"
+                  className="range range-primary range-lg"
                 />
-                <div className="flex justify-between text-xs px-2 mt-1 opacity-60">
-                  <span>140 cm</span>
-                  <span>180 cm</span>
-                  <span>220 cm</span>
+                <div className="flex justify-between text-sm px-1 mt-2 opacity-50">
+                  <span>140</span>
+                  <span>160</span>
+                  <span>180</span>
+                  <span>200</span>
+                  <span>220</span>
                 </div>
               </div>
 
-              {/* Weight */}
-              <div className="form-control mb-6">
-                <label className="label">
-                  <span className="label-text font-semibold">Körpergewicht</span>
-                  <span className="label-text-alt">{weight} kg</span>
-                </label>
+              {/* Weight - Prominent Display */}
+              <div className="mb-8">
+                <div className="flex items-center justify-between mb-3">
+                  <span className="text-lg font-semibold">Körpergewicht</span>
+                  <div className="flex items-baseline gap-1">
+                    <input
+                      type="number"
+                      min="40"
+                      max="180"
+                      value={weight}
+                      onChange={(e) => setWeight(Math.min(180, Math.max(40, Number(e.target.value))))}
+                      className="input input-bordered input-lg w-24 text-center text-3xl font-bold text-primary"
+                    />
+                    <span className="text-xl font-medium opacity-70">kg</span>
+                  </div>
+                </div>
                 <input
                   type="range"
                   min="40"
                   max="180"
                   value={weight}
                   onChange={(e) => setWeight(Number(e.target.value))}
-                  className="range range-primary"
+                  className="range range-primary range-lg"
                 />
-                <div className="flex justify-between text-xs px-2 mt-1 opacity-60">
-                  <span>40 kg</span>
-                  <span>110 kg</span>
-                  <span>180 kg</span>
+                <div className="flex justify-between text-sm px-1 mt-2 opacity-50">
+                  <span>40</span>
+                  <span>80</span>
+                  <span>120</span>
+                  <span>160</span>
+                  <span>180</span>
                 </div>
               </div>
 
-              <button className="btn btn-primary btn-lg" onClick={calculateBMI}>
+              <button className="btn btn-primary btn-lg w-full text-lg" onClick={calculateBMI}>
                 BMI berechnen
               </button>
 
