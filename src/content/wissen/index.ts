@@ -26,6 +26,28 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "spaet-essen-gewichtszunahme-studie",
+    title: "Macht spätes Essen dick? Was eine Harvard-Studie zeigt",
+    description:
+      "Kontrollierte Crossover-Studie: Spätes Essen verdoppelt Hungergefühl, senkt Kalorienverbrauch um ~60 kcal/Tag und programmiert Fettgewebe auf Speichern. Mechanismen erklärt.",
+    tags: ["Abnehmen", "Mahlzeiten-Timing", "Studie", "Stoffwechsel", "Hunger"],
+    publishedAt: "2026-02-06",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity",
+        authors: "Vujović N, Piron MJ, Qian J, et al.",
+        journal: "Cell Metabolism",
+        year: 2022,
+        doi: "10.1016/j.cmet.2022.09.007",
+        pmid: "36198293",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184753/",
+      },
+    ],
+  },
+  {
     slug: "wasser-trinken-abnehmen-meta-analyse",
     title: "Hilft Wasser trinken beim Abnehmen? (Meta-Analyse 2024)",
     description:
