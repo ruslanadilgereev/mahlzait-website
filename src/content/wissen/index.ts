@@ -26,6 +26,37 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "viele-kleine-mahlzeiten-mythos",
+    title: "Viele kleine Mahlzeiten kurbeln den Stoffwechsel an? Mythos! (Meta-Analysen 2023/2024)",
+    description:
+      "Zwei Meta-Analysen mit 2.500+ Teilnehmern zeigen: Häufiges Essen bringt keinen Stoffwechsel-Boost. Warum der Mythos falsch ist und was wirklich zählt.",
+    tags: ["Abnehmen", "Mythen", "Stoffwechsel", "Meta-Analyse", "Mahlzeiten"],
+    publishedAt: "2026-02-07",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis",
+        authors: "Ezzat-Zadeh Z, Engel A, Engelsen SB, et al.",
+        journal: "JAMA Network Open",
+        year: 2024,
+        doi: "10.1001/jamanetworkopen.2024.42163",
+        pmid: "39485353",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11530941/",
+      },
+      {
+        title:
+          "The effects of eating frequency on changes in body composition and cardiometabolic health in adults: a systematic review with meta-analysis of randomized trials",
+        authors: "Wright N, et al.",
+        journal: "International Journal of Behavioral Nutrition and Physical Activity",
+        year: 2023,
+        doi: "10.1186/s12966-023-01532-z",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10647044/",
+      },
+    ],
+  },
+  {
     slug: "spaet-essen-gewichtszunahme-studie",
     title: "Macht spätes Essen dick? Was eine Harvard-Studie zeigt",
     description:
