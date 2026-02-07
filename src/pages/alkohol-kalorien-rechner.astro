@@ -1,0 +1,118 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import AlkoholKalorienRechnerPage from "@modules/alkohol";
+
+const seo = {
+  title: "Alkohol Kalorien Rechner - Bier, Wein & Cocktails berechnen | Mahlzait",
+  description:
+    "Berechne die Kalorien in Bier, Wein, Wodka und Cocktails. Kostenloser Alkohol-Kalorien-Rechner mit exakter Formel: 1g Alkohol = 7 kcal. Inklusive Kalorientabelle.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Alkohol Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viele Kalorien hat ein Glas Wein?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein Glas Rotwein (200ml, 13% Vol.) enthält etwa 144 kcal aus dem Alkohol. Weisswein (200ml, 11.5% Vol.) hat ca. 127 kcal.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Welcher Alkohol hat die wenigsten Kalorien?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pro Portion haben Spirituosen pur (Wodka, Gin, Whisky) relativ wenige Kalorien (~88 kcal pro Shot). Als Mischgetränk steigen die Kalorien durch Säfte und Softdrinks stark an.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie berechnet man Alkohol-Kalorien?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Formel lautet: Kalorien = Menge (ml) × Vol.% × 0,01 × 0,789 (Dichte Ethanol) × 7 (kcal/g). Ein 500ml Bier mit 5% hat also: 500 × 0,05 × 0,789 × 7 = 138 kcal.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Warum hat Alkohol so viele Kalorien?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Alkohol hat mit 7 kcal pro Gramm einen hohen Brennwert – fast so viel wie Fett (9 kcal/g). Diese 'leeren' Kalorien liefern keine Nährstoffe.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kann man mit Alkohol abnehmen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Alkohol erschwert das Abnehmen. Der Körper stoppt die Fettverbrennung während des Alkoholabbaus. Zudem steigert Alkohol oft den Appetit.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Alkohol-Kalorien berechnen",
+      description: "Berechne die Kalorien in alkoholischen Getränken mit der wissenschaftlichen Formel",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Getränk auswählen oder Menge eingeben",
+          text: "Wähle ein beliebtes Getränk aus der Liste oder gib die Menge in Millilitern ein",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Alkoholgehalt eingeben",
+          text: "Gib den Alkoholgehalt in Volumenprozent (Vol.%) ein, z.B. 5% für Bier oder 40% für Wodka",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Ergebnis ablesen",
+          text: "Die Kalorien werden mit der Formel berechnet: Menge × Vol.% × 0,01 × 0,789 × 7 kcal",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Alkohol Kalorien Rechner",
+      description: "Kostenloser Online-Rechner zur Berechnung der Kalorien in alkoholischen Getränken",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "EUR"
+      },
+      featureList: [
+        "Berechnung der Kalorien aus Alkohol",
+        "Voreinstellungen für beliebte Getränke",
+        "Anzeige des reinen Alkoholgehalts in Gramm",
+        "Vergleich mit anderen Lebensmitteln"
+      ]
+    })}
+  </script>
+
+  <AlkoholKalorienRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
