@@ -57,6 +57,22 @@ const calculators = [
     features: ["10 beliebte Foods", "6 Sportarten", "Minuten-Berechnung"],
     color: "warning",
   },
+  {
+    title: "Protein-Bedarf Rechner",
+    desc: "Berechne deinen optimalen täglichen Proteinbedarf. Basierend auf Gewicht, Aktivitätslevel und deinen Zielen.",
+    link: "/protein-bedarf-rechner",
+    icon: "/3D/heart-front-color.webp",
+    features: ["Individueller Proteinbedarf", "Nach Aktivitätslevel", "Zielbasiert"],
+    color: "error",
+  },
+  {
+    title: "Alkohol-Kalorien Rechner",
+    desc: "Wie viele Kalorien hat dein Feierabendbier? Finde heraus, wie viele Kalorien verschiedene Getränke haben.",
+    link: "/alkohol-kalorien-rechner",
+    icon: "/3D/bulb-front-color.webp",
+    features: ["Bier, Wein, Cocktails", "Pro Glas & pro Abend", "Versteckte Kalorien"],
+    color: "info",
+  },
 ];
 
 function RechnerPage({ config }: Props) {

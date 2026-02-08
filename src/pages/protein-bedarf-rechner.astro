@@ -1,0 +1,110 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import ProteinBedarfRechnerPage from "@modules/protein";
+
+const seo = {
+  title: "Protein-Bedarf Rechner - Täglichen Eiweissbedarf berechnen | Mahlzait",
+  description:
+    "Berechne deinen optimalen täglichen Proteinbedarf kostenlos. Basierend auf Gewicht, Aktivitätslevel und Zielen (Muskelaufbau, Abnehmen, Ausdauer). Wissenschaftlich fundiert.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Protein-Bedarf Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viel Protein brauche ich am Tag?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Der Mindestbedarf liegt bei 0.8g pro kg Körpergewicht. Für Sportler und beim Muskelaufbau empfehlen Studien 1.6-2.2g pro kg. Die genaue Menge hängt von deinem Aktivitätslevel und deinen Zielen ab.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kann ich zu viel Protein essen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bei gesunden Menschen ist ein Proteinkonsum von bis zu 2.5g pro kg unbedenklich. Mehr ist selten nötig und bringt keine zusätzlichen Vorteile. Bei Nierenproblemen solltest du mit einem Arzt sprechen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wann sollte ich Protein essen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Verteile dein Protein möglichst gleichmässig über 3-4 Mahlzeiten. Das Timing-Fenster nach dem Training ist weniger wichtig als früher angenommen – die Gesamtmenge zählt mehr.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Brauche ich Proteinpulver?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein, du kannst deinen Bedarf komplett über normale Lebensmittel decken. Proteinpulver ist praktisch, wenn du unterwegs bist oder Schwierigkeiten hast, genug Protein zu essen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist zu viel Protein schädlich für die Nieren?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bei gesunden Menschen gibt es keine Hinweise darauf, dass hoher Proteinkonsum die Nieren schädigt. Wer bereits Nierenprobleme hat, sollte jedoch mit einem Arzt sprechen.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Proteinbedarf berechnen",
+      description: "Berechne deinen optimalen Proteinbedarf in 3 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Körpergewicht eingeben",
+          text: "Gib dein aktuelles Körpergewicht in Kilogramm ein (z.B. 75 kg)",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Aktivitätslevel wählen",
+          text: "Wähle aus, wie aktiv du bist – von wenig aktiv bis Athlet",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Ziel auswählen",
+          text: "Wähle dein Ziel: Gewicht halten, Muskelaufbau, Abnehmen oder Ausdauer",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebPage Schema for nutrition content -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Protein-Bedarf Rechner",
+      headline: "Protein-Bedarf Rechner - Täglichen Eiweissbedarf berechnen",
+      description: "Kostenloser Protein-Rechner zur Berechnung des optimalen täglichen Proteinbedarfs. Basierend auf wissenschaftlichen Empfehlungen.",
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      }
+    })}
+  </script>
+
+  <ProteinBedarfRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
