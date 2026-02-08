@@ -26,6 +26,45 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "suessstoffe-abnehmen-meta-analyse",
+    title: "Machen Süßstoffe dick? Was 12 Meta-Analysen wirklich zeigen",
+    description:
+      "Umbrella-Meta-Analyse (2024) + SWEET-Studie (2025): RCTs zeigen – Süßstoffe helfen beim Abnehmen (BMI −0.28). Der Widerspruch zu Beobachtungsstudien erklärt sich durch Reverse Causation.",
+    tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Süßstoffe", "Ernährung"],
+    publishedAt: "2026-02-08",
+    readingTime: 6,
+    featured: true,
+    sources: [
+      {
+        title:
+          "The effects of artificial sweeteners on body weight, body fat, and energy intake: A meta-analysis of meta-analyses",
+        authors: "Hamedi-Kalajahi F, Asemani S, Prabahar K, et al.",
+        journal: "BioSocial Health Journal",
+        year: 2024,
+        doi: "10.34172/bshj.22",
+        url: "https://www.biosocialhealthjournal.com/FullHtml/bshj-22",
+      },
+      {
+        title:
+          "Effect of sweeteners and sweetness enhancers on weight management and gut microbiota composition in individuals with overweight or obesity: the SWEET study",
+        authors: "Raben A, Blundell J, Astrup A, et al.",
+        journal: "Nature Metabolism",
+        year: 2025,
+        doi: "10.1038/s42255-025-01381-z",
+        url: "https://www.nature.com/articles/s42255-025-01381-z",
+      },
+      {
+        title:
+          "The effects of non-nutritive sweeteners on energy and macronutrients intake in adults: a grade-assessed systematic review and meta-analyses of randomized controlled trials",
+        authors: "Ramezani-Jolfaie N, et al.",
+        journal: "Frontiers in Nutrition",
+        year: 2024,
+        doi: "10.3389/fnut.2024.1475962",
+        url: "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1475962/full",
+      },
+    ],
+  },
+  {
     slug: "viele-kleine-mahlzeiten-mythos",
     title: "Viele kleine Mahlzeiten kurbeln den Stoffwechsel an? Mythos! (Meta-Analysen 2023/2024)",
     description:
