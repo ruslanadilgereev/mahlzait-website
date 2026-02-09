@@ -26,6 +26,262 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "fruehstueck-wichtigste-mahlzeit-mythos-meta-analyse",
+    title: "Frühstück: Die wichtigste Mahlzeit? Was Meta-Analysen wirklich zeigen",
+    description:
+      "Zwei Meta-Analysen (2020/2022) mit 17 RCTs zeigen: Frühstück essen oder weglassen macht keinen Unterschied fürs Gewicht. Der Mythos stammt aus Beobachtungsstudien – die Kausalität fehlt.",
+    tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Frühstück", "Ernährung"],
+    publishedAt: "2026-02-09",
+    readingTime: 6,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Eating versus skipping breakfast has no discernible effect on obesity-related anthropometric outcomes: a systematic review and meta-analysis",
+        authors: "Brown AW, Bohan Brown MM, Allison DB",
+        journal: "F1000Research",
+        year: 2022,
+        doi: "10.12688/f1000research.22580.3",
+        pmid: "35299410",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8924556/",
+      },
+      {
+        title:
+          "Breakfast Skipping, Body Composition, and Cardiometabolic Risk: A Systematic Review and Meta-Analysis of Randomized Trials",
+        authors: "Bonnet JP, Cardel MI, Cellini J, et al.",
+        journal: "Obesity",
+        year: 2020,
+        doi: "10.1002/oby.22791",
+        pmid: "32304359",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7304383/",
+      },
+    ],
+  },
+  {
+    slug: "suessstoffe-abnehmen-meta-analyse",
+    title: "Machen Süßstoffe dick? Was 12 Meta-Analysen wirklich zeigen",
+    description:
+      "Umbrella-Meta-Analyse (2024) + SWEET-Studie (2025): RCTs zeigen – Süßstoffe helfen beim Abnehmen (BMI −0.28). Der Widerspruch zu Beobachtungsstudien erklärt sich durch Reverse Causation.",
+    tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Süßstoffe", "Ernährung"],
+    publishedAt: "2026-02-08",
+    readingTime: 6,
+    featured: true,
+    sources: [
+      {
+        title:
+          "The effects of artificial sweeteners on body weight, body fat, and energy intake: A meta-analysis of meta-analyses",
+        authors: "Hamedi-Kalajahi F, Asemani S, Prabahar K, et al.",
+        journal: "BioSocial Health Journal",
+        year: 2024,
+        doi: "10.34172/bshj.22",
+        url: "https://www.biosocialhealthjournal.com/FullHtml/bshj-22",
+      },
+      {
+        title:
+          "Effect of sweeteners and sweetness enhancers on weight management and gut microbiota composition in individuals with overweight or obesity: the SWEET study",
+        authors: "Raben A, Blundell J, Astrup A, et al.",
+        journal: "Nature Metabolism",
+        year: 2025,
+        doi: "10.1038/s42255-025-01381-z",
+        url: "https://www.nature.com/articles/s42255-025-01381-z",
+      },
+      {
+        title:
+          "The effects of non-nutritive sweeteners on energy and macronutrients intake in adults: a grade-assessed systematic review and meta-analyses of randomized controlled trials",
+        authors: "Ramezani-Jolfaie N, et al.",
+        journal: "Frontiers in Nutrition",
+        year: 2024,
+        doi: "10.3389/fnut.2024.1475962",
+        url: "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1475962/full",
+      },
+    ],
+  },
+  {
+    slug: "viele-kleine-mahlzeiten-mythos",
+    title: "Viele kleine Mahlzeiten kurbeln den Stoffwechsel an? Mythos! (Meta-Analysen 2023/2024)",
+    description:
+      "Zwei Meta-Analysen mit 2.500+ Teilnehmern zeigen: Häufiges Essen bringt keinen Stoffwechsel-Boost. Warum der Mythos falsch ist und was wirklich zählt.",
+    tags: ["Abnehmen", "Mythen", "Stoffwechsel", "Meta-Analyse", "Mahlzeiten"],
+    publishedAt: "2026-02-07",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Meal Timing and Anthropometric and Metabolic Outcomes: A Systematic Review and Meta-Analysis",
+        authors: "Ezzat-Zadeh Z, Engel A, Engelsen SB, et al.",
+        journal: "JAMA Network Open",
+        year: 2024,
+        doi: "10.1001/jamanetworkopen.2024.42163",
+        pmid: "39485353",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11530941/",
+      },
+      {
+        title:
+          "The effects of eating frequency on changes in body composition and cardiometabolic health in adults: a systematic review with meta-analysis of randomized trials",
+        authors: "Wright N, et al.",
+        journal: "International Journal of Behavioral Nutrition and Physical Activity",
+        year: 2023,
+        doi: "10.1186/s12966-023-01532-z",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10647044/",
+      },
+    ],
+  },
+  {
+    slug: "spaet-essen-gewichtszunahme-studie",
+    title: "Macht spätes Essen dick? Was eine Harvard-Studie zeigt",
+    description:
+      "Kontrollierte Crossover-Studie: Spätes Essen verdoppelt Hungergefühl, senkt Kalorienverbrauch um ~60 kcal/Tag und programmiert Fettgewebe auf Speichern. Mechanismen erklärt.",
+    tags: ["Abnehmen", "Mahlzeiten-Timing", "Studie", "Stoffwechsel", "Hunger"],
+    publishedAt: "2026-02-06",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity",
+        authors: "Vujović N, Piron MJ, Qian J, et al.",
+        journal: "Cell Metabolism",
+        year: 2022,
+        doi: "10.1016/j.cmet.2022.09.007",
+        pmid: "36198293",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184753/",
+      },
+    ],
+  },
+  {
+    slug: "wasser-trinken-abnehmen-meta-analyse",
+    title: "Hilft Wasser trinken beim Abnehmen? (Meta-Analyse 2024)",
+    description:
+      "Meta-Analyse von 8 RCTs: Mehr Wasser trinken allein macht nicht schlank. Der Effekt entsteht nur, wenn kalorienhaltige Getränke ersetzt werden. Light-Drinks sind kein Problem.",
+    tags: ["Abnehmen", "Wasser", "Mythen", "Meta-Analyse", "Getränke"],
+    publishedAt: "2026-02-05",
+    readingTime: 6,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Water Intake and Adiposity Outcomes among Overweight and Obese Individuals: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        authors: "Chen QY, Khil J, Keum N",
+        journal: "Nutrients",
+        year: 2024,
+        doi: "10.3390/nu16070963",
+        pmid: "38612997",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11013432/",
+      },
+    ],
+  },
+  {
+    slug: "ballaststoffe-saettigung-quick-fact",
+    title: "Ballaststoffe und Sättigung: Der unterschätzte Abnehm-Hebel",
+    description:
+      "Warum Ballaststoffe länger satt machen und wie du mit einfachen Tricks auf 25–30 g pro Tag kommst.",
+    tags: ["Ballaststoffe", "Sättigung", "Abnehmen", "Ernährung"],
+    publishedAt: "2026-02-05",
+    readingTime: 2,
+    featured: false,
+    sources: [],
+  },
+  {
+    slug: "protein-timing-vor-nach-training-studie",
+    title: "Protein-Timing: Direkt nach dem Training oder egal wann?",
+    description:
+      "RCT mit 31 trainierten Männern zeigt: Ob Protein direkt oder 3h vor/nach dem Training – kein Unterschied bei Muskelaufbau.",
+    tags: ["Protein", "Muskelaufbau", "Training", "Timing", "Studie"],
+    publishedAt: "2026-02-04",
+    readingTime: 5,
+    featured: false,
+    sources: [
+      {
+        title: "Timing matters? The effects of two different timing of high protein diets on body composition",
+        authors: "Nabavizadeh P, Mohammadi H, et al.",
+        journal: "Frontiers in Nutrition",
+        year: 2024,
+        doi: "10.3389/fnut.2024.1397090",
+        url: "https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1397090/full",
+      },
+    ],
+  },
+  {
+    slug: "restaurant-kalorien-unterschaetzung-studie",
+    title: "Warum du im Restaurant mehr isst als du denkst (Studie 2023)",
+    description:
+      "Restaurant-Portionen haben durchschnittlich 1.200 Kalorien – oft doppelt so viel wie gedacht. Warum wir so schlecht schätzen und was du dagegen tun kannst.",
+    tags: ["Restaurant", "Kalorien", "Portionen", "Tracking", "Abnehmen"],
+    publishedAt: "2026-02-01",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title: "Energy content of menus offered in fast food and sit-down restaurants",
+        authors: "Urban LE, Roberts SB, et al.",
+        journal: "JAMA Internal Medicine",
+        year: 2016,
+        doi: "10.1001/jamainternmed.2016.2198",
+      },
+      {
+        title: "The accuracy of stated energy contents of reduced-energy, commercially prepared foods",
+        authors: "Urban LE, Dallal GE, et al.",
+        journal: "Journal of the American Dietetic Association",
+        year: 2010,
+        doi: "10.1016/j.jada.2009.10.003",
+      },
+    ],
+  },
+  {
+    slug: "cheat-days-wahrheit-mythos-studie",
+    title: "Cheat Days: Helfen sie wirklich beim Abnehmen? (Scoping Review 2025)",
+    description:
+      "Die Wahrheit über Cheat Days: Was sagt die Wissenschaft zu Stoffwechsel-Boost, Muskelerhalt und psychologischen Effekten? Ein aktueller Scoping Review klärt auf.",
+    tags: ["Abnehmen", "Cheat Day", "Mythen", "Psychologie", "Diät"],
+    publishedAt: "2026-01-31",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title: "The Role of Cheat Meals in Dieting: A Scoping Review of Physiological and Psychological Responses",
+        authors: "Tan JH, Pang ETC, et al.",
+        journal: "Nutrition Reviews",
+        year: 2025,
+        doi: "10.1093/nutrit/nuaf077",
+        pmid: "40517327",
+      },
+      {
+        title: "Caloric restriction with or without time-restricted eating in weight loss",
+        authors: "Davoodi SH, et al.",
+        journal: "Journal of Research in Medical Sciences",
+        year: 2014,
+        pmid: "25635156",
+      },
+    ],
+  },
+  {
+    slug: "stoffwechsel-eingeschlafen-mythos",
+    title: "Stoffwechsel eingeschlafen? Warum du nicht abnimmst (Mythos & Wahrheit)",
+    description:
+      "Der 'Hungerstoffwechsel' ist ein Mythos. Erfahre, was metabolische Anpassung wirklich ist, warum dein Plateau nicht am Stoffwechsel liegt und wie du es brichst. Wissenschaft vs. Bro-Science.",
+    tags: ["Stoffwechsel", "Abnehmen", "Mythen", "Plateau", "Kalorien"],
+    publishedAt: "2026-01-30",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title: "Metabolic adaptation is not a major barrier to weight-loss maintenance",
+        authors: "Martins C, et al.",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2020,
+        doi: "10.1093/ajcn/nqaa220",
+      },
+      {
+        title: "Metabolic adaptation to weight loss: implications for the athlete",
+        authors: "Trexler ET, et al.",
+        journal: "Journal of the International Society of Sports Nutrition",
+        year: 2014,
+        doi: "10.1186/1550-2783-11-7",
+      },
+    ],
+  },
+  {
     slug: "ernährungswissenschaft-grundlagen-erklaert",
     title: "Ernährungswissenschaft einfach erklärt: 13 Minuten für deine Gesundheit",
     description:

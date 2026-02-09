@@ -10,6 +10,14 @@ interface Props {
 
 const calculators = [
   {
+    title: "BMI Rechner",
+    desc: "Berechne deinen Body Mass Index (BMI) und finde heraus, ob dein Gewicht im gesunden Bereich liegt. Mit WHO-Kategorien und Idealgewicht.",
+    link: "/bmi-rechner",
+    icon: "/3D/heart-front-color.webp",
+    features: ["BMI berechnen", "WHO-Kategorien", "Idealgewicht"],
+    color: "info",
+  },
+  {
     title: "Kalorienbedarf berechnen",
     desc: "Berechne deinen täglichen Kalorienbedarf mit der Mifflin-St Jeor Formel. Erfahre deinen Grundumsatz (BMR) und Gesamtbedarf (TDEE).",
     link: "/kalorienbedarf-berechnen",
@@ -32,6 +40,38 @@ const calculators = [
     icon: "/3D/chart-front-color.webp",
     features: ["Protein in Gramm", "Kohlenhydrate in Gramm", "Fett in Gramm"],
     color: "secondary",
+  },
+  {
+    title: "Abnahmedatum berechnen",
+    desc: "Wann erreichst du dein Zielgewicht? Berechne dein exaktes Datum basierend auf deinem geplanten Defizit.",
+    link: "/abnahmedatum-berechnen",
+    icon: "/3D/calender-front-color.webp",
+    features: ["Exaktes Zieldatum", "Tage bis zum Ziel", "Defizit-Slider"],
+    color: "accent",
+  },
+  {
+    title: "Kalorienverbrauch Rechner",
+    desc: "Wie lange musst du joggen für einen Döner? Finde heraus, wie viel Sport dein Essen kostet.",
+    link: "/kalorienverbrauch-rechner",
+    icon: "/3D/gym-front-color.webp",
+    features: ["10 beliebte Foods", "6 Sportarten", "Minuten-Berechnung"],
+    color: "warning",
+  },
+  {
+    title: "Protein-Bedarf Rechner",
+    desc: "Berechne deinen optimalen täglichen Proteinbedarf. Basierend auf Gewicht, Aktivitätslevel und deinen Zielen.",
+    link: "/protein-bedarf-rechner",
+    icon: "/3D/heart-front-color.webp",
+    features: ["Individueller Proteinbedarf", "Nach Aktivitätslevel", "Zielbasiert"],
+    color: "error",
+  },
+  {
+    title: "Alkohol-Kalorien Rechner",
+    desc: "Wie viele Kalorien hat dein Feierabendbier? Finde heraus, wie viele Kalorien verschiedene Getränke haben.",
+    link: "/alkohol-kalorien-rechner",
+    icon: "/3D/bulb-front-color.webp",
+    features: ["Bier, Wein, Cocktails", "Pro Glas & pro Abend", "Versteckte Kalorien"],
+    color: "info",
   },
 ];
 

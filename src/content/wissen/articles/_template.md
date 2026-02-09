@@ -59,12 +59,6 @@ Ein Satz „Takeaway“ + 1 Satz Einordnung.
 
 ---
 
-## Quellen
-
-Autor A, et al. *Titel.* Journal. Jahr. doi: [DOI](https://doi.org/DOI). PMID: [PMID](https://pubmed.ncbi.nlm.nih.gov/PMID/).
-
----
-
 *Hinweis: Dieser Artikel dient der allgemeinen Information und ersetzt keine aerztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich bitte an einen Arzt oder eine Ernährungsfachkraft.*
 
 

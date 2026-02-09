@@ -1,0 +1,48 @@
+---
+import Layout from "../Layout.astro";
+import DoenerRechner from "../components/calculators/DoenerRechner";
+import defaultTemplateConfig from "../utils/config";
+
+const seo = {
+  title: "Kalorienverbrauch Rechner: Wie lange für Döner, Pizza & Co? | Mahlzait",
+  description: "Wie lange musst du joggen für einen Döner? Berechne, wie viel Sport du für dein Essen brauchst. Döner, Pizza, Big Mac - wir zeigen dir die Wahrheit.",
+  image: defaultTemplateConfig.seo.image
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <div class="container mx-auto px-4 py-12">
+    <div class="text-center mb-12">
+      <h1 class="text-4xl font-black mb-4">🥙 Wie lange für einen Döner?</h1>
+      <p class="text-xl opacity-80 max-w-2xl mx-auto">
+        Finde heraus, wie lange du trainieren musst, um dein Lieblingsessen zu verbrennen. Spoiler: Es ist mehr als du denkst.
+      </p>
+    </div>
+
+    <DoenerRechner client:load />
+
+    <div class="prose max-w-2xl mx-auto mt-16">
+      <h2>Warum dieser Rechner?</h2>
+      <p>
+        "Ich geh nachher eh noch joggen" - der Klassiker. Aber weißt du wirklich, wie lange du für deinen Döner laufen musst?
+      </p>
+      <p>
+        Die Wahrheit: <strong>Ein Döner (650 kcal) = 65 Minuten Joggen.</strong> Das ist über eine Stunde. Für ein Mittagessen.
+      </p>
+      
+      <h2>Die Lektion</h2>
+      <p>
+        Es ist fast unmöglich, eine schlechte Ernährung durch Sport auszugleichen. Der Spruch stimmt: <em>"Abs are made in the kitchen."</em>
+      </p>
+      <ul>
+        <li><strong>Döner:</strong> 65 Min Joggen</li>
+        <li><strong>Big Mac:</strong> 50 Min Joggen</li>
+        <li><strong>Pizza:</strong> 80 Min Joggen</li>
+        <li><strong>0.5L Bier:</strong> 22 Min Joggen</li>
+      </ul>
+      <p>
+        Die bessere Strategie? <strong>Bewusst essen.</strong> Wissen, was reinkommt. Dann kannst du auch mal Döner essen - ohne Schuldgefühle.
+      </p>
+    </div>
+  </div>
+</Layout>
