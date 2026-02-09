@@ -26,6 +26,38 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "fruehstueck-wichtigste-mahlzeit-mythos-meta-analyse",
+    title: "Frühstück: Die wichtigste Mahlzeit? Was Meta-Analysen wirklich zeigen",
+    description:
+      "Zwei Meta-Analysen (2020/2022) mit 17 RCTs zeigen: Frühstück essen oder weglassen macht keinen Unterschied fürs Gewicht. Der Mythos stammt aus Beobachtungsstudien – die Kausalität fehlt.",
+    tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Frühstück", "Ernährung"],
+    publishedAt: "2026-02-09",
+    readingTime: 6,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Eating versus skipping breakfast has no discernible effect on obesity-related anthropometric outcomes: a systematic review and meta-analysis",
+        authors: "Brown AW, Bohan Brown MM, Allison DB",
+        journal: "F1000Research",
+        year: 2022,
+        doi: "10.12688/f1000research.22580.3",
+        pmid: "35299410",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8924556/",
+      },
+      {
+        title:
+          "Breakfast Skipping, Body Composition, and Cardiometabolic Risk: A Systematic Review and Meta-Analysis of Randomized Trials",
+        authors: "Bonnet JP, Cardel MI, Cellini J, et al.",
+        journal: "Obesity",
+        year: 2020,
+        doi: "10.1002/oby.22791",
+        pmid: "32304359",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC7304383/",
+      },
+    ],
+  },
+  {
     slug: "suessstoffe-abnehmen-meta-analyse",
     title: "Machen Süßstoffe dick? Was 12 Meta-Analysen wirklich zeigen",
     description:
