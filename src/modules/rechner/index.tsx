@@ -73,6 +73,14 @@ const calculators = [
     features: ["Bier, Wein, Cocktails", "Pro Glas & pro Abend", "Versteckte Kalorien"],
     color: "info",
   },
+  {
+    title: "Wasserbedarfs-Rechner",
+    desc: "Wie viel Wasser solltest du täglich trinken? Berechne deinen optimalen Wasserbedarf basierend auf Gewicht, Aktivität und Klima.",
+    link: "/wasserbedarf-rechner",
+    icon: "/3D/heart-front-color.webp",
+    features: ["Individueller Wasserbedarf", "Aktivität & Klima", "Praktische Tipps"],
+    color: "primary",
+  },
 ];
 
 function RechnerPage({ config }: Props) {

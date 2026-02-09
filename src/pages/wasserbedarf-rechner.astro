@@ -1,0 +1,115 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import WasserbedarfsRechnerPage from "@modules/wasserbedarf";
+
+const seo = {
+  title: "Wasserbedarfs-Rechner - Täglichen Wasserbedarf berechnen | Mahlzait",
+  description:
+    "Berechne deinen optimalen täglichen Wasserbedarf kostenlos. Basierend auf Gewicht, Aktivität und Klima. Finde heraus, wie viel Wasser du pro Tag trinken solltest.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Wasserbedarfs-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viel Wasser sollte ich am Tag trinken?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Faustregel ist 35ml pro kg Körpergewicht. Bei 70kg wären das 2.45 Liter. Sport, Hitze und bestimmte Erkrankungen erhöhen den Bedarf.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kann ich zu viel Wasser trinken?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja, aber es ist selten. Mehr als 5-6 Liter pro Tag können gefährlich sein (Wasservergiftung/Hyponatriämie). Halte dich an die Empfehlung und trinke nicht mehr als 1 Liter pro Stunde.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Zählt Kaffee zur Flüssigkeitszufuhr?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Teilweise. Kaffee hat eine leicht entwässernde Wirkung, aber der Effekt ist gering. 2-3 Tassen können zu etwa 50% angerechnet werden. Besser ist reines Wasser oder ungesüsster Tee.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Woran erkenne ich, ob ich genug trinke?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Der beste Indikator ist die Urinfarbe: hellgelb bis fast farblos = gut hydriert. Dunkelgelb oder bernsteinfarben = mehr trinken! Auch Durst, trockene Lippen und Kopfschmerzen sind Warnsignale.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sollte ich auch nachts trinken?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nachts pausiert der Körper und braucht weniger Wasser. Ein Glas vor dem Schlafen ist ok, aber zu viel stört den Schlaf. Trinke lieber morgens direkt ein grosses Glas, um das Defizit auszugleichen.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Wasserbedarf berechnen",
+      description: "Berechne deinen optimalen Wasserbedarf in 3 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Körpergewicht eingeben",
+          text: "Gib dein aktuelles Körpergewicht in Kilogramm ein (z.B. 75 kg)",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Aktivitätslevel wählen",
+          text: "Wähle aus, wie aktiv du bist – von wenig aktiv bis Athlet",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Klima auswählen",
+          text: "Wähle die vorherrschende Temperatur: kalt, gemässigt, warm oder heiss",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebPage Schema for health content -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Wasserbedarfs-Rechner",
+      headline: "Wasserbedarfs-Rechner - Täglichen Wasserbedarf berechnen",
+      description: "Kostenloser Wasserbedarfs-Rechner zur Berechnung der optimalen täglichen Flüssigkeitszufuhr. Basierend auf wissenschaftlichen Empfehlungen der DGE.",
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      },
+      about: {
+        "@type": "Thing",
+        name: "Wasserbedarf",
+        description: "Die optimale tägliche Wassermenge, die ein Mensch trinken sollte"
+      }
+    })}
+  </script>
+
+  <WasserbedarfsRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
