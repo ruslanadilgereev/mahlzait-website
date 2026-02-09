@@ -12,7 +12,8 @@
     "astro": "astro",
     "wissen:extract": "node scripts/wissen/extract-pdfs.cjs",
     "wissen:resolve": "node scripts/wissen/resolve-crossref.cjs",
-    "wissen:check": "node scripts/wissen/check-wissen-slugs.cjs"
+    "wissen:check": "node scripts/wissen/check-wissen-slugs.cjs",
+    "favicon:generate": "node scripts/generate-favicon.cjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
@@ -42,9 +43,11 @@
     "@types/react-dom": "^18.3.0",
     "daisyui": "^4.12.8",
     "pdf-parse": "^2.4.5",
+    "png-to-ico": "^3.0.1",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.14.0",
     "sass": "^1.77.6",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.4.5"
   }

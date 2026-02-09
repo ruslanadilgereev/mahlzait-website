@@ -49,8 +49,7 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
       height={1200}
       loading={index === 0 ? "eager" : "lazy"}
       decoding="async"
-      // @ts-expect-error fetchPriority is valid HTML but not in React types yet
-      fetchPriority={index === 0 ? "high" : "auto"}
+      fetchpriority={index === 0 ? "high" : "auto"}
       style={{ translateX: x, translateY: y, scale: 1.02 }}
       className="absolute overflow-hidden w-full h-full object-contain object-center"
     />

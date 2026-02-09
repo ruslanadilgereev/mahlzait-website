@@ -29,9 +29,9 @@ function ThemeLogo({ className = "h-8 w-auto", alt = "Mahlzait Logo" }: ThemeLog
 
   return (
     <img
-      src={isDark ? "/logo-white.svg" : "/logo-black.svg"}
+      src="/logo.png"
       alt={alt}
-      className={className}
+      className={`${className} rounded-lg`}
       width={32}
       height={32}
     />

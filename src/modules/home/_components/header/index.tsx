@@ -227,7 +227,7 @@ function Header() {
                   style={{ aspectRatio: '432/885' }}
                   loading="eager"
                   decoding="async"
-                  fetchPriority="high"
+                  fetchpriority="high"
                 />
               </motion.div>
             </div>
