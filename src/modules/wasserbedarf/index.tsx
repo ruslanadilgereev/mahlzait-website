@@ -223,11 +223,11 @@ function WasserbedarfsRechnerPage({ config }: Props) {
                   </div>
 
                   {/* Water Visual */}
-                  <div className="flex justify-center gap-2 my-6">
-                    {Array.from({ length: Math.min(result.glasses, 12) }).map((_, i) => (
-                      <div key={i} className="text-3xl">🥛</div>
+                  <div className="flex flex-wrap justify-center gap-2 my-6 max-w-xs mx-auto">
+                    {Array.from({ length: Math.min(result.glasses, 8) }).map((_, i) => (
+                      <div key={i} className="text-2xl">🥛</div>
                     ))}
-                    {result.glasses > 12 && <span className="text-2xl self-center">+{result.glasses - 12}</span>}
+                    {result.glasses > 8 && <span className="text-xl self-center">+{result.glasses - 8}</span>}
                   </div>
 
                   <div className="grid gap-4 md:grid-cols-3 mt-6">
