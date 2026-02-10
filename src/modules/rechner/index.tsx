@@ -81,6 +81,14 @@ const calculators = [
     features: ["Individueller Wasserbedarf", "Aktivität & Klima", "Praktische Tipps"],
     color: "primary",
   },
+  {
+    title: "Intervallfasten-Rechner",
+    desc: "Finde den perfekten Fasten-Zeitplan für deinen Alltag. 16:8, 18:6, 5:2 oder individuell – berechne dein Ess- und Fastenfenster.",
+    link: "/intervallfasten-rechner",
+    icon: "/3D/calender-front-color.webp",
+    features: ["16:8, 18:6, 20:4, 5:2", "Persönlicher Zeitplan", "Tipps & FAQ"],
+    color: "secondary",
+  },
 ];
 
 function RechnerPage({ config }: Props) {

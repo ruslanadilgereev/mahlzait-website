@@ -1,0 +1,120 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import IntervallfastenRechnerPage from "@modules/intervallfasten";
+
+const seo = {
+  title: "Intervallfasten-Rechner - Optimaler Fasten-Zeitplan | Mahlzait",
+  description:
+    "Berechne deinen perfekten Intervallfasten-Zeitplan kostenlos. 16:8, 18:6, 5:2 oder individuell – finde die beste Methode für deine Ziele und deinen Alltag.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Intervallfasten-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Was ist Intervallfasten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Intervallfasten (Intermittent Fasting) ist ein Ernährungsrhythmus, bei dem sich Ess- und Fastenperioden abwechseln. Es geht nicht darum, WAS du isst, sondern WANN du isst. Die beliebteste Methode ist 16:8 – 16 Stunden fasten, 8 Stunden essen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie schnell kann ich mit Intervallfasten abnehmen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Abnahme hängt vom Kaloriendefizit ab, nicht vom Fasten selbst. Intervallfasten kann helfen, die Kalorienzufuhr zu reduzieren. Realistisch sind 0.5-1kg pro Woche bei einem moderaten Defizit.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was darf ich während des Fastens trinken?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Erlaubt sind: Wasser, schwarzer Kaffee (ohne Milch/Zucker), ungesüsster Tee und bei längeren Fastenperioden klare Brühe. Verboten sind: Milch, Säfte, Softdrinks, Smoothies und alles mit Kalorien.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist Intervallfasten für jeden geeignet?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein. Schwangere, Stillende, Menschen mit Essstörungen, Diabetiker und Untergewichtige sollten vorher einen Arzt konsultieren. Für gesunde Erwachsene ist es in der Regel sicher.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Welche Intervallfasten-Methode ist die beste?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Für Einsteiger ist 16:8 ideal – einfach das Frühstück auslassen. Fortgeschrittene können 18:6 oder 5:2 probieren. Die beste Methode ist die, die zu deinem Alltag passt und die du langfristig durchhalten kannst.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Intervallfasten-Zeitplan erstellen",
+      description: "Erstelle deinen individuellen Intervallfasten-Zeitplan in 4 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Methode wählen",
+          text: "Wähle eine Intervallfasten-Methode wie 16:8, 18:6, 20:4 oder 5:2 basierend auf deiner Erfahrung",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Zeiten angeben",
+          text: "Gib deine Aufsteh- und Schlafenszeit an, damit der Rechner deinen optimalen Zeitplan erstellt",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Essensfenster-Präferenz wählen",
+          text: "Entscheide, ob du lieber früh (Frühstück & Mittagessen) oder spät (Mittag- & Abendessen) essen möchtest",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Zeitplan berechnen",
+          text: "Der Rechner zeigt dir dein persönliches Ess- und Fastenfenster mit Uhrzeiten an",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Intervallfasten-Rechner",
+      headline: "Intervallfasten-Rechner - Optimaler Fasten-Zeitplan berechnen",
+      description: "Kostenloser Intervallfasten-Rechner zur Berechnung des optimalen Fasten- und Essenszeitplans. Unterstützt 16:8, 18:6, 20:4, 5:2 und individuelle Methoden.",
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      },
+      about: {
+        "@type": "Thing",
+        name: "Intervallfasten",
+        description: "Ernährungsrhythmus mit wechselnden Ess- und Fastenperioden zur Gewichtsabnahme und Gesundheitsförderung"
+      }
+    })}
+  </script>
+
+  <IntervallfastenRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
