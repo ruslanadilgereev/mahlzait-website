@@ -1,6 +1,7 @@
 import { motion, useScroll } from "framer-motion";
 import { useContext, useEffect, useRef, useState } from "react";
 import { ConfigContext } from "../../../../utils/configContext";
+import { getTrackedAppLink, trackAppStoreClick } from "../../../../utils/trackingLinks";
 import SingleScreenshot from "./singleScreenshot";
 import SVGWave from "./svg/wave";
 import SVGBlob from "./svg/blob";
@@ -104,7 +105,10 @@ function Header() {
               >
                 {googlePlayLink && (
                   <li className="m-0 p-0">
-                    <a href={googlePlayLink}>
+                    <a 
+                      href={getTrackedAppLink({ platform: "android", source: "hero" })}
+                      onClick={() => trackAppStoreClick("android", "hero")}
+                    >
                       <img
                         className="h-14"
                         alt="Bei Google Play herunterladen"
@@ -117,7 +121,10 @@ function Header() {
                 )}
                 {appStoreLink && (
                   <li className="m-0 p-0">
-                    <a href={appStoreLink}>
+                    <a 
+                      href={getTrackedAppLink({ platform: "ios", source: "hero" })}
+                      onClick={() => trackAppStoreClick("ios", "hero")}
+                    >
                       <img
                         className="h-14"
                         alt="Im App Store herunterladen"

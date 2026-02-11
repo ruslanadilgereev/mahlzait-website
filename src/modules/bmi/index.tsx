@@ -4,6 +4,7 @@ import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
+import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
 
 interface Props {
   config: TemplateConfig;
@@ -400,11 +401,16 @@ function BMIRechnerPage({ config }: Props) {
               Du kennst jetzt deinen BMI. Mit Mahlzait trackst du deine Ernährung in Sekunden – per Foto, Text oder Barcode. So erreichst du dein Zielgewicht nachhaltig.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href={config.appStoreLink} className="btn btn-lg bg-white text-primary">
+              <a 
+                href={getTrackedAppLink({ platform: "ios", source: "calculator" })} 
+                onClick={() => trackAppStoreClick("ios", "calculator")}
+                className="btn btn-lg bg-white text-primary"
+              >
                 iOS App laden
               </a>
               <a
-                href={config.googlePlayLink}
+                href={getTrackedAppLink({ platform: "android", source: "calculator" })}
+                onClick={() => trackAppStoreClick("android", "calculator")}
                 className="btn btn-lg bg-white text-primary hover:bg-white/90"
               >
                 Android App laden
