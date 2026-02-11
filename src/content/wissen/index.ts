@@ -26,11 +26,11 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
-    slug: "spot-reduction-gezielter-fettabbau-mythos-meta-analyse",
-    title: "Gezielter Fettabbau (Spot Reduction): Mythos oder Wahrheit? (Meta-Analyse 2021)",
+    slug: "bauchfett-verlieren-gezielt-abnehmen",
+    title: "Bauchfett verlieren: Kann man gezielt abnehmen?",
     description:
-      "Meta-Analyse mit 1.158 Teilnehmern zeigt: Spot Reduction funktioniert nicht. Training einer Körperregion reduziert dort kein Fett. Warum der Mythos so hartnäckig ist – und was wirklich hilft.",
-    tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Training", "Fettabbau"],
+      "Bauchfett gezielt wegtrainieren – geht das? Die Wahrheit über 'Spot Reduction' und warum Bauchübungen allein nicht helfen. Plus: Was wirklich funktioniert.",
+    tags: ["Abnehmen", "Mythen", "Training", "Fettabbau", "Bauchfett"],
     publishedAt: "2026-02-11",
     readingTime: 8,
     featured: true,

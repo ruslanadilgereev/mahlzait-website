@@ -1,6 +1,6 @@
 <!--
-WISSEN Artikel: Spot Reduction / Gezielter Fettabbau
-Meta-Analyse 2021 + RCT 2023
+WISSEN Artikel: Bauchfett verlieren - Kann man gezielt abnehmen?
+SEO-Keyword: Bauchfett verlieren, gezielt abnehmen
 -->
 
 „Bauchfett wegtrainieren", „Arm-Workout gegen Winkearme", „Übungen für schlanke Oberschenkel" – das Internet ist voll davon. Aber kann man wirklich gezielt an bestimmten Körperstellen Fett verlieren? Eine Meta-Analyse mit über 1.100 Teilnehmern liefert eine klare Antwort – auch wenn eine neuere Studie die Debatte wieder anfacht.
