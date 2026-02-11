@@ -26,6 +26,37 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "spot-reduction-gezielter-fettabbau-mythos-meta-analyse",
+    title: "Gezielter Fettabbau (Spot Reduction): Mythos oder Wahrheit? (Meta-Analyse 2021)",
+    description:
+      "Meta-Analyse mit 1.158 Teilnehmern zeigt: Spot Reduction funktioniert nicht. Training einer Körperregion reduziert dort kein Fett. Warum der Mythos so hartnäckig ist – und was wirklich hilft.",
+    tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Training", "Fettabbau"],
+    publishedAt: "2026-02-11",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title:
+          "A proposed model to test the hypothesis of exercise-induced localized fat reduction (spot reduction), including a systematic review with meta-analysis",
+        authors: "Ramirez-Campillo R, Moran J, Drury B, et al.",
+        journal: "Human Movement",
+        year: 2021,
+        doi: "10.5114/hm.2021.106281",
+        url: "https://hummov.awf.wroc.pl/A-proposed-model-to-test-the-hypothesis-of-exercise-induced-localized-fat-reduction-spot-reduction-including-a-systematic-review-with-meta-analysis,143162,0,2.html",
+      },
+      {
+        title:
+          "Abdominal aerobic endurance exercise reveals spot reduction exists: A randomized controlled trial",
+        authors: "Mæhlum MB, Unhjem R, Wang E",
+        journal: "Physiological Reports",
+        year: 2023,
+        doi: "10.14814/phy2.15853",
+        pmid: "38010058",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10680576/",
+      },
+    ],
+  },
+  {
     slug: "fruehstueck-wichtigste-mahlzeit-mythos-meta-analyse",
     title: "Frühstück: Die wichtigste Mahlzeit? Was Meta-Analysen wirklich zeigen",
     description:
