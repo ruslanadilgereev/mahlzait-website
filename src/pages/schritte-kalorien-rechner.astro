@@ -1,0 +1,119 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import SchritteKalorienRechnerPage from "@modules/schritte";
+
+const seo = {
+  title: "Schritte in Kalorien Rechner - Wie viel verbrennen 10.000 Schritte? | Mahlzait",
+  description:
+    "Berechne wie viele Kalorien du beim Gehen verbrennst. Kostenloser Schritte zu Kalorien Rechner mit Distanz, Dauer und Wochenprognose. Basierend auf Gewicht und Tempo.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Schritte in Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viele Kalorien verbrennt man bei 10.000 Schritten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bei 10.000 Schritten verbrennst du je nach Körpergewicht zwischen 300 und 500 Kalorien. Eine Person mit 75 kg verbrennt bei normalem Tempo etwa 350-400 kcal.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sind 10.000 Schritte wirklich notwendig?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die 10.000-Schritte-Regel stammt aus Japan und ist ein guter Richtwert. Studien zeigen, dass bereits 7.500 Schritte täglich signifikante Gesundheitsvorteile bringen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie genau ist die Schrittezählung meines Smartphones?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Smartphones sind zu etwa 90% genau. Für präzisere Messungen empfehlen sich Fitness-Tracker oder Smartwatches.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Verbrennt Joggen mehr Kalorien als Gehen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja, Joggen hat einen höheren MET-Wert (7-12 vs. 2.5-5). Bei gleicher Distanz verbrennt Joggen etwa 30% mehr Kalorien.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie kann ich meinen Kalorienverbrauch beim Gehen maximieren?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Erhöhe dein Tempo, gehe bergauf, nutze Walking-Stöcke (Nordic Walking) oder trage ein leichtes Gewicht. Intervall-Walking ist besonders effektiv.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Kalorienverbrauch beim Gehen berechnen",
+      description: "Berechne wie viele Kalorien du durch Schritte verbrennst",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Schrittanzahl eingeben",
+          text: "Gib die Anzahl deiner Schritte ein (z.B. 10.000 Schritte)",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Körpergewicht eingeben",
+          text: "Gib dein Körpergewicht in Kilogramm ein",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Geschwindigkeit wählen",
+          text: "Wähle dein Gehtempo: langsam, normal oder schnell",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Schritte in Kalorien Rechner",
+      description: "Kostenloser Online-Rechner zur Berechnung des Kalorienverbrauchs beim Gehen basierend auf Schrittanzahl, Gewicht und Tempo.",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "Any",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "EUR"
+      },
+      featureList: [
+        "Kalorienberechnung basierend auf Schritten",
+        "Berücksichtigung von Körpergewicht",
+        "Verschiedene Gehgeschwindigkeiten",
+        "Distanz- und Zeitberechnung",
+        "Wöchentliche Kalorienprognose"
+      ]
+    })}
+  </script>
+
+  <SchritteKalorienRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>

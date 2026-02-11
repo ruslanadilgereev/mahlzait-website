@@ -89,6 +89,14 @@ const calculators = [
     features: ["16:8, 18:6, 20:4, 5:2", "Persönlicher Zeitplan", "Tipps & FAQ"],
     color: "secondary",
   },
+  {
+    title: "Schritte in Kalorien Rechner",
+    desc: "Wie viele Kalorien verbrennen 10.000 Schritte? Berechne deinen Kalorienverbrauch beim Gehen basierend auf Gewicht und Tempo.",
+    link: "/schritte-kalorien-rechner",
+    icon: "/3D/gym-front-color.webp",
+    features: ["Kalorien pro Schritt", "Distanz & Dauer", "Wöchentliche Prognose"],
+    color: "accent",
+  },
 ];
 
 function RechnerPage({ config }: Props) {
