@@ -5,7 +5,21 @@
       "period": "2026-02-07 to 2026-02-09",
       "total_impressions": 4,
       "total_clicks": 0
+    },
+    {
+      "date": "2026-02-12",
+      "period": "2026-02-03 to 2026-02-09",
+      "total_impressions": 7,
+      "total_clicks": 0,
+      "top_pages": [
+        {"page": "https://www.mahlzait.de/", "impressions": 6, "position": 12},
+        {"page": "https://www.mahlzait.de/wissen/", "impressions": 3, "position": 3.3},
+        {"page": "https://www.mahlzait.de/abnehmen/", "impressions": 2, "position": 3.5}
+      ],
+      "notable_queries": [
+        {"query": "kaloriendefizit trotzdem keine abnahme", "impressions": 1, "position": 1}
+      ]
     }
   ],
-  "last_check": "2026-02-11"
+  "last_check": "2026-02-12"
 }
