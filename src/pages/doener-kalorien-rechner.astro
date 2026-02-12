@@ -1,0 +1,146 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import DoenerKalorienRechnerPage from "@modules/doener";
+
+const seo = {
+  title: "Döner Kalorien Rechner - Kebab, Dürüm & Lahmacun berechnen | Mahlzait",
+  description:
+    "Berechne die Kalorien in deinem Döner Kebab, Dürüm oder Lahmacun. Kostenloser Döner-Kalorien-Rechner mit Fleisch, Sauce und Extras. Inkl. Kalorientabelle.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Döner Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viele Kalorien hat ein normaler Döner?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein klassischer Döner Kebab im Fladenbrot hat durchschnittlich 550-650 kcal. Die genaue Kalorienzahl hängt von der Fleischart, Sauce und Portionsgrösse ab. Mit Hähnchen und Joghurt-Sauce sind es ca. 500 kcal.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was hat weniger Kalorien: Döner oder Dürüm?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Der Unterschied ist gering. Ein Dürüm hat oft sogar etwas mehr Kalorien (600-700 kcal), weil mehr Fleisch reinpasst. Das dünnere Yufka-Brot spart zwar Kalorien beim Teig, aber die grössere Füllung gleicht das aus.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist Döner gut zum Abnehmen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein Döner kann in eine Diät passen, wenn du ihn bewusst wählst: Hähnchen statt Kalb, Joghurt-Sauce, viel Salat. Mit 500-550 kcal ist er eine sättigende Mahlzeit mit viel Protein.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hat Döner mehr Kalorien als ein Big Mac?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja, meistens. Ein Big Mac hat 509 kcal, ein durchschnittlicher Döner 550-650 kcal. Allerdings hat der Döner mehr Protein (35g vs. 26g) und mehr Gemüse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie viel Protein hat ein Döner?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein klassischer Döner liefert etwa 30-40g Protein – hauptsächlich aus dem Fleisch. Das entspricht etwa 50-70% des täglichen Bedarfs.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was ist die kalorienärmste Döner-Variante?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die kalorienärmste Option ist ein Döner-Teller mit Salat (ohne Brot, ohne Pommes) mit Hähnchenfleisch und Joghurt-Sauce: ca. 350-400 kcal.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Döner-Kalorien berechnen",
+      description: "Berechne die Kalorien in deinem Döner Kebab mit allen Zutaten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Döner-Art auswählen",
+          text: "Wähle zwischen klassischem Döner, Dürüm, Döner Box, Lahmacun oder Pide",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Fleisch wählen",
+          text: "Wähle Kalb, Hähnchen, gemischt oder Lamm – oder vegetarisch mit Falafel",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Sauce und Extras hinzufügen",
+          text: "Füge Saucen wie Joghurt, Knoblauch oder Cocktail hinzu, sowie optionale Extras",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Ergebnis ablesen",
+          text: "Die Gesamtkalorien werden mit Protein, Kohlenhydraten und Fett angezeigt",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Döner Kalorien Rechner",
+      description: "Kostenloser Online-Rechner zur Berechnung der Kalorien in Döner Kebab, Dürüm und Lahmacun",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "EUR"
+      },
+      featureList: [
+        "Berechnung der Kalorien für verschiedene Döner-Arten",
+        "Auswahl von Fleisch, Sauce und Extras",
+        "Anzeige von Protein, Kohlenhydraten und Fett",
+        "Kalorientabelle für alle Döner-Varianten",
+        "Tipps für kalorienärmere Döner-Optionen"
+      ]
+    })}
+  </script>
+
+  <!-- NutritionInformation Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NutritionInformation",
+      name: "Döner Kebab (klassisch)",
+      servingSize: "350g",
+      calories: "550-650 kcal",
+      proteinContent: "35g",
+      carbohydrateContent: "45g",
+      fatContent: "25g"
+    })}
+  </script>
+
+  <DoenerKalorienRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>

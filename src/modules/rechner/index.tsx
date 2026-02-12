@@ -97,6 +97,14 @@ const calculators = [
     features: ["Kalorien pro Schritt", "Distanz & Dauer", "Wöchentliche Prognose"],
     color: "accent",
   },
+  {
+    title: "Döner Kalorien Rechner",
+    desc: "Wie viele Kalorien hat dein Döner wirklich? Berechne Kalorien für Döner Kebab, Dürüm, Lahmacun und mehr.",
+    link: "/doener-kalorien-rechner",
+    icon: "/3D/bulb-front-color.webp",
+    features: ["Döner, Dürüm, Lahmacun", "Fleisch, Sauce, Extras", "Kalorientabelle"],
+    color: "warning",
+  },
 ];
 
 function RechnerPage({ config }: Props) {
