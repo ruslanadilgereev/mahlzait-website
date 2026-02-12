@@ -26,6 +26,37 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "kohlenhydrate-abends-mythos",
+    title: "Kohlenhydrate abends: Machen sie wirklich dick?",
+    description:
+      "Der Mythos 'Keine Kohlenhydrate nach 18 Uhr' im Faktencheck. Eine 6-monatige RCT-Studie zeigt das überraschende Gegenteil: Kohlenhydrate am Abend können beim Abnehmen sogar helfen.",
+    tags: ["Abnehmen", "Mythen", "Kohlenhydrate", "Ernährung", "Studie"],
+    publishedAt: "2026-02-12",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Greater weight loss and hormonal changes after 6 months diet with carbohydrates eaten mostly at dinner",
+        authors: "Sofer S, Eliraz A, Kaplan S, et al.",
+        journal: "Obesity (Silver Spring)",
+        year: 2011,
+        doi: "10.1038/oby.2011.48",
+        pmid: "21475137",
+        url: "https://pubmed.ncbi.nlm.nih.gov/21475137/",
+      },
+      {
+        title:
+          "Changes in daily leptin, ghrelin and adiponectin profiles following a diet with carbohydrates eaten at dinner in obese subjects",
+        authors: "Sofer S, Eliraz A, Kaplan S, et al.",
+        journal: "Nutrition, Metabolism and Cardiovascular Diseases",
+        year: 2013,
+        doi: "10.1016/j.numecd.2012.04.008",
+        pmid: "22901843",
+      },
+    ],
+  },
+  {
     slug: "bauchfett-verlieren-gezielt-abnehmen",
     title: "Bauchfett verlieren: Kann man gezielt abnehmen?",
     description:
