@@ -105,6 +105,14 @@ const calculators = [
     features: ["Döner, Dürüm, Lahmacun", "Fleisch, Sauce, Extras", "Kalorientabelle"],
     color: "warning",
   },
+  {
+    title: "Cheat-Day Rechner",
+    desc: "Plane deinen Cheat-Day clever! Berechne, wie viele Extra-Kalorien du dir gönnen kannst, ohne dein Ziel zu gefährden.",
+    link: "/cheat-day-rechner",
+    icon: "/3D/target-front-color.webp",
+    features: ["Extra-Kalorien planen", "Wöchentliche Bilanz", "Ohne Schuldgefühle"],
+    color: "error",
+  },
 ];
 
 function RechnerPage({ config }: Props) {

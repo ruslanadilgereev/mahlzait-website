@@ -1,0 +1,120 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import CheatDayRechnerPage from "@modules/cheatday";
+
+const seo = {
+  title: "Cheat-Day-Rechner - Plane deinen Cheat-Day clever | Mahlzait",
+  description:
+    "Berechne kostenlos, wie viele Extra-Kalorien du dir am Cheat-Day gönnen kannst. Plane Cheat-Days ohne Schuldgefühle und ohne dein Abnehmziel zu gefährden.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Cheat-Day-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Zerstört ein Cheat-Day meinen Fortschritt?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein, wenn er geplant ist! Ein einzelner Tag kann maximal ~500g echtes Fett aufbauen. Das meiste Gewicht am nächsten Tag ist Wasser und verschwindet in 2-3 Tagen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie oft sollte ich einen Cheat-Day einlegen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Das hängt von deinem Ziel ab. Für die meisten funktioniert 1x pro Woche oder alle 2 Wochen gut. Häufigere Cheat-Days verlangsamen den Fortschritt deutlich.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sollte ich am Tag nach dem Cheat-Day weniger essen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein! Kehre einfach zu deinem normalen Plan zurück. Ausgleichs-Hungern führt zu einem ungesunden Teufelskreis und ist kontraproduktiv.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was ist ein Cheat-Day?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein Cheat-Day ist ein geplanter Tag, an dem du mehr Kalorien zu dir nimmst als üblich. Er dient als psychologische Pause von einer strengen Diät und kann helfen, langfristig dranzubleiben.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Soll ich meinen Cheat-Day tracken?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Optional, aber empfohlen! Es hilft, ein Gefühl für die Mengen zu behalten und verhindert, dass aus 2000 Extra-Kalorien 5000 werden.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Cheat-Day clever planen",
+      description: "Plane deinen Cheat-Day in 4 Schritten, ohne dein Abnehmziel zu gefährden",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Kalorienbedarf eingeben",
+          text: "Gib deinen täglichen Kalorienbedarf (TDEE) ein. Falls unbekannt, nutze unseren Kalorienbedarfs-Rechner.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Ziel und Defizit festlegen",
+          text: "Wähle ob du abnehmen oder Gewicht halten möchtest und wie hoch dein tägliches Kaloriendefizit sein soll.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Cheat-Day-Häufigkeit wählen",
+          text: "Entscheide, wie oft du einen Cheat-Day einlegen möchtest: wöchentlich, alle 2 Wochen oder monatlich.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Intensität bestimmen",
+          text: "Wähle wie intensiv dein Cheat-Day sein soll und erhalte deinen personalisierten Kalorien-Plan.",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Cheat-Day-Rechner",
+      headline: "Cheat-Day-Rechner - Plane deinen Cheat-Day ohne Reue",
+      description: "Kostenloser Cheat-Day-Rechner zur optimalen Planung von Cheat-Days während einer Diät. Berechne Extra-Kalorien und Auswirkungen auf deinen Fortschritt.",
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      },
+      about: {
+        "@type": "Thing",
+        name: "Cheat-Day",
+        description: "Ein geplanter Tag mit erhöhter Kalorienzufuhr während einer Diät zur psychologischen Entlastung"
+      }
+    })}
+  </script>
+
+  <CheatDayRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
