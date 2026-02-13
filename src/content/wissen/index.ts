@@ -26,6 +26,46 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "kaffee-abnehmen-stoffwechsel",
+    title: "Kaffee beim Abnehmen: Hilft er oder schadet er?",
+    description:
+      "Kurbelt Kaffee wirklich den Stoffwechsel an? Meta-Analysen zeigen: Koffein erhöht den Kalorienverbrauch um 3–4%. Aber nur schwarzer Kaffee hilft – Latte Macchiato zählt nicht.",
+    tags: ["Abnehmen", "Kaffee", "Stoffwechsel", "Mythen", "Meta-Analyse"],
+    publishedAt: "2026-02-13",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "The effects of caffeine intake on weight loss: a systematic review and dos-response meta-analysis of randomized controlled trials",
+        authors: "Tabrizi R, Saneei P, Lankarani KB, et al.",
+        journal: "Critical Reviews in Food Science and Nutrition",
+        year: 2018,
+        doi: "10.1080/10408398.2018.1507996",
+        pmid: "30335479",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30335479/",
+      },
+      {
+        title:
+          "Normal caffeine consumption: influence on thermogenesis and daily energy expenditure in lean and postobese human volunteers",
+        authors: "Dulloo AG, Geissler CA, Horton T, Collins A, Miller DS",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 1989,
+        pmid: "2912010",
+        url: "https://pubmed.ncbi.nlm.nih.gov/2912010/",
+      },
+      {
+        title:
+          "Effects of Caffeine on Brown Adipose Tissue Thermogenesis and Metabolic Homeostasis: A Review",
+        authors: "Velickovic K, Luber F, et al.",
+        journal: "Frontiers in Neuroscience",
+        year: 2021,
+        doi: "10.3389/fnins.2021.621356",
+        url: "https://www.frontiersin.org/journals/neuroscience/articles/10.3389/fnins.2021.621356/full",
+      },
+    ],
+  },
+  {
     slug: "kohlenhydrate-abends-mythos",
     title: "Kohlenhydrate abends: Machen sie wirklich dick?",
     description:
