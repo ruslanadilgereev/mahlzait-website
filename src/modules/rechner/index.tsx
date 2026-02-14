@@ -10,6 +10,14 @@ interface Props {
 
 const calculators = [
   {
+    title: "Grundumsatz Rechner",
+    desc: "Berechne deinen Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE). Die perfekte Basis für Abnehmen oder Muskelaufbau.",
+    link: "/grundumsatz-rechner",
+    icon: "/3D/bulb-front-color.webp",
+    features: ["Grundumsatz (BMR)", "Gesamtenergieumsatz (TDEE)", "Kalorienziele"],
+    color: "primary",
+  },
+  {
     title: "BMI Rechner",
     desc: "Berechne deinen Body Mass Index (BMI) und finde heraus, ob dein Gewicht im gesunden Bereich liegt. Mit WHO-Kategorien und Idealgewicht.",
     link: "/bmi-rechner",
