@@ -26,6 +26,64 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "alkohol-abnehmen-fettverbrennung",
+    title: "Alkohol beim Abnehmen: Stoppt er wirklich die Fettverbrennung?",
+    description:
+      "Alkohol pausiert die Fettverbrennung – aber das ist nicht das größte Problem. Warum der Heißhunger danach gefährlicher ist und wie du trotzdem abnehmen kannst.",
+    tags: ["Abnehmen", "Alkohol", "Fettverbrennung", "Mythen", "Kalorien"],
+    publishedAt: "2026-02-14",
+    readingTime: 9,
+    featured: true,
+    sources: [
+      {
+        title:
+          "De novo lipogenesis, lipid kinetics, and whole-body lipid balances in humans after acute alcohol consumption",
+        authors: "Siler SQ, Neese RA, Hellerstein MK",
+        journal: "American Journal of Clinical Nutrition",
+        year: 1999,
+        pmid: "10539756",
+        url: "https://pubmed.ncbi.nlm.nih.gov/10539756/",
+      },
+      {
+        title:
+          "Effect of acute alcohol consumption on energy expenditure and substrate oxidation in healthy men",
+        authors: "Suter PM, Jéquier E, Schutz Y",
+        journal: "American Journal of Clinical Nutrition",
+        year: 1994,
+        pmid: "8237574",
+        url: "https://pubmed.ncbi.nlm.nih.gov/8237574/",
+      },
+      {
+        title:
+          "Alcohol ingestion acutely antagonizes the refeeding suppression of plasma ghrelin",
+        authors: "Calissendorff J, Danielsson O, Brismar K, Röjdmark S",
+        journal: "Alcohol and Alcoholism",
+        year: 2005,
+        pmid: "16186144",
+        url: "https://pubmed.ncbi.nlm.nih.gov/16186144/",
+      },
+      {
+        title:
+          "Alcohol Consumption and Obesity: An Update",
+        authors: "Traversy G, Chaput JP",
+        journal: "Current Obesity Reports",
+        year: 2015,
+        doi: "10.1007/s13679-014-0129-4",
+        pmid: "25741455",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25741455/",
+      },
+      {
+        title:
+          "Alcohol Consumption Impairs Muscle Protein Synthesis",
+        authors: "Parr EB, Camera DM, Areta JL, et al.",
+        journal: "PLOS ONE",
+        year: 2014,
+        doi: "10.1371/journal.pone.0088384",
+        url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088384",
+      },
+    ],
+  },
+  {
     slug: "kaffee-abnehmen-stoffwechsel",
     title: "Kaffee beim Abnehmen: Hilft er oder schadet er?",
     description:
