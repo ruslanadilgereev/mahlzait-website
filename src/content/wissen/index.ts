@@ -26,6 +26,53 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "detox-diaet-entgiften-abnehmen",
+    title: "Detox Diät: Hilft Entgiften wirklich beim Abnehmen?",
+    description:
+      "Grüne Säfte, Detox-Tees, Entschlackungskuren – überall verspricht 'Entgiften' schnelles Abnehmen. Doch die Wissenschaft ist eindeutig: Schlacken gibt es nicht, und dein Körper entgiftet sich selbst.",
+    tags: ["Abnehmen", "Mythen", "Detox", "Ernährung", "Diät"],
+    publishedAt: "2026-02-15",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title: "Entgiftungsdiäten – Stellungnahme",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE",
+        year: 2024,
+        url: "https://www.dge.de/gesunde-ernaehrung/diaeten-und-fasten/entgiftungsdiaeten/",
+      },
+      {
+        title: "Detox: Mythos Entgiften",
+        authors: "Stiftung Warentest",
+        journal: "test.de",
+        year: 2025,
+        url: "https://www.test.de/Detox-Mythos-Entgiften-5825812-0/",
+      },
+      {
+        title: "Detox – gesünder durch Entgiftung?",
+        authors: "Verbraucherzentrale",
+        journal: "verbraucherzentrale.de",
+        year: 2024,
+        url: "https://www.verbraucherzentrale.de/wissen/lebensmittel/nahrungsergaenzungsmittel/detox-gesuender-durch-entgiftung-25381",
+      },
+      {
+        title: "Detox – was steckt dahinter?",
+        authors: "BARMER",
+        journal: "barmer.de",
+        year: 2025,
+        url: "https://www.barmer.de/gesundheit-verstehen/leben/ernaehrung/detox-1054636",
+      },
+      {
+        title: "Detox: Der Mythos vom Entgiften",
+        authors: "medizin-transparent.at",
+        journal: "Cochrane Österreich",
+        year: 2023,
+        url: "https://medizin-transparent.at/detox-der-mythos-vom-entgiften/",
+      },
+    ],
+  },
+  {
     slug: "alkohol-abnehmen-fettverbrennung",
     title: "Alkohol beim Abnehmen: Stoppt er wirklich die Fettverbrennung?",
     description:
