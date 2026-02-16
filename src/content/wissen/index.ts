@@ -26,6 +26,46 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "abnehmen-ohne-sport-ernaehrung",
+    title: "Abnehmen ohne Sport: Funktioniert es wirklich?",
+    description:
+      "Kein Bock auf Gym? Die Wissenschaft zeigt: Mit Ernährung erreichst du 80% des Abnehm-Erfolgs. Meta-Analysen beweisen – Diät allein schlägt Sport allein um Längen.",
+    tags: ["Abnehmen", "Sport", "Ernährung", "Mythen", "Meta-Analyse"],
+    publishedAt: "2026-02-16",
+    readingTime: 6,
+    featured: true,
+    sources: [
+      {
+        title:
+          "A meta-analysis of the past 25 years of weight loss research using diet, exercise or diet plus exercise intervention",
+        authors: "Miller WC, Koceja DM, Hamilton EJ",
+        journal: "International Journal of Obesity",
+        year: 1997,
+        pmid: "9347414",
+        url: "https://pubmed.ncbi.nlm.nih.gov/9347414/",
+      },
+      {
+        title:
+          "Diet or exercise interventions vs combined behavioral weight management programs: a systematic review and meta-analysis of direct comparisons",
+        authors: "Johns DJ, Hartmann-Boyce J, Jebb SA, Aveyard P",
+        journal: "Journal of the Academy of Nutrition and Dietetics",
+        year: 2014,
+        doi: "10.1016/j.jand.2014.07.005",
+        pmid: "25257365",
+        url: "https://pubmed.ncbi.nlm.nih.gov/25257365/",
+      },
+      {
+        title:
+          "Does physical activity cause weight loss?",
+        authors: "Pontzer H",
+        journal: "International Journal of Obesity",
+        year: 2022,
+        doi: "10.1038/s41366-022-01247-4",
+        url: "https://www.nature.com/articles/s41366-022-01247-4",
+      },
+    ],
+  },
+  {
     slug: "detox-diaet-entgiften-abnehmen",
     title: "Detox Diät: Hilft Entgiften wirklich beim Abnehmen?",
     description:
