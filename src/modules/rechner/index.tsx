@@ -121,6 +121,14 @@ const calculators = [
     features: ["Extra-Kalorien planen", "Wöchentliche Bilanz", "Ohne Schuldgefühle"],
     color: "error",
   },
+  {
+    title: "Körperfettanteil Rechner",
+    desc: "Berechne deinen Körperfettanteil (KFA) mit der US Navy Methode. Genauer als BMI und perfekt für Fitness-Ziele.",
+    link: "/koerperfett-rechner",
+    icon: "/3D/heart-front-color.webp",
+    features: ["KFA in Prozent", "Fett- & Magermasse", "Genauer als BMI"],
+    color: "success",
+  },
 ];
 
 function RechnerPage({ config }: Props) {

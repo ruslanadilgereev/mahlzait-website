@@ -1,0 +1,119 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import KoerperfettRechnerPage from "@modules/koerperfett";
+
+const seo = {
+  title: "Körperfettanteil Rechner - KFA kostenlos berechnen | Mahlzait",
+  description:
+    "Berechne deinen Körperfettanteil (KFA) kostenlos mit der US Navy Methode. Genauer als BMI! Mit Tabelle, Interpretation und Tipps zur Fettreduktion.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Körperfettanteil Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Was ist ein gesunder Körperfettanteil?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Für Männer liegt der gesunde Bereich bei 10-20%, für Frauen bei 18-28%. Athleten haben oft niedrigere Werte, aber unter dem essentiellen Fettanteil zu liegen ist ungesund.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie genau ist die US Navy Methode?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Methode hat eine Genauigkeit von etwa ±3-4% im Vergleich zu präzisen DEXA-Scans. Für das Tracking deines Fortschritts ist sie ideal geeignet.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Warum brauchen Frauen mehr Körperfett?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Frauen haben biologisch mehr essentielles Fett für Hormone und Fortpflanzung. Das essenzielle Fett liegt bei Frauen bei ca. 10-13%, bei Männern nur 2-5%.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie schnell kann ich Körperfett verlieren?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Gesund sind 0.5-1% Körperfett pro Monat. Das entspricht etwa 0.5-1 kg Fettverlust pro Woche bei einem moderaten Kaloriendefizit von 500 kcal/Tag.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Warum verliere ich Gewicht aber kein Körperfett?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ohne ausreichend Protein und Krafttraining verlierst du auch Muskelmasse. Mit Kalorientracking und genug Protein verlierst du gezielt Fett.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Körperfettanteil berechnen",
+      description: "Berechne deinen Körperfettanteil mit der US Navy Methode in 4 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Geschlecht wählen",
+          text: "Wähle dein Geschlecht (Mann oder Frau), da die Berechnung unterschiedliche Formeln verwendet",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Körpermasse eingeben",
+          text: "Gib deine Körpergrösse in cm und dein Gewicht in kg ein",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Halsumfang messen",
+          text: "Miss deinen Halsumfang direkt unterhalb des Kehlkopfs mit einem Massband",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Bauchumfang messen",
+          text: "Miss deinen Bauchumfang auf Nabelhöhe (Männer) oder an der schmalsten Stelle (Frauen). Frauen messen zusätzlich den Hüftumfang.",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- MedicalWebPage Schema for health content -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      name: "Körperfettanteil Rechner",
+      headline: "Körperfettanteil Rechner - KFA kostenlos berechnen",
+      description: "Kostenloser Körperfettrechner zur Berechnung des Körperfettanteils mit der US Navy Methode. Genauer als BMI.",
+      medicalAudience: {
+        "@type": "MedicalAudience",
+        audienceType: "Patient"
+      },
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      }
+    })}
+  </script>
+
+  <KoerperfettRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
