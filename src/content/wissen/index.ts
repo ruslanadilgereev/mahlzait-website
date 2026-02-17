@@ -26,6 +26,54 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "apfelessig-abnehmen-mythos-oder-wunder",
+    title: "Apfelessig abnehmen: Wundermittel oder Hype?",
+    description:
+      "Der TikTok-Trend im Faktencheck: Die viralste Studie wurde zurückgezogen, und echte Evidenz für Fettverbrennung fehlt. Was Apfelessig wirklich kann – und was nicht.",
+    tags: ["Abnehmen", "Mythen", "Apfelessig", "Ernährung", "Trend"],
+    publishedAt: "2026-02-17",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title: "Apfelessig: Gut zum Abnehmen?",
+        authors: "BARMER",
+        journal: "barmer.de",
+        year: 2025,
+        url: "https://www.barmer.de/gesundheit-verstehen/leben/ernaehrung/apfelessig-1327348",
+      },
+      {
+        title: "Die Apfelessig-Diät — ein Hype ohne Grundlage",
+        authors: "Quarks",
+        journal: "quarks.de",
+        year: 2025,
+        url: "https://www.quarks.de/gesundheit/apfelessig-abnehmen/",
+      },
+      {
+        title: "Abnehmen mit Apfelessig? Studie hinter Social-Media-Trend wegen vieler Fehler zurückgezogen",
+        authors: "Apotheken Umschau",
+        journal: "apotheken-umschau.de",
+        year: 2025,
+        url: "https://www.apotheken-umschau.de/gesund-bleiben/ernaehrung/apfelessig-hilft-er-wirklich-beim-abnehmen-1085533.html",
+      },
+      {
+        title: "Vinegar intake reduces body weight, body fat mass, and serum triglyceride levels in obese Japanese subjects",
+        authors: "Kondo T, Kishi M, Fushimi T, Ugajin S, Kaga T",
+        journal: "Bioscience, Biotechnology, and Biochemistry",
+        year: 2009,
+        pmid: "19661687",
+        url: "https://pubmed.ncbi.nlm.nih.gov/19661687/",
+      },
+      {
+        title: "Entgiftungsdiäten – Stellungnahme",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE",
+        year: 2024,
+        url: "https://www.dge.de/gesunde-ernaehrung/diaeten-und-fasten/",
+      },
+    ],
+  },
+  {
     slug: "abnehmen-ohne-sport-ernaehrung",
     title: "Abnehmen ohne Sport: Funktioniert es wirklich?",
     description:
