@@ -129,6 +129,14 @@ const calculators = [
     features: ["KFA in Prozent", "Fett- & Magermasse", "Genauer als BMI"],
     color: "success",
   },
+  {
+    title: "Idealgewicht Rechner",
+    desc: "Berechne dein persönliches Idealgewicht mit 4 wissenschaftlichen Formeln. Broca, Lorentz, BMI-Methode und mehr.",
+    link: "/idealgewicht-rechner",
+    icon: "/3D/target-front-color.webp",
+    features: ["4 Berechnungsmethoden", "Geschlecht & Körperbau", "Idealgewicht-Tabelle"],
+    color: "info",
+  },
 ];
 
 function RechnerPage({ config }: Props) {

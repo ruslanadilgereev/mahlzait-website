@@ -1,0 +1,119 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import IdealgewichtRechnerPage from "@modules/idealgewicht";
+
+const seo = {
+  title: "Idealgewicht Rechner - Dein optimales Gewicht berechnen | Mahlzait",
+  description:
+    "Berechne dein Idealgewicht kostenlos mit 4 wissenschaftlichen Formeln: Broca, Lorentz, BMI und mehr. Berücksichtigt Geschlecht, Alter und Körperbau. Mit Tabelle und Erklärung.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Idealgewicht Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Welche Formel ist am genauesten für das Idealgewicht?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Keine einzelne Formel ist perfekt. Die Kombination aus Broca, Lorentz und BMI-Methode (Ziel-BMI 22) unter Berücksichtigung von Alter und Körperbau liefert die besten Ergebnisse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was ist der Unterschied zwischen Idealgewicht und Normalgewicht?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Das Normalgewicht ist der Bereich ohne Gesundheitsrisiken (BMI 18.5-24.9). Das Idealgewicht liegt innerhalb dieses Bereichs und ist der statistische Optimalwert bei BMI 22.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist das Idealgewicht für alle Menschen gleich?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Nein, das Idealgewicht ist individuell und hängt von Grösse, Geschlecht, Alter, Körperbau und Muskelmasse ab. Zwei Menschen gleicher Grösse können unterschiedliche Idealgewichte haben.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie erreiche ich mein Idealgewicht gesund?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Durch ein moderates Kaloriendefizit von 300-500 kcal pro Tag, ausgewogene Ernährung und regelmässige Bewegung. Kalorientracking hilft, den Überblick zu behalten und Crash-Diäten zu vermeiden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was ist die Broca-Formel?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Broca-Formel berechnet das Normalgewicht als Körpergrösse in cm minus 100. Die modifizierte Version multipliziert das Ergebnis mit 0.9 für Männer bzw. 0.85 für Frauen.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Idealgewicht berechnen",
+      description: "Berechne dein persönliches Idealgewicht in 4 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Geschlecht wählen",
+          text: "Wähle ob du männlich oder weiblich bist – die Formeln unterscheiden sich je nach Geschlecht",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Körpergrösse eingeben",
+          text: "Gib deine Körpergrösse in Zentimetern ein (z.B. 175 cm)",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Aktuelles Gewicht eingeben",
+          text: "Gib dein aktuelles Körpergewicht in Kilogramm ein, um die Differenz zum Idealgewicht zu berechnen",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Alter und Körperbau angeben",
+          text: "Gib dein Alter an und wähle deinen Körperbau (schmal, normal oder breit) für ein genaueres Ergebnis",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- MedicalWebPage Schema for health content -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      name: "Idealgewicht Rechner",
+      headline: "Idealgewicht Rechner - Dein optimales Gewicht berechnen",
+      description: "Kostenloser Idealgewicht-Rechner mit 4 wissenschaftlichen Formeln. Berechnet das optimale Körpergewicht basierend auf Grösse, Geschlecht, Alter und Körperbau.",
+      medicalAudience: {
+        "@type": "MedicalAudience",
+        audienceType: "Patient"
+      },
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      }
+    })}
+  </script>
+
+  <IdealgewichtRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
