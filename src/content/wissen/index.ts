@@ -26,6 +26,73 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "heisshunger-stoppen-ursachen-tipps",
+    title: "Heißhunger stoppen: Warum Diäten ihn nicht verstärken",
+    description:
+      "Der Mythos entkräftet: Meta-Analysen zeigen, dass Kalorienreduktion Heißhunger senkt – nicht steigert. Plus: Die echten Ursachen (Schlaf, Protein, Blutzucker) und was wirklich hilft.",
+    tags: ["Abnehmen", "Heißhunger", "Mythen", "Protein", "Schlaf"],
+    publishedAt: "2026-02-18",
+    readingTime: 7,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Extended calorie restriction suppresses overall and specific food cravings: a systematic review and a meta-analysis",
+        authors: "Kahathuduwa CN, Binks M, Martin CK, Dawson JA",
+        journal: "Obesity Reviews",
+        year: 2017,
+        doi: "10.1111/obr.12566",
+        pmid: "28557246",
+        url: "https://pubmed.ncbi.nlm.nih.gov/28557246/",
+      },
+      {
+        title:
+          "Frequency of consuming foods predicts changes in cravings for those foods during weight loss: The POUNDS Lost Study",
+        authors: "Apolzan JW, Myers CA, Champagne CM, et al.",
+        journal: "Obesity",
+        year: 2017,
+        doi: "10.1002/oby.21895",
+        pmid: "28653502",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC5529244/",
+      },
+      {
+        title:
+          "Reduced food cravings correlated with a 24-month period of weight loss and weight maintenance",
+        authors: "Jospe MR, Taylor RW, et al.",
+        journal: "Appetite",
+        year: 2025,
+        pmid: "39826856",
+        url: "https://pubmed.ncbi.nlm.nih.gov/39826856/",
+      },
+      {
+        title:
+          "Effect of short- and long-term protein consumption on appetite and appetite-regulating gastrointestinal hormones: a systematic review and meta-analysis",
+        authors: "Kohanmoo A, Faghih S, Akhlaghi M",
+        journal: "Physiology & Behavior",
+        year: 2020,
+        doi: "10.1016/j.physbeh.2020.113123",
+        url: "https://www.sciencedirect.com/science/article/abs/pii/S0031938420304376",
+      },
+      {
+        title:
+          "Increased Hunger, Food Cravings, Food Reward, and Portion Size Selection after Sleep Curtailment in Women Without Obesity",
+        authors: "Hanlon EC, Tasali E, Leproult R, et al.",
+        journal: "Nutrients",
+        year: 2019,
+        pmid: "30893841",
+        url: "https://pubmed.ncbi.nlm.nih.gov/30893841/",
+      },
+      {
+        title: "The impact of sleep deprivation on food desire in the human brain",
+        authors: "Greer SM, Goldstein AN, Walker MP",
+        journal: "Nature Communications",
+        year: 2013,
+        doi: "10.1038/ncomms3259",
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC3763921/",
+      },
+    ],
+  },
+  {
     slug: "apfelessig-abnehmen-mythos-oder-wunder",
     title: "Apfelessig abnehmen: Wundermittel oder Hype?",
     description:
