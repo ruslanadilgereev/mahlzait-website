@@ -1,0 +1,120 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import KoffeinRechnerPage from "@modules/koffein";
+
+const seo = {
+  title: "Koffein-Rechner: Täglichen Koffeinkonsum berechnen | Mahlzait",
+  description:
+    "Berechne deinen täglichen Koffeinkonsum kostenlos. Erfahre, ob du das empfohlene Tageslimit von 400mg überschreitest. Mit Koffeingehalt von Kaffee, Energy Drinks, Tee & mehr.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Koffein-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viel Koffein am Tag ist gesund?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die EFSA empfiehlt maximal 400mg Koffein pro Tag für gesunde Erwachsene. Das entspricht etwa 4-5 Tassen Filterkaffee. Schwangere sollten unter 200mg bleiben.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie viel Koffein hat eine Tasse Kaffee?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Eine Tasse Filterkaffee (200ml) enthält etwa 95mg Koffein. Ein Espresso hat etwa 63mg. Cold Brew kann bis zu 200mg pro Glas enthalten.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie lange wirkt Koffein?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Wirkung setzt nach 15-45 Minuten ein und hält etwa 3-5 Stunden an. Die Halbwertszeit beträgt 5-6 Stunden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist Koffein schädlich?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "In moderaten Mengen (bis 400mg/Tag) ist Koffein für die meisten Erwachsenen unbedenklich. Übermässiger Konsum kann zu Schlafstörungen, Unruhe und erhöhtem Blutdruck führen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hat entkoffeinierter Kaffee wirklich kein Koffein?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Entkoffeinierter Kaffee enthält noch geringe Mengen Koffein (2-15mg pro Tasse). Für die meisten Menschen ist das vernachlässigbar.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Koffeinkonsum berechnen",
+      description: "Berechne deinen täglichen Koffeinkonsum in 3 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Getränke auswählen",
+          text: "Wähle aus der Liste alle koffeinhaltigen Getränke, die du heute konsumiert hast (Kaffee, Energy Drinks, Tee, Cola, etc.)",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Menge anpassen",
+          text: "Gib die Anzahl jedes Getränks an, das du konsumiert hast",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Ergebnis erhalten",
+          text: "Klicke auf Berechnen und erfahre, wie viel Koffein du konsumiert hast und ob du im sicheren Bereich bist",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Koffein-Rechner",
+      headline: "Koffein-Rechner: Täglichen Koffeinkonsum berechnen",
+      description: "Kostenloser Koffein-Rechner zur Berechnung des täglichen Koffeinkonsums. Mit Koffeingehalt aller beliebten Getränke.",
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      }
+    })}
+  </script>
+
+  <!-- Caffeine Amount Table Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Table",
+      name: "Koffeingehalt beliebter Getränke",
+      about: "Koffeingehalt von Kaffee, Energy Drinks, Tee und anderen koffeinhaltigen Getränken",
+    })}
+  </script>
+
+  <KoffeinRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>

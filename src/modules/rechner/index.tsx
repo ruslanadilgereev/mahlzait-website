@@ -137,6 +137,14 @@ const calculators = [
     features: ["4 Berechnungsmethoden", "Geschlecht & Körperbau", "Idealgewicht-Tabelle"],
     color: "info",
   },
+  {
+    title: "Koffein-Rechner",
+    desc: "Wie viel Koffein nimmst du täglich zu dir? Tracke deinen Konsum und finde heraus, ob du das Tageslimit überschreitest.",
+    link: "/koffein-rechner",
+    icon: "/3D/bulb-front-color.webp",
+    features: ["Kaffee, Energy Drinks, Tee", "EFSA-Tageslimit (400mg)", "Koffeingehalt pro Getränk"],
+    color: "warning",
+  },
 ];
 
 function RechnerPage({ config }: Props) {
