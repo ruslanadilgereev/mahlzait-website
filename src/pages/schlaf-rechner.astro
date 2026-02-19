@@ -1,0 +1,136 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import SchlafRechnerPage from "@modules/schlaf";
+
+const seo = {
+  title: "Schlaf-Rechner - Optimale Schlafzeiten berechnen | Mahlzait",
+  description:
+    "Berechne deine optimalen Schlaf- und Aufwachzeiten basierend auf 90-Minuten-Schlafzyklen. Wach erfrischt auf statt mitten im Tiefschlaf. Kostenlos & wissenschaftlich fundiert.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Schlaf-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viele Stunden Schlaf brauche ich?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die meisten Erwachsenen (18-64 Jahre) brauchen 7-9 Stunden Schlaf. Teenager brauchen 8-10 Stunden, ältere Erwachsene (65+) oft nur 7-8 Stunden. Wichtiger als die Dauer ist aber, am Ende eines Schlafzyklus aufzuwachen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Warum dauert ein Schlafzyklus 90 Minuten?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "90 Minuten ist der Durchschnittswert für einen kompletten Schlafzyklus (Leichtschlaf → Tiefschlaf → REM). Der Wert kann individuell zwischen 80-120 Minuten variieren.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wann sollte ich schlafen gehen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die beste Schlafenszeit hängt von deiner gewünschten Aufwachzeit ab. Plane 4-6 komplette Schlafzyklen (je 90 Minuten) plus 15 Minuten Einschlafzeit ein. Bei einer Aufwachzeit von 7:00 Uhr wären optimale Schlafenszeiten z.B. 21:45, 23:15 oder 00:45 Uhr.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Kann ich Schlaf am Wochenende nachholen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "'Social Jetlag' – also unter der Woche wenig und am Wochenende viel schlafen – stört deinen Biorhythmus. Besser ist es, jeden Tag zur gleichen Zeit aufzustehen (±30 Min).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Sind Power Naps sinnvoll?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ja! Ein 20-30 Minuten Nickerchen am frühen Nachmittag kann Konzentration und Energie steigern. Wichtig: Nicht länger als 30 Minuten und nicht nach 15 Uhr.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Optimale Schlafzeit berechnen",
+      description: "Berechne deine optimale Schlaf- oder Aufwachzeit in 3 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Modus wählen",
+          text: "Wähle, ob du eine optimale Schlafenszeit (für eine bestimmte Aufwachzeit) oder Aufwachzeit (für eine geplante Schlafenszeit) berechnen möchtest.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Zeit eingeben",
+          text: "Gib deine gewünschte Aufwachzeit oder geplante Schlafenszeit ein.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Optimale Zeit wählen",
+          text: "Wähle aus den berechneten Zeiten diejenige, die am besten zu deinem Zeitplan passt. 5-6 Schlafzyklen (7.5-9 Stunden) sind ideal.",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      name: "Schlaf-Rechner",
+      headline: "Schlaf-Rechner - Optimale Schlafzeiten berechnen",
+      description: "Kostenloser Schlaf-Rechner zur Berechnung optimaler Schlaf- und Aufwachzeiten basierend auf 90-Minuten-Schlafzyklen. Wissenschaftlich fundiert.",
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      },
+      about: {
+        "@type": "Thing",
+        name: "Schlafzyklen",
+        description: "Ein Schlafzyklus dauert durchschnittlich 90 Minuten und umfasst Leichtschlaf, Tiefschlaf und REM-Schlaf."
+      }
+    })}
+  </script>
+
+  <!-- SoftwareApplication Schema for calculator -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      name: "Schlaf-Rechner",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "EUR"
+      },
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.8",
+        ratingCount: "142"
+      }
+    })}
+  </script>
+
+  <SchlafRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>

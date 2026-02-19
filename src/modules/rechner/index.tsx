@@ -145,6 +145,14 @@ const calculators = [
     features: ["Kaffee, Energy Drinks, Tee", "EFSA-Tageslimit (400mg)", "Koffeingehalt pro Getränk"],
     color: "warning",
   },
+  {
+    title: "Schlaf-Rechner",
+    desc: "Berechne optimale Schlaf- und Aufwachzeiten basierend auf 90-Minuten-Schlafzyklen. Wach erfrischt auf statt müde.",
+    link: "/schlaf-rechner",
+    icon: "/3D/calender-front-color.webp",
+    features: ["Optimale Schlafenszeit", "Aufwachzeit berechnen", "Schlafzyklen verstehen"],
+    color: "secondary",
+  },
 ];
 
 function RechnerPage({ config }: Props) {
