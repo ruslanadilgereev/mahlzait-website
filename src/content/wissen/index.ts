@@ -26,6 +26,57 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "jojo-effekt-diaet-wieder-zunehmen",
+    title: "Jojo-Effekt: Warum nehme ich nach jeder Diät wieder zu?",
+    description:
+      "Der Jojo-Effekt erklärt: Warum 80% nach einer Diät wieder zunehmen, wie Hormone und Stoffwechsel sich anpassen – und was die erfolgreichen 20% anders machen.",
+    tags: ["Abnehmen", "Jojo-Effekt", "Diät", "Mythen", "Gewicht halten"],
+    publishedAt: "2026-02-19",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Long-term persistence of hormonal adaptations to weight loss",
+        authors: "Sumithran P, Prendergast LA, Delbridge E, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2011,
+        doi: "10.1056/NEJMoa1105816",
+        pmid: "21991007",
+        url: "https://pubmed.ncbi.nlm.nih.gov/21991007/",
+      },
+      {
+        title:
+          "Weight-Loss Maintenance for 10 Years in the National Weight Control Registry",
+        authors: "Thomas JG, Bond DS, Phelan S, et al.",
+        journal: "American Journal of Preventive Medicine",
+        year: 2014,
+        doi: "10.1016/j.amepre.2013.08.019",
+        pmid: "24355670",
+        url: "https://pubmed.ncbi.nlm.nih.gov/24355670/",
+      },
+      {
+        title:
+          "Long-term weight loss maintenance",
+        authors: "Wing RR, Phelan S",
+        journal: "American Journal of Clinical Nutrition",
+        year: 2005,
+        pmid: "16002825",
+        url: "https://pubmed.ncbi.nlm.nih.gov/16002825/",
+      },
+      {
+        title:
+          "Metabolic adaptation is not a major barrier to weight-loss maintenance",
+        authors: "Martins C, Gower BA, Hill JO, Hunter GR",
+        journal: "American Journal of Clinical Nutrition",
+        year: 2020,
+        doi: "10.1093/ajcn/nqaa220",
+        pmid: "32844207",
+        url: "https://pubmed.ncbi.nlm.nih.gov/32844207/",
+      },
+    ],
+  },
+  {
     slug: "heisshunger-stoppen-ursachen-tipps",
     title: "Heißhunger stoppen: Warum Diäten ihn nicht verstärken",
     description:
