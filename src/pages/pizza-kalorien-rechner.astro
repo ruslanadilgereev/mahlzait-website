@@ -1,0 +1,157 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import PizzaKalorienRechnerPage from "@modules/pizza";
+
+const seo = {
+  title: "Pizza Kalorien Rechner - Margherita, Salami & mehr berechnen | Mahlzait",
+  description:
+    "Berechne die Kalorien in deiner Pizza. Kostenloser Pizza-Kalorien-Rechner für Margherita, Salami, Hawaii & mehr. Mit Grösse, Teigart und Belägen. Inkl. Kalorientabelle.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Pizza Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Wie viele Kalorien hat ein Stück Pizza?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein Stück Pizza (1/8 einer 30cm Pizza) hat je nach Belag 200-300 kcal. Margherita ca. 200 kcal, Salami ca. 260 kcal, Quattro Formaggi bis zu 290 kcal pro Stück.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie viele Kalorien hat eine ganze Pizza?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Eine ganze Pizza (30 cm) hat durchschnittlich 800-1200 kcal. Margherita ca. 800-900 kcal, Salami 1000-1100 kcal, Quattro Formaggi bis zu 1200 kcal.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Welche Pizza hat am wenigsten Kalorien?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Die Margherita ist die kalorienärmste klassische Pizza mit ca. 200 kcal pro Stück. Noch weniger hat eine Marinara (nur Tomaten, Knoblauch, Oregano – ohne Käse).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist Pizza gut zum Abnehmen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Pizza kann in eine Diät passen, wenn du die Portion kontrollierst: 2-3 Stücke mit Salat statt einer ganzen Pizza. Wähle dünnen Teig, wenig Käse und Gemüse-Beläge.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Hat Tiefkühlpizza weniger Kalorien?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Oft ja! Eine typische Tiefkühlpizza hat 650-850 kcal für die ganze Pizza – weniger als Restaurantpizza. Aber die Portionen sind kleiner.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was ist kalorienärmer: Pizza oder Döner?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Ein Döner (550-650 kcal) hat weniger Kalorien als eine ganze Pizza (800-1200 kcal), aber mehr als 2-3 Stücke Pizza. Entscheidend ist die Portion!",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Pizza-Kalorien berechnen",
+      description: "Berechne die Kalorien in deiner Pizza mit allen Optionen",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Pizza-Grösse wählen",
+          text: "Wähle zwischen klein (26cm), normal (30cm), gross (36cm) oder Familienpizza (45cm)",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Pizza-Sorte auswählen",
+          text: "Wähle deine Pizza: Margherita, Salami, Hawaii, Quattro Formaggi und mehr",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Teigart bestimmen",
+          text: "Wähle klassischen, dünnen, dicken oder Käserand-Teig",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Extra-Beläge hinzufügen",
+          text: "Füge optional Extra-Käse, Pepperoni, Pilze oder andere Beläge hinzu",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Anzahl Stücke angeben",
+          text: "Gib an, wie viele Stücke du isst",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Ergebnis ablesen",
+          text: "Die Gesamtkalorien werden mit Protein, Kohlenhydraten und Fett angezeigt",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Pizza Kalorien Rechner",
+      description: "Kostenloser Online-Rechner zur Berechnung der Kalorien in Pizza – alle Sorten, Grössen und Beläge",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "EUR"
+      },
+      featureList: [
+        "Berechnung für 10+ Pizza-Sorten",
+        "Verschiedene Pizza-Grössen (26-45cm)",
+        "Auswahl von Teigart und Extra-Belägen",
+        "Anzeige von Protein, Kohlenhydraten und Fett",
+        "Kalorientabelle für beliebte Pizzen",
+        "Tipps für kalorienärmere Pizza-Optionen"
+      ]
+    })}
+  </script>
+
+  <!-- NutritionInformation Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "NutritionInformation",
+      name: "Pizza Margherita (ganze Pizza)",
+      servingSize: "30cm / 350g",
+      calories: "800-900 kcal",
+      proteinContent: "32g",
+      carbohydrateContent: "104g",
+      fatContent: "28g"
+    })}
+  </script>
+
+  <PizzaKalorienRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>

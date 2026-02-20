@@ -153,6 +153,14 @@ const calculators = [
     features: ["Optimale Schlafenszeit", "Aufwachzeit berechnen", "Schlafzyklen verstehen"],
     color: "secondary",
   },
+  {
+    title: "Pizza Kalorien Rechner",
+    desc: "Wie viele Kalorien hat deine Pizza? Berechne Kalorien für Margherita, Salami, Hawaii und mehr – mit Grösse und Belägen.",
+    link: "/pizza-kalorien-rechner",
+    icon: "/3D/bulb-front-color.webp",
+    features: ["10+ Pizza-Sorten", "Grösse, Teig & Beläge", "Kalorientabelle"],
+    color: "error",
+  },
 ];
 
 function RechnerPage({ config }: Props) {
