@@ -26,6 +26,56 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "fett-macht-fett-mythos-abnehmen",
+    title: "Fett macht fett: Stimmt der Abnehm-Mythos wirklich?",
+    description:
+      "Der Mythos aus den 80ern im Faktencheck: Meta-Analysen zeigen, dass Low-Fat-Diäten nicht besser funktionieren. Warum gute Fette beim Abnehmen sogar helfen können.",
+    tags: ["Abnehmen", "Mythen", "Fett", "Ernährung", "Low-Fat"],
+    publishedAt: "2026-02-20",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Dietary Intervention for Overweight and Obese Adults: Comparison of Low-Carbohydrate and Low-Fat Diets. A Meta-Analysis",
+        authors: "Sackner-Bernstein J, Kanter D, Kaul S",
+        journal: "PLOS ONE",
+        year: 2015,
+        doi: "10.1371/journal.pone.0139817",
+        url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0139817",
+      },
+      {
+        title:
+          "Effect of Low-Fat Diet Interventions Versus Other Diet Interventions on Long-Term Weight Change in Adults: A Systematic Review and Meta-Analysis",
+        authors: "Tobias DK, Chen M, Manson JE, et al.",
+        journal: "The Lancet Diabetes & Endocrinology",
+        year: 2015,
+        doi: "10.1016/S2213-8587(15)00367-8",
+        pmid: "26527511",
+        url: "https://pubmed.ncbi.nlm.nih.gov/26527511/",
+      },
+      {
+        title:
+          "Dietary fat and carbohydrate intake and cardiovascular disease: a narrative review",
+        authors: "Ludwig DS, Willett WC, Volek JS, Neuhouser ML",
+        journal: "Internal and Emergency Medicine",
+        year: 2018,
+        doi: "10.1007/s11739-018-1806-0",
+        pmid: "29427130",
+        url: "https://pubmed.ncbi.nlm.nih.gov/29427130/",
+      },
+      {
+        title:
+          "Short-term effect of eggs on satiety in overweight and obese subjects",
+        authors: "Vander Wal JS, Marth JM, Khosla P, et al.",
+        journal: "Journal of the American College of Nutrition",
+        year: 2005,
+        pmid: "16373948",
+        url: "https://pubmed.ncbi.nlm.nih.gov/16373948/",
+      },
+    ],
+  },
+  {
     slug: "jojo-effekt-diaet-wieder-zunehmen",
     title: "Jojo-Effekt: Warum nehme ich nach jeder Diät wieder zu?",
     description:
