@@ -111,9 +111,24 @@
       ],
       "notable_queries": [],
       "notes": "Stable day. /wissen/ holding #1. Impressions and position slightly down (12 imp, pos 2.7) - normal rolling window fluctuation. Still no clicks. Waiting for breakthrough."
+    },
+    {
+      "date": "2026-02-20",
+      "period": "2026-02-11 to 2026-02-17",
+      "total_impressions": 15,
+      "total_clicks": 0,
+      "avg_position": 3.3,
+      "top_pages": [
+        {"page": "https://www.mahlzait.de/", "impressions": 9, "position": 4.8},
+        {"page": "https://www.mahlzait.de/wissen/", "impressions": 6, "position": 1.0}
+      ],
+      "notable_queries": [
+        {"query": "welche fasten app ist die beste", "impressions": 1, "position": 1.0}
+      ],
+      "notes": "GSC backfill: impressions 12→15 for same period. /wissen/ up to 6 impressions, still #1. New query 'welche fasten app ist die beste' ranking #1 - relevant for fasting app! No clicks yet."
     }
   ],
-  "last_check": "2026-02-19",
+  "last_check": "2026-02-20",
   "milestones": {
     "first_impression": "2026-02-11",
     "first_click": null,
