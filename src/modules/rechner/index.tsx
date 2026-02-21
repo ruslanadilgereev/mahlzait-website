@@ -161,6 +161,14 @@ const calculators = [
     features: ["10+ Pizza-Sorten", "Grösse, Teig & Beläge", "Kalorientabelle"],
     color: "error",
   },
+  {
+    title: "Taille-Hüft-Verhältnis Rechner",
+    desc: "Berechne dein WHR (Waist-to-Hip Ratio) und erfahre, was die Fettverteilung über dein Gesundheitsrisiko aussagt.",
+    link: "/taille-hueft-verhaeltnis-rechner",
+    icon: "/3D/heart-front-color.webp",
+    features: ["WHR berechnen", "Apfel- vs. Birnenform", "Gesundheitsrisiko"],
+    color: "accent",
+  },
 ];
 
 function RechnerPage({ config }: Props) {

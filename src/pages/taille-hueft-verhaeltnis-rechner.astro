@@ -1,0 +1,151 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import WHRRechnerPage from "@modules/whr";
+
+const seo = {
+  title: "Taille-Hüft-Verhältnis Rechner (WHR) - Gesundheitsrisiko berechnen | Mahlzait",
+  description:
+    "Berechne dein Taille-Hüft-Verhältnis (WHR) und erfahre, was es über dein Gesundheitsrisiko aussagt. Kostenloser WHR-Rechner mit Richtwerten für Männer & Frauen.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Taille-Hüft-Verhältnis Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Was ist ein gutes Taille-Hüft-Verhältnis?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Für Frauen gilt ein WHR unter 0.80 als gesund, für Männer unter 0.90. Diese Werte sind laut WHO mit einem niedrigen Risiko für Herz-Kreislauf-Erkrankungen verbunden.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ist WHR besser als BMI?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "WHR und BMI ergänzen sich. Der BMI berücksichtigt nicht, wo das Fett sitzt. WHR zeigt gezielt das Bauchfett an, das gesundheitlich bedenklicher ist. Am besten nutzt du beide Werte zusammen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie messe ich meinen Taillenumfang richtig?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Miss an der schmalsten Stelle deiner Taille, meist auf Höhe des Bauchnabels. Steh aufrecht, atme normal aus und halte das Maßband horizontal. Miss morgens vor dem Essen für konsistente Ergebnisse.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie kann ich mein WHR verbessern?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Bauchfett reagiert gut auf Kaloriendefizit, Ausdauertraining und Kraftsport. Reduziere Zucker und Alkohol, erhöhe Ballaststoffe und Protein. Auch ausreichend Schlaf und Stressabbau helfen.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Wie oft sollte ich mein WHR messen?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Einmal pro Woche oder alle zwei Wochen reicht aus. Miss immer zur gleichen Tageszeit (morgens nüchtern) für vergleichbare Werte. Körpermaße ändern sich langsamer als das Gewicht.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Was bedeutet Apfelform und Birnenform?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Apfelform bedeutet, dass sich Fett hauptsächlich um die Körpermitte sammelt (hoher WHR). Birnenform beschreibt Fettansammlung an Hüften und Oberschenkeln (niedriger WHR). Die Apfelform ist mit höheren Gesundheitsrisiken verbunden.",
+          },
+        },
+      ],
+    })}
+  </script>
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      name: "Taille-Hüft-Verhältnis berechnen",
+      description: "So berechnest du dein WHR in 3 einfachen Schritten",
+      step: [
+        {
+          "@type": "HowToStep",
+          name: "Taillenumfang messen",
+          text: "Miss deinen Taillenumfang an der schmalsten Stelle, meist auf Höhe des Bauchnabels. Halte das Maßband horizontal und atme normal aus.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "Hüftumfang messen",
+          text: "Miss deinen Hüftumfang an der breitesten Stelle über dem Gesäß. Das Maßband sollte horizontal verlaufen.",
+        },
+        {
+          "@type": "HowToStep",
+          name: "WHR berechnen",
+          text: "Teile deinen Taillenumfang durch deinen Hüftumfang. Das Ergebnis ist dein Taille-Hüft-Verhältnis (WHR).",
+        },
+      ],
+    })}
+  </script>
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      name: "Taille-Hüft-Verhältnis Rechner",
+      description: "Kostenloser WHR-Rechner zur Berechnung des Taille-Hüft-Verhältnisses und Bewertung des Gesundheitsrisikos",
+      applicationCategory: "HealthApplication",
+      operatingSystem: "Web",
+      offers: {
+        "@type": "Offer",
+        price: "0",
+        priceCurrency: "EUR"
+      },
+      featureList: [
+        "Berechnung des Taille-Hüft-Verhältnisses",
+        "Risikobewertung nach WHO-Richtlinien",
+        "Geschlechtsspezifische Richtwerte",
+        "Messanleitung für korrekte Ergebnisse",
+        "Verbesserungstipps bei erhöhtem Risiko"
+      ]
+    })}
+  </script>
+
+  <!-- MedicalWebPage Schema -->
+  <script type="application/ld+json" is:inline>
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalWebPage",
+      name: "Taille-Hüft-Verhältnis Rechner",
+      headline: "WHR berechnen - Gesundheitsrisiko durch Fettverteilung",
+      description: "Berechne dein Taille-Hüft-Verhältnis und erfahre, was die Fettverteilung über dein Gesundheitsrisiko aussagt.",
+      about: {
+        "@type": "MedicalCondition",
+        name: "Abdominale Adipositas",
+        description: "Fettansammlung im Bauchbereich, die mit erhöhtem Risiko für Herz-Kreislauf-Erkrankungen verbunden ist."
+      },
+      mainContentOfPage: {
+        "@type": "WebPageElement",
+        cssSelector: ".card"
+      },
+      specialty: {
+        "@type": "MedicalSpecialty",
+        name: "Kardiologie und Endokrinologie"
+      }
+    })}
+  </script>
+
+  <WHRRechnerPage client:load config={defaultTemplateConfig} />
+</Layout>
