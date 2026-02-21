@@ -26,6 +26,59 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "abnehmspritze-ozempic-wegovy-wirkung",
+    title: "Abnehmspritze: Ozempic, Wegovy & Co. – Was du wissen musst",
+    description:
+      "Die Abnehmspritze im Faktencheck: 15% Gewichtsverlust klingt super – aber was sind die Nebenwirkungen, Kosten und Langzeitrisiken? Wissenschaft vs. TikTok-Hype.",
+    tags: ["Abnehmen", "Abnehmspritze", "Ozempic", "Wegovy", "Medikamente"],
+    publishedAt: "2026-02-21",
+    readingTime: 8,
+    featured: true,
+    sources: [
+      {
+        title: "Semaglutide for the treatment of overweight and obesity: A review",
+        authors: "Wilding JPH, Batterham RL, et al.",
+        journal: "PMC / Obesity Reviews",
+        year: 2023,
+        url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10092086/",
+      },
+      {
+        title: "Once-Weekly Semaglutide in Adults with Overweight or Obesity (STEP 1)",
+        authors: "Wilding JPH, Batterham RL, Calanna S, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2021,
+        doi: "10.1056/NEJMoa2032183",
+        pmid: "33567185",
+        url: "https://pubmed.ncbi.nlm.nih.gov/33567185/",
+      },
+      {
+        title: "Semaglutide and Cardiovascular Outcomes in Obesity without Diabetes (SELECT)",
+        authors: "Lincoff AM, Brown-Frandsen K, Colhoun HM, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2023,
+        doi: "10.1056/NEJMoa2307563",
+        pmid: "37952131",
+        url: "https://pubmed.ncbi.nlm.nih.gov/37952131/",
+      },
+      {
+        title: "Weight regain and cardiometabolic effects after withdrawal of semaglutide (STEP 1 extension)",
+        authors: "Wilding JPH, Batterham RL, Davies M, et al.",
+        journal: "Diabetes, Obesity and Metabolism",
+        year: 2022,
+        doi: "10.1111/dom.14725",
+        pmid: "35441470",
+        url: "https://pubmed.ncbi.nlm.nih.gov/35441470/",
+      },
+      {
+        title: "Abnehmspritzen: Kosten, Wirkung und Nebenwirkungen",
+        authors: "Apotheken Umschau",
+        journal: "apotheken-umschau.de",
+        year: 2025,
+        url: "https://www.apotheken-umschau.de/gesund-bleiben/abnehmen/abnehmspritzen-wie-sie-wirken-und-wem-sie-helfen-koennen-1334365.html",
+      },
+    ],
+  },
+  {
     slug: "fett-macht-fett-mythos-abnehmen",
     title: "Fett macht fett: Stimmt der Abnehm-Mythos wirklich?",
     description:
