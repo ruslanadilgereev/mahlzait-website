@@ -126,9 +126,25 @@
         {"query": "welche fasten app ist die beste", "impressions": 1, "position": 1.0}
       ],
       "notes": "GSC backfill: impressions 12→15 for same period. /wissen/ up to 6 impressions, still #1. New query 'welche fasten app ist die beste' ranking #1 - relevant for fasting app! No clicks yet."
+    },
+    {
+      "date": "2026-02-21",
+      "period": "2026-02-11 to 2026-02-18",
+      "total_impressions": 16,
+      "total_clicks": 0,
+      "avg_position": 3.6,
+      "top_pages": [
+        {"page": "https://www.mahlzait.de/", "impressions": 10, "position": 5.2},
+        {"page": "https://www.mahlzait.de/wissen/", "impressions": 6, "position": 1.0}
+      ],
+      "notable_queries": [
+        {"query": "welche fasten app ist die beste", "impressions": 1, "position": 1.0},
+        {"query": "welche app ist das", "impressions": 1, "position": 15}
+      ],
+      "notes": "Stable day. /wissen/ holding #1. 16 impressions (+1 from yesterday). Homepage position softened 4.8→5.2. New query appeared: 'welche app ist das' at pos 15. Still no clicks."
     }
   ],
-  "last_check": "2026-02-20",
+  "last_check": "2026-02-21",
   "milestones": {
     "first_impression": "2026-02-11",
     "first_click": null,
