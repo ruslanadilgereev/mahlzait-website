@@ -1,0 +1,147 @@
+{
+  "lastUpdated": "2026-02-22T17:01:00Z",
+  "summary": {
+    "totalGastbeitragTargets": 4,
+    "verifiedActive": 3,
+    "pendingSubmissions": 0,
+    "directoriesIdentified": 5
+  },
+  "gastbeitragTargets": [
+    {
+      "site": "4yourfitness.com",
+      "url": "https://www.4yourfitness.com/kooperationen/gastautor-werden",
+      "contact": "pat@4yourfitness.com",
+      "status": "verified_active",
+      "monthlyReaders": 13000,
+      "requirements": {
+        "minWords": 1000,
+        "unique": true,
+        "authorBio": true,
+        "noAffiliateLinks": true
+      },
+      "relevance": "hoch",
+      "topics": ["Sport", "Gesundheit", "Ernährung", "Apps", "Fitness-Equipment"],
+      "notes": "Sehr professionell, klare Guidelines. Thema App-Vorstellung oder Intervallfasten-Guide passt perfekt.",
+      "dateAdded": "2026-02-22",
+      "contacted": false
+    },
+    {
+      "site": "gesundeliste.de",
+      "url": "https://gesundeliste.de/gastautor-werden-gastartikel-schreiben/",
+      "contact": "info@gesundeliste.de",
+      "status": "verified_active",
+      "requirements": {
+        "backlinkExchange": true,
+        "authorInfo": true
+      },
+      "relevance": "hoch",
+      "topics": ["Gesundheit", "Ernährung", "Fitness", "Wellness"],
+      "notes": "Erwarten Backlink-Austausch (Artikel auf deren Blog). Thema: Personalisierte Ernährung oder Kalorienzählen mit KI.",
+      "dateAdded": "2026-02-22",
+      "contacted": false
+    },
+    {
+      "site": "naturtreuleben.de",
+      "url": "https://naturtreuleben.de/",
+      "contact": "hallo@naturtreuleben.de",
+      "status": "verified_active",
+      "relevance": "mittel",
+      "topics": ["Naturheilkunde", "Ernährung", "Gesundheit", "Vegan"],
+      "notes": "Akzeptiert Gastbeiträge (Beweis: Gastbeitrag von Nadja Mönch sichtbar). Thema: Natürliche Ernährung oder achtsames Essen.",
+      "dateAdded": "2026-02-22",
+      "contacted": false
+    },
+    {
+      "site": "holistische-lebensbalance.de",
+      "url": "https://holistische-lebensbalance.de/",
+      "contact": "info@holistische-lebensbalance.de",
+      "status": "to_verify",
+      "relevance": "mittel",
+      "topics": ["Ganzheitliche Gesundheit", "Ernährung", "Abnehmen", "Fitness"],
+      "notes": "Betreiber Marlon hat 10+ Jahre Erfahrung mit Ernährung. Direkt anfragen ob Gastbeiträge akzeptiert.",
+      "dateAdded": "2026-02-22",
+      "contacted": false
+    }
+  ],
+  "inactiveTargets": [
+    {
+      "site": "foodfitness.de",
+      "reason": "Gastbeitrag-Seite existiert nicht mehr (404)",
+      "dateChecked": "2026-02-22"
+    },
+    {
+      "site": "fit-anny.com",
+      "reason": "Website derzeit nicht verfügbar / Gastbeitrag-Seite offline",
+      "dateChecked": "2026-02-22"
+    }
+  ],
+  "directoryTargets": [
+    {
+      "name": "AlternativeTo",
+      "url": "https://alternativeto.net/",
+      "type": "app_directory",
+      "status": "todo",
+      "priority": "hoch",
+      "notes": "App als Alternative zu MyFitnessPal/YAZIO eintragen. Cloudflare-geschützt, manuell im Browser einreichen.",
+      "category": "Kalorienzähler, Ernährungs-Apps"
+    },
+    {
+      "name": "Product Hunt",
+      "url": "https://www.producthunt.com/",
+      "type": "product_launch",
+      "status": "todo",
+      "priority": "hoch",
+      "notes": "Für App-Launch. Gute Vorbereitung nötig (Screenshots, Description, Hunter finden)."
+    },
+    {
+      "name": "CHIP Praxistipps",
+      "url": "https://praxistipps.chip.de/",
+      "type": "tech_media",
+      "status": "todo",
+      "priority": "mittel",
+      "notes": "Redaktion kontaktieren für Aufnahme in App-Vergleiche. Email: redaktion@chip.de"
+    },
+    {
+      "name": "FIT FOR FUN",
+      "url": "https://www.fitforfun.de/",
+      "type": "fitness_media",
+      "status": "todo",
+      "priority": "mittel",
+      "notes": "Haben Artikel über Kalorienzähler-Apps. Redaktion für Erwähnung kontaktieren."
+    },
+    {
+      "name": "Women's Health",
+      "url": "https://www.womenshealth.de/",
+      "type": "health_media",
+      "status": "todo",
+      "priority": "mittel",
+      "notes": "Aktueller Artikel '8 besten Kalorienzähler Apps 2025'. Für 2026-Update Kontakt aufnehmen."
+    }
+  ],
+  "contentIdeas": [
+    {
+      "title": "Wie KI-gestützte Ernährungs-Apps das Abnehmen revolutionieren",
+      "targetSite": "4yourfitness.com",
+      "angle": "Tech + Gesundheit",
+      "estimatedWords": 1500
+    },
+    {
+      "title": "Intervallfasten 16:8 optimal tracken: Die richtige App finden",
+      "targetSite": "gesundeliste.de",
+      "angle": "Praktischer Guide mit Tool-Empfehlung",
+      "estimatedWords": 1200
+    },
+    {
+      "title": "Achtsames Essen im digitalen Zeitalter",
+      "targetSite": "naturtreuleben.de",
+      "angle": "Natürlicher Ansatz trifft Technologie",
+      "estimatedWords": 1000
+    }
+  ],
+  "nextActions": [
+    "Gastbeitrag-Pitch an 4yourfitness.com senden (Priorität 1)",
+    "gesundeliste.de kontaktieren mit Themenvorschlag + Backlink-Angebot",
+    "mahlzait.de bei AlternativeTo eintragen (Browser)",
+    "Product Hunt Launch vorbereiten"
+  ]
+}
