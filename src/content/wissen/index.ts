@@ -26,6 +26,47 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "intervallfasten-16-8-anleitung-anfaenger",
+    title: "Intervallfasten 16:8 für Anfänger: Der ultimative Guide 2026",
+    description:
+      "Komplett-Anleitung für Intervallfasten 16:8: 7-Tage-Starterplan, häufige Fehler, was du essen darfst und wissenschaftliche Fakten. Perfekt zur Fastenzeit ab 5. März.",
+    tags: ["Intervallfasten", "Abnehmen", "16:8", "Anfänger", "Fastenzeit", "Anleitung"],
+    publishedAt: "2026-02-22",
+    readingTime: 15,
+    featured: true,
+    sources: [
+      {
+        title: "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials",
+        authors: "Semnani-Azad Z, et al.",
+        journal: "BMJ",
+        year: 2025,
+        doi: "10.1136/bmj-2024-082007",
+      },
+      {
+        title: "Late isocaloric eating increases hunger, decreases energy expenditure, and modifies metabolic pathways in adults with overweight and obesity",
+        authors: "Vujović N, Piron MJ, Qian J, et al.",
+        journal: "Cell Metabolism",
+        year: 2022,
+        doi: "10.1016/j.cmet.2022.09.007",
+        pmid: "36198293",
+      },
+      {
+        title: "Effects of Intermittent Fasting on Health, Aging, and Disease",
+        authors: "de Cabo R, Mattson MP",
+        journal: "New England Journal of Medicine",
+        year: 2019,
+        doi: "10.1056/NEJMra1905136",
+      },
+      {
+        title: "Metabolic Effects of Intermittent Fasting",
+        authors: "Patterson RE, Sears DD",
+        journal: "Annual Review of Nutrition",
+        year: 2017,
+        doi: "10.1146/annurev-nutr-071816-064634",
+      },
+    ],
+  },
+  {
     slug: "abnehmspritze-ozempic-wegovy-wirkung",
     title: "Abnehmspritze: Ozempic, Wegovy & Co. – Was du wissen musst",
     description:
