@@ -1,10 +1,11 @@
 {
-  "lastUpdated": "2026-02-22T17:01:00Z",
+  "lastUpdated": "2026-02-23T17:00:00Z",
   "summary": {
-    "totalGastbeitragTargets": 4,
-    "verifiedActive": 3,
+    "totalGastbeitragTargets": 7,
+    "verifiedActive": 6,
     "pendingSubmissions": 0,
-    "directoriesIdentified": 5
+    "directoriesIdentified": 11,
+    "sessionNotes": "23.02.2026: 3 neue Gastbeitrag-Targets verifiziert, 6 neue Directory-Targets identifiziert"
   },
   "gastbeitragTargets": [
     {
@@ -52,6 +53,58 @@
       "contacted": false
     },
     {
+      "site": "allroundathletics.de",
+      "url": "https://allroundathletics.de/gastbeitrag-schreiben-training-ernaehrung-mindset/",
+      "contact": "kontakt@allroundathletics.de",
+      "status": "verified_active",
+      "requirements": {
+        "minWords": 1000,
+        "unique": true,
+        "authorBio": true,
+        "noAffiliateLinks": true,
+        "noProductPlacements": true,
+        "shareOnSocialMedia": true
+      },
+      "relevance": "hoch",
+      "topics": ["Training", "Ernährung", "Motivation", "Persönlichkeitsentwicklung", "Mindset"],
+      "notes": "Ehemals Fitness Agony (Zimo Tam). Do-Follow Backlink! Suchen Experten und authentische Erfolgsgeschichten. Perfekt für App-Story.",
+      "dateAdded": "2026-02-23",
+      "contacted": false
+    },
+    {
+      "site": "fitness-emotion.at",
+      "url": "https://www.fitness-emotion.at/gastautor-werden/",
+      "contact": "Kontaktformular auf Website",
+      "status": "verified_active",
+      "requirements": {
+        "minWords": 600,
+        "unique": true,
+        "noAffiliateLinks": true,
+        "noKeywordStuffing": true
+      },
+      "relevance": "mittel",
+      "topics": ["Fitness", "Trends", "Food", "Gesundheit", "Motivation", "Sport"],
+      "notes": "Österreichischer Fitness-Blog. Niedrigere Wort-Anforderung (600). Keine Agenturen, nur echte Blogger/Trainer.",
+      "dateAdded": "2026-02-23",
+      "contacted": false
+    },
+    {
+      "site": "coachinglovers.com",
+      "url": "https://coachinglovers.com/gesundheit-gastbeitrag-schreiben/",
+      "contact": "hallo@coachinglovers.com",
+      "status": "verified_active",
+      "requirements": {
+        "unique": true,
+        "topicRelevance": true,
+        "threeTopicSuggestions": true
+      },
+      "relevance": "hoch",
+      "topics": ["Gesundheit", "Psychologie", "Fitness", "Ernährung", "Achtsamkeit", "Persönlichkeitsentwicklung"],
+      "notes": "Do-Follow Link erlaubt! Themen perfekt passend. E-Mail mit Betreff 'Gastartikelanfrage' und 3 Themenvorschlägen senden.",
+      "dateAdded": "2026-02-23",
+      "contacted": false
+    },
+    {
       "site": "holistische-lebensbalance.de",
       "url": "https://holistische-lebensbalance.de/",
       "contact": "info@holistische-lebensbalance.de",
@@ -66,13 +119,20 @@
   "inactiveTargets": [
     {
       "site": "foodfitness.de",
-      "reason": "Gastbeitrag-Seite existiert nicht mehr (404)",
-      "dateChecked": "2026-02-22"
+      "reason": "Gastbeitrag-Seite existiert nicht mehr (404), Website ist jetzt Shop-fokussiert",
+      "dateChecked": "2026-02-23"
     },
     {
       "site": "fit-anny.com",
       "reason": "Website derzeit nicht verfügbar / Gastbeitrag-Seite offline",
       "dateChecked": "2026-02-22"
+    },
+    {
+      "site": "gesundheit-ernaehrung-fitness.de",
+      "url": "https://gesundheit-ernaehrung-fitness.de/gastbeitrag/",
+      "reason": "Server Error 500 bei Gastbeitrag-Seite - möglicherweise temporär. Navigation zeigt Gastbeiträge-Menüpunkt.",
+      "dateChecked": "2026-02-23",
+      "retryDate": "2026-02-25"
     }
   ],
   "directoryTargets": [
@@ -94,28 +154,97 @@
       "notes": "Für App-Launch. Gute Vorbereitung nötig (Screenshots, Description, Hunter finden)."
     },
     {
-      "name": "CHIP Praxistipps",
-      "url": "https://praxistipps.chip.de/",
-      "type": "tech_media",
+      "name": "Data4Life",
+      "url": "https://www.data4life.care/de/bibliothek/journal/ernaehrungs-apps-vergleich/",
+      "type": "health_media",
       "status": "todo",
-      "priority": "mittel",
-      "notes": "Redaktion kontaktieren für Aufnahme in App-Vergleiche. Email: redaktion@chip.de"
+      "priority": "hoch",
+      "notes": "Haben umfangreichen Ernährungs-Apps Vergleich. Redaktion kontaktieren für Aufnahme. Zuletzt aktualisiert Sept 2025."
     },
     {
-      "name": "FIT FOR FUN",
-      "url": "https://www.fitforfun.de/",
-      "type": "fitness_media",
+      "name": "Ernährungsradar",
+      "url": "https://www.ernaehrungsradar.de/abnehm-apps/",
+      "type": "health_media",
       "status": "todo",
-      "priority": "mittel",
-      "notes": "Haben Artikel über Kalorienzähler-Apps. Redaktion für Erwähnung kontaktieren."
+      "priority": "hoch",
+      "notes": "Wissenschaftlich orientiert! Artikel über Abnehm-Apps (Stand Dez 2025). Kontakt für Aufnahme suchen."
+    },
+    {
+      "name": "WELT Vergleich",
+      "url": "https://www.welt.de/vergleich/kalorienzaehler-app/",
+      "type": "major_media",
+      "status": "todo",
+      "priority": "hoch",
+      "notes": "Großes Medienhaus! Kalorienzähler-App Test 2026. PR-Abteilung kontaktieren."
     },
     {
       "name": "Women's Health",
-      "url": "https://www.womenshealth.de/",
-      "type": "health_media",
+      "url": "https://www.womenshealth.de/abnehmen/ernaehrungstipps/die-8-besten-kalorienzaehler-apps-2025-welche-passt-zu-deinem-ziel/",
+      "type": "major_media",
+      "status": "todo",
+      "priority": "hoch",
+      "notes": "Top 8 Kalorienzähler Apps 2025 (Juli 2025). Für 2026-Update Kontakt aufnehmen. Große Reichweite!"
+    },
+    {
+      "name": "Vergleich.org",
+      "url": "https://www.vergleich.org/kalorienzaehler-app/",
+      "type": "comparison_portal",
       "status": "todo",
       "priority": "mittel",
-      "notes": "Aktueller Artikel '8 besten Kalorienzähler Apps 2025'. Für 2026-Update Kontakt aufnehmen."
+      "notes": "Top 9 Kalorienzähler-Apps Januar 2026. Redaktion kontaktieren für Review."
+    },
+    {
+      "name": "FIT FOR FUN",
+      "url": "https://www.fitforfun.de/abnehmen/lifesum-im-test-lifestyletracker-und-kalorienzaehler-im-handy-bringt-das-was-190660.html",
+      "type": "fitness_media",
+      "status": "todo",
+      "priority": "mittel",
+      "notes": "Großes Fitness-Magazin. Haben Artikel über die 6 besten Kalorienzähler-Apps. Für Erwähnung/Review anfragen."
+    },
+    {
+      "name": "CHIP Praxistipps",
+      "url": "https://praxistipps.chip.de/beste-kalorienzaehler-apps-welche-sind-empfehlenswert_98463",
+      "type": "tech_media",
+      "status": "todo",
+      "priority": "mittel",
+      "notes": "Tech-Portal mit App-Reviews. Artikel Juni 2025 aktualisiert. Redaktion: redaktion@chip.de"
+    },
+    {
+      "name": "Ottonova",
+      "url": "https://www.ottonova.de/gesund-leben/fitness/apps-muskelaufbau-smartphone",
+      "type": "health_insurance",
+      "status": "todo",
+      "priority": "mittel",
+      "notes": "Krankenkasse mit Fitness/Ernährung Content. 10 Ernährungs-Apps Artikel (April 2025). Kooperation anfragen."
+    },
+    {
+      "name": "Prinz-Sportlich",
+      "url": "https://www.prinz-sportlich.de/magazin/ernaehrungsapps/",
+      "type": "fitness_blog",
+      "status": "todo",
+      "priority": "niedrig",
+      "notes": "Sport & Lifestyle Blog. Top 14 Ernährungsapps Artikel. Kontakt für Aufnahme."
+    }
+  ],
+  "communityTargets": [
+    {
+      "name": "Reddit FitnessDE",
+      "url": "https://www.reddit.com/r/FitnessDE/",
+      "type": "community",
+      "status": "monitor",
+      "notes": "Aktive Diskussionen über Kalorienzähler (23 Kommentare Feb 2025). Organisch teilnehmen, nicht spammen!"
+    },
+    {
+      "name": "ketoforum.de",
+      "type": "forum",
+      "status": "to_research",
+      "notes": "Aus daily-research: Community aktiv, mahlzait dort vorstellen?"
+    },
+    {
+      "name": "nutrition-hub.de",
+      "type": "blog_list",
+      "status": "to_research",
+      "notes": "Aus daily-research: Top Food Blog Liste, anfragen für Aufnahme"
     }
   ],
   "contentIdeas": [
@@ -136,12 +265,27 @@
       "targetSite": "naturtreuleben.de",
       "angle": "Natürlicher Ansatz trifft Technologie",
       "estimatedWords": 1000
+    },
+    {
+      "title": "Von der Idee zur Fitness-App: Meine Reise mit mahlzait",
+      "targetSite": "allroundathletics.de",
+      "angle": "Authentische Gründer-Story",
+      "estimatedWords": 1200
+    },
+    {
+      "title": "Ernährungspsychologie: Warum Apps beim Abnehmen helfen können",
+      "targetSite": "coachinglovers.com",
+      "angle": "Psychologischer Ansatz + Tool",
+      "estimatedWords": 1500
     }
   ],
   "nextActions": [
-    "Gastbeitrag-Pitch an 4yourfitness.com senden (Priorität 1)",
-    "gesundeliste.de kontaktieren mit Themenvorschlag + Backlink-Angebot",
-    "mahlzait.de bei AlternativeTo eintragen (Browser)",
-    "Product Hunt Launch vorbereiten"
+    "PRIORITÄT 1: Gastbeitrag-Pitch an allroundathletics.de (Gründer-Story)",
+    "PRIORITÄT 2: coachinglovers.com kontaktieren (3 Themenvorschläge, Do-Follow!)",
+    "PRIORITÄT 3: 4yourfitness.com Pitch vorbereiten",
+    "DIRECTORY: mahlzait.de bei AlternativeTo eintragen (manuell im Browser)",
+    "DIRECTORY: Data4Life und Ernährungsradar Redaktionen kontaktieren",
+    "MEDIA: Women's Health und WELT für 2026-Update ansprechen",
+    "RETRY: gesundheit-ernaehrung-fitness.de in 2 Tagen erneut prüfen"
   ]
 }
