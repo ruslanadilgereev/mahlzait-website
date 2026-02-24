@@ -99,19 +99,45 @@ function ProteinBedarfRechnerPage({ config }: Props) {
   };
 
   const proteinSources = [
-    { name: "Hähnchenbrust (gekocht)", protein: 31, serving: "100g", type: "tierisch" },
-    { name: "Lachs", protein: 25, serving: "100g", type: "tierisch" },
-    { name: "Magerquark", protein: 12, serving: "100g", type: "tierisch" },
-    { name: "Eier", protein: 13, serving: "2 Stück", type: "tierisch" },
-    { name: "Griechischer Joghurt", protein: 10, serving: "100g", type: "tierisch" },
-    { name: "Skyr", protein: 11, serving: "100g", type: "tierisch" },
-    { name: "Tofu", protein: 15, serving: "100g", type: "pflanzlich" },
-    { name: "Tempeh", protein: 19, serving: "100g", type: "pflanzlich" },
-    { name: "Linsen (gekocht)", protein: 9, serving: "100g", type: "pflanzlich" },
-    { name: "Kichererbsen (gekocht)", protein: 8, serving: "100g", type: "pflanzlich" },
-    { name: "Edamame", protein: 11, serving: "100g", type: "pflanzlich" },
-    { name: "Kürbiskerne", protein: 30, serving: "100g", type: "pflanzlich" },
+    // Fleisch & Geflügel
+    { name: "Hähnchenbrust (gekocht)", protein: 31, kcal: 165, serving: "100g", type: "tierisch" },
+    { name: "Putenbrust", protein: 29, kcal: 135, serving: "100g", type: "tierisch" },
+    { name: "Rinderfilet (mager)", protein: 28, kcal: 175, serving: "100g", type: "tierisch" },
+    { name: "Schweinefilet", protein: 27, kcal: 145, serving: "100g", type: "tierisch" },
+    { name: "Hackfleisch (mager)", protein: 21, kcal: 175, serving: "100g", type: "tierisch" },
+    // Fisch & Meeresfrüchte
+    { name: "Lachs", protein: 25, kcal: 208, serving: "100g", type: "tierisch" },
+    { name: "Thunfisch (Dose, in Wasser)", protein: 26, kcal: 116, serving: "100g", type: "tierisch" },
+    { name: "Garnelen", protein: 24, kcal: 99, serving: "100g", type: "tierisch" },
+    { name: "Forelle", protein: 23, kcal: 119, serving: "100g", type: "tierisch" },
+    // Milchprodukte
+    { name: "Magerquark", protein: 12, kcal: 67, serving: "100g", type: "tierisch" },
+    { name: "Skyr", protein: 11, kcal: 63, serving: "100g", type: "tierisch" },
+    { name: "Griechischer Joghurt", protein: 10, kcal: 97, serving: "100g", type: "tierisch" },
+    { name: "Hüttenkäse", protein: 11, kcal: 72, serving: "100g", type: "tierisch" },
+    { name: "Harzer Käse", protein: 30, kcal: 125, serving: "100g", type: "tierisch" },
+    { name: "Parmesan", protein: 35, kcal: 392, serving: "100g", type: "tierisch" },
+    { name: "Eier", protein: 13, kcal: 155, serving: "2 Stück", type: "tierisch" },
+    // Pflanzliche Quellen
+    { name: "Seitan", protein: 75, kcal: 370, serving: "100g", type: "pflanzlich" },
+    { name: "Tofu", protein: 15, kcal: 144, serving: "100g", type: "pflanzlich" },
+    { name: "Tempeh", protein: 19, kcal: 192, serving: "100g", type: "pflanzlich" },
+    { name: "Edamame", protein: 11, kcal: 122, serving: "100g", type: "pflanzlich" },
+    { name: "Linsen (gekocht)", protein: 9, kcal: 116, serving: "100g", type: "pflanzlich" },
+    { name: "Kichererbsen (gekocht)", protein: 8, kcal: 164, serving: "100g", type: "pflanzlich" },
+    { name: "Schwarze Bohnen (gekocht)", protein: 9, kcal: 132, serving: "100g", type: "pflanzlich" },
+    { name: "Kürbiskerne", protein: 30, kcal: 559, serving: "100g", type: "pflanzlich" },
+    { name: "Hanfsamen", protein: 31, kcal: 553, serving: "100g", type: "pflanzlich" },
+    { name: "Erdnüsse", protein: 26, kcal: 567, serving: "100g", type: "pflanzlich" },
+    { name: "Mandeln", protein: 21, kcal: 579, serving: "100g", type: "pflanzlich" },
+    { name: "Haferflocken", protein: 13, kcal: 379, serving: "100g", type: "pflanzlich" },
   ];
+  
+  // Top Proteinquellen nach Protein pro 100 kcal (für Featured Snippets)
+  const proteinPerCalorie = proteinSources
+    .map(s => ({ ...s, proteinPer100kcal: Math.round((s.protein / s.kcal) * 100 * 10) / 10 }))
+    .sort((a, b) => b.proteinPer100kcal - a.proteinPer100kcal)
+    .slice(0, 10);
 
   const exampleMealPlan = [
     { meal: "Frühstück", foods: "150g Magerquark + 30g Haferflocken + Beeren", protein: 22 },
@@ -122,6 +148,44 @@ function ProteinBedarfRechnerPage({ config }: Props) {
   ];
 
   const totalMealPlanProtein = exampleMealPlan.reduce((acc, meal) => acc + meal.protein, 0);
+
+  // Verschiedene Beispiel-Tage für unterschiedliche Zielgruppen
+  const mealPlanExamples = {
+    muskelaufbau: {
+      title: "Muskelaufbau (180g Protein)",
+      icon: "💪",
+      weight: "80kg Sportler",
+      meals: [
+        { meal: "Frühstück", foods: "4 Eier Rührei + 2 Scheiben Vollkornbrot + Käse", protein: 35 },
+        { meal: "Post-Workout", foods: "Protein-Shake (30g Whey) + Banane", protein: 30 },
+        { meal: "Mittagessen", foods: "200g Hähnchenbrust + 200g Reis + Brokkoli", protein: 62 },
+        { meal: "Snack", foods: "250g Magerquark + Früchte", protein: 30 },
+        { meal: "Abendessen", foods: "200g Rinderfilet + Süsskartoffel + Salat", protein: 56 },
+      ],
+    },
+    abnehmen: {
+      title: "Abnehmen (120g Protein)",
+      icon: "⚖️",
+      weight: "70kg, Kaloriendefizit",
+      meals: [
+        { meal: "Frühstück", foods: "200g Skyr + 30g Haferflocken + Beeren", protein: 25 },
+        { meal: "Mittagessen", foods: "150g Putenbrust + grosser Salat + Olivenöl", protein: 44 },
+        { meal: "Snack", foods: "100g Harzer Käse + Gurke", protein: 30 },
+        { meal: "Abendessen", foods: "150g Garnelen + Zucchini-Nudeln + Tomaten", protein: 36 },
+      ],
+    },
+    vegan: {
+      title: "Vegan (110g Protein)",
+      icon: "🌱",
+      weight: "65kg Veganer",
+      meals: [
+        { meal: "Frühstück", foods: "Tofu-Scramble (150g) + Vollkornbrot + Hummus", protein: 26 },
+        { meal: "Mittagessen", foods: "150g Tempeh + Quinoa + Edamame", protein: 38 },
+        { meal: "Snack", foods: "Handvoll Kürbiskerne + Sojajoghurt", protein: 18 },
+        { meal: "Abendessen", foods: "Linsen-Curry (200g Linsen) + Reis", protein: 24 },
+      ],
+    },
+  };
 
   return (
     <ConfigContext.Provider value={config}>
@@ -478,7 +542,11 @@ function ProteinBedarfRechnerPage({ config }: Props) {
             
             <div className="prose prose-lg max-w-3xl mx-auto">
               <p>
-                <strong>Proteine (Eiweisse)</strong> sind neben Kohlenhydraten und Fetten einer der drei Makronährstoffe, die dein Körper in grossen Mengen benötigt. Sie bestehen aus Aminosäuren – den Bausteinen des Lebens – und sind an nahezu jedem Prozess in deinem Körper beteiligt.
+                <strong>Proteine (Eiweisse)</strong> sind neben Kohlenhydraten und Fetten einer der drei <a href="/makros-berechnen" className="link link-primary">Makronährstoffe</a>, die dein Körper in grossen Mengen benötigt. Sie bestehen aus Aminosäuren – den Bausteinen des Lebens – und sind an nahezu jedem Prozess in deinem Körper beteiligt.
+              </p>
+              
+              <p>
+                Protein hat auch einen hohen <strong>thermischen Effekt</strong>: Dein Körper verbraucht etwa 20-30% der Protein-Kalorien allein für die Verdauung – weit mehr als bei Kohlenhydraten (5-10%) oder Fett (0-3%). Das macht Protein besonders wertvoll beim <a href="/kaloriendefizit-berechnen" className="link link-primary">Abnehmen mit Kaloriendefizit</a>.
               </p>
               
               <p>
@@ -600,6 +668,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                   <p className="text-sm">
                     Die DGE-Empfehlung von 0,8g/kg deckt den <em>Mindestbedarf</em> zur Vermeidung von Mangelerscheinungen. 
                     Für optimale Gesundheit, Muskelerhalt und besonders bei Sport empfehlen aktuelle Studien deutlich höhere Mengen.
+                    Berechne auch deinen <a href="/kalorienbedarf-berechnen" className="link link-primary">Kalorienbedarf</a> und <a href="/grundumsatz-rechner" className="link link-primary">Grundumsatz</a>, um deine Ernährung optimal zu planen.
                   </p>
                 </div>
               </div>
@@ -622,54 +691,191 @@ function ProteinBedarfRechnerPage({ config }: Props) {
           </div>
         </section>
 
-        {/* Protein Sources Table */}
+        {/* Protein per Calorie - Featured Snippet Section */}
         <section className="bg-base-200 py-16">
           <div className="max-w-screen-lg mx-auto px-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Die besten Proteinquellen im Überblick
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
+              🏆 Top 10: Meistes Protein pro 100 Kalorien
             </h2>
-            <div className="overflow-x-auto max-w-3xl mx-auto">
+            <p className="text-center opacity-80 max-w-2xl mx-auto mb-8">
+              Wenn du abnehmen willst, zählt nicht nur die Proteinmenge – sondern wie viel Protein du pro Kalorie bekommst. 
+              Diese Lebensmittel liefern am meisten Protein für die wenigsten Kalorien:
+            </p>
+            <div className="overflow-x-auto max-w-2xl mx-auto">
               <table className="table bg-base-100 shadow-xl">
                 <thead>
-                  <tr>
+                  <tr className="bg-primary text-primary-content">
+                    <th>Rang</th>
                     <th>Lebensmittel</th>
-                    <th>Portion</th>
-                    <th>Protein</th>
-                    <th>Typ</th>
+                    <th>Protein pro 100 kcal</th>
+                    <th>Protein/100g</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {proteinSources.map((source, i) => (
-                    <tr key={i}>
-                      <td className="font-medium">{source.name}</td>
-                      <td>{source.serving}</td>
+                  {proteinPerCalorie.map((source, i) => (
+                    <tr key={i} className={i < 3 ? "font-bold" : ""}>
                       <td>
-                        <span className="badge badge-primary">{source.protein}g</span>
+                        {i === 0 && "🥇"}
+                        {i === 1 && "🥈"}
+                        {i === 2 && "🥉"}
+                        {i > 2 && `${i + 1}.`}
                       </td>
+                      <td>{source.name}</td>
                       <td>
-                        <span className={`badge ${source.type === "tierisch" ? "badge-secondary" : "badge-accent"}`}>
-                          {source.type === "tierisch" ? "🥩" : "🌱"} {source.type}
-                        </span>
+                        <span className="badge badge-success badge-lg">{source.proteinPer100kcal}g</span>
                       </td>
+                      <td>{source.protein}g</td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
             <p className="text-center text-sm opacity-70 mt-4">
-              Alle Angaben sind Durchschnittswerte. Die tatsächlichen Werte können je nach Produkt variieren.
+              <strong>Tipp:</strong> Beim <a href="/kaloriendefizit-berechnen" className="link link-primary">Abnehmen im Kaloriendefizit</a> sind 
+              proteinreiche, kalorienarme Lebensmittel Gold wert – sie halten satt und schützen deine Muskeln.
             </p>
           </div>
         </section>
 
-        {/* Example Meal Plan */}
+        {/* Protein Sources Table - Expanded */}
         <section className="py-16">
           <div className="max-w-screen-lg mx-auto px-4">
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-              Beispiel-Ernährungsplan: {totalMealPlanProtein}g Protein am Tag
+              Komplette Protein-Tabelle: 28 Top-Quellen
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Tierische Quellen */}
+              <div>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <span>🥩</span> Tierische Proteinquellen
+                </h3>
+                <div className="overflow-x-auto">
+                  <table className="table bg-base-100 shadow-lg table-sm">
+                    <thead>
+                      <tr>
+                        <th>Lebensmittel</th>
+                        <th>Protein</th>
+                        <th>kcal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {proteinSources.filter(s => s.type === "tierisch").map((source, i) => (
+                        <tr key={i}>
+                          <td className="font-medium">{source.name}</td>
+                          <td><span className="badge badge-primary badge-sm">{source.protein}g</span></td>
+                          <td className="opacity-70">{source.kcal}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* Pflanzliche Quellen */}
+              <div>
+                <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
+                  <span>🌱</span> Pflanzliche Proteinquellen
+                </h3>
+                <div className="overflow-x-auto">
+                  <table className="table bg-base-100 shadow-lg table-sm">
+                    <thead>
+                      <tr>
+                        <th>Lebensmittel</th>
+                        <th>Protein</th>
+                        <th>kcal</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {proteinSources.filter(s => s.type === "pflanzlich").map((source, i) => (
+                        <tr key={i}>
+                          <td className="font-medium">{source.name}</td>
+                          <td><span className="badge badge-accent badge-sm">{source.protein}g</span></td>
+                          <td className="opacity-70">{source.kcal}</td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-sm opacity-70 mt-4">
+                  <strong>Veganer-Tipp:</strong> Kombiniere Hülsenfrüchte mit Getreide (z.B. Reis + Bohnen) für ein vollständiges Aminosäureprofil. 
+                  Mehr dazu im <a href="/wissen/high-protein-diet-abnehmen-mechanismen-uebersicht" className="link link-primary">High-Protein Wissen-Artikel</a>.
+                </p>
+              </div>
+            </div>
+            
+            <p className="text-center text-sm opacity-70 mt-8">
+              Alle Angaben pro 100g (ausser Eier: 2 Stück). Werte können je nach Produkt variieren.
+            </p>
+          </div>
+        </section>
+
+        {/* Example Meal Plans for Different Goals */}
+        <section className="py-16">
+          <div className="max-w-screen-lg mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-4">
+              Beispiel-Ernährungspläne: Protein für jedes Ziel
             </h2>
             <p className="text-center opacity-80 max-w-2xl mx-auto mb-8">
-              So könnte ein Tag mit ausreichend Protein aussehen – für eine Person mit ca. 70-75kg und moderater Aktivität.
+              Drei komplette Tagespläne für unterschiedliche Ziele. Alle Pläne kannst du mit <a href="/#live-demo" className="link link-primary">Mahlzait tracken</a> – einfach Foto machen und fertig.
+            </p>
+            
+            <div className="grid lg:grid-cols-3 gap-6">
+              {Object.entries(mealPlanExamples).map(([key, plan]) => {
+                const total = plan.meals.reduce((acc, m) => acc + m.protein, 0);
+                return (
+                  <div key={key} className="card bg-base-100 shadow-xl">
+                    <div className="card-body">
+                      <h3 className="card-title text-lg">
+                        <span className="text-2xl">{plan.icon}</span>
+                        {plan.title}
+                      </h3>
+                      <p className="text-sm opacity-70 mb-4">{plan.weight}</p>
+                      
+                      <div className="space-y-3">
+                        {plan.meals.map((meal, i) => (
+                          <div key={i} className="flex justify-between items-start gap-2 text-sm">
+                            <div>
+                              <span className="font-semibold">{meal.meal}:</span>
+                              <span className="opacity-80 ml-1">{meal.foods}</span>
+                            </div>
+                            <span className="badge badge-primary badge-sm whitespace-nowrap">{meal.protein}g</span>
+                          </div>
+                        ))}
+                      </div>
+                      
+                      <div className="divider my-2"></div>
+                      <div className="flex justify-between items-center font-bold">
+                        <span>Gesamt</span>
+                        <span className="text-xl text-primary">{total}g</span>
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="opacity-80 mb-4">
+                Mit Mahlzait trackst du jede Mahlzeit in Sekunden – per Foto, Text oder Barcode.
+              </p>
+              <a href="/#live-demo" className="btn btn-primary">
+                Live Demo ausprobieren →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Original Simple Meal Plan (for schema.org content) */}
+        <section className="bg-base-200 py-16">
+          <div className="max-w-screen-lg mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+              Standard-Tagesplan: {totalMealPlanProtein}g Protein
+            </h2>
+            <p className="text-center opacity-80 max-w-2xl mx-auto mb-8">
+              Ein ausgewogener Tagesplan für eine Person mit ca. 70-75kg und moderater Aktivität. 
+              Kombiniere diesen Plan mit dem <a href="/kalorienbedarf-berechnen" className="link link-primary">Kalorienbedarf-Rechner</a>, 
+              um auch deine Gesamtkalorien zu optimieren.
             </p>
             
             <div className="max-w-2xl mx-auto space-y-4">
@@ -690,15 +896,6 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                   <span className="text-2xl font-bold">{totalMealPlanProtein}g Protein</span>
                 </div>
               </div>
-            </div>
-
-            <div className="text-center mt-8">
-              <p className="opacity-80 mb-4">
-                Mit Mahlzait kannst du jede Mahlzeit in Sekunden tracken und siehst genau, wie viel Protein du bekommst.
-              </p>
-              <a href="/#live-demo" className="btn btn-primary">
-                Live Demo ausprobieren →
-              </a>
             </div>
           </div>
         </section>
