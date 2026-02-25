@@ -7,6 +7,7 @@ import { generateFAQSchema } from "./schemas/faq";
 import { generateReviewSchema } from "./schemas/review";
 import { generateHowToSchema } from "./schemas/howto";
 import { generateBreadcrumbSchema } from "./schemas/breadcrumb";
+import { generateProductSchemas } from "./schemas/product";
 
 interface Props {
   config: TemplateConfig;
@@ -44,6 +45,7 @@ let faqSchema = null;
 let reviewSchemas = null;
 let howToSchema = null;
 let breadcrumbSchema = null;
+let productSchemas = null;
 
 if (type === "homepage" && config.home) {
   // FAQ Schema
@@ -68,15 +70,36 @@ if (type === "homepage" && config.home) {
     );
   }
 
-  // HowTo Schema
-  if (config.home.howItWorks) {
-    howToSchema = generateHowToSchema(
-      siteUrl,
-      config.home.howItWorks.title,
-      config.home.howItWorks.subtitle,
-      config.home.howItWorks.steps
-    );
-  }
+  // HowTo Schema - REMOVED (deprecated by Google since Sept 2023)
+  // if (config.home.howItWorks) {
+  //   howToSchema = generateHowToSchema(
+  //     siteUrl,
+  //     config.home.howItWorks.title,
+  //     config.home.howItWorks.subtitle,
+  //     config.home.howItWorks.steps
+  //   );
+  // }
+
+  // Product Schemas für Preismodelle
+  productSchemas = generateProductSchemas(siteUrl, config.name, [
+    {
+      name: "Kostenlos",
+      description: "Kostenlose Version mit Basis-Features",
+      price: "0",
+    },
+    {
+      name: "Pro Monat",
+      description: "Monatliches Abo mit allen Premium-Features und unbegrenzter KI",
+      price: "4.99",
+      billingPeriod: "month",
+    },
+    {
+      name: "Pro Jahr",
+      description: "Jahresabo mit allen Premium-Features - spare 50%",
+      price: "29.99",
+      billingPeriod: "year",
+    },
+  ]);
 
   // Breadcrumb für Homepage
   breadcrumbSchema = generateBreadcrumbSchema([
@@ -101,6 +124,7 @@ const allSchemas = [
 if (faqSchema) allSchemas.push(faqSchema);
 if (howToSchema) allSchemas.push(howToSchema);
 if (reviewSchemas) allSchemas.push(...reviewSchemas);
+if (productSchemas) allSchemas.push(...productSchemas);
 ---
 
 {

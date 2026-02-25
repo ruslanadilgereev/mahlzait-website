@@ -61,7 +61,7 @@ function Testimonials() {
                       ))}
                   </div>
                   <p className="text-primary-content/90">{comment}</p>
-                  <h2 className="card-title text-primary-content">{name}</h2>
+                  <h3 className="card-title text-primary-content">{name}</h3>
                 </div>
               </div>
             </SwiperSlide>
