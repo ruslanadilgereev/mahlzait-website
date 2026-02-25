@@ -227,6 +227,62 @@ function ProteinBedarfRechnerPage({ config }: Props) {
             </ul>
           </div>
 
+          {/* Quick Reference Table - Featured Snippet Target */}
+          <div className="overflow-x-auto max-w-3xl mx-auto mb-12">
+            <h2 className="text-xl font-bold text-center mb-4">📊 Wie viel Protein am Tag? Schnellübersicht</h2>
+            <table className="table bg-base-100 shadow-xl text-center">
+              <thead>
+                <tr className="bg-primary/10">
+                  <th>Körpergewicht</th>
+                  <th>Minimum (0,8g/kg)</th>
+                  <th>Muskelaufbau (1,8g/kg)</th>
+                  <th>Abnehmen (2,0g/kg)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td className="font-semibold">50 kg</td>
+                  <td>40g</td>
+                  <td className="text-success font-medium">90g</td>
+                  <td className="text-warning font-medium">100g</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold">60 kg</td>
+                  <td>48g</td>
+                  <td className="text-success font-medium">108g</td>
+                  <td className="text-warning font-medium">120g</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold">70 kg</td>
+                  <td>56g</td>
+                  <td className="text-success font-medium">126g</td>
+                  <td className="text-warning font-medium">140g</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold">80 kg</td>
+                  <td>64g</td>
+                  <td className="text-success font-medium">144g</td>
+                  <td className="text-warning font-medium">160g</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold">90 kg</td>
+                  <td>72g</td>
+                  <td className="text-success font-medium">162g</td>
+                  <td className="text-warning font-medium">180g</td>
+                </tr>
+                <tr>
+                  <td className="font-semibold">100 kg</td>
+                  <td>80g</td>
+                  <td className="text-success font-medium">180g</td>
+                  <td className="text-warning font-medium">200g</td>
+                </tr>
+              </tbody>
+            </table>
+            <p className="text-sm text-center opacity-70 mt-3">
+              Für eine individuelle Berechnung mit allen Faktoren nutze unseren <a href="#rechner" className="link link-primary">Protein-Rechner oben</a>.
+            </p>
+          </div>
+
           {/* Calculator */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto" id="rechner">
             <div className="card-body p-6 md:p-8">
