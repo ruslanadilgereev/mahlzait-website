@@ -855,7 +855,8 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                 </div>
                 <p className="text-sm opacity-70 mt-4">
                   <strong>Veganer-Tipp:</strong> Kombiniere Hülsenfrüchte mit Getreide (z.B. Reis + Bohnen) für ein vollständiges Aminosäureprofil. 
-                  Mehr dazu im <a href="/wissen/high-protein-diet-abnehmen-mechanismen-uebersicht" className="link link-primary">High-Protein Wissen-Artikel</a>.
+                  Mehr dazu im <a href="/wissen/high-protein-diet-abnehmen-mechanismen-uebersicht" className="link link-primary">High-Protein Wissen-Artikel</a> oder 
+                  im <a href="/wissen/protein-ballaststoffe-training-gewichtsmanagement-review" className="link link-primary">Review zu Protein & Ballaststoffen</a>.
                 </p>
               </div>
             </div>
@@ -1182,7 +1183,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">🔥 Sättigung & Abnehmen</h3>
                   <p className="opacity-80">
-                    Protein hält dich länger satt als Kohlenhydrate oder Fett. Das macht es einfacher, in einem Kaloriendefizit zu bleiben.
+                    <strong>Wie viel Protein am Tag zum Abnehmen?</strong> Studien empfehlen 1,6-2,4g/kg – mehr als beim Muskelaufbau! Protein hält dich länger satt und schützt deine Muskelmasse im Kaloriendefizit.
                   </p>
                   <ul className="mt-4 space-y-2">
                     <li className="flex items-start gap-2">
@@ -1197,7 +1198,14 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                       <span className="text-success">✓</span>
                       <span className="text-sm">Reduziert Heisshunger & Snacking</span>
                     </li>
+                    <li className="flex items-start gap-2">
+                      <span className="text-success">✓</span>
+                      <span className="text-sm">Erhält Muskelmasse beim Abnehmen</span>
+                    </li>
                   </ul>
+                  <p className="text-sm mt-3">
+                    <a href="/wissen/protein-abnehmen-muskelmasse-aeltere-meta-analyse" className="link link-primary">→ Meta-Analyse: Protein beim Abnehmen</a>
+                  </p>
                 </div>
               </div>
 
@@ -1215,6 +1223,9 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                       Mit je 25-40g Protein pro Mahlzeit (inkl. ~3g Leucin)
                     </p>
                   </div>
+                  <p className="text-sm mt-3">
+                    <a href="/wissen/protein-timing-vor-nach-training-studie" className="link link-primary">→ Studie: Protein vor oder nach dem Training?</a>
+                  </p>
                 </div>
               </div>
 
@@ -1367,6 +1378,12 @@ function ProteinBedarfRechnerPage({ config }: Props) {
               </a>
               <a href="/wissen/high-protein-diet-abnehmen-mechanismen-uebersicht" className="btn btn-outline">
                 High-Protein-Diät Wissen
+              </a>
+              <a href="/wissen/protein-timing-vor-nach-training-studie" className="btn btn-outline">
+                Protein-Timing Studie
+              </a>
+              <a href="/wissen/protein-abnehmen-muskelmasse-aeltere-meta-analyse" className="btn btn-outline">
+                Protein beim Abnehmen
               </a>
               <a href="/rechner" className="btn btn-outline">
                 Alle Rechner
