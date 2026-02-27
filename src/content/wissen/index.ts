@@ -32,7 +32,8 @@ export const articlesMeta: ArticleMeta[] = [
       "Komplett-Anleitung für Intervallfasten 16:8: 7-Tage-Starterplan, häufige Fehler, was du essen darfst und wissenschaftliche Fakten. Perfekt zur Fastenzeit ab 5. März.",
     tags: ["Intervallfasten", "Abnehmen", "16:8", "Anfänger", "Fastenzeit", "Anleitung"],
     publishedAt: "2026-02-22",
-    readingTime: 15,
+    updatedAt: "2026-02-27",
+    readingTime: 16,
     featured: true,
     sources: [
       {
@@ -63,6 +64,13 @@ export const articlesMeta: ArticleMeta[] = [
         journal: "Annual Review of Nutrition",
         year: 2017,
         doi: "10.1146/annurev-nutr-071816-064634",
+      },
+      {
+        title: "Interview mit PD Dr. Dorothea Kesztyüs, Institut für Allgemeinmedizin, Universitätsklinikum Ulm",
+        authors: "Universitätsklinikum Ulm",
+        journal: "uniklinik-ulm.de",
+        year: 2026,
+        url: "https://www.uniklinik-ulm.de/aktuelles/detailansicht/16-stunden-ohne-essen-wie-geht-intervallfasten.html",
       },
     ],
   },

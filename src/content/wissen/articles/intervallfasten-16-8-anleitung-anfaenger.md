@@ -261,6 +261,24 @@ Eine **kontrollierte Crossover-Studie** (Cell Metabolism, 2022) zeigte:
 
 *Das spricht für ein Essensfenster, das nicht zu spät endet – z.B. 12:00-20:00 statt 14:00-22:00.*
 
+### Ist Intervallfasten gefährlich? Die Shanghai-Studie erklärt
+
+Im März 2024 sorgten Schlagzeilen für Verunsicherung: Eine Studie behauptete, Intervallfasten würde das Risiko für Herz-Kreislauf-Tod fast verdoppeln.
+
+**Was steckt dahinter?**
+
+Die [Untersuchung aus Shanghai](https://www.abstractsonline.com/pp8/#!/20343/presentation/379) analysierte US-Gesundheitsdaten – allerdings mit einem entscheidenden Problem: Sie untersuchte *nicht* planvolles Intervallfasten, sondern Menschen, die an zufälligen Tagen weniger als 8 Stunden gegessen hatten.
+
+**Warum das problematisch ist:**
+- Schichtarbeiter mit unregelmäßigen Essenszeiten wurden einbezogen
+- Menschen mit Vorerkrankungen, die wenig essen *können*
+- Keine Unterscheidung zwischen freiwilligem Fasten und krankheitsbedingtem Essensverzicht
+
+**Die Einordnung von Experten:**
+Dr. Dorothea Kesztyüs, Forscherin am Institut für Allgemeinmedizin der Uniklinik Ulm und Expertin für Intervallfasten, betont: "Intervallfasten als bewusste Lebensstilumstellung ist gut untersucht und zeigt bei gesunden Erwachsenen keine negativen Langzeiteffekte."
+
+**Fazit:** Die Studie hat wenig Aussagekraft für Menschen, die gezielt und regelmäßig Intervallfasten praktizieren. Langzeitstudien zu planvollem 16:8 zeigen bisher keine erhöhten Risiken bei gesunden Erwachsenen.
+
 ### Autophagie
 
 Nach 14-16 Stunden Fasten verstärkt sich die **Autophagie** – ein zellulärer "Selbstreinigungsprozess":
@@ -386,6 +404,8 @@ Die Fastenzeit ab 5. März 2026 ist der perfekte Anlass: 40 Tage reichen, um Int
 3. de Cabo R, Mattson MP. Effects of Intermittent Fasting on Health, Aging, and Disease. N Engl J Med. 2019. doi: 10.1056/NEJMra1905136
 4. Ohsumi Y. Autophagy – Nobel Prize in Physiology or Medicine 2016.
 5. Patterson RE, et al. Metabolic Effects of Intermittent Fasting. Annu Rev Nutr. 2017. doi: 10.1146/annurev-nutr-071816-064634
+6. Sun Y, et al. Association of Time-Restricted Eating with Cardiovascular Mortality. AHA Scientific Sessions 2024. Abstract 379.
+7. Universitätsklinikum Ulm. Interview mit PD Dr. Dorothea Kesztyüs: "16 Stunden ohne Essen - wie geht Intervallfasten?" 2026.
 
 ---
 
