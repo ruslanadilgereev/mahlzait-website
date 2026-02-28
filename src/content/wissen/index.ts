@@ -29,11 +29,11 @@ export const articlesMeta: ArticleMeta[] = [
     slug: "intervallfasten-16-8-anleitung-anfaenger",
     title: "Intervallfasten 16:8 für Anfänger: Der ultimative Guide 2026",
     description:
-      "Komplett-Anleitung für Intervallfasten 16:8: 7-Tage-Starterplan, häufige Fehler, was du essen darfst und wissenschaftliche Fakten. Perfekt zur Fastenzeit ab 5. März.",
-    tags: ["Intervallfasten", "Abnehmen", "16:8", "Anfänger", "Fastenzeit", "Anleitung"],
+      "Komplett-Anleitung für Intervallfasten 16:8: 7-Tage-Starterplan, Rezeptideen, Getränke-Liste, Schichtarbeit-Tipps und wissenschaftliche Fakten. Perfekt zur Fastenzeit ab 5. März.",
+    tags: ["Intervallfasten", "Abnehmen", "16:8", "Anfänger", "Fastenzeit", "Anleitung", "Plan"],
     publishedAt: "2026-02-22",
-    updatedAt: "2026-02-27",
-    readingTime: 16,
+    updatedAt: "2026-02-28",
+    readingTime: 18,
     featured: true,
     sources: [
       {
