@@ -204,7 +204,7 @@ function RechnerPage({ config }: Props) {
                   <div className="card-body">
                     <div className="flex items-center gap-4 mb-4">
                       <div className={`p-3 rounded-xl bg-${calc.color}/10`}>
-                        <img src={calc.icon} alt="" className="w-12 h-12 object-contain aspect-square" />
+                        <img src={calc.icon} alt="" className="w-12 h-12 object-contain aspect-square" width={48} height={48} loading="lazy" />
                       </div>
                       <h2 className="card-title text-xl">{calc.title}</h2>
                     </div>

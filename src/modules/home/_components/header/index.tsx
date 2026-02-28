@@ -44,11 +44,11 @@ function Header() {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                     className="flex items-center self-center h-8 md:h-12"
                   >
-                    <img src="/misc/wreath-left-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="Auszeichnung Dekoration links" />
+                    <img src="/misc/wreath-left-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="Auszeichnung Dekoration links" width={41} height={80} loading="eager" />
                     <p className="text-xs text-gray-500 whitespace-pre text-center">
                       {reward}
                     </p>
-                    <img src="/misc/wreath-right-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="Auszeichnung Dekoration rechts" />
+                    <img src="/misc/wreath-right-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="Auszeichnung Dekoration rechts" width={41} height={80} loading="eager" />
                   </motion.div>
                 ))}
               </div>
@@ -179,7 +179,7 @@ function Header() {
                         <div className="w-8">
                           <img
                             src={`/avatars/optimized/${index + 1}.webp`}
-                            alt={`app user ${index + 1}`}
+                            alt=""
                             width={64}
                             height={64}
                             loading="lazy"
@@ -232,6 +232,8 @@ function Header() {
                   alt="Mahlzait App auf iPhone - Kalorienzähler Interface"
                   className="relative z-10 h-full pointer-events-none"
                   style={{ aspectRatio: '432/885' }}
+                  width={432}
+                  height={885}
                   loading="eager"
                   decoding="async"
                   fetchpriority="high"

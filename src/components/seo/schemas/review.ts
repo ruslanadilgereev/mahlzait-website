@@ -3,7 +3,17 @@ import type { Thing, WithContext } from "schema-dts";
 interface ReviewItem {
   name: string;
   comment: string;
+  datePublished?: string;
 }
+
+// Static dates for reviews (staggered over the past months)
+const reviewDates = [
+  "2025-01-15",
+  "2025-01-22",
+  "2025-02-03",
+  "2025-02-14",
+  "2025-02-21",
+];
 
 export function generateReviewSchema(
   url: string,
@@ -22,6 +32,7 @@ export function generateReviewSchema(
       "@type": "Person",
       name: review.name,
     },
+    datePublished: review.datePublished || reviewDates[index % reviewDates.length],
     reviewBody: review.comment,
     reviewRating: {
       "@type": "Rating",

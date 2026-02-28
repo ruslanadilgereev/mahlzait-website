@@ -311,6 +311,9 @@ export default function LiveDemo() {
                             alt="Mahlzait Live Demo auf iPhone - Interaktive Kalorienzähler Demo"
                             className="relative z-10 h-full pointer-events-none"
                             style={{ aspectRatio: '432/885' }}
+                            width={432}
+                            height={885}
+                            loading="lazy"
                         />
                     </motion.div>
 

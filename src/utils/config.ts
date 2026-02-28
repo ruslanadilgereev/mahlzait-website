@@ -45,6 +45,8 @@ const templateConfig: TemplateConfig = {
     appLinks: [
       { href: "/#faq", title: "FAQ" },
       { href: "/team", title: "Team" },
+      { href: "/ueber-uns", title: "Über uns" },
+      { href: "/vergleich", title: "App-Vergleich" },
       { href: "/wissen", title: "Wissen" },
     ],
   },

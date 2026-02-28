@@ -8,14 +8,16 @@ import { generateReviewSchema } from "./schemas/review";
 import { generateHowToSchema } from "./schemas/howto";
 import { generateBreadcrumbSchema } from "./schemas/breadcrumb";
 import { generateProductSchemas } from "./schemas/product";
+import { generateWebPageSchema } from "./schemas/webpage";
 
 interface Props {
   config: TemplateConfig;
   type?: "homepage" | "page";
   pageTitle?: string;
+  pageDescription?: string;
 }
 
-const { config, type = "page", pageTitle } = Astro.props;
+const { config, type = "page", pageTitle, pageDescription } = Astro.props;
 const siteUrl = "https://www.mahlzait.de";
 const currentUrl = new URL(Astro.url.pathname, siteUrl).href;
 
@@ -46,6 +48,7 @@ let reviewSchemas = null;
 let howToSchema = null;
 let breadcrumbSchema = null;
 let productSchemas = null;
+let webPageSchema = null;
 
 if (type === "homepage" && config.home) {
   // FAQ Schema
@@ -105,12 +108,26 @@ if (type === "homepage" && config.home) {
   breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteUrl },
   ]);
+  
+  // WebPage Schema für Homepage
+  webPageSchema = generateWebPageSchema({
+    url: currentUrl,
+    name: config.seo.title,
+    description: config.seo.description,
+  });
 } else {
   // Breadcrumb für andere Seiten
   breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: siteUrl },
     { name: pageTitle || "Seite", url: currentUrl },
   ]);
+  
+  // WebPage Schema für alle anderen Seiten
+  webPageSchema = generateWebPageSchema({
+    url: currentUrl,
+    name: pageTitle || config.seo.title,
+    description: pageDescription || config.seo.description,
+  });
 }
 
 // Alle Schemas kombinieren
@@ -125,6 +142,7 @@ if (faqSchema) allSchemas.push(faqSchema);
 if (howToSchema) allSchemas.push(howToSchema);
 if (reviewSchemas) allSchemas.push(...reviewSchemas);
 if (productSchemas) allSchemas.push(...productSchemas);
+if (webPageSchema) allSchemas.push(webPageSchema);
 ---
 
 {

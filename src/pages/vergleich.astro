@@ -1,0 +1,157 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import VergleichPage from "@modules/vergleich";
+
+const vergleichSeo = {
+  title: "Mahlzait vs MyFitnessPal vs Yazio vs Lifesum | Kalorienzähler Vergleich 2025",
+  description:
+    "Welcher Kalorienzähler ist der beste? Detaillierter Vergleich: Mahlzait vs MyFitnessPal vs Yazio vs Lifesum. Features, Preise und KI-Funktionen im Test.",
+};
+
+const comparisonData = {
+  apps: [
+    { name: "Mahlzait", logo: "/logo.png" },
+    { name: "MyFitnessPal", logo: "/misc/mfp-logo.webp" },
+    { name: "Yazio", logo: "/misc/yazio-logo.webp" },
+    { name: "Lifesum", logo: "/misc/lifesum-logo.webp" },
+  ],
+  features: [
+    { name: "KI-gestützte Erkennung", mahlzait: true, mfp: false, yazio: false, lifesum: false },
+    { name: "Foto-Tracking", mahlzait: true, mfp: true, yazio: true, lifesum: true },
+    { name: "Text-Eingabe (natürliche Sprache)", mahlzait: true, mfp: false, yazio: false, lifesum: false },
+    { name: "URL/Rezept-Import", mahlzait: true, mfp: false, yazio: false, lifesum: false },
+    { name: "Barcode-Scanner", mahlzait: true, mfp: true, yazio: true, lifesum: true },
+    { name: "Kostenlose Basis-Version", mahlzait: true, mfp: true, yazio: true, lifesum: true },
+    { name: "Offline nutzbar", mahlzait: true, mfp: false, yazio: false, lifesum: false },
+    { name: "DSGVO-konform", mahlzait: true, mfp: false, yazio: true, lifesum: false },
+    { name: "Keine Werbung (Free)", mahlzait: true, mfp: false, yazio: false, lifesum: false },
+    { name: "Makro-Tracking", mahlzait: true, mfp: true, yazio: true, lifesum: true },
+    { name: "Gewichtsverlauf", mahlzait: true, mfp: true, yazio: true, lifesum: true },
+    { name: "Rezepte teilen", mahlzait: true, mfp: true, yazio: true, lifesum: true },
+    { name: "Wasserbedarf tracken", mahlzait: true, mfp: true, yazio: true, lifesum: true },
+  ],
+  pricing: [
+    { app: "Mahlzait", free: "Unbegrenzt tracken", pro: "4,99€/Monat oder 29,99€/Jahr" },
+    { app: "MyFitnessPal", free: "Sehr eingeschränkt", pro: "Ab 9,99€/Monat" },
+    { app: "Yazio", free: "Basis-Tracking", pro: "Ab 6,99€/Monat" },
+    { app: "Lifesum", free: "Basis-Tracking", pro: "Ab 8,99€/Monat" },
+  ],
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={vergleichSeo}>
+  <StructuredData 
+    config={defaultTemplateConfig} 
+    type="page" 
+    pageTitle="Kalorienzähler Vergleich" 
+    pageDescription={vergleichSeo.description}
+  />
+
+  <!-- Comparison Schema -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Kalorienzähler Vergleich 2025",
+      "description": "Detaillierter Vergleich der besten Kalorienzähler-Apps: Mahlzait vs MyFitnessPal vs Yazio vs Lifesum",
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Mahlzait",
+              "applicationCategory": "HealthApplication",
+              "operatingSystem": "iOS, Android",
+              "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "EUR"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "ratingCount": "50"
+              }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "MyFitnessPal",
+              "applicationCategory": "HealthApplication"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Yazio",
+              "applicationCategory": "HealthApplication"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareApplication",
+              "name": "Lifesum",
+              "applicationCategory": "HealthApplication"
+            }
+          }
+        ]
+      }
+    }
+  </script>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json" is:inline>
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Was unterscheidet Mahlzait von MyFitnessPal?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mahlzait nutzt moderne KI (LLMs) für die Lebensmittelerkennung, während MyFitnessPal auf eine traditionelle Datenbank setzt. Mit Mahlzait kannst du Mahlzeiten per Text beschreiben ('200g Hähnchen mit Reis') oder Rezept-URLs importieren. MyFitnessPal erfordert meist manuelle Suche und Auswahl aus der Datenbank."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ist Mahlzait wirklich kostenlos?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, Mahlzait bietet eine vollständige kostenlose Version ohne Werbung. Die Pro-Version (4,99€/Monat) bietet unbegrenzte KI-Anfragen und zusätzliche Features, aber das Basis-Tracking ist dauerhaft kostenlos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Welche Kalorienzähler-App ist am genauesten?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Mahlzait nutzt KI mit Grounding auf aktuellen Datenquellen wie Open Food Facts, was zu präziseren Ergebnissen führt als statische Datenbanken. Die KI kann auch Portionsgrößen besser einschätzen und ungewöhnliche Gerichte erkennen."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kann ich von MyFitnessPal zu Mahlzait wechseln?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, der Wechsel ist einfach. Mahlzait benötigt keine Datenübertragung - starte einfach neu und nutze die KI-Eingabe für schnelleres Tracking. Dein Kalorienziel und Körperdaten sind in Sekunden eingerichtet."
+          }
+        }
+      ]
+    }
+  </script>
+
+  <VergleichPage client:load config={defaultTemplateConfig} comparisonData={comparisonData} />
+</Layout>

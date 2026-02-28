@@ -1,0 +1,82 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import UeberUnsPage from "@modules/ueber-uns";
+
+const ueberUnsSeo = {
+  title: "Über Mahlzait | Wer wir sind & unsere Mission",
+  description:
+    "Lerne das Team hinter Mahlzait kennen. Unsere Vision: Der smarteste Kalorienzähler mit KI. Gegründet in Berlin, entwickelt für alle, die gesünder leben wollen.",
+};
+
+const company = {
+  name: "Mahlzait",
+  founded: "2025",
+  location: "Berlin, Deutschland",
+  email: "kontakt@mahlzait.de",
+  website: "https://www.mahlzait.de",
+  mission: "Abnehmen durch Präzision: Das einfachste Tracking-Erlebnis der Welt bauen.",
+  vision: "Eine Welt, in der jeder seine Ernährungsziele erreichen kann - ohne den Aufwand traditioneller Kalorienzähler.",
+};
+
+const founder = {
+  name: "Ruslan Adilgereev",
+  role: "Founder & Developer",
+  bio: "Ingenieur & Pragmatiker. Hat Mahlzait gebaut, weil ihm existierende Apps zu ungenau und Barcodes zu nervig waren. Setzt auf modernste AI (LLMs mit Grounding) statt veralteter Datenbanken.",
+  linkedin: "https://www.linkedin.com/in/ruslanadilgereev",
+};
+
+const techStack = [
+  { name: "React Native", desc: "Cross-Platform App für iOS & Android" },
+  { name: "Google Cloud", desc: "Serverless Backend mit Cloud Functions" },
+  { name: "GPT-4 & Gemini", desc: "Modernste LLMs für Lebensmittelerkennung" },
+  { name: "Open Food Facts", desc: "Verifizierte Nährwertdatenbank" },
+];
+---
+
+<Layout {...defaultTemplateConfig} seo={ueberUnsSeo}>
+  <StructuredData 
+    config={defaultTemplateConfig} 
+    type="page" 
+    pageTitle="Über uns" 
+    pageDescription={ueberUnsSeo.description}
+  />
+
+  <!-- AboutPage Schema -->
+  <script type="application/ld+json" is:inline set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "@id": `${company.website}/ueber-uns#aboutpage`,
+    url: `${company.website}/ueber-uns`,
+    name: "Über Mahlzait",
+    description: ueberUnsSeo.description,
+    mainEntity: {
+      "@type": "Organization",
+      "@id": `${company.website}#organization`,
+      name: company.name,
+      foundingDate: company.founded,
+      foundingLocation: {
+        "@type": "Place",
+        name: company.location,
+      },
+      email: `mailto:${company.email}`,
+      url: company.website,
+      slogan: company.mission,
+      founder: {
+        "@type": "Person",
+        name: founder.name,
+        jobTitle: founder.role,
+        sameAs: [founder.linkedin],
+      },
+    },
+  })} />
+
+  <UeberUnsPage 
+    client:load 
+    config={defaultTemplateConfig} 
+    company={company}
+    founder={founder}
+    techStack={techStack}
+  />
+</Layout>
