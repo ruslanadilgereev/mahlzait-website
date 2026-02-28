@@ -98,11 +98,13 @@ export type TemplateConfig = {
         partners?: {
             id?: string | undefined;
             title: string;
+            subtitle?: string | undefined;
             logos?: string[];
             stats?: {
                 icon: string;
                 number: string;
                 label: string;
+                tooltip?: string | undefined;
             }[];
         } | undefined;
         faq?: {

@@ -16,6 +16,16 @@ function Partners() {
         <h2 className="text-neutral-content text-4xl my-4 font-bold">
           <AnimatedText text={partners.title} />
         </h2>
+        {partners.subtitle && (
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 0.7 }}
+            viewport={{ once: true }}
+            className="text-neutral-content/70 text-sm mb-2"
+          >
+            {partners.subtitle}
+          </motion.p>
+        )}
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -39,6 +49,11 @@ function Partners() {
               <div className="text-sm md:text-base text-neutral-content/80 max-w-[140px]">
                 {stat.label}
               </div>
+              {stat.tooltip && (
+                <div className="text-xs text-neutral-content/50 mt-1">
+                  {stat.tooltip}
+                </div>
+              )}
             </motion.div>
           ))}
         </motion.div>

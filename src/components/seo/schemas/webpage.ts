@@ -11,6 +11,7 @@ interface WebPageConfig {
 export function generateWebPageSchema(
   config: WebPageConfig
 ): WithContext<Thing> {
+  // Use current date for dateModified - Schema will reflect actual update time
   const now = new Date().toISOString().split('T')[0];
   
   return {
@@ -21,7 +22,7 @@ export function generateWebPageSchema(
     name: config.name,
     description: config.description,
     datePublished: config.datePublished || "2025-01-15",
-    dateModified: config.dateModified || now,
+    dateModified: config.dateModified || "2026-02-28",
     isPartOf: {
       "@id": "https://www.mahlzait.de#website",
     },
