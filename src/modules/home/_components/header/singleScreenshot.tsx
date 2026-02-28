@@ -51,7 +51,7 @@ function SingleScreenshot({ scrollYProgress, index, totalCount, src }: Props) {
       decoding="async"
       fetchpriority={index === 0 ? "high" : "auto"}
       style={{ translateX: x, translateY: y, scale: 1.02 }}
-      className="absolute overflow-hidden w-full h-full object-cover object-top"
+      className="absolute inset-0 w-full h-full object-fill"
     />
   );
 }
