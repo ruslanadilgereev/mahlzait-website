@@ -9,14 +9,8 @@ const seo = {
   description:
     "Kostenlose Rechner für Kalorienbedarf, Kaloriendefizit und Makros. Berechne deinen persönlichen Bedarf und starte mit dem Tracking. Wissenschaftlich fundiert.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Rechner" />
-
-  <!-- CollectionPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "CollectionPage",
       name: "Ernährungsrechner",
@@ -166,8 +160,14 @@ const seo = {
           },
         ],
       },
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Rechner" />
+
+  <!-- CollectionPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <RechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

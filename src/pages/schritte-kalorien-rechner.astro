@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne wie viele Kalorien du beim Gehen verbrennst. Kostenloser Schritte zu Kalorien Rechner mit Distanz, Dauer und Wochenprognose. Basierend auf Gewicht und Tempo.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Schritte in Kalorien Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Kalorienverbrauch beim Gehen berechnen",
@@ -88,12 +79,9 @@ const seo = {
           text: "Wähle dein Gehtempo: langsam, normal oder schnell",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: "Schritte in Kalorien Rechner",
@@ -112,8 +100,20 @@ const seo = {
         "Distanz- und Zeitberechnung",
         "Wöchentliche Kalorienprognose"
       ]
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Schritte in Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <SchritteKalorienRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

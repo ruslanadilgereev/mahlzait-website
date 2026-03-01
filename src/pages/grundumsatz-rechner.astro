@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne deinen Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE) kostenlos. Mit wissenschaftlicher Mifflin-St Jeor Formel. Perfekte Basis zum Abnehmen oder Muskelaufbau.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Grundumsatz Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Grundumsatz berechnen",
@@ -93,12 +84,9 @@ const seo = {
           text: "Wähle dein tägliches Aktivitätslevel für die TDEE-Berechnung",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: "Grundumsatz Rechner",
@@ -117,12 +105,9 @@ const seo = {
         "Kalorienziele für Abnehmen und Muskelaufbau",
         "Wissenschaftliche Mifflin-St Jeor Formel"
       ]
-    })}
-  </script>
+    };
 
-  <!-- MedicalWebPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema1 = {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
       name: "Grundumsatz Rechner",
@@ -136,8 +121,23 @@ const seo = {
         "@type": "WebPageElement",
         cssSelector: ".card"
       }
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Grundumsatz Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
+
+  <!-- MedicalWebPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
   <GrundumsatzRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

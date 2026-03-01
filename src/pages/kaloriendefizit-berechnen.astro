@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne dein ideales Kaloriendefizit zum Abnehmen. Kostenloser Rechner zeigt: Wie viele Kalorien zum Abnehmen? Wann erreichst du dein Zielgewicht? Mit Prognose und Tipps.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kaloriendefizit berechnen" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -53,12 +47,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Im Kaloriendefizit abnehmen",
@@ -85,8 +76,17 @@ const seo = {
           text: "Bleib 2-4 Wochen konstant und beobachte den Wochendurchschnitt",
         },
       ],
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kaloriendefizit berechnen" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <KaloriendefizitPage client:load config={defaultTemplateConfig} />
 </Layout>

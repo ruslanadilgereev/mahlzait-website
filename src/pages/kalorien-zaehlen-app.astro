@@ -10,14 +10,8 @@ import {
 } from "@modules/kalorienzaehlenApp/content";
 
 const seo = kalorienZaehlenAppSeo;
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kalorien zählen App" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: kalorienZaehlenAppFaq.map((item) => ({
@@ -25,12 +19,9 @@ const seo = kalorienZaehlenAppSeo;
         name: item.q,
         acceptedAnswer: { "@type": "Answer", text: item.a },
       })),
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Kalorien zählen mit App",
@@ -41,8 +32,17 @@ const seo = kalorienZaehlenAppSeo;
         name: s.name,
         text: s.text,
       })),
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kalorien zählen App" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <KalorienZaehlenAppPage client:load config={defaultTemplateConfig} />
 </Layout>

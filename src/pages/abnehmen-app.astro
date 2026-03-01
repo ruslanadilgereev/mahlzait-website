@@ -6,14 +6,8 @@ import AbnehmenAppPage from "@modules/abnehmenApp";
 import { abnehmenAppFaq, abnehmenAppHowToSteps, abnehmenAppSeo } from "@modules/abnehmenApp/content";
 
 const seo = abnehmenAppSeo;
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Abnehmen App" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: abnehmenAppFaq.map((item) => ({
@@ -21,12 +15,9 @@ const seo = abnehmenAppSeo;
         name: item.q,
         acceptedAnswer: { "@type": "Answer", text: item.a },
       })),
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Abnehmen mit App",
@@ -37,8 +28,17 @@ const seo = abnehmenAppSeo;
         name: s.name,
         text: s.text,
       })),
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Abnehmen App" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <AbnehmenAppPage client:load config={defaultTemplateConfig} />
 </Layout>

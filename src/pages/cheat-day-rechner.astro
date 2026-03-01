@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne kostenlos, wie viele Extra-Kalorien du dir am Cheat-Day gönnen kannst. Plane Cheat-Days ohne Schuldgefühle und ohne dein Abnehmziel zu gefährden.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Cheat-Day-Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Cheat-Day clever planen",
@@ -93,12 +84,9 @@ const seo = {
           text: "Wähle wie intensiv dein Cheat-Day sein soll und erhalte deinen personalisierten Kalorien-Plan.",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "Cheat-Day-Rechner",
@@ -113,8 +101,20 @@ const seo = {
         name: "Cheat-Day",
         description: "Ein geplanter Tag mit erhöhter Kalorienzufuhr während einer Diät zur psychologischen Entlastung"
       }
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Cheat-Day-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <CheatDayRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

@@ -11,17 +11,8 @@ const seo = {
 };
 
 const canonicalUrl = "https://mahlzait.de/protein-bedarf-rechner";
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Proteinbedarf berechnen" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href={canonicalUrl} slot="head" />
-
-  <!-- FAQPage Schema - Expanded to 10 FAQs -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -106,12 +97,9 @@ const canonicalUrl = "https://mahlzait.de/protein-bedarf-rechner";
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Proteinbedarf berechnen",
@@ -144,12 +132,9 @@ const canonicalUrl = "https://mahlzait.de/protein-bedarf-rechner";
           text: "Wähle dein Ziel: Gewicht halten, Muskelaufbau, Abnehmen oder Ausdauer. Das Ziel beeinflusst die empfohlene Proteinmenge.",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- Article Schema for the educational content -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "Article",
       headline: "Proteinbedarf berechnen: So viel Eiweiss brauchst du wirklich",
@@ -170,12 +155,9 @@ const canonicalUrl = "https://mahlzait.de/protein-bedarf-rechner";
         "@type": "WebPage",
         "@id": "https://mahlzait.de/protein-bedarf-rechner"
       }
-    })}
-  </script>
+    };
 
-  <!-- WebApplication Schema for the calculator tool -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema1 = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: "Proteinbedarf Rechner",
@@ -194,18 +176,36 @@ const canonicalUrl = "https://mahlzait.de/protein-bedarf-rechner";
         "Verschiedene Aktivitätslevel",
         "Zielbasierte Empfehlungen"
       ]
-    })}
-  </script>
+    };
 
-  <!-- Table Schema for Quick Reference (Featured Snippet Target) -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema2 = {
       "@context": "https://schema.org",
       "@type": "Table",
       about: "Proteinbedarf nach Körpergewicht",
       description: "Schnellübersicht: Wie viel Protein am Tag bei verschiedenen Körpergewichten für Gesundheit, Muskelaufbau und Abnehmen"
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Proteinbedarf berechnen" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href={canonicalUrl} slot="head" />
+
+  <!-- FAQPage Schema - Expanded to 10 FAQs -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- Article Schema for the educational content -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
+
+  <!-- WebApplication Schema for the calculator tool -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
+
+  <!-- Table Schema for Quick Reference (Featured Snippet Target) -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema2)} />
 
   <ProteinBedarfRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

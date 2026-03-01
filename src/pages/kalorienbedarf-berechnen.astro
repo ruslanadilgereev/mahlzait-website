@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne deinen täglichen Kalorienbedarf mit der Mifflin-St Jeor Formel. Kostenloser Kalorienrechner für Grundumsatz (BMR) und Gesamtbedarf (TDEE). Erfahre, wie viele Kalorien du zum Abnehmen brauchst.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kalorienbedarf berechnen" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -53,12 +47,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Kalorienbedarf berechnen",
@@ -91,8 +82,17 @@ const seo = {
           text: "Wähle wie aktiv du im Alltag bist (von sitzend bis sehr aktiv)",
         },
       ],
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kalorienbedarf berechnen" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <KalorienbedarfPage client:load config={defaultTemplateConfig} />
 </Layout>

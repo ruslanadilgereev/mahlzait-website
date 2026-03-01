@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne dein Idealgewicht kostenlos mit 4 wissenschaftlichen Formeln: Broca, Lorentz, BMI und mehr. Berücksichtigt Geschlecht, Alter und Körperbau. Mit Tabelle und Erklärung.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Idealgewicht Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Idealgewicht berechnen",
@@ -93,12 +84,9 @@ const seo = {
           text: "Gib dein Alter an und wähle deinen Körperbau (schmal, normal oder breit) für ein genaueres Ergebnis",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- MedicalWebPage Schema for health content -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
       name: "Idealgewicht Rechner",
@@ -112,8 +100,20 @@ const seo = {
         "@type": "WebPageElement",
         cssSelector: ".card"
       }
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Idealgewicht Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- MedicalWebPage Schema for health content -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <IdealgewichtRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

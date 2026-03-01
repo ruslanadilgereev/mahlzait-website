@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne deinen BMI (Body Mass Index) kostenlos mit unserem Online-Rechner. Inklusive BMI-Tabelle, Interpretation und Tipps zum Idealgewicht. Wissenschaftlich fundiert nach WHO.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="BMI Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "BMI berechnen",
@@ -83,12 +74,9 @@ const seo = {
           text: "Gib dein aktuelles Körpergewicht in Kilogramm ein (z.B. 75 kg)",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- MedicalWebPage Schema for health content -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
       name: "BMI Rechner",
@@ -102,8 +90,20 @@ const seo = {
         "@type": "WebPageElement",
         cssSelector: ".card"
       }
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="BMI Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- MedicalWebPage Schema for health content -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <BMIRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

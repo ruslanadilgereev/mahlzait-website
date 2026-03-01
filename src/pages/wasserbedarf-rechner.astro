@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne deinen optimalen täglichen Wasserbedarf kostenlos. Basierend auf Gewicht, Aktivität und Klima. Finde heraus, wie viel Wasser du pro Tag trinken solltest.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Wasserbedarfs-Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Wasserbedarf berechnen",
@@ -88,12 +79,9 @@ const seo = {
           text: "Wähle die vorherrschende Temperatur: kalt, gemässigt, warm oder heiss",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebPage Schema for health content -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "Wasserbedarfs-Rechner",
@@ -108,8 +96,20 @@ const seo = {
         name: "Wasserbedarf",
         description: "Die optimale tägliche Wassermenge, die ein Mensch trinken sollte"
       }
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Wasserbedarfs-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebPage Schema for health content -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <WasserbedarfsRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

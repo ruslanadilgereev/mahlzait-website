@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne die Kalorien in deinem Döner Kebab, Dürüm oder Lahmacun. Kostenloser Döner-Kalorien-Rechner mit Fleisch, Sauce und Extras. Inkl. Kalorientabelle.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Döner Kalorien Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -69,12 +63,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Döner-Kalorien berechnen",
@@ -101,12 +92,9 @@ const seo = {
           text: "Die Gesamtkalorien werden mit Protein, Kohlenhydraten und Fett angezeigt",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: "Döner Kalorien Rechner",
@@ -125,12 +113,9 @@ const seo = {
         "Kalorientabelle für alle Döner-Varianten",
         "Tipps für kalorienärmere Döner-Optionen"
       ]
-    })}
-  </script>
+    };
 
-  <!-- NutritionInformation Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema1 = {
       "@context": "https://schema.org",
       "@type": "NutritionInformation",
       name: "Döner Kebab (klassisch)",
@@ -139,8 +124,23 @@ const seo = {
       proteinContent: "35g",
       carbohydrateContent: "45g",
       fatContent: "25g"
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Döner Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
+
+  <!-- NutritionInformation Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
   <DoenerKalorienRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

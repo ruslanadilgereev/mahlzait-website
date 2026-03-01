@@ -28,14 +28,8 @@ const founder = {
   linkedin: "https://www.linkedin.com/in/ruslanadilgereev",
   image: null,
 };
----
 
-<Layout {...defaultTemplateConfig} seo={teamSeo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Team" />
-
-  <!-- Zusätzliche strukturierte Daten: Person + erweiterte Organisation -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "Person",
       "@id": founder.id,
@@ -48,10 +42,9 @@ const founder = {
       },
       url: `${company.website}/team`,
       sameAs: [founder.linkedin],
-    })}
-  </script>
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+    };
+
+const schema1 = {
       "@context": "https://schema.org",
       "@type": "Organization",
       "@id": `${company.website}#organization`,
@@ -60,8 +53,15 @@ const founder = {
       foundingDate: company.founded,
       foundingLocation: { "@type": "Place", name: "Berlin, Germany" },
       founder: { "@id": founder.id },
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={teamSeo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Team" />
+
+  <!-- Zusätzliche strukturierte Daten: Person + erweiterte Organisation -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
+  <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
   <TeamPage client:load config={defaultTemplateConfig} />
 </Layout>

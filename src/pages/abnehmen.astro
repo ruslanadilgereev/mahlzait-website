@@ -6,14 +6,8 @@ import AbnehmenPage from "@modules/abnehmen";
 import { abnehmenFaq, abnehmenHowToSteps, abnehmenSeo } from "@modules/abnehmen/content";
 
 const seo = abnehmenSeo;
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Abnehmen" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: abnehmenFaq.map((item) => ({
@@ -24,12 +18,9 @@ const seo = abnehmenSeo;
           text: item.a,
         },
       })),
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Abnehmen mit Plan",
@@ -40,8 +31,17 @@ const seo = abnehmenSeo;
         name: s.name,
         text: s.text,
       })),
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Abnehmen" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <AbnehmenPage client:load config={defaultTemplateConfig} />
 </Layout>

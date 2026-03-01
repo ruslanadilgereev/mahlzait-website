@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne die Kalorien in Bier, Wein, Wodka und Cocktails. Kostenloser Alkohol-Kalorien-Rechner mit exakter Formel: 1g Alkohol = 7 kcal. Inklusive Kalorientabelle.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Alkohol Kalorien Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Alkohol-Kalorien berechnen",
@@ -88,12 +79,9 @@ const seo = {
           text: "Die Kalorien werden mit der Formel berechnet: Menge × Vol.% × 0,01 × 0,789 × 7 kcal",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: "Alkohol Kalorien Rechner",
@@ -111,8 +99,20 @@ const seo = {
         "Anzeige des reinen Alkoholgehalts in Gramm",
         "Vergleich mit anderen Lebensmitteln"
       ]
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Alkohol Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <AlkoholKalorienRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

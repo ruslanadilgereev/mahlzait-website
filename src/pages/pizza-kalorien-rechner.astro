@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne die Kalorien in deiner Pizza. Kostenloser Pizza-Kalorien-Rechner für Margherita, Salami, Hawaii & mehr. Mit Grösse, Teigart und Belägen. Inkl. Kalorientabelle.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Pizza Kalorien Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -69,12 +63,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Pizza-Kalorien berechnen",
@@ -111,12 +102,9 @@ const seo = {
           text: "Die Gesamtkalorien werden mit Protein, Kohlenhydraten und Fett angezeigt",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: "Pizza Kalorien Rechner",
@@ -136,12 +124,9 @@ const seo = {
         "Kalorientabelle für beliebte Pizzen",
         "Tipps für kalorienärmere Pizza-Optionen"
       ]
-    })}
-  </script>
+    };
 
-  <!-- NutritionInformation Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema1 = {
       "@context": "https://schema.org",
       "@type": "NutritionInformation",
       name: "Pizza Margherita (ganze Pizza)",
@@ -150,8 +135,23 @@ const seo = {
       proteinContent: "32g",
       carbohydrateContent: "104g",
       fatContent: "28g"
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Pizza Kalorien Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
+
+  <!-- NutritionInformation Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
   <PizzaKalorienRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

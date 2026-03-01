@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne deinen täglichen Koffeinkonsum kostenlos. Erfahre, ob du das empfohlene Tageslimit von 400mg überschreitest. Mit Koffeingehalt von Kaffee, Energy Drinks, Tee & mehr.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Koffein-Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Koffeinkonsum berechnen",
@@ -88,12 +79,9 @@ const seo = {
           text: "Klicke auf Berechnen und erfahre, wie viel Koffein du konsumiert hast und ob du im sicheren Bereich bist",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "Koffein-Rechner",
@@ -103,18 +91,30 @@ const seo = {
         "@type": "WebPageElement",
         cssSelector: ".card"
       }
-    })}
-  </script>
+    };
 
-  <!-- Caffeine Amount Table Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema1 = {
       "@context": "https://schema.org",
       "@type": "Table",
       name: "Koffeingehalt beliebter Getränke",
       about: "Koffeingehalt von Kaffee, Energy Drinks, Tee und anderen koffeinhaltigen Getränken",
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Koffein-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
+
+  <!-- Caffeine Amount Table Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
   <KoffeinRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

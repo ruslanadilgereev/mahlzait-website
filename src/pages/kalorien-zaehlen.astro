@@ -10,18 +10,8 @@ import {
 } from "@modules/kalorienzaehlen/content";
 
 const seo = kalorienZaehlenSeo;
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData
-    config={defaultTemplateConfig}
-    type="page"
-    pageTitle="Kalorien zählen"
-  />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: kalorienZaehlenFaq.map((item) => ({
@@ -32,12 +22,9 @@ const seo = kalorienZaehlenSeo;
           text: item.a,
         },
       })),
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Kalorien zählen: Schritt-für-Schritt",
@@ -48,8 +35,21 @@ const seo = kalorienZaehlenSeo;
         name: s.name,
         text: s.text,
       })),
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData
+    config={defaultTemplateConfig}
+    type="page"
+    pageTitle="Kalorien zählen"
+  />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <KalorienZaehlenPage client:load config={defaultTemplateConfig} />
 </Layout>

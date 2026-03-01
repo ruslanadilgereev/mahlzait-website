@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne dein Taille-Hüft-Verhältnis (WHR) und erfahre, was es über dein Gesundheitsrisiko aussagt. Kostenloser WHR-Rechner mit Richtwerten für Männer & Frauen.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Taille-Hüft-Verhältnis Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -69,12 +63,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Taille-Hüft-Verhältnis berechnen",
@@ -96,12 +87,9 @@ const seo = {
           text: "Teile deinen Taillenumfang durch deinen Hüftumfang. Das Ergebnis ist dein Taille-Hüft-Verhältnis (WHR).",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebApplication Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebApplication",
       name: "Taille-Hüft-Verhältnis Rechner",
@@ -120,12 +108,9 @@ const seo = {
         "Messanleitung für korrekte Ergebnisse",
         "Verbesserungstipps bei erhöhtem Risiko"
       ]
-    })}
-  </script>
+    };
 
-  <!-- MedicalWebPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema1 = {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
       name: "Taille-Hüft-Verhältnis Rechner",
@@ -144,8 +129,23 @@ const seo = {
         "@type": "MedicalSpecialty",
         name: "Kardiologie und Endokrinologie"
       }
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Taille-Hüft-Verhältnis Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebApplication Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
+
+  <!-- MedicalWebPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
   <WHRRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>

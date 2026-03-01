@@ -9,14 +9,8 @@ const seo = {
   description:
     "Berechne deinen perfekten Intervallfasten-Zeitplan kostenlos. 16:8, 18:6, 5:2 oder individuell – finde die beste Methode für deine Ziele und deinen Alltag.",
 };
----
 
-<Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Intervallfasten-Rechner" />
-
-  <!-- FAQPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const faqSchema = {
       "@context": "https://schema.org",
       "@type": "FAQPage",
       mainEntity: [
@@ -61,12 +55,9 @@ const seo = {
           },
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- HowTo Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const howToSchema = {
       "@context": "https://schema.org",
       "@type": "HowTo",
       name: "Intervallfasten-Zeitplan erstellen",
@@ -93,12 +84,9 @@ const seo = {
           text: "Der Rechner zeigt dir dein persönliches Ess- und Fastenfenster mit Uhrzeiten an",
         },
       ],
-    })}
-  </script>
+    };
 
-  <!-- WebPage Schema -->
-  <script type="application/ld+json" is:inline>
-    {JSON.stringify({
+const schema0 = {
       "@context": "https://schema.org",
       "@type": "WebPage",
       name: "Intervallfasten-Rechner",
@@ -113,8 +101,20 @@ const seo = {
         name: "Intervallfasten",
         description: "Ernährungsrhythmus mit wechselnden Ess- und Fastenperioden zur Gewichtsabnahme und Gesundheitsförderung"
       }
-    })}
-  </script>
+    };
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Intervallfasten-Rechner" />
+
+  <!-- FAQPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <!-- HowTo Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+
+  <!-- WebPage Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <IntervallfastenRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>
