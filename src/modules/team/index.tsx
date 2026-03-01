@@ -67,7 +67,7 @@ function TeamPage({ config }: Props) {
                 <ul className="mt-2 space-y-2">
                   <li className="flex items-center justify-between">
                     <span className="opacity-80">Geloggte Mahlzeiten</span>
-                    <span className="font-semibold">6.000+</span>
+                    <span className="font-semibold">50.000+</span>
                   </li>
                   <li className="flex items-center justify-between">
                     <span className="opacity-80">Aktive Nutzer:innen</span>

@@ -129,7 +129,7 @@ function UeberUnsPage({ config, company, founder, techStack }: Props) {
                   </div>
                   <div className="stat">
                     <div className="stat-title">Geloggte Mahlzeiten</div>
-                    <div className="stat-value text-secondary">6.000+</div>
+                    <div className="stat-value text-secondary">50.000+</div>
                     <div className="stat-desc">Und wachsend</div>
                   </div>
                   <div className="stat">
