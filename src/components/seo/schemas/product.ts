@@ -10,7 +10,8 @@ interface ProductOffer {
 export function generateProductSchemas(
   url: string,
   appName: string,
-  offers: ProductOffer[]
+  offers: ProductOffer[],
+  logoUrl?: string
 ): WithContext<Thing>[] {
   return offers.map((offer, index) => ({
     "@context": "https://schema.org",
@@ -18,6 +19,7 @@ export function generateProductSchemas(
     "@id": `${url}#product-${index}`,
     name: `${appName} ${offer.name}`,
     description: offer.description,
+    image: logoUrl || `${url}/logo.png`,
     brand: {
       "@type": "Brand",
       name: appName,

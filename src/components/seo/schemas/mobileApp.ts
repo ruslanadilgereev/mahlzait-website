@@ -54,7 +54,7 @@ export function generateMobileAppSchema(
     softwareVersion: "1.0.0",
     releaseNotes: "Kalorienzähler mit KI, Barcode-Scanner und Rezeptverwaltung",
     datePublished: "2024-11-01",
-    inLanguage: ["de-DE", "en-US", "ru-RU"],
+    inLanguage: ["de-DE"],
   };
 }
 
