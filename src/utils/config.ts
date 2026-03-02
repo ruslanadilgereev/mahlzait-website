@@ -78,7 +78,7 @@ const templateConfig: TemplateConfig = {
   home: {
     seo: {
       title: "Mahlzait – Kalorienzähler mit KI | Tracke Mahlzeiten in Sekunden",
-      description: "Mahlzait ist ein kostenloser Kalorienzähler mit KI-Erkennung für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. Über 500.000 Lebensmittel, Ernährungstagebuch und Gewichtsverlauf. Entwickelt in Berlin.",
+      description: "Mahlzait ist ein kostenloser Kalorienzähler mit KI-Erkennung für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. Über 10 Mio Lebensmittel, Ernährungstagebuch und Gewichtsverlauf. Entwickelt in Berlin.",
     },
     testimonials: {
       id: "testimonials",
@@ -177,7 +177,7 @@ const templateConfig: TemplateConfig = {
         {
           title: "KI-Logging",
           subtitle:
-            "Mahlzeiten per Foto oder Texteingabe loggen. Die KI nutzt GPT-4 Vision und erkennt Lebensmittel aus der Open Food Facts Datenbank (500.000+ Einträge). Erkennungsrate: ca. 90 % bei gut beleuchteten Fotos (getestet mit 5.000 Foto-Logs).",
+            "Mahlzeiten per Foto oder Texteingabe loggen. Die KI erkennt Lebensmittel aus der Open Food Facts Datenbank (10 Mio+ Einträge). Erkennungsrate: ca. 90 % bei gut beleuchteten Fotos (getestet mit 5.000 Foto-Logs).",
           icon: "/3D/bulb-front-color.webp",
           screenshot: "/screenshots/chat.webp",
         },
@@ -251,12 +251,12 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
           answer:
-            "Das KI-Logging nutzt GPT-4 Vision zur Bilderkennung und die Open Food Facts Datenbank (500.000+ Einträge). Nutzer fotografieren oder beschreiben Mahlzeiten per Text. Die Erkennungsrate liegt bei ca. 90 % (Stichprobe: 5.000 Foto-Logs). Portionsgrößen sind manuell anpassbar.",
+            "Das KI-Logging nutzt KI zur Bilderkennung und eine Datenbank mit (10 Mio+ Einträge). Nutzer fotografieren oder beschreiben Mahlzeiten per Text. Die Erkennungsrate liegt bei ca. 90 % (Stichprobe: 5.000 Foto-Logs). Portionsgrößen sind manuell anpassbar.",
         },
         {
           question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
           answer:
-            "Der Barcode-Scanner liest EAN/UPC-Codes und gleicht sie mit der Open Food Facts Datenbank ab (500.000+ Produkte). Kalorien und Makronährstoffe (Protein, Kohlenhydrate, Fett) werden automatisch übernommen. Nicht enthaltene Produkte können manuell ergänzt werden.",
+            "Der Barcode-Scanner liest EAN/UPC-Codes und gleicht sie mit der Open Food Facts Datenbank ab (10 Mio+ Produkte). Kalorien und Makronährstoffe (Protein, Kohlenhydrate, Fett) werden automatisch übernommen. Nicht enthaltene Produkte können manuell ergänzt werden.",
         },
         {
           question: "Kann ich eigene Rezepte erstellen und speichern?",
@@ -288,7 +288,7 @@ const templateConfig: TemplateConfig = {
     header: {
       headline: "Mahlzait – Kalorienzähler mit KI",
       subtitle:
-        "Kostenloser Kalorienzähler für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. 500.000+ Lebensmittel, KI-Erkennung in ~2 Sekunden, Makro-Tracking und Gewichtsverlauf. Entwickelt in Berlin, DSGVO-konform.",
+        "Kostenloser Kalorienzähler für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. 10 Mio+ Lebensmittel, KI-Erkennung in ~2 Sekunden, Makro-Tracking und Gewichtsverlauf. Entwickelt in Berlin, DSGVO-konform.",
       screenshots: [
         "/screenshots/1.webp",
         "/screenshots/2.webp",

@@ -8,7 +8,7 @@ function EntityDefinition() {
           <span><strong>Preis:</strong> Kostenlos (Pro ab 4,99 €/Mo)</span>
           <span><strong>Datenbank:</strong>{" "}
             <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer" className="link">Open Food Facts</a>{" "}
-            – 500.000+ Lebensmittel
+            – 10 Mio+ Lebensmittel
           </span>
           <span><strong>Datenschutz:</strong> DSGVO-konform, EU-Server</span>
         </div>
@@ -21,7 +21,7 @@ function EntityDefinition() {
             Lebensmittelerkennung. Die App wurde 2025 in Berlin entwickelt und ermöglicht das Erfassen
             von Mahlzeiten per Foto, Barcode-Scan oder Texteingabe. Mahlzait nutzt die{" "}
             <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer" className="link">Open Food Facts</a>{" "}
-            Datenbank und GPT-4 Vision zur Bilderkennung. Zur Kalorienbedarfs-Berechnung wird die{" "}
+            Datenbank und KI zur Bilderkennung. Zur Kalorienbedarfs-Berechnung wird die{" "}
             <a href="https://pubmed.ncbi.nlm.nih.gov/15883556/" target="_blank" rel="noopener noreferrer" className="link">Mifflin-St Jeor-Formel</a>{" "}
             (Frankenfield et al., 2005) verwendet.
           </p>

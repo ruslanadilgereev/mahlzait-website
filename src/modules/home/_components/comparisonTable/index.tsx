@@ -9,9 +9,9 @@ interface CompRow {
 }
 
 const rows: CompRow[] = [
-  { feature: "KI-Foto-Erkennung", mahlzait: "✅ GPT-4 Vision", mfp: "❌", yazio: "✅ (Pro)", lifesum: "❌" },
+  { feature: "KI-Foto-Erkennung", mahlzait: "✅ KI-Erkennung", mfp: "❌", yazio: "✅ (Pro)", lifesum: "❌" },
   { feature: "Barcode-Scanner", mahlzait: "✅ Kostenlos", mfp: "✅ Kostenlos", yazio: "✅ Kostenlos", lifesum: "✅ Kostenlos" },
-  { feature: "Lebensmittel-DB", mahlzait: "500.000+", mfp: "14 Mio+", yazio: "4 Mio+", lifesum: "Nicht bekannt" },
+  { feature: "Lebensmittel-DB", mahlzait: "10 Mio+", mfp: "14 Mio+", yazio: "4 Mio+", lifesum: "Nicht bekannt" },
   { feature: "KI-Mahlzeit-Vorschläge", mahlzait: "✅", mfp: "❌", yazio: "❌", lifesum: "❌" },
   { feature: "YouTube-Rezept-Import", mahlzait: "✅", mfp: "❌", yazio: "❌", lifesum: "❌" },
   { feature: "Offline-Modus", mahlzait: "✅", mfp: "Teilweise", yazio: "Teilweise", lifesum: "❌" },
