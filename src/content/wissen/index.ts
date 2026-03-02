@@ -26,6 +26,46 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "ernaehrungsplan-erstellen-anleitung",
+    title: "Ernährungsplan erstellen: Schritt-für-Schritt Anleitung 2026",
+    description:
+      "Ernährungsplan selber erstellen in 7 Schritten: Kalorienbedarf berechnen, Makros aufteilen, Mahlzeiten planen. Mit 3 Beispiel-Tagesplänen, Einkaufslisten und kostenlosen Rechnern.",
+    tags: ["Ernährungsplan", "Abnehmen", "Muskelaufbau", "Meal Prep", "Anleitung", "Makros", "Kalorienbedarf"],
+    publishedAt: "2026-03-02",
+    readingTime: 22,
+    featured: true,
+    sources: [
+      {
+        title: "Meal planning is associated with food variety, diet quality and body weight status in a large sample of French adults",
+        authors: "Ducrot P, Méjean C, Aroumougame V, et al.",
+        journal: "International Journal of Behavioral Nutrition and Physical Activity",
+        year: 2017,
+        doi: "10.1186/s12966-017-0461-7",
+      },
+      {
+        title: "Dietary Protein and Muscle Mass: Translating Science to Application and Health Benefit",
+        authors: "Carbone JW, Pasiakos SM",
+        journal: "Nutrients",
+        year: 2019,
+        doi: "10.3390/nu11051136",
+      },
+      {
+        title: "Comparison of Weight Loss Among Named Diet Programs in Overweight and Obese Adults: A Meta-Analysis",
+        authors: "Johnston BC, Kanters S, Bandayrel K, et al.",
+        journal: "JAMA",
+        year: 2014,
+        doi: "10.1001/jama.2014.10397",
+      },
+      {
+        title: "A satiety index of common foods",
+        authors: "Holt SH, Miller JC, Petocz P, Farmakalidis E",
+        journal: "European Journal of Clinical Nutrition",
+        year: 1995,
+        pmid: "7498104",
+      },
+    ],
+  },
+  {
     slug: "intervallfasten-16-8-anleitung-anfaenger",
     title: "Intervallfasten 16:8 für Anfänger: Der ultimative Guide 2026",
     description:
