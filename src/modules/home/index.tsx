@@ -24,7 +24,6 @@ function Home({ config }: Props) {
       <main>
         <Navbar />
         <Header />
-        <EntityDefinition />
         <Partners />
         <LiveDemo />
         <Features />
@@ -33,6 +32,7 @@ function Home({ config }: Props) {
         <Pricing />
         <Testimonials />
         <Faq />
+        <EntityDefinition />
         <AppBanner />
         <Footer />
       </main>
