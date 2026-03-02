@@ -20,13 +20,17 @@ export function generateOrganizationSchema(
     sameAs: [
       "https://apps.apple.com/de/app/mahlzait-kalorienz%C3%A4hler/id6747400456",
       "https://play.google.com/store/apps/details?id=com.promptit.mytemple",
+      "https://www.instagram.com/mahlzait",
+      "https://www.tiktok.com/@mahlzait",
+      "https://x.com/mahlzait",
+      "https://www.youtube.com/@mahlzait-de",
     ],
     description: "Mahlzait - Kalorienzähler mit KI für iOS und Android",
     contactPoint: {
       "@type": "ContactPoint",
       email: "kontakt@mahlzait.de",
       contactType: "customer service",
-      availableLanguage: "German",
+      availableLanguage: ["German", "English", "Russian"],
     },
   };
 }
