@@ -36,6 +36,7 @@ function ThemeLogo({ className = "h-8 w-auto", alt = "Mahlzait Logo" }: ThemeLog
         className={`${className} rounded-lg`}
         width={32}
         height={32}
+        loading="eager"
       />
     </picture>
   );

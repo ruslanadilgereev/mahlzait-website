@@ -46,10 +46,11 @@ function UeberUnsPage({ config, company, founder, techStack }: Props) {
             >
               <img 
                 src="/logo.png" 
-                alt="Mahlzait Logo" 
+                alt="Mahlzait Logo – Kalorienzähler-App aus Berlin" 
                 className="w-24 h-24 mx-auto mb-6 rounded-2xl shadow-lg"
                 width={96}
                 height={96}
+                loading="eager"
               />
             </motion.div>
             <motion.h1

@@ -32,6 +32,10 @@
         {
           "key": "Content-Type",
           "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         }
       ]
     },
@@ -45,6 +49,10 @@
         {
           "key": "Content-Type",
           "value": "text/html; charset=utf-8"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         }
       ]
     },
@@ -54,6 +62,10 @@
         {
           "key": "X-Frame-Options",
           "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Vary",
+          "value": "Accept-Encoding"
         },
         {
           "key": "X-Content-Type-Options",

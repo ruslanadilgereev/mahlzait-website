@@ -65,7 +65,7 @@ function VergleichPage({ config, comparisonData }: Props) {
                     <th className="text-left">Feature</th>
                     <th className="text-center">
                       <div className="flex flex-col items-center gap-2">
-                        <img src="/logo.png" alt="Mahlzait Logo" className="w-8 h-8 rounded-lg" width={32} height={32} />
+                        <img src="/logo.png" alt="Mahlzait Logo" className="w-8 h-8 rounded-lg" width={32} height={32} loading="lazy" />
                         <span className="font-bold text-primary">Mahlzait</span>
                       </div>
                     </th>

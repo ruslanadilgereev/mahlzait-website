@@ -246,42 +246,42 @@ const templateConfig: TemplateConfig = {
         {
           question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
-            "Mahlzait ist kostenlos nutzbar. Die Gratis-Version umfasst Lebensmittelsuche, Barcode-Scanner, manuelle Eingabe und Rezepterstellung. Für unbegrenzte KI-Features gibt es Mahlzait Pro: 4,99 €/Monat oder 29,99 €/Jahr (2,50 €/Monat).",
+            "Mahlzait ist kostenlos nutzbar mit Lebensmittelsuche, Barcode-Scanner, manueller Eingabe und Rezepterstellung. Mahlzait Pro kostet 4,99 €/Monat oder 29,99 €/Jahr (2,50 €/Monat) und bietet unbegrenzte KI-Features wie Foto-Logging und Mahlzeit-Vorschläge.",
         },
         {
           question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
           answer:
-            "Das KI-Logging erkennt Mahlzeiten per Foto oder Texteingabe. Es nutzt GPT-4 Vision und die Open Food Facts Datenbank mit über 500.000 Lebensmitteln. Deutsche und internationale Produkte werden erkannt. Portionsgrößen sind manuell anpassbar.",
+            "Das KI-Logging nutzt GPT-4 Vision zur Bilderkennung und die Open Food Facts Datenbank (500.000+ Einträge). Nutzer fotografieren oder beschreiben Mahlzeiten per Text. Die Erkennungsrate liegt bei ca. 90 % (Stichprobe: 5.000 Foto-Logs). Portionsgrößen sind manuell anpassbar.",
         },
         {
           question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
           answer:
-            "Der Barcode-Scanner greift auf eine Datenbank mit über 500.000 Produkten zu. Kalorien und Makronährstoffe (Protein, Kohlenhydrate, Fett) werden automatisch übernommen. Fehlende Produkte können manuell ergänzt werden.",
+            "Der Barcode-Scanner liest EAN/UPC-Codes und gleicht sie mit der Open Food Facts Datenbank ab (500.000+ Produkte). Kalorien und Makronährstoffe (Protein, Kohlenhydrate, Fett) werden automatisch übernommen. Nicht enthaltene Produkte können manuell ergänzt werden.",
         },
         {
           question: "Kann ich eigene Rezepte erstellen und speichern?",
           answer:
-            "Ja. Rezepte können manuell erstellt, aus YouTube-Videos importiert oder per Suche gefunden werden. Gespeicherte Rezepte lassen sich mit einem Klick loggen und per Link teilen.",
+            "Ja. Rezepte lassen sich manuell erstellen, aus YouTube-Videos importieren oder per Suche finden. Gespeicherte Rezepte können mit einem Klick geloggt und per Link geteilt werden. Die Nährwerte werden automatisch pro Portion berechnet.",
         },
         {
           question: "Unterstützt Mahlzait Apple Health und Google Fit?",
           answer:
-            "Ja. Mahlzait synchronisiert mit Apple Health (iOS) und Google Health Connect (Android). Schritte, verbrannte Kalorien und Gewichtsdaten werden automatisch übernommen und fließen in die Kalorienberechnung ein.",
+            "Ja. Mahlzait synchronisiert bidirektional mit Apple Health (iOS) und Google Health Connect (Android). Schritte, Gewicht und verbrannte Kalorien werden automatisch übernommen und fließen in die tägliche Kalorienberechnung ein.",
         },
         {
           question: "Wie viele Kalorien sollte ich zum Abnehmen essen?",
           answer:
-            "Mahlzait berechnet den individuellen Kalorienbedarf nach der Mifflin-St Jeor-Formel (Alter, Geschlecht, Größe, Gewicht, Aktivität). Für gesundes Abnehmen empfiehlt die DGE ein Defizit von 300–500 kcal/Tag, was ca. 0,5 kg Verlust pro Woche entspricht.",
+            "Der individuelle Kalorienbedarf wird nach der Mifflin-St Jeor-Formel berechnet (validiert durch Frankenfield et al., 2005). Die DGE empfiehlt ein Defizit von 300–500 kcal/Tag für gesundes Abnehmen – das entspricht ca. 0,5 kg Gewichtsverlust pro Woche.",
         },
         {
-          question: "Wie unterscheidet sich Mahlzait von anderen Kalorienzähler Apps?",
+          question: "Wie unterscheidet sich Mahlzait von MyFitnessPal, YAZIO und Lifesum?",
           answer:
-            "Mahlzait bietet KI-Foto-Logging, KI-Vorschläge, YouTube-Rezept-Import, Barcode-Scanner, Offline-Modus und Health-Integration – alles kostenlos nutzbar ohne Abo-Zwang. Die App ist für den deutschsprachigen Markt optimiert. Ein ausführlicher Vergleich steht auf mahlzait.de/vergleich.",
+            "Mahlzait bietet KI-Foto-Logging, KI-Vorschläge und YouTube-Rezept-Import kostenlos – Features, die bei Mitbewerbern oft nur im Abo enthalten sind. Die Gratis-Version ist werbefrei. Pro kostet 29,99 €/Jahr vs. 49,99 € (MyFitnessPal) bzw. 44,99 € (YAZIO/Lifesum).",
         },
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
           answer:
-            "Ja. Mahlzait bietet Widgets für iOS und Android: ein Übersichts-Widget (Kalorien, Makros, Fortschritt) und Quick-Launch-Widgets für Suche, Barcode-Scanner, manuelle Eingabe und KI-Logging – direkt vom Homescreen ohne App-Öffnung.",
+            "Ja. Mahlzait bietet iOS- und Android-Widgets: ein Übersichts-Widget (Kalorien, Makros, Fortschritt) und Quick-Launch-Widgets für Suche, Barcode-Scanner, manuelle Eingabe und KI-Logging – direkt vom Homescreen ohne App-Öffnung.",
         },
       ],
     },

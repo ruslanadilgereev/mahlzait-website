@@ -111,10 +111,11 @@ function Header() {
                     >
                       <img
                         className="h-14"
-                        alt="Bei Google Play herunterladen"
+                        alt="Mahlzait bei Google Play herunterladen – kostenloser Kalorienzähler"
                         src="/stores/google-play.svg"
                         width={180}
                         height={56}
+                        loading="eager"
                       />
                     </a>
                   </li>
@@ -127,10 +128,11 @@ function Header() {
                     >
                       <img
                         className="h-14"
-                        alt="Im App Store herunterladen"
+                        alt="Mahlzait im App Store herunterladen – Kalorienzähler für iPhone"
                         src="/stores/app-store.svg"
                         width={180}
                         height={56}
+                        loading="eager"
                       />
                     </a>
                   </li>
@@ -179,7 +181,7 @@ function Header() {
                         <div className="w-8">
                           <img
                             src={`/avatars/optimized/${index + 1}.webp`}
-                            alt={`Mahlzait Nutzer ${index + 1} – Kalorienzähler Erfahrung`}
+                            alt={`Mahlzait-Nutzer:in ${index + 1} – Erfahrungsbericht Kalorienzähler-App`}
                             width={64}
                             height={64}
                             loading="lazy"
