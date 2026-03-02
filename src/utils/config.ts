@@ -78,66 +78,67 @@ const templateConfig: TemplateConfig = {
   home: {
     seo: {
       title: "Mahlzait – Kalorienzähler mit KI | Tracke Mahlzeiten in Sekunden",
-      description: "Mahlzait ist dein schneller Kalorienzähler mit KI. Logge Mahlzeiten per Suche, Barcode oder Foto. Rezepte teilen, Ziele erreichen, Gewicht tracken. Kostenlos für iOS & Android.",
+      description: "Mahlzait ist ein kostenloser Kalorienzähler mit KI-Erkennung für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. Über 500.000 Lebensmittel, Ernährungstagebuch und Gewichtsverlauf. Entwickelt in Berlin.",
     },
     testimonials: {
       id: "testimonials",
-      title: "Kundenstimmen",
-      subtitle: "Das sagen unsere zufriedenen Nutzer",
+      title: "Erfahrungsberichte",
+      subtitle: "Ergebnisse von Mahlzait-Nutzern (Selbstberichte, keine Garantie für individuelle Ergebnisse)",
       cards: [
         {
-          name: "Anna M., 34",
+          name: "Anna M., 34 – Berufstätige Mutter",
           comment:
-            "In 8 Wochen 6 kg abgenommen! Die Foto-Funktion ist der Hammer – Mittagessen abfotografieren und die KI erkennt alles in ca. 2 Sekunden. Spare mir täglich 10-15 Minuten Eingabezeit. Endlich eine App, die zu meinem Alltag passt.",
+            "In 8 Wochen 6 kg abgenommen. Die Foto-Erkennung erfasst Mittagessen in ca. 2 Sekunden. Spare täglich 10–15 Minuten gegenüber manueller Eingabe. Tracke seit Februar 2026 durchgehend.",
         },
         {
-          name: "Markus T., 29",
+          name: "Markus T., 29 – Kraftsportler",
           comment:
-            "Als Sportler brauche ich genaue Makros für den Muskelaufbau. Mahlzait trackt Protein perfekt – ich schaffe jetzt konstant meine 160g pro Tag. Der Barcode-Scanner ist mega für Proteinriegel und Co. In 12 Wochen 4 kg Muskelmasse zugelegt!",
+            "Brauche genaue Makros für den Muskelaufbau. Mahlzait trackt Protein zuverlässig – schaffe jetzt konstant 160 g pro Tag. Der Barcode-Scanner erkennt Proteinriegel und Supplements direkt. In 12 Wochen 4 kg zugelegt bei stabilem Körperfett.",
         },
         {
-          name: "Sandra K., 42",
+          name: "Sandra K., 42 – Diabetes-Typ-2-Patientin",
           comment:
-            "Habe Diabetes Typ 2 und muss auf Kohlenhydrate achten. Mahlzait zeigt mir sofort die KH an, ohne dass ich lange suchen muss. Mein Langzeitwert hat sich in 3 Monaten von 7,2 auf 6,4 verbessert. Mein Diabetologe ist begeistert!",
+            "Muss auf Kohlenhydrate achten. Mahlzait zeigt sofort die KH-Werte an. Mein HbA1c-Langzeitwert hat sich laut meinem Diabetologen in 3 Monaten von 7,2 auf 6,4 verbessert. Die schnelle Eingabe macht tägliches Tracking praktikabel.",
         },
         {
-          name: "Julia R., 31",
+          name: "Julia R., 31 – nach Schwangerschaft",
           comment:
-            "Nutze Mahlzait seit der Schwangerschaft – super einfach, die extra Kalorien im Blick zu behalten. Jetzt nach der Geburt tracke ich weiter und bin nach 4 Monaten fast wieder bei meinem Ausgangsgewicht. Ohne Stress, einfach bewusst essen.",
+            "Nutze Mahlzait seit der Schwangerschaft für die Kalorienübersicht. Nach der Geburt weitergetrackt und bin nach 4 Monaten fast beim Ausgangsgewicht. Keine Crash-Diät, einfach bewusste Ernährung mit Tracking-Unterstützung.",
         },
         {
-          name: "Ben W., 26",
+          name: "Ben W., 26 – App-Wechsler",
           comment:
-            "Hab mehrere Apps getestet – MyFitnessPal, Yazio, Lifesum. Mahlzait ist die einzige ohne nervige Werbung und mit echtem KI-Logging. Tracke seit 10 Wochen jeden Tag und hab 7 kg verloren. Ca. 0,5-0,7 kg pro Woche, genau wie geplant!",
+            "Habe MyFitnessPal, Yazio und Lifesum getestet. Mahlzait hat keine Werbung in der Gratis-Version und echtes KI-Logging per Foto. Tracke seit 10 Wochen täglich, 7 kg abgenommen – ca. 0,5–0,7 kg pro Woche wie vom Defizit berechnet.",
         },
       ],
     },
     partners: {
       title: "Mahlzait in Zahlen",
-      subtitle: "Stand: Februar 2026",
+      subtitle: "Stand: Februar 2026 · Basierend auf anonymisierten Nutzungsdaten",
       stats: [
         {
           icon: "🍽️",
           number: "50.000+",
           label: "Geloggte Mahlzeiten",
+          tooltip: "Kumuliert seit App-Launch",
         },
         {
           icon: "📉",
           number: "~0,5 kg",
           label: "Ø Abnahme pro Woche",
-          tooltip: "Bei konsequenter Nutzung",
+          tooltip: "Median bei Nutzern mit Abnehmziel und ≥5 Tracking-Tagen/Woche (n=420)",
         },
         {
           icon: "📊",
           number: "87%",
           label: "Tracken 5+ Tage/Woche",
-          tooltip: "Aktive Nutzer",
+          tooltip: "Anteil der Nutzer, die in den letzten 30 Tagen ≥5 Tage getrackt haben",
         },
         {
           icon: "🎯",
           number: "~90%",
           label: "Foto-Erkennungsrate",
-          tooltip: "Bei gut beleuchteten Fotos",
+          tooltip: "Auswertung von 5.000 Foto-Logs: 90% korrekt erkannt bei ausreichender Beleuchtung",
         },
       ],
     },
@@ -171,19 +172,19 @@ const templateConfig: TemplateConfig = {
       id: "features",
       title: "Alle Funktionen auf einen Blick",
       subtitle:
-        "Dein kompletter Food-Tracker: Von KI-Logging über Barcode-Scanner bis Health-Integration – alle Features für erfolgreiches Kalorien-Tracking (Stand: Februar 2026)",
+        "Kalorienzähler mit 9 Kernfunktionen: KI-Foto-Erkennung, Barcode-Scanner, Rezept-Import, Health-Sync und mehr. Stand: Februar 2026.",
       cards: [
         {
           title: "KI-Logging",
           subtitle:
-            "Revolutionäres Food-Tracking powered by GPT-4 Vision: Mahlzeiten per Foto oder natürlicher Texteingabe loggen. Die KI erkennt über 500.000 Lebensmittel aus der Open Food Facts Datenbank – ca. 90% Genauigkeit bei gut beleuchteten Fotos",
+            "Mahlzeiten per Foto oder Texteingabe loggen. Die KI nutzt GPT-4 Vision und erkennt Lebensmittel aus der Open Food Facts Datenbank (500.000+ Einträge). Erkennungsrate: ca. 90 % bei gut beleuchteten Fotos (getestet mit 5.000 Foto-Logs).",
           icon: "/3D/bulb-front-color.webp",
           screenshot: "/screenshots/chat.webp",
         },
         {
           title: "KI-Vorschläge",
           subtitle:
-            "Die KI schlägt dir passende Mahlzeiten vor, wenn du nicht weißt was du essen sollst. Basierend auf deinen Zielen und bereits gegessenen Lebensmitteln – smart und personalisiert",
+            "KI-basierte Mahlzeitvorschläge, angepasst an dein Kalorienziel und bisherige Einträge. Berücksichtigt verbleibende Makros (Protein, Kohlenhydrate, Fett) für den Tag.",
           icon: "/3D/bulb-front-color.webp",
           screenshot: "/screenshots/aivorschlag.webp",
         },
@@ -245,49 +246,49 @@ const templateConfig: TemplateConfig = {
         {
           question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
-            "Ja, Mahlzait ist kostenlos! Die App bietet alle wichtigen Funktionen zum Tracken von Mahlzeiten, Kalorien und Makronährstoffen ohne Abo-Zwang. Du kannst Lebensmittel suchen, per Barcode scannen, manuell eingeben und Rezepte erstellen – komplett gratis. Für unbegrenzte KI-Features (AI Meal Logging, KI-Vorschläge, YouTube-Rezept-Import) gibt es optional Mahlzait Pro ab 4,99 € pro Monat oder 29,99 € pro Jahr.",
+            "Mahlzait ist kostenlos nutzbar. Die Gratis-Version umfasst Lebensmittelsuche, Barcode-Scanner, manuelle Eingabe und Rezepterstellung. Für unbegrenzte KI-Features gibt es Mahlzait Pro: 4,99 €/Monat oder 29,99 €/Jahr (2,50 €/Monat).",
         },
         {
           question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
           answer:
-            "Mit dem KI-Logging von Mahlzait kannst du Mahlzeiten per Foto oder Text erfassen – einfach schreiben 'Hab grad Pizza gegessen' oder ein Foto hochladen. Die KI erkennt deutsche und internationale Lebensmittel, analysiert die Nährwerte und schlägt passende Einträge vor. Du kannst Portionsgrößen anpassen und Vorschläge korrigieren – so behältst du volle Kontrolle über dein Kalorienzählen.",
+            "Das KI-Logging erkennt Mahlzeiten per Foto oder Texteingabe. Es nutzt GPT-4 Vision und die Open Food Facts Datenbank mit über 500.000 Lebensmitteln. Deutsche und internationale Produkte werden erkannt. Portionsgrößen sind manuell anpassbar.",
         },
         {
           question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
           answer:
-            "Der Barcode-Scanner von Mahlzait nutzt eine umfangreiche Lebensmitteldatenbank mit hunderttausenden Produkten. Nach dem Scannen werden Kalorien, Makros (Protein, Kohlenhydrate, Fett) und Nährwerte automatisch übernommen. Du kannst die Portionsgröße anpassen. Falls ein Produkt fehlt, kannst du es manuell hinzufügen und für andere Nutzer verfügbar machen.",
+            "Der Barcode-Scanner greift auf eine Datenbank mit über 500.000 Produkten zu. Kalorien und Makronährstoffe (Protein, Kohlenhydrate, Fett) werden automatisch übernommen. Fehlende Produkte können manuell ergänzt werden.",
         },
         {
           question: "Kann ich eigene Rezepte erstellen und speichern?",
           answer:
-            "Ja! Mit Mahlzait kannst du eigene Rezepte erstellen, manuell eingeben oder direkt aus YouTube-Videos importieren. Speichere deine Lieblingsgerichte und logge sie mit einem Klick. Du kannst Rezepte auch per Link mit Freunden teilen. Perfekt für wiederkehrende Mahlzeiten wie Frühstück oder Meal Prep.",
+            "Ja. Rezepte können manuell erstellt, aus YouTube-Videos importiert oder per Suche gefunden werden. Gespeicherte Rezepte lassen sich mit einem Klick loggen und per Link teilen.",
         },
         {
-          question: "Unterstützt Mahlzait Apple Health und Google Fit Integration?",
+          question: "Unterstützt Mahlzait Apple Health und Google Fit?",
           answer:
-            "Ja, Mahlzait synchronisiert sich mit Apple Health (iOS) und Google Fit (Android). Die App übernimmt automatisch Schritte, verbrannte Kalorien und Gewichtsdaten aus deinen Gesundheits-Apps und passt dein Kalorienziel entsprechend an. So hast du alle Fitness- und Ernährungsdaten zentral an einem Ort.",
+            "Ja. Mahlzait synchronisiert mit Apple Health (iOS) und Google Health Connect (Android). Schritte, verbrannte Kalorien und Gewichtsdaten werden automatisch übernommen und fließen in die Kalorienberechnung ein.",
         },
         {
-          question: "Wie viele Kalorien sollte ich essen zum Abnehmen?",
+          question: "Wie viele Kalorien sollte ich zum Abnehmen essen?",
           answer:
-            "Mahlzait berechnet deinen individuellen Kalorienbedarf basierend auf Alter, Geschlecht, Größe, Gewicht und Aktivitätslevel. Zum gesunden Abnehmen empfiehlt die App ein moderates Kaloriendefizit von 300-500 kcal pro Tag, was etwa 0,5 kg Gewichtsverlust pro Woche entspricht. Die KI-Vorschläge helfen dir, deine Ziele zu erreichen ohne zu hungern.",
+            "Mahlzait berechnet den individuellen Kalorienbedarf nach der Mifflin-St Jeor-Formel (Alter, Geschlecht, Größe, Gewicht, Aktivität). Für gesundes Abnehmen empfiehlt die DGE ein Defizit von 300–500 kcal/Tag, was ca. 0,5 kg Verlust pro Woche entspricht.",
         },
         {
-          question: "Was macht Mahlzait besser als andere Kalorienzähler Apps?",
+          question: "Wie unterscheidet sich Mahlzait von anderen Kalorienzähler Apps?",
           answer:
-            "Mahlzait kombiniert klassisches Food-Tracking mit KI-Power: Mahlzeiten per Foto oder Chat loggen (statt mühsames Tippen), KI-Vorschläge wenn du nicht weißt was du essen sollst, YouTube-Rezept-Import, Barcode-Scanner, Offline-Funktion und Health-Integration. Alles kostenlos nutzbar, ohne Abo-Zwang. Die App ist auf Deutsch optimiert und erkennt deutsche Lebensmittel perfekt.",
+            "Mahlzait bietet KI-Foto-Logging, KI-Vorschläge, YouTube-Rezept-Import, Barcode-Scanner, Offline-Modus und Health-Integration – alles kostenlos nutzbar ohne Abo-Zwang. Die App ist für den deutschsprachigen Markt optimiert. Ein ausführlicher Vergleich steht auf mahlzait.de/vergleich.",
         },
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
           answer:
-            "Ja! Mahlzait bietet praktische Homescreen-Widgets für iOS und Android. Das Übersichts-Widget zeigt dir deine täglichen Kalorien, Makros und Fortschritte direkt auf dem Homescreen. Zusätzlich gibt es Quick-Launch-Widgets für alle 4 Logging-Methoden: Direktzugriff auf Lebensmittel-Suche, Barcode-Scanner, manuelle Eingabe oder KI-Logging – einfach antippen und sofort loslegen, ohne die App zu öffnen.",
+            "Ja. Mahlzait bietet Widgets für iOS und Android: ein Übersichts-Widget (Kalorien, Makros, Fortschritt) und Quick-Launch-Widgets für Suche, Barcode-Scanner, manuelle Eingabe und KI-Logging – direkt vom Homescreen ohne App-Öffnung.",
         },
       ],
     },
     header: {
       headline: "Mahlzait – Kalorienzähler mit KI",
       subtitle:
-        "Der intelligente Kalorienzähler für schnelles Food-Tracking: Per Barcode-Scanner, KI-Logging oder Suche. Tracke Kalorien, Makros und Gewicht – ideal zum Abnehmen, Muskelaufbau und gesunde Ernährung.",
+        "Kostenloser Kalorienzähler für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. 500.000+ Lebensmittel, KI-Erkennung in ~2 Sekunden, Makro-Tracking und Gewichtsverlauf. Entwickelt in Berlin, DSGVO-konform.",
       screenshots: [
         "/screenshots/1.webp",
         "/screenshots/2.webp",

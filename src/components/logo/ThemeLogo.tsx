@@ -28,13 +28,16 @@ function ThemeLogo({ className = "h-8 w-auto", alt = "Mahlzait Logo" }: ThemeLog
   }, []);
 
   return (
-    <img
-      src="/logo.png"
-      alt={alt}
-      className={`${className} rounded-lg`}
-      width={32}
-      height={32}
-    />
+    <picture>
+      <source srcSet="/logo.webp" type="image/webp" />
+      <img
+        src="/logo.png"
+        alt={alt}
+        className={`${className} rounded-lg`}
+        width={32}
+        height={32}
+      />
+    </picture>
   );
 }
 

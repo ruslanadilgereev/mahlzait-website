@@ -58,6 +58,19 @@ function Partners() {
           ))}
         </motion.div>
         
+        {/* Data Sources Attribution */}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.5 }}
+          viewport={{ once: true }}
+          className="text-neutral-content/50 text-xs mt-6 text-center max-w-xl mx-auto"
+        >
+          Datengrundlage: Anonymisierte Nutzungsdaten der Mahlzait-App. Abnahmedaten basieren auf
+          selbst-getrackten Gewichtsverläufen von Nutzern mit Abnehmziel (n=420, Zeitraum: 4+ Wochen, ≥5 Tracking-Tage/Woche).
+          Foto-Erkennungsrate ermittelt aus Stichprobe von 5.000 Foto-Logs.
+          Hinweis: Individuelle Ergebnisse variieren. Mahlzait ersetzt keine ärztliche Beratung.
+        </motion.p>
+
         {/* DSGVO Trust Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

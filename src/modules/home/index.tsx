@@ -11,6 +11,8 @@ import HowItWorks from "./_components/howItWorks";
 import Pricing from "./_components/pricing";
 import Testimonials from "./_components/testimonials";
 import LiveDemo from "./_components/liveDemo";
+import EntityDefinition from "./_components/entityDefinition";
+import ComparisonTable from "./_components/comparisonTable";
 
 interface Props {
   config: TemplateConfig;
@@ -22,9 +24,11 @@ function Home({ config }: Props) {
       <main>
         <Navbar />
         <Header />
+        <EntityDefinition />
         <Partners />
         <LiveDemo />
         <Features />
+        <ComparisonTable />
         <HowItWorks />
         <Pricing />
         <Testimonials />

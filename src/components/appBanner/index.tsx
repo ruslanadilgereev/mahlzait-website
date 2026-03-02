@@ -68,6 +68,7 @@ function AppBanner() {
                       src="/stores/google-play.svg"
                       width={180}
                       height={56}
+                      loading="lazy"
                     />
                   </a>
                 </li>
@@ -81,6 +82,7 @@ function AppBanner() {
                       src="/stores/app-store.svg"
                       width={180}
                       height={56}
+                      loading="lazy"
                     />
                   </a>
                 </li>

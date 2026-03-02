@@ -7,6 +7,7 @@ import { agentsSummary } from "@nuasite/agent-summary";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.mahlzait.de",
+  compressHTML: true,
   vite: {
     css: {
       preprocessorOptions: {

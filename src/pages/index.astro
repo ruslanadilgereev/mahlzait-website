@@ -3,9 +3,18 @@ import HomePage from "@modules/home"
 import Layout from "Layout.astro"
 import StructuredData from "@components/seo/StructuredData.astro"
 import defaultTemplateConfig from "utils/config"
+
+// Strip heavy legal content from the config passed to the homepage React island
+// to reduce HTML payload (~40KB → ~12KB for the island props)
+const homeConfig = {
+  ...defaultTemplateConfig,
+  privacyPolicy: { seo: defaultTemplateConfig.privacyPolicy.seo, content: "" },
+  cookiesPolicy: { seo: defaultTemplateConfig.cookiesPolicy.seo, content: "" },
+  termsAndConditions: { seo: defaultTemplateConfig.termsAndConditions.seo, content: "" },
+};
 ---
 
 <Layout {...defaultTemplateConfig}>
   <StructuredData config={defaultTemplateConfig} type="homepage" />
-  <HomePage client:idle config={defaultTemplateConfig} />
+  <HomePage client:idle config={homeConfig} />
 </Layout>
