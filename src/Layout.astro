@@ -38,10 +38,6 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <title>{seo.title}</title>
     <meta name="title" content={seo.title} />
     <meta name="description" content={seo.description} />
-    <meta
-      name="keywords"
-      content="kalorienzähler, kalorienzähler app, food tracker, kalorienzähler mit ki, kalorienzähler kostenlos, kalorien tracker, mahlzeiten tracken, barcode scanner, rezepte teilen, gewicht tracken, makros tracken, ernährungstagebuch, diät app, abnehmen app, fitness tracker"
-    />
     <meta name="author" content="Mahlzait" />
     <meta
       name="robots"
@@ -62,10 +58,10 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <meta property="og:site_name" content="Mahlzait" />
     <meta property="og:title" content={seo.title} />
     <meta property="og:description" content={seo.description} />
-    <meta property="og:image" content={logoFullUrl} />
-    <meta property="og:image:width" content="512" />
-    <meta property="og:image:height" content="512" />
-    <meta property="og:image:alt" content="Mahlzait Logo" />
+    <meta property="og:image" content={`${siteUrl}/og-image.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Mahlzait – Kalorienzähler mit KI" />
     <meta property="og:locale" content="de_DE" />
 
     <!-- Facebook Domain Verification -->
@@ -79,8 +75,8 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <meta name="twitter:url" content={canonicalUrl} />
     <meta name="twitter:title" content={seo.title} />
     <meta name="twitter:description" content={seo.description} />
-    <meta name="twitter:image" content={logoFullUrl} />
-    <meta name="twitter:image:alt" content="Mahlzait Logo" />
+    <meta name="twitter:image" content={`${siteUrl}/og-image.png`} />
+    <meta name="twitter:image:alt" content="Mahlzait – Kalorienzähler mit KI" />
 
     <!-- Apple Mobile Web App -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -105,6 +101,7 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <!-- Siehe CookieConsent-Komponente -->
 
     <!-- AI Discovery Links -->
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
     <link rel="alternate" type="application/json" href="/api/content.json" title="Structured Data for AI" />
     <link rel="alternate" type="application/json" href="/ai-questions.json" title="AI Questions & Answers" />
     <link rel="alternate" type="application/json" href="/comparison.json" title="App Comparison" />
@@ -147,12 +144,12 @@ const logoFullUrl = new URL(logo, siteUrl).href;
         t=document.createElement("script");t.async=!0,t.src=e;var
         r=document.getElementsByTagName("script")[0];
         r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-      pintrk('load', '2612541577652', {em: '<user_email_address>'});
+      pintrk('load', '2612541577652');
       pintrk('page');
     </script>
     <noscript>
       <img height="1" width="1" style="display:none;" alt=""
-        src="https://ct.pinterest.com/v3/?event=init&tid=2612541577652&pd[em]=<hashed_email_address>&noscript=1" />
+        src="https://ct.pinterest.com/v3/?event=init&tid=2612541577652&noscript=1" />
     </noscript>
     <!-- end Pinterest Tag -->
   </head>

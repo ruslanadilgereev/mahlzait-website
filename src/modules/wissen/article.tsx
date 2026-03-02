@@ -62,12 +62,23 @@ function ArticlePage({ config, article, content }: Props) {
             {article.title}
           </h1>
 
-          {/* Meta */}
-          <div className="flex flex-wrap items-center gap-4 text-sm opacity-70 mb-8">
-            <span>Veröffentlicht: {formatDate(article.publishedAt)}</span>
+          {/* Author & Meta */}
+          <div className="flex flex-wrap items-center gap-3 text-sm opacity-70 mb-8">
+            <span>
+              Von{" "}
+              <a href="/team" className="font-medium text-primary hover:underline">
+                Ruslan Adilgereev
+              </a>
+            </span>
+            <span aria-hidden="true">·</span>
+            <span>{formatDate(article.publishedAt)}</span>
             {article.updatedAt && (
-              <span>Aktualisiert: {formatDate(article.updatedAt)}</span>
+              <>
+                <span aria-hidden="true">·</span>
+                <span>Aktualisiert: {formatDate(article.updatedAt)}</span>
+              </>
             )}
+            <span aria-hidden="true">·</span>
             <span>{article.readingTime} Min. Lesezeit</span>
           </div>
 

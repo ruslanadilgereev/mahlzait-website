@@ -5,6 +5,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { abnehmenFaq, abnehmenKeyPoints, abnehmenMistakes } from "./content";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -22,6 +23,7 @@ function AbnehmenPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Abnehmen: nachhaltig, planbar, ohne Chaos
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-3xl mx-auto">
               Abnehmen muss nicht kompliziert sein. Der Kern ist ein Kaloriendefizit – der Rest sind
               Tools, die dir helfen dranzubleiben. Hier bekommst du einen einfachen Plan inklusive

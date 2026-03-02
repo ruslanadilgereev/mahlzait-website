@@ -5,6 +5,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { abnehmenAppFaq, abnehmenAppFeatures, abnehmenAppKeyPoints } from "./content";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -22,6 +23,7 @@ function AbnehmenAppPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Abnehmen App: Tracking, das du durchziehst
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-3xl mx-auto">
               Abnehmen scheitert selten an Wissen – sondern an Reibung. Eine gute Abnehmen App macht
               Tracking so leicht, dass du konstant bleibst. Genau das bringt dich nach oben.

@@ -6,6 +6,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -121,6 +122,7 @@ function IdealgewichtRechnerPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Idealgewicht Rechner
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Berechne dein persönliches Idealgewicht mit 4 wissenschaftlichen Formeln. 
               Berücksichtigt Geschlecht, Alter und Körperbau.

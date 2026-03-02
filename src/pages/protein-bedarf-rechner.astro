@@ -184,6 +184,24 @@ const schema2 = {
       about: "Proteinbedarf nach Körpergewicht",
       description: "Schnellübersicht: Wie viel Protein am Tag bei verschiedenen Körpergewichten für Gesundheit, Muskelaufbau und Abnehmen"
     };
+
+const authorPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.mahlzait.de/#person-ruslan",
+  name: "Ruslan Adilgereev",
+  url: "https://www.mahlzait.de/team",
+  jobTitle: "Founder",
+  worksFor: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: "https://www.mahlzait.de",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/ruslanadilgereev",
+  ],
+};
+
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
@@ -193,6 +211,7 @@ const schema2 = {
   <link rel="canonical" href={canonicalUrl} slot="head" />
 
   <!-- FAQPage Schema - Expanded to 10 FAQs -->
+    <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <!-- HowTo Schema -->

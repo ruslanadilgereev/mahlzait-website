@@ -22,6 +22,12 @@ export function generateOrganizationSchema(
       "https://play.google.com/store/apps/details?id=com.promptit.mytemple",
     ],
     description: "Mahlzait - Kalorienzähler mit KI für iOS und Android",
+    contactPoint: {
+      "@type": "ContactPoint",
+      email: "kontakt@mahlzait.de",
+      contactType: "customer service",
+      availableLanguage: "German",
+    },
   };
 }
 

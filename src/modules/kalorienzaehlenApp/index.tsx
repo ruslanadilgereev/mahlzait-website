@@ -3,6 +3,7 @@ import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
+import AuthorByline from "@components/AuthorByline";
 import {
   kalorienZaehlenAppFaq,
   kalorienZaehlenAppFeatures,
@@ -26,6 +27,7 @@ function KalorienZaehlenAppPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Kalorien zählen App: so klappt’s wirklich
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-3xl mx-auto">
               Wenn Kalorien zählen nervt, liegt’s meist nicht am „Willen“, sondern am Aufwand.
               Eine gute Kalorienzähler App macht das Tracking schnell genug, dass du dranbleibst.

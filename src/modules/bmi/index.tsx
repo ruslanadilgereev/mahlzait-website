@@ -6,6 +6,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -87,6 +88,7 @@ function BMIRechnerPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               BMI Rechner
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Berechne deinen Body Mass Index (BMI) und finde heraus, ob dein Gewicht im gesunden Bereich liegt. Inklusive Interpretation und Idealgewicht.
             </p>

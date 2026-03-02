@@ -5,6 +5,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -263,6 +264,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               🍕 Pizza Kalorien Rechner
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Wie viele Kalorien hat deine Pizza? Berechne die Nährwerte für Margherita, Salami,
               Hawaii und mehr – mit verschiedenen Grössen, Teigarten und Extra-Belägen.

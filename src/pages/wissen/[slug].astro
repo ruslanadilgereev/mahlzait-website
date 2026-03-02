@@ -63,6 +63,23 @@ const breadcrumbSchema = {
   ],
 };
 
+const authorSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${siteUrl}/#person-ruslan`,
+  name: "Ruslan Adilgereev",
+  url: `${siteUrl}/team`,
+  jobTitle: "Founder",
+  worksFor: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: siteUrl,
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/ruslanadilgereev",
+  ],
+};
+
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
@@ -71,9 +88,10 @@ const articleSchema = {
   datePublished: article.publishedAt,
   dateModified: article.updatedAt || article.publishedAt,
   author: {
-    "@type": "Organization",
-    name: "Mahlzait Redaktion",
-    url: siteUrl,
+    "@type": "Person",
+    "@id": `${siteUrl}/#person-ruslan`,
+    name: "Ruslan Adilgereev",
+    url: `${siteUrl}/team`,
   },
   publisher: {
     "@type": "Organization",
@@ -106,6 +124,9 @@ const articleSchema = {
 <Layout {...defaultTemplateConfig} seo={seo}>
   <!-- Breadcrumb Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <!-- Author (Person) Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(authorSchema)} />
 
   <!-- Article Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />

@@ -5,6 +5,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -170,6 +171,7 @@ function WHRRechnerPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Taille-Hüft-Verhältnis Rechner
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Berechne dein WHR (Waist-to-Hip Ratio) und erfahre, was die Fettverteilung 
               über dein Gesundheitsrisiko aussagt.

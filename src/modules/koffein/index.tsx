@@ -5,6 +5,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -153,6 +154,7 @@ function KoffeinRechnerPage({ config }: Props) {
               <h1 className="text-4xl md:text-6xl font-black text-white leading-tight tracking-tight">
                 Koffein-Rechner
               </h1>
+              <AuthorByline />
               <p className="mt-4 text-lg md:text-xl text-amber-100/80 max-w-2xl mx-auto">
                 Tracke deinen täglichen Koffeinkonsum. Finde heraus, ob du noch im sicheren Bereich bist oder ob dein Kaffeekonsum überhand nimmt.
               </p>

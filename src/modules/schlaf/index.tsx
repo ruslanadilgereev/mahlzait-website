@@ -5,6 +5,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -171,6 +172,7 @@ function SchlafRechnerPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Schlaf-Rechner
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Berechne deine optimalen Schlaf- und Aufwachzeiten basierend auf 
               90-Minuten-Schlafzyklen. Wach erfrischt auf statt mitten im Tiefschlaf.

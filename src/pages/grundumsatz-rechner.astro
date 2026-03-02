@@ -122,12 +122,31 @@ const schema1 = {
         cssSelector: ".card"
       }
     };
+
+const authorPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.mahlzait.de/#person-ruslan",
+  name: "Ruslan Adilgereev",
+  url: "https://www.mahlzait.de/team",
+  jobTitle: "Founder",
+  worksFor: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: "https://www.mahlzait.de",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/ruslanadilgereev",
+  ],
+};
+
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
   <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Grundumsatz Rechner" />
 
   <!-- FAQPage Schema -->
+    <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
   <!-- HowTo Schema -->

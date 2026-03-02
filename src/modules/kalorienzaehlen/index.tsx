@@ -3,6 +3,7 @@ import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
+import AuthorByline from "@components/AuthorByline";
 import {
   kalorienZaehlenFaq,
   kalorienZaehlenKeyPoints,
@@ -26,6 +27,7 @@ function KalorienZaehlenPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Kalorien zählen: Schritt-für-Schritt Anleitung
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-3xl mx-auto">
               Wenn du abnehmen willst, ist Kalorien zählen der verlässlichste Hebel. Hier bekommst du
               eine klare Anleitung: Kalorienbedarf berechnen, Defizit setzen, Fehler vermeiden – plus

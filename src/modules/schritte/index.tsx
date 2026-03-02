@@ -6,6 +6,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
 
+import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
@@ -116,6 +117,7 @@ function SchritteKalorienRechnerPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Schritte in Kalorien Rechner
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Berechne wie viele Kalorien du beim Gehen verbrennst. Finde heraus, was 10.000 Schritte wirklich bringen – basierend auf deinem Gewicht und Tempo.
             </p>

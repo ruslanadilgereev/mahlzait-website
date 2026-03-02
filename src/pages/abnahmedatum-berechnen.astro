@@ -8,9 +8,28 @@ const seo = {
   description: "Berechne dein exaktes Zieldatum fürs Abnehmen. Kostenloser Rechner basierend auf deinem Kaloriendefizit. Wann erreichst du dein Wunschgewicht?",
   image: defaultTemplateConfig.seo.image
 };
+
+const authorPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.mahlzait.de/#person-ruslan",
+  name: "Ruslan Adilgereev",
+  url: "https://www.mahlzait.de/team",
+  jobTitle: "Founder",
+  worksFor: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: "https://www.mahlzait.de",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/ruslanadilgereev",
+  ],
+};
+
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <div class="container mx-auto px-4 py-12">
     <div class="text-center mb-12">
       <h1 class="text-4xl font-black mb-4">Wann erreichst du dein Wunschgewicht? 🎯</h1>

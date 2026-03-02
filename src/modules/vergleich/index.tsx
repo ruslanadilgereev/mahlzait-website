@@ -5,6 +5,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { motion } from "framer-motion";
 
+import AuthorByline from "@components/AuthorByline";
 interface ComparisonFeature {
   name: string;
   mahlzait: boolean;
@@ -43,6 +44,7 @@ function VergleichPage({ config, comparisonData }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Mahlzait vs MyFitnessPal vs Yazio vs Lifesum
             </h1>
+            <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Welcher Kalorienzähler ist der beste für dich? 
               Wir vergleichen Features, Preise und die wichtigsten Unterschiede.
