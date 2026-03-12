@@ -1,0 +1,52 @@
+{
+  "slug": "wrap",
+  "name": "Wrap",
+  "emoji": "🌯",
+  "category": "fast-food",
+  "seo": {
+    "title": "Wrap Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Wrap? Nährwerte pro Stück & 100g. Chicken, Veggie & Caesar Wrap im Vergleich + kalorienarme Tipps.",
+    "keywords": ["wrap kalorien", "kalorien wrap", "wrap nährwerte", "chicken wrap kalorien", "tortilla wrap kalorien", "wrap kalorien pro stück", "veggie wrap kalorien", "caesar wrap kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 190,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 280,
+    "typical_portion_name": "1 Wrap"
+  },
+  "variants": [
+    { "name": "Chicken Wrap (gegrillt)", "portion_g": 280, "calories": 480, "protein": 30, "carbs": 40, "fat": 22 },
+    { "name": "Caesar Wrap", "portion_g": 300, "calories": 550, "protein": 28, "carbs": 42, "fat": 30 },
+    { "name": "Veggie Wrap", "portion_g": 260, "calories": 380, "protein": 12, "carbs": 46, "fat": 16, "tip": "Kalorienärmste" },
+    { "name": "Thunfisch Wrap", "portion_g": 280, "calories": 460, "protein": 28, "carbs": 40, "fat": 20 },
+    { "name": "Falafel Wrap", "portion_g": 300, "calories": 520, "protein": 16, "carbs": 52, "fat": 26 },
+    { "name": "Pulled Pork Wrap", "portion_g": 300, "calories": 580, "protein": 32, "carbs": 44, "fat": 30 },
+    { "name": "Lachs Wrap", "portion_g": 280, "calories": 490, "protein": 26, "carbs": 38, "fat": 24 },
+    { "name": "Protein Wrap (Fitness)", "portion_g": 260, "calories": 380, "protein": 36, "carbs": 30, "fat": 12, "tip": "Proteinreichste" }
+  ],
+  "comparison": [
+    { "name": "Döner Kebab", "calories": 600, "emoji": "🥙" },
+    { "name": "Sandwich", "calories": 380, "emoji": "🥪" },
+    { "name": "Burrito", "calories": 650, "emoji": "🌯" },
+    { "name": "Big Mac", "calories": 509, "emoji": "🍔" }
+  ],
+  "tips": [
+    { "title": "Vollkorn-Tortilla verwenden", "text": "Vollkorn-Wraps haben mehr Ballaststoffe und halten länger satt – bei gleichen Kalorien wie weiße Tortillas.", "icon": "🌾" },
+    { "title": "Soße sparsam dosieren", "text": "Mayo-basierte Saucen fügen 100-150 kcal hinzu. Senf, Salsa oder Joghurt-Dressing sind leichtere Alternativen.", "icon": "🫙" },
+    { "title": "Mehr Gemüse, weniger Fleisch", "text": "Die Füllung mit extra Salat, Gurke und Tomate strecken – macht voller bei weniger Kalorien.", "icon": "🥗" },
+    { "title": "Protein-Wraps nutzen", "text": "Protein-Tortillas aus dem Supermarkt haben 120 kcal statt 200 kcal und deutlich mehr Protein.", "icon": "💪" },
+    { "title": "Selbst machen spart Kalorien", "text": "Wraps vom Imbiss haben oft doppelt so viel Soße und Fett wie selbstgemachte. Du kontrollierst die Zutaten.", "icon": "👨‍🍳" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Wrap?", "answer": "Ein Chicken Wrap hat ca. 480 kcal, ein Caesar Wrap ca. 550 kcal und ein Veggie Wrap ca. 380 kcal. Die Kalorien variieren stark je nach Füllung und Soße." },
+    { "question": "Ist ein Wrap gesünder als ein Burger?", "answer": "Nicht unbedingt. Ein Wrap kann genauso viele Kalorien haben wie ein Burger. Der Vorteil: Mehr Gemüse und Ballaststoffe passen rein. Es kommt auf die Füllung an." },
+    { "question": "Wie viele Kalorien hat eine Tortilla?", "answer": "Eine Weizen-Tortilla (60g) hat ca. 200 kcal, eine Vollkorn-Tortilla ca. 180 kcal. Low-Carb-Tortillas gibt es mit nur 100-120 kcal." },
+    { "question": "Welcher Wrap hat die wenigsten Kalorien?", "answer": "Ein Veggie Wrap mit viel Gemüse und Joghurt-Dressing hat ca. 380 kcal. Noch leichter: Salat-Wrap ohne Tortilla (Salatblatt als Hülle) mit nur 200 kcal." },
+    { "question": "Wie viel Protein hat ein Wrap?", "answer": "Ein Chicken Wrap liefert ca. 30g Protein. Ein Protein-Fitness-Wrap mit extra Hähnchen und Protein-Tortilla kann 36g erreichen." },
+    { "question": "Was hat weniger Kalorien: Wrap oder Döner?", "answer": "Ein Chicken Wrap (480 kcal) hat weniger als ein Döner (600 kcal). Das liegt am dünneren Fladenbrot und weniger Soße." }
+  ],
+  "related_foods": ["falafel", "chicken-nuggets", "burger", "gyros"]
+}

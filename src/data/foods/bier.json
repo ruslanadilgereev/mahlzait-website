@@ -1,0 +1,52 @@
+{
+  "slug": "bier",
+  "name": "Bier",
+  "emoji": "🍺",
+  "category": "getraenk",
+  "seo": {
+    "title": "Bier Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Bier? Nährwerte pro 100ml, Glas & Flasche. Pils, Weizen, Craft Beer & alkoholfrei im Vergleich.",
+    "keywords": ["bier kalorien", "kalorien bier", "bier nährwerte", "pils kalorien", "weizenbier kalorien", "bier 0.5l kalorien", "alkoholfreies bier kalorien", "bier kohlenhydrate"]
+  },
+  "overview": {
+    "calories_per_100g": 43,
+    "protein_per_100g": 0.5,
+    "carbs_per_100g": 3.6,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 500,
+    "typical_portion_name": "1 Halbe (0,5l)"
+  },
+  "variants": [
+    { "name": "Pils (0,5l)", "portion_g": 500, "calories": 215, "protein": 3, "carbs": 18, "fat": 0 },
+    { "name": "Pils (0,33l Flasche)", "portion_g": 330, "calories": 142, "protein": 2, "carbs": 12, "fat": 0 },
+    { "name": "Weizenbier (0,5l)", "portion_g": 500, "calories": 230, "protein": 3, "carbs": 20, "fat": 0 },
+    { "name": "Helles/Export (0,5l)", "portion_g": 500, "calories": 220, "protein": 3, "carbs": 17, "fat": 0 },
+    { "name": "Alkoholfreies Bier (0,5l)", "portion_g": 500, "calories": 130, "protein": 3, "carbs": 28, "fat": 0, "tip": "Wenigste Kalorien" },
+    { "name": "Radler (0,5l)", "portion_g": 500, "calories": 200, "protein": 2, "carbs": 28, "fat": 0 },
+    { "name": "Craft Beer/IPA (0,33l)", "portion_g": 330, "calories": 200, "protein": 2, "carbs": 14, "fat": 0 },
+    { "name": "Starkbier/Bock (0,5l)", "portion_g": 500, "calories": 310, "protein": 3, "carbs": 25, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Wein rot (0,2l)", "calories": 170, "emoji": "🍷" },
+    { "name": "Cola (0,5l)", "calories": 210, "emoji": "🥤" },
+    { "name": "Gin Tonic", "calories": 190, "emoji": "🍸" },
+    { "name": "Apfelsaft (0,5l)", "calories": 230, "emoji": "🍎" }
+  ],
+  "tips": [
+    { "title": "Alkoholfrei als Alternative", "text": "Alkoholfreies Bier hat 40% weniger Kalorien als normales Pils – ideal als isotonisches Sportgetränk.", "icon": "0️⃣" },
+    { "title": "Kleine Größe wählen", "text": "0,33l (142 kcal) statt 0,5l (215 kcal) – ein Drittel weniger Kalorien pro Bier.", "icon": "📏" },
+    { "title": "Bierbauch kommt nicht nur vom Bier", "text": "Die Kalorien im Bier sind moderat, aber Bier regt den Appetit an. Die Chips und das Döner danach sind das eigentliche Problem.", "icon": "🍕" },
+    { "title": "Zwischen den Bieren Wasser trinken", "text": "Ein Glas Wasser zwischen jedem Bier halbiert die Kalorienmenge und beugt dem Kater vor.", "icon": "💧" },
+    { "title": "Craft Beer im Blick behalten", "text": "IPAs und Craft Beers haben oft 7-9% Alkohol statt 4,8% – das bedeutet 50-60% mehr Kalorien pro Glas.", "icon": "🍻" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Bier?", "answer": "Ein Pils (0,5l) hat ca. 215 kcal, ein Weizenbier 230 kcal, alkoholfreies Bier nur 130 kcal. Eine 0,33l-Flasche hat ca. 142 kcal." },
+    { "question": "Macht Bier dick?", "answer": "Bier hat moderate Kalorien (43 kcal/100ml), aber Alkohol hemmt die Fettverbrennung und steigert den Appetit. 3 Bier am Abend sind 645 kcal – plus Snacks oft 1000+ kcal." },
+    { "question": "Welches Bier hat die wenigsten Kalorien?", "answer": "Alkoholfreies Bier mit ca. 26 kcal/100ml. Bei normalem Bier: leichtes Pils (42 kcal/100ml). Starkbier hat mit 62 kcal/100ml die meisten." },
+    { "question": "Wie viele Kohlenhydrate hat Bier?", "answer": "Ein Pils (0,5l) hat ca. 18g Kohlenhydrate. Weizenbier etwas mehr (20g). Die Hauptkalorien kommen aber vom Alkohol, nicht von den Kohlenhydraten." },
+    { "question": "Wie viele Kalorien hat alkoholfreies Bier?", "answer": "Alkoholfreies Bier hat ca. 26 kcal/100ml bzw. 130 kcal pro 0,5l. Das sind 40% weniger als normales Bier. Die Kalorien kommen hauptsächlich aus Malzzucker." },
+    { "question": "Warum hat Bier Kalorien, obwohl kein Fett drin ist?", "answer": "Die Kalorien stammen zu 60-70% aus dem Alkohol (7 kcal/g) und zu 30-40% aus Kohlenhydraten/Malzzucker. Alkohol hat fast so viele Kalorien wie Fett." }
+  ],
+  "related_foods": ["wein-rot", "cola", "radler", "weizenbier"]
+}

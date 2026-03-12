@@ -1,0 +1,52 @@
+{
+  "slug": "kaese-gouda",
+  "name": "Gouda Käse",
+  "emoji": "🧀",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Gouda Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Gouda? Nährwerte pro 100g & Scheibe. Jung, mittelalt & alt im Vergleich + Diät-Tipps für Käse-Liebhaber.",
+    "keywords": ["gouda kalorien", "kalorien gouda", "gouda nährwerte", "gouda kalorien pro scheibe", "gouda protein", "gouda fettgehalt", "käse kalorien", "gouda jung kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 356,
+    "protein_per_100g": 25,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 28,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    { "name": "Gouda jung (1 Scheibe)", "portion_g": 30, "calories": 107, "protein": 7, "carbs": 0, "fat": 8 },
+    { "name": "Gouda mittelalt (1 Scheibe)", "portion_g": 30, "calories": 110, "protein": 8, "carbs": 0, "fat": 9 },
+    { "name": "Gouda alt (1 Scheibe)", "portion_g": 25, "calories": 100, "protein": 8, "carbs": 0, "fat": 8 },
+    { "name": "Gouda light (30% weniger Fett)", "portion_g": 30, "calories": 78, "protein": 9, "carbs": 0, "fat": 5, "tip": "Kalorienärmste" },
+    { "name": "Gouda auf Brot (2 Scheiben)", "portion_g": 60, "calories": 214, "protein": 15, "carbs": 0, "fat": 17 },
+    { "name": "Gouda gerieben (Überbacken, 50g)", "portion_g": 50, "calories": 178, "protein": 12, "carbs": 0, "fat": 14 },
+    { "name": "Gouda Würfel (Snack, 5 Stück)", "portion_g": 50, "calories": 178, "protein": 12, "carbs": 0, "fat": 14 },
+    { "name": "Baby-Gouda", "portion_g": 20, "calories": 71, "protein": 5, "carbs": 0, "fat": 6, "tip": "Portioniert" }
+  ],
+  "comparison": [
+    { "name": "Emmentaler (1 Scheibe)", "calories": 115, "emoji": "🧀" },
+    { "name": "Mozzarella (Scheibe)", "calories": 80, "emoji": "🧀" },
+    { "name": "Frischkäse (30g)", "calories": 75, "emoji": "🧀" },
+    { "name": "Camembert (30g)", "calories": 87, "emoji": "🧀" }
+  ],
+  "tips": [
+    { "title": "Dünn geschnitten reicht", "text": "Eine dünne Scheibe (20g) statt einer dicken (40g) spart 120 kcal pro Brot – bei fast gleichem Geschmack.", "icon": "✂️" },
+    { "title": "Light-Gouda nutzen", "text": "Gouda light hat 30% weniger Fett und 27% weniger Kalorien – schmeckt jung trotzdem cremig.", "icon": "💡" },
+    { "title": "Alter Gouda hat mehr Geschmack", "text": "Alter Gouda ist würziger – man braucht weniger für den gleichen Geschmack. Eine dünnere Scheibe spart Kalorien.", "icon": "🧓" },
+    { "title": "Calcium-Champion", "text": "100g Gouda liefern 820mg Calcium – fast der gesamte Tagesbedarf. 2 Scheiben (60g) decken 50%.", "icon": "🦴" },
+    { "title": "Beim Überbacken portionieren", "text": "50g geriebener Käse zum Überbacken haben 178 kcal. Manche Rezepte verwenden 100-150g – das sind 356-534 kcal nur Käse.", "icon": "📏" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Scheibe Gouda?", "answer": "Eine Scheibe Gouda (30g) hat ca. 107 kcal. Gouda light hat ca. 78 kcal pro Scheibe. Zwei Scheiben auf dem Brot: 214 kcal." },
+    { "question": "Wie viel Fett hat Gouda?", "answer": "Gouda hat ca. 28g Fett pro 100g (45% Fett i.Tr.). Light-Varianten haben ca. 17g Fett/100g. Der Fettgehalt macht Gouda so kalorienreich." },
+    { "question": "Ist Gouda gut zum Abnehmen?", "answer": "In Maßen ja. 1-2 Scheiben (107-214 kcal) sind akzeptabel. Gouda liefert hochwertiges Protein und Calcium. Wähle Light-Varianten für weniger Kalorien." },
+    { "question": "Wie viel Protein hat Gouda?", "answer": "Gouda hat 25g Protein pro 100g – eine gute Proteinquelle. Eine Scheibe (30g) liefert 7g Protein." },
+    { "question": "Welcher Käse hat die wenigsten Kalorien?", "answer": "Unter den Schnittkäsen: Gouda light (260 kcal/100g). Allgemein: Hüttenkäse (98 kcal), Mozzarella light (160 kcal) und Harzer Käse (130 kcal/100g)." },
+    { "question": "Ist junger oder alter Gouda kalorienärmer?", "answer": "Fast identisch. Alter Gouda hat durch den Wasserverlust minimal mehr Kalorien pro 100g. Der Unterschied ist aber vernachlässigbar." }
+  ],
+  "related_foods": ["mozzarella", "frischkaese", "brot", "ei"]
+}

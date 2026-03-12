@@ -1,0 +1,52 @@
+{
+  "slug": "chips",
+  "name": "Chips",
+  "emoji": "🥔",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Chips Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Chips? Nährwerte pro 100g & Handvoll. Kartoffelchips, Stapelchips & Light im Vergleich + Snack-Tipps.",
+    "keywords": ["chips kalorien", "kalorien chips", "chips nährwerte", "kartoffelchips kalorien", "chips kalorien pro 100g", "pringles kalorien", "chips fett", "chips kalorien handvoll"]
+  },
+  "overview": {
+    "calories_per_100g": 536,
+    "protein_per_100g": 6,
+    "carbs_per_100g": 50,
+    "fat_per_100g": 35,
+    "fiber_per_100g": 4,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Handvoll"
+  },
+  "variants": [
+    { "name": "1 Handvoll (30g)", "portion_g": 30, "calories": 161, "protein": 2, "carbs": 15, "fat": 10 },
+    { "name": "½ Tüte (87,5g)", "portion_g": 88, "calories": 470, "protein": 5, "carbs": 44, "fat": 31 },
+    { "name": "Ganze Tüte (175g)", "portion_g": 175, "calories": 938, "protein": 11, "carbs": 88, "fat": 61 },
+    { "name": "Pringles (30g, ~15 Chips)", "portion_g": 30, "calories": 156, "protein": 1, "carbs": 16, "fat": 10 },
+    { "name": "Light/fettreduziert (30g)", "portion_g": 30, "calories": 130, "protein": 2, "carbs": 18, "fat": 5, "tip": "25% weniger Fett" },
+    { "name": "Gemüsechips (30g)", "portion_g": 30, "calories": 148, "protein": 1, "carbs": 16, "fat": 9 },
+    { "name": "Tortilla Chips (30g)", "portion_g": 30, "calories": 140, "protein": 2, "carbs": 19, "fat": 7 },
+    { "name": "Linsen-Chips (30g)", "portion_g": 30, "calories": 135, "protein": 4, "carbs": 17, "fat": 5, "tip": "Mehr Protein, weniger Fett" }
+  ],
+  "comparison": [
+    { "name": "Salzstangen (30g)", "calories": 105, "emoji": "🥨" },
+    { "name": "Popcorn (30g)", "calories": 110, "emoji": "🍿" },
+    { "name": "Nüsse gemischt (30g)", "calories": 180, "emoji": "🥜" },
+    { "name": "Reiswaffeln (30g)", "calories": 115, "emoji": "🍘" }
+  ],
+  "tips": [
+    { "title": "Portionieren statt aus der Tüte", "text": "In eine Schale abfüllen. Wer aus der Tüte isst, isst im Schnitt die ganze Tüte (938 kcal!). Eine Handvoll hat nur 161 kcal.", "icon": "🥣" },
+    { "title": "Linsen-Chips als Alternative", "text": "Linsen-Chips haben 30% weniger Fett und doppelt so viel Protein wie normale Kartoffelchips – bei ähnlichem Geschmack.", "icon": "🌱" },
+    { "title": "Gemüsechips sind NICHT gesünder", "text": "Gemüsechips haben fast identische Kalorien (493 kcal/100g) wie Kartoffelchips. Sie werden genauso frittiert.", "icon": "⚠️" },
+    { "title": "Popcorn als Alternative", "text": "Selbstgemachtes Popcorn (Luft-gepoppt) hat nur 370 kcal/100g und deutlich mehr Ballaststoffe. Größeres Volumen = mehr Sättigung.", "icon": "🍿" },
+    { "title": "Nicht zum Fernsehen", "text": "Ablenkung beim Essen führt zu 30-50% mehr Konsum. Wenn Chips, dann bewusst essen – nicht nebenbei.", "icon": "📺" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien haben Chips?", "answer": "Kartoffelchips haben ca. 536 kcal pro 100g. Eine Handvoll (30g) hat 161 kcal, eine ganze Tüte (175g) hat 938 kcal – fast die Hälfte des Tagesbedarfs." },
+    { "question": "Wie viele Kalorien hat eine Handvoll Chips?", "answer": "Eine Handvoll Chips (ca. 30g) hat ca. 161 kcal. Das sind ca. 10-15 einzelne Chips – weniger als man denkt." },
+    { "question": "Sind Gemüsechips gesünder als Kartoffelchips?", "answer": "Kaum! Gemüsechips haben 490-500 kcal/100g – fast identisch mit Kartoffelchips. Sie werden genauso frittiert und haben ähnlich viel Fett." },
+    { "question": "Wie viel Fett haben Chips?", "answer": "Kartoffelchips haben ca. 35g Fett pro 100g. Das ist mehr als ein Drittel des Gewichts. Light-Chips haben ca. 17-20g Fett." },
+    { "question": "Welche Chips haben die wenigsten Kalorien?", "answer": "Linsen-Chips (450 kcal/100g) und Tortilla Chips (470 kcal/100g) haben etwas weniger. Noch besser: Salzstangen (350 kcal/100g) oder Popcorn (370 kcal/100g)." },
+    { "question": "Wie viele Kalorien hat eine ganze Tüte Chips?", "answer": "Eine Standard-Tüte (175g) hat ca. 938 kcal. Eine Party-Tüte (300g) hat 1.608 kcal. Das zeigt, warum Portionieren so wichtig ist." }
+  ],
+  "related_foods": ["salzstangen", "popcorn", "nussriegel", "schokolade-vollmilch"]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "donut",
+  "name": "Donut",
+  "emoji": "🍩",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Donut Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Donut? Nährwerte pro Stück & 100g. Glasiert, gefüllt & Mini-Donuts im Vergleich + Tipps für Naschkatzen.",
+    "keywords": ["donut kalorien", "kalorien donut", "donut nährwerte", "donut kalorien pro stück", "berliner donut kalorien", "dunkin donuts kalorien", "donut zucker", "mini donut kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 420,
+    "protein_per_100g": 5.5,
+    "carbs_per_100g": 48,
+    "fat_per_100g": 23,
+    "fiber_per_100g": 1.2,
+    "typical_portion_g": 70,
+    "typical_portion_name": "1 Donut"
+  },
+  "variants": [
+    { "name": "Donut glasiert (klassisch)", "portion_g": 70, "calories": 280, "protein": 4, "carbs": 32, "fat": 15 },
+    { "name": "Donut mit Schokolade", "portion_g": 75, "calories": 320, "protein": 4, "carbs": 38, "fat": 17 },
+    { "name": "Donut gefüllt (Marmelade)", "portion_g": 85, "calories": 340, "protein": 4, "carbs": 42, "fat": 16 },
+    { "name": "Donut gefüllt (Pudding/Creme)", "portion_g": 90, "calories": 380, "protein": 5, "carbs": 42, "fat": 20 },
+    { "name": "Mini-Donut", "portion_g": 25, "calories": 105, "protein": 1, "carbs": 12, "fat": 6, "tip": "Kleiner Genuss" },
+    { "name": "Berliner (Pfannkuchen)", "portion_g": 90, "calories": 310, "protein": 5, "carbs": 40, "fat": 14 },
+    { "name": "Churros (3 Stück)", "portion_g": 100, "calories": 360, "protein": 4, "carbs": 42, "fat": 20 },
+    { "name": "Protein-Donut (selbstgemacht)", "portion_g": 70, "calories": 180, "protein": 12, "carbs": 20, "fat": 6, "tip": "Fitness-Variante" }
+  ],
+  "comparison": [
+    { "name": "Croissant", "calories": 264, "emoji": "🥐" },
+    { "name": "Muffin", "calories": 340, "emoji": "🧁" },
+    { "name": "Schokoriegel", "calories": 245, "emoji": "🍫" },
+    { "name": "Zimtschnecke", "calories": 420, "emoji": "🍥" }
+  ],
+  "tips": [
+    { "title": "Einen reicht", "text": "Ein glasierter Donut (280 kcal) ist ein moderater Snack. Zwei oder drei verwandeln ihn in eine ganze Mahlzeit an Kalorien.", "icon": "☝️" },
+    { "title": "Mini-Donuts wählen", "text": "Mini-Donuts haben nur 105 kcal – du bekommst den Genuss bei einem Drittel der Kalorien.", "icon": "✂️" },
+    { "title": "Gefüllte Donuts vermeiden", "text": "Creme- oder Pudding-gefüllte Donuts haben 380 kcal – 100 kcal mehr als glasierte. Die Füllung macht den Unterschied.", "icon": "⚠️" },
+    { "title": "Protein-Donuts backen", "text": "Mit Proteinpulver, Haferflocken und Joghurt: nur 180 kcal, 12g Protein – und schmeckt trotzdem süß.", "icon": "💪" },
+    { "title": "Bewusst genießen", "text": "Donut nicht nebenbei essen. Setz dich hin, genieße jeden Bissen. Man isst weniger, wenn man achtsam isst.", "icon": "🧘" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Donut?", "answer": "Ein glasierter Donut hat ca. 280 kcal. Mit Schokoglasur ca. 320 kcal. Gefüllte Donuts (Creme/Pudding) haben bis zu 380 kcal." },
+    { "question": "Wie viel Zucker hat ein Donut?", "answer": "Ein glasierter Donut enthält ca. 15-20g Zucker. Gefüllte Varianten können bis zu 25g Zucker haben – das ist fast der gesamte WHO-Tageswert." },
+    { "question": "Wie viel Fett hat ein Donut?", "answer": "Ein Donut hat ca. 15-20g Fett. Das Frittieren in Öl macht den Großteil aus. Das entspricht 20-25% des täglichen Fettbedarfs." },
+    { "question": "Ist ein Donut oder ein Muffin kalorienreicher?", "answer": "Ein Muffin (340 kcal) hat etwas mehr Kalorien als ein glasierter Donut (280 kcal). Gefüllte Donuts (380 kcal) übertrumpfen aber die meisten Muffins." },
+    { "question": "Kann man Donuts in einer Diät essen?", "answer": "Ja, gelegentlich. Ein glasierter Donut (280 kcal) passt als bewusster Genuss in die Kalorienbilanz. Wichtig: Nicht zur Gewohnheit werden lassen und den Rest des Tages leichter essen." },
+    { "question": "Wie viele Kalorien hat ein Berliner?", "answer": "Ein Berliner (Pfannkuchen) hat ca. 310 kcal (90g). Er ist etwas leichter als ein gefüllter Donut, weil er weniger Fett aufnimmt." }
+  ],
+  "related_foods": ["croissant", "berliner", "muffin", "zimtschnecke"]
+}

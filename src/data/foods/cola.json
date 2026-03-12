@@ -1,0 +1,52 @@
+{
+  "slug": "cola",
+  "name": "Cola",
+  "emoji": "🥤",
+  "category": "getraenk",
+  "seo": {
+    "title": "Cola Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Cola? Nährwerte pro 100ml & Glas. Coca-Cola, Pepsi, Zero & Light im Vergleich + Zuckergehalt & Tipps.",
+    "keywords": ["cola kalorien", "kalorien cola", "coca cola kalorien", "cola zero kalorien", "cola nährwerte", "cola zucker", "cola kalorien pro glas", "pepsi kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 42,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 10.6,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 330,
+    "typical_portion_name": "1 Dose (330ml)"
+  },
+  "variants": [
+    { "name": "Coca-Cola (Dose 330ml)", "portion_g": 330, "calories": 139, "protein": 0, "carbs": 35, "fat": 0 },
+    { "name": "Cola Zero / Light (Dose)", "portion_g": 330, "calories": 1, "protein": 0, "carbs": 0, "fat": 0, "tip": "Kalorienfrei" },
+    { "name": "Cola (Glas 200ml)", "portion_g": 200, "calories": 84, "protein": 0, "carbs": 21, "fat": 0 },
+    { "name": "Cola (Flasche 500ml)", "portion_g": 500, "calories": 210, "protein": 0, "carbs": 53, "fat": 0 },
+    { "name": "Cola (1 Liter)", "portion_g": 1000, "calories": 420, "protein": 0, "carbs": 106, "fat": 0 },
+    { "name": "Pepsi (Dose 330ml)", "portion_g": 330, "calories": 140, "protein": 0, "carbs": 36, "fat": 0 },
+    { "name": "Fritz-Kola (Dose 330ml)", "portion_g": 330, "calories": 145, "protein": 0, "carbs": 36, "fat": 0 },
+    { "name": "Cola mit Rum (Longdrink)", "portion_g": 350, "calories": 235, "protein": 0, "carbs": 28, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Fanta (330ml)", "calories": 145, "emoji": "🍊" },
+    { "name": "Apfelsaft (330ml)", "calories": 152, "emoji": "🍎" },
+    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" },
+    { "name": "Energy Drink (330ml)", "calories": 160, "emoji": "⚡" }
+  ],
+  "tips": [
+    { "title": "Cola Zero trinken", "text": "Cola Zero hat 0-1 kcal pro Dose statt 139 kcal. Bei einem Glas pro Tag sparst du 50.000+ kcal im Jahr – das sind 7kg Körperfett.", "icon": "0️⃣" },
+    { "title": "Zucker-Schock beachten", "text": "Eine Dose Cola enthält 35g Zucker – das sind 9 Zuckerwürfel! Das entspricht fast der WHO-Empfehlung von 25g pro Tag.", "icon": "🍬" },
+    { "title": "Nicht zum Essen trinken", "text": "Cola zum Essen fügt leere Kalorien hinzu ohne zu sättigen. Wasser oder Sprudel zum Essen – Cola bewusst als Genuss.", "icon": "🚫" },
+    { "title": "Verdünnen mit Sprudel", "text": "Half-and-half: Cola mit Mineralwasser mischen spart 50% der Kalorien und reduziert die Süße.", "icon": "💧" },
+    { "title": "Kleine Portion wählen", "text": "200ml (84 kcal) statt 500ml (210 kcal). Die kleine Menge stillt das Verlangen genauso gut.", "icon": "📏" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Dose Cola?", "answer": "Eine Dose Coca-Cola (330ml) hat 139 kcal. Cola Zero/Light hat 0-1 kcal. Eine 500ml-Flasche hat 210 kcal." },
+    { "question": "Wie viel Zucker hat Cola?", "answer": "Coca-Cola hat 10,6g Zucker pro 100ml. Eine Dose (330ml) enthält 35g Zucker – das sind 9 Zuckerwürfel." },
+    { "question": "Hat Cola Zero wirklich 0 Kalorien?", "answer": "Fast. Cola Zero hat offiziell 0,5 kcal pro 100ml, also maximal 1-2 kcal pro Dose. Effektiv kalorienfrei durch Süßstoffe statt Zucker." },
+    { "question": "Ist Cola Zero ungesund?", "answer": "Die Süßstoffe (Aspartam, Acesulfam-K) sind in den verwendeten Mengen laut EFSA sicher. Für Gewichtskontrolle ist Cola Zero deutlich besser als normale Cola." },
+    { "question": "Was hat mehr Kalorien: Cola oder Apfelsaft?", "answer": "Überraschung: Apfelsaft hat mit 46 kcal/100ml sogar mehr Kalorien als Cola (42 kcal/100ml). Saft enthält zwar Vitamine, aber auch viel Fruchtzucker." },
+    { "question": "Macht Cola dick?", "answer": "Cola liefert leere Kalorien ohne Sättigung. Eine Dose pro Tag (139 kcal) kann über ein Jahr zu 7kg Gewichtszunahme führen, wenn die Kalorien nicht kompensiert werden." }
+  ],
+  "related_foods": ["fanta", "energy-drink", "apfelsaft", "bier"]
+}
