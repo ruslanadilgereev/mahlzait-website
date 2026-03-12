@@ -1,0 +1,52 @@
+{
+  "slug": "gulasch",
+  "name": "Gulasch",
+  "emoji": "🍲",
+  "category": "gericht",
+  "seo": {
+    "title": "Gulasch Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Gulasch? Nährwerte pro 100g & Portion. Rindergulasch, Schweinegulasch & Gulaschsuppe im Vergleich.",
+    "keywords": ["gulasch kalorien", "kalorien gulasch", "gulasch nährwerte", "rindergulasch kalorien", "schweinegulasch kalorien", "gulaschsuppe kalorien", "gulasch kalorien pro portion", "gulasch mit nudeln kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 125,
+    "protein_per_100g": 14,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 6,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Teller"
+  },
+  "variants": [
+    { "name": "Rindergulasch", "portion_g": 300, "calories": 375, "protein": 42, "carbs": 15, "fat": 18 },
+    { "name": "Schweinegulasch", "portion_g": 300, "calories": 420, "protein": 38, "carbs": 15, "fat": 24 },
+    { "name": "Gulasch mit Nudeln", "portion_g": 450, "calories": 580, "protein": 44, "carbs": 52, "fat": 20 },
+    { "name": "Gulasch mit Spätzle", "portion_g": 450, "calories": 620, "protein": 44, "carbs": 56, "fat": 22 },
+    { "name": "Gulasch mit Reis", "portion_g": 450, "calories": 560, "protein": 44, "carbs": 58, "fat": 18 },
+    { "name": "Gulaschsuppe", "portion_g": 400, "calories": 320, "protein": 28, "carbs": 16, "fat": 14, "tip": "Kalorienärmste" },
+    { "name": "Szegediner Gulasch (Sauerkraut)", "portion_g": 350, "calories": 450, "protein": 36, "carbs": 12, "fat": 28 },
+    { "name": "Putengulasch", "portion_g": 300, "calories": 320, "protein": 40, "carbs": 14, "fat": 12, "tip": "Fettärmste" }
+  ],
+  "comparison": [
+    { "name": "Schnitzel paniert", "calories": 500, "emoji": "🥩" },
+    { "name": "Rouladen", "calories": 420, "emoji": "🥩" },
+    { "name": "Sauerbraten", "calories": 380, "emoji": "🥩" },
+    { "name": "Chili con Carne", "calories": 390, "emoji": "🌶️" }
+  ],
+  "tips": [
+    { "title": "Mageres Rindfleisch wählen", "text": "Rindergulasch aus der Schulter hat weniger Fett als Schweinegulasch. Das spart ca. 45 kcal pro Portion.", "icon": "🥩" },
+    { "title": "Soße nicht eindicken", "text": "Mehlschwitze oder Stärke zum Eindicken fügt leere Kalorien hinzu. Lange Garzeit reduziert die Soße natürlich.", "icon": "⏰" },
+    { "title": "Putengulasch als Alternative", "text": "Putengulasch hat nur 107 kcal/100g – fast 15% weniger als Rind und deutlich weniger Fett.", "icon": "🍗" },
+    { "title": "Gemüse mitkochen", "text": "Paprika, Kartoffeln und Zwiebeln im Gulasch machen satt und strecken die Portion ohne viele Extra-Kalorien.", "icon": "🫑" },
+    { "title": "Am nächsten Tag besser", "text": "Gulasch schmeckt aufgewärmt besser und das Fett kann man nach dem Kühlen von der Oberfläche abschöpfen.", "icon": "❄️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Teller Gulasch?", "answer": "Ein Teller Gulasch (300g, ohne Beilage) hat ca. 375 kcal (Rind) bzw. 420 kcal (Schwein). Mit Nudeln oder Spätzle sind es 580-620 kcal." },
+    { "question": "Wie viele Kalorien hat Gulasch pro 100g?", "answer": "Gulasch hat ca. 125 kcal pro 100g (Durchschnitt). Rindergulasch hat ca. 125 kcal, Schweinegulasch ca. 140 kcal und Putengulasch ca. 107 kcal pro 100g." },
+    { "question": "Ist Gulasch gut zum Abnehmen?", "answer": "Ja! Gulasch ohne Beilage ist mit 125 kcal/100g und 14g Protein moderat kalorienarm und sehr sättigend. Wähle Putengulasch für noch weniger Fett." },
+    { "question": "Wie viel Protein hat Gulasch?", "answer": "Gulasch ist sehr proteinreich: 14g/100g bzw. 42g pro Portion Rindergulasch. Das deckt über 50% des täglichen Proteinbedarfs." },
+    { "question": "Wie viele Kalorien hat Gulaschsuppe?", "answer": "Gulaschsuppe hat ca. 80 kcal/100g. Eine Portion (400ml) hat ca. 320 kcal – deutlich weniger als Gulasch mit Beilage." },
+    { "question": "Was hat weniger Kalorien: Gulasch oder Schnitzel?", "answer": "Gulasch! 300g Rindergulasch hat 375 kcal, ein paniertes Schnitzel (200g) hat 500 kcal. Gulasch hat zudem mehr Protein und weniger Kohlenhydrate." }
+  ],
+  "related_foods": ["schnitzel", "rouladen", "spaetzle", "nudeln"]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "lasagne",
+  "name": "Lasagne",
+  "emoji": "🧀",
+  "category": "gericht",
+  "seo": {
+    "title": "Lasagne Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Lasagne? Nährwerte pro Portion & 100g. Klassisch, vegetarisch & Light im Vergleich + kalorienarme Tipps.",
+    "keywords": ["lasagne kalorien", "kalorien lasagne", "lasagne nährwerte", "lasagne kalorien pro portion", "lasagne kalorien pro stück", "vegetarische lasagne kalorien", "lasagne bolognese kalorien", "tiefkühl lasagne kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 145,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 13,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 400,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    { "name": "Lasagne Bolognese (klassisch)", "portion_g": 400, "calories": 580, "protein": 32, "carbs": 52, "fat": 28 },
+    { "name": "Lasagne aus dem Restaurant", "portion_g": 450, "calories": 700, "protein": 35, "carbs": 55, "fat": 36 },
+    { "name": "TK-Lasagne (Iglo/Dr. Oetker)", "portion_g": 375, "calories": 500, "protein": 24, "carbs": 48, "fat": 22 },
+    { "name": "Gemüse-Lasagne", "portion_g": 400, "calories": 440, "protein": 20, "carbs": 50, "fat": 18, "tip": "Kalorienärmste" },
+    { "name": "Spinat-Lasagne", "portion_g": 400, "calories": 460, "protein": 24, "carbs": 48, "fat": 18 },
+    { "name": "Lachs-Lasagne", "portion_g": 400, "calories": 560, "protein": 30, "carbs": 48, "fat": 26 },
+    { "name": "Lasagne ohne Béchamel", "portion_g": 380, "calories": 480, "protein": 30, "carbs": 50, "fat": 18, "tip": "Weniger Fett" },
+    { "name": "Vegane Lasagne", "portion_g": 400, "calories": 400, "protein": 18, "carbs": 52, "fat": 14, "tip": "Pflanzlich" }
+  ],
+  "comparison": [
+    { "name": "Spaghetti Bolognese", "calories": 520, "emoji": "🍝" },
+    { "name": "Pizza Margherita", "calories": 735, "emoji": "🍕" },
+    { "name": "Cannelloni", "calories": 560, "emoji": "🍝" },
+    { "name": "Moussaka", "calories": 480, "emoji": "🍆" }
+  ],
+  "tips": [
+    { "title": "Béchamel reduzieren", "text": "Die Béchamelsoße macht ca. 30% der Kalorien aus. Dünner auftragen oder durch fettarme Milch zubereiten spart 100+ kcal.", "icon": "🥛" },
+    { "title": "Gemüse-Schichten einbauen", "text": "Zucchini- oder Auberginen-Schichten statt jeder zweiten Nudelplatte – gleiche Optik, 25% weniger Kalorien.", "icon": "🥒" },
+    { "title": "Mageres Hackfleisch nehmen", "text": "Rinderhack (5% Fett) statt gemischtes Hack (20% Fett) spart pro Portion ca. 80 kcal.", "icon": "🥩" },
+    { "title": "Portionsgröße kontrollieren", "text": "Ein Restaurant-Stück Lasagne wiegt oft 450g+. Zuhause auf 350-400g reduzieren und mit Salat ergänzen.", "icon": "📏" },
+    { "title": "Käse sparsam einsetzen", "text": "Parmesan hat mehr Geschmack als Gouda – 20g Parmesan geben mehr Aroma als 50g Gouda bei weniger Kalorien.", "icon": "🧀" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Stück Lasagne?", "answer": "Ein Stück Lasagne (400g) hat ca. 580 kcal. Im Restaurant können es durch größere Portionen und mehr Käse bis zu 700 kcal sein." },
+    { "question": "Wie viele Kalorien hat Lasagne pro 100g?", "answer": "Lasagne Bolognese hat ca. 145 kcal pro 100g. Gemüse-Lasagne hat nur ca. 110 kcal/100g." },
+    { "question": "Ist Lasagne gut zum Abnehmen?", "answer": "Lasagne ist mit 580 kcal pro Portion eher gehaltvoll. Wähle Gemüse-Lasagne (440 kcal) oder reduziere Béchamel und Käse für eine kalorienärmere Version." },
+    { "question": "Wie viele Kalorien hat TK-Lasagne?", "answer": "TK-Lasagne hat je nach Marke 130-150 kcal/100g. Eine Packung (375g) hat ca. 500 kcal – oft weniger als selbstgemacht durch kontrolliertere Zutaten." },
+    { "question": "Was hat weniger Kalorien: Lasagne oder Pizza?", "answer": "Lasagne hat mit ca. 580 kcal pro Portion weniger als eine ganze Pizza Margherita (735 kcal). Pro 100g sind die Werte ähnlich." },
+    { "question": "Wie viel Protein hat Lasagne?", "answer": "Eine Portion Lasagne Bolognese hat ca. 32g Protein – hauptsächlich aus Hackfleisch und Käse. Das deckt etwa 40% des täglichen Proteinbedarfs." }
+  ],
+  "related_foods": ["spaghetti-bolognese", "pizza", "spaghetti-carbonara", "nudeln"]
+}

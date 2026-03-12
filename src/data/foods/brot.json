@@ -1,0 +1,52 @@
+{
+  "slug": "brot",
+  "name": "Brot",
+  "emoji": "🍞",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Brot Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Brot? Nährwerte pro Scheibe & 100g für Vollkorn, Toast, Roggenbrot & mehr. Interaktiver Rechner + Diät-Tipps.",
+    "keywords": ["brot kalorien", "kalorien brot", "brot nährwerte", "vollkornbrot kalorien", "toast kalorien", "roggenbrot kalorien", "brot kalorien pro scheibe", "wie viele kalorien hat brot"]
+  },
+  "overview": {
+    "calories_per_100g": 240,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 45,
+    "fat_per_100g": 2.5,
+    "fiber_per_100g": 4,
+    "typical_portion_g": 50,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    { "name": "Vollkornbrot", "portion_g": 50, "calories": 105, "protein": 5, "carbs": 18, "fat": 1, "tip": "Meiste Ballaststoffe" },
+    { "name": "Roggenmischbrot", "portion_g": 50, "calories": 110, "protein": 4, "carbs": 22, "fat": 1 },
+    { "name": "Weißbrot / Toastbrot", "portion_g": 35, "calories": 92, "protein": 3, "carbs": 17, "fat": 1 },
+    { "name": "Pumpernickel", "portion_g": 50, "calories": 100, "protein": 4, "carbs": 19, "fat": 1, "tip": "Sättigend" },
+    { "name": "Ciabatta", "portion_g": 60, "calories": 158, "protein": 5, "carbs": 31, "fat": 2 },
+    { "name": "Knäckebrot (1 Scheibe)", "portion_g": 12, "calories": 36, "protein": 1, "carbs": 7, "fat": 0, "tip": "Kalorienärmste" },
+    { "name": "Eiweißbrot", "portion_g": 50, "calories": 124, "protein": 12, "carbs": 5, "fat": 6, "tip": "Meistes Protein" },
+    { "name": "Baguette", "portion_g": 65, "calories": 158, "protein": 5, "carbs": 33, "fat": 1 }
+  ],
+  "comparison": [
+    { "name": "Reis (100g gekocht)", "calories": 130, "emoji": "🍚" },
+    { "name": "Haferflocken (50g)", "calories": 185, "emoji": "🥣" },
+    { "name": "Kartoffel (150g)", "calories": 105, "emoji": "🥔" },
+    { "name": "Brötchen (1 Stück)", "calories": 140, "emoji": "🥐" }
+  ],
+  "tips": [
+    { "title": "Vollkornbrot wählen", "text": "Vollkornbrot hat mehr Ballaststoffe und sättigt deutlich länger als Weißbrot – bei ähnlichen Kalorien.", "icon": "🌾" },
+    { "title": "Dünn aufschneiden", "text": "Eine dünne Scheibe (30g) statt einer dicken (60g) halbiert die Kalorien pro Scheibe.", "icon": "🔪" },
+    { "title": "Belag ist entscheidend", "text": "Butter (36 kcal/10g) + Käse (40 kcal/Scheibe) können die Kalorien verdoppeln. Magerquark ist leichter.", "icon": "🧈" },
+    { "title": "Eiweißbrot für Low Carb", "text": "Eiweißbrot hat nur 10g Kohlenhydrate pro 100g statt 45g – bei doppeltem Proteingehalt.", "icon": "💪" },
+    { "title": "Frisch statt Fertig", "text": "Frisches Bäckerbrot hat oft weniger Zusatzstoffe als abgepacktes Brot aus dem Supermarkt.", "icon": "🏪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Scheibe Brot?", "answer": "Eine Scheibe Brot hat je nach Sorte 92-124 kcal. Vollkornbrot: ca. 105 kcal/Scheibe (50g), Toast: ca. 92 kcal/Scheibe (35g), Eiweißbrot: ca. 124 kcal/Scheibe (50g)." },
+    { "question": "Welches Brot hat die wenigsten Kalorien?", "answer": "Pro 100g hat Pumpernickel (200 kcal) und Roggenvollkornbrot (193 kcal) die wenigsten Kalorien. Pro Scheibe ist Knäckebrot mit nur 36 kcal am kalorienärmsten." },
+    { "question": "Ist Brot ein Dickmacher?", "answer": "Brot allein macht nicht dick – die Menge und der Belag entscheiden. 2 Scheiben Vollkornbrot (210 kcal) mit magerem Aufschnitt sind eine moderate Mahlzeit." },
+    { "question": "Wie viele Kalorien hat Brot mit Butter und Käse?", "answer": "Eine Scheibe Brot mit Butter und einer Scheibe Käse hat ca. 200-230 kcal. Ohne Butter und mit magerem Aufschnitt nur ca. 130 kcal." },
+    { "question": "Macht Vollkornbrot schlank?", "answer": "Vollkornbrot hat nicht weniger Kalorien als Weißbrot, sättigt aber deutlich länger durch die Ballaststoffe. So isst du insgesamt weniger – das kann beim Abnehmen helfen." },
+    { "question": "Wie viele Scheiben Brot pro Tag sind okay?", "answer": "Die DGE empfiehlt 200-300g Brot pro Tag (4-6 Scheiben). Beim Abnehmen sind 2-4 Scheiben mit magerem Belag eine gute Richtlinie." }
+  ],
+  "related_foods": ["ei", "reis", "nudeln", "kartoffelsalat"]
+}

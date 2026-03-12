@@ -1,0 +1,52 @@
+{
+  "slug": "banane",
+  "name": "Banane",
+  "emoji": "🍌",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Banane Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Banane? Nährwerte pro 100g & Stück. Alle Größen, reif vs. unreif – interaktiver Rechner + Diät-Tipps.",
+    "keywords": ["banane kalorien", "kalorien banane", "banane nährwerte", "wie viele kalorien hat eine banane", "banane kalorien pro stück", "banane protein", "banane kohlenhydrate", "banane abnehmen"]
+  },
+  "overview": {
+    "calories_per_100g": 89,
+    "protein_per_100g": 1.1,
+    "carbs_per_100g": 22.8,
+    "fat_per_100g": 0.3,
+    "fiber_per_100g": 2.6,
+    "typical_portion_g": 120,
+    "typical_portion_name": "1 Banane (mittel)"
+  },
+  "variants": [
+    { "name": "Banane klein (90g)", "portion_g": 90, "calories": 80, "protein": 1, "carbs": 21, "fat": 0 },
+    { "name": "Banane mittel (120g)", "portion_g": 120, "calories": 107, "protein": 1, "carbs": 27, "fat": 0, "tip": "Standard" },
+    { "name": "Banane groß (150g)", "portion_g": 150, "calories": 134, "protein": 2, "carbs": 34, "fat": 0 },
+    { "name": "Banane überreif", "portion_g": 120, "calories": 115, "protein": 1, "carbs": 29, "fat": 0 },
+    { "name": "Getrocknete Banane (30g)", "portion_g": 30, "calories": 105, "protein": 1, "carbs": 25, "fat": 1 },
+    { "name": "Bananenchips (30g)", "portion_g": 30, "calories": 152, "protein": 1, "carbs": 17, "fat": 9 },
+    { "name": "Banane im Smoothie", "portion_g": 120, "calories": 107, "protein": 1, "carbs": 27, "fat": 0 },
+    { "name": "Kochbanane (gekocht, 150g)", "portion_g": 150, "calories": 180, "protein": 2, "carbs": 42, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Apfel", "calories": 72, "emoji": "🍎" },
+    { "name": "Orange", "calories": 62, "emoji": "🍊" },
+    { "name": "Müsliriegel", "calories": 140, "emoji": "🥣" },
+    { "name": "Schokoriegel", "calories": 250, "emoji": "🍫" }
+  ],
+  "tips": [
+    { "title": "Idealer Pre-Workout Snack", "text": "Eine Banane 30 Min vor dem Training liefert schnelle Energie aus Kohlenhydraten und Kalium gegen Krämpfe.", "icon": "🏋️" },
+    { "title": "Grüne Banane = weniger Zucker", "text": "Unreife grüne Bananen haben mehr resistente Stärke und weniger Zucker – besser für den Blutzucker.", "icon": "🟢" },
+    { "title": "Einfrieren für Nicecream", "text": "Gefrorene Bananen püriert ergeben eine gesunde Eiscreme-Alternative mit nur 107 kcal pro Banane.", "icon": "🍦" },
+    { "title": "Bananenchips vermeiden", "text": "Bananenchips sind frittiert und haben mit 500 kcal/100g fünfmal so viele Kalorien wie frische Bananen.", "icon": "⚠️" },
+    { "title": "Als Zuckerersatz backen", "text": "Eine zerdrückte Banane ersetzt 100g Zucker im Kuchen – spart ca. 280 kcal und liefert Nährstoffe.", "icon": "🧁" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Banane?", "answer": "Eine mittelgroße Banane (120g) hat ca. 107 kcal. Kleine Bananen (90g) haben 80 kcal, große (150g) ca. 134 kcal." },
+    { "question": "Sind Bananen gut zum Abnehmen?", "answer": "Ja, in Maßen. Mit 89 kcal/100g sind Bananen ein gesunder Snack. Die Ballaststoffe und resistente Stärke machen satt. 1-2 Bananen pro Tag passen in jede Diät." },
+    { "question": "Wie viele Kohlenhydrate hat eine Banane?", "answer": "Eine mittelgroße Banane hat ca. 27g Kohlenhydrate. Davon sind etwa 14g Zucker. Bei Low Carb sollte man Bananen daher sparsam essen." },
+    { "question": "Macht eine Banane am Abend dick?", "answer": "Nein. Eine Banane hat nur 107 kcal – der Zeitpunkt spielt keine Rolle für die Kalorienaufnahme. Entscheidend ist die Gesamtkalorienmenge des Tages." },
+    { "question": "Haben reife oder unreife Bananen mehr Kalorien?", "answer": "Fast gleich viele Kalorien. Reife Bananen haben etwas mehr freien Zucker (ca. 5-10 kcal mehr), dafür weniger resistente Stärke. Der Unterschied ist minimal." },
+    { "question": "Wie viel Kalium hat eine Banane?", "answer": "Eine mittelgroße Banane liefert ca. 420mg Kalium – etwa 12% des Tagesbedarfs. Kalium ist wichtig für Herzfunktion und Blutdruck." }
+  ],
+  "related_foods": ["apfel", "haferflocken", "joghurt", "erdbeeren"]
+}

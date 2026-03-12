@@ -1,0 +1,52 @@
+{
+  "slug": "nudeln",
+  "name": "Nudeln",
+  "emoji": "🍝",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Nudeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Nudeln? Nährwerte pro 100g gekocht für Spaghetti, Penne, Vollkorn & mehr. Interaktiver Rechner + Diät-Tipps.",
+    "keywords": ["nudeln kalorien", "kalorien nudeln gekocht", "nudeln nährwerte", "spaghetti kalorien", "vollkornnudeln kalorien", "nudeln kalorien pro portion", "pasta kalorien", "wie viele kalorien haben nudeln"]
+  },
+  "overview": {
+    "calories_per_100g": 157,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 31,
+    "fat_per_100g": 0.7,
+    "fiber_per_100g": 1.2,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    { "name": "Spaghetti (gekocht)", "portion_g": 200, "calories": 314, "protein": 10, "carbs": 62, "fat": 1 },
+    { "name": "Penne (gekocht)", "portion_g": 200, "calories": 310, "protein": 10, "carbs": 60, "fat": 1 },
+    { "name": "Vollkornnudeln (gekocht)", "portion_g": 200, "calories": 280, "protein": 12, "carbs": 52, "fat": 2, "tip": "Meiste Ballaststoffe" },
+    { "name": "Eiernudeln (gekocht)", "portion_g": 200, "calories": 330, "protein": 12, "carbs": 58, "fat": 4 },
+    { "name": "Linsennudeln (gekocht)", "portion_g": 200, "calories": 260, "protein": 18, "carbs": 40, "fat": 2, "tip": "Meistes Protein" },
+    { "name": "Glasnudeln (gekocht)", "portion_g": 200, "calories": 330, "protein": 0, "carbs": 82, "fat": 0 },
+    { "name": "Spaghetti mit Tomatensauce", "portion_g": 350, "calories": 420, "protein": 14, "carbs": 78, "fat": 6 },
+    { "name": "Spaghetti Carbonara", "portion_g": 350, "calories": 650, "protein": 24, "carbs": 68, "fat": 30 }
+  ],
+  "comparison": [
+    { "name": "Reis (gekocht)", "calories": 260, "emoji": "🍚" },
+    { "name": "Kartoffeln (gekocht)", "calories": 140, "emoji": "🥔" },
+    { "name": "Brot (3 Scheiben)", "calories": 315, "emoji": "🍞" },
+    { "name": "Couscous (gekocht)", "calories": 224, "emoji": "🫙" }
+  ],
+  "tips": [
+    { "title": "Vollkornnudeln wählen", "text": "Vollkornnudeln haben mehr Ballaststoffe und Protein bei weniger Kalorien – und sättigen deutlich länger.", "icon": "🌾" },
+    { "title": "Al dente kochen", "text": "Bissfest gekochte Nudeln haben einen niedrigeren glykämischen Index – der Blutzucker steigt langsamer.", "icon": "⏱️" },
+    { "title": "Sauce macht den Unterschied", "text": "Tomatensauce hat ca. 40 kcal/100g, Carbonara ca. 150 kcal/100g. Die Sauce bestimmt die Gesamtkalorien.", "icon": "🫙" },
+    { "title": "Linsennudeln für mehr Protein", "text": "Linsennudeln haben doppelt so viel Protein wie normale Nudeln – ideal für Sportler.", "icon": "💪" },
+    { "title": "Portion abwiegen", "text": "80g ungekochte Nudeln ergeben ca. 200g gekocht – das ist eine normale Portion.", "icon": "⚖️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien haben Nudeln pro Portion?", "answer": "Eine Portion gekochte Nudeln (200g) hat ca. 314 kcal. Ungekocht sind das ca. 80g mit etwa 280 kcal. Mit Sauce können es 420-650 kcal werden." },
+    { "question": "Haben Nudeln oder Reis mehr Kalorien?", "answer": "Gekocht haben Nudeln etwas mehr Kalorien: 157 kcal/100g vs. 130 kcal/100g bei Reis. Pro Portion ist der Unterschied aber gering (ca. 50 kcal)." },
+    { "question": "Wie viele Kalorien haben Vollkornnudeln?", "answer": "Vollkornnudeln gekocht haben ca. 140 kcal/100g – etwas weniger als normale Nudeln (157 kcal). Der Hauptvorteil sind mehr Ballaststoffe und Protein." },
+    { "question": "Sind Nudeln gut zum Abnehmen?", "answer": "Nudeln können in eine Diät passen, wenn du die Portion kontrollierst. Wähle Vollkorn, iss al dente und kombiniere mit leichter Sauce und viel Gemüse." },
+    { "question": "Wie viele Kalorien haben Spaghetti Carbonara?", "answer": "Eine Portion Spaghetti Carbonara (350g) hat ca. 650 kcal. Der hohe Kaloriengehalt kommt vom Speck, Käse und den Eiern in der Sauce." },
+    { "question": "Haben Eiernudeln mehr Kalorien als normale Nudeln?", "answer": "Ja, Eiernudeln haben ca. 165 kcal/100g gekocht vs. 157 kcal/100g bei normalen Nudeln. Der Unterschied kommt vom höheren Fettgehalt durch die Eier." }
+  ],
+  "related_foods": ["reis", "kartoffelsalat", "pizza", "brot"]
+}

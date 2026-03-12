@@ -1,0 +1,52 @@
+{
+  "slug": "joghurt",
+  "name": "Joghurt",
+  "emoji": "🥛",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Joghurt Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Joghurt? Nährwerte pro 100g & Becher. Naturjoghurt, Fruchtjoghurt, Skyr & griechisch im Vergleich.",
+    "keywords": ["joghurt kalorien", "kalorien joghurt", "naturjoghurt kalorien", "griechischer joghurt kalorien", "fruchtjoghurt kalorien", "joghurt nährwerte", "joghurt protein", "fettarmer joghurt kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 61,
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 4.7,
+    "fat_per_100g": 3.5,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Becher"
+  },
+  "variants": [
+    { "name": "Naturjoghurt (3,5% Fett)", "portion_g": 150, "calories": 92, "protein": 5, "carbs": 7, "fat": 5 },
+    { "name": "Naturjoghurt (1,5% Fett)", "portion_g": 150, "calories": 68, "protein": 6, "carbs": 7, "fat": 2, "tip": "Kalorienärmste" },
+    { "name": "Magerjoghurt (0,1% Fett)", "portion_g": 150, "calories": 53, "protein": 6, "carbs": 6, "fat": 0 },
+    { "name": "Griechischer Joghurt (10%)", "portion_g": 150, "calories": 195, "protein": 8, "carbs": 6, "fat": 15 },
+    { "name": "Skyr", "portion_g": 150, "calories": 98, "protein": 17, "carbs": 6, "fat": 0, "tip": "Meistes Protein" },
+    { "name": "Fruchtjoghurt", "portion_g": 150, "calories": 135, "protein": 4, "carbs": 20, "fat": 4 },
+    { "name": "Sahnejoghurt", "portion_g": 150, "calories": 165, "protein": 4, "carbs": 8, "fat": 12 },
+    { "name": "Joghurt mit Müsli & Obst", "portion_g": 250, "calories": 310, "protein": 12, "carbs": 42, "fat": 10 }
+  ],
+  "comparison": [
+    { "name": "Quark (20% Fett)", "calories": 113, "emoji": "🥛" },
+    { "name": "Skyr", "calories": 98, "emoji": "🥛" },
+    { "name": "Pudding", "calories": 180, "emoji": "🍮" },
+    { "name": "Milchreis", "calories": 195, "emoji": "🍚" }
+  ],
+  "tips": [
+    { "title": "Naturjoghurt statt Fruchtjoghurt", "text": "Fruchtjoghurt hat doppelt so viele Kalorien durch zugesetzten Zucker. Lieber Naturjoghurt mit frischem Obst mixen.", "icon": "🍓" },
+    { "title": "Skyr für maximales Protein", "text": "Skyr liefert 11g Protein pro 100g bei nur 65 kcal – das beste Protein-Kalorien-Verhältnis aller Milchprodukte.", "icon": "💪" },
+    { "title": "Als Sahne-Ersatz kochen", "text": "Griechischer Joghurt ersetzt Sahne in Saucen und spart dabei über 50% Kalorien.", "icon": "🍳" },
+    { "title": "Zutatenliste checken", "text": "Viele Joghurts enthalten 15-20g Zucker pro Becher. Wähle Produkte mit unter 5g Zucker pro 100g.", "icon": "🔍" },
+    { "title": "Probiotische Kulturen", "text": "Joghurt mit lebenden Kulturen fördert die Darmgesundheit. Achte auf den Hinweis 'enthält lebende Joghurtkulturen'.", "icon": "🦠" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Becher Joghurt?", "answer": "Ein Becher (150g) Naturjoghurt hat ca. 92 kcal (3,5% Fett) bzw. 68 kcal (1,5% Fett). Fruchtjoghurt hat ca. 135 kcal durch den Zuckerzusatz." },
+    { "question": "Welcher Joghurt hat am wenigsten Kalorien?", "answer": "Magerjoghurt (0,1% Fett) hat mit 35 kcal/100g die wenigsten Kalorien. Geschmacklich besser ist fettarmer Joghurt (1,5%) mit nur 45 kcal/100g." },
+    { "question": "Ist griechischer Joghurt gesund?", "answer": "Ja, aber kalorienreich: 130 kcal/100g durch 10% Fett. Dafür hat er mehr Protein (5g/100g) und ist sehr cremig. Ideal als Sahne-Ersatz." },
+    { "question": "Wie viel Protein hat Joghurt?", "answer": "Naturjoghurt hat 3,5g Protein/100g, griechischer 5g und Skyr sogar 11g. Für maximales Protein ist Skyr die beste Wahl." },
+    { "question": "Ist Joghurt gut zum Abnehmen?", "answer": "Ja! Fettarmer Naturjoghurt ist ein idealer Diät-Snack: wenig Kalorien, gutes Protein, sättigend. Studien zeigen, dass Joghurt-Esser tendenziell weniger wiegen." },
+    { "question": "Was ist besser: Joghurt oder Quark?", "answer": "Quark hat mehr Protein (12g vs. 3,5g/100g), Joghurt hat mehr Probiotika. Zum Abnehmen und Muskelaufbau ist Magerquark besser, für die Darmgesundheit Joghurt." }
+  ],
+  "related_foods": ["quark", "skyr", "haferflocken", "muesli"]
+}

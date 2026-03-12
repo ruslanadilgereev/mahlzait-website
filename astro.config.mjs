@@ -80,6 +80,11 @@ export default defineConfig({
           item.priority = 0.6;
           item.changefreq = "monthly";
         }
+        // Kalorien-Food-Seiten (pSEO) hohe Prioritaet
+        else if (url.includes("/kalorien/")) {
+          item.priority = 0.8;
+          item.changefreq = "monthly";
+        }
         // Legal-Seiten niedrigere Prioritaet
         else if (
           url.includes("privacy-policy") ||

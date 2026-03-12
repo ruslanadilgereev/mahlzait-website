@@ -1,0 +1,52 @@
+{
+  "slug": "pizza",
+  "name": "Pizza",
+  "emoji": "🍕",
+  "category": "fast-food",
+  "seo": {
+    "title": "Pizza Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Pizza? Nährwerte pro 100g & Portion für Margherita, Salami, Hawaii & mehr. Interaktiver Rechner + Spar-Tipps.",
+    "keywords": ["pizza kalorien", "kalorien pizza", "pizza nährwerte", "pizza margherita kalorien", "wie viele kalorien hat pizza", "pizza salami kalorien", "pizza kalorien pro stück", "tiefkühlpizza kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 220,
+    "protein_per_100g": 9,
+    "carbs_per_100g": 30,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Pizza"
+  },
+  "variants": [
+    { "name": "Pizza Margherita", "portion_g": 350, "calories": 735, "protein": 29, "carbs": 111, "fat": 16, "tip": "Klassiker" },
+    { "name": "Pizza Salami", "portion_g": 370, "calories": 925, "protein": 37, "carbs": 104, "fat": 39 },
+    { "name": "Pizza Funghi", "portion_g": 340, "calories": 665, "protein": 27, "carbs": 105, "fat": 14, "tip": "Kalorienärmste" },
+    { "name": "Pizza Hawaii", "portion_g": 380, "calories": 855, "protein": 36, "carbs": 114, "fat": 26 },
+    { "name": "Pizza Quattro Formaggi", "portion_g": 360, "calories": 970, "protein": 40, "carbs": 100, "fat": 44 },
+    { "name": "Pizza Tonno", "portion_g": 350, "calories": 770, "protein": 38, "carbs": 98, "fat": 22 },
+    { "name": "Pizza Vegetariana", "portion_g": 360, "calories": 720, "protein": 26, "carbs": 108, "fat": 18, "tip": "Viel Gemüse" },
+    { "name": "Tiefkühlpizza (Durchschnitt)", "portion_g": 330, "calories": 790, "protein": 28, "carbs": 102, "fat": 28 }
+  ],
+  "comparison": [
+    { "name": "Döner Kebab", "calories": 600, "emoji": "🥙" },
+    { "name": "Big Mac", "calories": 509, "emoji": "🍔" },
+    { "name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭" },
+    { "name": "Schnitzel mit Pommes", "calories": 850, "emoji": "🥩" }
+  ],
+  "tips": [
+    { "title": "Dünner Boden wählen", "text": "Ein dünner, knuspriger Boden hat bis zu 30% weniger Kalorien als ein dicker Teig.", "icon": "🫓" },
+    { "title": "Gemüse statt Wurst", "text": "Pizza Funghi oder Vegetariana haben deutlich weniger Kalorien als Salami oder Schinken.", "icon": "🥦" },
+    { "title": "Weniger Käse bestellen", "text": "Käse ist der Hauptfettlieferant – mit weniger Käse sparst du 100+ kcal.", "icon": "🧀" },
+    { "title": "Selbst machen", "text": "Selbstgemachte Pizza mit Vollkornteig und viel Gemüse hat weniger Kalorien als Lieferpizza.", "icon": "👩‍🍳" },
+    { "title": "Portionsgröße beachten", "text": "Teile dir die Pizza – eine halbe reicht oft als Mahlzeit und spart 50% der Kalorien.", "icon": "✂️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine ganze Pizza?", "answer": "Eine ganze Pizza hat je nach Sorte zwischen 665 und 970 kcal. Eine Pizza Margherita hat ca. 735 kcal, eine Pizza Salami ca. 925 kcal. Tiefkühlpizzen liegen bei ca. 790 kcal." },
+    { "question": "Wie viele Kalorien hat ein Stück Pizza?", "answer": "Ein Stück Pizza (ca. 1/8 einer ganzen Pizza) hat zwischen 80 und 120 kcal. Bei einer Margherita sind es ca. 92 kcal pro Stück, bei einer Salami-Pizza ca. 116 kcal." },
+    { "question": "Welche Pizza hat die wenigsten Kalorien?", "answer": "Pizza Funghi (Pilz-Pizza) ist mit ca. 665 kcal pro Pizza die kalorienärmste Variante. Auch Pizza Vegetariana (720 kcal) und Margherita (735 kcal) sind gute Optionen." },
+    { "question": "Ist Tiefkühlpizza gesünder als Lieferpizza?", "answer": "Tiefkühlpizza hat oft weniger Kalorien als Lieferpizza, weil die Portionen kleiner sind. Allerdings enthält sie mehr Zusatzstoffe und Konservierungsmittel." },
+    { "question": "Kann man Pizza essen und trotzdem abnehmen?", "answer": "Ja, wenn du die Kalorien im Blick behältst. Wähle eine kalorienärmere Sorte, iss nur eine halbe Pizza und ergänze mit Salat. Mit Mahlzait kannst du die Kalorien genau tracken." },
+    { "question": "Hat Pizza Margherita weniger Kalorien als Salami?", "answer": "Ja, deutlich. Eine Pizza Margherita hat ca. 735 kcal, eine Pizza Salami ca. 925 kcal – das sind fast 200 kcal Unterschied, hauptsächlich durch das Fett der Salami." }
+  ],
+  "related_foods": ["schnitzel", "pommes-frites", "currywurst", "bratwurst"]
+}

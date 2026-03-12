@@ -1,0 +1,52 @@
+{
+  "slug": "ei",
+  "name": "Ei",
+  "emoji": "🥚",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Ei Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Ei? Nährwerte pro Stück & 100g für gekocht, Spiegelei, Rührei & mehr. Interaktiver Rechner + Fitness-Tipps.",
+    "keywords": ["ei kalorien", "kalorien ei", "ei nährwerte", "gekochtes ei kalorien", "spiegelei kalorien", "rührei kalorien", "ei kalorien pro stück", "wie viele kalorien hat ein ei"]
+  },
+  "overview": {
+    "calories_per_100g": 155,
+    "protein_per_100g": 13,
+    "carbs_per_100g": 1,
+    "fat_per_100g": 11,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 60,
+    "typical_portion_name": "1 Ei (M)"
+  },
+  "variants": [
+    { "name": "Gekochtes Ei (M)", "portion_g": 60, "calories": 93, "protein": 8, "carbs": 1, "fat": 7 },
+    { "name": "Gekochtes Ei (L)", "portion_g": 70, "calories": 109, "protein": 9, "carbs": 1, "fat": 8 },
+    { "name": "Spiegelei (ohne Fett)", "portion_g": 60, "calories": 93, "protein": 8, "carbs": 1, "fat": 7, "tip": "Wie gekocht" },
+    { "name": "Spiegelei (mit Butter)", "portion_g": 65, "calories": 130, "protein": 8, "carbs": 1, "fat": 10 },
+    { "name": "Rührei (2 Eier, mit Milch)", "portion_g": 150, "calories": 260, "protein": 18, "carbs": 3, "fat": 20 },
+    { "name": "Omelette (2 Eier)", "portion_g": 140, "calories": 230, "protein": 17, "carbs": 1, "fat": 17, "tip": "Proteinreich" },
+    { "name": "Pochiertes Ei", "portion_g": 60, "calories": 93, "protein": 8, "carbs": 1, "fat": 7, "tip": "Kalorienärmste" },
+    { "name": "Eigelb (1 Stück)", "portion_g": 17, "calories": 55, "protein": 3, "carbs": 0, "fat": 5 }
+  ],
+  "comparison": [
+    { "name": "Scheibe Käse (30g)", "calories": 110, "emoji": "🧀" },
+    { "name": "Portion Quark (150g)", "calories": 99, "emoji": "🥛" },
+    { "name": "Hähnchenbrust (100g)", "calories": 165, "emoji": "🍗" },
+    { "name": "Scheibe Brot", "calories": 105, "emoji": "🍞" }
+  ],
+  "tips": [
+    { "title": "Ohne Fett zubereiten", "text": "Spiegelei in der beschichteten Pfanne ohne Butter hat gleich viele Kalorien wie ein gekochtes Ei.", "icon": "🍳" },
+    { "title": "Eiweiß nutzen", "text": "Das Eiweiß hat nur 17 kcal pro Ei bei 4g Protein – perfekt für kalorienarme, proteinreiche Mahlzeiten.", "icon": "💪" },
+    { "title": "Ideal als Snack", "text": "Ein gekochtes Ei ist mit 93 kcal ein perfekter Snack – sättigt lange dank Protein und Fett.", "icon": "✅" },
+    { "title": "Zum Frühstück essen", "text": "Eier zum Frühstück sättigen nachweislich besser als Brot oder Müsli und reduzieren Heißhunger.", "icon": "🌅" },
+    { "title": "Nicht mehr als 3 pro Tag", "text": "Die DGE empfiehlt bis zu 3 Eier pro Woche, Sportler können mehr essen. Cholesterin im Ei ist weniger problematisch als gedacht.", "icon": "📊" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Ei?", "answer": "Ein Ei der Größe M (60g) hat ca. 93 kcal. Ein Ei der Größe L (70g) hat ca. 109 kcal. Pro 100g sind es 155 kcal." },
+    { "question": "Wie viele Kalorien hat ein Spiegelei?", "answer": "Ein Spiegelei ohne Fett hat ca. 93 kcal – gleich wie ein gekochtes Ei. Mit Butter gebraten steigt der Wert auf ca. 130 kcal." },
+    { "question": "Wie viele Kalorien hat Rührei?", "answer": "Rührei aus 2 Eiern mit Milch hat ca. 260 kcal. Ohne Milch und Butter nur ca. 186 kcal. Der Unterschied kommt durch die Zusätze." },
+    { "question": "Sind Eier gut zum Abnehmen?", "answer": "Ja! Eier sind proteinreich (13g/100g), sättigend und kalorienarm. Studien zeigen, dass Eier zum Frühstück die Kalorienaufnahme am Tag reduzieren können." },
+    { "question": "Wie viel Protein hat ein Ei?", "answer": "Ein Ei (60g) liefert ca. 8g Protein. Davon sind 4g im Eiweiß und 3g im Eigelb. Eier enthalten alle essentiellen Aminosäuren." },
+    { "question": "Was ist kalorienärmer: Eigelb oder Eiweiß?", "answer": "Das Eiweiß ist deutlich kalorienärmer: nur 17 kcal vs. 55 kcal im Eigelb. Das Eigelb enthält aber die meisten Vitamine und Mineralstoffe." }
+  ],
+  "related_foods": ["brot", "reis", "nudeln", "kartoffelsalat"]
+}

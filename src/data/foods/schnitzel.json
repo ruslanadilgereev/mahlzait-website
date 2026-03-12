@@ -1,0 +1,49 @@
+{
+  "slug": "schnitzel",
+  "name": "Wiener Schnitzel",
+  "emoji": "🥩",
+  "category": "gericht",
+  "seo": {
+    "title": "Schnitzel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Schnitzel? Nährwerte für Wiener Schnitzel, Jägerschnitzel & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 237,
+    "protein_per_100g": 18,
+    "carbs_per_100g": 12,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Schnitzel"
+  },
+  "variants": [
+    {"name": "Wiener Schnitzel (Kalb)", "portion_g": 250, "calories": 593, "protein": 45, "carbs": 30, "fat": 35, "tip": "Klassiker aus Österreich"},
+    {"name": "Schnitzel Wiener Art (Schwein)", "portion_g": 250, "calories": 550, "protein": 40, "carbs": 28, "fat": 32, "tip": "Günstigere Alternative"},
+    {"name": "Hähnchenschnitzel", "portion_g": 200, "calories": 380, "protein": 42, "carbs": 20, "fat": 16, "tip": "Kalorienärmste Variante"},
+    {"name": "Jägerschnitzel", "portion_g": 350, "calories": 680, "protein": 38, "carbs": 25, "fat": 45, "tip": "Mit Pilzrahmsauce"},
+    {"name": "Rahmschnitzel", "portion_g": 350, "calories": 720, "protein": 36, "carbs": 22, "fat": 50, "tip": "Sahnesauce erhöht Kaloriengehalt"},
+    {"name": "Schnitzel im Ofen (ungepaniert)", "portion_g": 200, "calories": 290, "protein": 38, "carbs": 2, "fat": 14, "tip": "Ohne Panade spart 40% Kalorien"}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Big Mac", "calories": 509, "emoji": "🍔"},
+    {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
+    {"name": "Hähnchenbrust gegrillt", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Hähnchen statt Schwein", "text": "Ein Hähnchenschnitzel hat ca. 30% weniger Kalorien als ein klassisches Schweineschnitzel – bei mehr Protein.", "icon": "🍗"},
+    {"title": "Im Ofen statt in der Pfanne", "text": "Ofenschnitzel brauchen deutlich weniger Fett. Du sparst bis zu 200 kcal pro Portion.", "icon": "🔥"},
+    {"title": "Panade dünn halten", "text": "Je dicker die Panade, desto mehr Fett wird aufgesogen. Dünne Panade = weniger Kalorien.", "icon": "🍞"},
+    {"title": "Beilage smart wählen", "text": "Statt Pommes (300 kcal) lieber Kartoffelsalat mit Essig-Öl-Dressing (150 kcal) oder Salat.", "icon": "🥗"},
+    {"title": "Portion bewusst wählen", "text": "Ein Restaurant-Schnitzel wiegt oft 300-400g. Zuhause reichen 200g für eine sättigende Mahlzeit.", "icon": "⚖️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Schnitzel?", "answer": "Ein klassisches Wiener Schnitzel (Schwein, paniert) hat ca. 550 kcal pro Portion (250g). Die Kalorienzahl variiert je nach Fleischart, Panade und Zubereitungsart zwischen 290 und 720 kcal."},
+    {"question": "Ist Schnitzel gut zum Abnehmen?", "answer": "Paniertes Schnitzel ist kalorienreich durch die Panade und das Bratfett. Besser: Hähnchenschnitzel ohne Panade aus dem Ofen – nur ca. 290 kcal mit 38g Protein."},
+    {"question": "Was hat weniger Kalorien: Schnitzel oder Döner?", "answer": "Ein Hähnchenschnitzel (380 kcal) hat weniger als ein Döner (550-650 kcal). Ein paniertes Schweineschnitzel (550 kcal) liegt etwa gleichauf mit einem Döner."},
+    {"question": "Wie viel Protein hat ein Schnitzel?", "answer": "Ein Schnitzel liefert 36-45g Protein pro Portion – abhängig von der Fleischart. Hähnchen hat mit 42g pro 200g den höchsten Proteingehalt."},
+    {"question": "Warum hat Jägerschnitzel mehr Kalorien?", "answer": "Die Pilzrahmsauce beim Jägerschnitzel enthält Sahne und Butter, was zusätzlich 130-180 kcal zur Portion hinzufügt."},
+    {"question": "Wie viele Kalorien hat ein Schnitzel ohne Panade?", "answer": "Ein Schnitzel ohne Panade hat nur ca. 165-200 kcal pro 200g – die Panade und das Bratfett machen etwa 40-50% der Gesamtkalorien aus."}
+  ],
+  "related_foods": ["currywurst", "pommes-frites", "haehnchenbrust", "bratwurst"]
+}

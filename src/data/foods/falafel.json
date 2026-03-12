@@ -1,0 +1,52 @@
+{
+  "slug": "falafel",
+  "name": "Falafel",
+  "emoji": "🧆",
+  "category": "fast-food",
+  "seo": {
+    "title": "Falafel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Falafel? Nährwerte pro Stück & 100g. Im Wrap, Teller & als Snack – interaktiver Rechner + vegane Tipps.",
+    "keywords": ["falafel kalorien", "kalorien falafel", "falafel nährwerte", "falafel kalorien pro stück", "falafel wrap kalorien", "falafel teller kalorien", "falafel protein", "falafel vegan kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 333,
+    "protein_per_100g": 13,
+    "carbs_per_100g": 32,
+    "fat_per_100g": 18,
+    "fiber_per_100g": 5,
+    "typical_portion_g": 35,
+    "typical_portion_name": "1 Falafel-Bällchen"
+  },
+  "variants": [
+    { "name": "1 Falafel-Bällchen", "portion_g": 35, "calories": 117, "protein": 5, "carbs": 11, "fat": 6 },
+    { "name": "3 Falafel (Snack)", "portion_g": 105, "calories": 350, "protein": 14, "carbs": 34, "fat": 19 },
+    { "name": "Falafel-Wrap/Dürum", "portion_g": 350, "calories": 650, "protein": 22, "carbs": 62, "fat": 34 },
+    { "name": "Falafel-Teller mit Hummus", "portion_g": 400, "calories": 720, "protein": 26, "carbs": 68, "fat": 38 },
+    { "name": "Falafel im Pitabrot", "portion_g": 300, "calories": 580, "protein": 20, "carbs": 56, "fat": 30 },
+    { "name": "Falafel-Salat", "portion_g": 350, "calories": 420, "protein": 18, "carbs": 36, "fat": 22, "tip": "Leichteste Mahlzeit" },
+    { "name": "Falafel aus dem Ofen", "portion_g": 105, "calories": 280, "protein": 14, "carbs": 34, "fat": 10, "tip": "Kalorienärmste" },
+    { "name": "Falafel gebraten (TK)", "portion_g": 105, "calories": 340, "protein": 12, "carbs": 32, "fat": 18 }
+  ],
+  "comparison": [
+    { "name": "Döner Kebab", "calories": 600, "emoji": "🥙" },
+    { "name": "Chicken Nuggets (6 St.)", "calories": 250, "emoji": "🍗" },
+    { "name": "Hummus (100g)", "calories": 166, "emoji": "🫘" },
+    { "name": "Veggie Burger", "calories": 380, "emoji": "🍔" }
+  ],
+  "tips": [
+    { "title": "Im Ofen statt frittieren", "text": "Falafel aus dem Ofen haben ca. 20% weniger Kalorien. Leicht mit Öl besprühen für die knusprige Kruste.", "icon": "🔥" },
+    { "title": "Falafel-Salat statt Wrap", "text": "Falafel-Salat hat mit 420 kcal fast 230 kcal weniger als der Wrap – durch das Weglassen des Fladenbrot.", "icon": "🥗" },
+    { "title": "Hummus sparsam dosieren", "text": "Hummus ist gesund, aber kalorienreich (166 kcal/100g). 2-3 EL reichen als Dip. Tahini-Soße ist noch kalorienreicher.", "icon": "🫙" },
+    { "title": "Gute pflanzliche Proteinquelle", "text": "Falafel aus Kichererbsen liefert alle essentiellen Aminosäuren in Kombination mit Pita oder Reis.", "icon": "🌱" },
+    { "title": "Selbst machen spart Kalorien", "text": "Selbstgemachte Falafel im Ofen: 180 kcal/100g. Fast-Food-Falafel frittiert: 333 kcal/100g.", "icon": "👨‍🍳" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Falafel?", "answer": "Ein Falafel-Bällchen (35g) hat ca. 117 kcal. 3 Falafel als Snack haben ca. 350 kcal. Ein Falafel-Wrap kommt auf ca. 650 kcal." },
+    { "question": "Sind Falafel gesund?", "answer": "Falafel sind eine gute pflanzliche Proteinquelle mit viel Ballaststoffen. Nachteil: Frittierte Falafel sind fettreich. Tipp: Im Ofen zubereiten." },
+    { "question": "Wie viel Protein haben Falafel?", "answer": "Falafel haben ca. 13g Protein pro 100g. 3 Falafel (105g) liefern 14g Protein. In Kombination mit Pita oder Reis ergibt das ein vollständiges Aminosäureprofil." },
+    { "question": "Sind Falafel vegan?", "answer": "Ja! Traditionelle Falafel bestehen aus Kichererbsen (oder Bohnen), Kräutern und Gewürzen – komplett vegan. Achtung: Manche Varianten enthalten Ei als Bindemittel." },
+    { "question": "Was hat weniger Kalorien: Falafel oder Döner?", "answer": "Ein Falafel-Wrap (650 kcal) hat etwas mehr als ein Döner (600 kcal). Falafel-Salat (420 kcal) ist deutlich leichter. Das Frittieren macht Falafel überraschend kalorienreich." },
+    { "question": "Wie viele Kalorien hat ein Falafel-Teller?", "answer": "Ein Falafel-Teller mit Hummus, Salat und Brot hat ca. 720 kcal. Ohne Brot und mit weniger Hummus ca. 500 kcal." }
+  ],
+  "related_foods": ["hummus", "gyros", "wrap", "currywurst"]
+}

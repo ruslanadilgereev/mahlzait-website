@@ -1,0 +1,52 @@
+{
+  "slug": "gyros",
+  "name": "Gyros",
+  "emoji": "🥙",
+  "category": "fast-food",
+  "seo": {
+    "title": "Gyros Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Gyros? Nährwerte pro 100g & Portion. Teller, Pita & Gyros-Box im Vergleich + kalorienarme Tipps.",
+    "keywords": ["gyros kalorien", "kalorien gyros", "gyros nährwerte", "gyros teller kalorien", "gyros pita kalorien", "gyros mit pommes kalorien", "schweinegyros kalorien", "hähnchen gyros kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 215,
+    "protein_per_100g": 20,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion Gyros (nur Fleisch)"
+  },
+  "variants": [
+    { "name": "Gyros (Schwein, nur Fleisch)", "portion_g": 200, "calories": 430, "protein": 40, "carbs": 4, "fat": 28 },
+    { "name": "Hähnchen-Gyros (nur Fleisch)", "portion_g": 200, "calories": 340, "protein": 44, "carbs": 4, "fat": 16, "tip": "Kalorienärmste" },
+    { "name": "Gyros-Teller mit Pommes", "portion_g": 450, "calories": 850, "protein": 42, "carbs": 60, "fat": 48 },
+    { "name": "Gyros-Teller mit Reis", "portion_g": 450, "calories": 720, "protein": 44, "carbs": 70, "fat": 28 },
+    { "name": "Gyros-Pita", "portion_g": 350, "calories": 650, "protein": 38, "carbs": 42, "fat": 34 },
+    { "name": "Gyros-Box", "portion_g": 400, "calories": 780, "protein": 40, "carbs": 55, "fat": 42 },
+    { "name": "Gyros-Salat", "portion_g": 350, "calories": 450, "protein": 38, "carbs": 12, "fat": 28, "tip": "Low Carb" },
+    { "name": "Gyros überbacken (Metaxa)", "portion_g": 450, "calories": 920, "protein": 46, "carbs": 50, "fat": 56 }
+  ],
+  "comparison": [
+    { "name": "Döner Kebab", "calories": 600, "emoji": "🥙" },
+    { "name": "Schnitzel paniert", "calories": 500, "emoji": "🥩" },
+    { "name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭" },
+    { "name": "Souvlaki", "calories": 380, "emoji": "🍢" }
+  ],
+  "tips": [
+    { "title": "Hähnchen statt Schwein", "text": "Hähnchen-Gyros hat ca. 20% weniger Kalorien und 50% weniger Fett als Schweinegyros. Dafür deutlich mehr Protein.", "icon": "🍗" },
+    { "title": "Reis statt Pommes wählen", "text": "Gyros-Teller mit Reis hat 130 kcal weniger als mit Pommes. Noch besser: Salat als Beilage.", "icon": "🍚" },
+    { "title": "Tzatziki statt Metaxa-Soße", "text": "Tzatziki hat ca. 70 kcal/100g, Metaxa-Soße über 200 kcal/100g. Tzatziki ist der leichtere Klassiker.", "icon": "🥒" },
+    { "title": "Gyros-Salat als Alternative", "text": "Gyros-Salat hat mit 450 kcal fast die Hälfte des Gyros-Tellers – proteinreich und Low Carb.", "icon": "🥗" },
+    { "title": "Selbst marinieren", "text": "Hähnchenbrust mit griechischen Gewürzen mariniert und gegrillt: nur 170 kcal/100g bei 30g Protein.", "icon": "👨‍🍳" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Gyros-Teller?", "answer": "Ein Gyros-Teller mit Pommes hat ca. 850 kcal. Mit Reis sind es ca. 720 kcal. Überbackenes Gyros (Metaxa) erreicht 920 kcal." },
+    { "question": "Wie viele Kalorien hat Gyros pro 100g?", "answer": "Reines Gyros-Fleisch (Schwein) hat ca. 215 kcal/100g. Hähnchen-Gyros hat nur ca. 170 kcal/100g." },
+    { "question": "Was hat weniger Kalorien: Gyros oder Döner?", "answer": "Reines Gyros (430 kcal) und ein Döner (600 kcal) – der Döner hat mehr Kalorien wegen Brot und Saucen. Gyros-Teller mit Pommes (850 kcal) ist aber kalorienreicher." },
+    { "question": "Wie viel Protein hat Gyros?", "answer": "200g Schweinegyros liefern ca. 40g Protein, Hähnchen-Gyros sogar 44g. Das macht Gyros zu einer guten Proteinquelle." },
+    { "question": "Ist Gyros gut zum Abnehmen?", "answer": "Gyros-Fleisch allein (430 kcal) passt in eine Diät. Problematisch werden Beilagen und Saucen. Tipp: Hähnchen-Gyros mit Salat (450 kcal total)." },
+    { "question": "Wie viele Kalorien hat Gyros-Pita?", "answer": "Ein Gyros-Pita hat ca. 650 kcal – etwas mehr als ein Döner (600 kcal). Das liegt am fetteren Schweinefleisch und dem Tsatsiki." }
+  ],
+  "related_foods": ["falafel", "cevapcici", "schnitzel", "currywurst"]
+}

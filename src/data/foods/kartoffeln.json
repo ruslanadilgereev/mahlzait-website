@@ -1,0 +1,52 @@
+{
+  "slug": "kartoffeln",
+  "name": "Kartoffeln",
+  "emoji": "🥔",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Kartoffeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Kartoffeln? Nährwerte pro 100g & Portion. Gekocht, gebraten, Püree – alle Zubereitungen im Vergleich.",
+    "keywords": ["kartoffeln kalorien", "kalorien kartoffeln", "kartoffeln nährwerte", "kartoffeln gekocht kalorien", "bratkartoffeln kalorien", "kartoffelpüree kalorien", "pellkartoffeln kalorien", "kartoffeln kohlenhydrate"]
+  },
+  "overview": {
+    "calories_per_100g": 73,
+    "protein_per_100g": 2,
+    "carbs_per_100g": 15.4,
+    "fat_per_100g": 0.1,
+    "fiber_per_100g": 2.1,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Portion (3-4 Kartoffeln)"
+  },
+  "variants": [
+    { "name": "Pellkartoffeln", "portion_g": 250, "calories": 175, "protein": 5, "carbs": 38, "fat": 0, "tip": "Kalorienärmste" },
+    { "name": "Salzkartoffeln", "portion_g": 250, "calories": 178, "protein": 5, "carbs": 38, "fat": 0 },
+    { "name": "Kartoffelpüree (mit Milch)", "portion_g": 250, "calories": 248, "protein": 5, "carbs": 38, "fat": 8 },
+    { "name": "Bratkartoffeln", "portion_g": 250, "calories": 400, "protein": 5, "carbs": 42, "fat": 22 },
+    { "name": "Kartoffelgratin", "portion_g": 250, "calories": 425, "protein": 10, "carbs": 32, "fat": 28 },
+    { "name": "Ofenkartoffel (mit Quark)", "portion_g": 300, "calories": 310, "protein": 12, "carbs": 46, "fat": 8 },
+    { "name": "Kartoffelsalat (mit Mayo)", "portion_g": 200, "calories": 320, "protein": 4, "carbs": 26, "fat": 22 },
+    { "name": "Kartoffelsalat (mit Essig-Öl)", "portion_g": 200, "calories": 220, "protein": 4, "carbs": 28, "fat": 10, "tip": "Leichtere Variante" }
+  ],
+  "comparison": [
+    { "name": "Reis (gekocht)", "calories": 325, "emoji": "🍚" },
+    { "name": "Nudeln (gekocht)", "calories": 395, "emoji": "🍝" },
+    { "name": "Süßkartoffel (gekocht)", "calories": 215, "emoji": "🍠" },
+    { "name": "Pommes Frites", "calories": 600, "emoji": "🍟" }
+  ],
+  "tips": [
+    { "title": "Gekocht statt gebraten", "text": "Pellkartoffeln haben nur 70 kcal/100g, Bratkartoffeln 160 kcal/100g. Die Zubereitung macht den Unterschied.", "icon": "🫕" },
+    { "title": "Abgekühlte Kartoffeln essen", "text": "Abgekühlte Kartoffeln bilden resistente Stärke – das senkt den Blutzucker und die verwertbaren Kalorien um ca. 10%.", "icon": "❄️" },
+    { "title": "Sättigungskönig unter den Beilagen", "text": "Kartoffeln haben den höchsten Sättigungsindex aller Lebensmittel – 3x sättigender als Nudeln bei weniger Kalorien.", "icon": "👑" },
+    { "title": "Kartoffelpüree leichter machen", "text": "Statt Butter und Sahne: Kochwasser und einen Schuss Milch verwenden – spart 80+ kcal pro Portion.", "icon": "💡" },
+    { "title": "Schale mitessen", "text": "Die Schale enthält mehr Ballaststoffe und Vitamin C. Pellkartoffeln sind daher nährstoffreicher als geschälte.", "icon": "🌿" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien haben Kartoffeln?", "answer": "Gekochte Kartoffeln haben ca. 73 kcal pro 100g. Eine Portion (250g = 3-4 Kartoffeln) hat ca. 175 kcal. Damit sind Kartoffeln kalorienärmer als Reis und Nudeln." },
+    { "question": "Machen Kartoffeln dick?", "answer": "Nein! Kartoffeln pur sind sehr kalorienarm (73 kcal/100g) und extrem sättigend. Dick machen erst die Zutaten: Butter, Sahne, Öl zum Braten oder Frittieren." },
+    { "question": "Sind Kartoffeln Low Carb?", "answer": "Nein, Kartoffeln haben 15g Kohlenhydrate pro 100g. Bei Keto/Low Carb besser Blumenkohl verwenden. Für moderate Diäten sind Kartoffeln aber völlig in Ordnung." },
+    { "question": "Was ist kalorienärmer: Kartoffeln oder Reis?", "answer": "Kartoffeln! Gekochte Kartoffeln haben 73 kcal/100g, gekochter Reis 130 kcal/100g. Kartoffeln machen zudem deutlich länger satt." },
+    { "question": "Wie viele Kalorien haben Bratkartoffeln?", "answer": "Bratkartoffeln haben ca. 160 kcal/100g – mehr als doppelt so viel wie gekochte. Das Fett zum Braten verdoppelt die Kalorien." },
+    { "question": "Sind Süßkartoffeln gesünder als normale Kartoffeln?", "answer": "Süßkartoffeln haben mit 86 kcal/100g etwas mehr Kalorien und mehr Beta-Carotin. Normale Kartoffeln haben mehr Vitamin C und weniger Zucker. Beide sind gesund." }
+  ],
+  "related_foods": ["reis", "nudeln", "pommes-frites", "kartoffelsalat"]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "burger",
+  "name": "Burger",
+  "emoji": "🍔",
+  "category": "fast-food",
+  "seo": {
+    "title": "Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Burger? Nährwerte pro Stück für Cheeseburger, Big Mac, Veggie Burger & mehr. Interaktiver Rechner + Spar-Tipps.",
+    "keywords": ["burger kalorien", "kalorien burger", "burger nährwerte", "cheeseburger kalorien", "big mac kalorien", "veggie burger kalorien", "burger kalorien pro stück", "wie viele kalorien hat ein burger"]
+  },
+  "overview": {
+    "calories_per_100g": 250,
+    "protein_per_100g": 14,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 12,
+    "fiber_per_100g": 1.2,
+    "typical_portion_g": 220,
+    "typical_portion_name": "1 Burger"
+  },
+  "variants": [
+    { "name": "Hamburger (einfach)", "portion_g": 170, "calories": 390, "protein": 22, "carbs": 33, "fat": 18 },
+    { "name": "Cheeseburger", "portion_g": 190, "calories": 470, "protein": 26, "carbs": 34, "fat": 24 },
+    { "name": "Big Mac", "portion_g": 215, "calories": 509, "protein": 26, "carbs": 43, "fat": 26 },
+    { "name": "Double Cheeseburger", "portion_g": 250, "calories": 650, "protein": 40, "carbs": 36, "fat": 36, "tip": "Meistes Protein" },
+    { "name": "Whopper (Burger King)", "portion_g": 270, "calories": 660, "protein": 30, "carbs": 50, "fat": 38 },
+    { "name": "Chicken Burger", "portion_g": 200, "calories": 430, "protein": 28, "carbs": 38, "fat": 18, "tip": "Weniger Fett" },
+    { "name": "Veggie Burger", "portion_g": 200, "calories": 370, "protein": 16, "carbs": 40, "fat": 14, "tip": "Kalorienärmste" },
+    { "name": "Gourmet-Burger (Restaurant)", "portion_g": 300, "calories": 780, "protein": 38, "carbs": 42, "fat": 48 }
+  ],
+  "comparison": [
+    { "name": "Döner Kebab", "calories": 600, "emoji": "🥙" },
+    { "name": "Pizza Margherita", "calories": 735, "emoji": "🍕" },
+    { "name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭" },
+    { "name": "Schnitzel (paniert)", "calories": 500, "emoji": "🥩" }
+  ],
+  "tips": [
+    { "title": "Chicken Burger wählen", "text": "Ein Chicken Burger hat ca. 20% weniger Kalorien und weniger Fett als ein Beef-Burger.", "icon": "🍗" },
+    { "title": "Ohne Mayo bestellen", "text": "Mayo und spezielle Saucen fügen 80-150 kcal hinzu. Senf oder Ketchup sind leichter.", "icon": "🚫" },
+    { "title": "Einfach statt Doppel", "text": "Ein einfacher Hamburger hat 390 kcal – ein Double Cheeseburger 650 kcal. Das Patty macht den Unterschied.", "icon": "1️⃣" },
+    { "title": "Pommes durch Salat ersetzen", "text": "Statt Pommes als Beilage (300+ kcal) lieber einen Beilagensalat (50 kcal) bestellen.", "icon": "🥗" },
+    { "title": "Selbst machen", "text": "Selbstgemachte Burger mit magerem Hackfleisch und Vollkornbrötchen haben weniger Fett als Fast-Food-Burger.", "icon": "👩‍🍳" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Burger?", "answer": "Ein einfacher Hamburger hat ca. 390 kcal, ein Cheeseburger ca. 470 kcal, ein Big Mac ca. 509 kcal. Gourmet-Burger im Restaurant können auf 780 kcal kommen." },
+    { "question": "Wie viele Kalorien hat ein Big Mac?", "answer": "Ein Big Mac hat ca. 509 kcal, 26g Protein, 43g Kohlenhydrate und 26g Fett. Mit einer mittleren Portion Pommes und Cola kommt das Menü auf über 1.000 kcal." },
+    { "question": "Welcher Burger hat die wenigsten Kalorien?", "answer": "Ein Veggie Burger hat mit ca. 370 kcal die wenigsten Kalorien. Ein einfacher Hamburger ohne Käse liegt bei ca. 390 kcal." },
+    { "question": "Ist Burger oder Döner kalorienärmer?", "answer": "Ein einfacher Hamburger (390 kcal) hat weniger Kalorien als ein Döner (600 kcal). Ein Cheeseburger (470 kcal) liegt aber bereits näher am Döner." },
+    { "question": "Wie viel Protein hat ein Burger?", "answer": "Ein Hamburger hat ca. 22g Protein, ein Cheeseburger ca. 26g. Ein Double Cheeseburger liefert mit 40g Protein am meisten – gut für den Muskelaufbau." },
+    { "question": "Kann man Burger essen und trotzdem abnehmen?", "answer": "Ja, wenn du die Kalorien im Blick behältst. Wähle einen einfachen Hamburger oder Chicken Burger, verzichte auf Pommes und Cola, und plane den Burger in dein Tagesbudget ein." }
+  ],
+  "related_foods": ["pommes-frites", "pizza", "currywurst", "schnitzel"]
+}

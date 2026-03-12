@@ -1,0 +1,65 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import KalorienFoodPage from "@modules/kalorienFood";
+
+export async function getStaticPaths() {
+  const foodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
+  
+  return Object.values(foodFiles).map((mod: any) => {
+    const food = mod.default || mod;
+    return {
+      params: { slug: food.slug },
+      props: { food },
+    };
+  });
+}
+
+const { food } = Astro.props;
+
+const seo = {
+  title: food.seo.title,
+  description: food.seo.description,
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: food.faq.map((item: any) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
+
+const nutritionSchema = {
+  "@context": "https://schema.org",
+  "@type": "NutritionInformation",
+  name: food.name,
+  servingSize: `${food.overview.typical_portion_g}g`,
+  calories: `${Math.round(food.overview.calories_per_100g * food.overview.typical_portion_g / 100)} kcal`,
+  proteinContent: `${Math.round(food.overview.protein_per_100g * food.overview.typical_portion_g / 100)}g`,
+  carbohydrateContent: `${Math.round(food.overview.carbs_per_100g * food.overview.typical_portion_g / 100)}g`,
+  fatContent: `${Math.round(food.overview.fat_per_100g * food.overview.typical_portion_g / 100)}g`,
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: "https://www.mahlzait.de/" },
+    { "@type": "ListItem", position: 2, name: "Rechner", item: "https://www.mahlzait.de/rechner/" },
+    { "@type": "ListItem", position: 3, name: `${food.name} Kalorien`, item: `https://www.mahlzait.de/kalorien/${food.slug}/` },
+  ],
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle={`${food.name} Kalorien Rechner`} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(nutritionSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <KalorienFoodPage client:load config={defaultTemplateConfig} food={food} />
+</Layout>

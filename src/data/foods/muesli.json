@@ -1,0 +1,52 @@
+{
+  "slug": "muesli",
+  "name": "Müsli",
+  "emoji": "🥣",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Müsli Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Müsli? Nährwerte pro 100g & Portion. Crunchy, Frucht- & Schoko-Müsli im Vergleich + Diät-Tipps.",
+    "keywords": ["müsli kalorien", "kalorien müsli", "müsli nährwerte", "crunchy müsli kalorien", "müsli mit milch kalorien", "schoko müsli kalorien", "granola kalorien", "fruchtmüsli kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 365,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 62,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 7.5,
+    "typical_portion_g": 60,
+    "typical_portion_name": "1 Schale"
+  },
+  "variants": [
+    { "name": "Basis-Müsli (trocken)", "portion_g": 60, "calories": 219, "protein": 6, "carbs": 37, "fat": 5 },
+    { "name": "Müsli mit Milch (1,5%)", "portion_g": 210, "calories": 329, "protein": 12, "carbs": 48, "fat": 8 },
+    { "name": "Crunchy Müsli (trocken)", "portion_g": 60, "calories": 270, "protein": 5, "carbs": 38, "fat": 10, "tip": "Kalorienreichste" },
+    { "name": "Fruchtmüsli", "portion_g": 60, "calories": 210, "protein": 5, "carbs": 40, "fat": 3, "tip": "Weniger Fett" },
+    { "name": "Schoko-Müsli", "portion_g": 60, "calories": 258, "protein": 6, "carbs": 40, "fat": 8 },
+    { "name": "Protein-Müsli", "portion_g": 60, "calories": 240, "protein": 18, "carbs": 28, "fat": 6, "tip": "Proteinreichste" },
+    { "name": "Müsli mit Joghurt & Obst", "portion_g": 250, "calories": 360, "protein": 14, "carbs": 46, "fat": 12 },
+    { "name": "Selbstgemischtes Müsli", "portion_g": 60, "calories": 200, "protein": 7, "carbs": 30, "fat": 5, "tip": "Kontrolliert" }
+  ],
+  "comparison": [
+    { "name": "Haferflocken-Porridge", "calories": 186, "emoji": "🥣" },
+    { "name": "Cornflakes mit Milch", "calories": 290, "emoji": "🥣" },
+    { "name": "Toast mit Marmelade", "calories": 230, "emoji": "🍞" },
+    { "name": "Croissant", "calories": 310, "emoji": "🥐" }
+  ],
+  "tips": [
+    { "title": "Portionsgröße messen", "text": "60g Müsli sind eine Portion – die meisten schütten 100-120g in die Schale. Das verdoppelt die Kalorien auf 440+ kcal.", "icon": "⚖️" },
+    { "title": "Zuckergehalt prüfen", "text": "Fertigmüsli enthält oft 20-25g Zucker pro 100g. Wähle Produkte mit unter 10g Zucker oder mische selbst.", "icon": "🔍" },
+    { "title": "Crunchy = verstecktes Fett", "text": "Crunchy-Müsli wird oft mit Öl und Zucker gebacken – 450 kcal/100g statt 365 kcal bei normalem Müsli.", "icon": "⚠️" },
+    { "title": "Nüsse selbst hinzufügen", "text": "Statt Nuss-Müsli kaufen: Basis-Müsli nehmen und 10g Nüsse selbst ergänzen – so kontrollierst du die Menge.", "icon": "🥜" },
+    { "title": "Mit Skyr statt Milch", "text": "Müsli mit 100g Skyr statt 150ml Milch: weniger Kalorien, dafür 11g extra Protein für bessere Sättigung.", "icon": "💪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Schale Müsli?", "answer": "Eine Schale Müsli (60g) mit 150ml Milch hat ca. 329 kcal. Crunchy-Müsli mit Milch kann 380+ kcal haben." },
+    { "question": "Wie viele Kalorien hat Müsli pro 100g?", "answer": "Basis-Müsli hat ca. 365 kcal/100g, Crunchy-Müsli ca. 450 kcal, Fruchtmüsli ca. 350 kcal und Protein-Müsli ca. 400 kcal pro 100g." },
+    { "question": "Ist Müsli gut zum Abnehmen?", "answer": "Ja, wenn du auf Portionsgröße (60g), Zuckergehalt (unter 10g/100g) und Sorte achtest. Basis- oder Fruchtmüsli sind besser als Crunchy." },
+    { "question": "Was ist besser: Müsli oder Haferflocken?", "answer": "Haferflocken pur haben ähnliche Kalorien, aber keinen zugesetzten Zucker. Müsli bietet mehr Abwechslung. Am besten: selbstgemischtes Müsli aus Haferflocken + Obst + Nüsse." },
+    { "question": "Wie viel Zucker hat Fertigmüsli?", "answer": "Fertiges Müsli enthält oft 15-25g Zucker pro 100g. Bio-Müsli und ungesüßte Varianten haben nur 3-5g natürlichen Zucker." },
+    { "question": "Wie viel Protein hat Müsli?", "answer": "Normales Müsli hat ca. 10g Protein/100g. Protein-Müsli hat 25-30g/100g. Tipp: Müsli mit Skyr kombinieren für maximales Protein." }
+  ],
+  "related_foods": ["haferflocken", "joghurt", "milch", "banane"]
+}

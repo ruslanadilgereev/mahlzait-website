@@ -1,0 +1,51 @@
+{
+  "slug": "pommes-frites",
+  "name": "Pommes Frites",
+  "emoji": "🍟",
+  "category": "fast-food",
+  "seo": {
+    "title": "Pommes Frites Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Pommes? Nährwerte pro 100g für frittierte, Ofen- & Airfryer-Pommes. Interaktiver Rechner + kalorienarme Alternativen.",
+    "keywords": ["pommes kalorien", "pommes frites kalorien", "kalorien pommes", "pommes nährwerte", "pommes kalorien pro portion", "ofen pommes kalorien", "airfryer pommes kalorien", "mcdonalds pommes kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 312,
+    "protein_per_100g": 3.7,
+    "carbs_per_100g": 38,
+    "fat_per_100g": 15,
+    "fiber_per_100g": 3.5,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    { "name": "Pommes frittiert (klassisch)", "portion_g": 150, "calories": 468, "protein": 6, "carbs": 57, "fat": 23 },
+    { "name": "Pommes aus dem Ofen", "portion_g": 150, "calories": 255, "protein": 5, "carbs": 48, "fat": 6, "tip": "30% weniger Kalorien" },
+    { "name": "Pommes Airfryer", "portion_g": 150, "calories": 210, "protein": 5, "carbs": 45, "fat": 3, "tip": "Kalorienärmste" },
+    { "name": "Süßkartoffel-Pommes (frittiert)", "portion_g": 150, "calories": 420, "protein": 5, "carbs": 60, "fat": 18 },
+    { "name": "Curly Fries", "portion_g": 150, "calories": 495, "protein": 5, "carbs": 54, "fat": 27 },
+    { "name": "McDonald's Pommes (mittel)", "portion_g": 114, "calories": 330, "protein": 4, "carbs": 41, "fat": 16 },
+    { "name": "Wedges (Kartoffelecken)", "portion_g": 150, "calories": 330, "protein": 5, "carbs": 48, "fat": 12 }
+  ],
+  "comparison": [
+    { "name": "Reis (1 Portion)", "calories": 195, "emoji": "🍚" },
+    { "name": "Kartoffeln gekocht", "calories": 105, "emoji": "🥔" },
+    { "name": "Nudeln (1 Portion)", "calories": 236, "emoji": "🍝" },
+    { "name": "Brot (3 Scheiben)", "calories": 315, "emoji": "🍞" }
+  ],
+  "tips": [
+    { "title": "Airfryer oder Ofen nutzen", "text": "Pommes aus dem Airfryer haben nur ca. 140 kcal/100g statt 312 kcal – weniger als die Hälfte!", "icon": "🌀" },
+    { "title": "Dicke Pommes wählen", "text": "Dicke Pommes nehmen weniger Fett auf als dünne – ca. 20% weniger Kalorien.", "icon": "📐" },
+    { "title": "Ohne Mayo essen", "text": "Eine Portion Mayo hat ca. 100 kcal extra. Ketchup hat mit ca. 20 kcal deutlich weniger.", "icon": "🍅" },
+    { "title": "Kartoffelecken als Alternative", "text": "Wedges haben weniger Fett als frittierte Pommes und sind trotzdem knusprig.", "icon": "🥔" },
+    { "title": "Portionsgröße kontrollieren", "text": "Eine große Portion Pommes hat bis zu 600 kcal. Bestelle lieber eine kleine Portion.", "icon": "📏" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien haben Pommes pro Portion?", "answer": "Eine normale Portion frittierte Pommes (150g) hat ca. 468 kcal. Eine kleine Portion (100g) hat ca. 312 kcal. Ofen-Pommes haben mit ca. 255 kcal deutlich weniger." },
+    { "question": "Wie viele Kalorien haben Pommes bei McDonald's?", "answer": "Eine mittlere Portion McDonald's Pommes (114g) hat ca. 330 kcal. Die kleine Portion (80g) hat ca. 230 kcal, die große (150g) ca. 470 kcal." },
+    { "question": "Sind Süßkartoffel-Pommes gesünder?", "answer": "Süßkartoffel-Pommes haben ähnlich viele Kalorien wie normale Pommes (ca. 280 kcal/100g). Sie enthalten aber mehr Ballaststoffe und Vitamin A. Gesünder nur bedingt." },
+    { "question": "Wie viele Kalorien haben Pommes aus dem Airfryer?", "answer": "Airfryer-Pommes haben nur ca. 140 kcal pro 100g – weniger als die Hälfte von frittierten Pommes. Sie brauchen kaum Öl und werden trotzdem knusprig." },
+    { "question": "Warum haben Pommes so viele Kalorien?", "answer": "Pommes werden in heißem Öl frittiert und saugen dabei viel Fett auf – bis zu 15g pro 100g. Das Fett verdoppelt den Kaloriengehalt der Kartoffel." },
+    { "question": "Was hat weniger Kalorien: Pommes oder Reis?", "answer": "Reis hat deutlich weniger Kalorien: ca. 130 kcal/100g gekocht vs. 312 kcal/100g frittierte Pommes. Auch Kartoffeln gekocht (70 kcal/100g) sind kalorienärmer." }
+  ],
+  "related_foods": ["currywurst", "bratwurst", "pizza", "schnitzel"]
+}

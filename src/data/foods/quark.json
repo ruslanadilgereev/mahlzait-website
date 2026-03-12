@@ -1,0 +1,52 @@
+{
+  "slug": "quark",
+  "name": "Quark",
+  "emoji": "🥛",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Quark Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Quark? Nährwerte pro 100g & Portion. Magerquark, Sahnequark & Fruchtquark im Vergleich + Protein-Tipps.",
+    "keywords": ["quark kalorien", "kalorien quark", "magerquark kalorien", "quark nährwerte", "magerquark protein", "quark 20 fett kalorien", "quark 40 fett kalorien", "fruchtquark kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 67,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 4,
+    "fat_per_100g": 0.3,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Becher"
+  },
+  "variants": [
+    { "name": "Magerquark", "portion_g": 250, "calories": 168, "protein": 30, "carbs": 10, "fat": 1, "tip": "Meistes Protein, wenigste Kalorien" },
+    { "name": "Quark 20% Fett i.Tr.", "portion_g": 250, "calories": 283, "protein": 28, "carbs": 10, "fat": 13 },
+    { "name": "Quark 40% Fett i.Tr.", "portion_g": 250, "calories": 365, "protein": 24, "carbs": 8, "fat": 26 },
+    { "name": "Sahnequark (Rahmquark)", "portion_g": 250, "calories": 400, "protein": 22, "carbs": 8, "fat": 30 },
+    { "name": "Fruchtquark", "portion_g": 150, "calories": 195, "protein": 9, "carbs": 24, "fat": 7 },
+    { "name": "Magerquark mit Obst", "portion_g": 300, "calories": 230, "protein": 30, "carbs": 22, "fat": 1, "tip": "Fitness-Snack" },
+    { "name": "Quark-Öl-Teig (Portion)", "portion_g": 100, "calories": 280, "protein": 8, "carbs": 36, "fat": 12 },
+    { "name": "Kräuterquark", "portion_g": 100, "calories": 120, "protein": 10, "carbs": 4, "fat": 7 }
+  ],
+  "comparison": [
+    { "name": "Joghurt (3,5%)", "calories": 92, "emoji": "🥛" },
+    { "name": "Skyr", "calories": 98, "emoji": "🥛" },
+    { "name": "Hüttenkäse", "calories": 130, "emoji": "🧀" },
+    { "name": "Griechischer Joghurt", "calories": 195, "emoji": "🥛" }
+  ],
+  "tips": [
+    { "title": "Protein-Champion", "text": "Magerquark liefert 12g Protein pro 100g bei nur 67 kcal – das beste Protein-Kalorien-Verhältnis aller Milchprodukte.", "icon": "💪" },
+    { "title": "Cremig machen ohne Kalorien", "text": "Magerquark mit Mineralwasser (mit Kohlensäure) verrühren – wird cremig wie Sahnejoghurt ohne extra Kalorien.", "icon": "💧" },
+    { "title": "Fruchtquark selbst machen", "text": "Fertiger Fruchtquark hat viel Zucker (16g/100g). Besser: Magerquark + frisches Obst + Honig. Spart 50+ kcal.", "icon": "🍓" },
+    { "title": "Abend-Snack für Muskelaufbau", "text": "Magerquark vor dem Schlafen liefert Casein – ein langsam verdauliches Protein, das über Nacht die Muskeln versorgt.", "icon": "🌙" },
+    { "title": "Als Sahne-Ersatz kochen", "text": "Quark (20%) ersetzt Sahne in Saucen und Aufläufen. Spart 250+ kcal pro Portion und liefert extra Protein.", "icon": "🍳" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Magerquark?", "answer": "Magerquark hat 67 kcal pro 100g bzw. 168 kcal pro Becher (250g). Das ist weniger als die Hälfte von Quark mit 40% Fett (146 kcal/100g)." },
+    { "question": "Wie viel Protein hat Magerquark?", "answer": "Magerquark hat 12g Protein pro 100g – das sind 30g pro Becher (250g). Damit ist Magerquark eine der besten und günstigsten Proteinquellen überhaupt." },
+    { "question": "Was ist besser zum Abnehmen: Quark oder Joghurt?", "answer": "Magerquark! Er hat mehr Protein (12g vs. 3,5g/100g) bei ähnlichen Kalorien. Protein sättigt länger und schützt die Muskelmasse beim Abnehmen." },
+    { "question": "Wie kann man Magerquark leckerer machen?", "answer": "Mit Mineralwasser cremig rühren, Obst, Honig, Vanilleextrakt oder Zimt hinzufügen. Oder herzhaft: mit Kräutern, Salz und Paprika als Dip." },
+    { "question": "Wie viele Kalorien hat Fruchtquark?", "answer": "Fertiger Fruchtquark hat ca. 130 kcal pro 100g (195 kcal/Becher). Fast doppelt so viel wie Magerquark, hauptsächlich durch zugesetzten Zucker." },
+    { "question": "Ist Quark oder Skyr besser?", "answer": "Ähnlich gut: Magerquark hat 12g Protein/100g bei 67 kcal, Skyr 11g bei 65 kcal. Magerquark ist günstiger, Skyr cremiger. Beide sind ausgezeichnete Proteinquellen." }
+  ],
+  "related_foods": ["joghurt", "skyr", "milch", "haferflocken"]
+}

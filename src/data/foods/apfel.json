@@ -1,0 +1,52 @@
+{
+  "slug": "apfel",
+  "name": "Apfel",
+  "emoji": "🍎",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Apfel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Apfel? Nährwerte pro 100g & Stück. Sorten im Vergleich + Diät-Tipps & gesunde Rezeptideen.",
+    "keywords": ["apfel kalorien", "kalorien apfel", "apfel nährwerte", "wie viele kalorien hat ein apfel", "apfel kalorien pro stück", "apfel kohlenhydrate", "granny smith kalorien", "apfel abnehmen"]
+  },
+  "overview": {
+    "calories_per_100g": 52,
+    "protein_per_100g": 0.3,
+    "carbs_per_100g": 13.8,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 2.4,
+    "typical_portion_g": 180,
+    "typical_portion_name": "1 Apfel (mittel)"
+  },
+  "variants": [
+    { "name": "Apfel klein (130g)", "portion_g": 130, "calories": 68, "protein": 0, "carbs": 18, "fat": 0 },
+    { "name": "Apfel mittel (180g)", "portion_g": 180, "calories": 94, "protein": 1, "carbs": 25, "fat": 0, "tip": "Standard" },
+    { "name": "Apfel groß (230g)", "portion_g": 230, "calories": 120, "protein": 1, "carbs": 32, "fat": 0 },
+    { "name": "Apfel geschält", "portion_g": 160, "calories": 78, "protein": 0, "carbs": 21, "fat": 0 },
+    { "name": "Getrocknete Apfelringe (30g)", "portion_g": 30, "calories": 86, "protein": 0, "carbs": 21, "fat": 0 },
+    { "name": "Apfelmus (150g)", "portion_g": 150, "calories": 105, "protein": 0, "carbs": 26, "fat": 0 },
+    { "name": "Bratapfel (mit Füllung)", "portion_g": 250, "calories": 280, "protein": 3, "carbs": 42, "fat": 12 },
+    { "name": "Apfelkuchen (1 Stück)", "portion_g": 120, "calories": 290, "protein": 3, "carbs": 40, "fat": 13 }
+  ],
+  "comparison": [
+    { "name": "Banane", "calories": 107, "emoji": "🍌" },
+    { "name": "Orange", "calories": 62, "emoji": "🍊" },
+    { "name": "Birne", "calories": 96, "emoji": "🍐" },
+    { "name": "Schokoriegel", "calories": 250, "emoji": "🍫" }
+  ],
+  "tips": [
+    { "title": "Idealer Diät-Snack", "text": "Ein Apfel hat nur 94 kcal, sättigt aber gut durch 4g Ballaststoffe und viel Wasser. Perfekt gegen Heißhunger.", "icon": "🍎" },
+    { "title": "Mit Schale essen", "text": "Die Schale enthält 70% der Ballaststoffe und viele sekundäre Pflanzenstoffe. Bio-Äpfel kurz abwaschen reicht.", "icon": "🌿" },
+    { "title": "Grüne Äpfel haben weniger Zucker", "text": "Granny Smith hat ca. 10g Zucker/100g vs. 13g bei süßen Sorten wie Gala oder Fuji. Besser für den Blutzucker.", "icon": "🟢" },
+    { "title": "Vor dem Essen: Apfel als Vorspeise", "text": "Ein Apfel 20 Min vor der Mahlzeit reduziert die Kalorienaufnahme laut Studien um ca. 15%.", "icon": "⏰" },
+    { "title": "Apfelmus als Zuckerersatz", "text": "Ungesüßtes Apfelmus kann Butter und Zucker in Kuchen teilweise ersetzen – spart Kalorien und Fett.", "icon": "🧁" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Apfel?", "answer": "Ein mittelgroßer Apfel (180g) hat ca. 94 kcal. Kleine Äpfel (130g) haben 68 kcal, große (230g) ca. 120 kcal." },
+    { "question": "Ist ein Apfel gut zum Abnehmen?", "answer": "Ja! Äpfel sind einer der besten Snacks zum Abnehmen. Mit nur 52 kcal/100g, viel Wasser und Ballaststoffen (2,4g/100g) machen sie satt bei wenig Kalorien." },
+    { "question": "Wie viele Kohlenhydrate hat ein Apfel?", "answer": "Ein mittelgroßer Apfel hat ca. 25g Kohlenhydrate, davon ca. 19g Zucker. Bei Low Carb sollte man maximal einen halben Apfel essen." },
+    { "question": "Welche Apfelsorte hat die wenigsten Kalorien?", "answer": "Granny Smith und Boskop haben mit ca. 48-50 kcal/100g die wenigsten Kalorien. Süße Sorten wie Gala oder Fuji haben ca. 55 kcal/100g – der Unterschied ist gering." },
+    { "question": "Wie viele Äpfel pro Tag sind gesund?", "answer": "'An apple a day keeps the doctor away' – 1-2 Äpfel pro Tag sind ideal. Sie liefern Vitamin C, Kalium und Pektin (ein Ballaststoff, der den Cholesterinspiegel senkt)." },
+    { "question": "Haben geschälte Äpfel weniger Kalorien?", "answer": "Kaum Unterschied bei den Kalorien (52 vs. 49 kcal/100g). Aber geschälte Äpfel verlieren 70% der Ballaststoffe und viele Vitamine – besser mit Schale essen." }
+  ],
+  "related_foods": ["banane", "orange", "erdbeeren", "haferflocken"]
+}

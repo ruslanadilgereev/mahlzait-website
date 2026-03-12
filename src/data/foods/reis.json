@@ -1,0 +1,52 @@
+{
+  "slug": "reis",
+  "name": "Reis",
+  "emoji": "🍚",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Reis Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Reis? Nährwerte pro 100g gekocht für Basmati, Jasmin & Vollkornreis. Interaktiver Rechner + Diät-Tipps.",
+    "keywords": ["reis kalorien", "kalorien reis gekocht", "reis nährwerte", "basmati reis kalorien", "jasmin reis kalorien", "vollkornreis kalorien", "reis kalorien pro portion", "wie viele kalorien hat reis"]
+  },
+  "overview": {
+    "calories_per_100g": 130,
+    "protein_per_100g": 2.7,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 0.3,
+    "fiber_per_100g": 0.4,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    { "name": "Weißer Langkornreis (gekocht)", "portion_g": 200, "calories": 260, "protein": 5, "carbs": 56, "fat": 1 },
+    { "name": "Basmatireis (gekocht)", "portion_g": 200, "calories": 240, "protein": 6, "carbs": 52, "fat": 1, "tip": "Aromatisch" },
+    { "name": "Jasminreis (gekocht)", "portion_g": 200, "calories": 260, "protein": 5, "carbs": 58, "fat": 1 },
+    { "name": "Vollkornreis (gekocht)", "portion_g": 200, "calories": 230, "protein": 5, "carbs": 48, "fat": 2, "tip": "Meiste Ballaststoffe" },
+    { "name": "Sushi-Reis (gekocht)", "portion_g": 200, "calories": 280, "protein": 5, "carbs": 62, "fat": 1 },
+    { "name": "Wildreis (gekocht)", "portion_g": 200, "calories": 200, "protein": 7, "carbs": 42, "fat": 1, "tip": "Kalorienärmste" },
+    { "name": "Milchreis (mit Milch)", "portion_g": 250, "calories": 350, "protein": 8, "carbs": 58, "fat": 8 },
+    { "name": "Gebratener Reis", "portion_g": 250, "calories": 425, "protein": 10, "carbs": 58, "fat": 16 }
+  ],
+  "comparison": [
+    { "name": "Nudeln (gekocht)", "calories": 236, "emoji": "🍝" },
+    { "name": "Kartoffeln (gekocht)", "calories": 140, "emoji": "🥔" },
+    { "name": "Couscous (gekocht)", "calories": 224, "emoji": "🫙" },
+    { "name": "Quinoa (gekocht)", "calories": 240, "emoji": "🌾" }
+  ],
+  "tips": [
+    { "title": "Vollkornreis wählen", "text": "Vollkornreis hat mehr Ballaststoffe und sättigt länger – bei ähnlichen Kalorien wie weißer Reis.", "icon": "🌾" },
+    { "title": "Portion abwiegen", "text": "200g gekochter Reis ist eine normale Portion. Ungekocht sind das nur 70-80g.", "icon": "⚖️" },
+    { "title": "Abkühlen lassen", "text": "Abgekühlter Reis enthält resistente Stärke – dein Körper nimmt weniger Kalorien auf.", "icon": "❄️" },
+    { "title": "Gemüse untermischen", "text": "Mische Reis mit Gemüse für mehr Volumen bei weniger Kalorien pro Portion.", "icon": "🥦" },
+    { "title": "Blumenkohlreis als Low-Carb-Alternative", "text": "Blumenkohlreis hat nur ca. 25 kcal/100g – perfekt als kalorienarmer Ersatz.", "icon": "💡" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Reis pro Portion?", "answer": "Eine Portion gekochter Reis (200g) hat ca. 260 kcal. Ungekocht hat die gleiche Portion (ca. 75g) etwa 260 kcal – das Gewicht verdreifacht sich beim Kochen." },
+    { "question": "Hat Reis oder Nudeln mehr Kalorien?", "answer": "Gekocht haben beide ähnlich viele Kalorien: Reis ca. 130 kcal/100g, Nudeln ca. 157 kcal/100g. Pro Portion liegt der Unterschied bei ca. 25 kcal." },
+    { "question": "Welcher Reis hat die wenigsten Kalorien?", "answer": "Wildreis hat mit ca. 100 kcal/100g gekocht die wenigsten Kalorien. Auch Vollkornreis (115 kcal/100g) ist etwas kalorienärmer als weißer Reis." },
+    { "question": "Ist Reis gut zum Abnehmen?", "answer": "Reis kann beim Abnehmen helfen – er ist fettarm und sättigend. Wähle Vollkornreis für mehr Ballaststoffe und lass ihn abkühlen für resistente Stärke." },
+    { "question": "Wie viele Kalorien hat Reis ungekocht vs. gekocht?", "answer": "Ungekochter Reis hat ca. 350 kcal/100g, gekochter nur ca. 130 kcal/100g. Der Unterschied entsteht durch die Wasseraufnahme beim Kochen – das Gewicht verdreifacht sich." },
+    { "question": "Hat Basmati weniger Kalorien als normaler Reis?", "answer": "Basmatireis hat mit ca. 120 kcal/100g gekocht etwas weniger Kalorien als weißer Langkornreis (130 kcal/100g). Der Unterschied ist aber gering." }
+  ],
+  "related_foods": ["nudeln", "kartoffelsalat", "ei", "brot"]
+}
