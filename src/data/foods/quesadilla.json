@@ -1,0 +1,50 @@
+{
+  "slug": "quesadilla",
+  "name": "Quesadilla",
+  "emoji": "🫔",
+  "category": "fast-food",
+  "seo": {
+    "title": "Quesadilla Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Quesadilla? Mit Käse, Hähnchen oder vegetarisch – alle Nährwerte im Überblick. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 245,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 1.2,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Quesadilla"
+  },
+  "variants": [
+    {"name": "Quesadilla mit Käse", "portion_g": 200, "calories": 490, "protein": 22, "carbs": 44, "fat": 24, "tip": "Einfache Käse-Variante"},
+    {"name": "Quesadilla mit Hähnchen", "portion_g": 260, "calories": 580, "protein": 35, "carbs": 46, "fat": 28, "tip": "Proteinreiche Variante"},
+    {"name": "Quesadilla mit Rindfleisch", "portion_g": 270, "calories": 640, "protein": 36, "carbs": 44, "fat": 34},
+    {"name": "Quesadilla Vegetarisch", "portion_g": 240, "calories": 470, "protein": 18, "carbs": 50, "fat": 22, "tip": "Mit Bohnen & Paprika"},
+    {"name": "Quesadilla mit Garnelen", "portion_g": 250, "calories": 520, "protein": 32, "carbs": 42, "fat": 24, "tip": "Leichtere Füllung"},
+    {"name": "Mini-Quesadillas (3 Stück)", "portion_g": 180, "calories": 440, "protein": 20, "carbs": 38, "fat": 22},
+    {"name": "Vollkorn-Quesadilla", "portion_g": 250, "calories": 540, "protein": 30, "carbs": 50, "fat": 24, "tip": "Mehr Ballaststoffe"}
+  ],
+  "comparison": [
+    {"name": "Burrito", "calories": 650, "emoji": "🌯"},
+    {"name": "Wrap mit Hähnchen", "calories": 450, "emoji": "🫔"},
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Pizza Margherita (1 Stück)", "calories": 270, "emoji": "🍕"}
+  ],
+  "tips": [
+    {"title": "Weniger Käse verwenden", "text": "Der Käse macht ca. 40% der Kalorien aus. Mit der Hälfte schmeckt es immer noch gut – spart 100+ kcal.", "icon": "🧀"},
+    {"title": "Vollkorn-Tortilla nehmen", "text": "Vollkorn-Tortillas haben mehr Ballaststoffe und halten länger satt als weiße Weizen-Tortillas.", "icon": "🌾"},
+    {"title": "Hähnchen statt Rind", "text": "Hähnchen-Quesadilla hat ca. 60 kcal weniger als die Rind-Variante – bei ähnlichem Proteingehalt.", "icon": "🍗"},
+    {"title": "In der Pfanne ohne Öl", "text": "Eine beschichtete Pfanne braucht kein Extra-Öl. Das spart ca. 90 kcal pro Quesadilla.", "icon": "🍳"},
+    {"title": "Saure Sahne portionieren", "text": "Ein EL Saure Sahne hat ca. 30 kcal, Guacamole ca. 50 kcal. Beides bewusst dosieren.", "icon": "🥑"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Quesadilla?", "answer": "Eine Käse-Quesadilla hat ca. 490 kcal, mit Hähnchen ca. 580 kcal und mit Rindfleisch ca. 640 kcal."},
+    {"question": "Ist eine Quesadilla gut zum Abnehmen?", "answer": "Quesadillas sind relativ kalorienreich durch Käse und Tortilla. Die vegetarische Variante (470 kcal) oder mit Hähnchen (580 kcal, 35g Protein) sind die besten Optionen für eine Diät."},
+    {"question": "Wie viel Protein hat eine Quesadilla?", "answer": "Je nach Füllung liefert eine Quesadilla 18-36g Protein. Die Hähnchen-Variante hat mit 35g den besten Wert."},
+    {"question": "Was hat weniger Kalorien: Quesadilla oder Burrito?", "answer": "Eine Quesadilla (490-580 kcal) hat weniger Kalorien als ein Burrito (600-700 kcal), da der Burrito mehr Reis, Bohnen und Füllung enthält."},
+    {"question": "Wie viel Fett hat eine Quesadilla?", "answer": "Eine Quesadilla enthält ca. 22-34g Fett, hauptsächlich aus dem Käse. Fettärmerer Käse kann hier deutlich helfen."},
+    {"question": "Kann man Quesadillas kalorienärmer machen?", "answer": "Ja: Weniger Käse, Vollkorn-Tortilla, Hähnchen statt Rind, kein Extra-Öl und viel Gemüse in der Füllung. So sparst du bis zu 200 kcal."}
+  ],
+  "related_foods": ["wrap", "burger", "nachos", "pizza"]
+}

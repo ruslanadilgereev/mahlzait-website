@@ -1,0 +1,50 @@
+{
+  "slug": "pommes-currywurst",
+  "name": "Pommes-Currywurst",
+  "emoji": "🍟",
+  "category": "fast-food",
+  "seo": {
+    "title": "Pommes-Currywurst Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Pommes-Currywurst? Das Imbiss-Kombi-Gericht mit allen Nährwerten. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 215,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 11,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 450,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Pommes-Currywurst klassisch", "portion_g": 450, "calories": 968, "protein": 28, "carbs": 80, "fat": 58, "tip": "Imbiss-Standard"},
+    {"name": "Pommes-Currywurst (kleine Portion)", "portion_g": 300, "calories": 645, "protein": 19, "carbs": 53, "fat": 39},
+    {"name": "Pommes-Currywurst mit Mayo", "portion_g": 480, "calories": 1100, "protein": 28, "carbs": 82, "fat": 72, "tip": "Extra Mayo auf den Pommes"},
+    {"name": "Pommes-Currywurst ohne Darm", "portion_g": 430, "calories": 890, "protein": 24, "carbs": 78, "fat": 52, "tip": "Berliner Style"},
+    {"name": "Süßkartoffel-Pommes mit Currywurst", "portion_g": 440, "calories": 880, "protein": 26, "carbs": 85, "fat": 48, "tip": "Etwas weniger Fett"},
+    {"name": "Pommes-Currywurst Vegan", "portion_g": 420, "calories": 750, "protein": 18, "carbs": 82, "fat": 38, "tip": "Pflanzliche Alternative"},
+    {"name": "Pommes-Currywurst XL", "portion_g": 600, "calories": 1290, "protein": 36, "carbs": 106, "fat": 78, "tip": "Extra große Portion"}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Schnitzel mit Pommes", "calories": 850, "emoji": "🥩"},
+    {"name": "Currywurst ohne Pommes", "calories": 500, "emoji": "🌭"},
+    {"name": "Hähnchenbrust mit Reis", "calories": 450, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Kleine Portion bestellen", "text": "Die kleine Portion (645 kcal) spart über 300 kcal gegenüber der Standard-Portion (968 kcal).", "icon": "📏"},
+    {"title": "Ohne Mayo", "text": "Mayo auf den Pommes fügt ca. 130 kcal hinzu. Ketchup (30 kcal) ist die deutlich leichtere Alternative.", "icon": "🚫"},
+    {"title": "Currywurst ohne Pommes", "text": "Die Pommes machen ca. die Hälfte der Kalorien aus. Nur Currywurst mit Brötchen spart ca. 300 kcal.", "icon": "🍞"},
+    {"title": "Ohne Darm wählen", "text": "Currywurst ohne Darm hat ca. 20% weniger Fett. In Berlin ist das Standard.", "icon": "✂️"},
+    {"title": "Vegane Variante testen", "text": "Vegane Pommes-Currywurst hat ca. 750 kcal – über 200 kcal weniger als die klassische Version.", "icon": "🌱"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Pommes-Currywurst?", "answer": "Eine klassische Portion Pommes-Currywurst hat ca. 968 kcal. Die kleine Portion hat ca. 645 kcal, mit extra Mayo ca. 1100 kcal."},
+    {"question": "Ist Pommes-Currywurst das kalorienreichste Imbiss-Essen?", "answer": "Fast. Mit ca. 968 kcal liegt sie vorne. Nur die Döner Box mit Käse (1050 kcal) und manche Burger-Menüs sind kalorienreicher."},
+    {"question": "Wie viel Fett hat Pommes-Currywurst?", "answer": "Eine Portion enthält ca. 58g Fett – das ist fast der gesamte Tagesbedarf. Mit Mayo sogar 72g Fett."},
+    {"question": "Was hat mehr Kalorien: Pommes-Currywurst oder Döner?", "answer": "Pommes-Currywurst (968 kcal) hat deutlich mehr Kalorien als ein Döner (600 kcal). Der Unterschied sind hauptsächlich die frittierten Pommes."},
+    {"question": "Kann man Pommes-Currywurst kalorienärmer essen?", "answer": "Ja: Kleine Portion bestellen (-300 kcal), ohne Mayo (-130 kcal), ohne Darm (-80 kcal), oder nur Wurst mit Brötchen statt Pommes."},
+    {"question": "Wie viel Protein hat Pommes-Currywurst?", "answer": "Eine Portion liefert ca. 28g Protein – relativ wenig für die Kalorienmenge. Der Großteil der Kalorien kommt aus Fett und Kohlenhydraten."}
+  ],
+  "related_foods": ["currywurst", "pommes-frites", "bratwurst", "schnitzel"]
+}

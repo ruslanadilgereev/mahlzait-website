@@ -1,0 +1,50 @@
+{
+  "slug": "doener-box",
+  "name": "Döner Box",
+  "emoji": "📦",
+  "category": "fast-food",
+  "seo": {
+    "title": "Döner Box Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Döner Box? Nährwerte für Pomm-Döner, mit Reis oder Salat – alle Varianten im Überblick. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 195,
+    "protein_per_100g": 11,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 9,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 450,
+    "typical_portion_name": "1 Döner Box"
+  },
+  "variants": [
+    {"name": "Döner Box mit Pommes", "portion_g": 450, "calories": 880, "protein": 35, "carbs": 75, "fat": 48, "tip": "Klassiker vom Imbiss"},
+    {"name": "Döner Box mit Reis", "portion_g": 450, "calories": 750, "protein": 38, "carbs": 80, "fat": 28, "tip": "Etwas leichter als mit Pommes"},
+    {"name": "Döner Box mit Salat", "portion_g": 400, "calories": 520, "protein": 35, "carbs": 20, "fat": 32, "tip": "Kalorienärmste Variante"},
+    {"name": "Döner Box Hähnchen", "portion_g": 450, "calories": 780, "protein": 42, "carbs": 72, "fat": 35, "tip": "Mehr Protein, weniger Fett"},
+    {"name": "Döner Box mit Käse überbacken", "portion_g": 500, "calories": 1050, "protein": 45, "carbs": 78, "fat": 58, "tip": "Extra Käse = extra Kalorien"},
+    {"name": "Döner Box Vegetarisch (Falafel)", "portion_g": 420, "calories": 720, "protein": 22, "carbs": 80, "fat": 34, "tip": "Pflanzliche Alternative"},
+    {"name": "Döner Box XL", "portion_g": 600, "calories": 1170, "protein": 48, "carbs": 100, "fat": 62, "tip": "Doppelte Fleischportion"}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
+    {"name": "Big Mac Menü", "calories": 1080, "emoji": "🍔"},
+    {"name": "Hähnchenbrust mit Reis", "calories": 450, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Reis statt Pommes", "text": "Mit Reis statt Pommes sparst du ca. 130 kcal und bekommst langsamere Kohlenhydrate.", "icon": "🍚"},
+    {"title": "Salat-Variante wählen", "text": "Eine Döner Box mit Salat statt Pommes spart bis zu 360 kcal – bei gleichem Fleischanteil.", "icon": "🥗"},
+    {"title": "Sauce reduzieren", "text": "Knoblauch- und Cocktailsauce haben je 50-80 kcal pro Portion. Weniger Sauce = weniger Kalorien.", "icon": "🥫"},
+    {"title": "Hähnchenfleisch bestellen", "text": "Hähnchen-Döner hat ca. 15% weniger Fett als Kalb/Lamm-Mischungen.", "icon": "🍗"},
+    {"title": "Ohne Käse-Überbacken", "text": "Die Käseschicht fügt ca. 170 kcal hinzu. Ohne Käse bleibt die Box deutlich leichter.", "icon": "🧀"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Döner Box?", "answer": "Eine klassische Döner Box mit Pommes hat ca. 880 kcal. Mit Reis sind es ca. 750 kcal, mit Salat nur ca. 520 kcal."},
+    {"question": "Was hat mehr Kalorien: Döner Box oder Döner im Brot?", "answer": "Eine Döner Box mit Pommes (880 kcal) hat deutlich mehr Kalorien als ein Döner im Brot (550-650 kcal), hauptsächlich wegen der Pommes."},
+    {"question": "Ist eine Döner Box gut zum Abnehmen?", "answer": "Die klassische Döner Box mit Pommes ist sehr kalorienreich. Die Salat-Variante (520 kcal) mit viel Protein ist aber eine brauchbare Option für eine sättigende Mahlzeit."},
+    {"question": "Wie viel Protein hat eine Döner Box?", "answer": "Eine Döner Box liefert ca. 35-48g Protein pro Portion, je nach Fleischmenge und Variante. Das macht sie trotz der Kalorien zu einer proteinreichen Mahlzeit."},
+    {"question": "Was ist die kalorienärmste Döner Box?", "answer": "Die kalorienärmste Variante ist die Döner Box mit Salat statt Pommes (ca. 520 kcal) oder die Hähnchen-Variante mit Reis (ca. 780 kcal)."},
+    {"question": "Wie schwer ist eine Döner Box?", "answer": "Eine Standard-Döner Box wiegt ca. 400-500g. Die XL-Version kann bis zu 600g wiegen. Das Gewicht variiert je nach Imbiss."}
+  ],
+  "related_foods": ["pommes-frites", "gyros", "falafel", "duerrum"]
+}

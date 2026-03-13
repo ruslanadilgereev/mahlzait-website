@@ -1,0 +1,50 @@
+{
+  "slug": "cheeseburger",
+  "name": "Cheeseburger",
+  "emoji": "🍔",
+  "category": "fast-food",
+  "seo": {
+    "title": "Cheeseburger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Cheeseburger? McDonald's, Burger King & selbstgemacht – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 263,
+    "protein_per_100g": 14,
+    "carbs_per_100g": 24,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 1.0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Cheeseburger"
+  },
+  "variants": [
+    {"name": "Cheeseburger (McDonald's)", "portion_g": 119, "calories": 304, "protein": 16, "carbs": 30, "fat": 13, "tip": "Fast-Food-Standard"},
+    {"name": "Cheeseburger (Burger King)", "portion_g": 133, "calories": 320, "protein": 17, "carbs": 28, "fat": 15},
+    {"name": "Double Cheeseburger", "portion_g": 175, "calories": 450, "protein": 26, "carbs": 30, "fat": 24, "tip": "Doppeltes Patty"},
+    {"name": "Cheeseburger selbstgemacht", "portion_g": 250, "calories": 530, "protein": 32, "carbs": 35, "fat": 28, "tip": "Größeres Patty als Fast Food"},
+    {"name": "Bacon Cheeseburger", "portion_g": 230, "calories": 580, "protein": 34, "carbs": 32, "fat": 34, "tip": "Extra Bacon"},
+    {"name": "Cheeseburger mit Vollkorn-Bun", "portion_g": 240, "calories": 510, "protein": 33, "carbs": 38, "fat": 24, "tip": "Mehr Ballaststoffe"},
+    {"name": "Mini-Cheeseburger (Slider)", "portion_g": 80, "calories": 210, "protein": 11, "carbs": 16, "fat": 11}
+  ],
+  "comparison": [
+    {"name": "Big Mac", "calories": 509, "emoji": "🍔"},
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Currywurst", "calories": 500, "emoji": "🌭"},
+    {"name": "Veggie-Burger", "calories": 380, "emoji": "🌿"}
+  ],
+  "tips": [
+    {"title": "Einzelnes Patty reicht", "text": "Ein Single Cheeseburger hat ca. 300 kcal, ein Double ca. 450 kcal. Das Extra-Patty lohnt sich kalorientechnisch selten.", "icon": "1️⃣"},
+    {"title": "Kein Mayo, dafür Senf", "text": "Mayo hat ca. 100 kcal/EL, Senf nur 10 kcal. Einfachster Tausch für weniger Kalorien.", "icon": "💛"},
+    {"title": "Dünneres Brötchen oder Wrap", "text": "Ein normales Burger-Bun hat ca. 150 kcal. Ein Wrap oder dünnes Bun spart 50-80 kcal.", "icon": "🍞"},
+    {"title": "Salat statt Pommes", "text": "Als Beilage Salat statt Pommes spart ca. 300 kcal. Der Burger selbst ist die Hauptmahlzeit.", "icon": "🥗"},
+    {"title": "Selbstgemacht ist besser", "text": "Zuhause kontrollierst du Fleischqualität, Fettgehalt und Portionsgröße. Mageres Hack (5% Fett) spart erheblich.", "icon": "👨‍🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Cheeseburger?", "answer": "Ein Cheeseburger hat ca. 300-530 kcal, je nach Größe. McDonald's Cheeseburger: 304 kcal, selbstgemacht: ca. 530 kcal (größeres Patty)."},
+    {"question": "Was hat mehr Kalorien: Cheeseburger oder Hamburger?", "answer": "Ein Cheeseburger hat durch den Käse ca. 50-80 kcal mehr als ein Hamburger gleicher Größe. Eine Scheibe Käse fügt ca. 60-80 kcal hinzu."},
+    {"question": "Wie viel Protein hat ein Cheeseburger?", "answer": "Ein Cheeseburger liefert 16-34g Protein, je nach Größe und Patty. Ein selbstgemachter mit 150g-Patty hat ca. 32g Protein."},
+    {"question": "Ist ein Cheeseburger ungesund?", "answer": "Ein einfacher Cheeseburger (300 kcal) ist kalorienmäßig moderate Kost. Problematisch wird es bei Double/Triple-Varianten, Extra-Sauce und Pommes als Beilage."},
+    {"question": "Wie viel Fett hat ein Cheeseburger?", "answer": "Ein Cheeseburger enthält 13-34g Fett. Der Großteil kommt aus dem Patty und dem Käse. Mageres Hackfleisch reduziert den Fettgehalt deutlich."},
+    {"question": "Welcher Cheeseburger hat am wenigsten Kalorien?", "answer": "Der einfache McDonald's Cheeseburger mit 304 kcal ist einer der kalorienärmsten. Slider/Mini-Cheeseburger haben nur ca. 210 kcal."}
+  ],
+  "related_foods": ["burger", "double-burger", "chicken-burger", "pommes-frites"]
+}

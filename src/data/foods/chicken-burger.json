@@ -1,0 +1,50 @@
+{
+  "slug": "chicken-burger",
+  "name": "Chicken Burger",
+  "emoji": "🍔",
+  "category": "fast-food",
+  "seo": {
+    "title": "Chicken Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Chicken Burger? Crispy, gegrillt oder Buttermilk – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 230,
+    "protein_per_100g": 16,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 10,
+    "fiber_per_100g": 1.0,
+    "typical_portion_g": 230,
+    "typical_portion_name": "1 Chicken Burger"
+  },
+  "variants": [
+    {"name": "McChicken (McDonald's)", "portion_g": 167, "calories": 388, "protein": 16, "carbs": 40, "fat": 18, "tip": "Fast-Food-Klassiker"},
+    {"name": "Crispy Chicken Burger", "portion_g": 240, "calories": 550, "protein": 28, "carbs": 45, "fat": 28, "tip": "Paniert & frittiert"},
+    {"name": "Gegrillter Chicken Burger", "portion_g": 220, "calories": 420, "protein": 35, "carbs": 38, "fat": 14, "tip": "Kalorienärmste Variante"},
+    {"name": "Buttermilk Chicken Burger", "portion_g": 250, "calories": 580, "protein": 30, "carbs": 48, "fat": 30},
+    {"name": "Chicken Burger mit Avocado", "portion_g": 260, "calories": 520, "protein": 32, "carbs": 40, "fat": 24, "tip": "Gesunde Fette"},
+    {"name": "Spicy Chicken Burger", "portion_g": 235, "calories": 530, "protein": 27, "carbs": 44, "fat": 26, "tip": "Mit Jalapeños & Sriracha"},
+    {"name": "Chicken Burger (Long Chicken / BK)", "portion_g": 230, "calories": 610, "protein": 27, "carbs": 52, "fat": 32, "tip": "Längliches Format"}
+  ],
+  "comparison": [
+    {"name": "Cheeseburger", "calories": 304, "emoji": "🍔"},
+    {"name": "Chicken Nuggets (9 Stk)", "calories": 420, "emoji": "🍗"},
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Hähnchenbrust gegrillt", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Gegrillt statt frittiert", "text": "Ein gegrillter Chicken Burger hat ca. 420 kcal vs. 550 kcal für Crispy – bei deutlich mehr Protein.", "icon": "🔥"},
+    {"title": "Sauce weglassen oder reduzieren", "text": "Mayo-basierte Saucen fügen 80-120 kcal hinzu. Senf oder leichte Joghurt-Sauce sind bessere Alternativen.", "icon": "🥫"},
+    {"title": "Ohne Panade bestellen", "text": "Die Panade allein macht ca. 100-150 kcal aus. 'Grilled' statt 'Crispy' ist der einfachste Kalorienspar-Trick.", "icon": "🍞"},
+    {"title": "Hähnchenbrust selbst grillen", "text": "Selbstgemacht mit magerem Hähnchen, Vollkorn-Bun und frischem Salat: nur ca. 380 kcal.", "icon": "👨‍🍳"},
+    {"title": "Protein-Booster", "text": "Chicken Burger sind mit 28-35g Protein eine der proteinreichsten Fast-Food-Optionen.", "icon": "💪"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Chicken Burger?", "answer": "Ein Chicken Burger hat ca. 388-610 kcal, je nach Variante. Gegrillt: ca. 420 kcal, Crispy: ca. 550 kcal, McChicken: 388 kcal."},
+    {"question": "Ist ein Chicken Burger gesünder als ein Cheeseburger?", "answer": "Ein gegrillter Chicken Burger (420 kcal, 35g Protein) ist deutlich leichter als ein Cheeseburger (530 kcal). Crispy Chicken Burger sind allerdings ähnlich kalorienreich."},
+    {"question": "Wie viel Protein hat ein Chicken Burger?", "answer": "Ein Chicken Burger liefert 16-35g Protein. Die gegrillte Variante hat mit 35g den besten Wert."},
+    {"question": "Was hat weniger Kalorien: Chicken Burger oder Döner?", "answer": "Ein gegrillter Chicken Burger (420 kcal) hat weniger Kalorien als ein Döner (600 kcal). Crispy Chicken Burger (550 kcal) sind nur leicht darunter."},
+    {"question": "Wie viel Fett hat ein Chicken Burger?", "answer": "Ein Chicken Burger enthält 14-32g Fett. Gegrillte Varianten haben mit 14g am wenigsten, Crispy/Buttermilk mit 28-30g am meisten."},
+    {"question": "Welcher Chicken Burger hat am wenigsten Kalorien?", "answer": "Der gegrillte Chicken Burger mit ca. 420 kcal ist die kalorienärmste Variante. Selbstgemacht mit magerem Hähnchen sind sogar nur ca. 380 kcal möglich."}
+  ],
+  "related_foods": ["burger", "cheeseburger", "chicken-nuggets", "wrap"]
+}

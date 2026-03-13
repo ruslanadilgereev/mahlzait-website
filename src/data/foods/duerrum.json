@@ -1,0 +1,50 @@
+{
+  "slug": "duerrum",
+  "name": "Dürüm",
+  "emoji": "🌯",
+  "category": "fast-food",
+  "seo": {
+    "title": "Dürüm Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Dürüm? Döner-Dürüm, Hähnchen oder vegetarisch – alle Nährwerte im Überblick. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 215,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 9,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 380,
+    "typical_portion_name": "1 Dürüm"
+  },
+  "variants": [
+    {"name": "Dürüm Döner (Kalb/Lamm)", "portion_g": 380, "calories": 650, "protein": 38, "carbs": 55, "fat": 32, "tip": "Klassischer Dürüm"},
+    {"name": "Dürüm Hähnchen", "portion_g": 370, "calories": 580, "protein": 42, "carbs": 52, "fat": 22, "tip": "Leichtere Variante"},
+    {"name": "Dürüm Falafel", "portion_g": 350, "calories": 560, "protein": 18, "carbs": 65, "fat": 26, "tip": "Vegane Option"},
+    {"name": "Dürüm mit Käse", "portion_g": 400, "calories": 740, "protein": 40, "carbs": 56, "fat": 38},
+    {"name": "Dürüm Vegetarisch (Grillgemüse)", "portion_g": 340, "calories": 480, "protein": 14, "carbs": 58, "fat": 20, "tip": "Kalorienärmste Variante"},
+    {"name": "Dürüm XL (extra Fleisch)", "portion_g": 480, "calories": 820, "protein": 52, "carbs": 62, "fat": 40, "tip": "Doppelte Portion Fleisch"},
+    {"name": "Dürüm Sucuk", "portion_g": 380, "calories": 720, "protein": 35, "carbs": 52, "fat": 38, "tip": "Mit türkischer Knoblauchwurst"}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab (im Brot)", "calories": 600, "emoji": "🥙"},
+    {"name": "Lahmacun mit Salat", "calories": 520, "emoji": "🫓"},
+    {"name": "Wrap mit Hähnchen", "calories": 450, "emoji": "🌯"},
+    {"name": "Burrito", "calories": 650, "emoji": "🌯"}
+  ],
+  "tips": [
+    {"title": "Hähnchen statt Kalb", "text": "Hähnchen-Dürüm hat ca. 70 kcal weniger und mehr Protein als die klassische Kalb/Lamm-Variante.", "icon": "🍗"},
+    {"title": "Weniger Sauce bestellen", "text": "Knoblauch- und Cocktailsauce zusammen fügen 100-150 kcal hinzu. Nur eine Sauce reicht oft aus.", "icon": "🥫"},
+    {"title": "Dürüm vs. Döner im Brot", "text": "Ein Dürüm hat ca. 50 kcal mehr als ein Döner im Brot, da die Yufka-Flade etwas kalorienreicher ist.", "icon": "📊"},
+    {"title": "Viel Salat verlangen", "text": "Mehr Salat, Tomaten und Zwiebeln im Dürüm füllen ohne extra Kalorien.", "icon": "🥗"},
+    {"title": "Grillgemüse-Variante testen", "text": "Vegetarisches Dürüm mit Grillgemüse hat nur ca. 480 kcal – fast 200 kcal weniger als mit Fleisch.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Dürüm?", "answer": "Ein klassischer Dürüm Döner hat ca. 650 kcal. Hähnchen: ca. 580 kcal, Falafel: ca. 560 kcal, Vegetarisch: ca. 480 kcal."},
+    {"question": "Was hat mehr Kalorien: Dürüm oder Döner?", "answer": "Ein Dürüm (650 kcal) hat ca. 50 kcal mehr als ein Döner im Brot (600 kcal). Der Unterschied liegt an der Yufka-Flade vs. Fladenbrot."},
+    {"question": "Ist ein Dürüm gesund?", "answer": "Ein Dürüm liefert 38g Protein, frisches Gemüse und Salat. Kalorientechnisch ist es eine volle Mahlzeit. Die Hähnchen-Variante hat das beste Verhältnis."},
+    {"question": "Wie viel Protein hat ein Dürüm?", "answer": "Ein Dürüm liefert 14-52g Protein, je nach Füllung. Hähnchen (42g) und Döner (38g) sind die proteinreichsten Optionen."},
+    {"question": "Was ist der Unterschied zwischen Dürüm und Wrap?", "answer": "Dürüm wird mit dünner Yufka-Flade gemacht und mit Dönerfleisch gefüllt. Ein Wrap verwendet eine Weizen-Tortilla und hat vielfältigere Füllungen."},
+    {"question": "Welcher Dürüm hat am wenigsten Kalorien?", "answer": "Der Grillgemüse-Dürüm mit ca. 480 kcal ist am leichtesten. Beim Fleisch-Dürüm ist die Hähnchen-Variante (580 kcal) die kalorienärmste."}
+  ],
+  "related_foods": ["doener-box", "lahmacun", "wrap", "falafel"]
+}

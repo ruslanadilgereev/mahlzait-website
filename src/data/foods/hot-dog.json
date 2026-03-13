@@ -1,0 +1,50 @@
+{
+  "slug": "hot-dog",
+  "name": "Hot Dog",
+  "emoji": "🌭",
+  "category": "fast-food",
+  "seo": {
+    "title": "Hot Dog Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Hot Dog? Nährwerte für klassische, dänische und American Hot Dogs. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 247,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Hot Dog"
+  },
+  "variants": [
+    {"name": "Klassischer Hot Dog", "portion_g": 200, "calories": 494, "protein": 20, "carbs": 44, "fat": 26, "tip": "Standard-Variante"},
+    {"name": "Dänischer Hot Dog", "portion_g": 220, "calories": 540, "protein": 18, "carbs": 48, "fat": 30, "tip": "Mit Röstzwiebeln & Gurken"},
+    {"name": "American Hot Dog (Chili Cheese)", "portion_g": 280, "calories": 720, "protein": 28, "carbs": 52, "fat": 42, "tip": "Kalorienreichste Variante"},
+    {"name": "Hot Dog mit Sauerkraut", "portion_g": 230, "calories": 480, "protein": 22, "carbs": 40, "fat": 24, "tip": "Deutsche Variante"},
+    {"name": "Veganer Hot Dog", "portion_g": 190, "calories": 380, "protein": 16, "carbs": 42, "fat": 16, "tip": "Pflanzliche Alternative"},
+    {"name": "Mini Hot Dog (Snack)", "portion_g": 100, "calories": 247, "protein": 10, "carbs": 22, "fat": 13},
+    {"name": "French Hot Dog", "portion_g": 180, "calories": 460, "protein": 17, "carbs": 40, "fat": 25, "tip": "Im Baguette-Brötchen"}
+  ],
+  "comparison": [
+    {"name": "Bratwurst im Brötchen", "calories": 450, "emoji": "🌭"},
+    {"name": "Currywurst", "calories": 500, "emoji": "🌭"},
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Hamburger", "calories": 350, "emoji": "🍔"}
+  ],
+  "tips": [
+    {"title": "Ketchup statt Mayo", "text": "Ketchup hat ca. 20 kcal pro EL, Mayo ca. 100 kcal. Ein einfacher Tausch spart deutlich.", "icon": "🥫"},
+    {"title": "Vollkorn-Brötchen wählen", "text": "Vollkornbrötchen haben ähnliche Kalorien, aber mehr Ballaststoffe – du bleibst länger satt.", "icon": "🍞"},
+    {"title": "Röstzwiebeln weglassen", "text": "Frittierte Röstzwiebeln fügen ca. 60-80 kcal hinzu. Frische Zwiebeln sind kalorienarm.", "icon": "🧅"},
+    {"title": "Vegane Würstchen testen", "text": "Vegane Hot-Dog-Würstchen haben oft 30% weniger Kalorien und deutlich weniger Fett.", "icon": "🌱"},
+    {"title": "Senf ist der Gewinner", "text": "Senf hat nur ca. 10 kcal pro EL und ist damit der kalorienärmste Belag für Hot Dogs.", "icon": "💛"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Hot Dog?", "answer": "Ein klassischer Hot Dog hat ca. 494 kcal. Je nach Belag variiert es zwischen 380 kcal (vegan) und 720 kcal (Chili Cheese)."},
+    {"question": "Ist ein Hot Dog gesund?", "answer": "Hot Dogs sind verarbeitetes Fleisch mit viel Fett und Natrium. Als gelegentlicher Snack okay, aber nicht als regelmäßige Mahlzeit empfehlenswert."},
+    {"question": "Wie viel Protein hat ein Hot Dog?", "answer": "Ein Hot Dog liefert ca. 17-28g Protein, abhängig von der Variante. Die Chili-Cheese-Variante hat mit 28g am meisten."},
+    {"question": "Was hat weniger Kalorien: Hot Dog oder Bratwurst?", "answer": "Ein klassischer Hot Dog (494 kcal) und eine Bratwurst im Brötchen (450 kcal) liegen nah beieinander. Ohne Brötchen ist die Bratwurst kalorienärmer."},
+    {"question": "Wie viel Fett hat ein Hot Dog?", "answer": "Ein klassischer Hot Dog enthält ca. 26g Fett. Die Chili-Cheese-Variante hat mit 42g am meisten Fett."},
+    {"question": "Welcher Hot Dog hat am wenigsten Kalorien?", "answer": "Der vegane Hot Dog mit ca. 380 kcal ist die kalorienärmste Variante. Beim klassischen Hot Dog ist die Sauerkraut-Version (480 kcal) am leichtesten."}
+  ],
+  "related_foods": ["bratwurst", "currywurst", "burger", "pommes-frites"]
+}

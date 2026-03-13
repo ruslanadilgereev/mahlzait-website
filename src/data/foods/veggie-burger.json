@@ -1,0 +1,51 @@
+{
+  "slug": "veggie-burger",
+  "name": "Veggie Burger",
+  "emoji": "🌿",
+  "category": "fast-food",
+  "seo": {
+    "title": "Veggie Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Veggie Burger? Beyond, Impossible, Bohnen & Gemüse – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 200,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 9,
+    "fiber_per_100g": 3.0,
+    "typical_portion_g": 220,
+    "typical_portion_name": "1 Veggie Burger"
+  },
+  "variants": [
+    {"name": "Beyond Meat Burger", "portion_g": 230, "calories": 480, "protein": 24, "carbs": 38, "fat": 24, "tip": "Fleischähnlich"},
+    {"name": "Impossible Burger", "portion_g": 230, "calories": 490, "protein": 26, "carbs": 40, "fat": 24},
+    {"name": "Bohnen-Burger (Black Bean)", "portion_g": 200, "calories": 380, "protein": 16, "carbs": 48, "fat": 12, "tip": "Ballaststoffreich"},
+    {"name": "Gemüse-Burger (Grünkern)", "portion_g": 200, "calories": 350, "protein": 12, "carbs": 42, "fat": 14, "tip": "Kalorienärmste Variante"},
+    {"name": "Halloumi-Burger", "portion_g": 230, "calories": 520, "protein": 22, "carbs": 35, "fat": 32, "tip": "Vegetarisch, nicht vegan"},
+    {"name": "Tofu-Burger", "portion_g": 210, "calories": 360, "protein": 20, "carbs": 35, "fat": 14, "tip": "Proteinreich & leicht"},
+    {"name": "McPlant (McDonald's)", "portion_g": 190, "calories": 405, "protein": 18, "carbs": 40, "fat": 18, "tip": "Fast-Food-Option"},
+    {"name": "Portobello-Burger", "portion_g": 220, "calories": 320, "protein": 10, "carbs": 35, "fat": 16, "tip": "Low-Cal mit Pilz-Patty"}
+  ],
+  "comparison": [
+    {"name": "Cheeseburger (Rind)", "calories": 530, "emoji": "🍔"},
+    {"name": "Chicken Burger", "calories": 420, "emoji": "🍗"},
+    {"name": "Falafel im Fladenbrot", "calories": 520, "emoji": "🧆"},
+    {"name": "Gemüse-Wrap", "calories": 350, "emoji": "🌯"}
+  ],
+  "tips": [
+    {"title": "Beyond/Impossible ≠ kalorienarm", "text": "Fleischersatz-Burger haben fast gleich viele Kalorien wie echte Burger. Für Kaloriensparen besser Bohnen- oder Gemüse-Patties.", "icon": "⚠️"},
+    {"title": "Bohnen-Burger für Ballaststoffe", "text": "Black-Bean-Burger liefern 8-10g Ballaststoffe pro Portion – dreimal so viel wie ein Fleisch-Burger.", "icon": "🫘"},
+    {"title": "Tofu-Patty für Protein", "text": "Tofu-Burger haben ein gutes Protein-zu-Kalorien-Verhältnis: 20g Protein bei nur 360 kcal.", "icon": "💪"},
+    {"title": "Saucen bewusst wählen", "text": "Vegane Mayo hat ähnlich viele Kalorien wie normale. Hummus oder Senf sind kalorienärmere Alternativen.", "icon": "🥫"},
+    {"title": "Selbst machen lohnt sich", "text": "Selbstgemachte Veggie-Burger aus Bohnen, Haferflocken und Gewürzen haben oft nur 200-250 kcal pro Patty.", "icon": "👨‍🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Veggie Burger?", "answer": "Ein Veggie Burger hat 320-520 kcal, je nach Patty-Art. Gemüse-Patty: ca. 350 kcal, Beyond Meat: ca. 480 kcal, Halloumi: ca. 520 kcal."},
+    {"question": "Ist ein Veggie Burger kalorienärmer als ein normaler Burger?", "answer": "Nicht unbedingt. Beyond/Impossible Burger (480-490 kcal) sind fast gleichwertig mit Fleisch-Burgern. Bohnen- und Gemüse-Patties (320-380 kcal) sind deutlich leichter."},
+    {"question": "Wie viel Protein hat ein Veggie Burger?", "answer": "Veggie Burger liefern 10-26g Protein. Beyond/Impossible (24-26g) kommen nahe an Fleisch heran, Gemüse-Patties (10-12g) haben deutlich weniger."},
+    {"question": "Sind Veggie Burger gesund?", "answer": "Veggie Burger aus Bohnen, Gemüse oder Tofu sind ballaststoffreich und nährstoffdicht. Hochverarbeitete Fleischersatz-Produkte sind kalorisch ähnlich zu Fleisch-Burgern."},
+    {"question": "Was hat weniger Kalorien: Veggie Burger oder Döner?", "answer": "Die meisten Veggie Burger (320-490 kcal) haben weniger Kalorien als ein Döner (600 kcal). Nur der Halloumi-Burger (520 kcal) kommt in die Nähe."},
+    {"question": "Welcher Veggie Burger hat am meisten Protein?", "answer": "Impossible Burger (26g) und Beyond Meat (24g) haben am meisten Protein. Bei natürlichen Alternativen liegt der Tofu-Burger (20g) vorne."}
+  ],
+  "related_foods": ["burger", "falafel", "cheeseburger", "wrap"]
+}

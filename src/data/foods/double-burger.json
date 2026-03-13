@@ -1,0 +1,50 @@
+{
+  "slug": "double-burger",
+  "name": "Double Burger",
+  "emoji": "🍔",
+  "category": "fast-food",
+  "seo": {
+    "title": "Double Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Double Burger? Big Mac, Whopper & mehr – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 255,
+    "protein_per_100g": 16,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 280,
+    "typical_portion_name": "1 Double Burger"
+  },
+  "variants": [
+    {"name": "Big Mac (McDonald's)", "portion_g": 215, "calories": 509, "protein": 27, "carbs": 43, "fat": 26, "tip": "Doppeltes Patty, Special Sauce"},
+    {"name": "Double Whopper (Burger King)", "portion_g": 374, "calories": 900, "protein": 52, "carbs": 50, "fat": 56, "tip": "Flame-grilled"},
+    {"name": "Double Cheeseburger", "portion_g": 175, "calories": 450, "protein": 26, "carbs": 30, "fat": 24},
+    {"name": "Double Burger selbstgemacht", "portion_g": 350, "calories": 750, "protein": 50, "carbs": 40, "fat": 42, "tip": "2x 125g Patties"},
+    {"name": "Double Bacon Burger", "portion_g": 320, "calories": 820, "protein": 48, "carbs": 38, "fat": 50, "tip": "Extra Bacon & Käse"},
+    {"name": "Double Smash Burger", "portion_g": 280, "calories": 680, "protein": 40, "carbs": 35, "fat": 38, "tip": "Trendy & knusprig"},
+    {"name": "Double Veggie Burger", "portion_g": 300, "calories": 560, "protein": 28, "carbs": 55, "fat": 24, "tip": "Pflanzliche Alternative"}
+  ],
+  "comparison": [
+    {"name": "Einfacher Cheeseburger", "calories": 304, "emoji": "🍔"},
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Schnitzel", "calories": 550, "emoji": "🥩"},
+    {"name": "Hähnchenbrust mit Reis", "calories": 450, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Einfacher Burger reicht oft", "text": "Ein Single-Burger (300-400 kcal) macht genauso satt wie ein Double (500-900 kcal), wenn du langsam isst.", "icon": "1️⃣"},
+    {"title": "Smash Burger wählen", "text": "Smash Burger haben dünnere Patties und dadurch ca. 15% weniger Kalorien als dicke Patties gleichen Gewichts.", "icon": "🔨"},
+    {"title": "Ohne Sauce bestellen", "text": "Special Sauce, Mayo und Ketchup zusammen fügen ca. 150-200 kcal hinzu. Senf reicht oft aus.", "icon": "🚫"},
+    {"title": "Salat als Beilage", "text": "Ein Double Burger ohne Pommes ist eine Mahlzeit für sich. Pommes dazu machen es schnell 1000+ kcal.", "icon": "🥗"},
+    {"title": "Veggie-Double probieren", "text": "Ein doppelter Veggie-Burger hat ca. 560 kcal – 200-350 kcal weniger als die Fleisch-Variante.", "icon": "🌱"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Double Burger?", "answer": "Ein Double Burger hat 450-900 kcal, je nach Variante. Big Mac: 509 kcal, Double Whopper: 900 kcal, Double Cheeseburger: 450 kcal."},
+    {"question": "Was hat mehr Kalorien: Big Mac oder Double Whopper?", "answer": "Der Double Whopper (900 kcal) hat fast doppelt so viele Kalorien wie ein Big Mac (509 kcal), da er deutlich größer und schwerer ist."},
+    {"question": "Wie viel Protein hat ein Double Burger?", "answer": "Ein Double Burger liefert 26-52g Protein. Der Double Whopper führt mit 52g, ein selbstgemachter Double Burger hat ca. 50g."},
+    {"question": "Ist ein Double Burger ungesund?", "answer": "Mit 450-900 kcal und bis zu 56g Fett ist ein Double Burger eine sehr kalorienreiche Mahlzeit. Gelegentlich okay, aber nicht für eine regelmäßige Ernährung."},
+    {"question": "Wie viel Fett hat ein Double Burger?", "answer": "Ein Double Burger enthält 24-56g Fett. Das entspricht bei einem Double Whopper fast dem gesamten Tagesbedarf an Fett."},
+    {"question": "Lohnt sich der Double Burger kalorienmäßig?", "answer": "Ein Double hat ca. 50-80% mehr Kalorien als ein Single, aber nur ca. 50% mehr Protein. Kalorienmäßig ist der Single-Burger effizienter."}
+  ],
+  "related_foods": ["cheeseburger", "burger", "chicken-burger", "pommes-frites"]
+}

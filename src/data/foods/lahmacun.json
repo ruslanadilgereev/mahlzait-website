@@ -1,0 +1,50 @@
+{
+  "slug": "lahmacun",
+  "name": "Lahmacun",
+  "emoji": "🫓",
+  "category": "fast-food",
+  "seo": {
+    "title": "Lahmacun Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Lahmacun? Türkische Pizza mit Hackfleisch – alle Nährwerte im Überblick. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 210,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Lahmacun"
+  },
+  "variants": [
+    {"name": "Lahmacun pur", "portion_g": 200, "calories": 420, "protein": 20, "carbs": 56, "fat": 14, "tip": "Nur mit Hackfleisch-Belag"},
+    {"name": "Lahmacun mit Salat", "portion_g": 300, "calories": 520, "protein": 24, "carbs": 62, "fat": 18, "tip": "Klassisch vom Imbiss"},
+    {"name": "Lahmacun mit Dönerfleisch", "portion_g": 350, "calories": 680, "protein": 38, "carbs": 60, "fat": 32, "tip": "Extra Fleisch"},
+    {"name": "Lahmacun gerollt", "portion_g": 280, "calories": 560, "protein": 26, "carbs": 64, "fat": 22, "tip": "Wie ein Wrap gerollt"},
+    {"name": "Lahmacun Vegetarisch", "portion_g": 260, "calories": 440, "protein": 14, "carbs": 62, "fat": 14, "tip": "Ohne Fleisch, mit Gemüse"},
+    {"name": "Lahmacun mit Käse", "portion_g": 280, "calories": 620, "protein": 28, "carbs": 58, "fat": 28},
+    {"name": "Lahmacun Mini (2 Stück)", "portion_g": 160, "calories": 336, "protein": 16, "carbs": 45, "fat": 11}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Pizza Margherita (2 Stk)", "calories": 616, "emoji": "🍕"},
+    {"name": "Dürüm", "calories": 650, "emoji": "🌯"},
+    {"name": "Pide", "calories": 550, "emoji": "🫓"}
+  ],
+  "tips": [
+    {"title": "Lahmacun pur ist leicht", "text": "Pur hat Lahmacun nur ca. 420 kcal – weniger als ein Döner. Die Extras machen es schwerer.", "icon": "✅"},
+    {"title": "Salat statt Dönerfleisch", "text": "Lahmacun mit Salat (520 kcal) hat 160 kcal weniger als die Variante mit extra Dönerfleisch (680 kcal).", "icon": "🥗"},
+    {"title": "Zitrone statt Sauce", "text": "Ein Spritzer Zitrone ist kalorienfrei. Knoblauch- oder Cocktailsauce fügen 50-80 kcal hinzu.", "icon": "🍋"},
+    {"title": "Dünnere 'Türkische Pizza'", "text": "Lahmacun hat einen dünneren Teig als normale Pizza und ist dadurch pro Stück kalorienärmer.", "icon": "📏"},
+    {"title": "Petersilie & Zwiebeln dazu", "text": "Frische Petersilie und Zwiebeln sind kalorienarm und gehören traditionell zum Lahmacun.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Lahmacun?", "answer": "Ein Lahmacun pur hat ca. 420 kcal. Mit Salat sind es ca. 520 kcal, mit extra Dönerfleisch ca. 680 kcal."},
+    {"question": "Ist Lahmacun gesünder als Pizza?", "answer": "Lahmacun hat einen dünneren Teig und weniger Käse als Pizza. Pro Stück hat es oft weniger Kalorien. Allerdings fehlt die Sättigung durch den dünnen Teig."},
+    {"question": "Was hat weniger Kalorien: Lahmacun oder Döner?", "answer": "Lahmacun pur (420 kcal) hat weniger Kalorien als ein Döner (600 kcal). Mit extra Dönerfleisch (680 kcal) kehrt sich das um."},
+    {"question": "Wie viel Protein hat ein Lahmacun?", "answer": "Ein Lahmacun liefert 14-38g Protein, je nach Variante. Die Version mit Dönerfleisch hat mit 38g am meisten."},
+    {"question": "Was ist der Unterschied zwischen Lahmacun und Pide?", "answer": "Lahmacun hat einen hauchdünnen Teig mit Hackfleisch-Belag. Pide hat einen dickeren, bootförmigen Teig mit verschiedenen Füllungen und mehr Käse."},
+    {"question": "Wie viel Fett hat ein Lahmacun?", "answer": "Ein Lahmacun hat ca. 14-32g Fett, je nach Variante. Pur ist es mit 14g relativ fettarm für ein Fast-Food-Gericht."}
+  ],
+  "related_foods": ["duerrum", "pizza", "pide", "doener-box"]
+}
