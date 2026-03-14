@@ -3,6 +3,7 @@ import react from "@astrojs/react";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import { agentsSummary } from "@nuasite/agent-summary";
+import indexnow from "astro-indexnow";
 
 // https://astro.build/config
 export default defineConfig({
@@ -103,5 +104,6 @@ export default defineConfig({
       },
     }),
     agentsSummary(),
+    indexnow({ key: "1c802a7f00434fe04c269ffb5f9e526a" }),
   ],
 });
