@@ -1,0 +1,50 @@
+{
+  "slug": "flammkuchen",
+  "name": "Flammkuchen",
+  "emoji": "🫓",
+  "category": "fast-food",
+  "seo": {
+    "title": "Flammkuchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Flammkuchen? Elsässer Art, vegetarisch oder mit Lachs – alle Nährwerte und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 220,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 25,
+    "fat_per_100g": 10,
+    "fiber_per_100g": 1.3,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Flammkuchen"
+  },
+  "variants": [
+    {"name": "Flammkuchen Elsässer Art", "portion_g": 350, "calories": 770, "protein": 28, "carbs": 85, "fat": 35, "tip": "Der Klassiker"},
+    {"name": "Flammkuchen vegetarisch", "portion_g": 340, "calories": 650, "protein": 18, "carbs": 82, "fat": 28, "tip": "Ohne Speck"},
+    {"name": "Flammkuchen mit Lachs", "portion_g": 360, "calories": 790, "protein": 32, "carbs": 80, "fat": 38},
+    {"name": "Flammkuchen mit Ziegenkäse & Honig", "portion_g": 350, "calories": 730, "protein": 22, "carbs": 88, "fat": 32},
+    {"name": "Flammkuchen Münsterländer (Schmand & Speck)", "portion_g": 370, "calories": 830, "protein": 30, "carbs": 82, "fat": 42},
+    {"name": "Mini-Flammkuchen (Snack)", "portion_g": 150, "calories": 330, "protein": 12, "carbs": 38, "fat": 15, "tip": "Gute Snack-Portion"},
+    {"name": "Tiefkühl-Flammkuchen", "portion_g": 320, "calories": 680, "protein": 22, "carbs": 78, "fat": 30}
+  ],
+  "comparison": [
+    {"name": "Pizza Margherita", "calories": 750, "emoji": "🍕"},
+    {"name": "Quiche Lorraine", "calories": 680, "emoji": "🥧"},
+    {"name": "Brezel", "calories": 240, "emoji": "🥨"},
+    {"name": "Lahmacun", "calories": 580, "emoji": "🫓"}
+  ],
+  "tips": [
+    {"title": "Dünn ausrollen", "text": "Je dünner der Teig, desto weniger Kalorien. Ein hauchdünner Boden spart bis zu 200 kcal gegenüber einem dicken.", "icon": "📏"},
+    {"title": "Crème fraîche statt Schmand", "text": "Leichte Crème fraîche (15% Fett) statt Schmand (24%) spart ca. 80 kcal pro Flammkuchen.", "icon": "🥛"},
+    {"title": "Mehr Gemüse, weniger Speck", "text": "Zwiebeln, Lauch und Pilze statt der Hälfte des Specks sparen Kalorien und Fett.", "icon": "🧅"},
+    {"title": "Halben Flammkuchen bestellen", "text": "Im Restaurant lieber einen halben bestellen und mit Salat ergänzen – das reicht als Mahlzeit.", "icon": "✂️"},
+    {"title": "Selbst machen ist besser", "text": "Selbstgemachter Flammkuchen erlaubt volle Kontrolle über Belag und Menge – oft 30% weniger Kalorien.", "icon": "👨‍🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Flammkuchen?", "answer": "Ein ganzer Flammkuchen Elsässer Art hat ca. 770 kcal. Je nach Belag variiert der Wert zwischen 650 und 830 kcal."},
+    {"question": "Hat Flammkuchen weniger Kalorien als Pizza?", "answer": "Ja, Flammkuchen hat pro 100g etwas weniger Kalorien (220 kcal) als Pizza (240-270 kcal), vor allem weil der Teig dünner ist und kein Käse verwendet wird."},
+    {"question": "Ist Flammkuchen zum Abnehmen geeignet?", "answer": "Ein halber Flammkuchen (ca. 380 kcal) mit Salat ist eine akzeptable Mahlzeit. Ein ganzer Flammkuchen mit 770+ kcal ist eher zu viel für eine Diät."},
+    {"question": "Wie viel Fett hat Flammkuchen?", "answer": "Ein Flammkuchen enthält ca. 28-42g Fett – hauptsächlich aus Schmand/Crème fraîche und Speck."},
+    {"question": "Welcher Flammkuchen hat am wenigsten Kalorien?", "answer": "Ein vegetarischer Flammkuchen ohne Speck hat mit ca. 650 kcal die wenigsten Kalorien. Als Snack ist ein Mini-Flammkuchen mit 330 kcal ideal."},
+    {"question": "Was ist der Unterschied zwischen Flammkuchen und Pizza?", "answer": "Flammkuchen wird ohne Hefe-Teig gebacken, hat keinen Käse und verwendet Crème fraîche statt Tomatensauce. Er ist dünner und hat etwas weniger Kalorien."}
+  ],
+  "related_foods": ["pizza-margherita", "lahmacun", "brezel", "quark"]
+}

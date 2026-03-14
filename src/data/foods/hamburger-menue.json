@@ -1,0 +1,50 @@
+{
+  "slug": "hamburger-menue",
+  "name": "Hamburger Menü",
+  "emoji": "🍔",
+  "category": "fast-food",
+  "seo": {
+    "title": "Hamburger Menü Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Hamburger Menü mit Pommes und Getränk? Alle Nährwerte, Varianten und Spar-Tipps im Überblick."
+  },
+  "overview": {
+    "calories_per_100g": 215,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 550,
+    "typical_portion_name": "1 Menü (Burger + Pommes + Cola)"
+  },
+  "variants": [
+    {"name": "Hamburger Menü klassisch", "portion_g": 550, "calories": 950, "protein": 30, "carbs": 120, "fat": 38, "tip": "Standard bei McDonald's"},
+    {"name": "Cheeseburger Menü", "portion_g": 570, "calories": 1020, "protein": 34, "carbs": 122, "fat": 43},
+    {"name": "Big Mac Menü", "portion_g": 600, "calories": 1100, "protein": 38, "carbs": 130, "fat": 48, "tip": "Beliebtestes Menü"},
+    {"name": "Chicken McNuggets Menü (6er)", "portion_g": 500, "calories": 870, "protein": 28, "carbs": 110, "fat": 35},
+    {"name": "Hamburger Menü mit Salat statt Pommes", "portion_g": 450, "calories": 550, "protein": 22, "carbs": 55, "fat": 18, "tip": "Kalorienärmste Variante"},
+    {"name": "Whopper Menü (Burger King)", "portion_g": 620, "calories": 1180, "protein": 42, "carbs": 125, "fat": 55},
+    {"name": "Double Hamburger Menü", "portion_g": 600, "calories": 1150, "protein": 45, "carbs": 120, "fat": 52}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
+    {"name": "Pizza Margherita", "calories": 750, "emoji": "🍕"},
+    {"name": "Schnitzel mit Beilagen", "calories": 850, "emoji": "🥩"}
+  ],
+  "tips": [
+    {"title": "Kleine Pommes wählen", "text": "Eine kleine statt große Pommes spart ca. 200 kcal. Der Unterschied ist geschmacklich kaum spürbar.", "icon": "🍟"},
+    {"title": "Wasser statt Cola", "text": "Ein großes Cola hat ca. 200 kcal. Mit Wasser oder Cola Zero sparst du sofort 200 kcal.", "icon": "💧"},
+    {"title": "Salat als Beilage", "text": "Ein Beilagensalat statt Pommes reduziert die Kalorien um ca. 300 kcal.", "icon": "🥗"},
+    {"title": "Einfach statt Doppelt", "text": "Ein einfacher Hamburger hat nur 250 kcal – fast halb so viel wie ein Double.", "icon": "1️⃣"},
+    {"title": "Sauce weglassen", "text": "Mayo, Ketchup und Spezialsauce können zusätzlich 80-150 kcal ausmachen.", "icon": "🚫"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Hamburger Menü?", "answer": "Ein klassisches Hamburger Menü mit Pommes und Cola hat ca. 950 kcal. Ein Big Mac Menü kommt auf etwa 1100 kcal."},
+    {"question": "Welches Fast-Food-Menü hat am wenigsten Kalorien?", "answer": "Ein einfaches Hamburger Menü mit Salat statt Pommes und Wasser hat nur ca. 350-400 kcal und ist die kalorienärmste Wahl."},
+    {"question": "Wie viel Fett hat ein Hamburger Menü?", "answer": "Ein Hamburger Menü enthält ca. 38-55g Fett – je nach Variante. Das ist etwa 50-75% des täglichen Fettbedarfs."},
+    {"question": "Ist ein Hamburger Menü ungesund?", "answer": "Ein Hamburger Menü hat viele Kalorien, Fett und wenig Ballaststoffe. Gelegentlich ist es vertretbar, aber nicht als tägliche Mahlzeit empfohlen."},
+    {"question": "Was hat mehr Kalorien: Hamburger oder Döner?", "answer": "Ein Hamburger allein (250-500 kcal) hat weniger Kalorien als ein Döner (550-650 kcal). Als Menü mit Pommes und Cola übersteigt der Hamburger den Döner aber deutlich."},
+    {"question": "Wie kann ich bei McDonald's Kalorien sparen?", "answer": "Bestelle einen einfachen Hamburger, nimm Salat statt Pommes, trinke Wasser statt Cola und verzichte auf extra Saucen. So kommst du auf unter 400 kcal."}
+  ],
+  "related_foods": ["cheeseburger", "pommes-frites", "chicken-nuggets", "cola"]
+}

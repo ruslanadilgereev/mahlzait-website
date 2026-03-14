@@ -1,0 +1,50 @@
+{
+  "slug": "maultaschen",
+  "name": "Maultaschen",
+  "emoji": "🥟",
+  "category": "fast-food",
+  "seo": {
+    "title": "Maultaschen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Maultaschen? Geschmälzt, in Brühe oder überbacken – alle Nährwerte und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 180,
+    "protein_per_100g": 9,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 1.0,
+    "typical_portion_g": 350,
+    "typical_portion_name": "4 Maultaschen"
+  },
+  "variants": [
+    {"name": "Maultaschen in Brühe", "portion_g": 450, "calories": 460, "protein": 25, "carbs": 52, "fat": 16, "tip": "Kalorienärmste Variante"},
+    {"name": "Maultaschen geschmälzt (mit Butter & Zwiebeln)", "portion_g": 400, "calories": 620, "protein": 28, "carbs": 55, "fat": 32},
+    {"name": "Maultaschen überbacken mit Käse", "portion_g": 420, "calories": 700, "protein": 35, "carbs": 52, "fat": 38},
+    {"name": "Maultaschen mit Kartoffelsalat", "portion_g": 500, "calories": 680, "protein": 28, "carbs": 72, "fat": 30},
+    {"name": "Maultaschen vegetarisch (Spinat)", "portion_g": 350, "calories": 420, "protein": 18, "carbs": 55, "fat": 14, "tip": "Leichtere Füllung"},
+    {"name": "Maultaschen geröstet in der Pfanne", "portion_g": 380, "calories": 580, "protein": 26, "carbs": 50, "fat": 30},
+    {"name": "Mini-Maultaschen (Suppe)", "portion_g": 300, "calories": 350, "protein": 18, "carbs": 40, "fat": 12}
+  ],
+  "comparison": [
+    {"name": "Tortellini", "calories": 350, "emoji": "🍝"},
+    {"name": "Pierogi", "calories": 400, "emoji": "🥟"},
+    {"name": "Ravioli", "calories": 380, "emoji": "🍝"},
+    {"name": "Käsespätzle", "calories": 550, "emoji": "🧀"}
+  ],
+  "tips": [
+    {"title": "In Brühe servieren", "text": "Maultaschen in Brühe haben nur ca. 460 kcal – die kalorienärmste Zubereitungsart.", "icon": "🥣"},
+    {"title": "Nicht in Butter schmälzen", "text": "Das Anbraten in Butter fügt ca. 150 kcal extra hinzu. Lieber in der Brühe genießen.", "icon": "🧈"},
+    {"title": "Spinat-Füllung wählen", "text": "Vegetarische Maultaschen mit Spinat haben ca. 25% weniger Kalorien als die Fleischvariante.", "icon": "🥬"},
+    {"title": "Ohne Käse überbacken", "text": "Die Käsekruste beim Überbacken fügt allein ca. 150-200 kcal hinzu.", "icon": "🧀"},
+    {"title": "Kleine Portion reicht", "text": "3-4 Maultaschen mit Salat sind eine ausgewogene Mahlzeit. Mehr als 5 Stück sind meist zu viel.", "icon": "📏"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Maultaschen?", "answer": "4 Maultaschen haben ca. 460-700 kcal, je nach Zubereitungsart. In Brühe ca. 460 kcal, geschmälzt ca. 620 kcal, überbacken ca. 700 kcal."},
+    {"question": "Sind Maultaschen zum Abnehmen geeignet?", "answer": "Maultaschen in Brühe (460 kcal) sind eine akzeptable Mahlzeit bei einer Diät. Geschmälzt oder überbacken wird es kalorienmäßig schwieriger."},
+    {"question": "Wie viel Protein haben Maultaschen?", "answer": "4 Maultaschen liefern ca. 25-35g Protein je nach Füllung. Mit Fleischfüllung mehr, vegetarisch etwas weniger."},
+    {"question": "Was ist besser: Maultaschen oder Spätzle?", "answer": "Maultaschen in Brühe (180 kcal/100g) haben weniger Kalorien als Käsespätzle (250 kcal/100g) und liefern durch die Füllung mehr Protein."},
+    {"question": "Wie viel Fett haben Maultaschen?", "answer": "Maultaschen haben ca. 7g Fett pro 100g. Durch Anbraten in Butter oder Überbacken steigt der Fettgehalt aber auf 30-38g pro Portion."},
+    {"question": "Kann man Maultaschen einfrieren?", "answer": "Ja, Maultaschen lassen sich gut einfrieren und halten ca. 3 Monate. Beim Aufwärmen in Brühe bleibt die kalorienarme Zubereitungsart erhalten."}
+  ],
+  "related_foods": ["kaesespaetzle", "kartoffelsalat", "gulaschsuppe", "frikadellen"]
+}

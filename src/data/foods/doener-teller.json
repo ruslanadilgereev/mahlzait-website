@@ -1,0 +1,50 @@
+{
+  "slug": "doener-teller",
+  "name": "Döner Teller",
+  "emoji": "🥙",
+  "category": "fast-food",
+  "seo": {
+    "title": "Döner Teller Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Döner Teller? Mit Reis, Pommes oder Salat – alle Nährwerte und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 175,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 15,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 500,
+    "typical_portion_name": "1 Döner Teller"
+  },
+  "variants": [
+    {"name": "Döner Teller mit Reis", "portion_g": 500, "calories": 780, "protein": 42, "carbs": 85, "fat": 28, "tip": "Beliebteste Variante"},
+    {"name": "Döner Teller mit Pommes", "portion_g": 520, "calories": 880, "protein": 40, "carbs": 78, "fat": 42},
+    {"name": "Döner Teller mit Salat", "portion_g": 450, "calories": 550, "protein": 38, "carbs": 25, "fat": 32, "tip": "Kalorienärmste Variante"},
+    {"name": "Döner Teller komplett (Reis + Salat + Sauce)", "portion_g": 600, "calories": 920, "protein": 48, "carbs": 90, "fat": 38},
+    {"name": "Hähnchen Döner Teller", "portion_g": 500, "calories": 700, "protein": 45, "carbs": 82, "fat": 22, "tip": "Weniger Fett"},
+    {"name": "Döner Teller mit Bulgur", "portion_g": 500, "calories": 720, "protein": 44, "carbs": 78, "fat": 24},
+    {"name": "Döner Teller vegetarisch (Falafel)", "portion_g": 480, "calories": 680, "protein": 22, "carbs": 82, "fat": 28}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab (im Brot)", "calories": 600, "emoji": "🥙"},
+    {"name": "Dürüm Döner", "calories": 650, "emoji": "🌯"},
+    {"name": "Döner Box", "calories": 550, "emoji": "📦"},
+    {"name": "Gyros Teller", "calories": 800, "emoji": "🥩"}
+  ],
+  "tips": [
+    {"title": "Salat statt Reis/Pommes", "text": "Ein Döner Teller mit Salat hat nur 550 kcal – ca. 230-330 kcal weniger als mit Reis oder Pommes.", "icon": "🥗"},
+    {"title": "Hähnchen statt Kalb/Lamm", "text": "Hähnchenfleisch ist fettärmer und spart ca. 80 kcal pro Teller.", "icon": "🍗"},
+    {"title": "Sauce reduzieren", "text": "Knoblauch- und Joghurtsauce haben ca. 60-80 kcal pro Portion. Weniger Sauce bestellen.", "icon": "🥫"},
+    {"title": "Reis portionieren", "text": "Bitte um eine halbe Portion Reis – das spart ca. 150 kcal und der Teller ist immer noch sättigend.", "icon": "🍚"},
+    {"title": "Ohne Pommes als Extra", "text": "Manche Läden geben Pommes UND Reis. Verzichte auf eines davon und spare 200+ kcal.", "icon": "🚫"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Döner Teller?", "answer": "Ein Döner Teller hat je nach Beilage 550-920 kcal. Mit Reis ca. 780 kcal, mit Pommes ca. 880 kcal, mit Salat ca. 550 kcal."},
+    {"question": "Was hat mehr Kalorien: Döner Teller oder Döner im Brot?", "answer": "Ein Döner Teller mit Reis (780 kcal) hat mehr Kalorien als ein Döner im Brot (600 kcal), da die Beilagenmenge größer ist."},
+    {"question": "Ist ein Döner Teller zum Abnehmen geeignet?", "answer": "Ein Döner Teller mit Salat (550 kcal) und Hähnchen ist eine proteinreiche Mahlzeit zum Abnehmen. Mit Pommes oder Reis wird es kalorienmäßig schwierig."},
+    {"question": "Wie viel Protein hat ein Döner Teller?", "answer": "Ein Döner Teller liefert ca. 38-48g Protein – eine der proteinreichsten Fast-Food-Optionen."},
+    {"question": "Was ist der Unterschied zwischen Döner Teller und Döner Box?", "answer": "Ein Döner Teller wird auf dem Teller mit Beilagen serviert (500-600g), eine Döner Box ist eine kleinere Portion zum Mitnehmen (300-350g) mit weniger Kalorien."},
+    {"question": "Welcher Döner Teller hat am wenigsten Kalorien?", "answer": "Ein Hähnchen Döner Teller mit Salat hat ca. 500-550 kcal und ist die kalorienärmste Variante."}
+  ],
+  "related_foods": ["doener-box", "duerrum", "gyros", "falafel"]
+}

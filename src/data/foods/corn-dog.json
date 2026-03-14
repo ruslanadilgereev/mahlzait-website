@@ -1,0 +1,49 @@
+{
+  "slug": "corn-dog",
+  "name": "Corn Dog",
+  "emoji": "🌽",
+  "category": "fast-food",
+  "seo": {
+    "title": "Corn Dog Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Corn Dog? Klassisch, Mini oder mit Käse – alle Nährwerte und Spar-Tipps im Überblick."
+  },
+  "overview": {
+    "calories_per_100g": 260,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 26,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 175,
+    "typical_portion_name": "1 Corn Dog"
+  },
+  "variants": [
+    {"name": "Corn Dog klassisch", "portion_g": 175, "calories": 460, "protein": 14, "carbs": 46, "fat": 24, "tip": "Jahrmarkt-Klassiker"},
+    {"name": "Mini Corn Dogs (6 Stück)", "portion_g": 150, "calories": 380, "protein": 12, "carbs": 38, "fat": 20},
+    {"name": "Corn Dog mit Käse-Füllung", "portion_g": 190, "calories": 530, "protein": 18, "carbs": 48, "fat": 30},
+    {"name": "Korean Corn Dog (Mozzarella)", "portion_g": 200, "calories": 550, "protein": 20, "carbs": 52, "fat": 28, "tip": "Trendiges Street Food"},
+    {"name": "Korean Corn Dog mit Zucker", "portion_g": 210, "calories": 590, "protein": 18, "carbs": 62, "fat": 28},
+    {"name": "Veganer Corn Dog", "portion_g": 170, "calories": 380, "protein": 12, "carbs": 48, "fat": 16, "tip": "Pflanzliche Alternative"}
+  ],
+  "comparison": [
+    {"name": "Hot Dog", "calories": 290, "emoji": "🌭"},
+    {"name": "Bratwurst", "calories": 370, "emoji": "🌭"},
+    {"name": "Chicken Nuggets (6 Stück)", "calories": 280, "emoji": "🍗"},
+    {"name": "Mozzarella Sticks (5 Stück)", "calories": 350, "emoji": "🧀"}
+  ],
+  "tips": [
+    {"title": "Mini-Variante wählen", "text": "Mini Corn Dogs haben pro Stück nur ca. 65 kcal – einfacher die Portion zu kontrollieren.", "icon": "📏"},
+    {"title": "Im Ofen statt frittiert", "text": "Tiefkühl-Corn-Dogs im Ofen zubereitet haben ca. 20% weniger Fett als frittierte.", "icon": "🫕"},
+    {"title": "Senf statt Ketchup", "text": "Senf als Dip hat nur ca. 15 kcal pro Portion, Ketchup ca. 40 kcal.", "icon": "🟡"},
+    {"title": "Als Snack, nicht als Mahlzeit", "text": "Ein Corn Dog hat 460 kcal, aber wenig Nährstoffe. Als gelegentlicher Snack okay, nicht als Hauptmahlzeit.", "icon": "⚠️"},
+    {"title": "Ohne Zucker-Coating", "text": "Korean Corn Dogs mit Zuckermantel haben ca. 130 kcal extra. Ohne Zucker bestellen spart deutlich.", "icon": "🚫"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Corn Dog?", "answer": "Ein klassischer Corn Dog hat ca. 460 kcal. Korean Corn Dogs mit Käse kommen auf ca. 550 kcal."},
+    {"question": "Was ist ein Corn Dog?", "answer": "Ein Corn Dog ist ein Würstchen am Stiel, das in Maismehl-Teig getaucht und frittiert wird. Ein beliebtes Street Food aus den USA."},
+    {"question": "Wie viel Fett hat ein Corn Dog?", "answer": "Ein Corn Dog enthält ca. 24g Fett, hauptsächlich durch den frittierten Teig und das Würstchen."},
+    {"question": "Was hat weniger Kalorien: Corn Dog oder Bratwurst?", "answer": "Eine Bratwurst (370 kcal) hat weniger Kalorien als ein Corn Dog (460 kcal), da der Corn Dog zusätzlich den frittierten Teigmantel hat."},
+    {"question": "Sind Korean Corn Dogs kalorienreich?", "answer": "Ja, Korean Corn Dogs haben mit 550-590 kcal mehr Kalorien als klassische Corn Dogs, vor allem durch den Mozzarella und den Zucker-Mantel."},
+    {"question": "Kann man Corn Dogs im Ofen machen?", "answer": "Ja, Tiefkühl-Corn-Dogs können bei 200°C ca. 15-20 Minuten im Ofen gebacken werden. Das spart ca. 20% Fett gegenüber dem Frittieren."}
+  ],
+  "related_foods": ["hot-dog", "bratwurst", "chicken-nuggets", "mozzarella-sticks"]
+}

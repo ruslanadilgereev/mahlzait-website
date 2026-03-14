@@ -1,0 +1,49 @@
+{
+  "slug": "simit",
+  "name": "Simit",
+  "emoji": "🥯",
+  "category": "fast-food",
+  "seo": {
+    "title": "Simit Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Simit? Pur, mit Käse oder als Sandwich – alle Nährwerte und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 310,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 52,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 2.5,
+    "typical_portion_g": 120,
+    "typical_portion_name": "1 Simit"
+  },
+  "variants": [
+    {"name": "Simit pur", "portion_g": 120, "calories": 372, "protein": 12, "carbs": 62, "fat": 8, "tip": "Türkisches Sesamgebäck"},
+    {"name": "Simit mit Käse (Beyaz Peynir)", "portion_g": 170, "calories": 480, "protein": 20, "carbs": 62, "fat": 16},
+    {"name": "Simit mit Nutella", "portion_g": 150, "calories": 520, "protein": 14, "carbs": 72, "fat": 20},
+    {"name": "Simit Sandwich (Sucuk & Käse)", "portion_g": 200, "calories": 560, "protein": 24, "carbs": 64, "fat": 22},
+    {"name": "Simit mit Butter & Honig", "portion_g": 145, "calories": 490, "protein": 12, "carbs": 68, "fat": 18},
+    {"name": "Mini-Simit (Snack)", "portion_g": 60, "calories": 186, "protein": 6, "carbs": 31, "fat": 4, "tip": "Halbe Portion"}
+  ],
+  "comparison": [
+    {"name": "Brezel", "calories": 240, "emoji": "🥨"},
+    {"name": "Bagel", "calories": 280, "emoji": "🥯"},
+    {"name": "Croissant", "calories": 406, "emoji": "🥐"},
+    {"name": "Brötchen", "calories": 150, "emoji": "🍞"}
+  ],
+  "tips": [
+    {"title": "Pur genießen", "text": "Ein Simit pur hat nur 372 kcal. Jeder Belag fügt 100-200 kcal hinzu.", "icon": "✨"},
+    {"title": "Zum Frühstück ideal", "text": "Simit mit Tomate, Gurke und etwas Käse ist ein kalorienarmes türkisches Frühstück.", "icon": "🍅"},
+    {"title": "Nicht als Snack nebenbei", "text": "Mit 372 kcal ist ein Simit kalorisch wie ein kleines Mittagessen – bewusst essen.", "icon": "⚠️"},
+    {"title": "Frisch kaufen", "text": "Frische Simit vom türkischen Bäcker haben weniger Fett als verpackte Varianten.", "icon": "🏪"},
+    {"title": "Halbes Simit reicht", "text": "Ein halbes Simit mit Käse und Gemüse hat nur ca. 300 kcal – ein perfekter Snack.", "icon": "✂️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Simit?", "answer": "Ein Simit (120g) hat ca. 372 kcal pur. Mit Käse ca. 480 kcal, als Sandwich mit Sucuk ca. 560 kcal."},
+    {"question": "Ist Simit gesünder als ein Croissant?", "answer": "Ja, Simit hat weniger Fett (7g/100g) als ein Croissant (21g/100g). Simit hat aber mehr Kohlenhydrate und insgesamt ähnliche Kalorien."},
+    {"question": "Wie viel Protein hat ein Simit?", "answer": "Ein Simit liefert ca. 12g Protein – hauptsächlich aus dem Weizenmehl und den Sesamsamen."},
+    {"question": "Was ist der Unterschied zwischen Simit und Bagel?", "answer": "Simit ist mit Traubensirup (Pekmez) bestrichen und mit Sesam bedeckt. Es ist leichter und weniger dicht als ein Bagel und hat ähnliche Kalorien."},
+    {"question": "Kann man Simit zum Abnehmen essen?", "answer": "Ein halbes Simit mit Gemüse (ca. 250 kcal) passt in eine Diät. Ein ganzes Simit mit Aufstrich (480+ kcal) ist kalorienmäßig viel."},
+    {"question": "Wie viele Kohlenhydrate hat ein Simit?", "answer": "Ein Simit hat ca. 62g Kohlenhydrate – vergleichbar mit 4 Scheiben Brot. Für Low-Carb-Diäten ist Simit nicht geeignet."}
+  ],
+  "related_foods": ["brezel", "borek", "lahmacun", "croissant"]
+}

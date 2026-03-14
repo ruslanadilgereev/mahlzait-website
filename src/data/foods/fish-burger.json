@@ -1,0 +1,50 @@
+{
+  "slug": "fish-burger",
+  "name": "Fish Burger",
+  "emoji": "🐟",
+  "category": "fast-food",
+  "seo": {
+    "title": "Fish Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Fish Burger? Filet-o-Fish, paniert oder gegrillt – alle Nährwerte und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 230,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 24,
+    "fat_per_100g": 10,
+    "fiber_per_100g": 1.0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Fish Burger"
+  },
+  "variants": [
+    {"name": "Filet-o-Fish (McDonald's)", "portion_g": 142, "calories": 340, "protein": 15, "carbs": 38, "fat": 14, "tip": "Fast-Food-Klassiker"},
+    {"name": "Fish Burger paniert", "portion_g": 220, "calories": 480, "protein": 22, "carbs": 45, "fat": 22},
+    {"name": "Fish Burger gegrillt", "portion_g": 210, "calories": 380, "protein": 26, "carbs": 38, "fat": 14, "tip": "Kalorienärmere Variante"},
+    {"name": "Fish Burger mit Käse", "portion_g": 230, "calories": 520, "protein": 25, "carbs": 42, "fat": 26},
+    {"name": "Big Fish Burger (doppelt)", "portion_g": 300, "calories": 620, "protein": 32, "carbs": 52, "fat": 30},
+    {"name": "Veganer Fish Burger", "portion_g": 200, "calories": 360, "protein": 14, "carbs": 48, "fat": 12, "tip": "Pflanzliche Alternative"},
+    {"name": "Fish Burger mit Tartar-Sauce", "portion_g": 230, "calories": 510, "protein": 22, "carbs": 42, "fat": 28}
+  ],
+  "comparison": [
+    {"name": "Hamburger", "calories": 250, "emoji": "🍔"},
+    {"name": "Chicken Burger", "calories": 420, "emoji": "🍔"},
+    {"name": "Backfisch im Brötchen", "calories": 520, "emoji": "🐟"},
+    {"name": "Garnelen-Burger", "calories": 350, "emoji": "🦐"}
+  ],
+  "tips": [
+    {"title": "Gegrillten Fisch wählen", "text": "Ein gegrillter Fish Burger hat ca. 100 kcal weniger als ein panierter – bei mehr Protein.", "icon": "🔥"},
+    {"title": "Tartar-Sauce weglassen", "text": "Tartar-Sauce hat ca. 80-100 kcal pro Portion. Senf oder Zitrone sind kalorienärmere Alternativen.", "icon": "🍋"},
+    {"title": "Single statt Double", "text": "Ein einfacher Fish Burger hat fast halb so viele Kalorien wie ein Double.", "icon": "1️⃣"},
+    {"title": "Ohne Käse bestellen", "text": "Eine Scheibe Käse fügt ca. 60-80 kcal hinzu, ohne den Fischgeschmack wesentlich zu verbessern.", "icon": "🧀"},
+    {"title": "Selbst machen", "text": "Ein selbstgemachter Fish Burger mit frischem Fisch, Vollkornbrötchen und Salat hat nur ca. 350 kcal.", "icon": "👨‍🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Fish Burger?", "answer": "Ein Fish Burger hat je nach Variante 340-620 kcal. Ein Filet-o-Fish von McDonald's hat 340 kcal, ein panierter Fish Burger ca. 480 kcal."},
+    {"question": "Ist ein Fish Burger gesünder als ein Hamburger?", "answer": "Ein Fish Burger hat ähnliche Kalorien, aber Fisch liefert Omega-3-Fettsäuren, die herzgesund sind. Allerdings macht die Panade den Vorteil oft zunichte."},
+    {"question": "Wie viel Protein hat ein Fish Burger?", "answer": "Ein Fish Burger liefert ca. 15-26g Protein, je nach Größe und Zubereitungsart. Gegrillte Varianten haben mehr Protein."},
+    {"question": "Was hat weniger Kalorien: Fish Burger oder Chicken Burger?", "answer": "Ein gegrillter Fish Burger (380 kcal) hat etwas weniger Kalorien als ein Chicken Burger (420 kcal). Paniert sind beide etwa gleich."},
+    {"question": "Wie viel Fett hat ein Fish Burger?", "answer": "Ein Fish Burger enthält ca. 14-28g Fett. Gegrillte Varianten haben deutlich weniger Fett als panierte."},
+    {"question": "Kann man Fish Burger zum Abnehmen essen?", "answer": "Ein gegrillter Fish Burger ohne Tartar-Sauce (380 kcal) passt gut in eine Diät. Panierte Varianten mit Sauce (500+ kcal) eher nicht."}
+  ],
+  "related_foods": ["backfisch", "chicken-burger", "burger", "fish-and-chips"]
+}

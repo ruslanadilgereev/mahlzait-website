@@ -1,0 +1,50 @@
+{
+  "slug": "chicken-wrap",
+  "name": "Chicken Wrap",
+  "emoji": "🌯",
+  "category": "fast-food",
+  "seo": {
+    "title": "Chicken Wrap Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Chicken Wrap? Gegrillt, paniert oder vegetarisch – alle Nährwerte und Spar-Tipps im Überblick."
+  },
+  "overview": {
+    "calories_per_100g": 195,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 1.2,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Wrap"
+  },
+  "variants": [
+    {"name": "Chicken Wrap gegrillt", "portion_g": 300, "calories": 480, "protein": 32, "carbs": 45, "fat": 18, "tip": "Beste Protein-Option"},
+    {"name": "Chicken Wrap paniert (Crispy)", "portion_g": 320, "calories": 580, "protein": 28, "carbs": 55, "fat": 28},
+    {"name": "Chicken Caesar Wrap", "portion_g": 310, "calories": 520, "protein": 30, "carbs": 42, "fat": 24},
+    {"name": "Chicken Wrap mit Käse", "portion_g": 330, "calories": 560, "protein": 34, "carbs": 44, "fat": 26},
+    {"name": "Veggie Wrap", "portion_g": 280, "calories": 350, "protein": 12, "carbs": 48, "fat": 12, "tip": "Kalorienärmste Variante"},
+    {"name": "McWrap Chicken (McDonald's)", "portion_g": 295, "calories": 500, "protein": 27, "carbs": 48, "fat": 22},
+    {"name": "Chicken Wrap mit Guacamole", "portion_g": 320, "calories": 540, "protein": 30, "carbs": 42, "fat": 28}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Burrito", "calories": 680, "emoji": "🌯"},
+    {"name": "Hamburger", "calories": 250, "emoji": "🍔"},
+    {"name": "Falafel Wrap", "calories": 450, "emoji": "🧆"}
+  ],
+  "tips": [
+    {"title": "Gegrilltes Hähnchen wählen", "text": "Gegrilltes statt paniertem Hähnchen spart ca. 100 kcal und reduziert den Fettgehalt um die Hälfte.", "icon": "🔥"},
+    {"title": "Vollkorn-Tortilla nehmen", "text": "Eine Vollkorn-Tortilla hat mehr Ballaststoffe und hält länger satt – bei gleicher Kalorienzahl.", "icon": "🌾"},
+    {"title": "Sauce reduzieren", "text": "Ranch-Dressing oder Mayo können 100-150 kcal extra ausmachen. Senf oder Salsa sind kalorienärmer.", "icon": "🥫"},
+    {"title": "Mehr Gemüse, weniger Käse", "text": "Extra Salat, Tomaten und Gurke füllen den Wrap ohne viele Kalorien. Eine Scheibe Käse hat allein 80 kcal.", "icon": "🥬"},
+    {"title": "Wrap teilen", "text": "Fast-Food-Wraps sind oft für 2 Portionen groß genug. Teilen spart sofort 50% der Kalorien.", "icon": "✂️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Chicken Wrap?", "answer": "Ein gegrillter Chicken Wrap hat ca. 480 kcal, ein panierter (Crispy) ca. 580 kcal pro Portion."},
+    {"question": "Ist ein Chicken Wrap gesünder als ein Burger?", "answer": "Ein gegrillter Chicken Wrap hat ähnlich viele Kalorien wie ein Burger, aber mehr Protein und Ballaststoffe durch Salat und Tortilla."},
+    {"question": "Wie viel Protein hat ein Chicken Wrap?", "answer": "Ein Chicken Wrap liefert ca. 28-34g Protein – vor allem aus dem Hähnchenfleisch. Das deckt etwa 40% des täglichen Bedarfs."},
+    {"question": "Was hat weniger Kalorien: Wrap oder Döner?", "answer": "Ein gegrillter Chicken Wrap (480 kcal) hat weniger Kalorien als ein Döner (550-650 kcal). Ein Crispy Wrap ist aber vergleichbar."},
+    {"question": "Kann man Chicken Wraps zum Abnehmen essen?", "answer": "Ja, mit gegrilltem Hähnchen, viel Gemüse und wenig Sauce ist ein Chicken Wrap mit ca. 480 kcal eine gute Mahlzeit zum Abnehmen."},
+    {"question": "Welcher Wrap hat die wenigsten Kalorien?", "answer": "Ein Veggie Wrap hat mit ca. 350 kcal die wenigsten Kalorien. Bei Chicken Wraps ist die gegrillte Variante mit ca. 480 kcal am leichtesten."}
+  ],
+  "related_foods": ["wrap", "haehnchenbrust", "burrito", "falafel"]
+}

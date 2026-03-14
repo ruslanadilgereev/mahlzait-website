@@ -1,0 +1,50 @@
+{
+  "slug": "brezel",
+  "name": "Brezel",
+  "emoji": "🥨",
+  "category": "fast-food",
+  "seo": {
+    "title": "Brezel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Brezel? Mit Butter, Käse oder als Laugenbrötchen – alle Nährwerte und Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 250,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 48,
+    "fat_per_100g": 2.5,
+    "fiber_per_100g": 2.0,
+    "typical_portion_g": 95,
+    "typical_portion_name": "1 Brezel"
+  },
+  "variants": [
+    {"name": "Laugenbrezel pur", "portion_g": 95, "calories": 238, "protein": 8, "carbs": 46, "fat": 2, "tip": "Deutscher Klassiker"},
+    {"name": "Butterbrezel", "portion_g": 110, "calories": 350, "protein": 9, "carbs": 46, "fat": 14, "tip": "Beliebteste Variante"},
+    {"name": "Käsebrezel", "portion_g": 120, "calories": 380, "protein": 14, "carbs": 46, "fat": 16},
+    {"name": "Brezel mit Obatzda", "portion_g": 170, "calories": 480, "protein": 16, "carbs": 48, "fat": 24},
+    {"name": "Laugenbrötchen", "portion_g": 80, "calories": 200, "protein": 7, "carbs": 38, "fat": 2, "tip": "Kleinere Variante"},
+    {"name": "Laugenstange", "portion_g": 110, "calories": 275, "protein": 9, "carbs": 52, "fat": 3},
+    {"name": "Brezel mit Leberkäse", "portion_g": 250, "calories": 580, "protein": 24, "carbs": 48, "fat": 30}
+  ],
+  "comparison": [
+    {"name": "Brötchen (Semmel)", "calories": 150, "emoji": "🍞"},
+    {"name": "Simit", "calories": 372, "emoji": "🥯"},
+    {"name": "Croissant", "calories": 406, "emoji": "🥐"},
+    {"name": "Baguette (Stück)", "calories": 200, "emoji": "🥖"}
+  ],
+  "tips": [
+    {"title": "Pur genießen", "text": "Eine Brezel pur hat nur 238 kcal und fast kein Fett. Butter fügt allein 110+ kcal hinzu.", "icon": "✨"},
+    {"title": "Senf statt Butter", "text": "Senf hat fast keine Kalorien und passt perfekt zur Brezel – spart ca. 100 kcal.", "icon": "🟡"},
+    {"title": "Als Frühstück ideal", "text": "Eine Brezel mit Frischkäse und Tomaten ist ein kalorienarmes, sättigendes Frühstück.", "icon": "🍅"},
+    {"title": "Laugenbrötchen wählen", "text": "Ein Laugenbrötchen hat ca. 40 kcal weniger als eine Brezel bei gleichem Geschmack.", "icon": "📏"},
+    {"title": "Frisch kaufen", "text": "Frische Brezeln vom Bäcker haben weniger Fett und Zusatzstoffe als verpackte Tiefkühl-Brezeln.", "icon": "🏪"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Brezel?", "answer": "Eine Laugenbrezel pur hat ca. 238 kcal. Eine Butterbrezel ca. 350 kcal, mit Käse ca. 380 kcal."},
+    {"question": "Ist eine Brezel gesünder als ein Croissant?", "answer": "Ja, eine Brezel (238 kcal, 2g Fett) ist deutlich fettärmer als ein Croissant (406 kcal, 21g Fett). Die Brezel hat aber auch weniger Geschmack ohne Belag."},
+    {"question": "Wie viel Fett hat eine Brezel?", "answer": "Eine Brezel pur hat nur ca. 2g Fett. Eine Butterbrezel kommt auf ca. 14g Fett durch die Butter."},
+    {"question": "Kann man Brezeln zum Abnehmen essen?", "answer": "Ja, eine Brezel pur (238 kcal) ist ein relativ kalorienarmer Snack. Aber Achtung: Butter, Käse oder Obatzda machen sie schnell zur Kalorienbombe."},
+    {"question": "Wie viele Kohlenhydrate hat eine Brezel?", "answer": "Eine Brezel hat ca. 46g Kohlenhydrate – ähnlich wie 3 Scheiben Brot. Für Low-Carb-Diäten ist sie nicht geeignet."},
+    {"question": "Was hat weniger Kalorien: Brezel oder Brötchen?", "answer": "Ein Brötchen (150 kcal) hat weniger Kalorien als eine Brezel (238 kcal), da die Brezel größer und schwerer ist."}
+  ],
+  "related_foods": ["leberkassemmel", "simit", "croissant", "brot"]
+}

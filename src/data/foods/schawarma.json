@@ -1,0 +1,50 @@
+{
+  "slug": "schawarma",
+  "name": "Schawarma",
+  "emoji": "🥙",
+  "category": "fast-food",
+  "seo": {
+    "title": "Schawarma Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Schawarma? Im Fladenbrot, als Teller oder Wrap – alle Nährwerte und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 200,
+    "protein_per_100g": 15,
+    "carbs_per_100g": 12,
+    "fat_per_100g": 11,
+    "fiber_per_100g": 1.0,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Schawarma"
+  },
+  "variants": [
+    {"name": "Schawarma im Fladenbrot", "portion_g": 350, "calories": 620, "protein": 38, "carbs": 52, "fat": 28, "tip": "Klassisch arabisch"},
+    {"name": "Schawarma-Teller mit Reis", "portion_g": 450, "calories": 750, "protein": 42, "carbs": 78, "fat": 28},
+    {"name": "Schawarma Wrap", "portion_g": 320, "calories": 580, "protein": 35, "carbs": 48, "fat": 26},
+    {"name": "Schawarma mit Hummus-Teller", "portion_g": 400, "calories": 680, "protein": 38, "carbs": 55, "fat": 32},
+    {"name": "Hähnchen-Schawarma", "portion_g": 340, "calories": 550, "protein": 40, "carbs": 50, "fat": 20, "tip": "Kalorienärmste Variante"},
+    {"name": "Schawarma-Teller mit Pommes", "portion_g": 480, "calories": 850, "protein": 40, "carbs": 72, "fat": 42},
+    {"name": "Schawarma mit Tahini-Sauce", "portion_g": 370, "calories": 660, "protein": 38, "carbs": 50, "fat": 32}
+  ],
+  "comparison": [
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Gyros im Pita", "calories": 550, "emoji": "🥩"},
+    {"name": "Falafel im Fladenbrot", "calories": 520, "emoji": "🧆"},
+    {"name": "Dürüm Döner", "calories": 650, "emoji": "🌯"}
+  ],
+  "tips": [
+    {"title": "Hähnchen wählen", "text": "Hähnchen-Schawarma hat ca. 70 kcal weniger als Lamm-/Rindfleisch-Schawarma.", "icon": "🍗"},
+    {"title": "Hummus statt Tahini", "text": "Hummus hat ca. 170 kcal/100g, Tahini ca. 600 kcal/100g. Hummus als Sauce spart Kalorien.", "icon": "🫘"},
+    {"title": "Salat-Teller bestellen", "text": "Schawarma-Salat ohne Fladenbrot hat nur ca. 400 kcal und ist sehr proteinreich.", "icon": "🥗"},
+    {"title": "Brot halbieren", "text": "Nur ein halbes Fladenbrot nehmen und dafür mehr Salat – spart ca. 150 kcal.", "icon": "🍞"},
+    {"title": "Gewürze genießen", "text": "Die typischen Schawarma-Gewürze (Kreuzkümmel, Kurkuma, Koriander) haben keine Kalorien aber viel Geschmack.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Schawarma?", "answer": "Ein Schawarma im Fladenbrot hat ca. 620 kcal. Als Teller mit Reis ca. 750 kcal, als Wrap ca. 580 kcal."},
+    {"question": "Was ist der Unterschied zwischen Schawarma und Döner?", "answer": "Schawarma verwendet arabische Gewürze (Kreuzkümmel, Kurkuma), Döner türkische. Schawarma wird oft im Fladenbrot statt im Brot serviert. Kalorien sind ähnlich."},
+    {"question": "Ist Schawarma gesund?", "answer": "Schawarma liefert viel Protein (15g/100g) und hat moderate Kalorien. Mit Salat und wenig Sauce ist es eine gute Mahlzeit – besser als viele Fast-Food-Alternativen."},
+    {"question": "Wie viel Protein hat Schawarma?", "answer": "Ein Schawarma liefert ca. 35-42g Protein – eine der proteinreichsten Fast-Food-Optionen überhaupt."},
+    {"question": "Was hat weniger Kalorien: Schawarma oder Döner?", "answer": "Schawarma (620 kcal) und Döner (600 kcal) sind kalorisch fast identisch. Hähnchen-Schawarma (550 kcal) ist etwas leichter."},
+    {"question": "Kann man Schawarma zum Abnehmen essen?", "answer": "Ja, Hähnchen-Schawarma mit Salat (ca. 400 kcal) ist proteinreich und sättigend – ideal zum Abnehmen. Die Version mit Pommes (850 kcal) eher nicht."}
+  ],
+  "related_foods": ["gyros", "falafel", "duerrum", "doener-teller"]
+}

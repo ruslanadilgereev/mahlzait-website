@@ -1,0 +1,50 @@
+{
+  "slug": "pide",
+  "name": "Pide",
+  "emoji": "🫓",
+  "category": "fast-food",
+  "seo": {
+    "title": "Pide Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Pide? Mit Käse, Hackfleisch oder Sucuk – alle Nährwerte und Spar-Tipps im Überblick."
+  },
+  "overview": {
+    "calories_per_100g": 240,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 10,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Pide"
+  },
+  "variants": [
+    {"name": "Pide mit Käse (Kaşarlı)", "portion_g": 350, "calories": 780, "protein": 32, "carbs": 85, "fat": 35, "tip": "Beliebteste Variante"},
+    {"name": "Pide mit Hackfleisch (Kıymalı)", "portion_g": 360, "calories": 830, "protein": 38, "carbs": 82, "fat": 38},
+    {"name": "Pide mit Sucuk", "portion_g": 350, "calories": 850, "protein": 35, "carbs": 80, "fat": 42},
+    {"name": "Pide mit Spinat & Käse", "portion_g": 340, "calories": 720, "protein": 28, "carbs": 82, "fat": 30, "tip": "Leichtere Variante"},
+    {"name": "Pide mit Ei (Yumurtalı)", "portion_g": 340, "calories": 750, "protein": 30, "carbs": 84, "fat": 32},
+    {"name": "Lahmacun-Pide (dünn)", "portion_g": 280, "calories": 580, "protein": 22, "carbs": 68, "fat": 24, "tip": "Kalorienärmste Variante"},
+    {"name": "Kuşbaşılı Pide (Fleischwürfel)", "portion_g": 380, "calories": 880, "protein": 42, "carbs": 80, "fat": 40}
+  ],
+  "comparison": [
+    {"name": "Lahmacun", "calories": 580, "emoji": "🫓"},
+    {"name": "Pizza Margherita", "calories": 750, "emoji": "🍕"},
+    {"name": "Börek", "calories": 520, "emoji": "🥧"},
+    {"name": "Flammkuchen", "calories": 770, "emoji": "🫓"}
+  ],
+  "tips": [
+    {"title": "Halbe Pide bestellen", "text": "Die meisten Pide sind groß genug für zwei. Eine halbe mit Salat reicht als Mahlzeit.", "icon": "✂️"},
+    {"title": "Spinat-Käse wählen", "text": "Spinat-Käse-Pide hat ca. 100 kcal weniger als Sucuk-Pide und ist nährstoffreicher.", "icon": "🥬"},
+    {"title": "Weniger Käse bitten", "text": "Türkischer Kaşar-Käse ist fettreich. Weniger Käse spart ca. 80-100 kcal.", "icon": "🧀"},
+    {"title": "Ayran statt Cola", "text": "Ayran (60 kcal) passt perfekt zu Pide und hat weniger Kalorien als Cola (140 kcal).", "icon": "🥛"},
+    {"title": "Nicht den Rand vollständig essen", "text": "Der dicke Teigrand einer Pide hat ca. 200 kcal. Den Rand teilweise stehen lassen spart Kalorien.", "icon": "🍞"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Pide?", "answer": "Eine ganze Pide hat je nach Belag 720-880 kcal. Käse-Pide ca. 780 kcal, Sucuk-Pide ca. 850 kcal."},
+    {"question": "Was hat mehr Kalorien: Pide oder Pizza?", "answer": "Eine Pide (780-880 kcal) hat ähnlich viele Kalorien wie eine Pizza (750-900 kcal). Pide hat oft etwas mehr Teig."},
+    {"question": "Ist Pide zum Abnehmen geeignet?", "answer": "Eine halbe Pide (ca. 400 kcal) mit Salat ist als Mahlzeit vertretbar. Eine ganze Pide mit 800+ kcal ist für eine Diät zu viel."},
+    {"question": "Was ist der Unterschied zwischen Pide und Lahmacun?", "answer": "Pide hat dickeren Teig, mehr Belag und ist bootsförmig. Lahmacun ist hauchdünn, rund und hat weniger Kalorien (580 vs. 780+ kcal)."},
+    {"question": "Wie viel Protein hat eine Pide?", "answer": "Eine Pide liefert ca. 28-42g Protein – je nach Belag. Fleisch-Pide hat am meisten, Käse-Pide ca. 32g."},
+    {"question": "Welche Pide hat die wenigsten Kalorien?", "answer": "Eine Lahmacun-Pide (dünn) hat mit ca. 580 kcal die wenigsten Kalorien. Bei klassischen Pide ist Spinat-Käse mit 720 kcal am leichtesten."}
+  ],
+  "related_foods": ["lahmacun", "borek", "duerrum", "pizza-margherita"]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "churros",
+  "name": "Churros",
+  "emoji": "🍩",
+  "category": "fast-food",
+  "seo": {
+    "title": "Churros Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Churros? Mit Schokolade, Zucker oder Zimt – alle Nährwerte und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 350,
+    "protein_per_100g": 4,
+    "carbs_per_100g": 42,
+    "fat_per_100g": 18,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 120,
+    "typical_portion_name": "6 Churros"
+  },
+  "variants": [
+    {"name": "Churros mit Zucker & Zimt (6 Stück)", "portion_g": 120, "calories": 420, "protein": 5, "carbs": 50, "fat": 22, "tip": "Klassiker"},
+    {"name": "Churros mit Schokoladen-Dip", "portion_g": 150, "calories": 550, "protein": 6, "carbs": 68, "fat": 28},
+    {"name": "Churros mit Nutella-Füllung", "portion_g": 130, "calories": 520, "protein": 6, "carbs": 62, "fat": 28},
+    {"name": "Churros pur (ohne Zucker)", "portion_g": 100, "calories": 310, "protein": 4, "carbs": 35, "fat": 18, "tip": "Weniger Zucker"},
+    {"name": "Mini-Churros (4 Stück)", "portion_g": 80, "calories": 280, "protein": 3, "carbs": 34, "fat": 14, "tip": "Snack-Portion"},
+    {"name": "Churros mit Dulce de Leche", "portion_g": 150, "calories": 580, "protein": 7, "carbs": 72, "fat": 30},
+    {"name": "Churros aus dem Ofen", "portion_g": 120, "calories": 320, "protein": 5, "carbs": 48, "fat": 12, "tip": "Kalorienärmste Variante"}
+  ],
+  "comparison": [
+    {"name": "Donut", "calories": 450, "emoji": "🍩"},
+    {"name": "Crêpe mit Nutella", "calories": 380, "emoji": "🥞"},
+    {"name": "Berliner (Krapfen)", "calories": 350, "emoji": "🍩"},
+    {"name": "Waffel mit Sahne", "calories": 400, "emoji": "🧇"}
+  ],
+  "tips": [
+    {"title": "Ohne Dip genießen", "text": "Churros mit nur Zimtzucker haben ca. 130 kcal weniger als mit Schokoladen-Dip.", "icon": "🍫"},
+    {"title": "Mini-Portion wählen", "text": "4 statt 6 Churros sparen ca. 140 kcal – oft reichen die kleineren Portionen geschmacklich aus.", "icon": "📏"},
+    {"title": "Im Ofen zubereiten", "text": "Ofen-Churros haben ca. 25% weniger Kalorien als frittierte und sind zu Hause leicht machbar.", "icon": "🫕"},
+    {"title": "Weniger Zucker", "text": "Die Hälfte des Zuckermantels weglassen spart ca. 40-50 kcal pro Portion.", "icon": "🚫"},
+    {"title": "Bewusst genießen", "text": "Churros sind ein Genuss-Snack. Langsam essen und jeden Bissen genießen – man braucht weniger.", "icon": "🧘"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Churros?", "answer": "6 Churros mit Zucker und Zimt haben ca. 420 kcal. Mit Schokoladen-Dip ca. 550 kcal."},
+    {"question": "Sind Churros ungesund?", "answer": "Churros sind frittiert und zuckerreich (350 kcal/100g, 18g Fett). Als gelegentlicher Genuss okay, aber nicht als regelmäßiger Snack."},
+    {"question": "Wie viel Zucker haben Churros?", "answer": "Churros mit Zimtzucker haben ca. 25-30g Zucker pro Portion – fast so viel wie eine Dose Cola."},
+    {"question": "Wie viel Fett haben Churros?", "answer": "6 Churros enthalten ca. 22g Fett, hauptsächlich durch das Frittieren in Öl."},
+    {"question": "Kann man Churros zu Hause machen?", "answer": "Ja, selbstgemachte Churros aus dem Ofen haben nur ca. 320 kcal pro Portion und sind deutlich fettärmer als frittierte."},
+    {"question": "Was hat weniger Kalorien: Churros oder Donuts?", "answer": "6 Churros (420 kcal) haben etwa gleich viele Kalorien wie ein Donut (450 kcal). Churros sind aber besser teilbar."}
+  ],
+  "related_foods": ["donut", "crepes-nutella", "langos", "brezel"]
+}
