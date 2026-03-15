@@ -1,0 +1,50 @@
+{
+  "slug": "erbsensuppe",
+  "name": "Erbsensuppe",
+  "emoji": "🟢",
+  "category": "gericht",
+  "seo": {
+    "title": "Erbsensuppe Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Erbsensuppe? Nährwerte für klassische Erbsensuppe mit Würstchen & Varianten. Kostenloser Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 110,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 13,
+    "fat_per_100g": 3,
+    "fiber_per_100g": 4.5,
+    "typical_portion_g": 400,
+    "typical_portion_name": "1 Teller"
+  },
+  "variants": [
+    {"name": "Klassisch mit Würstchen", "portion_g": 450, "calories": 580, "protein": 32, "carbs": 58, "fat": 24, "tip": "Deftig mit Bockwurst"},
+    {"name": "Vegetarische Erbsensuppe", "portion_g": 400, "calories": 440, "protein": 28, "carbs": 52, "fat": 12, "tip": "Ohne Fleisch"},
+    {"name": "Erbsensuppe mit Speck", "portion_g": 400, "calories": 520, "protein": 30, "carbs": 52, "fat": 20, "tip": "Geräucherter Speck"},
+    {"name": "Erbsenpüreesuppe", "portion_g": 350, "calories": 380, "protein": 24, "carbs": 48, "fat": 10, "tip": "Püriert und cremig"},
+    {"name": "Erbsensuppe mit Kartoffeln", "portion_g": 450, "calories": 490, "protein": 28, "carbs": 65, "fat": 13, "tip": "Sättigende Variante"},
+    {"name": "Grüne Erbsensuppe (frisch)", "portion_g": 350, "calories": 280, "protein": 18, "carbs": 35, "fat": 8, "tip": "Kalorienärmste Variante"},
+    {"name": "Erbsensuppe mit Kasseler", "portion_g": 450, "calories": 560, "protein": 38, "carbs": 52, "fat": 22, "tip": "Mit geräuchertem Fleisch"}
+  ],
+  "comparison": [
+    {"name": "Linseneintopf", "calories": 380, "emoji": "🍲"},
+    {"name": "Kartoffelsuppe", "calories": 350, "emoji": "🥔"},
+    {"name": "Gulaschsuppe", "calories": 480, "emoji": "🥩"},
+    {"name": "Tomatensuppe", "calories": 200, "emoji": "🍅"}
+  ],
+  "tips": [
+    {"title": "Frische Erbsen verwenden", "text": "Frische oder tiefgekühlte Erbsen ergeben eine leichtere Suppe als getrocknete Erbsen.", "icon": "🫛"},
+    {"title": "Würstchen weglassen", "text": "Ohne Bockwurst sparst du ca. 140 kcal. Die Erbsen selbst liefern genug Protein.", "icon": "🌭"},
+    {"title": "Einfrieren lohnt sich", "text": "Erbsensuppe hält eingefroren 3 Monate. Perfekt für schnelle Mahlzeiten unter der Woche.", "icon": "❄️"},
+    {"title": "Minze statt Sahne", "text": "Ein paar frische Minzblätter geben Frische ohne Extrakalorien.", "icon": "🌿"},
+    {"title": "Brot dazu reicht", "text": "Eine Scheibe Vollkornbrot (80 kcal) macht die Suppe zur sättigenden Mahlzeit.", "icon": "🍞"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Erbsensuppe?", "answer": "Ein Teller Erbsensuppe (400g) hat 280-580 kcal, je nach Zubereitung. Die vegetarische Variante liegt bei ca. 440 kcal."},
+    {"question": "Ist Erbsensuppe gesund?", "answer": "Ja, Erbsensuppe ist nährstoffreich: viel Protein (7g/100g), Ballaststoffe (4.5g/100g), Eisen und Folsäure."},
+    {"question": "Wie viel Protein hat Erbsensuppe?", "answer": "Ein Teller liefert 28-38g Protein. Erbsen sind eine hervorragende pflanzliche Proteinquelle."},
+    {"question": "Ist Erbsensuppe gut zum Abnehmen?", "answer": "Ja, besonders die grüne Variante aus frischen Erbsen (280 kcal/Teller). Die Ballaststoffe sättigen lange."},
+    {"question": "Warum macht Erbsensuppe so satt?", "answer": "Die Kombination aus Protein, Ballaststoffen und komplexen Kohlenhydraten sorgt für eine lang anhaltende Sättigung."},
+    {"question": "Kann man Erbsensuppe einfrieren?", "answer": "Ja, portionsweise einfrieren und bei Bedarf aufwärmen. Im Kühlschrank hält sie 3-4 Tage, eingefroren ca. 3 Monate."}
+  ],
+  "related_foods": ["eintopf-linsen", "kartoffelsuppe", "gulaschsuppe", "bockwurst"]
+}

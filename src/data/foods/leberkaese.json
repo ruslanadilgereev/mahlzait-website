@@ -1,0 +1,51 @@
+{
+  "slug": "leberkaese",
+  "name": "Leberkäse",
+  "emoji": "🍖",
+  "category": "gericht",
+  "seo": {
+    "title": "Leberkäse Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Leberkäse? Nährwerte für Fleischkäse pur, in der Semmel & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 290,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 26,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    {"name": "Leberkäse pur (warm)", "portion_g": 150, "calories": 435, "protein": 18, "carbs": 3, "fat": 39, "tip": "Klassisch vom Metzger"},
+    {"name": "Leberkässemmel", "portion_g": 200, "calories": 540, "protein": 22, "carbs": 28, "fat": 40, "tip": "Bayerischer Klassiker"},
+    {"name": "Leberkäse mit Spiegelei", "portion_g": 210, "calories": 530, "protein": 25, "carbs": 3, "fat": 46, "tip": "Deftiges Frühstück"},
+    {"name": "Leberkäse mit Kartoffelsalat", "portion_g": 350, "calories": 630, "protein": 22, "carbs": 35, "fat": 45, "tip": "Biergarten-Gericht"},
+    {"name": "Pizzaleberkäse", "portion_g": 150, "calories": 420, "protein": 17, "carbs": 5, "fat": 37, "tip": "Mit Paprika und Käse"},
+    {"name": "Putenleberkäse", "portion_g": 150, "calories": 280, "protein": 20, "carbs": 3, "fat": 21, "tip": "Kalorienärmere Variante"},
+    {"name": "Leberkäse kalt (Aufschnitt)", "portion_g": 80, "calories": 232, "protein": 10, "carbs": 2, "fat": 21, "tip": "Als Brotbelag"},
+    {"name": "Käseleberkäse", "portion_g": 150, "calories": 470, "protein": 20, "carbs": 3, "fat": 42, "tip": "Mit Emmentaler gefüllt"}
+  ],
+  "comparison": [
+    {"name": "Bratwurst", "calories": 310, "emoji": "🌭"},
+    {"name": "Leberkässemmel", "calories": 540, "emoji": "🥪"},
+    {"name": "Weißwurst (2 Stück)", "calories": 350, "emoji": "🌭"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Dünne Scheibe bestellen", "text": "Statt der üblichen dicken Scheibe eine dünne bestellen – spart 100-150 kcal.", "icon": "🔪"},
+    {"title": "Putenleberkäse wählen", "text": "Putenleberkäse hat ca. 35% weniger Kalorien als die klassische Variante.", "icon": "🦃"},
+    {"title": "Senf statt Ketchup", "text": "Senf hat nur 15 kcal pro EL, Ketchup 20 kcal. Beides besser als Mayo (100 kcal).", "icon": "🟡"},
+    {"title": "Semmel gegen Salat tauschen", "text": "Ohne Semmel sparst du 100 kcal. Mit Salat als Beilage wird es eine leichtere Mahlzeit.", "icon": "🥗"},
+    {"title": "Nicht zu oft", "text": "Leberkäse ist eine Kalorienbombe. Als gelegentlicher Genuss OK, nicht als tägliches Mittagessen.", "icon": "📅"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Leberkäse?", "answer": "Eine Scheibe Leberkäse (150g) hat ca. 435 kcal. In der Semmel sind es ca. 540 kcal."},
+    {"question": "Ist Leberkäse gesund?", "answer": "Leberkäse ist kalorienreich (290 kcal/100g) und fettreich (26g/100g). Als gelegentlicher Genuss OK, nicht als tägliche Mahlzeit."},
+    {"question": "Wie viel Fett hat Leberkäse?", "answer": "Leberkäse enthält ca. 26g Fett pro 100g. Das macht fast 80% der Kalorien aus. Putenleberkäse ist mit 21g Fett etwas besser."},
+    {"question": "Was hat weniger Kalorien: Leberkäse oder Bratwurst?", "answer": "Eine Bratwurst (310 kcal/120g) hat weniger als eine Scheibe Leberkäse (435 kcal/150g). Pro 100g sind sie aber ähnlich."},
+    {"question": "Ist in Leberkäse wirklich Leber?", "answer": "In Bayern muss Leberkäse keine Leber enthalten. Außerhalb Bayerns muss laut Lebensmittelrecht ein gewisser Leberanteil drin sein."},
+    {"question": "Wie viele Kalorien hat eine Leberkässemmel?", "answer": "Eine Leberkässemmel hat ca. 540 kcal – so viel wie ein Big Mac. Eine dünne Scheibe in der Semmel kommt auf ca. 400 kcal."}
+  ],
+  "related_foods": ["bratwurst", "leberkassemmel", "weisswurst", "bockwurst"]
+}

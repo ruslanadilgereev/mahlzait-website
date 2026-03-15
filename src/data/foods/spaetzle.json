@@ -1,0 +1,50 @@
+{
+  "slug": "spaetzle",
+  "name": "Spätzle",
+  "emoji": "🍝",
+  "category": "gericht",
+  "seo": {
+    "title": "Spätzle Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Spätzle? Nährwerte für Eierspätzle, Käsespätzle & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 150,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 26,
+    "fat_per_100g": 3,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Eierspätzle (Beilage)", "portion_g": 200, "calories": 300, "protein": 10, "carbs": 52, "fat": 6, "tip": "Als Beilage zu Braten"},
+    {"name": "Käsespätzle", "portion_g": 350, "calories": 650, "protein": 28, "carbs": 58, "fat": 34, "tip": "Schwäbischer Klassiker"},
+    {"name": "Spätzle mit Soße", "portion_g": 350, "calories": 500, "protein": 15, "carbs": 62, "fat": 22, "tip": "Mit Bratensauce"},
+    {"name": "Linsen mit Spätzle", "portion_g": 450, "calories": 580, "protein": 28, "carbs": 78, "fat": 16, "tip": "Schwäbisches Nationalgericht"},
+    {"name": "Spätzle in Butter geschwenkt", "portion_g": 250, "calories": 450, "protein": 12, "carbs": 58, "fat": 20, "tip": "Einfach, aber gehaltvoll"},
+    {"name": "Vollkornspätzle", "portion_g": 250, "calories": 340, "protein": 14, "carbs": 56, "fat": 6, "tip": "Mehr Ballaststoffe"},
+    {"name": "Spätzle als Suppeneinlage", "portion_g": 80, "calories": 120, "protein": 4, "carbs": 21, "fat": 2, "tip": "Kleine Portion in Brühe"}
+  ],
+  "comparison": [
+    {"name": "Nudeln (Spaghetti)", "calories": 350, "emoji": "🍝"},
+    {"name": "Kartoffeln gekocht", "calories": 180, "emoji": "🥔"},
+    {"name": "Reis gekocht", "calories": 310, "emoji": "🍚"},
+    {"name": "Knödel", "calories": 340, "emoji": "🥟"}
+  ],
+  "tips": [
+    {"title": "Als Beilage portionieren", "text": "200g als Beilage reichen. Die Hauptportion sollte Gemüse oder mageres Protein sein.", "icon": "⚖️"},
+    {"title": "Vollkornspätzle probieren", "text": "Vollkornspätzle haben mehr Ballaststoffe und sättigen länger – bei ähnlichem Geschmack.", "icon": "🌾"},
+    {"title": "Butter sparsam", "text": "Nur 1 TL Butter zum Schwenken statt 1 EL – spart 40 kcal pro Portion.", "icon": "🧈"},
+    {"title": "Selbst schaben", "text": "Selbstgemachte Spätzle enthalten mehr Ei und weniger Mehl = mehr Protein.", "icon": "🥚"},
+    {"title": "Mit Gemüse kombinieren", "text": "Mische gebratenes Gemüse unter die Spätzle – sättigt mehr bei weniger Kalorien.", "icon": "🥦"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Spätzle?", "answer": "Eine Beilage Spätzle (200g) hat ca. 300 kcal. Käsespätzle als Hauptgericht kommen auf ca. 650 kcal."},
+    {"question": "Sind Spätzle gesünder als Nudeln?", "answer": "Spätzle haben ähnliche Kalorien wie Nudeln (150 vs. 150 kcal/100g gekocht), enthalten aber mehr Ei und damit etwas mehr Protein."},
+    {"question": "Wie viel Protein haben Spätzle?", "answer": "Spätzle liefern ca. 5g Protein pro 100g gekocht. Durch die Eier im Teig etwas mehr als reine Wassernudeln."},
+    {"question": "Sind Spätzle gut zum Abnehmen?", "answer": "Pur als Beilage (300 kcal/200g) sind Spätzle okay. Käsespätzle (650 kcal) sind eher ein Genuss-Gericht."},
+    {"question": "Was hat weniger Kalorien: Spätzle oder Kartoffeln?", "answer": "Gekochte Kartoffeln (70 kcal/100g) haben deutlich weniger Kalorien als Spätzle (150 kcal/100g). Als Beilage sind Kartoffeln die leichtere Wahl."},
+    {"question": "Kann man Spätzle einfrieren?", "answer": "Ja, gegarte Spätzle lassen sich gut einfrieren. Portionsweise einfrieren und bei Bedarf in der Pfanne oder kochendem Wasser aufwärmen."}
+  ],
+  "related_foods": ["kaesespaetzle", "nudeln", "kartoffeln", "knodel"]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "rinderbraten",
+  "name": "Rinderbraten",
+  "emoji": "🥩",
+  "category": "gericht",
+  "seo": {
+    "title": "Rinderbraten Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Rinderbraten? Nährwerte für Sonntagsbraten, Tafelspitz & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 180,
+    "protein_per_100g": 26,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Rinderbraten klassisch", "portion_g": 250, "calories": 450, "protein": 65, "carbs": 0, "fat": 20, "tip": "Aus der Oberschale"},
+    {"name": "Tafelspitz", "portion_g": 250, "calories": 420, "protein": 60, "carbs": 0, "fat": 18, "tip": "Gekocht, sehr zart"},
+    {"name": "Rinderbraten mit Soße", "portion_g": 350, "calories": 560, "protein": 65, "carbs": 10, "fat": 28, "tip": "Bratensaft erhöht Kalorien"},
+    {"name": "Rinderbraten mit Kartoffeln", "portion_g": 500, "calories": 700, "protein": 68, "carbs": 48, "fat": 25, "tip": "Komplette Sonntagsmahlzeit"},
+    {"name": "Rinderbraten vom Filet", "portion_g": 200, "calories": 340, "protein": 52, "carbs": 0, "fat": 14, "tip": "Edelster und magerster Schnitt"},
+    {"name": "Schmorbraten", "portion_g": 300, "calories": 540, "protein": 60, "carbs": 8, "fat": 30, "tip": "Langsam geschmort, sehr aromatisch"},
+    {"name": "Kaltaufschnitt vom Braten", "portion_g": 100, "calories": 180, "protein": 26, "carbs": 0, "fat": 8, "tip": "Ideal als Brotbelag"}
+  ],
+  "comparison": [
+    {"name": "Schweinebraten", "calories": 575, "emoji": "🐷"},
+    {"name": "Sauerbraten", "calories": 465, "emoji": "🥩"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Gulasch", "calories": 500, "emoji": "🍲"}
+  ],
+  "tips": [
+    {"title": "Filet oder Oberschale wählen", "text": "Magere Teilstücke wie Filet oder Oberschale haben deutlich weniger Fett als Nacken oder Brust.", "icon": "🥩"},
+    {"title": "Niedrigtemperatur-Garen", "text": "Bei 80°C im Ofen wird der Braten zart, ohne dass extra Fett nötig ist.", "icon": "🌡️"},
+    {"title": "Soße entfetten", "text": "Die Bratsoße über Nacht kühlen und das erstarrte Fett abschöpfen – spart 80-100 kcal.", "icon": "🥄"},
+    {"title": "Resteverwertung planen", "text": "Übrig gebliebener Rinderbraten ist perfekt als Brotbelag oder in Salaten.", "icon": "♻️"},
+    {"title": "Gemüse mitschmoren", "text": "Karotten, Sellerie und Zwiebeln im Bratensaft schmoren – kalorienarme Beilage mit voller Geschmack.", "icon": "🥕"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Rinderbraten?", "answer": "Eine Portion Rinderbraten (250g) hat ca. 450 kcal. Mit Soße und Beilagen kommt eine komplette Mahlzeit auf 700 kcal."},
+    {"question": "Ist Rinderbraten gesund?", "answer": "Rinderbraten ist proteinreich (26g/100g), liefert Eisen und B12. Der Fettgehalt ist mit 8g/100g moderat."},
+    {"question": "Was hat weniger Kalorien: Rinderbraten oder Schweinebraten?", "answer": "Rinderbraten (180 kcal/100g) hat ca. 22% weniger Kalorien als Schweinebraten (230 kcal/100g)."},
+    {"question": "Wie viel Protein hat Rinderbraten?", "answer": "Rinderbraten liefert 26g Protein pro 100g. Eine Portion (250g) bringt stolze 65g Protein."},
+    {"question": "Welches Teilstück ist am kalorienärmsten?", "answer": "Rinderfilet ist mit ca. 170 kcal/100g am magersten. Oberschale (180 kcal) und Tafelspitz sind ebenfalls gute Wahlen."},
+    {"question": "Kann man Rinderbraten beim Abnehmen essen?", "answer": "Ja, Rinderbraten ist eine der besten Proteinquellen. Wähle magere Teilstücke und leichte Beilagen wie Gemüse statt Klöße."}
+  ],
+  "related_foods": ["schweinebraten", "sauerbraten", "rouladen", "gulasch"]
+}

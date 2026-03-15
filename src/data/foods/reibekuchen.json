@@ -1,0 +1,50 @@
+{
+  "slug": "reibekuchen",
+  "name": "Reibekuchen",
+  "emoji": "🥔",
+  "category": "gericht",
+  "seo": {
+    "title": "Reibekuchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Reibekuchen? Nährwerte für rheinische Reibekuchen mit Apfelmus & Varianten. Kostenloser Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 220,
+    "protein_per_100g": 4,
+    "carbs_per_100g": 23,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 1.8,
+    "typical_portion_g": 250,
+    "typical_portion_name": "3 Stück"
+  },
+  "variants": [
+    {"name": "Reibekuchen klassisch", "portion_g": 250, "calories": 550, "protein": 10, "carbs": 58, "fat": 33, "tip": "Rheinischer Klassiker"},
+    {"name": "Reibekuchen mit Apfelmus", "portion_g": 330, "calories": 630, "protein": 10, "carbs": 82, "fat": 33, "tip": "Traditionelle Kombination"},
+    {"name": "Reibekuchen mit Lachs", "portion_g": 300, "calories": 610, "protein": 22, "carbs": 58, "fat": 35, "tip": "Festliche Variante"},
+    {"name": "Reibekuchen mit Rübenkraut", "portion_g": 270, "calories": 600, "protein": 10, "carbs": 70, "fat": 33, "tip": "Rheinische Spezialität"},
+    {"name": "Reibekuchen aus dem Ofen", "portion_g": 250, "calories": 400, "protein": 10, "carbs": 56, "fat": 16, "tip": "Kalorienärmste Variante"},
+    {"name": "Reibekuchen mit Kräuterquark", "portion_g": 300, "calories": 580, "protein": 16, "carbs": 58, "fat": 33, "tip": "Proteinreichere Variante"},
+    {"name": "Mini-Reibekuchen (Snack)", "portion_g": 150, "calories": 330, "protein": 6, "carbs": 35, "fat": 20, "tip": "Kleinere Portion für zwischendurch"}
+  ],
+  "comparison": [
+    {"name": "Kartoffelpuffer", "calories": 538, "emoji": "🥔"},
+    {"name": "Pommes frites", "calories": 540, "emoji": "🍟"},
+    {"name": "Bratkartoffeln", "calories": 480, "emoji": "🥔"},
+    {"name": "Rösti", "calories": 480, "emoji": "🇨🇭"}
+  ],
+  "tips": [
+    {"title": "Im Ofen backen", "text": "Ofen-Reibekuchen haben ca. 150 kcal weniger pro Portion als in der Pfanne frittierte.", "icon": "🔥"},
+    {"title": "Gut auspressen", "text": "Die geriebenen Kartoffeln gut ausdrücken – weniger Wasser = weniger Fettaufnahme beim Braten.", "icon": "💧"},
+    {"title": "Auf Küchenpapier abtropfen", "text": "Nach dem Braten auf Küchenpapier legen – zieht überschüssiges Fett heraus.", "icon": "🧻"},
+    {"title": "Apfelmus selbst machen", "text": "Selbstgemachtes Apfelmus ohne Zucker hat nur 40 kcal/100g statt 80 kcal bei Fertigprodukten.", "icon": "🍎"},
+    {"title": "Portionsgröße beachten", "text": "2 Reibekuchen statt 3 als Beilage – spart ein Drittel der Kalorien.", "icon": "⚖️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Reibekuchen?", "answer": "Drei Reibekuchen (250g) haben ca. 550 kcal. Aus dem Ofen nur ca. 400 kcal."},
+    {"question": "Was ist der Unterschied zwischen Reibekuchen und Kartoffelpuffer?", "answer": "Reibekuchen ist der rheinische Name für Kartoffelpuffer. Das Rezept kann leicht variieren, aber die Grundzutaten sind gleich."},
+    {"question": "Sind Reibekuchen gesund?", "answer": "Kartoffeln sind gesund, aber das Bratfett macht Reibekuchen kalorienreich. Die Ofenvariante ist deutlich gesünder."},
+    {"question": "Wie macht man kalorienarme Reibekuchen?", "answer": "Im Ofen backen statt frittieren, die Masse gut auspressen, und dünn ausbacken. Spart bis zu 150 kcal pro Portion."},
+    {"question": "Kann man Reibekuchen einfrieren?", "answer": "Ja, fertig gebratene Reibekuchen lassen sich portionsweise einfrieren. Im Ofen bei 180°C aufbacken."},
+    {"question": "Welche Beilage hat am wenigsten Kalorien zum Reibekuchen?", "answer": "Apfelmus ohne Zucker (40 kcal/100g) ist die kalorienärmste Option. Kräuterquark ist proteinreicher. Rübenkraut hat am meisten Zucker."}
+  ],
+  "related_foods": ["kartoffelpuffer", "bratkartoffeln", "kartoffeln", "pommes-frites"]
+}

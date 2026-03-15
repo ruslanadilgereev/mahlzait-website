@@ -1,0 +1,50 @@
+{
+  "slug": "sauerbraten",
+  "name": "Sauerbraten",
+  "emoji": "🥩",
+  "category": "gericht",
+  "seo": {
+    "title": "Sauerbraten Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Sauerbraten? Nährwerte für Rheinischen Sauerbraten mit Soße, Klößen & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 155,
+    "protein_per_100g": 19,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 0.3,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Portion mit Soße"
+  },
+  "variants": [
+    {"name": "Rheinischer Sauerbraten", "portion_g": 300, "calories": 465, "protein": 57, "carbs": 15, "fat": 21, "tip": "Klassiker mit Rosinen-Soße"},
+    {"name": "Fränkischer Sauerbraten", "portion_g": 300, "calories": 480, "protein": 54, "carbs": 18, "fat": 22, "tip": "Mit Lebkuchensoße"},
+    {"name": "Sauerbraten mit Kartoffelklößen", "portion_g": 500, "calories": 750, "protein": 60, "carbs": 65, "fat": 28, "tip": "Komplette Mahlzeit"},
+    {"name": "Sauerbraten mit Rotkohl", "portion_g": 450, "calories": 580, "protein": 58, "carbs": 30, "fat": 23, "tip": "Traditionelle Beilage"},
+    {"name": "Sauerbraten vom Wild", "portion_g": 300, "calories": 420, "protein": 60, "carbs": 12, "fat": 16, "tip": "Kalorienärmste Variante"},
+    {"name": "Sauerbraten-Gulasch", "portion_g": 350, "calories": 525, "protein": 52, "carbs": 20, "fat": 26, "tip": "Als Eintopf-Variante"},
+    {"name": "Sauerbraten ohne Soße", "portion_g": 200, "calories": 280, "protein": 42, "carbs": 0, "fat": 12, "tip": "Nur das Fleisch"}
+  ],
+  "comparison": [
+    {"name": "Rinderbraten", "calories": 450, "emoji": "🥩"},
+    {"name": "Gulasch", "calories": 500, "emoji": "🍲"},
+    {"name": "Schnitzel", "calories": 550, "emoji": "🍖"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Wild statt Rind", "text": "Sauerbraten vom Wild hat ca. 15% weniger Kalorien als die Rindvariante und mehr Protein.", "icon": "🦌"},
+    {"title": "Soße portionieren", "text": "Die Soße macht oft 100-150 kcal extra aus. Nimm dir nur 2-3 EL statt zu ertränken.", "icon": "🥄"},
+    {"title": "Knödel gegen Kartoffeln tauschen", "text": "Salzkartoffeln statt Klößen sparen dir ca. 100 kcal pro Portion.", "icon": "🥔"},
+    {"title": "Mageres Stück wählen", "text": "Oberschale oder Unterschale sind magerer als Nacken – weniger Fett, mehr Protein.", "icon": "🥩"},
+    {"title": "Am nächsten Tag noch besser", "text": "Sauerbraten wird aufgewärmt noch aromatischer. Koche vor und spare dir Impulskäufe.", "icon": "📦"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Sauerbraten?", "answer": "Eine Portion Sauerbraten mit Soße (300g) hat ca. 465 kcal. Mit Klößen und Rotkohl kommt eine komplette Mahlzeit auf 700-800 kcal."},
+    {"question": "Ist Sauerbraten gesund?", "answer": "Sauerbraten liefert viel hochwertiges Protein (19g/100g) und Eisen. Die Soße kann allerdings kalorienreich sein – maßvoll genießen."},
+    {"question": "Was hat weniger Kalorien: Sauerbraten oder Schnitzel?", "answer": "Sauerbraten (465 kcal/Portion) hat weniger Kalorien als ein paniertes Schnitzel (550 kcal), da er nicht frittiert wird."},
+    {"question": "Wie viel Protein hat Sauerbraten?", "answer": "Sauerbraten liefert ca. 19g Protein pro 100g. Eine Portion (300g) bringt stolze 57g Protein – ideal für Sportler."},
+    {"question": "Kann man Sauerbraten beim Abnehmen essen?", "answer": "Ja, das Fleisch selbst ist relativ mager. Achte auf die Soßenmenge und wähle Salzkartoffeln statt Klöße als Beilage."},
+    {"question": "Wie lange muss Sauerbraten marinieren?", "answer": "Traditionell wird Sauerbraten 3-7 Tage in einer Essig-Gewürz-Marinade eingelegt. Das macht das Fleisch zart und aromatisch, ohne Kalorien hinzuzufügen."}
+  ],
+  "related_foods": ["gulasch", "rinderbraten", "kartoffelsalat", "rotkohl"]
+}

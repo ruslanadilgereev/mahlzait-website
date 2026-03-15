@@ -1,0 +1,50 @@
+{
+  "slug": "wurstsalat",
+  "name": "Wurstsalat",
+  "emoji": "🥗",
+  "category": "gericht",
+  "seo": {
+    "title": "Wurstsalat Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Wurstsalat? Nährwerte für Schweizer, Straßburger & bayerischen Wurstsalat. Kostenloser Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 195,
+    "protein_per_100g": 11,
+    "carbs_per_100g": 3,
+    "fat_per_100g": 16,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Bayerischer Wurstsalat", "portion_g": 250, "calories": 488, "protein": 28, "carbs": 8, "fat": 40, "tip": "Mit Essig-Öl-Dressing"},
+    {"name": "Schweizer Wurstsalat", "portion_g": 270, "calories": 560, "protein": 32, "carbs": 8, "fat": 46, "tip": "Mit Käsestreifen"},
+    {"name": "Straßburger Wurstsalat", "portion_g": 250, "calories": 500, "protein": 28, "carbs": 10, "fat": 40, "tip": "Mit Gewürzgurken"},
+    {"name": "Wurstsalat mit Brot", "portion_g": 300, "calories": 580, "protein": 30, "carbs": 30, "fat": 42, "tip": "Plus Scheibe Bauernbrot"},
+    {"name": "Leichter Wurstsalat (Geflügelwurst)", "portion_g": 250, "calories": 380, "protein": 30, "carbs": 8, "fat": 26, "tip": "Kalorienärmste Variante"},
+    {"name": "Wurstsalat mit Pommes", "portion_g": 400, "calories": 750, "protein": 30, "carbs": 45, "fat": 50, "tip": "Biergarten-Kombi"},
+    {"name": "Fleischsalat (mit Mayo)", "portion_g": 200, "calories": 520, "protein": 18, "carbs": 6, "fat": 48, "tip": "Deutlich fettreicher durch Mayo"}
+  ],
+  "comparison": [
+    {"name": "Obatzda", "calories": 450, "emoji": "🧀"},
+    {"name": "Kartoffelsalat", "calories": 350, "emoji": "🥔"},
+    {"name": "Griechischer Salat", "calories": 280, "emoji": "🥗"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Geflügelwurst nehmen", "text": "Mit Geflügelwurst statt Lyoner sparst du ca. 100 kcal pro Portion.", "icon": "🦃"},
+    {"title": "Essig-Öl statt Mayo", "text": "Wurstsalat mit Essig-Öl-Dressing hat deutlich weniger Kalorien als Fleischsalat mit Mayonnaise.", "icon": "🍶"},
+    {"title": "Mehr Gemüse, weniger Wurst", "text": "Erhöhe den Gemüseanteil (Gurke, Tomate, Paprika) – sättigt und senkt die Kaloriendichte.", "icon": "🥒"},
+    {"title": "Brot weglassen", "text": "Ohne Brot sparst du 100 kcal. Der Wurstsalat allein ist schon sättigend genug.", "icon": "🍞"},
+    {"title": "Kleine Portion reicht", "text": "200g statt 250g als Vorspeise reichen – spart 100 kcal und lässt Platz für Hauptgang.", "icon": "⚖️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Wurstsalat?", "answer": "Eine Portion Wurstsalat (250g) hat ca. 488 kcal beim bayerischen Rezept. Die Schweizer Variante mit Käse liegt bei 560 kcal."},
+    {"question": "Ist Wurstsalat gesund?", "answer": "Wurstsalat ist proteinreich aber fettreich (16g/100g). Als gelegentliches Gericht OK, nicht als tägliche Mahlzeit."},
+    {"question": "Was hat weniger Kalorien: Wurstsalat oder Fleischsalat?", "answer": "Wurstsalat mit Essig-Öl (488 kcal) hat weniger als Fleischsalat mit Mayo (520 kcal/200g). Die Mayo macht den Unterschied."},
+    {"question": "Wie viel Protein hat Wurstsalat?", "answer": "Eine Portion liefert 28-32g Protein. Durch den Käse beim Schweizer Wurstsalat steigt der Proteingehalt."},
+    {"question": "Welcher Wurstsalat hat am wenigsten Kalorien?", "answer": "Wurstsalat mit Geflügelwurst und Essig-Öl-Dressing hat mit ca. 380 kcal pro Portion die wenigsten Kalorien."},
+    {"question": "Wie lange hält Wurstsalat im Kühlschrank?", "answer": "Selbstgemachter Wurstsalat hält im Kühlschrank 2-3 Tage. Er schmeckt durchgezogen sogar besser."}
+  ],
+  "related_foods": ["obatzda", "kartoffelsalat", "bratwurst", "brezel"]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "frikadellen",
+  "name": "Frikadellen",
+  "emoji": "🍔",
+  "category": "gericht",
+  "seo": {
+    "title": "Frikadellen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Frikadellen? Nährwerte für Buletten, Fleischpflanzerl & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 220,
+    "protein_per_100g": 16,
+    "carbs_per_100g": 8,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Frikadelle"
+  },
+  "variants": [
+    {"name": "Klassische Frikadelle (gemischt)", "portion_g": 150, "calories": 330, "protein": 24, "carbs": 12, "fat": 21, "tip": "Halb Rind, halb Schwein"},
+    {"name": "Rinderfrikadelle", "portion_g": 150, "calories": 310, "protein": 27, "carbs": 10, "fat": 18, "tip": "Etwas magerer"},
+    {"name": "Putenfrikadelle", "portion_g": 150, "calories": 240, "protein": 30, "carbs": 10, "fat": 9, "tip": "Kalorienärmste Variante"},
+    {"name": "Frikadelle im Brötchen", "portion_g": 250, "calories": 480, "protein": 28, "carbs": 38, "fat": 24, "tip": "Als Burger-Variante"},
+    {"name": "Frikadelle mit Kartoffelsalat", "portion_g": 350, "calories": 530, "protein": 28, "carbs": 40, "fat": 28, "tip": "Klassische Kombination"},
+    {"name": "Mini-Frikadellen (Party)", "portion_g": 100, "calories": 220, "protein": 16, "carbs": 8, "fat": 14, "tip": "5-6 kleine Stücke"},
+    {"name": "Veggie-Frikadelle", "portion_g": 150, "calories": 200, "protein": 12, "carbs": 18, "fat": 10, "tip": "Aus Bohnen oder Linsen"},
+    {"name": "Frikadelle aus dem Ofen", "portion_g": 150, "calories": 270, "protein": 25, "carbs": 12, "fat": 14, "tip": "Weniger Fett durch Ofenzubereitung"}
+  ],
+  "comparison": [
+    {"name": "Hamburger", "calories": 295, "emoji": "🍔"},
+    {"name": "Bratwurst", "calories": 310, "emoji": "🌭"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Hackbraten", "calories": 380, "emoji": "🥩"}
+  ],
+  "tips": [
+    {"title": "Pute statt Schwein", "text": "Putenfrikadellen haben 30% weniger Kalorien als klassische Frikadellen aus gemischtem Hack.", "icon": "🦃"},
+    {"title": "Im Ofen statt in der Pfanne", "text": "Ofenfrikadellen brauchen kein Bratfett – das spart ca. 60 kcal pro Stück.", "icon": "🔥"},
+    {"title": "Haferflocken statt Brötchen", "text": "Ersetze das eingeweichte Brötchen durch Haferflocken für mehr Ballaststoffe und weniger leere Kohlenhydrate.", "icon": "🌾"},
+    {"title": "Portion kontrollieren", "text": "Eine Frikadelle reicht als Proteinquelle. Die zweite ist oft nur Gewohnheit.", "icon": "⚖️"},
+    {"title": "Kalt als Snack", "text": "Kalte Frikadellen sind ein super Protein-Snack – ideal für unterwegs oder die Brotdose.", "icon": "🧊"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Frikadelle?", "answer": "Eine klassische Frikadelle (150g) hat ca. 330 kcal. Putenfrikadellen kommen auf ca. 240 kcal, Ofenvarianten auf ca. 270 kcal."},
+    {"question": "Sind Frikadellen gut zum Abnehmen?", "answer": "In Maßen ja – besonders Putenfrikadellen aus dem Ofen (240 kcal, 30g Protein). Vermeide das Braten in viel Fett."},
+    {"question": "Wie viel Protein hat eine Frikadelle?", "answer": "Eine Frikadelle liefert 16-30g Protein, je nach Fleischart. Putenfrikadellen haben den höchsten Proteinanteil."},
+    {"question": "Was hat weniger Kalorien: Frikadelle oder Bratwurst?", "answer": "Eine Frikadelle (330 kcal/150g) und eine Bratwurst (310 kcal) liegen nah beieinander. Putenfrikadellen (240 kcal) gewinnen klar."},
+    {"question": "Wie macht man kalorienarme Frikadellen?", "answer": "Verwende mageres Putengehacktes, backe sie im Ofen statt in der Pfanne, und nimm Haferflocken statt Brötchen als Bindemittel."},
+    {"question": "Wie viele Frikadellen pro Portion?", "answer": "Als Hauptgericht rechnet man 2 Frikadellen (300g, ca. 660 kcal). Als Beilage reicht 1 Stück. Für Partys sind Mini-Frikadellen ideal."}
+  ],
+  "related_foods": ["hackbraten", "bratwurst", "burger", "koenigsberger-klopse"]
+}

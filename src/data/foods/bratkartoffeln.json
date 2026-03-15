@@ -1,0 +1,50 @@
+{
+  "slug": "bratkartoffeln",
+  "name": "Bratkartoffeln",
+  "emoji": "🥔",
+  "category": "gericht",
+  "seo": {
+    "title": "Bratkartoffeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Bratkartoffeln? Nährwerte für Bratkartoffeln mit Speck, Zwiebeln & mehr. Kostenloser Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 160,
+    "protein_per_100g": 3,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 2,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Bratkartoffeln klassisch", "portion_g": 300, "calories": 480, "protein": 9, "carbs": 60, "fat": 24, "tip": "In Butter oder Schmalz"},
+    {"name": "Bratkartoffeln mit Speck", "portion_g": 300, "calories": 540, "protein": 15, "carbs": 58, "fat": 28, "tip": "Deftiger Klassiker"},
+    {"name": "Bratkartoffeln mit Spiegelei", "portion_g": 400, "calories": 620, "protein": 20, "carbs": 60, "fat": 34, "tip": "Komplette Mahlzeit"},
+    {"name": "Bratkartoffeln leicht (wenig Fett)", "portion_g": 300, "calories": 350, "protein": 8, "carbs": 60, "fat": 10, "tip": "Kalorienärmste Variante"},
+    {"name": "Bratkartoffeln aus rohen Kartoffeln", "portion_g": 300, "calories": 460, "protein": 8, "carbs": 58, "fat": 22, "tip": "Mehr Fett nötig beim Braten"},
+    {"name": "Bratkartoffeln mit Zwiebeln", "portion_g": 300, "calories": 490, "protein": 10, "carbs": 62, "fat": 24, "tip": "Röstzwiebeln on top"},
+    {"name": "Rosmarinkartoffeln (Ofen)", "portion_g": 300, "calories": 380, "protein": 7, "carbs": 55, "fat": 15, "tip": "Leichtere Ofenvariante"}
+  ],
+  "comparison": [
+    {"name": "Pommes frites", "calories": 540, "emoji": "🍟"},
+    {"name": "Salzkartoffeln", "calories": 210, "emoji": "🥔"},
+    {"name": "Kartoffelpüree", "calories": 350, "emoji": "🥔"},
+    {"name": "Reis gekocht", "calories": 310, "emoji": "🍚"}
+  ],
+  "tips": [
+    {"title": "Vorgekochte Kartoffeln verwenden", "text": "Vom Vortag übrig gebliebene Kartoffeln brauchen weniger Fett beim Braten.", "icon": "🥔"},
+    {"title": "Beschichtete Pfanne nutzen", "text": "In einer beschichteten Pfanne brauchst du nur 1 EL Öl statt 3 – spart 150 kcal.", "icon": "🍳"},
+    {"title": "Speck durch Räuchertofu ersetzen", "text": "Räuchertofu gibt rauchiges Aroma mit weniger Fett als Speck.", "icon": "🌱"},
+    {"title": "Im Ofen statt in der Pfanne", "text": "Rosmarinkartoffeln aus dem Ofen brauchen weniger Fett und werden genauso knusprig.", "icon": "🔥"},
+    {"title": "Nicht zu oft wenden", "text": "Weniger Wenden = bessere Kruste. Und weniger Versuchung, mehr Fett nachzugießen.", "icon": "👨‍🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Bratkartoffeln?", "answer": "Eine Portion Bratkartoffeln (300g) hat ca. 480 kcal. Mit Speck 540 kcal, in der Light-Variante nur 350 kcal."},
+    {"question": "Sind Bratkartoffeln gesünder als Pommes?", "answer": "Ja, Bratkartoffeln (160 kcal/100g) haben weniger Kalorien als Pommes (290 kcal/100g) und können mit weniger Fett zubereitet werden."},
+    {"question": "Wie viel Fett haben Bratkartoffeln?", "answer": "Klassische Bratkartoffeln haben ca. 8g Fett/100g. Die Light-Variante kommt auf nur 3g Fett/100g."},
+    {"question": "Sind Bratkartoffeln gut zum Abnehmen?", "answer": "Die Light-Variante (350 kcal) ist in Ordnung. Kartoffeln sättigen gut. Vermeide nur zu viel Bratfett."},
+    {"question": "Was hat weniger Kalorien: Bratkartoffeln oder Reis?", "answer": "Leichte Bratkartoffeln (350 kcal/300g) sind ähnlich wie Reis (310 kcal/250g). Klassische Bratkartoffeln haben mehr."},
+    {"question": "Wie macht man kalorienarme Bratkartoffeln?", "answer": "Verwende vorgekochte Kartoffeln, brate in beschichteter Pfanne mit nur 1 EL Öl, und lass Speck weg. Alternativ im Ofen zubereiten."}
+  ],
+  "related_foods": ["kartoffeln", "pommes-frites", "kartoffelpuffer", "kartoffelsalat"]
+}

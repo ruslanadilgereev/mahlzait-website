@@ -1,0 +1,50 @@
+{
+  "slug": "rouladen",
+  "name": "Rinderrouladen",
+  "emoji": "🥩",
+  "category": "gericht",
+  "seo": {
+    "title": "Rouladen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Rinderrouladen? Nährwerte für klassische Rouladen mit Füllung, Soße & Beilagen. Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 175,
+    "protein_per_100g": 21,
+    "carbs_per_100g": 3,
+    "fat_per_100g": 9,
+    "fiber_per_100g": 0.2,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Roulade mit Soße"
+  },
+  "variants": [
+    {"name": "Klassische Rinderroulade", "portion_g": 300, "calories": 525, "protein": 63, "carbs": 9, "fat": 27, "tip": "Mit Senf, Speck, Gurke"},
+    {"name": "Rinderroulade ohne Speck", "portion_g": 280, "calories": 430, "protein": 60, "carbs": 8, "fat": 18, "tip": "Kalorienärmere Variante"},
+    {"name": "Kohlroulade (Krautwickel)", "portion_g": 350, "calories": 380, "protein": 28, "carbs": 18, "fat": 22, "tip": "Mit Hackfleischfüllung"},
+    {"name": "Roulade mit Klößen & Rotkohl", "portion_g": 600, "calories": 850, "protein": 65, "carbs": 70, "fat": 35, "tip": "Komplettes Sonntagsessen"},
+    {"name": "Putenroulade", "portion_g": 250, "calories": 350, "protein": 48, "carbs": 5, "fat": 15, "tip": "Leichtere Alternative"},
+    {"name": "Roulade mit Kartoffelpüree", "portion_g": 500, "calories": 720, "protein": 60, "carbs": 50, "fat": 32, "tip": "Cremige Beilage"},
+    {"name": "Vegetarische Wirsingroulade", "portion_g": 300, "calories": 280, "protein": 15, "carbs": 22, "fat": 16, "tip": "Pflanzliche Alternative"}
+  ],
+  "comparison": [
+    {"name": "Sauerbraten", "calories": 465, "emoji": "🥩"},
+    {"name": "Gulasch", "calories": 500, "emoji": "🍲"},
+    {"name": "Schnitzel", "calories": 550, "emoji": "🍖"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Speck weglassen", "text": "Ohne Speckeinlage sparst du ca. 80-100 kcal pro Roulade – immer noch lecker mit Senf und Gewürzgurke.", "icon": "🥓"},
+    {"title": "Pute statt Rind", "text": "Putenrouladen haben ca. 35% weniger Kalorien und mehr Protein als die klassische Rindvariante.", "icon": "🦃"},
+    {"title": "Soße entfetten", "text": "Lass die Bratsoße kurz abkühlen und schöpfe das Fett ab. Das spart 50-80 kcal pro Portion.", "icon": "🥄"},
+    {"title": "Gemüse als Beilage", "text": "Statt Klößen ein Gemüsemedley wählen – spart bis zu 200 kcal und liefert mehr Ballaststoffe.", "icon": "🥦"},
+    {"title": "Meal Prep geeignet", "text": "Rouladen lassen sich perfekt vorbereiten und aufwärmen – ideal für die Wochenplanung.", "icon": "📦"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Rinderroulade?", "answer": "Eine klassische Rinderroulade mit Soße (300g) hat ca. 525 kcal. Mit Klößen und Rotkohl kommt ein komplettes Essen auf ca. 850 kcal."},
+    {"question": "Sind Rouladen gesund?", "answer": "Rouladen liefern viel Protein (21g/100g) und Eisen. Die Füllung mit Speck und die Bratsoße machen sie allerdings kalorienreich."},
+    {"question": "Wie viel Protein haben Rouladen?", "answer": "Eine Roulade liefert ca. 63g Protein pro Portion – das deckt den Tagesbedarf fast komplett."},
+    {"question": "Was hat weniger Kalorien: Rouladen oder Schnitzel?", "answer": "Rouladen (525 kcal) haben weniger Kalorien als panierte Schnitzel (550 kcal), da sie nicht in Fett ausgebacken werden."},
+    {"question": "Kann man Rouladen beim Abnehmen essen?", "answer": "Ja, besonders Putenrouladen (350 kcal) oder Rouladen ohne Speck (430 kcal) sind gute Proteinquellen. Wähle leichte Beilagen."},
+    {"question": "Wie macht man kalorienarme Rouladen?", "answer": "Verwende mageres Rindfleisch aus der Oberschale, lass den Speck weg, und brate mit wenig Öl an. Als Beilage Salzkartoffeln statt Klöße wählen."}
+  ],
+  "related_foods": ["sauerbraten", "gulasch", "schnitzel", "kartoffelsalat"]
+}

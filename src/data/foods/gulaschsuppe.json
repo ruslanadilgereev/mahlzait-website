@@ -1,0 +1,50 @@
+{
+  "slug": "gulaschsuppe",
+  "name": "Gulaschsuppe",
+  "emoji": "🍲",
+  "category": "gericht",
+  "seo": {
+    "title": "Gulaschsuppe Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Gulaschsuppe? Nährwerte für klassische Gulaschsuppe, ungarisch & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 120,
+    "protein_per_100g": 9,
+    "carbs_per_100g": 6,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 400,
+    "typical_portion_name": "1 Teller"
+  },
+  "variants": [
+    {"name": "Klassische Gulaschsuppe", "portion_g": 400, "calories": 480, "protein": 36, "carbs": 24, "fat": 28, "tip": "Mit Rindfleisch und Paprika"},
+    {"name": "Ungarische Gulaschsuppe", "portion_g": 400, "calories": 520, "protein": 38, "carbs": 28, "fat": 30, "tip": "Schärfer, mit mehr Paprika"},
+    {"name": "Gulaschsuppe mit Kartoffeln", "portion_g": 450, "calories": 540, "protein": 36, "carbs": 40, "fat": 28, "tip": "Sättigender mit Kartoffelstücken"},
+    {"name": "Leichte Gulaschsuppe", "portion_g": 400, "calories": 380, "protein": 34, "carbs": 22, "fat": 18, "tip": "Kalorienärmste Variante"},
+    {"name": "Gulaschsuppe mit Brot", "portion_g": 400, "calories": 580, "protein": 38, "carbs": 44, "fat": 30, "tip": "Plus Scheibe Bauernbrot"},
+    {"name": "Kessel-Gulaschsuppe", "portion_g": 450, "calories": 560, "protein": 40, "carbs": 30, "fat": 32, "tip": "Deftige Festzelt-Variante"},
+    {"name": "Gulaschsuppe vom Schwein", "portion_g": 400, "calories": 500, "protein": 32, "carbs": 24, "fat": 32, "tip": "Schweinegulasch ist fettreicher"}
+  ],
+  "comparison": [
+    {"name": "Gulasch (Hauptgericht)", "calories": 500, "emoji": "🥩"},
+    {"name": "Erbsensuppe", "calories": 440, "emoji": "🟢"},
+    {"name": "Kartoffelsuppe", "calories": 300, "emoji": "🥔"},
+    {"name": "Linseneintopf", "calories": 380, "emoji": "🫘"}
+  ],
+  "tips": [
+    {"title": "Mageres Rindfleisch wählen", "text": "Oberschale oder Hüfte haben weniger Fett als Nacken – spart 80-100 kcal pro Portion.", "icon": "🥩"},
+    {"title": "Paprika großzügig verwenden", "text": "Paprika hat fast keine Kalorien, gibt aber viel Geschmack und Vitamin C.", "icon": "🫑"},
+    {"title": "Ohne Brot servieren", "text": "Das Brot dazu macht oft 100-150 kcal extra. Die Suppe ist auch solo sättigend.", "icon": "🍞"},
+    {"title": "Langzeitsättigung nutzen", "text": "Durch Protein und Flüssigkeit sättigt Gulaschsuppe besonders gut – ideal als Hauptmahlzeit.", "icon": "💪"},
+    {"title": "Großen Topf kochen", "text": "Gulaschsuppe wird aufgewärmt besser. Gleich für 4-5 Tage kochen.", "icon": "🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Gulaschsuppe?", "answer": "Ein Teller Gulaschsuppe (400g) hat ca. 480 kcal bei der klassischen Variante. Die leichte Version kommt auf 380 kcal."},
+    {"question": "Ist Gulaschsuppe gesund?", "answer": "Ja, sie liefert viel Protein (9g/100g), Eisen und Vitamin C aus der Paprika. Achte auf mageres Fleisch."},
+    {"question": "Wie viel Protein hat Gulaschsuppe?", "answer": "Ein Teller (400g) liefert 34-40g Protein – fast die Hälfte des Tagesbedarfs."},
+    {"question": "Ist Gulaschsuppe gut zum Abnehmen?", "answer": "Die leichte Variante (380 kcal) ist eine sättigende Mahlzeit mit viel Protein. Gute Wahl in einer Diät."},
+    {"question": "Was ist der Unterschied zwischen Gulasch und Gulaschsuppe?", "answer": "Gulaschsuppe hat mehr Flüssigkeit und kleinere Fleischstücke. Sie hat weniger Kalorien pro Portion als das Hauptgericht Gulasch."},
+    {"question": "Wie lange hält Gulaschsuppe?", "answer": "Im Kühlschrank 4-5 Tage, eingefroren 3 Monate. Sie schmeckt aufgewärmt sogar besser."}
+  ],
+  "related_foods": ["gulasch", "erbsensuppe", "eintopf-linsen", "kartoffelsuppe"]
+}

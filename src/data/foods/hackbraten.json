@@ -1,0 +1,50 @@
+{
+  "slug": "hackbraten",
+  "name": "Hackbraten",
+  "emoji": "🍖",
+  "category": "gericht",
+  "seo": {
+    "title": "Hackbraten Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Hackbraten? Nährwerte für falschen Hasen, Hackbraten mit Ei & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 195,
+    "protein_per_100g": 15,
+    "carbs_per_100g": 6,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 0.4,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    {"name": "Klassischer Hackbraten", "portion_g": 200, "calories": 390, "protein": 30, "carbs": 12, "fat": 26, "tip": "Gemischtes Hackfleisch"},
+    {"name": "Falscher Hase (mit Ei)", "portion_g": 220, "calories": 440, "protein": 34, "carbs": 12, "fat": 28, "tip": "Mit hartgekochtem Ei in der Mitte"},
+    {"name": "Hackbraten aus Rind", "portion_g": 200, "calories": 360, "protein": 32, "carbs": 10, "fat": 22, "tip": "Etwas magerer"},
+    {"name": "Putenhackbraten", "portion_g": 200, "calories": 280, "protein": 34, "carbs": 10, "fat": 12, "tip": "Kalorienärmste Variante"},
+    {"name": "Hackbraten mit Kartoffelpüree", "portion_g": 400, "calories": 600, "protein": 34, "carbs": 48, "fat": 32, "tip": "Klassische Kombination"},
+    {"name": "Hackbraten mit Gemüsefüllung", "portion_g": 220, "calories": 370, "protein": 28, "carbs": 16, "fat": 22, "tip": "Paprika und Zucchini gefüllt"},
+    {"name": "Hackbraten überbacken", "portion_g": 230, "calories": 460, "protein": 32, "carbs": 12, "fat": 32, "tip": "Mit Käse überbacken"}
+  ],
+  "comparison": [
+    {"name": "Frikadellen", "calories": 330, "emoji": "🍔"},
+    {"name": "Rinderroulade", "calories": 525, "emoji": "🥩"},
+    {"name": "Schnitzel", "calories": 550, "emoji": "🍖"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Pute statt gemischt", "text": "Putenhackbraten hat ca. 30% weniger Kalorien und deutlich weniger Fett als die klassische Variante.", "icon": "🦃"},
+    {"title": "Gemüse einarbeiten", "text": "Geriebene Zucchini oder Karotten machen den Hackbraten saftiger und senken die Kaloriendichte.", "icon": "🥕"},
+    {"title": "Haferflocken als Bindemittel", "text": "Ersetze das Brötchen durch Haferflocken für mehr Ballaststoffe und langsamere Kohlenhydrate.", "icon": "🌾"},
+    {"title": "Kalt aufschneiden", "text": "Kalter Hackbraten ist ein toller Brotbelag – portionsgenau und proteinreich.", "icon": "🥪"},
+    {"title": "Auf dem Rost garen", "text": "Im Ofen auf einem Rost garen statt in der Form – so kann überschüssiges Fett abtropfen.", "icon": "🔥"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Hackbraten?", "answer": "Eine Scheibe Hackbraten (200g) hat ca. 390 kcal bei der klassischen Variante. Putenhackbraten kommt auf ca. 280 kcal."},
+    {"question": "Ist Hackbraten gesund?", "answer": "Hackbraten liefert viel Protein (15g/100g). Die Kalorienzahl hängt stark von der Hackfleischart und den Zutaten ab."},
+    {"question": "Wie viel Protein hat Hackbraten?", "answer": "Eine Scheibe (200g) liefert 30-34g Protein. Putenhackbraten hat mit 34g den höchsten Proteingehalt."},
+    {"question": "Was ist der Unterschied zwischen Hackbraten und Falschem Hasen?", "answer": "Falscher Hase ist ein Hackbraten mit einem hartgekochten Ei in der Mitte. Er hat ca. 50 kcal mehr durch das zusätzliche Ei."},
+    {"question": "Kann man Hackbraten beim Abnehmen essen?", "answer": "Ja, besonders Putenhackbraten (280 kcal/Portion) ist eine gute Wahl. Dazu Salat statt Kartoffelpüree wählen."},
+    {"question": "Wie bewahrt man Hackbraten auf?", "answer": "Im Kühlschrank hält sich Hackbraten 3-4 Tage. Er eignet sich gut für Meal Prep – in Scheiben schneiden und portionsweise einfrieren."}
+  ],
+  "related_foods": ["frikadellen", "koenigsberger-klopse", "gulasch", "schnitzel"]
+}

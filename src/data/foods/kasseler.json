@@ -1,0 +1,50 @@
+{
+  "slug": "kasseler",
+  "name": "Kasseler",
+  "emoji": "🥩",
+  "category": "gericht",
+  "seo": {
+    "title": "Kasseler Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Kasseler? Nährwerte für Kasseler Nacken, Kotelett & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 165,
+    "protein_per_100g": 22,
+    "carbs_per_100g": 1,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    {"name": "Kasseler Nacken", "portion_g": 200, "calories": 330, "protein": 44, "carbs": 2, "fat": 16, "tip": "Klassischer Schnitt"},
+    {"name": "Kasseler Kotelett", "portion_g": 200, "calories": 350, "protein": 42, "carbs": 2, "fat": 18, "tip": "Am Knochen gebraten"},
+    {"name": "Kasseler mit Sauerkraut", "portion_g": 400, "calories": 400, "protein": 46, "carbs": 10, "fat": 18, "tip": "Traditionelle Kombination"},
+    {"name": "Kasseler mit Kartoffelpüree", "portion_g": 450, "calories": 550, "protein": 46, "carbs": 42, "fat": 22, "tip": "Deftige Hauptmahlzeit"},
+    {"name": "Kasseler Aufschnitt", "portion_g": 80, "calories": 132, "protein": 18, "carbs": 1, "fat": 6, "tip": "Als Brotbelag"},
+    {"name": "Kasseler im Brotteig", "portion_g": 300, "calories": 580, "protein": 48, "carbs": 35, "fat": 26, "tip": "Eingebacken im Teig"},
+    {"name": "Kasseler überbacken", "portion_g": 250, "calories": 440, "protein": 48, "carbs": 4, "fat": 26, "tip": "Mit Käse gratiniert"}
+  ],
+  "comparison": [
+    {"name": "Schinken", "calories": 200, "emoji": "🥩"},
+    {"name": "Schweinebraten", "calories": 575, "emoji": "🐷"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Bratwurst", "calories": 310, "emoji": "🌭"}
+  ],
+  "tips": [
+    {"title": "Schon gepökelt = fertig", "text": "Kasseler ist bereits geräuchert und gepökelt – kurzes Anbraten reicht, kein Extra-Fett nötig.", "icon": "🔥"},
+    {"title": "Sauerkraut dazu", "text": "Sauerkraut hat nur 19 kcal/100g und liefert Vitamin C – die perfekte kalorienarme Beilage.", "icon": "🥬"},
+    {"title": "Kalt als Aufschnitt", "text": "Kasseler Aufschnitt ist ein proteinreicher, kalorienarmer Brotbelag (165 kcal/100g).", "icon": "🥪"},
+    {"title": "Nacken ist magerer", "text": "Kasseler Nacken hat weniger Fett als Kotelett – und ist trotzdem saftig durch das Pökeln.", "icon": "🥩"},
+    {"title": "Salzgehalt beachten", "text": "Kasseler enthält viel Salz durch das Pökeln. Nicht zu oft essen und gut dazu trinken.", "icon": "🧂"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Kasseler?", "answer": "Ein Stück Kasseler (200g) hat ca. 330 kcal. Mit Sauerkraut kommt man auf ca. 400 kcal – ein relativ leichtes Hauptgericht."},
+    {"question": "Ist Kasseler gesund?", "answer": "Kasseler liefert viel Protein (22g/100g) bei moderatem Fettgehalt (8g/100g). Der hohe Salzgehalt durch das Pökeln ist zu beachten."},
+    {"question": "Wie viel Protein hat Kasseler?", "answer": "Kasseler liefert 22g Protein pro 100g. Eine Portion (200g) bringt 44g Protein – ideal für Sportler."},
+    {"question": "Was hat weniger Kalorien: Kasseler oder Schweinebraten?", "answer": "Kasseler (165 kcal/100g) hat deutlich weniger Kalorien als Schweinebraten (230 kcal/100g)."},
+    {"question": "Kann man Kasseler beim Abnehmen essen?", "answer": "Ja, Kasseler ist mit 165 kcal/100g und viel Protein eine gute Wahl. Besonders mit Sauerkraut als Beilage."},
+    {"question": "Wie wird Kasseler hergestellt?", "answer": "Kasseler wird gepökelt (in Salzlake eingelegt) und anschließend leicht geräuchert. Dadurch ist es bereits vorgegart und hält länger."}
+  ],
+  "related_foods": ["schweinebraten", "schinken", "bratwurst", "sauerkraut"]
+}
