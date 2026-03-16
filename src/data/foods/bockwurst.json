@@ -1,0 +1,49 @@
+{
+  "slug": "bockwurst",
+  "name": "Bockwurst",
+  "emoji": "🌭",
+  "category": "gericht",
+  "seo": {
+    "title": "Bockwurst Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Bockwurst? Nährwerte für Bockwurst mit Senf, Brötchen & mehr. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 275,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 1,
+    "fat_per_100g": 25,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 100,
+    "typical_portion_name": "1 Bockwurst"
+  },
+  "variants": [
+    {"name": "Bockwurst klassisch", "portion_g": 100, "calories": 275, "protein": 12, "carbs": 1, "fat": 25, "tip": "Standard-Wurst"},
+    {"name": "Bockwurst mit Brötchen & Senf", "portion_g": 170, "calories": 420, "protein": 16, "carbs": 30, "fat": 27, "tip": "Imbiss-Klassiker"},
+    {"name": "Bockwurst im Kartoffelsalat", "portion_g": 350, "calories": 580, "protein": 18, "carbs": 35, "fat": 40, "tip": "Silvester-Tradition"},
+    {"name": "Geflügel-Bockwurst", "portion_g": 100, "calories": 200, "protein": 14, "carbs": 1, "fat": 16, "tip": "Kalorienärmste Variante"},
+    {"name": "Bockwurst gegrillt", "portion_g": 100, "calories": 290, "protein": 13, "carbs": 1, "fat": 26, "tip": "Durch Grillen etwas mehr"},
+    {"name": "2 Bockwürste mit Pommes", "portion_g": 350, "calories": 850, "protein": 28, "carbs": 52, "fat": 58, "tip": "Deftige Mahlzeit"}
+  ],
+  "comparison": [
+    {"name": "Weißwurst", "calories": 250, "emoji": "🌭"},
+    {"name": "Bratwurst", "calories": 313, "emoji": "🔥"},
+    {"name": "Wiener Würstchen", "calories": 260, "emoji": "🌭"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Geflügel-Variante", "text": "Eine Geflügel-Bockwurst spart ca. 75 kcal pro Stück gegenüber der klassischen Variante.", "icon": "🍗"},
+    {"title": "Senf statt Ketchup", "text": "Mittelscharfer Senf hat nur 60 kcal/100g, Ketchup dagegen 100 kcal/100g. Geschmacklich sowieso besser.", "icon": "🟡"},
+    {"title": "Brötchen weglassen", "text": "Ohne Brötchen sparst du 145 kcal. Mit Senf auf dem Teller reicht die Wurst allein.", "icon": "🍞"},
+    {"title": "Kochen statt braten", "text": "Bockwürste werden klassisch in heißem Wasser erwärmt – nicht braten. Das spart zusätzliches Fett.", "icon": "🫕"},
+    {"title": "Sättigungstipp", "text": "Dazu einen großen Gurkensalat servieren – wenige Kalorien, viel Volumen und eine komplettere Mahlzeit.", "icon": "🥒"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Bockwurst?", "answer": "Eine Bockwurst (100g) hat ca. 275 kcal. Mit Brötchen und Senf kommt man auf ca. 420 kcal."},
+    {"question": "Ist Bockwurst ungesund?", "answer": "Bockwurst hat einen hohen Fettgehalt (25g/100g). Als gelegentlicher Genuss ist sie okay, sollte aber nicht täglich gegessen werden."},
+    {"question": "Was hat weniger Kalorien: Bockwurst oder Bratwurst?", "answer": "Bockwurst (275 kcal/100g) hat etwas weniger Kalorien als Bratwurst (313 kcal/100g). Die Geflügel-Variante ist mit 200 kcal noch leichter."},
+    {"question": "Wie wird Bockwurst zubereitet?", "answer": "Bockwurst wird in heißem (nicht kochendem!) Wasser ca. 5-8 Minuten erwärmt. Bei über 100°C platzt die Haut."},
+    {"question": "Warum heißt sie Bockwurst?", "answer": "Der Name kommt vermutlich vom Bockbier, zu dem sie traditionell gegessen wurde. Erfunden wurde sie 1889 in Berlin."},
+    {"question": "Wie viele Bockwürste pro Person?", "answer": "Üblich sind 1-2 Bockwürste pro Person. Als Hauptmahlzeit mit Beilagen reichen 2 Stück für einen Erwachsenen."}
+  ],
+  "related_foods": ["bratwurst", "weisswurst", "wiener-wuerstchen", "currywurst"]
+}

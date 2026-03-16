@@ -1,0 +1,49 @@
+{
+  "slug": "labskaus",
+  "name": "Labskaus",
+  "emoji": "🥩",
+  "category": "gericht",
+  "seo": {
+    "title": "Labskaus Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Labskaus? Nährwerte für den norddeutschen Klassiker mit Spiegelei, Rollmops & Rote Bete. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 120,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 10,
+    "fat_per_100g": 5,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Labskaus klassisch (Corned Beef)", "portion_g": 350, "calories": 420, "protein": 28, "carbs": 35, "fat": 18, "tip": "Traditionelles Rezept"},
+    {"name": "Labskaus mit Spiegelei & Rollmops", "portion_g": 450, "calories": 580, "protein": 35, "carbs": 36, "fat": 30, "tip": "Volle Garnitur"},
+    {"name": "Labskaus vegetarisch", "portion_g": 350, "calories": 280, "protein": 10, "carbs": 40, "fat": 9, "tip": "Kalorienärmste Variante"},
+    {"name": "Labskaus mit frischem Rindfleisch", "portion_g": 350, "calories": 450, "protein": 32, "carbs": 35, "fat": 20, "tip": "Premium-Variante"},
+    {"name": "Labskaus aus der Dose", "portion_g": 350, "calories": 385, "protein": 24, "carbs": 38, "fat": 15, "tip": "Schnelle Zubereitung"},
+    {"name": "Labskaus mit Matjes", "portion_g": 400, "calories": 520, "protein": 30, "carbs": 35, "fat": 28, "tip": "Fischliebhaber-Variante"}
+  ],
+  "comparison": [
+    {"name": "Kartoffelpuffer", "calories": 210, "emoji": "🥔"},
+    {"name": "Gulasch", "calories": 120, "emoji": "🍲"},
+    {"name": "Eintopf (Linsen)", "calories": 95, "emoji": "🫘"},
+    {"name": "Currywurst", "calories": 220, "emoji": "🌭"}
+  ],
+  "tips": [
+    {"title": "Spiegelei weglassen", "text": "Das Spiegelei auf dem Labskaus macht 90-100 kcal extra. Ohne sparst du Fett bei voller Sättigung.", "icon": "🍳"},
+    {"title": "Rote Bete ist der Star", "text": "Die Rote Bete im Labskaus liefert Eisen, Folsäure und Nitrate – ein unterschätztes Superfood.", "icon": "💜"},
+    {"title": "Weniger Butter", "text": "Klassische Rezepte verwenden viel Butter zum Stampfen. Halbiere die Menge – du sparst 50+ kcal.", "icon": "🧈"},
+    {"title": "Rollmops optional", "text": "Der Rollmops als Garnitur ist lecker, aber mit 120 kcal nicht nötig, wenn du Kalorien sparen willst.", "icon": "🐟"},
+    {"title": "Proteinreich", "text": "Labskaus mit Corned Beef und Spiegelei liefert über 35g Protein – eine sättigende, proteinreiche Mahlzeit.", "icon": "💪"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Labskaus?", "answer": "Eine Portion Labskaus (350g) hat ca. 420 kcal. Mit Spiegelei und Rollmops steigt es auf ca. 580 kcal."},
+    {"question": "Was ist Labskaus genau?", "answer": "Labskaus ist ein norddeutsches Gericht aus gestampften Kartoffeln, Corned Beef, Roter Bete und Gewürzgurken. Serviert wird es oft mit Spiegelei, Rollmops und Bete."},
+    {"question": "Ist Labskaus gesund?", "answer": "Labskaus liefert viel Protein, Eisen (Rote Bete, Rindfleisch) und Kartoffel-Nährstoffe. Es ist nahrhaft, aber durch Corned Beef und Butter nicht gerade fettarm."},
+    {"question": "Woher kommt Labskaus?", "answer": "Labskaus stammt aus der norddeutschen Seefahrerküche. Seeleute kochten es aus haltbaren Zutaten wie Pökelfleisch und Kartoffeln. Bremen und Hamburg streiten um den Ursprung."},
+    {"question": "Kann man Labskaus vegetarisch machen?", "answer": "Ja! Ersetze das Corned Beef durch Rote Bete, Kichererbsen oder Tofu. Die vegetarische Version hat nur ca. 280 kcal pro Portion."},
+    {"question": "Wie schmeckt Labskaus?", "answer": "Labskaus schmeckt herzhaft-würzig mit einer leichten Säure von Gurken und Bete. Die Konsistenz ist breiig – das ist gewöhnungsbedürftig, aber der Geschmack überzeugt."}
+  ],
+  "related_foods": ["kartoffeln", "rollmops", "matjes", "gulasch"]
+}

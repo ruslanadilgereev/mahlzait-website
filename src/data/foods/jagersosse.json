@@ -1,0 +1,49 @@
+{
+  "slug": "jagersosse",
+  "name": "Jägersoße",
+  "emoji": "🍄",
+  "category": "gericht",
+  "seo": {
+    "title": "Jägersoße Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Jägersoße? Nährwerte für Pilzrahmsauce, Jägerschnitzel-Sauce & mehr. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 85,
+    "protein_per_100g": 2,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 6,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion Sauce"
+  },
+  "variants": [
+    {"name": "Jägersoße klassisch (Sahne)", "portion_g": 150, "calories": 128, "protein": 3, "carbs": 8, "fat": 9, "tip": "Traditionelle Pilzrahmsauce"},
+    {"name": "Jägersoße leicht (Milch)", "portion_g": 150, "calories": 85, "protein": 3, "carbs": 8, "fat": 4, "tip": "Kalorienärmste Variante"},
+    {"name": "Jägersoße mit Speck", "portion_g": 150, "calories": 155, "protein": 5, "carbs": 7, "fat": 12, "tip": "Deftige Variante"},
+    {"name": "Jägersoße aus der Tüte", "portion_g": 150, "calories": 65, "protein": 2, "carbs": 9, "fat": 2, "tip": "Schnell zubereitet"},
+    {"name": "Jägersoße mit frischen Waldpilzen", "portion_g": 150, "calories": 135, "protein": 4, "carbs": 7, "fat": 10, "tip": "Premium-Variante"},
+    {"name": "Jägersoße vegan", "portion_g": 150, "calories": 75, "protein": 3, "carbs": 8, "fat": 3, "tip": "Mit Hafersahne"}
+  ],
+  "comparison": [
+    {"name": "Rahmsauce", "calories": 120, "emoji": "🍶"},
+    {"name": "Bratensauce", "calories": 45, "emoji": "🍖"},
+    {"name": "Tomatensauce", "calories": 30, "emoji": "🍅"},
+    {"name": "Hollandaise", "calories": 290, "emoji": "🧈"}
+  ],
+  "tips": [
+    {"title": "Milch statt Sahne", "text": "Ersetze die Sahne durch Milch (1,5%) – du sparst ca. 40 kcal pro Portion bei guter Konsistenz.", "icon": "🥛"},
+    {"title": "Champignons großzügig", "text": "Mehr Pilze in der Sauce bedeuten mehr Geschmack und Volumen ohne viele zusätzliche Kalorien (22 kcal/100g).", "icon": "🍄"},
+    {"title": "Mehlschwitze reduzieren", "text": "Weniger Butter in der Mehlschwitze spart Kalorien. Alternativ mit Stärke oder Saucenbinder andicken.", "icon": "🧈"},
+    {"title": "Zwiebeln karamellisieren", "text": "Gut angebratene Zwiebeln geben natürliche Süße und Tiefe – so brauchst du weniger Fett für den Geschmack.", "icon": "🧅"},
+    {"title": "Portion begrenzen", "text": "100-150ml Sauce reichen pro Portion. Im Restaurant werden oft 200-250ml serviert – das verdoppelt die Kalorien.", "icon": "⚖️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Jägersoße?", "answer": "Eine Portion Jägersoße (150ml) hat ca. 128 kcal in der klassischen Variante mit Sahne. Die leichte Variante mit Milch hat nur ca. 85 kcal."},
+    {"question": "Was ist in Jägersoße drin?", "answer": "Klassische Jägersoße besteht aus Champignons, Zwiebeln, Sahne, Brühe, Tomatenmark und Gewürzen. Manchmal auch Speck und Paprika."},
+    {"question": "Ist Jägersoße gesund?", "answer": "Jägersoße enthält Pilze (reich an B-Vitaminen und Mineralien), ist aber durch Sahne und Butter fettreich. Die leichte Variante ist eine bessere Wahl."},
+    {"question": "Was passt zu Jägersoße?", "answer": "Klassisch zu Schnitzel (Jägerschnitzel), aber auch zu Nudeln, Spätzle, Reis oder Kartoffeln. Auch zu Hähnchen oder Schweinemedaillons."},
+    {"question": "Kann man Jägersoße einfrieren?", "answer": "Ja, Jägersoße lässt sich gut einfrieren (2-3 Monate). Nach dem Auftauen kurz aufkochen und ggf. mit etwas Sahne oder Milch nachbessern."},
+    {"question": "Was ist der Unterschied zwischen Jägersoße und Rahmsauce?", "answer": "Jägersoße enthält immer Pilze (Champignons) und oft Tomatenmark. Rahmsauce ist eine allgemeine Sahnesauce ohne Pilze, die vielseitiger einsetzbar ist."}
+  ],
+  "related_foods": ["schnitzel", "spaetzle", "schweinegulasch", "nudeln"]
+}

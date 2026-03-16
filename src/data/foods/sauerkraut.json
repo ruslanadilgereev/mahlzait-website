@@ -1,0 +1,49 @@
+{
+  "slug": "sauerkraut",
+  "name": "Sauerkraut",
+  "emoji": "🥬",
+  "category": "gericht",
+  "seo": {
+    "title": "Sauerkraut Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Sauerkraut? Nährwerte für roh, gekocht, aus dem Glas & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 19,
+    "protein_per_100g": 1.3,
+    "carbs_per_100g": 2.5,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 2.9,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Sauerkraut roh (fermentiert)", "portion_g": 200, "calories": 38, "protein": 3, "carbs": 5, "fat": 0.4, "tip": "Kalorienärmste Variante"},
+    {"name": "Sauerkraut gekocht", "portion_g": 200, "calories": 56, "protein": 3, "carbs": 6, "fat": 2, "tip": "Klassische Beilage"},
+    {"name": "Sauerkraut mit Speck", "portion_g": 200, "calories": 130, "protein": 6, "carbs": 5, "fat": 9, "tip": "Deftige Variante"},
+    {"name": "Sauerkraut aus dem Glas", "portion_g": 200, "calories": 34, "protein": 2, "carbs": 5, "fat": 0.4, "tip": "Schnell & praktisch"},
+    {"name": "Weinsauerkraut", "portion_g": 200, "calories": 65, "protein": 2, "carbs": 8, "fat": 2, "tip": "Milderer Geschmack"},
+    {"name": "Sauerkrautauflauf", "portion_g": 300, "calories": 280, "protein": 12, "carbs": 20, "fat": 16, "tip": "Als Hauptgericht"}
+  ],
+  "comparison": [
+    {"name": "Rotkohl gekocht", "calories": 55, "emoji": "🟣"},
+    {"name": "Grünkohl gekocht", "calories": 45, "emoji": "🥗"},
+    {"name": "Kimchi", "calories": 23, "emoji": "🌶️"},
+    {"name": "Gurkensalat", "calories": 14, "emoji": "🥒"}
+  ],
+  "tips": [
+    {"title": "Roh essen für Probiotika", "text": "Rohes Sauerkraut enthält lebende Milchsäurebakterien, die gut für die Darmflora sind. Beim Kochen gehen diese verloren.", "icon": "🦠"},
+    {"title": "Nicht abspülen", "text": "Spüle Sauerkraut nicht ab – der Saft enthält wertvolle Vitamine und Probiotika.", "icon": "🚿"},
+    {"title": "Kalorienarm satt", "text": "200g Sauerkraut haben nur 38 kcal – ideal als kalorienarme Beilage zu Fleischgerichten.", "icon": "⚖️"},
+    {"title": "Vitamin-C-Quelle", "text": "Sauerkraut war historisch die wichtigste Vitamin-C-Quelle im Winter. 200g decken ca. 40% des Tagesbedarfs.", "icon": "💊"},
+    {"title": "Ballaststoff-Booster", "text": "Mit 2,9g Ballaststoffen pro 100g hält Sauerkraut lange satt und fördert die Verdauung.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Sauerkraut?", "answer": "Sauerkraut ist extrem kalorienarm: nur 19 kcal pro 100g roh. Eine Portion (200g) hat lediglich 38 kcal – eines der kalorienärmsten Lebensmittel überhaupt."},
+    {"question": "Ist Sauerkraut gesund?", "answer": "Sehr gesund! Sauerkraut liefert Probiotika (Milchsäurebakterien), Vitamin C, Vitamin K, Ballaststoffe und kaum Kalorien. Es unterstützt die Darmgesundheit."},
+    {"question": "Kann man mit Sauerkraut abnehmen?", "answer": "Ja, Sauerkraut ist ideal zum Abnehmen: kalorienarm, ballaststoffreich und sättigend. Als Beilage ersetzt es kalorienreichere Beilagen wie Pommes."},
+    {"question": "Wie viel Sauerkraut pro Person?", "answer": "Als Beilage rechnet man 150-200g pro Person. Bei einem Sauerkraut-Eintopf können es auch 250-300g sein."},
+    {"question": "Was ist gesünder: rohes oder gekochtes Sauerkraut?", "answer": "Rohes Sauerkraut ist gesünder, da die probiotischen Milchsäurebakterien beim Kochen abgetötet werden. Vitamin C bleibt teilweise erhalten."},
+    {"question": "Wie lange ist Sauerkraut haltbar?", "answer": "Rohes Sauerkraut im Glas hält im Kühlschrank 4-6 Monate nach Öffnung. Ungeöffnet ist es oft über ein Jahr haltbar."}
+  ],
+  "related_foods": ["rotkohl", "gruenkohl", "bratwurst", "kasseler"]
+}
