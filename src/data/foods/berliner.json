@@ -1,0 +1,50 @@
+{
+  "slug": "berliner",
+  "name": "Berliner (Krapfen)",
+  "emoji": "🍩",
+  "category": "gericht",
+  "seo": {
+    "title": "Berliner Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Berliner? Nährwerte für Krapfen mit Marmelade, Pudding & Nutella. Mit Portionsrechner und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 330,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 42,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 80,
+    "typical_portion_name": "1 Berliner"
+  },
+  "variants": [
+    {"name": "Berliner mit Marmelade", "portion_g": 80, "calories": 264, "protein": 6, "carbs": 34, "fat": 11, "tip": "Klassiker mit Erdbeere oder Hagebutte"},
+    {"name": "Berliner mit Pudding (Vanille)", "portion_g": 90, "calories": 310, "protein": 7, "carbs": 38, "fat": 14, "tip": "Cremige Füllung"},
+    {"name": "Berliner mit Nutella", "portion_g": 90, "calories": 340, "protein": 7, "carbs": 40, "fat": 17, "tip": "Schokoladig-nussige Füllung"},
+    {"name": "Berliner mit Eierlikör", "portion_g": 85, "calories": 305, "protein": 6, "carbs": 36, "fat": 14, "tip": "Karnevals-Spezialität"},
+    {"name": "Mini-Berliner", "portion_g": 40, "calories": 132, "protein": 3, "carbs": 17, "fat": 6, "tip": "Halbe Portion, halbe Kalorien"},
+    {"name": "Berliner vom Bäcker (groß)", "portion_g": 110, "calories": 363, "protein": 8, "carbs": 46, "fat": 15, "tip": "Premium-Bäcker-Größe"},
+    {"name": "Berliner aus dem Ofen", "portion_g": 75, "calories": 195, "protein": 6, "carbs": 30, "fat": 6, "tip": "Ohne Frittieren – deutlich weniger Fett"}
+  ],
+  "comparison": [
+    {"name": "Donut", "calories": 380, "emoji": "🍩"},
+    {"name": "Croissant", "calories": 393, "emoji": "🥐"},
+    {"name": "Streuselkuchen", "calories": 320, "emoji": "🍰"},
+    {"name": "Quarktasche", "calories": 300, "emoji": "🥐"}
+  ],
+  "tips": [
+    {"title": "Marmelade statt Nutella", "text": "Berliner mit Marmelade haben ca. 76 kcal weniger als mit Nutella-Füllung.", "icon": "🍓"},
+    {"title": "Im Ofen statt frittieren", "text": "Ofenberliner haben nur ca. 195 kcal statt 264 kcal – fast 30% weniger durch den Wegfall des Frittierfetts.", "icon": "🔥"},
+    {"title": "Mini-Berliner wählen", "text": "Mini-Berliner (40g) haben nur 132 kcal. Perfekt, wenn du nur einen kleinen Genuss willst.", "icon": "📏"},
+    {"title": "Puderzucker absaugen", "text": "Der Puderzucker oben drauf bringt ca. 15-20 kcal extra. Kleiner Tipp: Etwas abklopfen vor dem Essen.", "icon": "🍬"},
+    {"title": "Nicht jeden Tag", "text": "Ein Berliner als gelegentlicher Genuss – nicht als tägliches Frühstück. 264 kcal sind ok für einen Snack.", "icon": "📅"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Berliner?", "answer": "Ein Berliner mit Marmelade (80g) hat ca. 264 kcal. Größere Berliner vom Bäcker (110g) können bis zu 363 kcal haben."},
+    {"question": "Was hat mehr Kalorien: Berliner oder Donut?", "answer": "Ein Donut hat mit 380 kcal/100g mehr als ein Berliner (330 kcal/100g). Donuts haben mehr Zucker und oft ein Topping."},
+    {"question": "Warum hat ein Berliner so viele Kalorien?", "answer": "Berliner werden in heißem Fett frittiert und der Teig saugt dabei Öl auf. Dazu kommt die süße Füllung und Puderzucker."},
+    {"question": "Wie viel Fett hat ein Berliner?", "answer": "Ein Berliner (80g) hat ca. 11g Fett. Das Fett kommt hauptsächlich vom Frittieren und macht etwa 40% der Kalorien aus."},
+    {"question": "Kann man Berliner kalorienärmer machen?", "answer": "Ja: Im Ofen backen statt frittieren spart ca. 70 kcal. Marmelade statt Nutella und kleinere Größe helfen zusätzlich."},
+    {"question": "Wie heißt der Berliner in anderen Regionen?", "answer": "Je nach Region: Krapfen (Bayern/Österreich), Pfannkuchen (Berlin), Kreppel (Hessen), Fastnachtsküchlein (Schwaben). Die Kalorien sind überall gleich."}
+  ],
+  "related_foods": ["donut", "quarktasche", "croissant", "streuselkuchen"]
+}

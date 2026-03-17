@@ -1,0 +1,50 @@
+{
+  "slug": "cornflakes",
+  "name": "Cornflakes",
+  "emoji": "🥣",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Cornflakes Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Cornflakes? Nährwerte für Cornflakes pur, mit Milch & als Müsli-Basis. Mit Portionsrechner und gesündere Alternativen."
+  },
+  "overview": {
+    "calories_per_100g": 370,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 84,
+    "fat_per_100g": 1,
+    "fiber_per_100g": 3,
+    "typical_portion_g": 40,
+    "typical_portion_name": "1 Portion (Schüssel)"
+  },
+  "variants": [
+    {"name": "Cornflakes pur (ohne Milch)", "portion_g": 40, "calories": 148, "protein": 3, "carbs": 34, "fat": 0.4, "tip": "Nur Flocken"},
+    {"name": "Cornflakes mit Vollmilch", "portion_g": 190, "calories": 243, "protein": 8, "carbs": 40, "fat": 5, "tip": "Klassisches Frühstück"},
+    {"name": "Cornflakes mit fettarmer Milch", "portion_g": 190, "calories": 218, "protein": 8, "carbs": 40, "fat": 2, "tip": "Kalorienärmere Variante"},
+    {"name": "Schoko-Cornflakes", "portion_g": 40, "calories": 160, "protein": 3, "carbs": 35, "fat": 1.5, "tip": "Mehr Zucker und Kakao"},
+    {"name": "Honig-Cornflakes", "portion_g": 40, "calories": 155, "protein": 2, "carbs": 36, "fat": 0.5, "tip": "Süßer durch Honig"},
+    {"name": "Bio-Cornflakes (ungesüßt)", "portion_g": 40, "calories": 140, "protein": 3, "carbs": 32, "fat": 0.4, "tip": "Ohne Zuckerzusatz"},
+    {"name": "Cornflakes mit Obst und Joghurt", "portion_g": 250, "calories": 310, "protein": 10, "carbs": 48, "fat": 8, "tip": "Vollwertige Frühstücksschüssel"}
+  ],
+  "comparison": [
+    {"name": "Haferflocken", "calories": 370, "emoji": "🥣"},
+    {"name": "Müsli (Früchte)", "calories": 365, "emoji": "🥣"},
+    {"name": "Granola", "calories": 450, "emoji": "🥣"},
+    {"name": "Porridge (zubereitet)", "calories": 130, "emoji": "🥣"}
+  ],
+  "tips": [
+    {"title": "Ungesüßte Variante wählen", "text": "Bio-Cornflakes ohne Zucker haben ca. 8 kcal weniger pro Portion als Standard-Cornflakes – und weniger Zucker.", "icon": "🍬"},
+    {"title": "Fettarme Milch verwenden", "text": "Mit 1.5% Milch statt Vollmilch sparst du ca. 25 kcal pro Frühstück – bei kaum merklichem Unterschied.", "icon": "🥛"},
+    {"title": "Portion abwiegen", "text": "40g sehen in der Schüssel wenig aus – aber eine volle Schüssel hat oft 60-80g (220-300 kcal pur). Wiege ab!", "icon": "⚖️"},
+    {"title": "Obst statt Zucker", "text": "Frische Beeren oder Banane geben natürliche Süße – kein zusätzlicher Zucker nötig.", "icon": "🍓"},
+    {"title": "Haferflocken als Alternative", "text": "Haferflocken haben ähnliche Kalorien, aber deutlich mehr Protein und Ballaststoffe – sättigen viel besser.", "icon": "🌾"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Cornflakes?", "answer": "Eine Portion Cornflakes (40g) hat ca. 148 kcal pur. Mit Vollmilch (150ml) steigt der Wert auf ca. 243 kcal."},
+    {"question": "Sind Cornflakes gesund?", "answer": "Cornflakes enthalten wenig Fett, aber viel Zucker und wenig Ballaststoffe. Als Frühstück sättigen sie nur kurz. Haferflocken sind die gesündere Alternative."},
+    {"question": "Wie viel Zucker haben Cornflakes?", "answer": "Standard-Cornflakes enthalten ca. 8g Zucker pro 100g. Schoko-Cornflakes sogar 30-35g/100g. Bio-Varianten ohne Zucker sind deutlich besser."},
+    {"question": "Was hat weniger Kalorien: Cornflakes oder Haferflocken?", "answer": "Pro 100g sind beide fast gleich (370 kcal). Aber Haferflocken haben mehr Protein (13g vs. 7g) und Ballaststoffe (10g vs. 3g) – sie sättigen besser."},
+    {"question": "Machen Cornflakes dick?", "answer": "Cornflakes selbst haben moderate Kalorien (148 kcal/40g). Problematisch: Man isst leicht zu viel (60-80g), und Schoko- oder Honig-Varianten haben viel Zucker."},
+    {"question": "Wie viel Protein haben Cornflakes?", "answer": "Cornflakes liefern nur ca. 7g Protein pro 100g. Mit Milch (150ml) kommt eine Portion auf ca. 8g Protein – für ein Frühstück relativ wenig."}
+  ],
+  "related_foods": ["haferflocken", "muesli", "joghurt", "banane"]
+}

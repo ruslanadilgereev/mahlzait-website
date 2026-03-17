@@ -1,0 +1,50 @@
+{
+  "slug": "toastbrot",
+  "name": "Toastbrot",
+  "emoji": "🍞",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Toastbrot Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Toastbrot? Nährwerte pro Scheibe für Buttertoast, Vollkorntoast & Sandwichtoast. Mit Portionsrechner und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 260,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 48,
+    "fat_per_100g": 3.5,
+    "fiber_per_100g": 2.5,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    {"name": "Buttertoast (Weizen)", "portion_g": 30, "calories": 78, "protein": 2.4, "carbs": 14, "fat": 1, "tip": "Standard-Supermarkt-Toast"},
+    {"name": "Vollkorntoast", "portion_g": 30, "calories": 72, "protein": 3, "carbs": 12, "fat": 1.2, "tip": "Mehr Ballaststoffe"},
+    {"name": "Sandwichtoast (groß)", "portion_g": 45, "calories": 117, "protein": 3.6, "carbs": 22, "fat": 1.6, "tip": "Größere Scheiben"},
+    {"name": "Toastbrot mit Körner", "portion_g": 35, "calories": 98, "protein": 3.5, "carbs": 15, "fat": 2, "tip": "Nussig durch Saaten"},
+    {"name": "Eiweißtoast", "portion_g": 30, "calories": 75, "protein": 6, "carbs": 6, "fat": 3, "tip": "Low-Carb-Alternative"},
+    {"name": "Dinkeltoast", "portion_g": 30, "calories": 76, "protein": 3, "carbs": 13, "fat": 1, "tip": "Weizenfrei"},
+    {"name": "Toast Hawaii (belegt)", "portion_g": 120, "calories": 280, "protein": 14, "carbs": 30, "fat": 11, "tip": "Mit Schinken, Ananas und Käse"}
+  ],
+  "comparison": [
+    {"name": "Vollkornbrot", "calories": 200, "emoji": "🍞"},
+    {"name": "Brötchen", "calories": 260, "emoji": "🥖"},
+    {"name": "Croissant", "calories": 393, "emoji": "🥐"},
+    {"name": "Knäckebrot", "calories": 340, "emoji": "🍞"}
+  ],
+  "tips": [
+    {"title": "Vollkorntoast wählen", "text": "Vollkorntoast hat ca. 6 kcal weniger pro Scheibe und doppelt so viele Ballaststoffe – sättigt besser.", "icon": "🌾"},
+    {"title": "Belag ist entscheidend", "text": "Eine Scheibe Toast hat nur 78 kcal – aber Butter (37 kcal) + Nutella (80 kcal) verdoppeln den Wert schnell.", "icon": "⚖️"},
+    {"title": "Toast statt Croissant", "text": "Zwei Scheiben Toast (156 kcal) haben deutlich weniger als ein Croissant (393 kcal/100g) – als Frühstücksalternative.", "icon": "📊"},
+    {"title": "Nicht zu viele Scheiben", "text": "Toast ist so fluffig, dass man schnell 4-5 Scheiben isst. 2 Scheiben mit gutem Belag reichen.", "icon": "📏"},
+    {"title": "Leichter Belag spart viel", "text": "Frischkäse light (25 kcal) statt Butter (37 kcal) + ein Belag aus Gurke und Tomate – spart 50+ kcal pro Scheibe.", "icon": "🥒"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Scheibe Toastbrot?", "answer": "Eine Scheibe Buttertoast (30g) hat ca. 78 kcal. Sandwichtoast (45g) hat ca. 117 kcal pro Scheibe."},
+    {"question": "Ist Toastbrot kalorienreich?", "answer": "Mit 260 kcal/100g hat Toastbrot ähnlich viele Kalorien wie normales Brot. Die dünnen Scheiben (30g) sind aber relativ kalorienarm."},
+    {"question": "Was hat weniger Kalorien: Toast oder Vollkornbrot?", "answer": "Vollkornbrot (200 kcal/100g) hat weniger als Toastbrot (260 kcal/100g). Allerdings wiegt eine Toastscheibe (30g) weniger als eine Brotscheibe (50g)."},
+    {"question": "Wie viele Kohlenhydrate hat Toastbrot?", "answer": "Toastbrot enthält ca. 48g Kohlenhydrate pro 100g. Eine Scheibe (30g) hat ca. 14g Kohlenhydrate."},
+    {"question": "Welcher Toast hat die wenigsten Kalorien?", "answer": "Vollkorntoast hat mit ca. 240 kcal/100g die wenigsten Kalorien unter den Toastsorten. Eiweißtoast hat ähnlich wenig, aber mehr Protein."},
+    {"question": "Macht Toastbrot dick?", "answer": "Toastbrot allein macht nicht dick – es kommt auf die Gesamtmenge und den Belag an. 2 Scheiben (156 kcal) passen in jede Ernährung. Problematisch wird es erst mit kalorienreichem Belag und vielen Scheiben."}
+  ],
+  "related_foods": ["brot", "vollkornbrot", "broetchen", "croissant"]
+}

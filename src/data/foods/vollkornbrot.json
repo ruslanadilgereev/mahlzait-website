@@ -1,0 +1,50 @@
+{
+  "slug": "vollkornbrot",
+  "name": "Vollkornbrot",
+  "emoji": "🍞",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Vollkornbrot Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Vollkornbrot? Nährwerte pro Scheibe für Roggenvollkorn, Dinkelvollkorn & Mehrkornbrot. Mit Portionsrechner."
+  },
+  "overview": {
+    "calories_per_100g": 200,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 36,
+    "fat_per_100g": 1.5,
+    "fiber_per_100g": 7,
+    "typical_portion_g": 50,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    {"name": "Roggenvollkornbrot", "portion_g": 50, "calories": 95, "protein": 3, "carbs": 18, "fat": 0.5, "tip": "Klassiker mit viel Ballaststoffen"},
+    {"name": "Dinkelvollkornbrot", "portion_g": 50, "calories": 105, "protein": 4, "carbs": 19, "fat": 1, "tip": "Nussiger Geschmack"},
+    {"name": "Weizenvollkornbrot", "portion_g": 50, "calories": 100, "protein": 4, "carbs": 18, "fat": 1, "tip": "Milder im Geschmack"},
+    {"name": "Pumpernickel", "portion_g": 50, "calories": 90, "protein": 3, "carbs": 18, "fat": 0.5, "tip": "Kalorienärmste Variante"},
+    {"name": "Mehrkornbrot (Vollkorn)", "portion_g": 50, "calories": 110, "protein": 4, "carbs": 18, "fat": 2, "tip": "Mit Saaten und Körnern"},
+    {"name": "Vollkornbrot mit Sonnenblumenkernen", "portion_g": 55, "calories": 125, "protein": 5, "carbs": 18, "fat": 3, "tip": "Extra Crunch und Protein"},
+    {"name": "Eiweißbrot (Vollkorn)", "portion_g": 50, "calories": 120, "protein": 11, "carbs": 7, "fat": 6, "tip": "Mehr Protein, weniger Kohlenhydrate"}
+  ],
+  "comparison": [
+    {"name": "Weißbrot", "calories": 265, "emoji": "🍞"},
+    {"name": "Toastbrot", "calories": 260, "emoji": "🍞"},
+    {"name": "Brötchen", "calories": 260, "emoji": "🥖"},
+    {"name": "Knäckebrot", "calories": 340, "emoji": "🍞"}
+  ],
+  "tips": [
+    {"title": "Dünnere Scheiben schneiden", "text": "Eine dünne Scheibe (35g) hat nur 70 kcal statt 100 kcal. Perfekt, wenn du auf die Gesamtmenge achtest.", "icon": "✂️"},
+    {"title": "Belag macht den Unterschied", "text": "Die Scheibe Brot hat 100 kcal – aber Butter (37 kcal) + Käse (70 kcal) verdoppeln schnell den Wert.", "icon": "⚖️"},
+    {"title": "Vollkorn sättigt länger", "text": "Durch die 7g Ballaststoffe pro 100g sättigt Vollkornbrot deutlich länger als Weißbrot – du isst weniger.", "icon": "💡"},
+    {"title": "Pumpernickel als Alternative", "text": "Pumpernickel hat mit 90 kcal/50g die wenigsten Kalorien unter den Vollkornbroten.", "icon": "🍞"},
+    {"title": "Frisch vom Bäcker kaufen", "text": "Bäcker-Vollkornbrot hat oft mehr Ballaststoffe und weniger Zusätze als Supermarkt-Varianten.", "icon": "👨‍🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Scheibe Vollkornbrot?", "answer": "Eine Scheibe Vollkornbrot (50g) hat ca. 100 kcal. Dünne Scheiben (35g) haben nur 70 kcal."},
+    {"question": "Ist Vollkornbrot gut zum Abnehmen?", "answer": "Ja – Vollkornbrot hat mit 200 kcal/100g weniger als Weißbrot (265 kcal) und sättigt durch die Ballaststoffe (7g/100g) deutlich länger."},
+    {"question": "Was hat weniger Kalorien: Vollkornbrot oder Weißbrot?", "answer": "Vollkornbrot (200 kcal/100g) hat ca. 25% weniger Kalorien als Weißbrot (265 kcal/100g) und deutlich mehr Ballaststoffe."},
+    {"question": "Wie viele Ballaststoffe hat Vollkornbrot?", "answer": "Vollkornbrot enthält ca. 7g Ballaststoffe pro 100g – das ist 3-4 mal so viel wie Weißbrot. Zwei Scheiben decken bereits 20% des Tagesbedarfs."},
+    {"question": "Wie viel Protein hat Vollkornbrot?", "answer": "Vollkornbrot liefert ca. 7g Protein pro 100g. Eine Scheibe (50g) hat 3.5g Protein. Eiweißbrot hat mit 22g/100g deutlich mehr."},
+    {"question": "Welches Vollkornbrot hat die wenigsten Kalorien?", "answer": "Pumpernickel hat mit ca. 180 kcal/100g die wenigsten Kalorien unter den Vollkornbroten, gefolgt von Roggenvollkornbrot (190 kcal/100g)."}
+  ],
+  "related_foods": ["brot", "toastbrot", "broetchen", "haferflocken"]
+}

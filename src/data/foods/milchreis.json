@@ -1,0 +1,50 @@
+{
+  "slug": "milchreis",
+  "name": "Milchreis",
+  "emoji": "🍚",
+  "category": "gericht",
+  "seo": {
+    "title": "Milchreis Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Milchreis? Nährwerte für selbstgemachten Milchreis, mit Zimt & Zucker, Kompott und als Fertigprodukt. Mit Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 120,
+    "protein_per_100g": 4,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 3,
+    "fiber_per_100g": 0.2,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Milchreis mit Zimt & Zucker", "portion_g": 300, "calories": 360, "protein": 12, "carbs": 60, "fat": 9, "tip": "Klassische Kombination"},
+    {"name": "Milchreis mit Apfelmus", "portion_g": 400, "calories": 420, "protein": 12, "carbs": 78, "fat": 9, "tip": "Beliebte Frucht-Kombination"},
+    {"name": "Milchreis mit Kirschen", "portion_g": 400, "calories": 450, "protein": 12, "carbs": 82, "fat": 9, "tip": "Heiße Kirschen als Topping"},
+    {"name": "Milchreis aus Vollmilch", "portion_g": 300, "calories": 390, "protein": 12, "carbs": 58, "fat": 12, "tip": "Cremiger durch mehr Fett"},
+    {"name": "Milchreis fettarm (1.5% Milch)", "portion_g": 300, "calories": 310, "protein": 12, "carbs": 58, "fat": 5, "tip": "Kalorienärmste Variante"},
+    {"name": "Milchreis Fertigprodukt (Müller)", "portion_g": 200, "calories": 250, "protein": 6, "carbs": 38, "fat": 8, "tip": "Aus dem Kühlregal"},
+    {"name": "Milchreis mit Kokosmilch", "portion_g": 300, "calories": 480, "protein": 8, "carbs": 56, "fat": 24, "tip": "Exotische vegane Variante"}
+  ],
+  "comparison": [
+    {"name": "Grießbrei", "calories": 110, "emoji": "🍶"},
+    {"name": "Haferbrei (Porridge)", "calories": 130, "emoji": "🥣"},
+    {"name": "Pudding", "calories": 115, "emoji": "🍮"},
+    {"name": "Kaiserschmarrn", "calories": 230, "emoji": "🥞"}
+  ],
+  "tips": [
+    {"title": "Fettarme Milch verwenden", "text": "Mit 1.5% Milch statt Vollmilch sparst du ca. 80 kcal pro Portion bei kaum spürbarem Geschmacksunterschied.", "icon": "🥛"},
+    {"title": "Weniger Zucker, mehr Zimt", "text": "Zimt verstärkt die Süße-Wahrnehmung. Halbiere den Zucker und verdopple den Zimt – spart ca. 50 kcal.", "icon": "🍬"},
+    {"title": "Frisches Obst statt Kompott", "text": "Frische Beeren statt gezuckertem Kompott sparen Kalorien und liefern mehr Vitamine.", "icon": "🍓"},
+    {"title": "Portionsgröße steuern", "text": "Eine Portion Milchreis füllt einen großen Teller. 250g statt 300g reichen oft – spart 60 kcal.", "icon": "⚖️"},
+    {"title": "Als Hauptmahlzeit einplanen", "text": "Milchreis als süßes Mittagessen ist in vielen Familien Tradition – und mit 360 kcal auch kalorienmäßig okay.", "icon": "🍽️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Milchreis?", "answer": "Eine Portion Milchreis (300g) mit Zimt und Zucker hat ca. 360 kcal. Mit Apfelmus oder Kirschen steigt der Wert auf 420-450 kcal."},
+    {"question": "Ist Milchreis gesund?", "answer": "Milchreis liefert Calcium und Protein aus der Milch, aber auch viel Zucker. Die fettarme Variante mit frischem Obst ist eine ausgewogene Mahlzeit."},
+    {"question": "Wie viele Kalorien hat Milchreis ohne Zucker?", "answer": "Milchreis ohne Zucker hat ca. 100 kcal/100g statt 120 kcal/100g. Pro Portion sparst du ca. 60 kcal."},
+    {"question": "Was hat weniger Kalorien: Milchreis oder Grießbrei?", "answer": "Grießbrei (110 kcal/100g) und Milchreis (120 kcal/100g) sind fast gleichauf. Der Kalorienunterschied ist minimal."},
+    {"question": "Kann man Milchreis kalorienärmer machen?", "answer": "Ja: Fettarme Milch, weniger Zucker, Zimt statt Zucker und frisches Obst statt Kompott. So sparst du bis zu 130 kcal pro Portion."},
+    {"question": "Wie viel Protein hat Milchreis?", "answer": "Milchreis liefert ca. 4g Protein pro 100g – pro Portion (300g) sind das 12g Protein, hauptsächlich aus der Milch."}
+  ],
+  "related_foods": ["haferflocken", "dampfnudeln", "kaiserschmarrn", "germknoedel"]
+}

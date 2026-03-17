@@ -1,0 +1,50 @@
+{
+  "slug": "kaesekuchen",
+  "name": "Käsekuchen",
+  "emoji": "🍰",
+  "category": "gericht",
+  "seo": {
+    "title": "Käsekuchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Käsekuchen? Nährwerte für deutschen Käsekuchen, New York Cheesecake & leichte Varianten. Mit Portionsrechner."
+  },
+  "overview": {
+    "calories_per_100g": 250,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 25,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 0.3,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    {"name": "Käsekuchen klassisch (Quark)", "portion_g": 150, "calories": 375, "protein": 12, "carbs": 38, "fat": 20, "tip": "Deutscher Klassiker mit Quark"},
+    {"name": "New York Cheesecake", "portion_g": 150, "calories": 480, "protein": 10, "carbs": 38, "fat": 32, "tip": "Cremiger mit Frischkäse"},
+    {"name": "Käsekuchen ohne Boden", "portion_g": 130, "calories": 290, "protein": 12, "carbs": 25, "fat": 16, "tip": "Kalorienärmste Variante"},
+    {"name": "Japanischer Käsekuchen (Fluffy)", "portion_g": 100, "calories": 210, "protein": 6, "carbs": 22, "fat": 11, "tip": "Leicht und luftig"},
+    {"name": "Käsekuchen mit Früchten", "portion_g": 170, "calories": 400, "protein": 12, "carbs": 45, "fat": 19, "tip": "Mit Obstbelag"},
+    {"name": "Protein-Käsekuchen", "portion_g": 150, "calories": 270, "protein": 25, "carbs": 18, "fat": 10, "tip": "Mit Magerquark und Proteinpulver"},
+    {"name": "Käsekuchen mit Streuseln", "portion_g": 160, "calories": 445, "protein": 11, "carbs": 42, "fat": 26, "tip": "Deftige Streusel-Variante"}
+  ],
+  "comparison": [
+    {"name": "Bienenstich", "calories": 330, "emoji": "🐝"},
+    {"name": "Schwarzwälder Kirschtorte", "calories": 280, "emoji": "🍰"},
+    {"name": "Apfelstrudel", "calories": 215, "emoji": "🍏"},
+    {"name": "Tiramisu", "calories": 295, "emoji": "🍮"}
+  ],
+  "tips": [
+    {"title": "Ohne Boden backen", "text": "Der Mürbeteigboden macht ca. 80-100 kcal pro Stück aus. Ohne Boden schmeckt Käsekuchen genauso cremig.", "icon": "💡"},
+    {"title": "Magerquark verwenden", "text": "Magerquark statt Sahnequark spart ca. 50 kcal pro Stück bei gleichem Proteingehalt.", "icon": "🥛"},
+    {"title": "Weniger Zucker", "text": "Reduziere den Zucker um ein Drittel – die Zitronenschale und Vanille geben genug Geschmack.", "icon": "🍋"},
+    {"title": "Protein-Version backen", "text": "Ersetze einen Teil des Zuckers durch Proteinpulver und nutze Magerquark – du bekommst 25g Protein pro Stück.", "icon": "💪"},
+    {"title": "Kleine Stücke schneiden", "text": "Schneide 12 statt 8 Stücke – du sparst ein Drittel der Kalorien und es reicht trotzdem.", "icon": "✂️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Stück Käsekuchen?", "answer": "Ein Stück deutscher Käsekuchen (150g) hat ca. 375 kcal. New York Cheesecake hat mit ca. 480 kcal deutlich mehr, da er mit Frischkäse statt Quark gemacht wird."},
+    {"question": "Ist Käsekuchen zum Abnehmen geeignet?", "answer": "In Maßen ja – vor allem die Variante ohne Boden mit Magerquark (290 kcal pro Stück) liefert viel Protein und sättigt gut."},
+    {"question": "Was hat weniger Kalorien: deutscher Käsekuchen oder Cheesecake?", "answer": "Deutscher Käsekuchen mit Quark (250 kcal/100g) hat deutlich weniger als New York Cheesecake (320 kcal/100g). Der Unterschied: Frischkäse hat mehr Fett als Quark."},
+    {"question": "Wie viel Protein hat Käsekuchen?", "answer": "Klassischer Käsekuchen liefert ca. 8g Protein pro 100g dank des Quarks. Eine Proteinversion kann bis zu 25g pro Stück erreichen."},
+    {"question": "Wie viel Fett hat Käsekuchen?", "answer": "Deutscher Käsekuchen hat ca. 13g Fett pro 100g. New York Cheesecake hat ca. 21g/100g – fast doppelt so viel."},
+    {"question": "Kann man Käsekuchen kalorienärmer machen?", "answer": "Ja: Ohne Boden, mit Magerquark, weniger Zucker und kleiner geschnitten. So kommst du auf 270-290 kcal pro Stück statt 375 kcal."}
+  ],
+  "related_foods": ["schwarzwaelder-kirschtorte", "bienenstich", "streuselkuchen", "apfelstrudel"]
+}
