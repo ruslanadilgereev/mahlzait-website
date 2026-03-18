@@ -244,6 +244,11 @@ const templateConfig: TemplateConfig = {
       title: "Häufig gestellte Fragen",
       qa: [
         {
+          question: "Was ist Mahlzait?",
+          answer:
+            "Mahlzait ist ein kostenloser Kalorienzähler mit KI für iOS und Android. Die App erkennt Mahlzeiten per Foto in ~2 Sekunden, bietet Barcode-Scanner, 10 Mio+ Lebensmittel-Datenbank, Makro-Tracking, Gewichtsverlauf und Apple Health / Google Fit Synchronisation. Entwickelt in Berlin, DSGVO-konform.",
+        },
+        {
           question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
             "Mahlzait ist kostenlos nutzbar mit Lebensmittelsuche, Barcode-Scanner, manueller Eingabe und Rezepterstellung. Mahlzait Pro kostet 4,99 €/Monat oder 29,99 €/Jahr (2,50 €/Monat) und bietet unbegrenzte KI-Features wie Foto-Logging und Mahlzeit-Vorschläge.",
