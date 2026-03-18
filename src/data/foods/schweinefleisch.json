@@ -1,0 +1,49 @@
+{
+  "slug": "schweinefleisch",
+  "name": "Schweinefleisch",
+  "emoji": "🥩",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Schweinefleisch Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Schweinefleisch? Nährwerte für Filet, Kotelett, Nacken & Bauch. Rechner mit Portionsgrößen und Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 242,
+    "protein_per_100g": 22,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 17,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    {"name": "Schweinefilet", "portion_g": 200, "calories": 318, "protein": 46, "carbs": 0, "fat": 14, "tip": "Magerster Schweinefleisch-Cut"},
+    {"name": "Schweinekotelett", "portion_g": 200, "calories": 440, "protein": 42, "carbs": 0, "fat": 30, "tip": "Mit Knochen und Fettrand"},
+    {"name": "Schweinenacken", "portion_g": 200, "calories": 520, "protein": 36, "carbs": 0, "fat": 42, "tip": "Sehr fettreich, saftig"},
+    {"name": "Schweinebauch", "portion_g": 150, "calories": 540, "protein": 21, "carbs": 0, "fat": 51, "tip": "Fettester Cut"},
+    {"name": "Schweinelende", "portion_g": 200, "calories": 340, "protein": 44, "carbs": 0, "fat": 18, "tip": "Mager und zart"},
+    {"name": "Pulled Pork (Schulter)", "portion_g": 150, "calories": 375, "protein": 33, "carbs": 0, "fat": 27, "tip": "Langsam gegart, saftig"}
+  ],
+  "comparison": [
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Rindfleisch", "calories": 250, "emoji": "🥩"},
+    {"name": "Putenbrust", "calories": 111, "emoji": "🍗"},
+    {"name": "Lachsfilet", "calories": 208, "emoji": "🐟"}
+  ],
+  "tips": [
+    {"title": "Filet statt Nacken", "text": "Schweinefilet (159 kcal/100g) hat nur halb so viele Kalorien wie Nacken (260 kcal). Riesiger Unterschied.", "icon": "💡"},
+    {"title": "Fettrand entfernen", "text": "Sichtbares Fett vor der Zubereitung abschneiden spart pro 200g Portion bis zu 150 kcal.", "icon": "🔪"},
+    {"title": "Grillen statt Braten", "text": "Beim Grillen tropft das Fett ab, in der Pfanne brät es im eigenen Fett. Grillen spart 50-80 kcal.", "icon": "🔥"},
+    {"title": "B-Vitamine nutzen", "text": "Schweinefleisch ist die beste Quelle für Vitamin B1 (Thiamin) – wichtig für Energiestoffwechsel und Nerven.", "icon": "💊"},
+    {"title": "Kombination beachten", "text": "Schweinebraten + Knödel + Soße kann leicht 1000+ kcal werden. Lieber mageres Filet + Salat = 400 kcal.", "icon": "⚖️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Schweinefleisch?", "answer": "Je nach Cut 159-360 kcal pro 100g. Filet: 159 kcal, Kotelett: 220 kcal, Nacken: 260 kcal, Bauch: 360 kcal pro 100g."},
+    {"question": "Ist Schweinefleisch ungesund?", "answer": "In Maßen nicht. Magere Cuts wie Filet und Lende sind proteinreich und nährstoffhaltig. Fettere Cuts wie Bauch und Nacken sollte man seltener essen."},
+    {"question": "Was ist das magerste Schweinefleisch?", "answer": "Schweinefilet mit nur 159 kcal und 7% Fett pro 100g. Fast so mager wie Hähnchenbrust – und zarter im Geschmack."},
+    {"question": "Wie viel Protein hat Schweinefleisch?", "answer": "22-23g Protein pro 100g im Schnitt. Ein 200g-Schweinefilet liefert 46g Protein – sehr hoher Wert."},
+    {"question": "Was hat weniger Kalorien: Schwein oder Rind?", "answer": "Kommt auf den Cut an. Schweinefilet (159 kcal) schlägt Rinderfilet (182 kcal). Aber Schweinenacken (260 kcal) hat mehr als die meisten Rinderstücke."},
+    {"question": "Wie oft sollte man Schweinefleisch essen?", "answer": "Die DGE empfiehlt max. 300-600g Fleisch pro Woche insgesamt. 1-2 Portionen Schweinefleisch pro Woche sind unbedenklich, vorzugsweise magere Cuts."}
+  ],
+  "related_foods": ["schnitzel", "schweinebraten", "haehnchenbrust", "rindfleisch"]
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "seitan",
+  "name": "Seitan",
+  "emoji": "🌾",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Seitan Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Seitan? Nährwerte für Seitan natur, gebraten, als Schnitzel & Wurst. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 148,
+    "protein_per_100g": 28,
+    "carbs_per_100g": 4,
+    "fat_per_100g": 2,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Seitan natur", "portion_g": 150, "calories": 222, "protein": 42, "carbs": 6, "fat": 3, "tip": "Weizeneiweiß pur"},
+    {"name": "Seitan gebraten", "portion_g": 150, "calories": 300, "protein": 40, "carbs": 6, "fat": 12, "tip": "In Öl gebraten"},
+    {"name": "Seitan-Schnitzel", "portion_g": 150, "calories": 330, "protein": 35, "carbs": 18, "fat": 14, "tip": "Paniert wie echtes Schnitzel"},
+    {"name": "Seitan-Gyros", "portion_g": 150, "calories": 270, "protein": 38, "carbs": 8, "fat": 10, "tip": "Gewürzt und geschnitten"},
+    {"name": "Seitan-Würstchen", "portion_g": 100, "calories": 210, "protein": 25, "carbs": 8, "fat": 8, "tip": "Grill-Alternative"},
+    {"name": "Seitan in Sojasoße", "portion_g": 150, "calories": 240, "protein": 40, "carbs": 8, "fat": 5, "tip": "Asiatisch mariniert"}
+  ],
+  "comparison": [
+    {"name": "Tofu", "calories": 144, "emoji": "🌱"},
+    {"name": "Tempeh", "calories": 192, "emoji": "🌱"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Putenbrust", "calories": 111, "emoji": "🍗"}
+  ],
+  "tips": [
+    {"title": "Protein-König der Pflanzen", "text": "Seitan hat 28g Protein pro 100g – mehr als Hähnchenbrust (24g) und doppelt so viel wie Tofu (15g).", "icon": "🏆"},
+    {"title": "Textur wie Fleisch", "text": "Seitan hat die fleischähnlichste Textur aller pflanzlichen Alternativen. Perfekt für Gyros, Schnitzel und Gulasch.", "icon": "🥩"},
+    {"title": "Nicht bei Glutenunverträglichkeit", "text": "Seitan besteht zu 75% aus Gluten. Bei Zöliakie oder Glutensensitivität auf Tofu oder Tempeh ausweichen.", "icon": "⚠️"},
+    {"title": "Selbst machen spart Geld", "text": "Aus 1kg Weizenmehl + Wasser kann man ca. 300g Seitan herstellen. Günstiger als Fertigprodukte.", "icon": "💰"},
+    {"title": "Gut würzen", "text": "Seitan selbst ist geschmacksneutral. In Brühe kochen und intensiv würzen für besten Geschmack.", "icon": "🧂"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Seitan?", "answer": "Seitan hat ca. 148 kcal pro 100g. Eine 150g-Portion hat 222 kcal. Gebraten mit Öl steigt der Wert auf ca. 300 kcal."},
+    {"question": "Wie viel Protein hat Seitan?", "answer": "Seitan enthält 28g Protein pro 100g – mehr als jede andere pflanzliche und die meisten tierischen Proteinquellen. 150g liefern 42g Protein."},
+    {"question": "Ist Seitan gesund?", "answer": "Seitan ist eine exzellente Proteinquelle mit wenig Fett. Allerdings besteht er fast nur aus Gluten und liefert kein Lysin (essentielle Aminosäure). Mit Hülsenfrüchten kombinieren."},
+    {"question": "Was ist besser: Seitan oder Tofu?", "answer": "Seitan hat mehr Protein (28g vs. 15g) und fleischigere Textur. Tofu hat mehr Calcium und ein vollständigeres Aminosäureprofil. Am besten abwechseln."},
+    {"question": "Woraus wird Seitan gemacht?", "answer": "Seitan wird aus Weizeneiweiß (Gluten) hergestellt. Weizenmehlteig wird gewaschen, bis nur noch das reine Gluten übrig bleibt. Dann wird es gewürzt und gegart."},
+    {"question": "Kann man Seitan bei Low-Carb essen?", "answer": "Ja, Seitan hat nur 4g Kohlenhydrate pro 100g und passt gut in eine Low-Carb-Ernährung. Achtung: nicht geeignet bei Glutenunverträglichkeit."}
+  ],
+  "related_foods": ["tofu", "tempeh", "haehnchenbrust", "reis"]
+}

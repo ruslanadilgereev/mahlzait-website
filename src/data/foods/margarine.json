@@ -1,0 +1,49 @@
+{
+  "slug": "margarine",
+  "name": "Margarine",
+  "emoji": "🧈",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Margarine Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Margarine? Nährwerte für Vollfett, Halbfett & pflanzliche Margarine. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 720,
+    "protein_per_100g": 0.2,
+    "carbs_per_100g": 0.5,
+    "fat_per_100g": 80,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 15,
+    "typical_portion_name": "1 Portion (Brot)"
+  },
+  "variants": [
+    {"name": "Margarine Vollfett", "portion_g": 15, "calories": 108, "protein": 0, "carbs": 0.1, "fat": 12, "tip": "Standard-Streichfett"},
+    {"name": "Halbfettmargarine", "portion_g": 15, "calories": 54, "protein": 0, "carbs": 0.1, "fat": 6, "tip": "Halbe Kalorien, gleich streichbar"},
+    {"name": "Dreiviertelfett-Margarine", "portion_g": 15, "calories": 81, "protein": 0, "carbs": 0.1, "fat": 9, "tip": "Goldener Mittelweg"},
+    {"name": "Margarine zum Backen (20g)", "portion_g": 20, "calories": 144, "protein": 0, "carbs": 0.1, "fat": 16, "tip": "Typische Back-Portion"},
+    {"name": "Margarine zum Braten (10g)", "portion_g": 10, "calories": 72, "protein": 0, "carbs": 0.1, "fat": 8, "tip": "Für beschichtete Pfanne"},
+    {"name": "Pflanzliche Streichcreme (z.B. Rama)", "portion_g": 15, "calories": 54, "protein": 0, "carbs": 0.2, "fat": 6, "tip": "Vegan und leicht"}
+  ],
+  "comparison": [
+    {"name": "Butter", "calories": 741, "emoji": "🧈"},
+    {"name": "Frischkäse", "calories": 234, "emoji": "🧈"},
+    {"name": "Olivenöl", "calories": 884, "emoji": "🫒"},
+    {"name": "Avocado (Brot)", "calories": 160, "emoji": "🥑"}
+  ],
+  "tips": [
+    {"title": "Halbfett-Version wählen", "text": "Halbfettmargarine spart 50% Kalorien gegenüber Vollfett. Auf Brot kaum ein Unterschied.", "icon": "💡"},
+    {"title": "Nicht zum Braten ideal", "text": "Margarine enthält Wasser und spritzt leicht. Zum Braten besser Rapsöl oder Butterschmalz verwenden.", "icon": "🍳"},
+    {"title": "Auf Transfette achten", "text": "Hochwertige Margarinen sind heute weitgehend transfettfrei. Trotzdem auf 'teilgehärtet' in der Zutatenliste achten.", "icon": "⚠️"},
+    {"title": "Pflanzliche Omega-3-Quelle", "text": "Margarine aus Rapsöl liefert mehr Omega-3-Fettsäuren als Butter – gut für Herz und Gefäße.", "icon": "❤️"},
+    {"title": "Raumtemperatur ist besser", "text": "Zimmerwarme Margarine lässt sich dünner auftragen – spart Material und damit Kalorien.", "icon": "🌡️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Margarine?", "answer": "Vollfett-Margarine hat ca. 720 kcal pro 100g. Eine Brot-Portion (15g) hat 108 kcal. Halbfettmargarine liegt bei 360 kcal pro 100g."},
+    {"question": "Ist Margarine gesünder als Butter?", "answer": "Margarine hat mehr ungesättigte Fettsäuren, Butter mehr Vitamine. Kalorisch sind beide ähnlich. Halbfettmargarine ist die kalorienärmste Streich-Option."},
+    {"question": "Hat Margarine weniger Kalorien als Butter?", "answer": "Minimal: Margarine 720 kcal, Butter 741 kcal pro 100g. Der Unterschied ist vernachlässigbar. Halbfett-Varianten beider Produkte sparen wirklich."},
+    {"question": "Ist Margarine vegan?", "answer": "Die meisten Margarinen sind vegan, da sie aus pflanzlichen Ölen hergestellt werden. Einige enthalten aber Molke oder Vitamin D3 tierischen Ursprungs – Zutatenliste prüfen."},
+    {"question": "Kann man mit Margarine abnehmen?", "answer": "Margarine allein macht nicht schlank oder dick. Tipp: Halbfettmargarine (54 kcal/Portion) nutzen oder ganz durch Frischkäse (70 kcal/30g) ersetzen."},
+    {"question": "Welche Margarine ist die beste?", "answer": "Ernährungstechnisch: Margarine aus Rapsöl (gutes Omega-3/6-Verhältnis), ohne gehärtete Fette, als Halbfett-Variante. Geschmacklich ist das persönliche Präferenz."}
+  ],
+  "related_foods": ["butter", "frischkaese", "brot", "olivenoel"]
+}

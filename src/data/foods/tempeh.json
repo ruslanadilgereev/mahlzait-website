@@ -1,0 +1,49 @@
+{
+  "slug": "tempeh",
+  "name": "Tempeh",
+  "emoji": "🌱",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Tempeh Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Tempeh? Nährwerte für Soja-Tempeh, gebraten & mariniert. Kostenloser Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 192,
+    "protein_per_100g": 20,
+    "carbs_per_100g": 8,
+    "fat_per_100g": 11,
+    "fiber_per_100g": 5,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Soja-Tempeh natur", "portion_g": 150, "calories": 288, "protein": 30, "carbs": 12, "fat": 16.5, "tip": "Fermentiertes Soja"},
+    {"name": "Tempeh gebraten", "portion_g": 150, "calories": 360, "protein": 28, "carbs": 12, "fat": 24, "tip": "In der Pfanne knusprig"},
+    {"name": "Tempeh mariniert (asiatisch)", "portion_g": 150, "calories": 315, "protein": 27, "carbs": 18, "fat": 16.5, "tip": "Sojasauce + Ingwer"},
+    {"name": "Tempeh geräuchert", "portion_g": 150, "calories": 310, "protein": 31.5, "carbs": 9, "fat": 18, "tip": "Rauchig-würzig"},
+    {"name": "Tempeh Bacon (dünn gebraten)", "portion_g": 80, "calories": 192, "protein": 16, "carbs": 6.4, "fat": 12, "tip": "Knusprige Bacon-Alternative"},
+    {"name": "Tempeh im Curry", "portion_g": 150, "calories": 288, "protein": 30, "carbs": 12, "fat": 16.5, "tip": "Mit Kokosmilch-Sauce"}
+  ],
+  "comparison": [
+    {"name": "Tofu", "calories": 144, "emoji": "🌱"},
+    {"name": "Seitan", "calories": 148, "emoji": "🌾"},
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Kichererbsen", "calories": 164, "emoji": "🫘"}
+  ],
+  "tips": [
+    {"title": "Besser als Tofu?", "text": "Tempeh hat mehr Protein (20g vs. 15g), mehr Ballaststoffe (5g vs. 1g) und durch Fermentation bessere Nährstoffaufnahme.", "icon": "💪"},
+    {"title": "Dünn schneiden für Knusperkruste", "text": "3-4mm dünne Scheiben werden in der Pfanne perfekt knusprig. Vorher mit Sojasauce marinieren.", "icon": "🔪"},
+    {"title": "Bitterkeit entfernen", "text": "Tempeh 10 Min in Salzwasser kochen entfernt die leichte Bitterkeit. Dann marinieren und braten.", "icon": "🫧"},
+    {"title": "Fermentation nutzen", "text": "Die Fermentation macht Nährstoffe besser bioverfügbar und ist gut für die Darmgesundheit – wie ein natürliches Probiotikum.", "icon": "🦠"},
+    {"title": "Ballaststoff-Bonus", "text": "Mit 5g Ballaststoffen pro 100g sättigt Tempeh besser als die meisten Proteinquellen – gut fürs Abnehmen.", "icon": "🌾"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Tempeh?", "answer": "Tempeh hat ca. 192 kcal pro 100g. Eine 150g-Portion liefert 288 kcal. Gebraten mit Öl steigt der Wert auf ca. 360 kcal pro Portion."},
+    {"question": "Ist Tempeh gesünder als Tofu?", "answer": "In mancher Hinsicht ja: Tempeh hat mehr Protein (20g vs. 15g/100g), mehr Ballaststoffe und durch die Fermentation bessere Nährstoffaufnahme. Dafür hat es mehr Kalorien."},
+    {"question": "Wie viel Protein hat Tempeh?", "answer": "Tempeh enthält 20g Protein pro 100g – mehr als Tofu (15g) und fast so viel wie Hähnchenbrust (24g). Eine 150g-Portion hat 30g Protein."},
+    {"question": "Wie schmeckt Tempeh?", "answer": "Nussig, leicht bitter, mit einer festen, körnigen Textur. Gut mariniert oder geräuchert schmeckt Tempeh herzhaft-umami und erinnert an Pilze oder Nüsse."},
+    {"question": "Kann man Tempeh roh essen?", "answer": "Technisch ja, da Tempeh bereits fermentiert ist. Aber gebraten, gebacken oder gedämpft schmeckt es deutlich besser und ist besser verdaulich."},
+    {"question": "Wo kauft man Tempeh?", "answer": "In Bioläden, Reformhäusern und gut sortierten Supermärkten (Rewe, Edeka) in der Kühltheke bei den veganen Produkten. Auch in Asia-Läden erhältlich."}
+  ],
+  "related_foods": ["tofu", "seitan", "reis", "kichererbsen"]
+}

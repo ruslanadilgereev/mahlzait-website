@@ -1,0 +1,49 @@
+{
+  "slug": "tofu",
+  "name": "Tofu",
+  "emoji": "🌱",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Tofu Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Tofu? Nährwerte für Naturtofu, Seidentofu, Räuchertofu & gebraten. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 144,
+    "protein_per_100g": 15,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 9,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Naturtofu (fest)", "portion_g": 200, "calories": 288, "protein": 30, "carbs": 4, "fat": 18, "tip": "Vielseitig einsetzbar"},
+    {"name": "Seidentofu", "portion_g": 200, "calories": 110, "protein": 10, "carbs": 4, "fat": 6, "tip": "Cremig für Desserts und Suppen"},
+    {"name": "Räuchertofu", "portion_g": 200, "calories": 330, "protein": 32, "carbs": 2, "fat": 22, "tip": "Würzig, Bacon-Alternative"},
+    {"name": "Tofu gebraten", "portion_g": 200, "calories": 370, "protein": 28, "carbs": 4, "fat": 28, "tip": "Plus Bratfett einrechnen"},
+    {"name": "Tofu mariniert (asiatisch)", "portion_g": 200, "calories": 310, "protein": 26, "carbs": 12, "fat": 18, "tip": "Marinade enthält Zucker"},
+    {"name": "Tofu-Würstchen", "portion_g": 100, "calories": 220, "protein": 18, "carbs": 8, "fat": 14, "tip": "Verarbeitetes Tofuprodukt"}
+  ],
+  "comparison": [
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Tempeh", "calories": 192, "emoji": "🌱"},
+    {"name": "Seitan", "calories": 148, "emoji": "🌾"},
+    {"name": "Ei", "calories": 155, "emoji": "🥚"}
+  ],
+  "tips": [
+    {"title": "Gut pressen = besser braten", "text": "Tofu 30 Minuten pressen entfernt überschüssiges Wasser. Danach wird er in der Pfanne knusprig statt matschig.", "icon": "💧"},
+    {"title": "Marinieren für Geschmack", "text": "Tofu nimmt Geschmack auf wie ein Schwamm. Sojasauce + Knoblauch + Ingwer mindestens 30 Min einlegen.", "icon": "🫧"},
+    {"title": "Räuchertofu als Speck-Ersatz", "text": "In Streifen geschnitten und knusprig gebraten ersetzt Räuchertofu Bacon – bei weniger gesättigtem Fett.", "icon": "🥓"},
+    {"title": "Seidentofu für Desserts", "text": "Seidentofu + Kakao + Ahornsirup = Schokomousse mit nur 70 kcal pro Portion. Cremig und proteinreich.", "icon": "🍫"},
+    {"title": "Calcium-Check", "text": "Tofu, der mit Calciumsulfat hergestellt wird, liefert bis zu 350mg Calcium pro 100g – mehr als Milch.", "icon": "🦴"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Tofu?", "answer": "Naturtofu hat ca. 144 kcal pro 100g. Seidentofu nur 55 kcal. Räuchertofu kommt auf 165 kcal. Gebraten mit Öl steigen die Werte auf 185+ kcal."},
+    {"question": "Ist Tofu gut zum Abnehmen?", "answer": "Ja, besonders Seidentofu (55 kcal/100g) und Naturtofu (144 kcal/100g). Hoher Protein- und niedriger Kaloriengehalt machen Tofu ideal zum Abnehmen."},
+    {"question": "Wie viel Protein hat Tofu?", "answer": "Naturtofu enthält ca. 15g Protein pro 100g. Eine 200g-Portion liefert 30g pflanzliches Protein mit allen essentiellen Aminosäuren."},
+    {"question": "Ist Tofu ein vollständiges Protein?", "answer": "Ja, Soja-Protein in Tofu enthält alle 9 essentiellen Aminosäuren. Es ist eines der wenigen pflanzlichen Lebensmittel mit vollständigem Aminosäureprofil."},
+    {"question": "Was ist gesünder: Tofu oder Hähnchenbrust?", "answer": "Beide sind gesund. Hähnchenbrust hat mehr Protein (24g vs. 15g) und etwas mehr Kalorien (165 vs. 144 kcal). Tofu liefert dafür mehr Calcium und Isoflavone."},
+    {"question": "Wie bereitet man Tofu am besten zu?", "answer": "Naturtofu pressen, in Würfel schneiden, in Stärke wenden und in wenig Öl knusprig braten. Oder mariniert im Ofen backen. Seidentofu eignet sich für Suppen und Desserts."}
+  ],
+  "related_foods": ["tempeh", "seitan", "reis", "haehnchenbrust"]
+}

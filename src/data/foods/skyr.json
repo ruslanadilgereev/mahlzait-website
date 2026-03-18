@@ -1,0 +1,50 @@
+{
+  "slug": "skyr",
+  "name": "Skyr",
+  "emoji": "🥛",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Skyr Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Skyr? Nährwerte für Skyr natur, mit Frucht & Vanille. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+  },
+  "overview": {
+    "calories_per_100g": 63,
+    "protein_per_100g": 11,
+    "carbs_per_100g": 4,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Becher"
+  },
+  "variants": [
+    {"name": "Skyr Natur", "portion_g": 150, "calories": 95, "protein": 16.5, "carbs": 6, "fat": 0.3, "tip": "Proteinbombe mit wenig Fett"},
+    {"name": "Skyr Vanille", "portion_g": 150, "calories": 120, "protein": 14, "carbs": 13, "fat": 0.3, "tip": "Mehr Zucker durch Vanillearoma"},
+    {"name": "Skyr Erdbeere", "portion_g": 150, "calories": 118, "protein": 13, "carbs": 14, "fat": 0.3, "tip": "Beliebteste Fruchtsorte"},
+    {"name": "Skyr Heidelbeere", "portion_g": 150, "calories": 115, "protein": 13, "carbs": 13.5, "fat": 0.3, "tip": "Antioxidantien-Boost"},
+    {"name": "Skyr mit Müsli-Topping", "portion_g": 200, "calories": 210, "protein": 17, "carbs": 28, "fat": 4, "tip": "Sättigend als Frühstück"},
+    {"name": "Skyr Drink", "portion_g": 250, "calories": 138, "protein": 20, "carbs": 12, "fat": 0.5, "tip": "Trinkversion für unterwegs"},
+    {"name": "Skyr High Protein (Arla)", "portion_g": 150, "calories": 99, "protein": 18, "carbs": 5.5, "fat": 0.3, "tip": "Extra-Protein-Variante"}
+  ],
+  "comparison": [
+    {"name": "Magerquark", "calories": 67, "emoji": "🥄"},
+    {"name": "Griechischer Joghurt", "calories": 133, "emoji": "🇬🇷"},
+    {"name": "Naturjoghurt 3,5%", "calories": 69, "emoji": "🥛"},
+    {"name": "Hüttenkäse", "calories": 104, "emoji": "🧀"}
+  ],
+  "tips": [
+    {"title": "Perfekt zum Abnehmen", "text": "Skyr hat nur 63 kcal pro 100g bei 11g Protein – eines der besten Verhältnisse aller Milchprodukte.", "icon": "💪"},
+    {"title": "Natur statt Frucht kaufen", "text": "Frucht-Skyr enthält bis zu 10g Zucker mehr pro Becher. Lieber Natur kaufen und frisches Obst reinschneiden.", "icon": "🍓"},
+    {"title": "Als Quark-Ersatz nutzen", "text": "Skyr ist cremiger als Magerquark und eignet sich perfekt als Basis für Dips, Dressings und Desserts.", "icon": "🍽️"},
+    {"title": "Sättigungseffekt nutzen", "text": "Das hohe Protein im Skyr hält bis zu 4 Stunden satt – ideal als Snack zwischen den Mahlzeiten.", "icon": "⏰"},
+    {"title": "Auf Zuckerzusatz achten", "text": "Viele Marken-Skyrs haben 12-15g Zucker pro Becher. Immer die Nährwerttabelle checken und Natur bevorzugen.", "icon": "⚠️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Skyr?", "answer": "Skyr Natur hat ca. 63 kcal pro 100g bzw. 95 kcal pro 150g-Becher. Frucht-Skyr liegt bei 115-120 kcal pro Becher."},
+    {"question": "Ist Skyr besser als Joghurt zum Abnehmen?", "answer": "Ja, Skyr hat deutlich mehr Protein (11g vs. 3-5g pro 100g) bei ähnlichen Kalorien wie Naturjoghurt. Das höhere Protein sättigt besser."},
+    {"question": "Wie viel Protein hat Skyr?", "answer": "Skyr Natur liefert ca. 11g Protein pro 100g – das entspricht 16,5g pro 150g-Becher. High-Protein-Varianten schaffen bis zu 18g pro Becher."},
+    {"question": "Was ist der Unterschied zwischen Skyr und Quark?", "answer": "Skyr ist cremiger und milder als Magerquark, hat aber ähnliche Nährwerte. Skyr wird mit speziellen isländischen Bakterienkulturen hergestellt und enthält etwas weniger Protein als Quark."},
+    {"question": "Kann man Skyr abends essen?", "answer": "Ja, Skyr ist ein idealer Abendsnack. Das Casein-Protein wird langsam verdaut und versorgt die Muskeln über Nacht mit Aminosäuren."},
+    {"question": "Hat Skyr Laktose?", "answer": "Skyr enthält Laktose, jedoch weniger als normale Milch (ca. 3-4g pro 100g). Es gibt auch laktosefreie Skyr-Varianten im Handel."}
+  ],
+  "related_foods": ["quark", "joghurt", "haferflocken", "muesli"]
+}

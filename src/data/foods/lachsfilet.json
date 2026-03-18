@@ -1,0 +1,50 @@
+{
+  "slug": "lachsfilet",
+  "name": "Lachsfilet",
+  "emoji": "🐟",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Lachsfilet Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Lachsfilet? Nährwerte für frisch, gebraten, geräuchert & Tiefkühl. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 208,
+    "protein_per_100g": 20,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Filet"
+  },
+  "variants": [
+    {"name": "Lachsfilet roh (frisch)", "portion_g": 150, "calories": 312, "protein": 30, "carbs": 0, "fat": 21, "tip": "Basis-Nährwerte"},
+    {"name": "Lachsfilet gebraten", "portion_g": 150, "calories": 348, "protein": 33, "carbs": 0, "fat": 24, "tip": "Plus Bratfett einrechnen"},
+    {"name": "Lachsfilet im Ofen", "portion_g": 150, "calories": 320, "protein": 31, "carbs": 0, "fat": 22, "tip": "Schonende Zubereitung"},
+    {"name": "Lachs geräuchert", "portion_g": 100, "calories": 175, "protein": 22, "carbs": 0, "fat": 10, "tip": "Weniger Fett als frisch"},
+    {"name": "Lachs aus der Tiefkühlung", "portion_g": 150, "calories": 300, "protein": 30, "carbs": 0, "fat": 20, "tip": "Ähnlich wie frisch"},
+    {"name": "Lachs-Sashimi", "portion_g": 100, "calories": 208, "protein": 20, "carbs": 0, "fat": 14, "tip": "Roh und unverarbeitet"},
+    {"name": "Stremellachs", "portion_g": 100, "calories": 230, "protein": 23, "carbs": 0, "fat": 16, "tip": "Heißgeräuchert, aromatisch"}
+  ],
+  "comparison": [
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Thunfisch (Dose)", "calories": 116, "emoji": "🐟"},
+    {"name": "Forelle", "calories": 119, "emoji": "🐟"},
+    {"name": "Garnelen", "calories": 99, "emoji": "🦐"}
+  ],
+  "tips": [
+    {"title": "Omega-3-Kraftpaket", "text": "Lachs liefert 2-3g Omega-3-Fettsäuren pro 150g Filet – mehr als jeder andere gängige Speisefisch.", "icon": "❤️"},
+    {"title": "Im Ofen zubereiten", "text": "Lachs im Ofen braucht kein zusätzliches Fett und spart 30-50 kcal gegenüber der Pfanne.", "icon": "🔥"},
+    {"title": "Tiefkühllachs ist okay", "text": "Schockgefrosteter Lachs hat nahezu identische Nährwerte wie frischer – und ist deutlich günstiger.", "icon": "❄️"},
+    {"title": "2x pro Woche Fisch", "text": "Die DGE empfiehlt 2 Portionen Fisch pro Woche. Lachs + ein magerer Fisch deckt den Omega-3-Bedarf.", "icon": "📅"},
+    {"title": "Wildlachs vs. Zuchtlachs", "text": "Wildlachs hat weniger Fett (5-7%) als Zuchtlachs (12-15%), dafür weniger Omega-3 insgesamt. Beide sind gesund.", "icon": "🐟"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Lachsfilet?", "answer": "Frisches Lachsfilet hat ca. 208 kcal pro 100g. Ein Filet (150g) gebraten kommt auf ca. 348 kcal. Geräucherter Lachs hat 175 kcal pro 100g."},
+    {"question": "Ist Lachs gut zum Abnehmen?", "answer": "Ja, trotz höherem Fettgehalt. Die Omega-3-Fette und 20g Protein pro 100g sättigen hervorragend. Lachs hält lange satt und unterstützt den Stoffwechsel."},
+    {"question": "Wie viel Protein hat Lachs?", "answer": "Lachs enthält ca. 20g Protein pro 100g – ein 150g-Filet liefert 30g hochwertiges Protein mit allen essentiellen Aminosäuren."},
+    {"question": "Was ist gesünder: Lachs oder Hähnchen?", "answer": "Hähnchenbrust hat weniger Kalorien (165 vs. 208 kcal/100g), aber Lachs liefert wertvolle Omega-3-Fettsäuren, die Hähnchen nicht hat. Beides ist gesund."},
+    {"question": "Wie oft sollte man Lachs essen?", "answer": "1-2 Mal pro Woche ist ideal für die Omega-3-Versorgung. Öfter ist ernährungstechnisch okay, aber wegen möglicher Schwermetall-Belastung nicht nötig."},
+    {"question": "Hat geräucherter Lachs weniger Kalorien?", "answer": "Ja, geräucherter Lachs hat ca. 175 kcal pro 100g – weniger als frischer (208 kcal), weil durch das Räuchern etwas Fett austritt."}
+  ],
+  "related_foods": ["lachs-gebraten", "forelle", "reis", "haehnchenbrust"]
+}

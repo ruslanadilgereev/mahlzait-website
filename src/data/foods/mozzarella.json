@@ -1,0 +1,49 @@
+{
+  "slug": "mozzarella",
+  "name": "Mozzarella",
+  "emoji": "🧀",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Mozzarella Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Mozzarella? Nährwerte für Kuhmilch-Mozzarella, Büffelmozzarella & Light. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 263,
+    "protein_per_100g": 18,
+    "carbs_per_100g": 1,
+    "fat_per_100g": 21,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 125,
+    "typical_portion_name": "1 Kugel"
+  },
+  "variants": [
+    {"name": "Mozzarella (Kuhmilch)", "portion_g": 125, "calories": 329, "protein": 22.5, "carbs": 1.3, "fat": 26.3, "tip": "Standard aus dem Supermarkt"},
+    {"name": "Büffelmozzarella", "portion_g": 125, "calories": 338, "protein": 20, "carbs": 0.5, "fat": 28.8, "tip": "Cremiger, etwas fettreicher"},
+    {"name": "Mozzarella Light", "portion_g": 125, "calories": 213, "protein": 24, "carbs": 1.5, "fat": 12.5, "tip": "35% weniger Kalorien"},
+    {"name": "Mini-Mozzarella (Snack)", "portion_g": 80, "calories": 210, "protein": 14.4, "carbs": 0.8, "fat": 16.8, "tip": "Praktische Snack-Größe"},
+    {"name": "Mozzarella gerieben (Pizza)", "portion_g": 50, "calories": 143, "protein": 10, "carbs": 0.5, "fat": 11.5, "tip": "Typische Pizza-Portion"},
+    {"name": "Burrata", "portion_g": 125, "calories": 375, "protein": 15, "carbs": 1, "fat": 35, "tip": "Cremigste und kalorienreichste Variante"}
+  ],
+  "comparison": [
+    {"name": "Gouda", "calories": 356, "emoji": "🧀"},
+    {"name": "Feta", "calories": 264, "emoji": "🧀"},
+    {"name": "Hüttenkäse", "calories": 104, "emoji": "🥄"},
+    {"name": "Parmesan", "calories": 392, "emoji": "🧀"}
+  ],
+  "tips": [
+    {"title": "Light-Mozzarella nutzen", "text": "Light-Varianten haben ca. 170 kcal statt 263 kcal pro 100g – geschmacklich kaum ein Unterschied auf Pizza oder im Salat.", "icon": "💡"},
+    {"title": "Portion abwiegen", "text": "Eine Standard-Kugel (125g) hat bereits 329 kcal. Für Salate reichen oft 60-80g – das spart 100-150 kcal.", "icon": "⚖️"},
+    {"title": "Caprese als leichtes Abendessen", "text": "80g Mozzarella + Tomate + Basilikum + 1 TL Olivenöl = nur ca. 280 kcal für eine sättigende Mahlzeit.", "icon": "🍅"},
+    {"title": "Gerieben statt in Scheiben", "text": "Geriebener Mozzarella verteilt sich besser – du brauchst weniger für den gleichen Geschmackseindruck.", "icon": "🧀"},
+    {"title": "Protein-Quelle", "text": "Mit 18g Protein pro 100g ist Mozzarella eine gute Proteinquelle, besonders im Vergleich zu anderen Käsesorten.", "icon": "💪"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Mozzarella?", "answer": "Standard-Mozzarella aus Kuhmilch hat ca. 263 kcal pro 100g. Eine Kugel (125g) liefert rund 329 kcal. Light-Mozzarella hat ca. 170 kcal pro 100g."},
+    {"question": "Ist Mozzarella gesund?", "answer": "Mozzarella liefert hochwertiges Protein (18g/100g), Calcium und B-Vitamine. Der Fettgehalt ist moderat für Käse. In Maßen passt er in jede ausgewogene Ernährung."},
+    {"question": "Hat Büffelmozzarella mehr Kalorien?", "answer": "Ja, Büffelmozzarella hat ca. 270 kcal pro 100g – etwas mehr als Kuhmilch-Mozzarella (263 kcal), da der Fettgehalt höher ist."},
+    {"question": "Wie viel Mozzarella pro Pizza?", "answer": "Für eine Pizza werden typisch 100-150g Mozzarella verwendet, das entspricht 263-395 kcal nur für den Käse. Mit 80g kommst du auf 210 kcal."},
+    {"question": "Welcher Käse hat weniger Kalorien als Mozzarella?", "answer": "Hüttenkäse (104 kcal/100g), Harzer Käse (126 kcal/100g) und fettreduzierter Frischkäse (105 kcal/100g) sind deutlich kalorienärmer."},
+    {"question": "Kann man Mozzarella beim Abnehmen essen?", "answer": "Ja, in moderaten Mengen. Tipp: Light-Mozzarella (170 kcal/100g) verwenden und Portionen auf 60-80g begrenzen. Das Protein sättigt gut."}
+  ],
+  "related_foods": ["kaese-gouda", "pizza-margherita", "frischkaese", "ei"]
+}

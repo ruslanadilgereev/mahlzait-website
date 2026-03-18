@@ -1,0 +1,49 @@
+{
+  "slug": "butter",
+  "name": "Butter",
+  "emoji": "🧈",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Butter Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Butter? Nährwerte für Deutsche Markenbutter, Halbfettbutter & Ghee. Kostenloser Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 741,
+    "protein_per_100g": 0.7,
+    "carbs_per_100g": 0.6,
+    "fat_per_100g": 83,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 15,
+    "typical_portion_name": "1 Portion (Brot)"
+  },
+  "variants": [
+    {"name": "Deutsche Markenbutter", "portion_g": 15, "calories": 111, "protein": 0.1, "carbs": 0.1, "fat": 12.5, "tip": "Klassiker fürs Brot"},
+    {"name": "Süßrahmbutter", "portion_g": 15, "calories": 111, "protein": 0.1, "carbs": 0.1, "fat": 12.5, "tip": "Milder Geschmack"},
+    {"name": "Sauerrahmbutter", "portion_g": 15, "calories": 111, "protein": 0.1, "carbs": 0.1, "fat": 12.5, "tip": "Leicht säuerlich"},
+    {"name": "Halbfettbutter", "portion_g": 15, "calories": 56, "protein": 0.1, "carbs": 0.1, "fat": 6, "tip": "Halbiert die Kalorien"},
+    {"name": "Ghee (Butterschmalz)", "portion_g": 15, "calories": 135, "protein": 0, "carbs": 0, "fat": 15, "tip": "100% Fett, zum Braten"},
+    {"name": "Butter zum Kochen (20g)", "portion_g": 20, "calories": 148, "protein": 0.1, "carbs": 0.1, "fat": 16.6, "tip": "Typische Koch-Portion"}
+  ],
+  "comparison": [
+    {"name": "Frischkäse", "calories": 234, "emoji": "🧈"},
+    {"name": "Olivenöl", "calories": 884, "emoji": "🫒"},
+    {"name": "Margarine", "calories": 720, "emoji": "🧈"},
+    {"name": "Avocado", "calories": 160, "emoji": "🥑"}
+  ],
+  "tips": [
+    {"title": "Halbfettbutter nutzen", "text": "Halbfettbutter hat nur 370 kcal statt 741 kcal pro 100g – gleiche Streichbarkeit, halbe Kalorien.", "icon": "💡"},
+    {"title": "Portionen kontrollieren", "text": "Ein gehäufter Esslöffel Butter hat ca. 100 kcal. Dünn auftragen: 10g statt 15g spart 37 kcal pro Brot.", "icon": "⚖️"},
+    {"title": "Alternative: Frischkäse", "text": "30g Frischkäse (70 kcal) statt 15g Butter (111 kcal) – mehr Aufstrich, weniger Kalorien, mehr Protein.", "icon": "🍞"},
+    {"title": "Nicht zum Braten verschwenden", "text": "Zum Braten reichen 5-10g Butter/Öl. Beschichtete Pfannen sparen Fett und damit 50-100 kcal pro Mahlzeit.", "icon": "🍳"},
+    {"title": "Qualität vor Quantität", "text": "Gute irische oder Weidebutter hat mehr Omega-3 und Vitamin A. Weniger davon, aber bewusst genießen.", "icon": "✨"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Butter?", "answer": "Butter hat ca. 741 kcal pro 100g. Eine typische Brot-Portion (15g) hat 111 kcal. Halbfettbutter kommt auf ca. 370 kcal pro 100g."},
+    {"question": "Ist Butter oder Margarine kalorienärmer?", "answer": "Beide sind ähnlich kalorienreich: Butter 741 kcal, Margarine ca. 720 kcal pro 100g. Light-Margarine (35% Fett) hat aber nur ca. 360 kcal."},
+    {"question": "Wie viel Butter am Tag ist okay?", "answer": "Die DGE empfiehlt 15-30g Streichfett pro Tag. Das entspricht 111-222 kcal. In einer ausgewogenen Ernährung ist das unbedenklich."},
+    {"question": "Ist Butter gesund oder ungesund?", "answer": "Butter enthält gesättigte Fette, aber auch Vitamin A, D und K2. In moderaten Mengen (15-30g/Tag) ist Butter Teil einer gesunden Ernährung."},
+    {"question": "Was hat weniger Kalorien: Butter oder Olivenöl?", "answer": "Olivenöl hat sogar mehr Kalorien (884 kcal/100g) als Butter (741 kcal). Aber man braucht weniger: 1 TL Öl (5ml, 44 kcal) vs. 15g Butter (111 kcal)."},
+    {"question": "Wie viel Fett hat ein Stück Butter?", "answer": "Ein 250g-Block Butter enthält ca. 208g reines Fett. Eine Portion (15g) liefert 12,5g Fett – das ist ca. 19% des Tagesbedarfs."}
+  ],
+  "related_foods": ["frischkaese", "brot", "ei", "margarine"]
+}

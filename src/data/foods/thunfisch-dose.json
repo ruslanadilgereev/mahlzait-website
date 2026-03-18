@@ -1,0 +1,49 @@
+{
+  "slug": "thunfisch-dose",
+  "name": "Thunfisch aus der Dose",
+  "emoji": "🐟",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Thunfisch Dose Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Thunfisch aus der Dose? Nährwerte für im eigenen Saft, in Öl & als Salat. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 116,
+    "protein_per_100g": 26,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 1,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Dose (abgetropft)"
+  },
+  "variants": [
+    {"name": "Thunfisch im eigenen Saft", "portion_g": 150, "calories": 174, "protein": 39, "carbs": 0, "fat": 1.5, "tip": "Kalorienärmste Variante"},
+    {"name": "Thunfisch in Sonnenblumenöl", "portion_g": 150, "calories": 330, "protein": 37.5, "carbs": 0, "fat": 21, "tip": "Fast doppelt so viele Kalorien"},
+    {"name": "Thunfisch in Olivenöl", "portion_g": 150, "calories": 345, "protein": 36, "carbs": 0, "fat": 22.5, "tip": "Geschmackvoller, aber kalorienreicher"},
+    {"name": "Thunfisch-Salat (Dose)", "portion_g": 185, "calories": 259, "protein": 22, "carbs": 10, "fat": 14, "tip": "Fertigsalat mit Mayo"},
+    {"name": "Thunfisch abgetropft auf Brot", "portion_g": 60, "calories": 70, "protein": 15.6, "carbs": 0, "fat": 0.6, "tip": "Perfekter Brot-Belag"},
+    {"name": "Thunfisch im Wrap", "portion_g": 100, "calories": 116, "protein": 26, "carbs": 0, "fat": 1, "tip": "Protein-Füllung"}
+  ],
+  "comparison": [
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Lachsfilet", "calories": 208, "emoji": "🐟"},
+    {"name": "Garnelen", "calories": 99, "emoji": "🦐"},
+    {"name": "Ei", "calories": 155, "emoji": "🥚"}
+  ],
+  "tips": [
+    {"title": "Im eigenen Saft kaufen", "text": "Thunfisch im eigenen Saft hat nur 116 kcal pro 100g vs. 220 kcal in Öl. Bei 150g spart das 156 kcal.", "icon": "💡"},
+    {"title": "Protein-Bombe", "text": "Eine Dose Thunfisch (im Saft) liefert 39g Protein bei nur 174 kcal – eines der besten Protein/Kalorien-Verhältnisse.", "icon": "💪"},
+    {"title": "Öl abtropfen lassen", "text": "Wenn nur Öl-Variante verfügbar: gut abtropfen lassen spart ca. 30-50 kcal pro Dose.", "icon": "🫗"},
+    {"title": "Max. 2 Dosen pro Woche", "text": "Wegen möglicher Quecksilber-Belastung empfiehlt die EFSA maximal 2-3 Dosen Thunfisch pro Woche.", "icon": "⚠️"},
+    {"title": "Meal-Prep-Favorit", "text": "Thunfisch-Dosen halten jahrelang, brauchen keine Kühlung und sind in 30 Sekunden ready – perfekt für schnelle Mahlzeiten.", "icon": "⏱️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Dose Thunfisch?", "answer": "Eine Dose Thunfisch im eigenen Saft (150g abgetropft) hat ca. 174 kcal. In Öl sind es ca. 330 kcal – fast doppelt so viel."},
+    {"question": "Ist Thunfisch aus der Dose gesund?", "answer": "Ja, Thunfisch liefert hochwertiges Protein, Omega-3, Vitamin D und Selen. Einschränkung: Wegen Quecksilber maximal 2-3 Dosen pro Woche."},
+    {"question": "Wie viel Protein hat eine Dose Thunfisch?", "answer": "Eine Dose (150g, im Saft) enthält ca. 39g Protein. Das ist mehr als ein Hähnchenschenkel und fast die Hälfte des Tagesbedarfs."},
+    {"question": "Was ist besser: Thunfisch in Öl oder im eigenen Saft?", "answer": "Im eigenen Saft hat nur halb so viele Kalorien bei fast gleichem Protein. Nur wenn du kalorientechnisch Spielraum hast, ist die Öl-Variante geschmacklich intensiver."},
+    {"question": "Kann man jeden Tag Thunfisch essen?", "answer": "Nicht empfohlen wegen Quecksilber-Belastung. 2-3 Dosen pro Woche gelten als sicher. An anderen Tagen auf Lachs, Sardinen oder Makrele ausweichen."},
+    {"question": "Wie lange hält Thunfisch aus der Dose?", "answer": "Ungeöffnet 3-5 Jahre (MHD beachten). Geöffnet im Kühlschrank 1-2 Tage, am besten in eine Glasdose umfüllen."}
+  ],
+  "related_foods": ["lachsfilet", "haehnchenbrust", "ei", "reis"]
+}

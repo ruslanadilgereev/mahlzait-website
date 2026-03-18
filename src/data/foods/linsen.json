@@ -1,0 +1,50 @@
+{
+  "slug": "linsen",
+  "name": "Linsen",
+  "emoji": "🫘",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Linsen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Linsen? Nährwerte für rote, braune, grüne & Beluga-Linsen. Kostenloser Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 116,
+    "protein_per_100g": 9,
+    "carbs_per_100g": 20,
+    "fat_per_100g": 0.4,
+    "fiber_per_100g": 8,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion (gekocht)"
+  },
+  "variants": [
+    {"name": "Rote Linsen (gekocht)", "portion_g": 200, "calories": 232, "protein": 18, "carbs": 40, "fat": 0.8, "tip": "Schnell gar, zerfallen leicht"},
+    {"name": "Braune Linsen (gekocht)", "portion_g": 200, "calories": 232, "protein": 18, "carbs": 40, "fat": 0.8, "tip": "Klassiker für Eintopf"},
+    {"name": "Grüne Linsen (gekocht)", "portion_g": 200, "calories": 240, "protein": 18.4, "carbs": 40, "fat": 1, "tip": "Bissfest, ideal für Salat"},
+    {"name": "Beluga-Linsen (gekocht)", "portion_g": 200, "calories": 240, "protein": 19, "carbs": 38, "fat": 1.2, "tip": "Edle schwarze Linsen"},
+    {"name": "Linsensuppe (klassisch)", "portion_g": 300, "calories": 270, "protein": 15, "carbs": 36, "fat": 6, "tip": "Mit Kartoffeln und Gemüse"},
+    {"name": "Linsen trocken (ungekocht)", "portion_g": 80, "calories": 270, "protein": 20, "carbs": 48, "fat": 1.2, "tip": "Ergibt ca. 200g gekocht"},
+    {"name": "Linsensalat", "portion_g": 250, "calories": 310, "protein": 18, "carbs": 38, "fat": 10, "tip": "Mit Essig-Öl-Dressing"}
+  ],
+  "comparison": [
+    {"name": "Kichererbsen", "calories": 164, "emoji": "🫘"},
+    {"name": "Kidneybohnen", "calories": 127, "emoji": "🫘"},
+    {"name": "Reis (gekocht)", "calories": 130, "emoji": "🍚"},
+    {"name": "Nudeln (gekocht)", "calories": 157, "emoji": "🍝"}
+  ],
+  "tips": [
+    {"title": "Protein + Ballaststoff-Bombe", "text": "Linsen liefern 9g Protein UND 8g Ballaststoffe pro 100g – eine der nährstoffreichsten Hülsenfrüchte.", "icon": "💪"},
+    {"title": "Rote Linsen für Anfänger", "text": "Rote Linsen sind in 15 Min. fertig, zerfallen und eignen sich perfekt für Suppen, Dals und Saucen.", "icon": "⏱️"},
+    {"title": "Mit Getreide kombinieren", "text": "Linsen + Reis = vollständiges Protein. Die fehlende Aminosäure Methionin wird durch Getreide ergänzt.", "icon": "🍚"},
+    {"title": "Trockengewicht beachten", "text": "80g trockene Linsen ergeben ca. 200g gekocht. Kalorien immer auf den gekochten Zustand beziehen.", "icon": "⚖️"},
+    {"title": "Einweichen verkürzt Kochzeit", "text": "Braune und grüne Linsen über Nacht einweichen halbiert die Kochzeit und verbessert die Verdaulichkeit.", "icon": "💧"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Linsen?", "answer": "Gekochte Linsen haben ca. 116 kcal pro 100g. Eine Portion (200g gekocht) hat ca. 232 kcal. Trockene Linsen haben ca. 338 kcal pro 100g."},
+    {"question": "Sind Linsen gut zum Abnehmen?", "answer": "Hervorragend. 116 kcal pro 100g, 9g Protein, 8g Ballaststoffe – Linsen sättigen extrem lange und haben wenig Fett. Ideal in jeder Diät."},
+    {"question": "Wie viel Protein haben Linsen?", "answer": "Gekochte Linsen haben 9g Protein pro 100g. Eine 200g-Portion liefert 18g pflanzliches Protein. Trocken sogar 25g pro 100g."},
+    {"question": "Welche Linsen sind am gesündesten?", "answer": "Alle Linsensorten haben ähnliche Nährwerte. Beluga- und grüne Linsen haben etwas mehr Ballaststoffe, rote Linsen sind am leichtesten verdaulich."},
+    {"question": "Muss man Linsen einweichen?", "answer": "Rote Linsen: nein (15 Min. Kochzeit). Braune/grüne Linsen: nicht nötig, aber empfohlen (verkürzt Kochzeit von 40 auf 20 Min.). Beluga: optional."},
+    {"question": "Können Linsen Blähungen verursachen?", "answer": "Ja, durch Oligosaccharide. Tipps: gut abspülen, langsam einführen, Kümmel oder Ingwer mitkochen. Der Körper gewöhnt sich bei regelmäßigem Verzehr."}
+  ],
+  "related_foods": ["kichererbsen", "eintopf-linsen", "reis", "tofu"]
+}

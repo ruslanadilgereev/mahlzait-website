@@ -1,0 +1,49 @@
+{
+  "slug": "hackfleisch-gemischt",
+  "name": "Hackfleisch gemischt",
+  "emoji": "🥩",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Hackfleisch gemischt Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat gemischtes Hackfleisch? Nährwerte für roh, gebraten & in Bolognese. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 212,
+    "protein_per_100g": 17,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 16,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Hackfleisch gemischt roh", "portion_g": 150, "calories": 318, "protein": 25.5, "carbs": 0, "fat": 24, "tip": "Halb Rind, halb Schwein"},
+    {"name": "Hackfleisch gebraten (abgetropft)", "portion_g": 125, "calories": 265, "protein": 25, "carbs": 0, "fat": 19, "tip": "Fett reduziert sich beim Braten"},
+    {"name": "Hackfleisch mager (5% Fett)", "portion_g": 150, "calories": 195, "protein": 30, "carbs": 0, "fat": 7.5, "tip": "Deutlich kalorienärmer"},
+    {"name": "Frikadelle (1 Stück)", "portion_g": 100, "calories": 232, "protein": 16, "carbs": 6, "fat": 16, "tip": "Mit Brötchen und Ei"},
+    {"name": "Bolognese-Portion (Hack)", "portion_g": 100, "calories": 212, "protein": 17, "carbs": 0, "fat": 16, "tip": "Typisch in der Sauce"},
+    {"name": "Hackbraten (Scheibe)", "portion_g": 120, "calories": 264, "protein": 19, "carbs": 5, "fat": 19, "tip": "Mit Füllung und Panade"}
+  ],
+  "comparison": [
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Hackfleisch Rind", "calories": 176, "emoji": "🥩"},
+    {"name": "Putenhackfleisch", "calories": 137, "emoji": "🍗"},
+    {"name": "Tofu", "calories": 144, "emoji": "🌱"}
+  ],
+  "tips": [
+    {"title": "Mageres Hack wählen", "text": "Mageres Hackfleisch (5% Fett) hat nur 130 kcal/100g statt 212 kcal. Auf 150g spart das 123 kcal.", "icon": "💡"},
+    {"title": "Fett abgießen", "text": "Nach dem Anbraten das ausgetretene Fett abgießen – spart 40-60 kcal pro Portion.", "icon": "🫗"},
+    {"title": "Hack strecken", "text": "Hackfleisch mit Kidneybohnen, Linsen oder Haferflocken mischen. Spart Kalorien und erhöht den Ballaststoff-Anteil.", "icon": "🫘"},
+    {"title": "Putenhack als Alternative", "text": "Putenhackfleisch hat nur 137 kcal pro 100g – 35% weniger als gemischtes Hack. Schmeckt in Bolognese kaum anders.", "icon": "🍗"},
+    {"title": "Portionsgröße beachten", "text": "Oft wird 200-250g Hack pro Person verwendet. 125-150g reichen bei guter Sättigungsbeilage völlig aus.", "icon": "⚖️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Hackfleisch gemischt?", "answer": "Gemischtes Hackfleisch hat ca. 212 kcal pro 100g (roh). Gebraten und abgetropft sinkt der Wert auf ca. 200 kcal/100g. Mageres Hack hat nur 130 kcal."},
+    {"question": "Hat Hackfleisch beim Braten weniger Kalorien?", "answer": "Ja, weil Fett austritt. 150g rohes Hack (318 kcal) ergeben ca. 125g gebratenes Hack (265 kcal) – wenn man das Fett abgießt."},
+    {"question": "Welches Hackfleisch hat die wenigsten Kalorien?", "answer": "Putenhackfleisch (137 kcal/100g), gefolgt von magerem Rinderhack (152 kcal). Gemischtes Hack (212 kcal) hat am meisten durch den Schweineanteil."},
+    {"question": "Wie viel Protein hat Hackfleisch?", "answer": "Gemischtes Hack hat 17g Protein pro 100g. Mageres Hack sogar 20g. Eine 150g-Portion liefert 25-30g Protein."},
+    {"question": "Ist Hackfleisch gesund?", "answer": "In Maßen ja – gute Quelle für Protein, Eisen, Zink und B12. Auf fettärmere Varianten setzen und mit Gemüse kombinieren."},
+    {"question": "Wie lange hält frisches Hackfleisch?", "answer": "Im Kühlschrank maximal 1 Tag (am Kauftag verarbeiten). Eingefroren 3-4 Monate. Hackfleisch verdirbt schneller als Stückfleisch wegen der großen Oberfläche."}
+  ],
+  "related_foods": ["spaghetti-bolognese", "frikadellen", "hackbraten", "reis"]
+}

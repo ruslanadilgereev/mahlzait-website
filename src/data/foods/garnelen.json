@@ -1,0 +1,50 @@
+{
+  "slug": "garnelen",
+  "name": "Garnelen",
+  "emoji": "🦐",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Garnelen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Garnelen? Nährwerte für gekocht, gebraten, Scampi & Tempura. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 99,
+    "protein_per_100g": 21,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 1.5,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Garnelen gekocht", "portion_g": 150, "calories": 149, "protein": 31.5, "carbs": 0, "fat": 2.3, "tip": "Kalorienärmste Zubereitung"},
+    {"name": "Garnelen gebraten", "portion_g": 150, "calories": 210, "protein": 30, "carbs": 0, "fat": 10.5, "tip": "Plus Bratfett beachten"},
+    {"name": "Garnelen gegrillt", "portion_g": 150, "calories": 165, "protein": 31.5, "carbs": 0, "fat": 4.5, "tip": "Wenig Fett, viel Geschmack"},
+    {"name": "Garnelen in Knoblauchbutter", "portion_g": 150, "calories": 300, "protein": 28, "carbs": 2, "fat": 21, "tip": "Buttersoße verdoppelt Kalorien"},
+    {"name": "Tempura-Garnelen", "portion_g": 150, "calories": 360, "protein": 18, "carbs": 30, "fat": 18, "tip": "Frittierter Teigmantel"},
+    {"name": "Garnelen-Cocktail", "portion_g": 200, "calories": 290, "protein": 22, "carbs": 12, "fat": 16, "tip": "Cocktailsauce treibt Kalorien hoch"},
+    {"name": "Scampi (Kaisergranat)", "portion_g": 150, "calories": 135, "protein": 27, "carbs": 0, "fat": 2.3, "tip": "Etwas fester und milder"}
+  ],
+  "comparison": [
+    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
+    {"name": "Lachsfilet", "calories": 208, "emoji": "🐟"},
+    {"name": "Thunfisch (Dose)", "calories": 116, "emoji": "🐟"},
+    {"name": "Tofu", "calories": 144, "emoji": "🌱"}
+  ],
+  "tips": [
+    {"title": "Protein-Star mit wenig Kalorien", "text": "Garnelen haben nur 99 kcal pro 100g bei 21g Protein – eines der besten Verhältnisse überhaupt.", "icon": "💪"},
+    {"title": "Gekocht statt frittiert", "text": "Gekochte Garnelen haben 99 kcal/100g, Tempura-Garnelen 240 kcal. Die Zubereitung macht den Unterschied.", "icon": "🍳"},
+    {"title": "Tiefkühl ist top", "text": "Tiefkühlgarnelen sind oft frischer als 'frische' Garnelen, da sie direkt nach dem Fang eingefroren werden.", "icon": "❄️"},
+    {"title": "Vorsicht bei Saucen", "text": "Garnelen selbst sind kalorienarm – aber Knoblauchbutter, Cocktailsauce und Tempura-Teig verdoppeln bis verdreifachen die Kalorien.", "icon": "⚠️"},
+    {"title": "Schnell zubereitet", "text": "Garnelen brauchen nur 2-3 Minuten in der Pfanne. Perfekt für schnelle, proteinreiche Mahlzeiten.", "icon": "⏱️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Garnelen?", "answer": "Garnelen haben ca. 99 kcal pro 100g (gekocht). Eine Portion (150g) hat nur 149 kcal. Gebraten mit Öl steigt der Wert auf ca. 210 kcal."},
+    {"question": "Sind Garnelen gut zum Abnehmen?", "answer": "Ja, hervorragend. Mit 99 kcal und 21g Protein pro 100g sind Garnelen eines der kalorienärmsten Proteinquellen. Wichtig: ohne fettreiche Saucen zubereiten."},
+    {"question": "Wie viel Protein haben Garnelen?", "answer": "Garnelen liefern 21g Protein pro 100g. Eine 150g-Portion hat 31,5g Protein – das ist mehr als ein Hähnchenschenkel."},
+    {"question": "Haben Garnelen Kohlenhydrate?", "answer": "Praktisch keine. Garnelen enthalten 0g Kohlenhydrate und sind damit perfekt für Low-Carb und Keto-Ernährung."},
+    {"question": "Wie viele Garnelen sind eine Portion?", "answer": "Eine Portion ist ca. 150g. Das sind je nach Größe 8-15 Garnelen (Riesengarnelen) oder 25-35 Stück (normale Garnelen)."},
+    {"question": "Ist Garnelen essen jeden Tag gesund?", "answer": "Grundsätzlich ja – Garnelen liefern Protein, Selen, Zink und Omega-3. Wegen möglicher Schadstoffbelastung bei Zuchtgarnelen auf Herkunft achten."}
+  ],
+  "related_foods": ["lachsfilet", "thunfisch-dose", "reis", "haehnchenbrust"]
+}

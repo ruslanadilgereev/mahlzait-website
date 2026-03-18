@@ -1,0 +1,49 @@
+{
+  "slug": "parmesan",
+  "name": "Parmesan",
+  "emoji": "🧀",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Parmesan Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Parmesan? Nährwerte für Parmigiano Reggiano, Grana Padano & gerieben. Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 392,
+    "protein_per_100g": 36,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 28,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Portion gerieben"
+  },
+  "variants": [
+    {"name": "Parmigiano Reggiano (Original)", "portion_g": 30, "calories": 118, "protein": 10.8, "carbs": 0, "fat": 8.4, "tip": "Der echte italienische Parmesan"},
+    {"name": "Grana Padano", "portion_g": 30, "calories": 114, "protein": 10.2, "carbs": 0, "fat": 8.1, "tip": "Günstigere Alternative, milder"},
+    {"name": "Parmesan gerieben (Tüte)", "portion_g": 20, "calories": 78, "protein": 7.2, "carbs": 0, "fat": 5.6, "tip": "Fertig gerieben, praktisch"},
+    {"name": "Parmesan Scheibe (Snack)", "portion_g": 25, "calories": 98, "protein": 9, "carbs": 0, "fat": 7, "tip": "Low-Carb Snack"},
+    {"name": "Parmesan auf Pasta", "portion_g": 15, "calories": 59, "protein": 5.4, "carbs": 0, "fat": 4.2, "tip": "Typische Pasta-Portion"},
+    {"name": "Parmesan im Risotto", "portion_g": 40, "calories": 157, "protein": 14.4, "carbs": 0, "fat": 11.2, "tip": "Großzügige Risotto-Portion"}
+  ],
+  "comparison": [
+    {"name": "Gouda", "calories": 356, "emoji": "🧀"},
+    {"name": "Mozzarella", "calories": 263, "emoji": "🧀"},
+    {"name": "Emmentaler", "calories": 382, "emoji": "🧀"},
+    {"name": "Cheddar", "calories": 403, "emoji": "🧀"}
+  ],
+  "tips": [
+    {"title": "Wenig reicht weit", "text": "Parmesan hat extrem intensiven Geschmack – 15g auf Pasta reichen völlig und haben nur 59 kcal.", "icon": "👌"},
+    {"title": "Am Stück kaufen", "text": "Frisch geriebener Parmesan schmeckt intensiver als fertig geriebener – du brauchst weniger für den gleichen Effekt.", "icon": "🧀"},
+    {"title": "Protein-Champion", "text": "Mit 36g Protein pro 100g ist Parmesan einer der proteinreichsten Käsesorten überhaupt.", "icon": "💪"},
+    {"title": "Low-Carb perfekt", "text": "0g Kohlenhydrate machen Parmesan zum idealen Käse für Low-Carb und Keto-Ernährung.", "icon": "📉"},
+    {"title": "Rinde mitverwenden", "text": "Die Parmesanrinde in Suppen und Eintöpfe geben – liefert Geschmack und Nährstoffe ohne Verschwendung.", "icon": "♻️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Parmesan?", "answer": "Parmesan hat ca. 392 kcal pro 100g. Eine typische Portion gerieben (30g) hat aber nur 118 kcal, da man wenig benötigt."},
+    {"question": "Ist Parmesan kalorienreich?", "answer": "Pro 100g ja (392 kcal), aber da Parmesan sehr intensiv schmeckt, isst man typisch nur 15-30g. Das sind 59-118 kcal – im Rahmen."},
+    {"question": "Wie viel Protein hat Parmesan?", "answer": "Parmesan enthält 36g Protein pro 100g – das ist mehr als Hähnchenbrust (23g). Selbst 30g Parmesan liefern schon 10,8g Protein."},
+    {"question": "Was ist besser: Parmesan oder Grana Padano?", "answer": "Nährwertlich sind sie fast identisch. Grana Padano ist etwas milder und günstiger. Parmesan (Parmigiano Reggiano) ist kräftiger im Geschmack."},
+    {"question": "Ist Parmesan laktosefrei?", "answer": "Praktisch ja. Durch die lange Reifung (12-36 Monate) wird die Laktose fast vollständig abgebaut. Parmesan enthält unter 0,1g Laktose pro 100g."},
+    {"question": "Kann man Parmesan beim Abnehmen essen?", "answer": "Ja, in normalen Portionen. 15-30g Parmesan (59-118 kcal) liefern viel Geschmack, Protein und Calcium. Einfach nicht löffelweise essen."}
+  ],
+  "related_foods": ["mozzarella", "kaese-gouda", "spaghetti-bolognese", "spaghetti-carbonara"]
+}

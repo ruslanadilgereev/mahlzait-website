@@ -1,0 +1,50 @@
+{
+  "slug": "milch",
+  "name": "Milch",
+  "emoji": "🥛",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Milch Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Milch? Nährwerte für Vollmilch, fettarme Milch & Pflanzenmilch. Kostenloser Rechner mit Portionsgrößen."
+  },
+  "overview": {
+    "calories_per_100g": 64,
+    "protein_per_100g": 3.3,
+    "carbs_per_100g": 4.7,
+    "fat_per_100g": 3.5,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Glas"
+  },
+  "variants": [
+    {"name": "Vollmilch 3,5%", "portion_g": 250, "calories": 160, "protein": 8.3, "carbs": 11.8, "fat": 8.8, "tip": "Klassiker mit vollem Geschmack"},
+    {"name": "Fettarme Milch 1,5%", "portion_g": 250, "calories": 118, "protein": 8.5, "carbs": 12, "fat": 3.8, "tip": "Guter Kompromiss"},
+    {"name": "Magermilch 0,3%", "portion_g": 250, "calories": 88, "protein": 8.5, "carbs": 12.3, "fat": 0.8, "tip": "Kalorienärmste Variante"},
+    {"name": "Hafermilch", "portion_g": 250, "calories": 115, "protein": 1, "carbs": 16, "fat": 3.8, "tip": "Beliebteste Pflanzenmilch"},
+    {"name": "Mandelmilch ungesüßt", "portion_g": 250, "calories": 33, "protein": 1.3, "carbs": 0.8, "fat": 2.8, "tip": "Nur 13 kcal pro 100ml"},
+    {"name": "Sojamilch", "portion_g": 250, "calories": 108, "protein": 8.3, "carbs": 5, "fat": 5, "tip": "Proteinreich wie Kuhmilch"},
+    {"name": "Laktosefreie Milch 1,5%", "portion_g": 250, "calories": 118, "protein": 8.5, "carbs": 12, "fat": 3.8, "tip": "Gleiche Nährwerte, besser verträglich"}
+  ],
+  "comparison": [
+    {"name": "Orangensaft", "calories": 45, "emoji": "🍊"},
+    {"name": "Cola", "calories": 42, "emoji": "🥤"},
+    {"name": "Apfelsaft", "calories": 46, "emoji": "🍎"},
+    {"name": "Kakao", "calories": 78, "emoji": "☕"}
+  ],
+  "tips": [
+    {"title": "1,5% als Allrounder", "text": "Fettarme Milch spart 42 kcal pro Glas gegenüber Vollmilch – bei nahezu gleichem Protein- und Calciumgehalt.", "icon": "⚖️"},
+    {"title": "Mandelmilch für Kalorien-Sparer", "text": "Ungesüßte Mandelmilch hat nur 13 kcal pro 100ml – perfekt für Kaffee und Müsli, wenn Kalorien zählen.", "icon": "🌰"},
+    {"title": "Calcium im Blick behalten", "text": "Bei Pflanzenmilch auf Calcium-Anreicherung achten. Kuhmilch liefert 120mg Calcium pro 100ml von Natur aus.", "icon": "🦴"},
+    {"title": "Vor dem Sport ein Glas", "text": "Ein Glas Milch (250ml) liefert 8g Protein und schnelle Kohlenhydrate – guter Pre-Workout-Snack.", "icon": "🏋️"},
+    {"title": "Aufschäumen spart nichts", "text": "Aufgeschäumte Milch hat exakt gleich viele Kalorien wie normale – nur das Volumen ändert sich.", "icon": "☕"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat ein Glas Milch?", "answer": "Ein Glas Vollmilch (250ml) hat ca. 160 kcal, fettarme Milch (1,5%) ca. 118 kcal und Magermilch ca. 88 kcal."},
+    {"question": "Welche Milch hat die wenigsten Kalorien?", "answer": "Ungesüßte Mandelmilch mit nur 13 kcal pro 100ml. Bei Kuhmilch ist Magermilch (0,3% Fett) mit 35 kcal pro 100ml am kalorienärmsten."},
+    {"question": "Ist Milch gut zum Abnehmen?", "answer": "Fettarme Milch kann beim Abnehmen helfen: 8g Protein pro Glas sättigen gut, und Calcium unterstützt den Fettstoffwechsel. Auf die Menge achten."},
+    {"question": "Hat Hafermilch weniger Kalorien als Kuhmilch?", "answer": "Hafermilch (46 kcal/100ml) hat weniger als Vollmilch (64 kcal), aber mehr als fettarme Milch (47 kcal). Dafür hat sie deutlich weniger Protein."},
+    {"question": "Wie viel Protein hat Milch?", "answer": "Kuhmilch enthält ca. 3,3g Protein pro 100ml bzw. 8,3g pro Glas (250ml). Sojamilch ist ähnlich proteinreich, andere Pflanzenmilch-Sorten deutlich proteinarmer."},
+    {"question": "Macht Milch dick?", "answer": "Milch allein macht nicht dick – entscheidend ist die Gesamtkalorienbilanz. Ein Glas Vollmilch (160 kcal) ist ein moderater Snack. Problematisch wird es bei 3-4 Gläsern täglich."}
+  ],
+  "related_foods": ["haferflocken", "muesli", "joghurt", "quark"]
+}
