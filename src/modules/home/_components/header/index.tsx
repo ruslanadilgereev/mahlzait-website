@@ -44,11 +44,11 @@ function Header() {
                     transition={{ duration: 0.4, ease: "easeOut" }}
                     className="flex items-center self-center h-8 md:h-12"
                   >
-                    <img src="/misc/wreath-left-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="" width={41} height={80} loading="lazy" />
+                    <img src="/misc/wreath-left-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="" role="presentation" width={41} height={80} loading="lazy" />
                     <p className="text-xs text-gray-500 whitespace-pre text-center">
                       {reward}
                     </p>
-                    <img src="/misc/wreath-right-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="" width={41} height={80} loading="lazy" />
+                    <img src="/misc/wreath-right-small.webp" className="h-full w-auto" style={{ aspectRatio: '41/80' }} alt="" role="presentation" width={41} height={80} loading="lazy" />
                   </motion.div>
                 ))}
               </div>
