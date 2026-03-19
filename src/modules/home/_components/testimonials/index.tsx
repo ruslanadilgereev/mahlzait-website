@@ -28,6 +28,10 @@ function Testimonials() {
         >
           {testimonials.subtitle}
         </motion.p>
+        <p className="text-sm text-base-content/60 max-w-xl mt-2">
+          Mahlzait-Nutzer berichten von durchschnittlich 5–8&nbsp;kg Gewichtsverlust in 8–12 Wochen.
+          Ergebnisse sind individuell und können variieren. Namen aus Datenschutzgründen anonymisiert.
+        </p>
       </div>
       <motion.div
         initial={{ scale: 0.95, opacity: 0 }}

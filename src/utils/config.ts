@@ -4,7 +4,7 @@ const templateConfig: TemplateConfig = {
   name: "Mahlzait",
   seo: {
     title: "Mahlzait – Kalorienzähler & Food-Tracker mit KI",
-    description: "Kalorienzähler mit KI zum Abnehmen: Mahlzeiten per Foto, Barcode oder Text tracken. Ernährungstagebuch, Gewicht verfolgen. Kostenlos!",
+    description: "Kalorienzähler mit KI zum Abnehmen: Mahlzeiten per Foto, Barcode oder Text tracken. Ernährungstagebuch, Gewicht verfolgen, Rezepte importieren. Jetzt kostenlos starten!",
   },
   // Draws grid behind main container
   backgroundGrid: false,
@@ -261,7 +261,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
           answer:
-            "Der Barcode-Scanner liest EAN/UPC-Codes und gleicht sie mit der Open Food Facts Datenbank ab (10 Mio+ Produkte). Kalorien und Makronährstoffe (Protein, Kohlenhydrate, Fett) werden automatisch übernommen. Nicht enthaltene Produkte können manuell ergänzt werden.",
+            "Der Barcode-Scanner liest EAN/UPC-Codes und gleicht sie mit der Open Food Facts Datenbank ab (10 Mio+ Produkte, Quelle: openfoodfacts.org). Kalorien und Makronährstoffe (Protein, Kohlenhydrate, Fett) werden automatisch übernommen. Nicht enthaltene Produkte können manuell ergänzt werden.",
         },
         {
           question: "Kann ich eigene Rezepte erstellen und speichern?",
