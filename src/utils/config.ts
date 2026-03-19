@@ -4,7 +4,7 @@ const templateConfig: TemplateConfig = {
   name: "Mahlzait",
   seo: {
     title: "Mahlzait – Kalorienzähler & Food-Tracker mit KI",
-    description: "Kalorienzähler mit KI zum Abnehmen: Mahlzeiten per Foto, Barcode oder Text tracken. Ernährungstagebuch, Gewicht verfolgen, Rezepte importieren. Jetzt kostenlos starten!",
+    description: "Kalorienzähler mit KI zum Abnehmen: Mahlzeiten per Foto, Barcode oder Text tracken. Ernährungstagebuch, Makro-Tracking, Gewichtsverlauf. Jetzt herunterladen!",
   },
   // Draws grid behind main container
   backgroundGrid: false,
@@ -78,7 +78,7 @@ const templateConfig: TemplateConfig = {
   home: {
     seo: {
       title: "Mahlzait – Kalorienzähler mit KI | Tracke Mahlzeiten in Sekunden",
-      description: "Mahlzait ist ein kostenloser Kalorienzähler mit KI-Erkennung für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. Über 10 Mio Lebensmittel, Ernährungstagebuch und Gewichtsverlauf. Entwickelt in Berlin.",
+      description: "Mahlzait ist ein Kalorienzähler mit KI-Erkennung für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. Über 10 Mio Lebensmittel, Ernährungstagebuch und Gewichtsverlauf. Entwickelt in Berlin.",
     },
     testimonials: {
       id: "testimonials",
@@ -246,7 +246,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Was ist Mahlzait?",
           answer:
-            "Mahlzait ist ein kostenloser Kalorienzähler mit KI für iOS und Android. Die App erkennt Mahlzeiten per Foto in ~2 Sekunden, bietet Barcode-Scanner, 10 Mio+ Lebensmittel-Datenbank, Makro-Tracking, Gewichtsverlauf und Apple Health / Google Fit Synchronisation. Entwickelt in Berlin, DSGVO-konform.",
+            "Mahlzait ist ein Kalorienzähler mit KI für iOS und Android. Die App erkennt Mahlzeiten per Foto in ~2 Sekunden, bietet Barcode-Scanner, 10 Mio+ Lebensmittel-Datenbank, Makro-Tracking, Gewichtsverlauf und Apple Health / Google Fit Synchronisation. Entwickelt in Berlin, DSGVO-konform.",
         },
         {
           question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
@@ -281,7 +281,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie unterscheidet sich Mahlzait von MyFitnessPal, YAZIO und Lifesum?",
           answer:
-            "Mahlzait bietet KI-Foto-Logging, KI-Vorschläge und YouTube-Rezept-Import kostenlos – Features, die bei Mitbewerbern oft nur im Abo enthalten sind. Die Gratis-Version ist werbefrei. Pro kostet 29,99 €/Jahr vs. 49,99 € (MyFitnessPal) bzw. 44,99 € (YAZIO/Lifesum).",
+            "Mahlzait bietet KI-Foto-Logging, KI-Vorschläge und YouTube-Rezept-Import — Features, die bei Mitbewerbern oft deutlich teurer sind. Die Basis-Version ist werbefrei und enthält Barcode-Scanner, Lebensmittelsuche und manuelle Eingabe. Pro kostet 29,99 €/Jahr vs. 49,99 € (MyFitnessPal) bzw. 44,99 € (YAZIO/Lifesum).",
         },
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
@@ -293,7 +293,7 @@ const templateConfig: TemplateConfig = {
     header: {
       headline: "Mahlzait – Kalorienzähler mit KI",
       subtitle:
-        "Kostenloser Kalorienzähler für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. 10 Mio+ Lebensmittel, KI-Erkennung in ~2 Sekunden, Makro-Tracking und Gewichtsverlauf. Entwickelt in Berlin, DSGVO-konform.",
+        "Kalorienzähler mit KI für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. 10 Mio+ Lebensmittel, KI-Erkennung in ~2 Sekunden, Makro-Tracking und Gewichtsverlauf. Entwickelt in Berlin, DSGVO-konform.",
       screenshots: [
         "/screenshots/1.webp",
         "/screenshots/2.webp",

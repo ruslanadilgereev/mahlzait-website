@@ -39,7 +39,7 @@ function ComparisonTable() {
             Stand: März 2026. <a href="/vergleich" className="link link-primary">Ausführlicher Vergleich →</a>
           </p>
           <p className="text-base-content/80 max-w-2xl mx-auto text-sm leading-relaxed">
-            Mahlzait ist die einzige kostenlose Kalorienzähler-App mit KI-Foto-Erkennung und YouTube-Rezept-Import.
+            Mahlzait ist die einzige Kalorienzähler-App mit KI-Foto-Erkennung und YouTube-Rezept-Import zum fairen Preis.
             Im Vergleich zu MyFitnessPal (14 Mio. Lebensmittel) bietet Mahlzait 10 Mio. Lebensmittel, ist aber werbefrei in der Gratis-Version.
             YAZIO und Lifesum bieten keine KI-Mahlzeit-Vorschläge — Mahlzait schon. Pro kostet 29,99&nbsp;€/Jahr vs. 49,99&nbsp;€ (MyFitnessPal) bzw. 44,99&nbsp;€ (YAZIO/Lifesum).
           </p>
