@@ -1,0 +1,52 @@
+{
+  "slug": "gurke",
+  "name": "Gurke",
+  "emoji": "🥒",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Gurke Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Gurke? Nährwerte pro 100g & Stück. Das kalorienärmste Gemüse, Diät-Tipps & Rezeptideen.",
+    "keywords": ["gurke kalorien", "kalorien gurke", "gurke nährwerte", "wie viele kalorien hat eine gurke", "salatgurke kalorien", "gurke kohlenhydrate", "gurke abnehmen", "gurke wassergehalt"]
+  },
+  "overview": {
+    "calories_per_100g": 12,
+    "protein_per_100g": 0.7,
+    "carbs_per_100g": 2.2,
+    "fat_per_100g": 0.1,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 300,
+    "typical_portion_name": "½ Gurke"
+  },
+  "variants": [
+    { "name": "Salatgurke ½ (300g)", "portion_g": 300, "calories": 36, "protein": 2, "carbs": 7, "fat": 0, "tip": "Kalorienfreier Snack" },
+    { "name": "Salatgurke ganz (500g)", "portion_g": 500, "calories": 60, "protein": 4, "carbs": 11, "fat": 1 },
+    { "name": "Gurke 100g Scheiben", "portion_g": 100, "calories": 12, "protein": 1, "carbs": 2, "fat": 0 },
+    { "name": "Gewürzgurken (3 Stück, 90g)", "portion_g": 90, "calories": 14, "protein": 1, "carbs": 2, "fat": 0 },
+    { "name": "Schmorgurke (200g)", "portion_g": 200, "calories": 26, "protein": 1, "carbs": 5, "fat": 0 },
+    { "name": "Gurkensalat (200g)", "portion_g": 200, "calories": 65, "protein": 1, "carbs": 5, "fat": 4 },
+    { "name": "Tzatziki (50g)", "portion_g": 50, "calories": 48, "protein": 2, "carbs": 2, "fat": 3 },
+    { "name": "Gurken-Smoothie (250ml)", "portion_g": 250, "calories": 40, "protein": 1, "carbs": 8, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Tomate", "calories": 18, "emoji": "🍅" },
+    { "name": "Eisbergsalat", "calories": 14, "emoji": "🥬" },
+    { "name": "Paprika", "calories": 26, "emoji": "🫑" },
+    { "name": "Karotte", "calories": 41, "emoji": "🥕" }
+  ],
+  "tips": [
+    { "title": "Das kalorienärmste Gemüse", "text": "Mit nur 12 kcal/100g und 96% Wasser ist die Gurke eines der kalorienärmsten Lebensmittel überhaupt. Essen Sie so viel Sie wollen!", "icon": "🏆" },
+    { "title": "Natürlicher Durstlöscher", "text": "Gurke ist fast nur Wasser. An heißen Tagen ein Stück Gurke statt zuckerhaltige Getränke – erfrischt und hydriert.", "icon": "💧" },
+    { "title": "Mit Schale essen", "text": "Die Schale enthält Vitamin K und Ballaststoffe. Bei Bio-Gurken mitessen, konventionelle vorher gut waschen.", "icon": "🌿" },
+    { "title": "Gegen Augenringe", "text": "Kühle Gurkenscheiben auf die Augen: Nicht nur ein Schönheits-Mythos – die Kühle reduziert Schwellungen und das Antioxidans Fisetin wirkt entzündungshemmend.", "icon": "👁️" },
+    { "title": "Meal Prep: Gurke erst kurz vorher schneiden", "text": "Geschnittene Gurke wird schnell wässrig. Für Lunchboxen: am Morgen schneiden oder ganze Stücke einpacken.", "icon": "📦" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Gurke?", "answer": "Eine halbe Salatgurke (300g) hat nur 36 kcal. Eine ganze Gurke (500g) hat 60 kcal – weniger als ein Apfel! Pro 100g sind es 12 kcal." },
+    { "question": "Ist Gurke gut zum Abnehmen?", "answer": "Gurke ist DAS Abnehm-Lebensmittel: 12 kcal/100g, 96% Wasser, kaum Kohlenhydrate. Man kann ganze Gurken essen und nimmt fast keine Kalorien auf." },
+    { "question": "Hat Gurke überhaupt Nährstoffe?", "answer": "Ja! Gurken liefern Vitamin K (16% Tagesbedarf/100g), Kalium, Magnesium und Antioxidantien. Der hohe Wassergehalt verdünnt nur die Nährstoffdichte pro 100g." },
+    { "question": "Wie viele Kohlenhydrate hat eine Gurke?", "answer": "Nur 2,2g Kohlenhydrate pro 100g. Gurke ist eines der besten Low-Carb und Keto-Gemüse überhaupt." },
+    { "question": "Sind Gewürzgurken gesund?", "answer": "Kalorientechnisch ja (16 kcal/100g). Aber Vorsicht: Gewürzgurken enthalten viel Natrium durch die Salzlake. Bei Bluthochdruck die Menge begrenzen." },
+    { "question": "Ist die Schale der Gurke gesund?", "answer": "Ja! Die Schale enthält die meisten Ballaststoffe und Vitamin K. Bio-Gurken unbedingt mit Schale essen. Konventionelle gut waschen oder schälen." }
+  ],
+  "related_foods": ["tomate", "paprika", "spinat", "karotten"]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "spinat",
+  "name": "Spinat",
+  "emoji": "🥬",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Spinat Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Spinat? Nährwerte pro 100g & Portion. Eisen-Mythos, Vitamine & warum Spinat ein Superfood ist.",
+    "keywords": ["spinat kalorien", "kalorien spinat", "spinat nährwerte", "spinat eisen", "spinat protein", "spinat kohlenhydrate", "blattspinat kalorien", "spinat abnehmen"]
+  },
+  "overview": {
+    "calories_per_100g": 23,
+    "protein_per_100g": 2.9,
+    "carbs_per_100g": 3.6,
+    "fat_per_100g": 0.4,
+    "fiber_per_100g": 2.2,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion (gekocht)"
+  },
+  "variants": [
+    { "name": "Blattspinat roh (100g)", "portion_g": 100, "calories": 23, "protein": 3, "carbs": 4, "fat": 0, "tip": "Ideal für Salate" },
+    { "name": "Spinat gedünstet (200g)", "portion_g": 200, "calories": 46, "protein": 6, "carbs": 7, "fat": 1 },
+    { "name": "Tiefkühl-Blattspinat (150g)", "portion_g": 150, "calories": 32, "protein": 4, "carbs": 4, "fat": 1 },
+    { "name": "Rahmspinat (200g)", "portion_g": 200, "calories": 120, "protein": 6, "carbs": 8, "fat": 8 },
+    { "name": "Spinat-Smoothie (250ml)", "portion_g": 250, "calories": 75, "protein": 3, "carbs": 14, "fat": 1 },
+    { "name": "Baby-Spinat Salat (150g)", "portion_g": 150, "calories": 35, "protein": 4, "carbs": 5, "fat": 1 },
+    { "name": "Spinat mit Spiegelei (250g)", "portion_g": 250, "calories": 180, "protein": 14, "carbs": 5, "fat": 12 },
+    { "name": "Spinat-Quiche (150g)", "portion_g": 150, "calories": 270, "protein": 12, "carbs": 20, "fat": 16 }
+  ],
+  "comparison": [
+    { "name": "Brokkoli", "calories": 34, "emoji": "🥦" },
+    { "name": "Grünkohl", "calories": 49, "emoji": "🥬" },
+    { "name": "Mangold", "calories": 19, "emoji": "🥬" },
+    { "name": "Rucola", "calories": 25, "emoji": "🥗" }
+  ],
+  "tips": [
+    { "title": "Eisen-Mythos aufgeklärt", "text": "Spinat hat 2,7mg Eisen/100g – gut, aber kein Rekord. Der Mythos entstand durch einen Kommafehler. Vitamin C dazu essen verdoppelt die Eisenaufnahme.", "icon": "🔬" },
+    { "title": "Baby-Spinat roh essen", "text": "Baby-Spinat ist zarter und hat weniger Oxalsäure als großer Spinat. Perfekt für Salate und Smoothies ohne bitteren Geschmack.", "icon": "🥗" },
+    { "title": "Grüne Smoothie-Basis", "text": "Spinat ist geschmacksneutral im Smoothie. 1 Handvoll + Banane + Apfelsaft = grüner Smoothie voller Nährstoffe ohne Gemüse-Geschmack.", "icon": "🥤" },
+    { "title": "Nicht aufwärmen? Doch!", "text": "Der Mythos, Spinat dürfe man nicht aufwärmen, ist überholt. Schnell abkühlen und im Kühlschrank lagern – dann ist Aufwärmen sicher.", "icon": "♻️" },
+    { "title": "Proteinreich für Gemüse", "text": "Mit 2,9g Protein pro 100g ist Spinat eines der proteinreichsten Gemüse. 200g gekochter Spinat hat 6g Protein bei nur 46 kcal.", "icon": "💪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Spinat?", "answer": "100g roher Spinat haben nur 23 kcal. Eine Portion gekochter Spinat (200g) hat 46 kcal. Spinat ist eines der kalorienärmsten Lebensmittel." },
+    { "question": "Hat Spinat wirklich so viel Eisen?", "answer": "Spinat hat 2,7mg Eisen pro 100g – gut, aber nicht außergewöhnlich. Der Mythos des Eisen-Rekords beruht auf einem historischen Rechenfehler. Trotzdem: mit Vitamin C kombinieren erhöht die Aufnahme." },
+    { "question": "Ist Spinat gut zum Abnehmen?", "answer": "Perfekt! Mit nur 23 kcal/100g, viel Protein (2,9g) und Ballaststoffen (2,2g) ist Spinat ideal zum Abnehmen. Thylakoide in Spinat reduzieren laut Studien sogar Heißhunger." },
+    { "question": "Roh oder gekocht – was ist gesünder?", "answer": "Beides hat Vorteile: Roh = mehr Vitamin C und Folsäure. Gekocht = mehr Beta-Carotin und weniger Oxalsäure. Am besten abwechseln." },
+    { "question": "Wie viel Protein hat Spinat?", "answer": "Spinat hat 2,9g Protein pro 100g – für Gemüse sehr viel. 200g gekochter Spinat liefern 6g Protein bei nur 46 Kalorien." },
+    { "question": "Darf man Spinat aufwärmen?", "answer": "Ja! Der Mythos ist veraltet. Wichtig: Spinat nach dem Kochen schnell abkühlen und im Kühlschrank lagern. Innerhalb von 24h aufwärmen. Für Babys unter 1 Jahr: keinen aufgewärmten Spinat." }
+  ],
+  "related_foods": ["brokkoli", "ei", "tomate", "karotten"]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "brokkoli",
+  "name": "Brokkoli",
+  "emoji": "🥦",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Brokkoli Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Brokkoli? Nährwerte pro 100g & Portion. Protein, Vitamine & warum Brokkoli das gesündeste Gemüse ist.",
+    "keywords": ["brokkoli kalorien", "kalorien brokkoli", "brokkoli nährwerte", "brokkoli protein", "brokkoli kohlenhydrate", "brokkoli gesund", "brokkoli vitamine", "brokkoli abnehmen"]
+  },
+  "overview": {
+    "calories_per_100g": 34,
+    "protein_per_100g": 2.8,
+    "carbs_per_100g": 6.6,
+    "fat_per_100g": 0.4,
+    "fiber_per_100g": 2.6,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion (gekocht)"
+  },
+  "variants": [
+    { "name": "Brokkoli gedämpft (200g)", "portion_g": 200, "calories": 68, "protein": 6, "carbs": 13, "fat": 1, "tip": "Beste Zubereitungsart" },
+    { "name": "Brokkoli roh (150g)", "portion_g": 150, "calories": 51, "protein": 4, "carbs": 10, "fat": 1 },
+    { "name": "Brokkoli gekocht (200g)", "portion_g": 200, "calories": 70, "protein": 6, "carbs": 14, "fat": 1 },
+    { "name": "Tiefkühl-Brokkoli (200g)", "portion_g": 200, "calories": 68, "protein": 6, "carbs": 12, "fat": 1 },
+    { "name": "Brokkoli überbacken (200g)", "portion_g": 200, "calories": 180, "protein": 10, "carbs": 14, "fat": 10 },
+    { "name": "Brokkoli-Suppe (300ml)", "portion_g": 300, "calories": 120, "protein": 6, "carbs": 12, "fat": 5 },
+    { "name": "Brokkoli im Wok (200g)", "portion_g": 200, "calories": 100, "protein": 6, "carbs": 14, "fat": 4 },
+    { "name": "Brokkolireis (150g)", "portion_g": 150, "calories": 40, "protein": 4, "carbs": 6, "fat": 1 }
+  ],
+  "comparison": [
+    { "name": "Blumenkohl", "calories": 25, "emoji": "🥬" },
+    { "name": "Spinat", "calories": 23, "emoji": "🥬" },
+    { "name": "Grüne Bohnen", "calories": 31, "emoji": "🫘" },
+    { "name": "Rosenkohl", "calories": 43, "emoji": "🥬" }
+  ],
+  "tips": [
+    { "title": "Fitness-Gemüse Nr. 1", "text": "Brokkoli hat mit 2,8g/100g den höchsten Proteingehalt aller gängigen Gemüsesorten. Bei Bodybuildern beliebt – zu Recht!", "icon": "💪" },
+    { "title": "Dämpfen statt Kochen", "text": "Beim Kochen gehen bis zu 50% der Vitamine ins Wasser. Brokkoli 5-7 Min dämpfen erhält den Großteil der Nährstoffe.", "icon": "♨️" },
+    { "title": "Brokkolireis als Low-Carb-Ersatz", "text": "Brokkoli fein häckseln oder reiben = 'Brokkolireis' mit nur 27 kcal/100g statt 130 kcal bei echtem Reis. Spart 80% Kalorien!", "icon": "🍚" },
+    { "title": "Stiel mitessen!", "text": "Der Stiel hat genauso viele Nährstoffe wie die Röschen. Schälen und in Scheiben schneiden – schmeckt wie Kohlrabi.", "icon": "🌿" },
+    { "title": "Sulforaphan: Anti-Krebs-Stoff", "text": "Brokkoli enthält Sulforaphan, das in Studien krebshemmende Wirkung zeigte. Am meisten in Brokkoli-Sprossen (10-100x mehr als im Gemüse).", "icon": "🔬" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Brokkoli?", "answer": "100g Brokkoli haben nur 34 kcal. Eine Portion (200g gekocht) hat 68 kcal – weniger als eine Scheibe Brot." },
+    { "question": "Warum ist Brokkoli so gesund?", "answer": "Brokkoli liefert Vitamin C (89mg/100g), Vitamin K, Folsäure, Kalium und Sulforaphan (krebshemmend). Plus: Viel Protein und Ballaststoffe bei minimalen Kalorien." },
+    { "question": "Ist Brokkoli gut zum Abnehmen?", "answer": "Optimal! Mit 34 kcal/100g, 2,8g Protein und 2,6g Ballaststoffen sättigt Brokkoli bei minimaler Kalorienzufuhr. Brokkolireis spart zusätzlich Kohlenhydrate." },
+    { "question": "Wie viel Protein hat Brokkoli?", "answer": "Brokkoli hat 2,8g Protein pro 100g – für Gemüse sehr viel. Eine 200g-Portion liefert 6g Protein, fast so viel wie ein halbes Ei." },
+    { "question": "Kann man Brokkoli roh essen?", "answer": "Ja! Roher Brokkoli hat sogar mehr Vitamin C und Sulforaphan. In kleine Röschen teilen und als Snack mit Dip essen. Der Geschmack ist intensiver als gekocht." },
+    { "question": "Frisch oder Tiefkühl – was ist besser?", "answer": "Fast gleichwertig! Tiefkühl-Brokkoli wird direkt nach der Ernte eingefroren und behält die Nährstoffe. Oft sogar besser als 4-5 Tage alter frischer Brokkoli." }
+  ],
+  "related_foods": ["spinat", "karotten", "haehnchenbrust", "reis"]
+}

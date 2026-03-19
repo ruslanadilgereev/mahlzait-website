@@ -1,0 +1,52 @@
+{
+  "slug": "tomate",
+  "name": "Tomate",
+  "emoji": "🍅",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Tomate Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Tomate? Nährwerte pro 100g & Stück. Sorten im Vergleich, Lycopin & warum Tomaten ideal zum Abnehmen sind.",
+    "keywords": ["tomate kalorien", "kalorien tomate", "tomaten nährwerte", "wie viele kalorien hat eine tomate", "tomate kohlenhydrate", "cherry tomaten kalorien", "tomate abnehmen", "tomate lycopin"]
+  },
+  "overview": {
+    "calories_per_100g": 18,
+    "protein_per_100g": 0.9,
+    "carbs_per_100g": 3.9,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 1.2,
+    "typical_portion_g": 120,
+    "typical_portion_name": "1 Tomate (mittel)"
+  },
+  "variants": [
+    { "name": "Tomate mittel (120g)", "portion_g": 120, "calories": 22, "protein": 1, "carbs": 5, "fat": 0, "tip": "Kalorienärmste Beilage" },
+    { "name": "Cherry-Tomaten (10 Stück, 150g)", "portion_g": 150, "calories": 27, "protein": 1, "carbs": 6, "fat": 0 },
+    { "name": "Fleischtomate (250g)", "portion_g": 250, "calories": 45, "protein": 2, "carbs": 10, "fat": 1 },
+    { "name": "Getrocknete Tomaten (30g)", "portion_g": 30, "calories": 76, "protein": 4, "carbs": 12, "fat": 2 },
+    { "name": "Tomatensoße (100g)", "portion_g": 100, "calories": 32, "protein": 1, "carbs": 6, "fat": 0 },
+    { "name": "Tomatensaft (200ml)", "portion_g": 200, "calories": 34, "protein": 2, "carbs": 6, "fat": 0 },
+    { "name": "Tomaten-Mozzarella (200g)", "portion_g": 200, "calories": 200, "protein": 12, "carbs": 4, "fat": 15 },
+    { "name": "Dosentomaten (240g)", "portion_g": 240, "calories": 48, "protein": 2, "carbs": 10, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Gurke", "calories": 12, "emoji": "🥒" },
+    { "name": "Paprika", "calories": 26, "emoji": "🫑" },
+    { "name": "Karotte", "calories": 41, "emoji": "🥕" },
+    { "name": "Apfel", "calories": 52, "emoji": "🍎" }
+  ],
+  "tips": [
+    { "title": "Gekocht noch gesünder", "text": "Lycopin wird durch Erhitzen besser aufgenommen. Tomatensoße, Suppe und Ketchup liefern mehr Lycopin als rohe Tomaten.", "icon": "🔥" },
+    { "title": "Mit Öl kombinieren", "text": "Lycopin ist fettlöslich. Ein Schuss Olivenöl zur Tomate erhöht die Aufnahme um das 2-3-fache. Tomate + Öl = perfekte Kombination.", "icon": "🫒" },
+    { "title": "Fast keine Kalorien", "text": "Mit 18 kcal/100g und 95% Wasser kann man Tomaten praktisch unbegrenzt essen. Ideal als Volumen-Food zum Abnehmen.", "icon": "✅" },
+    { "title": "Dosentomaten sind top", "text": "Dosentomaten sind oft nährstoffreicher als frische (im Winter). Sie werden reif geerntet und direkt verarbeitet.", "icon": "🥫" },
+    { "title": "Nicht im Kühlschrank lagern", "text": "Tomaten verlieren im Kühlschrank Aroma und Textur. Bei Zimmertemperatur lagern und innerhalb weniger Tage essen.", "icon": "🌡️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Tomate?", "answer": "Eine mittelgroße Tomate (120g) hat nur 22 kcal. Pro 100g sind es 18 kcal. Tomaten gehören zu den kalorienärmsten Lebensmitteln überhaupt." },
+    { "question": "Sind Tomaten gut zum Abnehmen?", "answer": "Perfekt! Mit nur 18 kcal/100g und 95% Wassergehalt sind Tomaten das ideale Volumen-Food. Man kann davon essen so viel man will." },
+    { "question": "Was ist Lycopin und warum ist es gesund?", "answer": "Lycopin ist ein roter Pflanzenstoff und starkes Antioxidans. Studien zeigen: Es senkt das Risiko für Herzkrankheiten und bestimmte Krebsarten. Tomaten sind die Hauptquelle." },
+    { "question": "Wie viele Kohlenhydrate haben Tomaten?", "answer": "Tomaten haben nur 3,9g Kohlenhydrate pro 100g. Damit sind sie auch bei Low Carb und Keto ohne Einschränkung erlaubt." },
+    { "question": "Sind Cherry-Tomaten gesünder als normale?", "answer": "Etwas: Cherry-Tomaten haben pro 100g mehr Lycopin, Vitamin C und Zucker. Der Unterschied ist aber gering – beide sind sehr gesund." },
+    { "question": "Kann man zu viele Tomaten essen?", "answer": "Bei empfindlichem Magen können große Mengen Sodbrennen verursachen (Säure). Sonst sind 500g+ pro Tag kein Problem – in der mediterranen Küche völlig normal." }
+  ],
+  "related_foods": ["gurke", "paprika", "mozzarella", "brokkoli"]
+}

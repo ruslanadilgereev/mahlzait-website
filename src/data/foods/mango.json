@@ -1,0 +1,52 @@
+{
+  "slug": "mango",
+  "name": "Mango",
+  "emoji": "🥭",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Mango Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Mango? Nährwerte pro 100g & Stück. Zucker, Vitamine & ob Mango zum Abnehmen geeignet ist.",
+    "keywords": ["mango kalorien", "kalorien mango", "mango nährwerte", "wie viele kalorien hat eine mango", "mango zucker", "mango kohlenhydrate", "mango vitamine", "mango abnehmen"]
+  },
+  "overview": {
+    "calories_per_100g": 60,
+    "protein_per_100g": 0.8,
+    "carbs_per_100g": 15.0,
+    "fat_per_100g": 0.4,
+    "fiber_per_100g": 1.6,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Mango (Fruchtfleisch)"
+  },
+  "variants": [
+    { "name": "Mango frisch (200g Fruchtfleisch)", "portion_g": 200, "calories": 120, "protein": 2, "carbs": 30, "fat": 1 },
+    { "name": "Mango klein (150g Fruchtfleisch)", "portion_g": 150, "calories": 90, "protein": 1, "carbs": 23, "fat": 1 },
+    { "name": "Tiefkühl-Mango (150g)", "portion_g": 150, "calories": 90, "protein": 1, "carbs": 23, "fat": 1, "tip": "Preiswerte Alternative" },
+    { "name": "Mango getrocknet (40g)", "portion_g": 40, "calories": 128, "protein": 1, "carbs": 30, "fat": 1 },
+    { "name": "Mango-Smoothie (250ml)", "portion_g": 250, "calories": 140, "protein": 2, "carbs": 34, "fat": 1 },
+    { "name": "Mango-Lassi (200ml)", "portion_g": 200, "calories": 160, "protein": 4, "carbs": 28, "fat": 4 },
+    { "name": "Mango-Chutney (30g)", "portion_g": 30, "calories": 72, "protein": 0, "carbs": 18, "fat": 0 },
+    { "name": "Mango im Obstsalat (100g)", "portion_g": 100, "calories": 55, "protein": 1, "carbs": 13, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Banane", "calories": 89, "emoji": "🍌" },
+    { "name": "Ananas", "calories": 50, "emoji": "🍍" },
+    { "name": "Apfel", "calories": 52, "emoji": "🍎" },
+    { "name": "Papaya", "calories": 43, "emoji": "🍈" }
+  ],
+  "tips": [
+    { "title": "Vitamin-A-Champion", "text": "Eine Mango deckt 35% des Tagesbedarfs an Vitamin A (als Beta-Carotin). Gut für Augen, Haut und Immunsystem.", "icon": "👁️" },
+    { "title": "Tiefkühl spart Geld", "text": "Tiefkühl-Mango-Stücke kosten oft die Hälfte, haben identische Nährwerte und sind immer reif. Perfekt für Smoothies.", "icon": "❄️" },
+    { "title": "Getrocknete Mango = Zuckerbombe", "text": "40g getrocknete Mango hat 128 kcal und 30g Zucker – fast so viel wie Süßigkeiten! Lieber frisch essen.", "icon": "⚠️" },
+    { "title": "Reife erkennen", "text": "Eine reife Mango gibt bei Druck leicht nach und duftet süßlich am Stiel. Unreife Mangos bei Zimmertemperatur nachreifen lassen.", "icon": "👃" },
+    { "title": "Igel-Schnitt-Technik", "text": "Mango längs halbieren, Fruchtfleisch in Raster schneiden, umstülpen. So isst man sauber und verschwendet nichts.", "icon": "🔪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Mango?", "answer": "Eine Mango (200g Fruchtfleisch) hat ca. 120 kcal. Pro 100g sind es 60 kcal – moderat für Obst, aber durch den hohen Wassergehalt trotzdem leicht." },
+    { "question": "Ist Mango gut zum Abnehmen?", "answer": "In Maßen ja. Mangos haben 60 kcal/100g und relativ viel Zucker (13g). Eine halbe Mango als Snack ist ok, aber Erdbeeren (32 kcal) oder Wassermelone (30 kcal) sind kalorienärmer." },
+    { "question": "Wie viel Zucker hat eine Mango?", "answer": "Eine Mango hat ca. 13g Zucker pro 100g. Eine ganze Mango (200g) hat 26g Zucker – etwa so viel wie ein kleines Glas Orangensaft." },
+    { "question": "Ist Mango gesund?", "answer": "Ja! Mangos liefern viel Vitamin A, C und E plus Ballaststoffe. Die enthaltenen Enzyme (Amylase) unterstützen die Verdauung. 1 Mango pro Tag ist absolut gesund." },
+    { "question": "Wie viele Kohlenhydrate hat eine Mango?", "answer": "Eine Mango hat 15g Kohlenhydrate pro 100g. Eine ganze Mango (200g) hat 30g Kohlenhydrate. Für Low Carb: lieber eine halbe Mango." },
+    { "question": "Wann ist eine Mango reif?", "answer": "Eine reife Mango gibt bei leichtem Druck nach, duftet süßlich am Stiel und hat leicht verschrumpelte Haut. Die Farbe ist kein zuverlässiger Indikator." }
+  ],
+  "related_foods": ["banane", "ananas", "wassermelone", "erdbeeren"]
+}

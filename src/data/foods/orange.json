@@ -1,0 +1,52 @@
+{
+  "slug": "orange",
+  "name": "Orange",
+  "emoji": "🍊",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Orange Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Orange? Nährwerte pro 100g & Stück. Vitamin C, Saft vs. Frucht & Tipps zum Abnehmen.",
+    "keywords": ["orange kalorien", "kalorien orange", "orange nährwerte", "wie viele kalorien hat eine orange", "orange vitamin c", "orangensaft kalorien", "apfelsine kalorien", "orange kohlenhydrate"]
+  },
+  "overview": {
+    "calories_per_100g": 47,
+    "protein_per_100g": 0.9,
+    "carbs_per_100g": 11.8,
+    "fat_per_100g": 0.1,
+    "fiber_per_100g": 2.4,
+    "typical_portion_g": 170,
+    "typical_portion_name": "1 Orange (mittel, geschält)"
+  },
+  "variants": [
+    { "name": "Orange klein (130g geschält)", "portion_g": 130, "calories": 61, "protein": 1, "carbs": 15, "fat": 0 },
+    { "name": "Orange mittel (170g geschält)", "portion_g": 170, "calories": 80, "protein": 2, "carbs": 20, "fat": 0, "tip": "Standard" },
+    { "name": "Orange groß (210g geschält)", "portion_g": 210, "calories": 99, "protein": 2, "carbs": 25, "fat": 0 },
+    { "name": "Blutorange (150g geschält)", "portion_g": 150, "calories": 68, "protein": 1, "carbs": 17, "fat": 0 },
+    { "name": "Orangensaft frisch (200ml)", "portion_g": 200, "calories": 88, "protein": 1, "carbs": 20, "fat": 0 },
+    { "name": "Orangensaft Konzentrat (200ml)", "portion_g": 200, "calories": 96, "protein": 1, "carbs": 22, "fat": 0 },
+    { "name": "Mandarine (2 Stück, 120g)", "portion_g": 120, "calories": 54, "protein": 1, "carbs": 13, "fat": 0 },
+    { "name": "Orangenmarmelade (20g)", "portion_g": 20, "calories": 50, "protein": 0, "carbs": 12, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Apfel", "calories": 52, "emoji": "🍎" },
+    { "name": "Banane", "calories": 89, "emoji": "🍌" },
+    { "name": "Grapefruit", "calories": 42, "emoji": "🍊" },
+    { "name": "Kiwi", "calories": 61, "emoji": "🥝" }
+  ],
+  "tips": [
+    { "title": "Vitamin-C-Bombe", "text": "Eine Orange deckt mit 80mg Vitamin C den kompletten Tagesbedarf (100mg). Stärkt das Immunsystem und fördert die Eisenaufnahme.", "icon": "💊" },
+    { "title": "Frucht > Saft", "text": "Eine Orange hat 80 kcal mit 4g Ballaststoffen. Ein Glas Saft hat 88 kcal ohne Ballaststoffe – die Frucht sättigt deutlich besser.", "icon": "🍊" },
+    { "title": "Kalorienarmer Snack", "text": "Mit nur 47 kcal/100g und 87% Wasseranteil sind Orangen ein perfekter Snack. Durch das Schälen isst man automatisch langsamer.", "icon": "✂️" },
+    { "title": "Nach dem Training ideal", "text": "Der natürliche Zucker und das Kalium in Orangen sind perfekt zur Regeneration nach dem Sport. Besser als Sportgetränke.", "icon": "🏃" },
+    { "title": "Saison: November bis März", "text": "In der Wintersaison sind Orangen am süßesten und günstigsten. Perfektes Timing fürs Immunsystem in der Erkältungszeit.", "icon": "❄️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Orange?", "answer": "Eine mittelgroße Orange (170g geschält) hat ca. 80 kcal. Pro 100g sind es 47 kcal. Damit gehören Orangen zu den kalorienarmen Obstsorten." },
+    { "question": "Sind Orangen gut zum Abnehmen?", "answer": "Ja! Mit 47 kcal/100g, viel Wasser (87%) und Ballaststoffen (2,4g) sättigen Orangen gut. Das Schälen verhindert außerdem zu schnelles Essen." },
+    { "question": "Wie viel Vitamin C hat eine Orange?", "answer": "Eine Orange liefert ca. 80mg Vitamin C – das deckt den Tagesbedarf (100mg) fast komplett. Bei Erkältung: 2 Orangen decken den erhöhten Bedarf." },
+    { "question": "Ist Orangensaft gesund oder ungesund?", "answer": "Orangensaft liefert Vitamine, aber ohne Ballaststoffe und mit schnell verfügbarem Zucker. Eine Orange sättigt besser bei gleichen Kalorien. Saft maximal 1 Glas/Tag." },
+    { "question": "Wie viel Zucker hat eine Orange?", "answer": "Eine Orange hat ca. 9g Zucker pro 100g – moderat für Obst. Das ist weniger als Bananen (12g) oder Weintrauben (15g)." },
+    { "question": "Wie viele Orangen am Tag sind gesund?", "answer": "1-2 Orangen pro Tag sind ideal. Sie liefern genug Vitamin C und Flavonoide. Mehr als 3 können bei empfindlichem Magen Sodbrennen verursachen." }
+  ],
+  "related_foods": ["apfel", "banane", "kiwi", "erdbeeren"]
+}
