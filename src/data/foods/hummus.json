@@ -1,0 +1,52 @@
+{
+  "slug": "hummus",
+  "name": "Hummus",
+  "emoji": "🧆",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Hummus Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Hummus? Nährwerte pro 100g & Portion. Klassisch, Rote Beete, Avocado & mehr im Vergleich.",
+    "keywords": ["hummus kalorien", "kalorien hummus", "hummus nährwerte", "hummus protein", "hummus gesund", "hummus abnehmen", "hummus kohlenhydrate", "hummus fett"]
+  },
+  "overview": {
+    "calories_per_100g": 166,
+    "protein_per_100g": 7.9,
+    "carbs_per_100g": 14.3,
+    "fat_per_100g": 9.6,
+    "fiber_per_100g": 6.0,
+    "typical_portion_g": 50,
+    "typical_portion_name": "2 EL"
+  },
+  "variants": [
+    { "name": "Hummus klassisch (50g)", "portion_g": 50, "calories": 83, "protein": 4, "carbs": 7, "fat": 5, "tip": "Standard-Portion" },
+    { "name": "Hummus große Portion (100g)", "portion_g": 100, "calories": 166, "protein": 8, "carbs": 14, "fat": 10 },
+    { "name": "Hummus Rote Beete (50g)", "portion_g": 50, "calories": 78, "protein": 3, "carbs": 8, "fat": 4 },
+    { "name": "Hummus Avocado (50g)", "portion_g": 50, "calories": 90, "protein": 3, "carbs": 6, "fat": 6 },
+    { "name": "Hummus Paprika (50g)", "portion_g": 50, "calories": 80, "protein": 4, "carbs": 7, "fat": 5 },
+    { "name": "Hummus selbstgemacht (50g)", "portion_g": 50, "calories": 75, "protein": 4, "carbs": 6, "fat": 4, "tip": "Kalorienärmste Variante" },
+    { "name": "Hummus mit Fladenbrot (1 Portion)", "portion_g": 200, "calories": 420, "protein": 14, "carbs": 50, "fat": 18 },
+    { "name": "Hummus Light (50g)", "portion_g": 50, "calories": 60, "protein": 4, "carbs": 6, "fat": 2 }
+  ],
+  "comparison": [
+    { "name": "Guacamole", "calories": 160, "emoji": "🥑" },
+    { "name": "Frischkäse", "calories": 249, "emoji": "🧀" },
+    { "name": "Tzatziki", "calories": 75, "emoji": "🥒" },
+    { "name": "Erdnussbutter", "calories": 588, "emoji": "🥜" }
+  ],
+  "tips": [
+    { "title": "Portionsgröße beachten", "text": "Hummus ist gesund, aber kalorienreich. 2 EL (50g, 83 kcal) reichen als Dip – direkt aus dem Becher löffeln kann schnell 300+ kcal kosten.", "icon": "📏" },
+    { "title": "Gemüse statt Brot dippen", "text": "Karotten, Gurken und Paprika statt Fladenbrot sparen massiv Kalorien und liefern extra Vitamine.", "icon": "🥕" },
+    { "title": "Selbstgemacht = weniger Öl", "text": "Selbstgemachter Hummus hat oft weniger Kalorien, weil du die Ölmenge kontrollierst. Aquafaba (Kichererbsenwasser) macht ihn cremig.", "icon": "👨‍🍳" },
+    { "title": "Pflanzliche Proteinquelle", "text": "Mit 7,9g Protein pro 100g ist Hummus ein guter pflanzlicher Eiweißlieferant, besonders für Veganer und Vegetarier.", "icon": "💪" },
+    { "title": "Ballaststoff-Boost", "text": "6g Ballaststoffe pro 100g fördern die Verdauung und sorgen für ein langes Sättigungsgefühl.", "icon": "🌿" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Hummus?", "answer": "Hummus hat ca. 166 kcal pro 100g. Eine typische Portion (2 EL, 50g) hat ca. 83 kcal." },
+    { "question": "Ist Hummus gut zum Abnehmen?", "answer": "In Maßen ja. Hummus sättigt gut durch Protein und Ballaststoffe, hat aber relativ viele Kalorien durch das Olivenöl und Tahini. 2 EL als Dip sind ideal." },
+    { "question": "Wie viel Protein hat Hummus?", "answer": "Hummus enthält ca. 7,9g Protein pro 100g. Als pflanzliche Proteinquelle ist er besonders für Veganer und Vegetarier wertvoll." },
+    { "question": "Ist Hummus gesund?", "answer": "Ja! Hummus liefert pflanzliches Protein, gesunde Fette aus Tahini und Olivenöl, Ballaststoffe und wichtige Mineralstoffe wie Eisen und Magnesium." },
+    { "question": "Wie viel Hummus pro Tag ist gesund?", "answer": "50-100g pro Tag (2-4 EL) sind eine gesunde Menge. Das liefert 83-166 kcal und gute Nährstoffe ohne zu viele Kalorien." },
+    { "question": "Welcher Hummus hat die wenigsten Kalorien?", "answer": "Hummus Light/fettreduziert hat ca. 120 kcal/100g. Selbstgemachter Hummus mit weniger Öl kommt auf ca. 150 kcal/100g. Rote-Beete-Hummus ist oft etwas kalorienärmer." }
+  ],
+  "related_foods": ["kichererbsen", "falafel", "avocado", "tofu"]
+}

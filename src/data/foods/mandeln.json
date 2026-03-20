@@ -1,0 +1,52 @@
+{
+  "slug": "mandeln",
+  "name": "Mandeln",
+  "emoji": "🌰",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Mandeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Mandeln? Nährwerte pro 100g & Handvoll. Geröstet, blanchiert & Mandelmus im Vergleich.",
+    "keywords": ["mandeln kalorien", "kalorien mandeln", "mandeln nährwerte", "mandeln protein", "mandeln kohlenhydrate", "mandeln handvoll kalorien", "mandeln gesund", "mandeln abnehmen"]
+  },
+  "overview": {
+    "calories_per_100g": 576,
+    "protein_per_100g": 21.2,
+    "carbs_per_100g": 21.7,
+    "fat_per_100g": 49.4,
+    "fiber_per_100g": 12.5,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Handvoll"
+  },
+  "variants": [
+    { "name": "Mandeln roh (30g Handvoll)", "portion_g": 30, "calories": 173, "protein": 6, "carbs": 7, "fat": 15, "tip": "Standard-Portion" },
+    { "name": "Mandeln geröstet (30g)", "portion_g": 30, "calories": 180, "protein": 6, "carbs": 6, "fat": 16 },
+    { "name": "Mandeln gesalzen (30g)", "portion_g": 30, "calories": 182, "protein": 6, "carbs": 6, "fat": 16 },
+    { "name": "Mandeln blanchiert (30g)", "portion_g": 30, "calories": 170, "protein": 6, "carbs": 6, "fat": 15 },
+    { "name": "Mandelmus (15g, 1 EL)", "portion_g": 15, "calories": 91, "protein": 3, "carbs": 2, "fat": 8 },
+    { "name": "Mandelmilch (200ml)", "portion_g": 200, "calories": 28, "protein": 1, "carbs": 1, "fat": 2, "tip": "Kalorienärmste Variante" },
+    { "name": "Gebrannte Mandeln (50g)", "portion_g": 50, "calories": 250, "protein": 6, "carbs": 30, "fat": 14 },
+    { "name": "Mandelmehl (30g)", "portion_g": 30, "calories": 170, "protein": 7, "carbs": 3, "fat": 15 }
+  ],
+  "comparison": [
+    { "name": "Walnüsse", "calories": 654, "emoji": "🌰" },
+    { "name": "Cashewkerne", "calories": 553, "emoji": "🥜" },
+    { "name": "Erdnüsse", "calories": 567, "emoji": "🥜" },
+    { "name": "Rosinen", "calories": 299, "emoji": "🍇" }
+  ],
+  "tips": [
+    { "title": "Eine Handvoll am Tag", "text": "30g Mandeln (ca. 23 Stück) sind die perfekte Tagesdosis: 173 kcal, 6g Protein und eine Portion gesunde Fette.", "icon": "✋" },
+    { "title": "Mandeln kauen, nicht schlingen", "text": "Gründliches Kauen erhöht die Sättigung und reduziert die tatsächlich aufgenommenen Kalorien um bis zu 20% laut Studien.", "icon": "🦷" },
+    { "title": "Natürlich statt geröstet", "text": "Rohe Mandeln behalten mehr Nährstoffe. Geröstete und gesalzene Varianten haben mehr Kalorien und Natrium.", "icon": "🌿" },
+    { "title": "Mandelmilch als Milch-Alternative", "text": "Mit nur 14 kcal pro 100ml ist ungesüßte Mandelmilch die kalorienärmste Milchalternative.", "icon": "🥛" },
+    { "title": "Low-Carb-Mehl", "text": "Mandelmehl ist perfekt für glutenfreies und Low-Carb-Backen: Nur 10g Carbs pro 100g vs. 72g bei Weizenmehl.", "icon": "🍰" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien haben Mandeln?", "answer": "Mandeln haben ca. 576 kcal pro 100g. Eine Handvoll (30g, ca. 23 Stück) hat ca. 173 kcal." },
+    { "question": "Sind Mandeln gut zum Abnehmen?", "answer": "Ja, trotz der hohen Kaloriendichte. Studien zeigen, dass regelmäßiger Mandelverzehr nicht zu Gewichtszunahme führt. Die Kombination aus Protein, Ballaststoffen und Fett sättigt extrem gut." },
+    { "question": "Wie viele Mandeln pro Tag sind gesund?", "answer": "Eine Handvoll (ca. 30g oder 23 Stück) pro Tag ist die empfohlene Menge. Das liefert 173 kcal und deckt wichtige Nährstoffe ab." },
+    { "question": "Haben Mandeln viel Protein?", "answer": "Ja, Mandeln enthalten 21,2g Protein pro 100g. Eine Handvoll (30g) liefert ca. 6g Protein – ein guter Beitrag zur täglichen Eiweißversorgung." },
+    { "question": "Sind gebrannte Mandeln sehr kalorienreich?", "answer": "Ja! Gebrannte Mandeln haben ca. 500 kcal/100g durch den zugesetzten Zucker. 50g (kleine Tüte) haben bereits 250 kcal – fast doppelt so viel wie naturbelassene." },
+    { "question": "Was ist gesünder: Mandeln oder Walnüsse?", "answer": "Beide sind sehr gesund. Mandeln haben mehr Protein und Vitamin E, Walnüsse mehr Omega-3-Fettsäuren. Ideal: Beide abwechselnd essen." }
+  ],
+  "related_foods": ["walnuesse", "cashewkerne", "haferflocken", "muesli"]
+}

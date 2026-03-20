@@ -1,0 +1,52 @@
+{
+  "slug": "salami",
+  "name": "Salami",
+  "emoji": "🥓",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Salami Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Salami? Nährwerte pro 100g & Scheibe. Italienische, ungarische & Putenalami im Vergleich.",
+    "keywords": ["salami kalorien", "kalorien salami", "salami nährwerte", "salami protein", "salami fett", "salami 1 scheibe kalorien", "salami kohlenhydrate", "putensalami kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 336,
+    "protein_per_100g": 25.8,
+    "carbs_per_100g": 1.2,
+    "fat_per_100g": 25.5,
+    "fiber_per_100g": 0.0,
+    "typical_portion_g": 20,
+    "typical_portion_name": "3-4 Scheiben"
+  },
+  "variants": [
+    { "name": "Salami 3-4 Scheiben (20g)", "portion_g": 20, "calories": 67, "protein": 5, "carbs": 0, "fat": 5, "tip": "Standard-Portion" },
+    { "name": "Salami auf Pizza (30g)", "portion_g": 30, "calories": 101, "protein": 8, "carbs": 0, "fat": 8 },
+    { "name": "Ungarische Salami (20g)", "portion_g": 20, "calories": 78, "protein": 5, "carbs": 0, "fat": 6 },
+    { "name": "Mailänder Salami (20g)", "portion_g": 20, "calories": 68, "protein": 5, "carbs": 0, "fat": 5 },
+    { "name": "Putensalami (20g)", "portion_g": 20, "calories": 38, "protein": 6, "carbs": 0, "fat": 2, "tip": "Kalorienärmste Variante" },
+    { "name": "Salami Sandwich (40g)", "portion_g": 40, "calories": 134, "protein": 10, "carbs": 0, "fat": 10 },
+    { "name": "Mini-Salami Snack (25g)", "portion_g": 25, "calories": 100, "protein": 6, "carbs": 1, "fat": 8 },
+    { "name": "Chorizo (20g)", "portion_g": 20, "calories": 86, "protein": 5, "carbs": 0, "fat": 7 }
+  ],
+  "comparison": [
+    { "name": "Schinken gekocht", "calories": 114, "emoji": "🥩" },
+    { "name": "Putenbrust", "calories": 105, "emoji": "🍗" },
+    { "name": "Mortadella", "calories": 311, "emoji": "🥓" },
+    { "name": "Fleischwurst", "calories": 285, "emoji": "🌭" }
+  ],
+  "tips": [
+    { "title": "Putensalami als Alternative", "text": "Putensalami hat nur 190 kcal/100g statt 336 kcal – fast die Hälfte! Schmeckt ähnlich, spart massiv Kalorien.", "icon": "🍗" },
+    { "title": "Dünn geschnitten kaufen", "text": "Dünn geschnittene Salami wirkt auf dem Brot nach mehr, enthält aber weniger Kalorien pro Brot als dick geschnittene.", "icon": "📏" },
+    { "title": "Proteinreich", "text": "Mit 26g Protein/100g ist Salami überraschend proteinreich. Aber das Protein-zu-Fett-Verhältnis ist ungünstig – besser: Schinken.", "icon": "💪" },
+    { "title": "Salzgehalt beachten", "text": "Salami enthält ca. 4-5g Salz pro 100g. Die WHO empfiehlt max. 5g/Tag insgesamt. Sparsam genießen.", "icon": "🧂" },
+    { "title": "Nicht täglich essen", "text": "Als verarbeitetes Fleisch sollte Salami laut WHO max. 2-3x pro Woche auf dem Brot landen. Abwechslung mit Käse oder Hummus.", "icon": "📅" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Salami?", "answer": "Salami hat ca. 336 kcal pro 100g. Eine Brotportion (3-4 Scheiben, 20g) hat ca. 67 kcal." },
+    { "question": "Ist Salami gut zum Abnehmen?", "answer": "Nicht ideal. Salami hat einen hohen Fettgehalt (25%) bei moderaten Kalorien. Bessere Alternative: Putensalami (190 kcal/100g) oder gekochter Schinken (114 kcal/100g)." },
+    { "question": "Wie viel Fett hat Salami?", "answer": "Salami enthält ca. 25,5g Fett pro 100g, davon ein großer Teil gesättigte Fettsäuren. Putensalami hat nur ca. 9g Fett/100g." },
+    { "question": "Wie viel Protein hat Salami?", "answer": "Salami hat ca. 25,8g Protein pro 100g. Klingt gut, aber das Fett-zu-Protein-Verhältnis ist ungünstig (fast 1:1). Hühnerbrust hat 31g Protein bei nur 3g Fett." },
+    { "question": "Ist Salami ungesund?", "answer": "In Maßen okay, aber Salami ist verarbeitetes Fleisch. Die WHO stuft es als ‚wahrscheinlich krebserregend' ein. 2-3x pro Woche in kleinen Mengen ist vertretbar." },
+    { "question": "Welche Salami hat die wenigsten Kalorien?", "answer": "Putensalami mit ca. 190 kcal/100g hat die wenigsten Kalorien. Normale Salami liegt bei 336 kcal, ungarische sogar bei 390 kcal/100g." }
+  ],
+  "related_foods": ["schinken", "fleischwurst", "mortadella", "kaese-gouda"]
+}

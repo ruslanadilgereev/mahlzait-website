@@ -1,0 +1,52 @@
+{
+  "slug": "leberwurst",
+  "name": "Leberwurst",
+  "emoji": "🥖",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Leberwurst Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Leberwurst? Nährwerte pro 100g & Portion. Fein, grob, Kalbsleberwurst & Light im Vergleich.",
+    "keywords": ["leberwurst kalorien", "kalorien leberwurst", "leberwurst nährwerte", "leberwurst protein", "leberwurst fett", "leberwurst 1 portion kalorien", "leberwurst gesund", "leberwurst eisen"]
+  },
+  "overview": {
+    "calories_per_100g": 313,
+    "protein_per_100g": 13.5,
+    "carbs_per_100g": 1.2,
+    "fat_per_100g": 28.5,
+    "fiber_per_100g": 0.0,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Portion Aufstrich"
+  },
+  "variants": [
+    { "name": "Leberwurst fein (30g)", "portion_g": 30, "calories": 94, "protein": 4, "carbs": 0, "fat": 9, "tip": "Standard-Portion" },
+    { "name": "Leberwurst grob (30g)", "portion_g": 30, "calories": 90, "protein": 4, "carbs": 0, "fat": 8 },
+    { "name": "Kalbsleberwurst (30g)", "portion_g": 30, "calories": 100, "protein": 4, "carbs": 0, "fat": 9 },
+    { "name": "Geflügel-Leberwurst (30g)", "portion_g": 30, "calories": 68, "protein": 4, "carbs": 0, "fat": 6, "tip": "Kalorienärmste Variante" },
+    { "name": "Leberwurst auf Brot (40g)", "portion_g": 40, "calories": 125, "protein": 5, "carbs": 0, "fat": 11 },
+    { "name": "Leberwurst Mett (30g)", "portion_g": 30, "calories": 85, "protein": 4, "carbs": 0, "fat": 7 },
+    { "name": "Hausmacher Leberwurst (30g)", "portion_g": 30, "calories": 105, "protein": 4, "carbs": 0, "fat": 10 },
+    { "name": "Leberwurst light (30g)", "portion_g": 30, "calories": 60, "protein": 5, "carbs": 0, "fat": 5 }
+  ],
+  "comparison": [
+    { "name": "Kochschinken", "calories": 114, "emoji": "🥩" },
+    { "name": "Frischkäse", "calories": 249, "emoji": "🧀" },
+    { "name": "Teewurst", "calories": 390, "emoji": "🥖" },
+    { "name": "Mettwurst", "calories": 340, "emoji": "🌭" }
+  ],
+  "tips": [
+    { "title": "Eisen-Bombe", "text": "Leberwurst liefert 7mg Eisen pro 100g – mehr als Rindfleisch. Ideal bei Eisenmangel, besonders für Frauen.", "icon": "🩸" },
+    { "title": "Vitamin-A-Quelle", "text": "Durch den Leberanteil enthält Leberwurst viel Vitamin A. Aber: In der Schwangerschaft wegen möglicher Vitamin-A-Überdosis meiden.", "icon": "⚠️" },
+    { "title": "Dünn aufstreichen", "text": "Bei Streichwurst landet oft mehr auf dem Brot als nötig. 20-25g reichen für guten Geschmack – statt der üblichen 40g+.", "icon": "📏" },
+    { "title": "Geflügel-Variante testen", "text": "Geflügel-Leberwurst hat nur 225 kcal/100g statt 313 kcal. Geschmacklich ähnlich, deutlich kalorienärmer.", "icon": "🍗" },
+    { "title": "Mit Gurke servieren", "text": "Leberwurst-Brot mit Essiggurke: Der Klassiker. Die Gurke liefert Crunch und Frische bei fast null Kalorien.", "icon": "🥒" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Leberwurst?", "answer": "Leberwurst hat ca. 313 kcal pro 100g. Eine Brotportion (30g) hat ca. 94 kcal." },
+    { "question": "Ist Leberwurst gesund?", "answer": "Leberwurst liefert viel Eisen (7mg/100g), Vitamin A und B-Vitamine. Allerdings auch viel Fett (28,5%). In Maßen (2-3x/Woche) ist sie eine nährstoffreiche Brotbelag-Option." },
+    { "question": "Wie viel Fett hat Leberwurst?", "answer": "Normale Leberwurst enthält ca. 28,5g Fett pro 100g. Geflügel-Leberwurst nur ca. 18g, Light-Varianten ca. 15g." },
+    { "question": "Wie viel Eisen hat Leberwurst?", "answer": "Leberwurst enthält ca. 7mg Eisen pro 100g. Eine Portion (30g) deckt ca. 15% des Tagesbedarfs – das ist viel für einen Brotaufstrich." },
+    { "question": "Darf man Leberwurst in der Schwangerschaft essen?", "answer": "Leberwurst sollte in der Schwangerschaft gemieden oder nur selten gegessen werden, da sie sehr viel Vitamin A enthält. Zu viel Vitamin A kann dem Ungeborenen schaden." },
+    { "question": "Welche Leberwurst hat die wenigsten Kalorien?", "answer": "Geflügel-Leberwurst (225 kcal/100g) und Light-Leberwurst (200 kcal/100g) sind die kalorienärmsten. Hausmacher-Leberwurst hat mit 350 kcal/100g die meisten." }
+  ],
+  "related_foods": ["fleischwurst", "schinken", "salami", "brot"]
+}

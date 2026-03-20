@@ -1,0 +1,52 @@
+{
+  "slug": "schinken",
+  "name": "Schinken",
+  "emoji": "🥩",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Schinken Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Schinken? Nährwerte pro 100g & Scheibe. Kochschinken, Parmaschinken, Schwarzwälder im Vergleich.",
+    "keywords": ["schinken kalorien", "kalorien schinken", "schinken nährwerte", "kochschinken kalorien", "schinken protein", "schinken fett", "schwarzwälder schinken kalorien", "parmaschinken kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 114,
+    "protein_per_100g": 21.8,
+    "carbs_per_100g": 1.0,
+    "fat_per_100g": 2.5,
+    "fiber_per_100g": 0.0,
+    "typical_portion_g": 30,
+    "typical_portion_name": "2 Scheiben"
+  },
+  "variants": [
+    { "name": "Kochschinken 2 Scheiben (30g)", "portion_g": 30, "calories": 34, "protein": 7, "carbs": 0, "fat": 1, "tip": "Kalorienärmste Variante" },
+    { "name": "Schwarzwälder Schinken (30g)", "portion_g": 30, "calories": 66, "protein": 8, "carbs": 0, "fat": 4 },
+    { "name": "Parmaschinken (30g)", "portion_g": 30, "calories": 71, "protein": 8, "carbs": 0, "fat": 4 },
+    { "name": "Serrano-Schinken (30g)", "portion_g": 30, "calories": 73, "protein": 9, "carbs": 0, "fat": 4 },
+    { "name": "Lachsschinken (30g)", "portion_g": 30, "calories": 42, "protein": 8, "carbs": 0, "fat": 1 },
+    { "name": "Schinken auf Brot (40g)", "portion_g": 40, "calories": 46, "protein": 9, "carbs": 0, "fat": 1 },
+    { "name": "Schinken-Käse-Toast", "portion_g": 50, "calories": 75, "protein": 11, "carbs": 1, "fat": 3 },
+    { "name": "Räucherschinken (30g)", "portion_g": 30, "calories": 48, "protein": 7, "carbs": 0, "fat": 2 }
+  ],
+  "comparison": [
+    { "name": "Salami", "calories": 336, "emoji": "🥓" },
+    { "name": "Putenbrust", "calories": 105, "emoji": "🍗" },
+    { "name": "Mortadella", "calories": 311, "emoji": "🌭" },
+    { "name": "Fleischwurst", "calories": 285, "emoji": "🌭" }
+  ],
+  "tips": [
+    { "title": "Bester Brotbelag zum Abnehmen", "text": "Kochschinken hat nur 114 kcal/100g bei 22g Protein. Einer der proteinreichsten und kalorienärmsten Aufschnitte überhaupt.", "icon": "🏆" },
+    { "title": "Kochschinken > Salami", "text": "3x weniger Kalorien und 10x weniger Fett als Salami, bei fast gleichem Proteingehalt. Klarer Gewinner für die Diät.", "icon": "📊" },
+    { "title": "Auf Nitrit achten", "text": "Viele Schinken enthalten Nitritpökelsalz. Es gibt zunehmend Varianten ohne Nitrit – geschmacklich kaum Unterschied.", "icon": "🏷️" },
+    { "title": "Rohschinken ist edler", "text": "Parma und Serrano haben mehr Geschmack pro Scheibe. Man braucht weniger davon und genießt mehr – gut für die Kalorienbilanz.", "icon": "🇮🇹" },
+    { "title": "Schinken als Protein-Snack", "text": "Eine Rolle Schinken mit Frischkäse gefüllt: Schneller Protein-Snack mit nur 60 kcal und 8g Protein.", "icon": "💪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Schinken?", "answer": "Kochschinken hat ca. 114 kcal pro 100g. Zwei Scheiben (30g) haben nur ca. 34 kcal. Rohschinken wie Parma oder Serrano haben ca. 230 kcal/100g." },
+    { "question": "Ist Schinken gut zum Abnehmen?", "answer": "Ja! Kochschinken ist einer der besten Brotbeläge zum Abnehmen: Viel Protein (22g/100g), wenig Fett (2,5g) und wenig Kalorien (114 kcal)." },
+    { "question": "Wie viel Protein hat Schinken?", "answer": "Kochschinken hat ca. 21,8g Protein pro 100g. Das ist vergleichbar mit Hähnchenbrust und macht ihn zu einem der proteinreichsten Aufschnitte." },
+    { "question": "Was ist der Unterschied zwischen Koch- und Rohschinken?", "answer": "Kochschinken wird bei 80°C gegart (114 kcal/100g). Rohschinken (Parma, Serrano) wird getrocknet/gereift (230 kcal/100g). Rohschinken hat mehr Geschmack, aber auch mehr Kalorien." },
+    { "question": "Ist Schinken ungesund?", "answer": "Kochschinken ist eines der gesünderen verarbeiteten Fleischprodukte: Wenig Fett, viel Protein. Allerdings: Salzgehalt beachten (2-3g/100g) und max. 2-3x pro Woche essen." },
+    { "question": "Welcher Schinken hat die wenigsten Kalorien?", "answer": "Kochschinken (114 kcal/100g) und Lachsschinken (140 kcal/100g) sind die kalorienärmsten. Schwarzwälder Schinken liegt bei 220 kcal/100g." }
+  ],
+  "related_foods": ["salami", "putenbrust", "fleischwurst", "kaese-gouda"]
+}

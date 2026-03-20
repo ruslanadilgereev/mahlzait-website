@@ -1,0 +1,52 @@
+{
+  "slug": "honig",
+  "name": "Honig",
+  "emoji": "🍯",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Honig Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Honig? Nährwerte pro 100g & Teelöffel. Blüten-, Wald- & Manuka-Honig im Vergleich.",
+    "keywords": ["honig kalorien", "kalorien honig", "honig nährwerte", "honig zucker", "honig 1 tl kalorien", "honig kohlenhydrate", "honig gesund", "honig vs zucker"]
+  },
+  "overview": {
+    "calories_per_100g": 304,
+    "protein_per_100g": 0.3,
+    "carbs_per_100g": 82.1,
+    "fat_per_100g": 0.0,
+    "fiber_per_100g": 0.0,
+    "typical_portion_g": 10,
+    "typical_portion_name": "1 TL"
+  },
+  "variants": [
+    { "name": "Honig 1 TL (10g)", "portion_g": 10, "calories": 30, "protein": 0, "carbs": 8, "fat": 0, "tip": "Standard-Portion" },
+    { "name": "Honig 1 EL (20g)", "portion_g": 20, "calories": 61, "protein": 0, "carbs": 16, "fat": 0 },
+    { "name": "Blütenhonig (10g)", "portion_g": 10, "calories": 30, "protein": 0, "carbs": 8, "fat": 0 },
+    { "name": "Waldhonig (10g)", "portion_g": 10, "calories": 29, "protein": 0, "carbs": 8, "fat": 0 },
+    { "name": "Manuka-Honig (10g)", "portion_g": 10, "calories": 30, "protein": 0, "carbs": 8, "fat": 0 },
+    { "name": "Honig im Tee (15g)", "portion_g": 15, "calories": 46, "protein": 0, "carbs": 12, "fat": 0 },
+    { "name": "Honig auf Brot (15g)", "portion_g": 15, "calories": 46, "protein": 0, "carbs": 12, "fat": 0 },
+    { "name": "Honig im Müsli (10g)", "portion_g": 10, "calories": 30, "protein": 0, "carbs": 8, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Zucker", "calories": 400, "emoji": "🍬" },
+    { "name": "Ahornsirup", "calories": 260, "emoji": "🍁" },
+    { "name": "Agavendicksaft", "calories": 310, "emoji": "🌵" },
+    { "name": "Marmelade", "calories": 250, "emoji": "🍓" }
+  ],
+  "tips": [
+    { "title": "Weniger Kalorien als Zucker", "text": "Honig hat 304 kcal/100g vs. Zucker mit 400 kcal/100g. Plus: Honig ist süßer, man braucht weniger davon.", "icon": "📉" },
+    { "title": "Trotzdem Zucker", "text": "Honig besteht zu 82% aus Zucker (Fructose + Glucose). ‚Natürlich' heißt nicht kalorienfrei – bewusst dosieren.", "icon": "⚠️" },
+    { "title": "Nicht über 40°C erhitzen", "text": "Ab 40°C gehen Enzyme und Vitamine verloren. In heißen Tee besser erst einrühren, wenn er trinkwarm ist.", "icon": "🌡️" },
+    { "title": "Regionalen Honig wählen", "text": "Honig vom lokalen Imker kann bei Heuschnupfen helfen, da er Pollen der Region enthält. Plus: Kurze Transportwege.", "icon": "🐝" },
+    { "title": "Als Zuckerersatz beim Backen", "text": "Honig kann Zucker 1:1 ersetzen, dabei 20% weniger Flüssigkeit verwenden. Ergebnis: Feuchter und aromatischer.", "icon": "🧁" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Honig?", "answer": "Honig hat ca. 304 kcal pro 100g. Ein Teelöffel (10g) hat ca. 30 kcal, ein Esslöffel (20g) ca. 61 kcal." },
+    { "question": "Ist Honig besser als Zucker?", "answer": "Honig hat weniger Kalorien (304 vs. 400 kcal/100g), enthält kleine Mengen Vitamine und Enzyme. Aber: Für den Blutzucker macht es kaum einen Unterschied. Beide in Maßen genießen." },
+    { "question": "Ist Honig gut zum Abnehmen?", "answer": "Honig ist kein Diät-Lebensmittel, da er fast nur aus Zucker besteht. Aber als Süßungsmittel ist er die bessere Wahl als Zucker – man braucht weniger für die gleiche Süße." },
+    { "question": "Wie viel Zucker hat Honig?", "answer": "Honig besteht zu ca. 82% aus Zucker – hauptsächlich Fructose (38%) und Glucose (31%). Der Rest ist Wasser und Spuren von Vitaminen und Mineralien." },
+    { "question": "Wie viel Honig pro Tag ist gesund?", "answer": "Die WHO empfiehlt maximal 25g zugesetzten Zucker pro Tag. 1-2 TL Honig (10-20g) sind eine moderate Menge, die in eine gesunde Ernährung passt." },
+    { "question": "Dürfen Babys Honig essen?", "answer": "Nein! Kinder unter 12 Monaten dürfen keinen Honig essen, da er Botulismus-Sporen enthalten kann, die für Säuglinge gefährlich sind." }
+  ],
+  "related_foods": ["marmelade", "ahornsirup", "haferflocken", "banane"]
+}

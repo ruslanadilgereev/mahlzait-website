@@ -1,0 +1,52 @@
+{
+  "slug": "marmelade",
+  "name": "Marmelade",
+  "emoji": "🍓",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Marmelade Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Marmelade? Nährwerte pro 100g & Portion. Erdbeer, Aprikose, zuckerreduziert im Vergleich.",
+    "keywords": ["marmelade kalorien", "kalorien marmelade", "marmelade nährwerte", "erdbeermarmelade kalorien", "marmelade zucker", "marmelade kohlenhydrate", "marmelade abnehmen", "marmelade kalorienarm"]
+  },
+  "overview": {
+    "calories_per_100g": 250,
+    "protein_per_100g": 0.3,
+    "carbs_per_100g": 63.0,
+    "fat_per_100g": 0.1,
+    "fiber_per_100g": 0.6,
+    "typical_portion_g": 20,
+    "typical_portion_name": "1 EL"
+  },
+  "variants": [
+    { "name": "Marmelade 1 EL (20g)", "portion_g": 20, "calories": 50, "protein": 0, "carbs": 13, "fat": 0, "tip": "Standard-Portion" },
+    { "name": "Erdbeermarmelade (20g)", "portion_g": 20, "calories": 50, "protein": 0, "carbs": 13, "fat": 0 },
+    { "name": "Aprikosenmarmelade (20g)", "portion_g": 20, "calories": 52, "protein": 0, "carbs": 13, "fat": 0 },
+    { "name": "Himbeermarmelade (20g)", "portion_g": 20, "calories": 48, "protein": 0, "carbs": 12, "fat": 0 },
+    { "name": "Orangenmarmelade (20g)", "portion_g": 20, "calories": 52, "protein": 0, "carbs": 13, "fat": 0 },
+    { "name": "Zuckerreduzierte Marmelade (20g)", "portion_g": 20, "calories": 28, "protein": 0, "carbs": 7, "fat": 0, "tip": "Kalorienärmste Variante" },
+    { "name": "Konfitüre Extra (20g)", "portion_g": 20, "calories": 53, "protein": 0, "carbs": 13, "fat": 0 },
+    { "name": "Chia-Marmelade selbstgemacht (20g)", "portion_g": 20, "calories": 22, "protein": 0, "carbs": 4, "fat": 1 }
+  ],
+  "comparison": [
+    { "name": "Honig", "calories": 304, "emoji": "🍯" },
+    { "name": "Nutella", "calories": 539, "emoji": "🍫" },
+    { "name": "Butter", "calories": 741, "emoji": "🧈" },
+    { "name": "Frischkäse", "calories": 249, "emoji": "🧀" }
+  ],
+  "tips": [
+    { "title": "Zuckerreduziert wählen", "text": "Zuckerreduzierte Marmelade hat nur 140 kcal/100g statt 250 kcal. Schmeckt fruchtiger und spart auf dem Frühstücksbrot ordentlich Kalorien.", "icon": "📉" },
+    { "title": "Fruchtaufstrich ≠ Marmelade", "text": "‚Fruchtaufstrich' enthält oft mehr Frucht und weniger Zucker als ‚Konfitüre'. Auf den Fruchtanteil achten: 50%+ ist gut.", "icon": "🍓" },
+    { "title": "Dünn auftragen", "text": "Die meisten Menschen schmieren 20-30g Marmelade aufs Brot. Mit 10g (halber EL) schmeckt es trotzdem süß – bei der Hälfte der Kalorien.", "icon": "📏" },
+    { "title": "Selbstgemacht mit Chiasamen", "text": "Beeren + Chiasamen + etwas Honig = gesunde Marmelade ohne Gelierzucker. Hält 1 Woche im Kühlschrank.", "icon": "👨‍🍳" },
+    { "title": "Kombi mit Protein", "text": "Marmelade auf Quark-Brot oder Skyr: Die Proteinbasis bremst den Blutzuckeranstieg durch den Marmeladenzucker.", "icon": "💪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Marmelade?", "answer": "Normale Marmelade hat ca. 250 kcal pro 100g. Ein Esslöffel (20g) hat ca. 50 kcal. Zuckerreduzierte Varianten haben nur ca. 140 kcal/100g." },
+    { "question": "Ist Marmelade gut zum Abnehmen?", "answer": "Marmelade ist nicht ideal zum Abnehmen, aber fettfrei. Ein dünner Aufstrich (10-15g, 25-38 kcal) ist okay. Besser: Zuckerreduzierte Variante wählen." },
+    { "question": "Wie viel Zucker hat Marmelade?", "answer": "Normale Konfitüre enthält ca. 60-65g Zucker pro 100g. Zuckerreduzierte Varianten haben ca. 30-35g. Selbstgemachte Chia-Marmelade noch weniger." },
+    { "question": "Welche Marmelade hat die wenigsten Kalorien?", "answer": "Zuckerreduzierte Fruchtaufstriche haben ca. 140 kcal/100g. Selbstgemachte Chia-Marmelade nur ca. 110 kcal/100g. Am kalorienärmsten: Selbstgemacht aus Beeren + Chiasamen." },
+    { "question": "Was ist der Unterschied zwischen Marmelade und Konfitüre?", "answer": "In der EU darf nur Aufstrich aus Zitrusfrüchten ‚Marmelade' heißen. Alles andere ist offiziell ‚Konfitüre'. Im Alltag wird beides als Marmelade bezeichnet." },
+    { "question": "Ist Marmelade gesünder als Nutella?", "answer": "Ja, deutlich. Marmelade hat 250 kcal/100g, Nutella 539 kcal/100g. Marmelade ist fettfrei, Nutella besteht zu über 30% aus Fett. Beim Zucker nehmen sich beide nicht viel." }
+  ],
+  "related_foods": ["honig", "nutella", "brot", "croissant"]
+}

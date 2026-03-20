@@ -1,0 +1,52 @@
+{
+  "slug": "feta",
+  "name": "Feta",
+  "emoji": "🧀",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Feta Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Feta? Nährwerte pro 100g & Portion. Griechischer Feta, Light & Hirtenkäse im Vergleich.",
+    "keywords": ["feta kalorien", "kalorien feta", "feta nährwerte", "feta protein", "feta fett", "feta kohlenhydrate", "feta light kalorien", "hirtenkäse kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 264,
+    "protein_per_100g": 14.2,
+    "carbs_per_100g": 4.1,
+    "fat_per_100g": 21.3,
+    "fiber_per_100g": 0.0,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    { "name": "Feta 1 Portion (30g)", "portion_g": 30, "calories": 79, "protein": 4, "carbs": 1, "fat": 6, "tip": "Standard-Portion" },
+    { "name": "Feta im Salat (50g)", "portion_g": 50, "calories": 132, "protein": 7, "carbs": 2, "fat": 11 },
+    { "name": "Feta griechisch Original (30g)", "portion_g": 30, "calories": 79, "protein": 4, "carbs": 1, "fat": 6 },
+    { "name": "Feta Light (30g)", "portion_g": 30, "calories": 50, "protein": 5, "carbs": 1, "fat": 3, "tip": "Kalorienärmste Variante" },
+    { "name": "Hirtenkäse (Kuhmilch, 30g)", "portion_g": 30, "calories": 74, "protein": 4, "carbs": 1, "fat": 6 },
+    { "name": "Feta überbacken (60g)", "portion_g": 60, "calories": 175, "protein": 9, "carbs": 2, "fat": 14 },
+    { "name": "Feta in Öl eingelegt (40g)", "portion_g": 40, "calories": 150, "protein": 5, "carbs": 1, "fat": 14 },
+    { "name": "Feta-Wrap (50g Feta)", "portion_g": 50, "calories": 132, "protein": 7, "carbs": 2, "fat": 11 }
+  ],
+  "comparison": [
+    { "name": "Mozzarella", "calories": 255, "emoji": "🧀" },
+    { "name": "Gouda", "calories": 356, "emoji": "🧀" },
+    { "name": "Parmesan", "calories": 431, "emoji": "🧀" },
+    { "name": "Hüttenkäse", "calories": 98, "emoji": "🧀" }
+  ],
+  "tips": [
+    { "title": "Weniger Kalorien als Hartkäse", "text": "Feta hat 264 kcal/100g vs. Gouda mit 356 kcal. Durch den intensiven Geschmack braucht man zudem weniger.", "icon": "📉" },
+    { "title": "Salat-Aufwertung", "text": "50g Feta im Salat liefern 7g Protein und machen aus einem Beilagen-Salat eine sättigende Mahlzeit.", "icon": "🥗" },
+    { "title": "Echter Feta = Schafsmilch", "text": "Nur Käse aus mindestens 70% Schafsmilch (+ max. 30% Ziegenmilch) aus Griechenland darf ‚Feta' heißen. ‚Hirtenkäse' ist die günstigere Kuhmilch-Alternative.", "icon": "🐑" },
+    { "title": "Light-Version spart 30% Kalorien", "text": "Feta Light hat ca. 165 kcal/100g statt 264 kcal – bei mehr Protein pro Kalorie. Ideal für Salate.", "icon": "💡" },
+    { "title": "Calcium-Quelle", "text": "Feta liefert ca. 493mg Calcium pro 100g – fast die Hälfte des Tagesbedarfs. Wichtig für Knochen und Zähne.", "icon": "🦴" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Feta?", "answer": "Feta hat ca. 264 kcal pro 100g. Eine Portion (30g) hat ca. 79 kcal. Feta Light hat nur ca. 165 kcal/100g." },
+    { "question": "Ist Feta gut zum Abnehmen?", "answer": "In Maßen ja. Feta hat weniger Kalorien als die meisten Käsesorten und schmeckt intensiv, sodass man weniger braucht. Im Salat eine gute Proteinquelle." },
+    { "question": "Wie viel Protein hat Feta?", "answer": "Feta enthält ca. 14,2g Protein pro 100g. 50g Feta im Salat liefern 7g Protein." },
+    { "question": "Was ist der Unterschied zwischen Feta und Hirtenkäse?", "answer": "Echter Feta wird aus Schafsmilch (+ max. 30% Ziegenmilch) in Griechenland hergestellt. Hirtenkäse ist aus Kuhmilch und günstiger, schmeckt aber milder." },
+    { "question": "Ist Feta laktosefrei?", "answer": "Nahezu. Feta enthält nur ca. 0,5g Laktose pro 100g – durch die Reifung wird fast alle Laktose abgebaut. Die meisten laktoseintoleranten Menschen vertragen Feta gut." },
+    { "question": "Ist Feta in der Schwangerschaft erlaubt?", "answer": "Feta aus pasteurisierter Milch ja. Vorsicht bei Feta aus Rohmilch (steht auf der Packung) – dieser kann Listerien enthalten. Im Zweifel: Erhitzen beseitigt das Risiko." }
+  ],
+  "related_foods": ["mozzarella", "kaese-gouda", "parmesan", "tomate"]
+}

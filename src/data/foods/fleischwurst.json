@@ -1,0 +1,52 @@
+{
+  "slug": "fleischwurst",
+  "name": "Fleischwurst",
+  "emoji": "🌭",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Fleischwurst Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Fleischwurst? Nährwerte pro 100g & Scheibe. Lyoner, Bierschinken & Geflügelwurst im Vergleich.",
+    "keywords": ["fleischwurst kalorien", "kalorien fleischwurst", "fleischwurst nährwerte", "fleischwurst protein", "lyoner kalorien", "fleischwurst fett", "bierschinken kalorien", "geflügelfleischwurst kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 285,
+    "protein_per_100g": 11.5,
+    "carbs_per_100g": 0.5,
+    "fat_per_100g": 26.5,
+    "fiber_per_100g": 0.0,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    { "name": "Fleischwurst 1 Scheibe (30g)", "portion_g": 30, "calories": 86, "protein": 3, "carbs": 0, "fat": 8, "tip": "Standard-Portion" },
+    { "name": "Lyoner (30g)", "portion_g": 30, "calories": 84, "protein": 4, "carbs": 0, "fat": 7 },
+    { "name": "Bierschinken (30g)", "portion_g": 30, "calories": 60, "protein": 5, "carbs": 0, "fat": 4, "tip": "Kalorienärmere Option" },
+    { "name": "Geflügelfleischwurst (30g)", "portion_g": 30, "calories": 54, "protein": 4, "carbs": 0, "fat": 4, "tip": "Beste Alternative" },
+    { "name": "Fleischwurst am Stück (50g)", "portion_g": 50, "calories": 143, "protein": 6, "carbs": 0, "fat": 13 },
+    { "name": "Fleischwurst-Salat (150g)", "portion_g": 150, "calories": 350, "protein": 15, "carbs": 5, "fat": 30 },
+    { "name": "Wurstsalat mit Fleischwurst", "portion_g": 200, "calories": 420, "protein": 18, "carbs": 6, "fat": 36 },
+    { "name": "Fleischwurst im Brötchen", "portion_g": 40, "calories": 114, "protein": 5, "carbs": 0, "fat": 11 }
+  ],
+  "comparison": [
+    { "name": "Kochschinken", "calories": 114, "emoji": "🥩" },
+    { "name": "Salami", "calories": 336, "emoji": "🥓" },
+    { "name": "Mortadella", "calories": 311, "emoji": "🌭" },
+    { "name": "Putenbrust", "calories": 105, "emoji": "🍗" }
+  ],
+  "tips": [
+    { "title": "Geflügelvariante wählen", "text": "Geflügelfleischwurst hat nur 180 kcal/100g statt 285 kcal. Fast gleicher Geschmack, deutlich weniger Fett.", "icon": "🍗" },
+    { "title": "Nicht als Snack knabbern", "text": "Fleischwurst am Stück ist ein Kalorienfalle: Ein Stück (50g) hat schnell 143 kcal. Besser in Scheiben auf Brot.", "icon": "⚠️" },
+    { "title": "Bierschinken als Alternative", "text": "Bierschinken hat mit 200 kcal/100g deutlich weniger Fett als normale Fleischwurst und schmeckt würziger.", "icon": "🍺" },
+    { "title": "Kinderliebling mit Maß", "text": "Kinder lieben Fleischwurst. Dünn geschnittene Scheiben auf Vollkornbrot mit Gurke sind eine akzeptable Brotzeit.", "icon": "👶" },
+    { "title": "Salzgehalt beachten", "text": "Fleischwurst enthält ca. 2-3g Salz pro 100g. Bei 2 Scheiben (60g) schon 1-2g Salz – 20-40% des Tagesbedarfs.", "icon": "🧂" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Fleischwurst?", "answer": "Fleischwurst hat ca. 285 kcal pro 100g. Eine Scheibe (30g) hat ca. 86 kcal." },
+    { "question": "Ist Fleischwurst gut zum Abnehmen?", "answer": "Nicht ideal. Fleischwurst hat einen hohen Fettanteil (26,5%) bei wenig Protein im Verhältnis. Bessere Alternativen: Kochschinken (114 kcal), Putenbrust (105 kcal) oder Geflügelfleischwurst (180 kcal)." },
+    { "question": "Wie viel Fett hat Fleischwurst?", "answer": "Fleischwurst enthält ca. 26,5g Fett pro 100g – das sind über 70% der Kalorien. Geflügelvarianten haben nur ca. 13g Fett." },
+    { "question": "Was ist der Unterschied zwischen Fleischwurst und Lyoner?", "answer": "Lyoner ist im Grunde das gleiche Produkt. In Süddeutschland sagt man Lyoner, in Norddeutschland Fleischwurst. Nährwerte sind nahezu identisch." },
+    { "question": "Ist Fleischwurst aus echtem Fleisch?", "answer": "Ja, Fleischwurst muss laut Gesetz mindestens 60% Fleisch enthalten. Günstige Varianten enthalten mehr Fett und Wasser. Qualitäts-Fleischwurst hat oft 70-80% Fleischanteil." },
+    { "question": "Wie lange hält Fleischwurst?", "answer": "Ungeöffnet laut MHD, geöffnet 3-5 Tage im Kühlschrank. Angeschnittene Stücke mit Frischhaltefolie abdecken." }
+  ],
+  "related_foods": ["salami", "schinken", "mortadella", "leberwurst"]
+}
