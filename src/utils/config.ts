@@ -114,31 +114,31 @@ const templateConfig: TemplateConfig = {
     },
     partners: {
       title: "Mahlzait in Zahlen",
-      subtitle: "Stand: Februar 2026 · Basierend auf anonymisierten Nutzungsdaten",
+      subtitle: "Stand: März 2026 · Basierend auf anonymisierten Nutzungsdaten",
       stats: [
         {
           icon: "🍽️",
-          number: "50.000+",
+          number: "31.000+",
           label: "Geloggte Mahlzeiten",
-          tooltip: "Kumuliert seit App-Launch",
+          tooltip: "Kumuliert seit App-Launch (März 2026)",
         },
         {
-          icon: "📉",
-          number: "~0,5 kg",
-          label: "Ø Abnahme pro Woche",
-          tooltip: "Median bei Nutzern mit Abnehmziel und ≥5 Tracking-Tagen/Woche (n=420)",
+          icon: "🤖",
+          number: "14.500+",
+          label: "KI-Foto-Logs",
+          tooltip: "Mahlzeiten die per KI-Foto-Erkennung geloggt wurden",
         },
         {
-          icon: "📊",
-          number: "87%",
-          label: "Tracken 5+ Tage/Woche",
-          tooltip: "Anteil der Nutzer, die in den letzten 30 Tagen ≥5 Tage getrackt haben",
+          icon: "📱",
+          number: "7.300+",
+          label: "Barcode-Scans",
+          tooltip: "Lebensmittel per Barcode gescannt und geloggt",
         },
         {
-          icon: "🎯",
-          number: "~90%",
-          label: "Foto-Erkennungsrate",
-          tooltip: "Auswertung von 5.000 Foto-Logs: 90% korrekt erkannt bei ausreichender Beleuchtung",
+          icon: "👥",
+          number: "1.000+",
+          label: "Aktive Nutzer",
+          tooltip: "Monatlich aktive Nutzer (Stand: März 2026)",
         },
       ],
     },
@@ -177,7 +177,7 @@ const templateConfig: TemplateConfig = {
         {
           title: "KI-Logging",
           subtitle:
-            "Mahlzeiten per Foto oder Texteingabe loggen. Die KI erkennt Lebensmittel aus der Open Food Facts Datenbank (10 Mio+ Einträge). Erkennungsrate: ca. 90 % bei gut beleuchteten Fotos (getestet mit 5.000 Foto-Logs).",
+            "Mahlzeiten per Foto oder Texteingabe loggen. Die KI erkennt Lebensmittel aus der Open Food Facts Datenbank (10 Mio+ Einträge). Bereits über 14.500 Mahlzeiten wurden per KI-Foto geloggt.",
           icon: "/3D/bulb-front-color.webp",
           screenshot: "/screenshots/chat.webp",
         },
@@ -256,7 +256,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
           answer:
-            "Das KI-Logging nutzt KI zur Bilderkennung und eine Datenbank mit (10 Mio+ Einträge). Nutzer fotografieren oder beschreiben Mahlzeiten per Text. Die Erkennungsrate liegt bei ca. 90 % (Stichprobe: 5.000 Foto-Logs). Portionsgrößen sind manuell anpassbar.",
+            "Das KI-Logging nutzt KI zur Bilderkennung und eine Datenbank mit 10 Mio+ Einträgen. Nutzer fotografieren oder beschreiben Mahlzeiten per Text. Über 14.500 Mahlzeiten wurden bereits per KI-Foto geloggt. Portionsgrößen sind manuell anpassbar.",
         },
         {
           question: "Wie genau ist der Barcode-Scanner beim Kalorienzählen?",
@@ -300,7 +300,7 @@ const templateConfig: TemplateConfig = {
         "/screenshots/3.webp",
       ],
       rewards: ["5,0 Sterne \n im App Store", "Jetzt mit \n AI-Chat"],
-      usersDescription: "100+ Nutzer:innen tracken bereits mit Mahlzait",
+      usersDescription: "1.000+ Nutzer:innen tracken bereits mit Mahlzait",
       headlineMark: [0, 1],
     },
     pricing: {
