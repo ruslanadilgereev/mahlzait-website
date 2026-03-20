@@ -86,32 +86,32 @@ const templateConfig: TemplateConfig = {
       subtitle: "Ergebnisse von Mahlzait-Nutzern (Selbstberichte, keine Garantie für individuelle Ergebnisse)",
       cards: [
         {
-          name: "Mojo89111 – App Store ⭐⭐⭐⭐⭐",
+          name: "Mojo89111 – App Store",
           comment:
             "Ich habe sehr viele Apps ausprobiert, aber diese ist einfach mit Abstand einer der besten die ich je getestet habe. Keine Werbung, KI erkennt einfach das Essen vom Foto und berechnet die Kalorien. Ich benutze die App seit 4 Wochen und habe schon fast 6 kg abgenommen und das ohne zu hungern.",
         },
         {
-          name: "Dendrit99 – App Store ⭐⭐⭐⭐⭐",
+          name: "Dendrit99 – App Store",
           comment:
             "Früher habe ich immer ChatGPT genutzt um zu fragen wie viel Kalorien etwas hat, Mahlzait kann das genau so gut und ich habe sofort einen viel besseren Überblick! Seit 5 Wochen nutze ich bisher und 5 kg abgenommen.",
         },
         {
-          name: "olaf_scholz_official – App Store ⭐⭐⭐⭐⭐",
+          name: "olaf_scholz_official – App Store",
           comment:
             "Klassischer Fall von einem \"hidden champ\". Keine große Firma dahinter aber wesentlich performanter und preiswerter als die Konkurrenz. Hier wird Datenschutz wertgeschätzt.",
         },
         {
-          name: "Wladmax97 – App Store ⭐⭐⭐⭐⭐",
+          name: "Wladmax97 – App Store",
           comment:
             "Nicht nur ein sehr genauer Kalorienzähler, sondern ein persönlicher Ernährungscoach! Auswertung, Information, Gesundheitstipps und Rezeptvorschläge!",
         },
         {
-          name: "solomraza – App Store ⭐⭐⭐⭐⭐",
+          name: "solomraza – App Store",
           comment:
             "Einfach zu benutzen, ziemlich genaue KI zum Tracken. Hab paar Sachen getestet weil ich skeptisch war und er hat maximal 50-60 kcal abgewichen bei so Sachen wie Butterbrot und so.",
         },
         {
-          name: "wes-pe – App Store ⭐⭐⭐⭐⭐",
+          name: "wes-pe – App Store",
           comment:
             "Nach 5 Tagen täglicher Nutzung bin ich sehr zufrieden. Ich vergleiche die Daten mit einer anderen App, und es gibt kaum Abweichungen. Top!",
         },
