@@ -14,7 +14,7 @@ const rows: CompRow[] = [
   { feature: "Lebensmittel-DB", mahlzait: "10 Mio+", mfp: "14 Mio+", yazio: "4 Mio+", lifesum: "Nicht bekannt" },
   { feature: "KI-Mahlzeit-Vorschläge", mahlzait: "✅ (Pro)", mfp: "❌", yazio: "❌", lifesum: "❌" },
   { feature: "YouTube-Rezept-Import", mahlzait: "✅", mfp: "❌", yazio: "❌", lifesum: "❌" },
-  { feature: "Offline-Modus", mahlzait: "✅", mfp: "Teilweise", yazio: "Teilweise", lifesum: "❌" },
+  { feature: "Offline-Modus", mahlzait: "Teilweise (ohne KI)", mfp: "Teilweise", yazio: "Teilweise", lifesum: "❌" },
   { feature: "Werbefrei (Gratis)", mahlzait: "✅", mfp: "❌", yazio: "❌", lifesum: "❌" },
   { feature: "Apple Health / Google Fit", mahlzait: "✅", mfp: "✅", yazio: "✅", lifesum: "✅" },
   { feature: "Sprache", mahlzait: "Deutsch", mfp: "Multi (EN-fokussiert)", yazio: "Deutsch", lifesum: "Multi" },
