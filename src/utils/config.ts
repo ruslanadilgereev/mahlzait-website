@@ -86,29 +86,34 @@ const templateConfig: TemplateConfig = {
       subtitle: "Ergebnisse von Mahlzait-Nutzern (Selbstberichte, keine Garantie für individuelle Ergebnisse)",
       cards: [
         {
-          name: "Anna M., 34 – Berufstätige Mutter",
+          name: "Mojo89111 – App Store ⭐⭐⭐⭐⭐",
           comment:
-            "In 8 Wochen 6 kg abgenommen. Die Foto-Erkennung erfasst Mittagessen in ca. 2 Sekunden. Spare täglich 10–15 Minuten gegenüber manueller Eingabe. Tracke seit Februar 2026 durchgehend.",
+            "Ich habe sehr viele Apps ausprobiert, aber diese ist einfach mit Abstand einer der besten die ich je getestet habe. Keine Werbung, KI erkennt einfach das Essen vom Foto und berechnet die Kalorien. Ich benutze die App seit 4 Wochen und habe schon fast 6 kg abgenommen und das ohne zu hungern.",
         },
         {
-          name: "Markus T., 29 – Kraftsportler",
+          name: "Dendrit99 – App Store ⭐⭐⭐⭐⭐",
           comment:
-            "Brauche genaue Makros für den Muskelaufbau. Mahlzait trackt Protein zuverlässig – schaffe jetzt konstant 160 g pro Tag. Der Barcode-Scanner erkennt Proteinriegel und Supplements direkt. In 12 Wochen 4 kg zugelegt bei stabilem Körperfett.",
+            "Früher habe ich immer ChatGPT genutzt um zu fragen wie viel Kalorien etwas hat, Mahlzait kann das genau so gut und ich habe sofort einen viel besseren Überblick! Seit 5 Wochen nutze ich bisher und 5 kg abgenommen.",
         },
         {
-          name: "Sandra K., 42 – Diabetes-Typ-2-Patientin",
+          name: "olaf_scholz_official – App Store ⭐⭐⭐⭐⭐",
           comment:
-            "Muss auf Kohlenhydrate achten. Mahlzait zeigt sofort die KH-Werte an. Mein HbA1c-Langzeitwert hat sich laut meinem Diabetologen in 3 Monaten von 7,2 auf 6,4 verbessert. Die schnelle Eingabe macht tägliches Tracking praktikabel.",
+            "Klassischer Fall von einem \"hidden champ\". Keine große Firma dahinter aber wesentlich performanter und preiswerter als die Konkurrenz. Hier wird Datenschutz wertgeschätzt.",
         },
         {
-          name: "Julia R., 31 – nach Schwangerschaft",
+          name: "Wladmax97 – App Store ⭐⭐⭐⭐⭐",
           comment:
-            "Nutze Mahlzait seit der Schwangerschaft für die Kalorienübersicht. Nach der Geburt weitergetrackt und bin nach 4 Monaten fast beim Ausgangsgewicht. Keine Crash-Diät, einfach bewusste Ernährung mit Tracking-Unterstützung.",
+            "Nicht nur ein sehr genauer Kalorienzähler, sondern ein persönlicher Ernährungscoach! Auswertung, Information, Gesundheitstipps und Rezeptvorschläge!",
         },
         {
-          name: "Ben W., 26 – App-Wechsler",
+          name: "solomraza – App Store ⭐⭐⭐⭐⭐",
           comment:
-            "Habe MyFitnessPal, Yazio und Lifesum getestet. Mahlzait hat keine Werbung in der Gratis-Version und echtes KI-Logging per Foto. Tracke seit 10 Wochen täglich, 7 kg abgenommen – ca. 0,5–0,7 kg pro Woche wie vom Defizit berechnet.",
+            "Einfach zu benutzen, ziemlich genaue KI zum Tracken. Hab paar Sachen getestet weil ich skeptisch war und er hat maximal 50-60 kcal abgewichen bei so Sachen wie Butterbrot und so.",
+        },
+        {
+          name: "wes-pe – App Store ⭐⭐⭐⭐⭐",
+          comment:
+            "Nach 5 Tagen täglicher Nutzung bin ich sehr zufrieden. Ich vergleiche die Daten mit einer anderen App, und es gibt kaum Abweichungen. Top!",
         },
       ],
     },
