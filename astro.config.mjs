@@ -8,6 +8,7 @@ import indexnow from "astro-indexnow";
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.mahlzait.de",
+  trailingSlash: "always",
   compressHTML: true,
   vite: {
     css: {
@@ -25,6 +26,7 @@ export default defineConfig({
       changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date(),
+      filter: (page) => !page.includes("/app") && !page.includes("/privacy-policy") && !page.includes("/terms-and-conditions"),
       serialize(item) {
         const url = item.url;
         

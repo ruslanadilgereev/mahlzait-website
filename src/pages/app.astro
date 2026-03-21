@@ -5,7 +5,7 @@ import StructuredData from "@components/seo/StructuredData.astro"
 import defaultTemplateConfig from "utils/config";
 ---
 
-<Layout {...defaultTemplateConfig}>
+<Layout {...defaultTemplateConfig} noindex={true}>
   <StructuredData config={defaultTemplateConfig} type="page" pageTitle="App" />
   <AppRedirectionPage client:load config={defaultTemplateConfig} />
 </Layout>

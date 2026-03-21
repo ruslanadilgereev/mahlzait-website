@@ -887,7 +887,7 @@ export const articlesMeta: ArticleMeta[] = [
     ],
   },
   {
-    slug: "ernährungswissenschaft-grundlagen-erklaert",
+    slug: "ernaehrungswissenschaft-grundlagen-erklaert",
     title: "Ernährungswissenschaft einfach erklärt: 13 Minuten für deine Gesundheit",
     description:
       "Eine wissenschaftlich fundierte Zusammenfassung der wichtigsten Ernährungs-Basics. Von Verdauung über Makros bis zu praktischen Tipps – ohne Bullshit.",
@@ -1124,7 +1124,7 @@ export const articlesMeta: ArticleMeta[] = [
     ],
   },
   {
-    slug: "ki-ernährungsanalyse-aus-fotos-review",
+    slug: "ki-ernaehrungsanalyse-aus-fotos-review",
     title: "KI-Ernährungsanalyse per Foto: Wie genau ist das? (Review)",
     description:
       "Systematischer Review (Annals of Medicine, 2023): KI-basierte Ernährungsanalyse aus Essensfotos im Vergleich zu Menschen/Ground Truth. Ergebnis: stark variable Fehler – gut bei einfachen Foods, schwieriger bei komplexen Gerichten.",

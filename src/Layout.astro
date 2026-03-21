@@ -5,8 +5,8 @@ import SpeedInsights from "@vercel/speed-insights/astro";
 import Analytics from "@vercel/analytics/astro";
 import CookieConsent from "@components/cookieConsent";
 
-const { backgroundGrid, seo, logo, theme, forceTheme } =
-  Astro.props as TemplateConfig;
+const { backgroundGrid, seo, logo, theme, forceTheme, noindex } =
+  Astro.props as TemplateConfig & { noindex?: boolean };
 
 const siteUrl = "https://www.mahlzait.de";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
@@ -41,7 +41,7 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <meta name="author" content="Mahlzait" />
     <meta
       name="robots"
-      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      content={noindex ? "noindex, nofollow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"}
     />
     <meta name="theme-color" content="#10b981" />
 
