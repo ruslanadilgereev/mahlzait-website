@@ -4,7 +4,7 @@ const highlights = [
   { icon: "📸", label: "Foto, Barcode oder Text" },
   { icon: "🍎", label: "10 Mio+ Lebensmittel" },
   { icon: "🇪🇺", label: "DSGVO-konform" },
-  { icon: "⚡", label: "KI in ~2 Sekunden" },
+  { icon: "🍽️", label: "KI-Mahlzeit-Vorschläge" },
 ];
 
 function EntityDefinition() {
