@@ -48,6 +48,7 @@ const templateConfig: TemplateConfig = {
       { href: "/ueber-uns", title: "Über uns" },
       { href: "/vergleich", title: "App-Vergleich" },
       { href: "/wissen", title: "Wissen" },
+      { href: "/kalorien", title: "Kalorientabelle" },
     ],
   },
   topNavbar: {
@@ -60,6 +61,7 @@ const templateConfig: TemplateConfig = {
       { href: "/#features", title: "Features" },
       { href: "/#how-it-works", title: "Anleitung" },
       { href: "/#pricing", title: "Preise" },
+      { href: "/kalorien", title: "Kalorientabelle" },
       { href: "/wissen", title: "Wissen" },
       { href: "/rechner", title: "Rechner" },
     ],
