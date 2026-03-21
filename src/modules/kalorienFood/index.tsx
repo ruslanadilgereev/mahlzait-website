@@ -344,6 +344,29 @@ function KalorienFoodPage({ config, food }: Props) {
             </div>
           </div>
 
+          {/* Related Foods */}
+          {food.related_foods && food.related_foods.length > 0 && (
+            <div className="max-w-2xl mx-auto mb-12">
+              <h2 className="text-2xl font-bold mb-4">🔗 Ähnliche Lebensmittel</h2>
+              <div className="flex flex-wrap gap-2">
+                {food.related_foods.map((slug: string) => (
+                  <a
+                    key={slug}
+                    href={`/kalorien/${slug}/`}
+                    className="badge badge-lg badge-outline hover:badge-primary transition-colors py-3 px-4 text-sm"
+                  >
+                    {slug.charAt(0).toUpperCase() + slug.slice(1).replace(/-/g, ' ')} →
+                  </a>
+                ))}
+              </div>
+              <p className="text-sm text-gray-500 mt-3">
+                <a href="/kalorien/" className="text-primary hover:underline">
+                  → Alle {'>'}200 Lebensmittel in der Kalorientabelle
+                </a>
+              </p>
+            </div>
+          )}
+
           {/* App CTA */}
           <div className="card bg-primary text-primary-content shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8 text-center">
