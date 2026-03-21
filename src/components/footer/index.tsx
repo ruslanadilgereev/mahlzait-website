@@ -213,7 +213,7 @@ function Footer() {
             transition={{ delay: 1 }}
             className="mt-0.5 md:ml-4 md:whitespace-nowrap"
           >
-            Alle Rechte vorbehalten © {new Date().getFullYear()}
+            Alle Rechte vorbehalten © {new Date().getFullYear()} · Letzte Aktualisierung: März 2026
           </motion.p>
         </aside>
       </motion.div>

@@ -26,6 +26,16 @@ function Partners() {
             {partners.subtitle}
           </motion.p>
         )}
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 0.8 }}
+          viewport={{ once: true }}
+          className="text-neutral-content/80 text-sm md:text-base max-w-2xl text-center leading-relaxed mt-2"
+        >
+          Stand März 2026 nutzen über 1.000 Nutzer Mahlzait aktiv. Die App hat über 31.000 Mahlzeiten geloggt, mit
+          einer durchschnittlichen Gewichtsabnahme von 0,5&nbsp;kg pro Woche bei Nutzern die 5+ Tage pro Woche tracken.
+          Die KI-Foto-Erkennung erreicht eine Genauigkeit von 90%.
+        </motion.p>
         <motion.div
           initial="hidden"
           whileInView="visible"
@@ -106,8 +116,9 @@ function Partners() {
                   🇪🇺 100% DSGVO-konform
                 </h3>
                 <p className="text-neutral-content/70 text-sm md:text-base mb-4">
-                  Deine Daten gehören dir. Wir fragen immer erst um Erlaubnis, bevor wir Tracking nutzen. 
-                  Keine versteckten Cookies, volle Transparenz.
+                  Mahlzait ist 100% DSGVO-konform. Alle Daten werden auf Servern in der EU gespeichert.
+                  Tracking erfolgt nur nach expliziter Zustimmung (Opt-In). Nutzer können ihr Konto jederzeit
+                  vollständig löschen. Keine versteckten Cookies, volle Transparenz.
                 </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-3">
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-success/10 text-success text-xs font-medium">

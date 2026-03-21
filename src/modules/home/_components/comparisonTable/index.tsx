@@ -68,7 +68,8 @@ function ComparisonTable() {
           </table>
         </div>
         <p className="text-xs text-base-content/50 mt-4 text-center">
-          Preise und Features können abweichen. Daten basieren auf öffentlich verfügbaren Informationen der jeweiligen App-Store-Einträge und Websites (Stand: Februar 2026).
+          Preise und Features können abweichen. Daten basieren auf öffentlich verfügbaren Informationen der jeweiligen App-Store-Einträge und Websites (Stand: März 2026).
+          Datenquelle Lebensmittel-DB: <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer" className="link">Open Food Facts</a> – Offene Lebensmitteldatenbank mit über 3 Millionen Produkten weltweit. Mahlzait nutzt diese Datenbank in Kombination mit eigenen Ergänzungen.
         </p>
       </motion.div>
     </section>

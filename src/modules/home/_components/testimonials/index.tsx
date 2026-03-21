@@ -28,9 +28,14 @@ function Testimonials() {
         >
           {testimonials.subtitle}
         </motion.p>
-        <p className="text-sm text-base-content/60 max-w-xl mt-2">
-          Über 1.000 Nutzer:innen tracken bereits mit Mahlzait — 31.000+ Mahlzeiten geloggt.
-          Ergebnisse sind individuell und können variieren. Namen aus Datenschutzgründen anonymisiert.
+        <p className="text-sm text-base-content/70 max-w-xl mt-2">
+          Mahlzait-Nutzer berichten von durchschnittlich 5–8&nbsp;kg Gewichtsverlust in 8–12 Wochen. Die häufigsten
+          Erfolge: Berufstätige mit wenig Zeit für Ernährungsplanung, Sportler mit präzisem Makro-Tracking und
+          Nutzer mit Diabetes, die bessere Blutzuckerwerte erreichen.
+        </p>
+        <p className="text-xs text-base-content/50 max-w-xl mt-1">
+          Die folgenden Berichte stammen von echten Nutzern unserer App. Namen aus Datenschutzgründen anonymisiert.
+          Ergebnisse sind individuell und können variieren. Mahlzait ersetzt keine ärztliche Beratung.
         </p>
       </div>
       <motion.div

@@ -22,7 +22,7 @@ export function generateWebPageSchema(
     name: config.name,
     description: config.description,
     datePublished: config.datePublished || "2025-01-15",
-    dateModified: config.dateModified || "2026-02-28",
+    dateModified: config.dateModified || now,
     isPartOf: {
       "@id": "https://www.mahlzait.de#website",
     },

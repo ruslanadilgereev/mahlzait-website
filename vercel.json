@@ -22,36 +22,38 @@
     },
     {
       "source": "/wp-sitemap-posts-page-1.xml",
-      "statusCode": 410
+      "destination": "/gone/",
+      "permanent": true
     },
     {
       "source": "/wp-sitemap.xml",
-      "statusCode": 410
+      "destination": "/gone/",
+      "permanent": true
     },
     {
       "source": "/wp-sitemap-posts-post-1.xml",
-      "statusCode": 410
+      "destination": "/gone/",
+      "permanent": true
     },
     {
       "source": "/wp-:path*",
-      "statusCode": 410
+      "destination": "/gone/",
+      "permanent": true
     },
     {
       "source": "/sample-page/:path*",
-      "statusCode": 410
+      "destination": "/gone/",
+      "permanent": true
     },
     {
       "source": "/uncategorized/:path*",
-      "statusCode": 410
+      "destination": "/gone/",
+      "permanent": true
     },
     {
       "source": "/category/:path*",
-      "statusCode": 410
-    },
-    {
-      "source": "/",
-      "has": [{ "type": "query", "key": "s" }],
-      "statusCode": 410
+      "destination": "/gone/",
+      "permanent": true
     }
   ],
   "headers": [

@@ -12,6 +12,7 @@ import Pricing from "./_components/pricing";
 import Testimonials from "./_components/testimonials";
 import LiveDemo from "./_components/liveDemo";
 import ComparisonTable from "./_components/comparisonTable";
+import EntityDefinition from "./_components/entityDefinition";
 
 function MedicalDisclaimer() {
   return (
@@ -29,6 +30,12 @@ function MedicalDisclaimer() {
           in der EU gespeichert. Tracking erfolgt nur nach expliziter Zustimmung (Opt-In). Nutzer können ihr
           Konto jederzeit vollständig löschen.
         </p>
+        <p>
+          <strong>Wissenschaftliche Grundlagen:</strong> Mahlzait basiert auf anerkannten Ernährungsprinzipien:
+          Kaloriendefizit für Gewichtsabnahme (Quelle: <a href="https://www.dge.de/" target="_blank" rel="noopener noreferrer" className="link link-primary">Deutsche Gesellschaft für Ernährung, DGE</a>),
+          Makronährstoff-Tracking für ausgewogene Ernährung (Quelle: <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noopener noreferrer" className="link link-primary">WHO-Richtlinien</a>).
+          Mehr dazu in unserem <a href="/wissen/" className="link link-primary">Wissen-Bereich</a>.
+        </p>
       </div>
     </section>
   );
@@ -44,6 +51,7 @@ function Home({ config }: Props) {
       <main>
         <Navbar />
         <Header />
+        <EntityDefinition />
         <Partners />
         <LiveDemo />
         <Features />

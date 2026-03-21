@@ -26,7 +26,7 @@ export default defineConfig({
       changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date(),
-      filter: (page) => !page.includes("/app") && !page.includes("/privacy-policy") && !page.includes("/terms-and-conditions"),
+      filter: (page) => !page.includes("/app") && !page.includes("/privacy-policy") && !page.includes("/terms-and-conditions") && !page.includes("/gone"),
       serialize(item) {
         const url = item.url;
         
