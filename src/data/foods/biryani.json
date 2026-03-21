@@ -1,0 +1,51 @@
+{
+  "slug": "biryani",
+  "name": "Biryani",
+  "emoji": "🍚",
+  "category": "gericht",
+  "seo": {
+    "title": "Biryani Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Biryani? Nährwerte für Chicken, Lamb & Vegetable Biryani. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 160,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 5,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 400,
+    "typical_portion_name": "1 Teller"
+  },
+  "variants": [
+    {"name": "Chicken Biryani", "portion_g": 400, "calories": 640, "protein": 32, "carbs": 88, "fat": 20, "tip": "Beliebteste Variante"},
+    {"name": "Lamb Biryani", "portion_g": 400, "calories": 700, "protein": 30, "carbs": 86, "fat": 26},
+    {"name": "Vegetable Biryani", "portion_g": 400, "calories": 520, "protein": 14, "carbs": 90, "fat": 12, "tip": "Kalorienärmste Variante"},
+    {"name": "Egg Biryani", "portion_g": 400, "calories": 580, "protein": 22, "carbs": 88, "fat": 16},
+    {"name": "Prawn Biryani", "portion_g": 400, "calories": 560, "protein": 28, "carbs": 86, "fat": 14, "tip": "Leicht & proteinreich"},
+    {"name": "Hyderabadi Biryani", "portion_g": 450, "calories": 730, "protein": 34, "carbs": 92, "fat": 26, "tip": "Besonders aromatisch"},
+    {"name": "Biryani Restaurant-Portion", "portion_g": 550, "calories": 880, "protein": 40, "carbs": 110, "fat": 30},
+    {"name": "Biryani light (weniger Ghee)", "portion_g": 400, "calories": 540, "protein": 32, "carbs": 84, "fat": 12, "tip": "Kalorienreduziert"}
+  ],
+  "comparison": [
+    {"name": "Butter Chicken mit Reis", "calories": 680, "emoji": "🍛"},
+    {"name": "Tikka Masala mit Reis", "calories": 650, "emoji": "🍛"},
+    {"name": "Gebratener Reis", "calories": 460, "emoji": "🍚"},
+    {"name": "Paella", "calories": 600, "emoji": "🥘"}
+  ],
+  "tips": [
+    {"title": "Ghee reduzieren", "text": "Traditionelles Biryani verwendet viel Ghee (Butterschmalz). Halbiere die Menge und spare 100+ kcal.", "icon": "🧈"},
+    {"title": "Basmati-Reis abspülen", "text": "Gut gespülter Basmati wird locker und klebt nicht – weniger Öl nötig beim Kochen.", "icon": "🍚"},
+    {"title": "Raita als Beilage", "text": "Joghurt-Raita hat ca. 50 kcal/100g und kühlt den Gaumen – besser als Naan-Brot (260 kcal).", "icon": "🥛"},
+    {"title": "Chicken statt Lamb", "text": "Chicken Biryani hat ca. 60 kcal weniger als Lamb Biryani – bei ähnlichem Geschmack.", "icon": "🍗"},
+    {"title": "Safran und Gewürze", "text": "Die Gewürze im Biryani (Kardamom, Zimt, Sternanis) haben antioxidative Eigenschaften.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Biryani?", "answer": "Ein Teller Chicken Biryani (400g) hat ca. 640 kcal. Vegetable Biryani hat ca. 520 kcal, Lamb Biryani ca. 700 kcal."},
+    {"question": "Ist Biryani kalorienreich?", "answer": "Ja, Biryani ist durch Reis, Ghee und Fleisch relativ kalorienreich (160 kcal/100g). Es ist eine vollständige Mahlzeit."},
+    {"question": "Wie viel Protein hat Biryani?", "answer": "Chicken Biryani liefert ca. 32g Protein pro Teller – hauptsächlich aus dem Hähnchen. Prawn Biryani hat 28g."},
+    {"question": "Welches Biryani hat am wenigsten Kalorien?", "answer": "Vegetable Biryani (520 kcal) oder Biryani light mit wenig Ghee (540 kcal) sind am kalorienärmsten."},
+    {"question": "Kann man Biryani beim Abnehmen essen?", "answer": "In moderater Portion ja. Eine halbe Portion (200g, ca. 320 kcal) oder Vegetable Biryani passen in einen Diätplan."},
+    {"question": "Was ist der Unterschied zwischen Biryani und Pilaw?", "answer": "Biryani wird schichtweise (Reis + Fleisch) gegart, Pilaw wird zusammen gekocht. Biryani ist aromatischer und oft kalorienreicher."}
+  ],
+  "related_foods": ["tikka-masala", "butter-chicken", "curry-haehnchen", "fried-rice"]
+}

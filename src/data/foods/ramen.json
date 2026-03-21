@@ -1,0 +1,51 @@
+{
+  "slug": "ramen",
+  "name": "Ramen",
+  "emoji": "🍜",
+  "category": "gericht",
+  "seo": {
+    "title": "Ramen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Ramen? Nährwerte für Shoyu, Miso, Tonkotsu Ramen & Instant-Nudeln. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 95,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 12,
+    "fat_per_100g": 3,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 550,
+    "typical_portion_name": "1 Schüssel"
+  },
+  "variants": [
+    {"name": "Shoyu Ramen (Sojasauce)", "portion_g": 550, "calories": 480, "protein": 25, "carbs": 62, "fat": 16, "tip": "Leichterer Klassiker"},
+    {"name": "Miso Ramen", "portion_g": 550, "calories": 520, "protein": 26, "carbs": 65, "fat": 18},
+    {"name": "Tonkotsu Ramen (Schweineknochen)", "portion_g": 600, "calories": 650, "protein": 30, "carbs": 68, "fat": 28, "tip": "Reichhaltigste Variante"},
+    {"name": "Shio Ramen (Salz)", "portion_g": 550, "calories": 460, "protein": 24, "carbs": 60, "fat": 14, "tip": "Am leichtesten"},
+    {"name": "Tantanmen (scharf)", "portion_g": 550, "calories": 580, "protein": 28, "carbs": 60, "fat": 26},
+    {"name": "Vegane Ramen (Gemüsebrühe)", "portion_g": 550, "calories": 420, "protein": 16, "carbs": 64, "fat": 12, "tip": "Kalorienärmste Variante"},
+    {"name": "Instant-Ramen (1 Packung)", "portion_g": 400, "calories": 380, "protein": 8, "carbs": 52, "fat": 16, "tip": "Wenig Nährstoffe"},
+    {"name": "Ramen mit extra Chashu-Schwein", "portion_g": 650, "calories": 720, "protein": 38, "carbs": 68, "fat": 34}
+  ],
+  "comparison": [
+    {"name": "Pho", "calories": 420, "emoji": "🍲"},
+    {"name": "Pad Thai", "calories": 480, "emoji": "🍜"},
+    {"name": "Sushi-Platte", "calories": 500, "emoji": "🍣"},
+    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"}
+  ],
+  "tips": [
+    {"title": "Brühe macht den Unterschied", "text": "Shoyu und Shio haben klare Brühe mit ca. 460-480 kcal. Tonkotsu ist cremig-fettig mit 650 kcal.", "icon": "🍲"},
+    {"title": "Ei hinzufügen", "text": "Ein Ajitsuke-Ei (mariniert) hat ca. 70 kcal und liefert 6g Protein – lohnt sich!", "icon": "🥚"},
+    {"title": "Instant-Ramen aufwerten", "text": "Füge ein Ei, Gemüse und Frühlingszwiebeln zu Instant-Ramen hinzu für bessere Nährwerte.", "icon": "💡"},
+    {"title": "Nudeln nicht komplett essen", "text": "Die Nudeln machen den Großteil der Kalorien aus. Lass etwas übrig und genieße mehr Brühe.", "icon": "🍜"},
+    {"title": "Brühe trinken statt weglassen", "text": "Die Brühe enthält Kollagen und Mineralien – aber auch viel Natrium. Trink sie in Maßen.", "icon": "🥣"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Ramen?", "answer": "Eine Schüssel Ramen hat ca. 460-650 kcal, je nach Brühe. Shoyu Ramen hat ca. 480 kcal, Tonkotsu ca. 650 kcal."},
+    {"question": "Ist Ramen gesund?", "answer": "Restaurant-Ramen kann ausgewogen sein: Protein (Ei, Fleisch), Gemüse und Kohlenhydrate. Instant-Ramen ist weniger nahrhaft."},
+    {"question": "Wie viele Kalorien hat Instant-Ramen?", "answer": "Eine Packung Instant-Ramen hat ca. 380 kcal – aber wenig Protein (8g) und viel Natrium."},
+    {"question": "Welche Ramen hat am wenigsten Kalorien?", "answer": "Vegane Ramen mit Gemüsebrühe (420 kcal) oder Shio Ramen (460 kcal) sind am kalorienärmsten."},
+    {"question": "Wie viel Protein hat Ramen?", "answer": "Eine Schüssel hat ca. 24-30g Protein durch Nudeln, Ei und Fleisch. Mit extra Chashu bis zu 38g."},
+    {"question": "Was hat weniger Kalorien: Ramen oder Pho?", "answer": "Pho (ca. 420 kcal) hat tendenziell weniger Kalorien als Ramen (460-650 kcal), da die Brühe leichter ist."}
+  ],
+  "related_foods": ["pho", "pad-thai", "sushi", "gebratene-nudeln"]
+}

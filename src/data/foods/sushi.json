@@ -1,0 +1,51 @@
+{
+  "slug": "sushi",
+  "name": "Sushi",
+  "emoji": "🍣",
+  "category": "gericht",
+  "seo": {
+    "title": "Sushi Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Sushi? Nährwerte für Maki, Nigiri, California Roll & mehr. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 143,
+    "protein_per_100g": 6,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 3.5,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Sushi-Set (12 Stück)"
+  },
+  "variants": [
+    {"name": "Lachs-Nigiri (8 Stück)", "portion_g": 240, "calories": 360, "protein": 20, "carbs": 48, "fat": 10, "tip": "Klassiker"},
+    {"name": "Maki (Lachs, 8 Stück)", "portion_g": 200, "calories": 280, "protein": 12, "carbs": 44, "fat": 6, "tip": "Kalorienärmste Variante"},
+    {"name": "California Roll (8 Stück)", "portion_g": 240, "calories": 390, "protein": 14, "carbs": 52, "fat": 14},
+    {"name": "Sushi-Platte gemischt (12 Stück)", "portion_g": 350, "calories": 500, "protein": 24, "carbs": 72, "fat": 14, "tip": "Typische Bestellung"},
+    {"name": "Thunfisch-Nigiri (8 Stück)", "portion_g": 240, "calories": 340, "protein": 24, "carbs": 48, "fat": 6, "tip": "Besonders proteinreich"},
+    {"name": "Tempura Roll (8 Stück)", "portion_g": 260, "calories": 480, "protein": 16, "carbs": 58, "fat": 22, "tip": "Frittiert – mehr Kalorien"},
+    {"name": "Veggie Maki (8 Stück)", "portion_g": 200, "calories": 250, "protein": 6, "carbs": 48, "fat": 3},
+    {"name": "Sashimi (nur Fisch, 10 Stück)", "portion_g": 150, "calories": 180, "protein": 30, "carbs": 0, "fat": 6, "tip": "Low-Carb Option"}
+  ],
+  "comparison": [
+    {"name": "Ramen", "calories": 500, "emoji": "🍜"},
+    {"name": "Pad Thai", "calories": 480, "emoji": "🍜"},
+    {"name": "Lachs gebraten", "calories": 350, "emoji": "🐟"},
+    {"name": "Reis (1 Portion)", "calories": 260, "emoji": "🍚"}
+  ],
+  "tips": [
+    {"title": "Sashimi statt Nigiri", "text": "Sashimi (nur Fisch ohne Reis) hat ca. 120 kcal/100g – fast die Hälfte weniger als Nigiri.", "icon": "🐟"},
+    {"title": "Maki statt Inside-Out Rolls", "text": "Einfache Maki haben weniger Reis und kein Frischkäse – ideal für Kalorienbewusste.", "icon": "🍣"},
+    {"title": "Vorsicht bei Tempura", "text": "Frittierte Tempura Rolls haben fast doppelt so viele Kalorien wie normale Maki.", "icon": "⚠️"},
+    {"title": "Sojasauce in Maßen", "text": "Sojasauce hat kaum Kalorien, aber viel Natrium. Tauche nur die Fischseite ein.", "icon": "🫙"},
+    {"title": "Ingwer reinigt den Gaumen", "text": "Eingelegter Ingwer hat fast keine Kalorien und fördert die Verdauung.", "icon": "🫚"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Sushi?", "answer": "100g Sushi haben ca. 143 kcal. Ein Set mit 12 Stück (gemischt) hat ca. 500 kcal. Einzelne Maki haben ca. 35 kcal pro Stück."},
+    {"question": "Ist Sushi gut zum Abnehmen?", "answer": "Ja, Sushi ist relativ kalorienarm und proteinreich. 8 Lachs-Maki haben nur ca. 280 kcal. Vermeide Tempura und Frischkäse-Rolls."},
+    {"question": "Wie viel Protein hat Sushi?", "answer": "Eine Sushi-Platte (12 Stück) liefert ca. 24g Protein. Sashimi hat am meisten Protein: 30g pro 150g-Portion."},
+    {"question": "Welches Sushi hat am wenigsten Kalorien?", "answer": "Veggie Maki (250 kcal/8 Stück) und Sashimi (180 kcal/10 Stück) sind am kalorienärmsten."},
+    {"question": "Wie viele Kalorien hat ein einzelnes Sushi-Stück?", "answer": "Ein Maki: ca. 35 kcal. Ein Nigiri: ca. 45 kcal. Eine California Roll: ca. 49 kcal pro Stück."},
+    {"question": "Hat Sushi viele Kohlenhydrate?", "answer": "Ja, durch den Sushireis. Eine Sushi-Platte hat ca. 72g Kohlenhydrate. Sashimi (ohne Reis) hat 0g Kohlenhydrate."}
+  ],
+  "related_foods": ["ramen", "lachsfilet", "reis", "pad-thai"]
+}

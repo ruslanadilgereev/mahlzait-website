@@ -1,0 +1,51 @@
+{
+  "slug": "tortellini",
+  "name": "Tortellini",
+  "emoji": "🥟",
+  "category": "gericht",
+  "seo": {
+    "title": "Tortellini Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Tortellini? Nährwerte für Käse-, Fleisch- und Spinat-Tortellini. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 245,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 35,
+    "fat_per_100g": 7,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Teller"
+  },
+  "variants": [
+    {"name": "Käse-Tortellini (Ricotta & Spinat)", "portion_g": 300, "calories": 735, "protein": 30, "carbs": 105, "fat": 21, "tip": "Klassiker"},
+    {"name": "Fleisch-Tortellini", "portion_g": 300, "calories": 780, "protein": 36, "carbs": 102, "fat": 24},
+    {"name": "Tortellini in Sahnesauce", "portion_g": 400, "calories": 920, "protein": 32, "carbs": 108, "fat": 42, "tip": "Kalorienreichste Variante"},
+    {"name": "Tortellini in Tomatensauce", "portion_g": 380, "calories": 680, "protein": 28, "carbs": 110, "fat": 16, "tip": "Leichtere Sauce"},
+    {"name": "Tortellini in Brühe", "portion_g": 400, "calories": 550, "protein": 26, "carbs": 82, "fat": 14, "tip": "Kalorienärmste Variante"},
+    {"name": "Tortellini-Salat (kalt)", "portion_g": 350, "calories": 640, "protein": 24, "carbs": 90, "fat": 22},
+    {"name": "Vollkorn-Tortellini", "portion_g": 300, "calories": 710, "protein": 32, "carbs": 96, "fat": 20, "tip": "Mehr Ballaststoffe"},
+    {"name": "Tortellini mit Pesto", "portion_g": 320, "calories": 760, "protein": 28, "carbs": 95, "fat": 30}
+  ],
+  "comparison": [
+    {"name": "Ravioli", "calories": 700, "emoji": "🥟"},
+    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"},
+    {"name": "Gnocchi mit Pesto", "calories": 550, "emoji": "🥔"},
+    {"name": "Lasagne", "calories": 580, "emoji": "🧀"}
+  ],
+  "tips": [
+    {"title": "Tortellini sind kalorienreich", "text": "Durch die Füllung haben Tortellini ca. 245 kcal/100g – fast doppelt so viel wie normale Pasta.", "icon": "⚠️"},
+    {"title": "Brühe statt Sahnesauce", "text": "Tortellini in Brühe haben ca. 550 kcal – fast die Hälfte weniger als mit Sahnesauce (920 kcal).", "icon": "🍲"},
+    {"title": "Portion kontrollieren", "text": "250g statt 300g Tortellini spart ca. 180 kcal und ist trotzdem eine sättigende Mahlzeit.", "icon": "⚖️"},
+    {"title": "Gemüse dazu servieren", "text": "Ein Salat oder gedünstetes Gemüse als Beilage macht die Mahlzeit ausgewogener.", "icon": "🥗"},
+    {"title": "Frische vs. Fertigprodukt", "text": "Frische Tortellini vom Kühlregal sind oft hochwertiger als Trockenware und schmecken besser.", "icon": "🛒"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Tortellini?", "answer": "100g Tortellini haben ca. 245 kcal. Ein Teller (300g) ohne Sauce hat ca. 735 kcal – mit Sahnesauce bis zu 920 kcal."},
+    {"question": "Haben Tortellini mehr Kalorien als normale Pasta?", "answer": "Ja, deutlich. Tortellini haben ca. 245 kcal/100g durch die Füllung, normale Pasta nur ca. 158 kcal/100g (gekocht)."},
+    {"question": "Welche Tortellini haben am wenigsten Kalorien?", "answer": "Ricotta-Spinat-Tortellini in Brühe sind am kalorienärmsten mit ca. 550 kcal pro Portion."},
+    {"question": "Wie viel Protein haben Tortellini?", "answer": "Tortellini liefern ca. 10g Protein pro 100g. Ein Teller (300g) hat 26-36g Protein, je nach Füllung."},
+    {"question": "Sind Tortellini gut zum Abnehmen?", "answer": "Bedingt. Die Kaloriendichte ist hoch. Am besten eine kleine Portion (200g) in Brühe wählen – das sind ca. 370 kcal."},
+    {"question": "Was ist besser: Käse- oder Fleisch-Tortellini?", "answer": "Käse-Tortellini haben etwas weniger Kalorien (735 vs. 780 kcal/Teller). Fleisch-Tortellini haben dafür mehr Protein."}
+  ],
+  "related_foods": ["spaghetti-bolognese", "lasagne", "gnocchi", "penne-arrabiata"]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "paella",
+  "name": "Paella",
+  "emoji": "🥘",
+  "category": "gericht",
+  "seo": {
+    "title": "Paella Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Paella? Nährwerte für Paella Valenciana, Meeresfrüchte-Paella & Mixta. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 150,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 5,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 400,
+    "typical_portion_name": "1 Teller"
+  },
+  "variants": [
+    {"name": "Paella Valenciana (Hähnchen & Bohnen)", "portion_g": 400, "calories": 600, "protein": 32, "carbs": 72, "fat": 20, "tip": "Das Original"},
+    {"name": "Paella Mixta (Fleisch & Meeresfrüchte)", "portion_g": 400, "calories": 580, "protein": 34, "carbs": 70, "fat": 18, "tip": "Beliebte Variante"},
+    {"name": "Meeresfrüchte-Paella", "portion_g": 400, "calories": 520, "protein": 30, "carbs": 68, "fat": 14, "tip": "Leichteste Fleisch-Variante"},
+    {"name": "Vegetarische Paella", "portion_g": 400, "calories": 460, "protein": 14, "carbs": 76, "fat": 12, "tip": "Kalorienärmste Variante"},
+    {"name": "Paella Negra (mit Tinte)", "portion_g": 400, "calories": 540, "protein": 28, "carbs": 70, "fat": 16},
+    {"name": "Paella mit Hähnchen", "portion_g": 400, "calories": 570, "protein": 30, "carbs": 72, "fat": 18},
+    {"name": "Restaurant-Paella (großer Teller)", "portion_g": 550, "calories": 825, "protein": 44, "carbs": 99, "fat": 28},
+    {"name": "Paella light (weniger Öl)", "portion_g": 400, "calories": 480, "protein": 28, "carbs": 70, "fat": 10, "tip": "Kalorienreduziert"}
+  ],
+  "comparison": [
+    {"name": "Risotto", "calories": 490, "emoji": "🍚"},
+    {"name": "Biryani", "calories": 640, "emoji": "🍚"},
+    {"name": "Gebratener Reis", "calories": 460, "emoji": "🍳"},
+    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"}
+  ],
+  "tips": [
+    {"title": "Olivenöl dosieren", "text": "Paella braucht Olivenöl, aber 2 EL reichen statt 4-5 EL. Spart 180 kcal.", "icon": "🫒"},
+    {"title": "Meeresfrüchte statt Fleisch", "text": "Garnelen und Muscheln sind kalorienärmer als Hähnchen und Chorizo. Spart ca. 80 kcal.", "icon": "🦐"},
+    {"title": "Reis nicht zu viel", "text": "80g Reis (trocken) pro Person sind ideal. Viele Rezepte verwenden 120-150g – das summiert sich.", "icon": "⚖️"},
+    {"title": "Socarrat ist der Star", "text": "Die knusprige Reiskruste am Boden (Socarrat) ist das Beste an Paella – kalorienneutral!", "icon": "🔥"},
+    {"title": "Safran und Paprika", "text": "Die typische Gewürzmischung hat keine Kalorien, aber viele Antioxidantien.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Paella?", "answer": "Ein Teller Paella (400g) hat ca. 460-600 kcal, je nach Variante. Paella Valenciana hat ca. 600 kcal, Meeresfrüchte-Paella ca. 520 kcal."},
+    {"question": "Ist Paella kalorienreich?", "answer": "Mittel – 150 kcal/100g. Der Reis und das Olivenöl sind die Hauptkalorienbringer. Vergleichbar mit Risotto."},
+    {"question": "Wie viel Protein hat Paella?", "answer": "Ein Teller liefert 28-34g Protein, je nach Zutat. Paella Mixta hat am meisten (34g) durch Fleisch und Meeresfrüchte."},
+    {"question": "Welche Paella hat am wenigsten Kalorien?", "answer": "Vegetarische Paella (460 kcal) und Meeresfrüchte-Paella (520 kcal) sind am kalorienärmsten."},
+    {"question": "Kann man Paella beim Abnehmen essen?", "answer": "Ja, besonders die Meeresfrüchte- oder vegetarische Variante (460-520 kcal). Achte auf die Reis-Portion."},
+    {"question": "Wie viele Kalorien hat Restaurant-Paella?", "answer": "Restaurant-Portionen sind größer (550g+) und öliger. Rechne mit 700-825 kcal pro Teller."}
+  ],
+  "related_foods": ["risotto", "fried-rice", "biryani", "spaghetti-bolognese"]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "moussaka",
+  "name": "Moussaka",
+  "emoji": "🍆",
+  "category": "gericht",
+  "seo": {
+    "title": "Moussaka Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Moussaka? Nährwerte für griechische Moussaka mit Aubergine, Hackfleisch & Béchamel. Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 145,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 8,
+    "fat_per_100g": 9,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    {"name": "Griechische Moussaka (klassisch)", "portion_g": 350, "calories": 508, "protein": 28, "carbs": 28, "fat": 32, "tip": "Original-Rezept"},
+    {"name": "Moussaka mit Kartoffeln", "portion_g": 380, "calories": 540, "protein": 26, "carbs": 38, "fat": 30},
+    {"name": "Moussaka light (weniger Béchamel)", "portion_g": 350, "calories": 420, "protein": 28, "carbs": 24, "fat": 24, "tip": "Kalorienreduziert"},
+    {"name": "Vegetarische Moussaka (Linsen)", "portion_g": 350, "calories": 380, "protein": 18, "carbs": 36, "fat": 18, "tip": "Kalorienärmste Variante"},
+    {"name": "Moussaka mit Zucchini statt Aubergine", "portion_g": 350, "calories": 470, "protein": 26, "carbs": 24, "fat": 30},
+    {"name": "Moussaka Restaurant-Portion", "portion_g": 450, "calories": 650, "protein": 34, "carbs": 36, "fat": 42},
+    {"name": "Moussaka mit Hähnchenhack", "portion_g": 350, "calories": 440, "protein": 30, "carbs": 26, "fat": 24, "tip": "Weniger Fett"},
+    {"name": "Türkische Musakka (ohne Béchamel)", "portion_g": 300, "calories": 360, "protein": 22, "carbs": 20, "fat": 22}
+  ],
+  "comparison": [
+    {"name": "Lasagne", "calories": 580, "emoji": "🧀"},
+    {"name": "Pastitsio", "calories": 520, "emoji": "🍝"},
+    {"name": "Schnitzel mit Kartoffeln", "calories": 600, "emoji": "🥩"},
+    {"name": "Auberginen-Auflauf", "calories": 350, "emoji": "🍆"}
+  ],
+  "tips": [
+    {"title": "Aubergine im Ofen rösten", "text": "Statt Aubergine zu frittieren, im Ofen rösten. Spart 100-150 kcal pro Portion.", "icon": "🍆"},
+    {"title": "Béchamel light", "text": "Verwende fettarme Milch und weniger Butter für die Béchamel. Spart 50-80 kcal.", "icon": "🥛"},
+    {"title": "Hähnchenhack verwenden", "text": "Hähnchenhack (8% Fett) statt Lammhack (20% Fett) spart ca. 70 kcal pro Portion.", "icon": "🍗"},
+    {"title": "Mehr Gemüse, weniger Hack", "text": "Erhöhe den Auberginen-Anteil und reduziere das Hackfleisch für eine leichtere Version.", "icon": "🥦"},
+    {"title": "Am nächsten Tag noch besser", "text": "Moussaka schmeckt aufgewärmt intensiver – ideal zum Vorbereiten.", "icon": "📦"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Moussaka?", "answer": "Ein Stück griechische Moussaka (350g) hat ca. 508 kcal. Im Restaurant mit größerer Portion bis zu 650 kcal."},
+    {"question": "Ist Moussaka kalorienreich?", "answer": "Mittel – 145 kcal/100g. Die Béchamel-Sauce und das Hackfleisch sind die Hauptkalorienbringer."},
+    {"question": "Wie viel Protein hat Moussaka?", "answer": "Ein Stück liefert ca. 28g Protein durch Hackfleisch und Béchamel – eine gute Eiweißquelle."},
+    {"question": "Ist Moussaka mit Lasagne vergleichbar?", "answer": "Ja, ähnliches Prinzip. Moussaka (508 kcal) ist etwas kalorienärmer als Lasagne (580 kcal), da Aubergine statt Nudelblätter verwendet wird."},
+    {"question": "Kann man Moussaka beim Abnehmen essen?", "answer": "Ja, als Light-Version (420 kcal) oder vegetarisch mit Linsen (380 kcal). Portion kontrollieren ist der Schlüssel."},
+    {"question": "Was ist der Unterschied zwischen griechischer und türkischer Moussaka?", "answer": "Griechische Moussaka hat Béchamel-Sauce obendrauf (508 kcal). Türkische Musakka ist ohne Béchamel und leichter (360 kcal)."}
+  ],
+  "related_foods": ["lasagne", "gyros", "falafel", "spaghetti-bolognese"]
+}

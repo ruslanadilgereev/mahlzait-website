@@ -1,0 +1,50 @@
+{
+  "slug": "pho",
+  "name": "Pho",
+  "emoji": "🍲",
+  "category": "gericht",
+  "seo": {
+    "title": "Pho Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Pho? Nährwerte für Pho Bo, Pho Ga & vegetarische Pho. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 76,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 10,
+    "fat_per_100g": 1.5,
+    "fiber_per_100g": 0.3,
+    "typical_portion_g": 550,
+    "typical_portion_name": "1 Schüssel"
+  },
+  "variants": [
+    {"name": "Pho Bo (Rindfleisch)", "portion_g": 550, "calories": 420, "protein": 28, "carbs": 55, "fat": 10, "tip": "Vietnamesischer Klassiker"},
+    {"name": "Pho Ga (Hähnchen)", "portion_g": 550, "calories": 380, "protein": 26, "carbs": 52, "fat": 8, "tip": "Leichtere Variante"},
+    {"name": "Pho vegetarisch", "portion_g": 550, "calories": 320, "protein": 10, "carbs": 56, "fat": 6, "tip": "Kalorienärmste Variante"},
+    {"name": "Pho mit Rindfleisch & Sehnen", "portion_g": 600, "calories": 480, "protein": 34, "carbs": 58, "fat": 14},
+    {"name": "Pho mit extra Nudeln", "portion_g": 650, "calories": 500, "protein": 28, "carbs": 72, "fat": 10},
+    {"name": "Pho mit Garnelen", "portion_g": 550, "calories": 390, "protein": 30, "carbs": 52, "fat": 8, "tip": "Proteinreich"},
+    {"name": "Pho mit Tofu", "portion_g": 550, "calories": 360, "protein": 18, "carbs": 54, "fat": 8}
+  ],
+  "comparison": [
+    {"name": "Ramen", "calories": 500, "emoji": "🍜"},
+    {"name": "Tom Kha Gai", "calories": 380, "emoji": "🥥"},
+    {"name": "Hühnersuppe", "calories": 280, "emoji": "🍲"},
+    {"name": "Pad Thai", "calories": 480, "emoji": "🍜"}
+  ],
+  "tips": [
+    {"title": "Pho ist überraschend kalorienarm", "text": "Die klare Rinderbrühe hat wenig Fett. Eine Schüssel Pho hat oft weniger Kalorien als ein Sandwich.", "icon": "💡"},
+    {"title": "Frische Kräuter nutzen", "text": "Thai-Basilikum, Koriander und Minze haben fast keine Kalorien und machen den Geschmack aus.", "icon": "🌿"},
+    {"title": "Limette nicht vergessen", "text": "Limettensaft gibt Frische und Vitamin C – und hat nur 5 kcal pro Scheibe.", "icon": "🍋"},
+    {"title": "Sprossen hinzufügen", "text": "Sojasprossen sind kalorienarm (31 kcal/100g) und liefern Crunch und Ballaststoffe.", "icon": "🌱"},
+    {"title": "Sriracha sparsam dosieren", "text": "Sriracha hat ca. 15 kcal/EL – wenig, aber der Zuckergehalt summiert sich bei viel Verwendung.", "icon": "🌶️"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Pho?", "answer": "Eine Schüssel Pho hat ca. 320-480 kcal, je nach Variante. Pho Bo (Rind) hat ca. 420 kcal, Pho Ga (Hähnchen) ca. 380 kcal."},
+    {"question": "Ist Pho gut zum Abnehmen?", "answer": "Ja! Pho ist eine der kalorienärmsten warmen Mahlzeiten. Die klare Brühe, mageres Fleisch und Reisnudeln ergeben eine sättigende, leichte Mahlzeit."},
+    {"question": "Wie viel Protein hat Pho?", "answer": "Eine Schüssel Pho Bo liefert ca. 28g Protein, Pho Ga ca. 26g – hauptsächlich aus dem Fleisch."},
+    {"question": "Was hat weniger Kalorien: Pho oder Ramen?", "answer": "Pho (380-420 kcal) hat deutlich weniger als Ramen (460-650 kcal). Pho-Brühe ist klarer und fettärmer."},
+    {"question": "Ist Pho gesund?", "answer": "Ja. Pho liefert Protein, Gemüse, Kräuter und wärmende Brühe. Sie ist fettarm und nährstoffreich – ideal bei Erkältung oder zum Abnehmen."},
+    {"question": "Wie viele Kohlenhydrate hat Pho?", "answer": "Eine Schüssel hat ca. 52-58g Kohlenhydrate, hauptsächlich aus Reisnudeln. Ohne Nudeln (nur Brühe + Fleisch) hat Pho fast keine Kohlenhydrate."}
+  ],
+  "related_foods": ["ramen", "pad-thai", "tom-kha-gai", "sushi"]
+}

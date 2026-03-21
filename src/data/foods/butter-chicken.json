@@ -1,0 +1,51 @@
+{
+  "slug": "butter-chicken",
+  "name": "Butter Chicken",
+  "emoji": "🍛",
+  "category": "gericht",
+  "seo": {
+    "title": "Butter Chicken Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Butter Chicken? Nährwerte mit und ohne Reis, Light-Varianten & Spar-Tipps. Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 170,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 6,
+    "fat_per_100g": 11,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Portion (ohne Reis)"
+  },
+  "variants": [
+    {"name": "Butter Chicken mit Basmati-Reis", "portion_g": 500, "calories": 680, "protein": 34, "carbs": 70, "fat": 30, "tip": "Restaurant-Standard"},
+    {"name": "Butter Chicken ohne Reis", "portion_g": 350, "calories": 460, "protein": 34, "carbs": 14, "fat": 30, "tip": "Low-Carb Option"},
+    {"name": "Butter Chicken mit Naan", "portion_g": 500, "calories": 740, "protein": 36, "carbs": 76, "fat": 34},
+    {"name": "Butter Chicken light (wenig Butter)", "portion_g": 500, "calories": 560, "protein": 36, "carbs": 68, "fat": 18, "tip": "Kalorienreduziert"},
+    {"name": "Butter Chicken mit Vollkornreis", "portion_g": 500, "calories": 670, "protein": 36, "carbs": 66, "fat": 30, "tip": "Mehr Ballaststoffe"},
+    {"name": "Butter Chicken Restaurant XL", "portion_g": 650, "calories": 880, "protein": 44, "carbs": 88, "fat": 40},
+    {"name": "Butter Chicken Fertiggericht", "portion_g": 400, "calories": 540, "protein": 28, "carbs": 56, "fat": 24},
+    {"name": "Butter Chicken mit Blumenkohlreis", "portion_g": 450, "calories": 500, "protein": 36, "carbs": 18, "fat": 32, "tip": "Low-Carb Alternative"}
+  ],
+  "comparison": [
+    {"name": "Tikka Masala", "calories": 650, "emoji": "🍛"},
+    {"name": "Hähnchen-Curry (Thai)", "calories": 620, "emoji": "🍛"},
+    {"name": "Biryani", "calories": 640, "emoji": "🍚"},
+    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"}
+  ],
+  "tips": [
+    {"title": "Name ist Programm – viel Butter", "text": "Traditionelles Butter Chicken enthält 50-100g Butter pro Rezept. Halbiere die Menge ohne großen Geschmacksverlust.", "icon": "🧈"},
+    {"title": "Griechischen Joghurt verwenden", "text": "Ersetze einen Teil der Sahne durch griechischen Joghurt – mehr Protein, weniger Fett.", "icon": "🥛"},
+    {"title": "Ohne Reis servieren", "text": "Butter Chicken allein (460 kcal) ist bereits sättigend. Mit Salat statt Reis sparst du 200+ kcal.", "icon": "🥗"},
+    {"title": "Hähnchenbrust statt Oberschenkel", "text": "Hähnchenbrust spart ca. 50 kcal pro Portion und hat mehr Protein.", "icon": "🍗"},
+    {"title": "Kasuri Methi nicht vergessen", "text": "Getrocknete Bockshornkleeblätter geben den typischen Geschmack – kalorienfrei und unverzichtbar.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Butter Chicken?", "answer": "Ohne Reis ca. 460 kcal, mit Reis ca. 680 kcal. Im Restaurant mit Naan bis zu 740 kcal pro Portion."},
+    {"question": "Ist Butter Chicken kalorienreicher als Tikka Masala?", "answer": "Ja, leicht. Butter Chicken hat ca. 680 kcal vs. 650 kcal bei Tikka Masala (jeweils mit Reis), da mehr Butter verwendet wird."},
+    {"question": "Wie viel Protein hat Butter Chicken?", "answer": "Eine Portion mit Reis liefert ca. 34-36g Protein. Ohne Reis sogar bei besserer Protein-Kalorien-Ratio."},
+    {"question": "Kann man Butter Chicken beim Abnehmen essen?", "answer": "Die Light-Version (wenig Butter, Joghurt statt Sahne) mit Blumenkohlreis hat nur ca. 500 kcal und 36g Protein."},
+    {"question": "Was ist der Unterschied zu Murgh Makhani?", "answer": "Butter Chicken und Murgh Makhani sind dasselbe Gericht. Murgh = Hähnchen, Makhani = mit Butter auf Hindi."},
+    {"question": "Wie viele Kalorien hat Butter Chicken vom Inder?", "answer": "Restaurant-Portionen sind großzügiger: rechne mit 700-880 kcal pro Portion mit Reis, da mehr Butter und Sahne verwendet wird."}
+  ],
+  "related_foods": ["tikka-masala", "curry-haehnchen", "biryani", "naan-brot"]
+}

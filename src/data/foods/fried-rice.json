@@ -1,0 +1,51 @@
+{
+  "slug": "fried-rice",
+  "name": "Gebratener Reis",
+  "emoji": "🍳",
+  "category": "gericht",
+  "seo": {
+    "title": "Gebratener Reis Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat gebratener Reis? Nährwerte für Egg Fried Rice, Nasi Goreng & mehr. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 163,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 6,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 350,
+    "typical_portion_name": "1 Teller"
+  },
+  "variants": [
+    {"name": "Egg Fried Rice (klassisch)", "portion_g": 350, "calories": 460, "protein": 14, "carbs": 68, "fat": 15, "tip": "Standard-Variante"},
+    {"name": "Gebratener Reis mit Hähnchen", "portion_g": 400, "calories": 540, "protein": 28, "carbs": 72, "fat": 16, "tip": "Proteinreich"},
+    {"name": "Gebratener Reis mit Garnelen", "portion_g": 400, "calories": 500, "protein": 26, "carbs": 70, "fat": 14},
+    {"name": "Nasi Goreng", "portion_g": 400, "calories": 580, "protein": 22, "carbs": 76, "fat": 22},
+    {"name": "Gebratener Reis vegetarisch", "portion_g": 350, "calories": 420, "protein": 10, "carbs": 70, "fat": 12, "tip": "Leichtere Variante"},
+    {"name": "Gebratener Reis mit Schweinefleisch", "portion_g": 400, "calories": 560, "protein": 24, "carbs": 74, "fat": 20},
+    {"name": "Gebratener Reis mit Tofu", "portion_g": 380, "calories": 480, "protein": 18, "carbs": 70, "fat": 14, "tip": "Vegan möglich"},
+    {"name": "Kleine Portion als Beilage", "portion_g": 200, "calories": 260, "protein": 8, "carbs": 38, "fat": 9, "tip": "Als Beilage ideal"}
+  ],
+  "comparison": [
+    {"name": "Pad Thai", "calories": 480, "emoji": "🍜"},
+    {"name": "Reis (gekocht, pur)", "calories": 260, "emoji": "🍚"},
+    {"name": "Ramen", "calories": 500, "emoji": "🍜"},
+    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"}
+  ],
+  "tips": [
+    {"title": "Reis vom Vortag verwenden", "text": "Kalter Reis vom Vortag brät besser und bildet resistente Stärke – weniger verwertbare Kalorien.", "icon": "❄️"},
+    {"title": "Weniger Öl verwenden", "text": "Statt 3 EL Öl reichen 1-2 EL in einer heißen Wok-Pfanne. Ersparnis: 90-180 kcal.", "icon": "🫒"},
+    {"title": "Mehr Gemüse, weniger Reis", "text": "Erhöhe den Gemüseanteil auf 50% – du sparst Kalorien und bekommst mehr Vitamine.", "icon": "🥦"},
+    {"title": "Blumenkohl-Reis als Alternative", "text": "Ersetze die Hälfte des Reis durch geraspelten Blumenkohl – spart ca. 150 kcal pro Portion.", "icon": "🥦"},
+    {"title": "Sojasauce statt Salz", "text": "Sojasauce hat fast keine Kalorien und gibt intensiven Umami-Geschmack.", "icon": "🫙"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat gebratener Reis?", "answer": "Ein Teller gebratener Reis (350g) hat ca. 460 kcal. Mit Hähnchen oder Garnelen sind es ca. 500-540 kcal."},
+    {"question": "Hat gebratener Reis mehr Kalorien als normaler Reis?", "answer": "Ja, ca. 30% mehr. Gekochter Reis hat ca. 130 kcal/100g, gebratener Reis ca. 163 kcal/100g durch das Öl."},
+    {"question": "Ist gebratener Reis gesund?", "answer": "In Maßen ja. Er liefert Kohlenhydrate, Protein (mit Ei/Fleisch) und Gemüse. Achte auf die Ölmenge."},
+    {"question": "Wie viel Protein hat gebratener Reis?", "answer": "Einfacher Egg Fried Rice hat ca. 14g Protein. Mit Hähnchen oder Garnelen sind es 26-28g pro Teller."},
+    {"question": "Kann man gebratenen Reis beim Abnehmen essen?", "answer": "Ja, in kleiner Portion (200g, ca. 260 kcal) oder mit viel Gemüse statt Reis. Vegetarisch hat nur 420 kcal pro Teller."},
+    {"question": "Wie viele Kalorien hat Nasi Goreng?", "answer": "Nasi Goreng hat ca. 580 kcal pro Teller (400g) – etwas mehr als normaler gebratener Reis wegen Sambal und mehr Öl."}
+  ],
+  "related_foods": ["pad-thai", "reis", "ramen", "wok-gemuese"]
+}
