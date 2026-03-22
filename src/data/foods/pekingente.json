@@ -1,0 +1,49 @@
+{
+  "slug": "pekingente",
+  "name": "Pekingente",
+  "emoji": "🦆",
+  "category": "gericht",
+  "seo": {
+    "title": "Pekingente Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Pekingente? Nährwerte für Ente mit Haut, ohne Haut und verschiedene Portionen. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 240,
+    "protein_per_100g": 20,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 18,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion (mit Haut)"
+  },
+  "variants": [
+    {"name": "Mit Haut", "portion_g": 200, "calories": 480, "protein": 40, "carbs": 0, "fat": 36, "tip": "Klassische Zubereitung"},
+    {"name": "Ohne Haut", "portion_g": 200, "calories": 340, "protein": 44, "carbs": 0, "fat": 18, "tip": "Deutlich weniger Fett"},
+    {"name": "Mit Pfannkuchen und Sauce", "portion_g": 350, "calories": 620, "protein": 38, "carbs": 40, "fat": 36},
+    {"name": "Halbe Pekingente", "portion_g": 400, "calories": 960, "protein": 80, "carbs": 0, "fat": 72},
+    {"name": "Enten-Wrap (3 Stück)", "portion_g": 250, "calories": 520, "protein": 30, "carbs": 34, "fat": 30},
+    {"name": "Nur Entenbrust (ohne Haut)", "portion_g": 150, "calories": 210, "protein": 33, "carbs": 0, "fat": 9, "tip": "Magerste Variante"}
+  ],
+  "comparison": [
+    {"name": "Hähnchenbrust gegrillt", "calories": 165, "emoji": "🍗"},
+    {"name": "Schweinshaxe", "calories": 550, "emoji": "🍖"},
+    {"name": "Gänsebraten", "calories": 520, "emoji": "🦢"},
+    {"name": "Rindersteak", "calories": 400, "emoji": "🥩"}
+  ],
+  "tips": [
+    {"title": "Haut entfernen", "text": "Die knusprige Haut macht 50% der Kalorien aus. Ohne Haut sparst du ca. 140 kcal pro Portion.", "icon": "🔪"},
+    {"title": "Pfannkuchen portionieren", "text": "Jeder Pfannkuchen hat ca. 50 kcal. Drei statt fünf reichen für den Genuss.", "icon": "🥞"},
+    {"title": "Hoisin-Sauce sparsam", "text": "Hoisin-Sauce hat 40 kcal pro EL. Ein dünner Strich auf dem Pfannkuchen reicht geschmacklich.", "icon": "🥄"},
+    {"title": "Gurke und Lauch dazu", "text": "Die traditionellen Beilagen haben quasi keine Kalorien und bringen Frische ins Gericht.", "icon": "🥒"},
+    {"title": "Teilen ist clever", "text": "Eine halbe Ente hat fast 1000 kcal. Zu zweit teilen und mit Beilagen ergänzen.", "icon": "🤝"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Pekingente?", "answer": "Eine Portion Pekingente (200g mit Haut) hat ca. 480 kcal. Ohne Haut sind es nur ca. 340 kcal."},
+    {"question": "Ist Pekingente gesund?", "answer": "Entenfleisch liefert hochwertiges Protein und Eisen. Die Haut ist allerdings fettreich. Ohne Haut ist Ente eine gute Proteinquelle."},
+    {"question": "Wie viel Protein hat Pekingente?", "answer": "200g Pekingente liefern ca. 40g Protein (mit Haut) bzw. 44g (ohne Haut) – ein sehr guter Wert."},
+    {"question": "Was hat weniger Kalorien: Ente oder Hähnchen?", "answer": "Hähnchenbrust (165 kcal/100g) hat deutlich weniger als Ente mit Haut (240 kcal/100g). Ohne Haut nähert sich Ente dem Hähnchen an."},
+    {"question": "Wie viele Kalorien hat eine halbe Pekingente?", "answer": "Eine halbe Pekingente (ca. 400g essbares Fleisch) hat rund 960 kcal – oft wird sie zu zweit geteilt."},
+    {"question": "Wie wird Pekingente kalorienärmer?", "answer": "Haut entfernen, weniger Pfannkuchen essen, Hoisin-Sauce dosieren und viel Gurke dazu – so sparst du bis zu 200 kcal."}
+  ],
+  "related_foods": ["haehnchenbrust", "curry-haehnchen", "fried-rice", "wan-tan"]
+}

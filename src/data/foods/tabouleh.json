@@ -1,0 +1,49 @@
+{
+  "slug": "tabouleh",
+  "name": "Tabouleh",
+  "emoji": "🥗",
+  "category": "gericht",
+  "seo": {
+    "title": "Tabouleh Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Tabouleh? Nährwerte für den libanesischen Petersiliensalat mit Bulgur. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 95,
+    "protein_per_100g": 3,
+    "carbs_per_100g": 10,
+    "fat_per_100g": 5,
+    "fiber_per_100g": 2.5,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Klassisch (Bulgur, Petersilie)", "portion_g": 200, "calories": 190, "protein": 6, "carbs": 20, "fat": 10, "tip": "Traditionelles Rezept"},
+    {"name": "Mit Couscous", "portion_g": 200, "calories": 210, "protein": 6, "carbs": 24, "fat": 10},
+    {"name": "Mit Quinoa", "portion_g": 200, "calories": 200, "protein": 8, "carbs": 22, "fat": 10, "tip": "Mehr Protein"},
+    {"name": "Als Beilage (kleine Portion)", "portion_g": 100, "calories": 95, "protein": 3, "carbs": 10, "fat": 5, "tip": "Leichte Beilage"},
+    {"name": "Mit Feta", "portion_g": 230, "calories": 280, "protein": 10, "carbs": 20, "fat": 18},
+    {"name": "Ohne Öl", "portion_g": 200, "calories": 130, "protein": 6, "carbs": 22, "fat": 2, "tip": "Kalorienärmste Variante"}
+  ],
+  "comparison": [
+    {"name": "Couscous-Salat", "calories": 320, "emoji": "🥣"},
+    {"name": "Griechischer Salat", "calories": 180, "emoji": "🥗"},
+    {"name": "Caesar Salad", "calories": 350, "emoji": "🥬"},
+    {"name": "Hummus (200g)", "calories": 330, "emoji": "🧆"}
+  ],
+  "tips": [
+    {"title": "Viel Petersilie verwenden", "text": "Traditionelles Tabouleh besteht hauptsächlich aus Petersilie – kalorienarm und reich an Vitamin C und Eisen.", "icon": "🌿"},
+    {"title": "Olivenöl dosieren", "text": "1 EL Olivenöl (90 kcal) reicht für eine Portion. Jeder extra EL verdoppelt fast den Fettgehalt.", "icon": "🫒"},
+    {"title": "Zitronensaft als Dressing", "text": "Statt mehr Öl: Zitronensaft gibt Säure und Frische bei null Kalorien.", "icon": "🍋"},
+    {"title": "Mit Protein ergänzen", "text": "Tabouleh allein hat wenig Protein. Mit Feta, Hähnchen oder Kichererbsen wird es zur vollständigen Mahlzeit.", "icon": "💪"},
+    {"title": "Meal Prep geeignet", "text": "Tabouleh hält 2-3 Tage im Kühlschrank und schmeckt durchgezogen sogar besser.", "icon": "📦"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Tabouleh?", "answer": "Eine Portion Tabouleh (200g) hat ca. 190 kcal. Als kleine Beilage (100g) nur ca. 95 kcal."},
+    {"question": "Ist Tabouleh gesund?", "answer": "Ja – Tabouleh ist reich an Vitaminen (C, K), Ballaststoffen und Antioxidantien durch die viele Petersilie. Eines der gesündesten Salatgerichte."},
+    {"question": "Kann man mit Tabouleh abnehmen?", "answer": "Ja – mit nur 95 kcal/100g ist Tabouleh eine kalorienarme, sättigende Beilage. Olivenöl dosieren und als Beilage zu Protein servieren."},
+    {"question": "Was ist der Unterschied zwischen Tabouleh und Couscous-Salat?", "answer": "Tabouleh besteht hauptsächlich aus Petersilie mit wenig Bulgur. Couscous-Salat hat mehr Getreide und oft schwereres Dressing."},
+    {"question": "Wie viel Protein hat Tabouleh?", "answer": "Nur ca. 3g/100g – Tabouleh ist kein Proteinlieferant. Ergänze mit Feta, Hähnchen oder Kichererbsen."},
+    {"question": "Welcher Bulgur für Tabouleh?", "answer": "Feiner Bulgur (#1) ist traditionell für Tabouleh. Er hat ca. 120 kcal/100g (gekocht) und muss nur quellen, nicht kochen."}
+  ],
+  "related_foods": ["couscous", "bulgur", "hummus-teller", "falafel"]
+}

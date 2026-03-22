@@ -1,0 +1,50 @@
+{
+  "slug": "dim-sum",
+  "name": "Dim Sum",
+  "emoji": "🥟",
+  "category": "gericht",
+  "seo": {
+    "title": "Dim Sum Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Dim Sum? Nährwerte für Har Gow, Siu Mai, Bao und mehr. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 180,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 1.0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "4 Stück"
+  },
+  "variants": [
+    {"name": "Har Gow (Garnelen-Teigtaschen)", "portion_g": 160, "calories": 260, "protein": 16, "carbs": 28, "fat": 10, "tip": "Gedämpft – leichteste Variante"},
+    {"name": "Siu Mai (Schweinefleisch)", "portion_g": 160, "calories": 310, "protein": 18, "carbs": 24, "fat": 16},
+    {"name": "Char Siu Bao (Schweinebrötchen)", "portion_g": 200, "calories": 420, "protein": 16, "carbs": 48, "fat": 18},
+    {"name": "Frühlingsrollen (frittiert)", "portion_g": 180, "calories": 390, "protein": 10, "carbs": 36, "fat": 22, "tip": "Kalorienreichste Variante"},
+    {"name": "Gedämpfte Gemüse-Dim-Sum", "portion_g": 160, "calories": 200, "protein": 8, "carbs": 28, "fat": 6, "tip": "Kalorienärmste Wahl"},
+    {"name": "Cheung Fun (Reisnudelrollen)", "portion_g": 200, "calories": 280, "protein": 10, "carbs": 38, "fat": 10},
+    {"name": "Wan Tan frittiert", "portion_g": 160, "calories": 360, "protein": 14, "carbs": 30, "fat": 20}
+  ],
+  "comparison": [
+    {"name": "Wan Tan (Suppe)", "calories": 220, "emoji": "🍜"},
+    {"name": "Gyoza (6 Stück)", "calories": 300, "emoji": "🥟"},
+    {"name": "Frühlingsrollen", "calories": 340, "emoji": "🥢"},
+    {"name": "Sushi (8 Stück)", "calories": 350, "emoji": "🍣"}
+  ],
+  "tips": [
+    {"title": "Gedämpft statt frittiert", "text": "Gedämpfte Dim Sum haben 30-40% weniger Kalorien als frittierte Varianten.", "icon": "💨"},
+    {"title": "Garnelen-Varianten wählen", "text": "Har Gow und Garnelen-Siu-Mai sind proteinreich und fettärmer als Schweinefleisch-Füllungen.", "icon": "🦐"},
+    {"title": "Sojasauce statt Chilisauce", "text": "Chilisauce hat oft viel Zucker. Sojasauce mit Ingwer ist kalorienärmer und geschmackvoll.", "icon": "🥢"},
+    {"title": "Portionen kontrollieren", "text": "Dim Sum sind klein – man isst leicht 10+ Stück. 4-6 Stück als Vorspeise, 8 als Hauptgericht planen.", "icon": "📏"},
+    {"title": "Gemüse-Dim-Sum bestellen", "text": "Gemüsegefüllte Varianten haben nur ca. 200 kcal für 4 Stück – perfekt als leichte Mahlzeit.", "icon": "🥬"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Dim Sum?", "answer": "4 Stück Dim Sum haben je nach Sorte 200-420 kcal. Gedämpfte Har Gow (260 kcal) sind leichter als frittierte Wan Tan (360 kcal)."},
+    {"question": "Sind Dim Sum gesund?", "answer": "Gedämpfte Dim Sum können eine gute Proteinquelle sein. Frittierte Varianten und süße Saucen machen sie allerdings kalorienreich."},
+    {"question": "Welche Dim Sum haben die wenigsten Kalorien?", "answer": "Gedämpfte Gemüse-Dim-Sum mit ca. 200 kcal für 4 Stück, gefolgt von Har Gow mit ca. 260 kcal."},
+    {"question": "Wie viele Dim Sum sind eine Portion?", "answer": "Als Vorspeise 4-6 Stück (200-350 kcal), als Hauptgericht 8-12 Stück (400-700 kcal)."},
+    {"question": "Haben Dim Sum viel Protein?", "answer": "Ja, 4 Stück Siu Mai liefern ca. 18g Protein. Garnelen-Varianten haben mit 16g ebenfalls einen guten Proteingehalt."},
+    {"question": "Was ist kalorienärmer: Dim Sum oder Sushi?", "answer": "Gedämpfte Dim Sum (260 kcal/4 Stück) und Sushi (350 kcal/8 Stück) sind ähnlich kalorienarm – beide gute Optionen."}
+  ],
+  "related_foods": ["wan-tan", "sushi", "fruehlingsrolle", "pad-thai"]
+}

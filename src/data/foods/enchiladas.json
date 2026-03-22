@@ -1,0 +1,49 @@
+{
+  "slug": "enchiladas",
+  "name": "Enchiladas",
+  "emoji": "🌮",
+  "category": "gericht",
+  "seo": {
+    "title": "Enchiladas Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Enchiladas? Nährwerte für verschiedene Füllungen und Portionsgrößen. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 168,
+    "protein_per_100g": 9,
+    "carbs_per_100g": 16,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 2.0,
+    "typical_portion_g": 300,
+    "typical_portion_name": "2 Enchiladas"
+  },
+  "variants": [
+    {"name": "Hähnchen-Enchiladas", "portion_g": 300, "calories": 504, "protein": 30, "carbs": 48, "fat": 22, "tip": "Beliebteste Variante"},
+    {"name": "Rindfleisch-Enchiladas", "portion_g": 300, "calories": 560, "protein": 28, "carbs": 46, "fat": 28},
+    {"name": "Käse-Enchiladas", "portion_g": 300, "calories": 530, "protein": 22, "carbs": 50, "fat": 26},
+    {"name": "Bohnen-Enchiladas (vegetarisch)", "portion_g": 300, "calories": 420, "protein": 18, "carbs": 54, "fat": 14, "tip": "Kalorienärmste Variante"},
+    {"name": "Enchiladas Suizas (Sahnesauce)", "portion_g": 300, "calories": 590, "protein": 28, "carbs": 44, "fat": 32},
+    {"name": "Enchiladas Verdes", "portion_g": 300, "calories": 480, "protein": 26, "carbs": 46, "fat": 20, "tip": "Leichter durch Tomatillo-Sauce"}
+  ],
+  "comparison": [
+    {"name": "Burrito", "calories": 550, "emoji": "🌯"},
+    {"name": "Tacos (3 Stück)", "calories": 480, "emoji": "🌮"},
+    {"name": "Quesadilla", "calories": 470, "emoji": "🧀"},
+    {"name": "Nachos mit Käse", "calories": 520, "emoji": "🔺"}
+  ],
+  "tips": [
+    {"title": "Vollkorn-Tortillas verwenden", "text": "Vollkorn-Tortillas liefern mehr Ballaststoffe und machen länger satt bei ähnlicher Kalorienzahl.", "icon": "🌾"},
+    {"title": "Hähnchen statt Rind", "text": "Hähnchenbrust spart ca. 50-60 kcal pro Portion im Vergleich zu Rinderhack.", "icon": "🍗"},
+    {"title": "Sauce selbst machen", "text": "Fertige Enchilada-Sauce enthält oft viel Zucker. Selbstgemacht aus Tomaten und Chili ist kalorienärmer.", "icon": "🍅"},
+    {"title": "Käse reduzieren", "text": "Statt 60g nur 30g Käse pro Portion – spart ca. 100 kcal ohne großen Geschmacksverlust.", "icon": "🧀"},
+    {"title": "Bohnen als Füllung", "text": "Schwarze Bohnen liefern 21g Protein pro 100g und machen Enchiladas sättigend bei weniger Fett.", "icon": "🫘"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Enchiladas?", "answer": "Zwei Hähnchen-Enchiladas (300g) haben ca. 504 kcal. Je nach Füllung und Sauce variiert der Wert zwischen 420 und 590 kcal."},
+    {"question": "Sind Enchiladas gut zum Abnehmen?", "answer": "Bohnen-Enchiladas mit wenig Käse (ca. 420 kcal für 2 Stück) passen gut in eine Diät. Vermeide Sahnesauce und extra Käse."},
+    {"question": "Was ist kalorienärmer: Enchiladas oder Burritos?", "answer": "Enchiladas haben mit ca. 504 kcal (2 Stück) etwas weniger als ein Burrito (ca. 550 kcal), da die Tortillas kleiner sind."},
+    {"question": "Wie viel Protein haben Enchiladas?", "answer": "Hähnchen-Enchiladas liefern ca. 30g Protein pro Portion (2 Stück). Bohnen-Varianten kommen auf ca. 18g."},
+    {"question": "Wie viele Kalorien hat eine einzelne Enchilada?", "answer": "Eine Enchilada mit Hähnchen wiegt ca. 150g und hat rund 252 kcal. Die Größe variiert je nach Restaurant."},
+    {"question": "Sind Enchiladas gesund?", "answer": "Enchiladas können eine ausgewogene Mahlzeit sein – sie liefern Protein, Ballaststoffe und Vitamine. Wähle magere Füllungen und kontrolliere die Käsemenge."}
+  ],
+  "related_foods": ["burrito", "tacos", "quesadilla", "nachos"]
+}

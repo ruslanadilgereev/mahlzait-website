@@ -1,0 +1,49 @@
+{
+  "slug": "wan-tan",
+  "name": "Wan Tan",
+  "emoji": "🥟",
+  "category": "gericht",
+  "seo": {
+    "title": "Wan Tan Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Wan Tan? Nährwerte für Suppe, frittiert und gedämpft. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 160,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 6,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 250,
+    "typical_portion_name": "6 Stück"
+  },
+  "variants": [
+    {"name": "Wan-Tan-Suppe (6 Stück)", "portion_g": 400, "calories": 280, "protein": 18, "carbs": 30, "fat": 10, "tip": "Leichteste Variante"},
+    {"name": "Wan Tan frittiert (6 Stück)", "portion_g": 180, "calories": 390, "protein": 14, "carbs": 32, "fat": 22},
+    {"name": "Wan Tan gedämpft (6 Stück)", "portion_g": 180, "calories": 270, "protein": 16, "carbs": 30, "fat": 10, "tip": "Guter Kompromiss"},
+    {"name": "Mit Garnelenfüllung", "portion_g": 180, "calories": 250, "protein": 18, "carbs": 28, "fat": 8, "tip": "Proteinreich"},
+    {"name": "Mit Schweinefüllung", "portion_g": 180, "calories": 320, "protein": 16, "carbs": 28, "fat": 16},
+    {"name": "Wan Tan in Chiliöl", "portion_g": 200, "calories": 360, "protein": 14, "carbs": 28, "fat": 22}
+  ],
+  "comparison": [
+    {"name": "Dim Sum (4 Stück)", "calories": 310, "emoji": "🥟"},
+    {"name": "Frühlingsrollen (3 Stück)", "calories": 340, "emoji": "🥢"},
+    {"name": "Maultaschen (4 Stück)", "calories": 420, "emoji": "🥟"},
+    {"name": "Tortellini", "calories": 380, "emoji": "🍝"}
+  ],
+  "tips": [
+    {"title": "Wan-Tan-Suppe bevorzugen", "text": "In der Suppe quellen Wan Tan auf und sättigen besser – bei nur 280 kcal für 6 Stück mit Brühe.", "icon": "🍜"},
+    {"title": "Gedämpft statt frittiert", "text": "Frittierte Wan Tan haben 45% mehr Kalorien. Gedämpft bleiben Geschmack und Textur gut.", "icon": "💨"},
+    {"title": "Garnelenfüllung wählen", "text": "Garnelen haben weniger Fett als Schweinefleisch – ca. 70 kcal weniger pro 6 Stück.", "icon": "🦐"},
+    {"title": "Sojasauce statt Süß-Sauer", "text": "Süß-Sauer-Sauce hat ca. 60 kcal/EL. Sojasauce mit Essig und Ingwer: nur 10 kcal.", "icon": "🥢"},
+    {"title": "Selbst machen", "text": "Selbstgemachte Wan Tan kontrollierst du bei Füllung und Zubereitung – oft 30% weniger Kalorien als beim Asiaten.", "icon": "👨‍🍳"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien haben Wan Tan?", "answer": "6 Wan Tan haben je nach Zubereitung 250-390 kcal. In der Suppe ca. 280 kcal, frittiert ca. 390 kcal."},
+    {"question": "Sind Wan Tan gut zum Abnehmen?", "answer": "Wan-Tan-Suppe ist mit 280 kcal für 6 Stück eine leichte Mahlzeit. Frittierte Varianten solltest du meiden."},
+    {"question": "Was ist der Unterschied zwischen Wan Tan und Dim Sum?", "answer": "Wan Tan sind eine spezifische Art von Teigtasche mit dünnem Teig. Dim Sum ist der Oberbegriff für viele kleine kantonesische Gerichte."},
+    {"question": "Wie viel Protein haben Wan Tan?", "answer": "6 Wan Tan liefern ca. 14-18g Protein je nach Füllung. Garnelen-Wan-Tan haben den höchsten Proteingehalt."},
+    {"question": "Was hat weniger Kalorien: Wan Tan oder Maultaschen?", "answer": "Wan Tan (270 kcal gedämpft) haben weniger als Maultaschen (420 kcal für 4 Stück), da der Teig dünner ist."},
+    {"question": "Wie viele Wan Tan sind eine Portion?", "answer": "Als Vorspeise 4-6 Stück, als Hauptgericht 8-10 Stück. In der Suppe reichen 6 Stück für eine sättigende Mahlzeit."}
+  ],
+  "related_foods": ["dim-sum", "fruehlingsrolle", "maultaschen", "ramen"]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "bulgur",
+  "name": "Bulgur",
+  "emoji": "🌾",
+  "category": "gericht",
+  "seo": {
+    "title": "Bulgur Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Bulgur? Nährwerte für gekocht, trocken und verschiedene Zubereitungen. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 83,
+    "protein_per_100g": 3,
+    "carbs_per_100g": 19,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 4.5,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion (gekocht)"
+  },
+  "variants": [
+    {"name": "Bulgur gekocht (pur)", "portion_g": 200, "calories": 166, "protein": 6, "carbs": 38, "fat": 0.4, "tip": "Kalorienarme Beilage"},
+    {"name": "Bulgur trocken (Rohgewicht)", "portion_g": 80, "calories": 274, "protein": 10, "carbs": 56, "fat": 1.2},
+    {"name": "Bulgur-Salat (Kisir)", "portion_g": 250, "calories": 310, "protein": 8, "carbs": 40, "fat": 14},
+    {"name": "Bulgur mit Gemüse", "portion_g": 350, "calories": 340, "protein": 12, "carbs": 52, "fat": 10, "tip": "Leichte Hauptmahlzeit"},
+    {"name": "Bulgur mit Hähnchen", "portion_g": 400, "calories": 460, "protein": 30, "carbs": 50, "fat": 14},
+    {"name": "Bulgur-Pilaw (mit Butter)", "portion_g": 250, "calories": 350, "protein": 8, "carbs": 48, "fat": 14},
+    {"name": "Bulgur-Frikadellen (Çiğ Köfte)", "portion_g": 200, "calories": 280, "protein": 10, "carbs": 44, "fat": 8}
+  ],
+  "comparison": [
+    {"name": "Reis gekocht", "calories": 130, "emoji": "🍚"},
+    {"name": "Couscous gekocht", "calories": 112, "emoji": "🥣"},
+    {"name": "Quinoa gekocht", "calories": 120, "emoji": "🌾"},
+    {"name": "Nudeln gekocht", "calories": 158, "emoji": "🍝"}
+  ],
+  "tips": [
+    {"title": "Mehr Ballaststoffe als Reis", "text": "Bulgur hat 4.5g Ballaststoffe/100g – dreimal mehr als weißer Reis. Macht deutlich länger satt.", "icon": "🌾"},
+    {"title": "Quellen statt kochen", "text": "Feinen Bulgur einfach mit heißem Wasser übergießen und 15 Min quellen lassen – spart Zeit und Energie.", "icon": "⏱️"},
+    {"title": "Roh- vs. Kochgewicht", "text": "80g trockener Bulgur werden zu ca. 200g gekocht. Achte beim Kalorienzählen auf den Zustand.", "icon": "⚖️"},
+    {"title": "Als Reisersatz", "text": "Bulgur hat weniger Kalorien als Reis (83 vs. 130 kcal/100g gekocht) und mehr Nährstoffe.", "icon": "🔄"},
+    {"title": "Kisir als Meal Prep", "text": "Türkischer Bulgur-Salat mit Tomatenmark, Petersilie und Zitrone hält 3 Tage im Kühlschrank.", "icon": "📦"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Bulgur?", "answer": "100g gekochter Bulgur hat ca. 83 kcal – deutlich weniger als Reis (130 kcal) oder Nudeln (158 kcal)."},
+    {"question": "Ist Bulgur gut zum Abnehmen?", "answer": "Ja – Bulgur ist kalorienarm, ballaststoffreich (4.5g/100g) und sättigend. Eine der besten Beilagen für eine Diät."},
+    {"question": "Was hat weniger Kalorien: Bulgur oder Reis?", "answer": "Bulgur (83 kcal/100g gekocht) hat deutlich weniger als weißer Reis (130 kcal) und auch weniger als Vollkornreis (112 kcal)."},
+    {"question": "Wie viel Protein hat Bulgur?", "answer": "Nur ca. 3g/100g (gekocht). Bulgur ist primär eine Kohlenhydratquelle. Ergänze mit Hähnchen, Linsen oder Kichererbsen."},
+    {"question": "Ist Bulgur glutenfrei?", "answer": "Nein – Bulgur wird aus Weizen hergestellt und enthält Gluten. Glutenfreie Alternativen: Quinoa, Reis oder Buchweizen."},
+    {"question": "Wie viel Bulgur pro Person?", "answer": "Als Beilage: 60-80g trocken (ca. 200g gekocht). Als Hauptgericht: 100g trocken (ca. 280g gekocht)."}
+  ],
+  "related_foods": ["couscous", "reis", "tabouleh", "nudeln"]
+}

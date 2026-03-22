@@ -1,0 +1,49 @@
+{
+  "slug": "pilaw",
+  "name": "Pilaw",
+  "emoji": "🍚",
+  "category": "gericht",
+  "seo": {
+    "title": "Pilaw Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Pilaw? Nährwerte für verschiedene Reispilaw-Varianten und Portionsgrößen. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 150,
+    "protein_per_100g": 4,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 5,
+    "fiber_per_100g": 1.0,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Reis-Pilaw klassisch", "portion_g": 250, "calories": 375, "protein": 10, "carbs": 55, "fat": 13, "tip": "Standard-Beilage"},
+    {"name": "Mit Hähnchen", "portion_g": 350, "calories": 520, "protein": 28, "carbs": 55, "fat": 20, "tip": "Vollständige Mahlzeit"},
+    {"name": "Mit Lamm", "portion_g": 350, "calories": 580, "protein": 26, "carbs": 52, "fat": 28},
+    {"name": "Gemüse-Pilaw (vegetarisch)", "portion_g": 300, "calories": 380, "protein": 10, "carbs": 56, "fat": 14, "tip": "Leichtere Variante"},
+    {"name": "Bulgur-Pilaw", "portion_g": 250, "calories": 340, "protein": 10, "carbs": 52, "fat": 12, "tip": "Weniger Kalorien als Reis"},
+    {"name": "Persischer Pilaw (mit Safran)", "portion_g": 250, "calories": 390, "protein": 8, "carbs": 56, "fat": 16}
+  ],
+  "comparison": [
+    {"name": "Fried Rice", "calories": 420, "emoji": "🍚"},
+    {"name": "Biryani", "calories": 550, "emoji": "🍛"},
+    {"name": "Reis pur gekocht", "calories": 260, "emoji": "🍚"},
+    {"name": "Couscous", "calories": 224, "emoji": "🥣"}
+  ],
+  "tips": [
+    {"title": "Weniger Butter verwenden", "text": "Traditionell wird Pilaw mit viel Butter zubereitet. 1 EL statt 2 EL spart 90 kcal.", "icon": "🧈"},
+    {"title": "Bulgur statt Reis", "text": "Bulgur-Pilaw hat ca. 35 kcal weniger pro Portion und mehr Ballaststoffe.", "icon": "🌾"},
+    {"title": "Gemüse hinzufügen", "text": "Erbsen, Möhren und Paprika machen Pilaw bunter und nährstoffreicher ohne viele Extra-Kalorien.", "icon": "🥕"},
+    {"title": "Portionen abwiegen", "text": "Pilaw schmeckt so gut, dass man leicht eine doppelte Portion nimmt. 250g als Beilage planen.", "icon": "⚖️"},
+    {"title": "Basmatireis verwenden", "text": "Basmatireis hat einen niedrigeren glykämischen Index als Rundkornreis – der Blutzucker steigt langsamer.", "icon": "🍚"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Pilaw?", "answer": "Eine Portion Reis-Pilaw (250g) hat ca. 375 kcal. Mit Hähnchen dazu ca. 520 kcal."},
+    {"question": "Was ist der Unterschied zwischen Pilaw und gebratenem Reis?", "answer": "Pilaw wird im Ofen oder Topf gegart (Reis absorbiert die Brühe), gebratener Reis wird im Wok mit Öl angebraten. Pilaw hat meist weniger Fett."},
+    {"question": "Ist Pilaw gesund?", "answer": "Pilaw liefert Kohlenhydrate und je nach Zubereitung auch Protein. Mit Gemüse und magerem Fleisch ist es eine ausgewogene Mahlzeit."},
+    {"question": "Wie viel Protein hat Pilaw?", "answer": "Reis-Pilaw pur hat ca. 10g Protein pro Portion. Mit Hähnchen steigt der Wert auf ca. 28g."},
+    {"question": "Was hat weniger Kalorien: Pilaw oder Biryani?", "answer": "Pilaw (375 kcal/Portion) hat weniger als Biryani (550 kcal), da Biryani oft mehr Fett und reichhaltigere Zutaten enthält."},
+    {"question": "Kann man Pilaw beim Abnehmen essen?", "answer": "In moderater Portion (250g, 375 kcal) ja. Tipp: Bulgur-Pilaw wählen und mit Gemüse strecken."}
+  ],
+  "related_foods": ["biryani", "fried-rice", "reis", "couscous"]
+}

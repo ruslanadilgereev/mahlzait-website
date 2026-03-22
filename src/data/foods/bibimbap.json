@@ -1,0 +1,49 @@
+{
+  "slug": "bibimbap",
+  "name": "Bibimbap",
+  "emoji": "🍚",
+  "category": "gericht",
+  "seo": {
+    "title": "Bibimbap Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Bibimbap? Nährwerte für verschiedene Varianten des koreanischen Reisgerichts. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 130,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 4,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 450,
+    "typical_portion_name": "1 Schüssel"
+  },
+  "variants": [
+    {"name": "Klassisch mit Rindfleisch", "portion_g": 450, "calories": 585, "protein": 30, "carbs": 75, "fat": 18, "tip": "Standard-Bibimbap"},
+    {"name": "Dolsot Bibimbap (Steinschale)", "portion_g": 450, "calories": 620, "protein": 28, "carbs": 78, "fat": 22, "tip": "Knuspriger Reis am Boden"},
+    {"name": "Vegetarisch", "portion_g": 450, "calories": 480, "protein": 18, "carbs": 78, "fat": 12, "tip": "Kalorienärmste Variante"},
+    {"name": "Mit Tofu", "portion_g": 450, "calories": 520, "protein": 24, "carbs": 76, "fat": 14},
+    {"name": "Mit Hähnchen", "portion_g": 450, "calories": 550, "protein": 32, "carbs": 74, "fat": 14},
+    {"name": "Mit Spiegelei extra", "portion_g": 500, "calories": 660, "protein": 36, "carbs": 76, "fat": 24}
+  ],
+  "comparison": [
+    {"name": "Fried Rice", "calories": 420, "emoji": "🍚"},
+    {"name": "Ramen", "calories": 500, "emoji": "🍜"},
+    {"name": "Pho", "calories": 350, "emoji": "🍲"},
+    {"name": "Sushi (8 Stück)", "calories": 350, "emoji": "🍣"}
+  ],
+  "tips": [
+    {"title": "Weniger Reis, mehr Gemüse", "text": "Halbiere die Reismenge und fülle mit extra Gemüse auf – spart ca. 130 kcal.", "icon": "🥬"},
+    {"title": "Gochujang dosieren", "text": "Gochujang (koreanische Chilipaste) hat 45 kcal pro EL. Ein EL reicht für guten Geschmack.", "icon": "🌶️"},
+    {"title": "Sesamöl sparsam", "text": "Sesamöl ist geschmacksintensiv – ein halber TL reicht für das Aroma bei nur 20 kcal.", "icon": "🫒"},
+    {"title": "Ei als Proteinboost", "text": "Ein Spiegelei oben drauf liefert 7g Protein und 90 kcal. Pochiert nur 70 kcal.", "icon": "🍳"},
+    {"title": "Kimchi als Beilage", "text": "Kimchi hat nur 15 kcal pro 100g, liefert Probiotika und gehört traditionell dazu.", "icon": "🥗"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Bibimbap?", "answer": "Eine Schüssel Bibimbap (450g) hat ca. 585 kcal mit Rindfleisch. Vegetarisch sind es nur ca. 480 kcal."},
+    {"question": "Ist Bibimbap gesund?", "answer": "Ja – Bibimbap ist eine der gesündesten asiatischen Mahlzeiten: viel Gemüse, mageres Protein, fermentiertes Kimchi und komplexe Kohlenhydrate."},
+    {"question": "Wie viel Protein hat Bibimbap?", "answer": "Mit Rindfleisch ca. 30g, mit Hähnchen 32g, vegetarisch ca. 18g Protein pro Schüssel."},
+    {"question": "Was ist kalorienärmer: Bibimbap oder Ramen?", "answer": "Bibimbap (585 kcal) und Ramen (500 kcal) sind ähnlich, aber Bibimbap hat mehr Gemüse und weniger Fett."},
+    {"question": "Kann man Bibimbap beim Abnehmen essen?", "answer": "Ja – besonders die vegetarische Version (480 kcal) mit viel Gemüse ist eine sättigende, nährstoffreiche Mahlzeit."},
+    {"question": "Was bedeutet Dolsot Bibimbap?", "answer": "Dolsot bedeutet 'Steinschale'. Der Reis wird in einer heißen Steinschale serviert und wird am Boden knusprig. Es hat ca. 35 kcal mehr durch extra Sesamöl."}
+  ],
+  "related_foods": ["fried-rice", "ramen", "kimchi-jjigae", "sushi"]
+}

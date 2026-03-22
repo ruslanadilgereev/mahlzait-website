@@ -1,0 +1,49 @@
+{
+  "slug": "tom-kha-gai",
+  "name": "Tom Kha Gai",
+  "emoji": "🍜",
+  "category": "gericht",
+  "seo": {
+    "title": "Tom Kha Gai Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Tom Kha Gai? Nährwerte der thailändischen Kokossuppe mit Hähnchen. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 85,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 4,
+    "fat_per_100g": 6,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 400,
+    "typical_portion_name": "1 Schüssel"
+  },
+  "variants": [
+    {"name": "Klassisch mit Hähnchen", "portion_g": 400, "calories": 340, "protein": 20, "carbs": 16, "fat": 24, "tip": "Standard-Portion"},
+    {"name": "Mit Garnelen", "portion_g": 400, "calories": 310, "protein": 22, "carbs": 16, "fat": 20, "tip": "Weniger Fett"},
+    {"name": "Vegetarisch mit Tofu", "portion_g": 400, "calories": 290, "protein": 16, "carbs": 18, "fat": 18, "tip": "Kalorienärmste Variante"},
+    {"name": "Mit Reis dazu", "portion_g": 550, "calories": 540, "protein": 22, "carbs": 66, "fat": 24},
+    {"name": "Light (weniger Kokosmilch)", "portion_g": 400, "calories": 240, "protein": 20, "carbs": 14, "fat": 12, "tip": "Diät-freundlich"},
+    {"name": "Extra cremig (volle Kokosmilch)", "portion_g": 400, "calories": 420, "protein": 18, "carbs": 16, "fat": 32}
+  ],
+  "comparison": [
+    {"name": "Tom Yum Gung", "calories": 280, "emoji": "🍲"},
+    {"name": "Pho", "calories": 350, "emoji": "🍜"},
+    {"name": "Ramen", "calories": 500, "emoji": "🍜"},
+    {"name": "Hühnersuppe deutsch", "calories": 180, "emoji": "🥣"}
+  ],
+  "tips": [
+    {"title": "Light-Kokosmilch nutzen", "text": "Light-Kokosmilch hat nur 70 kcal/100ml statt 190 kcal – spart bis zu 150 kcal pro Portion.", "icon": "🥥"},
+    {"title": "Reis separat portionieren", "text": "Ohne Reis hat Tom Kha Gai nur 340 kcal. Portioniere 80g Reis (100 kcal) statt 150g separat.", "icon": "🍚"},
+    {"title": "Mehr Gemüse, weniger Kokosmilch", "text": "Pilze, Pak Choi und Paprika machen die Suppe sättigend, ohne Kalorien hinzuzufügen.", "icon": "🍄"},
+    {"title": "Galgant und Zitronengras frisch", "text": "Frische Gewürze haben null Kalorien und intensivieren den Geschmack – weniger Kokosmilch nötig.", "icon": "🌿"},
+    {"title": "Hähnchenbrust statt -schenkel", "text": "Hähnchenbrust hat 110 kcal/100g vs. 190 kcal bei Schenkel – spart ca. 80 kcal pro Portion.", "icon": "🍗"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Tom Kha Gai?", "answer": "Eine Schüssel Tom Kha Gai (400g) hat ca. 340 kcal. Mit Reis dazu sind es ca. 540 kcal."},
+    {"question": "Ist Tom Kha Gai gesund?", "answer": "Tom Kha Gai liefert hochwertiges Protein, Ingwer und Galgant mit entzündungshemmender Wirkung. Die Kokosmilch enthält allerdings gesättigte Fette."},
+    {"question": "Was ist kalorienärmer: Tom Kha Gai oder Tom Yum?", "answer": "Tom Yum (ca. 280 kcal) hat weniger Kalorien als Tom Kha Gai (ca. 340 kcal), da keine Kokosmilch enthalten ist."},
+    {"question": "Wie viel Protein hat Tom Kha Gai?", "answer": "Eine Portion liefert ca. 20g Protein durch das Hähnchenfleisch. Die Garnelen-Variante hat sogar 22g."},
+    {"question": "Kann man Tom Kha Gai beim Abnehmen essen?", "answer": "Ja – die Light-Version mit weniger Kokosmilch hat nur ca. 240 kcal pro Schüssel und ist reich an Protein."},
+    {"question": "Was ist der Unterschied zwischen Tom Kha und Tom Yum?", "answer": "Tom Kha enthält Kokosmilch (cremig, milder), Tom Yum ist eine klare, säuerlich-scharfe Suppe ohne Kokosmilch."}
+  ],
+  "related_foods": ["pad-thai", "pho", "ramen", "curry-haehnchen"]
+}

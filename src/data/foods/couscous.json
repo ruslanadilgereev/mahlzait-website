@@ -1,0 +1,50 @@
+{
+  "slug": "couscous",
+  "name": "Couscous",
+  "emoji": "🥣",
+  "category": "gericht",
+  "seo": {
+    "title": "Couscous Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Couscous? Nährwerte für gekocht, trocken und verschiedene Zubereitungen. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 112,
+    "protein_per_100g": 4,
+    "carbs_per_100g": 23,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 1.4,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion (gekocht)"
+  },
+  "variants": [
+    {"name": "Couscous gekocht (pur)", "portion_g": 200, "calories": 224, "protein": 8, "carbs": 46, "fat": 0.4, "tip": "Basis-Beilage"},
+    {"name": "Couscous-Salat", "portion_g": 250, "calories": 320, "protein": 10, "carbs": 42, "fat": 12},
+    {"name": "Mit Gemüse und Hähnchen", "portion_g": 400, "calories": 480, "protein": 30, "carbs": 52, "fat": 16, "tip": "Ausgewogene Mahlzeit"},
+    {"name": "Vollkorn-Couscous", "portion_g": 200, "calories": 230, "protein": 9, "carbs": 44, "fat": 1, "tip": "Mehr Ballaststoffe"},
+    {"name": "Couscous trocken (Rohgewicht)", "portion_g": 80, "calories": 288, "protein": 10, "carbs": 56, "fat": 0.8},
+    {"name": "Marokkanischer Couscous (Lamm)", "portion_g": 450, "calories": 620, "protein": 34, "carbs": 56, "fat": 28},
+    {"name": "Couscous mit Gemüse (vegetarisch)", "portion_g": 350, "calories": 380, "protein": 14, "carbs": 58, "fat": 10, "tip": "Leichte Hauptmahlzeit"}
+  ],
+  "comparison": [
+    {"name": "Reis gekocht", "calories": 130, "emoji": "🍚"},
+    {"name": "Bulgur gekocht", "calories": 120, "emoji": "🌾"},
+    {"name": "Quinoa gekocht", "calories": 120, "emoji": "🥣"},
+    {"name": "Nudeln gekocht", "calories": 158, "emoji": "🍝"}
+  ],
+  "tips": [
+    {"title": "Gekocht vs. trocken beachten", "text": "Couscous verdreifacht sein Gewicht beim Kochen. 80g trocken = 200g gekocht (224 kcal).", "icon": "⚖️"},
+    {"title": "Vollkorn-Variante wählen", "text": "Vollkorn-Couscous hat doppelt so viele Ballaststoffe und macht deutlich länger satt.", "icon": "🌾"},
+    {"title": "Als Salatbasis", "text": "Couscous-Salat mit Gemüse, Kräutern und Zitrone: leicht, kalt genießbar und ideal für Meal Prep.", "icon": "🥗"},
+    {"title": "Brühe statt Wasser", "text": "In Gemüsebrühe quellen lassen statt in Wasser – null extra Kalorien, viel mehr Geschmack.", "icon": "🍲"},
+    {"title": "Proteinquelle ergänzen", "text": "Pur hat Couscous wenig Protein (4g/100g). Kichererbsen, Hähnchen oder Feta ergänzen optimal.", "icon": "💪"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Couscous?", "answer": "100g gekochter Couscous hat 112 kcal. Eine typische Portion (200g gekocht) hat ca. 224 kcal."},
+    {"question": "Ist Couscous gut zum Abnehmen?", "answer": "Couscous ist kalorienarm und fettfrei – gut als Beilage. Portioniere bewusst (80g trocken reichen) und ergänze mit Gemüse und Protein."},
+    {"question": "Was hat weniger Kalorien: Couscous oder Reis?", "answer": "Beide sind ähnlich: Couscous hat 112 kcal/100g (gekocht), Reis 130 kcal/100g. Couscous ist minimal leichter."},
+    {"question": "Wie viel Protein hat Couscous?", "answer": "Nur 4g/100g (gekocht) – relativ wenig. Ergänze mit Kichererbsen (19g/100g) oder Hähnchen für eine ausgewogene Mahlzeit."},
+    {"question": "Ist Couscous gesünder als Nudeln?", "answer": "Couscous hat weniger Kalorien (112 vs. 158 kcal/100g) und weniger Fett. Vollkorn-Couscous liefert zudem mehr Ballaststoffe als normale Nudeln."},
+    {"question": "Wie bereite ich Couscous kalorienarm zu?", "answer": "In Brühe quellen lassen (kein Öl nötig), mit viel Gemüse, frischen Kräutern und Zitronensaft servieren."}
+  ],
+  "related_foods": ["bulgur", "reis", "tabouleh", "nudeln"]
+}

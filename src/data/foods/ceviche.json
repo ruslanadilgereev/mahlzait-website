@@ -1,0 +1,49 @@
+{
+  "slug": "ceviche",
+  "name": "Ceviche",
+  "emoji": "🐟",
+  "category": "gericht",
+  "seo": {
+    "title": "Ceviche Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Ceviche? Nährwerte für verschiedene Fisch- und Garnelen-Ceviches. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 85,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 2,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    {"name": "Fisch-Ceviche klassisch", "portion_g": 250, "calories": 213, "protein": 30, "carbs": 13, "fat": 5, "tip": "Proteinreich und leicht"},
+    {"name": "Garnelen-Ceviche", "portion_g": 250, "calories": 195, "protein": 28, "carbs": 12, "fat": 4, "tip": "Kalorienärmste Variante"},
+    {"name": "Mit Avocado", "portion_g": 300, "calories": 320, "protein": 28, "carbs": 16, "fat": 16},
+    {"name": "Ceviche mit Süßkartoffel", "portion_g": 300, "calories": 280, "protein": 26, "carbs": 28, "fat": 6},
+    {"name": "Thunfisch-Ceviche", "portion_g": 250, "calories": 230, "protein": 34, "carbs": 10, "fat": 6, "tip": "Höchster Proteingehalt"},
+    {"name": "Ceviche-Bowl mit Reis", "portion_g": 400, "calories": 420, "protein": 30, "carbs": 56, "fat": 8}
+  ],
+  "comparison": [
+    {"name": "Sushi (8 Stück)", "calories": 350, "emoji": "🍣"},
+    {"name": "Poke Bowl", "calories": 450, "emoji": "🥣"},
+    {"name": "Lachsfilet gebraten", "calories": 400, "emoji": "🐟"},
+    {"name": "Griechischer Salat", "calories": 180, "emoji": "🥗"}
+  ],
+  "tips": [
+    {"title": "Frischer Fisch ist Pflicht", "text": "Für Ceviche nur sashimi-qualitäts Fisch verwenden. Die Zitronensäure 'gart' den Fisch, tötet aber nicht alle Keime.", "icon": "🐟"},
+    {"title": "Kein Öl nötig", "text": "Klassisches Ceviche braucht kein Öl. Die Limetten-Marinade reicht für Geschmack – und hält die Kalorien niedrig.", "icon": "🍋"},
+    {"title": "Avocado kontrolliert hinzufügen", "text": "Avocado ist lecker, aber kalorienreich. 50g (80 kcal) reichen für Cremigkeit.", "icon": "🥑"},
+    {"title": "Ideal nach dem Sport", "text": "Mit 30g Protein und wenig Fett ist Ceviche ein perfektes Post-Workout-Essen.", "icon": "💪"},
+    {"title": "Süßkartoffel als Beilage", "text": "In Peru traditionell mit Süßkartoffel serviert – liefert komplexe Kohlenhydrate und Beta-Carotin.", "icon": "🍠"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat Ceviche?", "answer": "Eine Portion Fisch-Ceviche (250g) hat ca. 213 kcal – eines der kalorienärmsten Hauptgerichte überhaupt."},
+    {"question": "Ist Ceviche gesund?", "answer": "Sehr gesund – viel Protein, wenig Fett, reich an Omega-3-Fettsäuren, Vitamin C (Limette) und Mineralstoffen aus dem Fisch."},
+    {"question": "Wie viel Protein hat Ceviche?", "answer": "Eine Portion liefert ca. 30g Protein aus magerem Fisch – ideal für Muskelaufbau und Diät."},
+    {"question": "Ist Ceviche gut zum Abnehmen?", "answer": "Ja – mit nur 85 kcal/100g und hohem Proteingehalt ist Ceviche eines der besten Diät-Gerichte."},
+    {"question": "Wird der Fisch in Ceviche roh gegessen?", "answer": "Technisch ja – der Fisch wird durch die Zitrussäure denaturiert (wie beim Garen), bleibt aber roh im traditionellen Sinn."},
+    {"question": "Wie lange hält Ceviche im Kühlschrank?", "answer": "Maximal 24 Stunden. Am besten frisch zubereiten und sofort essen – der Fisch wird sonst zu fest."}
+  ],
+  "related_foods": ["sushi", "lachsfilet", "garnelen", "pho"]
+}

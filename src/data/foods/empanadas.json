@@ -1,0 +1,50 @@
+{
+  "slug": "empanadas",
+  "name": "Empanadas",
+  "emoji": "🥟",
+  "category": "gericht",
+  "seo": {
+    "title": "Empanadas Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Empanadas? Nährwerte für Fleisch-, Käse- und vegetarische Empanadas. Kostenloser Kalorien-Rechner."
+  },
+  "overview": {
+    "calories_per_100g": 260,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 24,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 1.2,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Empanada"
+  },
+  "variants": [
+    {"name": "Rindfleisch (Carne)", "portion_g": 150, "calories": 390, "protein": 16, "carbs": 34, "fat": 22, "tip": "Klassiker"},
+    {"name": "Hähnchen", "portion_g": 150, "calories": 350, "protein": 18, "carbs": 34, "fat": 16},
+    {"name": "Käse (Queso)", "portion_g": 130, "calories": 340, "protein": 12, "carbs": 28, "fat": 20},
+    {"name": "Gebacken (Ofen)", "portion_g": 140, "calories": 300, "protein": 14, "carbs": 32, "fat": 14, "tip": "Weniger Fett als frittiert"},
+    {"name": "Frittiert", "portion_g": 150, "calories": 420, "protein": 14, "carbs": 34, "fat": 26},
+    {"name": "Gemüse-Empanada", "portion_g": 140, "calories": 280, "protein": 8, "carbs": 32, "fat": 14, "tip": "Kalorienärmste Variante"},
+    {"name": "Thunfisch", "portion_g": 150, "calories": 330, "protein": 18, "carbs": 30, "fat": 16}
+  ],
+  "comparison": [
+    {"name": "Börek (1 Stück)", "calories": 350, "emoji": "🥧"},
+    {"name": "Pierogi (5 Stück)", "calories": 380, "emoji": "🥟"},
+    {"name": "Maultaschen (4 Stück)", "calories": 420, "emoji": "🥟"},
+    {"name": "Calzone", "calories": 550, "emoji": "🍕"}
+  ],
+  "tips": [
+    {"title": "Im Ofen statt frittiert", "text": "Gebackene Empanadas haben 20-30% weniger Kalorien als frittierte. Der Teig wird trotzdem knusprig.", "icon": "🔥"},
+    {"title": "Hähnchen statt Rind", "text": "Hähnchenfüllung spart ca. 40 kcal pro Empanada im Vergleich zu Rindfleisch.", "icon": "🍗"},
+    {"title": "Dünnerer Teig", "text": "Selbstgemacht: Teig dünner ausrollen spart Kalorien. Der Teig macht 40% der Kalorien aus.", "icon": "📏"},
+    {"title": "Mit Salat kombinieren", "text": "2 Empanadas + großer Salat = sättigende Mahlzeit unter 800 kcal.", "icon": "🥗"},
+    {"title": "Chimichurri statt Mayo", "text": "Chimichurri hat nur 30 kcal/EL, Mayo hat 100 kcal/EL. Schmeckt dazu perfekt.", "icon": "🌿"}
+  ],
+  "faq": [
+    {"question": "Wie viele Kalorien hat eine Empanada?", "answer": "Eine Empanada hat je nach Füllung 280-420 kcal. Rindfleisch frittiert: ca. 420 kcal, Gemüse gebacken: ca. 280 kcal."},
+    {"question": "Sind Empanadas ungesund?", "answer": "Frittierte Empanadas sind kalorienreich. Gebackene Varianten mit Hähnchen oder Gemüse sind deutlich besser – vergleichbar mit belegten Brötchen."},
+    {"question": "Wie viele Empanadas sind eine Mahlzeit?", "answer": "2-3 Empanadas (600-900 kcal) als Hauptmahlzeit. 1 Empanada als Snack (300-400 kcal)."},
+    {"question": "Was hat weniger Kalorien: Empanadas oder Pizza?", "answer": "Eine Empanada (390 kcal) hat weniger als ein Pizza-Stück (ca. 280 kcal), aber eine ganze Pizza deutlich mehr (800+ kcal)."},
+    {"question": "Wie viel Protein haben Empanadas?", "answer": "Eine Empanada mit Fleisch hat ca. 14-18g Protein. Für zwei sind das 28-36g – ein guter Wert."},
+    {"question": "Kann man Empanadas beim Abnehmen essen?", "answer": "Ja, wenn gebacken und mit magerer Füllung. 1-2 gebackene Gemüse-Empanadas (560 kcal) passen in eine Diät."}
+  ],
+  "related_foods": ["borek", "pierogi", "calzone", "burrito"]
+}
