@@ -1,51 +1,57 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { SignJWT, importPKCS8 } from 'jose';
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
-  const pw = req.query.pw as string;
+export const config = { runtime: 'edge' };
+
+export default async function handler(req: Request) {
+  const url = new URL(req.url);
+  const pw = url.searchParams.get('pw');
+
   if (!pw || pw !== process.env.DASHBOARD_PASSWORD) {
-    return res.status(401).json({ error: 'Unauthorized' });
+    return Response.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
   try {
     const apple = await fetchAppleSubscriptions();
-    return res.status(200).json({ timestamp: new Date().toISOString(), apple });
+    return Response.json({ timestamp: new Date().toISOString(), apple }, {
+      headers: { 'Cache-Control': 'no-cache, no-store' },
+    });
   } catch (e: any) {
-    return res.status(500).json({ error: e.message });
+    return Response.json({ error: e.message, stack: e.stack?.slice(0, 500) }, { status: 500 });
   }
 }
 
 async function fetchAppleSubscriptions() {
-  const { APPLE_ISSUER_ID, APPLE_KEY_ID, APPLE_PRIVATE_KEY_B64, APPLE_VENDOR } = process.env;
-  if (!APPLE_ISSUER_ID || !APPLE_KEY_ID || !APPLE_PRIVATE_KEY_B64) {
-    return { error: 'Apple credentials not configured' };
+  const ISSUER = process.env.APPLE_ISSUER_ID;
+  const KEY_ID = process.env.APPLE_KEY_ID;
+  const KEY_B64 = process.env.APPLE_PRIVATE_KEY_B64;
+  const VENDOR = process.env.APPLE_VENDOR || '93509467';
+
+  if (!ISSUER || !KEY_ID || !KEY_B64) {
+    return { error: 'Apple credentials not configured', has: { ISSUER: !!ISSUER, KEY_ID: !!KEY_ID, KEY_B64: !!KEY_B64 } };
   }
 
-  const pem = Buffer.from(APPLE_PRIVATE_KEY_B64, 'base64').toString('utf-8');
+  const pem = atob(KEY_B64);
   const privateKey = await importPKCS8(pem, 'ES256');
 
   const token = await new SignJWT({})
-    .setProtectedHeader({ alg: 'ES256', kid: APPLE_KEY_ID, typ: 'JWT' })
-    .setIssuer(APPLE_ISSUER_ID)
+    .setProtectedHeader({ alg: 'ES256', kid: KEY_ID, typ: 'JWT' })
+    .setIssuer(ISSUER)
     .setIssuedAt()
     .setExpirationTime('20m')
     .setAudience('appstoreconnect-v1')
     .sign(privateKey);
 
   const headers = { Authorization: `Bearer ${token}` };
-  const vendor = APPLE_VENDOR || '93509467';
-
   const dates = getLast7Dates();
   const trend: any[] = [];
 
   for (const date of dates) {
-    const url = `https://api.appstoreconnect.apple.com/v1/salesReports?filter[frequency]=DAILY&filter[reportDate]=${date}&filter[reportSubType]=SUMMARY&filter[reportType]=SUBSCRIPTION&filter[vendorNumber]=${vendor}&filter[version]=1_4`;
-    const r = await fetch(url, { headers });
+    const apiUrl = `https://api.appstoreconnect.apple.com/v1/salesReports?filter[frequency]=DAILY&filter[reportDate]=${date}&filter[reportSubType]=SUMMARY&filter[reportType]=SUBSCRIPTION&filter[vendorNumber]=${VENDOR}&filter[version]=1_4`;
+    const r = await fetch(apiUrl, { headers });
 
     if (r.status === 200) {
-      const buf = Buffer.from(await r.arrayBuffer());
-      const { gunzipSync } = await import('zlib');
-      const tsv = gunzipSync(buf).toString('utf-8');
+      const buf = await r.arrayBuffer();
+      const tsv = await decompressGzip(new Uint8Array(buf));
       const rows = parseTSV(tsv);
 
       let paid = 0, trial = 0, billingRetry = 0;
@@ -74,6 +80,21 @@ async function fetchAppleSubscriptions() {
   } : null;
 
   return { latestDate: latest?.date, current: latest, mrr, trend };
+}
+
+async function decompressGzip(data: Uint8Array): Promise<string> {
+  const ds = new DecompressionStream('gzip');
+  const w = ds.writable.getWriter();
+  w.write(data);
+  w.close();
+  const reader = ds.readable.getReader();
+  const chunks: Uint8Array[] = [];
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    chunks.push(value);
+  }
+  return new TextDecoder().decode(Buffer.concat(chunks));
 }
 
 function getLast7Dates(): string[] {

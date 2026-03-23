@@ -100,16 +100,20 @@
     }
 
     async function loadData() {
+      const err = document.getElementById('error');
+      err.style.display = 'none';
       try {
         const r = await fetch('/api/dashboard?pw=' + encodeURIComponent(pw));
-        if (r.status === 401) { document.getElementById('error').style.display = 'block'; localStorage.removeItem('cockpit_pw'); return; }
-        const d = await r.json();
-        if (d.error) { document.getElementById('error').textContent = d.error; document.getElementById('error').style.display = 'block'; return; }
+        const text = await r.text();
+        let d;
+        try { d = JSON.parse(text); } catch { err.textContent = 'Server error: ' + text.slice(0, 200); err.style.display = 'block'; return; }
+        if (r.status === 401) { err.textContent = 'Falsches Passwort'; err.style.display = 'block'; localStorage.removeItem('cockpit_pw'); return; }
+        if (d.error) { err.textContent = d.error; err.style.display = 'block'; return; }
         localStorage.setItem('cockpit_pw', pw);
         document.getElementById('login').classList.add('hidden');
         document.getElementById('dashboard').classList.remove('hidden');
         render(d);
-      } catch (e) { document.getElementById('error').textContent = e.message; document.getElementById('error').style.display = 'block'; }
+      } catch (e) { err.textContent = 'Netzwerk: ' + e.message; err.style.display = 'block'; }
     }
 
     function render(d) {
