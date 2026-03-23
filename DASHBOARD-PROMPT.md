@@ -104,6 +104,32 @@ Jede Function:
 
 ## API Auth Details
 
+### Apple ASC Analytics Reports API (für Impressions, Downloads, Revenue):
+Die App Store Analytics Daten (Impressions, Product Page Views, Downloads, Revenue) kommen über die **Analytics Reports API**, NICHT über Sales Reports.
+
+**Report Request ID:** `5305be75-8413-4f20-92de-819ca6dcc9c8` (bereits erstellt, ONGOING)
+
+**Workflow:**
+1. List reports: `GET /v1/analyticsReportRequests/{requestId}/reports`
+2. Für jeden Report die Instances holen: `GET /v1/analyticsReports/{reportId}/instances`
+3. Für jede Instance die Segments (Download-URLs): `GET /v1/analyticsReportInstances/{instanceId}/segments`
+4. Download URL aus `attributes.url` → gibt TSV/gzip zurück
+
+**Relevante Report IDs (Prefix + Request ID):**
+- `r14-{RID}`: App Store Discovery & Engagement Standard → **Impressions, Product Page Views**
+- `r15-{RID}`: App Store Discovery & Engagement Detailed → mit Dimensions (Source, Territory)
+- `r3-{RID}`: App Downloads Standard → **Downloads**
+- `r4-{RID}`: App Downloads Detailed → mit Dimensions
+- `r12-{RID}`: App Store Purchases Standard → **Revenue, IAP**
+- `r13-{RID}`: App Store Purchases Detailed
+- `r6-{RID}`: Installation & Deletion Standard → **Installs/Uninstalls**
+- `r8-{RID}`: App Sessions Standard → **Sessions, Active Devices**
+- `r194-{RID}`: Platform App Installs
+
+**WICHTIG:** `Accept: application/a-gzip, application/json` Header bei Sales Reports! Ohne den kommt HTTP 406.
+
+**WICHTIG:** Report Instances brauchen 24-48h nach Request-Erstellung. Prüfe ob instances vorhanden sind.
+
 ### Apple ASC Subscription Event Reports (für Funnel):
 - `GET /v1/salesReports?filter[reportType]=SUBSCRIPTION_EVENT&filter[version]=1_3`
 - Events: Start Trial, Convert Trial, Cancel, Refund, Renew, Billing Retry
