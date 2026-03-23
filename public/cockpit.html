@@ -121,14 +121,14 @@
       if (a) {
         document.getElementById('v-paid').textContent = a.paid;
         document.getElementById('v-trial').textContent = a.trial;
-        document.getElementById('s-m').textContent = a.monthlyPaid;
-        document.getElementById('s-y').textContent = a.yearlyPaid;
-        document.getElementById('t-m').textContent = a.monthlyTrial;
-        document.getElementById('t-y').textContent = a.yearlyTrial;
+        document.getElementById('s-m').textContent = a.mP;
+        document.getElementById('s-y').textContent = a.yP;
+        document.getElementById('t-m').textContent = a.mT;
+        document.getElementById('t-y').textContent = a.yT;
       }
       if (d.apple?.mrr) {
-        document.getElementById('v-mrr').textContent = '€' + d.apple.mrr.monthlyGross;
-        document.getElementById('v-net').textContent = '€' + d.apple.mrr.monthlyNet;
+        document.getElementById('v-mrr').textContent = '€' + d.apple.mrr.gross;
+        document.getElementById('v-net').textContent = '€' + d.apple.mrr.net;
       }
       document.getElementById('meta').textContent = 'Daten vom ' + (d.apple?.latestDate || '?');
       document.getElementById('raw').textContent = JSON.stringify(d, null, 2);
