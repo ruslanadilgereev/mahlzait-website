@@ -12,6 +12,33 @@ Baue ein vollständiges Dashboard unter `public/cockpit.html` mit API-Backend un
 
 ## Dashboard Sektionen
 
+### 0. Full Funnel (Kette) 🔗
+Die wichtigste Sektion — zeigt die komplette User Journey als horizontale Pipeline:
+
+```
+Impression → Tap → Install → Paywall Shown → Trial Started → Converted to Paid → Month 2+ Retained → Cancelled
+```
+
+Für jeden Step:
+- Absolute Zahl
+- Conversion Rate zum nächsten Step (z.B. "33% Tap Rate")
+- Visuell als Funnel (Balken werden schmaler)
+
+Datenquellen pro Step:
+- **Impressions + Taps**: Apple Ads API (Campaign Reports)
+- **Installs**: Apple Ads API (conversions) + ASC App Analytics (wenn verfügbar)
+- **Trial Started**: ASC Subscription Reports (Active Free Trial count)
+- **Converted to Paid**: ASC Subscription Reports (neue Standard Price Subs)
+- **Retained (Month 2+)**: ASC Subscriber Detail Report (Paid Duration > 1 month)
+- **Cancelled/Churned**: ASC Subscription Events (Cancel, Refund events)
+
+Zeige auch:
+- CPA (Cost per Install aus Apple Ads)
+- Cost per Trial
+- Cost per Paid User
+- LTV vs CPA Ratio
+- Durchschnittliche Subscription-Dauer (Monate bis Cancel)
+
 ### 1. MRR & Revenue 🎯
 - MRR gesamt (Apple + Google kombiniert), brutto und netto (nach 15% Store-Fee)
 - Wöchentlicher MRR-Trend als Bar-Chart (letzte 4-8 Wochen)
@@ -76,6 +103,18 @@ Jede Function:
 - `APPLE_ADS_ORG_ID` = `19224590`
 
 ## API Auth Details
+
+### Apple ASC Subscription Event Reports (für Funnel):
+- `GET /v1/salesReports?filter[reportType]=SUBSCRIPTION_EVENT&filter[version]=1_3`
+- Events: Start Trial, Convert Trial, Cancel, Refund, Renew, Billing Retry
+- Felder: Event Date, Event, Subscription Name, Country, Customer Price, Developer Proceeds
+- Für Churn-Rate: Events "Cancel" und "Refund" zählen
+- Für Conversion: "Paid Subscription from Introductory Offer" Events
+
+### Apple ASC Subscriber Detail Reports (für Retention):
+- `GET /v1/salesReports?filter[reportType]=SUBSCRIBER&filter[reportSubType]=DETAILED&filter[version]=1_3`
+- Felder: Active/Cancelled Standard Price Subscribers, Days Before/Since Cancelling
+- Für avg Subscription-Dauer: "Days Before Cancelling" Feld
 
 ### Apple ASC JWT (bereits implementiert):
 - ES256, kid=APPLE_KEY_ID, iss=APPLE_ISSUER_ID, aud=appstoreconnect-v1
