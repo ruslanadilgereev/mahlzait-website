@@ -1,9 +1,8 @@
-import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { SignJWT, importPKCS8 } from 'jose';
-import { gunzipSync } from 'zlib';
+import { gunzipSync } from 'node:zlib';
 
-export default async function handler(req: VercelRequest, res: VercelResponse) {
-  const pw = (req.query.pw as string) || '';
+export default async function handler(req: any, res: any) {
+  const pw = (req.query?.pw || '') as string;
   if (!pw || pw !== process.env.DASHBOARD_PASSWORD) {
     return res.status(401).json({ error: 'Unauthorized' });
   }
@@ -37,16 +36,23 @@ async function fetchApple() {
     .setAudience('appstoreconnect-v1')
     .sign(pk);
 
-  const headers = { Authorization: `Bearer ${jwt}` };
+  const headers: Record<string, string> = { Authorization: `Bearer ${jwt}` };
   const trend: any[] = [];
   const debug: any[] = [];
 
   for (let i = 2; i < 9; i++) {
-    const d = new Date(); d.setDate(d.getDate() - i);
+    const d = new Date();
+    d.setDate(d.getDate() - i);
     const date = d.toISOString().slice(0, 10);
     const url = `https://api.appstoreconnect.apple.com/v1/salesReports?filter[frequency]=DAILY&filter[reportDate]=${date}&filter[reportSubType]=SUMMARY&filter[reportType]=SUBSCRIPTION&filter[vendorNumber]=${VENDOR}&filter[version]=1_4`;
 
-    const r = await fetch(url, { headers });
+    let r: Response;
+    try {
+      r = await fetch(url, { headers });
+    } catch (fetchErr: any) {
+      debug.push({ date, fetchError: fetchErr.message });
+      continue;
+    }
 
     if (r.status !== 200) {
       const t = await r.text().catch(() => '');
@@ -54,25 +60,29 @@ async function fetchApple() {
       continue;
     }
 
-    const buf = Buffer.from(await r.arrayBuffer());
-    const tsv = gunzipSync(buf).toString('utf-8');
-    const rows = parseTSV(tsv);
+    try {
+      const buf = Buffer.from(await r.arrayBuffer());
+      const tsv = gunzipSync(buf).toString('utf-8');
+      const rows = parseTSV(tsv);
 
-    let paid = 0, trial = 0, retry = 0;
-    let mP = 0, yP = 0, mT = 0, yT = 0;
+      let paid = 0, trial = 0, retry = 0;
+      let mP = 0, yP = 0, mT = 0, yT = 0;
 
-    for (const row of rows) {
-      const p = int(row['Active Standard Price Subscriptions']);
-      const t = int(row['Active Free Trial Introductory Offer Subscriptions']);
-      const br = int(row['Billing Retry']);
-      const sub = row['Subscription Name'] || '';
+      for (const row of rows) {
+        const p = int(row['Active Standard Price Subscriptions']);
+        const t = int(row['Active Free Trial Introductory Offer Subscriptions']);
+        const br = int(row['Billing Retry']);
+        const sub = row['Subscription Name'] || '';
 
-      paid += p; trial += t; retry += br;
-      if (sub.includes('Monthly')) { mP += p; mT += t; }
-      else if (sub.includes('Yearly')) { yP += p; yT += t; }
+        paid += p; trial += t; retry += br;
+        if (sub.includes('Monthly')) { mP += p; mT += t; }
+        else if (sub.includes('Yearly')) { yP += p; yT += t; }
+      }
+
+      trend.push({ date, paid, trial, retry, total: paid + trial + retry, mP, yP, mT, yT });
+    } catch (parseErr: any) {
+      debug.push({ date, parseError: parseErr.message });
     }
-
-    trend.push({ date, paid, trial, retry, total: paid + trial + retry, mP, yP, mT, yT });
   }
 
   trend.reverse();
@@ -82,7 +92,7 @@ async function fetchApple() {
     net: +((latest.mP * 4.99 + latest.yP * (29.99 / 12)) * 0.85).toFixed(2),
   } : null;
 
-  return { latestDate: latest?.date, current: latest, mrr, trend, debug: debug.slice(0, 2) };
+  return { latestDate: latest?.date, current: latest, mrr, trend, debug: debug.slice(0, 3) };
 }
 
 function int(v: string | undefined): number { return parseInt(v || '0') || 0; }
