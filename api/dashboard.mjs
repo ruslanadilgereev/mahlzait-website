@@ -1,18 +1,35 @@
-import { SignJWT, importPKCS8 } from 'jose';
+import { createPrivateKey, createSign } from 'node:crypto';
 import { gunzipSync } from 'node:zlib';
 
-export default async function handler(req: any, res: any) {
-  const pw = (req.query?.pw || '') as string;
-  if (!pw || pw !== process.env.DASHBOARD_PASSWORD) {
-    return res.status(401).json({ error: 'Unauthorized' });
-  }
-
+export default async function handler(req, res) {
   try {
+    const pw = req.query?.pw || '';
+    if (!pw || pw !== process.env.DASHBOARD_PASSWORD) {
+      return res.status(401).json({ error: 'Unauthorized' });
+    }
+
     const apple = await fetchApple();
-    return res.json({ timestamp: new Date().toISOString(), apple });
-  } catch (e: any) {
-    return res.status(500).json({ error: e.message, stack: (e.stack || '').slice(0, 500) });
+    return res.json({ ts: new Date().toISOString(), apple });
+  } catch (e) {
+    return res.status(500).json({ error: String(e.message), stack: String(e.stack).slice(0, 500) });
   }
+}
+
+function base64url(buf) {
+  return Buffer.from(buf).toString('base64url');
+}
+
+function makeJWT(issuerId, keyId, pemKey) {
+  const now = Math.floor(Date.now() / 1000);
+  const header = { alg: 'ES256', kid: keyId, typ: 'JWT' };
+  const payload = { iss: issuerId, iat: now, exp: now + 1200, aud: 'appstoreconnect-v1' };
+
+  const segments = base64url(JSON.stringify(header)) + '.' + base64url(JSON.stringify(payload));
+  const sign = createSign('SHA256');
+  sign.update(segments);
+  const sig = sign.sign({ key: pemKey, dsaEncoding: 'ieee-p1363' });
+
+  return segments + '.' + base64url(sig);
 }
 
 async function fetchApple() {
@@ -22,23 +39,15 @@ async function fetchApple() {
   const VENDOR = process.env.APPLE_VENDOR || '93509467';
 
   if (!ISSUER || !KEY_ID || !KEY_B64) {
-    return { error: 'Credentials missing', has: { ISSUER: !!ISSUER, KEY_ID: !!KEY_ID, KEY_B64: !!KEY_B64 } };
+    return { error: 'env_missing', has: { i: !!ISSUER, k: !!KEY_ID, b: !!KEY_B64 } };
   }
 
   const pem = Buffer.from(KEY_B64, 'base64').toString('utf-8');
-  const pk = await importPKCS8(pem, 'ES256');
+  const jwt = makeJWT(ISSUER, KEY_ID, pem);
+  const headers = { Authorization: 'Bearer ' + jwt };
 
-  const jwt = await new SignJWT({})
-    .setProtectedHeader({ alg: 'ES256', kid: KEY_ID, typ: 'JWT' })
-    .setIssuer(ISSUER)
-    .setIssuedAt()
-    .setExpirationTime('20m')
-    .setAudience('appstoreconnect-v1')
-    .sign(pk);
-
-  const headers: Record<string, string> = { Authorization: `Bearer ${jwt}` };
-  const trend: any[] = [];
-  const debug: any[] = [];
+  const trend = [];
+  const debug = [];
 
   for (let i = 2; i < 9; i++) {
     const d = new Date();
@@ -46,17 +55,19 @@ async function fetchApple() {
     const date = d.toISOString().slice(0, 10);
     const url = `https://api.appstoreconnect.apple.com/v1/salesReports?filter[frequency]=DAILY&filter[reportDate]=${date}&filter[reportSubType]=SUMMARY&filter[reportType]=SUBSCRIPTION&filter[vendorNumber]=${VENDOR}&filter[version]=1_4`;
 
-    let r: Response;
+    let r;
     try {
       r = await fetch(url, { headers });
-    } catch (fetchErr: any) {
-      debug.push({ date, fetchError: fetchErr.message });
+    } catch (err) {
+      debug.push({ date, err: err.message });
       continue;
     }
 
     if (r.status !== 200) {
-      const t = await r.text().catch(() => '');
-      debug.push({ date, status: r.status, body: t.slice(0, 200) });
+      if (debug.length < 2) {
+        const t = await r.text().catch(() => '');
+        debug.push({ date, s: r.status, b: t.slice(0, 200) });
+      }
       continue;
     }
 
@@ -65,8 +76,7 @@ async function fetchApple() {
       const tsv = gunzipSync(buf).toString('utf-8');
       const rows = parseTSV(tsv);
 
-      let paid = 0, trial = 0, retry = 0;
-      let mP = 0, yP = 0, mT = 0, yT = 0;
+      let paid = 0, trial = 0, retry = 0, mP = 0, yP = 0, mT = 0, yT = 0;
 
       for (const row of rows) {
         const p = int(row['Active Standard Price Subscriptions']);
@@ -80,8 +90,8 @@ async function fetchApple() {
       }
 
       trend.push({ date, paid, trial, retry, total: paid + trial + retry, mP, yP, mT, yT });
-    } catch (parseErr: any) {
-      debug.push({ date, parseError: parseErr.message });
+    } catch (pe) {
+      debug.push({ date, parse: pe.message });
     }
   }
 
@@ -92,18 +102,18 @@ async function fetchApple() {
     net: +((latest.mP * 4.99 + latest.yP * (29.99 / 12)) * 0.85).toFixed(2),
   } : null;
 
-  return { latestDate: latest?.date, current: latest, mrr, trend, debug: debug.slice(0, 3) };
+  return { latestDate: latest?.date, current: latest, mrr, trend, debug };
 }
 
-function int(v: string | undefined): number { return parseInt(v || '0') || 0; }
+function int(v) { return parseInt(v || '0') || 0; }
 
-function parseTSV(tsv: string): Record<string, string>[] {
+function parseTSV(tsv) {
   const lines = tsv.trim().split('\n');
   if (lines.length < 2) return [];
   const h = lines[0].split('\t');
   return lines.slice(1).map(l => {
     const v = l.split('\t');
-    const o: Record<string, string> = {};
+    const o = {};
     h.forEach((k, i) => o[k.trim()] = (v[i] || '').trim());
     return o;
   });
