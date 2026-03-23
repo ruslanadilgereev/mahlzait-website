@@ -99,7 +99,7 @@ const DoenerRechner = () => {
 
           <p className="text-sm mb-4">Lieber vorher wissen, was du isst?</p>
           <a 
-            href="https://apps.apple.com/de/app/mahlzait-ki-kalorienz%C3%A4hler/id6747400456" 
+            href="https://apps.apple.com/de/app/mahlzait-ki-kalorienz%C3%A4hler/id6747400456?pt=126498482&ct=mahlzait-website&mt=8" 
             className="btn btn-primary"
           >
             🚀 Kalorien tracken mit Mahlzait

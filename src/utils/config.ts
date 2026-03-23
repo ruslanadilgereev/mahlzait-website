@@ -14,9 +14,9 @@ const templateConfig: TemplateConfig = {
   forceTheme: false,
   // Shows switch to toggle between dark and light modes
   showThemeSwitch: true,
-  appStoreLink: "https://apps.apple.com/de/app/mahlzait-kalorienz%C3%A4hler/id6747400456",
+  appStoreLink: "https://apps.apple.com/de/app/mahlzait-kalorienz%C3%A4hler/id6747400456?pt=126498482&ct=mahlzait-website&mt=8",
   googlePlayLink:
-    "https://play.google.com/store/apps/details?id=com.promptit.mytemple",
+    "https://play.google.com/store/apps/details?id=com.promptit.mytemple&utm_source=mahlzait-website&utm_medium=website&utm_campaign=homepage",
   footer: {
     legalLinks: {
       termsAndConditions: true,

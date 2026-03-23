@@ -96,7 +96,7 @@ const WeightLossDateCalculator = () => {
             <div className="divider my-6"></div>
             
             <p className="text-sm mb-4">Um das Datum zu halten, musst du tracken.</p>
-            <a href="https://apps.apple.com/de/app/mahlzait-ki-kalorienz%C3%A4hler/id6747400456" className="btn btn-primary w-full">
+            <a href="https://apps.apple.com/de/app/mahlzait-ki-kalorienz%C3%A4hler/id6747400456?pt=126498482&ct=mahlzait-website&mt=8" className="btn btn-primary w-full">
               🚀 Jetzt starten & Datum sichern
             </a>
           </div>
