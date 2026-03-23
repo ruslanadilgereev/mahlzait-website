@@ -1,0 +1,52 @@
+{
+  "slug": "sprite",
+  "name": "Sprite",
+  "emoji": "🍋",
+  "category": "getraenk",
+  "seo": {
+    "title": "Sprite Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Sprite? Nährwerte pro 100ml & Glas. Sprite, Zero, 7UP & Zitronenlimonade im Vergleich.",
+    "keywords": ["sprite kalorien", "kalorien sprite", "sprite nährwerte", "sprite zero kalorien", "7up kalorien", "zitronenlimonade kalorien", "sprite zucker", "sprite dose kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 39,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 9.0,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 330,
+    "typical_portion_name": "1 Dose (330ml)"
+  },
+  "variants": [
+    { "name": "Sprite (Dose 330ml)", "portion_g": 330, "calories": 129, "protein": 0, "carbs": 30, "fat": 0 },
+    { "name": "Sprite Zero (Dose 330ml)", "portion_g": 330, "calories": 1, "protein": 0, "carbs": 0, "fat": 0, "tip": "Kalorienfrei" },
+    { "name": "Sprite (0,5l)", "portion_g": 500, "calories": 195, "protein": 0, "carbs": 45, "fat": 0 },
+    { "name": "Sprite (Glas 200ml)", "portion_g": 200, "calories": 78, "protein": 0, "carbs": 18, "fat": 0 },
+    { "name": "7UP (Dose 330ml)", "portion_g": 330, "calories": 132, "protein": 0, "carbs": 33, "fat": 0 },
+    { "name": "Bitter Lemon (200ml)", "portion_g": 200, "calories": 68, "protein": 0, "carbs": 17, "fat": 0 },
+    { "name": "Sprite (1 Liter)", "portion_g": 1000, "calories": 390, "protein": 0, "carbs": 90, "fat": 0 },
+    { "name": "Sprite + Vodka (Longdrink)", "portion_g": 350, "calories": 220, "protein": 0, "carbs": 25, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Cola (330ml)", "calories": 139, "emoji": "🥤" },
+    { "name": "Fanta (330ml)", "calories": 129, "emoji": "🍊" },
+    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" },
+    { "name": "Eistee (330ml)", "calories": 99, "emoji": "🧊" }
+  ],
+  "tips": [
+    { "title": "Sprite Zero wählen", "text": "Sprite Zero hat 1 kcal pro Dose statt 129 kcal. Gleicher Zitronengeschmack, keine Kalorien.", "icon": "0️⃣" },
+    { "title": "Mit Eis und Limette aufwerten", "text": "Sprite mit viel Eis und frischer Limette – das Eis verdünnt, die Limette gibt Extra-Geschmack. Weniger trinken, mehr genießen.", "icon": "🍋" },
+    { "title": "Als Schorle mixen", "text": "Halb Sprite, halb Mineralwasser ergibt eine leichte Zitronenlimo mit nur 65 kcal pro Glas.", "icon": "💧" },
+    { "title": "Kleine Portion reicht", "text": "Ein 200ml-Glas (78 kcal) stillt das Verlangen genauso wie 500ml (195 kcal). Weniger ist hier tatsächlich gleich.", "icon": "📏" },
+    { "title": "Sprite vs. Infused Water", "text": "Wasser mit Zitronenscheiben und Minze ist das kalorienfreie Upgrade. Schmeckt ähnlich erfrischend – mit 0 kcal.", "icon": "🥒" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Dose Sprite?", "answer": "Eine Dose Sprite (330ml) hat 129 kcal. Sprite Zero hat nur 1 kcal. Die 500ml-Flasche kommt auf 195 kcal." },
+    { "question": "Wie viel Zucker hat Sprite?", "answer": "Sprite hat 9g Zucker pro 100ml. Eine Dose (330ml) enthält ca. 30g Zucker – 7,5 Zuckerwürfel." },
+    { "question": "Was hat weniger Kalorien – Sprite oder Cola?", "answer": "Sprite hat 39 kcal/100ml, Cola 42 kcal/100ml. Pro Dose sind es 129 vs. 139 kcal – Sprite hat minimal weniger." },
+    { "question": "Ist Sprite Zero besser als normale Sprite?", "answer": "Kalorienmäßig ja: 1 vs. 129 kcal pro Dose. Die Süßstoffe sind laut EFSA in normalen Mengen unbedenklich." },
+    { "question": "Was ist der Unterschied zwischen Sprite und 7UP?", "answer": "Geschmacklich ähnlich. Kalorisch fast gleich: Sprite 39 kcal/100ml, 7UP 40 kcal/100ml. 7UP hat etwas mehr Zucker." },
+    { "question": "Ist Sprite bei Übelkeit gut?", "answer": "Sprite wird oft bei Übelkeit empfohlen. Die Kohlensäure und der Zucker können kurzfristig helfen – aber als regelmäßiges Getränk ist Wasser besser." }
+  ],
+  "related_foods": ["cola", "fanta", "eistee", "mineralwasser"]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "smoothie-gruen",
+  "name": "Grüner Smoothie",
+  "emoji": "🥬",
+  "category": "getraenk",
+  "seo": {
+    "title": "Grüner Smoothie Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein grüner Smoothie? Nährwerte pro 100ml & Glas. Spinat, Grünkohl, Obst-Gemüse-Smoothies im Vergleich.",
+    "keywords": ["grüner smoothie kalorien", "green smoothie kalorien", "smoothie kalorien", "smoothie nährwerte", "spinat smoothie kalorien", "detox smoothie kalorien", "gemüse smoothie kalorien", "smoothie kalorienarm"]
+  },
+  "overview": {
+    "calories_per_100g": 55,
+    "protein_per_100g": 1.5,
+    "carbs_per_100g": 10,
+    "fat_per_100g": 0.8,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Glas (300ml)"
+  },
+  "variants": [
+    { "name": "Spinat-Banane-Apfel (300ml)", "portion_g": 300, "calories": 165, "protein": 4, "carbs": 32, "fat": 2 },
+    { "name": "Grünkohl-Mango (300ml)", "portion_g": 300, "calories": 175, "protein": 5, "carbs": 34, "fat": 2 },
+    { "name": "Gurke-Minze-Limette (300ml)", "portion_g": 300, "calories": 80, "protein": 2, "carbs": 16, "fat": 1, "tip": "Kalorienärmste Variante" },
+    { "name": "Spinat-Avocado (300ml)", "portion_g": 300, "calories": 210, "protein": 5, "carbs": 20, "fat": 12 },
+    { "name": "Fertig-Smoothie grün (250ml)", "portion_g": 250, "calories": 140, "protein": 2, "carbs": 28, "fat": 2 },
+    { "name": "Detox-Smoothie Sellerie-Apfel (300ml)", "portion_g": 300, "calories": 90, "protein": 2, "carbs": 18, "fat": 1 },
+    { "name": "Protein-Green-Smoothie (400ml)", "portion_g": 400, "calories": 280, "protein": 25, "carbs": 30, "fat": 6 },
+    { "name": "Spinat-Ingwer-Ananas (300ml)", "portion_g": 300, "calories": 155, "protein": 3, "carbs": 30, "fat": 2 }
+  ],
+  "comparison": [
+    { "name": "Beeren-Smoothie (300ml)", "calories": 180, "emoji": "🫐" },
+    { "name": "Orangensaft (300ml)", "calories": 132, "emoji": "🍊" },
+    { "name": "Cola (300ml)", "calories": 126, "emoji": "🥤" },
+    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" }
+  ],
+  "tips": [
+    { "title": "Mehr Gemüse als Obst", "text": "Ideal: 60% Gemüse, 40% Obst. Zu viel Obst macht den Smoothie zur Kalorienbombe. Spinat und Gurke sind die besten Basen.", "icon": "🥬" },
+    { "title": "Keine versteckten Kalorien", "text": "Erdnussbutter, Kokosöl, Agavendicksaft – beliebte Smoothie-Extras, die die Kalorien verdoppeln. Weglassen!", "icon": "🚫" },
+    { "title": "Selber mixen spart Kalorien", "text": "Fertig-Smoothies haben oft zugesetzten Zucker und Saftkonzentrate. Selbst gemacht ist günstiger und gesünder.", "icon": "🧑‍🍳" },
+    { "title": "Als Mahlzeitersatz nutzen", "text": "Ein Green Smoothie mit Protein (280 kcal) kann ein Frühstück ersetzen. Ohne Protein ist er nur ein Snack.", "icon": "🍽️" },
+    { "title": "TK-Spinat geht auch", "text": "Tiefkühlspinat ist günstiger als frischer und hat die gleichen Nährstoffe. Perfekt für Smoothies.", "icon": "❄️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein grüner Smoothie?", "answer": "Je nach Rezept 80-210 kcal pro 300ml. Ein typischer Spinat-Banane-Apfel-Smoothie hat ca. 165 kcal. Reine Gemüse-Smoothies haben nur 80-90 kcal." },
+    { "question": "Sind grüne Smoothies gesund?", "answer": "Ja, sie liefern Vitamine, Mineralstoffe und Ballaststoffe. Wichtig: mehr Gemüse als Obst verwenden und keine kalorienreichen Extras hinzufügen." },
+    { "question": "Kann ich mit grünen Smoothies abnehmen?", "answer": "Als Mahlzeitersatz (statt Frühstück) ja. Als Extra zum normalen Essen eher nicht – 165 kcal kommen zum Tagesbudget dazu." },
+    { "question": "Welches Gemüse eignet sich für grüne Smoothies?", "answer": "Spinat (mild, vielseitig), Grünkohl (nährstoffreich), Gurke (kalorienarm), Sellerie (erfrischend), Feldsalat und Mangold. Spinat ist der Klassiker." },
+    { "question": "Ist ein Smoothie besser als ganzes Obst?", "answer": "Nein. Ganzes Obst hat mehr Ballaststoffe und sättigt besser. Smoothies sind aber praktisch für Gemüse wie Spinat, das man sonst selten roh isst." },
+    { "question": "Wie lange hält ein grüner Smoothie?", "answer": "Frisch trinken ist ideal. Im Kühlschrank max. 24 Stunden in einer geschlossenen Flasche. Vitamine bauen bei Lagerung ab." }
+  ],
+  "related_foods": ["smoothie-beeren", "apfelsaft", "orangensaft", "spinat"]
+}

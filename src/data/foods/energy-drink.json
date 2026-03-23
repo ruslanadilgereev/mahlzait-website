@@ -1,0 +1,52 @@
+{
+  "slug": "energy-drink",
+  "name": "Energy Drink",
+  "emoji": "⚡",
+  "category": "getraenk",
+  "seo": {
+    "title": "Energy Drink Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Energy Drink? Nährwerte pro 100ml & Dose. Red Bull, Monster, Sugar Free & Co. im Vergleich.",
+    "keywords": ["energy drink kalorien", "kalorien energy drink", "red bull kalorien", "monster energy kalorien", "energy drink nährwerte", "energy drink zucker", "energy drink zero kalorien", "energy drink koffein"]
+  },
+  "overview": {
+    "calories_per_100g": 45,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 11,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Dose (250ml)"
+  },
+  "variants": [
+    { "name": "Red Bull (250ml)", "portion_g": 250, "calories": 113, "protein": 0, "carbs": 28, "fat": 0 },
+    { "name": "Red Bull Sugar Free (250ml)", "portion_g": 250, "calories": 5, "protein": 0, "carbs": 0, "fat": 0, "tip": "Nahezu kalorienfrei" },
+    { "name": "Monster Energy (500ml)", "portion_g": 500, "calories": 220, "protein": 0, "carbs": 54, "fat": 0 },
+    { "name": "Monster Zero Ultra (500ml)", "portion_g": 500, "calories": 10, "protein": 0, "carbs": 1, "fat": 0 },
+    { "name": "Rockstar (500ml)", "portion_g": 500, "calories": 280, "protein": 0, "carbs": 68, "fat": 0 },
+    { "name": "Booster Energy (330ml)", "portion_g": 330, "calories": 149, "protein": 0, "carbs": 36, "fat": 0 },
+    { "name": "28 BLACK (250ml)", "portion_g": 250, "calories": 110, "protein": 0, "carbs": 27, "fat": 0 },
+    { "name": "Effect Energy (250ml)", "portion_g": 250, "calories": 115, "protein": 0, "carbs": 28, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Cola (250ml)", "calories": 105, "emoji": "🥤" },
+    { "name": "Kaffee schwarz (250ml)", "calories": 5, "emoji": "☕" },
+    { "name": "Apfelsaft (250ml)", "calories": 115, "emoji": "🍎" },
+    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" }
+  ],
+  "tips": [
+    { "title": "Sugar Free wählen", "text": "Red Bull Sugar Free hat 5 kcal statt 113 kcal. Gleicher Koffein-Kick, gleiche Wirkung – nur ohne 28g Zucker.", "icon": "0️⃣" },
+    { "title": "Kaffee ist günstiger", "text": "Ein Espresso hat 2 kcal, gleich viel Koffein (80mg) und kostet einen Bruchteil. Energy Drinks sind teurer Zucker mit Koffein.", "icon": "☕" },
+    { "title": "500ml-Dosen meiden", "text": "Monster 500ml = 220 kcal + 160mg Koffein. Das ist zu viel auf einmal. Lieber kleine 250ml-Dosen.", "icon": "📏" },
+    { "title": "Nicht mit Alkohol mischen", "text": "Energy Drink + Alkohol (Vodka-Bull): 250+ kcal und die Kombination maskiert die Alkoholwirkung. Gefährlich.", "icon": "🚫" },
+    { "title": "Timing beachten", "text": "Koffein wirkt 6-8 Stunden. Energy Drinks nach 14 Uhr stören den Schlaf – und schlechter Schlaf fördert Gewichtszunahme.", "icon": "🕐" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Red Bull?", "answer": "Ein Red Bull (250ml) hat 113 kcal. Red Bull Sugar Free hat nur 5 kcal. Die größere 355ml-Dose hat 160 kcal." },
+    { "question": "Wie viel Zucker hat ein Energy Drink?", "answer": "Red Bull (250ml): 28g (7 Zuckerwürfel). Monster (500ml): 54g (13,5 Zuckerwürfel). Sugar-Free-Varianten haben 0g Zucker." },
+    { "question": "Wie viel Koffein hat ein Energy Drink?", "answer": "Red Bull (250ml): 80mg. Monster (500ml): 160mg. Zum Vergleich: Kaffee hat ca. 80mg pro Tasse. Die EFSA empfiehlt max. 400mg/Tag." },
+    { "question": "Machen Energy Drinks dick?", "answer": "Die Zuckervarianten ja: Ein Red Bull täglich (113 kcal) ergibt 41.000 kcal im Jahr – fast 6kg Körperfett. Sugar Free hat praktisch keine Kalorien." },
+    { "question": "Sind Energy Drinks ungesund?", "answer": "In Maßen (1-2 Dosen/Tag) sind sie für gesunde Erwachsene unbedenklich. Problematisch: hoher Zucker, viel Koffein auf einmal, und die Kombination mit Alkohol." },
+    { "question": "Energy Drink oder Kaffee – was hat weniger Kalorien?", "answer": "Schwarzer Kaffee: 2-5 kcal. Red Bull: 113 kcal. Sogar Cappuccino (80 kcal) hat weniger als ein Energy Drink. Sugar Free Energy Drinks sind kalorienmäßig gleich mit Kaffee." }
+  ],
+  "related_foods": ["cola", "eiskaffee", "mate-tee", "cappuccino"]
+}

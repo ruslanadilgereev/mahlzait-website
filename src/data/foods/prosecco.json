@@ -1,0 +1,52 @@
+{
+  "slug": "prosecco",
+  "name": "Prosecco",
+  "emoji": "🥂",
+  "category": "getraenk",
+  "seo": {
+    "title": "Prosecco Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Prosecco? Nährwerte pro 100ml & Glas. Sekt, Champagner, Crémant & Aperol Spritz im Vergleich.",
+    "keywords": ["prosecco kalorien", "kalorien prosecco", "sekt kalorien", "champagner kalorien", "prosecco nährwerte", "prosecco glas kalorien", "sekt nährwerte", "schaumwein kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 80,
+    "protein_per_100g": 0.1,
+    "carbs_per_100g": 1.5,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 100,
+    "typical_portion_name": "1 Glas (0,1l)"
+  },
+  "variants": [
+    { "name": "Prosecco brut (0,1l)", "portion_g": 100, "calories": 80, "protein": 0, "carbs": 2, "fat": 0, "tip": "Kalorienärmste Variante" },
+    { "name": "Prosecco extra dry (0,1l)", "portion_g": 100, "calories": 83, "protein": 0, "carbs": 3, "fat": 0 },
+    { "name": "Champagner brut (0,1l)", "portion_g": 100, "calories": 83, "protein": 0, "carbs": 1, "fat": 0 },
+    { "name": "Sekt trocken (0,1l)", "portion_g": 100, "calories": 80, "protein": 0, "carbs": 3, "fat": 0 },
+    { "name": "Sekt halbtrocken (0,1l)", "portion_g": 100, "calories": 88, "protein": 0, "carbs": 5, "fat": 0 },
+    { "name": "Crémant (0,1l)", "portion_g": 100, "calories": 82, "protein": 0, "carbs": 2, "fat": 0 },
+    { "name": "Prosecco Flasche (0,75l)", "portion_g": 750, "calories": 600, "protein": 1, "carbs": 11, "fat": 0 },
+    { "name": "Hugo (1 Glas)", "portion_g": 200, "calories": 163, "protein": 0, "carbs": 12, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Weißwein (0,1l)", "calories": 69, "emoji": "🍷" },
+    { "name": "Bier (0,33l)", "calories": 142, "emoji": "🍺" },
+    { "name": "Aperol Spritz", "calories": 175, "emoji": "🍹" },
+    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" }
+  ],
+  "tips": [
+    { "title": "Brut statt Extra Dry", "text": "Klingt paradox, aber 'Extra Dry' ist süßer als 'Brut'. Brut hat den niedrigsten Zuckergehalt und damit die wenigsten Kalorien.", "icon": "📉" },
+    { "title": "Kleine Gläser sind Standard", "text": "Prosecco wird in 0,1l-Gläsern serviert – das sind nur 80 kcal. Bleib bei der Standardportion.", "icon": "🥂" },
+    { "title": "Kein Orangensaft dazu", "text": "Bellini (Prosecco + Pfirsichsaft) verdoppelt die Kalorien. Pur trinken spart am meisten.", "icon": "🚫" },
+    { "title": "Aperitif statt Hauptgetränk", "text": "Ein Glas zum Anstoßen (80 kcal) ist super – aber 5 Gläser über den Abend sind 400 kcal.", "icon": "🎯" },
+    { "title": "Prosecco statt Cocktail", "text": "Ein Glas Prosecco (80 kcal) hat weniger als die Hälfte der Kalorien eines durchschnittlichen Cocktails (180-300 kcal).", "icon": "💡" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Glas Prosecco?", "answer": "Ein Glas Prosecco (0,1l) hat ca. 80 kcal. Das ist weniger als ein Glas Wein (0,2l mit 138 kcal), aber die Portion ist auch kleiner." },
+    { "question": "Was hat weniger Kalorien – Prosecco oder Wein?", "answer": "Pro 100ml hat Prosecco (80 kcal) etwas mehr als Weißwein (69 kcal). Aber ein Glas Prosecco (0,1l = 80 kcal) hat weniger als ein Glas Wein (0,2l = 138 kcal)." },
+    { "question": "Wie viele Kalorien hat eine Flasche Prosecco?", "answer": "Eine Flasche Prosecco (0,75l) hat ca. 600 kcal. Das entspricht 7,5 Gläsern à 0,1l oder einer ganzen Mahlzeit." },
+    { "question": "Ist Sekt das gleiche wie Prosecco?", "answer": "Nein. Prosecco kommt aus Norditalien (Glera-Traube), Sekt ist die deutsche Bezeichnung für Schaumwein. Kalorisch sind sie sehr ähnlich (78-88 kcal/100ml)." },
+    { "question": "Hat Champagner mehr Kalorien als Prosecco?", "answer": "Kaum. Champagner brut hat ca. 83 kcal/100ml, Prosecco brut ca. 80 kcal. Der Unterschied ist minimal – der Preisunterschied dafür umso größer." },
+    { "question": "Wie viel Zucker hat Prosecco?", "answer": "Brut: unter 12g/Liter. Extra Dry: 12-17g/Liter. Dry: 17-32g/Liter. Demi-Sec: 32-50g/Liter. Je weniger Zucker, desto weniger Kalorien." }
+  ],
+  "related_foods": ["wein-weiss", "wein-rot", "hugo", "aperol-spritz"]
+}

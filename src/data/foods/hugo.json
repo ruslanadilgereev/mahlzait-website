@@ -1,0 +1,52 @@
+{
+  "slug": "hugo",
+  "name": "Hugo",
+  "emoji": "🌿",
+  "category": "getraenk",
+  "seo": {
+    "title": "Hugo Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Hugo? Nährwerte pro Glas. Hugo klassisch, alkoholfrei, mit Minze & im Vergleich mit Aperol Spritz.",
+    "keywords": ["hugo kalorien", "kalorien hugo", "hugo cocktail kalorien", "hugo nährwerte", "hugo drink kalorien", "hugo holunderblüte kalorien", "hugo spritz kalorien", "alkoholfreier hugo kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 65,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 7,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Glas (250ml)"
+  },
+  "variants": [
+    { "name": "Hugo klassisch (250ml)", "portion_g": 250, "calories": 163, "protein": 0, "carbs": 18, "fat": 0 },
+    { "name": "Hugo mit viel Sirup (250ml)", "portion_g": 250, "calories": 195, "protein": 0, "carbs": 25, "fat": 0 },
+    { "name": "Hugo light (wenig Sirup, 250ml)", "portion_g": 250, "calories": 130, "protein": 0, "carbs": 12, "fat": 0, "tip": "Kalorienärmste Variante" },
+    { "name": "Hugo alkoholfrei (250ml)", "portion_g": 250, "calories": 80, "protein": 0, "carbs": 19, "fat": 0 },
+    { "name": "Hugo groß (400ml)", "portion_g": 400, "calories": 260, "protein": 0, "carbs": 28, "fat": 0 },
+    { "name": "Hugo Fertigmix (200ml)", "portion_g": 200, "calories": 145, "protein": 0, "carbs": 16, "fat": 0 },
+    { "name": "Hugo mit Limette statt Sirup (250ml)", "portion_g": 250, "calories": 115, "protein": 0, "carbs": 6, "fat": 0 },
+    { "name": "Hugo Rosé (250ml)", "portion_g": 250, "calories": 170, "protein": 0, "carbs": 19, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Aperol Spritz (250ml)", "calories": 175, "emoji": "🍹" },
+    { "name": "Prosecco pur (200ml)", "calories": 160, "emoji": "🥂" },
+    { "name": "Gin Tonic (250ml)", "calories": 190, "emoji": "🍸" },
+    { "name": "Weißweinschorle (400ml)", "calories": 138, "emoji": "🍷" }
+  ],
+  "tips": [
+    { "title": "Weniger Holundersirup", "text": "Der Sirup macht den Großteil der Kohlenhydrate aus. 15ml statt 30ml spart 30+ kcal ohne großen Geschmacksverlust.", "icon": "📉" },
+    { "title": "Mehr Soda, weniger Prosecco", "text": "Mehr Mineralwasser im Hugo verdünnt den Drink und spart Kalorien. Schmeckt besonders im Sommer erfrischender.", "icon": "💧" },
+    { "title": "Frische Minze ist Pflicht", "text": "Frische Minze gibt natürliches Aroma – so braucht man weniger Sirup für den gleichen Geschmack.", "icon": "🌿" },
+    { "title": "Limette statt Sirup", "text": "Hugo mit Limettensaft statt Holundersirup: nur 115 kcal und erfrischend herb. Nicht klassisch, aber kalorienarm.", "icon": "🍋" },
+    { "title": "Alkoholfrei für Events", "text": "Alkoholfreier Hugo (80 kcal) sieht genauso schick aus und schmeckt mit gutem Sirup fast identisch.", "icon": "🎉" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Hugo?", "answer": "Ein Hugo (250ml) hat ca. 163 kcal. Mit viel Sirup bis 195 kcal, als Light-Variante mit wenig Sirup nur 130 kcal. Alkoholfrei: ca. 80 kcal." },
+    { "question": "Was ist im Hugo drin?", "answer": "Prosecco, Holunderblütensirup, Mineralwasser mit Kohlensäure, frische Minze und Limettenscheiben. Die Anteile variieren nach Geschmack." },
+    { "question": "Hugo oder Aperol Spritz – was hat weniger Kalorien?", "answer": "Hugo hat mit 163 kcal leicht weniger als Aperol Spritz (175 kcal). Beide sind deutlich leichter als Cocktails (300+ kcal)." },
+    { "question": "Wie viel Alkohol hat ein Hugo?", "answer": "Ca. 6-8 Vol.-%, je nach Prosecco-Anteil. Ein Hugo hat weniger Alkohol als ein Glas Wein (11-13%) oder Aperol Spritz (8-10%)." },
+    { "question": "Kann ich Hugo kalorienarm machen?", "answer": "Ja! Weniger Sirup (oder Süßstoff), mehr Soda, viel Minze. So kommst du auf 115-130 kcal statt 163 kcal. Oder alkoholfreier Hugo mit nur 80 kcal." },
+    { "question": "Wie viel Zucker hat Hugo?", "answer": "Ca. 18g pro Glas (250ml) – 4,5 Zuckerwürfel. Der Zucker kommt hauptsächlich aus dem Holunderblütensirup. Weniger Sirup = weniger Zucker." }
+  ],
+  "related_foods": ["aperol-spritz", "prosecco", "wein-weiss", "gin-tonic"]
+}

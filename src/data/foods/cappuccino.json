@@ -1,0 +1,52 @@
+{
+  "slug": "cappuccino",
+  "name": "Cappuccino",
+  "emoji": "☕",
+  "category": "getraenk",
+  "seo": {
+    "title": "Cappuccino Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Cappuccino? Nährwerte pro Tasse. Mit Zucker, Sirup, Hafermilch & Starbucks im Vergleich.",
+    "keywords": ["cappuccino kalorien", "kalorien cappuccino", "cappuccino nährwerte", "cappuccino mit zucker kalorien", "starbucks cappuccino kalorien", "cappuccino hafermilch kalorien", "cappuccino milch kalorien", "cappuccino fett"]
+  },
+  "overview": {
+    "calories_per_100g": 40,
+    "protein_per_100g": 2.5,
+    "carbs_per_100g": 3.5,
+    "fat_per_100g": 1.8,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Tasse (200ml)"
+  },
+  "variants": [
+    { "name": "Cappuccino Vollmilch (200ml)", "portion_g": 200, "calories": 80, "protein": 5, "carbs": 7, "fat": 4 },
+    { "name": "Cappuccino fettarme Milch (200ml)", "portion_g": 200, "calories": 55, "protein": 5, "carbs": 7, "fat": 1, "tip": "Kaloriensparend" },
+    { "name": "Cappuccino + 1 Zucker (200ml)", "portion_g": 200, "calories": 100, "protein": 5, "carbs": 12, "fat": 4 },
+    { "name": "Cappuccino Hafermilch (200ml)", "portion_g": 200, "calories": 65, "protein": 2, "carbs": 10, "fat": 2 },
+    { "name": "Cappuccino Sojamilch (200ml)", "portion_g": 200, "calories": 50, "protein": 4, "carbs": 4, "fat": 2 },
+    { "name": "Starbucks Cappuccino (Grande)", "portion_g": 480, "calories": 140, "protein": 10, "carbs": 14, "fat": 5 },
+    { "name": "Cappuccino + Vanillesirup (200ml)", "portion_g": 200, "calories": 120, "protein": 5, "carbs": 17, "fat": 4 },
+    { "name": "Doppelter Cappuccino (300ml)", "portion_g": 300, "calories": 120, "protein": 8, "carbs": 11, "fat": 6 }
+  ],
+  "comparison": [
+    { "name": "Latte Macchiato", "calories": 150, "emoji": "🥛" },
+    { "name": "Espresso", "calories": 2, "emoji": "☕" },
+    { "name": "Kakao (250ml)", "calories": 210, "emoji": "🍫" },
+    { "name": "Schwarzer Kaffee", "calories": 2, "emoji": "☕" }
+  ],
+  "tips": [
+    { "title": "Ohne Zucker trinken", "text": "Ein Würfelzucker fügt 20 kcal hinzu. Bei 3 Cappuccinos am Tag sind das 60 kcal extra – 22.000 kcal im Jahr.", "icon": "0️⃣" },
+    { "title": "Fettarme Milch spart", "text": "1,5% Milch statt 3,5%: 55 statt 80 kcal pro Tasse. Bei 3 Tassen täglich spart das 27.000 kcal im Jahr.", "icon": "📉" },
+    { "title": "Sirup meiden", "text": "Vanille- oder Karamellsirup fügt 40 kcal pro Pumpe hinzu. Starbucks nutzt standardmäßig 3-4 Pumps.", "icon": "🚫" },
+    { "title": "Cappuccino statt Latte", "text": "Cappuccino (80 kcal) hat fast halb so viele Kalorien wie Latte Macchiato (150 kcal) – weniger Milch, mehr Schaum.", "icon": "💡" },
+    { "title": "Espresso als Null-Kalorien-Alternative", "text": "Wer Kalorien sparen will: Espresso hat nur 2 kcal. Gleicher Koffein-Kick, null Kalorien.", "icon": "⚡" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Cappuccino?", "answer": "Ein Cappuccino mit Vollmilch (200ml) hat ca. 80 kcal. Mit fettarmer Milch nur 55 kcal. Ein Starbucks Grande Cappuccino hat ca. 140 kcal." },
+    { "question": "Cappuccino oder Latte – was hat weniger Kalorien?", "answer": "Cappuccino hat deutlich weniger: 80 kcal vs. 150 kcal beim Latte Macchiato. Der Grund: Cappuccino hat mehr Schaum und weniger flüssige Milch." },
+    { "question": "Ist Cappuccino beim Abnehmen erlaubt?", "answer": "Absolut. 80 kcal pro Tasse passen in jedes Kalorienbudget. Ohne Zucker und mit fettarmer Milch (55 kcal) noch besser. 2-3 Tassen sind kein Problem." },
+    { "question": "Wie viele Kalorien hat ein Cappuccino mit Zucker?", "answer": "Ein Cappuccino mit 1 Würfelzucker hat ca. 100 kcal, mit 2 Würfeln 120 kcal. Jeder Zucker fügt 20 kcal hinzu." },
+    { "question": "Hat Cappuccino mit Hafermilch weniger Kalorien?", "answer": "Ja, leicht: 65 kcal statt 80 kcal mit Vollmilch. Sojamilch ist mit 50 kcal am kalorienärmsten. Mandelmilch ebenfalls nur ca. 45 kcal." },
+    { "question": "Wie viel Koffein hat ein Cappuccino?", "answer": "Ein Cappuccino (einfacher Espresso) enthält ca. 60-80mg Koffein. Ein doppelter Espresso-Cappuccino hat 120-160mg. Empfohlen: max. 400mg Koffein pro Tag." }
+  ],
+  "related_foods": ["latte-macchiato", "eiskaffee", "kakao", "chai-latte"]
+}

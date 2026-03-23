@@ -1,0 +1,52 @@
+{
+  "slug": "kakao",
+  "name": "Kakao",
+  "emoji": "☕",
+  "category": "getraenk",
+  "seo": {
+    "title": "Kakao Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Kakao? Nährwerte pro Tasse. Heiße Schokolade, Kaba, Ovomaltine & kalorienarme Alternativen im Vergleich.",
+    "keywords": ["kakao kalorien", "kalorien kakao", "heiße schokolade kalorien", "kakao nährwerte", "trinkschokolade kalorien", "kakao mit milch kalorien", "kaba kalorien", "ovomaltine kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 70,
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 10,
+    "fat_per_100g": 1.8,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Tasse (250ml)"
+  },
+  "variants": [
+    { "name": "Kakao mit Vollmilch (250ml)", "portion_g": 250, "calories": 210, "protein": 9, "carbs": 28, "fat": 7 },
+    { "name": "Kakao mit fettarmer Milch (250ml)", "portion_g": 250, "calories": 170, "protein": 9, "carbs": 27, "fat": 3 },
+    { "name": "Heiße Schokolade (250ml)", "portion_g": 250, "calories": 260, "protein": 8, "carbs": 35, "fat": 10 },
+    { "name": "Kakao mit Wasser (250ml)", "portion_g": 250, "calories": 90, "protein": 2, "carbs": 18, "fat": 2, "tip": "Kalorienärmste Variante" },
+    { "name": "Kaba/Nesquik (250ml Milch)", "portion_g": 250, "calories": 215, "protein": 9, "carbs": 30, "fat": 7 },
+    { "name": "Ovomaltine (250ml Milch)", "portion_g": 250, "calories": 220, "protein": 9, "carbs": 32, "fat": 6 },
+    { "name": "Kakao mit Sahnehaube (250ml)", "portion_g": 280, "calories": 310, "protein": 8, "carbs": 28, "fat": 18 },
+    { "name": "Kakao mit Hafermilch (250ml)", "portion_g": 250, "calories": 175, "protein": 4, "carbs": 30, "fat": 4 }
+  ],
+  "comparison": [
+    { "name": "Cappuccino (250ml)", "calories": 120, "emoji": "☕" },
+    { "name": "Milchshake Schoko (300ml)", "calories": 360, "emoji": "🍫" },
+    { "name": "Latte Macchiato", "calories": 150, "emoji": "🥛" },
+    { "name": "Schwarzer Kaffee", "calories": 2, "emoji": "☕" }
+  ],
+  "tips": [
+    { "title": "Backkakao statt Trinkpulver", "text": "2 EL stark entölter Backkakao + Süßstoff in heißer Milch: intensiver Geschmack, 30% weniger Zucker als Fertigpulver.", "icon": "🍫" },
+    { "title": "Fettarme Milch verwenden", "text": "Milch 1,5% statt 3,5% spart 40 kcal pro Tasse. Der Geschmack ist kaum anders.", "icon": "📉" },
+    { "title": "Sahne weglassen", "text": "Eine Sahnehaube fügt 100 kcal zum Kakao hinzu. Die cremige Milch reicht völlig.", "icon": "🚫" },
+    { "title": "Mini-Marshmallows kontrollieren", "text": "5 Mini-Marshmallows = 25 kcal. Eine Handvoll = 100 kcal. Lieber 2-3 als Topping, nicht eine halbe Tüte.", "icon": "📏" },
+    { "title": "Kakao als Genussmoment", "text": "Eine Tasse Kakao (210 kcal) ist ein vollwertiger Snack. Bewusst genießen statt nebenbei trinken – dann reicht eine Tasse.", "icon": "🧘" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Tasse Kakao?", "answer": "Eine Tasse Kakao mit Vollmilch (250ml) hat ca. 210 kcal. Mit fettarmer Milch 170 kcal, mit Wasser nur 90 kcal. Heiße Schokolade vom Café hat oft 260+ kcal." },
+    { "question": "Ist Kakao gesund?", "answer": "Kakaopulver enthält Flavonoide (Antioxidantien), Magnesium und Eisen. Die Milch liefert Kalzium und Protein. Problematisch ist nur der zugesetzte Zucker in Fertigpulvern." },
+    { "question": "Was hat weniger Kalorien – Kakao oder Kaffee?", "answer": "Schwarzer Kaffee hat 2 kcal, Kakao 210 kcal. Cappuccino (120 kcal) liegt dazwischen. Kakao ist ein Snack, Kaffee ein Getränk." },
+    { "question": "Wie viel Zucker hat Kakao?", "answer": "Kakao mit Milch hat ca. 28g Zucker (davon 12g Milchzucker). Fertigpulver wie Kaba/Nesquik bestehen zu 70-80% aus Zucker. Backkakao hat kaum Zucker." },
+    { "question": "Welcher Kakao hat die wenigsten Kalorien?", "answer": "Backkakao (stark entölt) mit Wasser und Süßstoff: ca. 30 kcal. Mit fettarmer Milch: 170 kcal. Am kalorienreichsten: Heiße Schokolade mit Sahne (310+ kcal)." },
+    { "question": "Kakao am Abend – schlecht zum Abnehmen?", "answer": "210 kcal passen in jedes Kalorienbudget, wenn man sie einplant. Kakao mit Milch kann sogar beim Einschlafen helfen (Tryptophan). Nur nicht zusätzlich zum Kalorienziel trinken." }
+  ],
+  "related_foods": ["milchshake-schoko", "cappuccino", "latte-macchiato", "milch"]
+}

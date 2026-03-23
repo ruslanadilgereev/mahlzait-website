@@ -1,0 +1,52 @@
+{
+  "slug": "orangensaft",
+  "name": "Orangensaft",
+  "emoji": "🍊",
+  "category": "getraenk",
+  "seo": {
+    "title": "Orangensaft Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Orangensaft? Nährwerte pro 100ml & Glas. Frisch gepresst, Direktsaft, Nektar & Schorle im Vergleich.",
+    "keywords": ["orangensaft kalorien", "kalorien orangensaft", "orangensaft nährwerte", "frisch gepresster orangensaft kalorien", "o-saft kalorien", "orangensaft zucker", "orangensaft vitamin c", "orangennektar kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 44,
+    "protein_per_100g": 0.7,
+    "carbs_per_100g": 9.4,
+    "fat_per_100g": 0.1,
+    "fiber_per_100g": 0.2,
+    "typical_portion_g": 250,
+    "typical_portion_name": "1 Glas (250ml)"
+  },
+  "variants": [
+    { "name": "Orangensaft Direktsaft (250ml)", "portion_g": 250, "calories": 110, "protein": 2, "carbs": 24, "fat": 0 },
+    { "name": "Frisch gepresst (250ml)", "portion_g": 250, "calories": 112, "protein": 2, "carbs": 24, "fat": 0 },
+    { "name": "Orangensaft aus Konzentrat (250ml)", "portion_g": 250, "calories": 115, "protein": 2, "carbs": 25, "fat": 0 },
+    { "name": "Orangennektar (250ml)", "portion_g": 250, "calories": 125, "protein": 1, "carbs": 29, "fat": 0 },
+    { "name": "Orangensaft (0,5l)", "portion_g": 500, "calories": 220, "protein": 4, "carbs": 47, "fat": 1 },
+    { "name": "Orangensaftschorle (330ml)", "portion_g": 330, "calories": 73, "protein": 1, "carbs": 16, "fat": 0, "tip": "Halbe Kalorien" },
+    { "name": "Orangensaft (1 Liter)", "portion_g": 1000, "calories": 440, "protein": 7, "carbs": 94, "fat": 1 },
+    { "name": "Multivitaminsaft (250ml)", "portion_g": 250, "calories": 115, "protein": 1, "carbs": 26, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Apfelsaft (250ml)", "calories": 115, "emoji": "🍎" },
+    { "name": "Cola (250ml)", "calories": 105, "emoji": "🥤" },
+    { "name": "Orange (1 Stück)", "calories": 47, "emoji": "🍊" },
+    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" }
+  ],
+  "tips": [
+    { "title": "Schorle statt pur", "text": "Orangensaftschorle (1:1 mit Wasser) hat nur 73 kcal pro 330ml – die erfrischende Low-Cal-Alternative.", "icon": "💧" },
+    { "title": "Frisch gepresst ist König", "text": "Frisch gepresster O-Saft hat die meisten Vitamine. Vitamin C geht bei Lagerung verloren – am besten direkt trinken.", "icon": "🍊" },
+    { "title": "Zum Frühstück reicht 150ml", "text": "Ein kleines Glas (150ml, 66 kcal) deckt den Vitamin-C-Bedarf. Mehr ist Genuss, kein Nutzen.", "icon": "📏" },
+    { "title": "Ganze Orange essen", "text": "Eine Orange hat nur 47 kcal, sättigt durch Ballaststoffe und enthält dieselben Vitamine. Für ein Glas Saft braucht man 3-4 Orangen.", "icon": "🍏" },
+    { "title": "Nektar meiden", "text": "Orangennektar enthält nur 50-60% Saftanteil plus Zuckerwasser. Direktsaft oder frisch gepresst sind deutlich besser.", "icon": "🚫" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Glas Orangensaft?", "answer": "Ein Glas Orangensaft (250ml) hat ca. 110 kcal. Frisch gepresst und Direktsaft sind kalorisch fast gleich (110-112 kcal)." },
+    { "question": "Wie viel Zucker hat Orangensaft?", "answer": "Orangensaft hat 9,4g natürlichen Zucker pro 100ml. Ein Glas (250ml) enthält 24g Zucker – 6 Zuckerwürfel. Der Zucker stammt aus der Frucht." },
+    { "question": "Ist Orangensaft gesund oder ungesund?", "answer": "Orangensaft ist reich an Vitamin C (50mg/100ml) und Folsäure. Aber: viel Zucker und keine Ballaststoffe. In Maßen (150-200ml) ist er gesund, literweise nicht." },
+    { "question": "Hat Orangensaft mehr Kalorien als Cola?", "answer": "Ja, leicht. Orangensaft hat 44 kcal/100ml, Cola 42 kcal/100ml. Der Unterschied: Orangensaft liefert Vitamine und Mineralstoffe, Cola nicht." },
+    { "question": "Ist frisch gepresster Orangensaft besser?", "answer": "Ja. Frisch gepresst hat mehr Vitamin C (das bei Lagerung abnimmt) und keine Zusatzstoffe. Kalorisch ist der Unterschied zu Direktsaft minimal." },
+    { "question": "Wie viel Vitamin C hat Orangensaft?", "answer": "Ca. 50mg pro 100ml. Ein Glas (250ml) deckt mit 125mg den Tagesbedarf (100mg) vollständig ab." }
+  ],
+  "related_foods": ["apfelsaft", "smoothie-gruen", "orange", "smoothie-beeren"]
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "smoothie-beeren",
+  "name": "Beeren-Smoothie",
+  "emoji": "🫐",
+  "category": "getraenk",
+  "seo": {
+    "title": "Beeren-Smoothie Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Beeren-Smoothie? Nährwerte pro 100ml & Glas. Blaubeeren, Erdbeeren, Himbeeren & Açaí im Vergleich.",
+    "keywords": ["beeren smoothie kalorien", "smoothie beeren kalorien", "erdbeere smoothie kalorien", "blaubeere smoothie kalorien", "acai smoothie kalorien", "smoothie nährwerte", "frucht smoothie kalorien", "berry smoothie kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 60,
+    "protein_per_100g": 1.2,
+    "carbs_per_100g": 12,
+    "fat_per_100g": 0.5,
+    "fiber_per_100g": 2,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Glas (300ml)"
+  },
+  "variants": [
+    { "name": "Erdbeere-Banane (300ml)", "portion_g": 300, "calories": 185, "protein": 3, "carbs": 38, "fat": 1 },
+    { "name": "Blaubeere-Joghurt (300ml)", "portion_g": 300, "calories": 195, "protein": 6, "carbs": 32, "fat": 4 },
+    { "name": "Himbeere-Mango (300ml)", "portion_g": 300, "calories": 175, "protein": 2, "carbs": 36, "fat": 1 },
+    { "name": "Waldbeeren pur (300ml)", "portion_g": 300, "calories": 130, "protein": 3, "carbs": 24, "fat": 2, "tip": "Kalorienärmste Variante" },
+    { "name": "Açaí Bowl/Smoothie (300ml)", "portion_g": 300, "calories": 260, "protein": 4, "carbs": 40, "fat": 10 },
+    { "name": "Fertig-Smoothie Beere (250ml)", "portion_g": 250, "calories": 145, "protein": 1, "carbs": 30, "fat": 1 },
+    { "name": "Beeren-Protein-Smoothie (400ml)", "portion_g": 400, "calories": 290, "protein": 28, "carbs": 35, "fat": 4 },
+    { "name": "Erdbeere-Kokos (300ml)", "portion_g": 300, "calories": 220, "protein": 3, "carbs": 28, "fat": 10 }
+  ],
+  "comparison": [
+    { "name": "Grüner Smoothie (300ml)", "calories": 165, "emoji": "🥬" },
+    { "name": "Orangensaft (300ml)", "calories": 132, "emoji": "🍊" },
+    { "name": "Milchshake Vanille (300ml)", "calories": 340, "emoji": "🥛" },
+    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" }
+  ],
+  "tips": [
+    { "title": "TK-Beeren verwenden", "text": "Tiefkühlbeeren sind günstiger als frische, genauso nährstoffreich und machen den Smoothie schön kalt – kein Eis nötig.", "icon": "❄️" },
+    { "title": "Banane weglassen, Kalorien sparen", "text": "Banane macht cremig, aber auch kalorienreich. Alternative: gefrorene Zucchini-Stücke für Cremigkeit mit weniger Kalorien.", "icon": "📉" },
+    { "title": "Wasser statt Saft als Basis", "text": "Wasser oder ungesüßte Pflanzenmilch statt Apfelsaft als Basis spart 50-70 kcal pro Smoothie.", "icon": "💧" },
+    { "title": "Açaí-Bowls sind Kalorienfallen", "text": "Açaí-Bowls mit Granola, Honig und Kokos haben schnell 400-600 kcal. Die Beeren selbst sind kalorienarm.", "icon": "⚠️" },
+    { "title": "Protein hinzufügen", "text": "30g Proteinpulver machen aus dem Smoothie eine vollwertige Mahlzeit und halten 3-4 Stunden satt.", "icon": "💪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Beeren-Smoothie?", "answer": "Ein selbst gemachter Beeren-Smoothie (300ml) hat ca. 130-195 kcal je nach Zutaten. Waldbeeren pur sind am kalorienärmsten (130 kcal), Açaí-Varianten am meisten (260 kcal)." },
+    { "question": "Sind Beeren-Smoothies gesund?", "answer": "Ja. Beeren sind reich an Antioxidantien, Vitamin C und Ballaststoffen. Ohne zugesetzten Zucker und mit Wasser als Basis ist ein Beeren-Smoothie ein guter Snack." },
+    { "question": "Welche Beeren haben die wenigsten Kalorien?", "answer": "Erdbeeren (32 kcal/100g), Himbeeren (34 kcal/100g) und Blaubeeren (42 kcal/100g) sind alle kalorienarm. Beeren sind generell die kalorienärmsten Früchte." },
+    { "question": "Kann ich einen Beeren-Smoothie als Mahlzeitersatz trinken?", "answer": "Nur mit Proteinquelle (Joghurt, Quark, Proteinpulver). Ein reiner Frucht-Smoothie sättigt maximal 1-2 Stunden und ist als Mahlzeitersatz zu nährstoffarm." },
+    { "question": "Was ist besser – frische oder gefrorene Beeren?", "answer": "Für Smoothies: TK-Beeren. Sie sind günstiger, ganzjährig verfügbar, machen den Smoothie kalt und haben die gleichen Nährstoffe wie frische." },
+    { "question": "Wie viel Zucker hat ein Beeren-Smoothie?", "answer": "Ein 300ml-Smoothie aus reinen Beeren hat ca. 24g natürlichen Zucker. Mit Banane steigt er auf 35-38g. Kein zugesetzter Zucker nötig – Beeren sind von Natur aus süß." }
+  ],
+  "related_foods": ["smoothie-gruen", "milchshake-vanille", "blaubeeren", "erdbeeren"]
+}

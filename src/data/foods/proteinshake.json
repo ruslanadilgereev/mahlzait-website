@@ -1,0 +1,52 @@
+{
+  "slug": "proteinshake",
+  "name": "Proteinshake",
+  "emoji": "💪",
+  "category": "getraenk",
+  "seo": {
+    "title": "Proteinshake Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Proteinshake? Nährwerte pro Portion. Whey, Casein, Vegan & Fertigshakes im Vergleich + Makros.",
+    "keywords": ["proteinshake kalorien", "kalorien proteinshake", "whey protein kalorien", "eiweißshake kalorien", "proteinshake nährwerte", "protein shake abnehmen", "protein pulver kalorien", "fertig proteinshake kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 53,
+    "protein_per_100g": 8.3,
+    "carbs_per_100g": 3.3,
+    "fat_per_100g": 1,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 300,
+    "typical_portion_name": "1 Shake (300ml)"
+  },
+  "variants": [
+    { "name": "Whey Protein + Wasser (300ml)", "portion_g": 300, "calories": 120, "protein": 25, "carbs": 2, "fat": 1, "tip": "Kalorienärmste Variante" },
+    { "name": "Whey Protein + Milch (300ml)", "portion_g": 300, "calories": 265, "protein": 35, "carbs": 16, "fat": 6 },
+    { "name": "Casein Protein + Wasser (300ml)", "portion_g": 300, "calories": 125, "protein": 26, "carbs": 3, "fat": 1 },
+    { "name": "Veganes Protein + Wasser (300ml)", "portion_g": 300, "calories": 130, "protein": 22, "carbs": 5, "fat": 2 },
+    { "name": "Fertigshake (z.B. YFood, 330ml)", "portion_g": 330, "calories": 330, "protein": 33, "carbs": 27, "fat": 10 },
+    { "name": "Mass Gainer Shake (300ml)", "portion_g": 300, "calories": 450, "protein": 30, "carbs": 65, "fat": 8 },
+    { "name": "Protein + Hafermilch (300ml)", "portion_g": 300, "calories": 180, "protein": 23, "carbs": 14, "fat": 3 },
+    { "name": "Protein-Smoothie mit Obst (400ml)", "portion_g": 400, "calories": 280, "protein": 28, "carbs": 35, "fat": 3 }
+  ],
+  "comparison": [
+    { "name": "Milchshake Vanille (300ml)", "calories": 339, "emoji": "🥛" },
+    { "name": "Kakao (250ml)", "calories": 210, "emoji": "☕" },
+    { "name": "Hühnerbrust (100g)", "calories": 165, "emoji": "🍗" },
+    { "name": "Quark 500g", "calories": 340, "emoji": "🥣" }
+  ],
+  "tips": [
+    { "title": "Mit Wasser mischen für weniger Kalorien", "text": "Whey + Wasser: 120 kcal. Whey + Milch: 265 kcal. Für die Kalorienbilanz ist Wasser die klare Wahl.", "icon": "💧" },
+    { "title": "Nach dem Training am besten", "text": "30-60 Minuten nach dem Training ist das optimale Zeitfenster für Proteinaufnahme. Whey wird am schnellsten absorbiert.", "icon": "⏰" },
+    { "title": "Casein vor dem Schlafen", "text": "Casein-Protein wird langsam verdaut und versorgt die Muskeln über Nacht. Ideal als Abend-Shake.", "icon": "🌙" },
+    { "title": "Nicht mehr als nötig", "text": "1,6-2,2g Protein/kg Körpergewicht ist optimal. Mehr hilft nicht beim Muskelaufbau, belastet aber die Nieren.", "icon": "📊" },
+    { "title": "Fertigshakes als Mahlzeitersatz", "text": "YFood, Huel & Co. (330 kcal) sind vollwertige Mahlzeiten. Protein-Pulver (120 kcal) ist nur ein Supplement.", "icon": "🍽️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Proteinshake?", "answer": "Whey mit Wasser: ca. 120 kcal. Mit Milch: ca. 265 kcal. Fertigshakes (YFood): ca. 330 kcal. Mass Gainer: bis 450 kcal." },
+    { "question": "Ist Proteinshake gut zum Abnehmen?", "answer": "Ja! Protein sättigt am stärksten aller Makros. Ein Shake (120 kcal, 25g Protein) als Mahlzeitersatz oder Snack hilft, das Kaloriendefizit zu halten." },
+    { "question": "Wie viel Protein brauche ich?", "answer": "Zum Muskelaufbau: 1,6-2,2g/kg Körpergewicht. Zum Abnehmen: 1,6-2,0g/kg. Bei 80kg Körpergewicht sind das 128-176g Protein pro Tag." },
+    { "question": "Whey oder Casein – was ist besser?", "answer": "Whey: schnell absorbiert, ideal nach dem Training. Casein: langsam absorbiert, ideal vor dem Schlafen. Kalorisch sind beide fast gleich (~120 kcal/Portion)." },
+    { "question": "Sind Proteinshakes ungesund?", "answer": "Für gesunde Menschen nein. Qualitäts-Whey hat kurze Zutatenlisten und ist gut verträglich. Bei Nierenerkrankungen vorher Arzt konsultieren." },
+    { "question": "Wann sollte ich einen Proteinshake trinken?", "answer": "Nach dem Training (Whey, schnelle Aufnahme), vor dem Schlafen (Casein, langsame Aufnahme), oder als Snack wenn Protein im Tagesbudget fehlt. Timing ist aber weniger wichtig als die Gesamtmenge." }
+  ],
+  "related_foods": ["milchshake-vanille", "milchshake-schoko", "skyr", "haehnchenbrust"]
+}

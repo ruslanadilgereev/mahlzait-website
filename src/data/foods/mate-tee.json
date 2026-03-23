@@ -1,0 +1,52 @@
+{
+  "slug": "mate-tee",
+  "name": "Mate-Tee",
+  "emoji": "🧉",
+  "category": "getraenk",
+  "seo": {
+    "title": "Mate-Tee Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Mate-Tee? Nährwerte pro 100ml & Flasche. Club-Mate, Flora Power, Charitea & Mate pur im Vergleich.",
+    "keywords": ["mate tee kalorien", "kalorien mate tee", "club mate kalorien", "mate nährwerte", "mate tee zucker", "club mate zucker", "flora power kalorien", "yerba mate kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 20,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 500,
+    "typical_portion_name": "1 Flasche (0,5l)"
+  },
+  "variants": [
+    { "name": "Club-Mate (500ml)", "portion_g": 500, "calories": 100, "protein": 0, "carbs": 25, "fat": 0 },
+    { "name": "Club-Mate (330ml)", "portion_g": 330, "calories": 66, "protein": 0, "carbs": 17, "fat": 0 },
+    { "name": "Flora Power Mate (330ml)", "portion_g": 330, "calories": 83, "protein": 0, "carbs": 20, "fat": 0 },
+    { "name": "ChariTea Mate (330ml)", "portion_g": 330, "calories": 79, "protein": 0, "carbs": 19, "fat": 0 },
+    { "name": "Yerba Mate aufgebrüht (250ml)", "portion_g": 250, "calories": 5, "protein": 0, "carbs": 1, "fat": 0, "tip": "Nahezu kalorienfrei" },
+    { "name": "Mate-Limonade (500ml)", "portion_g": 500, "calories": 150, "protein": 0, "carbs": 36, "fat": 0 },
+    { "name": "Club-Mate Zero (500ml)", "portion_g": 500, "calories": 10, "protein": 0, "carbs": 1, "fat": 0 },
+    { "name": "Mio Mio Mate (500ml)", "portion_g": 500, "calories": 105, "protein": 0, "carbs": 26, "fat": 0 }
+  ],
+  "comparison": [
+    { "name": "Cola (500ml)", "calories": 210, "emoji": "🥤" },
+    { "name": "Energy Drink (250ml)", "calories": 113, "emoji": "⚡" },
+    { "name": "Eistee (500ml)", "calories": 150, "emoji": "🧊" },
+    { "name": "Grüner Tee (250ml)", "calories": 1, "emoji": "🍵" }
+  ],
+  "tips": [
+    { "title": "Yerba Mate brühen statt kaufen", "text": "Aufgebrühter Yerba Mate hat 5 kcal pro Tasse – Club-Mate 100 kcal pro Flasche. Der Koffein-Kick ist gleich.", "icon": "🧉" },
+    { "title": "Club-Mate hat weniger als Cola", "text": "Club-Mate: 20 kcal/100ml. Cola: 42 kcal/100ml. Fast die Hälfte weniger Kalorien bei mehr Koffein.", "icon": "📉" },
+    { "title": "Koffein-Ersatz für Energy Drinks", "text": "Club-Mate (500ml) hat 100mg Koffein – ähnlich wie ein Kaffee, aber mit weniger Kalorien als Red Bull.", "icon": "⚡" },
+    { "title": "Club-Mate Zero gibt's auch", "text": "Nur 10 kcal pro 500ml. Perfekt für den Mate-Geschmack ohne Zucker.", "icon": "0️⃣" },
+    { "title": "Nicht literweise trinken", "text": "Auf Tech-Events wird Mate literweise getrunken – 3 Flaschen = 300 kcal und 300mg Koffein. Moderat genießen.", "icon": "📏" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Club-Mate?", "answer": "Eine Flasche Club-Mate (500ml) hat 100 kcal. Die 330ml-Flasche hat 66 kcal. Club-Mate Zero hat nur 10 kcal pro 500ml." },
+    { "question": "Wie viel Zucker hat Club-Mate?", "answer": "Club-Mate hat 5g Zucker pro 100ml. Eine 500ml-Flasche enthält 25g Zucker (6 Zuckerwürfel). Weniger als Cola (53g/500ml), aber nicht zuckerfrei." },
+    { "question": "Wie viel Koffein hat Club-Mate?", "answer": "Club-Mate hat 20mg Koffein pro 100ml, also 100mg pro 500ml-Flasche. Das ist ähnlich wie eine Tasse Kaffee (80mg) oder eine Dose Red Bull (80mg)." },
+    { "question": "Ist Mate-Tee gesund?", "answer": "Yerba Mate enthält Antioxidantien, B-Vitamine und Mineralstoffe. Die Fertig-Produkte (Club-Mate) haben diese Vorteile, aber auch zugesetzten Zucker. Aufgebrühter Mate ist am gesündesten." },
+    { "question": "Club-Mate oder Cola – was hat weniger Kalorien?", "answer": "Club-Mate: 100 kcal/500ml. Cola: 210 kcal/500ml. Club-Mate hat nur die Hälfte der Kalorien und mehr Koffein." },
+    { "question": "Was ist Yerba Mate?", "answer": "Eine Pflanze aus Südamerika. Die getrockneten Blätter werden mit heißem Wasser aufgegossen. Traditionell wird Mate aus einer Kalebasse mit Bombilla (Metallstrohhalm) getrunken." }
+  ],
+  "related_foods": ["energy-drink", "cola", "eistee", "cappuccino"]
+}
