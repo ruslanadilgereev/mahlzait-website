@@ -4,9 +4,12 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import { agentsSummary } from "@nuasite/agent-summary";
 import indexnow from "astro-indexnow";
+import vercel from "@astrojs/vercel";
 
 // https://astro.build/config
 export default defineConfig({
+  output: "hybrid",
+  adapter: vercel(),
   site: "https://www.mahlzait.de",
   trailingSlash: "always",
   compressHTML: true,
@@ -26,7 +29,7 @@ export default defineConfig({
       changefreq: "weekly",
       priority: 0.7,
       lastmod: new Date(),
-      filter: (page) => !page.includes("/app") && !page.includes("/privacy-policy") && !page.includes("/terms-and-conditions") && !page.includes("/gone"),
+      filter: (page) => !page.includes("/app") && !page.includes("/privacy-policy") && !page.includes("/terms-and-conditions") && !page.includes("/gone") && !page.includes("/cockpit"),
       serialize(item) {
         const url = item.url;
         
