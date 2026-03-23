@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Cockpit</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #0a0a0a; color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+    .container { max-width: 900px; margin: 0 auto; padding: 16px; }
+    .login { max-width: 320px; margin: 80px auto; text-align: center; }
+    .login h1 { font-size: 24px; margin-bottom: 16px; }
+    input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #333; background: #1a1a1a; color: #fff; font-size: 16px; margin-bottom: 12px; }
+    button { width: 100%; padding: 12px; border-radius: 8px; border: none; background: #10b981; color: #fff; font-size: 16px; font-weight: 600; cursor: pointer; }
+    button:hover { background: #059669; }
+    .error { color: #f87171; font-size: 14px; margin-top: 8px; display: none; }
+    .hidden { display: none; }
+    .kpis { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 20px; }
+    @media (min-width: 640px) { .kpis { grid-template-columns: repeat(4, 1fr); } }
+    .kpi { background: #1a1a1a; border-radius: 12px; padding: 16px; }
+    .kpi-label { color: #888; font-size: 13px; }
+    .kpi-value { font-size: 28px; font-weight: 700; margin-top: 4px; }
+    .emerald { color: #34d399; }
+    .blue { color: #60a5fa; }
+    .yellow { color: #fbbf24; }
+    .green { color: #4ade80; }
+    .card { background: #1a1a1a; border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+    .card h3 { font-size: 16px; margin-bottom: 12px; }
+    .row { display: flex; justify-content: space-between; padding: 6px 0; }
+    .row-val { font-family: monospace; }
+    .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+    .header h1 { font-size: 24px; }
+    .meta { color: #666; font-size: 13px; }
+    .refresh { padding: 6px 12px; background: #222; border: none; color: #fff; border-radius: 6px; cursor: pointer; font-size: 14px; }
+    .trend { display: flex; align-items: flex-end; gap: 6px; height: 120px; }
+    .bar-wrap { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; }
+    .bar-val { font-size: 11px; color: #34d399; margin-bottom: 4px; }
+    .bar { width: 100%; background: #10b981; border-radius: 4px 4px 0 0; min-height: 4px; }
+    .labels { display: flex; gap: 6px; margin-top: 6px; }
+    .labels div { flex: 1; text-align: center; font-size: 11px; color: #555; }
+    pre { font-size: 11px; color: #666; overflow: auto; max-height: 300px; margin-top: 12px; }
+    details summary { cursor: pointer; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="login" class="login">
+      <h1>🔒 Cockpit</h1>
+      <input id="pw" type="password" placeholder="Passwort" autofocus>
+      <button onclick="login()">Einloggen</button>
+      <p id="error" class="error">Falsches Passwort</p>
+    </div>
+
+    <div id="dashboard" class="hidden">
+      <div class="header">
+        <h1>📊 Mahlzait Cockpit</h1>
+        <div><span id="meta" class="meta"></span> <button class="refresh" onclick="loadData()">↻</button></div>
+      </div>
+
+      <div class="kpis">
+        <div class="kpi"><div class="kpi-label">Zahlende (Apple)</div><div id="v-paid" class="kpi-value emerald">-</div></div>
+        <div class="kpi"><div class="kpi-label">Free Trials</div><div id="v-trial" class="kpi-value blue">-</div></div>
+        <div class="kpi"><div class="kpi-label">MRR Brutto</div><div id="v-mrr" class="kpi-value yellow">-</div></div>
+        <div class="kpi"><div class="kpi-label">MRR Netto</div><div id="v-net" class="kpi-value green">-</div></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+        <div class="card">
+          <h3>📱 Paid Plans</h3>
+          <div class="row"><span>Monthly (€4,99)</span><span id="s-m" class="row-val emerald">-</span></div>
+          <div class="row"><span>Yearly (€29,99)</span><span id="s-y" class="row-val emerald">-</span></div>
+        </div>
+        <div class="card">
+          <h3>🧪 Trials</h3>
+          <div class="row"><span>Monthly</span><span id="t-m" class="row-val blue">-</span></div>
+          <div class="row"><span>Yearly</span><span id="t-y" class="row-val blue">-</span></div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>📈 7-Tage Trend (Paid)</h3>
+        <div id="trend" class="trend"></div>
+        <div id="labels" class="labels"></div>
+      </div>
+
+      <details class="card"><summary>🔧 Raw</summary><pre id="raw"></pre></details>
+    </div>
+  </div>
+
+  <script>
+    let pw = '';
+    document.getElementById('pw').addEventListener('keydown', e => { if (e.key === 'Enter') login(); });
+    const saved = localStorage.getItem('cockpit_pw');
+    if (saved) { pw = saved; loadData(); }
+
+    function login() {
+      pw = document.getElementById('pw').value;
+      if (pw) loadData();
+    }
+
+    async function loadData() {
+      try {
+        const r = await fetch('/api/dashboard?pw=' + encodeURIComponent(pw));
+        if (r.status === 401) { document.getElementById('error').style.display = 'block'; localStorage.removeItem('cockpit_pw'); return; }
+        const d = await r.json();
+        if (d.error) { document.getElementById('error').textContent = d.error; document.getElementById('error').style.display = 'block'; return; }
+        localStorage.setItem('cockpit_pw', pw);
+        document.getElementById('login').classList.add('hidden');
+        document.getElementById('dashboard').classList.remove('hidden');
+        render(d);
+      } catch (e) { document.getElementById('error').textContent = e.message; document.getElementById('error').style.display = 'block'; }
+    }
+
+    function render(d) {
+      const a = d.apple?.current;
+      if (a) {
+        document.getElementById('v-paid').textContent = a.paid;
+        document.getElementById('v-trial').textContent = a.trial;
+        document.getElementById('s-m').textContent = a.monthlyPaid;
+        document.getElementById('s-y').textContent = a.yearlyPaid;
+        document.getElementById('t-m').textContent = a.monthlyTrial;
+        document.getElementById('t-y').textContent = a.yearlyTrial;
+      }
+      if (d.apple?.mrr) {
+        document.getElementById('v-mrr').textContent = '€' + d.apple.mrr.monthlyGross;
+        document.getElementById('v-net').textContent = '€' + d.apple.mrr.monthlyNet;
+      }
+      document.getElementById('meta').textContent = 'Daten vom ' + (d.apple?.latestDate || '?');
+      document.getElementById('raw').textContent = JSON.stringify(d, null, 2);
+
+      const t = d.apple?.trend || [];
+      if (t.length) {
+        const max = Math.max(...t.map(x => x.paid), 1);
+        document.getElementById('trend').innerHTML = t.map(x =>
+          '<div class="bar-wrap"><div class="bar-val">' + x.paid + '</div><div class="bar" style="height:' + Math.max(x.paid / max * 100, 3) + 'px"></div></div>'
+        ).join('');
+        document.getElementById('labels').innerHTML = t.map(x =>
+          '<div>' + x.date.slice(5) + '</div>'
+        ).join('');
+      }
+    }
+  </script>
+</body>
+</html>

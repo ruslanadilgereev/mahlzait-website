@@ -4,12 +4,8 @@ import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import { agentsSummary } from "@nuasite/agent-summary";
 import indexnow from "astro-indexnow";
-import vercel from "@astrojs/vercel";
-
 // https://astro.build/config
 export default defineConfig({
-  output: "server",
-  adapter: vercel(),
   site: "https://www.mahlzait.de",
   trailingSlash: "always",
   compressHTML: true,
