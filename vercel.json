@@ -3,11 +3,6 @@
   "outputDirectory": "dist",
   "framework": "astro",
   "devCommand": "pnpm run dev",
-  "functions": {
-    "api/**": {
-      "runtime": "@vercel/node@3"
-    }
-  },
   "rewrites": [
     {
       "source": "/api/:path*",
