@@ -1,0 +1,52 @@
+{
+  "slug": "frozen-yogurt",
+  "name": "Frozen Yogurt",
+  "emoji": "🍦",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Frozen Yogurt Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Frozen Yogurt? Nährwerte pro 100g & Portion. Natur, mit Toppings, Light & Eis im Vergleich + Diät-Tipps.",
+    "keywords": ["frozen yogurt kalorien", "frozen yogurt nährwerte", "frozen yogurt kalorien pro 100g", "frozen yogurt gesund", "frozen yogurt vs eis", "frozen yogurt zucker", "frozen yogurt diät", "froyo kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 127,
+    "protein_per_100g": 3,
+    "carbs_per_100g": 22,
+    "fat_per_100g": 3,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Becher (klein)"
+  },
+  "variants": [
+    { "name": "Kleiner Becher natur (150g)", "portion_g": 150, "calories": 191, "protein": 5, "carbs": 33, "fat": 5 },
+    { "name": "Mittlerer Becher natur (250g)", "portion_g": 250, "calories": 318, "protein": 8, "carbs": 55, "fat": 8 },
+    { "name": "Großer Becher natur (350g)", "portion_g": 350, "calories": 445, "protein": 11, "carbs": 77, "fat": 11 },
+    { "name": "Mit Erdbeeren & Granola", "portion_g": 200, "calories": 310, "protein": 7, "carbs": 50, "fat": 9 },
+    { "name": "Mit Schoko-Topping & Brownie", "portion_g": 200, "calories": 420, "protein": 7, "carbs": 62, "fat": 16 },
+    { "name": "Frozen Yogurt fettfrei (150g)", "portion_g": 150, "calories": 150, "protein": 5, "carbs": 30, "fat": 1, "tip": "Am wenigsten Kalorien" },
+    { "name": "Protein Frozen Yogurt (150g)", "portion_g": 150, "calories": 165, "protein": 15, "carbs": 21, "fat": 3, "tip": "Extra Protein" },
+    { "name": "Frozen Yogurt vom Supermarkt (100g)", "portion_g": 100, "calories": 135, "protein": 3, "carbs": 24, "fat": 3 }
+  ],
+  "comparison": [
+    { "name": "Vanilleeis (150g)", "calories": 311, "emoji": "🍦" },
+    { "name": "Schokoladeneis (150g)", "calories": 324, "emoji": "🍫" },
+    { "name": "Joghurt natur (150g)", "calories": 92, "emoji": "🥛" },
+    { "name": "Sorbet Frucht (150g)", "calories": 150, "emoji": "🍓" }
+  ],
+  "tips": [
+    { "title": "Toppings sind die Falle!", "text": "Frozen Yogurt natur: 191 kcal. Mit Brownie, Schoko-Sauce & Streuseln: 420 kcal. Die Toppings können den Kaloriengehalt verdoppeln.", "icon": "⚠️" },
+    { "title": "Frisches Obst als Topping", "text": "Erdbeeren, Blaubeeren, Mango – frisches Obst hat nur 15-30 kcal extra. Schokosoße hat 80+ kcal. Obst spart 50-100 kcal pro Becher.", "icon": "🍓" },
+    { "title": "Klein bestellen!", "text": "Der Unterschied zwischen klein (191 kcal) und groß (445 kcal) ist gewaltig. Die kleine Portion reicht geschmacklich – man zahlt für das Erlebnis, nicht für die Menge.", "icon": "📏" },
+    { "title": "Besser als Eis, aber…", "text": "Frozen Yogurt hat 40% weniger Kalorien als Eis. Aber es ist kein Gesundheitsfood: 22g Zucker/100g sind ordentlich. Es bleibt ein Dessert.", "icon": "🤔" },
+    { "title": "Protein-Variante wählen", "text": "Protein-Frozen-Yogurt hat 15g Protein pro Becher statt 5g. Sättigt deutlich besser und hat kaum mehr Kalorien.", "icon": "💪" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Frozen Yogurt?", "answer": "Frozen Yogurt natur hat ca. 127 kcal pro 100g. Ein kleiner Becher (150g): 191 kcal. Mit Toppings schnell 300-420 kcal." },
+    { "question": "Ist Frozen Yogurt gesünder als Eis?", "answer": "Kalorienärmer: 127 kcal/100g vs. 207 kcal bei Eis. Weniger Fett (3g vs. 11g). Aber trotzdem viel Zucker (22g/100g). Gesünder? Ja. Gesund? Bedingt." },
+    { "question": "Wie viel Zucker hat Frozen Yogurt?", "answer": "Ca. 22g Zucker pro 100g. Ein kleiner Becher (150g) hat 33g Zucker – 11 Würfelzucker! Plus Toppings nochmal 10-20g extra." },
+    { "question": "Kann man Frozen Yogurt bei einer Diät essen?", "answer": "Ja, als Dessert-Ersatz. 191 kcal für einen kleinen Becher natur sind moderat. Wichtig: Toppings kontrollieren und kleine Größe wählen." },
+    { "question": "Was hat weniger Kalorien: Frozen Yogurt oder Sorbet?", "answer": "Sorbet hat ca. 100 kcal/100g, Frozen Yogurt ca. 127 kcal. Sorbet ist leichter, hat aber kein Protein und sättigt weniger." },
+    { "question": "Warum hat Frozen Yogurt so viele Kalorien?", "answer": "Wegen des Zuckers: 22g/100g. Frozen Yogurt ist nicht einfach gefrorener Joghurt – es wird Zucker und manchmal Milchfett zugesetzt, damit er cremig wird." }
+  ],
+  "related_foods": ["eis-vanille", "joghurt", "smoothie-beeren", "skyr"]
+}

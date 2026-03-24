@@ -1,0 +1,52 @@
+{
+  "slug": "muffin",
+  "name": "Muffin",
+  "emoji": "🧁",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Muffin Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Muffin? Nährwerte pro 100g & Stück. Schoko, Blaubeere, Zitrone & Protein-Muffin im Vergleich + Tipps.",
+    "keywords": ["muffin kalorien", "muffin nährwerte", "muffin kalorien pro stück", "schokomuffin kalorien", "blaubeer muffin kalorien", "muffin zucker", "muffin fett", "muffin kalorien starbucks"]
+  },
+  "overview": {
+    "calories_per_100g": 370,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 48,
+    "fat_per_100g": 18,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 110,
+    "typical_portion_name": "1 Muffin"
+  },
+  "variants": [
+    { "name": "1 Standard-Muffin (110g)", "portion_g": 110, "calories": 407, "protein": 6, "carbs": 53, "fat": 20 },
+    { "name": "Schokomuffin (110g)", "portion_g": 110, "calories": 430, "protein": 6, "carbs": 55, "fat": 22 },
+    { "name": "Blaubeermuffin (110g)", "portion_g": 110, "calories": 385, "protein": 5, "carbs": 52, "fat": 18, "tip": "Etwas leichter" },
+    { "name": "Zitronenmuffin (110g)", "portion_g": 110, "calories": 400, "protein": 5, "carbs": 54, "fat": 19 },
+    { "name": "Mini-Muffin (35g)", "portion_g": 35, "calories": 130, "protein": 2, "carbs": 17, "fat": 6, "tip": "Portionskontrolle" },
+    { "name": "Starbucks-Muffin (140g)", "portion_g": 140, "calories": 490, "protein": 7, "carbs": 65, "fat": 23 },
+    { "name": "Protein-Muffin (80g)", "portion_g": 80, "calories": 200, "protein": 15, "carbs": 20, "fat": 7, "tip": "Deutlich mehr Protein" },
+    { "name": "Muffin mit Streuseln (120g)", "portion_g": 120, "calories": 468, "protein": 6, "carbs": 58, "fat": 24 }
+  ],
+  "comparison": [
+    { "name": "Brownie (80g)", "calories": 324, "emoji": "🟫" },
+    { "name": "Donut (75g)", "calories": 300, "emoji": "🍩" },
+    { "name": "Croissant (60g)", "calories": 246, "emoji": "🥐" },
+    { "name": "Berliner (80g)", "calories": 264, "emoji": "🫓" }
+  ],
+  "tips": [
+    { "title": "Muffins sind getarnte Kuchen", "text": "Ein Muffin hat 407 kcal – so viel wie ein Stück Kuchen. Der gesunde Eindruck trügt: Mehl, Zucker, Butter – Kuchen in Becherform.", "icon": "🎭" },
+    { "title": "Mini-Muffins wählen", "text": "Mini-Muffins haben 130 kcal statt 407 kcal. Gleicher Geschmack, ein Drittel der Kalorien. Perfekt für portionierte Genussmomente.", "icon": "📏" },
+    { "title": "Starbucks-Muffins sind riesig", "text": "Starbucks-Muffins wiegen 140g statt der üblichen 110g. Ergebnis: 490 kcal – fast so viel wie ein ganzes Mittagessen.", "icon": "☕" },
+    { "title": "Protein-Muffin backen", "text": "Rezept: Proteinpulver statt Hälfte Mehl, Banane statt Zucker, griechischer Joghurt statt Butter. 200 kcal, 15g Protein.", "icon": "💪" },
+    { "title": "Nicht zum Frühstück", "text": "407 kcal aus Zucker und Fett, kaum Protein – ein Muffin zum Frühstück sorgt für Blutzucker-Achterbahn und Heißhunger um 10 Uhr.", "icon": "🌅" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Muffin?", "answer": "Ein Standard-Muffin (110g) hat ca. 407 kcal. Schoko: 430 kcal. Blaubeere: 385 kcal. Mini-Muffin: 130 kcal. Starbucks: bis 490 kcal." },
+    { "question": "Sind Blaubeermuffins gesünder?", "answer": "Minimal: 385 kcal vs. 407 kcal beim Standard. Die Blaubeeren machen kaum einen Unterschied – der Teig dominiert. Es bleibt Kuchen mit Obst-Deko." },
+    { "question": "Wie viel Zucker hat ein Muffin?", "answer": "Ca. 30-35g Zucker pro Muffin (110g) – das sind 10-12 Würfelzucker! Plus das Weizenmehl, das wie Zucker verdaut wird." },
+    { "question": "Muffin oder Donut – was hat weniger Kalorien?", "answer": "Donut: 300 kcal (75g). Muffin: 407 kcal (110g). Der Donut ist tatsächlich kalorienärmer! Der Muffin ist einfach größer und hat mehr Teig." },
+    { "question": "Kann man Muffins kalorienärmer backen?", "answer": "Ja: Zucker halbieren, Apfelmus statt Butter, Vollkornmehl, Proteinpulver dazu. So kommst du auf 200-250 kcal pro Muffin." },
+    { "question": "Wie viele Kalorien hat ein Mini-Muffin?", "answer": "Ein Mini-Muffin (35g) hat ca. 130 kcal. Das ist ein Drittel des Standard-Muffins und eine vertretbare Snack-Größe." }
+  ],
+  "related_foods": ["brownie", "donut", "zimtschnecke", "kekse"]
+}

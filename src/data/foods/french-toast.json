@@ -1,0 +1,52 @@
+{
+  "slug": "french-toast",
+  "name": "French Toast",
+  "emoji": "🍞",
+  "category": "supermarkt",
+  "seo": {
+    "title": "French Toast Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat French Toast? Nährwerte pro 100g & Scheibe. Classic, mit Zimt, Beeren & Ahornsirup im Vergleich + Tipps.",
+    "keywords": ["french toast kalorien", "french toast nährwerte", "armer ritter kalorien", "french toast kalorien pro stück", "french toast rezept kalorien", "french toast zucker", "french toast fett", "armer ritter nährwerte"]
+  },
+  "overview": {
+    "calories_per_100g": 230,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 25,
+    "fat_per_100g": 11,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 60,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    { "name": "1 Scheibe (60g)", "portion_g": 60, "calories": 138, "protein": 5, "carbs": 15, "fat": 7 },
+    { "name": "2 Scheiben (120g)", "portion_g": 120, "calories": 276, "protein": 10, "carbs": 30, "fat": 13 },
+    { "name": "2 Scheiben + Ahornsirup", "portion_g": 150, "calories": 354, "protein": 10, "carbs": 50, "fat": 13 },
+    { "name": "2 Scheiben + Zimt & Zucker", "portion_g": 130, "calories": 316, "protein": 10, "carbs": 40, "fat": 13 },
+    { "name": "Mit Beeren & Puderzucker", "portion_g": 170, "calories": 320, "protein": 11, "carbs": 40, "fat": 14 },
+    { "name": "Vollkorn French Toast (60g)", "portion_g": 60, "calories": 128, "protein": 6, "carbs": 13, "fat": 6, "tip": "Mehr Ballaststoffe" },
+    { "name": "Brioche French Toast (60g)", "portion_g": 60, "calories": 165, "protein": 5, "carbs": 17, "fat": 9 },
+    { "name": "Protein French Toast (60g)", "portion_g": 60, "calories": 105, "protein": 10, "carbs": 10, "fat": 4, "tip": "Mehr Protein, weniger kcal" }
+  ],
+  "comparison": [
+    { "name": "Pancakes (2 Stück, 120g)", "calories": 272, "emoji": "🥞" },
+    { "name": "Waffeln (75g)", "calories": 234, "emoji": "🧇" },
+    { "name": "Croissant (60g)", "calories": 246, "emoji": "🥐" },
+    { "name": "Toast mit Nutella (40g)", "calories": 187, "emoji": "🍫" }
+  ],
+  "tips": [
+    { "title": "Alte Brötchen verwerten", "text": "French Toast / Armer Ritter wurde erfunden, um altes Brot zu verwerten. Funktioniert mit Weißbrot, Brioche, Toastbrot oder alten Brötchen.", "icon": "♻️" },
+    { "title": "Vollkornbrot verwenden", "text": "Vollkorn-French-Toast hat 128 kcal statt 138 kcal pro Scheibe. Dazu mehr Ballaststoffe und langsamerer Blutzuckeranstieg.", "icon": "🌾" },
+    { "title": "Protein-Version", "text": "Eier + Proteinpulver + Zimt in der Eimasse = Protein French Toast mit 105 kcal und 10g Protein pro Scheibe. Perfekt fürs Fitness-Frühstück.", "icon": "💪" },
+    { "title": "Obst statt Sirup", "text": "2 Scheiben + Ahornsirup: 354 kcal. 2 Scheiben + Beeren: 320 kcal. Obst spart 34 kcal und liefert Vitamine statt purem Zucker.", "icon": "🍓" },
+    { "title": "Wenig Butter zum Braten", "text": "In einer beschichteten Pfanne reicht 1 TL Butter (35 kcal) statt 1 EL (100 kcal). Oder Kokosölspray für nur 5 kcal.", "icon": "🍳" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat French Toast?", "answer": "1 Scheibe French Toast hat ca. 138 kcal. 2 Scheiben: 276 kcal. Mit Ahornsirup: 354 kcal. Mit Beeren & Puderzucker: 320 kcal." },
+    { "question": "Wie viele Kalorien hat Armer Ritter?", "answer": "Armer Ritter ist das deutsche French Toast – gleiche Kalorien: 230 kcal/100g. Die Zubereitung (Ei, Milch, Butter) macht die Kalorien." },
+    { "question": "French Toast oder Pancakes – was hat weniger Kalorien?", "answer": "Pro 100g fast identisch: French Toast 230 kcal, Pancakes 227 kcal. Pancakes haben etwas mehr Teig und Mehl, French Toast mehr Ei und Butter." },
+    { "question": "Ist French Toast gesund?", "answer": "Mäßig: Eier liefern Protein (8g/100g), aber das Brot bringt viele schnelle Kohlenhydrate. Vollkorn + Obst-Topping machen es deutlich besser." },
+    { "question": "Wie viel Protein hat French Toast?", "answer": "Ca. 8g Protein/100g – mehr als Pancakes (6g). Das Ei in der Panade macht den Unterschied. Protein-Version kommt auf 17g/100g." },
+    { "question": "Kann man French Toast kalorienärmer machen?", "answer": "Ja: Eiklar statt ganzes Ei, Vollkornbrot, wenig Butter (beschichtete Pfanne), Obst statt Sirup. So sparst du 30% Kalorien." }
+  ],
+  "related_foods": ["pancakes", "waffeln", "toastbrot", "croissant"]
+}

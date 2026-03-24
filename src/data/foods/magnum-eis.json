@@ -1,0 +1,52 @@
+{
+  "slug": "magnum-eis",
+  "name": "Magnum Eis",
+  "emoji": "🍦",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Magnum Eis Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Magnum? Nährwerte pro Stück. Classic, Almond, White & Mini im Vergleich + kalorienarme Alternativen.",
+    "keywords": ["magnum kalorien", "magnum eis kalorien", "magnum classic kalorien", "magnum nährwerte", "magnum mini kalorien", "magnum almond kalorien", "magnum white kalorien", "magnum eis nährwerte"]
+  },
+  "overview": {
+    "calories_per_100g": 290,
+    "protein_per_100g": 4,
+    "carbs_per_100g": 27,
+    "fat_per_100g": 19,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 86,
+    "typical_portion_name": "1 Magnum Classic"
+  },
+  "variants": [
+    { "name": "Magnum Classic (86g)", "portion_g": 86, "calories": 260, "protein": 4, "carbs": 26, "fat": 16 },
+    { "name": "Magnum Almond (86g)", "portion_g": 86, "calories": 275, "protein": 5, "carbs": 24, "fat": 18 },
+    { "name": "Magnum White (86g)", "portion_g": 86, "calories": 265, "protein": 3, "carbs": 28, "fat": 16 },
+    { "name": "Magnum Double Chocolate (88g)", "portion_g": 88, "calories": 310, "protein": 4, "carbs": 30, "fat": 20 },
+    { "name": "Magnum Mini Classic (55g)", "portion_g": 55, "calories": 162, "protein": 2, "carbs": 16, "fat": 10, "tip": "40% weniger als das große" },
+    { "name": "Magnum Mini Almond (55g)", "portion_g": 55, "calories": 170, "protein": 3, "carbs": 15, "fat": 11 },
+    { "name": "Magnum Vegan Classic (90g)", "portion_g": 90, "calories": 250, "protein": 2, "carbs": 27, "fat": 15, "tip": "Vegan" },
+    { "name": "Magnum Intense Dark (85g)", "portion_g": 85, "calories": 248, "protein": 4, "carbs": 23, "fat": 16 }
+  ],
+  "comparison": [
+    { "name": "Cornetto Classic (90g)", "calories": 210, "emoji": "🍦" },
+    { "name": "Nogger (94g)", "calories": 230, "emoji": "🍫" },
+    { "name": "Solero (75g)", "calories": 97, "emoji": "🍊" },
+    { "name": "2 Kugeln Eis (150g)", "calories": 311, "emoji": "🍨" }
+  ],
+  "tips": [
+    { "title": "Magnum Mini als Kompromiss", "text": "Ein Mini hat nur 162 kcal statt 260 kcal beim großen. Du sparst 100 kcal und hast trotzdem den vollen Magnum-Genuss.", "icon": "📏" },
+    { "title": "Die Schokohülle macht's", "text": "Die Schokoladenhülle allein hat ca. 80-100 kcal. Ohne Schoko wäre ein Magnum nur ein normales Vanilleeis am Stiel (~160 kcal).", "icon": "🍫" },
+    { "title": "Double-Varianten vermeiden", "text": "Magnum Double hat 310 kcal – 50 kcal mehr als Classic. Die doppelte Schokohülle bringt kaum mehr Genuss, aber 20% mehr Kalorien.", "icon": "⚠️" },
+    { "title": "Nicht als Zwischensnack", "text": "260 kcal ist fast so viel wie ein kleines Mittagessen. Genieße ein Magnum als bewusstes Dessert, nicht als Snack zwischendurch.", "icon": "🍽️" },
+    { "title": "Solero als Alternative", "text": "Ein Solero hat nur 97 kcal – weniger als die Hälfte eines Magnums. Für heiße Tage, wenn es um Erfrischung statt Schokolust geht.", "icon": "🍊" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Magnum?", "answer": "Ein Magnum Classic hat 260 kcal. Magnum Almond: 275 kcal. Magnum White: 265 kcal. Magnum Double: 310 kcal. Mini: 162 kcal." },
+    { "question": "Wie viele Kalorien hat ein Magnum Mini?", "answer": "Ein Magnum Mini Classic hat 162 kcal – 38% weniger als das große (260 kcal). Die Minis sind der beste Kompromiss aus Genuss und Kalorien." },
+    { "question": "Welches Magnum hat die wenigsten Kalorien?", "answer": "Magnum Intense Dark: 248 kcal. Magnum Vegan: 250 kcal. Magnum Classic: 260 kcal. Die Minis starten bei 162 kcal." },
+    { "question": "Ist ein Magnum oder 2 Kugeln Eis kalorienärmer?", "answer": "Ein Magnum Classic: 260 kcal. Zwei Kugeln Vanilleeis: 311 kcal. Das Magnum ist tatsächlich kalorienärmer – aber die Portionsgröße ist auch kleiner." },
+    { "question": "Wie viel Zucker hat ein Magnum?", "answer": "Ein Magnum Classic hat ca. 22g Zucker – das sind 7 Würfelzucker. Der meiste Zucker steckt in der Schokoladenhülle und dem Vanilleeis." },
+    { "question": "Ist das vegane Magnum kalorienärmer?", "answer": "Leicht: 250 kcal vs. 260 kcal beim Classic. Der Unterschied kommt vom pflanzlichen Eis statt Milcheis. Geschmacklich nah dran." }
+  ],
+  "related_foods": ["eis-vanille", "eis-schokolade", "frozen-yogurt", "schokolade-vollmilch"]
+}

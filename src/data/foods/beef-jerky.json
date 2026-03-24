@@ -1,0 +1,52 @@
+{
+  "slug": "beef-jerky",
+  "name": "Beef Jerky",
+  "emoji": "🥩",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Beef Jerky Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Beef Jerky? Nährwerte pro 100g & Portion. Classic, Teriyaki, Turkey & Protein im Vergleich + Fitness-Tipps.",
+    "keywords": ["beef jerky kalorien", "beef jerky nährwerte", "beef jerky protein", "beef jerky kalorien pro 100g", "beef jerky gesund", "beef jerky fett", "beef jerky zucker", "beef jerky fitness"]
+  },
+  "overview": {
+    "calories_per_100g": 310,
+    "protein_per_100g": 50,
+    "carbs_per_100g": 11,
+    "fat_per_100g": 8,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 25,
+    "typical_portion_name": "1 Portion (~5 Stück)"
+  },
+  "variants": [
+    { "name": "1 Portion (25g)", "portion_g": 25, "calories": 78, "protein": 13, "carbs": 3, "fat": 2 },
+    { "name": "Kleine Tüte (50g)", "portion_g": 50, "calories": 155, "protein": 25, "carbs": 6, "fat": 4 },
+    { "name": "Classic/Original (25g)", "portion_g": 25, "calories": 78, "protein": 13, "carbs": 3, "fat": 2 },
+    { "name": "Teriyaki (25g)", "portion_g": 25, "calories": 83, "protein": 12, "carbs": 5, "fat": 2 },
+    { "name": "Peppered/Scharf (25g)", "portion_g": 25, "calories": 76, "protein": 13, "carbs": 2, "fat": 2, "tip": "Am wenigsten Zucker" },
+    { "name": "Turkey Jerky (25g)", "portion_g": 25, "calories": 70, "protein": 13, "carbs": 2, "fat": 1, "tip": "Weniger Fett" },
+    { "name": "Chicken Jerky (25g)", "portion_g": 25, "calories": 68, "protein": 14, "carbs": 1, "fat": 1 },
+    { "name": "BBQ-Flavor (25g)", "portion_g": 25, "calories": 85, "protein": 12, "carbs": 5, "fat": 2 }
+  ],
+  "comparison": [
+    { "name": "Proteinriegel (55g)", "calories": 193, "emoji": "💪" },
+    { "name": "Nüsse gemischt (25g)", "calories": 150, "emoji": "🥜" },
+    { "name": "Chips (25g)", "calories": 134, "emoji": "🥔" },
+    { "name": "Hühnerbrust (100g)", "calories": 165, "emoji": "🍗" }
+  ],
+  "tips": [
+    { "title": "Protein-Champion", "text": "50g Protein pro 100g – mehr als Hühnerbrust (31g), Thunfisch (26g) oder Proteinriegel (30g). Beef Jerky ist einer der proteinreichsten Snacks überhaupt.", "icon": "💪" },
+    { "title": "Vorsicht: Salz!", "text": "Beef Jerky hat ca. 1,5-2g Salz pro 25g Portion. Die Tagesmenge liegt bei 6g. Zwei Portionen decken schon die Hälfte ab.", "icon": "🧂" },
+    { "title": "Teriyaki hat mehr Zucker", "text": "Teriyaki-Jerky hat 15-20g Zucker/100g vs. 5g bei Classic. Die süße Glasur bringt Extra-Kalorien und Zucker. Classic oder Peppered wählen.", "icon": "🍯" },
+    { "title": "Perfekter Fitness-Snack", "text": "78 kcal, 13g Protein, 2g Fett pro Portion. Kein anderer Snack hat ein so gutes Protein-zu-Kalorien-Verhältnis. Ideal nach dem Training.", "icon": "🎯" },
+    { "title": "Turkey Jerky noch besser", "text": "Turkey Jerky hat nur 280 kcal/100g und 1g Fett/25g. Etwas weniger Geschmack, aber das beste Nährwertprofil aller Jerky-Varianten.", "icon": "🦃" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Beef Jerky?", "answer": "Beef Jerky hat ca. 310 kcal pro 100g. Eine Portion (25g) hat 78 kcal. Eine kleine Tüte (50g) hat 155 kcal – bei satten 25g Protein." },
+    { "question": "Ist Beef Jerky gesund?", "answer": "Hochwertiges Protein (50g/100g), wenig Fett (8g), wenig Zucker. Minuspunkte: viel Salz und Nitritpökelsalz. In Maßen ein sehr guter Protein-Snack." },
+    { "question": "Wie viel Protein hat Beef Jerky?", "answer": "Ca. 50g Protein pro 100g – einer der proteinreichsten Snacks. 25g Portion = 13g Protein. Das Protein kommt vom getrockneten Rindfleisch." },
+    { "question": "Beef Jerky oder Proteinriegel?", "answer": "Jerky: 78 kcal, 13g Protein (25g). Proteinriegel: 193 kcal, 17g Protein (55g). Pro Kalorie hat Jerky deutlich mehr Protein. Dafür schmeckt der Riegel süßer." },
+    { "question": "Wie viel Beef Jerky darf man am Tag essen?", "answer": "1-2 Portionen (25-50g). Mehr wird wegen des hohen Salzgehalts nicht empfohlen. 50g liefern 25g Protein und 155 kcal – perfekter Snack." },
+    { "question": "Warum ist Beef Jerky so teuer?", "answer": "Für 100g Jerky braucht man ca. 300g frisches Fleisch – es verliert 2/3 des Gewichts durch Trocknung. Plus Marinade und Verarbeitung. Daher 3-5€ pro 25g-Tüte." }
+  ],
+  "related_foods": ["proteinriegel", "proteinshake", "haehnchenbrust", "nussriegel"]
+}

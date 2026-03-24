@@ -1,0 +1,52 @@
+{
+  "slug": "waffeln",
+  "name": "Waffeln",
+  "emoji": "🧇",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Waffeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Waffeln? Nährwerte pro 100g & Stück. Belgische, Lütticher, Herzwaffeln & Fertigwaffeln im Vergleich + Tipps.",
+    "keywords": ["waffeln kalorien", "waffeln nährwerte", "belgische waffel kalorien", "herzwaffel kalorien", "waffel kalorien pro stück", "lütticher waffel kalorien", "waffeln fett", "waffeln zucker"]
+  },
+  "overview": {
+    "calories_per_100g": 312,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 42,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 75,
+    "typical_portion_name": "1 Herzwaffel"
+  },
+  "variants": [
+    { "name": "1 Herzwaffel (75g)", "portion_g": 75, "calories": 234, "protein": 5, "carbs": 32, "fat": 10 },
+    { "name": "Belgische Waffel (140g)", "portion_g": 140, "calories": 462, "protein": 8, "carbs": 60, "fat": 22 },
+    { "name": "Lütticher Waffel (90g)", "portion_g": 90, "calories": 340, "protein": 5, "carbs": 50, "fat": 14 },
+    { "name": "Waffel mit Sahne & Erdbeeren", "portion_g": 120, "calories": 380, "protein": 6, "carbs": 40, "fat": 22 },
+    { "name": "Waffel mit Nutella (75g + 25g)", "portion_g": 100, "calories": 368, "protein": 6, "carbs": 42, "fat": 20 },
+    { "name": "Fertig-Butterwaffel (30g)", "portion_g": 30, "calories": 148, "protein": 2, "carbs": 18, "fat": 8 },
+    { "name": "Protein-Waffel (75g)", "portion_g": 75, "calories": 195, "protein": 15, "carbs": 18, "fat": 7, "tip": "Mehr Protein, weniger Carbs" },
+    { "name": "Haferwaffel (75g)", "portion_g": 75, "calories": 218, "protein": 7, "carbs": 28, "fat": 9, "tip": "Mehr Ballaststoffe" }
+  ],
+  "comparison": [
+    { "name": "Pancakes (2 Stück, 120g)", "calories": 272, "emoji": "🥞" },
+    { "name": "Croissant (60g)", "calories": 246, "emoji": "🥐" },
+    { "name": "French Toast (2 Scheiben)", "calories": 276, "emoji": "🍞" },
+    { "name": "Crêpe mit Nutella (120g)", "calories": 310, "emoji": "🥞" }
+  ],
+  "tips": [
+    { "title": "Belgische Waffeln sind kalorienreich", "text": "Eine belgische Waffel hat 462 kcal – fast eine komplette Mahlzeit. Die Lütticher Variante ist kleiner (340 kcal) und reicht als Dessert.", "icon": "🇧🇪" },
+    { "title": "Topping macht den Unterschied", "text": "Eine Waffel pur: 234 kcal. Mit Nutella: 368 kcal. Mit Sahne & Erdbeeren: 380 kcal. Frisches Obst spart 100+ kcal vs. Schokosoße.", "icon": "🍓" },
+    { "title": "Protein-Waffel als Alternative", "text": "Mit Proteinpulver im Teig: 195 kcal, 15g Protein. Sättigt besser und hat 40 kcal weniger als die klassische Variante.", "icon": "💪" },
+    { "title": "Waffel als Dessert, nicht als Snack", "text": "Behandle die Waffel als Dessert nach einer Mahlzeit. Als Zwischensnack löst sie Heißhunger aus (hoher GI, wenig Protein).", "icon": "🍽️" },
+    { "title": "Selbst backen = Kontrolle", "text": "Selbstgemachte Waffeln: Zucker halbieren, Vollkornmehl nutzen, Apfelmus statt Butter. Spart 30% Kalorien bei ähnlichem Geschmack.", "icon": "👨‍🍳" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Waffel?", "answer": "Eine Herzwaffel (75g) hat ca. 234 kcal. Eine belgische Waffel (140g) hat ca. 462 kcal. Plus Topping kommen schnell 300-500 kcal zusammen." },
+    { "question": "Wie viele Kalorien hat eine belgische Waffel?", "answer": "Ca. 330 kcal pro 100g bzw. 462 kcal pro Stück (140g). Der höhere Butter- und Zuckeranteil macht belgische Waffeln kalorienreicher als Herzwaffeln." },
+    { "question": "Sind Waffeln zum Frühstück geeignet?", "answer": "Eher Genuss als Alltag. Eine Waffel hat viele schnelle Kohlenhydrate und wenig Protein. Besser: Protein-Waffel oder Haferwaffel mit Quark und Obst." },
+    { "question": "Wie kann man Waffeln kalorienärmer machen?", "answer": "Zucker um 50% reduzieren, Vollkornmehl statt Weißmehl, Apfelmus statt der Hälfte der Butter, Proteinpulver einrühren. So sparst du 30% Kalorien." },
+    { "question": "Waffel oder Pancake – was hat weniger Kalorien?", "answer": "Pancakes: 227 kcal/100g. Waffeln: 312 kcal/100g. Pancakes haben weniger Fett und Kalorien, weil weniger Butter im Teig ist." },
+    { "question": "Wie viel Zucker hat eine Waffel?", "answer": "Eine Herzwaffel hat ca. 15g Zucker. Eine belgische Waffel mit Puderzucker: ca. 30g. Plus Schokosauce oder Nutella nochmal 10-15g extra." }
+  ],
+  "related_foods": ["pancakes", "crepes-nutella", "french-toast", "croissant"]
+}

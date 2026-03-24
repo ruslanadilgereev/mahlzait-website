@@ -1,0 +1,52 @@
+{
+  "slug": "proteinriegel",
+  "name": "Proteinriegel",
+  "emoji": "💪",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Proteinriegel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Proteinriegel? Nährwerte pro 100g & Riegel. Quest, Barebells, ESN & Co im Vergleich + Fitness-Tipps.",
+    "keywords": ["proteinriegel kalorien", "proteinriegel nährwerte", "quest bar kalorien", "barebells kalorien", "proteinriegel gesund", "proteinriegel protein", "proteinriegel test", "proteinriegel abnehmen"]
+  },
+  "overview": {
+    "calories_per_100g": 350,
+    "protein_per_100g": 30,
+    "carbs_per_100g": 35,
+    "fat_per_100g": 10,
+    "fiber_per_100g": 5,
+    "typical_portion_g": 55,
+    "typical_portion_name": "1 Riegel"
+  },
+  "variants": [
+    { "name": "Standard-Riegel (55g)", "portion_g": 55, "calories": 193, "protein": 17, "carbs": 19, "fat": 6 },
+    { "name": "Quest Bar (60g)", "portion_g": 60, "calories": 190, "protein": 21, "carbs": 21, "fat": 7, "tip": "Nur 1g Zucker" },
+    { "name": "Barebells (55g)", "portion_g": 55, "calories": 198, "protein": 20, "carbs": 18, "fat": 8 },
+    { "name": "ESN Designer Bar (45g)", "portion_g": 45, "calories": 155, "protein": 15, "carbs": 14, "fat": 5 },
+    { "name": "Grenade Carb Killa (60g)", "portion_g": 60, "calories": 210, "protein": 22, "carbs": 17, "fat": 8 },
+    { "name": "Low-Carb Riegel (50g)", "portion_g": 50, "calories": 170, "protein": 20, "carbs": 8, "fat": 8, "tip": "Am wenigsten Kohlenhydrate" },
+    { "name": "Veganer Proteinriegel (55g)", "portion_g": 55, "calories": 200, "protein": 16, "carbs": 22, "fat": 7 },
+    { "name": "Budget-Proteinriegel (35g)", "portion_g": 35, "calories": 130, "protein": 10, "carbs": 14, "fat": 4 }
+  ],
+  "comparison": [
+    { "name": "Müsliriegel (25g)", "calories": 103, "emoji": "🥣" },
+    { "name": "Snickers (52g)", "calories": 245, "emoji": "🍫" },
+    { "name": "Quark 500g", "calories": 345, "emoji": "🥛" },
+    { "name": "Hühnerbrust (100g)", "calories": 165, "emoji": "🍗" }
+  ],
+  "tips": [
+    { "title": "Protein-Gehalt prüfen", "text": "Ein guter Proteinriegel hat mind. 20g Protein pro Riegel. Unter 15g ist es eher ein Schokoriegel mit Marketing. Pro-Tipp: Protein pro Kalorie vergleichen.", "icon": "🔍" },
+    { "title": "Kein Mahlzeitenersatz", "text": "193 kcal und 17g Protein sind ein Snack, keine Mahlzeit. Für eine Mahlzeit bräuchtest du 400-600 kcal. Proteinriegel als Ergänzung, nicht als Basis.", "icon": "🍽️" },
+    { "title": "Zucker vs. Zuckeralkohole", "text": "Viele Low-Sugar-Riegel nutzen Maltit oder Erythrit. Die zählen nicht als Zucker, haben aber trotzdem Kalorien (Maltit: 2,4 kcal/g) und können Blähungen verursachen.", "icon": "⚠️" },
+    { "title": "Timing: Nach dem Training", "text": "Der beste Zeitpunkt für einen Proteinriegel ist 30-60 Minuten nach dem Training. Da braucht der Körper Protein für die Muskelregeneration.", "icon": "⏰" },
+    { "title": "Quark ist günstiger", "text": "500g Magerquark: 345 kcal, 60g Protein, ca. 0,80€. Proteinriegel: 193 kcal, 17g Protein, ca. 2,50€. Pro Gramm Protein ist Quark 5x günstiger.", "icon": "💰" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Proteinriegel?", "answer": "Ein typischer Proteinriegel (55g) hat ca. 193 kcal. Pro 100g sind es ca. 350 kcal. Das ist weniger als ein Schokoriegel (Snickers: 471 kcal/100g)." },
+    { "question": "Sind Proteinriegel gesund?", "answer": "Besser als Schokoriegel: mehr Protein, weniger Zucker, mehr Ballaststoffe. Aber kein Superfood. Echte Lebensmittel (Quark, Eier, Fleisch) sind bessere Proteinquellen." },
+    { "question": "Welcher Proteinriegel hat am meisten Protein?", "answer": "Grenade Carb Killa: 22g pro Riegel. Quest Bar: 21g. Barebells: 20g. Pro 100g liegt Quest mit 35g vorne. Achte auf das Protein-Kalorien-Verhältnis." },
+    { "question": "Kann man mit Proteinriegeln abnehmen?", "answer": "Als Snack-Ersatz ja: 193 kcal mit 17g Protein sättigt besser als ein Schokoriegel mit 245 kcal. Aber nicht zusätzlich essen – dann bringen sie Extra-Kalorien." },
+    { "question": "Proteinriegel oder Proteinshake?", "answer": "Shake: mehr Protein pro Kalorie, günstiger, schneller verdaut. Riegel: praktischer unterwegs, sättigt besser (Kauen!), schmeckt mehr nach Süßigkeit. Beides hat seinen Platz." },
+    { "question": "Wie viele Proteinriegel am Tag?", "answer": "Maximal 1-2. Mehr als 2 Riegel (400 kcal) sollten nicht nötig sein. Echtes Essen ist immer die bessere Proteinquelle. Riegel sind Ergänzung, nicht Basis." }
+  ],
+  "related_foods": ["proteinshake", "nussriegel", "muesli-riegel", "quark"]
+}

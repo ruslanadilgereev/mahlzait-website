@@ -1,0 +1,52 @@
+{
+  "slug": "popcorn",
+  "name": "Popcorn",
+  "emoji": "🍿",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Popcorn Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Popcorn? Nährwerte pro 100g & Portion. Kino-Popcorn, süß, salzig & selbstgemacht im Vergleich + Tipps.",
+    "keywords": ["popcorn kalorien", "popcorn nährwerte", "kino popcorn kalorien", "popcorn kalorien pro 100g", "süßes popcorn kalorien", "popcorn gesund", "popcorn diät", "mikrowellen popcorn kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 375,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 74,
+    "fat_per_100g": 4,
+    "fiber_per_100g": 15,
+    "typical_portion_g": 40,
+    "typical_portion_name": "1 Schale"
+  },
+  "variants": [
+    { "name": "Luftgepoppt natur (40g)", "portion_g": 40, "calories": 150, "protein": 5, "carbs": 30, "fat": 2 },
+    { "name": "Kino süß klein (50g)", "portion_g": 50, "calories": 240, "protein": 3, "carbs": 35, "fat": 10 },
+    { "name": "Kino süß groß (130g)", "portion_g": 130, "calories": 624, "protein": 8, "carbs": 91, "fat": 26 },
+    { "name": "Mikrowelle Butter (40g)", "portion_g": 40, "calories": 196, "protein": 3, "carbs": 22, "fat": 11 },
+    { "name": "Salzig (40g)", "portion_g": 40, "calories": 188, "protein": 4, "carbs": 24, "fat": 9 },
+    { "name": "Karamell-Popcorn (40g)", "portion_g": 40, "calories": 192, "protein": 2, "carbs": 32, "fat": 7 },
+    { "name": "Käse-Popcorn (40g)", "portion_g": 40, "calories": 200, "protein": 5, "carbs": 20, "fat": 11 },
+    { "name": "Ungepoppte Maiskörner (40g)", "portion_g": 40, "calories": 146, "protein": 4, "carbs": 30, "fat": 2, "tip": "Basis für Selbstgemachtes" }
+  ],
+  "comparison": [
+    { "name": "Chips (40g)", "calories": 214, "emoji": "🥔" },
+    { "name": "Salzstangen (40g)", "calories": 153, "emoji": "🥨" },
+    { "name": "Nüsse gemischt (40g)", "calories": 240, "emoji": "🥜" },
+    { "name": "Reiswaffeln (40g)", "calories": 155, "emoji": "🍘" }
+  ],
+  "tips": [
+    { "title": "Selbst poppen = Kalorien sparen", "text": "Luftgepopptes Popcorn hat nur 375 kcal/100g mit 4g Fett. Kino-Popcorn hat 480 kcal mit 20g Fett – wegen des Öls und Zuckers.", "icon": "🏠" },
+    { "title": "Ballaststoff-Champion", "text": "Popcorn hat 15g Ballaststoffe/100g – mehr als die meisten Gemüsesorten! Das sättigt gut und hält den Blutzucker stabil.", "icon": "🌾" },
+    { "title": "Großes Volumen, wenig Kalorien", "text": "40g Popcorn füllen eine große Schale. 40g Chips sind eine Handvoll. Gleiche Kalorien, aber Popcorn sieht nach viel mehr aus.", "icon": "📏" },
+    { "title": "Kino-Popcorn vermeiden", "text": "Ein großes Kino-Popcorn (130g) hat über 600 kcal – fast eine komplette Mahlzeit. Lieber selbst poppen und mitnehmen.", "icon": "🎬" },
+    { "title": "Gewürze statt Butter", "text": "Paprika, Zimt, Curry oder Nährhefe statt Butter und Zucker. Voller Geschmack, Bruchteil der Kalorien.", "icon": "🌶️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Popcorn?", "answer": "Luftgepopptes Popcorn hat ca. 375 kcal pro 100g. Eine Schale (40g) hat 150 kcal. Kino-Popcorn hat deutlich mehr: 480 kcal/100g wegen Öl und Zucker." },
+    { "question": "Ist Popcorn ein guter Diät-Snack?", "answer": "Ja! Luftgepopptes Popcorn hat wenig Fett (4g/100g), viele Ballaststoffe (15g) und ein großes Volumen. 40g füllen eine große Schale für nur 150 kcal." },
+    { "question": "Wie viele Kalorien hat Kino-Popcorn?", "answer": "Ein kleines Kino-Popcorn (50g) hat ca. 240 kcal, ein großes (130g) ca. 624 kcal. Der Zucker und das Kokosöl machen den Unterschied zu selbstgemachtem." },
+    { "question": "Hat süßes oder salziges Popcorn mehr Kalorien?", "answer": "Süßes hat deutlich mehr: ca. 480 kcal/100g vs. 470 kcal/100g salzig. Aber der echte Unterschied liegt im Zucker: süß hat 25g/100g vs. 2g bei salzig." },
+    { "question": "Ist Popcorn gesünder als Chips?", "answer": "Deutlich! Luftgepopptes Popcorn hat 375 kcal und 4g Fett/100g. Chips haben 536 kcal und 35g Fett. Dazu: 15g Ballaststoffe bei Popcorn vs. 4g bei Chips." },
+    { "question": "Wie viele Kalorien hat Mikrowellen-Popcorn?", "answer": "Ca. 490 kcal pro 100g – deutlich mehr als luftgepopptes (375 kcal). Das liegt am zugesetzten Fett und oft auch Zucker in den Mikrowellenbeuteln." }
+  ],
+  "related_foods": ["chips", "salzstangen", "nussriegel", "reiswaffeln"]
+}

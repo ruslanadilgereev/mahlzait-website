@@ -1,0 +1,52 @@
+{
+  "slug": "kekse",
+  "name": "Kekse",
+  "emoji": "🍪",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Kekse Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien haben Kekse? Nährwerte pro 100g & Stück. Butterkekse, Schokokekse, Doppelkekse & Haferkekse im Vergleich + Tipps.",
+    "keywords": ["kekse kalorien", "kekse nährwerte", "butterkeks kalorien", "kekse kalorien pro stück", "schokokeks kalorien", "oreo kalorien", "kekse fett", "kekse zucker"]
+  },
+  "overview": {
+    "calories_per_100g": 480,
+    "protein_per_100g": 6,
+    "carbs_per_100g": 62,
+    "fat_per_100g": 22,
+    "fiber_per_100g": 2,
+    "typical_portion_g": 8,
+    "typical_portion_name": "1 Keks"
+  },
+  "variants": [
+    { "name": "1 Butterkeks (8g)", "portion_g": 8, "calories": 36, "protein": 0, "carbs": 5, "fat": 1 },
+    { "name": "3 Butterkekse (24g)", "portion_g": 24, "calories": 108, "protein": 1, "carbs": 16, "fat": 4 },
+    { "name": "1 Oreo (11g)", "portion_g": 11, "calories": 53, "protein": 1, "carbs": 8, "fat": 2 },
+    { "name": "3 Oreos (33g)", "portion_g": 33, "calories": 159, "protein": 2, "carbs": 24, "fat": 7 },
+    { "name": "1 Schokokeks (13g)", "portion_g": 13, "calories": 66, "protein": 1, "carbs": 8, "fat": 3 },
+    { "name": "Haferkekse (30g, ~2 Stück)", "portion_g": 30, "calories": 135, "protein": 2, "carbs": 19, "fat": 6, "tip": "Mehr Ballaststoffe" },
+    { "name": "Doppelkeks mit Füllung (15g)", "portion_g": 15, "calories": 78, "protein": 1, "carbs": 10, "fat": 4 },
+    { "name": "Vollkornkekse (30g, ~3 Stück)", "portion_g": 30, "calories": 129, "protein": 2, "carbs": 18, "fat": 5, "tip": "Etwas sättigender" }
+  ],
+  "comparison": [
+    { "name": "Schokolade Vollmilch (30g)", "calories": 161, "emoji": "🍫" },
+    { "name": "Salzstangen (30g)", "calories": 115, "emoji": "🥨" },
+    { "name": "Apfel (180g)", "calories": 94, "emoji": "🍎" },
+    { "name": "Reiswaffeln (30g)", "calories": 116, "emoji": "🍘" }
+  ],
+  "tips": [
+    { "title": "Einzeln statt aus der Packung", "text": "Wer aus der Packung isst, isst im Schnitt 5-8 Kekse (180-288 kcal). Trick: 2-3 Kekse auf einen Teller legen, Packung wegräumen.", "icon": "🍽️" },
+    { "title": "Butterkekse sind kalorienärmer", "text": "Butterkekse haben 450 kcal/100g – Schokokekse 510 kcal und Doppelkekse 520 kcal. Bei gleicher Menge sparst du bis zu 20%.", "icon": "📉" },
+    { "title": "Kekse zum Kaffee = bewusster Genuss", "text": "1 Butterkeks zum Kaffee hat nur 36 kcal. Das ist ein bewusster Genussmoment, kein Kaloriendesaster.", "icon": "☕" },
+    { "title": "Haferkekse als Alternative", "text": "Haferkekse haben ähnliche Kalorien, aber mehr Ballaststoffe und Protein. Sie sättigen besser, sodass man weniger davon isst.", "icon": "🌾" },
+    { "title": "Achtung Doppelkekse!", "text": "Doppelkekse (z.B. Oreo, Prinzen Rolle) haben durch die Cremefüllung bis zu 520 kcal/100g – 15% mehr als einfache Butterkekse.", "icon": "⚠️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Keks?", "answer": "Ein Butterkeks (8g) hat 36 kcal, ein Oreo (11g) hat 53 kcal, ein Schokokeks (13g) hat 66 kcal. Die Größe und Füllung machen den Unterschied." },
+    { "question": "Wie viele Kalorien haben Kekse pro 100g?", "answer": "Butterkekse: ca. 450 kcal. Schokokekse: ca. 510 kcal. Doppelkekse mit Füllung: ca. 520 kcal. Haferkekse: ca. 450 kcal." },
+    { "question": "Wie viele Kekse darf man am Tag essen?", "answer": "2-3 Kekse (70-110 kcal) passen in jede Ernährung. Mehr als 5 Kekse pro Tag (180+ kcal) sollten die Ausnahme sein." },
+    { "question": "Welche Kekse haben die wenigsten Kalorien?", "answer": "Einfache Butterkekse (450 kcal/100g) oder Haferkekse. Vermeide Doppelkekse mit Cremefüllung (520 kcal) und schokolierte Kekse (510 kcal)." },
+    { "question": "Wie viel Zucker haben Kekse?", "answer": "Butterkekse: ca. 22g/100g. Schokokekse: ca. 35g/100g. Oreos: ca. 40g/100g. Das sind bis zu 13 Würfelzucker pro 100g!" },
+    { "question": "Sind Kekse schlechter als Schokolade?", "answer": "Ähnlich schlecht: Kekse haben 480 kcal/100g vs. 536 kcal bei Schokolade. Kekse haben aber mehr Zucker und weniger sättigende Fette. Beides Naschwerk, beides in Maßen." }
+  ],
+  "related_foods": ["schokolade-vollmilch", "waffeln", "muffin", "brownie"]
+}

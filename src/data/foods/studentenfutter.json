@@ -1,0 +1,52 @@
+{
+  "slug": "studentenfutter",
+  "name": "Studentenfutter",
+  "emoji": "🥜",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Studentenfutter Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Studentenfutter? Nährwerte pro 100g & Handvoll. Classic, mit Schoko & Nuss-Mix im Vergleich + Snack-Tipps.",
+    "keywords": ["studentenfutter kalorien", "studentenfutter nährwerte", "studentenfutter kalorien pro 100g", "studentenfutter gesund", "studentenfutter kalorien handvoll", "trail mix kalorien", "nussmischung kalorien", "studentenfutter fett"]
+  },
+  "overview": {
+    "calories_per_100g": 484,
+    "protein_per_100g": 14,
+    "carbs_per_100g": 40,
+    "fat_per_100g": 30,
+    "fiber_per_100g": 5,
+    "typical_portion_g": 40,
+    "typical_portion_name": "1 Handvoll"
+  },
+  "variants": [
+    { "name": "1 Handvoll (40g)", "portion_g": 40, "calories": 194, "protein": 6, "carbs": 16, "fat": 12 },
+    { "name": "Halbe Tüte (100g)", "portion_g": 100, "calories": 484, "protein": 14, "carbs": 40, "fat": 30 },
+    { "name": "Ganze Tüte (200g)", "portion_g": 200, "calories": 968, "protein": 28, "carbs": 80, "fat": 60 },
+    { "name": "Classic (40g, Rosinen+Nüsse)", "portion_g": 40, "calories": 194, "protein": 6, "carbs": 16, "fat": 12 },
+    { "name": "Mit Schokolade (40g)", "portion_g": 40, "calories": 210, "protein": 5, "carbs": 20, "fat": 13 },
+    { "name": "Ohne Rosinen / Nuss-Mix (40g)", "portion_g": 40, "calories": 240, "protein": 7, "carbs": 6, "fat": 21, "tip": "Weniger Zucker" },
+    { "name": "Tropische Mischung (40g)", "portion_g": 40, "calories": 175, "protein": 3, "carbs": 22, "fat": 9 },
+    { "name": "Protein-Snack-Mix (40g)", "portion_g": 40, "calories": 200, "protein": 10, "carbs": 10, "fat": 15, "tip": "Mehr Protein" }
+  ],
+  "comparison": [
+    { "name": "Chips (40g)", "calories": 214, "emoji": "🥔" },
+    { "name": "Schokolade (40g)", "calories": 214, "emoji": "🍫" },
+    { "name": "Salzstangen (40g)", "calories": 153, "emoji": "🥨" },
+    { "name": "Müsliriegel (25g)", "calories": 103, "emoji": "🥣" }
+  ],
+  "tips": [
+    { "title": "Handvoll abzählen!", "text": "40g = eine Handvoll = 194 kcal. Aus der Tüte essen führt zu 100-200g (484-968 kcal). Immer in eine kleine Schale abfüllen.", "icon": "✋" },
+    { "title": "Gesunde Fette", "text": "Studentenfutter hat 30g Fett/100g – aber überwiegend ungesättigte Fettsäuren aus Nüssen. Besser als die gesättigten Fette in Chips.", "icon": "💚" },
+    { "title": "Rosinen beachten", "text": "Rosinen haben 300 kcal/100g und 60g Zucker. Im Classic-Studentenfutter machen sie ~40% des Gewichts aus. Wer weniger Zucker will: Nuss-Mix ohne Rosinen.", "icon": "🍇" },
+    { "title": "Gehirn-Snack", "text": "Nüsse liefern Omega-3 und Vitamin E – beides gut für die Konzentration. Daher der Name 'Studentenfutter'. Eine Handvoll zum Lernen ist perfekt.", "icon": "🧠" },
+    { "title": "Nicht als Mahlzeit-Ersatz", "text": "194 kcal ist ein Snack. Für eine Mahlzeit bräuchtest du 100g (484 kcal) – und das hat kaum Vitamine oder Ballaststoffe.", "icon": "🍽️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Studentenfutter?", "answer": "Studentenfutter hat ca. 484 kcal pro 100g. Eine Handvoll (40g) hat 194 kcal. Eine ganze 200g-Tüte hat fast 1.000 kcal." },
+    { "question": "Ist Studentenfutter gesund?", "answer": "In Maßen ja: ungesättigte Fette, Protein (14g/100g), Ballaststoffe (5g). Aber es ist sehr kalorienreich. 40g pro Tag sind ideal, mehr wird schnell zu viel." },
+    { "question": "Wie viele Kalorien hat eine Handvoll Studentenfutter?", "answer": "Eine Handvoll (ca. 40g) hat 194 kcal. Das entspricht fast einem Müsliriegel. Mehr als eine Handvoll pro Snack-Zeitpunkt ist zu viel." },
+    { "question": "Studentenfutter oder Chips – was ist besser?", "answer": "Studentenfutter: 484 kcal/100g mit 14g Protein und gesunden Fetten. Chips: 536 kcal mit 6g Protein und ungesunden Fetten. Studentenfutter ist nährstoffreicher." },
+    { "question": "Wie viel Zucker hat Studentenfutter?", "answer": "Ca. 30g/100g – hauptsächlich aus den Rosinen. Die Nuss-ohne-Rosinen-Variante hat nur 5g Zucker/100g. Der Unterschied ist enorm." },
+    { "question": "Warum hat Studentenfutter so viele Kalorien?", "answer": "Die Nüsse machen's: 100g Nüsse haben 580-650 kcal. Dazu Rosinen mit 300 kcal/100g. Die Mischung ergibt 484 kcal – energie-dicht, aber nährstoffreich." }
+  ],
+  "related_foods": ["mandeln", "walnuesse", "nussriegel", "trockenobst"]
+}

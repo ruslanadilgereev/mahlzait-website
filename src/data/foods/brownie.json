@@ -1,0 +1,52 @@
+{
+  "slug": "brownie",
+  "name": "Brownie",
+  "emoji": "🟫",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Brownie Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Brownie? Nährwerte pro 100g & Stück. Classic, mit Nüssen, Protein & vegan im Vergleich + Backtipps.",
+    "keywords": ["brownie kalorien", "brownie nährwerte", "brownie kalorien pro stück", "schokolade brownie kalorien", "brownie zucker", "brownie fett", "brownie protein", "brownie gesund"]
+  },
+  "overview": {
+    "calories_per_100g": 405,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 50,
+    "fat_per_100g": 21,
+    "fiber_per_100g": 2,
+    "typical_portion_g": 80,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    { "name": "1 Stück (80g)", "portion_g": 80, "calories": 324, "protein": 4, "carbs": 40, "fat": 17 },
+    { "name": "Kleines Stück (50g)", "portion_g": 50, "calories": 203, "protein": 3, "carbs": 25, "fat": 11 },
+    { "name": "Brownie mit Walnüssen (80g)", "portion_g": 80, "calories": 352, "protein": 5, "carbs": 38, "fat": 20 },
+    { "name": "Brownie mit Eis & Sahne", "portion_g": 150, "calories": 530, "protein": 7, "carbs": 55, "fat": 32 },
+    { "name": "Mini-Brownie (30g)", "portion_g": 30, "calories": 122, "protein": 2, "carbs": 15, "fat": 6, "tip": "Portionskontrolle" },
+    { "name": "Protein-Brownie (65g)", "portion_g": 65, "calories": 195, "protein": 14, "carbs": 20, "fat": 7, "tip": "Mehr Protein, weniger Zucker" },
+    { "name": "Veganer Brownie (80g)", "portion_g": 80, "calories": 310, "protein": 4, "carbs": 42, "fat": 14 },
+    { "name": "Double Chocolate Brownie (80g)", "portion_g": 80, "calories": 360, "protein": 5, "carbs": 42, "fat": 20 }
+  ],
+  "comparison": [
+    { "name": "Muffin (110g)", "calories": 407, "emoji": "🧁" },
+    { "name": "Schokokuchen (80g)", "calories": 310, "emoji": "🍰" },
+    { "name": "Cookies (80g, ~3 St.)", "calories": 384, "emoji": "🍪" },
+    { "name": "Zartbitterschokolade (80g)", "calories": 424, "emoji": "🍫" }
+  ],
+  "tips": [
+    { "title": "Klein schneiden!", "text": "Ein normales Stück (80g) hat 324 kcal. Ein kleines Stück (50g) nur 203 kcal. Brownies kleiner schneiden = automatisch weniger Kalorien.", "icon": "🔪" },
+    { "title": "Bohnen-Brownies ausprobieren", "text": "Schwarze Bohnen statt Mehl: weniger Kalorien, mehr Protein, mehr Ballaststoffe. Klingt seltsam, schmeckt erstaunlich gut.", "icon": "🫘" },
+    { "title": "Ohne Eis & Sahne servieren", "text": "Brownie pur: 324 kcal. Mit Eis und Sahne: 530 kcal. Das Topping bringt 200+ Extra-Kalorien. Pur genießen reicht!", "icon": "🙅" },
+    { "title": "Protein-Brownie backen", "text": "Proteinpulver, Banane, Kakao, Ei – fertig ist der Protein-Brownie mit 195 kcal und 14g Protein. Rezepte gibt's überall online.", "icon": "💪" },
+    { "title": "Einfrieren gegen Versuchung", "text": "Brownies portionsweise einfrieren. Dann muss man sie erst auftauen – das verhindert impulsives Naschen.", "icon": "❄️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Brownie?", "answer": "Ein Standard-Brownie (80g) hat ca. 324 kcal. Mit Walnüssen: 352 kcal. Mini-Brownie: 122 kcal. Mit Eis & Sahne: bis zu 530 kcal." },
+    { "question": "Wie viele Kalorien hat ein Brownie pro 100g?", "answer": "Ca. 405 kcal pro 100g. Das ist weniger als Schokolade (536 kcal), aber mehr als normaler Kuchen (300 kcal). Der hohe Butter- und Zuckeranteil macht's." },
+    { "question": "Brownie oder Muffin – was hat weniger Kalorien?", "answer": "Brownie: 324 kcal (80g). Muffin: 407 kcal (110g). Pro Stück hat der Muffin mehr, pro 100g liegt der Brownie vorne (405 vs. 370 kcal). Ähnlich ungesund." },
+    { "question": "Wie viel Zucker hat ein Brownie?", "answer": "Ca. 30g Zucker pro Brownie (80g) – 10 Würfelzucker! Plus die Schokolade und Mehl, die den Blutzucker weiter in die Höhe treiben." },
+    { "question": "Kann man Brownies kalorienärmer backen?", "answer": "Ja: Schwarze Bohnen statt Mehl, Banane statt Zucker, Proteinpulver dazu. So kommst du auf 200 kcal pro Stück mit deutlich mehr Protein." },
+    { "question": "Sind vegane Brownies kalorienärmer?", "answer": "Leicht: 310 kcal vs. 324 kcal. Kokosöl ersetzt Butter, Leinsamen ersetzen Eier. Weniger gesättigtes Fett, aber kalorisch ähnlich." }
+  ],
+  "related_foods": ["muffin", "kekse", "schokolade-zartbitter", "zimtschnecke"]
+}
