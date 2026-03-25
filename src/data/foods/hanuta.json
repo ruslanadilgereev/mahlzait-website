@@ -1,0 +1,52 @@
+{
+  "slug": "hanuta",
+  "name": "Hanuta",
+  "emoji": "🧱",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Hanuta Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat eine Hanuta? Nährwerte pro Stück & 100g. Original, Riegel, Minis & Alternativen im Vergleich + Tipps.",
+    "keywords": ["hanuta kalorien", "hanuta nährwerte", "hanuta kalorien pro stück", "hanuta zucker", "hanuta fett", "hanuta gesund", "hanuta protein", "hanuta riegel kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 534,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 51,
+    "fat_per_100g": 33,
+    "fiber_per_100g": 2,
+    "typical_portion_g": 22,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    { "name": "Hanuta Original (22g)", "portion_g": 22, "calories": 117, "protein": 2, "carbs": 11, "fat": 7 },
+    { "name": "2 Hanuta (44g)", "portion_g": 44, "calories": 235, "protein": 4, "carbs": 22, "fat": 15 },
+    { "name": "Hanuta Riegel (34.5g)", "portion_g": 35, "calories": 187, "protein": 3, "carbs": 18, "fat": 12 },
+    { "name": "Hanuta Minis (1 Stück, 10g)", "portion_g": 10, "calories": 53, "protein": 1, "carbs": 5, "fat": 3, "tip": "Mini-Portion" },
+    { "name": "Hanuta Cookies (22g, 1 Stück)", "portion_g": 22, "calories": 120, "protein": 2, "carbs": 12, "fat": 7 },
+    { "name": "5er Pack (110g)", "portion_g": 110, "calories": 587, "protein": 9, "carbs": 56, "fat": 36 },
+    { "name": "10er Familienpack (220g)", "portion_g": 220, "calories": 1175, "protein": 18, "carbs": 112, "fat": 73 },
+    { "name": "Hanuta Waffel einzeln ohne Füllung (8g)", "portion_g": 8, "calories": 32, "protein": 1, "carbs": 6, "fat": 1, "tip": "Nur die Waffel" }
+  ],
+  "comparison": [
+    { "name": "Knoppers (25g)", "calories": 133, "emoji": "🧇" },
+    { "name": "Kinderriegel (21g)", "calories": 117, "emoji": "🍫" },
+    { "name": "Milchschnitte (28g)", "calories": 106, "emoji": "🥛" },
+    { "name": "Nutella-Brot (30g Nutella)", "calories": 160, "emoji": "🍞" }
+  ],
+  "tips": [
+    { "title": "Die Haselnuss-Illusion", "text": "Hanuta wirbt mit Haselnüssen, aber der Hauptbestandteil ist Zucker und Palmfett. Die Haselnussmenge ist minimal.", "icon": "🌰" },
+    { "title": "1 Stück = 1 Snack", "text": "117 kcal pro Stück ist moderat. Das Problem: Hanuta kommt im Doppelpack (235 kcal). Disziplin bei 1 Stück bleiben.", "icon": "☝️" },
+    { "title": "Minis als Kompromiss", "text": "Hanuta Minis (10g) haben nur 53 kcal. Der Geschmack ist gleich, die Portion kontrolliert.", "icon": "🤏" },
+    { "title": "Nicht als Pausensnack für Kinder", "text": "117 kcal aus Zucker und Fett liefern keine langanhaltende Energie. Ein Vollkornbrot mit Käse macht länger satt.", "icon": "🎒" },
+    { "title": "Vergleich mit Nutella-Brot", "text": "Ein Hanuta (117 kcal) hat weniger als ein Nutella-Brot (160 kcal). Aber beide liefern hauptsächlich leere Kalorien.", "icon": "📊" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Hanuta?", "answer": "Eine Hanuta (22g) hat 117 kcal. Ein Doppelpack: 235 kcal. Der Hanuta Riegel (35g) hat 187 kcal. Pro 100g: 534 kcal." },
+    { "question": "Wie viele Kalorien hat Hanuta pro 100g?", "answer": "534 kcal pro 100g. Das ist fast identisch mit Schokolade (536 kcal). Die Kombination aus Waffel, Haselnuss-Nougat-Creme und Schokolade treibt den Wert." },
+    { "question": "Ist Hanuta gesund?", "answer": "Nein. 33g Fett und 51g Kohlenhydrate pro 100g, davon ca. 35g Zucker. Es ist eine Süßigkeit in Waffelform." },
+    { "question": "Hanuta oder Knoppers – was hat weniger Kalorien?", "answer": "Hanuta: 117 kcal (22g). Knoppers: 133 kcal (25g). Pro 100g: Hanuta 534, Knoppers 532 – fast gleich. Knoppers hat pro Stück mehr, weil es schwerer ist." },
+    { "question": "Wie viel Zucker hat eine Hanuta?", "answer": "Ca. 8g Zucker pro Stück (22g). Das sind knapp 3 Würfelzucker. Pro 100g: ca. 35g Zucker." },
+    { "question": "Woraus besteht Hanuta?", "answer": "Waffel, Haselnuss-Nougat-Creme (Zucker, Palmfett, Haselnüsse, Kakao), Milchschokolade. Hauptzutat ist Zucker, nicht Haselnüsse." }
+  ],
+  "related_foods": ["knoppers", "milchschnitte", "kinderriegel", "nutella"]
+}

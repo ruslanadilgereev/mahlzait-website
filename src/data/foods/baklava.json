@@ -1,0 +1,52 @@
+{
+  "slug": "baklava",
+  "name": "Baklava",
+  "emoji": "🍯",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Baklava Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Baklava? Nährwerte pro 100g & Stück. Pistazien, Walnuss, türkisch & mehr im Vergleich + Tipps.",
+    "keywords": ["baklava kalorien", "baklava nährwerte", "baklava kalorien pro stück", "baklava zucker", "baklava fett", "türkisches baklava kalorien", "baklava gesund", "baklava pistazie kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 428,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 47,
+    "fat_per_100g": 24,
+    "fiber_per_100g": 2,
+    "typical_portion_g": 75,
+    "typical_portion_name": "1 Stück"
+  },
+  "variants": [
+    { "name": "Klassisches Baklava mit Walnüssen (75g)", "portion_g": 75, "calories": 321, "protein": 5, "carbs": 35, "fat": 18 },
+    { "name": "Pistazien-Baklava (75g)", "portion_g": 75, "calories": 340, "protein": 6, "carbs": 34, "fat": 20 },
+    { "name": "Kleines Stück (40g)", "portion_g": 40, "calories": 171, "protein": 3, "carbs": 19, "fat": 10, "tip": "Portionskontrolle" },
+    { "name": "Baklava Rolls (60g)", "portion_g": 60, "calories": 257, "protein": 4, "carbs": 28, "fat": 14 },
+    { "name": "Baklava mit Cashews (75g)", "portion_g": 75, "calories": 330, "protein": 6, "carbs": 36, "fat": 19 },
+    { "name": "Sobiyet Baklava (80g)", "portion_g": 80, "calories": 368, "protein": 6, "carbs": 38, "fat": 22 },
+    { "name": "Schokoladen-Baklava (75g)", "portion_g": 75, "calories": 355, "protein": 5, "carbs": 38, "fat": 21 },
+    { "name": "Veganes Baklava (75g)", "portion_g": 75, "calories": 310, "protein": 5, "carbs": 37, "fat": 16, "tip": "Etwas kalorienärmer" }
+  ],
+  "comparison": [
+    { "name": "Apfelstrudel (150g)", "calories": 375, "emoji": "🥧" },
+    { "name": "Brownie (80g)", "calories": 324, "emoji": "🟫" },
+    { "name": "Schokolade Vollmilch (75g)", "calories": 402, "emoji": "🍫" },
+    { "name": "Tiramisu (100g)", "calories": 283, "emoji": "🍰" }
+  ],
+  "tips": [
+    { "title": "Klein aber fein", "text": "Ein Stück (75g) hat 321 kcal. Ein halbes Stück (40g) nur 171 kcal. Teilen lohnt sich – Baklava ist sehr intensiv im Geschmack.", "icon": "✂️" },
+    { "title": "Weniger Sirup = weniger Kalorien", "text": "Der Zuckersirup macht einen Großteil der Kalorien aus. Baklava, das weniger in Sirup getränkt ist, spart 50-80 kcal pro Stück.", "icon": "🍯" },
+    { "title": "Pistazien statt Walnüsse", "text": "Pistazien-Baklava hat etwas mehr Protein. Der Unterschied ist klein, aber Pistazien gelten als eine der nährstoffreicheren Nüsse.", "icon": "💚" },
+    { "title": "Mit schwarzem Tee genießen", "text": "Traditionell wird Baklava mit ungesüßtem Tee serviert. Der bittere Tee balanciert die Süße aus – und spart die Kalorien eines Softdrinks.", "icon": "🫖" },
+    { "title": "Nicht als Snack zwischendurch", "text": "Mit 321 kcal ist ein Stück Baklava eine Mahlzeit-Ergänzung, kein Snack. Am besten nach dem Essen als Dessert einplanen.", "icon": "🍽️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein Stück Baklava?", "answer": "Ein Stück (75g) hat ca. 321 kcal. Das entspricht etwa einem Schokoriegel. Pistazien-Baklava hat mit 340 kcal etwas mehr." },
+    { "question": "Wie viele Kalorien hat Baklava pro 100g?", "answer": "Ca. 428 kcal pro 100g. Damit liegt Baklava zwischen Schokolade (536 kcal) und Kuchen (300-350 kcal). Fett und Zucker treiben den Wert." },
+    { "question": "Ist Baklava gesund?", "answer": "Nüsse liefern gute Fette und Mineralien. Aber: Der viele Zucker und die Butter machen Baklava zu einer Kalorienbombe. In Maßen genießen." },
+    { "question": "Warum hat Baklava so viele Kalorien?", "answer": "Drei Faktoren: Filoteig mit Butter (jede Schicht wird gebuttert), Nüsse (fettreich), und Zuckersirup. Die Kombination ergibt 428 kcal/100g." },
+    { "question": "Wie viel Zucker hat Baklava?", "answer": "Ca. 30-35g Zucker pro Stück (75g). Der Großteil kommt aus dem Sirup (Zucker-Wasser-Gemisch), der nach dem Backen darüber gegossen wird." },
+    { "question": "Ist veganes Baklava kalorienärmer?", "answer": "Leicht: ca. 310 statt 321 kcal pro Stück. Pflanzliche Margarine statt Butter spart etwas Fett, aber der Zuckersirup bleibt gleich." }
+  ],
+  "related_foods": ["apfelstrudel", "churros", "germknoedel", "kaiserschmarrn"]
+}

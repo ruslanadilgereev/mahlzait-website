@@ -1,0 +1,52 @@
+{
+  "slug": "tiramisu",
+  "name": "Tiramisu",
+  "emoji": "🍰",
+  "category": "gericht",
+  "seo": {
+    "title": "Tiramisu Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Tiramisu? Nährwerte pro 100g & Portion. Klassisch, mit Beeren, vegan & light im Vergleich + Tipps.",
+    "keywords": ["tiramisu kalorien", "tiramisu nährwerte", "tiramisu kalorien pro portion", "tiramisu zucker", "tiramisu fett", "tiramisu mascarpone kalorien", "tiramisu gesund", "tiramisu protein"]
+  },
+  "overview": {
+    "calories_per_100g": 283,
+    "protein_per_100g": 5,
+    "carbs_per_100g": 30,
+    "fat_per_100g": 16,
+    "fiber_per_100g": 0.3,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    { "name": "Klassisches Tiramisu (150g)", "portion_g": 150, "calories": 425, "protein": 8, "carbs": 45, "fat": 24 },
+    { "name": "Kleine Portion (100g)", "portion_g": 100, "calories": 283, "protein": 5, "carbs": 30, "fat": 16, "tip": "Halbe Portion" },
+    { "name": "Tiramisu im Glas (120g)", "portion_g": 120, "calories": 340, "protein": 6, "carbs": 36, "fat": 19 },
+    { "name": "Erdbeer-Tiramisu (150g)", "portion_g": 150, "calories": 380, "protein": 7, "carbs": 42, "fat": 20 },
+    { "name": "Tiramisu light (150g)", "portion_g": 150, "calories": 295, "protein": 10, "carbs": 35, "fat": 12, "tip": "Mit Magerquark" },
+    { "name": "Veganes Tiramisu (150g)", "portion_g": 150, "calories": 350, "protein": 5, "carbs": 40, "fat": 18 },
+    { "name": "Tiramisu-Torte (120g Stück)", "portion_g": 120, "calories": 380, "protein": 6, "carbs": 38, "fat": 22 },
+    { "name": "Tiramisu-Eis (100g)", "portion_g": 100, "calories": 240, "protein": 4, "carbs": 28, "fat": 13 }
+  ],
+  "comparison": [
+    { "name": "Panna Cotta (130g)", "calories": 273, "emoji": "🍮" },
+    { "name": "Mousse au Chocolat (100g)", "calories": 315, "emoji": "🍫" },
+    { "name": "Crème brûlée (130g)", "calories": 325, "emoji": "🔥" },
+    { "name": "Brownie (80g)", "calories": 324, "emoji": "🟫" }
+  ],
+  "tips": [
+    { "title": "Magerquark statt Mascarpone", "text": "Mascarpone hat 460 kcal/100g, Magerquark nur 67 kcal. Mischung 50/50 spart 130 kcal pro Portion bei fast gleichem Geschmack.", "icon": "🥛" },
+    { "title": "Portionsgröße kontrollieren", "text": "Restaurant-Portionen sind oft 200g+ (566 kcal). Zu Hause in kleinen Gläsern (120g) servieren – sieht hübsch aus und spart Kalorien.", "icon": "🥃" },
+    { "title": "Weniger Zucker, mehr Kakao", "text": "Den Zucker um ein Drittel reduzieren und mehr Kakaopulver verwenden. Der Espresso und Kakao geben genug Geschmack.", "icon": "☕" },
+    { "title": "Erdbeer-Variante im Sommer", "text": "Erdbeer-Tiramisu hat 45 kcal weniger pro Portion als die klassische Version. Die Beeren ersetzen teil des Zuckers.", "icon": "🍓" },
+    { "title": "Kein Alkohol = weniger Kalorien", "text": "Amaretto oder Marsala im Tiramisu bringen 30-50 Extra-Kalorien pro Portion. Ohne Alkohol schmeckt's trotzdem – und ist kinderfreundlich.", "icon": "🚫" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Tiramisu?", "answer": "Eine Portion (150g) hat ca. 425 kcal. Pro 100g sind es 283 kcal. Das liegt hauptsächlich an Mascarpone, Zucker und Löffelbiskuits." },
+    { "question": "Wie viele Kalorien hat Tiramisu pro 100g?", "answer": "Ca. 283 kcal pro 100g. Damit liegt Tiramisu im Mittelfeld der Desserts – weniger als Baklava (428 kcal), aber mehr als Obstsalat (50 kcal)." },
+    { "question": "Ist Tiramisu sehr ungesund?", "answer": "Als Dessert in normalen Mengen (150g) ist es okay. Problematisch wird's bei großen Portionen. Mascarpone liefert viel gesättigtes Fett, der Zucker treibt den Kalorienwert." },
+    { "question": "Kann man Tiramisu kalorienärmer machen?", "answer": "Ja: Magerquark statt Mascarpone, weniger Zucker, ohne Alkohol. So kommst du auf ca. 295 kcal pro Portion statt 425 kcal." },
+    { "question": "Wie viel Zucker hat Tiramisu?", "answer": "Ca. 25-30g Zucker pro Portion (150g). Der Zucker kommt aus der Creme, den Löffelbiskuits und optional dem Likör." },
+    { "question": "Ist Tiramisu aus rohen Eiern gefährlich?", "answer": "Traditionelles Tiramisu verwendet rohe Eigelbe. Für Schwangere, Kinder und Immungeschwächte gibt es Rezepte ohne rohe Eier oder mit pasteurisierten Eiern." }
+  ],
+  "related_foods": ["panna-cotta", "creme-brulee", "mousse-au-chocolat", "kaiserschmarrn"]
+}
