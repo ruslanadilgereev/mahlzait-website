@@ -30,6 +30,68 @@ const authorPersonSchema = {
 
 <Layout {...defaultTemplateConfig} seo={seo}>
   <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wie lange dauert es, 10 kg abzunehmen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bei einem gesunden Kaloriendefizit von 500–700 kcal pro Tag verlierst du etwa 0,5–1 kg pro Woche. Für 10 kg bedeutet das realistisch 10–20 Wochen (ca. 2,5–5 Monate). Crash-Diäten versprechen schnellere Ergebnisse, führen aber meist zum Jo-Jo-Effekt."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Welches Kaloriendefizit ist zum Abnehmen optimal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ein moderates Defizit von 500–700 kcal pro Tag gilt als ideal. Damit nimmst du stetig ab, ohne Muskelmasse zu verlieren oder Heißhunger zu riskieren. Die Kalorienzufuhr sollte nicht unter 1200 kcal (Frauen) bzw. 1500 kcal (Männer) fallen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Warum nehme ich nicht mehr ab (Gewichtsplateau)?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gewichtsplateaus sind normal. Dein Körper passt den Stoffwechsel an das niedrigere Gewicht an. Mögliche Lösungen: Kalorienzufuhr um 100–150 kcal anpassen, Krafttraining intensivieren oder die Makronährstoffverteilung optimieren (mehr Eiweiß, weniger einfache Kohlenhydrate)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Ist die 7700-kcal-Regel genau?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Die Regel ist eine gute Näherung: Um 1 kg Körperfett abzubauen, musst du ca. 7700 kcal einsparen. In der Praxis schwankt dieser Wert je nach Körperzusammensetzung, Hormonstatus und Aktivitätsniveau."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie viel sollte ich pro Woche maximal abnehmen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ernährungsexperten empfehlen 0,5–1 kg pro Woche (ca. 1–1,5 % des Körpergewichts). Zu schnelles Abnehmen fördert Muskelabbau und senkt den Grundumsatz, was langfristig das Halten des Gewichts erschwert."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Nehmen Männer schneller ab als Frauen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja, in der Regel schon. Männer haben im Durchschnitt mehr Muskelmasse und dadurch einen höheren Grundumsatz — sie verbrennen also auch im Ruhezustand mehr Kalorien."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wie halte ich mein Gewicht nach dem Abnehmen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Um dein Gewicht zu halten, solltest du deinen Kalorienbedarf auf Erhaltungsniveau anpassen, weiterhin regelmäßig Sport treiben und deine Ernährung langfristig tracken."
+        }
+      }
+    ]
+  })} />
   <div class="container mx-auto px-4 py-12">
     <div class="text-center mb-12">
       <h1 class="text-4xl font-black mb-4">Wann erreichst du dein Wunschgewicht? 🎯</h1>
@@ -44,13 +106,51 @@ const authorPersonSchema = {
       <h2>Wie funktioniert der Rechner?</h2>
       <p>
         Der Rechner basiert auf der <strong>7700-kcal-Regel</strong>. Um 1 Kilogramm Körperfett zu verlieren, musst du rechnerisch etwa 7700 Kalorien einsparen.
+        Dafür brauchst du zunächst deinen <a href="/grundumsatz-rechner">Grundumsatz</a> und deinen <a href="/kalorienbedarf-berechnen">täglichen Kalorienbedarf</a>, um ein realistisches Defizit festzulegen.
       </p>
       <ul>
-        <li><strong>Tägliches Defizit:</strong> Die Differenz zwischen deinem Verbrauch und dem, was du isst.</li>
+        <li><strong>Tägliches Defizit:</strong> Die Differenz zwischen deinem Verbrauch und dem, was du isst. Berechne dein optimales <a href="/kaloriendefizit-berechnen">Kaloriendefizit</a> hier.</li>
         <li><strong>Dauer:</strong> (Gewichtsdifferenz × 7700) ÷ Defizit = Tage bis zum Ziel.</li>
       </ul>
       <p>
-        Beachte: Dein Stoffwechsel passt sich mit der Zeit an. Der Rechner gibt dir einen linearen Richtwert, der als Motivation dient. Um das Datum wirklich zu treffen, hilft nur eines: <strong>Konsequentes Tracking.</strong>
+        Beachte: Dein Stoffwechsel passt sich mit der Zeit an. Der Rechner gibt dir einen linearen Richtwert, der als Motivation dient. Um das Datum wirklich zu treffen, hilft nur eines: <strong>Konsequentes <a href="/kalorien-zaehlen">Kalorienzählen</a></strong> — am besten mit einer passenden <a href="/kalorien-zaehlen-app">Kalorienzähler-App</a>.
+      </p>
+
+      <h2>Häufig gestellte Fragen</h2>
+
+      <h3>Wie lange dauert es, 10 kg abzunehmen?</h3>
+      <p>
+        Bei einem gesunden Kaloriendefizit von 500–700 kcal pro Tag verlierst du etwa 0,5–1 kg pro Woche. Für 10 kg bedeutet das realistisch 10–20 Wochen (ca. 2,5–5 Monate). Crash-Diäten versprechen schnellere Ergebnisse, führen aber meist zum Jo-Jo-Effekt.
+      </p>
+
+      <h3>Welches Kaloriendefizit ist zum Abnehmen optimal?</h3>
+      <p>
+        Ein moderates Defizit von 500–700 kcal pro Tag gilt als ideal. Damit nimmst du stetig ab, ohne Muskelmasse zu verlieren oder Heißhunger zu riskieren. Wichtig: Deine Kalorienzufuhr sollte nicht unter 1200 kcal (Frauen) bzw. 1500 kcal (Männer) fallen. Berechne dein persönliches <a href="/kaloriendefizit-berechnen">Kaloriendefizit</a> mit unserem Rechner.
+      </p>
+
+      <h3>Warum nehme ich nicht mehr ab (Gewichtsplateau)?</h3>
+      <p>
+        Gewichtsplateaus sind normal. Dein Körper passt den Stoffwechsel an das niedrigere Gewicht an. Mögliche Lösungen: Kalorienzufuhr um 100–150 kcal anpassen, Krafttraining intensivieren oder die <a href="/makros-berechnen">Makronährstoffverteilung</a> optimieren (mehr Eiweiß, weniger einfache Kohlenhydrate).
+      </p>
+
+      <h3>Ist die 7700-kcal-Regel genau?</h3>
+      <p>
+        Die Regel ist eine gute Näherung: Um 1 kg Körperfett abzubauen, musst du ca. 7700 kcal einsparen. In der Praxis schwankt dieser Wert je nach Körperzusammensetzung, Hormonstatus und Aktivitätsniveau. Besonders zu Beginn einer Diät geht auch Wasser verloren, was den Gewichtsverlust anfangs schneller erscheinen lässt.
+      </p>
+
+      <h3>Wie viel sollte ich pro Woche maximal abnehmen?</h3>
+      <p>
+        Ernährungsexperten empfehlen 0,5–1 kg pro Woche (ca. 1–1,5 % des Körpergewichts). Bei starkem Übergewicht kann es anfangs etwas mehr sein. Zu schnelles Abnehmen fördert Muskelabbau und senkt den <a href="/grundumsatz-rechner">Grundumsatz</a>, was langfristig das Halten des Gewichts erschwert.
+      </p>
+
+      <h3>Nehmen Männer schneller ab als Frauen?</h3>
+      <p>
+        Ja, in der Regel schon. Männer haben im Durchschnitt mehr Muskelmasse und dadurch einen höheren Grundumsatz — sie verbrennen also auch im Ruhezustand mehr Kalorien. Das bedeutet nicht, dass Frauen langsamer Erfolge erzielen, aber die Zeitplanung sollte realistisch angepasst werden.
+      </p>
+
+      <h3>Wie halte ich mein Gewicht nach dem Abnehmen?</h3>
+      <p>
+        Der häufigste Fehler: Nach der Diät zurück zu alten Essgewohnheiten. Um dein Gewicht zu halten, solltest du deinen <a href="/kalorienbedarf-berechnen">Kalorienbedarf</a> auf Erhaltungsniveau anpassen, weiterhin regelmäßig Sport treiben und deine Ernährung langfristig tracken. Auch nach dem Zielgewicht hilft konsequentes Tracking dabei, nicht wieder zuzunehmen.
       </p>
     </div>
   </div>
