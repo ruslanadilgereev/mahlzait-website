@@ -46,6 +46,8 @@ export type TemplateConfig = {
             facebook?: string | undefined;
             instagram?: string | undefined;
             twitter?: string | undefined;
+            pinterest?: string | undefined;
+            tiktok?: string | undefined;
         } | undefined;
         calculatorLinks?: {
             title: string;

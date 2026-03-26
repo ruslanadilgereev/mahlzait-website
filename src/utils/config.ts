@@ -24,10 +24,11 @@ const templateConfig: TemplateConfig = {
       privacyPolicy: true,
     },
     socials: {
-      // Füge hier deine echten Social-Media-Links ein, oder entferne sie
-      // instagram: "https://instagram.com/mahlzait",
-      // facebook: "https://facebook.com/mahlzait",
-      // twitter: "https://x.com/mahlzait",
+      instagram: "https://www.instagram.com/mahlzait/",
+      facebook: "https://www.facebook.com/mahlzait",
+      twitter: "https://x.com/mahlzait",
+      pinterest: "https://www.pinterest.com/mahlzait/",
+      tiktok: "https://www.tiktok.com/@mahlzait",
     },
     links: [
       { href: "/#features", title: "Funktionen" },

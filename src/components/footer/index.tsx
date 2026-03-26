@@ -3,6 +3,8 @@ import { ConfigContext } from "../../utils/configContext";
 import InstagramLogo from "./svgs/instagram";
 import FacebookLogo from "./svgs/facebook";
 import TwitterLogo from "./svgs/twitter";
+import PinterestLogo from "./svgs/pinterest";
+import TikTokLogo from "./svgs/tiktok";
 import { motion } from "framer-motion";
 
 function Footer() {
@@ -123,6 +125,34 @@ function Footer() {
                 href={socials.twitter}
               >
                 <TwitterLogo />
+              </motion.a>
+            )}
+            {socials?.pinterest && (
+              <motion.a
+                variants={{
+                  hidden: { opacity: 0, x: "-100%" },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ delay: 1.0 }}
+                className="w-8 h-8 hover:text-primary/50"
+                target="_blank"
+                href={socials.pinterest}
+              >
+                <PinterestLogo />
+              </motion.a>
+            )}
+            {socials?.tiktok && (
+              <motion.a
+                variants={{
+                  hidden: { opacity: 0, x: "-100%" },
+                  visible: { opacity: 1, x: 0 },
+                }}
+                transition={{ delay: 1.25 }}
+                className="w-8 h-8 hover:text-primary/50"
+                target="_blank"
+                href={socials.tiktok}
+              >
+                <TikTokLogo />
               </motion.a>
             )}
           </div>
