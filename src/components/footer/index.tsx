@@ -18,22 +18,38 @@ function Footer() {
       <motion.div
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.4 }}
+        viewport={{ once: true, amount: 0.2 }}
         className="max-w-screen-lg mx-auto mt-12"
       >
-        <div className="grid gap-8 md:grid-cols-3 mb-8">
-          {/* Main Links */}
-          <nav className="flex flex-col items-start gap-2">
-            <span className="text-sm uppercase opacity-60 mb-2">Navigation</span>
+        {/* Top Section: Brand + Description */}
+        <div className="mb-10 text-center md:text-left">
+          <motion.h2
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+            transition={{ delay: 0.1 }}
+            className="text-2xl font-bold text-primary mb-2"
+          >
+            Mahlzait
+          </motion.h2>
+          <motion.p
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
+            transition={{ delay: 0.2 }}
+            className="text-sm opacity-70 max-w-md"
+          >
+            Der KI-Kalorienzähler aus Deutschland. Foto machen, Kalorien erkennen — einfach, schnell und DSGVO-konform.
+          </motion.p>
+        </div>
+
+        {/* Links Grid */}
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 mb-10">
+          {/* Navigation */}
+          <nav className="flex flex-col gap-2">
+            <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">Navigation</span>
             {links.map(({ title, href }, index) => (
               <motion.a
                 key={index}
-                variants={{
-                  hidden: { opacity: 0, x: "-50px" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: index * 0.1 }}
-                className="text-lg font-bold link no-underline text-primary hover:text-primary/50"
+                variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                transition={{ delay: index * 0.05 + 0.1 }}
+                className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                 href={href}
               >
                 {title}
@@ -41,19 +57,16 @@ function Footer() {
             ))}
           </nav>
 
-          {/* Calculator Links */}
+          {/* Rechner / Tools */}
           {calculatorLinks && calculatorLinks.length > 0 && (
-            <nav className="flex flex-col items-start gap-2">
-              <span className="text-sm uppercase opacity-60 mb-2">Rechner</span>
+            <nav className="flex flex-col gap-2">
+              <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">Tools & Rechner</span>
               {calculatorLinks.map(({ title, href }, index) => (
                 <motion.a
                   key={index}
-                  variants={{
-                    hidden: { opacity: 0, x: "-50px" },
-                    visible: { opacity: 1, x: 0 },
-                  }}
-                  transition={{ delay: index * 0.1 + 0.2 }}
-                  className="text-lg font-bold link no-underline text-primary hover:text-primary/50"
+                  variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ delay: index * 0.05 + 0.2 }}
+                  className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                   href={href}
                 >
                   {title}
@@ -62,19 +75,16 @@ function Footer() {
             </nav>
           )}
 
-          {/* App Links */}
+          {/* App & Wissen */}
           {appLinks && appLinks.length > 0 && (
-            <nav className="flex flex-col items-start gap-2">
-              <span className="text-sm uppercase opacity-60 mb-2">App & Features</span>
+            <nav className="flex flex-col gap-2">
+              <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">App & Wissen</span>
               {appLinks.map(({ title, href }, index) => (
                 <motion.a
                   key={index}
-                  variants={{
-                    hidden: { opacity: 0, x: "-50px" },
-                    visible: { opacity: 1, x: 0 },
-                  }}
-                  transition={{ delay: index * 0.1 + 0.4 }}
-                  className="text-lg font-bold link no-underline text-primary hover:text-primary/50"
+                  variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ delay: index * 0.05 + 0.3 }}
+                  className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                   href={href}
                 >
                   {title}
@@ -82,89 +92,15 @@ function Footer() {
               ))}
             </nav>
           )}
-        </div>
-        <aside className="flex flex-col items-center mt-8 w-full overflow-hidden lg:overflow-visible">
-          <div className="flex items-center justify-center gap-4 w-full text-primary mb-6">
-            {socials?.facebook && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 0.25 }}
-                className="w-5 h-5 hover:text-primary/50 transition-colors"
-                target="_blank"
-                href={socials.facebook}
-              >
-                <FacebookLogo />
-              </motion.a>
-            )}
-            {socials?.instagram && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 0.5 }}
-                className="w-5 h-5 hover:text-primary/50 transition-colors"
-                target="_blank"
-                href={socials.instagram}
-              >
-                <InstagramLogo />
-              </motion.a>
-            )}
-            {socials?.twitter && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 0.75 }}
-                className="w-5 h-5 hover:text-primary/50 transition-colors"
-                target="_blank"
-                href={socials.twitter}
-              >
-                <TwitterLogo />
-              </motion.a>
-            )}
-            {socials?.pinterest && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 1.0 }}
-                className="w-5 h-5 hover:text-primary/50 transition-colors"
-                target="_blank"
-                href={socials.pinterest}
-              >
-                <PinterestLogo />
-              </motion.a>
-            )}
-            {socials?.tiktok && (
-              <motion.a
-                variants={{
-                  hidden: { opacity: 0, x: "-100%" },
-                  visible: { opacity: 1, x: 0 },
-                }}
-                transition={{ delay: 1.25 }}
-                className="w-5 h-5 hover:text-primary/50 transition-colors"
-                target="_blank"
-                href={socials.tiktok}
-              >
-                <TikTokLogo />
-              </motion.a>
-            )}
-          </div>
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
+
+          {/* Rechtliches */}
+          <nav className="flex flex-col gap-2">
+            <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">Rechtliches</span>
             {legalLinks.termsAndConditions && (
               <motion.a
-                variants={{
-                  hidden: { opacity: 0, scale: 0.4 },
-                  visible: { opacity: 1, scale: 1 },
-                }}
-                transition={{ delay: 0.25 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+                variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                transition={{ delay: 0.4 }}
+                className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                 href="/nutzungsbedingungen"
               >
                 Nutzungsbedingungen
@@ -172,59 +108,44 @@ function Footer() {
             )}
             {legalLinks.privacyPolicy && (
               <motion.a
-                variants={{
-                  hidden: { opacity: 0, scale: 0.4 },
-                  visible: { opacity: 1, scale: 1 },
-                }}
-                transition={{ delay: 0.5 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+                variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                transition={{ delay: 0.45 }}
+                className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                 href="/datenschutz"
               >
                 Datenschutz
               </motion.a>
             )}
             <motion.a
-              variants={{
-                hidden: { opacity: 0, scale: 0.4 },
-                visible: { opacity: 1, scale: 1 },
-              }}
-              transition={{ delay: 0.6 }}
-              className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+              variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ delay: 0.5 }}
+              className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
               href="/impressum"
             >
               Impressum
             </motion.a>
             <motion.a
-              variants={{
-                hidden: { opacity: 0, scale: 0.4 },
-                visible: { opacity: 1, scale: 1 },
-              }}
-              transition={{ delay: 0.7 }}
-              className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+              variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ delay: 0.55 }}
+              className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
               href="/agb"
             >
               AGB
             </motion.a>
             {legalLinks.cookiesPolicy && (
               <motion.a
-                variants={{
-                  hidden: { opacity: 0, scale: 0.4 },
-                  visible: { opacity: 1, scale: 1 },
-                }}
-                transition={{ delay: 0.75 }}
-                className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap"
+                variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                transition={{ delay: 0.6 }}
+                className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                 href="/cookies-policy"
               >
                 Cookies
               </motion.a>
             )}
             <motion.button
-              variants={{
-                hidden: { opacity: 0, scale: 0.4 },
-                visible: { opacity: 1, scale: 1 },
-              }}
-              transition={{ delay: 0.8 }}
-              className="font-bold text-primary hover:text-primary/50 lg:whitespace-nowrap cursor-pointer bg-transparent border-none"
+              variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+              transition={{ delay: 0.65 }}
+              className="text-sm text-left text-primary/80 hover:text-primary transition-colors cursor-pointer bg-transparent border-none p-0"
               onClick={() => {
                 if (typeof window !== "undefined" && (window as any).revokeCookieConsent) {
                   (window as any).revokeCookieConsent();
@@ -232,20 +153,49 @@ function Footer() {
               }}
               title="Cookie-Einstellungen widerrufen"
             >
-              Opt-Out
+              Cookie-Einstellungen
             </motion.button>
+          </nav>
+        </div>
+
+        {/* Divider */}
+        <div className="border-t border-primary/10 pt-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            {/* Social Icons */}
+            <div className="flex items-center gap-5 text-primary/60">
+              {socials?.instagram && (
+                <a className="w-5 h-5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" href={socials.instagram} aria-label="Instagram">
+                  <InstagramLogo />
+                </a>
+              )}
+              {socials?.tiktok && (
+                <a className="w-5 h-5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" href={socials.tiktok} aria-label="TikTok">
+                  <TikTokLogo />
+                </a>
+              )}
+              {socials?.facebook && (
+                <a className="w-5 h-5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" href={socials.facebook} aria-label="Facebook">
+                  <FacebookLogo />
+                </a>
+              )}
+              {socials?.pinterest && (
+                <a className="w-5 h-5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" href={socials.pinterest} aria-label="Pinterest">
+                  <PinterestLogo />
+                </a>
+              )}
+              {socials?.twitter && (
+                <a className="w-5 h-5 hover:text-primary transition-colors" target="_blank" rel="noopener noreferrer" href={socials.twitter} aria-label="X (Twitter)">
+                  <TwitterLogo />
+                </a>
+              )}
+            </div>
+
+            {/* Copyright */}
+            <p className="text-xs opacity-50 text-center md:text-right">
+              © {new Date().getFullYear()} Mahlzait · Made with ❤️ in Germany
+            </p>
           </div>
-          <motion.p
-            variants={{
-              hidden: { opacity: 0, scale: 0.4 },
-              visible: { opacity: 1, scale: 1 },
-            }}
-            transition={{ delay: 1 }}
-            className="mt-2 text-sm opacity-70 text-center"
-          >
-            Alle Rechte vorbehalten © {new Date().getFullYear()} · Letzte Aktualisierung: März 2026
-          </motion.p>
-        </aside>
+        </div>
       </motion.div>
     </footer>
   );
