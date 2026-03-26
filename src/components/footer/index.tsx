@@ -83,8 +83,8 @@ function Footer() {
             </nav>
           )}
         </div>
-        <aside className="flex flex-col items-center justify-between mt-4 w-full overflow-hidden md:flex-row lg:overflow-visible">
-          <div className="flex items-center gap-3 w-full text-primary">
+        <aside className="flex flex-col items-center mt-8 w-full overflow-hidden lg:overflow-visible">
+          <div className="flex items-center justify-center gap-4 w-full text-primary mb-6">
             {socials?.facebook && (
               <motion.a
                 variants={{
@@ -92,7 +92,7 @@ function Footer() {
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ delay: 0.25 }}
-                className="w-8 h-8 hover:text-primary/50"
+                className="w-5 h-5 hover:text-primary/50 transition-colors"
                 target="_blank"
                 href={socials.facebook}
               >
@@ -106,7 +106,7 @@ function Footer() {
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ delay: 0.5 }}
-                className="w-8 h-8 hover:text-primary/50"
+                className="w-5 h-5 hover:text-primary/50 transition-colors"
                 target="_blank"
                 href={socials.instagram}
               >
@@ -120,7 +120,7 @@ function Footer() {
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ delay: 0.75 }}
-                className="w-8 h-8 hover:text-primary/50"
+                className="w-5 h-5 hover:text-primary/50 transition-colors"
                 target="_blank"
                 href={socials.twitter}
               >
@@ -134,7 +134,7 @@ function Footer() {
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ delay: 1.0 }}
-                className="w-8 h-8 hover:text-primary/50"
+                className="w-5 h-5 hover:text-primary/50 transition-colors"
                 target="_blank"
                 href={socials.pinterest}
               >
@@ -148,7 +148,7 @@ function Footer() {
                   visible: { opacity: 1, x: 0 },
                 }}
                 transition={{ delay: 1.25 }}
-                className="w-8 h-8 hover:text-primary/50"
+                className="w-5 h-5 hover:text-primary/50 transition-colors"
                 target="_blank"
                 href={socials.tiktok}
               >
@@ -156,7 +156,7 @@ function Footer() {
               </motion.a>
             )}
           </div>
-          <div className="flex gap-4 mt-8 mb-4 md:m-0">
+          <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
             {legalLinks.termsAndConditions && (
               <motion.a
                 variants={{
@@ -241,7 +241,7 @@ function Footer() {
               visible: { opacity: 1, scale: 1 },
             }}
             transition={{ delay: 1 }}
-            className="mt-0.5 md:ml-4 md:whitespace-nowrap"
+            className="mt-2 text-sm opacity-70 text-center"
           >
             Alle Rechte vorbehalten © {new Date().getFullYear()} · Letzte Aktualisierung: März 2026
           </motion.p>
