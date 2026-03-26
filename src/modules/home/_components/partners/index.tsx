@@ -113,7 +113,7 @@ function Partners() {
               {/* Content */}
               <div className="flex-1 text-center md:text-left">
                 <h3 className="text-xl md:text-2xl font-bold text-neutral-content mb-2">
-                  🇪🇺 100% DSGVO-konform
+                  100% DSGVO-konform
                 </h3>
                 <p className="text-neutral-content/70 text-sm md:text-base mb-4">
                   Mahlzait ist 100% DSGVO-konform. Alle Daten werden auf Servern in der EU gespeichert.

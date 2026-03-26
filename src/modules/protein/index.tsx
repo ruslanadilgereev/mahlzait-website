@@ -231,7 +231,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
 
           {/* Quick Reference Table - Featured Snippet Target */}
           <div className="overflow-x-auto max-w-3xl mx-auto mb-12">
-            <h2 className="text-xl font-bold text-center mb-4">📊 Wie viel Protein am Tag? Schnellübersicht</h2>
+            <h2 className="text-xl font-bold text-center mb-4">Wie viel Protein am Tag? Schnellübersicht</h2>
             <table className="table bg-base-100 shadow-xl text-center">
               <thead>
                 <tr className="bg-primary/10">

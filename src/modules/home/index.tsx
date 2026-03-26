@@ -13,12 +13,13 @@ import Testimonials from "./_components/testimonials";
 import LiveDemo from "./_components/liveDemo";
 import ComparisonTable from "./_components/comparisonTable";
 import EntityDefinition from "./_components/entityDefinition";
+import PopularFoods from "./_components/popularFoods";
 
 function MedicalDisclaimer() {
   return (
     <section className="max-w-screen-lg mx-auto px-4 py-6">
       <div className="bg-base-200/50 rounded-xl p-6 text-sm text-base-content/70 space-y-3">
-        <h3 className="font-semibold text-base text-base-content/90">⚕️ Wichtiger Hinweis</h3>
+        <h3 className="font-semibold text-base text-base-content/90">Wichtiger Hinweis</h3>
         <p>
           Mahlzait ist ein Hilfsmittel zur Ernährungsdokumentation und ersetzt keine ärztliche Beratung.
           Bei gesundheitlichen Beschwerden, Vorerkrankungen (z.&nbsp;B. Diabetes, Essstörungen) oder Unsicherheiten
@@ -59,6 +60,7 @@ function Home({ config }: Props) {
         <HowItWorks />
         <Pricing />
         <Testimonials />
+        <PopularFoods />
         <MedicalDisclaimer />
         <Faq />
         <AppBanner />

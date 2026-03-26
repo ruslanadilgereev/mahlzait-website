@@ -326,7 +326,7 @@ export default function LiveDemo() {
                         className="space-y-6"
                     >
                         <div>
-                            <h3 className="text-2xl font-bold mb-4">Probier's aus! 🚀</h3>
+                            <h3 className="text-2xl font-bold mb-4">Probier's aus!</h3>
                             <p className="text-base-content/70 mb-6">
                                 Der Agent nutzt echte AI und verbindet sich mit deinem Backend. Stelle Fragen oder tracke Mahlzeiten.
                             </p>

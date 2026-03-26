@@ -338,7 +338,7 @@ function CheatDayRechnerPage({ config }: Props) {
                   {/* Weekly Impact */}
                   <div className="card bg-base-200">
                     <div className="card-body">
-                      <h3 className="font-bold text-lg">📊 Wöchentliche Bilanz</h3>
+                      <h3 className="font-bold text-lg">Wöchentliche Bilanz</h3>
                       <div className="grid grid-cols-2 gap-4 mt-2">
                         <div>
                           <p className="text-sm opacity-70">Durchschnitt/Tag</p>

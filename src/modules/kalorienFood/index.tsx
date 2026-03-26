@@ -88,7 +88,7 @@ function KalorienFoodPage({ config, food }: Props) {
           <header className="text-center mb-12">
             <span className="badge badge-primary badge-lg mb-4">Kostenloser Rechner</span>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              {food.emoji} {food.name} Kalorien Rechner
+              {food.name}: Kalorien & Nährwerte
             </h1>
             <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
@@ -190,7 +190,7 @@ function KalorienFoodPage({ config, food }: Props) {
           {/* Nährwerttabelle pro 100g */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8">
-              <h2 className="text-2xl font-bold mb-4">📊 Nährwerte pro 100g</h2>
+              <h2 className="text-2xl font-bold mb-4">Nährwerte pro 100g</h2>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <thead>
@@ -235,7 +235,7 @@ function KalorienFoodPage({ config, food }: Props) {
           {/* Varianten Vergleich */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8">
-              <h2 className="text-2xl font-bold mb-4">🔄 Varianten im Vergleich</h2>
+              <h2 className="text-2xl font-bold mb-4">Varianten im Vergleich</h2>
               <div className="overflow-x-auto">
                 <table className="table w-full">
                   <thead>
@@ -269,7 +269,7 @@ function KalorienFoodPage({ config, food }: Props) {
           {/* Kalorienvergleich */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8">
-              <h2 className="text-2xl font-bold mb-4">⚖️ Kalorienvergleich</h2>
+              <h2 className="text-2xl font-bold mb-4">Kalorienvergleich</h2>
               <p className="opacity-70 mb-4">
                 So schneidet {food.name} im Vergleich zu anderen Lebensmitteln ab (pro Portion):
               </p>
@@ -304,7 +304,7 @@ function KalorienFoodPage({ config, food }: Props) {
           {/* Tipps */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8">
-              <h2 className="text-2xl font-bold mb-4">💡 Tipps: Kalorien sparen bei {food.name}</h2>
+              <h2 className="text-2xl font-bold mb-4">Tipps: Kalorien sparen bei {food.name}</h2>
               <div className="space-y-4">
                 {food.tips.map((tip, i) => (
                   <div key={i} className="flex gap-4 p-4 bg-base-200 rounded-xl">
@@ -322,7 +322,7 @@ function KalorienFoodPage({ config, food }: Props) {
           {/* FAQ */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8">
-              <h2 className="text-2xl font-bold mb-4">❓ Häufige Fragen zu {food.name} Kalorien</h2>
+              <h2 className="text-2xl font-bold mb-4">Häufige Fragen zu {food.name} Kalorien</h2>
               <div className="space-y-2">
                 {food.faq.map((item, i) => (
                   <div key={i} className="collapse collapse-arrow bg-base-200">
@@ -347,7 +347,7 @@ function KalorienFoodPage({ config, food }: Props) {
           {/* Related Foods */}
           {food.related_foods && food.related_foods.length > 0 && (
             <div className="max-w-2xl mx-auto mb-12">
-              <h2 className="text-2xl font-bold mb-4">🔗 Ähnliche Lebensmittel</h2>
+              <h2 className="text-2xl font-bold mb-4">Ähnliche Lebensmittel</h2>
               <div className="flex flex-wrap gap-2">
                 {food.related_foods.map((slug: string) => (
                   <a
@@ -370,7 +370,7 @@ function KalorienFoodPage({ config, food }: Props) {
           {/* App CTA */}
           <div className="card bg-primary text-primary-content shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8 text-center">
-              <h2 className="text-2xl font-bold mb-2">{food.emoji} {food.name} tracken mit Mahlzait</h2>
+              <h2 className="text-2xl font-bold mb-2">{food.name} tracken mit Mahlzait</h2>
               <p className="opacity-90 mb-4">
                 Fotografiere dein Essen und erhalte sofort alle Nährwerte. KI-gestützt, kostenlos, auf Deutsch.
               </p>
