@@ -14,6 +14,8 @@
     .login input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #1e293b; color: #e2e8f0; font-size: 16px; margin: 12px 0; }
     .login button { padding: 12px 32px; border-radius: 8px; border: none; background: #009688; color: white; font-size: 16px; cursor: pointer; }
     .login button:hover { background: #00796b; }
+    .login button:disabled { background: #334155; cursor: wait; }
+    .loading { text-align: center; padding: 40px; color: #94a3b8; font-size: 18px; }
     .dashboard { display: none; }
     .stats { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 20px; }
     .stat { background: #1e293b; border-radius: 12px; padding: 16px 24px; min-width: 150px; }
@@ -101,13 +103,21 @@
     const token = document.getElementById('token-input').value.trim();
     if (!token) return;
 
+    const btn = document.querySelector('.login button');
+    btn.disabled = true;
+    btn.textContent = 'Laden...';
+    document.getElementById('login-error').style.display = 'none';
+
     try {
       const resp = await fetch(`${API}?token=${encodeURIComponent(token)}`);
       if (resp.status === 401) {
         document.getElementById('login-error').textContent = 'Falscher Token';
         document.getElementById('login-error').style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Login';
         return;
       }
+      if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
       allData = await resp.json();
 
       // Save token
@@ -133,6 +143,8 @@
     } catch (e) {
       document.getElementById('login-error').textContent = 'Fehler: ' + e.message;
       document.getElementById('login-error').style.display = 'block';
+      btn.disabled = false;
+      btn.textContent = 'Login';
     }
   }
 
