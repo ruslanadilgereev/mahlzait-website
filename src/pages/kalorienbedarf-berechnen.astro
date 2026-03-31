@@ -5,84 +5,115 @@ import defaultTemplateConfig from "utils/config";
 import KalorienbedarfPage from "@modules/kalorienbedarf";
 
 const seo = {
-  title: "Kalorienbedarf berechnen - Kostenloser Rechner | Mahlzait",
+  title: "Kalorienbedarf berechnen 2025 – Kostenloser Kalorienrechner | Mahlzait",
   description:
-    "Berechne deinen täglichen Kalorienbedarf mit der Mifflin-St Jeor Formel. Kostenloser Kalorienrechner für Grundumsatz (BMR) und Gesamtbedarf (TDEE). Erfahre, wie viele Kalorien du zum Abnehmen brauchst.",
+    "Berechne deinen täglichen Kalorienbedarf mit der Mifflin-St Jeor Formel. Grundumsatz (BMR) + Gesamtbedarf (TDEE) + Kalorien zum Abnehmen. 3 Beispielrechnungen, PAL-Tabelle & 8 FAQs. Kostenlos & wissenschaftlich fundiert.",
 };
 
 const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Wie genau ist die Kalorienberechnung?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Die Mifflin-St Jeor Formel gilt als genaüste Methode zur Schätzung des Grundumsatzes. Individuelle Abweichungen von 10-15% sind möglich. Beobachte dein Gewicht über 2-3 Wochen und passe dann an.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Welches Kaloriendefizit ist gesund?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ein Defizit von 300-500 kcal pro Tag gilt als moderat und nachhaltig. Das entspricht etwa 0,5 kg Gewichtsverlust pro Woche. Mehr als 1000 kcal Defizit wird nicht empfohlen.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Was ist der Unterschied zwischen BMR und TDEE?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "BMR (Grundumsatz) ist der Kalorienverbrauch im Ruhezustand. TDEE (Gesamtbedarf) berücksichtigt zusätzlich dein Aktivitätslevel und zeigt, wie viele Kalorien du täglich verbrauchst.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie tracke ich meine Kalorien am einfachsten?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Mit Mahlzait kannst du Mahlzeiten per Foto, Text oder Barcode loggen. Die KI erkennt dein Essen und berechnet die Kalorien automatisch - in Sekunden statt Minuten.",
-          },
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Wie genau ist die Kalorienberechnung?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Die Mifflin-St Jeor Formel gilt als genaueste Methode zur Schätzung des Grundumsatzes und trifft bei 70 % der Personen den tatsächlichen Verbrauch auf ±10 %. Individuelle Abweichungen sind möglich. Beobachte dein Gewicht über 2–3 Wochen und passe die Kalorien entsprechend an.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Welches Kaloriendefizit ist gesund?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ein Defizit von 300–500 kcal pro Tag gilt als moderat und nachhaltig. Das entspricht etwa 0,3–0,5 kg Gewichtsverlust pro Woche. Ein Defizit über 1.000 kcal wird nicht empfohlen, da es zu Muskelverlust, Nährstoffmangel und dem Jojo-Effekt führen kann.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Was ist der Unterschied zwischen BMR und TDEE?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "BMR (Grundumsatz) ist die Kalorienmenge im absoluten Ruhezustand – nur für Atmung, Herzschlag und Zellerneuerung. TDEE (Gesamtbedarf) berücksichtigt zusätzlich Arbeit, Sport, Alltagsbewegung und die Thermogenese der Nahrung.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie tracke ich meine Kalorien am einfachsten?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Mit Mahlzait fotografierst du dein Essen und die KI erkennt automatisch die Lebensmittel und Kalorien – in Sekunden statt Minuten. Alternativ kannst du Barcodes scannen oder Mahlzeiten per Text eingeben.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Muss ich jeden Tag genau diese Kalorien essen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nein, es zählt der Durchschnitt über die Woche. Du kannst an Trainingstagen mehr essen und an Ruhetagen weniger. Solange die Wochenbilanz stimmt, nimmst du ab oder zu.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie viele Kalorien sollte ich mindestens essen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Als absolute Untergrenze gelten 1.200 kcal/Tag für Frauen und 1.500 kcal/Tag für Männer – und selbst das nur kurzfristig. Langfristig solltest du nie unter deinem Grundumsatz (BMR) essen.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Ändert sich mein Kalorienbedarf beim Abnehmen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja! Mit jedem Kilogramm Gewichtsverlust sinkt dein TDEE um ca. 20–30 kcal. Nach 10 kg Verlust verbrauchst du 200–300 kcal weniger pro Tag. Berechne deinen Bedarf alle 4–6 Wochen neu.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Sind 1.200 Kalorien genug zum Abnehmen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "1.200 kcal sind für die meisten Erwachsenen zu wenig – besonders langfristig. Muskelverlust und metabolische Anpassung sind häufige Folgen. Besser: Ein moderates Defizit von 300–500 kcal unter dem TDEE und regelmässiges Krafttraining.",
+      },
+    },
+  ],
+};
 
 const howToSchema = {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      name: "Kalorienbedarf berechnen",
-      description:
-        "Berechne deinen persönlichen Kalorienbedarf in 5 einfachen Schritten",
-      step: [
-        {
-          "@type": "HowToStep",
-          name: "Geschlecht angeben",
-          text: "Wähle dein biologisches Geschlecht (männlich/weiblich)",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Alter eingeben",
-          text: "Gib dein Alter in Jahren ein",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Körpergrösse eingeben",
-          text: "Gib deine Grösse in Zentimetern ein",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Gewicht eingeben",
-          text: "Gib dein aktuelles Gewicht in Kilogramm ein",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Aktivitätslevel wählen",
-          text: "Wähle wie aktiv du im Alltag bist (von sitzend bis sehr aktiv)",
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Kalorienbedarf berechnen",
+  description: "Berechne deinen persönlichen Kalorienbedarf in 5 einfachen Schritten mit der Mifflin-St Jeor Formel",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Geschlecht angeben",
+      text: "Wähle dein biologisches Geschlecht (männlich/weiblich), da sich die Formel unterscheidet.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Alter eingeben",
+      text: "Gib dein Alter in Jahren ein. Der Grundumsatz sinkt mit zunehmendem Alter.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Körpergrösse eingeben",
+      text: "Gib deine Grösse in Zentimetern ein (z. B. 175 cm).",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Gewicht eingeben",
+      text: "Gib dein aktuelles Gewicht in Kilogramm ein. Am besten morgens nüchtern wiegen.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Aktivitätslevel wählen",
+      text: "Wähle wie aktiv du im Alltag bist: von kaum aktiv (Bürojob) bis extrem aktiv (Leistungssport). Im Zweifel konservativ wählen.",
+    },
+  ],
+};
 
 const authorPersonSchema = {
   "@context": "https://schema.org",
@@ -106,13 +137,9 @@ const authorPersonSchema = {
 <Layout {...defaultTemplateConfig} seo={seo}>
   <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Kalorienbedarf berechnen" />
 
-  <!-- FAQPage Schema -->
-    <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-
-  <!-- HowTo Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
   <KalorienbedarfPage client:load config={defaultTemplateConfig} />
 </Layout>
-

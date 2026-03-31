@@ -5,92 +5,116 @@ import defaultTemplateConfig from "utils/config";
 import BMIRechnerPage from "@modules/bmi";
 
 const seo = {
-  title: "BMI Rechner - Body Mass Index kostenlos berechnen | Mahlzait",
+  title: "BMI Rechner 2025 – Body Mass Index kostenlos berechnen | Mahlzait",
   description:
-    "Berechne deinen BMI (Body Mass Index) kostenlos mit unserem Online-Rechner. Inklusive BMI-Tabelle, Interpretation und Tipps zum Idealgewicht. Wissenschaftlich fundiert nach WHO.",
+    "Berechne deinen BMI sofort mit unserem kostenlosen BMI-Rechner. Inklusive BMI-Tabelle nach WHO, 3 Beispielrechnungen, Idealgewicht, Interpretation & Tipps. Wissenschaftlich fundiert.",
 };
 
 const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Was ist ein guter BMI?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ein BMI zwischen 18.5 und 24.9 gilt als Normalgewicht und ist mit dem geringsten Gesundheitsrisiko verbunden. Der optimale BMI liegt bei etwa 22.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Ist der BMI für alle Menschen geeignet?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Nein, der BMI eignet sich nicht für Kinder, Schwangere, Stillende, sehr muskulöse Personen und Menschen über 65. Für diese Gruppen gibt es spezielle Bewertungsmethoden.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie kann ich meinen BMI verbessern?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Durch eine ausgewogene Ernährung und regelmässige Bewegung. Mit Kalorientracking kannst du dein Ziel kontrolliert erreichen – ohne Crash-Diäten.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie genau ist der BMI?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Der BMI ist ein grober Richtwert. Für eine genaue Beurteilung solltest du auch den Bauchumfang, Körperfettanteil und andere Faktoren berücksichtigen.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Warum verwenden Ärzte den BMI?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Der BMI ist einfach zu berechnen und liefert einen schnellen Anhaltspunkt. Er korreliert auf Bevölkerungsebene gut mit gesundheitlichen Risiken wie Diabetes und Herz-Kreislauf-Erkrankungen.",
-          },
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Was ist ein guter BMI?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ein BMI zwischen 18,5 und 24,9 gilt als Normalgewicht und ist mit dem geringsten Gesundheitsrisiko verbunden. Der optimale BMI liegt bei etwa 22. Allerdings hängt der ideale BMI auch von Alter, Geschlecht und Muskelmasse ab. Für Senioren über 65 ist ein BMI von 24–29 optimal.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Ist der BMI für alle Menschen geeignet?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nein, der BMI eignet sich nicht für Kinder, Schwangere, Stillende, sehr muskulöse Personen und Menschen über 65. Für Kinder gibt es altersabhängige BMI-Perzentilen, für Sportler ist der Körperfettanteil aussagekräftiger. Der BMI ist ein Screening-Tool für die allgemeine Bevölkerung.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie kann ich meinen BMI verbessern?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Durch eine ausgewogene Ernährung und regelmässige Bewegung. Bei Übergewicht hilft ein moderates Kaloriendefizit (300–500 kcal/Tag). Bei Untergewicht solltest du deine Kalorienzufuhr langsam steigern. Kalorien tracken mit einer App wie Mahlzait macht es einfach, den Überblick zu behalten.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie genau ist der BMI?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Der BMI ist ein grober Richtwert mit bekannten Schwächen – er unterscheidet nicht zwischen Muskel- und Fettmasse. Für eine genauere Beurteilung ergänze den BMI mit dem Bauchumfang (unter 94 cm für Männer, unter 80 cm für Frauen) oder dem Körperfettanteil.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Warum verwenden Ärzte den BMI?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Der BMI ist einfach zu berechnen, benötigt keine speziellen Geräte und korreliert auf Bevölkerungsebene gut mit Gesundheitsrisiken. Studien mit Millionen Teilnehmern zeigen: Je weiter der BMI vom Normalbereich abweicht, desto höher das Risiko für Diabetes, Herzerkrankungen und bestimmte Krebsarten.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Was ist der Unterschied zwischen BMI und Körperfettanteil?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Der BMI berechnet sich aus Grösse und Gewicht – er sagt nichts über die Zusammensetzung (Fett vs. Muskeln). Der Körperfettanteil misst direkt, wie viel deines Gewichts aus Fett besteht. Optimal sind 10–20 % für Männer und 20–30 % für Frauen.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Kann man einen normalen BMI haben und trotzdem ungesund sein?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja, das Phänomen heisst Normalgewichtiger mit metabolischem Syndrom (MONW). Jemand mit normalem BMI kann trotzdem zu viel viszerales Fett (Bauchfett) haben, was das Risiko für Herz-Kreislauf-Erkrankungen erhöht. Deshalb ist der Bauchumfang als Ergänzung zum BMI wichtig.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie oft sollte ich meinen BMI überprüfen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Wenn du aktiv an deinem Gewicht arbeitest, reicht eine wöchentliche Kontrolle. Wiege dich immer zur gleichen Zeit (morgens, nüchtern) und berechne den BMI monatlich. Kurzfristige Schwankungen (Wassereinlagerungen, Mahlzeiten) sind normal. Der Trend über Wochen zählt.",
+      },
+    },
+  ],
+};
 
 const howToSchema = {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      name: "BMI berechnen",
-      description: "Berechne deinen Body Mass Index in 2 einfachen Schritten",
-      step: [
-        {
-          "@type": "HowToStep",
-          name: "Körpergrösse eingeben",
-          text: "Gib deine Körpergrösse in Zentimetern ein (z.B. 175 cm)",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Körpergewicht eingeben",
-          text: "Gib dein aktuelles Körpergewicht in Kilogramm ein (z.B. 75 kg)",
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "BMI berechnen",
+  description: "Berechne deinen Body Mass Index in 2 einfachen Schritten mit der WHO-Formel",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Körpergrösse eingeben",
+      text: "Gib deine Körpergrösse in Zentimetern ein (z.B. 175 cm). Nutze den Schieberegler oder das Eingabefeld.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Körpergewicht eingeben",
+      text: "Gib dein aktuelles Körpergewicht in Kilogramm ein (z.B. 75 kg). Wiege dich am besten morgens nüchtern.",
+    },
+  ],
+};
 
 const schema0 = {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      name: "BMI Rechner",
-      headline: "BMI Rechner - Body Mass Index kostenlos berechnen",
-      description: "Kostenloser BMI-Rechner zur Berechnung des Body Mass Index. Inklusive Interpretation nach WHO-Kategorien.",
-      medicalAudience: {
-        "@type": "MedicalAudience",
-        audienceType: "Patient"
-      },
-      mainContentOfPage: {
-        "@type": "WebPageElement",
-        cssSelector: ".card"
-      }
-    };
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "BMI Rechner",
+  headline: "BMI Rechner 2025 – Body Mass Index kostenlos berechnen",
+  description: "Kostenloser BMI-Rechner zur Berechnung des Body Mass Index. Inklusive Interpretation nach WHO-Kategorien, Beispielrechnungen und Tipps zum Idealgewicht.",
+  medicalAudience: {
+    "@type": "MedicalAudience",
+    audienceType: "Patient"
+  },
+  mainContentOfPage: {
+    "@type": "WebPageElement",
+    cssSelector: ".card"
+  }
+};
 
 const authorPersonSchema = {
   "@context": "https://schema.org",
@@ -114,14 +138,9 @@ const authorPersonSchema = {
 <Layout {...defaultTemplateConfig} seo={seo}>
   <StructuredData config={defaultTemplateConfig} type="page" pageTitle="BMI Rechner" />
 
-  <!-- FAQPage Schema -->
-    <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-
-  <!-- HowTo Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
-
-  <!-- MedicalWebPage Schema for health content -->
   <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
   <BMIRechnerPage client:load config={defaultTemplateConfig} />
