@@ -5,6 +5,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import AuthorByline from "@components/AuthorByline";
+import { defaultFoodSupportLinks, foodSupportLinksByCategory } from "utils/seoHubLinks";
 
 // Types for the food data JSON
 interface FoodVariant {
@@ -58,9 +59,14 @@ interface FoodData {
 interface Props {
   config: TemplateConfig;
   food: FoodData;
+  relatedFoodsMeta: Array<{
+    slug: string;
+    name: string;
+    emoji?: string;
+  }>;
 }
 
-function KalorienFoodPage({ config, food }: Props) {
+function KalorienFoodPage({ config, food, relatedFoodsMeta }: Props) {
   const [portionGrams, setPortionGrams] = useState<number>(food.overview.typical_portion_g);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -70,6 +76,7 @@ function KalorienFoodPage({ config, food }: Props) {
   const currentCarbs = Math.round(food.overview.carbs_per_100g * multiplier * 10) / 10;
   const currentFat = Math.round(food.overview.fat_per_100g * multiplier * 10) / 10;
   const currentFiber = Math.round(food.overview.fiber_per_100g * multiplier * 10) / 10;
+  const supportLinks = foodSupportLinksByCategory[food.category] || defaultFoodSupportLinks;
 
   const burnComparison = [
     { activity: "Joggen", minutes: Math.round(currentCalories / 10), emoji: "🏃" },
@@ -345,11 +352,11 @@ function KalorienFoodPage({ config, food }: Props) {
           </div>
 
           {/* Related Foods */}
-          {food.related_foods && food.related_foods.length > 0 && (
+          {relatedFoodsMeta.length > 0 && (
             <div className="max-w-2xl mx-auto mb-12">
               <h2 className="text-2xl font-bold mb-4">Ähnliche Lebensmittel</h2>
               <div className="flex flex-wrap gap-2">
-                {food.related_foods.map((slug: string) => (
+                {relatedFoodsMeta.map(({ slug }) => (
                   <a
                     key={slug}
                     href={`/kalorien/${slug}/`}
@@ -366,6 +373,28 @@ function KalorienFoodPage({ config, food }: Props) {
               </p>
             </div>
           )}
+
+          <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
+            <div className="card-body p-6 md:p-8">
+              <h2 className="text-2xl font-bold mb-4">Mehr Kontext zu {food.name}</h2>
+              <p className="opacity-80 mb-5">
+                Nutze diese Rechner und Guides, wenn du {food.name.toLowerCase()} im Rahmen von
+                Kalorienziel, Defizit oder Makro-Planung einordnen willst.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {supportLinks.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    className="rounded-2xl border border-base-300 p-4 transition-all hover:-translate-y-1 hover:border-primary/40 hover:bg-base-200/40"
+                  >
+                    <h3 className="font-semibold">{link.title}</h3>
+                    <p className="mt-2 text-sm opacity-70">{link.description}</p>
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
 
           {/* App CTA */}
           <div className="card bg-primary text-primary-content shadow-xl max-w-2xl mx-auto mb-12">

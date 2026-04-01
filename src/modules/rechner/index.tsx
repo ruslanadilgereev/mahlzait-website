@@ -3,6 +3,7 @@ import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
+import { calculatorSupportLinks, guideSupportLinks } from "utils/seoHubLinks";
 
 interface Props {
   config: TemplateConfig;
@@ -189,6 +190,19 @@ function RechnerPage({ config }: Props) {
               Berechne deinen Bedarf und starte mit dem Tracking.
             </p>
           </header>
+
+          <div className="grid gap-4 md:grid-cols-2">
+            {[...calculatorSupportLinks, ...guideSupportLinks].map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-2xl border border-base-300 bg-base-100 p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
+              >
+                <h2 className="text-lg font-semibold">{link.title}</h2>
+                <p className="mt-2 text-sm opacity-70">{link.description}</p>
+              </a>
+            ))}
+          </div>
         </section>
 
         {/* Calculator Cards */}

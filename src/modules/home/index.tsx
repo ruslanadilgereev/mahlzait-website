@@ -14,6 +14,7 @@ import LiveDemo from "./_components/liveDemo";
 import ComparisonTable from "./_components/comparisonTable";
 import EntityDefinition from "./_components/entityDefinition";
 import PopularFoods from "./_components/popularFoods";
+import SeoHubs from "./_components/seoHubs";
 
 function MedicalDisclaimer() {
   return (
@@ -60,6 +61,7 @@ function Home({ config }: Props) {
         <HowItWorks />
         <Pricing />
         <Testimonials />
+        <SeoHubs />
         <PopularFoods />
         <MedicalDisclaimer />
         <Faq />

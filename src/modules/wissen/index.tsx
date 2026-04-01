@@ -5,6 +5,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { useState, useMemo } from "react";
 import type { ArticleMeta } from "@content/wissen";
+import { calculatorSupportLinks, guideSupportLinks } from "utils/seoHubLinks";
 
 interface Props {
   config: TemplateConfig;
@@ -32,8 +33,8 @@ function WissenPage({ config, articles, allTags }: Props) {
         article.tags.some((t) => t.toLowerCase() === selectedTag.toLowerCase());
       const matchesSearch =
         !searchquery ||
-        article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        article.description.toLowerCase().includes(searchQuery.toLowerCase());
+        article.title.toLowerCase().includes(searchquery.toLowerCase()) ||
+        article.description.toLowerCase().includes(searchquery.toLowerCase());
       return matchesTag && matchesSearch;
     });
   }, [articles, selectedTag, searchquery]);
@@ -88,6 +89,19 @@ function WissenPage({ config, articles, allTags }: Props) {
               >
                 {tag}
               </button>
+            ))}
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-2 mb-4">
+            {[...guideSupportLinks.slice(0, 2), ...calculatorSupportLinks.slice(0, 2)].map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-2xl border border-base-300 bg-base-100 p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg"
+              >
+                <h2 className="text-lg font-semibold">{link.title}</h2>
+                <p className="mt-2 text-sm opacity-70">{link.description}</p>
+              </a>
             ))}
           </div>
         </section>

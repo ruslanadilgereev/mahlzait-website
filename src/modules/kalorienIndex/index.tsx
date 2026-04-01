@@ -3,6 +3,7 @@ import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
+import { calculatorSupportLinks, guideSupportLinks } from "utils/seoHubLinks";
 
 interface FoodData {
   slug: string;
@@ -64,6 +65,31 @@ function KalorienIndexPage({ config, foods }: Props) {
               Alle Angaben pro 100 g, wissenschaftlich fundiert.
             </p>
           </header>
+
+          <section className="mb-10 grid gap-4 md:grid-cols-2">
+            {[...guideSupportLinks.slice(0, 2), ...calculatorSupportLinks.slice(0, 2)].map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-2xl border border-gray-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-emerald-400 hover:shadow-lg"
+              >
+                <h2 className="text-lg font-semibold text-gray-900">{link.title}</h2>
+                <p className="mt-2 text-sm text-gray-600">{link.description}</p>
+              </a>
+            ))}
+          </section>
+
+          <div className="flex flex-wrap gap-2 mb-10">
+            {Object.entries(categories).map(([catKey, catInfo]) => (
+              <a
+                key={catKey}
+                href={`#${catKey}`}
+                className="badge badge-lg badge-outline border-emerald-300 px-4 py-3 text-sm text-emerald-700 hover:bg-emerald-50"
+              >
+                {catInfo.emoji} {catInfo.label}
+              </a>
+            ))}
+          </div>
 
           {/* Quick Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">

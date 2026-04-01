@@ -3,10 +3,10 @@ import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
 import KalorienFoodPage from "@modules/kalorienFood";
+const relatedFoodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
 
 export async function getStaticPaths() {
   const foodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
-  
   return Object.values(foodFiles).map((mod: any) => {
     const food = mod.default || mod;
     return {
@@ -17,6 +17,21 @@ export async function getStaticPaths() {
 }
 
 const { food } = Astro.props;
+const allFoodsBySlug = Object.fromEntries(
+  Object.values(relatedFoodFiles).map((mod: any) => {
+    const entry = mod.default || mod;
+    return [entry.slug, entry];
+  })
+);
+
+const relatedFoodsMeta = (food.related_foods || [])
+  .map((slug: string) => allFoodsBySlug[slug])
+  .filter(Boolean)
+  .map((entry: any) => ({
+    slug: entry.slug,
+    name: entry.name,
+    emoji: entry.emoji,
+  }));
 
 const seo = {
   title: food.seo.title,
@@ -43,23 +58,22 @@ const nutritionSchema = {
   carbohydrateContent: `${Math.round(food.overview.carbs_per_100g * food.overview.typical_portion_g / 100)}g`,
   fatContent: `${Math.round(food.overview.fat_per_100g * food.overview.typical_portion_g / 100)}g`,
 };
-
-const breadcrumbSchema = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Startseite", item: "https://www.mahlzait.de/" },
-    { "@type": "ListItem", position: 2, name: "Rechner", item: "https://www.mahlzait.de/rechner/" },
-    { "@type": "ListItem", position: 3, name: `${food.name} Kalorien`, item: `https://www.mahlzait.de/kalorien/${food.slug}/` },
-  ],
-};
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle={`${food.name} Kalorien Rechner`} />
+  <StructuredData
+    config={defaultTemplateConfig}
+    type="page"
+    pageTitle={`${food.name} Kalorien Rechner`}
+    pageDescription={food.seo.description}
+  />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(nutritionSchema)} />
-  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <KalorienFoodPage client:load config={defaultTemplateConfig} food={food} />
+  <KalorienFoodPage
+    client:load
+    config={defaultTemplateConfig}
+    food={food}
+    relatedFoodsMeta={relatedFoodsMeta}
+  />
 </Layout>
