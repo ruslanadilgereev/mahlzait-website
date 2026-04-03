@@ -443,25 +443,25 @@ function DoenerKalorienRechnerPage({ config }: Props) {
 
                   {/* Macros */}
                   <div className="grid gap-4 md:grid-cols-3">
-                    <div className="card bg-green-100 dark:bg-green-900">
+                    <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <div className="text-3xl font-bold text-green-600 dark:text-green-400">
+                        <div className="text-3xl font-bold text-emerald-500">
                           {result.protein}g
                         </div>
                         <div className="text-sm opacity-70">Protein</div>
                       </div>
                     </div>
-                    <div className="card bg-yellow-100 dark:bg-yellow-900">
+                    <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400">
+                        <div className="text-3xl font-bold text-amber-500">
                           {result.carbs}g
                         </div>
                         <div className="text-sm opacity-70">Kohlenhydrate</div>
                       </div>
                     </div>
-                    <div className="card bg-red-100 dark:bg-red-900">
+                    <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <div className="text-3xl font-bold text-red-600 dark:text-red-400">
+                        <div className="text-3xl font-bold text-rose-500">
                           {result.fat}g
                         </div>
                         <div className="text-sm opacity-70">Fett</div>
