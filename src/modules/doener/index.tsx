@@ -62,70 +62,70 @@ const doenerTypes: DoenerType[] = [
   {
     id: "classic",
     name: "Döner Kebab (Fladenbrot)",
-    baseCalories: 350,
+    baseCalories: 280,
     baseProtein: 8,
-    baseCarbs: 45,
-    baseFat: 12,
+    baseCarbs: 50,
+    baseFat: 5,
     icon: "🥙",
     description: "Klassischer Döner im Fladenbrot mit Salat",
   },
   {
     id: "dueruem",
     name: "Dürüm Döner",
-    baseCalories: 380,
-    baseProtein: 10,
-    baseCarbs: 50,
-    baseFat: 14,
+    baseCalories: 300,
+    baseProtein: 8,
+    baseCarbs: 55,
+    baseFat: 6,
     icon: "🌯",
     description: "Döner im dünnen Yufka-Teigfladen",
   },
   {
     id: "teller",
     name: "Döner Teller",
-    baseCalories: 450,
-    baseProtein: 12,
-    baseCarbs: 55,
-    baseFat: 18,
+    baseCalories: 350,
+    baseProtein: 6,
+    baseCarbs: 65,
+    baseFat: 5,
     icon: "🍽️",
-    description: "Döner mit Reis oder Pommes auf dem Teller",
+    description: "Döner mit Reis auf dem Teller",
   },
   {
     id: "box",
     name: "Döner Box / Pomm-Döner",
-    baseCalories: 520,
-    baseProtein: 10,
-    baseCarbs: 65,
-    baseFat: 22,
+    baseCalories: 420,
+    baseProtein: 6,
+    baseCarbs: 60,
+    baseFat: 18,
     icon: "📦",
     description: "Pommes mit Dönerfleisch und Sauce",
   },
   {
     id: "lahmacun",
     name: "Lahmacun mit Döner",
-    baseCalories: 420,
-    baseProtein: 15,
-    baseCarbs: 48,
-    baseFat: 16,
+    baseCalories: 310,
+    baseProtein: 12,
+    baseCarbs: 45,
+    baseFat: 8,
     icon: "🫓",
     description: "Türkische Pizza mit Dönerfleisch",
   },
   {
     id: "pide",
     name: "Pide mit Döner",
-    baseCalories: 480,
-    baseProtein: 18,
-    baseCarbs: 52,
-    baseFat: 20,
+    baseCalories: 380,
+    baseProtein: 14,
+    baseCarbs: 55,
+    baseFat: 12,
     icon: "🥖",
     description: "Türkisches Fladenbrot gefüllt mit Döner",
   },
   {
     id: "vegetarisch",
     name: "Vegetarischer Döner / Falafel",
-    baseCalories: 380,
-    baseProtein: 12,
-    baseCarbs: 48,
-    baseFat: 14,
+    baseCalories: 350,
+    baseProtein: 14,
+    baseCarbs: 45,
+    baseFat: 16,
     icon: "🧆",
     description: "Mit Falafel statt Fleisch",
   },
@@ -135,43 +135,43 @@ const meatTypes: MeatType[] = [
   {
     id: "kalb",
     name: "Kalb-/Rindfleisch",
-    calorieModifier: 180,
-    proteinModifier: 25,
-    fatModifier: 8,
+    calorieModifier: 280,
+    proteinModifier: 28,
+    fatModifier: 18,
     icon: "🥩",
   },
   {
     id: "haehnchen",
     name: "Hähnchenfleisch",
-    calorieModifier: 140,
-    proteinModifier: 28,
-    fatModifier: 4,
+    calorieModifier: 220,
+    proteinModifier: 32,
+    fatModifier: 10,
     icon: "🍗",
   },
   {
     id: "gemischt",
     name: "Gemischtes Fleisch",
-    calorieModifier: 160,
-    proteinModifier: 26,
-    fatModifier: 6,
+    calorieModifier: 250,
+    proteinModifier: 30,
+    fatModifier: 14,
     icon: "🍖",
   },
   {
     id: "lamm",
     name: "Lammfleisch",
-    calorieModifier: 200,
-    proteinModifier: 24,
-    fatModifier: 12,
+    calorieModifier: 310,
+    proteinModifier: 26,
+    fatModifier: 22,
     icon: "🐑",
   },
 ];
 
 const sauceTypes: SauceType[] = [
-  { id: "joghurt", name: "Joghurt-Sauce (Cacık)", calories: 40, fat: 3, icon: "🥛" },
-  { id: "knoblauch", name: "Knoblauch-Sauce", calories: 80, fat: 8, icon: "🧄" },
-  { id: "cocktail", name: "Cocktail-Sauce", calories: 90, fat: 9, icon: "🍹" },
-  { id: "scharf", name: "Scharfe Sauce", calories: 20, fat: 1, icon: "🌶️" },
-  { id: "krauter", name: "Kräuter-Sauce", calories: 60, fat: 5, icon: "🌿" },
+  { id: "joghurt", name: "Joghurt-Sauce (Cacık)", calories: 60, fat: 4, icon: "🥛" },
+  { id: "knoblauch", name: "Knoblauch-Sauce", calories: 180, fat: 18, icon: "🧄" },
+  { id: "cocktail", name: "Cocktail-Sauce", calories: 150, fat: 14, icon: "🍹" },
+  { id: "scharf", name: "Scharfe Sauce", calories: 25, fat: 1, icon: "🌶️" },
+  { id: "krauter", name: "Kräuter-Sauce", calories: 80, fat: 7, icon: "🌿" },
   { id: "ohne", name: "Ohne Sauce", calories: 0, fat: 0, icon: "❌" },
 ];
 
@@ -183,19 +183,19 @@ const extraTypes: ExtraType[] = [
 ];
 
 const doenerCalorieTable = [
-  { name: "Döner Kebab (klassisch)", portion: "350g", calories: "550-650", protein: "35g" },
-  { name: "Dürüm Döner", portion: "400g", calories: "600-700", protein: "38g" },
-  { name: "Döner Box mit Pommes", portion: "450g", calories: "750-900", protein: "30g" },
-  { name: "Lahmacun mit Döner", portion: "380g", calories: "580-680", protein: "32g" },
-  { name: "Döner Teller mit Reis", portion: "500g", calories: "650-800", protein: "40g" },
-  { name: "Hähnchen-Döner", portion: "350g", calories: "480-550", protein: "40g" },
-  { name: "Vegetarischer Döner", portion: "320g", calories: "450-520", protein: "18g" },
+  { name: "Döner Kebab (klassisch)", portion: "350g", calories: "620-750", protein: "35g" },
+  { name: "Dürüm Döner", portion: "400g", calories: "700-850", protein: "38g" },
+  { name: "Döner Box mit Pommes", portion: "450g", calories: "850-1000", protein: "32g" },
+  { name: "Lahmacun mit Döner", portion: "350g", calories: "600-700", protein: "35g" },
+  { name: "Döner Teller mit Reis", portion: "500g", calories: "750-900", protein: "40g" },
+  { name: "Hähnchen-Döner", portion: "350g", calories: "550-650", protein: "42g" },
+  { name: "Vegetarischer Döner", portion: "320g", calories: "480-550", protein: "20g" },
 ];
 
 function DoenerKalorienRechnerPage({ config }: Props) {
   const [selectedDoener, setSelectedDoener] = useState<string>("classic");
   const [selectedMeat, setSelectedMeat] = useState<string>("kalb");
-  const [selectedSauce, setSelectedSauce] = useState<string>("joghurt");
+  const [selectedSauces, setSelectedSauces] = useState<string[]>(["joghurt"]);
   const [selectedExtras, setSelectedExtras] = useState<string[]>([]);
   const [portionSize, setPortionSize] = useState<number>(100);
   const [result, setResult] = useState<DoenerResult | null>(null);
@@ -206,16 +206,40 @@ function DoenerKalorienRechnerPage({ config }: Props) {
     );
   };
 
+  const toggleSauce = (sauceId: string) => {
+    if (sauceId === "ohne") {
+      setSelectedSauces(["ohne"]);
+      return;
+    }
+    setSelectedSauces((prev) => {
+      const filtered = prev.filter((s) => s !== "ohne");
+      if (filtered.includes(sauceId)) {
+        const result = filtered.filter((s) => s !== sauceId);
+        return result.length === 0 ? ["ohne"] : result;
+      }
+      return [...filtered, sauceId];
+    });
+  };
+
   const calculateCalories = () => {
     const doener = doenerTypes.find((d) => d.id === selectedDoener)!;
     const meat = meatTypes.find((m) => m.id === selectedMeat);
-    const sauce = sauceTypes.find((s) => s.id === selectedSauce)!;
 
     // Für vegetarische Option kein Fleisch addieren
     const isVegetarian = selectedDoener === "vegetarisch";
     const meatCalories = isVegetarian ? 0 : (meat?.calorieModifier || 0);
     const meatProtein = isVegetarian ? 0 : (meat?.proteinModifier || 0);
     const meatFat = isVegetarian ? 0 : (meat?.fatModifier || 0);
+
+    const sauceCaloriesTotal = selectedSauces.reduce((sum, sauceId) => {
+      const sauce = sauceTypes.find((s) => s.id === sauceId);
+      return sum + (sauce?.calories || 0);
+    }, 0);
+
+    const sauceFatTotal = selectedSauces.reduce((sum, sauceId) => {
+      const sauce = sauceTypes.find((s) => s.id === sauceId);
+      return sum + (sauce?.fat || 0);
+    }, 0);
 
     const extrasCalories = selectedExtras.reduce((sum, extraId) => {
       const extra = extraTypes.find((e) => e.id === extraId);
@@ -227,7 +251,7 @@ function DoenerKalorienRechnerPage({ config }: Props) {
 
     const baseCaloriesAdjusted = doener.baseCalories * portionMultiplier;
     const meatCaloriesAdjusted = meatCalories * portionMultiplier;
-    const sauceCaloriesAdjusted = sauce.calories;
+    const sauceCaloriesAdjusted = sauceCaloriesTotal;
     const extrasCaloriesAdjusted = extrasCalories;
 
     const totalCalories = Math.round(
@@ -236,7 +260,7 @@ function DoenerKalorienRechnerPage({ config }: Props) {
 
     const totalProtein = Math.round((doener.baseProtein + meatProtein) * portionMultiplier);
     const totalCarbs = Math.round(doener.baseCarbs * portionMultiplier);
-    const totalFat = Math.round((doener.baseFat + meatFat + sauce.fat) * portionMultiplier);
+    const totalFat = Math.round((doener.baseFat + meatFat + sauceFatTotal) * portionMultiplier);
 
     setResult({
       totalCalories,
@@ -331,18 +355,18 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                 </div>
               )}
 
-              {/* Sauce Selection */}
+              {/* Sauce Selection (Multi-Select) */}
               <div className="mb-8">
                 <span className="text-lg font-semibold block mb-4">
-                  {isVegetarian ? "2" : "3"}. Sauce wählen
+                  {isVegetarian ? "2" : "3"}. Saucen wählen (mehrere möglich)
                 </span>
                 <div className="flex flex-wrap gap-2">
                   {sauceTypes.map((sauce) => (
                     <button
                       key={sauce.id}
-                      onClick={() => setSelectedSauce(sauce.id)}
+                      onClick={() => toggleSauce(sauce.id)}
                       className={`btn btn-sm ${
-                        selectedSauce === sauce.id ? "btn-primary" : "btn-outline"
+                        selectedSauces.includes(sauce.id) ? "btn-primary" : "btn-outline"
                       }`}
                     >
                       {sauce.icon} {sauce.name} ({sauce.calories} kcal)
@@ -409,30 +433,35 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                     <div className="text-lg opacity-70 mt-2">
                       {selectedDoenerData?.name}
                       {!isVegetarian && ` mit ${meatTypes.find((m) => m.id === selectedMeat)?.name}`}
+                    {selectedSauces.filter(s => s !== "ohne").length > 0 && (
+                      <span className="block text-sm opacity-60 mt-1">
+                        Saucen: {selectedSauces.filter(s => s !== "ohne").map(s => sauceTypes.find(st => st.id === s)?.name).join(", ")}
+                      </span>
+                    )}
                     </div>
                   </div>
 
                   {/* Macros */}
                   <div className="grid gap-4 md:grid-cols-3">
-                    <div className="card bg-green-100 dark:bg-green-900">
+                    <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <div className="text-3xl font-bold text-green-600 dark:text-green-400">
+                        <div className="text-3xl font-bold text-emerald-500">
                           {result.protein}g
                         </div>
                         <div className="text-sm opacity-70">Protein</div>
                       </div>
                     </div>
-                    <div className="card bg-yellow-100 dark:bg-yellow-900">
+                    <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400">
+                        <div className="text-3xl font-bold text-amber-500">
                           {result.carbs}g
                         </div>
                         <div className="text-sm opacity-70">Kohlenhydrate</div>
                       </div>
                     </div>
-                    <div className="card bg-red-100 dark:bg-red-900">
+                    <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <div className="text-3xl font-bold text-red-600 dark:text-red-400">
+                        <div className="text-3xl font-bold text-rose-500">
                           {result.fat}g
                         </div>
                         <div className="text-sm opacity-70">Fett</div>
@@ -607,8 +636,8 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">🥛 Die Saucen</h3>
                   <p>
-                    Knoblauch- und Cocktailsauce sind echte Kalorienbomben: <strong>80-100 kcal
-                    pro Portion</strong>. Joghurt-Sauce ist die kalorienärmste Alternative mit nur 40 kcal.
+                    Knoblauch-Sauce (Mayo-basiert) hat satte <strong>180 kcal pro Portion</strong>,
+                    Cocktailsauce 150 kcal. Joghurt-Sauce ist die kalorienärmste Alternative mit nur 60 kcal.
                   </p>
                 </div>
               </div>
@@ -640,7 +669,7 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                   <div>
                     <h3 className="font-bold">Hähnchen statt Kalb wählen</h3>
                     <p className="text-sm opacity-70">
-                      Spart ca. 40-60 kcal und liefert mehr Protein bei weniger Fett.
+                      Spart ca. 60 kcal und liefert mehr Protein bei weniger Fett.
                     </p>
                   </div>
                 </div>
@@ -652,7 +681,7 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                   <div>
                     <h3 className="font-bold">Joghurt-Sauce statt Knoblauch-Sauce</h3>
                     <p className="text-sm opacity-70">
-                      Nur 40 kcal statt 80-100 kcal – und trotzdem lecker!
+                      Nur 60 kcal statt 180 kcal bei Knoblauch-Sauce – spart 120 kcal!
                     </p>
                   </div>
                 </div>
@@ -713,8 +742,8 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                 <div className="collapse-content">
                   <p>
                     Ein klassischer Döner Kebab im Fladenbrot hat durchschnittlich{" "}
-                    <strong>550-650 kcal</strong>. Die genaue Kalorienzahl hängt von der Fleischart,
-                    Sauce und Portionsgrösse ab. Mit Hähnchen und Joghurt-Sauce sind es ca. 500 kcal.
+                    <strong>620-750 kcal</strong>. Die genaue Kalorienzahl hängt von der Fleischart,
+                    Sauce und Portionsgrösse ab. Mit Hähnchen und Joghurt-Sauce sind es ca. 560 kcal.
                   </p>
                 </div>
               </div>
@@ -727,7 +756,7 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                 <div className="collapse-content">
                   <p>
                     <strong>Der Unterschied ist gering.</strong> Ein Dürüm hat oft sogar etwas mehr
-                    Kalorien (600-700 kcal), weil mehr Fleisch reinpasst. Das dünnere Yufka-Brot spart
+                    Kalorien (700-850 kcal), weil mehr Fleisch reinpasst. Das dünnere Yufka-Brot spart
                     zwar Kalorien beim Teig, aber die grössere Füllung gleicht das aus.
                   </p>
                 </div>
@@ -741,7 +770,7 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                 <div className="collapse-content">
                   <p>
                     Ein Döner kann in eine Diät passen, wenn du ihn <strong>bewusst wählst</strong>:
-                    Hähnchen statt Kalb, Joghurt-Sauce, viel Salat. Mit 500-550 kcal ist er eine
+                    Hähnchen statt Kalb, Joghurt-Sauce, viel Salat. Mit 560 kcal ist er eine
                     sättigende Mahlzeit mit viel Protein. Vermeide aber Döner Box und XXL-Portionen!
                   </p>
                 </div>
@@ -755,7 +784,7 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                 <div className="collapse-content">
                   <p>
                     <strong>Ja, meistens.</strong> Ein Big Mac hat 509 kcal, ein durchschnittlicher
-                    Döner 550-650 kcal. Allerdings hat der Döner mehr Protein (35g vs. 26g) und mehr
+                    Döner 620-750 kcal. Allerdings hat der Döner mehr Protein (35g vs. 26g) und mehr
                     Gemüse. Ein Hähnchen-Döner mit Joghurt-Sauce kommt dem Big Mac näher.
                   </p>
                 </div>
@@ -783,8 +812,8 @@ function DoenerKalorienRechnerPage({ config }: Props) {
                 <div className="collapse-content">
                   <p>
                     Die kalorienärmste Option ist ein <strong>Döner-Teller mit Salat</strong>
-                    (ohne Brot, ohne Pommes) mit Hähnchenfleisch und Joghurt-Sauce: ca. 350-400 kcal.
-                    Alternativ: Vegetarischer Döner mit Falafel (ca. 450-520 kcal).
+                    (ohne Brot, ohne Pommes) mit Hähnchenfleisch und Joghurt-Sauce: ca. 400-450 kcal.
+                    Alternativ: Vegetarischer Döner mit Falafel (ca. 480-550 kcal).
                   </p>
                 </div>
               </div>

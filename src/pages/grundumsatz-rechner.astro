@@ -5,123 +5,148 @@ import defaultTemplateConfig from "utils/config";
 import GrundumsatzRechnerPage from "@modules/grundumsatz";
 
 const seo = {
-  title: "Grundumsatz Rechner - BMR & TDEE kostenlos berechnen | Mahlzait",
+  title: "Grundumsatz Rechner 2026 – BMR & TDEE kostenlos berechnen | Mahlzait",
   description:
-    "Berechne deinen Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE) kostenlos. Mit wissenschaftlicher Mifflin-St Jeor Formel. Perfekte Basis zum Abnehmen oder Muskelaufbau.",
+    "Berechne deinen Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE) kostenlos mit der Mifflin-St Jeor Formel. Inklusive 3 Beispielrechnungen, Formelvergleich (Harris-Benedict, Katch-McArdle), 8 FAQs & Praxis-Tipps zum Abnehmen. Wissenschaftlich fundiert.",
 };
 
 const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Was ist der Unterschied zwischen Grundumsatz und Gesamtumsatz?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Der Grundumsatz (BMR) ist die Energie, die dein Körper im absoluten Ruhezustand verbrennt. Der Gesamtumsatz (TDEE) addiert deine täglichen Aktivitäten dazu – Sport, Arbeit, Haushalt etc.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie genau ist der Grundumsatz-Rechner?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Die Mifflin-St Jeor Formel ist die genaueste Schätzung ohne Labortest. Sie liegt bei den meisten Menschen ±10% vom tatsächlichen Wert.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Sollte ich unter meinem Grundumsatz essen?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Nein! Unter dem Grundumsatz zu essen ist ungesund und kontraproduktiv. Dein Körper braucht diese Energie für lebensnotwendige Funktionen. Orientiere dich am TDEE mit moderatem Defizit.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie kann ich meinen Grundumsatz erhöhen?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Baue Muskelmasse auf! Muskeln verbrennen auch im Ruhezustand mehr Energie als Fett. Regelmässiges Krafttraining kann deinen Grundumsatz dauerhaft erhöhen.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Warum sinkt mein Grundumsatz beim Abnehmen?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Bei weniger Körpermasse braucht dein Körper weniger Energie. Zusätzlich kann sich der Stoffwechsel bei starkem Kaloriendefizit anpassen (metabolische Adaptation). Deshalb sind moderate Defizite besser.",
-          },
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Was ist der Unterschied zwischen Grundumsatz und Gesamtumsatz?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Der Grundumsatz (BMR, Basal Metabolic Rate) ist die Energie, die dein Körper im absoluten Ruhezustand verbrennt – für Atmung, Herzschlag, Zellerneuerung und alle lebenserhaltenden Prozesse. Der Gesamtenergieumsatz (TDEE, Total Daily Energy Expenditure) addiert deine täglichen Aktivitäten dazu: Sport, Arbeit, Haushalt, Verdauung (thermischer Effekt der Nahrung) und NEAT (Non-Exercise Activity Thermogenesis, also unbewusste Alltagsbewegungen). Der TDEE ist die relevantere Zahl für deine Ernährungsplanung.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie genau ist der Grundumsatz-Rechner?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Die Mifflin-St Jeor Formel, die unser Rechner verwendet, ist die genaueste prädiktive Gleichung ohne Labortest. Sie liegt bei etwa 80 % der Menschen innerhalb von ±10 % des tatsächlichen Werts (gemessen per indirekter Kalorimetrie). Eine Studie der American Dietetic Association (2005) verglich 4 gängige BMR-Formeln und fand, dass Mifflin-St Jeor die kleinste Fehlerrate hat.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Sollte ich unter meinem Grundumsatz essen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nein! Unter dem Grundumsatz zu essen ist ungesund und kontraproduktiv. Dein Körper braucht diese Kalorien für lebensnotwendige Funktionen wie Herzschlag, Gehirnaktivität und Immunsystem. Chronisches Unteressen führt zu metabolischer Adaptation, Muskelabbau, Haarausfall und Hormonstörungen. Orientiere dich stattdessen am TDEE und ziehe davon maximal 20–25 % ab.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie kann ich meinen Grundumsatz erhöhen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Der effektivste Weg ist Muskelaufbau durch regelmässiges Krafttraining. Jedes Kilogramm Muskelmasse verbrennt im Ruhezustand ca. 13 kcal pro Tag mehr als ein Kilogramm Fett. Weitere Faktoren: ausreichend Protein essen, genug Schlaf (7–9 Stunden), Koffein (steigert den Stoffwechsel kurzfristig um 3–11 %) und kalte Exposition (aktiviert braunes Fettgewebe).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Warum sinkt mein Grundumsatz beim Abnehmen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Zwei Gründe: Erstens, weniger Körpermasse bedeutet weniger Energiebedarf. Zweitens gibt es die metabolische Adaptation: Bei anhaltendem Kaloriendefizit drosselt dein Körper aktiv den Stoffwechsel um 5–15 % über das hinaus, was durch den Gewichtsverlust allein zu erwarten wäre. Deshalb sind moderate Defizite (300–500 kcal/Tag) besser als Crashdiäten.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Was ist die Mifflin-St Jeor Formel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Die Mifflin-St Jeor Formel wurde 1990 entwickelt und lautet: Für Männer: 10 × Gewicht (kg) + 6,25 × Grösse (cm) − 5 × Alter + 5. Für Frauen: 10 × Gewicht (kg) + 6,25 × Grösse (cm) − 5 × Alter − 161. Sie ist die von der Academy of Nutrition and Dietetics empfohlene Standardformel und genauer als die ältere Harris-Benedict-Gleichung.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie oft sollte ich meinen Grundumsatz neu berechnen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Berechne deinen Grundumsatz neu, wenn sich deine Körperdaten wesentlich verändert haben – zum Beispiel nach 5 kg Gewichtsveränderung, zum Geburtstag (jedes Lebensjahr senkt den BMR leicht), oder wenn sich dein Aktivitätslevel deutlich ändert. Während einer Diät empfiehlt es sich, alle 4–6 Wochen den Kalorienbedarf anzupassen.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Welche Rolle spielt der Grundumsatz beim Abnehmen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Der Grundumsatz ist das absolute Minimum an Kalorien, das dein Körper braucht. Dein TDEE (Grundumsatz × Aktivitätsfaktor) ist die entscheidende Zahl: Isst du weniger als deinen TDEE, nimmst du ab. Ein Defizit von 500 kcal/Tag unter dem TDEE führt zu ca. 0,5 kg Gewichtsverlust pro Woche. Wichtig: Dein Kalorienziel sollte nie unter deinen Grundumsatz fallen.",
+      },
+    },
+  ],
+};
 
 const howToSchema = {
-      "@context": "https://schema.org",
-      "@type": "HowTo",
-      name: "Grundumsatz berechnen",
-      description: "Berechne deinen Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE) in 4 einfachen Schritten",
-      step: [
-        {
-          "@type": "HowToStep",
-          name: "Geschlecht wählen",
-          text: "Wähle dein Geschlecht (männlich oder weiblich)",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Alter eingeben",
-          text: "Gib dein Alter in Jahren ein",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Körpermasse eingeben",
-          text: "Gib deine Körpergrösse in cm und dein Gewicht in kg ein",
-        },
-        {
-          "@type": "HowToStep",
-          name: "Aktivitätslevel wählen",
-          text: "Wähle dein tägliches Aktivitätslevel für die TDEE-Berechnung",
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "Grundumsatz berechnen",
+  description: "Berechne deinen Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE) in 4 einfachen Schritten mit der wissenschaftlichen Mifflin-St Jeor Formel",
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Geschlecht wählen",
+      text: "Wähle dein Geschlecht (männlich oder weiblich). Männer haben aufgrund von mehr Muskelmasse einen ca. 5–10 % höheren Grundumsatz.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Alter eingeben",
+      text: "Gib dein Alter in Jahren ein. Mit zunehmendem Alter sinkt der Grundumsatz um ca. 1–2 % pro Dekade.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Körpermasse eingeben",
+      text: "Gib deine Körpergrösse in cm und dein aktuelles Gewicht in kg ein. Wiege dich am besten morgens nüchtern für den genauesten Wert.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Aktivitätslevel wählen",
+      text: "Wähle dein tägliches Aktivitätslevel von 'kaum aktiv' (×1,2) bis 'extrem aktiv' (×1,9) für die TDEE-Berechnung.",
+    },
+  ],
+};
 
 const schema0 = {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      name: "Grundumsatz Rechner",
-      description: "Kostenloser Online-Rechner zur Berechnung von Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE) basierend auf der Mifflin-St Jeor Formel.",
-      applicationCategory: "HealthApplication",
-      operatingSystem: "Any",
-      offers: {
-        "@type": "Offer",
-        price: "0",
-        priceCurrency: "EUR"
-      },
-      featureList: [
-        "Grundumsatz (BMR) Berechnung",
-        "Gesamtenergieumsatz (TDEE) Berechnung",
-        "5 Aktivitätslevel zur Auswahl",
-        "Kalorienziele für Abnehmen und Muskelaufbau",
-        "Wissenschaftliche Mifflin-St Jeor Formel"
-      ]
-    };
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: "Grundumsatz Rechner",
+  description: "Kostenloser Online-Rechner zur Berechnung von Grundumsatz (BMR) und Gesamtenergieumsatz (TDEE) basierend auf der Mifflin-St Jeor Formel. Vergleicht 3 wissenschaftliche Formeln.",
+  applicationCategory: "HealthApplication",
+  operatingSystem: "Any",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR"
+  },
+  featureList: [
+    "Grundumsatz (BMR) Berechnung mit Mifflin-St Jeor",
+    "Gesamtenergieumsatz (TDEE) Berechnung",
+    "Vergleich von 3 BMR-Formeln (Mifflin-St Jeor, Harris-Benedict, Katch-McArdle)",
+    "5 Aktivitätslevel zur Auswahl",
+    "Kalorienziele für Abnehmen, Halten und Muskelaufbau",
+    "3 Beispielrechnungen mit Schritt-für-Schritt-Erklärung"
+  ]
+};
 
 const schema1 = {
-      "@context": "https://schema.org",
-      "@type": "MedicalWebPage",
-      name: "Grundumsatz Rechner",
-      headline: "Grundumsatz Rechner - BMR & TDEE kostenlos berechnen",
-      description: "Kostenloser Grundumsatz-Rechner zur Berechnung von BMR und TDEE. Wissenschaftlich basiert auf der Mifflin-St Jeor Formel.",
-      medicalAudience: {
-        "@type": "MedicalAudience",
-        audienceType: "Patient"
-      },
-      mainContentOfPage: {
-        "@type": "WebPageElement",
-        cssSelector: ".card"
-      }
-    };
+  "@context": "https://schema.org",
+  "@type": "MedicalWebPage",
+  name: "Grundumsatz Rechner",
+  headline: "Grundumsatz Rechner 2026 – BMR & TDEE kostenlos berechnen",
+  description: "Kostenloser Grundumsatz-Rechner zur Berechnung von BMR und TDEE. Wissenschaftlich basiert auf der Mifflin-St Jeor Formel. Inklusive Formelvergleich, 3 Beispielrechnungen und Praxis-Guide zum Abnehmen.",
+  medicalAudience: {
+    "@type": "MedicalAudience",
+    audienceType: "Patient"
+  },
+  mainContentOfPage: {
+    "@type": "WebPageElement",
+    cssSelector: ".card"
+  }
+};
 
 const authorPersonSchema = {
   "@context": "https://schema.org",
@@ -140,23 +165,27 @@ const authorPersonSchema = {
   ],
 };
 
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Startseite", "item": "https://www.mahlzait.de/" },
+    { "@type": "ListItem", "position": 2, "name": "Rechner", "item": "https://www.mahlzait.de/rechner/" },
+    { "@type": "ListItem", "position": 3, "name": "Grundumsatz Rechner", "item": "https://www.mahlzait.de/grundumsatz-rechner/" }
+  ]
+};
+
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Grundumsatz Rechner" />
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Grundumsatz Rechner" pageDescription={seo.description} />
 
-  <!-- FAQPage Schema -->
-    <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
-
-  <!-- HowTo Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
-
-  <!-- WebApplication Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
-
-  <!-- MedicalWebPage Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
   <GrundumsatzRechnerPage client:load config={defaultTemplateConfig} />
 </Layout>
