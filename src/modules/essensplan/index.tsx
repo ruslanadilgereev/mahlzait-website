@@ -50,8 +50,11 @@ function EssensplanPage({ config }: Props) {
       });
 
       if (!res.ok) {
-        const err = await res.json().catch(() => ({ message: "Unbekannter Fehler" }));
-        throw new Error(err.message || err.error || `Fehler ${res.status}`);
+        const err = await res.json().catch(() => null);
+        const msg = err?.message || err?.error || `Server-Fehler ${res.status}`;
+        throw new Error(res.status === 404
+          ? "API-Endpoint nicht gefunden. Nutze 'vercel dev' statt 'pnpm dev' für lokale Tests."
+          : msg);
       }
 
       const reader = res.body?.getReader();
