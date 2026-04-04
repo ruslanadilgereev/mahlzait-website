@@ -72,31 +72,28 @@ const FOCUS_OPTIONS = ["Ganzkörper", "Oberkörper", "Unterkörper", "Core", "Au
 export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanFormProps) {
   const [step, setStep] = useState(1);
 
-  // Step 1: Basisdaten
+  // Step 1: Basisdaten + Was generieren?
   const [gender, setGender] = useState<"male" | "female">("male");
   const [age, setAge] = useState(30);
   const [height, setHeight] = useState(175);
   const [weight, setWeight] = useState(75);
   const [goal, setGoal] = useState<"lose" | "maintain" | "gain">("lose");
   const [activityLevel, setActivityLevel] = useState(1.55);
+  const [includeMeal, setIncludeMeal] = useState(defaultPlanType === "meal");
+  const [includeTraining, setIncludeTraining] = useState(defaultPlanType === "training");
 
-  // Step 2a: Essensplan
+  // Step 2: Präferenzen (nur was relevant ist)
   const [diet, setDiet] = useState<"omnivore" | "vegetarian" | "vegan">("omnivore");
   const [allergies, setAllergies] = useState<string[]>([]);
   const [mealsPerDay, setMealsPerDay] = useState(3);
   const [cookingTime, setCookingTime] = useState(30);
   const [budget, setBudget] = useState<"cheap" | "medium" | "any">("medium");
 
-  // Step 2b: Trainingsplan
   const [daysPerWeek, setDaysPerWeek] = useState(4);
   const [experienceLevel, setExperienceLevel] = useState<"beginner" | "intermediate" | "advanced">("beginner");
   const [equipment, setEquipment] = useState<"gym" | "home" | "bodyweight" | "outdoor">("gym");
   const [sessionTime, setSessionTime] = useState(60);
   const [focus, setFocus] = useState<string[]>(["Ganzkörper"]);
-
-  // Step 3
-  const [includeMeal, setIncludeMeal] = useState(defaultPlanType === "meal");
-  const [includeTraining, setIncludeTraining] = useState(defaultPlanType === "training");
 
   // Honeypot
   const [hp, setHp] = useState("");
@@ -127,8 +124,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
     );
   };
 
-  const canProceedStep1 = age >= 14 && age <= 100 && height >= 120 && weight >= 30;
-  const canProceedStep3 = includeMeal || includeTraining;
+  const canProceedStep1 = (includeMeal || includeTraining) && age >= 14 && age <= 100 && height >= 120 && weight >= 30;
 
   return (
     <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto">
@@ -156,14 +152,58 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
         </div>
 
         <p className="text-center text-sm opacity-60 mb-6">
-          {step === 1 && "Schritt 1: Deine Basisdaten"}
+          {step === 1 && "Schritt 1: Deine Daten & was du brauchst"}
           {step === 2 && "Schritt 2: Deine Präferenzen"}
-          {step === 3 && "Schritt 3: Plan auswählen & generieren"}
+          {step === 3 && "Schritt 3: Zusammenfassung & generieren"}
         </p>
 
-        {/* ── Step 1: Basisdaten ── */}
+        {/* ══════════════════════════════════════════════════════════════════
+            Step 1: Basisdaten + Was generieren?
+           ══════════════════════════════════════════════════════════════════ */}
         {step === 1 && (
           <div className="space-y-5">
+            {/* Was generieren? */}
+            <div className="form-control">
+              <label className="label"><span className="label-text font-semibold">Was möchtest du generieren?</span></label>
+              <div className="grid gap-2">
+                <label
+                  className={`flex items-center gap-3 p-3 rounded-lg border-2 cursor-pointer transition-all ${
+                    includeMeal ? "border-primary bg-primary/5" : "border-base-300"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    className="checkbox checkbox-primary"
+                    checked={includeMeal}
+                    onChange={() => setIncludeMeal(!includeMeal)}
+                  />
+                  <div>
+                    <span className="font-medium">Essensplan</span>
+                    <p className="text-xs opacity-70">7-Tage-Ernährungsplan mit Rezepten und Makros</p>
+                  </div>
+                </label>
+                <label
+                  className={`flex items-center gap-3 p-3 rounded-lg border-2 cursor-pointer transition-all ${
+                    includeTraining ? "border-primary bg-primary/5" : "border-base-300"
+                  }`}
+                >
+                  <input
+                    type="checkbox"
+                    className="checkbox checkbox-primary"
+                    checked={includeTraining}
+                    onChange={() => setIncludeTraining(!includeTraining)}
+                  />
+                  <div>
+                    <span className="font-medium">Trainingsplan</span>
+                    <p className="text-xs opacity-70">Wochenplan mit Übungen, Sätzen und Pausen</p>
+                  </div>
+                </label>
+              </div>
+              {!includeMeal && !includeTraining && (
+                <p className="text-xs text-error mt-1">Wähle mindestens eine Option</p>
+              )}
+            </div>
+
             {/* Ziel */}
             <div className="form-control">
               <label className="label"><span className="label-text font-semibold">Dein Ziel</span></label>
@@ -262,11 +302,13 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
           </div>
         )}
 
-        {/* ── Step 2: Präferenzen ── */}
+        {/* ══════════════════════════════════════════════════════════════════
+            Step 2: Präferenzen — nur was der User in Step 1 gewählt hat
+           ══════════════════════════════════════════════════════════════════ */}
         {step === 2 && (
           <div className="space-y-6">
             {/* Essensplan Preferences */}
-            {(includeMeal || defaultPlanType === "meal") && (
+            {includeMeal && (
               <div>
                 <h3 className="font-bold text-lg mb-3">Essensplan-Präferenzen</h3>
                 <div className="space-y-4">
@@ -330,13 +372,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
                             mealsPerDay === n ? "border-primary bg-primary/10 font-bold" : "border-base-300"
                           }`}
                         >
-                          <input
-                            type="radio"
-                            name="mealsPerDay"
-                            className="hidden"
-                            checked={mealsPerDay === n}
-                            onChange={() => setMealsPerDay(n)}
-                          />
+                          <input type="radio" name="mealsPerDay" className="hidden" checked={mealsPerDay === n} onChange={() => setMealsPerDay(n)} />
                           {n}
                         </label>
                       ))}
@@ -357,13 +393,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
                             cookingTime === t ? "border-primary bg-primary/10 font-bold" : "border-base-300"
                           }`}
                         >
-                          <input
-                            type="radio"
-                            name="cookingTime"
-                            className="hidden"
-                            checked={cookingTime === t}
-                            onChange={() => setCookingTime(t)}
-                          />
+                          <input type="radio" name="cookingTime" className="hidden" checked={cookingTime === t} onChange={() => setCookingTime(t)} />
                           {t === 60 ? "60+" : t} min
                         </label>
                       ))}
@@ -385,13 +415,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
                             budget === b.value ? "border-primary bg-primary/10 font-bold" : "border-base-300"
                           }`}
                         >
-                          <input
-                            type="radio"
-                            name="budget"
-                            className="hidden"
-                            checked={budget === b.value}
-                            onChange={() => setBudget(b.value)}
-                          />
+                          <input type="radio" name="budget" className="hidden" checked={budget === b.value} onChange={() => setBudget(b.value)} />
                           {b.label}
                         </label>
                       ))}
@@ -402,12 +426,12 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
             )}
 
             {/* Divider if both */}
-            {(includeMeal || defaultPlanType === "meal") && (includeTraining || defaultPlanType === "training") && (
+            {includeMeal && includeTraining && (
               <div className="divider">Trainingsplan</div>
             )}
 
             {/* Trainingsplan Preferences */}
-            {(includeTraining || defaultPlanType === "training") && (
+            {includeTraining && (
               <div>
                 <h3 className="font-bold text-lg mb-3">Trainingsplan-Präferenzen</h3>
                 <div className="space-y-4">
@@ -499,13 +523,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
                             sessionTime === t ? "border-primary bg-primary/10 font-bold" : "border-base-300"
                           }`}
                         >
-                          <input
-                            type="radio"
-                            name="sessionTime"
-                            className="hidden"
-                            checked={sessionTime === t}
-                            onChange={() => setSessionTime(t)}
-                          />
+                          <input type="radio" name="sessionTime" className="hidden" checked={sessionTime === t} onChange={() => setSessionTime(t)} />
                           {t} min
                         </label>
                       ))}
@@ -534,57 +552,69 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
           </div>
         )}
 
-        {/* ── Step 3: Auswahl & Generieren ── */}
+        {/* ══════════════════════════════════════════════════════════════════
+            Step 3: Zusammenfassung + Generieren
+           ══════════════════════════════════════════════════════════════════ */}
         {step === 3 && (
-          <div className="space-y-6">
-            <h3 className="font-bold text-lg text-center">Was möchtest du generieren?</h3>
+          <div className="space-y-5">
+            <h3 className="font-bold text-lg text-center">Alles korrekt?</h3>
 
-            <div className="grid gap-3">
-              <label
-                className={`flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                  includeMeal ? "border-primary bg-primary/5" : "border-base-300"
-                }`}
-              >
-                <input
-                  type="checkbox"
-                  className="checkbox checkbox-primary checkbox-lg"
-                  checked={includeMeal}
-                  onChange={() => setIncludeMeal(!includeMeal)}
-                />
-                <div>
-                  <p className="font-bold text-lg">Essensplan</p>
-                  <p className="text-sm opacity-70">7-Tage-Ernährungsplan mit Rezepten und Makros</p>
-                </div>
-              </label>
+            <div className="bg-base-200 rounded-xl p-4 space-y-3 text-sm">
+              <div className="flex justify-between">
+                <span className="opacity-60">Generieren</span>
+                <span className="font-semibold">
+                  {includeMeal && includeTraining ? "Essensplan + Trainingsplan" : includeMeal ? "Essensplan" : "Trainingsplan"}
+                </span>
+              </div>
+              <div className="flex justify-between">
+                <span className="opacity-60">Ziel</span>
+                <span className="font-semibold">{GOALS.find((g) => g.value === goal)?.label}</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="opacity-60">Profil</span>
+                <span>{gender === "male" ? "Männlich" : "Weiblich"}, {age} J., {height} cm, {weight} kg</span>
+              </div>
+              <div className="flex justify-between">
+                <span className="opacity-60">Aktivität</span>
+                <span>{ACTIVITY_LEVELS.find((l) => l.value === activityLevel)?.label}</span>
+              </div>
 
-              <label
-                className={`flex items-center gap-4 p-4 rounded-xl border-2 cursor-pointer transition-all ${
-                  includeTraining ? "border-primary bg-primary/5" : "border-base-300"
-                }`}
-              >
-                <input
-                  type="checkbox"
-                  className="checkbox checkbox-primary checkbox-lg"
-                  checked={includeTraining}
-                  onChange={() => setIncludeTraining(!includeTraining)}
-                />
-                <div>
-                  <p className="font-bold text-lg">Trainingsplan</p>
-                  <p className="text-sm opacity-70">Wochenplan mit Übungen, Sätzen und Pausen</p>
-                </div>
-              </label>
-            </div>
-
-            {/* Summary */}
-            <div className="bg-base-200 rounded-xl p-4 space-y-2 text-sm">
-              <p className="font-semibold mb-2">Zusammenfassung</p>
-              <p>Geschlecht: {gender === "male" ? "Männlich" : "Weiblich"} | Alter: {age} | {height} cm | {weight} kg</p>
-              <p>Ziel: {GOALS.find((g) => g.value === goal)?.label} | Aktivität: {ACTIVITY_LEVELS.find((l) => l.value === activityLevel)?.label}</p>
               {includeMeal && (
-                <p>Ernährung: {DIETS.find((d) => d.value === diet)?.label} | {mealsPerDay} Mahlzeiten | Max. {cookingTime} min</p>
+                <>
+                  <div className="divider my-1 text-xs opacity-40">Essensplan</div>
+                  <div className="flex justify-between">
+                    <span className="opacity-60">Ernährung</span>
+                    <span>{DIETS.find((d) => d.value === diet)?.label}</span>
+                  </div>
+                  {allergies.length > 0 && (
+                    <div className="flex justify-between">
+                      <span className="opacity-60">Allergien</span>
+                      <span>{allergies.join(", ")}</span>
+                    </div>
+                  )}
+                  <div className="flex justify-between">
+                    <span className="opacity-60">Mahlzeiten / Kochzeit</span>
+                    <span>{mealsPerDay}x / max. {cookingTime} min</span>
+                  </div>
+                </>
               )}
+
               {includeTraining && (
-                <p>Training: {EXPERIENCE_LEVELS.find((l) => l.value === experienceLevel)?.label} | {daysPerWeek}x/Woche | {EQUIPMENT_OPTIONS.find((e) => e.value === equipment)?.label}</p>
+                <>
+                  <div className="divider my-1 text-xs opacity-40">Trainingsplan</div>
+                  <div className="flex justify-between">
+                    <span className="opacity-60">Level</span>
+                    <span>{EXPERIENCE_LEVELS.find((l) => l.value === experienceLevel)?.label}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="opacity-60">Equipment</span>
+                    <span>{EQUIPMENT_OPTIONS.find((e) => e.value === equipment)?.label}</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="opacity-60">Frequenz / Session</span>
+                    <span>{daysPerWeek}x/Woche, {sessionTime} min</span>
+                  </div>
+                </>
               )}
             </div>
 
@@ -631,7 +661,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
               type="button"
               className="btn btn-primary btn-lg gap-2"
               onClick={handleSubmit}
-              disabled={isLoading || !canProceedStep3}
+              disabled={isLoading}
             >
               {isLoading ? (
                 <span className="loading loading-spinner" />

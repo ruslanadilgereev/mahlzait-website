@@ -1,4 +1,6 @@
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import { GoogleGenAI } from '@google/genai';
+import { z } from 'zod';
+import { zodToJsonSchema } from 'zod-to-json-schema';
 
 // ── Rate limiting (in-memory, resets on cold start) ──
 const ipCounts = new Map();
@@ -57,7 +59,6 @@ function validateInput(body) {
   const { type, userData } = body;
   if (!['meal', 'training', 'both'].includes(type)) return 'Invalid type';
   if (!userData || typeof userData !== 'object') return 'Missing userData';
-  // Honeypot check
   if (userData._hp) return 'Bot detected';
 
   const { gender, age, height, weight, goal, activityLevel } = userData;
@@ -82,6 +83,66 @@ function validateInput(body) {
   return null;
 }
 
+// ── Zod Schemas (Gemini responseSchema) ──
+
+const mealSchema = z.object({
+  summary: z.object({
+    dailyCalories: z.number().describe('Tägliche Gesamtkalorien'),
+    proteinGrams: z.number().describe('Tägliche Protein in Gramm'),
+    carbsGrams: z.number().describe('Tägliche Kohlenhydrate in Gramm'),
+    fatGrams: z.number().describe('Tägliches Fett in Gramm'),
+    goal: z.string().describe('Ziel des Plans, z.B. Abnehmen'),
+    diet: z.string().describe('Ernährungsform, z.B. Vegetarisch'),
+  }),
+  days: z.array(z.object({
+    day: z.string().describe('Wochentag, z.B. Montag'),
+    meals: z.array(z.object({
+      type: z.string().describe('Mahlzeitentyp: Frühstück, Mittagessen, Abendessen, Snack'),
+      name: z.string().describe('Name des Gerichts'),
+      ingredients: z.array(z.string()).describe('Zutaten mit Mengenangabe'),
+      prepTimeMinutes: z.number().describe('Zubereitungszeit in Minuten'),
+      calories: z.number().describe('Kalorien der Mahlzeit'),
+      protein: z.number().describe('Protein in Gramm'),
+      carbs: z.number().describe('Kohlenhydrate in Gramm'),
+      fat: z.number().describe('Fett in Gramm'),
+    })),
+    totalCalories: z.number().describe('Gesamtkalorien des Tages'),
+    totalProtein: z.number().describe('Gesamtprotein des Tages in Gramm'),
+    totalCarbs: z.number().describe('Gesamtkohlenhydrate des Tages in Gramm'),
+    totalFat: z.number().describe('Gesamtfett des Tages in Gramm'),
+  })).describe('7 Tage von Montag bis Sonntag'),
+  tips: z.array(z.string()).describe('3 praktische Tipps zur Umsetzung'),
+  disclaimer: z.string().describe('Haftungsausschluss'),
+});
+
+const trainingSchema = z.object({
+  summary: z.object({
+    goal: z.string().describe('Trainingsziel'),
+    level: z.string().describe('Erfahrungslevel'),
+    daysPerWeek: z.number().describe('Trainingstage pro Woche'),
+    splitType: z.string().describe('Split-Typ, z.B. Push/Pull/Legs, Ganzkörper, Upper/Lower'),
+  }),
+  days: z.array(z.object({
+    day: z.string().describe('Wochentag'),
+    focus: z.string().describe('Fokus des Tages, z.B. Push – Brust, Schulter, Trizeps. Bei Ruhetag: Regeneration'),
+    isRestDay: z.boolean().describe('true wenn Ruhetag'),
+    warmup: z.array(z.string()).describe('Aufwärmübungen. Leer bei Ruhetag.'),
+    exercises: z.array(z.object({
+      name: z.string().describe('Name der Übung'),
+      muscleGroup: z.string().describe('Beanspruchte Muskelgruppe'),
+      sets: z.number().describe('Anzahl Sätze'),
+      reps: z.string().describe('Wiederholungen, z.B. 8-12 oder 30s'),
+      restSeconds: z.number().describe('Pause zwischen Sätzen in Sekunden'),
+      notes: z.string().describe('Progressionshinweis oder Technik-Tipp'),
+    })).describe('Übungen des Tages. Leer bei Ruhetag.'),
+    cooldown: z.array(z.string()).describe('Cool-Down Übungen. Leer bei Ruhetag.'),
+    estimatedMinutes: z.number().describe('Geschätzte Dauer in Minuten. 0 bei Ruhetag.'),
+  })).describe('7 Tage von Montag bis Sonntag'),
+  progressionPlan: z.string().describe('Progressionsstrategie über 4-6 Wochen'),
+  tips: z.array(z.string()).describe('3 praktische Trainingstipps'),
+  disclaimer: z.string().describe('Haftungsausschluss'),
+});
+
 // ── Prompt builders ──
 const GOAL_LABELS = { lose: 'Abnehmen', maintain: 'Gewicht halten', gain: 'Muskelaufbau' };
 const DIET_LABELS = { omnivore: 'Omnivor (alles)', vegetarian: 'Vegetarisch', vegan: 'Vegan' };
@@ -105,47 +166,10 @@ STRENGE VORGABEN (nicht abweichen):
 - Ziel: ${GOAL_LABELS[userData.goal]}
 
 REGELN:
-- Jede Mahlzeit muss realistische, alltagstaugliche Gerichte enthalten
-- Verwende gängige Zutaten die man in jedem deutschen Supermarkt bekommt
-- Die Makros jeder Mahlzeit müssen angegeben werden
+- Realistische, alltagstaugliche Gerichte mit gängigen Zutaten aus dem deutschen Supermarkt
 - Die Tagessumme muss den Vorgaben entsprechen (±50 kcal Toleranz)
 - Abwechslung: Keine Mahlzeit darf sich innerhalb der 7 Tage wiederholen
-- Alle Texte auf Deutsch
-
-Antworte ausschließlich als valides JSON im folgenden Format:
-{
-  "summary": {
-    "dailyCalories": number,
-    "proteinGrams": number,
-    "carbsGrams": number,
-    "fatGrams": number,
-    "goal": "string",
-    "diet": "string"
-  },
-  "days": [
-    {
-      "day": "Montag",
-      "meals": [
-        {
-          "type": "Frühstück",
-          "name": "Name des Gerichts",
-          "ingredients": ["Zutat 1 (Menge)", "Zutat 2 (Menge)"],
-          "prepTimeMinutes": number,
-          "calories": number,
-          "protein": number,
-          "carbs": number,
-          "fat": number
-        }
-      ],
-      "totalCalories": number,
-      "totalProtein": number,
-      "totalCarbs": number,
-      "totalFat": number
-    }
-  ],
-  "tips": ["Tipp 1", "Tipp 2", "Tipp 3"],
-  "disclaimer": "Dieser Plan dient der Orientierung und ersetzt keine professionelle Ernährungsberatung."
-}`;
+- Alle Texte auf Deutsch`;
 }
 
 function buildTrainingPrompt(userData, macros) {
@@ -164,46 +188,12 @@ VORGABEN:
 - Tägliche Kalorien: ${macros.calories} kcal (für Kontext)
 
 REGELN:
-- Erstelle einen Plan für 7 Tage (Trainingstage + Ruhetage)
-- Ruhetage klar markieren
-- Für jede Übung: Name, Muskelgruppe, Sätze, Wiederholungen, Pause
-- Warm-Up und Cool-Down für jeden Trainingstag
-- Progressive Overload Hinweise geben
-- Zum Level passende Übungen wählen (keine komplexen Olympischen Lifts für Anfänger)
-- Alle Texte auf Deutsch
-
-Antworte ausschließlich als valides JSON im folgenden Format:
-{
-  "summary": {
-    "goal": "string",
-    "level": "string",
-    "daysPerWeek": number,
-    "splitType": "string (z.B. Push/Pull/Legs, Ganzkörper, Upper/Lower)"
-  },
-  "days": [
-    {
-      "day": "Montag",
-      "focus": "Push – Brust, Schulter, Trizeps",
-      "isRestDay": false,
-      "warmup": ["Übung 1 (Dauer/Wiederholungen)", "Übung 2"],
-      "exercises": [
-        {
-          "name": "Bankdrücken",
-          "muscleGroup": "Brust",
-          "sets": 4,
-          "reps": "8-12",
-          "restSeconds": 90,
-          "notes": "Gewicht jede Woche um 2.5kg steigern"
-        }
-      ],
-      "cooldown": ["Dehnung 1", "Dehnung 2"],
-      "estimatedMinutes": number
-    }
-  ],
-  "progressionPlan": "Beschreibung der Progressionsstrategie über 4-6 Wochen",
-  "tips": ["Tipp 1", "Tipp 2", "Tipp 3"],
-  "disclaimer": "Dieser Plan dient der Orientierung und ersetzt keine professionelle Trainingsberatung. Konsultiere bei gesundheitlichen Einschränkungen einen Arzt."
-}`;
+- 7 Tage (Trainingstage + Ruhetage)
+- Ruhetage: isRestDay=true, leere exercises/warmup/cooldown Arrays, estimatedMinutes=0
+- Trainingstage: Warm-Up, Hauptübungen, Cool-Down
+- Progressive Overload Hinweise in notes
+- Zum Level passende Übungen (keine Olympischen Lifts für Anfänger)
+- Alle Texte auf Deutsch`;
 }
 
 // ── Main handler ──
@@ -235,15 +225,7 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: 'GEMINI_API_KEY not configured' });
   }
 
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({
-    model: 'gemini-3.1-pro-preview',
-    generationConfig: {
-      responseMimeType: 'application/json',
-      maxOutputTokens: 8192,
-      temperature: 0.7,
-    },
-  });
+  const ai = new GoogleGenAI({ apiKey });
 
   // Set up SSE
   res.setHeader('Content-Type', 'text/event-stream');
@@ -258,29 +240,38 @@ export default async function handler(req, res) {
     const tasks = [];
 
     if (type === 'meal' || type === 'both') {
-      tasks.push({ key: 'meal', prompt: buildMealPrompt(userData, macros) });
+      tasks.push({
+        key: 'meal',
+        prompt: buildMealPrompt(userData, macros),
+        schema: mealSchema,
+      });
     }
     if (type === 'training' || type === 'both') {
-      tasks.push({ key: 'training', prompt: buildTrainingPrompt(userData, macros) });
+      tasks.push({
+        key: 'training',
+        prompt: buildTrainingPrompt(userData, macros),
+        schema: trainingSchema,
+      });
     }
 
     for (const task of tasks) {
       res.write(`data: ${JSON.stringify({ event: 'start', planType: task.key })}\n\n`);
 
-      const result = await model.generateContent(task.prompt);
-      const text = result.response.text();
+      const result = await ai.models.generateContent({
+        model: 'gemini-3.1-pro-preview',
+        contents: task.prompt,
+        config: {
+          responseMimeType: 'application/json',
+          responseJsonSchema: zodToJsonSchema(task.schema),
+          maxOutputTokens: 8192,
+          temperature: 0.7,
+        },
+      });
 
-      let parsed;
-      try {
-        parsed = JSON.parse(text);
-      } catch {
-        res.write(`data: ${JSON.stringify({ event: 'error', planType: task.key, message: 'Failed to parse AI response' })}\n\n`);
-        continue;
-      }
+      const parsed = JSON.parse(result.text);
 
       // Stream days one by one for progressive rendering
       if (parsed.days && Array.isArray(parsed.days)) {
-        // Send summary first
         const summaryData = { ...parsed };
         delete summaryData.days;
         res.write(`data: ${JSON.stringify({ event: 'summary', planType: task.key, data: summaryData })}\n\n`);

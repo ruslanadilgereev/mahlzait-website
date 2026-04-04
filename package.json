@@ -13,7 +13,8 @@
     "wissen:extract": "node scripts/wissen/extract-pdfs.cjs",
     "wissen:resolve": "node scripts/wissen/resolve-crossref.cjs",
     "wissen:check": "node scripts/wissen/check-wissen-slugs.cjs",
-    "favicon:generate": "node scripts/generate-favicon.cjs"
+    "favicon:generate": "node scripts/generate-favicon.cjs",
+    "indexing:submit": "node scripts/submit-indexing.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
@@ -21,6 +22,7 @@
     "@astrojs/rss": "^4.0.14",
     "@astrojs/sitemap": "^3.6.0",
     "@astrojs/tailwind": "^6.0.2",
+    "@google/genai": "^1.48.0",
     "@google/generative-ai": "^0.24.1",
     "@heroicons/react": "^2.1.4",
     "@vercel/analytics": "^1.5.0",
@@ -38,7 +40,8 @@
     "remark-gfm": "^4.0.1",
     "schema-dts": "^1.1.5",
     "swiper": "^11.1.8",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "zod-to-json-schema": "^3.25.2"
   },
   "devDependencies": {
     "@nuasite/agent-summary": "^0.0.37",
