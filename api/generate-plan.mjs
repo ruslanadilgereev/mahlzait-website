@@ -1,6 +1,4 @@
 import { GoogleGenAI } from '@google/genai';
-import { z } from 'zod';
-import { zodToJsonSchema } from 'zod-to-json-schema';
 
 // ── Rate limiting (in-memory, resets on cold start) ──
 const ipCounts = new Map();
@@ -83,65 +81,111 @@ function validateInput(body) {
   return null;
 }
 
-// ── Zod Schemas (Gemini responseSchema) ──
+// ── JSON Schemas for Gemini responseSchema ──
 
-const mealSchema = z.object({
-  summary: z.object({
-    dailyCalories: z.number().describe('Tägliche Gesamtkalorien'),
-    proteinGrams: z.number().describe('Tägliche Protein in Gramm'),
-    carbsGrams: z.number().describe('Tägliche Kohlenhydrate in Gramm'),
-    fatGrams: z.number().describe('Tägliches Fett in Gramm'),
-    goal: z.string().describe('Ziel des Plans, z.B. Abnehmen'),
-    diet: z.string().describe('Ernährungsform, z.B. Vegetarisch'),
-  }),
-  days: z.array(z.object({
-    day: z.string().describe('Wochentag, z.B. Montag'),
-    meals: z.array(z.object({
-      type: z.string().describe('Mahlzeitentyp: Frühstück, Mittagessen, Abendessen, Snack'),
-      name: z.string().describe('Name des Gerichts'),
-      ingredients: z.array(z.string()).describe('Zutaten mit Mengenangabe'),
-      prepTimeMinutes: z.number().describe('Zubereitungszeit in Minuten'),
-      calories: z.number().describe('Kalorien der Mahlzeit'),
-      protein: z.number().describe('Protein in Gramm'),
-      carbs: z.number().describe('Kohlenhydrate in Gramm'),
-      fat: z.number().describe('Fett in Gramm'),
-    })),
-    totalCalories: z.number().describe('Gesamtkalorien des Tages'),
-    totalProtein: z.number().describe('Gesamtprotein des Tages in Gramm'),
-    totalCarbs: z.number().describe('Gesamtkohlenhydrate des Tages in Gramm'),
-    totalFat: z.number().describe('Gesamtfett des Tages in Gramm'),
-  })).describe('7 Tage von Montag bis Sonntag'),
-  tips: z.array(z.string()).describe('3 praktische Tipps zur Umsetzung'),
-  disclaimer: z.string().describe('Haftungsausschluss'),
-});
+const mealJsonSchema = {
+  type: 'object',
+  required: ['summary', 'days', 'tips', 'disclaimer'],
+  properties: {
+    summary: {
+      type: 'object',
+      required: ['dailyCalories', 'proteinGrams', 'carbsGrams', 'fatGrams', 'goal', 'diet'],
+      properties: {
+        dailyCalories: { type: 'number', description: 'Tägliche Gesamtkalorien' },
+        proteinGrams: { type: 'number', description: 'Protein in Gramm' },
+        carbsGrams: { type: 'number', description: 'Kohlenhydrate in Gramm' },
+        fatGrams: { type: 'number', description: 'Fett in Gramm' },
+        goal: { type: 'string', description: 'Ziel, z.B. Abnehmen' },
+        diet: { type: 'string', description: 'Ernährungsform' },
+      },
+    },
+    days: {
+      type: 'array',
+      description: '7 Tage Montag bis Sonntag',
+      items: {
+        type: 'object',
+        required: ['day', 'meals', 'totalCalories', 'totalProtein', 'totalCarbs', 'totalFat'],
+        properties: {
+          day: { type: 'string', description: 'Wochentag' },
+          meals: {
+            type: 'array',
+            items: {
+              type: 'object',
+              required: ['type', 'name', 'ingredients', 'prepTimeMinutes', 'calories', 'protein', 'carbs', 'fat'],
+              properties: {
+                type: { type: 'string', description: 'Frühstück, Mittagessen, Abendessen oder Snack' },
+                name: { type: 'string', description: 'Gerichtname' },
+                ingredients: { type: 'array', items: { type: 'string' }, description: 'Zutaten mit Menge' },
+                prepTimeMinutes: { type: 'number' },
+                calories: { type: 'number' },
+                protein: { type: 'number' },
+                carbs: { type: 'number' },
+                fat: { type: 'number' },
+              },
+            },
+          },
+          totalCalories: { type: 'number' },
+          totalProtein: { type: 'number' },
+          totalCarbs: { type: 'number' },
+          totalFat: { type: 'number' },
+        },
+      },
+    },
+    tips: { type: 'array', items: { type: 'string' }, description: '3 praktische Tipps' },
+    disclaimer: { type: 'string' },
+  },
+};
 
-const trainingSchema = z.object({
-  summary: z.object({
-    goal: z.string().describe('Trainingsziel'),
-    level: z.string().describe('Erfahrungslevel'),
-    daysPerWeek: z.number().describe('Trainingstage pro Woche'),
-    splitType: z.string().describe('Split-Typ, z.B. Push/Pull/Legs, Ganzkörper, Upper/Lower'),
-  }),
-  days: z.array(z.object({
-    day: z.string().describe('Wochentag'),
-    focus: z.string().describe('Fokus des Tages, z.B. Push – Brust, Schulter, Trizeps. Bei Ruhetag: Regeneration'),
-    isRestDay: z.boolean().describe('true wenn Ruhetag'),
-    warmup: z.array(z.string()).describe('Aufwärmübungen. Leer bei Ruhetag.'),
-    exercises: z.array(z.object({
-      name: z.string().describe('Name der Übung'),
-      muscleGroup: z.string().describe('Beanspruchte Muskelgruppe'),
-      sets: z.number().describe('Anzahl Sätze'),
-      reps: z.string().describe('Wiederholungen, z.B. 8-12 oder 30s'),
-      restSeconds: z.number().describe('Pause zwischen Sätzen in Sekunden'),
-      notes: z.string().describe('Progressionshinweis oder Technik-Tipp'),
-    })).describe('Übungen des Tages. Leer bei Ruhetag.'),
-    cooldown: z.array(z.string()).describe('Cool-Down Übungen. Leer bei Ruhetag.'),
-    estimatedMinutes: z.number().describe('Geschätzte Dauer in Minuten. 0 bei Ruhetag.'),
-  })).describe('7 Tage von Montag bis Sonntag'),
-  progressionPlan: z.string().describe('Progressionsstrategie über 4-6 Wochen'),
-  tips: z.array(z.string()).describe('3 praktische Trainingstipps'),
-  disclaimer: z.string().describe('Haftungsausschluss'),
-});
+const trainingJsonSchema = {
+  type: 'object',
+  required: ['summary', 'days', 'progressionPlan', 'tips', 'disclaimer'],
+  properties: {
+    summary: {
+      type: 'object',
+      required: ['goal', 'level', 'daysPerWeek', 'splitType'],
+      properties: {
+        goal: { type: 'string' },
+        level: { type: 'string' },
+        daysPerWeek: { type: 'number' },
+        splitType: { type: 'string', description: 'z.B. Push/Pull/Legs, Ganzkörper' },
+      },
+    },
+    days: {
+      type: 'array',
+      description: '7 Tage Montag bis Sonntag',
+      items: {
+        type: 'object',
+        required: ['day', 'focus', 'isRestDay', 'warmup', 'exercises', 'cooldown', 'estimatedMinutes'],
+        properties: {
+          day: { type: 'string' },
+          focus: { type: 'string', description: 'z.B. Push – Brust, Schulter. Bei Ruhetag: Regeneration' },
+          isRestDay: { type: 'boolean' },
+          warmup: { type: 'array', items: { type: 'string' } },
+          exercises: {
+            type: 'array',
+            items: {
+              type: 'object',
+              required: ['name', 'muscleGroup', 'sets', 'reps', 'restSeconds', 'notes'],
+              properties: {
+                name: { type: 'string' },
+                muscleGroup: { type: 'string' },
+                sets: { type: 'number' },
+                reps: { type: 'string', description: 'z.B. 8-12 oder 30s' },
+                restSeconds: { type: 'number' },
+                notes: { type: 'string', description: 'Progressionshinweis' },
+              },
+            },
+          },
+          cooldown: { type: 'array', items: { type: 'string' } },
+          estimatedMinutes: { type: 'number', description: '0 bei Ruhetag' },
+        },
+      },
+    },
+    progressionPlan: { type: 'string' },
+    tips: { type: 'array', items: { type: 'string' } },
+    disclaimer: { type: 'string' },
+  },
+};
 
 // ── Prompt builders ──
 const GOAL_LABELS = { lose: 'Abnehmen', maintain: 'Gewicht halten', gain: 'Muskelaufbau' };
@@ -198,96 +242,113 @@ REGELN:
 
 // ── Main handler ──
 export default async function handler(req, res) {
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' });
-  }
-
-  const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket?.remoteAddress || 'unknown';
-  if (!checkRateLimit(ip)) {
-    return res.status(429).json({
-      error: 'Rate limit exceeded',
-      message: 'Du hast das Limit von 3 Generierungen pro Stunde erreicht. Bitte versuche es später erneut.',
-    });
-  }
-
-  const body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
-  const validationError = validateInput(body);
-  if (validationError) {
-    return res.status(400).json({ error: validationError });
-  }
-
-  const { type, userData } = body;
-  const tdee = calculateTDEE(userData.gender, userData.age, userData.height, userData.weight, userData.activityLevel);
-  const macros = calculateMacros(tdee, userData.goal);
-
-  const apiKey = process.env.GEMINI_API_KEY;
-  if (!apiKey) {
-    return res.status(500).json({ error: 'GEMINI_API_KEY not configured' });
-  }
-
-  const ai = new GoogleGenAI({ apiKey });
-
-  // Set up SSE
-  res.setHeader('Content-Type', 'text/event-stream');
-  res.setHeader('Cache-Control', 'no-cache');
-  res.setHeader('Connection', 'keep-alive');
-  res.setHeader('Access-Control-Allow-Origin', 'https://www.mahlzait.de');
-
-  // Send macros first so client can display summary immediately
-  res.write(`data: ${JSON.stringify({ event: 'macros', data: { tdee, ...macros } })}\n\n`);
-
   try {
-    const tasks = [];
-
-    if (type === 'meal' || type === 'both') {
-      tasks.push({
-        key: 'meal',
-        prompt: buildMealPrompt(userData, macros),
-        schema: mealSchema,
-      });
+    if (req.method !== 'POST') {
+      return res.status(405).json({ error: 'Method not allowed' });
     }
-    if (type === 'training' || type === 'both') {
-      tasks.push({
-        key: 'training',
-        prompt: buildTrainingPrompt(userData, macros),
-        schema: trainingSchema,
+
+    const ip = req.headers['x-forwarded-for']?.split(',')[0]?.trim() || req.socket?.remoteAddress || 'unknown';
+    if (!checkRateLimit(ip)) {
+      return res.status(429).json({
+        error: 'Rate limit exceeded',
+        message: 'Du hast das Limit von 3 Generierungen pro Stunde erreicht. Bitte versuche es später erneut.',
       });
     }
 
-    for (const task of tasks) {
-      res.write(`data: ${JSON.stringify({ event: 'start', planType: task.key })}\n\n`);
+    let body;
+    try {
+      body = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
+    } catch {
+      return res.status(400).json({ error: 'Invalid JSON body' });
+    }
 
-      const result = await ai.models.generateContent({
-        model: 'gemini-3.1-pro-preview',
-        contents: task.prompt,
-        config: {
-          responseMimeType: 'application/json',
-          responseJsonSchema: zodToJsonSchema(task.schema),
-          maxOutputTokens: 8192,
-          temperature: 0.7,
-        },
-      });
+    const validationError = validateInput(body);
+    if (validationError) {
+      return res.status(400).json({ error: validationError });
+    }
 
-      const parsed = JSON.parse(result.text);
+    const { type, userData } = body;
+    const tdee = calculateTDEE(userData.gender, userData.age, userData.height, userData.weight, userData.activityLevel);
+    const macros = calculateMacros(tdee, userData.goal);
 
-      // Stream days one by one for progressive rendering
-      if (parsed.days && Array.isArray(parsed.days)) {
-        const summaryData = { ...parsed };
-        delete summaryData.days;
-        res.write(`data: ${JSON.stringify({ event: 'summary', planType: task.key, data: summaryData })}\n\n`);
+    const apiKey = process.env.GEMINI_API_KEY;
+    if (!apiKey) {
+      return res.status(500).json({ error: 'GEMINI_API_KEY not configured', message: 'GEMINI_API_KEY ist nicht gesetzt.' });
+    }
 
-        for (let i = 0; i < parsed.days.length; i++) {
-          res.write(`data: ${JSON.stringify({ event: 'day', planType: task.key, index: i, data: parsed.days[i] })}\n\n`);
+    const ai = new GoogleGenAI({ apiKey });
+
+    // Set up SSE
+    res.setHeader('Content-Type', 'text/event-stream');
+    res.setHeader('Cache-Control', 'no-cache');
+    res.setHeader('Connection', 'keep-alive');
+    res.setHeader('Access-Control-Allow-Origin', '*');
+
+    // Send macros first so client can display summary immediately
+    res.write(`data: ${JSON.stringify({ event: 'macros', data: { tdee, ...macros } })}\n\n`);
+
+    try {
+      const tasks = [];
+
+      if (type === 'meal' || type === 'both') {
+        tasks.push({
+          key: 'meal',
+          prompt: buildMealPrompt(userData, macros),
+          schema: mealJsonSchema,
+        });
+      }
+      if (type === 'training' || type === 'both') {
+        tasks.push({
+          key: 'training',
+          prompt: buildTrainingPrompt(userData, macros),
+          schema: trainingJsonSchema,
+        });
+      }
+
+      for (const task of tasks) {
+        res.write(`data: ${JSON.stringify({ event: 'start', planType: task.key })}\n\n`);
+
+        const result = await ai.models.generateContent({
+          model: 'gemini-3.1-pro-preview',
+          contents: task.prompt,
+          config: {
+            responseMimeType: 'application/json',
+            responseJsonSchema: task.schema,
+            maxOutputTokens: 65536,
+            temperature: 0.7,
+          },
+        });
+
+        const parsed = JSON.parse(result.text);
+
+        // Stream days one by one for progressive rendering
+        if (parsed.days && Array.isArray(parsed.days)) {
+          const summaryData = { ...parsed };
+          delete summaryData.days;
+          res.write(`data: ${JSON.stringify({ event: 'summary', planType: task.key, data: summaryData })}\n\n`);
+
+          for (let i = 0; i < parsed.days.length; i++) {
+            res.write(`data: ${JSON.stringify({ event: 'day', planType: task.key, index: i, data: parsed.days[i] })}\n\n`);
+          }
+        } else {
+          res.write(`data: ${JSON.stringify({ event: 'complete', planType: task.key, data: parsed })}\n\n`);
         }
+      }
+
+      res.write(`data: ${JSON.stringify({ event: 'done' })}\n\n`);
+      res.end();
+    } catch (e) {
+      if (res.headersSent) {
+        res.write(`data: ${JSON.stringify({ event: 'error', message: String(e.message) })}\n\n`);
+        res.end();
       } else {
-        res.write(`data: ${JSON.stringify({ event: 'complete', planType: task.key, data: parsed })}\n\n`);
+        return res.status(500).json({ error: String(e.message), message: `Fehler: ${e.message}` });
       }
     }
-
-    res.write(`data: ${JSON.stringify({ event: 'done' })}\n\n`);
-    res.end();
-  } catch (e) {
-    res.write(`data: ${JSON.stringify({ event: 'error', message: String(e.message) })}\n\n`);
+  } catch (outerError) {
+    if (!res.headersSent) {
+      return res.status(500).json({ error: String(outerError.message), message: `Fehler: ${outerError.message}` });
+    }
     res.end();
   }
 }

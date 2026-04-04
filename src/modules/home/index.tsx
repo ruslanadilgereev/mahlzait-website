@@ -15,6 +15,7 @@ import ComparisonTable from "./_components/comparisonTable";
 import EntityDefinition from "./_components/entityDefinition";
 import PopularFoods from "./_components/popularFoods";
 import SeoHubs from "./_components/seoHubs";
+import AiTools from "./_components/aiTools";
 
 function MedicalDisclaimer() {
   return (
@@ -61,6 +62,7 @@ function Home({ config }: Props) {
         <HowItWorks />
         <Pricing />
         <Testimonials />
+        <AiTools />
         <SeoHubs />
         <PopularFoods />
         <MedicalDisclaimer />

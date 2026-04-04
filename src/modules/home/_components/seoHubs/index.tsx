@@ -20,8 +20,8 @@ function SeoHubs() {
           transition={{ delay: 0.08 }}
           className="text-center text-base-content/60 mb-8 max-w-2xl mx-auto"
         >
-          Die wichtigsten Seiten für Kalorienbedarf, Defizit, Makros und nachhaltiges Abnehmen.
-          So kommst du direkt zu den Themen, nach denen Nutzer am häufigsten suchen.
+          Kalorienbedarf, Defizit, Makros und Abnehmen — die wichtigsten Rechner und Guides
+          für deinen Start ins Tracking.
         </motion.p>
 
         <div className="grid gap-4 md:grid-cols-2">
