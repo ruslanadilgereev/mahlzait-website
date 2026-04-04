@@ -61,7 +61,7 @@ function TrainingsplanPage({ config }: Props) {
       let buffer = "";
 
       setShowResults(true);
-      setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: "smooth" }), 100);
+      setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 300);
 
       while (true) {
         const { done, value } = await reader.read();
@@ -85,8 +85,14 @@ function TrainingsplanPage({ config }: Props) {
                 );
                 break;
               case "summary":
-                if (msg.planType === "meal") setMealSummary(msg.data);
-                if (msg.planType === "training") setTrainingSummary(msg.data);
+                if (msg.planType === "meal") {
+                  const s = msg.data.summary || msg.data;
+                  setMealSummary({ ...s, tips: msg.data.tips, disclaimer: msg.data.disclaimer });
+                }
+                if (msg.planType === "training") {
+                  const s = msg.data.summary || msg.data;
+                  setTrainingSummary({ ...s, tips: msg.data.tips, disclaimer: msg.data.disclaimer, progressionPlan: msg.data.progressionPlan });
+                }
                 break;
               case "day":
                 if (msg.planType === "meal") {

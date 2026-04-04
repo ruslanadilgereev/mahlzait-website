@@ -47,3 +47,51 @@ html {
 .btn.btn-primary {
   border-color: rgba(0, 130, 118, 1);
 }
+
+/* Print: hide everything, show only #meal-print / #training-print */
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 0;
+  }
+  html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  /* Hide all page content */
+  body > * {
+    display: none !important;
+  }
+  /* But show the Astro root that contains React */
+  body > :has(#meal-print),
+  body > :has(#training-print) {
+    display: block !important;
+  }
+  /* Hide everything inside the React tree except the print block */
+  main, nav, footer, section, header, .card, .alert, .navbar, .btn,
+  [class*="appBanner"], [class*="footer"], [class*="collapse"] {
+    display: none !important;
+  }
+  /* The print blocks themselves */
+  #meal-print, #training-print {
+    display: block !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 99999 !important;
+    background: #fff !important;
+    padding: 6mm !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+  /* Ensure parent chain is visible */
+  #meal-print *, #training-print * {
+    color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}

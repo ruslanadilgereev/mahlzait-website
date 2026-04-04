@@ -192,7 +192,75 @@ export default function TrainingPlanResult({ summary, days }: TrainingPlanResult
 
       {/* Disclaimer */}
       {summary?.disclaimer && (
-        <p className="text-xs text-center opacity-50 px-4">{summary.disclaimer}</p>
+        <p className="text-xs text-center opacity-50 px-4 print:!hidden">{summary.disclaimer}</p>
+      )}
+
+      {/* ══════ PRINT-ONLY: Training calendar ══════ */}
+      {days.length > 0 && (
+        <div id="training-print" className="hidden print:!block print:!fixed print:!inset-0 print:!z-[9999] print:!bg-white print:!p-[6mm]" style={{ colorAdjust: "exact", WebkitPrintColorAdjust: "exact" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "4px" }}>
+            <div>
+              <div style={{ fontSize: "13pt", fontWeight: 800, fontFamily: "system-ui, sans-serif" }}>
+                Trainingsplan — {summary?.goal}
+              </div>
+              <div style={{ fontSize: "8pt", color: "#666" }}>
+                {summary?.splitType} | {summary?.level} | {summary?.daysPerWeek}x/Woche
+              </div>
+            </div>
+            <div style={{ fontSize: "7pt", color: "#999", textAlign: "right" }}>
+              mahlzait.de<br />
+              {new Date().toLocaleDateString("de-DE")}
+            </div>
+          </div>
+          <table style={{ width: "100%", borderCollapse: "collapse", tableLayout: "fixed", fontSize: "7pt", lineHeight: 1.2, fontFamily: "system-ui, sans-serif" }}>
+            <colgroup>
+              {days.map((_, i) => <col key={i} style={{ width: `${100 / days.length}%` }} />)}
+            </colgroup>
+            <thead>
+              <tr>
+                {days.map((d) => (
+                  <th key={d.day} style={{ border: "1px solid #ccc", padding: "4px 3px", background: "#009688", color: "#fff", fontWeight: 700, textAlign: "center", fontSize: "8pt" }}>
+                    {d.day} {d.isRestDay ? "(Ruhe)" : `— ${d.focus}`}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                {days.map((d) => (
+                  <td key={d.day} style={{ border: "1px solid #ddd", padding: "3px 4px", verticalAlign: "top", background: d.isRestDay ? "#f9f9f9" : "#fff" }}>
+                    {d.isRestDay ? (
+                      <div style={{ textAlign: "center", color: "#999", fontStyle: "italic", padding: "8px 0" }}>Regeneration</div>
+                    ) : (
+                      <div>
+                        {d.warmup && d.warmup.length > 0 && (
+                          <div style={{ marginBottom: "3px" }}>
+                            <div style={{ fontWeight: 700, fontSize: "6pt", color: "#009688", textTransform: "uppercase" }}>Warm-Up</div>
+                            {d.warmup.map((w, i) => <div key={i} style={{ fontSize: "6.5pt", color: "#666" }}>{w}</div>)}
+                          </div>
+                        )}
+                        {d.exercises && d.exercises.map((ex, i) => (
+                          <div key={i} style={{ borderBottom: "0.5px solid #eee", padding: "1.5px 0" }}>
+                            <div style={{ fontWeight: 600, fontSize: "7pt" }}>{ex.name}</div>
+                            <div style={{ fontSize: "6.5pt", color: "#888" }}>{ex.sets}×{ex.reps} · {ex.restSeconds}s</div>
+                          </div>
+                        ))}
+                        {d.estimatedMinutes ? (
+                          <div style={{ fontSize: "6pt", color: "#999", marginTop: "2px", fontWeight: 600 }}>~{d.estimatedMinutes} min</div>
+                        ) : null}
+                      </div>
+                    )}
+                  </td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
+          {summary?.progressionPlan && (
+            <div style={{ fontSize: "7pt", color: "#666", marginTop: "4px" }}>
+              <strong>Progression:</strong> {summary.progressionPlan}
+            </div>
+          )}
+        </div>
       )}
     </div>
   );

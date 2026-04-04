@@ -18,13 +18,13 @@ function Navbar() {
 
   const [isMobileNavVisible, setIsMobileNavVisible] = useState(false);
   const { scrollYProgress } = useScroll();
-  const y = useTransform(scrollYProgress, [0, 1 / 3], [0, 12], {
+  const y = useTransform(scrollYProgress, [0, 1 / 3], [0, 8], {
     ease: easeIn,
   });
-  const width = useTransform(scrollYProgress, [0, 1 / 3], ["100%", "80%"], {
+  const width = useTransform(scrollYProgress, [0, 1 / 3], ["100%", "92%"], {
     ease: easeIn,
   });
-  const opacity = useTransform(scrollYProgress, [0, 1 / 3], [0, 1], {
+  const opacity = useTransform(scrollYProgress, [0, 1 / 3], [0.6, 1], {
     ease: easeIn,
   });
 
@@ -46,7 +46,7 @@ function Navbar() {
         <motion.div
           style={{ opacity: isMobileNavVisible ? 1 : opacity }}
           className={clsx(
-            "will-change-[border-radius,opacity] transition-all z-[-1] rounded-full absolute left-0 right-0 top-0 bottom-0 bg-base-100 shadow-xl",
+            "will-change-[border-radius,opacity] transition-all z-[-1] rounded-full absolute left-0 right-0 top-0 bottom-0 bg-base-100/95 backdrop-blur-md shadow-xl",
             {
               "rounded-none": isMobileNavVisible,
             }

@@ -2,7 +2,7 @@ import { GoogleGenAI } from '@google/genai';
 
 // ── Rate limiting (in-memory, resets on cold start) ──
 const ipCounts = new Map();
-const RATE_LIMIT = 3;
+const RATE_LIMIT = 10;
 const RATE_WINDOW_MS = 60 * 60 * 1000; // 1 hour
 
 function checkRateLimit(ip) {
@@ -211,7 +211,8 @@ STRENGE VORGABEN (nicht abweichen):
 
 REGELN:
 - Realistische, alltagstaugliche Gerichte mit gängigen Zutaten aus dem deutschen Supermarkt
-- Die Tagessumme muss den Vorgaben entsprechen (±50 kcal Toleranz)
+- WICHTIG: Berechne die Makros jeder einzelnen Mahlzeit realistisch basierend auf den tatsächlichen Zutatenmengen. Die Tagessummen ergeben sich aus der Addition der Einzelmahlzeiten und dürfen zwischen Tagen leicht variieren (±100 kcal Toleranz zum Zielwert ist ok)
+- Jeder Tag MUSS unterschiedliche totalCalories/totalProtein/totalCarbs/totalFat haben — NICHT identische Werte kopieren
 - Abwechslung: Keine Mahlzeit darf sich innerhalb der 7 Tage wiederholen
 - Alle Texte auf Deutsch`;
 }
