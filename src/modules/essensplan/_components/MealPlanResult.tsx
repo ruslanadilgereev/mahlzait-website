@@ -46,8 +46,6 @@ export default function MealPlanResult({ summary, days }: MealPlanResultProps) {
   const carbsPct = summary && summary.dailyCalories ? Math.round((summary.carbsGrams * 4 / summary.dailyCalories) * 100) : 0;
   const fatPct = summary && summary.dailyCalories ? Math.round((summary.fatGrams * 9 / summary.dailyCalories) * 100) : 0;
 
-  const maxMeals = Math.max(...days.map((d) => d.meals.length), 0);
-
   return (
     <div className="space-y-6">
       {/* ── Screen: Summary Card ── */}
@@ -143,78 +141,7 @@ export default function MealPlanResult({ summary, days }: MealPlanResultProps) {
       )}
 
       {summary?.disclaimer && (
-        <p className="text-xs text-center opacity-50 px-4 print:!hidden">{summary.disclaimer}</p>
-      )}
-
-      {/* ══════════════════════════════════════════════════════════════
-          PRINT-ONLY: Full-page landscape calendar (hidden on screen)
-         ══════════════════════════════════════════════════════════════ */}
-      {days.length > 0 && (
-        <div id="meal-print" className="hidden print:!block print:!fixed print:!inset-0 print:!z-[9999] print:!bg-white print:!p-[6mm]" style={{ colorAdjust: "exact", WebkitPrintColorAdjust: "exact" }}>
-          {/* Header */}
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "4px" }}>
-            <div>
-              <div style={{ fontSize: "13pt", fontWeight: 800, fontFamily: "system-ui, sans-serif" }}>
-                Essensplan — {summary?.goal}
-              </div>
-              <div style={{ fontSize: "8pt", color: "#666" }}>
-                {summary?.diet} | Ziel: ~{summary?.dailyCalories} kcal | P: {summary?.proteinGrams}g | K: {summary?.carbsGrams}g | F: {summary?.fatGrams}g
-              </div>
-            </div>
-            <div style={{ fontSize: "7pt", color: "#999", textAlign: "right" }}>
-              mahlzait.de<br />
-              {new Date().toLocaleDateString("de-DE")}
-            </div>
-          </div>
-
-          {/* Table */}
-          <table style={{ width: "100%", borderCollapse: "collapse", tableLayout: "fixed", fontSize: "7.5pt", lineHeight: 1.25, fontFamily: "system-ui, sans-serif" }}>
-            <colgroup>
-              <col style={{ width: "3.5%" }} />
-              {days.map((_, i) => <col key={i} style={{ width: `${96.5 / days.length}%` }} />)}
-            </colgroup>
-            <thead>
-              <tr>
-                <th style={{ border: "1px solid #ccc", padding: "3px", background: "#009688", color: "#fff", fontSize: "6pt" }}></th>
-                {days.map((d) => (
-                  <th key={d.day} style={{ border: "1px solid #ccc", padding: "4px 3px", background: "#009688", color: "#fff", fontWeight: 700, textAlign: "center", fontSize: "8pt" }}>
-                    {d.day}
-                  </th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {Array.from({ length: maxMeals }).map((_, mealIdx) => (
-                <tr key={mealIdx} style={{ background: mealIdx % 2 === 0 ? "#fafafa" : "#fff" }}>
-                  <td style={{ border: "1px solid #ddd", padding: "2px", writingMode: "vertical-lr", textAlign: "center", fontSize: "6pt", fontWeight: 600, transform: "rotate(180deg)", color: "#666", background: "#f0f0f0" }}>
-                    {days[0]?.meals[mealIdx]?.type || ""}
-                  </td>
-                  {days.map((d) => {
-                    const meal = d.meals[mealIdx];
-                    if (!meal) return <td key={d.day} style={{ border: "1px solid #ddd" }}></td>;
-                    return (
-                      <td key={d.day} style={{ border: "1px solid #ddd", padding: "3px 4px", verticalAlign: "top" }}>
-                        <div style={{ fontWeight: 700, fontSize: "7.5pt", marginBottom: "1px" }}>{meal.name}</div>
-                        <div style={{ color: "#888", fontSize: "6.5pt" }}>
-                          {meal.calories} kcal · P{meal.protein} K{meal.carbs} F{meal.fat}
-                        </div>
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-              {/* Totals */}
-              <tr>
-                <td style={{ border: "1px solid #999", padding: "3px", fontWeight: 800, fontSize: "6pt", textAlign: "center", background: "#e8e8e8" }}>&#8721;</td>
-                {days.map((d) => (
-                  <td key={d.day} style={{ border: "1px solid #999", padding: "3px 4px", fontWeight: 700, fontSize: "7pt", background: "#e8e8e8" }}>
-                    {d.totalCalories} kcal · P{d.totalProtein} K{d.totalCarbs} F{d.totalFat}
-                  </td>
-                ))}
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <p className="text-xs text-center opacity-50 px-4">{summary.disclaimer}</p>
       )}
     </div>
   );

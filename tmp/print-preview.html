@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Wochenplan — Mahlzait</title>
+<style>
+  @page { size: A4 landscape; margin: 0; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: #1a1a1a; background: #fff;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .page {
+    width: 297mm; height: 210mm;
+    padding: 4mm 5mm 3mm;
+    margin: 0 auto; position: relative; overflow: hidden;
+    display: flex; flex-direction: column;
+  }
+
+  /* Header */
+  .hd { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5mm; padding-bottom: 1mm; border-bottom: 2.5px solid #009688; }
+  .hd h1 { font-size: 14pt; font-weight: 800; letter-spacing: -0.5px; }
+  .hd h1 span { color: #009688; }
+  .hd .mt { font-size: 7pt; color: #777; }
+  .hd .br { text-align: right; }
+  .hd .br strong { display: block; font-size: 8pt; color: #009688; font-weight: 800; }
+  .hd .br .dt { font-size: 5.5pt; color: #bbb; }
+
+  /* Table */
+  table { width: 100%; border-collapse: collapse; table-layout: fixed; flex: 1; }
+  col.lb { width: 22px; }
+  thead th { background: #009688; color: #fff; font-weight: 700; text-align: center; font-size: 8.5pt; padding: 3.5px 2px; border: 1px solid #00897b; text-transform: uppercase; letter-spacing: 0.4px; }
+  thead th:first-child { background: #00796b; font-size: 0; }
+
+  /* Vertical row labels */
+  .rl {
+    background: #f0f8f7; font-weight: 800; font-size: 7pt; color: #009688;
+    text-transform: uppercase; letter-spacing: 1.5px; text-align: center;
+    vertical-align: middle; border: 1px solid #dde8e6; padding: 0;
+    writing-mode: vertical-lr; transform: rotate(180deg);
+  }
+
+  td { padding: 3px 4px 0; vertical-align: top; border: 1px solid #eee; overflow: hidden; position: relative; height: 1px; /* hack: enables child height:100% */ }
+  /* Wrapper inside each meal td to enable bottom-pinning */
+  .cell { display: flex; flex-direction: column; height: 100%; }
+
+  /* Meals — BIG */
+  .n { font-weight: 800; font-size: 10.5pt; color: #111; line-height: 1.15; }
+  .i { font-size: 8pt; color: #555; line-height: 1.4; margin-top: 1px; flex: 1; }
+  .m { font-size: 7pt; color: #009688; font-weight: 700; padding: 2px 0; border-top: 1px solid #e0eeec; margin-top: auto; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+  /* no alternating bg — clean white */
+
+  /* Training */
+  .xr td:not(.rl) { background: #f2f6f5; border-top: 1.5px solid #cdddd9; }
+  .xr .rl { background: #e0f0e8; color: #2e7d32; border-top: 1.5px solid #cdddd9; }
+  .xt { font-weight: 800; font-size: 9pt; color: #1a1a1a; margin-bottom: 1px; }
+  .xe { font-size: 8pt; color: #444; line-height: 1.4; }
+  .xe b { font-weight: 700; }
+  .xe span { color: #333; font-size: 7pt; }
+  .xd { font-size: 7pt; color: #009688; font-weight: 700; margin-top: 1px; }
+  .rs { color: #ccc; font-style: italic; font-size: 9pt; text-align: center; vertical-align: middle; }
+
+  /* Total */
+  .tl td { background: #e5f2f0 !important; border-top: 2px solid #009688; padding: 3px 4px; vertical-align: middle; }
+  .tl .rl { background: #009688 !important; color: #fff; border-top: 2px solid #009688; }
+  .tv { font-weight: 800; font-size: 10pt; color: #009688; }
+  .ts { font-size: 7.5pt; color: #555; font-weight: 600; }
+
+  /* Footer */
+  .ft { display: flex; justify-content: space-between; align-items: flex-end; margin-top: 1mm; font-size: 5.5pt; color: #ccc; }
+  .ft .pg { color: #888; font-size: 6pt; max-width: 70%; }
+  .ft .pg b { color: #009688; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hd">
+    <div>
+      <h1>Mein <span>Wochenplan</span></h1>
+      <div class="mt">Abnehmen · Omnivor · ~2133 kcal/Tag · Protein 160g · Kohlenhydrate 213g · Fett 71g · Push/Pull/Legs · Anfänger</div>
+    </div>
+    <div class="br"><strong>mahlzait.de</strong><span class="dt">04.04.2026</span></div>
+  </div>
+
+  <table>
+    <colgroup><col class="lb"><col><col><col><col><col><col><col></colgroup>
+    <thead><tr><th></th><th>Montag</th><th>Dienstag</th><th>Mittwoch</th><th>Donnerstag</th><th>Freitag</th><th>Samstag</th><th>Sonntag</th></tr></thead>
+    <tbody>
+
+      <tr>
+        <td class="rl">Frühstück</td>
+        <td><div class="cell"><div class="n">Haferflocken mit Quark</div><div class="i">80g Haferflocken<br>250g Magerquark<br>100g Beeren<br>15g Walnüsse</div><div class="m" style="margin-top:auto">610 kcal · 44g P · 66g K · 16g F</div></div></td>
+        <td><div class="cell"><div class="n">Vollkornbrot mit Ei</div><div class="i">3 Scheiben Vollkornbrot<br>2 Eier<br>60g Avocado<br>30g Mandeln</div><div class="m" style="margin-top:auto">820 kcal · 40g P · 67g K · 41g F</div></div></td>
+        <td><div class="cell"><div class="n">Protein-Pancakes</div><div class="i">75g Pancake-Mix<br>1 Banane<br>50ml Milch<br>15ml Ahornsirup</div><div class="m" style="margin-top:auto">645 kcal · 47g P · 73g K · 16g F</div></div></td>
+        <td><div class="cell"><div class="n">Joghurt mit Müsli</div><div class="i">300g Joghurt<br>50g Müsli<br>30g Nüsse<br>100g Beeren</div><div class="m" style="margin-top:auto">630 kcal · 43g P · 64g K · 21g F</div></div></td>
+        <td><div class="cell"><div class="n">Rührei mit Schinken</div><div class="i">3 Eier<br>50g Schinken<br>2 Toast<br>10g Butter</div><div class="m" style="margin-top:auto">635 kcal · 42g P · 47g K · 29g F</div></div></td>
+        <td><div class="cell"><div class="n">Protein-Porridge</div><div class="i">80g Haferflocken<br>30g Whey<br>250ml Milch<br>1 Birne</div><div class="m" style="margin-top:auto">590 kcal · 38g P · 70g K · 15g F</div></div></td>
+        <td><div class="cell"><div class="n">Hüttenkäse + Mango</div><div class="i">250g Hüttenkäse<br>150g Mango<br>20g Kokosraspeln<br>30g Granola</div><div class="m" style="margin-top:auto">650 kcal · 42g P · 59g K · 26g F</div></div></td>
+      </tr>
+
+      <tr>
+        <td class="rl">Mittagessen</td>
+        <td><div class="cell"><div class="n">Hähnchen mit Reis</div><div class="i">200g Hähnchen<br>100g Reis<br>200g Brokkoli<br>10ml Öl</div><div class="m" style="margin-top:auto">720 kcal · 60g P · 85g K · 13g F</div></div></td>
+        <td><div class="cell"><div class="n">Thunfisch-Nudelsalat</div><div class="i">150g Thunfisch<br>80g Nudeln<br>100g Gemüse<br>15ml Dressing</div><div class="m" style="margin-top:auto">655 kcal · 54g P · 77g K · 13g F</div></div></td>
+        <td><div class="cell"><div class="n">Lachs mit Kartoffeln</div><div class="i">180g Lachs<br>250g Kartoffeln<br>150g Spinat<br>10ml Öl</div><div class="m" style="margin-top:auto">675 kcal · 43g P · 55g K · 29g F</div></div></td>
+        <td><div class="cell"><div class="n">Schnitzel + Couscous</div><div class="i">180g Schweineschnitzel<br>80g Couscous<br>150g Zucchini</div><div class="m" style="margin-top:auto">680 kcal · 58g P · 62g K · 21g F</div></div></td>
+        <td><div class="cell"><div class="n">Kichererbsen-Salat</div><div class="i">200g Kichererbsen<br>80g Feta<br>150g Gemüse<br>Dressing</div><div class="m" style="margin-top:auto">625 kcal · 56g P · 54g K · 18g F</div></div></td>
+        <td><div class="cell"><div class="n">Thunfisch-Wrap</div><div class="i">1 Wrap<br>100g Thunfisch<br>100g Bohnen<br>Salat, Joghurt</div><div class="m" style="margin-top:auto">775 kcal · 59g P · 73g K · 25g F</div></div></td>
+        <td><div class="cell"><div class="n">Geschnetzeltes + Spätzle</div><div class="i">200g Hähnchen<br>100g Spätzle<br>100g Champignons<br>Sahne</div><div class="m" style="margin-top:auto">660 kcal · 62g P · 64g K · 14g F</div></div></td>
+      </tr>
+
+      <tr>
+        <td class="rl">Abendessen</td>
+        <td><div class="cell"><div class="n">Steak + Süßkartoffel</div><div class="i">180g Rindersteak<br>300g Süßkartoffel<br>50g Feta · Salat</div><div class="m" style="margin-top:auto">785 kcal · 53g P · 65g K · 33g F</div></div></td>
+        <td><div class="cell"><div class="n">Putenpfanne + Quinoa</div><div class="i">200g Pute<br>80g Quinoa<br>150g Paprika<br>10ml Öl</div><div class="m" style="margin-top:auto">700 kcal · 61g P · 63g K · 21g F</div></div></td>
+        <td><div class="cell"><div class="n">Linsen-Dal + Hähnchen</div><div class="i">100g Linsen<br>150g Hähnchen<br>Reis, Kokosmilch<br>Curry</div><div class="m" style="margin-top:auto">790 kcal · 65g P · 101g K · 11g F</div></div></td>
+        <td><div class="cell"><div class="n">Asia-Pfanne + Glasnudeln</div><div class="i">150g Rind<br>80g Glasnudeln<br>200g Gemüse<br>Sojasauce</div><div class="m" style="margin-top:auto">820 kcal · 56g P · 88g K · 26g F</div></div></td>
+        <td><div class="cell"><div class="n">Gnocchi + Hacksoße</div><div class="i">250g Gnocchi<br>150g Hackfleisch<br>Tomatensoße<br>Parmesan</div><div class="m" style="margin-top:auto">860 kcal · 57g P · 92g K · 21g F</div></div></td>
+        <td><div class="cell"><div class="n">Seelachs + Kartoffeln</div><div class="i">250g Seelachs<br>300g Kartoffeln<br>150g Erbsen · Kräuter</div><div class="m" style="margin-top:auto">760 kcal · 59g P · 75g K · 24g F</div></div></td>
+        <td><div class="cell"><div class="n">Burger + Wedges</div><div class="i">180g Patty<br>1 Brötchen<br>200g Wedges<br>Salat, Sauce</div><div class="m" style="margin-top:auto">810 kcal · 54g P · 79g K · 25g F</div></div></td>
+      </tr>
+
+      <tr class="xr">
+        <td class="rl">Training</td>
+        <td>
+          <div class="xt">Push — Brust, Schulter</div>
+          <div class="xe"><b>Bankdrücken</b> <span>3×12 · 90s</span></div>
+          <div class="xe"><b>Schulterdrücken</b> <span>3×12 · 60s</span></div>
+          <div class="xe"><b>Schrägbank Flys</b> <span>3×12 · 60s</span></div>
+          <div class="xe"><b>Seitheben</b> <span>3×15 · 45s</span></div>
+          <div class="xe"><b>Trizeps-Dips</b> <span>2×12 · 60s</span></div>
+          <div class="xd">~55 min</div>
+        </td>
+        <td class="rs">Ruhetag</td>
+        <td>
+          <div class="xt">Pull — Rücken, Bizeps</div>
+          <div class="xe"><b>Klimmzüge</b> <span>3×10 · 90s</span></div>
+          <div class="xe"><b>LH-Rudern</b> <span>3×12 · 90s</span></div>
+          <div class="xe"><b>Latzug</b> <span>3×12 · 60s</span></div>
+          <div class="xe"><b>Face Pulls</b> <span>3×15 · 45s</span></div>
+          <div class="xe"><b>Bizeps-Curls</b> <span>2×12 · 60s</span></div>
+          <div class="xd">~55 min</div>
+        </td>
+        <td class="rs">Ruhetag</td>
+        <td>
+          <div class="xt">Legs — Beine, Core</div>
+          <div class="xe"><b>Kniebeugen</b> <span>3×10 · 120s</span></div>
+          <div class="xe"><b>Beinpresse</b> <span>3×12 · 90s</span></div>
+          <div class="xe"><b>Rum. Kreuzheben</b> <span>3×10 · 90s</span></div>
+          <div class="xe"><b>Wadenheben</b> <span>3×15 · 45s</span></div>
+          <div class="xe"><b>Plank</b> <span>3×45s · 30s</span></div>
+          <div class="xd">~60 min</div>
+        </td>
+        <td class="rs">Ruhetag</td>
+        <td class="rs">Aktive Erholung</td>
+      </tr>
+
+      <tr class="tl">
+        <td class="rl">Total</td>
+        <td><div class="tv">2115 kcal</div><div class="ts">157g P · 216g K · 62g F</div></div></td>
+        <td><div class="tv">2175 kcal</div><div class="ts">155g P · 207g K · 75g F</div></div></td>
+        <td><div class="tv">2110 kcal</div><div class="ts">155g P · 229g K · 56g F</div></div></td>
+        <td><div class="tv">2130 kcal</div><div class="ts">157g P · 214g K · 68g F</div></div></td>
+        <td><div class="tv">2120 kcal</div><div class="ts">155g P · 193g K · 68g F</div></div></td>
+        <td><div class="tv">2125 kcal</div><div class="ts">156g P · 218g K · 64g F</div></div></td>
+        <td><div class="tv">2120 kcal</div><div class="ts">158g P · 202g K · 65g F</div></div></td>
+      </tr>
+
+    </tbody>
+  </table>
+
+  <div class="ft">
+    <div class="pg"><b>Progression:</b> Gewicht alle 2 Wochen um 2,5 kg steigern. Wenn du 3×12 sauber schaffst, erhöhe das Gewicht.</div>
+    <div>mahlzait.de · 04.04.2026</div>
+  </div>
+
+</div>
+</body>
+</html>
