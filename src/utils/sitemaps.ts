@@ -48,6 +48,8 @@ const calculatorAndGuideEntries: SitemapEntry[] = [
   { url: `${siteUrl}/schritte-kalorien-rechner/` },
   { url: `${siteUrl}/taille-hueft-verhaeltnis-rechner/` },
   { url: `${siteUrl}/wasserbedarf-rechner/` },
+  { url: `${siteUrl}/essensplan-erstellen/` },
+  { url: `${siteUrl}/trainingsplan-erstellen/` },
 ];
 
 const knowledgeEntries: SitemapEntry[] = articlesMeta.map((article) => ({

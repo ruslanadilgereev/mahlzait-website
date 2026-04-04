@@ -41,6 +41,8 @@ const templateConfig: TemplateConfig = {
       { href: "/kalorienbedarf-berechnen", title: "Kalorienbedarf berechnen" },
       { href: "/kaloriendefizit-berechnen", title: "Kaloriendefizit berechnen" },
       { href: "/makros-berechnen", title: "Makros berechnen" },
+      { href: "/essensplan-erstellen", title: "Essensplan erstellen" },
+      { href: "/trainingsplan-erstellen", title: "Trainingsplan erstellen" },
     ],
     // SEO-Links für App-Landingpages und Info
     appLinks: [
