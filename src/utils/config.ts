@@ -1,4 +1,5 @@
 import type { TemplateConfig } from "./configType";
+import stats from "../data/stats.json";
 
 const templateConfig: TemplateConfig = {
   name: "Mahlzait",
@@ -146,9 +147,9 @@ const templateConfig: TemplateConfig = {
         },
         {
           icon: "👥",
-          number: "1.000+",
-          label: "Aktive Nutzer",
-          tooltip: "Monatlich aktive Nutzer (Stand: März 2026)",
+          number: stats.displayCount,
+          label: "Registrierte Nutzer",
+          tooltip: `Registrierte Nutzer (Stand: ${new Date(stats.updatedAt).toLocaleDateString("de-DE", { month: "long", year: "numeric" })})`,
         },
       ],
     },
@@ -325,7 +326,7 @@ const templateConfig: TemplateConfig = {
         "/screenshots/3.webp",
       ],
       rewards: ["4,8 Sterne \n im App Store", "Jetzt mit \n AI-Chat"],
-      usersDescription: "1.000+ Nutzer:innen tracken bereits mit Mahlzait",
+      usersDescription: `${stats.displayCount} Nutzer:innen tracken bereits mit Mahlzait`,
       headlineMark: [0, 1],
     },
     pricing: {
