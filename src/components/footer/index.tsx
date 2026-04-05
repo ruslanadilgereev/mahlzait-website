@@ -43,7 +43,7 @@ function Footer() {
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 mb-10">
           {/* Navigation */}
           <nav className="flex flex-col gap-2">
-            <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">Navigation</span>
+            <span className="text-xs font-semibold uppercase tracking-wider opacity-70 mb-1">Navigation</span>
             {links.map(({ title, href }, index) => (
               <motion.a
                 key={index}
@@ -60,7 +60,7 @@ function Footer() {
           {/* Rechner / Tools */}
           {calculatorLinks && calculatorLinks.length > 0 && (
             <nav className="flex flex-col gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">Tools & Rechner</span>
+              <span className="text-xs font-semibold uppercase tracking-wider opacity-70 mb-1">Tools & Rechner</span>
               {calculatorLinks.map(({ title, href }, index) => (
                 <motion.a
                   key={index}
@@ -78,7 +78,7 @@ function Footer() {
           {/* App & Wissen */}
           {appLinks && appLinks.length > 0 && (
             <nav className="flex flex-col gap-2">
-              <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">App & Wissen</span>
+              <span className="text-xs font-semibold uppercase tracking-wider opacity-70 mb-1">App & Wissen</span>
               {appLinks.map(({ title, href }, index) => (
                 <motion.a
                   key={index}
@@ -95,7 +95,7 @@ function Footer() {
 
           {/* Rechtliches */}
           <nav className="flex flex-col gap-2">
-            <span className="text-xs font-semibold uppercase tracking-wider opacity-50 mb-1">Rechtliches</span>
+            <span className="text-xs font-semibold uppercase tracking-wider opacity-70 mb-1">Rechtliches</span>
             {legalLinks.termsAndConditions && (
               <motion.a
                 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
@@ -191,7 +191,7 @@ function Footer() {
             </div>
 
             {/* Copyright */}
-            <p className="text-xs opacity-50 text-center md:text-right">
+            <p className="text-xs opacity-70 text-center md:text-right">
               © {new Date().getFullYear()} Mahlzait · Made with ❤️ in Germany
             </p>
           </div>

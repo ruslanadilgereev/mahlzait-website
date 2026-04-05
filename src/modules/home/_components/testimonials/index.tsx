@@ -33,7 +33,7 @@ function Testimonials() {
           Erfolge: Berufstätige mit wenig Zeit für Ernährungsplanung, Sportler mit präzisem Makro-Tracking und
           Nutzer mit Diabetes, die bessere Blutzuckerwerte erreichen.
         </p>
-        <p className="text-xs text-base-content/50 max-w-xl mt-1">
+        <p className="text-xs text-base-content/70 max-w-xl mt-1">
           Die folgenden Berichte stammen von echten Nutzern unserer App. Namen aus Datenschutzgründen anonymisiert.
           Ergebnisse sind individuell und können variieren. Mahlzait ersetzt keine ärztliche Beratung.
         </p>
