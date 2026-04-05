@@ -25,23 +25,26 @@
       "destination": "/api/gone"
     },
     {
-      "source": "/sample-page/:path*",
-      "destination": "/api/gone"
-    },
-    {
-      "source": "/uncategorized/:path*",
-      "destination": "/api/gone"
-    },
-    {
-      "source": "/category/:path*",
-      "destination": "/api/gone"
-    },
-    {
       "source": "/gone/",
       "destination": "/api/gone"
     }
   ],
   "redirects": [
+    {
+      "source": "/sample-page/:path*",
+      "destination": "/api/gone",
+      "permanent": true
+    },
+    {
+      "source": "/uncategorized/:path*",
+      "destination": "/api/gone",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/api/gone",
+      "permanent": true
+    },
     {
       "source": "/:path*",
       "has": [
