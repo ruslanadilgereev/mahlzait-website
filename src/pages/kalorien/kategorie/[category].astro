@@ -1,0 +1,230 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import KalorienCategoryPage from "@modules/kalorienCategory";
+import { articlesMeta } from "@content/wissen";
+
+const foodFiles = import.meta.glob("../../../data/foods/*.json", { eager: true });
+
+interface FoodData {
+  slug: string;
+  name: string;
+  emoji: string;
+  category: string;
+  overview: {
+    calories_per_100g: number;
+    protein_per_100g: number;
+    carbs_per_100g: number;
+    fat_per_100g: number;
+  };
+}
+
+const allFoods: FoodData[] = Object.values(foodFiles)
+  .map((mod: any) => mod.default || mod)
+  .sort((a: FoodData, b: FoodData) => a.name.localeCompare(b.name, "de"));
+
+const categoryConfig: Record<string, {
+  label: string;
+  emoji: string;
+  title: string;
+  description: string;
+  intro: string;
+  faq: Array<{ question: string; answer: string }>;
+  relatedTags: string[];
+}> = {
+  supermarkt: {
+    label: "Supermarkt & Grundnahrungsmittel",
+    emoji: "🛒",
+    title: "Supermarkt Lebensmittel: Kalorien & Nährwerte | Mahlzait",
+    description:
+      "Kalorien und Nährwerte von 100+ Supermarkt-Grundnahrungsmitteln: Obst, Gemüse, Fleisch, Milchprodukte, Getreide. Pro 100g mit Rechner.",
+    intro:
+      "Die Basis jeder gesunden Ernährung sind frische Grundnahrungsmittel aus dem Supermarkt. Hier findest du die Kalorien und Nährwerte von über 100 Lebensmitteln – von Obst und Gemüse über Fleisch und Fisch bis hin zu Milchprodukten und Getreide. Alle Angaben pro 100g, wissenschaftlich fundiert. Nutze die Werte für deinen Ernährungsplan oder tracke sie direkt mit der Mahlzait App.",
+    faq: [
+      {
+        question: "Welches Grundnahrungsmittel hat die wenigsten Kalorien?",
+        answer:
+          "Gemüse wie Gurke (12 kcal/100g), Zucchini (17 kcal) und Spinat (23 kcal) haben die wenigsten Kalorien. Auch Beeren und Äpfel sind mit 30-50 kcal/100g kalorienarm.",
+      },
+      {
+        question: "Welches Supermarkt-Lebensmittel hat am meisten Protein?",
+        answer:
+          "Hähnchenbrust (31g/100g), Thunfisch (26g), Magerquark (12g) und Eier (13g) sind die besten Proteinquellen im Supermarkt.",
+      },
+      {
+        question: "Wie tracke ich Supermarkt-Lebensmittel am einfachsten?",
+        answer:
+          "Mit der Mahlzait App: Scanne den Barcode oder fotografiere das Lebensmittel. Die KI erkennt über 10 Millionen Produkte automatisch.",
+      },
+    ],
+    relatedTags: ["Ernährungsplan", "Makros", "Protein", "Meal Prep"],
+  },
+  gericht: {
+    label: "Gerichte & Mahlzeiten",
+    emoji: "🍽️",
+    title: "Gerichte & Mahlzeiten: Kalorien & Nährwerte | Mahlzait",
+    description:
+      "Kalorien von 100+ Gerichten und Mahlzeiten: Pasta, Aufläufe, Suppen, internationale Küche. Pro Portion mit Varianten-Vergleich.",
+    intro:
+      "Wie viele Kalorien hat Lasagne? Was steckt in einem Teller Spaghetti Bolognese? Hier findest du die Nährwerte von über 100 Gerichten und Mahlzeiten – von der klassischen deutschen Küche über internationale Spezialitäten bis hin zu Desserts. Jede Seite zeigt Kalorien pro 100g und pro Portion, verschiedene Varianten im Vergleich und Tipps zum Kalorien sparen.",
+    faq: [
+      {
+        question: "Welche Gerichte eignen sich zum Abnehmen?",
+        answer:
+          "Suppen, Salate mit Protein und Gerichte mit viel Gemüse sind ideal. Achte auf Zubereitungsart: Grillen statt Frittieren spart oft 200-300 kcal pro Portion.",
+      },
+      {
+        question: "Wie genau sind die Kalorienangaben für Gerichte?",
+        answer:
+          "Gerichte variieren je nach Rezept und Zubereitung. Unsere Werte basieren auf Durchschnittswerten und Standard-Rezepturen. Für exakte Werte empfehlen wir, die Zutaten einzeln zu tracken.",
+      },
+      {
+        question: "Kann ich Restaurant-Gerichte tracken?",
+        answer:
+          "Ja! Die Mahlzait App erkennt auch Restaurant-Gerichte per Foto. Die KI kennt Gerichte von beliebten Ketten und berechnet die Nährwerte basierend auf typischen Portionsgrößen.",
+      },
+    ],
+    relatedTags: ["Abnehmen", "Kaloriendefizit", "Ernährungsplan"],
+  },
+  "fast-food": {
+    label: "Fast Food & Snacks",
+    emoji: "🍔",
+    title: "Fast Food & Snacks: Kalorien & Nährwerte | Mahlzait",
+    description:
+      "Kalorien von 50+ Fast-Food-Gerichten und Snacks: Burger, Döner, Pizza, Pommes, Currywurst. Pro Portion mit Spar-Tipps.",
+    intro:
+      "Döner, Burger, Pizza oder Currywurst – Fast Food gehört für viele zum Alltag. Aber wie viele Kalorien stecken wirklich drin? Hier findest du die Nährwerte von über 50 Fast-Food-Gerichten und Snacks. Jede Seite zeigt verschiedene Varianten, vergleicht Kalorien und gibt Tipps, wie du auch beim Fast Food Kalorien sparen kannst – ohne auf Geschmack zu verzichten.",
+    faq: [
+      {
+        question: "Welches Fast Food hat die wenigsten Kalorien?",
+        answer:
+          "Ein Döner-Teller mit Salat (ca. 350-400 kcal) oder Sushi (ca. 143 kcal/100g) sind vergleichsweise kalorienarm. Auch ein Burger ohne Pommes und Sauce kann unter 500 kcal bleiben.",
+      },
+      {
+        question: "Kann man mit Fast Food abnehmen?",
+        answer:
+          "Ja, solange die Gesamtkalorienbilanz stimmt. Wähle kalorienärmere Varianten (Hähnchen statt Kalb, Salat statt Pommes) und tracke die Kalorien mit Mahlzait.",
+      },
+      {
+        question: "Warum hat Fast Food so viele Kalorien?",
+        answer:
+          "Hauptgrund ist die Kombination aus Fett (Frittieren, Saucen) und einfachen Kohlenhydraten (Weißmehl, Zucker). Ein klassischer Döner hat 550-650 kcal, davon kommen ~200 kcal allein aus dem Brot und der Sauce.",
+      },
+    ],
+    relatedTags: ["Abnehmen", "Kaloriendefizit", "Heißhunger", "Cheat Day"],
+  },
+  getraenk: {
+    label: "Getränke",
+    emoji: "🥤",
+    title: "Getränke: Kalorien & Nährwerte | Mahlzait",
+    description:
+      "Kalorien von 30+ Getränken: Bier, Wein, Softdrinks, Kaffee, Säfte, Smoothies. Pro 100ml und pro Glas mit Vergleich.",
+    intro:
+      "Getränke sind oft versteckte Kalorienbomben. Ein Glas Apfelsaft hat fast so viele Kalorien wie Cola, und ein Feierabend-Bier bringt schnell 200+ kcal mit. Hier findest du die Kalorien und Nährwerte von über 30 Getränken – von Wasser über Kaffee und Tee bis zu Alkohol und Softdrinks. Alle Werte pro 100ml und pro typisches Glas.",
+    faq: [
+      {
+        question: "Welche Getränke haben keine Kalorien?",
+        answer:
+          "Wasser, schwarzer Kaffee und ungesüßter Tee haben 0-2 kcal pro 100ml. Light-Getränke mit Süßstoff haben ebenfalls fast keine Kalorien.",
+      },
+      {
+        question: "Wie viele Kalorien hat Alkohol?",
+        answer:
+          "Alkohol hat 7 kcal pro Gramm – fast so viel wie Fett (9 kcal/g). Ein Bier (0,5l) hat ca. 215 kcal, ein Glas Wein (200ml) ca. 170 kcal, ein Aperol Spritz ca. 175 kcal.",
+      },
+      {
+        question: "Zählen Getränke-Kalorien beim Abnehmen?",
+        answer:
+          "Ja! Flüssige Kalorien sättigen weniger als feste Nahrung, werden aber genauso verarbeitet. Wer täglich 2 Gläser Saft trinkt, nimmt ~200 kcal extra zu sich – das entspricht ca. 10kg Gewichtszunahme pro Jahr.",
+      },
+    ],
+    relatedTags: ["Abnehmen", "Intervallfasten", "Alkohol"],
+  },
+};
+
+export function getStaticPaths() {
+  return ["supermarkt", "gericht", "fast-food", "getraenk"].map((category) => ({
+    params: { category },
+  }));
+}
+
+const { category } = Astro.params;
+const catConfig = categoryConfig[category as string]!;
+const foods = allFoods.filter((f) => f.category === category);
+
+const seo = {
+  title: catConfig.title,
+  description: catConfig.description,
+};
+
+// Related wissen articles
+const relatedArticles = articlesMeta
+  .filter((a) =>
+    a.tags.some((t) =>
+      catConfig.relatedTags.some((rt) => t.toLowerCase().includes(rt.toLowerCase()))
+    )
+  )
+  .slice(0, 4)
+  .map((a) => ({ slug: a.slug, title: a.title, description: a.description }));
+
+const siteUrl = "https://www.mahlzait.de";
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: siteUrl },
+    {
+      "@type": "ListItem",
+      position: 2,
+      name: "Kalorientabelle",
+      item: `${siteUrl}/kalorien/`,
+    },
+    {
+      "@type": "ListItem",
+      position: 3,
+      name: catConfig.label,
+      item: `${siteUrl}/kalorien/kategorie/${category}/`,
+    },
+  ],
+};
+
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: `${catConfig.label} – Kalorien & Nährwerte`,
+  numberOfItems: foods.length,
+  itemListElement: foods.map((food, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `${food.name} – ${food.overview.calories_per_100g} kcal/100g`,
+    url: `${siteUrl}/kalorien/${food.slug}/`,
+  })),
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: catConfig.faq.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: { "@type": "Answer", text: f.answer },
+  })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <KalorienCategoryPage
+    client:visible
+    config={defaultTemplateConfig}
+    category={category as string}
+    categoryConfig={catConfig}
+    foods={foods}
+    relatedArticles={relatedArticles}
+  />
+</Layout>

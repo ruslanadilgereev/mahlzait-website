@@ -135,9 +135,17 @@ function KalorienIndexPage({ config, foods }: Props) {
             if (!items || items.length === 0) return null;
             return (
               <section className="mb-12" id={catKey} key={catKey}>
-                <h2 className="text-2xl font-bold text-gray-900 mb-4">
-                  {catInfo.emoji} {catInfo.label} ({items.length})
-                </h2>
+                <div className="flex items-center justify-between mb-4">
+                  <h2 className="text-2xl font-bold text-gray-900">
+                    {catInfo.emoji} {catInfo.label} ({items.length})
+                  </h2>
+                  <a
+                    href={`/kalorien/kategorie/${catKey}/`}
+                    className="text-sm text-emerald-600 hover:text-emerald-700 hover:underline"
+                  >
+                    Alle anzeigen →
+                  </a>
+                </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {items.map((food) => (
                     <a 
