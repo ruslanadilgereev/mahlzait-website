@@ -233,7 +233,8 @@ function Header() {
                   src="/misc/iphone-frame.webp"
                   alt="Mahlzait App auf iPhone - Kalorienzähler Interface"
                   className="relative z-10 h-full pointer-events-none"
-                  style={{ aspectRatio: '432/885' }}
+                  width={432}
+                  height={885}
                   loading="eager"
                   decoding="async"
                   fetchpriority="high"
