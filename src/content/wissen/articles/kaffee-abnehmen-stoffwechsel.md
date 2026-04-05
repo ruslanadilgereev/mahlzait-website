@@ -3,7 +3,7 @@ WISSEN Artikel: Kaffee beim Abnehmen - Hilft er oder schadet er?
 SEO-Keyword: Kaffee abnehmen, Kaffee Stoffwechsel, Koffein Fettverbrennung
 -->
 
-Kaffee ist das beliebteste Getränk der Deutschen – noch vor Wasser. Viele hoffen, dass ihr morgendlicher Espresso nicht nur wach macht, sondern auch beim Abnehmen hilft. Andere haben gehört, Kaffee würde dem Körper Wasser entziehen oder den Appetit durcheinanderbringen. Was stimmt denn nun? Die Wissenschaft hat klare Antworten.
+[Kaffee](/kalorien/kaffee/) ist das beliebteste Getränk der Deutschen – noch vor Wasser. Viele hoffen, dass ihr morgendlicher Espresso nicht nur wach macht, sondern auch beim Abnehmen hilft. Andere haben gehört, Kaffee würde dem Körper Wasser entziehen oder den Appetit durcheinanderbringen. Was stimmt denn nun? Die Wissenschaft hat klare Antworten.
 
 ## Das Wichtigste in Kürze
 
@@ -93,7 +93,7 @@ Was den Abnehm-Effekt zunichte macht:
 | Getränk | Kalorien | Problem |
 |---------|----------|---------|
 | Schwarzer Kaffee | ~2 kcal | ✓ Kein Problem |
-| Cappuccino | ~80–120 kcal | Milchkalorien |
+| [Cappuccino](/kalorien/cappuccino/) | ~80–120 kcal | Milchkalorien |
 | Latte Macchiato | ~150–200 kcal | Viel Milch |
 | Frappuccino (Starbucks) | ~300–500 kcal | Zucker + Sahne |
 | Kaffee + 2 Löffel Zucker | ~40 kcal extra | Zucker-Kalorien |
@@ -121,7 +121,7 @@ Bei moderatem Konsum (3–4 Tassen) gibt es keine Dehydrierung.
 ## Was heißt das praktisch?
 
 - **Kaffee kann unterstützen** – aber erwarte keine Wunder. Der Stoffwechsel-Effekt ist real, aber klein (~60–80 kcal/Tag bei 2–3 Tassen)
-- **Schwarz oder fast schwarz trinken:** Ohne Zucker, maximal ein Schuss Milch. Kaffee-Getränke mit Sirup und Sahne sind Desserts, keine Diät-Helfer
+- **Schwarz oder fast schwarz trinken:** Ohne Zucker, maximal ein Schuss [Milch](/kalorien/milch/). Kaffee-Getränke mit Sirup und [Sahne](/kalorien/sahne/) sind Desserts, keine Diät-Helfer
 - **Timing nutzen:** Kaffee vor dem Training kann die Leistung verbessern und mehr Kalorien verbrennen lassen
 - **Nicht übertreiben:** 3–4 Tassen (300–400 mg Koffein) sind für die meisten Erwachsenen unbedenklich. Mehr bringt kaum zusätzlichen Nutzen
 - **Kein Ersatz für Kaloriendefizit:** Kaffee allein macht nicht schlank. Er kann ein kleiner Hebel sein – die großen Hebel bleiben Ernährung und Bewegung
@@ -130,7 +130,7 @@ Bei moderatem Konsum (3–4 Tassen) gibt es keine Dehydrierung.
 
 ## Limitationen und Einordnung
 
-- **Effektgröße ist klein:** 3–4% mehr Stoffwechsel klingt gut, ist aber nur 60–80 kcal – ein halber Apfel
+- **Effektgröße ist klein:** 3–4% mehr Stoffwechsel klingt gut, ist aber nur 60–80 kcal – ein halber [Apfel](/kalorien/apfel/)
 - **Gewöhnungseffekt:** Bei Vieltrinkern nimmt die Stoffwechselwirkung ab (Toleranz)
 - **Individuelle Unterschiede:** Manche Menschen verstoffwechseln Koffein schneller (Genetik), bei ihnen ist der Effekt kürzer
 - **Schlaf beachten:** Koffein zu spät am Tag kann den Schlaf stören – und schlechter Schlaf fördert Übergewicht (siehe unseren Artikel dazu)

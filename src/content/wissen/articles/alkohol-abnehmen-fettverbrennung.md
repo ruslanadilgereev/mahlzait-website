@@ -3,13 +3,13 @@ WISSEN Artikel: Alkohol beim Abnehmen - Stoppt er wirklich die Fettverbrennung?
 SEO-Keyword: Alkohol abnehmen, Alkohol Fettverbrennung, Abnehmen trotz Alkohol
 -->
 
-"Alkohol stoppt die Fettverbrennung komplett!" – diesen Satz hast du bestimmt schon gehört. Aber stimmt das wirklich? Und bedeutet das, dass du während einer Diät nie wieder ein Glas Wein trinken darfst? Die Wissenschaft zeigt: Die Wahrheit ist – wie so oft – komplizierter als die Schlagzeilen.
+"Alkohol stoppt die Fettverbrennung komplett!" – diesen Satz hast du bestimmt schon gehört. Aber stimmt das wirklich? Und bedeutet das, dass du während einer Diät nie wieder ein Glas [Wein](/kalorien/wein/) trinken darfst? Die Wissenschaft zeigt: Die Wahrheit ist – wie so oft – komplizierter als die Schlagzeilen.
 
 ## Das Wichtigste in Kürze
 
 - **Ja, Alkohol bremst die Fettverbrennung** – aber nur temporär, während er abgebaut wird (ca. 2–6 Stunden je nach Menge)
-- **Alkohol hat 7 kcal pro Gramm** – fast so viel wie Fett. Ein Glas Wein = ~150 kcal, ein Bier = ~150 kcal
-- **Das größte Problem:** Alkohol senkt Hemmungen und steigert Appetit → Heißhunger auf Pizza und Döner
+- **Alkohol hat 7 kcal pro Gramm** – fast so viel wie Fett. Ein Glas Wein = ~150 kcal, ein [Bier](/kalorien/bier/) = ~150 kcal
+- **Das größte Problem:** Alkohol senkt Hemmungen und steigert Appetit → Heißhunger auf [Pizza](/kalorien/pizza/) und [Döner](/kalorien/doener/)
 - **Abnehmen mit gelegentlichem Alkohol ist möglich** – wenn du ihn in dein Kalorienbudget einplanst
 
 ---
@@ -67,7 +67,7 @@ Mit 7 kcal pro Gramm liegt Alkohol fast auf Fett-Niveau – und liefert dabei **
 | Gin Tonic (Standard) | ~170 kcal |
 | Mojito | ~220 kcal |
 | Piña Colada | ~490 kcal |
-| Wodka Shot (40 ml) | ~90 kcal |
+| [Wodka](/kalorien/wodka/) Shot (40 ml) | ~90 kcal |
 | Aperol Spritz | ~175 kcal |
 
 **Ein Abend mit 4 Bier = 860 kcal** – das ist fast ein halbes Tagesbudget für viele Menschen.
@@ -92,7 +92,7 @@ Hier kommt die unbequeme Wahrheit: **Die Kalorien im Alkohol sind oft nicht das 
 | 4 Bier | 860 kcal |
 | Döner um 2 Uhr | 700 kcal |
 | Pizza-Slice von Freunden | 300 kcal |
-| Chips beim Vorglühen | 250 kcal |
+| [Chips](/kalorien/chips/) beim Vorglühen | 250 kcal |
 | **Gesamt** | **2.110 kcal** |
 
 Das ist für viele Menschen **ein ganzer Tagesbedarf** – zusätzlich zum normalen Essen an dem Tag.

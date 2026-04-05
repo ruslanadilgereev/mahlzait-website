@@ -64,7 +64,7 @@ Beide Effekte sind real, aber zu klein für messbare Gewichtsveränderungen in d
 ## Was heißt das praktisch?
 
 - **Trink Wasser – aber erwarte keine Wunder.** Wasser ist gesund, aber kein Abnehmtrick
-- **Softdrinks ersetzen lohnt sich.** Cola, Limo, Eistee → Wasser = ~140 kcal pro Dose gespart
+- **Softdrinks ersetzen lohnt sich.** [Cola](/kalorien/cola/), Limo, Eistee → Wasser = ~140 kcal pro Dose gespart
 - **Light-Getränke sind kein Problem.** Die Daten zeigen: Diät-Drinks beim Abnehmen beizubehalten ist völlig okay – vielleicht sogar besser als pures Wasser
 - **Fokus auf Kalorien, nicht auf Wassermenge.** 8 Gläser Wasser am Tag sind kein Abnehmgeheimnis
 

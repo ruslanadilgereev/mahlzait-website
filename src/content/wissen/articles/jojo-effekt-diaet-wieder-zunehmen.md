@@ -56,7 +56,7 @@ Das erklärt, warum du nach einer Diät ständig hungrig bist. Es ist nicht Will
 
 ### 3. Der psychologische Rebound
 
-Strenge Verbote führen zu Heißhunger. Je mehr du dir sagst „Ich darf keine Schokolade", desto mehr denkst du an Schokolade.
+Strenge Verbote führen zu Heißhunger. Je mehr du dir sagst „Ich darf keine [Schokolade](/kalorien/schokolade/)", desto mehr denkst du an Schokolade.
 
 Wenn die Diät dann vorbei ist, passiert der „What-the-hell-Effekt": Du isst alles, was du dir verboten hast – und zwar in rauen Mengen. Das ist keine Charakterschwäche, sondern ein gut dokumentiertes psychologisches Phänomen.
 

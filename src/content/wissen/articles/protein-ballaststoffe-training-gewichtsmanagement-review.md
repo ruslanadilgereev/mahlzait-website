@@ -42,7 +42,7 @@ Der Review betont, dass diese Stellschrauben auch **kardiometabolische Risikofak
 
 Wenn du „Kalorien zählen“ nicht dauerhaft willst, funktionieren oft einfache Regeln besser:
 
-- **Protein zu jeder Mahlzeit** (z.B. Skyr/Quark, Eier, Fisch, mageres Fleisch, Tofu, Hülsenfrüchte)
+- **Protein zu jeder Mahlzeit** (z.B. Skyr/Quark, [Eier](/kalorien/ei/), Fisch, mageres Fleisch, [Tofu](/kalorien/tofu/), Hülsenfrüchte)
 - **Ballaststoffe hoch** (Gemüse, Beeren, Vollkorn, Bohnen/Linsen)
 - **Bewegung planbar machen** (Alltagsschritte + 2–3x/Woche Kraft oder Ausdauer)
 

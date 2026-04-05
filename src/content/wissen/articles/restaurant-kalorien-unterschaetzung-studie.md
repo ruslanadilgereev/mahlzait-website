@@ -12,7 +12,7 @@
 
 ## Das Problem: Wir haben keine Ahnung, was wir essen
 
-Du sitzt im Restaurant, bestellst "Hähnchen mit Gemüse" – klingt gesund, oder?
+Du sitzt im Restaurant, bestellst "[Hähnchen](/kalorien/haehnchenbrust/) mit Gemüse" – klingt gesund, oder?
 
 Die Realität: Diese harmlos klingende Mahlzeit kann **800-1.200 Kalorien** haben. Der Grund ist simpel: Restaurants kochen anders als du zuhause.
 
@@ -40,7 +40,7 @@ Eine Analyse von Kochbüchern und Restaurant-Rezepten zeigt:
 - **Öl zum Anbraten**: Großzügig, nicht "1 TL" wie im Rezept
 - **Finishing**: Nochmal Butter oder Öl am Ende für Glanz
 
-Wenn du zuhause ein Steak brätst, nimmst du vielleicht 1 EL Öl. Der Koch nimmt 3 EL – und gibt am Ende nochmal Butter drüber.
+Wenn du zuhause ein Steak brätst, nimmst du vielleicht 1 EL Öl. Der Koch nimmt 3 EL – und gibt am Ende nochmal [Butter](/kalorien/butter/) drüber.
 
 ### 2. Portionen sind aus dem Ruder gelaufen
 
@@ -60,9 +60,9 @@ Die größten Fallen:
 | Salat mit Dressing | 300 kcal | 700-900 kcal |
 | Gegrillter Fisch | 400 kcal | 600-800 kcal |
 | Gemüse-Bowl | 450 kcal | 750-950 kcal |
-| Avocado-Toast | 350 kcal | 500-700 kcal |
+| [Avocado](/kalorien/avocado/)-Toast | 350 kcal | 500-700 kcal |
 
-Der Salat hat mehr Kalorien als der Burger – wegen Dressing, Croutons, Käse und kandierten Nüssen.
+Der Salat hat mehr Kalorien als der [Burger](/kalorien/burger/) – wegen Dressing, Croutons, [Käse](/kalorien/kaese/) und kandierten Nüssen.
 
 ---
 

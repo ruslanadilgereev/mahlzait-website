@@ -58,6 +58,78 @@ const nutritionSchema = {
   carbohydrateContent: `${Math.round(food.overview.carbs_per_100g * food.overview.typical_portion_g / 100)}g`,
   fatContent: `${Math.round(food.overview.fat_per_100g * food.overview.typical_portion_g / 100)}g`,
 };
+
+const howToSchema = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: `${food.name} Kalorien berechnen`,
+  description: `Berechne die Kalorien und Nährwerte von ${food.name} mit dem kostenlosen Rechner`,
+  totalTime: "PT1M",
+  step: [
+    {
+      "@type": "HowToStep",
+      position: 1,
+      name: "Portionsgröße wählen",
+      text: `Wähle die gewünschte Portionsgröße für ${food.name} – von klein bis groß oder eine eigene Grammzahl.`,
+    },
+    {
+      "@type": "HowToStep",
+      position: 2,
+      name: "Nährwerte ablesen",
+      text: `Lies die berechneten Kalorien, Protein, Kohlenhydrate und Fett für deine ${food.name}-Portion ab.`,
+    },
+    {
+      "@type": "HowToStep",
+      position: 3,
+      name: "Varianten vergleichen",
+      text: `Vergleiche verschiedene ${food.name}-Varianten und finde die kalorienärmste Option.`,
+    },
+    {
+      "@type": "HowToStep",
+      position: 4,
+      name: "Mit Mahlzait tracken",
+      text: `Tracke ${food.name} direkt in der Mahlzait App per Foto, Barcode oder Suche.`,
+    },
+  ],
+};
+
+const webAppSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  name: `${food.name} Kalorien Rechner`,
+  description: `Kostenloser Online-Rechner zur Berechnung der Kalorien und Nährwerte von ${food.name}`,
+  applicationCategory: "HealthApplication",
+  operatingSystem: "Web",
+  offers: {
+    "@type": "Offer",
+    price: "0",
+    priceCurrency: "EUR",
+  },
+  featureList: [
+    `Kalorien und Nährwerte für ${food.name} berechnen`,
+    "Portionsgröße anpassen",
+    "Varianten vergleichen",
+    "Kalorienverbrauch beim Sport berechnen",
+    "Tipps zum Kalorien sparen",
+  ],
+};
+
+const authorPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://www.mahlzait.de/#person-ruslan",
+  name: "Ruslan Adilgereev",
+  url: "https://www.mahlzait.de/team",
+  jobTitle: "Founder",
+  worksFor: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: "https://www.mahlzait.de",
+  },
+  sameAs: [
+    "https://www.linkedin.com/in/ruslanadilgereev",
+  ],
+};
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
@@ -69,9 +141,12 @@ const nutritionSchema = {
   />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(nutritionSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(webAppSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
 
   <KalorienFoodPage
-    client:load
+    client:visible
     config={defaultTemplateConfig}
     food={food}
     relatedFoodsMeta={relatedFoodsMeta}

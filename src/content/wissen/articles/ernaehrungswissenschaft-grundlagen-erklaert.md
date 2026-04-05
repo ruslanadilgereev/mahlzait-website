@@ -42,7 +42,7 @@ Studien, unter anderem von dem Forscher Benoit Chassaing, zeigen einen beunruhig
 
 ### 5. Neurobiologie: Warum wir nicht aufhören können zu essen
 
-Es ist ein bekanntes Phänomen: Man öffnet eine Tüte Chips und kann nicht aufhören, bis sie leer ist. Oft machen wir uns dafür Vorwürfe wegen mangelnder Disziplin. Die Wissenschaft, insbesondere eine vielbeachtete Studie von Kevin Hall, zeigt jedoch, dass hier knallharte Biologie am Werk ist. Hall verglich zwei Gruppen: Eine aß unverarbeitete Lebensmittel, die andere hochverarbeitete Industrienahrung. Beide Diäten waren auf dem Papier exakt gleich, was Zucker, Fett und Salz anging.
+Es ist ein bekanntes Phänomen: Man öffnet eine Tüte [Chips](/kalorien/chips/) und kann nicht aufhören, bis sie leer ist. Oft machen wir uns dafür Vorwürfe wegen mangelnder Disziplin. Die Wissenschaft, insbesondere eine vielbeachtete Studie von Kevin Hall, zeigt jedoch, dass hier knallharte Biologie am Werk ist. Hall verglich zwei Gruppen: Eine aß unverarbeitete Lebensmittel, die andere hochverarbeitete Industrienahrung. Beide Diäten waren auf dem Papier exakt gleich, was Zucker, Fett und Salz anging.
 
 Das Ergebnis war schockierend: Die Gruppe mit der Industrienahrung aß unbewusst im Schnitt **500 Kalorien mehr pro Tag**. Der Grund liegt in der Neurobiologie. In der Natur kommen Fett und Kohlenhydrate fast nie in hoher Konzentration gemeinsam vor (Muttermilch ist eine seltene Ausnahme). Industrienahrung kombiniert diese beiden Energieträger jedoch perfekt. Diese Kombination löst im Belohnungszentrum des Gehirns (Striatum) eine sogenannte **supra-additive Dopamin-Ausschüttung** aus. Der Reiz ist stärker als die Summe der Einzelteile. Das Gehirn wird regelrecht überflutet und überschreibt das natürliche Sättigungsgefühl. Wir essen nicht aus Hunger weiter, sondern weil unser Gehirn auf den künstlichen Reiz reagiert.
 
@@ -66,15 +66,15 @@ Aus diesen komplexen Mechanismen lassen sich vier klare, praxistaugliche Regeln 
 
 ### 1. Weg mit dem Schrott (Darm & Dopamin schützen)
 Der effektivste Schritt ist das Meiden hochverarbeiteter Lebensmittel. Indem du auf Produkte mit langen Zutatenlisten verzichtest, schlägst du zwei Fliegen mit einer Klappe: Du vermeidest Emulgatoren, die deine Darmschleimhaut angreifen, und du entkommst der Dopamin-Falle der supra-additiven Reize.
-**Die Praxis-Regel:** Halte dich an die "Ein-Zutat-Regel". Ein Steak hat eine Zutat: Rindfleisch. Ein Brokkoli hat eine Zutat. Ein Fertig-Burger hat dreißig. Je kürzer die Liste, desto besser für deinen Stoffwechsel.
+**Die Praxis-Regel:** Halte dich an die "Ein-Zutat-Regel". Ein Steak hat eine Zutat: Rindfleisch. Ein [Brokkoli](/kalorien/brokkoli/) hat eine Zutat. Ein Fertig-[Burger](/kalorien/burger/) hat dreißig. Je kürzer die Liste, desto besser für deinen Stoffwechsel.
 
 ### 2. Eiweiß priorisieren (Den anabolen Schalter nutzen)
 Um den mTORC1-Komplex zu aktivieren und die Leucin-Schwelle zu knacken, solltest du jede Mahlzeit um eine Proteinquelle herum aufbauen.
-**Die Praxis-Regel:** Ziel sind mindestens **30 Gramm Eiweiß pro Hauptmahlzeit**. Das entspricht etwa 150g Hähnchen, 200g Magerquark oder 3 Eiern. Das sorgt nicht nur für Muskelschutz, sondern sättigt laut der "Protein-Leverage-Hypothese" auch am besten.
+**Die Praxis-Regel:** Ziel sind mindestens **30 Gramm Eiweiß pro Hauptmahlzeit**. Das entspricht etwa 150g [Hähnchen](/kalorien/haehnchenbrust/), 200g [Magerquark](/kalorien/magerquark/) oder 3 [Eiern](/kalorien/ei/). Das sorgt nicht nur für Muskelschutz, sondern sättigt laut der "Protein-Leverage-Hypothese" auch am besten.
 
 ### 3. Kohlenhydrate verdienen (Insulin managen)
 Nutze das Wissen um den Randle-Zyklus. Dein Körper kann Kohlenhydrate nur dann effizient verbrennen, wenn die Speicher leer sind.
-**Die Praxis-Regel:** Wenn du dich viel bewegt hast oder Sport treibst, sind deine Glykogenspeicher leer – dann sind Nudeln, Kartoffeln oder Haferflocken der perfekte Treibstoff. Wenn du jedoch den ganzen Tag im Büro sitzt, sind deine Speicher noch voll. In diesem Fall solltest du Kohlenhydrate reduzieren und eher auf Gemüse, Proteine und gesunde Fette setzen, um deinen Insulinspiegel niedrig zu halten und die Fettverbrennung nicht zu blockieren.
+**Die Praxis-Regel:** Wenn du dich viel bewegt hast oder Sport treibst, sind deine Glykogenspeicher leer – dann sind [Nudeln](/kalorien/nudeln/), [Kartoffeln](/kalorien/kartoffeln/) oder [Haferflocken](/kalorien/haferflocken/) der perfekte Treibstoff. Wenn du jedoch den ganzen Tag im Büro sitzt, sind deine Speicher noch voll. In diesem Fall solltest du Kohlenhydrate reduzieren und eher auf Gemüse, Proteine und gesunde Fette setzen, um deinen Insulinspiegel niedrig zu halten und die Fettverbrennung nicht zu blockieren.
 
 ### 4. Gezielt ergänzen (Kofaktoren liefern)
 Vitamine und Mineralien sind keine Energie, sondern Werkzeuge (Kofaktoren), ohne die Enzyme nicht arbeiten können. Magnesium ist beispielsweise zwingend notwendig, um ATP – unsere Energiewährung – überhaupt stabil zu halten.

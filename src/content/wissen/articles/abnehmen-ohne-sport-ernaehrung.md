@@ -28,7 +28,7 @@ Ja, aber:
 
 **1. Sport verbrennt weniger als du denkst**
 
-Eine Stunde Joggen verbrennt etwa 400-600 Kalorien. Klingt viel – aber das ist ein Döner. Oder zwei Latte Macchiato mit Zucker.
+Eine Stunde Joggen verbrennt etwa 400-600 Kalorien. Klingt viel – aber das ist ein [Döner](/kalorien/doener/). Oder zwei Latte Macchiato mit Zucker.
 
 Um 1 kg Fett zu verbrennen, müsstest du etwa 15 Stunden laufen. Wer macht das?
 
@@ -71,7 +71,7 @@ Es gibt nur zwei Hebel:
 Und hier ist der Punkt: Hebel 1 ist viel, viel effektiver.
 
 **Beispiel:**
-- Eine Tafel Schokolade weglassen = 500 kcal gespart (dauert 3 Sekunden)
+- Eine Tafel [Schokolade](/kalorien/schokolade/) weglassen = 500 kcal gespart (dauert 3 Sekunden)
 - 500 kcal durchs Laufen verbrennen = 45-60 Minuten schwitzen
 
 Was ist einfacher?
@@ -115,7 +115,7 @@ Spontane Entscheidungen führen oft zu schlechten Entscheidungen. Wer plant, iss
 
 ### 6. Trinken nicht vergessen
 
-Manchmal ist "Hunger" eigentlich Durst. Und kalorienfreie Getränke (Wasser, Tee, schwarzer Kaffee) ersetzen kalorienbomben wie Softdrinks.
+Manchmal ist "Hunger" eigentlich Durst. Und kalorienfreie Getränke (Wasser, [Tee](/kalorien/tee/), schwarzer [Kaffee](/kalorien/kaffee/)) ersetzen kalorienbomben wie Softdrinks.
 
 ## Der Kompromiss: Alltagsbewegung
 

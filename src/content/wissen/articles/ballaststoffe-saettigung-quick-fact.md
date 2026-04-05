@@ -26,7 +26,7 @@ Ballaststoffe wirken über mehrere Mechanismen:
 
 ## Was heisst das praktisch?
 
-- **Frühstück:** Haferflocken statt Cornflakes (5 g vs. 1 g Ballaststoffe pro Portion)
+- **Frühstück:** [Haferflocken](/kalorien/haferflocken/) statt [Cornflakes](/kalorien/cornflakes/) (5 g vs. 1 g Ballaststoffe pro Portion)
 - **Mittag/Abend:** Halber Teller Gemüse oder Salat als Basis
 - **Snacks:** Obst mit Schale, Karotten, Nüsse
 

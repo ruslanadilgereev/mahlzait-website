@@ -89,7 +89,7 @@ Die Popularität von Cheat Days ist explodiert. Auf Instagram gibt es mittlerwei
 
 Eine Studie mit über 2.000 kanadischen Jugendlichen und jungen Erwachsenen fand: **Mehr als die Hälfte** hatte Cheat Meals öfter als einmal pro Woche.
 
-Das Problem: Social Media zeigt dir Fitness-Influencer, die riesige Mengen Pizza und Burger essen – aber nicht die Realität dahinter:
+Das Problem: Social Media zeigt dir Fitness-Influencer, die riesige Mengen [Pizza](/kalorien/pizza/) und [Burger](/kalorien/burger/) essen – aber nicht die Realität dahinter:
 - Manche trainieren 3+ Stunden täglich
 - Manche essen den Rest der Woche extrem restriktiv
 - Manche haben genetische Vorteile
