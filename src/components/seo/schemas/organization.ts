@@ -26,6 +26,7 @@ export function generateOrganizationSchema(
       "https://www.pinterest.com/mahlzait/",
       "https://x.com/mahlzait",
       "https://www.youtube.com/@mahlzait-de",
+      "https://www.reddit.com/r/Mahlzait/",
     ],
     description: "Mahlzait - Kalorienzähler mit KI für iOS und Android",
     contactPoint: {
