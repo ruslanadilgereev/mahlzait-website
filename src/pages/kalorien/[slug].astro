@@ -3,6 +3,7 @@ import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
 import KalorienFoodPage from "@modules/kalorienFood";
+import { articlesMeta } from "@content/wissen";
 const relatedFoodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
 
 export async function getStaticPaths() {
@@ -37,6 +38,19 @@ const seo = {
   title: food.seo.title,
   description: food.seo.description,
 };
+
+// Find related wissen articles by matching food-relevant tags
+const foodTagMap: Record<string, string[]> = {
+  supermarkt: ["Ernährungsplan", "Makros", "Protein", "Meal Prep", "Kalorienbedarf"],
+  gericht: ["Abnehmen", "Kaloriendefizit", "Ernährungsplan", "Kalorien zählen"],
+  "fast-food": ["Abnehmen", "Kaloriendefizit", "Heißhunger", "Cheat Day"],
+  getraenk: ["Abnehmen", "Intervallfasten", "Alkohol"],
+};
+const relevantTags = foodTagMap[food.category] || ["Abnehmen", "Ernährungsplan"];
+const relatedArticles = articlesMeta
+  .filter((a) => a.tags.some((t) => relevantTags.some((rt) => t.toLowerCase().includes(rt.toLowerCase()))))
+  .slice(0, 4)
+  .map((a) => ({ slug: a.slug, title: a.title, description: a.description, tags: a.tags }));
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -150,5 +164,6 @@ const authorPersonSchema = {
     config={defaultTemplateConfig}
     food={food}
     relatedFoodsMeta={relatedFoodsMeta}
+    relatedArticles={relatedArticles}
   />
 </Layout>

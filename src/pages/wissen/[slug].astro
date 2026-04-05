@@ -6,6 +6,7 @@ import {
   getAllSlugs,
   getArticleMeta,
   getArticleContent,
+  getRelatedArticles,
   type ArticleMeta,
 } from "@content/wissen";
 
@@ -28,6 +29,64 @@ const content = await getArticleContent(slug as string);
 if (!content) {
   return Astro.redirect("/wissen");
 }
+
+// Related articles by shared tags
+const relatedArticles = getRelatedArticles(slug as string, 4);
+
+// Related foods - find food mentions in article content and map to food data
+const foodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
+const allFoods = Object.values(foodFiles).map((mod: any) => mod.default || mod);
+
+// Food mapping: common words in articles -> food slugs
+const foodKeywordMap: Record<string, string> = {
+  "hähnchenbrust": "haehnchenbrust", "hühnerbrust": "haehnchenbrust", "hähnchen": "haehnchenbrust",
+  "magerquark": "magerquark", "quark": "quark",
+  "haferflocken": "haferflocken", "oats": "haferflocken",
+  "reis": "reis", "vollkornreis": "reis",
+  "nudeln": "nudeln", "pasta": "nudeln", "spaghetti": "nudeln",
+  "brot": "brot", "vollkornbrot": "brot",
+  "pizza": "pizza",
+  "lachs": "lachsfilet", "lachsfilet": "lachsfilet",
+  "avocado": "avocado",
+  "banane": "banane",
+  "brokkoli": "brokkoli",
+  "kartoffel": "kartoffeln", "kartoffeln": "kartoffeln",
+  "schokolade": "schokolade",
+  "chips": "chips",
+  "ei": "ei", "eier": "ei",
+  "tofu": "tofu",
+  "burger": "burger",
+  "schnitzel": "schnitzel",
+  "döner": "doener-box",
+  "cola": "cola",
+  "bier": "bier",
+  "wein": "wein",
+  "kaffee": "kaffee",
+  "cappuccino": "cappuccino",
+  "milch": "milch",
+  "joghurt": "joghurt",
+  "spinat": "spinat",
+  "mandeln": "mandeln",
+};
+
+const contentLower = content.toLowerCase();
+const matchedSlugs = new Set<string>();
+for (const [keyword, foodSlug] of Object.entries(foodKeywordMap)) {
+  if (contentLower.includes(keyword)) {
+    matchedSlugs.add(foodSlug);
+  }
+}
+
+const relatedFoods = Array.from(matchedSlugs)
+  .map((slug) => allFoods.find((f: any) => f.slug === slug))
+  .filter(Boolean)
+  .slice(0, 8)
+  .map((f: any) => ({
+    slug: f.slug,
+    name: f.name,
+    emoji: f.emoji,
+    calories_per_100g: f.overview.calories_per_100g,
+  }));
 
 const seo = {
   title: `${article.title} | Mahlzait Wissen`,
@@ -132,10 +191,12 @@ const articleSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
 
   <ArticlePage
-    client:load
+    client:visible
     config={defaultTemplateConfig}
     article={article}
     content={content}
+    relatedArticles={relatedArticles}
+    relatedFoods={relatedFoods}
   />
 </Layout>
 

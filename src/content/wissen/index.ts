@@ -1472,6 +1472,25 @@ export function getAllTags(): string[] {
   return Array.from(tags).sort();
 }
 
+// Helper: Verwandte Artikel finden (basierend auf gemeinsamen Tags)
+export function getRelatedArticles(slug: string, limit: number = 4): ArticleMeta[] {
+  const article = getArticleMeta(slug);
+  if (!article) return [];
+
+  const scored = articlesMeta
+    .filter((a) => a.slug !== slug)
+    .map((a) => {
+      const sharedTags = a.tags.filter((t) =>
+        article.tags.some((at) => at.toLowerCase() === t.toLowerCase())
+      ).length;
+      return { article: a, score: sharedTags };
+    })
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score);
+
+  return scored.slice(0, limit).map((s) => s.article);
+}
+
 // Helper: Artikel-Content laden (async, für Detailseite)
 // Nutzt import.meta.glob um Markdown-Dateien zu laden
 const articleModules = import.meta.glob<{ default: string }>(

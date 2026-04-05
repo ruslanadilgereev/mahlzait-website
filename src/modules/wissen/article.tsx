@@ -8,10 +8,19 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
 
+interface RelatedFood {
+  slug: string;
+  name: string;
+  emoji: string;
+  calories_per_100g: number;
+}
+
 interface Props {
   config: TemplateConfig;
   article: ArticleMeta;
   content: string;
+  relatedArticles?: ArticleMeta[];
+  relatedFoods?: RelatedFood[];
 }
 
 function formatDate(dateStr: string): string {
@@ -23,7 +32,7 @@ function formatDate(dateStr: string): string {
   });
 }
 
-function ArticlePage({ config, article, content }: Props) {
+function ArticlePage({ config, article, content, relatedArticles, relatedFoods }: Props) {
   return (
     <ConfigContext.Provider value={config}>
       <main>
@@ -173,6 +182,53 @@ function ArticlePage({ config, article, content }: Props) {
               bitte an einen Arzt oder eine Ernährungsfachkraft.
             </span>
           </div>
+          {/* Related Foods */}
+          {relatedFoods && relatedFoods.length > 0 && (
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold mb-4">Relevante Lebensmittel</h2>
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+                {relatedFoods.map((food) => (
+                  <a
+                    key={food.slug}
+                    href={`/kalorien/${food.slug}/`}
+                    className="card card-compact bg-base-200 hover:bg-base-300 transition-colors"
+                  >
+                    <div className="card-body items-center text-center p-3">
+                      <span className="text-2xl">{food.emoji}</span>
+                      <span className="font-semibold text-sm">{food.name}</span>
+                      <span className="text-xs opacity-70">{food.calories_per_100g} kcal/100g</span>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Related Articles */}
+          {relatedArticles && relatedArticles.length > 0 && (
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold mb-4">Verwandte Artikel</h2>
+              <div className="grid gap-4 sm:grid-cols-2">
+                {relatedArticles.map((ra) => (
+                  <a
+                    key={ra.slug}
+                    href={`/wissen/${ra.slug}/`}
+                    className="card bg-base-200 hover:bg-base-300 transition-colors"
+                  >
+                    <div className="card-body p-4">
+                      <h3 className="card-title text-base">{ra.title}</h3>
+                      <p className="text-sm opacity-70 line-clamp-2">{ra.description}</p>
+                      <div className="flex gap-2 mt-2 flex-wrap">
+                        {ra.tags.slice(0, 3).map((tag) => (
+                          <span key={tag} className="badge badge-sm badge-outline">{tag}</span>
+                        ))}
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
         </article>
 
         {/* CTA Section */}

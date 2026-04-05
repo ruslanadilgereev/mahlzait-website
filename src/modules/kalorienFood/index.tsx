@@ -56,6 +56,13 @@ interface FoodData {
   related_foods: string[];
 }
 
+interface RelatedArticle {
+  slug: string;
+  title: string;
+  description: string;
+  tags: string[];
+}
+
 interface Props {
   config: TemplateConfig;
   food: FoodData;
@@ -64,9 +71,10 @@ interface Props {
     name: string;
     emoji?: string;
   }>;
+  relatedArticles?: RelatedArticle[];
 }
 
-function KalorienFoodPage({ config, food, relatedFoodsMeta }: Props) {
+function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles }: Props) {
   const [portionGrams, setPortionGrams] = useState<number>(food.overview.typical_portion_g);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -371,6 +379,27 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta }: Props) {
                   → Alle {'>'}200 Lebensmittel in der Kalorientabelle
                 </a>
               </p>
+            </div>
+          )}
+
+          {/* Related Wissen Articles */}
+          {relatedArticles && relatedArticles.length > 0 && (
+            <div className="max-w-2xl mx-auto mb-12">
+              <h2 className="text-2xl font-bold mb-4">Wissenschaftlich fundiert</h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {relatedArticles.map((ra) => (
+                  <a
+                    key={ra.slug}
+                    href={`/wissen/${ra.slug}/`}
+                    className="card card-compact bg-base-200 hover:bg-base-300 transition-colors"
+                  >
+                    <div className="card-body p-4">
+                      <h3 className="font-semibold text-sm leading-tight">{ra.title}</h3>
+                      <p className="text-xs opacity-70 line-clamp-2">{ra.description}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           )}
 
