@@ -324,7 +324,7 @@ const templateConfig: TemplateConfig = {
         "/screenshots/2.webp",
         "/screenshots/3.webp",
       ],
-      rewards: ["5,0 Sterne \n im App Store", "Jetzt mit \n AI-Chat"],
+      rewards: ["4,8 Sterne \n im App Store", "Jetzt mit \n AI-Chat"],
       usersDescription: "1.000+ Nutzer:innen tracken bereits mit Mahlzait",
       headlineMark: [0, 1],
     },
