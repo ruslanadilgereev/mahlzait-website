@@ -22,6 +22,8 @@ export function generateOrganizationSchema(
       "https://play.google.com/store/apps/details?id=com.promptit.mytemple",
       "https://www.instagram.com/mahlzait",
       "https://www.tiktok.com/@mahlzait",
+      "https://www.facebook.com/mahlzait",
+      "https://www.pinterest.com/mahlzait/",
       "https://x.com/mahlzait",
       "https://www.youtube.com/@mahlzait-de",
     ],
