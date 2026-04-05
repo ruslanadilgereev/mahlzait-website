@@ -125,23 +125,23 @@ const templateConfig: TemplateConfig = {
     },
     partners: {
       title: "Mahlzait in Zahlen",
-      subtitle: "Stand: März 2026 · Basierend auf anonymisierten Nutzungsdaten",
+      subtitle: `Stand: ${new Date(stats.updatedAt).toLocaleDateString("de-DE", { month: "long", year: "numeric" })} · Basierend auf anonymisierten Nutzungsdaten`,
       stats: [
         {
           icon: "🍽️",
-          number: "31.000+",
+          number: stats.mealsLoggedDisplay,
           label: "Geloggte Mahlzeiten",
-          tooltip: "Kumuliert seit App-Launch (März 2026)",
+          tooltip: "Kumuliert seit App-Launch",
         },
         {
           icon: "🤖",
-          number: "14.500+",
+          number: stats.aiPhotosDisplay,
           label: "KI-Foto-Logs",
-          tooltip: "Mahlzeiten die per KI-Foto-Erkennung geloggt wurden",
+          tooltip: "Mahlzeiten die per KI-Foto oder KI-Chat geloggt wurden",
         },
         {
           icon: "📱",
-          number: "7.300+",
+          number: stats.barcodeScansDisplay,
           label: "Barcode-Scans",
           tooltip: "Lebensmittel per Barcode gescannt und geloggt",
         },
@@ -149,7 +149,7 @@ const templateConfig: TemplateConfig = {
           icon: "👥",
           number: stats.displayCount,
           label: "Registrierte Nutzer",
-          tooltip: `Registrierte Nutzer (Stand: ${new Date(stats.updatedAt).toLocaleDateString("de-DE", { month: "long", year: "numeric" })})`,
+          tooltip: `Registrierte Nutzer (Firebase Auth)`,
         },
       ],
     },

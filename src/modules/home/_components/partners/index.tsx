@@ -32,7 +32,7 @@ function Partners() {
           viewport={{ once: true }}
           className="text-neutral-content/80 text-sm md:text-base max-w-2xl text-center leading-relaxed mt-2"
         >
-          Stand März 2026 nutzen über 1.000 Nutzer Mahlzait aktiv. Die App hat über 31.000 Mahlzeiten geloggt, mit
+          Über {partners.stats[3]?.number || "1.000+"} Nutzer tracken mit Mahlzait. Die App hat über {partners.stats[0]?.number || "30.000+"} Mahlzeiten geloggt, mit
           einer durchschnittlichen Gewichtsabnahme von 0,5&nbsp;kg pro Woche bei Nutzern die 5+ Tage pro Woche tracken.
           Die KI-Foto-Erkennung erreicht eine Genauigkeit von 90%.
         </motion.p>
