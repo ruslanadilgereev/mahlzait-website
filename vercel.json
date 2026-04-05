@@ -31,17 +31,32 @@
   ],
   "redirects": [
     {
-      "source": "/sample-page/:path*",
+      "source": "/sample-page",
       "destination": "/api/gone",
       "permanent": true
     },
     {
-      "source": "/uncategorized/:path*",
+      "source": "/sample-page/:path(.*)",
       "destination": "/api/gone",
       "permanent": true
     },
     {
-      "source": "/category/:path*",
+      "source": "/uncategorized",
+      "destination": "/api/gone",
+      "permanent": true
+    },
+    {
+      "source": "/uncategorized/:path(.*)",
+      "destination": "/api/gone",
+      "permanent": true
+    },
+    {
+      "source": "/category",
+      "destination": "/api/gone",
+      "permanent": true
+    },
+    {
+      "source": "/category/:path(.*)",
       "destination": "/api/gone",
       "permanent": true
     },
