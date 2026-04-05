@@ -85,10 +85,10 @@ Nicht alle Fette sind gleich. Hier ist der echte Unterschied:
 | Lebensmittel | Fettart | Wirkung |
 |--------------|---------|---------|
 | Olivenöl | Einfach ungesättigt | Entzündungshemmend, herzgesund |
-| Avocado | Einfach ungesättigt | Sättigend, nährstoffreich |
+| [Avocado](/kalorien/avocado/) | Einfach ungesättigt | Sättigend, nährstoffreich |
 | Nüsse (Walnüsse, Mandeln) | Mehrfach ungesättigt | Omega-3, gut fürs Gehirn |
-| Fetter Fisch (Lachs, Makrele) | Omega-3 | Herzschutz, weniger Entzündung |
-| Eier | Gemischt | Proteinreich, sättigend |
+| Fetter Fisch ([Lachs](/kalorien/lachs/), Makrele) | Omega-3 | Herzschutz, weniger Entzündung |
+| [Eier](/kalorien/ei/) | Gemischt | Proteinreich, sättigend |
 
 ### ❌ Schlechte Fette (weniger davon!)
 

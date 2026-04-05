@@ -183,19 +183,19 @@ Intervallfasten gibt dir keine Lebensmittel vor – aber für optimale Ergebniss
 **50% Gemüse & Salat**
 - Ballaststoffe für Sättigung
 - Wenig Kalorien, viele Nährstoffe
-- Beispiele: Brokkoli, Spinat, Paprika, Tomaten, Zucchini
+- Beispiele: [Brokkoli](/kalorien/brokkoli/), Spinat, Paprika, Tomaten, Zucchini
 
 **25% Protein**
 - Hält satt, schützt Muskeln
 - Mindestens 20-30g pro Mahlzeit
-- Beispiele: Hähnchen, Lachs, Eier, Tofu, Hülsenfrüchte, Quark
+- Beispiele: Hähnchen, [Lachs](/kalorien/lachs/), [Eier](/kalorien/ei/), Tofu, Hülsenfrüchte, [Quark](/kalorien/magerquark/)
 
 **25% Komplexe Kohlenhydrate**
 - Langsame Energiefreisetzung
-- Beispiele: Vollkornreis, Quinoa, Süßkartoffeln, Haferflocken
+- Beispiele: Vollkorn[reis](/kalorien/reis/), Quinoa, Süßkartoffeln, [Haferflocken](/kalorien/haferflocken/)
 
 **Dazu: Gesunde Fette**
-- Olivenöl, Avocado, Nüsse, fetter Fisch
+- Olivenöl, [Avocado](/kalorien/avocado/), Nüsse, fetter Fisch
 
 ### Konkrete Mahlzeiten-Ideen
 

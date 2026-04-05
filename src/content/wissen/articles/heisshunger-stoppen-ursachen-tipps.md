@@ -50,7 +50,7 @@ Eine Meta-Analyse aus 2020 fasste es zusammen: **Protein unterdrückt den Appeti
 
 Der Grund: Protein stimuliert Sättigungshormone wie GLP-1 und PYY stärker als andere Makronährstoffe. Eine Studie mit übergewichtigen Jugendlichen zeigte sogar, dass ein proteinreiches Frühstück die Heißhunger-Attacken über den Tag reduzierte.
 
-**Praktisch:** Mindestens 25-30g Protein pro Mahlzeit. Das sind etwa 150g Hähnchenbrust, 200g Quark, oder 3-4 Eier.
+**Praktisch:** Mindestens 25-30g Protein pro Mahlzeit. Das sind etwa 150g [Hähnchenbrust](/kalorien/haehnchenbrust/), 200g [Quark](/kalorien/magerquark/), oder 3-4 [Eier](/kalorien/ei/).
 
 ### 2. Zu wenig Schlaf
 

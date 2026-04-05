@@ -174,10 +174,10 @@ Du hast jetzt Kalorien und Makros. Aber welche Lebensmittel passen in deinen Pla
 
 | Lebensmittel | Protein/100g | Kalorien/100g | Protein pro Kalorie |
 |-------------|-------------|--------------|-------------------|
-| Hähnchenbrust | 31 g | 165 kcal | ⭐⭐⭐⭐⭐ |
-| Magerquark | 12 g | 66 kcal | ⭐⭐⭐⭐⭐ |
+| [Hähnchenbrust](/kalorien/haehnchenbrust/) | 31 g | 165 kcal | ⭐⭐⭐⭐⭐ |
+| [Magerquark](/kalorien/magerquark/) | 12 g | 66 kcal | ⭐⭐⭐⭐⭐ |
 | Thunfisch (Dose) | 26 g | 108 kcal | ⭐⭐⭐⭐⭐ |
-| Eier | 13 g | 155 kcal | ⭐⭐⭐⭐ |
+| [Eier](/kalorien/ei/) | 13 g | 155 kcal | ⭐⭐⭐⭐ |
 | Griechischer Joghurt | 10 g | 97 kcal | ⭐⭐⭐⭐ |
 | Linsen (gekocht) | 9 g | 116 kcal | ⭐⭐⭐ |
 | Tofu | 8 g | 76 kcal | ⭐⭐⭐⭐ |
@@ -187,22 +187,22 @@ Du hast jetzt Kalorien und Makros. Aber welche Lebensmittel passen in deinen Pla
 
 | Lebensmittel | KH/100g | Ballaststoffe | Sättigung |
 |-------------|---------|--------------|-----------|
-| Haferflocken | 59 g | 10 g | ⭐⭐⭐⭐⭐ |
-| Kartoffeln | 17 g | 2 g | ⭐⭐⭐⭐⭐ |
-| Vollkornreis | 23 g | 1,8 g | ⭐⭐⭐⭐ |
-| Vollkornbrot | 41 g | 7 g | ⭐⭐⭐⭐ |
+| [Haferflocken](/kalorien/haferflocken/) | 59 g | 10 g | ⭐⭐⭐⭐⭐ |
+| [Kartoffeln](/kalorien/kartoffeln/) | 17 g | 2 g | ⭐⭐⭐⭐⭐ |
+| Vollkorn[reis](/kalorien/reis/) | 23 g | 1,8 g | ⭐⭐⭐⭐ |
+| Vollkorn[brot](/kalorien/brot/) | 41 g | 7 g | ⭐⭐⭐⭐ |
 | Süßkartoffeln | 20 g | 3 g | ⭐⭐⭐⭐ |
 | Quinoa | 21 g | 2,8 g | ⭐⭐⭐⭐ |
-| Obst (Banane) | 22 g | 2,6 g | ⭐⭐⭐ |
+| Obst ([Banane](/kalorien/banane/)) | 22 g | 2,6 g | ⭐⭐⭐ |
 
 ### Gesunde Fettquellen
 
 | Lebensmittel | Fett/100g | Typ | Besonderheit |
 |-------------|----------|-----|-------------|
-| Avocado | 15 g | Einfach ungesättigt | Viele Mikronährstoffe |
+| [Avocado](/kalorien/avocado/) | 15 g | Einfach ungesättigt | Viele Mikronährstoffe |
 | Olivenöl | 100 g | Einfach ungesättigt | Nur 1 EL = 14g Fett! |
 | Nüsse (Walnüsse) | 65 g | Omega-3 | Aber: sehr kaloriendicht! |
-| Lachs | 13 g | Omega-3 | Auch gute Proteinquelle |
+| [Lachs](/kalorien/lachs/) | 13 g | Omega-3 | Auch gute Proteinquelle |
 | Leinsamen | 42 g | Omega-3 | Geschrotet besser verwertbar |
 | Eier | 11 g | Gemischt | Vollwertiges Lebensmittel |
 
@@ -210,7 +210,7 @@ Du hast jetzt Kalorien und Makros. Aber welche Lebensmittel passen in deinen Pla
 
 Gemüse ist das einzige Lebensmittel, von dem du quasi unbegrenzt essen kannst:
 
-- **Kalorienarm:** 100g Gurke = 12 kcal, 100g Brokkoli = 34 kcal
+- **Kalorienarm:** 100g Gurke = 12 kcal, 100g [Brokkoli](/kalorien/brokkoli/) = 34 kcal
 - **Sättigend:** Viel Volumen, viele Ballaststoffe
 - **Nährstoffreich:** Vitamine, Mineralien, sekundäre Pflanzenstoffe
 - **Tipp:** Fülle die Hälfte deines Tellers mit Gemüse

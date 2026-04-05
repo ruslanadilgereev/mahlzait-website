@@ -1,4 +1,4 @@
-Keine Kohlenhydrate nach 18 Uhr – diesen Tipp hast du bestimmt schon gehört. Nudeln, Brot und Kartoffeln am Abend sollen angeblich direkt auf den Hüften landen. **Aber stimmt das wirklich? Spoiler: Eine 6-monatige Studie zeigt das genaue Gegenteil.**
+Keine Kohlenhydrate nach 18 Uhr – diesen Tipp hast du bestimmt schon gehört. [Nudeln](/kalorien/nudeln/), [Brot](/kalorien/brot/) und [Kartoffeln](/kalorien/kartoffeln/) am Abend sollen angeblich direkt auf den Hüften landen. **Aber stimmt das wirklich? Spoiler: Eine 6-monatige Studie zeigt das genaue Gegenteil.**
 
 ## Das Wichtigste in Kürze
 

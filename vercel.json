@@ -7,6 +7,38 @@
     {
       "source": "/api/:path*",
       "destination": "/api/:path*"
+    },
+    {
+      "source": "/wp-sitemap-posts-page-1.xml",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/wp-sitemap.xml",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/wp-sitemap-posts-post-1.xml",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/wp-:path*",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/sample-page/:path*",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/uncategorized/:path*",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/category/:path*",
+      "destination": "/api/gone"
+    },
+    {
+      "source": "/gone/",
+      "destination": "/api/gone"
     }
   ],
   "redirects": [
@@ -26,41 +58,6 @@
       "destination": "/sitemap-index.xml",
       "permanent": true
     },
-    {
-      "source": "/wp-sitemap-posts-page-1.xml",
-      "destination": "/gone/",
-      "permanent": true
-    },
-    {
-      "source": "/wp-sitemap.xml",
-      "destination": "/gone/",
-      "permanent": true
-    },
-    {
-      "source": "/wp-sitemap-posts-post-1.xml",
-      "destination": "/gone/",
-      "permanent": true
-    },
-    {
-      "source": "/wp-:path*",
-      "destination": "/gone/",
-      "permanent": true
-    },
-    {
-      "source": "/sample-page/:path*",
-      "destination": "/gone/",
-      "permanent": true
-    },
-    {
-      "source": "/uncategorized/:path*",
-      "destination": "/gone/",
-      "permanent": true
-    },
-    {
-      "source": "/category/:path*",
-      "destination": "/gone/",
-      "permanent": true
-    }
   ],
   "headers": [
     {
