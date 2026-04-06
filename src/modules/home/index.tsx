@@ -20,7 +20,7 @@ import AiTools from "./_components/aiTools";
 function MedicalDisclaimer() {
   return (
     <section className="max-w-screen-lg mx-auto px-4 py-6">
-      <div className="bg-base-200/60 rounded-xl p-6 text-sm text-base-content/80 space-y-3">
+      <div className="bg-base-200 rounded-xl p-6 text-sm text-base-content space-y-3">
         <h3 className="font-semibold text-base text-base-content/90">Wichtiger Hinweis</h3>
         <p>
           Mahlzait ist ein Hilfsmittel zur Ernährungsdokumentation und ersetzt keine ärztliche Beratung.
