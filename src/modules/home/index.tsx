@@ -35,9 +35,9 @@ function MedicalDisclaimer() {
         </p>
         <p>
           <strong>Wissenschaftliche Grundlagen:</strong> Mahlzait basiert auf anerkannten Ernährungsprinzipien:
-          Kaloriendefizit für Gewichtsabnahme (Quelle: <a href="https://www.dge.de/" target="_blank" rel="noopener noreferrer" className="link link-primary">Deutsche Gesellschaft für Ernährung, DGE</a>),
-          Makronährstoff-Tracking für ausgewogene Ernährung (Quelle: <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noopener noreferrer" className="link link-primary">WHO-Richtlinien</a>).
-          Mehr dazu in unserem <a href="/wissen/" className="link link-primary">Wissen-Bereich</a>.
+          Kaloriendefizit für Gewichtsabnahme (Quelle: <a href="https://www.dge.de/" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:text-primary">Deutsche Gesellschaft für Ernährung, DGE</a>),
+          Makronährstoff-Tracking für ausgewogene Ernährung (Quelle: <a href="https://www.who.int/news-room/fact-sheets/detail/healthy-diet" target="_blank" rel="noopener noreferrer" className="underline font-semibold hover:text-primary">WHO-Richtlinien</a>).
+          Mehr dazu in unserem <a href="/wissen/" className="underline font-semibold hover:text-primary">Wissen-Bereich</a>.
         </p>
       </div>
     </section>
