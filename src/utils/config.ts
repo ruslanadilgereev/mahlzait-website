@@ -149,7 +149,7 @@ const templateConfig: TemplateConfig = {
           icon: "👥",
           number: stats.displayCount,
           label: "Registrierte Nutzer",
-          tooltip: `Registrierte Nutzer (Firebase Auth)`,
+          tooltip: `Registrierte Nutzer`,
         },
       ],
     },
