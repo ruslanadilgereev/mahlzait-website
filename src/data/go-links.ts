@@ -43,6 +43,12 @@ export const GO_LINKS: Record<string, GoLink> = {
     campaign: "tutorials",
     content: "wasser",
   },
+  "wasser-tt": {
+    source: "tiktok",
+    medium: "video",
+    campaign: "tutorials",
+    content: "wasser",
+  },
 };
 
 // ─── URL Generators ────────────────────────────────────────────────────
