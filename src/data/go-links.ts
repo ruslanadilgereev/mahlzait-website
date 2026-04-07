@@ -7,7 +7,7 @@
  * Neuen Link hinzufügen: einfach einen Eintrag in GO_LINKS ergänzen.
  * URL-Schema: mahlzait.de/go/{slug}/
  * Naming: {thema}-{plattform}  (bei mehreren zum gleichen Thema: wasser2-yt, wasser3-yt)
- *   Plattformen: yt (YouTube), tt (TikTok), ig (Instagram), fb (Facebook), rd (Reddit)
+ *   Plattformen: yt (YouTube), tt (TikTok), ig (Instagram), fb (Facebook), rd (Reddit), x (X/Twitter)
  */
 
 export interface GoLink {
@@ -46,6 +46,24 @@ export const GO_LINKS: Record<string, GoLink> = {
   "wasser-tt": {
     source: "tiktok",
     medium: "video",
+    campaign: "tutorials",
+    content: "wasser",
+  },
+  "wasser-ig": {
+    source: "instagram",
+    medium: "reels",
+    campaign: "tutorials",
+    content: "wasser",
+  },
+  "wasser-fb": {
+    source: "facebook",
+    medium: "post",
+    campaign: "tutorials",
+    content: "wasser",
+  },
+  "wasser-x": {
+    source: "twitter",
+    medium: "post",
     campaign: "tutorials",
     content: "wasser",
   },
