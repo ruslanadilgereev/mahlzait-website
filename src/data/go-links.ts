@@ -6,7 +6,7 @@
  *
  * Neuen Link hinzufügen: einfach einen Eintrag in GO_LINKS ergänzen.
  * URL-Schema: mahlzait.de/go/{slug}/
- * Naming: {thema}-{plattform}-{nummer}
+ * Naming: {thema}-{plattform}  (bei mehreren zum gleichen Thema: wasser2-yt, wasser3-yt)
  *   Plattformen: yt (YouTube), tt (TikTok), ig (Instagram), fb (Facebook)
  */
 
@@ -31,11 +31,11 @@ export const FALLBACK_URL = "https://www.mahlzait.de/";
 
 // ─── Redirect Links ────────────────────────────────────────────────────
 export const GO_LINKS: Record<string, GoLink> = {
-  "wasser-yt-001": {
+  "wasser-yt": {
     source: "youtube",
     medium: "shorts",
-    campaign: "tutorials_q2_2026",
-    content: "wasser_001",
+    campaign: "tutorials",
+    content: "wasser",
   },
 };
 
