@@ -67,6 +67,42 @@ export const GO_LINKS: Record<string, GoLink> = {
     campaign: "tutorials",
     content: "wasser",
   },
+  "bio-yt": {
+    source: "youtube",
+    medium: "bio",
+    campaign: "bio",
+    content: "bio",
+  },
+  "bio-rd": {
+    source: "reddit",
+    medium: "bio",
+    campaign: "bio",
+    content: "bio",
+  },
+  "bio-tt": {
+    source: "tiktok",
+    medium: "bio",
+    campaign: "bio",
+    content: "bio",
+  },
+  "bio-ig": {
+    source: "instagram",
+    medium: "bio",
+    campaign: "bio",
+    content: "bio",
+  },
+  "bio-fb": {
+    source: "facebook",
+    medium: "bio",
+    campaign: "bio",
+    content: "bio",
+  },
+  "bio-x": {
+    source: "twitter",
+    medium: "bio",
+    campaign: "bio",
+    content: "bio",
+  },
 };
 
 // ─── URL Generators ────────────────────────────────────────────────────
