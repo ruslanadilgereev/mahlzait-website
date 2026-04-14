@@ -41,11 +41,89 @@ export interface ArticleMeta {
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
 export const articlesMeta: ArticleMeta[] = [
   {
+    slug: "keto-diaet-abnehmen-wissenschaft",
+    title: "Keto-Diät: Was sagt die Wissenschaft wirklich?",
+    description:
+      "Keto-Diät im Faktencheck 2026: Meta-Analysen zeigen 1–2 kg Vorsprung kurzfristig, nach 12 Monaten kein Unterschied zu Low-Fat. LDL steigt bei klassischer Keto. Für wen sie passt und für wen nicht.",
+    tags: [
+      "Keto",
+      "Low-Carb",
+      "Abnehmen",
+      "Makros",
+      "Kohlenhydrate",
+      "Ernährung",
+      "Meta-Analyse",
+    ],
+    relatedCalculators: [
+      "makros-berechnen",
+      "kalorienbedarf-berechnen",
+      "kaloriendefizit-berechnen",
+    ],
+    publishedAt: "2026-04-14",
+    readingTime: 12,
+    featured: true,
+    sources: [
+      {
+        title:
+          "Effect of Low-Fat Diet Interventions Versus Other Diet Interventions on Long-Term Weight Change in Adults: A Systematic Review and Meta-Analysis",
+        authors: "Tobias DK, Chen M, Manson JE, Ludwig DS, Willett W, Hu FB",
+        journal: "The Lancet Diabetes & Endocrinology",
+        year: 2015,
+        doi: "10.1016/S2213-8587(15)00367-8",
+        pmid: "26527511",
+      },
+      {
+        title:
+          "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors:
+          "Gardner CD, Trepanowski JF, Del Gobbo LC, Hauser ME, Rigdon J, Ioannidis JPA, Desai M, King AC",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245",
+        pmid: "29466592",
+      },
+      {
+        title:
+          "Dietary Intervention for Overweight and Obese Adults: Comparison of Low-Carbohydrate and Low-Fat Diets. A Meta-Analysis",
+        authors: "Sackner-Bernstein J, Kanter D, Kaul S",
+        journal: "PLOS ONE",
+        year: 2015,
+        doi: "10.1371/journal.pone.0139817",
+      },
+      {
+        title:
+          "Comparison of Weight Loss Among Named Diet Programs in Overweight and Obese Adults: A Meta-Analysis",
+        authors: "Johnston BC, Kanters S, Bandayrel K, et al.",
+        journal: "JAMA",
+        year: 2014,
+        doi: "10.1001/jama.2014.10397",
+      },
+      {
+        title:
+          "Calorie for Calorie, Dietary Fat Restriction Results in More Body Fat Loss than Carbohydrate Restriction in People with Obesity",
+        authors:
+          "Hall KD, Bemis T, Brychta R, Chen KY, Courville A, Crayner EJ, et al.",
+        journal: "Cell Metabolism",
+        year: 2015,
+        doi: "10.1016/j.cmet.2015.07.021",
+        pmid: "26278052",
+      },
+      {
+        title: "The Ketogenic Diet for the Treatment of Childhood Epilepsy: A Review",
+        authors: "Kossoff EH, Zupec-Kania BA, Amark PE, et al.",
+        journal: "New England Journal of Medicine / Epilepsia",
+        year: 2018,
+        url: "https://www.nejm.org/doi/full/10.1056/NEJMra1600501",
+      },
+    ],
+  },
+  {
     slug: "ernaehrungsplan-erstellen-anleitung",
     title: "Ernährungsplan erstellen: Schritt-für-Schritt Anleitung 2026",
     description:
       "Ernährungsplan selber erstellen in 7 Schritten: Kalorienbedarf berechnen, Makros aufteilen, Mahlzeiten planen. Mit 3 Beispiel-Tagesplänen, Einkaufslisten und kostenlosen Rechnern.",
     tags: ["Ernährungsplan", "Abnehmen", "Muskelaufbau", "Meal Prep", "Anleitung", "Makros", "Kalorienbedarf"],
+    relatedCalculators: ["essensplan-erstellen", "kalorienbedarf-berechnen", "makros-berechnen"],
     publishedAt: "2026-03-02",
     readingTime: 22,
     featured: true,
@@ -86,6 +164,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Komplett-Anleitung für Intervallfasten 16:8: 7-Tage-Starterplan, Rezeptideen, Getränke-Liste, Schichtarbeit-Tipps und wissenschaftliche Fakten. Perfekt zur Fastenzeit ab 5. März.",
     tags: ["Intervallfasten", "Abnehmen", "16:8", "Anfänger", "Fastenzeit", "Anleitung", "Plan"],
+    relatedCalculators: ["intervallfasten-rechner", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-22",
     updatedAt: "2026-02-28",
     readingTime: 18,
@@ -135,6 +214,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Die Abnehmspritze im Faktencheck: 15% Gewichtsverlust klingt super – aber was sind die Nebenwirkungen, Kosten und Langzeitrisiken? Wissenschaft vs. TikTok-Hype.",
     tags: ["Abnehmen", "Abnehmspritze", "Ozempic", "Wegovy", "Medikamente"],
+    relatedCalculators: ["kaloriendefizit-berechnen", "bmi-rechner"],
     publishedAt: "2026-02-21",
     readingTime: 8,
     featured: true,
@@ -188,6 +268,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Der Mythos aus den 80ern im Faktencheck: Meta-Analysen zeigen, dass Low-Fat-Diäten nicht besser funktionieren. Warum gute Fette beim Abnehmen sogar helfen können.",
     tags: ["Abnehmen", "Mythen", "Fett", "Ernährung", "Low-Fat"],
+    relatedCalculators: ["makros-berechnen", "kaloriendefizit-berechnen"],
     publishedAt: "2026-02-20",
     readingTime: 8,
     featured: true,
@@ -238,6 +319,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Der Jojo-Effekt erklärt: Warum 80% nach einer Diät wieder zunehmen, wie Hormone und Stoffwechsel sich anpassen – und was die erfolgreichen 20% anders machen.",
     tags: ["Abnehmen", "Jojo-Effekt", "Diät", "Mythen", "Gewicht halten"],
+    relatedCalculators: ["kaloriendefizit-berechnen", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-19",
     readingTime: 8,
     featured: true,
@@ -289,6 +371,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Der Mythos entkräftet: Meta-Analysen zeigen, dass Kalorienreduktion Heißhunger senkt – nicht steigert. Plus: Die echten Ursachen (Schlaf, Protein, Blutzucker) und was wirklich hilft.",
     tags: ["Abnehmen", "Heißhunger", "Mythen", "Protein", "Schlaf"],
+    relatedCalculators: ["protein-bedarf-rechner", "makros-berechnen"],
     publishedAt: "2026-02-18",
     readingTime: 7,
     featured: true,
@@ -356,6 +439,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Der TikTok-Trend im Faktencheck: Die viralste Studie wurde zurückgezogen, und echte Evidenz für Fettverbrennung fehlt. Was Apfelessig wirklich kann – und was nicht.",
     tags: ["Abnehmen", "Mythen", "Apfelessig", "Ernährung", "Trend"],
+    relatedCalculators: ["kaloriendefizit-berechnen"],
     publishedAt: "2026-02-17",
     readingTime: 8,
     featured: true,
@@ -404,6 +488,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Kein Bock auf Gym? Die Wissenschaft zeigt: Mit Ernährung erreichst du 80% des Abnehm-Erfolgs. Meta-Analysen beweisen – Diät allein schlägt Sport allein um Längen.",
     tags: ["Abnehmen", "Sport", "Ernährung", "Mythen", "Meta-Analyse"],
+    relatedCalculators: ["kaloriendefizit-berechnen", "kalorienbedarf-berechnen", "makros-berechnen"],
     publishedAt: "2026-02-16",
     readingTime: 6,
     featured: true,
@@ -444,6 +529,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Grüne Säfte, Detox-Tees, Entschlackungskuren – überall verspricht 'Entgiften' schnelles Abnehmen. Doch die Wissenschaft ist eindeutig: Schlacken gibt es nicht, und dein Körper entgiftet sich selbst.",
     tags: ["Abnehmen", "Mythen", "Detox", "Ernährung", "Diät"],
+    relatedCalculators: ["kaloriendefizit-berechnen", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-15",
     readingTime: 7,
     featured: true,
@@ -491,6 +577,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Alkohol pausiert die Fettverbrennung – aber das ist nicht das größte Problem. Warum der Heißhunger danach gefährlicher ist und wie du trotzdem abnehmen kannst.",
     tags: ["Abnehmen", "Alkohol", "Fettverbrennung", "Mythen", "Kalorien"],
+    relatedCalculators: ["alkohol-kalorien-rechner", "kaloriendefizit-berechnen"],
     publishedAt: "2026-02-14",
     readingTime: 9,
     featured: true,
@@ -549,6 +636,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Kurbelt Kaffee wirklich den Stoffwechsel an? Meta-Analysen zeigen: Koffein erhöht den Kalorienverbrauch um 3–4%. Aber nur schwarzer Kaffee hilft – Latte Macchiato zählt nicht.",
     tags: ["Abnehmen", "Kaffee", "Stoffwechsel", "Mythen", "Meta-Analyse"],
+    relatedCalculators: ["koffein-rechner", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-13",
     readingTime: 7,
     featured: true,
@@ -589,6 +677,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Der Mythos 'Keine Kohlenhydrate nach 18 Uhr' im Faktencheck. Eine 6-monatige RCT-Studie zeigt das überraschende Gegenteil: Kohlenhydrate am Abend können beim Abnehmen sogar helfen.",
     tags: ["Abnehmen", "Mythen", "Kohlenhydrate", "Ernährung", "Studie"],
+    relatedCalculators: ["makros-berechnen", "kaloriendefizit-berechnen"],
     publishedAt: "2026-02-12",
     readingTime: 7,
     featured: true,
@@ -620,6 +709,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Bauchfett gezielt wegtrainieren – geht das? Die Wahrheit über 'Spot Reduction' und warum Bauchübungen allein nicht helfen. Plus: Was wirklich funktioniert.",
     tags: ["Abnehmen", "Mythen", "Training", "Fettabbau", "Bauchfett"],
+    relatedCalculators: ["koerperfett-rechner", "taille-hueft-verhaeltnis-rechner"],
     publishedAt: "2026-02-11",
     readingTime: 8,
     featured: true,
@@ -651,6 +741,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Zwei Meta-Analysen (2020/2022) mit 17 RCTs zeigen: Frühstück essen oder weglassen macht keinen Unterschied fürs Gewicht. Der Mythos stammt aus Beobachtungsstudien – die Kausalität fehlt.",
     tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Frühstück", "Ernährung"],
+    relatedCalculators: ["intervallfasten-rechner", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-09",
     readingTime: 6,
     featured: true,
@@ -683,6 +774,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Umbrella-Meta-Analyse (2024) + SWEET-Studie (2025): RCTs zeigen – Süßstoffe helfen beim Abnehmen (BMI −0.28). Der Widerspruch zu Beobachtungsstudien erklärt sich durch Reverse Causation.",
     tags: ["Abnehmen", "Mythen", "Meta-Analyse", "Süßstoffe", "Ernährung"],
+    relatedCalculators: ["kaloriendefizit-berechnen", "makros-berechnen"],
     publishedAt: "2026-02-08",
     readingTime: 6,
     featured: true,
@@ -722,6 +814,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Zwei Meta-Analysen mit 2.500+ Teilnehmern zeigen: Häufiges Essen bringt keinen Stoffwechsel-Boost. Warum der Mythos falsch ist und was wirklich zählt.",
     tags: ["Abnehmen", "Mythen", "Stoffwechsel", "Meta-Analyse", "Mahlzeiten"],
+    relatedCalculators: ["kalorienbedarf-berechnen"],
     publishedAt: "2026-02-07",
     readingTime: 7,
     featured: true,
@@ -753,6 +846,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Kontrollierte Crossover-Studie: Spätes Essen verdoppelt Hungergefühl, senkt Kalorienverbrauch um ~60 kcal/Tag und programmiert Fettgewebe auf Speichern. Mechanismen erklärt.",
     tags: ["Abnehmen", "Mahlzeiten-Timing", "Studie", "Stoffwechsel", "Hunger"],
+    relatedCalculators: ["intervallfasten-rechner", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-06",
     readingTime: 7,
     featured: true,
@@ -775,6 +869,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Meta-Analyse von 8 RCTs: Mehr Wasser trinken allein macht nicht schlank. Der Effekt entsteht nur, wenn kalorienhaltige Getränke ersetzt werden. Light-Drinks sind kein Problem.",
     tags: ["Abnehmen", "Wasser", "Mythen", "Meta-Analyse", "Getränke"],
+    relatedCalculators: ["wasserbedarf-rechner", "kaloriendefizit-berechnen"],
     publishedAt: "2026-02-05",
     readingTime: 6,
     featured: true,
@@ -808,6 +903,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "RCT mit 31 trainierten Männern zeigt: Ob Protein direkt oder 3h vor/nach dem Training – kein Unterschied bei Muskelaufbau.",
     tags: ["Protein", "Muskelaufbau", "Training", "Timing", "Studie"],
+    relatedCalculators: ["protein-bedarf-rechner", "trainingsplan-erstellen"],
     publishedAt: "2026-02-04",
     readingTime: 5,
     featured: false,
@@ -828,6 +924,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Restaurant-Portionen haben durchschnittlich 1.200 Kalorien – oft doppelt so viel wie gedacht. Warum wir so schlecht schätzen und was du dagegen tun kannst.",
     tags: ["Restaurant", "Kalorien", "Portionen", "Tracking", "Abnehmen"],
+    relatedCalculators: ["kalorienbedarf-berechnen", "kaloriendefizit-berechnen"],
     publishedAt: "2026-02-01",
     readingTime: 7,
     featured: true,
@@ -854,6 +951,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Die Wahrheit über Cheat Days: Was sagt die Wissenschaft zu Stoffwechsel-Boost, Muskelerhalt und psychologischen Effekten? Ein aktueller Scoping Review klärt auf.",
     tags: ["Abnehmen", "Cheat Day", "Mythen", "Psychologie", "Diät"],
+    relatedCalculators: ["cheat-day-rechner", "kaloriendefizit-berechnen"],
     publishedAt: "2026-01-31",
     readingTime: 8,
     featured: true,
@@ -881,6 +979,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Der 'Hungerstoffwechsel' ist ein Mythos. Erfahre, was metabolische Anpassung wirklich ist, warum dein Plateau nicht am Stoffwechsel liegt und wie du es brichst. Wissenschaft vs. Bro-Science.",
     tags: ["Stoffwechsel", "Abnehmen", "Mythen", "Plateau", "Kalorien"],
+    relatedCalculators: ["grundumsatz-rechner", "kalorienbedarf-berechnen"],
     publishedAt: "2026-01-30",
     readingTime: 8,
     featured: true,
@@ -1106,6 +1205,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Systematische Übersicht/Meta-Analyse (2016): Bei aelteren Erwachsenen kann ein höherer Proteinanteil helfen, fettfreie Masse beim Abnehmen besser zu erhalten.",
     tags: ["Protein", "Abnehmen", "Meta-Analyse", "Muskel"],
+    relatedCalculators: ["protein-bedarf-rechner", "makros-berechnen"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -1125,6 +1225,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Meta-Analyse (2015) zu RCTs: Low-Carb (≤120 g/Tag) vs. Low-Fat (≤30% Fett). Praxis-Fazit: Adhaerenz und Kalorienbilanz sind meist der grössere Hebel.",
     tags: ["Abnehmen", "Kalorien", "Meta-Analyse", "Ernährung"],
+    relatedCalculators: ["makros-berechnen", "kaloriendefizit-berechnen"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -1163,6 +1264,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Randomisierte Studie (2017): 5% Gewichtsverlust in 5 Wochen vs 15 Wochen. Beide verbessern Werte; langsam kann Körperzusammensetzung begünstigen, schnell zeigte teils staerkere metabolische Effekte.",
     tags: ["Abnehmen", "Studie", "Körperzusammensetzung", "Stoffwechsel"],
+    relatedCalculators: ["kaloriendefizit-berechnen", "abnahmedatum-berechnen"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -1182,6 +1284,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Randomisierte Studie (JAMA Intern Med, 2022): Schlafdauer +~1.2 h/Nacht durch Schlafhygiene-Coaching; Energieaufnahme −270 kcal/Tag vs Kontrolle – ohne Diaetvorgaben.",
     tags: ["Schlaf", "Abnehmen", "Studie", "Kalorien"],
+    relatedCalculators: ["schlaf-rechner", "kalorienbedarf-berechnen"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -1201,6 +1304,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Dose-Response Meta-Analyse (2024) mit 116 RCTs: pro +30 Min/Woche aerobes Training −0.52 kg Gewicht und −0.56 cm Taille im Mittel. 150 Min/Woche als sinnvoller Zielwert.",
     tags: ["Training", "Abnehmen", "Meta-Analyse", "Bewegung"],
+    relatedCalculators: ["kalorienverbrauch-rechner", "trainingsplan-erstellen"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -1238,6 +1342,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "Übersicht (2020): Proteinreiche Ernährung kann Abnehmen unterstützen (Sattigungshormone, DIT) und fettfreie Masse eher erhalten. Laengere Trials (6–12 Monate) berichten auch weniger Regain.",
     tags: ["Protein", "Abnehmen", "Ernährung", "Review"],
+    relatedCalculators: ["protein-bedarf-rechner", "makros-berechnen"],
     publishedAt: "2025-12-22",
     readingTime: 6,
     sources: [
@@ -1349,6 +1454,7 @@ export const articlesMeta: ArticleMeta[] = [
     description:
       "10-Jahres-Auswertung (2014) im National Weight Control Registry: durchschnittlich ~23 kg Gewichtsverlust nach 10 Jahren; >87% halten ≥10% Gewichtsverlust. Routinen und Self-Monitoring sind zentrale Marker.",
     tags: ["Gewicht halten", "Abnehmen", "Studie", "Langzeit"],
+    relatedCalculators: ["kalorienbedarf-berechnen"],
     publishedAt: "2025-12-22",
     readingTime: 7,
     featured: true,

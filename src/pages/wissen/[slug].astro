@@ -169,9 +169,17 @@ const articleSchema = {
     "@type": "MedicalCondition",
     name: "Ernährung und Gewichtsmanagement",
   },
+  specialty: {
+    "@type": "MedicalSpecialty",
+    name: "Diet and Nutrition",
+  },
   audience: {
     "@type": "PeopleAudience",
     audienceType: "Erwachsene, die ihre Ernährung verbessern möchten",
+  },
+  medicalAudience: {
+    "@type": "MedicalAudience",
+    audienceType: "Patient",
   },
   author: {
     "@type": "Person",
@@ -198,6 +206,7 @@ const articleSchema = {
     "@type": "WebPage",
     "@id": articleUrl,
   },
+  editorialPolicy: `${siteUrl}/redaktionelle-standards/`,
   keywords: article.tags.join(", "),
   citation: article.sources.map((s) => ({
     "@type": "ScholarlyArticle",
