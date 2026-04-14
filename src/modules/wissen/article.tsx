@@ -15,12 +15,19 @@ interface RelatedFood {
   calories_per_100g: number;
 }
 
+interface RelatedCalculator {
+  slug: string;
+  title: string;
+  description: string;
+}
+
 interface Props {
   config: TemplateConfig;
   article: ArticleMeta;
   content: string;
   relatedArticles?: ArticleMeta[];
   relatedFoods?: RelatedFood[];
+  relatedCalculators?: RelatedCalculator[];
 }
 
 function formatDate(dateStr: string): string {
@@ -32,7 +39,7 @@ function formatDate(dateStr: string): string {
   });
 }
 
-function ArticlePage({ config, article, content, relatedArticles, relatedFoods }: Props) {
+function ArticlePage({ config, article, content, relatedArticles, relatedFoods, relatedCalculators }: Props) {
   return (
     <ConfigContext.Provider value={config}>
       <main>
@@ -72,7 +79,7 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods }
           </h1>
 
           {/* Author & Meta */}
-          <div className="flex flex-wrap items-center gap-3 text-sm opacity-70 mb-8">
+          <div className="flex flex-wrap items-center gap-3 text-sm opacity-70 mb-4">
             <span>
               Von{" "}
               <a href="/team" className="font-medium text-primary hover:underline">
@@ -90,6 +97,43 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods }
             <span aria-hidden="true">·</span>
             <span>{article.readingTime} Min. Lesezeit</span>
           </div>
+
+          {/* Expert Review Byline (E-E-A-T) */}
+          {article.reviewer && (
+            <div className="flex items-start gap-2 text-sm mb-8 p-3 rounded-lg bg-success/10 border border-success/20">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-5 h-5 text-success shrink-0 mt-0.5"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M8.603 3.799A4.49 4.49 0 0112 2.25c1.357 0 2.573.6 3.397 1.549a4.49 4.49 0 013.498 1.307 4.491 4.491 0 011.307 3.497A4.49 4.49 0 0121.75 12a4.49 4.49 0 01-1.549 3.397 4.491 4.491 0 01-1.307 3.497 4.491 4.491 0 01-3.497 1.307A4.49 4.49 0 0112 21.75a4.49 4.49 0 01-3.397-1.549 4.49 4.49 0 01-3.498-1.306 4.491 4.491 0 01-1.307-3.498A4.49 4.49 0 012.25 12c0-1.357.6-2.573 1.549-3.397a4.49 4.49 0 011.307-3.497 4.49 4.49 0 013.497-1.307zm7.007 6.387a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                  clipRule="evenodd"
+                />
+              </svg>
+              <div>
+                <span className="font-medium">Fachlich geprüft von: </span>
+                {article.reviewer.url ? (
+                  <a
+                    href={article.reviewer.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium text-primary hover:underline"
+                  >
+                    {article.reviewer.name}
+                  </a>
+                ) : (
+                  <span className="font-medium">{article.reviewer.name}</span>
+                )}
+                <span className="opacity-70"> · {article.reviewer.credentials}</span>
+                <span className="opacity-60 block text-xs mt-0.5">
+                  Letzte Prüfung: {formatDate(article.reviewer.reviewedAt)}
+                </span>
+              </div>
+            </div>
+          )}
 
           {/* Lead / Description */}
           <p className="text-lg md:text-xl opacity-80 mb-8 border-l-4 border-primary pl-4">
@@ -182,6 +226,27 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods }
               bitte an einen Arzt oder eine Ernährungsfachkraft.
             </span>
           </div>
+          {/* Related Calculators */}
+          {relatedCalculators && relatedCalculators.length > 0 && (
+            <div className="mt-12">
+              <h2 className="text-2xl font-bold mb-4">Passende Rechner</h2>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {relatedCalculators.map((calc) => (
+                  <a
+                    key={calc.slug}
+                    href={`/${calc.slug}/`}
+                    className="card card-compact bg-base-200 hover:bg-base-300 transition-colors"
+                  >
+                    <div className="card-body p-4">
+                      <h3 className="font-semibold text-base leading-tight">{calc.title} →</h3>
+                      <p className="text-sm opacity-70 line-clamp-2">{calc.description}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </div>
+          )}
+
           {/* Related Foods */}
           {relatedFoods && relatedFoods.length > 0 && (
             <div className="mt-12">

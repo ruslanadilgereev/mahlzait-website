@@ -9,6 +9,10 @@ import {
   getRelatedArticles,
   type ArticleMeta,
 } from "@content/wissen";
+import {
+  getCalculatorsForTags,
+  getCalculatorsBySlugs,
+} from "utils/topicClusters";
 
 export async function getStaticPaths() {
   const slugs = getAllSlugs();
@@ -32,6 +36,11 @@ if (!content) {
 
 // Related articles by shared tags
 const relatedArticles = getRelatedArticles(slug as string, 4);
+
+// Related calculators: manual override (article.relatedCalculators) > tag-based matching
+const relatedCalculators = article.relatedCalculators?.length
+  ? getCalculatorsBySlugs(article.relatedCalculators)
+  : getCalculatorsForTags(article.tags, 3);
 
 // Related foods - find food mentions in article content and map to food data
 const foodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
@@ -139,19 +148,43 @@ const authorSchema = {
   ],
 };
 
+const reviewedByNode = article.reviewer
+  ? {
+      "@type": "Person",
+      name: article.reviewer.name,
+      jobTitle: article.reviewer.credentials,
+      ...(article.reviewer.url ? { url: article.reviewer.url } : {}),
+    }
+  : undefined;
+
 const articleSchema = {
   "@context": "https://schema.org",
-  "@type": "Article",
+  "@type": ["Article", "MedicalWebPage"],
   headline: article.title,
   description: article.description,
   datePublished: article.publishedAt,
   dateModified: article.updatedAt || article.publishedAt,
+  inLanguage: "de-DE",
+  about: {
+    "@type": "MedicalCondition",
+    name: "Ernährung und Gewichtsmanagement",
+  },
+  audience: {
+    "@type": "PeopleAudience",
+    audienceType: "Erwachsene, die ihre Ernährung verbessern möchten",
+  },
   author: {
     "@type": "Person",
     "@id": `${siteUrl}/#person-ruslan`,
     name: "Ruslan Adilgereev",
     url: `${siteUrl}/team`,
   },
+  ...(reviewedByNode
+    ? {
+        reviewedBy: reviewedByNode,
+        lastReviewed: article.reviewer!.reviewedAt,
+      }
+    : {}),
   publisher: {
     "@type": "Organization",
     name: "Mahlzait",
@@ -197,6 +230,7 @@ const articleSchema = {
     content={content}
     relatedArticles={relatedArticles}
     relatedFoods={relatedFoods}
+    relatedCalculators={relatedCalculators}
   />
 </Layout>
 

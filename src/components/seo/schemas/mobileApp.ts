@@ -38,13 +38,6 @@ export function generateMobileAppSchema(
         description: "Mahlzait Pro Jahr",
       },
     ],
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      ratingCount: "100",
-      bestRating: "5",
-      worstRating: "1",
-    },
     downloadUrl: [appStoreUrl, googlePlayUrl],
     screenshot: [
       `${url}/screenshots/1.webp`,

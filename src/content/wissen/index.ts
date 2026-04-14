@@ -11,6 +11,17 @@ export interface ArticleSource {
   url?: string;
 }
 
+export interface ArticleReviewer {
+  /** Full name, e.g. "Dr. med. Anna Muster" */
+  name: string;
+  /** Professional title/credentials, e.g. "Ernährungsmedizinerin (DAEM/DGEM)" */
+  credentials: string;
+  /** Optional profile URL (LinkedIn, clinic page, etc.) */
+  url?: string;
+  /** ISO date of last review */
+  reviewedAt: string;
+}
+
 export interface ArticleMeta {
   slug: string;
   title: string;
@@ -21,6 +32,10 @@ export interface ArticleMeta {
   readingTime: number; // minutes
   sources: ArticleSource[];
   featured?: boolean;
+  /** Optional medical/nutrition expert review (E-E-A-T) */
+  reviewer?: ArticleReviewer;
+  /** Related calculator slugs (e.g. ["kalorienbedarf-berechnen"]) */
+  relatedCalculators?: string[];
 }
 
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
