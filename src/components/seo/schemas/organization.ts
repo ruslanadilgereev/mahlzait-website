@@ -28,7 +28,24 @@ export function generateOrganizationSchema(
       name: "Ruslan Adilgereev",
       url: `${url}/team`,
       jobTitle: "Founder",
+      worksFor: { "@id": `${url}#organization` },
       sameAs: ["https://www.linkedin.com/in/ruslanadilgereev"],
+      knowsAbout: [
+        "Mobile Development",
+        "Machine Learning",
+        "KI-Ernährungsanalyse",
+        "Kalorientracking",
+        "App-Entwicklung",
+      ],
+      hasOccupation: {
+        "@type": "Occupation",
+        name: "Software Engineer & Founder",
+        occupationLocation: {
+          "@type": "City",
+          name: "Berlin",
+        },
+        skills: "Mobile Development, Machine Learning, Product Design, LLM-Integration",
+      },
     },
     knowsAbout: [
       "Kalorienzählen",

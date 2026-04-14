@@ -153,6 +153,10 @@ const reviewedByNode = article.reviewer
       "@type": "Person",
       name: article.reviewer.name,
       jobTitle: article.reviewer.credentials,
+      hasCredential: {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: article.reviewer.credentials,
+      },
       ...(article.reviewer.url ? { url: article.reviewer.url } : {}),
     }
   : undefined;
@@ -161,7 +165,8 @@ const articleSchema = {
   "@context": "https://schema.org",
   "@type": ["Article", "MedicalWebPage"],
   headline: article.title,
-  description: article.description,
+  description: article.kernaussage ?? article.description,
+  ...(article.kernaussage ? { abstract: article.kernaussage } : {}),
   datePublished: article.publishedAt,
   dateModified: article.updatedAt || article.publishedAt,
   inLanguage: "de-DE",
@@ -220,6 +225,21 @@ const articleSchema = {
     sameAs: s.doi ? `https://doi.org/${s.doi}` : undefined,
   })),
 };
+
+const faqSchema = article.faqs && article.faqs.length > 0
+  ? {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: article.faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: faq.answer,
+        },
+      })),
+    }
+  : null;
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
@@ -231,6 +251,11 @@ const articleSchema = {
 
   <!-- Article Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+
+  <!-- FAQ Schema (optional) -->
+  {faqSchema && (
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  )}
 
   <ArticlePage
     client:visible

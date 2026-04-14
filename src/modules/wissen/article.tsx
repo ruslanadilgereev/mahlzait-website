@@ -135,6 +135,34 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods, 
             </div>
           )}
 
+          {/* Kernaussage / TL;DR (AI-quotable) */}
+          {article.kernaussage && (
+            <aside
+              aria-label="Kernaussage"
+              className="mb-8 rounded-xl border border-primary/30 bg-primary/5 p-5"
+            >
+              <div className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-primary">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="h-4 w-4"
+                  aria-hidden="true"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                Kernaussage
+              </div>
+              <p className="text-base md:text-lg leading-relaxed">
+                {article.kernaussage}
+              </p>
+            </aside>
+          )}
+
           {/* Lead / Description */}
           <p className="text-lg md:text-xl opacity-80 mb-8 border-l-4 border-primary pl-4">
             {article.description}
@@ -203,6 +231,43 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods, 
                 </ul>
               </div>
             </div>
+          )}
+
+          {/* FAQ Section (AI-quotable + FAQPage schema) */}
+          {article.faqs && article.faqs.length > 0 && (
+            <section id="faq" aria-labelledby="faq-heading" className="mt-12 scroll-mt-24">
+              <h2 id="faq-heading" className="text-2xl md:text-3xl font-bold mb-6">
+                Häufige Fragen
+              </h2>
+              <div className="space-y-3">
+                {article.faqs.map((faq, idx) => (
+                  <details
+                    key={idx}
+                    className="group rounded-lg border border-base-300 bg-base-100 overflow-hidden"
+                  >
+                    <summary className="cursor-pointer list-none flex items-center justify-between gap-4 px-4 py-3 font-semibold hover:bg-base-200 transition-colors">
+                      <span>{faq.question}</span>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                        className="h-5 w-5 shrink-0 transition-transform group-open:rotate-180"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M5.23 7.21a.75.75 0 011.06.02L10 11.06l3.71-3.83a.75.75 0 111.08 1.04l-4.25 4.39a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    </summary>
+                    <div className="px-4 pb-4 pt-2 text-base leading-relaxed opacity-90">
+                      {faq.answer}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </section>
           )}
 
           {/* Disclaimer */}

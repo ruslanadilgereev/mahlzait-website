@@ -22,6 +22,11 @@ export interface ArticleReviewer {
   reviewedAt: string;
 }
 
+export interface ArticleFaq {
+  question: string;
+  answer: string;
+}
+
 export interface ArticleMeta {
   slug: string;
   title: string;
@@ -36,6 +41,10 @@ export interface ArticleMeta {
   reviewer?: ArticleReviewer;
   /** Related calculator slugs (e.g. ["kalorienbedarf-berechnen"]) */
   relatedCalculators?: string[];
+  /** Optional TL;DR block rendered directly beneath the H1 (50–80 words, AI-quotable). */
+  kernaussage?: string;
+  /** Optional FAQ section rendered at the end of the article (triggers FAQPage schema). */
+  faqs?: ArticleFaq[];
 }
 
 // Metadata für alle Artikel (ohne Body, für schnelle Übersicht)
@@ -114,6 +123,40 @@ export const articlesMeta: ArticleMeta[] = [
         journal: "New England Journal of Medicine / Epilepsia",
         year: 2018,
         url: "https://www.nejm.org/doi/full/10.1056/NEJMra1600501",
+      },
+    ],
+    kernaussage:
+      "Meta-Analysen zeigen: Low-Carb und Keto bringen kurzfristig 1–2 kg mehr Gewichtsverlust als Low-Fat, doch nach 12 Monaten ist der Vorsprung verschwunden. Bei gleichem Kaloriendefizit führen beide Ansätze zu vergleichbaren Resultaten. Das LDL-Cholesterin kann bei klassischer Keto mit viel gesättigtem Fett signifikant steigen. Für Epilepsie medizinisch etabliert, fürs Abnehmen kein Wunder.",
+    faqs: [
+      {
+        question: "Was ist eine ketogene Diät genau?",
+        answer:
+          "Eine Ernährungsform mit unter 50 g Kohlenhydraten pro Tag, bei der der Körper in den Zustand der Ketose wechselt und Fett statt Glucose als primäre Energiequelle nutzt. Typische Makroverteilung: 70–80 % Fett, 15–20 % Protein, 5–10 % Kohlenhydrate.",
+      },
+      {
+        question: "Wie schnell nimmt man mit Keto ab?",
+        answer:
+          "In den ersten 1–2 Wochen oft 2–4 kg, primär durch Wasserverlust (1 g Glykogen bindet etwa 3 g Wasser). Danach 0,5–1 kg pro Woche bei ausreichendem Kaloriendefizit. Die schnelle Anfangsreduktion ist kein Fettverlust.",
+      },
+      {
+        question: "Ist Keto wirklich besser als eine normale Diät?",
+        answer:
+          "Meta-Analysen (Tobias 2015, DIETFITS 2018, JAMA 2014) zeigen: Nach 12 Monaten keine signifikanten Unterschiede zu Low-Fat oder mediterraner Kost. Entscheidend ist das Kaloriendefizit, nicht die Makroverteilung. Kurzfristig hat Low-Carb einen Vorsprung, langfristig gleicht er sich aus.",
+      },
+      {
+        question: "Welche Nebenwirkungen hat eine Keto-Diät?",
+        answer:
+          "Häufig in den ersten 1–2 Wochen: „Keto-Grippe\" mit Kopfschmerzen, Müdigkeit und Reizbarkeit. Langfristig möglich: LDL-Anstieg bei viel gesättigtem Fett, Mikronährstoffmangel, Verdauungsprobleme durch wenig Ballaststoffe sowie Nierenbelastung bei sehr proteinreicher Variante.",
+      },
+      {
+        question: "Für wen ist Keto geeignet – und für wen nicht?",
+        answer:
+          "Medizinisch etabliert bei therapieresistenter Epilepsie (Kossoff 2018). Zum Abnehmen eine Option für Menschen, die Kohlenhydrate ohne Hunger reduzieren können. Nicht geeignet bei Typ-1-Diabetes, Schwangerschaft, Stillzeit, Essstörungen oder bekannter familiärer Fettstoffwechselstörung.",
+      },
+      {
+        question: "Was darf man bei einer Keto-Diät essen?",
+        answer:
+          "Erlaubt: Fleisch, Fisch, Eier, Käse, Nüsse, Avocados, nicht-stärkehaltiges Gemüse, hochwertige Öle. Vermeiden: Brot, Reis, Nudeln, Zucker, zuckerhaltige Früchte, stärkehaltiges Gemüse (Kartoffeln) und die meisten Hülsenfrüchte.",
       },
     ],
   },
@@ -207,6 +250,40 @@ export const articlesMeta: ArticleMeta[] = [
         url: "https://www.uniklinik-ulm.de/aktuelles/detailansicht/16-stunden-ohne-essen-wie-geht-intervallfasten.html",
       },
     ],
+    kernaussage:
+      "Beim 16:8-Intervallfasten isst du nur in einem 8-Stunden-Fenster pro Tag. Meta-Analysen zeigen moderate Gewichtsverluste von 3–5 kg in 8–12 Wochen – primär durch das automatisch entstehende Kaloriendefizit. Kein magischer Stoffwechsel-Boost, aber einfach umzusetzen und alltagstauglich. Nicht geeignet bei Schwangerschaft, Essstörungen oder Typ-1-Diabetes. Die beste Methode ist die, die du langfristig durchhältst.",
+    faqs: [
+      {
+        question: "Was darf ich beim 16:8-Intervallfasten trinken?",
+        answer:
+          "Während der Fastenphase: Wasser, ungesüßter Tee, schwarzer Kaffee und Mineralwasser. Nicht erlaubt: Milch im Kaffee, Säfte, Smoothies oder alles mit Kalorien, da bereits geringe Mengen die Insulin-Antwort auslösen und den Fasten-Effekt unterbrechen.",
+      },
+      {
+        question: "Ab wann zeigt Intervallfasten Erfolge?",
+        answer:
+          "Erste Gewichtsveränderungen meist nach 2–4 Wochen. Meta-Analysen (BMJ 2025, Cell Metabolism 2022) zeigen 3–5 kg Verlust in 8–12 Wochen, vorausgesetzt das Essfenster bleibt in einem moderaten Kaloriendefizit. Ohne Defizit passiert auch beim Fasten nichts.",
+      },
+      {
+        question: "Darf ich während der 8 Stunden alles essen?",
+        answer:
+          "Mengenmäßig ja, aber nicht unbegrenzt. Wer im Essfenster die gleiche oder mehr Kalorien als vorher zu sich nimmt, wird nicht abnehmen. Qualität (Protein, Ballaststoffe, Gemüse) bleibt entscheidend – Intervallfasten ersetzt keine ausgewogene Ernährung.",
+      },
+      {
+        question: "Welches Essfenster ist am besten?",
+        answer:
+          "Studien zeigen keinen klaren Vorteil eines spezifischen Fensters. Am besten ist das, was zu deinem Alltag passt. Beliebt: 12–20 Uhr (klassisch), 10–18 Uhr (frühes Essfenster, TRE-Studien leicht vorteilhaft) oder 13–21 Uhr (Frühstück auslassen).",
+      },
+      {
+        question: "Verlangsamt Intervallfasten den Stoffwechsel?",
+        answer:
+          "Kurzzeitfasten (16–24 Std) erhöht den Stoffwechsel sogar leicht – Studien zeigen +3–4 % Umsatz durch Noradrenalin-Anstieg. Erst bei mehrtägigem Fasten oder drastischen Kaloriendefiziten passt sich der Grundumsatz nach unten an.",
+      },
+      {
+        question: "Für wen ist Intervallfasten nicht geeignet?",
+        answer:
+          "Schwangere, Stillende, Kinder und Jugendliche, Menschen mit Essstörungen, Typ-1-Diabetiker und Menschen mit niedrigem BMI. Bei Medikamenten, die zum Essen eingenommen werden müssen, vorher ärztlich abklären.",
+      },
+    ],
   },
   {
     slug: "abnehmspritze-ozempic-wegovy-wirkung",
@@ -261,6 +338,40 @@ export const articlesMeta: ArticleMeta[] = [
         url: "https://www.apotheken-umschau.de/gesund-bleiben/abnehmen/abnehmspritzen-wie-sie-wirken-und-wem-sie-helfen-koennen-1334365.html",
       },
     ],
+    kernaussage:
+      "Semaglutid-Präparate wie Ozempic und Wegovy führen laut STEP-1-Studie (NEJM 2021) zu durchschnittlich 14,9 % Gewichtsverlust nach 68 Wochen – deutlich mehr als jede Diät allein. Der Preis: 170–330 € monatlich, häufige Nebenwirkungen wie Übelkeit und Verstopfung, und nach Absetzen wandern laut STEP-1-Extension rund zwei Drittel des verlorenen Gewichts zurück. Für Adipositas (BMI ≥ 30) medizinisch sinnvoll, kein Lifestyle-Medikament.",
+    faqs: [
+      {
+        question: "Wie funktioniert die Abnehmspritze?",
+        answer:
+          "Semaglutid imitiert das körpereigene Hormon GLP-1, verlangsamt die Magenentleerung und wirkt direkt auf das Sättigungszentrum im Gehirn. Ergebnis: stärkeres Sättigungsgefühl, weniger Hunger, kleinere Portionen ohne bewusste Anstrengung.",
+      },
+      {
+        question: "Wie viel kann man mit Wegovy abnehmen?",
+        answer:
+          "Die STEP-1-Studie (Wilding et al. 2021, NEJM) zeigte 14,9 % Körpergewicht-Verlust in 68 Wochen gegenüber 2,4 % bei Placebo. Das sind bei 100 kg Ausgangsgewicht rund 15 kg – in Kombination mit Ernährungsumstellung und Bewegung.",
+      },
+      {
+        question: "Was sind die häufigsten Nebenwirkungen?",
+        answer:
+          "Häufig (≥ 10 %): Übelkeit, Durchfall, Verstopfung, Erbrechen, Bauchschmerzen – meist dosisabhängig in den ersten Wochen. Selten: Gallensteine, Pankreatitis. Kontraindikation bei medullärem Schilddrüsenkarzinom in der Familienanamnese.",
+      },
+      {
+        question: "Was kostet die Abnehmspritze in Deutschland?",
+        answer:
+          "Wegovy kostet als Selbstzahler-Leistung 170–330 € pro Monat je nach Dosis. Gesetzliche Krankenkassen übernehmen die Kosten in der Regel nicht (Lifestyle-Arzneimittel-Ausschluss §34 SGB V). Private Kassen nur in Einzelfällen bei klarer medizinischer Indikation.",
+      },
+      {
+        question: "Nimmt man wieder zu, wenn man Wegovy absetzt?",
+        answer:
+          "Ja. Die STEP-1-Extension (Wilding 2022) zeigte: Nach einem Jahr ohne Medikament waren zwei Drittel des verlorenen Gewichts zurück. Die Abnehmspritze ist als Langzeit-Therapie konzipiert, nicht als Kurzzeit-Booster.",
+      },
+      {
+        question: "Für wen ist Wegovy zugelassen?",
+        answer:
+          "In Deutschland für Erwachsene mit BMI ≥ 30 oder BMI ≥ 27 plus mindestens einer gewichtsbedingten Begleiterkrankung (Typ-2-Diabetes, Bluthochdruck, Schlafapnoe). Zulassung immer nur in Kombination mit Ernährungsumstellung und Bewegung.",
+      },
+    ],
   },
   {
     slug: "fett-macht-fett-mythos-abnehmen",
@@ -310,6 +421,40 @@ export const articlesMeta: ArticleMeta[] = [
         year: 2005,
         pmid: "16373948",
         url: "https://pubmed.ncbi.nlm.nih.gov/16373948/",
+      },
+    ],
+    kernaussage:
+      "Die Low-Fat-Welle der 80er ist wissenschaftlich widerlegt: Meta-Analysen (Tobias 2015, Sackner-Bernstein 2015) zeigen, dass Low-Fat-Diäten nicht besser beim Abnehmen funktionieren als andere Ansätze. Fett hat 9 kcal/g, sättigt aber stark und verlangsamt die Magenentleerung. Entscheidend ist das Gesamt-Kaloriendefizit, nicht die Fettquelle. Gute Fette wie Omega-3, Olivenöl und Nüsse unterstützen sogar gesunden Gewichtsverlust.",
+    faqs: [
+      {
+        question: "Warum macht Fett nicht automatisch dick?",
+        answer:
+          "Fett hat zwar mehr Kalorien pro Gramm als Kohlenhydrate oder Protein (9 vs. 4 kcal/g), sättigt aber stärker und länger. In kontrollierten Studien erzielen Low-Fat-Diäten keine besseren Ergebnisse, wenn das Kaloriendefizit identisch ist (DIETFITS 2018, JAMA).",
+      },
+      {
+        question: "Welche Fette sind beim Abnehmen gut?",
+        answer:
+          "Ungesättigte Fette: Olivenöl, Avocado, Nüsse (Walnüsse, Mandeln), fettiger Fisch (Lachs, Makrele). Omega-3-Fettsäuren reduzieren Entzündungsmarker. Nüsse senken laut Studien das Herz-Kreislauf-Risiko trotz hoher Kaloriendichte.",
+      },
+      {
+        question: "Sollte ich gesättigte Fette komplett meiden?",
+        answer:
+          "Nein, in Maßen sind sie okay. Die DGE empfiehlt unter 10 % der Kalorien aus gesättigten Fetten. Problematisch wird es nur bei exzessivem Konsum in Kombination mit wenig Bewegung und Ballaststoffmangel – nicht bei einer einzigen Portion Butter oder Käse.",
+      },
+      {
+        question: "Wie viel Fett sollte ich täglich essen?",
+        answer:
+          "Je nach Ziel: 20–35 % der Kalorien aus Fett (DGE-Empfehlung). Bei 2.000 kcal entspricht das 44–78 g Fett. Low-Carb und Keto liegen deutlich höher (60–75 %), mediterrane Kost bei 30–40 %. Unter 15 % Fett wird hormonell ungünstig.",
+      },
+      {
+        question: "Macht Butter wirklich dick?",
+        answer:
+          "Nur wenn du insgesamt im Kalorienüberschuss bist. 10 g Butter = 75 kcal. Als Teil einer ausgewogenen Ernährung kein Problem. Dick wird man nicht von Butter, sondern von der Summe aller Kalorien über Wochen und Monate.",
+      },
+      {
+        question: "Warum wurde der „Fett macht fett\"-Mythos populär?",
+        answer:
+          "In den 80ern interpretierten die USA frühe epidemiologische Daten falsch und initiierten eine „Low-Fat\"-Kampagne. Folge: Ersatz von Fett durch Zucker und raffinierte Kohlenhydrate. Adipositas-Raten stiegen anschließend drastisch. Seit ca. 2010 wird Fett in der Ernährungswissenschaft rehabilitiert.",
       },
     ],
   },
@@ -362,6 +507,40 @@ export const articlesMeta: ArticleMeta[] = [
         doi: "10.1093/ajcn/nqaa220",
         pmid: "32844207",
         url: "https://pubmed.ncbi.nlm.nih.gov/32844207/",
+      },
+    ],
+    kernaussage:
+      "Rund 80 % aller Diäthaltenden nehmen innerhalb von 1–2 Jahren das verlorene Gewicht wieder zu. Grund sind hormonelle Anpassungen (Ghrelin steigt, Leptin fällt, NEJM 2011) und ein um 10–15 % reduzierter Grundumsatz. Die erfolgreichen 20 % aus dem National Weight Control Registry wiegen sich täglich, essen proteinreich und bewegen sich 60+ Minuten pro Tag. Crash-Diäten verstärken den Jojo-Effekt, langsame Umstellungen minimieren ihn.",
+    faqs: [
+      {
+        question: "Warum passiert der Jojo-Effekt überhaupt?",
+        answer:
+          "Nach Gewichtsverlust passen sich Sättigungs- und Hungerhormone an: Ghrelin (Hunger) steigt, Leptin (Sättigung) fällt. Laut NEJM-Studie (Sumithran 2011) bleibt diese Anpassung mindestens 12 Monate nach der Diät bestehen. Der Körper „verteidigt\" sein altes Gewicht aktiv.",
+      },
+      {
+        question: "Wie vermeide ich den Jojo-Effekt konkret?",
+        answer:
+          "Das National Weight Control Registry (Thomas 2014) identifiziert vier Gemeinsamkeiten bei erfolgreichen Abnehmern: tägliches Wiegen, hoher Proteinanteil (1,6–2,2 g/kg), 60+ Minuten Bewegung pro Tag und konsistente Essmuster auch am Wochenende.",
+      },
+      {
+        question: "Ist mein Stoffwechsel nach der Diät dauerhaft kaputt?",
+        answer:
+          "Nein, aber adaptiert. Der Grundumsatz sinkt durch Gewichtsverlust um 10–15 % stärker als allein durch die reduzierte Körpermasse erklärbar („Metabolic Adaptation\"). Martins 2020 zeigt: Das ist kein dauerhafter Schaden, sondern teilweise reversibel mit Krafttraining und genug Protein.",
+      },
+      {
+        question: "Was ist die beste Strategie, um Gewicht zu halten?",
+        answer:
+          "Moderate Kaloriendefizite statt Crash-Diäten, Krafttraining zum Muskelerhalt, 1,6–2,2 g Protein pro kg Körpergewicht und regelmäßiges Monitoring. Der Set-Point kann sich über 1–2 Jahre neu kalibrieren, wenn das neue Gewicht konsequent gehalten wird.",
+      },
+      {
+        question: "Wie lange dauert es, bis sich der Stoffwechsel erholt?",
+        answer:
+          "Die Hormonanpassung bleibt laut NEJM 2011 mindestens 12 Monate nach der Diät messbar. Mit ausreichend Protein, Krafttraining und genug Schlaf normalisieren sich viele Werte in 6–12 Monaten bei stabilem Gewicht. Geduld mit dem eigenen Körper ist wichtig.",
+      },
+      {
+        question: "Sind Low-Calorie-Diäten (VLCD) grundsätzlich schlecht?",
+        answer:
+          "Nein, aber sie erhöhen das Jojo-Risiko. Studien zeigen vergleichbare Langzeit-Ergebnisse wie moderate Diäten, wenn danach eine strukturierte Erhaltungsphase mit Verhaltenstherapie folgt. Ohne diese Nachsorge scheitern VLCDs oft dramatisch – das ist der eigentliche Knackpunkt.",
       },
     ],
   },

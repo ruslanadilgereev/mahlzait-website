@@ -56,6 +56,17 @@ export const GET: APIRoute = async () => {
       dateModified: article.updatedAt || article.publishedAt,
       keywords: article.tags,
       readingTime: `${article.readingTime} Minuten`,
+      ...(article.reviewer
+        ? {
+            reviewedBy: {
+              "@type": "Person",
+              name: article.reviewer.name,
+              jobTitle: article.reviewer.credentials,
+              ...(article.reviewer.url ? { url: article.reviewer.url } : {}),
+            },
+            lastReviewed: article.reviewer.reviewedAt,
+          }
+        : {}),
       sources: article.sources.map((s) => ({
         title: s.title,
         authors: s.authors,

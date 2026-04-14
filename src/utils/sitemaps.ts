@@ -10,6 +10,12 @@ export interface SitemapEntry {
 }
 
 const siteUrl = "https://www.mahlzait.de";
+
+// Build-Timestamp als Default-lastmod für alle Seiten ohne eigenes Datum.
+// Jeder Deploy erzeugt ein neues Freshness-Signal für AI-Crawler.
+const BUILD_TIME =
+  process.env.VERCEL_GIT_COMMIT_DATE ?? new Date().toISOString();
+
 const foodFiles = import.meta.glob("../data/foods/*.json", { eager: true });
 const foods = Object.values(foodFiles).map((mod: any) => mod.default || mod) as FoodMeta[];
 
@@ -94,8 +100,8 @@ function escapeXml(value: string) {
 export function renderUrlSet(entries: SitemapEntry[]) {
   const items = entries
     .map((entry) => {
-      const lastmod = entry.lastmod ? `<lastmod>${escapeXml(entry.lastmod)}</lastmod>` : "";
-      return `<url><loc>${escapeXml(entry.url)}</loc>${lastmod}</url>`;
+      const lastmod = entry.lastmod ?? BUILD_TIME;
+      return `<url><loc>${escapeXml(entry.url)}</loc><lastmod>${escapeXml(lastmod)}</lastmod></url>`;
     })
     .join("");
 
