@@ -1,5 +1,25 @@
 import type { Thing, WithContext } from "schema-dts";
+import appRatingsRaw from "../../../data/app-ratings.json";
 
+interface AppRatings {
+  hasAggregateRating: boolean;
+  ratingValue?: number;
+  ratingCount?: number;
+  bestRating?: number;
+  worstRating?: number;
+  reason?: string;
+  updatedAt?: string;
+}
+const appRatings = appRatingsRaw as AppRatings;
+
+/**
+ * MobileApplication-Schema für die Mahlzait-App.
+ *
+ * Das `aggregateRating`-Feld wird nur dann gesetzt, wenn der Prebuild-Script
+ * `scripts/fetch-app-ratings.cjs` einen echten iTunes-Rating-Datensatz geladen
+ * hat (`hasAggregateRating: true` in `src/data/app-ratings.json`). Damit
+ * vermeiden wir jegliches Schema-Spam-Signal durch fake oder hardcoded Werte.
+ */
 export function generateMobileAppSchema(
   url: string,
   name: string,
@@ -7,7 +27,7 @@ export function generateMobileAppSchema(
   appStoreUrl: string,
   googlePlayUrl: string
 ): WithContext<Thing> {
-  return {
+  const base: WithContext<Thing> = {
     "@context": "https://schema.org",
     "@type": "MobileApplication",
     "@id": `${url}#mobileapp`,
@@ -49,5 +69,17 @@ export function generateMobileAppSchema(
     datePublished: "2024-11-01",
     inLanguage: ["de-DE"],
   };
+
+  if (appRatings.hasAggregateRating && appRatings.ratingValue && appRatings.ratingCount) {
+    (base as unknown as Record<string, unknown>).aggregateRating = {
+      "@type": "AggregateRating",
+      ratingValue: String(appRatings.ratingValue),
+      ratingCount: String(appRatings.ratingCount),
+      bestRating: String(appRatings.bestRating ?? 5),
+      worstRating: String(appRatings.worstRating ?? 1),
+    };
+  }
+
+  return base;
 }
 

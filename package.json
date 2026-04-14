@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "check": "astro check",
-    "prebuild": "node scripts/fetch-user-count.cjs",
+    "prebuild": "node scripts/fetch-user-count.cjs && node scripts/fetch-app-ratings.cjs",
     "build": "astro build",
     "build:prod": "NODE_ENV=production astro build",
     "preview": "astro preview",
