@@ -114,18 +114,90 @@ function KalorienIndexPage({ config, foods }: Props) {
           {/* Intro text for SEO */}
           <section className="prose prose-lg max-w-none mb-10">
             <p>
-              Du willst <strong>Kalorien zählen</strong> und suchst eine zuverlässige Kalorientabelle? 
-              Bei Mahlzait findest du die Nährwerte von über {foods.length} Lebensmitteln – 
-              inklusive beliebter Gerichte wie <a href="/kalorien/doener/">Döner</a>, 
-              <a href="/kalorien/pizza/">Pizza</a> und <a href="/kalorien/schnitzel/">Schnitzel</a>. 
-              Jede Seite enthält detaillierte Angaben zu <strong>Kalorien, Eiweiß, Kohlenhydraten und Fett</strong> 
+              Du willst <strong>Kalorien zählen</strong> und suchst eine zuverlässige Kalorientabelle?
+              Bei Mahlzait findest du die Nährwerte von über {foods.length} Lebensmitteln –
+              inklusive beliebter Gerichte wie <a href="/kalorien/doener/">Döner</a>,
+              <a href="/kalorien/pizza/">Pizza</a> und <a href="/kalorien/schnitzel/">Schnitzel</a>.
+              Jede Seite enthält detaillierte Angaben zu <strong>Kalorien, Eiweiß, Kohlenhydraten und Fett</strong>
               pro 100 g sowie typische Portionsgrößen.
             </p>
             <p>
-              Noch einfacher geht's mit der <a href="/">Mahlzait App</a>: 
-              Fotografiere dein Essen und unsere KI erkennt automatisch die Kalorien. 
+              Noch einfacher geht's mit der <a href="/">Mahlzait App</a>:
+              Fotografiere dein Essen und unsere KI erkennt automatisch die Kalorien.
               Oder scanne den Barcode – aus einer Datenbank mit über 10 Millionen Produkten.
               <strong> Kostenlos und werbefrei.</strong>
+            </p>
+
+            <h2>So nutzt du die Kalorientabelle optimal</h2>
+            <p>
+              Die Tabelle ist in vier Kategorien gegliedert: <strong>Supermarkt</strong>{" "}
+              (Grundnahrungsmittel, Obst, Gemüse, Milchprodukte),{" "}
+              <strong>Gerichte</strong> (vorbereitete Mahlzeiten, internationale
+              Küche), <strong>Fast Food</strong> (Burger, Pizza, Kebab, Street
+              Food) und <strong>Getränke</strong> (Softdrinks, Alkohol, Kaffee).
+              Jedes Lebensmittel hat seine eigene Detailseite mit Portionsrechner,
+              Makro-Aufschlüsselung, Varianten-Vergleich und FAQ.
+            </p>
+
+            <h2>Kalorien allein reichen nicht — die Nährstoff-Basics</h2>
+            <p>
+              Ein Lebensmittel mit 200 kcal kann aus reinem Zucker oder aus
+              protein- und ballaststoffreichem Gemüse bestehen — mit völlig
+              unterschiedlicher Wirkung auf Sättigung, Blutzucker und Muskelmasse.
+              Deshalb zeigen wir zusätzlich:
+            </p>
+            <ul>
+              <li>
+                <strong>Protein</strong> (4 kcal/g) — Baustein für Muskeln, hält
+                lange satt. Zielwert:{" "}
+                <a href="/protein-bedarf-rechner/">1,2–2 g pro kg Körpergewicht</a>.
+              </li>
+              <li>
+                <strong>Kohlenhydrate</strong> (4 kcal/g) — wichtigste
+                Energiequelle, besonders für Sport. Komplex (Vollkorn) statt
+                einfach (Zucker) bevorzugen.
+              </li>
+              <li>
+                <strong>Fett</strong> (9 kcal/g) — macht satt, liefert essentielle
+                Fettsäuren. Nicht meiden, sondern Qualität wählen (Oliven-, Raps-,
+                Leinöl, Nüsse, fetter Fisch).
+              </li>
+              <li>
+                <strong>Ballaststoffe</strong> (meist nicht verwertet) — fördern
+                Sättigung und Darmgesundheit. Zielwert: 30 g/Tag.
+              </li>
+            </ul>
+            <p>
+              Mit dem <a href="/makros-berechnen/">Makro-Rechner</a> bekommst du
+              deine persönliche Aufteilung; mit dem{" "}
+              <a href="/kalorienbedarf-berechnen/">Kalorienbedarfs-Rechner</a>{" "}
+              den Gesamt-Zielwert.
+            </p>
+
+            <h2>Abnehmen, Halten oder Zunehmen — das Prinzip ist gleich</h2>
+            <p>
+              Körpergewicht verändert sich über die Kalorienbilanz. Wer weniger
+              isst als verbraucht, nimmt ab (
+              <a href="/kaloriendefizit-berechnen/">Defizit-Rechner</a>); wer mehr
+              isst, nimmt zu. Die 7700-kcal-Regel besagt grob: 1 kg Körperfett ≈
+              7700 kcal. In der Praxis schwanken Wasser- und Glykogenspeicher, die
+              Regel ist ein guter Anhaltspunkt. Die{" "}
+              <a href="/wissen/gewichtsverlust-halten-10-jahre-nwcr/">
+                NWCR-Daten über 10 Jahre
+              </a>{" "}
+              zeigen: Wer das Gewicht hält, protokolliert weiter regelmäßig — und
+              genau darum existiert die Mahlzait App.
+            </p>
+
+            <h2>Warum Kalorien schätzen so schwierig ist</h2>
+            <p>
+              <a href="/wissen/restaurant-kalorien-unterschaetzung-studie/">
+                Studien zeigen
+              </a>
+              : Menschen unterschätzen Restaurant-Mahlzeiten um 30–60 %. Auch
+              selbstgekochte Portionen werden oft 20 % zu niedrig eingeschätzt.
+              Das Wiegen (oder ein KI-Foto in der App) liefert verlässliche
+              Zahlen, Augenmaß nicht.
             </p>
           </section>
 

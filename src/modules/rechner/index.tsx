@@ -181,13 +181,14 @@ function RechnerPage({ config }: Props) {
         {/* Hero Section */}
         <section className="max-w-screen-lg mx-auto py-8 px-4 md:py-16">
           <header className="text-center mb-12">
-            <span className="badge badge-primary badge-lg mb-4">Kostenlose Tools</span>
+            <span className="badge badge-primary badge-lg mb-4">Kostenlose Tools · 22 Rechner</span>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Ernährungsrechner
+              Ernährungsrechner &amp; Kalorien-Tools
             </h1>
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
-              Kostenlose Rechner für Kalorien, Makros und mehr. 
-              Berechne deinen Bedarf und starte mit dem Tracking.
+              22 wissenschaftlich fundierte Rechner für Kalorienbedarf, Makros,
+              BMI, Körperfett, Wasser, Fasten und mehr — kostenlos, ohne
+              Anmeldung, DSGVO-konform.
             </p>
           </header>
 
@@ -202,6 +203,125 @@ function RechnerPage({ config }: Props) {
                 <p className="mt-2 text-sm opacity-70">{link.description}</p>
               </a>
             ))}
+          </div>
+        </section>
+
+        {/* Pillar Content: Cluster-Guide */}
+        <section className="max-w-screen-md mx-auto px-4 pb-16">
+          <div className="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+            <h2>Welcher Rechner ist der richtige für dich?</h2>
+            <p>
+              Die 22 Mahlzait-Rechner bilden alle zentralen Fragen ab, die rund um
+              Kalorien, Körper und Ernährung auftauchen — von der ersten
+              Bedarfsberechnung bis zum Feintuning für Muskelaufbau. Wir haben sie
+              in sechs thematische Cluster aufgeteilt, damit du schnell zum
+              passenden Tool findest. Alle Rechner basieren auf anerkannten
+              Formeln (Mifflin-St Jeor, Harris-Benedict, US-Navy-Methode, WHO-BMI)
+              und sind vollständig kostenlos.
+            </p>
+
+            <h3>🎯 Für Abnehm-Ziele</h3>
+            <p>
+              Der Einstieg ins Abnehmen beginnt bei zwei Zahlen: deinem{" "}
+              <a href="/kalorienbedarf-berechnen/">Kalorienbedarf</a> (was du
+              täglich brauchst) und deinem{" "}
+              <a href="/kaloriendefizit-berechnen/">Kaloriendefizit</a> (was du
+              einsparst, um abzunehmen). Wenn du wissen willst, wann du dein Ziel
+              erreichst, nutze den{" "}
+              <a href="/abnahmedatum-berechnen/">Abnahmedatum-Rechner</a>. Für
+              bewusste Ausnahmen ohne schlechtes Gewissen gibt es den{" "}
+              <a href="/cheat-day-rechner/">Cheat-Day-Rechner</a>.
+            </p>
+
+            <h3>💪 Für Muskelaufbau &amp; Performance</h3>
+            <p>
+              Muskelaufbau heißt: genug Eiweiß und leichter Kalorienüberschuss.
+              Starte mit dem{" "}
+              <a href="/protein-bedarf-rechner/">Protein-Bedarf-Rechner</a>,
+              ergänze ihn mit der{" "}
+              <a href="/makros-berechnen/">Makro-Berechnung</a> (Protein, Carbs,
+              Fett) und miss deinen Fortschritt mit dem{" "}
+              <a href="/koerperfett-rechner/">Körperfettanteil-Rechner</a> statt
+              der Waage.
+            </p>
+
+            <h3>📊 Für deinen Körper-Check</h3>
+            <p>
+              Der klassische <a href="/bmi-rechner/">BMI-Rechner</a> ist ein guter
+              Einstieg, hat aber Grenzen — wer es genauer will, nutzt zusätzlich
+              den <a href="/koerperfett-rechner/">KFA-Rechner</a> und das{" "}
+              <a href="/taille-hueft-verhaeltnis-rechner/">
+                Taille-Hüft-Verhältnis
+              </a>
+              . Für ein konkretes Zielgewicht hilft der{" "}
+              <a href="/idealgewicht-rechner/">Idealgewicht-Rechner</a> mit vier
+              wissenschaftlichen Formeln (Broca, Lorentz, BMI-Methode, Devine).
+            </p>
+
+            <h3>⚡ Für deinen Stoffwechsel</h3>
+            <p>
+              Der <a href="/grundumsatz-rechner/">Grundumsatz-Rechner</a> zeigt,
+              was dein Körper im Ruhezustand verbraucht — die Basis jeder
+              Kalorienplanung. Mit dem{" "}
+              <a href="/kalorienverbrauch-rechner/">Kalorienverbrauch-Rechner</a>{" "}
+              siehst du, wie viele Kalorien du beim Sport verbrennst (Spoiler: Oft
+              weniger, als du denkst). Und der{" "}
+              <a href="/schritte-kalorien-rechner/">Schritte-Rechner</a>{" "}
+              übersetzt dein Bewegungspensum in Kalorien.
+            </p>
+
+            <h3>⏰ Für Fasten &amp; Timing</h3>
+            <p>
+              Intervallfasten ist keine Diät, sondern ein Zeitfenster-Konzept.
+              Der <a href="/intervallfasten-rechner/">Intervallfasten-Rechner</a>{" "}
+              plant 16:8, 18:6, 20:4 oder 5:2 passend zu deinem Alltag. Ergänzend:
+              der <a href="/schlaf-rechner/">Schlaf-Rechner</a> für optimale
+              Regenerations-Zyklen und der{" "}
+              <a href="/koffein-rechner/">Koffein-Rechner</a>, um unter dem
+              EFSA-Limit zu bleiben.
+            </p>
+
+            <h3>🍕 Für spezifische Lebensmittel</h3>
+            <p>
+              Manche Foods haben so viele Varianten, dass ein eigener Rechner
+              sinnvoll ist. Der <a href="/pizza-kalorien-rechner/">Pizza-Rechner</a>{" "}
+              kennt Margherita bis Quattro Formaggi, der{" "}
+              <a href="/doener-kalorien-rechner/">Döner-Rechner</a> alle Varianten
+              von Teller bis Dürüm. Der{" "}
+              <a href="/alkohol-kalorien-rechner/">Alkohol-Rechner</a> deckt die
+              oft unterschätzten Flüssig-Kalorien ab. Für den Alltag:{" "}
+              <a href="/wasserbedarf-rechner/">Wasserbedarfs-Rechner</a>.
+            </p>
+
+            <h3>🍽️ Für komplette Pläne</h3>
+            <p>
+              Wenn du nicht rechnen, sondern direkt einen Plan willst:{" "}
+              <a href="/essensplan-erstellen/">Essensplan erstellen</a> (KI
+              generiert einen Wochenplan passend zu deinen Kalorien- und
+              Makro-Zielen) und{" "}
+              <a href="/trainingsplan-erstellen/">Trainingsplan erstellen</a>.
+            </p>
+
+            <h3>Wie genau sind die Rechner?</h3>
+            <p>
+              Jeder Rechner nutzt etablierte Formeln der Ernährungs- und
+              Sportmedizin. Der Kalorienbedarf nach Mifflin-St Jeor ist laut
+              der American Dietetic Association die präziseste Methode für den
+              Durchschnittsmenschen (Abweichung unter 5% bei normalgewichtigen
+              Erwachsenen). BMI und WHR orientieren sich an aktuellen
+              WHO-Kategorien. Jeder Rechner verlinkt die wissenschaftlichen
+              Grundlagen unter dem Block „Wissenschaftlich fundiert" — oder du
+              liest die entsprechenden <a href="/wissen/">Wissen-Artikel</a>{" "}
+              direkt nach.
+            </p>
+
+            <p className="text-base opacity-80">
+              <strong>Tipp:</strong> Die meisten nutzen 3–4 Rechner in
+              Kombination. Starte mit{" "}
+              <a href="/kalorienbedarf-berechnen/">Kalorienbedarf</a>, entscheide
+              dich für ein Ziel (Abnehmen/Halten/Zunehmen) und wähle dann das
+              passende Folge-Tool aus den Clustern oben.
+            </p>
           </div>
         </section>
 

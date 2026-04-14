@@ -68,6 +68,7 @@ const templateConfig: TemplateConfig = {
       { href: "/essensplan-erstellen", title: "Essensplan" },
       { href: "/trainingsplan-erstellen", title: "Trainingsplan" },
       { href: "/rechner", title: "Rechner" },
+      { href: "/wissen", title: "Wissen" },
     ],
   },
   appBanner: {
