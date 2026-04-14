@@ -4,6 +4,7 @@ import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
 import KalorienFoodPage from "@modules/kalorienFood";
 import { articlesMeta } from "@content/wissen";
+import { getCalculatorsForFood } from "utils/topicClusters";
 const relatedFoodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
 
 export async function getStaticPaths() {
@@ -51,6 +52,9 @@ const relatedArticles = articlesMeta
   .filter((a) => a.tags.some((t) => relevantTags.some((rt) => t.toLowerCase().includes(rt.toLowerCase()))))
   .slice(0, 4)
   .map((a) => ({ slug: a.slug, title: a.title, description: a.description, tags: a.tags }));
+
+// Food-spezifische Calculators (z.B. Pizza → pizza-kalorien-rechner)
+const foodSpecificCalculators = getCalculatorsForFood(food);
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -165,5 +169,6 @@ const authorPersonSchema = {
     food={food}
     relatedFoodsMeta={relatedFoodsMeta}
     relatedArticles={relatedArticles}
+    foodSpecificCalculators={foodSpecificCalculators}
   />
 </Layout>

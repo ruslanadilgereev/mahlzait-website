@@ -63,6 +63,12 @@ interface RelatedArticle {
   tags: string[];
 }
 
+interface FoodSpecificCalculator {
+  slug: string;
+  title: string;
+  description: string;
+}
+
 interface Props {
   config: TemplateConfig;
   food: FoodData;
@@ -72,9 +78,10 @@ interface Props {
     emoji?: string;
   }>;
   relatedArticles?: RelatedArticle[];
+  foodSpecificCalculators?: FoodSpecificCalculator[];
 }
 
-function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles }: Props) {
+function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foodSpecificCalculators }: Props) {
   const [portionGrams, setPortionGrams] = useState<number>(food.overview.typical_portion_g);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -379,6 +386,33 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles }: P
                   → Alle {'>'}200 Lebensmittel in der Kalorientabelle
                 </a>
               </p>
+            </div>
+          )}
+
+          {/* Food-specific Calculators */}
+          {foodSpecificCalculators && foodSpecificCalculators.length > 0 && (
+            <div className="max-w-2xl mx-auto mb-12">
+              <h2 className="text-2xl font-bold mb-4">Passende {food.name}-Rechner</h2>
+              <p className="opacity-80 mb-5">
+                Berechne {food.name.toLowerCase()} im Detail – mit Varianten, Beilagen und
+                verschiedenen Portionsgrößen.
+              </p>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {foodSpecificCalculators.map((calc) => (
+                  <a
+                    key={calc.slug}
+                    href={`/${calc.slug}/`}
+                    className="card card-compact bg-primary/5 hover:bg-primary/10 border border-primary/20 transition-colors"
+                  >
+                    <div className="card-body p-4">
+                      <h3 className="font-semibold text-base leading-tight">
+                        {calc.title} →
+                      </h3>
+                      <p className="text-sm opacity-70 line-clamp-2">{calc.description}</p>
+                    </div>
+                  </a>
+                ))}
+              </div>
             </div>
           )}
 
