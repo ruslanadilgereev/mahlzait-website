@@ -2,6 +2,8 @@ import { useState } from "react";
 import AppBanner from "@components/appBanner";
 import Footer from "@components/footer";
 import Navbar from "@components/navbar";
+import Breadcrumbs from "@components/Breadcrumbs";
+import RelatedWissen from "@components/RelatedWissen";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
@@ -58,6 +60,11 @@ function KalorienbedarfPage({ config }: Props) {
     <ConfigContext.Provider value={config}>
       <main>
         <Navbar />
+        <Breadcrumbs items={[
+          { name: "Home", url: "/" },
+          { name: "Rechner", url: "/rechner/" },
+          { name: "Kalorienbedarf berechnen", url: "/kalorienbedarf-berechnen/" },
+        ]} />
 
         {/* Hero Section */}
         <section className="max-w-screen-lg mx-auto py-8 px-4 md:py-16">
@@ -764,6 +771,7 @@ function KalorienbedarfPage({ config }: Props) {
           </div>
         </section>
 
+        <RelatedWissen calculatorSlug="kalorienbedarf-berechnen" />
         <AppBanner />
         <Footer />
       </main>

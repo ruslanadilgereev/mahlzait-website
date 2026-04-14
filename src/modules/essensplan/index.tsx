@@ -2,6 +2,8 @@ import { useState, useCallback, useRef } from "react";
 import AppBanner from "@components/appBanner";
 import Footer from "@components/footer";
 import Navbar from "@components/navbar";
+import Breadcrumbs from "@components/Breadcrumbs";
+import RelatedWissen from "@components/RelatedWissen";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import AuthorByline from "@components/AuthorByline";
@@ -143,6 +145,11 @@ function EssensplanPage({ config }: Props) {
     <ConfigContext.Provider value={config}>
       <main>
         <Navbar />
+        <Breadcrumbs items={[
+          { name: "Home", url: "/" },
+          { name: "Rechner", url: "/rechner/" },
+          { name: "Essensplan erstellen", url: "/essensplan-erstellen/" },
+        ]} />
 
         {/* Hero Section */}
         <section className="max-w-screen-lg mx-auto py-8 px-4 md:py-16">
@@ -415,6 +422,7 @@ function EssensplanPage({ config }: Props) {
           </div>
         </section>
 
+        <RelatedWissen calculatorSlug="essensplan-erstellen" />
         <AppBanner />
         <Footer />
       </main>

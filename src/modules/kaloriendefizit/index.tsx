@@ -2,6 +2,8 @@ import { useState } from "react";
 import AppBanner from "@components/appBanner";
 import Footer from "@components/footer";
 import Navbar from "@components/navbar";
+import Breadcrumbs from "@components/Breadcrumbs";
+import RelatedWissen from "@components/RelatedWissen";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
@@ -79,6 +81,11 @@ function KaloriendefizitPage({ config }: Props) {
     <ConfigContext.Provider value={config}>
       <main>
         <Navbar />
+        <Breadcrumbs items={[
+          { name: "Home", url: "/" },
+          { name: "Rechner", url: "/rechner/" },
+          { name: "Kaloriendefizit berechnen", url: "/kaloriendefizit-berechnen/" },
+        ]} />
 
         {/* Hero Section */}
         <section className="max-w-screen-lg mx-auto py-8 px-4 md:py-16">
@@ -492,6 +499,7 @@ function KaloriendefizitPage({ config }: Props) {
           </div>
         </section>
 
+        <RelatedWissen calculatorSlug="kaloriendefizit-berechnen" />
         <AppBanner />
         <Footer />
       </main>
