@@ -1,0 +1,253 @@
+---
+import Layout from "Layout.astro";
+import defaultTemplateConfig from "utils/config";
+
+const seo = {
+  title: "Redaktionelle Standards – Wie wir recherchieren | Mahlzait",
+  description:
+    "Wie bei Mahlzait Inhalte entstehen: Quellenkritik, Peer-Review-Präferenz, Update-Zyklus, medizinischer Disclaimer, Korrektur-Policy. Transparenz für dich und Google E-E-A-T.",
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}/redaktionelle-standards/`;
+
+const lastUpdated = "2026-04-14";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${pageUrl}#webpage`,
+  url: pageUrl,
+  name: seo.title,
+  description: seo.description,
+  inLanguage: "de-DE",
+  dateModified: lastUpdated,
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": `${siteUrl}#website`,
+  },
+  about: {
+    "@type": "Thing",
+    name: "Redaktionelle Standards und E-E-A-T-Richtlinien",
+  },
+  publisher: {
+    "@type": "Organization",
+    "@id": `${siteUrl}#organization`,
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
+    { "@type": "ListItem", position: 2, name: "Über uns", item: siteUrl + "/ueber-uns/" },
+    { "@type": "ListItem", position: 3, name: "Redaktionelle Standards", item: pageUrl },
+  ],
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <nav class="text-sm breadcrumbs max-w-screen-md mx-auto px-4 pt-4" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/ueber-uns/">Über uns</a></li>
+      <li class="opacity-70" aria-current="page">Redaktionelle Standards</li>
+    </ul>
+  </nav>
+
+  <main class="max-w-screen-md mx-auto px-4 py-8 md:py-16">
+    <header class="mb-10">
+      <span class="badge badge-primary badge-lg mb-4">Transparenz · E-E-A-T</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+        Redaktionelle Standards
+      </h1>
+      <p class="text-lg md:text-xl opacity-80">
+        Wie bei Mahlzait Inhalte entstehen, geprüft und aktualisiert werden — und
+        welche Quellen wir akzeptieren.
+      </p>
+      <p class="text-sm opacity-60 mt-4">
+        Zuletzt aktualisiert: {new Date(lastUpdated).toLocaleDateString("de-DE", { day: "numeric", month: "long", year: "numeric" })}
+      </p>
+    </header>
+
+    <div class="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+
+      <h2>Unser Anspruch</h2>
+      <p>
+        Mahlzait schreibt zu Ernährung, Kalorien, Abnehmen und Stoffwechsel —
+        das sind YMYL-Themen (<em>Your Money or Your Life</em>), bei denen
+        Fehler gesundheitliche Folgen haben können. Wir halten uns deshalb an
+        strenge redaktionelle Regeln, die wir auf dieser Seite offenlegen.
+      </p>
+
+      <h2>Welche Quellen wir akzeptieren</h2>
+      <p>
+        Für Artikel im <a href="/wissen/">Wissens-Bereich</a> akzeptieren wir
+        in dieser Reihenfolge:
+      </p>
+      <ol>
+        <li>
+          <strong>Peer-reviewed Primärstudien</strong> aus etablierten Journals
+          (NEJM, JAMA, Lancet, BMJ, Cell Metabolism, Nutrients, American Journal
+          of Clinical Nutrition u. a.). Jede zitierte Studie bekommt einen
+          <strong>DOI</strong>- oder <strong>PubMed-ID</strong>-Link.
+        </li>
+        <li>
+          <strong>Meta-Analysen und systematische Reviews</strong> aus Cochrane,
+          PubMed, oder den oben genannten Journals. Diese haben Vorrang gegenüber
+          Einzelstudien.
+        </li>
+        <li>
+          <strong>Offizielle Guidelines</strong> von WHO, EFSA, DGE (Deutsche
+          Gesellschaft für Ernährung), NIH, American Heart Association.
+        </li>
+        <li>
+          <strong>Universitätsklinische Erklärungen</strong> und akademische
+          Interviews (z. B. Universitätsklinikum Ulm zum Thema Intervallfasten).
+        </li>
+      </ol>
+      <p>
+        Wir akzeptieren <strong>keine</strong> reinen Blog-Posts, kein Boulevard,
+        keine Influencer-Meinungen und keine unveröffentlichten Studien als
+        Primärquelle.
+      </p>
+
+      <h2>Der Redaktionsprozess</h2>
+      <ol>
+        <li>
+          <strong>Recherche</strong>: Der Redakteur sucht Primärliteratur
+          (PubMed, Google Scholar) und sammelt 3–6 relevante Quellen pro Artikel.
+        </li>
+        <li>
+          <strong>Erstentwurf</strong>: Kernaussagen werden ausschließlich aus
+          der Primärquelle abgeleitet, nicht aus Sekundärberichterstattung.
+          Widersprüchliche Studienlagen werden transparent benannt.
+        </li>
+        <li>
+          <strong>Quellenvermerk</strong>: Jede zitierte Studie wird mit DOI,
+          PubMed-ID, Autoren, Journal und Jahr im JSON-Metadaten-Block erfasst
+          und am Ende des Artikels dargestellt.
+        </li>
+        <li>
+          <strong>Fakten-Check</strong>: Vor der Veröffentlichung prüft ein
+          zweiter Redakteur, ob jede Kernaussage durch die angegebene Quelle
+          tatsächlich gestützt wird.
+        </li>
+        <li>
+          <strong>Optionaler Experten-Review</strong> (im Aufbau): Für Artikel
+          mit medizinischem Bezug streben wir eine fachliche Prüfung durch eine
+          Ernährungsmedizinerin oder einen Ökotrophologen an. Artikel mit
+          erfolgtem Review tragen den Hinweis „Fachlich geprüft von …" unter
+          der Überschrift sowie die Angabe <code>reviewedBy</code> im
+          strukturierten Datensatz.
+        </li>
+        <li>
+          <strong>Disclaimer</strong>: Jeder Gesundheitsartikel schließt mit dem
+          Hinweis, dass er keine ärztliche Beratung ersetzt.
+        </li>
+      </ol>
+
+      <h2>Update-Zyklus</h2>
+      <p>
+        Artikel werden mindestens <strong>einmal pro Jahr</strong> auf neue
+        Studienlage geprüft. Bei publikationsrelevanten Ereignissen (z. B. neue
+        Meta-Analyse, Leitlinien-Update, Rückruf eines Präparats) aktualisieren
+        wir umgehend. Die Felder <code>publishedAt</code> und
+        <code>updatedAt</code> sind öffentlich sichtbar und im JSON-LD
+        ausgezeichnet.
+      </p>
+
+      <h2>Rechner und Formeln</h2>
+      <p>
+        Alle <a href="/rechner/">Rechner</a> nutzen etablierte Formeln der
+        Ernährungs- und Sportmedizin:
+      </p>
+      <ul>
+        <li>
+          <strong>Kalorienbedarf</strong>: Mifflin-St Jeor-Formel (American
+          Dietetic Association, 2005). Präzisester Allgemein-Schätzer für
+          gesunde Erwachsene.
+        </li>
+        <li>
+          <strong>BMI</strong>: WHO-Klassifikation 1995 mit Alters-Korrektur.
+        </li>
+        <li>
+          <strong>Körperfettanteil</strong>: US-Navy-Methode (Hodgdon &amp;
+          Beckett 1984).
+        </li>
+        <li>
+          <strong>Idealgewicht</strong>: vier Formeln parallel (Broca, Lorentz,
+          BMI-Methode, Devine) — wir zeigen die Spannweite statt eines
+          Einzelwerts.
+        </li>
+        <li>
+          <strong>Makroverteilung</strong>: Protein-Empfehlungen nach Phillips
+          &amp; Van Loon 2011; Fett-Mindestmenge nach DGE.
+        </li>
+      </ul>
+
+      <h2>Was wir nicht machen</h2>
+      <ul>
+        <li>
+          <strong>Keine individuelle medizinische Beratung.</strong> Für
+          konkrete Diagnose oder Therapie ist ein Arzt oder eine
+          Ernährungsfachkraft zuständig. Der Mahlzait-Content ist allgemein
+          informierend.
+        </li>
+        <li>
+          <strong>Keine bezahlten Platzierungen.</strong> Artikel werden nicht
+          gegen Zahlung verändert. Sponsoring, falls je eingeführt, wäre klar
+          gekennzeichnet.
+        </li>
+        <li>
+          <strong>Keine Diät-Werbung.</strong> Mahlzait empfiehlt keine
+          Präparate, keine Crash-Diäten und keine „Fat-Burner".
+        </li>
+        <li>
+          <strong>Keine Generierung ohne Review.</strong> KI kann Artikel-
+          Entwürfe unterstützen, aber kein Artikel geht ohne menschliche
+          Quellenprüfung und Redaktion live.
+        </li>
+      </ul>
+
+      <h2>Umgang mit Fehlern</h2>
+      <p>
+        Wenn du einen Fehler oder eine veraltete Angabe entdeckst, schreib uns
+        an <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a> mit
+        Artikel-URL und Quellenhinweis. Wir prüfen Hinweise innerhalb von 5
+        Werktagen, korrigieren bestätigte Fehler umgehend und aktualisieren das
+        <code>updatedAt</code>-Datum. Bei Korrekturen, die Kernaussagen
+        verändern, ergänzen wir zusätzlich einen sichtbaren Hinweis am Artikel-
+        Anfang.
+      </p>
+
+      <h2>Medizinischer Disclaimer</h2>
+      <p>
+        Alle Artikel und Rechner auf Mahlzait dienen der allgemeinen Information
+        und ersetzen keine ärztliche oder ernährungsmedizinische Beratung. Wenn
+        du eine Vorerkrankung hast (z. B. Diabetes, Essstörung, Schilddrüsen-
+        Erkrankung, Schwangerschaft, chronische Erkrankungen) oder Medikamente
+        einnimmst (z. B. Abnehmspritzen, Insulin, Betablocker), besprich
+        Ernährungsumstellungen grundsätzlich mit einem Arzt oder einer
+        Ernährungsfachkraft.
+      </p>
+
+      <h2>Kontakt für die Redaktion</h2>
+      <p>
+        Redaktionelle Fragen, Korrektur-Hinweise, Kooperations-Anfragen von
+        Ernährungsmedizinern oder Ökotrophologen:{" "}
+        <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>
+      </p>
+
+      <hr />
+      <p class="text-sm opacity-70">
+        Diese Seite ergänzt unser <a href="/impressum/">Impressum</a>, unsere
+        <a href="/datenschutz/">Datenschutzerklärung</a> und das <a href="/ueber-uns/">Über-uns</a>.
+      </p>
+    </div>
+  </main>
+</Layout>

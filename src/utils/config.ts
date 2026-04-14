@@ -50,6 +50,7 @@ const templateConfig: TemplateConfig = {
       { href: "/#faq", title: "FAQ" },
       { href: "/team", title: "Team" },
       { href: "/ueber-uns", title: "Über uns" },
+      { href: "/redaktionelle-standards", title: "Redaktionelle Standards" },
       { href: "/vergleich", title: "App-Vergleich" },
       { href: "/wissen", title: "Wissen" },
       { href: "/kalorien", title: "Kalorientabelle" },

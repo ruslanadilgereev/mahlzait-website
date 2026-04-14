@@ -223,7 +223,12 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods, 
             <span className="text-sm">
               Dieser Artikel dient der allgemeinen Information und ersetzt keine
               ärztliche Beratung. Bei Fragen zu deiner Gesundheit wende dich
-              bitte an einen Arzt oder eine Ernährungsfachkraft.
+              bitte an einen Arzt oder eine Ernährungsfachkraft. Mehr dazu in
+              unseren{" "}
+              <a href="/redaktionelle-standards/" className="link link-primary">
+                redaktionellen Standards
+              </a>
+              .
             </span>
           </div>
           {/* Related Calculators */}

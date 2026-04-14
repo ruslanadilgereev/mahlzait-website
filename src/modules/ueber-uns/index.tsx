@@ -257,13 +257,76 @@ function UeberUnsPage({ config, company, founder, techStack }: Props) {
           </div>
         </section>
 
-        {/* Data Sources */}
-        <section className="py-8 bg-base-100">
-          <div className="max-w-screen-lg mx-auto px-4 text-center">
-            <p className="text-sm opacity-60">
-              Nährwertdaten basieren auf <a href="https://world.openfoodfacts.org/" target="_blank" rel="noopener noreferrer" className="link">Open Food Facts</a>, 
-              dem Bundeslebensmittelschlüssel (BLS) und weiteren verifizierten Quellen.
-            </p>
+        {/* Editorial Process / E-E-A-T Section */}
+        <section className="py-16 bg-base-100">
+          <div className="max-w-screen-md mx-auto px-4">
+            <div className="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+              <h2>Wie wir recherchieren</h2>
+              <p>
+                Ernährung und Gewicht sind YMYL-Themen (<em>Your Money or Your
+                Life</em>) — Fehlinformation hat reale Folgen. Deshalb halten wir
+                bei Mahlzait feste Regeln ein:
+              </p>
+              <ul>
+                <li>
+                  <strong>Peer-reviewed Primärliteratur</strong> aus Journals wie
+                  NEJM, JAMA, Lancet, BMJ, Cell Metabolism. Jeder zitierte
+                  Beitrag bekommt einen DOI- oder PubMed-Link im Artikel.
+                </li>
+                <li>
+                  <strong>Meta-Analysen haben Vorrang</strong> vor Einzelstudien
+                  — größere Stichprobe, weniger Zufall.
+                </li>
+                <li>
+                  <strong>Transparente Limitationen</strong>: Jeder Artikel
+                  benennt die Schwächen der zugrundeliegenden Studien
+                  (Stichprobengröße, Beobachtungszeitraum, Finanzierung).
+                </li>
+                <li>
+                  <strong>Updates mindestens jährlich</strong>, sofort bei
+                  relevanten neuen Meta-Analysen oder Leitlinien-Änderungen.
+                </li>
+                <li>
+                  <strong>Optionaler fachlicher Review</strong> durch eine
+                  Ernährungsmedizinerin oder einen Ökotrophologen — im Aufbau,
+                  sichtbar gekennzeichnet wenn erfolgt.
+                </li>
+              </ul>
+              <p>
+                Die komplette Methodik steht in unseren{" "}
+                <a href="/redaktionelle-standards/">
+                  redaktionellen Standards
+                </a>
+                : Quellenpolitik, Review-Prozess, Umgang mit Fehlern,
+                medizinischer Disclaimer.
+              </p>
+
+              <h3>Datenquellen für die Kalorientabelle</h3>
+              <p>
+                Nährwertangaben für unsere{" "}
+                <a href="/kalorien/">302 Lebensmittel</a> basieren auf{" "}
+                <a
+                  href="https://world.openfoodfacts.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open Food Facts
+                </a>
+                , dem Bundeslebensmittelschlüssel (BLS) und USDA-FoodData
+                Central. Abweichungen je nach Zubereitung und Hersteller sind
+                möglich; die Mahlzait-App prüft Barcodes zusätzlich gegen die
+                Herstellerangaben.
+              </p>
+
+              <h3>Formeln der Rechner</h3>
+              <p>
+                Alle <a href="/rechner/">22 Rechner</a> nutzen validierte
+                Formeln: Mifflin-St Jeor (Kalorienbedarf), WHO-Klassifikation
+                (BMI), US-Navy-Methode (Körperfett), DGE-Empfehlungen (Protein,
+                Fett, Flüssigkeit). Detail-Quellen sind pro Rechner unter
+                „Wissenschaftlich fundiert" verlinkt.
+              </p>
+            </div>
           </div>
         </section>
 
