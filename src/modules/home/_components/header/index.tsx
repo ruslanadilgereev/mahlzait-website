@@ -216,6 +216,7 @@ function Header() {
                   ease: "easeOut",
                   delay: 0.2,
                 }}
+                style={{ aspectRatio: "432/885" }}
                 className="relative h-[70vh] min-h-[600px] max-h-[900px] rounded-t-[3rem] rounded-b-[4.5rem]"
               >
                 <div className="absolute top-2.5 left-[3px] w-[calc(100%-6px)] h-[calc(100%-16px)] rounded-t-[2rem] rounded-b-[3rem] 2xs:rounded-t-[3rem] 2xs:rounded-b-[4.5rem] overflow-hidden">
@@ -232,7 +233,7 @@ function Header() {
                 <img
                   src="/misc/iphone-frame.webp"
                   alt="Mahlzait App auf iPhone - Kalorienzähler Interface"
-                  className="relative z-10 h-full pointer-events-none"
+                  className="relative z-10 h-full w-full pointer-events-none"
                   width={432}
                   height={885}
                   loading="eager"
