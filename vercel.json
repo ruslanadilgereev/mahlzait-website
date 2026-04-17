@@ -9,6 +9,10 @@
       "destination": "/api/:path*"
     },
     {
+      "source": "/go/:slug*",
+      "destination": "/go/"
+    },
+    {
       "source": "/wp-sitemap-posts-page-1.xml",
       "destination": "/api/gone"
     },

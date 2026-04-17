@@ -1,27 +1,11 @@
 /**
- * Go-Link Redirect System
+ * Go-Link Redirect System — dynamic catch-all
  *
- * Kurzlinks für Content-Marketing mit plattformspezifischem Store-Redirect
- * und Campaign-Tracking (Apple ct + Google UTM).
- *
- * Neuen Link hinzufügen: einfach einen Eintrag in GO_LINKS ergänzen.
- * URL-Schema: mahlzait.de/go/{slug}/
- * Naming: {thema}-{plattform}  (bei mehreren zum gleichen Thema: wasser2-yt, wasser3-yt)
- *   Plattformen: yt (YouTube), tt (TikTok), ig (Instagram), fb (Facebook), rd (Reddit), x (X/Twitter)
+ * Any URL mahlzait.de/go/<slug> works without code changes.
+ * Naming convention: <name>-<platform>  (e.g. peter-ig, video42-tt, insta1-ig)
+ * The platform suffix is auto-detected → utm_source.
+ * The full slug is used as Apple ct token and as utm_campaign/utm_content.
  */
-
-export interface GoLink {
-  /** UTM source — youtube, tiktok, instagram, facebook */
-  source: string;
-  /** UTM medium — shorts, reels, post, story, bio */
-  medium: string;
-  /** UTM campaign — z.B. tutorials_q2_2026 */
-  campaign: string;
-  /** UTM content — z.B. wasser_001 */
-  content: string;
-  /** Optional: Custom Apple ct Token (max 40 Zeichen). Default = Slug */
-  ct?: string;
-}
 
 // ─── App Store Constants ───────────────────────────────────────────────
 export const APP_STORE_ID = "id6747400456";
@@ -29,95 +13,59 @@ export const APP_STORE_PT = "127913951"; // Provider Token
 export const PLAY_STORE_ID = "com.promptit.mytemple";
 export const FALLBACK_URL = "https://www.mahlzait.de/";
 
-// ─── Redirect Links ────────────────────────────────────────────────────
-export const GO_LINKS: Record<string, GoLink> = {
-  "wasser-yt": {
-    source: "youtube",
-    medium: "shorts",
-    campaign: "tutorials",
-    content: "wasser",
-  },
-  "wasser-rd": {
-    source: "reddit",
-    medium: "post",
-    campaign: "tutorials",
-    content: "wasser",
-  },
-  "wasser-tt": {
-    source: "tiktok",
-    medium: "video",
-    campaign: "tutorials",
-    content: "wasser",
-  },
-  "wasser-ig": {
-    source: "instagram",
-    medium: "reels",
-    campaign: "tutorials",
-    content: "wasser",
-  },
-  "wasser-fb": {
-    source: "facebook",
-    medium: "post",
-    campaign: "tutorials",
-    content: "wasser",
-  },
-  "wasser-x": {
-    source: "twitter",
-    medium: "post",
-    campaign: "tutorials",
-    content: "wasser",
-  },
-  "bio-yt": {
-    source: "youtube",
-    medium: "bio",
-    campaign: "bio",
-    content: "bio",
-  },
-  "bio-rd": {
-    source: "reddit",
-    medium: "bio",
-    campaign: "bio",
-    content: "bio",
-  },
-  "bio-tt": {
-    source: "tiktok",
-    medium: "bio",
-    campaign: "bio",
-    content: "bio",
-  },
-  "bio-ig": {
-    source: "instagram",
-    medium: "bio",
-    campaign: "bio",
-    content: "bio",
-  },
-  "bio-fb": {
-    source: "facebook",
-    medium: "bio",
-    campaign: "bio",
-    content: "bio",
-  },
-  "bio-x": {
-    source: "twitter",
-    medium: "bio",
-    campaign: "bio",
-    content: "bio",
-  },
+// ─── Platform Suffix → utm_source ─────────────────────────────────────
+const SUFFIX_SOURCE_MAP: Record<string, string> = {
+  ig: "instagram",
+  insta: "instagram",
+  tt: "tiktok",
+  tiktok: "tiktok",
+  yt: "youtube",
+  youtube: "youtube",
+  fb: "facebook",
+  facebook: "facebook",
+  x: "twitter",
+  twitter: "twitter",
+  rd: "reddit",
+  reddit: "reddit",
+  sms: "sms",
+  wa: "whatsapp",
+  whatsapp: "whatsapp",
+  email: "email",
+  mail: "email",
 };
 
+export const VALID_SOURCES = [
+  ...new Set(Object.values(SUFFIX_SOURCE_MAP)),
+  "direct",
+] as const;
+
+export interface ParsedSlug {
+  slug: string;
+  source: string;
+}
+
+export function parseSlug(raw: string | null | undefined): ParsedSlug | null {
+  const slug = String(raw || "").toLowerCase().trim();
+  if (!/^[a-z0-9_-]{1,40}$/.test(slug)) return null;
+  const match = slug.match(/-([a-z]+)$/);
+  const source =
+    match && SUFFIX_SOURCE_MAP[match[1]] ? SUFFIX_SOURCE_MAP[match[1]] : "direct";
+  return { slug, source };
+}
+
 // ─── URL Generators ────────────────────────────────────────────────────
-export function getAppStoreUrl(slug: string, link: GoLink): string {
-  const ct = (link.ct || slug).slice(0, 40);
+export function getAppStoreUrl(slug: string): string {
+  const ct = slug.slice(0, 40);
   return `https://apps.apple.com/app/apple-store/${APP_STORE_ID}?pt=${APP_STORE_PT}&ct=${ct}&mt=8`;
 }
 
-export function getPlayStoreUrl(link: GoLink): string {
+export function getPlayStoreUrl(slug: string, source: string): string {
   const params = new URLSearchParams({
     id: PLAY_STORE_ID,
-    utm_source: link.source,
-    utm_medium: link.medium,
-    utm_campaign: link.campaign,
-    utm_content: link.content,
+    utm_source: source,
+    utm_medium: "golink",
+    utm_campaign: slug,
+    utm_content: slug,
   });
   return `https://play.google.com/store/apps/details?${params}`;
 }
