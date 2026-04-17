@@ -1,32 +1,89 @@
 #!/usr/bin/env node
 /**
- * Submit new URLs to IndexNow (Bing/Yandex/etc.) and Google Indexing API.
+ * Submit URLs to IndexNow (Bing/Yandex/etc.) and Google Indexing API.
  *
  * Usage:
- *   node scripts/submit-indexing.mjs                          # submit default URLs
- *   node scripts/submit-indexing.mjs /foo/ /bar/              # submit custom paths
+ *   node scripts/submit-indexing.mjs                          # default: 2 hardcoded new pages
+ *   node scripts/submit-indexing.mjs /foo/ /bar/              # custom paths
+ *   node scripts/submit-indexing.mjs --all                    # all non-food URLs from live sitemap
+ *   node scripts/submit-indexing.mjs --all --dry-run          # show URLs without submitting
+ *
+ * Google Indexing API quota: 200 URLs/day/project (soft limit per Google).
  *
  * Environment variables:
- *   GCP_SA_B64  — base64-encoded Google service account JSON (for Google Indexing API)
- *                 If not set, Google indexing is skipped.
+ *   GCP_SA_B64  — base64-encoded Google service account JSON
+ *   GCP_SA_FILE — path to Google service account JSON (alternative)
+ *   If neither set, Google indexing is skipped (IndexNow still runs).
  */
 
 const SITE_URL = "https://www.mahlzait.de";
 const INDEXNOW_KEY = "1c802a7f00434fe04c269ffb5f9e526a";
 
-// Default URLs to submit (the new pages)
+// Sitemaps to EXCLUDE from --all (food-detail-pages kompetitive Nische, skip for quota)
+const EXCLUDE_SITEMAPS = ["foods"];
+
+// Default URLs to submit when no args given (latest new pages)
 const DEFAULT_PATHS = [
   "/essensplan-erstellen/",
   "/trainingsplan-erstellen/",
 ];
 
-const paths = process.argv.length > 2
-  ? process.argv.slice(2).map((p) => p.startsWith("/") ? p : `/${p}`)
-  : DEFAULT_PATHS;
+const args = process.argv.slice(2);
+const isAllMode = args.includes("--all");
+const isDryRun = args.includes("--dry-run");
+const customPaths = args.filter((a) => !a.startsWith("--"));
 
-const urls = paths.map((p) => `${SITE_URL}${p}`);
+async function fetchAllSitemapUrls() {
+  const indexRes = await fetch(`${SITE_URL}/sitemap-index.xml`);
+  if (!indexRes.ok) throw new Error(`Sitemap-Index fetch failed: ${indexRes.status}`);
+  const indexXml = await indexRes.text();
+  const sitemapLocs = [...indexXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 
-console.log(`\n📋 URLs to submit:\n${urls.map((u) => `   ${u}`).join("\n")}\n`);
+  const filtered = sitemapLocs.filter((loc) => {
+    return !EXCLUDE_SITEMAPS.some((ex) => loc.includes(`/sitemaps/${ex}.xml`));
+  });
+
+  console.log(`📑 Sitemaps: ${sitemapLocs.length} total, using ${filtered.length} (skipping ${EXCLUDE_SITEMAPS.join(", ")})`);
+
+  const allUrls = [];
+  for (const sitemapUrl of filtered) {
+    const res = await fetch(sitemapUrl);
+    if (!res.ok) {
+      console.warn(`   ⚠️  ${sitemapUrl}: HTTP ${res.status}`);
+      continue;
+    }
+    const xml = await res.text();
+    const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+    allUrls.push(...locs);
+    console.log(`   ✓ ${new URL(sitemapUrl).pathname}: ${locs.length} URLs`);
+  }
+  return allUrls;
+}
+
+let urls;
+if (isAllMode) {
+  urls = await fetchAllSitemapUrls();
+} else if (customPaths.length > 0) {
+  urls = customPaths
+    .map((p) => (p.startsWith("/") ? p : `/${p}`))
+    .map((p) => `${SITE_URL}${p}`);
+} else {
+  urls = DEFAULT_PATHS.map((p) => `${SITE_URL}${p}`);
+}
+
+if (urls.length > 200) {
+  console.log(`\n⚠️  ${urls.length} URLs > 200/day Google Indexing API quota.`);
+  console.log(`   First 200 will be submitted. Re-run tomorrow for the rest.\n`);
+  urls = urls.slice(0, 200);
+}
+
+console.log(`\n📋 URLs to submit (${urls.length}):\n${urls.slice(0, 10).map((u) => `   ${u}`).join("\n")}${urls.length > 10 ? `\n   … and ${urls.length - 10} more` : ""}\n`);
+
+if (isDryRun) {
+  console.log("🏃 DRY RUN — no submissions made. Exiting.\n");
+  console.log(`Full URL list:\n${urls.map((u) => `   ${u}`).join("\n")}\n`);
+  process.exit(0);
+}
 
 // ── IndexNow ──────────────────────────────────────────────────────────────────
 
@@ -71,21 +128,34 @@ async function submitIndexNow() {
 
 // ── Google Indexing API ────────────────────────────────────────────────────────
 
-async function submitGoogle() {
+async function loadServiceAccount() {
   const saB64 = process.env.GCP_SA_B64;
-  if (!saB64) {
-    console.log("🟡 Google Indexing API: Skipped (GCP_SA_B64 not set)");
-    console.log("   Set GCP_SA_B64 with base64-encoded service account JSON to enable.");
-    return;
+  if (saB64) return JSON.parse(Buffer.from(saB64, "base64").toString("utf-8"));
+
+  const saFile = process.env.GCP_SA_FILE;
+  if (saFile) {
+    const fs = await import("node:fs/promises");
+    return JSON.parse(await fs.readFile(saFile, "utf-8"));
+  }
+  return null;
+}
+
+async function submitGoogle() {
+  const saJson = await loadServiceAccount();
+  if (!saJson) {
+    console.log("🟡 Google Indexing API: Skipped (no credentials)");
+    console.log("   Set GCP_SA_B64 (base64 JSON) or GCP_SA_FILE (path) to enable.");
+    return { ok: 0, failed: 0 };
   }
 
-  console.log("🔴 Google Indexing API: Submitting...");
+  console.log(`🔴 Google Indexing API: Submitting ${urls.length} URLs...`);
+
+  let ok = 0;
+  let failed = 0;
 
   try {
-    // Dynamic import to avoid requiring googleapis when not needed
     const { google } = await import("googleapis");
 
-    const saJson = JSON.parse(Buffer.from(saB64, "base64").toString("utf-8"));
     const auth = new google.auth.GoogleAuth({
       credentials: saJson,
       scopes: ["https://www.googleapis.com/auth/indexing"],
@@ -96,35 +166,50 @@ async function submitGoogle() {
     for (const url of urls) {
       try {
         const res = await indexing.urlNotifications.publish({
-          requestBody: {
-            url,
-            type: "URL_UPDATED",
-          },
+          requestBody: { url, type: "URL_UPDATED" },
         });
-        console.log(`   ✅ ${url}: ${res.status} — notifyTime: ${res.data.urlNotificationMetadata?.latestUpdate?.notifyTime || "ok"}`);
+        ok++;
+        const time = res.data.urlNotificationMetadata?.latestUpdate?.notifyTime || "ok";
+        console.log(`   ✅ ${url} — ${time}`);
       } catch (e) {
+        failed++;
         const status = e.response?.status || e.code;
         const msg = e.response?.data?.error?.message || e.message;
         console.log(`   ⚠️  ${url}: ${status} — ${msg}`);
+        // Stop early on quota-exhausted or permission errors
+        if (status === 429 || status === 403) {
+          console.log(`   🛑 Stopping: ${status === 429 ? "quota exhausted" : "permission denied"}`);
+          break;
+        }
       }
+      // Rate-limit: ~1 request per 600ms to stay comfortably under 200 QPM
+      await new Promise((r) => setTimeout(r, 600));
     }
   } catch (e) {
     console.log(`   ❌ Google error: ${e.message}`);
   }
+
+  console.log(`\n   Summary: ${ok} ok, ${failed} failed`);
+  return { ok, failed };
 }
 
 // ── Google Search Console: Request Indexing via URL Inspection ─────────────────
 
 async function pingSearchConsole() {
-  const saB64 = process.env.GCP_SA_B64;
-  if (!saB64) return; // Already logged in submitGoogle
+  const saJson = await loadServiceAccount();
+  if (!saJson) return; // Already logged in submitGoogle
+
+  // Skip GSC inspection on bulk runs — each call costs ~2s and adds little on top of Indexing API
+  if (urls.length > 20) {
+    console.log(`🔍 Google Search Console: Skipped (${urls.length} URLs, too many — use for single-URL debugging)`);
+    return;
+  }
 
   console.log("🔍 Google Search Console: Inspecting URLs...");
 
   try {
     const { google } = await import("googleapis");
 
-    const saJson = JSON.parse(Buffer.from(saB64, "base64").toString("utf-8"));
     const auth = new google.auth.GoogleAuth({
       credentials: saJson,
       scopes: ["https://www.googleapis.com/auth/webmasters"],

@@ -4,9 +4,20 @@ interface FoodMeta {
   slug: string;
 }
 
+export type ChangeFreq =
+  | "always"
+  | "hourly"
+  | "daily"
+  | "weekly"
+  | "monthly"
+  | "yearly"
+  | "never";
+
 export interface SitemapEntry {
   url: string;
   lastmod?: string;
+  changefreq?: ChangeFreq;
+  priority?: number;
 }
 
 const siteUrl = "https://www.mahlzait.de";
@@ -20,64 +31,76 @@ const foodFiles = import.meta.glob("../data/foods/*.json", { eager: true });
 const foods = Object.values(foodFiles).map((mod: any) => mod.default || mod) as FoodMeta[];
 
 const coreEntries: SitemapEntry[] = [
-  { url: `${siteUrl}/` },
-  { url: `${siteUrl}/rechner/` },
-  { url: `${siteUrl}/wissen/` },
-  { url: `${siteUrl}/kalorien/` },
-  { url: `${siteUrl}/kalorien/kategorie/supermarkt/` },
-  { url: `${siteUrl}/kalorien/kategorie/gericht/` },
-  { url: `${siteUrl}/kalorien/kategorie/fast-food/` },
-  { url: `${siteUrl}/kalorien/kategorie/getraenk/` },
-  { url: `${siteUrl}/team/` },
-  { url: `${siteUrl}/ueber-uns/` },
-  { url: `${siteUrl}/vergleich/` },
+  { url: `${siteUrl}/`, changefreq: "weekly", priority: 1.0 },
+  { url: `${siteUrl}/rechner/`, changefreq: "weekly", priority: 0.9 },
+  { url: `${siteUrl}/wissen/`, changefreq: "weekly", priority: 0.9 },
+  { url: `${siteUrl}/kalorien/`, changefreq: "weekly", priority: 0.9 },
+  { url: `${siteUrl}/kalorien/kategorie/supermarkt/`, changefreq: "monthly", priority: 0.7 },
+  { url: `${siteUrl}/kalorien/kategorie/gericht/`, changefreq: "monthly", priority: 0.7 },
+  { url: `${siteUrl}/kalorien/kategorie/fast-food/`, changefreq: "monthly", priority: 0.7 },
+  { url: `${siteUrl}/kalorien/kategorie/getraenk/`, changefreq: "monthly", priority: 0.7 },
+  { url: `${siteUrl}/team/`, changefreq: "monthly", priority: 0.5 },
+  { url: `${siteUrl}/ueber-uns/`, changefreq: "monthly", priority: 0.5 },
+  { url: `${siteUrl}/vergleich/`, changefreq: "monthly", priority: 0.6 },
 ];
 
-const calculatorAndGuideEntries: SitemapEntry[] = [
-  { url: `${siteUrl}/abnehmen/` },
-  { url: `${siteUrl}/abnehmen-app/` },
-  { url: `${siteUrl}/abnahmedatum-berechnen/` },
-  { url: `${siteUrl}/alkohol-kalorien-rechner/` },
-  { url: `${siteUrl}/bmi-rechner/` },
-  { url: `${siteUrl}/cheat-day-rechner/` },
-  { url: `${siteUrl}/doener-kalorien-rechner/` },
-  { url: `${siteUrl}/grundumsatz-rechner/` },
-  { url: `${siteUrl}/idealgewicht-rechner/` },
-  { url: `${siteUrl}/intervallfasten-rechner/` },
-  { url: `${siteUrl}/kalorien-zaehlen/` },
-  { url: `${siteUrl}/kalorien-zaehlen-app/` },
-  { url: `${siteUrl}/kalorienbedarf-berechnen/` },
-  { url: `${siteUrl}/kaloriendefizit-berechnen/` },
-  { url: `${siteUrl}/kalorienverbrauch-rechner/` },
-  { url: `${siteUrl}/koerperfett-rechner/` },
-  { url: `${siteUrl}/koffein-rechner/` },
-  { url: `${siteUrl}/makros-berechnen/` },
-  { url: `${siteUrl}/pizza-kalorien-rechner/` },
-  { url: `${siteUrl}/protein-bedarf-rechner/` },
-  { url: `${siteUrl}/schlaf-rechner/` },
-  { url: `${siteUrl}/schritte-kalorien-rechner/` },
-  { url: `${siteUrl}/taille-hueft-verhaeltnis-rechner/` },
-  { url: `${siteUrl}/wasserbedarf-rechner/` },
-  { url: `${siteUrl}/essensplan-erstellen/` },
-  { url: `${siteUrl}/trainingsplan-erstellen/` },
+const calculatorSlugs = [
+  "abnehmen",
+  "abnehmen-app",
+  "abnahmedatum-berechnen",
+  "alkohol-kalorien-rechner",
+  "bmi-rechner",
+  "cheat-day-rechner",
+  "doener-kalorien-rechner",
+  "grundumsatz-rechner",
+  "idealgewicht-rechner",
+  "intervallfasten-rechner",
+  "kalorien-zaehlen",
+  "kalorien-zaehlen-app",
+  "kalorienbedarf-berechnen",
+  "kaloriendefizit-berechnen",
+  "kalorienverbrauch-rechner",
+  "koerperfett-rechner",
+  "koffein-rechner",
+  "makros-berechnen",
+  "pizza-kalorien-rechner",
+  "protein-bedarf-rechner",
+  "schlaf-rechner",
+  "schritte-kalorien-rechner",
+  "taille-hueft-verhaeltnis-rechner",
+  "wasserbedarf-rechner",
+  "essensplan-erstellen",
+  "trainingsplan-erstellen",
 ];
+
+const calculatorAndGuideEntries: SitemapEntry[] = calculatorSlugs.map(
+  (slug) => ({
+    url: `${siteUrl}/${slug}/`,
+    changefreq: "weekly",
+    priority: 0.9,
+  }),
+);
 
 const knowledgeEntries: SitemapEntry[] = articlesMeta.map((article) => ({
   url: `${siteUrl}/wissen/${article.slug}/`,
   lastmod: article.updatedAt || article.publishedAt,
+  changefreq: "monthly",
+  priority: 0.7,
 }));
 
 const foodEntries: SitemapEntry[] = foods.map((food) => ({
   url: `${siteUrl}/kalorien/${food.slug}/`,
+  changefreq: "monthly",
+  priority: 0.6,
 }));
 
 const legalEntries: SitemapEntry[] = [
-  { url: `${siteUrl}/agb/` },
-  { url: `${siteUrl}/cookies-policy/` },
-  { url: `${siteUrl}/datenschutz/` },
-  { url: `${siteUrl}/impressum/` },
-  { url: `${siteUrl}/nutzungsbedingungen/` },
-  { url: `${siteUrl}/widerrufsbelehrung/` },
+  { url: `${siteUrl}/agb/`, changefreq: "yearly", priority: 0.3 },
+  { url: `${siteUrl}/cookies-policy/`, changefreq: "yearly", priority: 0.3 },
+  { url: `${siteUrl}/datenschutz/`, changefreq: "yearly", priority: 0.3 },
+  { url: `${siteUrl}/impressum/`, changefreq: "yearly", priority: 0.3 },
+  { url: `${siteUrl}/nutzungsbedingungen/`, changefreq: "yearly", priority: 0.3 },
+  { url: `${siteUrl}/widerrufsbelehrung/`, changefreq: "yearly", priority: 0.3 },
 ];
 
 export const segmentedSitemaps = [
@@ -101,7 +124,14 @@ export function renderUrlSet(entries: SitemapEntry[]) {
   const items = entries
     .map((entry) => {
       const lastmod = entry.lastmod ?? BUILD_TIME;
-      return `<url><loc>${escapeXml(entry.url)}</loc><lastmod>${escapeXml(lastmod)}</lastmod></url>`;
+      const changefreqTag = entry.changefreq
+        ? `<changefreq>${entry.changefreq}</changefreq>`
+        : "";
+      const priorityTag =
+        entry.priority !== undefined
+          ? `<priority>${entry.priority.toFixed(1)}</priority>`
+          : "";
+      return `<url><loc>${escapeXml(entry.url)}</loc><lastmod>${escapeXml(lastmod)}</lastmod>${changefreqTag}${priorityTag}</url>`;
     })
     .join("");
 
@@ -112,7 +142,7 @@ export function renderSitemapIndex() {
   const items = segmentedSitemaps
     .map(
       (sitemap) =>
-        `<sitemap><loc>${escapeXml(`${siteUrl}/sitemaps/${sitemap.slug}.xml`)}</loc></sitemap>`
+        `<sitemap><loc>${escapeXml(`${siteUrl}/sitemaps/${sitemap.slug}.xml`)}</loc><lastmod>${escapeXml(BUILD_TIME)}</lastmod></sitemap>`
     )
     .join("");
 

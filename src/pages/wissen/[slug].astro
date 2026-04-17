@@ -25,13 +25,13 @@ const { slug } = Astro.params;
 const article = getArticleMeta(slug as string);
 
 if (!article) {
-  return Astro.redirect("/wissen");
+  return Astro.redirect("/wissen/", 301);
 }
 
 const content = await getArticleContent(slug as string);
 
 if (!content) {
-  return Astro.redirect("/wissen");
+  return Astro.redirect("/wissen/", 301);
 }
 
 // Related articles by shared tags

@@ -1,0 +1,32 @@
+---
+import Layout from "Layout.astro";
+import defaultTemplateConfig from "utils/config";
+
+Astro.response.status = 404;
+
+const seo = {
+  title: "404 – Seite nicht gefunden | Mahlzait",
+  description: "Diese Seite existiert nicht. Zurück zur Startseite oder entdecke unseren Kalorien-Rechner und Ernährungs-Wissen.",
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo} noindex={true}>
+  <main class="min-h-[70vh] flex items-center justify-center px-4 py-16">
+    <div class="max-w-xl text-center">
+      <p class="text-sm font-semibold text-primary mb-4">Fehler 404</p>
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4">
+        Diese Seite gibt's nicht
+      </h1>
+      <p class="text-lg opacity-80 mb-8">
+        Die von dir aufgerufene Seite existiert nicht oder wurde verschoben.
+        Vielleicht findest du, was du suchst, auf einer unserer Hauptseiten.
+      </p>
+      <div class="flex flex-wrap gap-3 justify-center">
+        <a href="/" class="btn btn-primary">Zur Startseite</a>
+        <a href="/kalorien/" class="btn btn-outline">Kalorien-Übersicht</a>
+        <a href="/wissen/" class="btn btn-outline">Wissen</a>
+        <a href="/rechner/" class="btn btn-outline">Rechner</a>
+      </div>
+    </div>
+  </main>
+</Layout>

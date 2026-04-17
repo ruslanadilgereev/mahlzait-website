@@ -105,6 +105,7 @@ function CookieConsent() {
     if (prefs.marketing) {
       loadGoogleAds();
       loadMetaPixel();
+      loadPinterest();
     }
 
     // Custom tracking (only after optional consent)
@@ -204,6 +205,23 @@ function CookieConsent() {
     document.head.appendChild(script);
   };
 
+  const loadPinterest = () => {
+    if (typeof window === "undefined" || (window as any).pintrk) return;
+
+    const script = document.createElement("script");
+    script.innerHTML = `
+      !function(e){if(!window.pintrk){window.pintrk = function () {
+      window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+        n=window.pintrk;n.queue=[],n.version="3.0";var
+        t=document.createElement("script");t.async=!0,t.src=e;var
+        r=document.getElementsByTagName("script")[0];
+        r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+      pintrk('load', '2612541577652');
+      pintrk('page');
+    `;
+    document.head.appendChild(script);
+  };
+
   // Expose revokeConsent function globally for opt-out links
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -229,7 +247,7 @@ function CookieConsent() {
 
         // Remove tracking scripts
         const scripts = document.querySelectorAll(
-          'script[src*="googletagmanager"], script[src*="clarity"], script[src*="facebook"], script[src*="metricool"]',
+          'script[src*="googletagmanager"], script[src*="clarity"], script[src*="facebook"], script[src*="metricool"], script[src*="pinimg"]',
         );
         scripts.forEach((script) => script.remove());
 
@@ -240,6 +258,7 @@ function CookieConsent() {
           delete (window as any).fbq;
           delete (window as any).clarity;
           delete (window as any).beTracker;
+          delete (window as any).pintrk;
         } catch {
           // ignore
         }

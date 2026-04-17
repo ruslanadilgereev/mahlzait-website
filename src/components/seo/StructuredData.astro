@@ -20,27 +20,26 @@ interface Props {
 const { config, type = "page", pageTitle, pageDescription } = Astro.props;
 const siteUrl = "https://www.mahlzait.de";
 const currentUrl = new URL(Astro.url.pathname, siteUrl).href;
+const isHomepage = type === "homepage";
 
-// Basis-Schemas für alle Seiten
-const websiteSchema = generateWebsiteSchema(
-  siteUrl,
-  config.name,
-  config.seo.description
-);
+// Website + Organization + MobileApp nur auf Homepage (Entity-Schemas gehoeren auf die Root-Entitaet)
+const websiteSchema = isHomepage
+  ? generateWebsiteSchema(siteUrl, config.name, config.seo.description)
+  : null;
 
-const organizationSchema = generateOrganizationSchema(
-  siteUrl,
-  config.name,
-  new URL(config.logo, siteUrl).href
-);
+const organizationSchema = isHomepage
+  ? generateOrganizationSchema(siteUrl, config.name, new URL(config.logo, siteUrl).href)
+  : null;
 
-const mobileAppSchema = generateMobileAppSchema(
-  siteUrl,
-  config.name,
-  config.seo.description,
-  config.appStoreLink,
-  config.googlePlayLink
-);
+const mobileAppSchema = isHomepage
+  ? generateMobileAppSchema(
+      siteUrl,
+      config.name,
+      config.seo.description,
+      config.appStoreLink,
+      config.googlePlayLink,
+    )
+  : null;
 
 // Homepage-spezifische Schemas
 let faqSchema = null;
@@ -50,7 +49,7 @@ let breadcrumbSchema = null;
 let productSchemas = null;
 let webPageSchema = null;
 
-if (type === "homepage" && config.home) {
+if (isHomepage && config.home) {
   // FAQ Schema
   if (config.home.faq) {
     faqSchema = generateFAQSchema(
@@ -130,14 +129,13 @@ if (type === "homepage" && config.home) {
   });
 }
 
-// Alle Schemas kombinieren
-const allSchemas = [
-  websiteSchema,
-  organizationSchema,
-  mobileAppSchema,
-  breadcrumbSchema,
-];
+// Alle Schemas kombinieren — Entity-Schemas nur auf Homepage, Page-Schemas ueberall
+const allSchemas: unknown[] = [];
 
+if (websiteSchema) allSchemas.push(websiteSchema);
+if (organizationSchema) allSchemas.push(organizationSchema);
+if (mobileAppSchema) allSchemas.push(mobileAppSchema);
+if (breadcrumbSchema) allSchemas.push(breadcrumbSchema);
 if (faqSchema) allSchemas.push(faqSchema);
 if (howToSchema) allSchemas.push(howToSchema);
 if (reviewSchemas) allSchemas.push(...reviewSchemas);
