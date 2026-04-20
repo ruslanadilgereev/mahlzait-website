@@ -94,16 +94,18 @@ function CookieConsent() {
   const loadScripts = (prefs: ConsentPreferences) => {
     if (typeof window === "undefined") return;
 
-    // Analytics scripts
+    // Consent Mode v2: Google Tag ist schon in Layout.astro geladen mit denied defaults.
+    // Hier nur consent state updaten.
+    updateGoogleConsent(prefs);
+
+    // Analytics scripts (non-Google)
     if (prefs.analytics) {
-      loadGoogleAnalytics();
       loadMicrosoftClarity();
       loadMetricool();
     }
 
-    // Marketing scripts
+    // Marketing scripts (non-Google)
     if (prefs.marketing) {
-      loadGoogleAds();
       loadMetaPixel();
       loadPinterest();
     }
@@ -112,54 +114,17 @@ function CookieConsent() {
     loadMahlzaitTracking(prefs);
   };
 
-  const ensureGtagJsLoaded = (tagIdForSrc: string) => {
+  const updateGoogleConsent = (prefs: ConsentPreferences) => {
     if (typeof window === "undefined") return;
-    // Prevent duplicate loads (any gtag.js is sufficient)
-    if (document.querySelector('script[src*="googletagmanager.com/gtag/js"]'))
-      return;
+    const gtag = (window as any).gtag;
+    if (typeof gtag !== "function") return;
 
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = `https://www.googletagmanager.com/gtag/js?id=${encodeURIComponent(
-      tagIdForSrc,
-    )}`;
-    document.head.appendChild(script);
-  };
-
-  const ensureGtagInitialized = () => {
-    if (typeof window === "undefined") return;
-    if ((window as any).gtag) return;
-
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    (window as any).gtag = function gtag() {
-      (window as any).dataLayer.push(arguments);
-    };
-    (window as any).gtag("js", new Date());
-  };
-
-  const loadGoogleAnalytics = () => {
-    if (typeof window === "undefined") return;
-    // Load gtag.js (needed for GA4)
-    ensureGtagJsLoaded("G-ZEGRW1C5EF");
-    ensureGtagInitialized();
-
-    // Configure GA4 (analytics only)
-    (window as any).gtag("config", "G-ZEGRW1C5EF", {
-      anonymize_ip: true,
-      allow_google_signals: false,
-      allow_ad_personalization_signals: false,
+    gtag("consent", "update", {
+      analytics_storage: prefs.analytics ? "granted" : "denied",
+      ad_storage: prefs.marketing ? "granted" : "denied",
+      ad_user_data: prefs.marketing ? "granted" : "denied",
+      ad_personalization: prefs.marketing ? "granted" : "denied",
     });
-  };
-
-  const loadGoogleAds = () => {
-    if (typeof window === "undefined") return;
-    // Load gtag.js (needed for Google Ads conversions)
-    ensureGtagJsLoaded("AW-17308112458");
-    ensureGtagInitialized();
-
-    // Configure Google Ads / Google Tag (marketing only)
-    (window as any).gtag("config", "AW-17308112458");
-    (window as any).gtag("config", "GT-5M8SQ984");
   };
 
   const loadMetaPixel = () => {
@@ -245,16 +210,25 @@ function CookieConsent() {
           // ignore
         }
 
-        // Remove tracking scripts
+        // Consent Mode v2: Google Tag auf denied zurücksetzen (Script bleibt geladen)
+        const gtag = (window as any).gtag;
+        if (typeof gtag === "function") {
+          gtag("consent", "update", {
+            analytics_storage: "denied",
+            ad_storage: "denied",
+            ad_user_data: "denied",
+            ad_personalization: "denied",
+          });
+        }
+
+        // Remove non-Google tracking scripts
         const scripts = document.querySelectorAll(
-          'script[src*="googletagmanager"], script[src*="clarity"], script[src*="facebook"], script[src*="metricool"], script[src*="pinimg"]',
+          'script[src*="clarity"], script[src*="facebook"], script[src*="metricool"], script[src*="pinimg"]',
         );
         scripts.forEach((script) => script.remove());
 
-        // Best-effort cleanup of globals (will be recreated only after new consent)
+        // Best-effort cleanup of non-Google globals
         try {
-          delete (window as any).gtag;
-          delete (window as any).dataLayer;
           delete (window as any).fbq;
           delete (window as any).clarity;
           delete (window as any).beTracker;

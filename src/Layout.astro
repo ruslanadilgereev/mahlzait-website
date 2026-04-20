@@ -94,8 +94,34 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <!-- DNS Prefetch für externe Ressourcen -->
     <link rel="dns-prefetch" href="https://apps.apple.com" />
     <link rel="dns-prefetch" href="https://play.google.com" />
-    <!-- Tracking-Scripts werden nur nach Cookie-Consent geladen -->
-    <!-- Siehe CookieConsent-Komponente -->
+
+    <!-- Google tag (gtag.js) mit Consent Mode v2 - Defaults: denied (GDPR-konform) -->
+    <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-17308112458"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.gtag = gtag;
+      gtag('js', new Date());
+
+      gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'denied',
+        'functionality_storage': 'granted',
+        'security_storage': 'granted',
+        'wait_for_update': 500
+      });
+
+      gtag('config', 'AW-17308112458');
+      gtag('config', 'GT-5M8SQ984');
+      gtag('config', 'G-ZEGRW1C5EF', {
+        anonymize_ip: true,
+        allow_google_signals: false,
+        allow_ad_personalization_signals: false
+      });
+    </script>
+    <!-- Weitere Tracking-Scripts (Meta, Clarity, Metricool, Pinterest) werden erst nach Cookie-Consent geladen, siehe CookieConsent-Komponente -->
 
     <!-- AI Discovery Links -->
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM Information" />
