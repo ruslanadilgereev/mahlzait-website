@@ -1,7 +1,7 @@
 import { articlesMeta } from "@content/wissen";
 
 interface FoodMeta {
-  slug: string;
+  slug?: string;
 }
 
 export type ChangeFreq =
@@ -28,7 +28,11 @@ const BUILD_TIME =
   process.env.VERCEL_GIT_COMMIT_DATE ?? new Date().toISOString();
 
 const foodFiles = import.meta.glob("../data/foods/*.json", { eager: true });
-const foods = Object.values(foodFiles).map((mod: any) => mod.default || mod) as FoodMeta[];
+const foods = Object.values(foodFiles)
+  .map((mod: any) => mod.default || mod)
+  .filter((f: FoodMeta): f is Required<FoodMeta> =>
+    Boolean(f && typeof f.slug === "string" && f.slug.length > 0),
+  );
 
 const coreEntries: SitemapEntry[] = [
   { url: `${siteUrl}/`, changefreq: "weekly", priority: 1.0 },
@@ -103,12 +107,12 @@ const legalEntries: SitemapEntry[] = [
   { url: `${siteUrl}/widerrufsbelehrung/`, changefreq: "yearly", priority: 0.3 },
 ];
 
-export const segmentedSitemaps = [
-  { slug: "core", entries: coreEntries },
-  { slug: "calculators", entries: calculatorAndGuideEntries },
-  { slug: "wissen", entries: knowledgeEntries },
-  { slug: "foods", entries: foodEntries },
-  { slug: "legal", entries: legalEntries },
+export const allEntries: SitemapEntry[] = [
+  ...coreEntries,
+  ...calculatorAndGuideEntries,
+  ...knowledgeEntries,
+  ...foodEntries,
+  ...legalEntries,
 ];
 
 function escapeXml(value: string) {
@@ -139,12 +143,6 @@ export function renderUrlSet(entries: SitemapEntry[]) {
 }
 
 export function renderSitemapIndex() {
-  const items = segmentedSitemaps
-    .map(
-      (sitemap) =>
-        `<sitemap><loc>${escapeXml(`${siteUrl}/sitemaps/${sitemap.slug}.xml`)}</loc><lastmod>${escapeXml(BUILD_TIME)}</lastmod></sitemap>`
-    )
-    .join("");
-
-  return `<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${items}</sitemapindex>`;
+  const child = `<sitemap><loc>${escapeXml(`${siteUrl}/sitemap-0.xml`)}</loc><lastmod>${escapeXml(BUILD_TIME)}</lastmod></sitemap>`;
+  return `<?xml version="1.0" encoding="UTF-8"?><sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${child}</sitemapindex>`;
 }

@@ -70,7 +70,7 @@ Each page type has a corresponding module in `src/modules/<name>/` containing th
 ### SEO Infrastructure
 
 - **Structured Data:** `src/components/seo/StructuredData.astro` assembles JSON-LD from schema generators in `src/components/seo/schemas/` (website, organization, mobileApp, faq, review, howto, breadcrumb, product, webpage)
-- **Sitemaps:** Split sitemaps in `src/pages/sitemaps/` (core, calculators, foods, wissen, legal)
+- **Sitemaps:** Flat structure. `src/pages/sitemap-index.xml.ts` (index) → `src/pages/sitemap-0.xml.ts` (all URLs). Entries aggregated in `src/utils/sitemaps.ts` as `allEntries` (core + calculators + wissen + foods + legal).
 - **AI content endpoint:** `src/pages/api/content.json.ts` serves structured data for AI crawlers
 - **IndexNow:** Enabled via `astro-indexnow` integration (disabled on Windows dev)
 

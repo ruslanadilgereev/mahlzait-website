@@ -19,8 +19,16 @@
 const SITE_URL = "https://www.mahlzait.de";
 const INDEXNOW_KEY = "1c802a7f00434fe04c269ffb5f9e526a";
 
-// Sitemaps to EXCLUDE from --all (food-detail-pages kompetitive Nische, skip for quota)
-const EXCLUDE_SITEMAPS = ["foods"];
+// URL-Path-Prefixes to EXCLUDE from --all (food-detail-pages kompetitive Nische, skip for quota)
+const EXCLUDE_URL_PATTERNS = ["/kalorien/"];
+// Legacy food-detail-hub stays in: only per-food pages like /kalorien/apfel/ are filtered.
+const KEEP_URL_EXACT = new Set([
+  "https://www.mahlzait.de/kalorien/",
+  "https://www.mahlzait.de/kalorien/kategorie/supermarkt/",
+  "https://www.mahlzait.de/kalorien/kategorie/gericht/",
+  "https://www.mahlzait.de/kalorien/kategorie/fast-food/",
+  "https://www.mahlzait.de/kalorien/kategorie/getraenk/",
+]);
 
 // Default URLs to submit when no args given (latest new pages)
 const DEFAULT_PATHS = [
@@ -39,14 +47,10 @@ async function fetchAllSitemapUrls() {
   const indexXml = await indexRes.text();
   const sitemapLocs = [...indexXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 
-  const filtered = sitemapLocs.filter((loc) => {
-    return !EXCLUDE_SITEMAPS.some((ex) => loc.includes(`/sitemaps/${ex}.xml`));
-  });
+  console.log(`📑 Sitemaps: ${sitemapLocs.length} child(ren) in index`);
 
-  console.log(`📑 Sitemaps: ${sitemapLocs.length} total, using ${filtered.length} (skipping ${EXCLUDE_SITEMAPS.join(", ")})`);
-
-  const allUrls = [];
-  for (const sitemapUrl of filtered) {
+  const allLocs = [];
+  for (const sitemapUrl of sitemapLocs) {
     const res = await fetch(sitemapUrl);
     if (!res.ok) {
       console.warn(`   ⚠️  ${sitemapUrl}: HTTP ${res.status}`);
@@ -54,10 +58,17 @@ async function fetchAllSitemapUrls() {
     }
     const xml = await res.text();
     const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-    allUrls.push(...locs);
+    allLocs.push(...locs);
     console.log(`   ✓ ${new URL(sitemapUrl).pathname}: ${locs.length} URLs`);
   }
-  return allUrls;
+
+  const before = allLocs.length;
+  const filtered = allLocs.filter((loc) => {
+    if (KEEP_URL_EXACT.has(loc)) return true;
+    return !EXCLUDE_URL_PATTERNS.some((p) => loc.includes(p));
+  });
+  console.log(`   🔍 Filter ${EXCLUDE_URL_PATTERNS.join(", ")} (except hubs): ${before}${filtered.length} URLs`);
+  return filtered;
 }
 
 let urls;
