@@ -123,14 +123,18 @@ import { FALLBACK_URL } from "../../data/go-links";
       }
 
       function buildAndroidUrl(slug, source) {
-        const p = new URLSearchParams({
-          id: PLAY_STORE_ID,
+        // Google Play Install Referrer braucht ALLE UTMs URL-encoded im
+        // EINZELNEN `referrer=`-Parameter. Direkte Query-Params
+        // (?utm_source=...) werden vom Play Store ignoriert und kommen
+        // NIE in der App an — das war der 0/103-Bug aus 2026-04-20.
+        // Doku: https://developer.android.com/google/play/installreferrer
+        const referrer = new URLSearchParams({
           utm_source: source,
           utm_medium: "golink",
           utm_campaign: slug,
           utm_content: slug,
-        });
-        return `https://play.google.com/store/apps/details?${p}`;
+        }).toString();
+        return `https://play.google.com/store/apps/details?id=${PLAY_STORE_ID}&referrer=${encodeURIComponent(referrer)}`;
       }
 
       // Extract slug from pathname: /go/peter-ig/  or  /go/peter-ig
