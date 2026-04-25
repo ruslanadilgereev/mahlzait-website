@@ -16,8 +16,12 @@ const templateConfig: TemplateConfig = {
   // Shows switch to toggle between dark and light modes
   showThemeSwitch: true,
   appStoreLink: "https://apps.apple.com/app/apple-store/id6747400456?pt=127913951&ct=homepage&mt=8",
+  // Google Play: alle UTMs MÜSSEN URL-encoded im einzelnen `referrer=`-
+  // Parameter stehen. Direkte Query-Params (?utm_source=…) werden vom
+  // Play Store ignoriert und kommen NIE in der App an.
+  // Doku: https://developer.android.com/google/play/installreferrer
   googlePlayLink:
-    "https://play.google.com/store/apps/details?id=com.promptit.mytemple&utm_source=mahlzait-website&utm_medium=website&utm_campaign=homepage",
+    "https://play.google.com/store/apps/details?id=com.promptit.mytemple&referrer=utm_source%3Dmahlzait-website%26utm_medium%3Dwebsite%26utm_campaign%3Dhomepage",
   footer: {
     legalLinks: {
       termsAndConditions: true,

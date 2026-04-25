@@ -1,14 +1,14 @@
 // Utility for tracked App Store links with UTM parameters
 
-import templateConfig from "./config";
+import { APP_STORE_ID, APP_STORE_PT, PLAY_STORE_ID } from "../data/go-links";
 
 type StorePlatform = "ios" | "android";
-type TrackingSource = 
-  | "header" 
-  | "hero" 
-  | "cta_banner" 
-  | "calculator" 
-  | "wissen" 
+type TrackingSource =
+  | "header"
+  | "hero"
+  | "cta_banner"
+  | "calculator"
+  | "wissen"
   | "footer"
   | "pricing"
   | "features";
@@ -20,25 +20,28 @@ interface TrackedLinkOptions {
 }
 
 /**
- * Generates an App Store link with UTM parameters for tracking
+ * Generates an App Store link with UTM parameters for tracking.
+ *
+ * Builds clean URLs from the App-ID constants (NOT from `templateConfig.*Link`,
+ * because those carry default homepage UTMs and would produce duplicates that
+ * the stores discard).
  */
 export function getTrackedAppLink(options: TrackedLinkOptions): string {
   const { platform, source, campaign = "website" } = options;
-  
+
   if (platform === "ios") {
-    // Apple App Store - uses 'ct' (campaign token) and 'pt' (provider token)
-    const baseUrl = templateConfig.appStoreLink;
-    const separator = baseUrl.includes("?") ? "&" : "?";
-    return `${baseUrl}${separator}ct=${campaign}_${source}`;
-  } else {
-    // Google Play - uses referrer parameter with UTM
-    const baseUrl = templateConfig.googlePlayLink;
-    const utmParams = encodeURIComponent(
-      `utm_source=website&utm_medium=${source}&utm_campaign=${campaign}`
-    );
-    const separator = baseUrl.includes("?") ? "&" : "?";
-    return `${baseUrl}${separator}referrer=${utmParams}`;
+    // Apple App Store: ct = campaign token (max 40 chars), pt = provider token.
+    const ct = `${campaign}_${source}`.slice(0, 40);
+    return `https://apps.apple.com/app/apple-store/${APP_STORE_ID}?pt=${APP_STORE_PT}&ct=${ct}&mt=8`;
   }
+
+  // Google Play: ALL UTMs must be URL-encoded inside ONE `referrer=` parameter,
+  // otherwise Play Store discards them and the app receives no install referrer.
+  // Doku: https://developer.android.com/google/play/installreferrer
+  const referrer = encodeURIComponent(
+    `utm_source=website&utm_medium=${source}&utm_campaign=${campaign}`
+  );
+  return `https://play.google.com/store/apps/details?id=${PLAY_STORE_ID}&referrer=${referrer}`;
 }
 
 /**

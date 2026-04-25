@@ -60,12 +60,15 @@ export function getAppStoreUrl(slug: string): string {
 }
 
 export function getPlayStoreUrl(slug: string, source: string): string {
-  const params = new URLSearchParams({
-    id: PLAY_STORE_ID,
+  // Google Play Install Referrer braucht ALLE UTMs URL-encoded im
+  // EINZELNEN `referrer=`-Parameter. Direkte Query-Params (?utm_source=…)
+  // werden vom Play Store ignoriert und kommen NIE in der App an.
+  // Doku: https://developer.android.com/google/play/installreferrer
+  const referrer = new URLSearchParams({
     utm_source: source,
     utm_medium: "golink",
     utm_campaign: slug,
     utm_content: slug,
-  });
-  return `https://play.google.com/store/apps/details?${params}`;
+  }).toString();
+  return `https://play.google.com/store/apps/details?id=${PLAY_STORE_ID}&referrer=${encodeURIComponent(referrer)}`;
 }
