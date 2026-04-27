@@ -486,6 +486,42 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
               </div>
             </div>
           </div>
+          {/* Source Footer für Citability (BLS + OFF + USDA) */}
+          <div className="max-w-2xl mx-auto mt-4 mb-12 text-xs opacity-60 text-center leading-relaxed">
+            Quelle: Nährwerte basieren auf{" "}
+            <a
+              href="https://www.blsdb.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-100"
+            >
+              Bundeslebensmittelschlüssel (BLS)
+            </a>
+            ,{" "}
+            <a
+              href="https://world.openfoodfacts.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-100"
+            >
+              Open Food Facts
+            </a>{" "}
+            und{" "}
+            <a
+              href="https://fdc.nal.usda.gov"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:opacity-100"
+            >
+              USDA FoodData Central
+            </a>
+            . Bei Markenprodukten via Live-Web-Recherche aus Hersteller-Quellen ergänzt.
+            Korrekturen an{" "}
+            <a href="mailto:kontakt@mahlzait.de" className="underline hover:opacity-100">
+              kontakt@mahlzait.de
+            </a>
+            .
+          </div>
         </section>
 
         <AppBanner />

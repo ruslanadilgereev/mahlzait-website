@@ -138,6 +138,17 @@ export type TemplateConfig = {
                 screenshot: string;
             }[];
         } | undefined;
+        differentiators?: {
+            id?: string | undefined;
+            title: string;
+            subtitle?: string | undefined;
+            cards: {
+                icon: string;
+                title: string;
+                body: string;
+                example?: string | undefined;
+            }[];
+        } | undefined;
         pricing?: {
             id?: string | undefined;
             title: string;

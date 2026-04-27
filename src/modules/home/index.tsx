@@ -5,6 +5,7 @@ import { ConfigContext } from "../../utils/configContext";
 import type { TemplateConfig } from "../../utils/configType";
 import Header from "./_components/header";
 import Features from "./_components/features";
+import Differentiators from "./_components/differentiators";
 import Partners from "./_components/partners";
 import Faq from "./_components/faq";
 import HowItWorks from "./_components/howItWorks";
@@ -58,6 +59,7 @@ function Home({ config }: Props) {
         <Partners />
         <LiveDemo />
         <Features />
+        <Differentiators />
         <ComparisonTable />
         <HowItWorks />
         <Pricing />

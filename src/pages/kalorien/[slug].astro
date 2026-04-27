@@ -130,6 +130,23 @@ const webAppSchema = {
     "Kalorienverbrauch beim Sport berechnen",
     "Tipps zum Kalorien sparen",
   ],
+  isBasedOn: [
+    {
+      "@type": "Dataset",
+      name: "Bundeslebensmittelschlüssel (BLS)",
+      url: "https://www.blsdb.de",
+    },
+    {
+      "@type": "Dataset",
+      name: "Open Food Facts",
+      url: "https://world.openfoodfacts.org",
+    },
+    {
+      "@type": "Dataset",
+      name: "USDA FoodData Central",
+      url: "https://fdc.nal.usda.gov",
+    },
+  ],
 };
 
 const authorPersonSchema = {

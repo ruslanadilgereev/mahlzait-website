@@ -164,7 +164,7 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods, 
           )}
 
           {/* Lead / Description */}
-          <p className="text-lg md:text-xl opacity-80 mb-8 border-l-4 border-primary pl-4">
+          <p className="article-lead text-lg md:text-xl opacity-80 mb-8 border-l-4 border-primary pl-4">
             {article.description}
           </p>
 
@@ -269,6 +269,35 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods, 
               </div>
             </section>
           )}
+
+          {/* USP Brand Hint (AI-quotable + Branding) */}
+          <aside
+            aria-label="Mahlzait-Differenzierung"
+            className="mt-12 rounded-xl border border-primary/30 bg-primary/5 p-5"
+          >
+            <h3 className="text-lg font-bold mb-2">
+              Mahlzait — die einzige App in DACH, die …
+            </h3>
+            <ul className="list-disc list-inside space-y-1 text-sm opacity-90">
+              <li>
+                Mahlzeiten gleichzeitig per Foto, Video, Barcode, Text und Rezept-Link erkennt
+              </li>
+              <li>
+                bei unklaren Werten live im Web nach offiziellen Nährwerten recherchiert (mit Quellenangabe)
+              </li>
+              <li>
+                8 Makros statt 4 trackt — mit Confidence-Score 0–1 pro Mahlzeit, sodass du siehst, wie sicher die KI ist
+              </li>
+            </ul>
+            <a
+              href={config.appStoreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary btn-sm mt-4"
+            >
+              Jetzt kostenlos testen
+            </a>
+          </aside>
 
           {/* Disclaimer */}
           <div className="mt-8 alert">

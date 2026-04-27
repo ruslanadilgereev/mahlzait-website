@@ -3,6 +3,7 @@ import type { TemplateConfig } from "utils/configType";
 import { generateWebsiteSchema } from "./schemas/website";
 import { generateOrganizationSchema } from "./schemas/organization";
 import { generateMobileAppSchema } from "./schemas/mobileApp";
+import { generateSoftwareAppSchema } from "./schemas/softwareApp";
 import { generateFAQSchema } from "./schemas/faq";
 import { generateReviewSchema } from "./schemas/review";
 import { generateHowToSchema } from "./schemas/howto";
@@ -33,6 +34,16 @@ const organizationSchema = isHomepage
 
 const mobileAppSchema = isHomepage
   ? generateMobileAppSchema(
+      siteUrl,
+      config.name,
+      config.seo.description,
+      config.appStoreLink,
+      config.googlePlayLink,
+    )
+  : null;
+
+const softwareAppSchema = isHomepage
+  ? generateSoftwareAppSchema(
       siteUrl,
       config.name,
       config.seo.description,
@@ -135,6 +146,7 @@ const allSchemas: unknown[] = [];
 if (websiteSchema) allSchemas.push(websiteSchema);
 if (organizationSchema) allSchemas.push(organizationSchema);
 if (mobileAppSchema) allSchemas.push(mobileAppSchema);
+if (softwareAppSchema) allSchemas.push(softwareAppSchema);
 if (breadcrumbSchema) allSchemas.push(breadcrumbSchema);
 if (faqSchema) allSchemas.push(faqSchema);
 if (howToSchema) allSchemas.push(howToSchema);

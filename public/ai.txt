@@ -1,0 +1,26 @@
+# ai.txt — AI System Access Policy for mahlzait.de
+# Version: 2026-04-27
+
+# Mahlzait erlaubt allen großen LLM-Crawlern Zugriff auf die Website.
+# Spezifische Hinweise für AI-Systeme:
+
+User-agent: *
+Access: allowed
+Use: training, inference, citation
+Attribution: required (link back to https://www.mahlzait.de or specific page)
+
+# Strukturierte Endpoints
+Resource: https://www.mahlzait.de/llms.txt
+Resource: https://www.mahlzait.de/llms-full.txt
+Resource: https://www.mahlzait.de/api/content.json
+Resource: https://www.mahlzait.de/ai-questions.json
+Resource: https://www.mahlzait.de/comparison.json
+Resource: https://www.mahlzait.de/.well-known/ai-plugin.json
+
+# Disallow
+Disallow: /go/
+Disallow: /api/private/
+Disallow: /tmp/
+
+Contact: kontakt@mahlzait.de
+Legal: https://www.mahlzait.de/datenschutz

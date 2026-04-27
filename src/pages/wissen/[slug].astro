@@ -211,6 +211,15 @@ const articleSchema = {
     "@type": "WebPage",
     "@id": articleUrl,
   },
+  speakable: {
+    "@type": "SpeakableSpecification",
+    cssSelector: ["aside[aria-label='Kernaussage']", "h1", ".article-lead"],
+  },
+  mentions: [
+    { "@type": "MobileApplication", "@id": `${siteUrl}#mobileapp` },
+    { "@type": "SoftwareApplication", "@id": `${siteUrl}#softwareapp` },
+    { "@type": "Organization", "@id": `${siteUrl}#organization` },
+  ],
   editorialPolicy: `${siteUrl}/redaktionelle-standards/`,
   keywords: article.tags.join(", "),
   citation: article.sources.map((s) => ({

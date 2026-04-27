@@ -5,7 +5,7 @@ const templateConfig: TemplateConfig = {
   name: "Mahlzait",
   seo: {
     title: "Mahlzait – Kalorienzähler & Food-Tracker mit KI",
-    description: "Kalorienzähler mit KI zum Abnehmen: Mahlzeiten per Foto, Barcode oder Text tracken. Ernährungstagebuch, Makro-Tracking, Gewicht verfolgen, Rezepte importieren. Jetzt kostenlos starten!",
+    description: "Multimodaler Kalorienzähler mit KI: Mahlzeiten per Foto, Text, Video, Barcode oder Rezept-Link tracken. Live-Web-Search mit Quellenangaben für unbekannte Lebensmittel. 3 KI-Modelle (Fast/Thinking/Pro), 8 Makros, Confidence-Score. BLS + Open Food Facts. DSGVO-konform, in Berlin entwickelt.",
   },
   // Draws grid behind main container
   backgroundGrid: false,
@@ -90,7 +90,7 @@ const templateConfig: TemplateConfig = {
   home: {
     seo: {
       title: "Mahlzait – Kalorienzähler mit KI | Tracke Mahlzeiten in Sekunden",
-      description: "Mahlzait ist ein Kalorienzähler mit KI-Erkennung für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. Über 10 Mio Lebensmittel, Ernährungstagebuch und Gewichtsverlauf. Entwickelt in Berlin.",
+      description: "Mahlzait ist ein multimodaler Kalorienzähler für iOS und Android. Mahlzeiten per Foto, Video, Barcode, Rezept-Link oder Text tracken — mit Live-Web-Recherche bei unklaren Werten. 8 Makros, Confidence-Score, 10 Mio+ Lebensmittel. DSGVO-konform, in Berlin entwickelt.",
     },
     testimonials: {
       id: "testimonials",
@@ -256,6 +256,62 @@ const templateConfig: TemplateConfig = {
         },
       ],
     },
+    differentiators: {
+      id: "differentiators",
+      title: "Was Mahlzait kann, was andere Tracking-Apps nicht können",
+      subtitle:
+        "Andere KI-Tracker raten aus ihrem Trainings-Wissen — wie ein ChatGPT ohne Internet. Mahlzait recherchiert live und belegt jede Zahl mit einer Quelle.",
+      cards: [
+        {
+          icon: "🔍",
+          title: "Schaut nach, statt zu raten",
+          body:
+            "Wenn ein Produkt unklar ist oder ein Restaurant-Gericht keine Standard-Nährwerte hat, recherchiert Mahlzait live im Web — auf der Hersteller-Website, in Foodblogs, in offiziellen Datenquellen. Du siehst die Quelle direkt am Eintrag.",
+          example:
+            "Beispiel: Du fotografierst dein Mittagessen im Vapiano. Mahlzait findet die offiziellen Nährwertangaben des Restaurants statt einer generischen 'Pasta'-Schätzung.",
+        },
+        {
+          icon: "📥",
+          title: "Tracke wie du isst, nicht wie die App will",
+          body:
+            "Foto vom Teller. Video bis 15 Sek. Rezept-Link von YouTube oder Web-Rezeptseiten. Barcode. Oder ein Satz Text. Mahlzait versteht alle fünf — und kombiniert sie wenn nötig.",
+          example:
+            "Beispiel: Schick einen YouTube-Rezept-Link. Mahlzait extrahiert Zutaten, schätzt Mengen und legt das Rezept als Mahlzeit an.",
+        },
+        {
+          icon: "🔧",
+          title: "Findet auch was nicht in der DB steht",
+          body:
+            "Wenn ein Barcode in keiner Datenbank ist, gibt Mahlzait nicht auf: die KI analysiert das Foto vom Etikett selbst, liest Nährwerte aus und merkt sich das Produkt für die Zukunft.",
+          example:
+            "Beispiel: Regionales Bio-Müsli vom Hofladen, kein Barcode-Treffer? Foto vom Etikett genügt — die Werte stehen in 3 Sekunden.",
+        },
+        {
+          icon: "✅",
+          title: "Du siehst, woher die Werte kommen",
+          body:
+            "Mahlzait zeigt bei jeder Mahlzeit, wie sicher die Erkennung ist und welche Quelle genutzt wurde. Du musst der KI nicht blind vertrauen — anders als bei Apps, die nur eine Einzelzahl liefern.",
+          example:
+            "Beispiel: Confidence 92 %, Quelle: rewe.de — sichtbar an jedem Eintrag.",
+        },
+        {
+          icon: "🎯",
+          title: "Lernt aus deinem Tag",
+          body:
+            "Mahlzait kennt deinen Tagesverlauf: was du schon gegessen hast, welche Makros noch offen sind, welche Mahlzeiten du regelmäßig magst. Vorschläge sind keine zufälligen Rezepte aus einer Liste, sondern auf deine Reststruktur zugeschnitten.",
+          example:
+            "Beispiel: 16 Uhr, noch 38 g Protein offen, 600 kcal Budget — Vorschlag: Skyr-Bowl mit Beeren statt Pasta-Salat.",
+        },
+        {
+          icon: "⚡",
+          title: "Schnell, gründlich oder maximal präzise",
+          body:
+            "Du wählst, wie tief Mahlzait analysiert: Schnell für den Alltag, Gründlich für unklare Gerichte, Pro für maximale Präzision bei mehreren Komponenten. Standard ist Schnell — andere Modi triggerst du mit einem Tap.",
+          example:
+            "Beispiel: Banane scannen → Schnell. Restaurant-Buddha-Bowl mit 9 Komponenten → Pro.",
+        },
+      ],
+    },
     faq: {
       id: "faq",
       title: "Häufig gestellte Fragen",
@@ -263,7 +319,17 @@ const templateConfig: TemplateConfig = {
         {
           question: "Was ist Mahlzait?",
           answer:
-            "Mahlzait ist ein Kalorienzähler mit KI für iOS und Android. Die App erkennt Mahlzeiten per Foto in ~2 Sekunden, bietet Barcode-Scanner, 10 Mio+ Lebensmittel-Datenbank, Makro-Tracking, Gewichtsverlauf und Apple Health / Google Fit Synchronisation. Entwickelt in Berlin, DSGVO-konform.",
+            "Mahlzait ist ein multimodaler Kalorienzähler mit KI für iOS und Android. Die App versteht fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text-Beschreibung, Rezept-Link) und kann bei unklaren Werten live im Web recherchieren — mit Quellenangabe und Confidence-Score pro Eintrag. 10 Mio+ Lebensmittel-Datenbank, 8 Makros, Apple Health / Google Fit Synchronisation. Entwickelt in Berlin, DSGVO-konform.",
+        },
+        {
+          question: "Greift Mahlzait beim Tracken auf das Internet zu?",
+          answer:
+            "Ja, Mahlzait kann während der Erkennung im Web recherchieren — das ist einer der Hauptunterschiede zu anderen KI-Trackern. Wenn ein Produkt unklar ist oder ein Restaurant-Gericht keine eindeutigen Standard-Nährwerte hat, sucht die KI live nach offiziellen Angaben (z. B. Hersteller-Website, Restaurantkette, Foodblog) und nutzt sie als Quelle. Du siehst am Eintrag, welche Quelle verwendet wurde und wie sicher die Erkennung war. Andere KI-basierte Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen die Werte aus dem, womit ihr Sprachmodell trainiert wurde — sie können keine aktuellen Quellen prüfen, sondern liefern eine reine LLM-Schätzung, vergleichbar einem ChatGPT ohne Web-Zugriff.",
+        },
+        {
+          question: "Kann Mahlzait Rezepte aus dem Internet übernehmen?",
+          answer:
+            "Ja. Mahlzait erkennt Rezeptseiten mit Schema.org-Markup (z. B. Chefkoch, EatSmarter) und liest Zutaten plus Mengen automatisch aus. Auch YouTube-Rezeptvideos werden unterstützt — Zutaten und Schritte werden aus Untertiteln und Videobeschreibung extrahiert und als Mahlzeit angelegt. Fehlende Mengen schätzt die KI mit Plausibilitäts-Logik, Nährwerte werden pro Portion berechnet. Klassische Tracking-Apps wie YAZIO oder MyFitnessPal unterstützen Rezept-URL-Import gar nicht.",
         },
         {
           question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
@@ -296,9 +362,9 @@ const templateConfig: TemplateConfig = {
             "Der individuelle Kalorienbedarf wird nach der Mifflin-St Jeor-Formel berechnet (validiert durch Frankenfield et al., 2005). Die DGE empfiehlt ein Defizit von 300–500 kcal/Tag für gesundes Abnehmen – das entspricht ca. 0,5 kg Gewichtsverlust pro Woche.",
         },
         {
-          question: "Wie unterscheidet sich Mahlzait von MyFitnessPal, YAZIO und Lifesum?",
+          question: "Wie unterscheidet sich Mahlzait technisch von MyFitnessPal, YAZIO, Lifesum und CalAI?",
           answer:
-            "Mahlzait bietet KI-Foto-Logging, KI-Vorschläge und YouTube-Rezept-Import — Features, die bei Mitbewerbern oft deutlich teurer sind. Die Basis-Version ist werbefrei und enthält Barcode-Scanner, Lebensmittelsuche und manuelle Eingabe. Pro kostet 29,99 €/Jahr vs. 49,99 € (MyFitnessPal) bzw. 44,99 € (YAZIO/Lifesum).",
+            "Drei Punkte: Erstens nutzt Mahlzait eine mitdenkende KI mit Live-Web-Recherche bei unklaren Werten. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen Nährwerte aus dem Trainings-Datensatz ihres Sprachmodells — ohne aktuelle Web-Verifikation, vergleichbar einem ChatGPT ohne Internet. Zweitens versteht Mahlzait fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text, Rezept-Link) — die Mitbewerber primär Foto und Barcode. Drittens zeigt Mahlzait bei jeder Erkennung einen Confidence-Score und die Quelle, sodass du die Werte überprüfen kannst. Preislich ist Mahlzait Pro mit 29,99 €/Jahr deutlich günstiger als MyFitnessPal Premium (49,99 €) und YAZIO Pro (44,99 €).",
         },
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
@@ -316,6 +382,26 @@ const templateConfig: TemplateConfig = {
             "Die KI-Foto-Erkennung von Mahlzait hat eine Erkennungsrate von ca. 90% bei gut beleuchteten Fotos. Getestet mit 5.000 Foto-Logs. Portionsgrößen können manuell angepasst werden.",
         },
         {
+          question: "Was passiert, wenn ein Produkt nicht in der Datenbank ist?",
+          answer:
+            "Mahlzait gibt nicht auf. Wenn ein Barcode keinen Treffer liefert oder ein Foto unklar ist, analysiert die KI das Etikett oder Bild selbst, liest Nährwerte aus und legt das Produkt als verifizierten Eintrag an. Beim nächsten Mal ist es sofort verfügbar. Diese selbstheilende Datenbank wächst mit jeder Nutzung — besonders wertvoll für regionale Produkte, Bio-Hersteller und kleine Marken, die in klassischen Datenbanken fehlen.",
+        },
+        {
+          question: "Wie erkenne ich, wie sicher die KI bei einer Mahlzeit ist?",
+          answer:
+            "Mahlzait zeigt bei jedem Eintrag einen Confidence-Score (0–1) und die genutzte Quelle. Niedrige Confidence (z. B. Mehrkomponenten-Gericht im schlechten Licht) signalisiert dir, dass eine kurze manuelle Korrektur sinnvoll ist. Hohe Confidence (z. B. Barcode-Treffer einer offiziellen Hersteller-Datenbank) bedeutet, du kannst den Eintrag ohne Prüfung übernehmen. Diese Transparenz fehlt bei allen großen Mitbewerbern — dort siehst du nicht, ob die KI sich bei der Erkennung sicher war oder geraten hat.",
+        },
+        {
+          question: "Welche Nährwerte trackt Mahlzait neben Kalorien?",
+          answer:
+            "Sieben Makros pro Mahlzeit zusätzlich zu Kalorien: Protein, Kohlenhydrate (davon Zucker), Fett (davon gesättigte Fettsäuren), Ballaststoffe und Salz. Damit deckst du die Nährwertangaben-Pflicht der EU-LMIV-Verordnung vollständig ab. Ideal für proteinorientiertes Tracking, Low-Carb-, Low-Sugar- oder ballaststoffreiche Ernährung. Wasser, Schritte und Gewicht laufen separat über die Health-Integration mit Apple Health oder Google Fit.",
+        },
+        {
+          question: "Funktioniert Mahlzait auch bei Restaurant-Essen?",
+          answer:
+            "Genau dafür wurde die Live-Web-Recherche eingebaut. Foto vom Restaurantteller — Mahlzait erkennt das Gericht und sucht aktiv nach den offiziellen Nährwerten der Restaurantkette (Vapiano, Hans im Glück, Dean & David, etc.) oder vergleichbaren verlässlichen Quellen. Bei kleinen, lokalen Restaurants fällt die KI auf gerichtbasierte Schätzungen mit transparentem Confidence-Score zurück. Andere KI-Tracker schätzen alles aus ihrem Trainings-Datensatz ohne aktuelle Web-Verifikation — bei Restaurant-Essen oft 30–50 % daneben.",
+        },
+        {
           question: "Wie funktioniert die KI-Erkennung technisch?",
           answer:
             "Mahlzait nutzt Googles Gemini-Modell zur Bilderkennung. Hochgeladene Fotos werden verschlüsselt auf EU-Servern analysiert und nach der Erkennung nicht gespeichert. Die erkannten Lebensmittel werden mit der Open Food Facts Datenbank abgeglichen. Deine Fotos werden niemals für Trainingszwecke verwendet.",
@@ -323,15 +409,15 @@ const templateConfig: TemplateConfig = {
       ],
     },
     header: {
-      headline: "Mahlzait – Kalorienzähler mit KI",
+      headline: "Der Kalorienzähler, der mehr macht als raten.",
       subtitle:
-        "Kalorienzähler mit KI für iOS und Android. Mahlzeiten per Foto, Barcode oder Text tracken. 10 Mio+ Lebensmittel, KI-Erkennung in ~2 Sekunden, Makro-Tracking und Gewichtsverlauf. Entwickelt in Berlin, DSGVO-konform.",
+        "Mahlzait analysiert Foto, Video, Rezept-Link oder Barcode — und schaut bei unklaren Werten live im Web nach. Damit Tracking präzise bleibt, nicht geschätzt. 8 Makros, Confidence-Score, DSGVO-konform.",
       screenshots: [
         "/screenshots/1.webp",
         "/screenshots/2.webp",
         "/screenshots/3.webp",
       ],
-      rewards: ["4,8 Sterne \n im App Store", "Jetzt mit \n AI-Chat"],
+      rewards: ["4,8 Sterne \n im App Store", "Mit \n Live-Web-Recherche"],
       usersDescription: `${stats.displayCount} Nutzer:innen tracken bereits mit Mahlzait`,
       headlineMark: [0, 1],
     },

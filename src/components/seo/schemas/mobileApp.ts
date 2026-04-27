@@ -65,9 +65,24 @@ export function generateMobileAppSchema(
       `${url}/screenshots/3.webp`,
     ],
     softwareVersion: "1.0.0",
-    releaseNotes: "Kalorienzähler mit KI, Barcode-Scanner und Rezeptverwaltung",
+    releaseNotes: "Multimodale KI mit Live-Web-Recherche, 3 Gemini-Modelle, Rezept-Import, Confidence-Scoring",
     datePublished: "2024-11-01",
-    inLanguage: ["de-DE"],
+    inLanguage: ["de-DE", "en-US", "ru-RU"],
+    applicationSubCategory: "Diet & Nutrition",
+    keywords: "kalorienzähler, multimodale ki, live web search, food tracking ki, kalorienzähler mit foto, kalorien per text tracken, gemini grounding, dsgvo kalorien-app, bundeslebensmittelschlüssel app",
+    featureList: [
+      "Multimodal Input (Photo, Text, Video, Barcode, Recipe URL Import)",
+      "Live Web Search with Citations",
+      "3 AI Models: Fast, Thinking, Pro (Gemini 3 family)",
+      "Confidence Scoring 0-1 per meal",
+      "8 Macros: kcal, Protein, Fat, Carbs, Fiber, Saturated Fat, Sugar, Salt",
+      "Recipe Import (Schema.org Recipe Parser, YouTube)",
+      "10M+ Food Database (BLS + Open Food Facts + USDA)",
+      "Self-Healing Database via Web Search Feedback Loop",
+      "GDPR-Compliant EU Data Hosting",
+      "Offline Mode",
+      "Ad-Free Free Tier",
+    ],
   };
 
   if (appRatings.hasAggregateRating && appRatings.ratingValue && appRatings.ratingCount) {

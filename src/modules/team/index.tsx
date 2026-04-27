@@ -10,7 +10,8 @@ interface Props {
 
 const company = {
   name: "Mahlzait",
-  mission: "Abnehmen durch Präzision: Das einfachste Tracking-Erlebnis der Welt bauen.",
+  mission:
+    "Tracking, das nicht rät: multimodale KI mit Live-Web-Recherche und Quellenangaben — statt blinder Schätzung aus dem Sprachmodell-Trainings-Datensatz.",
   founded: "2025",
   location: "Berlin",
   email: "kontakt@mahlzait.de",
@@ -18,9 +19,9 @@ const company = {
 
 const founder = {
   name: "Ruslan Adilgereev",
-  role: "Founder & Product",
+  role: "Founder & Engineer",
   bio:
-    "Ingenieur & Pragmatiker. Hat Mahlzait gebaut, weil ihm existierende Apps zu ungenau und Barcodes zu nervig waren. Setzt auf modernste AI (LLMs mit Grounding) statt veralteter Datenbanken. Fokus: UX, die funktioniert.",
+    "Ingenieur & Pragmatiker aus Berlin. Hat Mahlzait gebaut, weil andere KI-Tracker bei Restaurant-Gerichten und regionalen Produkten zu oft daneben lagen — sie schätzen aus ihrem LLM-Trainings-Datensatz ohne Web-Zugriff, vergleichbar einem ChatGPT ohne Internet. Mahlzaits Antwort: eine mitdenkende KI mit fünf Eingabe-Formaten (Foto, Video, Barcode, Text, Rezept-Link) und Live-Web-Recherche mit Quellenangaben. Machine Learning + UX, die funktioniert.",
   linkedin: "https://www.linkedin.com/in/ruslanadilgereev",
 };
 
@@ -50,13 +51,16 @@ function TeamPage({ config }: Props) {
               <div className="card-body">
                 <h3 className="text-lg font-bold">Über Mahlzait</h3>
                 <p className="mt-2">
-                  Mahlzait ist ein moderner Kalorienzähler mit KI‑Unterstützung. Menschen loggen
-                  Mahlzeiten per Foto/Chat, Barcode oder Suche – in Sekunden statt Minuten.
+                  Mahlzait ist der einzige Kalorienzähler, der nicht rät: bei unklaren
+                  Werten recherchiert eine mitdenkende KI live im Web und belegt jede
+                  Zahl mit einer Quelle.
                 </p>
                 <ul className="list-disc list-inside mt-3 text-sm opacity-80">
-                  <li>iOS & Android App mit KI‑Logging</li>
-                  <li>Rezepte (inkl. YouTube‑Import) & Teilen</li>
-                  <li>Health‑Integration (Apple Health / Google Fit)</li>
+                  <li>Fünf Eingabe-Formate: Foto, Video, Barcode, Text, Rezept-Link</li>
+                  <li>Live-Web-Recherche mit Quellenangaben (Gemini-Grounding)</li>
+                  <li>Confidence-Score 0–1 pro Mahlzeit — Transparenz statt Black-Box</li>
+                  <li>8 Makros statt 4 (kcal + P/F/C, Ballaststoffe, Sat-Fat, Zucker, Salz)</li>
+                  <li>Health-Integration (Apple Health / Google Fit)</li>
                 </ul>
               </div>
             </div>
@@ -159,10 +163,10 @@ function TeamPage({ config }: Props) {
               <div className="card-body">
                 <h3 className="text-lg font-bold">Tech Stack</h3>
                 <ul className="mt-2 space-y-2">
-                  <li>Flutter (iOS/Android) · Firebase</li>
-                  <li>Vision/LLM‑basierte KI‑Features</li>
-                  <li>Astro + React (Website)</li>
-                  <li>GA4, Clarity, Vercel Analytics (mit Consent)</li>
+                  <li>Flutter (iOS/Android) · Firebase · GCP/Vertex AI</li>
+                  <li>Gemini 3 (Flash · Flash-Thinking · Pro) mit Live-Web-Search-Grounding</li>
+                  <li>LangGraph-basierte KI mit Tool-Use (Mahlzeit anlegen, Web-Suche, URL lesen)</li>
+                  <li>Astro + React (Website) · DSGVO-konform, EU-Hosting</li>
                 </ul>
               </div>
             </div>
