@@ -409,7 +409,7 @@ const templateConfig: TemplateConfig = {
       ],
     },
     header: {
-      headline: "Mahlzait, der Kalorienzähler, der nicht rät.",
+      headline: "Mahlzait, der Kalorienzähler mit AI",
       subtitle:
         "Mahlzait analysiert Foto, Video, Rezept-Link oder Barcode — und schaut bei unklaren Werten live im Web nach. Damit Tracking präzise bleibt, nicht geschätzt. 8 Makros, mit Quellenangabe pro Eintrag, DSGVO-konform.",
       screenshots: [
