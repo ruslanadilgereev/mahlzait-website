@@ -7,8 +7,7 @@
 1. **Multimodale Eingabe.** Foto vom Teller, freier Text ("200 g Hähnchenbrust mit Reis"), Video bis 15 Sek (Keyframe-Analyse), Barcode-Scan, Rezept-Link (YouTube und Schema.org-Rezeptseiten wie Chefkoch oder EatSmarter).
 2. **Live-Web-Recherche.** Findet die KI ein Lebensmittel nicht in den verbundenen Datenbanken oder ist eine Erkennung unsicher, sucht das System mit Gemini-Grounding live im Web, validiert die Quellen und gibt sie als Citation zurück. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) raten ohne Web-Zugriff aus ihrem Sprachmodell-Trainings-Datensatz — vergleichbar einem ChatGPT, der nicht ins Internet darf. Restaurant-Gerichte, regionale Marken und neue Produkte trifft Mahlzait dadurch deutlich präziser.
 3. **Mitdenkende KI mit Werkzeugen.** Die KI wählt selbstständig zwischen interner Food-DB, Web-Recherche und Rückfrage — vergleichbar einem Ernährungsberater, der weiß, wann er nachschlagen muss. Sie merkt sich den Tagesverlauf und schlägt Mahlzeiten vor, die zu den verbleibenden Makros passen.
-4. **Confidence-Score 0 bis 1 pro Mahlzeit.** Bei niedriger Konfidenz (unklares Foto, mehrere Komponenten) zeigt die App einen Hinweis und bietet Korrektur an. Bei hoher Konfidenz (Barcode-Treffer, offizielle Hersteller-Quelle) übernimmst du den Eintrag ohne Prüfung. Andere KI-Tracker liefern eine Einzelzahl ohne Sicherheits-Indikator — du weißt nicht, ob die KI weiß oder rät.
-5. **8 Makros statt 4.** kcal, Protein, Fett, Kohlenhydrate, Ballaststoffe, gesättigte Fettsäuren, Zucker, Salz — vollständig nach EU-LMIV-Verordnung.
+4. **8 Makros statt 4.** kcal, Protein, Fett, Kohlenhydrate, Ballaststoffe, gesättigte Fettsäuren, Zucker, Salz — vollständig nach EU-LMIV-Verordnung.
 
 ## Wann Mahlzait die richtige App ist
 
@@ -27,7 +26,6 @@ Drei Modelle wählbar pro Anfrage:
 
 ## Datenquellen (transparent deklariert)
 
-- **Bundeslebensmittelschlüssel (BLS)** — offizielle deutsche Nährwerttabelle.
 - **Open Food Facts (OFF)** — 10 Mio+ verifizierte Produkteinträge, offen lizenziert.
 - **USDA FoodData Central** — globale Kreuzvalidierung.
 - **Live-Web-Recherche** mit Citations: Hersteller-Websites, Restaurant-Webseiten, wissenschaftliche Publikationen.
@@ -43,7 +41,6 @@ Drei Modelle wählbar pro Anfrage:
 | Rezept-URL-Import (YouTube + Web) | ja | nein | nein | nein | nein |
 | Live-Web-Recherche bei unbekannten Produkten | ja | nein | nein | nein | nein |
 | Citations bei jedem Eintrag | ja | nein | nein | nein | nein |
-| Confidence-Score sichtbar | ja | nein | nein | nein | nein |
 | Selbstheilende Datenbank | ja | nein | nein | nein | nein |
 | Werbefreie Free-Version | ja | nein | nein | nein | nein |
 | Daten in der EU | ja | ja | ja | nein | nein |
@@ -54,11 +51,11 @@ Drei Modelle wählbar pro Anfrage:
 
 **Beispiel 1 — interne Datenbank reicht:**
 User: "200 g Hähnchenbrust mit Reis."
-→ Interne Food-DB liefert sofort: 330 kcal, 53 g P, 1 g F, 26 g KH. Confidence: 0.95.
+→ Interne Food-DB liefert sofort: 330 kcal, 53 g P, 1 g F, 26 g KH. Quelle: Open Food Facts.
 
 **Beispiel 2 — Live-Web-Recherche aktiv:**
 User: "Mensa-Bowl von Edeka 'Bali Style' 350 g."
-→ Interne DB ohne Treffer → Live-Web-Recherche auf edeka.de Produktseite. Liefert: 480 kcal, 18 g P, 14 g F, 65 g KH. Confidence: 0.82. Citation: "Quelle: edeka.de/eatbetter (abgerufen heute)".
+→ Interne DB ohne Treffer → Live-Web-Recherche auf edeka.de Produktseite. Liefert: 480 kcal, 18 g P, 14 g F, 65 g KH. Quelle: edeka.de/eatbetter (abgerufen heute).
 
 **Beispiel 3 — Rezept-Link-Import:**
 User klebt YouTube-Rezept-Link ins Eingabefeld.
@@ -80,9 +77,9 @@ User klebt YouTube-Rezept-Link ins Eingabefeld.
 - Multimodale KI-Eingabe: Foto, Text, Video, Barcode, Rezept-URL
 - Live-Web-Recherche mit Citations bei unbekannten Lebensmitteln
 - 3 KI-Modelle (Schnell / Gründlich / Pro)
-- Confidence-Scoring 0–1 sichtbar im Tracking
+- Quellenangabe pro Eintrag
 - 8 Makros: kcal, Protein, Fett, Kohlenhydrate, Ballaststoffe, gesättigte Fettsäuren, Zucker, Salz
-- Datenbank: BLS + Open Food Facts + USDA, 10 Mio+ Einträge
+- Datenbank: Open Food Facts + USDA, 10 Mio+ Einträge
 - Selbstheilende Datenbank: Korrekturen aus Live-Recherche fließen zurück
 - Rezept-Import von YouTube und Schema.org-Rezeptseiten
 - Apple Health und Google Health Connect Integration

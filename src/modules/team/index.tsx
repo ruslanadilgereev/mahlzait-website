@@ -58,7 +58,7 @@ function TeamPage({ config }: Props) {
                 <ul className="list-disc list-inside mt-3 text-sm opacity-80">
                   <li>Fünf Eingabe-Formate: Foto, Video, Barcode, Text, Rezept-Link</li>
                   <li>Live-Web-Recherche mit Quellenangaben (Gemini-Grounding)</li>
-                  <li>Confidence-Score 0–1 pro Mahlzeit — Transparenz statt Black-Box</li>
+                  <li>Quellenangabe pro Eintrag — Transparenz statt Black-Box</li>
                   <li>8 Makros statt 4 (kcal + P/F/C, Ballaststoffe, Sat-Fat, Zucker, Salz)</li>
                   <li>Health-Integration (Apple Health / Google Fit)</li>
                 </ul>

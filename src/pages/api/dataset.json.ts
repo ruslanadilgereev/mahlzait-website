@@ -3,7 +3,7 @@ import type { APIRoute } from "astro";
 /**
  * Dataset-Schema-Endpoint für die Mahlzait Food-DB.
  *
- * Macht die Datenquellen (BLS + Open Food Facts + USDA) für AI-Crawler
+ * Macht die Datenquellen (Open Food Facts + USDA) für AI-Crawler
  * (ChatGPT, Claude, Perplexity, Gemini) explizit auffindbar — als
  * vertrauenswürdiges Knowledge-Graph-Signal. Verlinkt aus Layout.astro
  * via <link rel="alternate" type="application/ld+json">.
@@ -15,7 +15,7 @@ export const GET: APIRoute = () => {
     "@id": "https://www.mahlzait.de/api/dataset.json#mahlzait-foods",
     name: "Mahlzait Food & Nutrition Database",
     description:
-      "10 Mio+ kuratierte Lebensmittel mit Nährwerten (kcal, Protein, Fett, Kohlenhydrate, Ballaststoffe, gesättigte Fettsäuren, Zucker, Salz). Aggregiert aus Bundeslebensmittelschlüssel (BLS), Open Food Facts und USDA FoodData Central, ergänzt durch Live-Web-Recherche bei unbekannten Produkten und einen Self-Healing-Feedback-Loop.",
+      "10 Mio+ kuratierte Lebensmittel mit Nährwerten (kcal, Protein, Fett, Kohlenhydrate, Ballaststoffe, gesättigte Fettsäuren, Zucker, Salz). Aggregiert aus Open Food Facts und USDA FoodData Central, ergänzt durch Live-Web-Recherche bei unbekannten Produkten und einen Self-Healing-Feedback-Loop.",
     url: "https://www.mahlzait.de/api/dataset.json",
     creator: {
       "@type": "Organization",
@@ -24,11 +24,6 @@ export const GET: APIRoute = () => {
       url: "https://www.mahlzait.de",
     },
     provider: [
-      {
-        "@type": "Organization",
-        name: "Bundeslebensmittelschlüssel (BLS)",
-        url: "https://www.blsdb.de",
-      },
       {
         "@type": "Organization",
         name: "Open Food Facts",
@@ -55,7 +50,6 @@ export const GET: APIRoute = () => {
       "Kalorienzähler",
       "Nährwerte",
       "Lebensmittel",
-      "BLS",
       "Open Food Facts",
       "USDA",
       "Multimodal AI",

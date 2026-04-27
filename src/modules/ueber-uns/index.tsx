@@ -312,10 +312,9 @@ function UeberUnsPage({ config, company, founder, techStack }: Props) {
                 >
                   Open Food Facts
                 </a>
-                , dem Bundeslebensmittelschlüssel (BLS) und USDA-FoodData
-                Central. Abweichungen je nach Zubereitung und Hersteller sind
-                möglich; die Mahlzait-App prüft Barcodes zusätzlich gegen die
-                Herstellerangaben.
+                {" "}und USDA FoodData Central. Abweichungen je nach Zubereitung
+                und Hersteller sind möglich; die Mahlzait-App prüft Barcodes
+                zusätzlich gegen die Herstellerangaben.
               </p>
 
               <h3>Formeln der Rechner</h3>

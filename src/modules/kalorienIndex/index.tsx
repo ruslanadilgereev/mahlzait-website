@@ -271,8 +271,8 @@ function KalorienIndexPage({ config, foods }: Props) {
                   Wie genau sind die Kalorienangaben?
                 </summary>
                 <p className="px-4 pb-4 text-gray-600">
-                  Unsere Nährwertangaben basieren auf der Bundeslebensmittelschlüssel-Datenbank (BLS), 
-                  Open Food Facts und wissenschaftlichen Quellen. Alle Werte beziehen sich auf 100 g 
+                  Unsere Nährwertangaben basieren auf Open Food Facts, USDA FoodData Central und
+                  wissenschaftlichen Quellen. Alle Werte beziehen sich auf 100 g
                   des jeweiligen Lebensmittels. Abweichungen je nach Zubereitung und Hersteller sind möglich.
                 </p>
               </details>

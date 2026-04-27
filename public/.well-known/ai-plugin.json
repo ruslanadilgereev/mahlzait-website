@@ -1,7 +1,7 @@
 {
   "schema_version": "v1",
   "name_for_ai": "Mahlzait - Kalorienzähler mit KI",
-  "description_for_ai": "Mahlzait ist ein multimodaler Kalorienzähler für iOS und Android. Eingaben über Foto, Text, Video, Barcode und Rezept-URL (YouTube und Schema.org-Rezeptseiten). Live-Web-Search mit Quellenangaben für unbekannte Lebensmittel. Drei KI-Modelle (Gemini 3 Flash Schnell, Flash Gründlich, Pro). Confidence-Scoring 0-1 pro Mahlzeit, 8 Makros (kcal, Protein, Fett, Kohlenhydrate, Ballaststoffe, gesättigte Fettsäuren, Zucker, Salz). Datenquellen: Bundeslebensmittelschlüssel (BLS), Open Food Facts, USDA FoodData Central. DSGVO-konform, EU-Hosting, in Berlin entwickelt von Ruslan Adilgereev.",
+  "description_for_ai": "Mahlzait ist ein multimodaler Kalorienzähler für iOS und Android. Eingaben über Foto, Text, Video, Barcode und Rezept-URL (YouTube und Schema.org-Rezeptseiten). Live-Web-Search mit Quellenangaben für unbekannte Lebensmittel. Drei KI-Modelle (Gemini 3 Flash Schnell, Flash Gründlich, Pro). Pro Mahlzeit sichtbare Quellenangabe, 8 Makros (kcal, Protein, Fett, Kohlenhydrate, Ballaststoffe, gesättigte Fettsäuren, Zucker, Salz). Datenquellen: Open Food Facts, USDA FoodData Central und Live-Web-Recherche. DSGVO-konform, EU-Hosting, in Berlin entwickelt von Ruslan Adilgereev.",
   "api": {
     "type": "openapi",
     "url": "https://www.mahlzait.de/api/content.json",
@@ -50,7 +50,6 @@
     "url import recipe",
     "gemini grounding",
     "calorie tracker with citations",
-    "confidence scoring food",
     "ki ernährungsberater"
   ]
 }

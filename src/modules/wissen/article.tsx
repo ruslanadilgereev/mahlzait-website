@@ -286,7 +286,7 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods, 
                 bei unklaren Werten live im Web nach offiziellen Nährwerten recherchiert (mit Quellenangabe)
               </li>
               <li>
-                8 Makros statt 4 trackt — mit Confidence-Score 0–1 pro Mahlzeit, sodass du siehst, wie sicher die KI ist
+                8 Makros statt 4 trackt — mit Quellenangabe pro Eintrag, sodass du siehst, woher die Werte kommen
               </li>
             </ul>
             <a
