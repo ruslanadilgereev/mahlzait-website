@@ -76,7 +76,7 @@ export function generateMobileAppSchema(
       "3 AI Models: Fast, Thinking, Pro (Gemini 3 family)",
       "Source Attribution per meal",
       "8 Macros: kcal, Protein, Fat, Carbs, Fiber, Saturated Fat, Sugar, Salt",
-      "Recipe Import (Schema.org Recipe Parser, YouTube)",
+      "Recipe Import (Schema.org Recipe Parser)",
       "10M+ Food Database (Open Food Facts + USDA)",
       "Self-Healing Database via Web Search Feedback Loop",
       "GDPR-Compliant EU Data Hosting",

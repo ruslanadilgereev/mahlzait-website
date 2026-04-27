@@ -206,9 +206,9 @@ const templateConfig: TemplateConfig = {
           screenshot: "/screenshots/aivorschlag.webp",
         },
         {
-          title: "Rezepte & YouTube",
+          title: "Rezepte & Web-Import",
           subtitle:
-            "Erstelle Rezepte aus YouTube-Videos, manuell oder per Suche – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
+            "Erstelle Rezepte manuell, per Suche oder importiere Rezepte direkt von Web-Rezeptseiten – speichere sie und logge wiederkehrende Mahlzeiten in Sekunden",
           icon: "/3D/video-camera-front-color.webp",
           screenshot: "/screenshots/rezept.webp",
         },
@@ -274,9 +274,9 @@ const templateConfig: TemplateConfig = {
           icon: "📥",
           title: "Tracke wie du isst, nicht wie die App will",
           body:
-            "Foto vom Teller. Video bis 15 Sek. Rezept-Link von YouTube oder Web-Rezeptseiten. Barcode. Oder ein Satz Text. Mahlzait versteht alle fünf — und kombiniert sie wenn nötig.",
+            "Foto vom Teller. Video bis 15 Sek. Rezept-Link von Web-Rezeptseiten. Barcode. Oder ein Satz Text. Mahlzait versteht alle fünf — und kombiniert sie wenn nötig.",
           example:
-            "Beispiel: Schick einen YouTube-Rezept-Link. Mahlzait extrahiert Zutaten, schätzt Mengen und legt das Rezept als Mahlzeit an.",
+            "Beispiel: Schick einen Rezept-Link von Chefkoch oder EatSmarter. Mahlzait extrahiert Zutaten, schätzt Mengen und legt das Rezept als Mahlzeit an.",
         },
         {
           icon: "🔧",
@@ -304,11 +304,11 @@ const templateConfig: TemplateConfig = {
         },
         {
           icon: "⚡",
-          title: "Schnell, gründlich oder maximal präzise",
+          title: "Drei KI-Modelle, automatisch passend",
           body:
-            "Du wählst, wie tief Mahlzait analysiert: Schnell für den Alltag, Gründlich für unklare Gerichte, Pro für maximale Präzision bei mehreren Komponenten. Standard ist Schnell — andere Modi triggerst du mit einem Tap.",
+            "Mahlzait wählt im Hintergrund zwischen drei Gemini-3-Modellen — schnell für klare Eingaben, tiefer für unklare Gerichte, Pro-Modus für mehrere Komponenten gleichzeitig. Du musst nichts einstellen, das Routing passiert nach Komplexität.",
           example:
-            "Beispiel: Banane scannen → Schnell. Restaurant-Buddha-Bowl mit 9 Komponenten → Pro.",
+            "Beispiel: Banane scannen → Schnell-Routing. Restaurant-Buddha-Bowl mit 9 Komponenten → Pro-Routing.",
         },
       ],
     },
@@ -329,7 +329,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Kann Mahlzait Rezepte aus dem Internet übernehmen?",
           answer:
-            "Ja. Mahlzait erkennt Rezeptseiten mit Schema.org-Markup (z. B. Chefkoch, EatSmarter) und liest Zutaten plus Mengen automatisch aus. Auch YouTube-Rezeptvideos werden unterstützt — Zutaten und Schritte werden aus Untertiteln und Videobeschreibung extrahiert und als Mahlzeit angelegt. Fehlende Mengen schätzt die KI mit Plausibilitäts-Logik, Nährwerte werden pro Portion berechnet. Klassische Tracking-Apps wie YAZIO oder MyFitnessPal unterstützen Rezept-URL-Import gar nicht.",
+            "Ja. Mahlzait erkennt Rezeptseiten mit Schema.org-Markup (z. B. Chefkoch, EatSmarter) und liest Zutaten plus Mengen automatisch aus. Fehlende Mengen schätzt die KI mit Plausibilitäts-Logik, Nährwerte werden pro Portion berechnet. Klassische Tracking-Apps wie YAZIO oder MyFitnessPal unterstützen Rezept-URL-Import gar nicht.",
         },
         {
           question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
@@ -349,7 +349,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Kann ich eigene Rezepte erstellen und speichern?",
           answer:
-            "Ja. Rezepte lassen sich manuell erstellen, aus YouTube-Videos importieren oder per Suche finden. Gespeicherte Rezepte können mit einem Klick geloggt und per Link geteilt werden. Die Nährwerte werden automatisch pro Portion berechnet.",
+            "Ja. Rezepte lassen sich manuell erstellen, aus Web-Rezeptseiten importieren oder per Suche finden. Gespeicherte Rezepte können mit einem Klick geloggt und per Link geteilt werden. Die Nährwerte werden automatisch pro Portion berechnet.",
         },
         {
           question: "Unterstützt Mahlzait Apple Health und Google Fit?",
@@ -364,7 +364,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie unterscheidet sich Mahlzait technisch von MyFitnessPal, YAZIO, Lifesum und CalAI?",
           answer:
-            "Drei Punkte: Erstens nutzt Mahlzait eine mitdenkende KI mit Live-Web-Recherche bei unklaren Werten. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen Nährwerte aus dem Trainings-Datensatz ihres Sprachmodells — ohne aktuelle Web-Verifikation, vergleichbar einem ChatGPT ohne Internet. Zweitens versteht Mahlzait fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text, Rezept-Link) — die Mitbewerber primär Foto und Barcode. Drittens zeigt Mahlzait die Quelle pro Eintrag, sodass du die Werte nachprüfen kannst statt sie blind zu übernehmen. Preislich ist Mahlzait Pro mit 29,99 €/Jahr deutlich günstiger als MyFitnessPal Premium (49,99 €) und YAZIO Pro (44,99 €).",
+            "Drei Punkte: Erstens nutzt Mahlzait eine mitdenkende KI mit Live-Web-Recherche bei unklaren Werten. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen Nährwerte aus dem Trainings-Datensatz ihres Sprachmodells — ohne aktuelle Web-Verifikation, vergleichbar einem ChatGPT ohne Internet. Zweitens versteht Mahlzait fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text, Rezept-Link) — die Mitbewerber primär Foto und Barcode. Drittens zeigt Mahlzait die Quelle pro Eintrag, sodass du die Werte nachprüfen kannst statt sie blind zu übernehmen. Preislich ist Mahlzait Pro mit 29,99 €/Jahr deutlich günstiger als die Premium-Pläne der etablierten Konkurrenz.",
         },
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
@@ -379,7 +379,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie genau ist die KI-Foto-Erkennung?",
           answer:
-            "Die KI-Foto-Erkennung von Mahlzait hat eine Erkennungsrate von ca. 90% bei gut beleuchteten Fotos. Getestet mit 5.000 Foto-Logs. Portionsgrößen können manuell angepasst werden.",
+            "Die Erkennung funktioniert am besten bei klaren, gut beleuchteten Fotos einzelner oder weniger Komponenten. Bei Mehrkomponenten-Gerichten kann die KI über Live-Web-Recherche zusätzliche Daten heranziehen, sonst greift sie auf Plausibilitäts-Schätzungen zurück. Portionsgrößen kannst du jederzeit manuell anpassen.",
         },
         {
           question: "Was passiert, wenn ein Produkt nicht in der Datenbank ist?",
@@ -399,7 +399,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Funktioniert Mahlzait auch bei Restaurant-Essen?",
           answer:
-            "Genau dafür wurde die Live-Web-Recherche eingebaut. Foto vom Restaurantteller — Mahlzait erkennt das Gericht und sucht aktiv nach den offiziellen Nährwerten der Restaurantkette (Vapiano, Hans im Glück, Dean & David, etc.) oder vergleichbaren verlässlichen Quellen. Bei kleinen, lokalen Restaurants fällt die KI auf gerichtbasierte Schätzungen zurück; die genutzte Quelle siehst du jeweils am Eintrag. Andere KI-Tracker schätzen alles aus ihrem Trainings-Datensatz ohne aktuelle Web-Verifikation — bei Restaurant-Essen oft 30–50 % daneben.",
+            "Genau dafür wurde die Live-Web-Recherche eingebaut. Foto vom Restaurantteller — Mahlzait erkennt das Gericht und sucht aktiv nach den offiziellen Nährwerten der Restaurantkette (Vapiano, Hans im Glück, Dean & David, etc.) oder vergleichbaren verlässlichen Quellen. Bei kleinen, lokalen Restaurants fällt die KI auf gerichtbasierte Schätzungen zurück. Andere KI-Tracker schätzen Restaurant-Essen ausschließlich aus dem Trainings-Datensatz ihres Sprachmodells, ohne aktuelle Web-Verifikation.",
         },
         {
           question: "Wie funktioniert die KI-Erkennung technisch?",
@@ -417,7 +417,7 @@ const templateConfig: TemplateConfig = {
         "/screenshots/2.webp",
         "/screenshots/3.webp",
       ],
-      rewards: ["4,8 Sterne \n im App Store", "Mit \n Live-Web-Recherche"],
+      rewards: ["4,7 Sterne \n im App Store", "Mit \n Live-Web-Recherche"],
       usersDescription: `${stats.displayCount} Nutzer:innen tracken bereits mit Mahlzait`,
       headlineMark: [0, 1],
     },
@@ -446,7 +446,7 @@ const templateConfig: TemplateConfig = {
           rows: [
             "Unlimited AI Meal Logging (Foto/Text)",
             "Unlimited AI-Vorschläge (Kühlschrank etc.)",
-            "Unlimited Rezepte aus YouTube-Videos",
+            "Unlimited Rezept-Import von Web-Rezeptseiten",
             "Spare 50% (nur 2,50 €/Monat)",
           ],
         },
@@ -456,7 +456,7 @@ const templateConfig: TemplateConfig = {
           rows: [
             "Unlimited AI Meal Logging (Foto/Text)",
             "Unlimited AI-Vorschläge (Kühlschrank etc.)",
-            "Unlimited Rezepte aus YouTube-Videos",
+            "Unlimited Rezept-Import von Web-Rezeptseiten",
             "Monatlich kündbar",
           ],
         },
