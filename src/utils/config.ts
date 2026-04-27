@@ -404,7 +404,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie funktioniert die KI-Erkennung technisch?",
           answer:
-            "Mahlzait nutzt Googles Gemini-Modell zur Bilderkennung. Hochgeladene Fotos werden verschlüsselt auf EU-Servern analysiert und nach der Erkennung nicht gespeichert. Die erkannten Lebensmittel werden mit der Open Food Facts Datenbank abgeglichen. Deine Fotos werden niemals für Trainingszwecke verwendet.",
+            "Mahlzait nutzt Googles Gemini-Modell (Gemini 3 Flash und Pro über Vertex AI in der EU-Region) zur Bilderkennung. Bei unklaren oder fehlenden Werten greift die KI per Live-Web-Recherche auf offizielle Hersteller- und Restaurant-Quellen zu und zeigt dir die Quelle direkt am Eintrag — statt blind aus dem Trainings-Datensatz zu schätzen wie andere KI-Tracker.",
         },
       ],
     },
