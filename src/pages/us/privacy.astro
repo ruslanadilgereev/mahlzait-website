@@ -1,0 +1,380 @@
+---
+import Layout from "Layout.astro";
+import defaultTemplateConfig from "utils/config";
+
+const seo = {
+  title: "Privacy Policy (US) — Mahlzait Calorie Tracker App",
+  description:
+    "How Mahlzait handles personal information for US users: CCPA/CPRA rights, the categories we collect, third-party services we use, data retention, and how to contact us.",
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}/us/privacy/`;
+
+const lastUpdated = "2026-05-02";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${pageUrl}#webpage`,
+  url: pageUrl,
+  name: seo.title,
+  description: seo.description,
+  inLanguage: "en-US",
+  dateModified: lastUpdated,
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": `${siteUrl}#website`,
+  },
+  about: {
+    "@type": "Thing",
+    name: "Privacy Policy and CCPA disclosures for US users of the Mahlzait app",
+  },
+  publisher: {
+    "@type": "Organization",
+    "@id": `${siteUrl}#organization`,
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
+    { "@type": "ListItem", position: 2, name: "US", item: siteUrl + "/us/" },
+    { "@type": "ListItem", position: 3, name: "Privacy Policy", item: pageUrl },
+  ],
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <nav class="text-sm breadcrumbs max-w-screen-md mx-auto px-4 pt-4" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/us/">US</a></li>
+      <li class="opacity-70" aria-current="page">Privacy Policy</li>
+    </ul>
+  </nav>
+
+  <main class="max-w-screen-md mx-auto px-4 py-8 md:py-16" lang="en">
+    <header class="mb-10">
+      <span class="badge badge-primary badge-lg mb-4">CCPA / CPRA</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+        Privacy Policy
+      </h1>
+      <p class="text-lg md:text-xl opacity-80">
+        How Mahlzait collects, uses, and protects your personal information — and
+        the rights you have under California law.
+      </p>
+      <p class="text-sm opacity-60 mt-4">
+        Last updated: {new Date(lastUpdated).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })}
+      </p>
+    </header>
+
+    <div class="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+
+      <p>
+        Mahlzait is a calorie- and nutrition-tracking app operated by
+        <strong>Ruslan Adilgereev</strong> as a sole proprietorship under the
+        trade name <em>"Mahlzait"</em>, Berlin, Germany. This Privacy Policy
+        describes how we handle personal information of users in the United
+        States, including the disclosures required by the California Consumer
+        Privacy Act of 2018 as amended by the California Privacy Rights Act
+        (together, the <em>"CCPA"</em>).
+      </p>
+      <p>
+        If you live in the European Union, the United Kingdom, Switzerland, or
+        the DACH region, the German-language
+        <a href="/datenschutz/">Datenschutzerklärung</a> applies to you instead;
+        it covers the same processing under the GDPR.
+      </p>
+
+      <h2>1. Categories of personal information we collect</h2>
+      <p>
+        We collect only what we need to run the app. The categories listed
+        below correspond to the categories defined in Cal. Civ. Code § 1798.140.
+      </p>
+      <ul>
+        <li>
+          <strong>Identifiers</strong> — your email address, the sign-in
+          provider you choose (Apple, Google, or email/password), and a
+          Firebase user ID generated when you create an account.
+        </li>
+        <li>
+          <strong>Customer records</strong> — your account profile (display
+          name, age, gender, height, weight, goal, activity level).
+        </li>
+        <li>
+          <strong>Health and biometric information you choose to log</strong> —
+          meals, weight history, daily macros (calories, protein, carbs, fat,
+          fiber, salt), water intake, and any data you sync from Apple
+          HealthKit or Google Health Connect (steps, workouts, sleep). This is
+          treated as <em>sensitive personal information</em> under CPRA. Sync
+          is opt-in and can be revoked at any time in Privacy Settings or in
+          your phone's HealthKit / Health Connect controls.
+        </li>
+        <li>
+          <strong>Commercial information</strong> — subscription status, plan
+          type, trial status, and purchase history (managed through RevenueCat
+          and the Apple App Store or Google Play Store).
+        </li>
+        <li>
+          <strong>Internet or other electronic activity information</strong> —
+          app interactions, screens viewed, features used, crash reports, and
+          performance metrics.
+        </li>
+        <li>
+          <strong>Geolocation</strong> — only the country derived from your
+          device's locale (used to set the right unit system and food
+          database). We do not collect precise GPS location.
+        </li>
+        <li>
+          <strong>Inferences</strong> — calculated targets (basal metabolic
+          rate, daily calorie target, macro split) derived from the profile you
+          provided.
+        </li>
+        <li>
+          <strong>Attribution data</strong> — when you install the app from an
+          ad, the app store may pass along an attribution token (Apple Search
+          Ads, Google Play Install Referrer) that identifies the campaign or
+          keyword. We use this to measure marketing effectiveness only.
+        </li>
+      </ul>
+
+      <h2>2. Sources of this information</h2>
+      <ul>
+        <li><strong>Directly from you</strong> when you sign up, complete onboarding, log meals, or change settings.</li>
+        <li><strong>From your device</strong> (operating system locale, anonymous device diagnostics, optional HealthKit / Health Connect data).</li>
+        <li><strong>From the app store</strong> (Apple App Store, Google Play) for purchase and attribution data.</li>
+        <li><strong>From our service providers</strong> (Firebase Authentication, RevenueCat) on our behalf.</li>
+      </ul>
+
+      <h2>3. How we use this information</h2>
+      <ul>
+        <li>To provide the calorie-tracking service: storing your meals, calculating targets, syncing across your devices.</li>
+        <li>To process and manage subscriptions and trials.</li>
+        <li>To diagnose crashes and improve app stability and performance.</li>
+        <li>To measure how new users find the app (aggregate, campaign-level only).</li>
+        <li>To prevent fraud and abuse.</li>
+        <li>To respond to your support requests.</li>
+      </ul>
+
+      <h2>4. We do not sell or share your personal information</h2>
+      <p>
+        Mahlzait does <strong>not</strong> sell your personal information for
+        money, and we do <strong>not</strong> share your personal information
+        for cross-context behavioral advertising as those terms are defined
+        under the CCPA. We have not done so in the preceding 12 months and we
+        do not plan to.
+      </p>
+      <p>
+        We do not knowingly sell or share the personal information of consumers
+        under the age of 16.
+      </p>
+
+      <h2>5. Service providers we use</h2>
+      <p>
+        We work with the following service providers (in CCPA terms,
+        <em>"contractors"</em> processing data on our behalf under written
+        contracts that prohibit them from using your data for their own
+        purposes):
+      </p>
+      <ul>
+        <li>
+          <strong>Google / Firebase</strong> (authentication, Firestore
+          database, Crashlytics crash reporting, Cloud Functions, Cloud
+          Storage, Analytics for Firebase). Data is stored in Google Cloud
+          regions in the European Union (<code>europe-west1</code>) under
+          Google's standard contractual clauses.
+          <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.
+        </li>
+        <li>
+          <strong>RevenueCat, Inc.</strong> (subscription management). Stores
+          your subscriber ID, country, region, unit-system preference, and
+          subscription status.
+          <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy</a>.
+        </li>
+        <li>
+          <strong>Apple Inc.</strong> (App Store purchases, Apple Search Ads
+          attribution, Apple Sign-In). Apple's terms govern the data you give
+          to Apple directly.
+        </li>
+        <li>
+          <strong>Google LLC</strong> (Google Play purchases, Play Install
+          Referrer, Google Sign-In, Google Ads). Google's terms govern the
+          data you give to Google directly.
+        </li>
+        <li>
+          <strong>Vercel Inc.</strong> (hosting of the marketing website
+          mahlzait.de).
+        </li>
+        <li>
+          <strong>Sentry / Microsoft Clarity / Meta / Pinterest</strong> — only
+          on the marketing website, only after you accept marketing cookies.
+          The mobile app does not load these.
+        </li>
+      </ul>
+      <p>
+        We may also disclose your information when required by law, in
+        connection with a business transfer, or to protect rights, property,
+        and safety.
+      </p>
+
+      <h2>6. How long we keep your information</h2>
+      <p>
+        We keep your account and the data you log for as long as your account
+        is active. When you delete your account from inside the app
+        (<em>Profile → Delete Account</em>), we delete your profile, meals,
+        weight history, recipes, daily targets, chat sessions, purchase
+        metadata, and all health data we hold within 30 days. Anonymous
+        aggregate analytics that can no longer be linked to you may be
+        retained.
+      </p>
+      <p>
+        Backups and disaster-recovery snapshots may persist for up to 90 days
+        before they are overwritten.
+      </p>
+
+      <h2>7. Your CCPA rights</h2>
+      <p>If you live in California, you have the following rights:</p>
+      <ul>
+        <li>
+          <strong>Right to know</strong> what personal information we have
+          collected about you, the categories of sources, the business purpose
+          for collecting it, and the categories of third parties with whom we
+          share it.
+        </li>
+        <li>
+          <strong>Right to delete</strong> personal information we have
+          collected from you, subject to limited exceptions (e.g., to complete
+          a transaction or comply with a legal obligation).
+        </li>
+        <li>
+          <strong>Right to correct</strong> inaccurate personal information.
+        </li>
+        <li>
+          <strong>Right to opt out of the sale or sharing</strong> of your
+          personal information. As stated above, we do not sell or share, so
+          there is nothing to opt out of — but the right itself is yours.
+        </li>
+        <li>
+          <strong>Right to limit the use of sensitive personal information</strong>.
+          We only use sensitive information (your health data) for the purpose
+          you provided it: tracking your nutrition. We never use it for
+          inferences about you, profiling, or advertising.
+        </li>
+        <li>
+          <strong>Right to non-discrimination</strong>. Exercising your CCPA
+          rights will never cause us to deny you service, charge a different
+          price, or provide a different level of quality.
+        </li>
+      </ul>
+
+      <h2>8. How to exercise your rights</h2>
+      <p>
+        Most rights can be exercised directly inside the app:
+      </p>
+      <ul>
+        <li>
+          <strong>Right to delete</strong> — go to <em>Profile → Delete Account</em>.
+        </li>
+        <li>
+          <strong>Right to know</strong> — request a PDF report of your tracking data via <em>Profile → Export report</em>, or email us for a complete record.
+        </li>
+        <li>
+          <strong>Right to correct</strong> — edit your profile and tracked data anywhere they appear in the app.
+        </li>
+      </ul>
+      <p>
+        For any other request, including verifying your identity for a
+        right-to-know request, contact us at
+        <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>. We will
+        respond within 45 days as required by law and may extend this period
+        once by another 45 days if reasonably necessary, with notice to you.
+      </p>
+      <p>
+        You may use an authorized agent to make a request on your behalf. We
+        will ask the agent to provide written permission signed by you and may
+        ask you to verify your identity directly with us before we act.
+      </p>
+
+      <h2>9. Children's privacy</h2>
+      <p>
+        Mahlzait is not directed to children under the age of 13 and we do not
+        knowingly collect personal information from children under 13. Our
+        onboarding asks for date of birth and blocks accounts where the
+        calculated age is below 13. The app's App Store and Play Store rating
+        is set accordingly.
+      </p>
+      <p>
+        If you believe a child under 13 has provided us with personal
+        information, please contact us at
+        <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a> and we
+        will delete the account.
+      </p>
+
+      <h2>10. Apple HealthKit and Google Health Connect</h2>
+      <p>
+        If you choose to sync health data, the app reads data from Apple
+        HealthKit (iOS) or Google Health Connect (Android). We only read what
+        you authorize in the OS permission prompt. Your HealthKit / Health
+        Connect data is processed locally on your device and is only sent to
+        our servers if you also enable <em>Health Data Sync</em> in Privacy
+        Settings. If you disable that setting, the data stays on your device
+        only.
+      </p>
+      <p>
+        We do not use HealthKit or Health Connect data for advertising or
+        marketing, and we do not share it with any third party other than the
+        Firebase service providers listed above when you have explicitly
+        enabled cloud sync.
+      </p>
+
+      <h2>11. Security</h2>
+      <p>
+        Data is transmitted over HTTPS. Authentication is handled by Firebase
+        Authentication. Servers are hosted on Google Cloud and are protected
+        by Google's physical and operational security controls. Despite these
+        safeguards, no system is perfectly secure, and we cannot guarantee
+        absolute security.
+      </p>
+
+      <h2>12. International transfers</h2>
+      <p>
+        We are based in Germany. Your data is stored on Google Cloud servers
+        in the European Union (<code>europe-west1</code>). When data crosses
+        borders, it does so under Google's standard contractual clauses.
+      </p>
+
+      <h2>13. Changes to this policy</h2>
+      <p>
+        We may update this policy from time to time. The "Last updated" date
+        at the top of the page reflects the latest change. If a change is
+        material, we will let you know inside the app or by email before the
+        change takes effect.
+      </p>
+
+      <h2>14. Contact us</h2>
+      <p>
+        Privacy questions, CCPA requests, or concerns:{" "}
+        <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>.
+      </p>
+      <p>
+        Postal address:<br />
+        Mahlzait — Ruslan Adilgereev<br />
+        Am Tierpark 62<br />
+        10319 Berlin, Germany
+      </p>
+
+      <hr />
+      <p class="text-sm opacity-70">
+        See also our <a href="/us/terms/">Terms of Service</a>, the German
+        <a href="/datenschutz/">Datenschutzerklärung</a>, and our
+        <a href="/impressum/">Impressum</a>.
+      </p>
+    </div>
+  </main>
+</Layout>

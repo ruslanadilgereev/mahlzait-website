@@ -1,0 +1,335 @@
+---
+import Layout from "Layout.astro";
+import defaultTemplateConfig from "utils/config";
+
+const seo = {
+  title: "Terms of Service (US) — Mahlzait Calorie Tracker App",
+  description:
+    "The legal terms that govern your use of Mahlzait in the United States: license, subscriptions, refunds, AI output disclaimer, health disclaimer, and limitation of liability.",
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}/us/terms/`;
+
+const lastUpdated = "2026-05-02";
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${pageUrl}#webpage`,
+  url: pageUrl,
+  name: seo.title,
+  description: seo.description,
+  inLanguage: "en-US",
+  dateModified: lastUpdated,
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": `${siteUrl}#website`,
+  },
+  about: {
+    "@type": "Thing",
+    name: "Terms of Service for US users of the Mahlzait app",
+  },
+  publisher: {
+    "@type": "Organization",
+    "@id": `${siteUrl}#organization`,
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
+    { "@type": "ListItem", position: 2, name: "US", item: siteUrl + "/us/" },
+    { "@type": "ListItem", position: 3, name: "Terms of Service", item: pageUrl },
+  ],
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <nav class="text-sm breadcrumbs max-w-screen-md mx-auto px-4 pt-4" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/us/">US</a></li>
+      <li class="opacity-70" aria-current="page">Terms of Service</li>
+    </ul>
+  </nav>
+
+  <main class="max-w-screen-md mx-auto px-4 py-8 md:py-16" lang="en">
+    <header class="mb-10">
+      <span class="badge badge-primary badge-lg mb-4">United States</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+        Terms of Service
+      </h1>
+      <p class="text-lg md:text-xl opacity-80">
+        These terms govern your use of the Mahlzait app and website. Please
+        read them carefully.
+      </p>
+      <p class="text-sm opacity-60 mt-4">
+        Last updated: {new Date(lastUpdated).toLocaleDateString("en-US", { day: "numeric", month: "long", year: "numeric" })}
+      </p>
+    </header>
+
+    <div class="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+
+      <p>
+        Mahlzait (the <em>"App"</em>) is operated by
+        <strong>Ruslan Adilgereev</strong> as a sole proprietorship under the
+        trade name <em>"Mahlzait"</em>, Berlin, Germany (<em>"Mahlzait", "we",
+        "us"</em>). By creating an account, downloading the App, or using the
+        website at <a href="https://www.mahlzait.de">mahlzait.de</a>, you agree
+        to these Terms of Service (<em>"Terms"</em>).
+      </p>
+      <p>
+        If you do not agree, please do not use the App. If you live in the
+        DACH region or the EU, the German
+        <a href="/nutzungsbedingungen/">Nutzungsbedingungen</a> apply to you
+        instead.
+      </p>
+
+      <h2>1. License</h2>
+      <p>
+        We grant you a personal, limited, non-exclusive, non-transferable, and
+        revocable license to install and use the App on devices you own or
+        control, for your own non-commercial use. You may not reverse-engineer,
+        decompile, redistribute, sublicense, or modify the App except as
+        permitted by applicable law.
+      </p>
+
+      <h2>2. Eligibility and account</h2>
+      <p>
+        You must be at least 13 years old to use the App. The onboarding flow
+        verifies your date of birth. You are responsible for keeping your
+        login credentials confidential and for all activity that happens under
+        your account. Notify us at
+        <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a> if you
+        suspect unauthorized access.
+      </p>
+
+      <h2>3. Subscriptions, free trials, and auto-renewal</h2>
+      <p>
+        The App offers an optional <strong>Mahlzait Premium</strong>
+        subscription billed through the Apple App Store (iOS) or Google Play
+        (Android). The price, billing period, and any free-trial terms are
+        shown in the App before you confirm the purchase.
+      </p>
+      <ul>
+        <li>
+          <strong>Auto-renewal.</strong> Subscriptions automatically renew at
+          the end of each billing period unless you cancel at least 24 hours
+          before renewal. Renewal is charged to your App Store or Play Store
+          account.
+        </li>
+        <li>
+          <strong>Free trial.</strong> If a free trial is offered and you do
+          not cancel before it ends, the subscription will start and you will
+          be charged.
+        </li>
+        <li>
+          <strong>Managing or canceling.</strong> Manage and cancel
+          subscriptions in your{" "}
+          <a href="https://apps.apple.com/account/subscriptions" target="_blank" rel="noopener">Apple ID subscription settings</a>{" "}
+          (iOS) or in
+          <a href="https://play.google.com/store/account/subscriptions" target="_blank" rel="noopener">Google Play subscription settings</a>{" "}
+          (Android). Deleting the App alone does not cancel the subscription.
+        </li>
+      </ul>
+
+      <h2>4. Refunds</h2>
+      <p>
+        Refunds are handled by the platform you purchased through:
+      </p>
+      <ul>
+        <li>
+          <strong>iOS / Mac:</strong> request a refund via{" "}
+          <a href="https://reportaproblem.apple.com" target="_blank" rel="noopener">reportaproblem.apple.com</a>
+          under Apple's standard refund policy.
+        </li>
+        <li>
+          <strong>Android:</strong> request a refund within 48 hours of
+          purchase via Google Play, or contact Google support directly.
+        </li>
+      </ul>
+      <p>
+        Mahlzait cannot directly refund subscriptions purchased through the
+        App Store or Google Play. We can, however, help with billing questions
+        — email <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>.
+      </p>
+
+      <h2>5. Acceptable use</h2>
+      <p>You agree not to:</p>
+      <ul>
+        <li>use the App in violation of applicable law;</li>
+        <li>attempt to gain unauthorized access to the App or its systems;</li>
+        <li>upload content that is unlawful, infringing, defamatory, or harassing;</li>
+        <li>use the App to harm yourself or another person, or to encourage disordered eating;</li>
+        <li>interfere with the App's normal operation, send spam, or scrape content automatically.</li>
+      </ul>
+      <p>We may suspend or terminate accounts that violate these rules.</p>
+
+      <h2>6. Your content</h2>
+      <p>
+        You retain ownership of the meals, photos, recipes, weights, and notes
+        you log in the App (<em>"Your Content"</em>). You grant us a worldwide,
+        non-exclusive, royalty-free license to host, store, and display Your
+        Content solely so we can run the App for you and improve features such
+        as food recognition. We do not sell Your Content and do not use it for
+        advertising.
+      </p>
+
+      <h2>7. AI features and food data — accuracy disclaimer</h2>
+      <p>
+        Mahlzait uses artificial-intelligence models (currently from Google
+        Gemini) to recognize foods from photos and to estimate calories and
+        macros, and we use the USDA FoodData Central database for branded and
+        whole-food lookups. <strong>These outputs are estimates.</strong> They
+        can be wrong, especially for mixed dishes, restaurant meals, or foods
+        not yet in the database. Always verify the data shown in the App if it
+        matters to you, and edit it if necessary.
+      </p>
+      <p>
+        Mahlzait does not warrant that the App, AI outputs, or food database
+        are accurate, complete, or current.
+      </p>
+
+      <h2>8. Health disclaimer — not medical advice</h2>
+      <p>
+        Mahlzait is a calorie- and nutrition-tracking tool. It is{" "}
+        <strong>not</strong> a medical device, and the information it provides
+        does not constitute medical advice, diagnosis, or treatment.
+      </p>
+      <p>
+        Calorie targets, macro splits, weight projections, and any guidance in
+        the App are general estimates based on widely used formulas (Mifflin–St
+        Jeor for resting metabolic rate; standard activity multipliers; FDA
+        21 CFR 101.9 for nutrition-label rounding). They are not personalized
+        medical recommendations and they do not take into account medical
+        conditions, medications, or individual physiology.
+      </p>
+      <p>
+        Consult a qualified physician or registered dietitian before making
+        significant changes to your diet, especially if you are pregnant or
+        nursing, have a chronic condition (diabetes, eating disorder, kidney
+        disease, thyroid disorder, etc.), or are taking medication that affects
+        weight or appetite (e.g., GLP-1 agonists, insulin, beta-blockers).
+      </p>
+      <p>
+        If you are in crisis or struggling with disordered eating, please
+        contact a professional. In the United States you can reach the
+        <strong>National Eating Disorders Association (NEDA)</strong> helpline
+        at <a href="https://www.nationaleatingdisorders.org/help-support/contact-helpline" target="_blank" rel="noopener">nationaleatingdisorders.org</a>.
+      </p>
+
+      <h2>9. Intellectual property</h2>
+      <p>
+        Mahlzait, the Mahlzait logo, the App's design, source code, content,
+        and the trademarks shown in the App are owned by Mahlzait or its
+        licensors. Nothing in these Terms transfers any of these rights to
+        you.
+      </p>
+
+      <h2>10. Third-party services</h2>
+      <p>
+        The App relies on third-party services such as Apple App Store, Google
+        Play, Firebase, RevenueCat, Apple HealthKit, Google Health Connect,
+        and the USDA FoodData Central API. Their respective terms apply to
+        your interactions with them. The
+        <a href="/us/privacy/">Privacy Policy</a> describes which data flows
+        through which provider.
+      </p>
+
+      <h2>11. Disclaimer of warranties</h2>
+      <p>
+        TO THE FULLEST EXTENT PERMITTED BY LAW, THE APP IS PROVIDED
+        <strong>"AS IS" AND "AS AVAILABLE,"</strong> WITHOUT WARRANTIES OF ANY
+        KIND, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY IMPLIED
+        WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, OR
+        NON-INFRINGEMENT. WE DO NOT WARRANT THAT THE APP WILL BE UNINTERRUPTED,
+        ERROR-FREE, OR FREE OF HARMFUL COMPONENTS, OR THAT ANY DATA INSIDE THE
+        APP IS ACCURATE OR COMPLETE.
+      </p>
+
+      <h2>12. Limitation of liability</h2>
+      <p>
+        TO THE FULLEST EXTENT PERMITTED BY LAW, MAHLZAIT, ITS OWNER, AND ITS
+        SERVICE PROVIDERS WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+        SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS,
+        DATA, USE, OR GOODWILL, ARISING OUT OF OR RELATED TO YOUR USE OF THE
+        APP. OUR TOTAL LIABILITY FOR ANY CLAIM ARISING OUT OF OR RELATING TO
+        THESE TERMS OR THE APP IS LIMITED TO THE GREATER OF (A) THE AMOUNT
+        YOU PAID US IN THE 12 MONTHS BEFORE THE CLAIM AROSE, OR (B) USD 50.
+      </p>
+      <p>
+        Some jurisdictions do not allow the exclusion or limitation of certain
+        damages, so some of the above may not apply to you. Nothing in these
+        Terms limits liability that cannot be limited under applicable law
+        (including liability for gross negligence or willful misconduct).
+      </p>
+
+      <h2>13. Indemnification</h2>
+      <p>
+        You agree to defend, indemnify, and hold harmless Mahlzait and its
+        owner from any claims, damages, liabilities, and reasonable expenses
+        (including attorneys' fees) arising out of (a) your violation of these
+        Terms, (b) your misuse of the App, or (c) Your Content.
+      </p>
+
+      <h2>14. Termination</h2>
+      <p>
+        You may stop using the App at any time and delete your account from
+        within the App. We may suspend or terminate your access if you violate
+        these Terms or applicable law. Sections that by their nature should
+        survive termination (e.g., disclaimers, limitations of liability,
+        indemnity, governing law) will survive.
+      </p>
+
+      <h2>15. Governing law and disputes</h2>
+      <p>
+        These Terms are governed by the laws of the Federal Republic of
+        Germany, without regard to its conflict-of-law rules. The U.N.
+        Convention on Contracts for the International Sale of Goods does not
+        apply.
+      </p>
+      <p>
+        For consumers, mandatory consumer-protection rules of your country of
+        residence remain unaffected. Where the law allows, disputes will be
+        resolved exclusively by the competent courts in Berlin, Germany.
+      </p>
+
+      <h2>16. Changes to these Terms</h2>
+      <p>
+        We may update these Terms occasionally. The "Last updated" date at the
+        top reflects the latest version. If a change is material we will let
+        you know in the App or by email before it takes effect; continued use
+        after the effective date means you accept the new Terms.
+      </p>
+
+      <h2>17. Contact</h2>
+      <p>
+        Questions about these Terms or about your account:{" "}
+        <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>.
+      </p>
+      <p>
+        Privacy questions or CCPA requests:{" "}
+        <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>.
+      </p>
+      <p>
+        Postal address:<br />
+        Mahlzait — Ruslan Adilgereev<br />
+        Am Tierpark 62<br />
+        10319 Berlin, Germany
+      </p>
+
+      <hr />
+      <p class="text-sm opacity-70">
+        See also our <a href="/us/privacy/">Privacy Policy</a>, the German
+        <a href="/nutzungsbedingungen/">Nutzungsbedingungen</a>, and our
+        <a href="/impressum/">Impressum</a>.
+      </p>
+    </div>
+  </main>
+</Layout>
