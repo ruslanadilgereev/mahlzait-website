@@ -127,9 +127,19 @@ const breadcrumbSchema = {
           performance metrics.
         </li>
         <li>
+          <strong>Audio, electronic, visual, thermal, olfactory, or similar
+          (sensory) information</strong> — photos you submit so the app can
+          recognise your meal or a product label. Photos are processed by
+          Google Gemini AI vision (operated by Google as our service provider)
+          and are not used for advertising or shared with third parties for
+          their own purposes. We do not collect audio recordings, biometric
+          identifiers, or video.
+        </li>
+        <li>
           <strong>Geolocation</strong> — only the country derived from your
-          device's locale (used to set the right unit system and food
-          database). We do not collect precise GPS location.
+          device's locale or your App Store / Play Store account (used to set
+          the right unit system and food database). We do not collect precise
+          GPS location.
         </li>
         <li>
           <strong>Inferences</strong> — calculated targets (basal metabolic
@@ -146,10 +156,10 @@ const breadcrumbSchema = {
 
       <h2>2. Sources of this information</h2>
       <ul>
-        <li><strong>Directly from you</strong> when you sign up, complete onboarding, log meals, or change settings.</li>
+        <li><strong>Directly from you</strong> when you sign up, complete onboarding, log meals, take photos in the app, or change settings.</li>
         <li><strong>From your device</strong> (operating system locale, anonymous device diagnostics, optional HealthKit / Health Connect data).</li>
-        <li><strong>From the app store</strong> (Apple App Store, Google Play) for purchase and attribution data.</li>
-        <li><strong>From our service providers</strong> (Firebase Authentication, RevenueCat) on our behalf.</li>
+        <li><strong>From the app store</strong> (Apple App Store, Google Play) for purchase, storefront country, and attribution data.</li>
+        <li><strong>From our service providers</strong> (Firebase Authentication, RevenueCat, Google Gemini AI) on our behalf.</li>
       </ul>
 
       <h2>3. How we use this information</h2>
@@ -190,6 +200,14 @@ const breadcrumbSchema = {
           regions in the European Union (<code>europe-west1</code>) under
           Google's standard contractual clauses.
           <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a>.
+        </li>
+        <li>
+          <strong>Google Vertex AI / Gemini</strong> (AI vision for meal
+          recognition and AI text models for the chat assistant). When you
+          submit a photo or chat with the assistant, your input is sent to
+          Google's Gemini models for inference. Google does not use your
+          inputs to train its models when called via the Vertex AI API.
+          <a href="https://cloud.google.com/vertex-ai/docs/general/data-governance" target="_blank" rel="noopener">Vertex AI data governance</a>.
         </li>
         <li>
           <strong>RevenueCat, Inc.</strong> (subscription management). Stores
