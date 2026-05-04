@@ -1,0 +1,54 @@
+{
+  "slug": "zucker",
+  "name": "Zucker",
+  "emoji": "🍬",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Zucker Kalorien: 405 kcal/100g + Rechner | Mahlzait",
+    "description": "Zucker hat 405 kcal pro 100g, ein TL ca. 16 kcal. Berechne Kalorien für Haushaltszucker, Rohrzucker, Kokosblütenzucker & Süßungsalternativen.",
+    "keywords": ["zucker kalorien", "kalorien zucker", "haushaltszucker kalorien", "rohrzucker kalorien", "kokosblütenzucker kalorien", "zucker abnehmen", "zucker pro tag", "zuckeralternativen"]
+  },
+  "overview": {
+    "calories_per_100g": 405,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 100,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 4,
+    "typical_portion_name": "1 TL"
+  },
+  "variants": [
+    { "name": "Haushaltszucker (1 TL 4g)", "portion_g": 4, "calories": 16, "protein": 0, "carbs": 4, "fat": 0 },
+    { "name": "Haushaltszucker (1 EL 12g)", "portion_g": 12, "calories": 49, "protein": 0, "carbs": 12, "fat": 0 },
+    { "name": "Würfelzucker (1 Stück 5g)", "portion_g": 5, "calories": 20, "protein": 0, "carbs": 5, "fat": 0 },
+    { "name": "Brauner Zucker (1 TL)", "portion_g": 4, "calories": 16, "protein": 0, "carbs": 4, "fat": 0, "tip": "Praktisch identisch zu weißem Zucker" },
+    { "name": "Rohrzucker (1 TL)", "portion_g": 4, "calories": 16, "protein": 0, "carbs": 4, "fat": 0 },
+    { "name": "Puderzucker (1 EL)", "portion_g": 8, "calories": 33, "protein": 0, "carbs": 8, "fat": 0 },
+    { "name": "Kokosblütenzucker (1 TL)", "portion_g": 4, "calories": 15, "protein": 0, "carbs": 4, "fat": 0, "tip": "Niedrigerer Glykämischer Index" },
+    { "name": "Honig (1 TL 10g)", "portion_g": 10, "calories": 30, "protein": 0, "carbs": 8, "fat": 0 },
+    { "name": "Ahornsirup (1 EL 20g)", "portion_g": 20, "calories": 52, "protein": 0, "carbs": 13, "fat": 0 },
+    { "name": "Erythrit (1 TL)", "portion_g": 4, "calories": 0, "protein": 0, "carbs": 4, "fat": 0, "tip": "0 verwertbare Kalorien" }
+  ],
+  "comparison": [
+    { "name": "Honig", "calories": 304, "emoji": "🍯" },
+    { "name": "Ahornsirup", "calories": 260, "emoji": "🍁" },
+    { "name": "Agavendicksaft", "calories": 310, "emoji": "🌵" },
+    { "name": "Erythrit", "calories": 0, "emoji": "🧪" }
+  ],
+  "tips": [
+    { "title": "Würfelzucker zählen", "text": "1 Stück Würfelzucker = 20 kcal. 1 Cola (0,5l) entspricht 17 Würfelzucker = 200 kcal. Hilfreich um Süßes greifbar zu machen.", "icon": "🧊" },
+    { "title": "Brauner Zucker ist nicht gesünder", "text": "Brauner Zucker und Rohrzucker haben praktisch identische Kalorien wie Haushaltszucker. Der Mineralstoffgehalt ist marginal – Marketing-Mythos.", "icon": "🚫" },
+    { "title": "Erythrit als 0-kcal-Ersatz", "text": "Erythrit hat 0 verwertbare Kalorien, schmeckt zu 70% wie Zucker und backt fast 1:1. Kein Insulin-Anstieg. Beste Zuckeralternative beim Abnehmen.", "icon": "🧪" },
+    { "title": "WHO: max. 25g freier Zucker pro Tag", "text": "Die WHO empfiehlt max. 25g (6 TL) freien Zucker pro Tag – das ist 1 Cola, 1 Schoko-Müsli oder 1 Stück Kuchen. Versteckte Zucker in Soßen, Joghurts und Brot mitzählen.", "icon": "📋" },
+    { "title": "Honig hat ähnlich viele Kalorien", "text": "Honig (304 kcal/100g) hat trotz „Bio-Image\" nur ca. 25% weniger Kalorien als Zucker (405 kcal). Ahornsirup (260 kcal) und Agave (310 kcal) ähnlich. Süßer als Zucker → kleinere Mengen reichen.", "icon": "🍯" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat ein TL Zucker?", "answer": "1 TL Haushaltszucker (4g) hat ca. 16 kcal. 1 EL (12g) hat 49 kcal. 1 Stück Würfelzucker (5g) hat 20 kcal. Pure Carbs, keine sonstigen Nährstoffe." },
+    { "question": "Welcher Zucker hat die wenigsten Kalorien?", "answer": "Echter Zucker: alle Sorten haben 380-405 kcal/100g. 0-Kalorien-Alternativen: Erythrit (0 kcal), Stevia, Sucralose. Honig und Ahornsirup haben etwas weniger Kalorien (304/260 kcal), sind aber trotzdem süße Bombe." },
+    { "question": "Ist brauner Zucker gesünder als weißer?", "answer": "Nein, ein Marketing-Mythos. Brauner Zucker (Vollrohrzucker) hat 0,3% Mineralstoffe mehr als weißer – ernährungstechnisch irrelevant. Geschmacklich gibt's einen leichten Karamell-Ton." },
+    { "question": "Wie viel Zucker am Tag ist okay?", "answer": "Die WHO empfiehlt max. 25g (6 TL) freien Zucker pro Tag. Im Schnitt konsumiert ein Deutscher 90g/Tag – 3-4x zu viel. Versteckte Zucker in Cola, Müsli, Joghurt und Soßen sind die Hauptquellen." },
+    { "question": "Hilft Zucker-Verzicht beim Abnehmen?", "answer": "Ja, oft sehr deutlich. Wer 50g freien Zucker pro Tag spart (200 kcal), kann ohne weitere Änderungen bis zu 9kg pro Jahr abnehmen. Der Effekt: weniger Heißhunger, stabilerer Blutzucker." },
+    { "question": "Honig statt Zucker – sinnvoll?", "answer": "Geringer Vorteil: Honig hat 304 kcal/100g (vs. 405), ist aber süßer – man verwendet weniger. Plus etwas Antioxidantien. Aber: Honig bleibt freier Zucker und sollte ebenfalls limitiert werden." }
+  ],
+  "related_foods": ["honig", "ahornsirup", "schokolade", "gummibaerchen"]
+}

@@ -45,6 +45,7 @@ const coreEntries: SitemapEntry[] = [
   { url: `${siteUrl}/kalorien/kategorie/getraenk/`, changefreq: "monthly", priority: 0.7 },
   { url: `${siteUrl}/team/`, changefreq: "monthly", priority: 0.5 },
   { url: `${siteUrl}/ueber-uns/`, changefreq: "monthly", priority: 0.5 },
+  { url: `${siteUrl}/redaktionelle-standards/`, changefreq: "yearly", priority: 0.4 },
   { url: `${siteUrl}/vergleich/`, changefreq: "monthly", priority: 0.6 },
 ];
 

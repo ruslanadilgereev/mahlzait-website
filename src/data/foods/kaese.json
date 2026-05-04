@@ -1,0 +1,54 @@
+{
+  "slug": "kaese",
+  "name": "Käse",
+  "emoji": "🧀",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Käse Kalorien: Übersicht aller Sorten + Rechner | Mahlzait",
+    "description": "Käse hat je nach Sorte 60-410 kcal pro 100g. Berechne Kalorien für Gouda, Camembert, Frischkäse, Feta und mehr mit dem kostenlosen Rechner.",
+    "keywords": ["käse kalorien", "kalorien käse", "käse nährwerte", "gouda kalorien", "camembert kalorien", "käse protein", "käse abnehmen", "fettarmer käse"]
+  },
+  "overview": {
+    "calories_per_100g": 330,
+    "protein_per_100g": 25,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 25,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 30,
+    "typical_portion_name": "1 Scheibe"
+  },
+  "variants": [
+    { "name": "Gouda (mittelalt, 1 Scheibe 30g)", "portion_g": 30, "calories": 105, "protein": 7, "carbs": 0, "fat": 8 },
+    { "name": "Emmentaler (1 Scheibe 30g)", "portion_g": 30, "calories": 120, "protein": 8, "carbs": 0, "fat": 9 },
+    { "name": "Mozzarella (1 Kugel 125g)", "portion_g": 125, "calories": 310, "protein": 22, "carbs": 1, "fat": 24 },
+    { "name": "Feta (50g)", "portion_g": 50, "calories": 130, "protein": 8, "carbs": 2, "fat": 11 },
+    { "name": "Camembert (50g)", "portion_g": 50, "calories": 145, "protein": 10, "carbs": 0, "fat": 12 },
+    { "name": "Parmesan gerieben (1 EL 10g)", "portion_g": 10, "calories": 41, "protein": 4, "carbs": 0, "fat": 3, "tip": "Wenig reicht für viel Geschmack" },
+    { "name": "Frischkäse (1 EL 30g)", "portion_g": 30, "calories": 75, "protein": 2, "carbs": 1, "fat": 7 },
+    { "name": "Hüttenkäse (250g Becher)", "portion_g": 250, "calories": 250, "protein": 33, "carbs": 7, "fat": 11, "tip": "Magerster Käse, viel Protein" },
+    { "name": "Harzer Käse (1 Rolle 125g)", "portion_g": 125, "calories": 155, "protein": 38, "carbs": 0, "fat": 1, "tip": "Fast 0% Fett, 30g Protein" },
+    { "name": "Cheddar (1 Scheibe 30g)", "portion_g": 30, "calories": 124, "protein": 8, "carbs": 0, "fat": 10 }
+  ],
+  "comparison": [
+    { "name": "Wurst Salami", "calories": 380, "emoji": "🌭" },
+    { "name": "Quark 20%", "calories": 113, "emoji": "🥛" },
+    { "name": "Joghurt", "calories": 60, "emoji": "🥛" },
+    { "name": "Tofu", "calories": 144, "emoji": "🍢" }
+  ],
+  "tips": [
+    { "title": "Hüttenkäse + Harzer = Protein-Powerhouse", "text": "Hüttenkäse (100 kcal/100g, 13g Protein) und Harzer Käse (124 kcal/100g, 30g Protein) sind die beiden magersten Käse-Sorten – ideal zum Abnehmen.", "icon": "💪" },
+    { "title": "Parmesan: weniger ist mehr", "text": "Parmesan hat zwar 410 kcal/100g, aber 1 EL (10g) reicht für volles Aroma – nur 41 kcal. Geriebener Parmesan würzt besser als jeder Streukäse.", "icon": "🧂" },
+    { "title": "Light-Versionen prüfen", "text": "Light-Käse (z.B. Gouda 30% Fett i.Tr.) hat ca. 230 statt 350 kcal/100g – spart 120 kcal pro 100g bei kaum Geschmacksunterschied.", "icon": "📉" },
+    { "title": "Mozzarella light für Pizza", "text": "Mozzarella light (1,5% Fett) hat 130 statt 250 kcal/100g – perfekt für selbstgemachte Pizza ohne Kalorien-Explosion.", "icon": "🍕" },
+    { "title": "Käse vor dem Essen sättigt", "text": "30g Käse zum Snack vor dem Essen können laut Studien die Hauptmahlzeit kalorienärmer machen – durch frühe Sättigung.", "icon": "⏱️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Käse?", "answer": "Sehr unterschiedlich: Frischkäse hat 250 kcal/100g, Gouda 350, Parmesan 410, Hüttenkäse nur 100 und Harzer Käse 124 kcal/100g. Pro Scheibe (30g) sind es typisch 100-120 kcal." },
+    { "question": "Welcher Käse hat die wenigsten Kalorien?", "answer": "Harzer Käse (124 kcal/100g) und Hüttenkäse (100 kcal/100g) sind mit großem Abstand die magersten. Beide haben fast kein Fett, aber sehr viel Protein." },
+    { "question": "Ist Käse beim Abnehmen erlaubt?", "answer": "Ja – in moderaten Mengen. Magere Sorten (Hüttenkäse, Harzer, Mozzarella light) jederzeit. Bei Hartkäse: 30-50g/Tag als Snack. Käse sättigt durch Protein und Fett gut." },
+    { "question": "Wie viel Protein hat Käse?", "answer": "Hartkäse 25-30g/100g, Frischkäse nur 5-8g/100g, Hüttenkäse 13g und Harzer Käse beeindruckende 30g. Käse ist eine der besten Protein-Quellen." },
+    { "question": "Welcher Käse ist am gesündesten?", "answer": "Magere Sorten mit hohem Protein und wenig Fett: Hüttenkäse, Harzer Käse, Mozzarella light. Auch Feta in Maßen ist gut. Schmelz- und Streichkäse haben oft mehr Zusatzstoffe." },
+    { "question": "Wie viel Käse pro Tag ist okay?", "answer": "30-60g pro Tag sind unproblematisch. Wegen des Salzgehalts (oft 1-3g pro 100g) sollte man bei mehr als 100g/Tag den Natriumkonsum im Blick haben." }
+  ],
+  "related_foods": ["frischkaese", "feta", "mozzarella", "kaesespaetzle", "kaesekuchen"]
+}

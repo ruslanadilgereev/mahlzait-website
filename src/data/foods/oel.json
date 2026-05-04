@@ -1,0 +1,54 @@
+{
+  "slug": "oel",
+  "name": "Öl",
+  "emoji": "🫒",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Öl Kalorien: 884 kcal/100ml + Rechner | Mahlzait",
+    "description": "Öl hat ca. 884 kcal pro 100ml. Berechne Kalorien für Olivenöl, Rapsöl, Sonnenblumenöl, Kokosöl & Co. Inkl. Spar-Tipps beim Kochen.",
+    "keywords": ["öl kalorien", "kalorien öl", "olivenöl kalorien", "rapsöl kalorien", "sonnenblumenöl kalorien", "kokosöl kalorien", "öl nährwerte", "öl kochen kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 884,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 100,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 10,
+    "typical_portion_name": "1 EL"
+  },
+  "variants": [
+    { "name": "Olivenöl extra vergine (1 EL 10g)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10 },
+    { "name": "Rapsöl (1 EL)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10, "tip": "Bestes Omega-3-zu-Omega-6-Verhältnis" },
+    { "name": "Sonnenblumenöl (1 EL)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10 },
+    { "name": "Kokosöl (1 EL)", "portion_g": 10, "calories": 90, "protein": 0, "carbs": 0, "fat": 10, "tip": "Hauptsächlich gesättigte Fette" },
+    { "name": "Sesamöl (1 EL)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10 },
+    { "name": "Leinöl (1 EL)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10, "tip": "Höchster Omega-3-Gehalt" },
+    { "name": "Walnussöl (1 EL)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10 },
+    { "name": "Erdnussöl (1 EL)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10 },
+    { "name": "Kürbiskernöl (1 EL)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10 },
+    { "name": "Frittieröl (1 Pommes-Portion ~15g)", "portion_g": 15, "calories": 132, "protein": 0, "carbs": 0, "fat": 15, "tip": "Versteckte Kalorien beim Frittieren" }
+  ],
+  "comparison": [
+    { "name": "Butter", "calories": 740, "emoji": "🧈" },
+    { "name": "Margarine", "calories": 720, "emoji": "🧈" },
+    { "name": "Mayonnaise", "calories": 680, "emoji": "🥚" },
+    { "name": "Erdnussbutter", "calories": 595, "emoji": "🥜" }
+  ],
+  "tips": [
+    { "title": "Alle Öle haben gleich viele Kalorien", "text": "Olivenöl, Rapsöl, Sonnenblumenöl, Kokosöl: alle ca. 884 kcal/100ml. Der Unterschied liegt in den Fettsäuren (Omega-3, gesättigt, ungesättigt), nicht in den Kalorien.", "icon": "📊" },
+    { "title": "EL = 88 kcal", "text": "Ein Esslöffel Öl hat ca. 88 kcal. Bei einer Pfanne mit 2 EL Bratöl: 176 kcal extra in der Mahlzeit – schnell unterschätzt.", "icon": "⚠️" },
+    { "title": "Sprüh-Öl spart Kalorien", "text": "Mit Öl-Sprühflasche pro Pfanne nur 1-2g (10-20 kcal) statt 1 EL (88 kcal). Beste Trick für Pfannengerichte im Defizit.", "icon": "💨" },
+    { "title": "Rapsöl statt Sonnenblumenöl", "text": "Rapsöl hat das beste Omega-3-zu-Omega-6-Verhältnis aller gängigen Öle. Sonnenblumenöl hat extrem viel Omega-6 – sollte begrenzt werden.", "icon": "🌻" },
+    { "title": "Kokosöl ist nicht gesünder", "text": "Trotz Hype: Kokosöl besteht zu 90% aus gesättigten Fettsäuren. Kein eindeutiger Gesundheitsvorteil gegenüber Olivenöl. Für hohe Hitze trotzdem ok.", "icon": "🥥" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Öl?", "answer": "Alle Speiseöle haben ca. 884 kcal pro 100ml (= 100g, weil Dichte ähnlich Wasser). Ein EL (10g) bringt es auf 88 kcal. Pflanzliches Öl ist rein Fett – das ist die Maximalmenge an Kalorien pro Gewicht." },
+    { "question": "Welches Öl hat die wenigsten Kalorien?", "answer": "Keines: Alle Öle haben praktisch gleich viele Kalorien (884 kcal/100ml). Magerere Fette gibt's nicht – wer Kalorien sparen will, muss die Menge reduzieren, nicht die Sorte wechseln." },
+    { "question": "Welches Öl ist am gesündesten?", "answer": "Olivenöl extra vergine (für kalt/mittlere Hitze) und Rapsöl (universell, beste Omega-3-Bilanz) sind die besten Alltagsöle. Leinöl hat den höchsten Omega-3-Gehalt, aber nur kalt." },
+    { "question": "Wie viel Öl pro Tag ist okay?", "answer": "Die DGE empfiehlt 10-15g Speisefette pro Tag (1-1,5 EL). Bei mediterraner Ernährung gerne 2-3 EL Olivenöl täglich – die Vorteile überwiegen die Kalorien." },
+    { "question": "Olivenöl oder Rapsöl zum Braten?", "answer": "Rapsöl raffiniert ist hitzestabiler (Rauchpunkt 220°C) als Olivenöl extra vergine (190°C). Für hohe Hitze: Rapsöl. Für mittlere Hitze und Salate: Olivenöl extra vergine." },
+    { "question": "Hat Kokosöl weniger Kalorien?", "answer": "Nein, Kokosöl hat 884-892 kcal/100ml – wie alle Öle. Die Behauptung „Kokosöl macht schlank\" ist wissenschaftlich nicht belegt. Es ist ein normales Speiseöl mit hohem Anteil gesättigter Fettsäuren." }
+  ],
+  "related_foods": ["olivenoel", "butter", "erdnussbutter", "ahornsirup"]
+}

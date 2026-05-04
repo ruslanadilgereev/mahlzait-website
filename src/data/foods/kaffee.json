@@ -1,0 +1,53 @@
+{
+  "slug": "kaffee",
+  "name": "Kaffee",
+  "emoji": "☕",
+  "category": "getraenk",
+  "seo": {
+    "title": "Kaffee Kalorien: 2 kcal schwarz + Rechner | Mahlzait",
+    "description": "Kaffee schwarz hat nur 2 kcal pro Tasse. Mit Milch, Zucker oder Sahne wird's mehr. Berechne Kalorien für Cappuccino, Latte, Milchkaffee & Co.",
+    "keywords": ["kaffee kalorien", "kalorien kaffee", "milchkaffee kalorien", "kaffee mit milch kalorien", "kaffee mit zucker kalorien", "kaffee schwarz kalorien", "espresso kalorien", "filterkaffee kalorien"]
+  },
+  "overview": {
+    "calories_per_100g": 1,
+    "protein_per_100g": 0.1,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Tasse (200ml)"
+  },
+  "variants": [
+    { "name": "Kaffee schwarz (200ml)", "portion_g": 200, "calories": 2, "protein": 0, "carbs": 0, "fat": 0, "tip": "Praktisch kalorienfrei" },
+    { "name": "Espresso (30ml)", "portion_g": 30, "calories": 2, "protein": 0, "carbs": 0, "fat": 0 },
+    { "name": "Doppelter Espresso (60ml)", "portion_g": 60, "calories": 4, "protein": 0, "carbs": 0, "fat": 0 },
+    { "name": "Filterkaffee (200ml)", "portion_g": 200, "calories": 2, "protein": 0, "carbs": 0, "fat": 0 },
+    { "name": "Kaffee mit 1 EL Milch", "portion_g": 215, "calories": 12, "protein": 1, "carbs": 1, "fat": 0 },
+    { "name": "Milchkaffee (250ml, halb-halb)", "portion_g": 250, "calories": 75, "protein": 4, "carbs": 6, "fat": 4 },
+    { "name": "Kaffee mit 1 Stk. Zucker", "portion_g": 205, "calories": 22, "protein": 0, "carbs": 5, "fat": 0 },
+    { "name": "Kaffee mit Hafermilch (200ml)", "portion_g": 230, "calories": 28, "protein": 1, "carbs": 4, "fat": 1, "tip": "Vegane Variante" },
+    { "name": "Kaffee mit Sahne (1 EL)", "portion_g": 215, "calories": 47, "protein": 0, "carbs": 0, "fat": 5 }
+  ],
+  "comparison": [
+    { "name": "Cappuccino (200ml)", "calories": 80, "emoji": "☕" },
+    { "name": "Latte Macchiato (300ml)", "calories": 120, "emoji": "☕" },
+    { "name": "Eiskaffee mit Eis", "calories": 285, "emoji": "🧊" },
+    { "name": "Tee schwarz", "calories": 1, "emoji": "🍵" }
+  ],
+  "tips": [
+    { "title": "Schwarz trinken spart Kalorien", "text": "Kaffee schwarz hat nur 2 kcal pro Tasse. 4 Tassen mit Milch + Zucker pro Tag können dagegen schon 200+ kcal extra ausmachen.", "icon": "📉" },
+    { "title": "Milch macht den Unterschied", "text": "Pro Schuss Milch (50ml Vollmilch) kommen 32 kcal dazu. Bei 4 Kaffees pro Tag: 130 kcal allein durch die Milch. Hafermilch hat ähnlich viele Kalorien (40 kcal/100ml).", "icon": "🥛" },
+    { "title": "Koffein erhöht den Stoffwechsel", "text": "Studien zeigen: 100mg Koffein erhöhen den Energieverbrauch um 3-4% für 2-3 Stunden. Schwarzer Kaffee unterstützt also leicht das Abnehmen.", "icon": "🔥" },
+    { "title": "Süßstoff statt Zucker", "text": "1 Stück Würfelzucker = 20 kcal. Bei 4 Tassen am Tag = 80 kcal eingespart, wenn du auf Erythrit, Stevia oder Süßstoff umsteigst.", "icon": "🚫" },
+    { "title": "EFSA-Limit beachten", "text": "Die EFSA empfiehlt max. 400mg Koffein pro Tag (ca. 4 Tassen Filterkaffee). Mehr ist meist unbedenklich, kann aber zu Nervosität und Schlafproblemen führen.", "icon": "⚠️" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat eine Tasse Kaffee?", "answer": "Schwarzer Kaffee hat nur 2 kcal pro Tasse (200ml) – praktisch kalorienfrei. Mit Milch und Zucker können es schnell 80-120 kcal werden." },
+    { "question": "Wie viele Kalorien hat Kaffee mit Milch?", "answer": "Ein Kaffee mit 1 EL Milch hat ca. 12 kcal. Ein Milchkaffee (250ml halb-halb) bereits 75 kcal. Cappuccino kommt auf 80 kcal, Latte Macchiato auf 120 kcal." },
+    { "question": "Macht Kaffee dick?", "answer": "Schwarzer Kaffee macht nicht dick (2 kcal). Aber: 4 Cappuccino am Tag (320 kcal) plus Zucker können sich zu 500+ kcal aufsummieren – das macht über die Zeit dick." },
+    { "question": "Wie viel Koffein hat Kaffee?", "answer": "Filterkaffee hat ca. 80-100mg Koffein pro 200ml-Tasse. Espresso (30ml): 60-80mg. Cold Brew etwas mehr (100-150mg). EFSA-Limit: 400mg/Tag." },
+    { "question": "Hilft Kaffee beim Abnehmen?", "answer": "Indirekt ja: Koffein erhöht kurzfristig den Stoffwechsel um 3-4% und unterdrückt Hunger. Schwarz getrunken ist Kaffee ein guter Begleiter im Defizit. Mit viel Milch/Zucker dreht sich der Effekt um." },
+    { "question": "Espresso oder Filterkaffee – was hat mehr Kalorien?", "answer": "Beide sind praktisch kalorienfrei: Espresso (30ml) hat 2 kcal, Filterkaffee (200ml) ebenfalls 2 kcal. Espresso hat pro ml mehr Koffein, Filterkaffee insgesamt mehr." }
+  ],
+  "related_foods": ["cappuccino", "latte-macchiato", "eiskaffee", "chai-latte"]
+}

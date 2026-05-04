@@ -1,0 +1,126 @@
+---
+import Layout from "Layout.astro";
+import defaultTemplateConfig from "utils/config";
+
+const seo = {
+  title: "Mahlzait for the US — AI Calorie & Nutrition Tracker",
+  description:
+    "Mahlzait is an AI-powered calorie and macro tracker. Snap a photo, scan a barcode, or chat with the AI to log your meals — full USDA food database support for the US.",
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}/us/`;
+
+const webPageSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": `${pageUrl}#webpage`,
+  url: pageUrl,
+  name: seo.title,
+  description: seo.description,
+  inLanguage: "en-US",
+  isPartOf: {
+    "@type": "WebSite",
+    "@id": `${siteUrl}#website`,
+  },
+  publisher: {
+    "@type": "Organization",
+    "@id": `${siteUrl}#organization`,
+  },
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Home", item: siteUrl + "/" },
+    { "@type": "ListItem", position: 2, name: "US", item: pageUrl },
+  ],
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <nav class="text-sm breadcrumbs max-w-screen-md mx-auto px-4 pt-4" aria-label="Breadcrumb">
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li class="opacity-70" aria-current="page">US</li>
+    </ul>
+  </nav>
+
+  <main class="max-w-screen-md mx-auto px-4 py-8 md:py-16" lang="en">
+    <header class="mb-10">
+      <span class="badge badge-primary badge-lg mb-4">United States</span>
+      <h1 class="text-3xl md:text-5xl font-extrabold leading-tight mb-4">
+        Mahlzait for the US
+      </h1>
+      <p class="text-lg md:text-xl opacity-80">
+        AI-powered calorie and nutrition tracking — built for everyday use, with
+        full USDA FoodData Central support and CCPA-compliant privacy.
+      </p>
+    </header>
+
+    <div class="prose prose-lg max-w-none prose-headings:font-bold prose-a:text-primary prose-a:no-underline hover:prose-a:underline">
+      <h2>What Mahlzait does</h2>
+      <p>
+        Snap a photo of your plate, scan a barcode, or chat with the built-in AI to
+        log a meal in seconds. Mahlzait calculates calories, protein, carbs, fat,
+        and fiber for every entry — using a deduplicated USDA FoodData Central
+        index optimized for US whole foods and branded products.
+      </p>
+
+      <h2>For US users</h2>
+      <ul>
+        <li>Imperial units (lb, ft, in, fl oz) and US Nutrition Facts ordering</li>
+        <li>USDA FoodData Central as the primary food source (~465k items)</li>
+        <li>HealthKit and Health Connect integration</li>
+        <li>CCPA / CPRA compliance: data export, deletion, and opt-out controls</li>
+      </ul>
+
+      <h2>Get the app</h2>
+      <p>
+        Mahlzait is available on iOS and Android. App listings, subscription
+        details, and support live at the links below.
+      </p>
+
+      <div class="not-prose grid gap-3 sm:grid-cols-2 mt-6">
+        <a
+          href={defaultTemplateConfig.appStoreLink}
+          class="card card-compact bg-base-200 hover:bg-base-300 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="card-body p-4">
+            <h3 class="font-semibold text-base">App Store →</h3>
+            <p class="text-sm opacity-70">Download for iPhone</p>
+          </div>
+        </a>
+        <a
+          href={defaultTemplateConfig.googlePlayLink}
+          class="card card-compact bg-base-200 hover:bg-base-300 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="card-body p-4">
+            <h3 class="font-semibold text-base">Google Play →</h3>
+            <p class="text-sm opacity-70">Download for Android</p>
+          </div>
+        </a>
+      </div>
+
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="/us/privacy/">Privacy Policy (CCPA / CPRA)</a></li>
+        <li><a href="/us/terms/">Terms of Service</a></li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Questions, feedback, or data requests:{" "}
+        <a href="mailto:contact@mahlzait.de">contact@mahlzait.de</a>
+      </p>
+    </div>
+  </main>
+</Layout>

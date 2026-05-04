@@ -1,0 +1,54 @@
+{
+  "slug": "gemuese",
+  "name": "Gemüse",
+  "emoji": "🥦",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Gemüse Kalorien: Übersicht aller Sorten + Rechner | Mahlzait",
+    "description": "Gemüse hat je nach Sorte 15-90 kcal pro 100g. Berechne Kalorien für Brokkoli, Spinat, Tomaten, Paprika, Karotten, Zucchini & mehr.",
+    "keywords": ["gemüse kalorien", "kalorien gemüse", "grünes gemüse kalorien", "gemüse abnehmen", "kalorienarmes gemüse", "gemüse nährwerte", "gemüse pro tag", "gemüse vitamine"]
+  },
+  "overview": {
+    "calories_per_100g": 30,
+    "protein_per_100g": 2,
+    "carbs_per_100g": 5,
+    "fat_per_100g": 0.3,
+    "fiber_per_100g": 2.5,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    { "name": "Brokkoli (200g gegart)", "portion_g": 200, "calories": 70, "protein": 6, "carbs": 7, "fat": 1, "tip": "Hoher Vitamin-C-Gehalt" },
+    { "name": "Spinat (200g)", "portion_g": 200, "calories": 46, "protein": 6, "carbs": 2, "fat": 1, "tip": "Eisen-Lieferant" },
+    { "name": "Paprika rot (200g)", "portion_g": 200, "calories": 80, "protein": 2, "carbs": 12, "fat": 1 },
+    { "name": "Tomaten (200g)", "portion_g": 200, "calories": 38, "protein": 2, "carbs": 6, "fat": 0 },
+    { "name": "Gurke (200g)", "portion_g": 200, "calories": 24, "protein": 1, "carbs": 3, "fat": 0, "tip": "Sehr wasserreich" },
+    { "name": "Zucchini (200g)", "portion_g": 200, "calories": 38, "protein": 3, "carbs": 5, "fat": 1 },
+    { "name": "Karotten / Möhren (200g)", "portion_g": 200, "calories": 82, "protein": 2, "carbs": 19, "fat": 0 },
+    { "name": "Champignons (200g)", "portion_g": 200, "calories": 44, "protein": 6, "carbs": 4, "fat": 1 },
+    { "name": "Aubergine (200g)", "portion_g": 200, "calories": 50, "protein": 2, "carbs": 12, "fat": 0 },
+    { "name": "Mais (200g aus der Dose)", "portion_g": 200, "calories": 200, "protein": 8, "carbs": 38, "fat": 4, "tip": "Stärkeärmstes Getreide-Gemüse" }
+  ],
+  "comparison": [
+    { "name": "Obst (Apfel)", "calories": 52, "emoji": "🍎" },
+    { "name": "Salat", "calories": 14, "emoji": "🥗" },
+    { "name": "Hülsenfrüchte (Erbsen)", "calories": 81, "emoji": "🫛" },
+    { "name": "Vollkornbrot", "calories": 220, "emoji": "🍞" }
+  ],
+  "tips": [
+    { "title": "5 Portionen pro Tag", "text": "DGE-Empfehlung: 5 Portionen Obst und Gemüse täglich (ca. 650g). Davon 3 Portionen Gemüse, 2 Portionen Obst. Liefert ~150 kcal + alle Mikronährstoffe.", "icon": "🥗" },
+    { "title": "Volumetrics: viel Gemüse füllt", "text": "Gemüse hat 90% Wasser und Ballaststoffe – füllt den Magen ohne viele Kalorien. Wer mit 200g Gemüse anfängt, isst danach automatisch weniger.", "icon": "🍽️" },
+    { "title": "Tiefkühl ist okay", "text": "Tiefkühl-Gemüse hat oft mehr Vitamine als „frisches\", das tagelang transportiert wurde. Plus: schneller, günstiger, kein Schnippelaufwand.", "icon": "❄️" },
+    { "title": "Mit Fett besser aufgenommen", "text": "Fettlösliche Vitamine (A, D, E, K) brauchen Fett zur Aufnahme. Karottensalat mit 1 EL Olivenöl: 60% mehr Beta-Carotin im Blut als pur.", "icon": "🫒" },
+    { "title": "Stärkereiches Gemüse limitieren", "text": "Mais (90 kcal/100g), Kartoffeln (70 kcal), Süßkartoffeln (90 kcal) sind eher Sättigungsbeilage als Gemüse-Kalorien-Trick. Echtes Diät-Gemüse: Gurke, Zucchini, Spinat, Brokkoli.", "icon": "📊" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Gemüse?", "answer": "Sehr unterschiedlich: Gurke und Salat 12-15 kcal/100g, Brokkoli 35, Karotten 41, Mais 90 kcal/100g. Pro Portion (200g) typisch 25-180 kcal." },
+    { "question": "Welches Gemüse hat die wenigsten Kalorien?", "answer": "Gurke (12 kcal/100g), Salat (14 kcal), Spinat (23 kcal), Tomate (19 kcal) und Zucchini (19 kcal) sind die kalorienärmsten. Praktisch unbegrenzt essbar im Defizit." },
+    { "question": "Wie viel Gemüse sollte man täglich essen?", "answer": "Die DGE empfiehlt 3 Portionen Gemüse pro Tag (ca. 400g). Studien zeigen: bei 5 Portionen Obst+Gemüse sinkt das Risiko für Herz-Kreislauf-Erkrankungen um 28%." },
+    { "question": "Hilft Gemüse beim Abnehmen?", "answer": "Sehr stark. Gemüse ist kalorienarm (15-50 kcal/100g) und sättigt durch Volumen und Ballaststoffe. Wer jede Mahlzeit mit Gemüse füllt, isst automatisch 200-400 kcal weniger pro Tag." },
+    { "question": "Roh oder gekocht – was ist besser?", "answer": "Beides hat Vorteile. Roh: mehr Vitamin C, mehr Enzyme. Gekocht: mehr Lycopin (Tomaten), mehr Beta-Carotin (Karotten), bessere Verträglichkeit. Mix beides ab." },
+    { "question": "Hat Gemüse Protein?", "answer": "Wenig, aber doch: Brokkoli und Spinat liefern 3g Protein/100g, Erbsen 5g, Sojabohnen 36g (gekocht 12g). Wer vegan isst, kombiniert Gemüse mit Hülsenfrüchten und Vollkorn für komplettes Protein." }
+  ],
+  "related_foods": ["brokkoli", "spinat", "tomate", "paprika", "gurke"]
+}

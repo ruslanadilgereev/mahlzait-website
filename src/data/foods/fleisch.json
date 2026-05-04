@@ -1,0 +1,54 @@
+{
+  "slug": "fleisch",
+  "name": "Fleisch",
+  "emoji": "🥩",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Fleisch Kalorien: Übersicht aller Sorten + Rechner | Mahlzait",
+    "description": "Fleisch hat je nach Sorte 100-380 kcal pro 100g. Berechne Kalorien für Rind, Schwein, Hähnchen, Pute, Lamm und Hackfleisch mit dem kostenlosen Rechner.",
+    "keywords": ["fleisch kalorien", "kalorien fleisch", "rindfleisch kalorien", "schweinefleisch kalorien", "hähnchen kalorien", "putenfleisch kalorien", "fleisch nährwerte", "fleisch protein"]
+  },
+  "overview": {
+    "calories_per_100g": 200,
+    "protein_per_100g": 22,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Portion"
+  },
+  "variants": [
+    { "name": "Hähnchenbrust roh (150g)", "portion_g": 150, "calories": 248, "protein": 35, "carbs": 0, "fat": 11, "tip": "Magerstes Fleisch" },
+    { "name": "Putenbrust roh (150g)", "portion_g": 150, "calories": 220, "protein": 36, "carbs": 0, "fat": 8, "tip": "Noch magerer als Hähnchen" },
+    { "name": "Rindfleisch mager (Filet, 150g)", "portion_g": 150, "calories": 247, "protein": 33, "carbs": 0, "fat": 12 },
+    { "name": "Rinderhack (150g)", "portion_g": 150, "calories": 360, "protein": 28, "carbs": 0, "fat": 27 },
+    { "name": "Schweinefleisch (Filet, 150g)", "portion_g": 150, "calories": 215, "protein": 33, "carbs": 0, "fat": 9 },
+    { "name": "Schweineschnitzel (paniert, 200g)", "portion_g": 200, "calories": 480, "protein": 40, "carbs": 24, "fat": 22 },
+    { "name": "Lammkotelett (150g)", "portion_g": 150, "calories": 446, "protein": 33, "carbs": 0, "fat": 35 },
+    { "name": "Hackfleisch gemischt (150g)", "portion_g": 150, "calories": 350, "protein": 25, "carbs": 0, "fat": 28 },
+    { "name": "Speck (1 Scheibe 30g)", "portion_g": 30, "calories": 165, "protein": 5, "carbs": 0, "fat": 17 },
+    { "name": "Frikadellen (1 Stück 100g)", "portion_g": 100, "calories": 250, "protein": 18, "carbs": 5, "fat": 18 }
+  ],
+  "comparison": [
+    { "name": "Tofu", "calories": 144, "emoji": "🍢" },
+    { "name": "Lachs", "calories": 208, "emoji": "🐟" },
+    { "name": "Käse Gouda", "calories": 350, "emoji": "🧀" },
+    { "name": "Eier", "calories": 155, "emoji": "🥚" }
+  ],
+  "tips": [
+    { "title": "Pute & Hähnchenbrust = Eiweiß-Champion", "text": "Pute (146 kcal/100g) und Hähnchenbrust (165 kcal) liefern 22-24g Protein bei wenig Fett. Beste Wahl für Muskelaufbau und Fettverlust.", "icon": "💪" },
+    { "title": "Magere Schnittwahl macht den Unterschied", "text": "Rinderfilet: 165 kcal/100g. Rinderhack: 240 kcal. Bratenfleisch fett: 280 kcal. Beim gleichen Tier können Schnittwahl und Zubereitung 100+ kcal/100g ausmachen.", "icon": "✂️" },
+    { "title": "Panaden verdoppeln Kalorien", "text": "Schweineschnitzel paniert hat 240 kcal/100g, unpaniert nur 165. Die Panade saugt zudem viel Bratfett auf – 100 kcal extra pro Schnitzel.", "icon": "🍞" },
+    { "title": "Rotes Fleisch limitieren", "text": "WHO empfiehlt max. 300-600g rotes Fleisch (Rind, Schwein, Lamm) pro Woche. Bei mehr steigt das Risiko für Herz-Kreislauf und Darmkrebs leicht.", "icon": "📋" },
+    { "title": "Zubereitung zählt", "text": "Hähnchen gegrillt: 200 kcal/100g. Hähnchen frittiert (KFC-Style): 320 kcal. Kochen, Grillen, Backen sind kalorienärmer als Frittieren oder in viel Bratfett.", "icon": "🔥" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Fleisch?", "answer": "Sehr unterschiedlich: Putenbrust 146 kcal/100g, Hähnchenbrust 165, Rinderfilet 165, Schweinebauch 380. Eine Portion (150g) bringt es auf 220-570 kcal." },
+    { "question": "Welches Fleisch hat die wenigsten Kalorien?", "answer": "Putenbrust (146 kcal/100g) und Hähnchenbrust (165 kcal) sind die magersten. Beide haben kaum Fett (1-3g) und viel Protein (24g). Rinderfilet und Schweinefilet folgen mit ca. 165-180 kcal." },
+    { "question": "Wie viel Fleisch pro Woche?", "answer": "Die DGE empfiehlt max. 300-600g Fleisch und Wurst pro Woche – also etwa 1-2 Portionen. Bei höherem Konsum steigen Risiken für Herz-Kreislauf und Darmkrebs." },
+    { "question": "Welches Fleisch hat das meiste Protein?", "answer": "Putenbrust und Hähnchenbrust mit 23-25g Protein/100g. Rinderfilet ähnlich (22g). Beim Steak (300g) sind das 70g Protein – mehr als der Tagesbedarf eines Erwachsenen." },
+    { "question": "Ist Hackfleisch gesund?", "answer": "In Maßen ja – aber Hackfleisch hat oft 20-30% Fett (240-350 kcal/100g). Mageres Hackfleisch (5% Fett) bei der Bedientheke verlangen oder selbst durchdrehen lassen." },
+    { "question": "Fleisch oder Fisch zum Abnehmen?", "answer": "Beides funktioniert: Hähnchenbrust (165 kcal) und Lachs (208 kcal) ähnlich. Lachs liefert dazu Omega-3, Hähnchen ist günstiger. Beste Strategie: 2x Fisch + 2-3x Geflügel pro Woche." }
+  ],
+  "related_foods": ["haehnchenbrust", "rindfleisch", "schweinefleisch", "hackfleisch-rind", "frikadellen"]
+}

@@ -29,6 +29,10 @@
       "destination": "/api/gone"
     },
     {
+      "source": "/wp-content/:path*",
+      "destination": "/api/gone"
+    },
+    {
       "source": "/gone/",
       "destination": "/api/gone"
     }
@@ -78,6 +82,76 @@
     {
       "source": "/sitemap.xml",
       "destination": "/sitemap-index.xml",
+      "permanent": true
+    },
+    {
+      "source": "/kalorientabelle",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorientabelle/:slug*",
+      "destination": "/kalorien/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien-tabelle",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien-tabelle/:slug*",
+      "destination": "/kalorien/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/lebensmittel",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/lebensmittel/:slug*",
+      "destination": "/kalorien/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/naehrwerte",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/naehrwerte/:slug*",
+      "destination": "/kalorien/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/nahrungsmittel",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/nahrungsmittel/:slug*",
+      "destination": "/kalorien/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/kcal-tabelle",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/kcal-tabelle/:slug*",
+      "destination": "/kalorien/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/kalorienliste",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorienliste/:slug*",
+      "destination": "/kalorien/:slug*",
       "permanent": true
     }
   ],

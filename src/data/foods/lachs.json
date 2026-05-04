@@ -1,0 +1,52 @@
+{
+  "slug": "lachs",
+  "name": "Lachs",
+  "emoji": "🐟",
+  "category": "supermarkt",
+  "seo": {
+    "title": "Lachs Kalorien: 208 kcal/100g + Rechner & Varianten | Mahlzait",
+    "description": "Lachs hat 208 kcal pro 100g. Berechne Kalorien für Filet, Räucherlachs oder Sushi mit dem kostenlosen Rechner. Inkl. 8 Varianten & Tipps.",
+    "keywords": ["lachs kalorien", "kalorien lachs", "lachs nährwerte", "räucherlachs kalorien", "lachsfilet kalorien", "lachs protein", "wildlachs kalorien", "lachs omega 3"]
+  },
+  "overview": {
+    "calories_per_100g": 208,
+    "protein_per_100g": 20,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 150,
+    "typical_portion_name": "1 Filet"
+  },
+  "variants": [
+    { "name": "Lachsfilet roh (frisch)", "portion_g": 150, "calories": 312, "protein": 30, "carbs": 0, "fat": 21 },
+    { "name": "Lachs gebraten (Pfanne)", "portion_g": 150, "calories": 348, "protein": 33, "carbs": 0, "fat": 24, "tip": "Inkl. 1 TL Bratöl" },
+    { "name": "Lachs aus dem Ofen", "portion_g": 150, "calories": 320, "protein": 31, "carbs": 0, "fat": 22, "tip": "Schonende Zubereitung" },
+    { "name": "Räucherlachs", "portion_g": 100, "calories": 175, "protein": 22, "carbs": 0, "fat": 10, "tip": "Weniger Fett als frisch" },
+    { "name": "Lachs (Tiefkühl)", "portion_g": 150, "calories": 300, "protein": 30, "carbs": 0, "fat": 20 },
+    { "name": "Lachs-Sashimi", "portion_g": 100, "calories": 208, "protein": 20, "carbs": 0, "fat": 14 },
+    { "name": "Stremellachs (heißgeräuchert)", "portion_g": 100, "calories": 230, "protein": 23, "carbs": 0, "fat": 16 },
+    { "name": "Wildlachs", "portion_g": 150, "calories": 220, "protein": 32, "carbs": 0, "fat": 11, "tip": "Magerer als Zuchtlachs" }
+  ],
+  "comparison": [
+    { "name": "Hähnchenbrust", "calories": 165, "emoji": "🍗" },
+    { "name": "Thunfisch (Dose)", "calories": 116, "emoji": "🐟" },
+    { "name": "Forelle", "calories": 119, "emoji": "🐟" },
+    { "name": "Garnelen", "calories": 99, "emoji": "🦐" }
+  ],
+  "tips": [
+    { "title": "Omega-3-Champion", "text": "Lachs liefert 2-3g Omega-3-Fettsäuren pro 150g Filet – mehr als jeder andere gängige Speisefisch. Senkt Triglyceride und unterstützt Herz und Gehirn.", "icon": "❤️" },
+    { "title": "Im Ofen sparen", "text": "Lachs im Ofen braucht kein zusätzliches Bratfett – spart 30-50 kcal gegenüber der Pfanne.", "icon": "🔥" },
+    { "title": "Räucherlachs hat weniger Fett", "text": "Geräucherter Lachs hat 175 statt 208 kcal/100g, weil beim Räuchern Fett austritt. Aber: oft mehr Salz – auf Natriumzufuhr achten.", "icon": "💨" },
+    { "title": "Tiefkühl ist okay", "text": "Schockgefrosteter Lachs hat fast identische Nährwerte wie frischer und ist deutlich günstiger. Perfekt für Meal Prep.", "icon": "❄️" },
+    { "title": "2x pro Woche", "text": "Die DGE empfiehlt 2 Portionen Fisch pro Woche, davon 1 Portion fettreich (Lachs, Hering, Makrele).", "icon": "📅" }
+  ],
+  "faq": [
+    { "question": "Wie viele Kalorien hat Lachs?", "answer": "Frischer Lachs hat 208 kcal pro 100g. Ein Filet (150g) kommt roh auf ca. 312 kcal, gebraten auf ca. 348 kcal, geräucherter Lachs hat 175 kcal pro 100g." },
+    { "question": "Ist Lachs gut zum Abnehmen?", "answer": "Ja, trotz höherem Fettgehalt. Die Omega-3-Fettsäuren und 20g Protein pro 100g sättigen lange. Lachs unterstützt den Stoffwechsel und schützt die Muskelmasse beim Defizit." },
+    { "question": "Wie viel Protein hat Lachs?", "answer": "Lachs enthält 20g Protein pro 100g. Ein 150g-Filet liefert 30g hochwertiges Protein mit allen essentiellen Aminosäuren – etwa so viel wie 100g Hähnchenbrust." },
+    { "question": "Was ist gesünder: Lachs oder Hähnchen?", "answer": "Hähnchenbrust hat weniger Kalorien (165 vs. 208 kcal/100g), aber Lachs liefert wertvolle Omega-3-Fettsäuren. Beste Strategie: beides abwechseln." },
+    { "question": "Wildlachs oder Zuchtlachs?", "answer": "Wildlachs hat weniger Fett (5-7%) als Zuchtlachs (12-15%), dafür mehr Astaxanthin und ein besseres Omega-3-zu-Omega-6-Verhältnis. Beide sind gesund, Wildlachs ist teurer." },
+    { "question": "Hat Räucherlachs weniger Kalorien?", "answer": "Ja: 175 statt 208 kcal pro 100g. Aber er enthält deutlich mehr Salz (3-4g/100g) – wenn du auf Natrium achtest, frischen Lachs bevorzugen." }
+  ],
+  "related_foods": ["lachsfilet", "lachs-gebraten", "lachs-gerauchert", "forelle", "haehnchenbrust"]
+}
