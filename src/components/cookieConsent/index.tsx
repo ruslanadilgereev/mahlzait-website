@@ -7,10 +7,66 @@ interface ConsentPreferences {
   marketing: boolean;
 }
 
+type Locale = "de" | "en";
+
+interface CookieConsentProps {
+  /** Layout passes "en" for /us/* routes, "de" otherwise. */
+  locale?: Locale;
+}
+
 const COOKIE_CONSENT_KEY = "cookie_consent";
 const COOKIE_CONSENT_VERSION = "1.0";
 
-function CookieConsent() {
+// Two-locale dict — kept inline because there are no other translated
+// surfaces on the site yet. If we ever add /us/index, /us/agb etc., this
+// should move into a shared i18n dict instead of growing here.
+const STRINGS = {
+  de: {
+    title: "Cookie-Einstellungen",
+    intro:
+      "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unsere Website zu analysieren. Einige Cookies sind notwendig für den Betrieb der Website, andere helfen uns, die Nutzung zu verstehen. Sie können Ihre Präferenzen jederzeit anpassen.",
+    policyLink: "Cookie-Richtlinie lesen",
+    policyHref: "/cookies-policy",
+    settings: "Einstellungen",
+    rejectAll: "Nur notwendige",
+    acceptAll: "Alle akzeptieren",
+    necessaryTitle: "Notwendige Cookies",
+    necessaryDesc:
+      "Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert werden.",
+    analyticsTitle: "Analytics Cookies",
+    analyticsDesc:
+      "Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren (Google Analytics, Microsoft Clarity, Metricool).",
+    marketingTitle: "Marketing Cookies",
+    marketingDesc:
+      "Diese Cookies werden verwendet, um Werbung zu messen und zu optimieren (Meta Pixel, Google Ads).",
+    rejectAllSettings: "Alle ablehnen",
+    save: "Präferenzen speichern",
+  },
+  en: {
+    title: "Cookie settings",
+    intro:
+      "We use cookies to improve your experience and analyze our website. Some cookies are necessary for the site to work, others help us understand how it's used. You can change your preferences at any time.",
+    policyLink: "Read our privacy & cookie policy",
+    policyHref: "/us/privacy",
+    settings: "Settings",
+    rejectAll: "Necessary only",
+    acceptAll: "Accept all",
+    necessaryTitle: "Necessary cookies",
+    necessaryDesc:
+      "These cookies are required for the site to function and cannot be disabled.",
+    analyticsTitle: "Analytics cookies",
+    analyticsDesc:
+      "These cookies help us understand how visitors interact with the site (Google Analytics, Microsoft Clarity, Metricool).",
+    marketingTitle: "Marketing cookies",
+    marketingDesc:
+      "These cookies are used to measure and optimize advertising (Meta Pixel, Google Ads).",
+    rejectAllSettings: "Reject all",
+    save: "Save preferences",
+  },
+} as const;
+
+function CookieConsent({ locale = "de" }: CookieConsentProps) {
+  const t = STRINGS[locale];
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
   const [preferences, setPreferences] = useState<ConsentPreferences>({
@@ -290,17 +346,13 @@ function CookieConsent() {
               // Main Banner
               <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                 <div className="flex-1">
-                  <h3 className="text-lg font-bold mb-2">Cookie-Einstellungen</h3>
-                  <p className="text-sm text-base-content/80">
-                    Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und unsere Website zu analysieren. 
-                    Einige Cookies sind notwendig für den Betrieb der Website, andere helfen uns, die Nutzung zu verstehen. 
-                    Sie können Ihre Präferenzen jederzeit anpassen.
-                  </p>
+                  <h3 className="text-lg font-bold mb-2">{t.title}</h3>
+                  <p className="text-sm text-base-content/80">{t.intro}</p>
                   <a
-                    href="/cookies-policy"
+                    href={t.policyHref}
                     className="text-sm font-medium underline mt-2 inline-block"
                   >
-                    Cookie-Richtlinie lesen
+                    {t.policyLink}
                   </a>
                 </div>
                 <div className="flex flex-col gap-2 md:flex-row md:items-center">
@@ -308,19 +360,19 @@ function CookieConsent() {
                     onClick={() => setShowSettings(true)}
                     className="btn btn-outline btn-sm"
                   >
-                    Einstellungen
+                    {t.settings}
                   </button>
                   <button
                     onClick={handleRejectAll}
                     className="btn btn-ghost btn-sm"
                   >
-                    Nur notwendige
+                    {t.rejectAll}
                   </button>
                   <button
                     onClick={handleAcceptAll}
                     className="btn btn-primary btn-sm"
                   >
-                    Alle akzeptieren
+                    {t.acceptAll}
                   </button>
                 </div>
               </div>
@@ -328,7 +380,7 @@ function CookieConsent() {
               // Settings Panel
               <div className="space-y-4">
                 <div className="flex items-center justify-between">
-                  <h3 className="text-lg font-bold">Cookie-Einstellungen</h3>
+                  <h3 className="text-lg font-bold">{t.title}</h3>
                   <button
                     onClick={() => setShowSettings(false)}
                     className="btn btn-ghost btn-sm btn-circle"
@@ -341,9 +393,9 @@ function CookieConsent() {
                 <div className="card bg-base-200 p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h4 className="font-semibold">Notwendige Cookies</h4>
+                      <h4 className="font-semibold">{t.necessaryTitle}</h4>
                       <p className="text-sm text-base-content/70">
-                        Diese Cookies sind für die Grundfunktionen der Website erforderlich und können nicht deaktiviert werden.
+                        {t.necessaryDesc}
                       </p>
                     </div>
                     <input
@@ -359,9 +411,9 @@ function CookieConsent() {
                 <div className="card bg-base-200 p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h4 className="font-semibold">Analytics Cookies</h4>
+                      <h4 className="font-semibold">{t.analyticsTitle}</h4>
                       <p className="text-sm text-base-content/70">
-                        Diese Cookies helfen uns zu verstehen, wie Besucher mit der Website interagieren (Google Analytics, Microsoft Clarity, Metricool).
+                        {t.analyticsDesc}
                       </p>
                     </div>
                     <input
@@ -377,9 +429,9 @@ function CookieConsent() {
                 <div className="card bg-base-200 p-4">
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
-                      <h4 className="font-semibold">Marketing Cookies</h4>
+                      <h4 className="font-semibold">{t.marketingTitle}</h4>
                       <p className="text-sm text-base-content/70">
-                        Diese Cookies werden verwendet, um Werbung zu messen und zu optimieren (Meta Pixel, Google Ads).
+                        {t.marketingDesc}
                       </p>
                     </div>
                     <input
@@ -396,13 +448,13 @@ function CookieConsent() {
                     onClick={handleRejectAll}
                     className="btn btn-ghost btn-sm"
                   >
-                    Alle ablehnen
+                    {t.rejectAllSettings}
                   </button>
                   <button
                     onClick={handleSavePreferences}
                     className="btn btn-primary btn-sm"
                   >
-                    Präferenzen speichern
+                    {t.save}
                   </button>
                 </div>
               </div>

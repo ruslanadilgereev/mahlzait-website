@@ -11,10 +11,16 @@ const { backgroundGrid, seo, logo, theme, forceTheme, noindex } =
 const siteUrl = "https://www.mahlzait.de";
 const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
 const logoFullUrl = new URL(logo, siteUrl).href;
+
+// US-Subpaths bekommen Englisch — sowohl im html-lang-Attribut (a11y/SEO)
+// als auch im Cookie-Consent-Banner. Für alle anderen Pfade bleibt's
+// Deutsch (Bestands-Verhalten).
+const isUsPath = Astro.url.pathname.startsWith("/us/");
+const docLocale = isUsPath ? "en" : "de";
 ---
 
 <!doctype html>
-<html lang="de" data-theme={theme}>
+<html lang={docLocale} data-theme={theme}>
   <head>
     <!-- Global Metadata -->
     <meta charset="utf-8" />
@@ -167,6 +173,6 @@ const logoFullUrl = new URL(logo, siteUrl).href;
     <slot />
     <SpeedInsights />
     <Analytics />
-    <CookieConsent client:load />
+    <CookieConsent client:load locale={docLocale} />
   </body>
 </html>

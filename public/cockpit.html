@@ -41,6 +41,13 @@
     .labels div { flex: 1; text-align: center; font-size: 11px; color: #555; }
     pre { font-size: 11px; color: #666; overflow: auto; max-height: 300px; margin-top: 12px; }
     details summary { cursor: pointer; font-weight: 600; }
+    table.attr { width: 100%; border-collapse: collapse; font-size: 13px; }
+    table.attr th, table.attr td { padding: 6px 8px; border-bottom: 1px solid #222; }
+    table.attr th { color: #888; font-weight: 500; text-align: left; }
+    table.attr td.num, table.attr th.num { text-align: right; font-family: monospace; }
+    table.attr td.cvr { color: #34d399; }
+    .footnote { color: #555; font-size: 11px; margin-top: 8px; font-style: italic; }
+    .empty { color: #555; font-size: 13px; }
   </style>
 </head>
 <body>
@@ -84,6 +91,12 @@
         <div id="labels" class="labels"></div>
       </div>
 
+      <div class="card">
+        <h3>🎯 Onboarding-Attribution (30 Tage)</h3>
+        <div id="attr-body"><span class="empty">lade…</span></div>
+        <div class="footnote">Self-reported, ~70% Genauigkeit. Quelle: Onboarding-Frage „Wie hast du von Mahlzait gehört?"</div>
+      </div>
+
       <details class="card"><summary>🔧 Raw</summary><pre id="raw"></pre></details>
     </div>
   </div>
@@ -113,7 +126,48 @@
         document.getElementById('login').classList.add('hidden');
         document.getElementById('dashboard').classList.remove('hidden');
         render(d);
+        loadAttribution();
       } catch (e) { err.textContent = 'Netzwerk: ' + e.message; err.style.display = 'block'; }
+    }
+
+    async function loadAttribution() {
+      const body = document.getElementById('attr-body');
+      try {
+        const r = await fetch('/api/attribution?pw=' + encodeURIComponent(pw));
+        const d = await r.json();
+        if (!r.ok || d.error) {
+          body.innerHTML = '<span class="empty">Fehler: ' + (d.error || r.status) + (d.hint ? ' — ' + d.hint : '') + '</span>';
+          return;
+        }
+        const rows = (d.rows || []);
+        if (!rows.length) {
+          body.innerHTML = '<span class="empty">Keine Daten in den letzten 30 Tagen.</span>';
+          return;
+        }
+        const labels = {
+          tiktok: 'TikTok', instagram: 'Instagram', facebook: 'Facebook', youtube: 'YouTube',
+          appstore_search: 'App Store Suche', friend: 'Freunde / Empfehlung',
+          other: 'Andere (vorgeg.)', other_other: 'Andere (Freitext)', __null__: 'Nicht beantwortet'
+        };
+        const t = ['<table class="attr"><thead><tr>',
+          '<th>Quelle</th>',
+          '<th class="num">Trials 30d</th>',
+          '<th class="num">Paid 30d</th>',
+          '<th class="num">Trial→Paid</th>',
+          '</tr></thead><tbody>'];
+        for (const row of rows) {
+          const cvr = row.cvr_pct === null ? '–' : row.cvr_pct.toFixed(1) + '%';
+          const lbl = labels[row.bucket] || row.bucket;
+          t.push('<tr><td>' + lbl + '</td>'
+            + '<td class="num">' + row.trials_30d + '</td>'
+            + '<td class="num">' + row.paid_30d + '</td>'
+            + '<td class="num cvr">' + cvr + '</td></tr>');
+        }
+        t.push('</tbody></table>');
+        body.innerHTML = t.join('');
+      } catch (e) {
+        body.innerHTML = '<span class="empty">Netzwerk: ' + e.message + '</span>';
+      }
     }
 
     function render(d) {
