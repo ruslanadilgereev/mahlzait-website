@@ -90,12 +90,27 @@
       "permanent": true
     },
     {
+      "source": "/kalorientabelle/",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
       "source": "/kalorientabelle/:slug*",
       "destination": "/kalorien/:slug*",
       "permanent": true
     },
     {
+      "source": "/kalorientabelle/:slug*/",
+      "destination": "/kalorien/:slug*/",
+      "permanent": true
+    },
+    {
       "source": "/kalorien-tabelle",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien-tabelle/",
       "destination": "/kalorien/",
       "permanent": true
     },
@@ -105,7 +120,17 @@
       "permanent": true
     },
     {
+      "source": "/kalorien-tabelle/:slug*/",
+      "destination": "/kalorien/:slug*/",
+      "permanent": true
+    },
+    {
       "source": "/lebensmittel",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/lebensmittel/",
       "destination": "/kalorien/",
       "permanent": true
     },
@@ -115,7 +140,17 @@
       "permanent": true
     },
     {
+      "source": "/lebensmittel/:slug*/",
+      "destination": "/kalorien/:slug*/",
+      "permanent": true
+    },
+    {
       "source": "/naehrwerte",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/naehrwerte/",
       "destination": "/kalorien/",
       "permanent": true
     },
@@ -125,7 +160,17 @@
       "permanent": true
     },
     {
+      "source": "/naehrwerte/:slug*/",
+      "destination": "/kalorien/:slug*/",
+      "permanent": true
+    },
+    {
       "source": "/nahrungsmittel",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/nahrungsmittel/",
       "destination": "/kalorien/",
       "permanent": true
     },
@@ -135,7 +180,17 @@
       "permanent": true
     },
     {
+      "source": "/nahrungsmittel/:slug*/",
+      "destination": "/kalorien/:slug*/",
+      "permanent": true
+    },
+    {
       "source": "/kcal-tabelle",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/kcal-tabelle/",
       "destination": "/kalorien/",
       "permanent": true
     },
@@ -145,13 +200,28 @@
       "permanent": true
     },
     {
+      "source": "/kcal-tabelle/:slug*/",
+      "destination": "/kalorien/:slug*/",
+      "permanent": true
+    },
+    {
       "source": "/kalorienliste",
+      "destination": "/kalorien/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorienliste/",
       "destination": "/kalorien/",
       "permanent": true
     },
     {
       "source": "/kalorienliste/:slug*",
       "destination": "/kalorien/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/kalorienliste/:slug*/",
+      "destination": "/kalorien/:slug*/",
       "permanent": true
     }
   ],
