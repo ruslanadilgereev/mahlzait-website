@@ -42,7 +42,7 @@ Zeige auch:
 ### 1. MRR & Revenue 🎯
 - MRR gesamt (Apple + Google kombiniert), brutto und netto (nach 15% Store-Fee)
 - Wöchentlicher MRR-Trend als Bar-Chart (letzte 4-8 Wochen)
-- Preise: Monthly €4,99, Yearly €29,99 (→ €2,50/Monat)
+- Preise: Monthly €4,99, Yearly €39,99 (→ €3,33/Monat)
 
 ### 2. Subscribers 📱
 - Total Paid (Apple + Google), Total Trial, Total Aktiv

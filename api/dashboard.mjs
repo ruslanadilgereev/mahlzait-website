@@ -98,8 +98,8 @@ async function fetchApple() {
   trend.reverse();
   const latest = trend.length ? trend[trend.length - 1] : null;
   const mrr = latest ? {
-    gross: +(latest.mP * 4.99 + latest.yP * (29.99 / 12)).toFixed(2),
-    net: +((latest.mP * 4.99 + latest.yP * (29.99 / 12)) * 0.85).toFixed(2),
+    gross: +(latest.mP * 4.99 + latest.yP * (39.99 / 12)).toFixed(2),
+    net: +((latest.mP * 4.99 + latest.yP * (39.99 / 12)) * 0.85).toFixed(2),
   } : null;
 
   return { latestDate: latest?.date, current: latest, mrr, trend, debug };

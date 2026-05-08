@@ -20,7 +20,7 @@ const rows: CompRow[] = [
   { feature: "Sprache", mahlzait: "Deutsch", mfp: "Multi (EN-fokussiert)", yazio: "Deutsch", lifesum: "Multi" },
   { feature: "Gratis-Version", mahlzait: "Basis (ohne KI)", mfp: "Eingeschränkt", yazio: "Eingeschränkt", lifesum: "Eingeschränkt" },
   { feature: "Pro-Preis (Monat)", mahlzait: "4,99 €", mfp: "9,99 €", yazio: "6,99 €", lifesum: "7,99 €" },
-  { feature: "Pro-Preis (Jahr)", mahlzait: "29,99 €", mfp: "49,99 €", yazio: "44,99 €", lifesum: "44,99 €" },
+  { feature: "Pro-Preis (Jahr)", mahlzait: "39,99 €", mfp: "49,99 €", yazio: "44,99 €", lifesum: "44,99 €" },
 ];
 
 function ComparisonTable() {
@@ -40,7 +40,7 @@ function ComparisonTable() {
           </p>
           <p className="text-base-content/80 max-w-2xl mx-auto text-sm leading-relaxed">
             Alle vier Apps bieten KI-Foto-Erkennung im Premium-Abo. Mahlzait unterscheidet sich durch KI-Mahlzeit-Vorschläge, YouTube-Rezept-Import und eine werbefreie Gratis-Version.
-            Mit 10 Mio. Lebensmitteln und einem Jahrespreis von 29,99&nbsp;€ ist Mahlzait die günstigste Option — MyFitnessPal kostet 49,99&nbsp;€, YAZIO und Lifesum je 44,99&nbsp;€/Jahr.
+            Mit 10 Mio. Lebensmitteln und einem Jahrespreis von 39,99&nbsp;€ ist Mahlzait die günstigste Option — MyFitnessPal kostet 49,99&nbsp;€, YAZIO und Lifesum je 44,99&nbsp;€/Jahr.
           </p>
         </div>
         <div className="overflow-x-auto">
