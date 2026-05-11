@@ -366,8 +366,9 @@ const breadcrumbSchema = {
       <h2>11. WhatsApp Linking (optional)</h2>
       <p>
         You can optionally link your Mahlzait account to your WhatsApp number
-        so you can log meals by sending text, voice notes, or photos to our
-        WhatsApp bot. Linking is strictly opt-in: a mandatory consent checkbox
+        so you can log meals by sending text, voice notes, photos, or short
+        videos (up to 15 seconds) to our WhatsApp bot. Linking is strictly
+        opt-in: a mandatory consent checkbox
         appears before phone entry, and you can disconnect at any time
         (<em>Profile → "Connect WhatsApp" → "Disconnect"</em>).
       </p>
@@ -375,9 +376,20 @@ const breadcrumbSchema = {
         When linking is active, we process: your WhatsApp phone number in
         E.164 format (e.g. +1...), the WhatsApp user ID (<code>wa_id</code>)
         assigned by Meta when you message the bot, the content of messages
-        you actively send (text, voice, image) for AI-based meal analysis,
-        and the linking timestamp and status. The AI processing itself is
-        described in Section 5 (Google Vertex AI / Gemini).
+        you actively send (text, voice, image, short videos up to 15
+        seconds) for AI-based meal analysis, and the linking timestamp and
+        status. The AI processing itself is described in Section 5 (Google
+        Vertex AI / Gemini).
+      </p>
+      <p>
+        <strong>Media storage:</strong> Images, voice notes, and videos you
+        send to our bot are passed through to the AI provider for analysis
+        only and are not persistently stored in our databases or storage
+        systems. Only the AI analysis result (detected meal with nutrition
+        values) is attached to your account, along with a short copy of the
+        accompanying text (max 500 characters). WhatsApp itself retains
+        uploaded media under the WhatsApp privacy terms for roughly 30 days;
+        we have no control over that retention.
       </p>
       <p>
         <strong>Purpose:</strong> Providing the WhatsApp channel as an

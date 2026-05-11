@@ -666,8 +666,10 @@ Sie können Ihren Mahlzait‑Account optional mit Ihrer WhatsApp‑Nummer verkn�
 **Verarbeitete Daten bei aktivierter Verknüpfung:**
 - Ihre WhatsApp‑Phone‑Nummer im E.164‑Format (z.B. +49…), gespeichert als eindeutige Kennung in unserer Datenbank,
 - Ihre WhatsApp‑User‑ID, sobald Sie Nachrichten an unseren Bot senden,
-- Inhalt der von Ihnen aktiv gesendeten Nachrichten (Text, Sprache, Bild) zur KI‑gestützten Mahlzeit‑Analyse – die KI‑Verarbeitung selbst läuft nach den Regeln aus Abschnitt 4.4,
+- Inhalt der von Ihnen aktiv gesendeten Nachrichten (Text, Sprache, Bild, kurze Videos bis maximal 15 Sekunden) zur KI‑gestützten Mahlzeit‑Analyse – die KI‑Verarbeitung selbst läuft nach den Regeln aus Abschnitt 4.4,
 - Zeitstempel der Verknüpfung und Verbindungs‑Status (aktiv/getrennt).
+
+**Medien‑Speicherung:** Bilder, Sprachnachrichten und Videos, die Sie an unseren Bot senden, werden ausschließlich zur Übergabe an den KI‑Dienstleister (siehe 4.4) zwischengespeichert und nicht persistent in unseren Datenbanken oder Storage‑Systemen abgelegt. Ihrem Account zugeordnet wird ausschließlich das KI‑Analyse‑Ergebnis (erkannte Mahlzeit mit Nährwerten) zusammen mit einer Kurzkopie des begleitenden Texts (max. 500 Zeichen). WhatsApp selbst speichert hochgeladene Medien gemäß der WhatsApp‑Datenschutzrichtlinie typischerweise rund 30 Tage; auf diese Speicherung haben wir keinen Einfluss.
 
 **Zweck:** Bereitstellung des WhatsApp‑Channels für Meal‑Logging als zusätzliche Alternative zur In‑App‑Nutzung.
 
