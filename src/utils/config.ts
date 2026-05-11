@@ -659,6 +659,28 @@ Wenn Sie zustimmen, nutzen wir in der App:
 **Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
 **Widerruf:** jederzeit in den App‑Datenschutz‑Einstellungen.
 
+### 4.8 WhatsApp‑Integration (optional)
+
+Sie können Ihren Mahlzait‑Account optional mit Ihrer WhatsApp‑Nummer verknüpfen, um Mahlzeiten direkt über WhatsApp an unseren Bot zu loggen (Self‑Service über Profil → „WhatsApp verbinden"). Diese Verknüpfung erfordert eine **separate, ausdrückliche Einwilligung** über eine Pflicht‑Checkbox im Verbindungs‑Flow und ist jederzeit widerrufbar (Profil → „WhatsApp verbinden" → „Verbindung trennen").
+
+**Verarbeitete Daten bei aktivierter Verknüpfung:**
+- Ihre WhatsApp‑Phone‑Nummer im E.164‑Format (z.B. +49…), gespeichert als eindeutige Kennung in unserer Datenbank,
+- Ihre WhatsApp‑User‑ID, sobald Sie Nachrichten an unseren Bot senden,
+- Inhalt der von Ihnen aktiv gesendeten Nachrichten (Text, Sprache, Bild) zur KI‑gestützten Mahlzeit‑Analyse – die KI‑Verarbeitung selbst läuft nach den Regeln aus Abschnitt 4.4,
+- Zeitstempel der Verknüpfung und Verbindungs‑Status (aktiv/getrennt).
+
+**Zweck:** Bereitstellung des WhatsApp‑Channels für Meal‑Logging als zusätzliche Alternative zur In‑App‑Nutzung.
+
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung) und – soweit die übermittelten Inhalte Rückschlüsse auf Gesundheit zulassen – Art. 9 Abs. 2 lit. a DSGVO (ausdrückliche Einwilligung).
+
+**Datenempfänger:** Meta Platforms Ireland Ltd. als Betreiber der WhatsApp Business Cloud API. Ein USA‑Drittlandtransfer erfolgt auf Grundlage geeigneter Garantien (Standardvertragsklauseln) und – soweit anwendbar – des EU‑US Data Privacy Framework.
+
+**Speicherdauer:** Bis zum Trennen der Verbindung über die App oder bis zur Konto‑Löschung. Mit dem Trennen werden alle Verknüpfungs‑Daten sofort gelöscht; bereits geloggte Mahlzeiten bleiben Ihrem Account zugeordnet, wie bei allen anderen Logging‑Channels (App, Chat, Barcode etc.).
+
+**Widerruf:** Verbindung jederzeit in der App trennbar; die Konto‑Löschung entfernt zusätzlich alle WhatsApp‑Verknüpfungs‑Daten (Cascade‑Delete).
+
+**Hinweis:** WhatsApp selbst verarbeitet Ihre Nachrichten gemäß der WhatsApp‑Datenschutzrichtlinie, die zwischen Ihnen und Meta gilt. Mahlzait empfängt ausschließlich die Inhalte, die Sie aktiv an unseren Bot senden.
+
 ## 5. Empfänger / Kategorien von Empfängern
 
 Je nach Nutzung können Daten an folgende Kategorien von Empfängern übermittelt werden:
@@ -667,7 +689,8 @@ Je nach Nutzung können Daten an folgende Kategorien von Empfängern übermittel
 - Analytics‑/Marketing‑Dienstleister (z.B. Google Analytics, Microsoft Clarity, Meta, Google Ads) – nur mit Einwilligung,
 - App‑Store‑Betreiber & Zahlungsabwicklung (Apple, Google),
 - Datenbank‑/API‑Dienste (z.B. Open Food Facts) zur Produktrecherche,
-- KI‑Dienstleister (z.B. Google über Firebase AI / Vertex AI / Gemini).
+- KI‑Dienstleister (z.B. Google über Firebase AI / Vertex AI / Gemini),
+- Messaging‑Dienstleister: Meta Platforms Ireland Ltd. (WhatsApp Business Cloud API) – nur bei aktivierter WhatsApp‑Verknüpfung (siehe 4.8).
 
 ## 6. Drittlandübermittlungen
 

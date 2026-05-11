@@ -101,7 +101,10 @@ const breadcrumbSchema = {
         <li>
           <strong>Identifiers</strong> — your email address, the sign-in
           provider you choose (Apple, Google, or email/password), and a
-          Firebase user ID generated when you create an account.
+          Firebase user ID generated when you create an account. If you
+          opt in to the WhatsApp logging channel (see Section 11), we also
+          store your WhatsApp phone number in E.164 format and the WhatsApp
+          user ID assigned by Meta.
         </li>
         <li>
           <strong>Customer records</strong> — your account profile (display
@@ -230,6 +233,15 @@ const breadcrumbSchema = {
           mahlzait.de).
         </li>
         <li>
+          <strong>Meta Platforms Ireland Ltd.</strong> (WhatsApp Business
+          Cloud API). Only used if you opt in to the WhatsApp logging channel
+          (Section 11). When active, your phone number, WhatsApp user ID, and
+          the content of messages you send to our bot are processed by Meta on
+          our behalf. EU-US transfers happen under Standard Contractual
+          Clauses and, where applicable, the EU-US Data Privacy Framework.
+          <a href="https://www.whatsapp.com/legal/business-policy" target="_blank" rel="noopener">WhatsApp Business policy</a>.
+        </li>
+        <li>
           <strong>Sentry / Microsoft Clarity / Meta / Pinterest</strong> — only
           on the marketing website, only after you accept marketing cookies.
           The mobile app does not load these.
@@ -351,7 +363,47 @@ const breadcrumbSchema = {
         enabled cloud sync.
       </p>
 
-      <h2>11. Security</h2>
+      <h2>11. WhatsApp Linking (optional)</h2>
+      <p>
+        You can optionally link your Mahlzait account to your WhatsApp number
+        so you can log meals by sending text, voice notes, or photos to our
+        WhatsApp bot. Linking is strictly opt-in: a mandatory consent checkbox
+        appears before phone entry, and you can disconnect at any time
+        (<em>Profile → "Connect WhatsApp" → "Disconnect"</em>).
+      </p>
+      <p>
+        When linking is active, we process: your WhatsApp phone number in
+        E.164 format (e.g. +1...), the WhatsApp user ID (<code>wa_id</code>)
+        assigned by Meta when you message the bot, the content of messages
+        you actively send (text, voice, image) for AI-based meal analysis,
+        and the linking timestamp and status. The AI processing itself is
+        described in Section 5 (Google Vertex AI / Gemini).
+      </p>
+      <p>
+        <strong>Purpose:</strong> Providing the WhatsApp channel as an
+        alternative meal-logging surface alongside the in-app flow.<br />
+        <strong>Legal basis:</strong> Your consent under the CCPA and, for
+        EU users referenced via the German privacy policy, GDPR Art. 6(1)(a)
+        and Art. 9(2)(a) where the content includes health-related
+        information.<br />
+        <strong>Recipients:</strong> Meta Platforms Ireland Ltd., operating
+        the WhatsApp Business Cloud API. EU-US transfers are governed by
+        Standard Contractual Clauses and, where applicable, the EU-US Data
+        Privacy Framework.<br />
+        <strong>Retention:</strong> Until you disconnect the link in-app or
+        delete your account. Disconnecting removes the linking metadata
+        immediately (<code>whatsapp_links</code> document and the in-account
+        sub-record). Meals you already logged stay attached to your account
+        the same way meals from any other channel do.
+      </p>
+      <p>
+        WhatsApp itself processes your messages under the WhatsApp privacy
+        terms between you and Meta. Mahlzait only receives content you
+        actively send to our bot; we do not read your other WhatsApp chats
+        or contacts.
+      </p>
+
+      <h2>12. Security</h2>
       <p>
         Data is transmitted over HTTPS. Authentication is handled by Firebase
         Authentication. Servers are hosted on Google Cloud and are protected
@@ -360,14 +412,14 @@ const breadcrumbSchema = {
         absolute security.
       </p>
 
-      <h2>12. International transfers</h2>
+      <h2>13. International transfers</h2>
       <p>
         We are based in Germany. Your data is stored on Google Cloud servers
         in the European Union (<code>europe-west1</code>). When data crosses
         borders, it does so under Google's standard contractual clauses.
       </p>
 
-      <h2>13. Changes to this policy</h2>
+      <h2>14. Changes to this policy</h2>
       <p>
         We may update this policy from time to time. The "Last updated" date
         at the top of the page reflects the latest change. If a change is
@@ -375,7 +427,7 @@ const breadcrumbSchema = {
         change takes effect.
       </p>
 
-      <h2>14. Contact us</h2>
+      <h2>15. Contact us</h2>
       <p>
         Privacy questions, CCPA requests, or concerns:{" "}
         <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>.
