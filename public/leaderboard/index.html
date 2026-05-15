@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Referral Leaderboard</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a; color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      min-height: 100vh; display: flex; align-items: flex-start; justify-content: center;
+      padding: 40px 16px;
+    }
+    .wrap { width: 100%; max-width: 1080px; }
+    .center-box { max-width: 360px; margin: 80px auto; text-align: center; }
+    .center-box h1 { font-size: 22px; margin-bottom: 18px; font-weight: 600; }
+    input[type="password"], input[type="date"] {
+      padding: 10px 12px; border-radius: 8px; border: 1px solid #2a2a2a;
+      background: #141414; color: #fff; font-size: 14px;
+      font-family: inherit;
+    }
+    input[type="password"] { width: 100%; margin-bottom: 12px; }
+    button.primary {
+      padding: 10px 16px; border-radius: 8px; border: none;
+      background: #10b981; color: #fff; font-size: 14px; font-weight: 600;
+      cursor: pointer; transition: background 0.15s;
+    }
+    button.primary:hover { background: #059669; }
+    button.primary:disabled { background: #333; cursor: not-allowed; opacity: 0.6; }
+    button.secondary {
+      padding: 8px 14px; border-radius: 8px; border: 1px solid #2a2a2a;
+      background: #141414; color: #ddd; font-size: 13px; cursor: pointer;
+    }
+    button.secondary:hover { background: #1c1c1c; }
+    .error { color: #f87171; font-size: 13px; margin-top: 8px; }
+    .hidden { display: none; }
+
+    header {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      margin-bottom: 24px; gap: 12px;
+    }
+    header h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+
+    .controls {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      margin-bottom: 16px; padding: 14px 16px;
+      background: #111; border: 1px solid #1f1f1f; border-radius: 12px;
+    }
+    .controls label { font-size: 12px; color: #888; }
+    .controls input[type="date"] { padding: 6px 10px; font-size: 13px; }
+    .controls .spacer { flex: 1; }
+    .meta { font-size: 12px; color: #666; }
+
+    .card {
+      background: #111; border: 1px solid #1f1f1f; border-radius: 12px;
+      overflow: hidden;
+    }
+    table {
+      width: 100%; border-collapse: collapse; font-size: 14px;
+    }
+    thead th {
+      text-align: left; font-weight: 500; font-size: 11px;
+      letter-spacing: 0.06em; text-transform: uppercase; color: #777;
+      padding: 12px 14px; border-bottom: 1px solid #1f1f1f;
+      background: #0d0d0d;
+    }
+    tbody td {
+      padding: 14px; border-bottom: 1px solid #1a1a1a;
+      vertical-align: middle;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover { background: #161616; }
+    .num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, "SF Mono", Consolas, monospace; }
+    .code {
+      font-family: ui-monospace, "SF Mono", Consolas, monospace;
+      font-weight: 600; letter-spacing: 0.02em;
+    }
+    .infl { color: #888; font-size: 12px; margin-top: 2px; }
+    .badge {
+      display: inline-block; padding: 2px 8px; border-radius: 999px;
+      font-size: 11px; font-weight: 600;
+    }
+    .b-paid { background: #064e3b; color: #34d399; }
+    .b-trial { background: #1e3a5f; color: #60a5fa; }
+    .b-reg { background: #1a1a1a; color: #888; }
+    .payout { color: #fbbf24; font-weight: 600; }
+    tfoot td {
+      padding: 14px; font-weight: 600; background: #0d0d0d;
+      border-top: 1px solid #2a2a2a;
+    }
+
+    .empty {
+      padding: 60px 20px; text-align: center; color: #555;
+      font-size: 14px;
+    }
+
+    .loading-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 100; backdrop-filter: blur(4px);
+    }
+    .spinner {
+      width: 32px; height: 32px; border: 3px solid #2a2a2a;
+      border-top-color: #10b981; border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    .loading-text { margin-left: 14px; color: #ccc; font-size: 14px; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .footer-note {
+      margin-top: 16px; font-size: 12px; color: #555; text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 20px 12px; }
+      header h1 { font-size: 18px; }
+      tbody td, thead th { padding: 10px 8px; }
+      .controls { padding: 12px; }
+      .infl { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div id="login" class="center-box">
+      <h1>🔒 Leaderboard</h1>
+      <input id="pw" type="password" placeholder="Passwort" autofocus>
+      <div><button class="primary" onclick="login()" style="width:100%">Einloggen</button></div>
+      <p id="login-err" class="error hidden">Falsches Passwort</p>
+    </div>
+
+    <div id="app" class="hidden">
+      <header>
+        <h1>🏆 Referral Leaderboard</h1>
+        <span id="meta" class="meta"></span>
+      </header>
+
+      <div class="controls">
+        <label>Abo-Start von</label>
+        <input id="from" type="date">
+        <label>bis</label>
+        <input id="to" type="date">
+        <button class="secondary" onclick="resetFilter()">Reset</button>
+        <div class="spacer"></div>
+        <button class="primary" id="refresh-btn" onclick="refresh()">↻ Aktualisieren</button>
+      </div>
+
+      <div class="card">
+        <table>
+          <thead>
+            <tr>
+              <th>Code</th>
+              <th class="num">Registrierungen</th>
+              <th class="num">Trial</th>
+              <th class="num">Paid</th>
+              <th class="num">Auszahlung</th>
+            </tr>
+          </thead>
+          <tbody id="rows"></tbody>
+          <tfoot>
+            <tr>
+              <td>Total</td>
+              <td class="num" id="tot-reg">–</td>
+              <td class="num" id="tot-trial">–</td>
+              <td class="num" id="tot-paid">–</td>
+              <td class="num payout" id="tot-payout">–</td>
+            </tr>
+          </tfoot>
+        </table>
+        <div id="empty" class="empty hidden">Keine Code-Holder im gewählten Zeitraum.</div>
+      </div>
+
+      <div class="footer-note">Auszahlung: 10 € pro zahlendem Kunden · Trial/Paid: Lifetime-Cohort, Date-Filter wirkt auf Abo-Start (<code>starts_at</code>)</div>
+    </div>
+  </div>
+
+  <div id="loading" class="loading-overlay hidden">
+    <div class="spinner"></div>
+    <div class="loading-text" id="loading-text">Lade…</div>
+  </div>
+
+  <script>
+    const PAYOUT_PER_PAID_EUR = 10;
+    let PW = sessionStorage.getItem("lbpw") || "";
+    let lastData = null;
+
+    function showLoading(msg) {
+      document.getElementById("loading-text").textContent = msg || "Lade…";
+      document.getElementById("loading").classList.remove("hidden");
+    }
+    function hideLoading() { document.getElementById("loading").classList.add("hidden"); }
+
+    async function login() {
+      const pw = document.getElementById("pw").value.trim();
+      if (!pw) return;
+      PW = pw;
+      showLoading("Prüfe Passwort…");
+      try {
+        const r = await fetch(`/api/leaderboard?pw=${encodeURIComponent(pw)}`);
+        if (r.status === 401) {
+          document.getElementById("login-err").classList.remove("hidden");
+          hideLoading();
+          return;
+        }
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        sessionStorage.setItem("lbpw", pw);
+        document.getElementById("login").classList.add("hidden");
+        document.getElementById("app").classList.remove("hidden");
+        const data = await r.json();
+        if (!data.bootstrapped) {
+          // Empty state — invite first refresh
+          lastData = { codes: [], total_holders: 0, total_customers_seen: 0 };
+          document.getElementById("meta").textContent = "Noch kein Cache. Klick „Aktualisieren".";
+          render();
+        } else {
+          lastData = data;
+          render();
+        }
+      } catch (e) {
+        document.getElementById("login-err").textContent = "Fehler: " + e.message;
+        document.getElementById("login-err").classList.remove("hidden");
+      } finally {
+        hideLoading();
+      }
+    }
+
+    async function refresh() {
+      if (!PW) return;
+      showLoading("Pulle RC-Daten (kann 30-60s dauern)…");
+      document.getElementById("refresh-btn").disabled = true;
+      try {
+        const r = await fetch(`/api/leaderboard?pw=${encodeURIComponent(PW)}&refresh=1`);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        lastData = await r.json();
+        render();
+      } catch (e) {
+        alert("Refresh-Fehler: " + e.message);
+      } finally {
+        hideLoading();
+        document.getElementById("refresh-btn").disabled = false;
+      }
+    }
+
+    function resetFilter() {
+      document.getElementById("from").value = "";
+      document.getElementById("to").value = "";
+      render();
+    }
+
+    function dateToMs(s, end = false) {
+      if (!s) return null;
+      const ms = new Date(s + (end ? "T23:59:59.999Z" : "T00:00:00.000Z")).getTime();
+      return Number.isNaN(ms) ? null : ms;
+    }
+
+    // Heuristic: a sub is "trial" if gross == 0 and ownership purchased and starts == current_period_starts.
+    // A sub is "paid" once gross > 0 (lifetime, even if later cancelled).
+    function isTrialSub(s) {
+      return (s.ownership === "purchased") && ((s.gross || 0) === 0) && s.starts_at === s.current_period_starts_at;
+    }
+    function isPaidSub(s) {
+      return (s.gross || 0) > 0;
+    }
+
+    function classifyHolder(holder, fromMs, toMs) {
+      let everTrial = false, everPaid = false;
+      for (const s of holder.subs || []) {
+        const t = s.starts_at;
+        if (fromMs !== null && t !== null && t < fromMs) continue;
+        if (toMs !== null && t !== null && t > toMs) continue;
+        if (isPaidSub(s)) everPaid = true;
+        else if (isTrialSub(s)) everTrial = true;
+      }
+      // If no subs at all, the holder is just a code-redeemer (= registration only).
+      return { everTrial, everPaid };
+    }
+
+    function render() {
+      const fromMs = dateToMs(document.getElementById("from").value);
+      const toMs = dateToMs(document.getElementById("to").value, true);
+      const meta = document.getElementById("meta");
+      if (lastData?.last_pull_ts_ms) {
+        const d = new Date(lastData.last_pull_ts_ms);
+        const ago = Math.floor((Date.now() - lastData.last_pull_ts_ms) / 60000);
+        meta.textContent = `Stand: ${d.toLocaleString("de-DE")} (vor ${ago} Min) · ${lastData.total_holders} Holder · ${lastData.total_customers_seen} Customers gescannt`;
+      }
+
+      const rows = document.getElementById("rows");
+      const empty = document.getElementById("empty");
+      rows.innerHTML = "";
+
+      const codes = lastData?.codes || [];
+      // For each code: count holders, plus trial/paid in window
+      let totReg = 0, totTrial = 0, totPaid = 0;
+      const rendered = [];
+
+      for (const c of codes) {
+        let reg = c.holders.length;
+        let trial = 0, paid = 0;
+        // If date-filter set, restrict REG to holders that have at least one sub starting in window?
+        // Spec: "WANN das abo angefangen wurde" — Filter wirkt auf Abos.
+        // → REG bleibt total (= code redeemed). TRIAL / PAID filtered.
+        for (const h of c.holders) {
+          const cls = classifyHolder(h, fromMs, toMs);
+          if (cls.everPaid) paid++;
+          else if (cls.everTrial) trial++;
+        }
+        rendered.push({ code: c.code, influencer: c.influencer, reg, trial, paid });
+        totReg += reg; totTrial += trial; totPaid += paid;
+      }
+
+      // Sort by paid desc, then trial desc, then reg desc, then code alpha
+      rendered.sort((a, b) =>
+        (b.paid - a.paid) || (b.trial - a.trial) || (b.reg - a.reg) || a.code.localeCompare(b.code)
+      );
+
+      if (rendered.length === 0) {
+        empty.classList.remove("hidden");
+      } else {
+        empty.classList.add("hidden");
+        for (const r of rendered) {
+          const payout = (r.paid * PAYOUT_PER_PAID_EUR).toFixed(0);
+          const tr = document.createElement("tr");
+          tr.innerHTML = `
+            <td>
+              <div class="code">${escapeHtml(r.code)}</div>
+              ${r.influencer ? `<div class="infl">${escapeHtml(r.influencer)}</div>` : ""}
+            </td>
+            <td class="num"><span class="badge b-reg">${r.reg}</span></td>
+            <td class="num"><span class="badge b-trial">${r.trial}</span></td>
+            <td class="num"><span class="badge b-paid">${r.paid}</span></td>
+            <td class="num payout">${payout} €</td>
+          `;
+          rows.appendChild(tr);
+        }
+      }
+
+      document.getElementById("tot-reg").textContent = totReg;
+      document.getElementById("tot-trial").textContent = totTrial;
+      document.getElementById("tot-paid").textContent = totPaid;
+      document.getElementById("tot-payout").textContent = (totPaid * PAYOUT_PER_PAID_EUR).toFixed(0) + " €";
+    }
+
+    function escapeHtml(s) {
+      return String(s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+    }
+
+    document.getElementById("from").addEventListener("change", render);
+    document.getElementById("to").addEventListener("change", render);
+    document.getElementById("pw").addEventListener("keydown", (e) => {
+      if (e.key === "Enter") login();
+    });
+
+    // Auto-login if pw cached
+    if (PW) {
+      document.getElementById("pw").value = PW;
+      login();
+    }
+  </script>
+</body>
+</html>
