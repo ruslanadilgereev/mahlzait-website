@@ -4,137 +4,338 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Referral Leaderboard</title>
+  <meta name="theme-color" content="#009688">
+  <title>Mahlzait · Referral Leaderboard</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <style>
+    /* ===== Mahlzait Brand Tokens ===== */
+    :root {
+      --primary: #009688;
+      --primary-hover: #00796B;
+      --primary-soft: #E0F2F1;
+      --green: #008635;
+      --green-soft: #E6F4EA;
+      --blue: #0285FF;
+      --blue-soft: #E6F0FF;
+      --orange: #E25507;
+      --orange-soft: #FDECE0;
+      --red: #E02E2A;
+      --bg: #F7F7F5;
+      --surface: #FFFFFF;
+      --surface-alt: #FAFAF8;
+      --border: #E8E8E5;
+      --border-strong: #D4D4D0;
+      --text: #0D0D0D;
+      --text-muted: #6B6B68;
+      --text-faint: #9A9A95;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --radius: 14px;
+      --radius-sm: 10px;
+    }
+
     * { margin: 0; padding: 0; box-sizing: border-box; }
+
     body {
-      background: #0a0a0a; color: #fff;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      min-height: 100vh; display: flex; align-items: flex-start; justify-content: center;
-      padding: 40px 16px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-feature-settings: "ss01", "cv11";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      display: flex; align-items: flex-start; justify-content: center;
+      padding: 32px 16px 48px;
     }
     .wrap { width: 100%; max-width: 1080px; }
-    .center-box { max-width: 360px; margin: 80px auto; text-align: center; }
-    .center-box h1 { font-size: 22px; margin-bottom: 18px; font-weight: 600; }
-    input[type="password"], input[type="date"] {
-      padding: 10px 12px; border-radius: 8px; border: 1px solid #2a2a2a;
-      background: #141414; color: #fff; font-size: 14px;
-      font-family: inherit;
-    }
-    input[type="password"] { width: 100%; margin-bottom: 12px; }
-    button.primary {
-      padding: 10px 16px; border-radius: 8px; border: none;
-      background: #10b981; color: #fff; font-size: 14px; font-weight: 600;
-      cursor: pointer; transition: background 0.15s;
-    }
-    button.primary:hover { background: #059669; }
-    button.primary:disabled { background: #333; cursor: not-allowed; opacity: 0.6; }
-    button.secondary {
-      padding: 8px 14px; border-radius: 8px; border: 1px solid #2a2a2a;
-      background: #141414; color: #ddd; font-size: 13px; cursor: pointer;
-    }
-    button.secondary:hover { background: #1c1c1c; }
-    .error { color: #f87171; font-size: 13px; margin-top: 8px; }
-    .hidden { display: none; }
 
+    /* ===== Login ===== */
+    .login-card {
+      max-width: 380px; margin: 80px auto;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      padding: 32px 28px;
+      text-align: center;
+    }
+    .brand-mark {
+      display: inline-flex; align-items: center; gap: 10px;
+      margin-bottom: 20px;
+    }
+    .brand-mark img { width: 36px; height: 36px; border-radius: 8px; }
+    .brand-mark span { font-weight: 700; font-size: 17px; color: var(--text); letter-spacing: -0.01em; }
+    .login-card h1 {
+      font-size: 20px; font-weight: 600; letter-spacing: -0.01em;
+      margin-bottom: 6px; color: var(--text);
+    }
+    .login-card p { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+
+    input[type="password"], input[type="date"] {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 15px;
+      font-family: inherit;
+      transition: border-color 0.15s, box-shadow 0.15s;
+      outline: none;
+    }
+    input[type="password"]:focus, input[type="date"]:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-soft);
+    }
+    input[type="password"] { margin-bottom: 12px; }
+
+    button.primary {
+      padding: 11px 18px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      font-size: 14px; font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s, transform 0.05s;
+      letter-spacing: 0.005em;
+    }
+    button.primary:hover { background: var(--primary-hover); }
+    button.primary:active { transform: translateY(1px); }
+    button.primary:disabled {
+      background: var(--border-strong);
+      cursor: not-allowed; opacity: 0.7;
+    }
+    button.secondary {
+      padding: 9px 14px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13px; font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s;
+    }
+    button.secondary:hover { background: var(--surface-alt); border-color: var(--border-strong); }
+
+    .error {
+      color: var(--red);
+      font-size: 13px; margin-top: 12px;
+      padding: 8px 12px;
+      background: #FDE7E6;
+      border: 1px solid #F5C3C1;
+      border-radius: 8px;
+    }
+    .hidden { display: none !important; }
+
+    /* ===== Header ===== */
     header {
       display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
-      margin-bottom: 24px; gap: 12px;
+      margin-bottom: 24px; gap: 16px;
     }
-    header h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.01em; }
+    .title-group { display: flex; align-items: center; gap: 12px; min-width: 0; }
+    .title-group img { width: 40px; height: 40px; border-radius: 10px; flex-shrink: 0; }
+    .title-group h1 {
+      font-size: 22px; font-weight: 700;
+      letter-spacing: -0.015em; color: var(--text);
+      line-height: 1.15;
+    }
+    .title-group .subtitle {
+      font-size: 12px; color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .header-right {
+      display: flex; align-items: center; gap: 10px;
+      flex-wrap: wrap; justify-content: flex-end;
+    }
+    .meta {
+      font-size: 12px; color: var(--text-muted);
+      line-height: 1.4; max-width: 320px; text-align: right;
+    }
 
+    /* ===== Controls ===== */
     .controls {
-      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
-      margin-bottom: 16px; padding: 14px 16px;
-      background: #111; border: 1px solid #1f1f1f; border-radius: 12px;
+      display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+      margin-bottom: 16px;
+      padding: 14px 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
     }
-    .controls label { font-size: 12px; color: #888; }
-    .controls input[type="date"] { padding: 6px 10px; font-size: 13px; }
+    .controls label {
+      font-size: 12px; color: var(--text-muted);
+      font-weight: 500;
+    }
+    .controls input[type="date"] {
+      width: auto; padding: 7px 10px;
+      font-size: 13px;
+    }
     .controls .spacer { flex: 1; }
-    .meta { font-size: 12px; color: #666; }
 
+    /* ===== Table Card ===== */
     .card {
-      background: #111; border: 1px solid #1f1f1f; border-radius: 12px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
       overflow: hidden;
     }
     table {
-      width: 100%; border-collapse: collapse; font-size: 14px;
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
     }
     thead th {
-      text-align: left; font-weight: 500; font-size: 11px;
-      letter-spacing: 0.06em; text-transform: uppercase; color: #777;
-      padding: 12px 14px; border-bottom: 1px solid #1f1f1f;
-      background: #0d0d0d;
+      text-align: left; font-weight: 600;
+      font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-muted);
+      padding: 14px 18px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface-alt);
     }
     tbody td {
-      padding: 14px; border-bottom: 1px solid #1a1a1a;
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
       vertical-align: middle;
     }
     tbody tr:last-child td { border-bottom: none; }
-    tbody tr:hover { background: #161616; }
-    .num { text-align: right; font-variant-numeric: tabular-nums; font-family: ui-monospace, "SF Mono", Consolas, monospace; }
+    tbody tr { transition: background 0.1s; }
+    tbody tr:hover { background: var(--surface-alt); }
+    .num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+    }
     .code {
-      font-family: ui-monospace, "SF Mono", Consolas, monospace;
-      font-weight: 600; letter-spacing: 0.02em;
+      font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+      font-weight: 700; letter-spacing: 0.02em;
+      font-size: 15px; color: var(--text);
     }
-    .infl { color: #888; font-size: 12px; margin-top: 2px; }
+    .infl {
+      color: var(--text-muted);
+      font-size: 12px; margin-top: 3px;
+      font-weight: 400;
+    }
     .badge {
-      display: inline-block; padding: 2px 8px; border-radius: 999px;
-      font-size: 11px; font-weight: 600;
+      display: inline-block;
+      min-width: 32px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 12px; font-weight: 600;
+      font-variant-numeric: tabular-nums;
+      text-align: center;
     }
-    .b-paid { background: #064e3b; color: #34d399; }
-    .b-trial { background: #1e3a5f; color: #60a5fa; }
-    .b-reg { background: #1a1a1a; color: #888; }
-    .payout { color: #fbbf24; font-weight: 600; }
-    tfoot td {
-      padding: 14px; font-weight: 600; background: #0d0d0d;
-      border-top: 1px solid #2a2a2a;
-    }
-
-    .empty {
-      padding: 60px 20px; text-align: center; color: #555;
+    .b-paid { background: var(--green-soft); color: var(--green); }
+    .b-trial { background: var(--blue-soft); color: var(--blue); }
+    .b-reg { background: #F0F0EC; color: var(--text-muted); }
+    .payout {
+      color: var(--primary);
+      font-weight: 700;
       font-size: 14px;
     }
+    tfoot td {
+      padding: 16px 18px;
+      font-weight: 700;
+      background: var(--surface-alt);
+      border-top: 2px solid var(--border);
+      color: var(--text);
+    }
+    tfoot .payout { color: var(--primary); }
 
-    .footer-note {
-      margin-top: 16px; font-size: 12px; color: #555; text-align: center;
+    /* ===== Empty State ===== */
+    .empty {
+      padding: 72px 24px; text-align: center;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .empty .icon {
+      font-size: 36px;
+      margin-bottom: 12px;
+      opacity: 0.5;
+    }
+    .empty .empty-title {
+      font-size: 15px; font-weight: 600;
+      color: var(--text); margin-bottom: 4px;
     }
 
-    @media (max-width: 640px) {
-      body { padding: 20px 12px; }
-      header h1 { font-size: 18px; }
-      tbody td, thead th { padding: 10px 8px; }
-      .controls { padding: 12px; }
+    /* ===== Footer ===== */
+    .footer-note {
+      margin-top: 20px;
+      font-size: 12px; color: var(--text-faint);
+      text-align: center;
+      line-height: 1.6;
+    }
+    .footer-note code {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      padding: 1px 6px; border-radius: 4px;
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 720px) {
+      body { padding: 16px 12px 32px; }
+      header { margin-bottom: 16px; }
+      .title-group h1 { font-size: 18px; }
+      .title-group img { width: 32px; height: 32px; }
+      .meta { font-size: 11px; max-width: none; text-align: left; }
+      .header-right { gap: 8px; }
+
+      .controls { padding: 12px; gap: 8px; }
+      .controls label { display: none; }
+      .controls input[type="date"] { font-size: 12px; }
+
+      tbody td, thead th { padding: 12px 10px; }
+      .code { font-size: 14px; }
       .infl { display: none; }
+      .badge { min-width: 28px; padding: 3px 8px; font-size: 11px; }
+      .payout { font-size: 13px; }
+    }
+
+    @media (max-width: 480px) {
+      thead th:nth-child(2), tbody td:nth-child(2), tfoot td:nth-child(2) { display: none; }
     }
   </style>
 </head>
 <body>
   <div class="wrap">
-    <form id="login" class="center-box" onsubmit="event.preventDefault(); login();">
-      <h1>🔒 Leaderboard</h1>
+    <form id="login" class="login-card" onsubmit="event.preventDefault(); login();">
+      <div class="brand-mark">
+        <img src="/favicon.svg" alt="Mahlzait" onerror="this.src='/logo.png'">
+        <span>Mahlzait</span>
+      </div>
+      <h1>Referral Leaderboard</h1>
+      <p>Interner Bereich</p>
       <input id="pw" name="password" type="password" placeholder="Passwort" autocomplete="current-password" autofocus>
-      <div><button type="submit" class="primary" style="width:100%">Einloggen</button></div>
+      <button type="submit" class="primary" style="width:100%">Einloggen</button>
       <p id="login-err" class="error hidden">Falsches Passwort</p>
     </form>
 
     <div id="app" class="hidden">
       <header>
-        <h1>🏆 Referral Leaderboard</h1>
-        <div style="display:flex;align-items:center;gap:12px">
-          <span id="meta" class="meta"></span>
+        <div class="title-group">
+          <img src="/favicon.svg" alt="Mahlzait" onerror="this.src='/logo.png'">
+          <div>
+            <h1>Referral Leaderboard</h1>
+            <div class="subtitle" id="meta">Stand wird geladen…</div>
+          </div>
+        </div>
+        <div class="header-right">
           <button class="secondary" onclick="logout()" title="Passwort aus sessionStorage entfernen">Logout</button>
+          <button class="primary" id="refresh-btn" onclick="refresh()">↻ Aktualisieren</button>
         </div>
       </header>
 
       <div class="controls">
-        <label>Abo-Start von</label>
+        <label for="from">Abo-Start</label>
         <input id="from" type="date">
-        <label>bis</label>
+        <span style="color:var(--text-faint);font-size:12px">bis</span>
         <input id="to" type="date">
-        <button class="secondary" onclick="resetFilter()">Reset</button>
+        <button class="secondary" onclick="resetFilter()">Zurücksetzen</button>
         <div class="spacer"></div>
-        <button class="primary" id="refresh-btn" onclick="refresh()">↻ Aktualisieren</button>
       </div>
 
       <div class="card">
@@ -151,7 +352,7 @@
           <tbody id="rows"></tbody>
           <tfoot>
             <tr>
-              <td>Total</td>
+              <td>Gesamt</td>
               <td class="num" id="tot-reg">–</td>
               <td class="num" id="tot-trial">–</td>
               <td class="num" id="tot-paid">–</td>
@@ -159,10 +360,16 @@
             </tr>
           </tfoot>
         </table>
-        <div id="empty" class="empty hidden">Keine Code-Holder im gewählten Zeitraum.</div>
+        <div id="empty" class="empty hidden">
+          <div class="icon">📭</div>
+          <div class="empty-title">Keine Daten</div>
+          <div>Im gewählten Zeitraum gibt es keine Abos.</div>
+        </div>
       </div>
 
-      <div class="footer-note">Auszahlung: 10 € pro zahlendem Kunden · Trial/Paid: Lifetime-Cohort, Date-Filter wirkt auf Abo-Start (<code>starts_at</code>)</div>
+      <div class="footer-note">
+        Auszahlung 10&nbsp;€ pro zahlendem Kunden · Trial / Paid = Lifetime-Cohort · Date-Filter wirkt auf Abo-Start (<code>starts_at</code>)
+      </div>
     </div>
   </div>
 
@@ -192,7 +399,7 @@
         document.getElementById("app").classList.remove("hidden");
         const data = await r.json();
         lastData = data.bootstrapped ? data : { codes: [], total_holders: 0, total_customers_seen: 0 };
-        if (!data.bootstrapped) document.getElementById("meta").textContent = 'Noch kein Cache. Klick Aktualisieren.';
+        if (!data.bootstrapped) document.getElementById("meta").textContent = 'Noch kein Cache · Klick Aktualisieren';
         render();
       } catch (e) {
         errEl.textContent = "Fehler: " + e.message;
@@ -236,14 +443,10 @@
       return Number.isNaN(ms) ? null : ms;
     }
 
-    // Heuristic: a sub is "trial" if gross == 0 and ownership purchased and starts == current_period_starts.
-    // A sub is "paid" once gross > 0 (lifetime, even if later cancelled).
     function isTrialSub(s) {
       return (s.ownership === "purchased") && ((s.gross || 0) === 0) && s.starts_at === s.current_period_starts_at;
     }
-    function isPaidSub(s) {
-      return (s.gross || 0) > 0;
-    }
+    function isPaidSub(s) { return (s.gross || 0) > 0; }
 
     function classifyHolder(holder, fromMs, toMs) {
       let everTrial = false, everPaid = false;
@@ -254,7 +457,6 @@
         if (isPaidSub(s)) everPaid = true;
         else if (isTrialSub(s)) everTrial = true;
       }
-      // If no subs at all, the holder is just a code-redeemer (= registration only).
       return { everTrial, everPaid };
     }
 
@@ -265,7 +467,8 @@
       if (lastData?.last_pull_ts_ms) {
         const d = new Date(lastData.last_pull_ts_ms);
         const ago = Math.floor((Date.now() - lastData.last_pull_ts_ms) / 60000);
-        meta.textContent = `Stand: ${d.toLocaleString("de-DE")} (vor ${ago} Min) · ${lastData.total_holders} Holder · ${lastData.total_customers_seen} Customers gescannt`;
+        const agoStr = ago < 1 ? "gerade eben" : ago < 60 ? `vor ${ago} Min` : `vor ${Math.floor(ago/60)} h`;
+        meta.textContent = `Stand: ${d.toLocaleString("de-DE")} · ${agoStr} · ${lastData.total_holders} Holder · ${lastData.total_customers_seen} Customers`;
       }
 
       const rows = document.getElementById("rows");
@@ -273,16 +476,12 @@
       rows.innerHTML = "";
 
       const codes = lastData?.codes || [];
-      // For each code: count holders, plus trial/paid in window
       let totReg = 0, totTrial = 0, totPaid = 0;
       const rendered = [];
 
       for (const c of codes) {
         let reg = c.holders.length;
         let trial = 0, paid = 0;
-        // If date-filter set, restrict REG to holders that have at least one sub starting in window?
-        // Spec: "WANN das abo angefangen wurde" — Filter wirkt auf Abos.
-        // → REG bleibt total (= code redeemed). TRIAL / PAID filtered.
         for (const h of c.holders) {
           const cls = classifyHolder(h, fromMs, toMs);
           if (cls.everPaid) paid++;
@@ -292,7 +491,6 @@
         totReg += reg; totTrial += trial; totPaid += paid;
       }
 
-      // Sort by paid desc, then trial desc, then reg desc, then code alpha
       rendered.sort((a, b) =>
         (b.paid - a.paid) || (b.trial - a.trial) || (b.reg - a.reg) || a.code.localeCompare(b.code)
       );
@@ -312,7 +510,7 @@
             <td class="num"><span class="badge b-reg">${r.reg}</span></td>
             <td class="num"><span class="badge b-trial">${r.trial}</span></td>
             <td class="num"><span class="badge b-paid">${r.paid}</span></td>
-            <td class="num payout">${payout} €</td>
+            <td class="num payout">${payout}&nbsp;€</td>
           `;
           rows.appendChild(tr);
         }
@@ -321,7 +519,7 @@
       document.getElementById("tot-reg").textContent = totReg;
       document.getElementById("tot-trial").textContent = totTrial;
       document.getElementById("tot-paid").textContent = totPaid;
-      document.getElementById("tot-payout").textContent = (totPaid * PAYOUT_PER_PAID_EUR).toFixed(0) + " €";
+      document.getElementById("tot-payout").innerHTML = (totPaid * PAYOUT_PER_PAID_EUR).toFixed(0) + "&nbsp;€";
     }
 
     function escapeHtml(s) {
@@ -330,10 +528,7 @@
 
     document.getElementById("from").addEventListener("change", render);
     document.getElementById("to").addEventListener("change", render);
-    // Enter-Submit wird durch <form onsubmit=...> getriggert, kein extra keydown nötig.
 
-    // Auto-login if pw cached: Login-Form bleibt sichtbar bis API antwortet,
-    // dann switchen wir direkt auf die App. Kein Overlay, nichts kann haengen.
     if (PW) {
       document.getElementById("pw").value = PW;
       login();
