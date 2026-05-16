@@ -251,17 +251,17 @@ async function fetchAsaDailySpend(startYmd, endYmd) {
     if (!cid) continue;
     const daily = [];
     for (const g of row.granularity || []) {
-      const m = g; // each granularity entry holds metrics directly
-      const spend = Number(m.localSpend?.amount || 0);
-      const taps = Number(m.taps || 0);
-      const installs = Number(m.installs || m.newDownloads || 0);
+      // Apple nests metrics under `other.default` (segmented) or `total`
+      // (unsegmented); some shapes also flat on `g`. Read defensively.
+      const m = g.other?.default || g.total || g;
+      const date = (g.date || m.date || "").slice(0, 10);
+      const spend = Number(m.localSpend?.amount ?? g.localSpend?.amount ?? 0);
+      const taps = Number(m.taps ?? g.taps ?? 0);
+      const installs = Number(
+        m.installs ?? m.newDownloads ?? g.installs ?? g.newDownloads ?? 0
+      );
       if (spend === 0 && taps === 0 && installs === 0) continue;
-      daily.push({
-        date: (m.date || "").slice(0, 10),
-        spend,
-        taps,
-        installs,
-      });
+      daily.push({ date, spend, taps, installs });
     }
     out[cid] = daily;
   }

@@ -800,8 +800,8 @@
         totRcNew += rcNew;
       }
 
-      // Campaigns ohne Spend im gewaehlten Range ausblenden (Orphan-Row bleibt — die ist immer spend=0)
-      const visible = rendered.filter(r => r.orphan || r.spend > 0);
+      // Campaigns ohne Spend im gewaehlten Range ausblenden, auch (no_campaign)-Orphan-Row.
+      const visible = rendered.filter(r => r.spend > 0);
       visible.sort((a, b) => b.profit - a.profit);
 
       const eur = (n) => n.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
