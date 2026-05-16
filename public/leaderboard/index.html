@@ -429,9 +429,9 @@
           <span style="color:var(--text-faint);font-size:12px">bis</span>
           <input id="aa-to" type="date">
           <button class="secondary" onclick="aaPreset(7)">7T</button>
+          <button class="secondary" onclick="aaPreset(14)">14T</button>
           <button class="secondary" onclick="aaPreset(30)">30T</button>
-          <button class="secondary" onclick="aaPreset(90)">90T</button>
-          <button class="secondary" onclick="aaPreset(null)">All</button>
+          <button class="secondary" onclick="aaPreset(90)">90T (max)</button>
           <div class="spacer"></div>
         </div>
 
@@ -471,7 +471,7 @@
         </div>
 
         <div class="footer-note">
-          Spend aus Apple Search Ads (EUR) · Revenue = RC <code>total_revenue_in_usd</code> × <code id="aa-usd-rate">0.92</code> EUR/USD ·
+          Spend aus Apple Search Ads (EUR, max 90 Tage zurück — Apple DAILY-API-Limit) · Revenue = RC <code>total_revenue_in_usd</code> × <code id="aa-usd-rate">0.92</code> EUR/USD ·
           CPA = Spend ÷ Paid (Influencer-Benchmark: 10 €/Paid) ·
           Date-Filter wirkt auf Spend-Tag &amp; Abo-Start
         </div>

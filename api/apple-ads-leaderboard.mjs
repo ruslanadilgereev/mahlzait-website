@@ -42,9 +42,10 @@ const ASA_BASE = "https://api.searchads.apple.com/api/v5";
 const ASA_TOKEN_URL = "https://appleid.apple.com/auth/oauth2/token";
 const ASA_AUD = "https://appleid.apple.com";
 
-// How far back we pull spend/customer history on each refresh.
-// 365d covers a full Apple-fiscal cycle; the frontend filters within this.
-const SPEND_LOOKBACK_DAYS = 365;
+// How far back we pull spend history on each refresh.
+// Apple's DAILY granularity is capped at 90 days (INVALID_INPUT otherwise).
+// For longer windows we'd need WEEKLY + bucket-merge — not yet needed.
+const SPEND_LOOKBACK_DAYS = 90;
 
 // ---------- Firestore typed-value codec (mirror of api/leaderboard.mjs) ----------
 function encodeValue(v) {
