@@ -96,19 +96,6 @@
       font-size: 14px;
     }
 
-    .loading-overlay {
-      position: fixed; inset: 0; background: rgba(0,0,0,0.7);
-      display: flex; align-items: center; justify-content: center;
-      z-index: 100; backdrop-filter: blur(4px);
-    }
-    .spinner {
-      width: 32px; height: 32px; border: 3px solid #2a2a2a;
-      border-top-color: #10b981; border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-    }
-    .loading-text { margin-left: 14px; color: #ccc; font-size: 14px; }
-    @keyframes spin { to { transform: rotate(360deg); } }
-
     .footer-note {
       margin-top: 16px; font-size: 12px; color: #555; text-align: center;
     }
@@ -179,34 +166,24 @@
     </div>
   </div>
 
-  <div id="loading" class="loading-overlay hidden">
-    <div class="spinner"></div>
-    <div class="loading-text" id="loading-text">Lade…</div>
-  </div>
-
   <script>
     const PAYOUT_PER_PAID_EUR = 10;
     let PW = sessionStorage.getItem("lbpw") || "";
     let lastData = null;
 
-    function showLoading(msg) {
-      document.getElementById("loading-text").textContent = msg || "Lade…";
-      document.getElementById("loading").classList.remove("hidden");
-    }
-    function hideLoading() { document.getElementById("loading").classList.add("hidden"); }
-
-    async function login(opts) {
-      const silent = opts && opts.silent;
+    async function login() {
       const pw = (document.getElementById("pw").value || "").trim();
       if (!pw) return;
       PW = pw;
-      if (!silent) showLoading("Prüfe Passwort…");
+      const errEl = document.getElementById("login-err");
+      errEl.classList.add("hidden");
       try {
         const r = await fetch(`/api/leaderboard?pw=${encodeURIComponent(pw)}`);
         if (r.status === 401) {
-          sessionStorage.removeItem("lbpw");  // schlechtes PW raus
+          sessionStorage.removeItem("lbpw");
           PW = "";
-          if (!silent) document.getElementById("login-err").classList.remove("hidden");
+          errEl.textContent = "Falsches Passwort";
+          errEl.classList.remove("hidden");
           return;
         }
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -214,21 +191,12 @@
         document.getElementById("login").classList.add("hidden");
         document.getElementById("app").classList.remove("hidden");
         const data = await r.json();
-        if (!data.bootstrapped) {
-          lastData = { codes: [], total_holders: 0, total_customers_seen: 0 };
-          document.getElementById("meta").textContent = 'Noch kein Cache. Klick Aktualisieren.';
-          render();
-        } else {
-          lastData = data;
-          render();
-        }
+        lastData = data.bootstrapped ? data : { codes: [], total_holders: 0, total_customers_seen: 0 };
+        if (!data.bootstrapped) document.getElementById("meta").textContent = 'Noch kein Cache. Klick Aktualisieren.';
+        render();
       } catch (e) {
-        if (!silent) {
-          document.getElementById("login-err").textContent = "Fehler: " + e.message;
-          document.getElementById("login-err").classList.remove("hidden");
-        }
-      } finally {
-        if (!silent) hideLoading();
+        errEl.textContent = "Fehler: " + e.message;
+        errEl.classList.remove("hidden");
       }
     }
 
@@ -239,8 +207,10 @@
 
     async function refresh() {
       if (!PW) return;
-      showLoading("Pulle RC-Daten (kann 30-60s dauern)…");
-      document.getElementById("refresh-btn").disabled = true;
+      const btn = document.getElementById("refresh-btn");
+      const origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Lade RC-Daten…";
       try {
         const r = await fetch(`/api/leaderboard?pw=${encodeURIComponent(PW)}&refresh=1`);
         if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
@@ -249,8 +219,8 @@
       } catch (e) {
         alert("Refresh-Fehler: " + e.message);
       } finally {
-        hideLoading();
-        document.getElementById("refresh-btn").disabled = false;
+        btn.disabled = false;
+        btn.textContent = origText;
       }
     }
 
@@ -362,11 +332,11 @@
     document.getElementById("to").addEventListener("change", render);
     // Enter-Submit wird durch <form onsubmit=...> getriggert, kein extra keydown nötig.
 
-    // Auto-login if pw cached — silent (kein Spinner): bei 401 zeigen wir die Login-Form,
-    // bei Erfolg switchen wir direkt auf die App. Kein "Lade..."-Overlay beim Page-Load.
+    // Auto-login if pw cached: Login-Form bleibt sichtbar bis API antwortet,
+    // dann switchen wir direkt auf die App. Kein Overlay, nichts kann haengen.
     if (PW) {
       document.getElementById("pw").value = PW;
-      login({ silent: true });
+      login();
     }
   </script>
 </body>
