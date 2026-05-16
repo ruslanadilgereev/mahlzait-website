@@ -251,15 +251,14 @@ async function fetchAsaDailySpend(startYmd, endYmd) {
     if (!cid) continue;
     const daily = [];
     for (const g of row.granularity || []) {
-      // Apple nests metrics under `other.default` (segmented) or `total`
-      // (unsegmented); some shapes also flat on `g`. Read defensively.
-      const m = g.other?.default || g.total || g;
-      const date = (g.date || m.date || "").slice(0, 10);
-      const spend = Number(m.localSpend?.amount ?? g.localSpend?.amount ?? 0);
-      const taps = Number(m.taps ?? g.taps ?? 0);
-      const installs = Number(
-        m.installs ?? m.newDownloads ?? g.installs ?? g.newDownloads ?? 0
-      );
+      // ASA v5 metrics are flat on each granularity entry. Field-Namen siehe
+      // /api/v5/reports/campaigns docs. We use totalNewDownloads (= unique
+      // first-time installs, excludes redownloads) because that matches what
+      // RC counts as a new customer.
+      const date = (g.date || "").slice(0, 10);
+      const spend = Number(g.localSpend?.amount ?? 0);
+      const taps = Number(g.taps ?? 0);
+      const installs = Number(g.totalNewDownloads ?? g.totalInstalls ?? 0);
       if (spend === 0 && taps === 0 && installs === 0) continue;
       daily.push({ date, spend, taps, installs });
     }
