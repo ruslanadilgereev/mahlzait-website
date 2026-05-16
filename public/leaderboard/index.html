@@ -220,29 +220,35 @@
     }
     .badge {
       display: inline-block;
-      min-width: 32px;
-      padding: 4px 10px;
+      min-width: 48px;
+      padding: 7px 14px;
       border-radius: 999px;
-      font-size: 12px; font-weight: 600;
+      font-size: 16px; font-weight: 700;
       font-variant-numeric: tabular-nums;
       text-align: center;
+      line-height: 1;
     }
-    .b-paid { background: var(--green-soft); color: var(--green); }
-    .b-trial { background: var(--blue-soft); color: var(--blue); }
-    .b-reg { background: #F0F0EC; color: var(--text-muted); }
+    .b-paid { background: var(--green-soft); color: #006B2A; border: 1px solid #C8E6CF; }
+    .b-trial { background: var(--blue-soft); color: #0263CC; border: 1px solid #C7DDF5; }
+    .b-reg { background: #F0F0EC; color: #4A4A47; border: 1px solid #E2E2DC; }
+    .badge.zero { opacity: 0.55; }
     .payout {
       color: var(--primary);
       font-weight: 700;
-      font-size: 14px;
+      font-size: 17px;
+      font-variant-numeric: tabular-nums;
     }
+    .payout.zero { color: var(--text-faint); font-weight: 600; }
     tfoot td {
-      padding: 16px 18px;
+      padding: 18px 18px;
       font-weight: 700;
+      font-size: 16px;
       background: var(--surface-alt);
-      border-top: 2px solid var(--border);
+      border-top: 2px solid var(--border-strong);
       color: var(--text);
     }
-    tfoot .payout { color: var(--primary); }
+    tfoot .num { font-size: 18px; }
+    tfoot .payout { color: var(--primary); font-size: 20px; }
 
     /* ===== Empty State ===== */
     .empty {
@@ -502,15 +508,16 @@
         for (const r of rendered) {
           const payout = (r.paid * PAYOUT_PER_PAID_EUR).toFixed(0);
           const tr = document.createElement("tr");
+          const z = (n) => n === 0 ? " zero" : "";
           tr.innerHTML = `
             <td>
               <div class="code">${escapeHtml(r.code)}</div>
               ${r.influencer ? `<div class="infl">${escapeHtml(r.influencer)}</div>` : ""}
             </td>
-            <td class="num"><span class="badge b-reg">${r.reg}</span></td>
-            <td class="num"><span class="badge b-trial">${r.trial}</span></td>
-            <td class="num"><span class="badge b-paid">${r.paid}</span></td>
-            <td class="num payout">${payout}&nbsp;€</td>
+            <td class="num"><span class="badge b-reg${z(r.reg)}">${r.reg}</span></td>
+            <td class="num"><span class="badge b-trial${z(r.trial)}">${r.trial}</span></td>
+            <td class="num"><span class="badge b-paid${z(r.paid)}">${r.paid}</span></td>
+            <td class="num payout${z(r.paid)}">${payout}&nbsp;€</td>
           `;
           rows.appendChild(tr);
         }
