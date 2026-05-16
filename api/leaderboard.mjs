@@ -2,7 +2,7 @@
 // GET  /api/leaderboard?pw=X            → returns cached state from Firestore
 // GET  /api/leaderboard?pw=X&refresh=1  → diff-pull from RC + saves new state
 //
-// Auth: DASHBOARD_PASSWORD env var (shared with /api/dashboard).
+// Auth: DASHBOARD_PASSWORD env var.
 // RC:   RC_SECRET_API_KEY env var (sk_…), project proj41604426.
 // State: Firestore mytemple-460913 → collection `referral_leaderboard_cache` → doc `state`.
 //
