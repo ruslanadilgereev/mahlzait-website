@@ -23,7 +23,8 @@
 // revenue (sub.starts_at in range) per campaign-name.
 
 import { google } from "googleapis";
-import { SignJWT, importPKCS8 } from "jose";
+import { SignJWT } from "jose";
+import { createPrivateKey } from "node:crypto";
 
 export const config = { maxDuration: 60 };
 
@@ -138,7 +139,10 @@ async function getAsaAccessToken() {
   const keyId = requireEnv("ASA_KEY_ID");
   const pemB64 = requireEnv("ASA_PRIVATE_KEY_PEM_B64");
   const pem = Buffer.from(pemB64, "base64").toString("utf-8");
-  const privateKey = await importPKCS8(pem, "ES256");
+  // Apple ships keys as SEC1 (-----BEGIN EC PRIVATE KEY-----); jose's
+  // importPKCS8 only accepts PKCS#8. Node's crypto auto-detects the format
+  // and the resulting KeyObject is accepted by jose's sign().
+  const privateKey = createPrivateKey({ key: pem, format: "pem" });
 
   // ASA JWT spec: iss = teamId, sub = clientId, aud = appleid.apple.com,
   // alg = ES256, kid in header. Max exp = 180 days; we use 1h.
