@@ -124,12 +124,12 @@
 </head>
 <body>
   <div class="wrap">
-    <div id="login" class="center-box">
+    <form id="login" class="center-box" onsubmit="event.preventDefault(); login();">
       <h1>🔒 Leaderboard</h1>
-      <input id="pw" type="password" placeholder="Passwort" autofocus>
-      <div><button class="primary" onclick="login()" style="width:100%">Einloggen</button></div>
+      <input id="pw" name="password" type="password" placeholder="Passwort" autocomplete="current-password" autofocus>
+      <div><button type="submit" class="primary" style="width:100%">Einloggen</button></div>
       <p id="login-err" class="error hidden">Falsches Passwort</p>
-    </div>
+    </form>
 
     <div id="app" class="hidden">
       <header>
@@ -349,9 +349,7 @@
 
     document.getElementById("from").addEventListener("change", render);
     document.getElementById("to").addEventListener("change", render);
-    document.getElementById("pw").addEventListener("keydown", (e) => {
-      if (e.key === "Enter") login();
-    });
+    // Enter-Submit wird durch <form onsubmit=...> getriggert, kein extra keydown nötig.
 
     // Auto-login if pw cached
     if (PW) {
