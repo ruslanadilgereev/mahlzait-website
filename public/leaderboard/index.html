@@ -304,6 +304,44 @@
     @media (max-width: 480px) {
       thead th:nth-child(2), tbody td:nth-child(2), tfoot td:nth-child(2) { display: none; }
     }
+
+    /* ===== Tabs ===== */
+    .tabs {
+      display: flex; gap: 4px;
+      margin-bottom: 16px;
+      padding: 4px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      width: fit-content;
+    }
+    .tab-btn {
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px; font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+      letter-spacing: 0.005em;
+    }
+    .tab-btn:hover { color: var(--text); }
+    .tab-btn.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ===== Apple-Ads Status pill ===== */
+    .b-profit { background: var(--green-soft); color: #006B2A; border: 1px solid #C8E6CF; }
+    .b-loss { background: #FDE7E6; color: #B0231F; border: 1px solid #F5C3C1; }
+    .b-flat { background: #F0F0EC; color: #4A4A47; border: 1px solid #E2E2DC; }
+    .num.profit { color: #006B2A; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .num.loss { color: #B0231F; font-weight: 700; font-variant-numeric: tabular-nums; }
+    .name { font-weight: 600; font-size: 14px; color: var(--text); }
+    .name .sub { color: var(--text-faint); font-size: 11px; font-weight: 400; margin-top: 2px; }
   </style>
 </head>
 <body>
@@ -335,46 +373,105 @@
         </div>
       </header>
 
-      <div class="controls">
-        <label for="from">Abo-Start</label>
-        <input id="from" type="date">
-        <span style="color:var(--text-faint);font-size:12px">bis</span>
-        <input id="to" type="date">
-        <button class="secondary" onclick="resetFilter()">Zurücksetzen</button>
-        <div class="spacer"></div>
+      <div class="tabs" role="tablist">
+        <button class="tab-btn active" id="tab-referral" onclick="switchTab('referral')">Referral</button>
+        <button class="tab-btn" id="tab-apple-ads" onclick="switchTab('apple-ads')">Apple Ads</button>
       </div>
 
-      <div class="card">
-        <table>
-          <thead>
-            <tr>
-              <th>Code</th>
-              <th class="num">Registrierungen</th>
-              <th class="num">Trial</th>
-              <th class="num">Paid</th>
-              <th class="num">Auszahlung</th>
-            </tr>
-          </thead>
-          <tbody id="rows"></tbody>
-          <tfoot>
-            <tr>
-              <td>Gesamt</td>
-              <td class="num" id="tot-reg">–</td>
-              <td class="num" id="tot-trial">–</td>
-              <td class="num" id="tot-paid">–</td>
-              <td class="num payout" id="tot-payout">–</td>
-            </tr>
-          </tfoot>
-        </table>
-        <div id="empty" class="empty hidden">
-          <div class="icon">📭</div>
-          <div class="empty-title">Keine Daten</div>
-          <div>Im gewählten Zeitraum gibt es keine Abos.</div>
+      <div id="view-referral">
+        <div class="controls">
+          <label for="from">Abo-Start</label>
+          <input id="from" type="date">
+          <span style="color:var(--text-faint);font-size:12px">bis</span>
+          <input id="to" type="date">
+          <button class="secondary" onclick="resetFilter()">Zurücksetzen</button>
+          <div class="spacer"></div>
+        </div>
+
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Code</th>
+                <th class="num">Registrierungen</th>
+                <th class="num">Trial</th>
+                <th class="num">Paid</th>
+                <th class="num">Auszahlung</th>
+              </tr>
+            </thead>
+            <tbody id="rows"></tbody>
+            <tfoot>
+              <tr>
+                <td>Gesamt</td>
+                <td class="num" id="tot-reg">–</td>
+                <td class="num" id="tot-trial">–</td>
+                <td class="num" id="tot-paid">–</td>
+                <td class="num payout" id="tot-payout">–</td>
+              </tr>
+            </tfoot>
+          </table>
+          <div id="empty" class="empty hidden">
+            <div class="icon">📭</div>
+            <div class="empty-title">Keine Daten</div>
+            <div>Im gewählten Zeitraum gibt es keine Abos.</div>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          Auszahlung 10&nbsp;€ pro zahlendem Kunden · Trial / Paid = Lifetime-Cohort · Date-Filter wirkt auf Abo-Start (<code>starts_at</code>)
         </div>
       </div>
 
-      <div class="footer-note">
-        Auszahlung 10&nbsp;€ pro zahlendem Kunden · Trial / Paid = Lifetime-Cohort · Date-Filter wirkt auf Abo-Start (<code>starts_at</code>)
+      <div id="view-apple-ads" class="hidden">
+        <div class="controls">
+          <label for="aa-from">Zeitraum</label>
+          <input id="aa-from" type="date">
+          <span style="color:var(--text-faint);font-size:12px">bis</span>
+          <input id="aa-to" type="date">
+          <button class="secondary" onclick="aaPreset(7)">7T</button>
+          <button class="secondary" onclick="aaPreset(30)">30T</button>
+          <button class="secondary" onclick="aaPreset(90)">90T</button>
+          <button class="secondary" onclick="aaPreset(null)">All</button>
+          <div class="spacer"></div>
+        </div>
+
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Campaign</th>
+                <th class="num">Spend</th>
+                <th class="num">Revenue</th>
+                <th class="num">Profit</th>
+                <th class="num">Trials</th>
+                <th class="num">Paid</th>
+                <th class="num">Status</th>
+              </tr>
+            </thead>
+            <tbody id="aa-rows"></tbody>
+            <tfoot>
+              <tr>
+                <td>Gesamt</td>
+                <td class="num" id="aa-tot-spend">–</td>
+                <td class="num" id="aa-tot-revenue">–</td>
+                <td class="num" id="aa-tot-profit">–</td>
+                <td class="num" id="aa-tot-trials">–</td>
+                <td class="num" id="aa-tot-paid">–</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+          <div id="aa-empty" class="empty hidden">
+            <div class="icon">📊</div>
+            <div class="empty-title">Noch keine Apple-Ads-Daten</div>
+            <div>Klick „Aktualisieren" oben rechts, um ASA + RevenueCat zu pullen (~30-60s).</div>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          Spend aus Apple Search Ads (EUR) · Revenue = RC <code>total_revenue_in_usd</code> × <code id="aa-usd-rate">0.92</code> EUR/USD ·
+          Date-Filter wirkt auf Spend-Tag & Abo-Start
+        </div>
       </div>
     </div>
   </div>
@@ -535,6 +632,215 @@
 
     document.getElementById("from").addEventListener("change", render);
     document.getElementById("to").addEventListener("change", render);
+
+    // ============================================================
+    // Tab switching + Apple-Ads view
+    // ============================================================
+    let activeTab = "referral";
+    let aaData = null;
+    const USD_TO_EUR = 0.92; // rough constant; for board-level signal not finance
+
+    function switchTab(name) {
+      activeTab = name;
+      document.getElementById("tab-referral").classList.toggle("active", name === "referral");
+      document.getElementById("tab-apple-ads").classList.toggle("active", name === "apple-ads");
+      document.getElementById("view-referral").classList.toggle("hidden", name !== "referral");
+      document.getElementById("view-apple-ads").classList.toggle("hidden", name !== "apple-ads");
+      if (name === "apple-ads" && !aaData) aaLoad(false);
+    }
+
+    async function aaLoad(forceRefresh) {
+      if (!PW) return;
+      const btn = document.getElementById("refresh-btn");
+      const origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = forceRefresh ? "Pulle ASA + RC…" : "Lade…";
+      try {
+        const url = `/api/apple-ads-leaderboard?pw=${encodeURIComponent(PW)}${forceRefresh ? "&refresh=1" : ""}`;
+        const r = await fetch(url);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        const j = await r.json();
+        aaData = j.bootstrapped ? j : { campaigns: [], customers_by_campaign: {}, currency: "EUR" };
+        aaRender();
+      } catch (e) {
+        alert("Apple-Ads Refresh-Fehler: " + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = origText;
+      }
+    }
+
+    function aaPreset(days) {
+      const to = new Date();
+      const from = days ? new Date(to.getTime() - days * 24 * 3600 * 1000) : null;
+      document.getElementById("aa-to").value = to.toISOString().slice(0, 10);
+      document.getElementById("aa-from").value = from ? from.toISOString().slice(0, 10) : "";
+      aaRender();
+    }
+
+    function aaRender() {
+      const fromStr = document.getElementById("aa-from").value || "";
+      const toStr = document.getElementById("aa-to").value || "";
+      const fromMs = fromStr ? Date.parse(fromStr + "T00:00:00.000Z") : null;
+      const toMs = toStr ? Date.parse(toStr + "T23:59:59.999Z") : null;
+
+      const rows = document.getElementById("aa-rows");
+      const empty = document.getElementById("aa-empty");
+      rows.innerHTML = "";
+
+      if (!aaData || !aaData.campaigns || aaData.campaigns.length === 0) {
+        empty.classList.remove("hidden");
+        ["aa-tot-spend", "aa-tot-revenue", "aa-tot-profit", "aa-tot-trials", "aa-tot-paid"].forEach(id => {
+          document.getElementById(id).textContent = "–";
+        });
+        return;
+      }
+      empty.classList.add("hidden");
+
+      // Index customers by campaign-name (lowercased for forgiving match)
+      const custByCampaign = aaData.customers_by_campaign || {};
+
+      const rendered = [];
+      let totSpend = 0, totRev = 0, totTrials = 0, totPaid = 0;
+      for (const c of aaData.campaigns) {
+        let spend = 0;
+        for (const d of c.daily || []) {
+          const ms = Date.parse(d.date + "T00:00:00.000Z");
+          if (fromMs !== null && ms < fromMs) continue;
+          if (toMs !== null && ms > toMs) continue;
+          spend += Number(d.spend || 0);
+        }
+        // Customers attributed to this campaign-name
+        const custs = custByCampaign[c.name] || [];
+        let revenueUsd = 0;
+        let trials = 0, paid = 0;
+        for (const cust of custs) {
+          let custHasPaid = false, custHasTrial = false;
+          for (const s of cust.subs || []) {
+            const t = s.starts_at ? Number(s.starts_at) : null;
+            if (fromMs !== null && t !== null && t < fromMs) continue;
+            if (toMs !== null && t !== null && t > toMs) continue;
+            const gross = Number(s.gross_usd || 0);
+            revenueUsd += gross;
+            if (gross > 0) custHasPaid = true;
+            else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at) custHasTrial = true;
+          }
+          if (custHasPaid) paid++;
+          else if (custHasTrial) trials++;
+        }
+        const revenueEur = revenueUsd * USD_TO_EUR;
+        const profit = revenueEur - spend;
+
+        rendered.push({
+          name: c.name,
+          status: c.status,
+          display_status: c.display_status,
+          spend, revenueEur, profit, trials, paid,
+        });
+        totSpend += spend;
+        totRev += revenueEur;
+        totTrials += trials;
+        totPaid += paid;
+      }
+      totSpend = Number(totSpend.toFixed(2));
+      const totProfit = totRev - totSpend;
+
+      // Append synthetic "(no_campaign)" row if there are ASA-customers without campaign-attr
+      const orphans = custByCampaign["(no_campaign)"] || [];
+      if (orphans.length > 0) {
+        let revUsd = 0, trials = 0, paid = 0;
+        for (const cust of orphans) {
+          let custHasPaid = false, custHasTrial = false;
+          for (const s of cust.subs || []) {
+            const t = s.starts_at ? Number(s.starts_at) : null;
+            if (fromMs !== null && t !== null && t < fromMs) continue;
+            if (toMs !== null && t !== null && t > toMs) continue;
+            const gross = Number(s.gross_usd || 0);
+            revUsd += gross;
+            if (gross > 0) custHasPaid = true;
+            else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at) custHasTrial = true;
+          }
+          if (custHasPaid) paid++;
+          else if (custHasTrial) trials++;
+        }
+        rendered.push({
+          name: "(no campaign attribution)",
+          status: null,
+          display_status: null,
+          spend: 0,
+          revenueEur: revUsd * USD_TO_EUR,
+          profit: revUsd * USD_TO_EUR,
+          trials, paid,
+          orphan: true,
+        });
+        totRev += revUsd * USD_TO_EUR;
+        totTrials += trials;
+        totPaid += paid;
+      }
+
+      rendered.sort((a, b) => b.profit - a.profit);
+
+      const eur = (n) => n.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+
+      for (const r of rendered) {
+        const tr = document.createElement("tr");
+        const profitClass = r.profit > 0 ? "profit" : (r.profit < 0 ? "loss" : "");
+        let statusPill;
+        if (r.spend === 0 && r.revenueEur === 0) {
+          statusPill = `<span class="badge b-flat">–</span>`;
+        } else if (r.profit > 0) {
+          statusPill = `<span class="badge b-profit">PROFIT</span>`;
+        } else if (r.profit < 0) {
+          statusPill = `<span class="badge b-loss">LOSS</span>`;
+        } else {
+          statusPill = `<span class="badge b-flat">FLAT</span>`;
+        }
+        const sub = r.orphan
+          ? `ASA customers without $campaign attribute`
+          : (r.display_status ? `${r.status} · ${r.display_status}` : (r.status || ""));
+        tr.innerHTML = `
+          <td>
+            <div class="name">${escapeHtml(r.name)}</div>
+            ${sub ? `<div class="sub">${escapeHtml(sub)}</div>` : ""}
+          </td>
+          <td class="num">${eur(r.spend)}</td>
+          <td class="num">${eur(r.revenueEur)}</td>
+          <td class="num ${profitClass}">${eur(r.profit)}</td>
+          <td class="num">${r.trials}</td>
+          <td class="num">${r.paid}</td>
+          <td class="num">${statusPill}</td>
+        `;
+        rows.appendChild(tr);
+      }
+
+      document.getElementById("aa-tot-spend").textContent = eur(totSpend);
+      document.getElementById("aa-tot-revenue").textContent = eur(totRev);
+      const totProfitEl = document.getElementById("aa-tot-profit");
+      totProfitEl.textContent = eur(totProfit);
+      totProfitEl.className = "num " + (totProfit > 0 ? "profit" : totProfit < 0 ? "loss" : "");
+      document.getElementById("aa-tot-trials").textContent = totTrials;
+      document.getElementById("aa-tot-paid").textContent = totPaid;
+
+      if (aaData.last_pull_ts_ms) {
+        const d = new Date(aaData.last_pull_ts_ms);
+        const ago = Math.floor((Date.now() - aaData.last_pull_ts_ms) / 60000);
+        const agoStr = ago < 1 ? "gerade eben" : ago < 60 ? `vor ${ago} Min` : `vor ${Math.floor(ago/60)} h`;
+        if (activeTab === "apple-ads") {
+          document.getElementById("meta").textContent =
+            `Apple Ads · Stand ${d.toLocaleString("de-DE")} · ${agoStr} · ${(aaData.last_refresh_meta?.asa_customers ?? 0)} ASA-Customers`;
+        }
+      }
+    }
+
+    document.getElementById("aa-from").addEventListener("change", aaRender);
+    document.getElementById("aa-to").addEventListener("change", aaRender);
+
+    // Hook the Aktualisieren-button so it routes to the correct view
+    const origRefresh = refresh;
+    refresh = async function () {
+      if (activeTab === "apple-ads") return aaLoad(true);
+      return origRefresh();
+    };
 
     if (PW) {
       document.getElementById("pw").value = PW;
