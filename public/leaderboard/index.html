@@ -212,7 +212,7 @@
         if (!data.bootstrapped) {
           // Empty state — invite first refresh
           lastData = { codes: [], total_holders: 0, total_customers_seen: 0 };
-          document.getElementById("meta").textContent = "Noch kein Cache. Klick „Aktualisieren".";
+          document.getElementById("meta").textContent = 'Noch kein Cache. Klick Aktualisieren.';
           render();
         } else {
           lastData = data;
