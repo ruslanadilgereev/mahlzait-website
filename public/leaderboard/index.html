@@ -134,7 +134,10 @@
     <div id="app" class="hidden">
       <header>
         <h1>🏆 Referral Leaderboard</h1>
-        <span id="meta" class="meta"></span>
+        <div style="display:flex;align-items:center;gap:12px">
+          <span id="meta" class="meta"></span>
+          <button class="secondary" onclick="logout()" title="Passwort aus sessionStorage entfernen">Logout</button>
+        </div>
       </header>
 
       <div class="controls">
@@ -192,16 +195,18 @@
     }
     function hideLoading() { document.getElementById("loading").classList.add("hidden"); }
 
-    async function login() {
-      const pw = document.getElementById("pw").value.trim();
+    async function login(opts) {
+      const silent = opts && opts.silent;
+      const pw = (document.getElementById("pw").value || "").trim();
       if (!pw) return;
       PW = pw;
-      showLoading("Prüfe Passwort…");
+      if (!silent) showLoading("Prüfe Passwort…");
       try {
         const r = await fetch(`/api/leaderboard?pw=${encodeURIComponent(pw)}`);
         if (r.status === 401) {
-          document.getElementById("login-err").classList.remove("hidden");
-          hideLoading();
+          sessionStorage.removeItem("lbpw");  // schlechtes PW raus
+          PW = "";
+          if (!silent) document.getElementById("login-err").classList.remove("hidden");
           return;
         }
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
@@ -210,7 +215,6 @@
         document.getElementById("app").classList.remove("hidden");
         const data = await r.json();
         if (!data.bootstrapped) {
-          // Empty state — invite first refresh
           lastData = { codes: [], total_holders: 0, total_customers_seen: 0 };
           document.getElementById("meta").textContent = 'Noch kein Cache. Klick Aktualisieren.';
           render();
@@ -219,11 +223,18 @@
           render();
         }
       } catch (e) {
-        document.getElementById("login-err").textContent = "Fehler: " + e.message;
-        document.getElementById("login-err").classList.remove("hidden");
+        if (!silent) {
+          document.getElementById("login-err").textContent = "Fehler: " + e.message;
+          document.getElementById("login-err").classList.remove("hidden");
+        }
       } finally {
-        hideLoading();
+        if (!silent) hideLoading();
       }
+    }
+
+    function logout() {
+      sessionStorage.removeItem("lbpw");
+      location.reload();
     }
 
     async function refresh() {
@@ -351,10 +362,11 @@
     document.getElementById("to").addEventListener("change", render);
     // Enter-Submit wird durch <form onsubmit=...> getriggert, kein extra keydown nötig.
 
-    // Auto-login if pw cached
+    // Auto-login if pw cached — silent (kein Spinner): bei 401 zeigen wir die Login-Form,
+    // bei Erfolg switchen wir direkt auf die App. Kein "Lade..."-Overlay beim Page-Load.
     if (PW) {
       document.getElementById("pw").value = PW;
-      login();
+      login({ silent: true });
     }
   </script>
 </body>
