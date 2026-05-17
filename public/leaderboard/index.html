@@ -230,6 +230,7 @@
     }
     .b-paid { background: var(--green-soft); color: #006B2A; border: 1px solid #C8E6CF; }
     .b-trial { background: var(--blue-soft); color: #0263CC; border: 1px solid #C7DDF5; }
+    .b-trial-cancelled { background: #F3EAF5; color: #6B3F7F; border: 1px solid #DDC9E2; }
     .b-granted { background: var(--orange-soft); color: #B0420A; border: 1px solid #F5C99B; }
     .b-reg { background: #F0F0EC; color: #4A4A47; border: 1px solid #E2E2DC; }
     .badge.zero { opacity: 0.55; }
@@ -435,7 +436,8 @@
               <tr>
                 <th>Code</th>
                 <th class="num">Registrierungen</th>
-                <th class="num">Trial</th>
+                <th class="num" title="Trial läuft, auto-renew an — wird voraussichtlich Paid">Trial aktiv</th>
+                <th class="num col-trial-cancel" title="Trial läuft, auto-renew aus — User hat während Trial gecancelt">Trial gec.</th>
                 <th class="num" title="Promotional Yearly via App Store Connect — gratis grantet, keine Auszahlung">Granted</th>
                 <th class="num">Paid</th>
                 <th class="num">Auszahlung</th>
@@ -447,7 +449,8 @@
               <tr>
                 <td>Gesamt</td>
                 <td class="num" id="tot-reg">–</td>
-                <td class="num" id="tot-trial">–</td>
+                <td class="num" id="tot-trial-active">–</td>
+                <td class="num col-trial-cancel" id="tot-trial-cancelled">–</td>
                 <td class="num" id="tot-granted">–</td>
                 <td class="num" id="tot-paid">–</td>
                 <td class="num payout" id="tot-payout">–</td>
@@ -464,9 +467,9 @@
 
         <div class="footer-note">
           Auszahlung 10&nbsp;€ pro <b>Paid</b>-Kunde (Granted z&auml;hlt nicht) ·
-          <b>Trial</b> = 7&nbsp;d&nbsp;App-Store-Probe (Filter auf Trial-Start) ·
-          <b>Granted</b> = Mahlzait-grantete Promotional&nbsp;Yearly (z.&nbsp;B. f&uuml;r Influencer selbst) ·
-          <b>Paid</b> = echte Zahlung (Filter auf Trial-Start&nbsp;+&nbsp;7&nbsp;Tage)
+          <b>Trial aktiv</b> = auto-renew an (wird voraussichtlich Paid) ·
+          <b>Trial gec.</b> = w&auml;hrend Trial gecancelt (auto-renew aus) ·
+          <b>Granted</b> = Promotional Yearly · <b>Paid</b> = echte Zahlung
         </div>
       </div>
 
@@ -610,13 +613,17 @@
         && s.starts_at === s.current_period_starts_at
         && s.store !== "promotional";
     }
+    // Trial mit auto_renewal_status='will_renew' wird voraussichtlich konvertieren.
+    // Alles andere (will_not_renew, paused, null) = User hat cancelled vor Trial-Ende.
+    function isActiveTrialSub(s)   { return isTrialSub(s) && s.auto_renewal_status === "will_renew"; }
+    function isCancelledTrialSub(s){ return isTrialSub(s) && s.auto_renewal_status !== "will_renew"; }
 
     // Trial-Start liegt typischerweise 7 Tage vor der ersten Zahlung (Apple/Google
     // 7-Tage-Standard-Trial). Wir filtern Paid auf die geschätzte Conversion-Zeit,
     // damit "Paid im März" wirklich "Zahlung im März" bedeutet.
     const TRIAL_LENGTH_MS = 7 * 24 * 60 * 60 * 1000;
     function classifyHolder(holder, fromMs, toMs) {
-      let everTrial = false, everGranted = false, everPaid = false;
+      let everTrialActive = false, everTrialCancelled = false, everGranted = false, everPaid = false;
       for (const s of holder.subs || []) {
         if (isPaidSub(s)) {
           const conv = (s.starts_at || 0) + TRIAL_LENGTH_MS;
@@ -628,14 +635,19 @@
           if (fromMs !== null && t !== null && t < fromMs) continue;
           if (toMs !== null && t !== null && t > toMs) continue;
           everGranted = true;
-        } else if (isTrialSub(s)) {
+        } else if (isActiveTrialSub(s)) {
           const t = s.starts_at;
           if (fromMs !== null && t !== null && t < fromMs) continue;
           if (toMs !== null && t !== null && t > toMs) continue;
-          everTrial = true;
+          everTrialActive = true;
+        } else if (isCancelledTrialSub(s)) {
+          const t = s.starts_at;
+          if (fromMs !== null && t !== null && t < fromMs) continue;
+          if (toMs !== null && t !== null && t > toMs) continue;
+          everTrialCancelled = true;
         }
       }
-      return { everTrial, everGranted, everPaid };
+      return { everTrialActive, everTrialCancelled, everGranted, everPaid };
     }
 
     function render() {
@@ -657,22 +669,24 @@
       let totReg = 0, totTrial = 0, totPaid = 0;
       const rendered = [];
 
-      let totGranted = 0;
+      let totGranted = 0, totTrialActive = 0, totTrialCancelled = 0;
+      // Note: totTrial wird ab jetzt nicht mehr separat geführt (in 2 Spalten gesplittet)
       for (const c of codes) {
         let reg = c.holders.length;
-        let trial = 0, granted = 0, paid = 0;
+        let trialActive = 0, trialCancelled = 0, granted = 0, paid = 0;
         for (const h of c.holders) {
           const cls = classifyHolder(h, fromMs, toMs);
           if (cls.everPaid) paid++;
           else if (cls.everGranted) granted++;
-          else if (cls.everTrial) trial++;
+          else if (cls.everTrialActive) trialActive++;
+          else if (cls.everTrialCancelled) trialCancelled++;
         }
-        rendered.push({ code: c.code, influencer: c.influencer, reg, trial, granted, paid, shareToken: c.share_token || null });
-        totReg += reg; totTrial += trial; totGranted += granted; totPaid += paid;
+        rendered.push({ code: c.code, influencer: c.influencer, reg, trialActive, trialCancelled, granted, paid, shareToken: c.share_token || null });
+        totReg += reg; totTrialActive += trialActive; totTrialCancelled += trialCancelled; totGranted += granted; totPaid += paid;
       }
 
       rendered.sort((a, b) =>
-        (b.paid - a.paid) || (b.granted - a.granted) || (b.trial - a.trial) || (b.reg - a.reg) || a.code.localeCompare(b.code)
+        (b.paid - a.paid) || (b.granted - a.granted) || (b.trialActive - a.trialActive) || (b.trialCancelled - a.trialCancelled) || (b.reg - a.reg) || a.code.localeCompare(b.code)
       );
 
       if (rendered.length === 0) {
@@ -692,7 +706,8 @@
               ${r.influencer ? `<div class="infl">${escapeHtml(r.influencer)}</div>` : ""}
             </td>
             <td class="num"><span class="badge b-reg${z(r.reg)}">${r.reg}</span></td>
-            <td class="num"><span class="badge b-trial${z(r.trial)}">${r.trial}</span></td>
+            <td class="num"><span class="badge b-trial${z(r.trialActive)}" title="Trial aktiv (auto-renew an)">${r.trialActive}</span></td>
+            <td class="num col-trial-cancel"><span class="badge b-trial-cancelled${z(r.trialCancelled)}" title="Trial gecancelt (auto-renew aus, wird nicht Paid)">${r.trialCancelled}</span></td>
             <td class="num"><span class="badge b-granted${z(r.granted)}" title="Promotional Yearly (gratis grantet)">${r.granted}</span></td>
             <td class="num"><span class="badge b-paid${z(r.paid)}">${r.paid}</span></td>
             <td class="num payout${z(r.paid)}">${payout}&nbsp;€</td>
@@ -703,7 +718,8 @@
       }
 
       document.getElementById("tot-reg").textContent = totReg;
-      document.getElementById("tot-trial").textContent = totTrial;
+      document.getElementById("tot-trial-active").textContent = totTrialActive;
+      document.getElementById("tot-trial-cancelled").textContent = totTrialCancelled;
       document.getElementById("tot-granted").textContent = totGranted;
       document.getElementById("tot-paid").textContent = totPaid;
       document.getElementById("tot-payout").innerHTML = (totPaid * PAYOUT_PER_PAID_EUR).toFixed(0) + "&nbsp;€";

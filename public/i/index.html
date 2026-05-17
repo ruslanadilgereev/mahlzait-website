@@ -360,7 +360,7 @@
         <div class="stat-card trial">
           <div class="stat-label">Trials</div>
           <div class="stat-value" id="stat-trial">—</div>
-          <div class="stat-hint">7-Tage-Probeabo gestartet</div>
+          <div class="stat-hint" id="stat-trial-hint">7-Tage-Probeabo gestartet</div>
         </div>
         <div class="stat-card granted">
           <div class="stat-label">Gratis</div>
@@ -375,8 +375,8 @@
       </section>
 
       <div class="foot">
-        Eingaben = total Code-Eingaben · Trials = 7&nbsp;Tage Probe gestartet ·<br>
-        Gratis = 1&nbsp;Jahr Promotional grantet · Paid = ca. 7&nbsp;Tage nach Probe-Start (echte Zahlung)
+        Eingaben = total Code-Eingaben · Trials = 7&nbsp;Tage Probe (Hint zeigt aktiv vs. gecancelt) ·<br>
+        Gratis = 1&nbsp;Jahr Promotional grantet · Paid = echte Zahlung (~7&nbsp;Tage nach Probe-Start)
       </div>
     </main>
   </div>
@@ -444,19 +444,20 @@
     }
 
     function isPaidSub(s) { return (Number(s.gross) || 0) > 0; }
-    // Promotional/Granted = Mahlzait-grantet 1 Jahr gratis (eigene Spalte, kein Trial).
     function isGrantedSub(s) { return (Number(s.gross) || 0) === 0 && s.store === 'promotional'; }
     function isTrialSub(s) {
       return s.ownership === 'purchased' && (Number(s.gross) || 0) === 0
         && s.starts_at === s.current_period_starts_at
         && s.store !== 'promotional';
     }
+    function isActiveTrialSub(s)    { return isTrialSub(s) && s.auto_renewal_status === 'will_renew'; }
+    function isCancelledTrialSub(s) { return isTrialSub(s) && s.auto_renewal_status !== 'will_renew'; }
 
     // Paid wird gefiltert auf das geschätzte Conversion-Datum (Trial-Start + 7 Tage),
     // damit "Paid im März" auch wirklich "Zahlung im März" bedeutet.
     const TRIAL_LENGTH_MS = 7 * 24 * 60 * 60 * 1000;
     function classifyHolder(h, fromMs, toMs) {
-      let trial = false, granted = false, paid = false;
+      let trialActive = false, trialCancelled = false, granted = false, paid = false;
       for (const s of h.subs || []) {
         if (isPaidSub(s)) {
           const conv = (Number(s.starts_at) || 0) + TRIAL_LENGTH_MS;
@@ -468,14 +469,19 @@
           if (fromMs !== null && t !== null && t < fromMs) continue;
           if (toMs !== null && t !== null && t > toMs) continue;
           granted = true;
-        } else if (isTrialSub(s)) {
+        } else if (isActiveTrialSub(s)) {
           const t = s.starts_at;
           if (fromMs !== null && t !== null && t < fromMs) continue;
           if (toMs !== null && t !== null && t > toMs) continue;
-          trial = true;
+          trialActive = true;
+        } else if (isCancelledTrialSub(s)) {
+          const t = s.starts_at;
+          if (fromMs !== null && t !== null && t < fromMs) continue;
+          if (toMs !== null && t !== null && t > toMs) continue;
+          trialCancelled = true;
         }
       }
-      return { trial, granted, paid };
+      return { trialActive, trialCancelled, granted, paid };
     }
 
     function render() {
@@ -485,17 +491,30 @@
 
       const holders = lastData.holders || [];
       let reg = holders.length;
-      let trial = 0, granted = 0, paid = 0;
+      let trialActive = 0, trialCancelled = 0, granted = 0, paid = 0;
       for (const h of holders) {
         const c = classifyHolder(h, fromMs, toMs);
         if (c.paid) paid++;
         else if (c.granted) granted++;
-        else if (c.trial) trial++;
+        else if (c.trialActive) trialActive++;
+        else if (c.trialCancelled) trialCancelled++;
       }
+      const trialTotal = trialActive + trialCancelled;
       setStat('stat-reg', reg);
-      setStat('stat-trial', trial);
+      setStat('stat-trial', trialTotal);
       setStat('stat-granted', granted);
       setStat('stat-paid', paid);
+      // Hint zeigt Active/Cancelled-Aufteilung wenn es Trials gibt
+      const hint = document.getElementById('stat-trial-hint');
+      if (trialTotal === 0) {
+        hint.textContent = '7-Tage-Probeabo gestartet';
+      } else if (trialCancelled === 0) {
+        hint.innerHTML = `alle ${trialActive} aktiv ✓`;
+      } else if (trialActive === 0) {
+        hint.innerHTML = `alle gecancelt`;
+      } else {
+        hint.innerHTML = `${trialActive} aktiv · ${trialCancelled} gecancelt`;
+      }
     }
 
     function setStat(id, n) {

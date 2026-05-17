@@ -103,6 +103,7 @@ export default async function handler(req, res) {
           current_period_starts_at: s.current_period_starts_at || null,
           ownership: s.ownership || null,
           store: s.store || null,
+          auto_renewal_status: s.auto_renewal_status || null,
           gross: Number(s.gross || 0),
         })),
       });
