@@ -259,9 +259,9 @@ async function classifyOne(custMeta) {
 }
 
 // ---------- Aggregation ----------
-function aggregate(holders) {
+function aggregate(holders, codeTokens = {}) {
   // Group by code; per code count total + lifetime trial + lifetime paid.
-  // Also expose subs for client-side date filtering.
+  // Also expose subs for client-side date filtering + share_token for /i/<token>.
   const byCode = {};
   for (const h of Object.values(holders)) {
     const code = h.code;
@@ -270,6 +270,7 @@ function aggregate(holders) {
         code,
         tier: h.tier,
         influencer: h.influencer,
+        share_token: codeTokens[code] || null,
         holders: [],
       };
     }
@@ -385,9 +386,16 @@ export default async function handler(req, res) {
         bootstrapped: false,
         hint: "Noch kein State. Klicke Aktualisieren, um den ersten Pull anzustoßen (kann 30-60s dauern).",
       });
+    } else {
+      // Auto-mint missing tokens on every read (idempotent — no write if all codes have tokens).
+      // Catches codes that were added between refreshes (and pre-existing codes from older states).
+      const added = ensureTokens(state);
+      if (added > 0) {
+        await saveState(firestore, state);
+      }
     }
 
-    const codes = aggregate(state.holders || {});
+    const codes = aggregate(state.holders || {}, state.code_tokens || {});
     return res.json({
       bootstrapped: true,
       last_pull_ts_ms: state.last_pull_ts_ms,

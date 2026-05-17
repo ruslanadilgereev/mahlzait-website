@@ -342,6 +342,46 @@
     .num.loss { color: #B0231F; font-weight: 700; font-variant-numeric: tabular-nums; }
     .name { font-weight: 600; font-size: 14px; color: var(--text); }
     .name .sub { color: var(--text-faint); font-size: 11px; font-weight: 400; margin-top: 2px; }
+
+    /* ===== Share-Link-Button ===== */
+    .link-btn {
+      padding: 7px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 12px; font-weight: 600;
+      font-family: inherit;
+      cursor: pointer;
+      transition: all 0.15s;
+      white-space: nowrap;
+      letter-spacing: 0.005em;
+      display: inline-flex; align-items: center; gap: 5px;
+    }
+    .link-btn:hover {
+      background: var(--primary-soft);
+      border-color: var(--primary);
+      color: var(--primary-hover);
+    }
+    .link-btn:active { transform: translateY(1px); }
+    .link-btn.copied {
+      background: var(--green-soft);
+      border-color: #C8E6CF;
+      color: #006B2A;
+    }
+    .link-btn.missing {
+      opacity: 0.55;
+      cursor: not-allowed;
+      color: var(--text-faint);
+    }
+    .link-btn.missing:hover {
+      background: var(--surface);
+      border-color: var(--border);
+      color: var(--text-faint);
+    }
+    @media (max-width: 720px) {
+      .link-btn { padding: 5px 8px; font-size: 11px; gap: 3px; }
+    }
   </style>
 </head>
 <body>
@@ -397,6 +437,7 @@
                 <th class="num">Trial</th>
                 <th class="num">Paid</th>
                 <th class="num">Auszahlung</th>
+                <th class="num" style="text-align:right">Link</th>
               </tr>
             </thead>
             <tbody id="rows"></tbody>
@@ -407,6 +448,7 @@
                 <td class="num" id="tot-trial">–</td>
                 <td class="num" id="tot-paid">–</td>
                 <td class="num payout" id="tot-payout">–</td>
+                <td></td>
               </tr>
             </tfoot>
           </table>
@@ -597,7 +639,7 @@
           if (cls.everPaid) paid++;
           else if (cls.everTrial) trial++;
         }
-        rendered.push({ code: c.code, influencer: c.influencer, reg, trial, paid });
+        rendered.push({ code: c.code, influencer: c.influencer, reg, trial, paid, shareToken: c.share_token || null });
         totReg += reg; totTrial += trial; totPaid += paid;
       }
 
@@ -613,6 +655,9 @@
           const payout = (r.paid * PAYOUT_PER_PAID_EUR).toFixed(0);
           const tr = document.createElement("tr");
           const z = (n) => n === 0 ? " zero" : "";
+          const linkCell = r.shareToken
+            ? `<button class="link-btn" onclick="shareLink(this)" data-token="${escapeHtml(r.shareToken)}" data-code="${escapeHtml(r.code)}" title="Influencer-Link kopieren oder teilen">🔗 Teilen</button>`
+            : `<button class="link-btn missing" disabled title="Token fehlt — refresh starten">— kein Link —</button>`;
           tr.innerHTML = `
             <td>
               <div class="code">${escapeHtml(r.code)}</div>
@@ -622,6 +667,7 @@
             <td class="num"><span class="badge b-trial${z(r.trial)}">${r.trial}</span></td>
             <td class="num"><span class="badge b-paid${z(r.paid)}">${r.paid}</span></td>
             <td class="num payout${z(r.paid)}">${payout}&nbsp;€</td>
+            <td class="num" style="text-align:right">${linkCell}</td>
           `;
           rows.appendChild(tr);
         }
@@ -635,6 +681,44 @@
 
     function escapeHtml(s) {
       return String(s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]));
+    }
+
+    // ---------- Share / copy partner-hub link ----------
+    async function shareLink(btn) {
+      const token = btn.dataset.token;
+      const code = btn.dataset.code || '';
+      if (!token || btn.classList.contains('missing')) return;
+      const link = `${window.location.origin}/i/${token}`;
+      const isMobile = /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+      // Mobile: Web Share API opens system share sheet (WhatsApp, iMessage, Mail, ...)
+      if (isMobile && navigator.share) {
+        try {
+          await navigator.share({ title: `Mahlzait Partner-Hub: ${code}`, text: `Dein Mahlzait Partner-Hub für Code ${code}:`, url: link });
+          flashCopied(btn, '✓ Geteilt');
+          return;
+        } catch (e) {
+          if (e && e.name === 'AbortError') return; // user dismissed
+          // fall through to clipboard
+        }
+      }
+      // Desktop / Share-API not available: clipboard
+      try {
+        await navigator.clipboard.writeText(link);
+        flashCopied(btn, '✓ Kopiert');
+      } catch (e) {
+        // very old browsers — last-resort prompt
+        window.prompt('Link kopieren:', link);
+      }
+    }
+
+    function flashCopied(btn, msg) {
+      const orig = btn.innerHTML;
+      btn.innerHTML = msg;
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.innerHTML = orig;
+        btn.classList.remove('copied');
+      }, 1600);
     }
 
     document.getElementById("from").addEventListener("change", render);
