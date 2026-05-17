@@ -235,7 +235,7 @@
     /* ===== Stats grid ===== */
     .stats-grid {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       gap: 12px;
       margin-bottom: 24px;
     }
@@ -266,6 +266,7 @@
     }
     .stat-value.zero { color: var(--text-faint); font-weight: 700; }
     .stat-card.trial .stat-value:not(.zero) { color: var(--blue); }
+    .stat-card.granted .stat-value:not(.zero) { color: var(--orange); }
     .stat-card.paid .stat-value:not(.zero) { color: var(--green); }
     .stat-hint {
       font-size: 11px;
@@ -287,7 +288,7 @@
       body { padding: 20px 12px 40px; }
       .hero { padding: 28px 20px 24px; }
       .hero-code { font-size: 34px; }
-      .stats-grid { gap: 8px; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
       .stat-card { padding: 18px 10px 14px; }
       .stat-value { font-size: 30px; }
       .stat-hint { font-size: 10px; }
@@ -361,6 +362,11 @@
           <div class="stat-value" id="stat-trial">—</div>
           <div class="stat-hint">7-Tage-Probeabo gestartet</div>
         </div>
+        <div class="stat-card granted">
+          <div class="stat-label">Gratis</div>
+          <div class="stat-value" id="stat-granted">—</div>
+          <div class="stat-hint">1 Jahr gratis grantet</div>
+        </div>
         <div class="stat-card paid">
           <div class="stat-label">Paid</div>
           <div class="stat-value" id="stat-paid">—</div>
@@ -369,8 +375,8 @@
       </section>
 
       <div class="foot">
-        Eingaben = total Code-Eingaben · Trial = wann Probeabo gestartet ·<br>
-        Paid = ca. 7&nbsp;Tage nach Probeabo-Start (= echte Zahlung nach Trial-Ende)
+        Eingaben = total Code-Eingaben · Trials = 7&nbsp;Tage Probe gestartet ·<br>
+        Gratis = 1&nbsp;Jahr Promotional grantet · Paid = ca. 7&nbsp;Tage nach Probe-Start (echte Zahlung)
       </div>
     </main>
   </div>
@@ -437,23 +443,31 @@
       return Number.isNaN(ms) ? null : ms;
     }
 
-    function isTrialSub(s) {
-      return s.ownership === 'purchased' && (Number(s.gross) || 0) === 0 && s.starts_at === s.current_period_starts_at;
-    }
     function isPaidSub(s) { return (Number(s.gross) || 0) > 0; }
+    // Promotional/Granted = Mahlzait-grantet 1 Jahr gratis (eigene Spalte, kein Trial).
+    function isGrantedSub(s) { return (Number(s.gross) || 0) === 0 && s.store === 'promotional'; }
+    function isTrialSub(s) {
+      return s.ownership === 'purchased' && (Number(s.gross) || 0) === 0
+        && s.starts_at === s.current_period_starts_at
+        && s.store !== 'promotional';
+    }
 
     // Paid wird gefiltert auf das geschätzte Conversion-Datum (Trial-Start + 7 Tage),
-    // damit "Paid im März" auch wirklich "Zahlung im März" bedeutet — nicht
-    // "Trial-Start war im März" (der dann erst Anfang April real konvertiert).
+    // damit "Paid im März" auch wirklich "Zahlung im März" bedeutet.
     const TRIAL_LENGTH_MS = 7 * 24 * 60 * 60 * 1000;
     function classifyHolder(h, fromMs, toMs) {
-      let trial = false, paid = false;
+      let trial = false, granted = false, paid = false;
       for (const s of h.subs || []) {
         if (isPaidSub(s)) {
           const conv = (Number(s.starts_at) || 0) + TRIAL_LENGTH_MS;
           if (fromMs !== null && conv < fromMs) continue;
           if (toMs !== null && conv > toMs) continue;
           paid = true;
+        } else if (isGrantedSub(s)) {
+          const t = s.starts_at;
+          if (fromMs !== null && t !== null && t < fromMs) continue;
+          if (toMs !== null && t !== null && t > toMs) continue;
+          granted = true;
         } else if (isTrialSub(s)) {
           const t = s.starts_at;
           if (fromMs !== null && t !== null && t < fromMs) continue;
@@ -461,7 +475,7 @@
           trial = true;
         }
       }
-      return { trial, paid };
+      return { trial, granted, paid };
     }
 
     function render() {
@@ -471,14 +485,16 @@
 
       const holders = lastData.holders || [];
       let reg = holders.length;
-      let trial = 0, paid = 0;
+      let trial = 0, granted = 0, paid = 0;
       for (const h of holders) {
         const c = classifyHolder(h, fromMs, toMs);
         if (c.paid) paid++;
+        else if (c.granted) granted++;
         else if (c.trial) trial++;
       }
       setStat('stat-reg', reg);
       setStat('stat-trial', trial);
+      setStat('stat-granted', granted);
       setStat('stat-paid', paid);
     }
 

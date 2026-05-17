@@ -230,6 +230,7 @@
     }
     .b-paid { background: var(--green-soft); color: #006B2A; border: 1px solid #C8E6CF; }
     .b-trial { background: var(--blue-soft); color: #0263CC; border: 1px solid #C7DDF5; }
+    .b-granted { background: var(--orange-soft); color: #B0420A; border: 1px solid #F5C99B; }
     .b-reg { background: #F0F0EC; color: #4A4A47; border: 1px solid #E2E2DC; }
     .badge.zero { opacity: 0.55; }
     .payout {
@@ -435,6 +436,7 @@
                 <th>Code</th>
                 <th class="num">Registrierungen</th>
                 <th class="num">Trial</th>
+                <th class="num" title="Promotional Yearly via App Store Connect — gratis grantet, keine Auszahlung">Granted</th>
                 <th class="num">Paid</th>
                 <th class="num">Auszahlung</th>
                 <th class="num" style="text-align:right">Link</th>
@@ -446,6 +448,7 @@
                 <td>Gesamt</td>
                 <td class="num" id="tot-reg">–</td>
                 <td class="num" id="tot-trial">–</td>
+                <td class="num" id="tot-granted">–</td>
                 <td class="num" id="tot-paid">–</td>
                 <td class="num payout" id="tot-payout">–</td>
                 <td></td>
@@ -460,8 +463,10 @@
         </div>
 
         <div class="footer-note">
-          Auszahlung 10&nbsp;€ pro zahlendem Kunden · Trial / Paid = Lifetime-Cohort ·
-          Filter: <b>Trial</b> = Probeabo-Start, <b>Paid</b> = Conversion (Trial-Start&nbsp;+&nbsp;7&nbsp;Tage Apple-Standard-Trial)
+          Auszahlung 10&nbsp;€ pro <b>Paid</b>-Kunde (Granted z&auml;hlt nicht) ·
+          <b>Trial</b> = 7&nbsp;d&nbsp;App-Store-Probe (Filter auf Trial-Start) ·
+          <b>Granted</b> = Mahlzait-grantete Promotional&nbsp;Yearly (z.&nbsp;B. f&uuml;r Influencer selbst) ·
+          <b>Paid</b> = echte Zahlung (Filter auf Trial-Start&nbsp;+&nbsp;7&nbsp;Tage)
         </div>
       </div>
 
@@ -596,23 +601,33 @@
       return Number.isNaN(ms) ? null : ms;
     }
 
-    function isTrialSub(s) {
-      return (s.ownership === "purchased") && ((s.gross || 0) === 0) && s.starts_at === s.current_period_starts_at;
-    }
     function isPaidSub(s) { return (s.gross || 0) > 0; }
+    // Promotional/Granted (Mahlzait-grantet Yearly via App Store Connect Offer-Code)
+    // hat store='promotional' und gross=0. Vorher fälschlich als Trial gezählt.
+    function isGrantedSub(s) { return ((s.gross || 0) === 0) && s.store === "promotional"; }
+    function isTrialSub(s) {
+      return (s.ownership === "purchased") && ((s.gross || 0) === 0)
+        && s.starts_at === s.current_period_starts_at
+        && s.store !== "promotional";
+    }
 
     // Trial-Start liegt typischerweise 7 Tage vor der ersten Zahlung (Apple/Google
     // 7-Tage-Standard-Trial). Wir filtern Paid auf die geschätzte Conversion-Zeit,
     // damit "Paid im März" wirklich "Zahlung im März" bedeutet.
     const TRIAL_LENGTH_MS = 7 * 24 * 60 * 60 * 1000;
     function classifyHolder(holder, fromMs, toMs) {
-      let everTrial = false, everPaid = false;
+      let everTrial = false, everGranted = false, everPaid = false;
       for (const s of holder.subs || []) {
         if (isPaidSub(s)) {
           const conv = (s.starts_at || 0) + TRIAL_LENGTH_MS;
           if (fromMs !== null && conv < fromMs) continue;
           if (toMs !== null && conv > toMs) continue;
           everPaid = true;
+        } else if (isGrantedSub(s)) {
+          const t = s.starts_at;
+          if (fromMs !== null && t !== null && t < fromMs) continue;
+          if (toMs !== null && t !== null && t > toMs) continue;
+          everGranted = true;
         } else if (isTrialSub(s)) {
           const t = s.starts_at;
           if (fromMs !== null && t !== null && t < fromMs) continue;
@@ -620,7 +635,7 @@
           everTrial = true;
         }
       }
-      return { everTrial, everPaid };
+      return { everTrial, everGranted, everPaid };
     }
 
     function render() {
@@ -642,20 +657,22 @@
       let totReg = 0, totTrial = 0, totPaid = 0;
       const rendered = [];
 
+      let totGranted = 0;
       for (const c of codes) {
         let reg = c.holders.length;
-        let trial = 0, paid = 0;
+        let trial = 0, granted = 0, paid = 0;
         for (const h of c.holders) {
           const cls = classifyHolder(h, fromMs, toMs);
           if (cls.everPaid) paid++;
+          else if (cls.everGranted) granted++;
           else if (cls.everTrial) trial++;
         }
-        rendered.push({ code: c.code, influencer: c.influencer, reg, trial, paid, shareToken: c.share_token || null });
-        totReg += reg; totTrial += trial; totPaid += paid;
+        rendered.push({ code: c.code, influencer: c.influencer, reg, trial, granted, paid, shareToken: c.share_token || null });
+        totReg += reg; totTrial += trial; totGranted += granted; totPaid += paid;
       }
 
       rendered.sort((a, b) =>
-        (b.paid - a.paid) || (b.trial - a.trial) || (b.reg - a.reg) || a.code.localeCompare(b.code)
+        (b.paid - a.paid) || (b.granted - a.granted) || (b.trial - a.trial) || (b.reg - a.reg) || a.code.localeCompare(b.code)
       );
 
       if (rendered.length === 0) {
@@ -676,6 +693,7 @@
             </td>
             <td class="num"><span class="badge b-reg${z(r.reg)}">${r.reg}</span></td>
             <td class="num"><span class="badge b-trial${z(r.trial)}">${r.trial}</span></td>
+            <td class="num"><span class="badge b-granted${z(r.granted)}" title="Promotional Yearly (gratis grantet)">${r.granted}</span></td>
             <td class="num"><span class="badge b-paid${z(r.paid)}">${r.paid}</span></td>
             <td class="num payout${z(r.paid)}">${payout}&nbsp;€</td>
             <td class="num" style="text-align:right">${linkCell}</td>
@@ -686,6 +704,7 @@
 
       document.getElementById("tot-reg").textContent = totReg;
       document.getElementById("tot-trial").textContent = totTrial;
+      document.getElementById("tot-granted").textContent = totGranted;
       document.getElementById("tot-paid").textContent = totPaid;
       document.getElementById("tot-payout").innerHTML = (totPaid * PAYOUT_PER_PAID_EUR).toFixed(0) + "&nbsp;€";
     }
