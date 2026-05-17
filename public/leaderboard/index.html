@@ -460,7 +460,8 @@
         </div>
 
         <div class="footer-note">
-          Auszahlung 10&nbsp;€ pro zahlendem Kunden · Trial / Paid = Lifetime-Cohort · Date-Filter wirkt auf Abo-Start (<code>starts_at</code>)
+          Auszahlung 10&nbsp;€ pro zahlendem Kunden · Trial / Paid = Lifetime-Cohort ·
+          Filter: <b>Trial</b> = Probeabo-Start, <b>Paid</b> = Conversion (Trial-Start&nbsp;+&nbsp;7&nbsp;Tage Apple-Standard-Trial)
         </div>
       </div>
 
@@ -600,14 +601,24 @@
     }
     function isPaidSub(s) { return (s.gross || 0) > 0; }
 
+    // Trial-Start liegt typischerweise 7 Tage vor der ersten Zahlung (Apple/Google
+    // 7-Tage-Standard-Trial). Wir filtern Paid auf die geschätzte Conversion-Zeit,
+    // damit "Paid im März" wirklich "Zahlung im März" bedeutet.
+    const TRIAL_LENGTH_MS = 7 * 24 * 60 * 60 * 1000;
     function classifyHolder(holder, fromMs, toMs) {
       let everTrial = false, everPaid = false;
       for (const s of holder.subs || []) {
-        const t = s.starts_at;
-        if (fromMs !== null && t !== null && t < fromMs) continue;
-        if (toMs !== null && t !== null && t > toMs) continue;
-        if (isPaidSub(s)) everPaid = true;
-        else if (isTrialSub(s)) everTrial = true;
+        if (isPaidSub(s)) {
+          const conv = (s.starts_at || 0) + TRIAL_LENGTH_MS;
+          if (fromMs !== null && conv < fromMs) continue;
+          if (toMs !== null && conv > toMs) continue;
+          everPaid = true;
+        } else if (isTrialSub(s)) {
+          const t = s.starts_at;
+          if (fromMs !== null && t !== null && t < fromMs) continue;
+          if (toMs !== null && t !== null && t > toMs) continue;
+          everTrial = true;
+        }
       }
       return { everTrial, everPaid };
     }

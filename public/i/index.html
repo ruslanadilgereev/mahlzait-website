@@ -369,8 +369,8 @@
       </section>
 
       <div class="foot">
-        Eingaben = total Code-Eingaben in der App · Trial &amp; Paid filtern auf den Zeitraum<br>
-        des Abo-Starts. Daten werden in unregelmäßigen Abständen aktualisiert.
+        Eingaben = total Code-Eingaben · Trial = wann Probeabo gestartet ·<br>
+        Paid = ca. 7&nbsp;Tage nach Probeabo-Start (= echte Zahlung nach Trial-Ende)
       </div>
     </main>
   </div>
@@ -442,14 +442,24 @@
     }
     function isPaidSub(s) { return (Number(s.gross) || 0) > 0; }
 
+    // Paid wird gefiltert auf das geschätzte Conversion-Datum (Trial-Start + 7 Tage),
+    // damit "Paid im März" auch wirklich "Zahlung im März" bedeutet — nicht
+    // "Trial-Start war im März" (der dann erst Anfang April real konvertiert).
+    const TRIAL_LENGTH_MS = 7 * 24 * 60 * 60 * 1000;
     function classifyHolder(h, fromMs, toMs) {
       let trial = false, paid = false;
       for (const s of h.subs || []) {
-        const t = s.starts_at;
-        if (fromMs !== null && t !== null && t < fromMs) continue;
-        if (toMs !== null && t !== null && t > toMs) continue;
-        if (isPaidSub(s)) paid = true;
-        else if (isTrialSub(s)) trial = true;
+        if (isPaidSub(s)) {
+          const conv = (Number(s.starts_at) || 0) + TRIAL_LENGTH_MS;
+          if (fromMs !== null && conv < fromMs) continue;
+          if (toMs !== null && conv > toMs) continue;
+          paid = true;
+        } else if (isTrialSub(s)) {
+          const t = s.starts_at;
+          if (fromMs !== null && t !== null && t < fromMs) continue;
+          if (toMs !== null && t !== null && t > toMs) continue;
+          trial = true;
+        }
       }
       return { trial, paid };
     }
