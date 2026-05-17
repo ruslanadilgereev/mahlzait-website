@@ -13,6 +13,10 @@
       "destination": "/go/"
     },
     {
+      "source": "/i/:token",
+      "destination": "/i/index.html"
+    },
+    {
       "source": "/wp-sitemap-posts-page-1.xml",
       "destination": "/api/gone"
     },

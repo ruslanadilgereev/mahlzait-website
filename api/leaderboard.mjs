@@ -11,6 +11,7 @@
 //   for all known holders so trial→paid transitions show up on refresh.
 
 import { google } from "googleapis";
+import { randomBytes } from "crypto";
 
 export const config = { maxDuration: 60 };
 
@@ -176,6 +177,44 @@ async function fetchSubs(cid) {
   });
 }
 
+// ---------- Influencer-share-token minting (used by /api/i) ----------
+// No-ambiguity alphabet (kept in sync with scripts/grant_leaderboard_token.py).
+const TOKEN_LEN = 10;
+const TOKEN_ALPHABET = "abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789";
+function genToken() {
+  let s = "";
+  const bytes = randomBytes(TOKEN_LEN * 4);
+  for (let i = 0; s.length < TOKEN_LEN && i < bytes.length; i++) {
+    // rejection-sample to avoid modulo bias (56 chars * 4 = 224 < 256)
+    if (bytes[i] < TOKEN_ALPHABET.length * 4) s += TOKEN_ALPHABET[bytes[i] % TOKEN_ALPHABET.length];
+  }
+  return s;
+}
+function ensureTokens(state) {
+  const tokens = { ...(state.code_tokens || {}) };
+  const reverse = { ...(state.token_to_code || {}) };
+  const codes = new Set();
+  for (const h of Object.values(state.holders || {})) {
+    if (h.code) codes.add(h.code);
+  }
+  let added = 0;
+  for (const code of codes) {
+    if (tokens[code]) continue;
+    let tok = null;
+    for (let i = 0; i < 64; i++) {
+      const candidate = genToken();
+      if (candidate.length === TOKEN_LEN && !reverse[candidate]) { tok = candidate; break; }
+    }
+    if (!tok) continue;
+    tokens[code] = tok;
+    reverse[tok] = code;
+    added++;
+  }
+  state.code_tokens = tokens;
+  state.token_to_code = reverse;
+  return added;
+}
+
 async function pMap(items, concurrency, fn) {
   const results = new Array(items.length);
   let i = 0;
@@ -303,6 +342,8 @@ async function doRefresh(firestore, prev) {
     last_pull_ts_ms: Date.now(),
     seen_uids: Array.from(seenUids),
     holders,
+    code_tokens: prev?.code_tokens || {},
+    token_to_code: prev?.token_to_code || {},
     last_refresh_meta: {
       ms_total: Date.now() - t0,
       ms_customer_list: tCustomers,
@@ -315,6 +356,9 @@ async function doRefresh(firestore, prev) {
       dropped,
     },
   };
+
+  const tokensAdded = ensureTokens(newState);
+  newState.last_refresh_meta.tokens_added = tokensAdded;
 
   await saveState(firestore, newState);
   return newState;

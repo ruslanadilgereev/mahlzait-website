@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#009688">
+  <title>Mahlzait · Dein Partner-Hub</title>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    :root {
+      --primary: #009688;
+      --primary-hover: #00796B;
+      --primary-soft: #E0F2F1;
+      --green: #008635;
+      --green-soft: #E6F4EA;
+      --blue: #0285FF;
+      --blue-soft: #E6F0FF;
+      --bg: #F7F7F5;
+      --surface: #FFFFFF;
+      --surface-alt: #FAFAF8;
+      --border: #E8E8E5;
+      --border-strong: #D4D4D0;
+      --text: #0D0D0D;
+      --text-muted: #6B6B68;
+      --text-faint: #9A9A95;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-lg: 0 12px 32px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.05);
+      --radius: 16px;
+      --radius-sm: 10px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-feature-settings: "ss01", "cv11";
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      min-height: 100vh;
+      padding: 32px 16px 64px;
+    }
+    .wrap { width: 100%; max-width: 720px; margin: 0 auto; }
+
+    .top {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 32px;
+      color: var(--text-muted);
+      font-size: 13px;
+    }
+    .top img { width: 28px; height: 28px; border-radius: 7px; }
+    .top span { font-weight: 700; color: var(--text); letter-spacing: -0.005em; }
+
+    .hidden { display: none !important; }
+
+    /* ===== Loading / Error ===== */
+    .loader {
+      text-align: center;
+      padding: 80px 24px;
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    .loader .spinner {
+      display: inline-block;
+      width: 24px; height: 24px;
+      border: 2.5px solid var(--border);
+      border-top-color: var(--primary);
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-bottom: 16px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .error-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-md);
+      padding: 48px 32px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .error-card .icon { font-size: 42px; margin-bottom: 16px; opacity: 0.7; }
+    .error-card h2 {
+      font-size: 19px; font-weight: 700;
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    .error-card p {
+      color: var(--text-muted);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+
+    /* ===== Hero ===== */
+    .hero {
+      background: linear-gradient(160deg, var(--primary) 0%, #00897B 100%);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-lg);
+      padding: 36px 28px 32px;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: -40%; right: -20%;
+      width: 280px; height: 280px;
+      background: radial-gradient(circle, rgba(255,255,255,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .hero-label {
+      font-size: 12px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      opacity: 0.85;
+      margin-bottom: 12px;
+    }
+    .hero-code {
+      font-family: ui-monospace, "SF Mono", "Cascadia Code", Consolas, monospace;
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin-bottom: 10px;
+      word-break: break-all;
+    }
+    .hero-influencer {
+      font-size: 14px;
+      font-weight: 500;
+      opacity: 0.92;
+    }
+
+    /* ===== Discount card ===== */
+    .discount-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      padding: 20px 22px;
+      margin-bottom: 24px;
+    }
+    .discount-icon {
+      font-size: 28px;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+    .discount-title {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+    .discount-desc {
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--text);
+    }
+    .discount-desc strong {
+      color: var(--primary);
+      font-weight: 700;
+    }
+    .discount-pricing {
+      margin-top: 8px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .discount-pricing .full {
+      text-decoration: line-through;
+      opacity: 0.7;
+      margin-left: 4px;
+    }
+
+    /* ===== Controls ===== */
+    .controls {
+      display: flex; align-items: center; gap: 8px; flex-wrap: wrap;
+      padding: 12px 14px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      margin-bottom: 14px;
+    }
+    .controls label {
+      font-size: 12px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+    .controls input[type="date"] {
+      padding: 6px 9px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 13px;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .controls input[type="date"]:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px var(--primary-soft);
+    }
+    .controls .sep { color: var(--text-faint); font-size: 12px; }
+    .controls button {
+      margin-left: auto;
+      padding: 7px 12px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text-muted);
+      font-size: 12px; font-weight: 500;
+      font-family: inherit;
+      cursor: pointer;
+      transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    .controls button:hover {
+      background: var(--surface-alt);
+      border-color: var(--border-strong);
+      color: var(--text);
+    }
+
+    /* ===== Stats grid ===== */
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-sm);
+      padding: 22px 18px 18px;
+      text-align: center;
+    }
+    .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 10px;
+    }
+    .stat-value {
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1;
+      letter-spacing: -0.02em;
+      font-variant-numeric: tabular-nums;
+      color: var(--text);
+      margin-bottom: 6px;
+    }
+    .stat-value.zero { color: var(--text-faint); font-weight: 700; }
+    .stat-card.trial .stat-value:not(.zero) { color: var(--blue); }
+    .stat-card.paid .stat-value:not(.zero) { color: var(--green); }
+    .stat-hint {
+      font-size: 11px;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    /* ===== Footer ===== */
+    .foot {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 11px;
+      color: var(--text-faint);
+      line-height: 1.6;
+    }
+
+    /* ===== Mobile ===== */
+    @media (max-width: 520px) {
+      body { padding: 20px 12px 40px; }
+      .hero { padding: 28px 20px 24px; }
+      .hero-code { font-size: 34px; }
+      .stats-grid { gap: 8px; }
+      .stat-card { padding: 18px 10px 14px; }
+      .stat-value { font-size: 30px; }
+      .stat-hint { font-size: 10px; }
+      .discount-card { padding: 16px 18px; gap: 12px; }
+      .discount-desc { font-size: 14px; }
+      .controls { padding: 10px 12px; gap: 6px; }
+      .controls label { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <img src="/favicon.svg" alt="Mahlzait" onerror="this.src='/logo.png'">
+      <span>Mahlzait</span>
+      <span style="color:var(--text-faint); font-weight:400">· Partner-Hub</span>
+    </div>
+
+    <main id="loading">
+      <div class="loader">
+        <div class="spinner"></div>
+        <div>Lade deine Daten</div>
+      </div>
+    </main>
+
+    <main id="error" class="hidden">
+      <div class="error-card">
+        <div class="icon">🔒</div>
+        <h2>Link ungültig</h2>
+        <p>Dieser Link ist abgelaufen oder fehlerhaft.<br>Bitte melde dich bei Ruslan für einen neuen Link.</p>
+      </div>
+    </main>
+
+    <main id="app" class="hidden">
+      <section class="hero">
+        <div class="hero-label">Dein Code</div>
+        <div class="hero-code" id="code-display">—</div>
+        <div class="hero-influencer" id="influencer-display"></div>
+      </section>
+
+      <section class="discount-card">
+        <div class="discount-icon">🎁</div>
+        <div style="flex: 1; min-width: 0">
+          <div class="discount-title">Das bekommen deine Follower</div>
+          <div class="discount-desc">
+            Dein Code gibt <strong id="discount-pct">25%</strong> Rabatt auf das Jahresabo.
+          </div>
+          <div class="discount-pricing">
+            <strong id="discount-discounted">29,99 €</strong><span class="full" id="discount-full">39,99 €</span>
+            · gilt in DE, AT, CH
+          </div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <label for="from">Zeitraum</label>
+        <input id="from" type="date">
+        <span class="sep">bis</span>
+        <input id="to" type="date">
+        <button type="button" onclick="resetFilter()">Zurücksetzen</button>
+      </section>
+
+      <section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-label">Eingaben</div>
+          <div class="stat-value" id="stat-reg">—</div>
+          <div class="stat-hint">Code-Eingaben gesamt</div>
+        </div>
+        <div class="stat-card trial">
+          <div class="stat-label">Trials</div>
+          <div class="stat-value" id="stat-trial">—</div>
+          <div class="stat-hint">7-Tage-Probeabo gestartet</div>
+        </div>
+        <div class="stat-card paid">
+          <div class="stat-label">Paid</div>
+          <div class="stat-value" id="stat-paid">—</div>
+          <div class="stat-hint">Zahlende Kunden</div>
+        </div>
+      </section>
+
+      <div class="foot">
+        Eingaben = total Code-Eingaben in der App · Trial &amp; Paid filtern auf den Zeitraum<br>
+        des Abo-Starts. Daten werden in unregelmäßigen Abständen aktualisiert.
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // ---------- Token from URL: /i/<token> ----------
+    function extractToken() {
+      const path = window.location.pathname.replace(/\/+$/, '');
+      const m = path.match(/^\/i\/([A-Za-z0-9_-]{4,32})$/);
+      if (m) return m[1];
+      // fallback: query param ?t=...
+      const q = new URLSearchParams(window.location.search).get('t');
+      if (q && /^[A-Za-z0-9_-]{4,32}$/.test(q)) return q;
+      return null;
+    }
+
+    let lastData = null;
+
+    async function load() {
+      const token = extractToken();
+      if (!token) return showError();
+      try {
+        const r = await fetch(`/api/i?t=${encodeURIComponent(token)}`);
+        if (r.status === 404 || r.status === 400) return showError();
+        if (!r.ok) throw new Error(`HTTP ${r.status}`);
+        const data = await r.json();
+        showApp(data);
+      } catch (e) {
+        console.error(e);
+        showError();
+      }
+    }
+
+    function showApp(d) {
+      lastData = d;
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('app').classList.remove('hidden');
+      document.getElementById('code-display').textContent = d.code;
+      if (d.influencer) {
+        document.getElementById('influencer-display').textContent = d.influencer;
+      } else {
+        document.getElementById('influencer-display').style.display = 'none';
+      }
+      if (d.discount) {
+        document.getElementById('discount-pct').textContent = d.discount.pct + '%';
+        document.getElementById('discount-discounted').textContent = formatEur(d.discount.yearly_discounted_eur);
+        document.getElementById('discount-full').textContent = formatEur(d.discount.yearly_full_eur);
+      }
+      render();
+    }
+
+    function showError() {
+      document.getElementById('loading').classList.add('hidden');
+      document.getElementById('error').classList.remove('hidden');
+    }
+
+    function formatEur(n) {
+      return Number(n).toLocaleString('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + ' €';
+    }
+
+    function dateToMs(s, end) {
+      if (!s) return null;
+      const ms = new Date(s + (end ? 'T23:59:59.999Z' : 'T00:00:00.000Z')).getTime();
+      return Number.isNaN(ms) ? null : ms;
+    }
+
+    function isTrialSub(s) {
+      return s.ownership === 'purchased' && (Number(s.gross) || 0) === 0 && s.starts_at === s.current_period_starts_at;
+    }
+    function isPaidSub(s) { return (Number(s.gross) || 0) > 0; }
+
+    function classifyHolder(h, fromMs, toMs) {
+      let trial = false, paid = false;
+      for (const s of h.subs || []) {
+        const t = s.starts_at;
+        if (fromMs !== null && t !== null && t < fromMs) continue;
+        if (toMs !== null && t !== null && t > toMs) continue;
+        if (isPaidSub(s)) paid = true;
+        else if (isTrialSub(s)) trial = true;
+      }
+      return { trial, paid };
+    }
+
+    function render() {
+      if (!lastData) return;
+      const fromMs = dateToMs(document.getElementById('from').value, false);
+      const toMs = dateToMs(document.getElementById('to').value, true);
+
+      const holders = lastData.holders || [];
+      let reg = holders.length;
+      let trial = 0, paid = 0;
+      for (const h of holders) {
+        const c = classifyHolder(h, fromMs, toMs);
+        if (c.paid) paid++;
+        else if (c.trial) trial++;
+      }
+      setStat('stat-reg', reg);
+      setStat('stat-trial', trial);
+      setStat('stat-paid', paid);
+    }
+
+    function setStat(id, n) {
+      const el = document.getElementById(id);
+      el.textContent = n;
+      el.classList.toggle('zero', n === 0);
+    }
+
+    function resetFilter() {
+      document.getElementById('from').value = '';
+      document.getElementById('to').value = '';
+      render();
+    }
+
+    document.getElementById('from').addEventListener('change', render);
+    document.getElementById('to').addEventListener('change', render);
+
+    load();
+  </script>
+</body>
+</html>
