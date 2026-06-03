@@ -5,7 +5,8 @@ const templateConfig: TemplateConfig = {
   name: "Mahlzait",
   seo: {
     title: "Mahlzait – Kalorienzähler & Food-Tracker mit KI",
-    description: "Multimodaler Kalorienzähler mit KI: Mahlzeiten per Foto, Text, Video, Barcode oder Rezept-Link tracken. Live-Web-Search mit Quellenangaben für unbekannte Lebensmittel. 3 KI-Modelle (Fast/Thinking/Pro), 8 Makros. Open Food Facts + USDA. DSGVO-konform, in Berlin entwickelt.",
+    description:
+      "Multimodaler Kalorienzähler mit KI: Mahlzeiten per Foto, Text, Video, Barcode oder Rezept-Link tracken. Live-Web-Search mit Quellenangaben für unbekannte Lebensmittel. 3 KI-Modelle (Fast/Thinking/Pro), 8 Makros. Open Food Facts + USDA. DSGVO-konform, in Berlin entwickelt.",
   },
   // Draws grid behind main container
   backgroundGrid: false,
@@ -15,7 +16,8 @@ const templateConfig: TemplateConfig = {
   forceTheme: false,
   // Shows switch to toggle between dark and light modes
   showThemeSwitch: true,
-  appStoreLink: "https://apps.apple.com/app/apple-store/id6747400456?pt=127913951&ct=homepage&mt=8",
+  appStoreLink:
+    "https://apps.apple.com/app/apple-store/id6747400456?pt=127913951&ct=homepage&mt=8",
   // Google Play: alle UTMs MÜSSEN URL-encoded im einzelnen `referrer=`-
   // Parameter stehen. Direkte Query-Params (?utm_source=…) werden vom
   // Play Store ignoriert und kommen NIE in der App an.
@@ -44,7 +46,10 @@ const templateConfig: TemplateConfig = {
     // SEO-Links für Calculator-Seiten
     calculatorLinks: [
       { href: "/kalorienbedarf-berechnen", title: "Kalorienbedarf berechnen" },
-      { href: "/kaloriendefizit-berechnen", title: "Kaloriendefizit berechnen" },
+      {
+        href: "/kaloriendefizit-berechnen",
+        title: "Kaloriendefizit berechnen",
+      },
       { href: "/makros-berechnen", title: "Makros berechnen" },
       { href: "/essensplan-erstellen", title: "Essensplan erstellen" },
       { href: "/trainingsplan-erstellen", title: "Trainingsplan erstellen" },
@@ -90,12 +95,14 @@ const templateConfig: TemplateConfig = {
   home: {
     seo: {
       title: "Mahlzait – Kalorienzähler mit KI | Tracke Mahlzeiten in Sekunden",
-      description: "Mahlzait ist ein multimodaler Kalorienzähler für iOS und Android. Mahlzeiten per Foto, Video, Barcode, Rezept-Link oder Text tracken — mit Live-Web-Recherche bei unklaren Werten. 8 Makros, Quellenangabe pro Eintrag, 10 Mio+ Lebensmittel. DSGVO-konform, in Berlin entwickelt.",
+      description:
+        "Mahlzait ist ein multimodaler Kalorienzähler für iOS und Android. Mahlzeiten per Foto, Video, Barcode, Rezept-Link oder Text tracken — mit Live-Web-Recherche bei unklaren Werten. 8 Makros, Quellenangabe pro Eintrag, 10 Mio+ Lebensmittel. DSGVO-konform, in Berlin entwickelt.",
     },
     testimonials: {
       id: "testimonials",
       title: "Erfahrungsberichte",
-      subtitle: "Ergebnisse von Mahlzait-Nutzern (Selbstberichte, keine Garantie für individuelle Ergebnisse)",
+      subtitle:
+        "Ergebnisse von Mahlzait-Nutzern (Selbstberichte, keine Garantie für individuelle Ergebnisse)",
       cards: [
         {
           name: "Mojo89111 – App Store",
@@ -110,7 +117,7 @@ const templateConfig: TemplateConfig = {
         {
           name: "olaf_scholz_official – App Store",
           comment:
-            "Klassischer Fall von einem \"hidden champ\". Keine große Firma dahinter aber wesentlich performanter und preiswerter als die Konkurrenz. Hier wird Datenschutz wertgeschätzt.",
+            'Klassischer Fall von einem "hidden champ". Keine große Firma dahinter aber wesentlich performanter und preiswerter als die Konkurrenz. Hier wird Datenschutz wertgeschätzt.',
         },
         {
           name: "Wladmax97 – App Store",
@@ -265,48 +272,42 @@ const templateConfig: TemplateConfig = {
         {
           icon: "🔍",
           title: "Schaut nach, statt zu raten",
-          body:
-            "Wenn ein Produkt unklar ist oder ein Restaurant-Gericht keine Standard-Nährwerte hat, recherchiert Mahlzait live im Web — auf der Hersteller-Website, in Foodblogs, in offiziellen Datenquellen. Du siehst die Quelle direkt am Eintrag.",
+          body: "Wenn ein Produkt unklar ist oder ein Restaurant-Gericht keine Standard-Nährwerte hat, recherchiert Mahlzait live im Web — auf der Hersteller-Website, in Foodblogs, in offiziellen Datenquellen. Du siehst die Quelle direkt am Eintrag.",
           example:
             "Beispiel: Du fotografierst dein Mittagessen im Vapiano. Mahlzait findet die offiziellen Nährwertangaben des Restaurants statt einer generischen 'Pasta'-Schätzung.",
         },
         {
           icon: "📥",
           title: "Tracke wie du isst, nicht wie die App will",
-          body:
-            "Foto vom Teller. Video bis 15 Sek. Rezept-Link von Web-Rezeptseiten. Barcode. Oder ein Satz Text. Mahlzait versteht alle fünf — und kombiniert sie wenn nötig.",
+          body: "Foto vom Teller. Video bis 15 Sek. Rezept-Link von Web-Rezeptseiten. Barcode. Oder ein Satz Text. Mahlzait versteht alle fünf — und kombiniert sie wenn nötig.",
           example:
             "Beispiel: Schick einen Rezept-Link von Chefkoch oder EatSmarter. Mahlzait extrahiert Zutaten, schätzt Mengen und legt das Rezept als Mahlzeit an.",
         },
         {
           icon: "🔧",
           title: "Findet auch was nicht in der DB steht",
-          body:
-            "Wenn ein Barcode in keiner Datenbank ist, gibt Mahlzait nicht auf: die KI analysiert das Foto vom Etikett selbst, liest Nährwerte aus und merkt sich das Produkt für die Zukunft.",
+          body: "Wenn ein Barcode in keiner Datenbank ist, gibt Mahlzait nicht auf: die KI analysiert das Foto vom Etikett selbst, liest Nährwerte aus und merkt sich das Produkt für die Zukunft.",
           example:
             "Beispiel: Regionales Bio-Müsli vom Hofladen, kein Barcode-Treffer? Foto vom Etikett genügt — die Werte stehen in 3 Sekunden.",
         },
         {
           icon: "✅",
           title: "Du siehst, woher die Werte kommen",
-          body:
-            "Mahlzait zeigt bei jeder Mahlzeit, welche Quelle genutzt wurde — Hersteller-Website, Open Food Facts, eigene Bildanalyse. Du kannst die Werte nachprüfen, anders als bei Apps, die nur eine Einzelzahl liefern.",
+          body: "Mahlzait zeigt bei jeder Mahlzeit, welche Quelle genutzt wurde — Hersteller-Website, Open Food Facts, eigene Bildanalyse. Du kannst die Werte nachprüfen, anders als bei Apps, die nur eine Einzelzahl liefern.",
           example:
             "Beispiel: Quelle: rewe.de — sichtbar an jedem Eintrag, mit Tap zur Korrektur.",
         },
         {
           icon: "🎯",
           title: "Lernt aus deinem Tag",
-          body:
-            "Mahlzait kennt deinen Tagesverlauf: was du schon gegessen hast, welche Makros noch offen sind, welche Mahlzeiten du regelmäßig magst. Vorschläge sind keine zufälligen Rezepte aus einer Liste, sondern auf deine Reststruktur zugeschnitten.",
+          body: "Mahlzait kennt deinen Tagesverlauf: was du schon gegessen hast, welche Makros noch offen sind, welche Mahlzeiten du regelmäßig magst. Vorschläge sind keine zufälligen Rezepte aus einer Liste, sondern auf deine Reststruktur zugeschnitten.",
           example:
             "Beispiel: 16 Uhr, noch 38 g Protein offen, 600 kcal Budget — Vorschlag: Skyr-Bowl mit Beeren statt Pasta-Salat.",
         },
         {
           icon: "⚡",
           title: "Drei KI-Modelle, automatisch passend",
-          body:
-            "Mahlzait wählt im Hintergrund zwischen drei Gemini-3-Modellen — schnell für klare Eingaben, tiefer für unklare Gerichte, Pro-Modus für mehrere Komponenten gleichzeitig. Du musst nichts einstellen, das Routing passiert nach Komplexität.",
+          body: "Mahlzait wählt im Hintergrund zwischen drei Gemini-3-Modellen — schnell für klare Eingaben, tiefer für unklare Gerichte, Pro-Modus für mehrere Komponenten gleichzeitig. Du musst nichts einstellen, das Routing passiert nach Komplexität.",
           example:
             "Beispiel: Banane scannen → Schnell-Routing. Restaurant-Buddha-Bowl mit 9 Komponenten → Pro-Routing.",
         },
@@ -332,12 +333,14 @@ const templateConfig: TemplateConfig = {
             "Ja. Mahlzait erkennt Rezeptseiten mit Schema.org-Markup (z. B. Chefkoch, EatSmarter) und liest Zutaten plus Mengen automatisch aus. Fehlende Mengen schätzt die KI mit Plausibilitäts-Logik, Nährwerte werden pro Portion berechnet. Klassische Tracking-Apps wie YAZIO oder MyFitnessPal unterstützen Rezept-URL-Import gar nicht.",
         },
         {
-          question: "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
+          question:
+            "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
             "Mahlzait ist kostenlos nutzbar mit Lebensmittelsuche, Barcode-Scanner, manueller Eingabe und Rezepterstellung. Mahlzait Pro kostet 4,99 €/Monat oder 39,99 €/Jahr (3,33 €/Monat) und bietet unbegrenzte KI-Features wie Foto-Logging und Mahlzeit-Vorschläge.",
         },
         {
-          question: "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
+          question:
+            "Wie funktioniert das KI-Logging? Kann die KI deutsche Lebensmittel erkennen?",
           answer:
             "Das KI-Logging nutzt KI zur Bilderkennung und eine Datenbank mit 10 Mio+ Einträgen. Nutzer fotografieren oder beschreiben Mahlzeiten per Text. Über 14.500 Mahlzeiten wurden bereits per KI-Foto geloggt. Portionsgrößen sind manuell anpassbar.",
         },
@@ -362,7 +365,8 @@ const templateConfig: TemplateConfig = {
             "Der individuelle Kalorienbedarf wird nach der Mifflin-St Jeor-Formel berechnet (validiert durch Frankenfield et al., 2005). Die DGE empfiehlt ein Defizit von 300–500 kcal/Tag für gesundes Abnehmen – das entspricht ca. 0,5 kg Gewichtsverlust pro Woche.",
         },
         {
-          question: "Wie unterscheidet sich Mahlzait technisch von MyFitnessPal, YAZIO, Lifesum und CalAI?",
+          question:
+            "Wie unterscheidet sich Mahlzait technisch von MyFitnessPal, YAZIO, Lifesum und CalAI?",
           answer:
             "Drei Punkte: Erstens nutzt Mahlzait eine mitdenkende KI mit Live-Web-Recherche bei unklaren Werten. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen Nährwerte aus dem Trainings-Datensatz ihres Sprachmodells — ohne aktuelle Web-Verifikation, vergleichbar einem ChatGPT ohne Internet. Zweitens versteht Mahlzait fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text, Rezept-Link) — die Mitbewerber primär Foto und Barcode. Drittens zeigt Mahlzait die Quelle pro Eintrag, sodass du die Werte nachprüfen kannst statt sie blind zu übernehmen. Preislich ist Mahlzait Pro mit 39,99 €/Jahr deutlich günstiger als die Premium-Pläne der etablierten Konkurrenz.",
         },
@@ -382,12 +386,14 @@ const templateConfig: TemplateConfig = {
             "Die Erkennung funktioniert am besten bei klaren, gut beleuchteten Fotos einzelner oder weniger Komponenten. Bei Mehrkomponenten-Gerichten kann die KI über Live-Web-Recherche zusätzliche Daten heranziehen, sonst greift sie auf Plausibilitäts-Schätzungen zurück. Portionsgrößen kannst du jederzeit manuell anpassen.",
         },
         {
-          question: "Was passiert, wenn ein Produkt nicht in der Datenbank ist?",
+          question:
+            "Was passiert, wenn ein Produkt nicht in der Datenbank ist?",
           answer:
             "Mahlzait gibt nicht auf. Wenn ein Barcode keinen Treffer liefert oder ein Foto unklar ist, analysiert die KI das Etikett oder Bild selbst, liest Nährwerte aus und legt das Produkt als verifizierten Eintrag an. Beim nächsten Mal ist es sofort verfügbar. Diese selbstheilende Datenbank wächst mit jeder Nutzung — besonders wertvoll für regionale Produkte, Bio-Hersteller und kleine Marken, die in klassischen Datenbanken fehlen.",
         },
         {
-          question: "Wie zeigt Mahlzait, woher die Werte einer Mahlzeit kommen?",
+          question:
+            "Wie zeigt Mahlzait, woher die Werte einer Mahlzeit kommen?",
           answer:
             "Bei jedem Eintrag siehst du die genutzte Quelle: Hersteller-Website, Open Food Facts, USDA oder die eigene Bildanalyse. Bei Mehrkomponenten-Gerichten oder schlechten Fotos kannst du die Werte mit einem Tap korrigieren, bei eindeutigen Treffern (z. B. Barcode aus offizieller Datenbank) übernimmst du den Eintrag ohne Prüfung. Diese Transparenz fehlt bei allen großen Mitbewerbern — dort siehst du nur eine Zahl, ohne nachprüfen zu können, woher sie kommt.",
         },
@@ -424,7 +430,8 @@ const templateConfig: TemplateConfig = {
     pricing: {
       id: "pricing",
       title: "Preise",
-      subtitle: "Kostenloser Kalorienzähler – Pro-Version für unlimited AI-Features (Stand: Februar 2026)",
+      subtitle:
+        "Kostenloser Kalorienzähler – Pro-Version für unlimited AI-Features (Stand: Februar 2026)",
       actionText: "App herunterladen",
       plans: [
         {
@@ -466,7 +473,8 @@ const templateConfig: TemplateConfig = {
   privacyPolicy: {
     seo: {
       title: "Privacy Policy - Mahlzait Calorie Counter App",
-      description: "Learn how Mahlzait protects your data: GDPR compliant, data stored in Germany, no third-party sharing. Transparent privacy policy for our calorie counter app.",
+      description:
+        "Learn how Mahlzait protects your data: GDPR compliant, data stored in Germany, no third-party sharing. Transparent privacy policy for our calorie counter app.",
     },
     content: `# Datenschutzerklärung
 
@@ -537,8 +545,9 @@ Dabei können insbesondere folgende Daten verarbeitet werden:
 - IP‑Adresse (in der Regel gekürzt/anonymisiert, soweit konfiguriert).
 
 **Zweck:** Reichweitenmessung und Verbesserung der Website.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
-**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).\
+**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.\
+**Wie Google die erhobenen Daten verwendet:** Informationen finden Sie auf Googles Seite zur unternehmerischen Datenverantwortung: [https://business.safety.google/privacy/](https://business.safety.google/privacy/).
 
 ### 3.5 Microsoft Clarity (nur mit Einwilligung)
 
@@ -557,8 +566,9 @@ Dabei können u.a. verarbeitet werden:
 - technische Identifier (z.B. Cookie‑/Pixel‑IDs).
 
 **Zweck:** Kampagnenmessung, Attribution, Marketing‑Optimierung.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).  
-**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).\
+**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.\
+**Wie Google die erhobenen Daten verwendet:** Informationen finden Sie auf Googles Seite zur unternehmerischen Datenverantwortung: [https://business.safety.google/privacy/](https://business.safety.google/privacy/).
 
 ## 4. Datenverarbeitung in der App
 
@@ -733,7 +743,8 @@ Wir können diese Datenschutzerklärung aktualisieren. Die jeweils aktuelle Vers
   cookiesPolicy: {
     seo: {
       title: "Cookie-Richtlinie - Mahlzait Kalorienzähler App",
-      description: "Cookie-Einstellungen für Mahlzait: Erfahre welche Cookies wir nutzen (Analytics, Marketing) und wie du sie verwalten kannst. DSGVO-konforme Cookie-Richtlinie.",
+      description:
+        "Cookie-Einstellungen für Mahlzait: Erfahre welche Cookies wir nutzen (Analytics, Marketing) und wie du sie verwalten kannst. DSGVO-konforme Cookie-Richtlinie.",
     },
     content: `# Cookie-Richtlinie / Cookie-Einstellungen (Website)
 
@@ -803,7 +814,8 @@ Telefon: 017643657343
   termsAndConditions: {
     seo: {
       title: "Terms and Conditions - Mahlzait Calorie Counter",
-      description: "Terms of Service for Mahlzait app: Usage rights, limitations, liability and data protection. Clear terms for Free and Pro versions on iOS & Android.",
+      description:
+        "Terms of Service for Mahlzait app: Usage rights, limitations, liability and data protection. Clear terms for Free and Pro versions on iOS & Android.",
     },
     content: `# Nutzungsbedingungen
 
