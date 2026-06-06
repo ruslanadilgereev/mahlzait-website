@@ -13,7 +13,7 @@ export function generateSoftwareAppSchema(
   name: string,
   description: string,
   appStoreUrl: string,
-  googlePlayUrl: string
+  googlePlayUrl: string,
 ): WithContext<Thing> {
   return {
     "@context": "https://schema.org",
@@ -42,7 +42,7 @@ export function generateSoftwareAppSchema(
       },
       {
         "@type": "Offer",
-        price: "39.99",
+        price: "29.99",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
         description: "Mahlzait Pro Jahr",

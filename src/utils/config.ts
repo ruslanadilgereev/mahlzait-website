@@ -336,7 +336,7 @@ const templateConfig: TemplateConfig = {
           question:
             "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
-            "Mahlzait ist kostenlos nutzbar mit Lebensmittelsuche, Barcode-Scanner, manueller Eingabe und Rezepterstellung. Mahlzait Pro kostet 4,99 €/Monat oder 39,99 €/Jahr (3,33 €/Monat) und bietet unbegrenzte KI-Features wie Foto-Logging und Mahlzeit-Vorschläge.",
+            "Mahlzait ist kostenlos nutzbar mit Lebensmittelsuche, Barcode-Scanner, manueller Eingabe und Rezepterstellung. Mahlzait Pro kostet 4,99 €/Monat oder 29,99 €/Jahr (2,50 €/Monat) und bietet unbegrenzte KI-Features wie Foto-Logging und Mahlzeit-Vorschläge.",
         },
         {
           question:
@@ -368,7 +368,7 @@ const templateConfig: TemplateConfig = {
           question:
             "Wie unterscheidet sich Mahlzait technisch von MyFitnessPal, YAZIO, Lifesum und CalAI?",
           answer:
-            "Drei Punkte: Erstens nutzt Mahlzait eine mitdenkende KI mit Live-Web-Recherche bei unklaren Werten. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen Nährwerte aus dem Trainings-Datensatz ihres Sprachmodells — ohne aktuelle Web-Verifikation, vergleichbar einem ChatGPT ohne Internet. Zweitens versteht Mahlzait fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text, Rezept-Link) — die Mitbewerber primär Foto und Barcode. Drittens zeigt Mahlzait die Quelle pro Eintrag, sodass du die Werte nachprüfen kannst statt sie blind zu übernehmen. Preislich ist Mahlzait Pro mit 39,99 €/Jahr deutlich günstiger als die Premium-Pläne der etablierten Konkurrenz.",
+            "Drei Punkte: Erstens nutzt Mahlzait eine mitdenkende KI mit Live-Web-Recherche bei unklaren Werten. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen Nährwerte aus dem Trainings-Datensatz ihres Sprachmodells — ohne aktuelle Web-Verifikation, vergleichbar einem ChatGPT ohne Internet. Zweitens versteht Mahlzait fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text, Rezept-Link) — die Mitbewerber primär Foto und Barcode. Drittens zeigt Mahlzait die Quelle pro Eintrag, sodass du die Werte nachprüfen kannst statt sie blind zu übernehmen. Preislich ist Mahlzait Pro mit 29,99 €/Jahr deutlich günstiger als die Premium-Pläne der etablierten Konkurrenz.",
         },
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",
@@ -448,13 +448,13 @@ const templateConfig: TemplateConfig = {
         },
         {
           title: "Mahlzait Pro Jahr",
-          price: "39,99 €/Jahr",
+          price: "29,99 €/Jahr",
           featured: true,
           rows: [
             "Unlimited AI Meal Logging (Foto/Text)",
             "Unlimited AI-Vorschläge (Kühlschrank etc.)",
             "Unlimited Rezept-Import von Web-Rezeptseiten",
-            "Spare 33% (nur 3,33 €/Monat)",
+            "Spare 50% (nur 2,50 €/Monat)",
           ],
         },
         {

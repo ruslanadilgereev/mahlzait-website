@@ -25,7 +25,7 @@ export function generateMobileAppSchema(
   name: string,
   description: string,
   appStoreUrl: string,
-  googlePlayUrl: string
+  googlePlayUrl: string,
 ): WithContext<Thing> {
   const base: WithContext<Thing> = {
     "@context": "https://schema.org",
@@ -52,7 +52,7 @@ export function generateMobileAppSchema(
       },
       {
         "@type": "Offer",
-        price: "39.99",
+        price: "29.99",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
         description: "Mahlzait Pro Jahr",
@@ -65,11 +65,13 @@ export function generateMobileAppSchema(
       `${url}/screenshots/3.webp`,
     ],
     softwareVersion: "1.0.0",
-    releaseNotes: "Multimodale KI mit Live-Web-Recherche, 3 Gemini-Modelle, Rezept-Import, Quellenangabe pro Eintrag",
+    releaseNotes:
+      "Multimodale KI mit Live-Web-Recherche, 3 Gemini-Modelle, Rezept-Import, Quellenangabe pro Eintrag",
     datePublished: "2024-11-01",
     inLanguage: ["de-DE", "en-US", "ru-RU"],
     applicationSubCategory: "Diet & Nutrition",
-    keywords: "kalorienzähler, multimodale ki, live web search, food tracking ki, kalorienzähler mit foto, kalorien per text tracken, gemini grounding, dsgvo kalorien-app",
+    keywords:
+      "kalorienzähler, multimodale ki, live web search, food tracking ki, kalorienzähler mit foto, kalorien per text tracken, gemini grounding, dsgvo kalorien-app",
     featureList: [
       "Multimodal Input (Photo, Text, Video, Barcode, Recipe URL Import)",
       "Live Web Search with Citations",
@@ -85,7 +87,11 @@ export function generateMobileAppSchema(
     ],
   };
 
-  if (appRatings.hasAggregateRating && appRatings.ratingValue && appRatings.ratingCount) {
+  if (
+    appRatings.hasAggregateRating &&
+    appRatings.ratingValue &&
+    appRatings.ratingCount
+  ) {
     (base as unknown as Record<string, unknown>).aggregateRating = {
       "@type": "AggregateRating",
       ratingValue: String(appRatings.ratingValue),
@@ -97,4 +103,3 @@ export function generateMobileAppSchema(
 
   return base;
 }
-

@@ -19,7 +19,7 @@ export const GET: APIRoute = async (context) => {
     title: `${templateConfig.name} - RSS Feed`,
     description: templateConfig.seo.description,
     site: context.site || siteUrl,
-    
+
     items: [
       // Wissen-Artikel zuerst (neueste zuerst)
       ...wissenItems,
@@ -67,7 +67,7 @@ export const GET: APIRoute = async (context) => {
         title: "Kostenlos starten - Mahlzait fuer alle",
         link: `${siteUrl}/#pricing`,
         description:
-          "Mahlzait ist kostenlos nutzbar mit allen wichtigen Features. Fuer unlimited AI-Features gibt es Mahlzait Pro ab 4,99 Euro/Monat oder 39,99 Euro/Jahr. Keine versteckten Kosten.",
+          "Mahlzait ist kostenlos nutzbar mit allen wichtigen Features. Fuer unlimited AI-Features gibt es Mahlzait Pro ab 4,99 Euro/Monat oder 29,99 Euro/Jahr. Keine versteckten Kosten.",
         pubDate: new Date("2024-11-22"),
         categories: ["Preise", "Angebote", "Free"],
       },
@@ -88,7 +88,7 @@ export const GET: APIRoute = async (context) => {
         categories: ["Sprachen", "International", "Features"],
       },
     ],
-    
+
     customData: `
       <language>de-DE</language>
       <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
