@@ -447,7 +447,7 @@
 
     .cu-grid {
       display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-      gap: 16px; align-items: start;
+      gap: 16px; align-items: stretch;
     }
     .cu-card {
       background: var(--surface); border: 1px solid var(--border);
@@ -460,7 +460,7 @@
       margin-bottom: 2px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px;
     }
     .cu-card h3 .h-n { font-size: 11px; font-weight: 600; color: var(--text-faint); }
-    .cu-card .cu-chart { margin-top: 14px; }
+    .cu-card .cu-chart { margin-top: 14px; flex: 1; display: flex; flex-direction: column; justify-content: center; }
 
     /* horizontal bars */
     .cu-bars { display: flex; flex-direction: column; gap: 9px; }
