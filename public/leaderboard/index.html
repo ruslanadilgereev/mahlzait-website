@@ -1162,7 +1162,7 @@
           if (custHasPaid || custHasTrial) trials++; // Trial-Starts = Trial-first Abos (konvertiert ODER nicht); Paid ist Teilmenge
         }
         rendered.push({
-          name: "(no campaign attribution)",
+          name: "(ohne Kampagnen-Zuordnung)",
           status: null,
           display_status: null,
           spend: 0,
@@ -1176,7 +1176,10 @@
       // Sichtbar: Kampagnen mit Spend im Range. "nur aktive" filtert zusätzlich auf
       // ENABLED + RUNNING (schliesst (no_campaign)-Orphan & pausierte/entfernte aus).
       const isActiveCamp = (r) => r.status === "ENABLED" && r.display_status === "RUNNING";
-      const visible = rendered.filter(r => r.spend > 0 && (!activeOnly || isActiveCamp(r)));
+      // Orphan-Zeile (ASA-Kunden ohne $campaign) bewusst SICHTBAR + in Gesamt — sonst
+      // teilt die Gesamt-CPA den ganzen Spend nur durch die wenigen zugeordneten Paid
+      // (zu hoch). Bei "nur aktive" wird sie ausgeblendet (kein aktiver Kampagnen-Eintrag).
+      const visible = rendered.filter(r => (r.spend > 0 || (r.orphan && !activeOnly)) && (!activeOnly || isActiveCamp(r)));
       const hidden = rendered.filter(r => !visible.includes(r));
       visible.sort((a, b) => b.profit - a.profit);
 
@@ -1209,7 +1212,7 @@
           statusPill = `<span class="badge b-flat">FLAT</span>`;
         }
         const sub = r.orphan
-          ? `ASA customers without $campaign attribute`
+          ? `ASA-Kunden ohne $campaign — kein Kampagnen-Spend, zählt aber zur Account-CPA`
           : (r.display_status ? `${r.status} · ${r.display_status}` : (r.status || ""));
         // CPA = Spend / Paid. Wenn paid=0, zeigen wir "–". Vergleichsbenchmark 10€/Paid (Influencer-Auszahlung).
         let cpaCell;
@@ -1232,7 +1235,7 @@
             <div class="name">${escapeHtml(r.name)}</div>
             ${sub ? `<div class="sub">${escapeHtml(sub)}</div>` : ""}
           </td>
-          <td class="num">${eur(r.spend)}</td>
+          <td class="num">${r.orphan ? "—" : eur(r.spend)}</td>
           <td class="num">${eur(r.revenueEur)}</td>
           <td class="num ${profitClass}">${eur(r.profit)}</td>
           <td class="num">${r.installs || (r.orphan ? "–" : 0)}</td>
@@ -1267,8 +1270,8 @@
       const noteEl = document.getElementById("aa-note");
       if (hidPaid > 0 || hidTrials > 0) {
         noteEl.classList.remove("hidden");
-        noteEl.innerHTML = `+ ${hidPaid} Paid · ${hidTrials} Trials (${eur(hidRevEur)}) in ausgeblendeten Zeilen ` +
-          `(ASA-Kunden ohne Kampagnen-Zuordnung${activeOnly ? " bzw. nicht-aktive Kampagnen" : ""}) — <b>nicht</b> in „Gesamt" oben.`;
+        noteEl.innerHTML = `+ ${hidPaid} Paid · ${hidTrials} Trial-Starts (${eur(hidRevEur)}) in ausgeblendeten Zeilen ` +
+          `(nicht-aktive Kampagnen — „nur aktive" ist an) — <b>nicht</b> in „Gesamt" oben. Hake „nur aktive" ab für die volle Account-CPA.`;
       } else {
         noteEl.classList.add("hidden");
       }
