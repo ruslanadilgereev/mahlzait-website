@@ -180,6 +180,8 @@
       cursor: pointer; user-select: none; white-space: nowrap;
     }
     .active-toggle input { accent-color: var(--primary); width: 15px; height: 15px; cursor: pointer; }
+    .active-toggle select { padding: 5px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 12px; font-weight: 600; font-family: inherit; cursor: pointer; outline: none; }
+    .active-toggle select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
 
     /* ===== Table Card ===== */
     .card {
@@ -592,6 +594,10 @@
           <label class="active-toggle" title="Nur ENABLED + RUNNING Kampagnen zeigen">
             <input id="aa-active-only" type="checkbox" onchange="aaRender()"> nur aktive Kampagnen
           </label>
+          <label class="active-toggle" title="Netto = Auszahlung (Proceeds) · Brutto = Sticker-Preis inkl. MwSt + Store-Provision">
+            Umsatz
+            <select id="aa-rev-basis" onchange="aaRender()"><option value="proceeds">Netto</option><option value="gross">Brutto</option></select>
+          </label>
         </div>
 
         <div class="card">
@@ -636,9 +642,9 @@
         <div id="aa-note" class="footer-note hidden" style="color:var(--text-muted)"></div>
 
         <div class="footer-note">
-          Spend aus Apple Search Ads (EUR, max 90 Tage zurück — Apple DAILY-API-Limit) · Revenue = RC <code>total_revenue_in_usd</code> × <code id="aa-usd-rate">0.92</code> EUR/USD ·
+          Spend aus Apple Search Ads (EUR, max 90 Tage zurück — Apple DAILY-API-Limit) · Revenue = RC-Umsatz (<b>Netto</b>=Proceeds bzw. Brutto je Umschalter, <b>kumuliert/LTV bis heute</b> — wächst pro Refresh durch Renewals) × <code id="aa-usd-rate">0.92</code> EUR/USD ·
           CPA = Spend ÷ Paid (Influencer-Benchmark: 10 €/Paid) ·
-          Date-Filter wirkt auf Spend-Tag &amp; Abo-Start
+          Date-Filter wirkt auf Spend-Tag &amp; Abo-Start (Revenue der Kohorte)
         </div>
       </div>
 
@@ -655,6 +661,10 @@
           <div class="spacer"></div>
           <label class="active-toggle" title="Nur ENABLED Kampagnen zeigen">
             <input id="ga-active-only" type="checkbox" checked onchange="gaRender()"> nur aktive Kampagnen
+          </label>
+          <label class="active-toggle" title="Netto = Auszahlung (Proceeds) · Brutto = Sticker-Preis inkl. MwSt + Store-Provision">
+            Umsatz
+            <select id="ga-rev-basis" onchange="gaRender()"><option value="proceeds">Netto</option><option value="gross">Brutto</option></select>
           </label>
         </div>
 
@@ -724,7 +734,7 @@
         </div>
 
         <div class="footer-note">
-          Spend aus Google Ads API (EUR, max 90 Tage) · Conversions = RC-Kunden mit <code>gclid</code>/<code>gbraid</code> (Android Play Install Referrer) · Revenue = RC <code>total_revenue_in_usd</code> × <code>0.92</code> EUR/USD ·
+          Spend aus Google Ads API (EUR, max 90 Tage) · Conversions = RC-Kunden mit <code>gclid</code>/<code>gbraid</code> (Android Play Install Referrer) · Revenue = RC-Umsatz (<b>Netto</b>=Proceeds bzw. Brutto je Umschalter, <b>kumuliert/LTV bis heute</b> — wächst pro Refresh durch Renewals) × <code>0.92</code> EUR/USD ·
           CPA-Paid = Spend ÷ Paid · Conversions konsolidiert über alle Google-Klicks (nicht pro Kampagne) ·
           <b>Caveat:</b> gclid-Attribution ist Android-only — iOS-Google-Ads-Spend hätte hier keine zugeordneten Conversions.
         </div>
@@ -1077,6 +1087,7 @@
       const custByCampaign = aaData.customers_by_campaign || {};
 
       const activeOnly = document.getElementById("aa-active-only").checked;
+      const revBasis = document.getElementById("aa-rev-basis").value; // 'proceeds' (Netto) | 'gross' (Brutto)
       const rendered = [];
       for (const c of aaData.campaigns) {
         let spend = 0, installs = 0;
@@ -1104,7 +1115,7 @@
             if (fromMs !== null && t !== null && t < fromMs) continue;
             if (toMs !== null && t !== null && t > toMs) continue;
             const gross = Number(s.gross_usd || 0);
-            revenueUsd += gross;
+            revenueUsd += Number((revBasis === "gross" ? s.gross_usd : s.proceeds_usd) || 0);
             if (gross > 0) custHasPaid = true;
             else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
@@ -1138,7 +1149,7 @@
             if (fromMs !== null && t !== null && t < fromMs) continue;
             if (toMs !== null && t !== null && t > toMs) continue;
             const gross = Number(s.gross_usd || 0);
-            revUsd += gross;
+            revUsd += Number((revBasis === "gross" ? s.gross_usd : s.proceeds_usd) || 0);
             if (gross > 0) custHasPaid = true;
             else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
@@ -1311,6 +1322,7 @@
       const fromMs = fromStr ? Date.parse(fromStr + "T00:00:00.000Z") : null;
       const toMs = toStr ? Date.parse(toStr + "T23:59:59.999Z") : null;
       const activeOnly = document.getElementById("ga-active-only").checked;
+      const revBasis = document.getElementById("ga-rev-basis").value; // 'proceeds' (Netto) | 'gross' (Brutto)
       const eur = (n) => n.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
       const int0 = (n) => n.toLocaleString("de-DE", { maximumFractionDigits: 0 });
 
@@ -1394,7 +1406,7 @@
           if (fromMs !== null && t !== null && t < fromMs) continue;
           if (toMs !== null && t !== null && t > toMs) continue;
           const gross = Number(s.gross_usd || 0);
-          revUsd += gross;
+          revUsd += Number((revBasis === "gross" ? s.gross_usd : s.proceeds_usd) || 0);
           if (gross > 0) custHasPaid = true;
           else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
         }
