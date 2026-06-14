@@ -642,7 +642,7 @@
         <div id="aa-note" class="footer-note hidden" style="color:var(--text-muted)"></div>
 
         <div class="footer-note">
-          Spend aus Apple Search Ads (EUR, max 90 Tage zurück — Apple DAILY-API-Limit) · Revenue = RC-Umsatz (<b>Netto</b>=Proceeds bzw. Brutto je Umschalter, <b>kumuliert/LTV bis heute</b> — wächst pro Refresh durch Renewals) × <code id="aa-usd-rate">0.92</code> EUR/USD ·
+          Spend aus Apple Search Ads (EUR, max 90 Tage zurück — Apple DAILY-API-Limit) · Revenue = RC-Umsatz (<b>Netto</b> = Brutto −19% MwSt −15% Store −1% RC ≈ ×0,71 · bzw. Brutto je Umschalter · <b>kumuliert/LTV bis heute</b>, wächst pro Refresh durch Renewals) × <code id="aa-usd-rate">0.92</code> EUR/USD ·
           CPA = Spend ÷ Paid (Influencer-Benchmark: 10 €/Paid) ·
           Date-Filter wirkt auf Spend-Tag &amp; Abo-Start (Revenue der Kohorte)
         </div>
@@ -734,7 +734,7 @@
         </div>
 
         <div class="footer-note">
-          Spend aus Google Ads API (EUR, max 90 Tage) · Conversions = RC-Kunden mit <code>gclid</code>/<code>gbraid</code> (Android Play Install Referrer) · Revenue = RC-Umsatz (<b>Netto</b>=Proceeds bzw. Brutto je Umschalter, <b>kumuliert/LTV bis heute</b> — wächst pro Refresh durch Renewals) × <code>0.92</code> EUR/USD ·
+          Spend aus Google Ads API (EUR, max 90 Tage) · Conversions = RC-Kunden mit <code>gclid</code>/<code>gbraid</code> (Android Play Install Referrer) · Revenue = RC-Umsatz (<b>Netto</b> = Brutto −19% MwSt −15% Store −1% RC ≈ ×0,71 · bzw. Brutto je Umschalter · <b>kumuliert/LTV bis heute</b>, wächst pro Refresh durch Renewals) × <code>0.92</code> EUR/USD ·
           CPA-Paid = Spend ÷ Paid · Conversions konsolidiert über alle Google-Klicks (nicht pro Kampagne) ·
           <b>Caveat:</b> gclid-Attribution ist Android-only — iOS-Google-Ads-Spend hätte hier keine zugeordneten Conversions.
         </div>
@@ -1009,6 +1009,10 @@
     let activeTab = "referral";
     let aaData = null;
     const USD_TO_EUR = 0.92; // rough constant; for board-level signal not finance
+    // Netto-Faktor: RC-"proceeds" rechnet mit 30% Apple-Provision — Mahlzait ist aber im
+    // Apple+Google Small Business Program (15%). Darum eigene Netto-Berechnung aus dem Brutto:
+    // /1.19 (19% MwSt raus) × 0.85 (15% Store) × 0.99 (1% RevenueCat) ≈ 0.7071.
+    const NET_FACTOR = (1 / 1.19) * 0.85 * 0.99;
 
     function switchTab(name) {
       activeTab = name;
@@ -1115,7 +1119,7 @@
             if (fromMs !== null && t !== null && t < fromMs) continue;
             if (toMs !== null && t !== null && t > toMs) continue;
             const gross = Number(s.gross_usd || 0);
-            revenueUsd += Number((revBasis === "gross" ? s.gross_usd : s.proceeds_usd) || 0);
+            revenueUsd += gross * (revBasis === "gross" ? 1 : NET_FACTOR);
             if (gross > 0) custHasPaid = true;
             else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
@@ -1149,7 +1153,7 @@
             if (fromMs !== null && t !== null && t < fromMs) continue;
             if (toMs !== null && t !== null && t > toMs) continue;
             const gross = Number(s.gross_usd || 0);
-            revUsd += Number((revBasis === "gross" ? s.gross_usd : s.proceeds_usd) || 0);
+            revUsd += gross * (revBasis === "gross" ? 1 : NET_FACTOR);
             if (gross > 0) custHasPaid = true;
             else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
@@ -1406,7 +1410,7 @@
           if (fromMs !== null && t !== null && t < fromMs) continue;
           if (toMs !== null && t !== null && t > toMs) continue;
           const gross = Number(s.gross_usd || 0);
-          revUsd += Number((revBasis === "gross" ? s.gross_usd : s.proceeds_usd) || 0);
+          revUsd += gross * (revBasis === "gross" ? 1 : NET_FACTOR);
           if (gross > 0) custHasPaid = true;
           else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
         }
@@ -1486,10 +1490,12 @@
       has_previous_apps: { "true": "Umsteiger (hatte App)", "false": "Neueinsteiger" },
       add_burned_calories: { "true": "Ja", "false": "Nein" },
       obstacles: { unhealthy_habits: "Ungesunde Gewohnheiten", lack_consistency: "Mangelnde Konstanz", busy_schedule: "Wenig Zeit", lack_inspiration: "Wenig Inspiration", lack_support: "Wenig Unterstützung", emotional_eating: "Emotionales Essen", lack_knowledge: "Wenig Wissen" },
+      subtype: { yearly: "Jährlich", monthly: "Monatlich", trial: "Trial (laufend)", andere: "Andere", kein: "Kein Abo" },
     };
     const CU_ORD = {
       activity: ["activity_sedentary", "activity_lightly_active", "activity_moderately_active", "activity_very_active", "activity_extra_active"],
       bmi: ["Untergewicht", "Normal", "Übergewicht", "Adipositas"],
+      subtype: ["yearly", "monthly", "trial", "andere", "kein"],
     };
     function cuLabel(field, v) {
       if (v == null || v === "") return CU_NONE;
@@ -1503,6 +1509,7 @@
       if (field === "platform") return ({ ios: "#0D0D0D", android: "#3DDC84" })[key] || palAt(idx);
       if (field === "has_previous_apps") return ({ "true": "#0285FF", "false": "#009688" })[key] || palAt(idx);
       if (field === "add_burned_calories") return ({ "true": "#009688", "false": "#9A9A95" })[key] || palAt(idx);
+      if (field === "subtype") return ({ yearly: "#008635", monthly: "#0285FF", trial: "#E25507", andere: "#6B3F7F", kein: "#C8C8C2" })[key] || palAt(idx);
       return palAt(idx);
     }
 
@@ -1524,7 +1531,7 @@
 
     // ---------- filters ----------
     function cuDefaultFilters() {
-      return { gender: new Set(), country: new Set(), goal: new Set(), activity: new Set(), source: new Set(), platform: new Set(), bmiCat: new Set(), byMin: null, byMax: null, fsFrom: null, fsTo: null };
+      return { gender: new Set(), country: new Set(), goal: new Set(), activity: new Set(), source: new Set(), platform: new Set(), bmiCat: new Set(), subtype: new Set(), byMin: null, byMax: null, fsFrom: null, fsTo: null };
     }
     let cuFilters = cuDefaultFilters();
 
@@ -1537,12 +1544,13 @@
         case "source": return r.self_reported_source || CU_NONE;
         case "platform": return r.platform ? String(r.platform).toLowerCase() : CU_NONE;
         case "bmiCat": return cuBmiCat(r) || CU_NONE;
+        case "subtype": return r.sub_type || CU_NONE;
       }
       return CU_NONE;
     }
     function cuPasses(r) {
       const f = cuFilters;
-      for (const field of ["gender", "country", "goal", "activity", "source", "platform", "bmiCat"]) {
+      for (const field of ["gender", "country", "goal", "activity", "source", "platform", "bmiCat", "subtype"]) {
         const set = f[field];
         if (set.size && !set.has(cuFieldVal(r, field))) return false;
       }
@@ -1678,7 +1686,7 @@
 
     // helpers binding count-maps to chart renderers
     function donutFromCount(map, field) {
-      const arr = ordered(map, field === "activity" ? CU_ORD.activity : field === "bmiCat" ? CU_ORD.bmi : null);
+      const arr = ordered(map, field === "activity" ? CU_ORD.activity : field === "bmiCat" ? CU_ORD.bmi : field === "subtype" ? CU_ORD.subtype : null);
       return donutHtml(arr.map(([k, v], i) => ({ label: cuLabel(field, k), value: v, color: colorFor(field, k, i) })));
     }
     function barsFromCount(map, field, order, denom) {
@@ -1813,6 +1821,9 @@
         cards.push(cuCardHtml("Verbrannte Kalorien anrechnen", null, donutFromCount(m, "add_burned_calories")));
       }
 
+      // Abo-Typ (monatlich / jährlich / Trial / kein)
+      { const m = cuCountBy(rows, "subtype", inc); cards.push(cuCardHtml("Abo-Typ", null, donutFromCount(m, "subtype"))); }
+
       // Hürden (multi-select; % of customers)
       {
         const m = new Map(); let none = 0;
@@ -1849,7 +1860,7 @@
         { key: "gender", label: "Geschlecht" }, { key: "goal", label: "Ziel" },
         { key: "activity", label: "Aktivität", order: CU_ORD.activity }, { key: "country", label: "Land" },
         { key: "source", label: "Quelle" }, { key: "platform", label: "Plattform" },
-        { key: "bmiCat", label: "BMI", order: CU_ORD.bmi },
+        { key: "bmiCat", label: "BMI", order: CU_ORD.bmi }, { key: "subtype", label: "Abo", order: CU_ORD.subtype },
       ];
       let h = "";
       for (const g of groups) {

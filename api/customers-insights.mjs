@@ -209,6 +209,31 @@ async function fetchProfile(custMeta) {
     const v = a[k];
     rec[out] = v == null || v === "" ? null : String(v);
   }
+
+  // Abo-Typ ableiten (für den monthly/yearly/kein-Filter). RC hat kein Perioden-
+  // Feld; wir leiten die Kadenz aus dem aktuellen Abrechnungszeitraum BEZAHLTER
+  // Abos ab (Trials haben eine ~7-Tage-Periode und würden sonst als "monatlich"
+  // fehlklassifiziert → Trials kommen in einen eigenen Topf).
+  let hasYear = false, hasMonth = false, hasTrial = false, hasAny = false;
+  try {
+    const subsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/subscriptions`);
+    for (const s of subsResp.items || []) {
+      hasAny = true;
+      const gross = (s.total_revenue_in_usd || {}).gross || 0;
+      if (gross > 0) {
+        const cs = s.current_period_starts_at, ce = s.current_period_ends_at;
+        if (cs && ce) {
+          const days = (Number(ce) - Number(cs)) / 86400000;
+          if (days > 300) hasYear = true;
+          else if (days >= 14) hasMonth = true;
+        }
+      } else if (s.ownership === "purchased" && s.store !== "promotional") {
+        hasTrial = true;
+      }
+    }
+  } catch { /* sub-fetch transient fail → sub_type bleibt "kein"/unbekannt, kein harter Abbruch */ }
+  rec.sub_type = hasYear ? "yearly" : hasMonth ? "monthly" : hasTrial ? "trial" : hasAny ? "andere" : "kein";
+
   return rec;
 }
 
