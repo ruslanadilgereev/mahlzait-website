@@ -1525,6 +1525,7 @@
       activity: ["activity_sedentary", "activity_lightly_active", "activity_moderately_active", "activity_very_active", "activity_extra_active"],
       bmi: ["Untergewicht", "Normal", "Übergewicht", "Adipositas"],
       subtype: ["yearly", "monthly", "trial", "expired", "andere", "kein"],
+      country: ["DE", "AT", "CH", "Rest"],
     };
     function cuLabel(field, v) {
       if (v == null || v === "") return CU_NONE;
@@ -1567,7 +1568,7 @@
     function cuFieldVal(r, field) {
       switch (field) {
         case "gender": return r.gender || CU_NONE;
-        case "country": return r.country || CU_NONE;
+        case "country": { const c = r.country; return c ? ((c === "DE" || c === "AT" || c === "CH") ? c : "Rest") : CU_NONE; }
         case "goal": return r.goal || CU_NONE;
         case "activity": return r.activity_level || CU_NONE;
         case "source": return r.self_reported_source || CU_NONE;
@@ -1828,9 +1829,14 @@
       // Wochenziel bars
       {
         const m = new Map(); let none = 0;
-        for (const r of rows) { const v = r.weekly_weight_goal_kg; if (v == null) { none++; continue; } m.set(v, (m.get(v) || 0) + 1); }
+        for (const r of rows) {
+          const v = r.weekly_weight_goal_kg;
+          if (v == null) { none++; continue; }
+          const k = Math.round(Number(v) * 4) / 4; // auf 0,25-kg-Schritte runden — glättet krumme lb→kg-Werte
+          m.set(k, (m.get(k) || 0) + 1);
+        }
         const keys = [...m.keys()].sort((a, b) => a - b);
-        const entries = keys.map((k) => [(k > 0 ? "+" : "") + String(k).replace(".", ",") + " kg", m.get(k)]);
+        const entries = keys.map((k) => [(k > 0 ? "+" : "") + k.toLocaleString("de-DE") + " kg", m.get(k)]);
         if (inc && none) entries.push([CU_NONE, none]);
         const denom = entries.reduce((s, e) => s + e[1], 0);
         cards.push(cuCardHtml("Wochenziel (kg/Woche)", null, barsHtml(entries, denom, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : "var(--primary)")));
@@ -1838,7 +1844,7 @@
 
       // Akquisequelle / Land bars
       { const m = cuCountBy(rows, "source", inc); cards.push(cuCardHtml("Akquisequelle", null, barsFromCount(m, "source"))); }
-      { const m = cuCountBy(rows, "country", inc); cards.push(cuCardHtml("Land", null, barsFromCount(m, "country"))); }
+      { const m = cuCountBy(rows, "country", inc); cards.push(cuCardHtml("Land", null, barsFromCount(m, "country", CU_ORD.country))); }
 
       // Plattform / Umsteiger / Kalorien donuts
       { const m = cuCountBy(rows, "platform", inc); cards.push(cuCardHtml("Plattform", null, donutFromCount(m, "platform"))); }
@@ -1888,7 +1894,7 @@
       if (!cuData) return;
       const groups = [
         { key: "gender", label: "Geschlecht" }, { key: "goal", label: "Ziel" },
-        { key: "activity", label: "Aktivität", order: CU_ORD.activity }, { key: "country", label: "Land" },
+        { key: "activity", label: "Aktivität", order: CU_ORD.activity }, { key: "country", label: "Land", order: CU_ORD.country },
         { key: "source", label: "Quelle" }, { key: "platform", label: "Plattform" },
         { key: "bmiCat", label: "BMI", order: CU_ORD.bmi }, { key: "subtype", label: "Abo", order: CU_ORD.subtype },
       ];
