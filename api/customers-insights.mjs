@@ -19,7 +19,7 @@
 import { google } from "googleapis";
 import { gzipSync, gunzipSync } from "node:zlib";
 
-export const config = { maxDuration: 60 };
+export const config = { maxDuration: 300 }; // Pro-Plan; ~12k RC-Calls (Attrs+Subs) brauchen >60s
 
 const GCP_PROJECT = "mytemple-460913";
 const COLLECTION = "customers_insights_cache";
@@ -187,7 +187,10 @@ async function fetchAllCustomerIds() {
 
 // Build one compact, PII-free demographic record per customer.
 async function fetchProfile(custMeta) {
-  const attrsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`);
+  const [attrsResp, subsResp] = await Promise.all([
+    rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`),
+    rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/subscriptions`).catch(() => null),
+  ]);
   const a = {};
   for (const it of attrsResp.items || []) a[it.name] = it.value;
 
@@ -215,23 +218,20 @@ async function fetchProfile(custMeta) {
   // Abos ab (Trials haben eine ~7-Tage-Periode und würden sonst als "monatlich"
   // fehlklassifiziert → Trials kommen in einen eigenen Topf).
   let hasYear = false, hasMonth = false, hasTrial = false, hasAny = false;
-  try {
-    const subsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/subscriptions`);
-    for (const s of subsResp.items || []) {
-      hasAny = true;
-      const gross = (s.total_revenue_in_usd || {}).gross || 0;
-      if (gross > 0) {
-        const cs = s.current_period_starts_at, ce = s.current_period_ends_at;
-        if (cs && ce) {
-          const days = (Number(ce) - Number(cs)) / 86400000;
-          if (days > 300) hasYear = true;
-          else if (days >= 14) hasMonth = true;
-        }
-      } else if (s.ownership === "purchased" && s.store !== "promotional") {
-        hasTrial = true;
+  for (const s of (subsResp && subsResp.items) || []) {
+    hasAny = true;
+    const gross = (s.total_revenue_in_usd || {}).gross || 0;
+    if (gross > 0) {
+      const cs = s.current_period_starts_at, ce = s.current_period_ends_at;
+      if (cs && ce) {
+        const days = (Number(ce) - Number(cs)) / 86400000;
+        if (days > 300) hasYear = true;
+        else if (days >= 14) hasMonth = true;
       }
+    } else if (s.ownership === "purchased" && s.store !== "promotional") {
+      hasTrial = true;
     }
-  } catch { /* sub-fetch transient fail → sub_type bleibt "kein"/unbekannt, kein harter Abbruch */ }
+  }
   rec.sub_type = hasYear ? "yearly" : hasMonth ? "monthly" : hasTrial ? "trial" : hasAny ? "andere" : "kein";
 
   return rec;
