@@ -257,7 +257,12 @@ async function fetchGoogleCampaignsWithSpend(startYmd, endYmd) {
 }
 
 // ---------- RC pulls (paginated + concurrent enrichment) ----------
-async function rcGet(path, retries = 3) {
+const rcBackoff = (attempt, retryAfter) => {
+  const ra = Number(retryAfter);
+  if (Number.isFinite(ra) && ra > 0) return Math.min(15000, ra * 1000);
+  return Math.min(8000, 400 * Math.pow(2, attempt)) + Math.floor(Math.random() * 300);
+};
+async function rcGet(path, retries = 6) {
   const key = requireEnv("RC_SECRET_API_KEY");
   const url = path.startsWith("http") ? path : `${RC_BASE}${path}`;
   let lastErr;
@@ -267,7 +272,7 @@ async function rcGet(path, retries = 3) {
         headers: { Authorization: `Bearer ${key}`, Accept: "application/json" },
       });
       if (r.status === 429 || (r.status >= 500 && r.status < 600)) {
-        await new Promise((res) => setTimeout(res, 500 * Math.pow(2, attempt)));
+        await new Promise((res) => setTimeout(res, rcBackoff(attempt, r.headers.get("retry-after"))));
         lastErr = new Error(`HTTP ${r.status}`);
         continue;
       }
@@ -278,7 +283,7 @@ async function rcGet(path, retries = 3) {
       return await r.json();
     } catch (e) {
       lastErr = e;
-      if (attempt < retries - 1) await new Promise((res) => setTimeout(res, 500 * Math.pow(2, attempt)));
+      if (attempt < retries - 1) await new Promise((res) => setTimeout(res, rcBackoff(attempt)));
     }
   }
   throw lastErr;

@@ -121,7 +121,12 @@ function requireEnv(name) {
 }
 
 // ---------- RC client ----------
-async function rcGet(path, retries = 3) {
+const rcBackoff = (attempt, retryAfter) => {
+  const ra = Number(retryAfter);
+  if (Number.isFinite(ra) && ra > 0) return Math.min(15000, ra * 1000);
+  return Math.min(8000, 400 * Math.pow(2, attempt)) + Math.floor(Math.random() * 300);
+};
+async function rcGet(path, retries = 6) {
   const key = requireEnv("RC_SECRET_API_KEY");
   const url = path.startsWith("http") ? path : `${RC_BASE}${path}`;
   let lastErr;
@@ -131,7 +136,7 @@ async function rcGet(path, retries = 3) {
         headers: { Authorization: `Bearer ${key}`, Accept: "application/json" },
       });
       if (r.status === 429 || (r.status >= 500 && r.status < 600)) {
-        await new Promise((res) => setTimeout(res, 500 * Math.pow(2, attempt)));
+        await new Promise((res) => setTimeout(res, rcBackoff(attempt, r.headers.get("retry-after"))));
         lastErr = new Error(`HTTP ${r.status}`);
         continue;
       }
@@ -142,7 +147,7 @@ async function rcGet(path, retries = 3) {
       return await r.json();
     } catch (e) {
       lastErr = e;
-      if (attempt < retries - 1) await new Promise((res) => setTimeout(res, 500 * Math.pow(2, attempt)));
+      if (attempt < retries - 1) await new Promise((res) => setTimeout(res, rcBackoff(attempt)));
     }
   }
   throw lastErr;
@@ -187,10 +192,10 @@ async function fetchAllCustomerIds() {
 
 // Build one compact, PII-free demographic record per customer.
 async function fetchProfile(custMeta) {
-  const [attrsResp, subsResp] = await Promise.all([
-    rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`),
-    rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/subscriptions`).catch(() => null),
-  ]);
+  // Sequenziell (nicht Promise.all) → max. ENRICH_CONCURRENCY gleichzeitige RC-Calls
+  // statt doppelt so viele; schont RCs Rate-Limit (sonst 429). maxDuration 300 deckt die Zeit.
+  const attrsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`);
+  const subsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/subscriptions`).catch(() => null);
   const a = {};
   for (const it of attrsResp.items || []) a[it.name] = it.value;
 
