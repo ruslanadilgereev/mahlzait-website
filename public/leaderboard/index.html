@@ -174,6 +174,12 @@
       font-size: 13px;
     }
     .controls .spacer { flex: 1; }
+    .active-toggle {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 12px; color: var(--text-muted); font-weight: 500;
+      cursor: pointer; user-select: none; white-space: nowrap;
+    }
+    .active-toggle input { accent-color: var(--primary); width: 15px; height: 15px; cursor: pointer; }
 
     /* ===== Table Card ===== */
     .card {
@@ -384,6 +390,103 @@
     @media (max-width: 720px) {
       .link-btn { padding: 5px 8px; font-size: 11px; gap: 3px; }
     }
+
+    /* ===== Customer Insights Dashboard ===== */
+    .cu-filters {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: var(--shadow-sm);
+      padding: 14px 16px; margin-bottom: 16px;
+    }
+    .cu-filter-row { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: flex-start; }
+    .cu-fgroup { display: flex; flex-direction: column; gap: 5px; }
+    .cu-fgroup > .cu-flabel {
+      font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase;
+      color: var(--text-faint); font-weight: 700;
+    }
+    .cu-chips { display: flex; flex-wrap: wrap; gap: 5px; }
+    .cu-chip {
+      padding: 5px 10px; border-radius: 999px; border: 1px solid var(--border);
+      background: var(--surface); color: var(--text-muted);
+      font-size: 12px; font-weight: 600; font-family: inherit; cursor: pointer;
+      transition: all 0.12s; white-space: nowrap; line-height: 1;
+    }
+    .cu-chip:hover { border-color: var(--border-strong); color: var(--text); }
+    .cu-chip.on { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .cu-range { display: flex; align-items: center; gap: 6px; }
+    .cu-range input {
+      width: 76px; padding: 6px 8px; font-size: 13px; border-radius: var(--radius-sm);
+      border: 1px solid var(--border); background: var(--surface); color: var(--text);
+      font-family: inherit; outline: none;
+    }
+    .cu-range input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+    .cu-range input[type="date"] { width: auto; }
+    .cu-filter-foot {
+      display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+      margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border);
+    }
+    .cu-active-count { font-size: 13px; color: var(--text-muted); }
+    .cu-active-count b { color: var(--text); font-size: 15px; font-variant-numeric: tabular-nums; }
+
+    .cu-kpis {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px; margin-bottom: 16px;
+    }
+    .cu-kpi {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 16px 18px;
+    }
+    .cu-kpi .k-label { font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--text-faint); font-weight: 700; }
+    .cu-kpi .k-val { font-size: 26px; font-weight: 800; letter-spacing: -0.02em; color: var(--text); margin-top: 6px; font-variant-numeric: tabular-nums; line-height: 1; }
+    .cu-kpi .k-sub { font-size: 12px; color: var(--text-muted); margin-top: 5px; }
+
+    .cu-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 16px;
+    }
+    .cu-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); box-shadow: var(--shadow-sm); padding: 18px 18px 16px;
+      display: flex; flex-direction: column; min-width: 0;
+    }
+    .cu-card.wide { grid-column: 1 / -1; }
+    .cu-card h3 {
+      font-size: 14px; font-weight: 700; letter-spacing: -0.01em; color: var(--text);
+      margin-bottom: 2px; display: flex; justify-content: space-between; align-items: baseline; gap: 8px;
+    }
+    .cu-card h3 .h-n { font-size: 11px; font-weight: 600; color: var(--text-faint); }
+    .cu-card .cu-chart { margin-top: 14px; }
+
+    /* horizontal bars */
+    .cu-bars { display: flex; flex-direction: column; gap: 9px; }
+    .cu-bar-row { display: grid; grid-template-columns: 116px 1fr auto; align-items: center; gap: 10px; }
+    .cu-bar-row .b-lab { font-size: 12px; color: var(--text-muted); text-align: right; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cu-bar-track { height: 18px; background: var(--surface-alt); border-radius: 5px; overflow: hidden; }
+    .cu-bar-fill { height: 100%; border-radius: 5px; transition: width 0.3s ease; min-width: 2px; }
+    .cu-bar-row .b-val { font-size: 12px; font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .cu-bar-row .b-val span { color: var(--text-faint); font-weight: 500; }
+
+    /* vertical histogram */
+    .cu-hist { display: flex; align-items: flex-end; gap: 4px; height: 172px; padding-top: 30px; }
+    .cu-hist-col { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; min-width: 0; }
+    .cu-hist-bar { width: 100%; max-width: 46px; background: var(--primary); border-radius: 4px 4px 0 0; position: relative; transition: height 0.3s ease; min-height: 2px; }
+    .cu-hist-bar .h-top { position: absolute; top: -30px; left: 50%; transform: translateX(-50%); font-size: 11px; font-weight: 700; color: var(--text-muted); white-space: nowrap; text-align: center; line-height: 1.15; }
+    .cu-hist-bar .h-pct { display: block; font-size: 9px; font-weight: 500; color: var(--text-faint); }
+    .cu-hist-x { font-size: 10px; color: var(--text-faint); margin-top: 6px; text-align: center; white-space: nowrap; }
+
+    /* donut + legend */
+    .cu-donut-wrap { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+    .cu-legend { display: flex; flex-direction: column; gap: 6px; flex: 1; min-width: 130px; }
+    .cu-leg-row { display: grid; grid-template-columns: 12px 1fr auto; align-items: center; gap: 8px; font-size: 12px; }
+    .cu-leg-dot { width: 11px; height: 11px; border-radius: 3px; }
+    .cu-leg-lab { color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .cu-leg-val { font-weight: 700; color: var(--text); font-variant-numeric: tabular-nums; }
+    .cu-leg-val span { color: var(--text-faint); font-weight: 500; }
+    .cu-empty-chart { color: var(--text-faint); font-size: 13px; padding: 20px 0; text-align: center; }
+
+    @media (max-width: 720px) {
+      .cu-grid { grid-template-columns: 1fr; }
+      .cu-bar-row { grid-template-columns: 92px 1fr auto; }
+    }
   </style>
 </head>
 <body>
@@ -418,6 +521,8 @@
       <div class="tabs" role="tablist">
         <button class="tab-btn active" id="tab-referral" onclick="switchTab('referral')">Referral</button>
         <button class="tab-btn" id="tab-apple-ads" onclick="switchTab('apple-ads')">Apple Ads</button>
+        <button class="tab-btn" id="tab-google-ads" onclick="switchTab('google-ads')">Google Ads</button>
+        <button class="tab-btn" id="tab-customers" onclick="switchTab('customers')">Kunden</button>
       </div>
 
       <div id="view-referral">
@@ -484,6 +589,9 @@
           <button class="secondary" onclick="aaPreset(30)">30T</button>
           <button class="secondary" onclick="aaPreset(90)">90T (max)</button>
           <div class="spacer"></div>
+          <label class="active-toggle" title="Nur ENABLED + RUNNING Kampagnen zeigen">
+            <input id="aa-active-only" type="checkbox" onchange="aaRender()"> nur aktive Kampagnen
+          </label>
         </div>
 
         <div class="card">
@@ -525,10 +633,125 @@
           </div>
         </div>
 
+        <div id="aa-note" class="footer-note hidden" style="color:var(--text-muted)"></div>
+
         <div class="footer-note">
           Spend aus Apple Search Ads (EUR, max 90 Tage zurück — Apple DAILY-API-Limit) · Revenue = RC <code>total_revenue_in_usd</code> × <code id="aa-usd-rate">0.92</code> EUR/USD ·
           CPA = Spend ÷ Paid (Influencer-Benchmark: 10 €/Paid) ·
           Date-Filter wirkt auf Spend-Tag &amp; Abo-Start
+        </div>
+      </div>
+
+      <div id="view-google-ads" class="hidden">
+        <div class="controls">
+          <label for="ga-from">Zeitraum</label>
+          <input id="ga-from" type="date">
+          <span style="color:var(--text-faint);font-size:12px">bis</span>
+          <input id="ga-to" type="date">
+          <button class="secondary" onclick="gaPreset(7)">7T</button>
+          <button class="secondary" onclick="gaPreset(14)">14T</button>
+          <button class="secondary" onclick="gaPreset(30)">30T</button>
+          <button class="secondary" onclick="gaPreset(90)">90T (max)</button>
+          <div class="spacer"></div>
+          <label class="active-toggle" title="Nur ENABLED Kampagnen zeigen">
+            <input id="ga-active-only" type="checkbox" checked onchange="gaRender()"> nur aktive Kampagnen
+          </label>
+        </div>
+
+        <!-- Antwort-Block: was kostet uns ein Paid-Customer über Google -->
+        <div class="card" style="margin-bottom:16px">
+          <table>
+            <thead>
+              <tr>
+                <th>Google Ads · gclid-Kohorte</th>
+                <th class="num" title="Gesamter Google-Ads-Spend im Zeitraum (ALLE Kampagnen) — passend zur account-weiten gclid-Kohorte, unabhängig vom „nur aktive\"-Toggle">Spend</th>
+                <th class="num" title="RC-Kunden mit gclid/gbraid, first_seen in Range">Google-Klicks</th>
+                <th class="num">Trials</th>
+                <th class="num">Paid</th>
+                <th class="num">Revenue</th>
+                <th class="num">Profit</th>
+                <th class="num" title="Spend ÷ Paid — was ein zahlender Kunde wirklich gekostet hat">CPA-Paid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="name">Gesamt (alle Google-Klicks)</div><div class="sub" id="ga-cohort-sub">Android Play Install Referrer</div></td>
+                <td class="num" id="ga-sum-spend">–</td>
+                <td class="num" id="ga-sum-clicks">–</td>
+                <td class="num" id="ga-sum-trials">–</td>
+                <td class="num" id="ga-sum-paid">–</td>
+                <td class="num" id="ga-sum-revenue">–</td>
+                <td class="num" id="ga-sum-profit">–</td>
+                <td class="num" id="ga-sum-cpa">–</td>
+              </tr>
+            </tbody>
+          </table>
+          <div id="ga-empty" class="empty hidden">
+            <div class="icon">📊</div>
+            <div class="empty-title">Noch keine Google-Ads-Daten</div>
+            <div>Klick „Aktualisieren" oben rechts, um Google Ads + RevenueCat zu pullen (~30-60s).</div>
+          </div>
+        </div>
+
+        <!-- Spend nach Kampagne (Conversions sind konsolidiert, nicht pro Kampagne) -->
+        <div class="card">
+          <table>
+            <thead>
+              <tr>
+                <th>Kampagne</th>
+                <th class="num">Spend</th>
+                <th class="num">Klicks</th>
+                <th class="num" title="Google-Ads-eigene Conversions (nicht RC-Paid)">Conv</th>
+                <th class="num">Status</th>
+              </tr>
+            </thead>
+            <tbody id="ga-camp-rows"></tbody>
+            <tfoot>
+              <tr>
+                <td>Gesamt</td>
+                <td class="num" id="ga-camp-spend">–</td>
+                <td class="num" id="ga-camp-clicks">–</td>
+                <td class="num" id="ga-camp-conv">–</td>
+                <td></td>
+              </tr>
+            </tfoot>
+          </table>
+          <div id="ga-camp-empty" class="empty hidden">
+            <div class="icon">📭</div>
+            <div class="empty-title">Keine Kampagnen</div>
+            <div>Im gewählten Zeitraum (bzw. mit „nur aktive") gibt es keine Kampagnen mit Spend.</div>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          Spend aus Google Ads API (EUR, max 90 Tage) · Conversions = RC-Kunden mit <code>gclid</code>/<code>gbraid</code> (Android Play Install Referrer) · Revenue = RC <code>total_revenue_in_usd</code> × <code>0.92</code> EUR/USD ·
+          CPA-Paid = Spend ÷ Paid · Conversions konsolidiert über alle Google-Klicks (nicht pro Kampagne) ·
+          <b>Caveat:</b> gclid-Attribution ist Android-only — iOS-Google-Ads-Spend hätte hier keine zugeordneten Conversions.
+        </div>
+      </div>
+
+      <div id="view-customers" class="hidden">
+        <div class="cu-filters">
+          <div class="cu-filter-row" id="cu-filter-row"></div>
+          <div class="cu-filter-foot">
+            <span class="cu-active-count"><b id="cu-count">–</b> Kunden im Filter · <span id="cu-pct"></span></span>
+            <label class="active-toggle" title="Fehlende Werte als eigene Kategorie „(keine)\" in den Charts zeigen">
+              <input id="cu-show-none" type="checkbox" checked onchange="cuRender()"> Fehlende als „(keine)" zeigen
+            </label>
+            <div class="spacer" style="flex:1"></div>
+            <button class="secondary" onclick="cuResetFilters()">Filter zurücksetzen</button>
+          </div>
+        </div>
+        <div class="cu-kpis" id="cu-kpis"></div>
+        <div class="cu-grid" id="cu-grid"></div>
+        <div id="cu-empty" class="empty hidden">
+          <div class="icon">📊</div>
+          <div class="empty-title">Noch keine Kundendaten</div>
+          <div>Klick „Aktualisieren" oben rechts, um Kunden + Profile aus RevenueCat zu pullen (~30-60s).</div>
+        </div>
+        <div class="footer-note">
+          Demografie aus RevenueCat-Custom-Attributes (Onboarding) · PII (E-Mail, IDFA, IP, gps_ad_id) wird <b>nicht</b> gespeichert ·
+          Alter aus <code>birth_year</code> · BMI aus Größe/Gewicht · Filter aktualisieren alle Charts live · fehlende Werte = „(keine)"
         </div>
       </div>
     </div>
@@ -781,9 +1004,22 @@
       activeTab = name;
       document.getElementById("tab-referral").classList.toggle("active", name === "referral");
       document.getElementById("tab-apple-ads").classList.toggle("active", name === "apple-ads");
+      document.getElementById("tab-google-ads").classList.toggle("active", name === "google-ads");
+      document.getElementById("tab-customers").classList.toggle("active", name === "customers");
       document.getElementById("view-referral").classList.toggle("hidden", name !== "referral");
       document.getElementById("view-apple-ads").classList.toggle("hidden", name !== "apple-ads");
+      document.getElementById("view-google-ads").classList.toggle("hidden", name !== "google-ads");
+      document.getElementById("view-customers").classList.toggle("hidden", name !== "customers");
+      if (name === "customers" && !cuData) cuLoad(false);
       if (name === "apple-ads" && !aaData) aaLoad(false);
+      if (name === "google-ads" && !gaData) {
+        if (!document.getElementById("ga-from").value) {
+          const to = new Date(), from = new Date(to.getTime() - 30 * 24 * 3600 * 1000);
+          document.getElementById("ga-to").value = to.toISOString().slice(0, 10);
+          document.getElementById("ga-from").value = from.toISOString().slice(0, 10);
+        }
+        gaLoad(false);
+      }
     }
 
     async function aaLoad(forceRefresh) {
@@ -827,9 +1063,12 @@
 
       if (!aaData || !aaData.campaigns || aaData.campaigns.length === 0) {
         empty.classList.remove("hidden");
-        ["aa-tot-spend", "aa-tot-revenue", "aa-tot-profit", "aa-tot-trials", "aa-tot-paid"].forEach(id => {
+        ["aa-tot-spend", "aa-tot-revenue", "aa-tot-profit", "aa-tot-installs", "aa-tot-rcnew", "aa-tot-trials", "aa-tot-paid", "aa-tot-cpa"].forEach(id => {
           document.getElementById(id).textContent = "–";
         });
+        document.getElementById("aa-tot-profit").className = "num";
+        document.getElementById("aa-tot-cpa").className = "num";
+        document.getElementById("aa-note").classList.add("hidden");
         return;
       }
       empty.classList.add("hidden");
@@ -837,8 +1076,8 @@
       // Index customers by campaign-name (lowercased for forgiving match)
       const custByCampaign = aaData.customers_by_campaign || {};
 
+      const activeOnly = document.getElementById("aa-active-only").checked;
       const rendered = [];
-      let totSpend = 0, totRev = 0, totTrials = 0, totPaid = 0, totInstalls = 0, totRcNew = 0;
       for (const c of aaData.campaigns) {
         let spend = 0, installs = 0;
         for (const d of c.daily || []) {
@@ -867,7 +1106,7 @@
             const gross = Number(s.gross_usd || 0);
             revenueUsd += gross;
             if (gross > 0) custHasPaid = true;
-            else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at) custHasTrial = true;
+            else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
           if (custHasPaid) paid++;
           else if (custHasTrial) trials++;
@@ -881,15 +1120,7 @@
           display_status: c.display_status,
           spend, revenueEur, profit, trials, paid, installs, rcNew,
         });
-        totSpend += spend;
-        totRev += revenueEur;
-        totTrials += trials;
-        totPaid += paid;
-        totInstalls += installs;
-        totRcNew += rcNew;
       }
-      totSpend = Number(totSpend.toFixed(2));
-      const totProfit = totRev - totSpend;
 
       // Append synthetic "(no_campaign)" row if there are ASA-customers without campaign-attr
       const orphans = custByCampaign["(no_campaign)"] || [];
@@ -909,7 +1140,7 @@
             const gross = Number(s.gross_usd || 0);
             revUsd += gross;
             if (gross > 0) custHasPaid = true;
-            else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at) custHasTrial = true;
+            else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
           if (custHasPaid) paid++;
           else if (custHasTrial) trials++;
@@ -924,15 +1155,27 @@
           trials, paid, installs: 0, rcNew,
           orphan: true,
         });
-        totRev += revUsd * USD_TO_EUR;
-        totTrials += trials;
-        totPaid += paid;
-        totRcNew += rcNew;
       }
 
-      // Campaigns ohne Spend im gewaehlten Range ausblenden, auch (no_campaign)-Orphan-Row.
-      const visible = rendered.filter(r => r.spend > 0);
+      // Sichtbar: Kampagnen mit Spend im Range. "nur aktive" filtert zusätzlich auf
+      // ENABLED + RUNNING (schliesst (no_campaign)-Orphan & pausierte/entfernte aus).
+      const isActiveCamp = (r) => r.status === "ENABLED" && r.display_status === "RUNNING";
+      const visible = rendered.filter(r => r.spend > 0 && (!activeOnly || isActiveCamp(r)));
+      const hidden = rendered.filter(r => !visible.includes(r));
       visible.sort((a, b) => b.profit - a.profit);
+
+      // Totals NUR aus sichtbaren Zeilen — sonst zeigt "Gesamt" Conversions von Zeilen,
+      // die gar nicht in der Tabelle stehen (alter Bug: Orphan-Paid floss in Gesamt).
+      let totSpend = 0, totRev = 0, totTrials = 0, totPaid = 0, totInstalls = 0, totRcNew = 0;
+      for (const r of visible) {
+        totSpend += r.spend; totRev += r.revenueEur; totTrials += r.trials;
+        totPaid += r.paid; totInstalls += r.installs; totRcNew += r.rcNew;
+      }
+      totSpend = Number(totSpend.toFixed(2));
+      const totProfit = totRev - totSpend;
+      // Conversions in ausgeblendeten Zeilen (z.B. ASA-Kunden ohne Kampagne) ehrlich ausweisen.
+      let hidPaid = 0, hidTrials = 0, hidRevEur = 0;
+      for (const r of hidden) { hidPaid += r.paid; hidTrials += r.trials; hidRevEur += r.revenueEur; }
 
       const eur = (n) => n.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
 
@@ -1005,6 +1248,15 @@
         totCpaEl.className = "num";
       }
 
+      const noteEl = document.getElementById("aa-note");
+      if (hidPaid > 0 || hidTrials > 0) {
+        noteEl.classList.remove("hidden");
+        noteEl.innerHTML = `+ ${hidPaid} Paid · ${hidTrials} Trials (${eur(hidRevEur)}) in ausgeblendeten Zeilen ` +
+          `(ASA-Kunden ohne Kampagnen-Zuordnung${activeOnly ? " bzw. nicht-aktive Kampagnen" : ""}) — <b>nicht</b> in „Gesamt" oben.`;
+      } else {
+        noteEl.classList.add("hidden");
+      }
+
       if (aaData.last_pull_ts_ms) {
         const d = new Date(aaData.last_pull_ts_ms);
         const ago = Math.floor((Date.now() - aaData.last_pull_ts_ms) / 60000);
@@ -1019,16 +1271,642 @@
     document.getElementById("aa-from").addEventListener("change", aaRender);
     document.getElementById("aa-to").addEventListener("change", aaRender);
 
+    // ============================================================
+    // Google-Ads view (consolidated gclid cohort)
+    // ============================================================
+    let gaData = null;
+
+    async function gaLoad(forceRefresh) {
+      if (!PW) return;
+      const btn = document.getElementById("refresh-btn");
+      const origText = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = forceRefresh ? "Pulle Google Ads + RC…" : "Lade…";
+      try {
+        const url = `/api/google-ads-leaderboard?pw=${encodeURIComponent(PW)}${forceRefresh ? "&refresh=1" : ""}`;
+        const r = await fetch(url);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        const j = await r.json();
+        gaData = j.bootstrapped ? j : { campaigns: [], google_customers: [], currency: "EUR" };
+        gaRender();
+      } catch (e) {
+        alert("Google-Ads Refresh-Fehler: " + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = origText;
+      }
+    }
+
+    function gaPreset(days) {
+      const to = new Date();
+      const from = days ? new Date(to.getTime() - days * 24 * 3600 * 1000) : null;
+      document.getElementById("ga-to").value = to.toISOString().slice(0, 10);
+      document.getElementById("ga-from").value = from ? from.toISOString().slice(0, 10) : "";
+      gaRender();
+    }
+
+    function gaRender() {
+      const fromStr = document.getElementById("ga-from").value || "";
+      const toStr = document.getElementById("ga-to").value || "";
+      const fromMs = fromStr ? Date.parse(fromStr + "T00:00:00.000Z") : null;
+      const toMs = toStr ? Date.parse(toStr + "T23:59:59.999Z") : null;
+      const activeOnly = document.getElementById("ga-active-only").checked;
+      const eur = (n) => n.toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+      const int0 = (n) => n.toLocaleString("de-DE", { maximumFractionDigits: 0 });
+
+      const campRows = document.getElementById("ga-camp-rows");
+      const empty = document.getElementById("ga-empty");
+      const campEmpty = document.getElementById("ga-camp-empty");
+      campRows.innerHTML = "";
+
+      const hasData = gaData && (((gaData.campaigns || []).length) || ((gaData.google_customers || []).length));
+      if (!hasData) {
+        empty.classList.remove("hidden");
+        ["ga-sum-spend","ga-sum-clicks","ga-sum-trials","ga-sum-paid","ga-sum-revenue","ga-sum-profit","ga-sum-cpa","ga-camp-spend","ga-camp-clicks","ga-camp-conv"]
+          .forEach(id => { document.getElementById(id).textContent = "–"; });
+        campEmpty.classList.add("hidden");
+        return;
+      }
+      empty.classList.add("hidden");
+
+      // --- Spend nach Kampagne (Conversions sind konsolidiert, nicht pro Kampagne) ---
+      const isActive = (c) => c.status === "ENABLED";
+      const camps = [];
+      for (const c of gaData.campaigns || []) {
+        let spend = 0, clicks = 0, conv = 0;
+        for (const d of c.daily || []) {
+          const ms = Date.parse(d.date + "T00:00:00.000Z");
+          if (fromMs !== null && ms < fromMs) continue;
+          if (toMs !== null && ms > toMs) continue;
+          spend += Number(d.spend || 0);
+          clicks += Number(d.clicks || 0);
+          conv += Number(d.conversions || 0);
+        }
+        camps.push({ name: c.name, status: c.status, channel_type: c.channel_type, spend, clicks, conv });
+      }
+      // "nur aktive": nur ENABLED-Kampagnen (auch ohne Spend). Sonst: alle mit Spend im Range.
+      const visibleCamps = camps.filter(c => activeOnly ? isActive(c) : c.spend > 0);
+      visibleCamps.sort((a, b) => b.spend - a.spend);
+
+      let totSpend = 0, totClicks = 0, totConv = 0;
+      for (const c of visibleCamps) { totSpend += c.spend; totClicks += c.clicks; totConv += c.conv; }
+      totSpend = Number(totSpend.toFixed(2));
+
+      // Kohorten-Spend = ALLE Google-Kampagnen im Range (account-weit), unabhängig vom
+      // "nur aktive"-Toggle — die gclid-Kohorte zählt ALLE Google-Klicks. Sonst wäre
+      // CPA = aktiver-Spend ÷ alle-Paid (untertrieben, sobald eine Kampagne pausiert).
+      let cohortSpend = 0;
+      for (const c of camps) cohortSpend += c.spend;
+      cohortSpend = Number(cohortSpend.toFixed(2));
+
+      if (visibleCamps.length === 0) {
+        campEmpty.classList.remove("hidden");
+      } else {
+        campEmpty.classList.add("hidden");
+        for (const c of visibleCamps) {
+          const tr = document.createElement("tr");
+          let pill;
+          if (c.status === "ENABLED") pill = `<span class="badge b-profit">ENABLED</span>`;
+          else if (c.status === "PAUSED") pill = `<span class="badge b-flat">PAUSED</span>`;
+          else pill = `<span class="badge b-loss">${escapeHtml(c.status || "–")}</span>`;
+          tr.innerHTML = `
+            <td><div class="name">${escapeHtml(c.name)}</div>${c.channel_type ? `<div class="sub">${escapeHtml(c.channel_type)}</div>` : ""}</td>
+            <td class="num">${eur(c.spend)}</td>
+            <td class="num">${int0(c.clicks)}</td>
+            <td class="num">${int0(c.conv)}</td>
+            <td class="num">${pill}</td>`;
+          campRows.appendChild(tr);
+        }
+      }
+      document.getElementById("ga-camp-spend").textContent = eur(totSpend);
+      document.getElementById("ga-camp-clicks").textContent = int0(totClicks);
+      document.getElementById("ga-camp-conv").textContent = int0(totConv);
+
+      // --- Konsolidierte gclid-Kohorte (die CPA-Antwort) ---
+      let revUsd = 0, trials = 0, paid = 0, cohortNew = 0;
+      for (const cust of gaData.google_customers || []) {
+        const fs = cust.first_seen_at ? Number(cust.first_seen_at) : null;
+        const fsInRange = (fromMs === null || (fs !== null && fs >= fromMs)) && (toMs === null || (fs !== null && fs <= toMs));
+        if (fsInRange) cohortNew++;
+        let custHasPaid = false, custHasTrial = false;
+        for (const s of cust.subs || []) {
+          const t = s.starts_at ? Number(s.starts_at) : null;
+          if (fromMs !== null && t !== null && t < fromMs) continue;
+          if (toMs !== null && t !== null && t > toMs) continue;
+          const gross = Number(s.gross_usd || 0);
+          revUsd += gross;
+          if (gross > 0) custHasPaid = true;
+          else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
+        }
+        if (custHasPaid) paid++;
+        else if (custHasTrial) trials++;
+      }
+      const revEur = revUsd * USD_TO_EUR;
+      const profit = revEur - cohortSpend;
+
+      document.getElementById("ga-sum-spend").textContent = eur(cohortSpend);
+      document.getElementById("ga-sum-clicks").textContent = int0(cohortNew);
+      document.getElementById("ga-sum-trials").textContent = int0(trials);
+      document.getElementById("ga-sum-paid").textContent = int0(paid);
+      document.getElementById("ga-sum-revenue").textContent = eur(revEur);
+      const profEl = document.getElementById("ga-sum-profit");
+      profEl.textContent = eur(profit);
+      profEl.className = "num " + (profit > 0 ? "profit" : profit < 0 ? "loss" : "");
+      const cpaEl = document.getElementById("ga-sum-cpa");
+      if (paid > 0 && cohortSpend > 0) {
+        const cpa = cohortSpend / paid;
+        cpaEl.textContent = eur(cpa);
+        cpaEl.className = "num " + (cpa <= 10 ? "profit" : "loss");
+      } else {
+        cpaEl.textContent = "–";
+        cpaEl.className = "num";
+      }
+
+      if (gaData.last_pull_ts_ms && activeTab === "google-ads") {
+        const d = new Date(gaData.last_pull_ts_ms);
+        const ago = Math.floor((Date.now() - gaData.last_pull_ts_ms) / 60000);
+        const agoStr = ago < 1 ? "gerade eben" : ago < 60 ? `vor ${ago} Min` : `vor ${Math.floor(ago/60)} h`;
+        const ge = gaData.last_refresh_meta?.enrich_errors ?? 0;
+        document.getElementById("meta").textContent =
+          `Google Ads · Stand ${d.toLocaleString("de-DE")} · ${agoStr} · ${(gaData.last_refresh_meta?.google_customers ?? 0)} Google-Klick-Kunden` +
+          (ge > 0 ? ` · ⚠ ${ge} RC-Fehler (Daten evtl. unvollständig)` : "");
+      }
+    }
+
+    document.getElementById("ga-from").addEventListener("change", gaRender);
+    document.getElementById("ga-to").addEventListener("change", gaRender);
+
     // Hook the Aktualisieren-button so it routes to the correct view
     const origRefresh = refresh;
     refresh = async function () {
       if (activeTab === "apple-ads") return aaLoad(true);
+      if (activeTab === "google-ads") return gaLoad(true);
+      if (activeTab === "customers") return cuLoad(true);
       return origRefresh();
     };
 
     if (PW) {
       document.getElementById("pw").value = PW;
       login();
+    }
+  </script>
+
+  <script>
+    // ============================================================
+    // Customer Insights dashboard (tab "Kunden")
+    // Pure-SVG/HTML charts, all filtering + aggregation client-side.
+    // ============================================================
+    let cuData = null;     // array of compact demographic records
+    let cuMeta = null;
+
+    const CU_NONE = "(keine)";
+    const CU_NONE_COLOR = "#C8C8C2";
+    const CU_PAL = ["#009688", "#0285FF", "#E25507", "#008635", "#6B3F7F", "#F5A623", "#E02E2A", "#00ACC1", "#7E57C2", "#9A9A95"];
+    const palAt = (i) => CU_PAL[i % CU_PAL.length];
+    const CU_NOW_YEAR = new Date().getFullYear();
+
+    const CU_LBL = {
+      gender: { gender_female: "Weiblich", gender_male: "Männlich", gender_other: "Divers" },
+      activity: { activity_sedentary: "Sitzend", activity_lightly_active: "Leicht aktiv", activity_moderately_active: "Mäßig aktiv", activity_very_active: "Sehr aktiv", activity_extra_active: "Extrem aktiv" },
+      goal: { lose_weight: "Abnehmen", build_muscle: "Muskelaufbau", be_healthy: "Gesünder leben", maintain_weight: "Gewicht halten" },
+      source: { app_store: "App Store", other: "Sonstiges", friends: "Freunde", chatgpt: "ChatGPT", google_search: "Google-Suche", instagram: "Instagram", tiktok: "TikTok", youtube: "YouTube", facebook: "Facebook", "(not set)": "(nicht gesetzt)" },
+      platform: { ios: "iOS", android: "Android", amazon: "Amazon", stripe: "Stripe", macos: "macOS" },
+      has_previous_apps: { "true": "Umsteiger (hatte App)", "false": "Neueinsteiger" },
+      add_burned_calories: { "true": "Ja", "false": "Nein" },
+      obstacles: { unhealthy_habits: "Ungesunde Gewohnheiten", lack_consistency: "Mangelnde Konstanz", busy_schedule: "Wenig Zeit", lack_inspiration: "Wenig Inspiration", lack_support: "Wenig Unterstützung", emotional_eating: "Emotionales Essen", lack_knowledge: "Wenig Wissen" },
+    };
+    const CU_ORD = {
+      activity: ["activity_sedentary", "activity_lightly_active", "activity_moderately_active", "activity_very_active", "activity_extra_active"],
+      bmi: ["Untergewicht", "Normal", "Übergewicht", "Adipositas"],
+    };
+    function cuLabel(field, v) {
+      if (v == null || v === "") return CU_NONE;
+      const m = CU_LBL[field];
+      return (m && m[v]) || v;
+    }
+    function colorFor(field, key, idx) {
+      if (key === CU_NONE) return CU_NONE_COLOR;
+      if (field === "gender") return ({ gender_female: "#EC6FA0", gender_male: "#0285FF", gender_other: "#6B3F7F" })[key] || palAt(idx);
+      if (field === "bmiCat") return ({ "Untergewicht": "#0285FF", "Normal": "#008635", "Übergewicht": "#F5A623", "Adipositas": "#E02E2A" })[key] || palAt(idx);
+      if (field === "platform") return ({ ios: "#0D0D0D", android: "#3DDC84" })[key] || palAt(idx);
+      if (field === "has_previous_apps") return ({ "true": "#0285FF", "false": "#009688" })[key] || palAt(idx);
+      if (field === "add_burned_calories") return ({ "true": "#009688", "false": "#9A9A95" })[key] || palAt(idx);
+      return palAt(idx);
+    }
+
+    // ---------- derived metrics ----------
+    const cuAge = (r) => (r.birth_year ? CU_NOW_YEAR - r.birth_year : null);
+    function cuBmi(r) {
+      if (r.height_cm > 0 && r.weight_kg > 0) {
+        const b = r.weight_kg / Math.pow(r.height_cm / 100, 2);
+        return (b >= 10 && b <= 80) ? b : null;
+      }
+      return null;
+    }
+    const cuBmiCatV = (b) => (b == null ? null : b < 18.5 ? "Untergewicht" : b < 25 ? "Normal" : b < 30 ? "Übergewicht" : "Adipositas");
+    const cuBmiCat = (r) => cuBmiCatV(cuBmi(r));
+    const cuToLose = (r) => (r.weight_kg != null && r.target_weight_kg != null ? r.weight_kg - r.target_weight_kg : null);
+
+    const cuMean = (a) => (a.length ? a.reduce((x, y) => x + y, 0) / a.length : 0);
+    const cuMedian = (a) => { if (!a.length) return 0; const s = [...a].sort((x, y) => x - y); const m = Math.floor(s.length / 2); return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+
+    // ---------- filters ----------
+    function cuDefaultFilters() {
+      return { gender: new Set(), country: new Set(), goal: new Set(), activity: new Set(), source: new Set(), platform: new Set(), bmiCat: new Set(), byMin: null, byMax: null, fsFrom: null, fsTo: null };
+    }
+    let cuFilters = cuDefaultFilters();
+
+    function cuFieldVal(r, field) {
+      switch (field) {
+        case "gender": return r.gender || CU_NONE;
+        case "country": return r.country || CU_NONE;
+        case "goal": return r.goal || CU_NONE;
+        case "activity": return r.activity_level || CU_NONE;
+        case "source": return r.self_reported_source || CU_NONE;
+        case "platform": return r.platform ? String(r.platform).toLowerCase() : CU_NONE;
+        case "bmiCat": return cuBmiCat(r) || CU_NONE;
+      }
+      return CU_NONE;
+    }
+    function cuPasses(r) {
+      const f = cuFilters;
+      for (const field of ["gender", "country", "goal", "activity", "source", "platform", "bmiCat"]) {
+        const set = f[field];
+        if (set.size && !set.has(cuFieldVal(r, field))) return false;
+      }
+      if (f.byMin != null && (r.birth_year == null || r.birth_year < f.byMin)) return false;
+      if (f.byMax != null && (r.birth_year == null || r.birth_year > f.byMax)) return false;
+      if (f.fsFrom != null && (r.first_seen == null || r.first_seen < f.fsFrom)) return false;
+      if (f.fsTo != null && (r.first_seen == null || r.first_seen > f.fsTo)) return false;
+      return true;
+    }
+
+    // ---------- aggregation ----------
+    function cuCountBy(rows, field, includeNone) {
+      const m = new Map();
+      for (const r of rows) {
+        const v = cuFieldVal(r, field);
+        if (v === CU_NONE && !includeNone) continue;
+        m.set(v, (m.get(v) || 0) + 1);
+      }
+      return m;
+    }
+    function ordered(map, orderKeys) {
+      let arr = [...map.entries()];
+      const none = arr.filter((e) => e[0] === CU_NONE);
+      arr = arr.filter((e) => e[0] !== CU_NONE);
+      if (orderKeys) arr.sort((a, b) => orderKeys.indexOf(a[0]) - orderKeys.indexOf(b[0]));
+      else arr.sort((a, b) => b[1] - a[1]);
+      return arr.concat(none);
+    }
+    function cuHist(rows, valFn, bins) {
+      const counts = bins.map(() => 0);
+      let nNull = 0;
+      for (const r of rows) {
+        const v = valFn(r);
+        if (v == null || !Number.isFinite(v)) { nNull++; continue; }
+        for (let i = 0; i < bins.length; i++) {
+          const last = i === bins.length - 1;
+          if (v >= bins[i].lo && (v < bins[i].hi || (last && v <= bins[i].hi))) { counts[i]++; break; }
+        }
+      }
+      return { counts, nNull };
+    }
+
+    // ---------- chart renderers (return HTML strings) ----------
+    function barsHtml(entries, denom, colorFn) {
+      if (!entries.length) return `<div class="cu-empty-chart">Keine Daten</div>`;
+      const max = Math.max(...entries.map((e) => e[1]), 1);
+      let h = `<div class="cu-bars">`;
+      entries.forEach(([lab, val], i) => {
+        const pct = denom > 0 ? (val / denom * 100) : 0;
+        const w = val / max * 100;
+        const col = colorFn ? colorFn(i, lab) : "var(--primary)";
+        h += `<div class="cu-bar-row"><div class="b-lab" title="${escapeHtml(lab)}">${escapeHtml(lab)}</div>` +
+          `<div class="cu-bar-track"><div class="cu-bar-fill" style="width:${w.toFixed(1)}%;background:${col}"></div></div>` +
+          `<div class="b-val">${val.toLocaleString("de-DE")} <span>${pct.toFixed(0)}%</span></div></div>`;
+      });
+      return h + `</div>`;
+    }
+    function donutHtml(segs) {
+      const total = segs.reduce((s, x) => s + x.value, 0);
+      if (total === 0) return `<div class="cu-empty-chart">Keine Daten</div>`;
+      const r = 52, c = 2 * Math.PI * r, cx = 64, cy = 64;
+      let off = 0, circles = "";
+      for (const s of segs) {
+        if (s.value <= 0) continue;
+        const len = c * s.value / total;
+        circles += `<circle cx="${cx}" cy="${cy}" r="${r}" fill="none" stroke="${s.color}" stroke-width="20" ` +
+          `stroke-dasharray="${len.toFixed(2)} ${(c - len).toFixed(2)}" stroke-dashoffset="${(-off).toFixed(2)}" transform="rotate(-90 ${cx} ${cy})"></circle>`;
+        off += len;
+      }
+      const svg = `<svg viewBox="0 0 128 128" width="128" height="128" style="flex-shrink:0">${circles}` +
+        `<text x="64" y="61" text-anchor="middle" font-size="22" font-weight="800" fill="#0D0D0D">${total.toLocaleString("de-DE")}</text>` +
+        `<text x="64" y="78" text-anchor="middle" font-size="10" fill="#9A9A95">Kunden</text></svg>`;
+      let leg = `<div class="cu-legend">`;
+      for (const s of segs) {
+        if (s.value <= 0) continue;
+        const pct = s.value / total * 100;
+        leg += `<div class="cu-leg-row"><span class="cu-leg-dot" style="background:${s.color}"></span>` +
+          `<span class="cu-leg-lab" title="${escapeHtml(s.label)}">${escapeHtml(s.label)}</span>` +
+          `<span class="cu-leg-val">${s.value.toLocaleString("de-DE")} <span>${pct.toFixed(0)}%</span></span></div>`;
+      }
+      return `<div class="cu-donut-wrap">${svg}${leg}</div>`;
+    }
+    function histHtml(labels, counts, colorFn) {
+      const max = Math.max(...counts, 1);
+      const total = counts.reduce((a, b) => a + b, 0);
+      if (total === 0) return `<div class="cu-empty-chart">Keine Daten</div>`;
+      let h = `<div class="cu-hist">`;
+      for (let i = 0; i < labels.length; i++) {
+        const v = counts[i];
+        const hp = v / max * 100;
+        const pct = total > 0 ? (v / total * 100) : 0;
+        const col = colorFn ? colorFn(i, labels[i]) : "var(--primary)";
+        h += `<div class="cu-hist-col" title="${escapeHtml(labels[i])}: ${v.toLocaleString("de-DE")} (${pct.toFixed(0)}%)"><div class="cu-hist-bar" style="height:${hp.toFixed(1)}%;background:${col}">` +
+          (v > 0 ? `<span class="h-top">${v.toLocaleString("de-DE")}<span class="h-pct">${pct.toFixed(0)}%</span></span>` : ``) +
+          `</div><div class="cu-hist-x">${escapeHtml(labels[i])}</div></div>`;
+      }
+      return h + `</div>`;
+    }
+    function cuTimeSeries(rows) {
+      const WK = 7 * 86400000;
+      const wk = new Map();
+      for (const r of rows) { if (r.first_seen == null) continue; const w = Math.floor(r.first_seen / WK); wk.set(w, (wk.get(w) || 0) + 1); }
+      const keys = [...wk.keys()];
+      if (keys.length === 0) return [];
+      // Lücken füllen: leere Wochen zwischen erster und letzter Datenwoche mit 0,
+      // sonst staucht die X-Achse mehrwöchige Pausen zu einem Segment.
+      const minW = Math.min(...keys), maxW = Math.max(...keys);
+      const out = [];
+      for (let k = minW; k <= maxW; k++) {
+        out.push({ label: new Date(k * WK).toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", timeZone: "UTC" }), value: wk.get(k) || 0 });
+      }
+      return out;
+    }
+    function areaHtml(points) {
+      if (points.length === 0) return `<div class="cu-empty-chart">Keine Daten</div>`;
+      const W = 900, H = 180, pad = 28;
+      const max = Math.max(...points.map((p) => p.value), 1);
+      const n = points.length;
+      const x = (i) => pad + (n <= 1 ? (W - 2 * pad) / 2 : i * (W - 2 * pad) / (n - 1));
+      const y = (v) => H - pad - (v / max * (H - 2 * pad));
+      let line = "", ap = `M${x(0).toFixed(1)},${(H - pad).toFixed(1)} `;
+      points.forEach((p, i) => { line += `${i ? "L" : "M"}${x(i).toFixed(1)},${y(p.value).toFixed(1)} `; ap += `L${x(i).toFixed(1)},${y(p.value).toFixed(1)} `; });
+      ap += `L${x(n - 1).toFixed(1)},${(H - pad).toFixed(1)} Z`;
+      // Einzelpunkt: degeneriertes Line/Area-Path rendert nichts → sichtbaren Punkt zeichnen.
+      const dot = n === 1 ? `<circle cx="${x(0).toFixed(1)}" cy="${y(points[0].value).toFixed(1)}" r="4" fill="#009688"></circle>` : "";
+      let xl = "";
+      [...new Set([0, Math.floor((n - 1) / 2), n - 1])].forEach((i) => { xl += `<text x="${x(i).toFixed(1)}" y="${H - 8}" text-anchor="middle" font-size="11" fill="#9A9A95">${escapeHtml(points[i].label)}</text>`; });
+      const gesamt = points.reduce((a, p) => a + p.value, 0);
+      return `<svg viewBox="0 0 ${W} ${H}" width="100%" height="auto" style="display:block">` +
+        `<path d="${ap}" fill="#E0F2F1"></path><path d="${line}" fill="none" stroke="#009688" stroke-width="2.5" stroke-linejoin="round"></path>${dot}` +
+        `<text x="${pad}" y="18" font-size="11" fill="#9A9A95">max ${max.toLocaleString("de-DE")}/Woche · ${gesamt.toLocaleString("de-DE")} gesamt</text>${xl}</svg>`;
+    }
+
+    // helpers binding count-maps to chart renderers
+    function donutFromCount(map, field) {
+      const arr = ordered(map, field === "activity" ? CU_ORD.activity : field === "bmiCat" ? CU_ORD.bmi : null);
+      return donutHtml(arr.map(([k, v], i) => ({ label: cuLabel(field, k), value: v, color: colorFor(field, k, i) })));
+    }
+    function barsFromCount(map, field, order, denom) {
+      const arr = ordered(map, order);
+      const entries = arr.map(([k, v]) => [cuLabel(field, k), v]);
+      const dn = denom != null ? denom : arr.reduce((s, e) => s + e[1], 0);
+      return barsHtml(entries, dn, (i, lab) => {
+        const key = arr[i] ? arr[i][0] : null;
+        return colorFor(field, key, i);
+      });
+    }
+
+    // ---------- KPIs ----------
+    function cuKpiTiles(rows) {
+      const ages = rows.map(cuAge).filter((v) => v != null);
+      const bmis = rows.map(cuBmi).filter((v) => v != null);
+      const losses = rows.map(cuToLose).filter((v) => v != null);
+      const genders = rows.map((r) => r.gender).filter(Boolean);
+      const fem = genders.filter((g) => g === "gender_female").length;
+      const topOf = (field) => { const e = [...cuCountBy(rows, field, false).entries()].sort((a, b) => b[1] - a[1])[0]; return e ? { k: e[0], n: e[1] } : null; };
+      const tc = topOf("country"), ts = topOf("source");
+      const pct = cuData && cuData.length ? (rows.length / cuData.length * 100) : 0;
+      return [
+        { label: "Kunden", val: rows.length.toLocaleString("de-DE"), sub: `${pct.toFixed(0)}% der Basis (${(cuData ? cuData.length : 0).toLocaleString("de-DE")})` },
+        { label: "Ø Alter", val: ages.length ? Math.round(cuMean(ages)) : "–", sub: ages.length ? `Median ${Math.round(cuMedian(ages))} · n=${ages.length}` : "keine Daten" },
+        { label: "Frauenanteil", val: genders.length ? (fem / genders.length * 100).toFixed(0) + "%" : "–", sub: genders.length ? `${fem} von ${genders.length}` : "keine Daten" },
+        { label: "Ø BMI", val: bmis.length ? cuMean(bmis).toFixed(1) : "–", sub: bmis.length ? `${cuBmiCatV(cuMean(bmis))} · n=${bmis.length}` : "keine Daten" },
+        { label: "Median kg bis Ziel", val: losses.length ? cuMedian(losses).toFixed(1) : "–", sub: "Gewicht − Zielgewicht" },
+        { label: "Top-Land", val: tc ? cuLabel("country", tc.k) : "–", sub: tc ? `${tc.n.toLocaleString("de-DE")} Kunden` : "" },
+        { label: "Top-Quelle", val: ts ? cuLabel("source", ts.k) : "–", sub: ts ? `${ts.n.toLocaleString("de-DE")} Kunden` : "" },
+      ];
+    }
+
+    // ---------- main render ----------
+    function cuCardHtml(title, n, inner, wide) {
+      const nbadge = n != null ? `<span class="h-n">${n}</span>` : "";
+      return `<div class="cu-card${wide ? " wide" : ""}"><h3>${title}${nbadge}</h3><div class="cu-chart">${inner}</div></div>`;
+    }
+    function cuRender() {
+      if (!cuData) return;
+      const grid = document.getElementById("cu-grid");
+      const empty = document.getElementById("cu-empty");
+      const kpis = document.getElementById("cu-kpis");
+      if (cuData.length === 0) {
+        empty.classList.remove("hidden");
+        grid.innerHTML = ""; kpis.innerHTML = "";
+        document.getElementById("cu-count").textContent = "0";
+        document.getElementById("cu-pct").textContent = "";
+        return;
+      }
+      empty.classList.add("hidden");
+      const inc = document.getElementById("cu-show-none").checked;
+      const rows = cuData.filter(cuPasses);
+
+      document.getElementById("cu-count").textContent = rows.length.toLocaleString("de-DE");
+      document.getElementById("cu-pct").textContent = `${(rows.length / cuData.length * 100).toFixed(1)}% der ${cuData.length.toLocaleString("de-DE")}`;
+
+      kpis.innerHTML = cuKpiTiles(rows).map((k) =>
+        `<div class="cu-kpi"><div class="k-label">${k.label}</div><div class="k-val">${escapeHtml(k.val)}</div><div class="k-sub">${escapeHtml(k.sub)}</div></div>`).join("");
+
+      const cards = [];
+      // Neukunden über Zeit (wide)
+      cards.push(cuCardHtml("Neukunden über Zeit", "wöchentl.", areaHtml(cuTimeSeries(rows)), true));
+
+      // Alter
+      const ageBins = [{ label: "<25", lo: 0, hi: 25 }, { label: "25–34", lo: 25, hi: 35 }, { label: "35–44", lo: 35, hi: 45 }, { label: "45–54", lo: 45, hi: 55 }, { label: "55–64", lo: 55, hi: 65 }, { label: "65+", lo: 65, hi: 200 }];
+      {
+        const { counts, nNull } = cuHist(rows, cuAge, ageBins);
+        let labels = ageBins.map((b) => b.label), cnts = counts.slice();
+        if (inc && nNull) { labels = labels.concat(CU_NONE); cnts = cnts.concat(nNull); }
+        const n = cnts.reduce((a, b) => a + b, 0);
+        cards.push(cuCardHtml("Alter", "n=" + n.toLocaleString("de-DE"), histHtml(labels, cnts, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : "var(--primary)")));
+      }
+
+      // Geschlecht / Ziel donuts
+      { const m = cuCountBy(rows, "gender", inc); cards.push(cuCardHtml("Geschlecht", null, donutFromCount(m, "gender"))); }
+      { const m = cuCountBy(rows, "goal", inc); cards.push(cuCardHtml("Ziel", null, donutFromCount(m, "goal"))); }
+
+      // Aktivität bars
+      { const m = cuCountBy(rows, "activity", inc); cards.push(cuCardHtml("Aktivitätslevel", null, barsFromCount(m, "activity", CU_ORD.activity))); }
+
+      // BMI Kategorien donut + BMI Verteilung hist
+      {
+        const m = new Map(); let none = 0;
+        for (const r of rows) { const c = cuBmiCat(r); if (c == null) { none++; continue; } m.set(c, (m.get(c) || 0) + 1); }
+        if (inc && none) m.set(CU_NONE, none);
+        cards.push(cuCardHtml("BMI-Kategorien (WHO)", null, donutFromCount(m, "bmiCat")));
+      }
+      {
+        const bins = [{ label: "<18,5", lo: 0, hi: 18.5 }, { label: "18,5–25", lo: 18.5, hi: 25 }, { label: "25–30", lo: 25, hi: 30 }, { label: "30–35", lo: 30, hi: 35 }, { label: "35–40", lo: 35, hi: 40 }, { label: "40+", lo: 40, hi: 200 }];
+        const palette = ["#0285FF", "#008635", "#F5A623", "#E8842A", "#E0531F", "#E02E2A"];
+        const { counts, nNull } = cuHist(rows, cuBmi, bins);
+        let labels = bins.map((b) => b.label), cnts = counts.slice();
+        if (inc && nNull) { labels = labels.concat(CU_NONE); cnts = cnts.concat(nNull); }
+        const n = cnts.reduce((a, b) => a + b, 0);
+        cards.push(cuCardHtml("BMI-Verteilung", "n=" + n.toLocaleString("de-DE"), histHtml(labels, cnts, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : (palette[i] || "var(--primary)"))));
+      }
+
+      // kg bis Ziel
+      {
+        const bins = [{ label: "<0", lo: -100000, hi: 0 }, { label: "0–5", lo: 0, hi: 5 }, { label: "5–10", lo: 5, hi: 10 }, { label: "10–15", lo: 10, hi: 15 }, { label: "15–20", lo: 15, hi: 20 }, { label: "20–30", lo: 20, hi: 30 }, { label: "30+", lo: 30, hi: 100000 }];
+        const { counts, nNull } = cuHist(rows, cuToLose, bins);
+        let labels = bins.map((b) => b.label), cnts = counts.slice();
+        if (inc && nNull) { labels = labels.concat(CU_NONE); cnts = cnts.concat(nNull); }
+        const n = cnts.reduce((a, b) => a + b, 0);
+        cards.push(cuCardHtml("kg bis Zielgewicht", "n=" + n.toLocaleString("de-DE"), histHtml(labels, cnts, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : "var(--primary)")));
+      }
+
+      // Wochenziel bars
+      {
+        const m = new Map(); let none = 0;
+        for (const r of rows) { const v = r.weekly_weight_goal_kg; if (v == null) { none++; continue; } m.set(v, (m.get(v) || 0) + 1); }
+        const keys = [...m.keys()].sort((a, b) => a - b);
+        const entries = keys.map((k) => [(k > 0 ? "+" : "") + String(k).replace(".", ",") + " kg", m.get(k)]);
+        if (inc && none) entries.push([CU_NONE, none]);
+        const denom = entries.reduce((s, e) => s + e[1], 0);
+        cards.push(cuCardHtml("Wochenziel (kg/Woche)", null, barsHtml(entries, denom, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : "var(--primary)")));
+      }
+
+      // Akquisequelle / Land bars
+      { const m = cuCountBy(rows, "source", inc); cards.push(cuCardHtml("Akquisequelle", null, barsFromCount(m, "source"))); }
+      { const m = cuCountBy(rows, "country", inc); cards.push(cuCardHtml("Land", null, barsFromCount(m, "country"))); }
+
+      // Plattform / Umsteiger / Kalorien donuts
+      { const m = cuCountBy(rows, "platform", inc); cards.push(cuCardHtml("Plattform", null, donutFromCount(m, "platform"))); }
+      {
+        const m = new Map(); for (const r of rows) { const v = r.has_previous_apps; const k = (v == null || v === "") ? CU_NONE : String(v); if (k === CU_NONE && !inc) continue; m.set(k, (m.get(k) || 0) + 1); }
+        cards.push(cuCardHtml("Umsteiger vs. Neu", null, donutFromCount(m, "has_previous_apps")));
+      }
+      {
+        const m = new Map(); for (const r of rows) { const v = r.add_burned_calories; const k = (v == null || v === "") ? CU_NONE : String(v); if (k === CU_NONE && !inc) continue; m.set(k, (m.get(k) || 0) + 1); }
+        cards.push(cuCardHtml("Verbrannte Kalorien anrechnen", null, donutFromCount(m, "add_burned_calories")));
+      }
+
+      // Hürden (multi-select; % of customers)
+      {
+        const m = new Map(); let none = 0;
+        for (const r of rows) {
+          if (!r.obstacles) { none++; continue; }
+          for (const o of String(r.obstacles).split(",")) { const k = o.trim(); if (k) m.set(k, (m.get(k) || 0) + 1); }
+        }
+        let arr = [...m.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+        if (inc && none) arr.push([CU_NONE, none]);
+        const entries = arr.map(([k, v]) => [cuLabel("obstacles", k), v]);
+        cards.push(cuCardHtml("Hürden (Mehrfachauswahl)", "% der Kunden", barsHtml(entries, rows.length, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : palAt(i))));
+      }
+
+      grid.innerHTML = cards.join("");
+
+      if (cuData && cuMeta && cuMeta.last_pull_ts_ms && activeTab === "customers") {
+        const d = new Date(cuMeta.last_pull_ts_ms);
+        const ago = Math.floor((Date.now() - cuMeta.last_pull_ts_ms) / 60000);
+        const agoStr = ago < 1 ? "gerade eben" : ago < 60 ? `vor ${ago} Min` : `vor ${Math.floor(ago / 60)} h`;
+        const ge = cuMeta.meta?.enrich_errors ?? 0;
+        const seen = cuMeta.meta?.total_seen;
+        let line = `Kunden · Stand ${d.toLocaleString("de-DE")} · ${agoStr} · ${cuData.length.toLocaleString("de-DE")} Kunden`;
+        if (ge > 0) line += ` · ⚠ ${ge} RC-Fehler (${cuData.length.toLocaleString("de-DE")}${seen ? "/" + seen.toLocaleString("de-DE") : ""}, evtl. unvollständig)`;
+        if (cuMeta.refresh_warning) line += ` · ⚠ ${cuMeta.refresh_warning}`;
+        document.getElementById("meta").textContent = line;
+      }
+    }
+
+    // ---------- filter UI ----------
+    function cuBuildFilters() {
+      const row = document.getElementById("cu-filter-row");
+      if (!cuData) return;
+      const groups = [
+        { key: "gender", label: "Geschlecht" }, { key: "goal", label: "Ziel" },
+        { key: "activity", label: "Aktivität", order: CU_ORD.activity }, { key: "country", label: "Land" },
+        { key: "source", label: "Quelle" }, { key: "platform", label: "Plattform" },
+        { key: "bmiCat", label: "BMI", order: CU_ORD.bmi },
+      ];
+      let h = "";
+      for (const g of groups) {
+        const map = cuCountBy(cuData, g.key, true);
+        let keys = [...map.keys()];
+        const none = keys.filter((k) => k === CU_NONE); keys = keys.filter((k) => k !== CU_NONE);
+        if (g.order) keys.sort((a, b) => g.order.indexOf(a) - g.order.indexOf(b)); else keys.sort((a, b) => map.get(b) - map.get(a));
+        keys = keys.concat(none);
+        h += `<div class="cu-fgroup"><span class="cu-flabel">${g.label}</span><div class="cu-chips">`;
+        for (const k of keys) {
+          const on = cuFilters[g.key].has(k) ? " on" : "";
+          h += `<button class="cu-chip${on}" data-fk="${g.key}" data-fv="${escapeHtml(k)}" onclick="cuToggleChip(this)">${escapeHtml(cuLabel(g.key, k))} <span style="opacity:.6">${map.get(k)}</span></button>`;
+        }
+        h += `</div></div>`;
+      }
+      const bys = cuData.map((r) => r.birth_year).filter(Boolean);
+      const byMin = bys.length ? Math.min(...bys) : 1950, byMax = bys.length ? Math.max(...bys) : CU_NOW_YEAR;
+      h += `<div class="cu-fgroup"><span class="cu-flabel">Geburtsjahr</span><div class="cu-range">` +
+        `<input type="number" id="cu-by-min" placeholder="${byMin}" min="${byMin}" max="${byMax}" value="${cuFilters.byMin ?? ""}" oninput="cuApplyRanges()"> –` +
+        `<input type="number" id="cu-by-max" placeholder="${byMax}" min="${byMin}" max="${byMax}" value="${cuFilters.byMax ?? ""}" oninput="cuApplyRanges()"></div></div>`;
+      const fsFromV = cuFilters.fsFrom != null ? new Date(cuFilters.fsFrom).toISOString().slice(0, 10) : "";
+      const fsToV = cuFilters.fsTo != null ? new Date(cuFilters.fsTo).toISOString().slice(0, 10) : "";
+      h += `<div class="cu-fgroup"><span class="cu-flabel">Erstkontakt</span><div class="cu-range">` +
+        `<input type="date" id="cu-fs-from" value="${fsFromV}" onchange="cuApplyRanges()"> –<input type="date" id="cu-fs-to" value="${fsToV}" onchange="cuApplyRanges()"></div></div>`;
+      row.innerHTML = h;
+    }
+    function cuToggleChip(el) {
+      const k = el.dataset.fk, v = el.dataset.fv;
+      const set = cuFilters[k];
+      if (set.has(v)) set.delete(v); else set.add(v);
+      el.classList.toggle("on", set.has(v));
+      cuRender();
+    }
+    function cuApplyRanges() {
+      const bmin = parseInt(document.getElementById("cu-by-min").value, 10);
+      const bmax = parseInt(document.getElementById("cu-by-max").value, 10);
+      cuFilters.byMin = Number.isFinite(bmin) ? bmin : null;
+      cuFilters.byMax = Number.isFinite(bmax) ? bmax : null;
+      const ff = document.getElementById("cu-fs-from").value;
+      const ft = document.getElementById("cu-fs-to").value;
+      cuFilters.fsFrom = ff ? Date.parse(ff + "T00:00:00.000Z") : null;
+      cuFilters.fsTo = ft ? Date.parse(ft + "T23:59:59.999Z") : null;
+      cuRender();
+    }
+    function cuResetFilters() {
+      cuFilters = cuDefaultFilters();
+      cuBuildFilters();
+      cuRender();
+    }
+    async function cuLoad(force) {
+      if (!PW) return;
+      const btn = document.getElementById("refresh-btn");
+      const o = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = force ? "Pulle Kundendaten…" : "Lade…";
+      try {
+        const r = await fetch(`/api/customers-insights?pw=${encodeURIComponent(PW)}${force ? "&refresh=1" : ""}`);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        const j = await r.json();
+        cuMeta = j;
+        cuData = j.bootstrapped ? (j.customers || []) : [];
+        cuBuildFilters();
+        cuRender();
+      } catch (e) {
+        alert("Kunden Refresh-Fehler: " + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = o;
+      }
     }
   </script>
 </body>
