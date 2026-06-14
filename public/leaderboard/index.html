@@ -675,7 +675,7 @@
               <tr>
                 <th>Google Ads · gclid-Kohorte</th>
                 <th class="num" title="Gesamter Google-Ads-Spend im Zeitraum (ALLE Kampagnen) — passend zur account-weiten gclid-Kohorte, unabhängig vom „nur aktive\"-Toggle">Spend</th>
-                <th class="num" title="RC-Kunden mit gclid/gbraid, first_seen in Range">Google-Klicks</th>
+                <th class="num" title="Neue Google-attribuierte App-Nutzer (gclid im Play Install Referrer, first_seen im Zeitraum) ≈ Google-Installs. NICHT Ad-Klicks — die stehen in der Kampagnen-Tabelle unten.">Neue Kunden</th>
                 <th class="num">Trials</th>
                 <th class="num">Paid</th>
                 <th class="num">Revenue</th>
@@ -685,7 +685,7 @@
             </thead>
             <tbody>
               <tr>
-                <td><div class="name">Gesamt (alle Google-Klicks)</div><div class="sub" id="ga-cohort-sub">Android Play Install Referrer</div></td>
+                <td><div class="name">Gesamt (gclid-Kohorte)</div><div class="sub" id="ga-cohort-sub">Android, gclid im Play Install Referrer</div></td>
                 <td class="num" id="ga-sum-spend">–</td>
                 <td class="num" id="ga-sum-clicks">–</td>
                 <td class="num" id="ga-sum-trials">–</td>
@@ -736,7 +736,7 @@
         <div class="footer-note">
           Spend aus Google Ads API (EUR, max 90 Tage) · Conversions = RC-Kunden mit <code>gclid</code>/<code>gbraid</code> (Android Play Install Referrer) · Revenue = RC-Umsatz (<b>Netto</b> = Brutto −19% MwSt −15% Store −1% RC ≈ ×0,71 · bzw. Brutto je Umschalter · <b>kumuliert/LTV bis heute</b>, wächst pro Refresh durch Renewals) × <code>0.92</code> EUR/USD ·
           CPA-Paid = Spend ÷ Paid · Conversions konsolidiert über alle Google-Klicks (nicht pro Kampagne) ·
-          <b>Caveat:</b> gclid-Attribution ist Android-only — iOS-Google-Ads-Spend hätte hier keine zugeordneten Conversions.
+          <b>Weicht bewusst von der Google-Ads-Oberfläche ab:</b> Google zählt Klicks → Installs (First open) → Conversions auf <b>Klick-Datum</b>; hier zählen wir RC-Events (Neukunde/Trial) auf <b>Event-Datum</b>, deterministisch per gclid (<b>Android-only</b>, iOS ohne Zuordnung). „Neue Kunden" ≈ Google-Installs (Teilmenge mit gclid), <b>nicht</b> Ad-Klicks (die stehen unten in der Kampagnen-Tabelle).
         </div>
       </div>
 
