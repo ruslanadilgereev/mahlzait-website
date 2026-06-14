@@ -1792,6 +1792,17 @@
         cards.push(cuCardHtml("Alter", "n=" + n.toLocaleString("de-DE"), histHtml(labels, cnts, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : "var(--primary)")));
       }
 
+      // Größe (cm)
+      {
+        const bins = [{ label: "<160", lo: 0, hi: 160 }, { label: "160–165", lo: 160, hi: 165 }, { label: "165–170", lo: 165, hi: 170 }, { label: "170–175", lo: 170, hi: 175 }, { label: "175–180", lo: 175, hi: 180 }, { label: "180–185", lo: 180, hi: 185 }, { label: "185–190", lo: 185, hi: 190 }, { label: "190+", lo: 190, hi: 400 }];
+        const heightVal = (r) => (r.height_cm > 100 && r.height_cm < 230 ? r.height_cm : null);
+        const { counts, nNull } = cuHist(rows, heightVal, bins);
+        let labels = bins.map((b) => b.label), cnts = counts.slice();
+        if (inc && nNull) { labels = labels.concat(CU_NONE); cnts = cnts.concat(nNull); }
+        const n = cnts.reduce((a, b) => a + b, 0);
+        cards.push(cuCardHtml("Größe (cm)", "n=" + n.toLocaleString("de-DE"), histHtml(labels, cnts, (i, lab) => lab === CU_NONE ? CU_NONE_COLOR : "var(--primary)")));
+      }
+
       // Geschlecht / Ziel donuts
       { const m = cuCountBy(rows, "gender", inc); cards.push(cuCardHtml("Geschlecht", null, donutFromCount(m, "gender"))); }
       { const m = cuCountBy(rows, "goal", inc); cards.push(cuCardHtml("Ziel", null, donutFromCount(m, "goal"))); }
