@@ -182,6 +182,10 @@
     .active-toggle input { accent-color: var(--primary); width: 15px; height: 15px; cursor: pointer; }
     .active-toggle select { padding: 5px 8px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 12px; font-weight: 600; font-family: inherit; cursor: pointer; outline: none; }
     .active-toggle select:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-soft); }
+    .aa-coverage { border-radius: var(--radius-sm); padding: 11px 15px; margin-bottom: 14px; font-size: 13.5px; font-weight: 600; border: 1px solid; display: flex; align-items: center; gap: 8px; }
+    .aa-coverage.warn { background: var(--orange-soft); border-color: #F5C99B; color: #8a4a1a; }
+    .aa-coverage.warn b { color: #B0420A; }
+    .aa-coverage.good { background: var(--green-soft); border-color: #C8E6CF; color: #006B2A; }
 
     /* ===== Table Card ===== */
     .card {
@@ -599,6 +603,8 @@
             <select id="aa-rev-basis" onchange="aaRender()"><option value="proceeds">Netto</option><option value="gross">Brutto</option></select>
           </label>
         </div>
+
+        <div id="aa-coverage" class="aa-coverage hidden"></div>
 
         <div class="card">
           <table>
@@ -1084,6 +1090,7 @@
         document.getElementById("aa-tot-profit").className = "num";
         document.getElementById("aa-tot-cpa").className = "num";
         document.getElementById("aa-note").classList.add("hidden");
+        document.getElementById("aa-coverage").classList.add("hidden");
         return;
       }
       empty.classList.add("hidden");
@@ -1265,6 +1272,24 @@
       } else {
         totCpaEl.textContent = "–";
         totCpaEl.className = "num";
+      }
+
+      // Kampagnen-Zuordnung (IMMER sichtbar): wie viele ASA-Conversions haben KEINE Kampagne.
+      const orphanRow = rendered.find(r => r.orphan);
+      const oP = orphanRow ? orphanRow.paid : 0, oT = orphanRow ? orphanRow.trials : 0;
+      let asgP = 0, asgT = 0;
+      for (const r of rendered) { if (!r.orphan && r.spend > 0) { asgP += r.paid; asgT += r.trials; } }
+      const covP = asgP + oP, covT = asgT + oT;
+      const cov = document.getElementById("aa-coverage");
+      if (covP + covT === 0) {
+        cov.classList.add("hidden");
+      } else if (oP + oT === 0) {
+        cov.className = "aa-coverage good";
+        cov.innerHTML = `🏷 Kampagnen-Zuordnung: alle ${covP} Paid einer Kampagne zugeordnet ✓`;
+      } else {
+        cov.className = "aa-coverage warn";
+        const pct = covP > 0 ? Math.round(oP / covP * 100) : 0;
+        cov.innerHTML = `🏷 Ohne Kampagnen-Zuordnung: <b>${oP}</b> von ${covP} Paid · <b>${oT}</b> von ${covT} Trial-Starts (${pct}% der Paid noch ohne Kampagne) — RC-ASA-Attribution, sinkt mit der Zeit`;
       }
 
       const noteEl = document.getElementById("aa-note");
