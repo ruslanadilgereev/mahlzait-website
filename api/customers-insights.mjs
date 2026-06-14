@@ -222,22 +222,25 @@ async function fetchProfile(custMeta) {
   // Feld; wir leiten die Kadenz aus dem aktuellen Abrechnungszeitraum BEZAHLTER
   // Abos ab (Trials haben eine ~7-Tage-Periode und würden sonst als "monatlich"
   // fehlklassifiziert → Trials kommen in einen eigenen Topf).
-  let hasYear = false, hasMonth = false, hasTrial = false, hasAny = false;
+  // sub_type = AKTUELLER Abo-Status (nicht "jemals"!). Der echte RC-`status` entscheidet:
+  //   trialing                         → laufender Trial
+  //   active/in_grace_period/retry + bezahlt → laufendes Bezahl-Abo (Periode aus Zeitraum)
+  //   sonst hatte-mal-ein-Abo          → abgelaufen (churned)
+  //   gar kein Abo-Record              → kein
+  let year = false, month = false, trial = false, hadAny = false;
   for (const s of (subsResp && subsResp.items) || []) {
-    hasAny = true;
+    hadAny = true;
+    const status = s.status;
+    if (status === "trialing") { trial = true; continue; }
+    const active = status === "active" || status === "in_grace_period" || status === "in_billing_retry";
     const gross = (s.total_revenue_in_usd || {}).gross || 0;
-    if (gross > 0) {
+    if (active && gross > 0) {
       const cs = s.current_period_starts_at, ce = s.current_period_ends_at;
-      if (cs && ce) {
-        const days = (Number(ce) - Number(cs)) / 86400000;
-        if (days > 300) hasYear = true;
-        else if (days >= 14) hasMonth = true;
-      }
-    } else if (s.ownership === "purchased" && s.store !== "promotional") {
-      hasTrial = true;
+      const days = cs && ce ? (Number(ce) - Number(cs)) / 86400000 : 0;
+      if (days > 300) year = true; else month = true;
     }
   }
-  rec.sub_type = hasYear ? "yearly" : hasMonth ? "monthly" : hasTrial ? "trial" : hasAny ? "andere" : "kein";
+  rec.sub_type = year ? "yearly" : month ? "monthly" : trial ? "trial" : hadAny ? "expired" : "kein";
 
   return rec;
 }

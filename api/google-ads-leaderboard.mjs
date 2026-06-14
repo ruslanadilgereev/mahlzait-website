@@ -26,7 +26,7 @@
 
 import { google } from "googleapis";
 
-export const config = { maxDuration: 60 };
+export const config = { maxDuration: 300 }; // Pro; RC-Enrichment + 429-Retries brauchen unter Last >60s
 
 const GCP_PROJECT = "mytemple-460913";
 const COLLECTION = "google_ads_leaderboard_cache";

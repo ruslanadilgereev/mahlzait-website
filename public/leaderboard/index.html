@@ -1490,12 +1490,12 @@
       has_previous_apps: { "true": "Umsteiger (hatte App)", "false": "Neueinsteiger" },
       add_burned_calories: { "true": "Ja", "false": "Nein" },
       obstacles: { unhealthy_habits: "Ungesunde Gewohnheiten", lack_consistency: "Mangelnde Konstanz", busy_schedule: "Wenig Zeit", lack_inspiration: "Wenig Inspiration", lack_support: "Wenig Unterstützung", emotional_eating: "Emotionales Essen", lack_knowledge: "Wenig Wissen" },
-      subtype: { yearly: "Jährlich", monthly: "Monatlich", trial: "Trial (laufend)", andere: "Andere", kein: "Kein Abo" },
+      subtype: { yearly: "Jährlich", monthly: "Monatlich", trial: "Trial (laufend)", expired: "Abgelaufen", andere: "Andere", kein: "Kein Abo" },
     };
     const CU_ORD = {
       activity: ["activity_sedentary", "activity_lightly_active", "activity_moderately_active", "activity_very_active", "activity_extra_active"],
       bmi: ["Untergewicht", "Normal", "Übergewicht", "Adipositas"],
-      subtype: ["yearly", "monthly", "trial", "andere", "kein"],
+      subtype: ["yearly", "monthly", "trial", "expired", "andere", "kein"],
     };
     function cuLabel(field, v) {
       if (v == null || v === "") return CU_NONE;
@@ -1509,7 +1509,7 @@
       if (field === "platform") return ({ ios: "#0D0D0D", android: "#3DDC84" })[key] || palAt(idx);
       if (field === "has_previous_apps") return ({ "true": "#0285FF", "false": "#009688" })[key] || palAt(idx);
       if (field === "add_burned_calories") return ({ "true": "#009688", "false": "#9A9A95" })[key] || palAt(idx);
-      if (field === "subtype") return ({ yearly: "#008635", monthly: "#0285FF", trial: "#E25507", andere: "#6B3F7F", kein: "#C8C8C2" })[key] || palAt(idx);
+      if (field === "subtype") return ({ yearly: "#008635", monthly: "#0285FF", trial: "#E25507", expired: "#B0231F", andere: "#6B3F7F", kein: "#C8C8C2" })[key] || palAt(idx);
       return palAt(idx);
     }
 
