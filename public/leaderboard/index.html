@@ -610,7 +610,7 @@
                 <th class="num">Profit</th>
                 <th class="num" title="Apple Search Ads zählt Installs (Tap → App-Install via AdServices)">Inst</th>
                 <th class="num" title="RC-Customers mit first_seen_at in Range und $campaign=diese — idealerweise ≈ ASA Inst">RC-New</th>
-                <th class="num" title="Im Zeitraum GESTARTETE Trials (Abo-Start mit gross=0). Konvertierte zählen unter Paid; ältere ohne Conversion sind abgelaufen — werden hier trotzdem als Start gezählt.">Trial-Starts</th>
+                <th class="num" title="Im Zeitraum gestartete Trial-Abos (Trial-first), INKL. der später konvertierten. Paid ist die Teilmenge davon, die zahlt → Trial→Paid = Paid ÷ Trial-Starts.">Trial-Starts</th>
                 <th class="num">Paid</th>
                 <th class="num" title="Spend / Paid · Influencer-Benchmark 10 €">CPA</th>
                 <th class="num">Status</th>
@@ -644,7 +644,7 @@
         <div class="footer-note">
           Spend aus Apple Search Ads (EUR, max 90 Tage zurück — Apple DAILY-API-Limit) · Revenue = RC-Umsatz (<b>Netto</b> = Brutto −19% MwSt −15% Store −1% RC ≈ ×0,71 · bzw. Brutto je Umschalter · <b>kumuliert/LTV bis heute</b>, wächst pro Refresh durch Renewals) × <code id="aa-usd-rate">0.92</code> EUR/USD ·
           CPA = Spend ÷ Paid (Influencer-Benchmark: 10 €/Paid) ·
-          <b>Trial-Starts</b> = im Zeitraum gestartete Trials (nicht „laufende"); konvertierte zählen unter Paid ·
+          <b>Trial-Starts</b> = im Zeitraum gestartete Trial-Abos inkl. später konvertierter; <b>Paid</b> ist die Teilmenge davon (Trial→Paid = Paid ÷ Trial-Starts) ·
           Date-Filter wirkt auf Spend-Tag &amp; Abo-Start (Revenue der Kohorte)
         </div>
       </div>
@@ -677,7 +677,7 @@
                 <th>Google Ads · gclid-Kohorte</th>
                 <th class="num" title="Gesamter Google-Ads-Spend im Zeitraum (ALLE Kampagnen) — passend zur account-weiten gclid-Kohorte, unabhängig vom „nur aktive\"-Toggle">Spend</th>
                 <th class="num" title="Neue Google-attribuierte App-Nutzer (gclid im Play Install Referrer, first_seen im Zeitraum) ≈ Google-Installs. NICHT Ad-Klicks — die stehen in der Kampagnen-Tabelle unten.">Neue Kunden</th>
-                <th class="num" title="Im Zeitraum GESTARTETE Trials (Abo-Start mit gross=0). Konvertierte zählen unter Paid; ältere ohne Conversion sind abgelaufen — werden hier trotzdem als Start gezählt.">Trial-Starts</th>
+                <th class="num" title="Im Zeitraum gestartete Trial-Abos (Trial-first), INKL. der später konvertierten. Paid ist die Teilmenge davon, die zahlt → Trial→Paid = Paid ÷ Trial-Starts.">Trial-Starts</th>
                 <th class="num">Paid</th>
                 <th class="num">Revenue</th>
                 <th class="num">Profit</th>
@@ -736,7 +736,7 @@
 
         <div class="footer-note">
           Spend aus Google Ads API (EUR, max 90 Tage) · Conversions = RC-Kunden mit <code>gclid</code>/<code>gbraid</code> (Android Play Install Referrer) · Revenue = RC-Umsatz (<b>Netto</b> = Brutto −19% MwSt −15% Store −1% RC ≈ ×0,71 · bzw. Brutto je Umschalter · <b>kumuliert/LTV bis heute</b>, wächst pro Refresh durch Renewals) × <code>0.92</code> EUR/USD ·
-          CPA-Paid = Spend ÷ Paid · <b>Trial-Starts</b> = im Zeitraum gestartete Trials (nicht „laufende"); konvertierte → Paid · Conversions konsolidiert über alle Google-Klicks (nicht pro Kampagne) ·
+          CPA-Paid = Spend ÷ Paid · <b>Trial-Starts</b> = im Zeitraum gestartete Trial-Abos inkl. später konvertierter; <b>Paid</b> = Teilmenge davon (Trial→Paid = Paid ÷ Trial-Starts) · Conversions konsolidiert über alle Google-Klicks (nicht pro Kampagne) ·
           <b>Weicht bewusst von der Google-Ads-Oberfläche ab:</b> Google zählt Klicks → Installs (First open) → Conversions auf <b>Klick-Datum</b>; hier zählen wir RC-Events (Neukunde/Trial) auf <b>Event-Datum</b>, deterministisch per gclid (<b>Android-only</b>, iOS ohne Zuordnung). „Neue Kunden" ≈ Google-Installs (Teilmenge mit gclid), <b>nicht</b> Ad-Klicks (die stehen unten in der Kampagnen-Tabelle).
         </div>
       </div>
@@ -1125,7 +1125,7 @@
             else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
           if (custHasPaid) paid++;
-          else if (custHasTrial) trials++;
+          if (custHasPaid || custHasTrial) trials++; // Trial-Starts = Trial-first Abos (konvertiert ODER nicht); Paid ist Teilmenge
         }
         const revenueEur = revenueUsd * USD_TO_EUR;
         const profit = revenueEur - spend;
@@ -1159,7 +1159,7 @@
             else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
           }
           if (custHasPaid) paid++;
-          else if (custHasTrial) trials++;
+          if (custHasPaid || custHasTrial) trials++; // Trial-Starts = Trial-first Abos (konvertiert ODER nicht); Paid ist Teilmenge
         }
         rendered.push({
           name: "(no campaign attribution)",
@@ -1416,7 +1416,7 @@
           else if (s.ownership === "purchased" && s.starts_at === s.current_period_starts_at && s.store !== "promotional") custHasTrial = true;
         }
         if (custHasPaid) paid++;
-        else if (custHasTrial) trials++;
+        if (custHasPaid || custHasTrial) trials++; // Trial-Starts inkl. konvertierte; Paid = Teilmenge
       }
       const revEur = revUsd * USD_TO_EUR;
       const profit = revEur - cohortSpend;
