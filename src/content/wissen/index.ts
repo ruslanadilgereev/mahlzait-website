@@ -6670,6 +6670,574 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "grundumsatz-erhoehen-stoffwechsel-ankurbeln-was-wirklich-geht-evidenz",
+    title: "Grundumsatz erhöhen: Was den Stoffwechsel wirklich ankurbelt (und was nicht)",
+    description: "Den Grundumsatz steigert man fast nur über Muskelmasse, Alltagsbewegung und Protein. Muskelgewebe verbraucht in Ruhe rund 13 kcal/kg pro Tag.",
+    tags: [
+      "grundumsatz",
+      "stoffwechsel",
+      "kalorienverbrauch",
+      "muskelmasse",
+      "neat",
+      "protein",
+      "krafttraining",
+      "abnehmen"
+    ],
+    relatedCalculators: [
+      "grundumsatz-rechner",
+      "kalorienbedarf-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Prediction of resting energy expenditure from fat-free mass and fat mass",
+        authors: "Nelson KM, Weinsier RL, Long CL, Schutz Y",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 1992,
+        doi: "10.1093/ajcn/56.5.848"
+      },
+      {
+        title: "Role of nonexercise activity thermogenesis in resistance to fat gain in humans",
+        authors: "Levine JA, Eberhardt NL, Jensen MD",
+        journal: "Science",
+        year: 1999,
+        doi: "10.1126/science.283.5399.212"
+      },
+      {
+        title: "Persistent metabolic adaptation 6 years after \"The Biggest Loser\" competition",
+        authors: "Fothergill E, Guo J, Howard L, Kerns JC, Knuth ND, Brychta R, Chen KY, Skarulis MC, Walter M, Walter PJ, Hall KD",
+        journal: "Obesity",
+        year: 2016,
+        doi: "10.1002/oby.21538"
+      }
+    ],
+    kernaussage: "Der Grundumsatz lässt sich spürbar fast nur über drei Hebel steigern: mehr Muskelmasse (Krafttraining), mehr Alltagsbewegung (NEAT) und der thermische Effekt von Protein, das etwa 20-30 Prozent seiner Energie schon bei der Verdauung verbraucht. Grüner Tee, scharfes Essen oder \"Stoffwechsel-Booster\" bewegen dagegen nur wenige Kilokalorien und sind praktisch irrelevant. Crash-Diäten senken den Ruheumsatz sogar messbar ab.",
+    faqs: [
+      {
+        question: "Kann man den Grundumsatz wirklich erhöhen?",
+        answer: "Ja, aber nur begrenzt und langsam. Die wirksamsten Hebel sind mehr Muskelmasse durch Krafttraining, mehr Alltagsbewegung (NEAT) und ein höherer Proteinanteil über den thermischen Effekt der Nahrung. Einzelne 'Booster' wie grüner Tee oder Koffein bewegen dagegen nur wenige Kilokalorien."
+      },
+      {
+        question: "Wie viele Kalorien verbrennt ein Kilo Muskel pro Tag?",
+        answer: "In Ruhe nur rund 13 Kilokalorien pro Kilo und Tag. Mehrere Kilo zusätzliche Muskelmasse heben den Grundumsatz also nur um einige Dutzend Kilokalorien - der Effekt ist real, aber deutlich kleiner als oft behauptet (oft kursieren falsche Zahlen von 50-100 kcal)."
+      },
+      {
+        question: "Bringen viele kleine Mahlzeiten den Stoffwechsel in Schwung?",
+        answer: "Nein. Kontrollierte Studien zeigen keinen relevanten Vorteil häufiger kleiner Mahlzeiten für den Energieverbrauch. Entscheidend ist die gesamte Energie- und Proteinmenge über den Tag, nicht die Mahlzeitenfrequenz."
+      },
+      {
+        question: "Warum stagniert mein Gewicht trotz Diät?",
+        answer: "Bei starkem Kaloriendefizit sinkt der Ruheumsatz über den reinen Gewichtsverlust hinaus ab - die adaptive Thermogenese. Diese Anpassung kann lange bestehen. Moderate Defizite, ausreichend Protein und Krafttraining halten diese Bremse kleiner als Crash-Diäten."
+      },
+      {
+        question: "Hilft grüner Tee oder Koffein beim Abnehmen?",
+        answer: "Nur minimal. Koffein und grüne-Tee-Catechine erhöhen den Energieverbrauch kurzfristig und geringfügig. Für die Gewichtskontrolle ist dieser Effekt praktisch vernachlässigbar und kein Ersatz für Muskelaufbau, Bewegung und Energiebilanz."
+      }
+    ]
+  },
+  {
+    slug: "butterkaffee-bulletproof-coffee-faktencheck-evidenz",
+    title: "Butterkaffee (Bulletproof Coffee): Was der Fett-Kaffee wirklich bringt",
+    description: "Butterkaffee liefert 200-460 kcal extra. Studien zeigen: gesaettigte Fette heben das LDL-Cholesterin, ein Abnehm- oder Leistungsvorteil ist nicht belegt.",
+    tags: [
+      "butterkaffee",
+      "bulletproof coffee",
+      "mct oel",
+      "gesaettigte fette",
+      "ldl cholesterin",
+      "abnehmen",
+      "kaffee",
+      "kaloriendefizit"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "koffein-rechner",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245"
+      },
+      {
+        title: "Reduction in saturated fat intake for cardiovascular disease",
+        authors: "Hooper L, Martin N, Jimoh OF, Kirk C, Foster E, Abdelhamid AS",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2020,
+        doi: "10.1002/14651858.CD011737.pub3"
+      },
+      {
+        title: "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts",
+        authors: "Estruch R, Ros E, Salas-Salvado J, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2018,
+        doi: "10.1056/NEJMoa1800389"
+      }
+    ],
+    kernaussage: "Butterkaffee (Bulletproof Coffee) fuegt dem morgendlichen Kaffee 200 bis 460 kcal vor allem in Form gesaettigter Fette hinzu. Ein belegter Vorteil fuers Abnehmen oder die Leistung fehlt: Gewichtsverlust haengt am Gesamtkaloriendefizit, nicht an der Fettquelle. Gesaettigte Fette aus Butter heben zudem das LDL-Cholesterin, weshalb Leitlinien zur Zurueckhaltung raten.",
+    faqs: [
+      {
+        question: "Hilft Butterkaffee wirklich beim Abnehmen?",
+        answer: "Es gibt keinen belegten Abnehmvorteil. Gewichtsverlust haengt vom Gesamtkaloriendefizit ab, nicht von der Fettquelle. Das DIETFITS-RCT zeigte, dass fett- und kohlenhydratarme Diaeten zu aehnlichem Gewichtsverlust fuehren. Da Butterkaffee 200 bis 460 kcal hinzufuegt, kann er das Abnehmen sogar erschweren, wenn die Kalorien nicht eingerechnet werden."
+      },
+      {
+        question: "Wie viele Kalorien hat ein Butterkaffee?",
+        answer: "Je nach Portion etwa 200 bis 460 kcal. Ein Essloeffel Butter liefert rund 100 kcal, ein Essloeffel MCT-Oel etwa 115 kcal. Der schwarze Kaffee selbst ist nahezu kalorienfrei. Die Kalorien stammen also fast vollstaendig aus dem zugesetzten Fett."
+      },
+      {
+        question: "Ist die Butter im Kaffee schlecht fuers Cholesterin?",
+        answer: "Butter besteht ueberwiegend aus gesaettigten Fettsaeuren, die das LDL-Cholesterin anheben koennen. Ein Cochrane-Review zeigt, dass weniger gesaettigtes Fett das kardiovaskulaere Risiko um etwa 17 Prozent senkt, besonders beim Ersatz durch ungesaettigte Fette wie Olivenoel. Bei erhoehten Blutfettwerten ist taeglicher Butterkaffee daher unguenstig."
+      },
+      {
+        question: "Macht MCT-Oel im Kaffee einen Unterschied?",
+        answer: "MCT-Oel zeigte in kleinen, kurzfristigen Studien moderate Effekte auf Saettigung und Energieverbrauch. Diese sind jedoch zu klein, um im Alltag einen relevanten Abnehmvorteil zu erzeugen. Es liefert zudem selbst Kalorien (rund 115 kcal pro Essloeffel)."
+      },
+      {
+        question: "Woher kommt der wache, fokussierte Effekt am Morgen?",
+        answer: "Vom Koffein, nicht von Butter oder MCT-Oel. Koffein verbessert Aufmerksamkeit und Reaktionszeit. Denselben Effekt erzielen Sie mit schwarzem Kaffee ohne die Zusatzkalorien."
+      }
+    ]
+  },
+  {
+    slug: "teller-methode-harvard-teller-portionskontrolle-evidenz",
+    title: "Die Teller-Methode (Harvard-Teller): Abnehmen ohne Kalorienzählen?",
+    description: "Teller-Methode: halb Gemüse, je ein Viertel Protein und Beilage. Studien zeigen, dass geringere Energiedichte die Kalorienaufnahme um bis zu 24 % senkt.",
+    tags: [
+      "teller methode",
+      "harvard teller",
+      "tellermethode abnehmen",
+      "portionskontrolle",
+      "abnehmen ohne kalorienzählen",
+      "energiedichte",
+      "gemüse",
+      "sättigung"
+    ],
+    relatedCalculators: [
+      "makros-berechnen",
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Calorie reformulation: a systematic review and meta-analysis examining the effect of manipulating food energy density on daily energy intake",
+        authors: "Robinson E, Khuttan M, McFarland-Lesser I, Patel Z, Jones A",
+        journal: "International Journal of Behavioral Nutrition and Physical Activity",
+        year: 2022,
+        doi: "10.1186/s12966-022-01287-z"
+      },
+      {
+        title: "Portion size of food affects energy intake in normal-weight and overweight men and women",
+        authors: "Rolls BJ, Morris EL, Roe LS",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2002,
+        doi: "10.1093/ajcn/76.6.1207",
+        pmid: "12450884"
+      },
+      {
+        title: "Downsizing food: a systematic review and meta-analysis examining the effect of reducing served food portion sizes on daily energy intake and body weight",
+        authors: "Robinson E, McFarland-Lesser I, Patel Z, Jones A",
+        journal: "British Journal of Nutrition",
+        year: 2022,
+        doi: "10.1017/S0007114522000903",
+        pmid: "35387692"
+      }
+    ],
+    kernaussage: "Die Teller-Methode füllt den Teller zur Hälfte mit Gemüse und je zu einem Viertel mit Protein und stärkehaltiger Beilage. Das senkt die Energiedichte der Mahlzeit. In randomisierten Studien reduzierte eine geringere Energiedichte die tägliche Kalorienaufnahme deutlich (gepoolter Effekt SMD −1,0), während kleinere Portionen die akute Aufnahme um rund ein Drittel senken. Die Methode ist eine einfache, evidenzbasierte Strategie zur Kalorienreduktion ohne Zählen.",
+    faqs: [
+      {
+        question: "Kann ich mit der Teller-Methode abnehmen, ohne Kalorien zu zählen?",
+        answer: "Ja, das ist das Grundprinzip. Indem Sie den Teller zur Hälfte mit kalorienarmem Gemüse füllen und die energiedichten Beilagen auf ein Viertel begrenzen, senken Sie die Energiedichte und Portionsgröße der Mahlzeit. Studien zeigen, dass das die Kalorienaufnahme deutlich reduziert. Garantiert ist ein Defizit aber nicht – auf fettreiche Zutaten und Saucen sollten Sie achten."
+      },
+      {
+        question: "Wie groß soll der Teller sein?",
+        answer: "Verwenden Sie einen normalen Essteller (etwa 24–26 cm), keinen übergroßen. Da die servierte Gesamtmenge stark beeinflusst, wie viel Sie essen, hilft ein normal großer Teller, die Portion natürlich zu begrenzen."
+      },
+      {
+        question: "Was zählt beim Protein-Viertel?",
+        answer: "Geeignet sind Fisch, Geflügel, mageres Fleisch, Eier, Magerquark, Tofu oder Hülsenfrüchte. Hülsenfrüchte zählen je nach Mahlzeit auch teilweise als Beilage. Eine etwa handflächengroße Portion ist ein guter Richtwert."
+      },
+      {
+        question: "Funktioniert die Teller-Methode auch beim Auswärtsessen?",
+        answer: "Im Prinzip ja: Bestellen Sie eine zusätzliche Gemüsebeilage oder einen Salat, reduzieren Sie die stärkehaltige Beilage und dosieren Sie Saucen und Dressings separat. Das verschiebt das Verhältnis Richtung halb Gemüse, auch ohne eigenen Teller."
+      }
+    ]
+  },
+  {
+    slug: "gruene-smoothies-abnehmen-evidenz-studie",
+    title: "Grüne Smoothies zum Abnehmen: Was bringen sie wirklich?",
+    description: "Grüne Smoothies liefern Gemüse und Ballaststoffe, sättigen als Flüssigkalorien aber schlechter. Was Studien zu flüssigen Kalorien und Abnehmen zeigen.",
+    tags: [
+      "grüne smoothies abnehmen",
+      "smoothie abnehmen",
+      "grüner smoothie",
+      "smoothie diät",
+      "detox",
+      "ballaststoffe",
+      "flüssigkalorien",
+      "kaloriendefizit"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Dietary sugars and body weight: systematic review and meta-analyses of randomised controlled trials and cohort studies",
+        authors: "Te Morenga L, Mallard S, Mann J",
+        journal: "BMJ",
+        year: 2013,
+        doi: "10.1136/bmj.e7492",
+        pmid: "23321486"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245",
+        pmid: "29466592"
+      }
+    ],
+    kernaussage: "Grüne Smoothies sind weder Schlankmacher noch Dickmacher: Sie liefern Gemüse und Ballaststoffe, sättigen als Flüssigkalorien aber nachweislich schlechter als feste Nahrung und enthalten durch Obst oft mehr Zucker und Kalorien als gedacht. Ob sie beim Abnehmen helfen, hängt allein davon ab, ob sie in ein Kaloriendefizit passen und ob sie eine Mahlzeit ersetzen oder zusätzlich getrunken werden.",
+    faqs: [
+      {
+        question: "Kann man mit grünen Smoothies abnehmen?",
+        answer: "Ja, aber nur indirekt. Grüne Smoothies haben keine fettverbrennende Wirkung. Abgenommen wird ausschließlich über ein Kaloriendefizit. Ein gemüsebetonter Smoothie kann helfen, wenn er eine kalorienreichere Mahlzeit ersetzt – nicht, wenn er zusätzlich getrunken wird."
+      },
+      {
+        question: "Sättigen Smoothies weniger als feste Mahlzeiten?",
+        answer: "In der Regel ja. Kontrollierte Studien zeigen, dass dieselben Kalorien in flüssiger Form schwächer sättigen als feste Nahrung – ein ganzer Apfel sättigt stärker als Apfelmus oder -saft. Etwas Protein (Quark, Skyr, Proteinpulver) und reichlich Blattgemüse verbessern die Sättigung."
+      },
+      {
+        question: "Wie viele Kalorien hat ein grüner Smoothie?",
+        answer: "Das hängt stark von den Zutaten ab. Ein reiner Gemüse-Smoothie kann unter 100 kcal liegen, mit zwei Bananen, Mango und Saft aber schnell 300 bis 400 kcal erreichen. Der Kaloriengehalt wird oft unterschätzt – tragen Sie den Smoothie wie jede Mahlzeit ins Tracking ein."
+      },
+      {
+        question: "Helfen Detox-Smoothies beim Entgiften und Abnehmen?",
+        answer: "Nein. Die Entgiftung übernehmen Leber und Nieren von selbst; ein Detox-Effekt von Smoothies ist wissenschaftlich nicht belegt. Ein Einfluss auf den Fettabbau über das normale Kaloriendefizit hinaus besteht nicht."
+      },
+      {
+        question: "Sind Ballaststoffe in Smoothies ein Vorteil?",
+        answer: "Ja. Anders als bei Saft bleiben beim Pürieren die Pflanzenfasern erhalten. Ballaststoffe können die Sättigung fördern, und in randomisierten Studien führte schon das Ziel von 30 g Ballaststoffen pro Tag zu klinisch relevantem Gewichtsverlust."
+      }
+    ]
+  },
+  {
+    slug: "suppendiaet-kohlsuppendiaet-evidenz-risiken",
+    title: "Suppendiät und Kohlsuppendiät: Schnell abnehmen mit Suppe?",
+    description: "Suppendiät und Kohlsuppendiät erklärt: Niedrige Energiedichte sättigt, doch die extreme Mono-Variante ist nährstoffarm, fördert Muskelverlust und Jojo-Effekt.",
+    tags: [
+      "suppendiät",
+      "kohlsuppendiät",
+      "abnehmen",
+      "energiedichte",
+      "crash-diät",
+      "sättigung",
+      "jojo-effekt",
+      "muskelerhalt"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake",
+        authors: "Hall KD, et al.",
+        journal: "Cell Metabolism",
+        year: 2019,
+        doi: "10.1016/j.cmet.2019.05.008",
+        pmid: "31105044"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245",
+        pmid: "29466592"
+      },
+      {
+        title: "Long-Term Persistence of Hormonal Adaptations to Weight Loss",
+        authors: "Sumithran P, Prendergast LA, Delbridge E, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2011,
+        doi: "10.1056/NEJMoa1105816",
+        pmid: "21991007"
+      }
+    ],
+    kernaussage: "Suppen sättigen gut, weil ihre niedrige Energiedichte (wenig Kalorien pro Gramm) bei großem Volumen die spontane Kalorienaufnahme senkt – ein erwiesener Hebel beim Abnehmen. Die extreme Kohlsuppendiät dagegen liefert kaum Protein und Nährstoffe: Der schnelle Gewichtsverlust besteht großteils aus Wasser und Muskelmasse, und die hormonelle Gegenregulation begünstigt den Jojo-Effekt. Als kurze Ergänzung sinnvoll, als Monodiät ungeeignet.",
+    faqs: [
+      {
+        question: "Kann man mit einer Suppendiät wirklich schnell abnehmen?",
+        answer: "Auf der Waage ja, aber der schnelle Anfangserfolg ist großteils Wasser. Bei sehr kohlenhydrat- und kalorienarmer Kost leeren sich die Glykogenspeicher, die je Gramm rund 3 g Wasser binden. Echter Fettverlust geht langsamer. Langfristig zählt das durchgehaltene Kaloriendefizit, nicht das Tempo der ersten Tage."
+      },
+      {
+        question: "Warum sättigen Suppen so gut?",
+        answer: "Wegen ihrer niedrigen Energiedichte: viel Wasser und Volumen bei wenig Kalorien. Da Menschen tendenziell ein konstantes Gewicht an Nahrung essen, senkt das die spontane Kalorienaufnahme, ohne dass Hunger entsteht. Eine NIH-Studie zeigte, dass energiedichtere Kost zu rund 500 kcal Mehraufnahme pro Tag führt (Hall, Cell Metabolism 2019)."
+      },
+      {
+        question: "Ist die Kohlsuppendiät gefährlich?",
+        answer: "Als kurze Maßnahme über wenige Tage meist nicht akut gefährlich, aber als Dauerlösung ungeeignet. Sie liefert kaum Protein und Nährstoffe, fördert Muskelabbau im starken Defizit und begünstigt durch die hormonelle Gegenregulation den Jojo-Effekt. Menschen mit Vorerkrankungen sollten solche Diäten ärztlich begleiten lassen."
+      },
+      {
+        question: "Warum nimmt man nach einer Kohlsuppendiät oft wieder zu?",
+        answer: "Erstens kehrt das in der Diät verlorene Wasser mit normaler Kost zurück. Zweitens passt sich der Hormonhaushalt an: Ghrelin (Hunger) steigt, Leptin (Sättigung) sinkt – laut NEJM-Studie noch 12 Monate messbar (Sumithran 2011). Der Körper signalisiert anhaltenden Hunger, was den Jojo-Effekt begünstigt."
+      },
+      {
+        question: "Wie nutze ich Suppe sinnvoll zum Abnehmen?",
+        answer: "Als Werkzeug statt als Monodiät: eine klare Gemüsesuppe als Vorspeise oder als Ersatz für eine kalorienreiche Mahlzeit. Ergänzen Sie Protein wie Hülsenfrüchte, Hähnchen oder Tofu, um Muskulatur zu schützen, und kombinieren Sie das mit einem moderaten, berechneten Kaloriendefizit."
+      }
+    ]
+  },
+  {
+    slug: "gicht-ernaehrung-purine-abnehmen-evidenz",
+    title: "Gicht und Abnehmen: Purine, Fruktose und der richtige Weg zum Gewichtsverlust",
+    description: "Gicht: Purinreiche Kost, Fruktose und Alkohol verdoppeln fast das Schubrisiko. Warum langsames Abnehmen die Harnsäure senkt - und Crash-Diäten schaden.",
+    tags: [
+      "gicht ernährung",
+      "purine tabelle abnehmen",
+      "gicht abnehmen",
+      "harnsäure senken ernährung",
+      "purinarme ernährung",
+      "fruktose",
+      "alkohol",
+      "gewichtsverlust"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "bmi-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 8,
+    sources: [
+      {
+        title: "Purine-Rich Foods, Dairy and Protein Intake, and the Risk of Gout in Men",
+        authors: "Choi HK, Atkinson K, Karlson EW, Willett W, Curhan G",
+        journal: "New England Journal of Medicine",
+        year: 2004,
+        doi: "10.1056/NEJMoa035700"
+      },
+      {
+        title: "Soft drinks, fructose consumption, and the risk of gout in men: prospective cohort study",
+        authors: "Choi HK, Curhan G",
+        journal: "BMJ",
+        year: 2008,
+        doi: "10.1136/bmj.39449.819271.BE"
+      },
+      {
+        title: "Alcohol intake and risk of incident gout in men: a prospective study",
+        authors: "Choi HK, Atkinson K, Karlson EW, Willett W, Curhan G",
+        journal: "The Lancet",
+        year: 2004,
+        doi: "10.1016/S0140-6736(04)16000-5"
+      },
+      {
+        title: "Weight loss for overweight and obese individuals with gout: a systematic review of longitudinal studies",
+        authors: "Nielsen SM, Bartels EM, Henriksen M, et al.",
+        journal: "Annals of the Rheumatic Diseases",
+        year: 2017,
+        doi: "10.1136/annrheumdis-2017-211472"
+      },
+      {
+        title: "2020 American College of Rheumatology Guideline for the Management of Gout",
+        authors: "FitzGerald JD, Dalbeth N, Mikuls T, et al.",
+        journal: "Arthritis Care & Research",
+        year: 2020,
+        doi: "10.1002/acr.24180"
+      }
+    ],
+    kernaussage: "Bei Gicht senken eine purinarme Kost und ein moderater Gewichtsverlust den Harnsäurespiegel und die Schubhäufigkeit. Große Kohortenstudien zeigen: Viel rotes Fleisch, Meeresfrüchte, fruktosereiche Softdrinks und Alkohol erhöhen das Gichtrisiko deutlich, während fettarme Milchprodukte schützen. Entscheidend ist langsames Abnehmen - Crash-Diäten und Fasten lassen die Harnsäure kurzfristig steigen und können Schübe auslösen.",
+    faqs: [
+      {
+        question: "Kann ich mit Gicht überhaupt abnehmen?",
+        answer: "Ja, und es ist sogar empfehlenswert. Gewichtsverlust senkt langfristig den Harnsäurespiegel und reduziert die Schubhäufigkeit. Entscheidend ist, langsam und mit einem moderaten Kaloriendefizit abzunehmen. Sehr schnelles Abnehmen, Crash-Diäten und längeres Fasten können die Harnsäure kurzfristig steigen lassen und einen akuten Schub auslösen."
+      },
+      {
+        question: "Welche Lebensmittel sollte ich bei Gicht meiden?",
+        answer: "Vor allem tierische Purinquellen wie rotes Fleisch, Innereien (Leber, Niere) und bestimmte Meeresfrüchte (Sardellen, Sardinen, Muscheln). Dazu zuckergesüßte Getränke und Fruchtsäfte wegen der Fruktose sowie Alkohol, insbesondere Bier. Purinreiches Gemüse wie Spinat, Pilze oder Hülsenfrüchte müssen Sie laut Studienlage nicht meiden."
+      },
+      {
+        question: "Warum löst eine Crash-Diät einen Gichtschub aus?",
+        answer: "Bei starkem Kaloriendefizit und Fasten bildet der Körper vermehrt Ketonkörper, die mit der Harnsäure um die Ausscheidung über die Niere konkurrieren. Dadurch steigt die Harnsäure im Blut kurzfristig an, was einen akuten Gichtanfall begünstigen kann. Ein moderates, schrittweises Abnehmen vermeidet diesen Effekt."
+      },
+      {
+        question: "Ist Fruktose wirklich schlimmer als andere Zucker bei Gicht?",
+        answer: "Fruktose ist tatsächlich problematisch, weil ihr Abbau in der Leber den Purinstoffwechsel anheizt und so die Harnsäureproduktion steigert. In einer großen Kohortenstudie war der Konsum von zwei oder mehr zuckergesüßten Softdrinks pro Tag mit einem rund 85 Prozent höheren Gichtrisiko verbunden. Diätlimonaden ohne Fruktose hatten diesen Effekt nicht."
+      },
+      {
+        question: "Reicht die Ernährung allein gegen Gicht?",
+        answer: "Bei leicht erhöhter Harnsäure ohne Beschwerden kann die Ernährung viel bewirken. Bei manifester Gicht mit wiederholten Schüben reicht sie laut Leitlinie meist nicht aus und sollte durch eine ärztlich begleitete harnsäuresenkende Therapie ergänzt werden. Ernährung und Gewichtsverlust sind dann unterstützend, ersetzen die Behandlung aber nicht."
+      }
+    ]
+  },
+  {
+    slug: "fodmap-reizdarm-ernaehrung-low-fodmap-evidenz",
+    title: "FODMAP & Reizdarm: Was die Low-FODMAP-Ernährung wirklich kann",
+    description: "Low-FODMAP lindert Reizdarm-Beschwerden bei rund 70 Prozent der Betroffenen (RCT-Evidenz) – aber nur als zeitlich begrenzte 3-Phasen-Strategie.",
+    tags: [
+      "fodmap",
+      "low fodmap",
+      "reizdarm ernährung",
+      "fodmap tabelle",
+      "reizdarmsyndrom ernährung",
+      "verdauung",
+      "ernährungstherapie"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "A diet low in FODMAPs reduces symptoms of irritable bowel syndrome",
+        authors: "Halmos EP, Power VA, Shepherd SJ, Gibson PR, Muir JG",
+        journal: "Gastroenterology",
+        year: 2014,
+        doi: "10.1053/j.gastro.2013.09.046",
+        pmid: "24076059"
+      },
+      {
+        title: "A diet low in FODMAPs reduces symptoms in patients with irritable bowel syndrome and a probiotic restores Bifidobacterium species: a randomized controlled trial",
+        authors: "Staudacher HM, Lomer MCE, Farquharson FM, Louis P, Fava F, Franciosi E, Scholz M, Tuohy KM, Lindsay JO, Irving PM, Whelan K",
+        journal: "Gastroenterology",
+        year: 2017,
+        doi: "10.1053/j.gastro.2017.06.010",
+        pmid: "28625832"
+      },
+      {
+        title: "American College of Gastroenterology Clinical Guideline: Management of Irritable Bowel Syndrome",
+        authors: "Lacy BE, Pimentel M, Brenner DM, Chey WD, Keefer LA, Long MD, Moshiree B",
+        journal: "American Journal of Gastroenterology",
+        year: 2021,
+        doi: "10.14309/ajg.0000000000001036",
+        pmid: "33315591"
+      },
+      {
+        title: "British Dietetic Association systematic review and evidence-based practice guidelines for the dietary management of irritable bowel syndrome in adults (2016 update)",
+        authors: "McKenzie YA, Bowyer RK, Leach H, Gulia P, Horobin J, O'Sullivan NA, Pettitt C, Reeves LB, Seamark L, Williams M, Thompson J, Lomer MCE",
+        journal: "Journal of Human Nutrition and Dietetics",
+        year: 2016,
+        doi: "10.1111/jhn.12385",
+        pmid: "27272325"
+      }
+    ],
+    kernaussage: "Die Low-FODMAP-Ernährung ist beim Reizdarmsyndrom durch mehrere randomisierte Studien und Leitlinien (ACG, NICE, BDA) gut belegt: Rund 50 bis 70 Prozent der Betroffenen berichten über eine deutliche Besserung von Blähungen, Schmerzen und Stuhlproblemen. Sie ist jedoch ausdrücklich eine dreiphasige, zeitlich begrenzte Diagnose- und Wiedereinführungsstrategie unter Beratung – keine Dauerdiät und kein Abnehmprogramm.",
+    faqs: [
+      {
+        question: "Was bedeutet FODMAP überhaupt?",
+        answer: "FODMAP ist die englische Abkürzung für fermentierbare Oligosaccharide, Disaccharide, Monosaccharide und Polyole. Das sind kurzkettige Kohlenhydrate, die im Dünndarm schlecht aufgenommen werden, Wasser binden und im Dickdarm von Bakterien vergoren werden. Bei Reizdarm-Betroffenen mit empfindlichem Darm löst das vermehrt Blähungen, Schmerzen und Stuhlveränderungen aus."
+      },
+      {
+        question: "Wie lange dauert die strenge Low-FODMAP-Phase?",
+        answer: "Die strikte Eliminierungsphase ist nur für etwa 4 bis 6 Wochen gedacht. Danach folgt die Wiedereinführung, in der einzelne FODMAP-Gruppen über mehrere Wochen systematisch getestet werden. Ziel ist eine möglichst vielfältige Dauerkost, die nur die individuell unverträglichen Lebensmittel einschränkt."
+      },
+      {
+        question: "Hilft Low-FODMAP wirklich beim Reizdarm?",
+        answer: "Ja, die Evidenz ist solide. In randomisierten Studien berichten je nach Untersuchung rund 50 bis 70 Prozent der Betroffenen über eine deutliche Besserung. Leitlinien wie die des American College of Gastroenterology und der British Dietetic Association empfehlen Low-FODMAP als evidenzbasierte diätetische Option. Allerdings spricht nicht jeder an."
+      },
+      {
+        question: "Kann ich mit Low-FODMAP abnehmen?",
+        answer: "Nein, das ist nicht der Zweck. Low-FODMAP zielt auf die Verträglichkeit von Lebensmitteln ab, nicht auf die Kalorienbilanz. Ob Sie abnehmen, hängt von der Energiebilanz ab. Für Gewichtsziele sind ein Kaloriendefizit und passende Makronährstoffe entscheidend, nicht der FODMAP-Gehalt."
+      },
+      {
+        question: "Ist Low-FODMAP als Dauerdiät schädlich?",
+        answer: "Dauerhaft streng durchgehalten kann sie problematisch sein. Die starke Einschränkung reduziert die Aufnahme präbiotischer Ballaststoffe und kann die Vielfalt der Darmbakterien ungünstig verschieben sowie zu Nährstofflücken führen. Deshalb ist die zeitliche Begrenzung mit anschließender Wiedereinführung zentraler Bestandteil des Konzepts."
+      }
+    ]
+  },
+  {
+    slug: "zu-viel-eiweiss-nieren-mythos-faktencheck-evidenz",
+    title: "Schadet zu viel Eiweiß den Nieren? Faktencheck zum Protein-Mythos",
+    description: "Meta-Analyse 2018 zeigt: Mehr Protein verändert die GFR bei gesunden Nieren nicht. Was Studien wirklich über Eiweiß und Nierenschäden sagen.",
+    tags: [
+      "zu viel eiweiß nieren",
+      "eiweiß schädlich nieren",
+      "protein nieren",
+      "wie viel eiweiß ist gesund",
+      "eiweiß überdosis",
+      "proteinbedarf",
+      "nierenfunktion"
+    ],
+    relatedCalculators: [
+      "protein-bedarf-rechner",
+      "makros-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Changes in Kidney Function Do Not Differ between Healthy Adults Consuming Higher- Compared with Lower- or Normal-Protein Diets: A Systematic Review and Meta-Analysis",
+        authors: "Devries MC, Sithamparapillai A, Brimble KS, Banfield L, Morton RW, Phillips SM",
+        journal: "The Journal of Nutrition",
+        year: 2018,
+        doi: "10.1093/jn/nxy197",
+        pmid: "30383278",
+        url: "https://doi.org/10.1093/jn/nxy197"
+      },
+      {
+        title: "Comparison of High vs. Normal/Low Protein Diets on Renal Function in Subjects without Chronic Kidney Disease: A Systematic Review and Meta-Analysis",
+        authors: "Schwingshackl L, Hoffmann G",
+        journal: "PLOS ONE",
+        year: 2014,
+        doi: "10.1371/journal.pone.0097656",
+        pmid: "24852037",
+        url: "https://doi.org/10.1371/journal.pone.0097656"
+      },
+      {
+        title: "A High Protein Diet Has No Harmful Effects: A One-Year Crossover Study in Resistance-Trained Males",
+        authors: "Antonio J, Ellerbroek A, Silver T, Vargas L, Peacock C",
+        journal: "Journal of Nutrition and Metabolism",
+        year: 2016,
+        doi: "10.1155/2016/9104792",
+        pmid: "27807480",
+        url: "https://doi.org/10.1155/2016/9104792"
+      }
+    ],
+    kernaussage: "Bei nierengesunden Menschen schädigt eine höhere Proteinzufuhr die Nieren nicht: Eine Meta-Analyse mit 28 Studien (Devries 2018) fand keinen Unterschied im Verlauf der glomerulären Filtrationsrate zwischen hoher und normaler Proteinzufuhr. Ein vorübergehend höherer GFR-Wert ist eine normale Anpassung, kein Schaden. Die Eiweiß-Einschränkung gilt nur für bereits eingeschränkte Nieren – nicht für gesunde Sportler oder Abnehmende.",
+    faqs: [
+      {
+        question: "Schadet zu viel Eiweiß den Nieren bei gesunden Menschen?",
+        answer: "Nein. Eine Meta-Analyse von 28 Studien (Devries 2018) fand bei gesunden Erwachsenen keinen Unterschied im Verlauf der Nierenfunktion (GFR) zwischen hoher und normaler Proteinzufuhr. Eine schädigende Wirkung auf gesunde Nieren ist wissenschaftlich nicht belegt."
+      },
+      {
+        question: "Warum heißt es dann, Protein erhöhe die Nierenbelastung?",
+        answer: "Hohe Proteinmengen lassen die glomeruläre Filtrationsrate kurzfristig ansteigen, weil die Nieren mehr Stickstoff ausscheiden. Dieser Anstieg ist eine normale, reversible Anpassung – vergleichbar mit einem höheren Puls beim Sport – und bedeutet keinen Funktionsverlust."
+      },
+      {
+        question: "Wie viel Eiweiß ist pro Tag unbedenklich?",
+        answer: "Die DGE-Referenzmenge liegt bei 0,8 g pro kg Körpergewicht. Für Sportler und beim Abnehmen gelten 1,2–2,0 g/kg als gut belegt und für gesunde Nieren unbedenklich. In Studien blieben selbst über 3 g/kg über ein Jahr ohne schädliche Effekte."
+      },
+      {
+        question: "Für wen ist eine Eiweiß-Einschränkung sinnvoll?",
+        answer: "Nur für Menschen mit bereits bestehender chronischer Nierenerkrankung. Bei ihnen kann eine moderate Proteinreduktion ärztlich angeraten sein, um die geschädigten Nieren zu entlasten. Diese Empfehlung gilt nicht für Gesunde."
+      },
+      {
+        question: "Sollte ich beim Abnehmen mehr oder weniger Eiweiß essen?",
+        answer: "Beim Abnehmen ist eine höhere Eiweißzufuhr meist vorteilhaft: Protein sättigt gut und schützt die Muskulatur im Kaloriendefizit. Bei gesunden Nieren ist das unbedenklich. Den individuellen Bedarf können Sie mit dem Protein-Bedarf-Rechner ermitteln."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
