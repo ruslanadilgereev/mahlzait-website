@@ -1741,6 +1741,430 @@ export const articlesMeta: ArticleMeta[] = [
       },
     ],
   },
+  {
+    slug: "viszerales-fett-bauchfett-innen-gesundheit-reduktion",
+    title: "Viszerales Fett: Das gefährliche Bauchfett innen erkennen und reduzieren",
+    description: "Viszerales Fett umhüllt die Organe und treibt das Diabetes- und Herzrisiko. Studien zeigen: Es schmilzt bei Gewichtsverlust überproportional schnell.",
+    tags: [
+      "viszerales fett",
+      "bauchfett",
+      "stoffwechsel",
+      "typ-2-diabetes",
+      "gewichtsabnahme",
+      "bewegung",
+      "taillenumfang",
+      "herzgesundheit"
+    ],
+    relatedCalculators: [
+      "taille-hueft-verhaeltnis-rechner",
+      "koerperfett-rechner",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, et al.",
+        journal: "The Lancet",
+        year: 2018,
+        doi: "10.1016/S0140-6736(17)33102-1",
+        pmid: "29221645"
+      },
+      {
+        title: "Reduction in the Incidence of Type 2 Diabetes with Lifestyle Intervention or Metformin",
+        authors: "Knowler WC, Barrett-Connor E, Fowler SE, et al. (Diabetes Prevention Program Research Group)",
+        journal: "New England Journal of Medicine",
+        year: 2002,
+        doi: "10.1056/NEJMoa012512",
+        pmid: "11832527"
+      },
+      {
+        title: "Exercise for overweight or obesity",
+        authors: "Shaw KA, Gennat HC, O'Rourke P, Del Mar C",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2006,
+        doi: "10.1002/14651858.CD003817.pub3",
+        pmid: "17054187"
+      }
+    ],
+    kernaussage: "Viszerales Fett liegt tief im Bauchraum um die Organe und ist metabolisch hochaktiv. Es steigert nachweislich das Risiko für Typ-2-Diabetes und Herz-Kreislauf-Erkrankungen. Die gute Nachricht: Bei einem Kaloriendefizit und mehr Bewegung baut der Körper viszerales Fett oft schneller ab als das harmlosere Unterhautfett – schon ein moderater Gewichtsverlust verbessert die Stoffwechselwerte deutlich.",
+    faqs: [
+      {
+        question: "Was ist der Unterschied zwischen viszeralem Fett und normalem Bauchfett?",
+        answer: "Subkutanes Fett liegt direkt unter der Haut und lässt sich greifen – es ist stoffwechselmäßig relativ harmlos. Viszerales Fett sitzt tiefer im Bauchraum und umhüllt die inneren Organe. Es ist metabolisch hochaktiv, gibt Entzündungsbotenstoffe ab und ist eng mit Insulinresistenz und Herz-Kreislauf-Risiko verbunden."
+      },
+      {
+        question: "Wie erkenne ich, ob ich zu viel viszerales Fett habe?",
+        answer: "Ein einfacher Indikator ist der Taillenumfang: Ab etwa 102 cm bei Männern und 88 cm bei Frauen steigt das Risiko laut WHO deutlich. Auch das Taille-Hüft-Verhältnis gibt Hinweise. Eine exakte Messung ist nur per MRT oder CT möglich, für den Alltag reicht aber das Maßband als Verlaufskontrolle."
+      },
+      {
+        question: "Lässt sich viszerales Fett gezielt durch Bauchübungen abbauen?",
+        answer: "Nein. Eine gezielte Fettverbrennung an einer einzelnen Körperstelle (Spot-Reduktion) gibt es nicht. Bauchmuskeltraining kräftigt die Muskeln, verbrennt aber kein inneres Bauchfett. Abgebaut wird viszerales Fett ausschließlich über ein Gesamt-Energiedefizit kombiniert mit Bewegung."
+      },
+      {
+        question: "Wie schnell baut sich viszerales Fett ab?",
+        answer: "In Studien reagiert viszerales Fett oft überproportional schnell auf Gewichtsverlust – häufig schon, bevor sich das Körpergewicht stark verändert. Schon 5–10 % Gewichtsverlust verbessern die Stoffwechselwerte spürbar. Entscheidend ist ein moderates, dauerhaft durchhaltbares Kaloriendefizit statt einer Crash-Diät."
+      },
+      {
+        question: "Kann der Abbau von viszeralem Fett Typ-2-Diabetes umkehren?",
+        answer: "Bei Menschen mit relativ kurz bestehendem Typ-2-Diabetes ist das möglich. In der DiRECT-Studie erreichten 46 % der Teilnehmenden nach einem intensiven Gewichtsmanagement-Programm eine Remission, bei einem Gewichtsverlust ab 15 kg sogar 86 %. Der Abbau des Fetts in und um Leber und Bauchspeicheldrüse gilt als Schlüsselmechanismus."
+      }
+    ]
+  },
+  {
+    slug: "mittelmeer-diaet-predimed-studie-abnehmen-herz",
+    title: "Mittelmeer-Diät: Was die PREDIMED-Studie wirklich beweist",
+    description: "Die PREDIMED-Studie zeigt: Die Mittelmeer-Diät senkt schwere Herz-Kreislauf-Ereignisse um rund 30 %. Was das fürs Abnehmen heißt.",
+    tags: [
+      "mittelmeer diät",
+      "mediterrane ernährung",
+      "predimed studie",
+      "mittelmeerdiät abnehmen",
+      "herzgesundheit",
+      "ernährungswissenschaft",
+      "olivenöl",
+      "nüsse"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "kaloriendefizit-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts (PREDIMED)",
+        authors: "Estruch R, Ros E, Salas-Salvadó J, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2018,
+        doi: "10.1056/NEJMoa1800389",
+        pmid: "29897866"
+      },
+      {
+        title: "Mediterranean-style diet for the primary and secondary prevention of cardiovascular disease",
+        authors: "Rees K, Takeda A, Martin N, et al.",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2019,
+        doi: "10.1002/14651858.CD009825.pub3",
+        pmid: "30864165"
+      }
+    ],
+    kernaussage: "Die Mittelmeer-Diät ist keine klassische Abnehmdiät, sondern ein Ernährungsmuster mit reichlich Olivenöl, Gemüse, Hülsenfrüchten, Fisch und Nüssen. Die große spanische PREDIMED-RCT zeigte über rund fünf Jahre eine etwa 30 % geringere Rate schwerer Herz-Kreislauf-Ereignisse (Herzinfarkt, Schlaganfall, kardiovaskulärer Tod) – eine der wenigen Ernährungsformen mit harter Endpunkt-Evidenz aus einer randomisierten Studie.",
+    faqs: [
+      {
+        question: "Kann man mit der Mittelmeer-Diät abnehmen?",
+        answer: "Nicht automatisch. Die PREDIMED-Studie schränkte die Kalorien nicht ein, und die Gewichtsunterschiede zwischen den Gruppen waren gering. Die Mittelmeer-Diät ist mit Olivenöl und Nüssen relativ energiedicht. Zum Abnehmen braucht es auch hier ein Kaloriendefizit – die Prinzipien lassen sich aber gut mit reduzierten Portionen kombinieren."
+      },
+      {
+        question: "Was hat die PREDIMED-Studie konkret gezeigt?",
+        answer: "In rund 7.400 Hochrisiko-Patienten senkte die Mittelmeer-Diät mit Olivenöl oder Nüssen über knapp fünf Jahre die Rate schwerer Herz-Kreislauf-Ereignisse (Herzinfarkt, Schlaganfall, kardiovaskulärer Tod) um etwa 30 % gegenüber einer fettarmen Kontrolldiät (Hazard Ratio ca. 0,69–0,72)."
+      },
+      {
+        question: "Wurde die PREDIMED-Studie nicht zurückgezogen?",
+        answer: "Die Originalpublikation von 2013 wurde 2018 wegen Mängeln bei der Randomisierung zurückgezogen und mit korrigierter Analyse erneut veröffentlicht. Das zentrale Ergebnis – die deutliche Senkung kardiovaskulärer Ereignisse – blieb auch nach der Neuanalyse bestehen."
+      },
+      {
+        question: "Für wen gilt der 30-Prozent-Effekt?",
+        answer: "PREDIMED untersuchte Menschen mit hohem kardiovaskulärem Risiko (Typ-2-Diabetes oder mehrere Risikofaktoren) in Spanien. Der Effekt lässt sich nicht eins zu eins auf junge, gesunde Menschen oder andere Ernährungskulturen übertragen."
+      },
+      {
+        question: "Was sind die Grundpfeiler der Mittelmeer-Diät?",
+        answer: "Reichlich Gemüse, Obst, Hülsenfrüchte und Vollkorn, Olivenöl als Hauptfettquelle, Fisch und Nüsse regelmäßig, wenig rotes und verarbeitetes Fleisch sowie wenig Zucker. Frisches Obst ersetzt typischerweise Süßigkeiten als Dessert."
+      }
+    ]
+  },
+  {
+    slug: "formula-diaet-abnehmshakes-direct-studie-mahlzeitenersatz",
+    title: "Abnehmshakes und Formula-Diäten: Was die DiRECT-Studie zeigt",
+    description: "DiRECT-RCT: Ärztlich begleitete Formula-Diät erreichte bei 46 Prozent eine Typ-2-Diabetes-Remission nach einem Jahr. Was Abnehmshakes können – und was nicht.",
+    tags: [
+      "abnehmshakes",
+      "formula diät",
+      "mahlzeitenersatz",
+      "direct studie",
+      "typ-2-diabetes",
+      "gewichtsabnahme",
+      "remission",
+      "abnehmshakes test"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, Brosnahan N, Thom G, McCombie L, Taylor R, et al.",
+        journal: "The Lancet",
+        year: 2018,
+        doi: "10.1016/S0140-6736(17)33102-1",
+        pmid: "29221645"
+      },
+      {
+        title: "Durability of a primary care-led weight-management intervention for remission of type 2 diabetes: 2-year results of the DiRECT open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, Brosnahan N, Thom G, McCombie L, Taylor R, et al.",
+        journal: "The Lancet Diabetes & Endocrinology",
+        year: 2019,
+        doi: "10.1016/S2213-8587(19)30068-3",
+        pmid: "30852132"
+      }
+    ],
+    kernaussage: "Formula-Diäten mit Abnehmshakes können wirken: In der DiRECT-Studie (cluster-randomisiertes RCT, n=298) erreichten 46 Prozent der Teilnehmer nach einem Jahr eine Typ-2-Diabetes-Remission, gegenüber 4 Prozent in der Standardversorgung. Entscheidend war jedoch nicht der Shake allein, sondern das komplette ärztlich begleitete Programm: rund 12 Wochen ausschließlich Formula, dann strukturierte Wiedereinführung normaler Kost und langfristige Gewichtserhaltung.",
+    faqs: [
+      {
+        question: "Funktionieren Abnehmshakes laut DiRECT-Studie wirklich?",
+        answer: "In DiRECT erreichten 46 Prozent der Teilnehmer mit einer ärztlich begleiteten Formula-Diät nach einem Jahr eine Typ-2-Diabetes-Remission, gegenüber 4 Prozent in der Standardversorgung. Die Shakes wirkten aber nur im Rahmen eines kompletten Programms mit Begleitung und strukturierter Wiedereinführung normaler Kost – nicht als frei gekauftes Produkt allein."
+      },
+      {
+        question: "Warum führte die Formula-Diät zur Diabetes-Remission?",
+        answer: "Der entscheidende Faktor war der Gewichtsverlust, nicht der Shake selbst. Wer 15 kg oder mehr verlor, erreichte zu 86 Prozent eine Remission, bei unter 5 kg nur zu 7 Prozent. Die Formula-Phase mit rund 825 bis 853 Kilokalorien pro Tag machte ein starkes, durchhaltbares Kaloriendefizit möglich."
+      },
+      {
+        question: "Halten die Erfolge der Formula-Diät langfristig an?",
+        answer: "Nach zwei Jahren befanden sich noch 36 Prozent der Interventionsgruppe in Remission, der mittlere Gewichtsverlust war von etwa 10 kg auf rund 7,6 kg gesunken. Der Effekt ist real, erodiert aber, wenn das Gewicht nicht gehalten wird. Dauerhafte Verhaltensänderung ist entscheidend."
+      },
+      {
+        question: "Sind frei verkäufliche Abnehmshakes mit der DiRECT-Diät vergleichbar?",
+        answer: "Nur eingeschränkt. DiRECT war ein intensiv ärztlich betreutes Programm mit kontrolliertem Absetzen von Medikamenten und langfristiger Begleitung. Drogerie- oder Online-Shakes bieten diese Struktur nicht. Wer Diabetes-Medikamente nimmt, sollte eine solche Diät nie ohne ärztliche Begleitung beginnen."
+      },
+      {
+        question: "Für wen gelten die DiRECT-Ergebnisse?",
+        answer: "Die Studie untersuchte Menschen mit Typ-2-Diabetes, der höchstens sechs Jahre bestand. Die Ergebnisse lassen sich nicht ohne Weiteres auf gesunde Abnehmwillige oder Menschen mit langjährigem Diabetes übertragen. Das primäre Ziel war Diabetes-Remission, nicht reine Gewichtsabnahme."
+      }
+    ]
+  },
+  {
+    slug: "abnehmtabletten-orlistat-otc-mittel-evidenz",
+    title: "Abnehmtabletten im Faktencheck: Orlistat und frei verkaeufliche Mittel",
+    description: "Orlistat senkt das Gewicht im Schnitt nur um etwa 2,9 kg mehr als Placebo. Was Fettbinder, Glucomannan und Co. wirklich koennen.",
+    tags: [
+      "abnehmtabletten",
+      "orlistat",
+      "abnehmpillen",
+      "fettbinder",
+      "glucomannan",
+      "gewichtsverlust",
+      "evidenz"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "bmi-rechner",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Long term pharmacotherapy for obesity and overweight: updated meta-analysis",
+        authors: "Rucker D, Padwal R, Li SK, Curioni C, Lau DCW",
+        journal: "BMJ",
+        year: 2007,
+        doi: "10.1136/bmj.39385.413113.25",
+        pmid: "18006966"
+      },
+      {
+        title: "The efficacy of glucomannan supplementation in overweight and obesity: a systematic review and meta-analysis of randomized clinical trials",
+        authors: "Onakpoya I, Posadzki P, Ernst E",
+        journal: "Journal of the American College of Nutrition",
+        year: 2014,
+        doi: "10.1080/07315724.2014.870013",
+        pmid: "24586952"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245",
+        pmid: "29466592"
+      }
+    ],
+    kernaussage: "Von den vielen Abnehmtabletten hat nur Orlistat solide Studienevidenz: In Meta-Analysen verlieren Anwender etwa 2,9 kg mehr als mit Placebo, und das nur in Kombination mit reduzierter Kalorienzufuhr. Glucomannan zeigt allenfalls einen kleinen, unsicheren Effekt. Die meisten frei verkaeuflichen Fettbinder und Pillen sind wissenschaftlich kaum belegt. Eine Ernaehrungsumstellung bleibt die Basis.",
+    faqs: [
+      {
+        question: "Wirken Abnehmtabletten wirklich?",
+        answer: "Nur Orlistat hat solide Studienevidenz und bringt im Mittel etwa 2,9 kg mehr Gewichtsverlust als Placebo ueber rund ein Jahr und das nur zusammen mit einer kalorienreduzierten Ernaehrung. Die meisten frei verkaeuflichen Mittel sind wissenschaftlich kaum belegt."
+      },
+      {
+        question: "Was bringt Orlistat genau?",
+        answer: "Orlistat blockiert ein Enzym, das Nahrungsfett im Darm spaltet, sodass ein Teil unverdaut ausgeschieden wird. In Meta-Analysen liegt der Zusatz-Gewichtsverlust bei etwa 2,9 kg gegenueber Placebo. Haeufige Nebenwirkungen sind Fettstuehle, Blaehungen und Stuhldrang, besonders bei fettreicher Kost."
+      },
+      {
+        question: "Helfen Fettbinder und Glucomannan beim Abnehmen?",
+        answer: "Eine Meta-Analyse fand fuer Glucomannan keinen statistisch klaren Effekt auf das Koerpergewicht. Die EFSA erkennt nur einen Beitrag im Rahmen einer kalorienreduzierten Ernaehrung an. Fuer viele andere Fettbinder fehlen hochwertige Studien."
+      },
+      {
+        question: "Kann ich nur mit Tabletten abnehmen, ohne meine Ernaehrung umzustellen?",
+        answer: "Nein. Auch der belegte Orlistat-Effekt zeigt sich ausschliesslich in Kombination mit einer reduzierten Kalorienzufuhr. Ohne Kaloriendefizit nehmen Sie nicht ab. Die Ernaehrungsumstellung ist die eigentliche Stellschraube."
+      },
+      {
+        question: "Sind Abnehmtabletten gefaehrlich?",
+        answer: "Rezeptpflichtige Mittel wie Orlistat haben bekannte Nebenwirkungen und sollten aerztlich begleitet werden, vor allem bei Vorerkrankungen oder anderen Medikamenten. Bei frei verkaeuflichen Produkten ist die Qualitaet sehr unterschiedlich klaeren Sie die Einnahme im Zweifel mit Ihrer Aerztin oder Ihrem Arzt ab."
+      }
+    ]
+  },
+  {
+    slug: "abnehmen-in-den-wechseljahren-was-hilft",
+    title: "Abnehmen in den Wechseljahren: Warum es schwerer wird und was hilft",
+    description: "Studien zeigen: In der Menopause verschiebt sich Fett nach innen (viszeral). Krafttraining, mehr Protein und ein moderates Defizit wirken trotzdem.",
+    tags: [
+      "abnehmen in den wechseljahren",
+      "wechseljahre abnehmen",
+      "abnehmen menopause",
+      "gewichtszunahme wechseljahre",
+      "bauchfett wechseljahre",
+      "krafttraining frauen",
+      "protein",
+      "viszerales fett"
+    ],
+    relatedCalculators: [
+      "grundumsatz-rechner",
+      "protein-bedarf-rechner",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Daily energy expenditure through the human life course",
+        authors: "Pontzer H, Yamada Y, Sagayama H, et al.",
+        journal: "Science",
+        year: 2021,
+        doi: "10.1126/science.abe5017",
+        pmid: "34385400"
+      },
+      {
+        title: "Progressive resistance strength training for improving physical function in older adults",
+        authors: "Liu CJ, Latham NK",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2009,
+        doi: "10.1002/14651858.CD002759.pub2",
+        pmid: "19588334"
+      },
+      {
+        title: "Effects of dietary protein intake on body composition changes after weight loss in older adults: a systematic review and meta-analysis",
+        authors: "Kim JE, O'Connor LE, Sands LP, Slebodnik MB, Campbell WW",
+        journal: "Nutrition Reviews",
+        year: 2016,
+        doi: "10.1093/nutrit/nuv065",
+        pmid: "26883880"
+      },
+      {
+        title: "Changes in regional fat distribution and anthropometric measures across the menopause transition (SWAN)",
+        authors: "Greendale GA, Sternfeld B, Huang M, et al.",
+        journal: "JCI Insight",
+        year: 2019,
+        doi: "10.1172/jci.insight.124865",
+        pmid: "30843880"
+      }
+    ],
+    kernaussage: "In den Wechseljahren steigt das Gewicht vor allem altersbedingt; der sinkende Östrogenspiegel verlagert Fett aber zunehmend in den Bauchraum (viszeral). Der Grundumsatz bricht nicht plötzlich ein. Wirksam bleiben dieselben Hebel wie immer, nur konsequenter: ein moderates Kaloriendefizit, ausreichend Protein zum Erhalt der Muskelmasse und Krafttraining gegen den altersbedingten Muskelabbau.",
+    faqs: [
+      {
+        question: "Verlangsamt sich der Stoffwechsel in den Wechseljahren wirklich?",
+        answer: "Nicht so abrupt, wie oft angenommen. Eine grosse Auswertung mit der Goldstandard-Methode Doubly Labelled Water (Pontzer et al., Science 2021) zeigt, dass der Energieverbrauch pro fettfreier Masse zwischen etwa 20 und 60 Jahren stabil bleibt. Der Ruheverbrauch sinkt vor allem, weil mit dem Alter Muskelmasse verloren geht – ein Prozess, dem man mit Krafttraining aktiv entgegenwirken kann."
+      },
+      {
+        question: "Warum nimmt gerade das Bauchfett in der Menopause zu?",
+        answer: "Der sinkende Oestrogenspiegel verschiebt die Fetteinlagerung vom Hueft- und Oberschenkelbereich hin zum viszeralen Fett im Bauchraum. Laengsschnittdaten der SWAN-Studie zeigen, dass dieser viszerale Anteil im Menopausenuebergang staerker ansteigt, als es das Alter allein erklaeren wuerde. Deshalb kann der Taillenumfang zunehmen, selbst wenn das Gewicht gleich bleibt."
+      },
+      {
+        question: "Wie viel Protein sollte ich in den Wechseljahren essen?",
+        answer: "Als Orientierung gelten etwa 1,2-1,6 g pro Kilogramm Koerpergewicht pro Tag, gut ueber die Mahlzeiten verteilt. In einer Diaetphase hilft die hoehere Zufuhr, Muskelmasse zu erhalten (Kim et al., 2016). In Kombination mit Krafttraining ist der Effekt am groessten."
+      },
+      {
+        question: "Hilft Krafttraining wirklich beim Abnehmen in der Menopause?",
+        answer: "Ja, indirekt und direkt. Ein Cochrane-Review belegt, dass progressives Widerstandstraining bei aelteren Erwachsenen Kraft und Funktion verbessert und dem Muskelverlust entgegenwirkt. Mehr Muskelmasse stabilisiert den Ruheverbrauch und verbessert die Koerperzusammensetzung – wichtiger als die reine Zahl auf der Waage."
+      },
+      {
+        question: "Reicht ein Kaloriendefizit allein aus?",
+        answer: "Ein moderates Defizit von etwa 300-500 kcal pro Tag ist die Grundlage jeder Gewichtsabnahme. Ohne ausreichend Protein und Krafttraining verliert man im Defizit aber auch Muskelmasse, was den Stoffwechsel weiter senkt. Die Kombination aus moderatem Defizit, Protein und Training ist deshalb klar ueberlegen."
+      }
+    ]
+  },
+  {
+    slug: "1200-kalorien-diaet-risiken-sehr-niedrigkalorisch",
+    title: "1200-Kalorien-Diät: Sinnvoll oder zu wenig? Risiken im Überblick",
+    description: "1200 kcal liegen für viele Erwachsene unter dem Grundumsatz. Warum sehr niedrigkalorische Diäten in ärztliche Begleitung gehören – die Studienlage.",
+    tags: [
+      "1200 Kalorien",
+      "Sehr niedrigkalorische Diät",
+      "VLCD",
+      "Grundumsatz",
+      "Abnehmen",
+      "Kaloriendefizit",
+      "Jojo-Effekt",
+      "Crash-Diät"
+    ],
+    relatedCalculators: [
+      "grundumsatz-rechner",
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 8,
+    sources: [
+      {
+        title: "A new predictive equation for resting energy expenditure in healthy individuals",
+        authors: "Mifflin MD, St Jeor ST, Hill LA, Scott BJ, Daugherty SA, Koh YO",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 1990,
+        doi: "10.1093/ajcn/51.2.241",
+        pmid: "2305711"
+      },
+      {
+        title: "Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, et al.",
+        journal: "The Lancet",
+        year: 2018,
+        doi: "10.1016/S0140-6736(17)33102-1",
+        pmid: "29221645"
+      },
+      {
+        title: "Clinical effectiveness of very-low-energy diets in the management of weight loss: a systematic review and meta-analysis of randomized controlled trials",
+        authors: "Parretti HM, Jebb SA, Johns DJ, Lewis AL, Christian-Brown AM, Aveyard P",
+        journal: "Obesity Reviews",
+        year: 2016,
+        doi: "10.1111/obr.12366"
+      },
+      {
+        title: "Long-Term Persistence of Hormonal Adaptations to Weight Loss",
+        authors: "Sumithran P, Prendergast LA, Delbridge E, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2011,
+        doi: "10.1056/NEJMoa1105816",
+        pmid: "22029981"
+      }
+    ],
+    kernaussage: "Eine pauschale 1200-Kalorien-Diät liegt für viele Erwachsene unter dem Grundumsatz und ist damit eine sehr niedrigkalorische Diät (VLCD). Solche Diäten führen zwar zu schnellem Gewichtsverlust, gehören laut Studienlage (DiRECT, Lancet 2018) aber in ärztliche Begleitung – wegen Risiken wie Muskelabbau, Nährstoffmangel und einer hormonellen Anpassung, die den Hunger über ein Jahr lang erhöht (Sumithran, NEJM 2011).",
+    faqs: [
+      {
+        question: "Sind 1200 Kalorien am Tag zu wenig?",
+        answer: "Für viele Erwachsene ja. Der Grundumsatz – also die Energie in völliger Ruhe – liegt nach der Mifflin-St-Jeor-Formel bei einer 70-kg-Frau bei rund 1400 kcal und bei einem 85-kg-Mann bei etwa 1750 kcal. 1200 kcal liegen damit oft unter dem, was der Körper schon ohne jede Bewegung verbraucht. Ob 1200 kcal für Sie zu wenig sind, hängt von Geschlecht, Gewicht, Größe, Alter und Aktivität ab."
+      },
+      {
+        question: "Was ist eine sehr niedrigkalorische Diät (VLCD)?",
+        answer: "Als sehr niedrigkalorische Diät (Very Low Calorie Diet) gelten in der Regel Pläne unter etwa 800 kcal pro Tag, meist als Formuladiät. Niedrigkalorische Diäten (LCD) liegen bei rund 800–1200 kcal. Eine 1200-Kalorien-Diät bewegt sich am oberen Rand der LCD, kann aber individuell – wenn sie unter dem Grundumsatz liegt – ähnlich restriktiv wirken."
+      },
+      {
+        question: "Funktioniert eine sehr niedrigkalorische Diät überhaupt?",
+        answer: "Ja, unter Aufsicht. In der DiRECT-Studie (Lancet 2018) verloren 24 % der Teilnehmenden unter einer ärztlich begleiteten Formuladiät (~825–853 kcal) mindestens 15 kg, und 46 % erreichten eine Diabetes-Remission. Entscheidend war die strukturierte Begleitung mit kontrolliertem Wiedereinstieg – nicht ein Selbstversuch."
+      },
+      {
+        question: "Warum nimmt man nach einer Crash-Diät oft wieder zu?",
+        answer: "Nach starkem Gewichtsverlust passt sich der Hormonhaushalt an: Das Hungerhormon Ghrelin steigt, das Sättigungshormon Leptin sinkt. Laut einer NEJM-Studie (Sumithran 2011) bleibt diese Veränderung mindestens 12 Monate messbar. Der Körper signalisiert also lange anhaltenden Hunger, was den Jojo-Effekt begünstigt."
+      },
+      {
+        question: "Wie viele Kalorien sollte ich stattdessen zum Abnehmen essen?",
+        answer: "Für die meisten Menschen reicht ein moderates Defizit von 300–500 kcal unter dem individuellen Gesamtbedarf. Das schützt Muskelmasse, deckt den Nährstoffbedarf leichter und ist nachhaltiger durchzuhalten. Berechnen Sie zuerst Ihren Grundumsatz und Gesamtbedarf, statt eine pauschale Zahl wie 1200 kcal zu übernehmen."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
