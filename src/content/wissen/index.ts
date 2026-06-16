@@ -5611,6 +5611,437 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "low-fat-diaet-fettarme-ernaehrung-abnehmen-evidenz",
+    title: "Low-Fat-Diaet: Wie gut ist fettarme Ernaehrung wirklich zum Abnehmen?",
+    description: "Studien zeigen: Low-Fat vs. Low-Carb endet nach 12 Monaten unentschieden (DIETFITS: ~0,7 kg Differenz, nicht signifikant). Was wirklich zaehlt.",
+    tags: [
+      "low fat diaet",
+      "fettarme ernaehrung",
+      "abnehmen",
+      "low fat vs low carb",
+      "kaloriendefizit",
+      "ernaehrung",
+      "gewichtsverlust",
+      "studienlage"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245",
+        pmid: "29466592"
+      },
+      {
+        title: "Effect of low-fat diet interventions versus other diet interventions on long-term weight change in adults: a systematic review and meta-analysis",
+        authors: "Tobias DK, Chen M, Manson JE, Ludwig DS, Willett W, Hu FB",
+        journal: "The Lancet Diabetes & Endocrinology",
+        year: 2015,
+        doi: "10.1016/S2213-8587(15)00367-8",
+        pmid: "26527511"
+      },
+      {
+        title: "Low-fat dietary pattern and weight change over 7 years: the Women's Health Initiative Dietary Modification Trial",
+        authors: "Howard BV, Manson JE, Stefanick ML, et al.",
+        journal: "JAMA",
+        year: 2006,
+        doi: "10.1001/jama.295.1.39",
+        pmid: "16391215"
+      },
+      {
+        title: "Effects of total fat intake on body weight",
+        authors: "Hooper L, Abdelhamid A, Bunn D, Brown T, Summerbell CD, Skeaff CM",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2015,
+        doi: "10.1002/14651858.CD011834",
+        pmid: "26250104"
+      }
+    ],
+    kernaussage: "Fettarme Diaeten wirken beim Abnehmen vor allem ueber das erzeugte Kaloriendefizit, nicht ueber den niedrigen Fettanteil selbst. Im direkten Langzeitvergleich mit Low-Carb gibt es kaum Unterschiede: Die DIETFITS-Studie fand nach 12 Monaten keinen signifikanten Gewichtsunterschied, und reines Fettsparen ohne Kalorienziel brachte in grossen Langzeitstudien nur minimale Effekte.",
+    faqs: [
+      {
+        question: "Nimmt man mit einer fettarmen Ernaehrung schneller ab als mit Low-Carb?",
+        answer: "Nein. Im direkten Vergleich ueber 12 Monate (DIETFITS-Studie) gab es zwischen einer gesunden fettarmen und einer gesunden kohlenhydratarmen Ernaehrung keinen statistisch signifikanten Unterschied beim Gewichtsverlust - beide Gruppen verloren rund 5-6 kg. Entscheidend ist nicht das Makronaehrstoff-Verhaeltnis, sondern das Kaloriendefizit und ob man die Ernaehrung durchhalten kann."
+      },
+      {
+        question: "Warum hilft fettarmes Essen ueberhaupt beim Abnehmen?",
+        answer: "Fett ist mit 9 kcal pro Gramm mehr als doppelt so energiedicht wie Kohlenhydrate oder Eiweiss (je 4 kcal). Wer fettreiche Lebensmittel reduziert, senkt die Kaloriendichte der Mahlzeiten und nimmt bei gleichem Volumen tendenziell weniger Kalorien auf. Der eigentliche Wirkmechanismus ist also das Kaloriendefizit - nicht ein besonderer Fett-Stoffwechseleffekt."
+      },
+      {
+        question: "Reicht es, einfach nur weniger Fett zu essen, um abzunehmen?",
+        answer: "Nur bedingt. In der Women's Health Initiative reduzierten fast 49.000 Frauen ihren Fettanteil ohne Abnehmziel - nach 7,5 Jahren betrug der Gewichtsunterschied nur noch etwa 0,4 kg. Ein Cochrane-Review bestaetigt: Fettreduktion ohne bewusste Kalorienlenkung senkt das Gewicht nur minimal (BMI etwa -0,5 kg/m2)."
+      },
+      {
+        question: "Sind Fette beim Abnehmen also egal?",
+        answer: "Nein, die Menge zaehlt. Gesunde Fette wie Olivenoel, Nuesse oder fetter Fisch gehoeren in eine ausgewogene Ernaehrung. Es geht nicht um kompletten Fettverzicht, sondern darum, die Gesamtkalorien im Blick zu behalten. Stark verarbeitete fettarme Produkte enthalten oft viel zugesetzten Zucker und sind keine automatisch bessere Wahl."
+      },
+      {
+        question: "Welche Diaet ist denn nun die beste zum Abnehmen?",
+        answer: "Studien zeigen, dass Low-Fat und Low-Carb langfristig etwa gleichwertig sind. Die beste Diaet ist die, die zu Ihrem Geschmack und Alltag passt und die Sie dauerhaft durchhalten. Wichtiger als die Diaetphilosophie sind ein moderates Kaloriendefizit und hochwertige, moeglichst unverarbeitete Lebensmittel."
+      }
+    ]
+  },
+  {
+    slug: "atkins-diaet-strenges-low-carb-evidenz-studien",
+    title: "Atkins-Diät im Faktencheck: Was bringt strenges Low-Carb?",
+    description: "Atkins-Diät im Faktencheck: RCTs zeigen 2-3 kg Vorsprung nach 6 Monaten, nach 12 Monaten kein Unterschied. Warum die ersten Kilos oft Wasser sind.",
+    tags: [
+      "Atkins",
+      "Low-Carb",
+      "Abnehmen",
+      "Kohlenhydrate",
+      "Protein",
+      "Ernährung",
+      "RCT",
+      "Diät"
+    ],
+    relatedCalculators: [
+      "makros-berechnen",
+      "kaloriendefizit-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 9,
+    sources: [
+      {
+        title: "A Randomized Trial of a Low-Carbohydrate Diet for Obesity",
+        authors: "Foster GD, Wyatt HR, Hill JO, McGuckin BG, Brill C, Mohammed BS, Szapary PO, Rader DJ, Edman JS, Klein S",
+        journal: "New England Journal of Medicine",
+        year: 2003,
+        doi: "10.1056/NEJMoa022207"
+      },
+      {
+        title: "Comparison of the Atkins, Zone, Ornish, and LEARN Diets for Change in Weight and Related Risk Factors Among Overweight Premenopausal Women: The A TO Z Weight Loss Study: A Randomized Trial",
+        authors: "Gardner CD, Kiazand A, Alhassan S, Kim S, Stafford RS, Balise RR, Kraemer HC, King AC",
+        journal: "JAMA",
+        year: 2007,
+        doi: "10.1001/jama.297.9.969"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, Hauser ME, Rigdon J, Ioannidis JPA, Desai M, King AC",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245"
+      },
+      {
+        title: "Effect of Low-Fat Diet Interventions Versus Other Diet Interventions on Long-Term Weight Change in Adults: A Systematic Review and Meta-Analysis",
+        authors: "Tobias DK, Chen M, Manson JE, Ludwig DS, Willett W, Hu FB",
+        journal: "The Lancet Diabetes & Endocrinology",
+        year: 2015,
+        doi: "10.1016/S2213-8587(15)00367-8"
+      }
+    ],
+    kernaussage: "Die strenge, proteinreiche Atkins-Diät führt in den ersten Monaten zu schnellerem Gewichtsverlust als fettarme Diäten - ein guter Teil davon ist jedoch wasserbedingt durch entleerte Glykogenspeicher. Nach 12 Monaten ist der Unterschied in randomisierten Studien wie A TO Z und DIETFITS statistisch verschwunden. Entscheidend für den Erfolg ist nicht das Phasenmodell, sondern wie gut man die Diät langfristig durchhält.",
+    faqs: [
+      {
+        question: "Wie schnell nimmt man mit der Atkins-Diät ab?",
+        answer: "In den ersten Wochen oft sehr schnell - in randomisierten Studien wie Foster et al. (NEJM 2003) lag die Atkins-Gruppe nach 6 Monaten 2-4 kg vor fettarmen Diäten. Ein erheblicher Teil dieses Anfangsverlusts ist allerdings Wasser, das beim Entleeren der Glykogenspeicher ausgeschieden wird, nicht Körperfett."
+      },
+      {
+        question: "Ist Atkins langfristig besser als andere Diäten?",
+        answer: "Nein. Nach 12 Monaten verschwindet der Vorsprung in den Studien. Die DIETFITS-Studie (JAMA 2018) fand keinen signifikanten Unterschied zwischen Low-Carb und Low-Fat, und auch bei Foster et al. war nach einem Jahr kein statistisch bedeutsamer Unterschied mehr messbar."
+      },
+      {
+        question: "Was bedeuten die vier Atkins-Phasen?",
+        answer: "Induktion (unter etwa 20 g Kohlenhydrate pro Tag), Reduktion (langsames Wiedereinführen), Vorerhaltung und Erhaltung. Das Modell strukturiert den Carb-Verzicht, ist aber kein wissenschaftlich nachgewiesener Vorteil gegenüber anderen schrittweisen Low-Carb-Ansätzen - entscheidend bleibt das dauerhafte Kaloriendefizit."
+      },
+      {
+        question: "Warum nehmen viele nach der Atkins-Diät wieder zu?",
+        answer: "Zum einen kommt das eingelagerte Glykogen-Wasser zurück, sobald wieder Kohlenhydrate gegessen werden. Zum anderen ist das strenge Regelwerk schwer dauerhaft durchzuhalten; ohne nachhaltige Ernährungsgewohnheiten drohen Jo-Jo-Effekt und Wiederzunahme."
+      },
+      {
+        question: "Für wen ist die strenge Atkins-Diät sinnvoll?",
+        answer: "Am ehesten für Menschen, die ein striktes, klares Regelwerk bevorzugen und stark von der sättigenden Wirkung von Eiweiß profitieren. Wer Kohlenhydrate liebt oder häufig auswärts isst, hält sie meist nicht durch - und dann bringt sie keinen Vorteil gegenüber einer einfacheren Kalorienreduktion."
+      }
+    ]
+  },
+  {
+    slug: "dukan-diaet-evidenz-kritik-risiken",
+    title: "Dukan-Diät: Evidenz, Kritik und Risiken im Überblick",
+    description: "Die Dukan-Diät liefert schnellen Anfangserfolg, aber kaum belastbare Studien. Meta-Analysen zeigen für Hochprotein-Diäten nur ~0,8 kg Vorteil.",
+    tags: [
+      "Dukan-Diät",
+      "Abnehmen",
+      "Eiweiß-Diät",
+      "Hochprotein",
+      "Mythen",
+      "Diät-Kritik",
+      "Studien"
+    ],
+    relatedCalculators: [
+      "protein-bedarf-rechner",
+      "makros-berechnen",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 9,
+    sources: [
+      {
+        title: "Effects of energy-restricted high-protein, low-fat compared with standard-protein, low-fat diets: a meta-analysis of randomized controlled trials",
+        authors: "Wycherley TP, Moran LJ, Clifton PM, Noakes M, Brinkworth GD",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2012,
+        doi: "10.3945/ajcn.112.044321"
+      },
+      {
+        title: "Effects of higher- versus lower-protein diets on health outcomes: a systematic review and meta-analysis",
+        authors: "Santesso N, Akl EA, Bianchi M, et al.",
+        journal: "European Journal of Clinical Nutrition",
+        year: 2012,
+        doi: "10.1038/ejcn.2012.37"
+      },
+      {
+        title: "The role of higher protein diets in weight control and obesity-related comorbidities",
+        authors: "Astrup A, Raben A, Geiker N",
+        journal: "International Journal of Obesity",
+        year: 2015,
+        doi: "10.1038/ijo.2014.216"
+      }
+    ],
+    kernaussage: "Die Dukan-Diät ist eine phasenbasierte Hochprotein-Diät, die anfangs schnell Gewicht (vor allem Wasser) verliert. Es gibt jedoch keine belastbaren randomisierten Studien zur Dukan-Methode selbst. Meta-Analysen zu Hochprotein-Diäten allgemein zeigen nur einen kleinen Mehr-Verlust von rund 0,8 kg. Fachgesellschaften kritisieren die starke Einseitigkeit und hohe Eiweißlast als nicht empfehlenswert.",
+    faqs: [
+      {
+        question: "Ist die Dukan-Diät wissenschaftlich belegt?",
+        answer: "Nein. Es gibt keine hochwertige randomisierte Studie zur Dukan-Methode selbst. Die Bekanntheit beruht auf Büchern und Erfahrungsberichten. Nur das allgemeine Wirkprinzip – Hochprotein-Diäten – ist in Meta-Analysen untersucht, mit einem kleinen Mehrverlust von rund 0,8 kg."
+      },
+      {
+        question: "Warum nimmt man in der Dukan-Angriffsphase so schnell ab?",
+        answer: "Der schnelle Verlust der ersten Tage ist überwiegend Wasser. Stark reduzierte Kohlenhydrate leeren die Glykogenspeicher, und jedes Gramm Glykogen bindet 3–4 g Wasser. Echter Fettverlust läuft deutlich langsamer und wird erst über Wochen sichtbar."
+      },
+      {
+        question: "Ist die hohe Eiweißmenge der Dukan-Diät gefährlich?",
+        answer: "Für gesunde Menschen sind hohe Eiweißmengen meist unproblematisch. Bei vorbestehender Nierenschwäche, Gicht oder bestimmten Stoffwechselerkrankungen kann die hohe Eiweißlast jedoch riskant sein und sollte vorher ärztlich abgeklärt werden."
+      },
+      {
+        question: "Was kritisieren Fachgesellschaften an der Dukan-Diät?",
+        answer: "Vor allem die Einseitigkeit (wenig Obst, Vollkorn, Ballaststoffe), die hohe Eiweißlast, das hohe Jojo-Risiko und die mangelnde Langfristigkeit. Eiweißbetonte Crash-Diäten dieser Art gelten als nicht empfehlenswert."
+      },
+      {
+        question: "Gibt es eine bessere Alternative zur Dukan-Diät?",
+        answer: "Ja. Der eigentliche Vorteil – viel sättigendes Protein – funktioniert auch in einer ausgewogenen, vollwertigen Ernährung mit moderatem Kaloriendefizit, ohne die starren Phasen und Verbote. Das ist nachhaltiger und besser durchzuhalten."
+      }
+    ]
+  },
+  {
+    slug: "glutenfrei-abnehmen-mythos-faktencheck",
+    title: "Macht glutenfrei schlank? Der Faktencheck",
+    description: "Faktencheck glutenfrei abnehmen: Meta-Analyse (2023) zeigt bei Menschen ohne Zoeliakie keinen Gewichtsverlust. Was wirklich zaehlt.",
+    tags: [
+      "glutenfrei abnehmen",
+      "glutenfreie ernaehrung",
+      "gluten",
+      "abnehmen",
+      "ernaehrungsmythen",
+      "ballaststoffe",
+      "zoeliakie",
+      "kaloriendefizit"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Impact of Gluten-free Diet on Anthropometric Indicators in Individuals With and Without Celiac Disease: A Systematic Review and Meta-analysis",
+        authors: "Xin C, Imanifard R, Jarahzadeh M, Rohani P, Velu P, Sohouli MH",
+        journal: "Clinical Therapeutics",
+        year: 2023,
+        doi: "10.1016/j.clinthera.2023.09.018",
+        pmid: "37903705"
+      },
+      {
+        title: "Long term gluten consumption in adults without celiac disease and risk of coronary heart disease: prospective cohort study",
+        authors: "Lebwohl B, Cao Y, Zong G, Hu FB, Green PHR, Neugut AI, Rimm EB, Sampson L, Dougherty LW, Giovannucci E, Willett WC, Sun Q, Chan AT",
+        journal: "BMJ",
+        year: 2017,
+        doi: "10.1136/bmj.j1892",
+        pmid: "28465308"
+      },
+      {
+        title: "Gluten intake and risk of type 2 diabetes in three large prospective cohort studies of US men and women",
+        authors: "Zong G, Lebwohl B, Hu FB, Sampson L, Dougherty LW, Willett WC, Chan AT, Sun Q",
+        journal: "Diabetologia",
+        year: 2018,
+        doi: "10.1007/s00125-018-4697-9"
+      }
+    ],
+    kernaussage: "Ohne Zoeliakie oder nachgewiesene Glutenunvertraeglichkeit gibt es keine wissenschaftliche Grundlage dafuer, dass eine glutenfreie Ernaehrung schlank macht. Eine Meta-Analyse von 2023 fand bei Menschen ohne Zoeliakie keinen Effekt auf Gewicht, BMI oder Koerperfett. Abgenommen wird ueber ein Kaloriendefizit, nicht ueber den Verzicht auf Gluten. Glutenfreie Fertigprodukte sind oft kalorienreicher und ballaststoffaermer.",
+    faqs: [
+      {
+        question: "Hilft eine glutenfreie Ernaehrung beim Abnehmen?",
+        answer: "Ohne Zoeliakie oder Glutenunvertraeglichkeit nicht. Eine Meta-Analyse von 2023 fand bei Menschen ohne Zoeliakie keinen signifikanten Effekt auf Gewicht, BMI oder Koerperfett. Abgenommen wird ueber ein Kaloriendefizit - das gelingt mit und ohne Gluten gleichermassen."
+      },
+      {
+        question: "Macht Gluten dick?",
+        answer: "Nein. Gluten ist nur das Klebereiweiss in Weizen, Roggen und Gerste und hat keine besondere Kalorienwirkung. Dick macht ein Kalorienueberschuss - nicht das Gluten an sich. Grosse Langzeitstudien finden bei Gluten weder ein erhoehtes Herz- noch Diabetesrisiko."
+      },
+      {
+        question: "Sind glutenfreie Produkte gesuender?",
+        answer: "Nicht automatisch. Glutenfreie Fertigprodukte enthalten oft mehr Zucker und Fett sowie weniger Ballaststoffe und Protein als die glutenhaltigen Originale. Sie koennen das Abnehmen sogar erschweren, weil sie weniger satt machen und manchmal kalorienreicher sind."
+      },
+      {
+        question: "Wann ist eine glutenfreie Ernaehrung sinnvoll?",
+        answer: "Medizinisch notwendig ist sie nur bei diagnostizierter Zoeliakie, Weizenallergie oder belegter Nicht-Zoeliakie-Glutensensitivitaet. Wichtig: Vor der Diagnostik nicht eigenmaechtig auf Gluten verzichten, da dies die Untersuchungsergebnisse verfaelschen kann."
+      },
+      {
+        question: "Warum nehmen manche Menschen mit glutenfreier Ernaehrung trotzdem ab?",
+        answer: "Weil sie meist gleichzeitig weniger Brot, Nudeln, Kuchen und Bier essen - also schlicht Kalorien einsparen. Dieses Defizit liesse sich genauso mit glutenhaltigen Lebensmitteln erreichen. Es ist das Kaloriendefizit, nicht der Glutenverzicht, das wirkt."
+      }
+    ]
+  },
+  {
+    slug: "neat-alltagsbewegung-kalorienverbrauch-abnehmen-evidenz",
+    title: "NEAT: Wie Alltagsbewegung den Kalorienverbrauch entscheidet",
+    description: "NEAT kann den Tagesverbrauch um mehrere hundert kcal verschieben: In einer Science-Studie variierte die Mehraktivitaet bei Ueberernaehrung um bis zu 692 kcal/Tag.",
+    tags: [
+      "neat",
+      "alltagsbewegung",
+      "kalorienverbrauch",
+      "abnehmen",
+      "energiebilanz",
+      "bewegung",
+      "gewichtsmanagement",
+      "schritte"
+    ],
+    relatedCalculators: [
+      "kalorienverbrauch-rechner",
+      "schritte-kalorien-rechner",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Role of Nonexercise Activity Thermogenesis in Resistance to Fat Gain in Humans",
+        authors: "Levine JA, Eberhardt NL, Jensen MD",
+        journal: "Science",
+        year: 1999,
+        doi: "10.1126/science.283.5399.212"
+      },
+      {
+        title: "Interindividual Variation in Posture Allocation: Possible Role in Human Obesity",
+        authors: "Levine JA, Lanningham-Foster LM, McCrady SK, Krizan AC, Olson LR, Kane PH, Jensen MD, Clark MM",
+        journal: "Science",
+        year: 2005,
+        doi: "10.1126/science.1106561"
+      },
+      {
+        title: "Non-Exercise Activity Thermogenesis: The Crouching Tiger Hidden Dragon of Societal Weight Gain",
+        authors: "Levine JA, Vander Weg MW, Hill JO, Klesges RC",
+        journal: "Arteriosclerosis, Thrombosis, and Vascular Biology",
+        year: 2006,
+        doi: "10.1161/01.ATV.0000205848.83210.73"
+      },
+      {
+        title: "Constrained Total Energy Expenditure and Metabolic Adaptation to Physical Activity in Adult Humans",
+        authors: "Pontzer H, Durazo-Arvizu R, Dugas LR, Plange-Rhule J, Bovet P, Forrester TE, Lambert EV, Cooper RS, Schoeller DA, Luke A",
+        journal: "Current Biology",
+        year: 2016,
+        doi: "10.1016/j.cub.2015.12.046"
+      },
+      {
+        title: "Association of Daily Step Count and Step Intensity With Mortality Among US Adults",
+        authors: "Saint-Maurice PF, Troiano RP, Bassett DR, Graubard BI, Carlson SA, Shiroma EJ, Fulton JE, Matthews CE",
+        journal: "JAMA",
+        year: 2020,
+        doi: "10.1001/jama.2020.1382"
+      }
+    ],
+    kernaussage: "NEAT (Non-Exercise Activity Thermogenesis) umfasst alle Bewegung ausserhalb von Sport - Gehen, Stehen, Zappeln, Hausarbeit. Sie ist der variabelste Posten des Tagesverbrauchs: In einer Science-Ueberernaehrungsstudie reichte die individuelle NEAT-Reaktion von -98 bis +692 kcal pro Tag und sagte voraus, wer zunahm. Fuer das Koerpergewicht ist Alltagsbewegung damit oft bedeutsamer als das eigentliche Training.",
+    faqs: [
+      {
+        question: "Was bedeutet NEAT genau?",
+        answer: "NEAT steht fuer Non-Exercise Activity Thermogenesis - die Energie, die der Koerper fuer alle Bewegung ausserhalb von gezieltem Sport aufwendet. Dazu zaehlen Gehen, Stehen, Treppensteigen, Hausarbeit, Gestik und sogar unbewusstes Zappeln. NEAT ist neben dem Sport der variabelste Teil des taeglichen Energieverbrauchs."
+      },
+      {
+        question: "Wie viele Kalorien kann NEAT ausmachen?",
+        answer: "Sehr viele. In einer Science-Studie von Levine (1999) reichte die NEAT-Reaktion auf Ueberernaehrung von -98 bis +692 kcal pro Tag. Eine Folgestudie schaetzte den Haltungsunterschied zwischen schlanken und uebergewichtigen Personen auf rund 350 kcal taeglich. Die Spanne ist also individuell sehr gross."
+      },
+      {
+        question: "Ist Alltagsbewegung wirklich wichtiger als Sport zum Abnehmen?",
+        answer: "Fuer die reine Kalorienbilanz ist NEAT oft der groessere Hebel, weil sie ueber den ganzen Tag und alle Tage wirkt, waehrend Training nur wenige Stunden pro Woche stattfindet. Sport hat aber eigene Gesundheitsvorteile. Am besten kombiniert man beides - und unterschaetzt die Alltagsbewegung nicht."
+      },
+      {
+        question: "Verbrenne ich automatisch mehr, wenn ich mich mehr bewege?",
+        answer: "Im niedrigen bis mittleren Bereich ja. Die Studie von Pontzer (2016) deutet aber darauf hin, dass der Koerper bei sehr hoher Aktivitaet gegenregulieren kann ('constrained energy expenditure') - dann addiert sich zusaetzliche Bewegung nicht mehr vollstaendig auf den Tagesverbrauch."
+      },
+      {
+        question: "Wie erhoehe ich meine NEAT im Alltag?",
+        answer: "Sitzzeiten regelmaessig unterbrechen, im Stehen telefonieren, Treppe statt Aufzug, kurze Wege zu Fuss statt mit dem Auto und mehr Schritte sammeln. Schon 30-60 Minuten zusaetzliche leichte Bewegung pro Tag summieren sich ueber die Woche auf mehrere tausend Kalorien."
+      }
+    ]
+  },
+  {
+    slug: "omega-3-fischoel-koerpergewicht-meta-analyse",
+    title: "Omega-3 und Fischöl zum Abnehmen: Was Meta-Analysen zeigen",
+    description: "Meta-Analyse: Omega-3 senkt das Körpergewicht nicht (WMD 0,00 kg), reduziert aber Bauchumfang und vor allem Triglyzeride. Was Fischöl wirklich kann.",
+    tags: [
+      "omega 3 abnehmen",
+      "fischöl abnehmen",
+      "omega 3 körperfett",
+      "fischöl kapseln gewicht",
+      "triglyzeride",
+      "meta-analyse",
+      "nahrungsergänzung",
+      "ernährung"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "koerperfett-rechner",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Efficacy of Omega-3 Polyunsaturated Fatty Acids Supplementation in Managing Overweight and Obesity: A Meta-Analysis of Randomized Clinical Trials",
+        authors: "Zhang YY, Liu W, Zhao TY, Tian HM",
+        journal: "The Journal of Nutrition, Health & Aging",
+        year: 2017,
+        doi: "10.1007/s12603-016-0755-5",
+        pmid: "28112774"
+      },
+      {
+        title: "Omega-3 fatty acids for the primary and secondary prevention of cardiovascular disease",
+        authors: "Abdelhamid AS, Brown TJ, Brainard JS, Biswas P, Thorpe GC, Moore HJ, Deane KHO, Summerbell CD, Worthington HV, Song F, Hooper L",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2020,
+        doi: "10.1002/14651858.CD003177.pub5",
+        pmid: "32114706"
+      }
+    ],
+    kernaussage: "Omega-3-Fettsäuren aus Fischöl sind kein Abnehmmittel. Eine Meta-Analyse randomisierter Studien fand keinen Effekt auf das Körpergewicht (gewichtete Differenz 0,00 kg). Belegt ist eine leichte Verringerung des Bauchumfangs und vor allem eine deutliche Senkung der Triglyzeride im Blut. Wer abnehmen will, braucht ein Kaloriendefizit – Fischöl liefert es nicht.",
+    faqs: [
+      {
+        question: "Kann ich mit Fischöl abnehmen?",
+        answer: "Nein. Eine Meta-Analyse randomisierter Studien fand bei Omega-3 aus Fischöl keinen Effekt auf das Körpergewicht (gewichtete mittlere Differenz 0,00 kg). Zum Abnehmen braucht es ein Kaloriendefizit, das Fischöl nicht liefert."
+      },
+      {
+        question: "Reduziert Omega-3 das Bauchfett?",
+        answer: "Studien zeigen nur einen sehr kleinen Effekt auf den Bauchumfang von rund einem halben Zentimeter (WMD −0,53 cm). Das ist klinisch kaum relevant und kein Ersatz für eine kalorienbewusste Ernährung und Bewegung."
+      },
+      {
+        question: "Wofür ist Fischöl dann gut?",
+        answer: "Der gut belegte Nutzen von Omega-3 (EPA und DHA) liegt in der Senkung erhöhter Triglyzeride im Blut. Deshalb werden hochdosierte Präparate medizinisch bei Fettstoffwechselstörungen eingesetzt – nicht zum Abnehmen."
+      },
+      {
+        question: "Sollte ich lieber Fisch essen statt Kapseln?",
+        answer: "Fetter Seefisch wie Lachs, Hering oder Makrele liefert Omega-3 natürlich und sättigt zusätzlich durch sein Eiweiß. Für die meisten Menschen ist das die sinnvollere Quelle als Kapseln, die ausschließlich zum Abnehmen gekauft werden."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
