@@ -4664,6 +4664,429 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "ultra-verarbeitete-lebensmittel-gewicht-hall-rct-nova",
+    title: "Ultra-verarbeitete Lebensmittel: Machen sie wirklich dick?",
+    description: "Hall-RCT 2019: Bei freiem Zugang zu ultra-verarbeiteten Lebensmitteln aßen Probanden rund 500 kcal mehr pro Tag und nahmen zu - trotz gematchter Mahlzeiten.",
+    tags: [
+      "ultra-verarbeitete lebensmittel",
+      "nova klassifikation",
+      "ultra processed food studie",
+      "stark verarbeitete lebensmittel",
+      "verarbeitete lebensmittel abnehmen",
+      "ernaehrung",
+      "gewichtszunahme"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake",
+        authors: "Hall KD, Ayuketah A, Brychta R, Cai H, Cassimatis T, Chen KY, et al.",
+        journal: "Cell Metabolism",
+        year: 2019,
+        doi: "10.1016/j.cmet.2019.05.008"
+      },
+      {
+        title: "Ultra-processed food exposure and adverse health outcomes: umbrella review of epidemiological meta-analyses",
+        authors: "Lane MM, Gamage E, Du S, Ashtree DN, McGuinness AJ, Gauci S, et al.",
+        journal: "BMJ",
+        year: 2024,
+        doi: "10.1136/bmj-2023-077310"
+      }
+    ],
+    kernaussage: "In einer streng kontrollierten Studie (Hall et al. 2019) aßen Probanden bei freiem Zugang zu ultra-verarbeiteten Lebensmitteln rund 500 kcal mehr pro Tag und nahmen in zwei Wochen etwa 0,9 kg zu - obwohl beide Diäten exakt nach Kalorien, Zucker, Fett, Ballaststoffen und Salz gematcht waren. Der Verarbeitungsgrad selbst scheint also die Kalorienaufnahme zu treiben, nicht nur die Nährwerte.",
+    faqs: [
+      {
+        question: "Machen ultra-verarbeitete Lebensmittel laut Studie wirklich dick?",
+        answer: "In der kontrollierten Hall-Studie (2019) aßen Probanden bei freiem Zugang zu ultra-verarbeiteten Lebensmitteln rund 508 kcal mehr pro Tag und nahmen in zwei Wochen etwa 0,9 kg zu. Da die Mahlzeiten nach Kalorien, Zucker, Fett, Ballaststoffen und Salz gematcht waren, deutet das darauf hin, dass der Verarbeitungsgrad selbst die Mehraufnahme treibt."
+      },
+      {
+        question: "Was ist die NOVA-Klassifikation?",
+        answer: "NOVA ordnet Lebensmittel nach dem Grad der industriellen Verarbeitung in vier Gruppen: unverarbeitet/minimal verarbeitet (1), Küchenzutaten wie Öl und Salz (2), verarbeitete Lebensmittel wie Käse und Brot (3) und ultra-verarbeitete Produkte mit Zusatzstoffen (4). Sie bewertet die Verarbeitung, nicht direkt die Nährwerte."
+      },
+      {
+        question: "Warum essen wir mehr von ultra-verarbeiteten Lebensmitteln?",
+        answer: "Die Hall-Studie fand, dass Probanden ultra-verarbeitete Mahlzeiten schneller aßen. Diskutiert werden außerdem eine geringere Sättigung pro Kalorie, hohe Schmackhaftigkeit durch optimierte Fett-Zucker-Salz-Kombinationen und höhere Energiedichte. Der genaue Mechanismus ist noch nicht abschließend geklärt."
+      },
+      {
+        question: "Muss ich ultra-verarbeitete Lebensmittel komplett meiden, um abzunehmen?",
+        answer: "Nein. Entscheidend für die Gewichtsabnahme bleibt ein Kaloriendefizit. Die Evidenz legt aber nahe, dass eine Basis aus wenig verarbeiteten Lebensmitteln das unbewusste Mehressen reduziert und das Abnehmen erleichtert. Ultra-verarbeitete Produkte sind in Maßen möglich."
+      }
+    ]
+  },
+  {
+    slug: "leptin-ghrelin-saettigungshormone-abnehmen-evidenz",
+    title: "Leptin und Ghrelin: Wie Hunger- und Sättigungshormone das Abnehmen steuern",
+    description: "Beim Abnehmen sinkt Leptin und steigt Ghrelin - eine Studie zeigt noch ein Jahr nach 13,5 kg Verlust messbar mehr Hunger. Was dagegen hilft.",
+    tags: [
+      "leptin",
+      "ghrelin",
+      "sättigungshormone",
+      "hungerhormon abnehmen",
+      "jojo-effekt",
+      "schlaf und abnehmen",
+      "protein",
+      "appetitregulation"
+    ],
+    relatedCalculators: [
+      "protein-bedarf-rechner",
+      "schlaf-rechner",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Long-Term Persistence of Hormonal Adaptations to Weight Loss",
+        authors: "Sumithran P, Prendergast LA, Delbridge E, Purcell K, Shulkes A, Kriketos A, Proietto J",
+        journal: "New England Journal of Medicine",
+        year: 2011,
+        doi: "10.1056/NEJMoa1105816",
+        pmid: "22029981"
+      },
+      {
+        title: "Brief Communication: Sleep Curtailment in Healthy Young Men Is Associated with Decreased Leptin Levels, Elevated Ghrelin Levels, and Increased Hunger and Appetite",
+        authors: "Spiegel K, Tasali E, Penev P, Van Cauter E",
+        journal: "Annals of Internal Medicine",
+        year: 2004,
+        doi: "10.7326/0003-4819-141-11-200412070-00008"
+      },
+      {
+        title: "Short Sleep Duration Is Associated with Reduced Leptin, Elevated Ghrelin, and Increased Body Mass Index",
+        authors: "Taheri S, Lin L, Austin D, Young T, Mignot E",
+        journal: "PLoS Medicine",
+        year: 2004,
+        doi: "10.1371/journal.pmed.0010062"
+      },
+      {
+        title: "A high-protein diet induces sustained reductions in appetite, ad libitum caloric intake, and body weight despite compensatory changes in diurnal plasma leptin and ghrelin concentrations",
+        authors: "Weigle DS, Breen PA, Matthys CC, Callahan HS, Meeuws KE, Burden VR, Purnell JQ",
+        journal: "American Journal of Clinical Nutrition",
+        year: 2005,
+        doi: "10.1093/ajcn/82.1.41"
+      }
+    ],
+    kernaussage: "Leptin signalisiert dem Gehirn Sattheit, Ghrelin treibt den Hunger an. Beim Abnehmen verschiebt sich dieses Gleichgewicht hormonell Richtung mehr Hunger: Leptin fällt, Ghrelin steigt - und das hält laut einer NEJM-Studie noch ein Jahr nach dem Gewichtsverlust an. Diese Anpassung treibt den Jojo-Effekt mit, lässt sich aber durch ausreichend Schlaf, mehr Protein und ein moderates Abnehmtempo abmildern.",
+    faqs: [
+      {
+        question: "Was ist der Unterschied zwischen Leptin und Ghrelin?",
+        answer: "Leptin ist das Sättigungshormon: Es wird im Fettgewebe gebildet und meldet dem Gehirn, dass genug Energie gespeichert ist - es dämpft also den Hunger. Ghrelin ist das Hungerhormon: Es stammt überwiegend aus dem Magen, steigt vor Mahlzeiten an und regt den Appetit an. Beide wirken als Gegenspieler in der Appetitsteuerung."
+      },
+      {
+        question: "Warum bekomme ich beim Abnehmen mehr Hunger?",
+        answer: "Weil sich die Hormonlage verschiebt. Beim Abnehmen sinkt das Sättigungshormon Leptin und das Hungerhormon Ghrelin steigt. Eine Studie im New England Journal of Medicine zeigte, dass diese Veränderung samt erhöhtem Hungergefühl noch ein Jahr nach einem Gewichtsverlust von rund 13,5 kg messbar war. Der Körper verteidigt so sein altes Gewicht - das ist Biologie, kein Willensmangel."
+      },
+      {
+        question: "Beeinflusst Schlaf Leptin und Ghrelin?",
+        answer: "Ja, deutlich. In einer kontrollierten Studie senkten schon zwei Nächte mit nur 4 Stunden Schlaf das Leptin um etwa 18 % und erhöhten Ghrelin sowie Hunger und Appetit. Wer im Kaloriendefizit zu wenig schläft, arbeitet gegen die eigene Appetitregulation. 7-9 Stunden Schlaf unterstützen das Abnehmen."
+      },
+      {
+        question: "Hilft mehr Protein gegen den Hunger beim Abnehmen?",
+        answer: "Ja. In einer kontrollierten Studie sank durch eine eiweißbetonte Ernährung die spontane Kalorienaufnahme um rund 441 kcal pro Tag, bei deutlich mehr Sättigung - und das trotz sinkendem Leptin und steigendem Ghrelin. Protein verbessert also die Sättigung auch gegen eine ungünstige Hormonlage."
+      },
+      {
+        question: "Kann man Leptin und Ghrelin direkt messen oder beeinflussen?",
+        answer: "Eine routinemäßige Messung im Alltag ist nicht sinnvoll - die Werte schwanken stark und sind kein Standarddiagnostikum. Direkt steuern lassen sie sich kaum, aber indirekt beeinflussen: ausreichend Schlaf, eine proteinbetonte Ernährung und ein moderates statt extremes Kaloriendefizit verschieben das Gleichgewicht günstiger."
+      }
+    ]
+  },
+  {
+    slug: "emotionales-essen-stressessen-strategien-evidenz",
+    title: "Emotionales Essen und Stressessen: Was wirklich gegen Frustessen hilft",
+    description: "Emotionales Essen ist ein erlerntes Muster, keine Willensschwäche. Achtsamkeitsbasierte Ansätze senken emotionales Essen in Reviews messbar.",
+    tags: [
+      "emotionales essen",
+      "stressessen",
+      "frustessen",
+      "achtsamkeit",
+      "selbstbeobachtung",
+      "essverhalten",
+      "abnehmen",
+      "psychologie"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "How emotions affect eating: A five-way model",
+        authors: "Macht M",
+        journal: "Appetite",
+        year: 2008,
+        doi: "10.1016/j.appet.2007.07.002"
+      },
+      {
+        title: "Mindfulness meditation as an intervention for binge eating, emotional eating, and weight loss: A systematic review",
+        authors: "Katterman SN, Kleinman BM, Hood MM, Nackers LM, Corsica JA",
+        journal: "Eating Behaviors",
+        year: 2014,
+        doi: "10.1016/j.eatbeh.2014.01.005"
+      },
+      {
+        title: "Mindfulness-based interventions for obesity-related eating behaviours: a literature review",
+        authors: "O'Reilly GA, Cook L, Spruijt-Metz D, Black DS",
+        journal: "Obesity Reviews",
+        year: 2014,
+        doi: "10.1111/obr.12156"
+      },
+      {
+        title: "Mindfulness-based interventions for weight loss: a systematic review and meta-analysis",
+        authors: "Carriere K, Khoury B, Gunak MM, Knauper B",
+        journal: "Obesity Reviews",
+        year: 2018,
+        doi: "10.1111/obr.12623"
+      },
+      {
+        title: "Self-Monitoring in Weight Loss: A Systematic Review of the Literature",
+        authors: "Burke LE, Wang J, Sevick MA",
+        journal: "Journal of the American Dietetic Association",
+        year: 2011,
+        doi: "10.1016/j.jada.2010.10.008"
+      }
+    ],
+    kernaussage: "Emotionales Essen ist ein erlerntes Bewältigungsmuster, kein Charakterfehler. Die belastbarste Evidenz zeigt: Achtsamkeitsbasierte Ansätze reduzieren emotionales und essattackenartiges Essen zuverlässig, und Selbstbeobachtung ist einer der stärksten Einzelfaktoren für Verhaltensänderung. Reine Diätpläne adressieren den emotionalen Auslöser dagegen nicht. Wer den Reiz-Reaktions-Kreislauf unterbricht, statt nur Kalorien zu zählen, hat die besseren Karten.",
+    faqs: [
+      {
+        question: "Ist emotionales Essen ein Zeichen von Willensschwäche?",
+        answer: "Nein. Emotionales Essen ist ein erlerntes Bewältigungsmuster: Essen senkt kurzfristig negative Gefühle und wird dadurch als Reaktion verstärkt. Es handelt sich um einen Lernmechanismus, kein Charakterproblem. Entsprechend lässt es sich auch wieder verlernen."
+      },
+      {
+        question: "Was hilft besser gegen Frustessen, eine Diät oder Achtsamkeit?",
+        answer: "Gegen das emotionale Essmuster selbst ist Achtsamkeit wirksamer. Reviews (Katterman 2014, O'Reilly 2014) zeigen, dass achtsamkeitsbasierte Ansätze emotionales und essattackenartiges Essen senken. Reine Diätpläne adressieren den emotionalen Auslöser nicht und scheitern unter Stress oft. Für Gewichtsverlust kann beides kombiniert werden."
+      },
+      {
+        question: "Wie erkenne ich, ob ich aus Hunger oder aus Stress esse?",
+        answer: "Körperlicher Hunger baut sich langsam auf und lässt sich mit vielen Lebensmitteln stillen. Emotionaler Hunger kommt plötzlich, verlangt oft gezielt nach Süßem oder Fettigem und ist mit einer Stimmung verknüpft. Ein kurzes Ess- und Stimmungsprotokoll (Selbstbeobachtung) macht den Unterschied schnell sichtbar."
+      },
+      {
+        question: "Hilft achtsames Essen beim Abnehmen?",
+        answer: "Nur mäßig. Eine Meta-Analyse (Carriere 2018) fand für achtsamkeitsbasierte Interventionen lediglich einen moderaten Effekt auf den Gewichtsverlust. Die eigentliche Stärke liegt im Verändern des Essverhaltens, nicht auf der Waage. Für Gewichtsabnahme braucht es zusätzlich ein moderates Kaloriendefizit."
+      },
+      {
+        question: "Was ist der erste konkrete Schritt gegen Stressessen?",
+        answer: "Selbstbeobachtung. Notieren Sie ein bis zwei Wochen lang, was Sie wann und in welcher Stimmung essen. Laut systematischem Review (Burke 2011) ist regelmäßiges Protokollieren einer der stärksten Einzelfaktoren für Verhaltensänderung, weil es die persönlichen Auslöser sichtbar macht."
+      }
+    ]
+  },
+  {
+    slug: "rotes-fleisch-gesundheit-abnehmen-evidenz-studien",
+    title: "Rotes Fleisch: Wie ungesund ist es wirklich?",
+    description: "Verarbeitetes Fleisch gilt laut WHO/IARC als krebserregend (Gruppe 1). Was Kohortenstudien zeigen - und warum fürs Abnehmen die Kalorien zählen.",
+    tags: [
+      "rotes fleisch gesund",
+      "rotes fleisch krebs",
+      "verarbeitetes fleisch",
+      "wie viel fleisch ist gesund",
+      "rotes fleisch abnehmen",
+      "ernährung",
+      "darmkrebs"
+    ],
+    relatedCalculators: [
+      "makros-berechnen",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Carcinogenicity of consumption of red and processed meat",
+        authors: "Bouvard V, Loomis D, Guyton KZ, et al. (IARC Monograph Working Group)",
+        journal: "The Lancet Oncology",
+        year: 2015,
+        doi: "10.1016/S1470-2045(15)00444-1"
+      },
+      {
+        title: "Red Meat Consumption and Mortality: Results From 2 Prospective Cohort Studies",
+        authors: "Pan A, Sun Q, Bernstein AM, et al.",
+        journal: "Archives of Internal Medicine",
+        year: 2012,
+        doi: "10.1001/archinternmed.2011.2287"
+      },
+      {
+        title: "Unprocessed Red Meat and Processed Meat Consumption: Dietary Guideline Recommendations From the Nutritional Recommendations (NutriRECS) Consortium",
+        authors: "Johnston BC, Zeraatkar D, Han MA, et al.",
+        journal: "Annals of Internal Medicine",
+        year: 2019,
+        doi: "10.7326/M19-1621"
+      }
+    ],
+    kernaussage: "Die WHO/IARC stuft verarbeitetes Fleisch als krebserregend (Gruppe 1) und unverarbeitetes rotes Fleisch als wahrscheinlich krebserregend (Gruppe 2A) ein. Große Kohortenstudien verbinden vor allem verarbeitetes Fleisch mit erhöhtem Risiko für Darmkrebs und Herz-Kreislauf-Erkrankungen. Die absolute Risikoerhöhung ist moderat, die Evidenzstärke umstritten. Fürs Abnehmen entscheidet die Kalorienbilanz, nicht das Fleisch selbst.",
+    faqs: [
+      {
+        question: "Ist rotes Fleisch wirklich krebserregend?",
+        answer: "Die WHO-Krebsforschungsagentur IARC stuft verarbeitetes Fleisch als krebserregend (Gruppe 1) und unverarbeitetes rotes Fleisch als wahrscheinlich krebserregend (Gruppe 2A) ein. Die Einstufung beschreibt die Stärke der Beweislage, nicht das absolute Risiko - dieses ist bei normalem Konsum deutlich geringer als etwa beim Rauchen."
+      },
+      {
+        question: "Worin liegt der Unterschied zwischen rotem und verarbeitetem Fleisch?",
+        answer: "Rotes Fleisch ist unverarbeitetes Muskelfleisch von Rind, Schwein oder Lamm. Verarbeitetes Fleisch wurde gepökelt, geräuchert, gesalzen oder anderweitig haltbar gemacht - etwa Wurst, Schinken, Salami und Speck. Für verarbeitetes Fleisch ist die Evidenz für gesundheitliche Risiken am stärksten."
+      },
+      {
+        question: "Wie viel Fleisch pro Woche ist gesund?",
+        answer: "Ernährungsgesellschaften empfehlen, den Konsum zu begrenzen - eine häufig genannte Größenordnung sind rund 300 bis 600 g Fleisch und Wurst pro Woche. Wichtiger als eine exakte Zahl ist, verarbeitetes Fleisch zu reduzieren und magere, unverarbeitete Stücke zu bevorzugen."
+      },
+      {
+        question: "Macht rotes Fleisch dick?",
+        answer: "Nicht das Fleisch selbst, sondern die Gesamtkalorien entscheiden über das Gewicht. Mageres rotes Fleisch ist eiweißreich und sättigend. Problematisch sind energiedichte Varianten wie panierte oder fette Stücke und Wurst. Für das Abnehmen zählt ein moderates Kaloriendefizit."
+      },
+      {
+        question: "Sollte ich rotes Fleisch komplett weglassen?",
+        answer: "Das ist aus gesundheitlicher Sicht nicht zwingend nötig. Die Evidenz spricht vor allem gegen hohen Konsum und gegen verarbeitetes Fleisch. Maßvolle Mengen mageren, unverarbeiteten Fleisches passen in eine ausgewogene Ernährung."
+      }
+    ]
+  },
+  {
+    slug: "milchprodukte-gewicht-abnehmen-meta-analyse",
+    title: "Milchprodukte und Gewicht: Machen Milch, Käse und Joghurt dick?",
+    description: "Meta-Analyse von RCTs: Milchprodukte verändern das Gewicht bei gleicher Kalorienzufuhr kaum. Joghurt ist in Kohorten sogar mit weniger Gewichtszunahme verknüpft.",
+    tags: [
+      "milchprodukte abnehmen",
+      "milch dick",
+      "joghurt abnehmen",
+      "kaese abnehmen",
+      "milchprodukte gewicht",
+      "vollfett milchprodukte",
+      "ernaehrungswissenschaft",
+      "gewichtsmanagement"
+    ],
+    relatedCalculators: [
+      "makros-berechnen",
+      "kaloriendefizit-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Effects of dairy intake on body weight and fat: a meta-analysis of randomized controlled trials",
+        authors: "Chen M, Pan A, Malik VS, Hu FB",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2012,
+        doi: "10.3945/ajcn.112.037119",
+        pmid: "22932282"
+      },
+      {
+        title: "Changes in diet and lifestyle and long-term weight gain in women and men",
+        authors: "Mozaffarian D, Hao T, Rimm EB, Willett WC, Hu FB",
+        journal: "The New England Journal of Medicine",
+        year: 2011,
+        doi: "10.1056/NEJMoa1014296",
+        pmid: "21696306"
+      },
+      {
+        title: "The relationship between high-fat dairy consumption and obesity, cardiovascular, and metabolic disease",
+        authors: "Kratz M, Baars T, Guyenet S",
+        journal: "European Journal of Nutrition",
+        year: 2013,
+        doi: "10.1007/s00394-012-0418-1",
+        pmid: "22810464"
+      },
+      {
+        title: "Is consuming yoghurt associated with weight management outcomes? Results from a systematic review",
+        authors: "Eales J, Lenoir-Wijnkoop I, King S, Wood H, Kok FJ, Shamir R, Prentice A, Edwards M, Glanville J, Atkinson RL",
+        journal: "International Journal of Obesity",
+        year: 2016,
+        doi: "10.1038/ijo.2015.202",
+        pmid: "26443336"
+      }
+    ],
+    kernaussage: "Milchprodukte machen nicht per se dick. Eine Meta-Analyse von Interventionsstudien zeigt: Bei gleicher Kalorienzufuhr verändert Milch, Käse oder Joghurt das Körpergewicht kaum. In Langzeit-Beobachtungen ist gerade Joghurt sogar mit etwas weniger Gewichtszunahme verbunden, und auch Vollfett-Varianten sind nicht systematisch mit Übergewicht assoziiert. Entscheidend bleibt die gesamte Kalorienbilanz.",
+    faqs: [
+      {
+        question: "Machen Milchprodukte dick?",
+        answer: "Nein, nicht von sich aus. Eine Meta-Analyse von 29 randomisierten Studien fand bei gleicher Kalorienzufuhr keinen bedeutsamen Effekt von Milchprodukten auf Körpergewicht oder Körperfett. Entscheidend ist die gesamte Kalorienbilanz, nicht das einzelne Lebensmittel."
+      },
+      {
+        question: "Hilft Joghurt beim Abnehmen?",
+        answer: "In großen Langzeit-Beobachtungen war Joghurt das Lebensmittel mit der günstigsten Verbindung zu geringerer Gewichtszunahme über die Jahre. Das sind Zusammenhänge, kein Beweis fuer Ursache - aber als proteinreiche, sättigende Wahl passt Naturjoghurt gut in eine Abnehmphase. Achten Sie auf zugesetzten Zucker."
+      },
+      {
+        question: "Sollte ich fettarme oder Vollfett-Milchprodukte wählen?",
+        answer: "Für das Gewicht ist das weniger entscheidend als die Gesamtkalorien. Übersichtsarbeiten finden keinen systematischen Zusammenhang zwischen Vollfett-Milchprodukten und mehr Übergewicht. Vollfett ist energiedichter und sättigt oft gut, fettarm liefert pro Portion weniger Kalorien - beides kann passen."
+      },
+      {
+        question: "Ist Käse beim Abnehmen erlaubt?",
+        answer: "Ja. Käse liefert sättigendes Protein und ist nicht per se ein Dickmacher. Da Käse jedoch energiedicht ist, lohnt sich ein Blick auf die Portionsgröße, damit er in Ihr Kaloriendefizit passt."
+      },
+      {
+        question: "Warum gelten Milchprodukte manchmal als Schlankmacher?",
+        answer: "In Studien mit Kalorienreduktion war eine höhere Milchproduktzufuhr mit etwas stärkerem Gewichts- und Fettverlust und besserem Erhalt der Muskelmasse verbunden. Der hohe Proteinanteil unterstützt Sättigung und Muskulatur. Der Effekt ist moderat, weist aber in die günstige Richtung."
+      }
+    ]
+  },
+  {
+    slug: "gesaettigte-fettsaeuren-butter-gesundheit-evidenz",
+    title: "Gesättigte Fettsäuren und Butter: Schlecht fürs Herz oder rehabilitiert?",
+    description: "Cochrane 2020: Weniger gesättigte Fette senken Herz-Kreislauf-Ereignisse um 17 %. Was das für Butter wirklich bedeutet – und warum die Kalorienbilanz zählt.",
+    tags: [
+      "gesättigte fettsäuren",
+      "butter",
+      "herzgesundheit",
+      "cholesterin",
+      "ernährung",
+      "evidenz",
+      "fette",
+      "kalorienbilanz"
+    ],
+    relatedCalculators: [
+      "makros-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Reduction in saturated fat intake for cardiovascular disease",
+        authors: "Hooper L, Martin N, Jimoh OF, Kirk C, et al.",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2020,
+        doi: "10.1002/14651858.CD011737.pub3"
+      },
+      {
+        title: "Effects on Coronary Heart Disease of Increasing Polyunsaturated Fat in Place of Saturated Fat: A Systematic Review and Meta-Analysis of Randomized Controlled Trials",
+        authors: "Mozaffarian D, Micha R, Wallace S",
+        journal: "PLoS Medicine",
+        year: 2010,
+        doi: "10.1371/journal.pmed.1000252"
+      },
+      {
+        title: "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts",
+        authors: "Estruch R, Ros E, Salas-Salvadó J, Covas MI, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2018,
+        doi: "10.1056/NEJMoa1800389"
+      }
+    ],
+    kernaussage: "Die beste Evidenz spricht nicht für ein generelles Verbot gesättigter Fette, sondern für einen Austausch: Ersetzt man gesättigte durch mehrfach ungesättigte Fettsäuren, sinken kardiovaskuläre Ereignisse laut Cochrane-Review 2020 um rund 17 %. Butter ist im Rahmen einer ausgewogenen Ernährung kein Hauptproblem – wer abnehmen will, sollte vor allem auf die Gesamtkalorien achten.",
+    faqs: [
+      {
+        question: "Ist Butter ungesund?",
+        answer: "Butter ist nicht pauschal ungesund. Sie besteht zu etwa 80 % aus Fett, davon über die Hälfte gesättigt, und erhöht tendenziell das LDL-Cholesterin. In einer insgesamt ausgewogenen, gemüse- und ballaststoffreichen Ernährung ist eine maßvolle Buttermenge jedoch unkritisch. Entscheidend ist das Gesamtmuster, nicht das einzelne Lebensmittel."
+      },
+      {
+        question: "Sind gesättigte Fettsäuren schlecht fürs Herz?",
+        answer: "Die Evidenz spricht weniger für ein Verbot als für einen Austausch. Der Cochrane-Review 2020 zeigt, dass eine Reduktion gesättigter Fette kardiovaskuläre Ereignisse um rund 17 % senkt – vor allem, wenn sie durch mehrfach ungesättigte Fette ersetzt werden. Ersetzt man sie durch Zucker und Weißmehl, bleibt der Nutzen aus."
+      },
+      {
+        question: "Womit sollte ich Butter ersetzen?",
+        answer: "Am günstigsten für die Herzgesundheit ist der Ersatz durch ungesättigte Fette wie Raps- oder Olivenöl, Nüsse und fetten Fisch. Laut Metaanalysen senkt der Austausch von 5 % der Energie aus gesättigten durch mehrfach ungesättigte Fette das Risiko für koronare Herzkrankheit um etwa 10 %."
+      },
+      {
+        question: "Macht Butter dick?",
+        answer: "Nicht Butter an sich, sondern ein Kalorienüberschuss macht dick. Butter ist mit rund 740 kcal pro 100 g sehr energiedicht, weshalb die Portionsgröße zählt. Fürs Abnehmen ist die Gesamtkalorienbilanz entscheidend – berechnen Sie dafür Ihren Kalorienbedarf und ein realistisches Defizit."
+      },
+      {
+        question: "Schadet das Cholesterin in Butter?",
+        answer: "Relevanter als das Nahrungscholesterin ist der Effekt gesättigter Fettsäuren auf das LDL-Cholesterin im Blut. Die Reaktion ist individuell sehr unterschiedlich. Wer erhöhte Blutfettwerte oder ein hohes Herz-Kreislauf-Risiko hat, sollte den Fettkonsum mit ärztlicher Begleitung anpassen."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
