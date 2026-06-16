@@ -3080,6 +3080,455 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "pcos-abnehmen-insulinresistenz-lebensstil-evidenz",
+    title: "Abnehmen mit PCOS: Was bei Insulinresistenz wirklich hilft",
+    description: "PCOS erschwert das Abnehmen durch Insulinresistenz. Leitlinien zeigen: Schon 5-10 % Gewichtsverlust verbessern Zyklus und Stoffwechsel.",
+    tags: [
+      "pcos",
+      "abnehmen",
+      "insulinresistenz",
+      "ernaehrung",
+      "gewichtsverlust",
+      "frauengesundheit",
+      "lebensstil",
+      "kaloriendefizit"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 8,
+    sources: [
+      {
+        title: "Recommendations from the international evidence-based guideline for the assessment and management of polycystic ovary syndrome",
+        authors: "Teede HJ, Misso ML, Costello MF, Dokras A, Laven J, Moran L, Piltonen T, Norman RJ; International PCOS Network",
+        journal: "Human Reproduction",
+        year: 2018,
+        doi: "10.1093/humrep/dey256"
+      },
+      {
+        title: "Lifestyle changes in women with polycystic ovary syndrome",
+        authors: "Lim SS, Hutchison SK, Van Ryswyk E, Norman RJ, Teede HJ, Moran LJ",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2019,
+        doi: "10.1002/14651858.CD007506.pub4"
+      },
+      {
+        title: "Dietary Composition in the Treatment of Polycystic Ovary Syndrome: A Systematic Review to Inform Evidence-Based Guidelines",
+        authors: "Moran LJ, Ko H, Misso M, Marsh K, Noakes M, Talbot M, Frearson M, Thondan M, Stepto N, Teede HJ",
+        journal: "Journal of the Academy of Nutrition and Dietetics",
+        year: 2013,
+        doi: "10.1016/j.jand.2012.11.018"
+      },
+      {
+        title: "Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, Brosnahan N, Thom G, McCombie L, et al.",
+        journal: "The Lancet",
+        year: 2018,
+        doi: "10.1016/S0140-6736(17)33102-1"
+      }
+    ],
+    kernaussage: "Bei PCOS erschwert die Insulinresistenz das Abnehmen, doch die internationale evidenzbasierte Leitlinie und ein Cochrane-Review sind eindeutig: Ein moderates Kaloriendefizit kombiniert mit Bewegung und Krafttraining ist die wirksamste Basis. Keine spezielle Diätform ist nachweislich überlegen. Bereits ein Gewichtsverlust von 5 bis 10 Prozent verbessert Zyklusregelmäßigkeit, Insulinempfindlichkeit und Fruchtbarkeit messbar.",
+    faqs: [
+      {
+        question: "Ist Abnehmen mit PCOS überhaupt möglich?",
+        answer: "Ja. Die Insulinresistenz erschwert es, macht es aber nicht unmöglich. Studien und die internationale PCOS-Leitlinie zeigen, dass ein moderates Kaloriendefizit kombiniert mit Bewegung und Krafttraining funktioniert. Schon 5 bis 10 Prozent Gewichtsverlust verbessern Zyklus und Stoffwechsel deutlich."
+      },
+      {
+        question: "Welche Ernährung ist bei PCOS am besten zum Abnehmen?",
+        answer: "Es gibt keine nachweislich überlegene PCOS-Diät. Ein systematischer Review fand vergleichbare Erfolge für Low-Carb, Low-Fat und mediterrane Kost, solange ein Energiedefizit erreicht wird. Entscheidend ist eine sättigende, ballaststoff- und proteinreiche Ernährung, die Sie langfristig durchhalten."
+      },
+      {
+        question: "Hilft Krafttraining bei Insulinresistenz?",
+        answer: "Ja. Muskelarbeit erhöht die Insulinempfindlichkeit unabhängig vom Gewichtsverlust, und mehr Muskelmasse verbessert die Glukoseaufnahme. Die PCOS-Leitlinie empfiehlt zusätzlich zu mindestens 150 Minuten Bewegung pro Woche Krafttraining an zwei Tagen."
+      },
+      {
+        question: "Wie viel muss ich abnehmen, damit sich mein Zyklus bessert?",
+        answer: "Laut internationaler Leitlinie reichen bei Übergewicht bereits 5 bis 10 Prozent des Körpergewichts, um Zyklusregelmäßigkeit, Insulinempfindlichkeit und Fruchtbarkeit messbar zu verbessern. Bei 80 kg sind das etwa 4 bis 8 kg."
+      },
+      {
+        question: "Brauche ich Metformin zum Abnehmen bei PCOS?",
+        answer: "Nicht zwangsläufig. Lebensstilmaßnahmen sind die Erstlinientherapie. Metformin oder andere Medikamente können in bestimmten Fällen ergänzend sinnvoll sein, das sollte aber individuell ärztlich entschieden werden."
+      }
+    ]
+  },
+  {
+    slug: "abnehmen-ab-50-muskelabbau-stoffwechsel-evidenz",
+    title: "Abnehmen ab 50: Muskelabbau, Stoffwechsel und was wirklich zählt",
+    description: "Studien zeigen: Der Grundumsatz bleibt von 20 bis 60 stabil. Wer ab 50 abnimmt, kämpft gegen Muskelabbau, nicht gegen den Stoffwechsel.",
+    tags: [
+      "abnehmen ab 50",
+      "stoffwechsel ab 50",
+      "muskelabbau alter",
+      "abnehmen im alter",
+      "sarkopenie",
+      "protein",
+      "krafttraining",
+      "grundumsatz"
+    ],
+    relatedCalculators: [
+      "grundumsatz-rechner",
+      "protein-bedarf-rechner",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Daily energy expenditure through the human life course",
+        authors: "Pontzer H, Yamada Y, Sagayama H, et al.",
+        journal: "Science",
+        year: 2021,
+        doi: "10.1126/science.abe5017"
+      },
+      {
+        title: "Evidence-Based Recommendations for Optimal Dietary Protein Intake in Older People: A Position Paper From the PROT-AGE Study Group",
+        authors: "Bauer J, Biolo G, Cederholm T, et al.",
+        journal: "Journal of the American Medical Directors Association (JAMDA)",
+        year: 2013,
+        doi: "10.1016/j.jamda.2013.05.021"
+      },
+      {
+        title: "Aerobic or Resistance Exercise, or Both, in Dieting Obese Older Adults",
+        authors: "Villareal DT, Aguirre L, Gurney AB, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2017,
+        doi: "10.1056/NEJMoa1616338"
+      }
+    ],
+    kernaussage: "Der oft beklagte \"lahme Stoffwechsel ab 50\" ist ein Mythos: Eine grosse Science-Studie (Pontzer 2021) zeigt, dass der auf Magermasse bezogene Energieumsatz von 20 bis 60 stabil bleibt. Der sinkende Kalorienbedarf entsteht vor allem durch Muskelabbau. Wer ab 50 ausreichend Protein (1,0-1,2 g/kg) isst und Krafttraining macht, kann auch in einem Kaloriendefizit Muskeln schützen und effektiv abnehmen.",
+    faqs: [
+      {
+        question: "Wird der Stoffwechsel ab 50 wirklich langsamer?",
+        answer: "Nicht so, wie oft angenommen. Laut einer grossen Science-Studie (Pontzer 2021) bleibt der auf die fettfreie Masse bezogene Energieumsatz von etwa 20 bis 60 Jahren stabil und sinkt erst ab rund 60 langsam (ca. 0,7 % pro Jahr). Der real sinkende Kalorienbedarf entsteht vor allem durch weniger Muskelmasse und weniger Bewegung, nicht durch einen ineffizienten Stoffwechsel."
+      },
+      {
+        question: "Wie viel Protein sollte ich ab 50 zum Abnehmen essen?",
+        answer: "Fachgremien empfehlen für ältere Menschen 1,0-1,2 g Protein pro kg Körpergewicht und Tag (PROT-AGE 2013) - mehr als die 0,8 g/kg für jüngere Erwachsene. In einem Kaloriendefizit ist ausreichend Protein besonders wichtig, um Muskelmasse zu schützen. Den individuellen Bedarf können Sie mit dem Protein-Bedarf-Rechner abschätzen."
+      },
+      {
+        question: "Warum ist Krafttraining beim Abnehmen im Alter so wichtig?",
+        answer: "Während einer Diät baut der Körper neben Fett auch Muskeln ab. Eine NEJM-Studie (Villareal 2017) zeigte, dass adipöse ältere Erwachsene mit Training deutlich weniger Magermasse verloren als bei reiner Diät - und die Kombination aus Kraft- und Ausdauertraining die körperliche Funktion am stärksten verbesserte. Krafttraining setzt den Reiz, der Muskeln trotz Defizit schützt."
+      },
+      {
+        question: "Ist Abnehmen ab 60 noch anders als ab 50?",
+        answer: "Das Grundprinzip bleibt gleich: ein moderates Kaloriendefizit. Ab etwa 60 beginnt der Energieumsatz laut Pontzer-Daten langsam zu sinken, und der Muskelschutz wird noch wichtiger. Ausreichend Protein, Krafttraining und Alltagsbewegung sind die entscheidenden Hebel - bei Vorerkrankungen vorab ärztlich abklären."
+      }
+    ]
+  },
+  {
+    slug: "paleo-diaet-steinzeiternaehrung-evidenz-studien",
+    title: "Paleo-Diät im Faktencheck: Was die Steinzeiternährung wirklich bringt",
+    description: "Paleo-Diät im Studiencheck: RCTs zeigen ca. 2-3 kg mehr Gewichtsverlust kurzfristig - der Effekt kommt aber von Sättigung, nicht vom Steinzeit-Konzept.",
+    tags: [
+      "paleo diät",
+      "steinzeiternährung",
+      "paleo abnehmen",
+      "paleo ernährung",
+      "paleo diät erfahrungen",
+      "abnehmen",
+      "evidenzbasiert"
+    ],
+    relatedCalculators: [
+      "makros-berechnen",
+      "kalorienbedarf-berechnen",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Paleolithic nutrition for metabolic syndrome: systematic review and meta-analysis",
+        authors: "Manheimer EW, van Zuuren EJ, Fedorowicz Z, Pijl H",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2015,
+        doi: "10.3945/ajcn.115.113613",
+        pmid: "26269362"
+      },
+      {
+        title: "Beneficial effects of a Paleolithic diet on cardiovascular risk factors in type 2 diabetes: a randomized cross-over pilot study",
+        authors: "Jönsson T, Granfeldt Y, Ahrén B, Branell UC, Pålsson G, Hansson A, Söderström M, Lindeberg S",
+        journal: "Cardiovascular Diabetology",
+        year: 2009,
+        doi: "10.1186/1475-2840-8-35",
+        pmid: "19604407"
+      }
+    ],
+    kernaussage: "Randomisierte Studien zeigen, dass eine Paleo-Diät kurzfristig beim Abnehmen und bei Blutfetten helfen kann - im Schnitt etwas mehr als Vergleichsdiäten. Der Vorteil entsteht aber vor allem durch höhere Sättigung und den Wegfall verarbeiteter Lebensmittel und Zucker, nicht durch das Steinzeit-Konzept selbst. Langfristig verschwindet der Vorsprung, weil Menschen die strengen Regeln kaum durchhalten.",
+    faqs: [
+      {
+        question: "Kann man mit der Paleo-Diät abnehmen?",
+        answer: "Ja. Randomisierte Studien zeigen, dass Paleo-Teilnehmer kurzfristig im Schnitt etwas mehr abnehmen als mit Vergleichsdiäten. Der Grund ist aber nicht das Steinzeit-Konzept, sondern dass Paleo viel Eiweiß liefert und Zucker sowie verarbeitete Lebensmittel streicht - das sättigt und führt oft zu einem unbewussten Kaloriendefizit."
+      },
+      {
+        question: "Ist Paleo langfristig besser als andere Diäten?",
+        answer: "Nach aktueller Studienlage nicht. In einer zweijährigen Studie war der anfängliche Gewichtsvorsprung der Paleo-Gruppe gegenüber einer normalen gesunden Kost nach 24 Monaten verschwunden. Langfristig zählt vor allem, ob man eine Ernährung durchhält - und die strengen Paleo-Verbote sind im Alltag schwer einzuhalten."
+      },
+      {
+        question: "Was darf man bei Paleo nicht essen?",
+        answer: "Klassisch verboten sind Getreide und Brot, Milchprodukte, Hülsenfrüchte, Zucker sowie stark verarbeitete Lebensmittel. Erlaubt sind Fleisch, Fisch, Eier, Gemüse, Obst, Nüsse und Samen. Problematisch ist, dass gut belegte gesunde Lebensmittel wie Vollkorn und Hülsenfrüchte gestrichen werden."
+      },
+      {
+        question: "Ist die Paleo-Diät gesund?",
+        answer: "Kurzfristig verbessert Paleo in Studien Blutfette, Blutzucker und Blutdruck. Allerdings kann der Verzicht auf Milchprodukte die Kalziumzufuhr senken, und der Wegfall von Vollkorn und Hülsenfrüchten ist ernährungsphysiologisch fragwürdig. Eine eiweißreiche, möglichst unverarbeitete Ernährung erreicht ähnliche Effekte ohne diese pauschalen Verbote."
+      }
+    ]
+  },
+  {
+    slug: "eiweissshake-whey-protein-abnehmen-meta-analyse",
+    title: "Eiweißshakes zum Abnehmen: Was Whey-Protein laut Studien bringt",
+    description: "Meta-Analysen zeigen: Mehr Protein schützt beim Abnehmen rund 0,7 kg fettfreie Masse. Was Whey-Shakes wirklich bringen - und was nicht.",
+    tags: [
+      "eiweißshake",
+      "whey protein",
+      "abnehmen",
+      "proteinshake",
+      "eiweißpulver",
+      "sättigung",
+      "muskelerhalt",
+      "kaloriendefizit"
+    ],
+    relatedCalculators: [
+      "protein-bedarf-rechner",
+      "makros-berechnen",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+        authors: "Morton RW, Murphy KT, McKellar SR, et al.",
+        journal: "British Journal of Sports Medicine",
+        year: 2018,
+        doi: "10.1136/bjsports-2017-097608"
+      },
+      {
+        title: "The effects of high protein diets on thermogenesis, satiety and weight loss: a critical review",
+        authors: "Halton TL, Hu FB",
+        journal: "Journal of the American College of Nutrition",
+        year: 2004,
+        doi: "10.1080/07315724.2004.10719381"
+      }
+    ],
+    kernaussage: "Whey- und andere Proteinshakes können beim Abnehmen helfen, weil mehr Eiweiß sättigt und im Kaloriendefizit Muskelmasse schützt. Meta-Analysen zeigen, dass eine erhöhte Proteinzufuhr während einer Diät den Verlust an fettfreier Masse reduziert. Der Effekt entsteht durch das zusätzliche Protein und den Kalorienersatz - nicht durch ein spezielles Pulver. Vollwertige Eiweißquellen leisten dasselbe.",
+    faqs: [
+      {
+        question: "Hilft Whey-Protein wirklich beim Abnehmen?",
+        answer: "Indirekt ja. Whey liefert viel Eiweiß, das stärker sättigt als Kohlenhydrate oder Fett, und schützt im Kaloriendefizit die Muskelmasse. Abgenommen wird aber ausschließlich über ein Kaloriendefizit - der Shake hilft nur, wenn er Kalorien ersetzt und nicht zusätzlich getrunken wird. Eine fettverbrennende Wirkung hat das Pulver nicht."
+      },
+      {
+        question: "Ist ein Eiweißshake besser als eiweißreiche Lebensmittel?",
+        answer: "Nein, nur bequemer. Magerquark, Skyr, Eier, Hülsenfrüchte, Hähnchen oder Fisch liefern dasselbe Eiweiß plus zusätzliche Mikronährstoffe und meist mehr Sättigungsvolumen. Whey ist vor allem praktisch, schnell und oft günstig - der Abnehmeffekt ist bei gleicher Eiweißmenge identisch."
+      },
+      {
+        question: "Wie viel Eiweiß sollte ich beim Abnehmen essen?",
+        answer: "In einer Diät sind etwa 1,6 g Protein pro Kilogramm Körpergewicht und Tag ein gut belegter Richtwert, um Muskelmasse zu erhalten. Ihren individuellen Bedarf können Sie mit dem Protein-Bedarf-Rechner ermitteln."
+      },
+      {
+        question: "Kann ich mit Eiweißshakes zunehmen?",
+        answer: "Ja, wenn Sie sie zusätzlich zur normalen Ernährung trinken. Jeder Shake liefert Kalorien. Nur wenn er eine andere Mahlzeit oder einen Snack ersetzt und Sie insgesamt im Kaloriendefizit bleiben, unterstützt er das Abnehmen."
+      },
+      {
+        question: "Ist Whey-Protein für jeden geeignet?",
+        answer: "Für die meisten gesunden Erwachsenen ja. Menschen mit Laktoseintoleranz sollten Whey-Isolat oder pflanzliche Alternativen wählen, und Personen mit Nierenerkrankungen sollten eine erhöhte Eiweißzufuhr vorab ärztlich abklären."
+      }
+    ]
+  },
+  {
+    slug: "fatburner-fettverbrennung-supplemente-faktencheck",
+    title: "Fatburner im Faktencheck: Was Koffein, Capsaicin & Co. wirklich koennen",
+    description: "Fatburner-Faktencheck: Gruentee senkt das Gewicht laut Meta-Analyse nur um ca. 1,3 kg, Capsaicin spart pro Mahlzeit rund 74 kcal. Warum das im Alltag kaum zaehlt.",
+    tags: [
+      "fatburner",
+      "fettverbrennung",
+      "supplemente",
+      "koffein",
+      "capsaicin",
+      "gruentee",
+      "kaloriendefizit",
+      "abnehmen"
+    ],
+    relatedCalculators: [
+      "kalorienverbrauch-rechner",
+      "kaloriendefizit-berechnen",
+      "koffein-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Green tea for weight loss and weight maintenance in overweight or obese adults",
+        authors: "Jurgens TM, Whelan AM, Killian L, Doucette S, Kirk S, Foy E",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2012,
+        doi: "10.1002/14651858.CD008650.pub2"
+      },
+      {
+        title: "The effects of green tea on weight loss and weight maintenance: a meta-analysis",
+        authors: "Hursel R, Viechtbauer W, Westerterp-Plantenga MS",
+        journal: "International Journal of Obesity",
+        year: 2009,
+        doi: "10.1038/ijo.2009.135"
+      },
+      {
+        title: "Efficacy of a green tea extract rich in catechin polyphenols and caffeine in increasing 24-h energy expenditure and fat oxidation in humans",
+        authors: "Dulloo AG, Duret C, Rohrer D, Girardier L, Mensi N, Fathi M, Chantre P, Vandermander J",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 1999,
+        doi: "10.1093/ajcn/70.6.1040"
+      }
+    ],
+    kernaussage: "Die meisten als Fatburner verkauften Praeparate haben keine belastbare Wirkung auf das Koerpergewicht. Nur Koffein und Capsaicin steigern den Energieverbrauch beziehungsweise senken die Kalorienaufnahme messbar - aber so gering (Gruentee-Meta-Analyse: rund 1,3 kg; Capsaicin: etwa 74 kcal pro Mahlzeit), dass der Effekt im Alltag kaum ins Gewicht faellt. Ein Kaloriendefizit ersetzen sie nicht.",
+    faqs: [
+      {
+        question: "Wirken Fatburner-Tabletten wirklich?",
+        answer: "Die meisten als Fatburner verkauften Praeparate haben keine belastbare Wirkung auf das Koerpergewicht. Nur Koffein und Capsaicin zeigen messbare Effekte, diese sind aber so klein - wenige Dutzend Kilokalorien pro Tag -, dass sie im Alltag kaum ins Gewicht fallen. Ein Kaloriendefizit ersetzen sie nicht."
+      },
+      {
+        question: "Hilft Gruentee beim Abnehmen?",
+        answer: "Nur marginal. Eine Meta-Analyse fand eine durchschnittliche Abnahme von rund 1,3 kg ueber den gesamten Studienzeitraum. Die unabhaengige Cochrane-Uebersicht stufte den Effekt als klinisch nicht bedeutsam ein. Gruentee kann eine gesunde Ernaehrung begleiten, ersetzt sie aber nicht."
+      },
+      {
+        question: "Regt Chili beziehungsweise Capsaicin die Fettverbrennung an?",
+        answer: "Capsaicin kann den Energieverbrauch minimal erhoehen und die Saettigung leicht foerdern. In einer Meta-Analyse senkte es die Kalorienaufnahme einer Mahlzeit um etwa 74 kcal. Das ist messbar, aber gering, und ein dauerhafter Fettverlust allein durch Chili ist nicht belegt."
+      },
+      {
+        question: "Wie verbrenne ich am effektivsten Fett?",
+        answer: "Ueber ein moderates Kaloriendefizit, ausreichend Eiweiss und regelmaessige Bewegung. Diese Kombination wirkt verlaesslicher als jede Kapsel. Berechnen Sie Ihren Kalorienbedarf und Ihr Defizit, statt auf Supplemente zu setzen."
+      },
+      {
+        question: "Sind Fatburner gefaehrlich?",
+        answer: "Hochdosierte, stimulanzienhaltige Fatburner koennen Herzrasen, Bluthochdruck und Schlafstoerungen ausloesen. Bei Herz-Kreislauf-Erkrankungen, anderen Vorerkrankungen oder gleichzeitiger Medikamenteneinnahme sollten Sie vor der Einnahme aerztlichen Rat einholen."
+      }
+    ]
+  },
+  {
+    slug: "wassereinlagerungen-entwaessern-was-hilft-evidenz",
+    title: "Wassereinlagerungen loswerden: Was wirklich entwaessert",
+    description: "Schwankungen auf der Waage sind meist Wasser, nicht Fett. Salzreduktion senkt den Blutdruck um ca. 4/2 mmHg (Cochrane 2013) - was sonst hilft.",
+    tags: [
+      "wassereinlagerungen",
+      "entwaessern",
+      "oedeme",
+      "salz",
+      "natrium",
+      "gewichtsschwankungen",
+      "blutdruck"
+    ],
+    relatedCalculators: [
+      "wasserbedarf-rechner",
+      "koerperfett-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Effect of longer term modest salt reduction on blood pressure: Cochrane systematic review and meta-analysis of randomised trials",
+        authors: "He FJ, Li J, MacGregor GA",
+        journal: "BMJ",
+        year: 2013,
+        doi: "10.1136/bmj.f1325",
+        pmid: "23558162"
+      },
+      {
+        title: "Effects on Blood Pressure of Reduced Dietary Sodium and the Dietary Approaches to Stop Hypertension (DASH) Diet",
+        authors: "Sacks FM, Svetkey LP, Vollmer WM, et al. (DASH-Sodium Collaborative Research Group)",
+        journal: "New England Journal of Medicine",
+        year: 2001,
+        doi: "10.1056/NEJM200101043440101",
+        pmid: "11136953"
+      }
+    ],
+    kernaussage: "Tagesschwankungen von 1-2 Kilogramm auf der Waage sind fast immer Wasser, nicht Fett - sie folgen Salz-, Kohlenhydrat- und Hormonschwankungen. Weniger Salz senkt nachweislich den Blutdruck (Cochrane 2013: rund -4/-2 mmHg bei etwa 4 g weniger Salz pro Tag) und reduziert die Wasserbindung im Gewebe. Entwaesserungstabletten ohne medizinischen Grund sind riskant. Echte, anhaltende Oedeme gehoeren immer aerztlich abgeklaert.",
+    faqs: [
+      {
+        question: "Sind die zwei Kilo, die ueber Nacht wieder weg sind, wirklich kein Fett?",
+        answer: "Korrekt. Ein Kilo Koerperfett entspricht rund 7.000 kcal - ein solches Defizit oder Plus ist ueber Nacht unmoeglich. Schnelle Schwankungen sind Wasser, das mit Salz, Kohlenhydraten (Glykogen bindet Wasser) und Hormonen kommt und geht. Aussagekraeftig ist der Gewichtstrend ueber zwei bis vier Wochen, nicht der Einzelwert."
+      },
+      {
+        question: "Wie schnell wirkt weniger Salz gegen Wassereinlagerungen?",
+        answer: "Eine Verschiebung beim Gewebewasser ist oft schon innerhalb weniger Tage spuerbar. Studien zeigen aber, dass die stabilen Effekte auf Blutdruck und Fluessigkeitshaushalt eine laengerfristige, moderate Reduktion erfordern - in der Cochrane-Analyse ueber mindestens vier Wochen. Die WHO empfiehlt unter 5 g Salz pro Tag."
+      },
+      {
+        question: "Helfen Entwaesserungstabletten beim Abnehmen?",
+        answer: "Nein. Diuretika sind Medikamente fuer Herz-, Nieren- oder Lebererkrankungen und gehoeren in aerztliche Hand. Sie entfernen nur Wasser, das nach dem Absetzen zurueckkehrt, und koennen den Elektrolythaushalt gefaehrlich stoeren. Fett bauen sie nicht ab."
+      },
+      {
+        question: "Soll ich bei Wassereinlagerungen weniger trinken?",
+        answer: "Nein, eher das Gegenteil. Bei zu geringer Fluessigkeitszufuhr neigt der Koerper dazu, Wasser zurueckzuhalten. Konstantes, ausreichendes Trinken ueber den Tag ist sinnvoller als Restriktion. Ihren Richtwert koennen Sie mit dem Wasserbedarf-Rechner abschaetzen."
+      },
+      {
+        question: "Wann sollte ich mit Wassereinlagerungen zum Arzt?",
+        answer: "Bei anhaltenden, ploetzlich auftretenden, einseitigen oder schmerzhaften Schwellungen, bei Schwellungen im Gesicht, bei Atemnot oder wenn bereits eine Herz-, Nieren- oder Lebererkrankung besteht. Solche Oedeme sind ein medizinisches Signal und keine Lifestyle-Frage."
+      }
+    ]
+  },
+  {
+    slug: "vitamin-d-gewicht-abnehmen-evidenz",
+    title: "Vitamin D und Gewicht: Hilft es beim Abnehmen?",
+    description: "Übergewichtige haben oft niedrigere Vitamin-D-Werte. Doch RCTs zeigen: Supplementierung senkt das Gewicht nicht nennenswert. Was die Evidenz wirklich sagt.",
+    tags: [
+      "vitamin d",
+      "abnehmen",
+      "gewicht",
+      "mikronaehrstoffe",
+      "uebergewicht",
+      "vitamin d mangel",
+      "supplemente",
+      "evidenz"
+    ],
+    relatedCalculators: [
+      "bmi-rechner",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Vitamin D Supplements and Prevention of Cancer and Cardiovascular Disease (VITAL)",
+        authors: "Manson JE, Cook NR, Lee IM, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2019,
+        doi: "10.1056/NEJMoa1809944",
+        pmid: "30415629"
+      },
+      {
+        title: "Causal relationship between obesity and vitamin D status: bi-directional Mendelian randomization analysis of multiple cohorts",
+        authors: "Vimaleswaran KS, Berry DJ, Lu C, et al.",
+        journal: "PLoS Medicine",
+        year: 2013,
+        doi: "10.1371/journal.pmed.1001383",
+        pmid: "23393431"
+      }
+    ],
+    kernaussage: "Übergewicht geht statistisch mit niedrigeren Vitamin-D-Spiegeln einher, weil das fettlösliche Vitamin im Fettgewebe gebunden wird. Randomisierte Studien zeigen jedoch klar: Eine Vitamin-D-Supplementierung führt nicht zu nennenswertem Gewichtsverlust. Sinnvoll ist sie ausschließlich zum Ausgleich eines nachgewiesenen Mangels - abgenommen wird über ein Kaloriendefizit, nicht über Vitamin-D-Pillen.",
+    faqs: [
+      {
+        question: "Hilft Vitamin D beim Abnehmen?",
+        answer: "Nein. Randomisierte Studien wie die große VITAL-Studie mit über 25.000 Teilnehmenden zeigen, dass eine Vitamin-D-Supplementierung das Körpergewicht nicht nennenswert senkt. Abgenommen wird über ein Kaloriendefizit, nicht über Vitamin-D-Präparate."
+      },
+      {
+        question: "Warum haben Übergewichtige oft niedrige Vitamin-D-Werte?",
+        answer: "Vitamin D ist fettlöslich und wird im Fettgewebe gebunden. Bei mehr Körperfett verteilt sich das Vitamin auf ein größeres Speichervolumen, wodurch der messbare Blutspiegel sinkt. Genetische Analysen zeigen, dass Übergewicht die Vitamin-D-Werte senkt - nicht umgekehrt."
+      },
+      {
+        question: "Steigt mein Vitamin-D-Spiegel, wenn ich abnehme?",
+        answer: "Häufig ja, leicht. Beim Abbau von Fettgewebe wird gespeichertes Vitamin D wieder freigesetzt, sodass der Blutspiegel etwas ansteigen kann. Das ist ein Nebeneffekt des Gewichtsverlusts und kein Mechanismus, über den man abnimmt."
+      },
+      {
+        question: "Wann ist eine Vitamin-D-Einnahme sinnvoll?",
+        answer: "Bei einem nachgewiesenen Mangel, der über eine Blutuntersuchung (25-OH-Vitamin-D) festgestellt wird. Vitamin D ist wichtig für Knochen, Muskeln und Immunsystem. Die Einnahme sollte dem Ausgleich dienen, nicht dem Abnehmen, und idealerweise ärztlich abgestimmt sein."
+      },
+      {
+        question: "Kann zu viel Vitamin D schaden?",
+        answer: "Ja. Als fettlösliches Vitamin kann es sich bei dauerhafter Überdosierung anreichern und gesundheitliche Probleme verursachen. Nehmen Sie keine hohen Dosen auf Verdacht ein, sondern orientieren Sie sich an den DGE-Empfehlungen oder ärztlichen Vorgaben."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
