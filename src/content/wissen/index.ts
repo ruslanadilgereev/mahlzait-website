@@ -7238,6 +7238,512 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "intervallfasten-5-2-methode-evidenz-vs-16-8",
+    title: "Intervallfasten 5:2: Was die Studien zeigen – und wann 16:8 besser passt",
+    description: "5:2-Diät im RCT-Check: ähnlich wirksam wie klassisches Kaloriendefizit (HELENA-Studie, 50 Wochen), aber nicht überlegen. Wann 16:8 besser passt.",
+    tags: [
+      "5:2 methode",
+      "intervallfasten",
+      "fastentage",
+      "16:8",
+      "kaloriendefizit",
+      "abnehmen",
+      "studien",
+      "gewichtsverlust"
+    ],
+    relatedCalculators: [
+      "intervallfasten-rechner",
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 8,
+    sources: [
+      {
+        title: "Effects of intermittent and continuous calorie restriction on body weight and metabolism over 50 wk: a randomized controlled trial",
+        authors: "Schübel R, et al.",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2018,
+        doi: "10.1093/ajcn/nqy196"
+      },
+      {
+        title: "The effects of intermittent or continuous energy restriction on weight loss and metabolic disease risk markers: a randomized trial in young overweight women",
+        authors: "Harvie MN, et al.",
+        journal: "International Journal of Obesity",
+        year: 2011,
+        doi: "10.1038/ijo.2010.171"
+      },
+      {
+        title: "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults",
+        authors: "Trepanowski JF, et al.",
+        journal: "JAMA Internal Medicine",
+        year: 2017,
+        doi: "10.1001/jamainternmed.2017.0936"
+      },
+      {
+        title: "Intermittent fasting strategies and their effects on body weight and other cardiometabolic risk factors: systematic review and network meta-analysis of randomised clinical trials",
+        authors: "Semnani-Azad Z, et al.",
+        journal: "BMJ",
+        year: 2025,
+        doi: "10.1136/bmj-2024-082007"
+      }
+    ],
+    kernaussage: "Die 5:2-Methode (zwei Fastentage mit stark reduzierten Kalorien, fünf normale Tage) bringt in randomisierten Studien ähnliche Abnehmerfolge wie eine klassische, durchgehende Kalorienreduktion – im direkten Vergleich aber keinen Vorteil. Auch gegenüber 16:8 ist 5:2 nicht überlegen. Entscheidend bleiben das wöchentliche Gesamtdefizit und vor allem, welche Methode Sie langfristig durchhalten.",
+    faqs: [
+      {
+        question: "Ist die 5:2-Methode besser als 16:8?",
+        answer: "Nein. Beide Methoden führen über ein Kaloriendefizit zum Erfolg. Randomisierte Studien und die BMJ-Netzwerk-Metaanalyse 2025 zeigen nur kleine, uneinheitliche Unterschiede zwischen den Fasten-Varianten. Entscheidend ist, welche Methode Sie langfristig durchhalten."
+      },
+      {
+        question: "Wie viel kann ich mit 5:2 abnehmen?",
+        answer: "In der HELENA-Studie verloren Teilnehmende mit der 5:2-artigen Kalorienrestriktion über 50 Wochen rund 7 % ihres Körpergewichts – ähnlich viel wie mit klassischer, durchgehender Kalorienreduktion. Der tatsächliche Wert hängt vom wöchentlichen Gesamtdefizit ab."
+      },
+      {
+        question: "Wie viele Kalorien an den Fastentagen?",
+        answer: "Üblich sind 500–600 kcal an den zwei Fastentagen. Das ist allerdings eine populäre Faustregel, kein individuell berechneter Wert. Sinnvoll ist, das Defizit über die ganze Woche zu betrachten und an Fastentagen auf sättigendes, proteinreiches Essen zu setzen."
+      },
+      {
+        question: "Bringen mehr Fastentage mehr Gewichtsverlust?",
+        answer: "Nein. Im 1-Jahres-RCT von Trepanowski (2017) war Alternate-Day-Fasting (jeden zweiten Tag fasten) nicht wirksamer als tägliche Kalorienrestriktion – führte aber zu mehr Abbrüchen. Strengere Schemata sind oft schwerer durchzuhalten, ohne besser zu wirken."
+      }
+    ]
+  },
+  {
+    slug: "omad-one-meal-a-day-evidenz-risiken",
+    title: "OMAD - Eine Mahlzeit am Tag: Wirkung, Evidenz und reale Risiken",
+    description: "OMAD erzwingt ein Kaloriendefizit, doch ein RCT zeigte erhoehte Nuechternglukose. Was die duenne Studienlage zu One Meal A Day wirklich hergibt.",
+    tags: [
+      "omad",
+      "one meal a day",
+      "eine mahlzeit am tag",
+      "intervallfasten",
+      "23:1 fasten",
+      "kaloriendefizit",
+      "nuechternglukose",
+      "ernaehrung"
+    ],
+    relatedCalculators: [
+      "intervallfasten-rechner",
+      "kalorienbedarf-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "A controlled trial of reduced meal frequency without caloric restriction in healthy, normal-weight, middle-aged adults",
+        authors: "Stote KS, Baer DJ, Spears K, Paul DR, Harris GK, Rumpler WV, Strycula P, Najjar SS, Ferrucci L, Ingram DK, Longo DL, Mattson MP",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2007,
+        doi: "10.1093/ajcn/85.4.981"
+      },
+      {
+        title: "Effects of Time-Restricted Eating on Weight Loss and Other Metabolic Parameters in Women and Men With Overweight and Obesity: The TREAT Randomized Clinical Trial",
+        authors: "Lowe DA, Wu N, Rohdin-Bibby L, Moore AH, Kelly N, Liu YE, Philip E, Vittinghoff E, Heymsfield SB, Olgin JE, Shepherd JA, Weiss EJ",
+        journal: "JAMA Internal Medicine",
+        year: 2020,
+        doi: "10.1001/jamainternmed.2020.4153"
+      },
+      {
+        title: "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults: A Randomized Clinical Trial",
+        authors: "Trepanowski JF, Kroeger CM, Barnosky A, Klempel MC, Bhutani S, Hoddy KK, Gabel K, Freels S, Rigdon J, Rood J, Ravussin E, Varady KA",
+        journal: "JAMA Internal Medicine",
+        year: 2017,
+        doi: "10.1001/jamainternmed.2017.0936"
+      }
+    ],
+    kernaussage: "OMAD (One Meal A Day, 23:1) presst die gesamte Tagesenergie in ein Zeitfenster von rund einer Stunde und erzwingt so oft ein Kaloriendefizit. Die Studienlage ist jedoch sehr duenn: Eine kontrollierte NIH-Studie zeigte bei gleicher Kalorienzufuhr in einer Mahlzeit erhoehte Nuechternglukose und staerkeren Hunger. Fuer die meisten Menschen ueberwiegen Naehrstoffluecken und Heisshunger den Nutzen.",
+    faqs: [
+      {
+        question: "Was bedeutet OMAD und 23:1?",
+        answer: "OMAD steht fuer 'One Meal A Day', also eine einzige Mahlzeit pro Tag. 23:1 beschreibt das Muster: rund 23 Stunden fasten und etwa 1 Stunde essen. Es ist die extremste Form des zeitbeschraenkten Essens."
+      },
+      {
+        question: "Nimmt man mit OMAD wirklich ab?",
+        answer: "Abnehmen funktioniert nur ueber ein Kaloriendefizit. OMAD kann ein Defizit erzwingen, weil ein einstuendiges Fenster die aufnehmbare Menge begrenzt. Den gleichen Effekt erreicht man aber auch mit ueber den Tag verteilten Mahlzeiten - der Zeitpunkt selbst bringt laut Studienlage keinen Zusatznutzen."
+      },
+      {
+        question: "Ist OMAD gefaehrlich?",
+        answer: "Fuer gesunde Erwachsene ist kurzfristiges Fasten meist unbedenklich. In einer kontrollierten NIH-Studie fuehrte eine Mahlzeit pro Tag bei gleicher Kalorienzufuhr jedoch zu erhoehter Nuechternglukose, staerkerem Hunger und unguenstigeren Blutdruck-/Cholesterinwerten. Schwangere, Stillende, Menschen mit Diabetes oder Essstoerungen in der Vorgeschichte sollten OMAD ohne aerztliche Ruecksprache meiden."
+      },
+      {
+        question: "Kann man bei OMAD genug Protein und Naehrstoffe aufnehmen?",
+        answer: "Das ist die grosse Schwierigkeit. Den kompletten Tagesbedarf an Protein, Ballaststoffen und Mikronaehrstoffen in eine einzige Mahlzeit zu packen, gelingt vielen nicht. Zudem wird die Muskelproteinsynthese durch ueber den Tag verteilte Proteinzufuhr besser unterstuetzt."
+      },
+      {
+        question: "OMAD oder 16:8 - was ist besser?",
+        answer: "Es gibt keine Evidenz, dass OMAD dem moderateren 16:8 ueberlegen ist. Im Gegenteil: OMAD bringt mehr Hunger und Naehrstoffrisiken bei gleichem oder geringerem Nutzen. Fuer die meisten ist ein moderates Essfenster die sicherere Wahl."
+      }
+    ]
+  },
+  {
+    slug: "alternate-day-fasting-alternierendes-fasten-evidenz-studien",
+    title: "Alternate-Day-Fasting: Was alternierendes Fasten wirklich bringt",
+    description: "RCT-Check: Alternierendes Fasten (Trepanowski 2017) nimmt nicht besser ab als tägliche Kalorienreduktion – bei höherer Abbruchquote (38 %).",
+    tags: [
+      "alternate day fasting",
+      "alternierendes fasten",
+      "jeden zweiten tag fasten",
+      "adf diät",
+      "10 in 2 fasten",
+      "intervallfasten",
+      "kalorienreduktion",
+      "abnehmen"
+    ],
+    relatedCalculators: [
+      "intervallfasten-rechner",
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Effect of Alternate-Day Fasting on Weight Loss, Weight Maintenance, and Cardioprotection Among Metabolically Healthy Obese Adults: A Randomized Clinical Trial",
+        authors: "Trepanowski JF, Kroeger CM, Barnosky A, et al.",
+        journal: "JAMA Internal Medicine",
+        year: 2017,
+        doi: "10.1001/jamainternmed.2017.0936"
+      },
+      {
+        title: "A randomized pilot study comparing zero-calorie alternate-day fasting to daily caloric restriction in adults with obesity",
+        authors: "Catenacci VA, Pan Z, Ostendorf D, et al.",
+        journal: "Obesity",
+        year: 2016,
+        doi: "10.1002/oby.21581"
+      },
+      {
+        title: "Intermittent versus continuous energy restriction on weight loss and cardiometabolic outcomes: a systematic review and meta-analysis of randomized controlled trials",
+        authors: "Cioffi I, Evangelista A, Ponzo V, et al.",
+        journal: "Journal of Translational Medicine",
+        year: 2018,
+        doi: "10.1186/s12967-018-1748-4"
+      },
+      {
+        title: "Effect of intermittent versus continuous energy restriction on weight loss, maintenance and cardiometabolic risk: A randomized 1-year trial",
+        authors: "Sundfør TM, Svendsen M, Tonstad S",
+        journal: "Nutrition, Metabolism and Cardiovascular Diseases",
+        year: 2018,
+        doi: "10.1016/j.numecd.2018.03.009"
+      }
+    ],
+    kernaussage: "Alternate-Day-Fasting (ADF) lässt nicht effektiver abnehmen als eine kontinuierliche tägliche Kalorienreduktion. Im größten Vergleichs-RCT (Trepanowski 2017) war der Gewichtsverlust nach einem Jahr praktisch identisch, doch die Abbruchquote unter ADF lag mit 38 Prozent deutlich höher. Der vermeintliche Stoffwechselvorteil verschwindet bei gleichem Kaloriendefizit – entscheidend ist die Energiebilanz, nicht das Timing.",
+    faqs: [
+      {
+        question: "Nimmt man mit Alternate-Day-Fasting schneller ab als mit normaler Kalorienreduktion?",
+        answer: "Nein. Im einjährigen RCT von Trepanowski (2017) war der Gewichtsverlust unter alternierendem Fasten praktisch identisch mit täglicher Kalorienreduktion. Eine Meta-Analyse von 11 RCTs (Cioffi 2018) bestätigt: Bei gleichem Kaloriendefizit gibt es keinen Vorteil beim Abnehmen."
+      },
+      {
+        question: "Was bedeutet '10 in 2'?",
+        answer: "'10 in 2' ist eine populäre Bezeichnung für alternierendes Fasten: Man isst einen Tag (in 2 = jeden zweiten Tag) und fastet bzw. reduziert stark am nächsten. Die '10' steht für '10 Stunden' bzw. das deutsche Wort 'zehn' als Wortspiel. Inhaltlich entspricht es dem Alternate-Day-Fasting."
+      },
+      {
+        question: "Ist alternierendes Fasten schwer durchzuhalten?",
+        answer: "Tendenziell ja. In der Trepanowski-Studie brachen 38 Prozent der ADF-Teilnehmer ab, gegenüber 29 Prozent bei täglicher Kalorienreduktion. Viele aßen an Fastentagen mehr als vorgesehen und kompensierten dadurch das Defizit teilweise."
+      },
+      {
+        question: "Was ist an Fastentagen erlaubt?",
+        answer: "Je nach Variante reicht das von null Kalorien (striktes ADF) bis etwa 25 Prozent des Tagesbedarfs (oft rund 500 kcal, 'modifiziertes ADF'). Wichtig: Was an Fastentagen eingespart wird, sollte nicht an Essenstagen wieder zugeführt werden, sonst entfällt das Wochendefizit."
+      },
+      {
+        question: "Für wen ist ADF nicht geeignet?",
+        answer: "Die Studien wurden überwiegend an metabolisch gesunden Erwachsenen mit Adipositas durchgeführt. Bei Typ-2-Diabetes, Medikamenteneinnahme, Essstörungen, Schwangerschaft oder Untergewicht sollte man vor einem Fastenprotokoll ärztlichen Rat einholen."
+      }
+    ]
+  },
+  {
+    slug: "zuckeralternativen-erythrit-xylit-stevia-vergleich-kalorien-wirkung",
+    title: "Erythrit, Xylit, Stevia & Co. im Vergleich: Kalorien, Blutzucker und Wirkung",
+    description: "Erythrit (0 kcal), Xylit (~2,4 kcal/g) und Stevia im Vergleich: WHO rät 2023 von Zuckerersatz zum Abnehmen ab. Was Studien zu Blutzucker und Herz zeigen.",
+    tags: [
+      "erythrit",
+      "xylit",
+      "stevia",
+      "zuckeralternativen",
+      "zuckerersatz",
+      "blutzucker",
+      "kalorien",
+      "suessstoffe"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "The artificial sweetener erythritol and cardiovascular event risk",
+        authors: "Witkowski M, Nemet I, Alamri H, et al.",
+        journal: "Nature Medicine",
+        year: 2023,
+        doi: "10.1038/s41591-023-02223-9"
+      },
+      {
+        title: "Gut hormone secretion, gastric emptying, and glycemic responses to erythritol and xylitol in lean and obese subjects",
+        authors: "Wölnerhanssen BK, Cajacob L, Keller N, et al.",
+        journal: "American Journal of Physiology-Endocrinology and Metabolism",
+        year: 2016,
+        doi: "10.1152/ajpendo.00037.2016"
+      },
+      {
+        title: "Effects of nonnutritive sweeteners on body weight and BMI in diverse clinical contexts: Systematic review and meta-analysis",
+        authors: "Laviada-Molina H, Molina-Segui F, Pérez-Gaxiola G, et al.",
+        journal: "Obesity Reviews",
+        year: 2020,
+        doi: "10.1111/obr.13020"
+      }
+    ],
+    kernaussage: "Erythrit liefert praktisch 0 kcal und ist magenfreundlicher als Xylit (~2,4 kcal/g, in Menge abfuehrend); beide und Stevia heben den Blutzucker kaum an. Doch die WHO rät 2023 von Zuckerersatz zur Gewichtskontrolle ab, weil ein langfristiger Abnehm-Nutzen fehlt, und eine Nature-Medicine-Studie verknuepft hohe Erythrit-Blutspiegel mit Herz-Kreislauf-Risiko. Massvoller Einsatz statt Daueraustausch ist sinnvoll.",
+    faqs: [
+      {
+        question: "Erythrit oder Xylit - was ist besser?",
+        answer: "Das haengt vom Ziel ab. Erythrit hat praktisch 0 kcal/g, hebt den Blutzucker nicht an und ist magenfreundlicher, weil es vor dem Dickdarm aufgenommen wird. Xylit liefert etwa 2,4 kcal/g, hat einen leichten Blutzuckereffekt und wirkt ab rund 35-50 g abfuehrend. Fuer einen empfindlichen Magen und maximale Kalorienersparnis ist Erythrit meist die bessere Wahl. Achtung: Xylit ist fuer Hunde stark giftig."
+      },
+      {
+        question: "Ist Erythrit gesund oder gefaehrlich fuers Herz?",
+        answer: "Erythrit ist als Zusatzstoff zugelassen und gilt bei normalem Verzehr als sicher. Eine Studie in Nature Medicine (2023) fand jedoch einen Zusammenhang zwischen hohen Erythrit-Blutspiegeln und einem erhoehten Herz-Kreislauf-Risiko (Hazard Ratio etwa 1,8-2,2). Das ist eine Assoziation, kein Beweis fuer Ursache - zumal der Koerper Erythrit auch selbst bildet. Wer auf Nummer sicher gehen will, nutzt es massvoll statt in grossen Dauerdosen."
+      },
+      {
+        question: "Helfen Zuckeralternativen wirklich beim Abnehmen?",
+        answer: "Nur bedingt. Kontrollierte Studien zeigen einen kleinen Gewichtsvorteil, wenn Suessstoffe zuckerhaltige Produkte ersetzen. Die WHO rät 2023 aber generell von Suessstoffen zur Gewichtskontrolle ab, da ein langfristiger Nutzen fuer die Fettreduktion fehlt. Entscheidend bleibt die gesamte Kalorienbilanz, nicht der einzelne Zuckerersatz."
+      },
+      {
+        question: "Erhoeht Stevia den Blutzucker?",
+        answer: "Nein. Stevia-Glykoside werden nicht zur Energiegewinnung verstoffwechselt, liefern in den winzigen verwendeten Mengen praktisch keine Kalorien und heben den Blutzucker nicht an. Stevia ist 200-300-mal suesser als Zucker, weshalb nur Kleinstmengen noetig sind."
+      },
+      {
+        question: "Wie viel Xylit ist unbedenklich?",
+        answer: "Die Vertraeglichkeit ist individuell. In Studien loesten 35-50 g Xylit deutliche Darmbeschwerden und weichen Stuhl aus. Als Faustregel sollte man unter rund 20-30 g pro Portion bleiben und die Menge langsam steigern. Erythrit wird in vergleichbaren Mengen deutlich besser vertragen."
+      }
+    ]
+  },
+  {
+    slug: "suessgetraenke-softdrinks-gewichtszunahme-evidenz-meta-analyse",
+    title: "Softdrinks und Gewichtszunahme: Wie stark zuckerhaltige Getränke wirklich dick machen",
+    description: "Meta-Analysen und RCTs zeigen: Eine tägliche Dose Cola lässt Kinder über ein Jahr rund 1 kg mehr zunehmen. Flüssiger Zucker sättigt kaum.",
+    tags: [
+      "softdrinks abnehmen",
+      "cola gewichtszunahme",
+      "zuckerhaltige getränke dick",
+      "süßgetränke gesundheit",
+      "limonade kalorien abnehmen",
+      "flüssige kalorien",
+      "sättigung"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "wasserbedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 8,
+    sources: [
+      {
+        title: "Sugar-sweetened beverages and weight gain in children and adults: a systematic review and meta-analysis",
+        authors: "Malik VS, Pan A, Willett WC, Hu FB",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2013,
+        doi: "10.3945/ajcn.113.058362"
+      },
+      {
+        title: "Intake of sugar-sweetened beverages and weight gain: a systematic review",
+        authors: "Malik VS, Schulze MB, Hu FB",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2006,
+        doi: "10.1093/ajcn/84.2.274"
+      },
+      {
+        title: "Dietary sugars and body weight: systematic review and meta-analyses of randomised controlled trials and cohort studies",
+        authors: "Te Morenga L, Mallard S, Mann J",
+        journal: "BMJ",
+        year: 2012,
+        doi: "10.1136/bmj.e7492"
+      },
+      {
+        title: "A Trial of Sugar-free or Sugar-Sweetened Beverages and Body Weight in Children",
+        authors: "de Ruyter JC, Olthof MR, Seidell JC, Katan MB",
+        journal: "New England Journal of Medicine",
+        year: 2012,
+        doi: "10.1056/NEJMoa1203034"
+      },
+      {
+        title: "A Randomized Trial of Sugar-Sweetened Beverages and Adolescent Body Weight",
+        authors: "Ebbeling CB, Feldman HA, Chomitz VR, Antonelli TA, Gortmaker SL, Osganian SK, Ludwig DS",
+        journal: "New England Journal of Medicine",
+        year: 2012,
+        doi: "10.1056/NEJMoa1203388"
+      },
+      {
+        title: "Liquid versus solid carbohydrate: effects on food intake and body weight",
+        authors: "DiMeglio DP, Mattes RD",
+        journal: "International Journal of Obesity",
+        year: 2000,
+        doi: "10.1038/sj.ijo.0801229"
+      }
+    ],
+    kernaussage: "Zuckergesüßte Getränke gehören zu den am besten belegten einzelnen Risikofaktoren für Gewichtszunahme. Große prospektive Kohorten und randomisierte Studien zeigen einen kausalen Zusammenhang: Flüssiger Zucker sättigt kaum und wird nicht durch weniger feste Nahrung kompensiert, sodass die Kalorien praktisch ungebremst obendrauf kommen. In Kinderstudien führte das Ersetzen einer täglichen Süßgetränke-Dose durch ein zuckerfreies Getränk über ein Jahr zu rund 1 kg weniger Gewichtszunahme.",
+    faqs: [
+      {
+        question: "Machen Softdrinks wirklich dick oder ist das nur eine Korrelation?",
+        answer: "Es ist mehr als Korrelation. Neben großen prospektiven Kohorten gibt es randomisierte Studien, die Störfaktoren ausschalten. Im DRINK-Trial (de Ruyter 2012, NEJM) nahmen Kinder, die täglich ein zuckerhaltiges statt eines optisch identischen zuckerfreien Getränks bekamen, über 18 Monate rund 1 kg mehr zu. Das spricht für einen ursächlichen Beitrag."
+      },
+      {
+        question: "Warum sättigen flüssige Kalorien so schlecht?",
+        answer: "Getrunkener Zucker löst nur eine schwache Sättigungsreaktion aus. In der Studie von DiMeglio und Mattes (2000) kompensierten Menschen die Kalorien aus fester Süßigkeit, indem sie weniger aßen – die gleichen Kalorien als Getränk wurden dagegen kaum ausgeglichen und führten zur Gewichtszunahme. Flüssiger Zucker kommt also fast vollständig zur Tagesbilanz hinzu."
+      },
+      {
+        question: "Helfen Light-Getränke beim Abnehmen?",
+        answer: "Künstlich gesüßte Getränke liefern praktisch keine Kalorien und sind den zuckerhaltigen Varianten beim Gewicht deutlich überlegen – im DRINK-Trial waren sie genau die Vergleichsgruppe mit weniger Zunahme. Als Brücke beim Umstieg sind sie sinnvoll; langfristig ideal bleibt der Wechsel zu Wasser oder ungesüßtem Tee."
+      },
+      {
+        question: "Ist Fruchtsaft besser als Cola?",
+        answer: "Nur begrenzt. Auch 100-Prozent-Fruchtsaft ist flüssiger Zucker mit derselben schwachen Sättigung und ähnlicher Kaloriendichte wie Limonade. Die ganze Frucht zu essen sättigt deutlich besser, weil Ballaststoffe und das Kauen den Zucker langsamer und sättigender verfügbar machen."
+      },
+      {
+        question: "Wie viel kann ich sparen, wenn ich täglich eine Cola weglasse?",
+        answer: "Eine 500-ml-Cola liefert rund 210 kcal. Täglich weggelassen sind das über ein Jahr etwa 76.000 kcal – rechnerisch das Kalorienäquivalent von mehreren Kilogramm Körperfett. Da flüssiger Zucker kaum sättigt, sparen Sie diese Kalorien ein, ohne im Gegenzug hungriger zu werden."
+      }
+    ]
+  },
+  {
+    slug: "vollkorn-vs-weissmehl-abnehmen-evidenz-studien",
+    title: "Vollkorn vs. Weißmehl beim Abnehmen: Was die Evidenz wirklich sagt",
+    description: "Vollkorn sättigt länger und ist mit besserem Gewicht assoziiert: Eine Meta-Analyse fand ein 13% geringeres Übergewichtsrisiko pro 3 Portionen täglich.",
+    tags: [
+      "vollkorn vs weißmehl",
+      "vollkorn abnehmen",
+      "weißmehl ungesund",
+      "ballaststoffe",
+      "sättigung",
+      "vollkornbrot kalorien",
+      "blutzucker",
+      "diabetesrisiko"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Carbohydrate quality and human health: a series of systematic reviews and meta-analyses",
+        authors: "Reynolds A, Mann J, Cummings J, Winter N, Mete E, Te Morenga L",
+        journal: "The Lancet",
+        year: 2019,
+        doi: "10.1016/S0140-6736(18)31809-9"
+      },
+      {
+        title: "Whole grain consumption and risk of cardiovascular disease, cancer, and all cause and cause specific mortality: systematic review and dose-response meta-analysis of prospective studies",
+        authors: "Aune D, Keum N, Giovannucci E, Fadnes LT, Boffetta P, Greenwood DC, Tonstad S, Vatten LJ, Riboli E, Norat T",
+        journal: "BMJ",
+        year: 2016,
+        doi: "10.1136/bmj.i2716"
+      }
+    ],
+    kernaussage: "Vollkorn und Weißmehl liefern fast gleich viele Kalorien, doch Vollkorn enthält mehr Ballaststoffe, sättigt länger und hält den Blutzucker stabiler. In großen Beobachtungsstudien ist ein hoher Vollkornkonsum mit langsamerer Gewichtszunahme, geringerem Bauchfett und einem deutlich niedrigeren Typ-2-Diabetesrisiko verbunden. Der Vorteil liegt also weniger in den Kalorien als in Sättigung und Stoffwechsel.",
+    faqs: [
+      {
+        question: "Hat Vollkornbrot weniger Kalorien als Weißbrot?",
+        answer: "Kaum. Beide liegen bei etwa 200-250 kcal pro 100 g. Der Vorteil von Vollkorn liegt nicht in weniger Energie, sondern im höheren Ballaststoffgehalt (ca. 6-8 g statt 3 g pro 100 g), der länger satt macht und den Blutzucker stabiler hält."
+      },
+      {
+        question: "Macht Vollkorn automatisch schlank?",
+        answer: "Nein. Studien zeigen nur moderate Assoziationen mit langsamerer Gewichtszunahme, keinen starken Schlankmacher-Effekt. Vollkorn erleichtert das Einhalten eines Kaloriendefizits durch bessere Sättigung, aber die Gesamtenergiebilanz entscheidet über die Gewichtsabnahme."
+      },
+      {
+        question: "Ist Weißmehl ungesund?",
+        answer: "Weißmehl ist nicht giftig. In einer ballaststoffreichen Gesamternährung ist gelegentliches Weißbrot unproblematisch. Es liefert nur weniger Ballaststoffe und treibt den Blutzucker schneller nach oben, weshalb Vollkorn als Standard die bessere Wahl ist."
+      },
+      {
+        question: "Wie viel Vollkorn sollte ich täglich essen?",
+        answer: "Die WHO-Auswertung fand die größten Vorteile bei 25-29 g Ballaststoffen pro Tag. Eine Meta-Analyse zeigte deutliche Risikoreduktionen bereits ab etwa 90 g Vollkorn täglich, also rund drei Portionen Vollkornprodukte."
+      },
+      {
+        question: "Senkt Vollkorn das Diabetesrisiko?",
+        answer: "Ja, hier ist die Evidenz vergleichsweise stark. Meta-Analysen finden bei hohem Vollkornkonsum ein etwa 20-30 % niedrigeres Risiko für Typ-2-Diabetes – ein Effekt, der über die reine Gewichtswirkung hinausgeht und auf stabilere Blutzucker- und Insulinkurven zurückgeht."
+      }
+    ]
+  },
+  {
+    slug: "motivation-durchhalten-abnehmen-psychologie-gewohnheiten-evidenz",
+    title: "Dranbleiben beim Abnehmen: Was Psychologie und Gewohnheitsforschung wirklich zeigen",
+    description: "Studien zeigen: Selbstmonitoring und Implementierungsabsichten (Effekt d ca. 0,65) schlagen Willenskraft. Wie Sie beim Abnehmen wirklich dranbleiben.",
+    tags: [
+      "Abnehmen",
+      "Motivation",
+      "Gewohnheiten",
+      "Psychologie",
+      "Selbstmonitoring",
+      "Verhaltensänderung",
+      "Disziplin",
+      "Durchhalten"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 9,
+    sources: [
+      {
+        title: "Self-Monitoring in Weight Loss: A Systematic Review of the Literature",
+        authors: "Burke LE, Wang J, Sevick MA",
+        journal: "Journal of the American Dietetic Association",
+        year: 2011,
+        doi: "10.1016/j.jada.2010.10.008",
+        pmid: "21185970"
+      },
+      {
+        title: "Implementation Intentions and Goal Achievement: A Meta-analysis of Effects and Processes",
+        authors: "Gollwitzer PM, Sheeran P",
+        journal: "Advances in Experimental Social Psychology",
+        year: 2006,
+        doi: "10.1016/S0065-2601(06)38002-1"
+      },
+      {
+        title: "How are habits formed: Modelling habit formation in the real world",
+        authors: "Lally P, van Jaarsveld CHM, Potts HWW, Wardle J",
+        journal: "European Journal of Social Psychology",
+        year: 2010,
+        doi: "10.1002/ejsp.674"
+      },
+      {
+        title: "Long-term weight loss maintenance",
+        authors: "Wing RR, Phelan S",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2005,
+        doi: "10.1093/ajcn/82.1.222S",
+        pmid: "16002825"
+      }
+    ],
+    kernaussage: "Langfristiger Abnehmerfolg hängt weniger an Willenskraft als an Strategien. Regelmässiges Selbstmonitoring zählt in Reviews zu den stärksten Prädiktoren für Gewichtsverlust, Implementierungsabsichten (\"Wenn-Dann-Pläne\") erhöhen die Zielerreichung mit mittlerem bis grossem Effekt (d ca. 0,65), und neue Gewohnheiten brauchen im Schnitt rund 66 Tage. Wer auf Systeme statt Motivationsschübe setzt, bleibt eher dran.",
+    faqs: [
+      {
+        question: "Ist Abnehmen wirklich eine Frage der Disziplin?",
+        answer: "Nur teilweise. Willenskraft ist eine begrenzte Ressource, die unter Stress und Müdigkeit nachlässt. Studien zeigen, dass Strategien wie regelmässiges Selbstmonitoring und konkrete Wenn-Dann-Pläne zuverlässiger wirken als reine Disziplin, weil sie die richtige Handlung weitgehend automatisieren."
+      },
+      {
+        question: "Wie lange dauert es, eine neue Gewohnheit aufzubauen?",
+        answer: "Laut der Lally-Studie (2010) im Mittel rund 66 Tage, mit grosser individueller Spanne von 18 bis 254 Tagen. Die populären 21 Tage sind ein Mythos. Entscheidend ist die regelmässige Wiederholung in einem konstanten Kontext."
+      },
+      {
+        question: "Was sind Implementierungsabsichten?",
+        answer: "Das sind konkrete Wenn-Dann-Pläne der Form 'Wenn Situation X eintritt, dann mache ich Y'. Eine Meta-Analyse über 94 Studien fand einen mittleren bis grossen Effekt (d ca. 0,65) auf die Zielerreichung, weil die Entscheidung bereits vorab getroffen ist."
+      },
+      {
+        question: "Bringt es etwas, sein Essen zu protokollieren?",
+        answer: "Ja. Ein systematisches Review fand einen konsistenten Zusammenhang zwischen regelmässigem Selbstmonitoring und Gewichtsverlust. Wichtiger als Perfektion ist Regelmässigkeit – einfaches, niedrigschwelliges Tracking, das man durchhält, wirkt besser als exakte Erfassung, die man abbricht."
+      },
+      {
+        question: "Was, wenn ich einen Tag aussetze?",
+        answer: "Kein Problem. In der Gewohnheitsforschung beeinträchtigte ein einzelner ausgelassener Tag den Aufbau der Routine nicht messbar. Wichtig ist, am nächsten Tag einfach weiterzumachen – Konsequenz über Zeit schlägt Perfektion."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
