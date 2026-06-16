@@ -5087,6 +5087,530 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "flohsamenschalen-psyllium-cholesterin-gewicht-meta-analyse",
+    title: "Flohsamenschalen (Psyllium): Was sie wirklich fuer Gewicht und Cholesterin bringen",
+    description: "Psyllium senkt LDL um ca. 13 mg/dl (Meta-Analyse, 28 RCTs) und bei Typ-2-Diabetes den Nuechternblutzucker um rund 37 mg/dl. Was Flohsamen wirklich bringen.",
+    tags: [
+      "flohsamenschalen",
+      "psyllium",
+      "cholesterin",
+      "ballaststoffe",
+      "blutzucker",
+      "abnehmen",
+      "ldl-cholesterin",
+      "saettigung"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Effect of psyllium (Plantago ovata) fiber on LDL cholesterol and alternative lipid targets, non-HDL cholesterol and apolipoprotein B: a systematic review and meta-analysis of randomized controlled trials",
+        authors: "Jovanovski E, Yashpal S, Komishon A, Zurbau A, Blanco Mejia S, Ho HVT, Li D, Sievenpiper JL, Duvnjak L, Vuksan V",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2018,
+        doi: "10.1093/ajcn/nqy115",
+        pmid: "30239559"
+      },
+      {
+        title: "Psyllium fiber improves glycemic control proportional to loss of glycemic control: a meta-analysis of data in euglycemic subjects, patients at risk of type 2 diabetes mellitus, and patients being treated for type 2 diabetes mellitus",
+        authors: "Gibb RD, McRorie JW Jr, Russell DA, Hasselblad V, D'Alessio DA",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2015,
+        doi: "10.3945/ajcn.115.106989",
+        pmid: "26561625"
+      }
+    ],
+    kernaussage: "Loesliche Psyllium-Ballaststoffe (Flohsamenschalen) haben in grossen Meta-Analysen einen belegten Effekt: Rund 10 g taeglich senken das LDL-Cholesterin um etwa 13 mg/dl, und bei Typ-2-Diabetes sinkt der Nuechternblutzucker um rund 37 mg/dl. Auf das Gewicht wirkt Psyllium moderat und indirekt ueber mehr Saettigung. Wichtig: immer mit viel Wasser einnehmen.",
+    faqs: [
+      {
+        question: "Senken Flohsamenschalen wirklich das Cholesterin?",
+        answer: "Ja. Eine Meta-Analyse von 28 randomisierten Studien zeigte, dass rund 10 g Psyllium taeglich das LDL-Cholesterin im Mittel um etwa 0,33 mmol/l (ca. 13 mg/dl) senken. Auch Non-HDL-Cholesterin und Apolipoprotein B gingen zurueck. Der Effekt ist real, aber moderat und ersetzt bei stark erhoehten Werten keine medikamentoese Therapie."
+      },
+      {
+        question: "Helfen Flohsamenschalen beim Abnehmen?",
+        answer: "Nur indirekt. Das Gel quillt im Magen auf, verzoegert die Entleerung und sorgt fuer laengere Saettigung, was die Kalorienaufnahme reduzieren kann. Direkte Abnehm-Effekte allein durch Psyllium sind klein und uneinheitlich. Es erleichtert ein Kaloriendefizit, ist aber kein Fatburner."
+      },
+      {
+        question: "Wie viel Flohsamenschalen pro Tag sind sinnvoll?",
+        answer: "Gut belegt sind etwa 6-15 g pro Tag. Beginnen Sie mit rund 5 g und steigern Sie langsam, um Blaehungen zu vermeiden. Jede Portion sollte mit mindestens 200-250 ml Wasser eingenommen werden, idealerweise vor den Mahlzeiten."
+      },
+      {
+        question: "Wirken Flohsamen auf den Blutzucker?",
+        answer: "Bei gestoerter Stoffwechsellage ja. Bei Typ-2-Diabetes senkte Psyllium den Nuechternblutzucker im Schnitt um rund 37 mg/dl und den HbA1c um etwa 0,97 Prozentpunkte. Bei normalem Blutzucker zeigt sich praktisch kein Effekt - die Wirkung haengt vom Ausgangswert ab."
+      },
+      {
+        question: "Warum muss man Flohsamenschalen mit viel Wasser einnehmen?",
+        answer: "Psyllium quillt im Darm stark auf und bildet ein Gel. Ohne ausreichend Fluessigkeit kann es den Verdauungstrakt verstopfen. Deshalb gilt: pro Portion mindestens 200-250 ml Wasser trinken."
+      }
+    ]
+  },
+  {
+    slug: "glucomannan-konjak-saettigung-abnehmen-evidenz",
+    title: "Glucomannan (Konjak): Hilft die EFSA-zugelassene Abnehm-Faser wirklich?",
+    description: "EFSA erlaubt fuer Glucomannan einen Abnehm-Claim. Doch Meta-Analysen zeigen oft keinen oder nur einen Effekt unter 1 kg. Was die Studien wirklich sagen.",
+    tags: [
+      "glucomannan abnehmen",
+      "konjak abnehmen",
+      "glucomannan wirkung",
+      "glucomannan erfahrungen",
+      "quellstoff abnehmen",
+      "ballaststoffe",
+      "saettigung",
+      "efsa health claim"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Scientific Opinion on the substantiation of health claims related to konjac mannan (glucomannan) and reduction of body weight",
+        authors: "EFSA Panel on Dietetic Products, Nutrition and Allergies (NDA)",
+        journal: "EFSA Journal",
+        year: 2010,
+        doi: "10.2903/j.efsa.2010.1798"
+      },
+      {
+        title: "The Efficacy of Glucomannan Supplementation in Overweight and Obesity: A Systematic Review and Meta-Analysis of Randomized Clinical Trials",
+        authors: "Onakpoya I, Posadzki P, Ernst E",
+        journal: "Journal of the American College of Nutrition",
+        year: 2014,
+        doi: "10.1080/07315724.2014.870013"
+      },
+      {
+        title: "Safety and Efficacy of Glucomannan for Weight Loss in Overweight and Moderately Obese Adults",
+        authors: "Keithley JK, Swanson B, Mikolaitis SL, et al.",
+        journal: "Journal of Obesity",
+        year: 2013,
+        doi: "10.1155/2013/610908"
+      }
+    ],
+    kernaussage: "Glucomannan ist der einzige Quellstoff mit einem von der EFSA zugelassenen Abnehm-Claim (mindestens 3 g taeglich vor den Mahlzeiten, im Rahmen einer kalorienreduzierten Ernaehrung). Doch die wichtigste Meta-Analyse (Onakpoya 2014) fand keinen statistisch signifikanten Gewichtsverlust, und einzelne RCTs zeigen keinen Effekt gegenueber Placebo. Glucomannan ist hoechstens eine kleine Hilfe und ersetzt niemals ein echtes Kaloriendefizit.",
+    faqs: [
+      {
+        question: "Hilft Glucomannan wirklich beim Abnehmen?",
+        answer: "Hoechstens als kleine Unterstuetzung. Die EFSA hat zwar einen Abnehm-Claim zugelassen, aber die wichtigste Meta-Analyse (Onakpoya 2014, 9 RCTs) fand keinen statistisch signifikanten Gewichtsverlust gegenueber Placebo. Wo Effekte auftraten, lagen sie meist unter 1 kg und nur im Rahmen einer kalorienreduzierten Ernaehrung. Den eigentlichen Effekt erzielt das Kaloriendefizit, nicht die Faser."
+      },
+      {
+        question: "Wie viel Glucomannan muss man fuer den EFSA-Effekt einnehmen?",
+        answer: "Laut EFSA mindestens 3 g pro Tag, aufgeteilt in drei Portionen à mindestens 1 g, jeweils mit 1-2 Glaesern Wasser vor den Mahlzeiten und im Rahmen einer energiereduzierten Ernaehrung. Niedrigere Dosen zeigten in Studien keinen Effekt."
+      },
+      {
+        question: "Ist Glucomannan sicher?",
+        answer: "In den Studien wurde Glucomannan in der Regel gut vertragen. Wichtig ist, es mit ausreichend Fluessigkeit einzunehmen, da es stark aufquillt. Ohne genug Wasser kann es im Schlund oder Magen-Darm-Trakt aufquellen und im Extremfall zu einem Verschluss fuehren. Bei Schluckstoerungen ist Vorsicht geboten."
+      },
+      {
+        question: "Warum erlaubt die EFSA einen Abnehm-Claim, wenn Studien kaum Wirkung zeigen?",
+        answer: "Die EFSA bewertete vor allem Preload-Studien mit Diaet, in denen ein kleiner signifikanter Effekt gezeigt wurde. Breitere Meta-Analysen mitteln ueber ein qualitativ gemischtes Studienset und finden keinen robusten Effekt. Beide Aussagen koennen zugleich stimmen: Der Effekt ist klein und an strenge Bedingungen geknuepft."
+      },
+      {
+        question: "Gibt es Alternativen zu Glucomannan-Praeparaten?",
+        answer: "Ja. Saettigende Ballaststoffe stecken auch in Gemuese, Huelsenfruechten, Haferflocken und Obst - kostenlos und mit zusaetzlichen Naehrstoffen. Kombiniert mit ausreichend Protein und einem moderaten Kaloriendefizit erreicht man dasselbe Saettigungsziel meist ohne Quellstoff-Praeparate."
+      }
+    ]
+  },
+  {
+    slug: "weight-watchers-punkte-system-abnehmen-evidenz-studien",
+    title: "Weight Watchers & Punkte-Systeme: Wie gut belegt sind die Programme?",
+    description: "Weight Watchers im Faktencheck: Lancet-RCT zeigt ~2,8 kg mehr Abnahme nach 12 Monaten als Hausarzt-Standardbetreuung. Was Punkte-Systeme wirklich leisten.",
+    tags: [
+      "Weight Watchers",
+      "Punkte-Diät",
+      "Kommerzielle Programme",
+      "Abnehmen",
+      "RCT",
+      "Meta-Analyse",
+      "Selbsthilfe",
+      "Gewichtsmanagement"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "bmi-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 9,
+    sources: [
+      {
+        title: "Primary care referral to a commercial provider for weight loss treatment versus standard care: a randomised controlled trial",
+        authors: "Jebb SA, Ahern AL, Olson AD, Aston LM, Holzapfel C, Stoll J, Amann-Gassner U, Simpson AE, Fuller NR, Pearson S, Lau NS, Mander AP, Hauner H, Caterson ID",
+        journal: "The Lancet",
+        year: 2011,
+        doi: "10.1016/S0140-6736(11)61344-5",
+        pmid: "21906798"
+      },
+      {
+        title: "Efficacy of Commercial Weight-Loss Programs: An Updated Systematic Review",
+        authors: "Gudzune KA, Doshi RS, Mehta AK, Chaudhry ZW, Jacobs DK, Vakil RM, Lee CJ, Bleich SN, Clark JM",
+        journal: "Annals of Internal Medicine",
+        year: 2015,
+        doi: "10.7326/M14-2238",
+        pmid: "25844997"
+      },
+      {
+        title: "Comparison of Weight Loss Among Named Diet Programs in Overweight and Obese Adults: A Meta-analysis",
+        authors: "Johnston BC, Kanters S, Bandayrel K, Wu P, Naji F, Siemieniuk RA, Ball GDC, Busse JW, Thorlund K, Guyatt G, Jansen JP, Mills EJ",
+        journal: "JAMA",
+        year: 2014,
+        doi: "10.1001/jama.2014.10397",
+        pmid: "25182101"
+      },
+      {
+        title: "Extended and standard duration weight-loss programme referrals for adults in primary care (WRAP): a randomised controlled trial",
+        authors: "Ahern AL, Wheeler GM, Aveyard P, Boyland EJ, Halford JCG, Mander AP, Woolston J, Thomson AM, Tsiountsioura M, Cole D, Mead BR, Irvine L, Turner D, Suhrcke M, Pimpin L, Retat L, Jaccard A, Webber L, Cohn SR, Jebb SA",
+        journal: "The Lancet",
+        year: 2017,
+        doi: "10.1016/S0140-6736(17)30647-5",
+        pmid: "28247556"
+      }
+    ],
+    kernaussage: "Weight Watchers (WW) gehört zu den am besten untersuchten kommerziellen Abnehmprogrammen. In einem Lancet-RCT verloren Teilnehmende nach 12 Monaten rund 5 kg – etwa 2,8 kg mehr als bei Hausarzt-Standardbetreuung. Eine systematische Übersicht bestätigt einen kleinen, aber realen Vorsprung gegenüber Selbsthilfe von meist nur wenigen Kilo. Das Punkte-System wirkt vor allem, weil es strukturierte Selbstkontrolle und Gruppen-Unterstützung erzwingt.",
+    faqs: [
+      {
+        question: "Funktioniert Weight Watchers wirklich oder ist es nur Marketing?",
+        answer: "Es funktioniert – belegt durch randomisierte Studien. Im Lancet-RCT verloren WW-Teilnehmende nach 12 Monaten rund 5 kg, etwa 2,8 kg mehr als bei Hausarzt-Standardbetreuung. WW gehört damit zu den wenigen kommerziellen Programmen mit echter Langzeit-Evidenz. Der Vorsprung gegenüber konsequenter Selbsthilfe ist allerdings meist nur ein paar Kilogramm."
+      },
+      {
+        question: "Wie viel Gewicht verliert man mit dem Punkte-System realistisch?",
+        answer: "Realistisch sind im ersten Jahr meist einige Kilogramm. In Studien lag die durchschnittliche Abnahme nach 12 Monaten bei rund 5 kg, gegenüber Kontrollgruppen etwa 2,6 % bis knapp 3 kg mehr. Wer dranbleibt und das Programm über 6–12 Monate nutzt, erreicht stabilere Ergebnisse als bei kurzen 12-Wochen-Versuchen."
+      },
+      {
+        question: "Ist das Punkte-System besser als normales Kalorienzählen?",
+        answer: "Studien zeigen keinen klaren Vorteil des Diät-Typs. Eine JAMA-Meta-Analyse fand, dass mittelfristig vor allem das Dranbleiben zählt, nicht das konkrete System. Punkte sind im Grunde vereinfachtes Kalorien-Tracking plus Gruppen-Unterstützung. Wer Struktur und Routine auch über eine App und ein berechnetes Kaloriendefizit hinbekommt, erreicht oft Vergleichbares."
+      },
+      {
+        question: "Warum wirkt das Punkte-System überhaupt?",
+        answer: "Der eigentliche Hebel ist nicht die Punkte-Mathematik, sondern die erzwungene Struktur: regelmässiges Erfassen aller Mahlzeiten (Selbstkontrolle), klare Regeln und soziale Unterstützung über Gruppen oder App. Genau diese Elemente sind in der Forschung als wirksame Bausteine beim Abnehmen bekannt."
+      }
+    ]
+  },
+  {
+    slug: "zimt-blutzucker-abnehmen-meta-analyse-studie",
+    title: "Zimt gegen Blutzucker und Bauch: Was Meta-Analysen wirklich zeigen",
+    description: "Zimt senkt laut Meta-Analyse den Nuechternblutzucker um rund 24 mg/dl - real, aber bescheiden. Warum Cumarin Grenzen setzt und Zimt keine Diaet ersetzt.",
+    tags: [
+      "Zimt",
+      "Blutzucker",
+      "Cumarin",
+      "Insulin",
+      "Abnehmen",
+      "Meta-Analyse",
+      "Ernaehrung",
+      "Gewuerze"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 8,
+    sources: [
+      {
+        title: "Cinnamon Use in Type 2 Diabetes: An Updated Systematic Review and Meta-Analysis",
+        authors: "Allen RW, Schwartzman E, Baker WL, Coleman CI, Phung OJ",
+        journal: "Annals of Family Medicine",
+        year: 2013,
+        doi: "10.1370/afm.1517",
+        pmid: "24019277"
+      },
+      {
+        title: "Coumarin in cinnamon: A review of the risk assessment by the European Food Safety Authority (Scientific Opinion on Flavouring Group Evaluation 22)",
+        authors: "EFSA Panel on Food Additives and Nutrient Sources added to Food (ANS)",
+        journal: "EFSA Journal",
+        year: 2008,
+        doi: "10.2903/j.efsa.2008.793"
+      }
+    ],
+    kernaussage: "Meta-Analysen randomisierter Studien zeigen, dass Zimt den Nuechternblutzucker im Mittel um etwa 24 mg/dl senken kann und auch Taillenumfang und Insulinwerte guenstig beeinflusst. Der Effekt ist messbar, aber bescheiden und schwankt stark zwischen Studien. Zimt ersetzt keine kalorienbewusste Ernaehrung - und Cassia-Zimt enthaelt Cumarin, das die sinnvolle Tagesmenge begrenzt.",
+    faqs: [
+      {
+        question: "Senkt Zimt wirklich den Blutzucker?",
+        answer: "Ja, aber bescheiden. Eine Meta-Analyse von 10 randomisierten Studien (Allen et al., 2013) fand eine Senkung des Nuechternblutzuckers um im Mittel rund 24,6 mg/dl. Der Effekt schwankte allerdings stark zwischen den Studien, und beim Langzeitwert HbA1c zeigte sich kein klarer Nutzen. Zimt ersetzt keine Diabetestherapie."
+      },
+      {
+        question: "Hilft Zimt beim Abnehmen oder gegen Bauchfett?",
+        answer: "Die Evidenz dafuer ist schwach. Es gibt Hinweise auf eine kleine Reduktion von Gewicht und Taillenumfang, vor allem bei Menschen mit metabolischem Syndrom oder PCOS, aber die Effekte sind gering und die Studienqualitaet gemischt. Bauchfett verschwindet durch ein Kaloriendefizit, nicht durch ein Gewuerz."
+      },
+      {
+        question: "Wie viel Zimt ist pro Tag sicher?",
+        answer: "Begrenzt wird das durch Cumarin im guenstigen Cassia-Zimt. Die EFSA nennt einen TDI von 0,1 mg Cumarin pro kg Koerpergewicht - bei 60 kg also etwa 6 mg taeglich. Da Cassia-Zimt grob 2-9 mg Cumarin pro Gramm enthaelt, koennen schon 1-2 Teeloeffel diesen Richtwert ausschoepfen. Ceylon-Zimt enthaelt deutlich weniger Cumarin."
+      },
+      {
+        question: "Was ist der Unterschied zwischen Cassia- und Ceylon-Zimt?",
+        answer: "Cassia-Zimt ist der guenstige Standard im Supermarkt und enthaelt relativ viel Cumarin. Ceylon-Zimt (echter Zimt) ist teurer, milder im Geschmack und enthaelt deutlich weniger Cumarin. Fuer regelmaessigen oder hoeheren Konsum ist Ceylon-Zimt die sicherere Wahl."
+      },
+      {
+        question: "Wirkt Zimt auf das Insulin?",
+        answer: "Studien deuten darauf hin, dass Zimt die Insulin-Resistenz (HOMA-IR) leicht verbessern und Nuechtern-Insulinwerte senken kann. Bestandteile wie Cinnamaldehyd koennten die Insulin-Empfindlichkeit der Zellen erhoehen. Der Effekt beim Menschen ist vorhanden, aber klein."
+      }
+    ]
+  },
+  {
+    slug: "resistente-staerke-gewicht-saettigung-evidenz",
+    title: "Resistente Staerke: Helfen abgekuehlte Kartoffeln und Reis beim Abnehmen?",
+    description: "Abgekuehlte Kartoffeln bilden resistente Staerke. Eine Meta-Analyse senkt den Nuechternzucker aber nur um 0,09 mmol/l. Was Studien wirklich zeigen.",
+    tags: [
+      "resistente staerke",
+      "abnehmen",
+      "saettigung",
+      "darmgesundheit",
+      "kartoffeln",
+      "reis",
+      "blutzucker",
+      "ballaststoffe"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Effects of resistant starch on glycaemic control: a systematic review and meta-analysis",
+        authors: "Xiong K, Wang J, Kang T, Xu F, Ma A",
+        journal: "British Journal of Nutrition",
+        year: 2021,
+        doi: "10.1017/S0007114520003700",
+        pmid: "32959735"
+      },
+      {
+        title: "The effect of acute consumption of resistant starch on appetite in healthy adults; a systematic review and meta-analysis of the controlled clinical trials",
+        authors: "Amini SA, et al.",
+        journal: "Clinical Nutrition ESPEN",
+        year: 2021,
+        doi: "10.1016/j.clnesp.2020.12.006",
+        pmid: "33487300"
+      },
+      {
+        title: "Metabolic Effects of Resistant Starch Type 2: A Systematic Literature Review and Meta-Analysis of Randomized Controlled Trials",
+        authors: "Snelson M, Kellow NJ, Coughlan MT",
+        journal: "Nutrients",
+        year: 2019,
+        doi: "10.3390/nu11081833",
+        pmid: "31398841"
+      },
+      {
+        title: "Chilled Potatoes Decrease Postprandial Glucose, Insulin, and Glucose-dependent Insulinotropic Peptide Compared to Boiled Potatoes in Females with Elevated Fasting Glucose and Insulin",
+        authors: "Patterson MA, Fong JN, Maiya M, Kung S, Sarkissian A, Nashef N, Wang W",
+        journal: "Nutrients",
+        year: 2019,
+        doi: "10.3390/nu11092066",
+        pmid: "31484331"
+      }
+    ],
+    kernaussage: "Resistente Staerke liefert mit rund 2 kcal/g etwa die Haelfte der Energie verdaulicher Staerke und naehrt die Darmflora. Doch Meta-Analysen zeigen nur kleine Effekte: Der Nuechternblutzucker sinkt im Schnitt um 0,09 mmol/l, das Koerpergewicht bei Typ-2-Diabetes um etwa 1,3 kg, und der Appetit kurzfristig nur minimal. Abgekuehlte Kartoffeln und Reis sind eine sinnvolle Gewohnheit, aber kein Abnehmwunder.",
+    faqs: [
+      {
+        question: "Wie viel weniger Kalorien haben abgekuehlte Kartoffeln?",
+        answer: "Resistente Staerke liefert nur etwa 2 kcal/g statt der rund 4 kcal/g verdaulicher Staerke. Da das Abkuehlen aber nur einen kleinen Teil der Staerke umwandelt (etwa von 3 auf 4 g je 100 g), ist die Kalorieneinsparung pro Portion gering und kein nennenswerter Diaeteffekt."
+      },
+      {
+        question: "Macht resistente Staerke wirklich satt?",
+        answer: "Eine Meta-Analyse akuter Studien fand einen messbaren, aber sehr kleinen Saettigungseffekt von rund 1,4 mm auf einer 100-mm-Appetit-Skala. Im Alltag ist dieser Unterschied kaum spuerbar und basiert auf nur wenigen Studien."
+      },
+      {
+        question: "Geht die resistente Staerke beim Wiederaufwaermen verloren?",
+        answer: "Nein, nicht vollstaendig. Ein Teil der durch Retrogradation gebildeten resistenten Staerke bleibt auch nach dem Erwaermen erhalten. Den hoechsten Anteil enthalten gekuehlte, kalt verzehrte Lebensmittel wie Kartoffelsalat oder Sushi."
+      },
+      {
+        question: "Hilft resistente Staerke beim Abnehmen?",
+        answer: "Direkt kaum. Eine Meta-Analyse von 22 Studien zeigte nur bei Menschen mit Typ-2-Diabetes eine Gewichtsreduktion von etwa 1,3 kg, getrieben von wenigen Einzelstudien. Fuer Gewichtsverlust bleibt das Gesamtkaloriendefizit entscheidend."
+      },
+      {
+        question: "Ist resistente Staerke gut fuer den Darm?",
+        answer: "Ja, das ist der am besten plausible Nutzen. Resistente Staerke wird im Dickdarm von Bakterien zu kurzkettigen Fettsaeuren wie Butyrat fermentiert und wirkt damit aehnlich wie ein praebiotischer Ballaststoff."
+      }
+    ]
+  },
+  {
+    slug: "meal-prep-abnehmen-essensplanung-evidenz-studie",
+    title: "Meal Prep & Abnehmen: Was vorgekochtes Essen wirklich bringt",
+    description: "Meal-Prep-Studie: Wer Mahlzeiten plant, hat seltener Uebergewicht (OR 0,87). Was Vorkochen fuers Abnehmen bringt und wo die Grenzen liegen.",
+    tags: [
+      "meal prep abnehmen",
+      "essen vorkochen abnehmen",
+      "meal prep studie",
+      "essensplanung gewicht",
+      "meal prep gesund",
+      "selber kochen",
+      "kalorien sparen"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Meal planning is associated with food variety, diet quality and body weight status in a large sample of French adults",
+        authors: "Ducrot P, Mejean C, Aroumougame V, et al.",
+        journal: "International Journal of Behavioral Nutrition and Physical Activity",
+        year: 2017,
+        doi: "10.1186/s12966-017-0461-7"
+      },
+      {
+        title: "The association between cooking skills and dietary intake: cooking frequency and diet quality",
+        authors: "Wolfson JA, Bleich SN",
+        journal: "Public Health Nutrition",
+        year: 2015,
+        doi: "10.1017/S1368980014001943"
+      }
+    ],
+    kernaussage: "Beobachtungsstudien zeigen: Wer Mahlzeiten plant und selbst kocht, ernaehrt sich vielfaeltiger und ist seltener uebergewichtig (Adipositas-Odds rund 13 Prozent niedriger). Meal Prep wirkt vor allem indirekt: Es reduziert spontane Kalorienfallen, Lieferdienste und das chronische Unterschaetzen von Restaurant-Portionen. Die Methode selbst macht nicht schlank, aber sie erleichtert ein Kaloriendefizit im Alltag erheblich.",
+    faqs: [
+      {
+        question: "Hilft Meal Prep wirklich beim Abnehmen?",
+        answer: "Indirekt ja. Beobachtungsstudien verknuepfen Mahlzeitenplanung mit besserer Ernaehrungsqualitaet und niedrigerem Uebergewichtsrisiko. Der Effekt entsteht aber nicht durch das Vorkochen selbst, sondern weil vorbereitete Mahlzeiten spontane, energiereiche Alternativen wie Lieferdienste und Snacks ersetzen. Entscheidend bleibt das Kaloriendefizit."
+      },
+      {
+        question: "Warum ist Selberkochen besser als Auswaerts-Essen?",
+        answer: "Beim Selberkochen kontrollieren Sie Zutaten, Fett und vor allem die Portionsgroesse. Restaurant- und Fast-Food-Mahlzeiten sind systematisch energiedichter und liefern oft mehr als die Haelfte des Tagesbedarfs - und Menschen unterschaetzen diese Kalorienmengen regelmaessig."
+      },
+      {
+        question: "Kann ich mit Meal Prep auch zunehmen?",
+        answer: "Ja. Vorkochen schuetzt nicht automatisch vor zu vielen Kalorien. Sehr fett- oder portionsreiche vorgekochte Mahlzeiten koennen ein Defizit sprengen. Meal Prep ist ein Werkzeug zur Kalorienkontrolle, ersetzt diese aber nicht - die Portionen muessen stimmen."
+      },
+      {
+        question: "Beweisen die Studien, dass Planung schlank macht?",
+        answer: "Nein. Die Evidenz ist ueberwiegend beobachtend und zeigt Zusammenhaenge, keine Ursache. Gesundheitsbewusste Menschen planen oft generell mehr und bewegen sich mehr. Die Planung ist daher teils ein Marker fuer einen insgesamt gesuenderen Lebensstil."
+      },
+      {
+        question: "Wie viele Mahlzeiten sollte ich vorkochen?",
+        answer: "Es gibt keine feste Zahl. Sinnvoll ist, gezielt die Mahlzeiten vorzubereiten, bei denen Sie sonst spontan und energiereich entscheiden - etwa das hektische Mittagessen oder das Abendessen nach einem langen Arbeitstag. Wichtig ist, dass die Portionen zu Ihrem berechneten Tagesbedarf passen."
+      }
+    ]
+  },
+  {
+    slug: "garcinia-cambogia-abnehmen-faktencheck-studien",
+    title: "Garcinia Cambogia im Faktencheck: Wundermittel oder Leberrisiko?",
+    description: "Garcinia-Cambogia-Studie: Meta-Analyse findet nur -0,88 kg Gewichtseffekt, klinisch bedeutungslos. Dem stehen dokumentierte Leberschaeden gegenueber.",
+    tags: [
+      "garcinia cambogia abnehmen",
+      "hca abnehmen",
+      "garcinia cambogia nebenwirkungen",
+      "garcinia cambogia studie",
+      "garcinia cambogia erfahrungen",
+      "abnehmpillen",
+      "leberschaden",
+      "gewichtsabnahme"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "The Use of Garcinia Extract (Hydroxycitric Acid) as a Weight loss Supplement: A Systematic Review and Meta-Analysis of Randomised Clinical Trials",
+        authors: "Onakpoya I, Hung SK, Perry R, Wider B, Ernst E",
+        journal: "Journal of Obesity",
+        year: 2011,
+        doi: "10.1155/2011/509038",
+        pmid: "21197150"
+      },
+      {
+        title: "Garcinia cambogia (hydroxycitric acid) as a potential antiobesity agent: a randomized controlled trial",
+        authors: "Heymsfield SB, Allison DB, Vasselli JR, Pietrobelli A, Greenfield D, Nunez C",
+        journal: "JAMA",
+        year: 1998,
+        doi: "10.1001/jama.280.18.1596",
+        pmid: "9820262"
+      }
+    ],
+    kernaussage: "Garcinia Cambogia mit dem Wirkstoff HCA gilt als Abnehm-Wundermittel, doch die Evidenz ist ernuechternd: Die Meta-Analyse von Onakpoya (2011) zeigt einen Gewichtsunterschied von nur etwa 0,88 kg gegenueber Placebo, klinisch bedeutungslos. Der grosse RCT von Heymsfield (1998) fand gar keinen Effekt. Gleichzeitig sind Faelle von akutem Leberversagen dokumentiert. Der Nutzen ist winzig, das Risiko real.",
+    faqs: [
+      {
+        question: "Hilft Garcinia Cambogia wirklich beim Abnehmen?",
+        answer: "Nach der besten verfuegbaren Evidenz praktisch nicht. Die Meta-Analyse von Onakpoya (2011) zeigte nur rund 0,88 kg Unterschied zu Placebo, und der gut kontrollierte RCT von Heymsfield (1998) fand gar keinen signifikanten Effekt. Ein klinisch relevanter Gewichtsverlust ist nicht belegt."
+      },
+      {
+        question: "Was ist HCA und wie soll es wirken?",
+        answer: "HCA (Hydroxyzitronensaeure) ist der Hauptwirkstoff der Garcinia-Cambogia-Frucht. Im Labor hemmt es ein Enzym der Fettsaeuresynthese. Diese biochemische Beobachtung wurde zur Marketing-Story vom Fettblocker, liess sich im menschlichen Koerper aber nicht in relevanten Gewichtsverlust uebersetzen."
+      },
+      {
+        question: "Welche Nebenwirkungen kann Garcinia Cambogia haben?",
+        answer: "Am bedeutsamsten sind dokumentierte Faelle von akuter Leberschaedigung bis hin zum Leberversagen, die in der medizinischen Literatur und der NIH-LiverTox-Datenbank beschrieben sind. Da viele Produkte Mischpraeparate sind und nicht streng reguliert werden, ist Vorsicht geboten."
+      },
+      {
+        question: "Was wirkt stattdessen zuverlaessig beim Abnehmen?",
+        answer: "Ein moderates, nachhaltiges Kaloriendefizit kombiniert mit ausreichend Protein und Bewegung ist die einzige zuverlaessig belegte Strategie. Berechnen Sie zunaechst Ihren Kalorienbedarf und leiten Sie daraus ein realistisches Defizit ab, statt auf Praeparate zu setzen."
+      }
+    ]
+  },
+  {
+    slug: "basenfasten-saeure-basen-mythos-faktencheck",
+    title: "Basenfasten und Saeure-Basen-Mythos: Was die Wissenschaft sagt",
+    description: "Basenfasten zum Abnehmen? Der Uebersaeuerungs-Mythos ist widerlegt - der Koerper haelt den Blut-pH bei 7,35-7,45. Warum es trotzdem oft beim Abnehmen hilft.",
+    tags: [
+      "basenfasten",
+      "saeure-basen-haushalt",
+      "uebersaeuerung",
+      "basische ernaehrung",
+      "abnehmen",
+      "ernaehrungsmythos",
+      "faktencheck",
+      "energiedichte"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Causal assessment of dietary acid load and bone disease: a systematic review & meta-analysis applying Hill's epidemiologic criteria for causality",
+        authors: "Fenton TR, Tough SC, Lyon AW, Eliasziw M, Hanley DA",
+        journal: "Nutrition Journal",
+        year: 2011,
+        doi: "10.1186/1475-2891-10-41"
+      },
+      {
+        title: "Ultra-Processed Diets Cause Excess Calorie Intake and Weight Gain: An Inpatient Randomized Controlled Trial of Ad Libitum Food Intake",
+        authors: "Hall KD, Ayuketah A, Brychta R, et al.",
+        journal: "Cell Metabolism",
+        year: 2019,
+        doi: "10.1016/j.cmet.2019.05.008"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245"
+      }
+    ],
+    kernaussage: "Die Vorstellung, Lebensmittel \"uebersaeuerten\" den Koerper und basische Kost lasse Fett schmelzen, ist physiologisch widerlegt: Der Blut-pH wird streng bei 7,35-7,45 reguliert. Basenfasten wirkt nicht ueber den pH-Wert, sondern indirekt - viel Gemuese und Obst senken die Energiedichte der Mahlzeiten, was die spontane Kalorienaufnahme reduziert und so Gewichtsverlust beguenstigt.",
+    faqs: [
+      {
+        question: "Kann man den Koerper durch Ernaehrung uebersaeuern?",
+        answer: "Nein. Der Blut-pH-Wert wird durch Puffersysteme, Atmung und Nieren konstant zwischen 7,35 und 7,45 gehalten. Lebensmittel koennen den Urin-pH veraendern, aber nicht den Blut-pH. Eine echte Uebersaeuerung (Azidose) ist ein akuter medizinischer Notfall, etwa bei Nierenversagen oder entgleistem Diabetes - keine Folge von Brot, Fleisch oder Kaffee."
+      },
+      {
+        question: "Hilft Basenfasten wirklich beim Abnehmen?",
+        answer: "Oft ja - aber nicht wegen des pH-Werts. Beim Basenfasten isst man viel Gemuese, Obst und Salat und meidet kalorienreiche, verarbeitete Produkte. Diese Lebensmittel haben eine niedrige Energiedichte, saettigen also gut bei wenig Kalorien. Der Gewichtsverlust entsteht durch das daraus resultierende Kaloriendefizit, nicht durch eine Entsaeuerung."
+      },
+      {
+        question: "Ist basische Ernaehrung gesuender als normale Ernaehrung?",
+        answer: "Eine gemuese- und obstbetonte Ernaehrung ist gesundheitlich vorteilhaft - das steht ausser Frage. Der Vorteil kommt aber von den Lebensmitteln selbst (Ballaststoffe, Vitamine, niedrige Energiedichte), nicht von der Saeure-Basen-Theorie. Reines, langfristiges Basenfasten kann sogar zu wenig Protein und Vitamin B12 liefern."
+      },
+      {
+        question: "Was ist wichtiger fuers Abnehmen: der pH-Wert oder die Kalorien?",
+        answer: "Eindeutig die Kalorien. Die DIETFITS-Studie zeigte, dass verschiedene Diaetformen bei gleichem Kaloriendefizit aehnlich gut funktionieren. Entscheidend ist ein ueber die Zeit eingehaltenes Kaloriendefizit bei guter Lebensmittelqualitaet - der pH-Wert der Lebensmittel spielt fuer das Koerpergewicht keine Rolle."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
