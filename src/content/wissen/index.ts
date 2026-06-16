@@ -6042,6 +6042,634 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "optimales-kaloriendefizit-wie-hoch-evidenz-risiken",
+    title: "Wie hoch sollte das Kaloriendefizit sein? Optimum und Risiken",
+    description: "Studien zeigen: Ab etwa 500 kcal Defizit pro Tag leidet der Muskelaufbau. Ein moderates Defizit von 15-25 Prozent schuetzt die Muskelmasse.",
+    tags: [
+      "kaloriendefizit",
+      "abnehmen",
+      "muskelerhalt",
+      "koerperzusammensetzung",
+      "stoffwechsel",
+      "krafttraining",
+      "ernaehrung",
+      "gewichtsverlust"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "grundumsatz-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Energy deficiency impairs resistance training gains in lean mass but not strength: A meta-analysis and meta-regression",
+        authors: "Murphy C, Koehler K",
+        journal: "Scandinavian Journal of Medicine & Science in Sports",
+        year: 2022,
+        doi: "10.1111/sms.14075"
+      },
+      {
+        title: "Effect of Two Different Weight-Loss Rates on Body Composition and Strength and Power-Related Performance in Elite Athletes",
+        authors: "Garthe I, Raastad T, Refsnes PE, Koivisto A, Sundgot-Borgen J",
+        journal: "International Journal of Sport Nutrition and Exercise Metabolism",
+        year: 2011,
+        doi: "10.1123/ijsnem.21.2.97"
+      },
+      {
+        title: "Effects of gradual weight loss v. rapid weight loss on body composition and RMR: a systematic review and meta-analysis",
+        authors: "Ashtary-Larky D, Bagheri R, Abbasnezhad A, Tinsley GM, Alipour M, Wong A",
+        journal: "British Journal of Nutrition",
+        year: 2020,
+        doi: "10.1017/S000711452000224X"
+      },
+      {
+        title: "Weight loss composition is one-fourth fat-free mass: a critical review and critique of this widely cited rule",
+        authors: "Heymsfield SB, Gonzalez MC, Shen W, Redman L, Thomas D",
+        journal: "Obesity Reviews",
+        year: 2014,
+        doi: "10.1111/obr.12143"
+      }
+    ],
+    kernaussage: "Ein moderates Kaloriendefizit von etwa 15-25 Prozent des Tagesbedarfs (rund 300-500 kcal pro Tag) gilt als Optimum: Es ermoeglicht stetigen Fettverlust und schont die Muskelmasse. Eine Meta-Analyse fand, dass bereits ab etwa 500 kcal taeglichem Defizit der Muskelaufbau im Krafttraining ausbleibt. Sehr aggressive Defizite beschleunigen zwar die Waage, foerdern aber Muskelabbau, Stoffwechselanpassung und Abbruch.",
+    faqs: [
+      {
+        question: "Wie viel Kaloriendefizit pro Tag ist optimal?",
+        answer: "Als guter Kompromiss aus Abnehmtempo und Muskelschutz gilt ein Defizit von etwa 15-25 Prozent des Tagesbedarfs, in der Praxis oft 300-500 kcal pro Tag. Eine Meta-Analyse fand, dass bereits ab etwa 500 kcal taeglichem Defizit der Muskelaufbau im Krafttraining ausbleibt, weshalb groessere Defizite eher die Ausnahme fuer hohes Ausgangsgewicht oder kurze Zeitraeume sein sollten."
+      },
+      {
+        question: "Ist ein 500-Kalorien-Defizit zu hoch?",
+        answer: "Fuer viele Menschen ist 500 kcal eine vernuenftige Obergrenze, nicht zwingend zu viel. In einer Meta-Analyse von Murphy und Koehler (2022) markierte ein Defizit von rund 500 kcal pro Tag aber den Punkt, ab dem der Muskelaufbau im Krafttraining ausblieb. Wer Muskeln aufbauen oder maximal erhalten will, faehrt daher mit einem etwas kleineren Defizit oft besser."
+      },
+      {
+        question: "Was passiert bei einem zu hohen Kaloriendefizit?",
+        answer: "Sehr grosse Defizite beschleunigen zwar den Gewichtsverlust auf der Waage, foerdern aber den Abbau fettfreier Masse, koennen den Ruheumsatz staerker absenken und erhoehen das Risiko fuer Heisshunger und Diaetabbruch. Studien zeigen, dass langsameres Abnehmen die Muskelmasse besser erhaelt und das Gewicht leichter zu halten ist."
+      },
+      {
+        question: "Wie schnell sollte man abnehmen, ohne Muskeln zu verlieren?",
+        answer: "Ein muskelschonender Richtwert sind etwa 0,5-1 Prozent des Koerpergewichts pro Woche. In der Studie von Garthe et al. (2011) legten Athleten bei langsamem Abnehmen (rund 0,7 Prozent pro Woche) sogar fettfreie Masse zu, waehrend sie bei schnellem Abnehmen stagnierte. Krafttraining und ausreichend Eiweiss verstaerken den Muskelschutz zusaetzlich."
+      },
+      {
+        question: "Verliert man beim Abnehmen immer Muskeln?",
+        answer: "Ein Teil des Gewichtsverlusts ist meist fettfreie Masse - eine Faustregel nennt etwa ein Viertel. Heymsfield et al. (2014) zeigten jedoch, dass dieser Anteil stark schwankt. Mit moderatem Defizit, hoher Eiweisszufuhr und regelmaessigem Krafttraining laesst sich der Muskelverlust deutlich verringern oder sogar vermeiden."
+      }
+    ]
+  },
+  {
+    slug: "sport-vs-ernaehrung-abnehmen-was-zaehlt-mehr-evidenz",
+    title: "Sport oder Ernaehrung beim Abnehmen: Was zaehlt mehr?",
+    description: "Studien zeigen: Beim Abnehmen dominiert die Ernaehrung. Sport allein bringt im Schnitt nur rund 1 kg mehr Verlust - ist aber fuers Halten entscheidend.",
+    tags: [
+      "abnehmen",
+      "sport oder ernaehrung",
+      "kaloriendefizit",
+      "gewichtsabnahme",
+      "bewegung",
+      "evidenzbasiert",
+      "gewichtserhalt",
+      "ernaehrung"
+    ],
+    relatedCalculators: [
+      "kalorienverbrauch-rechner",
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Diet or exercise interventions vs combined behavioral weight management programs: a systematic review and meta-analysis of direct comparisons",
+        authors: "Johns DJ, Hartmann-Boyce J, Jebb SA, Aveyard P",
+        journal: "Journal of the Academy of Nutrition and Dietetics",
+        year: 2014,
+        doi: "10.1016/j.jand.2014.07.005",
+        pmid: "25257365"
+      },
+      {
+        title: "Long-term effectiveness of diet-plus-exercise interventions vs. diet-only interventions for weight loss: a meta-analysis",
+        authors: "Wu T, Gao X, Chen M, van Dam RM",
+        journal: "Obesity Reviews",
+        year: 2009,
+        doi: "10.1111/j.1467-789X.2008.00547.x"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245",
+        pmid: "29466592"
+      },
+      {
+        title: "Constrained Total Energy Expenditure and Metabolic Adaptation to Physical Activity in Adult Humans",
+        authors: "Pontzer H, Durazo-Arvizu R, Dugas LR, et al.",
+        journal: "Current Biology",
+        year: 2016,
+        doi: "10.1016/j.cub.2015.12.046",
+        pmid: "26832439"
+      },
+      {
+        title: "American College of Sports Medicine Position Stand. Appropriate Physical Activity Intervention Strategies for Weight Loss and Prevention of Weight Regain for Adults",
+        authors: "Donnelly JE, Blair SN, Jakicic JM, Manore MM, Rankin JW, Smith BK",
+        journal: "Medicine & Science in Sports & Exercise",
+        year: 2009,
+        doi: "10.1249/MSS.0b013e3181949333",
+        pmid: "19127177"
+      },
+      {
+        title: "Cardiovascular Effects of Intensive Lifestyle Intervention in Type 2 Diabetes",
+        authors: "The Look AHEAD Research Group",
+        journal: "New England Journal of Medicine",
+        year: 2013,
+        doi: "10.1056/NEJMoa1212914",
+        pmid: "23796131"
+      }
+    ],
+    kernaussage: "Die Forschung ist eindeutig: Beim reinen Gewichtsverlust dominiert die Ernaehrung. Sport allein verbrennt selten genug Kalorien und wird oft durch mehr Hunger oder weniger Alltagsbewegung kompensiert. Eine Meta-Analyse fand, dass Diaet plus Sport nur etwa 1,1 kg mehr Verlust bringt als Diaet allein. Entscheidend wird Bewegung aber beim Erhalt des Gewichts und beim Schutz der Muskelmasse - hier ist sie kaum zu ersetzen.",
+    faqs: [
+      {
+        question: "Stimmt die Regel 70 Prozent Ernaehrung, 30 Prozent Sport?",
+        answer: "Die exakten Zahlen sind erfunden, aber die Richtung stimmt. Studien zeigen, dass die Ernaehrung den Gewichtsverlust dominiert und Sport allein nur wenig zusaetzlich bewirkt. Eine Meta-Analyse fand rund 1,1 kg mehr Verlust durch zusaetzlichen Sport gegenueber Diaet allein. Man sollte die Prozentzahlen also nicht woertlich nehmen, der Grundgedanke ist aber durch die Forschung gedeckt."
+      },
+      {
+        question: "Kann ich allein durch Sport abnehmen, ohne die Ernaehrung umzustellen?",
+        answer: "Theoretisch ja, praktisch selten erfolgreich. Sport verbrennt vergleichsweise wenig Kalorien, und der Koerper kompensiert oft durch mehr Hunger oder weniger Alltagsbewegung. Ohne ein Kaloriendefizit ueber die Ernaehrung bleibt der Gewichtsverlust meist gering. Sport ist als alleinige Massnahme zum Abnehmen die schwaechere Strategie."
+      },
+      {
+        question: "Wozu dann ueberhaupt Sport, wenn die Ernaehrung wichtiger ist?",
+        answer: "Bewegung ist beim Halten des Gewichts entscheidend und schuetzt im Defizit die Muskelmasse. Das ACSM empfiehlt fuer das Verhindern erneuter Zunahme rund 200 bis 300 Minuten pro Woche. Zudem verbessert Sport Fitness, Blutzucker und Stimmung unabhaengig vom Gewicht. Sport ist also weniger der Abnehm-Hebel, sondern der Halte- und Gesundheits-Hebel."
+      },
+      {
+        question: "Welche Ernaehrungsform ist zum Abnehmen am besten?",
+        answer: "Die, die Sie durchhalten. Die DIETFITS-Studie verglich gesunde Low-Fat- gegen Low-Carb-Ernaehrung ueber 12 Monate und fand keinen bedeutsamen Unterschied im Gewichtsverlust. Entscheidend sind ein anhaltendes Kaloriendefizit und die Qualitaet der Lebensmittel, nicht das Makronaehrstoff-Etikett."
+      },
+      {
+        question: "Wie verhindere ich Muskelverlust beim Abnehmen?",
+        answer: "Durch Krafttraining und ausreichend Eiweiss. Wer nur ueber die Ernaehrung abnimmt, verliert auch Muskelmasse, was den Grundumsatz senkt. Regelmaessiges Krafttraining kombiniert mit einer ausreichenden Proteinzufuhr wirkt dem entgegen und erhaelt einen groesseren Anteil der Muskulatur waehrend des Gewichtsverlusts."
+      }
+    ]
+  },
+  {
+    slug: "bmi-aussagekraft-grenzen-kritik-muskelmasse",
+    title: "BMI: Wie aussagekraeftig ist er wirklich? Grenzen und Kritik",
+    description: "Der BMI sagt auf Bevoelkerungsebene viel, beim Einzelnen wenig: Studien zeigen, dass er bis zu 40% der Menschen mit hohem Koerperfett uebersieht.",
+    tags: [
+      "bmi aussagekraft",
+      "bmi kritik",
+      "bmi muskelmasse",
+      "bmi grenzen",
+      "taillenumfang",
+      "koerperfettanteil",
+      "bauchfett",
+      "gesundheit"
+    ],
+    relatedCalculators: [
+      "bmi-rechner",
+      "koerperfett-rechner",
+      "taille-hueft-verhaeltnis-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Body-mass index and cause-specific mortality in 900 000 adults: collaborative analyses of 57 prospective studies",
+        authors: "Prospective Studies Collaboration (Whitlock G, et al.)",
+        journal: "The Lancet",
+        year: 2009,
+        doi: "10.1016/S0140-6736(09)60318-4"
+      },
+      {
+        title: "Separate and combined associations of body-mass index and abdominal adiposity with cardiovascular disease: collaborative analysis of 58 prospective studies",
+        authors: "The Emerging Risk Factors Collaboration",
+        journal: "The Lancet",
+        year: 2011,
+        doi: "10.1016/S0140-6736(11)60105-0"
+      },
+      {
+        title: "Accuracy of body mass index in diagnosing obesity in the adult general population",
+        authors: "Romero-Corral A, Somers VK, Sierra-Johnson J, et al.",
+        journal: "International Journal of Obesity",
+        year: 2008,
+        doi: "10.1038/ijo.2008.11"
+      },
+      {
+        title: "A Pooled Analysis of Waist Circumference and Mortality in 650,000 Adults",
+        authors: "Cerhan JR, Moore SC, Jacobs EJ, et al.",
+        journal: "Mayo Clinic Proceedings",
+        year: 2014,
+        doi: "10.1016/j.mayocp.2013.11.011"
+      },
+      {
+        title: "General and Abdominal Adiposity and Risk of Death in Europe",
+        authors: "Pischon T, Boeing H, Hoffmann K, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2008,
+        doi: "10.1056/NEJMoa0801891"
+      }
+    ],
+    kernaussage: "Der BMI ist ein guter Indikator fuer ganze Bevoelkerungsgruppen, aber ein grobes Werkzeug fuer Einzelpersonen: Er unterscheidet nicht zwischen Muskel und Fett und ignoriert, wo das Fett sitzt. Studien zeigen, dass ein normaler BMI bei rund einem Drittel der Menschen einen erhoehten Koerperfettanteil verdeckt. Taillenumfang und Koerperfettanteil sagen das Erkrankungsrisiko oft praeziser voraus und sollten den BMI ergaenzen.",
+    faqs: [
+      {
+        question: "Ist der BMI ueberhaupt noch sinnvoll?",
+        answer: "Ja, als grober erster Anhaltspunkt und fuer Bevoelkerungsstatistik ist der BMI nuetzlich und kostenlos. Grosse Studien zeigen einen klaren Zusammenhang zwischen BMI und Sterberisiko auf Gruppenebene. Beim einzelnen Menschen sollten Sie ihn aber nicht isoliert lesen, sondern um Taillenumfang und Koerperfettanteil ergaenzen."
+      },
+      {
+        question: "Warum stimmt der BMI bei muskuloesen Menschen nicht?",
+        answer: "Der BMI misst nur das Gewicht im Verhaeltnis zur Groesse, nicht die Zusammensetzung. Muskelgewebe ist schwerer als Fett. Dadurch werden trainierte Menschen mit viel Muskelmasse oft als uebergewichtig eingestuft, obwohl ihr Koerperfettanteil niedrig und ihre Gesundheit gut ist."
+      },
+      {
+        question: "Was ist aussagekraeftiger als der BMI?",
+        answer: "Der Taillenumfang und das Taille-Huefte-Verhaeltnis erfassen das gefaehrliche Bauchfett, das der BMI ignoriert. Studien zeigen, dass diese Masse das Herz-Kreislauf-Risiko teils genauer vorhersagen - selbst bei normalem BMI. Ergaenzend gibt der gemessene Koerperfettanteil ein realistischeres Bild."
+      },
+      {
+        question: "Welcher BMI ist am gesuendesten?",
+        answer: "In einer Analyse von 900.000 Erwachsenen lag das niedrigste Sterberisiko im Bereich von etwa 22,5 bis 25. Der Zusammenhang ist eine J-Kurve: Sowohl deutlich hoehere als auch deutlich niedrigere Werte gehen mit erhoehtem Risiko einher. 'Je niedriger, desto besser' stimmt nicht."
+      },
+      {
+        question: "Ab welchem Taillenumfang wird es kritisch?",
+        answer: "Als Orientierung gilt ein erhoehtes Risiko ab etwa 88 cm bei Frauen und 102 cm bei Maennern (WHO). Diese Werte sind grobe Schwellen - aussagekraeftiger ist die Veraenderung ueber die Zeit und die Kombination mit weiteren Werten wie Blutdruck und Blutzucker."
+      }
+    ]
+  },
+  {
+    slug: "gewichtsschwankungen-waage-wasser-tagesform-evidenz",
+    title: "Gewichtsschwankungen auf der Waage: Wasser, Salz, Tagesform",
+    description: "Tagesschwankungen von 1-2 kg sind fast immer Wasser, nicht Fett. Studie: 3-4 g Wasser binden pro 1 g Glykogen. Warum der Wochentrend zaehlt.",
+    tags: [
+      "gewichtsschwankungen",
+      "wasser einlagerung",
+      "glykogen",
+      "abnehmen",
+      "selbst wiegen",
+      "tagesform",
+      "koerpergewicht",
+      "salz"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "wasserbedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Variation in total body water with muscle glycogen changes in man",
+        authors: "Olsson KE, Saltin B",
+        journal: "Acta Physiologica Scandinavica",
+        year: 1970,
+        doi: "10.1111/j.1748-1716.1970.tb04764.x",
+        pmid: "5475323"
+      },
+      {
+        title: "Weight Rhythms: Weight Increases during Weekends and Decreases during Weekdays",
+        authors: "Orsama AL, Mattila E, Ermes M, van Gils M, Wansink B, Korhonen I",
+        journal: "Obesity Facts",
+        year: 2014,
+        doi: "10.1159/000356147"
+      },
+      {
+        title: "High dietary sodium chloride consumption may not induce body fluid retention in humans",
+        authors: "Heer M, Baisch F, Kropp J, Gerzer R, Drummer C",
+        journal: "American Journal of Physiology-Renal Physiology",
+        year: 2000,
+        doi: "10.1152/ajprenal.2000.278.4.F585",
+        pmid: "10751219"
+      },
+      {
+        title: "Is self-weighing an effective tool for weight loss: a systematic literature review and meta-analysis",
+        authors: "Madigan CD, Daley AJ, Lewis AL, Aveyard P, Jolly K",
+        journal: "International Journal of Behavioral Nutrition and Physical Activity",
+        year: 2015,
+        doi: "10.1186/s12966-015-0267-4"
+      }
+    ],
+    kernaussage: "Tagesschwankungen des Koerpergewichts von ein bis zwei Kilogramm bestehen fast immer aus Wasser, Darminhalt und Glykogen, nicht aus Koerperfett. Pro Gramm Glykogen bindet der Koerper rund drei bis vier Gramm Wasser, und eine salzreiche Mahlzeit verschiebt kurzfristig den Wasserhaushalt. Aussagekraeftig ist deshalb nicht die Einzelmessung, sondern der gleitende Trend ueber zwei bis vier Wochen.",
+    faqs: [
+      {
+        question: "Warum habe ich ueber Nacht ein Kilo zugenommen?",
+        answer: "Ein Kilo entspraeche rund 7.700 kcal Ueberschuss, das ist ueber Nacht physiologisch unmoeglich. Die Zunahme ist Wasser, Darminhalt und gefuelltes Glykogen. Besonders eine kohlenhydrat- oder salzreiche Mahlzeit am Vorabend bindet Wasser. Bis zum naechsten Morgen gleicht sich das meist von selbst wieder aus."
+      },
+      {
+        question: "Wie viel Gewichtsschwankung pro Tag ist normal?",
+        answer: "Ein bis zwei Kilogramm im Tagesverlauf sind voellig normal. Das Gewicht ist morgens nuechtern am niedrigsten und steigt durch Essen, Trinken und noch nicht ausgeschiedenen Darminhalt im Tagesverlauf. Diese Schwankungen sind Wasser und Masse im Verdauungstrakt, nicht Fett."
+      },
+      {
+        question: "Bindet Glykogen wirklich Wasser?",
+        answer: "Ja. Nach der klassischen Studie von Olsson und Saltin (1970) bindet jedes Gramm gespeichertes Glykogen etwa drei bis vier Gramm Wasser. Deshalb steigt das Gewicht nach kohlenhydratreichen Tagen schnell und sinkt zu Beginn einer Low-Carb-Diaet rasch - in beiden Faellen vor allem durch Wasser."
+      },
+      {
+        question: "Wie oft sollte ich mich wiegen?",
+        answer: "Regelmaessig und unter gleichen Bedingungen, morgens nuechtern. Laut Meta-Analyse von Madigan et al. (2015) ist taegliches Wiegen nicht eindeutig wirksamer als woechentliches. Entscheidend ist, den gleitenden Mittelwert ueber sieben Tage oder den Trend ueber Wochen zu betrachten statt den einzelnen Tageswert."
+      },
+      {
+        question: "Macht Salz dick oder nur schwerer?",
+        answer: "Salz liefert keine Kalorien und macht nicht dick. Es kann den Wasserhaushalt kurzfristig verschieben. Bei gesunden Menschen reguliert der Koerper eine Salzlast jedoch effizient; die Studie von Heer et al. (2000) fand keine signifikante Zunahme von extrazellulaerem Wasser oder Koerpermasse. Bei Salzempfindlichkeit oder Herz-/Nierenerkrankungen kann das anders sein."
+      }
+    ]
+  },
+  {
+    slug: "taillenumfang-gesundheit-besser-als-bmi-evidenz",
+    title: "Taillenumfang: Der bessere Gesundheitsindikator als der BMI?",
+    description: "Studien zeigen: Ab 102 cm (Mann) bzw. 88 cm (Frau) steigt das Herz-Risiko deutlich. Warum Bauchumfang und Taille-Groesse-Verhaeltnis oft praeziser sind als der BMI.",
+    tags: [
+      "taillenumfang",
+      "bauchumfang",
+      "bmi",
+      "viszeralfett",
+      "taille-groesse-verhaeltnis",
+      "herz-kreislauf-risiko",
+      "koerperfett",
+      "gesundheit"
+    ],
+    relatedCalculators: [
+      "bmi-rechner",
+      "koerperfett-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Waist-to-height ratio is a better screening tool than waist circumference and BMI for adult cardiometabolic risk factors: systematic review and meta-analysis",
+        authors: "Ashwell M, Gunn P, Gibson S",
+        journal: "Obesity Reviews",
+        year: 2012,
+        doi: "10.1111/j.1467-789X.2011.00952.x"
+      },
+      {
+        title: "Separate and combined associations of body-mass index and abdominal adiposity with cardiovascular disease: collaborative analysis of 58 prospective studies",
+        authors: "Wormser D, Kaptoge S, Di Angelantonio E, et al. (Emerging Risk Factors Collaboration)",
+        journal: "The Lancet",
+        year: 2011,
+        doi: "10.1016/S0140-6736(11)60105-0"
+      },
+      {
+        title: "Comparison of anthropometric measures as predictors of cancer incidence: A pooled collaborative analysis of 11 Australian cohorts",
+        authors: "Harding JL, Shaw JE, Anstey KJ, et al.",
+        journal: "International Journal of Cancer",
+        year: 2015,
+        doi: "10.1002/ijc.29529"
+      }
+    ],
+    kernaussage: "Der Taillenumfang misst das gefaehrliche Bauchfett, das der BMI nicht erfasst. Leitlinien sehen erhoehtes Risiko ab 80 cm (Frauen) bzw. 94 cm (Maennern) und deutlich erhoehtes ab 88 bzw. 102 cm. Das Taille-Groesse-Verhaeltnis (Grenzwert 0,5) sagt kardiometabolische Risiken in Meta-Analysen oft praeziser voraus als der BMI und ist mit einem Massband leicht selbst bestimmbar.",
+    faqs: [
+      {
+        question: "Ist der Taillenumfang wirklich besser als der BMI?",
+        answer: "Nicht pauschal besser, aber er erfasst eine Information, die dem BMI fehlt: das gefaehrliche Bauchfett. In einer Meta-Analyse (Ashwell et al., 2012) sagte besonders das Taille-Groesse-Verhaeltnis kardiometabolische Risiken praeziser voraus als der BMI. Am aussagekraeftigsten ist die Kombination beider Werte."
+      },
+      {
+        question: "Welcher Taillenumfang ist gesund fuer Frau und Mann?",
+        answer: "Nach WHO-Leitlinie gilt bei Frauen ein Umfang unter 80 cm als guenstig, 80 bis 88 cm als erhoeht und ueber 88 cm als deutlich erhoeht. Bei Maennern liegen die Grenzen bei 94 cm und 102 cm. Diese Werte gelten vorrangig fuer europaeischstaemmige Bevoelkerungen."
+      },
+      {
+        question: "Was ist das Taille-Groesse-Verhaeltnis?",
+        answer: "Es teilt den Taillenumfang durch die Koerpergroesse (beides in cm). Ein Wert unter 0,5 gilt als guenstig. Die einfache Faustregel lautet: Der Taillenumfang sollte weniger als die halbe Koerpergroesse betragen, bei 1,80 m also unter 90 cm."
+      },
+      {
+        question: "Wie messe ich den Taillenumfang korrekt?",
+        answer: "Im Stehen, nach normalem Ausatmen, das Massband auf halber Hoehe zwischen unterster Rippe und Beckenkamm anlegen (etwa auf Nabelhoehe). Den Bauch nicht einziehen und das Band nicht zu fest spannen. Der Trend ueber Wochen ist aussagekraeftiger als ein Einzelwert."
+      },
+      {
+        question: "Kann ich bei normalem BMI trotzdem zu viel Bauchfett haben?",
+        answer: "Ja. Ein normaler BMI bei gleichzeitig hohem Bauchumfang ist ein bekanntes Warnsignal. Die Lancet-Auswertung von 2011 zeigte, dass bei gleichem BMI ein groesserer Bauchumfang mit hoeherem Herz-Kreislauf-Risiko einhergeht. Deshalb lohnt es sich, beide Werte zu pruefen."
+      }
+    ]
+  },
+  {
+    slug: "koerperfettanteil-gesunde-werte-tabelle-evidenz",
+    title: "Koerperfettanteil: Welche Werte sind gesund?",
+    description: "Gesunder Koerperfettanteil liegt bei Maennern etwa 10-20 %, bei Frauen 18-28 %. Studien zeigen: Zu hohe und zu niedrige Werte erhoehen das Sterberisiko.",
+    tags: [
+      "koerperfettanteil",
+      "koerperfett tabelle",
+      "gesunder koerperfettanteil",
+      "koerperzusammensetzung",
+      "frau mann",
+      "gesundheitsrisiko",
+      "viszeralfett",
+      "koerperfett berechnen"
+    ],
+    relatedCalculators: [
+      "koerperfett-rechner",
+      "bmi-rechner",
+      "taille-hueft-verhaeltnis-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Healthy percentage body fat ranges: an approach for developing guidelines based on body mass index",
+        authors: "Gallagher D, Heymsfield SB, Heo M, Jebb SA, Murgatroyd PR, Sakamoto Y",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2000,
+        doi: "10.1093/ajcn/72.3.694",
+        pmid: "10966886"
+      },
+      {
+        title: "Relationship Among Body Fat Percentage, Body Mass Index, and All-Cause Mortality: A Cohort Study",
+        authors: "Padwal R, Leslie WD, Lix LM, Majumdar SR",
+        journal: "Annals of Internal Medicine",
+        year: 2016,
+        doi: "10.7326/M15-1181",
+        pmid: "26954388"
+      },
+      {
+        title: "Waist circumference and body composition in relation to all-cause mortality in middle-aged men and women",
+        authors: "Bigaard J, Frederiksen K, Tjonneland A, Thomsen BL, Overvad K, Heitmann BL, Sorensen TI",
+        journal: "International Journal of Obesity",
+        year: 2005,
+        doi: "10.1038/sj.ijo.0802976",
+        pmid: "15917857"
+      },
+      {
+        title: "IOC consensus statement on relative energy deficiency in sport (RED-S): 2018 update",
+        authors: "Mountjoy M, Sundgot-Borgen JK, Burke LM, et al.",
+        journal: "British Journal of Sports Medicine",
+        year: 2018,
+        doi: "10.1136/bjsports-2018-099193",
+        pmid: "29773536"
+      }
+    ],
+    kernaussage: "Ein gesunder Koerperfettanteil ist geschlechts- und altersabhaengig: bei Maennern etwa 10-20 %, bei Frauen 18-28 %, mit hoeheren Werten im Alter. Die Evidenz zeigt eine U-foermige Beziehung zum Sterberisiko - sowohl ein zu hoher als auch ein zu niedriger Fettanteil ist mit erhoehter Sterblichkeit verbunden. Die Fettverteilung (Bauchfett) ist dabei oft aussagekraeftiger als der reine Prozentwert.",
+    faqs: [
+      {
+        question: "Welcher Koerperfettanteil ist fuer Maenner und Frauen gesund?",
+        answer: "Als grobe Orientierung gelten bei Maennern etwa 10-20 % und bei Frauen etwa 18-28 % Koerperfett. Frauen liegen physiologisch hoeher, weil ein Teil als essenzielles Fett fuer den Hormonhaushalt benoetigt wird. Die Bereiche steigen mit dem Alter und sind keine starren Grenzen, sondern Naeherungen aus statistischen Ableitungen (Gallagher et al. 2000)."
+      },
+      {
+        question: "Kann ein Koerperfettanteil auch zu niedrig sein?",
+        answer: "Ja. Dauerhaft sehr niedrige Werte koennen laut IOC-Konsens (Mountjoy et al. 2018) zu Hormonstoerungen, Zyklusstoerungen, geringerer Knochendichte und Leistungseinbruechen fuehren. Frauen brauchen einen Sockel an essenziellem Fett von etwa 10-13 %, Maenner etwa 3-5 %. Weniger ist also nicht automatisch gesuender."
+      },
+      {
+        question: "Ist der Koerperfettanteil oder das Bauchfett wichtiger?",
+        answer: "Die Fettverteilung ist oft aussagekraeftiger als der reine Gesamtanteil. In der Studie von Bigaard et al. (2005) blieb der Bauchumfang auch nach Beruecksichtigung des Gesamtfetts stark mit dem Sterberisiko verbunden. Ein einfaches Massband um die Taille bzw. das Taille-Hueft-Verhaeltnis liefert daher einen eigenstaendigen Hinweis."
+      },
+      {
+        question: "Wie genau sind Koerperfett-Messungen zu Hause?",
+        answer: "Methoden wie Bioimpedanz-Waagen, Hautfaltenmessung oder Online-Rechner haben einen Messfehler von mehreren Prozentpunkten und schwanken je nach Wasserhaushalt. Sie eignen sich besser fuer Trend-Beobachtungen ueber Wochen als fuer eine exakte Einzelmessung. Messen Sie moeglichst immer zur gleichen Tageszeit unter aehnlichen Bedingungen."
+      },
+      {
+        question: "Erhoeht ein hoher Koerperfettanteil das Sterberisiko?",
+        answer: "In der Kohortenstudie von Padwal et al. (2016) mit ueber 49.000 Personen war ein hoeherer Koerperfettanteil eigenstaendig mit erhoehter Gesamtsterblichkeit verbunden. Allerdings zeigte sich ein U-foermiger Verlauf: Auch sehr niedrige Werte gingen mit hoeherem Risiko einher. Es handelt sich um Beobachtungsdaten, die Zusammenhaenge, aber keine eindeutige Ursache belegen."
+      }
+    ]
+  },
+  {
+    slug: "fluessige-kalorien-saettigung-warum-getraenke-dick-machen-evidenz",
+    title: "Fluessige Kalorien: Warum Getraenke schlechter saettigen",
+    description: "RCTs zeigen: Fluessige Kalorien werden kaum kompensiert. Mattes' Studie fuehrte bei Limo zur Gewichtszunahme, bei gleichkalorischen Gummibaerchen nicht.",
+    tags: [
+      "Fluessige Kalorien",
+      "Saettigung",
+      "Getraenke",
+      "Smoothie",
+      "Abnehmen",
+      "RCT",
+      "Meta-Analyse",
+      "Energiebilanz"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Liquid versus solid carbohydrate: effects on food intake and body weight",
+        authors: "DiMeglio DP, Mattes RD",
+        journal: "International Journal of Obesity",
+        year: 2000,
+        doi: "10.1038/sj.ijo.0801229"
+      },
+      {
+        title: "Effects of food form on appetite and energy intake in lean and obese young adults",
+        authors: "Mourao DM, Bressan J, Campbell WW, Mattes RD",
+        journal: "International Journal of Obesity",
+        year: 2007,
+        doi: "10.1038/sj.ijo.0803667"
+      },
+      {
+        title: "Sugar-sweetened beverages and weight gain in children and adults: a systematic review and meta-analysis",
+        authors: "Malik VS, Pan A, Willett WC, Hu FB",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2013,
+        doi: "10.3945/ajcn.113.058362"
+      },
+      {
+        title: "Dietary sugars and body weight: systematic review and meta-analyses of randomised controlled trials and cohort studies",
+        authors: "Te Morenga L, Mallard S, Mann J",
+        journal: "BMJ",
+        year: 2012,
+        doi: "10.1136/bmj.e7492"
+      }
+    ],
+    kernaussage: "Fluessige Kalorien saettigen schwaecher als feste Nahrung und werden vom Koerper kaum durch spaeteres Weniger-Essen ausgeglichen. In einem kontrollierten Versuch fuehrte taeglich kalorienhaltige Limonade ueber vier Wochen zu Gewichtszunahme, dieselbe Kalorienmenge als Gummibaerchen dagegen nicht. Meta-Analysen verknuepfen zuckerhaltige Getraenke konsistent mit Gewichtszunahme - sie addieren sich weitgehend oben auf das Tagestotal drauf.",
+    faqs: [
+      {
+        question: "Warum machen Getraenke schlechter satt als feste Nahrung?",
+        answer: "Fluessiges muss nicht gekaut werden und verlaesst den Magen schneller, wodurch fruehe Saettigungssignale fehlen. In Studien drosselt der Koerper nach fluessigen Kalorien die spaetere Nahrungsaufnahme kaum, sodass die Energie weitgehend zusaetzlich auf das Tagestotal kommt."
+      },
+      {
+        question: "Sind Smoothies zum Abnehmen geeignet?",
+        answer: "Nur bedingt. Ein Smoothie kann 300-500 kcal liefern, saettigt aber schwaecher als dieselbe Menge gegessenes Obst. Wer abnehmen will, isst Obst besser, als es zu trinken. Als Mahlzeitersatz taugt ein Smoothie nur, wenn er bewusst eingeplant ist und Protein sowie Ballaststoffe enthaelt."
+      },
+      {
+        question: "Zaehlen fluessige Kalorien wirklich genauso wie feste?",
+        answer: "Energetisch ja - ein Latte mit 200 kcal liefert genau diese 200 kcal. Der Unterschied liegt in der fehlenden Kompensation: Feste Kalorien gleicht der Koerper haeufig durch spaeteres Weniger-Essen aus, fluessige kaum. Deshalb sollten kalorienhaltige Getraenke voll in die Tagesbilanz einberechnet werden."
+      },
+      {
+        question: "Welche Getraenke sind beim Abnehmen unproblematisch?",
+        answer: "Kalorienfreie Getraenke wie Wasser, ungesuesster Tee und schwarzer Kaffee liefern keine relevante Energie und sind die einfachste Umstellung. Problematisch sind zuckergesuesste Limonaden, Saefte, kalorienreiche Kaffeespezialitaeten und Smoothies."
+      },
+      {
+        question: "Beweisen die Studien, dass Getraenke dick machen?",
+        answer: "Die RCTs zeigen sauber, dass fluessige Kalorien schlechter kompensiert werden und in einem Versuch zur Gewichtszunahme fuehrten. Die Verbindung zwischen zuckergesuessten Getraenken und Gewichtszunahme in der Bevoelkerung stammt grossteils aus Beobachtungsstudien, die Ursache und Wirkung nicht vollstaendig trennen koennen. Die Gesamtevidenz ist aber konsistent."
+      }
+    ]
+  },
+  {
+    slug: "fruktose-fruchtzucker-gesundheit-gewicht-meta-analyse",
+    title: "Fruktose und Fruchtzucker: Wie schaedlich ist sie wirklich?",
+    description: "Meta-Analysen zeigen: Fruktose macht bei gleicher Kalorienzahl nicht dicker. Erst im Ueberschuss aus Suessgetraenken steigt das Stoffwechselrisiko.",
+    tags: [
+      "fruktose",
+      "fruchtzucker",
+      "ernaehrung",
+      "abnehmen",
+      "leber",
+      "blutzucker",
+      "obst",
+      "studien"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Effect of Fructose on Body Weight in Controlled Feeding Trials: A Systematic Review and Meta-analysis",
+        authors: "Sievenpiper JL, de Souza RJ, Mirrahimi A, et al.",
+        journal: "Annals of Internal Medicine",
+        year: 2012,
+        doi: "10.7326/0003-4819-156-4-201202210-00007"
+      },
+      {
+        title: "Dietary sugars and body weight: systematic review and meta-analyses of randomised controlled trials and cohort studies",
+        authors: "Te Morenga L, Mallard S, Mann J",
+        journal: "BMJ",
+        year: 2012,
+        doi: "10.1136/bmj.e7492"
+      },
+      {
+        title: "Consumption of sugar sweetened beverages, artificially sweetened beverages, and fruit juice and incidence of type 2 diabetes: systematic review, meta-analysis, and estimation of population attributable fraction",
+        authors: "Imamura F, O'Connor L, Ye Z, et al.",
+        journal: "BMJ",
+        year: 2015,
+        doi: "10.1136/bmj.h3576"
+      },
+      {
+        title: "Role of diet in type 2 diabetes incidence: umbrella review of meta-analyses of prospective observational studies",
+        authors: "Neuenschwander M, Ballon A, Weber KS, et al.",
+        journal: "BMJ",
+        year: 2019,
+        doi: "10.1136/bmj.l2368"
+      },
+      {
+        title: "High Dietary Fructose: Direct or Indirect Dangerous Factors Disturbing Tissue and Organ Functions",
+        authors: "Zhang DM, Jiao RQ, Kong LD",
+        journal: "Nutrients",
+        year: 2017,
+        doi: "10.3390/nu9040335"
+      }
+    ],
+    kernaussage: "Fruktose ist nicht per se schaedlich. Kontrollierte Studien zeigen, dass Fruktose bei gleicher Kalorienmenge nicht staerker dick macht als andere Zucker. Problematisch ist der Ueberschuss aus Suessgetraenken und Sirup, der mit mehr Leberfett und einem hoeheren Diabetes-Risiko verbunden ist. Obst dagegen gilt durch Ballaststoffe und niedrige Dosis als unbedenklich und teils sogar schuetzend.",
+    faqs: [
+      {
+        question: "Ist Fruchtzucker ungesund?",
+        answer: "Nicht grundsaetzlich. In normalen Mengen, wie sie in Obst vorkommen, ist Fruktose unbedenklich. Kontrollierte Studien zeigen, dass Fruktose bei gleicher Kalorienzahl nicht staerker dick macht als andere Zucker. Problematisch wird sie erst im Ueberschuss, vor allem aus Suessgetraenken und Sirup."
+      },
+      {
+        question: "Macht Fruktose dick?",
+        answer: "Nur ueber zusaetzliche Kalorien. Eine Meta-Analyse fand keinen eigenstaendigen Gewichtseffekt, solange die Gesamtkalorien gleich blieben. Kam Fruktose als Extra-Energie obendrauf, stieg das Gewicht um rund 0,5 kg - das ist der Effekt der Mehrkalorien, nicht des Zuckers selbst."
+      },
+      {
+        question: "Schadet Fruchtzucker der Leber?",
+        answer: "Hohe Mengen freier Fruktose, vor allem aus Suessgetraenken und Sirup, koennen die Fettbildung in der Leber ankurbeln und stehen mit Fettleber und erhoehten Triglyzeriden in Verbindung. Die moderaten Mengen aus ganzem Obst loesen diese Effekte nicht aus."
+      },
+      {
+        question: "Ist der Zucker in Obst gesund oder schaedlich?",
+        answer: "Ganzes Obst ist gesund. Die Fruktosemenge pro Stueck ist gering, und Ballaststoffe sowie Wasser verlangsamen die Aufnahme. In Studien ist Obstkonsum eher mit einem geringeren Diabetesrisiko verbunden. Fruchtsaft dagegen wirkt eher wie ein Suessgetraenk."
+      },
+      {
+        question: "Muss ich beim Abnehmen auf Obst verzichten?",
+        answer: "Nein. Fuers Abnehmen zaehlt die gesamte Kalorienbilanz, nicht der Verzicht auf Fruchtzucker. Wer im Kaloriendefizit ist, kann zwei bis drei Portionen Obst taeglich problemlos essen. Sinnvoller ist es, fluessige Zuckerquellen wie Limo und Saft zu reduzieren."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
