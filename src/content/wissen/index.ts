@@ -3529,6 +3529,549 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "dash-diaet-blutdruck-abnehmen-evidenz-studien",
+    title: "DASH-Diät: Was sie für Blutdruck und Gewicht wirklich bringt",
+    description: "DASH senkt den systolischen Blutdruck im Original-RCT um bis zu 11,4 mmHg. Was das Ernährungsmuster für Blutdruck und Gewicht wirklich leistet.",
+    tags: [
+      "DASH-Diät",
+      "Bluthochdruck",
+      "Blutdruck senken",
+      "Ernährungsmuster",
+      "Abnehmen",
+      "Natrium",
+      "Herzgesundheit",
+      "evidenzbasiert"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "bmi-rechner",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "A Clinical Trial of the Effects of Dietary Patterns on Blood Pressure",
+        authors: "Appel LJ, Moore TJ, Obarzanek E, et al.",
+        journal: "New England Journal of Medicine",
+        year: 1997,
+        doi: "10.1056/NEJM199704173361601",
+        pmid: "9099655"
+      },
+      {
+        title: "Effects on Blood Pressure of Reduced Dietary Sodium and the Dietary Approaches to Stop Hypertension (DASH) Diet",
+        authors: "Sacks FM, Svetkey LP, Vollmer WM, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2001,
+        doi: "10.1056/NEJM200101043440101",
+        pmid: "11136953"
+      },
+      {
+        title: "Effects of the DASH diet alone and in combination with exercise and weight loss on blood pressure and cardiovascular biomarkers in men and women with high blood pressure: the ENCORE study",
+        authors: "Blumenthal JA, Babyak MA, Hinderliter A, et al.",
+        journal: "Archives of Internal Medicine",
+        year: 2010,
+        doi: "10.1001/archinternmed.2009.470",
+        pmid: "20101007"
+      }
+    ],
+    kernaussage: "Die DASH-Diät gehört zu den am besten belegten Ernährungsmustern gegen Bluthochdruck: Im Original-RCT senkte sie den systolischen Blutdruck um bis zu 11,4 mmHg bei Hypertonikern, kombiniert mit Natriumreduktion sogar stärker. Beim Gewicht bewirkt sie einen moderaten Verlust, ist aber kein gezieltes Abnehmprogramm. Ihr Hauptnutzen liegt klar in der Blutdruck- und Herz-Kreislauf-Prävention.",
+    faqs: [
+      {
+        question: "Wie stark senkt die DASH-Diät den Blutdruck?",
+        answer: "In der DASH-Originalstudie (Appel et al., 1997) sank der systolische Blutdruck um 5,5 mmHg gegenüber der Kontrollkost, bei Menschen mit Hypertonie sogar um 11,4 mmHg systolisch und 5,5 mmHg diastolisch. Das geschah bei stabilem Gewicht und gleichem Salzgehalt, also allein durch das Lebensmittelmuster."
+      },
+      {
+        question: "Kann man mit der DASH-Diät abnehmen?",
+        answer: "DASH ist primär ein Konzept zur Blutdrucksenkung, kein Abnehmprogramm. Weil das Muster ballaststoffreich und sättigend ist, kommt es im Alltag oft zu moderatem Gewichtsverlust. Für gezieltes Abnehmen braucht es zusätzlich ein Kaloriendefizit, für das DASH einen guten Rahmen bietet."
+      },
+      {
+        question: "Muss ich bei DASH auch Salz reduzieren?",
+        answer: "Salzreduktion ist nicht zwingend, verstärkt den Effekt aber deutlich. Die DASH-Sodium-Studie (Sacks et al., 2001) zeigte, dass die Kombination aus DASH-Kost und niedriger Natriumzufuhr den Blutdruck am stärksten senkt. Beide Maßnahmen wirken additiv."
+      },
+      {
+        question: "Für wen eignet sich die DASH-Diät?",
+        answer: "Sie eignet sich für Menschen mit erhöhtem Blutdruck oder zur Herz-Kreislauf-Prävention. Da DASH kaliumreich ist, sollten Personen mit Nierenerkrankung oder unter bestimmten Blutdruckmedikamenten die Umstellung vorher ärztlich abklären."
+      }
+    ]
+  },
+  {
+    slug: "heilfasten-buchinger-fasten-evidenz-risiken",
+    title: "Heilfasten & Buchinger-Fasten: Was die Evidenz zeigt und wo die Risiken liegen",
+    description: "Heilfasten senkt kurzfristig Gewicht und Blutdruck (Buchinger-Studie, 1422 Personen). Doch das Gewicht kommt meist zurück - und nicht jeder darf fasten.",
+    tags: [
+      "Heilfasten",
+      "Buchinger Fasten",
+      "Fastenkur",
+      "Abnehmen",
+      "Gewichtsverlust",
+      "Jojo-Effekt",
+      "Fasten Risiken",
+      "Ernaehrungswissenschaft"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "grundumsatz-rechner",
+      "intervallfasten-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Safety, health improvement and well-being during a 4 to 21-day fasting period in an observational study including 1422 subjects",
+        authors: "Wilhelmi de Toledo F, Grundler F, Bergouignan A, Drinda S, Michalsen A",
+        journal: "PLOS ONE",
+        year: 2019,
+        doi: "10.1371/journal.pone.0209353"
+      },
+      {
+        title: "Long-Term Persistence of Hormonal Adaptations to Weight Loss",
+        authors: "Sumithran P, Prendergast LA, Delbridge E, Purcell K, Shulkes A, Kriketos A, Proietto J",
+        journal: "New England Journal of Medicine",
+        year: 2011,
+        doi: "10.1056/NEJMoa1105816"
+      },
+      {
+        title: "Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, Brosnahan N, Thom G, McCombie L, et al.",
+        journal: "The Lancet",
+        year: 2018,
+        doi: "10.1016/S0140-6736(17)33102-1"
+      }
+    ],
+    kernaussage: "Mehrtaegiges Heilfasten nach Buchinger senkt kurzfristig Gewicht, Blutdruck und einige Stoffwechselmarker und wird von den meisten Gesunden gut vertragen. Das verlorene Gewicht ist aber groesstenteils Wasser und Muskelmasse und kehrt nach der Kur meist zurueck, weil sich Hungerhormone gegenregulierend anpassen. Fuer Schwangere, Untergewichtige, Menschen mit Essstoerung oder bestimmten Erkrankungen ist Fasten riskant und gehoert in aerztliche Hand.",
+    faqs: [
+      {
+        question: "Wie viel nimmt man beim Heilfasten ab?",
+        answer: "Bei einer mehrtaegigen Buchinger-Kur mit nur 200-400 kcal pro Tag faellt die Waage schnell, oft mehrere Kilo. Ein grosser Teil davon ist aber Wasser und entleertes Glykogen, dazu etwas Muskelmasse - nicht reines Fett. Sobald wieder normal gegessen wird, kehrt ein Grossteil des Gewichts zurueck. Fuer dauerhaftes Abnehmen ist entscheidend, was nach der Kur passiert."
+      },
+      {
+        question: "Ist Heilfasten gesund oder gefaehrlich?",
+        answer: "Fuer gesunde Erwachsene ist mehrtaegiges Fasten in einem betreuten Rahmen meist gut vertraeglich; eine Studie mit 1422 Personen zeigte ueberwiegend Wohlbefinden und nur seltene milde Nebenwirkungen. Riskant ist Fasten dagegen fuer Schwangere, Stillende, Untergewichtige, Menschen mit Essstoerung, Typ-1-Diabetes oder bestimmten Erkrankungen sowie bei Medikamenten, deren Dosis vom Essen abhaengt."
+      },
+      {
+        question: "Warum kommt das Gewicht nach dem Fasten zurueck?",
+        answer: "Zum einen war ein grosser Teil des Verlusts Wasser, das sich beim Wiederauffuellen der Glykogenspeicher zurueckholt. Zum anderen passt sich der Hormonhaushalt an: Nach starkem Gewichtsverlust bleibt Ghrelin (Hunger) erhoeht und Leptin (Saettigung) gesenkt - in einer NEJM-Studie noch ein Jahr spaeter. Das treibt den Appetit hoch und beguenstigt den Jojo-Effekt."
+      },
+      {
+        question: "Was ist der Unterschied zwischen Heilfasten und Intervallfasten?",
+        answer: "Heilfasten (z. B. nach Buchinger) bedeutet mehrere Tage am Stueck fast keine feste Nahrung, nur Saefte, Bruehe und Tee - eine intensive Kur. Intervallfasten verteilt taegliche Essenspausen ueber den Alltag (etwa 16 Stunden Pause, 8 Stunden Essensfenster) und ist deutlich alltagstauglicher und leichter durchzuhalten."
+      }
+    ]
+  },
+  {
+    slug: "krafttraining-fettabbau-koerperkomposition-meta-analyse",
+    title: "Krafttraining zum Abnehmen: Warum Muskeln über die Körperkomposition entscheiden",
+    description: "Studienlage: Krafttraining verbrennt weniger Kalorien als Cardio, schützt im Defizit aber die Muskeln und senkt den Körperfettanteil messbar (Meta-Analyse).",
+    tags: [
+      "Krafttraining abnehmen",
+      "Krafttraining Fettabbau",
+      "Muskeln aufbauen Fett verlieren",
+      "Körperkomposition",
+      "Gewichte abnehmen",
+      "Muskelerhalt Diät",
+      "Body Recomposition"
+    ],
+    relatedCalculators: [
+      "kalorienverbrauch-rechner",
+      "protein-bedarf-rechner",
+      "koerperfett-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Effects of aerobic and/or resistance training on body mass and fat mass in overweight or obese adults",
+        authors: "Willis LH, Slentz CA, Bateman LA, et al.",
+        journal: "Journal of Applied Physiology",
+        year: 2012,
+        doi: "10.1152/japplphysiol.01370.2011"
+      },
+      {
+        title: "The Effect of Resistance Training in Healthy Adults on Body Fat Percentage, Fat Mass and Visceral Fat: A Systematic Review and Meta-Analysis",
+        authors: "Wewege MA, Desai I, Honey C, et al.",
+        journal: "Sports Medicine",
+        year: 2021,
+        doi: "10.1007/s40279-021-01562-2"
+      },
+      {
+        title: "Aerobic or Resistance Exercise, or Both, in Dieting Obese Older Adults",
+        authors: "Villareal DT, Aguirre L, Gurney AB, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2017,
+        doi: "10.1056/NEJMoa1616338"
+      },
+      {
+        title: "A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass and strength in healthy adults",
+        authors: "Morton RW, Murphy KT, McKellar SR, et al.",
+        journal: "British Journal of Sports Medicine",
+        year: 2018,
+        doi: "10.1136/bjsports-2017-097608"
+      },
+      {
+        title: "Higher compared with lower dietary protein during an energy deficit combined with intense exercise promotes greater lean mass gain and fat mass loss: a randomized trial",
+        authors: "Longland TM, Oikawa SY, Mitchell CJ, et al.",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2016,
+        doi: "10.3945/ajcn.115.119339"
+      }
+    ],
+    kernaussage: "Krafttraining verbrennt akut weniger Kalorien als Ausdauertraining und senkt das reine Körpergewicht daher schwächer. Sein entscheidender Vorteil liegt woanders: Im Kaloriendefizit schützt es die Muskelmasse und baut sie teils sogar auf, während eine Meta-Analyse zeigt, dass Krafttraining allein den Körperfettanteil um rund 1,5 Prozentpunkte senkt. Für eine bessere Körperkomposition ist es Cardio damit überlegen.",
+    faqs: [
+      {
+        question: "Verbrennt Krafttraining oder Cardio mehr Kalorien beim Abnehmen?",
+        answer: "Pro Einheit verbrennt Ausdauertraining mehr Kalorien und senkt das Körpergewicht stärker - das zeigt die direkte Vergleichsstudie STRRIDE-AT/RT. Krafttraining punktet dafür über die Körperkomposition: Es ist die einzige Trainingsform, die im Versuch fettfreie Masse aufbaute. Ideal ist die Kombination beider."
+      },
+      {
+        question: "Kann ich mit Krafttraining allein abnehmen, ohne Diät?",
+        answer: "Eine Meta-Analyse aus 58 Studien zeigt, dass reines Krafttraining den Körperfettanteil um rund 1,5 Prozentpunkte senkt und auch Bauchfett reduziert - ohne Diät. Das Körpergewicht ändert sich dabei oft nur wenig, weil Muskeln zunehmen. Für deutliches Abnehmen bleibt ein Kaloriendefizit aber der Haupthebel."
+      },
+      {
+        question: "Warum schützt Krafttraining im Kaloriendefizit die Muskeln?",
+        answer: "Im Defizit baut der Körper ohne Reiz neben Fett auch Muskulatur ab. Krafttraining signalisiert dem Körper, dass die Muskeln gebraucht werden, und kurbelt die Muskelproteinsynthese an. In einer NEJM-Studie an älteren Adipösen verlor die Trainingsgruppe deutlich weniger Magermasse als die reine Diätgruppe."
+      },
+      {
+        question: "Wie viel Protein brauche ich, um beim Abnehmen Muskeln zu erhalten?",
+        answer: "Eine Meta-Analyse aus 49 Studien fand, dass der Nutzen für die fettfreie Masse oberhalb von etwa 1,6 g Protein pro kg Körpergewicht und Tag abflacht. In einer Diät sind 1,6-2,0 g/kg ein guter Zielwert, idealerweise über mehrere Mahlzeiten verteilt."
+      },
+      {
+        question: "Warum bewegt sich die Waage trotz Krafttraining kaum?",
+        answer: "Weil Krafttraining gleichzeitig Fett ab- und Muskeln aufbaut, gleichen sich die Veränderungen auf der Waage teilweise aus. Das Gewicht kann stagnieren, obwohl die Figur straffer wird. Aussagekräftiger sind Taillenumfang und Körperfettanteil."
+      }
+    ]
+  },
+  {
+    slug: "hiit-vs-steady-state-cardio-fettabbau-meta-analyse",
+    title: "HIIT vs. Steady-State-Cardio: Was verbrennt mehr Fett?",
+    description: "Meta-Analysen zeigen: HIIT baut bei rund 40% weniger Zeitaufwand aehnlich viel Fett ab wie laengeres Ausdauertraining. Was wirklich zaehlt.",
+    tags: [
+      "HIIT",
+      "Cardio",
+      "Fettabbau",
+      "Intervalltraining",
+      "Ausdauertraining",
+      "Abnehmen",
+      "Kaloriendefizit",
+      "Training"
+    ],
+    relatedCalculators: [
+      "kalorienverbrauch-rechner",
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Continuous and high-intensity interval training for adipose tissue: a meta-analysis",
+        authors: "Keating SE, Johnson NA, Mielke GI, Coombes JS",
+        journal: "Obesity Reviews",
+        year: 2017,
+        doi: "10.1111/obr.12536"
+      },
+      {
+        title: "The effects of high-intensity interval training vs. moderate-intensity continuous training on body composition in overweight and obese adults: a systematic review and meta-analysis",
+        authors: "Wewege M, van den Berg R, Ward RE, Keech A",
+        journal: "Obesity Reviews",
+        year: 2017,
+        doi: "10.1111/obr.12532"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245"
+      }
+    ],
+    kernaussage: "Meta-Analysen finden zwischen hochintensivem Intervalltraining (HIIT) und moderatem Dauertraining (MICT) keine relevanten Unterschiede bei der Reduktion von Gesamt- und Bauchfett - HIIT erreicht aehnliche Ergebnisse jedoch in deutlich kuerzerer Trainingszeit. Entscheidend fuer den Fettabbau bleibt das ueber Ernaehrung und Bewegung erzeugte Kaloriendefizit, nicht die Trainingsform an sich.",
+    faqs: [
+      {
+        question: "Verbrennt HIIT mehr Fett als normales Cardio?",
+        answer: "Nein, nicht relevant mehr. Meta-Analysen zeigen keinen bedeutsamen Unterschied zwischen HIIT und moderatem Dauertraining bei der Reduktion von Gesamt- und Bauchfett. HIIT erreicht aehnliche Ergebnisse aber bei rund 40% weniger Trainingszeit."
+      },
+      {
+        question: "Was ist besser zum Abnehmen, HIIT oder Ausdauertraining?",
+        answer: "Beide funktionieren gleich gut, solange ein Kaloriendefizit besteht. HIIT spart Zeit, Steady-State-Cardio ist gelenkschonender und leichter durchzuhalten. Entscheidend ist die Trainingsform, die Sie langfristig regelmaessig umsetzen koennen."
+      },
+      {
+        question: "Bringt der Nachbrenneffekt (EPOC) bei HIIT viel?",
+        answer: "Weniger als oft behauptet. Der zusaetzliche Kalorienverbrauch nach dem Training liegt meist nur im Bereich weniger Dutzend Kilokalorien und faellt gegenueber der gesamten Tagesenergiebilanz kaum ins Gewicht."
+      },
+      {
+        question: "Reicht Training allein zum Fettabbau?",
+        answer: "Meist nicht. Training erhoeht den Verbrauch, aber Fett baut der Koerper nur bei negativer Energiebilanz ab. Ohne Anpassung der Ernaehrung bleibt der reine Sport-Effekt auf das Gewicht in Studien begrenzt."
+      }
+    ]
+  },
+  {
+    slug: "abnehm-plateau-durchbrechen-diaetpause-refeed-evidenz",
+    title: "Abnehm-Plateau durchbrechen: Diätpausen, Refeeds und adaptive Thermogenese",
+    description: "Plateaus entstehen meist durch Adhärenz und adaptive Thermogenese. Im MATADOR-RCT verlor die Gruppe mit 2-Wochen-Diätpausen mehr Fett – kein Stoffwechsel-Reset.",
+    tags: [
+      "Abnehm-Plateau",
+      "Diätpause",
+      "Refeed",
+      "adaptive Thermogenese",
+      "Kaloriendefizit",
+      "Stoffwechsel",
+      "Gewicht stagniert",
+      "MATADOR-Studie"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "grundumsatz-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Intermittent energy restriction improves weight loss efficiency in obese men: the MATADOR study",
+        authors: "Byrne NM, Sainsbury A, King NA, Hills AP, Wood RE",
+        journal: "International Journal of Obesity",
+        year: 2018,
+        doi: "10.1038/ijo.2017.206"
+      },
+      {
+        title: "Persistent metabolic adaptation 6 years after \"The Biggest Loser\" competition",
+        authors: "Fothergill E, Guo J, Howard L, Kerns JC, Knuth ND, Brychta R, Chen KY, Skarulis MC, Walter M, Walter PJ, Hall KD",
+        journal: "Obesity",
+        year: 2016,
+        doi: "10.1002/oby.21538"
+      },
+      {
+        title: "Changes in Energy Expenditure Resulting from Altered Body Weight",
+        authors: "Leibel RL, Rosenbaum M, Hirsch J",
+        journal: "New England Journal of Medicine",
+        year: 1995,
+        doi: "10.1056/NEJM199503093321001"
+      },
+      {
+        title: "Biology's response to dieting: the impetus for weight regain",
+        authors: "MacLean PS, Bergouignan A, Cornier MA, Jackman MR",
+        journal: "American Journal of Physiology-Regulatory, Integrative and Comparative Physiology",
+        year: 2011,
+        doi: "10.1152/ajpregu.00755.2010"
+      }
+    ],
+    kernaussage: "Ein Abnehm-Plateau entsteht selten durch einen \"eingeschlafenen\" Stoffwechsel, sondern meist durch nachlassende Adhärenz und adaptive Thermogenese – der Körper verbraucht nach Gewichtsverlust messbar weniger Energie als erwartet. Geplante Diätpausen (z. B. das MATADOR-Protokoll mit zweiwöchigen Erhaltungsphasen) können den Fettverlust pro Diätwoche verbessern und Wiederzunahme reduzieren. Sie sind aber kein Stoffwechsel-Reset, sondern erleichtern primär das Durchhalten.",
+    faqs: [
+      {
+        question: "Ist ein Abnehm-Plateau ein Zeichen, dass mein Stoffwechsel kaputt ist?",
+        answer: "Nein. Der Energieverbrauch sinkt nach Gewichtsverlust messbar, aber begrenzt (adaptive Thermogenese, in der NEJM-Studie rund 10-15 % über die erwartete Senkung hinaus). Ein vollständiger Stillstand des Gewichts entsteht meist dadurch, dass der leichtere Körper real weniger braucht und das Defizit unbemerkt kleiner wird – nicht durch einen defekten Stoffwechsel."
+      },
+      {
+        question: "Was ist eine Diätpause und wie funktioniert das MATADOR-Protokoll?",
+        answer: "Bei einer Diätpause isst man bewusst für ein bis zwei Wochen auf Erhaltungskalorien statt im Defizit. Im MATADOR-RCT wechselten Teilnehmer im Zwei-Wochen-Rhythmus zwischen Defizit und Erhaltung. Diese Gruppe verlor pro Diätwoche mehr Fett und hielt das Gewicht später besser als die durchgehend diätende Gruppe."
+      },
+      {
+        question: "Setzt ein Refeed oder eine Diätpause den Stoffwechsel zurück?",
+        answer: "Nein. Pausen und Refeeds können den Rückgang des Ruheumsatzes etwas abmildern und das Durchhalten erleichtern, sie heben den Verbrauch aber nicht auf das Ausgangsniveau zurück. Es ist ein Werkzeug für Adhärenz und Erholung, kein Reset-Knopf."
+      },
+      {
+        question: "Was tue ich zuerst, wenn das Gewicht stagniert?",
+        answer: "Beurteilen Sie den Trend über 2-3 Wochen statt einzelner Tage, tracken Sie einige Tage besonders genau (oft ist das Defizit kleiner als gedacht) und passen Sie das Kaloriendefizit an das neue, niedrigere Gewicht an. Erst danach lohnt eine geplante Diätpause."
+      }
+    ]
+  },
+  {
+    slug: "intuitive-ernaehrung-achtsames-essen-evidenz-studien",
+    title: "Intuitive Ernährung & achtsames Essen: Hilft Hören auf den Körper beim Abnehmen?",
+    description: "Studien zeigen: Intuitives und achtsames Essen verbessern Essverhalten und Wohlbefinden, führen aber selten zu nennenswertem Gewichtsverlust.",
+    tags: [
+      "intuitive Ernährung",
+      "achtsames Essen",
+      "intuitiv essen abnehmen",
+      "mindful eating",
+      "Anti-Diät",
+      "Essverhalten",
+      "Abnehmen"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "bmi-rechner",
+      "cheat-day-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "A structured literature review on the role of mindfulness, mindful eating and intuitive eating in changing eating behaviours: effectiveness and associated potential mechanisms",
+        authors: "Warren JM, Smith N, Ashwell M",
+        journal: "Nutrition Research Reviews",
+        year: 2017,
+        doi: "10.1017/S0954422417000154",
+        pmid: "28718396"
+      },
+      {
+        title: "Mindfulness meditation as an intervention for binge eating, emotional eating, and weight loss: a systematic review",
+        authors: "Katterman SN, Kleinman BM, Hood MM, Nackers LM, Corsica JA",
+        journal: "Eating Behaviors",
+        year: 2014,
+        doi: "10.1016/j.eatbeh.2014.01.005",
+        pmid: "24854804"
+      },
+      {
+        title: "Mindfulness-based interventions for weight loss: a systematic review and meta-analysis",
+        authors: "Carriere K, Khoury B, Gunak MM, Knauper B",
+        journal: "Obesity Reviews",
+        year: 2018,
+        doi: "10.1111/obr.12623",
+        pmid: "29076610"
+      },
+      {
+        title: "Intuitive eating and its psychological correlates: A meta-analysis",
+        authors: "Linardon J, Tylka TL, Fuller-Tyszkiewicz M",
+        journal: "International Journal of Eating Disorders",
+        year: 2021,
+        doi: "10.1002/eat.23509",
+        pmid: "33786858"
+      }
+    ],
+    kernaussage: "Intuitive und achtsame Ernährung verbessern nachweislich das Essverhalten, das Körperbild und das psychische Wohlbefinden und sind mit weniger gestörtem Essen verbunden. Für reinen Gewichtsverlust sind sie jedoch wenig wirksam: Reviews finden über Studien hinweg meist keinen oder nur einen geringen, uneinheitlichen Effekt auf das Körpergewicht. Wer abnehmen will, braucht ein Kaloriendefizit; achtsames Essen kann es unterstützen, ersetzt es aber nicht.",
+    faqs: [
+      {
+        question: "Kann ich mit intuitivem Essen abnehmen?",
+        answer: "Möglich, aber nicht garantiert. Studien zeigen, dass intuitives Essen vor allem das Essverhalten, das Körperbild und das Wohlbefinden verbessert - ein verlässlicher Gewichtsverlust ist über die Studien hinweg nicht belegt. Abnehmen setzt ein Energiedefizit voraus; intuitives Essen kann es unterstützen, ersetzt es aber nicht."
+      },
+      {
+        question: "Was ist der Unterschied zwischen intuitivem und achtsamem Essen?",
+        answer: "Intuitives Essen orientiert sich an inneren Hunger- und Sättigungssignalen statt an Diätregeln. Achtsames Essen (mindful eating) bringt Achtsamkeit in den Essvorgang: langsam, präsent, ohne Ablenkung und ohne Bewertung. Beide überschneiden sich, achtsames Essen ist dabei eher eine konkrete Technik."
+      },
+      {
+        question: "Hilft achtsames Essen gegen emotionales Essen und Essanfälle?",
+        answer: "Ja, hier ist die Evidenz am stärksten. Reviews und eine systematische Übersicht von Katterman et al. (2014) fanden, dass achtsamkeitsbasierte Interventionen Essanfälle und emotionales Essen wirksam reduzieren - deutlicher als sie das Körpergewicht beeinflussen."
+      },
+      {
+        question: "Ist die Anti-Diät-Bewegung wissenschaftlich gerechtfertigt?",
+        answer: "Teilweise. Der Verzicht auf starre Verbote und das Senken von Essstress sind sinnvoll und durch Daten zu Wohlbefinden gestützt. Die Behauptung, man könne ohne jedes Bewusstsein für die Energiebilanz zuverlässig abnehmen, ist dagegen nicht belegt."
+      },
+      {
+        question: "Sollte ich Kalorienzählen oder lieber intuitiv essen?",
+        answer: "Das muss kein Entweder-oder sein. Wer abnehmen möchte, profitiert oft davon, den ungefähren Bedarf zu kennen (Kalorienbedarf berechnen) und gleichzeitig achtsam zu essen. Für eine reine Verbesserung der Beziehung zum Essen kann intuitives Essen allein ausreichen."
+      }
+    ]
+  },
+  {
+    slug: "abnehmen-nach-der-schwangerschaft-rueckbildung-evidenz",
+    title: "Abnehmen nach der Schwangerschaft: Was beim Zurück zum Wohlfühlgewicht hilft",
+    description: "Studien zeigen: Diät plus Bewegung lässt nach der Geburt mehr abnehmen als Diät allein - und moderates Defizit ist auch in der Stillzeit sicher.",
+    tags: [
+      "abnehmen nach Schwangerschaft",
+      "Rückbildung Gewicht",
+      "abnehmen Stillzeit",
+      "Babypfunde",
+      "postpartal",
+      "Gewichtsabnahme",
+      "Stillen",
+      "Ernährung nach Geburt"
+    ],
+    relatedCalculators: [
+      "kalorienbedarf-berechnen",
+      "kaloriendefizit-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Diet or exercise, or both, for weight reduction in women after childbirth",
+        authors: "Amorim Adegboye AR, Linne YM",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2013,
+        doi: "10.1002/14651858.CD005627.pub3"
+      },
+      {
+        title: "A randomized study of the effects of aerobic exercise by lactating women on breast-milk volume and composition",
+        authors: "Dewey KG, Lovelady CA, Nommsen-Rivers LA, McCrory MA, Lonnerdal B",
+        journal: "New England Journal of Medicine",
+        year: 1994,
+        doi: "10.1056/NEJM199402173300701"
+      }
+    ],
+    kernaussage: "Nach der Geburt gelingt das Abnehmen am verlässlichsten durch eine moderate Ernährungsumstellung kombiniert mit Bewegung - ein Cochrane-Review zeigt für diese Kombination die deutlichste Gewichtsreduktion. In der Stillzeit ist ein moderates Kaloriendefizit von etwa 500 kcal pro Tag laut RCT-Daten sicher und beeinträchtigt weder Milchmenge noch das Wachstum des Kindes, solange das Defizit nicht zu groß wird.",
+    faqs: [
+      {
+        question: "Ab wann darf ich nach der Geburt mit dem Abnehmen anfangen?",
+        answer: "In den ersten Wochen sollten Erholung, Wundheilung und das Einspielen des Stillens im Vordergrund stehen. In der zitierten RCT-Studie zum Abnehmen in der Stillzeit begannen die Frauen ab der vierten Woche nach der Geburt mit einem moderaten Defizit. Sprechen Sie den Zeitpunkt am besten mit Ihrer Ärztin oder Hebamme ab, besonders nach einem Kaiserschnitt."
+      },
+      {
+        question: "Ist Abnehmen während des Stillens sicher?",
+        answer: "Ein moderates Kaloriendefizit von etwa 500 kcal pro Tag plus Bewegung beeinträchtigte in einem randomisierten Versuch weder die Milchmenge noch das Wachstum des Babys. Wichtig ist, dass das Defizit moderat bleibt - sehr starke oder Crash-Diäten sind in der Stillzeit nicht ausreichend untersucht und werden nicht empfohlen."
+      },
+      {
+        question: "Hilft Stillen wirklich beim Abnehmen?",
+        answer: "Die Milchbildung verbraucht zusätzlich Energie (grob 500 kcal pro Tag), aber der messbare Effekt aufs Körpergewicht ist in Studien klein und sehr unterschiedlich, weil viele Frauen den Mehrbedarf durch erhöhten Appetit ausgleichen. Stillen ist wertvoll, aber als alleinige Abnehmstrategie unzuverlässig."
+      },
+      {
+        question: "Reicht Sport allein, um die Babypfunde loszuwerden?",
+        answer: "Laut Cochrane-Review zeigt Bewegung allein nur schwache Effekte aufs Gewicht. Erst die Kombination aus moderatem Ernährungsdefizit und Bewegung führt verlässlich zur Abnahme - mit dem Vorteil, dass Bewegung die Muskelmasse und die Fitness erhält."
+      },
+      {
+        question: "Wie schnell sollte ich abnehmen?",
+        answer: "Ein Richtwert von etwa 0,5 kg pro Woche gilt als sinnvoll und sicher. Schnelleres Abnehmen bringt in der Stillzeit keine belegten Vorteile und kann die Energieversorgung von Mutter und Kind gefährden. Eine ruhige Abnahme über mehrere Monate ist nachhaltiger."
+      }
+    ]
+  },
+  {
+    slug: "nuechtern-training-fasted-cardio-fettverbrennung-rct",
+    title: "Nüchtern-Training (Fasted Cardio): Verbrennt man auf nüchternen Magen mehr Fett?",
+    description: "RCT-Daten: Nüchtern-Cardio verbrennt während des Trainings mehr Fett, doch nach 4 Wochen war der Fettabbau identisch zum Training nach dem Essen.",
+    tags: [
+      "Nüchtern Training",
+      "Fasted Cardio",
+      "Fettverbrennung",
+      "Cardio",
+      "Abnehmen",
+      "Sport",
+      "Nüchtern Joggen",
+      "Energiebilanz"
+    ],
+    relatedCalculators: [
+      "kalorienverbrauch-rechner",
+      "kaloriendefizit-berechnen",
+      "intervallfasten-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Body composition changes associated with fasted versus fed-state aerobic exercise",
+        authors: "Schoenfeld BJ, Aragon AA, Wilborn CD, Krieger JW, Sonmez GT",
+        journal: "Journal of the International Society of Sports Nutrition",
+        year: 2014,
+        doi: "10.1186/s12970-014-0054-7"
+      },
+      {
+        title: "Effects of aerobic exercise performed in fasted v. fed state on fat and carbohydrate metabolism in adults: a systematic review and meta-analysis",
+        authors: "Vieira AF, Costa RR, Macedo RCO, Coconcelli L, Kruel LFM",
+        journal: "British Journal of Nutrition",
+        year: 2016,
+        doi: "10.1017/S0007114516003160"
+      }
+    ],
+    kernaussage: "Nüchtern-Cardio erhöht zwar den Anteil an verbranntem Fett während des Trainings, doch randomisierte Studien zeigen über Wochen keinen Vorteil beim tatsächlichen Fettabbau gegenüber Training nach dem Essen. In einem RCT über vier Wochen verloren beide Gruppen praktisch gleich viel Fettmasse. Entscheidend für die Körperfettreduktion bleibt die Gesamtenergiebilanz über den Tag, nicht der Zeitpunkt der Mahlzeit vor dem Sport.",
+    faqs: [
+      {
+        question: "Verbrennt man nüchtern wirklich mehr Fett?",
+        answer: "Während des Trainings ja: Bei moderatem Ausdauertraining auf nüchternen Magen zieht der Körper einen höheren Anteil seiner Energie aus Fett. Über den gesamten Tag und über Wochen gleicht sich dieser Effekt jedoch aus, sodass am Körper nicht mehr Fett verloren geht als bei Training nach dem Essen."
+      },
+      {
+        question: "Sollte ich morgens nüchtern joggen, um abzunehmen?",
+        answer: "Nur wenn es sich für Sie gut anfühlt. RCT-Daten zeigen keinen Vorteil von Nüchtern-Cardio beim Fettabbau gegenüber Training nach einer Mahlzeit. Entscheidend fürs Abnehmen ist das Kaloriendefizit über den Tag, nicht der leere Magen beim Start."
+      },
+      {
+        question: "Was bringt mehr: nüchtern oder nach dem Essen trainieren?",
+        answer: "Für die Fettreduktion sind beide gleichwertig. Bei intensiven oder langen Einheiten kann ein kleiner kohlenhydrathaltiger Snack die Leistung verbessern und so den Gesamtkalorienverbrauch erhöhen - was unterm Strich oft mehr bringt als der nüchterne Fett-Bonus."
+      },
+      {
+        question: "Warum verschwindet der Fett-Vorteil des Nüchtern-Trainings wieder?",
+        answer: "Weil der Körper seinen Brennstoffmix über 24 Stunden reguliert. Wird in einer Einheit mehr Fett verbrannt, wird im weiteren Tagesverlauf entsprechend weniger Fett oxidiert. Netto bleibt die Energiebilanz ausschlaggebend dafür, ob Fettdepots schrumpfen."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
