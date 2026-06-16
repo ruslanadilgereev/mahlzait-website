@@ -4072,6 +4072,598 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "kreatin-koerperkomposition-muskel-fett-meta-analyse",
+    title: "Kreatin und Körperkomposition: Mehr Muskeln, weniger Fett?",
+    description: "Kreatin steigert mit Krafttraining die fettfreie Masse um rund 1-2 kg mehr als Training allein - ein direkter Fatburner ist es aber nicht.",
+    tags: [
+      "kreatin",
+      "muskelaufbau",
+      "koerperkomposition",
+      "supplemente",
+      "krafttraining",
+      "fettfreie-masse",
+      "kreatin-monohydrat"
+    ],
+    relatedCalculators: [
+      "protein-bedarf-rechner",
+      "koerperfett-rechner",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "International Society of Sports Nutrition position stand: safety and efficacy of creatine supplementation in exercise, sport, and medicine",
+        authors: "Kreider RB, Kalman DS, Antonio J, et al.",
+        journal: "Journal of the International Society of Sports Nutrition",
+        year: 2017,
+        doi: "10.1186/s12970-017-0173-z"
+      },
+      {
+        title: "Effect of creatine supplementation on body composition and performance: a meta-analysis",
+        authors: "Branch JD",
+        journal: "International Journal of Sport Nutrition and Exercise Metabolism",
+        year: 2003,
+        doi: "10.1123/ijsnem.13.2.198"
+      },
+      {
+        title: "Effect of creatine supplementation during resistance training on lean tissue mass and muscular strength in older adults: a meta-analysis",
+        authors: "Chilibeck PD, Kaviani M, Candow DG, Zello GA",
+        journal: "Open Access Journal of Sports Medicine",
+        year: 2017,
+        doi: "10.2147/OAJSM.S123529"
+      }
+    ],
+    kernaussage: "Kreatin-Monohydrat ist eines der best-untersuchten Supplemente. In Kombination mit Krafttraining erhöht es die fettfreie Masse zuverlässig um etwa 1-2 kg mehr als Training allein - ein Teil davon ist anfangs Wasser im Muskel. Auf das Körperfett wirkt Kreatin nicht direkt: Es ist kein Fatburner, sondern ein Trainingsverstärker, der über mehr Muskelmasse indirekt den Stoffwechsel unterstützen kann.",
+    faqs: [
+      {
+        question: "Hilft Kreatin direkt beim Abnehmen?",
+        answer: "Nein. Kreatin ist kein Fatburner und verbrennt kein Fett. Es kann den Fettabbau nur indirekt unterstützen, indem es über Krafttraining mehr Muskelmasse aufbaut und so den Stoffwechsel leicht erhöht. Für echten Fettverlust bleibt das Kaloriendefizit entscheidend."
+      },
+      {
+        question: "Wie viel Muskelmasse bringt Kreatin zusätzlich?",
+        answer: "Studien zeigen mit Krafttraining im Schnitt etwa 1-2 kg mehr fettfreie Masse als mit Training allein. Bei älteren Erwachsenen fand eine Meta-Analyse rund 1,4 kg zusätzliche fettfreie Masse gegenüber Placebo."
+      },
+      {
+        question: "Macht Kreatin Wassereinlagerungen?",
+        answer: "Ja, aber das Wasser wird in der Muskelzelle eingelagert (intrazellulär), nicht unter der Haut. Das führt nicht zu einem aufgeschwemmten Aussehen. Die anfängliche Gewichtszunahme von etwa 1 kg ist normal und kein Fett."
+      },
+      {
+        question: "Brauche ich eine Ladephase?",
+        answer: "Nein, eine Ladephase ist optional. 3-5 g Kreatin-Monohydrat täglich füllen die Muskelspeicher nach einigen Wochen genauso vollständig wie eine kurze Ladephase mit 20 g pro Tag. Wichtig ist die dauerhafte, regelmäßige Einnahme."
+      },
+      {
+        question: "Ist Kreatin sicher?",
+        answer: "Nach jahrzehntelanger Forschung gilt Kreatin-Monohydrat bei gesunden Erwachsenen in der empfohlenen Dosis von 3-5 g pro Tag als sicher und gut verträglich. Bei bestehenden Nierenerkrankungen sollte vorher ärztlicher Rat eingeholt werden."
+      }
+    ]
+  },
+  {
+    slug: "fettleber-ernaehrung-abnehmen-nafld-evidenz",
+    title: "Fettleber loswerden: Was die Ernährung wirklich bringt (NAFLD)",
+    description: "NAFLD ist umkehrbar: 7-10 % Gewichtsverlust lassen bei bis zu 90 % der Betroffenen die Leberverfettung zurückbilden. Was die Studien zeigen.",
+    tags: [
+      "fettleber",
+      "nafld",
+      "ernährung",
+      "abnehmen",
+      "gewichtsverlust",
+      "mediterrane ernährung",
+      "leberverfettung",
+      "stoffwechsel"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "taille-hueft-verhaeltnis-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Weight Loss Through Lifestyle Modification Significantly Reduces Features of Nonalcoholic Steatohepatitis",
+        authors: "Vilar-Gomez E, Martinez-Perez Y, Calzadilla-Bertot L, et al.",
+        journal: "Gastroenterology",
+        year: 2015,
+        doi: "10.1053/j.gastro.2015.04.005"
+      },
+      {
+        title: "Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, et al.",
+        journal: "The Lancet",
+        year: 2018,
+        doi: "10.1016/S0140-6736(17)33102-1"
+      },
+      {
+        title: "Primary Prevention of Cardiovascular Disease with a Mediterranean Diet Supplemented with Extra-Virgin Olive Oil or Nuts",
+        authors: "Estruch R, Ros E, Salas-Salvadó J, et al.",
+        journal: "New England Journal of Medicine",
+        year: 2018,
+        doi: "10.1056/NEJMoa1800389"
+      },
+      {
+        title: "EASL-EASD-EASO Clinical Practice Guidelines for the management of non-alcoholic fatty liver disease",
+        authors: "European Association for the Study of the Liver (EASL), European Association for the Study of Diabetes (EASD), European Association for the Study of Obesity (EASO)",
+        journal: "Journal of Hepatology",
+        year: 2016,
+        doi: "10.1016/j.jhep.2015.11.004"
+      }
+    ],
+    kernaussage: "Die nicht-alkoholische Fettleber (NAFLD/MASLD) ist in den meisten Fällen reversibel. Wirksamste Therapie ist Gewichtsverlust: Bereits 7-10 % weniger Körpergewicht bilden bei einem Großteil der Betroffenen die Leberverfettung zurück und können sogar Entzündung und beginnende Vernarbung bessern. Eine kalorienreduzierte, mediterran geprägte Kost mit wenig Zucker und verarbeiteten Lebensmitteln ist Mittel der Wahl - es gibt bislang kein zugelassenes Medikament, das dies ersetzt.",
+    faqs: [
+      {
+        question: "Wie schnell bildet sich eine Fettleber durch Ernährung zurück?",
+        answer: "Das reine Leberfett kann sich bereits innerhalb weniger Wochen bis Monate deutlich reduzieren, wenn ein Kaloriendefizit eingehalten und Zucker reduziert wird. Für die Rückbildung von Entzündung und beginnender Vernarbung ist meist ein höherer Gewichtsverlust von 7-10 % über sechs bis zwölf Monate nötig."
+      },
+      {
+        question: "Wie viel muss ich abnehmen, um die Fettleber loszuwerden?",
+        answer: "Schon 3-5 % Gewichtsverlust senken das Leberfett messbar. Für die Rückbildung einer Steatohepatitis (NASH) gilt rund 7-10 % als Zielmarke - in einer Studie bildete sich bei über 10 % Gewichtsverlust bei etwa 90 % der Patienten die NASH zurück."
+      },
+      {
+        question: "Was sollte ich bei einer Fettleber essen?",
+        answer: "Empfohlen wird eine mediterran geprägte, kalorienreduzierte Kost: viel Gemüse, Hülsenfrüchte, Olivenöl, Fisch und Nüsse, wenig Zucker, zuckergesüßte Getränke, Weißmehl und verarbeitetes Fleisch. Der Verzicht auf Softdrinks und Säfte ist ein besonders wirksamer erster Schritt."
+      },
+      {
+        question: "Gibt es ein Medikament gegen Fettleber?",
+        answer: "Stand der europäischen Leitlinien ist, dass es kein Medikament gibt, das die Lebensstil- und Ernährungsumstellung ersetzen kann. Gewichtsverlust durch Ernährung und Bewegung ist die Erstlinientherapie. Medikamente kommen allenfalls ergänzend und nach ärztlicher Entscheidung in Betracht."
+      },
+      {
+        question: "Kann auch eine schlanke Person eine Fettleber haben?",
+        answer: "Ja. Ein Teil der Betroffenen ist normalgewichtig (lean NAFLD). Hier greifen pauschale Abnehm-Empfehlungen weniger; eine ärztliche Abklärung von Stoffwechsel, Ernährung und anderen Ursachen ist besonders wichtig."
+      }
+    ]
+  },
+  {
+    slug: "cholesterin-senken-ernaehrung-evidenz",
+    title: "Cholesterin natürlich senken: Welche Ernährung wirkt?",
+    description: "LDL natürlich senken: Lösliche Ballaststoffe (3 g Beta-Glucan = ~5-6 % LDL), Pflanzensterine und die Portfolio-Diät zeigen messbare Effekte. Was die Studien sagen.",
+    tags: [
+      "cholesterin senken",
+      "ldl senken",
+      "ballaststoffe",
+      "pflanzensterine",
+      "portfolio-diaet",
+      "gesaettigte fette",
+      "ernaehrung",
+      "herzgesundheit"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "bmi-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Cholesterol-lowering effects of oat β-glucan: a meta-analysis of randomized controlled trials",
+        authors: "Whitehead A, Beck EJ, Tosh S, Wolever TMS",
+        journal: "The American Journal of Clinical Nutrition",
+        year: 2014,
+        doi: "10.3945/ajcn.114.086108"
+      },
+      {
+        title: "Continuous dose-response relationship of the LDL-cholesterol-lowering effect of phytosterol intake",
+        authors: "Demonty I, Ras RT, van der Knaap HCM, Duchateau GSMJE, Meijer L, Zock PL, Geleijnse JM, Trautwein EA",
+        journal: "The Journal of Nutrition",
+        year: 2009,
+        doi: "10.3945/jn.108.095125"
+      },
+      {
+        title: "Effects of a dietary portfolio of cholesterol-lowering foods vs lovastatin on serum lipids and C-reactive protein",
+        authors: "Jenkins DJA, Kendall CWC, Marchie A, Faulkner DA, Wong JMW, de Souza R, et al.",
+        journal: "JAMA",
+        year: 2003,
+        doi: "10.1001/jama.290.4.502"
+      },
+      {
+        title: "Reduction in saturated fat intake for cardiovascular disease",
+        authors: "Hooper L, Martin N, Jimoh OF, Kirk C, Foster E, Abdelhamid AS",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2020,
+        doi: "10.1002/14651858.CD011737.pub3"
+      }
+    ],
+    kernaussage: "Den LDL-Cholesterinwert lässt sich mit Ernährung messbar senken: Lösliche Ballaststoffe wie Hafer-Beta-Glucan (3 g/Tag) senken LDL um etwa 5-7 Prozent, Pflanzensterine (2 g/Tag) um rund 8-10 Prozent. Der kombinierte Portfolio-Diät-Ansatz erreicht zweistellige Senkungen. Die Basis bilden die Reduktion gesättigter Fette und, bei Übergewicht, ein Gewichtsverlust.",
+    faqs: [
+      {
+        question: "Wie viel Hafer muss ich essen, um den Cholesterinwert zu senken?",
+        answer: "Studien zeigen einen LDL-senkenden Effekt von etwa 5-7 Prozent bei rund 3 g Beta-Glucan pro Tag. Das entspricht ungefähr 60-80 g Haferflocken täglich. Der Effekt setzt eine regelmäßige Aufnahme über mehrere Wochen voraus."
+      },
+      {
+        question: "Wirken Pflanzensterine wirklich?",
+        answer: "Ja. Eine Meta-Analyse über 84 Studien fand, dass rund 2 g Pflanzensterine pro Tag das LDL-Cholesterin um etwa 8-9 Prozent senken. Der Effekt ist gut belegt und dosisabhängig. Ein direkter Nachweis für weniger Herzinfarkte durch Sterine selbst fehlt allerdings."
+      },
+      {
+        question: "Was ist die Portfolio-Diät?",
+        answer: "Sie kombiniert mehrere LDL-senkende Lebensmittel: lösliche Ballaststoffe, Pflanzensterine, Sojaprotein und Nüsse. In kontrollierten Studien senkte sie das LDL-Cholesterin zweistellig - deutlich mehr als jede Einzelmaßnahme, weil sich die Effekte summieren."
+      },
+      {
+        question: "Reicht Ernährung allein zum Cholesterinsenken?",
+        answer: "Bei moderat erhöhten Werten kann Ernährung viel bewirken. Bei familiärer Hypercholesterinämie, sehr hohen Werten oder bestehender Herz-Kreislauf-Erkrankung reicht sie meist nicht aus und sollte durch ärztliche Behandlung ergänzt werden."
+      },
+      {
+        question: "Sind gesättigte Fette das eigentliche Problem?",
+        answer: "Eine Cochrane-Analyse zeigt, dass das Ersetzen gesättigter Fette durch ungesättigte das kardiovaskuläre Risiko um etwa 17 Prozent senkt. Entscheidend ist das Womit: pflanzliche Öle, Nüsse und Fisch statt Butter und verarbeitetem Fleisch."
+      }
+    ]
+  },
+  {
+    slug: "10000-schritte-abnehmen-evidenz-studie",
+    title: "10.000 Schritte zum Abnehmen: Mythos oder Wahrheit?",
+    description: "Die 10.000-Schritte-Marke stammt aus der Werbung, nicht aus der Forschung. Studien zeigen: Der Nutzen flacht oft schon bei 6.000-8.000 Schritten ab.",
+    tags: [
+      "10000 schritte",
+      "abnehmen",
+      "schritte am tag",
+      "bewegung",
+      "kalorienverbrauch",
+      "studienlage",
+      "gewichtsabnahme",
+      "gesundheit"
+    ],
+    relatedCalculators: [
+      "schritte-kalorien-rechner",
+      "kalorienverbrauch-rechner",
+      "kaloriendefizit-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Daily steps and all-cause mortality: a meta-analysis of 15 international cohorts",
+        authors: "Paluch AE, Bajpai S, Bassett DR, et al.",
+        journal: "The Lancet Public Health",
+        year: 2022,
+        doi: "10.1016/S2468-2667(21)00302-9",
+        pmid: "35247352"
+      },
+      {
+        title: "Association of Step Volume and Intensity With All-Cause Mortality in Older Women",
+        authors: "Lee IM, Shiroma EJ, Kamada M, Bassett DR, Matthews CE, Buring JE",
+        journal: "JAMA Internal Medicine",
+        year: 2019,
+        doi: "10.1001/jamainternmed.2019.0899",
+        pmid: "31141585"
+      },
+      {
+        title: "Using pedometers to increase physical activity and improve health: a systematic review",
+        authors: "Bravata DM, Smith-Spangler C, Sundaram V, et al.",
+        journal: "JAMA",
+        year: 2007,
+        doi: "10.1001/jama.298.19.2296",
+        pmid: "18029834"
+      },
+      {
+        title: "World Health Organization 2020 guidelines on physical activity and sedentary behaviour",
+        authors: "Bull FC, Al-Ansari SS, Biddle S, et al.",
+        journal: "British Journal of Sports Medicine",
+        year: 2020,
+        doi: "10.1136/bjsports-2020-102955",
+        pmid: "33239350"
+      }
+    ],
+    kernaussage: "Die runde Zahl von 10.000 Schritten entstammt einer japanischen Schrittzaehler-Werbung der 1960er-Jahre, nicht der Wissenschaft. Mehr gehen senkt nachweislich das Sterberisiko und unterstuetzt das Abnehmen, doch der gesundheitliche Zugewinn flacht laut grossen Meta-Analysen meist schon zwischen 6.000 und 8.000 Schritten pro Tag deutlich ab. Fuers Abnehmen entscheidet ohnehin die gesamte Energiebilanz.",
+    faqs: [
+      {
+        question: "Muss ich wirklich 10.000 Schritte am Tag gehen, um abzunehmen?",
+        answer: "Nein. Die 10.000 sind eine willkuerliche Werbezahl ohne wissenschaftlichen Ursprung. Studien zeigen, dass der gesundheitliche Nutzen oft schon zwischen 6.000 und 8.000 Schritten deutlich abflacht. Fuers Abnehmen entscheidet ohnehin die gesamte Energiebilanz aus Bewegung und Ernaehrung."
+      },
+      {
+        question: "Wie viele Kalorien verbrenne ich mit 10.000 Schritten?",
+        answer: "Grob geschaetzt etwa 300 bis 500 Kilokalorien, abhaengig von Koerpergewicht, Tempo und Gelaende. Das entspricht ungefaehr 0,03 bis 0,05 Kalorien pro Schritt. Diese Menge ist allerdings mit ein bis zwei Snacks schnell wieder ausgeglichen."
+      },
+      {
+        question: "Wie viele Schritte sind sinnvoll, wenn ich bisher kaum gehe?",
+        answer: "Der groesste Zugewinn liegt bei den ersten zusaetzlichen Schritten. Wer von rund 3.000 auf 6.000 Schritte steigert, profitiert deutlich mehr als jemand, der von 7.000 auf 10.000 erhoeht. Schon moderate Steigerungen lohnen sich."
+      },
+      {
+        question: "Reichen Schritte allein zum Abnehmen?",
+        answer: "Meist nicht. Schrittzaehler erhoehen nachweislich die Aktivitaet und koennen das Gewicht leicht senken, der Effekt ist aber klein. Nachhaltiges Abnehmen gelingt nur mit einem moderaten Kaloriendefizit, das Sie ueber die Ernaehrung steuern."
+      },
+      {
+        question: "Was empfiehlt die WHO statt einer Schrittzahl?",
+        answer: "Die WHO-Leitlinie von 2020 nennt keine Schrittzahl, sondern 150 bis 300 Minuten moderate koerperliche Aktivitaet pro Woche fuer Erwachsene. Schritte sind nur eine bequeme Hilfsgroesse, um dieses Ziel im Alltag zu erreichen."
+      }
+    ]
+  },
+  {
+    slug: "fdh-friss-die-haelfte-portionskontrolle-evidenz",
+    title: "FdH (Friss die Hälfte): Funktioniert Portionskontrolle wirklich?",
+    description: "FdH bedeutet kleinere Portionen und damit ein Kaloriendefizit. Studien zeigen: Portionsgröße steuert die Essmenge stark – aber zu radikal birgt Risiken.",
+    tags: [
+      "fdh diät",
+      "friss die hälfte",
+      "portionskontrolle",
+      "abnehmen",
+      "kaloriendefizit",
+      "portionsgröße",
+      "ernährung",
+      "gewichtsverlust"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "protein-bedarf-rechner"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245"
+      },
+      {
+        title: "Portion, package or tableware size for changing selection and consumption of food, alcohol and tobacco",
+        authors: "Hollands GJ, Shemilt I, Marteau TM, Jebb SA, et al.",
+        journal: "Cochrane Database of Systematic Reviews",
+        year: 2015,
+        doi: "10.1002/14651858.CD011045.pub2"
+      },
+      {
+        title: "Primary care-led weight management for remission of type 2 diabetes (DiRECT): an open-label, cluster-randomised trial",
+        authors: "Lean MEJ, Leslie WS, Barnes AC, Brosnahan N, et al.",
+        journal: "The Lancet",
+        year: 2018,
+        doi: "10.1016/S0140-6736(17)33102-1"
+      },
+      {
+        title: "Cardiovascular Effects of Intensive Lifestyle Intervention in Type 2 Diabetes",
+        authors: "The Look AHEAD Research Group",
+        journal: "New England Journal of Medicine",
+        year: 2013,
+        doi: "10.1056/NEJMoa1212914"
+      }
+    ],
+    kernaussage: "FdH (\"Friss die Hälfte\") ist im Kern nichts anderes als Portionskontrolle und damit ein Kaloriendefizit – der einzige nachgewiesene Mechanismus jeder Abnehmstrategie. Dass größere Portionen automatisch zu mehr Konsum führen, ist durch ein Cochrane-Review gut belegt. Die Methode funktioniert, solange das Halbieren nicht so radikal ausfällt, dass Hunger, Muskelabbau und Nährstoffmängel das Durchhalten und die Gesundheit gefährden.",
+    faqs: [
+      {
+        question: "Funktioniert FdH wirklich zum Abnehmen?",
+        answer: "Ja, im Prinzip. FdH bedeutet kleinere Portionen und damit weniger Kalorien – ein Kaloriendefizit ist der einzige nachgewiesene Mechanismus zum Abnehmen. Ein Cochrane-Review belegt, dass kleinere Portionen den Konsum zuverlässig senken. Entscheidend ist, dass das Defizit moderat bleibt und Sie es durchhalten können."
+      },
+      {
+        question: "Ist FdH gesund oder gefährlich?",
+        answer: "FdH ist gesund, solange Sie nicht alles stur halbieren. Reduzieren Sie vor allem energiedichte, nährstoffarme Anteile und erhalten Sie Eiweiß, Gemüse und Obst. Zu radikales Halbieren kann zu Heißhunger, Muskelabbau und einer unzureichenden Versorgung mit Vitaminen, Mineralstoffen und Protein führen."
+      },
+      {
+        question: "Wie viel sollte ich beim Abnehmen weniger essen?",
+        answer: "Ein moderates Defizit von etwa 300 bis 500 Kalorien pro Tag ist alltagstauglich und nachhaltiger als radikales Hungern. Buchstäblich die Hälfte aller Portionen ist oft zu viel des Guten. Schätzen Sie Ihren Bedarf mit einem Kalorienbedarf-Rechner und planen Sie ein realistisches Minus ein."
+      },
+      {
+        question: "Spielt es eine Rolle, was ich weglasse?",
+        answer: "Ja. Studien wie DIETFITS zeigen, dass die Diätform (Low-Fat vs. Low-Carb) für den Gewichtsverlust kaum eine Rolle spielt – die Kalorienmenge zählt. Für Gesundheit und Sättigung lohnt es sich aber, beim Halbieren vor allem Süßes, Saucen und Beilagen zu reduzieren und Eiweiß sowie Gemüse weitgehend zu behalten."
+      }
+    ]
+  },
+  {
+    slug: "eier-fruehstueck-abnehmen-saettigung-studie",
+    title: "Eier zum Frühstück: Machen sie wirklich länger satt?",
+    description: "Studien zeigen: Ein Ei-Frühstück sättigt stärker und senkt die Tageskalorien um rund 270-400 kcal - ein nützlicher, aber kein magischer Abnehm-Hebel.",
+    tags: [
+      "Eier",
+      "Frühstück",
+      "Sättigung",
+      "Eiweiß",
+      "Abnehmen",
+      "Protein",
+      "Ernährungsstudien"
+    ],
+    relatedCalculators: [
+      "protein-bedarf-rechner",
+      "kaloriendefizit-berechnen",
+      "makros-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 6,
+    sources: [
+      {
+        title: "Egg breakfast enhances weight loss",
+        authors: "Vander Wal JS, Gupta A, Khosla P, Dhurandhar NV",
+        journal: "International Journal of Obesity",
+        year: 2008,
+        doi: "10.1038/ijo.2008.130",
+        pmid: "18679412"
+      },
+      {
+        title: "Short-Term Effect of Eggs on Satiety in Overweight and Obese Subjects",
+        authors: "Vander Wal JS, Marth JM, Khosla P, Jen KL, Dhurandhar NV",
+        journal: "Journal of the American College of Nutrition",
+        year: 2005,
+        doi: "10.1080/07315724.2005.10719497",
+        pmid: "16373948"
+      },
+      {
+        title: "Consuming eggs for breakfast influences plasma glucose and ghrelin, while reducing energy intake during the next 24 hours in adult men",
+        authors: "Ratliff J, Leite JO, de Ogburn R, Puglisi MJ, VanHeest J, Fernandez ML",
+        journal: "Nutrition Research",
+        year: 2010,
+        doi: "10.1016/j.nutres.2010.01.002",
+        pmid: "20226994"
+      },
+      {
+        title: "Energy Intake and Satiety Responses of Eggs for Breakfast in Overweight and Obese Adults - A Crossover Study",
+        authors: "Keogh JB, Clifton PM",
+        journal: "International Journal of Environmental Research and Public Health",
+        year: 2020,
+        doi: "10.3390/ijerph17155583",
+        pmid: "32756313"
+      },
+      {
+        title: "No Difference in Weight Loss, Glucose, Lipids and Vitamin D of Eggs for Breakfast Compared with Cereal for Breakfast during Energy Restriction",
+        authors: "Keogh JB, Clifton PM",
+        journal: "International Journal of Environmental Research and Public Health",
+        year: 2020,
+        doi: "10.3390/ijerph17238827",
+        pmid: "33261155"
+      }
+    ],
+    kernaussage: "Ein eiweißreiches Ei-Frühstück sättigt in kontrollierten Studien stärker als ein gleich kalorisches Brot- oder Müsli-Frühstück und senkt die spätere Kalorienaufnahme messbar - in Crossover-Versuchen um etwa 270-400 kcal über 24 Stunden. Unter streng kontrollierter Diät über sechs Monate verschwindet der Vorteil jedoch: Eier sind ein sinnvoller Sättigungs-Hebel, aber kein eigenständiger Schlankmacher.",
+    faqs: [
+      {
+        question: "Machen Eier zum Frühstück wirklich länger satt?",
+        answer: "Ja, in kontrollierten Studien sättigt ein Ei-Frühstück stärker als ein gleich kalorisches Brot- oder Müsli-Frühstück. Probanden berichteten weniger Hunger und aßen beim nächsten Essen weniger. Der wahrscheinliche Grund ist der hohe Eiweißanteil, denn Protein ist der sättigendste Makronährstoff."
+      },
+      {
+        question: "Wie viele Kalorien spart man durch ein Ei-Frühstück?",
+        answer: "In Crossover-Studien lag die spätere Kalorienaufnahme über 24 Stunden grob 200-400 kcal niedriger als nach einem eiweißarmen Frühstück wie Bagel oder Cornflakes. Das ist ein nützlicher Rückenwind, aber keine garantierte Menge - der Effekt hängt stark vom Vergleichsfrühstück und der jeweiligen Person ab."
+      },
+      {
+        question: "Helfen Eier beim Abnehmen?",
+        answer: "Indirekt. Kurzfristig führte ein Ei-Frühstück in einer 8-Wochen-Diätstudie zu etwas mehr Gewichtsverlust. Unter streng kontrollierter Kalorienrestriktion über 6 Monate gab es jedoch keinen Unterschied zu einem Müsli-Frühstück. Eier helfen vor allem, spontan weniger zu essen - sie ersetzen kein Kaloriendefizit."
+      },
+      {
+        question: "Sind Eier oder Haferflocken zum Frühstück besser zum Abnehmen?",
+        answer: "Entscheidend ist das Eiweiß, nicht das Ei an sich. Eier schlagen vor allem eiweißarme Frühstücke wie Cornflakes oder Weißbrot. Gegen ein proteinreiches Frühstück wie Haferflocken mit Quark oder Skyr dürfte der Vorteil klein sein. Wählen Sie, was Sie satt hält und gut sättigt."
+      },
+      {
+        question: "Wie viele Eier sind zum Frühstück sinnvoll?",
+        answer: "In den Studien wurden meist zwei Eier eingesetzt (rund 140-160 kcal). Das ist für die meisten Menschen unbedenklich. Achten Sie eher auf die Zubereitung: Butter, Öl, Speck oder Käse erhöhen die Kalorien deutlich und können den Sättigungsvorteil zunichtemachen."
+      }
+    ]
+  },
+  {
+    slug: "trennkost-mythos-faktencheck-studie",
+    title: "Trennkost im Faktencheck: Bringt das Trennen von Kohlenhydraten und Eiweiss etwas?",
+    description: "RCT-Faktencheck: Bei gleichen 1100 kcal nahmen Trennkost- und Mischkost-Gruppe gleich ab (6,2 vs 7,5 kg). Abnehmen haengt vom Kaloriendefizit ab, nicht vom Trennen.",
+    tags: [
+      "trennkost abnehmen",
+      "trennkost mythos",
+      "trennkost sinnvoll",
+      "kohlenhydrate eiweiss trennen",
+      "trennkost erfahrungen",
+      "kaloriendefizit",
+      "ernaehrungsmythos",
+      "abnehmen"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "makros-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 7,
+    sources: [
+      {
+        title: "Similar weight loss with low-energy food combining or balanced diets",
+        authors: "Golay A, Allaz AF, Ybarra J, Bianchi P, Saraiva S, Mensi N, Gomis R, de Tonnac N",
+        journal: "International Journal of Obesity and Related Metabolic Disorders",
+        year: 2000,
+        doi: "10.1038/sj.ijo.0801185",
+        pmid: "10805507"
+      },
+      {
+        title: "Comparison of Weight Loss Among Named Diet Programs in Overweight and Obese Adults: A Meta-analysis",
+        authors: "Johnston BC, Kanters S, Bandayrel K, Wu P, Naji F, Siemieniuk RA, et al.",
+        journal: "JAMA",
+        year: 2014,
+        doi: "10.1001/jama.2014.10397",
+        pmid: "25182101"
+      },
+      {
+        title: "Effect of Low-Fat vs Low-Carbohydrate Diet on 12-Month Weight Loss in Overweight Adults and the Association With Genotype Pattern or Insulin Secretion: The DIETFITS Randomized Clinical Trial",
+        authors: "Gardner CD, Trepanowski JF, Del Gobbo LC, Hauser ME, Rigdon J, Ioannidis JPA, et al.",
+        journal: "JAMA",
+        year: 2018,
+        doi: "10.1001/jama.2018.0245",
+        pmid: "29466592"
+      }
+    ],
+    kernaussage: "Die Trennkost-Theorie, wonach Kohlenhydrate und Eiweiss nicht gemeinsam verdaut werden koennen, ist physiologisch nicht haltbar. In einer kontrollierten Studie nahmen Trennkost- und Mischkost-Gruppe bei identischen 1100 Kalorien praktisch gleich viel ab (6,2 vs. 7,5 kg, kein signifikanter Unterschied). Entscheidend fuer den Gewichtsverlust ist das Kaloriendefizit, nicht das Trennen der Naehrstoffe.",
+    faqs: [
+      {
+        question: "Bringt Trennkost beim Abnehmen ueberhaupt etwas?",
+        answer: "Nicht durch das Trennen selbst. In einer kontrollierten Studie nahmen Trennkost- und Mischkost-Gruppe bei identischen 1100 Kalorien pro Tag praktisch gleich viel ab (6,2 vs. 7,5 kg, kein signifikanter Unterschied). Wer mit Trennkost abnimmt, isst dabei meist unbewusst weniger Kalorien - und genau das fuehrt zum Erfolg, nicht das Trennen der Naehrstoffe."
+      },
+      {
+        question: "Kann der Koerper Kohlenhydrate und Eiweiss wirklich nicht gleichzeitig verdauen?",
+        answer: "Doch. Der Verdauungstrakt verarbeitet beides parallel: Im Mund startet die Kohlenhydratverdauung, im Magen die Eiweissverdauung, im Duenndarm liefert die Bauchspeicheldruese gleichzeitig Enzyme fuer alle Naehrstoffe. Nahezu jedes natuerliche Lebensmittel enthaelt ohnehin beides zusammen - eine echte Trennung ist biologisch gar nicht moeglich."
+      },
+      {
+        question: "Warum berichten Menschen von guten Trennkost-Erfahrungen?",
+        answer: "Weil sie beim Achten auf Naehrstoff-Kombinationen meist bewusster und insgesamt weniger essen: mehr Gemuese, kleinere Portionen, weniger stark verarbeitete Mischgerichte. Das senkt die Kalorienzufuhr und erzeugt ein Defizit. Der Gewichtsverlust kommt also vom geringeren Kalorienkonsum, nicht vom Trennen."
+      },
+      {
+        question: "Was ist dann wirklich entscheidend fuers Abnehmen?",
+        answer: "Das Kaloriendefizit - dauerhaft etwas weniger Energie aufnehmen als verbrauchen. Eine grosse JAMA-Meta-Analyse ueber rund 7.300 Personen zeigt: Die Unterschiede zwischen Diaet-Typen sind klein, entscheidend ist, ob man die Ernaehrung durchhaelt. Waehlen Sie eine Form, die zu Ihrem Alltag passt."
+      }
+    ]
+  },
+  {
+    slug: "zuckersucht-faktencheck-gibt-es-das",
+    title: "Zuckersucht: Gibt es das wirklich? Der Faktencheck",
+    description: "Faktencheck: Eine echte Zuckerabhängigkeit ist beim Menschen kaum belegt. Reviews finden, dass das Verlangen meist verhaltens- statt stoffwechselbedingt ist.",
+    tags: [
+      "Zucker",
+      "Zuckersucht",
+      "Heißhunger",
+      "Mythen",
+      "Ernährung",
+      "Abnehmen"
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "makros-berechnen",
+      "kalorienbedarf-berechnen"
+    ],
+    publishedAt: "2026-06-16",
+    readingTime: 8,
+    sources: [
+      {
+        title: "Sugar addiction: the state of the science",
+        authors: "Westwater ML, Fletcher PC, Ziauddeen H",
+        journal: "European Journal of Nutrition",
+        year: 2016,
+        doi: "10.1007/s00394-016-1229-6",
+        pmid: "27372453",
+        url: "https://doi.org/10.1007/s00394-016-1229-6"
+      },
+      {
+        title: "Evidence for sugar addiction: Behavioral and neurochemical effects of intermittent, excessive sugar intake",
+        authors: "Avena NM, Rada P, Hoebel BG",
+        journal: "Neuroscience & Biobehavioral Reviews",
+        year: 2008,
+        doi: "10.1016/j.neubiorev.2007.04.019",
+        pmid: "17617461",
+        url: "https://doi.org/10.1016/j.neubiorev.2007.04.019"
+      },
+      {
+        title: "Eating dependence and weight gain; no human evidence for a 'sugar-addiction' model of overweight",
+        authors: "Markus CR, Rogers PJ, Brouns F, Schepers R",
+        journal: "Appetite",
+        year: 2017,
+        doi: "10.1016/j.appet.2017.03.024",
+        pmid: "28330706",
+        url: "https://doi.org/10.1016/j.appet.2017.03.024"
+      }
+    ],
+    kernaussage: "Eine stoffwechselbedingte Zuckerabhängigkeit nach dem Vorbild von Drogen ist beim Menschen wissenschaftlich nicht belegt. Die viel zitierten Sucht-Anzeichen stammen aus Ratten-Experimenten mit zeitlich stark eingeschränktem Zuckerzugang. Übersichtsarbeiten kommen übereinstimmend zu dem Schluss, dass das starke Verlangen nach Süßem beim Menschen überwiegend verhaltens- und kontextbedingt ist – also lern- und veränderbar, nicht eine Sucht im engeren klinischen Sinn.",
+    faqs: [
+      {
+        question: "Macht Zucker wirklich süchtig wie eine Droge?",
+        answer: "Beim Menschen ist das wissenschaftlich nicht belegt. Die maßgebliche Übersichtsarbeit von Westwater et al. (2016) findet wenig Hinweise auf eine echte Zuckerabhängigkeit. Die eindrucksvollen Sucht-Effekte stammen fast ausschließlich aus Ratten-Versuchen mit künstlich eingeschränktem Zuckerzugang und sind nicht eins zu eins auf den menschlichen Essalltag übertragbar."
+      },
+      {
+        question: "Warum habe ich dann ständig Heißhunger auf Süßes?",
+        answer: "Das Verlangen ist real, hat aber meist verhaltens- und kontextbedingte Ursachen: Gewohnheit (z. B. Süßes abends auf dem Sofa), strenge Verbote, Schlafmangel, Stress und Blutzucker-Schwankungen nach sehr zuckerreichen Mahlzeiten. Das sind erlernte Muster, die sich verändern lassen – kein Stoffwechseldefekt."
+      },
+      {
+        question: "Ist Zuckersucht eine anerkannte Diagnose?",
+        answer: "Nein. Im psychiatrischen Klassifikationssystem DSM-5 gibt es keine Kategorie Zuckersucht. Diskutiert wird allenfalls eine Verhaltenssucht im Sinne einer 'food addiction', die aber selbst umstritten ist und sich auf das Essverhalten bezieht, nicht auf Zucker als einzelnen Suchtstoff."
+      },
+      {
+        question: "Wie überwinde ich das Verlangen nach Zucker am besten?",
+        answer: "Setzen Sie am Verhalten an statt an Verboten: kleine Mengen bewusst einplanen statt komplett streichen, zuerst Eiweiß und Ballaststoffe essen, Auslöser-Situationen entkoppeln, auf ausreichend Schlaf achten und die Gesamt-Kalorienbilanz im Blick behalten. So lässt sich das erlernte Muster Schritt für Schritt auflösen."
+      },
+      {
+        question: "Muss ich Zucker komplett weglassen, um abzunehmen?",
+        answer: "Nein. Entscheidend fürs Gewicht ist die gesamte Energiebilanz, nicht der einzelne Würfelzucker. Radikale Verbote erhöhen oft sogar den Reiz und das Risiko von Überkonsum. Sinnvoller ist eine moderate Reduktion zuckerreicher, energiedichter Lebensmittel innerhalb eines realistischen Kalorienrahmens."
+      }
+    ]
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
