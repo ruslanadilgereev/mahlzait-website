@@ -7775,6 +7775,44 @@ export function getAllTags(): string[] {
   return Array.from(tags).sort();
 }
 
+// Kuratierte Themen-Kategorien (statt 500+ Roh-Tags).
+// Reihenfolge = Anzeige-Reihenfolge; Zuordnung per erstem Treffer in matchersByLabel (Prioritaet).
+export interface WissenCategory {
+  label: string;
+  icon: string;
+}
+export const WISSEN_CATEGORIES: WissenCategory[] = [
+  { label: "Diäten & Strategien", icon: "🥗" },
+  { label: "Ernährung & Nährstoffe", icon: "🍎" },
+  { label: "Stoffwechsel & Gesundheit", icon: "🩺" },
+  { label: "Mythen & Faktencheck", icon: "🧠" },
+  { label: "Intervallfasten & Timing", icon: "⏰" },
+  { label: "Sport & Training", icon: "💪" },
+  { label: "Abnehmmittel & Supplemente", icon: "💊" },
+  { label: "Apps, Tracking & Verhalten", icon: "📱" },
+];
+
+// Prioritaets-Reihenfolge der Zuordnung (spezifisch -> allgemein).
+const CATEGORY_MATCHERS: { label: string; subs: string[] }[] = [
+  { label: "Intervallfasten & Timing", subs: ["intervallfasten", "-fasten", "fasting", "16-8", "5-2", "omad", "alternate-day", "heilfasten", "zeitfenster", "spaet-essen", "chronotyp", "nuechtern", "fasted"] },
+  { label: "Abnehmmittel & Supplemente", subs: ["abnehmspritze", "ozempic", "wegovy", "orlistat", "abnehmtabletten", "garcinia", "fatburner", "glucomannan", "flohsamen", "psyllium", "eiweissshake", "whey", "kreatin", "vitamin-d", "omega-3", "zuckeralternativen", "suessstoffe"] },
+  { label: "Mythen & Faktencheck", subs: ["mythos", "faktencheck", "detox", "apfelessig", "trennkost", "basenfasten", "zuckersucht", "spot-reduction", "glutenfrei", "cheat-day", "fitness-mythen", "fett-macht-fett", "kohlenhydrate-abends", "fruehstueck-wichtigste", "viele-kleine-mahlzeiten", "stoffwechsel-eingeschlafen", "butterkaffee", "bulletproof", "gruene-smoothies"] },
+  { label: "Apps, Tracking & Verhalten", subs: ["app", "tracking", "kalorienzaehlen", "self-monitoring", "motivation", "emotionales-essen", "intuitive", "meal-prep", "teller-methode", "fdh", "restaurant", "ki-ernaehrung", "vereinfacht", "digital", "ernaehrungsplan", "facebook", "ernaehrungswissenschaft"] },
+  { label: "Sport & Training", subs: ["training", "krafttraining", "hiit", "cardio", "aerobes", "bauchmuskel", "neat", "body-recomposition", "10000-schritte", "kalorienverbrauch", "sport-vs"] },
+  { label: "Stoffwechsel & Gesundheit", subs: ["stoffwechsel", "grundumsatz", "schilddruese", "insulin", "pcos", "darmflora", "mikrobiom", "leptin", "ghrelin", "cortisol", "stress", "schlaf", "viszerales", "bauchfett", "fettleber", "cholesterin", "gicht", "fodmap", "bmi", "koerperfett", "taille", "gewichtsschwankung", "hcg", "blutzucker", "zimt", "fruktose"] },
+  { label: "Diäten & Strategien", subs: ["diaet", "keto", "low-carb", "low-fat", "atkins", "dukan", "paleo", "mittelmeer", "dash", "glyx", "glykaemischer", "formula", "kaloriendefizit", "plateau", "crash", "suppendiaet", "1200-kalorien", "jojo", "schnell-vs-langsam", "wechseljahre", "ab-50", "schwangerschaft", "ohne-sport", "gewichthalten", "gewichtsverlust-halten", "calerie", "vegane", "weight-watchers"] },
+  { label: "Ernährung & Nährstoffe", subs: ["protein", "eiweiss", "makros", "ballaststoffe", "vollkorn", "nuesse", "gruener-tee", "kaffee", "alkohol", "wasser", "zucker", "suessgetraenke", "softdrinks", "fluessige-kalorien", "ultra-verarbeitet", "milchprodukte", "rotes-fleisch", "gemuese", "sattmacher", "chia", "ingwer", "gesaettigte", "resistente-staerke", "kohlenhydrate", "energiedichte", "heisshunger", "insulinresistenz", "fruehstueck", "eier", "nieren"] },
+];
+
+// Ordnet einen Artikel genau einer Kategorie zu (erster Treffer per slug). Fallback: Ernährung & Nährstoffe.
+export function getArticleCategory(article: ArticleMeta): string {
+  const slug = article.slug;
+  for (const { label, subs } of CATEGORY_MATCHERS) {
+    if (subs.some((s) => slug.includes(s))) return label;
+  }
+  return "Ernährung & Nährstoffe";
+}
+
 // Helper: Verwandte Artikel finden (basierend auf gemeinsamen Tags)
 export function getRelatedArticles(slug: string, limit: number = 4): ArticleMeta[] {
   const article = getArticleMeta(slug);

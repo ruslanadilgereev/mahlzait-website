@@ -4,6 +4,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import type { ArticleMeta } from "@content/wissen";
+import { getArticleCategory } from "@content/wissen";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import rehypeRaw from "rehype-raw";
@@ -60,17 +61,14 @@ function ArticlePage({ config, article, content, relatedArticles, relatedFoods, 
             </ul>
           </nav>
 
-          {/* Tags */}
+          {/* Kategorie */}
           <div className="flex flex-wrap gap-2 mb-4">
-            {article.tags.map((tag) => (
-              <a
-                key={tag}
-                href={`/wissen?tag=${encodeURIComponent(tag)}`}
-                className="badge badge-outline hover:badge-primary transition-colors"
-              >
-                {tag}
-              </a>
-            ))}
+            <a
+              href={`/wissen?cat=${encodeURIComponent(getArticleCategory(article))}`}
+              className="badge badge-outline hover:badge-primary transition-colors"
+            >
+              {getArticleCategory(article)}
+            </a>
           </div>
 
           {/* Title */}

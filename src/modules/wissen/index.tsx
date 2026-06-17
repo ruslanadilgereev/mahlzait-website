@@ -3,8 +3,9 @@ import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import type { ArticleMeta } from "@content/wissen";
+import { WISSEN_CATEGORIES, getArticleCategory } from "@content/wissen";
 import { calculatorSupportLinks, guideSupportLinks } from "utils/seoHubLinks";
 
 interface Props {
@@ -22,22 +23,40 @@ function formatDate(dateStr: string): string {
   });
 }
 
-function WissenPage({ config, articles, allTags }: Props) {
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+function WissenPage({ config, articles }: Props) {
+  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
   const [searchquery, setSearchquery] = useState("");
+
+  // Kategorie aus ?cat=-Parameter übernehmen (Links von Detailseiten)
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get("cat");
+    if (cat && WISSEN_CATEGORIES.some((c) => c.label === cat)) {
+      setSelectedCategory(cat);
+    }
+  }, []);
+
+  // Anzahl Artikel je Kategorie (für die Filter-Buttons)
+  const categoryCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    articles.forEach((a) => {
+      const c = getArticleCategory(a);
+      counts[c] = (counts[c] || 0) + 1;
+    });
+    return counts;
+  }, [articles]);
 
   const filteredArticles = useMemo(() => {
     return articles.filter((article) => {
-      const matchesTag =
-        !selectedTag ||
-        article.tags.some((t) => t.toLowerCase() === selectedTag.toLowerCase());
+      const matchesCategory =
+        !selectedCategory || getArticleCategory(article) === selectedCategory;
       const matchesSearch =
         !searchquery ||
         article.title.toLowerCase().includes(searchquery.toLowerCase()) ||
         article.description.toLowerCase().includes(searchquery.toLowerCase());
-      return matchesTag && matchesSearch;
+      return matchesCategory && matchesSearch;
     });
-  }, [articles, selectedTag, searchquery]);
+  }, [articles, selectedCategory, searchquery]);
 
   return (
     <ConfigContext.Provider value={config}>
@@ -74,23 +93,31 @@ function WissenPage({ config, articles, allTags }: Props) {
             </div>
           </div>
 
-          {/* Tag Filter */}
+          {/* Kategorie-Filter */}
           <div className="flex flex-wrap justify-center gap-2 mb-12">
             <button
-              className={`btn btn-sm ${!selectedTag ? "btn-primary" : "btn-ghost"}`}
-              onClick={() => setSelectedTag(null)}
+              className={`btn btn-sm ${!selectedCategory ? "btn-primary" : "btn-ghost"}`}
+              onClick={() => setSelectedCategory(null)}
             >
-              Alle
+              Alle ({articles.length})
             </button>
-            {allTags.map((tag) => (
-              <button
-                key={tag}
-                className={`btn btn-sm ${selectedTag === tag ? "btn-primary" : "btn-ghost"}`}
-                onClick={() => setSelectedTag(selectedTag === tag ? null : tag)}
-              >
-                {tag}
-              </button>
-            ))}
+            {WISSEN_CATEGORIES.map((cat) => {
+              const count = categoryCounts[cat.label] || 0;
+              if (count === 0) return null;
+              return (
+                <button
+                  key={cat.label}
+                  className={`btn btn-sm ${selectedCategory === cat.label ? "btn-primary" : "btn-ghost"}`}
+                  onClick={() =>
+                    setSelectedCategory(
+                      selectedCategory === cat.label ? null : cat.label,
+                    )
+                  }
+                >
+                  <span aria-hidden="true">{cat.icon}</span> {cat.label} ({count})
+                </button>
+              );
+            })}
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 mb-4">
@@ -125,16 +152,11 @@ function WissenPage({ config, articles, allTags }: Props) {
                     className="card bg-base-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1"
                   >
                     <div className="card-body">
-                      {/* Tags */}
+                      {/* Kategorie */}
                       <div className="flex flex-wrap gap-1 mb-2">
-                        {article.tags.slice(0, 2).map((tag) => (
-                          <span
-                            key={tag}
-                            className="badge badge-outline badge-sm"
-                          >
-                            {tag}
-                          </span>
-                        ))}
+                        <span className="badge badge-outline badge-sm">
+                          {getArticleCategory(article)}
+                        </span>
                         {article.featured && (
                           <span className="badge badge-primary badge-sm">
                             Featured
