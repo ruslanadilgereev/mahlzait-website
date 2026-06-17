@@ -56,3 +56,11 @@ export function foodsByProteinDesc(): FoodEntry[] {
 export function foodsByName(): FoodEntry[] {
   return [...allFoods].sort((a, b) => a.name.localeCompare(b.name, "de"));
 }
+
+// Nach Kohlenhydraten aufsteigend (low carb / kohlenhydratarm zuerst).
+// Getränke ausgeschlossen (verzerren die Liste mit 0g) — Fokus auf echte Lebensmittel.
+export function foodsByCarbsAsc(): FoodEntry[] {
+  return [...allFoods]
+    .filter((f) => f.category !== "getraenk")
+    .sort((a, b) => a.overview.carbs_per_100g - b.overview.carbs_per_100g);
+}

@@ -43,6 +43,7 @@ const coreEntries: SitemapEntry[] = [
   { url: `${siteUrl}/kalorienarme-lebensmittel/`, changefreq: "weekly", priority: 0.8 },
   { url: `${siteUrl}/eiweissreiche-lebensmittel/`, changefreq: "weekly", priority: 0.8 },
   { url: `${siteUrl}/kalorienreiche-lebensmittel/`, changefreq: "weekly", priority: 0.7 },
+  { url: `${siteUrl}/low-carb-lebensmittel/`, changefreq: "weekly", priority: 0.7 },
   { url: `${siteUrl}/kalorien/kategorie/supermarkt/`, changefreq: "monthly", priority: 0.7 },
   { url: `${siteUrl}/kalorien/kategorie/gericht/`, changefreq: "monthly", priority: 0.7 },
   { url: `${siteUrl}/kalorien/kategorie/fast-food/`, changefreq: "monthly", priority: 0.7 },
