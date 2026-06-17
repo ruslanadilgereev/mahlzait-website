@@ -25,7 +25,7 @@ export default defineConfig({
     tailwind(),
     agentsSummary(),
     ...(enableIndexNow
-      ? [indexnow({ key: "1c802a7f00434fe04c269ffb5f9e526a" })]
+      ? [indexnow({ key: "7bb723df280c7edd23f15dfedf45fb3f" })]
       : []),
   ],
 });
