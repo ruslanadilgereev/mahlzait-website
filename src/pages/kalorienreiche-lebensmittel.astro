@@ -1,0 +1,105 @@
+---
+import Layout from "Layout.astro";
+import FoodListTable from "@components/FoodListTable.astro";
+import defaultTemplateConfig from "utils/config";
+import { foodsByCaloriesDesc } from "utils/foodData";
+
+const seo = {
+  title: "Kalorienreiche Lebensmittel: Top-Liste (Zunehmen & Energie) | Mahlzait",
+  description:
+    "Kalorienreiche Lebensmittel mit den meisten Kalorien pro 100g – nützlich zum Zunehmen, für Sportler oder bewusst zu reduzieren.",
+};
+const siteUrl = "https://www.mahlzait.de";
+const foods = foodsByCaloriesDesc().slice(0, 100);
+
+const faq = [
+  {
+    question: "Welche Lebensmittel haben die meisten Kalorien?",
+    answer:
+      "Reine Fette und Öle führen mit ca. 800–900 kcal/100g. Es folgen Nüsse, Nussmus, Butter, Schokolade und fettreiche Wurst – alle deutlich über 500 kcal/100g.",
+  },
+  {
+    question: "Sind kalorienreiche Lebensmittel ungesund?",
+    answer:
+      "Nicht automatisch. Nüsse, Olivenöl und Avocado sind kalorienreich, aber sehr nährstoffreich. Entscheidend ist die Menge und die Gesamtbilanz – beim Zunehmen sind sie sogar hilfreich.",
+  },
+  {
+    question: "Welche kalorienreichen Lebensmittel helfen beim Zunehmen?",
+    answer:
+      "Nährstoffreiche, energiedichte Lebensmittel wie Nüsse, Nussmus, Trockenfrüchte, Vollfett-Milchprodukte, Haferflocken und hochwertige Öle liefern viele Kalorien in kleinem Volumen – ideal, wenn man zunehmen möchte.",
+  },
+];
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: siteUrl },
+    { "@type": "ListItem", position: 2, name: "Kalorienreiche Lebensmittel", item: `${siteUrl}/kalorienreiche-lebensmittel/` },
+  ],
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Kalorienreiche Lebensmittel",
+  numberOfItems: foods.length,
+  itemListElement: foods.map((food, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `${food.name} – ${Math.round(food.overview.calories_per_100g)} kcal/100g`,
+    url: `${siteUrl}/kalorien/${food.slug}/`,
+  })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+  <main class="max-w-screen-lg mx-auto px-4 py-8 md:py-12">
+    <nav class="text-sm opacity-60 mb-4" aria-label="Breadcrumb">
+      <a href="/" class="hover:underline">Start</a> ›
+      <a href="/kalorientabelle/" class="hover:underline">Kalorientabelle</a> › Kalorienreiche Lebensmittel
+    </nav>
+
+    <header class="mb-6">
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+        Kalorienreiche Lebensmittel: die Top-Liste
+      </h1>
+      <p class="mt-4 text-lg opacity-80">
+        Diese {foods.length} Lebensmittel haben die meisten Kalorien pro
+        100&nbsp;g. Nützlich, wenn du zunehmen möchtest oder viel Energie
+        brauchst – und gut zu kennen, wenn du bewusst reduzieren willst.
+      </p>
+    </header>
+
+    <div class="flex flex-wrap gap-3 mb-8">
+      <a href="/kalorientabelle/" class="btn btn-sm btn-outline">📋 Komplette Kalorientabelle</a>
+      <a href="/kalorienarme-lebensmittel/" class="btn btn-sm btn-outline">🥒 Kalorienarme Lebensmittel</a>
+      <a href="/kalorienbedarf-berechnen/" class="btn btn-sm btn-primary">Kalorienbedarf berechnen</a>
+    </div>
+
+    <FoodListTable foods={foods} highlight="calories" />
+
+    <section class="mt-12 prose max-w-none">
+      <h2>Häufige Fragen</h2>
+      {faq.map((f) => (
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold">{f.question}</h3>
+          <p class="opacity-80">{f.answer}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="mt-10 rounded-2xl bg-base-200 p-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Kalorien einfach tracken</h2>
+      <p class="opacity-80 mb-4">Mit Mahlzait erkennst du die Kalorien deiner Mahlzeiten automatisch per Foto.</p>
+      <a href={defaultTemplateConfig.appStoreLink} class="btn btn-primary">App laden</a>
+    </section>
+  </main>
+</Layout>

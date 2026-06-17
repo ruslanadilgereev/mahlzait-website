@@ -1,0 +1,105 @@
+---
+import Layout from "Layout.astro";
+import FoodListTable from "@components/FoodListTable.astro";
+import defaultTemplateConfig from "utils/config";
+import { foodsByProteinDesc } from "utils/foodData";
+
+const seo = {
+  title: "Eiweißreiche Lebensmittel: Top-Liste mit viel Protein | Mahlzait",
+  description:
+    "Eiweißreiche & proteinreiche Lebensmittel – nach Protein pro 100g sortiert. Ideal für Muskelaufbau, Sättigung und zum Abnehmen.",
+};
+const siteUrl = "https://www.mahlzait.de";
+const foods = foodsByProteinDesc().slice(0, 120);
+
+const faq = [
+  {
+    question: "Welche Lebensmittel haben am meisten Eiweiß?",
+    answer:
+      "Magere Tierprodukte führen: Hähnchen- und Putenbrust (ca. 23–31 g/100g), Thunfisch, Magerquark, Harzer Käse und Eier. Pflanzlich liefern Tofu, Tempeh, Linsen und Sojaprodukte viel Protein.",
+  },
+  {
+    question: "Warum ist Eiweiß beim Abnehmen wichtig?",
+    answer:
+      "Protein sättigt am stärksten von allen Nährstoffen, schützt im Kaloriendefizit die Muskelmasse und hat einen hohen thermischen Effekt (20–30 % der Energie werden bei der Verdauung verbraucht).",
+  },
+  {
+    question: "Wie viel Eiweiß brauche ich pro Tag?",
+    answer:
+      "Je nach Ziel etwa 0,8–2,0 g pro Kilogramm Körpergewicht. Beim Abnehmen und für den Muskelerhalt liegt der Bedarf eher im oberen Bereich. Deinen individuellen Bedarf berechnest du mit dem Protein-Bedarf-Rechner.",
+  },
+];
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: siteUrl },
+    { "@type": "ListItem", position: 2, name: "Eiweißreiche Lebensmittel", item: `${siteUrl}/eiweissreiche-lebensmittel/` },
+  ],
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Eiweißreiche Lebensmittel",
+  numberOfItems: foods.length,
+  itemListElement: foods.map((food, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `${food.name} – ${Math.round(food.overview.protein_per_100g * 10) / 10} g Eiweiß/100g`,
+    url: `${siteUrl}/kalorien/${food.slug}/`,
+  })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+  <main class="max-w-screen-lg mx-auto px-4 py-8 md:py-12">
+    <nav class="text-sm opacity-60 mb-4" aria-label="Breadcrumb">
+      <a href="/" class="hover:underline">Start</a> ›
+      <a href="/kalorientabelle/" class="hover:underline">Kalorientabelle</a> › Eiweißreiche Lebensmittel
+    </nav>
+
+    <header class="mb-6">
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+        Eiweißreiche Lebensmittel: die Top-Liste
+      </h1>
+      <p class="mt-4 text-lg opacity-80">
+        Diese {foods.length} Lebensmittel liefern besonders viel Protein –
+        sortiert nach Eiweiß pro 100&nbsp;g. Eiweiß sättigt, schützt die Muskeln
+        und unterstützt das Abnehmen.
+      </p>
+    </header>
+
+    <div class="flex flex-wrap gap-3 mb-8">
+      <a href="/kalorientabelle/" class="btn btn-sm btn-outline">📋 Komplette Kalorientabelle</a>
+      <a href="/kalorienarme-lebensmittel/" class="btn btn-sm btn-outline">🥒 Kalorienarme Lebensmittel</a>
+      <a href="/protein-bedarf-rechner/" class="btn btn-sm btn-primary">Protein-Bedarf berechnen</a>
+    </div>
+
+    <FoodListTable foods={foods} highlight="protein" />
+
+    <section class="mt-12 prose max-w-none">
+      <h2>Häufige Fragen</h2>
+      {faq.map((f) => (
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold">{f.question}</h3>
+          <p class="opacity-80">{f.answer}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="mt-10 rounded-2xl bg-base-200 p-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Protein-Ziel im Blick behalten</h2>
+      <p class="opacity-80 mb-4">Mit Mahlzait trackst du Eiweiß, Kohlenhydrate und Fett automatisch per Foto.</p>
+      <a href={defaultTemplateConfig.appStoreLink} class="btn btn-primary">App laden</a>
+    </section>
+  </main>
+</Layout>

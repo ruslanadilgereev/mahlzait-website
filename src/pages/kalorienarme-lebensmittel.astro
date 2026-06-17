@@ -1,0 +1,105 @@
+---
+import Layout from "Layout.astro";
+import FoodListTable from "@components/FoodListTable.astro";
+import defaultTemplateConfig from "utils/config";
+import { foodsByCaloriesAsc } from "utils/foodData";
+
+const seo = {
+  title: "Kalorienarme Lebensmittel: Die Top-Liste zum Abnehmen | Mahlzait",
+  description:
+    "Kalorienarme Lebensmittel & Gerichte mit wenig Kalorien – nach kcal pro 100g sortiert. Ideal zum Abnehmen: viel essen, wenig Kalorien.",
+};
+const siteUrl = "https://www.mahlzait.de";
+const foods = foodsByCaloriesAsc().slice(0, 120);
+
+const faq = [
+  {
+    question: "Welche Lebensmittel haben am wenigsten Kalorien?",
+    answer:
+      "Wasserreiches Gemüse führt die Liste an: Gurke, Salat, Zucchini, Sellerie und Tomaten liegen unter 20 kcal/100g. Auch viele Beeren und Pilze sind sehr kalorienarm.",
+  },
+  {
+    question: "Helfen kalorienarme Lebensmittel beim Abnehmen?",
+    answer:
+      "Ja. Lebensmittel mit niedriger Energiedichte füllen den Magen und sättigen, ohne viele Kalorien zu liefern. So lässt sich ein Kaloriendefizit leichter durchhalten, ohne zu hungern.",
+  },
+  {
+    question: "Was bedeutet niedrige Energiedichte?",
+    answer:
+      "Energiedichte ist die Kalorienmenge pro Gramm. Lebensmittel mit viel Wasser und Ballaststoffen (Gemüse, Obst) haben eine niedrige Energiedichte – man kann große Portionen essen und bleibt im Defizit.",
+  },
+];
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: siteUrl },
+    { "@type": "ListItem", position: 2, name: "Kalorienarme Lebensmittel", item: `${siteUrl}/kalorienarme-lebensmittel/` },
+  ],
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({ "@type": "Question", name: f.question, acceptedAnswer: { "@type": "Answer", text: f.answer } })),
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Kalorienarme Lebensmittel",
+  numberOfItems: foods.length,
+  itemListElement: foods.map((food, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `${food.name} – ${Math.round(food.overview.calories_per_100g)} kcal/100g`,
+    url: `${siteUrl}/kalorien/${food.slug}/`,
+  })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+  <main class="max-w-screen-lg mx-auto px-4 py-8 md:py-12">
+    <nav class="text-sm opacity-60 mb-4" aria-label="Breadcrumb">
+      <a href="/" class="hover:underline">Start</a> ›
+      <a href="/kalorientabelle/" class="hover:underline">Kalorientabelle</a> › Kalorienarme Lebensmittel
+    </nav>
+
+    <header class="mb-6">
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+        Kalorienarme Lebensmittel: die Top-Liste
+      </h1>
+      <p class="mt-4 text-lg opacity-80">
+        Diese {foods.length} Lebensmittel haben besonders wenig Kalorien –
+        sortiert nach kcal pro 100&nbsp;g, das Kalorienärmste zuerst. Perfekt,
+        um beim Abnehmen satt zu werden, ohne das Kalorienbudget zu sprengen.
+      </p>
+    </header>
+
+    <div class="flex flex-wrap gap-3 mb-8">
+      <a href="/kalorientabelle/" class="btn btn-sm btn-outline">📋 Komplette Kalorientabelle</a>
+      <a href="/eiweissreiche-lebensmittel/" class="btn btn-sm btn-outline">💪 Eiweißreiche Lebensmittel</a>
+      <a href="/kaloriendefizit-berechnen/" class="btn btn-sm btn-primary">Kaloriendefizit berechnen</a>
+    </div>
+
+    <FoodListTable foods={foods} highlight="calories" />
+
+    <section class="mt-12 prose max-w-none">
+      <h2>Häufige Fragen</h2>
+      {faq.map((f) => (
+        <div class="mb-4">
+          <h3 class="text-lg font-semibold">{f.question}</h3>
+          <p class="opacity-80">{f.answer}</p>
+        </div>
+      ))}
+    </section>
+
+    <section class="mt-10 rounded-2xl bg-base-200 p-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Behalte deine Kalorien im Blick</h2>
+      <p class="opacity-80 mb-4">Mit Mahlzait trackst du dein Essen per Foto – die KI erkennt die Kalorien automatisch.</p>
+      <a href={defaultTemplateConfig.appStoreLink} class="btn btn-primary">App laden</a>
+    </section>
+  </main>
+</Layout>

@@ -1,0 +1,61 @@
+---
+// Server-gerenderte Nährwert-Tabelle für Cluster-/Hub-Seiten.
+// Rendert crawlbare interne Links zu den Food-Detailseiten (SEO-relevant).
+import type { FoodEntry } from "utils/foodData";
+import { CATEGORY_LABELS } from "utils/foodData";
+
+interface Props {
+  foods: FoodEntry[];
+  /** Hervorgehobene Kennzahl: "calories" | "protein" — bestimmt Spalten-Reihenfolge/Highlight */
+  highlight?: "calories" | "protein";
+  showCategory?: boolean;
+}
+
+const { foods, highlight = "calories", showCategory = true } = Astro.props as Props;
+const r = (n: number) => Math.round(n);
+const r1 = (n: number) => Math.round(n * 10) / 10;
+---
+
+<div class="overflow-x-auto rounded-2xl border border-base-300 bg-base-100 shadow-sm">
+  <table class="table table-zebra">
+    <thead>
+      <tr>
+        <th>Lebensmittel</th>
+        {showCategory && <th class="hidden sm:table-cell">Kategorie</th>}
+        <th class={highlight === "calories" ? "text-primary font-bold" : ""}>kcal /100g</th>
+        <th class={highlight === "protein" ? "text-primary font-bold" : ""}>Eiweiß</th>
+        <th class="hidden md:table-cell">Kohlenh.</th>
+        <th class="hidden md:table-cell">Fett</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        foods.map((food) => (
+          <tr>
+            <td>
+              <a
+                href={`/kalorien/${food.slug}/`}
+                class="font-medium text-primary hover:underline"
+              >
+                <span aria-hidden="true">{food.emoji}</span> {food.name}
+              </a>
+            </td>
+            {showCategory && (
+              <td class="hidden sm:table-cell text-sm opacity-70">
+                {CATEGORY_LABELS[food.category] || food.category}
+              </td>
+            )}
+            <td class={highlight === "calories" ? "font-bold" : ""}>
+              {r(food.overview.calories_per_100g)} kcal
+            </td>
+            <td class={highlight === "protein" ? "font-bold" : ""}>
+              {r1(food.overview.protein_per_100g)} g
+            </td>
+            <td class="hidden md:table-cell">{r1(food.overview.carbs_per_100g)} g</td>
+            <td class="hidden md:table-cell">{r1(food.overview.fat_per_100g)} g</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

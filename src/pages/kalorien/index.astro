@@ -56,4 +56,26 @@ const itemListSchema = {
   <StructuredData slot="head" data={itemListSchema} />
 
   <KalorienIndexPage client:load config={defaultTemplateConfig} foods={foods} />
+
+  <section class="max-w-screen-lg mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold mb-6 text-center">Lebensmittel-Listen & Tabellen</h2>
+    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <a href="/kalorientabelle/" class="rounded-2xl border border-base-300 bg-base-100 p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
+        <h3 class="text-lg font-semibold">📋 Kalorientabelle</h3>
+        <p class="mt-2 text-sm opacity-70">Alle Lebensmittel mit Nährwerten pro 100&nbsp;g im Überblick.</p>
+      </a>
+      <a href="/kalorienarme-lebensmittel/" class="rounded-2xl border border-base-300 bg-base-100 p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
+        <h3 class="text-lg font-semibold">🥒 Kalorienarme Lebensmittel</h3>
+        <p class="mt-2 text-sm opacity-70">Viel essen, wenig Kalorien – die Top-Liste zum Abnehmen.</p>
+      </a>
+      <a href="/eiweissreiche-lebensmittel/" class="rounded-2xl border border-base-300 bg-base-100 p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
+        <h3 class="text-lg font-semibold">💪 Eiweißreiche Lebensmittel</h3>
+        <p class="mt-2 text-sm opacity-70">Die besten Proteinquellen, nach Eiweiß sortiert.</p>
+      </a>
+      <a href="/kalorienreiche-lebensmittel/" class="rounded-2xl border border-base-300 bg-base-100 p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
+        <h3 class="text-lg font-semibold">🔥 Kalorienreiche Lebensmittel</h3>
+        <p class="mt-2 text-sm opacity-70">Die kalorienreichsten Lebensmittel – nützlich zum Zunehmen.</p>
+      </a>
+    </div>
+  </section>
 </Layout>

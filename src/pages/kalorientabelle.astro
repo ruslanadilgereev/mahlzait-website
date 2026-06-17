@@ -1,0 +1,141 @@
+---
+import Layout from "Layout.astro";
+import FoodListTable from "@components/FoodListTable.astro";
+import defaultTemplateConfig from "utils/config";
+import { allFoods, foodsByName, CATEGORY_LABELS } from "utils/foodData";
+
+const seo = {
+  title: "Kalorientabelle: Nährwerte von " + allFoods.length + " Lebensmitteln | Mahlzait",
+  description:
+    "Kostenlose Kalorientabelle mit " +
+    allFoods.length +
+    " Lebensmitteln: Kalorien, Eiweiß, Kohlenhydrate & Fett pro 100g. Übersichtlich nach Kategorie sortiert.",
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const sorted = foodsByName();
+const categoryOrder = ["supermarkt", "gericht", "fast-food", "getraenk"];
+const byCategory = categoryOrder
+  .map((cat) => ({
+    cat,
+    label: CATEGORY_LABELS[cat],
+    foods: sorted.filter((f) => f.category === cat),
+  }))
+  .filter((g) => g.foods.length > 0);
+
+const faq = [
+  {
+    question: "Was ist eine Kalorientabelle?",
+    answer:
+      "Eine Kalorientabelle listet Lebensmittel mit ihren Nährwerten auf – Kalorien, Eiweiß, Kohlenhydrate und Fett, meist pro 100 g. So lässt sich auf einen Blick vergleichen, wie energiereich ein Lebensmittel ist.",
+  },
+  {
+    question: "Welches Lebensmittel hat die wenigsten Kalorien?",
+    answer:
+      "Gemüse wie Gurke (12 kcal/100g), Zucchini (17 kcal) und Salat sind besonders kalorienarm. Eine vollständige Übersicht findest du auf unserer Seite zu kalorienarmen Lebensmitteln.",
+  },
+  {
+    question: "Sind die Werte pro 100 g oder pro Portion?",
+    answer:
+      "Die Werte in dieser Tabelle gelten pro 100 g bzw. 100 ml. Auf jeder Detailseite findest du zusätzlich die Nährwerte pro typischer Portion und für verschiedene Varianten.",
+  },
+  {
+    question: "Woher stammen die Nährwerte?",
+    answer:
+      "Die Werte basieren auf etablierten Nährwertdaten (u. a. USDA FoodData Central) und – bei Markenprodukten – auf den offiziellen Herstellerangaben.",
+  },
+];
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: siteUrl },
+    { "@type": "ListItem", position: 2, name: "Kalorientabelle", item: `${siteUrl}/kalorientabelle/` },
+  ],
+};
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((f) => ({
+    "@type": "Question",
+    name: f.question,
+    acceptedAnswer: { "@type": "Answer", text: f.answer },
+  })),
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Kalorientabelle – Nährwerte von Lebensmitteln",
+  numberOfItems: allFoods.length,
+  itemListElement: sorted.slice(0, 200).map((food, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    name: `${food.name} – ${Math.round(food.overview.calories_per_100g)} kcal/100g`,
+    url: `${siteUrl}/kalorien/${food.slug}/`,
+  })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+
+  <main class="max-w-screen-lg mx-auto px-4 py-8 md:py-12">
+    <nav class="text-sm opacity-60 mb-4" aria-label="Breadcrumb">
+      <a href="/" class="hover:underline">Start</a> ›
+      <a href="/kalorien/" class="hover:underline">Kalorien</a> › Kalorientabelle
+    </nav>
+
+    <header class="mb-8">
+      <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">
+        Kalorientabelle: Nährwerte von {allFoods.length} Lebensmitteln
+      </h1>
+      <p class="mt-4 text-lg opacity-80">
+        Die übersichtliche Kalorientabelle mit Kalorien, Eiweiß, Kohlenhydraten
+        und Fett pro 100&nbsp;g – nach Kategorie sortiert. Klicke auf ein
+        Lebensmittel für Details, Portionsgrößen und Varianten.
+      </p>
+    </header>
+
+    <div class="flex flex-wrap gap-3 mb-8">
+      <a href="/kalorienarme-lebensmittel/" class="btn btn-sm btn-outline">🥒 Kalorienarme Lebensmittel</a>
+      <a href="/eiweissreiche-lebensmittel/" class="btn btn-sm btn-outline">💪 Eiweißreiche Lebensmittel</a>
+      <a href="/kalorienreiche-lebensmittel/" class="btn btn-sm btn-outline">🔥 Kalorienreiche Lebensmittel</a>
+      <a href="/kalorienbedarf-berechnen/" class="btn btn-sm btn-primary">Kalorienbedarf berechnen</a>
+    </div>
+
+    {
+      byCategory.map((group) => (
+        <section class="mb-10">
+          <h2 class="text-2xl font-bold mb-4">
+            {group.label} <span class="text-base font-normal opacity-60">({group.foods.length})</span>
+          </h2>
+          <FoodListTable foods={group.foods} highlight="calories" showCategory={false} />
+        </section>
+      ))
+    }
+
+    <section class="mt-12 prose max-w-none">
+      <h2>Häufige Fragen zur Kalorientabelle</h2>
+      {
+        faq.map((f) => (
+          <div class="mb-4">
+            <h3 class="text-lg font-semibold">{f.question}</h3>
+            <p class="opacity-80">{f.answer}</p>
+          </div>
+        ))
+      }
+    </section>
+
+    <section class="mt-10 rounded-2xl bg-base-200 p-6 text-center">
+      <h2 class="text-xl font-bold mb-2">Kalorien automatisch tracken</h2>
+      <p class="opacity-80 mb-4">
+        Mit der Mahlzait-App fotografierst du dein Essen – die KI erkennt die
+        Kalorien automatisch. Kein manuelles Nachschlagen mehr.
+      </p>
+      <a href={defaultTemplateConfig.appStoreLink} class="btn btn-primary">App laden</a>
+    </section>
+  </main>
+</Layout>
