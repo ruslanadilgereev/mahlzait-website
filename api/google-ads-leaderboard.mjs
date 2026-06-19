@@ -326,20 +326,9 @@ async function fetchAllCustomerIds() {
   return out;
 }
 
-// Returns null if the customer carries no Google click id; otherwise the
-// classified Google-clicked customer with subscriptions.
-async function classifyGoogleCustomer(custMeta) {
-  const attrsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`);
-  const attrs = {};
-  for (const it of attrsResp.items || []) attrs[it.name] = it.value;
-
-  const gclid = (attrs["gclid"] || "").trim();
-  const gbraid = (attrs["gbraid"] || "").trim();
-  const wbraid = (attrs["wbraid"] || "").trim();
-  if (!gclid && !gbraid && !wbraid) return null; // not Google-attributed
-
-  const subsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/subscriptions`);
-  const subs = (subsResp.items || []).map((s) => {
+async function fetchGoogleSubs(cid) {
+  const subsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${cid}/subscriptions`);
+  return (subsResp.items || []).map((s) => {
     const rev = s.total_revenue_in_usd || {};
     return {
       status: s.status,
@@ -354,6 +343,21 @@ async function classifyGoogleCustomer(custMeta) {
       proceeds_usd: rev.proceeds || 0,
     };
   });
+}
+
+// Returns null if the customer carries no Google click id; otherwise the
+// classified Google-clicked customer with subscriptions.
+async function classifyGoogleCustomer(custMeta) {
+  const attrsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`);
+  const attrs = {};
+  for (const it of attrsResp.items || []) attrs[it.name] = it.value;
+
+  const gclid = (attrs["gclid"] || "").trim();
+  const gbraid = (attrs["gbraid"] || "").trim();
+  const wbraid = (attrs["wbraid"] || "").trim();
+  if (!gclid && !gbraid && !wbraid) return null; // not Google-attributed
+
+  const subs = await fetchGoogleSubs(custMeta.id);
   return {
     id: custMeta.id,
     country: custMeta.country || null,
@@ -369,7 +373,15 @@ async function classifyGoogleCustomer(custMeta) {
 }
 
 // ---------- Refresh ----------
-async function doRefresh(firestore) {
+// Diff-strategy (mirror of api/leaderboard.mjs): RC v2 has no created_after
+// filter on the customers list, so we still page the full list (cheap, metadata
+// only). The expensive part is the 2 per-customer RC calls (attributes + subs).
+// We avoid re-doing those for everyone:
+//   • new UIDs (never seen)        → full classify (attributes + subs)
+//   • known Google customers       → re-pull subs only (Renewals/Trial→Paid)
+//   • seen-but-not-Google          → skip — gclid/gbraid is install-time, immutable
+// Errored new UIDs are NOT marked seen, so a transient RC 429 retries next pull.
+async function doRefresh(firestore, prev) {
   const t0 = Date.now();
 
   const endDate = new Date();
@@ -383,19 +395,53 @@ async function doRefresh(firestore) {
   ]);
   const tGads = Date.now() - t0;
 
-  // Enrich every customer → keep only Google-clicked ones (gclid/gbraid/wbraid).
-  // (We can't filter by attribute server-side in RC v2.)
+  // Diff bookkeeping from prev state.
+  const seenUids = new Set(prev?.seen_uids || []);
+  const knownGoogle = new Map(); // id → stored Google customer (attribution is immutable)
+  for (const c of prev?.google_customers || []) knownGoogle.set(c.id, c);
+
+  const newOnes = [];   // unseen → classify (attributes + subs)
+  const knownOnes = [];  // known Google → re-pull subs only
+  for (const c of customers) {
+    if (knownGoogle.has(c.id)) knownOnes.push(c);
+    else if (!seenUids.has(c.id)) newOnes.push(c);
+    // seen but not Google-attributed → skip
+  }
+
   const tEnrichStart = Date.now();
-  const enriched = await pMap(customers, ENRICH_CONCURRENCY, classifyGoogleCustomer);
+  const [newResults, knownResults] = await Promise.all([
+    pMap(newOnes, ENRICH_CONCURRENCY, classifyGoogleCustomer),
+    pMap(knownOnes, ENRICH_CONCURRENCY, async (c) => {
+      const prevC = knownGoogle.get(c.id);
+      const subs = await fetchGoogleSubs(c.id);
+      return {
+        ...prevC,
+        country: c.country ?? prevC.country,
+        last_seen_at: c.last_seen_at ?? prevC.last_seen_at,
+        subs,
+      };
+    }),
+  ]);
   const tEnrich = Date.now() - tEnrichStart;
 
-  const googleCustomers = [];
+  // Rebuild Google customer map: start from refreshed known, add new hits.
+  const byId = new Map();
   let enrichErrors = 0;
-  for (const e of enriched) {
-    if (!e) continue;                 // not Google-attributed (null) — expected, not an error
-    if (e._error) { enrichErrors++; continue; } // RC call failed after retries → degraded pull
-    googleCustomers.push(e);
+  for (let i = 0; i < knownResults.length; i++) {
+    const r = knownResults[i];
+    const c = knownOnes[i];
+    // On subs-error keep the stale stored customer rather than dropping it.
+    if (r && r._error) enrichErrors++;
+    byId.set(c.id, r && !r._error ? r : knownGoogle.get(c.id));
   }
+  for (let i = 0; i < newResults.length; i++) {
+    const r = newResults[i];
+    const c = newOnes[i];
+    if (r && r._error) { enrichErrors++; continue; } // transient → retry next refresh
+    seenUids.add(c.id);                              // checked (null=non-Google or object=Google)
+    if (r) byId.set(r.id, r);
+  }
+  const googleCustomers = Array.from(byId.values()).filter(Boolean);
 
   const state = {
     last_pull_ts_ms: Date.now(),
@@ -405,11 +451,14 @@ async function doRefresh(firestore) {
     customer_id: process.env.GOOGLE_ADS_CUSTOMER_ID || null,
     campaigns,
     google_customers: googleCustomers,
+    seen_uids: Array.from(seenUids),
     last_refresh_meta: {
       ms_total: Date.now() - t0,
       ms_gads: tGads,
       ms_rc_enrich: tEnrich,
       total_customers: customers.length,
+      new_enriched: newOnes.length,
+      known_refreshed: knownOnes.length,
       google_customers: googleCustomers.length,
       enrich_errors: enrichErrors, // >0 = degradierter Pull (RC-Fehler), Daten evtl. unvollständig
       campaigns: campaigns.length,
@@ -433,7 +482,7 @@ export default async function handler(req, res) {
 
     let state = await loadState(firestore);
     if (refresh) {
-      state = await doRefresh(firestore);
+      state = await doRefresh(firestore, state);
     } else if (!state) {
       return res.json({
         bootstrapped: false,

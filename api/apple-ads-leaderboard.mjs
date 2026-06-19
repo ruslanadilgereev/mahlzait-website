@@ -16,6 +16,7 @@
 //     spend_history_from: "YYYY-MM-DD",   // earliest day in daily spend buckets
 //     campaigns: [{ id, name, status, daily: [{date, spend, taps, installs}] }],
 //     customers_by_campaign: { <campaign_name | "(no_campaign)">: [{ id, country, first_seen_at, subs: [...] }] },
+//     seen_uids: [...],   // every customer id we've already classified (diff-pull)
 //     last_refresh_meta: {...}
 //   }
 //
@@ -26,7 +27,7 @@ import { google } from "googleapis";
 import { SignJWT } from "jose";
 import { createPrivateKey } from "node:crypto";
 
-export const config = { maxDuration: 60 };
+export const config = { maxDuration: 300 }; // Pro; nur der erste (Bootstrap-)Pull ist voll, danach Diff
 
 const GCP_PROJECT = "mytemple-460913";
 const COLLECTION = "apple_ads_leaderboard_cache";
@@ -332,15 +333,9 @@ async function fetchAllCustomerIds() {
   return out;
 }
 
-// Returns null if customer is not ASA-attributed; otherwise classification.
-async function classifyAsaCustomer(custMeta) {
-  const attrsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`);
-  const attrs = {};
-  for (const it of attrsResp.items || []) attrs[it.name] = it.value;
-  if (attrs["$mediaSource"] !== "Apple Search Ads") return null;
-
-  const subsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/subscriptions`);
-  const subs = (subsResp.items || []).map((s) => {
+async function fetchAsaSubs(cid) {
+  const subsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${cid}/subscriptions`);
+  return (subsResp.items || []).map((s) => {
     const rev = s.total_revenue_in_usd || {};
     return {
       status: s.status,
@@ -355,6 +350,16 @@ async function classifyAsaCustomer(custMeta) {
       proceeds_usd: rev.proceeds || 0,
     };
   });
+}
+
+// Returns null if customer is not ASA-attributed; otherwise classification.
+async function classifyAsaCustomer(custMeta) {
+  const attrsResp = await rcGet(`/projects/${RC_PROJECT}/customers/${custMeta.id}/attributes`);
+  const attrs = {};
+  for (const it of attrsResp.items || []) attrs[it.name] = it.value;
+  if (attrs["$mediaSource"] !== "Apple Search Ads") return null;
+
+  const subs = await fetchAsaSubs(custMeta.id);
   return {
     id: custMeta.id,
     country: custMeta.country || null,
@@ -368,7 +373,15 @@ async function classifyAsaCustomer(custMeta) {
 }
 
 // ---------- Refresh ----------
-async function doRefresh(firestore) {
+// Diff-strategy (mirror of api/leaderboard.mjs): RC v2 has no created_after
+// filter on the customers list, so we still page the full list (cheap, metadata
+// only). The expensive part is the 2 per-customer RC calls (attributes + subs).
+// We avoid re-doing those for everyone:
+//   • new UIDs (never seen)        → full classify (attributes + subs)
+//   • known ASA customers          → re-pull subs only (Renewals/Trial→Paid)
+//   • seen-but-not-ASA             → skip — $mediaSource is install-time, immutable
+// Errored new UIDs are NOT marked seen, so a transient RC 429 retries next pull.
+async function doRefresh(firestore, prev) {
   const t0 = Date.now();
 
   const endDate = new Date();
@@ -390,18 +403,58 @@ async function doRefresh(firestore) {
     daily: dailyByCampaign[c.id] || [],
   }));
 
-  // Enrich every customer → keep only ASA-attributed ones.
-  // (We can't filter by attribute server-side in RC v2.)
+  // Diff bookkeeping from prev state.
+  const seenUids = new Set(prev?.seen_uids || []);
+  const knownAsa = new Map(); // id → stored ASA customer (attribution is immutable)
+  for (const list of Object.values(prev?.customers_by_campaign || {})) {
+    for (const c of list || []) knownAsa.set(c.id, c);
+  }
+
+  const newOnes = [];   // unseen → classify (attributes + subs)
+  const knownOnes = [];  // known ASA → re-pull subs only
+  for (const c of customers) {
+    if (knownAsa.has(c.id)) knownOnes.push(c);
+    else if (!seenUids.has(c.id)) newOnes.push(c);
+    // seen but not ASA → skip
+  }
+
   const tEnrichStart = Date.now();
-  const enriched = await pMap(customers, ENRICH_CONCURRENCY, classifyAsaCustomer);
+  const [newResults, knownResults] = await Promise.all([
+    pMap(newOnes, ENRICH_CONCURRENCY, classifyAsaCustomer),
+    pMap(knownOnes, ENRICH_CONCURRENCY, async (c) => {
+      const prevC = knownAsa.get(c.id);
+      const subs = await fetchAsaSubs(c.id);
+      return {
+        ...prevC,
+        country: c.country ?? prevC.country,
+        last_seen_at: c.last_seen_at ?? prevC.last_seen_at,
+        subs,
+      };
+    }),
+  ]);
   const tEnrich = Date.now() - tEnrichStart;
+
+  // Rebuild ASA customer map: start from refreshed known, add new ASA hits.
+  const asaById = new Map();
+  for (let i = 0; i < knownResults.length; i++) {
+    const r = knownResults[i];
+    const c = knownOnes[i];
+    // On subs-error keep the stale stored customer rather than dropping it.
+    asaById.set(c.id, r && !r._error ? r : knownAsa.get(c.id));
+  }
+  let newErrors = 0;
+  for (let i = 0; i < newResults.length; i++) {
+    const r = newResults[i];
+    const c = newOnes[i];
+    if (r && r._error) { newErrors++; continue; } // transient → retry next refresh
+    seenUids.add(c.id);                            // checked (null=non-ASA or object=ASA)
+    if (r) asaById.set(r.id, r);
+  }
 
   // Group by campaign-name (or "(no_campaign)" when ASA but no $campaign attr)
   const byCampaign = {};
-  let asaCount = 0;
-  for (const e of enriched) {
-    if (!e || e._error) continue;
-    asaCount++;
+  for (const e of asaById.values()) {
+    if (!e) continue;
     const key = e.campaign || "(no_campaign)";
     (byCampaign[key] = byCampaign[key] || []).push(e);
   }
@@ -413,12 +466,16 @@ async function doRefresh(firestore) {
     spend_history_to: endYmd,
     campaigns: campaignsOut,
     customers_by_campaign: byCampaign,
+    seen_uids: Array.from(seenUids),
     last_refresh_meta: {
       ms_total: Date.now() - t0,
       ms_asa: tAsa,
       ms_rc_enrich: tEnrich,
       total_customers: customers.length,
-      asa_customers: asaCount,
+      new_enriched: newOnes.length,
+      known_refreshed: knownOnes.length,
+      new_errors: newErrors,
+      asa_customers: asaById.size,
       asa_campaigns: campaignsOut.length,
     },
   };
@@ -440,7 +497,7 @@ export default async function handler(req, res) {
 
     let state = await loadState(firestore);
     if (refresh) {
-      state = await doRefresh(firestore);
+      state = await doRefresh(firestore, state);
     } else if (!state) {
       return res.json({
         bootstrapped: false,
