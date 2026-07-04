@@ -2192,21 +2192,17 @@
       const entries = arr.map(([k, v]) => [AI_CHAN_LBL[k] || k, v]);
       return aiHBars(entries, denom, aiEur, (i) => aiChannelColor(arr[i] ? arr[i][0] : null, i));
     }
-    // Kanal-Zelle für die Tabelle: Mini-Stapelbalken (App=Teal, WA=Grün) + Eurobetrag je Kanal,
-    // z.B. "[▮▮▮▯] App 0,05 € · WA 0,01 €"; ein Kanal → voller Balken; alter Cache ohne channels → "-".
+    // Kanal-Zelle für die Tabelle: Eurobetrag je Kanal als Text, z.B. "App 0,05 € · WA 0,01 €";
+    // Kanäle ohne Kosten werden weggelassen; alter Cache ohne channels → "-".
     function aiChannelCell(r) {
       const ch = r.channels;
       if (!ch) return "-";
       const arr = Object.keys(ch).map((k) => ({ k, cost: ch[k].cost_eur || 0 })).sort((a, b) => aiChanRank(a.k) - aiChanRank(b.k));
       if (!arr.length) return "-";
-      const total = arr.reduce((s, x) => s + x.cost, 0);
-      const segs = total > 0
-        ? arr.map((x, i) => `<span style="width:${(x.cost / total * 100).toFixed(1)}%;background:${aiChannelColor(x.k, i)}"></span>`).join("")
-        : `<span style="width:100%;background:${aiChannelColor(arr[0].k, 0)}"></span>`;
-      const bar = `<span style="display:inline-flex;width:56px;height:8px;border-radius:4px;overflow:hidden;vertical-align:middle;background:var(--border,#e5e7eb)">${segs}</span>`;
-      const label = arr.filter((x) => x.cost > 0 || arr.length === 1)
-        .map((x) => `${escapeHtml(AI_CHAN_SHORT[x.k] || x.k)} ${aiEur(x.cost)}`).join(" · ");
-      return `<span style="display:inline-flex;align-items:center;gap:6px;white-space:nowrap">${bar}<span>${label}</span></span>`;
+      const shown = arr.filter((x) => x.cost > 0);
+      const use = shown.length ? shown : arr;
+      const label = use.map((x) => `${escapeHtml(AI_CHAN_SHORT[x.k] || x.k)} ${aiEur(x.cost)}`).join(" · ");
+      return `<span style="white-space:nowrap">${label}</span>`;
     }
 
     // ---------- KPIs ----------
