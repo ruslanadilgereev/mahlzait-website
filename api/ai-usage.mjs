@@ -242,6 +242,46 @@ function priceByModel(byModel) {
   return { byModelOut, costEur, unpriced };
 }
 
+// Kanal-Kosten: den exakt berechneten Record-cost_eur anteilig auf die Kanäle verteilen,
+// gewichtet mit preisgewichteten Kanal-Tokens zu gemini-3.5-flash-Sätzen. Fair, weil sowohl
+// fast- als auch thinking-Mode gemini-3.5-flash sind (App default fast, WhatsApp hart thinking);
+// nur der seltene pro-Mode weicht ab. by_channel splittet nicht nach Modell, daher diese Näherung.
+// Letzter Kanal bekommt den Rest → Summe der Kanal-€ == Record-€.
+function splitChannels(byChannel, recCostEur) {
+  const chans = [];
+  for (const [name, t] of Object.entries(byChannel || {})) {
+    if (!t || typeof t !== "object") continue;
+    chans.push({
+      name,
+      requests: numOr0(t.requests),
+      input_tokens: numOr0(t.input_tokens),
+      cached_tokens: numOr0(t.cached_tokens),
+      output_tokens: numOr0(t.output_tokens),
+      thinking_tokens: numOr0(t.thinking_tokens),
+    });
+  }
+  if (!chans.length) return null;
+  const W = PRICING[DEFAULT_MODEL]; // gemini-3.5-flash-Sätze als Gewicht
+  const w = chans.map((c) => (c.input_tokens - c.cached_tokens) * W.in + c.cached_tokens * W.cached + c.output_tokens * W.out);
+  let totalW = w.reduce((a, b) => a + b, 0);
+  if (totalW <= 0) { w.fill(1); totalW = chans.length; } // 0-Token-Kanäle → gleich aufteilen
+  const out = {};
+  let assigned = 0;
+  chans.forEach((c, i) => {
+    const cost = (i === chans.length - 1) ? r4(recCostEur - assigned) : r4(recCostEur * w[i] / totalW);
+    if (i < chans.length - 1) assigned += cost;
+    out[c.name] = {
+      requests: c.requests,
+      input_tokens: c.input_tokens,
+      cached_tokens: c.cached_tokens,
+      output_tokens: c.output_tokens,
+      thinking_tokens: c.thinking_tokens,
+      cost_eur: cost,
+    };
+  });
+  return out;
+}
+
 // ---------- Firestore: ai_usage query ----------
 async function queryUsageDocs(firestore, minMonth) {
   const parent = `projects/${GCP_PROJECT}/databases/(default)/documents`;
@@ -257,9 +297,9 @@ async function queryUsageDocs(firestore, minMonth) {
             value: { stringValue: minMonth },
           },
         },
-        // Nur was wir brauchen; by_day/by_channel/updated_at bewusst NICHT ziehen.
+        // Nur was wir brauchen; by_day/updated_at bewusst NICHT ziehen.
         select: {
-          fields: ["uid", "month", "requests", "input_tokens", "cached_tokens", "output_tokens", "thinking_tokens", "by_model"]
+          fields: ["uid", "month", "requests", "input_tokens", "cached_tokens", "output_tokens", "thinking_tokens", "by_model", "by_channel"]
             .map((f) => ({ fieldPath: f })),
         },
       },
@@ -368,6 +408,7 @@ async function doRefresh(firestore, prev) {
     const { byModelOut, costEur, unpriced } = priceByModel(d.by_model);
     for (const m of unpriced) unpricedAll.add(m);
     totalCostEur += costEur;
+    const recCost = r4(costEur);
     const rec = {
       u,
       month: d.month,
@@ -377,9 +418,11 @@ async function doRefresh(firestore, prev) {
       cached_tokens: numOr0(d.cached_tokens),
       output_tokens: numOr0(d.output_tokens),
       thinking_tokens: numOr0(d.thinking_tokens),
-      cost_eur: r4(costEur),
+      cost_eur: recCost,
       by_model: byModelOut,
     };
+    const channels = splitChannels(d.by_channel, recCost);
+    if (channels) rec.channels = channels;
     if (unpriced.length) rec.unpriced_models = unpriced;
     records.push(rec);
   }

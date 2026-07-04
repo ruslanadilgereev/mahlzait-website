@@ -2177,6 +2177,33 @@
       return aiHBars(arr.map(([k, v]) => [k, v]), denom, aiEur, (i) => palAt(i));
     }
 
+    // ---------- Kanal (App vs. WhatsApp); alte Cache-Records ohne channels bleiben leer ----------
+    const AI_CHAN_LBL = { app: "App", whatsapp: "WhatsApp" };
+    const AI_CHAN_SHORT = { app: "App", whatsapp: "WA" };
+    const AI_CHAN_ORDER = ["app", "whatsapp"];
+    const aiChanRank = (k) => { const i = AI_CHAN_ORDER.indexOf(k); return i < 0 ? 99 : i; };
+    const aiChannelColor = (k, i) => ({ app: "#009688", whatsapp: "#25D366" })[k] || palAt(i);
+    function aiChannelSplit(rows) {
+      const m = new Map();
+      for (const r of rows) { const ch = r.channels; if (!ch) continue; for (const name in ch) m.set(name, (m.get(name) || 0) + (ch[name].cost_eur || 0)); }
+      if (!m.size) return `<div class="cu-empty-chart">Keine Kanal-Daten</div>`;
+      const arr = [...m.entries()].sort((a, b) => aiChanRank(a[0]) - aiChanRank(b[0]));
+      const denom = arr.reduce((s, e) => s + e[1], 0);
+      const entries = arr.map(([k, v]) => [AI_CHAN_LBL[k] || k, v]);
+      return aiHBars(entries, denom, aiEur, (i) => aiChannelColor(arr[i] ? arr[i][0] : null, i));
+    }
+    // Kompakter Kanal-Anteil nach € für die Tabelle: "App 82% · WA 18%" bzw. nur "App"/"WA"; alter Cache → "-".
+    function aiChannelCell(r) {
+      const ch = r.channels;
+      if (!ch) return "-";
+      const arr = Object.keys(ch).map((k) => ({ k, cost: ch[k].cost_eur || 0 })).sort((a, b) => aiChanRank(a.k) - aiChanRank(b.k));
+      if (!arr.length) return "-";
+      if (arr.length === 1) return escapeHtml(AI_CHAN_SHORT[arr[0].k] || arr[0].k);
+      const total = arr.reduce((s, x) => s + x.cost, 0);
+      if (total <= 0) return arr.map((x) => escapeHtml(AI_CHAN_SHORT[x.k] || x.k)).join(" · ");
+      return arr.map((x) => `${escapeHtml(AI_CHAN_SHORT[x.k] || x.k)} ${Math.round(x.cost / total * 100)}%`).join(" · ");
+    }
+
     // ---------- KPIs ----------
     function aiKpiTiles(rows) {
       const costs = rows.map((r) => r.cost_eur || 0);
@@ -2211,6 +2238,7 @@
           `<td>${escapeHtml(st)}</td>` +
           `<td>${escapeHtml(co)}</td>` +
           `<td>${escapeHtml(pl)}</td>` +
+          `<td>${aiChannelCell(r)}</td>` +
           `<td class="num">${aiInt(r.requests || 0)}</td>` +
           `<td class="num">${aiTokC(r.input_tokens || 0)}</td>` +
           `<td class="num">${aiTokC(r.output_tokens || 0)}</td>` +
@@ -2221,7 +2249,7 @@
       }
       return `<div style="font-weight:700;font-size:14px;letter-spacing:-0.01em;margin:20px 0 10px">Teuerste 25 User · ${escapeHtml(aiMonthLabelLong(aiMonth))}</div>` +
         `<div class="card"><table><thead><tr>` +
-        `<th>User</th><th>Abo</th><th>Land</th><th>Plattform</th>` +
+        `<th>User</th><th>Abo</th><th>Land</th><th>Plattform</th><th>Kanal</th>` +
         `<th class="num">Req</th>` +
         `<th class="num" title="Input-Tokens (inkl. Cache)">In</th>` +
         `<th class="num" title="Output-Tokens (inkl. Thinking)">Out</th>` +
@@ -2271,6 +2299,7 @@
       cards.push(cuCardHtml("Kosten nach Plattform", aiEur(totalCost), aiCostSplit(rows, "platform", inc)));
       cards.push(cuCardHtml("Kosten nach Land", aiEur(totalCost), aiCostSplit(rows, "country", inc)));
       cards.push(cuCardHtml("Kosten nach Modell", aiEur(totalCost), aiModelSplit(rows)));
+      cards.push(cuCardHtml("Kosten nach Kanal", aiEur(totalCost), aiChannelSplit(rows)));
       grid.innerHTML = cards.join("");
 
       tableWrap.innerHTML = aiTopTable(rows);
