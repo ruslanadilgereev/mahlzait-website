@@ -529,6 +529,7 @@
         <button class="tab-btn" id="tab-apple-ads" onclick="switchTab('apple-ads')">Apple Ads</button>
         <button class="tab-btn" id="tab-google-ads" onclick="switchTab('google-ads')">Google Ads</button>
         <button class="tab-btn" id="tab-customers" onclick="switchTab('customers')">Kunden</button>
+        <button class="tab-btn" id="tab-ai" onclick="switchTab('ai')">AI Usage</button>
       </div>
 
       <div id="view-referral">
@@ -769,6 +770,37 @@
         <div class="footer-note">
           Demografie aus RevenueCat-Custom-Attributes (Onboarding) · PII (E-Mail, IDFA, IP, gps_ad_id) wird <b>nicht</b> gespeichert ·
           Alter aus <code>birth_year</code> · BMI aus Größe/Gewicht · Filter aktualisieren alle Charts live · fehlende Werte = „(keine)"
+        </div>
+      </div>
+
+      <div id="view-ai" class="hidden">
+        <div class="controls">
+          <label for="ai-month">Monat</label>
+          <select id="ai-month" onchange="aiRender()" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:13px;font-weight:600;font-family:inherit;cursor:pointer;outline:none"></select>
+          <div class="spacer"></div>
+          <label class="active-toggle" title="Fehlende Demografie-Werte als „(keine)" in den Splits zeigen">
+            <input id="ai-show-none" type="checkbox" checked onchange="aiRender()"> Fehlende als „(keine)" zeigen
+          </label>
+        </div>
+        <div class="cu-filters">
+          <div class="cu-filter-row" id="ai-filter-row"></div>
+          <div class="cu-filter-foot">
+            <span class="cu-active-count"><b id="ai-count">–</b> AI-User im Monat · <span id="ai-pct"></span></span>
+            <div class="spacer" style="flex:1"></div>
+            <button class="secondary" onclick="aiResetFilters()">Filter zurücksetzen</button>
+          </div>
+        </div>
+        <div class="cu-kpis" id="ai-kpis"></div>
+        <div class="cu-grid" id="ai-grid"></div>
+        <div id="ai-table"></div>
+        <div id="ai-empty" class="empty hidden">
+          <div class="icon">🤖</div>
+          <div class="empty-title">Noch keine AI-Nutzungsdaten</div>
+          <div>Tracking beginnt nach dem nächsten Proxy- und Agent-Deploy. Danach „Aktualisieren" oben rechts klicken.</div>
+        </div>
+        <div class="footer-note">
+          Preise Vertex AI Stand Juli 2026 (Global-Endpoint, kein Regional-Aufschlag), Kurs 1&nbsp;USD ≈ 0,875&nbsp;€. Search-Grounding-Queries nicht enthalten. ·
+          Kosten immer aus <code>by_model</code> gerechnet · Pseudonym = sha256(uid) · keine PII.
         </div>
       </div>
     </div>
@@ -1027,11 +1059,14 @@
       document.getElementById("tab-apple-ads").classList.toggle("active", name === "apple-ads");
       document.getElementById("tab-google-ads").classList.toggle("active", name === "google-ads");
       document.getElementById("tab-customers").classList.toggle("active", name === "customers");
+      document.getElementById("tab-ai").classList.toggle("active", name === "ai");
       document.getElementById("view-referral").classList.toggle("hidden", name !== "referral");
       document.getElementById("view-apple-ads").classList.toggle("hidden", name !== "apple-ads");
       document.getElementById("view-google-ads").classList.toggle("hidden", name !== "google-ads");
       document.getElementById("view-customers").classList.toggle("hidden", name !== "customers");
+      document.getElementById("view-ai").classList.toggle("hidden", name !== "ai");
       if (name === "customers" && !cuData) cuLoad(false);
+      if (name === "ai" && !aiData) aiLoad(false);
       if (name === "apple-ads" && !aaData) aaLoad(false);
       if (name === "google-ads" && !gaData) {
         if (!document.getElementById("ga-from").value) {
@@ -1487,6 +1522,7 @@
       if (activeTab === "apple-ads") return aaLoad(true);
       if (activeTab === "google-ads") return gaLoad(true);
       if (activeTab === "customers") return cuLoad(true);
+      if (activeTab === "ai") return aiLoad(true);
       return origRefresh();
     };
 
@@ -1973,6 +2009,375 @@
         cuRender();
       } catch (e) {
         alert("Kunden Refresh-Fehler: " + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = o;
+      }
+    }
+  </script>
+
+  <script>
+    // ============================================================
+    // AI Usage dashboard (tab "AI Usage")
+    // Ein Record pro (User, Monat). Demografie-Felder sind identisch zu den
+    // Kunden-Records → eigener, aber mechanisch gleicher Filter-Stack (ai*),
+    // der Kunden-Tab bleibt unangetastet. Reine Chart-/Label-/Mathe-Helfer
+    // (histHtml, cuHist, cuCardHtml, cuMedian, ordered, cuLabel, colorFor,
+    // palAt, cuBmiCat, CU_*) werden aus dem cu-Block wiederverwendet.
+    // ============================================================
+    let aiData = null;      // array of {u, month, ...demografie, tokens, cost_eur, by_model}
+    let aiMeta = null;
+    let aiMonth = null;     // gewählter Monat "YYYY-MM"
+    let aiUsersUniq = [];   // ein Record je distinct u (für Chip-Zählungen + Geburtsjahr-Range)
+
+    // ---------- Zahlen-/Monatsformat (deutsch) ----------
+    const aiEur = (n) => (Number(n) || 0).toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+    const aiInt = (n) => (Number(n) || 0).toLocaleString("de-DE", { maximumFractionDigits: 0 });
+    function aiEurAxis(n) { // kompakt für Balken-Beschriftung
+      n = Number(n) || 0;
+      if (n >= 1000) return (n / 1000).toLocaleString("de-DE", { maximumFractionDigits: 1 }) + "k €";
+      if (n >= 10) return n.toLocaleString("de-DE", { maximumFractionDigits: 0 }) + " €";
+      return n.toLocaleString("de-DE", { maximumFractionDigits: 2 }) + " €";
+    }
+    function aiTokC(n) { // kompakte Token-Zahl (12,3 M / 1,2k)
+      n = Number(n) || 0;
+      if (n >= 1e6) return (n / 1e6).toLocaleString("de-DE", { maximumFractionDigits: 1 }) + " M";
+      if (n >= 1e3) return (n / 1e3).toLocaleString("de-DE", { maximumFractionDigits: 0 }) + "k";
+      return n.toLocaleString("de-DE");
+    }
+    const AI_MON_SHORT = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"];
+    const AI_MON_LONG = ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+    function aiMonthLabel(m) {
+      if (!m || m.indexOf("-") < 0) return m || "";
+      const [y, mo] = m.split("-");
+      return (AI_MON_SHORT[Number(mo) - 1] || mo) + " " + y.slice(2);
+    }
+    function aiMonthLabelLong(m) {
+      if (!m || m.indexOf("-") < 0) return m || "";
+      const [y, mo] = m.split("-");
+      return (AI_MON_LONG[Number(mo) - 1] || mo) + " " + y;
+    }
+
+    // ---------- Filter (ai-eigene Kopie des cu-Stacks) ----------
+    function aiDefaultFilters() {
+      return { gender: new Set(), country: new Set(), goal: new Set(), activity: new Set(), source: new Set(), platform: new Set(), bmiCat: new Set(), subtype: new Set(), byMin: null, byMax: null, fsFrom: null, fsTo: null };
+    }
+    let aiFilters = aiDefaultFilters();
+
+    function aiFieldVal(r, field) {
+      switch (field) {
+        case "gender": return r.gender || CU_NONE;
+        case "country": { const c = r.country; return c ? ((c === "DE" || c === "AT" || c === "CH") ? c : "Rest") : CU_NONE; }
+        case "goal": return r.goal || CU_NONE;
+        case "activity": return r.activity_level || CU_NONE;
+        case "source": return r.self_reported_source || CU_NONE;
+        case "platform": return r.platform ? String(r.platform).toLowerCase() : CU_NONE;
+        case "bmiCat": return cuBmiCat(r) || CU_NONE;
+        case "subtype": return r.sub_type || CU_NONE;
+      }
+      return CU_NONE;
+    }
+    function aiPasses(r) {
+      const f = aiFilters;
+      for (const field of ["gender", "country", "goal", "activity", "source", "platform", "bmiCat", "subtype"]) {
+        const set = f[field];
+        if (set.size && !set.has(aiFieldVal(r, field))) return false;
+      }
+      if (f.byMin != null && (r.birth_year == null || r.birth_year < f.byMin)) return false;
+      if (f.byMax != null && (r.birth_year == null || r.birth_year > f.byMax)) return false;
+      if (f.fsFrom != null && (r.first_seen == null || r.first_seen < f.fsFrom)) return false;
+      if (f.fsTo != null && (r.first_seen == null || r.first_seen > f.fsTo)) return false;
+      return true;
+    }
+    function aiCountBy(rows, field, includeNone) {
+      const m = new Map();
+      for (const r of rows) {
+        const v = aiFieldVal(r, field);
+        if (v === CU_NONE && !includeNone) continue;
+        m.set(v, (m.get(v) || 0) + 1);
+      }
+      return m;
+    }
+
+    // ---------- Geld-Chart-Renderer (spiegeln histHtml/barsHtml, aber €-Format;
+    //            recyceln dieselben CSS-Klassen, kein neues CSS-System) ----------
+    function aiVBars(labels, values, fmtFn, colorFn) { // vertikale Balken (Monatsreihe)
+      const total = values.reduce((a, b) => a + b, 0);
+      if (total === 0) return `<div class="cu-empty-chart">Keine Daten</div>`;
+      const max = Math.max(...values, 1);
+      let h = `<div class="cu-hist">`;
+      for (let i = 0; i < labels.length; i++) {
+        const v = values[i];
+        const hp = v / max * 100;
+        const col = colorFn ? colorFn(i, labels[i]) : "var(--primary)";
+        h += `<div class="cu-hist-col" title="${escapeHtml(labels[i])}: ${escapeHtml(fmtFn(v))}"><div class="cu-hist-bar" style="height:${hp.toFixed(1)}%;background:${col}">` +
+          (v > 0 ? `<span class="h-top">${escapeHtml(fmtFn(v))}</span>` : ``) +
+          `</div><div class="cu-hist-x">${escapeHtml(labels[i])}</div></div>`;
+      }
+      return h + `</div>`;
+    }
+    function aiHBars(entries, denom, fmtFn, colorFn) { // horizontale Balken (Kosten-Splits)
+      if (!entries.length) return `<div class="cu-empty-chart">Keine Daten</div>`;
+      const max = Math.max(...entries.map((e) => e[1]), 1e-9);
+      let h = `<div class="cu-bars">`;
+      entries.forEach(([lab, val], i) => {
+        const pct = denom > 0 ? (val / denom * 100) : 0;
+        const w = val / max * 100;
+        const col = colorFn ? colorFn(i, lab) : "var(--primary)";
+        h += `<div class="cu-bar-row"><div class="b-lab" title="${escapeHtml(lab)}">${escapeHtml(lab)}</div>` +
+          `<div class="cu-bar-track"><div class="cu-bar-fill" style="width:${w.toFixed(1)}%;background:${col}"></div></div>` +
+          `<div class="b-val">${escapeHtml(fmtFn(val))} <span>${pct.toFixed(0)}%</span></div></div>`;
+      });
+      return h + `</div>`;
+    }
+
+    // ---------- Aggregation ----------
+    function aiMonthlyAgg(rowsAllMonths) {
+      let months = (aiMeta && aiMeta.meta && aiMeta.meta.months) ? aiMeta.meta.months.slice() : [];
+      if (!months.length) months = [...new Set(aiData.map((r) => r.month))];
+      months = months.slice().sort();
+      const cost = new Map(), users = new Map();
+      for (const r of rowsAllMonths) {
+        cost.set(r.month, (cost.get(r.month) || 0) + (r.cost_eur || 0));
+        users.set(r.month, (users.get(r.month) || 0) + 1);
+      }
+      return { labels: months, cost: months.map((m) => cost.get(m) || 0), users: months.map((m) => users.get(m) || 0) };
+    }
+    function aiCostHist(rows) { // €/User-Verteilung: User-Zahl je Kosten-Bucket (histHtml wiederverwendet)
+      const bins = [
+        { label: "<0,10", lo: 0, hi: 0.10 }, { label: "0,10–0,50", lo: 0.10, hi: 0.50 },
+        { label: "0,50–1", lo: 0.50, hi: 1 }, { label: "1–2", lo: 1, hi: 2 },
+        { label: "2–5", lo: 2, hi: 5 }, { label: "5–10", lo: 5, hi: 10 }, { label: "10+", lo: 10, hi: 1e9 },
+      ];
+      const { counts } = cuHist(rows, (r) => r.cost_eur, bins);
+      return histHtml(bins.map((b) => b.label), counts, () => "var(--primary)");
+    }
+    function aiCostSplit(rows, field, inc) { // Summe cost_eur je Demografie-Kategorie
+      const m = new Map();
+      for (const r of rows) {
+        const v = aiFieldVal(r, field);
+        if (v === CU_NONE && !inc) continue;
+        m.set(v, (m.get(v) || 0) + (r.cost_eur || 0));
+      }
+      const order = field === "subtype" ? CU_ORD.subtype : field === "country" ? CU_ORD.country : null;
+      const arr = ordered(m, order);
+      const denom = arr.reduce((s, e) => s + e[1], 0);
+      const entries = arr.map(([k, v]) => [cuLabel(field, k), v]);
+      return aiHBars(entries, denom, aiEur, (i) => colorFor(field, arr[i] ? arr[i][0] : null, i));
+    }
+    function aiModelSplit(rows) { // Summe by_model[m].cost_eur je Modell
+      const m = new Map();
+      for (const r of rows) {
+        const bm = r.by_model || {};
+        for (const model in bm) m.set(model, (m.get(model) || 0) + (bm[model].cost_eur || 0));
+      }
+      const arr = [...m.entries()].sort((a, b) => b[1] - a[1]);
+      if (!arr.length) return `<div class="cu-empty-chart">Keine Daten</div>`;
+      const denom = arr.reduce((s, e) => s + e[1], 0);
+      return aiHBars(arr.map(([k, v]) => [k, v]), denom, aiEur, (i) => palAt(i));
+    }
+
+    // ---------- KPIs ----------
+    function aiKpiTiles(rows) {
+      const costs = rows.map((r) => r.cost_eur || 0);
+      const totalCost = costs.reduce((a, b) => a + b, 0);
+      const sumIn = rows.reduce((a, r) => a + (r.input_tokens || 0), 0);
+      const sumOut = rows.reduce((a, r) => a + (r.output_tokens || 0), 0);
+      const sumCached = rows.reduce((a, r) => a + (r.cached_tokens || 0), 0);
+      const sumReq = rows.reduce((a, r) => a + (r.requests || 0), 0);
+      const cacheHit = sumIn > 0 ? (sumCached / sumIn * 100) : 0;
+      return [
+        { label: "Kosten gesamt", val: aiEur(totalCost), sub: aiMonthLabelLong(aiMonth) },
+        { label: "Ø €/User", val: rows.length ? aiEur(totalCost / rows.length) : "–", sub: `${rows.length.toLocaleString("de-DE")} aktive User` },
+        { label: "Median €/User", val: rows.length ? aiEur(cuMedian(costs)) : "–", sub: "robuster als der Schnitt" },
+        { label: "Aktive AI-User", val: rows.length.toLocaleString("de-DE"), sub: "mit ≥1 Request" },
+        { label: "Tokens gesamt", val: aiTokC(sumIn + sumOut), sub: `${aiTokC(sumIn)} in · ${aiTokC(sumOut)} out` },
+        { label: "Cache-Hit-Quote", val: cacheHit.toFixed(0) + "%", sub: `${aiTokC(sumCached)} von ${aiTokC(sumIn)} Input` },
+        { label: "Requests", val: aiInt(sumReq), sub: rows.length ? `Ø ${(sumReq / rows.length).toFixed(1)}/User` : "keine" },
+      ];
+    }
+
+    // ---------- Top-25-Tabelle ----------
+    function aiTopTable(rows) {
+      const top = rows.slice().sort((a, b) => (b.cost_eur || 0) - (a.cost_eur || 0)).slice(0, 25);
+      if (!top.length) return "";
+      let body = "";
+      for (const r of top) {
+        const st = r.sub_type ? cuLabel("subtype", r.sub_type) : "–";
+        const co = r.country || "–";
+        const pl = r.platform ? cuLabel("platform", String(r.platform).toLowerCase()) : "–";
+        body += `<tr>` +
+          `<td><span class="code">${escapeHtml(r.u)}</span></td>` +
+          `<td>${escapeHtml(st)}</td>` +
+          `<td>${escapeHtml(co)}</td>` +
+          `<td>${escapeHtml(pl)}</td>` +
+          `<td class="num">${aiInt(r.requests || 0)}</td>` +
+          `<td class="num">${aiTokC(r.input_tokens || 0)}</td>` +
+          `<td class="num">${aiTokC(r.output_tokens || 0)}</td>` +
+          `<td class="num">${aiTokC(r.cached_tokens || 0)}</td>` +
+          `<td class="num">${aiTokC(r.thinking_tokens || 0)}</td>` +
+          `<td class="num payout">${aiEur(r.cost_eur || 0)}</td>` +
+          `</tr>`;
+      }
+      return `<div style="font-weight:700;font-size:14px;letter-spacing:-0.01em;margin:20px 0 10px">Teuerste 25 User · ${escapeHtml(aiMonthLabelLong(aiMonth))}</div>` +
+        `<div class="card"><table><thead><tr>` +
+        `<th>User</th><th>Abo</th><th>Land</th><th>Plattform</th>` +
+        `<th class="num">Req</th>` +
+        `<th class="num" title="Input-Tokens (inkl. Cache)">In</th>` +
+        `<th class="num" title="Output-Tokens (inkl. Thinking)">Out</th>` +
+        `<th class="num" title="Cached Input (Subset von In)">Cache</th>` +
+        `<th class="num" title="Thinking (Subset von Out)">Think</th>` +
+        `<th class="num">Kosten</th>` +
+        `</tr></thead><tbody>${body}</tbody></table></div>`;
+    }
+
+    // ---------- main render ----------
+    function aiRender() {
+      if (!aiData) return;
+      const grid = document.getElementById("ai-grid");
+      const kpis = document.getElementById("ai-kpis");
+      const empty = document.getElementById("ai-empty");
+      const tableWrap = document.getElementById("ai-table");
+      if (aiData.length === 0) {
+        empty.classList.remove("hidden");
+        grid.innerHTML = ""; kpis.innerHTML = ""; tableWrap.innerHTML = "";
+        document.getElementById("ai-count").textContent = "0";
+        document.getElementById("ai-pct").textContent = "";
+        return;
+      }
+      empty.classList.add("hidden");
+      const inc = document.getElementById("ai-show-none").checked;
+      const sel = document.getElementById("ai-month");
+      aiMonth = sel.value || aiMonth;
+      const allFiltered = aiData.filter(aiPasses);                  // alle Monate, nur Demografie-Filter
+      const rows = allFiltered.filter((r) => r.month === aiMonth);  // gewählter Monat
+
+      document.getElementById("ai-count").textContent = rows.length.toLocaleString("de-DE");
+      const monthTotal = aiData.filter((r) => r.month === aiMonth).length;
+      document.getElementById("ai-pct").textContent = monthTotal ? `${(rows.length / monthTotal * 100).toFixed(0)}% der ${monthTotal.toLocaleString("de-DE")} im Monat` : "";
+
+      kpis.innerHTML = aiKpiTiles(rows).map((k) =>
+        `<div class="cu-kpi"><div class="k-label">${k.label}</div><div class="k-val">${escapeHtml(k.val)}</div><div class="k-sub">${escapeHtml(k.sub)}</div></div>`).join("");
+
+      const cards = [];
+      const agg = aiMonthlyAgg(allFiltered);
+      const monLabels = agg.labels.map(aiMonthLabel);
+      cards.push(cuCardHtml("€ pro Monat", "alle Monate", aiVBars(monLabels, agg.cost, aiEurAxis, () => "var(--primary)"), true));
+      cards.push(cuCardHtml("Aktive AI-User pro Monat", "alle Monate", aiVBars(monLabels, agg.users, aiInt, () => "var(--blue)"), true));
+
+      const totalCost = rows.reduce((a, r) => a + (r.cost_eur || 0), 0);
+      cards.push(cuCardHtml("€/User-Verteilung", "n=" + rows.length.toLocaleString("de-DE"), aiCostHist(rows)));
+      cards.push(cuCardHtml("Kosten nach Abo-Typ", aiEur(totalCost), aiCostSplit(rows, "subtype", inc)));
+      cards.push(cuCardHtml("Kosten nach Plattform", aiEur(totalCost), aiCostSplit(rows, "platform", inc)));
+      cards.push(cuCardHtml("Kosten nach Land", aiEur(totalCost), aiCostSplit(rows, "country", inc)));
+      cards.push(cuCardHtml("Kosten nach Modell", aiEur(totalCost), aiModelSplit(rows)));
+      grid.innerHTML = cards.join("");
+
+      tableWrap.innerHTML = aiTopTable(rows);
+
+      if (aiMeta && aiMeta.last_pull_ts_ms && activeTab === "ai") {
+        const d = new Date(aiMeta.last_pull_ts_ms);
+        const ago = Math.floor((Date.now() - aiMeta.last_pull_ts_ms) / 60000);
+        const agoStr = ago < 1 ? "gerade eben" : ago < 60 ? `vor ${ago} Min` : `vor ${Math.floor(ago / 60)} h`;
+        const tc = aiMeta.meta?.total_cost_eur;
+        let line = `AI Usage · Stand ${d.toLocaleString("de-DE")} · ${agoStr} · ${aiData.length.toLocaleString("de-DE")} User-Monate`;
+        if (tc != null) line += ` · ${aiEur(tc)} gesamt`;
+        if (aiMeta.refresh_warning) line += ` · ⚠ ${aiMeta.refresh_warning}`;
+        document.getElementById("meta").textContent = line;
+      }
+    }
+
+    // ---------- Monats-Dropdown + Distinct-User + Filter-UI ----------
+    function aiBuildMonths() {
+      const sel = document.getElementById("ai-month");
+      let months = (aiMeta && aiMeta.meta && aiMeta.meta.months) ? aiMeta.meta.months.slice() : [];
+      if (!months.length) months = [...new Set(aiData.map((r) => r.month))];
+      months.sort();
+      const desc = months.slice().reverse(); // neuester Monat zuerst
+      sel.innerHTML = desc.map((m) => `<option value="${escapeHtml(m)}">${escapeHtml(aiMonthLabelLong(m))}</option>`).join("");
+      if (!aiMonth || !months.includes(aiMonth)) aiMonth = desc[0] || null;
+      if (aiMonth) sel.value = aiMonth;
+    }
+    function aiBuildUsers() {
+      const seen = new Set();
+      aiUsersUniq = [];
+      for (const r of aiData) { if (seen.has(r.u)) continue; seen.add(r.u); aiUsersUniq.push(r); }
+    }
+    function aiBuildFilters() {
+      const row = document.getElementById("ai-filter-row");
+      if (!aiData) return;
+      const groups = [
+        { key: "gender", label: "Geschlecht" }, { key: "goal", label: "Ziel" },
+        { key: "activity", label: "Aktivität", order: CU_ORD.activity }, { key: "country", label: "Land", order: CU_ORD.country },
+        { key: "source", label: "Quelle" }, { key: "platform", label: "Plattform" },
+        { key: "bmiCat", label: "BMI", order: CU_ORD.bmi }, { key: "subtype", label: "Abo", order: CU_ORD.subtype },
+      ];
+      let h = "";
+      for (const g of groups) {
+        const map = aiCountBy(aiUsersUniq, g.key, true);
+        let keys = [...map.keys()];
+        const none = keys.filter((k) => k === CU_NONE); keys = keys.filter((k) => k !== CU_NONE);
+        if (g.order) keys.sort((a, b) => g.order.indexOf(a) - g.order.indexOf(b)); else keys.sort((a, b) => map.get(b) - map.get(a));
+        keys = keys.concat(none);
+        h += `<div class="cu-fgroup"><span class="cu-flabel">${g.label}</span><div class="cu-chips">`;
+        for (const k of keys) {
+          const on = aiFilters[g.key].has(k) ? " on" : "";
+          h += `<button class="cu-chip${on}" data-fk="${g.key}" data-fv="${escapeHtml(k)}" onclick="aiToggleChip(this)">${escapeHtml(cuLabel(g.key, k))} <span style="opacity:.6">${map.get(k)}</span></button>`;
+        }
+        h += `</div></div>`;
+      }
+      const bys = aiUsersUniq.map((r) => r.birth_year).filter(Boolean);
+      const byMin = bys.length ? Math.min(...bys) : 1950, byMax = bys.length ? Math.max(...bys) : CU_NOW_YEAR;
+      h += `<div class="cu-fgroup"><span class="cu-flabel">Geburtsjahr</span><div class="cu-range">` +
+        `<input type="number" id="ai-by-min" placeholder="${byMin}" min="${byMin}" max="${byMax}" value="${aiFilters.byMin ?? ""}" oninput="aiApplyRanges()"> –` +
+        `<input type="number" id="ai-by-max" placeholder="${byMax}" min="${byMin}" max="${byMax}" value="${aiFilters.byMax ?? ""}" oninput="aiApplyRanges()"></div></div>`;
+      const fsFromV = aiFilters.fsFrom != null ? new Date(aiFilters.fsFrom).toISOString().slice(0, 10) : "";
+      const fsToV = aiFilters.fsTo != null ? new Date(aiFilters.fsTo).toISOString().slice(0, 10) : "";
+      h += `<div class="cu-fgroup"><span class="cu-flabel">Erstkontakt</span><div class="cu-range">` +
+        `<input type="date" id="ai-fs-from" value="${fsFromV}" onchange="aiApplyRanges()"> –<input type="date" id="ai-fs-to" value="${fsToV}" onchange="aiApplyRanges()"></div></div>`;
+      row.innerHTML = h;
+    }
+    function aiToggleChip(el) {
+      const k = el.dataset.fk, v = el.dataset.fv;
+      const set = aiFilters[k];
+      if (set.has(v)) set.delete(v); else set.add(v);
+      el.classList.toggle("on", set.has(v));
+      aiRender();
+    }
+    function aiApplyRanges() {
+      const bmin = parseInt(document.getElementById("ai-by-min").value, 10);
+      const bmax = parseInt(document.getElementById("ai-by-max").value, 10);
+      aiFilters.byMin = Number.isFinite(bmin) ? bmin : null;
+      aiFilters.byMax = Number.isFinite(bmax) ? bmax : null;
+      const ff = document.getElementById("ai-fs-from").value;
+      const ft = document.getElementById("ai-fs-to").value;
+      aiFilters.fsFrom = ff ? Date.parse(ff + "T00:00:00.000Z") : null;
+      aiFilters.fsTo = ft ? Date.parse(ft + "T23:59:59.999Z") : null;
+      aiRender();
+    }
+    function aiResetFilters() {
+      aiFilters = aiDefaultFilters();
+      aiBuildFilters();
+      aiRender();
+    }
+    async function aiLoad(force) {
+      if (!PW) return;
+      const btn = document.getElementById("refresh-btn");
+      const o = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = force ? "Pulle AI-Nutzung…" : "Lade…";
+      try {
+        const r = await fetch(`/api/ai-usage?pw=${encodeURIComponent(PW)}${force ? "&refresh=1" : ""}`);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        const j = await r.json();
+        aiMeta = j;
+        aiData = j.bootstrapped ? (j.records || []) : [];
+        aiBuildUsers();
+        aiBuildMonths();
+        aiBuildFilters();
+        aiRender();
+      } catch (e) {
+        alert("AI-Usage Refresh-Fehler: " + e.message);
       } finally {
         btn.disabled = false;
         btn.textContent = o;
