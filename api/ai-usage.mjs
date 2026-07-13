@@ -15,8 +15,8 @@
 // PII-free: the uid is replaced by an 8-char sha256 prefix, and no email/phone/IDFA/
 // display-name is ever fetched or stored. The compact record set is gzipped + base64'd
 // into ONE Firestore string field (`data_b64`), inflated in the handler; the frontend
-// does all charting + filtering client-side. `by_day` stays in Firestore for later but
-// is never fetched or shipped here (v1 timeline = months).
+// does all charting + filtering client-side. Since schema 2 each record also carries
+// `days` (per-UTC-day counters + pro-rated cost) for the Von-bis/Tages-Auswahl.
 
 import { google } from "googleapis";
 import { gzipSync, gunzipSync } from "node:zlib";
@@ -39,6 +39,7 @@ const ENRICH_CONCURRENCY = 14;
 // (Gemini-3-Pro >200k-Kontext-Staffel bewusst ignoriert — Mahlzait-Prompts <200k.)
 const PRICING = {
   "gemini-3.5-flash":       { in: 1.50, out: 9.00,  cached: 0.15 },
+  "gemini-3.1-flash-lite":  { in: 0.25, out: 1.50,  cached: 0.025 },
   "gemini-3-pro-preview":   { in: 2.00, out: 12.00, cached: 0.20 },
   "gemini-2.5-flash":       { in: 0.30, out: 2.50,  cached: 0.03 },
   "gemini-2.5-flash-lite":  { in: 0.10, out: 0.40,  cached: 0.01 },
@@ -282,6 +283,40 @@ function splitChannels(byChannel, recCostEur) {
   return out;
 }
 
+// Tages-Kosten: wie splitChannels, nur über by_day. by_day splittet nicht nach Modell,
+// daher dieselbe preisgewichtete Näherung; Tokens pro Tag sind exakt. Letzter Tag bekommt
+// den Rest → Summe der Tages-€ == Record-€. Kompaktformat pro Tag (Key = "DD"):
+// [requests, input, cached, output, thinking, cost_eur].
+function splitDays(byDay, recCostEur, month) {
+  const days = [];
+  for (const [date, t] of Object.entries(byDay || {})) {
+    if (!t || typeof t !== "object") continue;
+    if (!String(date).startsWith(month)) continue; // defensiv: fremde Tage ignorieren
+    days.push({
+      dd: String(date).slice(-2),
+      requests: numOr0(t.requests),
+      input_tokens: numOr0(t.input_tokens),
+      cached_tokens: numOr0(t.cached_tokens),
+      output_tokens: numOr0(t.output_tokens),
+      thinking_tokens: numOr0(t.thinking_tokens),
+    });
+  }
+  if (!days.length) return null;
+  days.sort((a, b) => (a.dd < b.dd ? -1 : 1));
+  const W = PRICING[DEFAULT_MODEL];
+  const w = days.map((d) => (d.input_tokens - d.cached_tokens) * W.in + d.cached_tokens * W.cached + d.output_tokens * W.out);
+  let totalW = w.reduce((a, b) => a + b, 0);
+  if (totalW <= 0) { w.fill(1); totalW = days.length; }
+  const out = {};
+  let assigned = 0;
+  days.forEach((d, i) => {
+    const cost = (i === days.length - 1) ? r4(recCostEur - assigned) : r4(recCostEur * w[i] / totalW);
+    if (i < days.length - 1) assigned += cost;
+    out[d.dd] = [d.requests, d.input_tokens, d.cached_tokens, d.output_tokens, d.thinking_tokens, cost];
+  });
+  return out;
+}
+
 // ---------- Firestore: ai_usage query ----------
 async function queryUsageDocs(firestore, minMonth) {
   const parent = `projects/${GCP_PROJECT}/databases/(default)/documents`;
@@ -297,9 +332,9 @@ async function queryUsageDocs(firestore, minMonth) {
             value: { stringValue: minMonth },
           },
         },
-        // Nur was wir brauchen; by_day/updated_at bewusst NICHT ziehen.
+        // Nur was wir brauchen; updated_at bewusst NICHT ziehen.
         select: {
-          fields: ["uid", "month", "requests", "input_tokens", "cached_tokens", "output_tokens", "thinking_tokens", "by_model", "by_channel"]
+          fields: ["uid", "month", "requests", "input_tokens", "cached_tokens", "output_tokens", "thinking_tokens", "by_model", "by_channel", "by_day"]
             .map((f) => ({ fieldPath: f })),
         },
       },
@@ -423,6 +458,8 @@ async function doRefresh(firestore, prev) {
     };
     const channels = splitChannels(d.by_channel, recCost);
     if (channels) rec.channels = channels;
+    const days = splitDays(d.by_day, recCost, d.month);
+    if (days) rec.days = days;
     if (unpriced.length) rec.unpriced_models = unpriced;
     records.push(rec);
   }
@@ -453,7 +490,7 @@ async function doRefresh(firestore, prev) {
 
   const state = {
     last_pull_ts_ms: Date.now(),
-    schema: 1,
+    schema: 2, // 2 = Records enthalten `days` (Tages-Zähler + anteilige Tages-€)
     total_users: uids.length,
     meta,
     data_b64: b64,
@@ -508,6 +545,7 @@ export default async function handler(req, res) {
     return res.json({
       bootstrapped: true,
       last_pull_ts_ms: state.last_pull_ts_ms,
+      schema: state.schema || 1,
       meta: state.meta || null,
       refresh_warning: state.refresh_warning || null,
       records: inflate(state),
