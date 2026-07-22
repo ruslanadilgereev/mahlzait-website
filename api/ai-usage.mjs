@@ -39,6 +39,7 @@ const ENRICH_CONCURRENCY = 14;
 // (Gemini-3-Pro >200k-Kontext-Staffel bewusst ignoriert — Mahlzait-Prompts <200k.)
 const PRICING = {
   "gemini-3.5-flash":       { in: 1.50, out: 9.00,  cached: 0.15 },
+  "gemini-3.5-flash-lite":  { in: 0.30, out: 2.50,  cached: 0.03 },
   "gemini-3.1-flash-lite":  { in: 0.25, out: 1.50,  cached: 0.025 },
   "gemini-3-pro-preview":   { in: 2.00, out: 12.00, cached: 0.20 },
   "gemini-2.5-flash":       { in: 0.30, out: 2.50,  cached: 0.03 },
@@ -244,9 +245,10 @@ function priceByModel(byModel) {
 }
 
 // Kanal-Kosten: den exakt berechneten Record-cost_eur anteilig auf die Kanäle verteilen,
-// gewichtet mit preisgewichteten Kanal-Tokens zu gemini-3.5-flash-Sätzen. Fair, weil sowohl
-// fast- als auch thinking-Mode gemini-3.5-flash sind (App default fast, WhatsApp hart thinking);
-// nur der seltene pro-Mode weicht ab. by_channel splittet nicht nach Modell, daher diese Näherung.
+// gewichtet mit preisgewichteten Kanal-Tokens zu DEFAULT_MODEL-Sätzen. by_channel splittet nicht
+// nach Modell, daher diese Näherung; da anschliessend auf den exakt berechneten Record-€ normiert
+// wird, faellt die Wahl der Gewichts-Preisliste nur ins Gewicht, wenn Kanaele UNTERSCHIEDLICHE
+// Modelle fahren (App und WhatsApp teilen sich aktuell dasselbe, nur der seltene pro-Mode weicht ab).
 // Letzter Kanal bekommt den Rest → Summe der Kanal-€ == Record-€.
 function splitChannels(byChannel, recCostEur) {
   const chans = [];
