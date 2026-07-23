@@ -63,6 +63,9 @@ const templateConfig: TemplateConfig = {
       { href: "/vergleich", title: "App-Vergleich" },
       { href: "/wissen", title: "Wissen" },
       { href: "/kalorien", title: "Kalorientabelle" },
+      { href: "/kalorienarme-lebensmittel", title: "Kalorienarme Lebensmittel" },
+      { href: "/eiweissreiche-lebensmittel", title: "Eiweißreiche Lebensmittel" },
+      { href: "/low-carb-lebensmittel", title: "Low-Carb-Lebensmittel" },
     ],
   },
   topNavbar: {

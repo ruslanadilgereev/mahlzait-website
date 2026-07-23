@@ -1,4 +1,5 @@
 import { articlesMeta } from "@content/wissen";
+import foodLastmodJson from "../data/food-lastmod.json";
 
 interface FoodMeta {
   slug?: string;
@@ -98,8 +99,13 @@ const knowledgeEntries: SitemapEntry[] = articlesMeta.map((article) => ({
   priority: 0.7,
 }));
 
-const foodEntries: SitemapEntry[] = foods.map((food) => ({
+// Stabiles lastmod pro Food (git-Datum via scripts/generate-food-lastmod.mjs),
+// damit nicht jeder Deploy das lastmod aller ~930 Food-URLs rotiert.
+const foodLastmod = foodLastmodJson as Record<string, string>;
+
+const foodEntries: SitemapEntry[] = foods.map((food: any) => ({
   url: `${siteUrl}/kalorien/${food.slug}/`,
+  lastmod: foodLastmod[food.slug],
   changefreq: "monthly",
   priority: 0.6,
 }));

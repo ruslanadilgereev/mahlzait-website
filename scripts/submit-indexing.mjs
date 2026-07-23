@@ -17,7 +17,7 @@
  */
 
 const SITE_URL = "https://www.mahlzait.de";
-const INDEXNOW_KEY = "1c802a7f00434fe04c269ffb5f9e526a";
+const INDEXNOW_KEY = "7bb723df280c7edd23f15dfedf45fb3f";
 
 // URL-Path-Prefixes to EXCLUDE from --all (food-detail-pages kompetitive Nische, skip for quota)
 const EXCLUDE_URL_PATTERNS = ["/kalorien/"];
