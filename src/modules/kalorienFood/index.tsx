@@ -91,6 +91,18 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
   const currentCarbs = Math.round(food.overview.carbs_per_100g * multiplier * 10) / 10;
   const currentFat = Math.round(food.overview.fat_per_100g * multiplier * 10) / 10;
   const currentFiber = Math.round(food.overview.fiber_per_100g * multiplier * 10) / 10;
+
+  // Statische Mengen-Tabelle: beantwortet "X g <Food> Kalorien"-Suchanfragen crawlbar,
+  // ohne dass der Besucher den Schieberegler bedienen muss.
+  const amountRows = [...new Set([25, 50, 100, 150, 200, 250, 500, food.overview.typical_portion_g])]
+    .sort((a, b) => a - b)
+    .map((grams) => ({
+      grams,
+      isTypical: grams === food.overview.typical_portion_g,
+      calories: Math.round((food.overview.calories_per_100g * grams) / 100),
+      protein: Math.round((food.overview.protein_per_100g * grams) / 100 * 10) / 10,
+      fat: Math.round((food.overview.fat_per_100g * grams) / 100 * 10) / 10,
+    }));
   const supportLinks = foodSupportLinksByCategory[food.category] || defaultFoodSupportLinks;
 
   const burnComparison = [
@@ -248,6 +260,45 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                       <td className="text-right">{food.overview.fiber_per_100g}g</td>
                       <td className="text-right">{Math.round(food.overview.fiber_per_100g * food.overview.typical_portion_g / 100 * 10) / 10}g</td>
                     </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          {/* Kalorien nach Menge (statisch, crawlbar) */}
+          <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
+            <div className="card-body p-6 md:p-8">
+              <h2 className="text-2xl font-bold mb-4">Kalorien nach Menge</h2>
+              <p className="opacity-80 mb-4">
+                Wie viele Kalorien haben 50 g, 200 g oder 500 g {food.name}? Die Tabelle zeigt
+                Kalorien, Protein und Fett für gängige Mengen, berechnet aus{" "}
+                {food.overview.calories_per_100g} kcal pro 100 g.
+              </p>
+              <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                  <thead>
+                    <tr>
+                      <th>Menge</th>
+                      <th className="text-right">Kalorien</th>
+                      <th className="text-right">Protein</th>
+                      <th className="text-right">Fett</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {amountRows.map((row) => (
+                      <tr key={row.grams} className={row.isTypical ? "font-semibold" : undefined}>
+                        <td>
+                          {row.grams} g {food.name}
+                          {row.isTypical && (
+                            <span className="opacity-60 font-normal"> ({food.overview.typical_portion_name})</span>
+                          )}
+                        </td>
+                        <td className={`text-right ${row.isTypical ? "text-primary" : ""}`}>{row.calories} kcal</td>
+                        <td className="text-right">{row.protein} g</td>
+                        <td className="text-right">{row.fat} g</td>
+                      </tr>
+                    ))}
                   </tbody>
                 </table>
               </div>
