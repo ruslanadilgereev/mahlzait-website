@@ -51,6 +51,7 @@ const templateConfig: TemplateConfig = {
         title: "Kaloriendefizit berechnen",
       },
       { href: "/makros-berechnen", title: "Makros berechnen" },
+      { href: "/leistungsumsatz-rechner", title: "Leistungsumsatz berechnen" },
       { href: "/essensplan-erstellen", title: "Essensplan erstellen" },
       { href: "/trainingsplan-erstellen", title: "Trainingsplan erstellen" },
       {
