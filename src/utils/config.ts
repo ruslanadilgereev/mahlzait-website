@@ -53,6 +53,10 @@ const templateConfig: TemplateConfig = {
       { href: "/makros-berechnen", title: "Makros berechnen" },
       { href: "/essensplan-erstellen", title: "Essensplan erstellen" },
       { href: "/trainingsplan-erstellen", title: "Trainingsplan erstellen" },
+      {
+        href: "https://www.deutschland-rechner.de/?ref=mahlzait",
+        title: "Deutschland-Rechner ↗",
+      },
     ],
     // SEO-Links für App-Landingpages und Info
     appLinks: [
