@@ -19,8 +19,23 @@ interface FoodData {
   };
 }
 
+// Island props get serialized into the HTML – pass only the fields the island needs
 const foods: FoodData[] = Object.values(foodFiles)
-  .map((mod: any) => mod.default || mod)
+  .map((mod: any) => {
+    const f = mod.default || mod;
+    return {
+      slug: f.slug,
+      name: f.name,
+      emoji: f.emoji,
+      category: f.category,
+      overview: {
+        calories_per_100g: f.overview.calories_per_100g,
+        protein_per_100g: f.overview.protein_per_100g,
+        carbs_per_100g: f.overview.carbs_per_100g,
+        fat_per_100g: f.overview.fat_per_100g,
+      },
+    };
+  })
   .sort((a: FoodData, b: FoodData) => a.name.localeCompare(b.name, 'de'));
 
 const seo = {
