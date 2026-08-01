@@ -516,7 +516,9 @@
       font-variant-numeric: tabular-nums; }
     .ca-win .w-detail { font-size: 12px; color: var(--text-muted); margin-top: 4px;
       font-variant-numeric: tabular-nums; }
-    .up { color: var(--green); } .down { color: var(--red); } .flat { color: var(--text-muted); }
+    /* praefixt: .up/.down/.flat waeren global und wuerden frueher oder spaeter
+       mit einem anderen Tab kollidieren */
+    .ca-up { color: var(--green); } .ca-down { color: var(--red); } .ca-neutral { color: var(--text-muted); }
     /* nowrap, sonst rutscht das % oder das € allein in die naechste Zeile */
     table.ca-all td.num, table.ca-all th.num { text-align: right; font-variant-numeric: tabular-nums;
       white-space: nowrap; }
@@ -1054,7 +1056,8 @@
 
         <div class="card" style="padding:18px 20px">
           <div class="bu-head">
-            <h3>Kalender</h3>
+            <h3>Kalender <span style="font-weight:400;color:var(--text-faint);font-size:12px"
+              id="ca-closed"></span></h3>
             <span class="bu-sub" id="ca-scale-note"></span>
           </div>
           <div class="bu-cap">
@@ -1092,11 +1095,20 @@
         </div>
 
         <div class="footer-note">
+          <b style="color:var(--text)">Nicht mit dem Business-Tab vergleichen.</b> Dort wird
+          kohortiert (nur wer im Zeitraum installiert hat, in fester Reihenfolge), hier nicht:
+          ein Tag zählt, was an diesem Tag passiert ist. Deshalb sind es <b>Verhältnisse, keine
+          Conversion-Raten</b> — die Paywall sehen auch Bestandsnutzer, im Nenner stehen aber nur
+          die Neuinstalls des Tages. „Paywall-Views je Install" landet dadurch über 87 %, was als
+          Conversion gelesen unsinnig wäre. Für Trends taugen die Zahlen, für absolute
+          Conversion-Aussagen nimm den Business-Tab.
+          Die beiden mit ✓ markierten Raten sind am ehesten vergleichbar, weil sich die
+          Bestandsnutzer dort in Zähler und Nenner weitgehend aufheben
+          (Trials je Install: 9,4 % hier gegen 8,5 % dort). ·
           Gezählt wird pro <b>Kalendertag</b>, wie viele Nutzer das Ereignis ausgelöst haben
-          (GA4-Metrik <code>activeUsers</code>, also Menschen, nicht Ereignisse). Anders als im
-          Business-Tab wird hier <b>nicht kohortiert</b>: ein Tag zählt, was an diesem Tag passiert
-          ist, unabhängig davon wann jemand installiert hat. Für die Frage „lief dieser Tag gut"
-          ist das richtig, für Conversion-Ketten wäre es falsch. ·
+          (GA4-Metrik <code>activeUsers</code>, also Menschen, nicht Ereignisse). ·
+          Der <b>heutige Tag zählt in keinem Vergleich mit</b>, er ist ja noch nicht vorbei;
+          sonst täuscht ein halber Tag einen Einbruch vor. ·
           Umsatz und Käufe sind <b>Neukäufe</b> aus RevenueCat, Verlängerungen sind draußen, weil
           sie nichts über das Tagesgeschäft sagen. · Aggregierte Tagesdaten reichen volle
           365 Tage zurück; nur der kohortierte Funnel ist auf ~2 Monate begrenzt.
@@ -1148,7 +1160,10 @@
     async function refresh() {
       if (!PW) return;
       if (activeTab === "price") return peLoad();
-      if (activeTab === "business") return buLoad();
+      // Beim ausdruecklichen Aktualisieren MUSS auch die Historie neu geholt
+      // werden, sonst liefert die Spar-Logik (parts=stages) stillschweigend die
+      // alte zurueck und der Klick tut scheinbar nichts.
+      if (activeTab === "business") { buHistory = null; buMonths = null; return buLoad(); }
       if (activeTab === "calendar") { caData = null; return caLoad(); }
       const btn = document.getElementById("refresh-btn");
       const origText = btn.textContent;
@@ -3408,7 +3423,9 @@
     // nur zu und loest KEINEN neuen Request aus.
     // ============================================================
     let caData = null;
-    let caMetric = "r_trial";   // Rate als Standard: absolute Zahlen haengen am Ad-Budget
+    // Standard ist die Rate, die man gefahrlos gegen den Business-Tab halten kann.
+    // Absolute Zahlen haengen am Ad-Budget und taugen nicht als Einstieg.
+    let caMetric = "r_trial_install";
     let caDays = 180;
     let caCustom = null;        // {from, to}
     const caCharts = {};
@@ -3457,7 +3474,9 @@
     function caSetCustom() {
       const from = document.getElementById("ca-from").value;
       const to = document.getElementById("ca-to").value;
-      if (!from && !to) return;
+      // Beide leer heisst "zurueck zum Preset". Sonst blieben die Felder leer,
+      // waehrend der Kalender weiter den alten Bereich zeigt.
+      if (!from && !to) { caCustom = null; caRender(); return; }
       caCustom = { from, to };
       caRender();
     }
@@ -3478,7 +3497,7 @@
       return Number(v).toLocaleString("de-DE");
     }
     const caPct = (d) => (d === null || d === undefined ? "–" : (d >= 0 ? "+" : "") + (d * 100).toFixed(1) + " %");
-    const caDir = (d) => (d === null || d === undefined ? "flat" : d > 0.02 ? "up" : d < -0.02 ? "down" : "flat");
+    const caDir = (d) => (d === null || d === undefined ? "neutral" : d > 0.02 ? "up" : d < -0.02 ? "down" : "neutral");
 
     function caRender() {
       if (!caData) return;
@@ -3499,16 +3518,16 @@
         `<span style="font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-faint);` +
         `font-weight:700;align-self:center;margin-right:2px">${label}</span>` +
         items.map(x => `<button class="ca-m${x.key === caMetric ? " on" : ""}" ` +
-          `onclick="caSetMetric('${x.key}')">${esc(x.label)}</button>`).join("");
+          `title="${x.comparable ? "mit dem Business-Tab vergleichbar" : ""}" ` +
+          `onclick="caSetMetric('${x.key}')">${esc(x.label)}` +
+          (x.comparable ? ` <span style="opacity:.65">✓</span>` : "") + `</button>`).join("");
       document.getElementById("ca-metrics").innerHTML =
         grp("Raten", d.rates || []) +
         `<span style="width:1px;height:24px;background:var(--border);margin:0 6px;align-self:center"></span>` +
         grp("Absolut", d.metrics);
 
-      ["ca-r-90", "ca-r-180", "ca-r-365", "ca-r-c"].forEach(id => {
-        const on = caCustom ? id === "ca-r-c" : id === "ca-r-" + caDays;
-        document.getElementById(id).className = on ? "primary" : "secondary";
-      });
+      // Die Markierung der Zeitraum-Buttons passiert weiter unten, erst NACHDEM
+      // feststeht ob der eigene Bereich ueberhaupt Daten hatte.
 
       // ---------- Urteil ----------
       const c21 = st.compare.d21;
@@ -3537,26 +3556,37 @@
       document.getElementById("ca-wins").innerHTML = [
         ["7 Tage", st.compare.d7], ["21 Tage", st.compare.d21], ["28 Tage", st.compare.d28],
       ].map(([lab, c]) => {
-        if (!c) return `<div class="ca-win"><div class="w-lab">${lab}</div><div class="w-delta flat">–</div><div class="w-detail">zu wenig Daten</div></div>`;
+        if (!c) return `<div class="ca-win"><div class="w-lab">${lab}</div><div class="w-delta ca-neutral">–</div><div class="w-detail">zu wenig Daten</div></div>`;
         return `<div class="ca-win"><div class="w-lab">${lab} vs. davor</div>` +
-          `<div class="w-delta ${caDir(c.delta)}">${caPct(c.delta)}</div>` +
+          `<div class="w-delta ca-${caDir(c.delta)}">${caPct(c.delta)}</div>` +
           `<div class="w-detail">${caFmt(c.before, m.unit)} → ${caFmt(c.recent, m.unit)}</div></div>`;
       }).join("");
 
       // ---------- Kalender ----------
       // Sichtbarer Ausschnitt: eigener Bereich schlaegt die Presets.
-      let shown;
+      let shown, rangeHint = "";
       if (caCustom) {
         const from = caCustom.from || d.days[0];
         const to = caCustom.to || d.days[d.days.length - 1];
         const [a, b] = from <= to ? [from, to] : [to, from];
         shown = d.days.filter(x => x >= a && x <= b);
-        if (!shown.length) shown = d.days.slice(-caDays);
+        if (!shown.length) {
+          // Leer heisst: der Bereich liegt komplett ausserhalb der Daten. Das
+          // still zu schlucken waere irrefuehrend, der Nutzer denkt sonst sein
+          // Zeitraum haette gegriffen.
+          shown = d.days.slice(-caDays);
+          caCustom = null;
+          rangeHint = ` · für ${a} bis ${b} gibt es keine Daten (${d.days[0]} bis ${d.days[d.days.length - 1]} verfügbar)`;
+        }
       } else {
         shown = d.days.slice(-caDays);
       }
       document.getElementById("ca-from").value = shown[0];
       document.getElementById("ca-to").value = shown[shown.length - 1];
+      ["ca-r-90", "ca-r-180", "ca-r-365", "ca-r-c"].forEach(id => {
+        const on = caCustom ? id === "ca-r-c" : id === "ca-r-" + caDays;
+        document.getElementById(id).className = on ? "primary" : "secondary";
+      });
 
       // Werte ohne Datenlage (Rate mit Nenner 0) bleiben null und werden grau
       // gezeichnet, statt als echte Null durchzugehen.
@@ -3573,7 +3603,8 @@
       const spread = Math.max(med - p10, p90 - med, Math.abs(med) * 0.35, 1e-6);
       document.getElementById("ca-scale-note").textContent =
         `Normal im Ausschnitt: ${caFmt(med, m.unit)} · Skala ${caFmt(Math.max(0, med - spread), m.unit)} bis ${caFmt(med + spread, m.unit)}` +
-        (isRate ? ` · ${d.rate_window}-Tage-Fenster` : "");
+        (isRate ? ` · ${d.rate_window}-Tage-Fenster` : "") + rangeHint;
+      document.getElementById("ca-scale-note").style.color = rangeHint ? "var(--red)" : "";
 
       caChart("ca-cal", {
         backgroundColor: "transparent",
@@ -3589,10 +3620,12 @@
             if (val === null || val === undefined) {
               return `<b>${day}</b> (${wd})<br><span style="color:${muted}">keine Daten</span>`;
             }
+            const laufend = d.last_closed_day && day > d.last_closed_day;
             const rel = med ? ((val / med - 1) * 100) : null;
             return `<b>${day}</b> (${wd})<br>${esc(m.label)}: <b>${caFmt(val, m.unit)}</b>` +
+              (laufend ? `<br><span style="color:${muted}">Tag läuft noch, zählt in keinem Vergleich mit</span>` : "") +
               (isRate ? `<br><span style="color:${muted}">${d.rate_window}-Tage-Fenster bis zu diesem Tag</span>` : "") +
-              (rel === null ? "" : `<br><span style="color:${muted}">${rel >= 0 ? "+" : ""}${rel.toFixed(0)} % gegenüber normal</span>`);
+              (rel === null || laufend ? "" : `<br><span style="color:${muted}">${rel >= 0 ? "+" : ""}${rel.toFixed(0)} % gegenüber normal</span>`);
           },
         },
         visualMap: {
@@ -3654,6 +3687,8 @@
           `<td class="num ${dd === "up" ? "d-up" : dd === "down" ? "d-down" : ""}">${c ? caPct(c.delta) : "–"}</td></tr>`;
       }).join("");
 
+      document.getElementById("ca-closed").textContent =
+        d.last_closed_day ? `· Vergleiche bis ${d.last_closed_day}, der heutige Tag zählt nicht mit` : "";
       document.getElementById("meta").textContent =
         `Tagesform · ${d.range.startDate} bis ${d.range.endDate}` + (d.cached ? " · aus dem Cache" : "");
       caResize();

@@ -50,12 +50,19 @@ const METRICS = [
 // 2. NICHT KOHORTIERT: Zaehler und Nenner sind Tageswerte, der Paywall-Seher von
 //    heute kann gestern installiert haben. Fuer den Trend taugt das, fuer eine
 //    exakte Conversion nimmt man den Business-Tab.
+// ACHTUNG bei den Namen: das sind VERHAELTNISSE, keine Conversion-Raten.
+// Zaehler und Nenner stammen aus verschiedenen Grundgesamtheiten — die Paywall
+// sehen auch Bestandsnutzer, im Nenner stehen aber nur die Neuinstalls des Tages.
+// Deshalb kommt "Paywall je Install" auf ueber 87 %, was als Conversion gelesen
+// unsinnig waere. Die Namen sagen jetzt was gemeint ist, und `comparable`
+// markiert die eine Rate, die man gefahrlos gegen den Business-Tab halten kann
+// (dort heben sich die Bestandsnutzer in Zaehler und Nenner weitgehend auf).
 const RATES = [
-  { key: "r_paywall", label: "Install → Paywall", num: "paywall", den: "install", unit: "%" },
-  { key: "r_trial", label: "Paywall → Trial", num: "trial", den: "paywall", unit: "%" },
-  { key: "r_trial_install", label: "Trial je Install", num: "trial", den: "install", unit: "%" },
-  { key: "r_rev_install", label: "Umsatz je Install", num: "revenue", den: "install", unit: "EUR" },
+  { key: "r_trial_install", label: "Trials je Install", num: "trial", den: "install", unit: "%", comparable: true },
+  { key: "r_rev_install", label: "Umsatz je Install", num: "revenue", den: "install", unit: "EUR", comparable: true },
   { key: "r_rev_paywall", label: "Umsatz je Paywall-View", num: "revenue", den: "paywall", unit: "EUR" },
+  { key: "r_trial", label: "Trials je Paywall-View", num: "trial", den: "paywall", unit: "%" },
+  { key: "r_paywall", label: "Paywall-Views je Install", num: "paywall", den: "install", unit: "%" },
 ];
 
 const RATE_WINDOW = 7;
@@ -137,6 +144,14 @@ function quantile(sorted, q) {
 }
 
 const round2 = (v) => Math.round(v * 100) / 100;
+
+/**
+ * Der heutige Tag ist noch nicht vorbei und faellt deshalb aus JEDEM Vergleich
+ * raus. Sonst zieht ein halber Tag das aktuelle Fenster nach unten und taeuscht
+ * einen Einbruch vor: gemessen kippte der 7-Tage-Umsatz dadurch von echten
+ * +8 % auf scheinbare -27 %.
+ */
+const closedDays = (days) => days.slice(0, -1);
 
 /** Fensterlogik: die letzten n Tage gegen die n davor. */
 function compare(series, days, n) {
@@ -266,9 +281,9 @@ export default async function handler(req, res) {
         max: sorted[sorted.length - 1] ?? 0,
         best: allDays[vals.indexOf(sorted[sorted.length - 1])] ?? null,
         compare: {
-          d7: compare(series[m.key], allDays, 7),
-          d21: compare(series[m.key], allDays, 21),
-          d28: compare(series[m.key], allDays, 28),
+          d7: compare(series[m.key], closedDays(allDays), 7),
+          d21: compare(series[m.key], closedDays(allDays), 21),
+          d28: compare(series[m.key], closedDays(allDays), 28),
         },
         weekday: byWeekday.map((a) => (a.length ? Math.round((sum(a) / a.length) * 100) / 100 : 0)),
       };
@@ -279,12 +294,20 @@ export default async function handler(req, res) {
     for (const r of RATES) {
       const vals = allDays.map((d) => series[r.key][d]).filter((v) => v !== null);
       const sorted = [...vals].sort((a, b) => a - b);
-      const byWeekday = Array.from({ length: 7 }, () => []);
-      allDays.forEach((d) => {
-        const v = series[r.key][d];
-        if (v !== null) byWeekday[(new Date(d + "T00:00:00Z").getUTCDay() + 6) % 7].push(v);
-      });
       const pct = r.unit === "%";
+
+      // Wochentag NICHT aus den Fensterwerten mitteln: die Rate ist bereits ein
+      // 7-Tage-Fenster, jeder Tag enthaelt also dieselben sieben Wochentage.
+      // Der Mittelwert daraus waere fuer alle sieben nahezu identisch und der
+      // Wochentagseffekt komplett weggeglaettet. Stattdessen Zaehler und Nenner
+      // der ROHEN Tage je Wochentag summieren und erst dann teilen.
+      const wdNum = Array(7).fill(0), wdDen = Array(7).fill(0);
+      allDays.forEach((day) => {
+        const w = (new Date(day + "T00:00:00Z").getUTCDay() + 6) % 7;
+        wdNum[w] += series[r.num][day] ?? 0;
+        wdDen[w] += series[r.den][day] ?? 0;
+      });
+
       stats[r.key] = {
         isRate: true,
         median: round2(quantile(sorted, 0.5)),
@@ -292,11 +315,11 @@ export default async function handler(req, res) {
         p90: round2(quantile(sorted, 0.9)),
         max: sorted[sorted.length - 1] ?? 0,
         compare: {
-          d7: compareRate(series[r.num], series[r.den], allDays, 7, pct),
-          d21: compareRate(series[r.num], series[r.den], allDays, 21, pct),
-          d28: compareRate(series[r.num], series[r.den], allDays, 28, pct),
+          d7: compareRate(series[r.num], series[r.den], closedDays(allDays), 7, pct),
+          d21: compareRate(series[r.num], series[r.den], closedDays(allDays), 21, pct),
+          d28: compareRate(series[r.num], series[r.den], closedDays(allDays), 28, pct),
         },
-        weekday: byWeekday.map((a) => (a.length ? round2(sum(a) / a.length) : 0)),
+        weekday: wdNum.map((n, i) => (wdDen[i] ? round2((n / wdDen[i]) * (pct ? 100 : 1)) : 0)),
       };
     }
 
@@ -304,8 +327,11 @@ export default async function handler(req, res) {
       generated_at: new Date().toISOString(),
       range: { startDate, endDate, days: allDays.length },
       metrics: METRICS.map(({ key, label, unit }) => ({ key, label, unit, group: "absolut" })),
-      rates: RATES.map(({ key, label, unit }) => ({ key, label, unit, group: "rate" })),
+      rates: RATES.map(({ key, label, unit, comparable }) =>
+        ({ key, label, unit, group: "rate", comparable: !!comparable })),
       rate_window: RATE_WINDOW,
+      // Bis hierhin sind die Tage abgeschlossen; alles danach laeuft noch.
+      last_closed_day: allDays[allDays.length - 2] ?? null,
       days: allDays,
       series,
       stats,
