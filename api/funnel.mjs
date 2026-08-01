@@ -57,9 +57,15 @@ const ACTIVATION = [
 const DAY_MS = 24 * 3600 * 1000;
 const iso = (d) => new Date(d).toISOString().slice(0, 10);
 
-// GA4 deckelt gleichzeitige Anfragen pro Property (10). Wir brauchen ~29,
-// also durch einen Pool schicken statt alles auf einmal feuern.
-const GA4_CONCURRENCY = 6;
+// GA4 deckelt gleichzeitige Anfragen pro Property (10). 8 laesst Luft fuer
+// parallele Aufrufe aus anderen Tabs, der Retry faengt den Rest ab.
+const GA4_CONCURRENCY = 8;
+
+// Abgeschlossene Monate aendern sich nie mehr. Der Cache lebt im warmen
+// Lambda-Container: kein Firestore noetig, kostet 5 Zeilen und spart bei jedem
+// Folgeaufruf 15 der 18 Historie-Abfragen. Kalter Start faellt einfach zurueck
+// auf den vollen Pull.
+const histCache = new Map(); // "YYYY-MM" -> {install, paywall, trial}
 
 /** Promise.all mit Obergrenze fuer gleichzeitige Laeufe, Reihenfolge bleibt erhalten. */
 async function mapLimit(items, limit, fn) {
@@ -152,8 +158,22 @@ async function rcChart(chart, startDate, endDate, resolution = "month") {
 const monthKey = (ts) => new Date(ts * 1000).toISOString().slice(0, 7);
 
 // ---------- Zeitraum ----------
-function resolveRange(range) {
+const isDate = (s) => /^\d{4}-\d{2}-\d{2}$/.test(s || "");
+
+function resolveRange(range, startQ, endQ) {
   const today = new Date();
+  const todayIso = iso(today);
+
+  // Benutzerdefiniert: explizites Start-/Enddatum schlaegt alles andere.
+  if (isDate(startQ) || isDate(endQ)) {
+    let s = isDate(startQ) ? startQ : iso(today.getTime() - 30 * DAY_MS);
+    let e = isDate(endQ) ? endQ : todayIso;
+    if (s > e) [s, e] = [e, s];               // vertauschte Eingabe still korrigieren
+    if (e > todayIso) e = todayIso;           // GA4 kennt die Zukunft nicht
+    const days = Math.round((Date.parse(e) - Date.parse(s)) / DAY_MS) + 1;
+    return { startDate: s, endDate: e, label: `${s} bis ${e} (${days} Tage)`, custom: true };
+  }
+
   if (/^\d{4}-\d{2}$/.test(range || "")) {
     const [y, m] = range.split("-").map(Number);
     const last = new Date(Date.UTC(y, m, 0));
@@ -163,7 +183,7 @@ function resolveRange(range) {
   const days = range === "90d" ? 90 : range === "6m" ? 180 : 30;
   return {
     startDate: iso(today.getTime() - days * DAY_MS),
-    endDate: iso(today),
+    endDate: todayIso,
     label: range === "90d" ? "letzte 90 Tage" : range === "6m" ? "letzte 180 Tage" : "letzte 30 Tage",
   };
 }
@@ -187,7 +207,10 @@ export default async function handler(req, res) {
       return res.status(401).json({ error: "Unauthorized" });
     }
 
-    const range = resolveRange(req.query?.range);
+    const range = resolveRange(req.query?.range, req.query?.start, req.query?.end);
+    // parts=stages laesst die Historie weg. Sie haengt nicht am Zeitraum, das
+    // Frontend holt sie einmal und behaelt sie ueber Zeitraum-Wechsel hinweg.
+    const withHistory = req.query?.parts !== "stages";
     const auth = getGa4Auth();
     const tokenObj = await (await auth.getClient()).getAccessToken();
     const token = typeof tokenObj === "string" ? tokenObj : tokenObj?.token;
@@ -201,10 +224,16 @@ export default async function handler(req, res) {
     // haelt. Verschachtelte Promise.all wuerden die Quota wieder sprengen.
     // Historie nur mit den drei Kernstufen, sonst explodiert die Aufrufzahl.
     const HIST_EVENTS = ["first_open", "subscription_screen_viewed", "trial_started"];
+    const currentMonth = iso(Date.now()).slice(0, 7);
+    // Abgeschlossene Monate nur einmal holen. Der laufende Monat immer frisch.
+    const monthsToFetch = withHistory
+      ? months.filter((m) => m === currentMonth || !histCache.has(m))
+      : [];
+
     const ga4Tasks = [
       ...STAGES.map((s) => ({ event: s.event, start: range.startDate, end: range.endDate })),
       ...ACTIVATION.map((a) => ({ event: a.event, start: range.startDate, end: range.endDate })),
-      ...months.flatMap((m) => {
+      ...monthsToFetch.flatMap((m) => {
         const r = resolveRange(m);
         return HIST_EVENTS.map((event) => ({ event, start: r.startDate, end: r.endDate }));
       }),
@@ -221,10 +250,17 @@ export default async function handler(req, res) {
     let cursor = 0;
     const stageUsers = ga4Results.slice(cursor, (cursor += STAGES.length));
     const activationUsers = ga4Results.slice(cursor, (cursor += ACTIVATION.length));
-    const histStages = months.map((m) => {
+    for (const m of monthsToFetch) {
       const [install, paywall, trial] = ga4Results.slice(cursor, (cursor += HIST_EVENTS.length));
-      return { month: m, install, paywall, trial };
-    });
+      if (m !== currentMonth) histCache.set(m, { install, paywall, trial });
+      else histCache.set("__current", { month: m, install, paywall, trial });
+    }
+    const histStages = withHistory
+      ? months.map((m) => {
+          const c = m === currentMonth ? histCache.get("__current") : histCache.get(m);
+          return { month: m, install: c?.install ?? 0, paywall: c?.paywall ?? 0, trial: c?.trial ?? 0 };
+        })
+      : [];
 
     // --- Stufen aufbereiten
     const start = stageUsers[0] || 0;
@@ -353,8 +389,9 @@ export default async function handler(req, res) {
         mrr: latest(rcMrr, 0),
       },
       modeled_paid: modeledPaid,
-      history,
-      months,
+      history: withHistory ? history : null,
+      months: withHistory ? months : null,
+      ga4_calls: ga4Tasks.length,
     });
   } catch (e) {
     console.error("[funnel]", e?.message, e?.stack?.slice(0, 400));

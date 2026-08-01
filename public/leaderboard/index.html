@@ -924,7 +924,13 @@
           <button class="secondary" id="bu-r-30d" onclick="buSetRange('30d')">30 Tage</button>
           <button class="secondary" id="bu-r-90d" onclick="buSetRange('90d')">90 Tage</button>
           <button class="secondary" id="bu-r-m" onclick="buSetRange('month')">Letzter voller Monat</button>
-          <div class="spacer" style="flex:1"></div>
+          <span style="width:1px;height:22px;background:var(--border);margin:0 4px"></span>
+          <input id="bu-from" type="date" style="width:auto" onchange="buSetCustom()">
+          <span style="color:var(--text-faint);font-size:12px">bis</span>
+          <input id="bu-to" type="date" style="width:auto" onchange="buSetCustom()">
+          <button class="secondary" id="bu-r-c" onclick="buSetCustom()">Übernehmen</button>
+        </div>
+        <div class="bu-toolbar" style="margin-top:-6px">
           <span class="bu-sub" id="bu-stand" style="font-size:12px;color:var(--text-faint)"></span>
         </div>
 
@@ -2922,6 +2928,10 @@
     // ============================================================
     let buData = null;
     let buRange = "90d";
+    let buCustom = null;      // {from, to} wenn eigener Zeitraum gewaehlt
+    let buHistory = null;     // haengt NICHT am Zeitraum -> einmal holen, dann behalten
+    let buMonths = null;
+    let buBusy = false;
     const buCharts = {};
 
     function buTok(name) {
@@ -2941,34 +2951,65 @@
     }
 
     function buSetRange(r) {
+      buCustom = null;
       buRange = r;
       buLoad();
     }
 
+    function buSetCustom() {
+      const from = document.getElementById("bu-from").value;
+      const to = document.getElementById("bu-to").value;
+      if (!from && !to) return;
+      buCustom = { from, to };
+      buRange = "custom";
+      buLoad();
+    }
+
+    /** true, sobald wir die Historie einmal haben — dann nur noch die Stufen nachladen. */
+    function buLoadOpts() {
+      const p = new URLSearchParams({ pw: PW });
+      if (buCustom) {
+        if (buCustom.from) p.set("start", buCustom.from);
+        if (buCustom.to) p.set("end", buCustom.to);
+      } else if (buRange === "month") {
+        // letzter VOLLER Monat, damit der laufende nicht halb leer aussieht
+        const d = new Date();
+        const m = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() - 1, 1));
+        p.set("range", m.toISOString().slice(0, 7));
+      } else {
+        p.set("range", buRange);
+      }
+      // Die Historie haengt nicht am Zeitraum. Einmal holen spart bei jedem
+      // weiteren Wechsel 18 der 29 GA4-Abfragen.
+      if (buHistory) p.set("parts", "stages");
+      return p;
+    }
+
     async function buLoad() {
-      if (!PW) return;
+      if (!PW || buBusy) return;
+      buBusy = true;
       const btn = document.getElementById("refresh-btn");
       const orig = btn.textContent;
       btn.disabled = true;
       btn.textContent = "Pulle GA4 + RC…";
-      document.getElementById("bu-stand").textContent = "lädt…";
+      const stand = document.getElementById("bu-stand");
+      stand.textContent = buHistory ? "lädt Stufen…" : "lädt Stufen und Historie…";
+      document.querySelectorAll("#view-business .bu-chart").forEach(el => { el.style.opacity = 0.45; });
       try {
         await buEnsureEcharts();
-        // "month" = letzter VOLLER Monat, damit der laufende nicht halb leer aussieht
-        let q = buRange;
-        if (buRange === "month") {
-          const d = new Date();
-          const m = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() - 1, 1));
-          q = m.toISOString().slice(0, 7);
-        }
-        const r = await fetch(`/api/funnel?pw=${encodeURIComponent(PW)}&range=${encodeURIComponent(q)}`);
+        const r = await fetch(`/api/funnel?${buLoadOpts()}`);
         if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
-        buData = await r.json();
+        const j = await r.json();
+        // Historie merken bzw. die gemerkte wieder einsetzen
+        if (j.history) { buHistory = j.history; buMonths = j.months; }
+        buData = { ...j, history: j.history || buHistory, months: j.months || buMonths };
         buRender();
       } catch (e) {
-        document.getElementById("bu-stand").textContent = "Fehler";
+        stand.textContent = "Fehler beim Laden";
         alert("Business-Funnel: " + e.message);
       } finally {
+        document.querySelectorAll("#view-business .bu-chart").forEach(el => { el.style.opacity = 1; });
+        buBusy = false;
         btn.disabled = false;
         btn.textContent = orig;
       }
@@ -3003,15 +3044,19 @@
       const surface = buTok("--surface") || "#FFFFFF";
       const baseFont = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
 
-      ["bu-r-30d", "bu-r-90d", "bu-r-m"].forEach(id => {
-        const on = (id === "bu-r-30d" && buRange === "30d") ||
-                   (id === "bu-r-90d" && buRange === "90d") ||
-                   (id === "bu-r-m" && buRange === "month");
-        const el = document.getElementById(id);
-        el.className = on ? "primary" : "secondary";
+      const activeBtn = { "30d": "bu-r-30d", "90d": "bu-r-90d", "month": "bu-r-m", "custom": "bu-r-c" }[buRange];
+      ["bu-r-30d", "bu-r-90d", "bu-r-m", "bu-r-c"].forEach(id => {
+        document.getElementById(id).className = id === activeBtn ? "primary" : "secondary";
       });
+      // Die Datumsfelder auf den tatsaechlich verwendeten Zeitraum setzen, auch
+      // wenn der Server ihn korrigiert hat (getauscht, in die Zukunft gekappt).
+      document.getElementById("bu-from").value = d.range.startDate;
+      document.getElementById("bu-to").value = d.range.endDate;
+      // Bei eigenem Zeitraum stehen die Daten schon im Label, sonst doppelt es sich.
       document.getElementById("bu-stand").textContent =
-        `${d.range.label} · ${d.range.startDate} bis ${d.range.endDate} · Stand ${new Date(d.generated_at).toLocaleString("de-DE")}`;
+        (d.range.custom ? d.range.label : `${d.range.label} · ${d.range.startDate} bis ${d.range.endDate}`) +
+        ` · Stand ${new Date(d.generated_at).toLocaleString("de-DE")}` +
+        (d.ga4_calls ? ` · ${d.ga4_calls} GA4-Abfragen` : "");
       document.getElementById("meta").textContent = "Business-Funnel · " + d.range.label;
 
       const st = Object.fromEntries(d.stages.map(s => [s.key, s]));
