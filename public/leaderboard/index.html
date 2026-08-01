@@ -489,6 +489,65 @@
     .cu-leg-val span { color: var(--text-faint); font-weight: 500; }
     .cu-empty-chart { color: var(--text-faint); font-size: 13px; padding: 20px 0; text-align: center; }
 
+    /* ===== Business-Funnel ===== */
+    .bu-toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
+    .bu-toolbar .bu-label { font-size: 12px; color: var(--text-faint); font-weight: 700;
+      letter-spacing: 0.04em; text-transform: uppercase; margin-right: 2px; }
+    .bu-chart { width: 100%; height: 460px; }
+    .bu-chart.small { height: 230px; }
+    .bu-grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
+    .bu-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; margin-bottom: 2px; }
+    .bu-head h3 { font-size: 14px; font-weight: 700; letter-spacing: -0.01em; }
+    .bu-head .bu-sub { font-size: 12px; color: var(--text-faint); }
+    .bu-cap { font-size: 12.5px; color: var(--text-muted); margin-bottom: 10px; }
+    .bu-loading { padding: 60px 0; text-align: center; color: var(--text-faint); font-size: 13.5px; }
+    .bu-steps { display: flex; flex-direction: column; gap: 1px; background: var(--border);
+      border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .bu-step { background: var(--surface); padding: 11px 16px; display: grid;
+      grid-template-columns: 190px 1fr 76px 76px; align-items: center; gap: 12px; }
+    .bu-step:hover { background: var(--surface-alt); }
+    .bu-step .s-name { font-size: 13.5px; font-weight: 600; }
+    .bu-step .s-name span { display: block; font-weight: 400; font-size: 11.5px; color: var(--text-faint); }
+    .bu-step .s-track { height: 22px; background: var(--surface-alt); border-radius: 5px; overflow: hidden; }
+    .bu-step .s-fill { height: 100%; background: var(--primary); border-radius: 5px; min-width: 2px; }
+    .bu-step .s-num, .bu-step .s-pct { text-align: right; font-variant-numeric: tabular-nums; font-size: 13.5px; }
+    .bu-step .s-num { font-weight: 700; }
+    .bu-step .s-pct { color: var(--text-muted); font-size: 12.5px; }
+    .bu-step .s-pct.bad { color: var(--red); font-weight: 700; }
+    @media (max-width: 720px) {
+      .bu-step { grid-template-columns: 120px 1fr 60px; }
+      .bu-step .s-pct { display: none; }
+      .bu-chart { height: 380px; }
+    }
+
+    /* ===== Preis-Test ===== */
+    .aa-coverage.crit { background: #FDEAEA; border-color: #F2C4C3; color: #8E1F1C; }
+    .aa-coverage.crit b { color: var(--red); }
+    .aa-coverage.neutral { background: var(--surface-alt); border-color: var(--border); color: var(--text-muted); }
+    .aa-coverage.neutral b { color: var(--text); }
+    .pe-status { align-items: flex-start; font-weight: 500; }
+    .pe-status .pe-glyph { font-size: 15px; line-height: 1.45; flex-shrink: 0; }
+    .pe-status .pe-head { font-weight: 700; font-size: 14.5px; margin-bottom: 3px; }
+    .pe-status .pe-detail { font-weight: 500; font-size: 13px; line-height: 1.5; }
+    .pe-chart-wrap { padding: 4px 2px 0; }
+    .pe-chart-wrap svg { display: block; width: 100%; height: auto; overflow: visible; }
+    .pe-grid { stroke: var(--border); stroke-width: 1; }
+    .pe-axis { stroke: var(--border-strong); stroke-width: 1; }
+    .pe-tick { fill: var(--text-faint); font-size: 11px; font-variant-numeric: tabular-nums; }
+    .pe-line { fill: none; stroke: var(--primary); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+    .pe-ref { stroke: var(--border-strong); stroke-width: 1.5; stroke-dasharray: 5 4; }
+    .pe-ref-lab { fill: var(--text-muted); font-size: 11px; font-weight: 700; }
+    .pe-cut { stroke: var(--text-muted); stroke-width: 1.5; }
+    .pe-dot { fill: var(--primary); }
+    .pe-hit { cursor: crosshair; }
+    #pe-tip {
+      position: fixed; pointer-events: none; opacity: 0; transition: opacity .1s;
+      background: var(--surface); border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm); padding: 8px 11px; font-size: 12.5px;
+      box-shadow: var(--shadow-md); font-variant-numeric: tabular-nums; z-index: 30;
+    }
+    tr.pe-after td { font-weight: 700; }
+
     @media (max-width: 720px) {
       .cu-grid { grid-template-columns: 1fr; }
       .cu-bar-row { grid-template-columns: 92px 1fr auto; }
@@ -530,6 +589,8 @@
         <button class="tab-btn" id="tab-google-ads" onclick="switchTab('google-ads')">Google Ads</button>
         <button class="tab-btn" id="tab-customers" onclick="switchTab('customers')">Kunden</button>
         <button class="tab-btn" id="tab-ai" onclick="switchTab('ai')">AI Usage</button>
+        <button class="tab-btn" id="tab-price" onclick="switchTab('price')">Preis-Test</button>
+        <button class="tab-btn" id="tab-business" onclick="switchTab('business')">Business</button>
       </div>
 
       <div id="view-referral">
@@ -810,8 +871,138 @@
           Kosten immer aus <code>by_model</code> gerechnet · Pseudonym = sha256(uid) · keine PII.
         </div>
       </div>
+
+      <div id="view-price" class="hidden">
+        <div id="pe-status" class="aa-coverage pe-status neutral">
+          <span class="pe-glyph">○</span>
+          <div>
+            <div class="pe-head">Lade…</div>
+            <div class="pe-detail">Ziehe GA4-Funnel und RevenueCat.</div>
+          </div>
+        </div>
+
+        <div class="cu-kpis" id="pe-kpis"></div>
+
+        <div class="card" style="padding:18px 20px">
+          <h3 style="font-size:14px;font-weight:700;letter-spacing:-0.01em;margin-bottom:2px">
+            Verlauf der Trial-Start-Rate</h3>
+          <div style="font-size:12.5px;color:var(--text-muted);margin-bottom:12px" id="pe-chart-sub">
+            Rollierendes 7-Tage-Fenster. Gestrichelt: Baseline und Break-even-Ziel.</div>
+          <div class="pe-chart-wrap" id="pe-chart"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <table>
+            <thead>
+              <tr>
+                <th>Fenster endet</th>
+                <th class="num" title="Neu installierte Nutzer, die im Fenster die Paywall gesehen haben">Paywall</th>
+                <th class="num">Trials</th>
+                <th class="num">Rate</th>
+              </tr>
+            </thead>
+            <tbody id="pe-rows"></tbody>
+          </table>
+        </div>
+
+        <div class="footer-note">
+          Gezählt wird nur die <b>Neuinstall-Kohorte</b>: geschlossener GA4-Funnel ab
+          <code>first_open</code>, also ausschließlich Nutzer, die im jeweiligen Zeitraum
+          installiert haben, und nur in der Reihenfolge Install → Paywall → Trial.
+          Das ist bewusst so: die Paywall sehen auch Bestandsnutzer, die schon einmal
+          abgelehnt haben und schlechter konvertieren. Weil ihr Anteil mit dem
+          Install-Rückgang steigt, fällt die rohe Paywall-Rate von selbst, ohne dass sich
+          am Verhalten etwas ändert. Dieser Mix-Effekt ist hier ausgeschaltet. ·
+          Baseline = voller Juni 2026 zum alten Preis · einseitiger Zwei-Proportionen-Test,
+          Schwelle p&nbsp;&lt;&nbsp;0,05.
+        </div>
+      </div>
+
+      <div id="view-business" class="hidden">
+        <div class="bu-toolbar">
+          <span class="bu-label">Zeitraum</span>
+          <button class="secondary" id="bu-r-30d" onclick="buSetRange('30d')">30 Tage</button>
+          <button class="secondary" id="bu-r-90d" onclick="buSetRange('90d')">90 Tage</button>
+          <button class="secondary" id="bu-r-m" onclick="buSetRange('month')">Letzter voller Monat</button>
+          <div class="spacer" style="flex:1"></div>
+          <span class="bu-sub" id="bu-stand" style="font-size:12px;color:var(--text-faint)"></span>
+        </div>
+
+        <div class="cu-kpis" id="bu-kpis"></div>
+
+        <div class="card" style="padding:18px 20px">
+          <div class="bu-head">
+            <h3>Wo die Nutzer verloren gehen</h3>
+            <span class="bu-sub">Breite = Menschen</span>
+          </div>
+          <div class="bu-cap">
+            Jeder Strang ist eine Nutzergruppe, nicht eine Zahl von Ereignissen. Nach oben läuft
+            der Weiterweg, nach unten der Absprung. Fahre über einen Strang für die Details.
+          </div>
+          <div id="bu-sankey" class="bu-chart"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px;padding:18px 20px">
+          <div class="bu-head">
+            <h3>Stufen im Detail</h3>
+            <span class="bu-sub">Anteil an allen, die die App geöffnet haben</span>
+          </div>
+          <div class="bu-cap">Rot markiert ist der Schritt mit dem größten Abfluss.</div>
+          <div class="bu-steps" id="bu-steps"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px;padding:18px 20px">
+          <div class="bu-head">
+            <h3>Was die Leute tatsächlich tun</h3>
+            <span class="bu-sub">kein Trichter, paralleles Verhalten</span>
+          </div>
+          <div class="bu-cap">
+            Anteil der Installierer, die diese Aktion mindestens einmal gemacht haben.
+            Das läuft neben dem Kauftrichter her, deshalb steht es getrennt.
+          </div>
+          <div id="bu-activation" class="bu-chart small"></div>
+        </div>
+
+        <div class="bu-grid2" style="margin-top:16px">
+          <div class="card" style="padding:18px 20px">
+            <div class="bu-head"><h3>Nutzer je Stufe</h3><span class="bu-sub">GA4</span></div>
+            <div class="bu-cap">Monatlich. GA4 hält Nutzerdaten nur rund 2 Monate vor, ältere Monate fehlen.</div>
+            <div id="bu-hist-users" class="bu-chart small"></div>
+          </div>
+          <div class="card" style="padding:18px 20px">
+            <div class="bu-head"><h3>Übergangsraten</h3><span class="bu-sub">in Prozent</span></div>
+            <div class="bu-cap">Install→Paywall und Paywall→Trial aus GA4, Trial→Bezahlt aus RevenueCat.</div>
+            <div id="bu-hist-rates" class="bu-chart small"></div>
+          </div>
+          <div class="card" style="padding:18px 20px">
+            <div class="bu-head"><h3>MRR</h3><span class="bu-sub">RevenueCat, USD</span></div>
+            <div class="bu-cap">Monatlich wiederkehrender Umsatz zum Monatsende.</div>
+            <div id="bu-hist-mrr" class="bu-chart small"></div>
+          </div>
+          <div class="card" style="padding:18px 20px">
+            <div class="bu-head"><h3>Aktive Abos</h3><span class="bu-sub">RevenueCat</span></div>
+            <div class="bu-cap">Bestand am Monatsende. Wächst, solange Neugeschäft über Churn liegt.</div>
+            <div id="bu-hist-actives" class="bu-chart small"></div>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          <b>Alles nutzerbasiert.</b> Jede Stufe kommt aus dem GA4-Funnel-Report mit der Metrik
+          <code>activeUsers</code>, nicht <code>eventCount</code>: jeder Mensch zählt einmal,
+          egal wie oft er tippt. Gezählt wird nur, wer im Zeitraum <b>neu installiert</b> hat
+          (geschlossener Funnel ab <code>first_open</code>), Bestandsnutzer sind draußen. ·
+          Jede Stufe wird <b>einzeln</b> gegen <code>first_open</code> gemessen statt als eine
+          lange Kette, weil mehrere Events praktisch gleichzeitig feuern und eine Kette daraus
+          Reihenfolge-Artefakte statt echter Abbrüche macht. ·
+          <b>Bezahlt</b> ist die einzige gerechnete Größe: GA4 sieht den Kauf nicht zuverlässig,
+          deshalb wird die RevenueCat-Conversion-Rate auf die Trials angewendet. ·
+          Weggelassen, weil deckungsgleich mit der Vorstufe: <code>profile_setup_completed</code>,
+          <code>begin_checkout</code>, <code>purchase_attempt</code>.
+        </div>
+      </div>
     </div>
   </div>
+  <div id="pe-tip"></div>
 
   <script>
     const PAYOUT_PER_PAID_EUR = 10;
@@ -854,6 +1045,8 @@
 
     async function refresh() {
       if (!PW) return;
+      if (activeTab === "price") return peLoad();
+      if (activeTab === "business") return buLoad();
       const btn = document.getElementById("refresh-btn");
       const origText = btn.textContent;
       btn.disabled = true;
@@ -1067,13 +1260,19 @@
       document.getElementById("tab-google-ads").classList.toggle("active", name === "google-ads");
       document.getElementById("tab-customers").classList.toggle("active", name === "customers");
       document.getElementById("tab-ai").classList.toggle("active", name === "ai");
+      document.getElementById("tab-price").classList.toggle("active", name === "price");
+      document.getElementById("tab-business").classList.toggle("active", name === "business");
       document.getElementById("view-referral").classList.toggle("hidden", name !== "referral");
       document.getElementById("view-apple-ads").classList.toggle("hidden", name !== "apple-ads");
       document.getElementById("view-google-ads").classList.toggle("hidden", name !== "google-ads");
       document.getElementById("view-customers").classList.toggle("hidden", name !== "customers");
       document.getElementById("view-ai").classList.toggle("hidden", name !== "ai");
+      document.getElementById("view-price").classList.toggle("hidden", name !== "price");
+      document.getElementById("view-business").classList.toggle("hidden", name !== "business");
       if (name === "customers" && !cuData) cuLoad(false);
       if (name === "ai" && !aiData) aiLoad(false);
+      if (name === "price" && !peData) peLoad();
+      if (name === "business") { if (!buData) buLoad(); else buResize(); }
       if (name === "apple-ads" && !aaData) aaLoad(false);
       if (name === "google-ads" && !gaData) {
         if (!document.getElementById("ga-from").value) {
@@ -2575,6 +2774,487 @@
         btn.disabled = false;
         btn.textContent = o;
       }
+    }
+
+    // ============================================================
+    // Preis-Test — Frueh-Indikator fuer die Trial-Start-Rate
+    // Zaehlt nur die Neuinstall-Kohorte (geschlossener GA4-Funnel),
+    // sonst wuerde der wachsende Bestandsnutzer-Anteil in der
+    // Paywall-Population als Preiseffekt durchschlagen.
+    // ============================================================
+    let peData = null;
+
+    const PE_GLYPH = { good: "●", warning: "▲", critical: "■", wait: "○" };
+    const PE_CLASS = { good: "good", warning: "warn", critical: "crit", wait: "neutral" };
+
+    async function peLoad() {
+      if (!PW) return;
+      const btn = document.getElementById("refresh-btn");
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Pulle GA4 + RC…";
+      try {
+        const r = await fetch(`/api/price-experiment?pw=${encodeURIComponent(PW)}`);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        peData = await r.json();
+        peRender();
+      } catch (e) {
+        peData = null;
+        peSetStatus("critical", "Daten konnten nicht geladen werden", e.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = orig;
+      }
+    }
+
+    function peSetStatus(status, head, detail) {
+      const el = document.getElementById("pe-status");
+      el.className = `aa-coverage pe-status ${PE_CLASS[status] || "neutral"}`;
+      el.innerHTML =
+        `<span class="pe-glyph">${PE_GLYPH[status] || "○"}</span>` +
+        `<div><div class="pe-head">${esc(head)}</div>` +
+        `<div class="pe-detail">${esc(detail)}</div></div>`;
+    }
+
+    function esc(s) {
+      return String(s == null ? "" : s)
+        .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    }
+
+    const pePct = (v) => (v === null || v === undefined ? "–" : (v * 100).toFixed(1) + " %");
+
+    function peRender() {
+      if (!peData) return;
+      const d = peData;
+      peSetStatus(d.verdict.status, d.verdict.headline, d.verdict.detail);
+
+      document.getElementById("meta").textContent =
+        "Preis-Test · Stand " + new Date(d.generated_at).toLocaleString("de-DE");
+
+      // --- KPIs
+      const price = d.price_control;
+      const kpis = [
+        { label: "Seit dem Schnitt", val: pePct(d.since.rate),
+          sub: `${d.since.trial} von ${d.since.paywall} Paywall-Sehern` },
+        { label: `Baseline ${d.baseline.label}`, val: pePct(d.baseline.rate),
+          sub: `${d.baseline.trial} von ${d.baseline.paywall}` },
+        { label: "Break-even-Ziel", val: pePct(d.target.rate),
+          sub: `+${Math.round((d.target.factor - 1) * 100)} % Käufer nötig` },
+        { label: "Datenstand", val: `${d.since.paywall}<span style="font-size:15px;color:var(--text-faint)"> / ${d.needed_samples ?? "–"}</span>`,
+          sub: d.verdict.eta_days ? `noch rund ${d.verdict.eta_days} Tage`
+             : (d.needed_samples && d.since.paywall >= d.needed_samples ? "Marke erreicht" : "sammelt") },
+        { label: "Ø je Neukauf", val: price.avg === null ? "–" : price.avg.toFixed(2),
+          sub: price.avg === null ? "noch kein Neukauf"
+             : (price.live ? "neuer Preis greift" : "alter Preis") },
+      ];
+      document.getElementById("pe-kpis").innerHTML = kpis.map(k =>
+        `<div class="cu-kpi"><div class="k-label">${esc(k.label)}</div>` +
+        `<div class="k-val">${k.val}</div><div class="k-sub">${esc(k.sub)}</div></div>`).join("");
+
+      document.getElementById("pe-chart-sub").textContent =
+        `Rollierendes ${d.window_days}-Tage-Fenster. Gestrichelt: Baseline und Break-even-Ziel.`;
+
+      // --- Chart
+      const pts = (d.series || []).filter(p => p.rate !== null && p.rate !== undefined);
+      const wrap = document.getElementById("pe-chart");
+      if (!pts.length) {
+        wrap.innerHTML = `<div class="cu-empty-chart">Keine Funnel-Daten im Zeitraum.</div>`;
+      } else {
+        const W = 860, H = 250, PL = 46, PR = 16, PT = 18, PB = 30;
+        const iw = W - PL - PR, ih = H - PT - PB;
+        const raw = Math.max(d.target.rate, d.baseline.rate, ...pts.map(p => p.rate)) * 1.15;
+        const step = raw <= 0.55 ? 0.10 : 0.20;
+        const ymax = Math.ceil(raw / step) * step;
+        const sx = i => PL + (iw * i / Math.max(1, pts.length - 1));
+        const sy = v => PT + ih - (ih * v / ymax);
+
+        let svg = "";
+        for (let k = 0; k <= Math.round(ymax / step); k++) {
+          const v = step * k;
+          svg += `<line class="pe-grid" x1="${PL}" y1="${sy(v).toFixed(1)}" x2="${W - PR}" y2="${sy(v).toFixed(1)}"/>`
+               + `<text class="pe-tick" x="${PL - 8}" y="${(sy(v) + 3.5).toFixed(1)}" text-anchor="end">${(v * 100).toFixed(0)}%</text>`;
+        }
+        // Referenzlinien jetzt, ihre Beschriftung erst NACH der Datenlinie (siehe unten),
+        // sonst zeichnet die Linie mitten durch die Schrift.
+        let refLabels = "";
+        for (const [val, lab] of [[d.baseline.rate, `Baseline ${pePct(d.baseline.rate)}`],
+                                  [d.target.rate, `Ziel ${pePct(d.target.rate)}`]]) {
+          const lw = lab.length * 6.1 + 8;
+          svg += `<line class="pe-ref" x1="${PL}" y1="${sy(val).toFixed(1)}" x2="${W - PR}" y2="${sy(val).toFixed(1)}"/>`;
+          // +8 Breite, damit auch die runde Kappe der Datenlinie am rechten Rand verdeckt wird
+          refLabels += `<rect x="${(W - PR - lw).toFixed(1)}" y="${(sy(val) - 18).toFixed(1)}" width="${(lw + 8).toFixed(1)}" height="14" fill="var(--surface)"/>`
+                     + `<text class="pe-ref-lab" x="${W - PR - 4}" y="${(sy(val) - 7).toFixed(1)}" text-anchor="end">${lab}</text>`;
+        }
+        const cutIdx = pts.findIndex(p => p.after);
+        if (cutIdx >= 0) {
+          const cx = sx(cutIdx);
+          const nearEdge = cx > W - PR - 90;
+          svg += `<line class="pe-cut" x1="${cx.toFixed(1)}" y1="${PT}" x2="${cx.toFixed(1)}" y2="${PT + ih}"/>`
+               + `<text class="pe-ref-lab" x="${(nearEdge ? cx - 6 : cx + 6).toFixed(1)}" y="${PT + 11}"`
+               + `${nearEdge ? ' text-anchor="end"' : ""}>Preisschnitt</text>`;
+        }
+        svg += `<line class="pe-axis" x1="${PL}" y1="${PT + ih}" x2="${W - PR}" y2="${PT + ih}"/>`;
+        svg += `<path class="pe-line" d="${pts.map((p, i) =>
+          (i ? "L" : "M") + sx(i).toFixed(1) + "," + sy(p.rate).toFixed(1)).join(" ")}"/>`;
+        svg += refLabels;
+        [0, Math.floor(pts.length / 2), pts.length - 1].forEach(i => {
+          svg += `<text class="pe-tick" x="${sx(i).toFixed(1)}" y="${H - 10}" text-anchor="middle">${pts[i].date.slice(5)}</text>`;
+        });
+        pts.forEach((p, i) => {
+          svg += `<circle class="pe-hit" cx="${sx(i).toFixed(1)}" cy="${sy(p.rate).toFixed(1)}" r="10" fill="transparent"`
+               + ` data-d="${p.date}" data-pv="${p.paywall}" data-tr="${p.trial}" data-r="${(p.rate * 100).toFixed(1)}"/>`;
+        });
+        wrap.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Verlauf der Trial-Start-Rate gegen Baseline und Break-even-Ziel">${svg}</svg>`;
+        peBindTips();
+      }
+
+      // --- Tabelle, neueste zuerst
+      document.getElementById("pe-rows").innerHTML = (d.series || []).slice().reverse().map(s =>
+        `<tr class="${s.after ? "pe-after" : ""}"><td>${s.date}${s.after ? ' <span style="color:var(--primary)">▸</span>' : ""}</td>` +
+        `<td class="num">${s.paywall}</td><td class="num">${s.trial}</td>` +
+        `<td class="num">${s.rate === null ? "–" : pePct(s.rate)}</td></tr>`).join("");
+    }
+
+    // ============================================================
+    // Business-Funnel — Sankey + Historie, gerendert mit Apache ECharts
+    // (lokal unter /leaderboard/vendor/, Apache-2.0, kein CDN zur Laufzeit).
+    // ALLE Zahlen sind Nutzer, nicht Ereignisse.
+    // ============================================================
+    let buData = null;
+    let buRange = "90d";
+    const buCharts = {};
+
+    function buTok(name) {
+      return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+    }
+
+    /** ECharts erst beim ersten Oeffnen des Tabs holen — 1 MB, das lohnt nicht auf Vorrat. */
+    function buEnsureEcharts() {
+      if (window.echarts) return Promise.resolve();
+      return new Promise((resolve, reject) => {
+        const s = document.createElement("script");
+        s.src = "/leaderboard/vendor/echarts.min.js";
+        s.onload = () => resolve();
+        s.onerror = () => reject(new Error("ECharts konnte nicht geladen werden (vendor/echarts.min.js)"));
+        document.head.appendChild(s);
+      });
+    }
+
+    function buSetRange(r) {
+      buRange = r;
+      buLoad();
+    }
+
+    async function buLoad() {
+      if (!PW) return;
+      const btn = document.getElementById("refresh-btn");
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Pulle GA4 + RC…";
+      document.getElementById("bu-stand").textContent = "lädt…";
+      try {
+        await buEnsureEcharts();
+        // "month" = letzter VOLLER Monat, damit der laufende nicht halb leer aussieht
+        let q = buRange;
+        if (buRange === "month") {
+          const d = new Date();
+          const m = new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth() - 1, 1));
+          q = m.toISOString().slice(0, 7);
+        }
+        const r = await fetch(`/api/funnel?pw=${encodeURIComponent(PW)}&range=${encodeURIComponent(q)}`);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        buData = await r.json();
+        buRender();
+      } catch (e) {
+        document.getElementById("bu-stand").textContent = "Fehler";
+        alert("Business-Funnel: " + e.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = orig;
+      }
+    }
+
+    function buChart(id, option) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (!buCharts[id]) buCharts[id] = echarts.init(el, null, { renderer: "canvas" });
+      buCharts[id].setOption(option, true);
+    }
+
+    function buResize() {
+      Object.values(buCharts).forEach(c => c && c.resize());
+    }
+    window.addEventListener("resize", () => { if (activeTab === "business") buResize(); });
+
+    const buInt = (n) => (n === null || n === undefined ? "–" : Number(n).toLocaleString("de-DE"));
+    const buPct = (v, d = 1) => (v === null || v === undefined ? "–" : (v * 100).toFixed(d) + " %");
+
+    function buRender() {
+      if (!buData) return;
+      const d = buData;
+      const teal = buTok("--primary") || "#009688";
+      const ink = buTok("--text") || "#0D0D0D";
+      const muted = buTok("--text-muted") || "#6B6B68";
+      const faint = buTok("--text-faint") || "#9A9A95";
+      const border = buTok("--border") || "#E8E8E5";
+      const red = buTok("--red") || "#E02E2A";
+      const orange = buTok("--orange") || "#E25507";
+      const blue = buTok("--blue") || "#0285FF";
+      const surface = buTok("--surface") || "#FFFFFF";
+      const baseFont = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+
+      ["bu-r-30d", "bu-r-90d", "bu-r-m"].forEach(id => {
+        const on = (id === "bu-r-30d" && buRange === "30d") ||
+                   (id === "bu-r-90d" && buRange === "90d") ||
+                   (id === "bu-r-m" && buRange === "month");
+        const el = document.getElementById(id);
+        el.className = on ? "primary" : "secondary";
+      });
+      document.getElementById("bu-stand").textContent =
+        `${d.range.label} · ${d.range.startDate} bis ${d.range.endDate} · Stand ${new Date(d.generated_at).toLocaleString("de-DE")}`;
+      document.getElementById("meta").textContent = "Business-Funnel · " + d.range.label;
+
+      const st = Object.fromEntries(d.stages.map(s => [s.key, s]));
+      const startUsers = st.install ? st.install.users : 0;
+
+      // ---------- KPI-Zeile ----------
+      const kpis = [
+        { k: "Neu installiert", v: buInt(startUsers), s: "Nutzer im Zeitraum" },
+        { k: "Sehen die Paywall", v: buPct(st.paywall ? st.paywall.pctOfStart : null),
+          s: `${buInt(st.paywall && st.paywall.users)} Nutzer` },
+        { k: "Starten ein Trial", v: buPct(st.trial && st.paywall && st.paywall.users ? st.trial.users / st.paywall.users : null),
+          s: `${buInt(st.trial && st.trial.users)} von ${buInt(st.paywall && st.paywall.users)} Paywall-Sehern` },
+        { k: "Trial → Bezahlt", v: buPct(d.rc.conversion_rate),
+          s: `${buInt(d.rc.conversions)} von ${buInt(d.rc.trial_starts)} (RevenueCat)` },
+        { k: "Aktive Abos", v: buInt(d.rc.actives_now), s: `Churn ${d.rc.churn_rate ?? "–"} %` },
+        { k: "MRR", v: d.rc.mrr === null ? "–" : "$" + buInt(Math.round(d.rc.mrr)), s: "RevenueCat, USD" },
+      ];
+      document.getElementById("bu-kpis").innerHTML = kpis.map(x =>
+        `<div class="cu-kpi"><div class="k-label">${esc(x.k)}</div>` +
+        `<div class="k-val">${x.v}</div><div class="k-sub">${esc(x.s)}</div></div>`).join("");
+
+      // ---------- Sankey ----------
+      const nodeMap = Object.fromEntries(d.sankey.nodes.map(n => [n.name, n]));
+      buChart("bu-sankey", {
+        backgroundColor: "transparent",
+        textStyle: { fontFamily: baseFont },
+        tooltip: {
+          trigger: "item", confine: true,
+          backgroundColor: surface, borderColor: border, borderWidth: 1,
+          textStyle: { color: ink, fontSize: 12.5 },
+          extraCssText: "box-shadow:0 4px 16px rgba(0,0,0,.10); border-radius:10px;",
+          formatter: (p) => {
+            if (p.dataType === "edge") {
+              const share = startUsers ? (p.data.value / startUsers * 100).toFixed(1) : "–";
+              const verb = p.data.kind === "drop" ? "springen hier ab" : "gehen weiter";
+              return `<b>${esc(p.data.source)}</b> → ${esc(p.data.target)}<br>` +
+                     `${buInt(p.data.value)} Nutzer ${verb}<br>` +
+                     `<span style="color:${muted}">${share} % aller Installierer</span>`;
+            }
+            const n = nodeMap[p.name] || {};
+            const share = startUsers ? (n.value / startUsers * 100).toFixed(1) : "–";
+            return `<b>${esc(p.name)}</b><br>${buInt(n.value)} Nutzer<br>` +
+                   `<span style="color:${muted}">${share} % aller Installierer` +
+                   (n.modeled ? " · gerechnet aus der RC-Rate" : "") + `</span>`;
+          },
+        },
+        series: [{
+          type: "sankey",
+          left: 8, right: 88, top: 12, bottom: 12,
+          nodeWidth: 14, nodeGap: 11,
+          draggable: false,
+          emphasis: { focus: "adjacency" },
+          // depth pro Knoten setzen, sonst schiebt ECharts jeden Abfluss-Knoten
+          // in die LETZTE Spalte, und es sieht aus als passierten alle Absprünge
+          // am Ende. So sitzt jeder Abfluss direkt neben seiner Stufe.
+          data: d.sankey.nodes.map(n => ({
+            name: n.name,
+            depth: n.depth,
+            itemStyle: {
+              color: n.drop ? border : (n.modeled ? blue : teal),
+              borderColor: n.drop ? border : (n.modeled ? blue : teal),
+            },
+            label: {
+              // Abfluss-Knoten tragen nur die Zahl. Der volle Name ("Weg nach …")
+              // lief rechts aus dem Chart heraus; im Tooltip steht er weiterhin.
+              formatter: n.drop ? `−${buInt(n.value)}` : n.name,
+              color: n.drop ? faint : ink,
+              fontSize: n.drop ? 11 : 12.5,
+              fontWeight: n.drop ? 400 : 600,
+            },
+          })),
+          links: d.sankey.links.map(l => ({
+            ...l,
+            lineStyle: {
+              color: l.kind === "drop" ? border : teal,
+              opacity: l.kind === "drop" ? 0.5 : 0.4,
+              curveness: 0.5,
+            },
+          })),
+          label: { position: "right" },
+          lineStyle: { curveness: 0.5 },
+        }],
+      });
+
+      // ---------- Stufen im Detail ----------
+      const worst = d.stages.reduce((a, b) => (b.lost > (a ? a.lost : -1) ? b : a), null);
+      document.getElementById("bu-steps").innerHTML = d.stages.map(s => {
+        const w = startUsers ? (s.users / startUsers * 100) : 0;
+        const isWorst = worst && s.key === worst.key && s.lost > 0;
+        return `<div class="bu-step">
+          <div class="s-name">${esc(s.label)}<span>${esc(s.hint)}</span></div>
+          <div class="s-track"><div class="s-fill" style="width:${w.toFixed(1)}%"></div></div>
+          <div class="s-num">${buInt(s.users)}</div>
+          <div class="s-pct${isWorst ? " bad" : ""}">${s.lost ? "−" + buInt(s.lost) : buPct(1, 0)}</div>
+        </div>`;
+      }).join("");
+
+      // ---------- Aktivierung ----------
+      const act = d.activation.slice().sort((a, b) => b.users - a.users);
+      buChart("bu-activation", {
+        backgroundColor: "transparent",
+        textStyle: { fontFamily: baseFont },
+        grid: { left: 4, right: 56, top: 8, bottom: 4, containLabel: true },
+        tooltip: {
+          trigger: "item", confine: true,
+          backgroundColor: surface, borderColor: border, borderWidth: 1,
+          textStyle: { color: ink, fontSize: 12.5 },
+          extraCssText: "box-shadow:0 4px 16px rgba(0,0,0,.10); border-radius:10px;",
+          formatter: (p) => `<b>${esc(p.name)}</b><br>${buInt(p.value)} von ${buInt(startUsers)} Installierern<br>` +
+                            `<span style="color:${muted}">${(p.value / (startUsers || 1) * 100).toFixed(1)} %</span>`,
+        },
+        xAxis: { type: "value", max: startUsers || null, splitLine: { lineStyle: { color: border } },
+                 axisLabel: { color: faint, fontSize: 11, formatter: (v) => buInt(v) } },
+        yAxis: { type: "category", data: act.map(a => a.label).reverse(),
+                 axisLine: { show: false }, axisTick: { show: false },
+                 axisLabel: { color: muted, fontSize: 12 } },
+        series: [{
+          type: "bar", data: act.map(a => a.users).reverse(),
+          itemStyle: { color: teal, borderRadius: [0, 5, 5, 0] },
+          barMaxWidth: 22,
+          label: { show: true, position: "right", color: muted, fontSize: 11.5,
+                   formatter: (p) => (p.value / (startUsers || 1) * 100).toFixed(0) + " %" },
+        }],
+      });
+
+      // ---------- Historie ----------
+      const months = d.history.map(h => h.month);
+      const axis = (extra = {}) => ({
+        type: "category", data: months, boundaryGap: false,
+        axisLine: { lineStyle: { color: border } }, axisTick: { show: false },
+        axisLabel: { color: faint, fontSize: 11 }, ...extra,
+      });
+      const val = (fmt) => ({
+        type: "value", splitLine: { lineStyle: { color: border } },
+        axisLabel: { color: faint, fontSize: 11, formatter: fmt },
+      });
+      const tip = (fmt) => ({
+        trigger: "axis", confine: true,
+        backgroundColor: surface, borderColor: border, borderWidth: 1,
+        textStyle: { color: ink, fontSize: 12.5 },
+        extraCssText: "box-shadow:0 4px 16px rgba(0,0,0,.10); border-radius:10px;",
+        formatter: fmt,
+      });
+      const legend = { bottom: 0, itemWidth: 10, itemHeight: 10, icon: "roundRect",
+                       textStyle: { color: muted, fontSize: 11.5 } };
+      // connectNulls bleibt AUS: fehlende Monate sollen als Luecke sichtbar sein,
+      // nicht als durchgezogene Linie, die Daten vortaeuscht.
+      // Der laufende Monat bekommt eine graue Markierungsfläche, damit ein halber
+      // Monat nicht wie ein Einbruch aussieht. Nur EINMAL pro Chart setzen, sonst
+      // stapeln sich die Flächen der Serien und werden immer dunkler.
+      const partialIdx = d.history.findIndex(h => h.partial);
+      const partialArea = partialIdx > 0 ? {
+        silent: true,
+        itemStyle: { color: border, opacity: 0.5 },
+        label: { show: true, position: "top", color: faint, fontSize: 10, formatter: "läuft noch" },
+        data: [[{ xAxis: months[partialIdx - 1] }, { xAxis: months[partialIdx] }]],
+      } : undefined;
+      const line = (name, data, color, withArea) => ({
+        name, type: "line", data, color, connectNulls: false,
+        smooth: 0.25, showSymbol: true, symbolSize: 6,
+        lineStyle: { width: 2.5, color }, itemStyle: { color },
+        markArea: withArea ? partialArea : undefined,
+      });
+
+      buChart("bu-hist-users", {
+        backgroundColor: "transparent", textStyle: { fontFamily: baseFont },
+        grid: { left: 4, right: 12, top: 26, bottom: 48, containLabel: true },
+        legend, xAxis: axis(), yAxis: val(v => buInt(v)),
+        tooltip: tip((ps) => {
+          const rows = ps.map(p => `${p.marker}${p.seriesName}: <b>${p.value === null ? "keine Daten" : buInt(p.value)}</b>`).join("<br>");
+          const gap = d.history.find(h => h.month === ps[0].axisValue)?.ga4_retention_gap;
+          return `<b>${ps[0].axisValue}</b><br>${rows}` +
+                 (gap ? `<br><span style="color:${muted}">GA4-Nutzerdaten für diesen Monat abgelaufen</span>` : "");
+        }),
+        series: [
+          line("Installiert", d.history.map(h => h.install), teal, true),
+          line("Paywall gesehen", d.history.map(h => h.paywall), blue),
+          line("Trial gestartet", d.history.map(h => h.trial), orange),
+        ],
+      });
+
+      buChart("bu-hist-rates", {
+        backgroundColor: "transparent", textStyle: { fontFamily: baseFont },
+        grid: { left: 4, right: 12, top: 26, bottom: 48, containLabel: true },
+        legend, xAxis: axis(), yAxis: val(v => v + " %"),
+        tooltip: tip((ps) => `<b>${ps[0].axisValue}</b><br>` + ps.map(p =>
+          `${p.marker}${p.seriesName}: <b>${p.value === null ? "keine Daten" : p.value + " %"}</b>`).join("<br>")),
+        series: [
+          line("Install → Paywall", d.history.map(h => h.paywallRate === null ? null : +(h.paywallRate * 100).toFixed(1)), teal, true),
+          line("Paywall → Trial", d.history.map(h => h.trialRate === null ? null : +(h.trialRate * 100).toFixed(1)), blue),
+          line("Trial → Bezahlt", d.history.map(h => h.rcConvRate === null ? null : +(h.rcConvRate * 100).toFixed(1)), orange),
+        ],
+      });
+
+      buChart("bu-hist-mrr", {
+        backgroundColor: "transparent", textStyle: { fontFamily: baseFont },
+        grid: { left: 4, right: 12, top: 12, bottom: 12, containLabel: true },
+        xAxis: axis(), yAxis: val(v => "$" + buInt(v)),
+        tooltip: tip((ps) => `<b>${ps[0].axisValue}</b><br>${ps[0].marker}MRR: <b>$${buInt(ps[0].value)}</b>`),
+        series: [{
+          name: "MRR", type: "line", data: d.history.map(h => h.mrr === null ? null : Math.round(h.mrr)),
+          smooth: 0.25, symbolSize: 6, connectNulls: false,
+          lineStyle: { width: 2.5, color: teal }, itemStyle: { color: teal },
+          areaStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            { offset: 0, color: teal + "44" }, { offset: 1, color: teal + "05" }]) },
+        }],
+      });
+
+      buChart("bu-hist-actives", {
+        backgroundColor: "transparent", textStyle: { fontFamily: baseFont },
+        grid: { left: 4, right: 12, top: 12, bottom: 12, containLabel: true },
+        xAxis: axis(), yAxis: val(v => buInt(v)),
+        tooltip: tip((ps) => {
+          const h = d.history.find(x => x.month === ps[0].axisValue) || {};
+          return `<b>${ps[0].axisValue}</b><br>${ps[0].marker}Aktive Abos: <b>${buInt(ps[0].value)}</b>` +
+                 (h.churnRate === null || h.churnRate === undefined ? "" :
+                  `<br><span style="color:${muted}">Churn ${h.churnRate} %</span>`);
+        }),
+        series: [{
+          name: "Aktive Abos", type: "line", data: d.history.map(h => h.actives),
+          smooth: 0.25, symbolSize: 6, connectNulls: false,
+          lineStyle: { width: 2.5, color: blue }, itemStyle: { color: blue },
+          areaStyle: { color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+            { offset: 0, color: blue + "33" }, { offset: 1, color: blue + "05" }]) },
+        }],
+      });
+
+      buResize();
+    }
+
+    function peBindTips() {
+      const tip = document.getElementById("pe-tip");
+      document.querySelectorAll("#pe-chart .pe-hit").forEach(el => {
+        el.addEventListener("mouseenter", () => {
+          tip.innerHTML = `<b>${el.dataset.d}</b><br>${el.dataset.r} % · ${el.dataset.tr} von ${el.dataset.pv}`;
+          tip.style.opacity = 1;
+        });
+        el.addEventListener("mousemove", e => {
+          tip.style.left = (e.clientX + 14) + "px";
+          tip.style.top = (e.clientY - 12) + "px";
+        });
+        el.addEventListener("mouseleave", () => { tip.style.opacity = 0; });
+      });
     }
   </script>
 </body>
