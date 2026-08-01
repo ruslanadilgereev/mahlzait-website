@@ -489,6 +489,41 @@
     .cu-leg-val span { color: var(--text-faint); font-weight: 500; }
     .cu-empty-chart { color: var(--text-faint); font-size: 13px; padding: 20px 0; text-align: center; }
 
+    /* ===== Kalender / Tagesform ===== */
+    .ca-metrics { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
+    .ca-m { padding: 7px 13px; border-radius: var(--radius-sm); border: 1px solid var(--border);
+      background: var(--surface); font-size: 13px; font-weight: 600; color: var(--text-muted);
+      cursor: pointer; font-family: inherit; }
+    .ca-m:hover { border-color: var(--border-strong); color: var(--text); }
+    .ca-m.on { background: var(--primary); border-color: var(--primary); color: #fff; }
+    .ca-cal { width: 100%; height: 210px; }
+    .ca-wd { width: 100%; height: 190px; }
+    .ca-verdict { border-radius: var(--radius); padding: 16px 18px; margin-bottom: 16px;
+      border: 1px solid; font-size: 14px; }
+    .ca-verdict.bad { background: #FDEAEA; border-color: #F2C4C3; color: #8E1F1C; }
+    .ca-verdict.warn { background: var(--orange-soft); border-color: #F5C99B; color: #8a4a1a; }
+    .ca-verdict.good { background: var(--green-soft); border-color: #C8E6CF; color: #006B2A; }
+    .ca-verdict.flat { background: var(--surface-alt); border-color: var(--border); color: var(--text-muted); }
+    .ca-verdict h3 { font-size: 15.5px; font-weight: 700; margin-bottom: 4px; }
+    .ca-verdict p { font-weight: 500; line-height: 1.5; max-width: 76ch; }
+    .ca-wins { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px;
+      margin-bottom: 16px; }
+    .ca-win { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      box-shadow: var(--shadow-sm); padding: 14px 16px; }
+    .ca-win .w-lab { font-size: 11px; letter-spacing: .04em; text-transform: uppercase;
+      color: var(--text-faint); font-weight: 700; }
+    .ca-win .w-delta { font-size: 24px; font-weight: 800; letter-spacing: -.02em; margin-top: 5px;
+      font-variant-numeric: tabular-nums; }
+    .ca-win .w-detail { font-size: 12px; color: var(--text-muted); margin-top: 4px;
+      font-variant-numeric: tabular-nums; }
+    .up { color: var(--green); } .down { color: var(--red); } .flat { color: var(--text-muted); }
+    /* nowrap, sonst rutscht das % oder das € allein in die naechste Zeile */
+    table.ca-all td.num, table.ca-all th.num { text-align: right; font-variant-numeric: tabular-nums;
+      white-space: nowrap; }
+    table.ca-all td:first-child { padding-right: 6px; }
+    table.ca-all td.d-up { color: var(--green); font-weight: 700; }
+    table.ca-all td.d-down { color: var(--red); font-weight: 700; }
+
     /* ===== Business-Funnel ===== */
     .bu-toolbar { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 16px; }
     .bu-toolbar .bu-label { font-size: 12px; color: var(--text-faint); font-weight: 700;
@@ -591,6 +626,7 @@
         <button class="tab-btn" id="tab-ai" onclick="switchTab('ai')">AI Usage</button>
         <button class="tab-btn" id="tab-price" onclick="switchTab('price')">Preis-Test</button>
         <button class="tab-btn" id="tab-business" onclick="switchTab('business')">Business</button>
+        <button class="tab-btn" id="tab-calendar" onclick="switchTab('calendar')">Tagesform</button>
       </div>
 
       <div id="view-referral">
@@ -1006,6 +1042,66 @@
           <code>begin_checkout</code>, <code>purchase_attempt</code>.
         </div>
       </div>
+      <div id="view-calendar" class="hidden">
+        <div class="ca-metrics" id="ca-metrics"></div>
+
+        <div class="ca-verdict flat" id="ca-verdict">
+          <h3>Lade Tagesdaten…</h3>
+          <p>Ein Jahr GA4 und RevenueCat, tageweise.</p>
+        </div>
+
+        <div class="ca-wins" id="ca-wins"></div>
+
+        <div class="card" style="padding:18px 20px">
+          <div class="bu-head">
+            <h3>Kalender</h3>
+            <span class="bu-sub" id="ca-scale-note"></span>
+          </div>
+          <div class="bu-cap">
+            Grün heißt über dem Üblichen, rot darunter. Bezugspunkt ist der Median
+            <b>des gerade sichtbaren Ausschnitts</b> — wählst du einen anderen Bereich,
+            skaliert sich die Farbe neu darauf. So heißt Grün immer „gut verglichen mit
+            dem, was du gerade anschaust". Fahre über einen Tag für den Wert.
+          </div>
+          <div class="bu-toolbar" style="margin-bottom:10px">
+            <button class="secondary" id="ca-r-90" onclick="caSetDays(90)">90 Tage</button>
+            <button class="secondary" id="ca-r-180" onclick="caSetDays(180)">180 Tage</button>
+            <button class="secondary" id="ca-r-365" onclick="caSetDays(365)">1 Jahr</button>
+            <span style="width:1px;height:22px;background:var(--border);margin:0 4px"></span>
+            <input id="ca-from" type="date" style="width:auto" onchange="caSetCustom()">
+            <span style="color:var(--text-faint);font-size:12px">bis</span>
+            <input id="ca-to" type="date" style="width:auto" onchange="caSetCustom()">
+            <button class="secondary" id="ca-r-c" onclick="caSetCustom()">Übernehmen</button>
+          </div>
+          <div id="ca-cal" class="ca-cal"></div>
+        </div>
+
+        <div class="bu-grid2" style="margin-top:16px">
+          <div class="card" style="padding:18px 20px">
+            <div class="bu-head"><h3>Nach Wochentag</h3><span class="bu-sub">Schnitt je Tag</span></div>
+            <div class="bu-cap">Durchschnitt über den ganzen Zeitraum. Zeigt, ob es einen Wochenrhythmus gibt.</div>
+            <div id="ca-wd" class="ca-wd"></div>
+          </div>
+          <div class="card" style="padding:18px 20px">
+            <div class="bu-head"><h3>Alle Kennzahlen</h3><span class="bu-sub">21 Tage vs. die 21 davor</span></div>
+            <div class="bu-cap">Der Vergleich für jede Kennzahl auf einen Blick.</div>
+            <table class="ca-all"><thead><tr>
+              <th>Kennzahl</th><th class="num">davor</th><th class="num">zuletzt</th><th class="num">Delta</th>
+            </tr></thead><tbody id="ca-all-rows"></tbody></table>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          Gezählt wird pro <b>Kalendertag</b>, wie viele Nutzer das Ereignis ausgelöst haben
+          (GA4-Metrik <code>activeUsers</code>, also Menschen, nicht Ereignisse). Anders als im
+          Business-Tab wird hier <b>nicht kohortiert</b>: ein Tag zählt, was an diesem Tag passiert
+          ist, unabhängig davon wann jemand installiert hat. Für die Frage „lief dieser Tag gut"
+          ist das richtig, für Conversion-Ketten wäre es falsch. ·
+          Umsatz und Käufe sind <b>Neukäufe</b> aus RevenueCat, Verlängerungen sind draußen, weil
+          sie nichts über das Tagesgeschäft sagen. · Aggregierte Tagesdaten reichen volle
+          365 Tage zurück; nur der kohortierte Funnel ist auf ~2 Monate begrenzt.
+        </div>
+      </div>
     </div>
   </div>
   <div id="pe-tip"></div>
@@ -1053,6 +1149,7 @@
       if (!PW) return;
       if (activeTab === "price") return peLoad();
       if (activeTab === "business") return buLoad();
+      if (activeTab === "calendar") { caData = null; return caLoad(); }
       const btn = document.getElementById("refresh-btn");
       const origText = btn.textContent;
       btn.disabled = true;
@@ -1268,6 +1365,7 @@
       document.getElementById("tab-ai").classList.toggle("active", name === "ai");
       document.getElementById("tab-price").classList.toggle("active", name === "price");
       document.getElementById("tab-business").classList.toggle("active", name === "business");
+      document.getElementById("tab-calendar").classList.toggle("active", name === "calendar");
       document.getElementById("view-referral").classList.toggle("hidden", name !== "referral");
       document.getElementById("view-apple-ads").classList.toggle("hidden", name !== "apple-ads");
       document.getElementById("view-google-ads").classList.toggle("hidden", name !== "google-ads");
@@ -1278,7 +1376,9 @@
       if (name === "customers" && !cuData) cuLoad(false);
       if (name === "ai" && !aiData) aiLoad(false);
       if (name === "price" && !peData) peLoad();
+      document.getElementById("view-calendar").classList.toggle("hidden", name !== "calendar");
       if (name === "business") { if (!buData) buLoad(); else buResize(); }
+      if (name === "calendar") { if (!caData) caLoad(); else caResize(); }
       if (name === "apple-ads" && !aaData) aaLoad(false);
       if (name === "google-ads" && !gaData) {
         if (!document.getElementById("ga-from").value) {
@@ -3300,6 +3400,263 @@
         });
         el.addEventListener("mouseleave", () => { tip.style.opacity = 0; });
       });
+    }
+    // ============================================================
+    // Tagesform — Kalender-Heatmap ueber ein Jahr.
+    // Zaehlt pro KALENDERTAG (nicht kohortiert, anders als der Business-Tab).
+    // Der Endpunkt liefert immer 365 Tage; der Zeitraum-Umschalter schneidet
+    // nur zu und loest KEINEN neuen Request aus.
+    // ============================================================
+    let caData = null;
+    let caMetric = "r_trial";   // Rate als Standard: absolute Zahlen haengen am Ad-Budget
+    let caDays = 180;
+    let caCustom = null;        // {from, to}
+    const caCharts = {};
+
+    /** Alle waehlbaren Kennzahlen, Raten zuerst. */
+    function caAll() {
+      return caData ? [...(caData.rates || []), ...caData.metrics] : [];
+    }
+    const caMeta = (k) => caAll().find(x => x.key === k);
+
+    function caQuantile(sorted, q) {
+      if (!sorted.length) return 0;
+      const pos = (sorted.length - 1) * q, lo = Math.floor(pos), hi = Math.ceil(pos);
+      return sorted[lo] + (sorted[hi] - sorted[lo]) * (pos - lo);
+    }
+
+    // Divergierend um den Normalzustand: rot unten, neutrales Grau in der Mitte,
+    // gruen oben. Kein Farbton im Mittelpunkt, sonst liest sich "normal" wie ein Wert.
+    const CA_COLORS = ["#C62622", "#E5615E", "#F2AEAC", "#EDEDEA", "#A9D5B8", "#4DA36E", "#008635"];
+    const CA_WD = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+
+    async function caLoad() {
+      if (!PW) return;
+      const btn = document.getElementById("refresh-btn");
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Pulle Tagesdaten…";
+      try {
+        await buEnsureEcharts();
+        const r = await fetch(`/api/daily?pw=${encodeURIComponent(PW)}`);
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        caData = await r.json();
+        caRender();
+      } catch (e) {
+        document.getElementById("ca-verdict").className = "ca-verdict bad";
+        document.getElementById("ca-verdict").innerHTML =
+          `<h3>Daten konnten nicht geladen werden</h3><p>${esc(e.message)}</p>`;
+      } finally {
+        btn.disabled = false;
+        btn.textContent = orig;
+      }
+    }
+
+    function caSetMetric(k) { caMetric = k; caRender(); }
+    function caSetDays(n) { caCustom = null; caDays = n; caRender(); }
+    function caSetCustom() {
+      const from = document.getElementById("ca-from").value;
+      const to = document.getElementById("ca-to").value;
+      if (!from && !to) return;
+      caCustom = { from, to };
+      caRender();
+    }
+    function caResize() { Object.values(caCharts).forEach(c => c && c.resize()); }
+    window.addEventListener("resize", () => { if (activeTab === "calendar") caResize(); });
+
+    function caChart(id, option) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (!caCharts[id]) caCharts[id] = echarts.init(el, null, { renderer: "canvas" });
+      caCharts[id].setOption(option, true);
+    }
+
+    function caFmt(v, unit) {
+      if (v === null || v === undefined) return "–";
+      if (unit === "EUR") return Number(v).toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
+      if (unit === "%") return Number(v).toLocaleString("de-DE", { minimumFractionDigits: 1, maximumFractionDigits: 1 }) + " %";
+      return Number(v).toLocaleString("de-DE");
+    }
+    const caPct = (d) => (d === null || d === undefined ? "–" : (d >= 0 ? "+" : "") + (d * 100).toFixed(1) + " %");
+    const caDir = (d) => (d === null || d === undefined ? "flat" : d > 0.02 ? "up" : d < -0.02 ? "down" : "flat");
+
+    function caRender() {
+      if (!caData) return;
+      const d = caData;
+      const m = caMeta(caMetric) || caAll()[0];
+      const st = d.stats[m.key];
+      const series = d.series[m.key];
+      const isRate = m.group === "rate";
+
+      const teal = buTok("--primary"), ink = buTok("--text"), muted = buTok("--text-muted");
+      const faint = buTok("--text-faint"), border = buTok("--border"), surface = buTok("--surface");
+      const surfaceAlt = buTok("--surface-alt");
+      const baseFont = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+
+      // Metrik-Umschalter, Raten zuerst — sie sind die ehrlichere Frage, weil
+      // absolute Zahlen am eingekauften Traffic haengen.
+      const grp = (label, items) =>
+        `<span style="font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--text-faint);` +
+        `font-weight:700;align-self:center;margin-right:2px">${label}</span>` +
+        items.map(x => `<button class="ca-m${x.key === caMetric ? " on" : ""}" ` +
+          `onclick="caSetMetric('${x.key}')">${esc(x.label)}</button>`).join("");
+      document.getElementById("ca-metrics").innerHTML =
+        grp("Raten", d.rates || []) +
+        `<span style="width:1px;height:24px;background:var(--border);margin:0 6px;align-self:center"></span>` +
+        grp("Absolut", d.metrics);
+
+      ["ca-r-90", "ca-r-180", "ca-r-365", "ca-r-c"].forEach(id => {
+        const on = caCustom ? id === "ca-r-c" : id === "ca-r-" + caDays;
+        document.getElementById(id).className = on ? "primary" : "secondary";
+      });
+
+      // ---------- Urteil ----------
+      const c21 = st.compare.d21;
+      const dir = caDir(c21 && c21.delta);
+      const cls = !c21 ? "flat"
+        : dir === "down" ? (c21.delta < -0.25 ? "bad" : "warn") : dir === "up" ? "good" : "flat";
+      const v = document.getElementById("ca-verdict");
+      v.className = "ca-verdict " + cls;
+      if (!c21) {
+        v.innerHTML = `<h3>Zu wenig Daten</h3><p>Für einen Vergleich braucht es mindestens 42 Tage.</p>`;
+      } else {
+        const richtung = dir === "down" ? "gefallen" : dir === "up" ? "gestiegen" : "seitwärts gelaufen";
+        v.innerHTML =
+          `<h3>${esc(m.label)}: in den letzten 3 Wochen ${richtung} (${caPct(c21.delta)})</h3>` +
+          `<p>` + (isRate
+            ? `${caFmt(c21.before, m.unit)} in den 21 Tagen davor, jetzt ${caFmt(c21.recent, m.unit)}. ` +
+              `Zähler und Nenner sind über das jeweilige Fenster summiert, ein schwacher Tag mit ` +
+              `3 Installs verzerrt hier also nichts.`
+            : `${caFmt(c21.before, m.unit)} in den 21 Tagen davor, ${caFmt(c21.recent, m.unit)} in den letzten 21 Tagen. ` +
+              `Im Schnitt ${caFmt(c21.beforeAvg, m.unit)} pro Tag gegen jetzt ${caFmt(c21.recentAvg, m.unit)}. ` +
+              `<b>Achtung:</b> absolute Zahlen hängen am Ad-Budget. Für die Qualität die Raten oben nehmen.`) +
+          `</p>`;
+      }
+
+      // ---------- Vergleichsfenster ----------
+      document.getElementById("ca-wins").innerHTML = [
+        ["7 Tage", st.compare.d7], ["21 Tage", st.compare.d21], ["28 Tage", st.compare.d28],
+      ].map(([lab, c]) => {
+        if (!c) return `<div class="ca-win"><div class="w-lab">${lab}</div><div class="w-delta flat">–</div><div class="w-detail">zu wenig Daten</div></div>`;
+        return `<div class="ca-win"><div class="w-lab">${lab} vs. davor</div>` +
+          `<div class="w-delta ${caDir(c.delta)}">${caPct(c.delta)}</div>` +
+          `<div class="w-detail">${caFmt(c.before, m.unit)} → ${caFmt(c.recent, m.unit)}</div></div>`;
+      }).join("");
+
+      // ---------- Kalender ----------
+      // Sichtbarer Ausschnitt: eigener Bereich schlaegt die Presets.
+      let shown;
+      if (caCustom) {
+        const from = caCustom.from || d.days[0];
+        const to = caCustom.to || d.days[d.days.length - 1];
+        const [a, b] = from <= to ? [from, to] : [to, from];
+        shown = d.days.filter(x => x >= a && x <= b);
+        if (!shown.length) shown = d.days.slice(-caDays);
+      } else {
+        shown = d.days.slice(-caDays);
+      }
+      document.getElementById("ca-from").value = shown[0];
+      document.getElementById("ca-to").value = shown[shown.length - 1];
+
+      // Werte ohne Datenlage (Rate mit Nenner 0) bleiben null und werden grau
+      // gezeichnet, statt als echte Null durchzugehen.
+      const data = shown.map(day => [day, series[day] ?? null]);
+
+      // Die Skala richtet sich nach dem SICHTBAREN Ausschnitt. Dadurch bedeutet
+      // die Farbe immer "gut oder schlecht verglichen mit dem, was gerade zu
+      // sehen ist" — ein fester Jahresbezug waere bei gewachsenem Traffic wertlos.
+      const vis = shown.map(x => series[x]).filter(x => x !== null && x !== undefined);
+      const sortedVis = [...vis].sort((a, b) => a - b);
+      const med = caQuantile(sortedVis, 0.5);
+      const p10 = caQuantile(sortedVis, 0.1), p90 = caQuantile(sortedVis, 0.9);
+      // Symmetrisch um den Median, damit Grau exakt auf dem Normalwert liegt.
+      const spread = Math.max(med - p10, p90 - med, Math.abs(med) * 0.35, 1e-6);
+      document.getElementById("ca-scale-note").textContent =
+        `Normal im Ausschnitt: ${caFmt(med, m.unit)} · Skala ${caFmt(Math.max(0, med - spread), m.unit)} bis ${caFmt(med + spread, m.unit)}` +
+        (isRate ? ` · ${d.rate_window}-Tage-Fenster` : "");
+
+      caChart("ca-cal", {
+        backgroundColor: "transparent",
+        textStyle: { fontFamily: baseFont },
+        tooltip: {
+          trigger: "item", confine: true,
+          backgroundColor: surface, borderColor: border, borderWidth: 1,
+          textStyle: { color: ink, fontSize: 12.5 },
+          extraCssText: "box-shadow:0 4px 16px rgba(0,0,0,.10); border-radius:10px;",
+          formatter: (p) => {
+            const day = p.data[0], val = p.data[1];
+            const wd = CA_WD[(new Date(day + "T00:00:00Z").getUTCDay() + 6) % 7];
+            if (val === null || val === undefined) {
+              return `<b>${day}</b> (${wd})<br><span style="color:${muted}">keine Daten</span>`;
+            }
+            const rel = med ? ((val / med - 1) * 100) : null;
+            return `<b>${day}</b> (${wd})<br>${esc(m.label)}: <b>${caFmt(val, m.unit)}</b>` +
+              (isRate ? `<br><span style="color:${muted}">${d.rate_window}-Tage-Fenster bis zu diesem Tag</span>` : "") +
+              (rel === null ? "" : `<br><span style="color:${muted}">${rel >= 0 ? "+" : ""}${rel.toFixed(0)} % gegenüber normal</span>`);
+          },
+        },
+        visualMap: {
+          min: Math.max(0, med - spread), max: med + spread,
+          calculable: false, orient: "horizontal", left: "center", bottom: 0,
+          itemWidth: 12, itemHeight: 90,
+          inRange: { color: CA_COLORS },
+          text: ["über normal", "unter normal"],
+          textStyle: { color: muted, fontSize: 11 },
+        },
+        calendar: {
+          top: 26, left: 34, right: 10, bottom: 46,
+          cellSize: ["auto", shown.length > 200 ? 12 : shown.length > 120 ? 15 : 18],
+          range: [shown[0], shown[shown.length - 1]],
+          splitLine: { show: false },
+          itemStyle: { color: surfaceAlt, borderWidth: 2.5, borderColor: surface },
+          yearLabel: { show: false },
+          dayLabel: { firstDay: 1, nameMap: ["So", "Mo", "Di", "Mi", "Do", "Fr", "Sa"],
+                      color: faint, fontSize: 10.5 },
+          monthLabel: { nameMap: ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"],
+                        color: muted, fontSize: 11, fontWeight: 600 },
+        },
+        series: [{ type: "heatmap", coordinateSystem: "calendar", data,
+                   itemStyle: { borderWidth: 2.5, borderColor: surface } }],
+      });
+
+      // ---------- Wochentag ----------
+      caChart("ca-wd", {
+        backgroundColor: "transparent",
+        textStyle: { fontFamily: baseFont },
+        grid: { left: 4, right: 16, top: 14, bottom: 4, containLabel: true },
+        tooltip: {
+          trigger: "item", confine: true,
+          backgroundColor: surface, borderColor: border, borderWidth: 1,
+          textStyle: { color: ink, fontSize: 12.5 },
+          extraCssText: "box-shadow:0 4px 16px rgba(0,0,0,.10); border-radius:10px;",
+          formatter: (p) => `<b>${p.name}</b><br>Schnitt: <b>${caFmt(p.value, m.unit)}</b>`,
+        },
+        xAxis: { type: "category", data: CA_WD, axisTick: { show: false },
+                 axisLine: { lineStyle: { color: border } },
+                 axisLabel: { color: muted, fontSize: 12 } },
+        yAxis: { type: "value", splitLine: { lineStyle: { color: border } },
+                 axisLabel: { color: faint, fontSize: 11,
+                              formatter: (x) => m.unit === "EUR" ? x + " €" : Number(x).toLocaleString("de-DE") } },
+        series: [{
+          type: "bar", data: st.weekday, barMaxWidth: 34,
+          itemStyle: { color: teal, borderRadius: [5, 5, 0, 0] },
+        }],
+      });
+
+      // ---------- Alle Kennzahlen ----------
+      document.getElementById("ca-all-rows").innerHTML = caAll().map(x => {
+        const c = d.stats[x.key].compare.d21;
+        const dd = caDir(c && c.delta);
+        return `<tr${x.key === caMetric ? ' style="background:var(--surface-alt)"' : ""}>` +
+          `<td>${esc(x.label)}</td>` +
+          `<td class="num">${c ? caFmt(c.before, x.unit) : "–"}</td>` +
+          `<td class="num">${c ? caFmt(c.recent, x.unit) : "–"}</td>` +
+          `<td class="num ${dd === "up" ? "d-up" : dd === "down" ? "d-down" : ""}">${c ? caPct(c.delta) : "–"}</td></tr>`;
+      }).join("");
+
+      document.getElementById("meta").textContent =
+        `Tagesform · ${d.range.startDate} bis ${d.range.endDate}` + (d.cached ? " · aus dem Cache" : "");
+      caResize();
     }
   </script>
 </body>
