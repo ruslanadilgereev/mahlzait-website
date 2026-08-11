@@ -1,0 +1,77 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
+import WeightWatchersAlternativePage from "@modules/weightWatchersAlternative";
+
+const seo = {
+  title: "WeightWatchers kündigen und wechseln: Punkte in Kalorien | Mahlzait",
+  description:
+    "WW-Abo beenden und danach weitermachen: Wie du kündigst, warum Nullpunkte-Lebensmittel trotzdem Kalorien haben und was du von WW mitnehmen solltest.",
+};
+
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}/weight-watchers-alternative/`;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Wie kündige ich meine WeightWatchers-Mitgliedschaft?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Das hängt davon ab, wo du gebucht hast. Direkt bei WW kündigst du nach dem Login auf weightwatchers.com über die Kündigungsseite beziehungsweise das Kündigungsformular. Läuft das Abo über den App Store, kündigst du auf dem iPhone unter Einstellungen, eigener Name, Abonnements, und auf Android im Play Store unter Zahlungen und Abos. Die App zu löschen beendet die Mitgliedschaft in keinem Fall. Beachte die Laufzeit, WW arbeitet mit Zeiträumen von einem, drei oder sechs Monaten.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie viele Kalorien haben WW-Nullpunkte-Lebensmittel?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Null Punkte bedeutet nicht null Kalorien. Das Punktesystem gewichtet Zucker und gesättigtes Fett hoch, Protein und Ballaststoffe niedrig, und stellt proteinreiche Lebensmittel deshalb auf null Punkte. 250 Gramm Magerquark liefern rund 170 Kilokalorien, eine mittelgroße Banane etwa 90, 150 Gramm Hähnchenbrust rund 165. Beim Wechsel auf Kalorienzählen werden diese Mengen sichtbar, was die häufigste Überraschung nach einem WW-Ausstieg ist.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Kann ich nach WeightWatchers einfach Kalorien zählen?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Ja, und der Umstieg fällt leichter als gedacht. Das Portionsgefühl aus der WW-Zeit bleibt erhalten, ebenso der Grundsatz, Protein in den Vordergrund zu stellen. Neu ist nur die Einheit: Kalorien stehen auf jeder Verpackung und funktionieren mit jeder App. Entscheidend für den Erfolg war ohnehin das tägliche Protokollieren, nicht das Punktesystem selbst.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Ersetzt eine Kalorienzähler-App WeightWatchers vollständig?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Nein. WW bietet Coaching, Community und ein vorgegebenes Programm, das eine reine Tracking-App nicht ersetzt. Wer diese Begleitung braucht, ist bei WW besser aufgehoben. Wer dagegen bereits weiß, wie er essen will, und nur eine schnelle, günstige Möglichkeit zum Mitschreiben sucht, kommt mit einem Kalorienzähler weiter.",
+      },
+    },
+  ],
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  itemListElement: [
+    { "@type": "ListItem", position: 1, name: "Startseite", item: siteUrl },
+    { "@type": "ListItem", position: 2, name: "WeightWatchers Alternative", item: pageUrl },
+  ],
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData
+    config={defaultTemplateConfig}
+    type="page"
+    pageTitle="WeightWatchers Alternative"
+    pageDescription={seo.description}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
+
+  <WeightWatchersAlternativePage client:load config={configWithoutLegal} />
+</Layout>

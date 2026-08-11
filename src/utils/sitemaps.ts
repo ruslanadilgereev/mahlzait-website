@@ -82,6 +82,7 @@ const calculatorSlugs = [
   "taille-hueft-verhaeltnis-rechner",
   "wasserbedarf-rechner",
   "yazio-alternative",
+  "weight-watchers-alternative",
   "essensplan-erstellen",
   "trainingsplan-erstellen",
 ];
