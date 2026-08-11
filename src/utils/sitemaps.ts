@@ -73,6 +73,7 @@ const calculatorSlugs = [
   "kalorienverbrauch-rechner",
   "koerperfett-rechner",
   "koffein-rechner",
+  "leistungsumsatz-rechner",
   "makros-berechnen",
   "pizza-kalorien-rechner",
   "protein-bedarf-rechner",

@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import KalorienFoodPage from "@modules/kalorienFood";
 import { articlesMeta } from "@content/wissen";
 import { getCalculatorsForFood } from "utils/topicClusters";
@@ -165,11 +166,27 @@ const webAppSchema = {
       "@type": "Dataset",
       name: "Open Food Facts",
       url: "https://world.openfoodfacts.org",
+      description:
+        "Freie, gemeinschaftlich gepflegte Datenbank mit Nährwertangaben und Zutatenlisten zu Lebensmitteln aus aller Welt.",
+      license: "https://opendatacommons.org/licenses/odbl/1-0/",
+      creator: {
+        "@type": "Organization",
+        name: "Open Food Facts",
+        url: "https://world.openfoodfacts.org",
+      },
     },
     {
       "@type": "Dataset",
       name: "USDA FoodData Central",
       url: "https://fdc.nal.usda.gov",
+      description:
+        "Nährwertdatenbank des US-Landwirtschaftsministeriums mit analytisch ermittelten Werten zu Lebensmitteln.",
+      license: "https://creativecommons.org/publicdomain/zero/1.0/",
+      creator: {
+        "@type": "Organization",
+        name: "U.S. Department of Agriculture",
+        url: "https://www.usda.gov",
+      },
     },
   ],
 };
@@ -245,7 +262,7 @@ const authorPersonSchema = {
 
   <KalorienFoodPage
     client:visible
-    config={defaultTemplateConfig}
+    config={configWithoutLegal}
     food={food}
     relatedFoodsMeta={relatedFoodsMeta}
     relatedArticles={relatedArticles}
