@@ -329,8 +329,13 @@
       border-radius: var(--radius);
       box-shadow: var(--shadow-sm);
       width: fit-content;
+      /* Die Leiste scrollt selbst, statt die ganze Seite breit zu ziehen.
+         Auf breiten Schirmen passt sie ohnehin und nichts aendert sich. */
+      max-width: 100%;
+      overflow-x: auto;
     }
     .tab-btn {
+      flex-shrink: 0;
       padding: 8px 16px;
       border-radius: var(--radius-sm);
       border: none;
@@ -585,9 +590,52 @@
     }
     tr.pe-after td { font-weight: 700; }
 
+    /* ===== TikTok ===== */
+    /* Eigene Trichter-Zeilen statt .bu-steps, weil die Rate hier ZWISCHEN den
+       Stufen steht: die erste Stufe misst eine andere Grundgesamtheit als die
+       folgenden, und der Übergang dorthin muss als unsicher markiert sein. */
+    .tt-funnel { display: flex; flex-direction: column; gap: 2px; }
+    .tt-row {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 12px 16px;
+      display: grid; grid-template-columns: 168px 1fr 74px;
+      align-items: center; gap: 14px;
+    }
+    .tt-row .t-name { font-size: 13.5px; font-weight: 600; }
+    .tt-row .t-name span { display: block; font-weight: 400; font-size: 11.5px;
+      color: var(--text-faint); margin-top: 2px; line-height: 1.35; }
+    .tt-row .t-track { height: 22px; background: var(--surface-alt); border-radius: 5px; overflow: hidden; }
+    .tt-row .t-fill { height: 100%; border-radius: 5px; min-width: 3px; background: var(--primary); }
+    .tt-row .t-fill.reach { background: var(--border-strong); }
+    .tt-row .t-num { text-align: right; font-variant-numeric: tabular-nums;
+      font-size: 15px; font-weight: 700; }
+    .tt-arrow {
+      display: grid; grid-template-columns: 168px 1fr; gap: 14px;
+      padding: 6px 16px; font-size: 12.5px; color: var(--text-muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .tt-arrow .a-rate { color: var(--text); font-weight: 700; }
+    .tt-arrow.soft .a-rate { color: var(--text-muted); font-weight: 600; }
+    .tt-arrow .a-note { color: var(--text-faint); }
+    .tt-chart { width: 100%; height: 300px; }
+    .tt-empty { padding: 44px 0; text-align: center; color: var(--text-faint); font-size: 13.5px; }
+    /* Fuenf Spalten passen auf dem Handy nicht nebeneinander. Ohne die
+       Mindestbreite quetscht der Browser eine Spalte auf null und die Karte
+       schneidet sie ab; so scrollt stattdessen die Tabelle. */
+    .tt-tablewrap { overflow-x: auto; }
+    .tt-tablewrap table { min-width: 460px; }
+    /* Unter 480px blendet weiter oben eine globale Regel die zweite Spalte
+       JEDER Tabelle aus (gemacht fuer die Referral-Tabelle). Hier waere das
+       ausgerechnet „Klicks". Da diese Tabelle scrollt, bleibt sie vollstaendig. */
+    .tt-tablewrap thead th:nth-child(2),
+    .tt-tablewrap tbody td:nth-child(2) { display: table-cell; }
+
     @media (max-width: 720px) {
       .cu-grid { grid-template-columns: 1fr; }
       .cu-bar-row { grid-template-columns: 92px 1fr auto; }
+      .tt-row { grid-template-columns: 116px 1fr 58px; gap: 10px; }
+      .tt-arrow { grid-template-columns: 116px 1fr; gap: 10px; }
+      .tt-chart { height: 250px; }
     }
   </style>
 </head>
@@ -629,6 +677,7 @@
         <button class="tab-btn" id="tab-price" onclick="switchTab('price')">Preis-Test</button>
         <button class="tab-btn" id="tab-business" onclick="switchTab('business')">Business</button>
         <button class="tab-btn" id="tab-calendar" onclick="switchTab('calendar')">Tagesform</button>
+        <button class="tab-btn" id="tab-tiktok" onclick="switchTab('tiktok')">TikTok</button>
       </div>
 
       <div id="view-referral">
@@ -1114,6 +1163,84 @@
           365 Tage zurück; nur der kohortierte Funnel ist auf ~2 Monate begrenzt.
         </div>
       </div>
+
+      <div id="view-tiktok" class="hidden">
+        <div class="bu-toolbar">
+          <span class="bu-label">Zeitraum</span>
+          <button class="secondary" id="tt-r-30" onclick="ttSetDays(30)">30 Tage</button>
+          <button class="secondary" id="tt-r-90" onclick="ttSetDays(90)">90 Tage</button>
+          <button class="secondary" id="tt-r-365" onclick="ttSetDays(365)">1 Jahr</button>
+          <span style="width:1px;height:22px;background:var(--border);margin:0 4px"></span>
+          <input id="tt-from" type="date" style="width:auto" onchange="ttSetCustom()">
+          <span style="color:var(--text-faint);font-size:12px">bis</span>
+          <input id="tt-to" type="date" style="width:auto" onchange="ttSetCustom()">
+          <button class="secondary" id="tt-r-c" onclick="ttSetCustom()">Übernehmen</button>
+        </div>
+        <div class="bu-toolbar" style="margin-top:-6px">
+          <span id="tt-stand" style="font-size:12px;color:var(--text-faint)">lädt…</span>
+        </div>
+
+        <div class="cu-kpis" id="tt-kpis"></div>
+
+        <div class="card" style="padding:18px 20px">
+          <div class="bu-head">
+            <h3>Von TikTok zum Abo</h3>
+            <span class="bu-sub">Breite = im Verhältnis zur größten Stufe</span>
+          </div>
+          <div class="bu-cap">
+            Der erste Übergang ist <b>grau, weil er keine Conversion ist</b>: die Klicks
+            zählt der Link, die Kunden zählen sich selbst im Onboarding. Ab „Neue Kunden“
+            ist es durchgehend dieselbe Nutzergruppe, dort sind die Prozente echt.
+          </div>
+          <div class="tt-funnel" id="tt-funnel"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px;padding:18px 20px">
+          <div class="bu-head">
+            <h3>Klicks und Trials im Verlauf</h3>
+            <span class="bu-sub" id="tt-gran">pro Tag</span>
+          </div>
+          <div class="bu-cap">
+            Balken sind Link-Klicks, die Linie sind gestartete Trials, beide auf derselben
+            Achse. Dass die Linie tief liegt, ist keine Darstellung, sondern das Ergebnis.
+          </div>
+          <div id="tt-chart" class="tt-chart"></div>
+        </div>
+
+        <div class="card tt-tablewrap" style="margin-top:16px">
+          <table>
+            <thead>
+              <tr>
+                <th>Link</th>
+                <th class="num">Klicks</th>
+                <th class="num" title="Verschiedene ipHash-Werte — grobe Untergrenze für die Zahl der Personen">Geräte</th>
+                <th class="num">Anteil</th>
+                <th class="num">Letzter Klick</th>
+              </tr>
+            </thead>
+            <tbody id="tt-slugs"></tbody>
+          </table>
+        </div>
+
+        <div class="footer-note">
+          <b style="color:var(--text)">Zwei Quellen, zwei Grundgesamtheiten.</b>
+          Die Klicks kommen aus Firestore (<code>link_clicks</code>), gezählt wird jeder
+          Aufruf eines <code>/go/…-tt</code>-Links. Alles darunter kommt aus RevenueCat und
+          hängt am Onboarding-Attribut <code>self_reported_source</code>, also an dem, was
+          der Nutzer selbst <b>angibt</b>. Wer über den Link kommt und dann „App Store“
+          antwortet, fehlt unten; wer ein TikTok-Video ohne Link gesehen hat und „TikTok“
+          angibt, fehlt oben. Deshalb kann „Neue Kunden“ auch <b>über</b> den Klicks liegen. ·
+          <b>Nicht kohortiert:</b> die RevenueCat-Zahlen sind auf das Ereignisdatum gebucht
+          (Trials auf das Trial-Start-Datum), nicht auf den Erstkontakt — ein Trial im August
+          kann von einem Kunden aus Juni stammen. ·
+          <b>Trial → Bezahlt</b> steht als „von allen“ und „von den entschiedenen“: laufende
+          Trials stehen bei der ersten Zahl im Nenner und drücken sie, bei der zweiten sind
+          sie draußen. Bei diesen kleinen Fallzahlen ist die zweite Zahl sehr wackelig. ·
+          Umsatz ist RevenueCat-<b>Neugeschäft</b> in USD, Verlängerungen stehen getrennt
+          daneben. · „Geräte“ zählt verschiedene <code>ipHash</code>-Werte, das ist eine
+          grobe Untergrenze für die Zahl der Personen, keine exakte.
+        </div>
+      </div>
     </div>
   </div>
   <div id="pe-tip"></div>
@@ -1165,6 +1292,7 @@
       // alte zurueck und der Klick tut scheinbar nichts.
       if (activeTab === "business") { buHistory = null; buMonths = null; return buLoad(); }
       if (activeTab === "calendar") { caData = null; return caLoad(); }
+      if (activeTab === "tiktok") { ttData = null; return ttLoad(true); }
       const btn = document.getElementById("refresh-btn");
       const origText = btn.textContent;
       btn.disabled = true;
@@ -1381,6 +1509,7 @@
       document.getElementById("tab-price").classList.toggle("active", name === "price");
       document.getElementById("tab-business").classList.toggle("active", name === "business");
       document.getElementById("tab-calendar").classList.toggle("active", name === "calendar");
+      document.getElementById("tab-tiktok").classList.toggle("active", name === "tiktok");
       document.getElementById("view-referral").classList.toggle("hidden", name !== "referral");
       document.getElementById("view-apple-ads").classList.toggle("hidden", name !== "apple-ads");
       document.getElementById("view-google-ads").classList.toggle("hidden", name !== "google-ads");
@@ -1392,8 +1521,10 @@
       if (name === "ai" && !aiData) aiLoad(false);
       if (name === "price" && !peData) peLoad();
       document.getElementById("view-calendar").classList.toggle("hidden", name !== "calendar");
+      document.getElementById("view-tiktok").classList.toggle("hidden", name !== "tiktok");
       if (name === "business") { if (!buData) buLoad(); else buResize(); }
       if (name === "calendar") { if (!caData) caLoad(); else caResize(); }
+      if (name === "tiktok") { if (!ttData) ttLoad(); else ttResize(); }
       if (name === "apple-ads" && !aaData) aaLoad(false);
       if (name === "google-ads" && !gaData) {
         if (!document.getElementById("ga-from").value) {
@@ -3692,6 +3823,268 @@
       document.getElementById("meta").textContent =
         `Tagesform · ${d.range.startDate} bis ${d.range.endDate}` + (d.cached ? " · aus dem Cache" : "");
       caResize();
+    }
+
+    // ============================================================
+    // TikTok — /go-Klicks (Firestore) + RevenueCat nach self_reported_source.
+    // Die beiden Quellen messen NICHT dieselbe Grundgesamtheit; der erste
+    // Trichterschritt ist deshalb bewusst als unsicher markiert. Begründung
+    // steht ausführlich im Kopf von api/tiktok.mjs und in der Fußnote.
+    // ============================================================
+    let ttData = null;
+    let ttDays = 90;
+    let ttCustom = null;   // {from, to} wenn eigener Zeitraum gewählt
+    let ttBusy = false;
+    const ttCharts = {};
+
+    const ttInt = (n) => (n === null || n === undefined ? "–" : Number(n).toLocaleString("de-DE"));
+    const ttPct = (v, d = 1) => (v === null || v === undefined ? "–" :
+      (v * 100).toLocaleString("de-DE", { minimumFractionDigits: d, maximumFractionDigits: d }) + " %");
+    const ttUsd = (v) => (v === null || v === undefined ? "–" :
+      "$" + Number(v).toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
+    const ttDay = (s) => s.slice(8, 10) + "." + s.slice(5, 7) + ".";
+
+    function ttSetDays(n) {
+      if (ttDays === n && !ttCustom && ttData) return;
+      ttCustom = null;
+      ttDays = n;
+      ttLoad();
+    }
+
+    function ttSetCustom() {
+      const from = document.getElementById("tt-from").value;
+      const to = document.getElementById("tt-to").value;
+      if (!from && !to) return;
+      ttCustom = { from, to };
+      ttLoad();
+    }
+
+    function ttQuery() {
+      const p = new URLSearchParams({ pw: PW });
+      if (ttCustom) {
+        if (ttCustom.from) p.set("start", ttCustom.from);
+        if (ttCustom.to) p.set("end", ttCustom.to);
+      } else {
+        p.set("days", String(ttDays));
+      }
+      return p;
+    }
+
+    async function ttLoad(fresh) {
+      if (!PW || ttBusy) return;
+      ttBusy = true;
+      const btn = document.getElementById("refresh-btn");
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Pulle Klicks + RC…";
+      document.getElementById("tt-stand").textContent = "lädt…";
+      try {
+        await buEnsureEcharts();
+        const r = await fetch(`/api/tiktok?${ttQuery()}` + (fresh ? "&fresh=1" : ""));
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        ttData = await r.json();
+        ttRender();
+      } catch (e) {
+        document.getElementById("tt-stand").textContent = "Fehler beim Laden";
+        alert("TikTok: " + e.message);
+      } finally {
+        ttBusy = false;
+        btn.disabled = false;
+        btn.textContent = orig;
+      }
+    }
+
+    function ttChart(id, option) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (!ttCharts[id]) ttCharts[id] = echarts.init(el, null, { renderer: "canvas" });
+      ttCharts[id].setOption(option, true);
+    }
+
+    function ttResize() { Object.values(ttCharts).forEach(c => c && c.resize()); }
+    window.addEventListener("resize", () => { if (activeTab === "tiktok") ttResize(); });
+
+    /**
+     * Tage in Balken zusammenfassen. Tageweise sind die Zahlen hier fast immer
+     * 0, 1 oder 2 — als Verlauf über Monate ist das nur Zickzack. Ab 45 Tagen
+     * wird deshalb auf 7-Tage-Blöcke gebündelt. Der Block startet am ersten Tag
+     * des Zeitraums, nicht am Montag: so ist der letzte Block nie ein
+     * angeschnittener Rumpf, der wie ein Einbruch aussieht.
+     */
+    function ttBuckets(d) {
+      const step = d.range.days > 45 ? 7 : 1;
+      const start = Date.parse(d.range.start + "T00:00:00.000Z");
+      const end = Date.parse(d.range.end + "T00:00:00.000Z");
+      const clicks = d.clicks.by_day || {};
+      const trials = (d.rc.trials_new && d.rc.trials_new.by_day) || {};
+      const out = { labels: [], clicks: [], trials: [], step, spans: [] };
+      for (let t = start; t <= end; t += step * 86400000) {
+        let c = 0, tr = 0;
+        const from = new Date(t).toISOString().slice(0, 10);
+        let to = from;
+        for (let i = 0; i < step; i++) {
+          const day = new Date(t + i * 86400000).toISOString().slice(0, 10);
+          if (Date.parse(day + "T00:00:00.000Z") > end) break;
+          c += clicks[day] || 0;
+          tr += trials[day] || 0;
+          to = day;
+        }
+        out.labels.push(from);
+        out.spans.push(step === 1 ? ttDay(from) : `${ttDay(from)}–${ttDay(to)}`);
+        out.clicks.push(c);
+        out.trials.push(tr);
+      }
+      return out;
+    }
+
+    function ttRender() {
+      if (!ttData) return;
+      const d = ttData;
+      const surface = buTok("--surface"), border = buTok("--border"), ink = buTok("--text");
+      const muted = buTok("--text-muted"), faint = buTok("--text-faint");
+      const teal = buTok("--primary"), grey = buTok("--border-strong");
+      const baseFont = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+
+      const activeBtn = ttCustom ? "tt-r-c" : { 30: "tt-r-30", 90: "tt-r-90", 365: "tt-r-365" }[ttDays];
+      ["tt-r-30", "tt-r-90", "tt-r-365", "tt-r-c"].forEach(id => {
+        document.getElementById(id).className = id === activeBtn ? "primary" : "secondary";
+      });
+      // Auf den TATSÄCHLICH benutzten Zeitraum setzen, auch wenn der Server ihn
+      // korrigiert hat (getauscht, in die Zukunft gekappt).
+      document.getElementById("tt-from").value = d.range.start;
+      document.getElementById("tt-to").value = d.range.end;
+
+      const conv = d.rc.conversion;
+      document.getElementById("tt-stand").textContent =
+        `${d.range.start} bis ${d.range.end} · ${ttInt(d.range.days)} Tage · Quelle „${d.source}“ · Stand ` +
+        new Date(d.generated_at).toLocaleString("de-DE") +
+        (d.cached ? " · aus dem Cache" : "") +
+        (d.tracking_since ? ` · Link-Tracking läuft seit ${d.tracking_since}` : "");
+      document.getElementById("meta").textContent =
+        `TikTok · ${d.range.start} bis ${d.range.end}`;
+
+      // ---------- KPI-Zeile ----------
+      const kpis = [
+        { k: "Link-Klicks", v: ttInt(d.clicks.total), s: `${ttInt(d.clicks.devices)} verschiedene Geräte` },
+        { k: "Neue Kunden", v: ttInt(d.rc.customers_new.total), s: "sagen selbst „" + d.source + "“" },
+        { k: "Trials gestartet", v: ttInt(d.rc.trials_new.total),
+          s: d.rc.customers_new.total ? ttPct(d.rc.trials_new.total / d.rc.customers_new.total) + " der Kunden" : "–" },
+        { k: "Trial → Bezahlt", v: ttPct(conv.rate_of_all),
+          s: `${ttInt(conv.conversions)} von ${ttInt(conv.trial_starts)}` +
+             (conv.pending ? ` · ${ttInt(conv.pending)} laufen noch` : "") },
+        { k: "Umsatz (neu)", v: ttUsd(d.rc.revenue.new),
+          s: d.rc.revenue.renewal ? `+ ${ttUsd(d.rc.revenue.renewal)} Verlängerungen` : "ohne Verlängerungen" },
+        { k: "LTV je Kunde", v: ttUsd(d.rc.ltv.per_customer), s: "realisiert nach 30 Tagen" },
+      ];
+      document.getElementById("tt-kpis").innerHTML = kpis.map(x =>
+        `<div class="cu-kpi"><div class="k-label">${esc(x.k)}</div>` +
+        `<div class="k-val">${x.v}</div><div class="k-sub">${esc(x.s)}</div></div>`).join("");
+
+      // ---------- Trichter ----------
+      // Die Balkenbreite geht gegen die GRÖSSTE Stufe, nicht gegen die erste:
+      // „Neue Kunden" kann über den Klicks liegen (siehe Fußnote), dann wäre
+      // ein Balken über 100 % breit.
+      const steps = d.funnel;
+      const peak = Math.max(1, ...steps.map(s => s.value || 0));
+      // Der erste Übergang bekommt BEWUSST keine Prozentzahl. Es gibt regelmäßig
+      // mehr selbst gemeldete Kunden als Link-Klicks, ein „↓ 245 %" wäre schlicht
+      // Unsinn. Statt einer Rate steht dort der nackte Vergleich plus die Warnung.
+      const rates = [
+        null,
+        { soft: true, rate: "≠",
+          note: `${ttInt(d.rc.customers_new.total)} Kunden zu ${ttInt(d.clicks.total)} Klicks — ` +
+                "nicht vergleichbar, andere Grundgesamtheit" },
+        { soft: false,
+          rate: "↓ " + ttPct(d.rc.customers_new.total ? d.rc.trials_new.total / d.rc.customers_new.total : null),
+          note: "der neuen Kunden starten ein Trial" },
+        { soft: false, rate: "↓ " + ttPct(conv.rate_of_all),
+          note: conv.rate_of_decided === null
+            ? "der Trials werden bezahlt"
+            : `der Trials · ${ttPct(conv.rate_of_decided)} der schon entschiedenen` },
+      ];
+
+      document.getElementById("tt-funnel").innerHTML = steps.map((s, i) => {
+        const r = rates[i];
+        const arrow = r ? `<div class="tt-arrow${r.soft ? " soft" : ""}">
+            <div></div>
+            <div><span class="a-rate">${esc(r.rate)}</span> <span class="a-note">${esc(r.note)}</span></div>
+          </div>` : "";
+        const w = (s.value || 0) / peak * 100;
+        // Der Zusatz hängt am Hinweis statt in einer eigenen Zeile, sonst wären
+        // die Zeilen unterschiedlich hoch und der Trichter läuft optisch schief.
+        const hint = s.hint + (s.sub ? " · " + s.sub : "");
+        return arrow + `<div class="tt-row">
+          <div class="t-name">${esc(s.label)}<span>${esc(hint)}</span></div>
+          <div class="t-track"><div class="t-fill${s.basis === "firestore" ? " reach" : ""}"
+            style="width:${w.toFixed(1)}%"></div></div>
+          <div class="t-num">${ttInt(s.value)}</div>
+        </div>`;
+      }).join("");
+
+      // ---------- Verlauf ----------
+      const b = ttBuckets(d);
+      document.getElementById("tt-gran").textContent =
+        b.step === 1 ? "pro Tag" : "je 7 Tage zusammengefasst";
+      const hasAny = b.clicks.some(Boolean) || b.trials.some(Boolean);
+      const chartEl = document.getElementById("tt-chart");
+      if (!hasAny) {
+        if (ttCharts["tt-chart"]) { ttCharts["tt-chart"].dispose(); delete ttCharts["tt-chart"]; }
+        chartEl.innerHTML = `<div class="tt-empty">Keine Klicks und keine Trials in diesem Zeitraum.</div>`;
+      } else {
+        chartEl.innerHTML = "";
+        ttChart("tt-chart", {
+          backgroundColor: "transparent",
+          textStyle: { fontFamily: baseFont },
+          grid: { left: 4, right: 4, top: 30, bottom: 4, containLabel: true },
+          legend: {
+            data: ["Link-Klicks", "Trial-Starts"],
+            top: 0, itemGap: 18, icon: "roundRect", itemWidth: 11, itemHeight: 11,
+            textStyle: { color: muted, fontSize: 12 },
+          },
+          tooltip: {
+            trigger: "axis", confine: true,
+            backgroundColor: surface, borderColor: border, borderWidth: 1,
+            textStyle: { color: ink, fontSize: 12.5 },
+            extraCssText: "box-shadow:0 4px 16px rgba(0,0,0,.10); border-radius:10px;",
+            formatter: (ps) => {
+              const i = ps[0].dataIndex;
+              return `<b>${b.spans[i]}</b><br>` +
+                ps.map(p => `${p.marker} ${p.seriesName}: <b>${ttInt(p.value)}</b>`).join("<br>");
+            },
+          },
+          xAxis: {
+            type: "category", data: b.spans, axisTick: { show: false },
+            axisLine: { lineStyle: { color: border } },
+            axisLabel: { color: faint, fontSize: 11, hideOverlap: true },
+          },
+          // EINE gemeinsame Achse, bewusst. Mit einer zweiten Achse für die
+          // Trials klettert die Linie über die Balken und es sieht aus, als
+          // gäbe es mehr Trials als Klicks. Beide Größen passen problemlos auf
+          // dieselbe Skala, also gehören sie auch drauf.
+          yAxis: { type: "value", minInterval: 1, splitLine: { lineStyle: { color: border } },
+                   axisLabel: { color: faint, fontSize: 11 } },
+          series: [
+            { name: "Link-Klicks", type: "bar", data: b.clicks,
+              barMaxWidth: 26, itemStyle: { color: grey, borderRadius: [4, 4, 0, 0] } },
+            { name: "Trial-Starts", type: "line", data: b.trials,
+              symbol: "circle", symbolSize: 6, showSymbol: b.labels.length <= 60,
+              lineStyle: { color: teal, width: 2.5 }, itemStyle: { color: teal }, z: 3 },
+          ],
+        });
+        ttResize();
+      }
+
+      // ---------- Links ----------
+      const slugs = d.clicks.by_slug || [];
+      document.getElementById("tt-slugs").innerHTML = slugs.length
+        ? slugs.map(s => `<tr>
+            <td><code>/go/${esc(s.slug)}</code></td>
+            <td class="num">${ttInt(s.clicks)}</td>
+            <td class="num">${ttInt(s.devices)}</td>
+            <td class="num">${d.clicks.total ? (s.clicks / d.clicks.total * 100).toFixed(0) + " %" : "–"}</td>
+            <td class="num">${new Date(s.last).toLocaleDateString("de-DE")}</td>
+          </tr>`).join("")
+        : `<tr><td colspan="5" style="color:var(--text-faint)">Keine Klicks in diesem Zeitraum.</td></tr>`;
     }
   </script>
 </body>
