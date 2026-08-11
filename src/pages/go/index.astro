@@ -110,11 +110,20 @@ import { FALLBACK_URL } from "../../data/go-links";
         email: "email", mail: "email",
       };
 
+      // Muss identisch zu parseSlug() in src/data/go-links.ts bleiben.
+      // Jedes Segment wird geprüft, von hinten nach vorne, angehängte Ziffern
+      // werden ignoriert. Die alte Regel sah nur `-([a-z]+)$` und hat dadurch
+      // `tt-ad` (Plattform vorne) und `bio-ig1` (Ziffer am Ende) still als
+      // "direct" verbucht. Von hinten, damit `<name>-<platform>` weiter gewinnt.
       function parseSlug(raw) {
         const slug = String(raw || "").toLowerCase().trim();
         if (!/^[a-z0-9_-]{1,40}$/.test(slug)) return null;
-        const m = slug.match(/-([a-z]+)$/);
-        const source = m && SUFFIX_SOURCE_MAP[m[1]] ? SUFFIX_SOURCE_MAP[m[1]] : "direct";
+        const parts = slug.split(/[-_]/).map((p) => p.replace(/\d+$/, ""));
+        let source = "direct";
+        for (let i = parts.length - 1; i >= 0; i--) {
+          const hit = parts[i] && SUFFIX_SOURCE_MAP[parts[i]];
+          if (hit) { source = hit; break; }
+        }
         return { slug, source };
       }
 
