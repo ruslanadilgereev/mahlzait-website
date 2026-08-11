@@ -49,12 +49,20 @@ const items: FastFoodItem[] = [];
 // eine Duerum-Variante). Gleiche Gericht-Namen innerhalb einer Gruppe deshalb
 // nur einmal aufnehmen.
 const seen = new Set<string>();
+// Manche Food-Seiten fuehren zusaetzlich einen Referenzwert je 100 g. Das ist
+// keine Portion und gehoert nicht in eine Tabelle, die Portionen vergleicht,
+// sonst steht "Pro 100g" als kalorienaermstes Gericht ganz oben. Bewusst nur
+// auf "pro 100" pruefen: "Hamburger (100g)" und "Falafel pur (5 Stueck, 100g)"
+// sind echte Portionen und muessen bleiben.
+const isReferenceRow = (name: string) => /pro\s*100/i.test(name);
+
 for (const mod of Object.values(foodFiles)) {
   const food = ((mod as { default?: RawFood }).default ?? mod) as RawFood;
   const brand = CHAINS[food.slug];
   if (!brand) continue;
   for (const v of food.variants ?? []) {
     if (typeof v.calories !== "number") continue;
+    if (isReferenceRow(v.name)) continue;
     const key = `${brand}|${v.name.toLowerCase()}`;
     if (seen.has(key)) continue;
     seen.add(key);
