@@ -72,14 +72,17 @@ function FastfoodKalorienPage({ config, items }: Props) {
         <section className="max-w-screen-lg mx-auto px-4 py-8 md:py-14">
           <header>
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
-              Fast Food Kalorien: was in dein Budget passt
+              Fast Food Kalorien: Döner, McDonald's und was sonst in dein Budget
+              passt
             </h1>
             <AuthorByline />
             <p className="mt-4 text-lg opacity-80 max-w-3xl">
-              {items.length} Gerichte von {brands.length} Ketten, sortierbar nach
-              Kalorien und Eiweiß. Statt einer einzelnen Zahl siehst du hier die
-              ganze Karte auf einmal und kannst filtern, was in dein Tagesziel
-              passt. Alle Werte sind Portionsangaben, nicht pro 100 Gramm.
+              {items.length} Gerichte aus {brands.length} Gruppen, sortierbar
+              nach Kalorien und Eiweiß. Beim Döner reicht die Spanne je nach
+              Fleisch, Soße und Größe von gut 400 bis über 1.000 Kalorien, und
+              genau deshalb hilft eine einzelne Zahl hier nicht weiter. Filtere
+              stattdessen nach dem, was in dein Tagesziel passt. Alle Werte
+              gelten je Portion, nicht pro 100 Gramm.
             </p>
           </header>
         </section>

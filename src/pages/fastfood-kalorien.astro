@@ -14,6 +14,18 @@ const CHAINS: Record<string, string> = {
   subway: "Subway",
   kfc: "KFC",
   vapiano: "Vapiano",
+  "nordsee-backfisch-baguette": "Nordsee",
+  // Beim Imbiss zaehlt nicht die Kette, sondern das Gericht. Die acht
+  // Doener-Seiten teilen sich deshalb eine Gruppe, sonst waere die Auswahl
+  // eine Liste aus Einzelseiten statt einer brauchbaren Uebersicht.
+  doener: "Döner & Kebab",
+  "doener-box": "Döner & Kebab",
+  "doener-teller": "Döner & Kebab",
+  "durum-kebab": "Döner & Kebab",
+  lahmacun: "Döner & Kebab",
+  "vegetarischer-doener": "Döner & Kebab",
+  kebab: "Döner & Kebab",
+  "pizza-kebab": "Döner & Kebab",
 };
 
 const foodFiles = import.meta.glob("../data/foods/*.json", { eager: true });
@@ -33,12 +45,19 @@ interface RawFood {
 }
 
 const items: FastFoodItem[] = [];
+// Die Doener-Seiten ueberschneiden sich teilweise (doener.json fuehrt selbst
+// eine Duerum-Variante). Gleiche Gericht-Namen innerhalb einer Gruppe deshalb
+// nur einmal aufnehmen.
+const seen = new Set<string>();
 for (const mod of Object.values(foodFiles)) {
   const food = ((mod as { default?: RawFood }).default ?? mod) as RawFood;
   const brand = CHAINS[food.slug];
   if (!brand) continue;
   for (const v of food.variants ?? []) {
     if (typeof v.calories !== "number") continue;
+    const key = `${brand}|${v.name.toLowerCase()}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
     items.push({
       brand,
       brandSlug: food.slug,
@@ -58,8 +77,8 @@ const lowest = items[0];
 const highest = items[items.length - 1];
 
 const seo = {
-  title: `Fast Food Kalorien: ${items.length} Gerichte im Vergleich | Mahlzait`,
-  description: `Kalorien und Eiweiss von ${brandNames.join(", ")} in einer Tabelle. Nach Kalorienbudget filtern und sehen, was bei deiner Lieblingskette wirklich reinpasst.`,
+  title: `Fast Food Kalorien: Döner, McDonald's, Burger King & Co im Vergleich | Mahlzait`,
+  description: `${items.length} Gerichte von Döner bis McDonald's mit Kalorien und Eiweiss in einer Tabelle. Nach Budget filtern und sehen, was bei deinem Imbiss wirklich reinpasst.`,
 };
 
 const siteUrl = "https://www.mahlzait.de";
