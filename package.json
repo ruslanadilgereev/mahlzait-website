@@ -15,7 +15,8 @@
     "wissen:resolve": "node scripts/wissen/resolve-crossref.cjs",
     "wissen:check": "node scripts/wissen/check-wissen-slugs.cjs",
     "favicon:generate": "node scripts/generate-favicon.cjs",
-    "indexing:submit": "node scripts/submit-indexing.mjs"
+    "indexing:submit": "node scripts/submit-indexing.mjs",
+    "seo:progress": "node scripts/seo-progress.mjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
