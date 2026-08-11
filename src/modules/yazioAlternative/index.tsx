@@ -121,6 +121,25 @@ function YazioAlternativePage({ config, pricing, priceAsOf }: Props) {
         </section>
 
         <section className="max-w-screen-lg mx-auto px-4 pb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
+            Ist Yazio kostenlos?
+          </h2>
+          <p className="opacity-80 max-w-3xl">
+            Ja, in der Grundfunktion. Kalorien und Makros erfassen, das
+            Ernährungstagebuch führen und der Barcode-Scanner sind ohne Abo
+            nutzbar, dafür zeigt die kostenlose Version Werbung. Wer nur wissen
+            will, wie viel er isst, kommt damit dauerhaft aus.
+          </p>
+          <p className="opacity-80 max-w-3xl mt-4">
+            Geld kostet erst Pro. Dahinter liegen im Wesentlichen die Rezeptwelt,
+            der Fastentracker, ausführlichere Auswertungen und die Werbefreiheit.
+            Welche Funktion genau hinter der Bezahlschranke liegt, verschiebt
+            Yazio gelegentlich, verbindlich ist deshalb immer die Angabe in der
+            App selbst.
+          </p>
+        </section>
+
+        <section className="max-w-screen-lg mx-auto px-4 pb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
             Warum Leute nach einer Alternative suchen
           </h2>
