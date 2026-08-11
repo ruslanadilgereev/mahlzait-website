@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import SchritteKalorienRechnerPage from "@modules/schritte";
 
 const seo = {
@@ -134,5 +135,5 @@ const authorPersonSchema = {
   <!-- WebApplication Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
-  <SchritteKalorienRechnerPage client:load config={defaultTemplateConfig} />
+  <SchritteKalorienRechnerPage client:load config={configWithoutLegal} />
 </Layout>

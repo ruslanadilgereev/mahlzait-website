@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import ProteinBedarfRechnerPage from "@modules/protein";
 
 const seo = {
@@ -226,5 +227,5 @@ const authorPersonSchema = {
   <!-- Table Schema for Quick Reference (Featured Snippet Target) -->
   <script type="application/ld+json" set:html={JSON.stringify(schema2)} />
 
-  <ProteinBedarfRechnerPage client:load config={defaultTemplateConfig} />
+  <ProteinBedarfRechnerPage client:load config={configWithoutLegal} />
 </Layout>

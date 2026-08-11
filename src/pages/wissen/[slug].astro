@@ -1,6 +1,7 @@
 ---
 import Layout from "Layout.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import ArticlePage from "@modules/wissen/article";
 import {
   getAllSlugs,
@@ -268,7 +269,7 @@ const faqSchema = article.faqs && article.faqs.length > 0
 
   <ArticlePage
     client:visible
-    config={defaultTemplateConfig}
+    config={configWithoutLegal}
     article={article}
     content={content}
     relatedArticles={relatedArticles}

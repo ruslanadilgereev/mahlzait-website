@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import KalorienIndexPage from "@modules/kalorienIndex";
 
 const foodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
@@ -70,7 +71,7 @@ const itemListSchema = {
   <StructuredData slot="head" data={breadcrumbSchema} />
   <StructuredData slot="head" data={itemListSchema} />
 
-  <KalorienIndexPage client:load config={defaultTemplateConfig} foods={foods} />
+  <KalorienIndexPage client:load config={configWithoutLegal} foods={foods} />
 
   <section class="max-w-screen-lg mx-auto px-4 py-10">
     <h2 class="text-2xl font-bold mb-6 text-center">Lebensmittel-Listen & Tabellen</h2>

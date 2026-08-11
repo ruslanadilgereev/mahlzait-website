@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import WissenPage from "@modules/wissen";
 import { articlesMeta, getAllTags } from "@content/wissen";
 
@@ -42,7 +43,7 @@ const collectionSchema = {
 
   <WissenPage
     client:load
-    config={defaultTemplateConfig}
+    config={configWithoutLegal}
     articles={articlesMeta}
     allTags={allTags}
   />

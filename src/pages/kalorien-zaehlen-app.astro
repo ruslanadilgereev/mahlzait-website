@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import KalorienZaehlenAppPage from "@modules/kalorienzaehlenApp";
 import {
   kalorienZaehlenAppFaq,
@@ -63,7 +64,7 @@ const authorPersonSchema = {
   <!-- HowTo Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
-  <KalorienZaehlenAppPage client:load config={defaultTemplateConfig} />
+  <KalorienZaehlenAppPage client:load config={configWithoutLegal} />
 </Layout>
 
 

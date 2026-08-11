@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import TeamPage from "@modules/team";
 
 const teamSeo = {
@@ -76,7 +77,7 @@ const schema1 = {
   <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
   <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
-  <TeamPage client:load config={defaultTemplateConfig} />
+  <TeamPage client:load config={configWithoutLegal} />
 </Layout>
 
 

@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import KoerperfettRechnerPage from "@modules/koerperfett";
 
 const seo = {
@@ -134,5 +135,5 @@ const authorPersonSchema = {
   <!-- MedicalWebPage Schema for health content -->
   <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
-  <KoerperfettRechnerPage client:load config={defaultTemplateConfig} />
+  <KoerperfettRechnerPage client:load config={configWithoutLegal} />
 </Layout>

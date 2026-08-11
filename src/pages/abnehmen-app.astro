@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import AbnehmenAppPage from "@modules/abnehmenApp";
 import { abnehmenAppFaq, abnehmenAppHowToSteps, abnehmenAppSeo } from "@modules/abnehmenApp/content";
 
@@ -59,7 +60,7 @@ const authorPersonSchema = {
   <!-- HowTo Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
-  <AbnehmenAppPage client:load config={defaultTemplateConfig} />
+  <AbnehmenAppPage client:load config={configWithoutLegal} />
 </Layout>
 
 

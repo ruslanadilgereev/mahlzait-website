@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import IntervallfastenRechnerPage from "@modules/intervallfasten";
 
 const seo = {
@@ -135,5 +136,5 @@ const authorPersonSchema = {
   <!-- WebPage Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(schema0)} />
 
-  <IntervallfastenRechnerPage client:load config={defaultTemplateConfig} />
+  <IntervallfastenRechnerPage client:load config={configWithoutLegal} />
 </Layout>

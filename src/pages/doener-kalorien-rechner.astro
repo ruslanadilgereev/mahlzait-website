@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import DoenerKalorienRechnerPage from "@modules/doener";
 
 const seo = {
@@ -161,5 +162,5 @@ const authorPersonSchema = {
   <!-- NutritionInformation Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
-  <DoenerKalorienRechnerPage client:load config={defaultTemplateConfig} />
+  <DoenerKalorienRechnerPage client:load config={configWithoutLegal} />
 </Layout>

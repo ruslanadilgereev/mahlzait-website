@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import LeistungsumsatzRechnerPage from "@modules/leistungsumsatz";
 
 const seo = {
@@ -100,5 +101,5 @@ const breadcrumbSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <LeistungsumsatzRechnerPage client:load config={defaultTemplateConfig} />
+  <LeistungsumsatzRechnerPage client:load config={configWithoutLegal} />
 </Layout>

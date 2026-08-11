@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
 import VergleichPage from "@modules/vergleich";
 
 const vergleichSeo = {
@@ -175,5 +176,5 @@ const authorPersonSchema = {
     }
   </script>
 
-  <VergleichPage client:load config={defaultTemplateConfig} comparisonData={comparisonData} />
+  <VergleichPage client:load config={configWithoutLegal} comparisonData={comparisonData} />
 </Layout>
