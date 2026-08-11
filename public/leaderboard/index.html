@@ -4059,13 +4059,17 @@
       const b = ttBuckets(d);
       document.getElementById("tt-gran").textContent =
         b.step === 1 ? "pro Tag" : "je 7 Tage zusammengefasst";
-      const hasAny = b.clicks.some(Boolean) || b.trials.some(Boolean);
+      const hasAny = b.clicks.some(Boolean) || b.trials.some(Boolean) || b.active.some(Boolean);
       const chartEl = document.getElementById("tt-chart");
       if (!hasAny) {
         if (ttCharts["tt-chart"]) { ttCharts["tt-chart"].dispose(); delete ttCharts["tt-chart"]; }
         chartEl.innerHTML = `<div class="tt-empty">Keine Klicks und keine Trials in diesem Zeitraum.</div>`;
       } else {
-        chartEl.innerHTML = "";
+        // innerHTML NUR anfassen, wenn hier noch kein Chart lebt (erster Aufbau
+        // oder vorher stand der Leer-Hinweis drin). Andernfalls reisst das
+        // Leeren ECharts sein Canvas weg, waehrend die Instanz weiterlebt —
+        // setOption laeuft dann ins Nichts und die Flaeche bleibt leer.
+        if (!ttCharts["tt-chart"]) chartEl.innerHTML = "";
         ttChart("tt-chart", {
           backgroundColor: "transparent",
           textStyle: { fontFamily: baseFont },
