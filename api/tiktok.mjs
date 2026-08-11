@@ -186,6 +186,31 @@ function series(chart, measureName, segmentName = null) {
 const round2 = (n) => Math.round(n * 100) / 100;
 const num = (v) => (v === null || v === undefined ? null : Number(v));
 
+/**
+ * Umsatz je transaction_type, OHNE die Typen aufzuzaehlen.
+ *
+ * Erst wurde hier fest auf "New" + "Renewal" gerechnet, weil eine Stichprobe
+ * ueber sechs Wochen nur diese beiden zeigte. Ueber einen laengeren Zeitraum
+ * kam "Resubscription" dazu und fiel still unter den Tisch (5,79 $ von
+ * 206,56 $ fehlten). RevenueCat kennt weitere Typen, die hier nur noch nicht
+ * vorgekommen sind. Deshalb: `total` kommt aus RCs eigenem Total-Segment,
+ * alles andere wird dynamisch uebernommen. Ein neuer Typ taucht damit
+ * automatisch auf, statt die Summe unbemerkt zu verkuerzen.
+ */
+function revenueSegments(chart) {
+  const tot = (chart.summary && chart.summary.total) || {};
+  const segments = {};
+  let sum = 0;
+  let total = null;
+  for (const [name, m] of Object.entries(tot)) {
+    const v = round2(Number((m && m.Revenue) || 0));
+    if (name === "Total") { total = v; continue; }
+    sum = round2(sum + v);
+    if (v !== 0) segments[name] = v;
+  }
+  return { total: total === null ? sum : total, segments };
+}
+
 // ---------- Handler ----------
 export default async function handler(req, res) {
   try {
@@ -214,11 +239,15 @@ export default async function handler(req, res) {
     const auth = getGoogleAuth();
     const gToken = (await (await auth.getClient()).getAccessToken()).token;
 
-    // Alles parallel — sechs unabhängige Abfragen, keine hängt an einer anderen.
-    const [clicksRaw, cCustomers, cTrials, cRevenue, cConv, cLtv] = await Promise.all([
+    // Alles parallel — sieben unabhängige Abfragen, keine hängt an einer anderen.
+    const [clicksRaw, cCustomers, cTrials, cActive, cRevenue, cConv, cLtv] = await Promise.all([
       fetchClicks(gToken, source),
       rcChart("customers_new", { ...rcParams, resolution: "day" }),
       rcChart("trials_new", { ...rcParams, resolution: "day" }),
+      // BESTAND, kein Fluss: wie viele Trials an jedem Tag laufen. Das ist die
+      // Zahl aus RevenueCats „Active Trials"-Chart. Sie darf nie über Tage
+      // aufsummiert werden — es zählt der Stand am Ende einer Periode.
+      rcChart("trials", { ...rcParams, resolution: "day" }),
       // transaction_type trennt Neugeschäft von Verlängerungen. Nur so ist der
       // Umsatz mit den Trials desselben Zeitraums vergleichbar.
       rcChart("revenue", { ...rcParams, resolution: "day", segment: "transaction_type" }),
@@ -259,8 +288,18 @@ export default async function handler(req, res) {
     // ---------- RevenueCat aufbereiten ----------
     const customers = series(cCustomers, "New Customers");
     const trials = series(cTrials, "New Trials");
-    const revNew = series(cRevenue, "Revenue", "New");
-    const revRenew = series(cRevenue, "Revenue", "Renewal");
+
+    // Laufende Trials. `series` liefert hier die richtige Tagesreihe, aber sein
+    // `total` ist für einen Bestand bedeutungslos (Summe über alle Tage).
+    // Sinn ergeben nur der letzte Stand und der Durchschnitt.
+    const activeByDay = series(cActive, "Active Trials").by_day;
+    const activeDays = Object.keys(activeByDay).sort();
+    const activeNow = activeDays.length ? activeByDay[activeDays[activeDays.length - 1]] : 0;
+    const activeAvg = activeDays.length
+      ? round2(activeDays.reduce((s, d) => s + activeByDay[d], 0) / activeDays.length)
+      : 0;
+    const rev = revenueSegments(cRevenue);
+    const revNew = rev.segments.New || 0;
     const txNew = series(cRevenue, "Transactions", "New");
 
     const convTot = (cConv.summary && cConv.summary.total) || {};
@@ -315,12 +354,16 @@ export default async function handler(req, res) {
       rc: {
         customers_new: customers,
         trials_new: trials,
+        trials_active: { by_day: activeByDay, now: activeNow, average: activeAvg },
         revenue: {
-          new: revNew.total,
-          renewal: revRenew.total,
-          total: round2(revNew.total + revRenew.total),
+          new: revNew,
+          // Alles, was kein Erstkauf ist — Verlängerungen, Reaktivierungen und
+          // was RevenueCat sonst noch als Transaktionsart führt.
+          recurring: round2(rev.total - revNew),
+          total: rev.total,
+          // Vollständige Aufschlüsselung, damit im Frontend kein Typ verloren geht.
+          by_segment: rev.segments,
           transactions_new: txNew.total,
-          by_day: revNew.by_day,
           currency: "USD",
         },
         conversion: {

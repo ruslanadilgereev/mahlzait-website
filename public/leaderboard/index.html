@@ -617,6 +617,11 @@
     .tt-arrow .a-rate { color: var(--text); font-weight: 700; }
     .tt-arrow.soft .a-rate { color: var(--text-muted); font-weight: 600; }
     .tt-arrow .a-note { color: var(--text-faint); }
+    /* Sieben Kacheln statt sechs: bei minmax(150px) passt die siebte nicht mehr
+       in die Reihe (7x150 + 6x12 Abstand = 1122 > 1080 Inhaltsbreite) und faellt
+       allein in eine zweite Zeile. Nur fuer diesen Tab enger, damit die anderen
+       Tabs unveraendert bleiben. */
+    #view-tiktok .cu-kpis { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
     .tt-chart { width: 100%; height: 300px; }
     .tt-empty { padding: 44px 0; text-align: center; color: var(--text-faint); font-size: 13.5px; }
     /* Fuenf Spalten passen auf dem Handy nicht nebeneinander. Ohne die
@@ -1201,8 +1206,10 @@
             <span class="bu-sub" id="tt-gran">pro Tag</span>
           </div>
           <div class="bu-cap">
-            Balken sind Link-Klicks, die Linie sind gestartete Trials, beide auf derselben
-            Achse. Dass die Linie tief liegt, ist keine Darstellung, sondern das Ergebnis.
+            Alles auf derselben Achse. <b>Neue Trials</b> sind im Zeitraum gestartete Trials,
+            <b>laufende Trials</b> ist der Bestand an dem Tag — dieselbe Kennzahl wie
+            RevenueCats „Active Trials". Die gestrichelte Treppe wird beim Zusammenfassen
+            nicht addiert, sie zeigt den Stand am Ende jedes Blocks.
           </div>
           <div id="tt-chart" class="tt-chart"></div>
         </div>
@@ -1233,11 +1240,17 @@
           <b>Nicht kohortiert:</b> die RevenueCat-Zahlen sind auf das Ereignisdatum gebucht
           (Trials auf das Trial-Start-Datum), nicht auf den Erstkontakt — ein Trial im August
           kann von einem Kunden aus Juni stammen. ·
+          <b>Fluss gegen Bestand:</b> „Trials gestartet" zählt Starts im Zeitraum
+          (RevenueCats <i>New Trials</i>), „Trials aktiv" ist der heutige Bestand
+          (RevenueCats <i>Active Trials</i>). Beide Zahlen sind richtig und beantworten
+          verschiedene Fragen; sie lassen sich nicht ineinander umrechnen. ·
           <b>Trial → Bezahlt</b> steht als „von allen“ und „von den entschiedenen“: laufende
           Trials stehen bei der ersten Zahl im Nenner und drücken sie, bei der zweiten sind
           sie draußen. Bei diesen kleinen Fallzahlen ist die zweite Zahl sehr wackelig. ·
-          Umsatz ist RevenueCat-<b>Neugeschäft</b> in USD, Verlängerungen stehen getrennt
-          daneben. · „Geräte“ zählt verschiedene <code>ipHash</code>-Werte, das ist eine
+          Die große Umsatzzahl ist RevenueCat-<b>Neugeschäft</b> in USD; alles andere, was
+          RevenueCat als Transaktionsart führt (Verlängerung, Reaktivierung, …), steht
+          einzeln in der Zeile darunter, damit nichts unter den Tisch fällt. ·
+          „Geräte“ zählt verschiedene <code>ipHash</code>-Werte, das ist eine
           grobe Untergrenze für die Zahl der Personen, keine exakte.
         </div>
       </div>
@@ -3844,6 +3857,20 @@
       "$" + Number(v).toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }));
     const ttDay = (s) => s.slice(8, 10) + "." + s.slice(5, 7) + ".";
 
+    // RevenueCats transaction_type auf Deutsch. Ein hier NICHT gelistetes
+    // Segment wird mit seinem RC-Namen angezeigt statt weggelassen — sonst
+    // fehlt still Umsatz, sobald RevenueCat einen neuen Typ liefert.
+    const TT_TX = { New: "Neukauf", Renewal: "Verlängerung", Resubscription: "Reaktivierung" };
+
+    /** Unterzeile der Umsatz-Kachel: alles außer dem Erstkauf, einzeln benannt. */
+    function ttRevenueSub(rev) {
+      const rest = Object.entries(rev.by_segment || {})
+        .filter(([k, v]) => k !== "New" && Math.abs(v) >= 0.005)
+        .sort((a, b) => b[1] - a[1]);
+      if (!rest.length) return "kein weiterer Umsatz";
+      return "+ " + rest.map(([k, v]) => `${ttUsd(v)} ${TT_TX[k] || k}`).join(" · ");
+    }
+
     function ttSetDays(n) {
       if (ttDays === n && !ttCustom && ttData) return;
       ttCustom = null;
@@ -3917,7 +3944,9 @@
       const end = Date.parse(d.range.end + "T00:00:00.000Z");
       const clicks = d.clicks.by_day || {};
       const trials = (d.rc.trials_new && d.rc.trials_new.by_day) || {};
-      const out = { labels: [], clicks: [], trials: [], step, spans: [] };
+      const active = (d.rc.trials_active && d.rc.trials_active.by_day) || {};
+      const out = { labels: [], clicks: [], trials: [], active: [], step, spans: [] };
+      let carry = 0; // letzter bekannter Bestand, falls ein Tag fehlt
       for (let t = start; t <= end; t += step * 86400000) {
         let c = 0, tr = 0;
         const from = new Date(t).toISOString().slice(0, 10);
@@ -3927,12 +3956,16 @@
           if (Date.parse(day + "T00:00:00.000Z") > end) break;
           c += clicks[day] || 0;
           tr += trials[day] || 0;
+          // Klicks und Starts werden aufaddiert, laufende Trials NICHT: das ist
+          // ein Bestand. Gilt der Stand am letzten Tag des Blocks.
+          if (day in active) carry = active[day];
           to = day;
         }
         out.labels.push(from);
         out.spans.push(step === 1 ? ttDay(from) : `${ttDay(from)}–${ttDay(to)}`);
         out.clicks.push(c);
         out.trials.push(tr);
+        out.active.push(carry);
       }
       return out;
     }
@@ -3942,7 +3975,7 @@
       const d = ttData;
       const surface = buTok("--surface"), border = buTok("--border"), ink = buTok("--text");
       const muted = buTok("--text-muted"), faint = buTok("--text-faint");
-      const teal = buTok("--primary"), grey = buTok("--border-strong");
+      const teal = buTok("--primary"), grey = buTok("--border-strong"), blue = buTok("--blue");
       const baseFont = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
 
       const activeBtn = ttCustom ? "tt-r-c" : { 30: "tt-r-30", 90: "tt-r-90", 365: "tt-r-365" }[ttDays];
@@ -3967,13 +4000,14 @@
       const kpis = [
         { k: "Link-Klicks", v: ttInt(d.clicks.total), s: `${ttInt(d.clicks.devices)} verschiedene Geräte` },
         { k: "Neue Kunden", v: ttInt(d.rc.customers_new.total), s: "sagen selbst „" + d.source + "“" },
-        { k: "Trials gestartet", v: ttInt(d.rc.trials_new.total),
+        { k: "Neue Trials", v: ttInt(d.rc.trials_new.total),
           s: d.rc.customers_new.total ? ttPct(d.rc.trials_new.total / d.rc.customers_new.total) + " der Kunden" : "–" },
+        { k: "Trials aktiv", v: ttInt(d.rc.trials_active.now),
+          s: `laufen gerade · Schnitt ${ttInt(d.rc.trials_active.average)} im Zeitraum` },
         { k: "Trial → Bezahlt", v: ttPct(conv.rate_of_all),
           s: `${ttInt(conv.conversions)} von ${ttInt(conv.trial_starts)}` +
              (conv.pending ? ` · ${ttInt(conv.pending)} laufen noch` : "") },
-        { k: "Umsatz (neu)", v: ttUsd(d.rc.revenue.new),
-          s: d.rc.revenue.renewal ? `+ ${ttUsd(d.rc.revenue.renewal)} Verlängerungen` : "ohne Verlängerungen" },
+        { k: "Umsatz (neu)", v: ttUsd(d.rc.revenue.new), s: ttRevenueSub(d.rc.revenue) },
         { k: "LTV je Kunde", v: ttUsd(d.rc.ltv.per_customer), s: "realisiert nach 30 Tagen" },
       ];
       document.getElementById("tt-kpis").innerHTML = kpis.map(x =>
@@ -4037,7 +4071,7 @@
           textStyle: { fontFamily: baseFont },
           grid: { left: 4, right: 4, top: 30, bottom: 4, containLabel: true },
           legend: {
-            data: ["Link-Klicks", "Trial-Starts"],
+            data: ["Link-Klicks", "Neue Trials", "Laufende Trials"],
             top: 0, itemGap: 18, icon: "roundRect", itemWidth: 11, itemHeight: 11,
             textStyle: { color: muted, fontSize: 12 },
           },
@@ -4066,9 +4100,15 @@
           series: [
             { name: "Link-Klicks", type: "bar", data: b.clicks,
               barMaxWidth: 26, itemStyle: { color: grey, borderRadius: [4, 4, 0, 0] } },
-            { name: "Trial-Starts", type: "line", data: b.trials,
+            { name: "Neue Trials", type: "line", data: b.trials,
               symbol: "circle", symbolSize: 6, showSymbol: b.labels.length <= 60,
               lineStyle: { color: teal, width: 2.5 }, itemStyle: { color: teal }, z: 3 },
+            // Bestand, deshalb als Treppe gezeichnet: der Wert gilt bis zur
+            // nächsten Änderung, eine schräge Verbindung würde Zwischenwerte
+            // suggerieren, die es nicht gibt.
+            { name: "Laufende Trials", type: "line", step: "end", data: b.active,
+              symbol: "none", lineStyle: { color: blue, width: 2, type: "dashed" },
+              itemStyle: { color: blue }, z: 2 },
           ],
         });
         ttResize();
