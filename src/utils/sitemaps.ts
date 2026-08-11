@@ -81,6 +81,7 @@ const calculatorSlugs = [
   "schritte-kalorien-rechner",
   "taille-hueft-verhaeltnis-rechner",
   "wasserbedarf-rechner",
+  "yazio-alternative",
   "essensplan-erstellen",
   "trainingsplan-erstellen",
 ];
