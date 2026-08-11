@@ -163,6 +163,48 @@ function VergleichPage({ config, comparisonData }: Props) {
           </div>
         </section>
 
+        {/* Vertiefende Einzelvergleiche */}
+        <section className="py-12">
+          <div className="max-w-screen-lg mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-3">
+              Du kommst von einer bestimmten App?
+            </h2>
+            <p className="opacity-80 mb-6 max-w-2xl">
+              Für die beiden häufigsten Wechsel gibt es je eine eigene Seite,
+              inklusive Kündigung und ehrlicher Einordnung, wofür der bisherige
+              Anbieter die bessere Wahl bleibt.
+            </p>
+            <div className="grid gap-4 md:grid-cols-2">
+              <a
+                href="/yazio-alternative/"
+                className="card bg-base-200 hover:bg-base-300 transition-colors"
+              >
+                <div className="card-body">
+                  <h3 className="card-title text-lg">Von Yazio wechseln</h3>
+                  <p className="opacity-80">
+                    Was Yazio Pro kostet, wie du dein Abo kündigst und wo die
+                    Unterschiede wirklich liegen.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="/weight-watchers-alternative/"
+                className="card bg-base-200 hover:bg-base-300 transition-colors"
+              >
+                <div className="card-body">
+                  <h3 className="card-title text-lg">
+                    Von WeightWatchers wechseln
+                  </h3>
+                  <p className="opacity-80">
+                    Punkte in Kalorien übersetzen, sauber kündigen und
+                    weitermachen, ohne von vorn anzufangen.
+                  </p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+
         {/* Why Mahlzait */}
         <section className="py-16">
           <div className="max-w-screen-lg mx-auto px-4">

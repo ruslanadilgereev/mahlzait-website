@@ -144,6 +144,13 @@ export const calculators: CalculatorEntry[] = [
     tags: ["Döner", "Fast-Food", "Kalorien"],
   },
   {
+    slug: "fastfood-kalorien",
+    title: "Fast-Food-Vergleich",
+    description:
+      "Döner, McDonald's, Burger King & Co nebeneinander, filterbar nach Kalorienbudget.",
+    tags: ["Fast-Food", "Kalorien", "Döner", "Auswärts essen"],
+  },
+  {
     slug: "pizza-kalorien-rechner",
     title: "Pizza-Kalorien-Rechner",
     description: "Pizza-Kalorien nach Sorte, Größe, Teig und Belag.",
@@ -272,6 +279,18 @@ export function getCalculatorsForFood(food: {
         matches.push(c);
         seen.add(c.slug);
       }
+    }
+  }
+
+  // Der Fast-Food-Vergleich passt zu jedem Gericht, das man auswaerts kauft.
+  // Die Zuordnung laeuft ueber die Kategorie statt ueber Namensmuster, weil sie
+  // in den Food-Daten ohnehin gepflegt ist und so auch Gerichte trifft, deren
+  // Name die Kette nicht nennt.
+  if (food.category === "fast-food") {
+    const ff = calculatorBySlug["fastfood-kalorien"];
+    if (ff && !seen.has(ff.slug)) {
+      matches.push(ff);
+      seen.add(ff.slug);
     }
   }
 

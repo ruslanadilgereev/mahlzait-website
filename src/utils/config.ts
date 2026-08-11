@@ -54,6 +54,7 @@ const templateConfig: TemplateConfig = {
       { href: "/leistungsumsatz-rechner", title: "Leistungsumsatz berechnen" },
       { href: "/essensplan-erstellen", title: "Essensplan erstellen" },
       { href: "/trainingsplan-erstellen", title: "Trainingsplan erstellen" },
+      { href: "/fastfood-kalorien", title: "Fast-Food-Vergleich" },
       {
         href: "https://www.deutschland-rechner.de/?ref=mahlzait",
         title: "Deutschland-Rechner ↗",
