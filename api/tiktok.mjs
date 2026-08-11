@@ -93,23 +93,57 @@ function getGoogleAuth() {
   return cachedAuth;
 }
 
+// Plattform-Kürzel → Quelle. Muss zu SUFFIX_SOURCE_MAP in src/data/go-links.ts
+// passen; api/*.mjs sind eigenständige Vercel-Functions und können das
+// TS-Modul nicht importieren.
+const TOKEN_SOURCE = {
+  ig: "instagram", insta: "instagram",
+  tt: "tiktok", tiktok: "tiktok",
+  yt: "youtube", youtube: "youtube",
+  fb: "facebook", facebook: "facebook",
+  x: "twitter", twitter: "twitter",
+  rd: "reddit", reddit: "reddit",
+  sms: "sms",
+  wa: "whatsapp", whatsapp: "whatsapp",
+  email: "email", mail: "email",
+};
+
 /**
- * Alle Klicks einer Quelle holen.
+ * Quelle aus dem SLUG ableiten, statt dem gespeicherten `source`-Feld zu
+ * glauben.
  *
- * BEWUSST nur Gleichheit auf `source`, ohne Zeitfilter und ohne orderBy: die
- * Kombination aus Gleichheit und ts-Range bräuchte einen Composite Index, den
- * es in diesem Projekt nicht gibt. Die Menge ist klein genug (Größenordnung
- * hundert Dokumente), also wird der Zeitraum in JS geschnitten. Wenn die
- * Sammlung irgendwann fünfstellig wird, gehört hier ein Index her.
+ * Der Grund: `source` wird einmalig beim Klick berechnet und eingefroren. Bis
+ * zum 11.08.2026 lief dabei eine Regel, die nur das letzte Slug-Segment ohne
+ * Ziffern ansah — `tt-ad` (Kürzel vorne) und `bio-ig1` (Ziffer am Ende) sind
+ * dadurch als "direct" in der Sammlung gelandet. Der Slug selbst ist aber in
+ * jedem Dokument korrekt. Beim Lesen abzuleiten repariert die Historie
+ * rückwirkend und ohne ein einziges Dokument anzufassen.
+ *
+ * Von hinten nach vorne, damit die Konvention `<name>-<platform>` gewinnt.
  */
-async function fetchClicks(token, source) {
+function sourceOfSlug(slug) {
+  const parts = String(slug || "").toLowerCase().split(/[-_]/).map((p) => p.replace(/\d+$/, ""));
+  for (let i = parts.length - 1; i >= 0; i--) {
+    if (parts[i] && TOKEN_SOURCE[parts[i]]) return TOKEN_SOURCE[parts[i]];
+  }
+  return "direct";
+}
+
+/**
+ * ALLE Klicks holen; gefiltert wird anschließend über den Slug.
+ *
+ * Ohne `where` und ohne `orderBy`, damit kein Composite Index nötig ist. Die
+ * Sammlung liegt bei rund 1.500 Dokumenten und wächst langsam, die Antwort
+ * hängt 10 Minuten im Cache. Wird sie fünfstellig, gehört hier ein Zeitfilter
+ * mit passendem Index her.
+ */
+async function fetchClicks(token) {
   const r = await fetch(FS_URL, {
     method: "POST",
     headers: { Authorization: `Bearer ${token}`, "Content-Type": "application/json" },
     body: JSON.stringify({
       structuredQuery: {
         from: [{ collectionId: COLLECTION }],
-        where: { fieldFilter: { field: { fieldPath: "source" }, op: "EQUAL", value: { stringValue: source } } },
         // Nur was gebraucht wird — kein User-Agent, kein Referrer, keine PII.
         select: { fields: [{ fieldPath: "ts" }, { fieldPath: "slug" }, { fieldPath: "ipHash" }] },
         limit: 20000,
@@ -122,9 +156,11 @@ async function fetchClicks(token, source) {
   for (const row of rows) {
     const f = row.document && row.document.fields;
     if (!f || !f.ts) continue;
+    const slug = (f.slug && f.slug.stringValue) || "(ohne Slug)";
     out.push({
       ts: f.ts.timestampValue,
-      slug: (f.slug && f.slug.stringValue) || "(ohne Slug)",
+      slug,
+      source: sourceOfSlug(slug),
       ipHash: (f.ipHash && f.ipHash.stringValue) || "",
     });
   }
@@ -241,7 +277,7 @@ export default async function handler(req, res) {
 
     // Alles parallel — sieben unabhängige Abfragen, keine hängt an einer anderen.
     const [clicksRaw, cCustomers, cTrials, cActive, cRevenue, cConv, cLtv] = await Promise.all([
-      fetchClicks(gToken, source),
+      fetchClicks(gToken),
       rcChart("customers_new", { ...rcParams, resolution: "day" }),
       rcChart("trials_new", { ...rcParams, resolution: "day" }),
       // BESTAND, kein Fluss: wie viele Trials an jedem Tag laufen. Das ist die
@@ -257,7 +293,8 @@ export default async function handler(req, res) {
     ]);
 
     // ---------- Klicks aufbereiten ----------
-    const inRange = clicksRaw.filter((c) => {
+    const mine = clicksRaw.filter((c) => c.source === source);
+    const inRange = mine.filter((c) => {
       const t = Date.parse(c.ts);
       return t >= startMs && t <= endMs;
     });
@@ -281,8 +318,8 @@ export default async function handler(req, res) {
     // Erster jemals getrackte Klick dieser Quelle — sagt, ab wann die Reihe
     // überhaupt Daten haben KANN. Ohne das liest man einen leeren Anfang als
     // "lief schlecht" statt als "wurde noch nicht getrackt".
-    const trackingSince = clicksRaw.length
-      ? clicksRaw.reduce((a, c) => (c.ts < a ? c.ts : a), clicksRaw[0].ts).slice(0, 10)
+    const trackingSince = mine.length
+      ? mine.reduce((a, c) => (c.ts < a ? c.ts : a), mine[0].ts).slice(0, 10)
       : null;
 
     // ---------- RevenueCat aufbereiten ----------
@@ -347,7 +384,7 @@ export default async function handler(req, res) {
       clicks: {
         total: inRange.length,
         devices: uniq.size,
-        total_all_time: clicksRaw.length,
+        total_all_time: mine.length,
         by_day: clicksByDay,
         by_slug: bySlug,
       },
