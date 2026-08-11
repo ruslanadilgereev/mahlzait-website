@@ -57,7 +57,12 @@ function FastfoodKalorienPage({ config, items }: Props) {
     return sorted;
   }, [items, brand, budget, sort]);
 
-  const best = rows[0];
+  // Bewusst nicht rows[0]: Der Hinweis nennt immer den kalorienaermsten
+  // Treffer, unabhaengig davon, wonach die Tabelle gerade sortiert ist.
+  const lightest = useMemo(
+    () => rows.reduce((min, r) => (min === null || r.calories < min.calories ? r : min), null as (typeof rows)[number] | null),
+    [rows],
+  );
 
   return (
     <ConfigContext.Provider value={config}>
@@ -140,12 +145,12 @@ function FastfoodKalorienPage({ config, items }: Props) {
 
           <p className="mt-4 opacity-80" aria-live="polite">
             {rows.length} von {items.length} Gerichten
-            {best ? (
+            {lightest ? (
               <>
                 {" "}
-                &middot; sparsamste Wahl gerade:{" "}
+                &middot; am wenigsten Kalorien hat davon{" "}
                 <strong>
-                  {best.name} ({best.calories} kcal)
+                  {lightest.name} ({lightest.calories} kcal)
                 </strong>
               </>
             ) : (
