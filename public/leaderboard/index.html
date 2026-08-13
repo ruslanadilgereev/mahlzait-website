@@ -1172,6 +1172,7 @@
       <div id="view-tiktok" class="hidden">
         <div class="bu-toolbar">
           <span class="bu-label">Zeitraum</span>
+          <button class="secondary" id="tt-r-m" onclick="ttSetMonth()">Dieser Monat</button>
           <button class="secondary" id="tt-r-30" onclick="ttSetDays(30)">30 Tage</button>
           <button class="secondary" id="tt-r-90" onclick="ttSetDays(90)">90 Tage</button>
           <button class="secondary" id="tt-r-365" onclick="ttSetDays(365)">1 Jahr</button>
@@ -3844,9 +3845,22 @@
     // Trichterschritt ist deshalb bewusst als unsicher markiert. Begründung
     // steht ausführlich im Kopf von api/tiktok.mjs und in der Fußnote.
     // ============================================================
+    /**
+     * 1. des laufenden Monats bis heute — der Standardzeitraum. Lokale Zeit,
+     * nicht UTC: gemeint ist der Kalendermonat, in dem der Betrachter sitzt.
+     */
+    function ttMonthRange() {
+      const now = new Date();
+      const p = (n) => String(n).padStart(2, "0");
+      const ym = `${now.getFullYear()}-${p(now.getMonth() + 1)}-`;
+      return { from: ym + "01", to: ym + p(now.getDate()), month: true };
+    }
+
     let ttData = null;
     let ttDays = 90;
-    let ttCustom = null;   // {from, to} wenn eigener Zeitraum gewählt
+    // {from, to} wenn eigener Zeitraum gewählt; `month: true` markiert das
+    // Preset, damit der Knopf „Dieser Monat“ statt „Übernehmen“ leuchtet.
+    let ttCustom = ttMonthRange();
     let ttBusy = false;
     const ttCharts = {};
 
@@ -3875,6 +3889,11 @@
       if (ttDays === n && !ttCustom && ttData) return;
       ttCustom = null;
       ttDays = n;
+      ttLoad();
+    }
+
+    function ttSetMonth() {
+      ttCustom = ttMonthRange();
       ttLoad();
     }
 
@@ -3978,8 +3997,10 @@
       const teal = buTok("--primary"), grey = buTok("--border-strong"), blue = buTok("--blue");
       const baseFont = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
 
-      const activeBtn = ttCustom ? "tt-r-c" : { 30: "tt-r-30", 90: "tt-r-90", 365: "tt-r-365" }[ttDays];
-      ["tt-r-30", "tt-r-90", "tt-r-365", "tt-r-c"].forEach(id => {
+      const activeBtn = ttCustom
+        ? (ttCustom.month ? "tt-r-m" : "tt-r-c")
+        : { 30: "tt-r-30", 90: "tt-r-90", 365: "tt-r-365" }[ttDays];
+      ["tt-r-m", "tt-r-30", "tt-r-90", "tt-r-365", "tt-r-c"].forEach(id => {
         document.getElementById(id).className = id === activeBtn ? "primary" : "secondary";
       });
       // Auf den TATSÄCHLICH benutzten Zeitraum setzen, auch wenn der Server ihn
