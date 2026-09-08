@@ -38,7 +38,7 @@ const RC_BASE = "https://api.revenuecat.com/v2";
 const RC_PAGE_LIMIT = 500;
 const ENRICH_CONCURRENCY = 12;
 
-const GADS_API_VERSION = "v21";
+const GADS_API_VERSION = "v23"; // v18–v21 von Google abgeschaltet (Stand 2026-09-09); v22 laeuft ebenfalls noch
 const GADS_TOKEN_URL = "https://oauth2.googleapis.com/token";
 const GADS_BASE = `https://googleads.googleapis.com/${GADS_API_VERSION}`;
 
@@ -132,17 +132,21 @@ function requireCustomerId(name) {
 }
 
 // ---------- Google Ads auth: refresh_token → OAuth access_token ----------
-let cachedGadsToken = null;
-let cachedGadsTokenExp = 0;
+// Der Cache haengt AM REFRESH-TOKEN, nicht an einer einzelnen Variablen: seit
+// die Kampagnen auf einem zweiten Konto mit eigenem Token laufen, wuerde ein
+// gemeinsamer Cache dem zweiten Konto den Zugriffstoken des ersten unterschieben.
+const gadsTokenCache = new Map(); // refresh_token -> { access_token, exp }
 
-async function getGadsAccessToken() {
+async function getGadsAccessToken(refreshToken) {
+  const rt = refreshToken || requireEnv("GOOGLE_ADS_REFRESH_TOKEN");
   const now = Math.floor(Date.now() / 1000);
-  if (cachedGadsToken && cachedGadsTokenExp - now > 60) return cachedGadsToken;
+  const hit = gadsTokenCache.get(rt);
+  if (hit && hit.exp - now > 60) return hit.access_token;
 
   const body = new URLSearchParams({
     client_id: requireEnv("GOOGLE_ADS_CLIENT_ID"),
     client_secret: requireEnv("GOOGLE_ADS_CLIENT_SECRET"),
-    refresh_token: requireEnv("GOOGLE_ADS_REFRESH_TOKEN"),
+    refresh_token: rt,
     grant_type: "refresh_token",
   });
   const r = await fetch(GADS_TOKEN_URL, {
@@ -155,23 +159,30 @@ async function getGadsAccessToken() {
     throw new Error(`Google Ads token exchange failed: ${r.status} ${t.slice(0, 300)}`);
   }
   const j = await r.json();
-  cachedGadsToken = j.access_token;
-  cachedGadsTokenExp = now + (j.expires_in || 3600);
-  return cachedGadsToken;
+  gadsTokenCache.set(rt, { access_token: j.access_token, exp: now + (j.expires_in || 3600) });
+  return j.access_token;
 }
 
 // GAQL via the REST searchStream endpoint. The response is an ARRAY of batches,
 // each `{ results: [...] }`. Metric/field names come back camelCased.
-async function gaqlSearch(query) {
-  const token = await getGadsAccessToken();
-  const cid = requireCustomerId("GOOGLE_ADS_CUSTOMER_ID");
+// `account` ist optional. Ohne Angabe gelten die Standard-Umgebungsvariablen,
+// das ist das bisherige Verhalten und was dieser Tab selbst benutzt.
+// Mit Angabe ({ refreshToken, customerId, loginCustomerId }) laesst sich ein
+// zweites Werbekonto mit eigenem Login abfragen.
+async function gaqlSearch(query, account) {
+  const token = await getGadsAccessToken(account?.refreshToken);
+  const digits = (v) => String(v).replace(/[^0-9]/g, "");
+  const cid = account?.customerId ? digits(account.customerId) : requireCustomerId("GOOGLE_ADS_CUSTOMER_ID");
+  const login = account?.loginCustomerId ? digits(account.loginCustomerId)
+    : account?.customerId ? digits(account.customerId)
+    : requireCustomerId("GOOGLE_ADS_LOGIN_CUSTOMER_ID");
   const url = `${GADS_BASE}/customers/${cid}/googleAds:searchStream`;
   const r = await fetch(url, {
     method: "POST",
     headers: {
       Authorization: `Bearer ${token}`,
       "developer-token": requireEnv("GOOGLE_ADS_DEVELOPER_TOKEN"),
-      "login-customer-id": requireCustomerId("GOOGLE_ADS_LOGIN_CUSTOMER_ID"),
+      "login-customer-id": login,
       "Content-Type": "application/json",
     },
     body: JSON.stringify({ query }),
@@ -194,7 +205,7 @@ function ymd(d) {
 
 // One GAQL query returns both campaign meta AND daily spend. We split it into
 // campaign-meta (id/name/status/type) + per-campaign daily buckets.
-async function fetchGoogleCampaignsWithSpend(startYmd, endYmd) {
+export async function fetchGoogleCampaignsWithSpend(startYmd, endYmd, account) {
   const rows = await gaqlSearch(`
     SELECT
       campaign.id,
@@ -208,7 +219,7 @@ async function fetchGoogleCampaignsWithSpend(startYmd, endYmd) {
     FROM campaign
     WHERE segments.date BETWEEN '${startYmd}' AND '${endYmd}'
     ORDER BY campaign.id
-  `);
+  `, account);
 
   const byId = new Map();
   for (const row of rows) {
@@ -239,7 +250,7 @@ async function fetchGoogleCampaignsWithSpend(startYmd, endYmd) {
   const metaRows = await gaqlSearch(`
     SELECT campaign.id, campaign.name, campaign.status, campaign.advertising_channel_type
     FROM campaign
-  `);
+  `, account);
   for (const row of metaRows) {
     const c = row.campaign || {};
     const id = String(c.id);

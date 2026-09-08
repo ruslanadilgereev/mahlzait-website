@@ -227,7 +227,7 @@ async function fetchAsaCampaigns() {
   return out;
 }
 
-async function fetchAsaDailySpend(startYmd, endYmd) {
+export async function fetchAsaDailySpend(startYmd, endYmd) {
   // POST /reports/campaigns gets all campaigns with DAILY granularity in one shot.
   // We pull one report covering the full lookback range. Apple returns rows
   // keyed by campaignId, each with a `granularity` array of daily metrics.

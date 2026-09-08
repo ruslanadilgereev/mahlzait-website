@@ -32,6 +32,15 @@
       --shadow-md: 0 4px 16px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
       --radius: 14px;
       --radius-sm: 10px;
+      /* Geld-Tab: jeder Posten hat GENAU eine Farbe, hier definiert, damit
+         Wasserfall und Verlaufsdiagramm nicht auseinanderlaufen. Die
+         AI-Farbe ist die auf Weiss ausgemischte Variante von --red, keine
+         Transparenz: gestapelte Balken wuerden sonst anders aussehen als
+         die deckenden Wasserfall-Balken. */
+      --mo-cut: #F2C4C3;
+      --mo-google: #E25507;
+      --mo-apple: #F6C29B;
+      --mo-ai: #6E7B91;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -635,12 +644,65 @@
     .tt-tablewrap thead th:nth-child(2),
     .tt-tablewrap tbody td:nth-child(2) { display: table-cell; }
 
+    /* ---------- Geld ---------- */
+    /* Wasserfall. Drei feste Spuren: Bezeichnung, Balken, Betrag. Der Betrag
+       steht in einer Spalte fester Breite und rechtsbuendig, damit alle Zahlen
+       auf DERSELBEN Achse stehen — auch die Summenzeilen. Ungleich lange
+       Bezeichnungen duerfen die Zahlenkolumne nicht verschieben. */
+    .mo-wf { display: grid; gap: 7px; }
+    .mo-wf-row { display: grid; grid-template-columns: 190px 1fr 124px; gap: 12px; align-items: center; }
+    .mo-wf-row .mo-l { font-size: 13px; color: var(--text-muted); }
+    .mo-wf-row .mo-amt { font-size: 13.5px; text-align: right; font-variant-numeric: tabular-nums;
+      white-space: nowrap; color: var(--text); }
+    /* Die Spur ist immer voll breit; nur die Fuellung sitzt an ihrer Position.
+       So liest man die Abzuege als Stuecke desselben Ganzen. */
+    .mo-track { height: 16px; background: var(--surface-alt); border: 1px solid var(--border);
+      border-radius: 4px; overflow: hidden; }
+    .mo-fill { height: 100%; border-radius: 3px; }
+    .mo-fill.gross { background: var(--border-strong); }
+    .mo-fill.cut { background: var(--mo-cut); }
+    .mo-fill.c-google { background: var(--mo-google); }
+    .mo-fill.c-apple { background: var(--mo-apple); }
+    .mo-fill.c-ai { background: var(--mo-ai); }
+    .mo-fill.net { background: var(--primary); }
+    .mo-fill.good { background: var(--green); }
+    .mo-fill.bad { background: var(--red); }
+    /* Summenzeile: eine Linie ueber der ganzen Breite, wie unter einer
+       Rechnung. Kein Kasten, keine Farbflaeche. */
+    .mo-wf-row.sum { margin-top: 3px; padding-top: 9px; border-top: 1px solid var(--border-strong); }
+    .mo-wf-row.sum .mo-l { color: var(--text); font-weight: 700; font-size: 13.5px; }
+    .mo-wf-row.sum .mo-amt { font-weight: 800; font-size: 15px; }
+    .mo-wf-row.total { margin-top: 4px; padding-top: 11px; border-top: 2px solid var(--text); }
+    .mo-wf-row.total .mo-l { font-size: 14px; }
+    .mo-wf-row.total .mo-amt { font-size: 19px; letter-spacing: -0.01em; }
+    .mo-pos { color: var(--green); }
+    .mo-neg { color: var(--red); }
+    .mo-chart { width: 100%; height: 300px; }
+    .mo-empty { padding: 44px 0; text-align: center; color: var(--text-faint); font-size: 13.5px; }
+    /* Neun Zahlenspalten passen auf dem Handy nicht; scrollen statt quetschen. */
+    .mo-tablewrap { overflow-x: auto; }
+    .mo-tablewrap table { min-width: 860px; }
+    .mo-tablewrap th, .mo-tablewrap td { white-space: nowrap; padding: 12px 10px; }
+    .mo-tablewrap th:first-child, .mo-tablewrap td:first-child { padding-left: 2px; }
+    .mo-tablewrap th:last-child, .mo-tablewrap td:last-child { padding-right: 2px; }
+    .mo-tablewrap td.num, .mo-tablewrap th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    /* Die globale Handy-Regel blendet in JEDER Tabelle die zweite Spalte aus
+       (fuer die Referral-Tabelle gebaut). Hier waere das der Bruttoumsatz. */
+    .mo-tablewrap thead th:nth-child(2),
+    .mo-tablewrap tbody td:nth-child(2) { display: table-cell; }
+    .mo-warn { font-size: 12.5px; color: #A83D05; margin-bottom: 10px; line-height: 1.5; }
+
     @media (max-width: 720px) {
       .cu-grid { grid-template-columns: 1fr; }
       .cu-bar-row { grid-template-columns: 92px 1fr auto; }
       .tt-row { grid-template-columns: 116px 1fr 58px; gap: 10px; }
       .tt-arrow { grid-template-columns: 116px 1fr; gap: 10px; }
       .tt-chart { height: 250px; }
+      .mo-wf-row { grid-template-columns: 118px 1fr 92px; gap: 9px; }
+      .mo-wf-row .mo-l { font-size: 12px; }
+      .mo-wf-row .mo-amt { font-size: 12.5px; }
+      .mo-wf-row.total .mo-amt { font-size: 16px; }
+      .mo-chart { height: 250px; }
     }
   </style>
 </head>
@@ -683,6 +745,7 @@
         <button class="tab-btn" id="tab-business" onclick="switchTab('business')">Business</button>
         <button class="tab-btn" id="tab-calendar" onclick="switchTab('calendar')">Tagesform</button>
         <button class="tab-btn" id="tab-tiktok" onclick="switchTab('tiktok')">TikTok</button>
+        <button class="tab-btn" id="tab-money" onclick="switchTab('money')">Geld</button>
       </div>
 
       <div id="view-referral">
@@ -1255,6 +1318,113 @@
           grobe Untergrenze für die Zahl der Personen, keine exakte.
         </div>
       </div>
+
+      <div id="view-money" class="hidden">
+        <div class="bu-toolbar">
+          <span class="bu-label">Zeitraum</span>
+          <button class="secondary" id="mo-r-m" onclick="moSetMonth(0)">Dieser Monat</button>
+          <button class="secondary" id="mo-r-lm" onclick="moSetMonth(1)">Letzter Monat</button>
+          <button class="secondary" id="mo-r-30" onclick="moSetDays(30)">30 Tage</button>
+          <button class="secondary" id="mo-r-90" onclick="moSetDays(90)">90 Tage</button>
+          <button class="secondary" id="mo-r-365" onclick="moSetDays(365)">1 Jahr</button>
+          <span style="width:1px;height:22px;background:var(--border);margin:0 4px"></span>
+          <input id="mo-from" type="date" style="width:auto" onchange="moSetCustom()">
+          <span style="color:var(--text-faint);font-size:12px">bis</span>
+          <input id="mo-to" type="date" style="width:auto" onchange="moSetCustom()">
+          <button class="secondary" id="mo-r-c" onclick="moSetCustom()">Übernehmen</button>
+        </div>
+        <div class="bu-toolbar" style="margin-top:-6px">
+          <span id="mo-stand" style="font-size:12px;color:var(--text-faint)">lädt…</span>
+        </div>
+
+        <div class="mo-warn hidden" id="mo-warn"></div>
+
+        <div class="cu-kpis" id="mo-kpis"></div>
+
+        <div class="card" style="padding:18px 20px">
+          <div class="bu-head">
+            <h3>Wo das Geld bleibt</h3>
+            <span class="bu-sub" id="mo-wf-sub"></span>
+          </div>
+          <div class="bu-cap">
+            Von oben nach unten: was der Kunde zahlt, was davon abgeht, was übrig bleibt.
+            Jeder Balken ist das Stück, das die Zeile aus dem Bruttoumsatz herausschneidet —
+            die Breite der Spur ist immer der volle Bruttoumsatz.
+          </div>
+          <div class="mo-wf" id="mo-wf"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px;padding:18px 20px">
+          <div class="bu-head">
+            <h3>Verlauf</h3>
+            <span class="bu-sub" id="mo-gran">pro Tag</span>
+          </div>
+          <div class="bu-cap">
+            Der Nettoerlös steht nach oben, die drei Kostenblöcke nach unten — auf
+            derselben Achse, damit die Höhen vergleichbar sind. Die Linie ist das
+            Ergebnis: was am jeweiligen Tag übrig geblieben ist.
+          </div>
+          <div id="mo-chart" class="mo-chart"></div>
+        </div>
+
+        <div class="card" style="margin-top:16px;padding:18px 20px">
+          <div class="bu-head">
+            <h3>Monat für Monat</h3>
+            <span class="bu-sub" id="mo-months-sub"></span>
+          </div>
+          <div class="bu-cap">
+            Alle Monate, die in der Historie stehen — unabhängig vom gewählten Zeitraum
+            darüber. Ein angebrochener Monat ist als solcher gekennzeichnet.
+          </div>
+          <div class="mo-tablewrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Monat</th>
+                  <th class="num">Brutto</th>
+                  <th class="num">MwSt</th>
+                  <th class="num">Store</th>
+                  <th class="num">RC</th>
+                  <th class="num">Netto</th>
+                  <th class="num">Ads</th>
+                  <th class="num">AI</th>
+                  <th class="num">Ergebnis</th>
+                  <th class="num">Marge</th>
+                </tr>
+              </thead>
+              <tbody id="mo-months"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="footer-note">
+          <b style="color:var(--text)">Was diese Rechnung ist und was nicht.</b>
+          Der Bruttoumsatz kommt aus RevenueCat (<code>charts/revenue</code>, Tagesauflösung,
+          <b>alle</b> Transaktionen: Neukäufe und Verlängerungen, abzüglich Rückerstattungen).
+          RevenueCat liefert ausschließlich <b>USD</b>; umgerechnet wird mit einem festen
+          Kurs (<span id="mo-rate">–</span>), nicht mit dem Tageskurs — bei Monatssummen
+          fällt das kaum ins Gewicht, für die Buchhaltung taugt es nicht. ·
+          <b>Die Abzüge sind gerechnet, nicht abgerechnet:</b> 19 % Umsatzsteuer,
+          15 % Store-Provision (Apple + Google Small Business Program) und 1 % RevenueCat
+          werden auf den Bruttoumsatz angewandt. Was Apple und Google tatsächlich
+          auszahlen, steht in deren Abrechnungen und weicht im Detail ab (andere
+          Steuersätze außerhalb der EU, Währungsumrechnung des Stores, Rundungen). ·
+          <b>Werbekosten</b> sind der tatsächliche Spend aus Apple Search Ads und Google Ads
+          in EUR. Bei Google werden <b>alle hinterlegten Konten summiert</b> — die Kampagnen
+          liefen bis zum 17.08.2026 auf dem alten Konto und seitdem auf einem zweiten;
+          nur zusammen ergeben sie eine lückenlose Reihe. Beide APIs geben Tageswerte nur <b>90 Tage</b> zurück; ältere Tage stehen
+          hier trotzdem, weil dieser Tab sie bei jedem Aktualisieren dauerhaft wegschreibt.
+          Der auswertbare Zeitraum wächst also mit — vor dem ersten Refresh gibt es keine
+          Werbekosten, egal wie weit man zurückgeht. ·
+          <b>AI-Kosten</b> stammen aus dem AI-Usage-Tab. Dort werden Monatssummen erfasst und
+          nach Token-Gewicht auf die Tage verteilt: der <b>Monat stimmt exakt</b>, ein
+          einzelner Tag ist eine Schätzung. Sie sind außerdem nur so frisch wie der letzte
+          Refresh dort. ·
+          <b>Nicht enthalten:</b> alles, was nicht über diese vier Quellen läuft — Server-
+          und Infrastrukturkosten, Werkzeuge, Steuerberatung, Arbeitszeit. Das hier ist die
+          Deckungsbeitragsrechnung der App, keine Gewinn- und Verlustrechnung.
+        </div>
+      </div>
     </div>
   </div>
   <div id="pe-tip"></div>
@@ -1307,6 +1477,7 @@
       if (activeTab === "business") { buHistory = null; buMonths = null; return buLoad(); }
       if (activeTab === "calendar") { caData = null; return caLoad(); }
       if (activeTab === "tiktok") { ttData = null; return ttLoad(true); }
+      if (activeTab === "money") { moData = null; return moLoad(true); }
       const btn = document.getElementById("refresh-btn");
       const origText = btn.textContent;
       btn.disabled = true;
@@ -1524,6 +1695,7 @@
       document.getElementById("tab-business").classList.toggle("active", name === "business");
       document.getElementById("tab-calendar").classList.toggle("active", name === "calendar");
       document.getElementById("tab-tiktok").classList.toggle("active", name === "tiktok");
+      document.getElementById("tab-money").classList.toggle("active", name === "money");
       document.getElementById("view-referral").classList.toggle("hidden", name !== "referral");
       document.getElementById("view-apple-ads").classList.toggle("hidden", name !== "apple-ads");
       document.getElementById("view-google-ads").classList.toggle("hidden", name !== "google-ads");
@@ -1536,8 +1708,10 @@
       if (name === "price" && !peData) peLoad();
       document.getElementById("view-calendar").classList.toggle("hidden", name !== "calendar");
       document.getElementById("view-tiktok").classList.toggle("hidden", name !== "tiktok");
+      document.getElementById("view-money").classList.toggle("hidden", name !== "money");
       if (name === "business") { if (!buData) buLoad(); else buResize(); }
       if (name === "calendar") { if (!caData) caLoad(); else caResize(); }
+      if (name === "money") { if (!moData) moLoad(); else moResize(); }
       if (name === "tiktok") { if (!ttData) ttLoad(); else ttResize(); }
       if (name === "apple-ads" && !aaData) aaLoad(false);
       if (name === "google-ads" && !gaData) {
@@ -4151,6 +4325,401 @@
           </tr>`).join("")
         : `<tr><td colspan="5" style="color:var(--text-faint)">Keine Klicks in diesem Zeitraum.</td></tr>`;
     }
+
+    // ============================================================
+    // Geld — Umsatz minus Abgaben minus Werbe- und AI-Kosten
+    // ============================================================
+    // Der Endpunkt liefert IMMER die volle Tageshistorie; der Zeitraum wird
+    // hier im Browser geschnitten. Ein Wechsel von "30 Tage" auf "1 Jahr" ist
+    // deshalb sofort da und kostet keinen Server-Aufruf.
+    let moData = null;
+    let moBusy = false;
+    const moCharts = {};
+
+    // Genau EINE der drei Angaben ist gesetzt, die anderen sind null.
+    // Start ist der laufende Monat.
+    let moMonthBack = 0;   // 0 = dieser Monat, 1 = letzter Monat
+    let moDaysN = null;    // Preset in Tagen
+    let moCustom = null;   // { from, to }
+
+    const moYmd = (d) => `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
+    const moEur = (n) => (n === null || n === undefined || !isFinite(n))
+      ? "–"
+      : n.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    // Abzuege bekommen ein echtes Minuszeichen (U+2212), keinen Bindestrich:
+    // in tabellarischen Ziffern hat der Bindestrich die falsche Breite und die
+    // Kolumne sieht verrutscht aus.
+    const moMinus = (n) => (n === null || n === undefined || !isFinite(n)) ? "–"
+      : (Math.abs(n) < 0.005 ? moEur(0) : "−" + moEur(Math.abs(n)));
+    const moPct = (v, d = 1) => (v === null || v === undefined || !isFinite(v)) ? "–"
+      : (v * 100).toLocaleString("de-DE", { minimumFractionDigits: d, maximumFractionDigits: d }) + " %";
+    const moInt = (n) => (n === null || n === undefined) ? "–" : Number(n).toLocaleString("de-DE");
+
+    function moChart(id, option) {
+      const el = document.getElementById(id);
+      if (!el) return;
+      if (!moCharts[id]) moCharts[id] = echarts.init(el, null, { renderer: "canvas" });
+      moCharts[id].setOption(option, true);
+    }
+    function moResize() { Object.values(moCharts).forEach(c => c && c.resize()); }
+    window.addEventListener("resize", () => { if (activeTab === "money") moResize(); });
+
+    function moSetMonth(back) { moCustom = null; moDaysN = null; moMonthBack = back; moRender(); }
+    function moSetDays(n) { moCustom = null; moMonthBack = null; moDaysN = n; moRender(); }
+    function moSetCustom() {
+      const from = document.getElementById("mo-from").value;
+      const to = document.getElementById("mo-to").value;
+      if (!from && !to) return;
+      moMonthBack = null; moDaysN = null;
+      // Verdreht eingegebene Grenzen tauschen, statt eine leere Auswahl zu zeigen.
+      moCustom = (from && to && from > to) ? { from: to, to: from } : { from, to };
+      moRender();
+    }
+
+    function moRange() {
+      const today = moYmd(new Date());
+      if (moCustom) return { from: moCustom.from || today, to: moCustom.to || today };
+      if (moMonthBack !== null) {
+        const n = new Date();
+        const start = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth() - moMonthBack, 1));
+        const end = new Date(Date.UTC(n.getUTCFullYear(), n.getUTCMonth() - moMonthBack + 1, 0));
+        const endYmd = moYmd(end);
+        // Der laufende Monat endet heute, nicht am Monatsletzten — sonst zaehlt
+        // die Auswahl Tage mit, die es noch gar nicht gibt.
+        return { from: moYmd(start), to: endYmd > today ? today : endYmd };
+      }
+      return { from: moYmd(new Date(Date.now() - (moDaysN - 1) * 86400000)), to: today };
+    }
+
+    /**
+     * Die Rechnung. Reihenfolge ist nicht beliebig: der Store-Preis ist ein
+     * BRUTTOPREIS, die Umsatzsteuer steckt schon drin. Also erst die Steuer
+     * heraus, dann die Provision auf den Nettobetrag, dann RevenueCat auf das,
+     * was danach uebrig ist. Rechnet man die Provision auf den Bruttopreis,
+     * kommt zu viel Abzug heraus.
+     */
+    function moCalc(rows, rates, eurPerUsd) {
+      let gross = 0, apple = 0, google = 0, ai = 0, tx = 0;
+      for (const r of rows) {
+        gross += (r.rev_usd || 0) * eurPerUsd;
+        apple += r.apple || 0;
+        google += r.google || 0;
+        ai += r.ai || 0;
+        tx += r.tx || 0;
+      }
+      const afterVat = gross / (1 + rates.vat);
+      const vat = gross - afterVat;
+      const store = afterVat * rates.store;
+      const rc = (afterVat - store) * rates.rc;
+      const net = afterVat - store - rc;
+      const ads = apple + google;
+      const result = net - ads - ai;
+      return {
+        gross, vat, store, rc, net, apple, google, ai, ads, result, tx,
+        margin: gross > 0 ? result / gross : null,
+        costPerEuro: gross > 0 ? (ads + ai) / gross : null,
+      };
+    }
+
+    function moRowsIn(from, to) {
+      return (moData.days || []).filter((r) => r.d >= from && r.d <= to);
+    }
+
+    async function moLoad(fresh) {
+      if (!PW || moBusy) return;
+      moBusy = true;
+      const btn = document.getElementById("refresh-btn");
+      const orig = btn.textContent;
+      btn.disabled = true;
+      btn.textContent = "Pulle Umsatz + Kosten…";
+      document.getElementById("mo-stand").textContent = "lädt…";
+      try {
+        await buEnsureEcharts();
+        const r = await fetch(`/api/money?pw=${encodeURIComponent(PW)}` + (fresh ? "&refresh=1" : ""));
+        if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
+        const j = await r.json();
+        if (!j.bootstrapped) {
+          moData = null;
+          document.getElementById("mo-stand").textContent =
+            j.hint || "Noch kein Stand — auf „Aktualisieren“ klicken.";
+          return;
+        }
+        moData = j;
+        moRender();
+      } catch (e) {
+        document.getElementById("mo-stand").textContent = "Fehler beim Laden";
+        alert("Geld: " + e.message);
+      } finally {
+        moBusy = false;
+        btn.disabled = false;
+        btn.textContent = orig;
+      }
+    }
+
+    function moRender() {
+      if (!moData) return;
+      const d = moData;
+      const rates = d.rates || { vat: 0.19, store: 0.15, rc: 0.01 };
+      const rate = d.eur_per_usd || 0.875;
+      const range = moRange();
+      const rows = moRowsIn(range.from, range.to);
+      const c = moCalc(rows, rates, rate);
+
+      // ---------- Zeitraum-Knoepfe und Datumsfelder ----------
+      const activeBtn = moCustom ? "mo-r-c"
+        : moMonthBack === 0 ? "mo-r-m"
+        : moMonthBack === 1 ? "mo-r-lm"
+        : { 30: "mo-r-30", 90: "mo-r-90", 365: "mo-r-365" }[moDaysN];
+      ["mo-r-m", "mo-r-lm", "mo-r-30", "mo-r-90", "mo-r-365", "mo-r-c"].forEach((id) => {
+        document.getElementById(id).className = id === activeBtn ? "primary" : "secondary";
+      });
+      document.getElementById("mo-from").value = range.from;
+      document.getElementById("mo-to").value = range.to;
+
+      const src = d.sources || {};
+      const days = Math.round((Date.parse(range.to) - Date.parse(range.from)) / 86400000) + 1;
+      document.getElementById("mo-stand").textContent =
+        `${range.from} bis ${range.to} · ${moInt(days)} Tage · ${moInt(c.tx)} Transaktionen · Stand ` +
+        new Date(d.last_pull_ts_ms).toLocaleString("de-DE") +
+        (src.history_from ? ` · Historie ab ${src.history_from}` : "");
+      document.getElementById("mo-rate").textContent =
+        `1 USD = ${rate.toLocaleString("de-DE", { minimumFractionDigits: 3 })} EUR`;
+      document.getElementById("meta").textContent = `Geld · ${range.from} bis ${range.to}`;
+
+      // ---------- Hinweise, die man nicht uebersehen darf ----------
+      const warns = [];
+      if (d.refresh_warning) warns.push(d.refresh_warning);
+      if (src.ai_cache_ts_ms) {
+        const ageH = (Date.now() - src.ai_cache_ts_ms) / 3600000;
+        if (ageH > 48) warns.push(`Die AI-Kosten stammen aus dem AI-Usage-Tab und sind ${Math.round(ageH / 24)} Tage alt — dort einmal aktualisieren.`);
+      }
+      // Wer weiter zurueckschaut, als Werbedaten vorliegen, sieht dort 0 EUR
+      // Spend. Das sieht aus wie ein Gewinnsprung und ist keiner — deshalb
+      // steht der Hinweis dran, sobald der Zeitraum ueber `ads_from` hinausgeht.
+      // Seit dem 18.08.2026 laufen die Kampagnen auf einem zweiten Google-Konto.
+      // Ist dessen Zugang nicht hinterlegt, fehlen ab da alle Google-Kosten —
+      // und ein fehlender Kostenblock laesst das Ergebnis zu gut aussehen.
+      if (src.google_accounts !== undefined && src.google_accounts < 2) {
+        warns.push("Nur ein Google-Ads-Konto ist angebunden. Läuft Werbung auf einem weiteren Konto, fehlen dessen Kosten und das Ergebnis ist zu hoch.");
+      }
+      if (!src.ads_from) {
+        warns.push("Für diesen Stand liegen noch gar keine Werbekosten vor — das Ergebnis ist durchweg zu hoch. Einmal aktualisieren.");
+      } else if (range.from < src.ads_from) {
+        warns.push(`Werbekosten liegen erst ab ${src.ads_from} vor. Für die Tage davor fehlen sie, das Ergebnis ist dort zu hoch.`);
+      }
+      const warnEl = document.getElementById("mo-warn");
+      warnEl.innerHTML = warns.map((w) => esc(w)).join(" · ");
+      warnEl.classList.toggle("hidden", warns.length === 0);
+
+      // ---------- KPI-Zeile ----------
+      const kpis = [
+        { k: "Bruttoumsatz", v: moEur(c.gross), s: `${moInt(c.tx)} Transaktionen` },
+        { k: "Nettoerlös", v: moEur(c.net), s: "nach Steuer, Store und RevenueCat" },
+        { k: "Werbung + AI", v: moEur(c.ads + c.ai), s: `${moEur(c.ads)} Ads · ${moEur(c.ai)} AI` },
+        { k: "Ergebnis", v: moEur(c.result), s: c.result >= 0 ? "bleibt übrig" : "Verlust im Zeitraum" },
+        { k: "Marge", v: moPct(c.margin), s: "Ergebnis je Euro Bruttoumsatz" },
+        { k: "Kosten je € Umsatz", v: c.costPerEuro === null ? "–" : moEur(c.costPerEuro), s: "Werbung und AI zusammen" },
+      ];
+      document.getElementById("mo-kpis").innerHTML = kpis.map((x) =>
+        `<div class="cu-kpi"><div class="k-label">${esc(x.k)}</div>` +
+        `<div class="k-val">${esc(x.v)}</div><div class="k-sub">${esc(x.s)}</div></div>`).join("");
+
+      // ---------- Wasserfall ----------
+      // Alle Balken messen sich am Bruttoumsatz, damit die Spur ueberall
+      // dasselbe Ganze meint. Offset und Breite werden auf 0..100 begrenzt:
+      // bei einem Verlust laege der Ergebnisbalken sonst im Negativen.
+      const G = c.gross > 0 ? c.gross : 0;
+      const clamp = (v) => Math.max(0, Math.min(100, v));
+      const pos = (v) => G ? clamp(v / G * 100) : 0;
+      const wfRow = (label, amount, cls, off, w, kind) => {
+        const amtCls = (kind === "sum" || kind === "total") ? (amount >= 0 ? " mo-pos" : " mo-neg") : "";
+        const text = kind === "cut" ? moMinus(amount) : moEur(amount);
+        const rowCls = kind === "sum" ? " sum" : kind === "total" ? " total" : "";
+        return `<div class="mo-wf-row${rowCls}">
+          <div class="mo-l">${esc(label)}</div>
+          <div class="mo-track"><div class="mo-fill ${cls}" style="margin-left:${off.toFixed(2)}%;width:${w.toFixed(2)}%"></div></div>
+          <div class="mo-amt${amtCls}">${text}</div>
+        </div>`;
+      };
+      const wf = [
+        wfRow("Bruttoumsatz", c.gross, "gross", 0, G ? 100 : 0, "gross"),
+        wfRow(`Umsatzsteuer ${moPct(rates.vat, 0)}`, c.vat, "cut", pos(c.gross - c.vat), pos(c.vat), "cut"),
+        wfRow(`Store-Provision ${moPct(rates.store, 0)}`, c.store, "cut", pos(c.net + c.rc), pos(c.store), "cut"),
+        wfRow(`RevenueCat ${moPct(rates.rc, 0)}`, c.rc, "cut", pos(c.net), pos(c.rc), "cut"),
+        wfRow("Nettoerlös", c.net, "net", 0, pos(c.net), "sum"),
+        wfRow("Google Ads", c.google, "c-google", pos(c.net - c.google), pos(c.google), "cut"),
+        wfRow("Apple Ads", c.apple, "c-apple", pos(c.net - c.google - c.apple), pos(c.apple), "cut"),
+        wfRow("AI-Kosten", c.ai, "c-ai", pos(Math.max(0, c.result)), pos(c.ai), "cut"),
+        wfRow("Ergebnis", c.result, c.result >= 0 ? "good" : "bad", 0, pos(Math.abs(c.result)), "total"),
+      ];
+      document.getElementById("mo-wf").innerHTML = wf.join("");
+      document.getElementById("mo-wf-sub").textContent =
+        G ? `Ergebnis ist ${moPct(c.margin)} vom Bruttoumsatz` : "Kein Umsatz im Zeitraum";
+
+      moRenderChart(rows, rates, rate, range);
+      moRenderMonths(rates, rate);
+    }
+
+    /**
+     * Tage buendeln. Ueber 45 Tage ist eine Tagesspalte nur noch Zickzack; ab
+     * dort sieben Tage je Balken, ab einem halben Jahr ganze Monate. Der Block
+     * startet am ersten Tag des Zeitraums, damit der letzte nie ein
+     * angeschnittener Rumpf ist, der wie ein Einbruch aussieht.
+     */
+    function moBuckets(rows, rates, rate, from, to) {
+      const totalDays = Math.round((Date.parse(to) - Date.parse(from)) / 86400000) + 1;
+      const step = totalDays > 180 ? "month" : totalDays > 45 ? 7 : 1;
+      const buckets = [];
+      if (step === "month") {
+        const byMonth = new Map();
+        for (const r of rows) {
+          const m = r.d.slice(0, 7);
+          if (!byMonth.has(m)) byMonth.set(m, []);
+          byMonth.get(m).push(r);
+        }
+        for (const [m, rs] of [...byMonth.entries()].sort()) {
+          const dt = new Date(m + "-01T00:00:00.000Z");
+          buckets.push({
+            label: dt.toLocaleDateString("de-DE", { month: "short", year: "2-digit", timeZone: "UTC" }),
+            span: dt.toLocaleDateString("de-DE", { month: "long", year: "numeric", timeZone: "UTC" }),
+            rows: rs,
+          });
+        }
+      } else {
+        const fmt = (x) => x.toLocaleDateString("de-DE", { day: "2-digit", month: "2-digit", timeZone: "UTC" });
+        for (let i = 0; i < totalDays; i += step) {
+          const s = new Date(Date.parse(from) + i * 86400000);
+          const e = new Date(Date.parse(from) + Math.min(i + step - 1, totalDays - 1) * 86400000);
+          const sY = moYmd(s), eY = moYmd(e);
+          buckets.push({
+            label: fmt(s),
+            span: step === 1 ? fmt(s) : `${fmt(s)} bis ${fmt(e)}`,
+            rows: rows.filter((r) => r.d >= sY && r.d <= eY),
+          });
+        }
+      }
+      return {
+        step,
+        labels: buckets.map((b) => b.label),
+        spans: buckets.map((b) => b.span),
+        calc: buckets.map((b) => moCalc(b.rows, rates, rate)),
+      };
+    }
+
+    function moRenderChart(rows, rates, rate, range) {
+      const b = moBuckets(rows, rates, rate, range.from, range.to);
+      document.getElementById("mo-gran").textContent =
+        b.step === 1 ? "pro Tag" : b.step === 7 ? "je 7 Tage zusammengefasst" : "je Monat zusammengefasst";
+
+      const el = document.getElementById("mo-chart");
+      const hasAny = b.calc.some((x) => x.gross || x.ads || x.ai);
+      if (!hasAny) {
+        if (moCharts["mo-chart"]) { moCharts["mo-chart"].dispose(); delete moCharts["mo-chart"]; }
+        el.innerHTML = `<div class="mo-empty">Keine Umsätze und keine Kosten in diesem Zeitraum.</div>`;
+        return;
+      }
+      // innerHTML nur anfassen, wenn hier noch kein Chart lebt — sonst reisst
+      // das Leeren ECharts sein Canvas weg und setOption laeuft ins Leere.
+      if (!moCharts["mo-chart"]) el.innerHTML = "";
+
+      const surface = buTok("--surface"), border = buTok("--border"), ink = buTok("--text");
+      const muted = buTok("--text-muted"), faint = buTok("--text-faint");
+      const teal = buTok("--primary"), green = buTok("--green");
+      // Exakt die Farben aus dem Wasserfall — ein Posten, eine Farbe, ueberall.
+      const cGoogle = buTok("--mo-google"), cApple = buTok("--mo-apple"), cAi = buTok("--mo-ai");
+      const baseFont = 'system-ui, -apple-system, "Segoe UI", Roboto, sans-serif';
+
+      moChart("mo-chart", {
+        backgroundColor: "transparent",
+        textStyle: { fontFamily: baseFont },
+        grid: { left: 4, right: 4, top: 30, bottom: 4, containLabel: true },
+        legend: {
+          data: ["Nettoerlös", "Google Ads", "Apple Ads", "AI-Kosten", "Ergebnis"],
+          top: 0, itemGap: 16, icon: "roundRect", itemWidth: 11, itemHeight: 11,
+          textStyle: { color: muted, fontSize: 12 },
+        },
+        tooltip: {
+          trigger: "axis", confine: true,
+          backgroundColor: surface, borderColor: border, borderWidth: 1,
+          textStyle: { color: ink, fontSize: 12.5 },
+          extraCssText: "box-shadow:0 4px 16px rgba(0,0,0,.10); border-radius:10px;",
+          formatter: (ps) => {
+            const i = ps[0].dataIndex;
+            const x = b.calc[i];
+            return `<b>${esc(b.spans[i])}</b><br>` +
+              ps.map((p) => `${p.marker} ${p.seriesName}: <b>${moEur(Math.abs(p.value))}</b>`).join("<br>") +
+              `<br><span style="color:${faint}">Brutto ${moEur(x.gross)} · Marge ${moPct(x.margin)}</span>`;
+          },
+        },
+        xAxis: {
+          type: "category", data: b.labels, axisTick: { show: false },
+          axisLine: { lineStyle: { color: border } },
+          axisLabel: { color: faint, fontSize: 11, hideOverlap: true },
+        },
+        // Kosten laufen als negative Werte nach unten. Eine gemeinsame Achse
+        // mit dem Erloes, sonst waeren die Hoehen nicht vergleichbar — und der
+        // Vergleich ist ja der ganze Zweck.
+        yAxis: {
+          type: "value", splitLine: { lineStyle: { color: border } },
+          axisLabel: { color: faint, fontSize: 11, formatter: (v) => Math.round(v).toLocaleString("de-DE") + " €" },
+        },
+        series: [
+          { name: "Nettoerlös", type: "bar", stack: "geld", barMaxWidth: 30,
+            data: b.calc.map((x) => x.net), itemStyle: { color: teal, borderRadius: [4, 4, 0, 0] } },
+          { name: "Google Ads", type: "bar", stack: "geld",
+            data: b.calc.map((x) => -x.google), itemStyle: { color: cGoogle } },
+          { name: "Apple Ads", type: "bar", stack: "geld",
+            data: b.calc.map((x) => -x.apple), itemStyle: { color: cApple } },
+          { name: "AI-Kosten", type: "bar", stack: "geld",
+            data: b.calc.map((x) => -x.ai), itemStyle: { color: cAi } },
+          { name: "Ergebnis", type: "line", data: b.calc.map((x) => x.result),
+            symbol: "circle", symbolSize: 6, showSymbol: b.labels.length <= 60,
+            lineStyle: { color: green, width: 2.5 }, itemStyle: { color: green }, z: 3 },
+        ],
+      });
+      moResize();
+    }
+
+    function moRenderMonths(rates, rate) {
+      const byMonth = new Map();
+      for (const r of (moData.days || [])) {
+        const m = r.d.slice(0, 7);
+        if (!byMonth.has(m)) byMonth.set(m, []);
+        byMonth.get(m).push(r);
+      }
+      const nowMonth = moYmd(new Date()).slice(0, 7);
+      const historyFrom = (moData.sources || {}).history_from || null;
+
+      const months = [...byMonth.entries()].sort((a, b) => (a[0] < b[0] ? 1 : -1)); // neueste zuerst
+      const body = months.map(([m, rs]) => {
+        const c = moCalc(rs, rates, rate);
+        // Ein Monat ist angebrochen, wenn er noch laeuft — oder wenn die
+        // Historie erst mitten im Monat beginnt. Beides macht die Zeile
+        // unvollstaendig, und das muss dranstehen.
+        const partial = m === nowMonth
+          || (historyFrom && historyFrom.slice(0, 7) === m && historyFrom.slice(8) !== "01");
+        const label = new Date(m + "-01T00:00:00.000Z")
+          .toLocaleDateString("de-DE", { month: "long", year: "numeric", timeZone: "UTC" });
+        return `<tr>
+          <td>${esc(label)}${partial ? ` <span style="color:var(--text-faint);font-size:11.5px">angebrochen</span>` : ""}</td>
+          <td class="num">${moEur(c.gross)}</td>
+          <td class="num">${moMinus(c.vat)}</td>
+          <td class="num">${moMinus(c.store)}</td>
+          <td class="num">${moMinus(c.rc)}</td>
+          <td class="num">${moEur(c.net)}</td>
+          <td class="num">${moMinus(c.ads)}</td>
+          <td class="num">${moMinus(c.ai)}</td>
+          <td class="num ${c.result >= 0 ? "mo-pos" : "mo-neg"}" style="font-weight:700">${moEur(c.result)}</td>
+          <td class="num">${moPct(c.margin)}</td>
+        </tr>`;
+      }).join("");
+
+      document.getElementById("mo-months").innerHTML = body ||
+        `<tr><td colspan="10" style="color:var(--text-faint)">Noch keine Monate in der Historie.</td></tr>`;
+      document.getElementById("mo-months-sub").textContent =
+        months.length ? `${moInt(months.length)} Monate · neueste zuerst` : "";
+    }
+
   </script>
 </body>
 </html>
