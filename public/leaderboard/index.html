@@ -4345,14 +4345,16 @@
     const moYmd = (d) => `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
     const moEur = (n) => (n === null || n === undefined || !isFinite(n))
       ? "–"
-      : n.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      : n.toLocaleString("de-DE", { style: "currency", currency: "EUR", minimumFractionDigits: 2, maximumFractionDigits: 2 })
+         .replace(/^-/, "−");
     // Abzuege bekommen ein echtes Minuszeichen (U+2212), keinen Bindestrich:
     // in tabellarischen Ziffern hat der Bindestrich die falsche Breite und die
     // Kolumne sieht verrutscht aus.
     const moMinus = (n) => (n === null || n === undefined || !isFinite(n)) ? "–"
       : (Math.abs(n) < 0.005 ? moEur(0) : "−" + moEur(Math.abs(n)));
     const moPct = (v, d = 1) => (v === null || v === undefined || !isFinite(v)) ? "–"
-      : (v * 100).toLocaleString("de-DE", { minimumFractionDigits: d, maximumFractionDigits: d }) + " %";
+      : (v * 100).toLocaleString("de-DE", { minimumFractionDigits: d, maximumFractionDigits: d })
+          .replace(/^-/, "−") + " %";
     const moInt = (n) => (n === null || n === undefined) ? "–" : Number(n).toLocaleString("de-DE");
 
     function moChart(id, option) {
