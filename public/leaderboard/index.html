@@ -517,6 +517,7 @@
     #ai-billing-table .num { white-space:nowrap; }
     .ai-date-range { flex-wrap:wrap; }
     .ai-date-range label { display:flex; align-items:center; gap:6px; }
+    #ai-table a.code { color:var(--primary); text-decoration:underline; text-underline-offset:3px; }
     #ai-billing-import-help { margin:12px 0; }
     #view-ai button:focus-visible, #view-ai summary:focus-visible, #view-ai input:focus-visible, #view-ai select:focus-visible { outline:2px solid var(--primary); outline-offset:3px; }
     @media (max-width:700px) { #ai-billing-grid { grid-template-columns:1fr; } }
@@ -3049,6 +3050,14 @@
     }
 
     // ---------- Top-25-Tabelle ----------
+    function aiUserCell(r) {
+      const id = escapeHtml(r.u);
+      const url = r.revenuecat_url;
+      if (typeof url !== "string" || !url.startsWith("https://app.revenuecat.com/customers/41604426/")) {
+        return `<span class="code" title="Für den Profil-Link bitte AI Usage aktualisieren">${id}</span>`;
+      }
+      return `<a class="code" href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer" title="RevenueCat-Kundenprofil öffnen (neuer Tab)">${id}</a>`;
+    }
     function aiTopTable(rows) {
       const top = rows.slice().sort((a, b) => (b.cost_eur || 0) - (a.cost_eur || 0)).slice(0, 25);
       if (!top.length) return "";
@@ -3058,7 +3067,7 @@
         const co = r.country || "–";
         const pl = r.platform ? cuLabel("platform", String(r.platform).toLowerCase()) : "–";
         body += `<tr>` +
-          `<td><span class="code">${escapeHtml(r.u)}</span></td>` +
+          `<td>${aiUserCell(r)}</td>` +
           `<td>${escapeHtml(st)}</td>` +
           `<td>${escapeHtml(co)}</td>` +
           `<td>${escapeHtml(pl)}</td>` +

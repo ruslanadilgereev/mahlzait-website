@@ -16,6 +16,41 @@ const rangeCode = html.slice(
   html.indexOf("    let aiData ="),
   html.indexOf("    // ---------- Filter (ai-eigene"),
 );
+test("the displayed ID links to its RevenueCat profile; missing or unsafe links remain text", () => {
+  const cellCode = html.slice(
+    html.indexOf("    function aiUserCell("),
+    html.indexOf("    function aiTopTable("),
+  );
+  const ctx = vm.createContext({
+    escapeHtml: (value) =>
+      String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll('"', "&quot;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;"),
+  });
+  vm.runInContext(cellCode, ctx);
+  const url = "https://app.revenuecat.com/customers/41604426/fixture-user";
+  const cell = ctx.aiUserCell({ u: "abcd1234", revenuecat_url: url });
+  assert.ok(cell.includes(`href="${url}"`));
+  assert.ok(cell.includes('target="_blank"'));
+  assert.ok(cell.includes('rel="noopener noreferrer"'));
+  assert.ok(cell.endsWith(">abcd1234</a>"));
+  assert.ok(!ctx.aiUserCell({ u: "abcd1234" }).includes("<a "));
+  assert.ok(
+    !ctx
+      .aiUserCell({ u: "abcd1234", revenuecat_url: "javascript:alert(1)" })
+      .includes("<a "),
+  );
+  assert.ok(
+    !ctx
+      .aiUserCell({
+        u: "abcd1234",
+        revenuecat_url: "https://example.com/customers/41604426/test",
+      })
+      .includes("<a "),
+  );
+});
 const context = () => {
   const ctx = vm.createContext({});
   vm.runInContext(rangeCode, ctx);
@@ -23,6 +58,7 @@ const context = () => {
 };
 const sample = () => ({
   u: "sample",
+  revenuecat_url: "https://app.revenuecat.com/customers/41604426/fixture-user",
   month: "2026-09",
   requests: 2,
   input_tokens: 100,

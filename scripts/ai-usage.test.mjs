@@ -2,9 +2,20 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import { gzipSync, gunzipSync } from "node:zlib";
 import { google } from "googleapis";
-import handler, { priceByModel, repriceCachedUsage } from "../api/ai-usage.mjs";
+import handler, { priceByModel, repriceCachedUsage, revenueCatCustomerUrl } from "../api/ai-usage.mjs";
 
 const units = (value) => Math.round(value * 1e4);
+test("RevenueCat links use the original customer ID and safely encode its URL segment", () => {
+  assert.equal(revenueCatCustomerUrl("fixture-user"), "https://app.revenuecat.com/customers/41604426/fixture-user");
+  const uid = "$RCAnonymousID:sample /?#&";
+  const url = new URL(revenueCatCustomerUrl(uid));
+  assert.equal(url.origin, "https://app.revenuecat.com");
+  assert.equal(decodeURIComponent(url.pathname.split("/").at(-1)), uid);
+  assert.equal(url.search, "");
+  assert.equal(url.hash, "");
+  assert.equal(revenueCatCustomerUrl(null), null);
+  assert.equal(revenueCatCustomerUrl(" "), null);
+});
 const sumUnits = (values) => values.reduce((sum, value) => sum + units(value), 0);
 const counters = (overrides = {}) => ({
   requests: 3, input_tokens: 1_000_000, cached_tokens: 200_000,
@@ -217,7 +228,7 @@ test("GET cache path returns repriced data with one read and no refresh or exter
   });
   process.env.DASHBOARD_PASSWORD = "local-test-only";
   process.env.GOOGLE_SA_KEY = Buffer.from(JSON.stringify({ client_email: "test@example.invalid", private_key: "unused" })).toString("base64");
-  const state = stateFor([record()]);
+  const state = stateFor([record({ revenuecat_url: revenueCatCustomerUrl("fixture-user") })]);
   let reads = 0;
   t.mock.method(google, "firestore", () => ({ projects: { databases: { documents: {
     get: async () => { reads++; return { data: { fields: {
@@ -230,12 +241,13 @@ test("GET cache path returns repriced data with one read and no refresh or exter
   } } } }));
   t.mock.method(globalThis, "fetch", () => assert.fail("cached GET must not fetch RevenueCat"));
   let status = 200, body;
-  const res = { status(code) { status = code; return this; }, json(value) { body = value; return this; } };
+  const res = { setHeader(name, value) { assert.equal(name, "Cache-Control"); assert.equal(value, "private, no-store"); }, status(code) { status = code; return this; }, json(value) { body = value; return this; } };
   await handler({ query: { pw: "local-test-only" } }, res);
   assert.equal(status, 200);
   assert.equal(reads, 1);
   assert.equal(body.last_pull_ts_ms, 1234);
   assert.equal(body.records[0].cost_eur, 1.8506);
+  assert.equal(body.records[0].revenuecat_url, revenueCatCustomerUrl("fixture-user"));
   assert.equal(body.meta.repriced_from_cache, true);
   assertBalanced(body.records[0]);
 });
@@ -276,13 +288,14 @@ test("explicit refresh uses the same month-aware prices and stores a balanced ca
     if (originalRcKey === undefined) delete process.env.RC_SECRET_API_KEY; else process.env.RC_SECRET_API_KEY = originalRcKey;
   });
   let status = 200, body;
-  const res = { status(code) { status = code; return this; }, json(value) { body = value; return this; } };
+  const res = { setHeader() {}, status(code) { status = code; return this; }, json(value) { body = value; return this; } };
   await handler({ query: { pw: "local-test-only", refresh: "1" } }, res);
   assert.equal(status, 200);
   assert.equal(queries, 1);
   assert.equal(externalLookups, 3);
   assert.equal(body.records[0].cost_eur, 1.8506);
   assert.equal(body.records[0].country, "DE");
+  assert.equal(body.records[0].revenuecat_url, revenueCatCustomerUrl(source.uid));
   assert.deepEqual(Object.keys(body.records[0].days), ["01"]);
   assert.equal(body.meta.repriced_from_cache, false);
   assert.equal(stored.meta.mapValue.fields.pricing_version.stringValue, "2026-09-13");

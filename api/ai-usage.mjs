@@ -11,9 +11,10 @@
 //
 // We read the token counters per (uid, month), estimate them with a month-aware Vertex-AI
 // price table, and join demographics per uid from RC (gender, age, country, sub_type,
-// …) so the exact same customer-filter as the "Kunden" tab works here. Output is
-// PII-free: the uid is replaced by an 8-char sha256 prefix, and no email/phone/IDFA/
-// display-name is ever fetched or stored. The compact record set is gzipped + base64'd
+// …) so the exact same customer-filter as the "Kunden" tab works here.
+// The displayed uid is an 8-char sha256 prefix. Authenticated responses also include
+// its RevenueCat profile URL; no email/phone/IDFA/display-name is fetched or stored.
+// The compact record set is gzipped + base64'd
 // into ONE Firestore string field (`data_b64`), inflated in the handler; the frontend
 // does all charting + filtering client-side. Since schema 2 each record also carries
 // `days` (per-UTC-day counters + pro-rated cost) for the Von-bis/Tages-Auswahl.
@@ -33,6 +34,12 @@ const DOC_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/${CACHE_
 const RC_PROJECT = "proj41604426";
 const RC_BASE = "https://api.revenuecat.com/v2";
 const ENRICH_CONCURRENCY = 14;
+
+export function revenueCatCustomerUrl(uid) {
+  if (typeof uid !== "string" || !uid.trim()) return null;
+  // Dashboard routes use the project UUID without the API v2 "proj" prefix.
+  return `https://app.revenuecat.com/customers/${RC_PROJECT.replace(/^proj/, "")}/${encodeURIComponent(uid)}`;
+}
 
 // --- Vertex AI Gemini estimates, USD per 1M tokens, Standard Global endpoint ---
 // Historical table: 2026-08. New Flash rates verified 2026-09-13; see PRICING_SOURCE.
@@ -596,6 +603,7 @@ async function doRefresh(firestore, prev) {
     const rec = priceUsageRecord({
       u,
       month: d.month,
+      revenuecat_url: revenueCatCustomerUrl(String(d.uid)),
       ...prof, // first_seen, platform, country, birth_year, gender, sub_type, … (cu-kompatibel)
       requests: numOr0(d.requests),
       input_tokens: numOr0(d.input_tokens),
@@ -664,6 +672,7 @@ function inflate(state) {
 
 // ---------- HTTP handler ----------
 export default async function handler(req, res) {
+  res.setHeader("Cache-Control", "private, no-store");
   try {
     const pw = req.query?.pw || "";
     if (!pw || pw !== process.env.DASHBOARD_PASSWORD) {
