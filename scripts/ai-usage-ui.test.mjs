@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import vm from "node:vm";
 import { readFileSync } from "node:fs";
-import { parseBillingCsv } from "../api/ai-billing.mjs";
+import { normalizeBillingRows } from "../api/ai-billing.mjs";
 
 const html = readFileSync(
   new URL("../public/leaderboard/index.html", import.meta.url),
@@ -122,11 +122,38 @@ test("legacy costs remain available without invented component values", () => {
   close(sliced.cost_eur, 6);
   assert.equal(sliced.cost_breakdown, null);
 });
-test("billing chart rollups match the invented synthetic CSV totals", () => {
+test("billing chart rollups match synthetic automatic API rows", () => {
   const ctx = vm.createContext({});
   vm.runInContext(billingJs, ctx);
-  const report = parseBillingCsv(
-    readFileSync(new URL("./fixtures/ai-billing.csv", import.meta.url), "utf8"),
+  const report = normalizeBillingRows(
+    [
+      [
+        "2026-09-09",
+        "Vertex AI",
+        "Grounding with Google Search on Gemini 3",
+        2,
+      ],
+      ["2026-09-09", "Vertex AI", "Gemini 3.8 Flash Text Output", 4.85],
+      ["2026-09-09", "Cloud Run", "Synthetic compute", 0.75],
+      [
+        "2026-09-10",
+        "Vertex AI",
+        "Grounding with Google Search on Gemini 3",
+        4,
+      ],
+      ["2026-09-10", "Vertex AI", "Grounding with Google Search refund", -1],
+      ["2026-09-10", "Gemini API", "Gemini 2.5 Flash Text Output", 2.2],
+      ["2026-09-10", "Cloud Storage", "Synthetic storage", 0.3],
+    ].map(([date, service, sku, net_eur]) => ({
+      date,
+      service,
+      sku,
+      net_eur,
+      usage: 1,
+      unit: "synthetic units",
+      currency: "EUR",
+      export_time_ms: 1,
+    })),
   );
   const agg = ctx.aiBillingAggregate(report.rows);
   close(agg.total, 13.1);

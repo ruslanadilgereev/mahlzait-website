@@ -2,16 +2,18 @@
 let aiBillingData = null;
 let aiBillingError = "";
 
-async function aiBillingLoad() {
+async function aiBillingLoad(force = false) {
   try {
     const response = await fetch(
-      `/api/ai-billing?pw=${encodeURIComponent(PW)}`,
+      `/api/ai-billing?pw=${encodeURIComponent(PW)}${force ? "&refresh=1" : ""}`,
     );
-    if (!response.ok) throw new Error(`HTTP ${response.status}`);
     const data = await response.json();
+    if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
     if (data.available === false) {
       aiBillingData = null;
-      aiBillingError = data.hint || "Bitte eine Billing-CSV importieren.";
+      aiBillingError =
+        data.hint ||
+        "Google hat noch keine Abrechnungsdaten bereitgestellt. Der Abruf erfolgt automatisch.";
       aiBillingRender();
       return;
     }
@@ -60,6 +62,11 @@ function aiBillingRender() {
   const kpis = document.getElementById("ai-billing-kpis");
   const grid = document.getElementById("ai-billing-grid");
   const details = document.getElementById("ai-billing-details");
+  const sync = document.getElementById("ai-billing-sync");
+  if (sync)
+    sync.textContent = aiBillingData?.last_sync_at
+      ? `Letzter Abruf ${new Date(aiBillingData.last_sync_at).toLocaleString("de-DE")}`
+      : "Automatischer Abruf";
   if (!aiBillingData) {
     kpis.innerHTML = "";
     grid.innerHTML = "";
@@ -74,7 +81,7 @@ function aiBillingRender() {
   const dateLabel = (date) => date.split("-").reverse().join(".");
   const captured = new Date(data.captured_at).toLocaleString("de-DE");
   const prefix = [aiBillingError, data.warning].filter(Boolean).join(" ");
-  const provenance = `${data.scope} · Importstand ${captured} · Bericht ${dateLabel(data.from)}–${dateLabel(data.to)}. Nettokosten nach Gutschriften, ohne Steuern. Google-Billing-Tage: Pacific.`;
+  const provenance = `${data.scope} · Datenstand ${captured} · Bericht ${dateLabel(data.from)}–${dateLabel(data.to)}. Nettokosten nach Gutschriften, ohne Steuern. Google-Billing-Tage: Pacific.`;
   if (!rows.length) {
     status.textContent =
       `${prefix} Für den gewählten Zeitraum liegen keine Rechnungskosten vor. ${provenance}`.trim();
@@ -172,36 +179,11 @@ function aiBillingRender() {
   details.classList.remove("hidden");
 }
 
-async function aiBillingImport(input) {
-  const file = input.files?.[0];
-  if (!file) return;
-  const button = document.getElementById("ai-billing-import-btn");
-  const status = document.getElementById("ai-billing-status");
-  button.disabled = true;
-  try {
-    if (file.size > 2 * 1024 * 1024)
-      throw new Error(
-        "Die CSV darf höchstens 2 MB groß sein. Bitte einen kürzeren Zeitraum exportieren.",
-      );
-    status.textContent = "Billing-Bericht wird geprüft und importiert…";
-    const response = await fetch(
-      `/api/ai-billing?pw=${encodeURIComponent(PW)}`,
-      {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ csv: await file.text() }),
-      },
-    );
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error || `HTTP ${response.status}`);
-    aiBillingData = data;
-    aiBillingError = "";
-    aiBillingRender();
-  } catch (error) {
-    aiBillingError = `Import fehlgeschlagen: ${error.message} Bitte „Aktualisieren“ klicken.`;
-    aiBillingRender();
-  } finally {
-    button.disabled = false;
-    input.value = "";
-  }
-}
+if (typeof window !== "undefined")
+  window.setInterval(
+    () => {
+      if (activeTab === "ai" && PW && document.visibilityState === "visible")
+        aiBillingLoad();
+    },
+    60 * 60 * 1000,
+  );

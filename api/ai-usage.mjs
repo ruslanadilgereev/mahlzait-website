@@ -8,12 +8,14 @@
 // Source: Firestore mytemple-460913 → collection `ai_usage`, doc-id `{uid}_{YYYY-MM}`
 //   (written by the app + WhatsApp agent proxies, one Firestore write per user request).
 // State:  Firestore mytemple-460913 → `ai_usage_dashboard_cache` → `state`.
+// Links:  Separate `ai_usage_dashboard_cache/customer_links` pseudonym-to-UID map.
 //
 // We read the token counters per (uid, month), estimate them with a month-aware Vertex-AI
 // price table, and join demographics per uid from RC (gender, age, country, sub_type,
 // …) so the exact same customer-filter as the "Kunden" tab works here.
 // The displayed uid is an 8-char sha256 prefix. Authenticated responses also include
-// its RevenueCat profile URL; no email/phone/IDFA/display-name is fetched or stored.
+// its RevenueCat profile URL, reconstructed from the separate links document;
+// no email/phone/IDFA/display-name is fetched or stored.
 // The compact record set is gzipped + base64'd
 // into ONE Firestore string field (`data_b64`), inflated in the handler; the frontend
 // does all charting + filtering client-side. Since schema 2 each record also carries
@@ -30,6 +32,7 @@ const SRC_COLLECTION = "ai_usage";
 const CACHE_COLLECTION = "ai_usage_dashboard_cache";
 const DOC_ID = "state";
 const DOC_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/${CACHE_COLLECTION}/${DOC_ID}`;
+const CUSTOMER_LINKS_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/${CACHE_COLLECTION}/customer_links`;
 
 const RC_PROJECT = "proj41604426";
 const RC_BASE = "https://api.revenuecat.com/v2";
@@ -39,6 +42,36 @@ export function revenueCatCustomerUrl(uid) {
   if (typeof uid !== "string" || !uid.trim()) return null;
   // Dashboard routes use the project UUID without the API v2 "proj" prefix.
   return `https://app.revenuecat.com/customers/${RC_PROJECT.replace(/^proj/, "")}/${encodeURIComponent(uid)}`;
+}
+
+export function packCustomerLinks(uids) {
+  const links = Object.create(null);
+  const ambiguous = new Set();
+  for (const uid of new Set(uids)) {
+    if (typeof uid !== "string" || !uid.trim()) continue;
+    const hash = createHash("sha256").update(uid).digest("hex").slice(0, 8);
+    if (ambiguous.has(hash)) continue;
+    if (Object.hasOwn(links, hash) && links[hash] !== uid) {
+      delete links[hash];
+      ambiguous.add(hash);
+    } else links[hash] = uid;
+  }
+  const data_b64 = gzipSync(Buffer.from(JSON.stringify(links)), { level: 9 }).toString("base64");
+  if (data_b64.length > 900 * 1024) throw new Error("Customer links exceed the cache size guard");
+  return { schema: 1, data_b64, total_users: Object.keys(links).length, ambiguous_users: ambiguous.size };
+}
+
+export function unpackCustomerLinks(state) {
+  if (state?.schema !== 1 || typeof state.data_b64 !== "string") throw new Error("Invalid customer links");
+  const links = JSON.parse(gunzipSync(Buffer.from(state.data_b64, "base64")).toString("utf8"));
+  if (!links || typeof links !== "object" || Array.isArray(links)) throw new Error("Invalid customer links");
+  for (const [hash, uid] of Object.entries(links)) {
+    if (typeof uid !== "string" || !uid.trim()
+      || createHash("sha256").update(uid).digest("hex").slice(0, 8) !== hash) {
+      throw new Error("Invalid customer links");
+    }
+  }
+  return links;
 }
 
 // --- Vertex AI Gemini estimates, USD per 1M tokens, Standard Global endpoint ---
@@ -152,6 +185,41 @@ async function saveState(firestore, state) {
     name: DOC_PATH,
     requestBody: { fields: encodeFields(state) },
   });
+}
+
+async function loadCustomerLinks(firestore) {
+  let state;
+  try {
+    const r = await firestore.projects.databases.documents.get({ name: CUSTOMER_LINKS_PATH });
+    state = decodeFields(r.data.fields);
+  } catch (e) {
+    const status = e?.code || e?.response?.status;
+    return { status: status === 404 ? "missing" : "unavailable", links: {} };
+  }
+  try {
+    return { status: "ready", links: unpackCustomerLinks(state), ambiguous_users: Math.max(0, numOr0(state.ambiguous_users)) };
+  } catch {
+    return { status: "invalid", links: {} };
+  }
+}
+
+function attachCustomerLinks(records, source, refreshWarning) {
+  let linked = 0;
+  const out = records.map((record) => {
+    const uid = Object.hasOwn(source.links, record.u) ? source.links[record.u] : null;
+    const url = revenueCatCustomerUrl(uid);
+    if (url) linked++;
+    // Never trust an old inline URL over the validated mapping.
+    return { ...record, revenuecat_url: url };
+  });
+  let warning = refreshWarning || null;
+  if (!warning && source.status !== "ready") warning = "Kundenlinks sind derzeit nicht verfügbar; die Kostenansicht bleibt vollständig nutzbar.";
+  else if (!warning && linked < records.length) warning = "Für einige Einträge fehlt eine eindeutige Kundenzuordnung.";
+  return {
+    records: out,
+    meta: { status: source.status, linked_records: linked, missing_records: records.length - linked,
+      ambiguous_users: source.ambiguous_users || 0, warning },
+  };
 }
 
 function requireEnv(name) {
@@ -603,7 +671,6 @@ async function doRefresh(firestore, prev) {
     const rec = priceUsageRecord({
       u,
       month: d.month,
-      revenuecat_url: revenueCatCustomerUrl(String(d.uid)),
       ...prof, // first_seen, platform, country, birth_year, gender, sub_type, … (cu-kompatibel)
       requests: numOr0(d.requests),
       input_tokens: numOr0(d.input_tokens),
@@ -657,6 +724,15 @@ async function doRefresh(firestore, prev) {
     },
   };
   await saveState(firestore, state);
+  try {
+    await firestore.projects.databases.documents.patch({
+      name: CUSTOMER_LINKS_PATH,
+      requestBody: { fields: encodeFields({ ...packCustomerLinks(uids), updated_at_ms: Date.now() }) },
+    });
+  } catch {
+    // A links failure must not discard a successful usage refresh.
+    state.customer_links_warning = "Nutzungsdaten wurden aktualisiert; die Kundenlinks konnten nicht aktualisiert werden.";
+  }
   return state;
 }
 
@@ -668,6 +744,43 @@ function inflate(state) {
   } catch {
     return [];
   }
+}
+
+// Vercel limits a buffered response body to 4.5 MB. Compress the complete JSON
+// inside the function so profile links cannot push an otherwise valid cache over it.
+// https://vercel.com/docs/functions/limitations#request-body-size
+export function sendUsageJson(req, res, payload) {
+  const qualities = new Map();
+  const header = req.headers?.["accept-encoding"] || "";
+  for (const item of (Array.isArray(header) ? header.join(",") : String(header)).split(",")) {
+    const [coding, ...params] = item.trim().toLowerCase().split(";").map((part) => part.trim());
+    if (!coding) continue;
+    const qParam = params.find((part) => /^q\s*=/.test(part));
+    const value = qParam === undefined ? 1 : Number(qParam.slice(qParam.indexOf("=") + 1));
+    const quality = Number.isFinite(value) && value >= 0 && value <= 1 ? value : 0;
+    qualities.set(coding, Math.min(qualities.get(coding) ?? 1, quality));
+  }
+  const gzipAccepted = (qualities.get("gzip") ?? qualities.get("*") ?? 0) > 0;
+  const identityAccepted = (qualities.get("identity") ?? (qualities.get("*") === 0 ? 0 : 1)) > 0;
+  const vary = String(res.getHeader?.("Vary") || "").split(",").map((value) => value.trim()).filter(Boolean);
+  if (!vary.some((value) => value === "*" || value.toLowerCase() === "accept-encoding")) vary.push("Accept-Encoding");
+  res.setHeader("Vary", vary.join(", "));
+  res.setHeader("Content-Type", "application/json; charset=utf-8");
+  const json = Buffer.from(JSON.stringify(payload), "utf8");
+  const maxBytes = 4_500_000;
+  if (gzipAccepted && (json.length >= 1024 || !identityAccepted)) {
+    const compressed = gzipSync(json);
+    if (compressed.length > maxBytes) {
+      return res.status(503).json({ error: "Die vollständige Nutzungsansicht ist derzeit zu groß für die Übertragung." });
+    }
+    res.setHeader("Content-Encoding", "gzip");
+    res.setHeader("Content-Length", String(compressed.length));
+    return res.end(compressed);
+  }
+  if (!identityAccepted || json.length > maxBytes) {
+    return res.status(406).json({ error: "Der Client muss gzip-Komprimierung akzeptieren, um die vollständige Nutzungsansicht abzurufen.", code: "gzip_required" });
+  }
+  return res.json(payload);
 }
 
 // ---------- HTTP handler ----------
@@ -693,13 +806,14 @@ export default async function handler(req, res) {
       });
     }
     const { records, meta } = repriceCachedUsage(state);
-    return res.json({
+    const linked = attachCustomerLinks(records, await loadCustomerLinks(firestore), state.customer_links_warning);
+    return sendUsageJson(req, res, {
       bootstrapped: true,
       last_pull_ts_ms: state.last_pull_ts_ms,
       schema: state.schema || 1,
-      meta,
+      meta: { ...meta, customer_links: linked.meta },
       refresh_warning: state.refresh_warning || null,
-      records,
+      records: linked.records,
     });
   } catch (e) {
     console.error("[ai-usage]", e?.message, e?.stack?.slice(0, 400));
