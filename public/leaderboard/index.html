@@ -503,6 +503,26 @@
     .cu-leg-val span { color: var(--text-faint); font-weight: 500; }
     .cu-empty-chart { color: var(--text-faint); font-size: 13px; padding: 20px 0; text-align: center; }
 
+    .ai-section-head { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin:24px 0 12px; }
+    .ai-section-head h2 { font-size:17px; letter-spacing:-0.02em; margin:0; }
+    .ai-section-note { color:var(--text-muted); font-size:13px; line-height:1.6; margin:10px 0 16px; }
+    #ai-billing-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+    #ai-billing-grid .cu-bar-row { grid-template-columns:minmax(110px, 1.25fr) 1fr auto; }
+    #ai-billing-grid .b-lab { white-space:normal; overflow:visible; text-align:left; }
+    #ai-billing-details { margin:16px 0 24px; }
+    #ai-billing-details summary, #ai-billing-import-help summary { cursor:pointer; font-size:13px; font-weight:600; }
+    #ai-billing-details .card { overflow-x:auto; margin-top:12px; }
+    #ai-billing-table th, #ai-billing-table td { display:table-cell; }
+    #ai-billing-table table { min-width:560px; }
+    #ai-billing-table .num { white-space:nowrap; }
+    .ai-date-range { flex-wrap:wrap; }
+    .ai-date-range label { display:flex; align-items:center; gap:6px; }
+    #ai-billing-import-help { margin:12px 0; }
+    #view-ai button:focus-visible, #view-ai summary:focus-visible, #view-ai input:focus-visible, #view-ai select:focus-visible { outline:2px solid var(--primary); outline-offset:3px; }
+    @media (max-width:700px) { #ai-billing-grid { grid-template-columns:1fr; } }
+    @media (max-width:480px) { #ai-billing-kpis { grid-template-columns:repeat(2,minmax(0,1fr)); } #ai-billing-kpis .cu-kpi { padding:14px; } #ai-billing-kpis .k-val { font-size:23px; } }
+    @media (prefers-reduced-motion:reduce) { #view-ai .cu-bar-fill, #view-ai .cu-hist-bar { transition:none; } }
+
     /* ===== Kalender / Tagesform ===== */
     .ca-metrics { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 14px; }
     .ca-m { padding: 7px 13px; border-radius: var(--radius-sm); border: 1px solid var(--border);
@@ -995,16 +1015,33 @@
           <button class="cu-chip" id="ai-chip-7" onclick="aiPickPreset('7')">7 Tage</button>
           <button class="cu-chip" id="ai-chip-30" onclick="aiPickPreset('30')">30 Tage</button>
           <select id="ai-month" onchange="aiPickMonth()" title="Ganzen Monat wählen" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:13px;font-weight:600;font-family:inherit;cursor:pointer;outline:none"></select>
-          <span style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)">Von
+          <span class="ai-date-range" style="display:flex;align-items:center;gap:6px;font-size:13px;color:var(--muted)"><label>Von
             <input type="date" id="ai-from" onchange="aiPickRange()" style="padding:6px 8px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:13px;font-family:inherit;outline:none">
-            Bis
+            </label><label>Bis
             <input type="date" id="ai-to" onchange="aiPickRange()" style="padding:6px 8px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:13px;font-family:inherit;outline:none">
-          </span>
+          </label></span>
           <div class="spacer"></div>
           <label class="active-toggle" title="Fehlende Demografie-Werte als „(keine)" in den Splits zeigen">
             <input id="ai-show-none" type="checkbox" checked onchange="aiRender()"> Fehlende als „(keine)" zeigen
           </label>
         </div>
+        <section aria-labelledby="ai-billing-title">
+          <div class="ai-section-head">
+            <h2 id="ai-billing-title">Google-Cloud-Kosten</h2>
+            <button class="secondary" id="ai-billing-import-btn" onclick="document.getElementById('ai-billing-file').click()">Billing-CSV importieren</button>
+            <input type="file" id="ai-billing-file" accept=".csv,text/csv" hidden onchange="aiBillingImport(this)">
+          </div>
+          <p id="ai-billing-status" class="ai-section-note" role="status" aria-live="polite">Rechnungskosten werden geladen.</p>
+          <div id="ai-billing-kpis" class="cu-kpis"></div>
+          <div id="ai-billing-grid" class="cu-grid"></div>
+          <details id="ai-billing-details" class="hidden"><summary>Tageswerte und einzelne Rechnungsposten</summary><p class="ai-section-note">Auf kleinen Bildschirmen seitlich scrollen, um alle Spalten zu sehen.</p><div id="ai-billing-table"></div></details>
+          <details id="ai-billing-import-help">
+            <summary>Bericht aktualisieren</summary>
+            <p class="ai-section-note">In <a href="https://console.cloud.google.com/billing/017D1E-33B8D2-D24629/reports?project=mytemple-460913" target="_blank" rel="noopener">Google Cloud Billing</a> den gewünschten Zeitraum und die Projekte wählen, nach <b>Datum › SKU</b> gruppieren und die CSV auf Deutsch in EUR herunterladen. Der Import ersetzt den bisherigen Bericht. „Aktualisieren“ oben lädt den gespeicherten Stand; neue Rechnungskosten kommen über den CSV-Import.</p>
+          </details>
+        </section>
+        <div class="ai-section-head"><h2>Tokenkosten pro Nutzer · Schätzung</h2></div>
+        <p class="ai-section-note">Die folgenden Filter gelten für die Nutzungsdaten. Rechnungskosten oben gelten für den gesamten importierten Bericht und lassen sich keinem einzelnen Nutzer zuordnen.</p>
         <div class="cu-filters">
           <div class="cu-filter-row" id="ai-filter-row"></div>
           <div class="cu-filter-foot">
@@ -1021,10 +1058,7 @@
           <div class="empty-title">Noch keine AI-Nutzungsdaten</div>
           <div>Tracking beginnt nach dem nächsten Proxy- und Agent-Deploy. Danach „Aktualisieren" oben rechts klicken.</div>
         </div>
-        <div class="footer-note">
-          Preise Vertex AI Stand Juli 2026 (Global-Endpoint, kein Regional-Aufschlag), Kurs 1&nbsp;USD ≈ 0,875&nbsp;€. Search-Grounding-Queries nicht enthalten. ·
-          Kosten immer aus <code>by_model</code> gerechnet · Pseudonym = sha256(uid) · keine PII.
-        </div>
+        <div class="footer-note" id="ai-pricing-note"></div>
       </div>
 
       <div id="view-price" class="hidden">
@@ -2677,6 +2711,8 @@
     let aiFrom = null;      // Zeitraum-Start "YYYY-MM-DD" (UTC-Tage, wie by_day im Proxy)
     let aiTo = null;        // Zeitraum-Ende "YYYY-MM-DD" (inklusiv)
     let aiUsersUniq = [];   // ein Record je distinct u (für Chip-Zählungen + Geburtsjahr-Range)
+    const AI_COST_COMPONENTS = { input_eur: "Eingabe ohne Cache", cached_input_eur: "Gecachte Eingabe", output_eur: "Antwort", thinking_eur: "Thinking" };
+    const aiScaleCosts = (costs, factor) => costs ? Object.fromEntries(Object.keys(AI_COST_COMPONENTS).map((k) => [k, (costs[k] || 0) * factor])) : null;
 
     // ---------- Zahlen-/Monatsformat (deutsch) ----------
     const aiEur = (n) => (Number(n) || 0).toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + " €";
@@ -2740,6 +2776,7 @@
           requests: r.requests || 0, input_tokens: r.input_tokens || 0, cached_tokens: r.cached_tokens || 0,
           output_tokens: r.output_tokens || 0, thinking_tokens: r.thinking_tokens || 0, cost_eur: r.cost_eur || 0,
           by_model: r.by_model || {}, channels: r.channels || null, partial: false,
+          cost_breakdown: r.cost_breakdown || null,
         };
       }
       const days = r.days;
@@ -2759,7 +2796,7 @@
       for (const m in (r.by_model || {})) bm[m] = { ...r.by_model[m], cost_eur: (r.by_model[m].cost_eur || 0) * f };
       let ch = null;
       if (r.channels) { ch = {}; for (const k in r.channels) ch[k] = { ...r.channels[k], cost_eur: (r.channels[k].cost_eur || 0) * f }; }
-      return { ...s, by_model: bm, channels: ch, partial: true };
+      return { ...s, by_model: bm, channels: ch, cost_breakdown: aiScaleCosts(r.cost_breakdown, f), partial: true };
     }
     // Slices desselben Users (Zeitraum über Monatsgrenzen) zu einem Anzeige-Record mergen.
     function aiMergeSlices(recs) {
@@ -2770,6 +2807,7 @@
         // Original-Record; ohne Kopie würde ein späterer Merge aiData dauerhaft mutieren.
         if (!t) { t = { ...r, ...s, by_model: { ...s.by_model }, channels: s.channels ? { ...s.channels } : null }; byU.set(r.u, t); continue; }
         for (const k of ["requests", "input_tokens", "cached_tokens", "output_tokens", "thinking_tokens", "cost_eur"]) t[k] += s[k];
+        if (t.cost_breakdown || s.cost_breakdown) t.cost_breakdown = Object.fromEntries(Object.keys(AI_COST_COMPONENTS).map((k) => [k, (t.cost_breakdown?.[k] || 0) + (s.cost_breakdown?.[k] || 0)]));
         for (const m in s.by_model) {
           if (!t.by_model[m]) { t.by_model[m] = { ...s.by_model[m] }; continue; }
           t.by_model[m] = { ...t.by_model[m], cost_eur: (t.by_model[m].cost_eur || 0) + (s.by_model[m].cost_eur || 0) };
@@ -2881,11 +2919,11 @@
     }
     function aiHBars(entries, denom, fmtFn, colorFn) { // horizontale Balken (Kosten-Splits)
       if (!entries.length) return `<div class="cu-empty-chart">Keine Daten</div>`;
-      const max = Math.max(...entries.map((e) => e[1]), 1e-9);
+      const max = Math.max(...entries.map((e) => Math.abs(e[1])), 1e-9);
       let h = `<div class="cu-bars">`;
       entries.forEach(([lab, val], i) => {
         const pct = denom > 0 ? (val / denom * 100) : 0;
-        const w = val / max * 100;
+        const w = Math.abs(val) / max * 100;
         const col = colorFn ? colorFn(i, lab) : "var(--primary)";
         h += `<div class="cu-bar-row"><div class="b-lab" title="${escapeHtml(lab)}">${escapeHtml(lab)}</div>` +
           `<div class="cu-bar-track"><div class="cu-bar-fill" style="width:${w.toFixed(1)}%;background:${col}"></div></div>` +
@@ -3000,7 +3038,7 @@
       const sumReq = rows.reduce((a, r) => a + (r.requests || 0), 0);
       const cacheHit = sumIn > 0 ? (sumCached / sumIn * 100) : 0;
       return [
-        { label: "Kosten gesamt", val: aiEur(totalCost), sub: aiRangeLabel() },
+        { label: "Tokenkosten geschätzt", val: aiEur(totalCost), sub: aiRangeLabel() },
         { label: "Ø €/User", val: rows.length ? aiEur(totalCost / rows.length) : "–", sub: `${rows.length.toLocaleString("de-DE")} aktive User` },
         { label: "Median €/User", val: rows.length ? aiEur(cuMedian(costs)) : "–", sub: "robuster als der Schnitt" },
         { label: "Aktive AI-User", val: rows.length.toLocaleString("de-DE"), sub: "mit ≥1 Request" },
@@ -3048,6 +3086,10 @@
     // ---------- main render ----------
     function aiRender() {
       if (!aiData) return;
+      if (!aiFrom || !aiTo) { [aiFrom, aiTo] = aiMonthBounds(aiMonth || aiTodayIso().slice(0, 7)); aiSetRangeInputs(); }
+      aiBillingRender();
+      const pricing = aiMeta?.meta || {};
+      document.getElementById("ai-pricing-note").textContent = `Tokenkostenschätzung · Preise ${pricing.pricing_version || "unbekannt"} · Global-Endpoint · angenommener Kurs 1 USD = ${pricing.eur_per_usd ?? "?"} EUR. Nutzer- und Tagesanteile sind Näherungen. Websuche, Cache-Speicher und Agent-Betrieb sind nur in den Rechnungskosten oben enthalten. Eingabe enthält Bilder; pro Nutzer ist ihr Anteil nicht erfasst. Token-Tage: UTC · Billing-Tage: Pacific. ${ (pricing.pricing_warnings || []).join(" ") }`;
       const grid = document.getElementById("ai-grid");
       const kpis = document.getElementById("ai-kpis");
       const empty = document.getElementById("ai-empty");
@@ -3097,6 +3139,10 @@
       }
 
       const totalCost = rows.reduce((a, r) => a + (r.cost_eur || 0), 0);
+      const components = Object.entries(AI_COST_COMPONENTS).map(([key, label]) => [label, rows.reduce((sum, r) => sum + (r.cost_breakdown?.[key] || 0), 0)]);
+      const unallocated = totalCost - components.reduce((sum, e) => sum + e[1], 0);
+      if (unallocated > 0.00001) components.push(["Nicht aufgeschlüsselt", unallocated]);
+      if (rows.length) cards.push(cuCardHtml("Wofür die Tokens kosten", "Schätzung", aiHBars(components, totalCost, aiEur)));
       cards.push(cuCardHtml("€/User-Verteilung", "n=" + rows.length.toLocaleString("de-DE"), aiCostHist(rows)));
       cards.push(cuCardHtml("Kosten nach Abo-Typ", aiEur(totalCost), aiCostSplit(rows, "subtype", inc)));
       cards.push(cuCardHtml("Kosten nach Plattform", aiEur(totalCost), aiCostSplit(rows, "platform", inc)));
@@ -3113,7 +3159,7 @@
         const agoStr = ago < 1 ? "gerade eben" : ago < 60 ? `vor ${ago} Min` : `vor ${Math.floor(ago / 60)} h`;
         const tc = aiMeta.meta?.total_cost_eur;
         let line = `AI Usage · Stand ${d.toLocaleString("de-DE")} · ${agoStr} · ${aiData.length.toLocaleString("de-DE")} User-Monate`;
-        if (tc != null) line += ` · ${aiEur(tc)} gesamt`;
+        if (tc != null) line += ` · ${aiEur(tc)} Tokenkosten geschätzt`;
         if (aiMeta.refresh_warning) line += ` · ⚠ ${aiMeta.refresh_warning}`;
         document.getElementById("meta").textContent = line;
       }
@@ -3198,6 +3244,7 @@
       const o = btn.textContent;
       btn.disabled = true;
       btn.textContent = force ? "Pulle AI-Nutzung…" : "Lade…";
+      const billingLoad = aiBillingLoad();
       try {
         const r = await fetch(`/api/ai-usage?pw=${encodeURIComponent(PW)}${force ? "&refresh=1" : ""}`);
         if (!r.ok) throw new Error(`HTTP ${r.status}: ` + await r.text());
@@ -3211,6 +3258,7 @@
       } catch (e) {
         alert("AI-Usage Refresh-Fehler: " + e.message);
       } finally {
+        await billingLoad;
         btn.disabled = false;
         btn.textContent = o;
       }
@@ -4723,5 +4771,6 @@
     }
 
   </script>
+  <script src="/leaderboard/ai-billing.js"></script>
 </body>
 </html>

@@ -28,3 +28,6 @@ tmp/
 .idea/
 .vercel
 .env*.local
+
+# Private billing exports must not enter the public repository.
+/data/ai-billing-seed.csv
