@@ -16,6 +16,8 @@ interface AuthorBylineProps {
   updatedAt?: string;
   readingTime?: number;
   reviewer?: Reviewer;
+  /** Short role shown after the name, e.g. "Gründer von Mahlzait" (E-E-A-T). */
+  role?: string;
 }
 
 function formatDate(dateStr: string): string {
@@ -32,6 +34,7 @@ export default function AuthorByline({
   updatedAt,
   readingTime,
   reviewer,
+  role,
 }: AuthorBylineProps) {
   return (
     <div className="flex flex-col gap-1 text-sm opacity-80 mb-6">
@@ -41,6 +44,7 @@ export default function AuthorByline({
           <a href="/team" className="font-medium text-primary hover:underline">
             Ruslan Adilgereev
           </a>
+          {role && <span>, {role}</span>}
         </span>
         {publishedAt && (
           <>

@@ -107,8 +107,16 @@ const calculators = [
     color: "accent",
   },
   {
-    title: "Döner Kalorien Rechner",
-    desc: "Wie viele Kalorien hat dein Döner wirklich? Berechne Kalorien für Döner Kebab, Dürüm, Lahmacun und mehr.",
+    title: "Kalorienverbrauch beim Joggen",
+    desc: "Wie viele Kalorien verbrennt dein Lauf? MET-basiert nach Gewicht, Tempo und Dauer, brutto und netto.",
+    link: "/kalorienverbrauch-joggen",
+    icon: "/3D/gym-front-color.webp",
+    features: ["Brutto und netto", "Tabelle nach Tempo", "Strecke"],
+    color: "accent",
+  },
+  {
+    title: "Wie viele Kalorien hat ein Döner?",
+    desc: "Döner, Dürüm, Teller und Box im Vergleich, mit Portionsgewicht und Makros. Dazu ein Rechner für deinen Döner.",
     link: "/doener-kalorien-rechner",
     icon: "/3D/bulb-front-color.webp",
     features: ["Döner, Dürüm, Lahmacun", "Fleisch, Sauce, Extras", "Kalorientabelle"],

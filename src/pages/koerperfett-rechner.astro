@@ -6,57 +6,57 @@ import configWithoutLegal from "utils/configWithoutLegal";
 import KoerperfettRechnerPage from "@modules/koerperfett";
 
 const seo = {
-  title: "Körperfettanteil Rechner - KFA kostenlos berechnen | Mahlzait",
+  title: "Körperfettanteil berechnen: KFA-Rechner mit Navy-Formel | Mahlzait",
   description:
-    "Berechne deinen Körperfettanteil (KFA) kostenlos mit der US Navy Methode. Genauer als BMI! Mit Tabelle, Interpretation und Tipps zur Fettreduktion.",
+    "Körperfettanteil mit Maßband berechnen: US-Navy-Formel offen erklärt, gesunde Bereiche nach Alter und Geschlecht, Genauigkeit im Vergleich zu DEXA, Caliper und Waage.",
 };
 
 const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Was ist ein gesunder Körperfettanteil?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Für Männer liegt der gesunde Bereich bei 10-20%, für Frauen bei 18-28%. Athleten haben oft niedrigere Werte, aber unter dem essentiellen Fettanteil zu liegen ist ungesund.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie genau ist die US Navy Methode?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Die Methode hat eine Genauigkeit von etwa ±3-4% im Vergleich zu präzisen DEXA-Scans. Für das Tracking deines Fortschritts ist sie ideal geeignet.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Warum brauchen Frauen mehr Körperfett?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Frauen haben biologisch mehr essentielles Fett für Hormone und Fortpflanzung. Das essenzielle Fett liegt bei Frauen bei ca. 10-13%, bei Männern nur 2-5%.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie schnell kann ich Körperfett verlieren?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Gesund sind 0.5-1% Körperfett pro Monat. Das entspricht etwa 0.5-1 kg Fettverlust pro Woche bei einem moderaten Kaloriendefizit von 500 kcal/Tag.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Warum verliere ich Gewicht aber kein Körperfett?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ohne ausreichend Protein und Krafttraining verlierst du auch Muskelmasse. Mit Kalorientracking und genug Protein verlierst du gezielt Fett.",
-          },
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "Was ist ein gesunder Körperfettanteil?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Das hängt von Alter und Geschlecht ab. Für Männer zwischen 20 und 39 gelten 8 bis 20 % als gesund, für Frauen im gleichen Alter 21 bis 33 %. Mit jedem Lebensjahrzehnt verschiebt sich der Bereich um etwa zwei Prozentpunkte nach oben (Gallagher et al. 2000).",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie genau ist die US-Navy-Methode?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "In Vergleichsstudien liegt die Abweichung zur DEXA-Messung bei etwa 3 bis 4 Prozentpunkten. Für die Verlaufskontrolle reicht das, solange immer gleich gemessen wird.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Warum ist der Körperfettanteil bei Frauen höher?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Frauen haben mehr essentielles Fett für Hormonhaushalt und Fortpflanzung: etwa 10 bis 13 % gegenüber 2 bis 5 % bei Männern.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Wie schnell kann man Körperfett verlieren?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Realistisch sind 0,5 bis 1 Prozentpunkt pro Monat bei einem Defizit von 300 bis 500 kcal am Tag. Schneller geht es nur mit Muskelverlust.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "Reicht eine Körperfettwaage nicht?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Körperfettwaagen messen den elektrischen Widerstand, der mit dem Wasserhaushalt schwankt. Umfangsmessung und Waage sind ähnlich genau, die Umfänge sind reproduzierbarer.",
+      },
+    },
+  ],
+};
 
 const howToSchema = {
       "@context": "https://schema.org",
@@ -91,8 +91,8 @@ const schema0 = {
       "@context": "https://schema.org",
       "@type": "MedicalWebPage",
       name: "Körperfettanteil Rechner",
-      headline: "Körperfettanteil Rechner - KFA kostenlos berechnen",
-      description: "Kostenloser Körperfettrechner zur Berechnung des Körperfettanteils mit der US Navy Methode. Genauer als BMI.",
+      headline: "Körperfettanteil berechnen: KFA-Rechner mit Navy-Formel",
+      description: "Körperfettanteil mit der US-Navy-Umfangsformel berechnen, mit gesunden Bereichen nach Alter und Geschlecht.",
       medicalAudience: {
         "@type": "MedicalAudience",
         audienceType: "Patient"
@@ -123,7 +123,7 @@ const authorPersonSchema = {
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Körperfettanteil Rechner" />
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Körperfettanteil berechnen" />
 
   <!-- FAQPage Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />

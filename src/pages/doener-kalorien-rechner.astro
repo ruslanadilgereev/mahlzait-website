@@ -6,65 +6,73 @@ import configWithoutLegal from "utils/configWithoutLegal";
 import DoenerKalorienRechnerPage from "@modules/doener";
 
 const seo = {
-  title: "Döner Kalorien Rechner - Kebab, Dürüm & Lahmacun berechnen | Mahlzait",
+  title: "Wie viele Kalorien hat ein Döner? Alle Varianten im Vergleich | Mahlzait",
   description:
-    "Berechne die Kalorien in deinem Döner Kebab, Dürüm oder Lahmacun. Kostenloser Döner-Kalorien-Rechner mit Fleisch, Sauce und Extras. Inkl. Kalorientabelle.",
+    "Döner Kebab mit Kalb: rund 650 kcal, Hähnchen 550, Dürüm 700, Döner-Box bis 1.000. Tabelle mit Portionsgewicht, Eiweiß, Kohlenhydraten und Fett, dazu ein Rechner für deinen Döner.",
 };
 
 const faqSchema = {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      mainEntity: [
-        {
-          "@type": "Question",
-          name: "Wie viele Kalorien hat ein normaler Döner?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ein klassischer Döner Kebab im Fladenbrot hat durchschnittlich 550-650 kcal. Die genaue Kalorienzahl hängt von der Fleischart, Sauce und Portionsgrösse ab. Mit Hähnchen und Joghurt-Sauce sind es ca. 500 kcal.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Was hat weniger Kalorien: Döner oder Dürüm?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Der Unterschied ist gering. Ein Dürüm hat oft sogar etwas mehr Kalorien (600-700 kcal), weil mehr Fleisch reinpasst. Das dünnere Yufka-Brot spart zwar Kalorien beim Teig, aber die grössere Füllung gleicht das aus.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Ist Döner gut zum Abnehmen?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ein Döner kann in eine Diät passen, wenn du ihn bewusst wählst: Hähnchen statt Kalb, Joghurt-Sauce, viel Salat. Mit 500-550 kcal ist er eine sättigende Mahlzeit mit viel Protein.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Hat Döner mehr Kalorien als ein Big Mac?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ja, meistens. Ein Big Mac hat 509 kcal, ein durchschnittlicher Döner 550-650 kcal. Allerdings hat der Döner mehr Protein (35g vs. 26g) und mehr Gemüse.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Wie viel Protein hat ein Döner?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Ein klassischer Döner liefert etwa 30-40g Protein – hauptsächlich aus dem Fleisch. Das entspricht etwa 50-70% des täglichen Bedarfs.",
-          },
-        },
-        {
-          "@type": "Question",
-          name: "Was ist die kalorienärmste Döner-Variante?",
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: "Die kalorienärmste Option ist ein Döner-Teller mit Salat (ohne Brot, ohne Pommes) mit Hähnchenfleisch und Joghurt-Sauce: ca. 350-400 kcal.",
-          },
-        },
-      ],
-    };
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Wie viele Kalorien hat ein normaler Döner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein klassischer Döner Kebab im Fladenbrot mit Kalbfleisch hat rund 650 kcal bei etwa 350 g, je nach Imbiss 550 bis 750. Mit Hähnchen und Joghurtsoße sind es etwa 550 kcal."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Kalorien hat ein Dürüm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ein Dürüm liegt bei rund 700 kcal für 400 g. Der Yufka-Teig ist leichter als Fladenbrot, aber die Rolle fasst mehr Fleisch und Soße."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was hat weniger Kalorien: Döner oder Dürüm?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der Döner, aber nur knapp: 650 gegenüber 700 kcal. Entscheidender als die Hülle sind Fleischsorte und Soße."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viel Eiweiß hat ein Döner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "35 bis 40 g, hauptsächlich aus dem Fleisch. Ein Hähnchen-Döner liegt am oberen Ende."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hat ein Döner mehr Kalorien als ein Big Mac?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja. Ein Big Mac hat 503 kcal, ein Kalb-Döner rund 650. Der Döner liefert dafür 35 g Eiweiß statt 26 g und deutlich mehr Gemüse."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was ist die kalorienärmste Döner-Variante?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Der Döner-Teller mit Salat, ohne Brot, Reis und Pommes, mit Hähnchen und Joghurtsoße: 350 bis 450 kcal bei 35 g Eiweiß."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie viele Kalorien hat eine Döner-Box?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "800 bis 1.000 kcal. Pommes, Fleisch und Soße ohne den Salatanteil des Fladenbrots machen sie zur schwersten Variante."
+      }
+    }
+  ]
+};
 
 const howToSchema = {
       "@context": "https://schema.org",
@@ -121,10 +129,10 @@ const schema1 = {
       "@type": "NutritionInformation",
       name: "Döner Kebab (klassisch)",
       servingSize: "350g",
-      calories: "550-650 kcal",
+      calories: "650 kcal",
       proteinContent: "35g",
-      carbohydrateContent: "45g",
-      fatContent: "25g"
+      carbohydrateContent: "50g",
+      fatContent: "32g"
     };
 
 const authorPersonSchema = {
@@ -147,7 +155,7 @@ const authorPersonSchema = {
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
-  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Döner Kalorien Rechner" />
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Wie viele Kalorien hat ein Döner?" />
 
   <!-- FAQPage Schema -->
     <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />

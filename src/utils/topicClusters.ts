@@ -101,6 +101,12 @@ export const calculators: CalculatorEntry[] = [
     tags: ["Schritte", "NEAT", "Aktivität", "Kalorienverbrauch"],
   },
   {
+    slug: "kalorienverbrauch-joggen",
+    title: "Kalorienverbrauch beim Joggen",
+    description: "Kalorien nach Gewicht, Tempo und Dauer, brutto und netto.",
+    tags: ["Joggen", "Laufen", "Ausdauer", "Kalorienverbrauch", "Sport"],
+  },
+  {
     slug: "wasserbedarf-rechner",
     title: "Wasserbedarfs-Rechner",
     description:
