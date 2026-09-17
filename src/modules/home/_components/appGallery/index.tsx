@@ -1,18 +1,18 @@
 import { useRef } from "react";
 import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
 
-// Die zehn App-Store-Screens (Stand 5. September 2026), als WebP in public/screenshots/store/.
-// Die Bildtexte sind bereits Teil der Grafik, alt beschreibt den Inhalt für Screenreader und Google.
+// Die zehn Screens, wie sie im App Store hängen (Version 209, 9. September 2026), in Store-Reihenfolge,
+// als WebP in public/screenshots/store/. Die Headline ist Teil der Grafik, alt beschreibt den Inhalt.
 const screens = [
-  { file: "01_home", alt: "Tagesübersicht: 1.542 kcal gegessen, 752 übrig, Eiweiß, Kohlenhydrate und Fette als Balken" },
-  { file: "02_ki_foto", alt: "Ein fotografierter Frühstücksteller mit Lachs, Ei und Avocado, von der KI als Mahlzeit mit 592 kcal erkannt" },
-  { file: "03_chat", alt: "Mahlzeit per Sprache eingeben: 'Apfel und Kaffee mit Hafermilch' wird in zwei Einträge zerlegt" },
-  { file: "04_meal_vorschlag", alt: "KI-Essensvorschlag für heute: pikantes Hähnchengeschnetzeltes mit Kartoffeln, 410 kcal, passend zum Ziel" },
-  { file: "05_gewicht", alt: "Gewichtsverlauf über drei Monate mit Zielgewicht 85 kg und Wochenschnitt" },
-  { file: "06_kalender", alt: "Kalenderansicht Februar 2026 mit Kalorien und Eiweiß pro Tag" },
-  { file: "07_home_health", alt: "Mit Apple Health verbunden: Schritte, Gewicht, Aktivität, Schlaf, Wasser und Fasten auf einen Blick" },
-  { file: "08_stats", alt: "Wochenstatistik: Eiweiß, Kohlenhydrate, Fette, Ballaststoffe und Salz im Vergleich zum Ziel" },
-  { file: "09_suche", alt: "Lebensmittelsuche nach Magerquark mit Nährwerten je 100 g verschiedener Marken" },
+  { file: "01_ki_foto", alt: "Ein fotografierter Frühstücksteller mit Lachs, Ei und Avocado, von der KI als Mahlzeit mit 592 kcal erkannt" },
+  { file: "02_home", alt: "Tagesübersicht: 1.542 kcal gegessen, 752 übrig, Eiweiß, Kohlenhydrate und Fette als Balken" },
+  { file: "03_meal_vorschlag", alt: "KI-Essensvorschlag für heute: pikantes Hähnchengeschnetzeltes mit Kartoffeln, 410 kcal, passend zum Ziel" },
+  { file: "04_stats", alt: "Wochenstatistik: Eiweiß, Kohlenhydrate, Fette, Ballaststoffe und Salz im Vergleich zum Ziel" },
+  { file: "05_home_health", alt: "Mit Apple Health verbunden: Schritte, Gewicht, Aktivität, Schlaf, Wasser und Fasten auf einen Blick" },
+  { file: "06_gewicht", alt: "Gewichtsverlauf über drei Monate mit Zielgewicht 85 kg und Wochenschnitt" },
+  { file: "07_suche", alt: "Lebensmittelsuche nach Magerquark mit Nährwerten je 100 g verschiedener Marken" },
+  { file: "08_kalender", alt: "Kalenderansicht Februar 2026 mit Kalorien und Eiweiß pro Tag" },
+  { file: "09_whatsapp", alt: "Mahlzeit per WhatsApp an Mahlzait schicken: Foto vom Teller, Antwort mit 571 kcal und Tagesstand" },
   { file: "10_reviews", alt: "4,6 Sterne im App Store und drei Nutzerbewertungen" },
 ];
 
