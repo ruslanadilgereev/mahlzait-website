@@ -11,7 +11,8 @@ type TrackingSource =
   | "wissen"
   | "footer"
   | "pricing"
-  | "features";
+  | "features"
+  | "gallery";
 
 interface TrackedLinkOptions {
   platform: StorePlatform;

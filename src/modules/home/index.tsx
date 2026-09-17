@@ -17,6 +17,7 @@ import EntityDefinition from "./_components/entityDefinition";
 import PopularFoods from "./_components/popularFoods";
 import SeoHubs from "./_components/seoHubs";
 import AiTools from "./_components/aiTools";
+import AppGallery from "./_components/appGallery";
 
 function MedicalDisclaimer() {
   return (
@@ -58,6 +59,7 @@ function Home({ config }: Props) {
         <EntityDefinition />
         <Partners />
         <LiveDemo />
+        <AppGallery />
         <Features />
         <Differentiators />
         <ComparisonTable />
