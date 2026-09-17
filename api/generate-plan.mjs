@@ -310,7 +310,7 @@ export default async function handler(req, res) {
         res.write(`data: ${JSON.stringify({ event: 'start', planType: task.key })}\n\n`);
 
         const result = await ai.models.generateContent({
-          model: 'gemini-3.1-pro-preview',
+          model: 'gemini-3.7-flash',
           contents: task.prompt,
           config: {
             responseMimeType: 'application/json',

@@ -34,6 +34,7 @@ import { google } from "googleapis";
 import { gunzipSync } from "node:zlib";
 import { fetchAsaDailySpend } from "./apple-ads-leaderboard.mjs";
 import { fetchGoogleCampaignsWithSpend } from "./google-ads-leaderboard.mjs";
+import { loadState as loadAiUsageState } from "./ai-usage.mjs";
 
 export const config = { maxDuration: 60 }; // 1 RC-Call + 1 ASA-Report + 2 GAQL + 3 Firestore-Ops
 
@@ -43,8 +44,8 @@ const DOC_ID = "state";
 const DOC_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/${COLLECTION}/${DOC_ID}`;
 // Der AI-Tab hat seine Kosten schon berechnet (inkl. Preistabelle je Modell und
 // USD→EUR). Wir lesen sein Ergebnis, statt Query und Preistabelle zu duplizieren
-// — eine zweite Preistabelle würde irgendwann auseinanderlaufen.
-const AI_DOC_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/ai_usage_dashboard_cache/state`;
+// — eine zweite Preistabelle würde irgendwann auseinanderlaufen. Gelesen wird über
+// dessen loadState, weil das Blob dort auf mehrere Firestore-Dokumente verteilt liegt.
 
 const RC_PROJECT = "proj41604426";
 const RC_BASE = "https://api.revenuecat.com/v2";
@@ -372,7 +373,7 @@ async function doRefresh(firestore, prev) {
       console.error("[money] Google-Spend fehlgeschlagen:", e?.message);
       return null;
     }),
-    loadDoc(firestore, AI_DOC_PATH),
+    loadAiUsageState(firestore),
   ]);
 
   const ai = aiDailyCost(aiState);

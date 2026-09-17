@@ -17,7 +17,8 @@
 // its RevenueCat profile URL, reconstructed from the separate links document;
 // no email/phone/IDFA/display-name is fetched or stored.
 // The compact record set is gzipped + base64'd
-// into ONE Firestore string field (`data_b64`), inflated in the handler; the frontend
+// into one string (`data_b64`) that is sliced across `state_part_<i>` docs (Firestore
+// caps a document at 1 MiB), inflated in the handler; the frontend
 // does all charting + filtering client-side. Since schema 2 each record also carries
 // `days` (per-UTC-day counters + pro-rated cost) for the Von-bis/Tages-Auswahl.
 
@@ -31,8 +32,14 @@ const GCP_PROJECT = "mytemple-460913";
 const SRC_COLLECTION = "ai_usage";
 const CACHE_COLLECTION = "ai_usage_dashboard_cache";
 const DOC_ID = "state";
-const DOC_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/${CACHE_COLLECTION}/${DOC_ID}`;
-const CUSTOMER_LINKS_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/${CACHE_COLLECTION}/customer_links`;
+const DB_PATH = `projects/${GCP_PROJECT}/databases/(default)`;
+const DOC_PATH = `${DB_PATH}/documents/${CACHE_COLLECTION}/${DOC_ID}`;
+const CUSTOMER_LINKS_PATH = `${DB_PATH}/documents/${CACHE_COLLECTION}/customer_links`;
+const partDocPath = (i) => `${DB_PATH}/documents/${CACHE_COLLECTION}/${DOC_ID}_part_${i}`;
+// Firestore caps a document at ~1,048,576 bytes; data_b64 is base64 ASCII so byte ≈ length.
+// The blob is sliced into fixed-size parts, `state` itself only keeps `data_parts`.
+const PART_CHARS = 800 * 1024;
+const MAX_PARTS = 11; // one atomic commit request must stay under 10 MiB
 
 const RC_PROJECT = "proj41604426";
 const RC_BASE = "https://api.revenuecat.com/v2";
@@ -170,21 +177,47 @@ function getGoogleAuth() {
   return cachedAuth;
 }
 
-async function loadState(firestore) {
+// Also used by money.mjs (AI-Kosten im Geld-Tab) so both read the same reassembled blob.
+export async function loadState(firestore) {
+  let state;
   try {
     const r = await firestore.projects.databases.documents.get({ name: DOC_PATH });
-    return decodeFields(r.data.fields);
+    state = decodeFields(r.data.fields);
   } catch (e) {
     const status = e?.code || e?.response?.status;
     if (status === 404) return null;
     throw e;
   }
+  const n = numOr0(state.data_parts);
+  if (n > 0) {
+    const parts = await Promise.all(Array.from({ length: n }, (_, i) =>
+      firestore.projects.databases.documents.get({ name: partDocPath(i) })
+        .then((r) => decodeFields(r.data.fields))
+        .catch((e) => { throw new Error(`ai-usage: Cache-Teil ${i}/${n} nicht lesbar (${e?.message || e})`); })));
+    if (parts.some((p) => typeof p.data_b64 !== "string" || p.pull_ts_ms !== state.last_pull_ts_ms)) {
+      throw new Error("ai-usage: Cache-Teile passen nicht zum State (Pull-Zeitstempel weichen ab).");
+    }
+    state.data_b64 = parts.map((p) => p.data_b64).join("");
+  }
+  return state;
 }
-async function saveState(firestore, state) {
-  await firestore.projects.databases.documents.patch({
-    name: DOC_PATH,
-    requestBody: { fields: encodeFields(state) },
-  });
+// State + parts go in ONE commit so a reader never sees a half-written blob.
+// `prevParts` = part count of the previous state, so shrunken blobs leave no stale docs.
+export async function saveState(firestore, state, prevParts = 0) {
+  const { data_b64 = "", ...head } = state;
+  const parts = [];
+  for (let i = 0; i < data_b64.length; i += PART_CHARS) parts.push(data_b64.slice(i, i + PART_CHARS));
+  if (parts.length > MAX_PARTS) {
+    throw new Error(`ai-usage: data_b64 ${Math.round(data_b64.length / 1024)} KB braucht ${parts.length} Teile, erlaubt sind ${MAX_PARTS}.`);
+  }
+  const writes = [
+    { update: { name: DOC_PATH, fields: encodeFields({ ...head, data_parts: parts.length }) } },
+    ...parts.map((data, i) => ({
+      update: { name: partDocPath(i), fields: encodeFields({ pull_ts_ms: state.last_pull_ts_ms ?? null, data_b64: data }) },
+    })),
+  ];
+  for (let i = parts.length; i < numOr0(prevParts); i++) writes.push({ delete: partDocPath(i) });
+  await firestore.projects.databases.documents.commit({ database: DB_PATH, requestBody: { writes } });
 }
 
 async function loadCustomerLinks(firestore) {
@@ -693,12 +726,6 @@ async function doRefresh(firestore, prev) {
   const json = JSON.stringify(records);
   const b64 = gzipSync(Buffer.from(json, "utf-8")).toString("base64");
 
-  // Firestore caps a document at ~1,048,576 bytes; data_b64 is base64 ASCII so byte ≈ length.
-  const MAX_B64_BYTES = 900 * 1024;
-  if (b64.length > MAX_B64_BYTES) {
-    throw new Error(`ai-usage: data_b64 ${Math.round(b64.length / 1024)} KB überschreitet ${Math.round(MAX_B64_BYTES / 1024)} KB Guard (${records.length} Records): Firestore-1-MB-Limit naht, Blob muss gesplittet werden.`);
-  }
-
   // Einen bekannt-guten Cache nicht mit einem leeren Pull überschreiben (Firestore-Hiccup).
   if (prev && prev.total_users > 0 && records.length === 0) {
     return { ...prev, refresh_warning: "Pull ergab 0 Records, vorheriger Cache behalten." };
@@ -723,7 +750,7 @@ async function doRefresh(firestore, prev) {
       stored_b64_bytes: b64.length,
     },
   };
-  await saveState(firestore, state);
+  await saveState(firestore, state, prev?.data_parts);
   try {
     await firestore.projects.databases.documents.patch({
       name: CUSTOMER_LINKS_PATH,
