@@ -6,7 +6,7 @@ export interface UserData {
   age: number;
   height: number;
   weight: number;
-  goal: "lose" | "maintain" | "gain";
+  goal: Goal;
   activityLevel: number;
   // Meal-specific
   diet: "omnivore" | "vegetarian" | "vegan";
@@ -26,6 +26,8 @@ export interface UserData {
 
 export type PlanType = "meal" | "training" | "both";
 
+export type Goal = "lose" | "recomp" | "maintain" | "gain" | "performance" | "health";
+
 interface PlanFormProps {
   defaultPlanType: "meal" | "training";
   onSubmit: (data: UserData, planType: PlanType) => void;
@@ -40,10 +42,13 @@ const ACTIVITY_LEVELS = [
   { value: 1.9, label: "Extrem aktiv (Leistungssport)" },
 ];
 
-const GOALS = [
-  { value: "lose" as const, label: "Abnehmen", desc: "Kaloriendefizit, hoher Proteinanteil" },
-  { value: "maintain" as const, label: "Gewicht halten", desc: "Ausgewogene Makroverteilung" },
-  { value: "gain" as const, label: "Muskelaufbau", desc: "Kalorienüberschuss, viele Kohlenhydrate" },
+const GOALS: { value: Goal; label: string; desc: string }[] = [
+  { value: "lose", label: "Abnehmen", desc: "Fett verlieren mit ca. 500 kcal Defizit und viel Protein" },
+  { value: "recomp", label: "Body Recomposition", desc: "Fett ab, Muskeln auf: leichtes Defizit, sehr viel Protein" },
+  { value: "maintain", label: "Gewicht halten", desc: "Ausgewogene Makroverteilung" },
+  { value: "gain", label: "Muskelaufbau", desc: "Leichter Überschuss für sauberen Aufbau" },
+  { value: "performance", label: "Ausdauer & Leistung", desc: "Viel Energie aus Kohlenhydraten für Laufen, Rad & Co." },
+  { value: "health", label: "Gesünder essen", desc: "Kein Gewichtsziel, Fokus auf frische, unverarbeitete Lebensmittel" },
 ];
 
 const DIETS = [
@@ -77,7 +82,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
   const [age, setAge] = useState(30);
   const [height, setHeight] = useState(175);
   const [weight, setWeight] = useState(75);
-  const [goal, setGoal] = useState<"lose" | "maintain" | "gain">("lose");
+  const [goal, setGoal] = useState<Goal>("lose");
   const [activityLevel, setActivityLevel] = useState(1.55);
   const [includeMeal, setIncludeMeal] = useState(defaultPlanType === "meal");
   const [includeTraining, setIncludeTraining] = useState(defaultPlanType === "training");
@@ -207,7 +212,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
             {/* Ziel */}
             <div className="form-control">
               <label className="label"><span className="label-text font-semibold">Dein Ziel</span></label>
-              <div className="grid gap-2">
+              <div className="grid gap-2 sm:grid-cols-2">
                 {GOALS.map((g) => (
                   <label
                     key={g.value}

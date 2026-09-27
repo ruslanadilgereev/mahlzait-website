@@ -1,4 +1,4 @@
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback } from "react";
 import AppBanner from "@components/appBanner";
 import Footer from "@components/footer";
 import Navbar from "@components/navbar";
@@ -35,7 +35,6 @@ function TrainingsplanPage({ config }: Props) {
   const [trainingDays, setTrainingDays] = useState<TrainingDay[]>([]);
 
   const [showResults, setShowResults] = useState(false);
-  const resultsRef = useRef<HTMLDivElement>(null);
 
   const handleGenerate = useCallback(async (userData: UserData, planType: PlanType) => {
     setIsLoading(true);
@@ -71,7 +70,6 @@ function TrainingsplanPage({ config }: Props) {
       let buffer = "";
 
       setShowResults(true);
-      setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: "smooth", block: "start" }), 300);
 
       while (true) {
         const { done, value } = await reader.read();
@@ -186,7 +184,7 @@ function TrainingsplanPage({ config }: Props) {
           )}
 
           {/* Results */}
-          <div ref={resultsRef}>
+          <div>
             {showResults && hasResults && (
               <div className="space-y-10 mt-8 max-w-2xl mx-auto">
                 {trainingDays.length > 0 && (

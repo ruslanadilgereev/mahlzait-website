@@ -28,16 +28,32 @@ function calculateTDEE(gender, age, height, weight, activityLevel) {
   return Math.round(bmr * activityLevel);
 }
 
-function calculateMacros(tdee, goal) {
+function calculateMacros(tdee, goal, weight) {
   let calories, proteinPct, carbsPct, fatPct;
   switch (goal) {
     case 'lose':
       calories = Math.round(tdee - 500);
       proteinPct = 30; carbsPct = 40; fatPct = 30;
       break;
+    case 'recomp': {
+      // Recomp lives on protein, so it is set per kg body weight (2.2 g/kg)
+      // instead of as a share of calories; fat 25 %, carbs take the rest.
+      calories = Math.round(tdee - 300);
+      const protein = Math.round(weight * 2.2);
+      const fat = Math.round((calories * 0.25) / 9);
+      return { calories, protein, fat, carbs: Math.max(0, Math.round((calories - protein * 4 - fat * 9) / 4)) };
+    }
     case 'gain':
       calories = Math.round(tdee + 300);
       proteinPct = 25; carbsPct = 50; fatPct = 25;
+      break;
+    case 'performance':
+      calories = tdee;
+      proteinPct = 20; carbsPct = 55; fatPct = 25;
+      break;
+    case 'health':
+      calories = tdee;
+      proteinPct = 20; carbsPct = 50; fatPct = 30;
       break;
     default:
       calories = tdee;
@@ -64,7 +80,7 @@ function validateInput(body) {
   if (!age || age < 14 || age > 100) return 'Bitte gib ein Alter zwischen 14 und 100 an.';
   if (!height || height < 120 || height > 250) return 'Bitte gib eine Größe zwischen 120 und 250 cm an.';
   if (!weight || weight < 30 || weight > 300) return 'Bitte gib ein Gewicht zwischen 30 und 300 kg an.';
-  if (!['lose', 'maintain', 'gain'].includes(goal)) return 'Bitte wähle ein Ziel.';
+  if (!Object.hasOwn(GOAL_LABELS, goal)) return 'Bitte wähle ein Ziel.';
   if (!activityLevel || activityLevel < 1.0 || activityLevel > 2.5) return 'Bitte wähle ein Aktivitätslevel.';
 
   if (type === 'meal' || type === 'both') {
@@ -178,7 +194,32 @@ const trainingJsonSchema = {
 };
 
 // ── Prompt builders ──
-const GOAL_LABELS = { lose: 'Abnehmen', maintain: 'Gewicht halten', gain: 'Muskelaufbau' };
+const GOAL_LABELS = {
+  lose: 'Abnehmen',
+  recomp: 'Body Recomposition',
+  maintain: 'Gewicht halten',
+  gain: 'Muskelaufbau',
+  performance: 'Ausdauer & Leistung',
+  health: 'Gesünder essen',
+};
+// What each goal means for the food and the training, so the plans differ
+// beyond the calorie number.
+const GOAL_MEAL_FOCUS = {
+  lose: 'Sättigende, volumenreiche Gerichte mit viel Gemüse und Protein, wenig flüssige Kalorien',
+  recomp: 'Protein gleichmäßig auf alle Mahlzeiten verteilen (möglichst mind. 30 g pro Hauptmahlzeit), Kohlenhydrate bevorzugt rund ums Training',
+  maintain: 'Ausgewogene, abwechslungsreiche Mischkost',
+  gain: 'Energiedichte, proteinreiche Mahlzeiten, die sich auch in größeren Mengen gut essen lassen',
+  performance: 'Kohlenhydratreiche Mahlzeiten als Energie für Ausdauertraining, leicht verdauliche Snacks vor und Regeneration nach dem Training',
+  health: 'Möglichst unverarbeitete Lebensmittel, viel Gemüse, Hülsenfrüchte und Vollkorn (mind. 30 g Ballaststoffe am Tag), wenig Zucker und Fertigprodukte',
+};
+const GOAL_TRAINING_FOCUS = {
+  lose: 'Krafttraining zum Muskelerhalt, ergänzt durch moderates Cardio',
+  recomp: 'Krafttraining mit konsequenter progressiver Überlastung im Hypertrophie-Bereich (6-12 Wdh.), nur wenig zusätzliches Cardio',
+  maintain: 'Ausgewogene Mischung aus Kraft und Ausdauer',
+  gain: 'Hypertrophie-Training mit ausreichend Volumen pro Muskelgruppe',
+  performance: 'Ausdauereinheiten (z.B. Laufen, Radfahren, Intervalle) als Schwerpunkt, dazu ergänzendes Krafttraining für Stabilität und Verletzungsprophylaxe. Ausdauereinheiten als Übung mit Dauer/Distanz in reps angeben',
+  health: 'Ausgewogene Mischung aus Kraft, Ausdauer und Beweglichkeit, gelenkschonend und alltagstauglich',
+};
 const DIET_LABELS = { omnivore: 'Omnivor (alles)', vegetarian: 'Vegetarisch', vegan: 'Vegan' };
 const LEVEL_LABELS = { beginner: 'Anfänger', intermediate: 'Fortgeschritten', advanced: 'Profi' };
 const EQUIPMENT_LABELS = { gym: 'Fitnessstudio', home: 'Home (Hanteln)', bodyweight: 'Bodyweight', outdoor: 'Outdoor' };
@@ -198,6 +239,7 @@ STRENGE VORGABEN (nicht abweichen):
 - Max. Zubereitungszeit pro Mahlzeit: ${userData.cookingTime || 30} Minuten
 - Budget-Tendenz: ${userData.budget === 'cheap' ? 'Günstig' : userData.budget === 'medium' ? 'Mittel' : 'Egal'}
 - Ziel: ${GOAL_LABELS[userData.goal]}
+- Schwerpunkt für dieses Ziel: ${GOAL_MEAL_FOCUS[userData.goal]}
 
 REGELN:
 - Realistische, alltagstaugliche Gerichte mit gängigen Zutaten aus dem deutschen Supermarkt
@@ -215,6 +257,7 @@ function buildTrainingPrompt(userData, macros) {
 
 VORGABEN:
 - Ziel: ${GOAL_LABELS[userData.goal]}
+- Schwerpunkt für dieses Ziel: ${GOAL_TRAINING_FOCUS[userData.goal]}
 - Erfahrungslevel: ${LEVEL_LABELS[userData.experienceLevel]}
 - Trainingstage pro Woche: ${userData.daysPerWeek}
 - Equipment: ${EQUIPMENT_LABELS[userData.equipment]}
@@ -373,7 +416,7 @@ export default async function handler(req, res) {
 
     const { type, userData } = body;
     const tdee = calculateTDEE(userData.gender, userData.age, userData.height, userData.weight, userData.activityLevel);
-    const macros = calculateMacros(tdee, userData.goal);
+    const macros = calculateMacros(tdee, userData.goal, userData.weight);
 
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {
