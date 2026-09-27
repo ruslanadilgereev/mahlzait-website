@@ -124,7 +124,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
     );
   };
 
-  const canProceedStep1 = (includeMeal || includeTraining) && age >= 14 && age <= 100 && height >= 120 && weight >= 30;
+  const canProceedStep1 = (includeMeal || includeTraining) && age >= 14 && age <= 100 && height >= 120 && height <= 250 && weight >= 30 && weight <= 300;
 
   return (
     <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto">
@@ -365,7 +365,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
                       <span className="label-text-alt">{mealsPerDay}</span>
                     </label>
                     <div className="flex gap-3">
-                      {[3, 4, 5].map((n) => (
+                      {[2, 3, 4, 5].map((n) => (
                         <label
                           key={n}
                           className={`flex-1 text-center p-2 rounded-lg border cursor-pointer transition-colors ${

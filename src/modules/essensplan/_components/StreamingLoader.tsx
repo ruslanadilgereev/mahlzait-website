@@ -12,7 +12,7 @@ export default function StreamingLoader({ message, planType }: StreamingLoaderPr
       <div className="text-center py-6">
         <span className="loading loading-dots loading-lg text-primary" />
         <p className="mt-4 text-lg font-semibold animate-pulse">{message}</p>
-        <p className="text-sm opacity-60 mt-1">Das kann bis zu 15 Sekunden dauern</p>
+        <p className="text-sm opacity-60 mt-1">Der erste Tag erscheint in wenigen Sekunden</p>
       </div>
 
       {/* Skeleton cards */}

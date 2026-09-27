@@ -51,54 +51,44 @@ function calculateMacros(tdee, goal) {
   };
 }
 
-// ── Input validation ──
+// ── Input validation (messages are shown to the user) ──
 function validateInput(body) {
-  if (!body || typeof body !== 'object') return 'Invalid request body';
+  if (!body || typeof body !== 'object') return 'Ungültige Anfrage.';
   const { type, userData } = body;
-  if (!['meal', 'training', 'both'].includes(type)) return 'Invalid type';
-  if (!userData || typeof userData !== 'object') return 'Missing userData';
-  if (userData._hp) return 'Bot detected';
+  if (!['meal', 'training', 'both'].includes(type)) return 'Ungültiger Plan-Typ.';
+  if (!userData || typeof userData !== 'object') return 'Es fehlen Angaben.';
+  if (userData._hp) return 'Anfrage abgelehnt.';
 
   const { gender, age, height, weight, goal, activityLevel } = userData;
-  if (!['male', 'female'].includes(gender)) return 'Invalid gender';
-  if (!age || age < 14 || age > 100) return 'Invalid age';
-  if (!height || height < 120 || height > 250) return 'Invalid height';
-  if (!weight || weight < 30 || weight > 300) return 'Invalid weight';
-  if (!['lose', 'maintain', 'gain'].includes(goal)) return 'Invalid goal';
-  if (!activityLevel || activityLevel < 1.0 || activityLevel > 2.5) return 'Invalid activity level';
+  if (!['male', 'female'].includes(gender)) return 'Bitte wähle ein Geschlecht.';
+  if (!age || age < 14 || age > 100) return 'Bitte gib ein Alter zwischen 14 und 100 an.';
+  if (!height || height < 120 || height > 250) return 'Bitte gib eine Größe zwischen 120 und 250 cm an.';
+  if (!weight || weight < 30 || weight > 300) return 'Bitte gib ein Gewicht zwischen 30 und 300 kg an.';
+  if (!['lose', 'maintain', 'gain'].includes(goal)) return 'Bitte wähle ein Ziel.';
+  if (!activityLevel || activityLevel < 1.0 || activityLevel > 2.5) return 'Bitte wähle ein Aktivitätslevel.';
 
   if (type === 'meal' || type === 'both') {
     const { diet, mealsPerDay } = userData;
-    if (!['omnivore', 'vegetarian', 'vegan'].includes(diet)) return 'Invalid diet';
-    if (!mealsPerDay || mealsPerDay < 2 || mealsPerDay > 6) return 'Invalid mealsPerDay';
+    if (!['omnivore', 'vegetarian', 'vegan'].includes(diet)) return 'Bitte wähle eine Ernährungsform.';
+    if (!mealsPerDay || mealsPerDay < 2 || mealsPerDay > 6) return 'Bitte wähle 2 bis 6 Mahlzeiten pro Tag.';
   }
   if (type === 'training' || type === 'both') {
     const { daysPerWeek, experienceLevel, equipment } = userData;
-    if (!daysPerWeek || daysPerWeek < 2 || daysPerWeek > 7) return 'Invalid daysPerWeek';
-    if (!['beginner', 'intermediate', 'advanced'].includes(experienceLevel)) return 'Invalid experienceLevel';
-    if (!['gym', 'home', 'bodyweight', 'outdoor'].includes(equipment)) return 'Invalid equipment';
+    if (!daysPerWeek || daysPerWeek < 2 || daysPerWeek > 7) return 'Bitte wähle 2 bis 7 Trainingstage.';
+    if (!['beginner', 'intermediate', 'advanced'].includes(experienceLevel)) return 'Bitte wähle dein Erfahrungslevel.';
+    if (!['gym', 'home', 'bodyweight', 'outdoor'].includes(equipment)) return 'Bitte wähle dein Equipment.';
   }
   return null;
 }
 
 // ── JSON Schemas for Gemini responseSchema ──
 
+// No summary here: the daily target comes from calculateMacros(), not from the
+// model, and leaving it out lets the first day start streaming sooner.
 const mealJsonSchema = {
   type: 'object',
-  required: ['summary', 'days', 'tips', 'disclaimer'],
+  required: ['days', 'tips', 'disclaimer'],
   properties: {
-    summary: {
-      type: 'object',
-      required: ['dailyCalories', 'proteinGrams', 'carbsGrams', 'fatGrams', 'goal', 'diet'],
-      properties: {
-        dailyCalories: { type: 'number', description: 'Tägliche Gesamtkalorien' },
-        proteinGrams: { type: 'number', description: 'Protein in Gramm' },
-        carbsGrams: { type: 'number', description: 'Kohlenhydrate in Gramm' },
-        fatGrams: { type: 'number', description: 'Fett in Gramm' },
-        goal: { type: 'string', description: 'Ziel, z.B. Abnehmen' },
-        diet: { type: 'string', description: 'Ernährungsform' },
-      },
-    },
     days: {
       type: 'array',
       description: '7 Tage Montag bis Sonntag',
@@ -241,6 +231,119 @@ REGELN:
 - Alle Texte auf Deutsch`;
 }
 
+// ── Streaming ──
+// Feeds the model's JSON text in as it arrives and reports every object that
+// is complete, as soon as its closing brace is in: array items directly under
+// the root (the days) as 'item', objects directly under the root (the
+// training summary) as 'object'. Strings are tracked so braces inside
+// dish names or notes don't count.
+function createJsonObjectExtractor(onObject) {
+  let text = '';
+  let pos = 0;
+  let inString = false;
+  let escaped = false;
+  let start = -1;
+  const stack = [];
+  return (chunk) => {
+    text += chunk;
+    for (; pos < text.length; pos++) {
+      const ch = text[pos];
+      if (inString) {
+        if (escaped) escaped = false;
+        else if (ch === '\\') escaped = true;
+        else if (ch === '"') inString = false;
+        continue;
+      }
+      if (ch === '"') {
+        inString = true;
+      } else if (ch === '{' || ch === '[') {
+        if (ch === '{' && (stack.length === 1 || (stack.length === 2 && stack[1] === '['))) start = pos;
+        stack.push(ch);
+      } else if (ch === '}' || ch === ']') {
+        stack.pop();
+        if (ch === '}' && start >= 0 && (stack.length === 1 || (stack.length === 2 && stack[1] === '['))) {
+          onObject(stack.length === 1 ? 'object' : 'item', JSON.parse(text.slice(start, pos + 1)));
+          start = -1;
+        }
+      }
+    }
+  };
+}
+
+const sum = (items, key) => Math.round(items.reduce((acc, item) => acc + (Number(item[key]) || 0), 0));
+
+async function streamPlan(ai, prompt, schema, onObject) {
+  const stream = await ai.models.generateContentStream({
+    model: 'gemini-3.7-flash',
+    contents: prompt,
+    config: {
+      responseMimeType: 'application/json',
+      responseJsonSchema: schema,
+      maxOutputTokens: 65536,
+      temperature: 0.7,
+      // Default thinking delays the first token by ~6s; LOW cuts that to ~2s
+      // with the same plan quality (compared on identical input, 2026-09-28).
+      thinkingConfig: { thinkingLevel: 'LOW' },
+    },
+  });
+  const extract = createJsonObjectExtractor(onObject);
+  let full = '';
+  for await (const chunk of stream) {
+    const text = chunk.text || '';
+    full += text;
+    extract(text);
+  }
+  return JSON.parse(full);
+}
+
+async function generateMealPlan(ai, userData, macros, send) {
+  send({ event: 'start', planType: 'meal' });
+  const summary = {
+    dailyCalories: macros.calories,
+    proteinGrams: macros.protein,
+    carbsGrams: macros.carbs,
+    fatGrams: macros.fat,
+    goal: GOAL_LABELS[userData.goal],
+    diet: DIET_LABELS[userData.diet],
+  };
+  send({ event: 'summary', planType: 'meal', data: { summary } });
+
+  let index = 0;
+  const parsed = await streamPlan(ai, buildMealPrompt(userData, macros), mealJsonSchema, (kind, day) => {
+    if (kind !== 'item' || !Array.isArray(day.meals)) return;
+    // Day totals are summed here so they always match the meals shown.
+    send({
+      event: 'day',
+      planType: 'meal',
+      index: index++,
+      data: {
+        ...day,
+        totalCalories: sum(day.meals, 'calories'),
+        totalProtein: sum(day.meals, 'protein'),
+        totalCarbs: sum(day.meals, 'carbs'),
+        totalFat: sum(day.meals, 'fat'),
+      },
+    });
+  });
+
+  send({ event: 'summary', planType: 'meal', data: { summary, tips: parsed.tips, disclaimer: parsed.disclaimer } });
+}
+
+async function generateTrainingPlan(ai, userData, macros, send) {
+  send({ event: 'start', planType: 'training' });
+  let index = 0;
+  const parsed = await streamPlan(ai, buildTrainingPrompt(userData, macros), trainingJsonSchema, (kind, obj) => {
+    if (kind === 'object' && obj.splitType) send({ event: 'summary', planType: 'training', data: { summary: obj } });
+    if (kind === 'item' && obj.day) send({ event: 'day', planType: 'training', index: index++, data: obj });
+  });
+
+  send({
+    event: 'summary',
+    planType: 'training',
+    data: { summary: parsed.summary, tips: parsed.tips, disclaimer: parsed.disclaimer, progressionPlan: parsed.progressionPlan },
+  });
+}
+
 // ── Main handler ──
 export default async function handler(req, res) {
   try {
@@ -252,7 +355,7 @@ export default async function handler(req, res) {
     if (!checkRateLimit(ip)) {
       return res.status(429).json({
         error: 'Rate limit exceeded',
-        message: 'Du hast das Limit von 3 Generierungen pro Stunde erreicht. Bitte versuche es später erneut.',
+        message: `Du hast das Limit von ${RATE_LIMIT} Plänen pro Stunde erreicht. Bitte versuche es später erneut.`,
       });
     }
 
@@ -265,7 +368,7 @@ export default async function handler(req, res) {
 
     const validationError = validateInput(body);
     if (validationError) {
-      return res.status(400).json({ error: validationError });
+      return res.status(400).json({ error: validationError, message: validationError });
     }
 
     const { type, userData } = body;
@@ -285,58 +388,21 @@ export default async function handler(req, res) {
     res.setHeader('Connection', 'keep-alive');
     res.setHeader('Access-Control-Allow-Origin', '*');
 
+    const send = (msg) => res.write(`data: ${JSON.stringify(msg)}\n\n`);
+
     // Send macros first so client can display summary immediately
-    res.write(`data: ${JSON.stringify({ event: 'macros', data: { tdee, ...macros } })}\n\n`);
+    send({ event: 'macros', data: { tdee, ...macros } });
 
     try {
-      const tasks = [];
+      // Both plans run at the same time. Each reports its own failure, so a
+      // broken meal plan does not end the response mid-way through training.
+      const failed = (planType) => () => send({ event: 'error', planType, message: 'Der Plan konnte nicht erstellt werden. Bitte versuche es erneut.' });
+      const plans = [];
+      if (type === 'meal' || type === 'both') plans.push(generateMealPlan(ai, userData, macros, send).catch(failed('meal')));
+      if (type === 'training' || type === 'both') plans.push(generateTrainingPlan(ai, userData, macros, send).catch(failed('training')));
+      await Promise.all(plans);
 
-      if (type === 'meal' || type === 'both') {
-        tasks.push({
-          key: 'meal',
-          prompt: buildMealPrompt(userData, macros),
-          schema: mealJsonSchema,
-        });
-      }
-      if (type === 'training' || type === 'both') {
-        tasks.push({
-          key: 'training',
-          prompt: buildTrainingPrompt(userData, macros),
-          schema: trainingJsonSchema,
-        });
-      }
-
-      for (const task of tasks) {
-        res.write(`data: ${JSON.stringify({ event: 'start', planType: task.key })}\n\n`);
-
-        const result = await ai.models.generateContent({
-          model: 'gemini-3.7-flash',
-          contents: task.prompt,
-          config: {
-            responseMimeType: 'application/json',
-            responseJsonSchema: task.schema,
-            maxOutputTokens: 65536,
-            temperature: 0.7,
-          },
-        });
-
-        const parsed = JSON.parse(result.text);
-
-        // Stream days one by one for progressive rendering
-        if (parsed.days && Array.isArray(parsed.days)) {
-          const summaryData = { ...parsed };
-          delete summaryData.days;
-          res.write(`data: ${JSON.stringify({ event: 'summary', planType: task.key, data: summaryData })}\n\n`);
-
-          for (let i = 0; i < parsed.days.length; i++) {
-            res.write(`data: ${JSON.stringify({ event: 'day', planType: task.key, index: i, data: parsed.days[i] })}\n\n`);
-          }
-        } else {
-          res.write(`data: ${JSON.stringify({ event: 'complete', planType: task.key, data: parsed })}\n\n`);
-        }
-      }
-
-      res.write(`data: ${JSON.stringify({ event: 'done' })}\n\n`);
+      send({ event: 'done' });
       res.end();
     } catch (e) {
       if (res.headersSent) {

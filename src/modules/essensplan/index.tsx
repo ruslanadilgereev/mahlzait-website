@@ -120,11 +120,11 @@ function EssensplanPage({ config }: Props) {
                 break;
               case "error":
                 setError(msg.message || "Ein Fehler ist aufgetreten");
-                trackEvent("plan_generate_error", { plan_type: currentPlanType, page: "essensplan", error: msg.message });
+                trackEvent("plan_generate_error", { plan_type: planType, page: "essensplan", error: msg.message });
                 break;
               case "done":
                 setLoadingMessage("");
-                trackEvent("plan_generate_complete", { plan_type: currentPlanType, page: "essensplan" });
+                trackEvent("plan_generate_complete", { plan_type: planType, page: "essensplan" });
                 break;
             }
           } catch {
@@ -221,7 +221,7 @@ function EssensplanPage({ config }: Props) {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
                         </svg>
-                        Plan drucken
+                        Als PDF speichern
                       </button>
                       <button
                         className="btn btn-primary gap-2"
@@ -236,7 +236,7 @@ function EssensplanPage({ config }: Props) {
                       <div className="card bg-primary/5 border border-primary/20">
                         <div className="card-body py-4 items-center text-center">
                           <p className="font-semibold">Passenden Trainingsplan dazu?</p>
-                          <a href="/trainingsplan-erstellen" className="btn btn-primary btn-sm mt-1">
+                          <a href="/trainingsplan-erstellen/" className="btn btn-primary btn-sm mt-1">
                             Trainingsplan erstellen &rarr;
                           </a>
                         </div>
@@ -365,18 +365,18 @@ function EssensplanPage({ config }: Props) {
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Häufige Fragen zum Essensplan Generator</h2>
             <div className="space-y-4 max-w-3xl mx-auto">
               {[
-                { q: "Ist der Essensplan Generator wirklich kostenlos?", a: "Ja, du kannst bis zu 3 Pläne pro Stunde komplett kostenlos erstellen. Es gibt keine versteckten Kosten oder Abo-Pflicht." },
+                { q: "Ist der Essensplan Generator wirklich kostenlos?", a: "Ja, du kannst bis zu 10 Pläne pro Stunde komplett kostenlos erstellen. Es gibt keine versteckten Kosten oder Abo-Pflicht." },
                 { q: "Wie genau sind die Kalorien- und Makro-Angaben?", a: "Der Kalorienbedarf wird mit der wissenschaftlich validierten Mifflin-St Jeor Formel berechnet, die bei ~70% der Personen auf ±10% genau ist. Die Makros der einzelnen Gerichte sind Richtwerte — für exaktes Tracking empfehlen wir die Mahlzait App." },
                 { q: "Kann ich den Plan anpassen nachdem er generiert wurde?", a: "Du kannst jederzeit einen neuen Plan mit geänderten Präferenzen generieren. Einzelne Mahlzeiten tauschen kannst du, indem du auf ähnliche Alternativen mit gleichen Makros achtest." },
                 { q: "Berücksichtigt der Plan meine Allergien?", a: "Ja, du kannst Laktose, Gluten, Nüsse, Soja, Ei und Fructose als Unverträglichkeiten angeben. Die KI erstellt dann nur Rezepte ohne diese Zutaten." },
                 { q: "Für wen ist der Essensplan geeignet?", a: "Für alle, die ihre Ernährung strukturieren möchten — ob zum Abnehmen, Muskelaufbau oder für eine ausgewogene Ernährung. Der Generator ist nicht als medizinische Ernährungsberatung gedacht und ersetzt keine ärztliche Empfehlung bei Erkrankungen." },
                 { q: "Welche Ernährungsformen werden unterstützt?", a: "Aktuell: Omnivor (alles), Vegetarisch und Vegan. Spezielle Diäten wie Keto, Paleo oder Low-FODMAP sind derzeit nicht als eigene Optionen verfügbar." },
-                { q: "Wie lange dauert die Generierung?", a: "In der Regel 5-15 Sekunden. Du siehst den Fortschritt live — jeder Tag wird angezeigt, sobald er fertig ist." },
-                { q: "Kann ich auch einen Trainingsplan dazu erstellen?", a: "Ja! In Schritt 3 kannst du zusätzlich einen Trainingsplan aktivieren. Alternativ nutze unseren Trainingsplan Generator für noch mehr Optionen." },
+                { q: "Wie lange dauert die Generierung?", a: "Der erste Tag erscheint nach wenigen Sekunden, der komplette Wochenplan steht in etwa 10 Sekunden. Du siehst den Fortschritt live — jeder Tag wird angezeigt, sobald er fertig ist." },
+                { q: "Kann ich auch einen Trainingsplan dazu erstellen?", a: "Ja! In Schritt 1 kannst du zusätzlich einen Trainingsplan aktivieren. Alternativ nutze unseren Trainingsplan Generator für noch mehr Optionen." },
                 { q: "Werden meine Daten gespeichert?", a: "Nein. Deine eingegebenen Daten werden nur für die Generierung verwendet und danach nicht gespeichert. Der generierte Plan existiert nur in deinem Browser." },
-                { q: "Wie oft kann ich einen Plan erstellen?", a: "Bis zu 3 Mal pro Stunde. Danach musst du kurz warten. So stellen wir sicher, dass der Service für alle verfügbar bleibt." },
+                { q: "Wie oft kann ich einen Plan erstellen?", a: "Bis zu 10 Mal pro Stunde. Danach musst du kurz warten. So stellen wir sicher, dass der Service für alle verfügbar bleibt." },
                 { q: "Was unterscheidet diesen Generator von anderen?", a: "Unser Generator berechnet zuerst deinen exakten Kalorienbedarf und Makros wissenschaftlich, und gibt diese Werte dann an die KI weiter. So stimmen die Nährwerte — statt dass die KI Kalorien schätzt (was oft ungenau ist)." },
-                { q: "Kann ich den Plan ausdrucken?", a: "Ja, nach der Generierung gibt es einen 'Plan drucken' Button, der eine druckfreundliche Version erstellt." },
+                { q: "Kann ich den Plan ausdrucken?", a: "Ja, nach der Generierung speicherst du ihn über 'Als PDF speichern' als PDF oder druckst ihn aus: mit Wochenübersicht, allen Rezepten und einer nach Supermarkt-Bereichen sortierten Einkaufsliste." },
               ].map((item, i) => (
                 <div key={i} className="collapse collapse-arrow bg-base-100 border border-base-300">
                   <input type="radio" name="faq-essensplan" />
@@ -412,12 +412,12 @@ function EssensplanPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4">
             <h3 className="text-lg font-bold mb-6 text-center">Weitere Rechner & Tools</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/trainingsplan-erstellen" className="btn btn-primary">Trainingsplan erstellen</a>
-              <a href="/kalorienbedarf-berechnen" className="btn btn-outline">Kalorienbedarf berechnen</a>
-              <a href="/makros-berechnen" className="btn btn-outline">Makros berechnen</a>
-              <a href="/kaloriendefizit-berechnen" className="btn btn-outline">Kaloriendefizit berechnen</a>
-              <a href="/protein-bedarf-rechner" className="btn btn-outline">Proteinbedarf Rechner</a>
-              <a href="/rechner" className="btn btn-outline">Alle Rechner</a>
+              <a href="/trainingsplan-erstellen/" className="btn btn-primary">Trainingsplan erstellen</a>
+              <a href="/kalorienbedarf-berechnen/" className="btn btn-outline">Kalorienbedarf berechnen</a>
+              <a href="/makros-berechnen/" className="btn btn-outline">Makros berechnen</a>
+              <a href="/kaloriendefizit-berechnen/" className="btn btn-outline">Kaloriendefizit berechnen</a>
+              <a href="/protein-bedarf-rechner/" className="btn btn-outline">Proteinbedarf Rechner</a>
+              <a href="/rechner/" className="btn btn-outline">Alle Rechner</a>
             </div>
           </div>
         </section>

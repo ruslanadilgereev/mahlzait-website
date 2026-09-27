@@ -116,11 +116,11 @@ function TrainingsplanPage({ config }: Props) {
                 break;
               case "error":
                 setError(msg.message || "Ein Fehler ist aufgetreten");
-                trackEvent("plan_generate_error", { plan_type: currentPlanType, page: "trainingsplan", error: msg.message });
+                trackEvent("plan_generate_error", { plan_type: planType, page: "trainingsplan", error: msg.message });
                 break;
               case "done":
                 setLoadingMessage("");
-                trackEvent("plan_generate_complete", { plan_type: currentPlanType, page: "trainingsplan" });
+                trackEvent("plan_generate_complete", { plan_type: planType, page: "trainingsplan" });
                 break;
             }
           } catch {
@@ -211,7 +211,7 @@ function TrainingsplanPage({ config }: Props) {
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
                           <path strokeLinecap="round" strokeLinejoin="round" d="M6.72 13.829c-.24.03-.48.062-.72.096m.72-.096a42.415 42.415 0 0 1 10.56 0m-10.56 0L6.34 18m10.94-4.171c.24.03.48.062.72.096m-.72-.096L17.66 18m0 0 .229 2.523a1.125 1.125 0 0 1-1.12 1.227H7.231c-.662 0-1.18-.568-1.12-1.227L6.34 18m11.318 0h1.091A2.25 2.25 0 0 0 21 15.75V9.456c0-1.081-.768-2.015-1.837-2.175a48.055 48.055 0 0 0-1.913-.247M6.34 18H5.25A2.25 2.25 0 0 1 3 15.75V9.456c0-1.081.768-2.015 1.837-2.175a48.041 48.041 0 0 1 1.913-.247m10.5 0a48.536 48.536 0 0 0-10.5 0m10.5 0V3.375c0-.621-.504-1.125-1.125-1.125h-8.25c-.621 0-1.125.504-1.125 1.125v3.659M18 10.5h.008v.008H18V10.5Zm-3 0h.008v.008H15V10.5Z" />
                         </svg>
-                        Plan drucken
+                        Als PDF speichern
                       </button>
                       <button
                         className="btn btn-primary gap-2"
@@ -225,7 +225,7 @@ function TrainingsplanPage({ config }: Props) {
                       <div className="card bg-primary/5 border border-primary/20">
                         <div className="card-body py-4 items-center text-center">
                           <p className="font-semibold">Passenden Essensplan dazu?</p>
-                          <a href="/essensplan-erstellen" className="btn btn-primary btn-sm mt-1">
+                          <a href="/essensplan-erstellen/" className="btn btn-primary btn-sm mt-1">
                             Essensplan erstellen &rarr;
                           </a>
                         </div>
@@ -353,13 +353,13 @@ function TrainingsplanPage({ config }: Props) {
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">Häufige Fragen zum Trainingsplan Generator</h2>
             <div className="space-y-4 max-w-3xl mx-auto">
               {[
-                { q: "Ist der Trainingsplan Generator kostenlos?", a: "Ja, komplett kostenlos. Bis zu 3 Pläne pro Stunde ohne Anmeldung oder Abo." },
+                { q: "Ist der Trainingsplan Generator kostenlos?", a: "Ja, komplett kostenlos. Bis zu 10 Pläne pro Stunde ohne Anmeldung oder Abo." },
                 { q: "Welches Erfahrungslevel soll ich wählen?", a: "Anfänger: Weniger als 6 Monate regelmäßiges Training. Fortgeschritten: 6 Monate bis 2 Jahre. Profi: Über 2 Jahre mit solider Technik in Grundübungen." },
                 { q: "Was bedeutet 'Split-Typ'?", a: "Der Split bestimmt, wie Muskelgruppen über die Woche verteilt werden. Ganzkörper = alle Muskeln pro Session. Push/Pull/Legs = aufgeteilt nach Drück-, Zug- und Beinübungen. Upper/Lower = Ober- und Unterkörper abwechselnd." },
                 { q: "Kann ich nur mit Bodyweight trainieren?", a: "Ja! Wähle 'Bodyweight' als Equipment und die KI erstellt einen Plan nur mit Eigengewichtsübungen wie Liegestütze, Klimmzüge, Dips und Kniebeugen." },
                 { q: "Wie oft sollte ich den Plan wechseln?", a: "Alle 4-6 Wochen. Dein Körper gewöhnt sich an den Trainingsreiz, daher ist regelmäßige Variation wichtig. Generiere einfach einen neuen Plan mit aktualisierten Parametern." },
                 { q: "Berücksichtigt der Plan Aufwärmen?", a: "Ja, jeder Trainingstag enthält ein spezifisches Warm-Up und Cool-Down. Das Aufwärmen ist auf die Übungen des Tages abgestimmt." },
-                { q: "Kann ich auch einen Essensplan dazu erstellen?", a: "Ja! In Schritt 3 kannst du einen Essensplan zusätzlich aktivieren. Die Makros werden automatisch auf dein Trainingsziel abgestimmt." },
+                { q: "Kann ich auch einen Essensplan dazu erstellen?", a: "Ja! In Schritt 1 kannst du einen Essensplan zusätzlich aktivieren. Die Makros werden automatisch auf dein Trainingsziel abgestimmt." },
                 { q: "Was mache ich an Ruhetagen?", a: "Ruhetage sind für Regeneration. Leichte Aktivität wie Spazierengehen, Stretching oder Yoga ist ideal. Schweres Training an Ruhetagen verhindert optimale Erholung." },
                 { q: "Wie viele Tage pro Woche sind optimal?", a: "Anfänger: 3x. Fortgeschrittene: 4-5x. Profis: 5-6x. Mehr ist nicht automatisch besser — Regeneration ist entscheidend für Muskelwachstum." },
                 { q: "Werden meine Daten gespeichert?", a: "Nein, keine Daten werden gespeichert. Der Plan existiert nur in deinem Browser bis du die Seite verlässt." },
@@ -398,12 +398,12 @@ function TrainingsplanPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4">
             <h3 className="text-lg font-bold mb-6 text-center">Weitere Rechner & Tools</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/essensplan-erstellen" className="btn btn-primary">Essensplan erstellen</a>
-              <a href="/kalorienverbrauch-rechner" className="btn btn-outline">Kalorienverbrauch Rechner</a>
-              <a href="/protein-bedarf-rechner" className="btn btn-outline">Proteinbedarf Rechner</a>
-              <a href="/kalorienbedarf-berechnen" className="btn btn-outline">Kalorienbedarf berechnen</a>
-              <a href="/makros-berechnen" className="btn btn-outline">Makros berechnen</a>
-              <a href="/rechner" className="btn btn-outline">Alle Rechner</a>
+              <a href="/essensplan-erstellen/" className="btn btn-primary">Essensplan erstellen</a>
+              <a href="/kalorienverbrauch-rechner/" className="btn btn-outline">Kalorienverbrauch Rechner</a>
+              <a href="/protein-bedarf-rechner/" className="btn btn-outline">Proteinbedarf Rechner</a>
+              <a href="/kalorienbedarf-berechnen/" className="btn btn-outline">Kalorienbedarf berechnen</a>
+              <a href="/makros-berechnen/" className="btn btn-outline">Makros berechnen</a>
+              <a href="/rechner/" className="btn btn-outline">Alle Rechner</a>
             </div>
           </div>
         </section>
