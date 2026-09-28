@@ -85,7 +85,7 @@ function validateInput(body) {
 
   if (type === 'meal' || type === 'both') {
     const { diet, mealsPerDay } = userData;
-    if (!['omnivore', 'vegetarian', 'vegan'].includes(diet)) return 'Bitte wähle eine Ernährungsform.';
+    if (!Object.hasOwn(DIET_LABELS, diet)) return 'Bitte wähle eine Ernährungsform.';
     if (!mealsPerDay || mealsPerDay < 2 || mealsPerDay > 6) return 'Bitte wähle 2 bis 6 Mahlzeiten pro Tag.';
   }
   if (type === 'training' || type === 'both') {
@@ -220,7 +220,46 @@ const GOAL_TRAINING_FOCUS = {
   performance: 'Ausdauereinheiten (z.B. Laufen, Radfahren, Intervalle) als Schwerpunkt, dazu ergänzendes Krafttraining für Stabilität und Verletzungsprophylaxe. Ausdauereinheiten als Übung mit Dauer/Distanz in reps angeben',
   health: 'Ausgewogene Mischung aus Kraft, Ausdauer und Beweglichkeit, gelenkschonend und alltagstauglich',
 };
-const DIET_LABELS = { omnivore: 'Omnivor (alles)', vegetarian: 'Vegetarisch', vegan: 'Vegan' };
+const DIET_LABELS = {
+  omnivore: 'Omnivor (alles)',
+  vegetarian: 'Vegetarisch',
+  vegan: 'Vegan',
+  lowcarb: 'Low Carb',
+  keto: 'Keto (ketogen)',
+  highprotein: 'High Protein',
+  paleo: 'Paleo',
+  mediterranean: 'Mediterran',
+};
+const DIET_RULES = {
+  omnivore: '',
+  vegetarian: 'Kein Fleisch und kein Fisch.',
+  vegan: 'Keine tierischen Produkte (auch kein Honig, keine Milchprodukte, keine Eier).',
+  lowcarb: 'Kohlenhydratarm: kein Zucker, Brot, Nudeln, Reis und Kartoffeln nur in kleinen Mengen, Kohlenhydrate vor allem aus Gemüse, Hülsenfrüchten und Beeren.',
+  keto: 'Ketogen: höchstens die vorgegebene Kohlenhydratmenge pro Tag, also kein Brot, keine Nudeln, kein Reis, keine Kartoffeln, kein Zucker, kaum Obst (höchstens wenige Beeren). Fett vor allem aus Olivenöl, Avocado, Nüssen, Käse, Eiern, Fisch und Fleisch.',
+  highprotein: 'Sehr proteinreich: jede Mahlzeit mit einer klaren Proteinquelle (z.B. Magerquark, Skyr, Eier, Hähnchen, Fisch, Hülsenfrüchte, Tofu).',
+  paleo: 'Paleo: nur unverarbeitete Lebensmittel, kein Getreide (auch kein Reis, Hafer, Brot, Nudeln), keine Hülsenfrüchte, keine Milchprodukte, kein Zucker. Erlaubt sind Fleisch, Fisch, Eier, Gemüse, Obst, Nüsse, Samen, Kartoffeln und Süßkartoffeln.',
+  mediterranean: 'Mediterran: viel Gemüse, Hülsenfrüchte, Vollkorn, Olivenöl als Hauptfett, regelmäßig Fisch, Nüsse und Kräuter, wenig rotes Fleisch und kaum Zucker.',
+};
+
+// Diets that change the macro split on top of the goal. Protein stays as the
+// goal set it (or rises for high protein), carbs and fat are rebalanced.
+function applyDiet(macros, diet, weight) {
+  const { calories } = macros;
+  const fromCarbs = (protein, carbs) => ({ calories, protein, carbs, fat: Math.max(0, Math.round((calories - protein * 4 - carbs * 4) / 9)) });
+  switch (diet) {
+    case 'keto':
+      return fromCarbs(macros.protein, 25);
+    case 'lowcarb':
+      return fromCarbs(macros.protein, Math.round((calories * 0.2) / 4));
+    case 'highprotein': {
+      const protein = Math.max(macros.protein, Math.round(weight * 2));
+      const fat = Math.round((calories * 0.25) / 9);
+      return { calories, protein, fat, carbs: Math.max(0, Math.round((calories - protein * 4 - fat * 9) / 4)) };
+    }
+    default:
+      return macros;
+  }
+}
 const LEVEL_LABELS = { beginner: 'Anfänger', intermediate: 'Fortgeschritten', advanced: 'Profi' };
 const EQUIPMENT_LABELS = { gym: 'Fitnessstudio', home: 'Home (Hanteln)', bodyweight: 'Bodyweight', outdoor: 'Outdoor' };
 
@@ -233,7 +272,7 @@ function buildMealPrompt(userData, macros) {
 STRENGE VORGABEN (nicht abweichen):
 - Tägliche Kalorien: ${macros.calories} kcal
 - Protein: ${macros.protein}g | Kohlenhydrate: ${macros.carbs}g | Fett: ${macros.fat}g
-- Ernährungsform: ${DIET_LABELS[userData.diet]}
+- Ernährungsform: ${DIET_LABELS[userData.diet]}${DIET_RULES[userData.diet] ? ` (${DIET_RULES[userData.diet]})` : ''}
 - Allergien/Unverträglichkeiten: ${allergies}
 - Mahlzeiten pro Tag: ${userData.mealsPerDay}
 - Max. Zubereitungszeit pro Mahlzeit: ${userData.cookingTime || 30} Minuten
@@ -416,7 +455,8 @@ export default async function handler(req, res) {
 
     const { type, userData } = body;
     const tdee = calculateTDEE(userData.gender, userData.age, userData.height, userData.weight, userData.activityLevel);
-    const macros = calculateMacros(tdee, userData.goal, userData.weight);
+    const goalMacros = calculateMacros(tdee, userData.goal, userData.weight);
+    const macros = type === 'training' ? goalMacros : applyDiet(goalMacros, userData.diet, userData.weight);
 
     const apiKey = process.env.GEMINI_API_KEY;
     if (!apiKey) {

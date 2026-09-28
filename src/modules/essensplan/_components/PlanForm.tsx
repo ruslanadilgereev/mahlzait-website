@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // ── Types ──
 export interface UserData {
@@ -9,7 +9,7 @@ export interface UserData {
   goal: Goal;
   activityLevel: number;
   // Meal-specific
-  diet: "omnivore" | "vegetarian" | "vegan";
+  diet: Diet;
   allergies: string[];
   mealsPerDay: number;
   cookingTime: number;
@@ -27,6 +27,8 @@ export interface UserData {
 export type PlanType = "meal" | "training" | "both";
 
 export type Goal = "lose" | "recomp" | "maintain" | "gain" | "performance" | "health";
+
+export type Diet = "omnivore" | "vegetarian" | "vegan" | "lowcarb" | "keto" | "highprotein" | "paleo" | "mediterranean";
 
 interface PlanFormProps {
   defaultPlanType: "meal" | "training";
@@ -51,10 +53,15 @@ const GOALS: { value: Goal; label: string; desc: string }[] = [
   { value: "health", label: "Gesünder essen", desc: "Kein Gewichtsziel, Fokus auf frische, unverarbeitete Lebensmittel" },
 ];
 
-const DIETS = [
-  { value: "omnivore" as const, label: "Omnivor", desc: "Alles erlaubt" },
-  { value: "vegetarian" as const, label: "Vegetarisch", desc: "Kein Fleisch oder Fisch" },
-  { value: "vegan" as const, label: "Vegan", desc: "Keine tierischen Produkte" },
+const DIETS: { value: Diet; label: string; desc: string }[] = [
+  { value: "omnivore", label: "Omnivor", desc: "Alles erlaubt" },
+  { value: "vegetarian", label: "Vegetarisch", desc: "Kein Fleisch oder Fisch" },
+  { value: "vegan", label: "Vegan", desc: "Keine tierischen Produkte" },
+  { value: "lowcarb", label: "Low Carb", desc: "Wenig Brot, Nudeln, Reis und Zucker" },
+  { value: "keto", label: "Keto", desc: "Max. ca. 25 g Kohlenhydrate am Tag" },
+  { value: "highprotein", label: "High Protein", desc: "Ca. 2 g Protein pro kg Körpergewicht" },
+  { value: "paleo", label: "Paleo", desc: "Ohne Getreide, Hülsenfrüchte und Milchprodukte" },
+  { value: "mediterranean", label: "Mediterran", desc: "Olivenöl, Gemüse, Fisch, Hülsenfrüchte" },
 ];
 
 const ALLERGY_OPTIONS = ["Laktose", "Gluten", "Nüsse", "Soja", "Ei", "Fructose"];
@@ -88,7 +95,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
   const [includeTraining, setIncludeTraining] = useState(defaultPlanType === "training");
 
   // Step 2: Präferenzen (nur was relevant ist)
-  const [diet, setDiet] = useState<"omnivore" | "vegetarian" | "vegan">("omnivore");
+  const [diet, setDiet] = useState<Diet>("omnivore");
   const [allergies, setAllergies] = useState<string[]>([]);
   const [mealsPerDay, setMealsPerDay] = useState(3);
   const [cookingTime, setCookingTime] = useState(30);
@@ -102,6 +109,29 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
 
   // Honeypot
   const [hp, setHp] = useState("");
+
+  // Presets from the URL, used by the plan landing pages
+  // (e.g. /essensplan-erstellen/?goal=lose&diet=keto). Read after mount so the
+  // server-rendered form stays identical to the first client render.
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const pick = <T extends string>(key: string, allowed: readonly T[]) => {
+      const value = params.get(key);
+      return value && (allowed as readonly string[]).includes(value) ? (value as T) : undefined;
+    };
+    const presetGoal = pick("goal", GOALS.map((g) => g.value));
+    const presetDiet = pick("diet", DIETS.map((d) => d.value));
+    const presetEquipment = pick("equipment", EQUIPMENT_OPTIONS.map((e) => e.value));
+    const presetLevel = pick("level", EXPERIENCE_LEVELS.map((l) => l.value));
+    const presetDays = Number(params.get("days"));
+    const presetFocus = params.get("focus");
+    if (presetGoal) setGoal(presetGoal);
+    if (presetDiet) setDiet(presetDiet);
+    if (presetEquipment) setEquipment(presetEquipment);
+    if (presetLevel) setExperienceLevel(presetLevel);
+    if (presetDays >= 2 && presetDays <= 6) setDaysPerWeek(presetDays);
+    if (presetFocus) setFocus(presetFocus.split(",").map((f) => f.trim()).filter(Boolean).slice(0, 5));
+  }, []);
 
   const totalSteps = 3;
 
@@ -320,7 +350,7 @@ export default function PlanForm({ defaultPlanType, onSubmit, isLoading }: PlanF
                   {/* Ernährungsform */}
                   <div className="form-control">
                     <label className="label"><span className="label-text font-semibold">Ernährungsform</span></label>
-                    <div className="grid gap-2">
+                    <div className="grid gap-2 sm:grid-cols-2">
                       {DIETS.map((d) => (
                         <label
                           key={d.value}
