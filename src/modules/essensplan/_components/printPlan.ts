@@ -367,7 +367,9 @@ export function buildPrintHtml(
   .hint { margin-top: 2.5mm; font-size: 7.5pt; color: #888; }
 
   /* Day pages */
-  .day { break-before: page; }
+  /* A day is kept on one page: if it does not fit in the space left, it
+     starts on the next page. Short days still share a page. */
+  .day { break-before: page; break-inside: avoid; }
   .day + .day { break-before: auto; margin-top: 6mm; }
   .dh { display: flex; justify-content: space-between; align-items: baseline; border-bottom: 2px solid #009688; padding-bottom: 1.5mm; margin-bottom: 3mm; break-after: avoid; }
   .dh h3 { font-size: 15pt; font-weight: 800; color: #00796b; }
