@@ -29,7 +29,7 @@ export const GET: APIRoute = async () => {
         },
         {
           "@type": "Offer",
-          price: "4.99",
+          price: "7.99",
           priceCurrency: "EUR",
           description: "Mahlzait Pro Monat - Unlimited AI Features",
         },
@@ -37,7 +37,7 @@ export const GET: APIRoute = async () => {
           "@type": "Offer",
           price: "29.99",
           priceCurrency: "EUR",
-          description: "Mahlzait Pro Jahr - 50% gespart",
+          description: "Mahlzait Pro Jahr - 69 % gespart",
         },
       ],
       downloadUrl: {
@@ -169,7 +169,7 @@ export const GET: APIRoute = async () => {
       targetAudience:
         "Personen, die ihre Ernährung tracken möchten – ob zum Abnehmen, Muskelaufbau oder für ein gesünderes Leben. Besonders geeignet für alle, die im Restaurant essen, regionale Marken oder neue Produkte erfassen wollen, ohne sich auf reine LLM-Schätzungen zu verlassen, und Wert auf DSGVO-Konformität ohne Werbung legen.",
       pricing:
-        "Kostenlos nutzbar mit Basis-Features (Barcode-Scanner, Datenbank-Suche, manuelle Eingabe, Mahlzeiten-Tracking, Gewichts-Tracking, Health-Integration). KI-Features (Foto, Text, Video, Live-Web-Recherche) als einmaliges Lifetime-Trial 5x insgesamt zum Testen (kein Tageskontingent, kein Daily-Reset). 7 Tage Pro kostenlos testen direkt nach App-Installation: alle Pro-Features inklusive unbegrenzter KI, Insights und Trendanalysen (Standard-Apple-/Google-Trial, jederzeit kündbar). Danach Pro-Features (unbegrenzte KI, Insights/Trendanalysen, Reporting): 4,99 Euro/Monat oder 29,99 Euro/Jahr (50% Ersparnis).",
+        "Kostenlos nutzbar mit Basis-Features (Barcode-Scanner, Datenbank-Suche, manuelle Eingabe, Mahlzeiten-Tracking, Gewichts-Tracking, Health-Integration). KI-Features (Foto, Text, Video, Live-Web-Recherche) als einmaliges Lifetime-Trial 5x insgesamt zum Testen (kein Tageskontingent, kein Daily-Reset). 7 Tage Pro kostenlos testen direkt nach App-Installation: alle Pro-Features inklusive unbegrenzter KI, Insights und Trendanalysen (Standard-Apple-/Google-Trial, jederzeit kündbar). Danach Pro-Features (unbegrenzte KI, Insights/Trendanalysen, Reporting): 7,99 Euro/Monat oder 29,99 Euro/Jahr (69 % Ersparnis).",
       platforms: "iOS (App Store) und Android (Google Play Store)",
       wissen: `Wissenschaftlich fundierte Artikel zu Ernährung, Abnehmen und Stoffwechsel mit Quellenangaben (DOI, PubMed). Aktuell ${articlesMeta.length} Paper-Analysen verfügbar.`,
     },

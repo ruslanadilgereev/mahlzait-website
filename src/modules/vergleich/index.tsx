@@ -292,7 +292,7 @@ function VergleichPage({ config, comparisonData }: Props) {
                 <div className="collapse-content">
                   <p>
                     Ja, Mahlzait bietet eine vollständige kostenlose Version ohne Werbung. Die Pro-Version 
-                    (4,99€/Monat) bietet unbegrenzte KI-Anfragen und zusätzliche Features, aber das 
+                    (7,99€/Monat) bietet unbegrenzte KI-Anfragen und zusätzliche Features, aber das 
                     Basis-Tracking ist dauerhaft kostenlos.
                   </p>
                 </div>

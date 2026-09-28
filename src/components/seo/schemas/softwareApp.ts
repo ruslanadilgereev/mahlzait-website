@@ -35,7 +35,7 @@ export function generateSoftwareAppSchema(
       },
       {
         "@type": "Offer",
-        price: "4.99",
+        price: "7.99",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
         description: "Mahlzait Pro Monat",

@@ -345,7 +345,7 @@ const templateConfig: TemplateConfig = {
           question:
             "Ist Mahlzait kostenlos? Was kostet die Kalorienzähler App?",
           answer:
-            "Mahlzait ist kostenlos nutzbar mit Lebensmittelsuche, Barcode-Scanner, manueller Eingabe und Rezepterstellung. Mahlzait Pro kostet 4,99 €/Monat oder 29,99 €/Jahr (2,50 €/Monat) und bietet unbegrenzte KI-Features wie Foto-Logging und Mahlzeit-Vorschläge.",
+            "Mahlzait ist kostenlos nutzbar mit Lebensmittelsuche, Barcode-Scanner, manueller Eingabe und Rezepterstellung. Mahlzait Pro kostet 7,99 €/Monat oder 29,99 €/Jahr (2,50 €/Monat) und bietet unbegrenzte KI-Features wie Foto-Logging und Mahlzeit-Vorschläge.",
         },
         {
           question:
@@ -468,7 +468,7 @@ const templateConfig: TemplateConfig = {
         },
         {
           title: "Mahlzait Pro Monat",
-          price: "4,99 €/Monat",
+          price: "7,99 €/Monat",
           rows: [
             "Unlimited AI Meal Logging (Foto/Text)",
             "Unlimited AI-Vorschläge (Kühlschrank etc.)",

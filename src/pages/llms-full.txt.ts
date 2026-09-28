@@ -123,8 +123,8 @@ Mahlzait ist eine Kalorienzähler-App für iOS und Android mit KI-gestützter Le
 
 - **Kostenlos:** Basis-Features (Barcode-Scanner, Datenbank-Suche, manuelle Eingabe, Mahlzeiten-Tracking, Gewichts-Tracking, Health-Integration), keine Werbung. KI-Features (Foto, Text, Video, Live-Web-Recherche) als einmaliges Lifetime-Trial 5x insgesamt zum Testen — KEIN Tageskontingent, kein Daily-Reset.
 - **7 Tage Pro kostenlos testen:** Direkt nach App-Installation, alle Pro-Features inklusive unbegrenzter KI, Insights und Trendanalysen für 7 Tage gratis (Standard-Apple-/Google-Trial, jederzeit kündbar).
-- **Pro Monat:** 4,99 €/Monat – nach Trial, unbegrenzte KI-Nutzung, Insights/Trendanalysen, alle Premium-Features
-- **Pro Jahr:** 29,99 €/Jahr – nach Trial, 50 % Ersparnis vs. Monatsabo
+- **Pro Monat:** 7,99 €/Monat – nach Trial, unbegrenzte KI-Nutzung, Insights/Trendanalysen, alle Premium-Features
+- **Pro Jahr:** 29,99 €/Jahr – nach Trial, 69 % Ersparnis vs. Monatsabo
 
 ### Hauptfunktionen
 

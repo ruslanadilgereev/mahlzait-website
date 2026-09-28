@@ -81,7 +81,7 @@ const rows: CompRow[] = [
   },
   {
     feature: "Pro-Preis (Monat)",
-    mahlzait: "4,99 €",
+    mahlzait: "7,99 €",
     mfp: "9,99 €",
     yazio: "6,99 €",
     lifesum: "7,99 €",
