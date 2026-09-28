@@ -1,0 +1,12 @@
+---
+import PlanPageLayout from "@components/plan/PlanPageLayout.astro";
+import { getPlanPages, type PlanPage } from "utils/planPages";
+
+export function getStaticPaths() {
+  return getPlanPages("ernaehrungsplan").map((page) => ({ params: { slug: page.slug }, props: { page } }));
+}
+
+const { page } = Astro.props as { page: PlanPage };
+---
+
+<PlanPageLayout page={page} />

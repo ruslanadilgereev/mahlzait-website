@@ -1,0 +1,275 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 40,
+  "height": 178,
+  "weight": 95,
+  "goal": "lose",
+  "activityLevel": 1.375,
+  "daysPerWeek": 3,
+  "experienceLevel": "beginner",
+  "equipment": "gym",
+  "sessionTime": 60,
+  "focus": [
+   "Ganzkörper",
+   "Ausdauer"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Abnehmen und Muskelerhalt",
+  "level": "Anfänger",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper",
+  "tips": [
+   "Achte auf eine ausreichende Proteinzufuhr (ca. 1.5 - 2.0g pro kg Körpergewicht) zur Sicherung des Muskelerhalts im Kaloriendefizit.",
+   "Trinke mindestens 2 bis 3 Liter Wasser am Tag, insbesondere rund um deine Trainingseinheiten.",
+   "Nutze die Ruhetage für leichte Alltagsbewegung wie Spaziergänge (NEAT erhöhen), um den Fettabbau ohne Zusatzbelastung zu fördern.",
+   "Schlafe 7 bis 8 Stunden pro Nacht, da die Regeneration und der Fettabbau im Schlaf optimiert werden."
+  ],
+  "disclaimer": "Dieser Trainingsplan dient als allgemeine Orientierung für gesunde Erwachsene. Vor Beginn eines neuen Trainings- oder Ernährungsprogramms wird eine sportärztliche Untersuchung empfohlen. Bei Schmerzen oder Unwohlsein sollte das Training sofort pausiert werden.",
+  "progressionPlan": "Wende das Prinzip der progressiven Überlastung an: Beginne mit einem moderaten Gewicht, bei dem die angegebene Mindest-Wiederholungszahl sicher beherrscht wird. Sobald in allen 3 Sätzen die Obergrenze des Wiederholungsbereichs mit sauberer Technik erreicht wird, erhöhe das Gewicht beim nächsten Training um die kleinstmögliche Einheit (meist 1-2,5 kg bei Maschinen oder Kurzhanteln)."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper A & Cardio",
+   "isRestDay": false,
+   "warmup": [
+    "5 Minuten Rower oder Laufband (leichtes Tempo)",
+    "Armkreisen und dynamisches Hüftkreisen (2 Minuten)",
+    "10 Körpergewichts-Kniebeugen"
+   ],
+   "exercises": [
+    {
+     "name": "Beinpresse (45°)",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Fokus auf saubere Tiefe; Gewicht um 2.5kg steigern, wenn alle Sätze mit 12 Wdh. geschafft werden."
+    },
+    {
+     "name": "Brustpresse (Maschine)",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Schulterblätter zusammenhalten; Gewicht erhöhen bei Erreichen von 3x12."
+    },
+    {
+     "name": "Latzug zur Brust (weiter Griff)",
+     "muscleGroup": "Oberer Rücken, Bizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Kein Schwung aus dem Oberkörper; nächsthöhere Gewichtsstufe wählen sobald 3x12 stabil sind."
+    },
+    {
+     "name": "Schulterdrücken (Maschine)",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Gleichmäßige Ausführung; Gewicht steigern nach erfolgreichen 12 Wdh. in allen Sätzen."
+    },
+    {
+     "name": "Plank (Unterarmstütz)",
+     "muscleGroup": "Bauch, Rumpf",
+     "sets": 3,
+     "reps": "30-45s",
+     "restSeconds": 60,
+     "notes": "Körperspannung halten; wöchentlich um 5 Sekunden verlängern bis 60s erreicht sind."
+    },
+    {
+     "name": "Moderates Ausdauertraining (Fahrradergometer)",
+     "muscleGroup": "Herz-Kreislauf",
+     "sets": 1,
+     "reps": "15 min",
+     "restSeconds": 0,
+     "notes": "Konstante Intensität bei 65-75% der maximalen Herzfrequenz zur Fettverbrennung."
+    }
+   ],
+   "cooldown": [
+    "3 Minuten lockeres Gehen auf dem Laufband",
+    "Statisches Dehnen der Oberschenkel und Brustmuskulatur"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper B & Cardio",
+   "isRestDay": false,
+   "warmup": [
+    "5 Minuten Stepper oder Crosstrainer",
+    "Mobilitätstraining für Schultern und Sprunggelenke",
+    "10 Glute Bridges am Boden"
+   ],
+   "exercises": [
+    {
+     "name": "Goblet Squats (mit Kurzhantel)",
+     "muscleGroup": "Beine, Gesäß, Core",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Hantel nah an der Brust halten; Hantelgewicht bei Erreichen von 3x12 um 1-2kg erhöhen."
+    },
+    {
+     "name": "Rudern am Kabelzug (enger Griff)",
+     "muscleGroup": "Mittlerer Rücken, Bizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Aufrechte Haltung; Gewicht schrittweise erhöhen sobald 12 Wiederholungen sauber absolviert werden."
+    },
+    {
+     "name": "Kurzhantel-Schrägbankdrücken",
+     "muscleGroup": "Obere Brust, vordere Schulter",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Kontrollierte Absenkphase; Kurzhantelgewicht bei vollem Satzabschluss um 1kg pro Hantel erhöhen."
+    },
+    {
+     "name": "Liegende Beinbeuger-Maschine",
+     "muscleGroup": "Beinbeuger (Hamstrings)",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Kein Hohlkreuz bilden; bei 3x15 Gewicht um die kleinste Stufe steigern."
+    },
+    {
+     "name": "Kabelzug Woodchoppers",
+     "muscleGroup": "Schräge Bauchmuskeln",
+     "sets": 3,
+     "reps": "12 pro Seite",
+     "restSeconds": 60,
+     "notes": "Rotation aus dem Rumpf, nicht aus den Armen; Widerstand stufenweise anpassen."
+    },
+    {
+     "name": "Crosstrainer (Intervall-Zone)",
+     "muscleGroup": "Herz-Kreislauf",
+     "sets": 1,
+     "reps": "15 min",
+     "restSeconds": 0,
+     "notes": "Wechsel zwischen moderatem und etwas flotterem Tempo für erhöhten Kalorienverbrauch."
+    }
+   ],
+   "cooldown": [
+    "3 Minuten lockeres Ausrollen auf der Schaumstoffrolle (Faszienrolle)",
+    "Dehnen der Hamstrings und des Rückens"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper C & Cardio",
+   "isRestDay": false,
+   "warmup": [
+    "5 Minuten Ergometer-Radfahren",
+    "Dynamische Ausfallschritte (5 pro Seite)",
+    "Schulterkreisen mit Widerstandsband"
+   ],
+   "exercises": [
+    {
+     "name": "Rumänisches Kreuzheben mit Kurzhanteln",
+     "muscleGroup": "Beinbeuger, Gesäß, unterer Rücken",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Rücken gerade halten und Hüfte nach hinten schieben; Gewicht steigern wenn 3x12 technisch fehlerfrei sind."
+    },
+    {
+     "name": "Liegestütze (ggf. erhöht auf Bank)",
+     "muscleGroup": "Brust, Trizeps, Rumpf",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Schwierigkeit progressiv erhöhen (z.B. Neigungswinkel verringern bis zur vollen Liegestütze am Boden)."
+    },
+    {
+     "name": "Latzug mit engem Parallelgriff",
+     "muscleGroup": "Latissimus, Bizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Fokus auf die Ellbogenführung nach unten; bei 3x12 Gewicht erhöhen."
+    },
+    {
+     "name": "Seitheben mit Kurzhanteln",
+     "muscleGroup": "Seitliche Schulter",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Leichte Gewichte wählen, ohne Schwung arbeiten; Steigerung in kleinsten Schritten (0.5-1kg)."
+    },
+    {
+     "name": "Beinheben an der Hänge-/Unterarmstation",
+     "muscleGroup": "Untere Bauchmuskeln",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Zunächst mit gebeugten Knien ausführen; Progression zu gestreckten Beinen."
+    },
+    {
+     "name": "Incline Treadmill Walk (Laufband mit Steigung)",
+     "muscleGroup": "Herz-Kreislauf, Waden",
+     "sets": 1,
+     "reps": "15 min",
+     "restSeconds": 0,
+     "notes": "Geschwindigkeit 4.5-5.5 km/h bei 6-8% Steigung zügig gehen ohne Festhalten."
+    }
+   ],
+   "cooldown": [
+    "3 Minuten lockeres Gehen auf ebener Fläche",
+    "Ganzkörper-Stretching (Waden, Hüftbeuger, oberer Rücken)"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2568,
+  "calories": 2068,
+  "protein": 155,
+  "carbs": 207,
+  "fat": 69
+ }
+}

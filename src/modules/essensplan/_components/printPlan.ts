@@ -39,7 +39,7 @@ const INGREDIENT_RE = new RegExp(`^(\\d+(?:[.,]\\d+)?)\\s*(?:(${UNIT_PATTERN})\\
 const SIZE_WORDS = /^(?:(?:sehr\s+)?(?:groß|klein|mittelgroß|mittler|reif|frisch|ganz|gekocht|hartgekocht|mager)(?:e|er|es|en)?\s+)+/i;
 const TRAILING_WORDS = /\s+(?:mager|natur|light)$/i;
 
-interface ShoppingItem {
+export interface ShoppingItem {
   name: string;
   unit: string;
   amount: number;
@@ -122,7 +122,7 @@ export function buildShoppingList(mealDays: MealDay[]) {
   };
 }
 
-function formatAmount(item: ShoppingItem) {
+export function formatAmount(item: ShoppingItem) {
   const num = (n: number, digits = 1) => n.toLocaleString("de-DE", { maximumFractionDigits: digits });
   if (item.unit === "g") return item.amount >= 1000 ? `${num(item.amount / 1000, 2)} kg` : `${num(item.amount, 0)} g`;
   if (item.unit === "ml") return item.amount >= 1000 ? `${num(item.amount / 1000, 2)} l` : `${num(item.amount, 0)} ml`;

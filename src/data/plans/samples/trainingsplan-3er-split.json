@@ -1,0 +1,274 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 30,
+  "height": 182,
+  "weight": 85,
+  "goal": "gain",
+  "activityLevel": 1.55,
+  "daysPerWeek": 3,
+  "experienceLevel": "intermediate",
+  "equipment": "gym",
+  "sessionTime": 60,
+  "focus": [
+   "3er-Split: Brust/Trizeps, Rücken/Bizeps, Beine/Schultern"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Muskelaufbau",
+  "level": "Fortgeschritten",
+  "daysPerWeek": 3,
+  "splitType": "3er-Split (Brust/Trizeps, Rücken/Bizeps, Beine/Schultern)",
+  "tips": [
+   "Nutze deinen Kalorienüberschuss von ca. 3156 kcal konsequent aus, um die Hypertrophie und Muskelregeneration optimal zu unterstützen.",
+   "Achte auf eine tägliche Proteinzufuhr von etwa 1,8 bis 2,2 g pro Kilogramm Körpergewicht.",
+   "Halte die Pausenzeiten strikt ein, um das Training innerhalb der vorgegebenen 60 Minuten abzuschließen.",
+   "Priorisiere 7-9 Stunden qualitativen Schlaf, da das Muskelwachstum vor allem in den Ruhephasen stattfindet."
+  ],
+  "disclaimer": "Vor Beginn eines intensiven Trainingsprogramms wird eine sportärztliche Untersuchung empfohlen. Führe alle Übungen mit korrekter Technik aus, um Verletzungen vorzubeugen.",
+  "progressionPlan": "Verwende das Doppelprogressions-Modell: Trainiere mit einem festen Gewicht am unteren Ende des Wiederholungsbereichs (z.B. 6 Wdh.). Sobald du in allen Sätzen das obere Ende (z.B. 8 Wdh.) mit sauberer Form erreichst, erhöhst du das Gewicht um 2,5% bis 5% und beginnst den Zyklus von vorn. Führe alle 6-8 Wochen eine Deload-Woche mit halbem Volumen durch."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Brust und Trizeps",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Rower oder Laufband",
+    "Dynamisches Dehnen und Armkreisen",
+    "2 Aufwärmsätze Bankdrücken mit leerer/leichter Stange"
+   ],
+   "exercises": [
+    {
+     "name": "Bankdrücken mit der Langhantel",
+     "muscleGroup": "Brust",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 120,
+     "notes": "RPE 8-9. Gewicht steigern, sobald 4x8 sauber erreicht werden."
+    },
+    {
+     "name": "Schrägbankdrücken mit Kurzhanteln",
+     "muscleGroup": "Obere Brust",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Kontrollierte negative Phase (2-3 Sek.), explosive Aufwärtsbewegung."
+    },
+    {
+     "name": "Kabelzug-Flys (von unten nach oben)",
+     "muscleGroup": "Brust",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Fokus auf maximale Kontraktion am Peak für 1 Sekunde."
+    },
+    {
+     "name": "Dips (vorgebeugt/Zusatzgewicht)",
+     "muscleGroup": "Brust / Trizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Bei Erreichen der Wiederholungszahl Zusatzgewicht verwenden."
+    },
+    {
+     "name": "Trizepsdrücken am Kabelzug (Seil)",
+     "muscleGroup": "Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Ellenbogen fixiert lassen, am tiefsten Punkt spreizen."
+    },
+    {
+     "name": "French Press (SZ-Stange liegend)",
+     "muscleGroup": "Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Fokus auf die Dehnung des langen Trizepskopfes."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten leichtes Ausgehen auf dem Laufband",
+    "Statisches Dehnen der Brust- und Trizepsmuskulatur"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Rücken und Bizeps",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Rower",
+    "Band Pull-Aparts und Schultermobilisation",
+    "2 Aufwärmsätze Langhantelrudern mit geringem Gewicht"
+   ],
+   "exercises": [
+    {
+     "name": "Langhantelrudern (vorgebeugt)",
+     "muscleGroup": "Rücken (Latissimus / Rhomboideen)",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 120,
+     "notes": "Rücken stabil und gerade halten. Steigerung über Gewichtsprogression."
+    },
+    {
+     "name": "Klimmzüge (mit Zusatzgewicht)",
+     "muscleGroup": "Latissimus",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 90,
+     "notes": "Volle Range of Motion; Zusatzgewicht steigern, sobald 4x8 erreicht sind."
+    },
+    {
+     "name": "Latzug im engen Parallelgriff",
+     "muscleGroup": "Rücken",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 75,
+     "notes": "Fokus auf Muskel-Geist-Verbindung und Latzug nach unten ziehen."
+    },
+    {
+     "name": "Face Pulls",
+     "muscleGroup": "Hintere Schulter / Oberer Rücken",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Saubere Außenrotation, Endposition kurz halten."
+    },
+    {
+     "name": "Langhantel-Bizepscurls (SZ-Stange)",
+     "muscleGroup": "Bizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 60,
+     "notes": "Kein Schwung aus der Hüfte nutzen. Progressive Steigerung in 1-2,5kg Schritten."
+    },
+    {
+     "name": "Schrägbank-Kurzhantelcurls",
+     "muscleGroup": "Bizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Maximale Dehnung des Bizeps in der Ausgangsposition nutzen."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten lockeres Radfahren",
+    "Statisches Dehnen für Latissimus und Bizeps"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Beine und Schultern",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Ergometer/Fahrrad",
+    "Hüftmobilisation und Glute Bridges",
+    "2-3 Aufwärmsätze Kniebeugen mit steigendem Gewicht"
+   ],
+   "exercises": [
+    {
+     "name": "Kniebeugen (Barbell Back Squat)",
+     "muscleGroup": "Quadriceps / Gesäß",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 120,
+     "notes": "Saubere Tiefe (unter parallel). Erhöhe Gewicht, wenn 4x8 geschafft sind."
+    },
+    {
+     "name": "Rumänisches Kreuzheben (RDL)",
+     "muscleGroup": "Beinbeuger / Gluteus",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Hüfte nach hinten schieben, maximale Dehnung der Hamstrings anstreben."
+    },
+    {
+     "name": "Beinstrecker an der Maschine",
+     "muscleGroup": "Quadriceps",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Letzten Satz als Drop-Set für maximalen metabolischen Stress ausführen."
+    },
+    {
+     "name": "Überkopfdrücken mit der Langhantel (OHP)",
+     "muscleGroup": "Vordere/Seitliche Schulter",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 90,
+     "notes": "Körperspannung halten. Steigerung in kleinen Schritten (1-2 kg)."
+    },
+    {
+     "name": "Seitheben mit Kurzhanteln",
+     "muscleGroup": "Seitliche Schulter",
+     "sets": 4,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Strikte Form, keine Hüftunterstützung. Fokus auf Muskelkontraktion."
+    },
+    {
+     "name": "Wadenheben stehend",
+     "muscleGroup": "Waden",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Volle Dehnung unten und 2 Sekunden Spitzenkontraktion oben."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten Auslaufen",
+    "Foam Rolling für Quadrizeps und Hamstrings"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2856,
+  "calories": 3156,
+  "protein": 197,
+  "carbs": 395,
+  "fat": 88
+ }
+}

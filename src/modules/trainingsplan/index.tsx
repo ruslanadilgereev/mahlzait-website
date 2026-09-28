@@ -396,6 +396,7 @@ function TrainingsplanPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4">
             <h3 className="text-lg font-bold mb-6 text-center">Weitere Rechner & Tools</h3>
             <div className="flex flex-wrap justify-center gap-4">
+              <a href="/trainingsplan/" className="btn btn-primary">Fertige Trainingspläne</a>
               <a href="/essensplan-erstellen/" className="btn btn-primary">Essensplan erstellen</a>
               <a href="/kalorienverbrauch-rechner/" className="btn btn-outline">Kalorienverbrauch Rechner</a>
               <a href="/protein-bedarf-rechner/" className="btn btn-outline">Proteinbedarf Rechner</a>

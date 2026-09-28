@@ -1,0 +1,457 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 42,
+  "height": 170,
+  "weight": 68,
+  "goal": "health",
+  "activityLevel": 1.375,
+  "diet": "omnivore",
+  "mealsPerDay": 3,
+  "cookingTime": 30,
+  "budget": "medium"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 1886,
+  "proteinGrams": 94,
+  "carbsGrams": 236,
+  "fatGrams": 63,
+  "goal": "Gesünder essen",
+  "diet": "Omnivor (alles)",
+  "tips": [
+   "Hülsenfrüchte wie Kichererbsen und Bohnen regelmäßig nutzen: Sie liefern wertvolle pflanzliche Proteine und sättigende Ballaststoffe für eine gesunde Darmflora.",
+   "Bereiten Sie Vollkorngetreide (wie Quinoa, Naturreis oder Dinkel) in größeren Portionen vor, um die Zubereitungszeit unter der Woche auf unter 20 Minuten zu verkürzen.",
+   "Achten Sie auf ausreichend Flüssigkeitszufuhr (mind. 2 Liter Wasser oder ungesüßten Tee pro Tag), damit die erhöhte Ballaststoffmenge optimal quellen und verdaut werden kann."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient als Orientierungshilfe zur gesunden Ernährung und ersetzt keine individuelle medizinische oder ernährungstherapeutische Beratung."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Haferflocken-Beeren-Porridge mit Chiasamen",
+     "ingredients": [
+      "70g zarte Haferflocken",
+      "200ml fettarme Milch (1,5%)",
+      "100g frische oder tiefgekühlte Heidelbeeren",
+      "15g Chiasamen",
+      "15g gehackte Walnüsse"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 520,
+     "protein": 21,
+     "carbs": 70,
+     "fat": 16
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunte Kichererbsen-Quinoa-Bowl mit Hähnchenbrust",
+     "ingredients": [
+      "60g Quinoa (Rohgewicht)",
+      "120g gekochte Kichererbsen",
+      "120g Hähnchenbrustfilet",
+      "100g Gurke",
+      "100g Kirschtomaten",
+      "1 EL (10ml) Olivenöl für Dressing",
+      "1 EL Zitronensaft"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 685,
+     "protein": 45,
+     "carbs": 82,
+     "fat": 19
+    },
+    {
+     "type": "Abendessen",
+     "name": "Vollkornbrot mit Kräuterquark und Gemüsesticks",
+     "ingredients": [
+      "120g Vollkorn-Roggenbrot (ca. 2 Scheiben)",
+      "150g Magerquark",
+      "30g fettarmer Joghurt",
+      "1 Bund frische Kräuter (Schnittlauch, Petersilie)",
+      "150g Karotten",
+      "150g Paprika",
+      "10g Leinsamen"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 670,
+     "protein": 33,
+     "carbs": 86,
+     "fat": 18
+    }
+   ],
+   "totalCalories": 1875,
+   "totalProtein": 99,
+   "totalCarbs": 238,
+   "totalFat": 53
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Rührei auf Vollkornbrot mit Tomaten",
+     "ingredients": [
+      "2 mittelgroße Eier",
+      "100g Vollkornbrot",
+      "1 TL (5g) Butter",
+      "150g Kirschtomaten",
+      "1 kleiner Apfel (120g)"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 510,
+     "protein": 24,
+     "carbs": 63,
+     "fat": 17
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Linsen-Gemüse-Curry mit Naturreis",
+     "ingredients": [
+      "60g Naturreis (Rohgewicht)",
+      "130g braune Tellerlinsen (vorgegart)",
+      "100g Zucchini",
+      "100g Karotten",
+      "80ml fettreduzierte Kokosmilch",
+      "1 TL Currypulver",
+      "1 TL Rapsöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 690,
+     "protein": 31,
+     "carbs": 105,
+     "fat": 14
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gebackener Lachs mit Kartoffeln und Brokkoli",
+     "ingredients": [
+      "130g Lachsfilet",
+      "200g Salzkartoffeln",
+      "200g gedünsteter Brokkoli",
+      "1 TL Olivenöl",
+      "Frische Zitrone"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 695,
+     "protein": 42,
+     "carbs": 66,
+     "fat": 28
+    }
+   ],
+   "totalCalories": 1895,
+   "totalProtein": 97,
+   "totalCarbs": 234,
+   "totalFat": 59
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Müsli mit Naturjoghurt, Birne und Sonnenblumenkernen",
+     "ingredients": [
+      "60g 5-Korn-Flocken ungesüßt",
+      "180g Naturjoghurt (1,5% Fett)",
+      "1 reife Birne (150g)",
+      "15g Sonnenblumenkerne",
+      "1 Prise Zimt"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 535,
+     "protein": 22,
+     "carbs": 80,
+     "fat": 14
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Vollkornnudeln mit buntem Linsenbolognese-Sugo",
+     "ingredients": [
+      "80g Vollkornspaghetti",
+      "100g rote Linsen (getrocknet gewaschen)",
+      "200g passierte Tomaten",
+      "80g Karotten geraspelt",
+      "1 TL Rapsöl",
+      "10g geriebener Parmesan"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 710,
+     "protein": 43,
+     "carbs": 104,
+     "fat": 12
+    },
+    {
+     "type": "Abendessen",
+     "name": "Putenbrustsalat mit Bohnen und Vollkornbrötchen",
+     "ingredients": [
+      "120g Putenbruststreifen gebraten",
+      "100g weiße Bohnen (Dose)",
+      "100g gemischter Blattsalat",
+      "100g Gurke",
+      "1 EL Olivenöl",
+      "1 EL Apfelessig",
+      "1 Vollkornbrötchen (65g)"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 630,
+     "protein": 37,
+     "carbs": 56,
+     "fat": 24
+    }
+   ],
+   "totalCalories": 1875,
+   "totalProtein": 102,
+   "totalCarbs": 240,
+   "totalFat": 50
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Overnight Oats mit geriebenem Apfel und Mandeln",
+     "ingredients": [
+      "65g Haferflocken",
+      "150ml fettarme Milch",
+      "1 mittelgroßer Apfel",
+      "15g Mandelblättchen",
+      "10g Leinsamen"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 515,
+     "protein": 19,
+     "carbs": 74,
+     "fat": 15
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Mediterraner Couscous-Salat mit Feta und Kichererbsen",
+     "ingredients": [
+      "70g Vollkorn-Couscous",
+      "120g Kichererbsen",
+      "50g Feta (light)",
+      "100g Paprika",
+      "80g Gurke",
+      "1 EL Olivenöl",
+      "Zitronensaft und Minze"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 675,
+     "protein": 32,
+     "carbs": 86,
+     "fat": 21
+    },
+    {
+     "type": "Abendessen",
+     "name": "Rindfleisch-Gemüse-Pfanne mit Vollkornnudeln",
+     "ingredients": [
+      "110g mageres Rinderhüftsteak in Streifen",
+      "65g Vollkorn-Penne",
+      "150g Zucchini",
+      "100g Champignons",
+      "1 TL Sesamöl",
+      "1 EL Sojasauce (natriumarm)"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 680,
+     "protein": 44,
+     "carbs": 72,
+     "fat": 23
+    }
+   ],
+   "totalCalories": 1870,
+   "totalProtein": 95,
+   "totalCarbs": 232,
+   "totalFat": 59
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Vollkorn-Sandwich mit Ei, Hüttenkäse und Radieschen",
+     "ingredients": [
+      "100g Vollkornbrot",
+      "100g körniger Frischkäse (fettarm)",
+      "1 hartgekochtes Ei",
+      "5 Radieschen",
+      "1 Orange (150g)"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 490,
+     "protein": 28,
+     "carbs": 66,
+     "fat": 12
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Kabeljaufilet mit Süßkartoffelstampf und Erbsen",
+     "ingredients": [
+      "160g Kabeljaufilet",
+      "200g Süßkartoffel",
+      "150g grüne Erbsen (TK)",
+      "1 TL Butter",
+      "1 TL Olivenöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 690,
+     "protein": 44,
+     "carbs": 84,
+     "fat": 18
+    },
+    {
+     "type": "Abendessen",
+     "name": "Bunter Bohneneintopf mit Vollkornbrot",
+     "ingredients": [
+      "150g Kidneybohnen",
+      "100g grüne Bohnen",
+      "200g gehackte Tomaten",
+      "80g Karotten",
+      "1 TL Rapsöl",
+      "80g Dinkel-Vollkornbrot"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 715,
+     "protein": 29,
+     "carbs": 103,
+     "fat": 16
+    }
+   ],
+   "totalCalories": 1895,
+   "totalProtein": 101,
+   "totalCarbs": 253,
+   "totalFat": 46
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Buchweizen-Pancakes mit Beerenquark",
+     "ingredients": [
+      "50g Buchweizenmehl",
+      "1 Ei",
+      "60ml fettarme Milch",
+      "100g Magerquark",
+      "100g Himbeeren",
+      "1 TL Rapsöl zum Ausbacken"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 530,
+     "protein": 33,
+     "carbs": 64,
+     "fat": 14
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Würzige Dinkel-Gemüse-Pfanne mit Tofu",
+     "ingredients": [
+      "70g Dinkel wie Reis gekocht",
+      "120g Naturtofu mariniert",
+      "100g Brokkoli",
+      "100g Paprika",
+      "1 EL Sesamöl",
+      "1 EL Sojasauce"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 680,
+     "protein": 32,
+     "carbs": 76,
+     "fat": 26
+    },
+    {
+     "type": "Abendessen",
+     "name": "Hähnchen-Vollkorn-Wrap mit Avocado und schwarzen Bohnen",
+     "ingredients": [
+      "2 Vollkorn-Tortillawraps (ca. 80g)",
+      "100g gebratene Hähnchenbrust",
+      "80g schwarze Bohnen",
+      "40g Avocado",
+      "50g Tomatensalsa"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 670,
+     "protein": 38,
+     "carbs": 78,
+     "fat": 22
+    }
+   ],
+   "totalCalories": 1880,
+   "totalProtein": 103,
+   "totalCarbs": 218,
+   "totalFat": 62
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Sonntags-Shakshuka mit Vollkorn-Fladenbrot",
+     "ingredients": [
+      "2 Eier",
+      "200g stückige Tomaten",
+      "100g Paprika",
+      "1 TL Olivenöl",
+      "1 kleines Vollkornpita-Brot (60g)",
+      "1 Prise Kreuzkümmel"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 505,
+     "protein": 23,
+     "carbs": 58,
+     "fat": 19
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Forellenfilet mit Petersilienkartoffeln und grünen Bohnen",
+     "ingredients": [
+      "140g Forellenfilet",
+      "220g Salzkartoffeln",
+      "150g Buschbohnen",
+      "1 TL Butter",
+      "1 EL gehackte Petersilie"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 665,
+     "protein": 40,
+     "carbs": 64,
+     "fat": 24
+    },
+    {
+     "type": "Abendessen",
+     "name": "Warmer Kichererbsen-Kürbis-Salat mit Kürbiskernen",
+     "ingredients": [
+      "150g Kichererbsen (Dose)",
+      "200g Hokkaidokürbis gewürfelt",
+      "60g Feldsalat",
+      "15g geröstete Kürbiskerne",
+      "1 EL Olivenöl",
+      "1 EL Apfelessig",
+      "50g Vollkornbrot"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 710,
+     "protein": 27,
+     "carbs": 88,
+     "fat": 26
+    }
+   ],
+   "totalCalories": 1880,
+   "totalProtein": 90,
+   "totalCarbs": 210,
+   "totalFat": 69
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 1886,
+  "calories": 1886,
+  "protein": 94,
+  "carbs": 236,
+  "fat": 63
+ }
+}

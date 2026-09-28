@@ -1,0 +1,253 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 24,
+  "height": 178,
+  "weight": 75,
+  "goal": "recomp",
+  "activityLevel": 1.55,
+  "daysPerWeek": 3,
+  "experienceLevel": "beginner",
+  "equipment": "bodyweight",
+  "sessionTime": 45,
+  "focus": [
+   "Calisthenics mit Klimmzugstange"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Body Recomposition",
+  "level": "Anfänger",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper",
+  "tips": [
+   "Proteinreich essen: Für eine erfolgreiche Body Recomposition solltest du ca. 1.6 - 2.0g Protein pro kg Körpergewicht innerhalb deines Budgets von 2409 kcal anpeilen.",
+   "Form vor Wiederholungen: Halte jede Wiederholung kontrolliert (z.B. 2 Sekunden runter, 1 Sekunde hoch), um maximalen Muskelreiz ohne Verletzungen zu garantieren.",
+   "Schlaf & Erholung: Gib deinem Körper an den Ruhetagen ausreichend Schlaf (7-9 Stunden), da Muskelaufbau und Fettabbau primär in der Regenerationsphase stattfinden.",
+   "Trainingstagebuch führen: Notiere dir Wiederholungen und Satzpausen, um wöchentlich kleine Verbesserungen sicherzustellen."
+  ],
+  "disclaimer": "Konsultiere vor Beginn eines neuen Trainings- oder Ernährungsprogramms einen Arzt oder lizenzierten Sportexperten, insbesondere bei bestehenden Vorerkrankungen oder Beschwerden.",
+  "progressionPlan": "Wende das Prinzip des 'Double Progression Model' an: Trainiere zunächst im angegebenen Wiederholungsbereich (z.B. 8-12). Sobald du in allen 3 Sätzen die oberste Wiederholungszahl (12) mit sauberer Technik erreichst, erhöhe die Hebelwirkung/Schwierigkeit der Calisthenics-Übung (z.B. Winkel verändern, Fuß erhöhen, langsamere Exzentrik) und starte wieder bei 8 Wiederholungen."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper A – Fokus Push & Beine",
+   "isRestDay": false,
+   "warmup": [
+    "3 Min. Hampelmänner und Seilspringen ohne Seil",
+    "Armkreisen und Schultermobilisation",
+    "10 Rumpfrotationen und 10 Bodyweight Squats"
+   ],
+   "exercises": [
+    {
+     "name": "Liegestütze (ggf. erhöht auf einer Box)",
+     "muscleGroup": "Brust, Trizeps, vordere Schulter",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Wenn 3x12 sauber gelingen, Neigungswinkel verringern bis hin zu regulären Liegestützen."
+    },
+    {
+     "name": "Australische Klimmzüge / Inverted Rows (an Stange auf Brusthöhe)",
+     "muscleGroup": "Oberer Rücken, Bizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Füße weiter nach vorne stellen, um den Hebel zu vergrößern, sobald 10 Wdh. leicht fallen."
+    },
+    {
+     "name": "Kniebeugen (Air Squats)",
+     "muscleGroup": "Quadrizeps, Gesäß",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 75,
+     "notes": "Auf volle Tiefe achten. Progression zu langsamerer Exzentrik (3 Sek. ablassen)."
+    },
+    {
+     "name": "Glute Bridges",
+     "muscleGroup": "Gesäß, Beinbeuger",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Oben 2 Sekunden halten. Später Progression zu einbeinigen Glute Bridges."
+    },
+    {
+     "name": "Plank (Unterarmstütz)",
+     "muscleGroup": "Core / Bauchmuskeln",
+     "sets": 3,
+     "reps": "30-45s",
+     "restSeconds": 60,
+     "notes": "Spannung im gesamten Körper halten. Zeit wöchentlich um 5 Sekunden steigern."
+    }
+   ],
+   "cooldown": [
+    "Dehnung von Brust und Schultern an der Wand",
+    "Quadrizeps- und Hüftbeugerdehnung",
+    "2 Min. tiefes Durchatmen"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper B – Fokus Pull & Rumpf",
+   "isRestDay": false,
+   "warmup": [
+    "3 Min. lockeres Gehen auf der Stelle mit Kniehebelauf",
+    "Schulterkreisen und 'Cat-Cow' am Boden",
+    "10 Scapular Pull-ups (Schulterblatt-Klimmzüge)"
+   ],
+   "exercises": [
+    {
+     "name": "Negative Klimmzüge (mit Sprung nach oben, langsam ablassen)",
+     "muscleGroup": "Latissimus, Bizeps",
+     "sets": 3,
+     "reps": "6-8",
+     "restSeconds": 100,
+     "notes": "Absenkbewegung auf 3-5 Sekunden ausdehnen, um Kraft für den vollen Klimmzug aufzubauen."
+    },
+    {
+     "name": "Pike Push-ups (erhöhte Liegestütze)",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Füße schrittweise näher an die Hände setzen, um mehr Last auf die Schultern zu bringen."
+    },
+    {
+     "name": "Ausfallschritte (Lunges)",
+     "muscleGroup": "Beine, Gesäß",
+     "sets": 3,
+     "reps": "8-10 pro Bein",
+     "restSeconds": 75,
+     "notes": "Saubere Kniekontrolle. Progression: Walking Lunges oder explosives Hochdrücken."
+    },
+    {
+     "name": "Bank Dips (Hände auf Stuhl/Bank abgestützt)",
+     "muscleGroup": "Trizeps, Brust",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 75,
+     "notes": "Beine zunächst angewinkelt lassen; wenn zu leicht, Beine komplett strecken."
+    },
+    {
+     "name": "Dead Bug",
+     "muscleGroup": "Tiefe Bauchmuskulatur",
+     "sets": 3,
+     "reps": "10 pro Seite",
+     "restSeconds": 60,
+     "notes": "Unterer Rücken bleibt fest am Boden gepresst. Bewegung kontrolliert und langsam."
+    }
+   ],
+   "cooldown": [
+    "Latissimus-Dehnung an der Klimmzugstange (passives Hängen mit Bodenkontakt)",
+    "Child's Pose zur Rückenentspannung",
+    "2 Min. Entspannungsatmung"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper C – Stabilität & Kraftausdauer",
+   "isRestDay": false,
+   "warmup": [
+    "3 Min. Hampelmänner und dynamische Kniebeugen",
+    "Arm- und Handgelenksmobilisation",
+    "10 Bird-Dogs pro Seite"
+   ],
+   "exercises": [
+    {
+     "name": "Klimmzugstange Dead Hang (Aktives/Passives Hängen)",
+     "muscleGroup": "Griffkraft, Latissimus, Schulterstabilität",
+     "sets": 3,
+     "reps": "20-30s",
+     "restSeconds": 75,
+     "notes": "Schulterblätter aktiv nach unten ziehen. Hängezeit pro Woche um 5 Sekunden erhöhen."
+    },
+    {
+     "name": "Diamant-Liegestütze auf Knien oder regulär",
+     "muscleGroup": "Trizeps, Brust",
+     "sets": 3,
+     "reps": "6-10",
+     "restSeconds": 90,
+     "notes": "Ellbogen nah am Körper halten. Vom Knien zur vollen Ausführung steigern."
+    },
+    {
+     "name": "Bulgarian Split Squats (hinterer Fuß erhöht)",
+     "muscleGroup": "Quadrizeps, Gesäß",
+     "sets": 3,
+     "reps": "8-10 pro Bein",
+     "restSeconds": 75,
+     "notes": "Langsame Absenkung. Wenn 10 Wdh. sauber sind, Tempo verlangsamen (Pause am tiefsten Punkt)."
+    },
+    {
+     "name": "Scapular Pull-ups & Rows",
+     "muscleGroup": "Oberer Rücken, Schultergürtel",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Arme bleiben gestreckt, Bewegung erfolgt rein aus dem Schulterblatt zur Haltungskorrektur."
+    },
+    {
+     "name": "Hollow Body Hold (oder Tuck Hold)",
+     "muscleGroup": "Gesamter Core",
+     "sets": 3,
+     "reps": "20-30s",
+     "restSeconds": 60,
+     "notes": "Mit angewinkelten Knien beginnen (Tuck) und Beine schrittweise weiter ausstrecken."
+    }
+   ],
+   "cooldown": [
+    "Dehnung der Waden und Oberschenkel",
+    "Kobra-Position für die vordere Rumpfkette",
+    "2 Min. lockeres Auslockern"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2709,
+  "calories": 2409,
+  "protein": 165,
+  "fat": 67,
+  "carbs": 287
+ }
+}

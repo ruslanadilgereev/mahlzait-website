@@ -1,0 +1,245 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 36,
+  "height": 180,
+  "weight": 84,
+  "goal": "recomp",
+  "activityLevel": 1.375,
+  "daysPerWeek": 3,
+  "experienceLevel": "intermediate",
+  "equipment": "home",
+  "sessionTime": 45,
+  "focus": [
+   "Nur Kettlebell-Übungen"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Body Recomposition",
+  "level": "Fortgeschritten",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper (Kettlebell-Fokus)",
+  "tips": [
+   "Da du dich bei 2161 kcal in einer Recomposition-Phase befindest, halte deine Proteinzufuhr konstant hoch bei ca. 1.8 - 2.2 g pro kg Körpergewicht.",
+   "Pausenzeiten von 60-90 Sekunden konsequent einhalten, um das 45-Minuten-Zeitfenster nicht zu überschreiten.",
+   "Priorisiere saubere Technik und Rumpfstabilität (Bracing) vor maximalem Gewicht, um Verletzungen vorzubeugen."
+  ],
+  "disclaimer": "Dieser Trainingsplan ersetzt keine professionelle medizinische Beratung oder physiotherapeutische Betreuung. Führe die Übungen nur bei Schmerzfreiheit und nach gründlicher Erwärmung aus.",
+  "progressionPlan": "Nutze das Doppel-Progressions-Modell: Trainiere mit einem festgelegten Kettlebell-Gewicht, bis du am oberen Ende des Wiederholungsbereichs (z.B. 10 oder 12 Wdh.) in allen Sätzen angelangt bist. Erhöhe anschließend die Last zur nächstschwereren Kettlebell und beginne am unteren Ende des Wiederholungsbereichs (z.B. 6 oder 8 Wdh.). Falls keine schwerere Kettlebell verfügbar ist, erhöhe die Time-under-Tension (z.B. langsamere 3-4s Exzentrik) oder füge kurze Pausen am Umkehrpunkt ein."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper – Kraft & Stabilität A",
+   "isRestDay": false,
+   "warmup": [
+    "5 Min. Mobility: Armkreisen, Cat-Cow, World's Greatest Stretch",
+    "2 Runden: 10 Kettlebell Halos, 10 Glute Bridges"
+   ],
+   "exercises": [
+    {
+     "name": "Kettlebell Goblet Squat",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 4,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Fokus auf 3 Sek. exzentrische Phase; Gewicht steigern, sobald 4x10 sauber erreicht werden."
+    },
+    {
+     "name": "Einarmiges Kettlebell Schulterdrücken (Overhead Press)",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 3,
+     "reps": "6-8 pro Seite",
+     "restSeconds": 75,
+     "notes": "Rumpf extrem fest anspannen; bei Erreichen von 8 Wdh. Gewicht erhöhen."
+    },
+    {
+     "name": "Kettlebell Romanian Deadlift (RDL)",
+     "muscleGroup": "Beinbeuger, Gesäß, Unterer Rücken",
+     "sets": 4,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Spannung in der hinteren Kette halten; bei kontrollierter Ausführung Gewicht steigern."
+    },
+    {
+     "name": "Einarmiges Kettlebell Rudern",
+     "muscleGroup": "Oberer Rücken, Latissimus",
+     "sets": 3,
+     "reps": "8-10 pro Seite",
+     "restSeconds": 60,
+     "notes": "Am obersten Punkt 1 Sekunde halten; Gewicht oder Wiederholungen wöchentlich steigern."
+    },
+    {
+     "name": "Kettlebell Hardstyle Swing",
+     "muscleGroup": "Hintere Kette, Rumpf",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Explosiver Hüftstrecker; Fokus auf maximale Kraftübertragung."
+    }
+   ],
+   "cooldown": [
+    "3 Min. Auslockern und leichtes Dehnen der Beinbeuger und Brustmuskulatur",
+    "Tiefes Atmen zur Senkung der Herzfrequenz"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper – Kraft & Spannung B",
+   "isRestDay": false,
+   "warmup": [
+    "5 Min. Mobility: Hüftkreisen, Schultermobilität, Ausfallschritte",
+    "2 Runden: 5 Turkish Get-Ups (ohne Gewicht oder sehr leicht)"
+   ],
+   "exercises": [
+    {
+     "name": "Doppel-Kettlebell Front Squat (oder schwere Single)",
+     "muscleGroup": "Beine (Quadrizeps), Rumpf",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 90,
+     "notes": "Aufrechte Haltung beibehalten; sobald 8 Wdh. leicht fallen, Last erhöhen."
+    },
+    {
+     "name": "Kettlebell Floor Press",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 4,
+     "reps": "8-10",
+     "restSeconds": 75,
+     "notes": "Oberarme kurz auf dem Boden pausieren; progressiv mehr Gewicht/Wiederholungen."
+    },
+    {
+     "name": "Kettlebell Clean & Push Press",
+     "muscleGroup": "Ganzkörper, Schultern",
+     "sets": 3,
+     "reps": "6-8 pro Seite",
+     "restSeconds": 90,
+     "notes": "Explosive Beinarbeit nutzen; Progression über Gewicht oder Satzdichte."
+    },
+    {
+     "name": "Kettlebell Gorilla Rows",
+     "muscleGroup": "Rücken, Core",
+     "sets": 3,
+     "reps": "8-10 pro Seite",
+     "restSeconds": 60,
+     "notes": "Stabile Plank-Position in der Vorbeuge; Fokus auf kontrolliertes Ziehen."
+    },
+    {
+     "name": "Kettlebell Suitcase Carry",
+     "muscleGroup": "Core, Griffkraft, Schräge Bauchmuskeln",
+     "sets": 3,
+     "reps": "40s pro Seite",
+     "restSeconds": 60,
+     "notes": "Aufrechte Haltung ohne Seitneigung; Distanz/Gewicht steigern."
+    }
+   ],
+   "cooldown": [
+    "3 Min. Dehnen: Hüftbeuger, Latissimus und Schultern",
+    "Kurze Atemübung zur Parasympathikus-Aktivierung"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper – Kraft & Hypertrophie C",
+   "isRestDay": false,
+   "warmup": [
+    "5 Min. Mobility: Handgelenke, Fußgelenke, Downward Dog to Cobra",
+    "2 Runden: 10 Kettlebell Deadlifts (leicht), 10 Schulter-Dislocations"
+   ],
+   "exercises": [
+    {
+     "name": "Kettlebell Ausfallschritte (Lunges / Bulgarian Split Squat)",
+     "muscleGroup": "Beine, Gluteus",
+     "sets": 3,
+     "reps": "8-10 pro Bein",
+     "restSeconds": 75,
+     "notes": "Stabile Knieachse; Gewicht in Koffer- oder Rack-Position progressiv steigern."
+    },
+    {
+     "name": "Kettlebell Push-ups (Hände auf den Griffen oder Floor)",
+     "muscleGroup": "Brust, Trizeps, Schultern",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 60,
+     "notes": "Erhöhte Range of Motion nutzen; bei 12 sauberen Wdh. Zusatzgewicht/Widerstandsband nutzen."
+    },
+    {
+     "name": "Einbeiniges Kettlebell Kreuzheben",
+     "muscleGroup": "Hintere Kette, Balance, Core",
+     "sets": 3,
+     "reps": "6-8 pro Seite",
+     "restSeconds": 75,
+     "notes": "Langsam absenken; Fokus auf Muskelgefühl im Beinbeuger; Last stetig erhöhen."
+    },
+    {
+     "name": "Kettlebell High Pull",
+     "muscleGroup": "Trapez, Nacken, Schultern",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 60,
+     "notes": "Kraftvoll aus der Hüfte arbeiten; Ellbogen führen die Bewegung."
+    },
+    {
+     "name": "Kettlebell Windmill",
+     "muscleGroup": "Core, Schulterstabilität, Mobilität",
+     "sets": 3,
+     "reps": "6-8 pro Seite",
+     "restSeconds": 60,
+     "notes": "Präzision vor Gewicht; sobald stabil, Kettlebell-Gewicht erhöhen."
+    }
+   ],
+   "cooldown": [
+    "4 Min. Ganzkörper-Stretching (Taube, Schmetterlingssitz, Child's Pose)"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2461,
+  "calories": 2161,
+  "protein": 185,
+  "fat": 60,
+  "carbs": 220
+ }
+}

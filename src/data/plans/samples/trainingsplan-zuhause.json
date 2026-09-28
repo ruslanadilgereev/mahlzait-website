@@ -1,0 +1,249 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 35,
+  "height": 168,
+  "weight": 66,
+  "goal": "recomp",
+  "activityLevel": 1.375,
+  "daysPerWeek": 3,
+  "experienceLevel": "beginner",
+  "equipment": "home",
+  "sessionTime": 45,
+  "focus": [
+   "Ganzkörper mit Kurzhanteln"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Body Recomposition",
+  "level": "Anfänger",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper",
+  "tips": [
+   "Achte bei 1589 kcal auf eine hohe Proteinzufuhr (ca. 1,6 - 2,0 g pro kg Körpergewicht), um den Muskelaufbau im Defizit zu maximieren.",
+   "Führe ein Trainingstagebuch, um deine Gewichte und Wiederholungen exakt zu tracken.",
+   "Schlafe mindestens 7-8 Stunden pro Nacht, da die Muskelreparatur und Fettverbrennung hauptsächlich in der Ruhephase stattfinden.",
+   "Halte die Pausenzeiten mit einer Stoppuhr ein, um die Trainingszeit von 45 Minuten nicht zu überschreiten."
+  ],
+  "disclaimer": "Vor Beginn dieses Trainings- und Ernährungsplans wird eine ärztliche Rücksprache empfohlen. Führe alle Übungen technisch sauber und ohne Schmerzen aus.",
+  "progressionPlan": "Verwende das Prinzip der Doppelprogression: Wähle ein Gewicht, mit dem du das untere Ende des Wiederholungsbereichs (z.B. 8 Wdh.) sauber schaffst. Behalte das Gewicht bei, bis du in allen Sätzen das obere Ende (z.B. 10 oder 12 Wdh.) erreichst. Erhöhe erst dann das Kurzhantelgewicht um die kleinstmögliche Stufe (z.B. 1 bis 2 kg pro Hantel) und beginne wieder beim unteren Wiederholungsbereich."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper A",
+   "isRestDay": false,
+   "warmup": [
+    "3 Minuten lockeres Seilspringen oder Hampelmänner",
+    "Armkreisen und Schulterkreisen",
+    "10 Körpergewicht-Kniebeugen"
+   ],
+   "exercises": [
+    {
+     "name": "Kurzhantel Goblet Kniebeugen",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Gewicht erhöhen, sobald in allen 3 Sätzen 10 saubere Wiederholungen erreicht werden."
+    },
+    {
+     "name": "Kurzhantel-Bankdrücken (am Boden/Floor Press)",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Kontrollierte negative Bewegung. Progression über mehr Wiederholungen, dann mehr Gewicht."
+    },
+    {
+     "name": "Einarmiges Kurzhantelrudern",
+     "muscleGroup": "Oberer Rücken, Latissimus",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 60,
+     "notes": "Auf geraden Rücken achten. Bei Erreichen von 12 Wdh. das Hantelgewicht steigern."
+    },
+    {
+     "name": "Kurzhantel Schulterdrücken stehend",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 60,
+     "notes": "Bauch anspannen, um Hohlkreuz zu vermeiden. Progressiv Gewicht erhöhen."
+    },
+    {
+     "name": "Plank (Unterarmstütz)",
+     "muscleGroup": "Bauch/Core",
+     "sets": 3,
+     "reps": "30-45s",
+     "restSeconds": 45,
+     "notes": "Haltezeit wöchentlich um 5 Sekunden steigern bis 60 Sekunden erreicht sind."
+    }
+   ],
+   "cooldown": [
+    "Dehnen der Oberschenkel und Brustmuskulatur",
+    "2 Minuten tiefes Ein- und Ausatmen zur Entspannung"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper B",
+   "isRestDay": false,
+   "warmup": [
+    "3 Minuten Hampelmänner",
+    "Hüftkreisen und Ausfallschritte ohne Gewicht",
+    "Katze-Kuh Dehnung für die Wirbelsäule"
+   ],
+   "exercises": [
+    {
+     "name": "Rumänisches Kreuzheben mit Kurzhanteln",
+     "muscleGroup": "Beinbeuger, Gesäß, Unterer Rücken",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Fokus auf die Dehnung der Beinrückseite. Bei 3x10 Wdh. Gewicht steigern."
+    },
+    {
+     "name": "Kurzhantel Schrägbankdrücken (oder Liegestütze auf Knien)",
+     "muscleGroup": "Brust, Vordere Schulter",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Saubere Wiederholungen im vollen Bewegungsumfang priorisieren."
+    },
+    {
+     "name": "Kurzhantelrudern beidarmig vorgebeugt",
+     "muscleGroup": "Rücken, Bizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 60,
+     "notes": "Schulterblätter am obersten Punkt aktiv zusammenziehen."
+    },
+    {
+     "name": "Kurzhantel Ausfallschritte (statisch)",
+     "muscleGroup": "Beine, Gesäß",
+     "sets": 2,
+     "reps": "10-12 pro Bein",
+     "restSeconds": 60,
+     "notes": "Erst ohne Zusatzgewicht meistern, dann leichte Kurzhanteln in die Hände nehmen."
+    },
+    {
+     "name": "Kurzhantel Seitheben",
+     "muscleGroup": "Seitliche Schulter",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 45,
+     "notes": "Mit leichtem Gewicht arbeiten, keine Schwungbewegung nutzen."
+    }
+   ],
+   "cooldown": [
+    "Dehnen der Beinrückseite und Waden",
+    "Schulterdehnung"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper C",
+   "isRestDay": false,
+   "warmup": [
+    "3 Minuten leichtes Schattenboxen oder lockeres Laufen auf der Stelle",
+    "Armkreisen und Knieheben"
+   ],
+   "exercises": [
+    {
+     "name": "Kurzhantel Sumo-Kniebeugen",
+     "muscleGroup": "Adduktoren, Quadrizeps, Gesäß",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Breiter Stand, Knie folgen den Fußspitzen. Gewicht steigern nach Erreichen von 3x10 Wdh."
+    },
+    {
+     "name": "Kurzhantel Liegestütze / Kurzhantel Floor Press mit engem Griff",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Fokus auf Trizeps und Rumpfspannung. Wöchentlich 1-2 Wdh. mehr anstreben."
+    },
+    {
+     "name": "Kurzhantel Shrugs kombiniert mit aufrechtem Rudern",
+     "muscleGroup": "Nacken, Schultern",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Kontrollierte Hebung ohne Reißen."
+    },
+    {
+     "name": "Kurzhantel Bizeps Curls",
+     "muscleGroup": "Bizeps",
+     "sets": 2,
+     "reps": "10-12",
+     "restSeconds": 45,
+     "notes": "Ellbogen fixiert am Körper halten, Gewicht bei sauberer Technik steigern."
+    },
+    {
+     "name": "Kurzhantel Trizepsdrücken über Kopf (beidarmig)",
+     "muscleGroup": "Trizeps",
+     "sets": 2,
+     "reps": "10-12",
+     "restSeconds": 45,
+     "notes": "Ellbogen eng zusammenhalten, Dehnung im Trizeps spüren."
+    }
+   ],
+   "cooldown": [
+    "Ganzkörper-Stretching (Fokus auf Brust, Arme und Hüftbeuger)",
+    "Tiefenatmung"
+   ],
+   "estimatedMinutes": 45
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 1889,
+  "calories": 1589,
+  "protein": 145,
+  "fat": 44,
+  "carbs": 153
+ }
+}

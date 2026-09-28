@@ -368,7 +368,7 @@ function EssensplanPage({ config }: Props) {
                 { q: "Kann ich den Plan anpassen nachdem er generiert wurde?", a: "Du kannst jederzeit einen neuen Plan mit geänderten Präferenzen generieren. Einzelne Mahlzeiten tauschen kannst du, indem du auf ähnliche Alternativen mit gleichen Makros achtest." },
                 { q: "Berücksichtigt der Plan meine Allergien?", a: "Ja, du kannst Laktose, Gluten, Nüsse, Soja, Ei und Fructose als Unverträglichkeiten angeben. Die KI erstellt dann nur Rezepte ohne diese Zutaten." },
                 { q: "Für wen ist der Essensplan geeignet?", a: "Für alle, die ihre Ernährung strukturieren möchten — ob zum Abnehmen, Muskelaufbau oder für eine ausgewogene Ernährung. Der Generator ist nicht als medizinische Ernährungsberatung gedacht und ersetzt keine ärztliche Empfehlung bei Erkrankungen." },
-                { q: "Welche Ernährungsformen werden unterstützt?", a: "Aktuell: Omnivor (alles), Vegetarisch und Vegan. Spezielle Diäten wie Keto, Paleo oder Low-FODMAP sind derzeit nicht als eigene Optionen verfügbar." },
+                { q: "Welche Ernährungsformen werden unterstützt?", a: "Omnivor, Vegetarisch, Vegan, Low Carb, Keto, High Protein, Paleo und Mediterran. Bei Keto, Low Carb und High Protein passt der Generator auch die Makroverteilung an, zum Beispiel höchstens rund 25 g Kohlenhydrate am Tag bei Keto. Low-FODMAP und andere medizinische Diäten gibt es bewusst nicht, die gehören in ärztliche oder ernährungstherapeutische Begleitung." },
                 { q: "Wie lange dauert die Generierung?", a: "Der erste Tag erscheint nach wenigen Sekunden, der komplette Wochenplan steht in etwa 10 Sekunden. Du siehst den Fortschritt live — jeder Tag wird angezeigt, sobald er fertig ist." },
                 { q: "Kann ich auch einen Trainingsplan dazu erstellen?", a: "Ja! In Schritt 1 kannst du zusätzlich einen Trainingsplan aktivieren. Alternativ nutze unseren Trainingsplan Generator für noch mehr Optionen." },
                 { q: "Werden meine Daten gespeichert?", a: "Nein. Deine eingegebenen Daten werden nur für die Generierung verwendet und danach nicht gespeichert. Der generierte Plan existiert nur in deinem Browser." },
@@ -410,6 +410,7 @@ function EssensplanPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4">
             <h3 className="text-lg font-bold mb-6 text-center">Weitere Rechner & Tools</h3>
             <div className="flex flex-wrap justify-center gap-4">
+              <a href="/ernaehrungsplan/" className="btn btn-primary">Fertige Ernährungspläne</a>
               <a href="/trainingsplan-erstellen/" className="btn btn-primary">Trainingsplan erstellen</a>
               <a href="/kalorienbedarf-berechnen/" className="btn btn-outline">Kalorienbedarf berechnen</a>
               <a href="/makros-berechnen/" className="btn btn-outline">Makros berechnen</a>

@@ -1,0 +1,454 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 47,
+  "height": 166,
+  "weight": 78,
+  "goal": "lose",
+  "activityLevel": 1.375,
+  "diet": "omnivore",
+  "mealsPerDay": 3,
+  "cookingTime": 30,
+  "budget": "medium"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 1455,
+  "proteinGrams": 109,
+  "carbsGrams": 146,
+  "fatGrams": 49,
+  "goal": "Abnehmen",
+  "diet": "Omnivor (alles)",
+  "tips": [
+   "Volumen durch ballaststoffreiches Gemüse maximieren: Gemüse wie Zucchini, Gurken, Pilze und Blattsalat füllen den Magen nachhaltig bei minimaler Kaloriendichte.",
+   "Flüssige Kalorien konsequent vermeiden: Trinke täglich mindestens 2 bis 3 Liter stilles Wasser, ungesüßten Kräuter- oder Früchtetee, um Sättigung und Stoffwechsel optimal zu unterstützen.",
+   "Proteinverteilung über den Tag: Achte darauf, in jeder der 3 Mahlzeiten eine hochwertige Proteinquelle einzubinden, um Heißhungerattacken vorzubeugen und Muskelmasse während des Defizits zu schützen."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient ausschließlich als Orientierungshilfe und ersetzt keine individuelle medizinische oder ernährungstherapeutische Beratung. Bei Vorerkrankungen oder gesundheitlichen Beschwerden sollte vor Beginn einer Ernährungsumstellung ein Arzt konsultiert werden."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Beeren-Magerquark-Schale mit Chiasamen",
+     "ingredients": [
+      "250g Magerquark",
+      "100g TK-Beerenmischung",
+      "15g Chiasamen",
+      "30g Haferflocken",
+      "1 TL Honig"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 365,
+     "protein": 37,
+     "carbs": 41,
+     "fat": 5
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunter Hähnchen-Quinoa-Salat",
+     "ingredients": [
+      "150g Hähnchenbrustfilet",
+      "50g Quinoa (ungekocht)",
+      "150g Gurke",
+      "100g Kirschtomaten",
+      "50g Rucola",
+      "1 TL Olivenöl",
+      "1 EL Zitronensaft"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 485,
+     "protein": 42,
+     "carbs": 44,
+     "fat": 14
+    },
+    {
+     "type": "Abendessen",
+     "name": "Zucchini-Gemüsepfanne mit Rinderhack und Feta",
+     "ingredients": [
+      "120g Rinderhackfleisch (mager)",
+      "250g Zucchini",
+      "150g stückige Tomaten",
+      "40g Feta light",
+      "1 TL Rapsöl",
+      "Kräuter der Provence"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 615,
+     "protein": 33,
+     "carbs": 58,
+     "fat": 29
+    }
+   ],
+   "totalCalories": 1465,
+   "totalProtein": 112,
+   "totalCarbs": 143,
+   "totalFat": 48
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Gemüse-Rührei auf Vollkornbrot",
+     "ingredients": [
+      "2 Eier (Größe M)",
+      "100g Eiklar",
+      "1 Scheibe Vollkornbrot (ca. 50g)",
+      "100g Tomaten",
+      "100g Champignons",
+      "1 TL Butter"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 360,
+     "protein": 27,
+     "carbs": 26,
+     "fat": 15
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Thunfisch-Kichererbsen-Bowl",
+     "ingredients": [
+      "1 Dose Thunfisch im eigenen Saft (ca. 140g Abtropfgewicht)",
+      "120g Kichererbsen (Dose)",
+      "150g Paprika",
+      "100g Gurke",
+      "1 EL Apfelessig",
+      "1 TL Olivenöl"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 460,
+     "protein": 46,
+     "carbs": 45,
+     "fat": 8
+    },
+    {
+     "type": "Abendessen",
+     "name": "Ofenkartoffeln mit Kräuterquark und Brokkoli",
+     "ingredients": [
+      "250g Kartoffeln",
+      "200g Magerquark",
+      "200g Brokkoli (gedämpft)",
+      "30ml fettarme Milch (1,5%)",
+      "Schnittlauch",
+      "Salz",
+      "Pfeffer"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 620,
+     "protein": 36,
+     "carbs": 76,
+     "fat": 24
+    }
+   ],
+   "totalCalories": 1440,
+   "totalProtein": 109,
+   "totalCarbs": 147,
+   "totalFat": 47
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Protein-Apfel-Zimt-Porridge",
+     "ingredients": [
+      "50g Haferflocken",
+      "150ml Mandelmilch ungesüßt",
+      "25g Whey Proteinpulver Vanille",
+      "1 kleiner Apfel",
+      "1 Prise Zimt"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 380,
+     "protein": 31,
+     "carbs": 52,
+     "fat": 5
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Puten-Gemüse-Pfanne mit Basmatireis",
+     "ingredients": [
+      "160g Putenbrustfilet",
+      "50g Basmatireis (ungekocht)",
+      "150g Paprika",
+      "150g Zucchini",
+      "1 TL Sesamöl",
+      "2 EL Sojasauce"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 490,
+     "protein": 45,
+     "carbs": 50,
+     "fat": 11
+    },
+    {
+     "type": "Abendessen",
+     "name": "Lachssalat mit gekochtem Ei und Vollkorn-Knäckebrot",
+     "ingredients": [
+      "100g Räucherlachs",
+      "1 hartgekochtes Ei",
+      "150g gemischter Blattsalat",
+      "100g Gurke",
+      "2 Scheiben Vollkorn-Knäckebrot",
+      "1 TL Olivenöl",
+      "Zitronensaft"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 595,
+     "protein": 35,
+     "carbs": 42,
+     "fat": 33
+    }
+   ],
+   "totalCalories": 1465,
+   "totalProtein": 111,
+   "totalCarbs": 144,
+   "totalFat": 49
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Körniger Frischkäse mit Früchten und Nüssen",
+     "ingredients": [
+      "200g Körniger Frischkäse (mager)",
+      "1 Birne",
+      "15g Walnusskerne",
+      "1 TL Honig"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 355,
+     "protein": 28,
+     "carbs": 34,
+     "fat": 12
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Vollkornnudeln mit Tomaten-Garnelen-Sauce",
+     "ingredients": [
+      "55g Vollkornspaghetti (ungekocht)",
+      "150g Garnelen",
+      "150g stückige Tomaten aus der Dose",
+      "100g Spinat frisch",
+      "1 Knoblauchzehe",
+      "1 TL Olivenöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 475,
+     "protein": 40,
+     "carbs": 55,
+     "fat": 9
+    },
+    {
+     "type": "Abendessen",
+     "name": "Herzhafte Schinken-Omelette-Rolle mit Gemüsesticks",
+     "ingredients": [
+      "2 ganze Eier",
+      "100g Eiklar",
+      "50g Hähnchenbrustaufschnitt",
+      "150g Möhren",
+      "150g Kohlrabi",
+      "1 Scheibe Vollkornbrot (50g)",
+      "1 TL Rapsöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 615,
+     "protein": 39,
+     "carbs": 59,
+     "fat": 27
+    }
+   ],
+   "totalCalories": 1445,
+   "totalProtein": 107,
+   "totalCarbs": 148,
+   "totalFat": 48
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Griechischer Joghurt-Traum",
+     "ingredients": [
+      "200g Griechischer Joghurt (2% Fett)",
+      "30g Haferflocken",
+      "80g Heidelbeeren",
+      "10g Mandelsplitter"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 370,
+     "protein": 24,
+     "carbs": 41,
+     "fat": 12
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Hähnchen-Süßkartoffel-Pfanne",
+     "ingredients": [
+      "160g Hähnchenbrustfilet",
+      "180g Süßkartoffel",
+      "150g grüne Bohnen",
+      "1 TL Rapsöl",
+      "Paprikapulver edelsüß"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 480,
+     "protein": 45,
+     "carbs": 49,
+     "fat": 10
+    },
+    {
+     "type": "Abendessen",
+     "name": "Kabeljaufilet mit Senf-Dill-Dressing und Salzkartoffeln",
+     "ingredients": [
+      "180g Kabeljaufilet",
+      "200g Kartoffeln",
+      "200g Blumenkohl",
+      "1 TL Olivenöl",
+      "1 TL mittelscharfer Senf",
+      "Frischer Dill"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 625,
+     "protein": 41,
+     "carbs": 56,
+     "fat": 28
+    }
+   ],
+   "totalCalories": 1475,
+   "totalProtein": 110,
+   "totalCarbs": 146,
+   "totalFat": 50
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Protein-Pancakes mit Himbeerspiegel",
+     "ingredients": [
+      "40g Haferflocken (gemahlen)",
+      "20g Proteinpulver Vanille",
+      "1 Ei",
+      "50ml Mineralwasser mit Kohlensäure",
+      "100g TK-Himbeeren erwärmt"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 360,
+     "protein": 33,
+     "carbs": 35,
+     "fat": 8
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunter Linseneintopf mit Geflügelwiener",
+     "ingredients": [
+      "60g Tellerlinsen (trocken)",
+      "1 Geflügelwiener (ca. 50g)",
+      "100g Möhren",
+      "100g Sellerie",
+      "150ml Gemüsebrühe",
+      "1 TL Essig"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 495,
+     "protein": 36,
+     "carbs": 52,
+     "fat": 14
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gebackener Feta mit mediterranem Ofengemüse",
+     "ingredients": [
+      "75g Feta light",
+      "200g Zucchini",
+      "150g Paprika",
+      "100g Kirschtomaten",
+      "1 Scheibe Vollkornbrot (50g)",
+      "1 TL Olivenöl",
+      "Oregano"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 590,
+     "protein": 40,
+     "carbs": 61,
+     "fat": 24
+    }
+   ],
+   "totalCalories": 1445,
+   "totalProtein": 109,
+   "totalCarbs": 148,
+   "totalFat": 46
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Sonntags-Vollkornstulle mit Hüttenkäse und Räucherforelle",
+     "ingredients": [
+      "1 Scheibe Vollkornbrot (ca. 60g)",
+      "100g Körniger Frischkäse (mager)",
+      "60g Räucherforellenfilet",
+      "100g Radieschen & Gurke"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 345,
+     "protein": 32,
+     "carbs": 30,
+     "fat": 9
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Saftiges Rindersteak mit Prinzessbohnen und Couscous",
+     "ingredients": [
+      "140g Rinderhüftsteak",
+      "45g Couscous (ungekocht)",
+      "200g Prinzessbohnen",
+      "1 TL Kräuterbutter",
+      "1 TL Rapsöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 510,
+     "protein": 44,
+     "carbs": 44,
+     "fat": 17
+    },
+    {
+     "type": "Abendessen",
+     "name": "Würzige Tofu-Gemüse-Pfanne mit Reisnudeln",
+     "ingredients": [
+      "130g Naturtofu",
+      "40g Reisnudeln",
+      "150g Champignons",
+      "150g Chinakohl",
+      "1 TL Sesamöl",
+      "2 EL Sojasauce"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 610,
+     "protein": 32,
+     "carbs": 70,
+     "fat": 25
+    }
+   ],
+   "totalCalories": 1465,
+   "totalProtein": 108,
+   "totalCarbs": 144,
+   "totalFat": 51
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 1955,
+  "calories": 1455,
+  "protein": 109,
+  "carbs": 146,
+  "fat": 49
+ }
+}

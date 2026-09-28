@@ -1,0 +1,462 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 30,
+  "height": 180,
+  "weight": 80,
+  "goal": "maintain",
+  "activityLevel": 1.55,
+  "diet": "paleo",
+  "mealsPerDay": 3,
+  "cookingTime": 30,
+  "budget": "medium"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 2759,
+  "proteinGrams": 172,
+  "carbsGrams": 310,
+  "fatGrams": 92,
+  "goal": "Gewicht halten",
+  "diet": "Paleo",
+  "tips": [
+   "Da Getreide und Hülsenfrüchte bei Paleo wegfallen, sind stärkehaltige Knollen wie Kartoffeln, Süßkartoffeln, Kürbis und Pastinaken essenziell, um das Kohlenhydratziel von 310g zu erreichen.",
+   "Kartoffeln und Süßkartoffeln können ideal für 2-3 Tage vorgekocht werden; das spart werktags viel Zeit und sie lassen sich in wenigen Minuten anbraten.",
+   "Gesunde Fette aus Nüssen, Samen, Avocados und nativen Ölen liefern langanhaltende Energie und unterstützen die Aufnahme fettlöslicher Vitamine."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient ausschließlich als Orientierungshilfe und ersetzt keine individuelle medizinische oder ernährungstherapeutische Beratung."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Süßkartoffel-Omelett mit Avocado und Heidelbeeren",
+     "ingredients": [
+      "3 Eier (Größe M)",
+      "200g Süßkartoffel (geraspelt)",
+      "100g Heidelbeeren",
+      "1/2 Avocado (ca. 75g)",
+      "10g Kokosöl",
+      "1 Prise Salz und Pfeffer"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 715,
+     "protein": 28,
+     "carbs": 68,
+     "fat": 37
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunte Rinderhack-Pfanne mit Kartoffelwürfeln und Gemüse",
+     "ingredients": [
+      "200g Rinderhackfleisch (mager)",
+      "400g Kartoffeln (gewürfelt)",
+      "150g Zucchini",
+      "150g Paprika",
+      "15ml Olivenöl",
+      "Frische Kräuter"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 1025,
+     "protein": 64,
+     "carbs": 108,
+     "fat": 37
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gebratenes Lachsfilet mit Ofen-Kürbis und Bananen-Mandel-Nachtisch",
+     "ingredients": [
+      "200g Lachsfilet",
+      "400g Hokkaidokürbis",
+      "150g Brokkoli",
+      "10ml Olivenöl",
+      "1 große Banane",
+      "30g Mandeln"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 1018,
+     "protein": 78,
+     "carbs": 131,
+     "fat": 20
+    }
+   ],
+   "totalCalories": 2758,
+   "totalProtein": 170,
+   "totalCarbs": 307,
+   "totalFat": 94
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Paleo-Bananen-Pancakes mit Walnüssen und Beeren",
+     "ingredients": [
+      "2 reife Bananen",
+      "3 Eier",
+      "30g Mandelmehl",
+      "100g Himbeeren",
+      "25g Walnüsse",
+      "10g Kokosöl zum Ausbacken"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 795,
+     "protein": 30,
+     "carbs": 88,
+     "fat": 36
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Hähnchenbrustfilet mit Süßkartoffelstampf und grünem Spargel",
+     "ingredients": [
+      "250g Hähnchenbrust",
+      "450g Süßkartoffeln",
+      "200g grüner Spargel",
+      "15ml Olivenöl",
+      "1 Apfel als Nachspeise"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 1032,
+     "protein": 76,
+     "carbs": 128,
+     "fat": 22
+    },
+    {
+     "type": "Abendessen",
+     "name": "Thunfischsalat mit Salzkartoffeln, Ei und Kürbiskernen",
+     "ingredients": [
+      "1 Dose Thunfisch im eigenen Saft (ca. 150g Abtropfgewicht)",
+      "2 hartgekochte Eier",
+      "350g gekochte Kartoffeln",
+      "100g gemischter Blattsalat",
+      "150g Gurke",
+      "15ml Olivenöl",
+      "30g Kürbiskerne"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 940,
+     "protein": 69,
+     "carbs": 92,
+     "fat": 34
+    }
+   ],
+   "totalCalories": 2767,
+   "totalProtein": 175,
+   "totalCarbs": 308,
+   "totalFat": 92
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Rührei mit Kochschinken, Champignons und Bratkartoffeln",
+     "ingredients": [
+      "3 Eier",
+      "70g hochwertiger Kochschinken",
+      "250g vorgekochte Kartoffeln",
+      "100g Champignons",
+      "10g Ghee oder Kokosöl",
+      "1 Orange"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 728,
+     "protein": 42,
+     "carbs": 76,
+     "fat": 27
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Putenstreifen in Kokos-Curry mit Karotten und Süßkartoffeln",
+     "ingredients": [
+      "250g Putenbrust",
+      "400g Süßkartoffeln",
+      "150g Karotten",
+      "150ml ungesüßte Kokosmilch",
+      "100g Babyspinat",
+      "Currypulver, Salz, Ingwer"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 1074,
+     "protein": 73,
+     "carbs": 124,
+     "fat": 31
+    },
+    {
+     "type": "Abendessen",
+     "name": "Großer Beef-Burger (ohne Brötchen) auf Süßkartoffelscheiben mit Salat",
+     "ingredients": [
+      "200g Rinderhackfleisch (Patties geformt)",
+      "300g Süßkartoffelscheiben (gebraten)",
+      "100g Tomaten",
+      "100g Blattsalat",
+      "1/2 Avocado (ca. 75g)",
+      "10ml Olivenöl",
+      "1 Birne"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 952,
+     "protein": 56,
+     "carbs": 110,
+     "fat": 33
+    }
+   ],
+   "totalCalories": 2754,
+   "totalProtein": 171,
+   "totalCarbs": 310,
+   "totalFat": 91
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Paleo-Frühstücks-Bowl mit Nüssen, Obst und Kokosjoghurt-Alternative",
+     "ingredients": [
+      "200ml Kokosmilch cremig",
+      "2 Bananen",
+      "150g Erdbeeren",
+      "30g Chiasamen",
+      "30g Mandelmus",
+      "2 gekochte Eier (separat dazu gegessen)"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 920,
+     "protein": 31,
+     "carbs": 102,
+     "fat": 42
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Forellenfilet mit Petersilienkartoffeln und warmem Rote-Bete-Salat",
+     "ingredients": [
+      "220g Forellenfilet",
+      "450g Kartoffeln",
+      "200g vorgegarte Rote Bete",
+      "15ml Olivenöl",
+      "15g Sonnenblumenkerne",
+      "Frische Petersilie und Zitronensaft"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 935,
+     "protein": 63,
+     "carbs": 112,
+     "fat": 25
+    },
+    {
+     "type": "Abendessen",
+     "name": "Hähnchen-Gemüse-Pfanne mit Pastinaken und Cashews",
+     "ingredients": [
+      "220g Hähnchenbrust",
+      "300g Pastinaken",
+      "150g Brokkoli",
+      "150g Paprika",
+      "10ml Sesamöl",
+      "30g Cashewkerne",
+      "1 Apfel"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 892,
+     "protein": 74,
+     "carbs": 98,
+     "fat": 24
+    }
+   ],
+   "totalCalories": 2747,
+   "totalProtein": 168,
+   "totalCarbs": 312,
+   "totalFat": 91
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Herzhaftes Spiegelei auf Süßkartoffel-Rösti mit Bacon",
+     "ingredients": [
+      "3 Eier",
+      "40g Paleo-Bacon / geräucherter Bauchspeck",
+      "250g Süßkartoffel (gerieben)",
+      "100g Kirschtomaten",
+      "10g Kokosöl",
+      "1 Apfel"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 782,
+     "protein": 34,
+     "carbs": 86,
+     "fat": 33
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Rinderstreifen mit Süßkartoffelpommes aus der Pfanne und Kräuterdip",
+     "ingredients": [
+      "220g Rindersteakstreifen",
+      "450g Süßkartoffeln",
+      "150g Gurke",
+      "1/2 Avocado (75g)",
+      "15ml Olivenöl",
+      "Knoblauch und Kräuter"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 1055,
+     "protein": 71,
+     "carbs": 126,
+     "fat": 30
+    },
+    {
+     "type": "Abendessen",
+     "name": "Kabeljaufilet mit Zitronen-Dill-Sauce auf Kartoffel-Möhren-Stampf",
+     "ingredients": [
+      "250g Kabeljaufilet",
+      "350g Kartoffeln",
+      "200g Möhren",
+      "10g Olivenöl",
+      "1 Banane",
+      "25g Haselnüsse"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 930,
+     "protein": 70,
+     "carbs": 100,
+     "fat": 29
+    }
+   ],
+   "totalCalories": 2767,
+   "totalProtein": 175,
+   "totalCarbs": 312,
+   "totalFat": 92
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Paleo-Kaiserschmarrn mit Apfelmus und Walnüssen",
+     "ingredients": [
+      "3 Eier",
+      "1 reife Banane",
+      "30g Mandelmehl",
+      "150g ungesüßtes Apfelmus",
+      "25g Walnüsse",
+      "10g Kokosöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 765,
+     "protein": 31,
+     "carbs": 79,
+     "fat": 36
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Würzige Hackfleisch-Gulaschsuppe mit Kartoffeln und Paprika",
+     "ingredients": [
+      "220g Rinderhackfleisch",
+      "450g Kartoffeln",
+      "200g Paprika",
+      "150g gehackte Tomaten (Dose)",
+      "15ml Olivenöl",
+      "1 Orange"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 1028,
+     "protein": 66,
+     "carbs": 122,
+     "fat": 30
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gebratene Hähnchenschenkel (ohne Knochen) mit Ofenkürbis und Feldsalat",
+     "ingredients": [
+      "220g Hähnchenfleisch",
+      "400g Hokkaidokürbis",
+      "100g Feldsalat",
+      "15ml Olivenöl",
+      "30g Kürbiskerne",
+      "1 reife Birne"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 962,
+     "protein": 73,
+     "carbs": 106,
+     "fat": 27
+    }
+   ],
+   "totalCalories": 2755,
+   "totalProtein": 170,
+   "totalCarbs": 307,
+   "totalFat": 93
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Sonntags-Brunch: Rührei mit Räucherlachs, Avocado und Obstteller",
+     "ingredients": [
+      "3 Eier",
+      "100g Räucherlachs",
+      "1/2 Avocado (75g)",
+      "1 Banane",
+      "100g Heidelbeeren",
+      "10g Kokosöl",
+      "150g Süßkartoffel (angebraten)"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 845,
+     "protein": 44,
+     "carbs": 82,
+     "fat": 38
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Zartes Schweinefilet mit Rosmarinkartoffeln und gedünstetem Zucchinigemüse",
+     "ingredients": [
+      "250g Schweinefilet (mager)",
+      "450g Kartoffeln",
+      "200g Zucchini",
+      "15ml Olivenöl",
+      "1 Apfel"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 1012,
+     "protein": 76,
+     "carbs": 121,
+     "fat": 24
+    },
+    {
+     "type": "Abendessen",
+     "name": "Bunter Garnelensalat mit Süßkartoffelspalten und Paranüssen",
+     "ingredients": [
+      "200g Garnelen",
+      "350g Süßkartoffeln",
+      "100g gemischter Salat",
+      "100g Gurke",
+      "15ml Olivenöl",
+      "25g Paranüsse"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 905,
+     "protein": 54,
+     "carbs": 104,
+     "fat": 30
+    }
+   ],
+   "totalCalories": 2762,
+   "totalProtein": 174,
+   "totalCarbs": 307,
+   "totalFat": 92
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 2759,
+  "calories": 2759,
+  "protein": 172,
+  "carbs": 310,
+  "fat": 92
+ }
+}

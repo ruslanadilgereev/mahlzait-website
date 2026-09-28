@@ -1,0 +1,459 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 28,
+  "height": 165,
+  "weight": 62,
+  "goal": "maintain",
+  "activityLevel": 1.55,
+  "diet": "vegan",
+  "mealsPerDay": 3,
+  "cookingTime": 30,
+  "budget": "medium"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 2093,
+  "proteinGrams": 131,
+  "carbsGrams": 235,
+  "fatGrams": 70,
+  "goal": "Gewicht halten",
+  "diet": "Vegan",
+  "tips": [
+   "Hülsenfrüchte wie Kichererbsen, Linsen und Bohnen als Konserve sparen im Alltag viel Vorbereitungszeit und liefern wertvolles Protein und Ballaststoffe.",
+   "Kombiniere pflanzliche Proteinquellen (wie Vollkorngetreide mit Hülsenfrüchten), um die biologische Wertigkeit der Proteine über den Tag hinweg zu optimieren.",
+   "Bereite Quinoa, Reis oder Kartoffeln gerne in größeren Mengen vor (Meal Prep), damit die Zubereitung unter der Woche maximal 15–20 Minuten dauert."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient ausschließlich als Orientierungshilfe und ersetzt keine individuelle medizinische oder ernährungstherapeutische Beratung."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Beeren-Haferflocken-Bowl mit Sojajoghurt und Chiasamen",
+     "ingredients": [
+      "80g zarte Haferflocken",
+      "200g ungesüßter Sojajoghurt",
+      "100g TK-Beerenmischung",
+      "15g Chiasamen",
+      "20g Erdnussbutter",
+      "1 TL Ahornsirup"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 610,
+     "protein": 33,
+     "carbs": 72,
+     "fat": 20
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Kichererbsen-Quinoa-Bowl mit Tahini-Dressing",
+     "ingredients": [
+      "75g Quinoa (Trockengewicht)",
+      "150g Kichererbsen (gekocht, aus der Dose)",
+      "100g Gurke",
+      "100g Kirschtomaten",
+      "50g Babyspinat",
+      "20g Tahini (Sesampaste)",
+      "1 EL Zitronensaft"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 745,
+     "protein": 46,
+     "carbs": 88,
+     "fat": 23
+    },
+    {
+     "type": "Abendessen",
+     "name": "Räuchertofu-Gemüse-Pfanne mit Vollkornreis",
+     "ingredients": [
+      "200g Räuchertofu (gewürfelt)",
+      "65g Vollkornreis (Trockengewicht)",
+      "150g Brokkoliröschen",
+      "100g Paprika rot",
+      "1 EL Rapsöl",
+      "2 EL Sojasauce"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 730,
+     "protein": 51,
+     "carbs": 74,
+     "fat": 26
+    }
+   ],
+   "totalCalories": 2085,
+   "totalProtein": 130,
+   "totalCarbs": 234,
+   "totalFat": 69
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Tofu-Scramble auf geröstetem Vollkornbrot",
+     "ingredients": [
+      "200g Naturtofu",
+      "2 Scheiben Vollkornbrot (ca. 100g)",
+      "1 TL Olivenöl",
+      "1 Prise Kala Namak & Kurkuma",
+      "1 Tomate",
+      "20g Kürbiskerne"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 620,
+     "protein": 41,
+     "carbs": 56,
+     "fat": 24
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Rote-Linsen-Eintopf mit Kartoffeln und Karotten",
+     "ingredients": [
+      "90g rote Linsen (trocken)",
+      "150g Kartoffeln",
+      "100g Karotten",
+      "100g Zucchini",
+      "1 EL Rapsöl",
+      "300ml Gemüsebrühe"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 715,
+     "protein": 42,
+     "carbs": 105,
+     "fat": 13
+    },
+    {
+     "type": "Abendessen",
+     "name": "Vollkorn-Penne mit cremiger Soja-Bolognese",
+     "ingredients": [
+      "85g Vollkorn-Penne",
+      "45g Sojaschnetzel (fein, trocken gewogen)",
+      "150g stückige Tomaten (Dose)",
+      "1 kleine Zwiebel",
+      "1 TL Olivenöl",
+      "15g Hefeflocken"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 770,
+     "protein": 50,
+     "carbs": 80,
+     "fat": 28
+    }
+   ],
+   "totalCalories": 2105,
+   "totalProtein": 133,
+   "totalCarbs": 241,
+   "totalFat": 65
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Proteinreicher Schoko-Bananen-Porridge",
+     "ingredients": [
+      "80g zarte Haferflocken",
+      "250ml ungesüßte Sojamilch",
+      "1 Banane",
+      "10g Backkakao",
+      "20g Hanfsamen",
+      "15g Mandeln (gehackt)"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 675,
+     "protein": 36,
+     "carbs": 85,
+     "fat": 21
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Edamame-Wildreis-Salat mit Erdnuss-Limetten-Dressing",
+     "ingredients": [
+      "70g Wildreis-Mischung (Trockengewicht)",
+      "150g Edamame (TK, geschält)",
+      "100g Paprika gelb",
+      "1 Frühlingszwiebel",
+      "25g Erdnussbutter",
+      "1 EL Limettensaft"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 735,
+     "protein": 45,
+     "carbs": 79,
+     "fat": 26
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gebackene Süßkartoffel gefüllt mit schwarzen Bohnen und Mais",
+     "ingredients": [
+      "250g Süßkartoffel",
+      "160g schwarze Bohnen (Dose)",
+      "60g Mais (Dose)",
+      "50g Avocado",
+      "2 EL Tomatensalsa",
+      "10g Kürbiskerne"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 670,
+     "protein": 48,
+     "carbs": 74,
+     "fat": 22
+    }
+   ],
+   "totalCalories": 2080,
+   "totalProtein": 129,
+   "totalCarbs": 238,
+   "totalFat": 69
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Overnight Oats mit Apfel, Zimt und Walnüssen",
+     "ingredients": [
+      "80g Haferflocken",
+      "200g ungesüßter Sojajoghurt",
+      "1 mittelgroßer Apfel (gerieben)",
+      "1/2 TL Zimt",
+      "20g Walnusskerne",
+      "10g Leinsamen"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 650,
+     "protein": 31,
+     "carbs": 81,
+     "fat": 21
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Kichererbsen-Kokos-Curry mit Blattspinat und Basmatireis",
+     "ingredients": [
+      "160g Kichererbsen (Dose)",
+      "65g Basmatireis (trocken)",
+      "100ml fettreduzierte Kokosmilch",
+      "100g frischer Blattspinat",
+      "1 TL Kokosöl",
+      "1 EL gelbe Currypaste"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 720,
+     "protein": 46,
+     "carbs": 84,
+     "fat": 22
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gebratener Tempeh mit Mie-Nudeln und Wokgemüse",
+     "ingredients": [
+      "150g Natur-Tempeh (in Streifen)",
+      "70g Vollkorn-Mie-Nudeln",
+      "100g Zuckerschoten",
+      "100g Champignons",
+      "1 EL Sesamöl",
+      "2 EL Tamari/Sojasauce"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 740,
+     "protein": 53,
+     "carbs": 73,
+     "fat": 29
+    }
+   ],
+   "totalCalories": 2110,
+   "totalProtein": 130,
+   "totalCarbs": 238,
+   "totalFat": 72
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Vollkorn-Toast mit Hummus, Avocado und Sonnenblumenkernen",
+     "ingredients": [
+      "3 Scheiben Vollkorntoast (ca. 90g)",
+      "70g Hummus (klassisch)",
+      "40g Avocado",
+      "15g Sonnenblumenkerne",
+      "100g Snackgurke"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 615,
+     "protein": 32,
+     "carbs": 66,
+     "fat": 24
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Mediterraner Couscous-Salat mit marinierter Seitan-Pfanne",
+     "ingredients": [
+      "75g Vollkorn-Couscous (trocken)",
+      "130g Seitan (schnittfest, mariniert)",
+      "100g Kirschtomaten",
+      "80g Gurke",
+      "1 EL Olivenöl",
+      "1 EL Zitronensaft"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 765,
+     "protein": 52,
+     "carbs": 86,
+     "fat": 22
+    },
+    {
+     "type": "Abendessen",
+     "name": "Grüne-Bohnen-Kartoffel-Pfanne mit Räuchertofu",
+     "ingredients": [
+      "180g Räuchertofu",
+      "200g festkochende Kartoffeln (vorgekocht/gewürfelt)",
+      "150g Prinzessbohnen (TK)",
+      "1 TL Rapsöl",
+      "1 TL Senf",
+      "1 Frühlingszwiebel"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 705,
+     "protein": 48,
+     "carbs": 81,
+     "fat": 23
+    }
+   ],
+   "totalCalories": 2085,
+   "totalProtein": 132,
+   "totalCarbs": 233,
+   "totalFat": 69
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Vegane Dinkel-Pancakes mit Beerenkompott und Cashewmus",
+     "ingredients": [
+      "80g Dinkel-Vollkornmehl",
+      "150ml Sojamilch",
+      "1 TL Backpulver",
+      "150g TK-Beeren (erwärmt)",
+      "20g Cashewmus",
+      "1 TL Ahornsirup"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 640,
+     "protein": 34,
+     "carbs": 80,
+     "fat": 20
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Gefüllte Paprika mit Linsen, Reis und Tomatensauce",
+     "ingredients": [
+      "2 große rote Paprikaschoten",
+      "60g braune Linsen (trocken)",
+      "50g Naturreis (trocken)",
+      "150ml passierte Tomaten",
+      "1 TL Olivenöl",
+      "Kräuter der Provence"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 735,
+     "protein": 47,
+     "carbs": 88,
+     "fat": 22
+    },
+    {
+     "type": "Abendessen",
+     "name": "Großer Kichererbsen-Vollkornwrap mit Tahini-Joghurt-Sauce",
+     "ingredients": [
+      "2 Vollkorn-Tortilla-Wraps (ca. 120g)",
+      "150g Kichererbsen (geröstet mit Paprikapulver)",
+      "50g Sojajoghurt",
+      "15g Tahini",
+      "50g Raspelmöhren",
+      "50g Blattsalat"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 725,
+     "protein": 51,
+     "carbs": 66,
+     "fat": 28
+    }
+   ],
+   "totalCalories": 2100,
+   "totalProtein": 132,
+   "totalCarbs": 234,
+   "totalFat": 70
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Herzhaftes Vollkornbrot mit Tofu-Aufstrich und Radieschen",
+     "ingredients": [
+      "2 dicke Scheiben Vollkornbrot (120g)",
+      "120g Naturtofu (püriert mit Kräutern)",
+      "1 TL Olivenöl",
+      "1 Bund Radieschen",
+      "15g Kürbiskerne"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 630,
+     "protein": 37,
+     "carbs": 65,
+     "fat": 24
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunter Quinoa-Salat mit schwarzen Bohnen und Mais",
+     "ingredients": [
+      "80g Quinoa (trocken)",
+      "160g schwarze Bohnen (Dose)",
+      "60g Mais (Dose)",
+      "100g Tomaten",
+      "15ml Olivenöl-Limetten-Dressing",
+      "Frischer Koriander"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 745,
+     "protein": 49,
+     "carbs": 92,
+     "fat": 20
+    },
+    {
+     "type": "Abendessen",
+     "name": "Aromatisches Linsen-Dhal mit frischem Spinat und Fladenbrot",
+     "ingredients": [
+      "85g rote Linsen (trocken)",
+      "100g Babyspinat",
+      "1 Vollkorn-Pita/Fladenbrot (ca. 60g)",
+      "100ml stückige Tomaten",
+      "10g Kokosöl",
+      "1 TL Garam Masala & Ingwer"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 700,
+     "protein": 48,
+     "carbs": 81,
+     "fat": 22
+    }
+   ],
+   "totalCalories": 2075,
+   "totalProtein": 134,
+   "totalCarbs": 238,
+   "totalFat": 66
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 2093,
+  "calories": 2093,
+  "protein": 131,
+  "carbs": 235,
+  "fat": 70
+ }
+}

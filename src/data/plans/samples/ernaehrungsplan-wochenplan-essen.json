@@ -1,0 +1,445 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 34,
+  "height": 168,
+  "weight": 65,
+  "goal": "maintain",
+  "activityLevel": 1.55,
+  "diet": "omnivore",
+  "mealsPerDay": 3,
+  "cookingTime": 30,
+  "budget": "cheap"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 2122,
+  "proteinGrams": 133,
+  "carbsGrams": 239,
+  "fatGrams": 71,
+  "goal": "Gewicht halten",
+  "diet": "Omnivor (alles)",
+  "tips": [
+   "Koche Kohlenhydratbeilagen wie Naturreis, Kartoffeln oder Vollkornnudeln in größeren Mengen für 2 Tage vor, um an stressigen Tagen Zeit zu sparen.",
+   "Nutze TK-Gemüse und Beeren ohne Zusätze – sie sind preisgünstig, nährstoffreich und haben keine Vorbereitungszeit.",
+   "Achte auf eine ausreichende Flüssigkeitszufuhr von 2 bis 3 Litern Wasser oder ungesüßtem Tee über den Tag verteilt."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient als Orientierungshilfe zur ausgewogenen Ernährung und ersetzt keine individuelle medizinische oder therapeutische Ernährungsberatung."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Körniges Beeren-Haferflocken-Müsli",
+     "ingredients": [
+      "80g Haferflocken",
+      "150g Magerquark",
+      "100ml fettarme Milch (1,5%)",
+      "100g TK-Beerenmischung",
+      "15g Chiasamen",
+      "1 TL Honig"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 585,
+     "protein": 37,
+     "carbs": 76,
+     "fat": 13
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Hähnchenbrust mit Vollkornnudeln und Tomatensauce",
+     "ingredients": [
+      "150g Hähnchenbrustfilet",
+      "90g Vollkornnudeln (ungekocht)",
+      "150g stückige Tomaten (Dose)",
+      "1 TL Olivenöl",
+      "100g Zucchini",
+      "20g geriebener Parmesan"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 760,
+     "protein": 54,
+     "carbs": 88,
+     "fat": 19
+    },
+    {
+     "type": "Abendessen",
+     "name": "Körniger Frischkäse-Salatteller mit Vollkornbrot",
+     "ingredients": [
+      "2 Scheiben Vollkornbrot (ca. 100g)",
+      "200g Körniger Frischkäse (mager)",
+      "1 hartgekochtes Ei",
+      "150g Gurke",
+      "100g Tomaten",
+      "1 TL Rapsöl für das Dressing"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 780,
+     "protein": 44,
+     "carbs": 78,
+     "fat": 38
+    }
+   ],
+   "totalCalories": 2125,
+   "totalProtein": 135,
+   "totalCarbs": 242,
+   "totalFat": 70
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Vollkornbrot mit Rührei und Schinken",
+     "ingredients": [
+      "2 Scheiben Vollkornbrot (100g)",
+      "2 Eier (Größe M)",
+      "50g magerer Schinken",
+      "1 TL Butter",
+      "1 Apfel"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 610,
+     "protein": 35,
+     "carbs": 68,
+     "fat": 21
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunte Reispfanne mit Rinderhack und Paprika",
+     "ingredients": [
+      "120g mageres Rinderhackfleisch",
+      "80g Naturreis (ungekocht)",
+      "1 Rote Paprika",
+      "100g Erbsen (TK)",
+      "1 TL Pflanzenöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 770,
+     "protein": 46,
+     "carbs": 92,
+     "fat": 23
+    },
+    {
+     "type": "Abendessen",
+     "name": "Thunfisch-Bohnen-Salat mit Baguette",
+     "ingredients": [
+      "1 Dose Thunfisch im eigenen Saft (150g)",
+      "150g Kidneybohnen (Dose, abgetropft)",
+      "100g Mais (Dose)",
+      "1 EL Olivenöl",
+      "70g Vollkornbaguette"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 730,
+     "protein": 51,
+     "carbs": 77,
+     "fat": 25
+    }
+   ],
+   "totalCalories": 2110,
+   "totalProtein": 132,
+   "totalCarbs": 237,
+   "totalFat": 69
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Bananen-Zimt-Porridge mit Erdnussmus",
+     "ingredients": [
+      "85g Haferflocken",
+      "200ml fettarme Milch",
+      "1 Banane",
+      "15g Erdnussmus",
+      "1 Prise Zimt"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 640,
+     "protein": 24,
+     "carbs": 94,
+     "fat": 17
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Lachsfilet mit Salzkartoffeln und Brokkoli",
+     "ingredients": [
+      "140g Lachsfilet",
+      "300g Kartoffeln",
+      "200g Brokkoli",
+      "1 TL Butter"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 725,
+     "protein": 45,
+     "carbs": 66,
+     "fat": 31
+    },
+    {
+     "type": "Abendessen",
+     "name": "Quark-Kartoffel-Bowl mit Frühlingszwiebeln",
+     "ingredients": [
+      "250g Magerquark",
+      "50ml Mineralwasser",
+      "250g Pellkartoffeln",
+      "1 Bund Frühlingszwiebeln",
+      "1 Scheibe Vollkornbrot (50g)",
+      "1 EL Leinöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 750,
+     "protein": 63,
+     "carbs": 79,
+     "fat": 21
+    }
+   ],
+   "totalCalories": 2115,
+   "totalProtein": 132,
+   "totalCarbs": 239,
+   "totalFat": 69
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Gouda-Ei-Vollkornstulle mit Birne",
+     "ingredients": [
+      "2 Scheiben Vollkornbrot (100g)",
+      "40g junger Gouda",
+      "1 gekochtes Ei",
+      "10g Butter",
+      "1 Birne"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 630,
+     "protein": 28,
+     "carbs": 71,
+     "fat": 25
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Linseneintopf mit Geflügelwiener",
+     "ingredients": [
+      "80g Tellerlinsen (trocken)",
+      "100g Karotten",
+      "100g Kartoffeln",
+      "1 Paar Geflügelwiener (100g)",
+      "500ml Gemüsebrühe"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 765,
+     "protein": 52,
+     "carbs": 88,
+     "fat": 21
+    },
+    {
+     "type": "Abendessen",
+     "name": "Couscous-Salat mit Feta und Tomaten",
+     "ingredients": [
+      "80g Couscous (trocken)",
+      "60g Schafskäse/Feta (leicht)",
+      "150g Tomaten",
+      "100g Gurke",
+      "1 TL Olivenöl",
+      "150g Naturjoghurt (1,5%)"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 735,
+     "protein": 54,
+     "carbs": 82,
+     "fat": 26
+    }
+   ],
+   "totalCalories": 2130,
+   "totalProtein": 134,
+   "totalCarbs": 241,
+   "totalFat": 72
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Magerquark mit Apfel, Zimt und Walnüssen",
+     "ingredients": [
+      "250g Magerquark",
+      "1 großer Apfel (ca. 180g)",
+      "20g Walnusskerne",
+      "50g Vollkorn-Haferflocken",
+      "1 TL Honig"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 670,
+     "protein": 46,
+     "carbs": 76,
+     "fat": 19
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Puten-Curry mit Basmatireis und Gemüse",
+     "ingredients": [
+      "150g Putenbrust",
+      "85g Basmatireis",
+      "150g TK-Kaisergemüse",
+      "1 TL Rapsöl",
+      "50ml Kokosmilch light"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 750,
+     "protein": 49,
+     "carbs": 94,
+     "fat": 17
+    },
+    {
+     "type": "Abendessen",
+     "name": "Vollkorn-Wrap mit Mozzarella und Ei",
+     "ingredients": [
+      "2 Vollkorn-Tortilla-Wraps (ca. 120g)",
+      "80g Mozzarella (halbfett)",
+      "1 hartgekochtes Ei",
+      "50g Blattsalat",
+      "100g Tomaten"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 710,
+     "protein": 40,
+     "carbs": 66,
+     "fat": 33
+    }
+   ],
+   "totalCalories": 2130,
+   "totalProtein": 135,
+   "totalCarbs": 236,
+   "totalFat": 69
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Rührei-Toast mit Avocado",
+     "ingredients": [
+      "2 Scheiben Vollkorntoast (70g)",
+      "2 Eier (Größe M)",
+      "50g Avocado",
+      "1 Glas fettarme Milch (200ml)",
+      "1 Orange"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 620,
+     "protein": 27,
+     "carbs": 67,
+     "fat": 26
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Spaghetti Bolognese (mager)",
+     "ingredients": [
+      "90g Vollkornspaghetti",
+      "130g fettarmes Rinderhackfleisch",
+      "150g passierte Tomaten",
+      "1 TL Olivenöl",
+      "15g Parmesan gerieben"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 795,
+     "protein": 53,
+     "carbs": 90,
+     "fat": 24
+    },
+    {
+     "type": "Abendessen",
+     "name": "Bunter Bohnensalat mit Schafskäse und Brot",
+     "ingredients": [
+      "150g Weiße Bohnen (Dose)",
+      "100g Gurke",
+      "100g Kirschtomaten",
+      "60g Feta (leicht)",
+      "1 Scheibe Vollkornbrot (50g)",
+      "1 EL Olivenöl"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 700,
+     "protein": 52,
+     "carbs": 81,
+     "fat": 24
+    }
+   ],
+   "totalCalories": 2115,
+   "totalProtein": 132,
+   "totalCarbs": 238,
+   "totalFat": 74
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Protein-Pancakes mit Beeren",
+     "ingredients": [
+      "70g Dinkelmehl",
+      "150g Magerquark",
+      "1 Ei",
+      "50ml fettarme Milch",
+      "100g frische oder TK-Heidelbeeren",
+      "1 TL Ahornsirup"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 625,
+     "protein": 41,
+     "carbs": 83,
+     "fat": 12
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Seelachsfilet auf Gemüsereis",
+     "ingredients": [
+      "180g Seelachsfilet (TK oder frisch)",
+      "85g Langkornreis",
+      "150g Gemüsemischung (Erbsen, Möhren, Mais)",
+      "1 EL Rapsöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 765,
+     "protein": 49,
+     "carbs": 93,
+     "fat": 21
+    },
+    {
+     "type": "Abendessen",
+     "name": "Deftiges Abendbrot mit Hüttenkäse und Putenbrust",
+     "ingredients": [
+      "2 Scheiben Vollkornbrot (100g)",
+      "200g Hüttenkäse (körniger Frischkäse 20%)",
+      "60g Geflügelbrustaufschnitt",
+      "1 große Karotte (100g)",
+      "1 Kohlrabi (150g)",
+      "1 TL Butter"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 735,
+     "protein": 45,
+     "carbs": 66,
+     "fat": 38
+    }
+   ],
+   "totalCalories": 2125,
+   "totalProtein": 135,
+   "totalCarbs": 242,
+   "totalFat": 71
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 2122,
+  "calories": 2122,
+  "protein": 133,
+  "carbs": 239,
+  "fat": 71
+ }
+}

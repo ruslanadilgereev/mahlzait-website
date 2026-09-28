@@ -1,0 +1,251 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 29,
+  "height": 167,
+  "weight": 64,
+  "goal": "recomp",
+  "activityLevel": 1.55,
+  "daysPerWeek": 3,
+  "experienceLevel": "beginner",
+  "equipment": "gym",
+  "sessionTime": 60,
+  "focus": [
+   "Unterkörper und Po",
+   "Ganzkörper"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Body Recomposition",
+  "level": "Anfänger",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper mit Fokus auf Unterkörper und Po",
+  "tips": [
+   "Proteinreich essen: Achte bei deinem Kalorienziel von 1836 kcal auf ca. 1.6 bis 2.0 g Protein pro kg Körpergewicht, um Muskelaufbau und Fettabbau optimal zu unterstützen.",
+   "Schlaf und Erholung: Schlafe 7-9 Stunden pro Nacht, da Muskeln und Nervensystem primär im Schlaf regenerieren und wachsen.",
+   "Trainingstagebuch führen: Notiere dir in jeder Einheit Gewichte und geschaffte Wiederholungen, um progressive Überlastung präzise zu steuern.",
+   "Alltagsaktivität (NEAT): Halte deine tägliche Schrittzahl konstant (z.B. 7.000-10.000 Schritte), um den Energieverbrauch stabil zu halten, ohne den Regenerationsaufwand von hartem Cardio zu erzeugen."
+  ],
+  "disclaimer": "Vor Beginn dieses oder eines anderen Trainingsprogramms wird empfohlen, einen Arzt oder qualifizierten Trainer zu konsultieren, um die individuelle Eignung sicherzustellen. Führe alle Übungen stets mit kontrollierter und sauberer Technik aus, um Verletzungen zu vermeiden.",
+  "progressionPlan": "Verwende das Double-Progression-Modell: Beginne mit dem unteren Wiederholungsbereich (z.B. 8 Wdh.). Trainiere mit dem gleichen Gewicht, bis du in allen vorgegebenen Sätzen die obere Wiederholungsgrenze (z.B. 10 oder 12 Wdh.) mit sauberer Form erreichst. Sobald dir dies gelingt, erhöhe das Gewicht in der nächsten Trainingseinheit um den kleinstmöglichen Schritt (Kurzhanteln: 1-2 kg pro Seite, Maschinen/Langhantel: 2.5-5 kg gesamt) und starte wieder am unteren Ende des Wiederholungsbereichs."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper – Fokus Beine & Po A",
+   "isRestDay": false,
+   "warmup": [
+    "5 Minuten Radergometer oder Laufband mit moderater Intensität",
+    "Dynamisches Dehnen: World's Greatest Stretch, Beinschwünge",
+    "Glute Bridges mit Miniband (2 Sätze à 15 Wdh.)"
+   ],
+   "exercises": [
+    {
+     "name": "Beinpresse (45 Grad)",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 120,
+     "notes": "Füße mittig bis hoch platzieren für mehr Po-Aktivierung. Bei Erreichen von 3x10 Wdh. das Gewicht um 5-10 kg erhöhen."
+    },
+    {
+     "name": "Rumänisches Kreuzheben mit Kurzhanteln",
+     "muscleGroup": "Beinbeuger, Gesäß, Unterer Rücken",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Hüfte nach hinten schieben, Rücken gerade halten. Gewicht steigern, sobald 3x10 mit sauberer Technik möglich sind."
+    },
+    {
+     "name": "Latzug zur Brust",
+     "muscleGroup": "Rücken (Latissimus)",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Schulterblätter vor dem Zug nach unten ziehen. Gewicht um kleinste Stufe erhöhen bei 3x12 Wdh."
+    },
+    {
+     "name": "Brustpresse (Maschine)",
+     "muscleGroup": "Brust, Trizeps, Vordere Schulter",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Kontrollierte Bewegung, kein Abfedern. Steigerung bei 3x12 Wdh."
+    },
+    {
+     "name": "Plank (Unterarmstütz)",
+     "muscleGroup": "Bauch / Rumpf",
+     "sets": 3,
+     "reps": "30-45s",
+     "restSeconds": 60,
+     "notes": "Spannung im gesamten Körper halten. Zeit wöchentlich um 5 Sekunden steigern."
+    }
+   ],
+   "cooldown": [
+    "3-5 Minuten lockeres Ausgehen",
+    "Statisches Dehnen der Bein- und Gesäßmuskulatur"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper – Fokus Oberkörper & Rumpf",
+   "isRestDay": false,
+   "warmup": [
+    "5 Minuten Crosstrainer",
+    "Armkreisen und Schultermobilisation mit dem Band",
+    "Katze-Kuh Dehnung (10 Wiederholungen)"
+   ],
+   "exercises": [
+    {
+     "name": "Kurzhantel-Schrägbankdrücken",
+     "muscleGroup": "Obere Brust, Vordere Schulter, Trizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Bank auf 30 Grad einstellen. Gewicht steigern (1-2 kg pro Hantel), wenn 3x10 Wdh. erreicht sind."
+    },
+    {
+     "name": "Rudern am Kabelzug (sitzend, enger Griff)",
+     "muscleGroup": "Oberer Rücken, Bizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Fokus auf die Kontraktion der Schulterblätter. Gewicht um kleinste Stufe steigern bei 3x12 Wdh."
+    },
+    {
+     "name": "Goblet Squats (mit Kurzhantel)",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Aufrechte Haltung wahren, volle Tiefe anstreben. Hantelgewicht steigern bei 3x12 sauberen Wdh."
+    },
+    {
+     "name": "Seitheben mit Kurzhanteln",
+     "muscleGroup": "Seitliche Schulter",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Saubere Form ohne Schwung. Sehr kleine Gewichtssteigerungen wählen."
+    },
+    {
+     "name": "Abduktoren-Maschine",
+     "muscleGroup": "Gesäß (Gluteus Medius)",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "1 Sekunde am Endpunkt halten. Steigerung um eine Stufe bei 3x12 Wdh."
+    }
+   ],
+   "cooldown": [
+    "3-5 Minuten lockeres Gehen auf dem Laufband",
+    "Statisches Dehnen von Brust und Schultern"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper – Fokus Beine & Po B",
+   "isRestDay": false,
+   "warmup": [
+    "5 Minuten Fahrradergometer",
+    "Hüftkreisen und Ausfallschritte mit Eigengewicht",
+    "Monster Walks mit Miniband (2 Sätze à 12 Schritte pro Seite)"
+   ],
+   "exercises": [
+    {
+     "name": "Hip Thrusts (am Gerät oder mit Langhantel)",
+     "muscleGroup": "Gesäß (Gluteus Maximus), Beinbeuger",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 120,
+     "notes": "Oben 1 Sekunde Spitzenkontraktion halten. Gewicht um 2.5-5 kg steigern bei 3x10 Wdh."
+    },
+    {
+     "name": "Ausfallschritte (Walking Lunges mit Kurzhanteln)",
+     "muscleGroup": "Gesäß, Quadrizeps, Beinbeuger",
+     "sets": 3,
+     "reps": "10-12 pro Bein",
+     "restSeconds": 90,
+     "notes": "Schrittlänge so wählen, dass der Fokus auf dem Po liegt. Gewicht erhöhen bei 3x12 pro Bein."
+    },
+    {
+     "name": "Beinstrecker (Maschine)",
+     "muscleGroup": "Quadrizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 75,
+     "notes": "Kontrolliertes Ablassen (2-3 Sekunden Negativphase). Gewicht erhöhen bei 3x12 Wdh."
+    },
+    {
+     "name": "Schulterdrücken (Maschine oder Kurzhanteln sitzend)",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Rücken fest am Polster halten. Gewicht steigern bei 3x10 Wdh."
+    },
+    {
+     "name": "Kabel-Crunches oder Bauchpresse",
+     "muscleGroup": "Bauchmuskeln",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Fokus auf die Krümmung der Wirbelsäule, kein Ziehen aus den Armen. Gewicht steigern bei 3x12 Wdh."
+    }
+   ],
+   "cooldown": [
+    "3-5 Minuten lockeres Radfahren",
+    "Statisches Dehnen für Hüftbeuger und Gesäß"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2136,
+  "calories": 1836,
+  "protein": 141,
+  "fat": 51,
+  "carbs": 203
+ }
+}

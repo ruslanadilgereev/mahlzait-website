@@ -1,0 +1,455 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 52,
+  "height": 168,
+  "weight": 72,
+  "goal": "health",
+  "activityLevel": 1.375,
+  "diet": "mediterranean",
+  "mealsPerDay": 3,
+  "cookingTime": 30,
+  "budget": "medium"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 1855,
+  "proteinGrams": 93,
+  "carbsGrams": 232,
+  "fatGrams": 62,
+  "goal": "Gesünder essen",
+  "diet": "Mediterran",
+  "tips": [
+   "Hülsenfrüchte aus der Dose sind die ideale Zeitersparnis: Vor der Verwendung kurz im Sieb abspülen, um überschüssiges Salz zu entfernen und Bekömmlichkeit zu steigern.",
+   "Bereite Vollkorngetreide wie Naturreis, Quinoa oder Dinkel in doppelter Portion vor (Meal Prep), um an stressigen Tagen die Kochzeit auf unter 15 Minuten zu senken.",
+   "Verwende kaltgepresstes Olivenöl nativ extra als primäre Fettquelle und verfeinere Mahlzeiten mit frischen Kräutern statt zusätzlichem Salz für optimalen Geschmack und Herzgesundheit."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient ausschließlich Informations- und Bildungszwecken und ersetzt keine individuelle medizinische oder ernährungstherapeutische Beratung."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Mediterranes Vollkorn-Omelett mit Tomaten und Feta",
+     "ingredients": [
+      "2 Eier (Größe M)",
+      "50g Feta",
+      "100g Kirschtomaten",
+      "1 Scheibe Vollkornbrot (50g)",
+      "1 TL Olivenöl (5ml)",
+      "Frischer Oregano und Pfeffer"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 465,
+     "protein": 24,
+     "carbs": 33,
+     "fat": 25
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunter Kichererbsensalat mit Gurke, Paprika und Walnüssen",
+     "ingredients": [
+      "200g Kichererbsen (Dose, abgetropft)",
+      "1/2 Gurke (150g)",
+      "1 rote Paprika (150g)",
+      "20g Walnusskerne",
+      "1 EL Olivenöl (10ml)",
+      "1 EL Zitronensaft",
+      "Petersilie"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 670,
+     "protein": 26,
+     "carbs": 86,
+     "fat": 24
+    },
+    {
+     "type": "Abendessen",
+     "name": "Ofengebackener Lachs auf mediterranem Vollkorn-Couscous",
+     "ingredients": [
+      "120g Lachsfilet",
+      "70g Vollkorn-Couscous (Trockengewicht)",
+      "1 kleine Zucchini (150g)",
+      "1 TL Olivenöl (5ml)",
+      "Kräuter der Provence"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 725,
+     "protein": 44,
+     "carbs": 81,
+     "fat": 24
+    }
+   ],
+   "totalCalories": 1860,
+   "totalProtein": 94,
+   "totalCarbs": 200,
+   "totalFat": 73
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Haferflocken-Porridge mit frischen Beeren und Mandeln",
+     "ingredients": [
+      "70g kernige Haferflocken",
+      "150ml fettarme Milch (1,5%)",
+      "100ml Wasser",
+      "100g Blaubeeren",
+      "20g gehackte Mandeln",
+      "1 Prise Zimt"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 510,
+     "protein": 21,
+     "carbs": 69,
+     "fat": 15
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Vollkorn-Wrap mit Thunfisch, Rucola und Tomate",
+     "ingredients": [
+      "2 Vollkorn-Tortilla-Wraps (insg. 120g)",
+      "100g Thunfisch im eigenen Saft",
+      "50g Rucola",
+      "1 große Tomate",
+      "1 EL Olivenöl (10ml)",
+      "1 TL Balsamico"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 620,
+     "protein": 37,
+     "carbs": 76,
+     "fat": 18
+    },
+    {
+     "type": "Abendessen",
+     "name": "Linseneintopf mit Wurzelgemüse und Vollkornbrot",
+     "ingredients": [
+      "80g braune Tellerlinsen (Trockengewicht)",
+      "150g Karotten",
+      "100g Knollensellerie",
+      "1 Scheibe Vollkornbrot (50g)",
+      "1 TL Olivenöl (5ml)",
+      "Gemüsebrühe, Lorbeerblatt"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 715,
+     "protein": 36,
+     "carbs": 113,
+     "fat": 11
+    }
+   ],
+   "totalCalories": 1845,
+   "totalProtein": 94,
+   "totalCarbs": 258,
+   "totalFat": 44
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Griechischer Joghurt mit Walnüssen, Apfel und Chia",
+     "ingredients": [
+      "200g Griechischer Joghurt (2% Fett)",
+      "1 Apfel gewürfelt (150g)",
+      "20g Walnüsse",
+      "10g Chiasamen",
+      "1 Prise Zimt"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 460,
+     "protein": 24,
+     "carbs": 43,
+     "fat": 21
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Mediterrane Vollkornpasta mit weißen Bohnen und Spinat",
+     "ingredients": [
+      "90g Vollkorn-Penne",
+      "150g weiße Riesenbohnen (Dose, abgetropft)",
+      "100g Blattspinat (frisch)",
+      "1 Knoblauchzehe",
+      "1 EL Olivenöl (10ml)",
+      "15g Parmesan gerieben"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 710,
+     "protein": 32,
+     "carbs": 105,
+     "fat": 16
+    },
+    {
+     "type": "Abendessen",
+     "name": "Kabeljaufilet mit Ofengemüse und Quinoa",
+     "ingredients": [
+      "150g Kabeljaufilet",
+      "60g Quinoa (Trockengewicht)",
+      "1 Zucchini (150g)",
+      "1 rote Zwiebel (60g)",
+      "1 EL Olivenöl (10ml)",
+      "Zitronensaft und Rosmarin"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 675,
+     "protein": 42,
+     "carbs": 79,
+     "fat": 20
+    }
+   ],
+   "totalCalories": 1845,
+   "totalProtein": 98,
+   "totalCarbs": 227,
+   "totalFat": 57
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Vollkornbrot mit Avocado und pochiertem Ei",
+     "ingredients": [
+      "2 Scheiben Vollkornbrot (100g)",
+      "60g Avocado",
+      "1 Ei (Größe M)",
+      "1 kleine Tomate",
+      "Chiliflocken und Meersalz"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 480,
+     "protein": 19,
+     "carbs": 50,
+     "fat": 22
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Quinoa-Salat mit schwarzen Bohnen, Mais und Limetten-Dressing",
+     "ingredients": [
+      "70g Quinoa (Trockengewicht)",
+      "120g schwarze Bohnen (Dose, abgetropft)",
+      "80g Mais (Dose)",
+      "1 Paprika gelb (150g)",
+      "1 EL Olivenöl (10ml)",
+      "1 EL Limettensaft, Koriander"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 690,
+     "protein": 25,
+     "carbs": 111,
+     "fat": 15
+    },
+    {
+     "type": "Abendessen",
+     "name": "Mediterranes Hähnchenbrustfilet mit Zucchini, Paprika und Naturreis",
+     "ingredients": [
+      "130g Hähnchenbrustfilet",
+      "65g Naturreis (Trockengewicht)",
+      "1 Zucchini (150g)",
+      "100g Kirschtomaten",
+      "1 EL Olivenöl (10ml)",
+      "Thymian und Rosmarin"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 700,
+     "protein": 48,
+     "carbs": 78,
+     "fat": 20
+    }
+   ],
+   "totalCalories": 1870,
+   "totalProtein": 92,
+   "totalCarbs": 239,
+   "totalFat": 57
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Müsli mit Sonnenblumenkernen, Birne und Sojajoghurt",
+     "ingredients": [
+      "60g zarte Haferflocken",
+      "150g ungesüßter Sojajoghurt",
+      "1 reife Birne (150g)",
+      "15g Sonnenblumenkerne",
+      "1 TL Leinsamen (5g)"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 490,
+     "protein": 20,
+     "carbs": 69,
+     "fat": 14
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Mediterrane Shakshuka mit Kichererbsen und Vollkornbrot",
+     "ingredients": [
+      "2 Eier (Größe M)",
+      "200g stückige Tomaten (Dose)",
+      "100g Kichererbsen (Dose)",
+      "1 Scheibe Vollkornbrot (50g)",
+      "1 TL Olivenöl (5ml)",
+      "Kreuzkümmel, Paprikapulver, Petersilie"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 615,
+     "protein": 31,
+     "carbs": 68,
+     "fat": 22
+    },
+    {
+     "type": "Abendessen",
+     "name": "Vollkorn-Spaghetti mit Tomaten-Oliven-Sauce und Garnelen",
+     "ingredients": [
+      "85g Vollkorn-Spaghetti",
+      "130g Garnelen (küchenfertig)",
+      "150g Kirschtomaten",
+      "30g schwarze Oliven",
+      "1 EL Olivenöl (10ml)",
+      "1 Knoblauchzehe, Basilikum"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 745,
+     "protein": 42,
+     "carbs": 94,
+     "fat": 21
+    }
+   ],
+   "totalCalories": 1850,
+   "totalProtein": 93,
+   "totalCarbs": 231,
+   "totalFat": 57
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Vollkornbrot mit Hüttenkäse, Gurke und Kürbiskernen",
+     "ingredients": [
+      "2 Scheiben Vollkornbrot (100g)",
+      "150g körniger Frischkäse (Hüttenkäse, mager)",
+      "1/2 Salatgurke (150g)",
+      "15g Kürbiskerne",
+      "Schnittlauch, Pfeffer"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 475,
+     "protein": 30,
+     "carbs": 52,
+     "fat": 15
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Großer Linsensalat mit Feta, Frühlingszwiebeln und Zitrone",
+     "ingredients": [
+      "220g braune Linsen (Dose, verzehrfertig)",
+      "50g Feta",
+      "2 Frühlingszwiebeln",
+      "1 rote Paprika (150g)",
+      "1 EL Olivenöl (10ml)",
+      "1 Scheibe Vollkornbrot (50g)"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 670,
+     "protein": 33,
+     "carbs": 78,
+     "fat": 23
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gebackene Forelle mit Petersilienkartoffeln und grünen Bohnen",
+     "ingredients": [
+      "150g Forellenfilet",
+      "250g festkochende Kartoffeln",
+      "150g grüne Bohnen",
+      "1 EL Olivenöl (10ml)",
+      "Zitrone, frische Petersilie"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 715,
+     "protein": 37,
+     "carbs": 81,
+     "fat": 25
+    }
+   ],
+   "totalCalories": 1860,
+   "totalProtein": 100,
+   "totalCarbs": 211,
+   "totalFat": 63
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Overnight Oats mit Apfel, Zimt und Haselnüssen",
+     "ingredients": [
+      "65g Haferflocken",
+      "120ml fettarme Milch (1,5%)",
+      "80g ungesüßter Naturjoghurt (1,5%)",
+      "1 kleiner Apfel gerieben (120g)",
+      "15g Haselnüsse gehackt",
+      "1 Prise Zimt"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 505,
+     "protein": 21,
+     "carbs": 70,
+     "fat": 15
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Mediterrane Gemüsepfanne mit weißen Bohnen und Dinkelreis",
+     "ingredients": [
+      "60g Dinkel wie Reis / Dinkelkörner",
+      "150g weiße Bohnen (Dose)",
+      "1 kleine Aubergine (150g)",
+      "100g Kirschtomaten",
+      "1 EL Olivenöl (10ml)",
+      "Kräuter der Provence"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 660,
+     "protein": 25,
+     "carbs": 97,
+     "fat": 16
+    },
+    {
+     "type": "Abendessen",
+     "name": "Putenstreifen auf buntem Bulgursalat mit Minze",
+     "ingredients": [
+      "120g Putenbrustfilet",
+      "70g Vollkorn-Bulgur (Trockengewicht)",
+      "1/2 Gurke (150g)",
+      "1 Tomate (100g)",
+      "1 EL Olivenöl (10ml)",
+      "Frische Minze, Zitronensaft"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 695,
+     "protein": 45,
+     "carbs": 81,
+     "fat": 19
+    }
+   ],
+   "totalCalories": 1860,
+   "totalProtein": 91,
+   "totalCarbs": 248,
+   "totalFat": 50
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 1855,
+  "calories": 1855,
+  "protein": 93,
+  "carbs": 232,
+  "fat": 62
+ }
+}

@@ -1,0 +1,46 @@
+---
+// Shared page shell for /ernaehrungsplan/<slug>/ and /trainingsplan/<slug>/.
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
+import PlanLandingPage from "@modules/planLanding";
+import { getPlanPages, toPlanLink, type PlanPage } from "utils/planPages";
+
+interface Props {
+  page: PlanPage;
+}
+
+const { page } = Astro.props;
+const siteUrl = "https://www.mahlzait.de";
+const related = getPlanPages(page.section).filter((p) => p.url !== page.url).map(toPlanLink);
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: page.faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: page.h1,
+  description: page.seo.description,
+  url: `${siteUrl}${page.url}`,
+  datePublished: page.sample.generatedAt,
+  dateModified: page.sample.generatedAt,
+  inLanguage: "de-DE",
+  author: { "@type": "Person", "@id": `${siteUrl}/#person-ruslan`, name: "Ruslan Adilgereev", url: `${siteUrl}/team` },
+  publisher: { "@type": "Organization", name: "Mahlzait", url: siteUrl },
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={page.seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle={page.h1} pageDescription={page.seo.description} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <PlanLandingPage client:idle config={configWithoutLegal} page={page} related={related} />
+</Layout>

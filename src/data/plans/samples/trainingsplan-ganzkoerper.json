@@ -1,0 +1,282 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 30,
+  "height": 178,
+  "weight": 80,
+  "goal": "gain",
+  "activityLevel": 1.375,
+  "daysPerWeek": 3,
+  "experienceLevel": "beginner",
+  "equipment": "gym",
+  "sessionTime": 60,
+  "focus": [
+   "Ganzkörper"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Muskelaufbau",
+  "level": "Anfänger",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper",
+  "tips": [
+   "Führe ein Trainingstagebuch, um Gewichte und Wiederholungen exakt zu tracken.",
+   "Achte auf ausreichende Proteinzufuhr (ca. 1.6-2.0 g pro kg Körpergewicht), passend zu deinem Kalorienziel von 2730 kcal.",
+   "Schlafe mindestens 7-8 Stunden pro Nacht, da Muskelwachstum in der Regenerationsphase stattfindet.",
+   "Priorisiere stets saubere Bewegungsausführung und Muskelgefühl vor zu schwerem Gewicht (Verletzungsprävention)."
+  ],
+  "disclaimer": "Dieser Trainingsplan dient als allgemeine Orientierung für gesunde Personen. Bei bestehenden Verletzungen oder gesundheitlichen Beschwerden sollte vor Trainingsbeginn ein Arzt oder Physiotherapeut konsultiert werden.",
+  "progressionPlan": "Verwende das Doppelprogressions-Prinzip: Beginne mit dem unteren Ende des Wiederholungsbereichs (z.B. 8 Wdh.). Erhöhe die Wiederholungszahl in den Folgewochen bei gleichem Gewicht schrittweise, bis du in allen Sätzen das obere Ende (z.B. 12 Wdh.) mit sauberer Form erreichst. Erhöhe erst dann das Trainingsgewicht um die kleinstmögliche Stufe (1-2.5 kg) und starte wieder bei der unteren Wiederholungsgrenze."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper – Tag A",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Laufband oder Ruderergometer",
+    "Dynamisches Dehnen (Armkreisen, Beinschwünge, Hüftkreisen)",
+    "Spezifische Aufwärmsätze vor den Grundübungen"
+   ],
+   "exercises": [
+    {
+     "name": "Beinpresse 45°",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Fokus auf saubere Tiefe; Gewicht steigern, sobald 3x10 Wdh. sauber erreicht werden."
+    },
+    {
+     "name": "Brustpresse an der Maschine",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Schulterblätter fixieren; Gewicht um die kleinste Stufe erhöhen bei Erreichen von 3x12 Wdh."
+    },
+    {
+     "name": "Latzug zur Brust",
+     "muscleGroup": "Rücken (Latissimus)",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Kein Schwung aus dem Oberkörper; Progression bei 3x12 Wdh."
+    },
+    {
+     "name": "Rumänisches Kreuzheben mit Kurzhanteln",
+     "muscleGroup": "Beinbeuger, Gesäß, unterer Rücken",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Rücken stets gerade halten; Gewicht leicht steigern bei Erreichen des oberen Wdh-Bereichs."
+    },
+    {
+     "name": "Schulterdrücken an der Maschine",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Kontrollierte Bewegung; Fokus auf Schulterkontraktion."
+    },
+    {
+     "name": "Plank (Unterarmstütz)",
+     "muscleGroup": "Bauch / Rumpf",
+     "sets": 3,
+     "reps": "30-45s",
+     "restSeconds": 60,
+     "notes": "Körperspannung halten; Zeit wöchentlich um 5 Sekunden steigern."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten lockeres Ausgehen",
+    "Leichtes statisches Dehnen der beanspruchten Muskelgruppen"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper – Tag B",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Fahrradergometer",
+    "Mobilitätsübungen für Schultern, Hüfte und Sprunggelenke",
+    "Aufwärmsätze für die ersten Übungen"
+   ],
+   "exercises": [
+    {
+     "name": "Goblet Squats (Kurzhantel-Kniebeuge)",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Aufrechte Haltung; Hantelgewicht steigern bei 3x10 Wdh."
+    },
+    {
+     "name": "Rudern am Kabelzug (sitzend, enger Griff)",
+     "muscleGroup": "Oberer Rücken, Bizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Zur Körpermitte ziehen und Schultern zusammenführen; Last steigern bei 3x12 Wdh."
+    },
+    {
+     "name": "Schrägbankdrücken mit Kurzhanteln",
+     "muscleGroup": "Obere Brust, vordere Schulter",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Stabile Hantelführung; Gewicht erhöhen bei Erreichen von 3x12 Wdh."
+    },
+    {
+     "name": "Beinbeuger-Maschine (sitzend oder liegend)",
+     "muscleGroup": "Beinbeuger",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Kontrollierte negative Phase; Progression bei 3x12 Wdh."
+    },
+    {
+     "name": "Seitheben mit Kurzhanteln",
+     "muscleGroup": "Seitliche Schulter",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Saubere Technik ohne Schwung; Fokus auf Hypertrophie im höheren Wdh-Bereich."
+    },
+    {
+     "name": "Trizepsdrücken am Kabelzug",
+     "muscleGroup": "Trizeps",
+     "sets": 2,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Ellenbogen am Körper fixiert lassen; Gewicht bei voller Wiederholungszahl leicht erhöhen."
+    },
+    {
+     "name": "Bizepscurls mit Kurzhanteln",
+     "muscleGroup": "Bizeps",
+     "sets": 2,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Volle Streckung und Kontraktion; Gewicht progressiv steigern."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten lockeres Ausradeln",
+    "Sanftes Dehnen der Brust- und Beinmuskulatur"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper – Tag A",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Stepper oder Crosstrainer",
+    "Gelenkmobilisation (Schultern, Hüfte, Knie)",
+    "Aufwärmsätze"
+   ],
+   "exercises": [
+    {
+     "name": "Beinpresse 45°",
+     "muscleGroup": "Beine (Quadrizeps, Gesäß)",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Versuche im Vergleich zum Montag 1-2 Wdh. mehr oder 2.5kg mehr zu bewegen."
+    },
+    {
+     "name": "Brustpresse an der Maschine",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Gleichmäßige Ausführung; Fokus auf den Muskelreiz."
+    },
+    {
+     "name": "Latzug zur Brust",
+     "muscleGroup": "Rücken (Latissimus)",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Kontrollierte Bewegungsausführung; Progression dokumentieren."
+    },
+    {
+     "name": "Rumänisches Kreuzheben mit Kurzhanteln",
+     "muscleGroup": "Beinbeuger, Gesäß, unterer Rücken",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Strikte Rumpfspannung zur Sicherung der Wirbelsäule."
+    },
+    {
+     "name": "Schulterdrücken an der Maschine",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Gleichmäßige Auf- und Abwärtsbewegung."
+    },
+    {
+     "name": "Crunches auf der Matte",
+     "muscleGroup": "Bauch",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Oben kurz halten, kontrolliert absenken; Progression über Wiederholungszahl."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten lockeres Auslaufen",
+    "Ganzkörper-Stretching"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2430,
+  "calories": 2730,
+  "protein": 171,
+  "carbs": 341,
+  "fat": 76
+ }
+}

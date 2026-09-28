@@ -1,0 +1,540 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 30,
+  "height": 180,
+  "weight": 85,
+  "goal": "recomp",
+  "activityLevel": 1.55,
+  "diet": "highprotein",
+  "mealsPerDay": 4,
+  "cookingTime": 30,
+  "budget": "medium"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 2537,
+  "proteinGrams": 187,
+  "carbsGrams": 290,
+  "fatGrams": 70,
+  "goal": "Body Recomposition",
+  "diet": "High Protein",
+  "tips": [
+   "Platziere die kohlenhydratreicheren Mahlzeiten 2 bis 3 Stunden vor bzw. direkt nach deinen Trainingseinheiten, um maximale Leistung und optimale Muskelregeneration zu fördern.",
+   "Bereite stärkehaltige Beilagen wie Reis, Quinoa oder Kartoffeln für 2 Tage im Voraus vor (Meal Prep), um an stressigen Tagen unter 20 Minuten Zubereitungszeit zu bleiben.",
+   "Achte auf eine ausreichende Flüssigkeitszufuhr von mindestens 2,5 bis 3 Litern Wasser täglich, um die Verwertung der hohen Proteinmenge und die Nierenfunktion bestmöglich zu unterstützen."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient als Orientierungshilfe zur Unterstützung der Body Recomposition. Individuelle Faktoren wie Stoffwechselrate, Aktivitätslevel und persönliche Verträglichkeiten können Anpassungen erfordern. Bei gesundheitlichen Vorerkrankungen wird die Rücksprache mit einem Arzt oder zertifizierten Ernährungsberater empfohlen."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Beeren-Protein-Porridge mit Skyr",
+     "ingredients": [
+      "80g Haferflocken",
+      "200g Skyr Natur",
+      "150ml fettarme Milch (1,5%)",
+      "100g TK-Heidelbeeren",
+      "15g Chiasamen"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 610,
+     "protein": 42,
+     "carbs": 81,
+     "fat": 12
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Hähnchenbrust mit Quinoa und buntem Ofengemüse",
+     "ingredients": [
+      "180g Hähnchenbrustfilet",
+      "80g Quinoa (ungekocht)",
+      "150g Zucchini",
+      "150g Paprika",
+      "10ml Olivenöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 675,
+     "protein": 54,
+     "carbs": 68,
+     "fat": 18
+    },
+    {
+     "type": "Snack",
+     "name": "Reiswaffeln mit körnigem Frischkäse und Banane",
+     "ingredients": [
+      "200g körniger Frischkäse (mager)",
+      "4 Reiswaffeln (ca. 40g)",
+      "1 mittelgroße Banane (ca. 120g)",
+      "10g Honig"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 445,
+     "protein": 30,
+     "carbs": 68,
+     "fat": 4
+    },
+    {
+     "type": "Abendessen",
+     "name": "Thunfisch-Vollkornpasta mit Tomatensauce",
+     "ingredients": [
+      "100g Vollkornnudeln",
+      "1 Dose Thunfisch im eigenen Saft (150g Abtropfgewicht)",
+      "200g stückige Tomaten",
+      "10g geriebener Parmesan",
+      "1 TL Rapsöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 790,
+     "protein": 60,
+     "carbs": 76,
+     "fat": 16
+    }
+   ],
+   "totalCalories": 2520,
+   "totalProtein": 186,
+   "totalCarbs": 293,
+   "totalFat": 50
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Herzhaftes Rührei mit Vollkornbrot und Avocado",
+     "ingredients": [
+      "3 Eier (Größe M)",
+      "100g Eiklar",
+      "2 Scheiben Vollkornbrot (ca. 100g)",
+      "40g Avocado",
+      "100g Cherrytomaten"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 590,
+     "protein": 39,
+     "carbs": 48,
+     "fat": 24
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Rindfleisch-Reis-Pfanne mit Brokkoli",
+     "ingredients": [
+      "160g Rinderhacksteak (mager, max. 5% Fett)",
+      "85g Basmatireis (ungekocht)",
+      "200g Brokkoliröschen",
+      "10ml Sesamöl",
+      "20ml Sojasauce"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 710,
+     "protein": 52,
+     "carbs": 78,
+     "fat": 19
+    },
+    {
+     "type": "Snack",
+     "name": "Magerquark mit Apfel und Mandeln",
+     "ingredients": [
+      "250g Magerquark",
+      "1 großer Apfel (ca. 180g)",
+      "15g Mandeln gehobelt",
+      "Zimt nach Geschmack"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 395,
+     "protein": 36,
+     "carbs": 42,
+     "fat": 9
+    },
+    {
+     "type": "Abendessen",
+     "name": "Ofenkartoffeln mit Kräuterquark und Lachsforellenfilet",
+     "ingredients": [
+      "350g Kartoffeln",
+      "150g Lachsforellenfilet",
+      "150g Magerquark",
+      "50g fettarmer Joghurt",
+      "Frische Kräuter"
+     ],
+     "prepTimeMinutes": 30,
+     "calories": 840,
+     "protein": 61,
+     "carbs": 120,
+     "fat": 18
+    }
+   ],
+   "totalCalories": 2535,
+   "totalProtein": 188,
+   "totalCarbs": 288,
+   "totalFat": 70
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Protein-Pancakes mit Ahornsirup",
+     "ingredients": [
+      "70g Hafermehl",
+      "30g Whey-Proteinpulver",
+      "150ml fettarme Milch",
+      "1 Ei",
+      "20g Ahornsirup"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 585,
+     "protein": 46,
+     "carbs": 69,
+     "fat": 13
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Mexikanische Linsen-Geflügel-Bowl",
+     "ingredients": [
+      "150g Putenbrustfilet",
+      "150g gekochte braune Linsen",
+      "80g Mais aus der Dose",
+      "70g Naturreis (ungekocht)",
+      "1 TL Olivenöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 730,
+     "protein": 56,
+     "carbs": 92,
+     "fat": 12
+    },
+    {
+     "type": "Snack",
+     "name": "Skyr-Becher mit Nektarine und Walnüssen",
+     "ingredients": [
+      "300g Skyr Natur",
+      "1 frische Nektarine",
+      "15g Walnusskerne"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 375,
+     "protein": 36,
+     "carbs": 33,
+     "fat": 11
+    },
+    {
+     "type": "Abendessen",
+     "name": "Vollkorn-Wrap mit Räuchertofu und Guacamole",
+     "ingredients": [
+      "2 Vollkorn-Wraps (ca. 120g)",
+      "160g Räuchertofu gebraten",
+      "50g Avocado zerdrückt",
+      "Salatblätter und Tomatenscheiben",
+      "5ml Pflanzenöl zum Anbraten"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 860,
+     "protein": 48,
+     "carbs": 98,
+     "fat": 32
+    }
+   ],
+   "totalCalories": 2550,
+   "totalProtein": 186,
+   "totalCarbs": 292,
+   "totalFat": 68
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Cremiger Quark-Grießbrei mit Waldbeeren",
+     "ingredients": [
+      "60g Weichweizengrieß",
+      "250ml fettarme Milch",
+      "200g Magerquark",
+      "100g TK-Waldbeeren",
+      "10g Honig"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 595,
+     "protein": 42,
+     "carbs": 86,
+     "fat": 6
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Seelachsfilet auf Süßkartoffelstampf und Blattspinat",
+     "ingredients": [
+      "200g Seelachsfilet",
+      "300g Süßkartoffeln",
+      "200g Blattspinat",
+      "10g Butter",
+      "1 TL Olivenöl"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 670,
+     "protein": 48,
+     "carbs": 79,
+     "fat": 17
+    },
+    {
+     "type": "Snack",
+     "name": "Protein-Shake mit Banane und Haferflocken",
+     "ingredients": [
+      "35g Proteinpulver (Vanille/Schoko)",
+      "250ml fettarme Milch",
+      "1 Banane (ca. 100g)",
+      "30g Haferflocken fein"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 450,
+     "protein": 40,
+     "carbs": 55,
+     "fat": 7
+    },
+    {
+     "type": "Abendessen",
+     "name": "Kichererbsen-Curry mit Hähnchen und Jasminreis",
+     "ingredients": [
+      "150g Hähnchenbrust",
+      "120g Kichererbsen (Dose)",
+      "75g Jasminreis (ungekocht)",
+      "50ml fettreduzierte Kokosmilch",
+      "100g Zucchini"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 810,
+     "protein": 59,
+     "carbs": 74,
+     "fat": 18
+    }
+   ],
+   "totalCalories": 2525,
+   "totalProtein": 189,
+   "totalCarbs": 294,
+   "totalFat": 48
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Vollkorn-Stullen mit Hüttenkäse und Putenbrustaufschnitt",
+     "ingredients": [
+      "2 dicke Scheiben Vollkornbrot (ca. 120g)",
+      "150g körniger Frischkäse",
+      "80g Putenbrustaufschnitt",
+      "1/2 Gurke in Scheiben",
+      "10g Sonnenblumenkerne"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 580,
+     "protein": 47,
+     "carbs": 58,
+     "fat": 14
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Mediterraner Couscous-Salat mit Feta und Hähnchen",
+     "ingredients": [
+      "80g Couscous (ungekocht)",
+      "150g Hähnchengeschnetzeltes",
+      "50g Feta (light, 9% Fett)",
+      "100g Tomaten und Gurke",
+      "10ml Olivenöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 710,
+     "protein": 53,
+     "carbs": 69,
+     "fat": 22
+    },
+    {
+     "type": "Snack",
+     "name": "Magerquark-Bowl mit Mango und Cashews",
+     "ingredients": [
+      "250g Magerquark",
+      "150g frische Mango",
+      "15g Cashewkerne"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 405,
+     "protein": 35,
+     "carbs": 44,
+     "fat": 10
+    },
+    {
+     "type": "Abendessen",
+     "name": "Rinderstreifen mit Pasta und Champignons",
+     "ingredients": [
+      "150g Rinderhüftsteak in Streifen",
+      "90g Nudeln",
+      "150g braune Champignons",
+      "50g Frischkäse leicht (4% Fett)",
+      "1 TL Rapsöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 845,
+     "protein": 53,
+     "carbs": 118,
+     "fat": 23
+    }
+   ],
+   "totalCalories": 2540,
+   "totalProtein": 188,
+   "totalCarbs": 289,
+   "totalFat": 69
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Gebackene Haferflocken (Baked Oats) mit Beeren",
+     "ingredients": [
+      "80g Haferflocken",
+      "25g Proteinpulver",
+      "1 Banane (ca. 100g)",
+      "100ml Mandelmilch ungesüßt",
+      "50g Himbeeren"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 590,
+     "protein": 37,
+     "carbs": 88,
+     "fat": 9
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Lachsfilet mit Reis und gedämpftem Brokkoli",
+     "ingredients": [
+      "140g Wildlachsfilet",
+      "80g Vollkornreis (ungekocht)",
+      "200g Brokkoli",
+      "1 TL Sesamöl",
+      "Spritzer Zitronensaft"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 690,
+     "protein": 44,
+     "carbs": 66,
+     "fat": 23
+    },
+    {
+     "type": "Snack",
+     "name": "Skyr mit Granola und Beeren",
+     "ingredients": [
+      "250g Skyr Natur",
+      "40g zuckerarmes Protein-Granola",
+      "80g Erdbeeren"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 380,
+     "protein": 34,
+     "carbs": 44,
+     "fat": 6
+    },
+    {
+     "type": "Abendessen",
+     "name": "Große Kartoffel-Ei-Pfanne mit Schinkenwürfeln und Paprika",
+     "ingredients": [
+      "350g gekochte Kartoffeln",
+      "3 ganze Eier (Größe M)",
+      "60g magere Schinkenwürfel (3% Fett)",
+      "1 rote Paprika",
+      "10ml Rapsöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 870,
+     "protein": 71,
+     "carbs": 90,
+     "fat": 33
+    }
+   ],
+   "totalCalories": 2530,
+   "totalProtein": 186,
+   "totalCarbs": 288,
+   "totalFat": 71
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Omelett mit Champignons, Cherrytomaten und Vollkorn-Toast",
+     "ingredients": [
+      "3 Eier",
+      "50g fettarmer Reibekäse",
+      "100g Champignons",
+      "2 Scheiben Vollkorntoast (ca. 70g)",
+      "10g Butter zum Braten"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 605,
+     "protein": 41,
+     "carbs": 45,
+     "fat": 27
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Puten-Geschnetzeltes mit Spätzle und Erbsen-Möhren-Gemüse",
+     "ingredients": [
+      "170g Putenbrust",
+      "125g Frische Eierspätzle",
+      "150g Erbsen und Möhren (TK)",
+      "50ml Kochsahne light (7% Fett)",
+      "1 TL Pflanzenöl"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 725,
+     "protein": 54,
+     "carbs": 80,
+     "fat": 17
+    },
+    {
+     "type": "Snack",
+     "name": "Körniger Frischkäse mit Honig und Walnüssen",
+     "ingredients": [
+      "250g körniger Frischkäse (mager)",
+      "15g Honig",
+      "15g Walnüsse gehackt"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 360,
+     "protein": 33,
+     "carbs": 24,
+     "fat": 14
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gefüllte Vollkorn-Pita mit Tofu-Hack, Mais und Bohnen",
+     "ingredients": [
+      "2 Vollkorn-Pita-Taschen (ca. 140g)",
+      "150g Soja-Granulat / Tofu-Hack zubereitet",
+      "100g Kidneybohnen",
+      "50g Mais",
+      "Salat und 2 EL Salsa"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 855,
+     "protein": 58,
+     "carbs": 142,
+     "fat": 13
+    }
+   ],
+   "totalCalories": 2545,
+   "totalProtein": 186,
+   "totalCarbs": 291,
+   "totalFat": 71
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 2837,
+  "calories": 2537,
+  "protein": 187,
+  "fat": 70,
+  "carbs": 290
+ }
+}

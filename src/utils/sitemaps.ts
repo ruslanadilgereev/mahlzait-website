@@ -1,4 +1,5 @@
 import { articlesMeta } from "@content/wissen";
+import { getPlanPages } from "./planPages";
 import foodLastmodJson from "../data/food-lastmod.json";
 
 interface FoodMeta {
@@ -115,6 +116,17 @@ const foodEntries: SitemapEntry[] = foods.map((food: any) => ({
   priority: 0.6,
 }));
 
+const planEntries: SitemapEntry[] = [
+  { url: `${siteUrl}/ernaehrungsplan/`, changefreq: "weekly", priority: 0.9 },
+  { url: `${siteUrl}/trainingsplan/`, changefreq: "weekly", priority: 0.9 },
+  ...getPlanPages().map((page) => ({
+    url: `${siteUrl}${page.url}`,
+    lastmod: page.sample.generatedAt,
+    changefreq: "monthly" as const,
+    priority: 0.8,
+  })),
+];
+
 const legalEntries: SitemapEntry[] = [
   { url: `${siteUrl}/agb/`, changefreq: "yearly", priority: 0.3 },
   { url: `${siteUrl}/cookies-policy/`, changefreq: "yearly", priority: 0.3 },
@@ -127,6 +139,7 @@ const legalEntries: SitemapEntry[] = [
 export const allEntries: SitemapEntry[] = [
   ...coreEntries,
   ...calculatorAndGuideEntries,
+  ...planEntries,
   ...knowledgeEntries,
   ...foodEntries,
   ...legalEntries,

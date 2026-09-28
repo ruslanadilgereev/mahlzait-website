@@ -1,0 +1,272 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 33,
+  "height": 179,
+  "weight": 84,
+  "goal": "gain",
+  "activityLevel": 1.375,
+  "daysPerWeek": 3,
+  "experienceLevel": "beginner",
+  "equipment": "gym",
+  "sessionTime": 60,
+  "focus": [
+   "Geräte und freie Gewichte für Einsteiger"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Muskelaufbau",
+  "level": "Anfänger",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper",
+  "tips": [
+   "Achte auf ausreichend Proteinzufuhr (ca. 1.6-2.0 g pro kg Körpergewicht) zur Unterstützung des Muskelaufbaus.",
+   "Nutze die 2773 kcal konsequent für einen leichten Kalorienüberschuss und optimale Regeneration.",
+   "Schlafe 7-9 Stunden pro Nacht, da Muskeln in den Ruhephasen wachsen.",
+   "Führe ein Trainingstagebuch, um deine Gewichte und Wiederholungen lückenlos zu dokumentieren.",
+   "Trinke ausreichend Wasser (mindestens 2-3 Liter täglich, mehr an Trainingstagen)."
+  ],
+  "disclaimer": "Vor Beginn eines neuen Trainingsprogramms wird eine ärztliche Untersuchung empfohlen. Bei Schmerzen oder Unwohlsein während der Übungen sollte das Training sofort unterbrochen und qualifiziertes Fachpersonal konsultiert werden.",
+  "progressionPlan": "Wende das Prinzip der progressiven Überlastung (Progressive Overload) an: Versuche in jeder Trainingseinheit entweder eine Wiederholung mehr pro Satz zu schaffen oder das Gewicht um die kleinstmögliche Stufe (z.B. 1.0 - 2.5 kg) zu erhöhen, sobald du am oberen Ende des Wiederholungsbereichs in allen Sätzen angekommen bist. Die saubere Technik hat stets Priorität vor mehr Gewicht."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper A",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Laufband oder Ruderergometer bei moderater Intensität",
+    "Dynamisches Dehnen (Armkreisen, Beinpendel, World's Greatest Stretch)"
+   ],
+   "exercises": [
+    {
+     "name": "Beinpresse 45°",
+     "muscleGroup": "Beine (Quadriceps, Gesäß)",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Füße schulterbreit platzieren; Gewicht steigern, sobald 3x10 sauber erreicht werden."
+    },
+    {
+     "name": "Brustpresse (Maschine)",
+     "muscleGroup": "Brust",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Schulterblätter fixieren; Gewicht um 2.5 kg erhöhen bei Erreichen von 3x12."
+    },
+    {
+     "name": "Latzug zur Brust (breiter Griff)",
+     "muscleGroup": "Oberer Rücken / Latissimus",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Aufrechte Haltung bewahren, Zug aus dem Rücken initiieren."
+    },
+    {
+     "name": "Schulterdrücken mit Kurzhanteln (sitzend)",
+     "muscleGroup": "Schultern",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Ellenbogen leicht nach vorne geneigt halten, Gewicht schrittweise erhöhen."
+    },
+    {
+     "name": "Beinbeuger (Maschine, sitzend oder liegend)",
+     "muscleGroup": "Hintere Oberschenkel",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Kontrollierte Bewegungsausführung ohne Schwung."
+    },
+    {
+     "name": "Plank (Unterarmstütz)",
+     "muscleGroup": "Bauch / Rumpf",
+     "sets": 3,
+     "reps": "30-45s",
+     "restSeconds": 60,
+     "notes": "Körperspannung halten; Zeit um 5 Sekunden steigern pro Woche."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten leichtes Auslaufen auf dem Laufband",
+    "Statisches Dehnen der Hauptmuskelgruppen"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper B",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Fahrradergometer",
+    "Gelenkmobilisation (Schulterkreisen, Hüftöffner)"
+   ],
+   "exercises": [
+    {
+     "name": "Rumänisches Kreuzheben mit Kurzhanteln",
+     "muscleGroup": "Hintere Kette (Hamstrings, Gesäß, Rückenstrecker)",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Rücken gerade halten, Hüfte nach hinten schieben; Gewicht schrittweise steigern."
+    },
+    {
+     "name": "Rudern am Kabelzug (enger Griff)",
+     "muscleGroup": "Rücken (Latissimus, Rhomboiden)",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Schulterblätter am Ende der Bewegung aktiv zusammenziehen."
+    },
+    {
+     "name": "Schrägbankdrücken mit Kurzhanteln",
+     "muscleGroup": "Obere Brust / Schultern",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Bankwinkel ca. 30 Grad; Gewicht erhöhen, wenn 3x12 Wiederholungen erreicht sind."
+    },
+    {
+     "name": "Beinstrecker (Maschine)",
+     "muscleGroup": "Quadriceps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Oben kurz halten, kontrolliert absenken."
+    },
+    {
+     "name": "Seitheben mit Kurzhanteln",
+     "muscleGroup": "Seitliche Schulter",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Fokus auf saubere Form vor höherem Gewicht."
+    },
+    {
+     "name": "Wadenheben stehend (Maschine)",
+     "muscleGroup": "Waden",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Volle Dehnung unten und Kontraktion oben spüren."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten lockeres Gehen",
+    "Statisches Dehnen der Bein- und Rückenmuskulatur"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper C",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Crosstrainer",
+    "Dynamisches Dehnen für Rumpf und Oberkörper"
+   ],
+   "exercises": [
+    {
+     "name": "Goblet Squats (Kurzhantel-Kniebeuge)",
+     "muscleGroup": "Beine / Rumpf",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Aufrechte Haltung, Gewicht vor der Brust; Gewicht erhöhen bei 3x10 sauberen Reps."
+    },
+    {
+     "name": "Latzug im Untergriff (eng)",
+     "muscleGroup": "Rücken / Bizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Fokus auf volle Dehnung oben und Muskelkontraktion unten."
+    },
+    {
+     "name": "Dips an der Unterstützungsmaschine",
+     "muscleGroup": "Brust / Trizeps",
+     "sets": 3,
+     "reps": "8-12",
+     "restSeconds": 90,
+     "notes": "Gegengewicht sukzessive reduzieren, um den Widerstand zu steigern."
+    },
+    {
+     "name": "Trizepsdrücken am Kabelzug (Seil)",
+     "muscleGroup": "Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Oberarme fixiert am Körper halten, kontrollierte Bewegung."
+    },
+    {
+     "name": "Bizepscurls mit Kurzhanteln",
+     "muscleGroup": "Bizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Kein Schwung aus der Hüfte nutzen; Progression über Gewicht oder Wiederholungen."
+    },
+    {
+     "name": "Crunches am Boden oder auf dem Gymnastikball",
+     "muscleGroup": "Bauch",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Bauchspannung kontinuierlich halten, nicht am Nacken ziehen."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten leichtes Ausradeln",
+    "Ganzkörper-Stretching"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2473,
+  "calories": 2773,
+  "protein": 173,
+  "carbs": 347,
+  "fat": 77
+ }
+}

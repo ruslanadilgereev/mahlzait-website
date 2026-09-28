@@ -1,0 +1,42 @@
+---
+// Shared page shell for the /ernaehrungsplan/ and /trainingsplan/ overviews.
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
+import PlanHubPage from "@modules/planHub";
+import { getPlanHub, getPlanPages, toPlanLink, type PlanSection } from "utils/planPages";
+
+interface Props {
+  section: PlanSection;
+}
+
+const { section } = Astro.props;
+const siteUrl = "https://www.mahlzait.de";
+const hub = getPlanHub(section)!;
+const pages = getPlanPages(section).map(toPlanLink);
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: hub.faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: hub.h1,
+  numberOfItems: pages.length,
+  itemListElement: pages.map((page, i) => ({ "@type": "ListItem", position: i + 1, name: page.h1, url: `${siteUrl}${page.url}` })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={hub.seo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle={hub.h1} pageDescription={hub.seo.description} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
+  <PlanHubPage client:idle config={configWithoutLegal} hub={hub} pages={pages} />
+</Layout>

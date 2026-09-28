@@ -1,0 +1,452 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 41,
+  "height": 178,
+  "weight": 88,
+  "goal": "lose",
+  "activityLevel": 1.375,
+  "diet": "lowcarb",
+  "mealsPerDay": 3,
+  "cookingTime": 30,
+  "budget": "medium"
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": {
+  "dailyCalories": 1965,
+  "proteinGrams": 147,
+  "carbsGrams": 98,
+  "fatGrams": 109,
+  "goal": "Abnehmen",
+  "diet": "Low Carb",
+  "tips": [
+   "Volumen durch ballaststoffreiches Gemüse maximieren: Zucchini, Blumenkohl, Spinat und Brokkoli füllen den Magen nachhaltig bei geringer Kaloriendichte.",
+   "Flüssigkeitszufuhr sicherstellen: Trinke mindestens 2 bis 3 Liter Wasser oder ungesüßten Kräutertee über den Tag verteilt, um die Sättigung zu unterstützen.",
+   "Proteinverteilung nutzen: Halte den Proteingehalt in jeder der drei Mahlzeiten hoch (mind. 30-40g), um Heißhungerattacken effektiv zu vermeiden."
+  ],
+  "disclaimer": "Dieser Ernährungsplan dient als Orientierungshilfe zur gesunden Gewichtsreduktion. Individuelle Bedarfe können je nach Aktivitätslevel und Stoffwechsel variieren. Bei Vorerkrankungen wird die Rücksprache mit einem Arzt oder zertifizierten Ernährungsberater empfohlen."
+ },
+ "mealDays": [
+  {
+   "day": "Montag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Rührei mit Spinat, Feta und Tomaten",
+     "ingredients": [
+      "3 Eier (Größe M)",
+      "100g Blattspinat",
+      "50g Feta",
+      "100g Kirschtomaten",
+      "10g Butter",
+      "Salz und Pfeffer"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 485,
+     "protein": 31,
+     "carbs": 8,
+     "fat": 37
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Hähnchenbrust mit mediterranem Ofengemüse und Olivenöl",
+     "ingredients": [
+      "180g Hähnchenbrustfilet",
+      "150g Zucchini",
+      "150g Paprika",
+      "100g Champignons",
+      "20ml Olivenöl",
+      "Kräuter der Provence"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 590,
+     "protein": 49,
+     "carbs": 18,
+     "fat": 36
+    },
+    {
+     "type": "Abendessen",
+     "name": "Lachsfilet mit gebratenem Brokkoli und Mandelsplittern",
+     "ingredients": [
+      "200g Lachsfilet",
+      "250g Brokkoli",
+      "25g Mandelsplitter",
+      "15g Butter",
+      "1 Spritzer Zitronensaft"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 880,
+     "protein": 65,
+     "carbs": 16,
+     "fat": 62
+    }
+   ],
+   "totalCalories": 1955,
+   "totalProtein": 145,
+   "totalCarbs": 42,
+   "totalFat": 135
+  },
+  {
+   "day": "Dienstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Griechischer Joghurt mit Heidelbeeren, Chiasamen und Walnüssen",
+     "ingredients": [
+      "250g Griechischer Joghurt (10% Fett)",
+      "100g Frische Heidelbeeren",
+      "15g Chiasamen",
+      "20g Walnüsse"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 540,
+     "protein": 24,
+     "carbs": 24,
+     "fat": 39
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Thunfisch-Avocado-Salat mit Kichererbsen",
+     "ingredients": [
+      "1 Dose Thunfisch im eigenen Saft (150g Abtropfgewicht)",
+      "1 halbe Avocado (ca. 80g)",
+      "100g Kichererbsen (aus der Dose, abgetropft)",
+      "100g Gurke",
+      "100g Blattsalat",
+      "15ml Olivenöl",
+      "Zitronensaft"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 630,
+     "protein": 48,
+     "carbs": 28,
+     "fat": 35
+    },
+    {
+     "type": "Abendessen",
+     "name": "Rinderhackpfanne mit grünen Bohnen und Feta",
+     "ingredients": [
+      "180g Rinderhackfleisch (mager)",
+      "250g Grüne Bohnen",
+      "60g Feta",
+      "10ml Rapsöl",
+      "1 kleine Zwiebel",
+      "Knoblauch und Paprikapulver"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 795,
+     "protein": 72,
+     "carbs": 22,
+     "fat": 47
+    }
+   ],
+   "totalCalories": 1965,
+   "totalProtein": 144,
+   "totalCarbs": 74,
+   "totalFat": 121
+  },
+  {
+   "day": "Mittwoch",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Körniger Frischkäse mit Himbeeren, Leinsamen und Mandelmus",
+     "ingredients": [
+      "250g Körniger Frischkäse (Halbfett)",
+      "120g Himbeeren (frisch oder TK)",
+      "15g Geschrotete Leinsamen",
+      "25g Mandelmus"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 510,
+     "protein": 36,
+     "carbs": 20,
+     "fat": 31
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Garnelen-Pfanne mit Zucchininudeln und Tomaten-Pesto-Soße",
+     "ingredients": [
+      "200g Garnelen",
+      "300g Zucchini (als Zoodles)",
+      "100g Kirschtomaten",
+      "30g Grünes Pesto",
+      "10ml Olivenöl"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 560,
+     "protein": 48,
+     "carbs": 17,
+     "fat": 33
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gegrilltes Putensteak mit Blumenkohlpüree und geschmorten Champignons",
+     "ingredients": [
+      "220g Putenbruststeak",
+      "350g Blumenkohl",
+      "150g Champignons",
+      "25g Butter",
+      "30ml Schlagsahne",
+      "Muskatnuss"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 890,
+     "protein": 69,
+     "carbs": 21,
+     "fat": 59
+    }
+   ],
+   "totalCalories": 1960,
+   "totalProtein": 153,
+   "totalCarbs": 58,
+   "totalFat": 123
+  },
+  {
+   "day": "Donnerstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Omelett mit Champignons, Gouda und Schnittlauch",
+     "ingredients": [
+      "3 Eier (Größe M)",
+      "100g Champignons",
+      "40g Gouda gerieben",
+      "10g Butter",
+      "1 Bund Schnittlauch"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 505,
+     "protein": 34,
+     "carbs": 5,
+     "fat": 39
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Bunter Linsensalat mit Feta, Gurke und Kürbiskernen",
+     "ingredients": [
+      "150g Berglinsen (gekocht)",
+      "80g Feta",
+      "150g Gurke",
+      "100g Kirschtomaten",
+      "20g Kürbiskerne",
+      "15ml Olivenöl",
+      "Weißweinessig"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 670,
+     "protein": 37,
+     "carbs": 44,
+     "fat": 39
+    },
+    {
+     "type": "Abendessen",
+     "name": "Rindersteak mit Kräuterbutter und gebratenem grünem Spargel",
+     "ingredients": [
+      "220g Rumpsteak",
+      "250g Grüner Spargel",
+      "25g Kräuterbutter",
+      "10ml Olivenöl",
+      "Grobkörniges Meersalz"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 790,
+     "protein": 71,
+     "carbs": 11,
+     "fat": 52
+    }
+   ],
+   "totalCalories": 1965,
+   "totalProtein": 142,
+   "totalCarbs": 60,
+   "totalFat": 130
+  },
+  {
+   "day": "Freitag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Proteinreicher Quark-Beeren-Mix mit Sonnenblumenkernen",
+     "ingredients": [
+      "250g Magerquark",
+      "50g Sahnequark",
+      "100g Erdbeeren",
+      "20g Sonnenblumenkerne",
+      "1 TL Zimt"
+     ],
+     "prepTimeMinutes": 5,
+     "calories": 490,
+     "protein": 42,
+     "carbs": 23,
+     "fat": 25
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Hähnchen-Curry mit Kokosmilch und buntem Pfannengemüse",
+     "ingredients": [
+      "180g Hähnchenbrustfilet",
+      "100ml Kokosmilch (vollfett)",
+      "150g Brokkoli",
+      "100g Paprika",
+      "10g Kokosöl",
+      "1 EL Currypulver"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 640,
+     "protein": 49,
+     "carbs": 19,
+     "fat": 40
+    },
+    {
+     "type": "Abendessen",
+     "name": "Forellenfilet mit cremigem Rahmspinat und Ei",
+     "ingredients": [
+      "200g Forellenfilet",
+      "250g Blattspinat",
+      "50ml Schlagsahne",
+      "1 gekochtes Ei (Größe M)",
+      "15g Butter",
+      "Muskat"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 830,
+     "protein": 62,
+     "carbs": 11,
+     "fat": 60
+    }
+   ],
+   "totalCalories": 1960,
+   "totalProtein": 153,
+   "totalCarbs": 53,
+   "totalFat": 125
+  },
+  {
+   "day": "Samstag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Spiegeleier auf Avocado-Tomaten-Bett mit Kernen",
+     "ingredients": [
+      "3 Eier (Größe M)",
+      "100g Avocado",
+      "120g Tomaten",
+      "15g Pinienkerne",
+      "10g Butter"
+     ],
+     "prepTimeMinutes": 10,
+     "calories": 610,
+     "protein": 27,
+     "carbs": 12,
+     "fat": 51
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Großer Salatteller mit gebratenem Halloumi und Walnuss-Dressing",
+     "ingredients": [
+      "120g Halloumi",
+      "120g Gemischter Blattsalat",
+      "100g Gurke",
+      "80g Kirschtomaten",
+      "20g Walnüsse",
+      "15ml Walnussöl",
+      "Balsamico Bianco"
+     ],
+     "prepTimeMinutes": 15,
+     "calories": 690,
+     "protein": 35,
+     "carbs": 15,
+     "fat": 54
+    },
+    {
+     "type": "Abendessen",
+     "name": "Puten-Gyros-Pfanne mit Tzatziki und Krautsalat",
+     "ingredients": [
+      "200g Putenbruststreifen",
+      "100g Griechischer Joghurt (10%)",
+      "50g Gurke gerieben",
+      "150g Weißkohl fein gehobelt",
+      "15ml Olivenöl",
+      "Gyrosgewürz und Knoblauch"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 670,
+     "protein": 61,
+     "carbs": 20,
+     "fat": 38
+    }
+   ],
+   "totalCalories": 1970,
+   "totalProtein": 123,
+   "totalCarbs": 47,
+   "totalFat": 143
+  },
+  {
+   "day": "Sonntag",
+   "meals": [
+    {
+     "type": "Frühstück",
+     "name": "Keto-Mandel-Pancakes mit Brombeeren",
+     "ingredients": [
+      "2 Eier (Größe M)",
+      "40g Mandelmehl",
+      "60g Frischkäse (Doppelrahmstufe)",
+      "80g Frische Brombeeren",
+      "10g Butter zum Ausbacken"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 560,
+     "protein": 28,
+     "carbs": 16,
+     "fat": 43
+    },
+    {
+     "type": "Mittagessen",
+     "name": "Edamame-Kabeljau-Pfanne mit Tomaten und Kräutern",
+     "ingredients": [
+      "220g Kabeljaufilet",
+      "120g Edamame (geschält, TK)",
+      "150g Kirschtomaten",
+      "15ml Olivenöl",
+      "1 Knoblauchzehe",
+      "Frische Petersilie"
+     ],
+     "prepTimeMinutes": 20,
+     "calories": 530,
+     "protein": 58,
+     "carbs": 19,
+     "fat": 24
+    },
+    {
+     "type": "Abendessen",
+     "name": "Gefüllte Zucchini mit Rinderhack und Mozzarella überbacken",
+     "ingredients": [
+      "250g Zucchini (2 Hälften)",
+      "180g Rinderhackfleisch (mager)",
+      "80g Mozzarella",
+      "80g stückige Tomaten",
+      "10ml Olivenöl",
+      "Oregano"
+     ],
+     "prepTimeMinutes": 25,
+     "calories": 870,
+     "protein": 69,
+     "carbs": 18,
+     "fat": 58
+    }
+   ],
+   "totalCalories": 1960,
+   "totalProtein": 155,
+   "totalCarbs": 53,
+   "totalFat": 125
+  }
+ ],
+ "trainingSummary": null,
+ "trainingDays": [],
+ "macros": {
+  "tdee": 2465,
+  "calories": 1965,
+  "protein": 147,
+  "carbs": 98,
+  "fat": 109
+ }
+}

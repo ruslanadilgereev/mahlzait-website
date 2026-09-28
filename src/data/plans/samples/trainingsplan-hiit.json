@@ -1,0 +1,247 @@
+{
+ "profile": {
+  "gender": "female",
+  "age": 30,
+  "height": 168,
+  "weight": 68,
+  "goal": "lose",
+  "activityLevel": 1.375,
+  "daysPerWeek": 3,
+  "experienceLevel": "intermediate",
+  "equipment": "bodyweight",
+  "sessionTime": 30,
+  "focus": [
+   "HIIT-Intervalle",
+   "Ganzkörper"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Abnehmen und Muskelerhalt",
+  "level": "Fortgeschritten",
+  "daysPerWeek": 3,
+  "splitType": "Ganzkörper HIIT-Bodyweight",
+  "tips": [
+   "Achte bei dem Kaloriendefizit (1451 kcal) auf eine hohe Proteinzufuhr (1,6 - 2,0 g pro kg Körpergewicht), um Muskelverlust vorzubeugen.",
+   "Trinke mindestens 2,5 bis 3 Liter Wasser täglich, besonders an den HIIT-Tagen.",
+   "Nutze die Ruhetage für leichte Alltagsbewegung wie Spaziergänge (NEAT erhöhen), um die Fettverbrennung ohne Erschöpfung zu unterstützen."
+  ],
+  "disclaimer": "Vor Beginn eines intensiven Trainingsprogramms oder bei vorliegenden gesundheitlichen Einschränkungen sollte ein Arzt oder qualifizierter Trainer konsultiert werden. Führe alle Übungen technisch sauber aus, um Verletzungen zu vermeiden.",
+  "progressionPlan": "Steigere wöchentlich die Belastungsdichte: Reduziere die Satzpausen um jeweils 5 Sekunden, erhöhe die Wiederholungsanzahl im gleichen Zeitfenster oder wechsle zu mechanisch anspruchsvolleren Übungsvariationen (z.B. von regulären zu erhöhten Pike Push-ups)."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Ganzkörper HIIT – Kraft und Dynamik",
+   "isRestDay": false,
+   "warmup": [
+    "3 Minuten Jumping Jacks und Armkreisen",
+    "2 Minuten Inchworms und Hüftöffner"
+   ],
+   "exercises": [
+    {
+     "name": "Jump Squats",
+     "muscleGroup": "Beine, Gesäß",
+     "sets": 4,
+     "reps": "45s Belastung / 15s Pause",
+     "restSeconds": 45,
+     "notes": "Explosiv abspringen, Progression über Erhöhung der Wiederholungsanzahl im Intervall"
+    },
+    {
+     "name": "Pike Push-ups (erhöht)",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 4,
+     "reps": "10-12",
+     "restSeconds": 45,
+     "notes": "Füße auf eine Erhöhung stellen für höhere Intensität"
+    },
+    {
+     "name": "Bulgarian Split Squats (explosiv)",
+     "muscleGroup": "Beine, Gesäß",
+     "sets": 3,
+     "reps": "12 pro Seite",
+     "restSeconds": 45,
+     "notes": "Tempo kontrollieren (2 Sek. abwärts, explosiv hoch)"
+    },
+    {
+     "name": "Burpees ohne Pause",
+     "muscleGroup": "Ganzkörper, Ausdauer",
+     "sets": 3,
+     "reps": "40s",
+     "restSeconds": 60,
+     "notes": "Ziel: Über 15 saubere Reps pro Durchgang"
+    },
+    {
+     "name": "Hollow Body Hold",
+     "muscleGroup": "Bauch, Core",
+     "sets": 3,
+     "reps": "35-45s",
+     "restSeconds": 30,
+     "notes": "Unterer Rücken bleibt fest am Boden gepresst"
+    }
+   ],
+   "cooldown": [
+    "2 Minuten Oberschenkel- und Schulter-Stretching",
+    "1 Minute Tiefenatmung"
+   ],
+   "estimatedMinutes": 30
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Ganzkörper HIIT – Core und Oberkörper Fokus",
+   "isRestDay": false,
+   "warmup": [
+    "3 Minuten Seilspringen (imaginiert) & Schultermobilität",
+    "2 Minuten World's Greatest Stretch"
+   ],
+   "exercises": [
+    {
+     "name": "Archer Push-ups",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 4,
+     "reps": "8-10 pro Seite",
+     "restSeconds": 45,
+     "notes": "Alternativ Diamant-Liegestütze bei Ermüdung"
+    },
+    {
+     "name": "Plyo Lunges (Wechselsprünge)",
+     "muscleGroup": "Beine, Herzkreislauf",
+     "sets": 4,
+     "reps": "40s",
+     "restSeconds": 45,
+     "notes": "Auf saubere Landung und Kniestabilität achten"
+    },
+    {
+     "name": "Towel Bodyweight Rows / Türrahmen-Rudern einarmig",
+     "muscleGroup": "Rücken, Bizeps",
+     "sets": 4,
+     "reps": "10-12 pro Seite",
+     "restSeconds": 45,
+     "notes": "Körperwinkel flacher wählen für höheren Widerstand"
+    },
+    {
+     "name": "Mountain Climbers (Sprint-Tempo)",
+     "muscleGroup": "Core, Herzkreislauf",
+     "sets": 3,
+     "reps": "45s",
+     "restSeconds": 30,
+     "notes": "Hüfte tief halten und Knie schnell zur Brust ziehen"
+    },
+    {
+     "name": "Side Plank Rotations",
+     "muscleGroup": "Schräge Bauchmuskeln",
+     "sets": 3,
+     "reps": "12 pro Seite",
+     "restSeconds": 30,
+     "notes": "Unterer Arm stabil, langsame und kontrollierte Rotation"
+    }
+   ],
+   "cooldown": [
+    "2 Minuten Kobra-Stretch und Lats-Dehnung",
+    "1 Minute Mobilisation Handgelenke"
+   ],
+   "estimatedMinutes": 30
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Freitag",
+   "focus": "Ganzkörper HIIT – Stoffwechsel & Kraftausdauer",
+   "isRestDay": false,
+   "warmup": [
+    "3 Minuten High Knees & Butt Kicks",
+    "2 Minuten Kniebeugen mit Rotation"
+   ],
+   "exercises": [
+    {
+     "name": "Decline Push-ups",
+     "muscleGroup": "Obere Brust, Schultern",
+     "sets": 4,
+     "reps": "12-15",
+     "restSeconds": 45,
+     "notes": "Füße auf Stuhl/Couch ablegen, Rumpf fest anspannen"
+    },
+    {
+     "name": "Pistol Squat Progression (einbeinig)",
+     "muscleGroup": "Beine, Balance",
+     "sets": 3,
+     "reps": "6-8 pro Seite",
+     "restSeconds": 60,
+     "notes": "Frei oder mit leichter Fersenunterlage ausführen"
+    },
+    {
+     "name": "Superman Back Extensions mit Hold",
+     "muscleGroup": "Unterer Rücken, Gesäß",
+     "sets": 3,
+     "reps": "15 (2s Pause oben)",
+     "restSeconds": 30,
+     "notes": "Volle Muskelkontraktion im oberen Punkt halten"
+    },
+    {
+     "name": "High Plank to Downward Dog Taps",
+     "muscleGroup": "Schultern, Core",
+     "sets": 3,
+     "reps": "40s",
+     "restSeconds": 30,
+     "notes": "Kontrolliertes Tempo, diagonal Fußspitze berühren"
+    },
+    {
+     "name": "Tuck Jumps",
+     "muscleGroup": "Beine, Schnellkraft",
+     "sets": 3,
+     "reps": "30s",
+     "restSeconds": 60,
+     "notes": "Knie explosiv so hoch wie möglich zur Brust bringen"
+    }
+   ],
+   "cooldown": [
+    "2 Minuten Child's Pose und Hüftbeuger-Dehnung",
+    "1 Minute Lockern der Beine"
+   ],
+   "estimatedMinutes": 30
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 1951,
+  "calories": 1451,
+  "protein": 109,
+  "carbs": 145,
+  "fat": 48
+ }
+}

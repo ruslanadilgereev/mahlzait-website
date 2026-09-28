@@ -1,0 +1,297 @@
+{
+ "profile": {
+  "gender": "male",
+  "age": 28,
+  "height": 182,
+  "weight": 82,
+  "goal": "gain",
+  "activityLevel": 1.55,
+  "daysPerWeek": 4,
+  "experienceLevel": "intermediate",
+  "equipment": "gym",
+  "sessionTime": 60,
+  "focus": [
+   "Push/Pull-Split"
+  ]
+ },
+ "generatedAt": "2026-09-28",
+ "mealSummary": null,
+ "mealDays": [],
+ "trainingSummary": {
+  "goal": "Muskelaufbau (Hypertrophie)",
+  "level": "Fortgeschritten",
+  "daysPerWeek": 4,
+  "splitType": "Push/Pull (Oberkörper/Unterkörper integriert)",
+  "tips": [
+   "Nutze die 3125 kcal konsequent zur Erholung und achte auf ca. 1.8-2.2g Protein pro kg Körpergewicht.",
+   "Halte 1-2 Wiederholungen im Tank (RIR 1-2), um das ZNS bei 4 intensiven Einheiten nicht vorzeitig zu überlasten.",
+   "Schlafe mindestens 7-8 Stunden pro Nacht für optimale Proteinsynthese und hormonelle Regeneration."
+  ],
+  "disclaimer": "Dieser Trainingsplan richtet sich an gesunde, fortgeschrittene Trainierende. Bei Schmerzen oder Unwohlsein sollte das Training angepasst und bei Bedarf ein Arzt oder Physiotherapeut konsultiert werden.",
+  "progressionPlan": "Verwende das Prinzip der Doppelten Progression: Versuche zunächst innerhalb des vorgegebenen Wiederholungsbereichs (z. B. 6-8 Wdh.) die Obergrenze in allen Sätzen sauber zu erreichen. Erhöhe in der Folgewoche das Gewicht um 1,25-2,5 kg bei Oberkörper- und 2,5-5 kg bei Unterkörperübungen und beginne am unteren Ende der Wiederholungsspanne. Führe alle 6-8 Wochen eine Deload-Woche mit halbiertem Satzvolumen durch."
+ },
+ "trainingDays": [
+  {
+   "day": "Montag",
+   "focus": "Push 1 – Brust, vordere/seitliche Schulter, Trizeps, Quads",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Rower oder Laufband",
+    "Dynamisches Dehnen und Schultermobilität (Armkreisen, Band Pull-Aparts)",
+    "2 spezifische Aufwärmsätze Kniebeugen und Bankdrücken"
+   ],
+   "exercises": [
+    {
+     "name": "Langhantel-Kniebeugen",
+     "muscleGroup": "Beine (Quadrizeps, Gluteus)",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 120,
+     "notes": "RPE 8-9. Gewicht steigern, sobald 4x8 sauber erreicht werden."
+    },
+    {
+     "name": "Langhantel-Bankdrücken",
+     "muscleGroup": "Brust",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 120,
+     "notes": "Kontrollierte exzentrische Phase (2 Sek.), explosiv drücken."
+    },
+    {
+     "name": "Schrägbankdrücken mit Kurzhanteln",
+     "muscleGroup": "Obere Brust",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Fokus auf Dehnung am tiefsten Punkt."
+    },
+    {
+     "name": "Seitheben am Kabelzug",
+     "muscleGroup": "Seitliche Schulter",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Saubere Ausführung ohne Schwung, Peak-Kontraktion halten."
+    },
+    {
+     "name": "Trizepsdrücken am Kabelzug mit Seil",
+     "muscleGroup": "Trizeps",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Ellbogen fixiert lassen, am Ende voll spreizen."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten lockeres Ausradeln",
+    "Statisches Dehnen der Brust- und Oberschenkelmuskulatur"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Dienstag",
+   "focus": "Pull 1 – Rücken, hintere Schulter, Bizeps, Beinbeuger",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Rower",
+    "Hüft- und Brustwirbelsäulen-Mobilisation",
+    "Spezifische Aufwärmsätze Kreuzheben"
+   ],
+   "exercises": [
+    {
+     "name": "Rumänisches Kreuzheben (RDL)",
+     "muscleGroup": "Beinbeuger, Gluteus, Rückenstrecker",
+     "sets": 4,
+     "reps": "8-10",
+     "restSeconds": 120,
+     "notes": "Maximale Hohlkreuz-Stabilität, Dehnungsspannung im Beinbeuger spüren."
+    },
+    {
+     "name": "Klimmzüge (Zusatzgewicht wenn möglich)",
+     "muscleGroup": "Latissimus, oberer Rücken",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 120,
+     "notes": "Volle ROM (Dead Hang bis Brust an die Stange). Progression via Zusatzgewicht."
+    },
+    {
+     "name": "Langhantelrudern vorgebeugt",
+     "muscleGroup": "Oberer Rücken, Trapez",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Oberkörper stabil bei ca. 45 Grad halten."
+    },
+    {
+     "name": "Face Pulls",
+     "muscleGroup": "Hintere Schulter, Rotatorenmanschette",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Fokus auf Außenrotation am Ende der Bewegung."
+    },
+    {
+     "name": "Langhantel-Bizepscurls (SZ-Stange)",
+     "muscleGroup": "Bizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 60,
+     "notes": "Kein Abfälschen aus dem Rücken, volle Kontraktion."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten Gehen auf dem Laufband",
+    "Dehnen von Lats, Beinbeuger und Unterarmen"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Mittwoch",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Donnerstag",
+   "focus": "Push 2 – Brust, Schulterdrücken, Trizeps, Waden/Quads",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Ergometer",
+    "Schulter- und Sprunggelenks-Mobilisation",
+    "Spezifische Aufwärmsätze Schulterdrücken"
+   ],
+   "exercises": [
+    {
+     "name": "Overhead Press (Militärdrücken mit Langhantel)",
+     "muscleGroup": "Schultern, Trizeps",
+     "sets": 4,
+     "reps": "6-8",
+     "restSeconds": 120,
+     "notes": "Rumpf und Po fest anspannen. Progressiv 1-2.5 kg steigern."
+    },
+    {
+     "name": "Beinpresse 45°",
+     "muscleGroup": "Quadrizeps, Gluteus",
+     "sets": 4,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Tiefe Beugung ohne Abheben des unteren Rückens."
+    },
+    {
+     "name": "Dips (ggf. mit Zusatzgewicht)",
+     "muscleGroup": "Brust, Trizeps",
+     "sets": 3,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Leicht nach vorne beugen für maximale Brustbeteiligung."
+    },
+    {
+     "name": "Fliegende am Kabelzug (Cable Flys)",
+     "muscleGroup": "Brust",
+     "sets": 3,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "Konstante Spannung halten, Fokus auf Spitzenkontraktion."
+    },
+    {
+     "name": "Wadenheben stehend",
+     "muscleGroup": "Waden",
+     "sets": 4,
+     "reps": "12-15",
+     "restSeconds": 60,
+     "notes": "2 Sekunden Dehnung am tiefsten Punkt, 1 Sekunde halten oben."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten leichtes Ausradeln",
+    "Dehnen von Waden, Brust und Schultern"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Freitag",
+   "focus": "Pull 2 – Rückenbreite/-dichte, Beinbeuger, Bizeps",
+   "isRestDay": false,
+   "warmup": [
+    "5-10 Minuten Rower",
+    "Hüftöffner und Schulterblattaktivierung",
+    "Spezifische Aufwärmsätze Latzug"
+   ],
+   "exercises": [
+    {
+     "name": "Latzug im engen Parallelgriff",
+     "muscleGroup": "Latissimus",
+     "sets": 4,
+     "reps": "8-10",
+     "restSeconds": 90,
+     "notes": "Ellbogen eng nach unten führen, Brust raus."
+    },
+    {
+     "name": "Kabelrudern sitzend (breiter Griff)",
+     "muscleGroup": "Trapez, Rhomboiden, hintere Schulter",
+     "sets": 4,
+     "reps": "10-12",
+     "restSeconds": 90,
+     "notes": "Fokus auf Retraktion der Schulterblätter."
+    },
+    {
+     "name": "Beinbeuger liegend (Maschine)",
+     "muscleGroup": "Beinbeuger",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Langsame 3-Sekunden-Exzentrik zur Maximierung der Mikrotraumata."
+    },
+    {
+     "name": "Incline Dumbbell Curls (Schrägbank)",
+     "muscleGroup": "Bizeps (langer Kopf)",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Maximale Dehnung in der Ausgangsposition nutzen."
+    },
+    {
+     "name": "Hammer Curls mit Kurzhanteln",
+     "muscleGroup": "Brachialis, Unterarme",
+     "sets": 3,
+     "reps": "10-12",
+     "restSeconds": 60,
+     "notes": "Saubere Wiederholungen im neutralen Griff."
+    }
+   ],
+   "cooldown": [
+    "5 Minuten Gehen auf Steigung",
+    "Faszienrolle für oberen Rücken und Beinbeuger"
+   ],
+   "estimatedMinutes": 60
+  },
+  {
+   "day": "Samstag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  },
+  {
+   "day": "Sonntag",
+   "focus": "Regeneration",
+   "isRestDay": true,
+   "warmup": [],
+   "exercises": [],
+   "cooldown": [],
+   "estimatedMinutes": 0
+  }
+ ],
+ "macros": {
+  "tdee": 2825,
+  "calories": 3125,
+  "protein": 195,
+  "carbs": 391,
+  "fat": 87
+ }
+}
