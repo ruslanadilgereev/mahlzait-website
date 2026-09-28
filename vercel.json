@@ -13,6 +13,10 @@
       "destination": "/go/"
     },
     {
+      "source": "/social/:path*",
+      "destination": "https://storage.googleapis.com/mahlzait-social/:path*"
+    },
+    {
       "source": "/i/:token",
       "destination": "/i/index.html"
     },
