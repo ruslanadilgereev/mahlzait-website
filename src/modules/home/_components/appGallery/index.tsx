@@ -2,7 +2,8 @@ import { useRef } from "react";
 import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
 
 // Die zehn Screens des Redesigns (Herbst 2026) in Store-Reihenfolge, als WebP in
-// public/screenshots/store/. Erst live schalten, wenn sie auch im App Store hängen.
+// public/screenshots/store/. Live seit 30.09.2026, vor dem Store-Release des
+// Redesigns (Ruslans Entscheidung); deshalb kein "wie im App Store" im Text.
 // Die Headline ist Teil der Grafik, alt beschreibt den Inhalt.
 const screens = [
   { file: "01_foto", alt: "Ein fotografierter Frühstücksteller mit Lachs, Ei und Beeren, von der KI mit 602 kcal erkannt" },
@@ -14,7 +15,7 @@ const screens = [
   { file: "07_suche", alt: "Lebensmittelsuche nach Magerquark mit Nährwerten je 100 g verschiedener Marken" },
   { file: "08_historie", alt: "Kalender September 2026 mit 29 Tagen im Ziel und dem Tagesstand samt Mahlzeiten" },
   { file: "09_statistik", alt: "Wochenstatistik mit Tagesdurchschnitt, Bilanz und Gewichtsverlauf" },
-  { file: "10_stimmen", alt: "4,6 von 5 Sternen im App Store und drei Nutzerbewertungen" },
+  { file: "10_stimmen", alt: "4,7 von 5 Sternen im App Store und drei Nutzerbewertungen" },
 ];
 
 function AppGallery() {
@@ -33,7 +34,7 @@ function AppGallery() {
       <div className="max-w-screen-lg mx-auto px-4 mb-8 flex flex-col items-center prose prose-lg text-center">
         <h2 className="mb-3">Ein Blick in die App</h2>
         <p className="text-md max-w-lg opacity-70">
-          Zehn Screens, so wie sie im App Store stehen.
+          Zehn Screens aus der App.
         </p>
       </div>
 
