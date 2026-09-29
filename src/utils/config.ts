@@ -429,10 +429,13 @@ const templateConfig: TemplateConfig = {
       headline: "Mahlzait, der Kalorienzähler mit AI",
       subtitle:
         "Mahlzait analysiert Foto, Video, Rezept-Link oder Barcode — und schaut bei unklaren Werten live im Web nach. Damit Tracking präzise bleibt, nicht geschätzt. 8 Makros, mit Quellenangabe pro Eintrag, DSGVO-konform.",
+      // Stapel: das letzte Bild liegt oben und ist zuerst zu sehen, beim
+      // Scrollen gleitet es weg. Reihenfolge auf dem Schirm wie im Store:
+      // Foto-Ergebnis (2), Startseite (1), Historie (3).
       screenshots: [
+        "/screenshots/3.webp",
         "/screenshots/1.webp",
         "/screenshots/2.webp",
-        "/screenshots/3.webp",
       ],
       rewards: ["4,7 Sterne \n im App Store", "Mit \n Live-Web-Recherche"],
       usersDescription: `${stats.displayCount} Nutzer:innen tracken bereits mit Mahlzait`,

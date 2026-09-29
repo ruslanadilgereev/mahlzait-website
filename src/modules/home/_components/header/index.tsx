@@ -18,8 +18,10 @@ function Header() {
     target: ref,
   });
 
-  // Performance: render only the first screenshot on the server/initial paint.
+  // Performance: render only the top screenshot on the server/initial paint.
   // Once hydrated, we render the full interactive stack (prevents downloading all hero screenshots immediately).
+  // The last entry lies on top of the stack, so it is the one to paint first; otherwise the
+  // visible image switches when hydration mounts the stack.
   const [isHydrated, setIsHydrated] = useState(false);
   useEffect(() => {
     setIsHydrated(true);
@@ -27,7 +29,7 @@ function Header() {
 
   const screenshotsToRender = isHydrated
     ? header.screenshots
-    : header.screenshots.slice(0, 1);
+    : header.screenshots.slice(-1);
 
   return (
     <section id={header.id} className="relative pb-8 md:pb-4">
