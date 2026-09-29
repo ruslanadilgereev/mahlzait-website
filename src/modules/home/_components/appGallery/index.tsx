@@ -5,9 +5,9 @@ import { getTrackedAppLink, trackAppStoreClick } from "utils/trackingLinks";
 // public/screenshots/store/. Erst live schalten, wenn sie auch im App Store hängen.
 // Die Headline ist Teil der Grafik, alt beschreibt den Inhalt.
 const screens = [
-  { file: "01_foto", alt: "Ein fotografierter Frühstücksteller mit Lachs, Ei und Avocado, von der KI mit 705 kcal erkannt" },
+  { file: "01_foto", alt: "Ein fotografierter Frühstücksteller mit Lachs, Ei und Beeren, von der KI mit 602 kcal erkannt" },
   { file: "02_home", alt: "Tagesübersicht: 1.868 von 1.950 kcal gegessen, 82 kcal übrig, dazu Fett, Kohlenhydrate, Ballaststoffe, Eiweiß und Salz" },
-  { file: "03_text", alt: "Per Text eingetragen: 1 Apfel und 250 ml Kaffee mit Hafermilch, zusammen 115 kcal" },
+  { file: "03_text", alt: "Per Text eingetragen: 1 Apfel und 250 ml Kaffee mit Hafermilch, zusammen 121 kcal" },
   { file: "04_vorschlaege", alt: "KI-Vorschlag für den Rest des Tages: Hähnchenpfanne mit buntem Gemüse und Basmati-Reis, 494 kcal" },
   { file: "05_gewicht", alt: "Gewichtsverlauf seit Juli: 78,2 kg, 6,2 kg weniger, Ziel 75 kg" },
   { file: "06_naehrwerte", alt: "Nährwerte der Woche: Eiweiß im Schnitt 110 g pro Tag, dazu Fett, Kohlenhydrate, Ballaststoffe und Salz" },
