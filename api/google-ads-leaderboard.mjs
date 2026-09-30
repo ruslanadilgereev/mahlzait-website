@@ -11,6 +11,7 @@
 // RC:   RC_SECRET_API_KEY env, project proj41604426
 // GCP:  GOOGLE_SA_KEY (base64 SA json) for Firestore — same key the ASA board uses.
 // State: Firestore mytemple-460913 → `google_ads_leaderboard_cache` → `state`
+//        (+ `state_part_<i>`, siehe saveState)
 //
 // ── Attribution model (DIFFERS from Apple) ─────────────────────────────────
 // Google does NOT flow into RC `$mediaSource` ("Google Ads" never appears).
@@ -103,20 +104,57 @@ function getGoogleAuth() {
   return cachedAuth;
 }
 
-async function loadState(firestore) {
+// Firestore erlaubt hoechstens 1 MiB pro Dokument. Der Stand waechst mit jedem
+// RC-Kunden (seen_uids) und jedem Google-Kunden und lag am 30.09.2026 bei
+// 1,29 MB; seit dem 20.06. schlug deshalb jedes Speichern fehl. Darum liegt er
+// als JSON verteilt auf Teil-Dokumente (`state_part_<i>`), `state` haelt nur die
+// Zahl der Teile. Alles geht in EINEM Commit raus, ein Leser sieht also nie
+// eine Mischung aus altem und neuem Stand.
+const STATE_FORMAT = "json-parts-v1";
+// Ein UTF-16-Zeichen wird hoechstens 3 Byte UTF-8: jedes Teil bleibt < 900 KB.
+const PART_CHARS = 300_000;
+const partPath = (i) => `${DOC_PATH}_part_${i}`;
+
+function splitParts(json) {
+  const parts = [];
+  for (let i = 0; i < json.length; ) {
+    let end = Math.min(i + PART_CHARS, json.length);
+    // Kein Emoji-Paar zerschneiden: eine einzelne Haelfte ueberlebt UTF-8 nicht.
+    const c = json.charCodeAt(end - 1);
+    if (end < json.length && c >= 0xd800 && c <= 0xdbff) end--;
+    parts.push(json.slice(i, end));
+    i = end;
+  }
+  return parts;
+}
+
+export async function loadState(firestore) {
+  let head;
   try {
     const r = await firestore.projects.databases.documents.get({ name: DOC_PATH });
-    return decodeFields(r.data.fields);
+    head = decodeFields(r.data.fields);
   } catch (e) {
     const status = e?.code || e?.response?.status;
     if (status === 404) return null;
     throw e;
   }
+  if (head.format !== STATE_FORMAT) return head; // alter Einzeldokument-Stand
+  const parts = await Promise.all(
+    Array.from({ length: head.parts }, (_, i) =>
+      firestore.projects.databases.documents
+        .get({ name: partPath(i) })
+        .then((r) => decodeFields(r.data.fields).json),
+    ),
+  );
+  return JSON.parse(parts.join(""));
 }
-async function saveState(firestore, state) {
-  await firestore.projects.databases.documents.patch({
-    name: DOC_PATH,
-    requestBody: { fields: encodeFields(state) },
+export async function saveState(firestore, state) {
+  const parts = splitParts(JSON.stringify(state));
+  const writes = parts.map((json, i) => ({ update: { name: partPath(i), fields: encodeFields({ json }) } }));
+  writes.push({ update: { name: DOC_PATH, fields: encodeFields({ format: STATE_FORMAT, parts: parts.length }) } });
+  await firestore.projects.databases.documents.commit({
+    database: `projects/${GCP_PROJECT}/databases/(default)`,
+    requestBody: { writes },
   });
 }
 
