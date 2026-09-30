@@ -33,7 +33,7 @@
 import { google } from "googleapis";
 import { gunzipSync } from "node:zlib";
 import { fetchAsaDailySpend } from "./apple-ads-leaderboard.mjs";
-import { fetchGoogleCampaignsWithSpend } from "./google-ads-leaderboard.mjs";
+import { fetchGoogleCampaignsWithSpend, googleAccounts } from "./google-ads-leaderboard.mjs";
 import { loadState as loadAiUsageState } from "./ai-usage.mjs";
 
 export const config = { maxDuration: 60 }; // 1 RC-Call + 1 ASA-Report + 2 GAQL + 3 Firestore-Ops
@@ -188,30 +188,6 @@ async function appleDailySpend(startYmd, endYmd) {
     }
   }
   return out;
-}
-
-/**
- * Alle Google-Ads-Konten, aus denen Kosten kommen. Das erste ist das
- * Hauptkonto aus den Standard-Variablen; ab GOOGLE_ADS_REFRESH_TOKEN_2 kommt
- * ein zweites dazu.
- *
- * Hintergrund: Die Kampagnen liefen bis zum 17.08.2026 auf dem alten Konto und
- * laufen seit dem 18.08.2026 auf "Mahlzait2", das einem anderen Google-Konto
- * gehoert und deshalb einen eigenen Refresh-Token braucht. Beide zusammen
- * ergeben die lueckenlose Kostenreihe; nur das neue abzufragen wuerde die
- * Historie davor auf null setzen.
- */
-function googleAccounts() {
-  const list = [undefined]; // Hauptkonto: Standard-Umgebungsvariablen
-  if (process.env.GOOGLE_ADS_REFRESH_TOKEN_2 && process.env.GOOGLE_ADS_CUSTOMER_ID_2) {
-    list.push({
-      refreshToken: process.env.GOOGLE_ADS_REFRESH_TOKEN_2,
-      customerId: process.env.GOOGLE_ADS_CUSTOMER_ID_2,
-      // Standalone-Konto ohne Verwaltungsebene: login == customer.
-      loginCustomerId: process.env.GOOGLE_ADS_LOGIN_CUSTOMER_ID_2 || process.env.GOOGLE_ADS_CUSTOMER_ID_2,
-    });
-  }
-  return list;
 }
 
 /**

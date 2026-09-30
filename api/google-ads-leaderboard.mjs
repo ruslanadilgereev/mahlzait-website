@@ -236,6 +236,30 @@ async function gaqlSearch(query, account) {
   return rows;
 }
 
+/**
+ * Alle Google-Ads-Konten, aus denen Kosten kommen. Das erste ist das
+ * Hauptkonto aus den Standard-Variablen; ab GOOGLE_ADS_REFRESH_TOKEN_2 kommt
+ * ein zweites dazu. Genutzt von diesem Tab und vom Geld-Tab (money.mjs).
+ *
+ * Hintergrund: Die Kampagnen liefen bis zum 17.08.2026 auf dem alten Konto und
+ * laufen seit dem 18.08.2026 auf "Mahlzait2", das einem anderen Google-Konto
+ * gehoert und deshalb einen eigenen Refresh-Token braucht. Beide zusammen
+ * ergeben die lueckenlose Kostenreihe; nur das neue abzufragen wuerde die
+ * Historie davor auf null setzen.
+ */
+export function googleAccounts() {
+  const list = [undefined]; // Hauptkonto: Standard-Umgebungsvariablen
+  if (process.env.GOOGLE_ADS_REFRESH_TOKEN_2 && process.env.GOOGLE_ADS_CUSTOMER_ID_2) {
+    list.push({
+      refreshToken: process.env.GOOGLE_ADS_REFRESH_TOKEN_2,
+      customerId: process.env.GOOGLE_ADS_CUSTOMER_ID_2,
+      // Standalone-Konto ohne Verwaltungsebene: login == customer.
+      loginCustomerId: process.env.GOOGLE_ADS_LOGIN_CUSTOMER_ID_2 || process.env.GOOGLE_ADS_CUSTOMER_ID_2,
+    });
+  }
+  return list;
+}
+
 // ---------- Google Ads data pulls ----------
 function ymd(d) {
   return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, "0")}-${String(d.getUTCDate()).padStart(2, "0")}`;
@@ -430,7 +454,7 @@ async function classifyGoogleCustomer(custMeta) {
 //   • known Google customers       → re-pull subs only (Renewals/Trial→Paid)
 //   • seen-but-not-Google          → skip — gclid/gbraid is install-time, immutable
 // Errored new UIDs are NOT marked seen, so a transient RC 429 retries next pull.
-async function doRefresh(firestore, prev) {
+export async function doRefresh(firestore, prev) {
   const t0 = Date.now();
 
   const endDate = new Date();
@@ -438,10 +462,13 @@ async function doRefresh(firestore, prev) {
   const startYmd = ymd(startDate);
   const endYmd = ymd(endDate);
 
-  const [campaigns, customers] = await Promise.all([
-    fetchGoogleCampaignsWithSpend(startYmd, endYmd),
+  // Faellt ein Konto aus, scheitert der ganze Refresh und der letzte Stand
+  // bleibt stehen, statt still eine zu niedrige Kostensumme zu zeigen.
+  const [perAccount, customers] = await Promise.all([
+    Promise.all(googleAccounts().map((acc) => fetchGoogleCampaignsWithSpend(startYmd, endYmd, acc))),
     fetchAllCustomerIds(),
   ]);
+  const campaigns = perAccount.flat();
   const tGads = Date.now() - t0;
 
   // Diff bookkeeping from prev state.

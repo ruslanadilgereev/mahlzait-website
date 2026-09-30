@@ -1,6 +1,6 @@
 // Speichern/Laden des Google-Ads-Leaderboard-Stands gegen ein nachgebautes
 // Firestore mit dem echten Limit von 1 MiB pro Dokument.
-// Ausfuehren: node --test test/
+// Ausfuehren: node --test test/*.test.mjs
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { loadState, saveState } from "../api/google-ads-leaderboard.mjs";
