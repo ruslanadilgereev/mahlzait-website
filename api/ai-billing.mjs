@@ -82,7 +82,7 @@ export function billingWindow(at) {
   };
 }
 
-function settingsFromEnv() {
+export function settingsFromEnv() {
   return {
     table: process.env.BILLING_BIGQUERY_TABLE || DEFAULT_TABLE,
     location: process.env.BILLING_BIGQUERY_LOCATION || "EU",

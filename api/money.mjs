@@ -1,12 +1,12 @@
-// Geld — die Gewinnrechnung: Umsatz minus Abgaben minus Werbe- und AI-Kosten, pro Tag.
+// Geld — die Gewinnrechnung: Umsatz minus Abgaben minus Werbe- und Google-Cloud-Kosten, pro Tag.
 // GET  /api/money?pw=X            → Tageshistorie aus Firestore
-// GET  /api/money?pw=X&refresh=1  → RC + ASA + Google Ads + AI-Cache ziehen, mergen, speichern
+// GET  /api/money?pw=X&refresh=1  → RC + ASA + Google Ads + Google-Cloud-Rechnung ziehen, mergen, speichern
 //
 // Auth: DASHBOARD_PASSWORD env (wie die anderen Boards).
 // RC:   RC_SECRET_API_KEY env, project proj41604426 (charts/revenue, Tagesauflösung).
 // ASA:  ASA_* envs — über fetchAsaDailySpend() aus apple-ads-leaderboard.mjs.
 // GAds: GOOGLE_ADS_* envs — über fetchGoogleCampaignsWithSpend() aus google-ads-leaderboard.mjs.
-// GCP:  GOOGLE_SA_KEY (base64 SA json) für Firestore.
+// GCP:  GOOGLE_SA_KEY (base64 SA json) für Firestore und den BigQuery-Billing-Export.
 // State: Firestore mytemple-460913 → `money_dashboard_cache` → `state`.
 //
 // ── Warum dieser Endpunkt eine eigene Historie führt ───────────────────────
@@ -27,25 +27,20 @@
 // der Rohwert in USD gespeichert und erst bei der Ausgabe mit EUR_PER_USD
 // umgerechnet — ändert sich der Kurs, bewertet sich die ganze Historie neu,
 // statt auf einem alten Kurs einzufrieren.
-// Ad-Spend (ASA localSpend, Google account currency) und AI-Kosten sind bereits
-// EUR und werden nicht angefasst.
+// Ad-Spend (ASA localSpend, Google account currency) und Google-Cloud-Kosten sind
+// bereits EUR und werden nicht angefasst.
 
 import { google } from "googleapis";
-import { gunzipSync } from "node:zlib";
 import { fetchAsaDailySpend } from "./apple-ads-leaderboard.mjs";
 import { fetchGoogleCampaignsWithSpend, googleAccounts } from "./google-ads-leaderboard.mjs";
-import { loadState as loadAiUsageState } from "./ai-usage.mjs";
+import { billingWindow, queryBilling, settingsFromEnv } from "./ai-billing.mjs";
 
-export const config = { maxDuration: 60 }; // 1 RC-Call + 1 ASA-Report + 2 GAQL + 3 Firestore-Ops
+export const config = { maxDuration: 60 }; // 1 RC-Call + 1 ASA-Report + 2 GAQL + 1 BigQuery + 2 Firestore-Ops
 
 const GCP_PROJECT = "mytemple-460913";
 const COLLECTION = "money_dashboard_cache";
 const DOC_ID = "state";
 const DOC_PATH = `projects/${GCP_PROJECT}/databases/(default)/documents/${COLLECTION}/${DOC_ID}`;
-// Der AI-Tab hat seine Kosten schon berechnet (inkl. Preistabelle je Modell und
-// USD→EUR). Wir lesen sein Ergebnis, statt Query und Preistabelle zu duplizieren
-// — eine zweite Preistabelle würde irgendwann auseinanderlaufen. Gelesen wird über
-// dessen loadState, weil das Blob dort auf mehrere Firestore-Dokumente verteilt liegt.
 
 const RC_PROJECT = "proj41604426";
 const RC_BASE = "https://api.revenuecat.com/v2";
@@ -116,7 +111,7 @@ function getGoogleAuth() {
   const sa = JSON.parse(Buffer.from(process.env.GOOGLE_SA_KEY, "base64").toString("utf-8"));
   cachedAuth = new google.auth.GoogleAuth({
     credentials: sa,
-    scopes: ["https://www.googleapis.com/auth/datastore"],
+    scopes: ["https://www.googleapis.com/auth/cloud-platform"], // Firestore + BigQuery
   });
   return cachedAuth;
 }
@@ -215,29 +210,31 @@ async function googleDailySpend(startYmd, endYmd) {
   return out;
 }
 
-// ---------- AI-Kosten aus dem Cache des AI-Tabs ----------
-// Records: { month: "YYYY-MM", days: { "07": [req, in, cached, out, thinking, cost_eur] } }
-// Der Tageswert ist eine anteilige Aufteilung der Monatskosten nach Token-
-// Gewicht (ai-usage.mjs splitDays) — der Monat stimmt exakt, ein Einzeltag ist
-// eine Schätzung. Das Frontend weist genau darauf hin.
-function aiDailyCost(aiState) {
-  const out = new Map();
-  if (!aiState || !aiState.data_b64) return { days: out, cacheTs: null, available: false };
-  let records = [];
-  try {
-    records = JSON.parse(gunzipSync(Buffer.from(aiState.data_b64, "base64")).toString("utf-8"));
-  } catch {
-    return { days: out, cacheTs: aiState.last_pull_ts_ms || null, available: false };
+// ---------- Google Cloud: die Rechnung, keine Schätzung ----------
+// Quelle ist derselbe BigQuery-Billing-Export wie im AI-Tab (queryBilling aus
+// ai-billing.mjs): netto inklusive Gutschriften, ohne Steuer, Google-Billing-Tag
+// (Pacific). Summiert wird über ALLE Dienste, nicht nur Vertex AI und Gemini —
+// App Engine, Cloud Run, Cloud SQL usw. stehen auf derselben Rechnung.
+//
+// Bis zum 02.10.2026 stand hier die Token-Schätzung aus dem AI-Usage-Tab. Sie
+// lag für September bei 315 €, die Rechnung bei 993 €.
+//
+// `from` ist der erste Tag des lückenlosen Blocks, der mit dem jüngsten Tag
+// endet. Vom Juli 2026 hat der Export nur Bruchstücke; als Abdeckung gezählt
+// sähe der Juli fast kostenlos aus.
+export function gcloudDailyCost(rows) {
+  const days = new Map();
+  for (const r of rows || []) {
+    days.set(r.date, (days.get(r.date) || 0) + Number(r.net_eur || 0));
   }
-  for (const rec of records) {
-    if (!rec || !rec.month || !rec.days) continue;
-    for (const [dd, arr] of Object.entries(rec.days)) {
-      if (!Array.isArray(arr)) continue;
-      const day = `${rec.month}-${dd}`;
-      out.set(day, (out.get(day) || 0) + Number(arr[5] || 0));
-    }
+  const sorted = [...days.keys()].sort();
+  if (!sorted.length) return { days, from: null };
+  let from = sorted.at(-1);
+  for (let i = sorted.length - 2; i >= 0; i--) {
+    if (Date.parse(from) - Date.parse(sorted[i]) !== DAY_MS) break;
+    from = sorted[i];
   }
-  return { days: out, cacheTs: aiState.last_pull_ts_ms || null, available: true };
+  return { days, from };
 }
 
 // ---------- Merge: frische Tage rein, alte Tage stehen lassen ----------
@@ -267,10 +264,10 @@ function mergeField(target, fresh, field, fromYmd, toYmd) {
  * Die gesamte Zusammenführung, frei von Netzwerk und Firestore, damit sie
  * prüfbar ist. Gibt die neue, nach Datum sortierte Tagesliste zurück.
  *
- * `apple`, `gads` und `aiDays` dürfen null sein — dann bleibt das jeweilige
+ * `apple`, `gads` und `gcloudDays` dürfen null sein — dann bleibt das jeweilige
  * Feld unangetastet und behält seinen historischen Wert.
  */
-export function mergeHistory({ prev, rc, apple, gads, aiDays, aiFrom, rcFrom, adFrom, today }) {
+export function mergeHistory({ prev, rc, apple, gads, gcloudDays, gcloudFrom, rcFrom, adFrom, today }) {
   const days = new Map();
   for (const row of (prev?.days || [])) {
     if (row && row.d) days.set(row.d, { ...row });
@@ -291,7 +288,7 @@ export function mergeHistory({ prev, rc, apple, gads, aiDays, aiFrom, rcFrom, ad
 
   if (apple) mergeField(days, apple, "apple", adFrom, today);
   if (gads) mergeField(days, gads, "google", adFrom, today);
-  if (aiDays && aiFrom) mergeField(days, aiDays, "ai", aiFrom, today);
+  if (gcloudDays && gcloudFrom) mergeField(days, gcloudDays, "gcloud", gcloudFrom, today);
 
   return [...days.values()]
     .map((r) => ({
@@ -300,7 +297,7 @@ export function mergeHistory({ prev, rc, apple, gads, aiDays, aiFrom, rcFrom, ad
       tx: r.tx || 0,
       apple: r2(r.apple || 0),
       google: r2(r.google || 0),
-      ai: r4(r.ai || 0),
+      gcloud: r2(r.gcloud || 0),
       ...(r.incomplete ? { incomplete: true } : {}),
     }))
     .sort((a, b) => (a.d < b.d ? -1 : 1));
@@ -332,14 +329,14 @@ export function refuseIfImplausible(prevRows, nextRows) {
   return null;
 }
 
-async function doRefresh(firestore, prev) {
+async function doRefresh(firestore, bigquery, prev) {
   const t0 = Date.now();
   const now = new Date();
   const today = ymd(now);
   const adFrom = ymd(new Date(now.getTime() - AD_LOOKBACK_DAYS * DAY_MS));
   const rcFrom = ymd(new Date(now.getTime() - RC_LOOKBACK_DAYS * DAY_MS));
 
-  const [rc, apple, gads, aiState] = await Promise.all([
+  const [rc, apple, gads, gcloudRows] = await Promise.all([
     rcDailyRevenue(rcFrom, today),
     appleDailySpend(adFrom, today).catch((e) => {
       console.error("[money] ASA-Spend fehlgeschlagen:", e?.message);
@@ -349,17 +346,19 @@ async function doRefresh(firestore, prev) {
       console.error("[money] Google-Spend fehlgeschlagen:", e?.message);
       return null;
     }),
-    loadAiUsageState(firestore),
+    queryBilling(bigquery, settingsFromEnv(), billingWindow(now)).then((r) => r.rows).catch((e) => {
+      console.error("[money] Google-Cloud-Kosten fehlgeschlagen:", e?.message);
+      return null;
+    }),
   ]);
 
-  const ai = aiDailyCost(aiState);
-  const aiMonths = (aiState?.meta?.months || []).slice().sort();
-  const aiFrom = (ai.available && aiMonths.length) ? `${aiMonths[0]}-01` : null;
+  const gcloud = gcloudRows ? gcloudDailyCost(gcloudRows) : null;
 
   const rows = mergeHistory({
     prev, rc, apple, gads,
-    aiDays: ai.available ? ai.days : null,
-    aiFrom, rcFrom, adFrom, today,
+    gcloudDays: gcloud?.days || null,
+    gcloudFrom: gcloud?.from || null,
+    rcFrom, adFrom, today,
   });
 
   // Ab wann kennen wir ueberhaupt Werbekosten? Beim ersten Refresh ist das
@@ -372,6 +371,11 @@ async function doRefresh(firestore, prev) {
   const adsFrom = gotAds
     ? (prevAdsFrom && prevAdsFrom < adFrom ? prevAdsFrom : adFrom)
     : prevAdsFrom;
+  // Dieselbe Marke für Google Cloud: ab wann die Rechnung lückenlos vorliegt.
+  const prevGcloudFrom = prev?.sources?.gcloud_from || null;
+  const gcloudFrom = gcloud?.from
+    ? (prevGcloudFrom && prevGcloudFrom < gcloud.from ? prevGcloudFrom : gcloud.from)
+    : prevGcloudFrom;
 
   // Einen gefüllten Stand nicht durch einen kaputten Pull ersetzen.
   if (prev?.days?.length && rows.length === 0) {
@@ -386,7 +390,7 @@ async function doRefresh(firestore, prev) {
   const warnings = [];
   if (!apple) warnings.push("Apple-Spend konnte nicht geladen werden — Apple-Kosten zeigen den letzten bekannten Stand.");
   if (!gads) warnings.push("Google-Spend konnte nicht geladen werden — Google-Kosten zeigen den letzten bekannten Stand.");
-  if (!ai.available) warnings.push("AI-Cache ist leer — im AI-Usage-Tab einmal aktualisieren.");
+  if (!gcloud) warnings.push("Google-Cloud-Kosten konnten nicht geladen werden — sie zeigen den letzten bekannten Stand.");
 
   const state = {
     last_pull_ts_ms: Date.now(),
@@ -399,8 +403,7 @@ async function doRefresh(firestore, prev) {
       ad_to: today,
       ads_from: adsFrom,
       google_accounts: googleAccounts().length,
-      ai_cache_ts_ms: ai.cacheTs,
-      ai_months: (aiState?.meta?.months || []).length,
+      gcloud_from: gcloudFrom,
       history_from: rows.length ? rows[0].d : null,
     },
     refresh_warning: warnings.length ? warnings.join(" ") : null,
@@ -424,7 +427,7 @@ export default async function handler(req, res) {
 
     let state = await loadDoc(firestore, DOC_PATH);
     if (refresh) {
-      state = await doRefresh(firestore, state);
+      state = await doRefresh(firestore, google.bigquery({ version: "v2", auth }), state);
     } else if (!state) {
       return res.json({
         bootstrapped: false,

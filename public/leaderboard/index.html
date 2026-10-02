@@ -1417,7 +1417,7 @@
                   <th class="num">RC</th>
                   <th class="num">Netto</th>
                   <th class="num">Ads</th>
-                  <th class="num">AI</th>
+                  <th class="num">Cloud</th>
                   <th class="num">Ergebnis</th>
                   <th class="num">Marge</th>
                 </tr>
@@ -1446,12 +1446,12 @@
           hier trotzdem, weil dieser Tab sie bei jedem Aktualisieren dauerhaft wegschreibt.
           Der auswertbare Zeitraum wächst also mit — vor dem ersten Refresh gibt es keine
           Werbekosten, egal wie weit man zurückgeht. ·
-          <b>AI-Kosten</b> stammen aus dem AI-Usage-Tab. Dort werden Monatssummen erfasst und
-          nach Token-Gewicht auf die Tage verteilt: der <b>Monat stimmt exakt</b>, ein
-          einzelner Tag ist eine Schätzung. Sie sind außerdem nur so frisch wie der letzte
-          Refresh dort. ·
-          <b>Nicht enthalten:</b> alles, was nicht über diese vier Quellen läuft — Server-
-          und Infrastrukturkosten, Werkzeuge, Steuerberatung, Arbeitszeit. Das hier ist die
+          <b>Google Cloud</b> ist die tatsächliche Rechnung aus dem BigQuery-Billing-Export,
+          über <b>alle Dienste</b> (Vertex AI, Gemini API, App Engine, Cloud Run, Cloud SQL …):
+          netto inklusive Gutschriften und Rabatte, ohne Umsatzsteuer. Ein Tag ist der
+          Google-Billing-Tag (Pacific-Zeit). Der Export reicht nur bis Ende Juli 2026 zurück. ·
+          <b>Nicht enthalten:</b> alles, was nicht über diese vier Quellen läuft — Dienste
+          außerhalb von Google Cloud, Werkzeuge, Steuerberatung, Arbeitszeit. Das hier ist die
           Deckungsbeitragsrechnung der App, keine Gewinn- und Verlustrechnung.
         </div>
       </div>
@@ -4380,7 +4380,7 @@
     }
 
     // ============================================================
-    // Geld — Umsatz minus Abgaben minus Werbe- und AI-Kosten
+    // Geld — Umsatz minus Abgaben minus Werbe- und Google-Cloud-Kosten
     // ============================================================
     // Der Endpunkt liefert IMMER die volle Tageshistorie; der Zeitraum wird
     // hier im Browser geschnitten. Ein Wechsel von "30 Tage" auf "1 Jahr" ist
@@ -4454,12 +4454,12 @@
      * kommt zu viel Abzug heraus.
      */
     function moCalc(rows, rates, eurPerUsd) {
-      let gross = 0, apple = 0, google = 0, ai = 0, tx = 0;
+      let gross = 0, apple = 0, google = 0, gcloud = 0, tx = 0;
       for (const r of rows) {
         gross += (r.rev_usd || 0) * eurPerUsd;
         apple += r.apple || 0;
         google += r.google || 0;
-        ai += r.ai || 0;
+        gcloud += r.gcloud || 0;
         tx += r.tx || 0;
       }
       const afterVat = gross / (1 + rates.vat);
@@ -4468,11 +4468,11 @@
       const rc = (afterVat - store) * rates.rc;
       const net = afterVat - store - rc;
       const ads = apple + google;
-      const result = net - ads - ai;
+      const result = net - ads - gcloud;
       return {
-        gross, vat, store, rc, net, apple, google, ai, ads, result, tx,
+        gross, vat, store, rc, net, apple, google, gcloud, ads, result, tx,
         margin: gross > 0 ? result / gross : null,
-        costPerEuro: gross > 0 ? (ads + ai) / gross : null,
+        costPerEuro: gross > 0 ? (ads + gcloud) / gross : null,
       };
     }
 
@@ -4544,10 +4544,6 @@
       // ---------- Hinweise, die man nicht uebersehen darf ----------
       const warns = [];
       if (d.refresh_warning) warns.push(d.refresh_warning);
-      if (src.ai_cache_ts_ms) {
-        const ageH = (Date.now() - src.ai_cache_ts_ms) / 3600000;
-        if (ageH > 48) warns.push(`Die AI-Kosten stammen aus dem AI-Usage-Tab und sind ${Math.round(ageH / 24)} Tage alt — dort einmal aktualisieren.`);
-      }
       // Wer weiter zurueckschaut, als Werbedaten vorliegen, sieht dort 0 EUR
       // Spend. Das sieht aus wie ein Gewinnsprung und ist keiner — deshalb
       // steht der Hinweis dran, sobald der Zeitraum ueber `ads_from` hinausgeht.
@@ -4562,6 +4558,13 @@
       } else if (range.from < src.ads_from) {
         warns.push(`Werbekosten liegen erst ab ${src.ads_from} vor. Für die Tage davor fehlen sie, das Ergebnis ist dort zu hoch.`);
       }
+      // Dasselbe fuer Google Cloud: der Billing-Export reicht nur bis Ende Juli
+      // 2026 zurueck. Davor stuende 0 € — kein Gratismonat, sondern eine Luecke.
+      if (!src.gcloud_from) {
+        warns.push("Für diesen Stand liegen noch keine Google-Cloud-Kosten vor — das Ergebnis ist zu hoch. Einmal aktualisieren.");
+      } else if (range.from < src.gcloud_from) {
+        warns.push(`Google-Cloud-Kosten liegen erst ab ${src.gcloud_from} vor. Für die Tage davor fehlen sie, das Ergebnis ist dort zu hoch.`);
+      }
       const warnEl = document.getElementById("mo-warn");
       warnEl.innerHTML = warns.map((w) => esc(w)).join(" · ");
       warnEl.classList.toggle("hidden", warns.length === 0);
@@ -4570,10 +4573,10 @@
       const kpis = [
         { k: "Bruttoumsatz", v: moEur(c.gross), s: `${moInt(c.tx)} Transaktionen` },
         { k: "Nettoerlös", v: moEur(c.net), s: "nach Steuer, Store und RevenueCat" },
-        { k: "Werbung + AI", v: moEur(c.ads + c.ai), s: `${moEur(c.ads)} Ads · ${moEur(c.ai)} AI` },
+        { k: "Werbung + Google Cloud", v: moEur(c.ads + c.gcloud), s: `${moEur(c.ads)} Ads · ${moEur(c.gcloud)} Cloud` },
         { k: "Ergebnis", v: moEur(c.result), s: c.result >= 0 ? "bleibt übrig" : "Verlust im Zeitraum" },
         { k: "Marge", v: moPct(c.margin), s: "Ergebnis je Euro Bruttoumsatz" },
-        { k: "Kosten je € Umsatz", v: c.costPerEuro === null ? "–" : moEur(c.costPerEuro), s: "Werbung und AI zusammen" },
+        { k: "Kosten je € Umsatz", v: c.costPerEuro === null ? "–" : moEur(c.costPerEuro), s: "Werbung und Google Cloud zusammen" },
       ];
       document.getElementById("mo-kpis").innerHTML = kpis.map((x) =>
         `<div class="cu-kpi"><div class="k-label">${esc(x.k)}</div>` +
@@ -4604,7 +4607,7 @@
         wfRow("Nettoerlös", c.net, "net", 0, pos(c.net), "sum"),
         wfRow("Google Ads", c.google, "c-google", pos(c.net - c.google), pos(c.google), "cut"),
         wfRow("Apple Ads", c.apple, "c-apple", pos(c.net - c.google - c.apple), pos(c.apple), "cut"),
-        wfRow("AI-Kosten", c.ai, "c-ai", pos(Math.max(0, c.result)), pos(c.ai), "cut"),
+        wfRow("Google Cloud", c.gcloud, "c-ai", pos(Math.max(0, c.result)), pos(c.gcloud), "cut"),
         wfRow("Ergebnis", c.result, c.result >= 0 ? "good" : "bad", 0, pos(Math.abs(c.result)), "total"),
       ];
       document.getElementById("mo-wf").innerHTML = wf.join("");
@@ -4667,7 +4670,7 @@
         b.step === 1 ? "pro Tag" : b.step === 7 ? "je 7 Tage zusammengefasst" : "je Monat zusammengefasst";
 
       const el = document.getElementById("mo-chart");
-      const hasAny = b.calc.some((x) => x.gross || x.ads || x.ai);
+      const hasAny = b.calc.some((x) => x.gross || x.ads || x.gcloud);
       if (!hasAny) {
         if (moCharts["mo-chart"]) { moCharts["mo-chart"].dispose(); delete moCharts["mo-chart"]; }
         el.innerHTML = `<div class="mo-empty">Keine Umsätze und keine Kosten in diesem Zeitraum.</div>`;
@@ -4689,7 +4692,7 @@
         textStyle: { fontFamily: baseFont },
         grid: { left: 4, right: 4, top: 30, bottom: 4, containLabel: true },
         legend: {
-          data: ["Nettoerlös", "Google Ads", "Apple Ads", "AI-Kosten", "Ergebnis"],
+          data: ["Nettoerlös", "Google Ads", "Apple Ads", "Google Cloud", "Ergebnis"],
           top: 0, itemGap: 16, icon: "roundRect", itemWidth: 11, itemHeight: 11,
           textStyle: { color: muted, fontSize: 12 },
         },
@@ -4725,8 +4728,8 @@
             data: b.calc.map((x) => -x.google), itemStyle: { color: cGoogle } },
           { name: "Apple Ads", type: "bar", stack: "geld",
             data: b.calc.map((x) => -x.apple), itemStyle: { color: cApple } },
-          { name: "AI-Kosten", type: "bar", stack: "geld",
-            data: b.calc.map((x) => -x.ai), itemStyle: { color: cAi } },
+          { name: "Google Cloud", type: "bar", stack: "geld",
+            data: b.calc.map((x) => -x.gcloud), itemStyle: { color: cAi } },
           { name: "Ergebnis", type: "line", data: b.calc.map((x) => x.result),
             symbol: "circle", symbolSize: 6, showSymbol: b.labels.length <= 60,
             lineStyle: { color: green, width: 2.5 }, itemStyle: { color: green }, z: 3 },
@@ -4763,7 +4766,7 @@
           <td class="num">${moMinus(c.rc)}</td>
           <td class="num">${moEur(c.net)}</td>
           <td class="num">${moMinus(c.ads)}</td>
-          <td class="num">${moMinus(c.ai)}</td>
+          <td class="num">${moMinus(c.gcloud)}</td>
           <td class="num ${c.result >= 0 ? "mo-pos" : "mo-neg"}" style="font-weight:700">${moEur(c.result)}</td>
           <td class="num">${moPct(c.margin)}</td>
         </tr>`;
