@@ -192,7 +192,7 @@ function bootstrapAnalytics(state) {
   // Pinterest PageVisit tracking for article and product pages
   if (state.prefs.marketing && typeof pintrk === "function") {
     const isArticlePage = path.startsWith("/wissen/") && path !== "/wissen";
-    const isProductPage = ["/app", "/kalorien-zaehlen-app", "/abnehmen-app", "/kalorien-zaehlen", "/abnehmen", "/rechner", "/makros-berechnen"].includes(path);
+    const isProductPage = ["/app", "/kalorienzaehler-app", "/abnehmen-app", "/kalorien-zaehlen", "/abnehmen", "/rechner", "/makros-berechnen"].includes(path);
     
     if (isArticlePage || isProductPage) {
       // Generate unique event_id based on path and timestamp

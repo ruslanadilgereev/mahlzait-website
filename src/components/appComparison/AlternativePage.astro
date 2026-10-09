@@ -1,0 +1,66 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
+import AppAlternativePage from "@modules/appAlternative";
+import type { AlternativePageContent } from "@modules/appAlternative/types";
+
+interface Props {
+  content: AlternativePageContent;
+}
+
+const { content } = Astro.props;
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}${content.path}`;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: content.faq.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: content.h1,
+  description: content.seo.description,
+  datePublished: content.publishedAt,
+  dateModified: content.updatedAt,
+  inLanguage: "de-DE",
+  mainEntityOfPage: pageUrl,
+  author: {
+    "@type": "Person",
+    "@id": `${siteUrl}/#person-ruslan`,
+    name: "Ruslan Adilgereev",
+    url: `${siteUrl}/team`,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: siteUrl,
+    logo: { "@type": "ImageObject", url: `${siteUrl}/logo.png` },
+  },
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={content.seo}>
+  <StructuredData
+    config={defaultTemplateConfig}
+    type="page"
+    pageTitle={content.breadcrumb}
+    pageDescription={content.seo.description}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <AppAlternativePage
+    client:load
+    config={configWithoutLegal}
+    content={content}
+  />
+</Layout>

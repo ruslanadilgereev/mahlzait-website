@@ -187,8 +187,8 @@ function KalorienZaehlenPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4">
             <h3 className="text-lg font-bold mb-6 text-center">Weiterführende Tools</h3>
             <div className="flex flex-wrap justify-center gap-4">
-              <a href="/kalorien-zaehlen-app" className="btn btn-outline">
-                Kalorien zählen App
+              <a href="/kalorienzaehler-app/" className="btn btn-outline">
+                Kalorienzähler-Apps im Vergleich
               </a>
               <a href="/kalorienbedarf-berechnen" className="btn btn-outline">
                 Kalorienbedarf berechnen

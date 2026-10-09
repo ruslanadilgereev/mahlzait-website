@@ -1,6 +1,8 @@
 /**
- * Pre-build: Fetch real App Store rating via iTunes Lookup API
- *   -> src/data/app-ratings.json
+ * Pre-build: Fetch real App Store ratings via iTunes Lookup API
+ *   -> src/data/app-ratings.json         (Mahlzait, for the aggregateRating schema)
+ *   -> src/data/calorie-app-ratings.json (all apps in src/data/calorie-apps.json,
+ *                                         shown on the comparison pages)
  *
  * Runs before every build. iTunes API is public (no auth) and returns
  * `averageUserRating` + `userRatingCount` for a given app ID. The Play
@@ -17,6 +19,14 @@ const { join } = require("path");
 const https = require("https");
 
 const OUT_PATH = join(__dirname, "..", "src", "data", "app-ratings.json");
+const APPS_PATH = join(__dirname, "..", "src", "data", "calorie-apps.json");
+const COMPARISON_OUT_PATH = join(
+  __dirname,
+  "..",
+  "src",
+  "data",
+  "calorie-app-ratings.json"
+);
 const APP_ID = "6747400456";
 const COUNTRY = "de";
 const URL = `https://itunes.apple.com/lookup?id=${APP_ID}&country=${COUNTRY}`;
@@ -121,4 +131,65 @@ async function main() {
   }
 }
 
-main();
+/**
+ * Ratings for every app on the comparison pages, in one batch lookup.
+ * Apps missing from the response keep their last known rating, and a failed
+ * request keeps the whole file, so the pages always build.
+ */
+async function fetchComparisonRatings() {
+  try {
+    const ids = JSON.parse(readFileSync(APPS_PATH, "utf8")).apps.map(
+      (app) => app.appStoreId
+    );
+    const json = await fetchJson(
+      `https://itunes.apple.com/lookup?id=${ids.join(",")}&country=${COUNTRY}`
+    );
+    const previous = existsSync(COMPARISON_OUT_PATH)
+      ? JSON.parse(readFileSync(COMPARISON_OUT_PATH, "utf8")).apps || {}
+      : {};
+
+    const apps = {};
+    let fresh = 0;
+    for (const id of ids) {
+      const result = (json?.results || []).find(
+        (entry) => String(entry.trackId) === id
+      );
+      if (
+        result &&
+        typeof result.averageUserRating === "number" &&
+        typeof result.userRatingCount === "number"
+      ) {
+        apps[id] = {
+          trackName: result.trackName,
+          ratingValue: Number(result.averageUserRating.toFixed(2)),
+          ratingCount: result.userRatingCount,
+        };
+        fresh++;
+      } else if (previous[id]) {
+        apps[id] = previous[id];
+      }
+    }
+
+    writeFileSync(
+      COMPARISON_OUT_PATH,
+      JSON.stringify(
+        {
+          source: "iTunes Lookup API",
+          country: COUNTRY,
+          updatedAt: new Date().toISOString(),
+          apps,
+        },
+        null,
+        2
+      ) + "\n"
+    );
+    console.log(
+      `[app-ratings] Comparison: ${fresh}/${ids.length} apps refreshed`
+    );
+  } catch (err) {
+    console.error("[app-ratings] Comparison fetch failed:", err.message);
+    console.log("[app-ratings] Keeping existing calorie-app-ratings.json");
+  }
+}
+
+main().then(fetchComparisonRatings);

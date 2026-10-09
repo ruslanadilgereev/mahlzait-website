@@ -1,0 +1,102 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
+import KalorienzaehlerAppPage from "@modules/kalorienzaehlerApp";
+import {
+  kalorienzaehlerAppFaq,
+  kalorienzaehlerAppPublishedAt,
+  kalorienzaehlerAppSeo,
+} from "@modules/kalorienzaehlerApp/content";
+import {
+  appFactsAsOf,
+  appStoreUrl,
+  comparisonOrder,
+} from "../data/calorieApps";
+
+const seo = kalorienzaehlerAppSeo;
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}/kalorienzaehler-app/`;
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: kalorienzaehlerAppFaq.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: { "@type": "Answer", text: item.a },
+  })),
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: "Kalorienzähler-Apps im Vergleich: Welche passt zu dir?",
+  description: seo.description,
+  datePublished: kalorienzaehlerAppPublishedAt,
+  dateModified: appFactsAsOf,
+  inLanguage: "de-DE",
+  mainEntityOfPage: pageUrl,
+  author: { "@id": `${siteUrl}/#person-ruslan` },
+  publisher: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: siteUrl,
+    logo: { "@type": "ImageObject", url: `${siteUrl}/logo.png` },
+  },
+};
+
+const authorPersonSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": `${siteUrl}/#person-ruslan`,
+  name: "Ruslan Adilgereev",
+  url: `${siteUrl}/team`,
+  jobTitle: "Founder",
+  worksFor: { "@type": "Organization", name: "Mahlzait", url: siteUrl },
+  sameAs: ["https://www.linkedin.com/in/ruslanadilgereev"],
+};
+
+// Bewusst ohne Bewertungen: App-Store-Bewertungen anderer Apps dürfen laut
+// Google nicht als eigene aggregateRating ausgezeichnet werden.
+const itemListSchema = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  name: "Kalorienzähler-Apps im Vergleich",
+  itemListElement: comparisonOrder().map((app, index) => ({
+    "@type": "ListItem",
+    position: index + 1,
+    url: `${pageUrl}#${app.slug}`,
+    item: {
+      "@type": "SoftwareApplication",
+      name: app.name,
+      applicationCategory: "HealthApplication",
+      operatingSystem: "iOS, Android",
+      url: app.website,
+      sameAs: appStoreUrl(app),
+    },
+  })),
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData
+    config={defaultTemplateConfig}
+    type="page"
+    pageTitle="Kalorienzähler-App Vergleich"
+    pageDescription={seo.description}
+  />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(authorPersonSchema)}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script
+    type="application/ld+json"
+    set:html={JSON.stringify(itemListSchema)}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <KalorienzaehlerAppPage client:load config={configWithoutLegal} />
+</Layout>

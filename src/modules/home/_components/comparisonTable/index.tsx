@@ -1,101 +1,28 @@
 import { motion } from "framer-motion";
+import AppComparisonTable from "@components/appComparison/AppComparisonTable";
+import {
+  appFactsAsOf,
+  calorieApps,
+  comparisonOrder,
+  formatGermanMonth,
+} from "../../../../data/calorieApps";
 
-interface CompRow {
-  feature: string;
-  mahlzait: string;
-  mfp: string;
-  yazio: string;
-  lifesum: string;
-}
-
-const rows: CompRow[] = [
-  {
-    feature: "KI-Foto-Erkennung",
-    mahlzait: "✅ (Pro)",
-    mfp: "✅ (Premium)",
-    yazio: "✅ (Pro)",
-    lifesum: "✅ (Premium)",
-  },
-  {
-    feature: "Barcode-Scanner",
-    mahlzait: "✅ Kostenlos",
-    mfp: "✅ Kostenlos",
-    yazio: "✅ Kostenlos",
-    lifesum: "✅ Kostenlos",
-  },
-  {
-    feature: "Lebensmittel-DB",
-    mahlzait: "10 Mio+",
-    mfp: "14 Mio+",
-    yazio: "4 Mio+",
-    lifesum: "Nicht bekannt",
-  },
-  {
-    feature: "KI-Mahlzeit-Vorschläge",
-    mahlzait: "✅ (Pro)",
-    mfp: "❌",
-    yazio: "❌",
-    lifesum: "❌",
-  },
-  {
-    feature: "YouTube-Rezept-Import",
-    mahlzait: "✅",
-    mfp: "❌",
-    yazio: "❌",
-    lifesum: "❌",
-  },
-  {
-    feature: "Offline-Modus",
-    mahlzait: "Teilweise (ohne KI)",
-    mfp: "Teilweise",
-    yazio: "Teilweise",
-    lifesum: "❌",
-  },
-  {
-    feature: "Werbefrei (Gratis)",
-    mahlzait: "✅",
-    mfp: "❌",
-    yazio: "❌",
-    lifesum: "❌",
-  },
-  {
-    feature: "Apple Health / Google Fit",
-    mahlzait: "✅",
-    mfp: "✅",
-    yazio: "✅",
-    lifesum: "✅",
-  },
-  {
-    feature: "Sprache",
-    mahlzait: "Deutsch",
-    mfp: "Multi (EN-fokussiert)",
-    yazio: "Deutsch",
-    lifesum: "Multi",
-  },
-  {
-    feature: "Gratis-Version",
-    mahlzait: "Basis (ohne KI)",
-    mfp: "Eingeschränkt",
-    yazio: "Eingeschränkt",
-    lifesum: "Eingeschränkt",
-  },
-  {
-    feature: "Pro-Preis (Monat)",
-    mahlzait: "7,99 €",
-    mfp: "9,99 €",
-    yazio: "6,99 €",
-    lifesum: "7,99 €",
-  },
-  {
-    feature: "Pro-Preis (Jahr)",
-    mahlzait: "29,99 €",
-    mfp: "49,99 €",
-    yazio: "44,99 €",
-    lifesum: "44,99 €",
-  },
+// Auf der Startseite nur die bekanntesten Apps, der volle Vergleich liegt auf
+// /kalorienzaehler-app/.
+const HOMEPAGE_APPS = [
+  "mahlzait",
+  "yazio",
+  "myfitnesspal",
+  "fddb",
+  "lifesum",
+  "cal-ai",
 ];
 
 function ComparisonTable() {
+  const apps = comparisonOrder(
+    calorieApps.filter((app) => HOMEPAGE_APPS.includes(app.slug)),
+  );
+
   return (
     <section className="max-w-screen-lg mx-auto px-4 py-12">
       <motion.div
@@ -109,60 +36,22 @@ function ComparisonTable() {
             Kalorienzähler-Apps im Vergleich
           </h2>
           <p className="text-base-content/70 max-w-2xl mx-auto mb-4">
-            Mahlzait vs MyFitnessPal vs YAZIO vs Lifesum – Feature- und
-            Preisvergleich. Stand: März 2026.{" "}
-            <a href="/vergleich" className="link link-primary">
-              Ausführlicher Vergleich →
+            Mahlzait neben den bekanntesten Kalorienzählern: was gratis geht, ob
+            Werbung läuft und was das Abo laut deutschem App Store kostet.
+            Stand: {formatGermanMonth(appFactsAsOf)}.{" "}
+            <a href="/kalorienzaehler-app/" className="link link-primary">
+              Alle {calorieApps.length} Apps mit Stärken und Schwächen →
             </a>
           </p>
-          <p className="text-base-content/80 max-w-2xl mx-auto text-sm leading-relaxed">
-            Alle vier Apps bieten KI-Foto-Erkennung im Premium-Abo. Mahlzait
-            unterscheidet sich durch KI-Mahlzeit-Vorschläge,
-            YouTube-Rezept-Import und eine werbefreie Gratis-Version. Mit 10
-            Mio. Lebensmitteln und einem Jahrespreis von 29,99&nbsp;€ ist
-            Mahlzait die günstigste Option — MyFitnessPal kostet 49,99&nbsp;€,
-            YAZIO und Lifesum je 44,99&nbsp;€/Jahr.
-          </p>
         </div>
-        <div className="overflow-x-auto">
-          <table className="table table-zebra w-full text-sm">
-            <thead>
-              <tr className="text-base">
-                <th className="bg-base-200">Feature</th>
-                <th className="bg-primary/10 font-bold">Mahlzait</th>
-                <th className="bg-base-200">MyFitnessPal</th>
-                <th className="bg-base-200">YAZIO</th>
-                <th className="bg-base-200">Lifesum</th>
-              </tr>
-            </thead>
-            <tbody>
-              {rows.map((row, i) => (
-                <tr key={i}>
-                  <td className="font-medium">{row.feature}</td>
-                  <td className="bg-primary/5 font-medium">{row.mahlzait}</td>
-                  <td>{row.mfp}</td>
-                  <td>{row.yazio}</td>
-                  <td>{row.lifesum}</td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+        <AppComparisonTable
+          apps={apps}
+          caption="Mahlzait und andere Kalorienzähler-Apps im Vergleich"
+        />
         <p className="text-xs text-base-content/50 mt-4 text-center">
-          Preise und Features können abweichen. Daten basieren auf öffentlich
-          verfügbaren Informationen der jeweiligen App-Store-Einträge und
-          Websites (Stand: März 2026). Datenquelle Lebensmittel-DB:{" "}
-          <a
-            href="https://world.openfoodfacts.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="link"
-          >
-            Open Food Facts
-          </a>{" "}
-          – Offene Lebensmitteldatenbank mit über 3 Millionen Produkten
-          weltweit. Mahlzait nutzt diese Datenbank in Kombination mit eigenen
-          Ergänzungen.
+          Preise laut deutschem App Store, Bewertungen automatisch aus dem App
+          Store. Preise und Funktionen können sich ändern, verbindlich ist die
+          Angabe in der jeweiligen App.
         </p>
       </motion.div>
     </section>

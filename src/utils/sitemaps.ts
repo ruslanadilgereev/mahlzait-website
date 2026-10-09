@@ -1,6 +1,7 @@
 import { articlesMeta } from "@content/wissen";
 import { getPlanPages } from "./planPages";
 import foodLastmodJson from "../data/food-lastmod.json";
+import { appFactsAsOf, calorieApps } from "../data/calorieApps";
 
 interface FoodMeta {
   slug?: string;
@@ -53,7 +54,24 @@ const coreEntries: SitemapEntry[] = [
   { url: `${siteUrl}/team/`, changefreq: "monthly", priority: 0.5 },
   { url: `${siteUrl}/ueber-uns/`, changefreq: "monthly", priority: 0.5 },
   { url: `${siteUrl}/redaktionelle-standards/`, changefreq: "yearly", priority: 0.4 },
-  { url: `${siteUrl}/vergleich/`, changefreq: "monthly", priority: 0.6 },
+];
+
+// App-Vergleich und Alternativ-Seiten: lastmod = Datum der letzten Faktenprüfung.
+const comparisonEntries: SitemapEntry[] = [
+  {
+    url: `${siteUrl}/kalorienzaehler-app/`,
+    lastmod: appFactsAsOf,
+    changefreq: "weekly",
+    priority: 0.9,
+  },
+  ...calorieApps
+    .filter((app) => app.alternativePath)
+    .map((app) => ({
+      url: `${siteUrl}${app.alternativePath}`,
+      lastmod: appFactsAsOf,
+      changefreq: "monthly" as const,
+      priority: 0.8,
+    })),
 ];
 
 const calculatorSlugs = [
@@ -68,7 +86,6 @@ const calculatorSlugs = [
   "idealgewicht-rechner",
   "intervallfasten-rechner",
   "kalorien-zaehlen",
-  "kalorien-zaehlen-app",
   "kalorienbedarf-berechnen",
   "kaloriendefizit-berechnen",
   "kalorienverbrauch-rechner",
@@ -83,9 +100,7 @@ const calculatorSlugs = [
   "schritte-kalorien-rechner",
   "taille-hueft-verhaeltnis-rechner",
   "wasserbedarf-rechner",
-  "yazio-alternative",
   "fastfood-kalorien",
-  "weight-watchers-alternative",
   "essensplan-erstellen",
   "trainingsplan-erstellen",
 ];
@@ -138,6 +153,7 @@ const legalEntries: SitemapEntry[] = [
 
 export const allEntries: SitemapEntry[] = [
   ...coreEntries,
+  ...comparisonEntries,
   ...calculatorAndGuideEntries,
   ...planEntries,
   ...knowledgeEntries,

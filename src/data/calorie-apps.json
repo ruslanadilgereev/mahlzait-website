@@ -1,0 +1,393 @@
+{
+  "asOf": "2026-10-09",
+  "apps": [
+    {
+      "slug": "mahlzait",
+      "name": "Mahlzait",
+      "provider": "Mahlzait (Ruslan Adilgereev)",
+      "seat": "Berlin, Deutschland",
+      "euSeat": true,
+      "appStoreId": "6747400456",
+      "website": "https://www.mahlzait.de/",
+      "germanUi": true,
+      "freeTier": "ja",
+      "freeSummary": "Suche, Barcode und manuelle Eingabe ohne Limit und ohne Werbung. Foto- und Text-KI je fünfmal zum Testen, danach mit Pro.",
+      "adsInFree": false,
+      "barcode": "kostenlos",
+      "photo": "abo",
+      "monthly": "7,99 €",
+      "yearly": "29,99 €",
+      "priceNote": "Laut App Store 7,99 € im Monat oder 29,99 € im Jahr, 7 Tage kostenlos testen.",
+      "strengths": [
+        "Mahlzeiten per Foto, Text, Sprache oder Barcode erfassen",
+        "Recherchiert die KI einen Wert im Web, steht die Quelle am Eintrag",
+        "Gratis-Version ohne Werbung, Barcode-Scanner inklusive",
+        "Jahresabo für 29,99 €"
+      ],
+      "weaknesses": [
+        "Junge App mit noch kleiner Community",
+        "Foto- und Text-KI nach fünf Testnutzungen nur mit Pro",
+        "Keine große Rezeptwelt und keine fertigen Ernährungspläne wie bei Yazio oder Lifesum"
+      ],
+      "bestFor": "Du beschreibst oder fotografierst Mahlzeiten lieber, als sie zu suchen, und willst nachprüfen können, woher ein Wert kommt.",
+      "alternativePath": null,
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id6747400456"
+        },
+        {
+          "label": "Preise auf mahlzait.de",
+          "url": "https://www.mahlzait.de/#pricing"
+        }
+      ]
+    },
+    {
+      "slug": "yazio",
+      "name": "Yazio",
+      "provider": "YAZIO GmbH",
+      "seat": "Erfurt, Deutschland",
+      "euSeat": true,
+      "appStoreId": "946099227",
+      "website": "https://www.yazio.com/de",
+      "germanUi": true,
+      "freeTier": "ja",
+      "freeSummary": "Kalorienzähler und Ernährungstagebuch kostenlos, mit Werbung. Pro entfernt die Werbung und schaltet unter anderem die Auswertung von Vitaminen und Mineralstoffen frei.",
+      "adsInFree": true,
+      "barcode": "ja",
+      "photo": "ja",
+      "monthly": null,
+      "yearly": "23,90–83,90 €",
+      "priceNote": "Der App Store listet für 12 Monate Pro Preise von 23,90 bis 83,90 €, dazu Angebote für 3 und 6 Monate. Welcher Preis gilt, hängt vom aktuellen Angebot ab.",
+      "strengths": [
+        "Über 3.000 Rezepte und mehr als 20 Fastenpläne in einer App",
+        "Foto-Tracking, Barcode-Scanner und große Lebensmitteldatenbank",
+        "Sehr große Community, Firmensitz in Erfurt"
+      ],
+      "weaknesses": [
+        "Gratis-Version mit Werbung",
+        "Vitamine und Mineralstoffe nur mit Pro",
+        "Pro-Preise schwanken je nach Angebot stark"
+      ],
+      "bestFor": "Du willst Kalorienzählen, Intervallfasten und Rezepte in einer etablierten App aus Deutschland.",
+      "alternativePath": "/yazio-alternative/",
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id946099227"
+        },
+        {
+          "label": "Kontakt und Firmensitz auf yazio.com",
+          "url": "https://www.yazio.com/en/contact"
+        }
+      ]
+    },
+    {
+      "slug": "myfitnesspal",
+      "name": "MyFitnessPal",
+      "provider": "MyFitnessPal, Inc.",
+      "seat": "Austin, USA",
+      "euSeat": false,
+      "appStoreId": "341232718",
+      "website": "https://www.myfitnesspal.com/de",
+      "germanUi": true,
+      "freeTier": "ja",
+      "freeSummary": "Kalorien und Makros kostenlos tracken, mit Werbung. Barcodescan, Mahlzeiten-Scan mit der Kamera und Intervallfasten gehören zu Premium.",
+      "adsInFree": true,
+      "barcode": "abo",
+      "photo": "abo",
+      "monthly": "9,99–21,99 €",
+      "yearly": "49,99–87,99 €",
+      "priceNote": "Der App Store listet Premium für 9,99 bis 21,99 € im Monat und 49,99 bis 87,99 € im Jahr.",
+      "strengths": [
+        "Über 20,5 Millionen Lebensmittel inklusive Restaurantgerichten",
+        "Seit 2009 im App Store, eine der bekanntesten Tracking-Apps",
+        "Eigene Rezepte und Mahlzeiten speichern und wiederverwenden"
+      ],
+      "weaknesses": [
+        "Barcode-Scanner und Foto-Scan nur mit Premium",
+        "Gratis-Version mit Werbung",
+        "Anbieter sitzt in den USA"
+      ],
+      "bestFor": "Du isst oft auswärts oder kaufst internationale Produkte und brauchst vor allem eine riesige Datenbank.",
+      "alternativePath": "/myfitnesspal-alternative/",
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id341232718"
+        },
+        {
+          "label": "Premium-Funktionen auf myfitnesspal.com",
+          "url": "https://www.myfitnesspal.com/de/premium"
+        },
+        {
+          "label": "Nutzungsbedingungen (Firmensitz)",
+          "url": "https://www.myfitnesspal.com/terms-of-service"
+        }
+      ]
+    },
+    {
+      "slug": "fddb",
+      "name": "FDDB",
+      "provider": "Food Database GmbH",
+      "seat": "Deutschland",
+      "euSeat": true,
+      "appStoreId": "1105332761",
+      "website": "https://fddb.info/",
+      "germanUi": true,
+      "freeTier": "ja",
+      "freeSummary": "Kalorienzähler und Ernährungstagebuch laut Anbieter kostenlos und ohne Werbung. Welche Funktionen Premium zusätzlich freischaltet, nennt die App-Store-Beschreibung nicht.",
+      "adsInFree": false,
+      "barcode": "ja",
+      "photo": "ja",
+      "monthly": "ab 3,99 €",
+      "yearly": "19,99–39,99 €",
+      "priceNote": "Der App Store listet Premium Bronze für 1 Monat zu 3,99 €, Silber für 6 Monate zu 11,99 € und für 12 Monate 19,99 bis 39,99 €. Auf fddb.info kosten 12 Monate regulär 39,99 €.",
+      "strengths": [
+        "Kalorienzähler und Tagebuch kostenlos und ohne Werbung",
+        "Über 20 Jahre gewachsene deutsche Lebensmitteldatenbank",
+        "Nährstoffauswertung nach DGE-Referenzwerten, dazu Broteinheiten und FPE"
+      ],
+      "weaknesses": [
+        "Was Premium genau freischaltet, steht nicht in der App-Store-Beschreibung",
+        "Kleinere Rezeptauswahl als Yazio (über 1.000 statt über 3.000)"
+      ],
+      "bestFor": "Du willst kostenlos und ohne Werbung tracken und legst Wert auf eine deutsche Datenbank mit Detailauswertung.",
+      "alternativePath": "/fddb-alternative/",
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id1105332761"
+        },
+        {
+          "label": "Premium-Preise auf fddb.info",
+          "url": "https://fddb.info/premium?lang=de"
+        }
+      ]
+    },
+    {
+      "slug": "lifesum",
+      "name": "Lifesum",
+      "provider": "Lifesum AB",
+      "seat": "Schweden",
+      "euSeat": true,
+      "appStoreId": "286906691",
+      "website": "https://lifesum.com/",
+      "germanUi": true,
+      "freeTier": "eingeschränkt",
+      "freeSummary": "Laut Anbieter kostenlos mit eingeschränkten Funktionen. Das volle Angebot gibt es mit Premium für 1, 3 oder 12 Monate.",
+      "adsInFree": null,
+      "barcode": "ja",
+      "photo": "ja",
+      "monthly": "9,99–14,99 €",
+      "yearly": "44,99–99,99 €",
+      "priceNote": "Der App Store listet Premium für 9,99 bis 14,99 € im Monat, 21,99 bis 39,99 € für 3 Monate und 44,99 bis 99,99 € im Jahr.",
+      "strengths": [
+        "Erfassen per Foto, Sprachnachricht, Text oder Barcode",
+        "Ernährungspläne wie Keto, Paleo oder High Protein mit Einkaufsliste",
+        "Synchronisiert in beide Richtungen mit Apple Health"
+      ],
+      "weaknesses": [
+        "Gratis-Version nur mit eingeschränkten Funktionen",
+        "Premium im Jahr bis 99,99 €"
+      ],
+      "bestFor": "Du willst neben dem Tracking fertige Ernährungspläne mit Einkaufsliste.",
+      "alternativePath": "/lifesum-alternative/",
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id286906691"
+        },
+        { "label": "lifesum.com", "url": "https://lifesum.com/" }
+      ]
+    },
+    {
+      "slug": "cal-ai",
+      "name": "Cal AI",
+      "provider": "Cal AI, Inc. (im App Store: Viral Development LLC)",
+      "seat": "USA",
+      "euSeat": false,
+      "appStoreId": "6480417616",
+      "website": "https://www.calai.app/",
+      "germanUi": true,
+      "freeTier": "nein",
+      "freeSummary": "Laut App-Store-Beschreibung gibt es die Ergebnisse der Foto-Analyse nur mit Abo. Eine dauerhaft nutzbare Gratis-Version gibt es damit nicht.",
+      "adsInFree": null,
+      "barcode": "ja",
+      "photo": "abo",
+      "monthly": null,
+      "yearly": null,
+      "priceNote": "Der App Store listet das Abo „Unlimited“ zu Preisen von 2,99 bis 44,99 €, ohne die Laufzeiten zu nennen.",
+      "strengths": [
+        "Tracking per Foto, Barcode oder kurzer Beschreibung",
+        "Einfacher Ablauf: ein paar Fragen beantworten, Foto machen, Nährwerte sehen"
+      ],
+      "weaknesses": [
+        "Ergebnisse der Foto-Analyse nur mit Abo",
+        "App-Store-Beschreibung nur auf Englisch",
+        "Anbieter sitzt in den USA"
+      ],
+      "bestFor": "Du willst ausschließlich per Foto tracken und zahlst dafür von Anfang an.",
+      "alternativePath": "/cal-ai-alternative/",
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id6480417616"
+        },
+        {
+          "label": "Nutzungsbedingungen (Firmensitz)",
+          "url": "https://www.calai.app/tos"
+        }
+      ]
+    },
+    {
+      "slug": "foodvisor",
+      "name": "Foodvisor",
+      "provider": "Foodvisor",
+      "seat": "Paris, Frankreich",
+      "euSeat": true,
+      "appStoreId": "1064020872",
+      "website": "https://www.foodvisor.io/",
+      "germanUi": true,
+      "freeTier": "ja",
+      "freeSummary": "Kostenlos nutzbar, mit Werbung. Premium ergänzt die vollständige Analyse mit Vitaminen und Mineralstoffen, ein persönliches Programm und entfernt die Werbung.",
+      "adsInFree": true,
+      "barcode": "ja",
+      "photo": "ja",
+      "monthly": null,
+      "yearly": null,
+      "priceNote": "Der App Store listet Premium-Angebote von 11,99 bis 87,99 €, je nach Laufzeit und Aktion.",
+      "strengths": [
+        "Erfassen per Foto, Sprache, Text oder Barcode",
+        "Persönliches Ernährungsprogramm",
+        "Vitamine und Mineralstoffe in der Premium-Analyse"
+      ],
+      "weaknesses": [
+        "Gratis-Version mit Werbung",
+        "Viele unterschiedliche Abo-Preise im App Store"
+      ],
+      "bestFor": "Du willst Foto-Tracking mit einem geführten Programm verbinden.",
+      "alternativePath": null,
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id1064020872"
+        }
+      ]
+    },
+    {
+      "slug": "cronometer",
+      "name": "Cronometer",
+      "provider": "Cronometer Software Inc.",
+      "seat": "Kanada",
+      "euSeat": false,
+      "appStoreId": "1145935738",
+      "website": "https://cronometer.com/",
+      "germanUi": false,
+      "freeTier": "ja",
+      "freeSummary": "Tracking mit Barcode-Scanner kostenlos, mit Werbung. Foto- und Spracheingabe, Fasten-Tracker und Werbefreiheit gibt es mit Gold.",
+      "adsInFree": true,
+      "barcode": "kostenlos",
+      "photo": "abo",
+      "monthly": "8,99–11,99 €",
+      "yearly": "69,99 €",
+      "priceNote": "Der App Store listet Gold für 8,99 bis 11,99 € im Monat und 69,99 € im Jahr.",
+      "strengths": [
+        "Über 95 Vitamine und Mineralstoffe",
+        "Kuratierte Datenbank mit über 1,1 Millionen verifizierten Lebensmitteln",
+        "Barcode-Scanner in der Gratis-Version"
+      ],
+      "weaknesses": [
+        "App-Oberfläche nicht auf Deutsch",
+        "Gratis-Version mit Werbung",
+        "Foto- und Spracheingabe nur mit Gold"
+      ],
+      "bestFor": "Du willst Mikronährstoffe genau verfolgen und kommst mit einer englischen App klar.",
+      "alternativePath": null,
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id1145935738"
+        },
+        {
+          "label": "Nutzungsbedingungen (Firmensitz)",
+          "url": "https://cronometer.com/terms/"
+        }
+      ]
+    },
+    {
+      "slug": "macrofactor",
+      "name": "MacroFactor",
+      "provider": "Stronger By Science Technologies LLC",
+      "seat": "USA",
+      "euSeat": false,
+      "appStoreId": "1553503471",
+      "website": "https://macrofactorapp.com/",
+      "germanUi": false,
+      "freeTier": "nein",
+      "freeSummary": "Laut Anbieter gibt es eine 7-tägige Testphase, aber keinen kostenlosen Tarif.",
+      "adsInFree": null,
+      "barcode": "abo",
+      "photo": "unbekannt",
+      "monthly": "11,99–12,49 €",
+      "yearly": "60,99–73,99 €",
+      "priceNote": "Der App Store listet 11,99 bis 12,49 € im Monat, 48,99 € für 6 Monate und 60,99 bis 73,99 € im Jahr.",
+      "strengths": [
+        "Passt Kalorien- und Makroziele wöchentlich an deinen tatsächlichen Verbrauch an",
+        "Verifizierte Lebensmitteldatenbank, keine Werbung"
+      ],
+      "weaknesses": [
+        "Keine Gratis-Version, nur 7 Tage Test",
+        "Nur auf Englisch"
+      ],
+      "bestFor": "Du trainierst datengetrieben und willst ein Kalorienziel, das sich selbst nachjustiert.",
+      "alternativePath": null,
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id1553503471"
+        },
+        {
+          "label": "Nutzungsbedingungen (Firmensitz)",
+          "url": "https://macrofactorapp.com/terms/"
+        }
+      ]
+    },
+    {
+      "slug": "weightwatchers",
+      "name": "WeightWatchers",
+      "provider": "WW International, Inc.",
+      "seat": "USA",
+      "euSeat": false,
+      "appStoreId": "331308914",
+      "website": "https://www.weightwatchers.com/de",
+      "germanUi": true,
+      "freeTier": "nein",
+      "freeSummary": "Die App ist Teil der WW-Mitgliedschaft und ohne Abo nicht nutzbar.",
+      "adsInFree": null,
+      "barcode": "abo",
+      "photo": "abo",
+      "monthly": "15,49–26,99 €",
+      "yearly": "199,99 €",
+      "priceNote": "Der App Store listet Monatspläne von 15,49 bis 26,99 € und ein 12-Monats-Angebot für 199,99 €.",
+      "strengths": [
+        "Points-Programm statt Kalorienzählen",
+        "Coaching, Live-Sessions und Community",
+        "Begleitprogramm für Abnehmmedikamente (GLP-1)"
+      ],
+      "weaknesses": [
+        "Nur mit Mitgliedschaft nutzbar",
+        "Deutlich teurer als reine Tracking-Apps",
+        "Zählt Points, nicht Kalorien"
+      ],
+      "bestFor": "Du willst Begleitung und Gruppe, statt selbst Kalorien zu zählen.",
+      "alternativePath": "/weight-watchers-alternative/",
+      "sources": [
+        {
+          "label": "App Store (DE)",
+          "url": "https://apps.apple.com/de/app/id331308914"
+        }
+      ]
+    }
+  ]
+}

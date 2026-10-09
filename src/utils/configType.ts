@@ -57,6 +57,10 @@ export type TemplateConfig = {
             title: string;
             href: string;
         }[] | undefined;
+        comparisonLinks?: {
+            title: string;
+            href: string;
+        }[] | undefined;
     };
     topNavbar: {
         cta?: string | undefined;
