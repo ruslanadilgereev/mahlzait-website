@@ -36,14 +36,14 @@ export const priorityHubLinks: SeoHubLink[] = [
     description: "Der zentrale Guide für Defizit, Protein, Alltag und Fortschritt.",
   },
   {
-    title: "Kalorien zählen App",
-    href: "/kalorien-zaehlen-app/",
-    description: "Landingpage für Nutzer mit klarer App- und Tracking-Intention.",
+    title: "Kalorienzähler-Apps im Vergleich",
+    href: "/kalorienzaehler-app/",
+    description: "Yazio, MyFitnessPal, FDDB und weitere Apps mit Preisen, Gratis-Funktionen und Bewertungen.",
   },
   {
     title: "Abnehmen App",
     href: "/abnehmen-app/",
-    description: "Vergleichsnahe Einstiegsseite für App-Suchanfragen mit Kaufabsicht.",
+    description: "Wie eine App beim Abnehmen hilft: Defizit planen, schnell loggen, Trend statt Tageswert.",
   },
 ];
 
@@ -52,7 +52,7 @@ export const calculatorSupportLinks = priorityHubLinks.filter((link) =>
 );
 
 export const guideSupportLinks = priorityHubLinks.filter((link) =>
-  ["/kalorien-zaehlen/", "/abnehmen/", "/kalorien-zaehlen-app/", "/abnehmen-app/"].includes(link.href)
+  ["/kalorien-zaehlen/", "/abnehmen/", "/kalorienzaehler-app/", "/abnehmen-app/"].includes(link.href)
 );
 
 export const foodSupportLinksByCategory: Record<string, SeoHubLink[]> = {

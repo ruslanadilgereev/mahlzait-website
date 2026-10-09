@@ -68,12 +68,24 @@ const templateConfig: TemplateConfig = {
       { href: "/team", title: "Team" },
       { href: "/ueber-uns", title: "Über uns" },
       { href: "/redaktionelle-standards", title: "Redaktionelle Standards" },
-      { href: "/vergleich", title: "App-Vergleich" },
       { href: "/wissen", title: "Wissen" },
       { href: "/kalorien", title: "Kalorientabelle" },
       { href: "/kalorienarme-lebensmittel", title: "Kalorienarme Lebensmittel" },
       { href: "/eiweissreiche-lebensmittel", title: "Eiweißreiche Lebensmittel" },
       { href: "/low-carb-lebensmittel", title: "Low-Carb-Lebensmittel" },
+    ],
+    // App-Vergleich und Alternativ-Seiten (Daten: src/data/calorie-apps.json)
+    comparisonLinks: [
+      { href: "/kalorienzaehler-app/", title: "Kalorienzähler-Apps im Vergleich" },
+      { href: "/yazio-alternative/", title: "Yazio Alternative" },
+      { href: "/myfitnesspal-alternative/", title: "MyFitnessPal Alternative" },
+      { href: "/fddb-alternative/", title: "FDDB Alternative" },
+      { href: "/lifesum-alternative/", title: "Lifesum Alternative" },
+      { href: "/cal-ai-alternative/", title: "Cal AI Alternative" },
+      {
+        href: "/weight-watchers-alternative/",
+        title: "WeightWatchers Alternative",
+      },
     ],
   },
   topNavbar: {

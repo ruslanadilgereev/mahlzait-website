@@ -105,6 +105,21 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
     }));
   const supportLinks = foodSupportLinksByCategory[food.category] || defaultFoodSupportLinks;
 
+  // Jede Food-Seite verlinkt den App-Vergleich und, reihum nach Slug, eine der
+  // Alternativ-Seiten, damit sich die Links gleichmäßig verteilen.
+  const comparisonHub = "/kalorienzaehler-app/";
+  const alternativeGuides = (config.footer.comparisonLinks ?? []).filter(
+    (link) => link.href !== comparisonHub,
+  );
+  const slugHash = [...food.slug].reduce(
+    (hash, char) => (hash * 31 + char.charCodeAt(0)) >>> 0,
+    0,
+  );
+  const alternativeGuide =
+    alternativeGuides.length > 0
+      ? alternativeGuides[slugHash % alternativeGuides.length]
+      : null;
+
   const burnComparison = [
     { activity: "Joggen", minutes: Math.round(currentCalories / 10), emoji: "🏃" },
     { activity: "Radfahren", minutes: Math.round(currentCalories / 7), emoji: "🚴" },
@@ -535,6 +550,20 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   🤖 Google Play
                 </a>
               </div>
+              <p className="mt-5 text-sm opacity-90">
+                Du suchst noch die passende App?{" "}
+                <a href={comparisonHub} className="underline font-semibold">
+                  Kalorienzähler-Apps im Vergleich
+                </a>
+                {alternativeGuide && (
+                  <>
+                    {" · "}
+                    <a href={alternativeGuide.href} className="underline">
+                      {alternativeGuide.title}
+                    </a>
+                  </>
+                )}
+              </p>
             </div>
           </div>
           {/* Source Footer für Citability (OFF + USDA + Live-Web) */}

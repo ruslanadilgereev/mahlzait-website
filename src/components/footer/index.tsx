@@ -9,7 +9,14 @@ import { motion } from "framer-motion";
 
 function Footer() {
   const {
-    footer: { links, legalLinks, socials, calculatorLinks, appLinks },
+    footer: {
+      links,
+      legalLinks,
+      socials,
+      calculatorLinks,
+      appLinks,
+      comparisonLinks,
+    },
   } = useContext(ConfigContext)!;
 
   return (
@@ -40,7 +47,7 @@ function Footer() {
         </div>
 
         {/* Links Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-4 mb-10">
+        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-10">
           {/* Navigation */}
           <nav className="flex flex-col gap-2">
             <span className="text-xs font-semibold uppercase tracking-wider opacity-70 mb-1">Navigation</span>
@@ -84,6 +91,24 @@ function Footer() {
                   key={index}
                   variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
                   transition={{ delay: index * 0.05 + 0.3 }}
+                  className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
+                  href={href}
+                >
+                  {title}
+                </motion.a>
+              ))}
+            </nav>
+          )}
+
+          {/* Kalorienzähler-Apps im Vergleich */}
+          {comparisonLinks && comparisonLinks.length > 0 && (
+            <nav className="flex flex-col gap-2">
+              <span className="text-xs font-semibold uppercase tracking-wider opacity-70 mb-1">Kalorienzähler-Apps</span>
+              {comparisonLinks.map(({ title, href }, index) => (
+                <motion.a
+                  key={index}
+                  variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                  transition={{ delay: index * 0.05 + 0.35 }}
                   className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                   href={href}
                 >

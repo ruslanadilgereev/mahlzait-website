@@ -93,6 +93,26 @@
       "permanent": true
     },
     {
+      "source": "/vergleich",
+      "destination": "/kalorienzaehler-app/",
+      "permanent": true
+    },
+    {
+      "source": "/vergleich/",
+      "destination": "/kalorienzaehler-app/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien-zaehlen-app",
+      "destination": "/kalorienzaehler-app/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien-zaehlen-app/",
+      "destination": "/kalorienzaehler-app/",
+      "permanent": true
+    },
+    {
       "source": "/kalorientabelle",
       "destination": "/kalorien/",
       "permanent": true

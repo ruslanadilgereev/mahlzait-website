@@ -828,7 +828,7 @@ function GrundumsatzRechnerPage({ config }: Props) {
               Der durchschnittliche Grundumsatz in Deutschland liegt bei Männern bei ca. <strong>1.700–1.800 kcal/Tag</strong> und bei Frauen bei ca. <strong>1.300–1.400 kcal/Tag</strong>. Der Gesamtenergieumsatz (bei moderater Aktivität) beträgt durchschnittlich 2.200–2.500 kcal für Männer und 1.800–2.000 kcal für Frauen. Jeder Deutsche, der dauerhaft mehr als seinen TDEE isst, nimmt zu – im Durchschnitt ca. 0,5 kg pro Jahr.
             </p>
             <p>
-              Das Bundesministerium für Ernährung empfiehlt, den individuellen Kalorienbedarf regelmässig zu berechnen und die Ernährung daran anzupassen. Tools wie unser Grundumsatz-Rechner und die <a href="/kalorien-zaehlen-app" className="link link-primary">Mahlzait Kalorien-App</a> machen das einfach und zugänglich für jeden. Wer seinen Grundumsatz kennt, hat die Basis für eine gesunde, bedarfsgerechte Ernährung – egal ob zum Abnehmen, Halten oder Aufbauen.
+              Das Bundesministerium für Ernährung empfiehlt, den individuellen Kalorienbedarf regelmässig zu berechnen und die Ernährung daran anzupassen. Tools wie unser Grundumsatz-Rechner und die <a href="/" className="link link-primary">Mahlzait Kalorien-App</a> machen das einfach und zugänglich für jeden. Wer seinen Grundumsatz kennt, hat die Basis für eine gesunde, bedarfsgerechte Ernährung – egal ob zum Abnehmen, Halten oder Aufbauen.
             </p>
           </div>
         </section>
