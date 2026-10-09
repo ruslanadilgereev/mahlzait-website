@@ -32,13 +32,8 @@ export function generateProductSchemas(
       priceValidUntil: "2026-12-31",
       url: `${url}#pricing`,
     },
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: "5.0",
-      reviewCount: "100",
-      bestRating: "5",
-      worstRating: "1",
-    },
+    // Keine aggregateRating: Die echte App-Store-Bewertung steht im
+    // MobileApplication-Schema (mobileApp.ts), hier gäbe es nur erfundene Werte.
     isRelatedTo: {
       "@type": "MobileApplication",
       "@id": `${url}#mobileapp`,
