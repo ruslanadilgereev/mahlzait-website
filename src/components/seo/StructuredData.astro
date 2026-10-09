@@ -5,7 +5,6 @@ import { generateOrganizationSchema } from "./schemas/organization";
 import { generateMobileAppSchema } from "./schemas/mobileApp";
 import { generateSoftwareAppSchema } from "./schemas/softwareApp";
 import { generateFAQSchema } from "./schemas/faq";
-import { generateReviewSchema } from "./schemas/review";
 import { generateHowToSchema } from "./schemas/howto";
 import { generateBreadcrumbSchema } from "./schemas/breadcrumb";
 import { generateProductSchemas } from "./schemas/product";
@@ -54,7 +53,6 @@ const softwareAppSchema = isHomepage
 
 // Homepage-spezifische Schemas
 let faqSchema = null;
-let reviewSchemas = null;
 let howToSchema = null;
 let breadcrumbSchema = null;
 let productSchemas = null;
@@ -72,16 +70,9 @@ if (isHomepage && config.home) {
     );
   }
 
-  // Review Schemas
-  if (config.home.testimonials) {
-    reviewSchemas = generateReviewSchema(
-      siteUrl,
-      config.home.testimonials.cards.map((card) => ({
-        name: card.name,
-        comment: card.comment,
-      }))
-    );
-  }
+  // Kein Review-Schema für die Testimonials: Es sind App-Store-Rezensionen,
+  // und Google erlaubt keine Bewertungen, die von anderen Websites übernommen
+  // wurden. Die echte App-Store-Bewertung steht im MobileApplication-Schema.
 
   // HowTo Schema - REMOVED (deprecated by Google since Sept 2023)
   // if (config.home.howItWorks) {
@@ -150,7 +141,6 @@ if (softwareAppSchema) allSchemas.push(softwareAppSchema);
 if (breadcrumbSchema) allSchemas.push(breadcrumbSchema);
 if (faqSchema) allSchemas.push(faqSchema);
 if (howToSchema) allSchemas.push(howToSchema);
-if (reviewSchemas) allSchemas.push(...reviewSchemas);
 if (productSchemas) allSchemas.push(...productSchemas);
 if (webPageSchema) allSchemas.push(webPageSchema);
 ---
