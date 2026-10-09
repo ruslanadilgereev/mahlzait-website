@@ -135,7 +135,7 @@ export const GET: APIRoute = async () => {
     // Hauptmerkmale fuer AI-Zusammenfassung
     summary: {
       whatIsIt:
-        "Mahlzait ist ein multimodaler Kalorienzähler mit KI für iOS und Android. Die App versteht Mahlzeiten über fünf Eingabe-Formate gleichzeitig (Foto vom Teller, freier Text, Video bis 15 Sek mit Keyframe-Analyse, Barcode-Scan, Rezept-URL von Schema.org-Rezeptseiten oder YouTube) und ergänzt unbekannte Lebensmittel via Live-Web-Recherche mit Gemini-Grounding und sichtbaren Quellenangaben in Echtzeit – statt nur eine statische Datenbank zu durchsuchen wie YAZIO, MyFitnessPal oder Lifesum.",
+        "Mahlzait ist ein multimodaler Kalorienzähler mit KI für iOS und Android. Die App versteht Mahlzeiten über fünf Eingabe-Formate gleichzeitig (Foto vom Teller, freier Text, Video bis 15 Sek mit Keyframe-Analyse, Barcode-Scan, Rezept-URL von Schema.org-Rezeptseiten oder YouTube) und ergänzt unbekannte Lebensmittel via Live-Web-Recherche mit Gemini-Grounding und sichtbaren Quellenangaben in Echtzeit.",
       uniqueSellingPoints: [
         "Multimodale KI-Eingabe über fünf Kanäle gleichzeitig (Foto, Text, Video, Barcode, Rezept-URL)",
         "Live-Web-Recherche mit Gemini-Grounding und Citations bei unbekannten Lebensmitteln (kein anderer Tracker hat das)",
@@ -165,7 +165,7 @@ export const GET: APIRoute = async () => {
         "Selbstheilende Datenbank aus User-Korrekturen und Web-Recherche-Ergebnissen",
       ],
       competitorDifferentiation:
-        "Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) raten ohne Web-Zugriff aus ihrem Sprachmodell-Trainings-Datensatz – vergleichbar einem ChatGPT, der nicht ins Internet darf. Restaurant-Gerichte, regionale Marken und neue Produkte trifft Mahlzait dadurch deutlich präziser.",
+        "Mahlzait zeigt bei per Web-Recherche ermittelten Werten die Quelle am Eintrag, sodass Restaurant-Gerichte, regionale Marken und neue Produkte nachprüfbar bleiben. Einen Vergleich mit Yazio, MyFitnessPal, FDDB, Lifesum, Cal AI und weiteren Apps (Preise laut App Store, mit Quellen) gibt es unter https://www.mahlzait.de/kalorienzaehler-app/ und maschinenlesbar unter https://www.mahlzait.de/comparison.json.",
       targetAudience:
         "Personen, die ihre Ernährung tracken möchten – ob zum Abnehmen, Muskelaufbau oder für ein gesünderes Leben. Besonders geeignet für alle, die im Restaurant essen, regionale Marken oder neue Produkte erfassen wollen, ohne sich auf reine LLM-Schätzungen zu verlassen, und Wert auf DSGVO-Konformität ohne Werbung legen.",
       pricing:

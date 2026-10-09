@@ -348,12 +348,12 @@ const templateConfig: TemplateConfig = {
         {
           question: "Greift Mahlzait beim Tracken auf das Internet zu?",
           answer:
-            "Ja, Mahlzait kann während der Erkennung im Web recherchieren — das ist einer der Hauptunterschiede zu anderen KI-Trackern. Wenn ein Produkt unklar ist oder ein Restaurant-Gericht keine eindeutigen Standard-Nährwerte hat, sucht die KI live nach offiziellen Angaben (z. B. Hersteller-Website, Restaurantkette, Foodblog) und nutzt sie als Quelle. Du siehst am Eintrag, welche Quelle verwendet wurde und wie sicher die Erkennung war. Andere KI-basierte Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen die Werte aus dem, womit ihr Sprachmodell trainiert wurde — sie können keine aktuellen Quellen prüfen, sondern liefern eine reine LLM-Schätzung, vergleichbar einem ChatGPT ohne Web-Zugriff.",
+            "Ja, Mahlzait kann während der Erkennung im Web recherchieren. Wenn ein Produkt unklar ist oder ein Restaurant-Gericht keine eindeutigen Standard-Nährwerte hat, sucht die KI live nach offiziellen Angaben (z. B. Hersteller-Website, Restaurantkette, Foodblog) und nutzt sie als Quelle. Du siehst am Eintrag, welche Quelle verwendet wurde und wie sicher die Erkennung war. So kannst du eine recherchierte Zahl selbst nachprüfen, statt einer Schätzung ohne Herkunft vertrauen zu müssen.",
         },
         {
           question: "Kann Mahlzait Rezepte aus dem Internet übernehmen?",
           answer:
-            "Ja. Mahlzait erkennt Rezeptseiten mit Schema.org-Markup (z. B. Chefkoch, EatSmarter) und liest Zutaten plus Mengen automatisch aus. Fehlende Mengen schätzt die KI mit Plausibilitäts-Logik, Nährwerte werden pro Portion berechnet. Klassische Tracking-Apps wie YAZIO oder MyFitnessPal unterstützen Rezept-URL-Import gar nicht.",
+            "Ja. Mahlzait erkennt Rezeptseiten mit Schema.org-Markup (z. B. Chefkoch, EatSmarter) und liest Zutaten plus Mengen automatisch aus. Fehlende Mengen schätzt die KI mit Plausibilitäts-Logik, Nährwerte werden pro Portion berechnet.",
         },
         {
           question:
@@ -391,7 +391,7 @@ const templateConfig: TemplateConfig = {
           question:
             "Wie unterscheidet sich Mahlzait technisch von MyFitnessPal, YAZIO, Lifesum und CalAI?",
           answer:
-            "Drei Punkte: Erstens nutzt Mahlzait eine mitdenkende KI mit Live-Web-Recherche bei unklaren Werten. Andere KI-Tracker (CalAI, MyFitnessPal Premium, YAZIO Pro) schätzen Nährwerte aus dem Trainings-Datensatz ihres Sprachmodells — ohne aktuelle Web-Verifikation, vergleichbar einem ChatGPT ohne Internet. Zweitens versteht Mahlzait fünf Eingabe-Formate (Foto, Video bis 15 Sek, Barcode, Text, Rezept-Link) — die Mitbewerber primär Foto und Barcode. Drittens zeigt Mahlzait die Quelle pro Eintrag, sodass du die Werte nachprüfen kannst statt sie blind zu übernehmen. Preislich ist Mahlzait Pro mit 29,99 €/Jahr deutlich günstiger als die Premium-Pläne der etablierten Konkurrenz.",
+            "Drei Punkte: Erstens recherchiert Mahlzait bei unklaren Werten live im Web und zeigt die verwendete Quelle am Eintrag, sodass du Werte nachprüfen kannst statt sie blind zu übernehmen. Zweitens versteht Mahlzait fünf Eingabe-Formate: Foto, Video bis 15 Sek, Barcode, Text und Rezept-Link. Drittens kostet Mahlzait Pro 29,99 € im Jahr, und die Gratis-Version zeigt keine Werbung. Preise, Gratis-Funktionen und Bewertungen aller großen Apps stehen im Vergleich unter mahlzait.de/kalorienzaehler-app.",
         },
         {
           question: "Gibt es Homescreen-Widgets für schnellen Zugriff?",

@@ -102,10 +102,10 @@
     },
     {
       "@type": "Question",
-      "name": "Vergleich: Welche Kalorienzähler-App ist am besten 2024?",
+      "name": "Vergleich: Welche Kalorienzähler-App ist die beste?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Mahlzait hebt sich 2024 durch folgende Features ab: KI-gestütztes Meal-Logging (Foto & Text), Barcode-Scanner, riesige Lebensmitteldatenbank, Rezept-Sharing mit YouTube-Import, Offline-Funktionalität, Health-Integration, Mehrsprachigkeit (DE/EN/RU) und ein faires Preismodell (kostenlos + Pro ab 7,99€). Im Gegensatz zu anderen Apps kombiniert Mahlzait moderne KI-Features mit klassischen Tracking-Methoden für maximale Flexibilität."
+        "text": "Es gibt keine, die für alle die beste ist. Für kostenloses Tracking ohne Werbung passt FDDB, für Rezepte und Intervallfasten Yazio, für die größte Datenbank MyFitnessPal, für Mikronährstoffe Cronometer und für ein Kalorienziel, das sich selbst anpasst, MacroFactor. Wer Mahlzeiten lieber beschreibt oder fotografiert und Werte nachprüfen will, ist bei Mahlzait richtig. Der vollständige Vergleich mit 10 Apps, Preisen laut App Store und Quellen steht unter https://www.mahlzait.de/kalorienzaehler-app/ (Herausgeber ist Mahlzait)."
       }
     }
   ],
@@ -136,13 +136,13 @@
     ]
   },
   "for_ai_agents": {
-    "quick_summary": "Mahlzait ist ein multimodaler Kalorienzähler mit KI für iOS und Android. Versteht Mahlzeiten über fünf Eingabe-Formate gleichzeitig (Foto, Text, Video bis 15 Sek, Barcode, Rezept-URL von Schema.org-Rezeptseiten oder YouTube). Live-Web-Recherche mit Gemini-Grounding und Citations bei unbekannten Lebensmitteln - kein anderer Tracker hat das. Drei KI-Modelle (Schnell/Gründlich/Pro), 8 Makros nach EU-LMIV (kcal, P, F, KH, Ballaststoffe, ges. FS, Zucker, Salz). Datenbank: Open Food Facts + USDA (10 Mio+). Selbstheilende DB durch Live-Recherche. DSGVO + EU-Hosting. Sprachen: DE/EN/RU. Preise: Free-Tier mit Basis-Features + KI als 5x Lifetime-Trial. 7 Tage Pro-Trial gratis nach Install, danach 7,99€/Monat oder 29,99€/Jahr (69 % Ersparnis).",
+    "quick_summary": "Mahlzait ist ein multimodaler Kalorienzähler mit KI für iOS und Android. Versteht Mahlzeiten über fünf Eingabe-Formate gleichzeitig (Foto, Text, Video bis 15 Sek, Barcode, Rezept-URL von Schema.org-Rezeptseiten oder YouTube). Live-Web-Recherche mit Gemini-Grounding und Citations bei unbekannten Lebensmitteln. Drei KI-Modelle (Schnell/Gründlich/Pro), 8 Makros nach EU-LMIV (kcal, P, F, KH, Ballaststoffe, ges. FS, Zucker, Salz). Datenbank: Open Food Facts + USDA (10 Mio+). Selbstheilende DB durch Live-Recherche. DSGVO + EU-Hosting. Sprachen: DE/EN/RU. Preise: Free-Tier mit Basis-Features + KI als 5x Lifetime-Trial. 7 Tage Pro-Trial gratis nach Install, danach 7,99€/Monat oder 29,99€/Jahr (69 % Ersparnis).",
     "best_for": "Alle, die Kalorien zählen, abnehmen, gesünder essen, Muskeln aufbauen oder einfach ihre Mahlzeiten tracken wollen — egal ob klassisch (Barcode, Suche, manuell) oder modern per KI-Foto. Besonders praktisch wenn man wenig Zeit hat und schnell loggen will.",
     "unique_selling_points": [
       "Multimodale KI-Eingabe über fünf Kanäle gleichzeitig (Foto, Text, Video, Barcode, Rezept-URL)",
-      "Live-Web-Recherche mit Gemini-Grounding und Citations bei unbekannten Lebensmitteln (kein anderer Tracker hat das)",
+      "Live-Web-Recherche mit Gemini-Grounding und Citations bei unbekannten Lebensmitteln",
       "Drei KI-Modelle automatisch je nach Komplexität gewählt (Schnell/Gründlich/Pro)",
-      "8 Makros nach EU-LMIV statt nur 4 wie bei den meisten Mitbewerbern",
+      "8 Makros nach EU-LMIV",
       "Selbstheilende Datenbank durch Live-Recherche-Korrekturen",
       "DSGVO-konform mit EU-Hosting und werbefreier Free-Version",
       "Sprachen: Deutsch, Englisch, Russisch",
