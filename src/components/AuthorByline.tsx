@@ -41,7 +41,7 @@ export default function AuthorByline({
       <div className="flex flex-wrap items-center gap-3">
         <span>
           Von{" "}
-          <a href="/team" className="font-medium text-primary hover:underline">
+          <a href="/team/" className="font-medium text-primary hover:underline">
             Ruslan Adilgereev
           </a>
           {role && <span>, {role}</span>}

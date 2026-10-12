@@ -126,7 +126,7 @@ function Footer() {
                 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
                 transition={{ delay: 0.4 }}
                 className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
-                href="/nutzungsbedingungen"
+                href="/nutzungsbedingungen/"
               >
                 Nutzungsbedingungen
               </motion.a>
@@ -136,7 +136,7 @@ function Footer() {
                 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
                 transition={{ delay: 0.45 }}
                 className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
-                href="/datenschutz"
+                href="/datenschutz/"
               >
                 Datenschutz
               </motion.a>
@@ -145,7 +145,7 @@ function Footer() {
               variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
               transition={{ delay: 0.5 }}
               className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
-              href="/impressum"
+              href="/impressum/"
             >
               Impressum
             </motion.a>
@@ -153,7 +153,7 @@ function Footer() {
               variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
               transition={{ delay: 0.55 }}
               className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
-              href="/agb"
+              href="/agb/"
             >
               AGB
             </motion.a>
@@ -162,7 +162,7 @@ function Footer() {
                 variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
                 transition={{ delay: 0.6 }}
                 className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
-                href="/cookies-policy"
+                href="/cookies-policy/"
               >
                 Cookies
               </motion.a>

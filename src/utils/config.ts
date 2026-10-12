@@ -45,18 +45,18 @@ const templateConfig: TemplateConfig = {
     ],
     // SEO-Links für Calculator-Seiten
     calculatorLinks: [
-      { href: "/kalorienbedarf-berechnen", title: "Kalorienbedarf berechnen" },
+      { href: "/kalorienbedarf-berechnen/", title: "Kalorienbedarf berechnen" },
       {
-        href: "/kaloriendefizit-berechnen",
+        href: "/kaloriendefizit-berechnen/",
         title: "Kaloriendefizit berechnen",
       },
-      { href: "/makros-berechnen", title: "Makros berechnen" },
-      { href: "/leistungsumsatz-rechner", title: "Leistungsumsatz berechnen" },
-      { href: "/essensplan-erstellen", title: "Essensplan erstellen" },
-      { href: "/trainingsplan-erstellen", title: "Trainingsplan erstellen" },
+      { href: "/makros-berechnen/", title: "Makros berechnen" },
+      { href: "/leistungsumsatz-rechner/", title: "Leistungsumsatz berechnen" },
+      { href: "/essensplan-erstellen/", title: "Essensplan erstellen" },
+      { href: "/trainingsplan-erstellen/", title: "Trainingsplan erstellen" },
       { href: "/ernaehrungsplan/", title: "Ernährungspläne" },
       { href: "/trainingsplan/", title: "Trainingspläne" },
-      { href: "/fastfood-kalorien", title: "Fast-Food-Vergleich" },
+      { href: "/fastfood-kalorien/", title: "Fast-Food-Vergleich" },
       {
         href: "https://www.deutschland-rechner.de/?ref=mahlzait",
         title: "Deutschland-Rechner ↗",
@@ -65,14 +65,14 @@ const templateConfig: TemplateConfig = {
     // SEO-Links für App-Landingpages und Info
     appLinks: [
       { href: "/#faq", title: "FAQ" },
-      { href: "/team", title: "Team" },
-      { href: "/ueber-uns", title: "Über uns" },
-      { href: "/redaktionelle-standards", title: "Redaktionelle Standards" },
-      { href: "/wissen", title: "Wissen" },
-      { href: "/kalorien", title: "Kalorientabelle" },
-      { href: "/kalorienarme-lebensmittel", title: "Kalorienarme Lebensmittel" },
-      { href: "/eiweissreiche-lebensmittel", title: "Eiweißreiche Lebensmittel" },
-      { href: "/low-carb-lebensmittel", title: "Low-Carb-Lebensmittel" },
+      { href: "/team/", title: "Team" },
+      { href: "/ueber-uns/", title: "Über uns" },
+      { href: "/redaktionelle-standards/", title: "Redaktionelle Standards" },
+      { href: "/wissen/", title: "Wissen" },
+      { href: "/kalorien/", title: "Kalorientabelle" },
+      { href: "/kalorienarme-lebensmittel/", title: "Kalorienarme Lebensmittel" },
+      { href: "/eiweissreiche-lebensmittel/", title: "Eiweißreiche Lebensmittel" },
+      { href: "/low-carb-lebensmittel/", title: "Low-Carb-Lebensmittel" },
     ],
     // App-Vergleich und Alternativ-Seiten (Daten: src/data/calorie-apps.json)
     comparisonLinks: [
@@ -98,10 +98,10 @@ const templateConfig: TemplateConfig = {
       { href: "/#features", title: "Features" },
       { href: "/#how-it-works", title: "Anleitung" },
       { href: "/#pricing", title: "Preise" },
-      { href: "/essensplan-erstellen", title: "Essensplan" },
-      { href: "/trainingsplan-erstellen", title: "Trainingsplan" },
-      { href: "/rechner", title: "Rechner" },
-      { href: "/wissen", title: "Wissen" },
+      { href: "/essensplan-erstellen/", title: "Essensplan" },
+      { href: "/trainingsplan-erstellen/", title: "Trainingsplan" },
+      { href: "/rechner/", title: "Rechner" },
+      { href: "/wissen/", title: "Wissen" },
     ],
   },
   appBanner: {

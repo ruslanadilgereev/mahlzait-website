@@ -82,7 +82,7 @@ function Navbar() {
             ))}
           </ul>
           {topNavbar.cta && (
-            <a href="/app" className="ml-2 lg:ml-3 btn btn-primary btn-sm lg:btn-md">
+            <a href="/app/" className="ml-2 lg:ml-3 btn btn-primary btn-sm lg:btn-md">
               {topNavbar.cta}
             </a>
           )}
