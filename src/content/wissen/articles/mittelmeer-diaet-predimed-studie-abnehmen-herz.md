@@ -37,6 +37,8 @@ Wer abnehmen will, kommt also auch mit mediterraner Kost nicht um ein [Kaloriend
 
 PREDIMED hat klare Grenzen. Die Studie lief in Spanien mit Hochrisiko-Patienten – die Übertragbarkeit auf gesunde, jüngere Menschen oder andere Ernährungskulturen ist nicht automatisch gegeben. Die Kontrollgruppe erhielt anfangs weniger intensive Betreuung als die Interventionsgruppen, was Effekte teilweise verstärkt haben könnte. Und der Rückzug mit anschließender Neuanalyse zeigt, dass selbst große, hochrangig publizierte Studien methodische Schwächen haben.
 
+Als Argument für die Mittelmeer-Diät wird oft auch die hohe Lebenserwartung in Südeuropa genannt. In der englischsprachigen [Weltrangliste der Lebenserwartung auf Countrivo](https://countrivo.com/categories/life-expectancy), die auf Weltbank-Daten beruht, gehören Spanien und Italien zur Spitzengruppe, Deutschland liegt rund drei Jahre dahinter. Solche Ländervergleiche sind aber Beobachtungsdaten: Sie spiegeln auch Gesundheitsversorgung, Einkommen, Rauchen und Bewegung wider und belegen keine Wirkung der Ernährung. Als Beleg wiegen sie deshalb deutlich weniger als eine randomisierte Studie wie PREDIMED, trotz deren Schwächen.
+
 Eine Cochrane-Übersicht zur Mittelmeer-Diät und Herz-Kreislauf-Erkrankungen kam zu dem Schluss, dass günstige Effekte auf Risikofaktoren wahrscheinlich sind, die Sicherheit der Evidenz für harte Endpunkte aber durch Studienqualität begrenzt ist. Die Mittelmeer-Diät ist also gut belegt, aber kein Wundermittel – und der Effekt von rund 30 % gilt für eine Hochrisiko-Population, nicht zwangsläufig für jeden.
 
 ## Fazit
