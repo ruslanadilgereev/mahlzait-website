@@ -67,6 +67,25 @@ export function trackAppStoreClick(platform: StorePlatform, source: TrackingSour
 }
 
 /**
+ * Track WhatsApp community click event to GA4
+ * Call this on link click
+ */
+export function trackCommunityClick(source: "home" | "footer"): void {
+  if (typeof window !== "undefined" && (window as any).gtag) {
+    (window as any).gtag("event", "whatsapp_community_click", {
+      event_category: "engagement",
+      event_label: source,
+      source: source,
+    });
+  }
+
+  // Also log to console in dev
+  if (typeof window !== "undefined" && window.location.hostname === "localhost") {
+    console.log(`[Tracking] WhatsApp Community Click from ${source}`);
+  }
+}
+
+/**
  * Get both tracked links for a given source
  */
 export function getTrackedLinks(source: TrackingSource, campaign?: string) {

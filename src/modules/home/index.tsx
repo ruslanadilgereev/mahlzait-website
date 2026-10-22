@@ -18,6 +18,7 @@ import PopularFoods from "./_components/popularFoods";
 import SeoHubs from "./_components/seoHubs";
 import AiTools from "./_components/aiTools";
 import AppGallery from "./_components/appGallery";
+import Community from "./_components/community";
 
 function MedicalDisclaimer() {
   return (
@@ -57,6 +58,7 @@ function Home({ config }: Props) {
         <Navbar />
         <Header />
         <EntityDefinition />
+        <Community />
         <Partners />
         <LiveDemo />
         <AppGallery />

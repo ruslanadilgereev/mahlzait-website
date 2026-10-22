@@ -24,6 +24,8 @@ const templateConfig: TemplateConfig = {
   // Doku: https://developer.android.com/google/play/installreferrer
   googlePlayLink:
     "https://play.google.com/store/apps/details?id=com.promptit.mytemple&referrer=utm_source%3Dmahlzait-website%26utm_medium%3Dwebsite%26utm_campaign%3Dhomepage",
+  // Einladung in die WhatsApp-Community (Startseiten-Abschnitt und Footer)
+  whatsappCommunityLink: "https://chat.whatsapp.com/JUUiEq1l4sg09fcWJbqigU",
   footer: {
     legalLinks: {
       termsAndConditions: true,
@@ -452,6 +454,20 @@ const templateConfig: TemplateConfig = {
       rewards: ["4,7 Sterne \n im App Store", "Mit \n Live-Web-Recherche"],
       usersDescription: `${stats.displayCount} Nutzer:innen tracken bereits mit Mahlzait`,
       headlineMark: [0, 1],
+    },
+    community: {
+      id: "community",
+      eyebrow: "Neu: Mahlzait-Community auf WhatsApp",
+      title: "Bau Mahlzait mit mir",
+      subtitle:
+        "Ich bin Ruslan und baue Mahlzait allein. In meiner WhatsApp-Community erfährst du zuerst, was in der App neu kommt, und sagst mir direkt, was dir fehlt oder was nicht klappt. Ich lese alles selbst.",
+      points: [
+        "Neues zuerst erfahren",
+        "Wünsche und Ideen einbringen",
+        "Fehler direkt melden",
+      ],
+      actionText: "Der Community beitreten",
+      note: "Kostenlos, austreten geht jederzeit.",
     },
     pricing: {
       id: "pricing",

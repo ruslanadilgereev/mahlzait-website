@@ -11,6 +11,7 @@ export type TemplateConfig = {
     showThemeSwitch: boolean;
     googlePlayLink?: string | undefined;
     appStoreLink?: string | undefined;
+    whatsappCommunityLink?: string | undefined;
     termsAndConditions: {
         seo: {
             title: string;
@@ -92,6 +93,15 @@ export type TemplateConfig = {
             rewards?: string[] | undefined;
             usersDescription?: string | undefined;
         };
+        community?: {
+            id?: string | undefined;
+            eyebrow: string;
+            title: string;
+            subtitle: string;
+            points: string[];
+            actionText: string;
+            note: string;
+        } | undefined;
         testimonials?: {
             id?: string | undefined;
             title: string;

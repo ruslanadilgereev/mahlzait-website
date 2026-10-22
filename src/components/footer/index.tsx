@@ -6,9 +6,11 @@ import TwitterLogo from "./svgs/twitter";
 import PinterestLogo from "./svgs/pinterest";
 import TikTokLogo from "./svgs/tiktok";
 import { motion } from "framer-motion";
+import { trackCommunityClick } from "../../utils/trackingLinks";
 
 function Footer() {
   const {
+    whatsappCommunityLink,
     footer: {
       links,
       legalLinks,
@@ -62,6 +64,19 @@ function Footer() {
                 {title}
               </motion.a>
             ))}
+            {whatsappCommunityLink && (
+              <motion.a
+                variants={{ hidden: { opacity: 0, y: 10 }, visible: { opacity: 1, y: 0 } }}
+                transition={{ delay: links.length * 0.05 + 0.1 }}
+                className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
+                href={whatsappCommunityLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => trackCommunityClick("footer")}
+              >
+                WhatsApp-Community
+              </motion.a>
+            )}
           </nav>
 
           {/* Rechner / Tools */}
