@@ -5957,6 +5957,13 @@ export const articlesMeta: ArticleMeta[] = [
         journal: "JAMA",
         year: 2020,
         doi: "10.1001/jama.2020.1382"
+      },
+      {
+        title: "2024 Adult Compendium of Physical Activities: A third update of the energy costs of human activities",
+        authors: "Herrmann SD, Willis EA, Ainsworth BE, Barreira TV, Hastert M, Kracht CL, Schuna JM Jr, Cai Z, Quan M, Tudor-Locke C, Whitt-Glover MC, Jacobs DR Jr",
+        journal: "Journal of Sport and Health Science",
+        year: 2024,
+        doi: "10.1016/j.jshs.2023.10.010"
       }
     ],
     kernaussage: "NEAT (Non-Exercise Activity Thermogenesis) umfasst alle Bewegung ausserhalb von Sport - Gehen, Stehen, Zappeln, Hausarbeit. Sie ist der variabelste Posten des Tagesverbrauchs: In einer Science-Ueberernaehrungsstudie reichte die individuelle NEAT-Reaktion von -98 bis +692 kcal pro Tag und sagte voraus, wer zunahm. Fuer das Koerpergewicht ist Alltagsbewegung damit oft bedeutsamer als das eigentliche Training.",
