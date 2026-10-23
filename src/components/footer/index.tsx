@@ -90,6 +90,7 @@ function Footer() {
                   transition={{ delay: index * 0.05 + 0.2 }}
                   className="text-sm link no-underline text-primary/80 hover:text-primary transition-colors"
                   href={href}
+                  rel={href.startsWith("http") ? "nofollow" : undefined}
                 >
                   {title}
                 </motion.a>
