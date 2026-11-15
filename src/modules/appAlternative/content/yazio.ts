@@ -19,7 +19,7 @@ export const yazioAlternative: AlternativePageContent = {
   alternatives: [
     {
       slug: "mahlzait",
-      why: "Wenn dich das Suchen und Auswählen nervt: Du beschreibst die Mahlzeit als Satz, Sprachnotiz oder Foto. Recherchiert die KI einen Wert im Web, steht die Quelle am Eintrag. Die Gratis-Version zeigt keine Werbung, Pro kostet 29,99 € im Jahr.",
+      why: "Wenn dich das Suchen und Auswählen nervt: Du beschreibst die Mahlzeit als Satz, Sprachnotiz oder Foto. Recherchiert die KI einen Wert im Web, steht die Quelle am Eintrag. Die Gratis-Version zeigt keine Werbung, Pro kostet 39,99 € im Jahr.",
     },
     {
       slug: "fddb",

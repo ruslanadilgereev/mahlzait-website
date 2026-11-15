@@ -19,7 +19,7 @@ export const lifesumAlternative: AlternativePageContent = {
   alternatives: [
     {
       slug: "mahlzait",
-      why: "Wenn du an Lifesum vor allem das schnelle Erfassen per Foto, Text oder Sprache magst: Das kann Mahlzait auch, mit Quelle bei im Web recherchierten Werten. Die Gratis-Version zeigt keine Werbung, Pro kostet 29,99 € im Jahr.",
+      why: "Wenn du an Lifesum vor allem das schnelle Erfassen per Foto, Text oder Sprache magst: Das kann Mahlzait auch, mit Quelle bei im Web recherchierten Werten. Die Gratis-Version zeigt keine Werbung, Pro kostet 39,99 € im Jahr.",
     },
     {
       slug: "yazio",
@@ -117,7 +117,7 @@ export const lifesumAlternative: AlternativePageContent = {
     },
     {
       q: "Was unterscheidet Mahlzait von Lifesum?",
-      a: "Beide erfassen Mahlzeiten per Foto, Text, Sprache oder Barcode. Lifesum bietet zusätzlich fertige Ernährungspläne mit Einkaufsliste. Mahlzait zeigt dafür bei im Web recherchierten Werten die Quelle, hat eine Gratis-Version ohne Werbung und kostet mit Pro 29,99 € im Jahr.",
+      a: "Beide erfassen Mahlzeiten per Foto, Text, Sprache oder Barcode. Lifesum bietet zusätzlich fertige Ernährungspläne mit Einkaufsliste. Mahlzait zeigt dafür bei im Web recherchierten Werten die Quelle, hat eine Gratis-Version ohne Werbung und kostet mit Pro 39,99 € im Jahr.",
     },
   ],
   publishedAt: "2026-10-09",

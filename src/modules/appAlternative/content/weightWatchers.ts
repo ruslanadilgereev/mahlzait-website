@@ -19,7 +19,7 @@ export const weightWatchersAlternative: AlternativePageContent = {
   alternatives: [
     {
       slug: "mahlzait",
-      why: "Wenn du nach WW einfach weiter mitschreiben willst, ohne viel zu suchen: Mahlzeit als Satz, Sprachnotiz oder Foto. Die Gratis-Version zeigt keine Werbung, Pro kostet 29,99 € im Jahr.",
+      why: "Wenn du nach WW einfach weiter mitschreiben willst, ohne viel zu suchen: Mahlzeit als Satz, Sprachnotiz oder Foto. Die Gratis-Version zeigt keine Werbung, Pro kostet 39,99 € im Jahr.",
     },
     {
       slug: "yazio",

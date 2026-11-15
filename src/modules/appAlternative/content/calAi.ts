@@ -19,7 +19,7 @@ export const calAiAlternative: AlternativePageContent = {
   alternatives: [
     {
       slug: "mahlzait",
-      why: "Wenn dich Foto-Tracking überzeugt hat: Foto, Text, Sprache und Barcode, entwickelt in Berlin, mit Quelle bei im Web recherchierten Werten. Barcode und manuelle Eingabe sind gratis und ohne Werbung, die KI-Erfassung gibt es nach fünf Testnutzungen mit Pro für 29,99 € im Jahr.",
+      why: "Wenn dich Foto-Tracking überzeugt hat: Foto, Text, Sprache und Barcode, entwickelt in Berlin, mit Quelle bei im Web recherchierten Werten. Barcode und manuelle Eingabe sind gratis und ohne Werbung, die KI-Erfassung gibt es nach fünf Testnutzungen mit Pro für 39,99 € im Jahr.",
     },
     {
       slug: "yazio",

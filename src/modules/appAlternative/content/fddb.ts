@@ -120,7 +120,7 @@ export const fddbAlternative: AlternativePageContent = {
     },
     {
       q: "Was unterscheidet Mahlzait von FDDB?",
-      a: "Beide sind kostenlos ohne Werbung nutzbar und kommen aus Deutschland. FDDB setzt auf eine große Datenbank, in der du suchst, Mahlzait auf die Eingabe als Satz, Sprachnotiz oder Foto, mit Quelle bei im Web recherchierten Werten. Die KI-Eingabe ist bei Mahlzait nach fünf Testnutzungen Teil von Pro für 29,99 € im Jahr. FDDB bietet dafür Broteinheiten, FPE und eine DGE-Auswertung, die Mahlzait nicht hat.",
+      a: "Beide sind kostenlos ohne Werbung nutzbar und kommen aus Deutschland. FDDB setzt auf eine große Datenbank, in der du suchst, Mahlzait auf die Eingabe als Satz, Sprachnotiz oder Foto, mit Quelle bei im Web recherchierten Werten. Die KI-Eingabe ist bei Mahlzait nach fünf Testnutzungen Teil von Pro für 39,99 € im Jahr. FDDB bietet dafür Broteinheiten, FPE und eine DGE-Auswertung, die Mahlzait nicht hat.",
     },
   ],
   publishedAt: "2026-10-09",

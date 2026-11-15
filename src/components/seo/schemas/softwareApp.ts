@@ -42,7 +42,7 @@ export function generateSoftwareAppSchema(
       },
       {
         "@type": "Offer",
-        price: "29.99",
+        price: "39.99",
         priceCurrency: "EUR",
         availability: "https://schema.org/InStock",
         description: "Mahlzait Pro Jahr",

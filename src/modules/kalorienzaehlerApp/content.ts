@@ -125,7 +125,7 @@ export const kalorienzaehlerAppFaq: { q: string; a: string }[] = [
   },
   {
     q: "Was kostet eine Kalorienzähler-App?",
-    a: "Laut deutschem App Store liegen die Jahresabos zwischen 19,99 € bei FDDB und 99,99 € bei Lifesum, je nach Angebot. Mahlzait Pro kostet 29,99 € im Jahr. WeightWatchers ist als Programm mit Coaching deutlich teurer, das 12-Monats-Angebot liegt bei 199,99 €.",
+    a: "Laut deutschem App Store liegen die Jahresabos zwischen 19,99 € bei FDDB und 99,99 € bei Lifesum, je nach Angebot. Mahlzait Pro kostet 39,99 € im Jahr. WeightWatchers ist als Programm mit Coaching deutlich teurer, das 12-Monats-Angebot liegt bei 199,99 €.",
   },
   {
     q: "Ist dieser Vergleich unabhängig?",

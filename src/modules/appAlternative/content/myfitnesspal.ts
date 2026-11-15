@@ -119,7 +119,7 @@ export const myfitnesspalAlternative: AlternativePageContent = {
     },
     {
       q: "Was unterscheidet Mahlzait von MyFitnessPal?",
-      a: "MyFitnessPal setzt auf eine riesige Datenbank, in der du suchst. Mahlzait setzt auf die Eingabe: Du beschreibst die Mahlzeit als Satz, Sprachnotiz oder Foto, und recherchiert die KI einen Wert im Web, steht die Quelle dabei. Der Barcode-Scanner ist bei Mahlzait kostenlos, die KI-Eingabe nach fünf Testnutzungen Teil von Pro für 29,99 € im Jahr.",
+      a: "MyFitnessPal setzt auf eine riesige Datenbank, in der du suchst. Mahlzait setzt auf die Eingabe: Du beschreibst die Mahlzeit als Satz, Sprachnotiz oder Foto, und recherchiert die KI einen Wert im Web, steht die Quelle dabei. Der Barcode-Scanner ist bei Mahlzait kostenlos, die KI-Eingabe nach fünf Testnutzungen Teil von Pro für 39,99 € im Jahr.",
     },
   ],
   publishedAt: "2026-10-09",
