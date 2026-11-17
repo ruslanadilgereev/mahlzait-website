@@ -907,7 +907,7 @@ Sie verpflichten sich, Folgendes nicht zu tun:
 
 (3) Die Schnittstelle ersetzt keine ärztliche oder ernährungsmedizinische Beratung.
 
-(4) Die Verbindung ist ab 13 Jahren möglich; für den Assistenten gelten zusätzlich die Altersregeln seines Anbieters.
+(4) Die Verbindung ist ab 16 Jahren möglich; für den Assistenten gelten zusätzlich die Altersregeln seines Anbieters.
 
 (5) Mahlzait begrenzt die Zahl der Änderungen je Zeitraum und kann die Schnittstelle ändern, vorübergehend abschalten oder einstellen. Ein Anspruch auf Verfügbarkeit besteht nicht.
 
