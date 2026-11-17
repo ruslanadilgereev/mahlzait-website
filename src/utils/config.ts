@@ -520,7 +520,7 @@ const templateConfig: TemplateConfig = {
     },
     content: `# Datenschutzerklärung
 
-**Stand:** Januar 2026
+**Stand:** November 2026
 
 Diese Datenschutzerklärung gilt für:
 - die Website "mahlzait.de" inkl. aller Unterseiten,
@@ -735,6 +735,20 @@ Sie können Ihren Mahlzait‑Account optional mit Ihrer WhatsApp‑Nummer verkn�
 
 **Hinweis:** WhatsApp selbst verarbeitet Ihre Nachrichten gemäß der WhatsApp‑Datenschutzrichtlinie, die zwischen Ihnen und Meta gilt. Mahlzait empfängt ausschließlich die Inhalte, die Sie aktiv an unseren Bot senden.
 
+### 4.9 Verbindung mit KI-Assistenten (optional)
+
+Sie können Ihr Mahlzait-Konto mit einem KI-Assistenten verbinden, derzeit ChatGPT (OpenAI) und Claude (Anthropic). Danach kann der Assistent auf Ihren Wunsch Mahlzeiten in Ihr Tagebuch eintragen, Einträge aus dem Chat von heute und gestern ändern oder löschen und Ihre Einträge und Tagesziele der letzten sieben Tage lesen. Die Verbindung richten Sie selbst auf chat.mahlzait.de ein; dabei melden Sie sich mit Ihrem Mahlzait-Konto an und willigen ausdrücklich ein.
+
+**Verarbeitete Daten:** die Angaben, die der Assistent für einen Eintrag übergibt (Bezeichnung, Menge, geschätzte Nährwerte, Tag und Uhrzeit), Ihre Tagebucheinträge und Tagesziele, soweit der Assistent sie abruft, Ihre Nutzerkennung, Angaben zur Verbindung (Assistent, Zeitpunkt, Nachweis der Einwilligung) und Zugangsschlüssel, die nur als Prüfwert gespeichert werden. Chat-Texte erhält Mahlzait nicht.
+
+**Zweck und Rechtsgrundlage:** Eintragen und Abrufen Ihres Tagebuchs über den Assistenten. Da es sich um Gesundheitsdaten handeln kann, ist die Rechtsgrundlage Ihre ausdrückliche Einwilligung (Art. 6 Abs. 1 lit. a, Art. 9 Abs. 2 lit. a DSGVO).
+
+**Empfänger:** Der Anbieter des Assistenten erhält die abgerufenen und eingetragenen Daten als eigener Verantwortlicher: OpenAI Ireland Ltd. (ChatGPT) bzw. Anthropic Ireland, Limited (Claude). Er verarbeitet sie nach seinen eigenen Datenschutzbestimmungen, je nach Ihren Einstellungen auch zum Training seiner Modelle und für Gedächtnisfunktionen, und auch in den USA (Angemessenheitsbeschluss bzw. Standardvertragsklauseln des Anbieters). Der Server der Schnittstelle läuft bei Google Cloud in der EU.
+
+**Speicherdauer:** Einträge wie alle Tagebucheinträge, bis Sie sie oder Ihr Konto löschen. Zugangsschlüssel bis zum Trennen, höchstens 90 Tage ohne Nutzung. Nachweis der Einwilligung 12 Monate nach Ende der Verbindung. Technische Protokolle ohne Inhalte 30 Tage.
+
+**Widerruf:** jederzeit auf chat.mahlzait.de/verbindungen oder in den Einstellungen des Assistenten. Die Löschung Ihres Mahlzait-Kontos entfernt auch alle Verbindungsdaten. Der Widerruf berührt nicht die Rechtmäßigkeit der bis dahin erfolgten Verarbeitung. Was der Anbieter bereits erhalten hat, löschen Sie dort nach seinen Regeln.
+
 ## 5. Empfänger / Kategorien von Empfängern
 
 Je nach Nutzung können Daten an folgende Kategorien von Empfängern übermittelt werden:
@@ -744,7 +758,8 @@ Je nach Nutzung können Daten an folgende Kategorien von Empfängern übermittel
 - App‑Store‑Betreiber & Zahlungsabwicklung (Apple, Google),
 - Datenbank‑/API‑Dienste (z.B. Open Food Facts) zur Produktrecherche,
 - KI‑Dienstleister (z.B. Google über Firebase AI / Vertex AI / Gemini),
-- Messaging‑Dienstleister: Meta Platforms Ireland Ltd. (WhatsApp Business Cloud API) – nur bei aktivierter WhatsApp‑Verknüpfung (siehe 4.8).
+- Messaging‑Dienstleister: Meta Platforms Ireland Ltd. (WhatsApp Business Cloud API) – nur bei aktivierter WhatsApp‑Verknüpfung (siehe 4.8),
+- KI-Assistenten nach Ihrer Wahl: OpenAI Ireland Ltd. (ChatGPT), Anthropic Ireland, Limited (Claude), nur bei aktiver Verbindung.
 
 ## 6. Drittlandübermittlungen
 
@@ -861,7 +876,7 @@ Telefon: 017643657343
     },
     content: `# Nutzungsbedingungen
 
-**Stand:** November 2025
+**Stand:** November 2026
 
 ## Einleitung
 
@@ -883,6 +898,20 @@ Sie verpflichten sich, Folgendes nicht zu tun:
 - Den Betrieb der App oder der Server oder Netzwerke, die zur Bereitstellung der App verwendet werden, zu stören.
 - Viren, Malware oder anderen schädlichen Code hochzuladen oder zu übertragen.
 - Zu versuchen, unbefugten Zugriff auf Teile der App oder auf andere Konten, Systeme oder Netzwerke zu erlangen.
+
+## Verbindung mit KI-Assistenten
+
+(1) Mahlzait bietet kostenlos eine Schnittstelle, über die Sie einen KI-Assistenten (derzeit ChatGPT und Claude) mit Ihrem Mahlzait-Konto verbinden. Für den Assistenten gelten die Bedingungen seines Anbieters; ein Konto dort ist Voraussetzung.
+
+(2) Mengen und Nährwerte schätzt der Assistent. Mahlzait übernimmt sie ungeprüft und kennzeichnet sie in der aktuellen App als geschätzt; für ihre Richtigkeit übernimmt Mahlzait keine Gewähr. Bitte prüfen Sie wichtige Einträge in der App.
+
+(3) Die Schnittstelle ersetzt keine ärztliche oder ernährungsmedizinische Beratung.
+
+(4) Die Verbindung ist ab 13 Jahren möglich; für den Assistenten gelten zusätzlich die Altersregeln seines Anbieters.
+
+(5) Mahlzait begrenzt die Zahl der Änderungen je Zeitraum und kann die Schnittstelle ändern, vorübergehend abschalten oder einstellen. Ein Anspruch auf Verfügbarkeit besteht nicht.
+
+(6) Sie können die Verbindung jederzeit trennen (chat.mahlzait.de/verbindungen oder im Assistenten).
 
 ## Geistiges Eigentum
 

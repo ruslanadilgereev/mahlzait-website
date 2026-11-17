@@ -1,0 +1,198 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro"
+import defaultTemplateConfig from "utils/config";
+
+const chatAssistentenSeo = {
+  title: "Mahlzait mit ChatGPT oder Claude verbinden - Hilfe",
+  description: "So verbindest du Mahlzait mit ChatGPT oder Claude: Mahlzeiten per Chat eintragen, Kalorien abfragen, Einträge korrigieren. Nur mit deiner Einwilligung, jederzeit trennbar.",
+};
+
+// Adresse des MCP-Endpunkts und Installationslink für einen eigenen Connector in Claude
+// (Spec Chat-Schnittstelle 13), bis Mahlzait im Verzeichnis von Claude steht.
+const mcpUrl = "https://chat.mahlzait.de/mcp";
+const claudeLink =
+  "https://claude.ai/customize/connectors?modal=add-custom-connector&connectorName=Mahlzait&connectorUrl=https%3A%2F%2Fchat.mahlzait.de%2Fmcp";
+const verbindungenUrl = "https://chat.mahlzait.de/verbindungen";
+---
+
+<Layout {...defaultTemplateConfig} seo={chatAssistentenSeo}>
+  <StructuredData config={defaultTemplateConfig} type="page" pageTitle="Chat-Assistenten" />
+  <main class="prose prose-lg max-w-4xl mx-auto px-6 py-16">
+    <h1>Mahlzait mit ChatGPT oder Claude verbinden</h1>
+    <p>
+      Du nutzt ChatGPT oder Claude? Dann kannst du Mahlzait mit deinem Chat-Assistenten verbinden
+      und ihm einfach schreiben, was du gegessen hast. Er trägt es in dein Mahlzait-Tagebuch ein.
+    </p>
+
+    <h2>Was der Assistent dann kann</h2>
+    <p>Nach dem Verbinden kann der Assistent auf deinen Wunsch:</p>
+    <ul>
+      <li>eintragen, was du heute oder gestern gegessen oder getrunken hast,</li>
+      <li>
+        sagen, wie viele Kalorien du heute noch übrig hast, und deine Einträge der letzten sieben
+        Tage zeigen,
+      </li>
+      <li>Einträge aus dem Chat von heute und gestern ändern oder löschen.</li>
+    </ul>
+    <p>
+      Einträge, die du in der App gemacht hast, kann der Assistent nicht ändern oder löschen. Für
+      die Verbindung zahlst du bei Mahlzait nichts.
+    </p>
+
+    <h2>Was du brauchst</h2>
+    <ul>
+      <li>
+        ein Mahlzait-Konto mit eingerichtetem Profil (die <a href="/app/">App</a> gibt es kostenlos
+        für iPhone und Android),
+      </li>
+      <li>ein Konto bei ChatGPT oder Claude.</li>
+    </ul>
+    <p>Verbinden kannst du Mahlzait ab 13 Jahren.</p>
+
+    <h2>So verbindest du Mahlzait</h2>
+    <p>
+      Noch ist die Verbindung nicht für alle frei: Bis Mahlzait in den Verzeichnissen von ChatGPT
+      und Claude steht, klappt sie nur mit Testkonten.
+    </p>
+
+    <h3>In ChatGPT</h3>
+    <p>
+      Suche in ChatGPT im Verzeichnis nach „Mahlzait“ und starte dort die Verbindung. Mahlzait steht
+      dort, sobald OpenAI es freigeschaltet hat.
+    </p>
+
+    <h3>In Claude</h3>
+    <p>
+      Suche in Claude im Verzeichnis nach „Mahlzait“ und starte dort die Verbindung. Bis Mahlzait
+      dort steht, geht es auch über diesen Link: <a href={claudeLink}>Mahlzait in Claude hinzufügen</a>.
+      Er öffnet Claude und trägt den Namen „Mahlzait“ und die Adresse {mcpUrl} schon ein. Bestätige
+      das und starte dann die Verbindung.
+    </p>
+
+    <h3>In beiden Fällen geht es so weiter</h3>
+    <ol>
+      <li>
+        Es öffnet sich die Seite chat.mahlzait.de. Melde dich dort mit deinem Mahlzait-Konto an, so
+        wie in der App: mit Google, mit Apple oder mit E-Mail.
+      </li>
+      <li>
+        Lies, was der Assistent darf. Setze das Häkchen bei der Einwilligung und bestätige mit
+        „Verbinden“.
+      </li>
+      <li>Danach geht es zurück in den Chat. Jetzt kannst du loslegen.</li>
+    </ol>
+
+    <h2>Beispielsätze</h2>
+    <p>Das kannst du zum Beispiel schreiben:</p>
+    <ul>
+      <li>„Ich hatte zwei Brötchen mit Butter und einen Cappuccino zum Frühstück.“</li>
+      <li>„Wie viele Kalorien habe ich heute noch übrig?“</li>
+      <li>„Mach aus meinem Mittagessen eine halbe Portion.“</li>
+    </ul>
+
+    <h2>Was „geschätzt“ heißt</h2>
+    <p>
+      Menge und Nährwerte schätzt der Assistent aus deiner Beschreibung. Mahlzait übernimmt diese
+      Werte ungeprüft. In der aktuellen App steht deshalb bei solchen Einträgen „Aus ChatGPT,
+      geschätzt“ oder „Aus Claude, geschätzt“. Ältere Versionen der App zeigen nur das übliche
+      Zeichen für KI-Einträge. Ein Coach, mit dem du Mahlzeiten teilst, sieht sie wie andere
+      KI-Einträge.
+    </p>
+    <p>
+      Prüfe wichtige Einträge in der App. Stimmt etwas nicht, korrigierst du es direkt in der App
+      oder, bei Einträgen aus dem Chat von heute und gestern, auch im Chat.
+    </p>
+    <p>Die Verbindung ersetzt keine ärztliche oder ernährungsmedizinische Beratung.</p>
+
+    <h2>Verbindung trennen</h2>
+    <p>Du kannst die Verbindung jederzeit trennen:</p>
+    <ul>
+      <li>
+        auf <a href={verbindungenUrl}>chat.mahlzait.de/verbindungen</a>: anmelden und bei der
+        Verbindung „Trennen“ wählen,
+      </li>
+      <li>oder in den Einstellungen von ChatGPT oder Claude.</li>
+    </ul>
+    <p>
+      Danach kann der Assistent nicht mehr auf dein Tagebuch zugreifen. Was er schon eingetragen
+      hat, bleibt in deinem Tagebuch, bis du es löschst. Löschst du dein Mahlzait-Konto, sind auch
+      alle Verbindungen gelöscht.
+    </p>
+
+    <h2>Datenschutz</h2>
+    <p>
+      Was der Assistent liest und einträgt, sind Gesundheitsdaten. Deshalb fragt Mahlzait beim
+      Verbinden ausdrücklich nach deiner Einwilligung. Die Daten gehen an OpenAI (bei ChatGPT) oder
+      an Anthropic (bei Claude). Diese Anbieter verarbeiten sie nach eigenen Regeln, auch in den USA,
+      und je nach deinen Einstellungen auch zum Training und für das Gedächtnis des Assistenten.
+      Mahlzait speichert nur die Einträge, keine Chat-Texte.
+    </p>
+    <p>
+      Alles Weitere steht in der <a href="/datenschutz/">Datenschutzerklärung</a> (Abschnitt 4.9)
+      und in den <a href="/nutzungsbedingungen/">Nutzungsbedingungen</a>.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Fragen oder Probleme mit der Verbindung? Schreib an
+      <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>.
+    </p>
+
+    <section lang="en">
+      <h2 id="in-english">In English</h2>
+      <p>
+        Mahlzait is a calorie and nutrition diary from Germany. Connect your Mahlzait account and tell the assistant what you ate, for example "two bread rolls with butter and a cappuccino". The assistant estimates the amounts and nutrition values and records them in your Mahlzait diary, where the current app marks them as estimated. Ask how many calories you have left today, look at the last seven days, or correct and delete entries you made through the chat today or yesterday. You need a Mahlzait account with a completed profile (free app for iPhone and Android). Mahlzait is not a medical service and gives no medical advice.
+      </p>
+
+      <h3>How to connect</h3>
+      <p>
+        You also need an account with ChatGPT or Claude and must be at least 13. Search the ChatGPT
+        or Claude directory for "Mahlzait" once it is listed there; until then, only test accounts
+        can connect. In Claude you can also use this link: <a href={claudeLink}>Add Mahlzait to
+        Claude</a> (server address {mcpUrl}). Then sign in on chat.mahlzait.de with your Mahlzait
+        account (Google, Apple or email) and give your explicit consent.
+      </p>
+
+      <h3>Privacy in brief</h3>
+      <p>
+        The privacy policy for this connection is available in German only:
+        <a href="/datenschutz/">www.mahlzait.de/datenschutz</a>, section 4.9
+        (www.mahlzait.de/privacy-policy leads there too). In short:
+      </p>
+      <ul>
+        <li>
+          Purpose and legal basis: recording and reading your diary through the assistant. Diary
+          data can be health data, so the legal basis is your explicit consent (Art. 6(1)(a) and
+          Art. 9(2)(a) GDPR).
+        </li>
+        <li>
+          Data: what the assistant passes for an entry (name, amount, estimated nutrition values,
+          day and time), the diary entries and daily goals the assistant reads, your user ID,
+          connection details (assistant, time, proof of consent) and access tokens, which are
+          stored only as hashes. Mahlzait receives no chat texts.
+        </li>
+        <li>
+          Recipients: the provider of the assistant, OpenAI Ireland Ltd. (ChatGPT) or Anthropic
+          Ireland, Limited (Claude), receives the data it reads and records as an independent
+          controller. It processes the data under its own privacy policy, depending on your
+          settings also for training its models and for memory features, and also in the USA (on
+          the basis of an adequacy decision or the provider's standard contractual clauses). The
+          interface server runs on Google Cloud in the EU.
+        </li>
+        <li>
+          Retention: entries like all diary entries, until you delete them or your account; access
+          tokens until you disconnect, at most 90 days without use; proof of consent 12 months
+          after the connection ends; technical logs without content 30 days.
+        </li>
+        <li>
+          Withdrawal: at any time at <a href={verbindungenUrl}>chat.mahlzait.de/verbindungen</a> or
+          in the settings of the assistant. Deleting your Mahlzait account also removes all
+          connection data. Withdrawing consent does not affect the lawfulness of processing before the
+          withdrawal. Data the provider has already received is deleted there under its rules.
+        </li>
+      </ul>
+      <p>Questions: <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a></p>
+    </section>
+  </main>
+</Layout>
