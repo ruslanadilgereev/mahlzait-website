@@ -2,6 +2,7 @@ import AppBanner from "@components/appBanner";
 import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
@@ -17,7 +18,7 @@ function PrivacyPolicyPage({ config }: Props) {
       <main>
         <Navbar />
         <section className="max-w-screen-lg mx-auto py-4 px-4 md:py-16">
-          <Markdown className="prose">{privacyPolicy.content}</Markdown>
+          <Markdown className="prose" remarkPlugins={[remarkGfm]}>{privacyPolicy.content}</Markdown>
         </section>
         <AppBanner />
         <Footer />

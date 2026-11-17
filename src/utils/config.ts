@@ -587,8 +587,8 @@ Dabei können insbesondere folgende Daten verarbeitet werden:
 - IP‑Adresse (in der Regel gekürzt/anonymisiert, soweit konfiguriert).
 
 **Zweck:** Reichweitenmessung und Verbesserung der Website.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).\
-**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.\
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).\\
+**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.\\
 **Wie Google die erhobenen Daten verwendet:** Informationen finden Sie auf Googles Seite zur unternehmerischen Datenverantwortung: [https://business.safety.google/privacy/](https://business.safety.google/privacy/).
 
 ### 3.5 Microsoft Clarity (nur mit Einwilligung)
@@ -608,8 +608,8 @@ Dabei können u.a. verarbeitet werden:
 - technische Identifier (z.B. Cookie‑/Pixel‑IDs).
 
 **Zweck:** Kampagnenmessung, Attribution, Marketing‑Optimierung.  
-**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).\
-**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.\
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung).\\
+**Widerruf:** jederzeit über die Cookie‑Einstellungen auf der Website.\\
 **Wie Google die erhobenen Daten verwendet:** Informationen finden Sie auf Googles Seite zur unternehmerischen Datenverantwortung: [https://business.safety.google/privacy/](https://business.safety.google/privacy/).
 
 ## 4. Datenverarbeitung in der App
