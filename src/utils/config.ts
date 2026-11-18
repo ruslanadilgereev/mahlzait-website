@@ -901,7 +901,7 @@ Sie verpflichten sich, Folgendes nicht zu tun:
 
 ## Verbindung mit KI-Assistenten
 
-(1) Mahlzait bietet kostenlos eine Schnittstelle, über die Sie einen KI-Assistenten (derzeit ChatGPT und Claude) mit Ihrem Mahlzait-Konto verbinden. Für den Assistenten gelten die Bedingungen seines Anbieters; ein Konto dort ist Voraussetzung.
+(1) Mahlzait bietet Nutzern mit Mahlzait Pro eine Schnittstelle, über die Sie einen KI-Assistenten (derzeit ChatGPT und Claude) mit Ihrem Mahlzait-Konto verbinden. Ohne aktives Mahlzait Pro ist keine neue Verbindung möglich; eine bestehende Verbindung bleibt bestehen, Eintragen und Abrufen sind dann aber nicht möglich. Für den Assistenten gelten die Bedingungen seines Anbieters; ein Konto dort ist Voraussetzung.
 
 (2) Mengen und Nährwerte schätzt der Assistent. Mahlzait übernimmt sie ungeprüft und kennzeichnet sie in der aktuellen App als geschätzt; für ihre Richtigkeit übernimmt Mahlzait keine Gewähr. Bitte prüfen Sie wichtige Einträge in der App.
 
