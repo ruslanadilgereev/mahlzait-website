@@ -55,15 +55,13 @@ const doenerSeiten = new Set([
   "kebab",
   "vegetarischer-doener",
 ]);
-// Lahmacun und Pizza Kebab rechnet der nächste Commit neu.
-const spaeter = new Set(["lahmacun", "pizza-kebab"]);
 // Seiten, auf denen der Big Mac selbst Gegenstand ist (Variante mit eigener Angabe)
 const bigMacSeiten = new Set(["burger", "double-burger", "mcdonalds"]);
 
 const foods = readdirSync(join(repoRoot, "src/data/foods"))
   .filter((f) => f.endsWith(".json"))
   .map((f) => JSON.parse(readRepoFile("src/data/foods/" + f)))
-  .filter((food) => !doenerSeiten.has(food.slug) && !spaeter.has(food.slug));
+  .filter((food) => !doenerSeiten.has(food.slug));
 
 // Erlaubte Werte je Vergleichsname; "Döner" steht in Listen je Portion und je 100 g.
 const erlaubt = {
@@ -76,6 +74,8 @@ const erlaubt = {
   "Döner (350g)": [standard.kcal],
   "Döner (250g)": [doener250g],
   "Dürüm Döner": [dueruem],
+  Dürüm: [dueruem],
+  "Dürüm (347g)": [dueruem],
   Dönerteller: [tellerJe100g],
   "Big Mac": [bigMac],
   "McDonald's Big Mac": [bigMac],
