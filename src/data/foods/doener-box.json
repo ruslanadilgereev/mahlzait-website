@@ -3,48 +3,49 @@
   "name": "Döner Box",
   "emoji": "📦",
   "category": "fast-food",
+  "source": "USDA FoodData Central (FDC-API, 22.11.2026), Rezeptrechnung aus Einzelzutaten: FDC-IDs 170698 (Fast foods, potato, french fried in vegetable oil: 312 kcal), 174032 (Beef, ground, 85% lean meat / 15% fat, patty, cooked, broiled: 250 kcal), 2705448 (Tzatziki dip: 91 kcal), 2709077 (Rice pilaf: 137 kcal), 169248 (Lettuce, iceberg (includes crisphead types), raw: 14 kcal), 170457 (Tomatoes, red, ripe, raw, year round average: 18 kcal), 169977 (Cabbage, red, raw: 31 kcal), 168409 (Cucumber, with peel, raw: 15 kcal), 170000 (Onions, raw: 40 kcal), 172388 (Chicken, broilers or fryers, thigh, meat only, cooked, roasted: 179 kcal), 171241 (Cheese, gouda: 356 kcal), 172455 (Falafel, home-prepared: 333 kcal), 174915 (Bread, pita, white, enriched: 275 kcal), 171284 (Yogurt, plain, whole milk: 61 kcal), 171009 (Salad dressing, mayonnaise, regular: 680 kcal), 169230 (Garlic, raw: 149 kcal), 171402 (Salad dressing, thousand island, commercial, regular: 379 kcal), Werte je 100 g; Grammangaben und Rezeptannahmen wie im Döner-Kalorien-Rechner (/doener-kalorien-rechner/)",
   "seo": {
-    "title": "Dönerbox Kalorien: 195 kcal/100g + Rechner | Mahlzait",
-    "description": "Eine Dönerbox (Döner Box) hat 195 kcal pro 100g, die ganze Box mit Pommes ca. 880 kcal. Berechne deine Portion, mit Salat-Variante & Spar-Tipps."
+    "title": "Dönerbox Kalorien: 265 kcal/100g + Rechner | Mahlzait",
+    "description": "Eine Dönerbox (Döner Box) hat 265 kcal pro 100g, die ganze Box mit Pommes (314 g) 833 kcal. Berechne deine Portion, mit Salat-Variante & Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 195,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 9,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 450,
+    "calories_per_100g": 265,
+    "protein_per_100g": 12.9,
+    "carbs_per_100g": 20.7,
+    "fat_per_100g": 14.2,
+    "fiber_per_100g": 1.9,
+    "typical_portion_g": 314,
     "typical_portion_name": "1 Döner Box"
   },
   "variants": [
-    {"name": "Döner Box mit Pommes", "portion_g": 450, "calories": 880, "protein": 35, "carbs": 75, "fat": 48, "tip": "Klassiker vom Imbiss"},
-    {"name": "Döner Box mit Reis", "portion_g": 450, "calories": 750, "protein": 38, "carbs": 80, "fat": 28, "tip": "Etwas leichter als mit Pommes"},
-    {"name": "Döner Box mit Salat", "portion_g": 400, "calories": 520, "protein": 35, "carbs": 20, "fat": 32, "tip": "Kalorienärmste Variante"},
-    {"name": "Döner Box Hähnchen", "portion_g": 450, "calories": 780, "protein": 42, "carbs": 72, "fat": 35, "tip": "Mehr Protein, weniger Fett"},
-    {"name": "Döner Box mit Käse überbacken", "portion_g": 500, "calories": 1050, "protein": 45, "carbs": 78, "fat": 58, "tip": "Extra Käse = extra Kalorien"},
-    {"name": "Döner Box Vegetarisch (Falafel)", "portion_g": 420, "calories": 720, "protein": 22, "carbs": 80, "fat": 34, "tip": "Pflanzliche Alternative"},
-    {"name": "Döner Box XL", "portion_g": 600, "calories": 1170, "protein": 48, "carbs": 100, "fat": 62, "tip": "Doppelte Fleischportion"}
+    {"name": "Döner Box mit Pommes", "portion_g": 314, "calories": 833, "protein": 41, "carbs": 65, "fat": 45, "tip": "Klassiker vom Imbiss"},
+    {"name": "Döner Box mit Reis", "portion_g": 366, "calories": 635, "protein": 42, "carbs": 51, "fat": 28, "tip": "Leichter als mit Pommes"},
+    {"name": "Döner Box mit Salat", "portion_g": 310, "calories": 383, "protein": 37, "carbs": 8, "fat": 22, "tip": "Kalorienärmste Variante"},
+    {"name": "Döner Box Hähnchen", "portion_g": 314, "calories": 740, "protein": 39, "carbs": 65, "fat": 35, "tip": "Weniger Fett"},
+    {"name": "Döner Box mit Käse überbacken", "portion_g": 344, "calories": 940, "protein": 48, "carbs": 66, "fat": 53, "tip": "30 g Gouda extra"},
+    {"name": "Döner Box Vegetarisch (Falafel)", "portion_g": 269, "calories": 791, "protein": 18, "carbs": 92, "fat": 40, "tip": "Pflanzliche Alternative"},
+    {"name": "Döner Box XL", "portion_g": 456, "calories": 1236, "protein": 60, "carbs": 97, "fat": 66, "tip": "Portionsgröße 150 %"}
   ],
   "comparison": [
-    {"name": "Döner Kebab", "calories": 600, "emoji": "🥙"},
+    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
     {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
     {"name": "Big Mac Menü", "calories": 1080, "emoji": "🍔"},
     {"name": "Hähnchenbrust mit Reis", "calories": 450, "emoji": "🍗"}
   ],
   "tips": [
-    {"title": "Reis statt Pommes", "text": "Mit Reis statt Pommes sparst du ca. 130 kcal und bekommst langsamere Kohlenhydrate.", "icon": "🍚"},
-    {"title": "Salat-Variante wählen", "text": "Eine Döner Box mit Salat statt Pommes spart bis zu 360 kcal – bei gleichem Fleischanteil.", "icon": "🥗"},
-    {"title": "Sauce reduzieren", "text": "Knoblauch- und Cocktailsauce haben je 50-80 kcal pro Portion. Weniger Sauce = weniger Kalorien.", "icon": "🥫"},
-    {"title": "Hähnchenfleisch bestellen", "text": "Hähnchen-Döner hat ca. 15% weniger Fett als Kalb/Lamm-Mischungen.", "icon": "🍗"},
-    {"title": "Ohne Käse-Überbacken", "text": "Die Käseschicht fügt ca. 170 kcal hinzu. Ohne Käse bleibt die Box deutlich leichter.", "icon": "🧀"}
+    {"title": "Reis statt Pommes", "text": "Mit Reis statt Pommes hat die Box 635 statt 833 kcal, das spart 198 kcal.", "icon": "🍚"},
+    {"title": "Salat-Variante wählen", "text": "Eine Döner Box mit Salat statt Pommes hat 383 kcal und spart 450 kcal, bei gleicher Fleischmenge.", "icon": "🥗"},
+    {"title": "Sauce reduzieren", "text": "Knoblauch- und Cocktailsoße haben 107 und 114 kcal pro Portion (30 g), Joghurtsoße 27 kcal. Weniger Mayonnaise-Soße heißt weniger Kalorien.", "icon": "🥫"},
+    {"title": "Hähnchenfleisch bestellen", "text": "Eine Hähnchen-Box hat 35 g Fett statt 45 g und 93 kcal weniger als mit Kalb- oder Rindfleisch.", "icon": "🍗"},
+    {"title": "Ohne Käse-Überbacken", "text": "30 g Gouda fügen 107 kcal hinzu. Ohne Käse bleibt die Box bei 833 kcal.", "icon": "🧀"}
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat eine Döner Box?", "answer": "Eine klassische Döner Box mit Pommes hat ca. 880 kcal. Mit Reis sind es ca. 750 kcal, mit Salat nur ca. 520 kcal."},
-    {"question": "Was hat mehr Kalorien: Döner Box oder Döner im Brot?", "answer": "Eine Döner Box mit Pommes (880 kcal) hat deutlich mehr Kalorien als ein Döner im Brot (550-650 kcal), hauptsächlich wegen der Pommes."},
-    {"question": "Ist eine Döner Box gut zum Abnehmen?", "answer": "Die klassische Döner Box mit Pommes ist sehr kalorienreich. Die Salat-Variante (520 kcal) mit viel Protein ist aber eine brauchbare Option für eine sättigende Mahlzeit."},
-    {"question": "Wie viel Protein hat eine Döner Box?", "answer": "Eine Döner Box liefert ca. 35-48g Protein pro Portion, je nach Fleischmenge und Variante. Das macht sie trotz der Kalorien zu einer proteinreichen Mahlzeit."},
-    {"question": "Was ist die kalorienärmste Döner Box?", "answer": "Die kalorienärmste Variante ist die Döner Box mit Salat statt Pommes (ca. 520 kcal) oder die Hähnchen-Variante mit Reis (ca. 780 kcal)."},
-    {"question": "Wie schwer ist eine Döner Box?", "answer": "Eine Standard-Döner Box wiegt ca. 400-500g. Die XL-Version kann bis zu 600g wiegen. Das Gewicht variiert je nach Imbiss."}
+    {"question": "Wie viele Kalorien hat eine Döner Box?", "answer": "Eine Döner Box mit Pommes und Kalb- oder Rindfleisch hat 833 kcal (314 g). Mit Reis sind es 635 kcal, mit Salat 383 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten."},
+    {"question": "Was hat mehr Kalorien: Döner Box oder Döner im Brot?", "answer": "Eine Döner Box mit Pommes (833 kcal) hat mehr Kalorien als ein Döner im Brot (696 kcal). Den Unterschied machen die Pommes: 154 g haben 480 kcal, 120 g Fladenbrot 330 kcal."},
+    {"question": "Ist eine Döner Box gut zum Abnehmen?", "answer": "Die klassische Döner Box mit Pommes ist sehr kalorienreich. Die Salat-Variante (383 kcal) mit 37 g Eiweiß ist aber eine brauchbare Option für eine sättigende Mahlzeit."},
+    {"question": "Wie viel Protein hat eine Döner Box?", "answer": "Eine Döner Box mit Pommes liefert 41 g Eiweiß, mit Hähnchen 39 g, als XL-Box 60 g. Den größten Teil liefern die 130 g Fleisch."},
+    {"question": "Was ist die kalorienärmste Döner Box?", "answer": "Die Döner Box mit Salat statt Pommes (383 kcal). Mit Reis sind es 635 kcal, mit Hähnchen und Pommes 740 kcal."},
+    {"question": "Wie schwer ist eine Döner Box?", "answer": "In unserer Rechnung wiegt die Standard-Box 314 g (154 g Pommes, 130 g Fleisch, 30 g Soße), die XL-Box mit Portionsgröße 150 % 456 g. Das Gewicht variiert je nach Imbiss."}
   ],
   "related_foods": ["pommes-frites", "gyros", "falafel", "duerrum"]
 }

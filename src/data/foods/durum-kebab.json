@@ -3,9 +3,10 @@
   "name": "Dürüm Kebab",
   "emoji": "🌯",
   "category": "fast-food",
+  "source": "USDA FoodData Central (FDC-API, 22.11.2026), Rezeptrechnung aus Einzelzutaten: FDC-IDs 175037 (Tortillas, ready-to-bake or -fry, flour, refrigerated: 306 kcal), 169248 (Lettuce, iceberg (includes crisphead types), raw: 14 kcal), 170457 (Tomatoes, red, ripe, raw, year round average: 18 kcal), 169977 (Cabbage, red, raw: 31 kcal), 168409 (Cucumber, with peel, raw: 15 kcal), 170000 (Onions, raw: 40 kcal), 174032 (Beef, ground, 85% lean meat / 15% fat, patty, cooked, broiled: 250 kcal), 2705448 (Tzatziki dip: 91 kcal), 172388 (Chicken, broilers or fryers, thigh, meat only, cooked, roasted: 179 kcal), 172455 (Falafel, home-prepared: 333 kcal), 174915 (Bread, pita, white, enriched: 275 kcal), 171284 (Yogurt, plain, whole milk: 61 kcal), 171009 (Salad dressing, mayonnaise, regular: 680 kcal), 169230 (Garlic, raw: 149 kcal), 171402 (Salad dressing, thousand island, commercial, regular: 379 kcal), 171186 (Sauce, hot chile, sriracha: 93 kcal), Werte je 100 g; Grammangaben und Rezeptannahmen wie im Döner-Kalorien-Rechner (/doener-kalorien-rechner/)",
   "seo": {
     "title": "Dürüm Kebab Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Dürüm Kebab? Ein normaler Dürüm (400g) hat ca. 860 kcal. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Dürüm Kebab? Ein normaler Dürüm (347g) hat 724 kcal. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps.",
     "keywords": [
       "dürüm kebab kalorien",
       "dürüm kebab kcal",
@@ -17,81 +18,83 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 215,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 10,
+    "calories_per_100g": 209,
+    "protein_per_100g": 13.1,
+    "carbs_per_100g": 17.9,
+    "fat_per_100g": 9,
     "fiber_per_100g": 1.5,
-    "typical_portion_g": 400,
+    "typical_portion_g": 347,
     "typical_portion_name": "1 Dürüm (normal)"
   },
   "variants": [
     {
-      "name": "Dürüm klein (250g)",
-      "portion_g": 250,
-      "calories": 538,
-      "protein": 28,
-      "carbs": 50,
-      "fat": 25
+      "name": "Dürüm klein (252g)",
+      "portion_g": 252,
+      "calories": 515,
+      "protein": 32,
+      "carbs": 44,
+      "fat": 22,
+      "tip": "Portionsgröße 70 %"
     },
     {
-      "name": "Dürüm normal (400g)",
-      "portion_g": 400,
-      "calories": 860,
-      "protein": 44,
-      "carbs": 80,
-      "fat": 40,
+      "name": "Dürüm normal (347g)",
+      "portion_g": 347,
+      "calories": 724,
+      "protein": 46,
+      "carbs": 62,
+      "fat": 31,
       "tip": "Standard-Größe im Imbiss"
     },
     {
-      "name": "Dürüm groß (450g)",
-      "portion_g": 450,
-      "calories": 968,
-      "protein": 50,
-      "carbs": 90,
-      "fat": 45
-    },
-    {
-      "name": "Dürüm XXL (500g)",
-      "portion_g": 500,
-      "calories": 1075,
-      "protein": 55,
-      "carbs": 100,
-      "fat": 50,
-      "tip": "Sehr sättigend, deckt fast eine halbe Tagesration"
-    },
-    {
-      "name": "Dürüm mit Hähnchen (400g)",
-      "portion_g": 400,
-      "calories": 800,
-      "protein": 48,
+      "name": "Dürüm groß (442g)",
+      "portion_g": 442,
+      "calories": 934,
+      "protein": 59,
       "carbs": 80,
-      "fat": 32,
-      "tip": "Etwas magerer als mit Kalbfleisch"
-    },
-    {
-      "name": "Veggie-Dürüm mit Falafel (400g)",
-      "portion_g": 400,
-      "calories": 880,
-      "protein": 32,
-      "carbs": 92,
       "fat": 40,
-      "tip": "Fleischfrei, aber durch Falafel & Sauce kalorienreich"
+      "tip": "Portionsgröße 130 %"
     },
     {
-      "name": "Dürüm ohne Sauce (400g)",
-      "portion_g": 400,
-      "calories": 740,
+      "name": "Dürüm XXL (506g)",
+      "portion_g": 506,
+      "calories": 1073,
+      "protein": 68,
+      "carbs": 93,
+      "fat": 46,
+      "tip": "Portionsgröße 150 %"
+    },
+    {
+      "name": "Dürüm mit Hähnchen (347g)",
+      "portion_g": 347,
+      "calories": 632,
       "protein": 44,
-      "carbs": 76,
-      "fat": 28,
-      "tip": "Spart rund 120 kcal gegenüber der Variante mit viel Sauce"
+      "carbs": 62,
+      "fat": 22,
+      "tip": "Etwas magerer als mit Kalb oder Rind"
+    },
+    {
+      "name": "Veggie-Dürüm mit Falafel (302g)",
+      "portion_g": 302,
+      "calories": 683,
+      "protein": 23,
+      "carbs": 89,
+      "fat": 26,
+      "tip": "Fleischfrei, aber durch Falafel kalorienreich"
+    },
+    {
+      "name": "Dürüm ohne Sauce (317g)",
+      "portion_g": 317,
+      "calories": 697,
+      "protein": 44,
+      "carbs": 61,
+      "fat": 29,
+      "tip": "Spart 27 kcal gegenüber Joghurtsoße, 107 kcal gegenüber Knoblauchsoße"
     }
   ],
   "comparison": [
     {
       "name": "Döner im Brot",
-      "calories": 700,
+      "calories": 696,
       "emoji": "🥙"
     },
     {
@@ -113,12 +116,12 @@
   "tips": [
     {
       "title": "Sauce macht den Unterschied",
-      "text": "Knoblauch- und Cocktailsauce sind die größten versteckten Kalorienquellen. Wer nach scharfer Sauce oder Joghurtdip fragt, spart schnell 100 bis 150 kcal pro Dürüm.",
+      "text": "Knoblauch- und Cocktailsoße sind die größten versteckten Kalorienquellen: 107 und 114 kcal pro 30 g. Wer scharfe Soße (28 kcal) oder Joghurtsoße (27 kcal) nimmt, spart pro Dürüm 80 bis 86 kcal.",
       "icon": "🥫"
     },
     {
       "title": "Hähnchen statt Kalbfleisch",
-      "text": "Ein Dürüm mit Hähnchenfleisch hat oft 50 bis 70 kcal weniger als die Kalb- oder Lammvariante und liefert trotzdem reichlich Protein.",
+      "text": "Ein Dürüm mit Hähnchenfleisch hat 92 kcal weniger als die Kalb- oder Rindvariante und liefert trotzdem 44 g Eiweiß.",
       "icon": "🍗"
     },
     {
@@ -128,39 +131,39 @@
     },
     {
       "title": "Halber Dürüm als Mahlzeit",
-      "text": "Ein normaler Dürüm mit rund 860 kcal reicht für viele als komplette Mahlzeit. Die zweite Hälfte später zu essen verteilt die Energie sinnvoller über den Tag.",
+      "text": "Ein normaler Dürüm mit 724 kcal reicht für viele als komplette Mahlzeit. Die zweite Hälfte später zu essen verteilt die Energie sinnvoller über den Tag.",
       "icon": "✂️"
     },
     {
       "title": "Proteinreich, aber fettlastig",
-      "text": "Mit etwa 44 g Protein pro Dürüm ist die Sättigung gut. Das Fett aus Fleisch und Sauce treibt die Kalorien aber stark nach oben, daher Menge im Blick behalten.",
+      "text": "Mit 46 g Protein pro Dürüm ist die Sättigung gut. Das Fett aus Fleisch, Yufka und Soße (31 g) treibt die Kalorien aber nach oben, daher Menge im Blick behalten.",
       "icon": "💪"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Dürüm Kebab?",
-      "answer": "Ein Dürüm Kebab in normaler Größe (ca. 400 g) hat rund 860 kcal. Pro 100 g sind es etwa 215 kcal. Kleinere Varianten liegen bei rund 540 kcal, XXL-Dürüm können über 1.000 kcal erreichen."
+      "answer": "Ein Dürüm Kebab in normaler Größe (347 g) hat 724 kcal. Pro 100 g sind es 209 kcal. Ein kleiner Dürüm (252 g) hat 515 kcal, ein XXL-Dürüm (506 g) 1.073 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Dürüm?",
-      "answer": "Ein normaler Dürüm (400 g) enthält etwa 80 g Kohlenhydrate, die hauptsächlich aus dem dünnen Teigfladen stammen. Pro 100 g sind das rund 20 g."
+      "answer": "Ein normaler Dürüm (347 g) enthält 62 g Kohlenhydrate, 58 g davon aus dem Yufka-Fladen. Pro 100 g sind das 17,9 g."
     },
     {
       "question": "Wie viel Protein steckt in einem Dürüm Kebab?",
-      "answer": "Ein normaler Dürüm liefert etwa 44 g Protein, vor allem aus dem Fleisch. Das macht ihn vergleichsweise sättigend, auch wenn der Fett- und Kaloriengehalt hoch ist."
+      "answer": "Ein normaler Dürüm liefert 46 g Protein, vor allem aus dem Fleisch. Das macht ihn vergleichsweise sättigend, auch wenn der Fett- und Kaloriengehalt hoch ist."
     },
     {
       "question": "Ist ein Dürüm Kebab zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 860 kcal ist ein Dürüm keine Light-Mahlzeit, lässt sich aber durch wenig Sauce, Hähnchen und extra Salat auf etwa 700 kcal senken. Als gelegentliche Hauptmahlzeit passt er in eine kalorienbewusste Ernährung."
+      "answer": "In Maßen ja. Mit 724 kcal ist ein Dürüm keine Light-Mahlzeit, lässt sich aber mit Hähnchen auf 632 kcal senken. Als gelegentliche Hauptmahlzeit passt er in eine kalorienbewusste Ernährung."
     },
     {
       "question": "Ist ein Dürüm gesünder als ein Döner im Brot?",
-      "answer": "Beide sind ähnlich. Ein Dürüm hat durch den dünnen Teigfladen meist etwas mehr Kalorien als ein Döner im Fladenbrot, weil mehr Sauce und Fleisch hineinpassen. Entscheidend sind Saucenmenge und Fleischsorte."
+      "answer": "Beide sind ähnlich. Ein Dürüm hat bei gleicher Füllung 28 kcal mehr als ein Döner im Fladenbrot (724 statt 696 kcal), weil der Yufka-Fladen etwas mehr Kalorien hat. Entscheidend sind Soßenmenge und Fleischsorte."
     },
     {
       "question": "Wie viel Fett hat ein Dürüm Kebab?",
-      "answer": "Ein normaler Dürüm (400 g) enthält etwa 40 g Fett, also rund 10 g pro 100 g. Der größte Teil stammt aus dem Fleisch und der Sauce."
+      "answer": "Ein normaler Dürüm (347 g) enthält 31 g Fett, also 9 g pro 100 g. Der größte Teil stammt aus dem Fleisch (20 g), dazu kommen Yufka (9 g) und Soße."
     }
   ],
   "related_foods": [

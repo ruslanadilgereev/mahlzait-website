@@ -79,7 +79,7 @@ function FastfoodKalorienPage({ config, items }: Props) {
             <p className="mt-4 text-lg opacity-80 max-w-3xl">
               {items.length} Gerichte aus {brands.length} Gruppen, sortierbar
               nach Kalorien und Eiweiß. Beim Döner reicht die Spanne je nach
-              Fleisch, Soße und Größe von gut 400 bis über 1.000 Kalorien, und
+              Fleisch, Soße und Größe von knapp 400 bis über 1.200 Kalorien, und
               genau deshalb hilft eine einzelne Zahl hier nicht weiter. Filtere
               stattdessen nach dem, was in dein Tagesziel passt. Alle Werte
               gelten je Portion, nicht pro 100 Gramm.
