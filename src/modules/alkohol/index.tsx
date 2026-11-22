@@ -459,7 +459,7 @@ function AlkoholKalorienRechnerPage({ config }: Props) {
                   <h3 className="card-title">🍬 Versteckte Kalorien</h3>
                   <p>
                     Cocktails und Mischgetränke enthalten oft zusätzlich Zucker, Säfte und Sirups. 
-                    Ein Piña Colada kann über 500 kcal haben – mehr als ein Big Mac!
+                    Eine Piña Colada kann über 500 kcal haben, fast so viel wie ein Big Mac (563 kcal).
                   </p>
                 </div>
               </div>

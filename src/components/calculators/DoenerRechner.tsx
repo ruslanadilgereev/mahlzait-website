@@ -12,8 +12,8 @@ const activities = [
 ];
 
 const foods = [
-  { name: "Döner", kcal: 650, emoji: "🥙" },
-  { name: "Big Mac", kcal: 503, emoji: "🍔" },
+  { name: "Döner", kcal: 696, emoji: "🥙" },
+  { name: "Big Mac", kcal: 563, emoji: "🍔" },
   { name: "Pizza Margherita", kcal: 800, emoji: "🍕" },
   { name: "Schnitzel mit Pommes", kcal: 950, emoji: "🍖" },
   { name: "Currywurst mit Pommes", kcal: 780, emoji: "🌭" },

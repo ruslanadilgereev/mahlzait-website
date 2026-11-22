@@ -244,8 +244,8 @@ function PizzaKalorienRechnerPage({ config }: Props) {
 
   const getCalorieComparison = (calories: number) => {
     return [
-      { name: "Döner Kebabs", amount: Math.round((calories / 600) * 10) / 10, emoji: "🥙" },
-      { name: "Big Macs", amount: Math.round((calories / 509) * 10) / 10, emoji: "🍔" },
+      { name: "Döner Kebabs", amount: Math.round((calories / 696) * 10) / 10, emoji: "🥙" },
+      { name: "Big Macs", amount: Math.round((calories / 563) * 10) / 10, emoji: "🍔" },
       { name: "Tafeln Schoko", amount: Math.round((calories / 530) * 10) / 10, emoji: "🍫" },
       { name: "Min. Joggen", amount: Math.round(calories / 10), emoji: "🏃" },
       { name: "Min. Spazieren", amount: Math.round(calories / 4), emoji: "🚶" },
@@ -772,7 +772,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                 </div>
                 <div className="collapse-content">
                   <p>
-                    Ein <strong>Döner (550-650 kcal)</strong> hat weniger Kalorien als eine ganze
+                    Ein <strong>Döner (696 kcal)</strong> hat weniger Kalorien als eine ganze
                     Pizza (800-1200 kcal), aber mehr als 2-3 Stücke Pizza. Entscheidend ist die
                     Portion! Döner hat mehr Protein, Pizza mehr Kohlenhydrate.
                   </p>

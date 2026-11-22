@@ -85,7 +85,7 @@ function SchritteKalorienRechnerPage({ config }: Props) {
     } else if (calories < 400) {
       equivalentFood = "1 Portion Pommes";
     } else if (calories < 500) {
-      equivalentFood = "1 Döner Tasche";
+      equivalentFood = "1 Kinder-Döner";
     } else {
       equivalentFood = "1 komplettes Mittagessen";
     }

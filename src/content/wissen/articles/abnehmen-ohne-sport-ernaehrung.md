@@ -28,7 +28,7 @@ Ja, aber:
 
 **1. Sport verbrennt weniger als du denkst**
 
-Eine Stunde Joggen verbrennt etwa 400-600 Kalorien. Klingt viel – aber das ist ein [Döner](/kalorien/doener/). Oder zwei Latte Macchiato mit Zucker.
+Eine Stunde Joggen verbrennt etwa 400-600 Kalorien. Klingt viel, aber das ist nicht mal ein [Döner](/kalorien/doener/) (696 kcal), sondern eher zwei Latte Macchiato mit Zucker.
 
 Um 1 kg Fett zu verbrennen, müsstest du etwa 15 Stunden laufen. Wer macht das?
 

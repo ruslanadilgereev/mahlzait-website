@@ -90,10 +90,10 @@ Hier kommt die unbequeme Wahrheit: **Die Kalorien im Alkohol sind oft nicht das 
 | | Kalorien |
 |--|----------|
 | 4 Bier | 860 kcal |
-| Döner um 2 Uhr | 700 kcal |
+| Döner um 2 Uhr | 696 kcal |
 | Pizza-Slice von Freunden | 300 kcal |
 | [Chips](/kalorien/chips/) beim Vorglühen | 250 kcal |
-| **Gesamt** | **2.110 kcal** |
+| **Gesamt** | **2.106 kcal** |
 
 Das ist für viele Menschen **ein ganzer Tagesbedarf** – zusätzlich zum normalen Essen an dem Tag.
 
