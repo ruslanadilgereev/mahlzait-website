@@ -253,6 +253,26 @@
       "permanent": true
     },
     {
+      "source": "/kalorien/maggi-ravioli",
+      "destination": "/kalorien/ravioli-maggi/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/maggi-ravioli/",
+      "destination": "/kalorien/ravioli-maggi/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/reispapier",
+      "destination": "/kalorien/rice-paper/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/reispapier/",
+      "destination": "/kalorien/rice-paper/",
+      "permanent": true
+    },
+    {
       "source": "/:path((?!api/|go/|i/|social/|_vercel/|wp-)[^.]*[^/.])",
       "destination": "/:path/",
       "permanent": true
