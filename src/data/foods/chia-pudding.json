@@ -3,9 +3,29 @@
   "name": "Chia-Pudding",
   "emoji": "🍮",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Glas à 250 g): 30 g Chiasamen (FDC-ID 170554, Seeds, chia seeds, dried: 486 kcal), 210 g Vollmilch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 10 g Honig (FDC-ID 169640, Honey: 304 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Chiasamen",
+        "g": 30,
+        "fdcId": 170554
+      },
+      {
+        "name": "Vollmilch",
+        "g": 210,
+        "fdcId": 171265
+      },
+      {
+        "name": "Honig",
+        "g": 10,
+        "fdcId": 169640
+      }
+    ]
+  },
   "seo": {
     "title": "Chia-Pudding Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Chia-Pudding? Ca. 120 kcal pro 100g, eine Portion (250g) rund 300 kcal. Nährwerte, Varianten mit Milch oder Pflanzendrink & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Chia-Pudding? Ca. 122 kcal pro 100g, eine Portion (250g) rund 305 kcal. Nährwerte, Varianten mit Milch oder Pflanzendrink & Diät-Tipps.",
     "keywords": [
       "chia pudding kalorien",
       "chia pudding kcal",
@@ -16,11 +36,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 120,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 9.5,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 4.5,
+    "calories_per_100g": 122,
+    "protein_per_100g": 4.6,
+    "carbs_per_100g": 12.4,
+    "fat_per_100g": 6.4,
+    "fiber_per_100g": 4.1,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion (Glas)"
   },
@@ -28,53 +48,81 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 180,
-      "protein": 8,
-      "carbs": 14,
+      "calories": 183,
+      "protein": 7,
+      "carbs": 19,
       "fat": 10
     },
     {
       "name": "Portion mittel (200g)",
       "portion_g": 200,
-      "calories": 240,
-      "protein": 10,
-      "carbs": 19,
-      "fat": 14
+      "calories": 244,
+      "protein": 9,
+      "carbs": 25,
+      "fat": 13
     },
     {
       "name": "1 Glas (250g)",
       "portion_g": 250,
-      "calories": 300,
+      "calories": 305,
       "protein": 12,
-      "carbs": 24,
-      "fat": 18,
+      "carbs": 31,
+      "fat": 16,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (300g)",
       "portion_g": 300,
-      "calories": 360,
-      "protein": 15,
-      "carbs": 28,
-      "fat": 21
+      "calories": 366,
+      "protein": 14,
+      "carbs": 37,
+      "fat": 19
     },
     {
       "name": "Mit Mandelmilch (250g)",
       "portion_g": 250,
-      "calories": 212,
-      "protein": 9,
-      "carbs": 15,
-      "fat": 14,
-      "tip": "Kalorienärmer"
+      "calories": 208,
+      "protein": 6,
+      "carbs": 24,
+      "fat": 11,
+      "tip": "Kalorienärmer",
+      "basis": [
+        {
+          "fdcId": 170554,
+          "g": 30
+        },
+        {
+          "fdcId": 174832,
+          "g": 210
+        },
+        {
+          "fdcId": 169640,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Mit Kokosmilch (200g)",
       "portion_g": 200,
-      "calories": 320,
-      "protein": 6,
-      "carbs": 14,
-      "fat": 28,
-      "tip": "Cremig & sättigend"
+      "calories": 491,
+      "protein": 8,
+      "carbs": 25,
+      "fat": 43,
+      "tip": "Cremig & sättigend",
+      "basis": [
+        {
+          "fdcId": 170554,
+          "g": 30
+        },
+        {
+          "fdcId": 170173,
+          "g": 160
+        },
+        {
+          "fdcId": 169640,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Chiasamen trocken (15g)",
@@ -83,7 +131,13 @@
       "protein": 2,
       "carbs": 6,
       "fat": 5,
-      "tip": "Pro Esslöffel"
+      "tip": "Pro Esslöffel",
+      "basis": [
+        {
+          "fdcId": 170554,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Chiasamen trocken (30g)",
@@ -92,29 +146,45 @@
       "protein": 5,
       "carbs": 13,
       "fat": 9,
-      "tip": "Menge für 1 Portion"
+      "tip": "Menge für 1 Portion",
+      "basis": [
+        {
+          "fdcId": 170554,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Pudding",
-      "calories": 130,
-      "emoji": "🍮"
+      "name": "Vanillepudding (1 Becher, 150g)",
+      "calories": 170,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "pudding"
+        }
+      ]
     },
     {
-      "name": "Joghurt",
-      "calories": 61,
-      "emoji": "🥛"
+      "name": "Naturjoghurt (1 Becher, 150g)",
+      "calories": 92,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "joghurt"
+        }
+      ]
     },
     {
-      "name": "Haferflocken",
-      "calories": 372,
-      "emoji": "🥣"
-    },
-    {
-      "name": "Chiasamen (trocken)",
-      "calories": 486,
-      "emoji": "🌱"
+      "name": "Haferflocken (50g)",
+      "calories": 190,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferflocken"
+        }
+      ]
     }
   ],
   "tips": [
@@ -125,7 +195,7 @@
     },
     {
       "title": "Kalorien über die Flüssigkeit steuern",
-      "text": "Der größte Kalorienhebel ist die Flüssigkeit. Mit Mandel- oder Magermilch statt Vollmilch oder Kokosmilch sparst du leicht 100 kcal pro Portion.",
+      "text": "Der größte Kalorienhebel ist die Flüssigkeit. Mit ungesüßter Mandelmilch statt Vollmilch sparst du rund 97 kcal pro Glas (250g). Kokosmilch aus der Dose macht den Pudding dagegen deutlich kalorienreicher.",
       "icon": "🥛"
     },
     {
@@ -147,19 +217,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Chia-Pudding?",
-      "answer": "Klassischer Chia-Pudding mit Milch hat etwa 120 kcal pro 100g. Eine typische Portion im Glas (250g) kommt damit auf rund 300 kcal."
+      "answer": "Klassischer Chia-Pudding mit Milch hat etwa 122 kcal pro 100g. Eine typische Portion im Glas (250g) kommt damit auf rund 305 kcal. Gerechnet aus USDA-Werten für 30 g Chiasamen, 210 g Vollmilch und 10 g Honig."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Chia-Pudding?",
-      "answer": "Eine Standardportion von 250g hat etwa 300 kcal. Mit Mandelmilch zubereitet sind es nur rund 210 kcal, mit Kokosmilch deutlich mehr."
+      "answer": "Eine Standardportion von 250g hat etwa 305 kcal. Mit Mandelmilch zubereitet sind es nur rund 208 kcal, mit Kokosmilch deutlich mehr."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Chia-Pudding?",
-      "answer": "Chia-Pudding enthält etwa 9,5g Kohlenhydrate pro 100g, eine Portion (250g) rund 24g. Ein großer Teil davon stammt aus Ballaststoffen."
+      "answer": "Chia-Pudding enthält etwa 12g Kohlenhydrate pro 100g, eine Portion (250g) rund 31g. Ein großer Teil davon stammt aus Ballaststoffen."
     },
     {
       "question": "Wie viel Protein hat Chia-Pudding?",
-      "answer": "Chia-Pudding liefert etwa 5g Protein pro 100g. Eine Portion von 250g enthält rund 12g Eiweiß, abhängig von der verwendeten Milch."
+      "answer": "Chia-Pudding liefert etwa 4,6g Protein pro 100g. Eine Portion von 250g enthält rund 12g Eiweiß, abhängig von der verwendeten Milch."
     },
     {
       "question": "Ist Chia-Pudding zum Abnehmen geeignet?",

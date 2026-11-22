@@ -3,9 +3,45 @@
   "name": "Macarons",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (ca. 26 Macarons à 18 g (472 g)): 100 g Mandelmehl (blanchiert, fein gemahlen) (FDC-ID 2261420, Flour, almond: 578 kcal), 150 g Puderzucker (FDC-ID 169656, Sugars, powdered: 389 kcal), 50 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 80 g Eiweiß (FDC-ID 172183, Egg, white, raw, fresh: 52 kcal), 80 g Zartbitterschokolade (Ganache) (FDC-ID 170271, Chocolate, dark, 45- 59% cacao solids: 546 kcal), 50 g Sahne (Ganache) (FDC-ID 170858, Cream, fluid, light whipping: 292 kcal); 510 g Zutaten ergeben 472 g (Backverlust der Schalen rund 10 % (Annahme): 380 g Schalenmasse ergeben 342 g, dazu 130 g Ganache); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Mandelmehl (blanchiert, fein gemahlen)",
+        "g": 100,
+        "fdcId": 2261420
+      },
+      {
+        "name": "Puderzucker",
+        "g": 150,
+        "fdcId": 169656
+      },
+      {
+        "name": "Zucker",
+        "g": 50,
+        "fdcId": 169655
+      },
+      {
+        "name": "Eiweiß",
+        "g": 80,
+        "fdcId": 172183
+      },
+      {
+        "name": "Zartbitterschokolade (Ganache)",
+        "g": 80,
+        "fdcId": 170271
+      },
+      {
+        "name": "Sahne (Ganache)",
+        "g": 50,
+        "fdcId": 170858
+      }
+    ],
+    "gewicht_g": 472
+  },
   "seo": {
     "title": "Macarons Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Macaron? Ein Stück (18g) hat ca. 68 kcal, 100g rund 380 kcal. Nährwerte, Varianten & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Macaron? Ein Stück (18g) hat ca. 75 kcal, 100g rund 419 kcal. Nährwerte, Varianten & Tipps im Überblick.",
     "keywords": [
       "macarons kalorien",
       "macarons kcal",
@@ -16,11 +52,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 380,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 70,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 419,
+    "protein_per_100g": 8.5,
+    "carbs_per_100g": 56.5,
+    "fat_per_100g": 19.2,
+    "fiber_per_100g": 3.2,
     "typical_portion_g": 18,
     "typical_portion_name": "1 Macaron"
   },
@@ -28,87 +64,109 @@
     {
       "name": "1 Macaron (18g)",
       "portion_g": 18,
-      "calories": 68,
-      "protein": 1,
-      "carbs": 13,
-      "fat": 2,
+      "calories": 75,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 3,
       "tip": "Standard"
     },
     {
       "name": "1 Mini-Macaron (10g)",
       "portion_g": 10,
-      "calories": 38,
+      "calories": 42,
       "protein": 1,
-      "carbs": 7,
-      "fat": 1
+      "carbs": 6,
+      "fat": 2
     },
     {
       "name": "2 Macarons (36g)",
       "portion_g": 36,
-      "calories": 137,
-      "protein": 2,
-      "carbs": 25,
-      "fat": 4
+      "calories": 151,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 7
     },
     {
       "name": "3 Macarons (54g)",
       "portion_g": 54,
-      "calories": 205,
-      "protein": 3,
-      "carbs": 38,
-      "fat": 5
+      "calories": 226,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 10
     },
     {
       "name": "Kleine Schachtel (6 Stück, 108g)",
       "portion_g": 108,
-      "calories": 410,
-      "protein": 5,
-      "carbs": 76,
-      "fat": 11
+      "calories": 453,
+      "protein": 9,
+      "carbs": 61,
+      "fat": 21
     },
     {
       "name": "Geschenkbox (12 Stück, 216g)",
       "portion_g": 216,
-      "calories": 821,
-      "protein": 11,
-      "carbs": 151,
-      "fat": 22
+      "calories": 905,
+      "protein": 18,
+      "carbs": 122,
+      "fat": 41
     },
     {
       "name": "100g Macarons",
       "portion_g": 100,
-      "calories": 380,
-      "protein": 5,
-      "carbs": 70,
-      "fat": 10
+      "calories": 419,
+      "protein": 9,
+      "carbs": 57,
+      "fat": 19
     }
   ],
   "comparison": [
     {
-      "name": "Macaron",
-      "calories": 68,
-      "emoji": "🍬"
+      "name": "Kokosmakrone (1 Stück, 18g)",
+      "calories": 83,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "fdcId": 171847,
+          "g": 18
+        }
+      ]
     },
     {
       "name": "Berliner",
-      "calories": 130,
-      "emoji": "🍩"
+      "calories": 272,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner"
+        }
+      ]
     },
     {
-      "name": "Kekse",
-      "calories": 35,
-      "emoji": "🍪"
+      "name": "Keks (1 Stück)",
+      "calories": 39,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "kekse"
+        }
+      ]
     },
     {
-      "name": "Praline",
-      "calories": 45,
-      "emoji": "🍫"
+      "name": "Trüffelpraline (1 Stück, 12g)",
+      "calories": 61,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 169580,
+          "g": 12
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein, aber kalorienreich",
-      "text": "Ein einzelnes Macaron hat nur ca. 68 kcal, doch die Stücke sind klein und mehrere sind schnell gegessen. Wer eine ganze 12er-Box isst, kommt auf über 800 kcal.",
+      "text": "Ein einzelnes Macaron hat nur ca. 75 kcal, doch die Stücke sind klein und mehrere sind schnell gegessen. Wer eine ganze 12er-Box isst, kommt auf rund 905 kcal.",
       "icon": "🍬"
     },
     {
@@ -118,7 +176,7 @@
     },
     {
       "title": "Bewusst genießen",
-      "text": "Macarons bestehen zu großen Teilen aus Zucker. Ein bis zwei Stück zum Kaffee bleiben mit rund 70 bis 140 kcal überschaubar.",
+      "text": "Macarons bestehen zu großen Teilen aus Zucker. Ein bis zwei Stück zum Kaffee bleiben mit rund 75 bis 151 kcal überschaubar.",
       "icon": "☕"
     },
     {
@@ -135,23 +193,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Macaron?",
-      "answer": "Ein klassisches Macaron (ca. 18g) hat rund 68 kcal. Mini-Macarons mit etwa 10g kommen auf ca. 38 kcal."
+      "answer": "Ein klassisches Macaron (ca. 18g) hat rund 75 kcal. Mini-Macarons mit etwa 10g kommen auf ca. 42 kcal. Gerechnet aus USDA-Werten für ein Rezept mit 100g Mandelmehl, 200g Zucker, 80g Eiweiß und einer Ganache aus 80g Zartbitterschokolade und 50g Sahne (ergibt rund 26 Macarons)."
     },
     {
       "question": "Wie viele Kalorien haben 100g Macarons?",
-      "answer": "100g Macarons enthalten etwa 380 kcal. Der hohe Zuckeranteil macht den Großteil der Energie aus."
+      "answer": "100g Macarons enthalten etwa 419 kcal. Gut die Hälfte der Energie stammt aus Zucker und anderen Kohlenhydraten, der Rest vor allem aus dem Fett von Mandeln und Schokoladenfüllung."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Macarons?",
-      "answer": "Macarons enthalten rund 70g Kohlenhydrate pro 100g, überwiegend Zucker. Ein einzelnes Stück liefert etwa 13g Kohlenhydrate."
+      "answer": "Macarons enthalten rund 57g Kohlenhydrate pro 100g, überwiegend Zucker. Ein einzelnes Stück liefert etwa 10g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Macarons?",
-      "answer": "Macarons enthalten etwa 5g Protein pro 100g, das vor allem aus dem Eiweiß und den Mandeln stammt. Ein Stück liefert rund 1g."
+      "answer": "Macarons enthalten etwa 8,5g Protein pro 100g, das vor allem aus den Mandeln und dem Eiweiß stammt. Ein Stück liefert rund 1,5g."
     },
     {
       "question": "Sind Macarons zum Abnehmen geeignet?",
-      "answer": "Macarons sind eine zuckerreiche Süßigkeit und nicht ideal zum Abnehmen. Als kleiner Genuss in Maßen lassen sie sich aber gut in eine ausgewogene Ernährung einbauen, da ein Stück nur etwa 68 kcal hat."
+      "answer": "Macarons sind eine zuckerreiche Süßigkeit und nicht ideal zum Abnehmen. Als kleiner Genuss in Maßen lassen sie sich aber gut in eine ausgewogene Ernährung einbauen, da ein Stück nur etwa 75 kcal hat."
     },
     {
       "question": "Sind Macarons gesund?",

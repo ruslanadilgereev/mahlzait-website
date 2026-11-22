@@ -3,9 +3,39 @@
   "name": "Kebap-Pizza",
   "emoji": "🍕",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Kebap-Pizza à 350 g (wie Pizza Kebab, Gewicht ohne Backverlust)): 150 g Teig, gerechnet als Fladenbrot (FDC-ID 174915, Bread, pita, white, enriched: 275 kcal), 40 g Pizzasoße (FDC-ID 172880, Sauce, pizza, canned, ready-to-serve: 54 kcal), 40 g Käse (Gouda) (FDC-ID 171241, Cheese, gouda: 356 kcal), 100 g Dönerfleisch (wie im Döner-Kalorien-Rechner) (FDC-ID 174032, Beef, ground, 85% lean meat / 15% fat, patty, cooked, broiled: 250 kcal), 20 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Teig, gerechnet als Fladenbrot",
+        "g": 150,
+        "fdcId": 174915
+      },
+      {
+        "name": "Pizzasoße",
+        "g": 40,
+        "fdcId": 172880
+      },
+      {
+        "name": "Käse (Gouda)",
+        "g": 40,
+        "fdcId": 171241
+      },
+      {
+        "name": "Dönerfleisch (wie im Döner-Kalorien-Rechner)",
+        "g": 100,
+        "fdcId": 174032
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 20,
+        "fdcId": 170000
+      }
+    ]
+  },
   "seo": {
     "title": "Kebap-Pizza Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kebap-Pizza? Eine ganze Kebap-Pizza (350g) hat ca. 893 kcal. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Kebap-Pizza? Eine ganze Kebap-Pizza (350g) hat ca. 833 kcal. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps im Überblick.",
     "keywords": [
       "kebap pizza kalorien",
       "kebab pizza kalorien",
@@ -16,11 +46,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 255,
-    "protein_per_100g": 13,
-    "carbs_per_100g": 26,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 238,
+    "protein_per_100g": 14.5,
+    "carbs_per_100g": 25.6,
+    "fat_per_100g": 8.2,
+    "fiber_per_100g": 1.3,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Kebap-Pizza (ganz)"
   },
@@ -28,99 +58,151 @@
     {
       "name": "1 Stück (60g)",
       "portion_g": 60,
-      "calories": 153,
-      "protein": 8,
-      "carbs": 16,
-      "fat": 6,
+      "calories": 143,
+      "protein": 9,
+      "carbs": 15,
+      "fat": 5,
       "tip": "Kleiner Snack"
     },
     {
       "name": "Halbe Pizza (175g)",
       "portion_g": 175,
-      "calories": 446,
-      "protein": 23,
-      "carbs": 46,
-      "fat": 18
+      "calories": 417,
+      "protein": 25,
+      "carbs": 45,
+      "fat": 14
     },
     {
       "name": "Kebap-Pizza ganz (350g)",
       "portion_g": 350,
-      "calories": 893,
-      "protein": 46,
-      "carbs": 91,
-      "fat": 35,
+      "calories": 833,
+      "protein": 51,
+      "carbs": 90,
+      "fat": 29,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Kebap-Pizza (450g)",
       "portion_g": 450,
-      "calories": 1148,
-      "protein": 59,
-      "carbs": 117,
-      "fat": 45
+      "calories": 1071,
+      "protein": 65,
+      "carbs": 115,
+      "fat": 37
     },
     {
-      "name": "Kebap-Pizza ohne Käse (320g)",
-      "portion_g": 320,
-      "calories": 736,
-      "protein": 42,
-      "carbs": 86,
-      "fat": 24,
-      "tip": "Weniger Fett"
+      "name": "Kebap-Pizza ohne Käse (310g)",
+      "portion_g": 310,
+      "calories": 692,
+      "protein": 41,
+      "carbs": 89,
+      "fat": 18,
+      "tip": "Weniger Fett",
+      "basis": [
+        {
+          "fdcId": 174915,
+          "g": 150
+        },
+        {
+          "fdcId": 172880,
+          "g": 40
+        },
+        {
+          "fdcId": 174032,
+          "g": 100
+        },
+        {
+          "fdcId": 170000,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Kebap-Pizza mit extra Soße (400g)",
       "portion_g": 400,
-      "calories": 1080,
-      "protein": 50,
-      "carbs": 100,
-      "fat": 46
+      "calories": 879,
+      "protein": 53,
+      "carbs": 92,
+      "fat": 32,
+      "tip": "Mit 50 g Joghurtsoße",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 2705448,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Mini Kebap-Pizza (200g)",
       "portion_g": 200,
-      "calories": 510,
-      "protein": 26,
-      "carbs": 52,
-      "fat": 20
+      "calories": 476,
+      "protein": 29,
+      "carbs": 51,
+      "fat": 16
     }
   ],
   "comparison": [
     {
-      "name": "Pizza Margherita (ganz)",
-      "calories": 770,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (350g)",
+      "calories": 931,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Pizza Salami (ganz)",
-      "calories": 945,
-      "emoji": "🍕"
+      "name": "Pizza Salami (350g)",
+      "calories": 987,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Döner (1 Stück)",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Lahmacun (1 Stück)",
       "calories": 351,
-      "emoji": "🫓"
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "lahmacun",
+          "variante": "Lahmacun pur"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienbombe als Hauptmahlzeit",
-      "text": "Eine ganze Kebap-Pizza liefert rund 893 kcal und deckt damit fast die Hälfte des Tagesbedarfs eines Erwachsenen ab. Plane sie als vollwertige Mahlzeit ein, nicht als Zwischensnack.",
+      "text": "Eine ganze Kebap-Pizza liefert rund 833 kcal und deckt damit fast die Hälfte des Tagesbedarfs eines Erwachsenen ab. Plane sie als vollwertige Mahlzeit ein, nicht als Zwischensnack.",
       "icon": "🍕"
     },
     {
       "title": "Käse weglassen spart Fett",
-      "text": "Ohne extra Käse sinkt der Fettgehalt deutlich. Eine Variante ohne Käse (320g) hat etwa 736 kcal statt fast 900 und ist die leichtere Wahl.",
+      "text": "Ohne extra Käse sinkt der Fettgehalt deutlich. Eine Variante ohne Käse (310g) hat etwa 692 kcal statt 833 und ist die leichtere Wahl.",
       "icon": "🧀"
     },
     {
       "title": "Eiweißreich durch das Kebap-Fleisch",
-      "text": "Das Döner-Fleisch bringt mit rund 13g Protein pro 100g ordentlich Eiweiß auf den Teller, was länger satt hält als eine reine Käsepizza.",
+      "text": "Das Döner-Fleisch bringt ordentlich Eiweiß auf den Teller: Kebap-Pizza hat rund 14,5g Protein pro 100g, was länger satt hält als eine reine Käsepizza.",
       "icon": "💪"
     },
     {
@@ -130,26 +212,26 @@
     },
     {
       "title": "Portionsgröße im Blick behalten",
-      "text": "Ein einzelnes Stück (60g) hat nur etwa 153 kcal. Wer abnehmen möchte, sollte bewusst portionieren statt die ganze Pizza zu essen.",
+      "text": "Ein einzelnes Stück (60g) hat nur etwa 143 kcal. Wer abnehmen möchte, sollte bewusst portionieren statt die ganze Pizza zu essen.",
       "icon": "📏"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Kebap-Pizza?",
-      "answer": "Eine ganze Kebap-Pizza (ca. 350g) hat rund 893 kcal. Pro 100g sind es etwa 255 kcal. Ein einzelnes Stück (60g) liegt bei ungefähr 153 kcal."
+      "answer": "Eine ganze Kebap-Pizza (ca. 350g) hat rund 833 kcal. Pro 100g sind es etwa 238 kcal. Ein einzelnes Stück (60g) liegt bei ungefähr 143 kcal. Gerechnet aus USDA-Werten wie bei Pizza Kebab: 150 g Fladenbrot-Teig, 40 g Pizzasoße, 40 g Gouda, 100 g Dönerfleisch und 20 g Zwiebeln."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Kebap-Pizza?",
-      "answer": "Kebap-Pizza enthält etwa 26g Kohlenhydrate pro 100g. Eine ganze Pizza (350g) kommt damit auf rund 91g Kohlenhydrate, hauptsächlich aus dem Pizzaboden."
+      "answer": "Kebap-Pizza enthält etwa 26g Kohlenhydrate pro 100g. Eine ganze Pizza (350g) kommt damit auf rund 90g Kohlenhydrate, hauptsächlich aus dem Pizzaboden."
     },
     {
       "question": "Wie viel Protein hat Kebap-Pizza?",
-      "answer": "Durch das Kebap-Fleisch und den Käse liefert Kebap-Pizza rund 13g Eiweiß pro 100g. Eine ganze Pizza (350g) bringt es auf etwa 46g Protein."
+      "answer": "Durch das Kebap-Fleisch und den Käse liefert Kebap-Pizza rund 14,5g Eiweiß pro 100g. Eine ganze Pizza (350g) bringt es auf etwa 51g Protein."
     },
     {
       "question": "Ist Kebap-Pizza zum Abnehmen geeignet?",
-      "answer": "Mit fast 900 kcal pro ganzer Pizza ist sie recht kalorienreich. In einer Diät passt sie am besten als geplante Hauptmahlzeit in kleiner Portion, kombiniert mit Salat und ohne extra Käse."
+      "answer": "Mit rund 833 kcal pro ganzer Pizza ist sie recht kalorienreich. In einer Diät passt sie am besten als geplante Hauptmahlzeit in kleiner Portion, kombiniert mit Salat und ohne extra Käse."
     },
     {
       "question": "Ist Kebap-Pizza gesund?",
@@ -157,7 +239,7 @@
     },
     {
       "question": "Hat Kebap-Pizza mehr Kalorien als eine normale Pizza?",
-      "answer": "Ja, etwas. Durch das fetthaltige Kebap-Fleisch hat eine ganze Kebap-Pizza (893 kcal) mehr Kalorien als eine Pizza Margherita (ca. 770 kcal), liegt aber unter einer Salami-Pizza."
+      "answer": "Nein, bei gleichem Gewicht sogar etwas weniger: Eine Kebap-Pizza (350g) hat rund 833 kcal, die gleiche Menge Pizza Margherita etwa 931 kcal und Pizza Salami etwa 987 kcal."
     }
   ],
   "related_foods": [

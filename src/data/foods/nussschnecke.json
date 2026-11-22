@@ -3,9 +3,56 @@
   "name": "Nussschnecke",
   "emoji": "🥐",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (16 Schnecken à 90 g (1440 g)): 500 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 250 g Butter (Teig und Tourieren) (FDC-ID 173430, Butter, without salt: 717 kcal), 350 ml (361 g) Milch (Teig und Füllung) (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 160 g Zucker (Teig und Füllung) (FDC-ID 169655, Sugars, granulated: 387 kcal), 55 g Ei (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 21 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 200 g Haselnüsse, gemahlen (FDC-ID 170581, Nuts, hazelnuts or filberts: 628 kcal), 80 g Puderzucker (Glasur) (FDC-ID 169656, Sugars, powdered: 389 kcal); 1627 g Zutaten ergeben 1440 g (Backverlust rund 11 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl",
+        "g": 500,
+        "fdcId": 169761
+      },
+      {
+        "name": "Butter (Teig und Tourieren)",
+        "g": 250,
+        "fdcId": 173430
+      },
+      {
+        "name": "Milch (Teig und Füllung)",
+        "g": 361,
+        "ml": 350,
+        "fdcId": 171265
+      },
+      {
+        "name": "Zucker (Teig und Füllung)",
+        "g": 160,
+        "fdcId": 169655
+      },
+      {
+        "name": "Ei",
+        "g": 55,
+        "fdcId": 171287
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 21,
+        "fdcId": 175042
+      },
+      {
+        "name": "Haselnüsse, gemahlen",
+        "g": 200,
+        "fdcId": 170581
+      },
+      {
+        "name": "Puderzucker (Glasur)",
+        "g": 80,
+        "fdcId": 169656
+      }
+    ],
+    "gewicht_g": 1440
+  },
   "seo": {
     "title": "Nussschnecke Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Nussschnecke? Ein Stück (90g) hat ca. 378 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich und Tipps zum Genießen.",
+    "description": "Wie viele Kalorien hat eine Nussschnecke? Ein Stück (90g) hat ca. 383 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich und Tipps zum Genießen.",
     "keywords": [
       "nussschnecke kalorien",
       "nussschnecke kcal",
@@ -16,11 +63,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 420,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 49,
-    "fat_per_100g": 22,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 425,
+    "protein_per_100g": 7.2,
+    "carbs_per_100g": 47,
+    "fat_per_100g": 24.1,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 90,
     "typical_portion_name": "1 Nussschnecke (Stück)"
   },
@@ -28,85 +75,109 @@
     {
       "name": "Nussschnecke klein (60g)",
       "portion_g": 60,
-      "calories": 252,
+      "calories": 255,
       "protein": 4,
-      "carbs": 29,
-      "fat": 13
+      "carbs": 28,
+      "fat": 14
     },
     {
       "name": "Nussschnecke Stück (90g)",
       "portion_g": 90,
-      "calories": 378,
+      "calories": 383,
       "protein": 6,
-      "carbs": 44,
-      "fat": 20,
+      "carbs": 42,
+      "fat": 22,
       "tip": "Typische Größe vom Bäcker"
     },
     {
       "name": "Nussschnecke groß (120g)",
       "portion_g": 120,
-      "calories": 504,
-      "protein": 8,
-      "carbs": 59,
-      "fat": 26
+      "calories": 510,
+      "protein": 9,
+      "carbs": 56,
+      "fat": 29
     },
     {
       "name": "Nussschnecke pro 100g",
       "portion_g": 100,
-      "calories": 420,
+      "calories": 425,
       "protein": 7,
-      "carbs": 49,
-      "fat": 22
+      "carbs": 47,
+      "fat": 24
     },
     {
       "name": "Nussschnecke abgepackt (75g)",
       "portion_g": 75,
-      "calories": 315,
+      "calories": 319,
       "protein": 5,
-      "carbs": 37,
-      "fat": 17,
+      "carbs": 35,
+      "fat": 18,
       "tip": "Discounter-Einzelpackung"
     },
     {
       "name": "Mini-Nussschnecke (40g)",
       "portion_g": 40,
-      "calories": 168,
+      "calories": 170,
       "protein": 3,
-      "carbs": 20,
-      "fat": 9
+      "carbs": 19,
+      "fat": 10
     }
   ],
   "comparison": [
     {
       "name": "Croissant (60g)",
-      "calories": 250,
-      "emoji": "🥐"
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Berliner (75g)",
-      "calories": 275,
-      "emoji": "🍩"
+      "calories": 255,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner",
+          "g": 75
+        }
+      ]
     },
     {
       "name": "Zimtschnecke (90g)",
-      "calories": 330,
-      "emoji": "🍥"
+      "calories": 335,
+      "emoji": "🍥",
+      "basis": [
+        {
+          "slug": "zimtschnecke",
+          "g": 90
+        }
+      ]
     },
     {
-      "name": "Nussschnecke (90g)",
-      "calories": 378,
-      "emoji": "🥐"
+      "name": "Nuss-Nougat-Croissant (70g)",
+      "calories": 295,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "nuss-nougat-croissant",
+          "g": 70
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Süßes Gebäck mit hoher Energiedichte",
-      "text": "Mit rund 420 kcal pro 100g zählt die Nussschnecke zu den kalorienreicheren Backwaren. Die Nussfüllung liefert reichlich Fett und Zucker.",
+      "text": "Mit rund 425 kcal pro 100g zählt die Nussschnecke zu den kalorienreicheren Backwaren. Die Nussfüllung liefert reichlich Fett und Zucker.",
       "icon": "🥐"
     },
     {
       "title": "Kleinere Größe wählen",
-      "text": "Eine kleine Nussschnecke (60g) hat nur etwa 252 kcal statt 378 kcal beim Standard-Stück. Wer aufs Gewicht achtet, greift zur kleineren Variante.",
+      "text": "Eine kleine Nussschnecke (60g) hat nur etwa 255 kcal statt 383 kcal beim Standard-Stück. Wer aufs Gewicht achtet, greift zur kleineren Variante.",
       "icon": "📏"
     },
     {
@@ -116,7 +187,7 @@
     },
     {
       "title": "Auf den Fettgehalt achten",
-      "text": "Mit etwa 22g Fett pro 100g steckt fast die Hälfte der Kalorien im Fett der Nussfüllung und des Teigs.",
+      "text": "Mit etwa 24g Fett pro 100g steckt rund die Hälfte der Kalorien im Fett der Nussfüllung und des Teigs.",
       "icon": "🌰"
     },
     {
@@ -128,19 +199,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Nussschnecke?",
-      "answer": "Eine Nussschnecke in typischer Größe (90g) hat etwa 378 kcal. Pro 100g sind es rund 420 kcal."
+      "answer": "Eine Nussschnecke in typischer Größe (90g) hat etwa 383 kcal. Pro 100g sind es rund 425 kcal. Gerechnet aus USDA-Werten für 16 Schnecken aus Plunderteig (500g Mehl, 250g Butter, Milch, Zucker, Ei, Hefe) mit einer Füllung aus 200g gemahlenen Haselnüssen, Zucker und Milch sowie 80g Puderzucker für die Glasur."
     },
     {
       "question": "Wie viele Kalorien hat eine Nussschnecke pro 100g?",
-      "answer": "Pro 100g liefert eine Nussschnecke ungefähr 420 kcal, 7g Eiweiß, 49g Kohlenhydrate und 22g Fett."
+      "answer": "Pro 100g liefert eine Nussschnecke ungefähr 425 kcal, 7g Eiweiß, 47g Kohlenhydrate und 24g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Nussschnecke?",
-      "answer": "Eine Nussschnecke enthält rund 49g Kohlenhydrate pro 100g, ein Stück (90g) also etwa 44g – überwiegend aus Zucker und Mehl."
+      "answer": "Eine Nussschnecke enthält rund 47g Kohlenhydrate pro 100g, ein Stück (90g) also etwa 42g, überwiegend aus Zucker und Mehl."
     },
     {
       "question": "Wie viel Protein hat eine Nussschnecke?",
-      "answer": "Der Eiweißgehalt liegt bei etwa 7g pro 100g. Ein Stück (90g) liefert rund 6g Eiweiß."
+      "answer": "Der Eiweißgehalt liegt bei etwa 7g pro 100g. Ein Stück (90g) liefert rund 6,5g Eiweiß."
     },
     {
       "question": "Ist eine Nussschnecke zum Abnehmen geeignet?",

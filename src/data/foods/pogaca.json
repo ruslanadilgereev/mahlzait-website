@@ -3,9 +3,57 @@
   "name": "Poğaça",
   "emoji": "🥐",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (11 Stück à 80 g (875 g)): 500 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 200 ml (206 g) Milch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 100 ml (92 g) Sonnenblumenöl (FDC-ID 171025, Oil, sunflower, linoleic, (approx. 65%): 884 kcal), 100 g Joghurt (FDC-ID 171284, Yogurt, plain, whole milk: 61 kcal), 55 g Ei (Teig und zum Bestreichen) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 20 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 10 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 10 g Sesam zum Bestreuen (FDC-ID 170150, Seeds, sesame seeds, whole, dried: 573 kcal); 993 g Zutaten ergeben 875 g (Backverlust rund 12 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl",
+        "g": 500,
+        "fdcId": 169761
+      },
+      {
+        "name": "Milch",
+        "g": 206,
+        "ml": 200,
+        "fdcId": 171265
+      },
+      {
+        "name": "Sonnenblumenöl",
+        "g": 92,
+        "ml": 100,
+        "fdcId": 171025
+      },
+      {
+        "name": "Joghurt",
+        "g": 100,
+        "fdcId": 171284
+      },
+      {
+        "name": "Ei (Teig und zum Bestreichen)",
+        "g": 55,
+        "fdcId": 171287
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 20,
+        "fdcId": 175042
+      },
+      {
+        "name": "Zucker",
+        "g": 10,
+        "fdcId": 169655
+      },
+      {
+        "name": "Sesam zum Bestreuen",
+        "g": 10,
+        "fdcId": 170150
+      }
+    ],
+    "gewicht_g": 875
+  },
   "seo": {
     "title": "Poğaça Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Poğaça? Ein Stück (80g) des türkischen Gebäcks hat ca. 272 kcal. Nährwerte pro 100g, Varianten mit Feta & Kartoffel im Überblick.",
+    "description": "Wie viele Kalorien hat Poğaça? Ein Stück (80g) des türkischen Gebäcks hat ca. 276 kcal. Nährwerte pro 100g, Varianten mit Feta & Kartoffel im Überblick.",
     "keywords": [
       "pogaca kalorien",
       "poğaça kcal",
@@ -16,11 +64,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 340,
-    "protein_per_100g": 8.5,
-    "carbs_per_100g": 42,
-    "fat_per_100g": 16,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 345,
+    "protein_per_100g": 8.2,
+    "carbs_per_100g": 47.1,
+    "fat_per_100g": 13.4,
+    "fiber_per_100g": 1.9,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Stück (mittel)"
   },
@@ -28,93 +76,144 @@
     {
       "name": "Poğaça klein (60g)",
       "portion_g": 60,
-      "calories": 204,
+      "calories": 207,
       "protein": 5,
-      "carbs": 25,
-      "fat": 10
+      "carbs": 28,
+      "fat": 8
     },
     {
       "name": "Poğaça mittel (80g)",
       "portion_g": 80,
-      "calories": 272,
+      "calories": 276,
       "protein": 7,
-      "carbs": 34,
-      "fat": 13,
+      "carbs": 38,
+      "fat": 11,
       "tip": "Standardgröße aus der Bäckerei"
     },
     {
       "name": "Poğaça groß (120g)",
       "portion_g": 120,
-      "calories": 408,
+      "calories": 414,
       "protein": 10,
-      "carbs": 50,
-      "fat": 19
+      "carbs": 57,
+      "fat": 16
     },
     {
       "name": "Poğaça mit Feta (90g)",
       "portion_g": 90,
-      "calories": 315,
-      "protein": 9,
+      "calories": 299,
+      "protein": 8,
       "carbs": 36,
-      "fat": 15,
-      "tip": "Beliebte Füllung, etwas mehr Eiweiß"
+      "fat": 13,
+      "tip": "Beliebte Füllung, etwas mehr Eiweiß",
+      "basis": [
+        {
+          "g": 75
+        },
+        {
+          "fdcId": 173420,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Poğaça mit Kartoffel (95g)",
       "portion_g": 95,
-      "calories": 314,
-      "protein": 7,
-      "carbs": 41,
-      "fat": 13
+      "calories": 276,
+      "protein": 6,
+      "carbs": 39,
+      "fat": 10,
+      "basis": [
+        {
+          "g": 75
+        },
+        {
+          "fdcId": 170440,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Poğaça mit Oliven (90g)",
       "portion_g": 90,
-      "calories": 306,
-      "protein": 8,
-      "carbs": 37,
-      "fat": 14
+      "calories": 288,
+      "protein": 7,
+      "carbs": 38,
+      "fat": 12,
+      "basis": [
+        {
+          "g": 80
+        },
+        {
+          "fdcId": 169094,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "2 Stück mittel (160g)",
       "portion_g": 160,
-      "calories": 544,
-      "protein": 14,
-      "carbs": 67,
-      "fat": 26
+      "calories": 552,
+      "protein": 13,
+      "carbs": 75,
+      "fat": 21
     }
   ],
   "comparison": [
     {
       "name": "Croissant (80g)",
-      "calories": 326,
-      "emoji": "🥐"
+      "calories": 325,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Simit (100g)",
-      "calories": 300,
-      "emoji": "🥨"
+      "calories": 310,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "simit",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Börek (100g)",
-      "calories": 290,
-      "emoji": "🥟"
+      "calories": 261,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "borek",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Brötchen (50g)",
-      "calories": 130,
-      "emoji": "🥖"
+      "calories": 147,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Reichhaltiges Frühstücksgebäck",
-      "text": "Ein Stück Poğaça (80g) liefert rund 272 kcal. Durch den hohen Fettanteil aus Butter oder Öl ist es deutlich energiereicher als ein normales Brötchen.",
+      "text": "Ein Stück Poğaça (80g) liefert rund 276 kcal. Durch den Fettanteil aus Öl oder Butter ist es energiereicher als ein normales Brötchen.",
       "icon": "🥐"
     },
     {
       "title": "Auf die Größe achten",
-      "text": "In der Bäckerei variieren Poğaça stark. Ein großes Stück (120g) kann schon über 400 kcal haben. Wer auf die Kalorien achtet, wählt die kleinere Variante.",
+      "text": "In der Bäckerei variieren Poğaça stark. Ein großes Stück (120g) hat schon rund 414 kcal. Wer auf die Kalorien achtet, wählt die kleinere Variante.",
       "icon": "⚖️"
     },
     {
@@ -136,23 +235,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Poğaça?",
-      "answer": "Ein mittelgroßes Stück Poğaça (80g) hat ca. 272 kcal. Pro 100g sind es rund 340 kcal."
+      "answer": "Ein mittelgroßes Stück Poğaça (80g) hat ca. 276 kcal. Pro 100g sind es rund 345 kcal. Gerechnet aus USDA-Werten für 11 Stück aus 500g Mehl, 200ml Milch, 100ml Sonnenblumenöl, 100g Joghurt, 1 Ei, Hefe, etwas Zucker und Sesam (gebacken rund 875g)."
     },
     {
       "question": "Wie viele Kalorien hat Poğaça mit Feta?",
-      "answer": "Ein Stück Poğaça mit Feta (ca. 90g) liefert etwa 315 kcal und damit etwas mehr Eiweiß als die einfache Variante."
+      "answer": "Ein Stück Poğaça mit Feta (ca. 90g) liefert etwa 299 kcal und damit etwas mehr Eiweiß als die einfache Variante."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Poğaça?",
-      "answer": "Poğaça enthält rund 42g Kohlenhydrate pro 100g, also etwa 34g pro mittlerem Stück (80g). Die Kohlenhydrate stammen überwiegend aus Weizenmehl."
+      "answer": "Poğaça enthält rund 47g Kohlenhydrate pro 100g, also etwa 38g pro mittlerem Stück (80g). Die Kohlenhydrate stammen überwiegend aus Weizenmehl."
     },
     {
       "question": "Wie viel Protein hat Poğaça?",
-      "answer": "Poğaça liefert etwa 8,5g Eiweiß pro 100g. Ein mittleres Stück (80g) kommt auf rund 7g Protein."
+      "answer": "Poğaça liefert etwa 8g Eiweiß pro 100g. Ein mittleres Stück (80g) kommt auf rund 7g Protein."
     },
     {
       "question": "Ist Poğaça zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit rund 340 kcal pro 100g und viel Fett ist Poğaça recht energiereich. In Maßen und bewusst ins Tagesbudget eingeplant ist ein Stück aber kein Problem."
+      "answer": "Nur bedingt. Mit rund 345 kcal pro 100g und viel Fett ist Poğaça recht energiereich. In Maßen und bewusst ins Tagesbudget eingeplant ist ein Stück aber kein Problem."
     },
     {
       "question": "Ist Poğaça gesund?",

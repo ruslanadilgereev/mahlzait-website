@@ -3,9 +3,44 @@
   "name": "Bosna",
   "emoji": "🌭",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Bosna à 245 g): 120 g Weißbrot-Stange (Baguette), getoastet (FDC-ID 172675, Bread, french or vienna (includes sourdough): 272 kcal), 90 g Bratwurst, gegrillt (FDC-ID 171620, Bratwurst, pork, cooked: 333 kcal), 20 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 12 g Senf (FDC-ID 172234, Mustard, prepared, yellow: 60 kcal), 2 g Currypulver (FDC-ID 170924, Spices, curry powder: 325 kcal), 1 g Petersilie (FDC-ID 170416, Parsley, fresh: 36 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weißbrot-Stange (Baguette), getoastet",
+        "g": 120,
+        "fdcId": 172675
+      },
+      {
+        "name": "Bratwurst, gegrillt",
+        "g": 90,
+        "fdcId": 171620
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 20,
+        "fdcId": 170000
+      },
+      {
+        "name": "Senf",
+        "g": 12,
+        "fdcId": 172234
+      },
+      {
+        "name": "Currypulver",
+        "g": 2,
+        "fdcId": 170924
+      },
+      {
+        "name": "Petersilie",
+        "g": 1,
+        "fdcId": 170416
+      }
+    ]
+  },
   "seo": {
     "title": "Bosna Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Bosna? Eine normale Bosna (245g) hat ca. 642 kcal. Alle Nährwerte pro 100g & Portion plus Tipps zum Genießen.",
+    "description": "Wie viele Kalorien hat eine Bosna? Eine normale Bosna (245g) hat ca. 649 kcal. Alle Nährwerte pro 100g & Portion plus Tipps zum Genießen.",
     "keywords": [
       "bosna kalorien",
       "bosna kcal",
@@ -16,11 +51,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 262,
-    "protein_per_100g": 9.3,
-    "carbs_per_100g": 24.5,
-    "fat_per_100g": 12.4,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 265,
+    "protein_per_100g": 10.7,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 12.2,
+    "fiber_per_100g": 1.9,
     "typical_portion_g": 245,
     "typical_portion_name": "1 Bosna (normal)"
   },
@@ -28,86 +63,166 @@
     {
       "name": "Bosna klein (200g)",
       "portion_g": 200,
-      "calories": 524,
-      "protein": 19,
-      "carbs": 49,
-      "fat": 25
+      "calories": 530,
+      "protein": 21,
+      "carbs": 56,
+      "fat": 24
     },
     {
       "name": "Bosna normal (245g)",
       "portion_g": 245,
-      "calories": 642,
-      "protein": 23,
-      "carbs": 60,
+      "calories": 649,
+      "protein": 26,
+      "carbs": 69,
       "fat": 30,
       "tip": "Standardgröße am Imbiss"
     },
     {
       "name": "Bosna groß / mit 2 Würsten (320g)",
       "portion_g": 320,
-      "calories": 838,
-      "protein": 30,
-      "carbs": 78,
-      "fat": 40
+      "calories": 919,
+      "protein": 37,
+      "carbs": 65,
+      "fat": 56,
+      "basis": [
+        {
+          "fdcId": 172675,
+          "g": 110
+        },
+        {
+          "fdcId": 171620,
+          "g": 180
+        },
+        {
+          "fdcId": 170000,
+          "g": 15
+        },
+        {
+          "fdcId": 172234,
+          "g": 12
+        },
+        {
+          "fdcId": 170924,
+          "g": 2
+        },
+        {
+          "fdcId": 170416,
+          "g": 1
+        }
+      ]
     },
     {
       "name": "nur die Bratwurst (1 Stück, 90g)",
       "portion_g": 90,
-      "calories": 270,
+      "calories": 300,
       "protein": 12,
-      "carbs": 1,
-      "fat": 24,
-      "tip": "ohne Weißbrot"
+      "carbs": 3,
+      "fat": 26,
+      "tip": "ohne Weißbrot",
+      "basis": [
+        {
+          "fdcId": 171620,
+          "g": 90
+        }
+      ]
     },
     {
       "name": "Bosna mit Vollkornbrot (245g)",
       "portion_g": 245,
-      "calories": 610,
-      "protein": 24,
-      "carbs": 55,
-      "fat": 29,
-      "tip": "etwas mehr Ballaststoffe"
+      "calories": 609,
+      "protein": 23,
+      "carbs": 65,
+      "fat": 28,
+      "tip": "etwas mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 174091,
+          "g": 120
+        },
+        {
+          "fdcId": 171620,
+          "g": 90
+        },
+        {
+          "fdcId": 170000,
+          "g": 20
+        },
+        {
+          "fdcId": 172234,
+          "g": 12
+        },
+        {
+          "fdcId": 170924,
+          "g": 2
+        },
+        {
+          "fdcId": 170416,
+          "g": 1
+        }
+      ]
     },
     {
       "name": "Bosna pro 100g",
       "portion_g": 100,
-      "calories": 262,
-      "protein": 9,
-      "carbs": 25,
+      "calories": 265,
+      "protein": 11,
+      "carbs": 28,
       "fat": 12
     }
   ],
   "comparison": [
     {
       "name": "Currywurst (ohne Pommes)",
-      "calories": 480,
-      "emoji": "🌭"
+      "calories": 546,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst"
+        }
+      ]
     },
     {
-      "name": "Hot Dog",
-      "calories": 290,
-      "emoji": "🌭"
+      "name": "Hot Dog (1 Stück)",
+      "calories": 302,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "hot-dog"
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Bratwurst im Brötchen",
-      "calories": 420,
-      "emoji": "🌭"
+      "calories": 675,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "variante": "Bratwurst im Brötchen"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Die Wurst macht das Fett",
-      "text": "Rund die Hälfte der Kalorien einer Bosna stammt aus der gegrillten Bratwurst. Eine einzelne statt zwei Würste spart schnell 200 kcal.",
+      "text": "Knapp die Hälfte der Kalorien einer Bosna stammt aus der gegrillten Bratwurst. Eine einzelne statt zwei Würste spart rund 270 kcal.",
       "icon": "🌭"
     },
     {
       "title": "Sattmacher für unterwegs",
-      "text": "Mit etwa 642 kcal und 23 g Eiweiß ist eine normale Bosna eine vollwertige Hauptmahlzeit, kein kleiner Snack zwischendurch.",
+      "text": "Mit etwa 649 kcal und 26 g Eiweiß ist eine normale Bosna eine vollwertige Hauptmahlzeit, kein kleiner Snack zwischendurch.",
       "icon": "🍽️"
     },
     {
@@ -117,7 +232,7 @@
     },
     {
       "title": "Vollkornbrot als kleines Upgrade",
-      "text": "Wer die Wahl hat, nimmt Vollkorn- statt Weißbrot. Das bringt mehr Ballaststoffe und hält etwas länger satt, bei kaum veränderten Kalorien.",
+      "text": "Wer die Wahl hat, nimmt Vollkorn- statt Weißbrot. Das bringt fast doppelt so viele Ballaststoffe und hält etwas länger satt, die Kalorien sinken dabei leicht (rund 609 statt 649 kcal).",
       "icon": "🌾"
     },
     {
@@ -129,23 +244,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Bosna?",
-      "answer": "Eine normale Bosna (ca. 245g) hat etwa 642 kcal. Pro 100g sind es rund 262 kcal."
+      "answer": "Eine normale Bosna (ca. 245g) hat etwa 649 kcal. Pro 100g sind es rund 265 kcal. Gerechnet aus USDA-Werten für 120 g Weißbrot, 90 g Bratwurst, 20 g Zwiebeln, 12 g Senf und etwas Currypulver."
     },
     {
       "question": "Wie viele Kalorien hat die Wurst in der Bosna?",
-      "answer": "Die gegrillte Bratwurst allein (ca. 90g) liefert rund 270 kcal und ist damit für etwa die Hälfte der gesamten Kalorien verantwortlich."
+      "answer": "Die gegrillte Bratwurst allein (ca. 90g) liefert rund 300 kcal und ist damit für knapp die Hälfte der gesamten Kalorien verantwortlich."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Bosna?",
-      "answer": "Eine normale Bosna enthält etwa 60 g Kohlenhydrate, die größtenteils aus dem Weißbrot stammen."
+      "answer": "Eine normale Bosna enthält etwa 69 g Kohlenhydrate, die größtenteils aus dem Weißbrot stammen."
     },
     {
       "question": "Wie viel Eiweiß hat eine Bosna?",
-      "answer": "Eine normale Bosna liefert rund 23 g Eiweiß, vor allem aus der Bratwurst."
+      "answer": "Eine normale Bosna liefert rund 26 g Eiweiß, aus der Bratwurst und dem Brot."
     },
     {
       "question": "Ist eine Bosna zum Abnehmen geeignet?",
-      "answer": "Mit über 640 kcal und rund 30 g Fett ist die Bosna recht gehaltvoll. In einer Diät passt sie als gelegentliche Mahlzeit, sollte aber den restlichen Tag ausgleichen, etwa mit nur einer Wurst oder kleinem Brot."
+      "answer": "Mit rund 649 kcal und rund 30 g Fett ist die Bosna recht gehaltvoll. In einer Diät passt sie als gelegentliche Mahlzeit, sollte aber den restlichen Tag ausgleichen, etwa mit nur einer Wurst oder kleinem Brot."
     },
     {
       "question": "Ist eine Bosna gesund?",

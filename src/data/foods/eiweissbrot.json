@@ -3,9 +3,50 @@
   "name": "Eiweißbrot",
   "emoji": "🍞",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Brot, gebacken ca. 750 g): 150 g Weizeneiweiß (Gluten) (FDC-ID 168147, Vital wheat gluten: 370 kcal), 100 g Sojamehl, entfettet (FDC-ID 174275, Soy flour, defatted: 327 kcal), 80 g Leinsamen (FDC-ID 169414, Seeds, flaxseed: 534 kcal), 60 g Sonnenblumenkerne (FDC-ID 170562, Seeds, sunflower seed kernels, dried: 584 kcal), 50 g Weizenkleie (FDC-ID 169722, Wheat bran, crude: 216 kcal), 400 g Wasser (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal), 10 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal); 850 g Zutaten ergeben 750 g (Backverlust rund 12 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizeneiweiß (Gluten)",
+        "g": 150,
+        "fdcId": 168147
+      },
+      {
+        "name": "Sojamehl, entfettet",
+        "g": 100,
+        "fdcId": 174275
+      },
+      {
+        "name": "Leinsamen",
+        "g": 80,
+        "fdcId": 169414
+      },
+      {
+        "name": "Sonnenblumenkerne",
+        "g": 60,
+        "fdcId": 170562
+      },
+      {
+        "name": "Weizenkleie",
+        "g": 50,
+        "fdcId": 169722
+      },
+      {
+        "name": "Wasser",
+        "g": 400,
+        "fdcId": 173647
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 10,
+        "fdcId": 175042
+      }
+    ],
+    "gewicht_g": 750
+  },
   "seo": {
     "title": "Eiweißbrot Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Eiweißbrot? Eine Scheibe (50g) hat ca. 125 kcal. Nährwerte pro 100g & Scheibe, Protein, Kohlenhydrate und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Eiweißbrot? Eine Scheibe (50g) hat ca. 119 kcal. Nährwerte pro 100g & Scheibe, Protein, Kohlenhydrate und Tipps zum Abnehmen.",
     "keywords": [
       "eiweißbrot kalorien",
       "eiweißbrot kcal",
@@ -18,10 +59,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 23,
-    "carbs_per_100g": 8,
-    "fat_per_100g": 12,
+    "calories_per_100g": 237,
+    "protein_per_100g": 26.7,
+    "carbs_per_100g": 16.5,
+    "fat_per_100g": 9.5,
     "fiber_per_100g": 9,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Scheibe (50g)"
@@ -30,102 +71,131 @@
     {
       "name": "Eiweißbrot 1 Scheibe (50g)",
       "portion_g": 50,
-      "calories": 125,
-      "protein": 12,
-      "carbs": 4,
-      "fat": 6,
+      "calories": 119,
+      "protein": 13,
+      "carbs": 8,
+      "fat": 5,
       "tip": "Standard"
     },
     {
       "name": "Eiweißbrot dünne Scheibe (35g)",
       "portion_g": 35,
-      "calories": 88,
-      "protein": 8,
-      "carbs": 3,
-      "fat": 4
+      "calories": 83,
+      "protein": 9,
+      "carbs": 6,
+      "fat": 3
     },
     {
       "name": "Eiweißbrot dicke Scheibe (70g)",
       "portion_g": 70,
-      "calories": 175,
-      "protein": 16,
-      "carbs": 6,
-      "fat": 8
+      "calories": 166,
+      "protein": 19,
+      "carbs": 12,
+      "fat": 7
     },
     {
       "name": "Eiweißbrot 2 Scheiben (100g)",
       "portion_g": 100,
-      "calories": 250,
-      "protein": 23,
-      "carbs": 8,
-      "fat": 12
+      "calories": 237,
+      "protein": 27,
+      "carbs": 17,
+      "fat": 10
     },
     {
       "name": "Eiweißbrötchen (60g)",
       "portion_g": 60,
-      "calories": 150,
-      "protein": 14,
-      "carbs": 5,
-      "fat": 7
+      "calories": 155,
+      "protein": 17,
+      "carbs": 11,
+      "fat": 6,
+      "basis": [
+        {
+          "slug": "eiweissbroetchen",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Eiweißbrot halbes Brot (250g)",
       "portion_g": 250,
-      "calories": 625,
-      "protein": 58,
-      "carbs": 20,
-      "fat": 30
+      "calories": 593,
+      "protein": 67,
+      "carbs": 41,
+      "fat": 24
     },
     {
       "name": "Eiweißbrot ganzes Brot (500g)",
       "portion_g": 500,
-      "calories": 1250,
-      "protein": 115,
-      "carbs": 40,
-      "fat": 60
+      "calories": 1185,
+      "protein": 134,
+      "carbs": 83,
+      "fat": 48
     }
   ],
   "comparison": [
     {
-      "name": "Vollkornbrot",
-      "calories": 110,
-      "emoji": "🍞"
+      "name": "Vollkornbrot (1 Scheibe, 50g)",
+      "calories": 111,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Brot (Mischbrot)",
-      "calories": 124,
-      "emoji": "🍞"
-    },
-    {
-      "name": "Toastbrot",
+      "name": "Roggenbrot (1 Scheibe, 50g)",
       "calories": 130,
-      "emoji": "🍞"
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "brot",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Brötchen",
-      "calories": 165,
-      "emoji": "🥖"
+      "name": "Toastbrot (50g)",
+      "calories": 133,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Brötchen (60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Wenig Kohlenhydrate",
-      "text": "Eiweißbrot hat nur etwa 8g Kohlenhydrate pro 100g statt rund 45g bei normalem Brot. Das macht es bei einer kohlenhydratarmen Ernährung beliebt.",
+      "text": "Eiweißbrot hat nur etwa 16g Kohlenhydrate pro 100g, davon rund 9g Ballaststoffe. Normales Brot hat ein Vielfaches davon. Das macht es bei einer kohlenhydratarmen Ernährung beliebt.",
       "icon": "🌾"
     },
     {
       "title": "Sättigt durch Protein",
-      "text": "Mit rund 23g Eiweiß pro 100g sättigt Eiweißbrot länger als helles Brot. Eine Scheibe mit magerem Belag ist ein guter Start in den Tag.",
+      "text": "Mit rund 27g Eiweiß pro 100g sättigt Eiweißbrot länger als helles Brot. Eine Scheibe mit magerem Belag ist ein guter Start in den Tag.",
       "icon": "💪"
     },
     {
       "title": "Auf das Fett achten",
-      "text": "Eiweißbrot enthält durch Saaten und Ölsamen mehr Fett (ca. 12g/100g) als normales Brot. Pro 100g hat es daher trotz weniger Kohlenhydraten mehr Kalorien.",
+      "text": "Eiweißbrot enthält durch Saaten und Ölsamen mehr Fett (ca. 9,5g/100g) als normales Brot. Trotz deutlich weniger Kohlenhydraten hat es deshalb pro 100g ähnlich viele Kalorien.",
       "icon": "⚠️"
     },
     {
       "title": "Kalorien nicht unterschätzen",
-      "text": "Mit 250 kcal pro 100g ist Eiweißbrot kalorienreicher als Mischbrot. Zum Abnehmen zählt die Portionsgröße, nicht nur der niedrige Kohlenhydratgehalt.",
+      "text": "Mit 237 kcal pro 100g liegt Eiweißbrot nah an Roggenbrot (259 kcal). Zum Abnehmen zählt die Portionsgröße, nicht nur der niedrige Kohlenhydratgehalt.",
       "icon": "⚖️"
     },
     {
@@ -137,23 +207,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Eiweißbrot?",
-      "answer": "Eiweißbrot hat etwa 250 kcal pro 100g. Eine normale Scheibe (50g) liefert rund 125 kcal."
+      "answer": "Eiweißbrot hat etwa 237 kcal pro 100g. Eine normale Scheibe (50g) liefert rund 119 kcal. Gerechnet aus USDA-Werten für ein Brot aus 150g Weizeneiweiß, 100g Sojamehl, 80g Leinsamen, 60g Sonnenblumenkernen, 50g Weizenkleie, Wasser und Hefe (gebacken rund 750g)."
     },
     {
       "question": "Wie viele Kalorien hat eine Scheibe Eiweißbrot?",
-      "answer": "Eine Scheibe Eiweißbrot (ca. 50g) hat rund 125 kcal. Eine dicke Scheibe (70g) kommt auf etwa 175 kcal."
+      "answer": "Eine Scheibe Eiweißbrot (ca. 50g) hat rund 119 kcal. Eine dicke Scheibe (70g) kommt auf etwa 166 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Eiweißbrot?",
-      "answer": "Eiweißbrot enthält nur etwa 8g Kohlenhydrate pro 100g, deutlich weniger als normales Brot mit rund 45g pro 100g."
+      "answer": "Eiweißbrot enthält etwa 16g Kohlenhydrate pro 100g, davon rund 9g Ballaststoffe. Normales Brot liegt bei einem Vielfachen davon."
     },
     {
       "question": "Wie viel Protein hat Eiweißbrot?",
-      "answer": "Eiweißbrot liefert rund 23g Eiweiß pro 100g. Eine Scheibe (50g) deckt damit etwa 12g Protein."
+      "answer": "Eiweißbrot liefert rund 27g Eiweiß pro 100g. Eine Scheibe (50g) liefert damit etwa 13g Protein."
     },
     {
       "question": "Ist Eiweißbrot zum Abnehmen geeignet?",
-      "answer": "Eiweißbrot kann beim Abnehmen helfen, weil es wenig Kohlenhydrate hat und gut sättigt. Mit 250 kcal pro 100g ist es aber kalorienreicher als normales Brot, daher auf die Menge achten."
+      "answer": "Eiweißbrot kann beim Abnehmen helfen, weil es wenig Kohlenhydrate hat und gut sättigt. Mit 237 kcal pro 100g hat es aber etwa so viele Kalorien wie normales Brot, daher auf die Menge achten."
     },
     {
       "question": "Ist Eiweißbrot gesund?",

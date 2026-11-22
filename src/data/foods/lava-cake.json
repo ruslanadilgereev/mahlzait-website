@@ -3,9 +3,40 @@
   "name": "Lava Cake",
   "emoji": "🍫",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Küchlein (405 g)): 100 g Zartbitterschokolade 60-69 % (FDC-ID 170272, Chocolate, dark, 60-69% cacao solids: 579 kcal), 80 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 165 g Eier (3 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 50 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 30 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal); 425 g Zutaten ergeben 405 g (Backverlust rund 5 %, der Kern bleibt flüssig (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Zartbitterschokolade 60-69 %",
+        "g": 100,
+        "fdcId": 170272
+      },
+      {
+        "name": "Butter",
+        "g": 80,
+        "fdcId": 173430
+      },
+      {
+        "name": "Eier (3 Stück)",
+        "g": 165,
+        "fdcId": 171287
+      },
+      {
+        "name": "Zucker",
+        "g": 50,
+        "fdcId": 169655
+      },
+      {
+        "name": "Weizenmehl",
+        "g": 30,
+        "fdcId": 169761
+      }
+    ],
+    "gewicht_g": 405
+  },
   "seo": {
     "title": "Lava Cake Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Lava Cake? Ein klassischer Schokokuchen (110 g) mit flüssigem Kern hat ca. 429 kcal. Nährwerte pro 100 g & Portion im Überblick.",
+    "description": "Wie viele Kalorien hat ein Lava Cake? Ein klassischer Schokokuchen (110 g) mit flüssigem Kern hat ca. 460 kcal. Nährwerte pro 100 g & Portion im Überblick.",
     "keywords": [
       "lava cake kcal",
       "lava cake kalorien",
@@ -16,11 +47,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 390,
-    "protein_per_100g": 5.5,
-    "carbs_per_100g": 44,
-    "fat_per_100g": 20,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 418,
+    "protein_per_100g": 7.6,
+    "carbs_per_100g": 31.2,
+    "fat_per_100g": 29.4,
+    "fiber_per_100g": 2.2,
     "typical_portion_g": 110,
     "typical_portion_name": "1 Lava Cake (110 g)"
   },
@@ -28,91 +59,123 @@
     {
       "name": "Mini-Lava-Cake (90 g)",
       "portion_g": 90,
-      "calories": 351,
-      "protein": 5,
-      "carbs": 40,
-      "fat": 18
+      "calories": 376,
+      "protein": 7,
+      "carbs": 28,
+      "fat": 26
     },
     {
       "name": "Lava Cake Standard (110 g)",
       "portion_g": 110,
-      "calories": 429,
-      "protein": 6,
-      "carbs": 48,
-      "fat": 22,
+      "calories": 460,
+      "protein": 8,
+      "carbs": 34,
+      "fat": 32,
       "tip": "Übliche Restaurant-Portion"
     },
     {
       "name": "Großer Lava Cake (140 g)",
       "portion_g": 140,
-      "calories": 546,
-      "protein": 8,
-      "carbs": 62,
-      "fat": 28
+      "calories": 585,
+      "protein": 11,
+      "carbs": 44,
+      "fat": 41
     },
     {
       "name": "Lava Cake mit Vanilleeis (110 g + 50 g)",
       "portion_g": 160,
-      "calories": 529,
-      "protein": 7,
-      "carbs": 60,
-      "fat": 25,
-      "tip": "Klassisch mit einer Kugel Eis serviert"
+      "calories": 563,
+      "protein": 10,
+      "carbs": 46,
+      "fat": 38,
+      "tip": "Klassisch mit einer Kugel Eis serviert",
+      "basis": [
+        {
+          "g": 110
+        },
+        {
+          "fdcId": 167575,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Zwei Lava Cakes (220 g)",
       "portion_g": 220,
-      "calories": 858,
-      "protein": 12,
-      "carbs": 97,
-      "fat": 44
+      "calories": 920,
+      "protein": 17,
+      "carbs": 69,
+      "fat": 65
     },
     {
-      "name": "TK-Lava-Cake aufgebacken (100 g)",
+      "name": "Lava Cake (100 g)",
       "portion_g": 100,
-      "calories": 390,
-      "protein": 6,
-      "carbs": 44,
-      "fat": 20,
-      "tip": "Fertigprodukt aus dem Tiefkühlregal"
+      "calories": 418,
+      "protein": 8,
+      "carbs": 31,
+      "fat": 29
     }
   ],
   "comparison": [
     {
       "name": "Brownie (110 g)",
-      "calories": 480,
-      "emoji": "🍫"
+      "calories": 446,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "brownie",
+          "g": 110
+        }
+      ]
     },
     {
       "name": "Mousse au Chocolat (100 g)",
-      "calories": 310,
-      "emoji": "🍮"
+      "calories": 225,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "mousse-au-chocolat",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Tiramisu (110 g)",
-      "calories": 275,
-      "emoji": "🍰"
+      "calories": 388,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "tiramisu",
+          "g": 110
+        }
+      ]
     },
     {
       "name": "Schokopudding (125 g)",
-      "calories": 150,
-      "emoji": "🍫"
+      "calories": 178,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokopudding",
+          "g": 125
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst genießen",
-      "text": "Ein Lava Cake liefert mit ca. 429 kcal pro Portion (110 g) viel Energie aus Zucker und Fett. Als gelegentliches Dessert ist das völlig in Ordnung – am besten nach einer leichteren Hauptmahlzeit.",
+      "text": "Ein Lava Cake liefert mit ca. 460 kcal pro Portion (110 g) viel Energie aus Zucker und Fett. Als gelegentliches Dessert ist das völlig in Ordnung, am besten nach einer leichteren Hauptmahlzeit.",
       "icon": "🍫"
     },
     {
       "title": "Portion teilen",
-      "text": "Wer den Genuss reduzieren möchte, teilt sich einen Lava Cake zu zweit. So landen nur rund 215 kcal auf dem Teller statt der vollen 429 kcal.",
+      "text": "Wer den Genuss reduzieren möchte, teilt sich einen Lava Cake zu zweit. So landen nur rund 230 kcal auf dem Teller statt der vollen 460 kcal.",
       "icon": "✂️"
     },
     {
       "title": "Auf die Beilage achten",
-      "text": "Eine Kugel Vanilleeis bringt rund 100 kcal zusätzlich. Frische Beeren oder ein Klecks Magerquark sind die kalorienärmere Alternative zum süßen Topping.",
+      "text": "Eine Kugel Vanilleeis (50 g) bringt rund 103 kcal zusätzlich. Frische Beeren oder ein Klecks Magerquark sind die kalorienärmere Alternative zum süßen Topping.",
       "icon": "🍓"
     },
     {
@@ -122,26 +185,26 @@
     },
     {
       "title": "Timing nutzen",
-      "text": "Ein Lava Cake ist ein typisches Genuss-Dessert. Plane ihn bewusst in dein Kalorienbudget ein – mit einem KI-Kalorienzähler wie Mahlzait behältst du den Überblick.",
+      "text": "Ein Lava Cake ist ein typisches Genuss-Dessert. Plane ihn bewusst in dein Kalorienbudget ein, mit einem KI-Kalorienzähler wie Mahlzait behältst du den Überblick.",
       "icon": "📲"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Lava Cake?",
-      "answer": "Ein klassischer Lava Cake mit flüssigem Schokokern wiegt rund 110 g und hat etwa 429 kcal. Pro 100 g sind es ca. 390 kcal."
+      "answer": "Ein klassischer Lava Cake mit flüssigem Schokokern wiegt rund 110 g und hat etwa 460 kcal. Pro 100 g sind es ca. 418 kcal. Gerechnet aus USDA-Werten für 100 g Zartbitterschokolade, 80 g Butter, 3 Eier, 50 g Zucker und 30 g Mehl (4 Küchlein)."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in einem Lava Cake?",
-      "answer": "Pro 100 g enthält ein Lava Cake etwa 44 g Kohlenhydrate, größtenteils aus Zucker und Mehl. Eine Portion von 110 g liefert also rund 48 g Kohlenhydrate."
+      "answer": "Pro 100 g enthält ein Lava Cake etwa 31 g Kohlenhydrate, größtenteils aus Zucker und Schokolade. Eine Portion von 110 g liefert also rund 34 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat ein Lava Cake?",
-      "answer": "Der Eiweißgehalt ist mit ca. 5,5 g pro 100 g (rund 6 g pro Portion) eher gering – ein Lava Cake ist ein Dessert, keine Proteinquelle."
+      "answer": "Der Eiweißgehalt ist mit ca. 7,6 g pro 100 g (rund 8 g pro Portion) eher gering, ein Lava Cake ist ein Dessert, keine Proteinquelle."
     },
     {
       "question": "Ist Lava Cake zum Abnehmen geeignet?",
-      "answer": "Als tägliches Dessert ist er wegen der hohen Energiedichte (390 kcal/100 g) ungünstig. Als gelegentlicher Genuss passt er aber in jede ausgewogene Ernährung, solange du ihn in dein Kalorienbudget einrechnest."
+      "answer": "Als tägliches Dessert ist er wegen der hohen Energiedichte (418 kcal/100 g) ungünstig. Als gelegentlicher Genuss passt er aber in jede ausgewogene Ernährung, solange du ihn in dein Kalorienbudget einrechnest."
     },
     {
       "question": "Ist Lava Cake gesund?",
@@ -149,7 +212,7 @@
     },
     {
       "question": "Hat ein Lava Cake mehr Kalorien als ein Brownie?",
-      "answer": "Bei vergleichbarer Portionsgröße liegt ein Brownie (ca. 480 kcal pro 110 g) meist etwas über dem Lava Cake (ca. 429 kcal pro 110 g), da Brownies dichter und fettreicher sind."
+      "answer": "Bei gleicher Portionsgröße (110 g) liegen beide nah beieinander: Lava Cake rund 460 kcal, Brownie rund 446 kcal. Der Lava Cake hat durch Butter und Schokolade etwas mehr Fett."
     }
   ],
   "related_foods": [

@@ -3,9 +3,39 @@
   "name": "Strammer Max",
   "emoji": "🍳",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Portion à 290 g): 80 g Mischbrot (1 große Scheibe) (FDC-ID 172684, Bread, rye: 259 kcal), 10 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 70 g Kochschinken (FDC-ID 173864, Ham, sliced, regular (approximately 11% fat): 164 kcal), 110 g Spiegeleier (2 Stück) (FDC-ID 173423, Egg, whole, cooked, fried: 196 kcal), 20 g Gewürzgurke (FDC-ID 168558, Pickles, cucumber, dill or kosher dill: 12 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Mischbrot (1 große Scheibe)",
+        "g": 80,
+        "fdcId": 172684
+      },
+      {
+        "name": "Butter",
+        "g": 10,
+        "fdcId": 173430
+      },
+      {
+        "name": "Kochschinken",
+        "g": 70,
+        "fdcId": 173864
+      },
+      {
+        "name": "Spiegeleier (2 Stück)",
+        "g": 110,
+        "fdcId": 173423
+      },
+      {
+        "name": "Gewürzgurke",
+        "g": 20,
+        "fdcId": 168558
+      }
+    ]
+  },
   "seo": {
     "title": "Strammer Max Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Strammer Max? Eine Standard-Portion (290 g) hat ca. 580 kcal. Nährwerte pro 100 g, Varianten & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat ein Strammer Max? Eine Standard-Portion (290 g) hat ca. 612 kcal. Nährwerte pro 100 g, Varianten & Tipps zum Abnehmen.",
     "keywords": [
       "strammer max kalorien",
       "strammer max kcal",
@@ -16,11 +46,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 200,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 15,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 211,
+    "protein_per_100g": 11.6,
+    "carbs_per_100g": 14.7,
+    "fat_per_100g": 11.5,
+    "fiber_per_100g": 2,
     "typical_portion_g": 290,
     "typical_portion_name": "1 Portion (1 Scheibe Brot, Schinken, 2 Spiegeleier)"
   },
@@ -28,87 +58,144 @@
     {
       "name": "Kleine Portion (150 g)",
       "portion_g": 150,
-      "calories": 300,
-      "protein": 15,
-      "carbs": 23,
+      "calories": 306,
+      "protein": 17,
+      "carbs": 21,
       "fat": 17,
-      "tip": "Snack-Größe mit nur 1 Ei"
+      "tip": "Snack-Größe mit nur 1 Ei",
+      "basis": [
+        {
+          "fdcId": 172684,
+          "g": 40
+        },
+        {
+          "fdcId": 173430,
+          "g": 5
+        },
+        {
+          "fdcId": 173864,
+          "g": 35
+        },
+        {
+          "fdcId": 173423,
+          "g": 55
+        },
+        {
+          "fdcId": 168558,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "1 Brot mit 1 Spiegelei (200 g)",
       "portion_g": 200,
-      "calories": 400,
-      "protein": 20,
-      "carbs": 30,
-      "fat": 22,
-      "tip": "Leichtere Variante"
+      "calories": 446,
+      "protein": 24,
+      "carbs": 39,
+      "fat": 21,
+      "tip": "Leichtere Variante mit magerem Schinken",
+      "basis": [
+        {
+          "fdcId": 172684,
+          "g": 80
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        },
+        {
+          "fdcId": 173863,
+          "g": 55
+        },
+        {
+          "fdcId": 173423,
+          "g": 55
+        }
+      ]
     },
     {
       "name": "Standard-Portion (290 g)",
       "portion_g": 290,
-      "calories": 580,
-      "protein": 29,
-      "carbs": 44,
-      "fat": 32,
+      "calories": 612,
+      "protein": 34,
+      "carbs": 43,
+      "fat": 33,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (350 g)",
       "portion_g": 350,
-      "calories": 700,
-      "protein": 35,
-      "carbs": 53,
-      "fat": 39
+      "calories": 739,
+      "protein": 41,
+      "carbs": 51,
+      "fat": 40
     },
     {
       "name": "Gasthaus-Doppel (450 g)",
       "portion_g": 450,
-      "calories": 900,
-      "protein": 45,
-      "carbs": 68,
-      "fat": 50,
+      "calories": 950,
+      "protein": 52,
+      "carbs": 66,
+      "fat": 52,
       "tip": "2 Scheiben Brot, reichlich Schinken & Eier"
     },
     {
       "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 200,
-      "protein": 10,
+      "calories": 211,
+      "protein": 12,
       "carbs": 15,
-      "fat": 11
+      "fat": 12
     }
   ],
   "comparison": [
     {
-      "name": "Bauernfrühstück (290 g)",
-      "calories": 410,
-      "emoji": "🥔"
-    },
-    {
       "name": "Rührei mit Speck (200 g)",
-      "calories": 360,
-      "emoji": "🍳"
+      "calories": 394,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "ruehrei",
+          "g": 170
+        },
+        {
+          "fdcId": 2705889,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Käsebrötchen (110 g)",
-      "calories": 300,
-      "emoji": "🧀"
+      "calories": 347,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesebroetchen",
+          "g": 110
+        }
+      ]
     },
     {
       "name": "Currywurst mit Pommes (400 g)",
-      "calories": 800,
-      "emoji": "🌭"
+      "calories": 1170,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Currywurst mit Pommes"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreiches Frühstück",
-      "text": "Eine Standard-Portion liefert rund 29 g Eiweiß aus Schinken und Eiern und hält dadurch lange satt.",
+      "text": "Eine Standard-Portion liefert rund 34 g Eiweiß aus Schinken und Eiern und hält dadurch lange satt.",
       "icon": "💪"
     },
     {
       "title": "Fett gezielt sparen",
-      "text": "Spiegeleier in einer beschichteten Pfanne mit Öl-Spray statt in Butter oder reichlich Öl braten – das spart schnell 80 bis 150 kcal pro Portion.",
+      "text": "Spiegeleier in einer beschichteten Pfanne mit Öl-Spray statt in Butter oder reichlich Öl braten, das spart Fett und Kalorien.",
       "icon": "🍳"
     },
     {
@@ -118,7 +205,7 @@
     },
     {
       "title": "Schlanke Variante",
-      "text": "Mit nur 1 Spiegelei und mageren Kochschinken kommst du auf etwa 400 kcal statt 580 kcal – ideal für ein leichteres Mittagessen.",
+      "text": "Mit nur 1 Spiegelei und magerem Kochschinken kommst du auf etwa 446 kcal statt 612 kcal, ideal für ein leichteres Mittagessen.",
       "icon": "⚖️"
     },
     {
@@ -130,19 +217,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Strammer Max?",
-      "answer": "Eine Standard-Portion Strammer Max (ca. 290 g, also eine Scheibe Brot mit Schinken und zwei Spiegeleiern) hat etwa 580 kcal. Pro 100 g sind es rund 200 kcal."
+      "answer": "Eine Standard-Portion Strammer Max (ca. 290 g, also eine Scheibe Brot mit Schinken und zwei Spiegeleiern) hat etwa 612 kcal. Pro 100 g sind es rund 211 kcal. Gerechnet aus USDA-Werten für 80 g Mischbrot, 10 g Butter, 70 g Kochschinken, 2 Spiegeleier und 20 g Gewürzgurke."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Strammer Max?",
-      "answer": "Eine Standard-Portion enthält etwa 44 g Kohlenhydrate, die überwiegend aus dem Brot stammen. Pro 100 g sind es rund 15 g."
+      "answer": "Eine Standard-Portion enthält etwa 43 g Kohlenhydrate, die überwiegend aus dem Brot stammen. Pro 100 g sind es rund 15 g."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Strammer Max?",
-      "answer": "Eine Standard-Portion liefert etwa 29 g Eiweiß aus den Spiegeleiern und dem Schinken – ein vergleichsweise hoher Eiweißgehalt für ein deftiges Gericht."
+      "answer": "Eine Standard-Portion liefert etwa 34 g Eiweiß aus den Spiegeleiern und dem Schinken, ein vergleichsweise hoher Eiweißgehalt für ein deftiges Gericht."
     },
     {
       "question": "Ist Strammer Max zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Das Gericht ist eiweißreich und sättigt gut. Wer abnehmen möchte, sollte aber den Fettanteil reduzieren – etwa durch mageren Schinken, nur 1 Spiegelei und wenig Bratfett. So sinkt die Portion auf rund 400 kcal."
+      "answer": "In Maßen ja: Das Gericht ist eiweißreich und sättigt gut. Wer abnehmen möchte, sollte aber den Fettanteil reduzieren, etwa durch mageren Schinken, nur 1 Spiegelei und wenig Bratfett. So sinkt die Portion auf rund 446 kcal."
     },
     {
       "question": "Ist Strammer Max gesund?",
@@ -150,7 +237,7 @@
     },
     {
       "question": "Wie viel Fett hat ein Strammer Max?",
-      "answer": "Eine Standard-Portion enthält etwa 32 g Fett, das vor allem aus den gebratenen Eiern und dem Bratfett kommt. Pro 100 g sind es rund 11 g."
+      "answer": "Eine Standard-Portion enthält etwa 33 g Fett, das vor allem aus den gebratenen Eiern, dem Schinken und der Butter kommt. Pro 100 g sind es rund 12 g."
     }
   ],
   "related_foods": [

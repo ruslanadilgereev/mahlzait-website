@@ -3,9 +3,49 @@
   "name": "Çiğ Köfte",
   "emoji": "🌯",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für ca. 1 kg Köfte-Masse): 360 g Bulgur fein, trocken (FDC-ID 170688, Bulgur, dry: 342 kcal), 120 g Tomatenmark (FDC-ID 170459, Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program): 82 kcal), 100 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 40 g Olivenöl (FDC-ID 171413, Oil, olive, salad or cooking: 884 kcal), 30 g Petersilie (FDC-ID 170416, Parsley, fresh: 36 kcal), 20 g Zitronensaft (FDC-ID 167747, Lemon juice, raw: 22 kcal), 330 g Wasser (vom Bulgur aufgenommen) (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Bulgur fein, trocken",
+        "g": 360,
+        "fdcId": 170688
+      },
+      {
+        "name": "Tomatenmark",
+        "g": 120,
+        "fdcId": 170459
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 100,
+        "fdcId": 170000
+      },
+      {
+        "name": "Olivenöl",
+        "g": 40,
+        "fdcId": 171413
+      },
+      {
+        "name": "Petersilie",
+        "g": 30,
+        "fdcId": 170416
+      },
+      {
+        "name": "Zitronensaft",
+        "g": 20,
+        "fdcId": 167747
+      },
+      {
+        "name": "Wasser (vom Bulgur aufgenommen)",
+        "g": 330,
+        "fdcId": 173647
+      }
+    ]
+  },
   "seo": {
     "title": "Çiğ Köfte Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Çiğ Köfte? Die vegane Bulgur-Variante hat ca. 170 kcal pro 100g. Nährwerte, Portionen & Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Çiğ Köfte? Die vegane Bulgur-Variante hat ca. 174 kcal pro 100g. Nährwerte, Portionen & Diät-Tipps im Überblick.",
     "keywords": [
       "cig köfte kalorien",
       "çiğ köfte kcal",
@@ -17,98 +57,142 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 170,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 4,
+    "calories_per_100g": 174,
+    "protein_per_100g": 5.1,
+    "carbs_per_100g": 30.8,
+    "fat_per_100g": 4.6,
+    "fiber_per_100g": 5.3,
     "typical_portion_g": 200,
-    "typical_portion_name": "1 Dürüm/Wrap (200g)"
+    "typical_portion_name": "1 Portion (200g)"
   },
   "variants": [
     {
       "name": "1 Röllchen im Salatblatt (40g)",
       "portion_g": 40,
-      "calories": 68,
+      "calories": 70,
       "protein": 2,
-      "carbs": 12,
-      "fat": 1.4,
+      "carbs": 12.3,
+      "fat": 1.8,
       "tip": "Vorspeise"
     },
     {
       "name": "Çiğ Köfte 100g",
       "portion_g": 100,
-      "calories": 170,
-      "protein": 5,
-      "carbs": 30,
-      "fat": 3.5
+      "calories": 174,
+      "protein": 5.1,
+      "carbs": 30.8,
+      "fat": 4.6
     },
     {
       "name": "Kleine Box (150g)",
       "portion_g": 150,
-      "calories": 255,
-      "protein": 7.5,
-      "carbs": 45,
-      "fat": 5.3
+      "calories": 261,
+      "protein": 7.7,
+      "carbs": 46.2,
+      "fat": 6.9
     },
     {
       "name": "Dürüm/Wrap (200g)",
       "portion_g": 200,
-      "calories": 340,
-      "protein": 10,
-      "carbs": 60,
-      "fat": 7,
-      "tip": "Standard"
+      "calories": 383,
+      "protein": 11,
+      "carbs": 65.4,
+      "fat": 10,
+      "tip": "130 g Köfte, 50 g Fladenbrot, 20 g Salat",
+      "basis": [
+        {
+          "g": 130
+        },
+        {
+          "fdcId": 175037,
+          "g": 50
+        },
+        {
+          "fdcId": 169247,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Großer Teller (250g)",
       "portion_g": 250,
-      "calories": 425,
-      "protein": 12.5,
-      "carbs": 75,
-      "fat": 8.8
+      "calories": 435,
+      "protein": 12.8,
+      "carbs": 77,
+      "fat": 11.5
     },
     {
       "name": "Mit Hackfleisch, traditionell (150g)",
       "portion_g": 150,
-      "calories": 300,
-      "protein": 13.5,
-      "carbs": 33,
-      "fat": 12,
-      "tip": "Fleisch-Variante, kalorienreicher"
+      "calories": 243,
+      "protein": 15.8,
+      "carbs": 30.8,
+      "fat": 7.1,
+      "tip": "Fleisch-Variante, mehr Eiweiß",
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "fdcId": 171790,
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Falafel",
-      "calories": 333,
-      "emoji": "🧆"
+      "name": "Falafel (3 Stück, 105g)",
+      "calories": 350,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "falafel",
+          "g": 105
+        }
+      ]
     },
     {
-      "name": "Tabouleh",
-      "calories": 145,
-      "emoji": "🥗"
+      "name": "Tabouleh (200g)",
+      "calories": 254,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "slug": "tabouleh"
+        }
+      ]
     },
     {
-      "name": "Bulgur (gekocht)",
-      "calories": 83,
-      "emoji": "🌾"
+      "name": "Bulgur gekocht (200g)",
+      "calories": 166,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "bulgur"
+        }
+      ]
     },
     {
       "name": "Dönerteller",
       "calories": 141,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener-teller",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Meist vegan & fleischlos",
-      "text": "Die in Deutschland verkaufte Çiğ Köfte ist fast immer fleischlos und basiert auf Bulgur, Tomaten- und Paprikamark sowie Gewürzen. Das hält die Kalorien mit ca. 170 kcal pro 100g moderat.",
+      "text": "Die in Deutschland verkaufte Çiğ Köfte ist fast immer fleischlos und basiert auf Bulgur, Tomaten- und Paprikamark sowie Gewürzen. Das hält die Kalorien mit ca. 174 kcal pro 100g moderat.",
       "icon": "🌱"
     },
     {
       "title": "Ballaststoffe sättigen",
-      "text": "Durch den Bulgur liefert eine Portion reichlich Ballaststoffe (ca. 4g pro 100g), die lange satt halten und die Verdauung unterstützen.",
+      "text": "Durch den Bulgur liefert eine Portion reichlich Ballaststoffe (ca. 5g pro 100g), die lange satt halten und die Verdauung unterstützen.",
       "icon": "🌾"
     },
     {
@@ -123,26 +207,26 @@
     },
     {
       "title": "Fleisch-Variante beachten",
-      "text": "Die traditionelle Version mit rohem Hackfleisch ist mit rund 200 kcal pro 100g deutlich gehaltvoller. Für den kommerziellen Verkauf ist sie in der Türkei seit 2008 untersagt.",
+      "text": "Die traditionelle Version mit rohem, magerem Hackfleisch liefert mit rund 10,5g pro 100g mehr Eiweiß, hat aber nicht mehr Kalorien. Für den kommerziellen Verkauf ist sie in der Türkei seit 2008 untersagt.",
       "icon": "🥩"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Çiğ Köfte?",
-      "answer": "Die vegane Bulgur-Variante hat ca. 170 kcal pro 100g. Ein Dürüm/Wrap (200g) kommt damit auf rund 340 kcal."
+      "answer": "Die vegane Bulgur-Variante hat ca. 174 kcal pro 100g. Ein Dürüm mit Fladenbrot (200g) kommt auf rund 383 kcal. Gerechnet aus USDA-Werten für 360 g feinen Bulgur, 120 g Tomatenmark, 100 g Zwiebeln, 40 g Olivenöl, 30 g Petersilie, 20 g Zitronensaft und 330 g Wasser."
     },
     {
       "question": "Wie viele Kalorien hat ein Çiğ-Köfte-Dürüm?",
-      "answer": "Ein typischer Dürüm bzw. Wrap mit etwa 200g hat ca. 340 kcal, davon rund 60g Kohlenhydrate."
+      "answer": "Ein typischer Dürüm bzw. Wrap mit etwa 200g (130g Köfte, 50g Fladenbrot, 20g Salat) hat ca. 383 kcal, davon rund 65g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Çiğ Köfte?",
-      "answer": "Die vegane Variante liefert ca. 5g Eiweiß pro 100g. Die traditionelle Version mit Hackfleisch enthält mit etwa 9g pro 100g deutlich mehr."
+      "answer": "Die vegane Variante liefert ca. 5g Eiweiß pro 100g. Die traditionelle Version mit Hackfleisch enthält mit etwa 10,5g pro 100g deutlich mehr."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Çiğ Köfte?",
-      "answer": "Durch den Bulgur enthält Çiğ Köfte ca. 30g Kohlenhydrate pro 100g, dazu rund 4g Ballaststoffe."
+      "answer": "Durch den Bulgur enthält Çiğ Köfte ca. 31g Kohlenhydrate pro 100g, dazu rund 5g Ballaststoffe."
     },
     {
       "question": "Ist Çiğ Köfte zum Abnehmen geeignet?",

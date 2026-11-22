@@ -3,9 +3,44 @@
   "name": "Kimbap",
   "emoji": "🍙",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Rolle 200 g (ca. 8 Stück)): 115 g Reis (Rundkorn) gekocht (FDC-ID 168880, Rice, white, medium-grain, enriched, cooked: 130 kcal), 5 g Sesamöl (FDC-ID 171016, Oil, sesame, salad or cooking: 884 kcal), 30 g Omelett-Streifen (FDC-ID 172185, Egg, whole, cooked, omelet: 154 kcal), 20 g Spinat gekocht (FDC-ID 168463, Spinach, cooked, boiled, drained, without salt: 23 kcal), 15 g Karotte gekocht (FDC-ID 170394, Carrots, cooked, boiled, drained, without salt: 35 kcal), 15 g Eingelegter Rettich (Danmuji) (FDC-ID 2710099, Radishes, pickled: 34 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Reis (Rundkorn) gekocht",
+        "g": 115,
+        "fdcId": 168880
+      },
+      {
+        "name": "Sesamöl",
+        "g": 5,
+        "fdcId": 171016
+      },
+      {
+        "name": "Omelett-Streifen",
+        "g": 30,
+        "fdcId": 172185
+      },
+      {
+        "name": "Spinat gekocht",
+        "g": 20,
+        "fdcId": 168463
+      },
+      {
+        "name": "Karotte gekocht",
+        "g": 15,
+        "fdcId": 170394
+      },
+      {
+        "name": "Eingelegter Rettich (Danmuji)",
+        "g": 15,
+        "fdcId": 2710099
+      }
+    ]
+  },
   "seo": {
     "title": "Kimbap Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kimbap? Eine Rolle (200g) hat ca. 305 kcal. Nährwerte pro 100g & pro Rolle, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Kimbap? Eine Rolle (200g) hat ca. 254 kcal. Nährwerte pro 100g & pro Rolle, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "kimbap kcal",
       "kimbap kalorien",
@@ -17,11 +52,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 152,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 3,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 127,
+    "protein_per_100g": 3.4,
+    "carbs_per_100g": 18.1,
+    "fat_per_100g": 4.4,
+    "fiber_per_100g": 0.7,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Rolle (ca. 8 Stück)"
   },
@@ -29,81 +64,93 @@
     {
       "name": "1 Stück / Scheibe (25g)",
       "portion_g": 25,
-      "calories": 38,
+      "calories": 32,
       "protein": 1,
-      "carbs": 7,
+      "carbs": 5,
       "fat": 1
     },
     {
       "name": "Halbe Rolle (100g)",
       "portion_g": 100,
-      "calories": 152,
-      "protein": 4,
-      "carbs": 28,
-      "fat": 3
-    },
-    {
-      "name": "Mini-Kimbap (Kkomakimbap, 150g)",
-      "portion_g": 150,
-      "calories": 228,
-      "protein": 6,
-      "carbs": 42,
-      "fat": 5,
-      "tip": "Dünn gerollt, ohne Ei"
+      "calories": 127,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 4
     },
     {
       "name": "1 Rolle (200g)",
       "portion_g": 200,
-      "calories": 305,
-      "protein": 8,
-      "carbs": 56,
-      "fat": 6,
+      "calories": 254,
+      "protein": 7,
+      "carbs": 36,
+      "fat": 9,
       "tip": "Standard-Portion"
     },
     {
-      "name": "Kimbap mit Käse (220g)",
+      "name": "Kimbap mit Käse (200g + 1 Scheibe Käse, 20g)",
       "portion_g": 220,
-      "calories": 420,
-      "protein": 13,
-      "carbs": 58,
-      "fat": 13,
-      "tip": "Reichhaltiger durch Käse"
+      "calories": 327,
+      "protein": 10,
+      "carbs": 37,
+      "fat": 15,
+      "tip": "Reichhaltiger durch Käse",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 170853,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "2 Rollen (400g)",
       "portion_g": 400,
-      "calories": 610,
-      "protein": 16,
-      "carbs": 112,
-      "fat": 12
+      "calories": 508,
+      "protein": 14,
+      "carbs": 72,
+      "fat": 18
     }
   ],
   "comparison": [
     {
-      "name": "Sushi (8 Stück)",
-      "calories": 280,
-      "emoji": "🍣"
+      "name": "Sushi (8 Lachs-Maki)",
+      "calories": 206,
+      "emoji": "🍣",
+      "basis": [
+        {
+          "slug": "sushi",
+          "variante": "Maki (Lachs, 8 Stück)"
+        }
+      ]
     },
     {
       "name": "Bibimbap (Schale)",
-      "calories": 560,
-      "emoji": "🍲"
+      "calories": 342,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "bibimbap"
+        }
+      ]
     },
     {
       "name": "Reis (gekocht, 200g)",
       "calories": 260,
-      "emoji": "🍚"
-    },
-    {
-      "name": "Onigiri (100g)",
-      "calories": 170,
-      "emoji": "🍙"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sättigend bei moderaten Kalorien",
-      "text": "Eine Rolle Kimbap (200g) hat rund 305 kcal und macht durch den hohen Reisanteil und das Gemüse gut satt. Als leichte Mahlzeit gut geeignet.",
+      "text": "Eine Rolle Kimbap (200g) hat rund 254 kcal und macht durch den hohen Reisanteil und das Gemüse gut satt. Als leichte Mahlzeit gut geeignet.",
       "icon": "🍙"
     },
     {
@@ -113,7 +160,7 @@
     },
     {
       "title": "Käse und Fleisch erhöhen die Kalorien",
-      "text": "Varianten mit Käse, Spam oder Bulgogi liegen deutlich höher als die Gemüse-Version. Eine Käse-Rolle (220g) kommt auf rund 420 kcal.",
+      "text": "Varianten mit Käse, Spam oder Bulgogi liegen höher als die Gemüse-Version. Eine Käse-Rolle (200g plus 1 Scheibe Käse) kommt auf rund 327 kcal.",
       "icon": "🧀"
     },
     {
@@ -130,23 +177,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kimbap?",
-      "answer": "Eine ganze Rolle Kimbap (ca. 200g, etwa 8 Stück) hat rund 305 kcal. Pro 100g sind es etwa 152 kcal."
+      "answer": "Eine ganze Rolle Kimbap (ca. 200g, etwa 8 Stück) hat rund 254 kcal. Pro 100g sind es etwa 127 kcal. Gerechnet aus USDA-Werten für 115g gekochten Reis, 5g Sesamöl, 30g Omelett, je 15 bis 20g Spinat, Karotte und eingelegten Rettich."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Kimbap?",
-      "answer": "Ein einzelnes Stück (ca. 25g) hat etwa 38 kcal. Eine Rolle wird üblicherweise in 8 bis 10 Stücke geschnitten."
+      "answer": "Ein einzelnes Stück (ca. 25g) hat etwa 32 kcal. Eine Rolle wird üblicherweise in 8 bis 10 Stücke geschnitten."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kimbap?",
-      "answer": "Kimbap besteht überwiegend aus Reis und enthält pro 100g rund 28g Kohlenhydrate. Eine ganze Rolle (200g) liefert etwa 56g."
+      "answer": "Kimbap besteht überwiegend aus Reis und enthält pro 100g rund 18g Kohlenhydrate. Eine ganze Rolle (200g) liefert etwa 36g."
     },
     {
       "question": "Wie viel Protein hat Kimbap?",
-      "answer": "Pro 100g enthält Kimbap etwa 4g Protein, eine Rolle rund 8g. Varianten mit Ei, Fleisch oder Käse liefern mehr."
+      "answer": "Pro 100g enthält Kimbap etwa 3,4g Protein, eine Rolle rund 7g. Varianten mit mehr Ei, Fleisch oder Käse liefern mehr."
     },
     {
       "question": "Ist Kimbap zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Eine Gemüse-Rolle hat rund 305 kcal und sättigt gut. Achte auf fettreiche Varianten mit Käse oder Spam und auf die Portionsgröße."
+      "answer": "In Maßen ja: Eine Gemüse-Rolle hat rund 254 kcal und sättigt gut. Achte auf fettreiche Varianten mit Käse oder Spam und auf die Portionsgröße."
     },
     {
       "question": "Ist Kimbap gesund?",

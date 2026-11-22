@@ -3,50 +3,319 @@
   "name": "Chai Latte",
   "emoji": "🍵",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Glas 300 ml): 200 ml (206 g) Vollmilch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 90 ml (90 g) Schwarztee, aufgebrüht (mit Chai-Gewürzen) (FDC-ID 173227, Beverages, tea, black, brewed, prepared with tap water: 1 kcal), 15 g Zucker (bzw. Chai-Sirup) (FDC-ID 169655, Sugars, granulated: 387 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Vollmilch 3,5 %",
+        "g": 206,
+        "ml": 200,
+        "fdcId": 171265
+      },
+      {
+        "name": "Schwarztee, aufgebrüht (mit Chai-Gewürzen)",
+        "g": 90,
+        "ml": 90,
+        "fdcId": 173227
+      },
+      {
+        "name": "Zucker (bzw. Chai-Sirup)",
+        "g": 15,
+        "fdcId": 169655
+      }
+    ]
+  },
   "seo": {
     "title": "Chai Latte Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Chai Latte? Nährwerte pro Tasse. Starbucks, selbstgemacht, mit Sirup & kalorienarme Alternativen.",
-    "keywords": ["chai latte kalorien", "kalorien chai latte", "chai latte nährwerte", "starbucks chai latte kalorien", "chai tee kalorien", "chai latte zucker", "chai sirup kalorien", "masala chai kalorien"]
+    "keywords": [
+      "chai latte kalorien",
+      "kalorien chai latte",
+      "chai latte nährwerte",
+      "starbucks chai latte kalorien",
+      "chai tee kalorien",
+      "chai latte zucker",
+      "chai sirup kalorien",
+      "masala chai kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 62,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 10,
-    "fat_per_100g": 1.5,
+    "calories_per_100g": 59,
+    "protein_per_100g": 2.1,
+    "carbs_per_100g": 8.1,
+    "fat_per_100g": 2.2,
     "fiber_per_100g": 0,
-    "typical_portion_g": 300,
+    "typical_portion_g": 312,
     "typical_portion_name": "1 Glas (300ml)"
   },
   "variants": [
-    { "name": "Chai Latte Vollmilch (300ml)", "portion_g": 300, "calories": 185, "protein": 8, "carbs": 28, "fat": 5 },
-    { "name": "Chai Latte fettarme Milch (300ml)", "portion_g": 300, "calories": 155, "protein": 8, "carbs": 28, "fat": 2 },
-    { "name": "Starbucks Chai Latte (Grande)", "portion_g": 480, "calories": 280, "protein": 7, "carbs": 46, "fat": 7 },
-    { "name": "Masala Chai traditionell (200ml)", "portion_g": 200, "calories": 100, "protein": 4, "carbs": 14, "fat": 3, "tip": "Authentisch & leichter" },
-    { "name": "Chai Latte Hafermilch (300ml)", "portion_g": 300, "calories": 160, "protein": 3, "carbs": 30, "fat": 3 },
-    { "name": "Chai Latte mit Honig (300ml)", "portion_g": 300, "calories": 220, "protein": 8, "carbs": 36, "fat": 5 },
-    { "name": "Iced Chai Latte (400ml)", "portion_g": 400, "calories": 220, "protein": 7, "carbs": 38, "fat": 5 },
-    { "name": "Dirty Chai (+ Espresso, 300ml)", "portion_g": 300, "calories": 188, "protein": 8, "carbs": 28, "fat": 5 }
+    {
+      "name": "Chai Latte Vollmilch (300ml)",
+      "portion_g": 312,
+      "calories": 184,
+      "protein": 7,
+      "carbs": 25,
+      "fat": 7
+    },
+    {
+      "name": "Chai Latte fettarme Milch (300ml)",
+      "portion_g": 311,
+      "calories": 145,
+      "protein": 7,
+      "carbs": 26,
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 170872,
+          "ml": 200,
+          "g": 206
+        },
+        {
+          "fdcId": 173227,
+          "ml": 90,
+          "g": 90
+        },
+        {
+          "fdcId": 169655,
+          "g": 15
+        }
+      ]
+    },
+    {
+      "name": "Chai Latte groß (470ml)",
+      "portion_g": 489,
+      "calories": 289,
+      "protein": 10,
+      "carbs": 40,
+      "fat": 11,
+      "tip": "Grande-Größe, gleiche Rezeptur"
+    },
+    {
+      "name": "Masala Chai traditionell (200ml)",
+      "portion_g": 211,
+      "calories": 95,
+      "protein": 3,
+      "carbs": 13,
+      "fat": 3,
+      "tip": "Authentisch & leichter",
+      "basis": [
+        {
+          "fdcId": 173227,
+          "ml": 100,
+          "g": 100
+        },
+        {
+          "fdcId": 171265,
+          "ml": 100,
+          "g": 103
+        },
+        {
+          "fdcId": 169655,
+          "g": 8
+        }
+      ]
+    },
+    {
+      "name": "Chai Latte Hafermilch (300ml)",
+      "portion_g": 311,
+      "calories": 152,
+      "protein": 1,
+      "carbs": 26,
+      "fat": 5,
+      "basis": [
+        {
+          "fdcId": 2705412,
+          "ml": 200,
+          "g": 206
+        },
+        {
+          "fdcId": 173227,
+          "ml": 90,
+          "g": 90
+        },
+        {
+          "fdcId": 169655,
+          "g": 15
+        }
+      ]
+    },
+    {
+      "name": "Chai Latte mit Honig (300ml)",
+      "portion_g": 316,
+      "calories": 187,
+      "protein": 7,
+      "carbs": 27,
+      "fat": 7,
+      "tip": "Honig statt Zucker",
+      "basis": [
+        {
+          "fdcId": 171265,
+          "ml": 200,
+          "g": 206
+        },
+        {
+          "fdcId": 173227,
+          "ml": 90,
+          "g": 90
+        },
+        {
+          "fdcId": 169640,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Iced Chai Latte (400ml)",
+      "portion_g": 411,
+      "calories": 185,
+      "protein": 6,
+      "carbs": 25,
+      "fat": 7,
+      "tip": "Mit 100 g Eiswürfeln",
+      "basis": [
+        {
+          "fdcId": 171265,
+          "ml": 200,
+          "g": 206
+        },
+        {
+          "fdcId": 173227,
+          "ml": 90,
+          "g": 90
+        },
+        {
+          "fdcId": 169655,
+          "g": 15
+        },
+        {
+          "fdcId": 173647,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Dirty Chai (+ Espresso, 300ml)",
+      "portion_g": 311,
+      "calories": 168,
+      "protein": 6,
+      "carbs": 23,
+      "fat": 6,
+      "basis": [
+        {
+          "ml": 270,
+          "g": 281
+        },
+        {
+          "slug": "espresso"
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Cappuccino (200ml)", "calories": 80, "emoji": "☕" },
-    { "name": "Latte Macchiato (300ml)", "calories": 150, "emoji": "🥛" },
-    { "name": "Kakao (250ml)", "calories": 210, "emoji": "🍫" },
-    { "name": "Schwarztee pur", "calories": 1, "emoji": "🍵" }
+    {
+      "name": "Cappuccino (200ml)",
+      "calories": 55,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "cappuccino",
+          "ml": 200,
+          "g": 203
+        }
+      ]
+    },
+    {
+      "name": "Latte Macchiato (300ml)",
+      "calories": 131,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "latte-macchiato",
+          "ml": 300,
+          "g": 304
+        }
+      ]
+    },
+    {
+      "name": "Kakao (250ml)",
+      "calories": 238,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kakao",
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Schwarztee pur (250ml)",
+      "calories": 3,
+      "emoji": "🍵",
+      "basis": [
+        {
+          "slug": "tee"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Echten Chai brühen", "text": "Traditioneller Masala Chai mit Gewürzen, Tee und etwas Milch hat nur 100 kcal. Sirup-Chai hat 185-280 kcal.", "icon": "🍵" },
-    { "title": "Weniger Sirup bestellen", "text": "Bei Starbucks 'half sweet' bestellen – halbe Sirup-Menge spart 40+ kcal ohne großen Geschmacksverlust.", "icon": "📉" },
-    { "title": "Fettarme Milch wählen", "text": "Von 185 kcal auf 155 kcal – 30 kcal pro Tasse gespart mit 1,5% Milch.", "icon": "🥛" },
-    { "title": "Dirty Chai für Koffein", "text": "Ein Espresso-Shot im Chai (Dirty Chai) fügt nur 3 kcal hinzu, verdoppelt aber den Koffein-Gehalt.", "icon": "⚡" },
-    { "title": "Gewürze selber mischen", "text": "Zimt, Kardamom, Ingwer, Nelken – eigene Gewürzmischung ist zuckerfrei. Fertige Chai-Sirups bestehen zu 50%+ aus Zucker.", "icon": "🧂" }
+    {
+      "title": "Echten Chai brühen",
+      "text": "Traditioneller Masala Chai mit Gewürzen, Tee und etwas Milch hat nur rund 95 kcal (200 ml). Ein gesüßter Chai Latte hat 184 kcal (300 ml), ein großer rund 289 kcal.",
+      "icon": "🍵"
+    },
+    {
+      "title": "Weniger Sirup bestellen",
+      "text": "Halb so süß bestellen: Die halbe Zucker- bzw. Sirupmenge spart rund 29 kcal pro Glas ohne großen Geschmacksverlust.",
+      "icon": "📉"
+    },
+    {
+      "title": "Fettarme Milch wählen",
+      "text": "Von 184 kcal auf 145 kcal: rund 39 kcal pro Glas gespart mit fettarmer Milch.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Dirty Chai für Koffein",
+      "text": "Ein Espresso-Shot im Chai (Dirty Chai) hat nur rund 3 kcal und liefert zusätzliches Koffein.",
+      "icon": "⚡"
+    },
+    {
+      "title": "Gewürze selber mischen",
+      "text": "Zimt, Kardamom, Ingwer, Nelken: Eine eigene Gewürzmischung ist zuckerfrei. Fertige Chai-Sirups bestehen zum großen Teil aus Zucker.",
+      "icon": "🧂"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Chai Latte?", "answer": "Ein Chai Latte (300ml) hat ca. 185 kcal mit Vollmilch. Starbucks Grande: 280 kcal. Traditioneller Masala Chai nur 100 kcal." },
-    { "question": "Wie viel Zucker hat ein Chai Latte?", "answer": "Ein Café-Chai-Latte hat ca. 28g Zucker (7 Zuckerwürfel). Starbucks Grande sogar 46g. Selbstgemachter Chai mit Gewürzen kann zuckerfrei sein." },
-    { "question": "Ist Chai Latte gesund?", "answer": "Die Gewürze (Zimt, Ingwer, Kardamom) haben gesundheitliche Vorteile. Problematisch ist der hohe Zuckergehalt in Fertig-Chai. Selbst gebrühter Chai mit wenig Zucker ist eine gute Wahl." },
-    { "question": "Chai Latte vs. Latte Macchiato – was hat weniger Kalorien?", "answer": "Latte Macchiato hat weniger: 150 kcal vs. 185 kcal beim Chai Latte. Der Unterschied kommt vom Chai-Sirup/Zucker." },
-    { "question": "Was ist ein Dirty Chai?", "answer": "Ein Chai Latte mit einem Espresso-Shot. Nur 3 kcal mehr als normaler Chai, aber deutlich mehr Koffein. Die beste Wahl für Chai-Fans mit Koffein-Bedarf." },
-    { "question": "Kann ich Chai Latte beim Abnehmen trinken?", "answer": "Ja, wenn du ihn einplanst. 185 kcal sind ein Snack. Tipps: fettarme Milch, weniger Sirup, oder traditionellen Chai mit Gewürzen brühen (100 kcal)." }
+    {
+      "question": "Wie viele Kalorien hat ein Chai Latte?",
+      "answer": "Ein Chai Latte (300ml) hat ca. 184 kcal mit Vollmilch, ein großer (470ml) rund 289 kcal. Traditioneller Masala Chai (200ml) nur rund 95 kcal. Gerechnet aus USDA-Werten für 200 ml Vollmilch, 90 ml Schwarztee und 15 g Zucker."
+    },
+    {
+      "question": "Wie viel Zucker hat ein Chai Latte?",
+      "answer": "Ein Café-Chai-Latte (300ml) hat rund 25g Kohlenhydrate, davon 15g zugesetzten Zucker (etwa 5 Zuckerwürfel), der Rest ist Milchzucker. Selbstgemachter Chai mit Gewürzen kann ohne Zuckerzusatz auskommen."
+    },
+    {
+      "question": "Ist Chai Latte gesund?",
+      "answer": "Die Gewürze (Zimt, Ingwer, Kardamom) haben gesundheitliche Vorteile. Problematisch ist der hohe Zuckergehalt in Fertig-Chai. Selbst gebrühter Chai mit wenig Zucker ist eine gute Wahl."
+    },
+    {
+      "question": "Chai Latte vs. Latte Macchiato: Was hat weniger Kalorien?",
+      "answer": "Latte Macchiato hat weniger: 131 kcal vs. 184 kcal beim Chai Latte (je 300 ml). Der Unterschied kommt vom Zucker bzw. Chai-Sirup."
+    },
+    {
+      "question": "Was ist ein Dirty Chai?",
+      "answer": "Ein Chai Latte mit einem Espresso-Shot. Der Espresso hat nur rund 3 kcal, liefert aber deutlich mehr Koffein. Die beste Wahl für Chai-Fans mit Koffein-Bedarf."
+    },
+    {
+      "question": "Kann ich Chai Latte beim Abnehmen trinken?",
+      "answer": "Ja, wenn du ihn einplanst. 184 kcal sind ein Snack. Tipps: fettarme Milch, weniger Sirup, oder traditionellen Chai mit Gewürzen brühen (95 kcal)."
+    }
   ],
-  "related_foods": ["cappuccino", "latte-macchiato", "eiskaffee", "mate-tee"]
+  "related_foods": [
+    "cappuccino",
+    "latte-macchiato",
+    "eiskaffee",
+    "mate-tee"
+  ]
 }

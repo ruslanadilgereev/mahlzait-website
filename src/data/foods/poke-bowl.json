@@ -3,9 +3,59 @@
   "name": "Poke Bowl",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Bowl 400 g mit Thunfisch): 160 g Sushi-Reis gekocht (FDC-ID 168880, Rice, white, medium-grain, enriched, cooked: 130 kcal), 100 g Thunfisch roh (Gelbflosse) (FDC-ID 175159, Fish, tuna, fresh, yellowfin, raw: 109 kcal), 40 g Edamame (FDC-ID 168411, Edamame, frozen, prepared: 121 kcal), 35 g Avocado (FDC-ID 171705, Avocados, raw, all commercial varieties: 160 kcal), 25 g Gurke (FDC-ID 168409, Cucumber, with peel, raw: 15 kcal), 15 g Karotte (FDC-ID 170393, Carrots, raw: 41 kcal), 10 g Wakame (FDC-ID 170496, Seaweed, wakame, raw: 45 kcal), 10 g Sojasauce (FDC-ID 174277, Soy sauce made from soy and wheat (shoyu): 53 kcal), 5 g Sesamöl (FDC-ID 171016, Oil, sesame, salad or cooking: 884 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Sushi-Reis gekocht",
+        "g": 160,
+        "fdcId": 168880
+      },
+      {
+        "name": "Thunfisch roh (Gelbflosse)",
+        "g": 100,
+        "fdcId": 175159
+      },
+      {
+        "name": "Edamame",
+        "g": 40,
+        "fdcId": 168411
+      },
+      {
+        "name": "Avocado",
+        "g": 35,
+        "fdcId": 171705
+      },
+      {
+        "name": "Gurke",
+        "g": 25,
+        "fdcId": 168409
+      },
+      {
+        "name": "Karotte",
+        "g": 15,
+        "fdcId": 170393
+      },
+      {
+        "name": "Wakame",
+        "g": 10,
+        "fdcId": 170496
+      },
+      {
+        "name": "Sojasauce",
+        "g": 10,
+        "fdcId": 174277
+      },
+      {
+        "name": "Sesamöl",
+        "g": 5,
+        "fdcId": 171016
+      }
+    ]
+  },
   "seo": {
     "title": "Poke Bowl Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Poke Bowl? Eine normale Portion (400g) hat ca. 520 kcal. Nährwerte pro 100g, Varianten im Vergleich & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat eine Poke Bowl? Eine normale Portion (400g) hat ca. 484 kcal. Nährwerte pro 100g, Varianten im Vergleich & Tipps zum Abnehmen.",
     "keywords": [
       "poke bowl kalorien",
       "poke bowl kcal",
@@ -16,11 +66,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 130,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 17,
-    "fat_per_100g": 3,
-    "fiber_per_100g": 1.8,
+    "calories_per_100g": 121,
+    "protein_per_100g": 8.8,
+    "carbs_per_100g": 14,
+    "fat_per_100g": 3.3,
+    "fiber_per_100g": 1.4,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Poke Bowl (normal)"
   },
@@ -28,95 +78,239 @@
     {
       "name": "Kleine Poke Bowl (250g)",
       "portion_g": 250,
-      "calories": 325,
-      "protein": 20,
-      "carbs": 43,
+      "calories": 303,
+      "protein": 22,
+      "carbs": 35,
       "fat": 8,
       "tip": "Leichte Mittagsportion"
     },
     {
       "name": "Poke Bowl normal (400g)",
       "portion_g": 400,
-      "calories": 520,
-      "protein": 32,
-      "carbs": 68,
-      "fat": 12,
+      "calories": 484,
+      "protein": 35,
+      "carbs": 56,
+      "fat": 13,
       "tip": "Standard"
     },
     {
       "name": "Große Poke Bowl (500g)",
       "portion_g": 500,
-      "calories": 650,
-      "protein": 40,
-      "carbs": 85,
-      "fat": 15
+      "calories": 605,
+      "protein": 44,
+      "carbs": 70,
+      "fat": 17
     },
     {
       "name": "Poke Bowl mit Lachs (400g)",
       "portion_g": 400,
-      "calories": 580,
-      "protein": 30,
-      "carbs": 66,
-      "fat": 18,
-      "tip": "Lachs ist fettreicher als Thunfisch"
+      "calories": 584,
+      "protein": 31,
+      "carbs": 56,
+      "fat": 26,
+      "tip": "Lachs ist fettreicher als Thunfisch",
+      "basis": [
+        {
+          "fdcId": 168880,
+          "g": 160
+        },
+        {
+          "fdcId": 175167,
+          "g": 100
+        },
+        {
+          "fdcId": 168411,
+          "g": 40
+        },
+        {
+          "fdcId": 171705,
+          "g": 35
+        },
+        {
+          "fdcId": 168409,
+          "g": 25
+        },
+        {
+          "fdcId": 170393,
+          "g": 15
+        },
+        {
+          "fdcId": 170496,
+          "g": 10
+        },
+        {
+          "fdcId": 174277,
+          "g": 10
+        },
+        {
+          "fdcId": 171016,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Vegane Poke Bowl mit Tofu (400g)",
       "portion_g": 400,
-      "calories": 470,
-      "protein": 22,
-      "carbs": 70,
-      "fat": 11
+      "calories": 454,
+      "protein": 20,
+      "carbs": 59,
+      "fat": 17,
+      "basis": [
+        {
+          "fdcId": 168880,
+          "g": 160
+        },
+        {
+          "fdcId": 172448,
+          "g": 100
+        },
+        {
+          "fdcId": 168411,
+          "g": 40
+        },
+        {
+          "fdcId": 171705,
+          "g": 35
+        },
+        {
+          "fdcId": 168409,
+          "g": 25
+        },
+        {
+          "fdcId": 170393,
+          "g": 15
+        },
+        {
+          "fdcId": 170496,
+          "g": 10
+        },
+        {
+          "fdcId": 174277,
+          "g": 10
+        },
+        {
+          "fdcId": 171016,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Poke Bowl ohne Reis (Salatbasis, 350g)",
       "portion_g": 350,
-      "calories": 300,
-      "protein": 28,
-      "carbs": 16,
+      "calories": 296,
+      "protein": 33,
+      "carbs": 14,
       "fat": 13,
-      "tip": "Low-Carb-Variante"
+      "tip": "Low-Carb-Variante",
+      "basis": [
+        {
+          "fdcId": 169247,
+          "g": 110
+        },
+        {
+          "fdcId": 175159,
+          "g": 100
+        },
+        {
+          "fdcId": 168411,
+          "g": 40
+        },
+        {
+          "fdcId": 171705,
+          "g": 35
+        },
+        {
+          "fdcId": 168409,
+          "g": 25
+        },
+        {
+          "fdcId": 170393,
+          "g": 15
+        },
+        {
+          "fdcId": 170496,
+          "g": 10
+        },
+        {
+          "fdcId": 174277,
+          "g": 10
+        },
+        {
+          "fdcId": 171016,
+          "g": 5
+        }
+      ]
     },
     {
-      "name": "Poke Bowl mit extra Avocado (450g)",
+      "name": "Poke Bowl mit extra Avocado (400g + 50g)",
       "portion_g": 450,
-      "calories": 640,
-      "protein": 34,
-      "carbs": 70,
-      "fat": 22
+      "calories": 564,
+      "protein": 36,
+      "carbs": 60,
+      "fat": 21,
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 171705,
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Sushi (8 Stück)",
-      "calories": 350,
-      "emoji": "🍣"
+      "name": "Sushi (8 Lachs-Maki)",
+      "calories": 206,
+      "emoji": "🍣",
+      "basis": [
+        {
+          "slug": "sushi",
+          "variante": "Maki (Lachs, 8 Stück)"
+        }
+      ]
     },
     {
       "name": "Caesar Salad",
-      "calories": 430,
-      "emoji": "🥗"
+      "calories": 403,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "slug": "caesar-salad"
+        }
+      ]
     },
     {
       "name": "Burrito",
-      "calories": 620,
-      "emoji": "🌯"
+      "calories": 876,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "burrito"
+        }
+      ]
     },
     {
       "name": "Burger",
-      "calories": 550,
-      "emoji": "🍔"
+      "calories": 418,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich und sättigend",
-      "text": "Durch rohen Fisch oder Tofu liefert eine normale Poke Bowl rund 30g Protein. Das hält lange satt und unterstützt den Muskelerhalt.",
+      "text": "Durch rohen Fisch liefert eine normale Poke Bowl rund 35g Protein, mit Tofu rund 20g. Das hält lange satt und unterstützt den Muskelerhalt.",
       "icon": "💪"
     },
     {
       "title": "Reis bestimmt die Kalorien",
-      "text": "Der größte Kalorienlieferant ist der Reis. Wer abnehmen möchte, wählt eine Salatbasis statt Reis und spart so leicht 150 bis 200 kcal.",
+      "text": "Der größte Kalorienlieferant ist der Reis. Wer abnehmen möchte, wählt eine Salatbasis statt Reis und spart so rund 190 kcal.",
       "icon": "🍚"
     },
     {
@@ -126,7 +320,7 @@
     },
     {
       "title": "Avocado bewusst dosieren",
-      "text": "Avocado ist gesund, aber fettreich. Eine halbe Avocado bringt schon rund 120 kcal zusätzlich in die Bowl.",
+      "text": "Avocado ist gesund, aber fettreich. 50g Avocado bringen schon rund 80 kcal zusätzlich in die Bowl.",
       "icon": "🥑"
     },
     {
@@ -138,19 +332,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Poke Bowl?",
-      "answer": "Eine normale Poke Bowl (400g) mit Reis, rohem Fisch und Gemüse hat etwa 520 kcal. Pro 100g sind es rund 130 kcal."
+      "answer": "Eine normale Poke Bowl (400g) mit Reis, rohem Thunfisch und Gemüse hat etwa 484 kcal. Pro 100g sind es rund 121 kcal. Gerechnet aus USDA-Werten für 160g Sushi-Reis, 100g Thunfisch, 40g Edamame, 35g Avocado, Gemüse, Wakame, Sojasauce und 5g Sesamöl."
     },
     {
       "question": "Wie viel Protein hat eine Poke Bowl?",
-      "answer": "Eine normale Portion (400g) liefert etwa 32g Protein, vor allem durch den rohen Fisch wie Thunfisch oder Lachs."
+      "answer": "Eine normale Portion (400g) liefert etwa 35g Protein, vor allem durch den rohen Fisch wie Thunfisch oder Lachs."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Poke Bowl?",
-      "answer": "Eine normale Poke Bowl enthält rund 68g Kohlenhydrate, die hauptsächlich aus dem Reis stammen."
+      "answer": "Eine normale Poke Bowl enthält rund 56g Kohlenhydrate, die hauptsächlich aus dem Reis stammen."
     },
     {
       "question": "Ist eine Poke Bowl zum Abnehmen geeignet?",
-      "answer": "Ja, in Maßen. Mit Salatbasis statt Reis und einer leichten Sauce lässt sich eine sättigende Poke Bowl mit unter 350 kcal zusammenstellen."
+      "answer": "Ja, in Maßen. Mit Salatbasis statt Reis und einer leichten Sauce kommt eine sättigende Poke Bowl (350g) auf rund 296 kcal."
     },
     {
       "question": "Ist eine Poke Bowl gesund?",
@@ -158,7 +352,7 @@
     },
     {
       "question": "Hat eine vegane Poke Bowl weniger Kalorien?",
-      "answer": "Eine vegane Poke Bowl mit Tofu hat mit rund 470 kcal pro 400g etwas weniger Kalorien als die Variante mit Fisch, da Tofu fettärmer als Lachs ist."
+      "answer": "Eine vegane Poke Bowl mit Tofu hat mit rund 454 kcal pro 400g etwas weniger Kalorien als die Varianten mit Thunfisch (484 kcal) oder Lachs (584 kcal), da Tofu weniger Kalorien hat als der Fisch."
     }
   ],
   "related_foods": [

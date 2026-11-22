@@ -3,9 +3,54 @@
   "name": "Okroschka",
   "emoji": "🥣",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Teller à ca. 360 g): 620 g Kefir (FDC-ID 2705394, Kefir: 52 kcal), 100 g Mineralwasser (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal), 200 g Kartoffeln gekocht (FDC-ID 170438, Potatoes, boiled, cooked in skin, flesh, without salt: 87 kcal), 200 g Gurke (FDC-ID 168409, Cucumber, with peel, raw: 15 kcal), 100 g Radieschen (FDC-ID 169276, Radishes, raw: 16 kcal), 100 g Eier hartgekocht (2 Stück) (FDC-ID 173424, Egg, whole, cooked, hard-boiled: 155 kcal), 100 g Kochwurst (Fleischwurst) (FDC-ID 172013, Bologna, beef and pork: 308 kcal), 30 g Frühlingszwiebeln (FDC-ID 170005, Onions, spring or scallions (includes tops and bulb), raw: 32 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Kefir",
+        "g": 620,
+        "fdcId": 2705394
+      },
+      {
+        "name": "Mineralwasser",
+        "g": 100,
+        "fdcId": 173647
+      },
+      {
+        "name": "Kartoffeln gekocht",
+        "g": 200,
+        "fdcId": 170438
+      },
+      {
+        "name": "Gurke",
+        "g": 200,
+        "fdcId": 168409
+      },
+      {
+        "name": "Radieschen",
+        "g": 100,
+        "fdcId": 169276
+      },
+      {
+        "name": "Eier hartgekocht (2 Stück)",
+        "g": 100,
+        "fdcId": 173424
+      },
+      {
+        "name": "Kochwurst (Fleischwurst)",
+        "g": 100,
+        "fdcId": 172013
+      },
+      {
+        "name": "Frühlingszwiebeln",
+        "g": 30,
+        "fdcId": 170005
+      }
+    ]
+  },
   "seo": {
     "title": "Okroschka Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Okroschka? Die kalte Suppe hat nur ca. 50 kcal pro 100g. Nährwerte je Teller, Kefir- vs. Kwas-Basis & leichte Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Okroschka? Die kalte Suppe hat nur ca. 70 kcal pro 100g. Nährwerte je Teller, Portionen & leichte Diät-Tipps.",
     "keywords": [
       "okroschka kalorien",
       "okroschka kcal",
@@ -16,11 +61,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 50,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 4.5,
-    "fat_per_100g": 2.2,
-    "fiber_per_100g": 0.9,
+    "calories_per_100g": 70,
+    "protein_per_100g": 3.9,
+    "carbs_per_100g": 7.3,
+    "fat_per_100g": 2.9,
+    "fiber_per_100g": 0.5,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller (350g)"
   },
@@ -28,97 +73,101 @@
     {
       "name": "Kleine Schale (200g)",
       "portion_g": 200,
-      "calories": 100,
-      "protein": 6,
-      "carbs": 9,
-      "fat": 4,
+      "calories": 140,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 6,
       "tip": "Vorspeise"
     },
     {
       "name": "1 Teller (350g)",
       "portion_g": 350,
-      "calories": 175,
-      "protein": 11,
-      "carbs": 16,
-      "fat": 8,
+      "calories": 245,
+      "protein": 14,
+      "carbs": 26,
+      "fat": 10,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (450g)",
       "portion_g": 450,
-      "calories": 225,
-      "protein": 14,
-      "carbs": 20,
-      "fat": 10,
+      "calories": 315,
+      "protein": 18,
+      "carbs": 33,
+      "fat": 13,
       "tip": "Als Hauptmahlzeit"
     },
     {
-      "name": "Kefir-Basis (pro 100g)",
+      "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 50,
-      "protein": 3,
-      "carbs": 5,
-      "fat": 2
+      "calories": 70,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 3
     },
     {
-      "name": "Auf Kwas-Basis (350g)",
+      "name": "Mit extra Wurst (300g + 50g)",
       "portion_g": 350,
-      "calories": 158,
-      "protein": 7,
-      "carbs": 21,
-      "fat": 4,
-      "tip": "Mehr Kohlenhydrate, weniger Fett"
-    },
-    {
-      "name": "Vegetarisch ohne Wurst (350g)",
-      "portion_g": 350,
-      "calories": 147,
-      "protein": 8,
-      "carbs": 16,
-      "fat": 5,
-      "tip": "Leichteste Variante"
-    },
-    {
-      "name": "Mit viel Fleisch (350g)",
-      "portion_g": 350,
-      "calories": 217,
-      "protein": 16,
-      "carbs": 14,
-      "fat": 11,
-      "tip": "Proteinreich & sättigend"
+      "calories": 364,
+      "protein": 19,
+      "carbs": 25,
+      "fat": 21,
+      "tip": "Proteinreich & sättigend",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 172013,
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Gazpacho (350g)",
-      "calories": 140,
-      "emoji": "🍅"
+      "calories": 91,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "fdcId": 2710106,
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Borschtsch (350g)",
-      "calories": 175,
-      "emoji": "🥬"
-    },
-    {
-      "name": "Soljanka (350g)",
-      "calories": 245,
-      "emoji": "🍲"
+      "calories": 70,
+      "emoji": "🥬",
+      "basis": [
+        {
+          "fdcId": 2710105,
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Kartoffelsuppe (350g)",
-      "calories": 280,
-      "emoji": "🥔"
+      "calories": 315,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelsuppe",
+          "g": 350
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarme Sommersuppe",
-      "text": "Ein ganzer Teller Okroschka (350g) liefert nur rund 175 kcal. Durch den hohen Wasser- und Gemüseanteil sättigt die kalte Suppe gut, ohne schwer im Magen zu liegen.",
+      "text": "Ein ganzer Teller Okroschka (350g) liefert rund 245 kcal. Durch den hohen Wasser- und Gemüseanteil sättigt die kalte Suppe gut, ohne schwer im Magen zu liegen.",
       "icon": "🥣"
     },
     {
       "title": "Kefir liefert Eiweiß",
-      "text": "Die klassische Kefir-Basis bringt Protein und Milchsäurebakterien mit. So kommt ein Teller bequem auf 10 bis 14g Eiweiß, was die Sättigung zusätzlich unterstützt.",
+      "text": "Die klassische Kefir-Basis bringt Protein und Milchsäurebakterien mit. So kommt ein Teller bequem auf rund 14g Eiweiß, was die Sättigung zusätzlich unterstützt.",
       "icon": "🥛"
     },
     {
@@ -140,23 +189,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Okroschka?",
-      "answer": "Klassische Okroschka auf Kefir-Basis hat etwa 50 kcal pro 100g. Ein voller Teller (350g) liefert rund 175 kcal und ist damit eine kalorienarme Mahlzeit."
+      "answer": "Klassische Okroschka auf Kefir-Basis hat etwa 70 kcal pro 100g. Ein voller Teller (350g) liefert rund 245 kcal und ist damit eine kalorienarme Mahlzeit. Gerechnet aus USDA-Werten für 620g Kefir, 100ml Mineralwasser, je 200g Kartoffeln und Gurke, 100g Radieschen, 2 Eier, 100g Fleischwurst und Frühlingszwiebeln für 4 Teller."
     },
     {
       "question": "Wie viele Kalorien hat ein Teller Okroschka?",
-      "answer": "Ein Standard-Teller mit 350g kommt auf etwa 175 kcal. Eine große Portion (450g) liegt bei rund 225 kcal, eine kleine Schale (200g) bei etwa 100 kcal."
+      "answer": "Ein Standard-Teller mit 350g kommt auf etwa 245 kcal. Eine große Portion (450g) liegt bei rund 315 kcal, eine kleine Schale (200g) bei etwa 140 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Okroschka?",
-      "answer": "Okroschka enthält etwa 4,5g Kohlenhydrate pro 100g, vor allem aus Kartoffeln und Gemüse. Ein Teller (350g) hat rund 16g. Auf Kwas-Basis sind es durch den Brottrunk etwas mehr."
+      "answer": "Okroschka enthält etwa 7g Kohlenhydrate pro 100g, vor allem aus Kefir und Kartoffeln. Ein Teller (350g) hat rund 26g. Auf Kwas-Basis sind es durch den Brottrunk etwas mehr."
     },
     {
       "question": "Wie viel Eiweiß steckt in Okroschka?",
-      "answer": "Pro 100g sind es etwa 3g Eiweiß. Ein Teller liefert rund 11g, durch Kefir, Ei und Wurst. Mit extra Fleisch sind auch 16g und mehr möglich."
+      "answer": "Pro 100g sind es etwa 4g Eiweiß. Ein Teller liefert rund 14g, durch Kefir, Ei und Wurst. Mit extra Wurst (50g mehr) sind es rund 19g."
     },
     {
       "question": "Ist Okroschka zum Abnehmen geeignet?",
-      "answer": "Ja. Mit nur etwa 50 kcal pro 100g und viel Wasser sowie Gemüse ist Okroschka sehr sättigend bei wenig Kalorien. Wer die Wurst reduziert, macht sie noch leichter."
+      "answer": "Ja. Mit nur etwa 70 kcal pro 100g und viel Wasser sowie Gemüse ist Okroschka sehr sättigend bei wenig Kalorien. Wer die Wurst reduziert, macht sie noch leichter."
     },
     {
       "question": "Ist Okroschka gesund?",

@@ -3,9 +3,44 @@
   "name": "Birchermüesli",
   "emoji": "🥣",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Portion à 250 g): 50 g Haferflocken (FDC-ID 173904, Cereals, oats, regular and quick, not fortified, dry: 379 kcal), 80 g Joghurt 3,5 % (FDC-ID 171284, Yogurt, plain, whole milk: 61 kcal), 60 g Vollmilch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 50 g Apfel, geraspelt (FDC-ID 171688, Apples, raw, with skin (Includes foods for USDA's Food Distribution Program): 52 kcal), 5 g Haselnüsse, gehackt (FDC-ID 170581, Nuts, hazelnuts or filberts: 628 kcal), 5 g Honig (FDC-ID 169640, Honey: 304 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Haferflocken",
+        "g": 50,
+        "fdcId": 173904
+      },
+      {
+        "name": "Joghurt 3,5 %",
+        "g": 80,
+        "fdcId": 171284
+      },
+      {
+        "name": "Vollmilch",
+        "g": 60,
+        "fdcId": 171265
+      },
+      {
+        "name": "Apfel, geraspelt",
+        "g": 50,
+        "fdcId": 171688
+      },
+      {
+        "name": "Haselnüsse, gehackt",
+        "g": 5,
+        "fdcId": 170581
+      },
+      {
+        "name": "Honig",
+        "g": 5,
+        "fdcId": 169640
+      }
+    ]
+  },
   "seo": {
     "title": "Birchermüesli Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Birchermüesli? Eine Portion (250g) hat ca. 350 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Birchermüesli? Eine Portion (250g) hat ca. 348 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "birchermüesli kalorien",
       "birchermüsli kcal",
@@ -16,11 +51,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 140,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 21,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 139,
+    "protein_per_100g": 4.9,
+    "carbs_per_100g": 20.9,
+    "fat_per_100g": 4.4,
+    "fiber_per_100g": 2.7,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion (Schale)"
   },
@@ -28,86 +63,148 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 210,
-      "protein": 6.8,
-      "carbs": 31.5,
-      "fat": 5.2
+      "calories": 209,
+      "protein": 7.4,
+      "carbs": 31.4,
+      "fat": 6.6
     },
     {
       "name": "Portion (250g)",
       "portion_g": 250,
-      "calories": 350,
-      "protein": 11.2,
-      "carbs": 52.5,
-      "fat": 8.8,
+      "calories": 348,
+      "protein": 12.3,
+      "carbs": 52.3,
+      "fat": 11,
       "tip": "Standard-Frühstücksportion"
     },
     {
       "name": "Große Portion (300g)",
       "portion_g": 300,
-      "calories": 420,
-      "protein": 13.5,
-      "carbs": 63,
-      "fat": 10.5
+      "calories": 417,
+      "protein": 14.7,
+      "carbs": 62.7,
+      "fat": 13.2
     },
     {
       "name": "Mit fettarmem Joghurt (250g)",
       "portion_g": 250,
-      "calories": 300,
-      "protein": 12.5,
-      "carbs": 50,
-      "fat": 5,
-      "tip": "Kalorienärmere Variante"
+      "calories": 342,
+      "protein": 13.6,
+      "carbs": 54.2,
+      "fat": 8.8,
+      "tip": "Mit fettarmem Joghurt und fettarmer Milch",
+      "basis": [
+        {
+          "fdcId": 173904,
+          "g": 50
+        },
+        {
+          "fdcId": 170886,
+          "g": 80
+        },
+        {
+          "fdcId": 171267,
+          "g": 60
+        },
+        {
+          "fdcId": 171688,
+          "g": 50
+        },
+        {
+          "fdcId": 170581,
+          "g": 5
+        },
+        {
+          "fdcId": 169640,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Mit Sahne & Nüssen (250g)",
       "portion_g": 250,
-      "calories": 450,
-      "protein": 11,
-      "carbs": 53,
-      "fat": 21,
-      "tip": "Klassisch-üppige Schweizer Art"
+      "calories": 459,
+      "protein": 13.1,
+      "carbs": 47.1,
+      "fat": 26.1,
+      "tip": "Klassisch-üppige Schweizer Art",
+      "basis": [
+        {
+          "g": 210
+        },
+        {
+          "fdcId": 170858,
+          "g": 25
+        },
+        {
+          "fdcId": 170581,
+          "g": 15
+        }
+      ]
     },
     {
-      "name": "Fertigprodukt Becher (175g)",
+      "name": "Becher-Portion (175g)",
       "portion_g": 175,
-      "calories": 245,
-      "protein": 7.9,
-      "carbs": 36.8,
-      "fat": 6.1
+      "calories": 243,
+      "protein": 8.6,
+      "carbs": 36.6,
+      "fat": 7.7
     }
   ],
   "comparison": [
     {
-      "name": "Haferbrei (250g)",
-      "calories": 240,
-      "emoji": "🥣"
+      "name": "Haferbrei mit Wasser (250g)",
+      "calories": 178,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferbrei",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Fruchtjoghurt (250g)",
-      "calories": 215,
-      "emoji": "🍓"
+      "calories": 265,
+      "emoji": "🍓",
+      "basis": [
+        {
+          "slug": "fruchtjoghurt",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Granola (250g)",
-      "calories": 475,
-      "emoji": "🥜"
+      "name": "Granola (1 Portion, 50g)",
+      "calories": 210,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "granola"
+        }
+      ]
     },
     {
       "name": "Croissant (60g)",
-      "calories": 240,
-      "emoji": "🥐"
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sättigendes Frühstück",
-      "text": "Eine Portion (250g) liefert ca. 350 kcal und durch die Haferflocken viele Ballaststoffe, die lange satt halten.",
+      "text": "Eine Portion (250g) liefert ca. 348 kcal und durch die Haferflocken viele Ballaststoffe, die lange satt halten.",
       "icon": "🥣"
     },
     {
       "title": "Kalorien sparen",
-      "text": "Mit fettarmem Joghurt statt Sahne sinkt eine 250g-Portion von rund 450 auf etwa 300 kcal, ohne dass die Sättigung leidet.",
+      "text": "Ohne Sahne und Extra-Nüsse hat eine 250g-Portion rund 348 statt 459 kcal. Fettarmer Joghurt und fettarme Milch sparen dagegen kaum (ca. 342 kcal).",
       "icon": "📉"
     },
     {
@@ -129,11 +226,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Birchermüesli?",
-      "answer": "Eine typische Portion Birchermüesli (250g) hat etwa 350 kcal. Pro 100g sind es rund 140 kcal."
+      "answer": "Eine typische Portion Birchermüesli (250g) hat etwa 348 kcal. Pro 100g sind es rund 139 kcal. Gerechnet aus USDA-Werten für 50 g Haferflocken, 80 g Joghurt, 60 g Milch, 50 g Apfel, 5 g Haselnüsse und 5 g Honig."
     },
     {
       "question": "Wie viele Kalorien hat Birchermüesli pro 100g?",
-      "answer": "Zubereitetes Birchermüesli mit Joghurt und Apfel hat etwa 140 kcal pro 100g. Mit Sahne oder vielen Nüssen liegt der Wert höher."
+      "answer": "Zubereitetes Birchermüesli mit Joghurt und Apfel hat etwa 139 kcal pro 100g. Mit Sahne oder vielen Nüssen liegt der Wert höher."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Birchermüesli?",
@@ -141,7 +238,7 @@
     },
     {
       "question": "Wie viel Eiweiß hat Birchermüesli?",
-      "answer": "Pro 100g stecken etwa 4,5g Eiweiß im Birchermüesli, in einer 250g-Portion rund 11g. Mit Magerquark oder Skyr lässt sich der Wert erhöhen."
+      "answer": "Pro 100g stecken etwa 4,9g Eiweiß im Birchermüesli, in einer 250g-Portion rund 12g. Mit Magerquark oder Skyr lässt sich der Wert erhöhen."
     },
     {
       "question": "Ist Birchermüesli zum Abnehmen geeignet?",

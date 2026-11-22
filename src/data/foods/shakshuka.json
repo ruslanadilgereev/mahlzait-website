@@ -3,49 +3,296 @@
   "name": "Shakshuka",
   "emoji": "🍳",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Portion à 350 g mit 2 Eiern): 170 g Tomaten, stückig (Dose) (FDC-ID 170501, Tomatoes, crushed, canned: 32 kcal), 45 g Paprika rot (FDC-ID 170108, Peppers, sweet, red, raw: 26 kcal), 25 g Zwiebel (FDC-ID 170000, Onions, raw: 40 kcal), 10 g Olivenöl (FDC-ID 171413, Oil, olive, salad or cooking: 884 kcal), 100 g Eier, pochiert (2 Stück) (FDC-ID 172186, Egg, whole, cooked, poached: 143 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Tomaten, stückig (Dose)",
+        "g": 170,
+        "fdcId": 170501
+      },
+      {
+        "name": "Paprika rot",
+        "g": 45,
+        "fdcId": 170108
+      },
+      {
+        "name": "Zwiebel",
+        "g": 25,
+        "fdcId": 170000
+      },
+      {
+        "name": "Olivenöl",
+        "g": 10,
+        "fdcId": 171413
+      },
+      {
+        "name": "Eier, pochiert (2 Stück)",
+        "g": 100,
+        "fdcId": 172186
+      }
+    ]
+  },
   "seo": {
     "title": "Shakshuka Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Shakshuka? Nährwerte für klassische, grüne & Shakshuka mit Feta. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 95,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 5,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 88,
+    "protein_per_100g": 4.6,
+    "carbs_per_100g": 5.2,
+    "fat_per_100g": 5.7,
+    "fiber_per_100g": 1.3,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Portion (2 Eier)"
   },
   "variants": [
-    {"name": "Klassische Shakshuka (2 Eier)", "portion_g": 350, "calories": 280, "protein": 18, "carbs": 16, "fat": 16, "tip": "Standard-Rezept"},
-    {"name": "Shakshuka mit Feta", "portion_g": 380, "calories": 350, "protein": 22, "carbs": 16, "fat": 22, "tip": "Besonders beliebt"},
-    {"name": "Shakshuka mit 3 Eiern", "portion_g": 400, "calories": 360, "protein": 24, "carbs": 16, "fat": 22},
-    {"name": "Shakshuka mit Brot", "portion_g": 450, "calories": 430, "protein": 22, "carbs": 40, "fat": 20, "tip": "Mit Fladenbrot"},
-    {"name": "Grüne Shakshuka (Spinat)", "portion_g": 380, "calories": 300, "protein": 20, "carbs": 10, "fat": 18},
-    {"name": "Shakshuka mit Merguez-Wurst", "portion_g": 400, "calories": 440, "protein": 26, "carbs": 16, "fat": 30, "tip": "Kalorienreichste Variante"},
-    {"name": "Shakshuka light (1 Ei, mehr Gemüse)", "portion_g": 350, "calories": 210, "protein": 12, "carbs": 18, "fat": 10, "tip": "Ideal zum Abnehmen"},
-    {"name": "Shakshuka mit Kichererbsen", "portion_g": 400, "calories": 380, "protein": 22, "carbs": 30, "fat": 18, "tip": "Extra sättigend"}
+    {
+      "name": "Klassische Shakshuka (2 Eier)",
+      "portion_g": 350,
+      "calories": 308,
+      "protein": 16,
+      "carbs": 18,
+      "fat": 20,
+      "tip": "Standard-Rezept"
+    },
+    {
+      "name": "Shakshuka mit Feta",
+      "portion_g": 380,
+      "calories": 388,
+      "protein": 20,
+      "carbs": 19,
+      "fat": 26,
+      "tip": "Besonders beliebt",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "feta"
+        }
+      ]
+    },
+    {
+      "name": "Shakshuka mit 3 Eiern",
+      "portion_g": 400,
+      "calories": 380,
+      "protein": 22,
+      "carbs": 19,
+      "fat": 25,
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 172186,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Shakshuka mit Brot",
+      "portion_g": 450,
+      "calories": 583,
+      "protein": 25,
+      "carbs": 74,
+      "fat": 21,
+      "tip": "Mit Fladenbrot",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 174915,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Grüne Shakshuka (Spinat)",
+      "portion_g": 380,
+      "calories": 297,
+      "protein": 20,
+      "carbs": 12,
+      "fat": 20,
+      "basis": [
+        {
+          "fdcId": 168463,
+          "g": 250
+        },
+        {
+          "fdcId": 170000,
+          "g": 20
+        },
+        {
+          "fdcId": 171413,
+          "g": 10
+        },
+        {
+          "fdcId": 172186,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Shakshuka mit Merguez-Wurst",
+      "portion_g": 400,
+      "calories": 474,
+      "protein": 25,
+      "carbs": 18,
+      "fat": 34,
+      "tip": "Würzig, mit Bratwurst aus Rind",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 174618,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Shakshuka light (1 Ei, mehr Gemüse)",
+      "portion_g": 350,
+      "calories": 208,
+      "protein": 11,
+      "carbs": 21,
+      "fat": 11,
+      "tip": "Ideal zum Abnehmen",
+      "basis": [
+        {
+          "fdcId": 170501,
+          "g": 200
+        },
+        {
+          "fdcId": 170108,
+          "g": 70
+        },
+        {
+          "fdcId": 170000,
+          "g": 25
+        },
+        {
+          "fdcId": 171413,
+          "g": 5
+        },
+        {
+          "fdcId": 172186,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Shakshuka mit Kichererbsen",
+      "portion_g": 400,
+      "calories": 378,
+      "protein": 20,
+      "carbs": 29,
+      "fat": 21,
+      "tip": "Extra sättigend",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 173800,
+          "g": 50
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Rührei (3 Eier)", "calories": 300, "emoji": "🥚"},
-    {"name": "Omelette", "calories": 320, "emoji": "🍳"},
-    {"name": "Huevos Rancheros", "calories": 400, "emoji": "🌮"},
-    {"name": "Avocado-Toast mit Ei", "calories": 380, "emoji": "🥑"}
+    {
+      "name": "Rührei (3 Eier, 180g)",
+      "calories": 268,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "ruehrei",
+          "g": 180
+        }
+      ]
+    },
+    {
+      "name": "Omelett (3 Eier, 150g)",
+      "calories": 231,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "omelett"
+        }
+      ]
+    },
+    {
+      "name": "Huevos Rancheros (350g)",
+      "calories": 424,
+      "emoji": "🌮",
+      "basis": [
+        {
+          "fdcId": 2707191,
+          "g": 350
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Shakshuka ist kalorienarm", "text": "Mit nur 280 kcal für 2 Eier in Tomatensauce ist Shakshuka eines der leichtesten warmen Frühstücke.", "icon": "💡"},
-    {"title": "Olivenöl sparsam dosieren", "text": "1 EL Olivenöl (90 kcal) reicht. Manche Rezepte verwenden 3-4 EL – das verdreifacht den Fettgehalt.", "icon": "🫒"},
-    {"title": "Brot weglassen spart viel", "text": "Ohne Brot hat Shakshuka nur 280 kcal. Mit Fladenbrot sind es 430 kcal.", "icon": "🫓"},
-    {"title": "Extra Gemüse hinzufügen", "text": "Paprika, Spinat oder Zucchini in der Sauce erhöhen Volumen und Nährstoffe bei wenig Kalorien.", "icon": "🥦"},
-    {"title": "Perfekt für Meal Prep", "text": "Die Tomatensauce lässt sich vorbereiten. Morgens nur Eier hineinsetzen – fertig in 10 Minuten.", "icon": "⏱️"}
+    {
+      "title": "Shakshuka ist kalorienarm",
+      "text": "Mit rund 308 kcal für 2 Eier in Tomatensauce ist Shakshuka eines der leichtesten warmen Frühstücke.",
+      "icon": "💡"
+    },
+    {
+      "title": "Olivenöl sparsam dosieren",
+      "text": "1 EL Olivenöl (10g, rund 88 kcal) reicht. Manche Rezepte verwenden 3 bis 4 EL, das treibt den Fettgehalt deutlich nach oben.",
+      "icon": "🫒"
+    },
+    {
+      "title": "Brot weglassen spart viel",
+      "text": "Ohne Brot hat Shakshuka rund 308 kcal. Mit Fladenbrot (100g) sind es 583 kcal.",
+      "icon": "🫓"
+    },
+    {
+      "title": "Extra Gemüse hinzufügen",
+      "text": "Paprika, Spinat oder Zucchini in der Sauce erhöhen Volumen und Nährstoffe bei wenig Kalorien.",
+      "icon": "🥦"
+    },
+    {
+      "title": "Perfekt für Meal Prep",
+      "text": "Die Tomatensauce lässt sich vorbereiten. Morgens nur Eier hineinsetzen: fertig in 10 Minuten.",
+      "icon": "⏱️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Shakshuka?", "answer": "Klassische Shakshuka mit 2 Eiern hat ca. 280 kcal. Mit Feta ca. 350 kcal, mit Brot ca. 430 kcal."},
-    {"question": "Ist Shakshuka gut zum Abnehmen?", "answer": "Ja! Shakshuka ist kalorienarm (280 kcal), proteinreich (18g) und sättigend. Ideal als Frühstück oder Abendessen."},
-    {"question": "Wie viel Protein hat Shakshuka?", "answer": "2 Eier in Shakshuka liefern ca. 18g Protein. Mit Feta sind es 22g, mit Kichererbsen auch 22g."},
-    {"question": "Ist Shakshuka ein Frühstück oder Abendessen?", "answer": "Beides! In Israel/Nahost ist Shakshuka ein typisches Frühstück, funktioniert aber auch perfekt als leichtes Abendessen."},
-    {"question": "Wie viele Kalorien hat die Shakshuka-Sauce allein?", "answer": "Die Tomatensauce ohne Eier hat ca. 45-55 kcal pro 100g – hauptsächlich aus Tomaten, Paprika und Olivenöl."},
-    {"question": "Was ist gesünder: Shakshuka oder Rührei?", "answer": "Shakshuka ist leichter (280 vs. 300 kcal), hat mehr Vitamine durch die Tomatensauce und weniger Fett als Rührei mit Butter."}
+    {
+      "question": "Wie viele Kalorien hat Shakshuka?",
+      "answer": "Klassische Shakshuka mit 2 Eiern hat ca. 308 kcal. Mit Feta ca. 388 kcal, mit Brot ca. 583 kcal. Gerechnet aus USDA-Werten für eine Portion aus 170 g Tomaten, 45 g Paprika, 25 g Zwiebel, 10 g Olivenöl und 2 Eiern."
+    },
+    {
+      "question": "Ist Shakshuka gut zum Abnehmen?",
+      "answer": "Ja! Shakshuka ist kalorienarm (308 kcal), proteinreich (16g) und sättigend. Ideal als Frühstück oder Abendessen."
+    },
+    {
+      "question": "Wie viel Protein hat Shakshuka?",
+      "answer": "2 Eier in Shakshuka liefern ca. 16g Protein. Mit Feta oder Kichererbsen sind es rund 20g."
+    },
+    {
+      "question": "Ist Shakshuka ein Frühstück oder Abendessen?",
+      "answer": "Beides! In Israel/Nahost ist Shakshuka ein typisches Frühstück, funktioniert aber auch perfekt als leichtes Abendessen."
+    },
+    {
+      "question": "Wie viele Kalorien hat die Shakshuka-Sauce allein?",
+      "answer": "Die Tomatensauce ohne Eier hat ca. 66 kcal pro 100g, hauptsächlich aus Tomaten, Paprika und Olivenöl."
+    },
+    {
+      "question": "Was ist gesünder: Shakshuka oder Rührei?",
+      "answer": "Pro 100g ist Shakshuka mit 88 kcal deutlich leichter als Rührei (149 kcal), hat mehr Vitamine durch die Tomatensauce und weniger Fett als Rührei mit Butter."
+    }
   ],
-  "related_foods": ["ei", "falafel", "hummus-teller", "lahmacun"]
+  "related_foods": [
+    "ei",
+    "falafel",
+    "hummus-teller",
+    "lahmacun"
+  ]
 }

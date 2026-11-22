@@ -3,9 +3,34 @@
   "name": "Caesar Salad",
   "emoji": "🥗",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Portion à 250 g): 175 g Romanasalat (FDC-ID 169247, Lettuce, cos or romaine, raw: 17 kcal), 20 g Croutons (FDC-ID 172752, Croutons, seasoned: 465 kcal), 15 g Parmesan, gerieben (FDC-ID 171247, Cheese, parmesan, grated: 420 kcal), 40 g Caesar-Dressing (FDC-ID 169055, Salad dressing, caesar dressing, regular: 542 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Romanasalat",
+        "g": 175,
+        "fdcId": 169247
+      },
+      {
+        "name": "Croutons",
+        "g": 20,
+        "fdcId": 172752
+      },
+      {
+        "name": "Parmesan, gerieben",
+        "g": 15,
+        "fdcId": 171247
+      },
+      {
+        "name": "Caesar-Dressing",
+        "g": 40,
+        "fdcId": 169055
+      }
+    ]
+  },
   "seo": {
     "title": "Caesar Salad Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Caesar Salad? Ca. 155 kcal pro 100g, eine Standard-Portion (250g) rund 388 kcal. Nährwerte, Varianten & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Caesar Salad? Ca. 161 kcal pro 100g, eine Standard-Portion (250g) rund 403 kcal. Nährwerte, Varianten & Diät-Tipps.",
     "keywords": [
       "caesar salad kalorien",
       "caesar salat kcal",
@@ -16,11 +41,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 155,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 6.5,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 161,
+    "protein_per_100g": 3.8,
+    "carbs_per_100g": 8.7,
+    "fat_per_100g": 12.6,
+    "fiber_per_100g": 2,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion (klassisch, mit Dressing)"
   },
@@ -28,96 +53,145 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 232,
-      "protein": 7,
-      "carbs": 10,
-      "fat": 20,
+      "calories": 242,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 19,
       "tip": "Als Beilage"
     },
     {
       "name": "Standard-Portion klassisch (250g)",
       "portion_g": 250,
-      "calories": 388,
-      "protein": 11,
-      "carbs": 16,
+      "calories": 403,
+      "protein": 10,
+      "carbs": 22,
       "fat": 32,
       "tip": "Übliche Hauptgericht-Portion"
     },
     {
       "name": "Große Portion (350g)",
       "portion_g": 350,
-      "calories": 542,
-      "protein": 16,
-      "carbs": 23,
-      "fat": 46
+      "calories": 564,
+      "protein": 13,
+      "carbs": 30,
+      "fat": 44
     },
     {
       "name": "Caesar Salad mit Hähnchen (350g)",
       "portion_g": 350,
-      "calories": 578,
-      "protein": 38,
-      "carbs": 18,
-      "fat": 38,
-      "tip": "Sättigend durch viel Eiweiß"
+      "calories": 568,
+      "protein": 41,
+      "carbs": 22,
+      "fat": 35,
+      "tip": "Sättigend durch viel Eiweiß",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "fdcId": 171477,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Leichte Variante ohne Dressing (250g)",
       "portion_g": 250,
-      "calories": 150,
+      "calories": 193,
       "protein": 9,
-      "carbs": 11,
+      "carbs": 22,
       "fat": 8,
-      "tip": "Kalorienärmste Option"
+      "tip": "Kalorienärmste Option",
+      "basis": [
+        {
+          "fdcId": 169247,
+          "g": 215
+        },
+        {
+          "fdcId": 172752,
+          "g": 20
+        },
+        {
+          "fdcId": 171247,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Restaurant-Portion (300g)",
       "portion_g": 300,
-      "calories": 465,
-      "protein": 14,
-      "carbs": 20,
-      "fat": 39
+      "calories": 483,
+      "protein": 11,
+      "carbs": 26,
+      "fat": 38
     },
     {
       "name": "Caesar-Dressing (1 EL, 15g)",
       "portion_g": 15,
-      "calories": 68,
+      "calories": 81,
       "protein": 0,
       "carbs": 0,
-      "fat": 7,
-      "tip": "Hier stecken die meisten Kalorien"
+      "fat": 9,
+      "tip": "Hier stecken die meisten Kalorien",
+      "basis": [
+        {
+          "fdcId": 169055,
+          "g": 15
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Tabouleh",
-      "calories": 180,
-      "emoji": "🥗"
+      "name": "Tabouleh (200g)",
+      "calories": 254,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "slug": "tabouleh"
+        }
+      ]
     },
     {
-      "name": "Chicken-Wrap",
-      "calories": 420,
-      "emoji": "🌯"
+      "name": "Chicken-Wrap (161g)",
+      "calories": 406,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "chicken-wrap"
+        }
+      ]
     },
     {
-      "name": "Bowl",
-      "calories": 470,
-      "emoji": "🥙"
+      "name": "Bowl (350g)",
+      "calories": 473,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "bowl"
+        }
+      ]
     },
     {
-      "name": "Burger",
-      "calories": 540,
-      "emoji": "🍔"
+      "name": "Burger (145g)",
+      "calories": 418,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Das Dressing ist der Kalorientreiber",
-      "text": "Über die Hälfte der Kalorien stecken im Caesar-Dressing. Schon 1 Esslöffel (15g) hat rund 68 kcal. Wer das Dressing separat reicht und sparsam dosiert, spart leicht 100 bis 150 kcal pro Portion.",
+      "text": "Über die Hälfte der Kalorien stecken im Caesar-Dressing. Schon 1 Esslöffel (15g) hat rund 81 kcal. Wer nur die halbe Menge Dressing nimmt (20g statt 40g), spart rund 108 kcal pro Portion.",
       "icon": "🥄"
     },
     {
       "title": "Mit Hähnchen sättigt er besser",
-      "text": "Eine Portion mit gegrillter Hähnchenbrust liefert rund 38g Eiweiß. Das sättigt deutlich länger und macht den Salat zu einer vollwertigen Hauptmahlzeit.",
+      "text": "Eine Portion mit gegrillter Hähnchenbrust liefert rund 41g Eiweiß. Das sättigt deutlich länger und macht den Salat zu einer vollwertigen Hauptmahlzeit.",
       "icon": "🍗"
     },
     {
@@ -132,26 +206,26 @@
     },
     {
       "title": "Selbst gemacht ist kontrollierbar",
-      "text": "Im Restaurant variiert die Portion stark. Wer zuhause mit Joghurt statt Mayonnaise im Dressing arbeitet und das Öl reduziert, kommt leicht auf unter 100 kcal pro 100g.",
+      "text": "Im Restaurant variiert die Portion stark. Wer zuhause mit Joghurt statt Mayonnaise im Dressing arbeitet und das Öl reduziert, spart deutlich Kalorien.",
       "icon": "🏠"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Caesar Salad?",
-      "answer": "Ein klassischer Caesar Salad mit Dressing, Parmesan und Croutons hat etwa 155 kcal pro 100g. Eine Standard-Portion von 250g kommt damit auf rund 388 kcal."
+      "answer": "Ein klassischer Caesar Salad mit Dressing, Parmesan und Croutons hat etwa 161 kcal pro 100g. Eine Standard-Portion von 250g kommt damit auf rund 403 kcal. Gerechnet aus USDA-Werten für 175 g Romanasalat, 20 g Croutons, 15 g Parmesan und 40 g Caesar-Dressing."
     },
     {
       "question": "Wie viele Kalorien hat ein Caesar Salad mit Hähnchen?",
-      "answer": "Eine Portion mit gegrillter Hähnchenbrust (ca. 350g) hat rund 578 kcal und liefert dabei etwa 38g Eiweiß, was deutlich besser sättigt als die Variante ohne Fleisch."
+      "answer": "Eine Portion mit gegrillter Hähnchenbrust (ca. 350g) hat rund 568 kcal und liefert dabei etwa 41g Eiweiß, was deutlich besser sättigt als die Variante ohne Fleisch."
     },
     {
       "question": "Wie viel Eiweiß und Kohlenhydrate hat ein Caesar Salad?",
-      "answer": "Pro 100g enthält ein klassischer Caesar Salad rund 4,5g Eiweiß und 6,5g Kohlenhydrate. Mit Hähnchen steigt der Eiweißanteil deutlich an."
+      "answer": "Pro 100g enthält ein klassischer Caesar Salad rund 3,8g Eiweiß und 8,7g Kohlenhydrate. Mit Hähnchen steigt der Eiweißanteil deutlich an."
     },
     {
       "question": "Ist Caesar Salad zum Abnehmen geeignet?",
-      "answer": "Bedingt. Der Salatkern ist kalorienarm, doch Dressing, Parmesan und Croutons machen ihn fettreich. Wer das Dressing reduziert oder weglässt, kommt auf unter 60 kcal pro 100g und kann den Salat gut in eine Diät einbauen."
+      "answer": "Bedingt. Der Salatkern ist kalorienarm, doch Dressing, Parmesan und Croutons machen ihn fettreich. Wer das Dressing weglässt, kommt auf rund 77 kcal pro 100g und kann den Salat gut in eine Diät einbauen."
     },
     {
       "question": "Ist Caesar Salad gesund?",
@@ -159,7 +233,7 @@
     },
     {
       "question": "Warum hat Caesar Salad so viel Fett?",
-      "answer": "Das Fett stammt fast vollständig aus dem Dressing auf Öl- und Mayonnaise-Basis sowie aus dem Parmesan. Rund 13g Fett pro 100g machen etwa drei Viertel der Kalorien aus."
+      "answer": "Das Fett stammt fast vollständig aus dem Dressing auf Öl- und Mayonnaise-Basis sowie aus dem Parmesan. Rund 13g Fett pro 100g machen etwa 70% der Kalorien aus."
     }
   ],
   "related_foods": [

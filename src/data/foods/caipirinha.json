@@ -3,9 +3,36 @@
   "name": "Caipirinha",
   "emoji": "🍹",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Glas mit 6 cl Cachaça (ca. 150 g mit Schmelzwasser)): 60 ml (57 g) Cachaça (gerechnet als Rum, 40 % vol) (FDC-ID 174817, Alcoholic beverage, distilled, rum, 80 proof: 231 kcal), 20 ml (21 g) Limettensaft (frisch gepresst) (FDC-ID 168156, Lime juice, raw: 25 kcal), 12 g Brauner Zucker (FDC-ID 168833, Sugars, brown: 380 kcal), 60 g Schmelzwasser vom Crushed Ice (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Cachaça (gerechnet als Rum, 40 % vol)",
+        "g": 57,
+        "ml": 60,
+        "fdcId": 174817
+      },
+      {
+        "name": "Limettensaft (frisch gepresst)",
+        "g": 21,
+        "ml": 20,
+        "fdcId": 168156
+      },
+      {
+        "name": "Brauner Zucker",
+        "g": 12,
+        "fdcId": 168833
+      },
+      {
+        "name": "Schmelzwasser vom Crushed Ice",
+        "g": 60,
+        "fdcId": 173647
+      }
+    ]
+  },
   "seo": {
     "title": "Caipirinha Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Caipirinha? Ein klassisches Glas (150g) hat ca. 240 kcal. Nährwerte pro 100g, Varianten im Vergleich & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat eine Caipirinha? Ein klassisches Glas (150g) hat ca. 183 kcal. Nährwerte pro 100g, Varianten im Vergleich & Diät-Tipps.",
     "keywords": [
       "caipirinha kalorien",
       "caipirinha kcal",
@@ -16,9 +43,9 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 160,
-    "protein_per_100g": 0,
-    "carbs_per_100g": 13,
+    "calories_per_100g": 122,
+    "protein_per_100g": 0.1,
+    "carbs_per_100g": 9,
     "fat_per_100g": 0,
     "fiber_per_100g": 0.1,
     "typical_portion_g": 150,
@@ -28,74 +55,118 @@
     {
       "name": "Kleines Glas (100g)",
       "portion_g": 100,
-      "calories": 160,
+      "calories": 122,
       "protein": 0,
-      "carbs": 13,
+      "carbs": 9,
       "fat": 0
     },
     {
       "name": "1 Glas klassisch (150g)",
       "portion_g": 150,
-      "calories": 240,
+      "calories": 183,
       "protein": 0,
-      "carbs": 20,
+      "carbs": 14,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Großes Glas (200g)",
       "portion_g": 200,
-      "calories": 320,
+      "calories": 244,
       "protein": 0,
-      "carbs": 26,
+      "carbs": 18,
       "fat": 0
     },
     {
       "name": "Caipirinha light, wenig Zucker (150g)",
       "portion_g": 150,
-      "calories": 200,
+      "calories": 152,
       "protein": 0,
-      "carbs": 8,
+      "carbs": 6,
       "fat": 0,
-      "tip": "Mit Süßstoff statt Zucker noch weniger"
+      "tip": "Mit Süßstoff statt Zucker noch weniger",
+      "basis": [
+        {
+          "fdcId": 174817,
+          "ml": 60,
+          "g": 57
+        },
+        {
+          "fdcId": 168156,
+          "ml": 20,
+          "g": 21
+        },
+        {
+          "fdcId": 168833,
+          "g": 4
+        },
+        {
+          "fdcId": 173647,
+          "g": 68
+        }
+      ]
     },
     {
       "name": "Doppelte Portion (300g)",
       "portion_g": 300,
-      "calories": 480,
+      "calories": 366,
       "protein": 0,
-      "carbs": 39,
+      "carbs": 27,
       "fat": 0
     },
     {
       "name": "Pitcher / Krug (500g)",
       "portion_g": 500,
-      "calories": 800,
-      "protein": 0,
-      "carbs": 65,
+      "calories": 610,
+      "protein": 1,
+      "carbs": 45,
       "fat": 0
     }
   ],
   "comparison": [
     {
-      "name": "Mojito",
-      "calories": 220,
-      "emoji": "🍸"
+      "name": "Mojito (250ml)",
+      "calories": 155,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "mojito"
+        }
+      ]
     },
     {
-      "name": "Aperol Spritz",
-      "calories": 180,
-      "emoji": "🥂"
+      "name": "Gin Tonic (250ml)",
+      "calories": 213,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "gin-tonic"
+        }
+      ]
     },
     {
       "name": "Bier (0,3l)",
-      "calories": 130,
-      "emoji": "🍺"
+      "calories": 131,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "fdcId": 2710616,
+          "ml": 300,
+          "g": 304
+        }
+      ]
     },
     {
       "name": "Cola (0,3l)",
-      "calories": 126,
-      "emoji": "🥤"
+      "calories": 132,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "fdcId": 2710541,
+          "ml": 300,
+          "g": 314
+        }
+      ]
     }
   ],
   "tips": [
@@ -106,7 +177,7 @@
     },
     {
       "title": "Zucker reduzieren",
-      "text": "Der zugesetzte Zucker macht etwa 40 kcal pro Glas aus. Mit weniger Zucker oder Süßstoff sparst du diese Kalorien, ohne auf den fruchtigen Limettengeschmack zu verzichten.",
+      "text": "Der zugesetzte Zucker macht etwa 46 kcal pro Glas aus. Mit weniger Zucker oder Süßstoff sparst du diese Kalorien, ohne auf den fruchtigen Limettengeschmack zu verzichten.",
       "icon": "🧊"
     },
     {
@@ -121,18 +192,18 @@
     },
     {
       "title": "Alkoholfreie Variante",
-      "text": "Eine Caipirinha ohne Cachaça (nur Limette, Eis, etwas Sirup und Sprudelwasser) hat unter 60 kcal pro Glas und ist eine leichte Alternative.",
+      "text": "Eine Caipirinha ohne Cachaça (nur Limette, Eis, etwas Sirup und Sprudelwasser) hat deutlich weniger Kalorien und ist eine leichte Alternative.",
       "icon": "💧"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Caipirinha?",
-      "answer": "Ein klassisches Glas Caipirinha (ca. 150g mit Eis) hat rund 240 kcal. Pro 100g sind es etwa 160 kcal."
+      "answer": "Ein klassisches Glas Caipirinha (ca. 150g mit Eis) hat rund 183 kcal. Pro 100g sind es etwa 122 kcal. Gerechnet aus USDA-Werten für 6 cl Cachaça (gerechnet als Rum mit 40 % vol), 2 cl Limettensaft, 12g braunen Zucker und rund 60g Schmelzwasser vom Crushed Ice."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Caipirinha?",
-      "answer": "Pro 100g enthält eine Caipirinha etwa 13g Kohlenhydrate, fast ausschließlich aus dem zugesetzten Zucker. Ein Glas (150g) kommt auf rund 20g."
+      "answer": "Pro 100g enthält eine Caipirinha etwa 9g Kohlenhydrate, fast ausschließlich aus dem zugesetzten Zucker. Ein Glas (150g) kommt auf rund 14g."
     },
     {
       "question": "Hat eine Caipirinha Eiweiß oder Fett?",
@@ -140,11 +211,11 @@
     },
     {
       "question": "Warum hat eine Caipirinha so viele Kalorien?",
-      "answer": "Der Cachaça hat einen hohen Alkoholgehalt, und reiner Alkohol liefert 7 kcal pro Gramm. Zusammen mit dem Zucker summiert sich das schnell auf über 200 kcal pro Glas."
+      "answer": "Der Cachaça hat einen hohen Alkoholgehalt, und reiner Alkohol liefert 7 kcal pro Gramm. Zusammen mit dem Zucker summiert sich das schnell auf rund 183 kcal pro Glas."
     },
     {
       "question": "Ist eine Caipirinha zum Abnehmen geeignet?",
-      "answer": "Mit rund 240 kcal pro Glas ist eine Caipirinha kalorienreich und beim Abnehmen nur in Maßen sinnvoll. Eine Variante mit weniger Zucker oder mehr Eis spart Kalorien."
+      "answer": "Mit rund 183 kcal pro Glas ist eine Caipirinha kalorienreich und beim Abnehmen nur in Maßen sinnvoll. Eine Variante mit weniger Zucker oder mehr Eis spart Kalorien."
     },
     {
       "question": "Ist eine Caipirinha gesund?",

@@ -3,9 +3,55 @@
   "name": "Eiweißbrötchen",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (12 Brötchen, gebacken ca. 714 g): 150 g Weizeneiweiß (Gluten) (FDC-ID 168147, Vital wheat gluten: 370 kcal), 100 g Sojamehl, entfettet (FDC-ID 174275, Soy flour, defatted: 327 kcal), 60 g Leinsamen (FDC-ID 169414, Seeds, flaxseed: 534 kcal), 60 g Sonnenblumenkerne (FDC-ID 170562, Seeds, sunflower seed kernels, dried: 584 kcal), 30 g Sesam (FDC-ID 170150, Seeds, sesame seeds, whole, dried: 573 kcal), 50 g Weizenkleie (FDC-ID 169722, Wheat bran, crude: 216 kcal), 380 g Wasser (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal), 10 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal); 840 g Zutaten ergeben 714 g (Backverlust rund 15 % bei Brötchen (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizeneiweiß (Gluten)",
+        "g": 150,
+        "fdcId": 168147
+      },
+      {
+        "name": "Sojamehl, entfettet",
+        "g": 100,
+        "fdcId": 174275
+      },
+      {
+        "name": "Leinsamen",
+        "g": 60,
+        "fdcId": 169414
+      },
+      {
+        "name": "Sonnenblumenkerne",
+        "g": 60,
+        "fdcId": 170562
+      },
+      {
+        "name": "Sesam",
+        "g": 30,
+        "fdcId": 170150
+      },
+      {
+        "name": "Weizenkleie",
+        "g": 50,
+        "fdcId": 169722
+      },
+      {
+        "name": "Wasser",
+        "g": 380,
+        "fdcId": 173647
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 10,
+        "fdcId": 175042
+      }
+    ],
+    "gewicht_g": 714
+  },
   "seo": {
     "title": "Eiweißbrötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Eiweißbrötchen? Ca. 144 kcal pro Brötchen (60g). Nährwerte pro 100g, viel Protein, wenig Kohlenhydrate plus Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Eiweißbrötchen? Ca. 155 kcal pro Brötchen (60g). Nährwerte pro 100g, viel Protein, wenig Kohlenhydrate plus Diät-Tipps.",
     "keywords": [
       "eiweißbrötchen kalorien",
       "eiweißbrötchen kcal",
@@ -16,11 +62,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 240,
-    "protein_per_100g": 22,
-    "carbs_per_100g": 9,
-    "fat_per_100g": 12,
-    "fiber_per_100g": 8,
+    "calories_per_100g": 258,
+    "protein_per_100g": 28.2,
+    "carbs_per_100g": 17.5,
+    "fat_per_100g": 10.8,
+    "fiber_per_100g": 9.2,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Eiweißbrötchen (60g)"
   },
@@ -28,100 +74,140 @@
     {
       "name": "Eiweißbrötchen klein (45g)",
       "portion_g": 45,
-      "calories": 108,
-      "protein": 10,
-      "carbs": 4,
+      "calories": 116,
+      "protein": 13,
+      "carbs": 8,
       "fat": 5
     },
     {
       "name": "Eiweißbrötchen (60g)",
       "portion_g": 60,
-      "calories": 144,
-      "protein": 13,
-      "carbs": 5,
-      "fat": 7,
+      "calories": 155,
+      "protein": 17,
+      "carbs": 11,
+      "fat": 6,
       "tip": "Standardgröße beim Bäcker"
     },
     {
       "name": "Eiweißbrötchen groß (80g)",
       "portion_g": 80,
-      "calories": 192,
-      "protein": 18,
-      "carbs": 7,
-      "fat": 10
+      "calories": 206,
+      "protein": 23,
+      "carbs": 14,
+      "fat": 9
     },
     {
       "name": "Eiweißbrötchen mit Butter",
       "portion_g": 70,
-      "calories": 217,
-      "protein": 13,
-      "carbs": 5,
+      "calories": 227,
+      "protein": 17,
+      "carbs": 11,
       "fat": 15,
-      "tip": "60g Brötchen + 10g Butter"
+      "tip": "60g Brötchen + 10g Butter",
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Eiweißbrötchen mit Frischkäse",
       "portion_g": 80,
-      "calories": 187,
-      "protein": 14,
-      "carbs": 6,
-      "fat": 10,
-      "tip": "60g Brötchen + 20g Frischkäse"
+      "calories": 225,
+      "protein": 18,
+      "carbs": 12,
+      "fat": 13,
+      "tip": "60g Brötchen + 20g Frischkäse",
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "fdcId": 173418,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "2 Eiweißbrötchen (120g)",
       "portion_g": 120,
-      "calories": 288,
-      "protein": 26,
-      "carbs": 11,
-      "fat": 14
+      "calories": 310,
+      "protein": 34,
+      "carbs": 21,
+      "fat": 13
     },
     {
       "name": "Eiweißbrötchen pro 100g",
       "portion_g": 100,
-      "calories": 240,
-      "protein": 22,
-      "carbs": 9,
-      "fat": 12,
+      "calories": 258,
+      "protein": 28,
+      "carbs": 18,
+      "fat": 11,
       "tip": "Referenzwert"
     }
   ],
   "comparison": [
     {
       "name": "Normales Brötchen (60g)",
-      "calories": 159,
-      "emoji": "🥖"
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Eiweißbrot (1 Scheibe)",
-      "calories": 95,
-      "emoji": "🍞"
+      "calories": 119,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "eiweissbrot"
+        }
+      ]
     },
     {
       "name": "Vollkornbrot (1 Scheibe)",
-      "calories": 100,
-      "emoji": "🍞"
+      "calories": 111,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot"
+        }
+      ]
     },
     {
       "name": "Käsebrötchen (70g)",
-      "calories": 245,
-      "emoji": "🧀"
+      "calories": 221,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesebroetchen",
+          "g": 70
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Proteinreich statt kohlenhydratreich",
-      "text": "Ein Eiweißbrötchen liefert mit ca. 13g Protein pro Stück deutlich mehr Eiweiß als ein normales Brötchen und gleichzeitig weniger Kohlenhydrate. Das hält länger satt.",
+      "text": "Ein Eiweißbrötchen liefert mit ca. 17g Protein pro Stück deutlich mehr Eiweiß als ein normales Brötchen und gleichzeitig weniger Kohlenhydrate. Das hält länger satt.",
       "icon": "💪"
     },
     {
       "title": "Achtung beim Fettgehalt",
-      "text": "Eiweißbrötchen enthalten durch Saaten und Sojamehl mehr Fett als normale Brötchen. Bei ca. 12g Fett pro 100g lohnt sich ein Blick auf die Gesamtmenge am Tag.",
+      "text": "Eiweißbrötchen enthalten durch Saaten und Sojamehl mehr Fett als normale Brötchen. Bei ca. 11g Fett pro 100g lohnt sich ein Blick auf die Gesamtmenge am Tag.",
       "icon": "🥑"
     },
     {
       "title": "Ideal bei Low-Carb-Ernährung",
-      "text": "Mit nur rund 9g Kohlenhydraten pro 100g passt das Eiweißbrötchen gut in eine kohlenhydratarme Ernährung, etwa zum Frühstück mit Ei oder Frischkäse.",
+      "text": "Mit rund 18g Kohlenhydraten pro 100g, davon etwa 9g Ballaststoffe, passt das Eiweißbrötchen gut in eine kohlenhydratarme Ernährung, etwa zum Frühstück mit Ei oder Frischkäse.",
       "icon": "🍳"
     },
     {
@@ -131,22 +217,22 @@
     },
     {
       "title": "Sättigung durch Ballaststoffe",
-      "text": "Mit etwa 8g Ballaststoffen pro 100g unterstützt das Eiweißbrötchen ein langes Sättigungsgefühl und eine gute Verdauung.",
+      "text": "Mit etwa 9g Ballaststoffen pro 100g unterstützt das Eiweißbrötchen ein langes Sättigungsgefühl und eine gute Verdauung.",
       "icon": "🌾"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Eiweißbrötchen?",
-      "answer": "Ein durchschnittliches Eiweißbrötchen (60g) hat ca. 144 kcal. Pro 100g sind es rund 240 kcal."
+      "answer": "Ein durchschnittliches Eiweißbrötchen (60g) hat ca. 155 kcal. Pro 100g sind es rund 258 kcal. Gerechnet aus USDA-Werten für 12 Brötchen aus 150g Weizeneiweiß, 100g Sojamehl, 60g Leinsamen, 60g Sonnenblumenkernen, 30g Sesam, 50g Weizenkleie, Wasser und Hefe (gebacken rund 714g)."
     },
     {
       "question": "Wie viel Protein steckt in einem Eiweißbrötchen?",
-      "answer": "Ein Eiweißbrötchen (60g) liefert etwa 13g Protein, pro 100g sind es rund 22g. Damit enthält es deutlich mehr Eiweiß als ein normales Brötchen."
+      "answer": "Ein Eiweißbrötchen (60g) liefert etwa 17g Protein, pro 100g sind es rund 28g. Damit enthält es deutlich mehr Eiweiß als ein normales Brötchen."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Eiweißbrötchen?",
-      "answer": "Ein Eiweißbrötchen enthält mit rund 9g Kohlenhydraten pro 100g (ca. 5g pro 60g-Brötchen) deutlich weniger als ein normales Brötchen mit etwa 50g pro 100g."
+      "answer": "Ein Eiweißbrötchen enthält rund 18g Kohlenhydrate pro 100g (ca. 11g pro 60g-Brötchen), davon etwa 9g Ballaststoffe. Das ist deutlich weniger als bei einem normalen Brötchen."
     },
     {
       "question": "Ist ein Eiweißbrötchen zum Abnehmen geeignet?",
@@ -154,7 +240,7 @@
     },
     {
       "question": "Hat ein Eiweißbrötchen weniger Kalorien als ein normales Brötchen?",
-      "answer": "Pro Stück liegt das Eiweißbrötchen (144 kcal bei 60g) etwas unter einem normalen Brötchen (ca. 159 kcal bei 60g). Der Vorteil liegt vor allem im hohen Protein- und niedrigen Kohlenhydratanteil."
+      "answer": "Pro Stück liegt das Eiweißbrötchen (155 kcal bei 60g) etwas unter einem normalen Brötchen (ca. 176 kcal bei 60g). Der Vorteil liegt vor allem im hohen Protein- und niedrigen Kohlenhydratanteil."
     },
     {
       "question": "Ist ein Eiweißbrötchen gesund?",

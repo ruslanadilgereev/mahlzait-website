@@ -3,9 +3,35 @@
   "name": "Mango Lassi",
   "emoji": "🥭",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Glas 250 ml): 130 g Naturjoghurt 3,5 % (FDC-ID 171284, Yogurt, plain, whole milk: 61 kcal), 90 g Mango, Fruchtfleisch (FDC-ID 169910, Mangos, raw: 60 kcal), 30 ml (31 g) Vollmilch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 12 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Naturjoghurt 3,5 %",
+        "g": 130,
+        "fdcId": 171284
+      },
+      {
+        "name": "Mango, Fruchtfleisch",
+        "g": 90,
+        "fdcId": 169910
+      },
+      {
+        "name": "Vollmilch",
+        "g": 31,
+        "ml": 30,
+        "fdcId": 171265
+      },
+      {
+        "name": "Zucker",
+        "g": 12,
+        "fdcId": 169655
+      }
+    ]
+  },
   "seo": {
     "title": "Mango Lassi Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mango Lassi? Ein Glas (250 ml) hat ca. 250 kcal. Nährwerte pro 100 g & Portion, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Mango Lassi? Ein Glas (250 ml) hat ca. 200 kcal. Nährwerte pro 100 g & Portion, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "mango lassi kcal",
       "mango lassi kalorien",
@@ -16,98 +42,149 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 100,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 16.5,
-    "fat_per_100g": 2.8,
+    "calories_per_100g": 76,
+    "protein_per_100g": 2.4,
+    "carbs_per_100g": 12.6,
+    "fat_per_100g": 2.1,
     "fiber_per_100g": 0.5,
-    "typical_portion_g": 250,
+    "typical_portion_g": 263,
     "typical_portion_name": "1 Glas (250 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (150 ml)",
-      "portion_g": 150,
-      "calories": 150,
-      "protein": 5,
-      "carbs": 25,
-      "fat": 4
+      "portion_g": 158,
+      "calories": 120,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 3
     },
     {
       "name": "Glas (250 ml)",
-      "portion_g": 250,
-      "calories": 250,
-      "protein": 8,
-      "carbs": 41,
-      "fat": 7,
+      "portion_g": 263,
+      "calories": 200,
+      "protein": 6,
+      "carbs": 33,
+      "fat": 6,
       "tip": "Standard-Portion"
     },
     {
       "name": "Großes Glas (350 ml)",
-      "portion_g": 350,
-      "calories": 350,
-      "protein": 11,
-      "carbs": 58,
-      "fat": 10
+      "portion_g": 368,
+      "calories": 280,
+      "protein": 9,
+      "carbs": 46,
+      "fat": 8
     },
     {
       "name": "Restaurant-Portion (400 ml)",
-      "portion_g": 400,
-      "calories": 400,
-      "protein": 12,
-      "carbs": 66,
-      "fat": 11,
+      "portion_g": 420,
+      "calories": 319,
+      "protein": 10,
+      "carbs": 53,
+      "fat": 9,
       "tip": "Im Lokal oft stark gesüßt"
     },
     {
       "name": "Light mit Magerjoghurt (250 ml)",
-      "portion_g": 250,
-      "calories": 160,
-      "protein": 10,
-      "carbs": 28,
+      "portion_g": 251,
+      "calories": 137,
+      "protein": 9,
+      "carbs": 25,
       "fat": 1,
-      "tip": "Ohne Zucker, mit Magerjoghurt"
+      "tip": "Ohne Zucker, mit Magerjoghurt und Magermilch",
+      "basis": [
+        {
+          "fdcId": 170887,
+          "g": 130
+        },
+        {
+          "fdcId": 169910,
+          "g": 90
+        },
+        {
+          "fdcId": 171269,
+          "ml": 30,
+          "g": 31
+        }
+      ]
     },
     {
       "name": "Mit Wasser gestreckt (250 ml)",
-      "portion_g": 250,
-      "calories": 175,
-      "protein": 6,
-      "carbs": 29,
-      "fat": 4
+      "portion_g": 259,
+      "calories": 136,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 4,
+      "tip": "170 ml Lassi mit 80 ml Wasser",
+      "basis": [
+        {
+          "ml": 170,
+          "g": 179
+        },
+        {
+          "fdcId": 173647,
+          "ml": 80,
+          "g": 80
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Ayran (250 ml)",
-      "calories": 95,
-      "emoji": "🥛"
+      "calories": 94,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "ayran"
+        }
+      ]
     },
     {
       "name": "Orangensaft (250 ml)",
-      "calories": 113,
-      "emoji": "🍊"
+      "calories": 123,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "orangensaft"
+        }
+      ]
     },
     {
       "name": "Milchshake Vanille (250 ml)",
-      "calories": 280,
-      "emoji": "🥤"
+      "calories": 268,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "milchshake-vanille",
+          "ml": 250,
+          "g": 237
+        }
+      ]
     },
     {
       "name": "Smoothie Beeren (250 ml)",
-      "calories": 140,
-      "emoji": "🫐"
+      "calories": 123,
+      "emoji": "🫐",
+      "basis": [
+        {
+          "slug": "smoothie-beeren",
+          "ml": 250,
+          "g": 228
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eher Mahlzeit als Getränk",
-      "text": "Ein Glas Mango Lassi (250 ml) liefert rund 250 kcal und ist damit kalorienreicher als die meisten Erfrischungsgetränke. Plane es eher als kleine Zwischenmahlzeit ein.",
+      "text": "Ein Glas Mango Lassi (250 ml) liefert rund 200 kcal und ist damit kalorienreicher als die meisten Erfrischungsgetränke. Plane es eher als kleine Zwischenmahlzeit ein.",
       "icon": "🥭"
     },
     {
       "title": "Magerjoghurt spart Fett und Kalorien",
-      "text": "Mit Magerjoghurt statt Vollmilchjoghurt sinkt der Fettanteil deutlich. So kommt ein Glas auf etwa 160 kcal statt 250 kcal.",
+      "text": "Mit Magerjoghurt statt Vollmilchjoghurt sinkt der Fettanteil deutlich. Ohne Zucker kommt ein Glas so auf etwa 137 kcal statt 200 kcal.",
       "icon": "🥛"
     },
     {
@@ -117,7 +194,7 @@
     },
     {
       "title": "Eiweiß aus dem Joghurt",
-      "text": "Der Joghurt liefert hochwertiges Eiweiß. Ein Standard-Glas kommt auf rund 8 g Protein und sättigt dadurch besser als ein reiner Fruchtsaft.",
+      "text": "Der Joghurt liefert hochwertiges Eiweiß. Ein Standard-Glas kommt auf rund 6 g Protein und sättigt dadurch besser als ein reiner Fruchtsaft.",
       "icon": "💪"
     },
     {
@@ -129,23 +206,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Glas Mango Lassi?",
-      "answer": "Ein Standard-Glas Mango Lassi (250 ml) hat etwa 250 kcal. Pro 100 g sind es rund 100 kcal."
+      "answer": "Ein Standard-Glas Mango Lassi (250 ml) hat etwa 200 kcal. Pro 100 g sind es rund 76 kcal. Gerechnet aus USDA-Werten für 130 g Naturjoghurt, 90 g Mango, 30 ml Milch und 12 g Zucker."
     },
     {
       "question": "Wie viele Kalorien hat Mango Lassi pro 100 g?",
-      "answer": "Mango Lassi aus Vollmilchjoghurt, Mango und etwas Zucker hat ca. 100 kcal pro 100 g. Der genaue Wert hängt vom Zucker- und Fettgehalt ab."
+      "answer": "Mango Lassi aus Vollmilchjoghurt, Mango und etwas Zucker hat ca. 76 kcal pro 100 g. Der genaue Wert hängt vom Zucker- und Fettgehalt ab."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mango Lassi?",
-      "answer": "Ein Glas (250 ml) enthält etwa 41 g Kohlenhydrate, hauptsächlich aus dem Milchzucker des Joghurts, dem Fruchtzucker der Mango und zugesetztem Zucker."
+      "answer": "Ein Glas (250 ml) enthält etwa 33 g Kohlenhydrate, hauptsächlich aus dem Milchzucker des Joghurts, dem Fruchtzucker der Mango und zugesetztem Zucker."
     },
     {
       "question": "Wie viel Protein steckt in Mango Lassi?",
-      "answer": "Durch den Joghurt liefert ein Glas Mango Lassi (250 ml) rund 8 g Eiweiß. Mit Magerjoghurt kann der Wert auf etwa 10 g steigen."
+      "answer": "Durch den Joghurt liefert ein Glas Mango Lassi (250 ml) rund 6 g Eiweiß. Mit Magerjoghurt und Magermilch steigt der Wert auf etwa 9 g."
     },
     {
       "question": "Ist Mango Lassi zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 250 kcal pro Glas ist er aber recht kalorienreich. Eine Variante mit Magerjoghurt und ohne zugesetzten Zucker (ca. 160 kcal) passt besser in eine Diät."
+      "answer": "In Maßen ja. Mit rund 200 kcal pro Glas ist er aber recht kalorienreich. Eine Variante mit Magerjoghurt und ohne zugesetzten Zucker (ca. 137 kcal) passt besser in eine Diät."
     },
     {
       "question": "Ist Mango Lassi gesund?",

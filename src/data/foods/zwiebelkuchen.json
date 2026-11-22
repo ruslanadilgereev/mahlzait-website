@@ -3,9 +3,44 @@
   "name": "Zwiebelkuchen",
   "emoji": "🧅",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Blech à 1200 g): 350 g Hefeteigboden, gebacken (FDC-ID 172793, Rolls, dinner, plain, commercially prepared (includes brown-and-serve): 310 kcal), 500 g Zwiebeln, gedünstet (FDC-ID 170004, Onions, yellow, sauteed: 123 kcal), 60 g Speck, gebraten (FDC-ID 2705889, Pork bacon, smoked or cured, cooked: 468 kcal), 165 g Eier (3 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 120 g Saure Sahne (FDC-ID 2705614, Sour cream, regular: 196 kcal), 5 g Kümmel (FDC-ID 170918, Spices, caraway seed: 333 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Hefeteigboden, gebacken",
+        "g": 350,
+        "fdcId": 172793
+      },
+      {
+        "name": "Zwiebeln, gedünstet",
+        "g": 500,
+        "fdcId": 170004
+      },
+      {
+        "name": "Speck, gebraten",
+        "g": 60,
+        "fdcId": 2705889
+      },
+      {
+        "name": "Eier (3 Stück)",
+        "g": 165,
+        "fdcId": 171287
+      },
+      {
+        "name": "Saure Sahne",
+        "g": 120,
+        "fdcId": 2705614
+      },
+      {
+        "name": "Kümmel",
+        "g": 5,
+        "fdcId": 170918
+      }
+    ]
+  },
   "seo": {
     "title": "Zwiebelkuchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Zwiebelkuchen? Ein Stück (180g) hat ca. 387 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Zwiebelkuchen? Ein Stück (180g) hat ca. 371 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps zum Abnehmen.",
     "keywords": [
       "zwiebelkuchen kalorien",
       "zwiebelkuchen kcal",
@@ -16,11 +51,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 215,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 206,
+    "protein_per_100g": 7.4,
+    "carbs_per_100g": 19.4,
+    "fat_per_100g": 11.3,
+    "fiber_per_100g": 1.4,
     "typical_portion_g": 180,
     "typical_portion_name": "1 Stück (180g)"
   },
@@ -28,80 +63,126 @@
     {
       "name": "Kleines Stück (120g)",
       "portion_g": 120,
-      "calories": 258,
-      "protein": 7,
-      "carbs": 22,
-      "fat": 16
+      "calories": 247,
+      "protein": 9,
+      "carbs": 23,
+      "fat": 14
     },
     {
       "name": "1 Stück mittel (180g)",
       "portion_g": 180,
-      "calories": 387,
-      "protein": 11,
-      "carbs": 32,
-      "fat": 23,
+      "calories": 371,
+      "protein": 13,
+      "carbs": 35,
+      "fat": 20,
       "tip": "Standardportion"
     },
     {
       "name": "Großes Stück (250g)",
       "portion_g": 250,
-      "calories": 538,
-      "protein": 15,
-      "carbs": 45,
-      "fat": 33
+      "calories": 515,
+      "protein": 19,
+      "carbs": 49,
+      "fat": 28
     },
     {
       "name": "Zwei Stücke (360g)",
       "portion_g": 360,
-      "calories": 774,
-      "protein": 22,
-      "carbs": 65,
-      "fat": 47
+      "calories": 742,
+      "protein": 27,
+      "carbs": 70,
+      "fat": 41
     },
     {
-      "name": "Leichte Variante mit Quark (180g)",
+      "name": "Ohne Speck (180g)",
       "portion_g": 180,
-      "calories": 306,
-      "protein": 13,
-      "carbs": 31,
-      "fat": 14,
-      "tip": "Magerquark statt Sahne spart Fett"
+      "calories": 345,
+      "protein": 11,
+      "carbs": 37,
+      "fat": 18,
+      "tip": "Vegetarisch, mehr Zwiebeln und Kümmel",
+      "basis": [
+        {
+          "fdcId": 172793,
+          "g": 55
+        },
+        {
+          "fdcId": 170004,
+          "g": 79
+        },
+        {
+          "fdcId": 171287,
+          "g": 26
+        },
+        {
+          "fdcId": 2705614,
+          "g": 19
+        },
+        {
+          "fdcId": 170918,
+          "g": 1
+        }
+      ]
     },
     {
       "name": "Ganzes Blech (1200g)",
       "portion_g": 1200,
-      "calories": 2580,
-      "protein": 72,
-      "carbs": 216,
-      "fat": 156
+      "calories": 2472,
+      "protein": 89,
+      "carbs": 233,
+      "fat": 136
     }
   ],
   "comparison": [
     {
       "name": "Flammkuchen (180g)",
-      "calories": 414,
-      "emoji": "🔥"
+      "calories": 457,
+      "emoji": "🔥",
+      "basis": [
+        {
+          "slug": "flammkuchen",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Quiche Lorraine (180g)",
-      "calories": 522,
-      "emoji": "🥧"
+      "calories": 697,
+      "emoji": "🥧",
+      "basis": [
+        {
+          "slug": "quiche",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Pizza Margherita (180g)",
-      "calories": 432,
-      "emoji": "🍕"
+      "calories": 479,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Pflaumenkuchen (180g)",
-      "calories": 360,
-      "emoji": "🟣"
+      "calories": 304,
+      "emoji": "🟣",
+      "basis": [
+        {
+          "slug": "pflaumenkuchen",
+          "g": 180
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Crème fraîche durch Quark ersetzen",
-      "text": "Wer den Belag mit Magerquark statt Sahne oder Crème fraîche anrührt, spart pro Stück rund 80 kcal und gewinnt zusätzliches Eiweiß.",
+      "text": "Wer den Belag mit Magerquark statt Sahne oder Crème fraîche anrührt, spart Fett und gewinnt zusätzliches Eiweiß.",
       "icon": "🥛"
     },
     {
@@ -121,30 +202,30 @@
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Ein mittleres Stück (180g) liefert rund 387 kcal. Zwei Stücke schlagen schon mit etwa 774 kcal zu Buche, also eher eine Hauptmahlzeit als Beilage.",
+      "text": "Ein mittleres Stück (180g) liefert rund 371 kcal. Zwei Stücke schlagen schon mit etwa 742 kcal zu Buche, also eher eine Hauptmahlzeit als Beilage.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Stück Zwiebelkuchen?",
-      "answer": "Ein mittleres Stück Zwiebelkuchen (180g) hat etwa 387 kcal. Pro 100g sind es rund 215 kcal."
+      "answer": "Ein mittleres Stück Zwiebelkuchen (180g) hat etwa 371 kcal. Pro 100g sind es rund 206 kcal. Gerechnet aus USDA-Werten für ein Blech mit 350 g Hefeteigboden, 500 g gedünsteten Zwiebeln, 60 g Speck, 3 Eiern und 120 g saurer Sahne."
     },
     {
       "question": "Wie viele Kalorien hat Zwiebelkuchen pro 100g?",
-      "answer": "Zwiebelkuchen hat pro 100g etwa 215 kcal, 6g Eiweiß, 18g Kohlenhydrate und 13g Fett."
+      "answer": "Zwiebelkuchen hat pro 100g etwa 206 kcal, 7g Eiweiß, 19g Kohlenhydrate und 11g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Zwiebelkuchen?",
-      "answer": "Pro 100g enthält Zwiebelkuchen rund 18g Kohlenhydrate, ein mittleres Stück (180g) also etwa 32g. Die meisten Kohlenhydrate stecken im Teig."
+      "answer": "Pro 100g enthält Zwiebelkuchen rund 19g Kohlenhydrate, ein mittleres Stück (180g) also etwa 35g. Die meisten Kohlenhydrate stecken im Teig."
     },
     {
       "question": "Wie viel Eiweiß hat Zwiebelkuchen?",
-      "answer": "Zwiebelkuchen liefert pro 100g etwa 6g Eiweiß. Eine Variante mit Magerquark im Belag erhöht den Eiweißanteil deutlich."
+      "answer": "Zwiebelkuchen liefert pro 100g etwa 7g Eiweiß. Eine Variante mit Magerquark im Belag erhöht den Eiweißanteil deutlich."
     },
     {
       "question": "Ist Zwiebelkuchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 387 kcal pro Stück ist er recht gehaltvoll. Wer Speck reduziert, Quark statt Sahne nimmt und Salat dazu isst, kann ihn gut in eine kalorienbewusste Ernährung einbauen."
+      "answer": "In Maßen ja. Mit rund 371 kcal pro Stück ist er recht gehaltvoll. Wer Speck reduziert, Quark statt Sahne nimmt und Salat dazu isst, kann ihn gut in eine kalorienbewusste Ernährung einbauen."
     },
     {
       "question": "Ist Zwiebelkuchen gesund?",

@@ -3,47 +3,250 @@
   "name": "Dampfnudeln",
   "emoji": "🍞",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 10 Dampfnudeln à 100 g): 500 g Weizenmehl Type 405 (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 250 ml (258 g) Vollmilch für den Teig (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 50 g Butter für den Teig (FDC-ID 173430, Butter, without salt: 717 kcal), 50 g Zucker für den Teig (FDC-ID 169655, Sugars, granulated: 387 kcal), 55 g Ei (1 Stück, M) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 21 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 150 ml (155 g) Vollmilch zum Dämpfen (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 30 g Butter für die Kruste (FDC-ID 173430, Butter, without salt: 717 kcal), 20 g Zucker für die Kruste (FDC-ID 169655, Sugars, granulated: 387 kcal); 1139 g Zutaten ergeben 1000 g (Wasser der Milch zum Dämpfen verdampft, bis sich die Kruste bildet (ca. 140 g)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl Type 405",
+        "g": 500,
+        "fdcId": 169761
+      },
+      {
+        "name": "Vollmilch für den Teig",
+        "g": 258,
+        "ml": 250,
+        "fdcId": 171265
+      },
+      {
+        "name": "Butter für den Teig",
+        "g": 50,
+        "fdcId": 173430
+      },
+      {
+        "name": "Zucker für den Teig",
+        "g": 50,
+        "fdcId": 169655
+      },
+      {
+        "name": "Ei (1 Stück, M)",
+        "g": 55,
+        "fdcId": 171287
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 21,
+        "fdcId": 175042
+      },
+      {
+        "name": "Vollmilch zum Dämpfen",
+        "g": 155,
+        "ml": 150,
+        "fdcId": 171265
+      },
+      {
+        "name": "Butter für die Kruste",
+        "g": 30,
+        "fdcId": 173430
+      },
+      {
+        "name": "Zucker für die Kruste",
+        "g": 20,
+        "fdcId": 169655
+      }
+    ],
+    "gewicht_g": 1000
+  },
   "seo": {
     "title": "Dampfnudeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Dampfnudeln? Nährwerte für bayerische Dampfnudeln mit Vanillesauce & Kompott. Mit Portionsrechner und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 40,
-    "fat_per_100g": 7,
+    "calories_per_100g": 302,
+    "protein_per_100g": 7.4,
+    "carbs_per_100g": 47.6,
+    "fat_per_100g": 8.9,
     "fiber_per_100g": 1.5,
     "typical_portion_g": 200,
     "typical_portion_name": "2 Dampfnudeln"
   },
   "variants": [
-    {"name": "Dampfnudeln klassisch (mit Kruste)", "portion_g": 200, "calories": 500, "protein": 14, "carbs": 80, "fat": 14, "tip": "Bayerische Art mit Butterkaramell"},
-    {"name": "Dampfnudeln ohne Kruste (gedämpft)", "portion_g": 200, "calories": 430, "protein": 12, "carbs": 76, "fat": 8, "tip": "Leichtere Variante"},
-    {"name": "Dampfnudeln mit Vanillesauce", "portion_g": 300, "calories": 690, "protein": 16, "carbs": 100, "fat": 24, "tip": "Klassische süße Kombination"},
-    {"name": "Dampfnudeln mit Kompott", "portion_g": 300, "calories": 580, "protein": 14, "carbs": 104, "fat": 14, "tip": "Leichtere Beilage"},
-    {"name": "Dampfnudeln herzhaft (mit Kartoffelsuppe)", "portion_g": 350, "calories": 560, "protein": 16, "carbs": 88, "fat": 16, "tip": "Pfälzer Tradition"},
-    {"name": "Mini-Dampfnudeln", "portion_g": 120, "calories": 300, "protein": 8, "carbs": 48, "fat": 8, "tip": "Kleinere Portion"}
+    {
+      "name": "Dampfnudeln klassisch (mit Kruste)",
+      "portion_g": 200,
+      "calories": 604,
+      "protein": 15,
+      "carbs": 95,
+      "fat": 18,
+      "tip": "Bayerische Art mit Butterkaramell"
+    },
+    {
+      "name": "Dampfnudeln ohne Kruste (gedämpft)",
+      "portion_g": 200,
+      "calories": 564,
+      "protein": 15,
+      "carbs": 96,
+      "fat": 13,
+      "tip": "Teig wie bei Hefeklößen, ohne Butter-Zucker-Kruste",
+      "basis": [
+        {
+          "slug": "hefekloesse",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Dampfnudeln mit Vanillesauce",
+      "portion_g": 300,
+      "calories": 701,
+      "protein": 20,
+      "carbs": 106,
+      "fat": 21,
+      "tip": "Klassische süße Kombination",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 2705682,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Dampfnudeln mit Kompott",
+      "portion_g": 300,
+      "calories": 672,
+      "protein": 15,
+      "carbs": 113,
+      "fat": 18,
+      "tip": "Mit 100 g Apfelkompott",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 171696,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Dampfnudeln herzhaft (mit Kartoffelsuppe)",
+      "portion_g": 350,
+      "calories": 633,
+      "protein": 14,
+      "carbs": 92,
+      "fat": 23,
+      "tip": "Pfälzer Tradition",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "kartoffelsuppe",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Mini-Dampfnudeln",
+      "portion_g": 120,
+      "calories": 362,
+      "protein": 9,
+      "carbs": 57,
+      "fat": 11,
+      "tip": "Kleinere Portion"
+    }
   ],
   "comparison": [
-    {"name": "Hefeklöße", "calories": 215, "emoji": "🫓"},
-    {"name": "Germknödel", "calories": 290, "emoji": "🥟"},
-    {"name": "Kaiserschmarrn", "calories": 230, "emoji": "🥞"},
-    {"name": "Buchteln", "calories": 270, "emoji": "🧁"}
+    {
+      "name": "Hefeklöße (2 Stück, 200g)",
+      "calories": 564,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "hefekloesse"
+        }
+      ]
+    },
+    {
+      "name": "Germknödel (200g)",
+      "calories": 632,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "germknoedel"
+        }
+      ]
+    },
+    {
+      "name": "Kaiserschmarrn (1 Portion, 300g)",
+      "calories": 792,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "slug": "kaiserschmarrn"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Ohne Kruste dämpfen", "text": "Dampfnudeln ohne Butterkruste haben ca. 70 kcal weniger pro Portion. Der Karamellboden macht den Kalorienunterschied.", "icon": "💡"},
-    {"title": "Kompott statt Vanillesauce", "text": "Obstkompott spart ca. 100 kcal gegenüber Vanillesauce. Apfel- oder Pflaumenkompott passt perfekt.", "icon": "🍎"},
-    {"title": "Weniger Butter im Topf", "text": "Halbiere die Buttermenge im Topf – die Dampfnudeln werden trotzdem goldbraun, aber mit weniger Fett.", "icon": "🧈"},
-    {"title": "Als Resteessen nutzen", "text": "Übrige Dampfnudeln lassen sich in Scheiben geschnitten und in der Pfanne geröstet aufbrauchen – knusprig und lecker.", "icon": "♻️"},
-    {"title": "Portionsgröße beachten", "text": "Eine Dampfnudel wiegt ca. 100g. Zwei Stück als Mahlzeit reichen – widerstehe der Versuchung der dritten.", "icon": "⚖️"}
+    {
+      "title": "Ohne Kruste dämpfen",
+      "text": "Dampfnudeln ohne Butterkruste haben ca. 40 kcal weniger pro Portion (200g). Der Karamellboden macht den Kalorienunterschied.",
+      "icon": "💡"
+    },
+    {
+      "title": "Kompott statt Vanillesauce",
+      "text": "Apfelkompott spart gegenüber Vanillesauce rund 29 kcal pro Portion. Apfel- oder Pflaumenkompott passt perfekt.",
+      "icon": "🍎"
+    },
+    {
+      "title": "Weniger Butter im Topf",
+      "text": "Halbiere die Buttermenge im Topf: Die Dampfnudeln werden trotzdem goldbraun, aber mit weniger Fett.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Als Resteessen nutzen",
+      "text": "Übrige Dampfnudeln lassen sich in Scheiben geschnitten und in der Pfanne geröstet aufbrauchen, knusprig und lecker.",
+      "icon": "♻️"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Eine Dampfnudel wiegt ca. 100g. Zwei Stück als Mahlzeit reichen, widerstehe der Versuchung der dritten.",
+      "icon": "⚖️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Dampfnudeln?", "answer": "Eine Dampfnudel (ca. 100g) hat rund 250 kcal. Eine Portion von zwei Dampfnudeln kommt auf ca. 500 kcal – ohne Sauce oder Beilage."},
-    {"question": "Warum haben Dampfnudeln so viele Kalorien?", "answer": "Dampfnudeln werden in Butter und Milch gegart. Die Butter sorgt für die knusprige Kruste und macht einen Großteil der Kalorien aus."},
-    {"question": "Sind Dampfnudeln süß oder herzhaft?", "answer": "Beides! In Bayern werden sie süß mit Vanillesauce oder Kompott serviert, in der Pfalz herzhaft mit Kartoffelsuppe."},
-    {"question": "Was hat weniger Kalorien: Dampfnudeln oder Kaiserschmarrn?", "answer": "Kaiserschmarrn hat mit 230 kcal/100g etwas weniger als Dampfnudeln (250 kcal/100g). Allerdings sind die Portionen bei Kaiserschmarrn oft größer."},
-    {"question": "Kann man Dampfnudeln kalorienärmer machen?", "answer": "Ja: Weniger Butter verwenden, ohne Kruste dämpfen und Kompott statt Vanillesauce nehmen. So sparst du bis zu 200 kcal pro Mahlzeit."},
-    {"question": "Wie viel Protein haben Dampfnudeln?", "answer": "Dampfnudeln liefern ca. 7g Protein pro 100g. Sie sind kein besonders proteinreiches Gericht – der Hauptnährstoff sind Kohlenhydrate."}
+    {
+      "question": "Wie viele Kalorien haben Dampfnudeln?",
+      "answer": "Eine Dampfnudel (ca. 100g) hat rund 302 kcal. Eine Portion von zwei Dampfnudeln kommt auf ca. 604 kcal, ohne Sauce oder Beilage. Gerechnet aus USDA-Werten für 10 Dampfnudeln aus 500 g Mehl, 400 ml Milch, 80 g Butter, 70 g Zucker, 1 Ei und Hefe."
+    },
+    {
+      "question": "Warum haben Dampfnudeln so viele Kalorien?",
+      "answer": "Dampfnudeln bestehen aus einem Hefeteig mit Milch, Butter und Zucker und werden zusätzlich in Butter und Milch gegart. Den Großteil der Kalorien liefert das Mehl, Butter und Zucker der Kruste kommen dazu."
+    },
+    {
+      "question": "Sind Dampfnudeln süß oder herzhaft?",
+      "answer": "Beides! In Bayern werden sie süß mit Vanillesauce oder Kompott serviert, in der Pfalz herzhaft mit Kartoffelsuppe."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Dampfnudeln oder Kaiserschmarrn?",
+      "answer": "Dampfnudeln haben rund 302 kcal pro 100g. Eine Portion Kaiserschmarrn ist oft größer, daher kommt es vor allem auf die Menge an."
+    },
+    {
+      "question": "Kann man Dampfnudeln kalorienärmer machen?",
+      "answer": "Ja: Weniger Butter verwenden, ohne Kruste dämpfen und Kompott statt Vanillesauce nehmen. So sparst du spürbar Kalorien pro Mahlzeit."
+    },
+    {
+      "question": "Wie viel Protein haben Dampfnudeln?",
+      "answer": "Dampfnudeln liefern ca. 7g Protein pro 100g. Sie sind kein besonders proteinreiches Gericht, der Hauptnährstoff sind Kohlenhydrate."
+    }
   ],
-  "related_foods": ["hefekloesse", "germknoedel", "kaiserschmarrn", "milchreis"]
+  "related_foods": [
+    "hefekloesse",
+    "germknoedel",
+    "kaiserschmarrn",
+    "milchreis"
+  ]
 }

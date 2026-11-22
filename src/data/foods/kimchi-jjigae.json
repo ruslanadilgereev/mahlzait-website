@@ -3,47 +3,187 @@
   "name": "Kimchi Jjigae",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 2 Schüsseln à 400 g): 250 g Kimchi (FDC-ID 170392, Cabbage, kimchi: 15 kcal), 120 g Schweinefleisch (Schulter), geschmort (FDC-ID 168256, Pork, fresh, shoulder, arm picnic, separable lean and fat, cooked, braised: 235 kcal), 150 g Tofu (FDC-ID 172448, Tofu, firm, prepared with calcium sulfate and magnesium chloride (nigari): 78 kcal), 50 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 5 g Sesamöl (FDC-ID 171016, Oil, sesame, salad or cooking: 884 kcal), 225 g Wasser (Brühe) (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Kimchi",
+        "g": 250,
+        "fdcId": 170392
+      },
+      {
+        "name": "Schweinefleisch (Schulter), geschmort",
+        "g": 120,
+        "fdcId": 168256
+      },
+      {
+        "name": "Tofu",
+        "g": 150,
+        "fdcId": 172448
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 50,
+        "fdcId": 170000
+      },
+      {
+        "name": "Sesamöl",
+        "g": 5,
+        "fdcId": 171016
+      },
+      {
+        "name": "Wasser (Brühe)",
+        "g": 225,
+        "fdcId": 173647
+      }
+    ]
+  },
   "seo": {
     "title": "Kimchi Jjigae Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kimchi Jjigae? Nährwerte für den koreanischen Kimchi-Eintopf mit verschiedenen Zutaten. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat Kimchi Jjigae? Eine Schüssel (400g) hat ca. 252 kcal. Nährwerte für den koreanischen Kimchi-Eintopf, mit Reis & Portionen. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 70,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 4,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 63,
+    "protein_per_100g": 5.8,
+    "carbs_per_100g": 1.9,
+    "fat_per_100g": 3.7,
+    "fiber_per_100g": 0.8,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Schüssel"
   },
   "variants": [
-    {"name": "Klassisch mit Schweinefleisch", "portion_g": 400, "calories": 280, "protein": 20, "carbs": 16, "fat": 16, "tip": "Standard-Variante"},
-    {"name": "Mit Tofu", "portion_g": 400, "calories": 220, "protein": 16, "carbs": 18, "fat": 10, "tip": "Kalorienärmste Variante"},
-    {"name": "Mit Thunfisch", "portion_g": 400, "calories": 250, "protein": 24, "carbs": 14, "fat": 12},
-    {"name": "Mit Reis dazu", "portion_g": 550, "calories": 480, "protein": 22, "carbs": 66, "fat": 16},
-    {"name": "Vegetarisch (Gemüse + Tofu)", "portion_g": 400, "calories": 200, "protein": 14, "carbs": 18, "fat": 8, "tip": "Sehr leicht"},
-    {"name": "Army Stew (Budae Jjigae)", "portion_g": 450, "calories": 520, "protein": 26, "carbs": 30, "fat": 32}
+    {
+      "name": "Klassisch mit Schweinefleisch",
+      "portion_g": 400,
+      "calories": 252,
+      "protein": 23,
+      "carbs": 8,
+      "fat": 15,
+      "tip": "Standard-Variante"
+    },
+    {
+      "name": "Kleine Schüssel (300g)",
+      "portion_g": 300,
+      "calories": 189,
+      "protein": 17,
+      "carbs": 6,
+      "fat": 11
+    },
+    {
+      "name": "Große Schüssel (500g)",
+      "portion_g": 500,
+      "calories": 315,
+      "protein": 29,
+      "carbs": 10,
+      "fat": 19
+    },
+    {
+      "name": "Mit Reis dazu (400g + 150g Reis)",
+      "portion_g": 550,
+      "calories": 447,
+      "protein": 27,
+      "carbs": 50,
+      "fat": 15,
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Miso-Suppe", "calories": 80, "emoji": "🥣"},
-    {"name": "Gulaschsuppe", "calories": 320, "emoji": "🍲"},
-    {"name": "Tom Yum", "calories": 280, "emoji": "🍜"},
-    {"name": "Linsensuppe", "calories": 250, "emoji": "🥣"}
+    {
+      "name": "Miso-Suppe",
+      "calories": 60,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "miso-suppe"
+        }
+      ]
+    },
+    {
+      "name": "Gulaschsuppe",
+      "calories": 312,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulaschsuppe"
+        }
+      ]
+    },
+    {
+      "name": "Linsensuppe",
+      "calories": 240,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "eintopf-linsen"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Mageres Schweinefleisch", "text": "Schweinelende statt Bauchfleisch spart ca. 80 kcal pro Portion bei gleichem Geschmack.", "icon": "🥩"},
-    {"title": "Mehr Tofu für Protein", "text": "Extra Tofu macht den Eintopf proteinreich und sättigend, ohne viele Kalorien hinzuzufügen.", "icon": "🧈"},
-    {"title": "Reisportionen kontrollieren", "text": "Der Eintopf allein hat nur 280 kcal. Der Reis verdoppelt die Kalorien – portioniere bewusst.", "icon": "🍚"},
-    {"title": "Altes Kimchi verwenden", "text": "Gut fermentiertes, saures Kimchi hat mehr Geschmack und Probiotika – weniger Paste nötig.", "icon": "🥬"},
-    {"title": "Ohne Instant-Nudeln", "text": "Manche Rezepte fügen Ramen-Nudeln hinzu – das sind extra 190 kcal. Lass sie weg für die leichte Version.", "icon": "🍜"}
+    {
+      "title": "Mageres Schweinefleisch",
+      "text": "Magere Schweinelende statt Bauchfleisch spart spürbar Kalorien bei gleichem Geschmack.",
+      "icon": "🥩"
+    },
+    {
+      "title": "Mehr Tofu für Protein",
+      "text": "Extra Tofu macht den Eintopf proteinreich und sättigend, ohne viele Kalorien hinzuzufügen.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Reisportionen kontrollieren",
+      "text": "Der Eintopf allein hat rund 252 kcal (400g). 150g Reis dazu bringen weitere 195 kcal, portioniere bewusst.",
+      "icon": "🍚"
+    },
+    {
+      "title": "Altes Kimchi verwenden",
+      "text": "Gut fermentiertes, saures Kimchi hat mehr Geschmack und Probiotika, du brauchst weniger Paste.",
+      "icon": "🥬"
+    },
+    {
+      "title": "Ohne Instant-Nudeln",
+      "text": "Manche Rezepte fügen Instant-Nudeln hinzu, das bringt deutlich mehr Kalorien. Lass sie weg für die leichte Version.",
+      "icon": "🍜"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Kimchi Jjigae?", "answer": "Eine Schüssel Kimchi Jjigae (400g) hat ca. 280 kcal mit Schweinefleisch. Mit Reis dazu sind es ca. 480 kcal."},
-    {"question": "Ist Kimchi Jjigae gesund?", "answer": "Ja – Kimchi liefert Probiotika, der Eintopf ist proteinreich und kalorienarm. Eines der gesündesten Comfort-Food-Gerichte."},
-    {"question": "Wie viel Protein hat Kimchi Jjigae?", "answer": "Ca. 20g Protein mit Schweinefleisch, 24g mit Thunfisch. Guter Proteingehalt für einen Eintopf."},
-    {"question": "Kann man Kimchi Jjigae beim Abnehmen essen?", "answer": "Absolut – mit nur 280 kcal pro Schüssel ist es ideal zum Abnehmen. Die Tofu-Version hat sogar nur 220 kcal."},
-    {"question": "Was ist der Unterschied zwischen Kimchi Jjigae und Budae Jjigae?", "answer": "Budae Jjigae ('Army Stew') enthält zusätzlich Spam, Würstchen und Instant-Nudeln – fast doppelt so viele Kalorien (520 kcal)."},
-    {"question": "Wie scharf ist Kimchi Jjigae?", "answer": "Mittlere Schärfe – durch das Kimchi und Gochugaru (Chiliflocken). Die Schärfe kann den Stoffwechsel leicht ankurbeln."}
+    {
+      "question": "Wie viele Kalorien hat Kimchi Jjigae?",
+      "answer": "Eine Schüssel Kimchi Jjigae (400g) hat ca. 252 kcal mit Schweinefleisch und Tofu. Mit 150g Reis dazu sind es ca. 447 kcal. Gerechnet aus USDA-Werten für 250g Kimchi, 120g geschmortes Schweinefleisch, 150g Tofu, 50g Zwiebeln, 5g Sesamöl und Wasser für 2 Schüsseln."
+    },
+    {
+      "question": "Ist Kimchi Jjigae gesund?",
+      "answer": "Ja, Kimchi liefert Probiotika, der Eintopf ist proteinreich und kalorienarm. Eines der gesündesten Comfort-Food-Gerichte."
+    },
+    {
+      "question": "Wie viel Protein hat Kimchi Jjigae?",
+      "answer": "Ca. 23g Protein pro Schüssel (400g) mit Schweinefleisch und Tofu. Guter Proteingehalt für einen Eintopf."
+    },
+    {
+      "question": "Kann man Kimchi Jjigae beim Abnehmen essen?",
+      "answer": "Ja, mit rund 252 kcal pro Schüssel ist es gut zum Abnehmen geeignet."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Kimchi Jjigae und Budae Jjigae?",
+      "answer": "Budae Jjigae ('Army Stew') enthält zusätzlich Spam, Würstchen und Instant-Nudeln und hat dadurch deutlich mehr Kalorien."
+    },
+    {
+      "question": "Wie scharf ist Kimchi Jjigae?",
+      "answer": "Mittlere Schärfe durch das Kimchi und Gochugaru (Chiliflocken). Die Schärfe kann den Stoffwechsel leicht ankurbeln."
+    }
   ],
-  "related_foods": ["bibimbap", "ramen", "pho", "fried-rice"]
+  "related_foods": [
+    "bibimbap",
+    "ramen",
+    "pho",
+    "fried-rice"
+  ]
 }

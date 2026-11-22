@@ -3,9 +3,26 @@
   "name": "Spezi",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Dose 330 ml (halb Cola, halb Orangenlimonade)): 165 ml (173 g) Cola (FDC-ID 2710541, Soft drink, cola: 42 kcal), 165 ml (173 g) Orangenlimonade (FDC-ID 174854, Beverages, carbonated, orange: 48 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Cola",
+        "g": 173,
+        "ml": 165,
+        "fdcId": 2710541
+      },
+      {
+        "name": "Orangenlimonade",
+        "g": 173,
+        "ml": 165,
+        "fdcId": 174854
+      }
+    ]
+  },
   "seo": {
     "title": "Spezi Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Spezi? Der Cola-Mix hat ca. 40 kcal pro 100 ml, eine 0,33-l-Dose rund 132 kcal. Nährwerte, Zucker & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Spezi? Der Cola-Mix hat ca. 47 kcal pro 100 ml, eine 0,33-l-Dose rund 156 kcal. Nährwerte, Zucker & Diät-Tipps.",
     "keywords": [
       "spezi kcal",
       "spezi kalorien",
@@ -17,100 +34,135 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 40,
+    "calories_per_100g": 45,
     "protein_per_100g": 0,
-    "carbs_per_100g": 9.7,
-    "fat_per_100g": 0,
+    "carbs_per_100g": 11.3,
+    "fat_per_100g": 0.1,
     "fiber_per_100g": 0,
-    "typical_portion_g": 330,
+    "typical_portion_g": 346,
     "typical_portion_name": "1 Dose (330 ml)"
   },
   "variants": [
     {
       "name": "Spezi 100 ml",
-      "portion_g": 100,
-      "calories": 40,
+      "portion_g": 105,
+      "calories": 47,
       "protein": 0,
-      "carbs": 9.7,
-      "fat": 0
+      "carbs": 11.9,
+      "fat": 0.1
     },
     {
       "name": "Spezi Glas (250 ml)",
-      "portion_g": 250,
-      "calories": 100,
+      "portion_g": 262,
+      "calories": 118,
       "protein": 0,
-      "carbs": 24,
-      "fat": 0
+      "carbs": 29.6,
+      "fat": 0.3
     },
     {
       "name": "Spezi Dose (330 ml)",
-      "portion_g": 330,
-      "calories": 132,
+      "portion_g": 346,
+      "calories": 156,
       "protein": 0,
-      "carbs": 32,
-      "fat": 0,
+      "carbs": 39.1,
+      "fat": 0.3,
       "tip": "Standard-Gebinde"
     },
     {
       "name": "Spezi Flasche (500 ml)",
-      "portion_g": 500,
-      "calories": 200,
+      "portion_g": 524,
+      "calories": 236,
       "protein": 0,
-      "carbs": 49,
-      "fat": 0
+      "carbs": 59.2,
+      "fat": 0.5
     },
     {
       "name": "Spezi 1-Liter-Flasche",
-      "portion_g": 1000,
-      "calories": 400,
+      "portion_g": 1048,
+      "calories": 472,
       "protein": 0,
-      "carbs": 97,
-      "fat": 0
+      "carbs": 118.4,
+      "fat": 1
     },
     {
       "name": "Spezi Zero / Light (330 ml)",
-      "portion_g": 330,
-      "calories": 3,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 0,
-      "tip": "Mit Süßstoff, nahezu kalorienfrei"
+      "portion_g": 335,
+      "calories": 7,
+      "protein": 0.4,
+      "carbs": 1,
+      "fat": 0.1,
+      "tip": "Mit Süßstoff, nahezu kalorienfrei",
+      "basis": [
+        {
+          "fdcId": 2710537,
+          "ml": 330,
+          "g": 335
+        }
+      ]
     },
     {
       "name": "Spezi 1,5-Liter-Flasche",
-      "portion_g": 1500,
-      "calories": 600,
+      "portion_g": 1573,
+      "calories": 708,
       "protein": 0,
-      "carbs": 146,
-      "fat": 0
+      "carbs": 177.7,
+      "fat": 1.6
     }
   ],
   "comparison": [
     {
       "name": "Cola (330 ml)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 330,
+          "g": 346
+        }
+      ]
     },
     {
       "name": "Fanta (330 ml)",
-      "calories": 142,
-      "emoji": "🍊"
+      "calories": 106,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "fanta",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
       "name": "Apfelsaft (330 ml)",
-      "calories": 152,
-      "emoji": "🧃"
+      "calories": 159,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 330,
+          "g": 346
+        }
+      ]
     },
     {
       "name": "Mineralwasser (330 ml)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Zuckergehalt im Blick behalten",
-      "text": "Eine 0,33-l-Dose Spezi liefert rund 32 g Zucker - das entspricht etwa 11 Würfelzuckern. Wer abnehmen möchte, sollte den Konsum begrenzen.",
+      "text": "Eine 0,33-l-Dose Spezi liefert rund 39 g Zucker - das entspricht etwa 13 Würfelzuckern. Wer abnehmen möchte, sollte den Konsum begrenzen.",
       "icon": "🧊"
     },
     {
@@ -130,18 +182,18 @@
     },
     {
       "title": "Portionsgröße bewusst wählen",
-      "text": "Eine 1-Liter-Flasche enthält bereits rund 400 kcal. Ein kleines Glas (250 ml) mit ca. 100 kcal ist die deutlich kalorienärmere Wahl.",
+      "text": "Eine 1-Liter-Flasche enthält bereits rund 472 kcal. Ein kleines Glas (250 ml) mit ca. 118 kcal ist die deutlich kalorienärmere Wahl.",
       "icon": "🥛"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Spezi?",
-      "answer": "Spezi hat rund 40 kcal pro 100 ml. Eine 0,33-l-Dose kommt damit auf etwa 132 kcal, eine 0,5-l-Flasche auf rund 200 kcal."
+      "answer": "Spezi hat rund 47 kcal pro 100 ml. Eine 0,33-l-Dose kommt damit auf etwa 156 kcal, eine 0,5-l-Flasche auf rund 236 kcal. Gerechnet aus USDA-Werten für je zur Hälfte Cola und Orangenlimonade."
     },
     {
       "question": "Wie viel Zucker steckt in Spezi?",
-      "answer": "Spezi enthält etwa 9,7 g Zucker pro 100 ml. Eine 0,33-l-Dose liefert somit rund 32 g Zucker, eine 0,5-l-Flasche etwa 49 g."
+      "answer": "Spezi enthält etwa 11,8 g Zucker pro 100 ml. Eine 0,33-l-Dose liefert somit rund 39 g Zucker, eine 0,5-l-Flasche etwa 59 g."
     },
     {
       "question": "Hat Spezi Eiweiß oder Fett?",
@@ -153,7 +205,7 @@
     },
     {
       "question": "Hat Spezi mehr oder weniger Kalorien als Cola?",
-      "answer": "Spezi hat mit ca. 40 kcal pro 100 ml etwas weniger Kalorien als klassische Cola (ca. 42 kcal pro 100 ml). Der Unterschied ist allerdings gering."
+      "answer": "Nach USDA-Werten hat Spezi mit ca. 47 kcal pro 100 ml etwas mehr Kalorien als klassische Cola (ca. 44 kcal pro 100 ml), weil die Orangenlimonade etwas süßer ist. Der Unterschied ist allerdings gering."
     },
     {
       "question": "Was ist Spezi überhaupt?",

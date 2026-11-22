@@ -3,50 +3,322 @@
   "name": "Glühwein",
   "emoji": "🍷",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Tasse 200 ml): 180 ml (179 g) Rotwein (FDC-ID 173190, Alcoholic beverage, wine, table, red: 85 kcal), 15 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 10 ml (10 g) Orangensaft (FDC-ID 169098, Orange juice, raw (Includes foods for USDA's Food Distribution Program): 45 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Rotwein",
+        "g": 179,
+        "ml": 180,
+        "fdcId": 173190
+      },
+      {
+        "name": "Zucker",
+        "g": 15,
+        "fdcId": 169655
+      },
+      {
+        "name": "Orangensaft",
+        "g": 10,
+        "ml": 10,
+        "fdcId": 169098
+      }
+    ]
+  },
   "seo": {
     "title": "Glühwein Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Glühwein? Nährwerte pro Tasse. Klassisch, weiß, alkoholfrei & Feuerzangenbowle im Vergleich.",
-    "keywords": ["glühwein kalorien", "kalorien glühwein", "glühwein nährwerte", "glühwein zucker", "weißer glühwein kalorien", "feuerzangenbowle kalorien", "glühwein weihnachtsmarkt kalorien", "alkoholfreier glühwein kalorien"]
+    "keywords": [
+      "glühwein kalorien",
+      "kalorien glühwein",
+      "glühwein nährwerte",
+      "glühwein zucker",
+      "weißer glühwein kalorien",
+      "feuerzangenbowle kalorien",
+      "glühwein weihnachtsmarkt kalorien",
+      "alkoholfreier glühwein kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 100,
+    "calories_per_100g": 105,
     "protein_per_100g": 0.1,
-    "carbs_per_100g": 12,
+    "carbs_per_100g": 10.2,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 200,
+    "typical_portion_g": 204,
     "typical_portion_name": "1 Tasse (200ml)"
   },
   "variants": [
-    { "name": "Glühwein rot klassisch (200ml)", "portion_g": 200, "calories": 200, "protein": 0, "carbs": 24, "fat": 0 },
-    { "name": "Weißer Glühwein (200ml)", "portion_g": 200, "calories": 190, "protein": 0, "carbs": 22, "fat": 0 },
-    { "name": "Glühwein alkoholfrei (200ml)", "portion_g": 200, "calories": 120, "protein": 0, "carbs": 28, "fat": 0, "tip": "40% weniger Kalorien" },
-    { "name": "Feuerzangenbowle (200ml)", "portion_g": 200, "calories": 300, "protein": 0, "carbs": 35, "fat": 0 },
-    { "name": "Glühwein mit Schuss (200ml + Rum)", "portion_g": 200, "calories": 260, "protein": 0, "carbs": 24, "fat": 0 },
-    { "name": "Kinderpunsch (200ml)", "portion_g": 200, "calories": 110, "protein": 0, "carbs": 26, "fat": 0 },
-    { "name": "Lumumba (Kakao + Rum, 200ml)", "portion_g": 200, "calories": 280, "protein": 4, "carbs": 28, "fat": 5 },
-    { "name": "Glühwein selbstgemacht (200ml)", "portion_g": 200, "calories": 180, "protein": 0, "carbs": 18, "fat": 0 }
+    {
+      "name": "Glühwein rot klassisch (200ml)",
+      "portion_g": 204,
+      "calories": 214,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0
+    },
+    {
+      "name": "Weißer Glühwein (200ml)",
+      "portion_g": 204,
+      "calories": 209,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 174837,
+          "ml": 180,
+          "g": 179
+        },
+        {
+          "fdcId": 169655,
+          "g": 15
+        },
+        {
+          "fdcId": 169098,
+          "ml": 10,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Glühwein alkoholfrei (200ml)",
+      "portion_g": 202,
+      "calories": 73,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 0,
+      "tip": "Aus entalkoholisiertem Wein, rund zwei Drittel weniger Kalorien",
+      "basis": [
+        {
+          "fdcId": 174157,
+          "ml": 180,
+          "g": 177
+        },
+        {
+          "fdcId": 169655,
+          "g": 15
+        },
+        {
+          "fdcId": 169098,
+          "ml": 10,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Feuerzangenbowle (200ml)",
+      "portion_g": 207,
+      "calories": 284,
+      "protein": 0,
+      "carbs": 33,
+      "fat": 0,
+      "tip": "Mit Rum und Zuckerhut",
+      "basis": [
+        {
+          "ml": 170,
+          "g": 173
+        },
+        {
+          "fdcId": 174817,
+          "ml": 20,
+          "g": 19
+        },
+        {
+          "fdcId": 169655,
+          "g": 15
+        }
+      ]
+    },
+    {
+      "name": "Glühwein mit Schuss (200ml + Rum)",
+      "portion_g": 223,
+      "calories": 258,
+      "protein": 0,
+      "carbs": 21,
+      "fat": 0,
+      "tip": "Mit 2 cl Rum",
+      "basis": [
+        {
+          "ml": 200,
+          "g": 204
+        },
+        {
+          "fdcId": 174817,
+          "ml": 20,
+          "g": 19
+        }
+      ]
+    },
+    {
+      "name": "Kinderpunsch (200ml)",
+      "portion_g": 210,
+      "calories": 90,
+      "protein": 1,
+      "carbs": 22,
+      "fat": 0,
+      "tip": "Traubensaft, Apfelsaft, Orangensaft und Tee",
+      "basis": [
+        {
+          "fdcId": 173042,
+          "ml": 80,
+          "g": 86
+        },
+        {
+          "fdcId": 173933,
+          "ml": 60,
+          "g": 63
+        },
+        {
+          "fdcId": 169098,
+          "ml": 20,
+          "g": 21
+        },
+        {
+          "fdcId": 173227,
+          "ml": 40,
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Lumumba (Kakao + Rum, 200ml)",
+      "portion_g": 208,
+      "calories": 216,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 3,
+      "basis": [
+        {
+          "slug": "kakao",
+          "ml": 180,
+          "g": 189
+        },
+        {
+          "fdcId": 174817,
+          "ml": 20,
+          "g": 19
+        }
+      ]
+    },
+    {
+      "name": "Glühwein selbstgemacht (200ml)",
+      "portion_g": 202,
+      "calories": 185,
+      "protein": 0,
+      "carbs": 12,
+      "fat": 0,
+      "tip": "Mit wenig Honig statt Zucker",
+      "basis": [
+        {
+          "fdcId": 173190,
+          "ml": 185,
+          "g": 184
+        },
+        {
+          "fdcId": 169640,
+          "g": 8
+        },
+        {
+          "fdcId": 169098,
+          "ml": 10,
+          "g": 10
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Bier (500ml)", "calories": 215, "emoji": "🍺" },
-    { "name": "Rotwein (200ml)", "calories": 170, "emoji": "🍷" },
-    { "name": "Kakao (250ml)", "calories": 210, "emoji": "☕" },
-    { "name": "Punsch alkoholfrei (200ml)", "calories": 110, "emoji": "🍵" }
+    {
+      "name": "Bier (500ml)",
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Rotwein (200ml)",
+      "calories": 170,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-rot"
+        }
+      ]
+    },
+    {
+      "name": "Kakao (250ml)",
+      "calories": 238,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kakao",
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Ohne Schuss trinken", "text": "Jeder Schuss Rum/Amaretto fügt 60 kcal hinzu. 3 Tassen mit Schuss = 780 kcal – ein halbes Tagebudget.", "icon": "🚫" },
-    { "title": "Selbst machen mit weniger Zucker", "text": "Fertig-Glühwein hat oft 80-120g Zucker/Liter. Selbstgemacht: Rotwein + Gewürze + wenig Honig = 180 statt 200 kcal.", "icon": "🧑‍🍳" },
-    { "title": "Weihnachtsmarkt-Falle beachten", "text": "3 Tassen Glühwein + 1 Bratwurst + 1 Crêpe = leicht 1000+ kcal. Vorher planen!", "icon": "🎄" },
-    { "title": "Alkoholfrei spart 40%", "text": "Alkoholfreier Glühwein hat 120 statt 200 kcal. Der Alkohol macht den Hauptunterschied aus.", "icon": "📉" },
-    { "title": "Zwischen den Tassen Wasser trinken", "text": "Ein Glas heißes Wasser oder Tee zwischen den Glühweinen halbiert die Kalorienmenge und wärmt genauso.", "icon": "💧" }
+    {
+      "title": "Ohne Schuss trinken",
+      "text": "Jeder Schuss Rum (2 cl) fügt rund 44 kcal hinzu. 3 Tassen mit Schuss sind rund 774 kcal.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Selbst machen mit weniger Zucker",
+      "text": "Selbstgemacht: Rotwein + Gewürze + wenig Honig = rund 185 statt 214 kcal.",
+      "icon": "🧑‍🍳"
+    },
+    {
+      "title": "Weihnachtsmarkt-Falle beachten",
+      "text": "3 Tassen Glühwein (rund 642 kcal) plus Bratwurst und Crêpe summieren sich schnell. Vorher planen!",
+      "icon": "🎄"
+    },
+    {
+      "title": "Alkoholfrei spart rund zwei Drittel",
+      "text": "Alkoholfreier Glühwein aus entalkoholisiertem Wein hat rund 73 statt 214 kcal. Der Alkohol macht den Hauptunterschied aus.",
+      "icon": "📉"
+    },
+    {
+      "title": "Zwischen den Tassen Wasser trinken",
+      "text": "Ein Glas heißes Wasser oder Tee zwischen den Glühweinen halbiert die Kalorienmenge und wärmt genauso.",
+      "icon": "💧"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Tasse Glühwein?", "answer": "Eine Tasse Glühwein (200ml) hat ca. 200 kcal. Weißer Glühwein hat 190 kcal, Feuerzangenbowle 300 kcal, alkoholfreier nur 120 kcal." },
-    { "question": "Warum hat Glühwein so viele Kalorien?", "answer": "Doppelt belastet: Alkohol (7 kcal/g) plus zugesetzter Zucker (bis 12g/100ml). Die Gewürze machen kalorisch nichts aus." },
-    { "question": "Wie viel Zucker hat Glühwein?", "answer": "Ca. 12g/100ml, also 24g (6 Zuckerwürfel) pro Tasse. Billiger Glühwein hat oft noch mehr Zucker, um minderwertigen Wein zu überdecken." },
-    { "question": "Macht Glühwein dick?", "answer": "3 Tassen Glühwein = 600 kcal. Plus Weihnachtsmarkt-Essen schnell 1000+ kcal. Ein Abend pro Woche in der Weihnachtszeit kann 2-3kg Gewichtszunahme bedeuten." },
-    { "question": "Hat alkoholfreier Glühwein weniger Kalorien?", "answer": "Ja, ca. 40% weniger: 120 statt 200 kcal pro Tasse. Die Kalorien kommen dann nur noch vom Zucker, nicht vom Alkohol." },
-    { "question": "Welcher Glühwein hat die wenigsten Kalorien?", "answer": "Alkoholfreier Glühwein (120 kcal/200ml). Bei alkoholischem: selbstgemachter mit wenig Zucker (180 kcal). Feuerzangenbowle hat mit 300 kcal die meisten." }
+    {
+      "question": "Wie viele Kalorien hat eine Tasse Glühwein?",
+      "answer": "Eine Tasse Glühwein (200ml) hat ca. 214 kcal. Weißer Glühwein hat rund 209 kcal, Feuerzangenbowle rund 284 kcal, alkoholfreier nur rund 73 kcal. Gerechnet aus USDA-Werten für 180 ml Rotwein, 15 g Zucker und 10 ml Orangensaft."
+    },
+    {
+      "question": "Warum hat Glühwein so viele Kalorien?",
+      "answer": "Doppelt belastet: Alkohol (7 kcal/g) plus zugesetzter Zucker (hier 15g pro Tasse). Die Gewürze machen kalorisch nichts aus."
+    },
+    {
+      "question": "Wie viel Zucker hat Glühwein?",
+      "answer": "Rund 21g Kohlenhydrate pro Tasse, davon 15g zugesetzter Zucker (etwa 5 Zuckerwürfel). Billiger Glühwein hat oft noch mehr Zucker, um minderwertigen Wein zu überdecken."
+    },
+    {
+      "question": "Macht Glühwein dick?",
+      "answer": "3 Tassen Glühwein = rund 642 kcal. Mit Essen vom Weihnachtsmarkt kommt schnell viel zusammen. Regelmäßige Glühwein-Abende in der Weihnachtszeit machen sich auf der Waage bemerkbar."
+    },
+    {
+      "question": "Hat alkoholfreier Glühwein weniger Kalorien?",
+      "answer": "Ja, rund zwei Drittel weniger: 73 statt 214 kcal pro Tasse (aus entalkoholisiertem Wein). Die Kalorien kommen dann fast nur noch vom Zucker, nicht vom Alkohol."
+    },
+    {
+      "question": "Welcher Glühwein hat die wenigsten Kalorien?",
+      "answer": "Alkoholfreier Glühwein (73 kcal/200ml). Bei alkoholischem: selbstgemachter mit wenig Honig (185 kcal). Feuerzangenbowle hat mit 284 kcal die meisten."
+    }
   ],
-  "related_foods": ["wein-rot", "wein-weiss", "bier", "kakao"]
+  "related_foods": [
+    "wein-rot",
+    "wein-weiss",
+    "bier",
+    "kakao"
+  ]
 }

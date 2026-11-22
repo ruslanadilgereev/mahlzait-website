@@ -3,9 +3,46 @@
   "name": "Vollkorn-Croissant",
   "emoji": "🥐",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (16 Croissants à 60 g (960 g)): 500 g Weizenvollkornmehl (FDC-ID 168893, Wheat flour, whole-grain (Includes foods for USDA's Food Distribution Program): 340 kcal), 250 g Butter (Teig und Tourieren) (FDC-ID 173430, Butter, without salt: 717 kcal), 250 ml (258 g) Milch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 50 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 20 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 55 g Ei (Teig und zum Bestreichen) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal); 1133 g Zutaten ergeben 960 g (Backverlust rund 15 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenvollkornmehl",
+        "g": 500,
+        "fdcId": 168893
+      },
+      {
+        "name": "Butter (Teig und Tourieren)",
+        "g": 250,
+        "fdcId": 173430
+      },
+      {
+        "name": "Milch",
+        "g": 258,
+        "ml": 250,
+        "fdcId": 171265
+      },
+      {
+        "name": "Zucker",
+        "g": 50,
+        "fdcId": 169655
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 20,
+        "fdcId": 175042
+      },
+      {
+        "name": "Ei (Teig und zum Bestreichen)",
+        "g": 55,
+        "fdcId": 171287
+      }
+    ],
+    "gewicht_g": 960
+  },
   "seo": {
     "title": "Vollkorn-Croissant Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Vollkorn-Croissant? Ein Standard-Croissant (60g) hat ca. 237 kcal. Nährwerte pro 100g & Stück, Varianten und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Vollkorn-Croissant? Ein Standard-Croissant (60g) hat ca. 247 kcal. Nährwerte pro 100g & Stück, Varianten und Diät-Tipps.",
     "keywords": [
       "vollkorn croissant kalorien",
       "vollkorn croissant kcal",
@@ -17,11 +54,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 395,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 42,
-    "fat_per_100g": 20,
-    "fiber_per_100g": 5,
+    "calories_per_100g": 411,
+    "protein_per_100g": 8.8,
+    "carbs_per_100g": 44.4,
+    "fat_per_100g": 23.9,
+    "fiber_per_100g": 5.7,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Vollkorn-Croissant (Standard)"
   },
@@ -29,122 +66,153 @@
     {
       "name": "Mini-Vollkorn-Croissant (30g)",
       "portion_g": 30,
-      "calories": 118,
+      "calories": 123,
       "protein": 3,
       "carbs": 13,
-      "fat": 6
+      "fat": 7
     },
     {
       "name": "Vollkorn-Croissant klein (45g)",
       "portion_g": 45,
-      "calories": 178,
+      "calories": 185,
       "protein": 4,
-      "carbs": 19,
-      "fat": 9
+      "carbs": 20,
+      "fat": 11
     },
     {
       "name": "Vollkorn-Croissant Standard (60g)",
       "portion_g": 60,
-      "calories": 237,
+      "calories": 247,
       "protein": 5,
-      "carbs": 25,
-      "fat": 12,
+      "carbs": 27,
+      "fat": 14,
       "tip": "Standard"
     },
     {
       "name": "Vollkorn-Croissant groß (80g)",
       "portion_g": 80,
-      "calories": 316,
+      "calories": 329,
       "protein": 7,
-      "carbs": 34,
-      "fat": 16
+      "carbs": 36,
+      "fat": 19
     },
     {
       "name": "Aufback-Vollkorn-Croissant (50g)",
       "portion_g": 50,
-      "calories": 198,
+      "calories": 206,
       "protein": 4,
-      "carbs": 21,
-      "fat": 10
+      "carbs": 22,
+      "fat": 12
     },
     {
       "name": "Mit Marmelade bestrichen (60g + 20g)",
       "portion_g": 80,
-      "calories": 289,
+      "calories": 302,
       "protein": 5,
-      "carbs": 38,
-      "fat": 12
+      "carbs": 40,
+      "fat": 14,
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "slug": "marmelade",
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 395,
+      "calories": 411,
       "protein": 9,
-      "carbs": 42,
-      "fat": 20
+      "carbs": 44,
+      "fat": 24
     }
   ],
   "comparison": [
     {
       "name": "Croissant (Butter, 60g)",
       "calories": 244,
-      "emoji": "🥐"
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Vollkornbrot (1 Scheibe)",
-      "calories": 110,
-      "emoji": "🍞"
+      "calories": 111,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot"
+        }
+      ]
     },
     {
       "name": "Brötchen",
-      "calories": 126,
-      "emoji": "🥖"
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen"
+        }
+      ]
     },
     {
       "name": "Nuss-Nougat-Croissant (60g)",
-      "calories": 290,
-      "emoji": "🍫"
+      "calories": 253,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "nuss-nougat-croissant",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mehr Ballaststoffe als das Original",
-      "text": "Durch das Vollkornmehl liefert ein Vollkorn-Croissant ca. 5g Ballaststoffe pro 100g – deutlich mehr als ein klassisches Buttercroissant. Das sättigt länger.",
+      "text": "Durch das Vollkornmehl liefert ein Vollkorn-Croissant ca. 6g Ballaststoffe pro 100g, deutlich mehr als ein klassisches Buttercroissant. Das sättigt länger.",
       "icon": "🌾"
     },
     {
       "title": "Fett bleibt der Kalorientreiber",
-      "text": "Auch beim Vollkorn-Croissant stammt der Großteil der 237 kcal aus dem Butterfett (12g pro Stück). Vollkorn macht das Gebäck nährstoffreicher, nicht automatisch kalorienarm.",
+      "text": "Auch beim Vollkorn-Croissant stammt der Großteil der 247 kcal aus dem Butterfett (14g pro Stück). Vollkorn macht das Gebäck nährstoffreicher, nicht automatisch kalorienarm.",
       "icon": "🧈"
     },
     {
       "title": "Belag bewusst wählen",
-      "text": "Pur hat das Croissant ca. 237 kcal. Mit Marmelade oder Honig kommen schnell 50 kcal dazu. Magerquark oder Frischkäse sind die kalorienärmere Alternative.",
+      "text": "Pur hat das Croissant ca. 247 kcal. Mit 20g Marmelade kommen schnell 55 kcal dazu. Magerquark oder Frischkäse sind die kalorienärmere Alternative.",
       "icon": "🍯"
     },
     {
       "title": "Zum Frühstück kombinieren",
-      "text": "Ein Vollkorn-Croissant mit etwas Obst und einem Ei macht satter als zwei Croissants allein – mehr Protein und weniger Kalorien pro Sättigung.",
+      "text": "Ein Vollkorn-Croissant mit etwas Obst und einem Ei macht satter als zwei Croissants allein: mehr Protein und weniger Kalorien pro Sättigung.",
       "icon": "🍳"
     },
     {
       "title": "Mini-Variante für den kleinen Hunger",
-      "text": "Ein Mini-Vollkorn-Croissant (30g) hat nur ca. 118 kcal. Ideal, wenn man Lust auf Gebäck hat, aber das Kalorienbudget im Blick behält.",
+      "text": "Ein Mini-Vollkorn-Croissant (30g) hat nur ca. 123 kcal. Ideal, wenn man Lust auf Gebäck hat, aber das Kalorienbudget im Blick behält.",
       "icon": "🥐"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Vollkorn-Croissant?",
-      "answer": "Ein Standard-Vollkorn-Croissant (60g) hat ca. 237 kcal. Pro 100g sind es etwa 395 kcal. Eine kleine Variante (45g) liegt bei rund 178 kcal."
+      "answer": "Ein Standard-Vollkorn-Croissant (60g) hat ca. 247 kcal. Pro 100g sind es etwa 411 kcal. Eine kleine Variante (45g) liegt bei rund 185 kcal. Gerechnet aus USDA-Werten für 16 Croissants aus 500g Weizenvollkornmehl, 250g Butter, 250ml Milch, 50g Zucker, Hefe und 1 Ei (gebacken rund 960g)."
     },
     {
       "question": "Ist ein Vollkorn-Croissant gesünder als ein normales Croissant?",
-      "answer": "Etwas. Es liefert mehr Ballaststoffe (ca. 5g/100g) und etwas mehr Protein, hat aber durch den hohen Butteranteil einen ähnlichen Kaloriengehalt wie ein klassisches Croissant."
+      "answer": "Etwas. Es liefert mehr Ballaststoffe (ca. 6g/100g) und etwas mehr Protein, hat aber durch den hohen Butteranteil einen ähnlichen Kaloriengehalt wie ein klassisches Croissant."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Vollkorn-Croissant?",
-      "answer": "Ein Standard-Croissant (60g) enthält ca. 25g Kohlenhydrate. Pro 100g sind es rund 42g. Durch das Vollkornmehl sind diese ballaststoffreicher als bei Weißmehlgebäck."
+      "answer": "Ein Standard-Croissant (60g) enthält ca. 27g Kohlenhydrate. Pro 100g sind es rund 44g. Durch das Vollkornmehl sind diese ballaststoffreicher als bei Weißmehlgebäck."
     },
     {
       "question": "Wie viel Protein steckt in einem Vollkorn-Croissant?",
@@ -152,11 +220,11 @@
     },
     {
       "question": "Ist ein Vollkorn-Croissant zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit ca. 395 kcal/100g ist es relativ energiedicht, weil viel Butterfett enthalten ist. Die Ballaststoffe sättigen besser, aber als täglicher Snack ist es für eine Diät eher ungeeignet."
+      "answer": "Nur in Maßen. Mit ca. 411 kcal/100g ist es relativ energiedicht, weil viel Butterfett enthalten ist. Die Ballaststoffe sättigen besser, aber als täglicher Snack ist es für eine Diät eher ungeeignet."
     },
     {
       "question": "Wie viel Fett hat ein Vollkorn-Croissant?",
-      "answer": "Ein Standard-Croissant (60g) enthält ca. 12g Fett, pro 100g rund 20g. Der größte Teil stammt aus der Butter im Teig."
+      "answer": "Ein Standard-Croissant (60g) enthält ca. 14g Fett, pro 100g rund 24g. Der größte Teil stammt aus der Butter im Teig."
     }
   ],
   "related_foods": [

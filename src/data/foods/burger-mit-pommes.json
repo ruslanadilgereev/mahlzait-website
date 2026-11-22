@@ -3,9 +3,24 @@
   "name": "Burger mit Pommes",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Menü aus 1 Burger und 1 Portion Pommes (295 g)): 145 g Hamburger (1 Stück) (FDC-ID 2706920, Hamburger, NFS: 288 kcal), 150 g Pommes frites (1 Portion) (FDC-ID 2709461, Potato, french fries, fast food: 312 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Hamburger (1 Stück)",
+        "g": 145,
+        "fdcId": 2706920
+      },
+      {
+        "name": "Pommes frites (1 Portion)",
+        "g": 150,
+        "fdcId": 2709461
+      }
+    ]
+  },
   "seo": {
     "title": "Burger mit Pommes Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Burger mit Pommes? Ein Menü hat ca. 1215 kcal. Nährwerte pro 100g & Portion, Varianten im Vergleich + Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Burger mit Pommes? Ein Menü (295g) hat ca. 885 kcal. Nährwerte pro 100g & Portion, Varianten im Vergleich + Diät-Tipps.",
     "keywords": [
       "burger mit pommes kalorien",
       "burger pommes kalorien",
@@ -16,97 +31,176 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 270,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 2.5,
-    "typical_portion_g": 450,
+    "calories_per_100g": 300,
+    "protein_per_100g": 10.4,
+    "carbs_per_100g": 31.2,
+    "fat_per_100g": 14.6,
+    "fiber_per_100g": 2.3,
+    "typical_portion_g": 295,
     "typical_portion_name": "1 Menü (Burger + Pommes)"
   },
   "variants": [
     {
-      "name": "Kindermenü (250g)",
-      "portion_g": 250,
-      "calories": 675,
-      "protein": 20,
-      "carbs": 75,
-      "fat": 33,
-      "tip": "Kleiner Burger mit kleiner Pommes-Portion"
+      "name": "Kindermenü (170g)",
+      "portion_g": 170,
+      "calories": 506,
+      "protein": 17,
+      "carbs": 59,
+      "fat": 22,
+      "tip": "Kleiner Hamburger mit kleiner Pommes-Portion (80 g)",
+      "basis": [
+        {
+          "slug": "hamburger"
+        },
+        {
+          "slug": "pommes-frites",
+          "g": 80
+        }
+      ]
     },
     {
-      "name": "Burger + kleine Pommes (350g)",
-      "portion_g": 350,
-      "calories": 945,
-      "protein": 28,
-      "carbs": 105,
-      "fat": 46
+      "name": "Burger + kleine Pommes (245g)",
+      "portion_g": 245,
+      "calories": 730,
+      "protein": 29,
+      "carbs": 71,
+      "fat": 36,
+      "basis": [
+        {
+          "fdcId": 2706920,
+          "g": 145
+        },
+        {
+          "fdcId": 2709461,
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Standard-Menü (450g)",
-      "portion_g": 450,
-      "calories": 1215,
-      "protein": 36,
-      "carbs": 135,
-      "fat": 59,
-      "tip": "Typisches Burger-Menü"
+      "name": "Standard-Menü (295g)",
+      "portion_g": 295,
+      "calories": 885,
+      "protein": 31,
+      "carbs": 92,
+      "fat": 43,
+      "tip": "1 Burger und 1 Portion Pommes (150 g)"
     },
     {
-      "name": "Großes Menü (550g)",
-      "portion_g": 550,
-      "calories": 1485,
-      "protein": 44,
-      "carbs": 165,
-      "fat": 72
+      "name": "Standard-Menü mit Cola (0,5 l)",
+      "portion_g": 819,
+      "calories": 1105,
+      "protein": 31,
+      "carbs": 146,
+      "fat": 45,
+      "basis": [
+        {
+          "g": 295
+        },
+        {
+          "slug": "cola",
+          "variante": "Cola (Flasche 500ml)"
+        }
+      ]
     },
     {
-      "name": "Double-Burger + große Pommes (650g)",
-      "portion_g": 650,
-      "calories": 1755,
+      "name": "Großes Menü (345g)",
+      "portion_g": 345,
+      "calories": 1042,
+      "protein": 32,
+      "carbs": 113,
+      "fat": 50,
+      "tip": "Burger mit großer Pommes-Portion (200 g)",
+      "basis": [
+        {
+          "fdcId": 2706920,
+          "g": 145
+        },
+        {
+          "slug": "pommes-frites",
+          "variante": "Große Portion (200g)"
+        }
+      ]
+    },
+    {
+      "name": "Double-Burger + große Pommes (430g)",
+      "portion_g": 430,
+      "calories": 1291,
       "protein": 52,
-      "carbs": 195,
-      "fat": 85
+      "carbs": 113,
+      "fat": 68,
+      "basis": [
+        {
+          "slug": "double-burger"
+        },
+        {
+          "slug": "pommes-frites",
+          "variante": "Große Portion (200g)"
+        }
+      ]
     },
     {
       "name": "pro 100g",
       "portion_g": 100,
-      "calories": 270,
-      "protein": 8,
-      "carbs": 30,
-      "fat": 13
+      "calories": 300,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 15
     }
   ],
   "comparison": [
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Pizza Salami",
-      "calories": 850,
-      "emoji": "🍕"
+      "name": "TK-Pizza Salami (320g)",
+      "calories": 877,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami",
+          "variante": "TK-Pizza Salami (320g)"
+        }
+      ]
     },
     {
       "name": "Currywurst mit Pommes",
-      "calories": 950,
-      "emoji": "🌭"
+      "calories": 1170,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Currywurst mit Pommes"
+        }
+      ]
     },
     {
-      "name": "Cheeseburger (einzeln)",
-      "calories": 300,
-      "emoji": "🍔"
+      "name": "Cheeseburger (einzeln, 165g)",
+      "calories": 488,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "cheeseburger"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kleine Portion wählen",
-      "text": "Ein Kindermenü oder Burger mit kleiner Pommes spart gegenüber dem großen Menü leicht 500 kcal ein, ohne dass man auf den Geschmack verzichtet.",
+      "text": "Ein Kindermenü spart gegenüber dem großen Menü rund 536 kcal, ein Burger mit kleiner Pommes rund 312 kcal, ohne dass man auf den Geschmack verzichtet.",
       "icon": "🍟"
     },
     {
       "title": "Softdrink weglassen",
-      "text": "Eine große Cola bringt noch einmal rund 200 kcal extra. Wasser oder ein zuckerfreies Getränk dazu macht das Menü deutlich kalorienärmer.",
+      "text": "Eine Cola (0,5 l) bringt noch einmal rund 220 kcal extra, das Menü kommt damit auf etwa 1105 kcal. Wasser oder ein zuckerfreies Getränk dazu macht das Menü deutlich kalorienärmer.",
       "icon": "🥤"
     },
     {
@@ -116,7 +210,7 @@
     },
     {
       "title": "Bewusst als Ausnahme genießen",
-      "text": "Mit über 1200 kcal deckt ein Menü bei vielen Menschen mehr als die Hälfte des Tagesbedarfs. Plane es als Hauptmahlzeit ein und halte die anderen Mahlzeiten leichter.",
+      "text": "Mit rund 885 kcal, mit Cola sogar rund 1105 kcal, ist ein Menü eine üppige Hauptmahlzeit. Plane es bewusst ein und halte die anderen Mahlzeiten leichter.",
       "icon": "📋"
     },
     {
@@ -128,23 +222,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Burger mit Pommes?",
-      "answer": "Ein typisches Menü aus Burger und Pommes (ca. 450g) hat rund 1215 kcal. Pro 100g sind es etwa 270 kcal."
+      "answer": "Ein typisches Menü aus einem Burger (145g) und einer Portion Pommes (150g) hat rund 885 kcal. Pro 100g sind es etwa 300 kcal. Gerechnet aus USDA-Werten für einen Hamburger und eine Portion Fast-Food-Pommes."
     },
     {
       "question": "Wie viele Kalorien hat ein großes Burger-Menü?",
-      "answer": "Ein großes Menü (ca. 550g) kommt auf etwa 1485 kcal. Mit Softdrink kommen noch rund 200 kcal dazu."
+      "answer": "Ein großes Menü mit großer Pommes-Portion (ca. 345g) kommt auf etwa 1042 kcal. Mit einer Cola (0,5 l) kommen noch rund 220 kcal dazu."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Burger mit Pommes?",
-      "answer": "Ein Standard-Menü enthält rund 135g Kohlenhydrate, vor allem aus Pommes und Burgerbrötchen. Pro 100g sind es etwa 30g."
+      "answer": "Ein Standard-Menü enthält rund 92g Kohlenhydrate, vor allem aus Pommes und Burgerbrötchen. Pro 100g sind es etwa 31g."
     },
     {
       "question": "Wie viel Protein hat Burger mit Pommes?",
-      "answer": "Ein Standard-Menü liefert etwa 36g Protein, hauptsächlich aus dem Fleisch-Patty. Pro 100g sind es rund 8g."
+      "answer": "Ein Standard-Menü liefert etwa 31g Protein, hauptsächlich aus dem Fleisch-Patty. Pro 100g sind es rund 10g."
     },
     {
       "question": "Ist Burger mit Pommes zum Abnehmen geeignet?",
-      "answer": "Eher nicht. Mit über 1200 kcal und viel Fett pro Menü passt es nur gelegentlich in eine kalorienbewusste Ernährung. Eine kleinere Portion ohne Softdrink ist die bessere Wahl."
+      "answer": "Eher nicht. Mit rund 885 kcal und viel Fett pro Menü passt es nur gelegentlich in eine kalorienbewusste Ernährung. Eine kleinere Portion ohne Softdrink ist die bessere Wahl."
     },
     {
       "question": "Ist Burger mit Pommes ungesund?",

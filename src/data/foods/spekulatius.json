@@ -3,9 +3,40 @@
   "name": "Spekulatius",
   "emoji": "🍪",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (ca. 70 Kekse à 7 g (485 g)): 250 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 125 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 125 g Brauner Zucker (FDC-ID 168833, Sugars, brown: 380 kcal), 55 g Ei (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 5 g Spekulatiusgewürz (Zimt) (FDC-ID 171320, Spices, cinnamon, ground: 247 kcal); 560 g Zutaten ergeben 485 g (Backverlust rund 13 %: dünne, knusprige Kekse verlieren fast das ganze Wasser aus Ei und Butter (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl",
+        "g": 250,
+        "fdcId": 169761
+      },
+      {
+        "name": "Butter",
+        "g": 125,
+        "fdcId": 173430
+      },
+      {
+        "name": "Brauner Zucker",
+        "g": 125,
+        "fdcId": 168833
+      },
+      {
+        "name": "Ei",
+        "g": 55,
+        "fdcId": 171287
+      },
+      {
+        "name": "Spekulatiusgewürz (Zimt)",
+        "g": 5,
+        "fdcId": 171320
+      }
+    ],
+    "gewicht_g": 485
+  },
   "seo": {
     "title": "Spekulatius Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Spekulatius? 100g haben ca. 486 kcal, ein Keks ca. 34 kcal. Nährwerte, Kohlenhydrate & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Spekulatius? 100g haben ca. 489 kcal, ein Keks ca. 34 kcal. Nährwerte, Kohlenhydrate & Tipps im Überblick.",
     "keywords": [
       "spekulatius kcal",
       "spekulatius kalorien",
@@ -16,11 +47,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 486,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 71,
-    "fat_per_100g": 19,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 489,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 65.5,
+    "fat_per_100g": 22.5,
+    "fiber_per_100g": 1.9,
     "typical_portion_g": 7,
     "typical_portion_name": "1 Keks (ca. 7g)"
   },
@@ -29,97 +60,128 @@
       "name": "1 Spekulatius klein (7g)",
       "portion_g": 7,
       "calories": 34,
-      "protein": 0.4,
-      "carbs": 5,
-      "fat": 1.3,
+      "protein": 0.5,
+      "carbs": 4.6,
+      "fat": 1.6,
       "tip": "Klassischer Mini-Keks"
     },
     {
       "name": "2 Stück (14g)",
       "portion_g": 14,
       "calories": 68,
-      "protein": 0.8,
-      "carbs": 10,
-      "fat": 2.7
+      "protein": 1,
+      "carbs": 9.2,
+      "fat": 3.2
     },
     {
       "name": "1 großer Spekulatius (12g)",
       "portion_g": 12,
-      "calories": 58,
-      "protein": 0.7,
-      "carbs": 8.5,
-      "fat": 2.3
+      "calories": 59,
+      "protein": 0.8,
+      "carbs": 7.9,
+      "fat": 2.7
     },
     {
       "name": "Kleine Portion (30g)",
       "portion_g": 30,
-      "calories": 146,
-      "protein": 1.8,
-      "carbs": 21,
-      "fat": 5.7
+      "calories": 147,
+      "protein": 2.1,
+      "carbs": 19.7,
+      "fat": 6.8
     },
     {
       "name": "Handvoll (50g)",
       "portion_g": 50,
-      "calories": 243,
-      "protein": 3,
-      "carbs": 36,
-      "fat": 9.5
+      "calories": 245,
+      "protein": 3.5,
+      "carbs": 32.8,
+      "fat": 11.3
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 486,
-      "protein": 6,
-      "carbs": 71,
-      "fat": 19
+      "calories": 489,
+      "protein": 7,
+      "carbs": 65.5,
+      "fat": 22.5
     },
     {
       "name": "Mandel-Spekulatius (7g)",
       "portion_g": 7,
-      "calories": 36,
-      "protein": 0.5,
-      "carbs": 5,
-      "fat": 1.5,
-      "tip": "Etwas fettreicher durch Mandeln"
+      "calories": 35,
+      "protein": 0.6,
+      "carbs": 4.1,
+      "fat": 1.9,
+      "tip": "Etwas fettreicher durch Mandeln",
+      "basis": [
+        {
+          "g": 6
+        },
+        {
+          "fdcId": 170568,
+          "g": 1
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Butterkeks",
-      "calories": 32,
-      "emoji": "🍪"
+      "name": "Butterkeks (7g)",
+      "calories": 33,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "fdcId": 172819,
+          "g": 7
+        }
+      ]
     },
     {
       "name": "Lebkuchen",
-      "calories": 38,
-      "emoji": "🍪"
+      "calories": 107,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "lebkuchen"
+        }
+      ]
     },
     {
       "name": "Zimtschnecke",
-      "calories": 270,
-      "emoji": "🥮"
+      "calories": 372,
+      "emoji": "🥮",
+      "basis": [
+        {
+          "slug": "zimtschnecke"
+        }
+      ]
     },
     {
-      "name": "Schokolade",
-      "calories": 30,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (1 Stückchen, 5g)",
+      "calories": 27,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 5
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst genießen",
-      "text": "Ein einzelner Spekulatius hat nur etwa 34 kcal. Wer zwei bis drei Stück bewusst genießt, bleibt unter 100 kcal.",
+      "text": "Ein einzelner Spekulatius hat nur etwa 34 kcal. Wer zwei bis drei Stück bewusst genießt, kommt auf rund 70 bis 100 kcal.",
       "icon": "🍪"
     },
     {
       "title": "Vorsicht beim Knabbern",
-      "text": "Spekulatius sind klein und werden oft nebenbei gegessen. 50g, also rund 7 Kekse, liefern bereits 243 kcal.",
+      "text": "Spekulatius sind klein und werden oft nebenbei gegessen. 50g, also rund 7 Kekse, liefern bereits 245 kcal.",
       "icon": "⚠️"
     },
     {
       "title": "Viele Kohlenhydrate",
-      "text": "Mit 71g Kohlenhydraten pro 100g, davon viel Zucker, sind Spekulatius eher ein Genussmittel als ein Sattmacher.",
+      "text": "Mit 65g Kohlenhydraten pro 100g, davon viel Zucker, sind Spekulatius eher ein Genussmittel als ein Sattmacher.",
       "icon": "🍬"
     },
     {
@@ -136,19 +198,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Spekulatius?",
-      "answer": "Ein einzelner kleiner Spekulatius (ca. 7g) hat rund 34 kcal. 100g liefern etwa 486 kcal."
+      "answer": "Ein einzelner kleiner Spekulatius (ca. 7g) hat rund 34 kcal. 100g liefern etwa 489 kcal. Gerechnet aus USDA-Werten für ein Rezept mit 250g Mehl, 125g Butter, 125g braunem Zucker, 1 Ei und Spekulatiusgewürz (gebacken rund 485g)."
     },
     {
       "question": "Wie viele Kalorien haben 100g Spekulatius?",
-      "answer": "100g Spekulatius haben ca. 486 kcal, mit 71g Kohlenhydraten, 19g Fett und 6g Protein."
+      "answer": "100g Spekulatius haben ca. 489 kcal, mit 65g Kohlenhydraten, 22g Fett und 7g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Spekulatius?",
-      "answer": "Spekulatius enthalten rund 71g Kohlenhydrate pro 100g, davon einen großen Anteil Zucker. Ein Keks (7g) hat etwa 5g."
+      "answer": "Spekulatius enthalten rund 65g Kohlenhydrate pro 100g, davon einen großen Anteil Zucker. Ein Keks (7g) hat etwa 4,6g."
     },
     {
       "question": "Wie viel Protein hat Spekulatius?",
-      "answer": "Der Proteingehalt ist mit etwa 6g pro 100g gering. Spekulatius sind keine relevante Eiweißquelle."
+      "answer": "Der Proteingehalt ist mit etwa 7g pro 100g gering. Spekulatius sind keine relevante Eiweißquelle."
     },
     {
       "question": "Ist Spekulatius zum Abnehmen geeignet?",

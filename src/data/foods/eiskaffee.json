@@ -3,50 +3,309 @@
   "name": "Eiskaffee",
   "emoji": "🧊",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Glas 300 ml): 160 ml (160 g) Kaffee, kalt (FDC-ID 171890, Beverages, coffee, brewed, prepared with tap water: 1 kcal), 100 g Vanilleeis (2 Kugeln) (FDC-ID 167575, Ice creams, vanilla: 207 kcal), 30 g Schlagsahne (FDC-ID 2705598, Cream, whipped: 346 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Kaffee, kalt",
+        "g": 160,
+        "ml": 160,
+        "fdcId": 171890
+      },
+      {
+        "name": "Vanilleeis (2 Kugeln)",
+        "g": 100,
+        "fdcId": 167575
+      },
+      {
+        "name": "Schlagsahne",
+        "g": 30,
+        "fdcId": 2705598
+      }
+    ]
+  },
   "seo": {
     "title": "Eiskaffee Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Eiskaffee? Nährwerte pro Glas. Klassisch mit Eis, Cold Brew, Starbucks Frappuccino & kalorienarme Alternativen.",
-    "keywords": ["eiskaffee kalorien", "kalorien eiskaffee", "eiskaffee nährwerte", "iced coffee kalorien", "frappuccino kalorien", "eiskaffee mit vanilleeis kalorien", "cold brew kalorien", "eiskaffee starbucks kalorien"]
+    "keywords": [
+      "eiskaffee kalorien",
+      "kalorien eiskaffee",
+      "eiskaffee nährwerte",
+      "iced coffee kalorien",
+      "frappuccino kalorien",
+      "eiskaffee mit vanilleeis kalorien",
+      "cold brew kalorien",
+      "eiskaffee starbucks kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 95,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 14,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 300,
+    "calories_per_100g": 108,
+    "protein_per_100g": 1.5,
+    "carbs_per_100g": 9.1,
+    "fat_per_100g": 7.3,
+    "fiber_per_100g": 0.2,
+    "typical_portion_g": 291,
     "typical_portion_name": "1 Glas (300ml)"
   },
   "variants": [
-    { "name": "Eiskaffee klassisch mit Vanilleeis (300ml)", "portion_g": 300, "calories": 285, "protein": 7, "carbs": 35, "fat": 13 },
-    { "name": "Eiskaffee mit Sahne (300ml)", "portion_g": 300, "calories": 250, "protein": 6, "carbs": 22, "fat": 16 },
-    { "name": "Iced Coffee schwarz (300ml)", "portion_g": 300, "calories": 5, "protein": 0, "carbs": 0, "fat": 0, "tip": "Nahezu kalorienfrei" },
-    { "name": "Cold Brew schwarz (300ml)", "portion_g": 300, "calories": 5, "protein": 0, "carbs": 0, "fat": 0 },
-    { "name": "Cold Brew mit Milch (300ml)", "portion_g": 300, "calories": 50, "protein": 3, "carbs": 4, "fat": 2 },
-    { "name": "Starbucks Frappuccino Vanilla (Grande)", "portion_g": 480, "calories": 380, "protein": 5, "carbs": 65, "fat": 12 },
-    { "name": "Eiskaffee Latte (300ml)", "portion_g": 300, "calories": 130, "protein": 7, "carbs": 12, "fat": 5 },
-    { "name": "Kalorienarmer Eiskaffee (300ml)", "portion_g": 300, "calories": 40, "protein": 4, "carbs": 5, "fat": 1 }
+    {
+      "name": "Eiskaffee klassisch mit Vanilleeis (300ml)",
+      "portion_g": 291,
+      "calories": 314,
+      "protein": 4,
+      "carbs": 26,
+      "fat": 21
+    },
+    {
+      "name": "Eiskaffee mit Sahne (300ml)",
+      "portion_g": 300,
+      "calories": 214,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 17,
+      "tip": "Ohne Eis, mit Sahnehaube und Zucker",
+      "basis": [
+        {
+          "fdcId": 171890,
+          "ml": 240,
+          "g": 240
+        },
+        {
+          "fdcId": 2705598,
+          "g": 50
+        },
+        {
+          "fdcId": 169655,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Iced Coffee schwarz (300ml)",
+      "portion_g": 300,
+      "calories": 2,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "tip": "Nahezu kalorienfrei",
+      "basis": [
+        {
+          "fdcId": 171890,
+          "ml": 200,
+          "g": 200
+        },
+        {
+          "fdcId": 173647,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Cold Brew schwarz (300ml)",
+      "portion_g": 300,
+      "calories": 2,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "tip": "Gerechnet wie schwarzer Kaffee",
+      "basis": [
+        {
+          "fdcId": 171890,
+          "ml": 200,
+          "g": 200
+        },
+        {
+          "fdcId": 173647,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Cold Brew mit Milch (300ml)",
+      "portion_g": 302,
+      "calories": 34,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 171890,
+          "ml": 200,
+          "g": 200
+        },
+        {
+          "fdcId": 171265,
+          "ml": 50,
+          "g": 52
+        },
+        {
+          "fdcId": 173647,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Frappé mit Sahne (470ml)",
+      "portion_g": 493,
+      "calories": 409,
+      "protein": 8,
+      "carbs": 64,
+      "fat": 14,
+      "tip": "Gefrorener Kaffeedrink mit Sahne, Grande-Größe",
+      "basis": [
+        {
+          "fdcId": 2710401,
+          "ml": 470,
+          "g": 493
+        }
+      ]
+    },
+    {
+      "name": "Eiskaffee Latte (300ml)",
+      "portion_g": 304,
+      "calories": 82,
+      "protein": 5,
+      "carbs": 9,
+      "fat": 3,
+      "basis": [
+        {
+          "fdcId": 2710431,
+          "ml": 300,
+          "g": 304
+        }
+      ]
+    },
+    {
+      "name": "Kalorienarmer Eiskaffee (300ml)",
+      "portion_g": 302,
+      "calories": 24,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 1,
+      "tip": "Mit einem Schuss fettarmer Milch",
+      "basis": [
+        {
+          "fdcId": 171890,
+          "ml": 200,
+          "g": 200
+        },
+        {
+          "fdcId": 170872,
+          "ml": 50,
+          "g": 52
+        },
+        {
+          "fdcId": 173647,
+          "g": 50
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Cappuccino (200ml)", "calories": 80, "emoji": "☕" },
-    { "name": "Milchshake Vanille (300ml)", "calories": 339, "emoji": "🥛" },
-    { "name": "Cola (300ml)", "calories": 126, "emoji": "🥤" },
-    { "name": "Schwarzer Kaffee", "calories": 2, "emoji": "☕" }
+    {
+      "name": "Cappuccino (200ml)",
+      "calories": 55,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "cappuccino",
+          "ml": 200,
+          "g": 203
+        }
+      ]
+    },
+    {
+      "name": "Milchshake Vanille (300ml)",
+      "calories": 321,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milchshake-vanille",
+          "ml": 300,
+          "g": 284
+        }
+      ]
+    },
+    {
+      "name": "Cola (300ml)",
+      "calories": 132,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 300,
+          "g": 314
+        }
+      ]
+    },
+    {
+      "name": "Schwarzer Kaffee (200ml)",
+      "calories": 2,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffee"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Iced Coffee statt Eiskaffee", "text": "Iced Coffee (kalter Kaffee + Eis) hat 5 kcal. Deutscher Eiskaffee mit Vanilleeis hat 285 kcal. Ein riesiger Unterschied!", "icon": "🧊" },
-    { "title": "Cold Brew als Basis", "text": "Cold Brew ist sanfter und weniger bitter – perfekt als kalorienarmer Eiskaffee mit nur etwas Milch (50 kcal).", "icon": "💧" },
-    { "title": "Vanilleeis weglassen", "text": "2 Kugeln Vanilleeis im Eiskaffee sind 200 kcal. Ein Schuss Milch + Süßstoff gibt Cremigkeit ohne Kalorien.", "icon": "🍦" },
-    { "title": "Starbucks-Falle vermeiden", "text": "Ein Grande Frappuccino hat 380 kcal – so viel wie ein ganzes Mittagessen. Lieber Iced Americano (15 kcal) oder Cold Brew bestellen.", "icon": "🚫" },
-    { "title": "Protein-Eiskaffee selber mixen", "text": "Cold Brew + Proteinpulver Vanille + Eiswürfel = 130 kcal, 25g Protein. Perfekter Post-Workout-Drink.", "icon": "💪" }
+    {
+      "title": "Iced Coffee statt Eiskaffee",
+      "text": "Iced Coffee (kalter Kaffee + Eis) hat rund 2 kcal. Deutscher Eiskaffee mit Vanilleeis und Sahne hat rund 314 kcal. Ein riesiger Unterschied!",
+      "icon": "🧊"
+    },
+    {
+      "title": "Cold Brew als Basis",
+      "text": "Cold Brew ist sanfter und weniger bitter, perfekt als kalorienarmer Eiskaffee mit nur etwas Milch (rund 34 kcal).",
+      "icon": "💧"
+    },
+    {
+      "title": "Vanilleeis weglassen",
+      "text": "2 Kugeln Vanilleeis im Eiskaffee sind rund 207 kcal. Ein Schuss Milch + Süßstoff gibt Cremigkeit mit wenig Kalorien.",
+      "icon": "🍦"
+    },
+    {
+      "title": "Starbucks-Falle vermeiden",
+      "text": "Ein großer Frappé-Kaffee mit Sahne (470 ml) hat laut USDA rund 409 kcal, so viel wie ein ganzes Mittagessen. Lieber Iced Coffee schwarz oder Cold Brew bestellen.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Protein-Eiskaffee selber mixen",
+      "text": "Cold Brew + Proteinpulver Vanille + Eiswürfel ergeben einen eiweißreichen Post-Workout-Drink.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Eiskaffee?", "answer": "Das variiert extrem: Iced Coffee schwarz hat 5 kcal, klassischer Eiskaffee mit Vanilleeis 285 kcal, Starbucks Frappuccino bis 380 kcal." },
-    { "question": "Wie viele Kalorien hat ein Eiskaffee mit Vanilleeis?", "answer": "Ein klassischer deutscher Eiskaffee mit 2 Kugeln Vanilleeis und Sahne hat ca. 285 kcal. Ohne Sahne sind es ca. 220 kcal." },
-    { "question": "Was ist der kalorienärmste Eiskaffee?", "answer": "Iced Coffee oder Cold Brew schwarz: nur 5 kcal. Mit einem Schuss fettarmer Milch: ca. 25 kcal. Das sind 260 kcal weniger als die klassische Version." },
-    { "question": "Wie viele Kalorien hat ein Starbucks Frappuccino?", "answer": "Vanilla Frappuccino (Grande): 380 kcal. Caramel Frappuccino: 410 kcal. Coffee Frappuccino Light: 130 kcal. Die Kalorien kommen hauptsächlich aus Sirup und Sahne." },
-    { "question": "Cold Brew vs. Iced Coffee – was ist der Unterschied?", "answer": "Cold Brew wird 12-24h kalt extrahiert (sanfter, weniger bitter), Iced Coffee ist heißer Kaffee über Eis. Kalorisch sind beide gleich (5 kcal schwarz). Cold Brew hat etwas mehr Koffein." },
-    { "question": "Kann ich Eiskaffee beim Abnehmen trinken?", "answer": "Iced Coffee schwarz oder Cold Brew: absolut (5 kcal). Klassischer Eiskaffee mit Eis: als Dessert einplanen (285 kcal). Frappuccinos: lieber meiden (380+ kcal)." }
+    {
+      "question": "Wie viele Kalorien hat ein Eiskaffee?",
+      "answer": "Das variiert extrem: Iced Coffee schwarz hat rund 2 kcal, klassischer Eiskaffee mit Vanilleeis und Sahne rund 314 kcal, ein großer Frappé mit Sahne rund 409 kcal. Gerechnet aus USDA-Werten für 160 ml Kaffee, 2 Kugeln Vanilleeis (100 g) und 30 g Schlagsahne."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Eiskaffee mit Vanilleeis?",
+      "answer": "Ein klassischer deutscher Eiskaffee mit 2 Kugeln Vanilleeis und Sahne hat ca. 314 kcal. Ohne Sahne sind es ca. 210 kcal."
+    },
+    {
+      "question": "Was ist der kalorienärmste Eiskaffee?",
+      "answer": "Iced Coffee oder Cold Brew schwarz: nur rund 2 kcal. Mit einem Schuss fettarmer Milch: ca. 24 kcal. Das sind rund 290 kcal weniger als die klassische Version."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Starbucks Frappuccino?",
+      "answer": "Ein großer gefrorener Kaffeedrink mit Sahne (470 ml), wie ein Frappuccino, hat laut USDA rund 409 kcal. Die Kalorien kommen hauptsächlich aus Sirup und Sahne."
+    },
+    {
+      "question": "Cold Brew vs. Iced Coffee: Was ist der Unterschied?",
+      "answer": "Cold Brew wird 12-24h kalt extrahiert (sanfter, weniger bitter), Iced Coffee ist heißer Kaffee über Eis. Kalorisch sind beide gleich (rund 2 kcal schwarz). Cold Brew hat etwas mehr Koffein."
+    },
+    {
+      "question": "Kann ich Eiskaffee beim Abnehmen trinken?",
+      "answer": "Iced Coffee schwarz oder Cold Brew: absolut (rund 2 kcal). Klassischer Eiskaffee mit Eis: als Dessert einplanen (314 kcal). Frappés: lieber meiden (rund 409 kcal)."
+    }
   ],
-  "related_foods": ["cappuccino", "latte-macchiato", "milchshake-vanille", "eistee"]
+  "related_foods": [
+    "cappuccino",
+    "latte-macchiato",
+    "milchshake-vanille",
+    "eistee"
+  ]
 }

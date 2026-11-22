@@ -3,9 +3,61 @@
   "name": "Panettone",
   "emoji": "🍞",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Panettone, gebacken ca. 1180 g): 500 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 150 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 120 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 165 g Eier (3 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 51 g Eigelb (3 Stück) (FDC-ID 172184, Egg, yolk, raw, fresh: 322 kcal), 100 ml (103 g) Milch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 25 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 120 g Sultaninen (FDC-ID 168164, Raisins, golden, seedless: 301 kcal), 100 g Orangeat und Zitronat (kandierte Früchte) (FDC-ID 167781, Candied fruit: 322 kcal); 1334 g Zutaten ergeben 1180 g (Backverlust rund 12 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl",
+        "g": 500,
+        "fdcId": 169761
+      },
+      {
+        "name": "Butter",
+        "g": 150,
+        "fdcId": 173430
+      },
+      {
+        "name": "Zucker",
+        "g": 120,
+        "fdcId": 169655
+      },
+      {
+        "name": "Eier (3 Stück)",
+        "g": 165,
+        "fdcId": 171287
+      },
+      {
+        "name": "Eigelb (3 Stück)",
+        "g": 51,
+        "fdcId": 172184
+      },
+      {
+        "name": "Milch",
+        "g": 103,
+        "ml": 100,
+        "fdcId": 171265
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 25,
+        "fdcId": 175042
+      },
+      {
+        "name": "Sultaninen",
+        "g": 120,
+        "fdcId": 168164
+      },
+      {
+        "name": "Orangeat und Zitronat (kandierte Früchte)",
+        "g": 100,
+        "fdcId": 167781
+      }
+    ],
+    "gewicht_g": 1180
+  },
   "seo": {
     "title": "Panettone Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Panettone? Pro 100g rund 367 kcal, eine Scheibe (80g) ca. 294 kcal. Nährwerte, Portionen im Vergleich und Tipps zum Genießen.",
+    "description": "Wie viele Kalorien hat Panettone? Pro 100g rund 384 kcal, eine Scheibe (80g) ca. 307 kcal. Nährwerte, Portionen im Vergleich und Tipps zum Genießen.",
     "keywords": [
       "panettone kcal",
       "panettone kalorien",
@@ -17,11 +69,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 367,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 56,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 384,
+    "protein_per_100g": 7.7,
+    "carbs_per_100g": 58.7,
+    "fat_per_100g": 13.6,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Scheibe (80g)"
   },
@@ -29,98 +81,122 @@
     {
       "name": "Panettone dünne Scheibe (50g)",
       "portion_g": 50,
-      "calories": 184,
+      "calories": 192,
       "protein": 4,
-      "carbs": 28,
-      "fat": 6
+      "carbs": 29,
+      "fat": 7
     },
     {
       "name": "Panettone Scheibe (80g)",
       "portion_g": 80,
-      "calories": 294,
+      "calories": 307,
       "protein": 6,
-      "carbs": 45,
-      "fat": 10,
+      "carbs": 47,
+      "fat": 11,
       "tip": "Übliche Portion"
     },
     {
       "name": "Panettone dicke Scheibe (100g)",
       "portion_g": 100,
-      "calories": 367,
+      "calories": 384,
       "protein": 8,
-      "carbs": 56,
-      "fat": 13
+      "carbs": 59,
+      "fat": 14
     },
     {
       "name": "Panettone große Portion (150g)",
       "portion_g": 150,
-      "calories": 550,
+      "calories": 576,
       "protein": 12,
-      "carbs": 84,
+      "carbs": 88,
       "fat": 20
     },
     {
       "name": "Panettone Viertel (250g)",
       "portion_g": 250,
-      "calories": 918,
-      "protein": 20,
-      "carbs": 140,
-      "fat": 32
+      "calories": 960,
+      "protein": 19,
+      "carbs": 147,
+      "fat": 34
     },
     {
       "name": "Panettone klein ganz (500g)",
       "portion_g": 500,
-      "calories": 1835,
-      "protein": 40,
-      "carbs": 280,
-      "fat": 65
+      "calories": 1920,
+      "protein": 39,
+      "carbs": 294,
+      "fat": 68
     },
     {
       "name": "Panettone ganz (1000g)",
       "portion_g": 1000,
-      "calories": 3670,
-      "protein": 80,
-      "carbs": 560,
-      "fat": 130,
+      "calories": 3840,
+      "protein": 77,
+      "carbs": 587,
+      "fat": 136,
       "tip": "Klassische Familiengröße"
     }
   ],
   "comparison": [
     {
-      "name": "Stollen",
-      "calories": 318,
-      "emoji": "🍰"
+      "name": "Stollen (100g)",
+      "calories": 414,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "stollen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Croissant",
-      "calories": 318,
-      "emoji": "🥐"
+      "name": "Croissant (100g)",
+      "calories": 406,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Brioche",
-      "calories": 268,
-      "emoji": "🍞"
+      "name": "Brioche (100g)",
+      "calories": 427,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "brioche",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Lebkuchen",
-      "calories": 308,
-      "emoji": "🍪"
+      "name": "Lebkuchen (100g)",
+      "calories": 356,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "lebkuchen",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Dünne Scheiben helfen beim Portionieren",
-      "text": "Panettone ist mit rund 367 kcal pro 100g recht gehaltvoll. Eine dünne Scheibe von 50g bringt nur etwa 184 kcal und lässt sich gut in den Tag einplanen.",
+      "text": "Panettone ist mit rund 384 kcal pro 100g recht gehaltvoll. Eine dünne Scheibe von 50g bringt nur etwa 192 kcal und lässt sich gut in den Tag einplanen.",
       "icon": "🔪"
     },
     {
       "title": "Bewusst zum Kaffee genießen",
-      "text": "Eine klassische Scheibe (80g) liefert ca. 294 kcal. Als bewusster Genuss zum Espresso oder Cappuccino ist das eine überschaubare Menge.",
+      "text": "Eine klassische Scheibe (80g) liefert ca. 307 kcal. Als bewusster Genuss zum Espresso oder Cappuccino ist das eine überschaubare Menge.",
       "icon": "☕"
     },
     {
       "title": "Reich an Kohlenhydraten und Fett",
-      "text": "Mit 56g Kohlenhydraten und 13g Fett pro 100g ist Panettone eher energiedicht. Wer auf die Kalorien achtet, kombiniert ihn am besten mit ungesüßtem Tee statt mit zusätzlichen süßen Beilagen.",
+      "text": "Mit 59g Kohlenhydraten und 14g Fett pro 100g ist Panettone eher energiedicht. Wer auf die Kalorien achtet, kombiniert ihn am besten mit ungesüßtem Tee statt mit zusätzlichen süßen Beilagen.",
       "icon": "🍬"
     },
     {
@@ -137,15 +213,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Panettone?",
-      "answer": "Panettone hat rund 367 kcal pro 100g. Eine übliche Scheibe von 80g liefert etwa 294 kcal."
+      "answer": "Panettone hat rund 384 kcal pro 100g. Eine übliche Scheibe von 80g liefert etwa 307 kcal. Gerechnet aus USDA-Werten für einen Panettone aus 500g Mehl, 150g Butter, 120g Zucker, 3 Eiern und 3 Eigelb, Milch, Hefe, 120g Sultaninen und 100g kandierten Früchten (gebacken rund 1180g)."
     },
     {
       "question": "Wie viele Kalorien hat eine Scheibe Panettone?",
-      "answer": "Eine klassische Scheibe von 80g hat ca. 294 kcal. Eine dünne Scheibe von 50g kommt auf etwa 184 kcal, eine dicke Scheibe von 100g auf rund 367 kcal."
+      "answer": "Eine klassische Scheibe von 80g hat ca. 307 kcal. Eine dünne Scheibe von 50g kommt auf etwa 192 kcal, eine dicke Scheibe von 100g auf rund 384 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Panettone?",
-      "answer": "Panettone enthält etwa 56g Kohlenhydrate pro 100g, darunter ein hoher Anteil Zucker aus Teig, Rosinen und kandierten Früchten."
+      "answer": "Panettone enthält etwa 59g Kohlenhydrate pro 100g, darunter ein hoher Anteil Zucker aus Teig, Rosinen und kandierten Früchten."
     },
     {
       "question": "Wie viel Protein steckt in Panettone?",
@@ -153,7 +229,7 @@
     },
     {
       "question": "Ist Panettone zum Abnehmen geeignet?",
-      "answer": "Panettone ist mit rund 367 kcal pro 100g energiedicht und damit kein klassisches Diät-Lebensmittel. In kleinen Portionen lässt er sich aber gut in eine bewusste Ernährung einplanen."
+      "answer": "Panettone ist mit rund 384 kcal pro 100g energiedicht und damit kein klassisches Diät-Lebensmittel. In kleinen Portionen lässt er sich aber gut in eine bewusste Ernährung einplanen."
     },
     {
       "question": "Ist Panettone gesund?",

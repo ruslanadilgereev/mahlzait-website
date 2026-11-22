@@ -3,49 +3,274 @@
   "name": "Risotto",
   "emoji": "🍚",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Teller à ca. 350 g): 1050 g Risottoreis gekocht (in Brühe gegart) (FDC-ID 168880, Rice, white, medium-grain, enriched, cooked: 130 kcal), 80 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 40 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 60 g Parmesan (FDC-ID 170848, Cheese, parmesan, hard: 392 kcal), 10 g Olivenöl (FDC-ID 171413, Oil, olive, salad or cooking: 884 kcal), 150 g Gemüsebrühe (cremige Flüssigkeit) (FDC-ID 171583, Soup, vegetable broth, ready to serve: 5 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Risottoreis gekocht (in Brühe gegart)",
+        "g": 1050,
+        "fdcId": 168880
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 80,
+        "fdcId": 170000
+      },
+      {
+        "name": "Butter",
+        "g": 40,
+        "fdcId": 173430
+      },
+      {
+        "name": "Parmesan",
+        "g": 60,
+        "fdcId": 170848
+      },
+      {
+        "name": "Olivenöl",
+        "g": 10,
+        "fdcId": 171413
+      },
+      {
+        "name": "Gemüsebrühe (cremige Flüssigkeit)",
+        "g": 150,
+        "fdcId": 171583
+      }
+    ]
+  },
   "seo": {
     "title": "Risotto Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Risotto? Nährwerte für alle Varianten von Pilzrisotto bis Risotto Milanese. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat Risotto? Ein Teller (350g) hat ca. 508 kcal. Nährwerte für alle Varianten von Pilzrisotto bis Risotto mit Garnelen. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 140,
+    "calories_per_100g": 145,
     "protein_per_100g": 3.5,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 5,
-    "fiber_per_100g": 0.5,
+    "carbs_per_100g": 22.4,
+    "fat_per_100g": 4.3,
+    "fiber_per_100g": 0.3,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    {"name": "Risotto Milanese (Safran)", "portion_g": 350, "calories": 490, "protein": 12, "carbs": 70, "fat": 18, "tip": "Klassiker aus Mailand"},
-    {"name": "Pilzrisotto", "portion_g": 350, "calories": 455, "protein": 11, "carbs": 68, "fat": 15, "tip": "Beliebte Variante"},
-    {"name": "Risotto mit Meeresfrüchten", "portion_g": 350, "calories": 420, "protein": 20, "carbs": 65, "fat": 10, "tip": "Proteinreich"},
-    {"name": "Risotto mit Spargel", "portion_g": 350, "calories": 410, "protein": 10, "carbs": 66, "fat": 12, "tip": "Leichtere Variante"},
-    {"name": "Risotto mit Parmesan & Butter", "portion_g": 350, "calories": 540, "protein": 14, "carbs": 68, "fat": 24},
-    {"name": "Kürbisrisotto", "portion_g": 350, "calories": 430, "protein": 10, "carbs": 72, "fat": 12, "tip": "Herbst-Favorit"},
-    {"name": "Risotto mit Hähnchen", "portion_g": 400, "calories": 520, "protein": 26, "carbs": 68, "fat": 16},
-    {"name": "Risotto light (wenig Butter)", "portion_g": 350, "calories": 385, "protein": 10, "carbs": 68, "fat": 8, "tip": "Ideal zum Abnehmen"}
+    {
+      "name": "Risotto Milanese (Safran)",
+      "portion_g": 350,
+      "calories": 508,
+      "protein": 12,
+      "carbs": 78,
+      "fat": 15,
+      "tip": "Klassiker aus Mailand"
+    },
+    {
+      "name": "Pilzrisotto (300g + 50g Pilze)",
+      "portion_g": 350,
+      "calories": 448,
+      "protein": 12,
+      "carbs": 69,
+      "fat": 13,
+      "tip": "Beliebte Variante",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 169253,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Risotto mit Meeresfrüchten (280g + 70g Garnelen)",
+      "portion_g": 350,
+      "calories": 475,
+      "protein": 27,
+      "carbs": 63,
+      "fat": 12,
+      "tip": "Proteinreich",
+      "basis": [
+        {
+          "g": 280
+        },
+        {
+          "fdcId": 175180,
+          "g": 70
+        }
+      ]
+    },
+    {
+      "name": "Risotto mit Spargel (300g + 50g Spargel)",
+      "portion_g": 350,
+      "calories": 446,
+      "protein": 12,
+      "carbs": 69,
+      "fat": 13,
+      "tip": "Leichtere Variante",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 168390,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Risotto mit extra Parmesan & Butter (330g + je 10g)",
+      "portion_g": 350,
+      "calories": 589,
+      "protein": 15,
+      "carbs": 74,
+      "fat": 25,
+      "basis": [
+        {
+          "g": 330
+        },
+        {
+          "fdcId": 170848,
+          "g": 10
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Kürbisrisotto (280g + 70g Kürbis)",
+      "portion_g": 350,
+      "calories": 420,
+      "protein": 10,
+      "carbs": 66,
+      "fat": 12,
+      "tip": "Herbst-Favorit",
+      "basis": [
+        {
+          "g": 280
+        },
+        {
+          "fdcId": 168449,
+          "g": 70
+        }
+      ]
+    },
+    {
+      "name": "Risotto mit Hähnchen (300g + 100g)",
+      "portion_g": 400,
+      "calories": 600,
+      "protein": 42,
+      "carbs": 67,
+      "fat": 16,
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 171477,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"},
-    {"name": "Gebratener Reis", "calories": 460, "emoji": "🍳"},
-    {"name": "Kartoffelpüree", "calories": 310, "emoji": "🥔"},
-    {"name": "Couscous-Salat", "calories": 350, "emoji": "🥗"}
+    {
+      "name": "Spaghetti Bolognese",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese"
+        }
+      ]
+    },
+    {
+      "name": "Gebratener Reis",
+      "calories": 609,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "fried-rice"
+        }
+      ]
+    },
+    {
+      "name": "Kartoffelpüree",
+      "calories": 283,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "stampfkartoffeln"
+        }
+      ]
+    },
+    {
+      "name": "Paella",
+      "calories": 676,
+      "emoji": "🥘",
+      "basis": [
+        {
+          "slug": "paella"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Butter reduzieren", "text": "Klassisches Risotto wird mit viel Butter verfeinert. Halbiere die Butter und spare 80-100 kcal pro Portion.", "icon": "🧈"},
-    {"title": "Gemüse-Risotto wählen", "text": "Spargel-, Kürbis- oder Pilzrisotto sind kalorienärmer als Varianten mit viel Käse.", "icon": "🥦"},
-    {"title": "Portionsgröße beachten", "text": "Ein Restaurant-Teller hat oft 400-500g. Zu Hause reichen 300-350g als Hauptgericht.", "icon": "⚖️"},
-    {"title": "Parmesan dosieren", "text": "Parmesan ist geschmacksintensiv – 15g reichen für vollen Geschmack bei nur 60 kcal.", "icon": "🧀"},
-    {"title": "Brühe statt Sahne", "text": "Verwende hochwertige Brühe für Cremigkeit statt Sahne – spart 100+ kcal.", "icon": "🍲"}
+    {
+      "title": "Butter reduzieren",
+      "text": "Klassisches Risotto wird mit viel Butter verfeinert. Halbiere die Butter und spare rund 36 kcal pro Portion.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Gemüse-Risotto wählen",
+      "text": "Spargel-, Kürbis- oder Pilzrisotto sind kalorienärmer als Varianten mit viel Käse.",
+      "icon": "🥦"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Ein Restaurant-Teller hat oft 400 bis 500g. Zu Hause reichen 300 bis 350g als Hauptgericht.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Parmesan dosieren",
+      "text": "Parmesan ist geschmacksintensiv, 15g reichen für vollen Geschmack bei rund 59 kcal.",
+      "icon": "🧀"
+    },
+    {
+      "title": "Brühe statt Sahne",
+      "text": "Verwende hochwertige Brühe für Cremigkeit statt Sahne, das spart viele Kalorien.",
+      "icon": "🍲"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Risotto?", "answer": "Ein Teller Risotto (350g) hat ca. 450-540 kcal, je nach Variante. Pilzrisotto liegt bei ca. 455 kcal, Risotto Milanese bei ca. 490 kcal."},
-    {"question": "Ist Risotto kalorienreich?", "answer": "Risotto hat ca. 140 kcal pro 100g – vergleichbar mit Pasta. Die Kalorien kommen hauptsächlich vom Reis, Butter und Parmesan."},
-    {"question": "Welches Risotto hat am wenigsten Kalorien?", "answer": "Gemüse-Risotto ohne Sahne (Spargel, Zucchini) mit wenig Butter hat ca. 385-410 kcal pro Portion – am kalorienärmsten."},
-    {"question": "Wie viel Protein hat Risotto?", "answer": "Ein normaler Teller Risotto liefert 10-14g Protein. Mit Meeresfrüchten oder Hähnchen steigt der Wert auf 20-26g."},
-    {"question": "Kann man Risotto beim Abnehmen essen?", "answer": "Ja, in moderater Portion (300g) mit viel Gemüse und wenig Butter. Ein leichtes Risotto hat dann ca. 385 kcal."},
-    {"question": "Was hat mehr Kalorien: Risotto oder Pasta?", "answer": "Ähnlich viel. Risotto hat durch Butter/Parmesan oft 450-540 kcal pro Teller, Spaghetti Bolognese ca. 528 kcal."}
+    {
+      "question": "Wie viele Kalorien hat Risotto?",
+      "answer": "Ein Teller Risotto (350g) hat ca. 508 kcal. Je nach Variante liegt er zwischen rund 420 kcal (Kürbis) und 589 kcal (extra Parmesan und Butter). Gerechnet aus USDA-Werten für 1050g gegarten Risottoreis, 80g Zwiebeln, 40g Butter, 60g Parmesan, 10g Olivenöl und etwas Brühe für 4 Teller."
+    },
+    {
+      "question": "Ist Risotto kalorienreich?",
+      "answer": "Risotto hat ca. 145 kcal pro 100g, vergleichbar mit Pasta. Die Kalorien kommen hauptsächlich vom Reis, Butter und Parmesan."
+    },
+    {
+      "question": "Welches Risotto hat am wenigsten Kalorien?",
+      "answer": "Kürbis-, Spargel- oder Pilzrisotto liegen mit rund 420 bis 448 kcal pro Teller (350g) am niedrigsten."
+    },
+    {
+      "question": "Wie viel Protein hat Risotto?",
+      "answer": "Ein normaler Teller Risotto liefert rund 12g Protein. Mit Garnelen oder Hähnchen steigt der Wert auf rund 27 bis 42g."
+    },
+    {
+      "question": "Kann man Risotto beim Abnehmen essen?",
+      "answer": "Ja, in moderater Portion (300g) mit viel Gemüse und wenig Butter. 300g Risotto haben rund 435 kcal, mit Gemüse statt eines Teils des Reises weniger."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Risotto oder Pasta?",
+      "answer": "Ähnlich viel. Risotto hat rund 508 kcal pro Teller (350g), Spaghetti Bolognese rund 500 kcal (400g)."
+    }
   ],
-  "related_foods": ["spaghetti-bolognese", "fried-rice", "gnocchi", "paella"]
+  "related_foods": [
+    "spaghetti-bolognese",
+    "fried-rice",
+    "gnocchi",
+    "paella"
+  ]
 }

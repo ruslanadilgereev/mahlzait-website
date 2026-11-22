@@ -3,47 +3,293 @@
   "name": "Germknödel",
   "emoji": "🥟",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Germknödel à 200 g): 78 g Weizenmehl Type 405 (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 40 g Vollmilch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 8 g Butter für den Teig (FDC-ID 173430, Butter, without salt: 717 kcal), 8 g Zucker für den Teig (FDC-ID 169655, Sugars, granulated: 387 kcal), 8 g Ei (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 3 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 30 g Powidl (Pflaumenmus) (FDC-ID 167780, Prune puree: 257 kcal), 10 g Butter, zerlassen (FDC-ID 173430, Butter, without salt: 717 kcal), 10 g Mohn, gemahlen (FDC-ID 171330, Spices, poppy seed: 525 kcal), 5 g Puderzucker (FDC-ID 169656, Sugars, powdered: 389 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl Type 405",
+        "g": 78,
+        "fdcId": 169761
+      },
+      {
+        "name": "Vollmilch",
+        "g": 40,
+        "fdcId": 171265
+      },
+      {
+        "name": "Butter für den Teig",
+        "g": 8,
+        "fdcId": 173430
+      },
+      {
+        "name": "Zucker für den Teig",
+        "g": 8,
+        "fdcId": 169655
+      },
+      {
+        "name": "Ei",
+        "g": 8,
+        "fdcId": 171287
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 3,
+        "fdcId": 175042
+      },
+      {
+        "name": "Powidl (Pflaumenmus)",
+        "g": 30,
+        "fdcId": 167780
+      },
+      {
+        "name": "Butter, zerlassen",
+        "g": 10,
+        "fdcId": 173430
+      },
+      {
+        "name": "Mohn, gemahlen",
+        "g": 10,
+        "fdcId": 171330
+      },
+      {
+        "name": "Puderzucker",
+        "g": 5,
+        "fdcId": 169656
+      }
+    ]
+  },
   "seo": {
     "title": "Germknödel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Germknödel? Nährwerte mit Vanillesauce, Butter & Mohn. Kalorienärmere Varianten und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 42,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 316,
+    "protein_per_100g": 6.6,
+    "carbs_per_100g": 48.7,
+    "fat_per_100g": 10.8,
+    "fiber_per_100g": 2.6,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Germknödel"
   },
   "variants": [
-    {"name": "Germknödel mit Powidl (Pflaumenmus)", "portion_g": 200, "calories": 580, "protein": 14, "carbs": 84, "fat": 20, "tip": "Klassisch mit Mohn und Butter"},
-    {"name": "Germknödel mit Vanillesauce", "portion_g": 300, "calories": 710, "protein": 16, "carbs": 100, "fat": 26, "tip": "Beliebte Skihütten-Variante"},
-    {"name": "Germknödel pur (ohne Beilage)", "portion_g": 180, "calories": 522, "protein": 13, "carbs": 76, "fat": 18, "tip": "Nur mit Mohn und Butter"},
-    {"name": "Germknödel mit Mohn und Zucker", "portion_g": 220, "calories": 610, "protein": 16, "carbs": 86, "fat": 22, "tip": "Traditionell bestreut"},
-    {"name": "Mini-Germknödel", "portion_g": 100, "calories": 290, "protein": 7, "carbs": 42, "fat": 10, "tip": "Halbe Portion"},
-    {"name": "Germknödel mit Aprikosenmarmelade", "portion_g": 200, "calories": 570, "protein": 13, "carbs": 82, "fat": 19, "tip": "Fruchtigere Füllung"}
+    {
+      "name": "Germknödel mit Powidl (Pflaumenmus)",
+      "portion_g": 200,
+      "calories": 632,
+      "protein": 13,
+      "carbs": 97,
+      "fat": 22,
+      "tip": "Klassisch mit Mohn und Butter"
+    },
+    {
+      "name": "Germknödel mit Vanillesauce",
+      "portion_g": 300,
+      "calories": 729,
+      "protein": 18,
+      "carbs": 108,
+      "fat": 25,
+      "tip": "Beliebte Skihütten-Variante",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 2705682,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Germknödel pur (ohne Beilage)",
+      "portion_g": 180,
+      "calories": 569,
+      "protein": 12,
+      "carbs": 88,
+      "fat": 19,
+      "tip": "Nur mit Mohn und Butter"
+    },
+    {
+      "name": "Germknödel mit Mohn und Zucker",
+      "portion_g": 220,
+      "calories": 723,
+      "protein": 15,
+      "carbs": 110,
+      "fat": 26,
+      "tip": "Extra Mohn-Zucker obendrauf",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 171330,
+          "g": 10
+        },
+        {
+          "fdcId": 169656,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Mini-Germknödel",
+      "portion_g": 100,
+      "calories": 316,
+      "protein": 7,
+      "carbs": 49,
+      "fat": 11,
+      "tip": "Halbe Portion"
+    },
+    {
+      "name": "Germknödel mit Aprikosenmarmelade",
+      "portion_g": 200,
+      "calories": 627,
+      "protein": 13,
+      "carbs": 97,
+      "fat": 22,
+      "tip": "Fruchtigere Füllung",
+      "basis": [
+        {
+          "fdcId": 169761,
+          "g": 78
+        },
+        {
+          "fdcId": 171265,
+          "g": 40
+        },
+        {
+          "fdcId": 173430,
+          "g": 8
+        },
+        {
+          "fdcId": 169655,
+          "g": 8
+        },
+        {
+          "fdcId": 171287,
+          "g": 8
+        },
+        {
+          "fdcId": 175042,
+          "g": 3
+        },
+        {
+          "fdcId": 170645,
+          "g": 30
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        },
+        {
+          "fdcId": 171330,
+          "g": 10
+        },
+        {
+          "fdcId": 169656,
+          "g": 5
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Dampfnudeln", "calories": 250, "emoji": "🍞"},
-    {"name": "Hefeklöße", "calories": 215, "emoji": "🫓"},
-    {"name": "Kaiserschmarrn", "calories": 230, "emoji": "🥞"},
-    {"name": "Apfelstrudel", "calories": 215, "emoji": "🍏"}
+    {
+      "name": "Dampfnudeln (2 Stück, 200g)",
+      "calories": 604,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "dampfnudeln"
+        }
+      ]
+    },
+    {
+      "name": "Hefeklöße (2 Stück, 200g)",
+      "calories": 564,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "hefekloesse"
+        }
+      ]
+    },
+    {
+      "name": "Kaiserschmarrn (1 Portion, 300g)",
+      "calories": 792,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "slug": "kaiserschmarrn"
+        }
+      ]
+    },
+    {
+      "name": "Apfelstrudel (1 Stück, 200g)",
+      "calories": 548,
+      "emoji": "🍏",
+      "basis": [
+        {
+          "slug": "apfelstrudel"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Weniger Butter oben drauf", "text": "Der Butterklecks oben hat allein ca. 75 kcal (10g). Halbiere die Buttermenge und spare 37 kcal.", "icon": "🧈"},
-    {"title": "Vanillesauce weglassen", "text": "Ohne Vanillesauce sparst du ca. 130 kcal. Der Germknödel schmeckt auch nur mit Mohn und wenig Butter.", "icon": "💡"},
-    {"title": "Auf der Hütte teilen", "text": "Ein Germknödel auf der Skihütte ist riesig. Teile ihn zu zweit – jeder bekommt ca. 290-350 kcal.", "icon": "🤝"},
-    {"title": "Als Hauptmahlzeit einplanen", "text": "Mit 580+ kcal ist ein Germknödel eine vollwertige Mahlzeit. Plane ihn als Hauptgericht, nicht als Nachspeise.", "icon": "🍽️"},
-    {"title": "Mohn statt Butter betonen", "text": "Mehr Mohn, weniger Butter – Mohn hat zwar auch Kalorien, liefert aber wertvolles Calcium und Eisen.", "icon": "🌿"}
+    {
+      "title": "Weniger Butter oben drauf",
+      "text": "Der Butterklecks oben hat allein ca. 72 kcal (10g). Halbiere die Buttermenge und spare 36 kcal.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Vanillesauce weglassen",
+      "text": "Ohne Vanillesauce sparst du ca. 97 kcal. Der Germknödel schmeckt auch nur mit Mohn und wenig Butter.",
+      "icon": "💡"
+    },
+    {
+      "title": "Auf der Hütte teilen",
+      "text": "Ein Germknödel auf der Skihütte ist riesig. Teile ihn zu zweit, jeder bekommt rund 316 kcal.",
+      "icon": "🤝"
+    },
+    {
+      "title": "Als Hauptmahlzeit einplanen",
+      "text": "Mit rund 632 kcal ist ein Germknödel eine vollwertige Mahlzeit. Plane ihn als Hauptgericht, nicht als Nachspeise.",
+      "icon": "🍽️"
+    },
+    {
+      "title": "Mohn statt Butter betonen",
+      "text": "Mehr Mohn, weniger Butter: Mohn hat zwar auch Kalorien, liefert aber wertvolles Calcium und Eisen.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Germknödel?", "answer": "Ein Germknödel (200g) mit Powidl-Füllung, Mohn und Butter hat ca. 580 kcal. Mit Vanillesauce steigt der Wert auf ca. 710 kcal."},
-    {"question": "Ist ein Germknödel eine Kalorienbombe?", "answer": "Ja – ein einzelner Germknödel mit Beilagen kann bis zu 710 kcal haben. Das entspricht ca. 30-35% des Tagesbedarfs."},
-    {"question": "Was hat weniger Kalorien: Germknödel oder Kaiserschmarrn?", "answer": "Pro 100g hat Kaiserschmarrn (230 kcal) weniger als ein Germknödel (290 kcal). Allerdings sind die Portionen bei Kaiserschmarrn oft größer."},
-    {"question": "Wie viel Zucker hat ein Germknödel?", "answer": "Ein Germknödel enthält ca. 25-30g Zucker – aus dem Teig, der Powidl-Füllung und dem Mohn-Zucker-Gemisch oben drauf."},
-    {"question": "Kann man Germknödel kalorienärmer machen?", "answer": "Ja: Weniger Butter, Vanillesauce weglassen, halbe Portion oder die Marmeladenfüllung mit weniger Zucker zubereiten. So sparst du bis zu 200 kcal."},
-    {"question": "Woher kommt der Germknödel?", "answer": "Der Germknödel kommt aus der österreichischen und bayerischen Küche. 'Germ' ist österreichisch für Hefe. Er ist besonders auf Skihütten und Almen beliebt."}
+    {
+      "question": "Wie viele Kalorien hat ein Germknödel?",
+      "answer": "Ein Germknödel (200g) mit Powidl-Füllung, Mohn und Butter hat ca. 632 kcal. Mit Vanillesauce steigt der Wert auf ca. 729 kcal. Gerechnet aus USDA-Werten für einen Knödel aus 145 g Hefeteig (Mehl, Milch, Butter, Zucker, Ei, Hefe), 30 g Pflaumenmus, 10 g Butter, 10 g Mohn und 5 g Puderzucker."
+    },
+    {
+      "question": "Ist ein Germknödel eine Kalorienbombe?",
+      "answer": "Ja, ein einzelner Germknödel mit Beilagen kann bis zu 729 kcal haben. Das entspricht ca. 30-35% des Tagesbedarfs."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Germknödel oder Kaiserschmarrn?",
+      "answer": "Ein Germknödel hat rund 316 kcal pro 100g. Bei Kaiserschmarrn sind die Portionen oft größer, daher kommt es vor allem auf die Menge an."
+    },
+    {
+      "question": "Wie viel Zucker hat ein Germknödel?",
+      "answer": "Ein Germknödel enthält ca. 27g Zucker, aus dem Teig, der Powidl-Füllung und dem Mohn-Zucker-Gemisch oben drauf."
+    },
+    {
+      "question": "Kann man Germknödel kalorienärmer machen?",
+      "answer": "Ja: Weniger Butter, Vanillesauce weglassen, halbe Portion oder die Marmeladenfüllung mit weniger Zucker zubereiten. So sparst du spürbar Kalorien."
+    },
+    {
+      "question": "Woher kommt der Germknödel?",
+      "answer": "Der Germknödel kommt aus der österreichischen und bayerischen Küche. 'Germ' ist österreichisch für Hefe. Er ist besonders auf Skihütten und Almen beliebt."
+    }
   ],
-  "related_foods": ["dampfnudeln", "hefekloesse", "kaiserschmarrn", "apfelstrudel"]
+  "related_foods": [
+    "dampfnudeln",
+    "hefekloesse",
+    "kaiserschmarrn",
+    "apfelstrudel"
+  ]
 }

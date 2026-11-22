@@ -3,9 +3,45 @@
   "name": "Kroketten",
   "emoji": "🥔",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (ca. 20 Kroketten à 25 g (500 g, frittiert)): 400 g Kartoffeln, gekocht (FDC-ID 170440, Potatoes, boiled, cooked without skin, flesh, without salt: 86 kcal), 17 g Eigelb (FDC-ID 172184, Egg, yolk, raw, fresh: 322 kcal), 20 g Speisestärke (FDC-ID 169698, Cornstarch: 381 kcal), 30 g Paniermehl (Panade) (FDC-ID 174928, Bread, crumbs, dry, grated, plain: 395 kcal), 25 g Ei (Panade) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 40 g Rapsöl (beim Frittieren aufgenommen) (FDC-ID 172336, Oil, canola: 884 kcal); 532 g Zutaten ergeben 500 g (beim Frittieren verdampft Wasser (rund 6 %, Annahme); das aufgenommene Öl ist als Zutat eingerechnet); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Kartoffeln, gekocht",
+        "g": 400,
+        "fdcId": 170440
+      },
+      {
+        "name": "Eigelb",
+        "g": 17,
+        "fdcId": 172184
+      },
+      {
+        "name": "Speisestärke",
+        "g": 20,
+        "fdcId": 169698
+      },
+      {
+        "name": "Paniermehl (Panade)",
+        "g": 30,
+        "fdcId": 174928
+      },
+      {
+        "name": "Ei (Panade)",
+        "g": 25,
+        "fdcId": 171287
+      },
+      {
+        "name": "Rapsöl (beim Frittieren aufgenommen)",
+        "g": 40,
+        "fdcId": 172336
+      }
+    ],
+    "gewicht_g": 500
+  },
   "seo": {
     "title": "Kroketten Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Kroketten? Frittierte Kroketten haben ca. 215 kcal pro 100g. Nährwerte pro Stück & Portion plus Vergleich und Tipps.",
+    "description": "Wie viele Kalorien haben Kroketten? Frittierte Kroketten haben ca. 197 kcal pro 100g. Nährwerte pro Stück & Portion plus Vergleich und Tipps.",
     "keywords": [
       "kalorien kroketten",
       "kroketten kalorien",
@@ -16,11 +52,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 215,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 197,
+    "protein_per_100g": 3.3,
+    "carbs_per_100g": 24.1,
+    "fat_per_100g": 9.8,
+    "fiber_per_100g": 1.7,
     "typical_portion_g": 125,
     "typical_portion_name": "1 Portion (5 Stück)"
   },
@@ -28,94 +64,100 @@
     {
       "name": "1 Krokette (25g)",
       "portion_g": 25,
-      "calories": 54,
+      "calories": 49,
       "protein": 1,
-      "carbs": 7,
-      "fat": 3
+      "carbs": 6,
+      "fat": 2
     },
     {
       "name": "Portion klein (5 Stück, 125g)",
       "portion_g": 125,
-      "calories": 269,
+      "calories": 246,
       "protein": 4,
-      "carbs": 35,
-      "fat": 13,
+      "carbs": 30,
+      "fat": 12,
       "tip": "Übliche Beilagen-Portion"
     },
     {
       "name": "Beilagen-Portion (150g)",
       "portion_g": 150,
-      "calories": 323,
+      "calories": 296,
       "protein": 5,
-      "carbs": 42,
+      "carbs": 36,
       "fat": 15
     },
     {
       "name": "Portion groß (8 Stück, 200g)",
       "portion_g": 200,
-      "calories": 430,
-      "protein": 6,
-      "carbs": 56,
+      "calories": 394,
+      "protein": 7,
+      "carbs": 48,
       "fat": 20
     },
     {
       "name": "Sehr große Portion (10 Stück, 250g)",
       "portion_g": 250,
-      "calories": 538,
+      "calories": 493,
       "protein": 8,
-      "carbs": 70,
+      "carbs": 60,
       "fat": 25
-    },
-    {
-      "name": "Tiefkühl-Kroketten roh (100g)",
-      "portion_g": 100,
-      "calories": 166,
-      "protein": 3,
-      "carbs": 25,
-      "fat": 6,
-      "tip": "Vor dem Frittieren, weniger Fett"
-    },
-    {
-      "name": "Backofen-Kroketten (100g)",
-      "portion_g": 100,
-      "calories": 183,
-      "protein": 3,
-      "carbs": 27,
-      "fat": 7,
-      "tip": "Im Ofen statt frittiert, fettärmer"
     }
   ],
   "comparison": [
     {
-      "name": "Pommes frites",
+      "name": "Pommes frites (100g)",
       "calories": 312,
-      "emoji": "🍟"
+      "emoji": "🍟",
+      "basis": [
+        {
+          "slug": "pommes-frites",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Bratkartoffeln",
-      "calories": 150,
-      "emoji": "🥔"
+      "name": "Bratkartoffeln (100g)",
+      "calories": 185,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "bratkartoffeln",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kartoffelpüree",
-      "calories": 110,
-      "emoji": "🥔"
+      "name": "Kartoffelpüree (100g)",
+      "calories": 113,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelpueree",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kartoffeln (gekocht)",
-      "calories": 87,
-      "emoji": "🥔"
+      "name": "Kartoffeln, gekocht (100g)",
+      "calories": 86,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Im Ofen statt Fritteuse",
-      "text": "Backofen-Kroketten enthalten mit ca. 180 kcal pro 100g spürbar weniger Fett als die frittierte Variante. Wer Kalorien sparen will, bereitet sie im Ofen zu.",
+      "text": "Im Backofen zubereitete Kroketten nehmen weniger Fett auf als frittierte. Wer Kalorien sparen will, bereitet sie im Ofen zu.",
       "icon": "🔥"
     },
     {
       "title": "Portionsgröße im Blick",
-      "text": "Eine typische Beilagen-Portion von 5 Stück (125g) liefert rund 270 kcal. Schon 10 Stück bringen es auf über 500 kcal, also reichlich für eine Mahlzeit.",
+      "text": "Eine typische Beilagen-Portion von 5 Stück (125g) liefert rund 246 kcal. Schon 10 Stück bringen es auf rund 493 kcal, also reichlich für eine Mahlzeit.",
       "icon": "⚖️"
     },
     {
@@ -130,22 +172,22 @@
     },
     {
       "title": "Kohlenhydratreiche Beilage",
-      "text": "Mit rund 28g Kohlenhydraten pro 100g zählen Kroketten zu den stärkereichen Beilagen. Wer Kohlenhydrate reduziert, wählt besser Gemüse oder Salat dazu.",
+      "text": "Mit rund 24g Kohlenhydraten pro 100g zählen Kroketten zu den stärkereichen Beilagen. Wer Kohlenhydrate reduziert, wählt besser Gemüse oder Salat dazu.",
       "icon": "🥔"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Kroketten?",
-      "answer": "Frittierte Kroketten haben etwa 215 kcal pro 100g. Eine Portion von 5 Stück (125g) liefert rund 270 kcal."
+      "answer": "Frittierte Kroketten haben etwa 197 kcal pro 100g. Eine Portion von 5 Stück (125g) liefert rund 246 kcal. Gerechnet aus USDA-Werten für Kroketten aus 400g gekochten Kartoffeln, Eigelb, Speisestärke und einer Panade aus Ei und Paniermehl, mit rund 40g beim Frittieren aufgenommenem Öl (fertig rund 500g)."
     },
     {
       "question": "Wie viele Kalorien hat eine einzelne Krokette?",
-      "answer": "Eine einzelne Krokette wiegt etwa 25g und enthält rund 54 kcal."
+      "answer": "Eine einzelne Krokette wiegt etwa 25g und enthält rund 49 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Kroketten?",
-      "answer": "Kroketten enthalten etwa 28g Kohlenhydrate pro 100g, da sie überwiegend aus Kartoffeln und einer Panade bestehen."
+      "answer": "Kroketten enthalten etwa 24g Kohlenhydrate pro 100g, da sie überwiegend aus Kartoffeln und einer Panade bestehen."
     },
     {
       "question": "Wie viel Protein steckt in Kroketten?",

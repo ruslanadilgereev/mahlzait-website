@@ -3,47 +3,217 @@
   "name": "Kaiserschmarrn",
   "emoji": "🥞",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 2 Portionen à 300 g): 500 g Pfannkuchenteig, gebacken (FDC-ID 175009, Pancakes, plain, prepared from recipe: 227 kcal), 30 g Butter (Pfanne) (FDC-ID 173430, Butter, without salt: 717 kcal), 40 g Rosinen (FDC-ID 168165, Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program): 299 kcal), 20 g Zucker (zum Karamellisieren) (FDC-ID 169655, Sugars, granulated: 387 kcal), 10 g Puderzucker (FDC-ID 169656, Sugars, powdered: 389 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Pfannkuchenteig, gebacken",
+        "g": 500,
+        "fdcId": 175009
+      },
+      {
+        "name": "Butter (Pfanne)",
+        "g": 30,
+        "fdcId": 173430
+      },
+      {
+        "name": "Rosinen",
+        "g": 40,
+        "fdcId": 168165
+      },
+      {
+        "name": "Zucker (zum Karamellisieren)",
+        "g": 20,
+        "fdcId": 169655
+      },
+      {
+        "name": "Puderzucker",
+        "g": 10,
+        "fdcId": 169656
+      }
+    ]
+  },
   "seo": {
     "title": "Kaiserschmarrn Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kaiserschmarrn? Nährwerte für klassischen Kaiserschmarrn, mit Rosinen & Apfelmus. Mit Portionsrechner und Spar-Tipps."
+    "description": "Wie viele Kalorien hat Kaiserschmarrn? Eine Portion (300g) hat ca. 792 kcal. Nährwerte mit Rosinen, Apfelmus & Zwetschgenröster. Mit Portionsrechner und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 230,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 9,
-    "fiber_per_100g": 0.8,
+    "calories_per_100g": 264,
+    "protein_per_100g": 5.6,
+    "carbs_per_100g": 33.9,
+    "fat_per_100g": 12.2,
+    "fiber_per_100g": 0.3,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Kaiserschmarrn klassisch", "portion_g": 300, "calories": 690, "protein": 24, "carbs": 90, "fat": 27, "tip": "Mit Puderzucker und Rosinen"},
-    {"name": "Kaiserschmarrn mit Apfelmus", "portion_g": 400, "calories": 810, "protein": 24, "carbs": 120, "fat": 27, "tip": "Beliebte Kombination"},
-    {"name": "Kaiserschmarrn mit Zwetschgenröster", "portion_g": 400, "calories": 830, "protein": 24, "carbs": 125, "fat": 27, "tip": "Traditionell österreichisch"},
-    {"name": "Kaiserschmarrn ohne Rosinen", "portion_g": 280, "calories": 640, "protein": 23, "carbs": 80, "fat": 26, "tip": "Etwas weniger Zucker"},
-    {"name": "Protein-Kaiserschmarrn", "portion_g": 250, "calories": 450, "protein": 35, "carbs": 45, "fat": 14, "tip": "Mit Proteinpulver und weniger Zucker"},
-    {"name": "Kaiserschmarrn aus der Skihütte", "portion_g": 400, "calories": 920, "protein": 28, "carbs": 110, "fat": 40, "tip": "Extra Butter – größere Portion"}
+    {
+      "name": "Kaiserschmarrn klassisch",
+      "portion_g": 300,
+      "calories": 792,
+      "protein": 17,
+      "carbs": 102,
+      "fat": 37,
+      "tip": "Mit Puderzucker und Rosinen"
+    },
+    {
+      "name": "Kaiserschmarrn mit Apfelmus (300g + 100g)",
+      "portion_g": 400,
+      "calories": 868,
+      "protein": 17,
+      "carbs": 122,
+      "fat": 37,
+      "tip": "Beliebte Kombination",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 167773,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Kaiserschmarrn mit Zwetschgenröster (300g + 100g)",
+      "portion_g": 400,
+      "calories": 881,
+      "protein": 17,
+      "carbs": 125,
+      "fat": 37,
+      "tip": "Traditionell österreichisch",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 169132,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Hütten-Portion (400g + 15g extra Butter)",
+      "portion_g": 415,
+      "calories": 1164,
+      "protein": 23,
+      "carbs": 136,
+      "fat": 61,
+      "tip": "Extra Butter, größere Portion",
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 173430,
+          "g": 15
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Pfannkuchen", "calories": 190, "emoji": "🥞"},
-    {"name": "Dampfnudeln", "calories": 250, "emoji": "🍞"},
-    {"name": "French Toast", "calories": 240, "emoji": "🍞"},
-    {"name": "Waffeln", "calories": 290, "emoji": "🧇"}
+    {
+      "name": "Pancakes (100g)",
+      "calories": 227,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "slug": "pancakes",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Dampfnudeln (100g)",
+      "calories": 302,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "dampfnudeln",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "French Toast (100g)",
+      "calories": 230,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "french-toast",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Waffeln (100g)",
+      "calories": 291,
+      "emoji": "🧇",
+      "basis": [
+        {
+          "slug": "waffeln",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Weniger Butter in der Pfanne", "text": "Halbiere die Buttermenge – der Kaiserschmarrn wird trotzdem goldbraun und du sparst ca. 100 kcal.", "icon": "🧈"},
-    {"title": "Eiweiß aufschlagen", "text": "Eischnee macht den Schmarrn fluffiger ohne zusätzliche Kalorien. Mehr Volumen = größere Portion bei gleichen Kalorien.", "icon": "🥚"},
-    {"title": "Puderzucker reduzieren", "text": "Weniger Puderzucker oben drauf – jeder Esslöffel hat 30 kcal. Vanillezucker statt Puderzucker spart ebenfalls.", "icon": "🍬"},
-    {"title": "Apfelmus statt Sahne", "text": "Apfelmus hat ca. 65 kcal/100g, Schlagsahne dagegen 260 kcal/100g. Ein riesiger Unterschied!", "icon": "🍎"},
-    {"title": "Proteinversion machen", "text": "Ersetze einen Teil des Mehls durch Proteinpulver – du bekommst mehr Sättigung und ca. 35g Protein pro Portion.", "icon": "💪"}
+    {
+      "title": "Weniger Butter in der Pfanne",
+      "text": "Halbiere die Butter in der Pfanne (15 statt 30g für 2 Portionen). Der Kaiserschmarrn wird trotzdem goldbraun und du sparst rund 54 kcal pro Portion.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Eiweiß aufschlagen",
+      "text": "Eischnee macht den Schmarrn fluffiger ohne zusätzliche Kalorien. Mehr Volumen = größere Portion bei gleichen Kalorien.",
+      "icon": "🥚"
+    },
+    {
+      "title": "Puderzucker reduzieren",
+      "text": "Weniger Puderzucker oben drauf: Jeder Esslöffel (8g) hat rund 31 kcal. Vanillezucker statt Puderzucker spart ebenfalls.",
+      "icon": "🍬"
+    },
+    {
+      "title": "Apfelmus statt Sahne",
+      "text": "Apfelmus hat rund 76 kcal/100g, Schlagsahne ein Vielfaches davon. Ein riesiger Unterschied!",
+      "icon": "🍎"
+    },
+    {
+      "title": "Proteinversion machen",
+      "text": "Ersetze einen Teil des Mehls durch Proteinpulver, das sättigt länger und erhöht den Proteingehalt deutlich.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Kaiserschmarrn?", "answer": "Eine Portion Kaiserschmarrn (300g) hat ca. 690 kcal. Mit Apfelmus oder Zwetschgenröster kommt man auf 810-830 kcal pro Mahlzeit."},
-    {"question": "Ist Kaiserschmarrn eine Kalorienbombe?", "answer": "Ja, Kaiserschmarrn ist relativ kalorienreich durch Butter, Eier und Zucker. Eine Portion deckt ca. 30-40% des Tagesbedarfs an Kalorien."},
-    {"question": "Wie kann man Kaiserschmarrn kalorienärmer machen?", "answer": "Weniger Butter, weniger Zucker, Eischnee für mehr Volumen und Apfelmus statt Sahne als Beilage. So sparst du bis zu 250 kcal."},
-    {"question": "Wie viel Protein hat Kaiserschmarrn?", "answer": "Klassischer Kaiserschmarrn liefert ca. 24g Protein pro Portion (300g) – hauptsächlich aus den Eiern. Eine Proteinversion kann bis zu 35g erreichen."},
-    {"question": "Ist Kaiserschmarrn ein Hauptgericht?", "answer": "Ja, in Österreich und Bayern wird Kaiserschmarrn als eigenständiges Hauptgericht serviert, besonders auf Hütten und Almen. Die Kalorienmenge entspricht einer vollwertigen Mahlzeit."},
-    {"question": "Was hat weniger Kalorien: Kaiserschmarrn oder Pfannkuchen?", "answer": "Pfannkuchen (190 kcal/100g) haben weniger als Kaiserschmarrn (230 kcal/100g), da Kaiserschmarrn mehr Butter und Zucker enthält."}
+    {
+      "question": "Wie viele Kalorien hat Kaiserschmarrn?",
+      "answer": "Eine Portion Kaiserschmarrn (300g) hat ca. 792 kcal. Mit Apfelmus oder Zwetschgenröster kommt man auf rund 868 bis 881 kcal pro Mahlzeit. Gerechnet aus USDA-Werten für 500g gebackenen Pfannkuchenteig, 30g Butter, 40g Rosinen, 20g Zucker und 10g Puderzucker für 2 Portionen."
+    },
+    {
+      "question": "Ist Kaiserschmarrn eine Kalorienbombe?",
+      "answer": "Ja, Kaiserschmarrn ist relativ kalorienreich durch Butter, Eier und Zucker. Eine Portion deckt ca. 30-40% des Tagesbedarfs an Kalorien."
+    },
+    {
+      "question": "Wie kann man Kaiserschmarrn kalorienärmer machen?",
+      "answer": "Weniger Butter, weniger Zucker, Eischnee für mehr Volumen und Apfelmus statt Sahne als Beilage. So sparst du spürbar Kalorien."
+    },
+    {
+      "question": "Wie viel Protein hat Kaiserschmarrn?",
+      "answer": "Klassischer Kaiserschmarrn liefert ca. 17g Protein pro Portion (300g), hauptsächlich aus Eiern und Milch im Teig. Eine Proteinversion liefert mehr."
+    },
+    {
+      "question": "Ist Kaiserschmarrn ein Hauptgericht?",
+      "answer": "Ja, in Österreich und Bayern wird Kaiserschmarrn als eigenständiges Hauptgericht serviert, besonders auf Hütten und Almen. Die Kalorienmenge entspricht einer vollwertigen Mahlzeit."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Kaiserschmarrn oder Pfannkuchen?",
+      "answer": "Pancakes (227 kcal/100g) haben weniger als Kaiserschmarrn (264 kcal/100g), da Kaiserschmarrn zusätzlich Butter, Zucker und Rosinen enthält."
+    }
   ],
-  "related_foods": ["dampfnudeln", "apfelstrudel", "germknoedel", "hefekloesse"]
+  "related_foods": [
+    "dampfnudeln",
+    "apfelstrudel",
+    "germknoedel",
+    "hefekloesse"
+  ]
 }

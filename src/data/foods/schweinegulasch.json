@@ -3,47 +3,284 @@
   "name": "Schweinegulasch",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Portionen à 350 g): 600 g Schweineschulter, geschmort (FDC-ID 167850, Pork, fresh, shoulder, (Boston butt), blade (steaks), separable lean and fat, cooked, braised: 267 kcal), 300 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 200 g Paprika rot (FDC-ID 170108, Peppers, sweet, red, raw: 26 kcal), 40 g Tomatenmark (FDC-ID 170459, Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program): 82 kcal), 20 g Rapsöl (FDC-ID 172336, Oil, canola: 884 kcal), 10 g Paprikapulver (FDC-ID 171329, Spices, paprika: 282 kcal), 230 g Wasser (Schmorflüssigkeit) (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Schweineschulter, geschmort",
+        "g": 600,
+        "fdcId": 167850
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 300,
+        "fdcId": 170000
+      },
+      {
+        "name": "Paprika rot",
+        "g": 200,
+        "fdcId": 170108
+      },
+      {
+        "name": "Tomatenmark",
+        "g": 40,
+        "fdcId": 170459
+      },
+      {
+        "name": "Rapsöl",
+        "g": 20,
+        "fdcId": 172336
+      },
+      {
+        "name": "Paprikapulver",
+        "g": 10,
+        "fdcId": 171329
+      },
+      {
+        "name": "Wasser (Schmorflüssigkeit)",
+        "g": 230,
+        "fdcId": 173647
+      }
+    ]
+  },
   "seo": {
     "title": "Schweinegulasch Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Schweinegulasch? Nährwerte für Gulasch mit Nudeln, Knödel & mehr. Kostenloser Kalorien-Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 145,
-    "protein_per_100g": 16,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 0.8,
+    "calories_per_100g": 144,
+    "protein_per_100g": 11.3,
+    "carbs_per_100g": 3.8,
+    "fat_per_100g": 9.2,
+    "fiber_per_100g": 1,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Schweinegulasch klassisch", "portion_g": 350, "calories": 508, "protein": 56, "carbs": 14, "fat": 25, "tip": "Traditionelles Rezept"},
-    {"name": "Schweinegulasch mit Nudeln", "portion_g": 500, "calories": 720, "protein": 58, "carbs": 60, "fat": 28, "tip": "Sättigende Mahlzeit"},
-    {"name": "Schweinegulasch mit Knödel", "portion_g": 500, "calories": 690, "protein": 55, "carbs": 56, "fat": 28, "tip": "Bayerische Art"},
-    {"name": "Szegediner Gulasch (mit Sauerkraut)", "portion_g": 400, "calories": 540, "protein": 48, "carbs": 12, "fat": 34, "tip": "Ungarisch-österreichisch"},
-    {"name": "Schweinegulasch mit Reis", "portion_g": 500, "calories": 700, "protein": 56, "carbs": 64, "fat": 25, "tip": "Klassische Beilage"},
-    {"name": "Schweinegulasch fettarm", "portion_g": 350, "calories": 420, "protein": 56, "carbs": 14, "fat": 16, "tip": "Mit magerem Fleisch"}
+    {
+      "name": "Schweinegulasch klassisch",
+      "portion_g": 350,
+      "calories": 504,
+      "protein": 40,
+      "carbs": 13,
+      "fat": 32,
+      "tip": "Traditionelles Rezept"
+    },
+    {
+      "name": "Schweinegulasch mit Nudeln",
+      "portion_g": 500,
+      "calories": 741,
+      "protein": 48,
+      "carbs": 60,
+      "fat": 34,
+      "tip": "Sättigende Mahlzeit",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "nudeln",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Schweinegulasch mit Knödel",
+      "portion_g": 500,
+      "calories": 777,
+      "protein": 50,
+      "carbs": 46,
+      "fat": 43,
+      "tip": "Bayerische Art",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "semmelknoedel",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Szegediner Gulasch (mit Sauerkraut)",
+      "portion_g": 400,
+      "calories": 486,
+      "protein": 35,
+      "carbs": 16,
+      "fat": 31,
+      "tip": "Ungarisch-österreichisch",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 169279,
+          "g": 80
+        },
+        {
+          "fdcId": 2705614,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Schweinegulasch mit Reis",
+      "portion_g": 500,
+      "calories": 699,
+      "protein": 44,
+      "carbs": 55,
+      "fat": 33,
+      "tip": "Klassische Beilage",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Schweinegulasch fettarm",
+      "portion_g": 350,
+      "calories": 393,
+      "protein": 42,
+      "carbs": 13,
+      "fat": 19,
+      "tip": "Mit magerem Fleisch",
+      "basis": [
+        {
+          "fdcId": 167847,
+          "g": 150
+        },
+        {
+          "fdcId": 170000,
+          "g": 75
+        },
+        {
+          "fdcId": 170108,
+          "g": 50
+        },
+        {
+          "fdcId": 170459,
+          "g": 10
+        },
+        {
+          "fdcId": 172336,
+          "g": 5
+        },
+        {
+          "fdcId": 171329,
+          "g": 2.5
+        },
+        {
+          "fdcId": 173647,
+          "g": 57.5
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Rindergulasch", "calories": 120, "emoji": "🍲"},
-    {"name": "Schweinebraten", "calories": 165, "emoji": "🥩"},
-    {"name": "Hähnchen-Geschnetzeltes", "calories": 145, "emoji": "🍗"},
-    {"name": "Eintopf (Linsen)", "calories": 95, "emoji": "🫘"}
+    {
+      "name": "Rindergulasch (1 Teller, 300g)",
+      "calories": 321,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulasch"
+        }
+      ]
+    },
+    {
+      "name": "Schweinebraten (250g)",
+      "calories": 453,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schweinebraten"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchen-Geschnetzeltes (300g)",
+      "calories": 471,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchen-geschnetzeltes"
+        }
+      ]
+    },
+    {
+      "name": "Linseneintopf (1 Teller, 400g)",
+      "calories": 240,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "eintopf-linsen"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Mageres Fleisch", "text": "Verwende Schweineschulter statt Bauch – deutlich weniger Fett bei gutem Geschmack.", "icon": "🥩"},
-    {"title": "Lange schmoren", "text": "Je länger Gulasch schmort (2-3 Stunden), desto zarter wird das Fleisch. Niedrige Temperatur (150°C) ist ideal.", "icon": "⏱️"},
-    {"title": "Am nächsten Tag besser", "text": "Gulasch schmeckt aufgewärmt oft besser, weil sich die Aromen über Nacht entfalten. Ideal für Meal Prep!", "icon": "📦"},
-    {"title": "Paprika ist der Star", "text": "Verwende edelsüßes Paprikapulver großzügig – es gibt Geschmack und Farbe ohne Kalorien.", "icon": "🌶️"},
-    {"title": "Große Menge kochen", "text": "Gulasch eignet sich perfekt zum Einfrieren in Portionen. So hast du schnelle Mahlzeiten für Wochen.", "icon": "❄️"}
+    {
+      "title": "Mageres Fleisch",
+      "text": "Verwende Schweineschulter statt Bauch: deutlich weniger Fett bei gutem Geschmack.",
+      "icon": "🥩"
+    },
+    {
+      "title": "Lange schmoren",
+      "text": "Je länger Gulasch schmort (2-3 Stunden), desto zarter wird das Fleisch. Niedrige Temperatur (150°C) ist ideal.",
+      "icon": "⏱️"
+    },
+    {
+      "title": "Am nächsten Tag besser",
+      "text": "Gulasch schmeckt aufgewärmt oft besser, weil sich die Aromen über Nacht entfalten. Ideal für Meal Prep!",
+      "icon": "📦"
+    },
+    {
+      "title": "Paprika ist der Star",
+      "text": "Verwende edelsüßes Paprikapulver großzügig: Es gibt Geschmack und Farbe ohne Kalorien.",
+      "icon": "🌶️"
+    },
+    {
+      "title": "Große Menge kochen",
+      "text": "Gulasch eignet sich perfekt zum Einfrieren in Portionen. So hast du schnelle Mahlzeiten für Wochen.",
+      "icon": "❄️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Schweinegulasch?", "answer": "Eine Portion Schweinegulasch (350g) hat ca. 508 kcal. Mit Nudeln oder Reis als Beilage steigt es auf 690-720 kcal."},
-    {"question": "Ist Schweinegulasch gesund?", "answer": "Schweinegulasch liefert viel Protein und Eisen. Der Fettgehalt hängt vom Fleischstück ab – mit magerem Fleisch ist es eine gute Proteinquelle."},
-    {"question": "Was hat weniger Kalorien: Schweine- oder Rindergulasch?", "answer": "Rindergulasch (120 kcal/100g) hat etwas weniger Kalorien als Schweinegulasch (145 kcal/100g), wenn magere Stücke verwendet werden."},
-    {"question": "Wie lange muss Schweinegulasch kochen?", "answer": "Mindestens 1,5-2 Stunden bei niedriger Hitze. Für besonders zartes Fleisch sogar 3 Stunden. Im Schnellkochtopf reichen 30-40 Minuten."},
-    {"question": "Kann man Schweinegulasch einfrieren?", "answer": "Ja, Gulasch eignet sich hervorragend zum Einfrieren. In Portionsdosen bis zu 3 Monate haltbar. Langsam im Kühlschrank auftauen."},
-    {"question": "Welche Beilage passt am besten?", "answer": "Klassiker: Nudeln, Reis, Knödel oder Kartoffeln. Für weniger Kalorien: Blumenkohlreis oder einfach mit viel Brot zum Auftunken."}
+    {
+      "question": "Wie viele Kalorien hat Schweinegulasch?",
+      "answer": "Eine Portion Schweinegulasch (350g) hat ca. 504 kcal. Mit Reis oder Nudeln als Beilage steigt es auf 699 bis 741 kcal. Gerechnet aus USDA-Werten für 4 Portionen mit 600 g geschmorter Schweineschulter, 300 g Zwiebeln, 200 g Paprika, 40 g Tomatenmark und 20 g Öl."
+    },
+    {
+      "question": "Ist Schweinegulasch gesund?",
+      "answer": "Schweinegulasch liefert viel Protein und Eisen. Der Fettgehalt hängt vom Fleischstück ab, mit magerem Fleisch ist es eine gute Proteinquelle."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Schweine- oder Rindergulasch?",
+      "answer": "Rindergulasch (107 kcal/100g) hat weniger Kalorien als Schweinegulasch (144 kcal/100g). Mit magerem Schweinefleisch sinkt der Wert auf rund 112 kcal/100g."
+    },
+    {
+      "question": "Wie lange muss Schweinegulasch kochen?",
+      "answer": "Mindestens 1,5-2 Stunden bei niedriger Hitze. Für besonders zartes Fleisch sogar 3 Stunden. Im Schnellkochtopf reichen 30-40 Minuten."
+    },
+    {
+      "question": "Kann man Schweinegulasch einfrieren?",
+      "answer": "Ja, Gulasch eignet sich hervorragend zum Einfrieren. In Portionsdosen bis zu 3 Monate haltbar. Langsam im Kühlschrank auftauen."
+    },
+    {
+      "question": "Welche Beilage passt am besten?",
+      "answer": "Klassiker: Nudeln, Reis, Knödel oder Kartoffeln. Für weniger Kalorien: Blumenkohlreis oder einfach mit viel Brot zum Auftunken."
+    }
   ],
-  "related_foods": ["gulasch", "schweinebraten", "eintopf-linsen", "rindergeschnetzeltes"]
+  "related_foods": [
+    "gulasch",
+    "schweinebraten",
+    "eintopf-linsen",
+    "rindergeschnetzeltes"
+  ]
 }

@@ -3,50 +3,269 @@
   "name": "Müsli",
   "emoji": "🥣",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 kg Früchte-Nuss-Müsli ohne Zuckerzusatz): 700 g Haferflocken (FDC-ID 173904, Cereals, oats, regular and quick, not fortified, dry: 379 kcal), 150 g Rosinen (FDC-ID 168165, Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program): 299 kcal), 50 g Aprikosen, getrocknet (FDC-ID 173941, Apricots, dried, sulfured, uncooked: 241 kcal), 60 g Haselnüsse (FDC-ID 170581, Nuts, hazelnuts or filberts: 628 kcal), 40 g Sonnenblumenkerne (FDC-ID 170562, Seeds, sunflower seed kernels, dried: 584 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Haferflocken",
+        "g": 700,
+        "fdcId": 173904
+      },
+      {
+        "name": "Rosinen",
+        "g": 150,
+        "fdcId": 168165
+      },
+      {
+        "name": "Aprikosen, getrocknet",
+        "g": 50,
+        "fdcId": 173941
+      },
+      {
+        "name": "Haselnüsse",
+        "g": 60,
+        "fdcId": 170581
+      },
+      {
+        "name": "Sonnenblumenkerne",
+        "g": 40,
+        "fdcId": 170562
+      }
+    ]
+  },
   "seo": {
     "title": "Müsli Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Müsli? Nährwerte pro 100g & Portion. Crunchy, Frucht- & Schoko-Müsli im Vergleich + Diät-Tipps.",
-    "keywords": ["müsli kalorien", "kalorien müsli", "müsli nährwerte", "crunchy müsli kalorien", "müsli mit milch kalorien", "schoko müsli kalorien", "granola kalorien", "fruchtmüsli kalorien"]
+    "keywords": [
+      "müsli kalorien",
+      "kalorien müsli",
+      "müsli nährwerte",
+      "crunchy müsli kalorien",
+      "müsli mit milch kalorien",
+      "schoko müsli kalorien",
+      "granola kalorien",
+      "fruchtmüsli kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 365,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 62,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 7.5,
+    "calories_per_100g": 383,
+    "protein_per_100g": 11.6,
+    "carbs_per_100g": 64.2,
+    "fat_per_100g": 10.3,
+    "fiber_per_100g": 9,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Schale"
   },
   "variants": [
-    { "name": "Basis-Müsli (trocken)", "portion_g": 60, "calories": 219, "protein": 6, "carbs": 37, "fat": 5 },
-    { "name": "Müsli mit Milch (1,5%)", "portion_g": 210, "calories": 329, "protein": 12, "carbs": 48, "fat": 8 },
-    { "name": "Crunchy Müsli (trocken)", "portion_g": 60, "calories": 270, "protein": 5, "carbs": 38, "fat": 10, "tip": "Kalorienreichste" },
-    { "name": "Fruchtmüsli", "portion_g": 60, "calories": 210, "protein": 5, "carbs": 40, "fat": 3, "tip": "Weniger Fett" },
-    { "name": "Schoko-Müsli", "portion_g": 60, "calories": 258, "protein": 6, "carbs": 40, "fat": 8 },
-    { "name": "Protein-Müsli", "portion_g": 60, "calories": 240, "protein": 18, "carbs": 28, "fat": 6, "tip": "Proteinreichste" },
-    { "name": "Müsli mit Joghurt & Obst", "portion_g": 250, "calories": 360, "protein": 14, "carbs": 46, "fat": 12 },
-    { "name": "Selbstgemischtes Müsli", "portion_g": 60, "calories": 200, "protein": 7, "carbs": 30, "fat": 5, "tip": "Kontrolliert" }
+    {
+      "name": "Basis-Müsli (trocken)",
+      "portion_g": 60,
+      "calories": 230,
+      "protein": 7,
+      "carbs": 39,
+      "fat": 6
+    },
+    {
+      "name": "Müsli mit fettarmer Milch (60g + 150ml)",
+      "portion_g": 215,
+      "calories": 307,
+      "protein": 12,
+      "carbs": 46,
+      "fat": 9,
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "fdcId": 171267,
+          "ml": 150,
+          "g": 155
+        }
+      ]
+    },
+    {
+      "name": "Crunchy Müsli (trocken)",
+      "portion_g": 60,
+      "calories": 252,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 8,
+      "tip": "Kalorienreichste",
+      "basis": [
+        {
+          "slug": "granola",
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Fruchtmüsli",
+      "portion_g": 60,
+      "calories": 210,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 3,
+      "tip": "Weniger Fett",
+      "basis": [
+        {
+          "fdcId": 173904,
+          "g": 42
+        },
+        {
+          "fdcId": 168165,
+          "g": 12
+        },
+        {
+          "fdcId": 173941,
+          "g": 6
+        }
+      ]
+    },
+    {
+      "name": "Schoko-Müsli",
+      "portion_g": 60,
+      "calories": 247,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 6,
+      "basis": [
+        {
+          "slug": "schokomuesli",
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Müsli mit Joghurt & Obst",
+      "portion_g": 250,
+      "calories": 357,
+      "protein": 13,
+      "carbs": 55,
+      "fat": 11,
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "fdcId": 171284,
+          "g": 150
+        },
+        {
+          "fdcId": 173944,
+          "g": 40
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Haferflocken-Porridge", "calories": 186, "emoji": "🥣" },
-    { "name": "Cornflakes mit Milch", "calories": 290, "emoji": "🥣" },
-    { "name": "Toast mit Marmelade", "calories": 230, "emoji": "🍞" },
-    { "name": "Croissant", "calories": 310, "emoji": "🥐" }
+    {
+      "name": "Haferflocken-Porridge",
+      "calories": 178,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferbrei"
+        }
+      ]
+    },
+    {
+      "name": "Cornflakes mit Milch (40g + 150ml)",
+      "calories": 224,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 40
+        },
+        {
+          "fdcId": 171267,
+          "ml": 150,
+          "g": 155
+        }
+      ]
+    },
+    {
+      "name": "Toast mit Marmelade (2 Scheiben + 1 EL)",
+      "calories": 215,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 60
+        },
+        {
+          "slug": "marmelade"
+        }
+      ]
+    },
+    {
+      "name": "Croissant",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Portionsgröße messen", "text": "60g Müsli sind eine Portion – die meisten schütten 100-120g in die Schale. Das verdoppelt die Kalorien auf 440+ kcal.", "icon": "⚖️" },
-    { "title": "Zuckergehalt prüfen", "text": "Fertigmüsli enthält oft 20-25g Zucker pro 100g. Wähle Produkte mit unter 10g Zucker oder mische selbst.", "icon": "🔍" },
-    { "title": "Crunchy = verstecktes Fett", "text": "Crunchy-Müsli wird oft mit Öl und Zucker gebacken – 450 kcal/100g statt 365 kcal bei normalem Müsli.", "icon": "⚠️" },
-    { "title": "Nüsse selbst hinzufügen", "text": "Statt Nuss-Müsli kaufen: Basis-Müsli nehmen und 10g Nüsse selbst ergänzen – so kontrollierst du die Menge.", "icon": "🥜" },
-    { "title": "Mit Skyr statt Milch", "text": "Müsli mit 100g Skyr statt 150ml Milch: weniger Kalorien, dafür 11g extra Protein für bessere Sättigung.", "icon": "💪" }
+    {
+      "title": "Portionsgröße messen",
+      "text": "60g Müsli sind eine Portion, viele schütten aber 100 bis 120g in die Schale. Das sind dann 383 bis 460 kcal statt 230 kcal.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Zuckergehalt prüfen",
+      "text": "Fertigmüsli enthält oft viel zugesetzten Zucker. Wähle Produkte mit unter 10g Zucker oder mische selbst.",
+      "icon": "🔍"
+    },
+    {
+      "title": "Crunchy = verstecktes Fett",
+      "text": "Crunchy-Müsli wird oft mit Öl und Zucker gebacken: 420 kcal/100g statt 383 kcal bei normalem Müsli.",
+      "icon": "⚠️"
+    },
+    {
+      "title": "Nüsse selbst hinzufügen",
+      "text": "Statt Nuss-Müsli kaufen: Basis-Müsli nehmen und 10g Nüsse selbst ergänzen, so kontrollierst du die Menge.",
+      "icon": "🥜"
+    },
+    {
+      "title": "Mit Skyr statt Milch",
+      "text": "Müsli mit 100g Skyr statt 150ml Milch: etwas weniger Kalorien und mehr Protein für bessere Sättigung.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Schale Müsli?", "answer": "Eine Schale Müsli (60g) mit 150ml Milch hat ca. 329 kcal. Crunchy-Müsli mit Milch kann 380+ kcal haben." },
-    { "question": "Wie viele Kalorien hat Müsli pro 100g?", "answer": "Basis-Müsli hat ca. 365 kcal/100g, Crunchy-Müsli ca. 450 kcal, Fruchtmüsli ca. 350 kcal und Protein-Müsli ca. 400 kcal pro 100g." },
-    { "question": "Ist Müsli gut zum Abnehmen?", "answer": "Ja, wenn du auf Portionsgröße (60g), Zuckergehalt (unter 10g/100g) und Sorte achtest. Basis- oder Fruchtmüsli sind besser als Crunchy." },
-    { "question": "Was ist besser: Müsli oder Haferflocken?", "answer": "Haferflocken pur haben ähnliche Kalorien, aber keinen zugesetzten Zucker. Müsli bietet mehr Abwechslung. Am besten: selbstgemischtes Müsli aus Haferflocken + Obst + Nüsse." },
-    { "question": "Wie viel Zucker hat Fertigmüsli?", "answer": "Fertiges Müsli enthält oft 15-25g Zucker pro 100g. Bio-Müsli und ungesüßte Varianten haben nur 3-5g natürlichen Zucker." },
-    { "question": "Wie viel Protein hat Müsli?", "answer": "Normales Müsli hat ca. 10g Protein/100g. Protein-Müsli hat 25-30g/100g. Tipp: Müsli mit Skyr kombinieren für maximales Protein." }
+    {
+      "question": "Wie viele Kalorien hat eine Schale Müsli?",
+      "answer": "Eine Schale Müsli (60g) mit 150ml fettarmer Milch hat ca. 307 kcal. Crunchy-Müsli bringt schon trocken 252 kcal pro 60g mit. Gerechnet aus USDA-Werten für ein Müsli aus 700g Haferflocken, 150g Rosinen, 50g getrockneten Aprikosen, 60g Haselnüssen und 40g Sonnenblumenkernen je kg."
+    },
+    {
+      "question": "Wie viele Kalorien hat Müsli pro 100g?",
+      "answer": "Basis-Müsli hat ca. 383 kcal/100g, Crunchy-Müsli ca. 420 kcal und Fruchtmüsli ca. 349 kcal pro 100g."
+    },
+    {
+      "question": "Ist Müsli gut zum Abnehmen?",
+      "answer": "Ja, wenn du auf Portionsgröße (60g), Zuckergehalt (unter 10g/100g) und Sorte achtest. Basis- oder Fruchtmüsli sind besser als Crunchy."
+    },
+    {
+      "question": "Was ist besser: Müsli oder Haferflocken?",
+      "answer": "Haferflocken pur haben ähnliche Kalorien, aber keinen zugesetzten Zucker. Müsli bietet mehr Abwechslung. Am besten: selbstgemischtes Müsli aus Haferflocken + Obst + Nüsse."
+    },
+    {
+      "question": "Wie viel Zucker hat Fertigmüsli?",
+      "answer": "Fertiges Müsli enthält oft viel zugesetzten Zucker. Ungesüßte Varianten enthalten nur den natürlichen Zucker aus dem Trockenobst. Den genauen Wert nennt die Nährwerttabelle der Packung."
+    },
+    {
+      "question": "Wie viel Protein hat Müsli?",
+      "answer": "Normales Müsli hat ca. 12g Protein pro 100g, eine Schale (60g) rund 7g. Spezielles Protein-Müsli enthält deutlich mehr. Tipp: Müsli mit Skyr kombinieren für maximales Protein."
+    }
   ],
-  "related_foods": ["haferflocken", "joghurt", "milch", "banane"]
+  "related_foods": [
+    "haferflocken",
+    "joghurt",
+    "milch",
+    "banane"
+  ]
 }

@@ -3,48 +3,261 @@
   "name": "Pommes-Currywurst",
   "emoji": "🍟",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Portion à 400 g: Currywurst (200 g) wie Seite currywurst plus 200 g Pommes): 145 g Bratwurst, gebraten (FDC-ID 171620, Bratwurst, pork, cooked: 333 kcal), 52 g Ketchup (FDC-ID 168556, Catsup: 101 kcal), 3 g Currypulver (FDC-ID 170924, Spices, curry powder: 325 kcal), 200 g Pommes frites (FDC-ID 2709461, Potato, french fries, fast food: 312 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Bratwurst, gebraten",
+        "g": 145,
+        "fdcId": 171620
+      },
+      {
+        "name": "Ketchup",
+        "g": 52,
+        "fdcId": 168556
+      },
+      {
+        "name": "Currypulver",
+        "g": 3,
+        "fdcId": 170924
+      },
+      {
+        "name": "Pommes frites",
+        "g": 200,
+        "fdcId": 2709461
+      }
+    ]
+  },
   "seo": {
     "title": "Pommes-Currywurst Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Pommes-Currywurst? Das Imbiss-Kombi-Gericht mit allen Nährwerten. Kostenloser Kalorien-Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 215,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 450,
+    "calories_per_100g": 292,
+    "protein_per_100g": 6.9,
+    "carbs_per_100g": 25.7,
+    "fat_per_100g": 18.1,
+    "fiber_per_100g": 2.3,
+    "typical_portion_g": 400,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Pommes-Currywurst klassisch", "portion_g": 450, "calories": 968, "protein": 28, "carbs": 80, "fat": 58, "tip": "Imbiss-Standard"},
-    {"name": "Pommes-Currywurst (kleine Portion)", "portion_g": 300, "calories": 645, "protein": 19, "carbs": 53, "fat": 39},
-    {"name": "Pommes-Currywurst mit Mayo", "portion_g": 480, "calories": 1100, "protein": 28, "carbs": 82, "fat": 72, "tip": "Extra Mayo auf den Pommes"},
-    {"name": "Pommes-Currywurst ohne Darm", "portion_g": 430, "calories": 890, "protein": 24, "carbs": 78, "fat": 52, "tip": "Berliner Style"},
-    {"name": "Süßkartoffel-Pommes mit Currywurst", "portion_g": 440, "calories": 880, "protein": 26, "carbs": 85, "fat": 48, "tip": "Etwas weniger Fett"},
-    {"name": "Pommes-Currywurst Vegan", "portion_g": 420, "calories": 750, "protein": 18, "carbs": 82, "fat": 38, "tip": "Pflanzliche Alternative"},
-    {"name": "Pommes-Currywurst XL", "portion_g": 600, "calories": 1290, "protein": 36, "carbs": 106, "fat": 78, "tip": "Extra große Portion"}
+    {
+      "name": "Pommes-Currywurst klassisch",
+      "portion_g": 400,
+      "calories": 1168,
+      "protein": 28,
+      "carbs": 103,
+      "fat": 72,
+      "tip": "Imbiss-Standard: 200 g Currywurst, 200 g Pommes"
+    },
+    {
+      "name": "Pommes-Currywurst (kleine Portion)",
+      "portion_g": 300,
+      "calories": 876,
+      "protein": 21,
+      "carbs": 77,
+      "fat": 54
+    },
+    {
+      "name": "Pommes-Currywurst mit Mayo",
+      "portion_g": 430,
+      "calories": 1372,
+      "protein": 28,
+      "carbs": 103,
+      "fat": 95,
+      "tip": "30 g Mayo auf den Pommes",
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 171009,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Pommes-Currywurst ohne Darm",
+      "portion_g": 370,
+      "calories": 1004,
+      "protein": 23,
+      "carbs": 98,
+      "fat": 58,
+      "tip": "Berliner Style",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Currywurst ohne Darm"
+        },
+        {
+          "slug": "pommes-frites",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Süßkartoffel-Pommes mit Currywurst",
+      "portion_g": 400,
+      "calories": 1155,
+      "protein": 25,
+      "carbs": 83,
+      "fat": 91,
+      "tip": "Kaum weniger Kalorien, mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 171620,
+          "g": 145
+        },
+        {
+          "fdcId": 168556,
+          "g": 52
+        },
+        {
+          "fdcId": 170924,
+          "g": 3
+        },
+        {
+          "fdcId": 2709713,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Pommes-Currywurst Vegan",
+      "portion_g": 370,
+      "calories": 987,
+      "protein": 32,
+      "carbs": 107,
+      "fat": 51,
+      "tip": "Pflanzliche Alternative",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Vegane Currywurst"
+        },
+        {
+          "slug": "pommes-frites",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Pommes-Currywurst XL",
+      "portion_g": 600,
+      "calories": 1752,
+      "protein": 41,
+      "carbs": 154,
+      "fat": 109,
+      "tip": "Extra große Portion"
+    }
   ],
   "comparison": [
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Schnitzel mit Pommes", "calories": 850, "emoji": "🥩"},
-    {"name": "Currywurst ohne Pommes", "calories": 500, "emoji": "🌭"},
-    {"name": "Hähnchenbrust mit Reis", "calories": 450, "emoji": "🍗"}
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel mit Pommes (400g)",
+      "calories": 1063,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel"
+        },
+        {
+          "slug": "pommes-frites"
+        }
+      ]
+    },
+    {
+      "name": "Currywurst ohne Pommes (200g)",
+      "calories": 546,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust mit Reis (400g)",
+      "calories": 590,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust"
+        },
+        {
+          "slug": "reis"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Kleine Portion bestellen", "text": "Die kleine Portion (645 kcal) spart über 300 kcal gegenüber der Standard-Portion (968 kcal).", "icon": "📏"},
-    {"title": "Ohne Mayo", "text": "Mayo auf den Pommes fügt ca. 130 kcal hinzu. Ketchup (30 kcal) ist die deutlich leichtere Alternative.", "icon": "🚫"},
-    {"title": "Currywurst ohne Pommes", "text": "Die Pommes machen ca. die Hälfte der Kalorien aus. Nur Currywurst mit Brötchen spart ca. 300 kcal.", "icon": "🍞"},
-    {"title": "Ohne Darm wählen", "text": "Currywurst ohne Darm hat ca. 20% weniger Fett. In Berlin ist das Standard.", "icon": "✂️"},
-    {"title": "Vegane Variante testen", "text": "Vegane Pommes-Currywurst hat ca. 750 kcal – über 200 kcal weniger als die klassische Version.", "icon": "🌱"}
+    {
+      "title": "Kleine Portion bestellen",
+      "text": "Die kleine Portion (300g, 876 kcal) spart rund 292 kcal gegenüber der Standard-Portion (1168 kcal).",
+      "icon": "📏"
+    },
+    {
+      "title": "Ohne Mayo",
+      "text": "Mayo auf den Pommes (30 g) fügt rund 204 kcal hinzu. Ketchup (30 g, rund 30 kcal) ist die deutlich leichtere Alternative.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Currywurst ohne Pommes",
+      "text": "Die Pommes machen gut die Hälfte der Kalorien aus. Die Currywurst allein (200g) hat rund 546 kcal.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Ohne Darm wählen",
+      "text": "Currywurst ohne Darm hat pro Portion rund ein Drittel weniger Fett. In Berlin ist das Standard.",
+      "icon": "✂️"
+    },
+    {
+      "title": "Vegane Variante testen",
+      "text": "Vegane Pommes-Currywurst hat ca. 987 kcal, rund 181 kcal weniger als die klassische Version.",
+      "icon": "🌱"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Pommes-Currywurst?", "answer": "Eine klassische Portion Pommes-Currywurst hat ca. 968 kcal. Die kleine Portion hat ca. 645 kcal, mit extra Mayo ca. 1100 kcal."},
-    {"question": "Ist Pommes-Currywurst das kalorienreichste Imbiss-Essen?", "answer": "Fast. Mit ca. 968 kcal liegt sie vorne. Nur eine große Döner-Box (XL, 1.236 kcal) und manche Burger-Menüs sind kalorienreicher."},
-    {"question": "Wie viel Fett hat Pommes-Currywurst?", "answer": "Eine Portion enthält ca. 58g Fett – das ist fast der gesamte Tagesbedarf. Mit Mayo sogar 72g Fett."},
-    {"question": "Was hat mehr Kalorien: Pommes-Currywurst oder Döner?", "answer": "Pommes-Currywurst (968 kcal) hat deutlich mehr Kalorien als ein Döner (696 kcal). Der Unterschied sind hauptsächlich die frittierten Pommes."},
-    {"question": "Kann man Pommes-Currywurst kalorienärmer essen?", "answer": "Ja: Kleine Portion bestellen (-300 kcal), ohne Mayo (-130 kcal), ohne Darm (-80 kcal), oder nur Wurst mit Brötchen statt Pommes."},
-    {"question": "Wie viel Protein hat Pommes-Currywurst?", "answer": "Eine Portion liefert ca. 28g Protein – relativ wenig für die Kalorienmenge. Der Großteil der Kalorien kommt aus Fett und Kohlenhydraten."}
+    {
+      "question": "Wie viele Kalorien hat Pommes-Currywurst?",
+      "answer": "Eine klassische Portion Pommes-Currywurst (400g) hat ca. 1168 kcal. Die kleine Portion (300g) hat ca. 876 kcal, mit extra Mayo ca. 1372 kcal. Gerechnet aus USDA-Werten für 145 g Bratwurst, 52 g Ketchup, 3 g Currypulver und 200 g Pommes."
+    },
+    {
+      "question": "Ist Pommes-Currywurst das kalorienreichste Imbiss-Essen?",
+      "answer": "Fast. Mit ca. 1168 kcal liegt sie weit vorne. Nur eine große Döner-Box (XL, 1.236 kcal) und manche Burger-Menüs sind kalorienreicher."
+    },
+    {
+      "question": "Wie viel Fett hat Pommes-Currywurst?",
+      "answer": "Eine Portion enthält ca. 72g Fett, das ist fast der gesamte Tagesbedarf. Mit Mayo sogar 95g Fett."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Pommes-Currywurst oder Döner?",
+      "answer": "Pommes-Currywurst (1168 kcal) hat deutlich mehr Kalorien als ein Döner (696 kcal). Der Unterschied sind hauptsächlich die frittierten Pommes."
+    },
+    {
+      "question": "Kann man Pommes-Currywurst kalorienärmer essen?",
+      "answer": "Ja: Kleine Portion bestellen (rund -292 kcal), ohne Mayo (-204 kcal), ohne Darm (-164 kcal), oder nur Wurst mit Brötchen statt Pommes."
+    },
+    {
+      "question": "Wie viel Protein hat Pommes-Currywurst?",
+      "answer": "Eine Portion liefert ca. 28g Protein, relativ wenig für die Kalorienmenge. Der Großteil der Kalorien kommt aus Fett und Kohlenhydraten."
+    }
   ],
-  "related_foods": ["currywurst", "pommes-frites", "bratwurst", "schnitzel"]
+  "related_foods": [
+    "currywurst",
+    "pommes-frites",
+    "bratwurst",
+    "schnitzel"
+  ]
 }

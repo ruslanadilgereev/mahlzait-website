@@ -3,49 +3,252 @@
   "name": "Hummus-Teller",
   "emoji": "🧆",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Teller 350 g): 200 g Hummus, selbstgemacht (FDC-ID 172454, Hummus, home prepared: 177 kcal), 120 g Fladenbrot (Pita) (FDC-ID 174915, Bread, pita, white, enriched: 275 kcal), 10 g Olivenöl zum Beträufeln (FDC-ID 171413, Oil, olive, salad or cooking: 884 kcal), 20 g Tomate (FDC-ID 170457, Tomatoes, red, ripe, raw, year round average: 18 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Hummus, selbstgemacht",
+        "g": 200,
+        "fdcId": 172454
+      },
+      {
+        "name": "Fladenbrot (Pita)",
+        "g": 120,
+        "fdcId": 174915
+      },
+      {
+        "name": "Olivenöl zum Beträufeln",
+        "g": 10,
+        "fdcId": 171413
+      },
+      {
+        "name": "Tomate",
+        "g": 20,
+        "fdcId": 170457
+      }
+    ]
+  },
   "seo": {
     "title": "Hummus-Teller Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Hummus-Teller? Nährwerte für Hummus mit Fladenbrot, Falafel & Gemüse. Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat ein Hummus-Teller? Mit Fladenbrot (350g) ca. 777 kcal. Nährwerte für Hummus mit Falafel, Gemüse & mehr. Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 166,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 14,
-    "fat_per_100g": 9,
-    "fiber_per_100g": 4,
+    "calories_per_100g": 222,
+    "protein_per_100g": 5.9,
+    "carbs_per_100g": 30.8,
+    "fat_per_100g": 8.2,
+    "fiber_per_100g": 3.1,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller (Hummus + Brot)"
   },
   "variants": [
-    {"name": "Hummus-Teller mit Fladenbrot", "portion_g": 350, "calories": 520, "protein": 18, "carbs": 58, "fat": 24, "tip": "Standard-Portion"},
-    {"name": "Hummus mit Falafel-Teller", "portion_g": 450, "calories": 680, "protein": 24, "carbs": 72, "fat": 34},
-    {"name": "Hummus pur (200g)", "portion_g": 200, "calories": 332, "protein": 16, "carbs": 28, "fat": 18, "tip": "Nur Hummus"},
-    {"name": "Hummus mit Gemüsesticks", "portion_g": 300, "calories": 380, "protein": 16, "carbs": 30, "fat": 20, "tip": "Kalorienärmste Variante"},
-    {"name": "Hummus-Teller komplett (Falafel, Salat, Brot)", "portion_g": 550, "calories": 780, "protein": 28, "carbs": 80, "fat": 40},
-    {"name": "Hummus mit Shawarma", "portion_g": 450, "calories": 720, "protein": 36, "carbs": 56, "fat": 38},
-    {"name": "Rote-Beete-Hummus-Teller", "portion_g": 350, "calories": 500, "protein": 16, "carbs": 56, "fat": 22, "tip": "Leicht süßlich"},
-    {"name": "Hummus als Beilage (100g)", "portion_g": 100, "calories": 166, "protein": 8, "carbs": 14, "fat": 9}
+    {
+      "name": "Hummus-Teller mit Fladenbrot",
+      "portion_g": 350,
+      "calories": 777,
+      "protein": 21,
+      "carbs": 108,
+      "fat": 29,
+      "tip": "Standard-Portion"
+    },
+    {
+      "name": "Hummus mit Falafel-Teller (350g + 4 Falafel, 140g)",
+      "portion_g": 490,
+      "calories": 1243,
+      "protein": 39,
+      "carbs": 153,
+      "fat": 54,
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "falafel",
+          "g": 140
+        }
+      ]
+    },
+    {
+      "name": "Hummus pur (200g)",
+      "portion_g": 200,
+      "calories": 354,
+      "protein": 10,
+      "carbs": 40,
+      "fat": 17,
+      "tip": "Nur Hummus",
+      "basis": [
+        {
+          "fdcId": 172454,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Hummus mit Gemüsesticks (150g + 150g Gemüse)",
+      "portion_g": 300,
+      "calories": 307,
+      "protein": 9,
+      "carbs": 40,
+      "fat": 13,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 172454,
+          "g": 150
+        },
+        {
+          "fdcId": 170393,
+          "g": 50
+        },
+        {
+          "fdcId": 168409,
+          "g": 50
+        },
+        {
+          "fdcId": 170108,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Hummus-Teller komplett (350g + 4 Falafel + 100g Salat)",
+      "portion_g": 590,
+      "calories": 1267,
+      "protein": 40,
+      "carbs": 157,
+      "fat": 54,
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "falafel",
+          "g": 140
+        },
+        {
+          "fdcId": 2709822,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Hummus als Beilage (100g)",
+      "portion_g": 100,
+      "calories": 177,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 172454,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Falafel-Teller", "calories": 650, "emoji": "🧆"},
-    {"name": "Baba Ganoush", "calories": 280, "emoji": "🍆"},
-    {"name": "Guacamole (200g)", "calories": 320, "emoji": "🥑"},
-    {"name": "Tzatziki (200g)", "calories": 140, "emoji": "🥒"}
+    {
+      "name": "Falafel (4 Stück, 140g)",
+      "calories": 466,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "falafel",
+          "g": 140
+        }
+      ]
+    },
+    {
+      "name": "Hummus Fertigprodukt (100g)",
+      "calories": 237,
+      "emoji": "🥫",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Guacamole (200g)",
+      "calories": 310,
+      "emoji": "🥑",
+      "basis": [
+        {
+          "slug": "guacamole",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Tzatziki (200g)",
+      "calories": 182,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "tzatziki",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Gemüse statt Brot", "text": "Gurke, Karotten und Paprika als Dipper sparen 200+ kcal im Vergleich zu Fladenbrot.", "icon": "🥕"},
-    {"title": "Hummus ist nährstoffreich", "text": "Kichererbsen liefern pflanzliches Protein, Ballaststoffe, Eisen und B-Vitamine.", "icon": "💪"},
-    {"title": "Portion kontrollieren", "text": "Hummus ist lecker, aber kalorienreich. 100g (166 kcal) reichen als Dip – 200g+ summiert sich schnell.", "icon": "⚖️"},
-    {"title": "Selbstgemacht ist besser", "text": "Selbst gemachter Hummus hat weniger Öl als Fertigprodukte. Kichererbsen, Tahini, Zitrone, Knoblauch – fertig.", "icon": "👩‍🍳"},
-    {"title": "Tahini dosieren", "text": "Tahini (Sesampaste) hat 600 kcal/100g. 1-2 EL im Hummus reichen für den Geschmack.", "icon": "🫘"}
+    {
+      "title": "Gemüse statt Brot",
+      "text": "Gurke, Karotten und Paprika (150g) als Dipper statt 120g Fladenbrot sparen rund 290 kcal.",
+      "icon": "🥕"
+    },
+    {
+      "title": "Hummus ist nährstoffreich",
+      "text": "Kichererbsen liefern pflanzliches Protein, Ballaststoffe, Eisen und B-Vitamine.",
+      "icon": "💪"
+    },
+    {
+      "title": "Portion kontrollieren",
+      "text": "Hummus ist lecker, aber kalorienreich. 100g (177 kcal) reichen als Dip, 200g und mehr summieren sich schnell.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Selbstgemacht ist besser",
+      "text": "Selbst gemachter Hummus hat weniger Öl als Fertigprodukte. Kichererbsen, Tahini, Zitrone, Knoblauch, fertig.",
+      "icon": "👩‍🍳"
+    },
+    {
+      "title": "Tahini dosieren",
+      "text": "Tahini (Sesampaste) ist sehr fettreich. 1-2 EL im Hummus reichen für den Geschmack.",
+      "icon": "🫘"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Hummus-Teller?", "answer": "Ein Hummus-Teller mit Fladenbrot (350g) hat ca. 520 kcal. Mit Falafel und Salat dazu ca. 680-780 kcal."},
-    {"question": "Ist Hummus gut zum Abnehmen?", "answer": "In Maßen ja. 100g Hummus haben 166 kcal bei 8g Protein und 4g Ballaststoffen. Als Dip mit Gemüse ideal."},
-    {"question": "Wie viel Protein hat Hummus?", "answer": "100g Hummus liefern ca. 8g pflanzliches Protein. Ein Hummus-Teller (200g) hat ca. 16g Protein."},
-    {"question": "Ist Hummus vegan?", "answer": "Ja, klassischer Hummus ist komplett vegan: Kichererbsen, Tahini, Olivenöl, Zitronensaft und Knoblauch."},
-    {"question": "Wie viele Kalorien hat Hummus aus dem Supermarkt?", "answer": "Fertig-Hummus hat ca. 250-300 kcal/100g – oft mehr als selbstgemacht, da mehr Öl und Tahini verwendet wird."},
-    {"question": "Was hat weniger Kalorien: Hummus oder Guacamole?", "answer": "Ähnlich viel. Hummus hat ca. 166 kcal/100g, Guacamole ca. 160 kcal/100g. Hummus hat mehr Protein und Ballaststoffe."}
+    {
+      "question": "Wie viele Kalorien hat ein Hummus-Teller?",
+      "answer": "Ein Hummus-Teller mit Fladenbrot (350g) hat ca. 777 kcal. Mit 4 Falafeln und Salat dazu sind es rund 1267 kcal. Gerechnet aus USDA-Werten für 200g selbstgemachten Hummus, 120g Fladenbrot, 10g Olivenöl und 20g Tomate."
+    },
+    {
+      "question": "Ist Hummus gut zum Abnehmen?",
+      "answer": "In Maßen ja. 100g selbstgemachter Hummus haben 177 kcal bei rund 5g Protein und 4g Ballaststoffen. Als Dip mit Gemüse ideal."
+    },
+    {
+      "question": "Wie viel Protein hat Hummus?",
+      "answer": "100g Hummus liefern ca. 5g pflanzliches Protein. Eine Portion Hummus pur (200g) hat ca. 10g Protein, der ganze Teller mit Fladenbrot rund 21g."
+    },
+    {
+      "question": "Ist Hummus vegan?",
+      "answer": "Ja, klassischer Hummus ist komplett vegan: Kichererbsen, Tahini, Olivenöl, Zitronensaft und Knoblauch."
+    },
+    {
+      "question": "Wie viele Kalorien hat Hummus aus dem Supermarkt?",
+      "answer": "Fertig-Hummus hat ca. 237 kcal/100g, deutlich mehr als selbstgemachter (177 kcal/100g), da mehr Öl und Tahini verwendet wird."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Hummus oder Guacamole?",
+      "answer": "Guacamole hat etwas weniger: rund 155 kcal/100g gegenüber 177 kcal/100g bei selbstgemachtem Hummus. Hummus liefert dafür mehr Protein."
+    }
   ],
-  "related_foods": ["falafel", "hummus", "shakshuka", "lahmacun"]
+  "related_foods": [
+    "falafel",
+    "hummus",
+    "shakshuka",
+    "lahmacun"
+  ]
 }

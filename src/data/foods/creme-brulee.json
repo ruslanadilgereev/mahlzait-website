@@ -3,50 +3,219 @@
   "name": "Crème brûlée",
   "emoji": "🔥",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Förmchen à 130 g): 380 g Sahne 30 % Fett (FDC-ID 170858, Cream, fluid, light whipping: 292 kcal), 80 g Eigelb (4 Stück) (FDC-ID 172184, Egg, yolk, raw, fresh: 322 kcal), 40 g Zucker für die Creme (FDC-ID 169655, Sugars, granulated: 387 kcal), 20 g Zucker für die Karamellkruste (FDC-ID 169655, Sugars, granulated: 387 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Sahne 30 % Fett",
+        "g": 380,
+        "fdcId": 170858
+      },
+      {
+        "name": "Eigelb (4 Stück)",
+        "g": 80,
+        "fdcId": 172184
+      },
+      {
+        "name": "Zucker für die Creme",
+        "g": 40,
+        "fdcId": 169655
+      },
+      {
+        "name": "Zucker für die Karamellkruste",
+        "g": 20,
+        "fdcId": 169655
+      }
+    ]
+  },
   "seo": {
     "title": "Crème brûlée Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Crème brûlée? Nährwerte pro 100g & Portion. Klassisch, Vanille, Schokolade & light im Vergleich + Tipps.",
-    "keywords": ["crème brûlée kalorien", "creme brulee nährwerte", "creme brulee kalorien pro portion", "creme brulee zucker", "creme brulee fett", "creme brulee sahne", "creme brulee gesund", "creme brulee protein"]
+    "description": "Wie viele Kalorien hat Crème brûlée? Nährwerte pro 100g & Portion. Klassisch, mit Schokolade & light im Vergleich + Tipps.",
+    "keywords": [
+      "crème brûlée kalorien",
+      "creme brulee nährwerte",
+      "creme brulee kalorien pro portion",
+      "creme brulee zucker",
+      "creme brulee fett",
+      "creme brulee sahne",
+      "creme brulee gesund",
+      "creme brulee protein"
+    ]
   },
   "overview": {
-    "calories_per_100g": 250,
+    "calories_per_100g": 308,
     "protein_per_100g": 4,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 16,
+    "carbs_per_100g": 14.3,
+    "fat_per_100g": 26.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 130,
     "typical_portion_name": "1 Förmchen"
   },
   "variants": [
-    { "name": "Klassische Crème brûlée (130g)", "portion_g": 130, "calories": 325, "protein": 5, "carbs": 31, "fat": 21 },
-    { "name": "Vanille Crème brûlée (130g)", "portion_g": 130, "calories": 325, "protein": 5, "carbs": 31, "fat": 21 },
-    { "name": "Schokoladen Crème brûlée (130g)", "portion_g": 130, "calories": 355, "protein": 6, "carbs": 34, "fat": 22 },
-    { "name": "Kleine Portion (80g)", "portion_g": 80, "calories": 200, "protein": 3, "carbs": 19, "fat": 13, "tip": "Mini-Förmchen" },
-    { "name": "Crème brûlée light (130g)", "portion_g": 130, "calories": 230, "protein": 6, "carbs": 26, "fat": 11, "tip": "Mit fettarmer Milch" },
-    { "name": "Lavendel Crème brûlée (130g)", "portion_g": 130, "calories": 320, "protein": 5, "carbs": 30, "fat": 20 },
-    { "name": "Espresso Crème brûlée (130g)", "portion_g": 130, "calories": 318, "protein": 5, "carbs": 29, "fat": 20 },
-    { "name": "Matcha Crème brûlée (130g)", "portion_g": 130, "calories": 310, "protein": 5, "carbs": 28, "fat": 20 }
+    {
+      "name": "Klassische Crème brûlée (130g)",
+      "portion_g": 130,
+      "calories": 400,
+      "protein": 5,
+      "carbs": 19,
+      "fat": 35
+    },
+    {
+      "name": "Schokoladen Crème brûlée (130g)",
+      "portion_g": 130,
+      "calories": 425,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 35,
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "fdcId": 170274,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Kleine Portion (80g)",
+      "portion_g": 80,
+      "calories": 246,
+      "protein": 3,
+      "carbs": 11,
+      "fat": 21,
+      "tip": "Mini-Förmchen"
+    },
+    {
+      "name": "Crème brûlée light (130g)",
+      "portion_g": 130,
+      "calories": 290,
+      "protein": 6,
+      "carbs": 19,
+      "fat": 22,
+      "tip": "Hälfte der Sahne durch Vollmilch ersetzt",
+      "basis": [
+        {
+          "fdcId": 170858,
+          "g": 47.5
+        },
+        {
+          "fdcId": 171265,
+          "g": 47.5
+        },
+        {
+          "fdcId": 172184,
+          "g": 20
+        },
+        {
+          "fdcId": 169655,
+          "g": 15
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Panna Cotta (130g)", "calories": 273, "emoji": "🍮" },
-    { "name": "Tiramisu (150g)", "calories": 425, "emoji": "🍰" },
-    { "name": "Vanillepudding (150g)", "calories": 165, "emoji": "🍮" },
-    { "name": "Mousse au Chocolat (100g)", "calories": 315, "emoji": "🍫" }
+    {
+      "name": "Panna Cotta (130g)",
+      "calories": 335,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "panna-cotta",
+          "g": 130
+        }
+      ]
+    },
+    {
+      "name": "Tiramisu (150g)",
+      "calories": 530,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "tiramisu",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Vanillepudding (150g)",
+      "calories": 170,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "pudding"
+        }
+      ]
+    },
+    {
+      "name": "Mousse au Chocolat (100g)",
+      "calories": 225,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "mousse-au-chocolat",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Milch statt nur Sahne", "text": "Klassisch: nur Sahne. Ersetze die Hälfte durch Vollmilch und spare ca. 95 kcal pro Portion. Die Konsistenz wird etwas leichter.", "icon": "🥛" },
-    { "title": "Weniger Karamellkruste", "text": "Die Zuckerkruste macht ca. 40-50 kcal aus. Eine dünnere Schicht reicht für das Crunch-Erlebnis, spart aber Kalorien.", "icon": "🔥" },
-    { "title": "Kleine Förmchen verwenden", "text": "80g statt 130g = 200 statt 325 kcal. Das Dessert wirkt in kleinen Förmchen genauso elegant.", "icon": "🥄" },
-    { "title": "Als besonderes Dessert planen", "text": "325 kcal pro Portion – kein tägliches Dessert. Aber 1-2x pro Woche als bewusster Genuss absolut okay.", "icon": "✨" },
-    { "title": "Eigelb = Protein-Boost", "text": "Crème brûlée enthält viel Eigelb (je Portion 2-3 Eigelb). Das liefert immerhin 5g Protein und wertvolles Vitamin D.", "icon": "🥚" }
+    {
+      "title": "Milch statt nur Sahne",
+      "text": "Klassisch: nur Sahne. Ersetze die Hälfte durch Vollmilch und spare ca. 110 kcal pro Portion. Die Konsistenz wird etwas leichter.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Weniger Karamellkruste",
+      "text": "Die Zuckerkruste macht rund 19 kcal pro Förmchen aus (5g Zucker). Eine dünnere Schicht reicht für das Crunch-Erlebnis, spart aber Kalorien.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Kleine Förmchen verwenden",
+      "text": "80g statt 130g = 246 statt 400 kcal. Das Dessert wirkt in kleinen Förmchen genauso elegant.",
+      "icon": "🥄"
+    },
+    {
+      "title": "Als besonderes Dessert planen",
+      "text": "400 kcal pro Portion, kein tägliches Dessert. Aber 1-2x pro Woche als bewusster Genuss absolut okay.",
+      "icon": "✨"
+    },
+    {
+      "title": "Eigelb = Protein-Boost",
+      "text": "Crème brûlée enthält viel Eigelb (in diesem Rezept 1 Eigelb pro Förmchen). Das liefert immerhin 5g Protein und wertvolles Vitamin D.",
+      "icon": "🥚"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Crème brûlée?", "answer": "Ein Förmchen (130g) hat ca. 325 kcal. Pro 100g sind es 250 kcal. Die Kombination aus Sahne, Eigelb und Zuckerkruste treibt den Wert." },
-    { "question": "Wie viele Kalorien hat Crème brûlée pro 100g?", "answer": "Ca. 250 kcal pro 100g. Damit liegt sie zwischen Panna Cotta (210 kcal) und Tiramisu (283 kcal). Hauptkalorienquelle: Sahne." },
-    { "question": "Was ist kalorienärmer: Crème brûlée oder Tiramisu?", "answer": "Crème brûlée: 325 kcal (130g). Tiramisu: 425 kcal (150g). Pro 100g: 250 vs. 283 kcal. Crème brûlée gewinnt in beiden Vergleichen." },
-    { "question": "Wie viel Fett hat Crème brûlée?", "answer": "Ca. 21g Fett pro Förmchen (130g). Das kommt hauptsächlich aus der Sahne und den Eigelben. Gesättigtes Fett macht den Großteil aus." },
-    { "question": "Kann man Crème brûlée kalorienärmer machen?", "answer": "Ja: Hälfte Sahne durch Milch ersetzen, weniger Zucker für die Kruste. Spart ca. 95 kcal pro Portion (230 statt 325 kcal)." },
-    { "question": "Ist Crème brûlée glutenfrei?", "answer": "Ja, klassische Crème brûlée ist glutenfrei: Sahne, Eigelb, Zucker und Vanille. Kein Mehl oder Getreidezusatz nötig." }
+    {
+      "question": "Wie viele Kalorien hat Crème brûlée?",
+      "answer": "Ein Förmchen (130g) hat ca. 400 kcal. Pro 100g sind es rund 308 kcal. Die Kombination aus Sahne, Eigelb und Zuckerkruste treibt den Wert. Gerechnet aus USDA-Werten für 4 Förmchen mit 380 g Sahne, 4 Eigelb (80 g) und 60 g Zucker."
+    },
+    {
+      "question": "Wie viele Kalorien hat Crème brûlée pro 100g?",
+      "answer": "Ca. 308 kcal pro 100g. Damit liegt sie unter Tiramisu (353 kcal). Hauptkalorienquelle: Sahne."
+    },
+    {
+      "question": "Was ist kalorienärmer: Crème brûlée oder Tiramisu?",
+      "answer": "Crème brûlée: 400 kcal (130g). Tiramisu: 530 kcal (150g). Pro 100g: 308 vs. 353 kcal. Crème brûlée gewinnt in beiden Vergleichen."
+    },
+    {
+      "question": "Wie viel Fett hat Crème brûlée?",
+      "answer": "Ca. 35g Fett pro Förmchen (130g). Das kommt hauptsächlich aus der Sahne und den Eigelben. Gesättigtes Fett macht den Großteil aus."
+    },
+    {
+      "question": "Kann man Crème brûlée kalorienärmer machen?",
+      "answer": "Ja: Hälfte Sahne durch Milch ersetzen, weniger Zucker für die Kruste. Spart ca. 110 kcal pro Portion (290 statt 400 kcal)."
+    },
+    {
+      "question": "Ist Crème brûlée glutenfrei?",
+      "answer": "Ja, klassische Crème brûlée ist glutenfrei: Sahne, Eigelb, Zucker und Vanille. Kein Mehl oder Getreidezusatz nötig."
+    }
   ],
-  "related_foods": ["panna-cotta", "tiramisu", "mousse-au-chocolat", "pudding"]
+  "related_foods": [
+    "panna-cotta",
+    "tiramisu",
+    "mousse-au-chocolat",
+    "pudding"
+  ]
 }

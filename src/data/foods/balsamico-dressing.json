@@ -3,9 +3,39 @@
   "name": "Balsamico-Dressing",
   "emoji": "🥗",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (je 100 g Balsamico-Dressing (Fertigdressing mit Wasseranteil)): 32 g Olivenöl (FDC-ID 171413, Oil, olive, salad or cooking: 884 kcal), 42 g Balsamico-Essig (FDC-ID 172241, Vinegar, balsamic: 88 kcal), 20 g Wasser (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal), 4 g Honig (FDC-ID 169640, Honey: 304 kcal), 2 g Senf (FDC-ID 172234, Mustard, prepared, yellow: 60 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Olivenöl",
+        "g": 32,
+        "fdcId": 171413
+      },
+      {
+        "name": "Balsamico-Essig",
+        "g": 42,
+        "fdcId": 172241
+      },
+      {
+        "name": "Wasser",
+        "g": 20,
+        "fdcId": 173647
+      },
+      {
+        "name": "Honig",
+        "g": 4,
+        "fdcId": 169640
+      },
+      {
+        "name": "Senf",
+        "g": 2,
+        "fdcId": 172234
+      }
+    ]
+  },
   "seo": {
     "title": "Balsamico-Dressing Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Balsamico-Dressing? Klassisch ca. 330 kcal pro 100g, ein Esslöffel (15g) rund 50 kcal. Nährwerte, Light-Varianten & Tipps.",
+    "description": "Wie viele Kalorien hat Balsamico-Dressing? Klassisch ca. 333 kcal pro 100g, ein Esslöffel (15g) rund 50 kcal. Nährwerte, Light-Varianten & Tipps.",
     "keywords": [
       "balsamico dressing kalorien",
       "balsamico dressing kcal",
@@ -18,11 +48,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 330,
-    "protein_per_100g": 0.5,
-    "carbs_per_100g": 12,
-    "fat_per_100g": 31,
-    "fiber_per_100g": 0.2,
+    "calories_per_100g": 333,
+    "protein_per_100g": 0.3,
+    "carbs_per_100g": 10.6,
+    "fat_per_100g": 32.1,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 30,
     "typical_portion_name": "2 EL (30g)"
   },
@@ -31,44 +61,62 @@
       "name": "1 EL Balsamico-Dressing (15g)",
       "portion_g": 15,
       "calories": 50,
-      "protein": 0.1,
-      "carbs": 1.8,
-      "fat": 4.7,
+      "protein": 0,
+      "carbs": 1.6,
+      "fat": 4.8,
       "tip": "Sparsame Menge zum Anmachen"
     },
     {
       "name": "2 EL Balsamico-Dressing (30g)",
       "portion_g": 30,
-      "calories": 99,
+      "calories": 100,
       "protein": 0.1,
-      "carbs": 3.6,
-      "fat": 9.3,
+      "carbs": 3.2,
+      "fat": 9.6,
       "tip": "Standard-Portion für einen Salat"
     },
     {
       "name": "Salatportion (50g)",
       "portion_g": 50,
-      "calories": 165,
-      "protein": 0.3,
-      "carbs": 6,
-      "fat": 15.5
+      "calories": 167,
+      "protein": 0.2,
+      "carbs": 5.3,
+      "fat": 16.1
     },
     {
       "name": "Balsamico-Dressing pro 100g",
       "portion_g": 100,
-      "calories": 330,
-      "protein": 0.5,
-      "carbs": 12,
-      "fat": 31
+      "calories": 333,
+      "protein": 0.3,
+      "carbs": 10.6,
+      "fat": 32.1
     },
     {
       "name": "Light-Balsamico-Dressing 2 EL (30g)",
       "portion_g": 30,
-      "calories": 33,
-      "protein": 0.2,
-      "carbs": 3.9,
-      "fat": 1.6,
-      "tip": "Fettreduzierte Variante, deutlich kalorienärmer"
+      "calories": 42,
+      "protein": 0.1,
+      "carbs": 3.2,
+      "fat": 3,
+      "tip": "Fettreduziert, mit 10 % Öl gerechnet",
+      "basis": [
+        {
+          "fdcId": 171413,
+          "g": 3
+        },
+        {
+          "fdcId": 172241,
+          "g": 14
+        },
+        {
+          "fdcId": 173647,
+          "g": 12
+        },
+        {
+          "fdcId": 169640,
+          "g": 1
+        }
+      ]
     },
     {
       "name": "Reiner Balsamico-Essig 1 EL (15g)",
@@ -77,53 +125,79 @@
       "protein": 0.1,
       "carbs": 2.6,
       "fat": 0,
-      "tip": "Pur fast fettfrei, ideal zum Abnehmen"
+      "tip": "Pur fast fettfrei, ideal zum Abnehmen",
+      "basis": [
+        {
+          "fdcId": 172241,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Großzügige Portion (70g)",
       "portion_g": 70,
-      "calories": 231,
-      "protein": 0.4,
-      "carbs": 8.4,
-      "fat": 21.7
+      "calories": 233,
+      "protein": 0.2,
+      "carbs": 7.4,
+      "fat": 22.5
     }
   ],
   "comparison": [
     {
-      "name": "Mayo",
-      "calories": 99,
-      "emoji": "🥚"
+      "name": "Mayonnaise (1 EL, 15g)",
+      "calories": 102,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "mayo"
+        }
+      ]
     },
     {
-      "name": "Olivenöl",
-      "calories": 135,
-      "emoji": "🫒"
+      "name": "Olivenöl (1 EL, 10g)",
+      "calories": 88,
+      "emoji": "🫒",
+      "basis": [
+        {
+          "slug": "olivenoel"
+        }
+      ]
     },
     {
-      "name": "Balsamico",
+      "name": "Balsamico-Essig (1 EL, 15g)",
       "calories": 13,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "slug": "balsamico"
+        }
+      ]
     },
     {
-      "name": "Sour Cream",
-      "calories": 60,
-      "emoji": "🥛"
+      "name": "Sour Cream (30g)",
+      "calories": 59,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sour-cream"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Öl ist der Kalorientreiber",
-      "text": "Die rund 330 kcal pro 100g stammen fast vollständig aus dem Öl. Reiner Balsamico-Essig hat nur etwa 88 kcal pro 100g.",
+      "text": "Die rund 333 kcal pro 100g stammen fast vollständig aus dem Öl. Reiner Balsamico-Essig hat nur etwa 88 kcal pro 100g.",
       "icon": "🫒"
     },
     {
       "title": "Sparsam dosieren",
-      "text": "Ein Esslöffel (15g) bringt schon rund 50 kcal mit. Träufeln statt gießen spart beim Salat schnell 100 kcal und mehr.",
+      "text": "Ein Esslöffel (15g) bringt schon rund 50 kcal mit. Träufeln statt gießen spart beim Salat schnell rund 133 kcal (2 EL statt 70g).",
       "icon": "🥄"
     },
     {
       "title": "Light-Variante wählen",
-      "text": "Fettreduzierte Balsamico-Dressings kommen oft auf etwa 110 kcal pro 100g statt 330 – bei gleichem Geschmack ein deutlicher Unterschied.",
+      "text": "Fettreduzierte Balsamico-Dressings kommen mit 10 % Öl gerechnet auf etwa 140 kcal pro 100g statt 333, ein deutlicher Unterschied.",
       "icon": "📉"
     },
     {
@@ -140,7 +214,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Balsamico-Dressing?",
-      "answer": "Klassisches Balsamico-Dressing hat etwa 330 kcal pro 100g. Eine typische Portion von 2 Esslöffeln (30g) liefert rund 99 kcal, ein einzelner Esslöffel (15g) etwa 50 kcal."
+      "answer": "Klassisches Balsamico-Dressing hat etwa 333 kcal pro 100g. Eine typische Portion von 2 Esslöffeln (30g) liefert rund 100 kcal, ein einzelner Esslöffel (15g) etwa 50 kcal. Gerechnet aus USDA-Werten je 100 g für 32 g Olivenöl, 42 g Balsamico-Essig, 20 g Wasser, 4 g Honig und 2 g Senf."
     },
     {
       "question": "Wie viele Kalorien hat ein Esslöffel Balsamico-Dressing?",
@@ -148,7 +222,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Balsamico-Dressing?",
-      "answer": "Balsamico-Dressing enthält etwa 12g Kohlenhydrate pro 100g, überwiegend Zucker aus dem Balsamico-Essig. Pro Esslöffel (15g) sind das rund 1,8g."
+      "answer": "Balsamico-Dressing enthält etwa 10,6g Kohlenhydrate pro 100g, überwiegend Zucker aus dem Balsamico-Essig und dem Honig. Pro Esslöffel (15g) sind das rund 1,6g."
     },
     {
       "question": "Ist Balsamico-Dressing zum Abnehmen geeignet?",
@@ -156,7 +230,7 @@
     },
     {
       "question": "Wie viel Protein steckt in Balsamico-Dressing?",
-      "answer": "Balsamico-Dressing liefert kaum Protein, nur etwa 0,5g pro 100g. Es ist kein Eiweißlieferant, sondern dient als geschmackgebende Beilage."
+      "answer": "Balsamico-Dressing liefert kaum Protein, nur etwa 0,3g pro 100g. Es ist kein Eiweißlieferant, sondern dient als geschmackgebende Beilage."
     },
     {
       "question": "Ist Balsamico-Dressing gesund?",

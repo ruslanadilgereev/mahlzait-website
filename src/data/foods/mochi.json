@@ -3,9 +3,35 @@
   "name": "Mochi",
   "emoji": "🍡",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (ca. 9 Stück à 40 g (375 g)): 150 g Klebreismehl (gemahlener Klebreis) (FDC-ID 168883, Rice, white, glutinous, unenriched, uncooked: 370 kcal), 50 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 200 g Wasser (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal), 15 g Speisestärke zum Bestäuben (FDC-ID 169698, Cornstarch: 381 kcal); 415 g Zutaten ergeben 375 g (beim Dämpfen bzw. Garen in der Mikrowelle verdampfen rund 10 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Klebreismehl (gemahlener Klebreis)",
+        "g": 150,
+        "fdcId": 168883
+      },
+      {
+        "name": "Zucker",
+        "g": 50,
+        "fdcId": 169655
+      },
+      {
+        "name": "Wasser",
+        "g": 200,
+        "fdcId": 173647
+      },
+      {
+        "name": "Speisestärke zum Bestäuben",
+        "g": 15,
+        "fdcId": 169698
+      }
+    ],
+    "gewicht_g": 375
+  },
   "seo": {
     "title": "Mochi Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mochi? Ein Stück (40g) hat ca. 94 kcal, 100g rund 235 kcal. Nährwerte, Varianten wie Daifuku & Eis-Mochi plus Tipps.",
+    "description": "Wie viele Kalorien hat Mochi? Ein Stück (40g) hat ca. 86 kcal, 100g rund 215 kcal. Nährwerte, Varianten wie Daifuku & Eis-Mochi plus Tipps.",
     "keywords": [
       "mochi kalorien",
       "mochi kcal",
@@ -17,11 +43,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 235,
-    "protein_per_100g": 3.5,
-    "carbs_per_100g": 51,
-    "fat_per_100g": 0.5,
-    "fiber_per_100g": 0.7,
+    "calories_per_100g": 215,
+    "protein_per_100g": 2.7,
+    "carbs_per_100g": 49.7,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Stück Mochi"
   },
@@ -29,86 +55,125 @@
     {
       "name": "1 Stück Mochi (40g)",
       "portion_g": 40,
-      "calories": 94,
-      "protein": 1.4,
-      "carbs": 20.4,
-      "fat": 0.2,
+      "calories": 86,
+      "protein": 1.1,
+      "carbs": 19.9,
+      "fat": 0.1,
       "tip": "Standardportion"
     },
     {
       "name": "2 Stück (80g)",
       "portion_g": 80,
-      "calories": 188,
-      "protein": 2.8,
-      "carbs": 40.8,
-      "fat": 0.4
+      "calories": 172,
+      "protein": 2.2,
+      "carbs": 39.8,
+      "fat": 0.2
     },
     {
       "name": "Portion 3 Stück (120g)",
       "portion_g": 120,
-      "calories": 282,
-      "protein": 4.2,
-      "carbs": 61.2,
-      "fat": 0.6
+      "calories": 258,
+      "protein": 3.2,
+      "carbs": 59.6,
+      "fat": 0.2
     },
     {
       "name": "100g pur",
       "portion_g": 100,
-      "calories": 235,
-      "protein": 3.5,
-      "carbs": 51,
-      "fat": 0.5
+      "calories": 215,
+      "protein": 2.7,
+      "carbs": 49.7,
+      "fat": 0.2
     },
     {
       "name": "Daifuku gefüllt (45g)",
       "portion_g": 45,
-      "calories": 112,
-      "protein": 1.8,
-      "carbs": 25.2,
-      "fat": 0.7,
-      "tip": "Mit süßer Bohnenpaste"
+      "calories": 100,
+      "protein": 1.4,
+      "carbs": 23.2,
+      "fat": 0.1,
+      "tip": "Mit süßer Bohnenpaste",
+      "basis": [
+        {
+          "g": 30
+        },
+        {
+          "fdcId": 173729,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Eis-Mochi (35g)",
       "portion_g": 35,
-      "calories": 75,
-      "protein": 1,
-      "carbs": 13.3,
-      "fat": 2.1,
-      "tip": "Mit Eiscreme-Füllung"
+      "calories": 74,
+      "protein": 1.1,
+      "carbs": 12.2,
+      "fat": 2.2,
+      "tip": "Mit Eiscreme-Füllung",
+      "basis": [
+        {
+          "g": 15
+        },
+        {
+          "fdcId": 167575,
+          "g": 20
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Macaron (1 St)",
-      "calories": 80,
-      "emoji": "🍬"
+      "calories": 75,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "macarons"
+        }
+      ]
     },
     {
-      "name": "Dattel (1 St)",
-      "calories": 68,
-      "emoji": "🌴"
+      "name": "Medjool-Dattel (1 St)",
+      "calories": 66,
+      "emoji": "🌴",
+      "basis": [
+        {
+          "slug": "medjool-datteln"
+        }
+      ]
     },
     {
       "name": "Reiswaffel (1 St)",
-      "calories": 35,
-      "emoji": "🍘"
+      "calories": 31,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "reiswaffeln"
+        }
+      ]
     },
     {
-      "name": "Gummibärchen (Handvoll)",
-      "calories": 86,
-      "emoji": "🐻"
+      "name": "Gummibärchen (Handvoll, 25g)",
+      "calories": 99,
+      "emoji": "🐻",
+      "basis": [
+        {
+          "fdcId": 2710359,
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klebreis macht satt",
-      "text": "Mochi besteht aus gestampftem Klebreis. Die Stärke liefert schnell Energie, ein einzelnes Stück mit 94 kcal ist als kleine Süßigkeit aber gut überschaubar.",
+      "text": "Mochi besteht aus gestampftem Klebreis oder Klebreismehl. Die Stärke liefert schnell Energie, ein einzelnes Stück mit 86 kcal ist als kleine Süßigkeit aber gut überschaubar.",
       "icon": "🍡"
     },
     {
       "title": "Fast fettfrei",
-      "text": "Purer Mochi hat nur etwa 0,5g Fett pro 100g. Die Kalorien stammen fast vollständig aus Kohlenhydraten, nicht aus Fett.",
+      "text": "Purer Mochi hat nur etwa 0,2g Fett pro 100g. Die Kalorien stammen fast vollständig aus Kohlenhydraten, nicht aus Fett.",
       "icon": "💧"
     },
     {
@@ -130,23 +195,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Mochi?",
-      "answer": "Ein Stück Mochi (40g) hat etwa 94 kcal. Pro 100g sind es rund 235 kcal."
+      "answer": "Ein Stück Mochi (40g) hat etwa 86 kcal. Pro 100g sind es rund 215 kcal. Gerechnet aus USDA-Werten für einen Teig aus 150g Klebreismehl, 50g Zucker, 200g Wasser und 15g Speisestärke (gegart rund 375g)."
     },
     {
       "question": "Wie viele Kalorien hat ein Eis-Mochi?",
-      "answer": "Ein Eis-Mochi (ca. 35g) liefert durch die Eiscreme-Füllung etwa 75 kcal, enthält dabei mehr Fett als purer Mochi."
+      "answer": "Ein Eis-Mochi (ca. 35g) liefert durch die Eiscreme-Füllung etwa 74 kcal, enthält dabei mehr Fett als purer Mochi."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mochi?",
-      "answer": "Mochi ist sehr kohlenhydratreich: 100g enthalten rund 51g Kohlenhydrate, da er aus Klebreis besteht. Ein Stück (40g) hat etwa 20g."
+      "answer": "Mochi ist sehr kohlenhydratreich: 100g enthalten rund 50g Kohlenhydrate, da er aus Klebreis besteht. Ein Stück (40g) hat etwa 20g."
     },
     {
       "question": "Wie viel Protein steckt in Mochi?",
-      "answer": "Mochi enthält nur wenig Eiweiß, etwa 3,5g pro 100g. Ein einzelnes Stück liefert rund 1,4g Protein."
+      "answer": "Mochi enthält nur wenig Eiweiß, etwa 2,7g pro 100g. Ein einzelnes Stück liefert rund 1,1g Protein."
     },
     {
       "question": "Ist Mochi zum Abnehmen geeignet?",
-      "answer": "Mochi ist sehr stärke- und kohlenhydratreich und macht durch fehlende Ballaststoffe nicht lange satt. In kleinen Mengen als Genuss ist er in einer Diät möglich, große Portionen liefern aber schnell viele Kalorien."
+      "answer": "Mochi ist sehr stärke- und kohlenhydratreich und macht durch wenig Ballaststoffe nicht lange satt. In kleinen Mengen als Genuss ist er in einer Diät möglich, große Portionen liefern aber schnell viele Kalorien."
     },
     {
       "question": "Ist Mochi gesund?",

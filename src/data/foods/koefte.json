@@ -3,9 +3,34 @@
   "name": "Köfte",
   "emoji": "🍢",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 11 Köfte à 40 g): 250 g Rinderhack gegrillt (FDC-ID 171797, Beef, ground, 80% lean meat / 20% fat, patty, cooked, broiled: 270 kcal), 110 g Lammhack gegrillt (FDC-ID 172544, Lamb, ground, cooked, broiled: 283 kcal), 60 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 20 g Paniermehl (FDC-ID 174928, Bread, crumbs, dry, grated, plain: 395 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Rinderhack gegrillt",
+        "g": 250,
+        "fdcId": 171797
+      },
+      {
+        "name": "Lammhack gegrillt",
+        "g": 110,
+        "fdcId": 172544
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 60,
+        "fdcId": 170000
+      },
+      {
+        "name": "Paniermehl",
+        "g": 20,
+        "fdcId": 174928
+      }
+    ]
+  },
   "seo": {
     "title": "Köfte Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Köfte? 100g gegrilltes Köfte haben ca. 245 kcal. Nährwerte pro Portion, Protein-Gehalt & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Köfte? 100g gegrilltes Köfte haben ca. 248 kcal. Nährwerte pro Portion, Protein-Gehalt & Tipps zum Abnehmen.",
     "keywords": [
       "köfte kalorien",
       "köfte kcal",
@@ -17,11 +42,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 245,
-    "protein_per_100g": 18,
-    "carbs_per_100g": 5,
-    "fat_per_100g": 17,
-    "fiber_per_100g": 0.6,
+    "calories_per_100g": 248,
+    "protein_per_100g": 21.6,
+    "carbs_per_100g": 4.5,
+    "fat_per_100g": 15.3,
+    "fiber_per_100g": 0.4,
     "typical_portion_g": 160,
     "typical_portion_name": "Portion (4 Stück)"
   },
@@ -29,94 +54,164 @@
     {
       "name": "1 Köfte (40g)",
       "portion_g": 40,
-      "calories": 98,
-      "protein": 7,
+      "calories": 99,
+      "protein": 9,
       "carbs": 2,
-      "fat": 7
+      "fat": 6
     },
     {
       "name": "Portion 4 Stück (160g)",
       "portion_g": 160,
-      "calories": 392,
-      "protein": 29,
-      "carbs": 8,
-      "fat": 27,
+      "calories": 397,
+      "protein": 35,
+      "carbs": 7,
+      "fat": 24,
       "tip": "Standard"
     },
     {
       "name": "Große Portion 6 Stück (240g)",
       "portion_g": 240,
-      "calories": 588,
-      "protein": 43,
-      "carbs": 12,
-      "fat": 41
+      "calories": 595,
+      "protein": 52,
+      "carbs": 11,
+      "fat": 37
     },
     {
-      "name": "Köfte-Teller mit Beilagen (300g)",
-      "portion_g": 300,
-      "calories": 735,
-      "protein": 54,
-      "carbs": 15,
-      "fat": 51
+      "name": "Köfte-Teller (4 Köfte + 100g Reis + 50g Salat)",
+      "portion_g": 310,
+      "calories": 539,
+      "protein": 38,
+      "carbs": 37,
+      "fat": 25,
+      "basis": [
+        {
+          "g": 160
+        },
+        {
+          "slug": "reis",
+          "g": 100
+        },
+        {
+          "fdcId": 2709822,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Köfte roh, ungebraten (100g)",
       "portion_g": 100,
-      "calories": 215,
-      "protein": 17,
+      "calories": 244,
+      "protein": 15,
       "carbs": 4,
-      "fat": 15,
-      "tip": "Vor dem Braten"
+      "fat": 18,
+      "tip": "Vor dem Braten",
+      "basis": [
+        {
+          "fdcId": 174036,
+          "g": 60
+        },
+        {
+          "fdcId": 174370,
+          "g": 26
+        },
+        {
+          "fdcId": 170000,
+          "g": 10.5
+        },
+        {
+          "fdcId": 174928,
+          "g": 3.5
+        }
+      ]
     },
     {
-      "name": "Köfte im Fladenbrot (250g)",
+      "name": "Köfte im Fladenbrot (4 Köfte + 90g Fladenbrot)",
       "portion_g": 250,
-      "calories": 575,
-      "protein": 32,
-      "carbs": 45,
-      "fat": 30
+      "calories": 644,
+      "protein": 43,
+      "carbs": 57,
+      "fat": 26,
+      "basis": [
+        {
+          "g": 160
+        },
+        {
+          "fdcId": 174915,
+          "g": 90
+        }
+      ]
     },
     {
       "name": "Çiğ Köfte vegan (100g)",
       "portion_g": 100,
-      "calories": 130,
-      "protein": 4,
-      "carbs": 25,
-      "fat": 2,
-      "tip": "Bulgur statt Fleisch"
+      "calories": 174,
+      "protein": 5,
+      "carbs": 31,
+      "fat": 5,
+      "tip": "Bulgur statt Fleisch",
+      "basis": [
+        {
+          "slug": "cig-koefte",
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Cevapcici (160g)",
-      "calories": 400,
-      "emoji": "🌭"
+      "calories": 419,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "cevapcici",
+          "g": 160
+        }
+      ]
     },
     {
       "name": "Frikadellen (160g)",
-      "calories": 344,
-      "emoji": "🍔"
+      "calories": 314,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "frikadellen",
+          "g": 160
+        }
+      ]
     },
     {
       "name": "Falafel (160g)",
-      "calories": 528,
-      "emoji": "🧆"
+      "calories": 533,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "falafel",
+          "g": 160
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust (160g)",
       "calories": 264,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 160
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hoher Proteingehalt",
-      "text": "Köfte liefert mit 18g Eiweiß pro 100g viel Protein. Eine Portion (160g) deckt rund 29g und sättigt dadurch lange.",
+      "text": "Köfte liefert mit rund 22g Eiweiß pro 100g viel Protein. Eine Portion (160g) liefert rund 35g und sättigt dadurch lange.",
       "icon": "💪"
     },
     {
       "title": "Fett ist der Kalorientreiber",
-      "text": "Mit 17g Fett pro 100g stammt der Großteil der Kalorien aus Fett. Mageres Hackfleisch (Rind oder Pute) senkt den Wert spürbar.",
+      "text": "Mit rund 15g Fett pro 100g stammt mehr als die Hälfte der Kalorien aus Fett. Mageres Hackfleisch (Rind oder Pute) senkt den Wert spürbar.",
       "icon": "🔥"
     },
     {
@@ -138,19 +233,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Köfte?",
-      "answer": "Gegrilltes Köfte hat etwa 245 kcal pro 100g. Eine typische Portion mit 4 Stück (160g) kommt auf rund 392 kcal."
+      "answer": "Gegrilltes Köfte hat etwa 248 kcal pro 100g. Eine typische Portion mit 4 Stück (160g) kommt auf rund 397 kcal. Gerechnet aus USDA-Werten für 250g gegrilltes Rinderhack, 110g gegrilltes Lammhack, 60g Zwiebeln und 20g Paniermehl (11 Köfte)."
     },
     {
       "question": "Wie viel Protein steckt in Köfte?",
-      "answer": "Köfte ist sehr eiweißreich: Pro 100g sind es etwa 18g Protein, eine Portion (160g) liefert rund 29g."
+      "answer": "Köfte ist sehr eiweißreich: Pro 100g sind es etwa 22g Protein, eine Portion (160g) liefert rund 35g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Köfte?",
-      "answer": "Köfte ist von Natur aus kohlenhydratarm mit nur etwa 5g pro 100g. Erst Beilagen wie Brot oder Reis erhöhen den Wert deutlich."
+      "answer": "Köfte ist von Natur aus kohlenhydratarm mit nur etwa 4,5g pro 100g. Erst Beilagen wie Brot oder Reis erhöhen den Wert deutlich."
     },
     {
       "question": "Ist Köfte zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Köfte sättigt durch den hohen Proteingehalt gut. Wegen der 17g Fett pro 100g am besten mit Salat statt Fladenbrot kombinieren und mageres Hackfleisch wählen."
+      "answer": "In Maßen ja. Köfte sättigt durch den hohen Proteingehalt gut. Wegen der rund 15g Fett pro 100g am besten mit Salat statt Fladenbrot kombinieren und mageres Hackfleisch wählen."
     },
     {
       "question": "Ist Köfte gesund?",
@@ -158,7 +253,7 @@
     },
     {
       "question": "Wie viele Kalorien hat Çiğ Köfte?",
-      "answer": "Die vegane Variante aus Bulgur (Çiğ Köfte) hat mit etwa 130 kcal pro 100g deutlich weniger Kalorien als klassisches Fleisch-Köfte."
+      "answer": "Die vegane Variante aus Bulgur (Çiğ Köfte) hat mit etwa 174 kcal pro 100g deutlich weniger Kalorien als klassisches Fleisch-Köfte (248 kcal)."
     }
   ],
   "related_foods": [

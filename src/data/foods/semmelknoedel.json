@@ -3,47 +3,228 @@
   "name": "Semmelknödel",
   "emoji": "🥟",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für ca. 11 Knödel à 75 g, Rezept wie Seite knodel): 300 g Knödelbrot (altbackene Semmeln) (FDC-ID 175031, Rolls, hard (includes kaiser): 293 kcal), 250 ml (258 g) Milch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 165 g Eier (3 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 80 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 30 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Knödelbrot (altbackene Semmeln)",
+        "g": 300,
+        "fdcId": 175031
+      },
+      {
+        "name": "Milch 3,5 %",
+        "g": 258,
+        "ml": 250,
+        "fdcId": 171265
+      },
+      {
+        "name": "Eier (3 Stück)",
+        "g": 165,
+        "fdcId": 171287
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 80,
+        "fdcId": 170000
+      },
+      {
+        "name": "Butter",
+        "g": 30,
+        "fdcId": 173430
+      }
+    ]
+  },
   "seo": {
     "title": "Semmelknödel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Semmelknödel? Nährwerte für Semmelknödel, Serviettenknödel & mehr. Mit Portionsrechner und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 170,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 4,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 182,
+    "protein_per_100g": 7.2,
+    "carbs_per_100g": 21.5,
+    "fat_per_100g": 7.4,
+    "fiber_per_100g": 1,
     "typical_portion_g": 150,
     "typical_portion_name": "2 Knödel"
   },
   "variants": [
-    {"name": "Semmelknödel klassisch", "portion_g": 150, "calories": 255, "protein": 9, "carbs": 42, "fat": 6, "tip": "Standardrezept mit Semmeln und Ei"},
-    {"name": "Serviettenknödel", "portion_g": 150, "calories": 240, "protein": 8, "carbs": 40, "fat": 5, "tip": "In Scheiben geschnitten"},
-    {"name": "Semmelknödel mit Speck", "portion_g": 150, "calories": 310, "protein": 12, "carbs": 38, "fat": 12, "tip": "Deftige Variante"},
-    {"name": "Semmelknödel Fertigprodukt", "portion_g": 150, "calories": 230, "protein": 7, "carbs": 39, "fat": 5, "tip": "Aus dem Kochbeutel"},
-    {"name": "Vollkorn-Semmelknödel", "portion_g": 150, "calories": 245, "protein": 10, "carbs": 38, "fat": 5, "tip": "Mehr Ballaststoffe"},
-    {"name": "Semmelknödel überbacken", "portion_g": 200, "calories": 380, "protein": 14, "carbs": 42, "fat": 17, "tip": "Mit Käse überbacken"}
+    {
+      "name": "Semmelknödel klassisch",
+      "portion_g": 150,
+      "calories": 273,
+      "protein": 11,
+      "carbs": 32,
+      "fat": 11,
+      "tip": "Standardrezept mit Semmeln und Ei"
+    },
+    {
+      "name": "Serviettenknödel",
+      "portion_g": 150,
+      "calories": 273,
+      "protein": 11,
+      "carbs": 32,
+      "fat": 11,
+      "tip": "Gleicher Teig, in Scheiben geschnitten"
+    },
+    {
+      "name": "Semmelknödel mit Speck",
+      "portion_g": 150,
+      "calories": 316,
+      "protein": 15,
+      "carbs": 29,
+      "fat": 15,
+      "tip": "Deftige Variante",
+      "basis": [
+        {
+          "g": 135
+        },
+        {
+          "fdcId": 2705889,
+          "g": 15
+        }
+      ]
+    },
+    {
+      "name": "Vollkorn-Semmelknödel",
+      "portion_g": 150,
+      "calories": 259,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 11,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 172794,
+          "g": 54
+        },
+        {
+          "fdcId": 171265,
+          "g": 46.5
+        },
+        {
+          "fdcId": 171287,
+          "g": 29.7
+        },
+        {
+          "fdcId": 170000,
+          "g": 14.4
+        },
+        {
+          "fdcId": 173430,
+          "g": 5.4
+        }
+      ]
+    },
+    {
+      "name": "Semmelknödel überbacken",
+      "portion_g": 200,
+      "calories": 427,
+      "protein": 20,
+      "carbs": 37,
+      "fat": 22,
+      "tip": "Mit Käse überbacken",
+      "basis": [
+        {
+          "g": 170
+        },
+        {
+          "fdcId": 171251,
+          "g": 30
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Kartoffelknödel", "calories": 120, "emoji": "🥔"},
-    {"name": "Spätzle", "calories": 150, "emoji": "🍝"},
-    {"name": "Reis gekocht", "calories": 130, "emoji": "🍚"},
-    {"name": "Nudeln gekocht", "calories": 150, "emoji": "🍝"}
+    {
+      "name": "Spätzle (1 Portion, 250g)",
+      "calories": 345,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaetzle"
+        }
+      ]
+    },
+    {
+      "name": "Reis gekocht (150g)",
+      "calories": 195,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Nudeln gekocht (150g)",
+      "calories": 237,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "nudeln",
+          "g": 150
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Altbackene Semmeln verwenden", "text": "Altbackene Brötchen saugen weniger Fett auf als frische – spart Kalorien und schmeckt authentischer.", "icon": "🍞"},
-    {"title": "Milch statt Sahne", "text": "Verwende fettarme Milch statt Sahne zum Einweichen. Spart ca. 40 kcal pro Portion.", "icon": "🥛"},
-    {"title": "Portionsgröße beachten", "text": "Ein Knödel wiegt ca. 75g. Zwei Knödel als Beilage reichen – im Restaurant werden oft drei serviert.", "icon": "⚖️"},
-    {"title": "Als Resteverwertung", "text": "Semmelknödel sind perfekt zur Verwertung alter Brötchen – nachhaltig und günstig.", "icon": "♻️"},
-    {"title": "Ohne Speck zubereiten", "text": "Lass den Speck weg und spare ca. 55 kcal pro Portion. Kräuter bringen stattdessen Geschmack.", "icon": "🌿"}
+    {
+      "title": "Altbackene Semmeln verwenden",
+      "text": "Altbackene Brötchen saugen weniger Fett auf als frische, das spart Kalorien und schmeckt authentischer.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Milch statt Sahne",
+      "text": "Verwende zum Einweichen fettarme Milch statt Vollmilch oder Sahne. Das spart Fett.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Ein Knödel wiegt ca. 75g. Zwei Knödel als Beilage reichen, im Restaurant werden oft drei serviert.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Als Resteverwertung",
+      "text": "Semmelknödel sind perfekt zur Verwertung alter Brötchen, nachhaltig und günstig.",
+      "icon": "♻️"
+    },
+    {
+      "title": "Ohne Speck zubereiten",
+      "text": "Lass den Speck weg und spare rund 43 kcal pro Portion. Kräuter bringen stattdessen Geschmack.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Semmelknödel?", "answer": "Ein Semmelknödel (ca. 75g) hat rund 128 kcal. Eine typische Portion von zwei Knödeln kommt auf ca. 255 kcal."},
-    {"question": "Sind Semmelknödel gut zum Abnehmen?", "answer": "Semmelknödel sind als Beilage moderat kalorienreich (170 kcal/100g). In Maßen (1-2 Stück) passen sie in eine ausgewogene Ernährung."},
-    {"question": "Was hat weniger Kalorien: Semmelknödel oder Kartoffelknödel?", "answer": "Kartoffelknödel haben mit ca. 120 kcal/100g weniger Kalorien als Semmelknödel (170 kcal/100g). Für eine kalorienärmere Beilage sind Kartoffelknödel die bessere Wahl."},
-    {"question": "Wie viele Kohlenhydrate haben Semmelknödel?", "answer": "Semmelknödel enthalten ca. 28g Kohlenhydrate pro 100g. Pro Portion (2 Knödel, 150g) sind das rund 42g Kohlenhydrate."},
-    {"question": "Kann man Semmelknödel kalorienärmer machen?", "answer": "Ja: Verwende fettarme Milch, lass Speck weg und nimm weniger Butter. So sparst du bis zu 60 kcal pro Portion."},
-    {"question": "Wie viel Protein haben Semmelknödel?", "answer": "Semmelknödel liefern ca. 6g Protein pro 100g. Pro Portion (150g) sind das rund 9g Protein – sie sind keine besonders proteinreiche Beilage."}
+    {
+      "question": "Wie viele Kalorien hat ein Semmelknödel?",
+      "answer": "Ein Semmelknödel (ca. 75g) hat rund 137 kcal. Eine typische Portion von zwei Knödeln kommt auf ca. 273 kcal. Gerechnet aus USDA-Werten wie auf der Seite Knödel: 300 g Knödelbrot, 250 ml Milch, 3 Eier, 80 g Zwiebeln und 30 g Butter."
+    },
+    {
+      "question": "Sind Semmelknödel gut zum Abnehmen?",
+      "answer": "Semmelknödel sind als Beilage moderat kalorienreich (182 kcal/100g). In Maßen (1-2 Stück) passen sie in eine ausgewogene Ernährung."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Semmelknödel oder Kartoffelknödel?",
+      "answer": "Kartoffelknödel haben meist weniger Kalorien als Semmelknödel (182 kcal/100g), weil sie überwiegend aus Kartoffeln bestehen. Für eine kalorienärmere Beilage sind Kartoffelknödel die bessere Wahl."
+    },
+    {
+      "question": "Wie viele Kohlenhydrate haben Semmelknödel?",
+      "answer": "Semmelknödel enthalten ca. 22g Kohlenhydrate pro 100g. Pro Portion (2 Knödel, 150g) sind das rund 32g Kohlenhydrate."
+    },
+    {
+      "question": "Kann man Semmelknödel kalorienärmer machen?",
+      "answer": "Ja: Verwende fettarme Milch, lass Speck weg und nimm weniger Butter. So sparst du spürbar Kalorien pro Portion."
+    },
+    {
+      "question": "Wie viel Protein haben Semmelknödel?",
+      "answer": "Semmelknödel liefern ca. 7g Protein pro 100g. Pro Portion (150g) sind das rund 11g Protein, sie sind keine besonders proteinreiche Beilage."
+    }
   ],
-  "related_foods": ["knodel", "spaetzle", "bratkartoffeln", "schweinebraten"]
+  "related_foods": [
+    "knodel",
+    "spaetzle",
+    "bratkartoffeln",
+    "schweinebraten"
+  ]
 }

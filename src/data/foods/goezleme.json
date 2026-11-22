@@ -3,9 +3,39 @@
   "name": "Gözleme",
   "emoji": "🫓",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Gözleme à 250 g): 125 g Yufka-Teig (Weizenfladen) (FDC-ID 175037, Tortillas, ready-to-bake or -fry, flour, refrigerated: 306 kcal), 60 g Spinat, gegart (FDC-ID 168463, Spinach, cooked, boiled, drained, without salt: 23 kcal), 40 g Feta (Beyaz Peynir) (FDC-ID 173420, Cheese, feta: 265 kcal), 15 g Zwiebel (FDC-ID 170000, Onions, raw: 40 kcal), 10 g Butter zum Bestreichen (FDC-ID 173430, Butter, without salt: 717 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Yufka-Teig (Weizenfladen)",
+        "g": 125,
+        "fdcId": 175037
+      },
+      {
+        "name": "Spinat, gegart",
+        "g": 60,
+        "fdcId": 168463
+      },
+      {
+        "name": "Feta (Beyaz Peynir)",
+        "g": 40,
+        "fdcId": 173420
+      },
+      {
+        "name": "Zwiebel",
+        "g": 15,
+        "fdcId": 170000
+      },
+      {
+        "name": "Butter zum Bestreichen",
+        "g": 10,
+        "fdcId": 173430
+      }
+    ]
+  },
   "seo": {
     "title": "Gözleme Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Gözleme? Eine ganze Gözleme mit Spinat-Feta (250g) hat ca. 600 kcal, 100g ca. 240 kcal. Nährwerte, Füllungen & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Gözleme? Eine ganze Gözleme mit Spinat-Feta (250g) hat ca. 580 kcal, 100g ca. 232 kcal. Nährwerte, Füllungen & Diät-Tipps.",
     "keywords": [
       "gözleme kalorien",
       "gözleme kcal",
@@ -16,11 +46,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 240,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 32,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 232,
+    "protein_per_100g": 7.2,
+    "carbs_per_100g": 26.8,
+    "fat_per_100g": 10.7,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 250,
     "typical_portion_name": "1 ganze Gözleme (Spinat-Feta)"
   },
@@ -28,105 +58,178 @@
     {
       "name": "Gözleme pro 100g",
       "portion_g": 100,
-      "calories": 240,
-      "protein": 8,
-      "carbs": 32,
-      "fat": 8
+      "calories": 232,
+      "protein": 7,
+      "carbs": 27,
+      "fat": 11
     },
     {
       "name": "Halbe Gözleme (125g)",
       "portion_g": 125,
-      "calories": 300,
-      "protein": 10,
-      "carbs": 40,
-      "fat": 10,
+      "calories": 290,
+      "protein": 9,
+      "carbs": 34,
+      "fat": 13,
       "tip": "Kleine Portion oder Vorspeise"
     },
     {
       "name": "Gözleme mit Spinat-Feta (250g)",
       "portion_g": 250,
-      "calories": 600,
-      "protein": 20,
-      "carbs": 80,
-      "fat": 20,
+      "calories": 580,
+      "protein": 18,
+      "carbs": 67,
+      "fat": 27,
       "tip": "Klassiker, Standardgröße"
     },
     {
       "name": "Gözleme mit Käse (240g)",
       "portion_g": 240,
-      "calories": 576,
-      "protein": 19,
-      "carbs": 77,
-      "fat": 19
+      "calories": 732,
+      "protein": 25,
+      "carbs": 66,
+      "fat": 41,
+      "tip": "Reine Feta-Füllung",
+      "basis": [
+        {
+          "fdcId": 175037,
+          "g": 125
+        },
+        {
+          "fdcId": 173420,
+          "g": 105
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Gözleme mit Kartoffel (250g)",
       "portion_g": 250,
-      "calories": 575,
-      "protein": 13,
-      "carbs": 95,
-      "fat": 15,
-      "tip": "Sättigend, etwas weniger Protein"
+      "calories": 546,
+      "protein": 12,
+      "carbs": 83,
+      "fat": 18,
+      "tip": "Sättigend, etwas weniger Protein",
+      "basis": [
+        {
+          "fdcId": 175037,
+          "g": 125
+        },
+        {
+          "fdcId": 170440,
+          "g": 100
+        },
+        {
+          "fdcId": 170000,
+          "g": 15
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Gözleme mit Hackfleisch (270g)",
       "portion_g": 270,
-      "calories": 730,
-      "protein": 27,
-      "carbs": 78,
-      "fat": 32,
-      "tip": "Fett- und kalorienreichste Füllung"
+      "calories": 724,
+      "protein": 38,
+      "carbs": 65,
+      "fat": 33,
+      "tip": "Proteinreichste Füllung",
+      "basis": [
+        {
+          "fdcId": 175037,
+          "g": 125
+        },
+        {
+          "fdcId": 174034,
+          "g": 100
+        },
+        {
+          "fdcId": 170000,
+          "g": 35
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Gözleme klein vom Markt (180g)",
       "portion_g": 180,
-      "calories": 432,
-      "protein": 14,
-      "carbs": 58,
-      "fat": 14
+      "calories": 418,
+      "protein": 13,
+      "carbs": 48,
+      "fat": 19
     }
   ],
   "comparison": [
     {
-      "name": "Börek (Stück)",
-      "calories": 350,
-      "emoji": "🥟"
+      "name": "Börek (1 Stück, 200g)",
+      "calories": 522,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "borek"
+        }
+      ]
     },
     {
       "name": "Lahmacun (ganz)",
       "calories": 351,
-      "emoji": "🫓"
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "lahmacun",
+          "variante": "Lahmacun pur"
+        }
+      ]
     },
     {
       "name": "Dönertasche",
       "calories": 696,
-      "emoji": "🌯"
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Pizza Margherita (Stück)",
-      "calories": 270,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (1 Stück, 140g)",
+      "calories": 372,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Füllung macht den Unterschied",
-      "text": "Spinat-Feta und Käse liegen bei rund 240 kcal pro 100g. Eine Hackfleisch-Gözleme ist mit etwa 270 kcal pro 100g deutlich gehaltvoller, weil mehr Fett aus dem Fleisch dazukommt.",
+      "text": "Spinat-Feta liegt bei rund 232 kcal pro 100g. Mit Hackfleisch sind es etwa 268 kcal, mit reiner Käsefüllung sogar rund 305 kcal pro 100g.",
       "icon": "🥬"
     },
     {
       "title": "Portionsgröße im Blick",
-      "text": "Eine ganze Gözleme vom Imbiss wiegt oft 250g und liefert damit rund 600 kcal. Wer weniger essen möchte, teilt sie und kombiniert sie mit einem frischen Salat.",
+      "text": "Eine ganze Gözleme vom Imbiss wiegt oft 250g und liefert damit rund 580 kcal. Wer weniger essen möchte, teilt sie und kombiniert sie mit einem frischen Salat.",
       "icon": "✂️"
     },
     {
       "title": "Weniger Öl spart Kalorien",
-      "text": "Beim Backen auf der heißen Platte wird oft Butter oder Öl auf den Teig gepinselt. Zu Hause kannst du sparsam ölen und so leicht 50 bis 80 kcal pro Gözleme einsparen.",
+      "text": "Beim Backen auf der heißen Platte wird oft Butter oder Öl auf den Teig gepinselt. Zu Hause kannst du sparsam fetten: Schon die halbe Buttermenge spart rund 36 kcal pro Gözleme.",
       "icon": "🫗"
     },
     {
       "title": "Eiweiß durch Füllung steigern",
-      "text": "Mit Feta oder magerem Hackfleisch kommt eine ganze Gözleme auf 20 bis 27g Eiweiß. Ein Klecks Joghurt dazu erhöht den Sättigungseffekt zusätzlich.",
+      "text": "Mit Feta oder magerem Hackfleisch kommt eine ganze Gözleme auf rund 18 bis 38g Eiweiß. Ein Klecks Joghurt dazu erhöht den Sättigungseffekt zusätzlich.",
       "icon": "💪"
     },
     {
@@ -138,23 +241,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Gözleme?",
-      "answer": "Eine ganze Gözleme mit Spinat-Feta (ca. 250g) hat rund 600 kcal. Pro 100g sind es etwa 240 kcal."
+      "answer": "Eine ganze Gözleme mit Spinat-Feta (ca. 250g) hat rund 580 kcal. Pro 100g sind es etwa 232 kcal. Gerechnet aus USDA-Werten für 125 g Teigfladen, 60 g Spinat, 40 g Feta, 15 g Zwiebel und 10 g Butter."
     },
     {
       "question": "Wie viele Kalorien hat Gözleme pro 100g?",
-      "answer": "Gözleme mit Käse oder Spinat-Feta liegt bei etwa 240 kcal pro 100g. Mit Hackfleisch sind es eher 270 kcal pro 100g."
+      "answer": "Gözleme mit Spinat-Feta liegt bei etwa 232 kcal pro 100g, mit reiner Käsefüllung bei rund 305 kcal. Mit Hackfleisch sind es etwa 268 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Gözleme?",
-      "answer": "Der Yufka-Teig liefert die meisten Kohlenhydrate. Eine ganze Gözleme (250g) enthält rund 80g Kohlenhydrate, pro 100g sind es etwa 32g."
+      "answer": "Der Yufka-Teig liefert die meisten Kohlenhydrate. Eine ganze Gözleme (250g) enthält rund 67g Kohlenhydrate, pro 100g sind es etwa 27g."
     },
     {
       "question": "Wie viel Eiweiß steckt in einer Gözleme?",
-      "answer": "Eine Gözleme mit Spinat-Feta kommt auf etwa 20g Eiweiß, eine Hackfleisch-Gözleme auf rund 27g. Pro 100g sind es etwa 8g."
+      "answer": "Eine Gözleme mit Spinat-Feta kommt auf etwa 18g Eiweiß, eine Hackfleisch-Gözleme auf rund 38g. Pro 100g sind es bei Spinat-Feta etwa 7g."
     },
     {
       "question": "Ist Gözleme zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Eine halbe Gözleme (ca. 300 kcal) mit Salat ist eine sättigende Mahlzeit. Achte auf die Hackfleisch-Variante, die mit 730 kcal pro Stück recht kalorienreich ist."
+      "answer": "In Maßen ja. Eine halbe Gözleme (ca. 290 kcal) mit Salat ist eine sättigende Mahlzeit. Achte auf Käse- und Hackfleisch-Varianten, die mit rund 724 bis 732 kcal pro Stück recht kalorienreich sind."
     },
     {
       "question": "Ist Gözleme gesund?",

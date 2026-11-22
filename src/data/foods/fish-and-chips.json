@@ -3,48 +3,247 @@
   "name": "Fish and Chips",
   "emoji": "🐟",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Portion à 400 g): 200 g Fischfilet im Teigmantel, frittiert (FDC-ID 169846, Restaurant, family style, fish fillet, battered or breaded, fried: 219 kcal), 200 g Pommes frites (Chips), frittiert (FDC-ID 2709461, Potato, french fries, fast food: 312 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Fischfilet im Teigmantel, frittiert",
+        "g": 200,
+        "fdcId": 169846
+      },
+      {
+        "name": "Pommes frites (Chips), frittiert",
+        "g": 200,
+        "fdcId": 2709461
+      }
+    ]
+  },
   "seo": {
     "title": "Fish and Chips Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Fish and Chips? Nährwerte für klassische und leichtere Varianten. Kostenloser Kalorien-Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 210,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 1.8,
+    "calories_per_100g": 266,
+    "protein_per_100g": 8.5,
+    "carbs_per_100g": 29.2,
+    "fat_per_100g": 12.8,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Fish and Chips klassisch", "portion_g": 400, "calories": 840, "protein": 44, "carbs": 80, "fat": 40, "tip": "Britischer Klassiker"},
-    {"name": "Fish and Chips (kleine Portion)", "portion_g": 280, "calories": 588, "protein": 31, "carbs": 56, "fat": 28},
-    {"name": "Backfisch mit Pommes", "portion_g": 380, "calories": 790, "protein": 38, "carbs": 75, "fat": 38, "tip": "Deutsche Variante"},
-    {"name": "Fish and Chips mit Erbsenpüree", "portion_g": 420, "calories": 870, "protein": 48, "carbs": 85, "fat": 38, "tip": "Traditionell britisch"},
-    {"name": "Gegrillter Fisch mit Pommes", "portion_g": 380, "calories": 620, "protein": 45, "carbs": 65, "fat": 20, "tip": "Ohne Panade – viel leichter"},
-    {"name": "Fish and Chips (Süßkartoffel-Pommes)", "portion_g": 400, "calories": 780, "protein": 42, "carbs": 78, "fat": 32, "tip": "Etwas mehr Ballaststoffe"},
-    {"name": "Vegane Fish and Chips", "portion_g": 380, "calories": 700, "protein": 18, "carbs": 85, "fat": 32, "tip": "Mit Tofish oder Banane"}
+    {
+      "name": "Fish and Chips klassisch",
+      "portion_g": 400,
+      "calories": 1064,
+      "protein": 34,
+      "carbs": 117,
+      "fat": 51,
+      "tip": "Britischer Klassiker"
+    },
+    {
+      "name": "Fish and Chips (kleine Portion)",
+      "portion_g": 280,
+      "calories": 745,
+      "protein": 24,
+      "carbs": 82,
+      "fat": 36
+    },
+    {
+      "name": "Backfisch mit Pommes",
+      "portion_g": 350,
+      "calories": 906,
+      "protein": 32,
+      "carbs": 96,
+      "fat": 44,
+      "tip": "Deutsche Variante mit 150 g Pommes",
+      "basis": [
+        {
+          "slug": "backfisch",
+          "variante": "Backfisch mit Pommes"
+        }
+      ]
+    },
+    {
+      "name": "Fish and Chips mit Erbsenpüree",
+      "portion_g": 480,
+      "calories": 1131,
+      "protein": 38,
+      "carbs": 129,
+      "fat": 51,
+      "tip": "Traditionell britisch, mit 80 g Erbsen",
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 170420,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Gegrillter Fisch mit Pommes",
+      "portion_g": 380,
+      "calories": 813,
+      "protein": 48,
+      "carbs": 83,
+      "fat": 31,
+      "tip": "Kabeljau ohne Panade, viel leichter",
+      "basis": [
+        {
+          "fdcId": 171956,
+          "g": 180
+        },
+        {
+          "fdcId": 2709461,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Gegrillter Fisch mit Ofenpommes",
+      "portion_g": 380,
+      "calories": 505,
+      "protein": 47,
+      "carbs": 51,
+      "fat": 13,
+      "tip": "Die leichteste Kombination",
+      "basis": [
+        {
+          "fdcId": 171956,
+          "g": 180
+        },
+        {
+          "fdcId": 2709460,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Fish and Chips (Süßkartoffel-Pommes)",
+      "portion_g": 400,
+      "calories": 1048,
+      "protein": 31,
+      "carbs": 97,
+      "fat": 69,
+      "tip": "Mehr Ballaststoffe, kaum weniger Kalorien",
+      "basis": [
+        {
+          "fdcId": 169846,
+          "g": 200
+        },
+        {
+          "fdcId": 2709713,
+          "g": 200
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
-    {"name": "Schnitzel mit Pommes", "calories": 850, "emoji": "🥩"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Lachs gegrillt", "calories": 208, "emoji": "🍣"}
+    {
+      "name": "Currywurst mit Pommes (400g)",
+      "calories": 1170,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Currywurst mit Pommes"
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel mit Pommes (400g)",
+      "calories": 1063,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel"
+        },
+        {
+          "slug": "pommes-frites"
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Lachsfilet gebraten (180g)",
+      "calories": 371,
+      "emoji": "🍣",
+      "basis": [
+        {
+          "slug": "lachs-gebraten"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Gegrillten Fisch wählen", "text": "Ohne Bierteig-Panade sparst du ca. 220 kcal pro Portion – und bekommst mehr Omega-3.", "icon": "🔥"},
-    {"title": "Portion teilen", "text": "Restaurant-Portionen sind oft riesig (500g+). Teile dir eine Portion oder nimm die kleine Variante.", "icon": "👥"},
-    {"title": "Zitrone statt Remoulade", "text": "Remoulade hat ca. 80 kcal pro EL. Zitronensaft ist kalorienfrei und schmeckt genauso gut.", "icon": "🍋"},
-    {"title": "Ofenpommes statt frittiert", "text": "Selbstgemachte Ofenpommes haben ca. 40% weniger Fett als frittierte Pommes.", "icon": "🍟"},
-    {"title": "Fisch ist wertvolles Protein", "text": "Trotz der Kalorien: Fish and Chips liefert 44g Protein und wertvolle Omega-3-Fettsäuren.", "icon": "💪"}
+    {
+      "title": "Gegrillten Fisch wählen",
+      "text": "Ohne Bierteig-Panade sparst du rund 251 kcal pro Portion und bekommst mehr Omega-3.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Portion teilen",
+      "text": "Restaurant-Portionen sind oft riesig (500g+). Teile dir eine Portion oder nimm die kleine Variante.",
+      "icon": "👥"
+    },
+    {
+      "title": "Zitrone statt Remoulade",
+      "text": "Remoulade ist sehr fettreich. Zitronensaft ist fast kalorienfrei und schmeckt genauso gut.",
+      "icon": "🍋"
+    },
+    {
+      "title": "Ofenpommes statt frittiert",
+      "text": "Mit Ofenpommes statt frittierten Pommes sinkt das Fett deutlich: Gegrillter Fisch mit Ofenpommes hat rund 13 g Fett statt 31 g.",
+      "icon": "🍟"
+    },
+    {
+      "title": "Fisch ist wertvolles Protein",
+      "text": "Trotz der Kalorien: Fish and Chips liefert 34g Protein und wertvolle Omega-3-Fettsäuren.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Fish and Chips?", "answer": "Eine klassische Portion Fish and Chips hat ca. 840 kcal (400g). Eine kleine Portion liegt bei ca. 590 kcal."},
-    {"question": "Ist Fish and Chips ungesund?", "answer": "Durch Frittieren und Panade sind Fish and Chips kalorienreich. Der Fisch selbst ist aber proteinreich und liefert Omega-3. Gegrillte Varianten sind deutlich gesünder."},
-    {"question": "Wie viel Protein haben Fish and Chips?", "answer": "Eine Portion Fish and Chips liefert ca. 44g Protein – hauptsächlich aus dem Fisch. Das ist ein guter Proteinwert für eine Hauptmahlzeit."},
-    {"question": "Was hat weniger Kalorien: Fish and Chips oder Döner?", "answer": "Ein Döner (696 kcal) hat weniger Kalorien als Fish and Chips (840 kcal). Beim Eiweiß liegen beide nah beieinander (47 g und 44 g)."},
-    {"question": "Kann man Fish and Chips kalorienärmer machen?", "answer": "Ja: Gegrillten Fisch statt panierten wählen und Ofenpommes statt frittierte. So kommst du auf ca. 500-620 kcal statt 840 kcal."},
-    {"question": "Welcher Fisch wird für Fish and Chips verwendet?", "answer": "Klassisch wird Kabeljau (Cod) oder Schellfisch (Haddock) verwendet. Beide haben ca. 80-90 kcal pro 100g ohne Panade und sind fettarm."}
+    {
+      "question": "Wie viele Kalorien haben Fish and Chips?",
+      "answer": "Eine klassische Portion Fish and Chips (200g Fisch, 200g Pommes) hat ca. 1064 kcal. Eine kleine Portion (280g) liegt bei ca. 745 kcal. Gerechnet aus USDA-Werten für frittiertes Fischfilet im Teigmantel und Fast-Food-Pommes."
+    },
+    {
+      "question": "Ist Fish and Chips ungesund?",
+      "answer": "Durch Frittieren und Panade sind Fish and Chips kalorienreich. Der Fisch selbst ist aber proteinreich und liefert Omega-3. Gegrillte Varianten sind deutlich gesünder."
+    },
+    {
+      "question": "Wie viel Protein haben Fish and Chips?",
+      "answer": "Eine Portion Fish and Chips liefert ca. 34g Protein, hauptsächlich aus dem Fisch. Das ist ein guter Proteinwert für eine Hauptmahlzeit."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Fish and Chips oder Döner?",
+      "answer": "Ein Döner (696 kcal) hat weniger Kalorien als Fish and Chips (1064 kcal). Beim Eiweiß liegt der Döner vorn (47 g gegenüber 34 g)."
+    },
+    {
+      "question": "Kann man Fish and Chips kalorienärmer machen?",
+      "answer": "Ja: Gegrillten Fisch statt panierten wählen und Ofenpommes statt frittierte. So kommst du auf ca. 505 kcal statt 1064 kcal."
+    },
+    {
+      "question": "Welcher Fisch wird für Fish and Chips verwendet?",
+      "answer": "Klassisch wird Kabeljau (Cod) oder Schellfisch (Haddock) verwendet. Gegarter Kabeljau ohne Panade hat laut USDA rund 105 kcal pro 100g und ist fettarm."
+    }
   ],
-  "related_foods": ["pommes-frites", "backfisch", "schnitzel", "bratwurst"]
+  "related_foods": [
+    "pommes-frites",
+    "backfisch",
+    "schnitzel",
+    "bratwurst"
+  ]
 }

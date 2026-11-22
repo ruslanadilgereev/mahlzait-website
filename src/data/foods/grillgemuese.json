@@ -3,9 +3,45 @@
   "name": "Grillgemüse",
   "emoji": "🍆",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Portionen à 200 g): 300 g Zucchini (FDC-ID 169291, Squash, summer, zucchini, includes skin, raw: 17 kcal), 250 g Paprika rot (FDC-ID 170108, Peppers, sweet, red, raw: 26 kcal), 250 g Aubergine (FDC-ID 169228, Eggplant, raw: 25 kcal), 100 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 100 g Champignons (FDC-ID 169251, Mushrooms, white, raw: 22 kcal), 30 g Olivenöl (FDC-ID 171413, Oil, olive, salad or cooking: 884 kcal); 1030 g Zutaten ergeben 800 g (Wasserverlust beim Grillen rund 22 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Zucchini",
+        "g": 300,
+        "fdcId": 169291
+      },
+      {
+        "name": "Paprika rot",
+        "g": 250,
+        "fdcId": 170108
+      },
+      {
+        "name": "Aubergine",
+        "g": 250,
+        "fdcId": 169228
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 100,
+        "fdcId": 170000
+      },
+      {
+        "name": "Champignons",
+        "g": 100,
+        "fdcId": 169251
+      },
+      {
+        "name": "Olivenöl",
+        "g": 30,
+        "fdcId": 171413
+      }
+    ],
+    "gewicht_g": 800
+  },
   "seo": {
     "title": "Grillgemüse Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Grillgemüse? Ca. 70 kcal pro 100g. Nährwerte, Portionen & Diät-Tipps für gegrilltes Gemüse im Überblick.",
+    "description": "Wie viele Kalorien hat Grillgemüse? Ca. 63 kcal pro 100g. Nährwerte, Portionen & Diät-Tipps für gegrilltes Gemüse im Überblick.",
     "keywords": [
       "grillgemüse kalorien",
       "grillgemüse kcal",
@@ -16,11 +52,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 70,
-    "protein_per_100g": 2,
-    "carbs_per_100g": 6,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 63,
+    "protein_per_100g": 1.6,
+    "carbs_per_100g": 6.5,
+    "fat_per_100g": 4.1,
+    "fiber_per_100g": 2.3,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion (200g)"
   },
@@ -28,82 +64,97 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 105,
-      "protein": 3,
-      "carbs": 9,
-      "fat": 5
+      "calories": 95,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 6
     },
     {
       "name": "1 Portion (200g)",
       "portion_g": 200,
-      "calories": 140,
-      "protein": 4,
-      "carbs": 12,
-      "fat": 7,
+      "calories": 126,
+      "protein": 3,
+      "carbs": 13,
+      "fat": 8,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (300g)",
       "portion_g": 300,
-      "calories": 210,
-      "protein": 6,
-      "carbs": 18,
-      "fat": 11
+      "calories": 189,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 12
     },
     {
-      "name": "Grillgemüse ohne Öl (200g)",
-      "portion_g": 200,
-      "calories": 70,
-      "protein": 4,
-      "carbs": 12,
-      "fat": 1,
-      "tip": "Kalorienarm"
-    },
-    {
-      "name": "Grillgemüse mariniert in Öl (200g)",
-      "portion_g": 200,
-      "calories": 240,
-      "protein": 4,
-      "carbs": 12,
-      "fat": 18
-    },
-    {
-      "name": "Antipasti aus dem Glas (100g)",
-      "portion_g": 100,
-      "calories": 130,
-      "protein": 2,
-      "carbs": 6,
-      "fat": 11
+      "name": "Grillgemüse in Öl mariniert (200g + 10g Öl)",
+      "portion_g": 210,
+      "calories": 214,
+      "protein": 3,
+      "carbs": 13,
+      "fat": 18,
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 171413,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Grillgemüse-Spieß (120g)",
       "portion_g": 120,
-      "calories": 84,
+      "calories": 76,
       "protein": 2,
-      "carbs": 7,
-      "fat": 4
+      "carbs": 8,
+      "fat": 5
     }
   ],
   "comparison": [
     {
       "name": "Grillgemüse (200g)",
-      "calories": 140,
-      "emoji": "🍆"
+      "calories": 126,
+      "emoji": "🍆",
+      "basis": [
+        {
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Pommes frites (200g)",
       "calories": 624,
-      "emoji": "🍟"
+      "emoji": "🍟",
+      "basis": [
+        {
+          "slug": "pommes-frites",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Bratkartoffeln (200g)",
-      "calories": 280,
-      "emoji": "🥔"
+      "calories": 370,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "bratkartoffeln",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Gemischter Salat (200g)",
-      "calories": 60,
-      "emoji": "🥗"
+      "name": "Gemischter Salat ohne Dressing (200g)",
+      "calories": 48,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "fdcId": 2709822,
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
@@ -114,7 +165,7 @@
     },
     {
       "title": "Ideal zum Abnehmen",
-      "text": "Mit rund 70 kcal pro 100g und viel Wasser und Ballaststoffen sättigt Grillgemüse gut, ohne viele Kalorien zu liefern.",
+      "text": "Mit rund 63 kcal pro 100g und viel Wasser und Ballaststoffen sättigt Grillgemüse gut, ohne viele Kalorien zu liefern.",
       "icon": "⚖️"
     },
     {
@@ -129,30 +180,30 @@
     },
     {
       "title": "Antipasti aus dem Glas beachten",
-      "text": "Eingelegtes Grillgemüse schwimmt oft in reichlich Öl und kommt so auf etwa 130 kcal pro 100g. Vor dem Verzehr gut abtropfen lassen.",
+      "text": "Eingelegtes Grillgemüse schwimmt oft in reichlich Öl und hat dadurch deutlich mehr Kalorien. Vor dem Verzehr gut abtropfen lassen.",
       "icon": "🫙"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Grillgemüse?",
-      "answer": "Eine normale Portion Grillgemüse (200g), mit etwas Öl gegrillt, hat rund 140 kcal. Pro 100g sind es etwa 70 kcal."
+      "answer": "Eine normale Portion Grillgemüse (200g), mit etwas Öl gegrillt, hat rund 126 kcal. Pro 100g sind es etwa 63 kcal. Gerechnet aus USDA-Werten für 300g Zucchini, je 250g Paprika und Aubergine, je 100g Zwiebeln und Champignons und 30g Olivenöl, die nach dem Grillen rund 800g ergeben."
     },
     {
       "question": "Wie viele Kalorien hat Grillgemüse ohne Öl?",
-      "answer": "Ohne zugesetztes Öl sind es nur etwa 35 kcal pro 100g, also rund 70 kcal für eine Portion von 200g."
+      "answer": "Gut die Hälfte der Kalorien stammt aus dem Öl. Ohne zugesetztes Öl hat Grillgemüse deshalb nur rund halb so viele Kalorien."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Grillgemüse?",
-      "answer": "Grillgemüse enthält etwa 6g Kohlenhydrate pro 100g und ist damit recht kohlenhydratarm. Eine Portion (200g) liefert rund 12g."
+      "answer": "Grillgemüse enthält etwa 6,5g Kohlenhydrate pro 100g und ist damit recht kohlenhydratarm. Eine Portion (200g) liefert rund 13g."
     },
     {
       "question": "Wie viel Protein hat Grillgemüse?",
-      "answer": "Mit rund 2g Eiweiß pro 100g ist Grillgemüse keine nennenswerte Proteinquelle. Kombiniert mit Halloumi, Feta oder Hülsenfrüchten steigt der Eiweißgehalt deutlich."
+      "answer": "Mit rund 1,6g Eiweiß pro 100g ist Grillgemüse keine nennenswerte Proteinquelle. Kombiniert mit Halloumi, Feta oder Hülsenfrüchten steigt der Eiweißgehalt deutlich."
     },
     {
       "question": "Ist Grillgemüse gut zum Abnehmen?",
-      "answer": "Ja. Grillgemüse ist kalorienarm, reich an Ballaststoffen und Wasser und sättigt gut. Entscheidend ist, sparsam mit Öl umzugehen."
+      "answer": "Ja. Grillgemüse ist kalorienarm, liefert Ballaststoffe und viel Wasser und sättigt gut. Entscheidend ist, sparsam mit Öl umzugehen."
     },
     {
       "question": "Ist Grillgemüse gesund?",

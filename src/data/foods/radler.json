@@ -3,47 +3,269 @@
   "name": "Radler",
   "emoji": "🍋",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Halbe 0,5 l (halb Bier, halb Zitronenlimonade)): 250 ml (254 g) Bier (Pils) (FDC-ID 2710616, Beer: 43 kcal), 250 ml (260 g) Zitronenlimonade (FDC-ID 173206, Beverages, carbonated, SPRITE, lemon-lime, without caffeine: 40 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Bier (Pils)",
+        "g": 254,
+        "ml": 250,
+        "fdcId": 2710616
+      },
+      {
+        "name": "Zitronenlimonade",
+        "g": 260,
+        "ml": 250,
+        "fdcId": 173206
+      }
+    ]
+  },
   "seo": {
     "title": "Radler Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Radler? Nährwerte für verschiedene Biermischgetränke und Portionsgrößen. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 37,
-    "protein_per_100g": 0.2,
-    "carbs_per_100g": 4.8,
+    "calories_per_100g": 41,
+    "protein_per_100g": 0.3,
+    "carbs_per_100g": 6.9,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 500,
+    "typical_portion_g": 514,
     "typical_portion_name": "1 Halbe (0,5l)"
   },
   "variants": [
-    {"name": "Radler klassisch (0,5l)", "portion_g": 500, "calories": 185, "protein": 1, "carbs": 24, "fat": 0, "tip": "Halb Bier, halb Limonade"},
-    {"name": "Naturtrübes Radler (0,5l)", "portion_g": 500, "calories": 190, "protein": 1, "carbs": 26, "fat": 0},
-    {"name": "Alkoholfreies Radler (0,5l)", "portion_g": 500, "calories": 120, "protein": 1, "carbs": 28, "fat": 0, "tip": "Wenigste Kalorien"},
-    {"name": "Grapefruit-Radler (0,5l)", "portion_g": 500, "calories": 195, "protein": 1, "carbs": 26, "fat": 0},
-    {"name": "Russ'n (Weizen + Limo, 0,5l)", "portion_g": 500, "calories": 195, "protein": 1, "carbs": 24, "fat": 0},
-    {"name": "Radler (0,33l Flasche)", "portion_g": 330, "calories": 122, "protein": 0.7, "carbs": 16, "fat": 0, "tip": "Kleinere Portion"}
+    {
+      "name": "Radler klassisch (0,5l)",
+      "portion_g": 514,
+      "calories": 211,
+      "protein": 1.5,
+      "carbs": 35.5,
+      "fat": 0,
+      "tip": "Halb Bier, halb Limonade"
+    },
+    {
+      "name": "Naturtrübes Radler (0,5l)",
+      "portion_g": 516,
+      "calories": 230,
+      "protein": 1.2,
+      "carbs": 40.7,
+      "fat": 0,
+      "tip": "Mit naturtrüber Zitronenlimonade (mit Saftanteil)",
+      "basis": [
+        {
+          "fdcId": 2710616,
+          "ml": 250,
+          "g": 254
+        },
+        {
+          "fdcId": 2710570,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Alkoholfreies Radler (0,5l)",
+      "portion_g": 510,
+      "calories": 197,
+      "protein": 0.7,
+      "carbs": 46.5,
+      "fat": 0.4,
+      "tip": "Mit alkoholfreiem Bier",
+      "basis": [
+        {
+          "fdcId": 174863,
+          "ml": 250,
+          "g": 250
+        },
+        {
+          "fdcId": 173206,
+          "ml": 250,
+          "g": 260
+        }
+      ]
+    },
+    {
+      "name": "Radler mit Diät-Limonade (0,5l)",
+      "portion_g": 508,
+      "calories": 114,
+      "protein": 1.4,
+      "carbs": 9.8,
+      "fat": 0.1,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 2710616,
+          "ml": 250,
+          "g": 254
+        },
+        {
+          "fdcId": 2710537,
+          "ml": 250,
+          "g": 254
+        }
+      ]
+    },
+    {
+      "name": "Grapefruit-Radler (0,5l)",
+      "portion_g": 516,
+      "calories": 214,
+      "protein": 1.3,
+      "carbs": 35.6,
+      "fat": 0.1,
+      "tip": "Mit Fruchtlimonade gerechnet",
+      "basis": [
+        {
+          "fdcId": 2710616,
+          "ml": 250,
+          "g": 254
+        },
+        {
+          "fdcId": 2710551,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Russ'n (Weizen + Limo, 0,5l)",
+      "portion_g": 511,
+      "calories": 212,
+      "protein": 1.3,
+      "carbs": 35.3,
+      "fat": 0.1,
+      "basis": [
+        {
+          "fdcId": 168746,
+          "ml": 250,
+          "g": 251
+        },
+        {
+          "fdcId": 173206,
+          "ml": 250,
+          "g": 260
+        }
+      ]
+    },
+    {
+      "name": "Radler (0,33l Flasche)",
+      "portion_g": 339,
+      "calories": 139,
+      "protein": 1,
+      "carbs": 23.4,
+      "fat": 0,
+      "tip": "Kleinere Portion"
+    }
   ],
   "comparison": [
-    {"name": "Pils (0,5l)", "calories": 210, "emoji": "🍺"},
-    {"name": "Weizenbier (0,5l)", "calories": 225, "emoji": "🍺"},
-    {"name": "Cola (0,5l)", "calories": 210, "emoji": "🥤"},
-    {"name": "Apfelsaftschorle (0,5l)", "calories": 120, "emoji": "🍎"}
+    {
+      "name": "Pils (0,5l)",
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Weizenbier (0,5l)",
+      "calories": 216,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "weizenbier"
+        }
+      ]
+    },
+    {
+      "name": "Cola (0,5l)",
+      "calories": 220,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
+    },
+    {
+      "name": "Apfelsaftschorle (0,5l)",
+      "calories": 121,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 250,
+          "g": 262
+        },
+        {
+          "fdcId": 2710708,
+          "ml": 250,
+          "g": 254
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Weniger Kalorien als Bier", "text": "Ein Radler hat ca. 185 kcal vs. 210 kcal für Pils (0,5l) – spart 25 kcal pro Glas.", "icon": "📉"},
-    {"title": "Alkoholfrei als Durstlöscher", "text": "Alkoholfreies Radler hat nur 120 kcal/0,5l – perfekt für den Sommer ohne Alkoholwirkung.", "icon": "☀️"},
-    {"title": "Vorsicht: Zucker", "text": "Radler hat durch die Limonade ca. 24g Kohlenhydrate/0,5l – mehr als reines Bier (12g).", "icon": "🍬"},
-    {"title": "Selbst mischen", "text": "Mische Bier mit Diät-Limonade oder Mineralwasser mit Zitrone für ein kalorienarmes Radler (ca. 110 kcal).", "icon": "🍋"},
-    {"title": "2,5% statt 5% Alkohol", "text": "Radler hat nur ca. 2,5% Alkohol – halb so viel wie Pils. Dadurch weniger Alkohol-Kalorien.", "icon": "📊"}
+    {
+      "title": "Kaum weniger Kalorien als Bier",
+      "text": "Ein Radler hat ca. 211 kcal, ein Pils (0,5l) rund 215 kcal. Die Limonade ersetzt Alkohol-Kalorien durch Zucker-Kalorien.",
+      "icon": "📉"
+    },
+    {
+      "title": "Alkoholfrei als Durstlöscher",
+      "text": "Alkoholfreies Radler hat rund 197 kcal/0,5l, ist also kaum leichter, aber ohne Alkoholwirkung.",
+      "icon": "☀️"
+    },
+    {
+      "title": "Vorsicht: Zucker",
+      "text": "Radler hat durch die Limonade ca. 36g Kohlenhydrate/0,5l, mehr als reines Bier (rund 18g).",
+      "icon": "🍬"
+    },
+    {
+      "title": "Selbst mischen",
+      "text": "Mische Bier mit Diät-Limonade oder Mineralwasser mit Zitrone für ein kalorienarmes Radler (rund 114 kcal).",
+      "icon": "🍋"
+    },
+    {
+      "title": "2,5% statt 5% Alkohol",
+      "text": "Radler hat nur ca. 2,5% Alkohol, halb so viel wie Pils. Dadurch weniger Alkohol-Kalorien.",
+      "icon": "📊"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Radler?", "answer": "Ein Radler (0,5l) hat ca. 185 kcal. Alkoholfrei nur ca. 120 kcal."},
-    {"question": "Hat Radler weniger Kalorien als Bier?", "answer": "Ja – Radler (185 kcal) hat weniger als Pils (210 kcal) oder Weizenbier (225 kcal) pro 0,5l."},
-    {"question": "Wie viel Zucker hat ein Radler?", "answer": "Ca. 24g Kohlenhydrate pro 0,5l, davon ca. 12g Zucker aus der Limonade. Mehr als reines Bier."},
-    {"question": "Ist Radler ein Biermischgetränk?", "answer": "Ja – Radler besteht aus 50% Bier und 50% Zitronenlimonade. Es hat ca. 2,5% Alkohol."},
-    {"question": "Macht Radler weniger betrunken als Bier?", "answer": "Ja – mit ca. 2,5% Alkohol hat Radler halb so viel Alkohol wie Pils (ca. 5%). Aber Vorsicht: man trinkt oft mehr."},
-    {"question": "Kann man Radler beim Abnehmen trinken?", "answer": "Gelegentlich ja. Ein alkoholfreies Radler (120 kcal) ist die bessere Wahl. Regelmäßig sind es aber 'leere' Kalorien."}
+    {
+      "question": "Wie viele Kalorien hat ein Radler?",
+      "answer": "Ein Radler (0,5l) hat ca. 211 kcal. Alkoholfrei sind es ca. 197 kcal, mit Diät-Limonade nur rund 114 kcal. Gerechnet aus USDA-Werten für 250 ml Bier und 250 ml Zitronenlimonade."
+    },
+    {
+      "question": "Hat Radler weniger Kalorien als Bier?",
+      "answer": "Kaum: Radler (211 kcal) liegt fast gleichauf mit Pils (215 kcal) und Weizenbier (216 kcal) pro 0,5l. Nur mit Diät-Limonade (114 kcal) spart es deutlich."
+    },
+    {
+      "question": "Wie viel Zucker hat ein Radler?",
+      "answer": "Ca. 36g Kohlenhydrate pro 0,5l, davon rund 26g Zucker aus der Limonade. Mehr als reines Bier."
+    },
+    {
+      "question": "Ist Radler ein Biermischgetränk?",
+      "answer": "Ja, Radler besteht aus 50% Bier und 50% Zitronenlimonade. Es hat ca. 2,5% Alkohol."
+    },
+    {
+      "question": "Macht Radler weniger betrunken als Bier?",
+      "answer": "Ja, mit ca. 2,5% Alkohol hat Radler halb so viel Alkohol wie Pils (ca. 5%). Aber Vorsicht: man trinkt oft mehr."
+    },
+    {
+      "question": "Kann man Radler beim Abnehmen trinken?",
+      "answer": "Gelegentlich ja. Ein Radler mit Diät-Limonade (114 kcal) ist die bessere Wahl. Regelmäßig sind es aber 'leere' Kalorien."
+    }
   ],
-  "related_foods": ["bier", "weizenbier", "cola", "wein-rot"]
+  "related_foods": [
+    "bier",
+    "weizenbier",
+    "cola",
+    "wein-rot"
+  ]
 }

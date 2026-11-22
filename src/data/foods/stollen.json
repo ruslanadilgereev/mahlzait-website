@@ -3,9 +3,61 @@
   "name": "Stollen",
   "emoji": "🍞",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Stollen, gebacken ca. 1500 g): 500 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 250 g Butter (200 g Teig, 50 g zum Bestreichen) (FDC-ID 173430, Butter, without salt: 717 kcal), 200 ml (206 g) Milch (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 80 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 42 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 250 g Sultaninen (FDC-ID 168164, Raisins, golden, seedless: 301 kcal), 150 g Zitronat und Orangeat (FDC-ID 167781, Candied fruit: 322 kcal), 100 g Mandeln, blanchiert, gehackt (FDC-ID 170568, Nuts, almonds, blanched: 590 kcal), 75 g Puderzucker zum Bestreuen (FDC-ID 169656, Sugars, powdered: 389 kcal); 1653 g Zutaten ergeben 1500 g (Backverlust des Teigs rund 10 % (Annahme), danach mit Butter bestrichen und mit Puderzucker bestreut); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl",
+        "g": 500,
+        "fdcId": 169761
+      },
+      {
+        "name": "Butter (200 g Teig, 50 g zum Bestreichen)",
+        "g": 250,
+        "fdcId": 173430
+      },
+      {
+        "name": "Milch",
+        "g": 206,
+        "ml": 200,
+        "fdcId": 171265
+      },
+      {
+        "name": "Zucker",
+        "g": 80,
+        "fdcId": 169655
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 42,
+        "fdcId": 175042
+      },
+      {
+        "name": "Sultaninen",
+        "g": 250,
+        "fdcId": 168164
+      },
+      {
+        "name": "Zitronat und Orangeat",
+        "g": 150,
+        "fdcId": 167781
+      },
+      {
+        "name": "Mandeln, blanchiert, gehackt",
+        "g": 100,
+        "fdcId": 170568
+      },
+      {
+        "name": "Puderzucker zum Bestreuen",
+        "g": 75,
+        "fdcId": 169656
+      }
+    ],
+    "gewicht_g": 1500
+  },
   "seo": {
     "title": "Stollen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Stollen? Eine Scheibe Christstollen (50g) hat ca. 200 kcal, 100g rund 400 kcal. Nährwerte, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Stollen? Eine Scheibe Christstollen (50g) hat ca. 207 kcal, 100g rund 414 kcal. Nährwerte, Varianten und Tipps im Überblick.",
     "keywords": [
       "stollen kalorien",
       "christstollen kalorien",
@@ -18,11 +70,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 400,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 56,
-    "fat_per_100g": 16,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 414,
+    "protein_per_100g": 6.3,
+    "carbs_per_100g": 59.8,
+    "fat_per_100g": 17.9,
+    "fiber_per_100g": 2.5,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Scheibe (50g)"
   },
@@ -30,94 +82,119 @@
     {
       "name": "Dünne Scheibe (30g)",
       "portion_g": 30,
-      "calories": 120,
+      "calories": 124,
       "protein": 2,
-      "carbs": 17,
+      "carbs": 18,
       "fat": 5
     },
     {
       "name": "1 Scheibe (50g)",
       "portion_g": 50,
-      "calories": 200,
+      "calories": 207,
       "protein": 3,
-      "carbs": 28,
-      "fat": 8,
+      "carbs": 30,
+      "fat": 9,
       "tip": "Standard"
     },
     {
       "name": "Dicke Scheibe (75g)",
       "portion_g": 75,
-      "calories": 300,
-      "protein": 4,
-      "carbs": 42,
-      "fat": 12
+      "calories": 311,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 13
     },
     {
       "name": "Marzipanstollen, Scheibe (50g)",
       "portion_g": 50,
       "calories": 210,
-      "protein": 4,
-      "carbs": 29,
-      "fat": 9,
-      "tip": "Etwas gehaltvoller durch Marzipan"
-    },
-    {
-      "name": "Mohnstollen, Scheibe (50g)",
-      "portion_g": 50,
-      "calories": 195,
       "protein": 3,
-      "carbs": 26,
-      "fat": 8
+      "carbs": 29,
+      "fat": 10,
+      "tip": "Etwas gehaltvoller durch Marzipan",
+      "basis": [
+        {
+          "g": 42.5
+        },
+        {
+          "fdcId": 170160,
+          "g": 7.5
+        }
+      ]
     },
     {
       "name": "Mini-Stollen, ganz (250g)",
       "portion_g": 250,
-      "calories": 1000,
-      "protein": 13,
-      "carbs": 140,
-      "fat": 40,
+      "calories": 1035,
+      "protein": 16,
+      "carbs": 150,
+      "fat": 45,
       "tip": "Ganzer kleiner Stollen"
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 400,
-      "protein": 5,
-      "carbs": 56,
-      "fat": 16
+      "calories": 414,
+      "protein": 6,
+      "carbs": 60,
+      "fat": 18
     }
   ],
   "comparison": [
     {
       "name": "Lebkuchen (1 Stück, 30g)",
-      "calories": 114,
-      "emoji": "🍪"
+      "calories": 107,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "lebkuchen",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Christstollen (1 Scheibe, 50g)",
-      "calories": 200,
-      "emoji": "🍞"
+      "name": "Panettone (1 Scheibe, 80g)",
+      "calories": 307,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "panettone",
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Zimtschnecke (1 Stück, 90g)",
-      "calories": 300,
-      "emoji": "🌀"
+      "calories": 335,
+      "emoji": "🌀",
+      "basis": [
+        {
+          "slug": "zimtschnecke",
+          "g": 90
+        }
+      ]
     },
     {
       "name": "Spekulatius (4 Stück, 25g)",
-      "calories": 125,
-      "emoji": "🍪"
+      "calories": 122,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "spekulatius",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Dünn schneiden spart Kalorien",
-      "text": "Eine 50g-Scheibe hat rund 200 kcal. Wer den Stollen in dünne 30g-Scheiben schneidet, kommt pro Stück auf etwa 120 kcal und kann öfter zugreifen.",
+      "text": "Eine 50g-Scheibe hat rund 207 kcal. Wer den Stollen in dünne 30g-Scheiben schneidet, kommt pro Stück auf etwa 124 kcal und kann öfter zugreifen.",
       "icon": "🔪"
     },
     {
       "title": "Bewusst genießen statt nebenbei",
-      "text": "Stollen ist mit 400 kcal pro 100g energiedicht. Eine Scheibe in Ruhe zum Kaffee macht zufriedener als mehrere Stücke beiläufig vor dem Fernseher.",
+      "text": "Stollen ist mit 414 kcal pro 100g energiedicht. Eine Scheibe in Ruhe zum Kaffee macht zufriedener als mehrere Stücke beiläufig vor dem Fernseher.",
       "icon": "☕"
     },
     {
@@ -132,34 +209,34 @@
     },
     {
       "title": "Eine Scheibe pro Tag reicht",
-      "text": "In der Adventszeit summiert sich vieles. Wer es bei einer Scheibe Stollen täglich belässt, bleibt mit rund 200 kcal gut im Rahmen.",
+      "text": "In der Adventszeit summiert sich vieles. Wer es bei einer Scheibe Stollen täglich belässt, bleibt mit rund 207 kcal gut im Rahmen.",
       "icon": "🎄"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Stollen?",
-      "answer": "Eine klassische Scheibe Christstollen (50g) hat etwa 200 kcal. Pro 100g sind es rund 400 kcal."
+      "answer": "Eine klassische Scheibe Christstollen (50g) hat etwa 207 kcal. Pro 100g sind es rund 414 kcal. Gerechnet aus USDA-Werten für einen Stollen aus 500g Mehl, 250g Butter, Milch, 80g Zucker, Hefe, 250g Sultaninen, 150g Zitronat und Orangeat, 100g Mandeln und 75g Puderzucker (gebacken rund 1500g)."
     },
     {
       "question": "Wie viele Kalorien hat eine Scheibe Stollen?",
-      "answer": "Eine normale Scheibe von 50g liefert ca. 200 kcal. Eine dünne 30g-Scheibe hat etwa 120 kcal, eine dicke 75g-Scheibe rund 300 kcal."
+      "answer": "Eine normale Scheibe von 50g liefert ca. 207 kcal. Eine dünne 30g-Scheibe hat etwa 124 kcal, eine dicke 75g-Scheibe rund 311 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Stollen?",
-      "answer": "Stollen enthält etwa 56g Kohlenhydrate pro 100g, ein großer Teil davon Zucker aus Trockenfrüchten und Puderzucker. Eine 50g-Scheibe hat rund 28g Kohlenhydrate."
+      "answer": "Stollen enthält etwa 60g Kohlenhydrate pro 100g, ein großer Teil davon Zucker aus Trockenfrüchten und Puderzucker. Eine 50g-Scheibe hat rund 30g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Stollen?",
-      "answer": "Stollen ist mit nur etwa 5g Protein pro 100g kein Eiweißlieferant. Eine 50g-Scheibe enthält rund 3g Protein."
+      "answer": "Stollen ist mit nur etwa 6g Protein pro 100g kein Eiweißlieferant. Eine 50g-Scheibe enthält rund 3g Protein."
     },
     {
       "question": "Ist Stollen zum Abnehmen geeignet?",
-      "answer": "Stollen ist mit 400 kcal pro 100g energiedicht und enthält viel Zucker und Fett. In einer Diät ist eine dünne Scheibe als bewusster Genuss möglich, größere Mengen passen aber schlecht in ein Kaloriendefizit."
+      "answer": "Stollen ist mit 414 kcal pro 100g energiedicht und enthält viel Zucker und Fett. In einer Diät ist eine dünne Scheibe als bewusster Genuss möglich, größere Mengen passen aber schlecht in ein Kaloriendefizit."
     },
     {
       "question": "Was hat mehr Kalorien, Butterstollen oder Marzipanstollen?",
-      "answer": "Marzipanstollen liegt durch die süße Mandelfüllung meist etwas über klassischem Butterstollen. Eine 50g-Scheibe Marzipanstollen hat rund 210 kcal, Butterstollen etwa 200 kcal."
+      "answer": "Marzipanstollen liegt durch die süße Mandelfüllung meist etwas über klassischem Butterstollen. Eine 50g-Scheibe Marzipanstollen hat rund 210 kcal, Butterstollen etwa 207 kcal."
     }
   ],
   "related_foods": [

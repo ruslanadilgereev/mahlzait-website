@@ -3,49 +3,202 @@
   "name": "Knödel",
   "emoji": "🥟",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (Semmelknödel, für 8 Knödel à ca. 100 g): 300 g Knödelbrot (altbackene Semmeln) (FDC-ID 175031, Rolls, hard (includes kaiser): 293 kcal), 250 ml (258 g) Milch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 165 g Eier (3 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 80 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 30 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Knödelbrot (altbackene Semmeln)",
+        "g": 300,
+        "fdcId": 175031
+      },
+      {
+        "name": "Milch 3,5 %",
+        "g": 258,
+        "ml": 250,
+        "fdcId": 171265
+      },
+      {
+        "name": "Eier (3 Stück)",
+        "g": 165,
+        "fdcId": 171287
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 80,
+        "fdcId": 170000
+      },
+      {
+        "name": "Butter",
+        "g": 30,
+        "fdcId": 173430
+      }
+    ]
+  },
   "seo": {
     "title": "Knödel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Knödel? Nährwerte für Semmelknödel, Kartoffelknödel & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+    "description": "Wie viele Kalorien haben Knödel? Zwei Semmelknödel (200g) haben ca. 364 kcal. Nährwerte für Semmelknödel, Germknödel & Kaspressknödel mit Portionsgrößen und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 170,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 182,
+    "protein_per_100g": 7.2,
+    "carbs_per_100g": 21.5,
+    "fat_per_100g": 7.4,
+    "fiber_per_100g": 1,
     "typical_portion_g": 200,
     "typical_portion_name": "2 Knödel"
   },
   "variants": [
-    {"name": "Semmelknödel", "portion_g": 200, "calories": 340, "protein": 10, "carbs": 60, "fat": 7, "tip": "Aus altbackenen Semmeln"},
-    {"name": "Kartoffelknödel", "portion_g": 200, "calories": 300, "protein": 6, "carbs": 58, "fat": 5, "tip": "Halb und halb beliebt"},
-    {"name": "Kartoffelknödel gefüllt", "portion_g": 200, "calories": 360, "protein": 8, "carbs": 58, "fat": 10, "tip": "Mit Croutons gefüllt"},
-    {"name": "Serviettenknödel", "portion_g": 200, "calories": 330, "protein": 10, "carbs": 56, "fat": 8, "tip": "In Scheiben geschnitten"},
-    {"name": "Leberknödel", "portion_g": 250, "calories": 420, "protein": 22, "carbs": 35, "fat": 22, "tip": "In der Suppe"},
-    {"name": "Germknödel", "portion_g": 180, "calories": 450, "protein": 10, "carbs": 60, "fat": 18, "tip": "Süß mit Mohn und Butter"},
-    {"name": "Spinatknödel", "portion_g": 200, "calories": 310, "protein": 12, "carbs": 42, "fat": 10, "tip": "Südtiroler Spezialität"},
-    {"name": "Böhmische Knödel", "portion_g": 200, "calories": 350, "protein": 8, "carbs": 64, "fat": 6, "tip": "Aus Hefeteig"}
+    {
+      "name": "Semmelknödel",
+      "portion_g": 200,
+      "calories": 364,
+      "protein": 14,
+      "carbs": 43,
+      "fat": 15,
+      "tip": "Aus altbackenen Semmeln"
+    },
+    {
+      "name": "1 Knödel (100g)",
+      "portion_g": 100,
+      "calories": 182,
+      "protein": 7,
+      "carbs": 22,
+      "fat": 7
+    },
+    {
+      "name": "Germknödel (180g)",
+      "portion_g": 180,
+      "calories": 569,
+      "protein": 12,
+      "carbs": 88,
+      "fat": 19,
+      "tip": "Süß mit Mohn und Butter",
+      "basis": [
+        {
+          "slug": "germknoedel",
+          "g": 180
+        }
+      ]
+    },
+    {
+      "name": "Kaspressknödel (2 Stück, 120g)",
+      "portion_g": 120,
+      "calories": 319,
+      "protein": 14,
+      "carbs": 23,
+      "fat": 19,
+      "tip": "Mit Bergkäse, gebraten",
+      "basis": [
+        {
+          "slug": "kaspressknoedel",
+          "g": 120
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Spätzle", "calories": 300, "emoji": "🍝"},
-    {"name": "Kartoffeln gekocht", "calories": 180, "emoji": "🥔"},
-    {"name": "Reis gekocht", "calories": 310, "emoji": "🍚"},
-    {"name": "Nudeln gekocht", "calories": 350, "emoji": "🍝"}
+    {
+      "name": "Spätzle (200g)",
+      "calories": 276,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaetzle",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Kartoffeln gekocht (200g)",
+      "calories": 172,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Reis gekocht (200g)",
+      "calories": 260,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Nudeln gekocht (200g)",
+      "calories": 316,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "nudeln",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Kartoffelknödel sind leichter", "text": "Kartoffelknödel haben ca. 40 kcal weniger als Semmelknödel pro Portion.", "icon": "🥔"},
-    {"title": "Einen statt zwei", "text": "Ein Knödel als Beilage reicht oft aus – spart die Hälfte der Kalorien.", "icon": "1️⃣"},
-    {"title": "Vom Vortag aufbraten", "text": "Aufgeschnittene Knödel in der Pfanne anbraten ergibt knusprige Scheiben – kein Extra-Fett nötig.", "icon": "🍳"},
-    {"title": "Semmelknödel aus Vollkorn", "text": "Verwende Vollkornbrötchen für mehr Ballaststoffe und langsamere Kohlenhydrate.", "icon": "🌾"},
-    {"title": "In der Suppe sättigender", "text": "Leberknödel in Brühe als Vorspeise sättigt gut und verhindert zu viel beim Hauptgang.", "icon": "🍲"}
+    {
+      "title": "Weniger Butter im Teig",
+      "text": "Butter und Eier liefern knapp ein Drittel der Kalorien im Semmelknödelteig. Mit weniger Butter werden die Knödel leichter.",
+      "icon": "🥔"
+    },
+    {
+      "title": "Einen statt zwei",
+      "text": "Ein Knödel als Beilage reicht oft aus, das spart die Hälfte der Kalorien.",
+      "icon": "1️⃣"
+    },
+    {
+      "title": "Vom Vortag aufbraten",
+      "text": "Aufgeschnittene Knödel in der Pfanne anbraten ergibt knusprige Scheiben, in einer beschichteten Pfanne ohne Extra-Fett.",
+      "icon": "🍳"
+    },
+    {
+      "title": "Semmelknödel aus Vollkorn",
+      "text": "Verwende Vollkornbrötchen für mehr Ballaststoffe und langsamere Kohlenhydrate.",
+      "icon": "🌾"
+    },
+    {
+      "title": "In der Suppe sättigender",
+      "text": "Leberknödel in Brühe als Vorspeise sättigt gut und verhindert zu viel beim Hauptgang.",
+      "icon": "🍲"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Knödel?", "answer": "Zwei Knödel (200g) haben 300-360 kcal, je nach Art. Kartoffelknödel sind etwas leichter als Semmelknödel."},
-    {"question": "Welche Knödel haben am wenigsten Kalorien?", "answer": "Kartoffelknödel (ohne Füllung) mit ca. 300 kcal pro 2 Stück. Germknödel sind mit 450 kcal am kalorienreichsten."},
-    {"question": "Sind Knödel gesund?", "answer": "Knödel sind sättigend und liefern Kohlenhydrate für Energie. Der Nährstoffgehalt hängt stark von der Art ab."},
-    {"question": "Wie viel Protein haben Knödel?", "answer": "Normale Knödel liefern 5-10g Protein pro Portion. Leberknödel kommen auf 22g dank der Leber."},
-    {"question": "Was hat weniger Kalorien: Knödel oder Kartoffeln?", "answer": "Gekochte Kartoffeln (90 kcal/130g) haben deutlich weniger als 1 Knödel (170 kcal/100g). Als Beilage sind Kartoffeln die leichtere Wahl."},
-    {"question": "Kann man Knödel einfrieren?", "answer": "Ja, gegarte Knödel lassen sich gut einfrieren. In Scheiben schneiden und portionsweise verpacken. Hält 2-3 Monate."}
+    {
+      "question": "Wie viele Kalorien haben Knödel?",
+      "answer": "Zwei Semmelknödel (200g) haben ca. 364 kcal, pro 100g sind es rund 182 kcal. Gerechnet aus USDA-Werten für 300g Knödelbrot, 250ml Milch, 3 Eier, 80g Zwiebeln und 30g Butter für 8 Knödel. Andere Knödel liegen je nach Art darunter oder darüber."
+    },
+    {
+      "question": "Welche Knödel haben am wenigsten Kalorien?",
+      "answer": "Von den hier gerechneten Knödeln sind Semmelknödel mit rund 182 kcal pro 100g die leichtesten. Germknödel sind mit rund 316 kcal pro 100g (569 kcal für 180g) am kalorienreichsten."
+    },
+    {
+      "question": "Sind Knödel gesund?",
+      "answer": "Knödel sind sättigend und liefern Kohlenhydrate für Energie. Der Nährstoffgehalt hängt stark von der Art ab."
+    },
+    {
+      "question": "Wie viel Protein haben Knödel?",
+      "answer": "Zwei Semmelknödel (200g) liefern rund 14g Protein, vor allem aus Eiern, Milch und Brot."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Knödel oder Kartoffeln?",
+      "answer": "Gekochte Kartoffeln (200g, 172 kcal) haben deutlich weniger als zwei Semmelknödel (200g, 364 kcal). Als Beilage sind Kartoffeln die leichtere Wahl."
+    },
+    {
+      "question": "Kann man Knödel einfrieren?",
+      "answer": "Ja, gegarte Knödel lassen sich gut einfrieren. In Scheiben schneiden und portionsweise verpacken. Hält 2-3 Monate."
+    }
   ],
-  "related_foods": ["spaetzle", "kartoffeln", "semmelknoedel", "schweinebraten"]
+  "related_foods": [
+    "spaetzle",
+    "kartoffeln",
+    "semmelknoedel",
+    "schweinebraten"
+  ]
 }

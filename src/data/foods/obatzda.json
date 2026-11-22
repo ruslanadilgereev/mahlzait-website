@@ -3,48 +3,213 @@
   "name": "Obatzda",
   "emoji": "🧀",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 2 bis 3 Portionen (375 g)): 200 g Camembert, reif (FDC-ID 172178, Cheese, camembert: 300 kcal), 50 g Butter, weich (FDC-ID 173430, Butter, without salt: 717 kcal), 50 g Frischkäse (FDC-ID 171246, Cheese, neufchatel: 253 kcal), 40 g Zwiebel (FDC-ID 170000, Onions, raw: 40 kcal), 30 ml (30 g) Bier (FDC-ID 168746, Alcoholic beverage, beer, regular, all: 43 kcal), 5 g Paprikapulver (FDC-ID 171329, Spices, paprika: 282 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Camembert, reif",
+        "g": 200,
+        "fdcId": 172178
+      },
+      {
+        "name": "Butter, weich",
+        "g": 50,
+        "fdcId": 173430
+      },
+      {
+        "name": "Frischkäse",
+        "g": 50,
+        "fdcId": 171246
+      },
+      {
+        "name": "Zwiebel",
+        "g": 40,
+        "fdcId": 170000
+      },
+      {
+        "name": "Bier",
+        "g": 30,
+        "ml": 30,
+        "fdcId": 168746
+      },
+      {
+        "name": "Paprikapulver",
+        "g": 5,
+        "fdcId": 171329
+      }
+    ]
+  },
   "seo": {
     "title": "Obatzda Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Obatzda? Nährwerte für bayerische Käsecreme mit Brezel & Varianten. Kostenloser Rechner mit Spar-Tipps."
+    "description": "Wie viele Kalorien hat Obatzda? Eine Portion (150g) hat ca. 452 kcal. Nährwerte für bayerische Käsecreme mit Brezel & Radieschen. Kostenloser Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 280,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 2,
-    "fat_per_100g": 24,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 301,
+    "protein_per_100g": 12.2,
+    "carbs_per_100g": 2.7,
+    "fat_per_100g": 27,
+    "fiber_per_100g": 0.6,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Obatzda klassisch", "portion_g": 150, "calories": 420, "protein": 21, "carbs": 3, "fat": 36, "tip": "Traditionelles Rezept"},
-    {"name": "Obatzda mit Brezel", "portion_g": 250, "calories": 650, "protein": 28, "carbs": 45, "fat": 40, "tip": "Biergarten-Klassiker"},
-    {"name": "Obatzda light", "portion_g": 150, "calories": 310, "protein": 22, "carbs": 4, "fat": 24, "tip": "Mit weniger Butter"},
-    {"name": "Obatzda mit Radieschen", "portion_g": 200, "calories": 440, "protein": 22, "carbs": 8, "fat": 36, "tip": "Mit frischem Gemüse"},
-    {"name": "Obatzda als Brotaufstrich", "portion_g": 50, "calories": 140, "protein": 7, "carbs": 1, "fat": 12, "tip": "Dünn aufs Brot"},
-    {"name": "Veganer Obatzda", "portion_g": 150, "calories": 280, "protein": 10, "carbs": 12, "fat": 22, "tip": "Aus Cashews"},
-    {"name": "Obatzda mit Bier", "portion_g": 150, "calories": 430, "protein": 21, "carbs": 5, "fat": 36, "tip": "Mehr Bier im Rezept"}
+    {
+      "name": "Obatzda klassisch",
+      "portion_g": 150,
+      "calories": 452,
+      "protein": 18,
+      "carbs": 4,
+      "fat": 41,
+      "tip": "Traditionelles Rezept"
+    },
+    {
+      "name": "Obatzda mit Brezel (150g + 1 Brezel 95g)",
+      "portion_g": 245,
+      "calories": 773,
+      "protein": 26,
+      "carbs": 70,
+      "fat": 43,
+      "tip": "Biergarten-Klassiker",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "brezel"
+        }
+      ]
+    },
+    {
+      "name": "Obatzda mit Radieschen (150g + 50g)",
+      "portion_g": 200,
+      "calories": 460,
+      "protein": 19,
+      "carbs": 6,
+      "fat": 41,
+      "tip": "Mit frischem Gemüse",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 169276,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Obatzda als Brotaufstrich",
+      "portion_g": 50,
+      "calories": 151,
+      "protein": 6,
+      "carbs": 1,
+      "fat": 14,
+      "tip": "Dünn aufs Brot"
+    }
   ],
   "comparison": [
-    {"name": "Wurstsalat", "calories": 488, "emoji": "🥗"},
-    {"name": "Camembert", "calories": 300, "emoji": "🧀"},
-    {"name": "Frischkäse", "calories": 150, "emoji": "🧈"},
-    {"name": "Hummus", "calories": 250, "emoji": "🫘"}
+    {
+      "name": "Wurstsalat (100g)",
+      "calories": 205,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "slug": "wurstsalat",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Camembert (100g)",
+      "calories": 300,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "camembert",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Frischkäse (100g)",
+      "calories": 253,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Hummus (100g)",
+      "calories": 237,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Butter reduzieren", "text": "Weniger Butter in der Mischung spart erheblich Kalorien, ohne den Geschmack stark zu verändern.", "icon": "🧈"},
-    {"title": "Gemüsesticks statt Brezel", "text": "Kohlrabi, Radieschen und Gurke statt Brezel zum Dippen – spart 200+ kcal.", "icon": "🥒"},
-    {"title": "Portionsgröße beachten", "text": "Im Biergarten werden oft 200g+ serviert. 100-150g reichen als Vorspeise.", "icon": "⚖️"},
-    {"title": "Quark statt Butter", "text": "Ersetze die Hälfte der Butter durch Magerquark für weniger Fett, mehr Protein.", "icon": "🥛"},
-    {"title": "Als Brotaufstrich portionieren", "text": "Dünn aufs Brot gestrichen hat Obatzda nur 140 kcal – perfekt als Brotzeit.", "icon": "🍞"}
+    {
+      "title": "Butter reduzieren",
+      "text": "Weniger Butter in der Mischung spart erheblich Kalorien, ohne den Geschmack stark zu verändern.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Gemüsesticks statt Brezel",
+      "text": "50g Radieschen statt einer Brezel zum Dippen sparen rund 313 kcal. Kohlrabi und Gurke eignen sich genauso.",
+      "icon": "🥒"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Im Biergarten werden oft 200g und mehr serviert. 100 bis 150g reichen als Vorspeise.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Quark statt Butter",
+      "text": "Ersetze die Hälfte der Butter durch Magerquark für weniger Fett, mehr Protein.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Als Brotaufstrich portionieren",
+      "text": "Dünn aufs Brot gestrichen (50g) hat Obatzda rund 151 kcal, perfekt als Brotzeit.",
+      "icon": "🍞"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Obatzda?", "answer": "Eine Portion Obatzda (150g) hat ca. 420 kcal. Mit Brezel dazu sind es ca. 650 kcal."},
-    {"question": "Ist Obatzda gesund?", "answer": "Obatzda liefert viel Protein (14g/100g) und Calcium aus dem Käse. Der hohe Fettgehalt (24g/100g) macht ihn kalorienreich."},
-    {"question": "Woraus besteht Obatzda?", "answer": "Obatzda wird aus reifem Camembert, Butter, Frischkäse, Zwiebeln, Paprikapulver und etwas Bier hergestellt."},
-    {"question": "Wie viel Fett hat Obatzda?", "answer": "Obatzda enthält ca. 24g Fett pro 100g. Durch weniger Butter und mehr Quark lässt sich der Fettgehalt senken."},
-    {"question": "Kann man Obatzda beim Abnehmen essen?", "answer": "In kleinen Mengen (50g als Aufstrich, 140 kcal) ja. Vermeide die Kombination mit Brezel und Bier für deutlich weniger Kalorien."},
-    {"question": "Wie lange hält Obatzda im Kühlschrank?", "answer": "Selbstgemachter Obatzda hält im Kühlschrank 3-4 Tage. Gut abgedeckt aufbewahren."}
+    {
+      "question": "Wie viele Kalorien hat Obatzda?",
+      "answer": "Eine Portion Obatzda (150g) hat ca. 452 kcal. Mit einer Brezel dazu sind es ca. 773 kcal. Gerechnet aus USDA-Werten für 200g Camembert, 50g Butter, 50g Frischkäse, 40g Zwiebel, 30ml Bier und 5g Paprikapulver."
+    },
+    {
+      "question": "Ist Obatzda gesund?",
+      "answer": "Obatzda liefert viel Protein (rund 12g/100g) und Calcium aus dem Käse. Der hohe Fettgehalt (27g/100g) macht ihn kalorienreich."
+    },
+    {
+      "question": "Woraus besteht Obatzda?",
+      "answer": "Obatzda wird aus reifem Camembert, Butter, Frischkäse, Zwiebeln, Paprikapulver und etwas Bier hergestellt."
+    },
+    {
+      "question": "Wie viel Fett hat Obatzda?",
+      "answer": "Obatzda enthält ca. 27g Fett pro 100g. Durch weniger Butter und mehr Quark lässt sich der Fettgehalt senken."
+    },
+    {
+      "question": "Kann man Obatzda beim Abnehmen essen?",
+      "answer": "In kleinen Mengen (50g als Aufstrich, rund 151 kcal) ja. Vermeide die Kombination mit Brezel und Bier für deutlich weniger Kalorien."
+    },
+    {
+      "question": "Wie lange hält Obatzda im Kühlschrank?",
+      "answer": "Selbstgemachter Obatzda hält im Kühlschrank 3-4 Tage. Gut abgedeckt aufbewahren."
+    }
   ],
-  "related_foods": ["wurstsalat", "brezel", "kaese-gouda", "flammkuchen"]
+  "related_foods": [
+    "wurstsalat",
+    "brezel",
+    "kaese-gouda",
+    "flammkuchen"
+  ]
 }

@@ -3,49 +3,319 @@
   "name": "Butter Chicken",
   "emoji": "🍛",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Portionen à 350 g): 500 g Hähnchenbrust, gegart (FDC-ID 171477, Chicken, broilers or fryers, breast, meat only, cooked, roasted: 165 kcal), 440 g Tomaten, stückig (Dose) (FDC-ID 170501, Tomatoes, crushed, canned: 32 kcal), 150 g Sahne 30 % Fett (FDC-ID 170858, Cream, fluid, light whipping: 292 kcal), 120 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 100 g Joghurt 3,5 % (Marinade) (FDC-ID 171284, Yogurt, plain, whole milk: 61 kcal), 60 g Butter (FDC-ID 173410, Butter, salted: 717 kcal), 10 g Knoblauch (FDC-ID 169230, Garlic, raw: 149 kcal), 10 g Ingwer (FDC-ID 169231, Ginger root, raw: 80 kcal), 10 g Currypulver / Garam Masala (FDC-ID 170924, Spices, curry powder: 325 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Hähnchenbrust, gegart",
+        "g": 500,
+        "fdcId": 171477
+      },
+      {
+        "name": "Tomaten, stückig (Dose)",
+        "g": 440,
+        "fdcId": 170501
+      },
+      {
+        "name": "Sahne 30 % Fett",
+        "g": 150,
+        "fdcId": 170858
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 120,
+        "fdcId": 170000
+      },
+      {
+        "name": "Joghurt 3,5 % (Marinade)",
+        "g": 100,
+        "fdcId": 171284
+      },
+      {
+        "name": "Butter",
+        "g": 60,
+        "fdcId": 173410
+      },
+      {
+        "name": "Knoblauch",
+        "g": 10,
+        "fdcId": 169230
+      },
+      {
+        "name": "Ingwer",
+        "g": 10,
+        "fdcId": 169231
+      },
+      {
+        "name": "Currypulver / Garam Masala",
+        "g": 10,
+        "fdcId": 170924
+      }
+    ]
+  },
   "seo": {
     "title": "Butter Chicken Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Butter Chicken? Nährwerte mit und ohne Reis, Light-Varianten & Spar-Tipps. Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 170,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 6,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 0.8,
+    "calories_per_100g": 143,
+    "protein_per_100g": 12.4,
+    "carbs_per_100g": 4.5,
+    "fat_per_100g": 8.5,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Portion (ohne Reis)"
   },
   "variants": [
-    {"name": "Butter Chicken mit Basmati-Reis", "portion_g": 500, "calories": 680, "protein": 34, "carbs": 70, "fat": 30, "tip": "Restaurant-Standard"},
-    {"name": "Butter Chicken ohne Reis", "portion_g": 350, "calories": 460, "protein": 34, "carbs": 14, "fat": 30, "tip": "Low-Carb Option"},
-    {"name": "Butter Chicken mit Naan", "portion_g": 500, "calories": 740, "protein": 36, "carbs": 76, "fat": 34},
-    {"name": "Butter Chicken light (wenig Butter)", "portion_g": 500, "calories": 560, "protein": 36, "carbs": 68, "fat": 18, "tip": "Kalorienreduziert"},
-    {"name": "Butter Chicken mit Vollkornreis", "portion_g": 500, "calories": 670, "protein": 36, "carbs": 66, "fat": 30, "tip": "Mehr Ballaststoffe"},
-    {"name": "Butter Chicken Restaurant XL", "portion_g": 650, "calories": 880, "protein": 44, "carbs": 88, "fat": 40},
-    {"name": "Butter Chicken Fertiggericht", "portion_g": 400, "calories": 540, "protein": 28, "carbs": 56, "fat": 24},
-    {"name": "Butter Chicken mit Blumenkohlreis", "portion_g": 450, "calories": 500, "protein": 36, "carbs": 18, "fat": 32, "tip": "Low-Carb Alternative"}
+    {
+      "name": "Butter Chicken mit Basmati-Reis",
+      "portion_g": 500,
+      "calories": 696,
+      "protein": 47,
+      "carbs": 58,
+      "fat": 30,
+      "tip": "350 g Curry, 150 g Reis",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Butter Chicken ohne Reis",
+      "portion_g": 350,
+      "calories": 501,
+      "protein": 43,
+      "carbs": 16,
+      "fat": 30,
+      "tip": "Low-Carb Option"
+    },
+    {
+      "name": "Butter Chicken mit Naan",
+      "portion_g": 440,
+      "calories": 762,
+      "protein": 52,
+      "carbs": 61,
+      "fat": 35,
+      "tip": "1 Naan (90 g)",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "naan-brot"
+        }
+      ]
+    },
+    {
+      "name": "Butter Chicken light (wenig Butter)",
+      "portion_g": 502,
+      "calories": 549,
+      "protein": 50,
+      "carbs": 60,
+      "fat": 11,
+      "tip": "Joghurt statt Sahne, mit 150 g Reis",
+      "basis": [
+        {
+          "fdcId": 171477,
+          "g": 129
+        },
+        {
+          "fdcId": 170501,
+          "g": 113
+        },
+        {
+          "fdcId": 170886,
+          "g": 39
+        },
+        {
+          "fdcId": 173410,
+          "g": 5
+        },
+        {
+          "fdcId": 170000,
+          "g": 31
+        },
+        {
+          "fdcId": 171284,
+          "g": 26
+        },
+        {
+          "fdcId": 169230,
+          "g": 3
+        },
+        {
+          "fdcId": 169231,
+          "g": 3
+        },
+        {
+          "fdcId": 170924,
+          "g": 3
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Butter Chicken mit Vollkornreis",
+      "portion_g": 500,
+      "calories": 685,
+      "protein": 48,
+      "carbs": 54,
+      "fat": 31,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 169704,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Butter Chicken Restaurant XL",
+      "portion_g": 650,
+      "calories": 904,
+      "protein": 61,
+      "carbs": 76,
+      "fat": 39,
+      "basis": [
+        {
+          "g": 450
+        },
+        {
+          "slug": "reis",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Butter Chicken mit Blumenkohlreis",
+      "portion_g": 450,
+      "calories": 524,
+      "protein": 45,
+      "carbs": 20,
+      "fat": 30,
+      "tip": "Low-Carb Alternative",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 170397,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Tikka Masala", "calories": 650, "emoji": "🍛"},
-    {"name": "Hähnchen-Curry (Thai)", "calories": 620, "emoji": "🍛"},
-    {"name": "Biryani", "calories": 640, "emoji": "🍚"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"}
+    {
+      "name": "Tikka Masala (350g, ohne Reis)",
+      "calories": 441,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "slug": "tikka-masala"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchen-Curry (350g, ohne Reis)",
+      "calories": 375,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "slug": "curry-haehnchen"
+        }
+      ]
+    },
+    {
+      "name": "Biryani (1 Teller, 400g)",
+      "calories": 416,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "biryani"
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Name ist Programm – viel Butter", "text": "Traditionelles Butter Chicken enthält 50-100g Butter pro Rezept. Halbiere die Menge ohne großen Geschmacksverlust.", "icon": "🧈"},
-    {"title": "Griechischen Joghurt verwenden", "text": "Ersetze einen Teil der Sahne durch griechischen Joghurt – mehr Protein, weniger Fett.", "icon": "🥛"},
-    {"title": "Ohne Reis servieren", "text": "Butter Chicken allein (460 kcal) ist bereits sättigend. Mit Salat statt Reis sparst du 200+ kcal.", "icon": "🥗"},
-    {"title": "Hähnchenbrust statt Oberschenkel", "text": "Hähnchenbrust spart ca. 50 kcal pro Portion und hat mehr Protein.", "icon": "🍗"},
-    {"title": "Kasuri Methi nicht vergessen", "text": "Getrocknete Bockshornkleeblätter geben den typischen Geschmack – kalorienfrei und unverzichtbar.", "icon": "🌿"}
+    {
+      "title": "Name ist Programm: viel Butter",
+      "text": "Dieses Rezept rechnet mit 60g Butter für 4 Portionen. Halbiere die Menge ohne großen Geschmacksverlust.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Griechischen Joghurt verwenden",
+      "text": "Ersetze einen Teil der Sahne durch griechischen Joghurt: mehr Protein, weniger Fett.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Ohne Reis servieren",
+      "text": "Butter Chicken allein (501 kcal) ist bereits sättigend. Mit Salat statt 150g Reis sparst du rund 195 kcal.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Hähnchenbrust statt Oberschenkel",
+      "text": "Hähnchenbrust ist magerer als Oberschenkel und hat mehr Protein. Dieses Rezept rechnet bereits mit Brust.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Kasuri Methi nicht vergessen",
+      "text": "Getrocknete Bockshornkleeblätter geben den typischen Geschmack, kalorienfrei und unverzichtbar.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Butter Chicken?", "answer": "Ohne Reis ca. 460 kcal, mit Reis ca. 680 kcal. Im Restaurant mit Naan bis zu 740 kcal pro Portion."},
-    {"question": "Ist Butter Chicken kalorienreicher als Tikka Masala?", "answer": "Ja, leicht. Butter Chicken hat ca. 680 kcal vs. 650 kcal bei Tikka Masala (jeweils mit Reis), da mehr Butter verwendet wird."},
-    {"question": "Wie viel Protein hat Butter Chicken?", "answer": "Eine Portion mit Reis liefert ca. 34-36g Protein. Ohne Reis sogar bei besserer Protein-Kalorien-Ratio."},
-    {"question": "Kann man Butter Chicken beim Abnehmen essen?", "answer": "Die Light-Version (wenig Butter, Joghurt statt Sahne) mit Blumenkohlreis hat nur ca. 500 kcal und 36g Protein."},
-    {"question": "Was ist der Unterschied zu Murgh Makhani?", "answer": "Butter Chicken und Murgh Makhani sind dasselbe Gericht. Murgh = Hähnchen, Makhani = mit Butter auf Hindi."},
-    {"question": "Wie viele Kalorien hat Butter Chicken vom Inder?", "answer": "Restaurant-Portionen sind großzügiger: rechne mit 700-880 kcal pro Portion mit Reis, da mehr Butter und Sahne verwendet wird."}
+    {
+      "question": "Wie viele Kalorien hat Butter Chicken?",
+      "answer": "Ohne Reis ca. 501 kcal (350g), mit Reis ca. 696 kcal, mit Naan rund 762 kcal pro Portion. Gerechnet aus USDA-Werten für 4 Portionen mit 500 g Hähnchenbrust, 440 g Tomaten, 150 g Sahne, 120 g Zwiebeln, 100 g Joghurt und 60 g Butter."
+    },
+    {
+      "question": "Ist Butter Chicken kalorienreicher als Tikka Masala?",
+      "answer": "Ja. Butter Chicken hat ohne Reis ca. 501 kcal, Tikka Masala ca. 441 kcal (jeweils 350g), da mehr Butter verwendet wird."
+    },
+    {
+      "question": "Wie viel Protein hat Butter Chicken?",
+      "answer": "Eine Portion mit Reis liefert ca. 47g Protein. Ohne Reis (43g) ist die Protein-Kalorien-Ratio sogar besser."
+    },
+    {
+      "question": "Kann man Butter Chicken beim Abnehmen essen?",
+      "answer": "Die Light-Version (wenig Butter, Joghurt statt Sahne) hat mit Reis ca. 549 kcal und 50g Protein. Mit Blumenkohlreis statt Reis wird es noch leichter."
+    },
+    {
+      "question": "Was ist der Unterschied zu Murgh Makhani?",
+      "answer": "Butter Chicken und Murgh Makhani sind dasselbe Gericht. Murgh = Hähnchen, Makhani = mit Butter auf Hindi."
+    },
+    {
+      "question": "Wie viele Kalorien hat Butter Chicken vom Inder?",
+      "answer": "Restaurant-Portionen sind großzügiger: Eine XL-Portion mit Reis (650g) kommt auf rund 904 kcal."
+    }
   ],
-  "related_foods": ["tikka-masala", "curry-haehnchen", "biryani", "naan-brot"]
+  "related_foods": [
+    "tikka-masala",
+    "curry-haehnchen",
+    "biryani",
+    "naan-brot"
+  ]
 }

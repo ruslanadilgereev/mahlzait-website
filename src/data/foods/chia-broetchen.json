@@ -3,9 +3,24 @@
   "name": "Chia Brötchen",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Brötchen 70 g): 63 g Weizenbrötchen (gebacken) (FDC-ID 175031, Rolls, hard (includes kaiser): 293 kcal), 7 g Chiasamen (FDC-ID 170554, Seeds, chia seeds, dried: 486 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenbrötchen (gebacken)",
+        "g": 63,
+        "fdcId": 175031
+      },
+      {
+        "name": "Chiasamen",
+        "g": 7,
+        "fdcId": 170554
+      }
+    ]
+  },
   "seo": {
     "title": "Chia Brötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Chia Brötchen? Ein Brötchen (70g) hat ca. 189 kcal. Nährwerte pro 100g & Stück, Eiweiß, Kohlenhydrate und Tipps.",
+    "description": "Wie viele Kalorien hat ein Chia Brötchen? Ein Brötchen (70g) hat ca. 218 kcal. Nährwerte pro 100g & Stück, Eiweiß, Kohlenhydrate und Tipps.",
     "keywords": [
       "chia brötchen kalorien",
       "chia brötchen kcal",
@@ -16,11 +31,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 270,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 42,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 5,
+    "calories_per_100g": 312,
+    "protein_per_100g": 10.6,
+    "carbs_per_100g": 51.6,
+    "fat_per_100g": 6.9,
+    "fiber_per_100g": 5.5,
     "typical_portion_g": 70,
     "typical_portion_name": "1 Chia Brötchen (70g)"
   },
@@ -28,85 +43,118 @@
     {
       "name": "Chia Brötchen klein (50g)",
       "portion_g": 50,
-      "calories": 135,
+      "calories": 156,
       "protein": 5,
-      "carbs": 21,
-      "fat": 4
+      "carbs": 26,
+      "fat": 3
     },
     {
       "name": "Chia Brötchen (70g)",
       "portion_g": 70,
-      "calories": 189,
+      "calories": 218,
       "protein": 7,
-      "carbs": 29,
+      "carbs": 36,
       "fat": 5,
       "tip": "Standard"
     },
     {
       "name": "Chia Brötchen groß (90g)",
       "portion_g": 90,
-      "calories": 243,
-      "protein": 9,
-      "carbs": 38,
+      "calories": 281,
+      "protein": 10,
+      "carbs": 46,
       "fat": 6
     },
     {
       "name": "Halbes Chia Brötchen (35g)",
       "portion_g": 35,
-      "calories": 95,
+      "calories": 109,
       "protein": 4,
-      "carbs": 15,
+      "carbs": 18,
       "fat": 2
     },
     {
       "name": "Chia Brötchen mit Butter (70g + 10g)",
       "portion_g": 80,
-      "calories": 261,
-      "protein": 7,
-      "carbs": 29,
+      "calories": 290,
+      "protein": 8,
+      "carbs": 36,
       "fat": 13,
-      "tip": "Mit 10g Butter belegt"
+      "tip": "Mit 10g Butter belegt",
+      "basis": [
+        {
+          "g": 70
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "2 Chia Brötchen (140g)",
       "portion_g": 140,
-      "calories": 378,
-      "protein": 14,
-      "carbs": 59,
+      "calories": 437,
+      "protein": 15,
+      "carbs": 72,
       "fat": 10
     }
   ],
   "comparison": [
     {
       "name": "Brötchen (Weizen, 70g)",
-      "calories": 189,
-      "emoji": "🥖"
+      "calories": 205,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Vollkornbrötchen (70g)",
-      "calories": 172,
-      "emoji": "🍞"
+      "calories": 186,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "fdcId": 172794,
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Laugenbrezel (70g)",
-      "calories": 196,
-      "emoji": "🥨"
+      "calories": 237,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Croissant (60g)",
       "calories": 244,
-      "emoji": "🥐"
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Etwas mehr Eiweiß und Ballaststoffe",
-      "text": "Durch die Chiasamen liefert ein Chia Brötchen mit rund 10g Eiweiß und 5g Ballaststoffen pro 100g etwas mehr als ein klassisches Weizenbrötchen und sättigt dadurch besser.",
+      "text": "Durch die Chiasamen liefert ein Chia Brötchen mit rund 11g Eiweiß und 5,5g Ballaststoffen pro 100g etwas mehr als ein klassisches Weizenbrötchen und sättigt dadurch besser.",
       "icon": "🌱"
     },
     {
       "title": "Belag macht den Unterschied",
-      "text": "Das Brötchen selbst hat ca. 189 kcal. Butter, Wurst oder Käse können die Kalorien schnell verdoppeln. Magerquark, Frischkäse oder Gurke halten die Mahlzeit leicht.",
+      "text": "Das Brötchen selbst hat ca. 218 kcal. Butter, Wurst oder Käse können die Kalorien schnell verdoppeln. Magerquark, Frischkäse oder Gurke halten die Mahlzeit leicht.",
       "icon": "🧈"
     },
     {
@@ -116,34 +164,34 @@
     },
     {
       "title": "Nicht automatisch kalorienärmer",
-      "text": "Ein Chia Brötchen hat mit ca. 270 kcal pro 100g etwa gleich viele Kalorien wie ein normales Weizenbrötchen. Der Vorteil liegt eher bei Ballaststoffen und Eiweiß als bei weniger Kalorien.",
+      "text": "Ein Chia Brötchen hat mit ca. 312 kcal pro 100g sogar etwas mehr Kalorien als ein normales Weizenbrötchen (293 kcal). Der Vorteil liegt eher bei Ballaststoffen und Eiweiß als bei weniger Kalorien.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Chia Brötchen?",
-      "answer": "Ein durchschnittliches Chia Brötchen (70g) hat ca. 189 kcal. Pro 100g sind es rund 270 kcal."
+      "answer": "Ein durchschnittliches Chia Brötchen (70g) hat ca. 218 kcal. Pro 100g sind es rund 312 kcal. Gerechnet aus USDA-Werten für 63g gebackenen Weizenbrötchenteig und 7g Chiasamen."
     },
     {
       "question": "Wie viele Kalorien hat ein Chia Brötchen pro 100g?",
-      "answer": "Pro 100g liefert ein Chia Brötchen etwa 270 kcal, 10g Eiweiß, 42g Kohlenhydrate und 7g Fett."
+      "answer": "Pro 100g liefert ein Chia Brötchen etwa 312 kcal, 11g Eiweiß, 52g Kohlenhydrate und 7g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Chia Brötchen?",
-      "answer": "Ein Chia Brötchen enthält rund 42g Kohlenhydrate pro 100g, ein einzelnes Brötchen (70g) also etwa 29g."
+      "answer": "Ein Chia Brötchen enthält rund 52g Kohlenhydrate pro 100g, ein einzelnes Brötchen (70g) also etwa 36g."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Chia Brötchen?",
-      "answer": "Pro 100g liefert ein Chia Brötchen etwa 10g Eiweiß, ein Brötchen (70g) rund 7g. Das ist etwas mehr als bei einem normalen Weizenbrötchen."
+      "answer": "Pro 100g liefert ein Chia Brötchen etwa 11g Eiweiß, ein Brötchen (70g) rund 7g. Das ist etwas mehr als bei einem normalen Weizenbrötchen."
     },
     {
       "question": "Ist ein Chia Brötchen zum Abnehmen geeignet?",
-      "answer": "Mit ca. 189 kcal pro Brötchen ist es kein Diät-Wunder, sättigt aber durch Ballaststoffe und Eiweiß gut. Entscheidend sind Menge und ein kalorienarmer Belag."
+      "answer": "Mit ca. 218 kcal pro Brötchen ist es kein Diät-Wunder, sättigt aber durch Ballaststoffe und Eiweiß gut. Entscheidend sind Menge und ein kalorienarmer Belag."
     },
     {
       "question": "Ist ein Chia Brötchen gesünder als ein normales Brötchen?",
-      "answer": "Es hat ähnlich viele Kalorien, liefert durch die Chiasamen aber mehr Ballaststoffe, Eiweiß und Omega-3-Fettsäuren als ein klassisches Weizenbrötchen."
+      "answer": "Es hat etwa gleich viele, sogar etwas mehr Kalorien, liefert durch die Chiasamen aber mehr Ballaststoffe, Eiweiß und Omega-3-Fettsäuren als ein klassisches Weizenbrötchen."
     }
   ],
   "related_foods": [

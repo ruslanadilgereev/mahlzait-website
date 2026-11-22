@@ -3,47 +3,228 @@
   "name": "Pflaumenkuchen",
   "emoji": "🟣",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Blech, 12 Stück à ca. 155 g): 400 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 200 ml (206 g) Vollmilch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 60 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 110 g Zucker (Teig und zum Bestreuen) (FDC-ID 169655, Sugars, granulated: 387 kcal), 55 g Ei (1 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 21 g Hefe frisch (FDC-ID 175042, Leavening agents, yeast, baker's, compressed: 105 kcal), 1350 g Zwetschgen, entsteint (FDC-ID 169949, Plums, raw: 46 kcal); 2202 g Zutaten ergeben 1870 g (Backverlust rund 15 %, vor allem Saft der Zwetschgen (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenmehl",
+        "g": 400,
+        "fdcId": 169761
+      },
+      {
+        "name": "Vollmilch 3,5 %",
+        "g": 206,
+        "ml": 200,
+        "fdcId": 171265
+      },
+      {
+        "name": "Butter",
+        "g": 60,
+        "fdcId": 173430
+      },
+      {
+        "name": "Zucker (Teig und zum Bestreuen)",
+        "g": 110,
+        "fdcId": 169655
+      },
+      {
+        "name": "Ei (1 Stück)",
+        "g": 55,
+        "fdcId": 171287
+      },
+      {
+        "name": "Hefe frisch",
+        "g": 21,
+        "fdcId": 175042
+      },
+      {
+        "name": "Zwetschgen, entsteint",
+        "g": 1350,
+        "fdcId": 169949
+      }
+    ],
+    "gewicht_g": 1870
+  },
   "seo": {
     "title": "Pflaumenkuchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Pflaumenkuchen? Nährwerte für Zwetschgenkuchen mit Hefeteig, Streusel & Sahne. Mit Portionsrechner und Spar-Tipps."
+    "description": "Wie viele Kalorien hat Pflaumenkuchen? Ein Stück (150g) hat ca. 254 kcal. Nährwerte für Zwetschgenkuchen mit Hefeteig, Streuseln & Sahne. Mit Portionsrechner und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 195,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 169,
+    "protein_per_100g": 3.6,
+    "carbs_per_100g": 31.2,
+    "fat_per_100g": 3.7,
+    "fiber_per_100g": 1.7,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Stück"
   },
   "variants": [
-    {"name": "Pflaumenkuchen mit Hefeteig", "portion_g": 150, "calories": 293, "protein": 6, "carbs": 45, "fat": 9, "tip": "Klassischer Blechkuchen"},
-    {"name": "Pflaumenkuchen mit Streuseln", "portion_g": 150, "calories": 370, "protein": 6, "carbs": 48, "fat": 16, "tip": "Mit Butterstreuseln obendrauf"},
-    {"name": "Pflaumenkuchen mit Mürbeteig", "portion_g": 150, "calories": 345, "protein": 5, "carbs": 42, "fat": 17, "tip": "Knuspriger Boden"},
-    {"name": "Pflaumenkuchen mit Sahne", "portion_g": 200, "calories": 423, "protein": 7, "carbs": 45, "fat": 23, "tip": "Mit Schlagsahne serviert"},
-    {"name": "Zwetschgendatschi (bayerisch)", "portion_g": 160, "calories": 320, "protein": 6, "carbs": 48, "fat": 10, "tip": "Bayerische Spezialität"},
-    {"name": "Pflaumenkuchen ohne Zucker", "portion_g": 150, "calories": 240, "protein": 6, "carbs": 35, "fat": 8, "tip": "Natürliche Süße der Pflaumen"}
+    {
+      "name": "Pflaumenkuchen mit Hefeteig",
+      "portion_g": 150,
+      "calories": 254,
+      "protein": 5,
+      "carbs": 47,
+      "fat": 6,
+      "tip": "Klassischer Blechkuchen"
+    },
+    {
+      "name": "Pflaumenkuchen mit Streuseln (130g + 20g Streusel)",
+      "portion_g": 150,
+      "calories": 315,
+      "protein": 6,
+      "carbs": 53,
+      "fat": 10,
+      "tip": "Mit Butterstreuseln obendrauf",
+      "basis": [
+        {
+          "g": 130
+        },
+        {
+          "fdcId": 169761,
+          "g": 8
+        },
+        {
+          "fdcId": 173430,
+          "g": 6
+        },
+        {
+          "fdcId": 169655,
+          "g": 6
+        }
+      ]
+    },
+    {
+      "name": "Pflaumenkuchen mit Sahne (150g + 50g Schlagsahne)",
+      "portion_g": 200,
+      "calories": 400,
+      "protein": 6,
+      "carbs": 48,
+      "fat": 21,
+      "tip": "Mit Schlagsahne serviert",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 170858,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Zwetschgendatschi (bayerisch)",
+      "portion_g": 160,
+      "calories": 270,
+      "protein": 6,
+      "carbs": 50,
+      "fat": 6,
+      "tip": "Bayerische Spezialität"
+    }
   ],
   "comparison": [
-    {"name": "Apfelkuchen", "calories": 210, "emoji": "🍎"},
-    {"name": "Käsekuchen", "calories": 250, "emoji": "🍰"},
-    {"name": "Streuselkuchen", "calories": 320, "emoji": "🍰"},
-    {"name": "Bienenstich", "calories": 330, "emoji": "🐝"}
+    {
+      "name": "Apfelkuchen, gedeckt (100g)",
+      "calories": 296,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "fdcId": 2707995,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Käsekuchen (100g)",
+      "calories": 255,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "kaesekuchen",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Streuselkuchen (100g)",
+      "calories": 396,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "streuselkuchen",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Bienenstich (100g)",
+      "calories": 308,
+      "emoji": "🐝",
+      "basis": [
+        {
+          "slug": "bienenstich",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Hefeteig statt Mürbeteig", "text": "Hefeteig hat weniger Butter als Mürbeteig – du sparst ca. 50 kcal pro Stück.", "icon": "🍞"},
-    {"title": "Ohne Streusel backen", "text": "Streusel sind lecker, aber addieren ca. 80 kcal pro Stück. Pflaumenkuchen pur ist auch köstlich.", "icon": "💡"},
-    {"title": "Reife Pflaumen verwenden", "text": "Je reifer die Pflaumen, desto süßer – und desto weniger Zucker brauchst du im Teig.", "icon": "🟣"},
-    {"title": "Sahne weglassen", "text": "Ohne Schlagsahne sparst du ca. 130 kcal pro Stück. Zimt-Zucker als Alternative hat nur 15 kcal.", "icon": "⚖️"},
-    {"title": "Pflaumen dicht legen", "text": "Je mehr Pflaumen auf dem Teig, desto fruchtiger und saftiger – und der Teig-Anteil pro Stück sinkt.", "icon": "📐"}
+    {
+      "title": "Hefeteig statt Mürbeteig",
+      "text": "Hefeteig hat weniger Butter als Mürbeteig, das spart pro Stück spürbar Kalorien.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Ohne Streusel backen",
+      "text": "Streusel sind lecker, aber 20g Streusel addieren rund 61 kcal pro Stück. Pflaumenkuchen pur ist auch köstlich.",
+      "icon": "💡"
+    },
+    {
+      "title": "Reife Pflaumen verwenden",
+      "text": "Je reifer die Pflaumen, desto süßer, und desto weniger Zucker brauchst du im Teig.",
+      "icon": "🟣"
+    },
+    {
+      "title": "Sahne weglassen",
+      "text": "Ohne 50g Schlagsahne sparst du rund 146 kcal pro Stück. Zimt mit etwas Zucker ist die leichtere Alternative.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Pflaumen dicht legen",
+      "text": "Je mehr Pflaumen auf dem Teig, desto fruchtiger und saftiger, und der Teig-Anteil pro Stück sinkt.",
+      "icon": "📐"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Pflaumenkuchen?", "answer": "Ein Stück Pflaumenkuchen (150g) hat ca. 293 kcal mit Hefeteig. Mit Streuseln steigt der Wert auf ca. 370 kcal, mit Sahne auf ca. 423 kcal."},
-    {"question": "Ist Pflaumenkuchen ein kalorienarmer Kuchen?", "answer": "Pflaumenkuchen mit Hefeteig (195 kcal/100g) gehört zu den kalorienärmeren Kuchen. Im Vergleich: Bienenstich hat 330 kcal und Käsekuchen 250 kcal pro 100g."},
-    {"question": "Wie viel Zucker hat Pflaumenkuchen?", "answer": "Pflaumenkuchen enthält ca. 18-22g Zucker pro Stück (150g). Davon sind ca. 8-10g natürlicher Fruchtzucker aus den Pflaumen."},
-    {"question": "Ist Zwetschgenkuchen das gleiche wie Pflaumenkuchen?", "answer": "Im Grunde ja. Zwetschgen sind eine Unterart der Pflaumen und werden regional unterschiedlich benannt. In Bayern heißt es Zwetschgendatschi, sonst Pflaumenkuchen."},
-    {"question": "Kann man Pflaumenkuchen kalorienärmer machen?", "answer": "Ja: Hefeteig statt Mürbeteig, keine Streusel, reife Pflaumen für weniger Zuckerbedarf und ohne Sahne servieren. So sparst du bis zu 180 kcal."},
-    {"question": "Wie viel Fett hat Pflaumenkuchen?", "answer": "Pflaumenkuchen mit Hefeteig hat nur ca. 6g Fett pro 100g – das ist wenig für Kuchen. Mit Streuseln steigt es auf ca. 10-11g/100g."}
+    {
+      "question": "Wie viele Kalorien hat Pflaumenkuchen?",
+      "answer": "Ein Stück Pflaumenkuchen (150g) hat ca. 254 kcal mit Hefeteig. Mit Streuseln steigt der Wert auf ca. 315 kcal, mit 50g Sahne auf ca. 400 kcal. Gerechnet aus USDA-Werten für ein Blech mit Hefeteig aus 400g Mehl, 200ml Milch, 60g Butter, 1 Ei und Hefe, 1,35kg Zwetschgen und 110g Zucker (12 Stück)."
+    },
+    {
+      "question": "Ist Pflaumenkuchen ein kalorienarmer Kuchen?",
+      "answer": "Pflaumenkuchen mit Hefeteig (169 kcal/100g) gehört zu den kalorienärmeren Kuchen. Im Vergleich: Bienenstich hat 308 kcal und Käsekuchen 255 kcal pro 100g."
+    },
+    {
+      "question": "Wie viel Zucker hat Pflaumenkuchen?",
+      "answer": "Ein Stück (150g) enthält rund 21g Zucker, gut die Hälfte davon (rund 11g) ist natürlicher Fruchtzucker aus den Zwetschgen."
+    },
+    {
+      "question": "Ist Zwetschgenkuchen das gleiche wie Pflaumenkuchen?",
+      "answer": "Im Grunde ja. Zwetschgen sind eine Unterart der Pflaumen und werden regional unterschiedlich benannt. In Bayern heißt es Zwetschgendatschi, sonst Pflaumenkuchen."
+    },
+    {
+      "question": "Kann man Pflaumenkuchen kalorienärmer machen?",
+      "answer": "Ja: Hefeteig statt Mürbeteig, keine Streusel, reife Pflaumen für weniger Zuckerbedarf und ohne Sahne servieren. So sparst du deutlich Kalorien."
+    },
+    {
+      "question": "Wie viel Fett hat Pflaumenkuchen?",
+      "answer": "Pflaumenkuchen mit Hefeteig hat nur ca. 3,7g Fett pro 100g, das ist wenig für Kuchen. Mit Streuseln steigt es auf rund 6,7g pro 100g."
+    }
   ],
-  "related_foods": ["streuselkuchen", "kaesekuchen", "apfelstrudel", "bienenstich"]
+  "related_foods": [
+    "streuselkuchen",
+    "kaesekuchen",
+    "apfelstrudel",
+    "bienenstich"
+  ]
 }

@@ -3,9 +3,26 @@
   "name": "Lillet Wild Berry",
   "emoji": "🍹",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Glas 200 ml (1 Teil Lillet, 2 Teile Limonade)): 65 ml (66 g) Lillet Rosé (gerechnet als süßer Dessertwein) (FDC-ID 2710692, Wine, dessert, sweet: 160 kcal), 135 ml (137 g) Wild-Berry-Limonade (gerechnet als Tonic Water) (FDC-ID 2710538, Water, tonic: 34 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Lillet Rosé (gerechnet als süßer Dessertwein)",
+        "g": 66,
+        "ml": 65,
+        "fdcId": 2710692
+      },
+      {
+        "name": "Wild-Berry-Limonade (gerechnet als Tonic Water)",
+        "g": 137,
+        "ml": 135,
+        "fdcId": 2710538
+      }
+    ]
+  },
   "seo": {
     "title": "Lillet Wild Berry Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Lillet Wild Berry? Ein Glas (200ml) hat ca. 126 kcal. Nährwerte pro 100ml, Portionen im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Lillet Wild Berry? Ein Glas (200ml) hat ca. 152 kcal. Nährwerte pro 100ml, Portionen im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "kalorien lillet wild berry",
       "lillet wild berry kalorien",
@@ -17,96 +34,91 @@
   },
   "overview": {
     "calories_per_100g": 75,
-    "protein_per_100g": 0,
-    "carbs_per_100g": 7,
+    "protein_per_100g": 0.1,
+    "carbs_per_100g": 10.4,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 200,
+    "typical_portion_g": 203,
     "typical_portion_name": "1 Glas (200ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (150ml)",
-      "portion_g": 150,
-      "calories": 95,
-      "protein": 0,
-      "carbs": 10.5,
+      "portion_g": 152,
+      "calories": 114,
+      "protein": 0.2,
+      "carbs": 15.8,
       "fat": 0
     },
     {
       "name": "1 Glas (200ml)",
-      "portion_g": 200,
-      "calories": 126,
-      "protein": 0,
-      "carbs": 14,
+      "portion_g": 203,
+      "calories": 152,
+      "protein": 0.2,
+      "carbs": 21.1,
       "fat": 0,
       "tip": "Standard-Portion"
     },
     {
       "name": "Longdrink-Glas (300ml)",
-      "portion_g": 300,
-      "calories": 189,
-      "protein": 0,
-      "carbs": 21,
-      "fat": 0
-    },
-    {
-      "name": "Fertigflasche (250ml)",
-      "portion_g": 250,
-      "calories": 158,
-      "protein": 0,
-      "carbs": 17.5,
-      "fat": 0,
-      "tip": "Ready-to-drink"
-    },
-    {
-      "name": "0,75l Flasche (gesamt)",
-      "portion_g": 750,
-      "calories": 472,
-      "protein": 0,
-      "carbs": 52.5,
+      "portion_g": 304,
+      "calories": 228,
+      "protein": 0.3,
+      "carbs": 31.6,
       "fat": 0
     },
     {
       "name": "Pro 100ml",
-      "portion_g": 100,
-      "calories": 63,
-      "protein": 0,
-      "carbs": 7,
+      "portion_g": 101,
+      "calories": 76,
+      "protein": 0.1,
+      "carbs": 10.5,
       "fat": 0
     }
   ],
   "comparison": [
     {
-      "name": "Aperol Spritz",
-      "calories": 130,
-      "emoji": "🍹"
-    },
-    {
-      "name": "Hugo",
-      "calories": 90,
-      "emoji": "🥂"
+      "name": "Hugo (250ml)",
+      "calories": 185,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "hugo"
+        }
+      ]
     },
     {
       "name": "Prosecco (100ml)",
-      "calories": 80,
-      "emoji": "🍾"
+      "calories": 76,
+      "emoji": "🍾",
+      "basis": [
+        {
+          "slug": "prosecco",
+          "ml": 100,
+          "g": 101
+        }
+      ]
     },
     {
-      "name": "Gin Tonic",
-      "calories": 180,
-      "emoji": "🍸"
+      "name": "Gin Tonic (250ml)",
+      "calories": 213,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin-tonic"
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Kalorien stecken im Alkohol",
-      "text": "Lillet Wild Berry hat etwa 8,8 % vol. Der Alkohol liefert die meisten Kalorien, nicht der Zucker. Deshalb hat das Getränk mehr kcal, als die reine Kohlenhydrat-Menge vermuten lässt.",
+      "title": "Kalorien aus Zucker und Alkohol",
+      "text": "Lillet ist ein gesüßter Aperitifwein, die Limonade bringt weiteren Zucker. Gut die Hälfte der Kalorien stammt aus dem Zucker, der Rest aus dem Alkohol.",
       "icon": "🍷"
     },
     {
       "title": "Glas statt Flasche",
-      "text": "Ein 200ml-Glas hat rund 126 kcal. Wer aus der Flasche trinkt, kommt schnell auf das Doppelte. Ein Glas bewusst einschenken hilft, den Überblick zu behalten.",
+      "text": "Ein 200ml-Glas hat rund 152 kcal. Wer aus der Flasche trinkt, kommt schnell auf das Doppelte. Ein Glas bewusst einschenken hilft, den Überblick zu behalten.",
       "icon": "🥃"
     },
     {
@@ -128,15 +140,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Lillet Wild Berry?",
-      "answer": "Ein Glas Lillet Wild Berry (200ml) hat ca. 126 kcal. Pro 100ml sind es rund 63 kcal."
+      "answer": "Ein Glas Lillet Wild Berry (200ml) hat ca. 152 kcal. Pro 100ml sind es rund 76 kcal. Gerechnet aus USDA-Werten für 65 ml Lillet Rosé (als süßer Dessertwein) und 135 ml Wild-Berry-Limonade (als Tonic Water)."
     },
     {
       "question": "Wie viele Kalorien hat eine Fertigflasche Lillet Wild Berry?",
-      "answer": "Eine 250ml-Fertigflasche (ready-to-drink) hat etwa 158 kcal."
+      "answer": "Für die Fertigflasche (ready-to-drink) liegt kein USDA-Wert vor. Nach Rezept gemischt haben 250ml rund 190 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Lillet Wild Berry?",
-      "answer": "Lillet Wild Berry enthält etwa 7g Kohlenhydrate pro 100ml, fast ausschließlich aus Zucker. Ein Glas (200ml) liefert rund 14g."
+      "answer": "Lillet Wild Berry enthält etwa 10,6g Kohlenhydrate pro 100ml, fast ausschließlich aus Zucker. Ein Glas (200ml) liefert rund 21g."
     },
     {
       "question": "Hat Lillet Wild Berry Eiweiß oder Fett?",
@@ -144,7 +156,7 @@
     },
     {
       "question": "Ist Lillet Wild Berry zum Abnehmen geeignet?",
-      "answer": "Als gelegentlicher Genuss ist ein Glas mit 126 kcal vertretbar. Zum Abnehmen sollte man alkoholische Getränke jedoch sparsam einsetzen, da der Alkohol Kalorien liefert und den Fettabbau bremst."
+      "answer": "Als gelegentlicher Genuss ist ein Glas mit 152 kcal vertretbar. Zum Abnehmen sollte man alkoholische Getränke jedoch sparsam einsetzen, da der Alkohol Kalorien liefert und den Fettabbau bremst."
     },
     {
       "question": "Ist Lillet Wild Berry gesund?",

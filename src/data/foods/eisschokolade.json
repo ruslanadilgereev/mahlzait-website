@@ -3,9 +3,29 @@
   "name": "Eisschokolade",
   "emoji": "🍫",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Standard-Glas 300 g): 220 g Kalter Kakao (Schokomilch, Vollmilch) (FDC-ID 2705467, Chocolate milk, whole: 83 kcal), 50 g Vanilleeis (1 Kugel) (FDC-ID 167575, Ice creams, vanilla: 207 kcal), 30 g Schlagsahne (FDC-ID 2705598, Cream, whipped: 346 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Kalter Kakao (Schokomilch, Vollmilch)",
+        "g": 220,
+        "fdcId": 2705467
+      },
+      {
+        "name": "Vanilleeis (1 Kugel)",
+        "g": 50,
+        "fdcId": 167575
+      },
+      {
+        "name": "Schlagsahne",
+        "g": 30,
+        "fdcId": 2705598
+      }
+    ]
+  },
   "seo": {
     "title": "Eisschokolade Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Eisschokolade? Ein Standard-Glas (300g) hat ca. 360 kcal. Nährwerte pro 100g, Varianten mit und ohne Sahne im Vergleich.",
+    "description": "Wie viele Kalorien hat Eisschokolade? Ein Standard-Glas (300g) hat ca. 390 kcal. Nährwerte pro 100g, Varianten mit und ohne Sahne im Vergleich.",
     "keywords": [
       "eisschokolade kalorien",
       "eisschokolade kcal",
@@ -16,11 +36,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 120,
-    "protein_per_100g": 2.8,
-    "carbs_per_100g": 14.5,
-    "fat_per_100g": 5.8,
-    "fiber_per_100g": 0.6,
+    "calories_per_100g": 130,
+    "protein_per_100g": 3.1,
+    "carbs_per_100g": 12.5,
+    "fat_per_100g": 7.7,
+    "fiber_per_100g": 0.7,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Glas (Standard)"
   },
@@ -28,81 +48,133 @@
     {
       "name": "Kleines Glas (200g)",
       "portion_g": 200,
-      "calories": 240,
-      "protein": 5.6,
-      "carbs": 29,
-      "fat": 11.6
+      "calories": 260,
+      "protein": 6.2,
+      "carbs": 25,
+      "fat": 15.4
     },
     {
       "name": "Standard-Glas (300g)",
       "portion_g": 300,
-      "calories": 360,
-      "protein": 8.4,
-      "carbs": 43.5,
-      "fat": 17.4,
+      "calories": 390,
+      "protein": 9.3,
+      "carbs": 37.5,
+      "fat": 23.1,
       "tip": "Übliche Café-Portion mit Eiskugel und Sahne"
     },
     {
       "name": "Großes Glas (400g)",
       "portion_g": 400,
-      "calories": 480,
-      "protein": 11.2,
-      "carbs": 58,
-      "fat": 23.2
+      "calories": 520,
+      "protein": 12.4,
+      "carbs": 50,
+      "fat": 30.8
     },
     {
       "name": "Ohne Sahne (250g)",
       "portion_g": 250,
-      "calories": 238,
-      "protein": 7.2,
-      "carbs": 33.8,
-      "fat": 8.8,
-      "tip": "Ohne Sahnehaube deutlich weniger Fett"
+      "calories": 270,
+      "protein": 8.1,
+      "carbs": 32.5,
+      "fat": 12.3,
+      "tip": "Ohne Sahnehaube deutlich weniger Fett",
+      "basis": [
+        {
+          "fdcId": 2705467,
+          "g": 200
+        },
+        {
+          "fdcId": 167575,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Mit extra Sahne (350g)",
       "portion_g": 350,
-      "calories": 508,
-      "protein": 9.5,
-      "carbs": 49,
-      "fat": 29.8
+      "calories": 563,
+      "protein": 10.3,
+      "carbs": 42.2,
+      "fat": 39.8,
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 2705598,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Fertigpulver-Mix (30g)",
       "portion_g": 30,
-      "calories": 114,
-      "protein": 1.5,
-      "carbs": 22.5,
-      "fat": 1.8,
-      "tip": "Reines Pulver vor dem Anrühren mit Milch"
+      "calories": 119,
+      "protein": 2,
+      "carbs": 25.1,
+      "fat": 1.2,
+      "tip": "Reines Pulver vor dem Anrühren mit Milch",
+      "basis": [
+        {
+          "fdcId": 174122,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Cola (330ml)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 330,
+          "g": 346
+        }
+      ]
     },
     {
       "name": "Kakao (250ml)",
-      "calories": 180,
-      "emoji": "🍫"
+      "calories": 238,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kakao",
+          "ml": 250,
+          "g": 262
+        }
+      ]
     },
     {
       "name": "Eiskaffee (250g)",
-      "calories": 195,
-      "emoji": "🧊"
+      "calories": 270,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "eiskaffee",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Schoko-Milchshake (300ml)",
-      "calories": 330,
-      "emoji": "🥛"
+      "calories": 341,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milchshake-schoko",
+          "ml": 300,
+          "g": 284
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sahne weglassen spart am meisten",
-      "text": "Die Sahnehaube macht einen großen Teil des Fettes aus. Ohne Sahne sinkt ein 250g-Glas auf rund 238 kcal statt deutlich mehr mit Haube.",
+      "text": "Die Sahnehaube macht einen großen Teil des Fettes aus. Ohne Sahne sinkt ein 250g-Glas auf rund 270 kcal, das Standard-Glas mit Haube hat 390 kcal.",
       "icon": "🥄"
     },
     {
@@ -112,7 +184,7 @@
     },
     {
       "title": "Auf die Glasgröße achten",
-      "text": "Ein großes Glas (400g) liefert mit etwa 480 kcal fast doppelt so viel wie ein kleines Glas (200g, ca. 240 kcal). Die Portionswahl entscheidet stark.",
+      "text": "Ein großes Glas (400g) liefert mit etwa 520 kcal doppelt so viel wie ein kleines Glas (200g, ca. 260 kcal). Die Portionswahl entscheidet stark.",
       "icon": "📏"
     },
     {
@@ -129,19 +201,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Eisschokolade?",
-      "answer": "Ein Standard-Glas Eisschokolade (300g) mit Eiskugel und Sahne hat ca. 360 kcal. Pro 100g sind es etwa 120 kcal."
+      "answer": "Ein Standard-Glas Eisschokolade (300g) mit Eiskugel und Sahne hat ca. 390 kcal. Pro 100g sind es etwa 130 kcal. Gerechnet aus USDA-Werten für 220 g kalten Kakao (Schokomilch), 1 Kugel Vanilleeis (50 g) und 30 g Schlagsahne."
     },
     {
       "question": "Wie viele Kalorien hat Eisschokolade ohne Sahne?",
-      "answer": "Ohne Sahnehaube hat ein 250g-Glas nur etwa 238 kcal, da der größte Teil des Fettes über die Sahne hinzukommt."
+      "answer": "Ohne Sahnehaube hat ein 250g-Glas nur etwa 270 kcal, da fast die Hälfte des Fettes über die Sahne hinzukommt."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Eisschokolade?",
-      "answer": "Eisschokolade enthält ca. 14,5g Kohlenhydrate pro 100g, überwiegend aus Milchzucker und zugesetztem Zucker. Ein Standard-Glas (300g) liefert rund 43,5g."
+      "answer": "Eisschokolade enthält ca. 12,5g Kohlenhydrate pro 100g, überwiegend aus Milchzucker und zugesetztem Zucker. Ein Standard-Glas (300g) liefert rund 37,5g."
     },
     {
       "question": "Wie viel Protein hat Eisschokolade?",
-      "answer": "Durch den hohen Milchanteil liefert Eisschokolade etwa 2,8g Protein pro 100g, also rund 8,4g pro Standard-Glas (300g)."
+      "answer": "Durch den hohen Milchanteil liefert Eisschokolade etwa 3,1g Protein pro 100g, also rund 9,3g pro Standard-Glas (300g)."
     },
     {
       "question": "Ist Eisschokolade zum Abnehmen geeignet?",

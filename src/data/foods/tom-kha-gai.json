@@ -3,47 +3,332 @@
   "name": "Tom Kha Gai",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Schüsseln à 400 g): 400 g Kokosmilch (Dose) (FDC-ID 170173, Nuts, coconut milk, canned (liquid expressed from grated meat and water): 197 kcal), 700 g Hühnerbrühe (FDC-ID 174536, Soup, chicken broth, ready-to-serve: 6 kcal), 300 g Hähnchenbrust, gegart (FDC-ID 171477, Chicken, broilers or fryers, breast, meat only, cooked, roasted: 165 kcal), 150 g Champignons (FDC-ID 169251, Mushrooms, white, raw: 22 kcal), 20 g Limettensaft (FDC-ID 168156, Lime juice, raw: 25 kcal), 20 g Fischsauce (FDC-ID 174531, Sauce, fish, ready-to-serve: 35 kcal), 10 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Kokosmilch (Dose)",
+        "g": 400,
+        "fdcId": 170173
+      },
+      {
+        "name": "Hühnerbrühe",
+        "g": 700,
+        "fdcId": 174536
+      },
+      {
+        "name": "Hähnchenbrust, gegart",
+        "g": 300,
+        "fdcId": 171477
+      },
+      {
+        "name": "Champignons",
+        "g": 150,
+        "fdcId": 169251
+      },
+      {
+        "name": "Limettensaft",
+        "g": 20,
+        "fdcId": 168156
+      },
+      {
+        "name": "Fischsauce",
+        "g": 20,
+        "fdcId": 174531
+      },
+      {
+        "name": "Zucker",
+        "g": 10,
+        "fdcId": 169655
+      }
+    ]
+  },
   "seo": {
     "title": "Tom Kha Gai Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Tom Kha Gai? Nährwerte der thailändischen Kokossuppe mit Hähnchen. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 85,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 88,
+    "protein_per_100g": 7,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 6.1,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Schüssel"
   },
   "variants": [
-    {"name": "Klassisch mit Hähnchen", "portion_g": 400, "calories": 340, "protein": 20, "carbs": 16, "fat": 24, "tip": "Standard-Portion"},
-    {"name": "Mit Garnelen", "portion_g": 400, "calories": 310, "protein": 22, "carbs": 16, "fat": 20, "tip": "Weniger Fett"},
-    {"name": "Vegetarisch mit Tofu", "portion_g": 400, "calories": 290, "protein": 16, "carbs": 18, "fat": 18, "tip": "Kalorienärmste Variante"},
-    {"name": "Mit Reis dazu", "portion_g": 550, "calories": 540, "protein": 22, "carbs": 66, "fat": 24},
-    {"name": "Light (weniger Kokosmilch)", "portion_g": 400, "calories": 240, "protein": 20, "carbs": 14, "fat": 12, "tip": "Diät-freundlich"},
-    {"name": "Extra cremig (volle Kokosmilch)", "portion_g": 400, "calories": 420, "protein": 18, "carbs": 16, "fat": 32}
+    {
+      "name": "Klassisch mit Hähnchen",
+      "portion_g": 400,
+      "calories": 352,
+      "protein": 28,
+      "carbs": 8,
+      "fat": 24,
+      "tip": "Standard-Portion"
+    },
+    {
+      "name": "Mit Garnelen",
+      "portion_g": 400,
+      "calories": 303,
+      "protein": 23,
+      "carbs": 8,
+      "fat": 22,
+      "tip": "Weniger Fett",
+      "basis": [
+        {
+          "fdcId": 170173,
+          "g": 100
+        },
+        {
+          "fdcId": 174536,
+          "g": 175
+        },
+        {
+          "fdcId": 175180,
+          "g": 75
+        },
+        {
+          "fdcId": 169251,
+          "g": 37.5
+        },
+        {
+          "fdcId": 168156,
+          "g": 5
+        },
+        {
+          "fdcId": 174531,
+          "g": 5
+        },
+        {
+          "fdcId": 169655,
+          "g": 2.5
+        }
+      ]
+    },
+    {
+      "name": "Vegetarisch mit Tofu",
+      "portion_g": 400,
+      "calories": 336,
+      "protein": 17,
+      "carbs": 11,
+      "fat": 28,
+      "tip": "Mit Gemüsebrühe und Sojasauce",
+      "basis": [
+        {
+          "fdcId": 170173,
+          "g": 100
+        },
+        {
+          "fdcId": 171583,
+          "g": 175
+        },
+        {
+          "fdcId": 172475,
+          "g": 75
+        },
+        {
+          "fdcId": 169251,
+          "g": 37.5
+        },
+        {
+          "fdcId": 168156,
+          "g": 5
+        },
+        {
+          "fdcId": 174278,
+          "g": 5
+        },
+        {
+          "fdcId": 169655,
+          "g": 2.5
+        }
+      ]
+    },
+    {
+      "name": "Mit Reis dazu",
+      "portion_g": 550,
+      "calories": 547,
+      "protein": 32,
+      "carbs": 50,
+      "fat": 25,
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Light (weniger Kokosmilch)",
+      "portion_g": 400,
+      "calories": 257,
+      "protein": 27,
+      "carbs": 7,
+      "fat": 14,
+      "tip": "Diät-freundlich",
+      "basis": [
+        {
+          "fdcId": 170173,
+          "g": 50
+        },
+        {
+          "fdcId": 174536,
+          "g": 225
+        },
+        {
+          "fdcId": 171477,
+          "g": 75
+        },
+        {
+          "fdcId": 169251,
+          "g": 37.5
+        },
+        {
+          "fdcId": 168156,
+          "g": 5
+        },
+        {
+          "fdcId": 174531,
+          "g": 5
+        },
+        {
+          "fdcId": 169655,
+          "g": 2.5
+        }
+      ]
+    },
+    {
+      "name": "Extra cremig (volle Kokosmilch)",
+      "portion_g": 400,
+      "calories": 448,
+      "protein": 29,
+      "carbs": 9,
+      "fat": 35,
+      "basis": [
+        {
+          "fdcId": 170173,
+          "g": 150
+        },
+        {
+          "fdcId": 174536,
+          "g": 125
+        },
+        {
+          "fdcId": 171477,
+          "g": 75
+        },
+        {
+          "fdcId": 169251,
+          "g": 37.5
+        },
+        {
+          "fdcId": 168156,
+          "g": 5
+        },
+        {
+          "fdcId": 174531,
+          "g": 5
+        },
+        {
+          "fdcId": 169655,
+          "g": 2.5
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Tom Yum Gung", "calories": 280, "emoji": "🍲"},
-    {"name": "Pho", "calories": 350, "emoji": "🍜"},
-    {"name": "Ramen", "calories": 500, "emoji": "🍜"},
-    {"name": "Hühnersuppe deutsch", "calories": 180, "emoji": "🥣"}
+    {
+      "name": "Pho (1 Schüssel, 550g)",
+      "calories": 424,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "pho"
+        }
+      ]
+    },
+    {
+      "name": "Ramen (1 Schüssel, 550g)",
+      "calories": 699,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "ramen"
+        }
+      ]
+    },
+    {
+      "name": "Hühnersuppe (1 Teller, 400g)",
+      "calories": 160,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "fdcId": 2707134,
+          "g": 400
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Light-Kokosmilch nutzen", "text": "Light-Kokosmilch hat nur 70 kcal/100ml statt 190 kcal – spart bis zu 150 kcal pro Portion.", "icon": "🥥"},
-    {"title": "Reis separat portionieren", "text": "Ohne Reis hat Tom Kha Gai nur 340 kcal. Portioniere 80g Reis (100 kcal) statt 150g separat.", "icon": "🍚"},
-    {"title": "Mehr Gemüse, weniger Kokosmilch", "text": "Pilze, Pak Choi und Paprika machen die Suppe sättigend, ohne Kalorien hinzuzufügen.", "icon": "🍄"},
-    {"title": "Galgant und Zitronengras frisch", "text": "Frische Gewürze haben null Kalorien und intensivieren den Geschmack – weniger Kokosmilch nötig.", "icon": "🌿"},
-    {"title": "Hähnchenbrust statt -schenkel", "text": "Hähnchenbrust hat 110 kcal/100g vs. 190 kcal bei Schenkel – spart ca. 80 kcal pro Portion.", "icon": "🍗"}
+    {
+      "title": "Weniger Kokosmilch nutzen",
+      "text": "Mit der halben Menge Kokosmilch (Light-Variante) spart eine Schüssel rund 95 kcal.",
+      "icon": "🥥"
+    },
+    {
+      "title": "Reis separat portionieren",
+      "text": "Ohne Reis hat Tom Kha Gai rund 352 kcal. Portioniere 80g Reis (rund 104 kcal) statt 150g separat.",
+      "icon": "🍚"
+    },
+    {
+      "title": "Mehr Gemüse, weniger Kokosmilch",
+      "text": "Pilze, Pak Choi und Paprika machen die Suppe sättigend, ohne Kalorien hinzuzufügen.",
+      "icon": "🍄"
+    },
+    {
+      "title": "Galgant und Zitronengras frisch",
+      "text": "Frische Gewürze haben null Kalorien und intensivieren den Geschmack, so ist weniger Kokosmilch nötig.",
+      "icon": "🌿"
+    },
+    {
+      "title": "Hähnchenbrust statt -schenkel",
+      "text": "Hähnchenbrust ist magerer als Schenkel und spart etwas Fett. Dieses Rezept rechnet bereits mit Brust.",
+      "icon": "🍗"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Tom Kha Gai?", "answer": "Eine Schüssel Tom Kha Gai (400g) hat ca. 340 kcal. Mit Reis dazu sind es ca. 540 kcal."},
-    {"question": "Ist Tom Kha Gai gesund?", "answer": "Tom Kha Gai liefert hochwertiges Protein, Ingwer und Galgant mit entzündungshemmender Wirkung. Die Kokosmilch enthält allerdings gesättigte Fette."},
-    {"question": "Was ist kalorienärmer: Tom Kha Gai oder Tom Yum?", "answer": "Tom Yum (ca. 280 kcal) hat weniger Kalorien als Tom Kha Gai (ca. 340 kcal), da keine Kokosmilch enthalten ist."},
-    {"question": "Wie viel Protein hat Tom Kha Gai?", "answer": "Eine Portion liefert ca. 20g Protein durch das Hähnchenfleisch. Die Garnelen-Variante hat sogar 22g."},
-    {"question": "Kann man Tom Kha Gai beim Abnehmen essen?", "answer": "Ja – die Light-Version mit weniger Kokosmilch hat nur ca. 240 kcal pro Schüssel und ist reich an Protein."},
-    {"question": "Was ist der Unterschied zwischen Tom Kha und Tom Yum?", "answer": "Tom Kha enthält Kokosmilch (cremig, milder), Tom Yum ist eine klare, säuerlich-scharfe Suppe ohne Kokosmilch."}
+    {
+      "question": "Wie viele Kalorien hat Tom Kha Gai?",
+      "answer": "Eine Schüssel Tom Kha Gai (400g) hat ca. 352 kcal. Mit Reis dazu sind es ca. 547 kcal. Gerechnet aus USDA-Werten für 4 Schüsseln mit 400 g Kokosmilch, 700 g Hühnerbrühe, 300 g Hähnchenbrust, 150 g Champignons, Limettensaft, Fischsauce und 10 g Zucker."
+    },
+    {
+      "question": "Ist Tom Kha Gai gesund?",
+      "answer": "Tom Kha Gai liefert hochwertiges Protein, Ingwer und Galgant mit entzündungshemmender Wirkung. Die Kokosmilch enthält allerdings gesättigte Fette."
+    },
+    {
+      "question": "Was ist kalorienärmer: Tom Kha Gai oder Tom Yum?",
+      "answer": "Tom Yum hat weniger Kalorien als Tom Kha Gai (ca. 352 kcal), da keine Kokosmilch enthalten ist."
+    },
+    {
+      "question": "Wie viel Protein hat Tom Kha Gai?",
+      "answer": "Eine Portion liefert ca. 28g Protein durch das Hähnchenfleisch. Die Garnelen-Variante kommt auf rund 23g."
+    },
+    {
+      "question": "Kann man Tom Kha Gai beim Abnehmen essen?",
+      "answer": "Ja, die Light-Version mit weniger Kokosmilch hat nur ca. 257 kcal pro Schüssel und ist reich an Protein."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Tom Kha und Tom Yum?",
+      "answer": "Tom Kha enthält Kokosmilch (cremig, milder), Tom Yum ist eine klare, säuerlich-scharfe Suppe ohne Kokosmilch."
+    }
   ],
-  "related_foods": ["pad-thai", "pho", "ramen", "curry-haehnchen"]
+  "related_foods": [
+    "pad-thai",
+    "pho",
+    "ramen",
+    "curry-haehnchen"
+  ]
 }

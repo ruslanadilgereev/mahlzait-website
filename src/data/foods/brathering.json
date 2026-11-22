@@ -3,9 +3,44 @@
   "name": "Brathering",
   "emoji": "🐟",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (je 100 g Brathering (abgetropft)): 85 g Hering, gebraten (FDC-ID 175117, Fish, herring, Atlantic, cooked, dry heat: 203 kcal), 3 g Weizenmehl (Mehlmantel) (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 3 g Rapsöl (Braten) (FDC-ID 172336, Oil, canola: 884 kcal), 5 g Essig (Marinade) (FDC-ID 172237, Vinegar, distilled: 18 kcal), 2 g Zucker (Marinade) (FDC-ID 169655, Sugars, granulated: 387 kcal), 2 g Zwiebeln (Marinade) (FDC-ID 170000, Onions, raw: 40 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Hering, gebraten",
+        "g": 85,
+        "fdcId": 175117
+      },
+      {
+        "name": "Weizenmehl (Mehlmantel)",
+        "g": 3,
+        "fdcId": 169761
+      },
+      {
+        "name": "Rapsöl (Braten)",
+        "g": 3,
+        "fdcId": 172336
+      },
+      {
+        "name": "Essig (Marinade)",
+        "g": 5,
+        "fdcId": 172237
+      },
+      {
+        "name": "Zucker (Marinade)",
+        "g": 2,
+        "fdcId": 169655
+      },
+      {
+        "name": "Zwiebeln (Marinade)",
+        "g": 2,
+        "fdcId": 170000
+      }
+    ]
+  },
   "seo": {
     "title": "Brathering Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Brathering? 100g gebratener, marinierter Hering haben ca. 200 kcal. Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
+    "description": "Wie viele Kalorien hat Brathering? 100g gebratener, marinierter Hering haben ca. 219 kcal. Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
     "keywords": [
       "brathering kalorien",
       "brathering kcal",
@@ -17,11 +52,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 200,
-    "protein_per_100g": 17,
-    "carbs_per_100g": 3,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 219,
+    "protein_per_100g": 19.9,
+    "carbs_per_100g": 4.5,
+    "fat_per_100g": 12.9,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 120,
     "typical_portion_name": "1 Brathering (ca. 120g)"
   },
@@ -29,90 +64,146 @@
     {
       "name": "Brathering klein (80g)",
       "portion_g": 80,
-      "calories": 160,
-      "protein": 14,
-      "carbs": 2,
+      "calories": 175,
+      "protein": 16,
+      "carbs": 4,
       "fat": 10
     },
     {
       "name": "1 Brathering (120g)",
       "portion_g": 120,
-      "calories": 240,
-      "protein": 20,
-      "carbs": 4,
-      "fat": 16,
+      "calories": 263,
+      "protein": 24,
+      "carbs": 5,
+      "fat": 15,
       "tip": "Standard"
     },
     {
       "name": "Brathering in der Dose (200g Abtropfgewicht)",
       "portion_g": 200,
-      "calories": 400,
-      "protein": 34,
-      "carbs": 6,
+      "calories": 438,
+      "protein": 40,
+      "carbs": 9,
       "fat": 26,
       "tip": "Ganze Dose ohne Marinade"
     },
     {
       "name": "Brathering im Brötchen",
       "portion_g": 180,
-      "calories": 390,
-      "protein": 24,
-      "carbs": 32,
+      "calories": 439,
+      "protein": 30,
+      "carbs": 37,
       "fat": 18,
-      "tip": "120g Fisch + Brötchen"
+      "tip": "120g Fisch + Brötchen (60g)",
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "slug": "broetchen"
+        }
+      ]
     },
     {
       "name": "Brathering paniert, gebraten (130g)",
       "portion_g": 130,
-      "calories": 300,
-      "protein": 22,
-      "carbs": 12,
-      "fat": 18,
-      "tip": "Mit Mehl-/Paniermantel"
+      "calories": 344,
+      "protein": 24,
+      "carbs": 16,
+      "fat": 20,
+      "tip": "Mit Paniermantel",
+      "basis": [
+        {
+          "g": 110
+        },
+        {
+          "fdcId": 174928,
+          "g": 15
+        },
+        {
+          "fdcId": 172336,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Brathering ohne Marinade (100g)",
       "portion_g": 100,
-      "calories": 190,
-      "protein": 18,
-      "carbs": 0,
-      "fat": 13
+      "calories": 228,
+      "protein": 22,
+      "carbs": 2,
+      "fat": 14,
+      "tip": "Nur gebraten, noch nicht eingelegt",
+      "basis": [
+        {
+          "fdcId": 175117,
+          "g": 94
+        },
+        {
+          "fdcId": 169761,
+          "g": 3
+        },
+        {
+          "fdcId": 172336,
+          "g": 3
+        }
+      ]
     },
     {
       "name": "Halber Brathering (60g)",
       "portion_g": 60,
-      "calories": 120,
-      "protein": 10,
-      "carbs": 2,
+      "calories": 131,
+      "protein": 12,
+      "carbs": 3,
       "fat": 8
     }
   ],
   "comparison": [
     {
-      "name": "Rollmops",
-      "calories": 165,
-      "emoji": "🐟"
+      "name": "Rollmops (1 Stück, 120g)",
+      "calories": 314,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "rollmops"
+        }
+      ]
     },
     {
-      "name": "Matjes",
-      "calories": 225,
-      "emoji": "🐟"
+      "name": "Matjesfilet (150g)",
+      "calories": 237,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "matjes"
+        }
+      ]
     },
     {
-      "name": "Forelle",
-      "calories": 120,
-      "emoji": "🐟"
+      "name": "Forelle (Filet, 200g)",
+      "calories": 282,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "forelle"
+        }
+      ]
     },
     {
-      "name": "Lachs",
-      "calories": 208,
-      "emoji": "🐟"
+      "name": "Lachsfilet (150g)",
+      "calories": 312,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Viel hochwertiges Eiweiß",
-      "text": "Ein Brathering liefert rund 20g Eiweiß und sättigt dadurch lange. Das macht ihn zu einer guten Wahl, wenn du auf deine Proteinzufuhr achtest.",
+      "text": "Ein Brathering liefert rund 24g Eiweiß und sättigt dadurch lange. Das macht ihn zu einer guten Wahl, wenn du auf deine Proteinzufuhr achtest.",
       "icon": "💪"
     },
     {
@@ -139,23 +230,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Brathering?",
-      "answer": "100g Brathering haben ca. 200 kcal. Ein einzelner Brathering von etwa 120g kommt auf rund 240 kcal."
+      "answer": "100g Brathering haben ca. 219 kcal. Ein einzelner Brathering von etwa 120g kommt auf rund 263 kcal. Gerechnet aus USDA-Werten je 100 g für 85 g gebratenen Hering, je 3 g Mehl und Öl sowie etwas Essig, Zucker und Zwiebeln aus der Marinade."
     },
     {
       "question": "Wie viele Kalorien hat eine Dose Brathering?",
-      "answer": "Eine Dose mit 200g Brathering (Abtropfgewicht, ohne Marinade) hat ca. 400 kcal, etwa 34g Eiweiß und 26g Fett."
+      "answer": "Eine Dose mit 200g Brathering (Abtropfgewicht, ohne Marinade) hat ca. 438 kcal, etwa 40g Eiweiß und 26g Fett."
     },
     {
       "question": "Wie viel Eiweiß hat Brathering?",
-      "answer": "Brathering enthält rund 17g Eiweiß pro 100g. Ein Brathering von 120g liefert damit etwa 20g hochwertiges Protein."
+      "answer": "Brathering enthält rund 20g Eiweiß pro 100g. Ein Brathering von 120g liefert damit etwa 24g hochwertiges Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Brathering?",
-      "answer": "Brathering hat mit etwa 3g Kohlenhydraten pro 100g kaum Kohlenhydrate. Diese stammen vor allem aus dem Zucker in der süß-sauren Marinade."
+      "answer": "Brathering hat mit etwa 4,5g Kohlenhydraten pro 100g kaum Kohlenhydrate. Diese stammen vor allem aus dem Zucker in der süß-sauren Marinade."
     },
     {
       "question": "Ist Brathering zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Brathering ist eiweißreich und sättigt gut, ist mit 200 kcal pro 100g aber auch recht fettreich. Achte auf kalorienarme Beilagen und gieße überschüssige Marinade ab."
+      "answer": "In Maßen ja. Brathering ist eiweißreich und sättigt gut, ist mit 219 kcal pro 100g aber auch recht fettreich. Achte auf kalorienarme Beilagen und gieße überschüssige Marinade ab."
     },
     {
       "question": "Ist Brathering gesund?",

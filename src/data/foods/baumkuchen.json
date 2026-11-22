@@ -3,9 +3,45 @@
   "name": "Baumkuchen",
   "emoji": "🍰",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Baumkuchen (ca. 1120 g)): 250 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 250 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal), 330 g Eier (6 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 125 g Weizenmehl (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 125 g Speisestärke (FDC-ID 169698, Cornstarch: 381 kcal), 150 g Zartbitter-Kuvertüre (Glasur) (FDC-ID 170274, Candies, chocolate, dark, NFS (45-59% cacao solids 90%; 60-69% cacao solids 5%; 70-85% cacao solids 5%): 550 kcal); 1230 g Zutaten ergeben 1120 g (Backverlust rund 10 % des Teigs (Annahme), Glasur ohne Verlust); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Butter",
+        "g": 250,
+        "fdcId": 173430
+      },
+      {
+        "name": "Zucker",
+        "g": 250,
+        "fdcId": 169655
+      },
+      {
+        "name": "Eier (6 Stück)",
+        "g": 330,
+        "fdcId": 171287
+      },
+      {
+        "name": "Weizenmehl",
+        "g": 125,
+        "fdcId": 169761
+      },
+      {
+        "name": "Speisestärke",
+        "g": 125,
+        "fdcId": 169698
+      },
+      {
+        "name": "Zartbitter-Kuvertüre (Glasur)",
+        "g": 150,
+        "fdcId": 170274
+      }
+    ],
+    "gewicht_g": 1120
+  },
   "seo": {
     "title": "Baumkuchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Baumkuchen? 100g haben ca. 440 kcal, ein Stück (35g) ca. 154 kcal. Nährwerte, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Baumkuchen? 100g haben ca. 445 kcal, ein Stück (35g) ca. 156 kcal. Nährwerte, Varianten und Tipps im Überblick.",
     "keywords": [
       "baumkuchen kalorien",
       "baumkuchen kcal",
@@ -17,11 +53,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 440,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 24,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 445,
+    "protein_per_100g": 5.8,
+    "carbs_per_100g": 49.3,
+    "fat_per_100g": 25.3,
+    "fiber_per_100g": 1.4,
     "typical_portion_g": 35,
     "typical_portion_name": "1 Stück (35g)"
   },
@@ -29,16 +65,16 @@
     {
       "name": "Baumkuchenspitze (15g)",
       "portion_g": 15,
-      "calories": 66,
+      "calories": 67,
       "protein": 1,
-      "carbs": 8,
+      "carbs": 7,
       "fat": 4,
       "tip": "Mundgerechtes Häppchen"
     },
     {
       "name": "Mini-Stück (20g)",
       "portion_g": 20,
-      "calories": 88,
+      "calories": 89,
       "protein": 1,
       "carbs": 10,
       "fat": 5
@@ -46,85 +82,106 @@
     {
       "name": "1 Stück (35g)",
       "portion_g": 35,
-      "calories": 154,
-      "protein": 2,
-      "carbs": 18,
-      "fat": 8,
-      "tip": "Standard"
-    },
-    {
-      "name": "Klassisch ohne Glasur (35g)",
-      "portion_g": 35,
-      "calories": 147,
+      "calories": 156,
       "protein": 2,
       "carbs": 17,
-      "fat": 8,
-      "tip": "Etwas leichter ohne Schokoglasur"
+      "fat": 9,
+      "tip": "Standard"
     },
     {
       "name": "Schoko-Riegel (50g)",
       "portion_g": 50,
-      "calories": 220,
-      "protein": 2,
+      "calories": 223,
+      "protein": 3,
       "carbs": 25,
-      "fat": 12
+      "fat": 13
     },
     {
       "name": "Großes Stück (60g)",
       "portion_g": 60,
-      "calories": 264,
+      "calories": 267,
       "protein": 3,
       "carbs": 30,
-      "fat": 14
+      "fat": 15
     },
     {
       "name": "Marzipan-Baumkuchen (40g)",
       "portion_g": 40,
-      "calories": 184,
-      "protein": 2,
-      "carbs": 21,
-      "fat": 10
+      "calories": 179,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 10,
+      "tip": "Mit 8 g Marzipan",
+      "basis": [
+        {
+          "g": 32
+        },
+        {
+          "slug": "marzipan",
+          "g": 8
+        }
+      ]
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 440,
-      "protein": 5,
-      "carbs": 50,
-      "fat": 24
+      "calories": 445,
+      "protein": 6,
+      "carbs": 49,
+      "fat": 25
     }
   ],
   "comparison": [
     {
-      "name": "Bienenstich",
-      "calories": 130,
-      "emoji": "🍰"
+      "name": "Bienenstich (1 Stück, 130g)",
+      "calories": 400,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "bienenstich"
+        }
+      ]
     },
     {
-      "name": "Käsekuchen",
-      "calories": 95,
-      "emoji": "🍰"
+      "name": "Käsekuchen (1 Stück, 150g)",
+      "calories": 383,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "kaesekuchen"
+        }
+      ]
     },
     {
-      "name": "Marzipan",
-      "calories": 175,
-      "emoji": "🟡"
+      "name": "Marzipan (25g)",
+      "calories": 115,
+      "emoji": "🟡",
+      "basis": [
+        {
+          "slug": "marzipan"
+        }
+      ]
     },
     {
-      "name": "Vollmilchschokolade",
-      "calories": 178,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kleine Stücke genießen",
-      "text": "Mit ca. 440 kcal pro 100g ist Baumkuchen sehr energiereich. Schneide lieber dünne Scheiben oder greife zu einzelnen Baumkuchenspitzen, dann bleibt es bei rund 66 bis 154 kcal pro Portion.",
+      "text": "Mit ca. 445 kcal pro 100g ist Baumkuchen sehr energiereich. Schneide lieber dünne Scheiben oder greife zu einzelnen Baumkuchenspitzen, dann bleibt es bei rund 67 bis 156 kcal pro Portion.",
       "icon": "🍰"
     },
     {
       "title": "Fett kommt von Butter und Glasur",
-      "text": "Der hohe Fettanteil von etwa 24g pro 100g stammt vor allem aus Butter, Eiern und der Schokoladenglasur. Varianten ohne Glasur sparen ein paar Kalorien.",
+      "text": "Der hohe Fettanteil von etwa 25g pro 100g stammt vor allem aus Butter, Eiern und der Schokoladenglasur. Varianten ohne Glasur sparen ein paar Kalorien.",
       "icon": "🧈"
     },
     {
@@ -134,35 +191,35 @@
     },
     {
       "title": "Pur statt mit Sahne",
-      "text": "Eine Portion Schlagsahne bringt schnell weitere 100 bis 150 kcal mit. Baumkuchen schmeckt auch pur und bleibt so kalorienärmer.",
+      "text": "Eine Portion Schlagsahne bringt schnell weitere Kalorien mit. Baumkuchen schmeckt auch pur und bleibt so kalorienärmer.",
       "icon": "🍶"
     },
     {
       "title": "Marzipan-Varianten sind reichhaltiger",
-      "text": "Baumkuchen mit Marzipanfüllung oder dicker Schokoglasur kommt auf bis zu 460 kcal pro 100g. Achte beim Kauf auf die Nährwertangabe.",
+      "text": "Baumkuchen mit Marzipanfüllung kommt auf rund 448 kcal pro 100g, mit dicker Schokoglasur auch mehr. Achte beim Kauf auf die Nährwertangabe.",
       "icon": "🟡"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Baumkuchen?",
-      "answer": "Baumkuchen hat etwa 440 kcal pro 100g. Ein typisches Stück von 35g enthält rund 154 kcal."
+      "answer": "Baumkuchen hat etwa 445 kcal pro 100g. Ein typisches Stück von 35g enthält rund 156 kcal. Gerechnet aus USDA-Werten für 250 g Butter, 250 g Zucker, 6 Eier, je 125 g Mehl und Speisestärke sowie 150 g Zartbitter-Kuvertüre (rund 10 % Backverlust)."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Baumkuchen?",
-      "answer": "Ein klassisches Stück von 35g hat ca. 154 kcal. Eine einzelne Baumkuchenspitze (15g) liegt bei etwa 66 kcal, ein großes Stück (60g) bei rund 264 kcal."
+      "answer": "Ein klassisches Stück von 35g hat ca. 156 kcal. Eine einzelne Baumkuchenspitze (15g) liegt bei etwa 67 kcal, ein großes Stück (60g) bei rund 267 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Baumkuchen?",
-      "answer": "Baumkuchen enthält etwa 50g Kohlenhydrate pro 100g, überwiegend aus Zucker und Mehl. Ein Stück von 35g liefert rund 18g Kohlenhydrate."
+      "answer": "Baumkuchen enthält etwa 49g Kohlenhydrate pro 100g, überwiegend aus Zucker, Mehl und Stärke. Ein Stück von 35g liefert rund 17g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Baumkuchen?",
-      "answer": "Der Proteingehalt ist mit etwa 5g pro 100g eher gering. Ein Stück von 35g enthält rund 2g Eiweiß, das vor allem aus Eiern stammt."
+      "answer": "Der Proteingehalt ist mit etwa 6g pro 100g eher gering. Ein Stück von 35g enthält rund 2g Eiweiß, das vor allem aus Eiern stammt."
     },
     {
       "question": "Ist Baumkuchen zum Abnehmen geeignet?",
-      "answer": "Baumkuchen ist mit 440 kcal pro 100g sehr energiereich und damit kein klassisches Diät-Lebensmittel. In kleinen Portionen lässt er sich aber gut in eine bewusste Ernährung einbauen."
+      "answer": "Baumkuchen ist mit 445 kcal pro 100g sehr energiereich und damit kein klassisches Diät-Lebensmittel. In kleinen Portionen lässt er sich aber gut in eine bewusste Ernährung einbauen."
     },
     {
       "question": "Ist Baumkuchen gesund?",

@@ -3,48 +3,274 @@
   "name": "Börek",
   "emoji": "🥧",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Blech Käse-Börek, ca. 7 Stück à 200 g): 500 g Yufka-Teigblätter (FDC-ID 172791, Phyllo dough: 299 kcal), 400 g Feta (Beyaz Peynir) (FDC-ID 173420, Cheese, feta: 265 kcal), 165 g Eier (3 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 250 ml (258 g) Milch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 60 g Rapsöl (FDC-ID 172336, Oil, canola: 884 kcal), 40 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 20 g Petersilie (FDC-ID 170416, Parsley, fresh: 36 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Yufka-Teigblätter",
+        "g": 500,
+        "fdcId": 172791
+      },
+      {
+        "name": "Feta (Beyaz Peynir)",
+        "g": 400,
+        "fdcId": 173420
+      },
+      {
+        "name": "Eier (3 Stück)",
+        "g": 165,
+        "fdcId": 171287
+      },
+      {
+        "name": "Milch 3,5 %",
+        "g": 258,
+        "ml": 250,
+        "fdcId": 171265
+      },
+      {
+        "name": "Rapsöl",
+        "g": 60,
+        "fdcId": 172336
+      },
+      {
+        "name": "Butter",
+        "g": 40,
+        "fdcId": 173430
+      },
+      {
+        "name": "Petersilie",
+        "g": 20,
+        "fdcId": 170416
+      }
+    ]
+  },
   "seo": {
     "title": "Börek Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Börek? Mit Käse, Spinat oder Hackfleisch – alle Nährwerte und Spar-Tipps im Überblick."
+    "description": "Wie viele Kalorien hat Börek? Mit Käse, Spinat oder Hackfleisch: alle Nährwerte und Spar-Tipps im Überblick."
   },
   "overview": {
-    "calories_per_100g": 280,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 25,
-    "fat_per_100g": 16,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 261,
+    "protein_per_100g": 8.5,
+    "carbs_per_100g": 20.3,
+    "fat_per_100g": 16.1,
+    "fiber_per_100g": 0.7,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Stück Börek"
   },
   "variants": [
-    {"name": "Börek mit Käse (Peynirli)", "portion_g": 200, "calories": 520, "protein": 20, "carbs": 45, "fat": 28, "tip": "Türkischer Klassiker"},
-    {"name": "Börek mit Spinat (Ispanakli)", "portion_g": 200, "calories": 440, "protein": 14, "carbs": 48, "fat": 22, "tip": "Kalorienärmste Variante"},
-    {"name": "Börek mit Hackfleisch (Kıymalı)", "portion_g": 200, "calories": 560, "protein": 24, "carbs": 42, "fat": 32},
-    {"name": "Sigara Böreği (Zigarrenbörek, 3 Stück)", "portion_g": 120, "calories": 360, "protein": 12, "carbs": 30, "fat": 22},
-    {"name": "Su Böreği (Wasserbörek)", "portion_g": 250, "calories": 580, "protein": 22, "carbs": 55, "fat": 30},
-    {"name": "Börek mit Kartoffeln (Patatesli)", "portion_g": 200, "calories": 480, "protein": 10, "carbs": 55, "fat": 24},
-    {"name": "Börek vom Bäcker (Ladenbörek)", "portion_g": 250, "calories": 650, "protein": 22, "carbs": 58, "fat": 36}
+    {
+      "name": "Börek mit Käse (Peynirli)",
+      "portion_g": 200,
+      "calories": 522,
+      "protein": 17,
+      "carbs": 41,
+      "fat": 32,
+      "tip": "Türkischer Klassiker"
+    },
+    {
+      "name": "Börek mit Spinat (Ispanakli)",
+      "portion_g": 200,
+      "calories": 424,
+      "protein": 17,
+      "carbs": 21,
+      "fat": 30,
+      "tip": "Spinat und Feta im Blätterteig",
+      "basis": [
+        {
+          "fdcId": 2708729,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Börek mit Hackfleisch (Kıymalı)",
+      "portion_g": 200,
+      "calories": 545,
+      "protein": 25,
+      "carbs": 39,
+      "fat": 32,
+      "basis": [
+        {
+          "fdcId": 172791,
+          "g": 69
+        },
+        {
+          "fdcId": 174034,
+          "g": 60
+        },
+        {
+          "fdcId": 170000,
+          "g": 20
+        },
+        {
+          "fdcId": 171287,
+          "g": 18
+        },
+        {
+          "fdcId": 171265,
+          "g": 14
+        },
+        {
+          "fdcId": 172336,
+          "g": 12
+        },
+        {
+          "fdcId": 173430,
+          "g": 5
+        },
+        {
+          "fdcId": 170416,
+          "g": 2
+        }
+      ]
+    },
+    {
+      "name": "Börek mit Kartoffeln (Patatesli)",
+      "portion_g": 200,
+      "calories": 422,
+      "protein": 9,
+      "carbs": 53,
+      "fat": 19,
+      "basis": [
+        {
+          "fdcId": 172791,
+          "g": 69
+        },
+        {
+          "fdcId": 170440,
+          "g": 70
+        },
+        {
+          "fdcId": 170000,
+          "g": 15
+        },
+        {
+          "fdcId": 171287,
+          "g": 18
+        },
+        {
+          "fdcId": 171265,
+          "g": 14
+        },
+        {
+          "fdcId": 172336,
+          "g": 9
+        },
+        {
+          "fdcId": 173430,
+          "g": 5
+        }
+      ]
+    },
+    {
+      "name": "Börek vom Bäcker (Ladenbörek)",
+      "portion_g": 250,
+      "calories": 653,
+      "protein": 21,
+      "carbs": 51,
+      "fat": 40
+    }
   ],
   "comparison": [
-    {"name": "Pide", "calories": 500, "emoji": "🫓"},
-    {"name": "Lahmacun", "calories": 351, "emoji": "🫓"},
-    {"name": "Quiche Lorraine", "calories": 680, "emoji": "🥧"},
-    {"name": "Flammkuchen", "calories": 770, "emoji": "🫓"}
+    {
+      "name": "Pide (350g)",
+      "calories": 956,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "pide"
+        }
+      ]
+    },
+    {
+      "name": "Lahmacun",
+      "calories": 351,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "lahmacun",
+          "variante": "Lahmacun pur"
+        }
+      ]
+    },
+    {
+      "name": "Quiche Lorraine (1 Stück, 150g)",
+      "calories": 581,
+      "emoji": "🥧",
+      "basis": [
+        {
+          "slug": "quiche"
+        }
+      ]
+    },
+    {
+      "name": "Flammkuchen (350g)",
+      "calories": 889,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "flammkuchen"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Spinat-Füllung wählen", "text": "Spinat-Börek hat ca. 80 kcal weniger als die Käse-Variante und ca. 120 kcal weniger als Hackfleisch.", "icon": "🥬"},
-    {"title": "Yufka dünn halten", "text": "Je weniger Yufka-Schichten, desto weniger Kalorien. Jede Schicht mit Butter bringt ca. 50 kcal extra.", "icon": "📏"},
-    {"title": "Weniger Butter zwischen den Schichten", "text": "Olivenöl statt Butter oder die Butter-Menge halbieren spart ca. 100 kcal pro Stück.", "icon": "🧈"},
-    {"title": "Im Ofen statt Pfanne", "text": "Börek im Ofen gebacken hat weniger Fett als in der Pfanne gebratene Sigara Böreği.", "icon": "🫕"},
-    {"title": "Portion kontrollieren", "text": "Ein Stück Börek (200g) reicht als Mahlzeit mit Salat. Zwei Stücke sind kalorienmäßig zu viel.", "icon": "📏"}
+    {
+      "title": "Spinat-Füllung wählen",
+      "text": "Spinat-Börek hat ca. 98 kcal weniger als die Käse-Variante und ca. 121 kcal weniger als Hackfleisch.",
+      "icon": "🥬"
+    },
+    {
+      "title": "Yufka dünn halten",
+      "text": "Je weniger Yufka-Schichten und Butter, desto weniger Kalorien.",
+      "icon": "📏"
+    },
+    {
+      "title": "Weniger Butter zwischen den Schichten",
+      "text": "Die Butter-Menge zu halbieren spart rund 20 kcal pro Stück. Olivenöl statt Butter spart dagegen keine Kalorien.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Im Ofen statt Pfanne",
+      "text": "Börek im Ofen gebacken hat weniger Fett als in der Pfanne gebratene Sigara Böreği.",
+      "icon": "🫕"
+    },
+    {
+      "title": "Portion kontrollieren",
+      "text": "Ein Stück Börek (200g) reicht als Mahlzeit mit Salat. Zwei Stücke sind kalorienmäßig zu viel.",
+      "icon": "📏"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Börek?", "answer": "Ein Stück Börek (200g) hat je nach Füllung 440-560 kcal. Spinat-Börek am wenigsten (440 kcal), Hackfleisch-Börek am meisten (560 kcal)."},
-    {"question": "Ist Börek zum Abnehmen geeignet?", "answer": "Ein Stück Spinat-Börek (440 kcal) mit Salat ist als Mahlzeit akzeptabel. Generell ist Börek aber kalorienreich durch den Blätterteig und das Fett."},
-    {"question": "Wie viel Fett hat Börek?", "answer": "Börek hat ca. 16g Fett pro 100g, ein Stück (200g) enthält ca. 22-32g Fett – hauptsächlich aus dem Yufka-Teig und der Butter."},
-    {"question": "Was hat weniger Kalorien: Börek oder Pizza?", "answer": "Börek (280 kcal/100g) hat etwas mehr Kalorien als Pizza Margherita (240 kcal/100g), da der Yufka-Teig mehr Fett enthält."},
-    {"question": "Welcher Börek hat am wenigsten Kalorien?", "answer": "Spinat-Börek (Ispanaklı Börek) hat mit 440 kcal pro Stück die wenigsten Kalorien, gefolgt von Kartoffel-Börek (480 kcal)."},
-    {"question": "Wie viel Protein hat Börek?", "answer": "Ein Stück Börek liefert ca. 10-24g Protein, je nach Füllung. Hackfleisch-Börek hat am meisten, Spinat am wenigsten Protein."}
+    {
+      "question": "Wie viele Kalorien hat Börek?",
+      "answer": "Ein Stück Börek (200g) hat je nach Füllung 422 bis 545 kcal. Kartoffel- und Spinat-Börek liegen am niedrigsten, Hackfleisch-Börek am höchsten (545 kcal). Gerechnet aus USDA-Werten für ein Blech Käse-Börek mit 500 g Yufka, 400 g Feta, 3 Eiern, 250 ml Milch, 60 g Öl und 40 g Butter."
+    },
+    {
+      "question": "Ist Börek zum Abnehmen geeignet?",
+      "answer": "Ein Stück Spinat-Börek (424 kcal) mit Salat ist als Mahlzeit akzeptabel. Generell ist Börek aber kalorienreich durch den Blätterteig und das Fett."
+    },
+    {
+      "question": "Wie viel Fett hat Börek?",
+      "answer": "Börek hat ca. 16g Fett pro 100g, ein Stück (200g) enthält ca. 19 bis 32g Fett, hauptsächlich aus Käse, Öl und Butter."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Börek oder Pizza?",
+      "answer": "Börek (261 kcal/100g) liegt etwa auf dem Niveau einer Pizza Margherita. Der Yufka-Teig selbst ist eher mager, Fett bringen vor allem Käse, Öl und Butter."
+    },
+    {
+      "question": "Welcher Börek hat am wenigsten Kalorien?",
+      "answer": "Kartoffel-Börek und Spinat-Börek (Ispanaklı Börek) haben mit rund 422 bzw. 424 kcal pro Stück die wenigsten Kalorien."
+    },
+    {
+      "question": "Wie viel Protein hat Börek?",
+      "answer": "Ein Stück Börek liefert ca. 9 bis 25g Protein, je nach Füllung. Hackfleisch-Börek hat am meisten, Kartoffel-Börek am wenigsten Protein."
+    }
   ],
-  "related_foods": ["pide", "lahmacun", "simit", "duerrum"]
+  "related_foods": [
+    "pide",
+    "lahmacun",
+    "simit",
+    "duerrum"
+  ]
 }

@@ -3,9 +3,34 @@
   "name": "Schokomüsli",
   "emoji": "🥣",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 kg Schokomüsli (ungebacken)): 600 g Haferflocken (FDC-ID 173904, Cereals, oats, regular and quick, not fortified, dry: 379 kcal), 200 g Zartbitterschokolade (Stückchen) (FDC-ID 170271, Chocolate, dark, 45- 59% cacao solids: 546 kcal), 150 g Cornflakes (FDC-ID 2708453, Cereal, corn flakes, plain: 365 kcal), 50 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Haferflocken",
+        "g": 600,
+        "fdcId": 173904
+      },
+      {
+        "name": "Zartbitterschokolade (Stückchen)",
+        "g": 200,
+        "fdcId": 170271
+      },
+      {
+        "name": "Cornflakes",
+        "g": 150,
+        "fdcId": 2708453
+      },
+      {
+        "name": "Zucker",
+        "g": 50,
+        "fdcId": 169655
+      }
+    ]
+  },
   "seo": {
     "title": "Schokomüsli Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Schokomüsli? 100g haben ca. 442 kcal, eine Portion (60g) ca. 265 kcal. Nährwerte, Varianten & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Schokomüsli? 100g haben ca. 411 kcal, eine Portion (60g) ca. 247 kcal. Nährwerte, Varianten & Tipps zum Abnehmen.",
     "keywords": [
       "schokomüsli kalorien",
       "schokomuesli kcal",
@@ -16,11 +41,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 442,
-    "protein_per_100g": 8.5,
-    "carbs_per_100g": 67,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 7,
+    "calories_per_100g": 411,
+    "protein_per_100g": 9.8,
+    "carbs_per_100g": 69.8,
+    "fat_per_100g": 10.4,
+    "fiber_per_100g": 8,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Portion (60g)"
   },
@@ -28,82 +53,145 @@
     {
       "name": "Kleine Portion (40g)",
       "portion_g": 40,
-      "calories": 177,
-      "protein": 3,
-      "carbs": 27,
-      "fat": 5,
+      "calories": 164,
+      "protein": 4,
+      "carbs": 28,
+      "fat": 4,
       "tip": "Sparsame Frühstücksportion"
     },
     {
       "name": "1 Portion (60g)",
       "portion_g": 60,
-      "calories": 265,
-      "protein": 5,
-      "carbs": 40,
-      "fat": 8,
+      "calories": 247,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 6,
       "tip": "Empfohlene Verzehrmenge laut Packung"
     },
     {
       "name": "Große Portion (80g)",
       "portion_g": 80,
-      "calories": 354,
-      "protein": 7,
-      "carbs": 54,
-      "fat": 10
+      "calories": 329,
+      "protein": 8,
+      "carbs": 56,
+      "fat": 8
     },
     {
-      "name": "Portion mit 150ml Milch (1,5%)",
-      "portion_g": 60,
-      "calories": 334,
-      "protein": 10,
-      "carbs": 47,
-      "fat": 10,
-      "tip": "60g Müsli plus Milch"
+      "name": "Portion mit 150ml fettarmer Milch",
+      "portion_g": 215,
+      "calories": 324,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 9,
+      "tip": "60g Müsli plus Milch",
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "fdcId": 171267,
+          "ml": 150,
+          "g": 155
+        }
+      ]
+    },
+    {
+      "name": "Portion mit 150ml Vollmilch",
+      "portion_g": 215,
+      "calories": 341,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 11,
+      "tip": "60g Müsli plus Vollmilch",
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "fdcId": 171265,
+          "ml": 150,
+          "g": 155
+        }
+      ]
     },
     {
       "name": "Müslischale randvoll (100g)",
       "portion_g": 100,
-      "calories": 442,
-      "protein": 9,
-      "carbs": 67,
-      "fat": 13
+      "calories": 411,
+      "protein": 10,
+      "carbs": 70,
+      "fat": 10
     },
     {
       "name": "Schoko-Knuspermüsli (60g)",
       "portion_g": 60,
-      "calories": 282,
-      "protein": 4,
-      "carbs": 41,
-      "fat": 11,
-      "tip": "Knuspervariante mit mehr Fett & Zucker"
+      "calories": 267,
+      "protein": 5,
+      "carbs": 40,
+      "fat": 10,
+      "tip": "Knuspervariante mit mehr Fett & Zucker",
+      "basis": [
+        {
+          "slug": "granola",
+          "g": 48
+        },
+        {
+          "fdcId": 170271,
+          "g": 12
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Müsli (Basis, 60g)",
-      "calories": 222,
-      "emoji": "🥣"
+      "calories": 230,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "muesli",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Cornflakes (60g)",
-      "calories": 226,
-      "emoji": "🥣"
+      "calories": 219,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Haferflocken (60g)",
-      "calories": 222,
-      "emoji": "🌾"
+      "calories": 227,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Granola (60g)",
-      "calories": 294,
-      "emoji": "🥣"
+      "calories": 252,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "granola",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion abwiegen lohnt sich",
-      "text": "Eine Schale füllt sich schnell mit 80-100g. Schon 60g abgewogen sparen rund 90 kcal pro Frühstück gegenüber einer randvollen Schale.",
+      "text": "Eine Schale füllt sich schnell mit 80 bis 100g. Schon 60g abgewogen sparen rund 164 kcal pro Frühstück gegenüber einer randvollen Schale (100g).",
       "icon": "⚖️"
     },
     {
@@ -118,31 +206,31 @@
     },
     {
       "title": "Auf den Zuckergehalt achten",
-      "text": "Schokomüsli enthält oft 20-25g Zucker pro 100g. Ein Blick auf die Zutatenliste zeigt, ob Schokostückchen oder Zuckerguss zugesetzt sind.",
+      "text": "Schokomüsli enthält oft viel Zucker. Ein Blick auf die Zutatenliste zeigt, ob Schokostückchen oder Zuckerguss zugesetzt sind.",
       "icon": "🍫"
     },
     {
       "title": "Ballaststoffe nutzen",
-      "text": "Mit rund 7g Ballaststoffen pro 100g unterstützt Schokomüsli die Verdauung. Frische Beeren oder eine Banane erhöhen den Ballaststoffanteil weiter.",
+      "text": "Mit rund 8g Ballaststoffen pro 100g unterstützt Schokomüsli die Verdauung. Frische Beeren oder eine Banane erhöhen den Ballaststoffanteil weiter.",
       "icon": "🌾"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Schokomüsli?",
-      "answer": "Schokomüsli hat im Schnitt etwa 442 kcal pro 100g. Eine typische Portion von 60g liefert rund 265 kcal."
+      "answer": "Schokomüsli hat etwa 411 kcal pro 100g. Eine typische Portion von 60g liefert rund 247 kcal. Gerechnet aus USDA-Werten für ein Müsli aus 600g Haferflocken, 200g Zartbitterschokolade, 150g Cornflakes und 50g Zucker je kg."
     },
     {
       "question": "Wie viele Kalorien hat Schokomüsli mit Milch?",
-      "answer": "Eine Portion von 60g Schokomüsli mit 150ml fettarmer Milch (1,5%) kommt auf etwa 334 kcal. Mit Vollmilch sind es rund 360 kcal."
+      "answer": "Eine Portion von 60g Schokomüsli mit 150ml fettarmer Milch kommt auf etwa 324 kcal. Mit Vollmilch sind es rund 341 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Schokomüsli?",
-      "answer": "Pro 100g enthält Schokomüsli etwa 67g Kohlenhydrate, davon häufig 20-25g Zucker. In einer 60g-Portion sind es rund 40g Kohlenhydrate."
+      "answer": "Pro 100g enthält Schokomüsli etwa 70g Kohlenhydrate, davon ein großer Teil Zucker. In einer 60g-Portion sind es rund 42g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Schokomüsli?",
-      "answer": "Schokomüsli liefert rund 8,5g Eiweiß pro 100g. Eine 60g-Portion enthält etwa 5g Protein - mit Milch, Quark oder Skyr lässt sich der Wert deutlich steigern."
+      "answer": "Schokomüsli liefert rund 10g Eiweiß pro 100g. Eine 60g-Portion enthält etwa 6g Protein - mit Milch, Quark oder Skyr lässt sich der Wert deutlich steigern."
     },
     {
       "question": "Ist Schokomüsli zum Abnehmen geeignet?",

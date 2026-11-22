@@ -3,50 +3,345 @@
   "name": "Gyros",
   "emoji": "🥙",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Portion à 200 g (nur Fleisch)): 193 g Schweinenacken (Schulter), gegrillt (FDC-ID 167851, Pork, fresh, shoulder, blade, boston (steaks), separable lean and fat, cooked, broiled: 259 kcal), 5 g Olivenöl (Marinade) (FDC-ID 171413, Oil, olive, salad or cooking: 884 kcal), 1 g Paprikapulver (FDC-ID 171329, Spices, paprika: 282 kcal), 1 g Oregano, getrocknet (FDC-ID 171328, Spices, oregano, dried: 265 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Schweinenacken (Schulter), gegrillt",
+        "g": 193,
+        "fdcId": 167851
+      },
+      {
+        "name": "Olivenöl (Marinade)",
+        "g": 5,
+        "fdcId": 171413
+      },
+      {
+        "name": "Paprikapulver",
+        "g": 1,
+        "fdcId": 171329
+      },
+      {
+        "name": "Oregano, getrocknet",
+        "g": 1,
+        "fdcId": 171328
+      }
+    ]
+  },
   "seo": {
     "title": "Gyros Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Gyros? Nährwerte pro 100g & Portion. Teller, Pita & Gyros-Box im Vergleich + kalorienarme Tipps.",
-    "keywords": ["gyros kalorien", "kalorien gyros", "gyros nährwerte", "gyros teller kalorien", "gyros pita kalorien", "gyros mit pommes kalorien", "schweinegyros kalorien", "hähnchen gyros kalorien"]
+    "keywords": [
+      "gyros kalorien",
+      "kalorien gyros",
+      "gyros nährwerte",
+      "gyros teller kalorien",
+      "gyros pita kalorien",
+      "gyros mit pommes kalorien",
+      "schweinegyros kalorien",
+      "hähnchen gyros kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 215,
-    "protein_per_100g": 20,
-    "carbs_per_100g": 2,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 275,
+    "protein_per_100g": 24.8,
+    "carbs_per_100g": 0.6,
+    "fat_per_100g": 18.6,
+    "fiber_per_100g": 0.4,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion Gyros (nur Fleisch)"
   },
   "variants": [
-    { "name": "Gyros (Schwein, nur Fleisch)", "portion_g": 200, "calories": 430, "protein": 40, "carbs": 4, "fat": 28 },
-    { "name": "Hähnchen-Gyros (nur Fleisch)", "portion_g": 200, "calories": 340, "protein": 44, "carbs": 4, "fat": 16, "tip": "Kalorienärmste" },
-    { "name": "Gyros-Teller mit Pommes", "portion_g": 450, "calories": 850, "protein": 42, "carbs": 60, "fat": 48 },
-    { "name": "Gyros-Teller mit Reis", "portion_g": 450, "calories": 720, "protein": 44, "carbs": 70, "fat": 28 },
-    { "name": "Gyros-Pita", "portion_g": 350, "calories": 650, "protein": 38, "carbs": 42, "fat": 34 },
-    { "name": "Gyros-Box", "portion_g": 400, "calories": 780, "protein": 40, "carbs": 55, "fat": 42 },
-    { "name": "Gyros-Salat", "portion_g": 350, "calories": 450, "protein": 38, "carbs": 12, "fat": 28, "tip": "Low Carb" },
-    { "name": "Gyros überbacken (Metaxa)", "portion_g": 450, "calories": 920, "protein": 46, "carbs": 50, "fat": 56 }
+    {
+      "name": "Gyros (Schwein, nur Fleisch)",
+      "portion_g": 200,
+      "calories": 550,
+      "protein": 50,
+      "carbs": 1,
+      "fat": 37
+    },
+    {
+      "name": "Hähnchen-Gyros (nur Fleisch)",
+      "portion_g": 200,
+      "calories": 395,
+      "protein": 48,
+      "carbs": 1,
+      "fat": 21,
+      "tip": "Aus Hähnchenschenkel, kalorienärmste",
+      "basis": [
+        {
+          "fdcId": 172388,
+          "g": 193
+        },
+        {
+          "fdcId": 171413,
+          "g": 5
+        },
+        {
+          "fdcId": 171329,
+          "g": 1
+        },
+        {
+          "fdcId": 171328,
+          "g": 1
+        }
+      ]
+    },
+    {
+      "name": "Gyros-Teller mit Pommes",
+      "portion_g": 450,
+      "calories": 1089,
+      "protein": 58,
+      "carbs": 69,
+      "fat": 63,
+      "tip": "Mit 150 g Pommes, Tzatziki und Zwiebeln",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "slug": "pommes-frites"
+        },
+        {
+          "slug": "tzatziki",
+          "g": 60
+        },
+        {
+          "fdcId": 170000,
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Gyros-Teller mit Reis",
+      "portion_g": 450,
+      "calories": 856,
+      "protein": 58,
+      "carbs": 59,
+      "fat": 41,
+      "tip": "Mit 200 g Reis und Tzatziki",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "slug": "reis"
+        },
+        {
+          "slug": "tzatziki",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Gyros-Pita",
+      "portion_g": 350,
+      "calories": 748,
+      "protein": 49,
+      "carbs": 62,
+      "fat": 32,
+      "basis": [
+        {
+          "slug": "pita",
+          "g": 100
+        },
+        {
+          "g": 150
+        },
+        {
+          "slug": "tzatziki",
+          "g": 50
+        },
+        {
+          "fdcId": 170457,
+          "g": 25
+        },
+        {
+          "fdcId": 170000,
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Gyros-Box",
+      "portion_g": 400,
+      "calories": 933,
+      "protein": 45,
+      "carbs": 67,
+      "fat": 53,
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "pommes-frites"
+        },
+        {
+          "slug": "tzatziki",
+          "g": 50
+        },
+        {
+          "fdcId": 169248,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Gyros-Salat",
+      "portion_g": 350,
+      "calories": 481,
+      "protein": 41,
+      "carbs": 8,
+      "fat": 31,
+      "tip": "Low Carb",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 169248,
+          "g": 80
+        },
+        {
+          "fdcId": 170457,
+          "g": 40
+        },
+        {
+          "fdcId": 168409,
+          "g": 30
+        },
+        {
+          "slug": "tzatziki",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Gyros überbacken (Metaxa)",
+      "portion_g": 450,
+      "calories": 1123,
+      "protein": 67,
+      "carbs": 35,
+      "fat": 76,
+      "tip": "Mit Sahnesoße, Käse und 100 g Reis",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 170858,
+          "g": 80
+        },
+        {
+          "fdcId": 170459,
+          "g": 10
+        },
+        {
+          "fdcId": 174815,
+          "g": 10
+        },
+        {
+          "fdcId": 171241,
+          "g": 50
+        },
+        {
+          "slug": "reis",
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Döner Kebab", "calories": 696, "emoji": "🥙" },
-    { "name": "Schnitzel paniert", "calories": 500, "emoji": "🥩" },
-    { "name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭" },
-    { "name": "Souvlaki", "calories": 380, "emoji": "🍢" }
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel paniert (250g)",
+      "calories": 595,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel"
+        }
+      ]
+    },
+    {
+      "name": "Currywurst mit Pommes (400g)",
+      "calories": 1170,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Currywurst mit Pommes"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Hähnchen statt Schwein", "text": "Hähnchen-Gyros hat ca. 20% weniger Kalorien und 50% weniger Fett als Schweinegyros. Dafür deutlich mehr Protein.", "icon": "🍗" },
-    { "title": "Reis statt Pommes wählen", "text": "Gyros-Teller mit Reis hat 130 kcal weniger als mit Pommes. Noch besser: Salat als Beilage.", "icon": "🍚" },
-    { "title": "Tzatziki statt Metaxa-Soße", "text": "Tzatziki hat ca. 70 kcal/100g, Metaxa-Soße über 200 kcal/100g. Tzatziki ist der leichtere Klassiker.", "icon": "🥒" },
-    { "title": "Gyros-Salat als Alternative", "text": "Gyros-Salat hat mit 450 kcal fast die Hälfte des Gyros-Tellers – proteinreich und Low Carb.", "icon": "🥗" },
-    { "title": "Selbst marinieren", "text": "Hähnchenbrust mit griechischen Gewürzen mariniert und gegrillt: nur 170 kcal/100g bei 30g Protein.", "icon": "👨‍🍳" }
+    {
+      "title": "Hähnchen statt Schwein",
+      "text": "Hähnchen-Gyros hat rund 28% weniger Kalorien und gut 40% weniger Fett als Schweinegyros, bei fast gleich viel Protein.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Reis statt Pommes wählen",
+      "text": "Gyros-Teller mit Reis hat rund 233 kcal weniger als mit Pommes. Noch besser: Salat als Beilage.",
+      "icon": "🍚"
+    },
+    {
+      "title": "Tzatziki statt Metaxa-Soße",
+      "text": "Tzatziki hat rund 91 kcal/100g, eine Metaxa-Sahnesoße rund 265 kcal/100g. Tzatziki ist der leichtere Klassiker.",
+      "icon": "🥒"
+    },
+    {
+      "title": "Gyros-Salat als Alternative",
+      "text": "Gyros-Salat hat mit 481 kcal weniger als die Hälfte des Gyros-Tellers mit Pommes (1089 kcal), ist proteinreich und Low Carb.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Selbst marinieren",
+      "text": "Selbst marinierter Hähnchen-Gyros kommt auf rund 198 kcal/100g bei 24g Protein. Mit Hähnchenbrust statt Schenkel wird er noch magerer.",
+      "icon": "👨‍🍳"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Gyros-Teller?", "answer": "Ein Gyros-Teller mit Pommes hat ca. 850 kcal. Mit Reis sind es ca. 720 kcal. Überbackenes Gyros (Metaxa) erreicht 920 kcal." },
-    { "question": "Wie viele Kalorien hat Gyros pro 100g?", "answer": "Reines Gyros-Fleisch (Schwein) hat ca. 215 kcal/100g. Hähnchen-Gyros hat nur ca. 170 kcal/100g." },
-    { "question": "Was hat weniger Kalorien: Gyros oder Döner?", "answer": "Reines Gyros (430 kcal) und ein Döner (696 kcal): Der Döner hat mehr Kalorien wegen Brot und Saucen. Gyros-Teller mit Pommes (850 kcal) ist aber kalorienreicher." },
-    { "question": "Wie viel Protein hat Gyros?", "answer": "200g Schweinegyros liefern ca. 40g Protein, Hähnchen-Gyros sogar 44g. Das macht Gyros zu einer guten Proteinquelle." },
-    { "question": "Ist Gyros gut zum Abnehmen?", "answer": "Gyros-Fleisch allein (430 kcal) passt in eine Diät. Problematisch werden Beilagen und Saucen. Tipp: Hähnchen-Gyros mit Salat (450 kcal total)." },
-    { "question": "Wie viele Kalorien hat Gyros-Pita?", "answer": "Ein Gyros-Pita hat ca. 650 kcal, etwas weniger als ein Döner mit Kalb- oder Rindfleisch (696 kcal)." }
+    {
+      "question": "Wie viele Kalorien hat ein Gyros-Teller?",
+      "answer": "Ein Gyros-Teller mit Pommes (450g) hat ca. 1089 kcal. Mit Reis sind es ca. 856 kcal. Überbackenes Gyros (Metaxa) erreicht 1123 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat Gyros pro 100g?",
+      "answer": "Reines Gyros-Fleisch (Schwein) hat ca. 275 kcal/100g. Hähnchen-Gyros hat nur ca. 198 kcal/100g. Gerechnet aus USDA-Werten für gegrillten Schweinenacken mit etwas Olivenöl, Paprika und Oregano."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Gyros oder Döner?",
+      "answer": "Reines Gyros (550 kcal) und ein Döner (696 kcal): Der Döner hat mehr Kalorien wegen Brot und Saucen. Gyros-Teller mit Pommes (1089 kcal) ist aber kalorienreicher."
+    },
+    {
+      "question": "Wie viel Protein hat Gyros?",
+      "answer": "200g Schweinegyros liefern ca. 50g Protein, Hähnchen-Gyros ca. 48g. Das macht Gyros zu einer guten Proteinquelle."
+    },
+    {
+      "question": "Ist Gyros gut zum Abnehmen?",
+      "answer": "Gyros-Fleisch allein (550 kcal) passt in eine Diät. Problematisch werden Beilagen und Saucen. Tipp: Gyros-Salat (481 kcal total) oder Hähnchen-Gyros (395 kcal für 200g)."
+    },
+    {
+      "question": "Wie viele Kalorien hat Gyros-Pita?",
+      "answer": "Ein Gyros-Pita hat ca. 748 kcal, etwas mehr als ein Döner mit Kalb- oder Rindfleisch (696 kcal)."
+    }
   ],
-  "related_foods": ["falafel", "cevapcici", "schnitzel", "currywurst"]
+  "related_foods": [
+    "falafel",
+    "cevapcici",
+    "schnitzel",
+    "currywurst"
+  ]
 }

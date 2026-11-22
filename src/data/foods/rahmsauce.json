@@ -3,48 +3,227 @@
   "name": "Rahmsauce",
   "emoji": "🍶",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Portionen à ca. 100 g): 150 g Sahne 30 % Fett (FDC-ID 170858, Cream, fluid, light whipping: 292 kcal), 230 g Gemüsebrühe (FDC-ID 171583, Soup, vegetable broth, ready to serve: 5 kcal), 10 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal), 10 g Schalotte (FDC-ID 170000, Onions, raw: 40 kcal), 5 g Speisestärke (FDC-ID 169698, Cornstarch: 381 kcal); 405 g Zutaten ergeben 385 g (Einkochen rund 5 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Sahne 30 % Fett",
+        "g": 150,
+        "fdcId": 170858
+      },
+      {
+        "name": "Gemüsebrühe",
+        "g": 230,
+        "fdcId": 171583
+      },
+      {
+        "name": "Butter",
+        "g": 10,
+        "fdcId": 173430
+      },
+      {
+        "name": "Schalotte",
+        "g": 10,
+        "fdcId": 170000
+      },
+      {
+        "name": "Speisestärke",
+        "g": 5,
+        "fdcId": 169698
+      }
+    ],
+    "gewicht_g": 385
+  },
   "seo": {
     "title": "Rahmsauce Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Rahmsauce? Nährwerte für Sahnesauce, leichte Varianten & kalorienarme Alternativen. Mit Portionsrechner und Spar-Tipps."
+    "description": "Wie viele Kalorien hat Rahmsauce? Eine Portion (100g) hat ca. 141 kcal. Nährwerte für Sahnesauce mit Pilzen, Senf & Speck. Mit Portionsrechner und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 135,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 12,
-    "fiber_per_100g": 0.2,
+    "calories_per_100g": 141,
+    "protein_per_100g": 1,
+    "carbs_per_100g": 3.1,
+    "fat_per_100g": 14.2,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 100,
     "typical_portion_name": "1 Portion Sauce"
   },
   "variants": [
-    {"name": "Klassische Rahmsauce (Sahne)", "portion_g": 100, "calories": 135, "protein": 2.5, "carbs": 4, "fat": 12, "tip": "Standard mit Sahne"},
-    {"name": "Leichte Rahmsauce (Schmand)", "portion_g": 100, "calories": 105, "protein": 3, "carbs": 4, "fat": 8, "tip": "Schmand statt Sahne spart Kalorien"},
-    {"name": "Rahmsauce mit Pilzen", "portion_g": 120, "calories": 155, "protein": 4, "carbs": 5, "fat": 13, "tip": "Jägersauce-Variante"},
-    {"name": "Rahmsauce mit Kräutern", "portion_g": 100, "calories": 130, "protein": 2.5, "carbs": 4, "fat": 11, "tip": "Frische Kräuter für Geschmack"},
-    {"name": "Rahmsauce mit Senf", "portion_g": 100, "calories": 140, "protein": 3, "carbs": 5, "fat": 12, "tip": "Würzige Variante"},
-    {"name": "Vegane Rahmsauce (Hafersahne)", "portion_g": 100, "calories": 85, "protein": 1, "carbs": 7, "fat": 5, "tip": "Kalorienärmste Variante"},
-    {"name": "Rahmsauce mit Speck", "portion_g": 100, "calories": 175, "protein": 5, "carbs": 3, "fat": 16, "tip": "Deftige Variante"}
+    {
+      "name": "Klassische Rahmsauce (Sahne)",
+      "portion_g": 100,
+      "calories": 141,
+      "protein": 1,
+      "carbs": 3.1,
+      "fat": 14.2,
+      "tip": "Standard mit Sahne"
+    },
+    {
+      "name": "Rahmsauce mit Pilzen (100g + 20g Champignons)",
+      "portion_g": 120,
+      "calories": 147,
+      "protein": 1.4,
+      "carbs": 4.2,
+      "fat": 14.3,
+      "tip": "Jägersauce-Variante",
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "fdcId": 169252,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Rahmsauce mit Kräutern",
+      "portion_g": 100,
+      "calories": 141,
+      "protein": 1,
+      "carbs": 3.1,
+      "fat": 14.2,
+      "tip": "Frische Kräuter für Geschmack"
+    },
+    {
+      "name": "Rahmsauce mit Senf (95g + 5g Senf)",
+      "portion_g": 100,
+      "calories": 137,
+      "protein": 1.1,
+      "carbs": 3.2,
+      "fat": 13.7,
+      "tip": "Würzige Variante",
+      "basis": [
+        {
+          "g": 95
+        },
+        {
+          "fdcId": 172234,
+          "g": 5
+        }
+      ]
+    },
+    {
+      "name": "Rahmsauce mit Speck (90g + 10g Speck)",
+      "portion_g": 100,
+      "calories": 174,
+      "protein": 4.3,
+      "carbs": 3,
+      "fat": 16.3,
+      "tip": "Deftige Variante",
+      "basis": [
+        {
+          "g": 90
+        },
+        {
+          "fdcId": 168322,
+          "g": 10
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Bratensauce", "calories": 45, "emoji": "🍖"},
-    {"name": "Tomatensoße", "calories": 40, "emoji": "🍅"},
-    {"name": "Hollandaise", "calories": 260, "emoji": "🧈"},
-    {"name": "Ketchup", "calories": 100, "emoji": "🥫"}
+    {
+      "name": "Bratensauce (100g)",
+      "calories": 53,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "bratensauce",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Tomatensoße (100g)",
+      "calories": 50,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "tomatensosse",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Hollandaise (100g)",
+      "calories": 546,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "fdcId": 2710171,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Ketchup (100g)",
+      "calories": 101,
+      "emoji": "🥫",
+      "basis": [
+        {
+          "slug": "ketchup",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Schmand statt Sahne", "text": "Schmand (24% Fett) statt Sahne (30% Fett) spart ca. 30 kcal pro Portion bei ähnlicher Cremigkeit.", "icon": "💡"},
-    {"title": "Milch strecken", "text": "Mische Sahne 1:1 mit Milch – die Sauce wird leichter und du sparst bis zu 40% Kalorien.", "icon": "🥛"},
-    {"title": "Mehl sparsam einsetzen", "text": "Zum Andicken reicht 1 TL Speisestärke statt einer Mehlschwitze mit Butter – spart ca. 50 kcal.", "icon": "⚖️"},
-    {"title": "Portionsgröße beachten", "text": "Im Restaurant werden oft 150-200ml Sauce serviert. Zuhause reichen 80-100ml vollkommen aus.", "icon": "📏"},
-    {"title": "Hafersahne als Alternative", "text": "Hafersahne hat nur 85 kcal/100ml statt 135 kcal und ist zudem laktosefrei.", "icon": "🌱"}
+    {
+      "title": "Schmand statt Sahne",
+      "text": "Schmand statt Sahne spart etwas Fett und Kalorien bei ähnlicher Cremigkeit.",
+      "icon": "💡"
+    },
+    {
+      "title": "Milch strecken",
+      "text": "Mische Sahne 1:1 mit Milch, die Sauce wird leichter und du sparst deutlich Kalorien.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Mehl sparsam einsetzen",
+      "text": "Zum Andicken reicht 1 TL Speisestärke statt einer Mehlschwitze mit Butter, das spart Fett und Kalorien.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Im Restaurant werden oft 150 bis 200g Sauce serviert. Zuhause reichen 80 bis 100g vollkommen aus.",
+      "icon": "📏"
+    },
+    {
+      "title": "Hafersahne als Alternative",
+      "text": "Hafersahne ist eine laktosefreie Alternative zu Sahne. Die Kalorien hängen vom Produkt ab, ein Blick auf die Packung lohnt sich.",
+      "icon": "🌱"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Rahmsauce?", "answer": "Eine klassische Rahmsauce hat ca. 135 kcal pro 100ml. Pro Portion (100ml) nimmst du damit etwa 135 kcal auf – je nach Sahneanteil und Zutaten zwischen 85 und 175 kcal."},
-    {"question": "Ist Rahmsauce kalorienreich?", "answer": "Rahmsauce ist moderat kalorienreich. Der Hauptkalorienlieferant ist die Sahne mit ca. 30% Fett. Leichtere Varianten mit Schmand oder Hafersahne haben deutlich weniger Kalorien."},
-    {"question": "Wie kann ich Rahmsauce kalorienärmer machen?", "answer": "Verwende Schmand statt Sahne, strecke mit Milch oder Brühe, oder nutze Hafersahne. So sparst du 30-50% der Kalorien."},
-    {"question": "Was hat weniger Kalorien: Rahmsauce oder Bratensauce?", "answer": "Bratensauce hat mit ca. 45 kcal/100ml deutlich weniger als Rahmsauce (135 kcal/100ml), da sie keine Sahne enthält."},
-    {"question": "Wie viel Fett hat Rahmsauce?", "answer": "Klassische Rahmsauce enthält ca. 12g Fett pro 100ml. Der Großteil kommt aus der Sahne. Leichtere Varianten haben 5-8g Fett."},
-    {"question": "Ist vegane Rahmsauce kalorienärmer?", "answer": "Ja, vegane Rahmsauce auf Hafersahne-Basis hat nur ca. 85 kcal/100ml – rund 37% weniger als die klassische Variante mit Sahne."}
+    {
+      "question": "Wie viele Kalorien hat Rahmsauce?",
+      "answer": "Eine klassische Rahmsauce hat ca. 141 kcal pro 100g. Je nach Zutaten liegt eine Portion (100g) etwa zwischen 137 kcal (mit Senf) und 174 kcal (mit Speck). Gerechnet aus USDA-Werten für 150g Sahne, 230g Brühe, 10g Butter, 10g Schalotte und 5g Speisestärke (4 Portionen)."
+    },
+    {
+      "question": "Ist Rahmsauce kalorienreich?",
+      "answer": "Rahmsauce ist moderat kalorienreich. Der Hauptkalorienlieferant ist die Sahne mit ca. 30% Fett. Mit weniger Sahne und mehr Brühe wird sie leichter."
+    },
+    {
+      "question": "Wie kann ich Rahmsauce kalorienärmer machen?",
+      "answer": "Verwende Schmand statt Sahne, strecke mit Milch oder Brühe, oder nutze Hafersahne. So sparst du deutlich Kalorien."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Rahmsauce oder Bratensauce?",
+      "answer": "Bratensauce hat mit ca. 53 kcal/100g deutlich weniger als Rahmsauce (141 kcal/100g), da sie keine Sahne enthält."
+    },
+    {
+      "question": "Wie viel Fett hat Rahmsauce?",
+      "answer": "Klassische Rahmsauce enthält ca. 14g Fett pro 100g. Der Großteil kommt aus der Sahne, mit weniger Sahne sinkt der Fettgehalt deutlich."
+    },
+    {
+      "question": "Ist vegane Rahmsauce kalorienärmer?",
+      "answer": "Das hängt von der Hafersahne ab. Wie viel du sparst, zeigt der Vergleich der Packungsangaben mit Sahne."
+    }
   ],
-  "related_foods": ["bratensauce", "jagersosse", "schnitzel", "schweinebraten"]
+  "related_foods": [
+    "bratensauce",
+    "jagersosse",
+    "schnitzel",
+    "schweinebraten"
+  ]
 }

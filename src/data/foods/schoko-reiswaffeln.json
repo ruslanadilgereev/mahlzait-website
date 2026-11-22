@@ -3,9 +3,24 @@
   "name": "Schoko-Reiswaffeln",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Waffel 13 g (halb Reiswaffel, halb Schokolade)): 6.5 g Reiswaffel (Vollkornreis) (FDC-ID 170250, Snacks, rice cakes, brown rice, plain, unsalted: 387 kcal), 6.5 g Vollmilchschokolade (FDC-ID 167587, Candies, milk chocolate: 535 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Reiswaffel (Vollkornreis)",
+        "g": 6.5,
+        "fdcId": 170250
+      },
+      {
+        "name": "Vollmilchschokolade",
+        "g": 6.5,
+        "fdcId": 167587
+      }
+    ]
+  },
   "seo": {
     "title": "Schoko-Reiswaffeln Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Schoko-Reiswaffeln? Eine Waffel hat ca. 59 kcal, 100 g rund 455 kcal. Alle Nährwerte, Portionen & Tipps im Überblick.",
+    "description": "Wie viele Kalorien haben Schoko-Reiswaffeln? Eine Waffel hat ca. 60 kcal, 100 g rund 461 kcal. Alle Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "schoko reiswaffeln kalorien",
       "schoko reiswaffeln kcal",
@@ -16,11 +31,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 455,
-    "protein_per_100g": 6.5,
-    "carbs_per_100g": 70,
-    "fat_per_100g": 15,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 461,
+    "protein_per_100g": 7.9,
+    "carbs_per_100g": 70.5,
+    "fat_per_100g": 16.2,
+    "fiber_per_100g": 3.8,
     "typical_portion_g": 13,
     "typical_portion_name": "1 Schoko-Reiswaffel"
   },
@@ -28,87 +43,108 @@
     {
       "name": "1 Schoko-Reiswaffel (13g)",
       "portion_g": 13,
-      "calories": 59,
-      "protein": 0.8,
-      "carbs": 9.1,
-      "fat": 2,
+      "calories": 60,
+      "protein": 1,
+      "carbs": 9.2,
+      "fat": 2.1,
       "tip": "Standard"
     },
     {
       "name": "2 Schoko-Reiswaffeln (26g)",
       "portion_g": 26,
-      "calories": 118,
-      "protein": 1.7,
-      "carbs": 18.2,
-      "fat": 3.9
+      "calories": 120,
+      "protein": 2.1,
+      "carbs": 18.3,
+      "fat": 4.2
     },
     {
       "name": "Kleine Portion (3 Stück, 39g)",
       "portion_g": 39,
-      "calories": 177,
-      "protein": 2.5,
-      "carbs": 27.3,
-      "fat": 5.8
+      "calories": 180,
+      "protein": 3.1,
+      "carbs": 27.5,
+      "fat": 6.3
     },
     {
       "name": "Handvoll (5 Stück, 65g)",
       "portion_g": 65,
-      "calories": 296,
-      "protein": 4.2,
-      "carbs": 45.5,
-      "fat": 9.8
+      "calories": 300,
+      "protein": 5.1,
+      "carbs": 45.8,
+      "fat": 10.5
     },
     {
       "name": "Halbe Packung (75g)",
       "portion_g": 75,
-      "calories": 341,
-      "protein": 4.9,
-      "carbs": 52.5,
-      "fat": 11.2
+      "calories": 346,
+      "protein": 5.9,
+      "carbs": 52.9,
+      "fat": 12.2
     },
     {
       "name": "100 g",
       "portion_g": 100,
-      "calories": 455,
-      "protein": 6.5,
-      "carbs": 70,
-      "fat": 15
+      "calories": 461,
+      "protein": 7.9,
+      "carbs": 70.5,
+      "fat": 16.2
     },
     {
       "name": "Ganze Packung (~130g)",
       "portion_g": 130,
-      "calories": 592,
-      "protein": 8.4,
-      "carbs": 91,
-      "fat": 19.5
+      "calories": 599,
+      "protein": 10.3,
+      "carbs": 91.7,
+      "fat": 21.1
     }
   ],
   "comparison": [
     {
       "name": "Reiswaffel pur (1 Stück)",
-      "calories": 35,
-      "emoji": "🍙"
+      "calories": 31,
+      "emoji": "🍙",
+      "basis": [
+        {
+          "slug": "reiswaffeln"
+        }
+      ]
     },
     {
-      "name": "Butterkeks (1 Stück)",
-      "calories": 28,
-      "emoji": "🍪"
+      "name": "Butterkeks (7g)",
+      "calories": 33,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "fdcId": 172819,
+          "g": 7
+        }
+      ]
     },
     {
-      "name": "Schokolade (1 Reihe)",
-      "calories": 85,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (1 Reihe)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch"
+        }
+      ]
     },
     {
       "name": "Knoppers (1 Stück)",
-      "calories": 138,
-      "emoji": "🧇"
+      "calories": 137,
+      "emoji": "🧇",
+      "basis": [
+        {
+          "slug": "knoppers"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Snack mit hoher Energiedichte",
-      "text": "Trotz luftiger Optik liefern Schoko-Reiswaffeln rund 455 kcal pro 100 g. Eine einzelne Waffel mit ca. 59 kcal ist als kleiner Genuss aber gut planbar.",
+      "text": "Trotz luftiger Optik liefern Schoko-Reiswaffeln rund 461 kcal pro 100 g. Eine einzelne Waffel mit ca. 60 kcal ist als kleiner Genuss aber gut planbar.",
       "icon": "🍫"
     },
     {
@@ -118,12 +154,12 @@
     },
     {
       "title": "Pur statt mit Schokolade sparen",
-      "text": "Eine Reiswaffel ohne Schokoüberzug hat nur etwa 35 kcal. Wer Kalorien sparen will, greift zur puren Variante und nutzt die Schoko-Version als Ausnahme.",
+      "text": "Eine Reiswaffel ohne Schokoüberzug hat nur etwa 31 kcal. Wer Kalorien sparen will, greift zur puren Variante und nutzt die Schoko-Version als Ausnahme.",
       "icon": "🍙"
     },
     {
       "title": "Wenig sättigend",
-      "text": "Mit nur etwa 2 g Ballaststoffen und kaum Eiweiß pro 100 g halten Schoko-Reiswaffeln nicht lange satt. Kombiniere sie mit Quark oder Obst für mehr Sättigung.",
+      "text": "Mit nur etwa 4 g Ballaststoffen und wenig Eiweiß pro 100 g halten Schoko-Reiswaffeln nicht lange satt. Kombiniere sie mit Quark oder Obst für mehr Sättigung.",
       "icon": "🥣"
     },
     {
@@ -135,11 +171,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Schoko-Reiswaffel?",
-      "answer": "Eine einzelne Schoko-Reiswaffel (ca. 13 g) hat rund 59 kcal. 100 g liefern etwa 455 kcal."
+      "answer": "Eine einzelne Schoko-Reiswaffel (ca. 13 g) hat rund 60 kcal. 100 g liefern etwa 461 kcal. Gerechnet aus USDA-Werten für eine Waffel aus 6,5 g Vollkorn-Reiswaffel und 6,5 g Vollmilchschokolade."
     },
     {
       "question": "Wie viele Kalorien haben Schoko-Reiswaffeln pro 100 g?",
-      "answer": "Pro 100 g enthalten Schoko-Reiswaffeln etwa 455 kcal, 6,5 g Eiweiß, 70 g Kohlenhydrate und 15 g Fett."
+      "answer": "Pro 100 g enthalten Schoko-Reiswaffeln etwa 461 kcal, 7,9 g Eiweiß, 70,5 g Kohlenhydrate und 16 g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Schoko-Reiswaffeln?",
@@ -147,11 +183,11 @@
     },
     {
       "question": "Wie viel Eiweiß steckt in Schoko-Reiswaffeln?",
-      "answer": "Der Eiweißgehalt ist mit etwa 6,5 g pro 100 g gering. Eine einzelne Waffel liefert weniger als 1 g Protein."
+      "answer": "Der Eiweißgehalt ist mit etwa 8 g pro 100 g gering. Eine einzelne Waffel liefert rund 1 g Protein."
     },
     {
       "question": "Sind Schoko-Reiswaffeln zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Eine Waffel mit ca. 59 kcal passt als kleiner Snack in eine Diät. Wegen der hohen Energiedichte und geringen Sättigung sollte man die Menge aber im Blick behalten."
+      "answer": "In Maßen ja: Eine Waffel mit ca. 60 kcal passt als kleiner Snack in eine Diät. Wegen der hohen Energiedichte und geringen Sättigung sollte man die Menge aber im Blick behalten."
     },
     {
       "question": "Sind Schoko-Reiswaffeln gesund?",

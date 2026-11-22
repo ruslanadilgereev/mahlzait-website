@@ -3,6 +3,23 @@
   "name": "Ayran",
   "emoji": "🥛",
   "category": "getraenk",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Becher 250 ml): 150 ml (155 g) Naturjoghurt (3,5 % Fett) (FDC-ID 171284, Yogurt, plain, whole milk: 61 kcal), 100 ml (100 g) Wasser (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Naturjoghurt (3,5 % Fett)",
+        "g": 155,
+        "ml": 150,
+        "fdcId": 171284
+      },
+      {
+        "name": "Wasser",
+        "g": 100,
+        "ml": 100,
+        "fdcId": 173647
+      }
+    ]
+  },
   "seo": {
     "title": "Ayran Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Ayran? 100 ml haben nur ca. 38 kcal. Nährwerte pro Glas & Becher, Eiweiß-Gehalt und Tipps zum Abnehmen im Überblick.",
@@ -18,111 +35,159 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 38,
-    "protein_per_100g": 1.7,
-    "carbs_per_100g": 2.6,
+    "calories_per_100g": 37,
+    "protein_per_100g": 2.1,
+    "carbs_per_100g": 2.8,
     "fat_per_100g": 2,
     "fiber_per_100g": 0,
-    "typical_portion_g": 250,
+    "typical_portion_g": 255,
     "typical_portion_name": "1 Becher (250 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (200 ml)",
-      "portion_g": 200,
-      "calories": 76,
-      "protein": 3,
-      "carbs": 5,
+      "portion_g": 204,
+      "calories": 75,
+      "protein": 4,
+      "carbs": 6,
       "fat": 4
     },
     {
       "name": "Becher (250 ml)",
-      "portion_g": 250,
-      "calories": 95,
-      "protein": 4,
+      "portion_g": 255,
+      "calories": 94,
+      "protein": 5,
       "carbs": 7,
       "fat": 5,
       "tip": "Standardportion"
     },
     {
       "name": "Dönerladen-Becher (300 ml)",
-      "portion_g": 300,
-      "calories": 114,
-      "protein": 5,
-      "carbs": 8,
+      "portion_g": 306,
+      "calories": 113,
+      "protein": 6,
+      "carbs": 9,
       "fat": 6
     },
     {
       "name": "Flasche (500 ml)",
-      "portion_g": 500,
-      "calories": 190,
-      "protein": 9,
-      "carbs": 13,
+      "portion_g": 510,
+      "calories": 189,
+      "protein": 11,
+      "carbs": 14,
       "fat": 10
     },
     {
       "name": "Großflasche (1 Liter)",
-      "portion_g": 1000,
-      "calories": 380,
-      "protein": 17,
-      "carbs": 26,
+      "portion_g": 1020,
+      "calories": 377,
+      "protein": 21,
+      "carbs": 29,
       "fat": 20
     },
     {
       "name": "Selbstgemacht, dickflüssig (250 ml)",
-      "portion_g": 250,
-      "calories": 125,
+      "portion_g": 257,
+      "calories": 126,
       "protein": 7,
-      "carbs": 9,
+      "carbs": 10,
       "fat": 7,
-      "tip": "Höherer Joghurtanteil"
+      "tip": "Höherer Joghurtanteil",
+      "basis": [
+        {
+          "fdcId": 171284,
+          "ml": 200,
+          "g": 207
+        },
+        {
+          "fdcId": 173647,
+          "ml": 50,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Fettarmer Ayran (250 ml)",
-      "portion_g": 250,
-      "calories": 60,
-      "protein": 5,
-      "carbs": 7,
-      "fat": 1,
-      "tip": "Aus magerem Joghurt"
+      "portion_g": 255,
+      "calories": 87,
+      "protein": 9,
+      "carbs": 12,
+      "fat": 0,
+      "tip": "Aus Magermilchjoghurt",
+      "basis": [
+        {
+          "fdcId": 170887,
+          "ml": 150,
+          "g": 155
+        },
+        {
+          "fdcId": 173647,
+          "ml": 100,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Milch (1,5 %)",
-      "calories": 119,
-      "emoji": "🥛"
+      "name": "Fettarme Milch (250 ml)",
+      "calories": 129,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 171267,
+          "ml": 250,
+          "g": 258
+        }
+      ]
     },
     {
-      "name": "Apfelsaft",
-      "calories": 115,
-      "emoji": "🧃"
+      "name": "Apfelsaft (250 ml)",
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft"
+        }
+      ]
     },
     {
-      "name": "Cola",
-      "calories": 105,
-      "emoji": "🥤"
+      "name": "Cola (250 ml)",
+      "calories": 110,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "fdcId": 2710541,
+          "ml": 250,
+          "g": 262
+        }
+      ]
     },
     {
-      "name": "Joghurt natur",
-      "calories": 158,
-      "emoji": "🍨"
+      "name": "Naturjoghurt (1 Becher, 150g)",
+      "calories": 92,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "joghurt"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarmer Durstlöscher",
-      "text": "Ein Becher Ayran (250 ml) hat nur ca. 95 kcal und damit deutlich weniger als Saft oder Limonade. Durch den hohen Wasseranteil löscht er gut den Durst.",
+      "text": "Ein Becher Ayran (250 ml) hat nur ca. 94 kcal und damit weniger als Saft oder Limonade. Durch den hohen Wasseranteil löscht er gut den Durst.",
       "icon": "💧"
     },
     {
       "title": "Eiweißquelle zur Mahlzeit",
-      "text": "Ayran liefert das Milcheiweiß aus Joghurt. Ein Becher bringt etwa 4 g Protein und passt gut als Begleiter zu einem deftigen Essen.",
+      "text": "Ayran liefert das Milcheiweiß aus Joghurt. Ein Becher bringt etwa 5 g Protein und passt gut als Begleiter zu einem deftigen Essen.",
       "icon": "💪"
     },
     {
       "title": "Auf den Fettgehalt achten",
-      "text": "Klassischer Ayran enthält rund 2 % Fett. Wer Kalorien sparen möchte, greift zu fettarmen Varianten oder mischt Ayran selbst aus magerem Joghurt.",
+      "text": "Klassischer Ayran enthält rund 2 % Fett. Fettarmer Ayran aus Magermilchjoghurt spart vor allem Fett, die Kalorien sinken nur wenig, weil Magermilchjoghurt mehr Eiweiß und Milchzucker enthält.",
       "icon": "⚖️"
     },
     {
@@ -139,19 +204,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Ayran?",
-      "answer": "Ayran hat etwa 38 kcal pro 100 ml. Ein Becher (250 ml) kommt damit auf rund 95 kcal, ein kleines Glas (200 ml) auf etwa 76 kcal."
+      "answer": "Ayran hat etwa 38 kcal pro 100 ml. Ein Becher (250 ml) kommt damit auf rund 94 kcal, ein kleines Glas (200 ml) auf etwa 75 kcal. Gerechnet aus USDA-Werten für 150 ml Naturjoghurt (3,5 % Fett) und 100 ml Wasser je Becher; Salz liefert keine Energie."
     },
     {
       "question": "Wie viele Kalorien hat ein Glas Ayran?",
-      "answer": "Ein kleines Glas Ayran (200 ml) hat ca. 76 kcal, ein größerer Becher (250 ml) etwa 95 kcal."
+      "answer": "Ein kleines Glas Ayran (200 ml) hat ca. 75 kcal, ein größerer Becher (250 ml) etwa 94 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Ayran?",
-      "answer": "Ayran enthält rund 2,6 g Kohlenhydrate pro 100 ml. Ein Becher (250 ml) liefert damit etwa 7 g Kohlenhydrate, hauptsächlich aus dem Milchzucker des Joghurts."
+      "answer": "Ayran enthält rund 2,9 g Kohlenhydrate pro 100 ml. Ein Becher (250 ml) liefert damit etwa 7 g Kohlenhydrate, hauptsächlich aus dem Milchzucker des Joghurts."
     },
     {
       "question": "Wie viel Eiweiß steckt in Ayran?",
-      "answer": "Ayran liefert etwa 1,7 g Eiweiß pro 100 ml. Ein Becher (250 ml) bringt damit rund 4 g Protein aus dem enthaltenen Joghurt."
+      "answer": "Ayran liefert etwa 2,1 g Eiweiß pro 100 ml. Ein Becher (250 ml) bringt damit rund 5 g Protein aus dem enthaltenen Joghurt."
     },
     {
       "question": "Ist Ayran zum Abnehmen geeignet?",

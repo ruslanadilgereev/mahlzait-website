@@ -3,9 +3,24 @@
   "name": "Kürbiskernbrot",
   "emoji": "🍞",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (100 g Brot mit 12 % Kürbiskernen): 88 g Roggenmischbrot (gebacken) (FDC-ID 172684, Bread, rye: 259 kcal), 12 g Kürbiskerne (FDC-ID 170556, Seeds, pumpkin and squash seed kernels, dried: 559 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Roggenmischbrot (gebacken)",
+        "g": 88,
+        "fdcId": 172684
+      },
+      {
+        "name": "Kürbiskerne",
+        "g": 12,
+        "fdcId": 170556
+      }
+    ]
+  },
   "seo": {
     "title": "Kürbiskernbrot Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kürbiskernbrot? Eine Scheibe (50g) hat ca. 140 kcal, 100g ca. 280 kcal. Nährwerte, Eiweiß, Kohlenhydrate & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Kürbiskernbrot? Eine Scheibe (50g) hat ca. 148 kcal, 100g ca. 295 kcal. Nährwerte, Eiweiß, Kohlenhydrate & Tipps im Überblick.",
     "keywords": [
       "kürbiskernbrot kalorien",
       "kürbiskernbrot kcal",
@@ -17,11 +32,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 280,
-    "protein_per_100g": 9.5,
-    "carbs_per_100g": 38,
-    "fat_per_100g": 9.5,
-    "fiber_per_100g": 6.5,
+    "calories_per_100g": 295,
+    "protein_per_100g": 11.1,
+    "carbs_per_100g": 43.8,
+    "fat_per_100g": 8.8,
+    "fiber_per_100g": 5.8,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Scheibe (50g)"
   },
@@ -29,106 +44,139 @@
     {
       "name": "1 dünne Scheibe (35g)",
       "portion_g": 35,
-      "calories": 98,
-      "protein": 3,
-      "carbs": 13,
+      "calories": 103,
+      "protein": 4,
+      "carbs": 15,
       "fat": 3
     },
     {
       "name": "1 Scheibe (50g)",
       "portion_g": 50,
-      "calories": 140,
-      "protein": 5,
-      "carbs": 19,
-      "fat": 5,
+      "calories": 148,
+      "protein": 6,
+      "carbs": 22,
+      "fat": 4,
       "tip": "Standard-Scheibe"
     },
     {
       "name": "1 dicke Scheibe (65g)",
       "portion_g": 65,
-      "calories": 182,
-      "protein": 6,
-      "carbs": 25,
+      "calories": 192,
+      "protein": 7,
+      "carbs": 28,
       "fat": 6
     },
     {
       "name": "2 Scheiben (100g)",
       "portion_g": 100,
-      "calories": 280,
-      "protein": 10,
-      "carbs": 38,
-      "fat": 10
+      "calories": 295,
+      "protein": 11,
+      "carbs": 44,
+      "fat": 9
     },
     {
       "name": "Belegte Scheibe mit Frischkäse (50g Brot + 20g)",
       "portion_g": 70,
-      "calories": 195,
-      "protein": 6,
-      "carbs": 20,
-      "fat": 9,
-      "tip": "Brot plus dünner Aufstrich"
+      "calories": 218,
+      "protein": 7,
+      "carbs": 23,
+      "fat": 11,
+      "tip": "Brot plus dünner Aufstrich",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 173418,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Kürbiskernbrötchen (90g)",
       "portion_g": 90,
-      "calories": 252,
-      "protein": 9,
-      "carbs": 34,
-      "fat": 9
+      "calories": 266,
+      "protein": 10,
+      "carbs": 39,
+      "fat": 8
     },
     {
       "name": "Halbes Brot (375g)",
       "portion_g": 375,
-      "calories": 1050,
-      "protein": 36,
-      "carbs": 143,
-      "fat": 36
+      "calories": 1106,
+      "protein": 42,
+      "carbs": 164,
+      "fat": 33
     },
     {
       "name": "Ganzes Brot (750g)",
       "portion_g": 750,
-      "calories": 2100,
-      "protein": 71,
-      "carbs": 285,
-      "fat": 71
+      "calories": 2213,
+      "protein": 83,
+      "carbs": 329,
+      "fat": 66
     }
   ],
   "comparison": [
     {
       "name": "Vollkornbrot (1 Scheibe 50g)",
-      "calories": 110,
-      "emoji": "🍞"
+      "calories": 111,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Toastbrot (1 Scheibe 25g)",
-      "calories": 66,
-      "emoji": "🍞"
+      "calories": 67,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Brötchen (1 Stück 60g)",
-      "calories": 159,
-      "emoji": "🥖"
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Eiweißbrot (1 Scheibe 50g)",
-      "calories": 95,
-      "emoji": "🍞"
+      "calories": 119,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "eiweissbrot",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sättigt durch Ballaststoffe",
-      "text": "Mit rund 6,5g Ballaststoffen pro 100g hält Kürbiskernbrot länger satt als helles Brot. Das hilft, zwischen den Mahlzeiten weniger zu naschen.",
+      "text": "Mit rund 6g Ballaststoffen pro 100g hält Kürbiskernbrot länger satt als helles Brot. Das hilft, zwischen den Mahlzeiten weniger zu naschen.",
       "icon": "🌾"
     },
     {
       "title": "Mehr Eiweiß als Weißbrot",
-      "text": "Durch die Kürbiskerne liefert das Brot rund 9,5g Eiweiß pro 100g. Das ist deutlich mehr als bei Toastbrot und macht es zu einer guten Grundlage fürs Frühstück.",
+      "text": "Mit den Kürbiskernen liefert das Brot rund 11g Eiweiß pro 100g. Das ist mehr als bei Toastbrot und macht es zu einer guten Grundlage fürs Frühstück.",
       "icon": "💪"
     },
     {
       "title": "Auf die Scheibendicke achten",
-      "text": "Eine dünne Scheibe (35g) hat nur etwa 98 kcal, eine dicke Scheibe (65g) bereits 182 kcal. Wer auf die Kalorien achtet, schneidet das Brot dünner.",
+      "text": "Eine dünne Scheibe (35g) hat nur etwa 103 kcal, eine dicke Scheibe (65g) bereits 192 kcal. Wer auf die Kalorien achtet, schneidet das Brot dünner.",
       "icon": "🔪"
     },
     {
@@ -138,30 +186,30 @@
     },
     {
       "title": "Gutes Fett aus den Kernen",
-      "text": "Die rund 9,5g Fett pro 100g stammen größtenteils aus den Kürbiskernen und bestehen überwiegend aus ungesättigten Fettsäuren.",
+      "text": "Die rund 9g Fett pro 100g stammen größtenteils aus den Kürbiskernen und bestehen überwiegend aus ungesättigten Fettsäuren.",
       "icon": "🎃"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kürbiskernbrot?",
-      "answer": "100g Kürbiskernbrot haben etwa 280 kcal. Eine normale Scheibe von 50g liefert rund 140 kcal, eine dicke Scheibe (65g) etwa 182 kcal."
+      "answer": "100g Kürbiskernbrot haben etwa 295 kcal. Eine normale Scheibe von 50g liefert rund 148 kcal, eine dicke Scheibe (65g) etwa 192 kcal. Gerechnet aus USDA-Werten für 88g Roggenmischbrot und 12g Kürbiskerne je 100g."
     },
     {
       "question": "Wie viele Kalorien hat eine Scheibe Kürbiskernbrot?",
-      "answer": "Eine Standard-Scheibe von 50g hat ca. 140 kcal. Schneidest du das Brot dünner (35g), sind es nur etwa 98 kcal pro Scheibe."
+      "answer": "Eine Standard-Scheibe von 50g hat ca. 148 kcal. Schneidest du das Brot dünner (35g), sind es nur etwa 103 kcal pro Scheibe."
     },
     {
       "question": "Wie viel Eiweiß steckt in Kürbiskernbrot?",
-      "answer": "Kürbiskernbrot enthält rund 9,5g Eiweiß pro 100g. Eine Scheibe (50g) liefert damit etwa 5g Eiweiß, vor allem durch die enthaltenen Kürbiskerne."
+      "answer": "Kürbiskernbrot enthält rund 11g Eiweiß pro 100g. Eine Scheibe (50g) liefert damit etwa 5,6g Eiweiß, rund ein Drittel davon stammt aus den Kürbiskernen."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kürbiskernbrot?",
-      "answer": "Pro 100g sind es etwa 38g Kohlenhydrate. Eine Scheibe von 50g enthält also rund 19g Kohlenhydrate."
+      "answer": "Pro 100g sind es etwa 44g Kohlenhydrate. Eine Scheibe von 50g enthält also rund 22g Kohlenhydrate."
     },
     {
       "question": "Ist Kürbiskernbrot zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Durch viele Ballaststoffe und Eiweiß sättigt es gut. Mit 280 kcal pro 100g ist es allerdings gehaltvoller als helles Brot, weshalb die Portionsgröße und der Belag entscheidend sind."
+      "answer": "In Maßen ja. Durch viele Ballaststoffe und Eiweiß sättigt es gut. Mit 295 kcal pro 100g ist es allerdings gehaltvoller als helles Brot, weshalb die Portionsgröße und der Belag entscheidend sind."
     },
     {
       "question": "Ist Kürbiskernbrot gesund?",

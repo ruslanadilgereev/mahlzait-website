@@ -3,9 +3,24 @@
   "name": "Walnussbrötchen",
   "emoji": "🥐",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Brötchen 70 g): 63 g Weizenbrötchen (gebacken) (FDC-ID 175031, Rolls, hard (includes kaiser): 293 kcal), 7 g Walnüsse (FDC-ID 170187, Nuts, walnuts, english: 654 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Weizenbrötchen (gebacken)",
+        "g": 63,
+        "fdcId": 175031
+      },
+      {
+        "name": "Walnüsse",
+        "g": 7,
+        "fdcId": 170187
+      }
+    ]
+  },
   "seo": {
     "title": "Walnussbrötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Walnussbrötchen? Ein Brötchen (70g) hat ca. 200 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Walnussbrötchen? Ein Brötchen (70g) hat ca. 230 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps im Überblick.",
     "keywords": [
       "walnussbrötchen aldi kalorien",
       "walnussbrötchen kalorien",
@@ -16,11 +31,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 285,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 44,
-    "fat_per_100g": 9,
-    "fiber_per_100g": 3.5,
+    "calories_per_100g": 329,
+    "protein_per_100g": 10.4,
+    "carbs_per_100g": 48.8,
+    "fat_per_100g": 10.4,
+    "fiber_per_100g": 2.7,
     "typical_portion_g": 70,
     "typical_portion_name": "1 Walnussbrötchen"
   },
@@ -28,90 +43,141 @@
     {
       "name": "Halbes Walnussbrötchen (35g)",
       "portion_g": 35,
-      "calories": 100,
-      "protein": 3,
-      "carbs": 15,
-      "fat": 3
+      "calories": 115,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 4
     },
     {
       "name": "1 Walnussbrötchen (70g)",
       "portion_g": 70,
-      "calories": 200,
-      "protein": 6,
-      "carbs": 31,
-      "fat": 6,
+      "calories": 230,
+      "protein": 7,
+      "carbs": 34,
+      "fat": 7,
       "tip": "Standard"
     },
     {
       "name": "Großes Walnussbrötchen (90g)",
       "portion_g": 90,
-      "calories": 257,
-      "protein": 8,
-      "carbs": 40,
-      "fat": 8
+      "calories": 296,
+      "protein": 9,
+      "carbs": 44,
+      "fat": 9
     },
     {
       "name": "2 Walnussbrötchen (140g)",
       "portion_g": 140,
-      "calories": 399,
-      "protein": 13,
-      "carbs": 62,
-      "fat": 13
+      "calories": 461,
+      "protein": 15,
+      "carbs": 68,
+      "fat": 15
     },
     {
       "name": "Walnussbrötchen mit Butter (80g)",
       "portion_g": 80,
-      "calories": 274,
-      "protein": 6,
-      "carbs": 31,
-      "fat": 14,
-      "tip": "70g Brötchen + 10g Butter"
+      "calories": 302,
+      "protein": 7,
+      "carbs": 34,
+      "fat": 15,
+      "tip": "70g Brötchen + 10g Butter",
+      "basis": [
+        {
+          "g": 70
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Walnussbrötchen mit Frischkäse (90g)",
       "portion_g": 90,
-      "calories": 252,
-      "protein": 8,
-      "carbs": 32,
-      "fat": 12,
-      "tip": "70g Brötchen + 20g Frischkäse"
+      "calories": 300,
+      "protein": 9,
+      "carbs": 35,
+      "fat": 14,
+      "tip": "70g Brötchen + 20g Frischkäse",
+      "basis": [
+        {
+          "g": 70
+        },
+        {
+          "fdcId": 173418,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Walnussbrötchen mit Käse (90g)",
       "portion_g": 90,
-      "calories": 270,
-      "protein": 11,
-      "carbs": 31,
-      "fat": 12,
-      "tip": "70g Brötchen + 20g Gouda"
+      "calories": 302,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 13,
+      "tip": "70g Brötchen + 20g Gouda",
+      "basis": [
+        {
+          "g": 70
+        },
+        {
+          "fdcId": 171241,
+          "g": 20
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Normales Brötchen (70g)",
-      "calories": 135,
-      "emoji": "🥖"
+      "calories": 205,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Käsebrötchen (70g)",
-      "calories": 210,
-      "emoji": "🧀"
+      "calories": 221,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesebroetchen",
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Croissant (60g)",
-      "calories": 250,
-      "emoji": "🥐"
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Vollkornbrötchen (70g)",
-      "calories": 150,
-      "emoji": "🌾"
+      "calories": 186,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "fdcId": 172794,
+          "g": 70
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mehr Kalorien als ein normales Brötchen",
-      "text": "Durch die eingebackenen Walnüsse hat ein Walnussbrötchen mit ca. 200 kcal pro Stück deutlich mehr Kalorien als ein normales Brötchen (ca. 135 kcal). Das Walnussfett ist der Hauptgrund.",
+      "text": "Durch die eingebackenen Walnüsse hat ein Walnussbrötchen mit ca. 230 kcal pro Stück mehr Kalorien als ein gleich großes normales Brötchen (ca. 205 kcal). Das Walnussfett ist der Hauptgrund.",
       "icon": "🥐"
     },
     {
@@ -121,40 +187,40 @@
     },
     {
       "title": "Belag bewusst wählen",
-      "text": "Schon 10g Butter bringen rund 74 kcal zusätzlich. Wer Kalorien sparen möchte, greift zu magerem Frischkäse oder Quark statt Butter und fettem Aufschnitt.",
+      "text": "Schon 10g Butter bringen rund 72 kcal zusätzlich. Wer Kalorien sparen möchte, greift zu magerem Frischkäse oder Quark statt Butter und fettem Aufschnitt.",
       "icon": "🧈"
     },
     {
       "title": "Sättigt durch Ballaststoffe",
-      "text": "Mit rund 3,5g Ballaststoffen pro 100g sättigt ein Walnussbrötchen etwas länger als ein helles Weizenbrötchen. In Maßen passt es daher auch in eine ausgewogene Ernährung.",
+      "text": "Mit rund 2,7g Ballaststoffen pro 100g liegt ein Walnussbrötchen etwas über einem hellen Weizenbrötchen. In Maßen passt es daher auch in eine ausgewogene Ernährung.",
       "icon": "🌾"
     },
     {
       "title": "Beim Abnehmen die Portion beachten",
-      "text": "Ein einzelnes Walnussbrötchen (200 kcal) ist überschaubar, zwei Stück mit Belag erreichen aber schnell über 500 kcal. Wer abnehmen will, bleibt am besten bei einem Stück.",
+      "text": "Ein einzelnes Walnussbrötchen (230 kcal) ist überschaubar, zwei Stück mit Belag erreichen aber schnell über 500 kcal. Wer abnehmen will, bleibt am besten bei einem Stück.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Walnussbrötchen?",
-      "answer": "Ein Walnussbrötchen (ca. 70g) hat rund 200 kcal. Pro 100g sind es etwa 285 kcal."
+      "answer": "Ein Walnussbrötchen (ca. 70g) hat rund 230 kcal. Pro 100g sind es etwa 329 kcal. Gerechnet aus USDA-Werten für 63g gebackenen Weizenbrötchenteig und 7g Walnüsse."
     },
     {
       "question": "Wie viele Kalorien hat ein Walnussbrötchen von Aldi?",
-      "answer": "Walnussbrötchen vom Discounter wie Aldi liegen je nach Größe bei etwa 190 bis 230 kcal pro Stück, also rund 280 bis 290 kcal pro 100g. Die genauen Werte stehen auf der Verpackung."
+      "answer": "Die genauen Werte eines Discounter-Walnussbrötchens stehen auf der Verpackung und hängen von Größe und Walnussanteil ab. Ein typisches Walnussbrötchen mit 70g kommt nach unserer Rechnung auf rund 230 kcal, also etwa 329 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Walnussbrötchen?",
-      "answer": "Ein Walnussbrötchen (70g) enthält etwa 31g Kohlenhydrate. Pro 100g sind es rund 44g, überwiegend aus dem Weizenmehl."
+      "answer": "Ein Walnussbrötchen (70g) enthält etwa 34g Kohlenhydrate. Pro 100g sind es rund 49g, überwiegend aus dem Weizenmehl."
     },
     {
       "question": "Wie viel Protein steckt in einem Walnussbrötchen?",
-      "answer": "Ein Walnussbrötchen (70g) liefert rund 6g Eiweiß, pro 100g etwa 9g. Die Walnüsse tragen einen kleinen Teil dazu bei."
+      "answer": "Ein Walnussbrötchen (70g) liefert rund 7g Eiweiß, pro 100g etwa 10g. Die Walnüsse tragen einen kleinen Teil dazu bei."
     },
     {
       "question": "Ist ein Walnussbrötchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Ein einzelnes Walnussbrötchen mit 200 kcal lässt sich gut in eine kalorienbewusste Ernährung einbauen. Wer abnehmen möchte, sollte aber auf die Menge des Belags achten und nicht mehrere Stück essen."
+      "answer": "In Maßen ja. Ein einzelnes Walnussbrötchen mit 230 kcal lässt sich gut in eine kalorienbewusste Ernährung einbauen. Wer abnehmen möchte, sollte aber auf die Menge des Belags achten und nicht mehrere Stück essen."
     },
     {
       "question": "Ist ein Walnussbrötchen gesund?",

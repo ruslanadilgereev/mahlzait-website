@@ -3,9 +3,54 @@
   "name": "Käse-Lauch-Suppe",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 8 Teller à 350 g): 175 g Rinderhack gebraten (Hälfte des Mischhacks) (FDC-ID 171799, Beef, ground, 80% lean meat / 20% fat, crumbles, cooked, pan-browned: 272 kcal), 175 g Schweinehack gebraten (Hälfte des Mischhacks) (FDC-ID 169192, Pork, ground, 84% lean / 16% fat, cooked, crumbles: 289 kcal), 600 g Lauch (FDC-ID 169246, Leeks, (bulb and lower leaf-portion), raw: 61 kcal), 100 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 300 g Schmelzkäse (streichfähig) (FDC-ID 171254, Cheese spread, pasteurized process, American: 290 kcal), 150 g Sahne 30 % Fett (FDC-ID 170858, Cream, fluid, light whipping: 292 kcal), 10 g Rapsöl (FDC-ID 172336, Oil, canola: 884 kcal), 1290 g Gemüsebrühe (FDC-ID 171583, Soup, vegetable broth, ready to serve: 5 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Rinderhack gebraten (Hälfte des Mischhacks)",
+        "g": 175,
+        "fdcId": 171799
+      },
+      {
+        "name": "Schweinehack gebraten (Hälfte des Mischhacks)",
+        "g": 175,
+        "fdcId": 169192
+      },
+      {
+        "name": "Lauch",
+        "g": 600,
+        "fdcId": 169246
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 100,
+        "fdcId": 170000
+      },
+      {
+        "name": "Schmelzkäse (streichfähig)",
+        "g": 300,
+        "fdcId": 171254
+      },
+      {
+        "name": "Sahne 30 % Fett",
+        "g": 150,
+        "fdcId": 170858
+      },
+      {
+        "name": "Rapsöl",
+        "g": 10,
+        "fdcId": 172336
+      },
+      {
+        "name": "Gemüsebrühe",
+        "g": 1290,
+        "fdcId": 171583
+      }
+    ]
+  },
   "seo": {
     "title": "Käse-Lauch-Suppe Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Käse-Lauch-Suppe? Ein Teller (350g) hat ca. 332 kcal. Nährwerte pro 100g, leichte Varianten & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Käse-Lauch-Suppe? Ein Teller (350g) hat ca. 357 kcal. Nährwerte pro 100g, Portionen & Tipps zum Abnehmen.",
     "keywords": [
       "käse lauch suppe kalorien",
       "käse-lauch-suppe kcal",
@@ -16,11 +61,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 95,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 0.8,
+    "calories_per_100g": 102,
+    "protein_per_100g": 5.7,
+    "carbs_per_100g": 4.9,
+    "fat_per_100g": 6.7,
+    "fiber_per_100g": 0.4,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller (350g)"
   },
@@ -28,85 +73,92 @@
     {
       "name": "100g Käse-Lauch-Suppe",
       "portion_g": 100,
-      "calories": 95,
-      "protein": 5,
-      "carbs": 4,
+      "calories": 102,
+      "protein": 6,
+      "carbs": 5,
       "fat": 7
     },
     {
       "name": "Kleine Tasse (250g)",
       "portion_g": 250,
-      "calories": 238,
-      "protein": 12,
-      "carbs": 10,
-      "fat": 18
+      "calories": 255,
+      "protein": 14,
+      "carbs": 12,
+      "fat": 17
     },
     {
       "name": "1 Teller (350g)",
       "portion_g": 350,
-      "calories": 332,
-      "protein": 18,
-      "carbs": 14,
-      "fat": 24,
+      "calories": 357,
+      "protein": 20,
+      "carbs": 17,
+      "fat": 23,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Portion (450g)",
       "portion_g": 450,
-      "calories": 428,
-      "protein": 22,
-      "carbs": 18,
-      "fat": 32
-    },
-    {
-      "name": "Leichte Variante ohne Hack (350g)",
-      "portion_g": 350,
-      "calories": 210,
-      "protein": 14,
-      "carbs": 16,
-      "fat": 9,
-      "tip": "Mit Magerquark statt Sahne"
-    },
-    {
-      "name": "Vegetarisch ohne Hack (350g)",
-      "portion_g": 350,
-      "calories": 280,
-      "protein": 12,
-      "carbs": 18,
-      "fat": 18
+      "calories": 459,
+      "protein": 26,
+      "carbs": 22,
+      "fat": 30
     }
   ],
   "comparison": [
     {
       "name": "Kartoffelsuppe (350g)",
-      "calories": 210,
-      "emoji": "🥔"
+      "calories": 315,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelsuppe",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Erbsensuppe (350g)",
-      "calories": 245,
-      "emoji": "🫛"
+      "calories": 280,
+      "emoji": "🫛",
+      "basis": [
+        {
+          "slug": "erbsensuppe",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Gulaschsuppe (350g)",
-      "calories": 280,
-      "emoji": "🍲"
+      "calories": 273,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulaschsuppe",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Kürbissuppe (350g)",
-      "calories": 140,
-      "emoji": "🎃"
+      "calories": 252,
+      "emoji": "🎃",
+      "basis": [
+        {
+          "fdcId": 2709718,
+          "g": 350
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sättigend, aber fetthaltig",
-      "text": "Ein Teller (350g) liefert ca. 332 kcal. Der Schmelzkäse und die Sahne machen den größten Teil des Fettanteils aus.",
+      "text": "Ein Teller (350g) liefert ca. 357 kcal. Der Schmelzkäse und die Sahne machen den größten Teil des Fettanteils aus.",
       "icon": "🧀"
     },
     {
       "title": "Leichter durch Magerquark",
-      "text": "Wer Sahne durch Magerquark oder Frischkäse light ersetzt und das Hackfleisch weglässt, kommt auf rund 210 kcal pro Teller.",
+      "text": "Wer Sahne durch Magerquark oder Frischkäse light ersetzt und das Hackfleisch weglässt, spart pro Teller deutlich Kalorien.",
       "icon": "🥣"
     },
     {
@@ -121,30 +173,30 @@
     },
     {
       "title": "Brot bewusst dazu wählen",
-      "text": "Ein Stück Baguette dazu kann schnell 150 kcal extra bedeuten. Vollkornbrot sättigt länger.",
+      "text": "Ein Stück Baguette dazu bringt schnell zusätzliche Kalorien. Vollkornbrot sättigt länger.",
       "icon": "🍞"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Käse-Lauch-Suppe?",
-      "answer": "Ein Teller Käse-Lauch-Suppe (350g) hat etwa 332 kcal. Pro 100g sind es rund 95 kcal."
+      "answer": "Ein Teller Käse-Lauch-Suppe (350g) hat etwa 357 kcal. Pro 100g sind es rund 102 kcal. Gerechnet aus USDA-Werten für ein Rezept mit 350g gebratenem Mischhack, 600g Lauch, 300g Schmelzkäse, 150g Sahne und knapp 1,3 Liter Brühe für 8 Teller."
     },
     {
       "question": "Wie viele Kalorien hat Käse-Lauch-Suppe pro 100g?",
-      "answer": "Klassische Käse-Lauch-Suppe mit Hackfleisch und Schmelzkäse hat ca. 95 kcal pro 100g."
+      "answer": "Klassische Käse-Lauch-Suppe mit Hackfleisch und Schmelzkäse hat ca. 102 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Käse-Lauch-Suppe?",
-      "answer": "Pro 100g enthält sie nur etwa 4g Kohlenhydrate, ein Teller (350g) rund 14g. Sie ist damit relativ kohlenhydratarm."
+      "answer": "Pro 100g enthält sie nur etwa 5g Kohlenhydrate, ein Teller (350g) rund 17g. Sie ist damit relativ kohlenhydratarm."
     },
     {
       "question": "Wie viel Protein steckt in Käse-Lauch-Suppe?",
-      "answer": "Durch Hackfleisch und Käse kommt ein Teller (350g) auf etwa 18g Eiweiß, pro 100g sind es rund 5g."
+      "answer": "Durch Hackfleisch und Käse kommt ein Teller (350g) auf etwa 20g Eiweiß, pro 100g sind es rund 6g."
     },
     {
       "question": "Ist Käse-Lauch-Suppe zum Abnehmen geeignet?",
-      "answer": "Die klassische Variante ist durch Käse und Sahne recht fettreich. Mit Magerquark statt Sahne und magerem Hack sinkt ein Teller auf rund 210 kcal und passt gut in eine Diät."
+      "answer": "Die klassische Variante ist durch Käse und Sahne recht fettreich. Mit Magerquark statt Sahne und magerem Hack sinkt der Kaloriengehalt deutlich, dann passt sie gut in eine Diät."
     },
     {
       "question": "Ist Käse-Lauch-Suppe gesund?",

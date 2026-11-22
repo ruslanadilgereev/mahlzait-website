@@ -3,9 +3,29 @@
   "name": "Aioli",
   "emoji": "🧄",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 100 g Aioli auf Mayonnaise-Basis): 92 g Mayonnaise (FDC-ID 171009, Salad dressing, mayonnaise, regular: 680 kcal), 5 g Knoblauch (FDC-ID 169230, Garlic, raw: 149 kcal), 3 g Zitronensaft (FDC-ID 167747, Lemon juice, raw: 22 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Mayonnaise",
+        "g": 92,
+        "fdcId": 171009
+      },
+      {
+        "name": "Knoblauch",
+        "g": 5,
+        "fdcId": 169230
+      },
+      {
+        "name": "Zitronensaft",
+        "g": 3,
+        "fdcId": 167747
+      }
+    ]
+  },
   "seo": {
     "title": "Aioli Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Aioli? Die Knoblauchsauce hat ca. 650 kcal pro 100g, ein Esslöffel etwa 98 kcal. Nährwerte, Varianten & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Aioli? Die Knoblauchsauce hat ca. 634 kcal pro 100g, ein Esslöffel etwa 95 kcal. Nährwerte, Varianten & Tipps im Überblick.",
     "keywords": [
       "aioli kalorien",
       "aioli kcal",
@@ -16,11 +36,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 650,
-    "protein_per_100g": 1,
-    "carbs_per_100g": 3.5,
-    "fat_per_100g": 70,
-    "fiber_per_100g": 0.2,
+    "calories_per_100g": 634,
+    "protein_per_100g": 1.2,
+    "carbs_per_100g": 2.4,
+    "fat_per_100g": 68.9,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Dip-Portion (30g)"
   },
@@ -28,90 +48,138 @@
     {
       "name": "1 Teelöffel (5g)",
       "portion_g": 5,
-      "calories": 33,
+      "calories": 32,
       "protein": 0.1,
-      "carbs": 0.2,
-      "fat": 3.5,
+      "carbs": 0.1,
+      "fat": 3.4,
       "tip": "Kleine Menge zum Verfeinern"
     },
     {
       "name": "1 Esslöffel (15g)",
       "portion_g": 15,
-      "calories": 98,
+      "calories": 95,
       "protein": 0.2,
-      "carbs": 0.5,
-      "fat": 10.5
+      "carbs": 0.4,
+      "fat": 10.3
     },
     {
       "name": "1 Dip-Portion (30g)",
       "portion_g": 30,
-      "calories": 195,
-      "protein": 0.3,
-      "carbs": 1.1,
-      "fat": 21,
+      "calories": 190,
+      "protein": 0.4,
+      "carbs": 0.7,
+      "fat": 20.7,
       "tip": "Übliche Menge zum Dippen"
     },
     {
       "name": "Großzügiger Dip (50g)",
       "portion_g": 50,
-      "calories": 325,
-      "protein": 0.5,
-      "carbs": 1.8,
-      "fat": 35
+      "calories": 317,
+      "protein": 0.6,
+      "carbs": 1.2,
+      "fat": 34.5
     },
     {
       "name": "Aioli leicht/light (30g)",
       "portion_g": 30,
-      "calories": 105,
-      "protein": 0.3,
-      "carbs": 2.4,
-      "fat": 9.9,
-      "tip": "Fettreduzierte Variante, ca. 350 kcal pro 100g"
+      "calories": 70,
+      "protein": 0.2,
+      "carbs": 3.2,
+      "fat": 6.2,
+      "tip": "Mit Light-Mayonnaise gerechnet, ca. 233 kcal pro 100g",
+      "basis": [
+        {
+          "fdcId": 173594,
+          "g": 28
+        },
+        {
+          "fdcId": 169230,
+          "g": 2
+        }
+      ]
     },
     {
       "name": "Selbstgemacht mit Olivenöl (30g)",
       "portion_g": 30,
-      "calories": 200,
-      "protein": 0.4,
-      "carbs": 0.6,
-      "fat": 21.6,
-      "tip": "Klassisch nur aus Knoblauch, Öl & Ei"
+      "calories": 228,
+      "protein": 0.8,
+      "carbs": 0.8,
+      "fat": 25.1,
+      "tip": "Klassisch nur aus Knoblauch, Olivenöl & Eigelb",
+      "basis": [
+        {
+          "fdcId": 171413,
+          "g": 24
+        },
+        {
+          "fdcId": 172184,
+          "g": 4
+        },
+        {
+          "fdcId": 169230,
+          "g": 2
+        }
+      ]
     },
     {
       "name": "Kleiner Becher (100g)",
       "portion_g": 100,
-      "calories": 650,
-      "protein": 1,
-      "carbs": 3.5,
-      "fat": 70
+      "calories": 634,
+      "protein": 1.2,
+      "carbs": 2.4,
+      "fat": 68.9
     }
   ],
   "comparison": [
     {
-      "name": "Mayo",
-      "calories": 102,
-      "emoji": "🥚"
+      "name": "Mayonnaise (30 g)",
+      "calories": 204,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "mayo",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Tzatziki",
-      "calories": 41,
-      "emoji": "🥒"
+      "name": "Tzatziki (30 g)",
+      "calories": 27,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "tzatziki",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Hummus",
-      "calories": 53,
-      "emoji": "🧆"
+      "name": "Hummus (30 g)",
+      "calories": 71,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Sour Cream",
+      "name": "Sour Cream (30 g)",
       "calories": 59,
-      "emoji": "🥣"
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "sour-cream",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sparsam dosieren",
-      "text": "Aioli ist sehr fettreich. Schon 1 Esslöffel (15g) liefert rund 98 kcal. Wer dippt statt übergießt, spart spürbar Kalorien.",
+      "text": "Aioli ist sehr fettreich. Schon 1 Esslöffel (15g) liefert rund 95 kcal. Wer dippt statt übergießt, spart spürbar Kalorien.",
       "icon": "🥄"
     },
     {
@@ -126,31 +194,31 @@
     },
     {
       "title": "Light-Varianten prüfen",
-      "text": "Fettreduzierte Aioli aus dem Kühlregal kommt oft auf ca. 350 kcal pro 100g statt 650 und spart so rund die Hälfte der Kalorien.",
+      "text": "Mit Light-Mayonnaise gerechnet kommt Aioli auf rund 233 kcal pro 100g statt 634 und spart so fast zwei Drittel der Kalorien.",
       "icon": "🔍"
     },
     {
       "title": "Als Geschmacksgeber nutzen",
-      "text": "Statt großer Mengen reicht oft ein Teelöffel (33 kcal), um Pommes, Fisch oder Gemüse den typischen Knoblauchgeschmack zu geben.",
+      "text": "Statt großer Mengen reicht oft ein Teelöffel (32 kcal), um Pommes, Fisch oder Gemüse den typischen Knoblauchgeschmack zu geben.",
       "icon": "✨"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Aioli?",
-      "answer": "Aioli hat etwa 650 kcal pro 100g. Ein Esslöffel (15g) liefert rund 98 kcal, eine übliche Dip-Portion von 30g etwa 195 kcal."
+      "answer": "Aioli hat etwa 634 kcal pro 100g. Ein Esslöffel (15g) liefert rund 95 kcal, eine übliche Dip-Portion von 30g etwa 190 kcal. Gerechnet aus USDA-Werten für Mayonnaise mit 5 % Knoblauch und etwas Zitronensaft."
     },
     {
       "question": "Wie viele Kalorien hat ein Esslöffel Aioli?",
-      "answer": "Ein Esslöffel Aioli (ca. 15g) hat etwa 98 kcal, davon stammen rund 10,5g aus Fett."
+      "answer": "Ein Esslöffel Aioli (ca. 15g) hat etwa 95 kcal und rund 10g Fett."
     },
     {
       "question": "Wie viel Fett steckt in Aioli?",
-      "answer": "Aioli besteht überwiegend aus Öl und enthält rund 70g Fett pro 100g. Damit zählt sie zu den fettreichsten Saucen."
+      "answer": "Aioli besteht überwiegend aus Öl und enthält rund 69g Fett pro 100g. Damit zählt sie zu den fettreichsten Saucen."
     },
     {
       "question": "Wie viel Protein und Kohlenhydrate hat Aioli?",
-      "answer": "Aioli enthält wenig Protein (ca. 1g) und wenige Kohlenhydrate (ca. 3,5g) pro 100g. Die Kalorien kommen fast ausschließlich aus Fett."
+      "answer": "Aioli enthält wenig Protein (ca. 1g) und wenige Kohlenhydrate (ca. 2,4g) pro 100g. Die Kalorien kommen fast ausschließlich aus Fett."
     },
     {
       "question": "Ist Aioli zum Abnehmen geeignet?",

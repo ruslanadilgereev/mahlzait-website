@@ -3,9 +3,51 @@
   "name": "Kaspressknödel",
   "emoji": "🧆",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 13 Knödel à 60 g): 250 g Knödelbrot (altbackene Semmeln) (FDC-ID 175031, Rolls, hard (includes kaiser): 293 kcal), 150 g Bergkäse (FDC-ID 171242, Cheese, gruyere: 413 kcal), 200 ml (206 g) Milch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 110 g Eier (2 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 80 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 20 g Butter (Zwiebeln andünsten) (FDC-ID 173430, Butter, without salt: 717 kcal), 30 g Rapsöl (beim Braten aufgenommen) (FDC-ID 172336, Oil, canola: 884 kcal); 846 g Zutaten ergeben 780 g (Bratverlust rund 8 % (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Knödelbrot (altbackene Semmeln)",
+        "g": 250,
+        "fdcId": 175031
+      },
+      {
+        "name": "Bergkäse",
+        "g": 150,
+        "fdcId": 171242
+      },
+      {
+        "name": "Milch 3,5 %",
+        "g": 206,
+        "ml": 200,
+        "fdcId": 171265
+      },
+      {
+        "name": "Eier (2 Stück)",
+        "g": 110,
+        "fdcId": 171287
+      },
+      {
+        "name": "Zwiebeln",
+        "g": 80,
+        "fdcId": 170000
+      },
+      {
+        "name": "Butter (Zwiebeln andünsten)",
+        "g": 20,
+        "fdcId": 173430
+      },
+      {
+        "name": "Rapsöl (beim Braten aufgenommen)",
+        "g": 30,
+        "fdcId": 172336
+      }
+    ],
+    "gewicht_g": 780
+  },
   "seo": {
-    "title": "Kaspressknödel Kalorien: Naehrwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kaspressknödel? Ein Stück (60g) hat ca. 150 kcal, eine Portion mit 2 Stück rund 300 kcal. Nährwerte pro 100g & Portion im Überblick.",
+    "title": "Kaspressknödel Kalorien: Nährwerte & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Kaspressknödel? Ein Stück (60g) hat ca. 160 kcal, eine Portion mit 2 Stück rund 319 kcal. Nährwerte pro 100g & Portion im Überblick.",
     "keywords": [
       "kaspressknödel kalorien",
       "kaspressknödel kcal",
@@ -16,11 +58,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 266,
+    "protein_per_100g": 11.6,
+    "carbs_per_100g": 19.3,
+    "fat_per_100g": 15.7,
+    "fiber_per_100g": 0.9,
     "typical_portion_g": 120,
     "typical_portion_name": "Portion (2 Stück)"
   },
@@ -28,84 +70,100 @@
     {
       "name": "1 Kaspressknödel (60g)",
       "portion_g": 60,
-      "calories": 150,
+      "calories": 160,
       "protein": 7,
-      "carbs": 13,
-      "fat": 8
+      "carbs": 12,
+      "fat": 9
     },
     {
       "name": "Portion 2 Stück (120g)",
       "portion_g": 120,
-      "calories": 300,
-      "protein": 13,
-      "carbs": 26,
-      "fat": 16,
+      "calories": 319,
+      "protein": 14,
+      "carbs": 23,
+      "fat": 19,
       "tip": "Standard"
     },
     {
       "name": "3 Stück in der Suppe (180g)",
       "portion_g": 180,
-      "calories": 450,
-      "protein": 20,
-      "carbs": 40,
-      "fat": 23
+      "calories": 479,
+      "protein": 21,
+      "carbs": 35,
+      "fat": 28
     },
     {
       "name": "Gasthaus-Portion 4 Stück (240g)",
       "portion_g": 240,
-      "calories": 600,
-      "protein": 26,
-      "carbs": 53,
-      "fat": 31
+      "calories": 638,
+      "protein": 28,
+      "carbs": 46,
+      "fat": 38
     },
     {
       "name": "1 großes Stück (75g)",
       "portion_g": 75,
-      "calories": 188,
-      "protein": 8,
-      "carbs": 17,
-      "fat": 10
+      "calories": 200,
+      "protein": 9,
+      "carbs": 14,
+      "fat": 12
     },
     {
-      "name": "Tiefkühl, gebraten 1 Stück (50g)",
+      "name": "1 kleines Stück (50g)",
       "portion_g": 50,
-      "calories": 125,
+      "calories": 133,
       "protein": 6,
-      "carbs": 11,
-      "fat": 7
+      "carbs": 10,
+      "fat": 8
     }
   ],
   "comparison": [
     {
       "name": "Semmelknödel (Portion)",
-      "calories": 162,
-      "emoji": "🥟"
+      "calories": 273,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "semmelknoedel"
+        }
+      ]
     },
     {
-      "name": "Käsespätzle (kleine Portion)",
-      "calories": 258,
-      "emoji": "🧀"
+      "name": "Käsespätzle (kleine Portion, 150g)",
+      "calories": 335,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesespaetzle",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Kaiserschmarrn (Portion)",
-      "calories": 300,
-      "emoji": "🥞"
+      "calories": 792,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "slug": "kaiserschmarrn"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "In der Suppe statt in Butter",
-      "text": "Kaspressknödel in einer klaren Rindssuppe sind sättigend, ohne dass zusätzliches Bratfett dazukommt. Wer abnehmen möchte, spart so leicht 50 bis 80 kcal pro Knödel gegenüber der scharf angebratenen Variante.",
+      "text": "Kaspressknödel in einer klaren Rindssuppe sind sättigend. Wer sie nur kurz in wenig Fett anbrät, spart zusätzlich: Im Rezept stammen rund 20 kcal pro Knödel aus dem Bratöl.",
       "icon": "🍲"
     },
     {
       "title": "Auf die Portionsgröße achten",
-      "text": "Eine Gasthaus-Portion mit 4 Stück (240g) liefert rund 600 kcal. Mit 2 Stück und einem Salat dazu bleibt die Mahlzeit bei etwa 300 bis 400 kcal.",
+      "text": "Eine Gasthaus-Portion mit 4 Stück (240g) liefert rund 638 kcal. Mit 2 Stück (319 kcal) und einem Salat dazu bleibt die Mahlzeit deutlich leichter.",
       "icon": "⚖️"
     },
     {
       "title": "Eiweißanteil nutzen",
-      "text": "Durch den Käse liefert ein Kaspressknödel etwa 11g Eiweiß pro 100g. Das ist für ein Knödelgericht überdurchschnittlich und unterstützt die Sättigung.",
+      "text": "Durch den Käse liefert ein Kaspressknödel etwa 12g Eiweiß pro 100g. Das ist für ein Knödelgericht überdurchschnittlich und unterstützt die Sättigung.",
       "icon": "💪"
     },
     {
@@ -122,19 +180,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Kaspressknödel?",
-      "answer": "Ein Kaspressknödel mit etwa 60g hat rund 150 kcal. Eine typische Portion mit 2 Stück (120g) kommt auf etwa 300 kcal."
+      "answer": "Ein Kaspressknödel mit etwa 60g hat rund 160 kcal. Eine typische Portion mit 2 Stück (120g) kommt auf etwa 319 kcal. Gerechnet aus USDA-Werten für 250g Knödelbrot, 150g Bergkäse, 200ml Milch, 2 Eier, 80g Zwiebeln, 20g Butter und 30g Bratöl für 13 Knödel."
     },
     {
       "question": "Wie viele Kalorien hat Kaspressknödel pro 100g?",
-      "answer": "Gebratener Kaspressknödel hat etwa 250 kcal pro 100g, dazu rund 11g Eiweiß, 22g Kohlenhydrate und 13g Fett."
+      "answer": "Gebratener Kaspressknödel hat etwa 266 kcal pro 100g, dazu rund 12g Eiweiß, 19g Kohlenhydrate und 16g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Kaspressknödel?",
-      "answer": "Pro 100g enthalten Kaspressknödel etwa 22g Kohlenhydrate, da sie überwiegend aus Knödelbrot bestehen. Eine Portion mit 2 Stück liefert rund 26g."
+      "answer": "Pro 100g enthalten Kaspressknödel etwa 19g Kohlenhydrate, da sie überwiegend aus Knödelbrot bestehen. Eine Portion mit 2 Stück liefert rund 23g."
     },
     {
       "question": "Wie viel Eiweiß steckt in Kaspressknödel?",
-      "answer": "Durch den Käseanteil liefern Kaspressknödel etwa 11g Eiweiß pro 100g, also rund 13g je Portion mit 2 Stück."
+      "answer": "Durch den Käseanteil liefern Kaspressknödel etwa 12g Eiweiß pro 100g, also rund 14g je Portion mit 2 Stück."
     },
     {
       "question": "Sind Kaspressknödel zum Abnehmen geeignet?",
