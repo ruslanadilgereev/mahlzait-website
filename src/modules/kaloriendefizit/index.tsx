@@ -8,6 +8,12 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
 import AuthorByline from "@components/AuthorByline";
+import {
+  defizitBeispiele,
+  kaloriendefizitFaq,
+  kaloriendefizitQuellen,
+} from "./content";
+
 interface Props {
   config: TemplateConfig;
 }
@@ -21,6 +27,21 @@ interface DeficitResult {
   targetDate: string;
 }
 
+/** Grundumsatz nach Mifflin-St Jeor (1990), vereinfachte Form je Geschlecht. */
+function grundumsatz(
+  gender: "male" | "female",
+  weight: number,
+  height: number,
+  age: number,
+): number {
+  return 10 * weight + 6.25 * height - 5 * age + (gender === "male" ? 5 : -161);
+}
+
+/** 3.500 kcal pro Pfund, umgerechnet auf ein Kilogramm Körpergewicht. */
+const KCAL_PRO_KG = 7700;
+
+const kcal = (value: number) => Math.round(value).toLocaleString("de-DE");
+
 function KaloriendefizitPage({ config }: Props) {
   const [gender, setGender] = useState<"male" | "female">("male");
   const [age, setAge] = useState(30);
@@ -32,17 +53,11 @@ function KaloriendefizitPage({ config }: Props) {
   const [result, setResult] = useState<DeficitResult | null>(null);
 
   const calculateDeficit = () => {
-    // Mifflin-St Jeor Formel
-    let bmr: number;
-    if (gender === "male") {
-      bmr = 10 * currentWeight + 6.25 * height - 5 * age + 5;
-    } else {
-      bmr = 10 * currentWeight + 6.25 * height - 5 * age - 161;
-    }
+    const bmr = grundumsatz(gender, currentWeight, height, age);
 
     const tdee = Math.round(bmr * activity);
     const targetCalories = Math.round(tdee - deficitLevel);
-    const weeklyLoss = (deficitLevel * 7) / 7700; // 7700 kcal = 1 kg
+    const weeklyLoss = (deficitLevel * 7) / KCAL_PRO_KG;
     const weightToLose = currentWeight - targetWeight;
     const weeksToGoal = Math.ceil(weightToLose / weeklyLoss);
 
@@ -153,7 +168,7 @@ function KaloriendefizitPage({ config }: Props) {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text font-semibold">Grösse</span>
+                    <span className="label-text font-semibold">Größe</span>
                     <span className="label-text-alt">{height} cm</span>
                   </label>
                   <input
@@ -171,7 +186,7 @@ function KaloriendefizitPage({ config }: Props) {
               <div className="grid grid-cols-2 gap-4 mb-4">
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text font-semibold">Aktülles Gewicht</span>
+                    <span className="label-text font-semibold">Aktuelles Gewicht</span>
                     <span className="label-text-alt">{currentWeight} kg</span>
                   </label>
                   <input
@@ -289,7 +304,7 @@ function KaloriendefizitPage({ config }: Props) {
                           <p className="text-xl font-bold">{result.weeklyLoss} kg</p>
                         </div>
                         <div>
-                          <p className="text-sm opacity-70">Daür bis Zielgewicht</p>
+                          <p className="text-sm opacity-70">Dauer bis Zielgewicht</p>
                           <p className="text-xl font-bold">{result.weeksToGoal} Wochen</p>
                         </div>
                       </div>
@@ -350,6 +365,82 @@ function KaloriendefizitPage({ config }: Props) {
           </div>
         </section>
 
+        {/* Formel und Beispielrechnungen */}
+        <section className="py-16" id="formel">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              So berechnest du dein Kaloriendefizit
+            </h2>
+            <p className="opacity-80 mb-6">
+              Ein Kaloriendefizit heißt: Du nimmst weniger Energie auf, als du verbrauchst. Der
+              Rechner oben geht dafür in vier Schritten vor.
+            </p>
+            <ol className="list-decimal pl-6 space-y-4 opacity-90">
+              <li>
+                <strong>Grundumsatz</strong> nach der Mifflin-St-Jeor-Formel (1990):
+                <ul className="list-disc pl-6 mt-2 space-y-1">
+                  <li>Frauen: 10 × Gewicht in kg + 6,25 × Größe in cm - 5 × Alter in Jahren - 161</li>
+                  <li>Männer: 10 × Gewicht in kg + 6,25 × Größe in cm - 5 × Alter in Jahren + 5</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Gesamtumsatz</strong> = Grundumsatz × Aktivitätsfaktor. Im Rechner wählst du
+                zwischen 1,2 (kaum aktiv) und 1,9 (Leistungssport).
+              </li>
+              <li>
+                <strong>Kalorienziel</strong> = Gesamtumsatz - Defizit (300, 500, 750 oder 1.000 kcal
+                pro Tag).
+              </li>
+              <li>
+                <strong>Abnahme pro Woche</strong> = Defizit × 7 ÷ {kcal(KCAL_PRO_KG)} kcal. Die{" "}
+                {kcal(KCAL_PRO_KG)} kcal pro Kilogramm entsprechen der verbreiteten Regel „3.500 kcal
+                pro Pfund“.
+              </li>
+            </ol>
+
+            <h3 className="text-xl font-bold mt-10 mb-4">Beispielrechnungen mit 500 kcal Defizit</h3>
+            <div className="overflow-x-auto">
+              <table className="table w-full">
+                <thead>
+                  <tr>
+                    <th>Person</th>
+                    <th>Aktivität</th>
+                    <th className="text-right">Grundumsatz</th>
+                    <th className="text-right">Gesamtumsatz</th>
+                    <th className="text-right">Kalorienziel</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {defizitBeispiele.map((beispiel) => {
+                    const bmr = grundumsatz(
+                      beispiel.gender,
+                      beispiel.weight,
+                      beispiel.height,
+                      beispiel.age,
+                    );
+                    const tdee = Math.round(bmr * beispiel.activity);
+                    return (
+                      <tr key={beispiel.person + beispiel.activity}>
+                        <td>{beispiel.person}</td>
+                        <td>{beispiel.activityLabel}</td>
+                        <td className="text-right">{kcal(bmr)} kcal</td>
+                        <td className="text-right">{kcal(tdee)} kcal</td>
+                        <td className="text-right font-semibold">{kcal(tdee - 500)} kcal</td>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
+            <p className="text-sm opacity-70 mt-4">
+              Mit 500 kcal Defizit ergibt die Formel rund{" "}
+              {((500 * 7) / KCAL_PRO_KG).toLocaleString("de-DE", { maximumFractionDigits: 2 })} kg
+              pro Woche. Gemessene Verläufe fallen über Monate geringer aus, weil der Verbrauch mit
+              dem Gewicht sinkt. Rechne deshalb alle paar Wochen mit deinem neuen Gewicht neu.
+            </p>
+          </div>
+        </section>
+
         {/* Safety Section */}
         <section className="bg-base-200 py-16">
           <div className="max-w-screen-lg mx-auto px-4">
@@ -374,7 +465,7 @@ function KaloriendefizitPage({ config }: Props) {
                   <h3 className="card-title">Obere Grenze</h3>
                   <p className="opacity-80">
                     750 kcal Defizit ist für kurze Phasen vertretbar (z.B. 4-8 Wochen). Achte auf
-                    genug Protein und Mikro-nährstoffe.
+                    genug Protein und Mikronährstoffe.
                   </p>
                 </div>
               </div>
@@ -384,8 +475,8 @@ function KaloriendefizitPage({ config }: Props) {
                   <div className="text-4xl text-error mb-2">1000+</div>
                   <h3 className="card-title">Vorsicht</h3>
                   <p className="opacity-80">
-                    Defizite über 1000 kcal können zu Muskelabbau, Nährstoffmangel und Jo-Jo
-                    Effekt führen. Nur unter ärztlicher Aufsicht.
+                    Defizite über 1000 kcal können zu Muskelabbau, Nährstoffmangel und Jo-Jo-Effekt
+                    führen. Nur unter ärztlicher Aufsicht.
                   </p>
                 </div>
               </div>
@@ -414,7 +505,7 @@ function KaloriendefizitPage({ config }: Props) {
                 {
                   mistake: "Zu wenig Protein essen",
                   solution:
-                    "1,6-2,2g Protein pro kg Körpergewicht schuetzt Muskelmasse im Defizit.",
+                    "1,6-2,2g Protein pro kg Körpergewicht schützt Muskelmasse im Defizit.",
                 },
                 {
                   mistake: "Keine Geduld haben",
@@ -450,12 +541,57 @@ function KaloriendefizitPage({ config }: Props) {
           </div>
         </section>
 
+        {/* FAQ: dieselben Fragen stehen im FAQPage-Schema der Seite */}
+        <section className="py-16 bg-base-200" id="faq">
+          <div className="max-w-3xl mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold mb-6">
+              Häufige Fragen zum Kaloriendefizit
+            </h2>
+            <div className="space-y-3">
+              {kaloriendefizitFaq.map((item) => (
+                <details key={item.question} className="rounded-xl bg-base-100 p-4">
+                  <summary className="cursor-pointer text-lg font-semibold">{item.question}</summary>
+                  <p className="mt-3 opacity-80">{item.answer}</p>
+                  {item.link && (
+                    <p className="mt-2 text-sm">
+                      Mehr dazu:{" "}
+                      <a href={item.link.href} className="link link-primary">
+                        {item.link.label}
+                      </a>
+                    </p>
+                  )}
+                </details>
+              ))}
+            </div>
+
+            <h2 className="text-xl font-bold mt-12 mb-3">Quellen</h2>
+            <ul className="list-disc pl-6 space-y-2 text-sm opacity-80">
+              {kaloriendefizitQuellen.map((quelle) => (
+                <li key={quelle.url}>
+                  <a
+                    href={quelle.url}
+                    className="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {quelle.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+            <p className="text-sm opacity-60 mt-6">
+              Der Rechner liefert eine Schätzung und ersetzt keine ärztliche oder
+              ernährungstherapeutische Beratung.
+            </p>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="bg-primary text-primary-content py-16">
           <div className="max-w-screen-lg mx-auto px-4 text-center">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Starte dein Defizit mit Mahlzait</h2>
             <p className="opacity-90 max-w-xl mx-auto mb-8">
-              Setze dein Kalorienziel in der App und tracke mühleos. Mit KI-Logging loggst du
+              Setze dein Kalorienziel in der App und tracke mühelos. Mit KI-Logging loggst du
               Mahlzeiten in Sekunden - per Foto oder Text.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
