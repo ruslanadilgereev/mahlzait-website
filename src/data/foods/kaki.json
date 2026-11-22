@@ -79,29 +79,59 @@
       "protein": 0,
       "carbs": 22,
       "fat": 0,
-      "tip": "Getrocknet sehr zuckerreich"
+      "tip": "Getrocknet sehr zuckerreich",
+      "basis": [
+        {
+          "fdcId": 169942,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Apfel (180g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Banane (120g)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Mango (200g)",
       "calories": 120,
-      "emoji": "🥭"
+      "emoji": "🥭",
+      "basis": [
+        {
+          "slug": "mango",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Weintrauben (150g)",
       "calories": 104,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "slug": "weintrauben",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [

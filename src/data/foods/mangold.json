@@ -52,7 +52,13 @@
       "protein": 3.8,
       "carbs": 8.3,
       "fat": 0.2,
-      "tip": "Gedünstet, abgetropft"
+      "tip": "Gedünstet, abgetropft",
+      "basis": [
+        {
+          "fdcId": 170401,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Mangold-Blatt (30g)",
@@ -77,29 +83,63 @@
       "protein": 3.8,
       "carbs": 8.3,
       "fat": 10.2,
-      "tip": "Mit 10g Olivenöl angebraten"
+      "tip": "Mit 10g Olivenöl angebraten",
+      "basis": [
+        {
+          "fdcId": 170401,
+          "g": 200
+        },
+        {
+          "fdcId": 171413,
+          "g": 10
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Spinat (150g)",
       "calories": 35,
-      "emoji": "🥬"
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "spinat",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Grünkohl (150g)",
-      "calories": 74,
-      "emoji": "🥬"
+      "calories": 54,
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "gruenkohl",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Brokkoli (150g)",
       "calories": 51,
-      "emoji": "🥦"
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Karotten (150g)",
       "calories": 62,
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [

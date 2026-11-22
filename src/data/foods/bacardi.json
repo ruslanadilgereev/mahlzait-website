@@ -3,7 +3,7 @@
   "name": "Bacardi",
   "emoji": "🥃",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 2710703 (Rum: 231 kcal), Werte je 100 g; je 100 ml mit 0,947 g/ml (FDC-Portion 1 fl oz = 28,0 g) 219 kcal; allgemeiner FDC-Eintrag, FDC führt Bacardi nicht",
+  "source": "USDA FoodData Central, FDC-ID 2710703 (Rum: 231 kcal), Werte je 100 g; je 100 ml mit 0,947 g/ml 219 kcal",
   "seo": {
     "title": "Bacardi Kalorien: Nährwerte & Drinks | Mahlzait",
     "description": "Wie viele Kalorien hat Bacardi? Ein Schnapsglas (4cl) hat ca. 88 kcal. Nährwerte pro 100ml, je Glas & im Drink-Vergleich.",
@@ -18,18 +18,18 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 220,
+    "calories_per_100g": 231,
     "protein_per_100g": 0,
     "carbs_per_100g": 0,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 40,
+    "typical_portion_g": 38,
     "typical_portion_name": "1 Schnapsglas (4cl)"
   },
   "variants": [
     {
       "name": "Kurzer (2cl)",
-      "portion_g": 20,
+      "portion_g": 19,
       "calories": 44,
       "protein": 0,
       "carbs": 0,
@@ -37,7 +37,7 @@
     },
     {
       "name": "Schnapsglas (4cl)",
-      "portion_g": 40,
+      "portion_g": 38,
       "calories": 88,
       "protein": 0,
       "carbs": 0,
@@ -46,42 +46,68 @@
     },
     {
       "name": "Doppelter (5cl)",
-      "portion_g": 50,
-      "calories": 110,
+      "portion_g": 47,
+      "calories": 109,
       "protein": 0,
       "carbs": 0,
       "fat": 0
     },
     {
       "name": "Bacardi-Cola (4cl + 0,2l Cola)",
-      "portion_g": 240,
+      "portion_g": 238,
       "calories": 172,
       "protein": 0,
       "carbs": 21,
-      "fat": 0,
-      "tip": "Kalorien stecken in der Cola"
+      "fat": 1,
+      "tip": "Kalorien stecken in der Cola",
+      "basis": [
+        {
+          "ml": 40,
+          "g": 38
+        },
+        {
+          "slug": "cola",
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Bacardi-Cola light (4cl + 0,2l Cola Zero)",
-      "portion_g": 240,
-      "calories": 89,
+      "portion_g": 238,
+      "calories": 88,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
-      "tip": "Spart ca. 83 kcal pro Glas"
+      "tip": "Spart ca. 84 kcal pro Glas",
+      "basis": [
+        {
+          "ml": 40,
+          "g": 38
+        },
+        {
+          "slug": "cola-zero",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Mojito (1 Cocktail)",
-      "portion_g": 240,
-      "calories": 218,
+      "name": "Mojito (1 Glas, 250ml)",
+      "portion_g": 254,
+      "calories": 155,
       "protein": 0,
-      "carbs": 24,
-      "fat": 0
+      "carbs": 6,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "mojito"
+        }
+      ]
     },
     {
       "name": "Flasche (0,7l)",
-      "portion_g": 700,
-      "calories": 1540,
+      "portion_g": 663,
+      "calories": 1532,
       "protein": 0,
       "carbs": 0,
       "fat": 0
@@ -91,22 +117,42 @@
     {
       "name": "Wodka (4cl)",
       "calories": 88,
-      "emoji": "🍸"
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "wodka"
+        }
+      ]
     },
     {
       "name": "Gin (4cl)",
       "calories": 88,
-      "emoji": "🍸"
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin"
+        }
+      ]
     },
     {
       "name": "Tequila (4cl)",
-      "calories": 84,
-      "emoji": "🥃"
+      "calories": 88,
+      "emoji": "🥃",
+      "basis": [
+        {
+          "slug": "tequila"
+        }
+      ]
     },
     {
-      "name": "Baileys (4cl)",
-      "calories": 130,
-      "emoji": "🥛"
+      "name": "Baileys (3,5cl)",
+      "calories": 110,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "baileys"
+        }
+      ]
     }
   ],
   "tips": [
@@ -122,12 +168,12 @@
     },
     {
       "title": "Mit Cola Zero sparen",
-      "text": "Wer Bacardi mit Cola Zero statt normaler Cola mischt, spart pro Glas rund 83 kcal, ohne auf den Geschmack des Drinks zu verzichten.",
+      "text": "Wer Bacardi mit Cola Zero statt normaler Cola mischt, spart pro Glas rund 84 kcal, ohne auf den Geschmack des Drinks zu verzichten.",
       "icon": "✅"
     },
     {
       "title": "Cocktails unterschätzt man leicht",
-      "text": "Ein Mojito kommt durch Zucker und Limonade auf gut 218 kcal. Mehrere Drinks am Abend summieren sich schnell auf mehrere hundert Kalorien.",
+      "text": "Ein Mojito (250ml) kommt durch Zucker und Limonade auf rund 155 kcal. Mehrere Drinks am Abend summieren sich schnell auf mehrere hundert Kalorien.",
       "icon": "🍹"
     },
     {
@@ -139,11 +185,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Bacardi?",
-      "answer": "Ein Schnapsglas Bacardi (4cl) hat ca. 88 kcal. Pro 100ml sind es rund 220 kcal. Die Energie stammt komplett aus dem Alkohol."
+      "answer": "Ein Schnapsglas Bacardi (4cl) hat ca. 88 kcal. Pro 100ml sind es rund 219 kcal. Die Energie stammt komplett aus dem Alkohol."
     },
     {
       "question": "Wie viele Kalorien hat ein Schnapsglas Bacardi?",
-      "answer": "Ein klassisches Schnapsglas mit 4cl Bacardi enthält etwa 88 kcal, ein doppelter (5cl) rund 110 kcal."
+      "answer": "Ein klassisches Schnapsglas mit 4cl Bacardi enthält etwa 88 kcal, ein doppelter (5cl) rund 109 kcal."
     },
     {
       "question": "Hat Bacardi Kohlenhydrate oder Zucker?",
@@ -155,7 +201,7 @@
     },
     {
       "question": "Wie viele Kalorien hat Bacardi-Cola?",
-      "answer": "Ein Glas Bacardi-Cola (4cl Bacardi + 0,2l Cola) hat etwa 172 kcal. Mit Cola Zero sind es nur rund 89 kcal."
+      "answer": "Ein Glas Bacardi-Cola (4cl Bacardi + 0,2l Cola) hat etwa 172 kcal. Mit Cola Zero sind es nur rund 88 kcal."
     },
     {
       "question": "Ist Bacardi zum Abnehmen geeignet?",

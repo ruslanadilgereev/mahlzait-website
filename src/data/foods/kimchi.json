@@ -79,33 +79,66 @@
     {
       "name": "Kimchi gebraten in Öl (150g)",
       "portion_g": 150,
-      "calories": 110,
-      "protein": 1.8,
-      "carbs": 3.8,
-      "fat": 9.5,
-      "tip": "Mit Öl angebraten – deutlich mehr Fett"
+      "calories": 109,
+      "protein": 1.5,
+      "carbs": 3.4,
+      "fat": 10.7,
+      "tip": "Mit Öl angebraten, deutlich mehr Fett",
+      "basis": [
+        {
+          "g": 140
+        },
+        {
+          "fdcId": 172336,
+          "g": 10
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Sauerkraut (100g)",
       "calories": 19,
-      "emoji": "🥬"
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "sauerkraut",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Gurke (100g)",
-      "calories": 12,
-      "emoji": "🥒"
+      "calories": 15,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "gurke",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Tomate (100g)",
       "calories": 18,
-      "emoji": "🍅"
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "tomate",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Karotten (100g)",
       "calories": 41,
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -158,7 +191,7 @@
     },
     {
       "question": "Hat gekochtes oder gebratenes Kimchi mehr Kalorien?",
-      "answer": "Ja. Rohes Kimchi hat kaum Kalorien. Wird es in Öl angebraten, steigt der Kaloriengehalt durch das Fett deutlich – 150g gebratenes Kimchi können rund 110 kcal haben."
+      "answer": "Ja. Rohes Kimchi hat kaum Kalorien. Wird es in Öl angebraten, steigt der Kaloriengehalt durch das Fett deutlich: 150g gebratenes Kimchi (140g Kimchi und 10g Öl) haben rund 109 kcal."
     }
   ],
   "related_foods": [

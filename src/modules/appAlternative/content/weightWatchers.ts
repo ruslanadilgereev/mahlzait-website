@@ -70,9 +70,8 @@ export const weightWatchersAlternative: AlternativePageContent = {
       table: {
         head: ["Lebensmittel", "Energie", "Im Punktesystem"],
         rows: [
-          ["Magerquark, 250 g", "≈ 170 kcal", "bei WW meist 0 Punkte"],
-          ["Banane, mittelgroß", "≈ 90 kcal", "bei WW meist 0 Punkte"],
-          ["Hähnchenbrust, 150 g", "≈ 165 kcal", "bei WW meist 0 Punkte"],
+          ["Banane, mittelgroß", "≈ 107 kcal", "bei WW meist 0 Punkte"],
+          ["Hähnchenbrust, 150 g", "≈ 248 kcal", "bei WW meist 0 Punkte"],
           ["Olivenöl, 1 EL", "≈ 90 kcal", "bei WW punktepflichtig"],
         ],
         note: "Richtwerte zur Veranschaulichung. Welche Lebensmittel bei WW wie viele Punkte kosten, hängt vom jeweiligen Programm und deinem Plan ab.",
@@ -149,7 +148,7 @@ export const weightWatchersAlternative: AlternativePageContent = {
     },
     {
       q: "Wie viele Kalorien haben WW-Nullpunkte-Lebensmittel?",
-      a: "Null Punkte bedeutet nicht null Kalorien. Das Punktesystem gewichtet Zucker und gesättigtes Fett hoch, Protein und Ballaststoffe niedrig, und stellt proteinreiche Lebensmittel deshalb auf null Punkte. 250 Gramm Magerquark liefern rund 170 Kilokalorien, eine mittelgroße Banane etwa 90, 150 Gramm Hähnchenbrust rund 165. Beim Wechsel auf Kalorienzählen werden diese Mengen sichtbar, was die häufigste Überraschung nach einem WW-Ausstieg ist.",
+      a: "Null Punkte bedeutet nicht null Kalorien. Das Punktesystem gewichtet Zucker und gesättigtes Fett hoch, Protein und Ballaststoffe niedrig, und stellt proteinreiche Lebensmittel deshalb auf null Punkte. Eine mittelgroße Banane liefert etwa 107 Kilokalorien, 150 Gramm Hähnchenbrust rund 248. Beim Wechsel auf Kalorienzählen werden diese Mengen sichtbar, was die häufigste Überraschung nach einem WW-Ausstieg ist.",
     },
     {
       q: "Kann ich nach WeightWatchers einfach Kalorien zählen?",

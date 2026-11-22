@@ -48,10 +48,16 @@
       "name": "1 Medjool-Dattel (24g)",
       "portion_g": 24,
       "calories": 66,
-      "protein": 1,
+      "protein": 0,
       "carbs": 18,
       "fat": 0,
-      "tip": "Große, fleischige Sorte"
+      "tip": "Große, fleischige Sorte",
+      "basis": [
+        {
+          "fdcId": 168191,
+          "g": 24
+        }
+      ]
     },
     {
       "name": "Handvoll Datteln (40g)",
@@ -82,23 +88,47 @@
   "comparison": [
     {
       "name": "Feigen getrocknet (100g)",
-      "calories": 250,
-      "emoji": "🟤"
+      "calories": 249,
+      "emoji": "🟤",
+      "basis": [
+        {
+          "fdcId": 174665,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Rosinen (100g)",
       "calories": 299,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "fdcId": 168165,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Banane (100g)",
       "calories": 89,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Honig (100g)",
       "calories": 304,
-      "emoji": "🍯"
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

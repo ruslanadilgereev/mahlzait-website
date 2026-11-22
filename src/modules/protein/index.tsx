@@ -104,30 +104,27 @@ function ProteinBedarfRechnerPage({ config }: Props) {
   const proteinSources = [
     // Fleisch & Geflügel
     { name: "Hähnchenbrust (gekocht)", protein: 31, kcal: 165, serving: "100g", type: "tierisch" },
-    { name: "Putenbrust", protein: 29, kcal: 135, serving: "100g", type: "tierisch" },
-    { name: "Rinderfilet (mager)", protein: 28, kcal: 175, serving: "100g", type: "tierisch" },
-    { name: "Schweinefilet", protein: 27, kcal: 145, serving: "100g", type: "tierisch" },
-    { name: "Hackfleisch (mager)", protein: 21, kcal: 175, serving: "100g", type: "tierisch" },
+    { name: "Putenbrust", protein: 23, kcal: 114, serving: "100g", type: "tierisch" },
+    { name: "Rinderfilet (mager)", protein: 22, kcal: 139, serving: "100g", type: "tierisch" },
+    { name: "Schweinefilet", protein: 21, kcal: 120, serving: "100g", type: "tierisch" },
+    { name: "Hackfleisch (mager)", protein: 20, kcal: 176, serving: "100g", type: "tierisch" },
     // Fisch & Meeresfrüchte
-    { name: "Lachs", protein: 25, kcal: 208, serving: "100g", type: "tierisch" },
-    { name: "Thunfisch (Dose, in Wasser)", protein: 26, kcal: 116, serving: "100g", type: "tierisch" },
+    { name: "Lachs", protein: 20, kcal: 208, serving: "100g", type: "tierisch" },
+    { name: "Thunfisch (Dose, in Wasser)", protein: 19, kcal: 86, serving: "100g", type: "tierisch" },
     { name: "Garnelen", protein: 24, kcal: 99, serving: "100g", type: "tierisch" },
-    { name: "Forelle", protein: 23, kcal: 119, serving: "100g", type: "tierisch" },
+    { name: "Forelle", protein: 20, kcal: 141, serving: "100g", type: "tierisch" },
     // Milchprodukte
-    { name: "Magerquark", protein: 12, kcal: 67, serving: "100g", type: "tierisch" },
-    { name: "Skyr", protein: 11, kcal: 63, serving: "100g", type: "tierisch" },
-    { name: "Griechischer Joghurt", protein: 10, kcal: 97, serving: "100g", type: "tierisch" },
-    { name: "Hüttenkäse", protein: 11, kcal: 72, serving: "100g", type: "tierisch" },
-    { name: "Harzer Käse", protein: 30, kcal: 125, serving: "100g", type: "tierisch" },
-    { name: "Parmesan", protein: 35, kcal: 392, serving: "100g", type: "tierisch" },
-    { name: "Eier", protein: 13, kcal: 155, serving: "2 Stück", type: "tierisch" },
+    { name: "Griechischer Joghurt", protein: 9, kcal: 97, serving: "100g", type: "tierisch" },
+    { name: "Hüttenkäse", protein: 11, kcal: 98, serving: "100g", type: "tierisch" },
+    { name: "Parmesan", protein: 36, kcal: 392, serving: "100g", type: "tierisch" },
+    { name: "Eier", protein: 15, kcal: 186, serving: "2 Stück", type: "tierisch" },
     // Pflanzliche Quellen
-    { name: "Seitan", protein: 75, kcal: 370, serving: "100g", type: "pflanzlich" },
-    { name: "Tofu", protein: 15, kcal: 144, serving: "100g", type: "pflanzlich" },
-    { name: "Tempeh", protein: 19, kcal: 192, serving: "100g", type: "pflanzlich" },
-    { name: "Edamame", protein: 11, kcal: 122, serving: "100g", type: "pflanzlich" },
+    { name: "Seitan", protein: 30, kcal: 148, serving: "100g", type: "pflanzlich" },
+    { name: "Tofu", protein: 17, kcal: 144, serving: "100g", type: "pflanzlich" },
+    { name: "Tempeh", protein: 20, kcal: 192, serving: "100g", type: "pflanzlich" },
+    { name: "Edamame", protein: 12, kcal: 121, serving: "100g", type: "pflanzlich" },
     { name: "Linsen (gekocht)", protein: 9, kcal: 116, serving: "100g", type: "pflanzlich" },
-    { name: "Kichererbsen (gekocht)", protein: 8, kcal: 164, serving: "100g", type: "pflanzlich" },
+    { name: "Kichererbsen (gekocht)", protein: 9, kcal: 164, serving: "100g", type: "pflanzlich" },
     { name: "Schwarze Bohnen (gekocht)", protein: 9, kcal: 132, serving: "100g", type: "pflanzlich" },
     { name: "Kürbiskerne", protein: 30, kcal: 559, serving: "100g", type: "pflanzlich" },
     { name: "Hanfsamen", protein: 31, kcal: 553, serving: "100g", type: "pflanzlich" },
@@ -144,10 +141,10 @@ function ProteinBedarfRechnerPage({ config }: Props) {
 
   const exampleMealPlan = [
     { meal: "Frühstück", foods: "150g Magerquark + 30g Haferflocken + Beeren", protein: 22 },
-    { meal: "Snack", foods: "2 gekochte Eier", protein: 13 },
+    { meal: "Snack", foods: "2 gekochte Eier", protein: 15 },
     { meal: "Mittagessen", foods: "150g Hähnchenbrust + Reis + Gemüse", protein: 46 },
-    { meal: "Nachmittag", foods: "200g Griechischer Joghurt", protein: 20 },
-    { meal: "Abendessen", foods: "150g Lachs + Kartoffeln + Salat", protein: 38 },
+    { meal: "Nachmittag", foods: "200g Griechischer Joghurt", protein: 18 },
+    { meal: "Abendessen", foods: "150g Lachs + Kartoffeln + Salat", protein: 31 },
   ];
 
   const totalMealPlanProtein = exampleMealPlan.reduce((acc, meal) => acc + meal.protein, 0);
@@ -159,11 +156,11 @@ function ProteinBedarfRechnerPage({ config }: Props) {
       icon: "💪",
       weight: "80kg Sportler",
       meals: [
-        { meal: "Frühstück", foods: "4 Eier Rührei + 2 Scheiben Vollkornbrot + Käse", protein: 35 },
-        { meal: "Post-Workout", foods: "Protein-Shake (30g Whey) + Banane", protein: 30 },
+        { meal: "Frühstück", foods: "4 Eier Rührei + 2 Scheiben Vollkornbrot + Käse", protein: 39 },
+        { meal: "Post-Workout", foods: "Protein-Shake (30g Whey) + Banane", protein: 25 },
         { meal: "Mittagessen", foods: "200g Hähnchenbrust + 200g Reis + Brokkoli", protein: 62 },
         { meal: "Snack", foods: "250g Magerquark + Früchte", protein: 30 },
-        { meal: "Abendessen", foods: "200g Rinderfilet + Süsskartoffel + Salat", protein: 56 },
+        { meal: "Abendessen", foods: "200g Rinderfilet + Süsskartoffel + Salat", protein: 44 },
       ],
     },
     abnehmen: {
@@ -172,7 +169,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
       weight: "70kg, Kaloriendefizit",
       meals: [
         { meal: "Frühstück", foods: "200g Skyr + 30g Haferflocken + Beeren", protein: 25 },
-        { meal: "Mittagessen", foods: "150g Putenbrust + grosser Salat + Olivenöl", protein: 44 },
+        { meal: "Mittagessen", foods: "150g Putenbrust + grosser Salat + Olivenöl", protein: 35 },
         { meal: "Snack", foods: "100g Harzer Käse + Gurke", protein: 30 },
         { meal: "Abendessen", foods: "150g Garnelen + Zucchini-Nudeln + Tomaten", protein: 36 },
       ],
@@ -182,8 +179,8 @@ function ProteinBedarfRechnerPage({ config }: Props) {
       icon: "🌱",
       weight: "65kg Veganer",
       meals: [
-        { meal: "Frühstück", foods: "Tofu-Scramble (150g) + Vollkornbrot + Hummus", protein: 26 },
-        { meal: "Mittagessen", foods: "150g Tempeh + Quinoa + Edamame", protein: 38 },
+        { meal: "Frühstück", foods: "Tofu-Scramble (150g) + Vollkornbrot + Hummus", protein: 29 },
+        { meal: "Mittagessen", foods: "150g Tempeh + Quinoa + Edamame", protein: 40 },
         { meal: "Snack", foods: "Handvoll Kürbiskerne + Sojajoghurt", protein: 18 },
         { meal: "Abendessen", foods: "Linsen-Curry (200g Linsen) + Reis", protein: 24 },
       ],

@@ -70,7 +70,7 @@ Der effektivste Schritt ist das Meiden hochverarbeiteter Lebensmittel. Indem du 
 
 ### 2. Eiweiß priorisieren (Den anabolen Schalter nutzen)
 Um den mTORC1-Komplex zu aktivieren und die Leucin-Schwelle zu knacken, solltest du jede Mahlzeit um eine Proteinquelle herum aufbauen.
-**Die Praxis-Regel:** Ziel sind mindestens **30 Gramm Eiweiß pro Hauptmahlzeit**. Das entspricht etwa 150g [Hähnchen](/kalorien/haehnchenbrust/), 200g [Magerquark](/kalorien/magerquark/) oder 3 [Eiern](/kalorien/ei/). Das sorgt nicht nur für Muskelschutz, sondern sättigt laut der "Protein-Leverage-Hypothese" auch am besten.
+**Die Praxis-Regel:** Ziel sind mindestens **30 Gramm Eiweiß pro Hauptmahlzeit**. Das entspricht etwa 100g [Hähnchen](/kalorien/haehnchenbrust/) oder 4 [Eiern](/kalorien/ei/). Das sorgt nicht nur für Muskelschutz, sondern sättigt laut der "Protein-Leverage-Hypothese" auch am besten.
 
 ### 3. Kohlenhydrate verdienen (Insulin managen)
 Nutze das Wissen um den Randle-Zyklus. Dein Körper kann Kohlenhydrate nur dann effizient verbrennen, wenn die Speicher leer sind.

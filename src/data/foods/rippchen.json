@@ -19,9 +19,9 @@
   },
   "overview": {
     "calories_per_100g": 397,
-    "protein_per_100g": 29,
+    "protein_per_100g": 29.1,
     "carbs_per_100g": 0,
-    "fat_per_100g": 30,
+    "fat_per_100g": 30.3,
     "fiber_per_100g": 0,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion Spareribs (essbarer Anteil)"
@@ -42,7 +42,7 @@
       "calories": 993,
       "protein": 73,
       "carbs": 0,
-      "fat": 75,
+      "fat": 76,
       "tip": "Standard-Restaurantportion"
     },
     {
@@ -51,64 +51,115 @@
       "calories": 1390,
       "protein": 102,
       "carbs": 0,
-      "fat": 105
+      "fat": 106
     },
     {
       "name": "Spareribs mit BBQ-Sauce (350g)",
       "portion_g": 350,
-      "calories": 1140,
-      "protein": 75,
-      "carbs": 30,
-      "fat": 76,
-      "tip": "Sauce bringt zusätzliche Kohlenhydrate"
+      "calories": 1277,
+      "protein": 88,
+      "carbs": 20,
+      "fat": 91,
+      "tip": "300 g Rippchen mit 50 g Sauce",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 174523,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Kasseler Rippchen gegart (100g)",
       "portion_g": 100,
-      "calories": 160,
-      "protein": 22,
-      "carbs": 0,
-      "fat": 8,
-      "tip": "Gepökelt, deutlich magerer"
+      "calories": 146,
+      "protein": 28,
+      "carbs": 2,
+      "fat": 3,
+      "tip": "Gepökelt, deutlich magerer",
+      "basis": [
+        {
+          "fdcId": 168383,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kasseler Rippchen Portion (200g)",
       "portion_g": 200,
-      "calories": 320,
-      "protein": 44,
-      "carbs": 0,
-      "fat": 16
+      "calories": 292,
+      "protein": 57,
+      "carbs": 4,
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 168383,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Schälrippchen roh (100g)",
       "portion_g": 100,
-      "calories": 294,
-      "protein": 24,
+      "calories": 277,
+      "protein": 15,
       "carbs": 0,
-      "fat": 21,
-      "tip": "Vor dem Garen"
+      "fat": 23,
+      "tip": "Vor dem Garen",
+      "basis": [
+        {
+          "fdcId": 167853,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Kasseler Rippchen (100g)",
-      "calories": 160,
-      "emoji": "🍖"
+      "calories": 146,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "fdcId": 168383,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Schnitzel paniert (100g)",
-      "calories": 290,
-      "emoji": "🍳"
+      "calories": 238,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "schnitzel",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust (100g)",
       "calories": 165,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Bratwurst (100g)",
       "calories": 333,
-      "emoji": "🌭"
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -119,12 +170,12 @@
     },
     {
       "title": "Kasseler als magere Alternative",
-      "text": "Kasseler Rippchen sind gepökelt und deutlich magerer: rund 160 kcal pro 100g statt 397 kcal bei klassischen Spareribs. Dafür enthalten sie mehr Salz.",
+      "text": "Kasseler Rippchen sind gepökelt und deutlich magerer: rund 146 kcal pro 100g statt 397 kcal bei klassischen Spareribs. Dafür enthalten sie mehr Salz.",
       "icon": "🥩"
     },
     {
       "title": "Vorsicht bei BBQ-Sauce",
-      "text": "Klassische Barbecue-Sauce ist sehr zuckerhaltig. Pro Portion kommen schnell 100 bis 150 kcal und 25 bis 30g Kohlenhydrate hinzu. Sparsam glasieren spart Kalorien.",
+      "text": "Klassische Barbecue-Sauce ist sehr zuckerhaltig. Schon 50g Sauce bringen rund 86 kcal und 20g Kohlenhydrate. Sparsam glasieren spart Kalorien.",
       "icon": "🍯"
     },
     {
@@ -157,11 +208,11 @@
     },
     {
       "question": "Sind Rippchen zum Abnehmen geeignet?",
-      "answer": "Klassische Spareribs sind mit rund 397 kcal pro 100g sehr fett- und kalorienreich und in einer Diät nur in Maßen sinnvoll. Kasseler Rippchen mit etwa 160 kcal pro 100g sind die deutlich schlankere Wahl."
+      "answer": "Klassische Spareribs sind mit rund 397 kcal pro 100g sehr fett- und kalorienreich und in einer Diät nur in Maßen sinnvoll. Kasseler Rippchen mit etwa 146 kcal pro 100g sind die deutlich schlankere Wahl."
     },
     {
       "question": "Was ist der Unterschied zwischen Spareribs und Kasseler Rippchen?",
-      "answer": "Spareribs sind frische, oft gegrillte Schweinerippchen mit hohem Fettanteil (ca. 397 kcal/100g). Kasseler Rippchen sind gepökelt und geräuchert, magerer (ca. 160 kcal/100g), aber salzreicher."
+      "answer": "Spareribs sind frische, oft gegrillte Schweinerippchen mit hohem Fettanteil (ca. 397 kcal/100g). Kasseler Rippchen sind gepökelt und geräuchert, magerer (ca. 146 kcal/100g), aber salzreicher."
     }
   ],
   "related_foods": [

@@ -3,7 +3,7 @@
   "name": "Kohl",
   "emoji": "🥬",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 169975 (Cabbage, raw = roher Weißkohl/Kopfkohl), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 169975 (Cabbage, raw), Werte je 100 g",
   "seo": {
     "title": "Kohl & Weißkohl Kalorien: 25 kcal pro 100g | Mahlzait",
     "description": "Weißkohl hat roh nur 25 kcal pro 100g. Nährwerte für Kohl & Weißkohl, Portionen & Sorten im Vergleich plus Tipps zum Abnehmen.",
@@ -29,7 +29,7 @@
     "fat_per_100g": 0.1,
     "fiber_per_100g": 2.5,
     "typical_portion_g": 200,
-    "typical_portion_name": "1 Portion (gekocht, 200g)"
+    "typical_portion_name": "1 Portion (200g)"
   },
   "variants": [
     {
@@ -44,7 +44,7 @@
     {
       "name": "Tasse roh, geschnitten (90g)",
       "portion_g": 90,
-      "calories": 22,
+      "calories": 23,
       "protein": 1.2,
       "carbs": 5.2,
       "fat": 0.1
@@ -52,19 +52,31 @@
     {
       "name": "Portion gekocht (200g)",
       "portion_g": 200,
-      "calories": 50,
-      "protein": 2.6,
-      "carbs": 11.6,
-      "fat": 0.2,
-      "tip": "Standardportion"
+      "calories": 46,
+      "protein": 2.5,
+      "carbs": 11,
+      "fat": 0.1,
+      "tip": "Standardportion",
+      "basis": [
+        {
+          "fdcId": 169976,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Beilage gedünstet (150g)",
       "portion_g": 150,
-      "calories": 38,
-      "protein": 2,
-      "carbs": 8.7,
-      "fat": 0.2
+      "calories": 35,
+      "protein": 1.9,
+      "carbs": 8.3,
+      "fat": 0.1,
+      "basis": [
+        {
+          "fdcId": 169976,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Halber Kopf (500g)",
@@ -87,22 +99,46 @@
     {
       "name": "Brokkoli (100g)",
       "calories": 34,
-      "emoji": "🥦"
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Karotten (100g)",
       "calories": 41,
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Spinat (100g)",
       "calories": 23,
-      "emoji": "🥬"
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "spinat",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kartoffeln (100g)",
-      "calories": 77,
-      "emoji": "🥔"
+      "calories": 86,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -135,15 +171,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kohl?",
-      "answer": "Roher Kohl hat nur etwa 25 kcal pro 100g. Eine gekochte Portion von 200g liefert rund 50 kcal."
+      "answer": "Roher Kohl hat nur etwa 25 kcal pro 100g. Eine gekochte Portion von 200g liefert rund 46 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Weißkohl?",
-      "answer": "Weißkohl hat roh 25 kcal pro 100g (USDA-Wert für rohen Kopfkohl). Wer im Alltag von Kohl spricht, meint meist genau ihn: den klassischen weißen Kopfkohl. Alle Werte auf dieser Seite beziehen sich auf Weißkohl; Rotkohl liegt mit 31 kcal und Wirsing mit 27 kcal pro 100g nur knapp darüber."
+      "answer": "Weißkohl hat roh 25 kcal pro 100g (USDA-Wert für rohen Kopfkohl). Wer im Alltag von Kohl spricht, meint meist genau ihn: den klassischen weißen Kopfkohl. Alle Werte auf dieser Seite beziehen sich auf Weißkohl; Rotkohl und Wirsing liegen nur knapp darüber."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion gekochter Kohl?",
-      "answer": "Eine Standardportion von 200g gekochtem Kohl hat ca. 50 kcal, sofern ohne Fett zubereitet."
+      "answer": "Eine Standardportion von 200g gekochtem Kohl hat ca. 46 kcal, sofern ohne Fett zubereitet."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kohl?",

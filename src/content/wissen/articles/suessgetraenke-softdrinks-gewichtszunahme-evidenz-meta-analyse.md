@@ -38,11 +38,11 @@ Die Botschaft ist klar: Zucker ist nicht durch magische Stoffwechseltricks dick,
 
 Der entscheidende Mechanismus wurde in der eleganten Studie von DiMeglio und Mattes (2000) sichtbar. Teilnehmende erhielten über mehrere Wochen die gleiche Kalorienmenge entweder als feste Süßigkeit (Jelly Beans) oder als zuckerhaltiges Getränk. Das Ergebnis: Bei der festen Form passten die Menschen ihre übrige Nahrung weitgehend an und kompensierten die Extrakalorien. Bei der flüssigen Form kompensierten sie kaum – sie aßen genauso viel wie zuvor und nahmen in der Folge an Gewicht zu.
 
-Getrunkene Kalorien lösen also nur eine schwache Sättigungsreaktion aus. Eine 500-ml-Flasche Cola mit rund 53 g Zucker liefert etwa 210 kcal, ohne nennenswert satt zu machen – diese Kalorien kommen praktisch ungebremst zur Tagesbilanz hinzu.
+Getrunkene Kalorien lösen also nur eine schwache Sättigungsreaktion aus. Eine 500-ml-Flasche Cola mit rund 52 g Zucker liefert etwa 220 kcal, ohne nennenswert satt zu machen, diese Kalorien kommen praktisch ungebremst zur Tagesbilanz hinzu.
 
 ## Was heißt das praktisch?
 
-- **Größter Hebel zuerst:** Wer regelmäßig Softdrinks trinkt, hat hier oft den einfachsten Ansatzpunkt überhaupt. Eine tägliche 500-ml-Cola entspricht über ein Jahr rund 76.000 kcal – rein rechnerisch das Kalorienäquivalent von mehreren Kilogramm Körperfett.
+- **Größter Hebel zuerst:** Wer regelmäßig Softdrinks trinkt, hat hier oft den einfachsten Ansatzpunkt überhaupt. Eine tägliche 500-ml-Cola entspricht über ein Jahr rund 80.000 kcal, rein rechnerisch das Kalorienäquivalent von mehreren Kilogramm Körperfett.
 - **Auf Wasser oder ungesüßten Tee umsteigen:** Das ist die direkteste Maßnahme. Wie viel Sie trinken sollten, zeigt der [Wasserbedarf-Rechner](/wasserbedarf-rechner/).
 - **Säfte sind keine Ausnahme:** Auch 100-%-Fruchtsaft liefert flüssigen Zucker mit derselben schwachen Sättigung. Die ganze [Banane](/kalorien/banane/) oder den ganzen Apfel zu essen sättigt deutlich besser als das Glas Saft.
 - **Light-Getränke als Brücke:** Künstlich gesüßte Varianten liefern keine relevanten Kalorien und können beim Umstieg helfen – ideal ist langfristig der Wechsel zu Wasser.

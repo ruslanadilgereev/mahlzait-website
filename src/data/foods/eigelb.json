@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 172184 (Egg, yolk, raw, fresh), Werte je 100 g",
   "seo": {
     "title": "Eigelb Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Eigelb? Ein Eigelb (17g) hat ca. 54 kcal, 100g rund 317 kcal. Nährwerte, Eiweiß & Fett pro Portion plus Tipps.",
+    "description": "Wie viele Kalorien hat Eigelb? Ein Eigelb (17g) hat ca. 55 kcal, 100g rund 322 kcal. Nährwerte, Eiweiß & Fett pro Portion plus Tipps.",
     "keywords": [
       "eigelb kalorien",
       "eigelb kcal",
@@ -19,7 +19,7 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 317,
+    "calories_per_100g": 322,
     "protein_per_100g": 15.9,
     "carbs_per_100g": 3.6,
     "fat_per_100g": 26.5,
@@ -31,7 +31,7 @@
     {
       "name": "1 Eigelb (17g)",
       "portion_g": 17,
-      "calories": 54,
+      "calories": 55,
       "protein": 3,
       "carbs": 1,
       "fat": 5,
@@ -40,7 +40,7 @@
     {
       "name": "1 Eigelb groß (20g)",
       "portion_g": 20,
-      "calories": 63,
+      "calories": 64,
       "protein": 3,
       "carbs": 1,
       "fat": 5
@@ -48,7 +48,7 @@
     {
       "name": "2 Eigelb (34g)",
       "portion_g": 34,
-      "calories": 108,
+      "calories": 109,
       "protein": 5,
       "carbs": 1,
       "fat": 9
@@ -56,7 +56,7 @@
     {
       "name": "3 Eigelb (51g)",
       "portion_g": 51,
-      "calories": 162,
+      "calories": 164,
       "protein": 8,
       "carbs": 2,
       "fat": 14
@@ -64,7 +64,7 @@
     {
       "name": "Eigelb hartgekocht (17g)",
       "portion_g": 17,
-      "calories": 54,
+      "calories": 55,
       "protein": 3,
       "carbs": 1,
       "fat": 5,
@@ -77,12 +77,18 @@
       "protein": 3,
       "carbs": 0,
       "fat": 6,
-      "tip": "Konzentriert ohne Wasser"
+      "tip": "Konzentriert ohne Wasser",
+      "basis": [
+        {
+          "fdcId": 173428,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Eigelb pur (100g)",
       "portion_g": 100,
-      "calories": 317,
+      "calories": 322,
       "protein": 16,
       "carbs": 4,
       "fat": 27
@@ -90,30 +96,52 @@
   ],
   "comparison": [
     {
-      "name": "Eiklar (1 Stück)",
+      "name": "Eiklar (1 Stück, 33g)",
       "calories": 17,
-      "emoji": "🥚"
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "eiklar"
+        }
+      ]
     },
     {
-      "name": "Ei ganz (mittel)",
-      "calories": 78,
-      "emoji": "🥚"
+      "name": "Ei ganz (mittel, 60g)",
+      "calories": 93,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "ei"
+        }
+      ]
     },
     {
-      "name": "Butter (1 TL)",
-      "calories": 37,
-      "emoji": "🧈"
-    },
-    {
-      "name": "Frischkäse (1 EL)",
+      "name": "Butter (1 TL, 5g)",
       "calories": 36,
-      "emoji": "🧀"
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 5
+        }
+      ]
+    },
+    {
+      "name": "Frischkäse (1 EL, 15g)",
+      "calories": 38,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 15
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein, aber kalorienreich",
-      "text": "Ein einzelnes Eigelb hat nur etwa 54 kcal, ist aber durch den hohen Fettanteil deutlich energiereicher als das fast fettfreie Eiklar mit rund 17 kcal.",
+      "text": "Ein einzelnes Eigelb hat nur etwa 55 kcal, ist aber durch den hohen Fettanteil deutlich energiereicher als das fast fettfreie Eiklar mit rund 17 kcal.",
       "icon": "🥚"
     },
     {
@@ -123,7 +151,7 @@
     },
     {
       "title": "Beim Backen mitdenken",
-      "text": "Rezepte mit vielen Eigelben (z. B. Mayonnaise, Hollandaise, Crème brûlée) summieren sich schnell: 3 Eigelb bringen schon etwa 162 kcal nur aus dem Dotter.",
+      "text": "Rezepte mit vielen Eigelben (z. B. Mayonnaise, Hollandaise, Crème brûlée) summieren sich schnell: 3 Eigelb bringen schon etwa 164 kcal nur aus dem Dotter.",
       "icon": "🥄"
     },
     {
@@ -133,18 +161,18 @@
     },
     {
       "title": "Portionsgröße kennen",
-      "text": "Das Gewicht eines Eigelbs hängt von der Eigröße ab: meist 16 bis 20 g. Damit liegt ein Eigelb in der Regel zwischen 54 und 63 kcal.",
+      "text": "Das Gewicht eines Eigelbs hängt von der Eigröße ab: meist 16 bis 20 g. Damit liegt ein Eigelb in der Regel zwischen 52 und 64 kcal.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Eigelb?",
-      "answer": "Ein mittelgroßes Eigelb (ca. 17 g) hat etwa 54 kcal. Ein großes Eigelb (ca. 20 g) kommt auf rund 63 kcal."
+      "answer": "Ein mittelgroßes Eigelb (ca. 17 g) hat etwa 55 kcal. Ein großes Eigelb (ca. 20 g) kommt auf rund 64 kcal."
     },
     {
       "question": "Wie viele Kalorien hat 100g Eigelb?",
-      "answer": "100 g reines Eigelb haben etwa 317 kcal. Damit ist Eigelb deutlich kalorienreicher als das ganze Ei, weil das fettreiche Dotter ohne das wasserhaltige Eiklar gerechnet wird."
+      "answer": "100 g reines Eigelb haben etwa 322 kcal. Damit ist Eigelb deutlich kalorienreicher als das ganze Ei, weil das fettreiche Dotter ohne das wasserhaltige Eiklar gerechnet wird."
     },
     {
       "question": "Wie viel Eiweiß steckt im Eigelb?",
@@ -156,11 +184,11 @@
     },
     {
       "question": "Ist Eigelb zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Ein Eigelb hat nur etwa 54 kcal und liefert Eiweiß sowie Nährstoffe. Wegen des hohen Fettanteils sollte man bei strenger Kalorienreduktion die Menge im Blick behalten und ggf. mehr Eiklar nutzen."
+      "answer": "In Maßen ja. Ein Eigelb hat nur etwa 55 kcal und liefert Eiweiß sowie Nährstoffe. Wegen des hohen Fettanteils sollte man bei strenger Kalorienreduktion die Menge im Blick behalten und ggf. mehr Eiklar nutzen."
     },
     {
       "question": "Was ist kalorienreicher: Eigelb oder Eiklar?",
-      "answer": "Eigelb ist klar kalorienreicher. Ein Eigelb hat etwa 54 kcal, das Eiklar eines Eies nur rund 17 kcal, da das Eigelb das gesamte Fett des Eies enthält."
+      "answer": "Eigelb ist klar kalorienreicher. Ein Eigelb hat etwa 55 kcal, das Eiklar eines Eies nur rund 17 kcal, da das Eigelb das gesamte Fett des Eies enthält."
     }
   ],
   "related_foods": [

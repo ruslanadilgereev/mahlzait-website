@@ -6,8 +6,17 @@
   "source": "USDA FoodData Central, FDC-ID 171705 (Avocados, raw, all commercial varieties), Werte je 100 g",
   "seo": {
     "title": "Avocado Kalorien: 160 kcal/100g + Rechner & Varianten | Mahlzait",
-    "description": "Avocado hat 160 kcal pro 100g. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 7 Varianten & Spar-Tipps.",
-    "keywords": ["avocado kalorien", "kalorien avocado", "avocado nährwerte", "halbe avocado kalorien", "avocado fett", "avocado protein", "avocado gesund", "guacamole kalorien"]
+    "description": "Avocado hat 160 kcal pro 100g. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 5 Varianten & Spar-Tipps.",
+    "keywords": [
+      "avocado kalorien",
+      "kalorien avocado",
+      "avocado nährwerte",
+      "halbe avocado kalorien",
+      "avocado fett",
+      "avocado protein",
+      "avocado gesund",
+      "guacamole kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 160,
@@ -19,34 +28,164 @@
     "typical_portion_name": "½ Avocado"
   },
   "variants": [
-    { "name": "Halbe Avocado", "portion_g": 80, "calories": 128, "protein": 2, "carbs": 7, "fat": 12 },
-    { "name": "Ganze Avocado (mittel)", "portion_g": 160, "calories": 256, "protein": 3, "carbs": 14, "fat": 24 },
-    { "name": "Avocado auf Toast", "portion_g": 120, "calories": 310, "protein": 8, "carbs": 26, "fat": 18 },
-    { "name": "Guacamole (50g)", "portion_g": 50, "calories": 75, "protein": 1, "carbs": 4, "fat": 6, "tip": "Als Dip" },
-    { "name": "Avocado-Smoothie", "portion_g": 300, "calories": 280, "protein": 5, "carbs": 30, "fat": 15 },
-    { "name": "Avocado im Salat", "portion_g": 60, "calories": 96, "protein": 1, "carbs": 5, "fat": 9, "tip": "Leichteste Variante" },
-    { "name": "Avocado-Bowl", "portion_g": 200, "calories": 380, "protein": 12, "carbs": 32, "fat": 22 }
+    {
+      "name": "Halbe Avocado",
+      "portion_g": 80,
+      "calories": 128,
+      "protein": 2,
+      "carbs": 7,
+      "fat": 12
+    },
+    {
+      "name": "Ganze Avocado (mittel)",
+      "portion_g": 160,
+      "calories": 256,
+      "protein": 3,
+      "carbs": 14,
+      "fat": 24
+    },
+    {
+      "name": "Avocado auf Toast (80g + 1 Scheibe Toastbrot)",
+      "portion_g": 110,
+      "calories": 208,
+      "protein": 4,
+      "carbs": 22,
+      "fat": 13,
+      "basis": [
+        {
+          "g": 80
+        },
+        {
+          "slug": "toastbrot"
+        }
+      ]
+    },
+    {
+      "name": "Guacamole (50g)",
+      "portion_g": 50,
+      "calories": 78,
+      "protein": 1,
+      "carbs": 4,
+      "fat": 7,
+      "tip": "Als Dip",
+      "basis": [
+        {
+          "slug": "guacamole",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Avocado im Salat",
+      "portion_g": 60,
+      "calories": 96,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 9,
+      "tip": "Leichteste Variante"
+    }
   ],
   "comparison": [
-    { "name": "Banane", "calories": 107, "emoji": "🍌" },
-    { "name": "Olivenöl (1 EL)", "calories": 120, "emoji": "🫒" },
-    { "name": "Erdnussbutter (30g)", "calories": 180, "emoji": "🥜" },
-    { "name": "Lachs (100g)", "calories": 208, "emoji": "🐟" }
+    {
+      "name": "Banane (mittel, 120g)",
+      "calories": 107,
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane"
+        }
+      ]
+    },
+    {
+      "name": "Olivenöl (1 EL, 10g)",
+      "calories": 88,
+      "emoji": "🫒",
+      "basis": [
+        {
+          "slug": "olivenoel"
+        }
+      ]
+    },
+    {
+      "name": "Erdnussbutter (30g)",
+      "calories": 179,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnussbutter",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Lachs (100g)",
+      "calories": 208,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Halbe Avocado reicht", "text": "Eine halbe Avocado (128 kcal) hat genug gesunde Fette für eine Mahlzeit. Eine ganze hat schon 256 kcal.", "icon": "✂️" },
-    { "title": "Reifegrad prüfen", "text": "Drücke sanft am Stielende: Gibt die Avocado leicht nach, ist sie perfekt reif. Zu weich = überreif und oxidiert.", "icon": "👆" },
-    { "title": "Als Butterersatz nutzen", "text": "Avocado statt Butter aufs Brot spart gesättigtes Fett und liefert dafür Ballaststoffe und Vitamine.", "icon": "🧈" },
-    { "title": "Mit Zitrone frisch halten", "text": "Beträufle angeschnittene Avocado mit Zitronensaft – verhindert Bräunung und schmeckt besser.", "icon": "🍋" },
-    { "title": "Hervorragend für Keto", "text": "Mit nur 1,8g Netto-Kohlenhydrate pro 100g und viel Fett ist Avocado perfekt für die ketogene Ernährung.", "icon": "🥝" }
+    {
+      "title": "Halbe Avocado reicht",
+      "text": "Eine halbe Avocado (128 kcal) hat genug gesunde Fette für eine Mahlzeit. Eine ganze hat schon 256 kcal.",
+      "icon": "✂️"
+    },
+    {
+      "title": "Reifegrad prüfen",
+      "text": "Drücke sanft am Stielende: Gibt die Avocado leicht nach, ist sie perfekt reif. Zu weich = überreif und oxidiert.",
+      "icon": "👆"
+    },
+    {
+      "title": "Als Butterersatz nutzen",
+      "text": "Avocado statt Butter aufs Brot spart gesättigtes Fett und liefert dafür Ballaststoffe und Vitamine.",
+      "icon": "🧈"
+    },
+    {
+      "title": "Mit Zitrone frisch halten",
+      "text": "Beträufle angeschnittene Avocado mit Zitronensaft, das verhindert Bräunung und schmeckt besser.",
+      "icon": "🍋"
+    },
+    {
+      "title": "Hervorragend für Keto",
+      "text": "Mit nur 1,8g Netto-Kohlenhydrate pro 100g und viel Fett ist Avocado perfekt für die ketogene Ernährung.",
+      "icon": "🥝"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Avocado?", "answer": "Eine ganze mittelgroße Avocado (160g Fruchtfleisch) hat ca. 256 kcal. Eine halbe Avocado hat ca. 128 kcal." },
-    { "question": "Ist Avocado trotz hohem Fettgehalt gesund?", "answer": "Ja! Das Fett in Avocados besteht hauptsächlich aus einfach ungesättigten Fettsäuren (Ölsäure), die den Cholesterinspiegel positiv beeinflussen und das Herz schützen." },
-    { "question": "Kann man mit Avocado abnehmen?", "answer": "Ja, in Maßen. Die Kombination aus gesundem Fett und 6,7g Ballaststoffen pro 100g macht sehr satt. Eine halbe Avocado pro Tag passt gut in eine Diät." },
-    { "question": "Wie viele Kohlenhydrate hat eine Avocado?", "answer": "Eine halbe Avocado hat nur 7g Kohlenhydrate, davon 5g Ballaststoffe – also nur ca. 2g Netto-Carbs. Perfekt für Low Carb und Keto." },
-    { "question": "Wie viele Avocados pro Tag sind gesund?", "answer": "Eine halbe bis ganze Avocado pro Tag ist gesund. Mehr als eine ganze Avocado (256 kcal) kann die Kalorienaufnahme schnell in die Höhe treiben." },
-    { "question": "Wie viele Kalorien hat Guacamole?", "answer": "Selbstgemachte Guacamole hat ca. 150 kcal pro 100g. Ein typischer Dip (50g) hat ca. 75 kcal – deutlich besser als Mayonnaise (350 kcal/100g)." }
+    {
+      "question": "Wie viele Kalorien hat eine Avocado?",
+      "answer": "Eine ganze mittelgroße Avocado (160g Fruchtfleisch) hat ca. 256 kcal. Eine halbe Avocado hat ca. 128 kcal."
+    },
+    {
+      "question": "Ist Avocado trotz hohem Fettgehalt gesund?",
+      "answer": "Ja! Das Fett in Avocados besteht hauptsächlich aus einfach ungesättigten Fettsäuren (Ölsäure), die den Cholesterinspiegel positiv beeinflussen und das Herz schützen."
+    },
+    {
+      "question": "Kann man mit Avocado abnehmen?",
+      "answer": "Ja, in Maßen. Die Kombination aus gesundem Fett und 6,7g Ballaststoffen pro 100g macht sehr satt. Eine halbe Avocado pro Tag passt gut in eine Diät."
+    },
+    {
+      "question": "Wie viele Kohlenhydrate hat eine Avocado?",
+      "answer": "Eine halbe Avocado hat nur knapp 7g Kohlenhydrate, davon gut 5g Ballaststoffe, also nur ca. 1,4g Netto-Carbs. Perfekt für Low Carb und Keto."
+    },
+    {
+      "question": "Wie viele Avocados pro Tag sind gesund?",
+      "answer": "Eine halbe bis ganze Avocado pro Tag ist gesund. Mehr als eine ganze Avocado (256 kcal) kann die Kalorienaufnahme schnell in die Höhe treiben."
+    },
+    {
+      "question": "Wie viele Kalorien hat Guacamole?",
+      "answer": "Guacamole hat ca. 155 kcal pro 100g. Ein typischer Dip (50g) hat ca. 78 kcal, deutlich weniger als Mayonnaise."
+    }
   ],
-  "related_foods": ["banane", "lachs-gebraten", "tofu", "hummus"]
+  "related_foods": [
+    "banane",
+    "lachs-gebraten",
+    "tofu",
+    "hummus"
+  ]
 }

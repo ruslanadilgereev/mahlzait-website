@@ -175,32 +175,31 @@ Du hast jetzt Kalorien und Makros. Aber welche Lebensmittel passen in deinen Pla
 | Lebensmittel | Protein/100g | Kalorien/100g | Protein pro Kalorie |
 |-------------|-------------|--------------|-------------------|
 | [Hähnchenbrust](/kalorien/haehnchenbrust/) | 31 g | 165 kcal | ⭐⭐⭐⭐⭐ |
-| [Magerquark](/kalorien/magerquark/) | 12 g | 66 kcal | ⭐⭐⭐⭐⭐ |
 | Thunfisch (Dose) | 26 g | 108 kcal | ⭐⭐⭐⭐⭐ |
 | [Eier](/kalorien/ei/) | 13 g | 155 kcal | ⭐⭐⭐⭐ |
-| Griechischer Joghurt | 10 g | 97 kcal | ⭐⭐⭐⭐ |
+| Griechischer Joghurt | 9 g | 97 kcal | ⭐⭐⭐⭐ |
 | Linsen (gekocht) | 9 g | 116 kcal | ⭐⭐⭐ |
-| Tofu | 8 g | 76 kcal | ⭐⭐⭐⭐ |
+| Tofu | 17 g | 144 kcal | ⭐⭐⭐⭐ |
 | Hüttenkäse | 11 g | 98 kcal | ⭐⭐⭐⭐ |
 
 ### Gute Kohlenhydratquellen
 
 | Lebensmittel | KH/100g | Ballaststoffe | Sättigung |
 |-------------|---------|--------------|-----------|
-| [Haferflocken](/kalorien/haferflocken/) | 59 g | 10 g | ⭐⭐⭐⭐⭐ |
-| [Kartoffeln](/kalorien/kartoffeln/) | 17 g | 2 g | ⭐⭐⭐⭐⭐ |
+| [Haferflocken](/kalorien/haferflocken/) | 68 g | 10 g | ⭐⭐⭐⭐⭐ |
+| [Kartoffeln](/kalorien/kartoffeln/) | 20 g | 1,8 g | ⭐⭐⭐⭐⭐ |
 | Vollkorn[reis](/kalorien/reis/) | 23 g | 1,8 g | ⭐⭐⭐⭐ |
-| Vollkorn[brot](/kalorien/brot/) | 41 g | 7 g | ⭐⭐⭐⭐ |
+| Vollkorn[brot](/kalorien/brot/) | 50 g | 10 g | ⭐⭐⭐⭐ |
 | Süßkartoffeln | 20 g | 3 g | ⭐⭐⭐⭐ |
 | Quinoa | 21 g | 2,8 g | ⭐⭐⭐⭐ |
-| Obst ([Banane](/kalorien/banane/)) | 22 g | 2,6 g | ⭐⭐⭐ |
+| Obst ([Banane](/kalorien/banane/)) | 23 g | 2,6 g | ⭐⭐⭐ |
 
 ### Gesunde Fettquellen
 
 | Lebensmittel | Fett/100g | Typ | Besonderheit |
 |-------------|----------|-----|-------------|
 | [Avocado](/kalorien/avocado/) | 15 g | Einfach ungesättigt | Viele Mikronährstoffe |
-| Olivenöl | 100 g | Einfach ungesättigt | Nur 1 EL = 14g Fett! |
+| Olivenöl | 100 g | Einfach ungesättigt | Nur 1 EL = 10g Fett! |
 | Nüsse (Walnüsse) | 65 g | Omega-3 | Aber: sehr kaloriendicht! |
 | [Lachs](/kalorien/lachs/) | 13 g | Omega-3 | Auch gute Proteinquelle |
 | Leinsamen | 42 g | Omega-3 | Geschrotet besser verwertbar |
@@ -210,7 +209,7 @@ Du hast jetzt Kalorien und Makros. Aber welche Lebensmittel passen in deinen Pla
 
 Gemüse ist das einzige Lebensmittel, von dem du quasi unbegrenzt essen kannst:
 
-- **Kalorienarm:** 100g Gurke = 12 kcal, 100g [Brokkoli](/kalorien/brokkoli/) = 34 kcal
+- **Kalorienarm:** 100g Gurke = 15 kcal, 100g [Brokkoli](/kalorien/brokkoli/) = 34 kcal
 - **Sättigend:** Viel Volumen, viele Ballaststoffe
 - **Nährstoffreich:** Vitamine, Mineralien, sekundäre Pflanzenstoffe
 - **Tipp:** Fülle die Hälfte deines Tellers mit Gemüse
@@ -373,13 +372,13 @@ Hier sind drei konkrete Tagespläne für verschiedene Ziele. Alle Angaben sind R
 | Mahlzeit | Gericht | Kalorien | Protein |
 |----------|---------|---------|---------|
 | **Frühstück** | 80g Haferflocken + 200g Skyr + 1 Banane + 10g Honig | ~560 kcal | 30g |
-| **Snack** | 2 Eier + 2 Scheiben Vollkornbrot + Tomate | ~370 kcal | 22g |
+| **Snack** | 2 Eier + 2 Scheiben Vollkornbrot + Tomate | ~429 kcal | 23g |
 | **Mittagessen** | 200g Lachs + 200g Süßkartoffeln + 200g Gemüse + Olivenöl | ~680 kcal | 45g |
 | **Post-Workout** | 200g Magerquark + 30g Proteinpulver + 1 Banane | ~380 kcal | 48g |
 | **Abendessen** | 200g Putenbrust + 150g Vollkornpasta + Tomatensauce + Gemüse | ~550 kcal | 48g |
-| **Gesamt** | | **~2.540 kcal** | **193g** |
+| **Gesamt** | | **~2.599 kcal** | **194g** |
 
-**Makros:** 193g Protein (30%) | 75g Fett (27%) | 270g KH (43%)
+**Makros:** 194g Protein (30%) | 78g Fett (27%) | 281g KH (43%)
 
 ### Ernährungsplan vegetarisch (1.800 kcal)
 
@@ -389,12 +388,12 @@ Hier sind drei konkrete Tagespläne für verschiedene Ziele. Alle Angaben sind R
 |----------|---------|---------|---------|
 | **Frühstück** | Overnight Oats: 60g Haferflocken + 150ml Sojamilch + 100g Skyr + Beeren + 10g Chiasamen | ~420 kcal | 24g |
 | **Mittagessen** | Buddha Bowl: 100g Quinoa + 150g Kichererbsen + Avocado (½) + Gemüse + Tahini-Dressing | ~560 kcal | 22g |
-| **Snack** | 200g Griechischer Joghurt + 20g Walnüsse | ~240 kcal | 14g |
+| **Snack** | 200g Griechischer Joghurt + 20g Walnüsse | ~325 kcal | 21g |
 | **Abendessen** | Linsen-Curry: 100g rote Linsen + 200g Gemüse + 100ml Kokosmilch + Gewürze + 80g Reis | ~520 kcal | 25g |
-| **Snack** | 1 Apfel + 15g Erdnussbutter | ~160 kcal | 5g |
-| **Gesamt** | | **~1.900 kcal** | **90g** |
+| **Snack** | 1 Apfel + 15g Erdnussbutter | ~183 kcal | 4g |
+| **Gesamt** | | **~2.008 kcal** | **96g** |
 
-**Makros:** 90g Protein (19%) | 70g Fett (33%) | 225g KH (48%)
+**Makros:** 96g Protein (19%) | 78g Fett (35%) | 235g KH (46%)
 
 > **Tipp:** Bei vegetarischer Ernährung ist es etwas schwieriger, auf 1,6+ g Protein/kg zu kommen. Kombiniere immer Hülsenfrüchte + Getreide für ein vollständiges Aminosäureprofil. Skyr und Magerquark sind hervorragende vegetarische Protein-Booster.
 
@@ -415,7 +414,7 @@ Diese Lebensmittel machen am meisten satt – ideal, wenn du im Kaloriendefizit 
 7. **Fisch (weißer Fisch)** – Höchster Proteingehalt pro Kalorie
 8. **Gemüsesuppe** – Viel Volumen, wenig Kalorien
 9. **Griechischer Joghurt** – Protein-Snack-King
-10. **Popcorn (ohne Butter)** – Überraschend sättigend, nur 31 kcal/Portion
+10. **Popcorn (ohne Butter)**: Überraschend sättigend, nur 31 kcal pro Tasse (8g)
 
 ### Lebensmittel, die du einschränken solltest
 
@@ -466,7 +465,7 @@ Montag bis Freitag perfekt, Samstag und Sonntag „frei" – das kann das komple
 
 ### Fehler 6: Getränke-Kalorien vergessen
 
-Ein Latte Macchiato hat ~200 kcal. Zwei pro Tag = 400 kcal – das ist ein ganzes Defizit!
+Ein Latte Macchiato hat ~131 kcal. Zwei pro Tag = 262 kcal, das ist schon ein halbes Defizit!
 
 - Kaffee schwarz oder mit wenig Milch trinken
 - Softdrinks durch Zero-Varianten ersetzen

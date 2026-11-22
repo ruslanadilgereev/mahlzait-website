@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 168191 (Dates, medjool), Werte je 100 g",
   "seo": {
     "title": "Medjool Datteln Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Medjool Datteln? 100g haben ca. 277 kcal, eine Dattel rund 67 kcal. Nährwerte, Kohlenhydrate & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien haben Medjool Datteln? 100g haben ca. 277 kcal, eine Dattel rund 66 kcal. Nährwerte, Kohlenhydrate & Tipps zum Abnehmen.",
     "keywords": [
       "medjool datteln kalorien",
       "medjool dattel kcal",
@@ -77,35 +77,68 @@
       "tip": "Zum Süßen statt Zucker"
     },
     {
-      "name": "Dattel mit Mandel gefüllt (28g)",
-      "portion_g": 28,
-      "calories": 89,
+      "name": "Dattel mit Mandel gefüllt (25g)",
+      "portion_g": 25,
+      "calories": 72,
       "protein": 1,
-      "carbs": 19,
-      "fat": 2,
-      "tip": "Beliebter Snack"
+      "carbs": 18,
+      "fat": 1,
+      "tip": "Beliebter Snack",
+      "basis": [
+        {
+          "g": 24
+        },
+        {
+          "fdcId": 170567,
+          "g": 1
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "1 Dattel (Deglet Nour, 8g)",
-      "calories": 22,
-      "emoji": "🌴"
+      "calories": 23,
+      "emoji": "🌴",
+      "basis": [
+        {
+          "fdcId": 171726,
+          "g": 8
+        }
+      ]
     },
     {
       "name": "1 getrocknete Feige (20g)",
       "calories": 50,
-      "emoji": "🟤"
+      "emoji": "🟤",
+      "basis": [
+        {
+          "fdcId": 174665,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "1 Pflaume frisch (60g)",
       "calories": 28,
-      "emoji": "🟣"
+      "emoji": "🟣",
+      "basis": [
+        {
+          "fdcId": 169949,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "1 EL Honig (21g)",
       "calories": 64,
-      "emoji": "🍯"
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 21
+        }
+      ]
     }
   ],
   "tips": [
@@ -116,7 +149,7 @@
     },
     {
       "title": "Auf die Portion achten",
-      "text": "Medjool Datteln sind sehr energiedicht. Schon 3 Stück (72g) liefern rund 199 kcal, also fast so viel wie ein mittelgroßer Apfel mit doppeltem Gewicht.",
+      "text": "Medjool Datteln sind sehr energiedicht. Schon 3 Stück (72g) liefern rund 199 kcal.",
       "icon": "⚖️"
     },
     {

@@ -18,9 +18,9 @@
   },
   "overview": {
     "calories_per_100g": 291,
-    "protein_per_100g": 24,
+    "protein_per_100g": 23.7,
     "carbs_per_100g": 0,
-    "fat_per_100g": 21.5,
+    "fat_per_100g": 21.8,
     "fiber_per_100g": 0,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Rib-Eye-Steak (250g)"
@@ -29,11 +29,17 @@
     {
       "name": "Rib-Eye roh (100g)",
       "portion_g": 100,
-      "calories": 271,
-      "protein": 21,
+      "calories": 244,
+      "protein": 19,
       "carbs": 0,
-      "fat": 20,
-      "tip": "Roher Zuschnitt vor dem Braten"
+      "fat": 19,
+      "tip": "Roher Zuschnitt vor dem Braten",
+      "basis": [
+        {
+          "fdcId": 172156,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Rib-Eye gebraten (100g)",
@@ -48,63 +54,87 @@
       "name": "Rib-Eye gebraten (200g)",
       "portion_g": 200,
       "calories": 582,
-      "protein": 48,
+      "protein": 47,
       "carbs": 0,
-      "fat": 43
+      "fat": 44
     },
     {
       "name": "Rib-Eye-Steak (250g)",
       "portion_g": 250,
       "calories": 728,
-      "protein": 60,
+      "protein": 59,
       "carbs": 0,
-      "fat": 54,
+      "fat": 55,
       "tip": "Typische Portion"
     },
     {
       "name": "Rib-Eye-Steak groß (350g)",
       "portion_g": 350,
       "calories": 1019,
-      "protein": 84,
+      "protein": 83,
       "carbs": 0,
-      "fat": 75
+      "fat": 76
     },
     {
       "name": "Tomahawk-Style (450g)",
       "portion_g": 450,
       "calories": 1310,
-      "protein": 108,
+      "protein": 107,
       "carbs": 0,
-      "fat": 97,
+      "fat": 98,
       "tip": "Sehr große Portion"
     }
   ],
   "comparison": [
     {
-      "name": "Rinderfilet (250g)",
-      "calories": 538,
-      "emoji": "🥩"
+      "name": "Rinderfilet gegrillt (250g)",
+      "calories": 528,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 170237,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust (250g)",
       "calories": 413,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Lachsfilet (250g)",
-      "calories": 520,
-      "emoji": "🐟"
+      "name": "Lachsfilet gebraten (250g)",
+      "calories": 515,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs-gebraten",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Schweineschnitzel natur (250g)",
-      "calories": 365,
-      "emoji": "🐖"
+      "name": "Schweinefilet gegart (250g)",
+      "calories": 368,
+      "emoji": "🐖",
+      "basis": [
+        {
+          "fdcId": 167905,
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hoher Proteingehalt",
-      "text": "Ein 250g-Rib-Eye liefert rund 60g Eiweiß und deckt damit einen großen Teil des Tagesbedarfs eines Erwachsenen.",
+      "text": "Ein 250g-Rib-Eye liefert rund 59g Eiweiß und deckt damit einen großen Teil des Tagesbedarfs eines Erwachsenen.",
       "icon": "💪"
     },
     {
@@ -135,11 +165,11 @@
     },
     {
       "question": "Wie viele Kalorien hat Rib-Eye pro 100g?",
-      "answer": "Gebraten liegt ein Rib-Eye bei etwa 291 kcal pro 100g. Roh sind es rund 271 kcal pro 100g."
+      "answer": "Gebraten liegt ein Rib-Eye bei etwa 291 kcal pro 100g. Roh sind es rund 244 kcal pro 100g."
     },
     {
       "question": "Wie viel Protein steckt in einem Rib-Eye-Steak?",
-      "answer": "Gebratenes Rib-Eye enthält rund 24g Protein pro 100g. Ein 250g-Steak liefert damit etwa 60g Eiweiß."
+      "answer": "Gebratenes Rib-Eye enthält rund 24g Protein pro 100g. Ein 250g-Steak liefert damit etwa 59g Eiweiß."
     },
     {
       "question": "Hat Rib-Eye Kohlenhydrate?",

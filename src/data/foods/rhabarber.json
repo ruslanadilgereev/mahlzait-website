@@ -45,38 +45,19 @@
       "tip": "Standard"
     },
     {
-      "name": "Rhabarber gedünstet ungezuckert (200g)",
-      "portion_g": 200,
-      "calories": 44,
-      "protein": 2,
-      "carbs": 9,
-      "fat": 0
-    },
-    {
       "name": "Rhabarberkompott gezuckert (150g)",
       "portion_g": 150,
-      "calories": 135,
+      "calories": 174,
       "protein": 1,
-      "carbs": 33,
+      "carbs": 47,
       "fat": 0,
-      "tip": "Mit Zucker gekocht"
-    },
-    {
-      "name": "Rhabarbermus zuckerfrei (150g)",
-      "portion_g": 150,
-      "calories": 32,
-      "protein": 1,
-      "carbs": 7,
-      "fat": 0
-    },
-    {
-      "name": "Stück Rhabarberkuchen (120g)",
-      "portion_g": 120,
-      "calories": 290,
-      "protein": 4,
-      "carbs": 38,
-      "fat": 14,
-      "tip": "Mit Teig & Zucker"
+      "tip": "Mit Zucker gekocht",
+      "basis": [
+        {
+          "fdcId": 168169,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "100g roh",
@@ -91,22 +72,46 @@
     {
       "name": "Erdbeeren (150g)",
       "calories": 48,
-      "emoji": "🍓"
+      "emoji": "🍓",
+      "basis": [
+        {
+          "slug": "erdbeeren",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Apfel (150g)",
       "calories": 78,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Birne (150g)",
-      "calories": 87,
-      "emoji": "🍐"
+      "calories": 86,
+      "emoji": "🍐",
+      "basis": [
+        {
+          "slug": "birne",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Banane (150g)",
       "calories": 134,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
@@ -147,7 +152,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Rhabarber?",
-      "answer": "Rhabarber enthält nur etwa 4,5g Kohlenhydrate pro 100g, davon ein großer Teil natürlicher Fruchtzucker. Damit ist er sehr kohlenhydratarm."
+      "answer": "Rhabarber enthält nur etwa 4,5g Kohlenhydrate pro 100g, davon nur rund 1,1g Zucker und 1,8g Ballaststoffe. Damit ist er sehr kohlenhydratarm."
     },
     {
       "question": "Ist Rhabarber zum Abnehmen geeignet?",

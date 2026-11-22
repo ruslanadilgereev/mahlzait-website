@@ -19,9 +19,9 @@
   },
   "overview": {
     "calories_per_100g": 502,
-    "protein_per_100g": 4.8,
-    "carbs_per_100g": 64.6,
-    "fat_per_100g": 24.5,
+    "protein_per_100g": 4.9,
+    "carbs_per_100g": 64.8,
+    "fat_per_100g": 24.9,
     "fiber_per_100g": 1.1,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Twin-Packung (2 Riegel, 50g)"
@@ -57,19 +57,10 @@
     {
       "name": "Twix Xtra (2 dicke Riegel, 75g)",
       "portion_g": 75,
-      "calories": 376,
+      "calories": 377,
       "protein": 4,
-      "carbs": 48,
-      "fat": 18
-    },
-    {
-      "name": "Twix White (2 Riegel, 46g)",
-      "portion_g": 46,
-      "calories": 234,
-      "protein": 2,
-      "carbs": 30,
-      "fat": 11,
-      "tip": "Weiße Schokolade"
+      "carbs": 49,
+      "fat": 19
     },
     {
       "name": "100g Twix",
@@ -82,24 +73,37 @@
   ],
   "comparison": [
     {
-      "name": "Mars (Riegel, 51g)",
-      "calories": 229,
-      "emoji": "🍫"
-    },
-    {
       "name": "Kinderriegel (21g)",
-      "calories": 117,
-      "emoji": "🍫"
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel",
+          "g": 21
+        }
+      ]
     },
     {
       "name": "Knoppers (25g)",
       "calories": 137,
-      "emoji": "🧇"
+      "emoji": "🧇",
+      "basis": [
+        {
+          "slug": "knoppers",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Vollmilch-Schokolade (50g)",
-      "calories": 267,
-      "emoji": "🍫"
+      "calories": 268,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
@@ -120,7 +124,7 @@
     },
     {
       "title": "Wenig Sättigung",
-      "text": "Mit nur 4,8g Eiweiß und 1,1g Ballaststoffen pro 100g sättigt Twix kaum. Ein Snack mit Eiweiß oder Obst hält länger satt.",
+      "text": "Mit nur 4,9g Eiweiß und 1,1g Ballaststoffen pro 100g sättigt Twix kaum. Ein Snack mit Eiweiß oder Obst hält länger satt.",
       "icon": "⏳"
     },
     {
@@ -140,11 +144,11 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Twix?",
-      "answer": "Twix enthält 64,6g Kohlenhydrate pro 100g, überwiegend Zucker. Eine 50g-Packung liefert rund 32g, ein Einzelriegel etwa 16g."
+      "answer": "Twix enthält 64,8g Kohlenhydrate pro 100g, überwiegend Zucker. Eine 50g-Packung liefert rund 32g, ein Einzelriegel etwa 16g."
     },
     {
       "question": "Wie viel Protein hat Twix?",
-      "answer": "Twix hat nur 4,8g Eiweiß pro 100g. Eine ganze Packung (50g) liefert etwa 2,4g Protein, der Riegel ist also kein guter Eiweißlieferant."
+      "answer": "Twix hat nur 4,9g Eiweiß pro 100g. Eine ganze Packung (50g) liefert etwa 2,5g Protein, der Riegel ist also kein guter Eiweißlieferant."
     },
     {
       "question": "Ist Twix zum Abnehmen geeignet?",

@@ -3,10 +3,10 @@
   "name": "Oliven",
   "emoji": "🫒",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 169094 (Olives, ripe, canned (small-extra large)), Werte je 100 g; schwarze Oliven, in FDC als reife Oliven aus der Dose",
+  "source": "USDA FoodData Central, FDC-ID 169094 (Olives, ripe, canned (small-extra large)), Werte je 100 g",
   "seo": {
     "title": "Oliven Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Oliven? Schwarze Oliven haben ca. 115 kcal pro 100g, grüne ca. 145 kcal. Nährwerte pro Portion, Vergleich & Diät-Tipps.",
+    "description": "Wie viele Kalorien haben Oliven? Schwarze Oliven haben ca. 116 kcal pro 100g, grüne ca. 145 kcal. Nährwerte pro Portion, Vergleich & Diät-Tipps.",
     "keywords": [
       "oliven kalorien",
       "kalorien oliven",
@@ -19,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 115,
+    "calories_per_100g": 116,
     "protein_per_100g": 0.8,
     "carbs_per_100g": 6,
-    "fat_per_100g": 10.7,
-    "fiber_per_100g": 3.2,
+    "fat_per_100g": 10.9,
+    "fiber_per_100g": 1.6,
     "typical_portion_g": 30,
     "typical_portion_name": "Handvoll (ca. 8-10 Oliven)"
   },
@@ -61,20 +61,18 @@
       "protein": 1,
       "carbs": 2,
       "fat": 8,
-      "tip": "Etwas fettreicher als schwarze"
-    },
-    {
-      "name": "Kalamata-Oliven (50g)",
-      "portion_g": 50,
-      "calories": 75,
-      "protein": 1,
-      "carbs": 4,
-      "fat": 7
+      "tip": "Etwas fettreicher als schwarze",
+      "basis": [
+        {
+          "fdcId": 169096,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Glas abgetropft (150g)",
       "portion_g": 150,
-      "calories": 173,
+      "calories": 174,
       "protein": 1,
       "carbs": 9,
       "fat": 16
@@ -82,33 +80,63 @@
     {
       "name": "Gefüllte Oliven mit Paprika (50g)",
       "portion_g": 50,
-      "calories": 65,
-      "protein": 0,
-      "carbs": 3,
+      "calories": 71,
+      "protein": 1,
+      "carbs": 2,
       "fat": 6,
-      "tip": "Beliebt als Antipasti"
+      "tip": "Beliebt als Antipasti",
+      "basis": [
+        {
+          "fdcId": 2710091,
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Oliven (30g)",
       "calories": 35,
-      "emoji": "🫒"
+      "emoji": "🫒",
+      "basis": [
+        {
+          "slug": "oliven",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Mandeln (30g)",
-      "calories": 173,
-      "emoji": "🌰"
+      "calories": 174,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Feta (30g)",
-      "calories": 79,
-      "emoji": "🧀"
+      "calories": 80,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "feta",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Gurke (30g)",
       "calories": 5,
-      "emoji": "🥒"
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "gurke",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
@@ -141,11 +169,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Oliven?",
-      "answer": "100g Oliven haben im Schnitt rund 115 kcal. Eine Handvoll (30g) liefert etwa 35 kcal, eine einzelne Olive nur rund 5 kcal."
+      "answer": "100g Oliven haben im Schnitt rund 116 kcal. Eine Handvoll (30g) liefert etwa 35 kcal, eine einzelne Olive nur rund 5 kcal."
     },
     {
       "question": "Haben grüne oder schwarze Oliven mehr Kalorien?",
-      "answer": "Grüne Oliven haben mit ca. 145 kcal pro 100g etwas mehr als schwarze mit ca. 115 kcal, weil sie unreif geerntet werden und meist fettreicher sind. Der Unterschied pro Portion ist aber gering."
+      "answer": "Grüne Oliven haben mit ca. 145 kcal pro 100g etwas mehr als schwarze mit ca. 116 kcal, weil sie unreif geerntet werden und meist fettreicher sind. Der Unterschied pro Portion ist aber gering."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Oliven?",

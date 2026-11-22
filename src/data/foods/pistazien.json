@@ -19,10 +19,10 @@
   },
   "overview": {
     "calories_per_100g": 560,
-    "protein_per_100g": 20,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 45,
-    "fiber_per_100g": 10,
+    "protein_per_100g": 20.2,
+    "carbs_per_100g": 27.2,
+    "fat_per_100g": 45.3,
+    "fiber_per_100g": 10.6,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Handvoll (30g)"
   },
@@ -40,7 +40,7 @@
       "portion_g": 20,
       "calories": 112,
       "protein": 4,
-      "carbs": 6,
+      "carbs": 5,
       "fat": 9
     },
     {
@@ -65,17 +65,23 @@
       "portion_g": 100,
       "calories": 560,
       "protein": 20,
-      "carbs": 28,
+      "carbs": 27,
       "fat": 45
     },
     {
       "name": "Pistazien geröstet & gesalzen (30g)",
       "portion_g": 30,
-      "calories": 172,
+      "calories": 171,
       "protein": 6,
       "carbs": 8,
       "fat": 14,
-      "tip": "Etwas mehr Fett durch Röstung, plus Salz"
+      "tip": "Etwas mehr Fett durch Röstung, plus Salz",
+      "basis": [
+        {
+          "fdcId": 169426,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Pistazien mit Schale (50g brutto)",
@@ -91,22 +97,45 @@
     {
       "name": "Pistazien (30g)",
       "calories": 168,
-      "emoji": "🥜"
+      "emoji": "🥜",
+      "basis": [
+        {
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Mandeln (30g)",
-      "calories": 173,
-      "emoji": "🌰"
+      "calories": 174,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Cashewkerne (30g)",
       "calories": 166,
-      "emoji": "🥜"
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "cashewkerne",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Walnüsse (30g)",
       "calories": 196,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "walnuesse",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
@@ -127,7 +156,7 @@
     },
     {
       "title": "Sättigung durch Ballaststoffe",
-      "text": "Etwa 10g Ballaststoffe pro 100g und das enthaltene Fett sättigen gut. Eine kleine Handvoll als Snack hält länger satt als zuckerhaltige Alternativen.",
+      "text": "Rund 10,6g Ballaststoffe pro 100g und das enthaltene Fett sättigen gut. Eine kleine Handvoll als Snack hält länger satt als zuckerhaltige Alternativen.",
       "icon": "🌿"
     },
     {
@@ -151,7 +180,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate haben Pistazien?",
-      "answer": "Pistazien enthalten etwa 28g Kohlenhydrate pro 100g, davon rund 10g Ballaststoffe. Pro Handvoll (30g) sind das ca. 8g Kohlenhydrate."
+      "answer": "Pistazien enthalten etwa 28g Kohlenhydrate pro 100g, davon rund 10,6g Ballaststoffe. Pro Handvoll (30g) sind das ca. 8g Kohlenhydrate."
     },
     {
       "question": "Sind Pistazien zum Abnehmen geeignet?",

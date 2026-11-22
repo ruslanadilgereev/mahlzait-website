@@ -80,33 +80,52 @@
     {
       "name": "Götterspeise zubereitet (150g)",
       "portion_g": 150,
-      "calories": 95,
-      "protein": 2,
-      "carbs": 22,
+      "calories": 90,
+      "protein": 1.8,
+      "carbs": 21.3,
       "fat": 0,
-      "tip": "fertig mit Zucker, deutlich weniger Eiweiß"
+      "tip": "fertig mit Zucker, deutlich weniger Eiweiß",
+      "basis": [
+        {
+          "slug": "goetterspeise",
+          "g": 150
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Agar-Agar (100g)",
       "calories": 306,
-      "emoji": "🌿"
+      "emoji": "🌿",
+      "basis": [
+        {
+          "slug": "agar-agar",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Proteinpulver (100g)",
-      "calories": 375,
-      "emoji": "💪"
-    },
-    {
-      "name": "Magerquark (100g)",
-      "calories": 67,
-      "emoji": "🥛"
+      "calories": 352,
+      "emoji": "💪",
+      "basis": [
+        {
+          "slug": "proteinpulver",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Götterspeise zubereitet (100g)",
-      "calories": 63,
-      "emoji": "🍮"
+      "calories": 60,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "goetterspeise",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

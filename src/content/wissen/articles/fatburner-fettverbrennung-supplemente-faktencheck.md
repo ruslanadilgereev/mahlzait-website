@@ -4,7 +4,7 @@ Fatburner versprechen, die Fettverbrennung anzukurbeln, ganz ohne Verzicht. Kein
 
 - Die grosse Cochrane-Uebersicht zu Gruentee fand zwar eine Gewichtsabnahme, stufte sie aber als "klinisch nicht bedeutsam" ein.
 - Eine Meta-Analyse aus 11 Studien beziffert den Gruentee-Effekt auf im Schnitt etwa **1,3 kg** - ueber Wochen, nicht pro Woche.
-- Capsaicin (Chili-Schaerfe) senkte in einer Meta-Analyse die Kalorienaufnahme einer Mahlzeit um rund **74 kcal** - etwa eine halbe [Banane](/kalorien/banane/).
+- Capsaicin (Chili-Schaerfe) senkte in einer Meta-Analyse die Kalorienaufnahme einer Mahlzeit um rund **74 kcal**, etwa zwei Drittel einer [Banane](/kalorien/banane/).
 - Gruentee-Extrakt erhoehte den 24-Stunden-Energieverbrauch in einer kontrollierten Studie um etwa **4 Prozent** - das sind grob 80 kcal pro Tag.
 - Keiner dieser Effekte ersetzt ein [Kaloriendefizit](/kaloriendefizit-berechnen/). Ohne Defizit verbrennt kein Praeparat Koerperfett.
 
@@ -26,7 +26,7 @@ Noch ernuechternder faellt die unabhaengige Cochrane-Uebersicht von Jurgens und 
 
 Capsaicin ist der Scharfstoff in Chili. Er aktiviert Rezeptoren, die den Energieverbrauch leicht anheben und das Saettigungsgefuehl beeinflussen koennen.
 
-Eine Meta-Analyse von Whiting und Kollegen (2014) wertete acht Studien aus und fand: Wer vor einer Mahlzeit Capsaicinoide aufnahm, ass danach im Schnitt rund 74 kcal (309,9 kJ) weniger. Das ist messbar, aber klein - etwa eine halbe Banane. Ob sich dieser Effekt ueber den Tag haelt oder durch eine etwas groessere naechste Mahlzeit kompensiert wird, bleibt offen. Studien, die ueber Wochen eine relevante Gewichtsabnahme allein durch Capsaicin zeigen, fehlen weitgehend.
+Eine Meta-Analyse von Whiting und Kollegen (2014) wertete acht Studien aus und fand: Wer vor einer Mahlzeit Capsaicinoide aufnahm, ass danach im Schnitt rund 74 kcal (309,9 kJ) weniger. Das ist messbar, aber klein, etwa zwei Drittel einer Banane. Ob sich dieser Effekt ueber den Tag haelt oder durch eine etwas groessere naechste Mahlzeit kompensiert wird, bleibt offen. Studien, die ueber Wochen eine relevante Gewichtsabnahme allein durch Capsaicin zeigen, fehlen weitgehend.
 
 ### Der Rest: viel Marketing, wenig Evidenz
 

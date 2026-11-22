@@ -107,22 +107,46 @@
     {
       "name": "Döner (350g)",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Lahmacun (150g)",
       "calories": 351,
-      "emoji": "🫓"
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "lahmacun",
+          "variante": "Lahmacun pur"
+        }
+      ]
     },
     {
-      "name": "Pizza Salami (Portion)",
-      "calories": 900,
-      "emoji": "🍕"
+      "name": "Pizza Salami (350g)",
+      "calories": 980,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 2708649,
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Dürüm (347g)",
       "calories": 724,
-      "emoji": "🌯"
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "duerrum",
+          "variante": "Dürüm Döner (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [

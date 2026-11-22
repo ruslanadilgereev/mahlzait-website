@@ -72,6 +72,25 @@
       ]
     },
     {
+      "name": "Pulver in fettarmer Milch (30 g + 300 ml)",
+      "portion_g": 339,
+      "calories": 260,
+      "protein": 34,
+      "carbs": 17,
+      "fat": 7,
+      "basis": [
+        {
+          "fdcId": 173180,
+          "g": 30
+        },
+        {
+          "fdcId": 171267,
+          "ml": 300,
+          "g": 309
+        }
+      ]
+    },
+    {
       "name": "Pulver in Vollmilch (30 g + 300 ml)",
       "portion_g": 339,
       "calories": 294,
@@ -106,28 +125,6 @@
     }
   ],
   "comparison": [
-    {
-      "name": "Magerquark (250 g)",
-      "calories": 180,
-      "emoji": "🥛",
-      "basis": [
-        {
-          "slug": "magerquark",
-          "g": 250
-        }
-      ]
-    },
-    {
-      "name": "Skyr (250 g)",
-      "calories": 148,
-      "emoji": "🥛",
-      "basis": [
-        {
-          "slug": "skyr",
-          "g": 250
-        }
-      ]
-    },
     {
       "name": "Milch (250 ml)",
       "calories": 157,

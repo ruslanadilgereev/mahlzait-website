@@ -36,7 +36,7 @@ Schlaf ist eine oft uebersehene Stellschraube der [Energiebilanz](/kaloriendefiz
 - **Feste Zubettgeh- und Aufstehzeiten** stabilisieren den Rhythmus – auch am Wochenende.
 - **Spaetes Essen begrenzen.** Da Schlafmangel besonders die naechtliche Snackerei foerdert, hilft eine bewusste Abendroutine.
 - **Koffein nicht zu spaet.** Koffein kann die Einschlaflatenz verlaengern; der [Koffein-Rechner](/koffein-rechner/) hilft beim Timing.
-- **Realistisch bleiben:** Eine Mehraufnahme von 250-350 kcal/Tag entspricht in etwa zwei [Bananen](/kalorien/banane/) oder einer Handvoll Snacks – nicht dramatisch pro Tag, aber über Wochen summiert es sich.
+- **Realistisch bleiben:** Eine Mehraufnahme von 250-350 kcal/Tag entspricht in etwa zwei bis drei [Bananen](/kalorien/banane/) oder einer Handvoll Snacks, nicht dramatisch pro Tag, aber über Wochen summiert es sich.
 
 ---
 

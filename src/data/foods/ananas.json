@@ -66,9 +66,15 @@
       "portion_g": 100,
       "calories": 60,
       "protein": 0.4,
-      "carbs": 15,
+      "carbs": 15.7,
       "fat": 0.1,
-      "tip": "In Saft statt Sirup wählen"
+      "tip": "In Saft statt Sirup wählen",
+      "basis": [
+        {
+          "fdcId": 169126,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Ananas aus der Dose, in Sirup (100g)",
@@ -76,16 +82,28 @@
       "calories": 78,
       "protein": 0.4,
       "carbs": 20.2,
-      "fat": 0.1
+      "fat": 0.1,
+      "basis": [
+        {
+          "fdcId": 169944,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Ananas getrocknet (30g)",
       "portion_g": 30,
-      "calories": 87,
-      "protein": 0.7,
-      "carbs": 21,
-      "fat": 0.1,
-      "tip": "Stark konzentriert, sparsam genießen"
+      "calories": 104,
+      "protein": 0.4,
+      "carbs": 25.2,
+      "fat": 0.2,
+      "tip": "Stark konzentriert, sparsam genießen",
+      "basis": [
+        {
+          "fdcId": 2709210,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Ganze Ananas frisch, essbar (900g)",
@@ -93,29 +111,53 @@
       "calories": 450,
       "protein": 4.5,
       "carbs": 117.9,
-      "fat": 1.1
+      "fat": 0.9
     }
   ],
   "comparison": [
     {
-      "name": "Mango",
+      "name": "Mango (100g)",
       "calories": 60,
-      "emoji": "🥭"
+      "emoji": "🥭",
+      "basis": [
+        {
+          "slug": "mango",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Apfel",
+      "name": "Apfel (100g)",
       "calories": 52,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Orange",
+      "name": "Orange (100g)",
       "calories": 47,
-      "emoji": "🍊"
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "orange",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Wassermelone",
+      "name": "Wassermelone (100g)",
       "calories": 30,
-      "emoji": "🍉"
+      "emoji": "🍉",
+      "basis": [
+        {
+          "slug": "wassermelone",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

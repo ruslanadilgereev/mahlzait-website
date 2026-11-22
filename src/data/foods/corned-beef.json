@@ -82,31 +82,50 @@
       "portion_g": 200,
       "calories": 328,
       "protein": 17,
-      "carbs": 22,
+      "carbs": 19,
       "fat": 20,
-      "tip": "Gebraten mit Kartoffeln, daher kohlenhydratreicher"
+      "tip": "Gebraten mit Kartoffeln, daher kohlenhydratreicher",
+      "basis": [
+        {
+          "fdcId": 173332,
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Leberkäse",
-      "calories": 290,
-      "emoji": "🍖"
-    },
-    {
-      "name": "Kasseler",
-      "calories": 150,
-      "emoji": "🥩"
-    },
-    {
-      "name": "Schinken (gekocht)",
+      "name": "Kasseler (100 g)",
       "calories": 110,
-      "emoji": "🍖"
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "kasseler",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Thunfisch (Dose)",
-      "calories": 116,
-      "emoji": "🐟"
+      "name": "Schinken gekocht (100 g)",
+      "calories": 107,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "schinken",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Thunfisch Dose (100 g)",
+      "calories": 86,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "thunfisch-dose",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

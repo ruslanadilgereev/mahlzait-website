@@ -113,8 +113,8 @@ Wenn du Fett weglässt, passiert oft Folgendes:
 
 | Produkt | Fett | Zucker | Kalorien |
 |---------|------|--------|----------|
-| Naturjoghurt (3,5% Fett) | 3,5 g | 4 g | 65 kcal |
-| "Light"-Joghurt (0,1% Fett) | 0,1 g | 12 g | 60 kcal |
+| Naturjoghurt (3,5% Fett) | 3,3 g | 4,7 g | 61 kcal |
+| "Light"-Joghurt (0,1% Fett) | 0,2 g | 7,7 g | 56 kcal |
 
 Fast gleiche Kalorien – aber der Light-Joghurt macht hungriger, weil der Zucker den Blutzucker durcheinanderbringt.
 

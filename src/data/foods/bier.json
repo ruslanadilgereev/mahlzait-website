@@ -3,11 +3,20 @@
   "name": "Bier",
   "emoji": "🍺",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 2710616 (Beer), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 2710616 (Beer: 43 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 44 kcal",
   "seo": {
-    "title": "Bier Kalorien: 43 kcal/100ml + Rechner & Varianten | Mahlzait",
-    "description": "Bier hat 43 kcal pro 100ml. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 8 Varianten & Spar-Tipps.",
-    "keywords": ["bier kalorien", "kalorien bier", "bier nährwerte", "pils kalorien", "weizenbier kalorien", "bier 0.5l kalorien", "alkoholfreies bier kalorien", "bier kohlenhydrate"]
+    "title": "Bier Kalorien: 44 kcal/100ml + Rechner & Varianten | Mahlzait",
+    "description": "Bier hat 44 kcal pro 100ml. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 8 Varianten & Spar-Tipps.",
+    "keywords": [
+      "bier kalorien",
+      "kalorien bier",
+      "bier nährwerte",
+      "pils kalorien",
+      "weizenbier kalorien",
+      "bier 0.5l kalorien",
+      "alkoholfreies bier kalorien",
+      "bier kohlenhydrate"
+    ]
   },
   "overview": {
     "calories_per_100g": 43,
@@ -15,39 +24,210 @@
     "carbs_per_100g": 3.6,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 500,
+    "typical_portion_g": 507,
     "typical_portion_name": "1 Halbe (0,5l)"
   },
   "variants": [
-    { "name": "Pils (0,5l)", "portion_g": 500, "calories": 215, "protein": 3, "carbs": 18, "fat": 0 },
-    { "name": "Pils (0,33l Flasche)", "portion_g": 330, "calories": 142, "protein": 2, "carbs": 12, "fat": 0 },
-    { "name": "Weizenbier (0,5l)", "portion_g": 500, "calories": 230, "protein": 3, "carbs": 20, "fat": 0 },
-    { "name": "Helles/Export (0,5l)", "portion_g": 500, "calories": 220, "protein": 3, "carbs": 17, "fat": 0 },
-    { "name": "Alkoholfreies Bier (0,5l)", "portion_g": 500, "calories": 130, "protein": 3, "carbs": 28, "fat": 0, "tip": "Wenigste Kalorien" },
-    { "name": "Radler (0,5l)", "portion_g": 500, "calories": 200, "protein": 2, "carbs": 28, "fat": 0 },
-    { "name": "Craft Beer/IPA (0,33l)", "portion_g": 330, "calories": 200, "protein": 2, "carbs": 14, "fat": 0 },
-    { "name": "Starkbier/Bock (0,5l)", "portion_g": 500, "calories": 310, "protein": 3, "carbs": 25, "fat": 0 }
+    {
+      "name": "Pils (0,5l)",
+      "portion_g": 507,
+      "calories": 218,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0
+    },
+    {
+      "name": "Pils (0,33l Flasche)",
+      "portion_g": 335,
+      "calories": 144,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 0
+    },
+    {
+      "name": "Weizenbier (0,5l)",
+      "portion_g": 502,
+      "calories": 216,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "weizenbier"
+        }
+      ]
+    },
+    {
+      "name": "Helles/Export (0,5l)",
+      "portion_g": 507,
+      "calories": 218,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0
+    },
+    {
+      "name": "Alkoholfreies Bier (0,5l)",
+      "portion_g": 507,
+      "calories": 188,
+      "protein": 1,
+      "carbs": 41,
+      "fat": 1,
+      "tip": "Wenigste Kalorien",
+      "basis": [
+        {
+          "fdcId": 2710610,
+          "ml": 500,
+          "g": 507
+        }
+      ]
+    },
+    {
+      "name": "Radler (0,5l)",
+      "portion_g": 514,
+      "calories": 211,
+      "protein": 2,
+      "carbs": 35,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "radler"
+        }
+      ]
+    },
+    {
+      "name": "Craft Beer/IPA (0,33l)",
+      "portion_g": 341,
+      "calories": 198,
+      "protein": 3,
+      "carbs": 1,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 171906,
+          "ml": 330,
+          "g": 341
+        }
+      ]
+    },
+    {
+      "name": "Starkbier/Bock (0,5l)",
+      "portion_g": 517,
+      "calories": 300,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 171906,
+          "ml": 500,
+          "g": 517
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Wein rot (0,2l)", "calories": 170, "emoji": "🍷" },
-    { "name": "Cola (0,5l)", "calories": 210, "emoji": "🥤" },
-    { "name": "Gin Tonic", "calories": 190, "emoji": "🍸" },
-    { "name": "Apfelsaft (0,5l)", "calories": 230, "emoji": "🍎" }
+    {
+      "name": "Wein (0,2l)",
+      "calories": 166,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein"
+        }
+      ]
+    },
+    {
+      "name": "Cola (0,5l)",
+      "calories": 210,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Gin Tonic (250ml)",
+      "calories": 213,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin-tonic"
+        }
+      ]
+    },
+    {
+      "name": "Apfelsaft (0,5l)",
+      "calories": 230,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Alkoholfrei als Alternative", "text": "Alkoholfreies Bier hat 40% weniger Kalorien als normales Pils – ideal als isotonisches Sportgetränk.", "icon": "0️⃣" },
-    { "title": "Kleine Größe wählen", "text": "0,33l (142 kcal) statt 0,5l (215 kcal) – ein Drittel weniger Kalorien pro Bier.", "icon": "📏" },
-    { "title": "Bierbauch kommt nicht nur vom Bier", "text": "Die Kalorien im Bier sind moderat, aber Bier regt den Appetit an. Die Chips und das Döner danach sind das eigentliche Problem.", "icon": "🍕" },
-    { "title": "Zwischen den Bieren Wasser trinken", "text": "Ein Glas Wasser zwischen jedem Bier halbiert die Kalorienmenge und beugt dem Kater vor.", "icon": "💧" },
-    { "title": "Craft Beer im Blick behalten", "text": "IPAs und Craft Beers haben oft 7-9% Alkohol statt 4,8% – das bedeutet 50-60% mehr Kalorien pro Glas.", "icon": "🍻" }
+    {
+      "title": "Alkoholfrei als Alternative",
+      "text": "Alkoholfreies Bier hat rund 14% weniger Kalorien als normales Pils (188 statt 218 kcal pro 0,5l), ideal als isotonisches Sportgetränk.",
+      "icon": "0️⃣"
+    },
+    {
+      "title": "Kleine Größe wählen",
+      "text": "0,33l (144 kcal) statt 0,5l (218 kcal): ein Drittel weniger Kalorien pro Bier.",
+      "icon": "📏"
+    },
+    {
+      "title": "Bierbauch kommt nicht nur vom Bier",
+      "text": "Die Kalorien im Bier sind moderat, aber Bier regt den Appetit an. Die Chips und das Döner danach sind das eigentliche Problem.",
+      "icon": "🍕"
+    },
+    {
+      "title": "Zwischen den Bieren Wasser trinken",
+      "text": "Ein Glas Wasser zwischen jedem Bier halbiert die Kalorienmenge und beugt dem Kater vor.",
+      "icon": "💧"
+    },
+    {
+      "title": "Craft Beer im Blick behalten",
+      "text": "IPAs und Craft Beers haben oft 7-9% Alkohol statt 4,8%. Eine 0,33l-Flasche kommt damit auf rund 198 kcal statt 144 kcal.",
+      "icon": "🍻"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Bier?", "answer": "Ein Pils (0,5l) hat ca. 215 kcal, ein Weizenbier 230 kcal, alkoholfreies Bier nur 130 kcal. Eine 0,33l-Flasche hat ca. 142 kcal." },
-    { "question": "Macht Bier dick?", "answer": "Bier hat moderate Kalorien (43 kcal/100ml), aber Alkohol hemmt die Fettverbrennung und steigert den Appetit. 3 Bier am Abend sind 645 kcal – plus Snacks oft 1000+ kcal." },
-    { "question": "Welches Bier hat die wenigsten Kalorien?", "answer": "Alkoholfreies Bier mit ca. 26 kcal/100ml. Bei normalem Bier: leichtes Pils (42 kcal/100ml). Starkbier hat mit 62 kcal/100ml die meisten." },
-    { "question": "Wie viele Kohlenhydrate hat Bier?", "answer": "Ein Pils (0,5l) hat ca. 18g Kohlenhydrate. Weizenbier etwas mehr (20g). Die Hauptkalorien kommen aber vom Alkohol, nicht von den Kohlenhydraten." },
-    { "question": "Wie viele Kalorien hat alkoholfreies Bier?", "answer": "Alkoholfreies Bier hat ca. 26 kcal/100ml bzw. 130 kcal pro 0,5l. Das sind 40% weniger als normales Bier. Die Kalorien kommen hauptsächlich aus Malzzucker." },
-    { "question": "Warum hat Bier Kalorien, obwohl kein Fett drin ist?", "answer": "Die Kalorien stammen zu 60-70% aus dem Alkohol (7 kcal/g) und zu 30-40% aus Kohlenhydraten/Malzzucker. Alkohol hat fast so viele Kalorien wie Fett." }
+    {
+      "question": "Wie viele Kalorien hat ein Bier?",
+      "answer": "Ein Pils (0,5l) hat ca. 218 kcal, ein Weizenbier 216 kcal, alkoholfreies Bier rund 188 kcal. Eine 0,33l-Flasche hat ca. 144 kcal."
+    },
+    {
+      "question": "Macht Bier dick?",
+      "answer": "Bier hat moderate Kalorien (44 kcal/100ml), aber Alkohol hemmt die Fettverbrennung und steigert den Appetit. 3 Bier (0,5l) am Abend sind 654 kcal, plus Snacks oft über 1000 kcal."
+    },
+    {
+      "question": "Welches Bier hat die wenigsten Kalorien?",
+      "answer": "Die wenigsten Kalorien hat alkoholfreies Bier mit rund 38 kcal pro 100ml, normales Pils liegt bei 44 kcal pro 100ml. Starkbier hat mit rund 60 kcal pro 100ml die meisten."
+    },
+    {
+      "question": "Wie viele Kohlenhydrate hat Bier?",
+      "answer": "Ein Pils (0,5l) hat ca. 18g Kohlenhydrate, Weizenbier ähnlich viel (18g). Die Hauptkalorien kommen aber vom Alkohol, nicht von den Kohlenhydraten."
+    },
+    {
+      "question": "Wie viele Kalorien hat alkoholfreies Bier?",
+      "answer": "Alkoholfreies Bier hat rund 38 kcal/100ml bzw. 188 kcal pro 0,5l. Das sind etwa 14% weniger als normales Bier. Die Kalorien kommen hauptsächlich aus Malzzucker."
+    },
+    {
+      "question": "Warum hat Bier Kalorien, obwohl kein Fett drin ist?",
+      "answer": "Die Kalorien stammen zu 60-70% aus dem Alkohol (7 kcal/g) und zu 30-40% aus Kohlenhydraten/Malzzucker. Alkohol hat fast so viele Kalorien wie Fett."
+    }
   ],
-  "related_foods": ["wein-rot", "cola", "radler", "weizenbier"]
+  "related_foods": [
+    "wein-rot",
+    "cola",
+    "radler",
+    "weizenbier"
+  ]
 }

@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 169656 (Sugars, powdered), Werte je 100 g",
   "seo": {
     "title": "Puderzucker Kalorien: Nährwerte, Mengen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Puderzucker? 100g haben ca. 400 kcal, 1 EL ca. 50 kcal. Nährwerte, typische Mengen im Vergleich + Tipps zum Sparen.",
+    "description": "Wie viele Kalorien hat Puderzucker? 100g haben ca. 389 kcal, 1 EL ca. 31 kcal. Nährwerte, typische Mengen im Vergleich + Tipps zum Sparen.",
     "keywords": [
       "puderzucker kalorien",
       "puderzucker kcal",
@@ -17,9 +17,9 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 400,
+    "calories_per_100g": 389,
     "protein_per_100g": 0,
-    "carbs_per_100g": 100,
+    "carbs_per_100g": 99.8,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 8,
@@ -37,7 +37,7 @@
     {
       "name": "1 EL (8g)",
       "portion_g": 8,
-      "calories": 32,
+      "calories": 31,
       "protein": 0,
       "carbs": 8,
       "fat": 0,
@@ -46,7 +46,7 @@
     {
       "name": "Zum Bestäuben (5g)",
       "portion_g": 5,
-      "calories": 20,
+      "calories": 19,
       "protein": 0,
       "carbs": 5,
       "fat": 0,
@@ -55,7 +55,7 @@
     {
       "name": "Portion Zuckerguss (30g)",
       "portion_g": 30,
-      "calories": 120,
+      "calories": 117,
       "protein": 0,
       "carbs": 30,
       "fat": 0
@@ -63,7 +63,7 @@
     {
       "name": "1 Tasse (120g)",
       "portion_g": 120,
-      "calories": 480,
+      "calories": 467,
       "protein": 0,
       "carbs": 120,
       "fat": 0
@@ -71,7 +71,7 @@
     {
       "name": "Standard-Packung (250g)",
       "portion_g": 250,
-      "calories": 1000,
+      "calories": 973,
       "protein": 0,
       "carbs": 250,
       "fat": 0
@@ -79,43 +79,67 @@
     {
       "name": "Großpackung (500g)",
       "portion_g": 500,
-      "calories": 2000,
+      "calories": 1945,
       "protein": 0,
-      "carbs": 500,
+      "carbs": 499,
       "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Haushaltszucker (100g)",
-      "calories": 400,
-      "emoji": "🧂"
+      "calories": 387,
+      "emoji": "🧂",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Honig (100g)",
       "calories": 304,
-      "emoji": "🍯"
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Ahornsirup (100g)",
       "calories": 260,
-      "emoji": "🍁"
+      "emoji": "🍁",
+      "basis": [
+        {
+          "slug": "ahornsirup",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Stevia (100g)",
       "calories": 0,
-      "emoji": "🌿"
+      "emoji": "🌿",
+      "basis": [
+        {
+          "slug": "stevia",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sparsam bestäuben statt einrühren",
-      "text": "Eine dünne Schicht zum Bestäuben (ca. 5g) hat nur rund 20 kcal und sieht trotzdem hübsch aus. So sparst du gegenüber gezuckerten Glasuren viele Kalorien.",
+      "text": "Eine dünne Schicht zum Bestäuben (ca. 5g) hat nur rund 19 kcal und sieht trotzdem hübsch aus. So sparst du gegenüber gezuckerten Glasuren viele Kalorien.",
       "icon": "✨"
     },
     {
       "title": "Kalorien wie normaler Zucker",
-      "text": "Puderzucker ist nichts anderes als fein gemahlener Haushaltszucker. Mit ca. 400 kcal pro 100g liefert er praktisch gleich viele Kalorien wie Kristallzucker.",
+      "text": "Puderzucker ist nichts anderes als fein gemahlener Haushaltszucker. Mit ca. 389 kcal pro 100g liefert er praktisch gleich viele Kalorien wie Kristallzucker.",
       "icon": "⚖️"
     },
     {
@@ -137,15 +161,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Puderzucker?",
-      "answer": "Puderzucker hat ca. 400 kcal pro 100g. Ein Esslöffel (8g) liefert rund 32 kcal, ein Teelöffel (3g) etwa 12 kcal."
+      "answer": "Puderzucker hat ca. 389 kcal pro 100g. Ein Esslöffel (8g) liefert rund 31 kcal, ein Teelöffel (3g) etwa 12 kcal."
     },
     {
       "question": "Hat Puderzucker mehr Kalorien als normaler Zucker?",
-      "answer": "Nein. Puderzucker ist nur fein gemahlener Haushaltszucker und hat mit rund 400 kcal pro 100g praktisch die gleiche Kalorienmenge wie Kristallzucker."
+      "answer": "Nein. Puderzucker ist nur fein gemahlener Haushaltszucker und hat mit rund 389 kcal pro 100g praktisch die gleiche Kalorienmenge wie Kristallzucker (387 kcal)."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Puderzucker?",
-      "answer": "Puderzucker besteht zu fast 100 Prozent aus Kohlenhydraten, also rund 100g Zucker pro 100g. Eiweiß und Fett sind nicht enthalten."
+      "answer": "Puderzucker besteht zu fast 100 Prozent aus Kohlenhydraten (99,8g pro 100g), davon rund 98g Zucker. Eiweiß und Fett sind nicht enthalten."
     },
     {
       "question": "Wie viel Protein hat Puderzucker?",

@@ -60,7 +60,13 @@
       "protein": 1,
       "carbs": 13,
       "fat": 0,
-      "tip": "Pro Stück getrocknet"
+      "tip": "Pro Stück getrocknet",
+      "basis": [
+        {
+          "fdcId": 174665,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Getrocknete Feigen pro 100g",
@@ -68,7 +74,13 @@
       "calories": 249,
       "protein": 3,
       "carbs": 64,
-      "fat": 1
+      "fat": 1,
+      "basis": [
+        {
+          "fdcId": 174665,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Handvoll frische Feigen (150g)",
@@ -91,22 +103,46 @@
     {
       "name": "Weintrauben (50g)",
       "calories": 35,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "slug": "weintrauben",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Apfel (50g)",
       "calories": 26,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Banane (50g)",
       "calories": 45,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Getrocknete Feige (20g)",
       "calories": 50,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "fdcId": 174665,
+          "g": 20
+        }
+      ]
     }
   ],
   "tips": [

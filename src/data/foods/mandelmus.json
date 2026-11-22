@@ -19,9 +19,9 @@
   "overview": {
     "calories_per_100g": 614,
     "protein_per_100g": 21,
-    "carbs_per_100g": 19,
-    "fat_per_100g": 56,
-    "fiber_per_100g": 10,
+    "carbs_per_100g": 18.8,
+    "fat_per_100g": 55.5,
+    "fiber_per_100g": 10.3,
     "typical_portion_g": 15,
     "typical_portion_name": "1 EL (15g)"
   },
@@ -39,8 +39,8 @@
       "portion_g": 15,
       "calories": 92,
       "protein": 3.2,
-      "carbs": 2.9,
-      "fat": 8.4,
+      "carbs": 2.8,
+      "fat": 8.3,
       "tip": "Typische Portion auf Brot"
     },
     {
@@ -48,8 +48,8 @@
       "portion_g": 30,
       "calories": 184,
       "protein": 6.3,
-      "carbs": 5.7,
-      "fat": 16.8,
+      "carbs": 5.6,
+      "fat": 16.7,
       "tip": "Portion für Müsli oder Shake"
     },
     {
@@ -57,46 +57,70 @@
       "portion_g": 100,
       "calories": 614,
       "protein": 21,
-      "carbs": 19,
-      "fat": 56
+      "carbs": 18.8,
+      "fat": 55.5
     },
     {
       "name": "Mandelmus Glas (200g)",
       "portion_g": 200,
       "calories": 1228,
       "protein": 42,
-      "carbs": 38,
-      "fat": 112
+      "carbs": 37.6,
+      "fat": 111
     },
     {
       "name": "Mandelmus Glas (250g)",
       "portion_g": 250,
       "calories": 1535,
       "protein": 52.5,
-      "carbs": 47.5,
-      "fat": 140
+      "carbs": 47,
+      "fat": 138.8
     }
   ],
   "comparison": [
     {
-      "name": "Erdnussbutter",
-      "calories": 588,
-      "emoji": "🥜"
+      "name": "Erdnussbutter (100g)",
+      "calories": 598,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnussbutter",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Mandeln",
+      "name": "Mandeln (100g)",
       "calories": 579,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Nutella",
+      "name": "Nutella (100g)",
       "calories": 539,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "nutella",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Butter",
+      "name": "Butter (100g)",
       "calories": 717,
-      "emoji": "🧈"
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -133,7 +157,7 @@
     },
     {
       "question": "Wie viele Kalorien hat 1 EL Mandelmus?",
-      "answer": "Ein Esslöffel Mandelmus (ca. 15g) hat rund 92 kcal mit etwa 8,4g Fett und 3,2g Protein."
+      "answer": "Ein Esslöffel Mandelmus (ca. 15g) hat rund 92 kcal mit etwa 8,3g Fett und 3,2g Protein."
     },
     {
       "question": "Wie viel Protein steckt in Mandelmus?",

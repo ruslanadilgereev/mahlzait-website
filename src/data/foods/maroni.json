@@ -67,7 +67,7 @@
       "portion_g": 250,
       "calories": 613,
       "protein": 8,
-      "carbs": 132,
+      "carbs": 133,
       "fat": 6
     },
     {
@@ -77,7 +77,13 @@
       "protein": 2,
       "carbs": 44,
       "fat": 1,
-      "tip": "Roh deutlich kalorienärmer"
+      "tip": "Roh deutlich kalorienärmer",
+      "basis": [
+        {
+          "fdcId": 170575,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Maroni gekocht (100g)",
@@ -86,29 +92,59 @@
       "protein": 2,
       "carbs": 28,
       "fat": 1,
-      "tip": "Wasserreich, am kalorienärmsten"
+      "tip": "Wasserreich, am kalorienärmsten",
+      "basis": [
+        {
+          "fdcId": 170168,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Mandeln",
+      "name": "Mandeln (100g)",
       "calories": 579,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Walnüsse",
+      "name": "Walnüsse (100g)",
       "calories": 654,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "walnuesse",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Banane",
+      "name": "Banane (100g)",
       "calories": 89,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kartoffeln",
-      "calories": 77,
-      "emoji": "🥔"
+      "name": "Kartoffeln, gekocht (100g)",
+      "calories": 86,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

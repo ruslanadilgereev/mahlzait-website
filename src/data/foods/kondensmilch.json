@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 2705399 (Milk, evaporated, whole), Werte je 100 g",
   "seo": {
     "title": "Kondensmilch Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kondensmilch? Standard mit 7,5% Fett hat ca. 135 kcal pro 100g. Nährwerte pro Portion, Fettstufen im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat Kondensmilch? Standard mit 7,5% Fett hat ca. 134 kcal pro 100g. Nährwerte pro Portion, Vergleich + Tipps.",
     "keywords": [
       "kondensmilch kalorien",
       "kondensmilch kcal",
@@ -17,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 135,
-    "protein_per_100g": 6.6,
-    "carbs_per_100g": 9.7,
-    "fat_per_100g": 7.5,
+    "calories_per_100g": 134,
+    "protein_per_100g": 6.8,
+    "carbs_per_100g": 10,
+    "fat_per_100g": 7.6,
     "fiber_per_100g": 0,
     "typical_portion_g": 15,
     "typical_portion_name": "1 Schuss für Kaffee (15g)"
@@ -39,48 +39,37 @@
       "name": "1 EL (20g)",
       "portion_g": 20,
       "calories": 27,
-      "protein": 1.3,
-      "carbs": 1.9,
+      "protein": 1.4,
+      "carbs": 2,
       "fat": 1.5
     },
     {
       "name": "Kleine Dose (170g)",
       "portion_g": 170,
-      "calories": 230,
-      "protein": 11.2,
-      "carbs": 16.5,
-      "fat": 12.8
-    },
-    {
-      "name": "Kondensmilch 4% Fett (100g)",
-      "portion_g": 100,
-      "calories": 109,
-      "protein": 7,
-      "carbs": 10,
-      "fat": 4,
-      "tip": "Fettarme Variante"
-    },
-    {
-      "name": "Kondensmilch 10% Fett (100g)",
-      "portion_g": 100,
-      "calories": 160,
-      "protein": 6.2,
-      "carbs": 9.3,
-      "fat": 10
+      "calories": 228,
+      "protein": 11.6,
+      "carbs": 17,
+      "fat": 12.9
     },
     {
       "name": "Gezuckerte Kondensmilch (100g)",
       "portion_g": 100,
-      "calories": 320,
+      "calories": 321,
       "protein": 7.9,
-      "carbs": 54,
+      "carbs": 54.4,
       "fat": 8.7,
-      "tip": "Stark gezuckert"
+      "tip": "Stark gezuckert",
+      "basis": [
+        {
+          "fdcId": 171275,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Pro Tasse Kaffee (10g)",
       "portion_g": 10,
-      "calories": 14,
+      "calories": 13,
       "protein": 0.7,
       "carbs": 1,
       "fat": 0.8
@@ -89,23 +78,47 @@
   "comparison": [
     {
       "name": "Vollmilch (100g)",
-      "calories": 65,
-      "emoji": "🥛"
+      "calories": 61,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Sahne (100g)",
-      "calories": 309,
-      "emoji": "🥛"
+      "calories": 292,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sahne",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kaffeesahne (100g)",
-      "calories": 134,
-      "emoji": "🥛"
+      "calories": 131,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "kaffeesahne",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kokosmilch (100g)",
       "calories": 197,
-      "emoji": "🥥"
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "kokosmilch",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -116,17 +129,17 @@
     },
     {
       "title": "Fettstufe beachten",
-      "text": "Kondensmilch gibt es mit 4%, 7,5% und 10% Fett. Die 4%-Variante spart pro 100g rund 26 kcal gegenüber dem Standard mit 7,5%.",
+      "text": "Kondensmilch gibt es mit 4%, 7,5% und 10% Fett. Die 4%-Variante spart gegenüber dem Standard mit 7,5% spürbar Kalorien.",
       "icon": "🥛"
     },
     {
       "title": "Gezuckert ist eine andere Liga",
-      "text": "Gezuckerte Kondensmilch hat mit rund 320 kcal pro 100g fast das Doppelte der ungezuckerten Variante. Sie ist eher Dessert-Zutat als Kaffeezusatz.",
+      "text": "Gezuckerte Kondensmilch hat mit rund 321 kcal pro 100g mehr als das Doppelte der ungezuckerten Variante. Sie ist eher Dessert-Zutat als Kaffeezusatz.",
       "icon": "🍯"
     },
     {
       "title": "Solide Proteinquelle in kleinen Mengen",
-      "text": "Durch das Eindampfen ist Kondensmilch konzentrierter als normale Milch und liefert pro 100g etwa 6,6g Eiweiß sowie Calcium.",
+      "text": "Durch das Eindampfen ist Kondensmilch konzentrierter als normale Milch und liefert pro 100g etwa 6,8g Eiweiß sowie Calcium.",
       "icon": "💪"
     },
     {
@@ -138,7 +151,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kondensmilch?",
-      "answer": "Standard-Kondensmilch mit 7,5% Fett hat rund 135 kcal pro 100g. Ein typischer Schuss für den Kaffee (15g) liefert etwa 20 kcal."
+      "answer": "Standard-Kondensmilch mit 7,5% Fett hat rund 134 kcal pro 100g. Ein typischer Schuss für den Kaffee (15g) liefert etwa 20 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Schuss Kondensmilch im Kaffee?",
@@ -146,11 +159,11 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kondensmilch?",
-      "answer": "Ungezuckerte Kondensmilch enthält etwa 9,7g Kohlenhydrate pro 100g, hauptsächlich Milchzucker. Gezuckerte Varianten kommen auf über 50g."
+      "answer": "Ungezuckerte Kondensmilch enthält etwa 10g Kohlenhydrate pro 100g, hauptsächlich Milchzucker. Gezuckerte Varianten kommen auf über 50g."
     },
     {
       "question": "Wie viel Protein hat Kondensmilch?",
-      "answer": "Kondensmilch liefert rund 6,6g Eiweiß pro 100g und ist damit eiweißreicher als normale Vollmilch, da sie durch Eindampfen konzentriert wird."
+      "answer": "Kondensmilch liefert rund 6,8g Eiweiß pro 100g und ist damit eiweißreicher als normale Vollmilch, da sie durch Eindampfen konzentriert wird."
     },
     {
       "question": "Ist Kondensmilch zum Abnehmen geeignet?",

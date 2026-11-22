@@ -35,7 +35,13 @@
       "protein": 11.9,
       "carbs": 3.7,
       "fat": 2.2,
-      "tip": "Roh, vor dem Garen"
+      "tip": "Roh, vor dem Garen",
+      "basis": [
+        {
+          "fdcId": 174216,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Muschelfleisch gekocht (100g)",
@@ -50,68 +56,65 @@
       "name": "1 Portion gekocht (150g)",
       "portion_g": 150,
       "calories": 258,
-      "protein": 36,
-      "carbs": 11,
-      "fat": 7,
+      "protein": 35.7,
+      "carbs": 11.1,
+      "fat": 6.8,
       "tip": "Standard-Portion"
     },
     {
       "name": "1 kg Miesmuscheln in Schale (ca. 250g Fleisch)",
       "portion_g": 250,
       "calories": 430,
-      "protein": 60,
-      "carbs": 19,
-      "fat": 11,
+      "protein": 59.5,
+      "carbs": 18.5,
+      "fat": 11.3,
       "tip": "Klassisches Muschelgericht ohne Sud"
-    },
-    {
-      "name": "Muscheln in Weißweinsud (Portion 300g)",
-      "portion_g": 300,
-      "calories": 320,
-      "protein": 38,
-      "carbs": 13,
-      "fat": 9,
-      "tip": "Fleisch plus etwas Sud"
-    },
-    {
-      "name": "Miesmuscheln aus der Dose, abgetropft (100g)",
-      "portion_g": 100,
-      "calories": 110,
-      "protein": 15,
-      "carbs": 4,
-      "fat": 3,
-      "tip": "Eingelegt in Lake"
-    },
-    {
-      "name": "Panierte Muscheln, frittiert (100g)",
-      "portion_g": 100,
-      "calories": 230,
-      "protein": 14,
-      "carbs": 18,
-      "fat": 12,
-      "tip": "Durch Panade & Fett kalorienreicher"
     }
   ],
   "comparison": [
     {
       "name": "Garnelen (100g gekocht)",
       "calories": 99,
-      "emoji": "🦐"
+      "emoji": "🦐",
+      "basis": [
+        {
+          "slug": "garnelen",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Lachs (100g gegart)",
-      "calories": 208,
-      "emoji": "🐟"
+      "calories": 206,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "fdcId": 175168,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust (100g gegart)",
       "calories": 165,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Thunfisch aus der Dose (100g)",
-      "calories": 116,
-      "emoji": "🐟"
+      "calories": 86,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "thunfisch-dose",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -132,7 +135,7 @@
     },
     {
       "title": "Vorsicht bei Panade",
-      "text": "Frittierte oder panierte Muscheln haben durch Mehl und Frittierfett rund doppelt so viele Kalorien wie gedämpfte. Für eine kalorienbewusste Mahlzeit besser dämpfen statt frittieren.",
+      "text": "Frittierte oder panierte Muscheln haben durch Mehl und Frittierfett deutlich mehr Kalorien als gedämpfte. Für eine kalorienbewusste Mahlzeit besser dämpfen statt frittieren.",
       "icon": "🍤"
     },
     {

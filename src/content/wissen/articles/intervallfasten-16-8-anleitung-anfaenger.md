@@ -167,7 +167,7 @@ Die wichtigste Regel: **Keine Kalorien während der Fastenphase.**
 | Smoothies | 150-300 kcal, unterbricht Fasten komplett |
 | Cola, Fanta, Sprite | Pures Zucker |
 | Alkohol | Kalorien + unterbricht Fettverbrennung |
-| Milch | 65 kcal pro 100ml |
+| Milch | 63 kcal pro 100ml |
 | Gesüßte Tees (Eistee, Chai Latte) | Versteckte Kalorien |
 
 **Pro-Tipp:** Schwarzer Kaffee ist dein bester Freund beim Fasten. Er unterdrückt Hunger, steigert die Fettverbrennung und verstärkt die Autophagie. Mehr dazu in unserem Artikel [Kaffee und Abnehmen](/wissen/kaffee-abnehmen-stoffwechsel).
@@ -213,11 +213,10 @@ Intervallfasten gibt dir keine Lebensmittel vor – aber für optimale Ergebniss
 
 | Snack | Kalorien (ca.) | Protein |
 |-------|----------------|---------|
-| Handvoll Mandeln (30g) | 180 kcal | 6g |
+| Handvoll Mandeln (30g) | 174 kcal | 6g |
 | Naturjoghurt mit Beeren | 150 kcal | 12g |
-| Apfel mit Erdnussbutter (1 EL) | 200 kcal | 5g |
+| Apfel mit Erdnussbutter (1 EL) | 213 kcal | 5g |
 | Gemüsesticks mit Hummus | 180 kcal | 7g |
-| Proteinriegel | 200-250 kcal | 15-20g |
 
 **Für die letzte Mahlzeit (z.B. 19:00-19:30 Uhr):**
 
@@ -251,7 +250,7 @@ Dieser Plan nutzt das 12:00–20:00 Uhr Essensfenster. Passe die Zeiten an deine
 ### Tag 2 (Dienstag): Routine etablieren
 - **7:00:** Wasser, dann Kaffee
 - **12:00:** **Erste Mahlzeit** – Shakshuka (2 Eier in Tomatensauce) mit Vollkornbrot (~450 kcal)
-- **16:00:** **Snack** – Apfel mit 1 EL Erdnussbutter (~200 kcal)
+- **16:00:** **Snack**: Apfel mit 1 EL Erdnussbutter (~213 kcal)
 - **19:30:** **Abendessen** – Hähnchen-Gemüsepfanne mit braunem Reis (~550 kcal, 40g Protein)
 - **20:00:** Fastenstart
 

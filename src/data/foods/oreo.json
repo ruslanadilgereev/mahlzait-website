@@ -3,10 +3,10 @@
   "name": "Oreo",
   "emoji": "🍪",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 172718 (Cookies, chocolate sandwich, with creme filling, regular), Werte je 100 g; allgemeiner FDC-Eintrag, FDC führt Oreo nicht",
+  "source": "USDA FoodData Central, FDC-ID 172718 (Cookies, chocolate sandwich, with creme filling, regular), Werte je 100 g",
   "seo": {
     "title": "Oreo Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Oreo? Ein Keks (ca. 11 g) hat rund 53 kcal, 100 g rund 480 kcal. Nährwerte, Protein, Kohlenhydrate & Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Oreo? Ein Keks (ca. 11 g) hat rund 51 kcal, 100 g rund 464 kcal. Nährwerte, Protein, Kohlenhydrate & Diät-Tipps im Überblick.",
     "keywords": [
       "oreo kalorien",
       "oreo kcal",
@@ -18,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 480,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 69,
-    "fat_per_100g": 20,
-    "fiber_per_100g": 3.4,
+    "calories_per_100g": 464,
+    "protein_per_100g": 5.2,
+    "carbs_per_100g": 71,
+    "fat_per_100g": 19.1,
+    "fiber_per_100g": 2.9,
     "typical_portion_g": 11,
     "typical_portion_name": "1 Oreo Keks (ca. 11 g)"
   },
@@ -30,90 +30,103 @@
     {
       "name": "1 Oreo Keks (11 g)",
       "portion_g": 11,
-      "calories": 53,
+      "calories": 51,
       "protein": 0.6,
-      "carbs": 7.6,
-      "fat": 2.2,
+      "carbs": 7.8,
+      "fat": 2.1,
       "tip": "Standard"
     },
     {
       "name": "2 Oreo Kekse (22 g)",
       "portion_g": 22,
-      "calories": 106,
+      "calories": 102,
       "protein": 1.1,
-      "carbs": 15.2,
-      "fat": 4.4
+      "carbs": 15.6,
+      "fat": 4.2
     },
     {
       "name": "3 Oreo Kekse (33 g)",
       "portion_g": 33,
-      "calories": 158,
+      "calories": 153,
       "protein": 1.7,
-      "carbs": 22.8,
-      "fat": 6.6,
+      "carbs": 23.4,
+      "fat": 6.3,
       "tip": "Empfohlene Portion laut Packung"
     },
     {
       "name": "Mini-Packung (66 g)",
       "portion_g": 66,
-      "calories": 317,
-      "protein": 3.3,
-      "carbs": 45.5,
-      "fat": 13.2
+      "calories": 306,
+      "protein": 3.4,
+      "carbs": 46.9,
+      "fat": 12.6
     },
     {
       "name": "Halbe Standardrolle (110 g)",
       "portion_g": 110,
-      "calories": 528,
-      "protein": 5.5,
-      "carbs": 75.9,
-      "fat": 22
+      "calories": 510,
+      "protein": 5.7,
+      "carbs": 78.1,
+      "fat": 21
     },
     {
       "name": "Ganze Standardrolle (154 g)",
       "portion_g": 154,
-      "calories": 739,
-      "protein": 7.7,
-      "carbs": 106.3,
-      "fat": 30.8
+      "calories": 715,
+      "protein": 8,
+      "carbs": 109.3,
+      "fat": 29.4
     }
   ],
   "comparison": [
     {
-      "name": "Butterkeks (1 Stück)",
-      "calories": 20,
-      "emoji": "🍪"
+      "name": "Butterkekse (25g)",
+      "calories": 117,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "butterkeks",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Leibniz Keks (1 Stück)",
-      "calories": 30,
-      "emoji": "🍪"
+      "name": "Vollmilch-Schokolade (25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Prinzenrolle (1 Stück)",
-      "calories": 72,
-      "emoji": "🍪"
-    },
-    {
-      "name": "Schokokeks (1 Stück)",
-      "calories": 95,
-      "emoji": "🍫"
+      "name": "Chocolate-Chip-Cookies (25g)",
+      "calories": 111,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "fdcId": 172717,
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eine kleine Portion abzählen",
-      "text": "Ein einzelner Oreo hat nur rund 53 kcal. Wer 2 bis 3 Kekse bewusst abzählt, bleibt bei 106 bis 158 kcal statt versehentlich die halbe Rolle zu essen.",
+      "text": "Ein einzelner Oreo hat nur rund 51 kcal. Wer 2 bis 3 Kekse bewusst abzählt, bleibt bei 102 bis 153 kcal statt versehentlich die halbe Rolle zu essen.",
       "icon": "🔢"
     },
     {
       "title": "Fett und Zucker im Blick",
-      "text": "Oreos bestehen zu rund 69 % aus Kohlenhydraten und enthalten 20 g Fett pro 100 g. Sie sind ein süßer Genuss, kein Sattmacher.",
+      "text": "Oreos bestehen zu rund 71 % aus Kohlenhydraten und enthalten 19 g Fett pro 100 g. Sie sind ein süßer Genuss, kein Sattmacher.",
       "icon": "🍩"
     },
     {
       "title": "Mit Milch bewusst genießen",
-      "text": "Der Klassiker Oreo in Milch macht Spaß, fügt aber Kalorien hinzu. Ein Glas fettarme Milch (200 ml) bringt rund 94 kcal extra.",
+      "text": "Der Klassiker Oreo in Milch macht Spaß, fügt aber die Kalorien der Milch hinzu.",
       "icon": "🥛"
     },
     {
@@ -130,15 +143,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Oreo?",
-      "answer": "Ein einzelner Oreo Keks (ca. 11 g) hat rund 53 kcal. Pro 100 g sind es etwa 480 kcal."
+      "answer": "Ein einzelner Oreo Keks (ca. 11 g) hat rund 51 kcal. Pro 100 g sind es etwa 464 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 3 Oreos?",
-      "answer": "Drei Oreo Kekse (ca. 33 g) haben zusammen rund 158 kcal. Das entspricht der auf der Packung empfohlenen Portion."
+      "answer": "Drei Oreo Kekse (ca. 33 g) haben zusammen rund 153 kcal. Das entspricht der auf der Packung empfohlenen Portion."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Oreo?",
-      "answer": "Oreos enthalten rund 69 g Kohlenhydrate pro 100 g, davon ein hoher Anteil Zucker. Ein einzelner Keks hat etwa 7,6 g Kohlenhydrate."
+      "answer": "Oreos enthalten rund 71 g Kohlenhydrate pro 100 g, davon ein hoher Anteil Zucker. Ein einzelner Keks hat etwa 7,8 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Oreos?",

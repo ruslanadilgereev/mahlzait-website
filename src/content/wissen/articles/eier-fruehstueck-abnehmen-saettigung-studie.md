@@ -32,7 +32,7 @@ Die Botschaft ist konsistent: Der Vorteil von Eiern liegt darin, dass sie sponta
 
 - Wenn Sie ohne Kalorienzählen abnehmen möchten, kann ein Ei-Frühstück helfen, von selbst weniger über den Tag zu essen - Sättigung erledigt dann einen Teil der Arbeit.
 - Realistisch sind über 24 Stunden grob 200-400 kcal weniger - keine Garantie, aber ein nützlicher Rückenwind.
-- Achten Sie auf die Zubereitung: zwei Eier liefern rund 140-160 kcal, aber Butter, Öl, Speck oder Käse summieren sich schnell. Den genauen Wert sehen Sie bei [Ei](/kalorien/ei/).
+- Achten Sie auf die Zubereitung: zwei Eier liefern rund 186 kcal, aber Butter, Öl, Speck oder Käse summieren sich schnell. Den genauen Wert sehen Sie bei [Ei](/kalorien/ei/).
 - Eiweiß ist der eigentliche Wirkstoff. Wer keine Eier mag, erreicht denselben Effekt mit Quark, Skyr oder Hülsenfrüchten. Ihren Bedarf können Sie mit dem [Protein-Bedarf-Rechner](/protein-bedarf-rechner/) abschätzen.
 - Eier ersetzen kein Kaloriendefizit. Prüfen Sie Ihren Spielraum mit [Kaloriendefizit berechnen](/kaloriendefizit-berechnen/).
 

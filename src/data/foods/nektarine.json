@@ -20,7 +20,7 @@
   "overview": {
     "calories_per_100g": 44,
     "protein_per_100g": 1.1,
-    "carbs_per_100g": 10.5,
+    "carbs_per_100g": 10.6,
     "fat_per_100g": 0.3,
     "fiber_per_100g": 1.7,
     "typical_portion_g": 140,
@@ -81,24 +81,45 @@
   ],
   "comparison": [
     {
-      "name": "Pfirsich (mittel)",
-      "calories": 55,
-      "emoji": "🍑"
+      "name": "Pfirsich (mittel, 150g)",
+      "calories": 59,
+      "emoji": "🍑",
+      "basis": [
+        {
+          "fdcId": 169928,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Apfel (mittel)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel"
+        }
+      ]
     },
     {
       "name": "Orange (mittel)",
-      "calories": 62,
-      "emoji": "🍊"
+      "calories": 80,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "orange"
+        }
+      ]
     },
     {
       "name": "Banane (mittel)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane"
+        }
+      ]
     }
   ],
   "tips": [
@@ -139,7 +160,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Nektarine?",
-      "answer": "Pro 100 g enthält eine Nektarine etwa 10,5 g Kohlenhydrate, überwiegend in Form von natürlichem Fruchtzucker. Eine mittlere Nektarine (140g) hat rund 15 g."
+      "answer": "Pro 100 g enthält eine Nektarine etwa 10,6 g Kohlenhydrate, überwiegend in Form von natürlichem Fruchtzucker. Eine mittlere Nektarine (140g) hat rund 15 g."
     },
     {
       "question": "Wie viel Protein hat eine Nektarine?",

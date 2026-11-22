@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 175116 (Fish, herring, Atlantic, raw), Werte je 100 g",
   "seo": {
     "title": "Hering Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Hering? Roher Hering hat ca. 158 kcal pro 100g. Nährwerte, Matjes & Rollmops im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Hering? Roher Hering hat ca. 158 kcal pro 100g. Nährwerte, Bismarckhering & Rollmops im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "hering kalorien",
       "hering kcal",
@@ -47,68 +47,81 @@
       "tip": "Typische Portion"
     },
     {
-      "name": "Matjesfilet (100g)",
-      "portion_g": 100,
-      "calories": 234,
-      "protein": 18,
-      "carbs": 0,
-      "fat": 18,
-      "tip": "Fettreicher Jungfisch in Salzlake"
-    },
-    {
       "name": "Bismarckhering, sauer eingelegt (100g)",
       "portion_g": 100,
-      "calories": 205,
-      "protein": 16,
-      "carbs": 1,
-      "fat": 15
+      "calories": 262,
+      "protein": 14,
+      "carbs": 10,
+      "fat": 18,
+      "basis": [
+        {
+          "fdcId": 175118,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "1 Rollmops (80g)",
       "portion_g": 80,
-      "calories": 155,
-      "protein": 13,
-      "carbs": 1,
-      "fat": 11
-    },
-    {
-      "name": "Brathering paniert (150g)",
-      "portion_g": 150,
-      "calories": 320,
-      "protein": 26,
+      "calories": 210,
+      "protein": 11,
       "carbs": 8,
-      "fat": 21,
-      "tip": "Mehr Kalorien durch Panade und Öl"
+      "fat": 14,
+      "basis": [
+        {
+          "fdcId": 175118,
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Hering geräuchert / Bückling (100g)",
       "portion_g": 100,
-      "calories": 220,
-      "protein": 22,
+      "calories": 217,
+      "protein": 25,
       "carbs": 0,
-      "fat": 15
+      "fat": 12,
+      "basis": [
+        {
+          "fdcId": 173668,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Lachs (100g, roh)",
       "calories": 208,
-      "emoji": "🍣"
+      "emoji": "🍣",
+      "basis": [
+        {
+          "slug": "lachs",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Forelle (100g)",
-      "calories": 119,
-      "emoji": "🐟"
+      "calories": 141,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "forelle",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Thunfisch (100g, Dose im eigenen Saft)",
-      "calories": 116,
-      "emoji": "🐟"
-    },
-    {
-      "name": "Matjes (100g)",
-      "calories": 234,
-      "emoji": "🐟"
+      "calories": 86,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "thunfisch-dose",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -124,7 +137,7 @@
     },
     {
       "title": "Auf die Zubereitung achten",
-      "text": "Roher oder gegrillter Hering hat etwa 158 kcal pro 100g. Matjes (234 kcal) und panierter Brathering liegen deutlich höher, weil Salzlake, Panade und Öl Kalorien hinzufügen.",
+      "text": "Roher Hering hat etwa 158 kcal pro 100g. Sauer eingelegter Bismarckhering und Rollmops liegen mit rund 262 kcal pro 100g deutlich höher, weil die Marinade Kalorien hinzufügt.",
       "icon": "🍳"
     },
     {
@@ -141,11 +154,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Hering?",
-      "answer": "Roher oder gegrillter Hering hat etwa 158 kcal pro 100g. Ein typisches Heringsfilet (125g) kommt auf rund 198 kcal."
+      "answer": "Roher Hering hat etwa 158 kcal pro 100g. Ein typisches Heringsfilet (125g) kommt auf rund 198 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Matjes?",
-      "answer": "Matjes ist fettreicher als frischer Hering und hat rund 234 kcal pro 100g, bei etwa 18g Eiweiß und 18g Fett."
+      "answer": "Für Matjes führt die USDA-Datenbank keinen eigenen Wert. Matjes ist fettreicher als frischer Hering, die genauen Werte stehen auf der Packung."
     },
     {
       "question": "Hat Hering Kohlenhydrate?",

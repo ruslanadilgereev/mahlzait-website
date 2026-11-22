@@ -63,19 +63,35 @@
       "name": "Gekocht / gedünstet (150g)",
       "portion_g": 150,
       "calories": 18,
-      "protein": 2.4,
+      "protein": 2.3,
       "carbs": 2.7,
-      "fat": 0.3,
-      "tip": "Schonend gegart"
+      "fat": 0.2,
+      "tip": "Schonend gegart",
+      "basis": [
+        {
+          "fdcId": 170391,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Aus der Pfanne mit 1 TL Öl (150g)",
       "portion_g": 150,
-      "calories": 63,
-      "protein": 2.4,
-      "carbs": 2.7,
-      "fat": 5.3,
-      "tip": "Mit Bratfett"
+      "calories": 62,
+      "protein": 2.3,
+      "carbs": 2.6,
+      "fat": 5.2,
+      "tip": "Mit Bratfett",
+      "basis": [
+        {
+          "fdcId": 170391,
+          "g": 145
+        },
+        {
+          "fdcId": 172336,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Große Portion Beilage (200g)",
@@ -90,22 +106,46 @@
     {
       "name": "Spinat (100g)",
       "calories": 23,
-      "emoji": "🥬"
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "spinat",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Brokkoli (100g)",
       "calories": 34,
-      "emoji": "🥦"
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Chinakohl (100g)",
       "calories": 16,
-      "emoji": "🥬"
+      "emoji": "🥬",
+      "basis": [
+        {
+          "fdcId": 169979,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Gurke (100g)",
-      "calories": 12,
-      "emoji": "🥒"
+      "calories": 15,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "gurke",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

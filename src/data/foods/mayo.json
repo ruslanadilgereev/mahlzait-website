@@ -21,7 +21,7 @@
     "calories_per_100g": 680,
     "protein_per_100g": 1,
     "carbs_per_100g": 0.6,
-    "fat_per_100g": 75,
+    "fat_per_100g": 74.9,
     "fiber_per_100g": 0,
     "typical_portion_g": 15,
     "typical_portion_name": "1 Esslöffel (15g)"
@@ -31,17 +31,17 @@
       "name": "1 Teelöffel (5g)",
       "portion_g": 5,
       "calories": 34,
-      "protein": 0,
+      "protein": 0.1,
       "carbs": 0,
-      "fat": 3.8
+      "fat": 3.7
     },
     {
       "name": "1 Esslöffel (15g)",
       "portion_g": 15,
       "calories": 102,
-      "protein": 0,
+      "protein": 0.2,
       "carbs": 0.1,
-      "fat": 11.3,
+      "fat": 11.2,
       "tip": "Standard"
     },
     {
@@ -71,11 +71,17 @@
     {
       "name": "Leichte Mayonnaise, 1 EL (15g)",
       "portion_g": 15,
-      "calories": 50,
-      "protein": 0,
-      "carbs": 0.9,
-      "fat": 5,
-      "tip": "Kalorienärmere Wahl"
+      "calories": 36,
+      "protein": 0.1,
+      "carbs": 1.4,
+      "fat": 3.3,
+      "tip": "Kalorienärmere Wahl",
+      "basis": [
+        {
+          "fdcId": 2710220,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Mayonnaise pur (100g)",
@@ -83,29 +89,42 @@
       "calories": 680,
       "protein": 1,
       "carbs": 0.6,
-      "fat": 75
+      "fat": 74.9
     }
   ],
   "comparison": [
     {
       "name": "Ketchup (100g)",
-      "calories": 110,
-      "emoji": "🍅"
+      "calories": 101,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "ketchup",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Senf (100g)",
-      "calories": 100,
-      "emoji": "🌭"
+      "calories": 60,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "senf",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Butter (100g)",
       "calories": 717,
-      "emoji": "🧈"
-    },
-    {
-      "name": "Joghurt-Dressing (100g)",
-      "calories": 200,
-      "emoji": "🥗"
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -116,7 +135,7 @@
     },
     {
       "title": "Leichte Variante wählen",
-      "text": "Leichte Mayonnaise hat mit etwa 330 kcal pro 100g nur halb so viele Kalorien wie die klassische. Bei gleichem Geschmackswunsch ist sie die kalorienärmere Alternative.",
+      "text": "Leichte Mayonnaise hat laut FDC mit etwa 238 kcal pro 100g nur gut ein Drittel der Kalorien der klassischen. Bei gleichem Geschmackswunsch ist sie die kalorienärmere Alternative.",
       "icon": "🪶"
     },
     {

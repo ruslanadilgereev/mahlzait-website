@@ -46,7 +46,7 @@
     },
     {
       "name": "Tafelessig 100ml",
-      "portion_g": 100,
+      "portion_g": 101,
       "calories": 18,
       "protein": 0,
       "carbs": 0,
@@ -59,62 +59,104 @@
       "protein": 0,
       "carbs": 0.1,
       "fat": 0,
-      "tip": "Beliebt als Morgentrunk"
+      "tip": "Beliebt als Morgentrunk",
+      "basis": [
+        {
+          "fdcId": 173469,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Apfelessig 100ml",
-      "portion_g": 100,
+      "portion_g": 101,
       "calories": 21,
       "protein": 0,
       "carbs": 0.9,
-      "fat": 0
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 173469,
+          "ml": 100,
+          "g": 101
+        }
+      ]
     },
     {
       "name": "Balsamico-Essig 1 EL (15g)",
       "portion_g": 15,
       "calories": 13,
       "protein": 0.1,
-      "carbs": 2.7,
+      "carbs": 2.6,
       "fat": 0,
-      "tip": "Süßlich durch Restzucker"
+      "tip": "Süßlich durch Restzucker",
+      "basis": [
+        {
+          "fdcId": 172241,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Balsamico-Essig 100ml",
-      "portion_g": 100,
-      "calories": 88,
+      "portion_g": 108,
+      "calories": 95,
       "protein": 0.5,
-      "carbs": 17,
-      "fat": 0
-    },
-    {
-      "name": "Weißweinessig 1 EL (15g)",
-      "portion_g": 15,
-      "calories": 3,
-      "protein": 0,
-      "carbs": 0.1,
-      "fat": 0
+      "carbs": 18.4,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 172241,
+          "ml": 100,
+          "g": 108
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Zitronensaft (100ml)",
+      "name": "Zitronensaft (100g)",
       "calories": 22,
-      "emoji": "🍋"
+      "emoji": "🍋",
+      "basis": [
+        {
+          "slug": "zitronensaft",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Sojasauce (100ml)",
+      "name": "Sojasauce (100g)",
       "calories": 53,
-      "emoji": "🍶"
+      "emoji": "🍶",
+      "basis": [
+        {
+          "slug": "sojasauce",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Balsamico (100ml)",
+      "name": "Balsamico (100g)",
       "calories": 88,
-      "emoji": "🍶"
+      "emoji": "🍶",
+      "basis": [
+        {
+          "slug": "balsamico",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Olivenöl (100ml)",
+      "name": "Olivenöl (100g)",
       "calories": 884,
-      "emoji": "🫒"
+      "emoji": "🫒",
+      "basis": [
+        {
+          "slug": "olivenoel",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

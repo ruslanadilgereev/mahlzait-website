@@ -40,7 +40,7 @@
       "portion_g": 50,
       "calories": 33,
       "protein": 0.4,
-      "carbs": 8,
+      "carbs": 8.3,
       "fat": 0.2
     },
     {
@@ -57,48 +57,69 @@
       "portion_g": 150,
       "calories": 99,
       "protein": 1.2,
-      "carbs": 25,
+      "carbs": 24.8,
       "fat": 0.6
-    },
-    {
-      "name": "Litschi aus der Dose, abgetropft (140g)",
-      "portion_g": 140,
-      "calories": 106,
-      "protein": 0.6,
-      "carbs": 26,
-      "fat": 0.3,
-      "tip": "Gezuckert, mehr Kalorien"
     },
     {
       "name": "Litschi getrocknet (30g)",
       "portion_g": 30,
       "calories": 83,
       "protein": 1.1,
-      "carbs": 20,
+      "carbs": 21.2,
       "fat": 0.4,
-      "tip": "Konzentriert, viel Zucker"
+      "tip": "Konzentriert, viel Zucker",
+      "basis": [
+        {
+          "fdcId": 169087,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Litschi (100g)",
       "calories": 66,
-      "emoji": "🍒"
+      "emoji": "🍒",
+      "basis": [
+        {
+          "slug": "litschi",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Weintrauben (100g)",
       "calories": 69,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "slug": "weintrauben",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kiwi (100g)",
       "calories": 61,
-      "emoji": "🥝"
+      "emoji": "🥝",
+      "basis": [
+        {
+          "slug": "kiwi",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Mango (100g)",
       "calories": 60,
-      "emoji": "🥭"
+      "emoji": "🥭",
+      "basis": [
+        {
+          "slug": "mango",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

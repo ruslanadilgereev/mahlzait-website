@@ -81,32 +81,62 @@
       "name": "1 TL Knoblauchpulver (3g)",
       "portion_g": 3,
       "calories": 10,
-      "protein": 1,
+      "protein": 0,
       "carbs": 2,
       "fat": 0,
-      "tip": "Pulver ist konzentrierter: ca. 331 kcal/100g"
+      "tip": "Pulver ist konzentrierter: ca. 331 kcal/100g",
+      "basis": [
+        {
+          "fdcId": 171325,
+          "g": 3
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Zwiebel (40g)",
       "calories": 16,
-      "emoji": "🧅"
+      "emoji": "🧅",
+      "basis": [
+        {
+          "slug": "zwiebel",
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Knoblauch (40g)",
       "calories": 60,
-      "emoji": "🧄"
+      "emoji": "🧄",
+      "basis": [
+        {
+          "slug": "knoblauch",
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Ingwer (40g)",
       "calories": 32,
-      "emoji": "🫚"
+      "emoji": "🫚",
+      "basis": [
+        {
+          "slug": "ingwer",
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Schalotte (40g)",
       "calories": 29,
-      "emoji": "🧅"
+      "emoji": "🧅",
+      "basis": [
+        {
+          "fdcId": 170499,
+          "g": 40
+        }
+      ]
     }
   ],
   "tips": [

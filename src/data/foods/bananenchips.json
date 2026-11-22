@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 168849 (Snacks, banana chips), Werte je 100 g",
   "seo": {
     "title": "Bananenchips Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Bananenchips? Ca. 519 kcal pro 100g – frittiert & gesüßt. Nährwerte, Portionen im Vergleich & ehrliche Diät-Tipps.",
+    "description": "Wie viele Kalorien haben Bananenchips? Ca. 519 kcal pro 100g, frittiert & gesüßt. Nährwerte, Portionen im Vergleich & ehrliche Diät-Tipps.",
     "keywords": [
       "bananenchips kalorien",
       "bananenchips kcal",
@@ -20,8 +20,8 @@
   "overview": {
     "calories_per_100g": 519,
     "protein_per_100g": 2.3,
-    "carbs_per_100g": 58,
-    "fat_per_100g": 34,
+    "carbs_per_100g": 58.4,
+    "fat_per_100g": 33.6,
     "fiber_per_100g": 7.7,
     "typical_portion_g": 30,
     "typical_portion_name": "1 kleine Handvoll (30g)"
@@ -32,16 +32,16 @@
       "portion_g": 25,
       "calories": 130,
       "protein": 0.6,
-      "carbs": 14.5,
-      "fat": 8.5
+      "carbs": 14.6,
+      "fat": 8.4
     },
     {
       "name": "Typische Portion (30g)",
       "portion_g": 30,
       "calories": 156,
       "protein": 0.7,
-      "carbs": 17.4,
-      "fat": 10.2,
+      "carbs": 17.5,
+      "fat": 10.1,
       "tip": "Standard"
     },
     {
@@ -49,66 +49,80 @@
       "portion_g": 50,
       "calories": 260,
       "protein": 1.2,
-      "carbs": 29,
-      "fat": 17
+      "carbs": 29.2,
+      "fat": 16.8
     },
     {
       "name": "Kleine Tüte (75g)",
       "portion_g": 75,
       "calories": 389,
       "protein": 1.7,
-      "carbs": 43.5,
-      "fat": 25.5
+      "carbs": 43.8,
+      "fat": 25.2
     },
     {
       "name": "Große Tüte (150g)",
       "portion_g": 150,
       "calories": 779,
       "protein": 3.5,
-      "carbs": 87,
-      "fat": 51
-    },
-    {
-      "name": "Ungesüßt & gebacken (30g)",
-      "portion_g": 30,
-      "calories": 110,
-      "protein": 0.5,
-      "carbs": 22,
-      "fat": 1.5,
-      "tip": "Kalorienärmer"
+      "carbs": 87.6,
+      "fat": 50.4
     }
   ],
   "comparison": [
     {
-      "name": "Banane (frisch)",
+      "name": "Banane frisch (mittel, 120g)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane"
+        }
+      ]
     },
     {
-      "name": "Kartoffelchips",
-      "calories": 536,
-      "emoji": "🥔"
+      "name": "Kartoffelchips (100g)",
+      "calories": 532,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Studentenfutter",
-      "calories": 484,
-      "emoji": "🥜"
+      "name": "Studentenfutter (100g)",
+      "calories": 462,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "studentenfutter",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Trockenobst",
-      "calories": 290,
-      "emoji": "🍇"
+      "name": "Trockenobst (100g)",
+      "calories": 298,
+      "emoji": "🍇",
+      "basis": [
+        {
+          "slug": "trockenobst",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kein gesunder Obst-Snack",
-      "text": "Bananenchips werden meist in Öl frittiert und gesüßt. Mit ca. 519 kcal/100g und 34g Fett liegen sie auf dem Niveau von Kartoffelchips – nicht von frischem Obst.",
+      "text": "Bananenchips werden meist in Öl frittiert und gesüßt. Mit ca. 519 kcal/100g und 34g Fett liegen sie auf dem Niveau von Kartoffelchips, nicht von frischem Obst.",
       "icon": "⚠️"
     },
     {
       "title": "Portion klein halten",
-      "text": "Schon eine kleine Handvoll (30g) hat rund 156 kcal. Eine ganze 150g-Tüte kommt auf fast 780 kcal – mehr als eine Hauptmahlzeit.",
+      "text": "Schon eine kleine Handvoll (30g) hat rund 156 kcal. Eine ganze 150g-Tüte kommt auf fast 780 kcal, mehr als eine Hauptmahlzeit.",
       "icon": "✋"
     },
     {
@@ -118,12 +132,12 @@
     },
     {
       "title": "Frische Banane als Alternative",
-      "text": "Eine frische Banane (120g) hat nur ca. 107 kcal statt 156 kcal pro Handvoll Chips – und sättigt durch ihr Volumen deutlich besser.",
+      "text": "Eine frische Banane (120g) hat nur ca. 107 kcal statt 156 kcal pro Handvoll Chips und sättigt durch ihr Volumen deutlich besser.",
       "icon": "🍌"
     },
     {
       "title": "Versteckter Zucker",
-      "text": "Viele Bananenchips sind mit Zucker oder Honig glasiert. Das treibt die Kohlenhydrate auf rund 58g/100g – mehr als bei den meisten Süßigkeiten.",
+      "text": "Viele Bananenchips sind mit Zucker oder Honig glasiert. Das treibt die Kohlenhydrate auf rund 58g/100g, mehr als bei den meisten Süßigkeiten.",
       "icon": "🍬"
     }
   ],

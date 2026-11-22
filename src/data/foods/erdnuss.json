@@ -63,20 +63,32 @@
     {
       "name": "Erdnüsse geröstet & gesalzen (30g)",
       "portion_g": 30,
-      "calories": 178,
-      "protein": 8,
-      "carbs": 5,
+      "calories": 176,
+      "protein": 7,
+      "carbs": 6,
       "fat": 15,
-      "tip": "Etwas mehr Kalorien durch Röstung"
+      "tip": "Etwas mehr Kalorien durch Röstung",
+      "basis": [
+        {
+          "fdcId": 174262,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Erdnüsse gekocht (30g)",
       "portion_g": 30,
-      "calories": 96,
+      "calories": 95,
       "protein": 4,
       "carbs": 6,
       "fat": 7,
-      "tip": "Gekocht nehmen sie Wasser auf, daher kalorienärmer"
+      "tip": "Gekocht nehmen sie Wasser auf, daher kalorienärmer",
+      "basis": [
+        {
+          "fdcId": 174260,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Erdnüsse in der Schale (50g essbar)",
@@ -91,22 +103,46 @@
     {
       "name": "Mandeln (30g)",
       "calories": 173,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Cashewkerne (30g)",
       "calories": 166,
-      "emoji": "🥜"
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "cashewkerne",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Walnüsse (30g)",
       "calories": 196,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "walnuesse",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Pistazien (30g)",
-      "calories": 169,
-      "emoji": "🥜"
+      "calories": 168,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "pistazien",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
@@ -143,7 +179,7 @@
     },
     {
       "question": "Wie viele Kalorien haben 100g Erdnüsse?",
-      "answer": "100g rohe Erdnüsse enthalten etwa 567 kcal. Geröstet und gesalzen liegen sie mit rund 600 kcal etwas höher."
+      "answer": "100g rohe Erdnüsse enthalten etwa 567 kcal. Geröstet und gesalzen liegen sie mit rund 587 kcal etwas höher."
     },
     {
       "question": "Wie viel Eiweiß haben Erdnüsse?",

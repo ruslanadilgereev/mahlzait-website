@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 172226 (Ice cream sandwich), Werte je 100 g",
   "seo": {
     "title": "Sandwich-Eis Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Sandwich-Eis? Ein Standard-Sandwich-Eis (60g) hat ca. 144 kcal. Nährwerte pro 100g & pro Stück, Varianten und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Sandwich-Eis? Ein Standard-Sandwich-Eis (60g) hat ca. 142 kcal. Nährwerte pro 100g & pro Stück, Varianten und Diät-Tipps.",
     "keywords": [
       "sandwich eis kalorien",
       "sandwich eis kcal",
@@ -17,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 240,
+    "calories_per_100g": 237,
     "protein_per_100g": 4.3,
-    "carbs_per_100g": 38,
+    "carbs_per_100g": 37.1,
     "fat_per_100g": 8.6,
-    "fiber_per_100g": 1.4,
+    "fiber_per_100g": 0,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Sandwich-Eis (Standard)"
   },
@@ -29,88 +29,102 @@
     {
       "name": "Mini Sandwich-Eis (25g)",
       "portion_g": 25,
-      "calories": 60,
+      "calories": 59,
       "protein": 1.1,
-      "carbs": 9.5,
+      "carbs": 9.3,
       "fat": 2.2,
       "tip": "Kleine Naschportion"
     },
     {
       "name": "Sandwich-Eis klein (40g)",
       "portion_g": 40,
-      "calories": 96,
+      "calories": 95,
       "protein": 1.7,
-      "carbs": 15.2,
+      "carbs": 14.8,
       "fat": 3.4
     },
     {
       "name": "Sandwich-Eis Multipack-Stück (50g)",
       "portion_g": 50,
-      "calories": 120,
+      "calories": 119,
       "protein": 2.2,
-      "carbs": 19,
+      "carbs": 18.6,
       "fat": 4.3
     },
     {
       "name": "Sandwich-Eis Standard (60g)",
       "portion_g": 60,
-      "calories": 144,
+      "calories": 142,
       "protein": 2.6,
-      "carbs": 22.8,
+      "carbs": 22.3,
       "fat": 5.2,
       "tip": "Übliche Größe"
     },
     {
-      "name": "Schoko-Sandwich-Eis (70g)",
-      "portion_g": 70,
-      "calories": 182,
-      "protein": 3,
-      "carbs": 26.6,
-      "fat": 7
-    },
-    {
       "name": "Sandwich-Eis groß (80g)",
       "portion_g": 80,
-      "calories": 192,
+      "calories": 190,
       "protein": 3.4,
-      "carbs": 30.4,
+      "carbs": 29.7,
       "fat": 6.9
     },
     {
       "name": "American-Style XXL (100g)",
       "portion_g": 100,
-      "calories": 240,
+      "calories": 237,
       "protein": 4.3,
-      "carbs": 38,
+      "carbs": 37.1,
       "fat": 8.6
     }
   ],
   "comparison": [
     {
-      "name": "Sandwich-Eis (60g)",
-      "calories": 144,
-      "emoji": "🍨"
-    },
-    {
-      "name": "Eis am Stiel (60g)",
-      "calories": 132,
-      "emoji": "🍦"
+      "name": "Eis am Stiel mit Schokoüberzug (60g)",
+      "calories": 199,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "fdcId": 173466,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Wassereis (60g)",
-      "calories": 42,
-      "emoji": "🧊"
+      "calories": 47,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "wassereis",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Magnum Mini (55g)",
+      "name": "Magnum Mini (1 Stück, 41,5g)",
+      "calories": 137,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "magnum-mini"
+        }
+      ]
+    },
+    {
+      "name": "Vanilleeis (1 Kugel, 75g)",
       "calories": 155,
-      "emoji": "🍫"
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mini-Variante spart Kalorien",
-      "text": "Ein Mini Sandwich-Eis (25g) hat nur rund 60 kcal statt 144 kcal beim Standard-Stück. Wer Lust auf etwas Süßes hat, kommt mit der kleinen Variante deutlich günstiger weg.",
+      "text": "Ein Mini Sandwich-Eis (25g) hat nur rund 59 kcal statt 142 kcal beim Standard-Stück. Wer Lust auf etwas Süßes hat, kommt mit der kleinen Variante deutlich günstiger weg.",
       "icon": "🍨"
     },
     {
@@ -120,7 +134,7 @@
     },
     {
       "title": "Viel Zucker durch Keks und Eis",
-      "text": "Mit rund 38g Kohlenhydraten pro 100g ist Sandwich-Eis recht zuckerreich, da sich Keks und Eiscreme addieren. Als gelegentliche Nascherei in Ordnung, nicht als täglicher Snack.",
+      "text": "Mit rund 37g Kohlenhydraten pro 100g ist Sandwich-Eis recht zuckerreich, da sich Keks und Eiscreme addieren. Als gelegentliche Nascherei in Ordnung, nicht als täglicher Snack.",
       "icon": "🍪"
     },
     {
@@ -137,11 +151,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Sandwich-Eis?",
-      "answer": "Ein Standard-Sandwich-Eis (60g) hat etwa 144 kcal. Pro 100g sind es rund 240 kcal. Kleinere Stücke (40g) liegen bei ca. 96 kcal, Mini-Varianten (25g) bei nur etwa 60 kcal."
+      "answer": "Ein Standard-Sandwich-Eis (60g) hat etwa 142 kcal. Pro 100g sind es rund 237 kcal. Kleinere Stücke (40g) liegen bei ca. 95 kcal, Mini-Varianten (25g) bei nur etwa 59 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Sandwich-Eis?",
-      "answer": "Sandwich-Eis enthält rund 38g Kohlenhydrate pro 100g, davon ein großer Teil Zucker. Ein Standard-Stück (60g) liefert etwa 22,8g Kohlenhydrate."
+      "answer": "Sandwich-Eis enthält rund 37g Kohlenhydrate pro 100g, davon ein großer Teil Zucker. Ein Standard-Stück (60g) liefert etwa 22,3g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Sandwich-Eis?",
@@ -149,7 +163,7 @@
     },
     {
       "question": "Ist Sandwich-Eis zum Abnehmen geeignet?",
-      "answer": "Sandwich-Eis ist mit 240 kcal pro 100g und viel Zucker eher kalorienreich und sättigt wenig. Beim Abnehmen passt es als gelegentlicher Genuss in kleiner Menge, nicht als regelmäßiger Snack. Wassereis ist mit rund 42 kcal pro 60g eine deutlich leichtere Alternative."
+      "answer": "Sandwich-Eis ist mit 237 kcal pro 100g und viel Zucker eher kalorienreich und sättigt wenig. Beim Abnehmen passt es als gelegentlicher Genuss in kleiner Menge, nicht als regelmäßiger Snack. Wassereis ist mit rund 47 kcal pro 60g eine deutlich leichtere Alternative."
     },
     {
       "question": "Ist Sandwich-Eis gesund?",
@@ -157,7 +171,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Mini Sandwich-Eis?",
-      "answer": "Ein Mini Sandwich-Eis (25g) hat etwa 60 kcal und ist damit eine kalorienarme Naschportion für zwischendurch."
+      "answer": "Ein Mini Sandwich-Eis (25g) hat etwa 59 kcal und ist damit eine kalorienarme Naschportion für zwischendurch."
     }
   ],
   "related_foods": [

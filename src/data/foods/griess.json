@@ -56,20 +56,46 @@
     {
       "name": "Grießbrei zubereitet mit Milch (250g)",
       "portion_g": 250,
-      "calories": 290,
-      "protein": 9,
-      "carbs": 40,
-      "fat": 9,
-      "tip": "Gekocht mit Vollmilch & wenig Zucker"
+      "calories": 305,
+      "protein": 11,
+      "carbs": 49,
+      "fat": 7,
+      "tip": "Gekocht mit Vollmilch & wenig Zucker",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "fdcId": 171265,
+          "g": 200
+        },
+        {
+          "fdcId": 169655,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Grießbrei zubereitet mit Wasser (250g)",
       "portion_g": 250,
-      "calories": 200,
-      "protein": 6,
-      "carbs": 41,
-      "fat": 1,
-      "tip": "Kalorienärmer ohne Milch"
+      "calories": 183,
+      "protein": 5,
+      "carbs": 39,
+      "fat": 0,
+      "tip": "Kalorienärmer ohne Milch",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "fdcId": 173647,
+          "g": 200
+        },
+        {
+          "fdcId": 169655,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Grieß Esslöffel (15g trocken)",
@@ -85,40 +111,64 @@
       "calories": 1800,
       "protein": 64,
       "carbs": 364,
-      "fat": 5
+      "fat": 6
     }
   ],
   "comparison": [
     {
       "name": "Haferflocken (50g)",
-      "calories": 186,
-      "emoji": "🥣"
+      "calories": 190,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Reis roh (50g)",
-      "calories": 175,
-      "emoji": "🍚"
+      "calories": 183,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Nudeln roh (50g)",
-      "calories": 175,
-      "emoji": "🍝"
+      "calories": 186,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "fusilli",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Couscous roh (50g)",
       "calories": 188,
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169699,
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Trocken vs. gekocht beachten",
-      "text": "Die 360 kcal gelten für trockenen Grieß aus der Packung. Als Grießbrei mit Milch nimmt er Flüssigkeit auf, eine 250g-Portion hat dann nur rund 290 kcal.",
+      "text": "Die 360 kcal gelten für trockenen Grieß aus der Packung. Als Grießbrei mit Milch nimmt er Flüssigkeit auf, eine 250g-Portion hat dann nur rund 305 kcal.",
       "icon": "💧"
     },
     {
       "title": "Mit Wasser sparst du Kalorien",
-      "text": "Grießbrei mit Wasser statt Vollmilch zubereitet spart pro Portion rund 90 kcal und fast das gesamte Fett.",
+      "text": "Grießbrei mit Wasser statt Vollmilch zubereitet spart pro Portion rund 120 kcal und fast das gesamte Fett.",
       "icon": "🥄"
     },
     {
@@ -144,7 +194,7 @@
     },
     {
       "question": "Wie viele Kalorien hat fertiger Grießbrei?",
-      "answer": "Eine Portion Grießbrei (250g), zubereitet mit Vollmilch und wenig Zucker, hat etwa 290 kcal. Mit Wasser zubereitet sind es nur rund 200 kcal."
+      "answer": "Eine Portion Grießbrei (250g aus 40g Grieß, 200g Vollmilch und 10g Zucker) hat etwa 305 kcal. Mit Wasser statt Milch sind es nur rund 183 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Grieß?",

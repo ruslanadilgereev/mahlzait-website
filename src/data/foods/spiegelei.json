@@ -3,11 +3,20 @@
   "name": "Spiegelei",
   "emoji": "🍳",
   "category": "gericht",
-  "source": "USDA FoodData Central, FDC-ID 173423 (Egg, whole, cooked, fried), Werte je 100 g; 1 Spiegelei aus Ei Größe M entspricht ca. 50 g gebraten",
+  "source": "USDA FoodData Central, FDC-ID 173423 (Egg, whole, cooked, fried), Werte je 100 g",
   "seo": {
     "title": "Spiegelei Kalorien: 98 kcal pro Ei | Mahlzait",
-    "description": "Ein Spiegelei hat ca. 98 kcal (Ei Größe M, wenig Öl). Ohne Fett gebraten 93 kcal, mit Butter 130 kcal. Alle Nährwerte, Protein & Varianten im Überblick.",
-    "keywords": ["spiegelei kalorien", "kalorien spiegelei", "spiegelei nährwerte", "wie viele kalorien hat ein spiegelei", "spiegelei protein", "spiegelei ohne fett kalorien", "2 spiegeleier kalorien", "spiegelei ohne öl"]
+    "description": "Ein Spiegelei hat ca. 98 kcal (Ei Größe M, wenig Öl). Ohne Fett gebraten 72 kcal, mit 1 TL Butter 107 kcal. Alle Nährwerte, Protein & Varianten im Überblick.",
+    "keywords": [
+      "spiegelei kalorien",
+      "kalorien spiegelei",
+      "spiegelei nährwerte",
+      "wie viele kalorien hat ein spiegelei",
+      "spiegelei protein",
+      "spiegelei ohne fett kalorien",
+      "2 spiegeleier kalorien",
+      "spiegelei ohne öl"
+    ]
   },
   "overview": {
     "calories_per_100g": 196,
@@ -19,35 +28,222 @@
     "typical_portion_name": "1 Spiegelei (Ei M)"
   },
   "variants": [
-    { "name": "1 Spiegelei (Ei M, wenig Öl)", "portion_g": 50, "calories": 98, "protein": 7, "carbs": 0, "fat": 7, "tip": "Der Standardwert nach USDA" },
-    { "name": "Ohne Fett in beschichteter Pfanne (Ei M)", "portion_g": 50, "calories": 93, "protein": 7, "carbs": 0, "fat": 6, "tip": "Wie ein gekochtes Ei" },
-    { "name": "Mit 1 TL Butter gebraten (Ei M)", "portion_g": 55, "calories": 130, "protein": 7, "carbs": 0, "fat": 11 },
-    { "name": "2 Spiegeleier (wenig Öl)", "portion_g": 100, "calories": 196, "protein": 14, "carbs": 1, "fat": 15, "tip": "Klassisches Frühstück" },
-    { "name": "3 Spiegeleier (Protein-Frühstück)", "portion_g": 150, "calories": 294, "protein": 20, "carbs": 1, "fat": 22 },
-    { "name": "Spiegelei mit Speck (1 Ei + 20g)", "portion_g": 70, "calories": 181, "protein": 10, "carbs": 0, "fat": 15 },
-    { "name": "Spiegelei auf Vollkornbrot (1 Ei + 1 Scheibe)", "portion_g": 100, "calories": 198, "protein": 11, "carbs": 20, "fat": 8, "tip": "Sättigendes Frühstück" },
-    { "name": "Strammer Max (Brot, Schinken, 2 Spiegeleier)", "portion_g": 175, "calories": 350, "protein": 25, "carbs": 25, "fat": 17 }
+    {
+      "name": "1 Spiegelei (Ei M, wenig Öl)",
+      "portion_g": 50,
+      "calories": 98,
+      "protein": 7,
+      "carbs": 0,
+      "fat": 7,
+      "tip": "Der Standardwert nach USDA"
+    },
+    {
+      "name": "Ohne Fett in beschichteter Pfanne (Ei M, 50g)",
+      "portion_g": 50,
+      "calories": 72,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 5,
+      "tip": "Wie ein gekochtes Ei",
+      "basis": [
+        {
+          "fdcId": 2707156,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Mit 1 TL Butter gebraten (Ei M + 5g Butter)",
+      "portion_g": 55,
+      "calories": 107,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 2707156,
+          "g": 50
+        },
+        {
+          "slug": "butter",
+          "g": 5
+        }
+      ]
+    },
+    {
+      "name": "2 Spiegeleier (wenig Öl)",
+      "portion_g": 100,
+      "calories": 196,
+      "protein": 14,
+      "carbs": 1,
+      "fat": 15,
+      "tip": "Klassisches Frühstück"
+    },
+    {
+      "name": "3 Spiegeleier (Protein-Frühstück)",
+      "portion_g": 150,
+      "calories": 294,
+      "protein": 20,
+      "carbs": 1,
+      "fat": 22
+    },
+    {
+      "name": "Spiegelei mit Speck (1 Ei + 20g)",
+      "portion_g": 70,
+      "calories": 177,
+      "protein": 10,
+      "carbs": 0,
+      "fat": 15,
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "slug": "speck",
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Spiegelei auf Vollkornbrot (1 Ei + 1 Scheibe, 50g)",
+      "portion_g": 100,
+      "calories": 209,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 8,
+      "tip": "Sättigendes Frühstück",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "slug": "vollkornbrot"
+        }
+      ]
+    },
+    {
+      "name": "Strammer Max (1 Scheibe Brot, 30g Schinken, 2 Spiegeleier)",
+      "portion_g": 180,
+      "calories": 358,
+      "protein": 23,
+      "carbs": 25,
+      "fat": 18,
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "slug": "brot"
+        },
+        {
+          "slug": "schinken"
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Gekochtes Ei", "calories": 155, "emoji": "🥚" },
-    { "name": "Omelett", "calories": 154, "emoji": "🍳" },
-    { "name": "Rührei", "calories": 155, "emoji": "🍳" },
-    { "name": "Speck", "calories": 417, "emoji": "🥓" }
+    {
+      "name": "Gekochtes Ei (100g)",
+      "calories": 155,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "ei",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Omelett (100g)",
+      "calories": 154,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "omelett",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Rührei (100g)",
+      "calories": 149,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "ruehrei",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Speck (100g)",
+      "calories": 393,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "slug": "speck",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Das Fett macht den Unterschied", "text": "Das Ei selbst bringt nur 93 kcal mit (Größe M). Jeder TL Butter addiert 37 kcal, ein EL Öl sogar 88 kcal. Wer die Pfanne nur dünn auspinselt, spart die Hälfte des Bratfetts.", "icon": "⚖️" },
-    { "title": "Beschichtete Pfanne = Spiegelei fast ohne Fett", "text": "In einer guten beschichteten Pfanne gelingt das Spiegelei komplett ohne Zusatzfett. Dann liefert es exakt die Kalorien eines gekochten Eis.", "icon": "🍳" },
-    { "title": "7g Protein pro Ei", "text": "Ein Spiegelei liefert rund 7g hochwertiges Eiweiß. Zwei Spiegeleier zum Frühstück (14g Protein, 196 kcal) sättigen deutlich länger als Toast mit Marmelade bei gleichen Kalorien.", "icon": "💪" },
-    { "title": "Spiegelei statt Rührei spart Zutaten", "text": "Rührei wird oft mit Milch, Sahne oder extra Butter angerührt und landet dadurch schnell bei 260 kcal für 2 Eier. Zwei Spiegeleier mit wenig Öl bleiben bei 196 kcal.", "icon": "🔄" },
-    { "title": "Die Basis fürs Low-Carb-Frühstück", "text": "Mit 0,8g Kohlenhydraten pro 100g passt das Spiegelei in jede Low-Carb-Ernährung, ob solo, auf Avocado oder mit Gemüse aus der Pfanne.", "icon": "🎯" }
+    {
+      "title": "Das Fett macht den Unterschied",
+      "text": "Das Ei selbst bringt nur rund 72 kcal mit (Größe M). Jeder TL Butter addiert rund 36 kcal, ein EL Öl noch deutlich mehr. Wer die Pfanne nur dünn auspinselt, spart die Hälfte des Bratfetts.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Beschichtete Pfanne = Spiegelei fast ohne Fett",
+      "text": "In einer guten beschichteten Pfanne gelingt das Spiegelei komplett ohne Zusatzfett. Dann liefert es exakt die Kalorien eines gekochten Eis.",
+      "icon": "🍳"
+    },
+    {
+      "title": "7g Protein pro Ei",
+      "text": "Ein Spiegelei liefert rund 7g hochwertiges Eiweiß. Zwei Spiegeleier zum Frühstück (14g Protein, 196 kcal) sättigen deutlich länger als Toast mit Marmelade bei gleichen Kalorien.",
+      "icon": "💪"
+    },
+    {
+      "title": "Spiegelei statt Rührei spart Zutaten",
+      "text": "Rührei wird oft mit Milch, Sahne oder extra Butter angerührt und kann dadurch mehr Kalorien haben als zwei Spiegeleier mit wenig Öl (196 kcal).",
+      "icon": "🔄"
+    },
+    {
+      "title": "Die Basis fürs Low-Carb-Frühstück",
+      "text": "Mit 0,8g Kohlenhydraten pro 100g passt das Spiegelei in jede Low-Carb-Ernährung, ob solo, auf Avocado oder mit Gemüse aus der Pfanne.",
+      "icon": "🎯"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Spiegelei?", "answer": "Ein Spiegelei aus einem Ei der Größe M hat mit wenig Öl gebraten rund 98 kcal (USDA-Wert: 196 kcal pro 100g). Ohne Fett in der beschichteten Pfanne sind es 93 kcal, mit einem TL Butter etwa 130 kcal." },
-    { "question": "Wie viele Kalorien hat ein Spiegelei ohne Fett?", "answer": "Ohne Bratfett hat ein Spiegelei genau die Kalorien des Eis selbst: rund 93 kcal bei Größe M. Es ist damit kalorisch identisch mit einem gekochten Ei." },
-    { "question": "Wie viele Kalorien haben 2 Spiegeleier?", "answer": "Zwei Spiegeleier mit wenig Öl kommen auf rund 196 kcal und liefern dabei 14g Protein. Mit Butter gebraten sind es etwa 260 kcal." },
-    { "question": "Wie viel Protein hat ein Spiegelei?", "answer": "Ein Spiegelei liefert rund 7g Eiweiß (13,6g pro 100g laut USDA). Das Protein verteilt sich auf Eiklar und Eigelb, beide Teile mitessen lohnt sich also." },
-    { "question": "Was hat weniger Kalorien: Spiegelei oder Rührei?", "answer": "Die Basis ist identisch, der Unterschied liegt in den Zutaten: Rührei wird meist mit Milch und Butter zubereitet und landet bei rund 260 kcal für 2 Eier, während 2 Spiegeleier mit wenig Öl bei 196 kcal bleiben." },
-    { "question": "Warum hat ein Spiegelei mehr Kalorien als ein gekochtes Ei?", "answer": "Nur wegen des Bratfetts. Das Ei selbst bleibt beim Braten kalorisch unverändert; jeder TL Öl oder Butter in der Pfanne addiert 37 bis 44 kcal, von denen ein Teil am Ei hängen bleibt." }
+    {
+      "question": "Wie viele Kalorien hat ein Spiegelei?",
+      "answer": "Ein Spiegelei aus einem Ei der Größe M hat mit wenig Öl gebraten rund 98 kcal (USDA-Wert: 196 kcal pro 100g). Ohne Fett in der beschichteten Pfanne sind es rund 72 kcal, mit einem TL Butter etwa 107 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Spiegelei ohne Fett?",
+      "answer": "Ohne Bratfett hat ein Spiegelei praktisch die Kalorien des Eis selbst: rund 72 kcal bei Größe M. Es ist damit kalorisch fast identisch mit einem gekochten Ei."
+    },
+    {
+      "question": "Wie viele Kalorien haben 2 Spiegeleier?",
+      "answer": "Zwei Spiegeleier mit wenig Öl kommen auf rund 196 kcal und liefern dabei 14g Protein. Mit je einem TL Butter gebraten sind es etwa 214 kcal."
+    },
+    {
+      "question": "Wie viel Protein hat ein Spiegelei?",
+      "answer": "Ein Spiegelei liefert rund 7g Eiweiß (13,6g pro 100g laut USDA). Das Protein verteilt sich auf Eiklar und Eigelb, beide Teile mitessen lohnt sich also."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Spiegelei oder Rührei?",
+      "answer": "Die Basis ist identisch, der Unterschied liegt in den Zutaten: Rührei wird meist mit Milch und Butter zubereitet und kann dadurch mehr Kalorien haben, während 2 Spiegeleier mit wenig Öl bei 196 kcal bleiben."
+    },
+    {
+      "question": "Warum hat ein Spiegelei mehr Kalorien als ein gekochtes Ei?",
+      "answer": "Nur wegen des Bratfetts. Das Ei selbst bleibt beim Braten kalorisch unverändert; jeder TL Butter in der Pfanne addiert rund 36 kcal, von denen ein Teil am Ei hängen bleibt."
+    }
   ],
-  "related_foods": ["ei", "ruehrei", "omelett", "speck"]
+  "related_foods": [
+    "ei",
+    "ruehrei",
+    "omelett",
+    "speck"
+  ]
 }

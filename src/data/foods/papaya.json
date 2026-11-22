@@ -33,7 +33,7 @@
       "portion_g": 100,
       "calories": 43,
       "protein": 0.5,
-      "carbs": 11,
+      "carbs": 10.8,
       "fat": 0.3
     },
     {
@@ -41,7 +41,7 @@
       "portion_g": 140,
       "calories": 60,
       "protein": 0.7,
-      "carbs": 15,
+      "carbs": 15.1,
       "fat": 0.4,
       "tip": "Standard"
     },
@@ -50,15 +50,15 @@
       "portion_g": 150,
       "calories": 65,
       "protein": 0.8,
-      "carbs": 16,
-      "fat": 0.4
+      "carbs": 16.2,
+      "fat": 0.5
     },
     {
       "name": "Ganze kleine Papaya (300g Fruchtfleisch)",
       "portion_g": 300,
       "calories": 129,
       "protein": 1.5,
-      "carbs": 32,
+      "carbs": 32.4,
       "fat": 0.9
     },
     {
@@ -66,46 +66,68 @@
       "portion_g": 60,
       "calories": 26,
       "protein": 0.3,
-      "carbs": 6,
+      "carbs": 6.5,
       "fat": 0.2
     },
     {
       "name": "Getrocknete Papaya, gezuckert (40g)",
       "portion_g": 40,
-      "calories": 136,
-      "protein": 0.2,
-      "carbs": 34,
-      "fat": 0.2
-    },
-    {
-      "name": "Papaya-Smoothie (250ml)",
-      "portion_g": 250,
-      "calories": 115,
-      "protein": 1.3,
-      "carbs": 27,
-      "fat": 0.8
+      "calories": 121,
+      "protein": 0.5,
+      "carbs": 30.2,
+      "fat": 0.3,
+      "basis": [
+        {
+          "fdcId": 2709206,
+          "g": 40
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Mango (140g)",
       "calories": 84,
-      "emoji": "🥭"
+      "emoji": "🥭",
+      "basis": [
+        {
+          "slug": "mango",
+          "g": 140
+        }
+      ]
     },
     {
       "name": "Ananas (140g)",
-      "calories": 71,
-      "emoji": "🍍"
+      "calories": 70,
+      "emoji": "🍍",
+      "basis": [
+        {
+          "slug": "ananas",
+          "g": 140
+        }
+      ]
     },
     {
       "name": "Honigmelone (140g)",
       "calories": 50,
-      "emoji": "🍈"
+      "emoji": "🍈",
+      "basis": [
+        {
+          "slug": "honigmelone",
+          "g": 140
+        }
+      ]
     },
     {
       "name": "Banane (120g)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 120
+        }
+      ]
     }
   ],
   "tips": [
@@ -126,7 +148,7 @@
     },
     {
       "title": "Auf getrocknete Papaya achten",
-      "text": "Getrocknete Papaya ist oft stark gezuckert und hat mit rund 340 kcal pro 100g ein Vielfaches der frischen Frucht. Für die schlanke Linie lieber zur frischen Papaya greifen.",
+      "text": "Getrocknete Papaya ist oft stark gezuckert und hat laut FDC mit rund 302 kcal pro 100g ein Vielfaches der frischen Frucht. Für die schlanke Linie lieber zur frischen Papaya greifen.",
       "icon": "⚠️"
     },
     {
@@ -158,7 +180,7 @@
     },
     {
       "question": "Hat getrocknete Papaya mehr Kalorien?",
-      "answer": "Deutlich mehr. Getrocknete, gezuckerte Papaya hat rund 340 kcal pro 100g – also etwa das Achtfache der frischen Frucht. 40g haben bereits rund 136 kcal."
+      "answer": "Deutlich mehr. Getrocknete, gezuckerte Papaya hat laut FDC rund 302 kcal pro 100g, also etwa das Siebenfache der frischen Frucht. 40g haben bereits rund 121 kcal."
     }
   ],
   "related_foods": [

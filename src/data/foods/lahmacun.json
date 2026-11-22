@@ -18,33 +18,162 @@
     "typical_portion_name": "1 Lahmacun"
   },
   "variants": [
-    {"name": "Lahmacun pur", "portion_g": 150, "calories": 351, "protein": 16, "carbs": 59, "fat": 5, "tip": "Teig mit Hackfleisch-Belag"},
-    {"name": "Lahmacun mit Salat", "portion_g": 200, "calories": 361, "protein": 17, "carbs": 61, "fat": 5, "tip": "Klassisch vom Imbiss, mit Zitrone"},
-    {"name": "Lahmacun mit Salat und Joghurtsoße", "portion_g": 230, "calories": 388, "protein": 18, "carbs": 62, "fat": 7, "tip": "30 g Joghurtsoße"},
-    {"name": "Lahmacun mit Käse", "portion_g": 180, "calories": 458, "protein": 24, "carbs": 59, "fat": 13, "tip": "30 g Gouda"},
-    {"name": "Lahmacun mit Dönerfleisch", "portion_g": 360, "calories": 713, "protein": 52, "carbs": 62, "fat": 27, "tip": "Mit Salat und Joghurtsoße, wie im Döner-Rechner"},
-    {"name": "2 Lahmacun mit Salat", "portion_g": 400, "calories": 722, "protein": 33, "carbs": 122, "fat": 10}
+    {
+      "name": "Lahmacun pur",
+      "portion_g": 150,
+      "calories": 351,
+      "protein": 16,
+      "carbs": 59,
+      "fat": 5,
+      "tip": "Teig mit Hackfleisch-Belag"
+    },
+    {
+      "name": "Lahmacun mit Salat",
+      "portion_g": 200,
+      "calories": 361,
+      "protein": 17,
+      "carbs": 61,
+      "fat": 5,
+      "tip": "Klassisch vom Imbiss, mit Zitrone"
+    },
+    {
+      "name": "Lahmacun mit Salat und Joghurtsoße",
+      "portion_g": 230,
+      "calories": 388,
+      "protein": 18,
+      "carbs": 62,
+      "fat": 7,
+      "tip": "30 g Joghurtsoße"
+    },
+    {
+      "name": "Lahmacun mit Käse",
+      "portion_g": 180,
+      "calories": 458,
+      "protein": 24,
+      "carbs": 59,
+      "fat": 13,
+      "tip": "30 g Gouda"
+    },
+    {
+      "name": "Lahmacun mit Dönerfleisch",
+      "portion_g": 360,
+      "calories": 713,
+      "protein": 52,
+      "carbs": 62,
+      "fat": 27,
+      "tip": "Mit Salat und Joghurtsoße, wie im Döner-Rechner"
+    },
+    {
+      "name": "2 Lahmacun mit Salat",
+      "portion_g": 400,
+      "calories": 722,
+      "protein": 33,
+      "carbs": 122,
+      "fat": 10
+    }
   ],
   "comparison": [
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Pizza Margherita (2 Stk)", "calories": 616, "emoji": "🍕"},
-    {"name": "Dürüm", "calories": 724, "emoji": "🌯"},
-    {"name": "Pide", "calories": 550, "emoji": "🫓"}
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Pizza Margherita (2 Stück, 280g)",
+      "calories": 745,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 280
+        }
+      ]
+    },
+    {
+      "name": "Dürüm",
+      "calories": 724,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "duerrum",
+          "variante": "Dürüm Döner (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Pide",
+      "calories": 956,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "pide"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Lahmacun pur ist leicht", "text": "Pur hat ein Lahmacun (150 g) 351 kcal, rund halb so viel wie ein Döner (696 kcal). Erst Extras wie Käse oder Dönerfleisch machen es schwerer.", "icon": "✅"},
-    {"title": "Salat statt Dönerfleisch", "text": "Lahmacun mit Salat (361 kcal) hat 352 kcal weniger als die Variante mit Dönerfleisch und Joghurtsoße (713 kcal).", "icon": "🥗"},
-    {"title": "Zitrone statt Sauce", "text": "Ein Spritzer Zitrone hat praktisch keine Kalorien. 30 g Joghurtsoße bringen 27 kcal, Knoblauchsoße 107 kcal und Cocktailsoße 114 kcal.", "icon": "🍋"},
-    {"title": "Dünnere 'Türkische Pizza'", "text": "Lahmacun hat einen dünneren Teig als normale Pizza und ist dadurch pro Stück kalorienärmer.", "icon": "📏"},
-    {"title": "Petersilie & Zwiebeln dazu", "text": "Frische Petersilie und Zwiebeln sind kalorienarm und gehören traditionell zum Lahmacun.", "icon": "🌿"}
+    {
+      "title": "Lahmacun pur ist leicht",
+      "text": "Pur hat ein Lahmacun (150 g) 351 kcal, rund halb so viel wie ein Döner (696 kcal). Erst Extras wie Käse oder Dönerfleisch machen es schwerer.",
+      "icon": "✅"
+    },
+    {
+      "title": "Salat statt Dönerfleisch",
+      "text": "Lahmacun mit Salat (361 kcal) hat 352 kcal weniger als die Variante mit Dönerfleisch und Joghurtsoße (713 kcal).",
+      "icon": "🥗"
+    },
+    {
+      "title": "Zitrone statt Sauce",
+      "text": "Ein Spritzer Zitrone hat praktisch keine Kalorien. 30 g Joghurtsoße bringen 27 kcal, Knoblauchsoße 107 kcal und Cocktailsoße 114 kcal.",
+      "icon": "🍋"
+    },
+    {
+      "title": "Dünnere 'Türkische Pizza'",
+      "text": "Lahmacun hat einen dünneren Teig als normale Pizza und ist dadurch pro Stück kalorienärmer.",
+      "icon": "📏"
+    },
+    {
+      "title": "Petersilie & Zwiebeln dazu",
+      "text": "Frische Petersilie und Zwiebeln sind kalorienarm und gehören traditionell zum Lahmacun.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Lahmacun?", "answer": "Ein Lahmacun (150 g) hat 351 kcal, das sind 234 kcal pro 100 g. Mit 50 g Salat sind es 361 kcal, mit Dönerfleisch, Salat und Joghurtsoße 713 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten wie im Döner-Kalorien-Rechner."},
-    {"question": "Ist Lahmacun gesünder als Pizza?", "answer": "Lahmacun hat einen dünneren Teig und weniger Käse als Pizza. Pro Stück hat es oft weniger Kalorien. Allerdings fehlt die Sättigung durch den dünnen Teig."},
-    {"question": "Was hat weniger Kalorien: Lahmacun oder Döner?", "answer": "Ein Lahmacun pur (351 kcal) hat rund halb so viele Kalorien wie ein Döner (696 kcal). Mit Dönerfleisch, Salat und Joghurtsoße (713 kcal) liegt es knapp darüber."},
-    {"question": "Wie viel Protein hat ein Lahmacun?", "answer": "Ein Lahmacun pur liefert 16 g Eiweiß, 9 g davon aus dem Teig und 6 g aus dem Rinderhack. Mit Käse sind es 24 g, mit Dönerfleisch 52 g."},
-    {"question": "Was ist der Unterschied zwischen Lahmacun und Pide?", "answer": "Lahmacun hat einen hauchdünnen Teig mit Hackfleisch-Belag. Pide hat einen dickeren, bootförmigen Teig mit verschiedenen Füllungen und mehr Käse."},
-    {"question": "Wie viel Fett hat ein Lahmacun?", "answer": "Ein Lahmacun pur hat 5 g Fett, knapp 4 g davon aus dem Rinderhack. Mit Käse sind es 13 g, mit Dönerfleisch und Joghurtsoße 27 g."}
+    {
+      "question": "Wie viele Kalorien hat ein Lahmacun?",
+      "answer": "Ein Lahmacun (150 g) hat 351 kcal, das sind 234 kcal pro 100 g. Mit 50 g Salat sind es 361 kcal, mit Dönerfleisch, Salat und Joghurtsoße 713 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten wie im Döner-Kalorien-Rechner."
+    },
+    {
+      "question": "Ist Lahmacun gesünder als Pizza?",
+      "answer": "Lahmacun hat einen dünneren Teig und weniger Käse als Pizza. Pro Stück hat es oft weniger Kalorien. Allerdings fehlt die Sättigung durch den dünnen Teig."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Lahmacun oder Döner?",
+      "answer": "Ein Lahmacun pur (351 kcal) hat rund halb so viele Kalorien wie ein Döner (696 kcal). Mit Dönerfleisch, Salat und Joghurtsoße (713 kcal) liegt es knapp darüber."
+    },
+    {
+      "question": "Wie viel Protein hat ein Lahmacun?",
+      "answer": "Ein Lahmacun pur liefert 16 g Eiweiß, 9 g davon aus dem Teig und 6 g aus dem Rinderhack. Mit Käse sind es 24 g, mit Dönerfleisch 52 g."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Lahmacun und Pide?",
+      "answer": "Lahmacun hat einen hauchdünnen Teig mit Hackfleisch-Belag. Pide hat einen dickeren, bootförmigen Teig mit verschiedenen Füllungen und mehr Käse."
+    },
+    {
+      "question": "Wie viel Fett hat ein Lahmacun?",
+      "answer": "Ein Lahmacun pur hat 5 g Fett, knapp 4 g davon aus dem Rinderhack. Mit Käse sind es 13 g, mit Dönerfleisch und Joghurtsoße 27 g."
+    }
   ],
-  "related_foods": ["duerrum", "pizza", "pide", "doener-box"]
+  "related_foods": [
+    "duerrum",
+    "pizza",
+    "pide",
+    "doener-box"
+  ]
 }

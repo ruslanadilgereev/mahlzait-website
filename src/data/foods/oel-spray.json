@@ -3,7 +3,7 @@
   "name": "Öl-Spray",
   "emoji": "🫗",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 2710180 (Vegetable oil, NFS), Werte je 100 g; Sprühöl gerechnet als reines Pflanzenöl",
+  "source": "USDA FoodData Central, FDC-ID 2710180 (Vegetable oil, NFS), Werte je 100 g",
   "seo": {
     "title": "Öl-Spray Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Öl-Spray? Nur ca. 2 kcal pro Sprühstoß. Nährwerte pro 100g & Portion, Vergleich zu normalem Öl + Diät-Tipps.",
@@ -17,7 +17,7 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 884,
+    "calories_per_100g": 900,
     "protein_per_100g": 0,
     "carbs_per_100g": 0,
     "fat_per_100g": 100,
@@ -32,7 +32,7 @@
       "calories": 2,
       "protein": 0,
       "carbs": 0,
-      "fat": 0.25,
+      "fat": 0.3,
       "tip": "Reicht für eine beschichtete Pfanne"
     },
     {
@@ -41,7 +41,7 @@
       "calories": 7,
       "protein": 0,
       "carbs": 0,
-      "fat": 0.75
+      "fat": 0.8
     },
     {
       "name": "5 Sprühstöße (1,25g)",
@@ -49,7 +49,7 @@
       "calories": 11,
       "protein": 0,
       "carbs": 0,
-      "fat": 1.25
+      "fat": 1.3
     },
     {
       "name": "1 g Öl-Spray",
@@ -62,7 +62,7 @@
     {
       "name": "1 TL normales Öl (5g) zum Vergleich",
       "portion_g": 5,
-      "calories": 44,
+      "calories": 45,
       "protein": 0,
       "carbs": 0,
       "fat": 5,
@@ -71,7 +71,7 @@
     {
       "name": "1 EL normales Öl (14g) zum Vergleich",
       "portion_g": 14,
-      "calories": 124,
+      "calories": 126,
       "protein": 0,
       "carbs": 0,
       "fat": 14
@@ -79,7 +79,7 @@
     {
       "name": "100 g (reines Öl)",
       "portion_g": 100,
-      "calories": 884,
+      "calories": 900,
       "protein": 0,
       "carbs": 0,
       "fat": 100
@@ -89,28 +89,52 @@
     {
       "name": "Olivenöl (1 EL)",
       "calories": 124,
-      "emoji": "🫒"
+      "emoji": "🫒",
+      "basis": [
+        {
+          "fdcId": 171413,
+          "g": 14
+        }
+      ]
     },
     {
       "name": "Butter (1 EL)",
-      "calories": 108,
-      "emoji": "🧈"
+      "calories": 100,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 14
+        }
+      ]
     },
     {
       "name": "Margarine (1 EL)",
       "calories": 100,
-      "emoji": "🧈"
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "margarine",
+          "g": 14
+        }
+      ]
     },
     {
       "name": "Normales Öl (1 EL)",
-      "calories": 124,
-      "emoji": "🛢️"
+      "calories": 126,
+      "emoji": "🛢️",
+      "basis": [
+        {
+          "slug": "oel-spray",
+          "g": 14
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Nur ca. 2 kcal pro Sprühstoß",
-      "text": "Ein Sprühstoß gibt nur rund 0,25g Öl ab, also etwa 2 kcal. Damit kommst du mit einem Bruchteil der Kalorien aus, die ein gegossener Esslöffel Öl (ca. 124 kcal) hat.",
+      "text": "Ein Sprühstoß gibt nur rund 0,25g Öl ab, also etwa 2 kcal. Damit kommst du mit einem Bruchteil der Kalorien aus, die ein gegossener Esslöffel Öl (ca. 126 kcal) hat.",
       "icon": "🫗"
     },
     {
@@ -130,18 +154,18 @@
     },
     {
       "title": "Trotzdem reines Fett",
-      "text": "Öl-Spray ist kein kalorienfreies Produkt: Pro 100g sind es 884 kcal. Die geringe Kalorienzahl kommt allein durch die kleine Sprühmenge zustande.",
+      "text": "Öl-Spray ist kein kalorienfreies Produkt: Pro 100g sind es 900 kcal. Die geringe Kalorienzahl kommt allein durch die kleine Sprühmenge zustande.",
       "icon": "💡"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Öl-Spray?",
-      "answer": "Ein Sprühstoß Öl-Spray gibt nur etwa 0,25g Öl ab und hat damit rund 2 kcal. Pro 100g sind es 884 kcal, da es sich um reines Speiseöl handelt."
+      "answer": "Ein Sprühstoß Öl-Spray gibt nur etwa 0,25g Öl ab und hat damit rund 2 kcal. Pro 100g sind es 900 kcal, da es sich um reines Speiseöl handelt."
     },
     {
       "question": "Warum hat Öl-Spray nur 2 kcal pro Sprühstoß?",
-      "answer": "Nicht das Öl selbst ist kalorienärmer, sondern die Menge: Ein Sprühstoß gibt nur etwa 0,25g ab. Gegossen wären es schnell 14g (ca. 124 kcal) pro Esslöffel."
+      "answer": "Nicht das Öl selbst ist kalorienärmer, sondern die Menge: Ein Sprühstoß gibt nur etwa 0,25g ab. Gegossen wären es schnell 14g (ca. 126 kcal) pro Esslöffel."
     },
     {
       "question": "Hat Öl-Spray Kohlenhydrate oder Protein?",
@@ -157,7 +181,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Esslöffel Öl ohne Spray?",
-      "answer": "Ein Esslöffel normales Öl (ca. 14g) hat etwa 124 kcal. Mit Öl-Spray brauchst du für dieselbe Pfanne meist nur wenige Sprühstöße und damit deutlich weniger."
+      "answer": "Ein Esslöffel normales Öl (ca. 14g) hat etwa 126 kcal. Mit Öl-Spray brauchst du für dieselbe Pfanne meist nur wenige Sprühstöße und damit deutlich weniger."
     }
   ],
   "related_foods": [

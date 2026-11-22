@@ -72,10 +72,16 @@
       "name": "Geröstete Haselnüsse (25g)",
       "portion_g": 25,
       "calories": 162,
-      "protein": 4.2,
-      "carbs": 4.5,
+      "protein": 3.8,
+      "carbs": 4.4,
       "fat": 15.6,
-      "tip": "Durch Wasserverlust beim Rösten leicht höhere Werte pro Gramm"
+      "tip": "Durch Wasserverlust beim Rösten leicht höhere Werte pro Gramm",
+      "basis": [
+        {
+          "fdcId": 170583,
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Gemahlene Haselnüsse zum Backen (50g)",
@@ -89,24 +95,48 @@
   ],
   "comparison": [
     {
-      "name": "Walnüsse",
+      "name": "Walnüsse (100g)",
       "calories": 654,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "walnuesse",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Mandeln",
+      "name": "Mandeln (100g)",
       "calories": 579,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Cashewkerne",
+      "name": "Cashewkerne (100g)",
       "calories": 553,
-      "emoji": "🥜"
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "cashewkerne",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Erdnussbutter",
-      "calories": 588,
-      "emoji": "🥜"
+      "name": "Erdnussbutter (100g)",
+      "calories": 598,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnussbutter",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

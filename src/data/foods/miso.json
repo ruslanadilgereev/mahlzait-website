@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 172442 (Miso), Werte je 100 g",
   "seo": {
     "title": "Miso Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Miso? 100g Miso-Paste haben ca. 199 kcal, 1 EL (18g) nur 36 kcal. Nährwerte, helle & dunkle Miso im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat Miso? 100g Miso-Paste haben ca. 198 kcal, 1 EL (18g) nur 36 kcal. Nährwerte, Portionen & Tipps.",
     "keywords": [
       "miso kcal",
       "miso kalorien",
@@ -18,9 +18,9 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 199,
+    "calories_per_100g": 198,
     "protein_per_100g": 12.8,
-    "carbs_per_100g": 26.5,
+    "carbs_per_100g": 25.4,
     "fat_per_100g": 6,
     "fiber_per_100g": 5.4,
     "typical_portion_g": 18,
@@ -32,7 +32,7 @@
       "portion_g": 6,
       "calories": 12,
       "protein": 0.8,
-      "carbs": 1.6,
+      "carbs": 1.5,
       "fat": 0.4,
       "tip": "Zum Würzen einer Tasse Brühe"
     },
@@ -41,7 +41,7 @@
       "portion_g": 18,
       "calories": 36,
       "protein": 2.3,
-      "carbs": 4.8,
+      "carbs": 4.6,
       "fat": 1.1,
       "tip": "Standard"
     },
@@ -50,49 +50,40 @@
       "portion_g": 20,
       "calories": 40,
       "protein": 2.6,
-      "carbs": 5.3,
+      "carbs": 5.1,
       "fat": 1.2
     },
     {
       "name": "2 EL Miso (36g)",
       "portion_g": 36,
-      "calories": 72,
+      "calories": 71,
       "protein": 4.6,
-      "carbs": 9.5,
+      "carbs": 9.1,
       "fat": 2.2
     },
     {
       "name": "Helle Miso / Shiro (100g)",
       "portion_g": 100,
       "calories": 198,
-      "protein": 11.7,
-      "carbs": 28,
+      "protein": 12.8,
+      "carbs": 25.4,
       "fat": 6,
       "tip": "Mild & leicht süßlich"
     },
     {
-      "name": "Dunkle Miso / Aka (100g)",
-      "portion_g": 100,
-      "calories": 217,
-      "protein": 13,
-      "carbs": 25,
-      "fat": 6.5,
-      "tip": "Kräftiger, etwas gehaltvoller"
-    },
-    {
       "name": "100g Miso-Paste",
       "portion_g": 100,
-      "calories": 199,
+      "calories": 198,
       "protein": 12.8,
-      "carbs": 26.5,
+      "carbs": 25.4,
       "fat": 6
     },
     {
       "name": "Packung Miso (300g)",
       "portion_g": 300,
-      "calories": 597,
+      "calories": 594,
       "protein": 38.4,
-      "carbs": 79.5,
+      "carbs": 76.2,
       "fat": 18
     }
   ],
@@ -100,22 +91,46 @@
     {
       "name": "Sojasauce (100g)",
       "calories": 53,
-      "emoji": "🍶"
+      "emoji": "🍶",
+      "basis": [
+        {
+          "slug": "sojasauce",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Tofu (100g)",
-      "calories": 76,
-      "emoji": "🧊"
+      "calories": 144,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "tofu",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Tempeh (100g)",
       "calories": 192,
-      "emoji": "🟫"
+      "emoji": "🟫",
+      "basis": [
+        {
+          "slug": "tempeh",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Erdnussbutter (100g)",
-      "calories": 597,
-      "emoji": "🥜"
+      "calories": 598,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnussbutter",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -148,15 +163,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Miso?",
-      "answer": "100g Miso-Paste haben etwa 199 kcal. In der üblichen Würzmenge von 1 EL (18g) sind es nur rund 36 kcal."
+      "answer": "100g Miso-Paste haben etwa 198 kcal. In der üblichen Würzmenge von 1 EL (18g) sind es nur rund 36 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Esslöffel Miso?",
-      "answer": "Ein Esslöffel Miso (ca. 18g) liefert etwa 36 kcal, 2,3g Eiweiß, 4,8g Kohlenhydrate und 1,1g Fett."
+      "answer": "Ein Esslöffel Miso (ca. 18g) liefert etwa 36 kcal, 2,3g Eiweiß, 4,6g Kohlenhydrate und 1,1g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Miso?",
-      "answer": "Miso enthält pro 100g rund 26,5g Kohlenhydrate. In einer typischen Würzportion von 1 EL sind es nur etwa 4,8g."
+      "answer": "Miso enthält pro 100g rund 25,4g Kohlenhydrate. In einer typischen Würzportion von 1 EL sind es nur etwa 4,6g."
     },
     {
       "question": "Wie viel Protein steckt in Miso?",

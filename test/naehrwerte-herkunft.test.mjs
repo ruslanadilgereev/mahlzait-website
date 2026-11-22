@@ -53,63 +53,33 @@ const DRITTE = ["fddb.info", "yazio.com", "openfoodfacts.org", "openfoodfacts.ne
 // <OFFEN>
 const OFFEN = new Set([
    "acai", "acai-bowl", "amicelli", "aperol-spritz", "aquafaba", "balisto", "balisto-lila",
-   "balisto-orange", "ben-and-jerry-s", "bounty", "bounty-mini", "bowl", "campari",
-   "captain-morgan", "caro-kaffee", "celebrations", "daim-mini", "dinkelnudeln", "dr-pepper",
-   "ebly", "ferrero-kuesschen", "feta-light", "five-guys-burger", "fleisch", "flips", "fritt",
-   "fruehstueck", "gemuese", "ginger-beer", "giotto", "glucose", "grillkaese", "guinness",
-   "gustavo-gusto-margherita", "gustavo-gusto-pizza", "hans-im-glueck-burger", "heisse-tasse",
-   "iglo-backfisch", "kaese", "katjes", "kfc-hot-wings", "kfc-twister", "kiri", "klopfer",
-   "l-osteria-pizza", "leibniz-butterkeks", "lidl-ciabatta", "lidl-croissant", "lidl-donut",
-   "lillet", "lion", "lion-mini", "maggi", "magnum-double-caramel", "maltesers", "maltodextrin",
+   "balisto-orange", "ben-and-jerry-s", "bistro-baguette", "bounty", "bounty-mini", "bowl",
+   "cabanossi", "campari", "captain-morgan", "caro-kaffee", "celebrations", "daim-mini",
+   "dinkelnudeln", "dr-pepper", "ebly", "ferrero-kuesschen", "feta-light", "five-guys-burger",
+   "fleisch", "flips", "fritt", "fruehstueck", "gemuese", "ginger-beer", "giotto", "glucose",
+   "grillkaese", "guinness", "gustavo-gusto-margherita", "gustavo-gusto-pizza",
+   "hans-im-glueck-burger", "heisse-tasse", "iglo-backfisch", "kaese", "kaesekuchen",
+   "kaesespaetzle", "kartoffeln-mit-quark", "katjes", "kfc-hot-wings", "kfc-twister", "kiri",
+   "klopfer", "l-osteria-pizza", "labskaus", "lachsschinken", "leberkaese", "leberkassemmel",
+   "leibniz-butterkeks", "lidl-ciabatta", "lidl-croissant", "lidl-donut", "lillet", "lion",
+   "lion-mini", "magerquark", "maggi", "magnum-double-caramel", "maltesers", "maltodextrin",
    "maoam", "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mars", "mars-eis", "mars-mini",
-   "mars-riegel", "matcha", "mate-tee", "mc-frappe", "mc-toast", "mentos", "mikado",
-   "milka-noisette", "milka-schokolade", "milky-way", "mini-milky-way", "mon-cheri",
-   "muellermilch", "nesquik", "neuburger", "nordsee-backfisch-baguette", "nougat-bits", "nuts",
-   "oreo-donut", "pepsi-max", "philadelphia-light", "piccolinis", "pop-tarts", "praline",
-   "proteinriegel", "quark", "raclette", "raclette-kaese", "ritter-sport", "ritter-sport-mini",
-   "roestzwiebeln", "schogetten", "schokoriegel", "smarties", "smirnoff-ice", "snickers-crisp",
-   "stella-artois", "sucuk", "tassimo-milka", "topfen", "traubenzucker", "tuc", "tuc-cracker",
-   "tuc-kekse", "twister-eis", "vapiano", "waterdrop", "wonderwaffel", "wurst", "yfood", "yum-yum",
+   "mars-riegel", "matcha", "mate-tee", "matjes", "matjes-broetchen", "mc-frappe", "mc-toast",
+   "mentos", "mikado", "milka-noisette", "milka-schokolade", "milky-way", "mini-milky-way",
+   "mon-cheri", "muellermilch", "nesquik", "neuburger", "nordsee-backfisch-baguette",
+   "nougat-bits", "nuts", "oreo-donut", "pepsi-max", "philadelphia-light", "piccolinis",
+   "pop-tarts", "praline", "proteinriegel", "quark", "quarktasche", "raclette", "raclette-kaese",
+   "raeuchertofu", "ritter-sport", "ritter-sport-mini", "roestzwiebeln", "schogetten",
+   "schokoriegel", "skyr", "smarties", "smirnoff-ice", "snickers-crisp", "stella-artois", "sucuk",
+   "tassimo-milka", "topfen", "traubenzucker", "tuc", "tuc-cracker", "tuc-kekse", "twister-eis",
+   "udon", "vapiano", "waterdrop", "weingummi", "weisswurst", "wonderwaffel", "wurst", "yfood",
+   "yum-yum",
 ]);
 // </OFFEN>
 
-// <AUSSTEHEND>
-// Seiten, die die Umstellung noch nicht erreicht hat; die Liste wird mit jedem
-// Schritt kürzer und ist am Ende leer.
-const AUSSTEHEND = new Set([
-   "agar-agar", "agavendicksaft", "ahornsirup", "ananas", "apfel", "aprikose", "artischocken",
-   "aubergine", "avocado", "bacardi", "balsamico", "banana-bread", "banane", "bananenchips",
-   "basmati-reis", "bier", "birne", "blaetterteig", "blaubeeren", "brauner-zucker", "brokkoli",
-   "brombeeren", "bulgur", "burger-broetchen", "burger-king-pommes", "camembert", "cashewkerne",
-   "champignons", "chardonnay", "cheesecake", "chiasamen", "cini-minis", "clementine", "cookie",
-   "corned-beef", "cream-cheese", "croissant", "dattel", "doener", "doener-box", "doener-teller",
-   "duerrum", "durum-kebab", "edamame", "eigelb", "eiklar", "erbsen", "erdbeeren", "erdnuss",
-   "espresso", "essig", "falafel", "feige", "french-toast", "fruechtetee", "fruehlingszwiebeln",
-   "fusilli", "gelatine", "gewuerzgurken", "gin", "ginger-ale", "goetterspeise", "griess",
-   "haehnchenbrust", "haehnchenkeule", "hafer", "haferbrei", "haferkeks", "hafermilch",
-   "haselnuss", "hering", "honig", "honigmelone", "huettenkaese", "ingwer", "instant-ramen",
-   "jim-beam", "kaffee", "kaki", "karotten", "kaviar", "kebab", "ketchup", "kichererbsen",
-   "kidneybohnen", "kimchi", "kirschen", "kiwi", "knoblauch", "kohl", "kokos", "kokosmilch",
-   "kondensmilch", "kuerbis", "lachs", "lachsfilet", "lahmacun", "leber", "leinsamen", "linsen",
-   "litschi", "lolli", "macadamia", "mandelmilch", "mandelmus", "mandeln", "mango", "mangold",
-   "maracuja", "maroni", "mayo", "medjool-datteln", "mie-nudeln", "milchpulver", "mineralwasser",
-   "mini-croissant", "miso", "muscheln", "nektarine", "oel-spray", "oliven", "olivenoel",
-   "omelett", "orange", "oreo", "pak-choi", "papaya", "paprika", "pecorino", "penne", "pflaume",
-   "physalis", "pistazien", "pita", "pizza-kebab", "popcorn-kino", "porree", "puderzucker",
-   "raeucherlachs", "reis", "rettich", "rhabarber", "rib-eye-steak", "rindfleisch", "rippchen",
-   "rote-bete", "rote-bohnen", "rote-linsen", "rumpsteak", "sandwich-eis", "schokolade-zartbitter",
-   "schwarzer-tee", "schweinefilet", "sesam", "skittles", "softeis", "sojasauce",
-   "sonnenblumenkerne", "sour-cream", "spaghetti", "spareribs", "spiegelei", "spinat", "spirulina",
-   "sprite-zero", "suesskartoffeln", "tempeh", "tikka-masala", "tintenfisch", "tomate",
-   "tomatenmark", "tonic", "twix", "vanillezucker", "vegetarischer-doener", "wachteleier",
-   "walnuesse", "wassermelone", "wein-rot", "weisse-bohnen", "weisser-reis", "weizenmehl", "zimt",
-   "zitronensaft", "zucchini", "zucker", "zwiebel",
-]);
-// </AUSSTEHEND>
-
 const alle = alleLebensmittel();
 const seiten = new Map(alle.map(({ slug, food }) => [slug, food]));
-const umgestellt = alle.filter(({ slug }) => !OFFEN.has(slug) && !AUSSTEHEND.has(slug));
+const umgestellt = alle.filter(({ slug }) => !OFFEN.has(slug));
 
 const istFdc = (food) => typeof food.source === "string" && food.source.startsWith("USDA FoodData Central");
 const istRezept = (food) => istFdc(food) && (food.rezept != null || food.source.includes("Rezeptrechnung"));
@@ -120,9 +90,8 @@ function passt(seite, fdc, rundung) {
 }
 const eineStelle = (x) => Math.round(x * 10) / 10;
 
-test("OFFEN und AUSSTEHEND nennen nur vorhandene Seiten, keine in beiden", () => {
-  for (const slug of [...OFFEN, ...AUSSTEHEND]) assert.ok(seiten.has(slug), slug + " gibt es nicht");
-  assert.deepEqual([...OFFEN].filter((s) => AUSSTEHEND.has(s)), []);
+test("OFFEN nennt nur vorhandene Seiten", () => {
+  for (const slug of OFFEN) assert.ok(seiten.has(slug), slug + " gibt es nicht");
 });
 
 test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
@@ -130,7 +99,7 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 420, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 807, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
 test("jedes source-Feld nennt FDC oder eine Herstellerangabe", () => {
@@ -165,16 +134,14 @@ test("Seiten mit einem FDC-Eintrag als Quelle passen auf 5 % zu diesem Eintrag",
       if (fdc == null || !passt(seite, fdc, rundung)) abweichungen.push(slug + ": " + name + " " + seite + " statt " + fdc + " (FDC " + e.id + ")");
     }
     // Ballaststoffe: wie FDC; nennt der Eintrag keinen Wert, steht null (oder 0 bei Lebensmitteln ohne Pflanzenanteil)
-    if (!AUSSTEHEND.has(slug)) {
-      const b = o.fiber_per_100g;
-      if (e.ballaststoffe == null ? !(b === null || b === 0) : b == null || !passt(b, e.ballaststoffe, 0.1)) {
-        abweichungen.push(slug + ": Ballaststoffe " + b + " statt " + e.ballaststoffe + " (FDC " + e.id + ")");
-      }
+    const b = o.fiber_per_100g;
+    if (e.ballaststoffe == null ? !(b === null || b === 0) : b == null || !passt(b, e.ballaststoffe, 0.1)) {
+      abweichungen.push(slug + ": Ballaststoffe " + b + " statt " + e.ballaststoffe + " (FDC " + e.id + ")");
     }
     geprueft++;
   }
   assert.deepEqual(abweichungen, []);
-  assert.ok(geprueft >= 590, "nur " + geprueft + " Seiten geprüft");
+  assert.ok(geprueft >= 585, "nur " + geprueft + " Seiten geprüft");
 });
 
 test("Rezeptrechnungen: Werte je 100 g folgen aus den Zutaten", () => {
@@ -289,7 +256,7 @@ test("Portionswerte der Varianten folgen aus den Werten je 100 g oder ihren Best
     }
   }
   assert.deepEqual(abweichungen, []);
-  assert.ok(geprueft >= 2500, "nur " + geprueft + " Varianten geprüft");
+  assert.ok(geprueft >= 4800, "nur " + geprueft + " Varianten geprüft");
 });
 
 test("Vergleiche nennen ihre Bestandteile, die kcal folgen daraus", () => {

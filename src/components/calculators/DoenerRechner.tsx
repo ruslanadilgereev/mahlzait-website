@@ -14,14 +14,14 @@ const activities = [
 const foods = [
   { name: "Döner", kcal: 696, emoji: "🥙" },
   { name: "Big Mac", kcal: 563, emoji: "🍔" },
-  { name: "Pizza Margherita", kcal: 800, emoji: "🍕" },
+  { name: "Pizza Margherita", kcal: 931, emoji: "🍕" },
   { name: "Schnitzel mit Pommes", kcal: 950, emoji: "🍖" },
-  { name: "Currywurst mit Pommes", kcal: 780, emoji: "🌭" },
-  { name: "Tiramisu", kcal: 450, emoji: "🍰" },
-  { name: "Bier (0.5L)", kcal: 215, emoji: "🍺" },
-  { name: "Glas Wein", kcal: 125, emoji: "🍷" },
-  { name: "Cola (0.5L)", kcal: 210, emoji: "🥤" },
-  { name: "Croissant", kcal: 270, emoji: "🥐" },
+  { name: "Currywurst mit Pommes", kcal: 1170, emoji: "🌭" },
+  { name: "Tiramisu", kcal: 530, emoji: "🍰" },
+  { name: "Bier (0.5L)", kcal: 218, emoji: "🍺" },
+  { name: "Glas Wein", kcal: 166, emoji: "🍷" },
+  { name: "Cola (0.5L)", kcal: 220, emoji: "🥤" },
+  { name: "Croissant", kcal: 264, emoji: "🥐" },
 ];
 
 const DoenerRechner = () => {

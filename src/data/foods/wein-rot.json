@@ -3,7 +3,7 @@
   "name": "Rotwein",
   "emoji": "🍷",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 173190 (Alcoholic beverage, wine, table, red), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 173190 (Alcoholic beverage, wine, table, red: 85 kcal), Werte je 100 g; je 100 ml mit 0,994 g/ml 85 kcal",
   "seo": {
     "title": "Rotwein Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Rotwein? Nährwerte für verschiedene Rebsorten und Glasgrößen. Kostenloser Kalorien-Rechner."
@@ -14,37 +14,157 @@
     "carbs_per_100g": 2.6,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 200,
+    "typical_portion_g": 199,
     "typical_portion_name": "1 Glas (0,2l)"
   },
   "variants": [
-    {"name": "Rotwein trocken (0,2l)", "portion_g": 200, "calories": 170, "protein": 0.2, "carbs": 5, "fat": 0, "tip": "Wenigste Kalorien"},
-    {"name": "Rotwein halbtrocken (0,2l)", "portion_g": 200, "calories": 190, "protein": 0.2, "carbs": 8, "fat": 0},
-    {"name": "Rotwein lieblich (0,2l)", "portion_g": 200, "calories": 210, "protein": 0.2, "carbs": 12, "fat": 0},
-    {"name": "1 Flasche (0,75l)", "portion_g": 750, "calories": 638, "protein": 0.8, "carbs": 20, "fat": 0},
-    {"name": "Kleines Glas (0,1l)", "portion_g": 100, "calories": 85, "protein": 0.1, "carbs": 2.6, "fat": 0, "tip": "Halbe Portion"},
-    {"name": "Glühwein (0,2l)", "portion_g": 200, "calories": 240, "protein": 0.2, "carbs": 20, "fat": 0}
+    {
+      "name": "Rotwein trocken (0,2l)",
+      "portion_g": 199,
+      "calories": 169,
+      "protein": 0.2,
+      "carbs": 5.2,
+      "fat": 0,
+      "tip": "Wenigste Kalorien"
+    },
+    {
+      "name": "1 Flasche (0,75l)",
+      "portion_g": 746,
+      "calories": 634,
+      "protein": 0.7,
+      "carbs": 19.4,
+      "fat": 0
+    },
+    {
+      "name": "Kleines Glas (0,1l)",
+      "portion_g": 99,
+      "calories": 84,
+      "protein": 0.1,
+      "carbs": 2.6,
+      "fat": 0,
+      "tip": "Halbe Portion"
+    },
+    {
+      "name": "Glühwein (0,2l)",
+      "portion_g": 204,
+      "calories": 214,
+      "protein": 0.2,
+      "carbs": 20.8,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "gluehwein"
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Weißwein (0,2l)", "calories": 160, "emoji": "🥂"},
-    {"name": "Bier (0,5l)", "calories": 210, "emoji": "🍺"},
-    {"name": "Prosecco (0,1l)", "calories": 80, "emoji": "🥂"},
-    {"name": "Gin Tonic (0,3l)", "calories": 200, "emoji": "🍸"}
+    {
+      "name": "Weißwein (0,2l)",
+      "calories": 163,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "fdcId": 174837,
+          "ml": 200,
+          "g": 199
+        }
+      ]
+    },
+    {
+      "name": "Bier (0,5l)",
+      "calories": 218,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "fdcId": 2710616,
+          "ml": 500,
+          "g": 507
+        }
+      ]
+    },
+    {
+      "name": "Prosecco (0,1l)",
+      "calories": 76,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "fdcId": 2710687,
+          "ml": 100,
+          "g": 101
+        }
+      ]
+    },
+    {
+      "name": "Gin Tonic (0,3l)",
+      "calories": 255,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "fdcId": 2710633,
+          "ml": 300,
+          "g": 304
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Trocken bevorzugen", "text": "Trockener Rotwein hat 20-40 kcal weniger pro Glas als lieblicher – weniger Restzucker.", "icon": "🍇"},
-    {"title": "Glas statt Flasche", "text": "Eine Flasche hat 638 kcal – fast eine Hauptmahlzeit. Beim Glas bleiben bewahrt die Kontrolle.", "icon": "🥛"},
-    {"title": "Wasser dazu trinken", "text": "Ein Glas Wasser pro Glas Wein: hält den Konsum moderat und hilft bei der Hydration.", "icon": "💧"},
-    {"title": "Nicht zum Snacken", "text": "Wein allein macht nicht satt und regt den Appetit an. Zum Essen trinken statt als Abend-Snack.", "icon": "🍽️"},
-    {"title": "Weinschorle als Alternative", "text": "Rotweinschorle (Wein + Wasser) hat nur ca. 100 kcal pro 0,2l – erfischend und kalorienärmer.", "icon": "💦"}
+    {
+      "title": "Trocken bevorzugen",
+      "text": "Trockener Rotwein hat weniger Kalorien pro Glas als lieblicher, weil er weniger Restzucker enthält.",
+      "icon": "🍇"
+    },
+    {
+      "title": "Glas statt Flasche",
+      "text": "Eine Flasche hat rund 634 kcal, fast eine Hauptmahlzeit. Beim Glas bleiben bewahrt die Kontrolle.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Wasser dazu trinken",
+      "text": "Ein Glas Wasser pro Glas Wein: hält den Konsum moderat und hilft bei der Hydration.",
+      "icon": "💧"
+    },
+    {
+      "title": "Nicht zum Snacken",
+      "text": "Wein allein macht nicht satt und regt den Appetit an. Zum Essen trinken statt als Abend-Snack.",
+      "icon": "🍽️"
+    },
+    {
+      "title": "Weinschorle als Alternative",
+      "text": "Rotweinschorle (halb Wein, halb Wasser) hat nur ca. 84 kcal pro 0,2l, erfrischend und kalorienärmer.",
+      "icon": "💦"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Glas Rotwein?", "answer": "Ein Glas Rotwein (0,2l) hat ca. 170 kcal (trocken) bis 210 kcal (lieblich)."},
-    {"question": "Hat Rotwein mehr Kalorien als Weißwein?", "answer": "Ja, leicht: Rotwein ca. 85 kcal/100ml, Weißwein ca. 80 kcal/100ml. Der Unterschied ist gering."},
-    {"question": "Ist ein Glas Rotwein am Tag gesund?", "answer": "Aktuelle Studien zeigen: Kein Alkoholkonsum ist am gesündesten. Die 'French Paradox'-These wird heute kritisch gesehen."},
-    {"question": "Wie viel Zucker hat Rotwein?", "answer": "Trockener Rotwein: ca. 2-3g/0,2l. Lieblicher: ca. 10-12g/0,2l. Glühwein: bis 20g durch zugesetzten Zucker."},
-    {"question": "Macht Rotwein dick?", "answer": "Bei regelmäßigem Konsum ja – 2 Gläser täglich sind 340 kcal, das sind ca. 18kg Fettzunahme pro Jahr (theoretisch)."},
-    {"question": "Wie viele Kalorien hat eine Flasche Rotwein?", "answer": "Eine Flasche (0,75l) hat ca. 638 kcal, fast so viel wie ein Döner (696 kcal). Enthält 6-7 Einheiten Alkohol."}
+    {
+      "question": "Wie viele Kalorien hat ein Glas Rotwein?",
+      "answer": "Ein Glas trockener Rotwein (0,2l) hat ca. 169 kcal. Lieblicher Rotwein liegt durch den Restzucker etwas höher."
+    },
+    {
+      "question": "Hat Rotwein mehr Kalorien als Weißwein?",
+      "answer": "Ja, leicht: Rotwein ca. 85 kcal/100ml, Weißwein ca. 82 kcal/100ml. Der Unterschied ist gering."
+    },
+    {
+      "question": "Ist ein Glas Rotwein am Tag gesund?",
+      "answer": "Aktuelle Studien zeigen: Kein Alkoholkonsum ist am gesündesten. Die 'French Paradox'-These wird heute kritisch gesehen."
+    },
+    {
+      "question": "Wie viel Zucker hat Rotwein?",
+      "answer": "Trockener Rotwein enthält kaum Zucker, laut USDA rund 1g pro 0,2l. Lieblicher Rotwein und Glühwein enthalten deutlich mehr, beim Glühwein vor allem durch zugesetzten Zucker."
+    },
+    {
+      "question": "Macht Rotwein dick?",
+      "answer": "Bei regelmäßigem Konsum ja: 2 Gläser täglich sind rund 338 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat eine Flasche Rotwein?",
+      "answer": "Eine Flasche (0,75l) hat ca. 634 kcal und enthält laut USDA rund 79g Alkohol."
+    }
   ],
-  "related_foods": ["bier", "weizenbier", "wein-weiss", "prosecco"]
+  "related_foods": [
+    "bier",
+    "weizenbier",
+    "wein-weiss",
+    "prosecco"
+  ]
 }

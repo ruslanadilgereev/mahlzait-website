@@ -3,10 +3,10 @@
   "name": "Basmati-Reis",
   "emoji": "🍚",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 169757 (Rice, white, long-grain, regular, unenriched, cooked without salt), Werte je 100 g; FDC führt keinen Basmatireis, Werte des gekochten weißen Langkornreises",
+  "source": "USDA FoodData Central, FDC-ID 169757 (Rice, white, long-grain, regular, unenriched, cooked without salt), Werte je 100 g",
   "seo": {
     "title": "Basmati-Reis Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Basmati-Reis? Gekocht ca. 130 kcal pro 100g, roh ca. 360 kcal. Nährwerte pro Portion, Kohlenhydrate & Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Basmati-Reis? Gekocht ca. 130 kcal pro 100g, roh ca. 365 kcal. Nährwerte pro Portion, Kohlenhydrate & Diät-Tipps im Überblick.",
     "keywords": [
       "basmati reis kalorien",
       "kalorien basmati reis",
@@ -20,7 +20,7 @@
   "overview": {
     "calories_per_100g": 130,
     "protein_per_100g": 2.7,
-    "carbs_per_100g": 28,
+    "carbs_per_100g": 28.2,
     "fat_per_100g": 0.3,
     "fiber_per_100g": 0.4,
     "typical_portion_g": 200,
@@ -49,51 +49,87 @@
       "portion_g": 250,
       "calories": 325,
       "protein": 7,
-      "carbs": 70,
+      "carbs": 71,
       "fat": 1
     },
     {
       "name": "Basmati-Reis roh (100g)",
       "portion_g": 100,
-      "calories": 360,
+      "calories": 365,
       "protein": 7,
-      "carbs": 79,
+      "carbs": 80,
       "fat": 1,
-      "tip": "Vor dem Kochen abgewogen"
+      "tip": "Vor dem Kochen abgewogen",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Trockenportion roh (60g)",
       "portion_g": 60,
-      "calories": 216,
+      "calories": 219,
       "protein": 4,
-      "carbs": 47,
+      "carbs": 48,
       "fat": 0,
-      "tip": "ergibt ca. 150-180g gekocht"
+      "tip": "ergibt ca. 150-180g gekocht",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Trockenportion roh (75g)",
       "portion_g": 75,
-      "calories": 270,
+      "calories": 274,
       "protein": 5,
-      "carbs": 59,
-      "fat": 0
+      "carbs": 60,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 75
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Nudeln gekocht (200g)",
       "calories": 316,
-      "emoji": "🍝"
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "nudeln",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Couscous gekocht (200g)",
       "calories": 224,
-      "emoji": "🍲"
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "couscous",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Kartoffeln gekocht (200g)",
-      "calories": 154,
-      "emoji": "🥔"
+      "calories": 172,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
@@ -104,7 +140,7 @@
     },
     {
       "title": "Kalorienärmer als roh wirkt",
-      "text": "Gekochter Basmati-Reis hat nur etwa 130 kcal pro 100g, da er zu großen Teilen aus eingelagertem Wasser besteht. Roh sind es rund 360 kcal pro 100g.",
+      "text": "Gekochter Basmati-Reis hat nur etwa 130 kcal pro 100g, da er zu großen Teilen aus eingelagertem Wasser besteht. Roh sind es rund 365 kcal pro 100g.",
       "icon": "💧"
     },
     {
@@ -126,7 +162,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Basmati-Reis?",
-      "answer": "Gekochter Basmati-Reis hat etwa 130 kcal pro 100g. Eine normale Portion von 200g liefert rund 260 kcal. Roher Basmati-Reis hat dagegen etwa 360 kcal pro 100g."
+      "answer": "Gekochter Basmati-Reis hat etwa 130 kcal pro 100g. Eine normale Portion von 200g liefert rund 260 kcal. Roher Basmati-Reis hat dagegen etwa 365 kcal pro 100g."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Basmati-Reis?",
@@ -134,7 +170,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Basmati-Reis?",
-      "answer": "Gekochter Basmati-Reis enthält etwa 28g Kohlenhydrate pro 100g, eine 200g-Portion also rund 56g. Roh sind es rund 79g pro 100g."
+      "answer": "Gekochter Basmati-Reis enthält etwa 28g Kohlenhydrate pro 100g, eine 200g-Portion also rund 56g. Roh sind es rund 80g pro 100g."
     },
     {
       "question": "Wie viel Eiweiß hat Basmati-Reis?",

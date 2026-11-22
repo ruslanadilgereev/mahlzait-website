@@ -100,22 +100,45 @@
     {
       "name": "Döner (mit Fleisch)",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Falafel-Wrap",
-      "calories": 520,
-      "emoji": "🌯"
+      "name": "Falafel-Sandwich",
+      "calories": 570,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "falafel-sandwich"
+        }
+      ]
     },
     {
       "name": "Dürüm vegetarisch",
       "calories": 683,
-      "emoji": "🌯"
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "duerrum",
+          "variante": "Dürüm Falafel"
+        }
+      ]
     },
     {
-      "name": "Pizza Margherita",
-      "calories": 800,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (300g)",
+      "calories": 798,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 300
+        }
+      ]
     }
   ],
   "tips": [

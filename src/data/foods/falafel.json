@@ -6,48 +6,275 @@
   "source": "USDA FoodData Central, FDC-ID 172455 (Falafel, home-prepared), Werte je 100 g",
   "seo": {
     "title": "Falafel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Falafel? Nährwerte pro Stück & 100g. Im Wrap, Teller & als Snack – interaktiver Rechner + vegane Tipps.",
-    "keywords": ["falafel kalorien", "kalorien falafel", "falafel nährwerte", "falafel kalorien pro stück", "falafel wrap kalorien", "falafel teller kalorien", "falafel protein", "falafel vegan kalorien"]
+    "description": "Wie viele Kalorien hat Falafel? Nährwerte pro Stück & 100g. Im Wrap, Teller & als Snack: interaktiver Rechner + vegane Tipps.",
+    "keywords": [
+      "falafel kalorien",
+      "kalorien falafel",
+      "falafel nährwerte",
+      "falafel kalorien pro stück",
+      "falafel wrap kalorien",
+      "falafel teller kalorien",
+      "falafel protein",
+      "falafel vegan kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 333,
-    "protein_per_100g": 13,
-    "carbs_per_100g": 32,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 5,
+    "protein_per_100g": 13.3,
+    "carbs_per_100g": 31.8,
+    "fat_per_100g": 17.8,
+    "fiber_per_100g": null,
     "typical_portion_g": 35,
     "typical_portion_name": "1 Falafel-Bällchen"
   },
   "variants": [
-    { "name": "1 Falafel-Bällchen", "portion_g": 35, "calories": 117, "protein": 5, "carbs": 11, "fat": 6 },
-    { "name": "3 Falafel (Snack)", "portion_g": 105, "calories": 350, "protein": 14, "carbs": 34, "fat": 19 },
-    { "name": "Falafel-Wrap/Dürum", "portion_g": 350, "calories": 650, "protein": 22, "carbs": 62, "fat": 34 },
-    { "name": "Falafel-Teller mit Hummus", "portion_g": 400, "calories": 720, "protein": 26, "carbs": 68, "fat": 38 },
-    { "name": "Falafel im Pitabrot", "portion_g": 300, "calories": 580, "protein": 20, "carbs": 56, "fat": 30 },
-    { "name": "Falafel-Salat", "portion_g": 350, "calories": 420, "protein": 18, "carbs": 36, "fat": 22, "tip": "Leichteste Mahlzeit" },
-    { "name": "Falafel aus dem Ofen", "portion_g": 105, "calories": 280, "protein": 14, "carbs": 34, "fat": 10, "tip": "Kalorienärmste" },
-    { "name": "Falafel gebraten (TK)", "portion_g": 105, "calories": 340, "protein": 12, "carbs": 32, "fat": 18 }
+    {
+      "name": "1 Falafel-Bällchen",
+      "portion_g": 35,
+      "calories": 117,
+      "protein": 5,
+      "carbs": 11,
+      "fat": 6
+    },
+    {
+      "name": "3 Falafel (Snack)",
+      "portion_g": 105,
+      "calories": 350,
+      "protein": 14,
+      "carbs": 33,
+      "fat": 19
+    },
+    {
+      "name": "Falafel-Wrap/Dürum",
+      "portion_g": 350,
+      "calories": 687,
+      "protein": 25,
+      "carbs": 84,
+      "fat": 29,
+      "basis": [
+        {
+          "g": 105
+        },
+        {
+          "fdcId": 175037,
+          "g": 90
+        },
+        {
+          "fdcId": 169248,
+          "g": 40
+        },
+        {
+          "fdcId": 170457,
+          "g": 40
+        },
+        {
+          "fdcId": 168409,
+          "g": 25
+        },
+        {
+          "fdcId": 2705448,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Falafel-Teller mit Hummus",
+      "portion_g": 400,
+      "calories": 840,
+      "protein": 31,
+      "carbs": 94,
+      "fat": 40,
+      "basis": [
+        {
+          "g": 140
+        },
+        {
+          "slug": "hummus",
+          "g": 80
+        },
+        {
+          "fdcId": 169248,
+          "g": 50
+        },
+        {
+          "fdcId": 170457,
+          "g": 40
+        },
+        {
+          "fdcId": 168409,
+          "g": 30
+        },
+        {
+          "fdcId": 174915,
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Falafel im Pitabrot",
+      "portion_g": 300,
+      "calories": 614,
+      "protein": 24,
+      "carbs": 82,
+      "fat": 22,
+      "basis": [
+        {
+          "g": 105
+        },
+        {
+          "fdcId": 174915,
+          "g": 80
+        },
+        {
+          "fdcId": 169248,
+          "g": 30
+        },
+        {
+          "fdcId": 170457,
+          "g": 30
+        },
+        {
+          "fdcId": 168409,
+          "g": 20
+        },
+        {
+          "fdcId": 2705448,
+          "g": 35
+        }
+      ]
+    },
+    {
+      "name": "Falafel-Salat",
+      "portion_g": 350,
+      "calories": 421,
+      "protein": 18,
+      "carbs": 42,
+      "fat": 22,
+      "tip": "Leichteste Mahlzeit",
+      "basis": [
+        {
+          "g": 105
+        },
+        {
+          "fdcId": 169248,
+          "g": 100
+        },
+        {
+          "fdcId": 170457,
+          "g": 60
+        },
+        {
+          "fdcId": 168409,
+          "g": 40
+        },
+        {
+          "fdcId": 2705448,
+          "g": 45
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Döner Kebab", "calories": 696, "emoji": "🥙" },
-    { "name": "Chicken Nuggets (6 St.)", "calories": 250, "emoji": "🍗" },
-    { "name": "Hummus (100g)", "calories": 166, "emoji": "🫘" },
-    { "name": "Veggie Burger", "calories": 380, "emoji": "🍔" }
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Chicken Nuggets (6 St.)",
+      "calories": 295,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-nuggets"
+        }
+      ]
+    },
+    {
+      "name": "Hummus (100g)",
+      "calories": 237,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Veggie Burger",
+      "calories": 493,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "veggie-burger"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Im Ofen statt frittieren", "text": "Falafel aus dem Ofen haben ca. 20% weniger Kalorien. Leicht mit Öl besprühen für die knusprige Kruste.", "icon": "🔥" },
-    { "title": "Falafel-Salat statt Wrap", "text": "Falafel-Salat hat mit 420 kcal fast 230 kcal weniger als der Wrap – durch das Weglassen des Fladenbrot.", "icon": "🥗" },
-    { "title": "Hummus sparsam dosieren", "text": "Hummus ist gesund, aber kalorienreich (166 kcal/100g). 2-3 EL reichen als Dip. Tahini-Soße ist noch kalorienreicher.", "icon": "🫙" },
-    { "title": "Gute pflanzliche Proteinquelle", "text": "Falafel aus Kichererbsen liefert alle essentiellen Aminosäuren in Kombination mit Pita oder Reis.", "icon": "🌱" },
-    { "title": "Selbst machen spart Kalorien", "text": "Selbstgemachte Falafel im Ofen: 180 kcal/100g. Fast-Food-Falafel frittiert: 333 kcal/100g.", "icon": "👨‍🍳" }
+    {
+      "title": "Im Ofen statt frittieren",
+      "text": "Falafel aus dem Ofen saugen weniger Fett auf als frittierte und haben dadurch weniger Kalorien. Leicht mit Öl besprühen für die knusprige Kruste.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Falafel-Salat statt Wrap",
+      "text": "Falafel-Salat hat mit 421 kcal rund 266 kcal weniger als der Wrap (687 kcal), vor allem durch das Weglassen des Fladenbrots.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Hummus sparsam dosieren",
+      "text": "Hummus ist gesund, aber kalorienreich (237 kcal/100g). 2-3 EL reichen als Dip. Tahini-Soße ist noch kalorienreicher.",
+      "icon": "🫙"
+    },
+    {
+      "title": "Gute pflanzliche Proteinquelle",
+      "text": "Falafel aus Kichererbsen liefert alle essentiellen Aminosäuren in Kombination mit Pita oder Reis.",
+      "icon": "🌱"
+    },
+    {
+      "title": "Selbst machen spart Kalorien",
+      "text": "Frittierte Falafel haben rund 333 kcal pro 100g. Selbstgemacht und im Ofen gebacken nehmen sie deutlich weniger Fett auf.",
+      "icon": "👨‍🍳"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Falafel?", "answer": "Ein Falafel-Bällchen (35g) hat ca. 117 kcal. 3 Falafel als Snack haben ca. 350 kcal. Ein Falafel-Wrap kommt auf ca. 650 kcal." },
-    { "question": "Sind Falafel gesund?", "answer": "Falafel sind eine gute pflanzliche Proteinquelle mit viel Ballaststoffen. Nachteil: Frittierte Falafel sind fettreich. Tipp: Im Ofen zubereiten." },
-    { "question": "Wie viel Protein haben Falafel?", "answer": "Falafel haben ca. 13g Protein pro 100g. 3 Falafel (105g) liefern 14g Protein. In Kombination mit Pita oder Reis ergibt das ein vollständiges Aminosäureprofil." },
-    { "question": "Sind Falafel vegan?", "answer": "Ja! Traditionelle Falafel bestehen aus Kichererbsen (oder Bohnen), Kräutern und Gewürzen – komplett vegan. Achtung: Manche Varianten enthalten Ei als Bindemittel." },
-    { "question": "Was hat weniger Kalorien: Falafel oder Döner?", "answer": "Ein Falafel-Wrap (650 kcal) hat etwas weniger als ein Döner (696 kcal). Falafel-Salat (420 kcal) ist deutlich leichter. Das Frittieren macht Falafel überraschend kalorienreich." },
-    { "question": "Wie viele Kalorien hat ein Falafel-Teller?", "answer": "Ein Falafel-Teller mit Hummus, Salat und Brot hat ca. 720 kcal. Ohne Brot und mit weniger Hummus ca. 500 kcal." }
+    {
+      "question": "Wie viele Kalorien hat eine Falafel?",
+      "answer": "Ein Falafel-Bällchen (35g) hat ca. 117 kcal. 3 Falafel als Snack haben ca. 350 kcal. Ein Falafel-Wrap kommt auf ca. 687 kcal."
+    },
+    {
+      "question": "Sind Falafel gesund?",
+      "answer": "Falafel sind eine gute pflanzliche Proteinquelle mit viel Ballaststoffen. Nachteil: Frittierte Falafel sind fettreich. Tipp: Im Ofen zubereiten."
+    },
+    {
+      "question": "Wie viel Protein haben Falafel?",
+      "answer": "Falafel haben ca. 13g Protein pro 100g. 3 Falafel (105g) liefern 14g Protein. In Kombination mit Pita oder Reis ergibt das ein vollständiges Aminosäureprofil."
+    },
+    {
+      "question": "Sind Falafel vegan?",
+      "answer": "Ja! Traditionelle Falafel bestehen aus Kichererbsen (oder Bohnen), Kräutern und Gewürzen, komplett vegan. Achtung: Manche Varianten enthalten Ei als Bindemittel."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Falafel oder Döner?",
+      "answer": "Ein Falafel-Wrap (687 kcal) hat etwas weniger als ein Döner (696 kcal). Falafel-Salat (421 kcal) ist deutlich leichter. Das Frittieren macht Falafel überraschend kalorienreich."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Falafel-Teller?",
+      "answer": "Ein Falafel-Teller mit Hummus, Salat und Brot hat ca. 840 kcal. Ohne das Brot sind es rund 675 kcal."
+    }
   ],
-  "related_foods": ["hummus", "gyros", "wrap", "currywurst"]
+  "related_foods": [
+    "hummus",
+    "gyros",
+    "wrap",
+    "currywurst"
+  ]
 }

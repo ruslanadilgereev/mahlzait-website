@@ -3,10 +3,10 @@
   "name": "Kokosmilch",
   "emoji": "🥥",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 170173 (Nuts, coconut milk, canned (liquid expressed from grated meat and water)), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 170173 (Nuts, coconut milk, canned (liquid expressed from grated meat and water): 197 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 200 kcal",
   "seo": {
     "title": "Kokosmilch Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kokosmilch? Klassische Kokosmilch aus der Dose hat ca. 197 kcal pro 100g. Nährwerte, Light-Variante & Tipps zum Kochen.",
+    "description": "Wie viele Kalorien hat Kokosmilch? Klassische Kokosmilch aus der Dose hat ca. 197 kcal pro 100g. Nährwerte, Portionen & Tipps zum Kochen.",
     "keywords": [
       "kokosmilch kalorien",
       "kalorien kokosmilch",
@@ -22,7 +22,7 @@
     "protein_per_100g": 2,
     "carbs_per_100g": 2.8,
     "fat_per_100g": 21.3,
-    "fiber_per_100g": 1.1,
+    "fiber_per_100g": null,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion zum Kochen (200g)"
   },
@@ -68,37 +68,43 @@
       "carbs": 11,
       "fat": 85,
       "tip": "Reicht meist für 2 Portionen"
-    },
-    {
-      "name": "Kokosmilch light (200g)",
-      "portion_g": 200,
-      "calories": 146,
-      "protein": 2,
-      "carbs": 3,
-      "fat": 15,
-      "tip": "Fettreduziert, ca. 25% weniger kcal"
     }
   ],
   "comparison": [
     {
-      "name": "Kokosmilch light (200g)",
-      "calories": 146,
-      "emoji": "🥥"
-    },
-    {
       "name": "Kuhmilch 3,5% (200ml)",
-      "calories": 128,
-      "emoji": "🥛"
+      "calories": 126,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch",
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
       "name": "Hafermilch (200ml)",
-      "calories": 90,
-      "emoji": "🌾"
+      "calories": 96,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "hafermilch",
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Sahne (200g)",
-      "calories": 580,
-      "emoji": "🥛"
+      "calories": 584,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sahne",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
@@ -109,7 +115,7 @@
     },
     {
       "title": "Light-Variante spart Kalorien",
-      "text": "Fettreduzierte Kokosmilch hat nur etwa 70 bis 75 kcal pro 100g statt 197 kcal. Für cremige Currys oder Suppen ist sie eine schlanke Alternative.",
+      "text": "Fettreduzierte Kokosmilch (light) hat deutlich weniger Kalorien als die klassische mit 197 kcal pro 100g. Für cremige Currys oder Suppen ist sie eine schlanke Alternative.",
       "icon": "🪶"
     },
     {
@@ -135,7 +141,7 @@
     },
     {
       "question": "Wie viele Kalorien hat Kokosmilch pro 100ml?",
-      "answer": "100ml Kokosmilch entsprechen etwa 100g und haben rund 197 kcal. Die fettreduzierte Light-Variante kommt auf etwa 70 bis 75 kcal."
+      "answer": "100ml Kokosmilch wiegen etwa 101g und haben rund 200 kcal. Fettreduzierte Light-Varianten liegen deutlich darunter."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kokosmilch?",

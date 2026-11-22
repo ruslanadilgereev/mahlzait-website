@@ -8,7 +8,7 @@ SEO-Keyword: Alkohol abnehmen, Alkohol Fettverbrennung, Abnehmen trotz Alkohol
 ## Das Wichtigste in Kürze
 
 - **Ja, Alkohol bremst die Fettverbrennung** – aber nur temporär, während er abgebaut wird (ca. 2–6 Stunden je nach Menge)
-- **Alkohol hat 7 kcal pro Gramm** – fast so viel wie Fett. Ein Glas Wein = ~150 kcal, ein [Bier](/kalorien/bier/) = ~150 kcal
+- **Alkohol hat 7 kcal pro Gramm**, fast so viel wie Fett. Ein Glas Wein = ~166 kcal, ein [Bier](/kalorien/bier/) (0,5 l) = ~218 kcal
 - **Das größte Problem:** Alkohol senkt Hemmungen und steigert Appetit → Heißhunger auf [Pizza](/kalorien/pizza/) und [Döner](/kalorien/doener/)
 - **Abnehmen mit gelegentlichem Alkohol ist möglich** – wenn du ihn in dein Kalorienbudget einplanst
 
@@ -61,16 +61,15 @@ Mit 7 kcal pro Gramm liegt Alkohol fast auf Fett-Niveau – und liefert dabei **
 | Getränk | Kalorien |
 |---------|----------|
 | Glas Rotwein (200 ml) | ~170 kcal |
-| Glas Weißwein (200 ml) | ~150 kcal |
-| Bier (500 ml) | ~215 kcal |
-| Weizenbier (500 ml) | ~250 kcal |
-| Gin Tonic (Standard) | ~170 kcal |
-| Mojito | ~220 kcal |
-| Piña Colada | ~490 kcal |
+| Glas Weißwein (200 ml) | ~163 kcal |
+| Bier (500 ml) | ~218 kcal |
+| Weizenbier (500 ml) | ~216 kcal |
+| Gin Tonic (Standard) | ~213 kcal |
+| Mojito | ~155 kcal |
+| Piña Colada | ~384 kcal |
 | [Wodka](/kalorien/wodka/) Shot (40 ml) | ~90 kcal |
-| Aperol Spritz | ~175 kcal |
 
-**Ein Abend mit 4 Bier = 860 kcal** – das ist fast ein halbes Tagesbudget für viele Menschen.
+**Ein Abend mit 4 Bier = 872 kcal**, das ist fast ein halbes Tagesbudget für viele Menschen.
 
 ---
 
@@ -89,11 +88,11 @@ Hier kommt die unbequeme Wahrheit: **Die Kalorien im Alkohol sind oft nicht das 
 
 | | Kalorien |
 |--|----------|
-| 4 Bier | 860 kcal |
+| 4 Bier | 872 kcal |
 | Döner um 2 Uhr | 696 kcal |
-| Pizza-Slice von Freunden | 300 kcal |
+| Pizza-Slice von Freunden | 372 kcal |
 | [Chips](/kalorien/chips/) beim Vorglühen | 250 kcal |
-| **Gesamt** | **2.106 kcal** |
+| **Gesamt** | **2.190 kcal** |
 
 Das ist für viele Menschen **ein ganzer Tagesbedarf** – zusätzlich zum normalen Essen an dem Tag.
 
@@ -149,7 +148,7 @@ Eine Studie zeigte: Nach einem Abend mit Alkohol ist die Muskelproteinsynthese u
 
 ### Wenn du abnehmen willst und trotzdem trinken möchtest:
 
-1. **Zähle die Kalorien mit:** Alkohol ist kein Freipass. Ein Glas Wein = 150 kcal = 30 Minuten Joggen
+1. **Zähle die Kalorien mit:** Alkohol ist kein Freipass. Ein Glas Wein = 166 kcal = 30 Minuten Joggen
    
 2. **Plane voraus:** Wenn du weißt, dass du abends trinkst, iss tagsüber etwas weniger (aber nicht hungern!)
 
@@ -169,8 +168,8 @@ Eine Studie zeigte: Nach einem Abend mit Alkohol ist die Muskelproteinsynthese u
 
 | Getränk | Kalorien |
 |---------|----------|
-| Vodka Soda (50 ml Vodka + Soda) | ~100 kcal |
-| Weinschorle (100 ml Wein + Wasser) | ~75 kcal |
+| Vodka Soda (50 ml Vodka + Soda) | ~110 kcal |
+| Weinschorle (100 ml Wein + Wasser) | ~83 kcal |
 | Whiskey pur (40 ml) | ~90 kcal |
 | Gin Tonic mit Zero-Tonic | ~100 kcal |
 | Light-Bier (330 ml) | ~100 kcal |

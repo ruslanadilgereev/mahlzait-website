@@ -28,7 +28,7 @@ Plausible Mechanismen sind der hohe Gehalt an gesättigten Fettsäuren, Natrium 
 
 Hier ist die Studienlage entspannter, als der Krebs-Schlagzeilen vermuten lassen: Für die Gewichtsabnahme ist die **Kalorienbilanz** entscheidend, nicht der Verzicht auf eine einzelne Lebensmittelgruppe. Rotes Fleisch liefert hochwertiges Protein, das stark sättigt und in einer Diät hilft, Muskelmasse zu erhalten.
 
-Entscheidend ist die Zubereitung: Mageres Rinderfilet (rund 120 kcal/100 g) ist energetisch deutlich günstiger als panierte Schnitzel, Bratwurst oder Speck. Wer abnehmen möchte, sollte vor allem auf die **Energiedichte** und die Gesamtmenge achten - nicht primär darauf, ob Fleisch auf dem Teller liegt. Wie viel Eiweiß sinnvoll ist, lässt sich mit dem [Makro-Rechner](/makros-berechnen/) abschätzen, das nötige Defizit mit dem [Kaloriendefizit-Rechner](/kaloriendefizit-berechnen/).
+Entscheidend ist die Zubereitung: Mageres Rinderfilet (rund 139 kcal/100 g) ist energetisch deutlich günstiger als panierte Schnitzel, Bratwurst oder Speck. Wer abnehmen möchte, sollte vor allem auf die **Energiedichte** und die Gesamtmenge achten - nicht primär darauf, ob Fleisch auf dem Teller liegt. Wie viel Eiweiß sinnvoll ist, lässt sich mit dem [Makro-Rechner](/makros-berechnen/) abschätzen, das nötige Defizit mit dem [Kaloriendefizit-Rechner](/kaloriendefizit-berechnen/).
 
 ## Was heißt das praktisch?
 

@@ -3,226 +3,48 @@
   "name": "Käsekuchen",
   "emoji": "🍰",
   "category": "gericht",
-  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 13 Stück à 150 g (Springform 26 cm)): 200 g Weizenmehl (Boden) (FDC-ID 169761, Wheat flour, white, all-purpose, unenriched: 364 kcal), 100 g Butter (Boden) (FDC-ID 173430, Butter, without salt: 717 kcal), 70 g Zucker (Boden) (FDC-ID 169655, Sugars, granulated: 387 kcal), 55 g Ei (Boden, 1 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 1000 g Magerquark (Füllung) (FDC-ID 172181, Cheese, cottage, nonfat, uncreamed, dry, large or small curd: 72 kcal), 220 g Eier (Füllung, 4 Stück) (FDC-ID 171287, Egg, whole, raw, fresh: 143 kcal), 180 g Zucker (Füllung) (FDC-ID 169655, Sugars, granulated: 387 kcal), 40 g Speisestärke (Füllung) (FDC-ID 169698, Cornstarch: 381 kcal), 100 g Butter (Füllung, geschmolzen) (FDC-ID 173430, Butter, without salt: 717 kcal), 200 g Sahne 30 % (Füllung) (FDC-ID 170858, Cream, fluid, light whipping: 292 kcal); 2165 g Zutaten ergeben 1950 g (Backverlust rund 10 % (Annahme)); Werte je 100 g",
-  "rezept": {
-    "zutaten": [
-      {
-        "name": "Weizenmehl (Boden)",
-        "g": 200,
-        "fdcId": 169761
-      },
-      {
-        "name": "Butter (Boden)",
-        "g": 100,
-        "fdcId": 173430
-      },
-      {
-        "name": "Zucker (Boden)",
-        "g": 70,
-        "fdcId": 169655
-      },
-      {
-        "name": "Ei (Boden, 1 Stück)",
-        "g": 55,
-        "fdcId": 171287
-      },
-      {
-        "name": "Magerquark (Füllung)",
-        "g": 1000,
-        "fdcId": 172181
-      },
-      {
-        "name": "Eier (Füllung, 4 Stück)",
-        "g": 220,
-        "fdcId": 171287
-      },
-      {
-        "name": "Zucker (Füllung)",
-        "g": 180,
-        "fdcId": 169655
-      },
-      {
-        "name": "Speisestärke (Füllung)",
-        "g": 40,
-        "fdcId": 169698
-      },
-      {
-        "name": "Butter (Füllung, geschmolzen)",
-        "g": 100,
-        "fdcId": 173430
-      },
-      {
-        "name": "Sahne 30 % (Füllung)",
-        "g": 200,
-        "fdcId": 170858
-      }
-    ],
-    "gewicht_g": 1950
-  },
   "seo": {
     "title": "Käsekuchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Käsekuchen? Ein Stück (150g) hat ca. 383 kcal. Nährwerte für deutschen Käsekuchen, New York Cheesecake & mit Obst. Mit Portionsrechner."
+    "description": "Wie viele Kalorien hat Käsekuchen? Nährwerte für deutschen Käsekuchen, New York Cheesecake & leichte Varianten. Mit Portionsrechner."
   },
   "overview": {
-    "calories_per_100g": 255,
-    "protein_per_100g": 8.4,
-    "carbs_per_100g": 26.3,
-    "fat_per_100g": 13.1,
+    "calories_per_100g": 250,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 25,
+    "fat_per_100g": 13,
     "fiber_per_100g": 0.3,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Stück"
   },
   "variants": [
-    {
-      "name": "Käsekuchen klassisch (Quark)",
-      "portion_g": 150,
-      "calories": 383,
-      "protein": 13,
-      "carbs": 39,
-      "fat": 20,
-      "tip": "Deutscher Klassiker mit Quark"
-    },
-    {
-      "name": "Kleines Stück (110g)",
-      "portion_g": 110,
-      "calories": 281,
-      "protein": 9,
-      "carbs": 29,
-      "fat": 14
-    },
-    {
-      "name": "New York Cheesecake",
-      "portion_g": 150,
-      "calories": 482,
-      "protein": 8,
-      "carbs": 38,
-      "fat": 34,
-      "tip": "Cremiger mit Frischkäse",
-      "basis": [
-        {
-          "fdcId": 172711,
-          "g": 150
-        }
-      ]
-    },
-    {
-      "name": "Käsekuchen mit Mandarinen (150g + 50g)",
-      "portion_g": 200,
-      "calories": 413,
-      "protein": 13,
-      "carbs": 48,
-      "fat": 20,
-      "tip": "Mit Obstbelag",
-      "basis": [
-        {
-          "g": 150
-        },
-        {
-          "fdcId": 169924,
-          "g": 50
-        }
-      ]
-    }
+    {"name": "Käsekuchen klassisch (Quark)", "portion_g": 150, "calories": 375, "protein": 12, "carbs": 38, "fat": 20, "tip": "Deutscher Klassiker mit Quark"},
+    {"name": "New York Cheesecake", "portion_g": 150, "calories": 480, "protein": 10, "carbs": 38, "fat": 32, "tip": "Cremiger mit Frischkäse"},
+    {"name": "Käsekuchen ohne Boden", "portion_g": 130, "calories": 290, "protein": 12, "carbs": 25, "fat": 16, "tip": "Kalorienärmste Variante"},
+    {"name": "Japanischer Käsekuchen (Fluffy)", "portion_g": 100, "calories": 210, "protein": 6, "carbs": 22, "fat": 11, "tip": "Leicht und luftig"},
+    {"name": "Käsekuchen mit Früchten", "portion_g": 170, "calories": 400, "protein": 12, "carbs": 45, "fat": 19, "tip": "Mit Obstbelag"},
+    {"name": "Protein-Käsekuchen", "portion_g": 150, "calories": 270, "protein": 25, "carbs": 18, "fat": 10, "tip": "Mit Magerquark und Proteinpulver"},
+    {"name": "Käsekuchen mit Streuseln", "portion_g": 160, "calories": 445, "protein": 11, "carbs": 42, "fat": 26, "tip": "Deftige Streusel-Variante"}
   ],
   "comparison": [
-    {
-      "name": "Bienenstich",
-      "calories": 400,
-      "emoji": "🐝",
-      "basis": [
-        {
-          "slug": "bienenstich"
-        }
-      ]
-    },
-    {
-      "name": "Schwarzwälder Kirschtorte",
-      "calories": 342,
-      "emoji": "🍰",
-      "basis": [
-        {
-          "slug": "schwarzwaelder-kirschtorte"
-        }
-      ]
-    },
-    {
-      "name": "Apfelstrudel",
-      "calories": 548,
-      "emoji": "🍏",
-      "basis": [
-        {
-          "slug": "apfelstrudel"
-        }
-      ]
-    },
-    {
-      "name": "Tiramisu",
-      "calories": 530,
-      "emoji": "🍮",
-      "basis": [
-        {
-          "slug": "tiramisu"
-        }
-      ]
-    }
+    {"name": "Bienenstich", "calories": 330, "emoji": "🐝"},
+    {"name": "Schwarzwälder Kirschtorte", "calories": 280, "emoji": "🍰"},
+    {"name": "Apfelstrudel", "calories": 215, "emoji": "🍏"},
+    {"name": "Tiramisu", "calories": 295, "emoji": "🍮"}
   ],
   "tips": [
-    {
-      "title": "Ohne Boden backen",
-      "text": "Der Mürbeteigboden liefert gut ein Drittel der Kalorien, rund 138 kcal pro Stück. Ohne Boden schmeckt Käsekuchen genauso cremig.",
-      "icon": "💡"
-    },
-    {
-      "title": "Magerquark verwenden",
-      "text": "Magerquark statt Sahnequark spart deutlich Kalorien bei gleichem Proteingehalt.",
-      "icon": "🥛"
-    },
-    {
-      "title": "Weniger Zucker",
-      "text": "Reduziere den Zucker um ein Drittel, die Zitronenschale und Vanille geben genug Geschmack.",
-      "icon": "🍋"
-    },
-    {
-      "title": "Protein-Version backen",
-      "text": "Ersetze einen Teil des Zuckers durch Proteinpulver und nutze Magerquark, das erhöht den Proteingehalt deutlich.",
-      "icon": "💪"
-    },
-    {
-      "title": "Kleine Stücke schneiden",
-      "text": "Schneide 12 statt 8 Stücke, du sparst ein Drittel der Kalorien und es reicht trotzdem.",
-      "icon": "✂️"
-    }
+    {"title": "Ohne Boden backen", "text": "Der Mürbeteigboden macht ca. 80-100 kcal pro Stück aus. Ohne Boden schmeckt Käsekuchen genauso cremig.", "icon": "💡"},
+    {"title": "Magerquark verwenden", "text": "Magerquark statt Sahnequark spart ca. 50 kcal pro Stück bei gleichem Proteingehalt.", "icon": "🥛"},
+    {"title": "Weniger Zucker", "text": "Reduziere den Zucker um ein Drittel, die Zitronenschale und Vanille geben genug Geschmack.", "icon": "🍋"},
+    {"title": "Protein-Version backen", "text": "Ersetze einen Teil des Zuckers durch Proteinpulver und nutze Magerquark, du bekommst 25g Protein pro Stück.", "icon": "💪"},
+    {"title": "Kleine Stücke schneiden", "text": "Schneide 12 statt 8 Stücke, du sparst ein Drittel der Kalorien und es reicht trotzdem.", "icon": "✂️"}
   ],
   "faq": [
-    {
-      "question": "Wie viele Kalorien hat ein Stück Käsekuchen?",
-      "answer": "Ein Stück deutscher Käsekuchen (150g) hat ca. 383 kcal. New York Cheesecake hat mit ca. 482 kcal deutlich mehr, da er mit Frischkäse statt Quark gemacht wird. Gerechnet aus USDA-Werten für einen Kuchen mit Mürbeteigboden und einer Füllung aus 1 kg Magerquark, 4 Eiern, 180g Zucker, 100g Butter und 200g Sahne (13 Stück)."
-    },
-    {
-      "question": "Ist Käsekuchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja, vor allem ohne Boden und mit Magerquark: Der Boden liefert gut ein Drittel der Kalorien, die Quarkfüllung viel Protein und sättigt gut."
-    },
-    {
-      "question": "Was hat weniger Kalorien: deutscher Käsekuchen oder Cheesecake?",
-      "answer": "Deutscher Käsekuchen mit Quark (255 kcal/100g) hat deutlich weniger als New York Cheesecake (321 kcal/100g). Der Unterschied: Frischkäse hat mehr Fett als Quark."
-    },
-    {
-      "question": "Wie viel Protein hat Käsekuchen?",
-      "answer": "Klassischer Käsekuchen liefert ca. 8g Protein pro 100g dank des Quarks. Eine Proteinversion mit Proteinpulver liefert noch mehr."
-    },
-    {
-      "question": "Wie viel Fett hat Käsekuchen?",
-      "answer": "Deutscher Käsekuchen hat ca. 13g Fett pro 100g. New York Cheesecake hat ca. 22,5g/100g, rund 70 % mehr."
-    },
-    {
-      "question": "Kann man Käsekuchen kalorienärmer machen?",
-      "answer": "Ja: Ohne Boden, mit Magerquark, weniger Zucker und kleiner geschnitten. So sparst du pro Stück deutlich Kalorien."
-    }
+    {"question": "Wie viele Kalorien hat ein Stück Käsekuchen?", "answer": "Ein Stück deutscher Käsekuchen (150g) hat ca. 375 kcal. New York Cheesecake hat mit ca. 480 kcal deutlich mehr, da er mit Frischkäse statt Quark gemacht wird."},
+    {"question": "Ist Käsekuchen zum Abnehmen geeignet?", "answer": "In Maßen ja, vor allem die Variante ohne Boden mit Magerquark (290 kcal pro Stück) liefert viel Protein und sättigt gut."},
+    {"question": "Was hat weniger Kalorien: deutscher Käsekuchen oder Cheesecake?", "answer": "Deutscher Käsekuchen mit Quark (250 kcal/100g) hat deutlich weniger als New York Cheesecake (320 kcal/100g). Der Unterschied: Frischkäse hat mehr Fett als Quark."},
+    {"question": "Wie viel Protein hat Käsekuchen?", "answer": "Klassischer Käsekuchen liefert ca. 8g Protein pro 100g dank des Quarks. Eine Proteinversion kann bis zu 25g pro Stück erreichen."},
+    {"question": "Wie viel Fett hat Käsekuchen?", "answer": "Deutscher Käsekuchen hat ca. 13g Fett pro 100g. New York Cheesecake hat ca. 21g/100g, fast doppelt so viel."},
+    {"question": "Kann man Käsekuchen kalorienärmer machen?", "answer": "Ja: Ohne Boden, mit Magerquark, weniger Zucker und kleiner geschnitten. So kommst du auf 270-290 kcal pro Stück statt 375 kcal."}
   ],
-  "related_foods": [
-    "schwarzwaelder-kirschtorte",
-    "bienenstich",
-    "streuselkuchen",
-    "apfelstrudel"
-  ]
+  "related_foods": ["schwarzwaelder-kirschtorte", "bienenstich", "streuselkuchen", "apfelstrudel"]
 }

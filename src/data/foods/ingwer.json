@@ -68,46 +68,73 @@
       "protein": 0.3,
       "carbs": 2.1,
       "fat": 0.1,
-      "tip": "Konzentriert"
+      "tip": "Konzentriert",
+      "basis": [
+        {
+          "fdcId": 170926,
+          "g": 3
+        }
+      ]
     },
     {
       "name": "Ingwerpulver getrocknet (100g)",
       "portion_g": 100,
       "calories": 335,
       "protein": 9,
-      "carbs": 72,
-      "fat": 4.2
-    },
-    {
-      "name": "Kandierter Ingwer (20g)",
-      "portion_g": 20,
-      "calories": 71,
-      "protein": 0.1,
-      "carbs": 18,
-      "fat": 0,
-      "tip": "Stark gezuckert"
+      "carbs": 71.6,
+      "fat": 4.2,
+      "basis": [
+        {
+          "fdcId": 170926,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Zwiebel (100g)",
       "calories": 40,
-      "emoji": "🧅"
+      "emoji": "🧅",
+      "basis": [
+        {
+          "slug": "zwiebel",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Knoblauch (100g)",
       "calories": 149,
-      "emoji": "🧄"
+      "emoji": "🧄",
+      "basis": [
+        {
+          "slug": "knoblauch",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Karotten (100g)",
       "calories": 41,
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Zitronensaft (100g)",
       "calories": 22,
-      "emoji": "🍋"
+      "emoji": "🍋",
+      "basis": [
+        {
+          "slug": "zitronensaft",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -128,7 +155,7 @@
     },
     {
       "title": "Vorsicht bei kandiertem Ingwer",
-      "text": "Kandierter Ingwer ist stark gezuckert und kommt auf knapp 350 kcal pro 100g. Hier liegen die Kalorien fast ausschließlich im zugesetzten Zucker, nicht im Ingwer selbst.",
+      "text": "Kandierter Ingwer ist stark gezuckert und deshalb deutlich kalorienreicher als frischer. Hier liegen die Kalorien fast ausschließlich im zugesetzten Zucker, nicht im Ingwer selbst.",
       "icon": "🍬"
     },
     {

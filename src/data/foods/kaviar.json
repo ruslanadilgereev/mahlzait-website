@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 174188 (Fish, caviar, black and red, granular), Werte je 100 g",
   "seo": {
     "title": "Kaviar Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kaviar? 100g Kaviar haben ca. 264 kcal. Nährwerte pro Teelöffel & Portion, viel Protein, kaum Kohlenhydrate – plus Tipps.",
+    "description": "Wie viele Kalorien hat Kaviar? 100g Kaviar haben ca. 264 kcal. Nährwerte pro Teelöffel & Portion, viel Protein, kaum Kohlenhydrate, plus Tipps.",
     "keywords": [
       "kaviar kalorien",
       "kaviar kcal",
@@ -75,37 +75,41 @@
       "protein": 30.8,
       "carbs": 5,
       "fat": 22.4
-    },
-    {
-      "name": "Lachskaviar (Keta) 30g",
-      "portion_g": 30,
-      "calories": 75,
-      "protein": 9,
-      "carbs": 0,
-      "fat": 4.2,
-      "tip": "Etwas magerer als Störkaviar"
     }
   ],
   "comparison": [
     {
-      "name": "Lachs (geräuchert)",
+      "name": "Räucherlachs (100g)",
       "calories": 117,
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "raeucherlachs",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Matjes",
-      "calories": 200,
-      "emoji": "🐟"
-    },
-    {
-      "name": "Garnelen",
+      "name": "Garnelen (100g)",
       "calories": 99,
-      "emoji": "🦐"
+      "emoji": "🦐",
+      "basis": [
+        {
+          "slug": "garnelen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Thunfisch (Dose)",
-      "calories": 116,
-      "emoji": "🐟"
+      "name": "Thunfisch (Dose, 100g)",
+      "calories": 86,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "thunfisch-dose",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

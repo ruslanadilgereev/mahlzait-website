@@ -18,8 +18,8 @@
   },
   "overview": {
     "calories_per_100g": 222,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 22.6,
+    "protein_per_100g": 4.1,
+    "carbs_per_100g": 22.2,
     "fat_per_100g": 13,
     "fiber_per_100g": 0.7,
     "typical_portion_g": 75,
@@ -30,16 +30,16 @@
       "name": "Kleine Kugel (50g)",
       "portion_g": 50,
       "calories": 111,
-      "protein": 2,
-      "carbs": 11.3,
+      "protein": 2.1,
+      "carbs": 11.1,
       "fat": 6.5
     },
     {
       "name": "Softeis im Hörnchen (75g)",
       "portion_g": 75,
       "calories": 167,
-      "protein": 3,
-      "carbs": 17,
+      "protein": 3.1,
+      "carbs": 16.7,
       "fat": 9.8,
       "tip": "Klassische Portion"
     },
@@ -47,72 +47,83 @@
       "name": "Softeis im Becher (100g)",
       "portion_g": 100,
       "calories": 222,
-      "protein": 4,
-      "carbs": 22.6,
+      "protein": 4.1,
+      "carbs": 22.2,
       "fat": 13
     },
     {
       "name": "Große Portion (125g)",
       "portion_g": 125,
       "calories": 278,
-      "protein": 5,
-      "carbs": 28.3,
+      "protein": 5.1,
+      "carbs": 27.8,
       "fat": 16.3
-    },
-    {
-      "name": "Softeis mit Streuseln (150g)",
-      "portion_g": 150,
-      "calories": 350,
-      "protein": 6,
-      "carbs": 38,
-      "fat": 19,
-      "tip": "Streusel erhöhen Zucker und Fett"
     },
     {
       "name": "XL-Portion (200g)",
       "portion_g": 200,
       "calories": 444,
-      "protein": 8,
-      "carbs": 45.2,
+      "protein": 8.2,
+      "carbs": 44.4,
       "fat": 26
     }
   ],
   "comparison": [
     {
-      "name": "Eis Vanille",
-      "calories": 207,
-      "emoji": "🍨"
+      "name": "Vanilleeis (1 Kugel, 75g)",
+      "calories": 155,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille"
+        }
+      ]
     },
     {
-      "name": "Frozen Yogurt",
-      "calories": 159,
-      "emoji": "🍦"
+      "name": "Frozen Yogurt (1 Becher, 150g)",
+      "calories": 191,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "frozen-yogurt"
+        }
+      ]
     },
     {
-      "name": "Magnum",
-      "calories": 261,
-      "emoji": "🍫"
+      "name": "Magnum Classic (81g)",
+      "calories": 247,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "magnum"
+        }
+      ]
     },
     {
-      "name": "Wassereis",
-      "calories": 88,
-      "emoji": "🧊"
+      "name": "Wassereis (1 Stück, 60g)",
+      "calories": 47,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "wassereis"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hörnchen mitrechnen",
-      "text": "Das Waffelhörnchen schlägt mit rund 20 bis 25 kcal zusätzlich zu Buche. Im Becher sparst du diese Extra-Kalorien.",
+      "text": "Das Waffelhörnchen bringt zusätzliche Kalorien mit. Im Becher sparst du diese Extra-Kalorien.",
       "icon": "🍦"
     },
     {
       "title": "Streusel und Soße erhöhen die Bilanz",
-      "text": "Schokostreusel, Karamellsoße oder Saucen können eine Portion schnell um 80 bis 150 kcal teurer machen.",
+      "text": "Schokostreusel, Karamellsoße oder Saucen können eine Portion schnell deutlich kalorienreicher machen.",
       "icon": "🍫"
     },
     {
       "title": "Frozen Yogurt als leichtere Wahl",
-      "text": "Wenn du Lust auf etwas Cremiges hast, hat Frozen Yogurt mit rund 159 kcal pro 100g etwas weniger als Softeis.",
+      "text": "Wenn du Lust auf etwas Cremiges hast, hat Frozen Yogurt mit rund 127 kcal pro 100g deutlich weniger als Softeis.",
       "icon": "🥄"
     },
     {
@@ -133,11 +144,11 @@
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Softeis im Hörnchen?",
-      "answer": "Eine typische Portion Softeis im Hörnchen wiegt etwa 75g und hat ungefähr 167 kcal. Das Waffelhörnchen ist dabei schon enthalten."
+      "answer": "Eine typische Portion Softeis im Hörnchen wiegt etwa 75g und hat ungefähr 167 kcal. Das Waffelhörnchen kommt noch dazu."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Softeis?",
-      "answer": "Softeis enthält rund 22,6g Kohlenhydrate pro 100g, überwiegend in Form von Zucker. Eine 75g-Portion hat etwa 17g Kohlenhydrate."
+      "answer": "Softeis enthält rund 22,2g Kohlenhydrate pro 100g, überwiegend in Form von Zucker. Eine 75g-Portion hat etwa 17g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Softeis?",

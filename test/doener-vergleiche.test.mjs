@@ -199,5 +199,12 @@ test("Alkohol-, Schritte-Rechner und Wissensartikel: Vergleiche mit den neuen We
   );
   const alkoholArtikel = readRepoFile("src/content/wissen/articles/alkohol-abnehmen-fettverbrennung.md");
   assert.ok(alkoholArtikel.includes("| Döner um 2 Uhr | " + standard.kcal + " kcal |"), "Artikel Alkohol");
-  assert.ok(alkoholArtikel.includes("| **Gesamt** | **" + (860 + standard.kcal + 300 + 250).toLocaleString("de-DE") + " kcal** |"), "Summe");
+  // 4 Bier je 0,5 l (Seite bier) und ein Pizzastück (Seite pizza-margherita), Chips 250 kcal wie im Artikel
+  const variante = (slug, name) =>
+    JSON.parse(readRepoFile("src/data/foods/" + slug + ".json")).variants.find((v) => v.name === name).calories;
+  const vierBier = 4 * variante("bier", "Pils (0,5l)");
+  const pizzaStueck = variante("pizza-margherita", "Pizza Margherita (1 Stück, Pizzeria)");
+  assert.ok(alkoholArtikel.includes("| 4 Bier | " + vierBier + " kcal |"), "4 Bier");
+  assert.ok(alkoholArtikel.includes("| Pizza-Slice von Freunden | " + pizzaStueck + " kcal |"), "Pizza-Slice");
+  assert.ok(alkoholArtikel.includes("| **Gesamt** | **" + (vierBier + standard.kcal + pizzaStueck + 250).toLocaleString("de-DE") + " kcal** |"), "Summe");
 });

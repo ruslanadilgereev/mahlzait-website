@@ -21,7 +21,7 @@
     "protein_per_100g": 1.9,
     "carbs_per_100g": 11.2,
     "fat_per_100g": 0.7,
-    "fiber_per_100g": 6,
+    "fiber_per_100g": null,
     "typical_portion_g": 100,
     "typical_portion_name": "1 Handvoll bis kleine Schale (100g)"
   },
@@ -67,53 +67,68 @@
       "protein": 5.7,
       "carbs": 33.6,
       "fat": 2.1
-    },
-    {
-      "name": "Physalis getrocknet (30g)",
-      "portion_g": 30,
-      "calories": 99,
-      "protein": 1.6,
-      "carbs": 22,
-      "fat": 1.2,
-      "tip": "Deutlich kalorienreicher, oft gezuckert"
     }
   ],
   "comparison": [
     {
-      "name": "Erdbeeren",
+      "name": "Erdbeeren (100g)",
       "calories": 32,
-      "emoji": "🍓"
+      "emoji": "🍓",
+      "basis": [
+        {
+          "slug": "erdbeeren",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Blaubeeren",
+      "name": "Blaubeeren (100g)",
       "calories": 57,
-      "emoji": "🫐"
+      "emoji": "🫐",
+      "basis": [
+        {
+          "slug": "blaubeeren",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kiwi",
+      "name": "Kiwi (100g)",
       "calories": 61,
-      "emoji": "🥝"
+      "emoji": "🥝",
+      "basis": [
+        {
+          "slug": "kiwi",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Weintrauben",
+      "name": "Weintrauben (100g)",
       "calories": 69,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "slug": "weintrauben",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sehr kalorienarm",
-      "text": "Mit nur 53 kcal pro 100g gehört Physalis zu den leichtesten Obstsorten und passt gut in eine kalorienbewusste Ernährung.",
+      "text": "Mit nur 53 kcal pro 100g gehört Physalis zu den kalorienarmen Obstsorten und passt gut in eine kalorienbewusste Ernährung.",
       "icon": "🟠"
     },
     {
-      "title": "Reich an Ballaststoffen",
-      "text": "Rund 6g Ballaststoffe pro 100g unterstützen die Verdauung und sorgen für ein länger anhaltendes Sättigungsgefühl.",
+      "title": "Viel Wasser, wenig Energie",
+      "text": "Physalis besteht laut USDA zu rund 85 % aus Wasser und liefert nur 53 kcal pro 100g. Das bringt Volumen bei wenig Kalorien.",
       "icon": "🌾"
     },
     {
       "title": "Auf getrocknete Ware achten",
-      "text": "Getrocknete Physalis hat pro Gramm mehr als das Sechsfache an Kalorien und ist häufig zusätzlich gezuckert. Hier sparsam dosieren.",
+      "text": "Getrocknete Physalis ist durch den Wasserentzug deutlich kalorienreicher und häufig zusätzlich gezuckert. Hier sparsam dosieren.",
       "icon": "⚠️"
     },
     {
@@ -138,7 +153,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Physalis?",
-      "answer": "Physalis enthält etwa 11,2g Kohlenhydrate pro 100g, davon ein Teil als natürlicher Fruchtzucker. Dazu kommen rund 6g Ballaststoffe."
+      "answer": "Physalis enthält etwa 11,2g Kohlenhydrate pro 100g, davon ein Teil als natürlicher Fruchtzucker."
     },
     {
       "question": "Wie viel Protein hat Physalis?",
@@ -146,11 +161,11 @@
     },
     {
       "question": "Ist Physalis zum Abnehmen geeignet?",
-      "answer": "Ja. Mit nur 53 kcal pro 100g, viel Wasser und Ballaststoffen ist Physalis ein kalorienarmer Snack, der gut sättigt und sich gut in eine Diät einbauen lässt."
+      "answer": "Ja. Mit nur 53 kcal pro 100g und viel Wasser ist Physalis ein kalorienarmer Snack, der sich gut in eine Diät einbauen lässt."
     },
     {
       "question": "Ist Physalis gesund?",
-      "answer": "Physalis ist kalorienarm, ballaststoffreich und liefert Vitamin C sowie Beta-Carotin. Frisch und reif ist sie eine gute Ergänzung einer ausgewogenen Ernährung."
+      "answer": "Physalis ist kalorienarm und liefert Vitamin C sowie Beta-Carotin (Vitamin A). Frisch und reif ist sie eine gute Ergänzung einer ausgewogenen Ernährung."
     }
   ],
   "related_foods": [

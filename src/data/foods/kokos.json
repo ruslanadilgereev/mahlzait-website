@@ -51,7 +51,13 @@
       "protein": 1,
       "carbs": 5,
       "fat": 13,
-      "tip": "Getrocknet & energiedicht"
+      "tip": "Getrocknet & energiedicht",
+      "basis": [
+        {
+          "fdcId": 170170,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Kokoschips getrocknet (25g)",
@@ -59,7 +65,13 @@
       "calories": 165,
       "protein": 2,
       "carbs": 6,
-      "fat": 16
+      "fat": 16,
+      "basis": [
+        {
+          "fdcId": 170170,
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Halbe frische Kokosnuss Fruchtfleisch (150g)",
@@ -71,40 +83,71 @@
     },
     {
       "name": "Kokoswasser (250ml)",
-      "portion_g": 250,
+      "portion_g": 254,
       "calories": 48,
       "protein": 2,
       "carbs": 9,
-      "fat": 0,
-      "tip": "Kalorienarme Erfrischung"
+      "fat": 1,
+      "tip": "Kalorienarme Erfrischung",
+      "basis": [
+        {
+          "fdcId": 170174,
+          "ml": 250,
+          "g": 254
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Mandeln (45g)",
-      "calories": 260,
-      "emoji": "🌰"
+      "calories": 261,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 45
+        }
+      ]
     },
     {
       "name": "Mango (45g)",
       "calories": 27,
-      "emoji": "🥭"
+      "emoji": "🥭",
+      "basis": [
+        {
+          "slug": "mango",
+          "g": 45
+        }
+      ]
     },
     {
       "name": "Ananas (45g)",
       "calories": 23,
-      "emoji": "🍍"
+      "emoji": "🍍",
+      "basis": [
+        {
+          "slug": "ananas",
+          "g": 45
+        }
+      ]
     },
     {
       "name": "Kokosmilch (45g)",
-      "calories": 103,
-      "emoji": "🥥"
+      "calories": 89,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "kokosmilch",
+          "g": 45
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sehr fettreich",
-      "text": "Frisches Kokosfleisch besteht zu rund einem Drittel aus Fett (33,5g pro 100g). Das macht es mit 354 kcal pro 100g energiedicht – kleine Portionen genügen.",
+      "text": "Frisches Kokosfleisch besteht zu rund einem Drittel aus Fett (33,5g pro 100g). Das macht es mit 354 kcal pro 100g energiedicht, kleine Portionen genügen.",
       "icon": "🥥"
     },
     {
@@ -114,12 +157,12 @@
     },
     {
       "title": "Kokoswasser statt Kokosfleisch",
-      "text": "Wer Kalorien sparen will, greift zu Kokoswasser: 250ml haben nur etwa 48 kcal und kaum Fett – eine leichte Alternative zum Fruchtfleisch.",
+      "text": "Wer Kalorien sparen will, greift zu Kokoswasser: 250ml haben nur etwa 48 kcal und kaum Fett, eine leichte Alternative zum Fruchtfleisch.",
       "icon": "💧"
     },
     {
       "title": "Sparsam beim Backen",
-      "text": "Getrocknete Kokosraspeln und Kokoschips sind besonders konzentriert. Schon 20g bringen rund 130 kcal mit – beim Dekorieren bewusst dosieren.",
+      "text": "Getrocknete Kokosraspeln und Kokoschips sind besonders konzentriert. Schon 20g bringen rund 130 kcal mit, beim Dekorieren bewusst dosieren.",
       "icon": "🥄"
     },
     {

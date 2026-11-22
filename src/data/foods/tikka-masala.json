@@ -18,33 +18,163 @@
     "typical_portion_name": "1 Portion (ohne Reis)"
   },
   "variants": [
-    {"name": "Tikka Masala mit Reis", "portion_g": 500, "calories": 635, "protein": 47, "carbs": 59, "fat": 23, "tip": "350 g Curry, 150 g Reis"},
-    {"name": "Tikka Masala ohne Reis", "portion_g": 350, "calories": 440, "protein": 43, "carbs": 17, "fat": 23, "tip": "Low-Carb Option"},
-    {"name": "Tikka Masala mit Naan", "portion_g": 440, "calories": 702, "protein": 52, "carbs": 62, "fat": 28, "tip": "1 Naan (90 g)"},
-    {"name": "Tikka Masala light (Joghurt statt Sahne)", "portion_g": 500, "calories": 549, "protein": 48, "carbs": 60, "fat": 12, "tip": "Mit 150 g Reis"},
-    {"name": "Tikka Masala mit Vollkornreis", "portion_g": 500, "calories": 625, "protein": 47, "carbs": 55, "fat": 24, "tip": "Mehr Ballaststoffe"},
-    {"name": "Tikka Masala große Portion", "portion_g": 650, "calories": 826, "protein": 61, "carbs": 78, "fat": 30, "tip": "450 g Curry, 200 g Reis"}
+    {
+      "name": "Tikka Masala mit Reis",
+      "portion_g": 500,
+      "calories": 635,
+      "protein": 47,
+      "carbs": 59,
+      "fat": 23,
+      "tip": "350 g Curry, 150 g Reis"
+    },
+    {
+      "name": "Tikka Masala ohne Reis",
+      "portion_g": 350,
+      "calories": 440,
+      "protein": 43,
+      "carbs": 17,
+      "fat": 23,
+      "tip": "Low-Carb Option"
+    },
+    {
+      "name": "Tikka Masala mit Naan",
+      "portion_g": 440,
+      "calories": 702,
+      "protein": 52,
+      "carbs": 62,
+      "fat": 28,
+      "tip": "1 Naan (90 g)"
+    },
+    {
+      "name": "Tikka Masala light (Joghurt statt Sahne)",
+      "portion_g": 500,
+      "calories": 549,
+      "protein": 48,
+      "carbs": 60,
+      "fat": 12,
+      "tip": "Mit 150 g Reis"
+    },
+    {
+      "name": "Tikka Masala mit Vollkornreis",
+      "portion_g": 500,
+      "calories": 625,
+      "protein": 47,
+      "carbs": 55,
+      "fat": 24,
+      "tip": "Mehr Ballaststoffe"
+    },
+    {
+      "name": "Tikka Masala große Portion",
+      "portion_g": 650,
+      "calories": 826,
+      "protein": 61,
+      "carbs": 78,
+      "fat": 30,
+      "tip": "450 g Curry, 200 g Reis"
+    }
   ],
   "comparison": [
-    {"name": "Butter Chicken", "calories": 680, "emoji": "🍛"},
-    {"name": "Hähnchen-Curry (Thai)", "calories": 620, "emoji": "🍛"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"}
+    {
+      "name": "Butter Chicken (ohne Reis)",
+      "calories": 501,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "slug": "butter-chicken",
+          "variante": "Butter Chicken ohne Reis"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchen-Curry (350g)",
+      "calories": 375,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "fdcId": 2706437,
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Spaghetti Bolognese",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Joghurt statt Sahne", "text": "Ersetze die Sahne durch fettarmen Joghurt. Das spart 86 kcal pro Portion (350 g).", "icon": "🥛"},
-    {"title": "Hähnchenbrust marinieren", "text": "Die Tikka-Marinade (Joghurt + Gewürze) macht auch Hähnchenbrust saftig und zart.", "icon": "🍗"},
-    {"title": "Reis-Portion halbieren", "text": "100 g statt 200 g Reis spart 130 kcal. Das Curry ist sättigend genug.", "icon": "🍚"},
-    {"title": "Naan-Brot teilen", "text": "Ein Naan (90 g) hat 262 kcal, ein Chapati (68 g) 202 kcal. Teile das Naan oder nimm ein Chapati.", "icon": "🫓"},
-    {"title": "Zu Hause kochen spart Kalorien", "text": "Restaurants verwenden oft mehr Butter und Sahne. Selbst gekocht bestimmst du die Menge: 50 g Sahne weniger sparen 146 kcal im ganzen Topf.", "icon": "👩‍🍳"}
+    {
+      "title": "Joghurt statt Sahne",
+      "text": "Ersetze die Sahne durch fettarmen Joghurt. Das spart 86 kcal pro Portion (350 g).",
+      "icon": "🥛"
+    },
+    {
+      "title": "Hähnchenbrust marinieren",
+      "text": "Die Tikka-Marinade (Joghurt + Gewürze) macht auch Hähnchenbrust saftig und zart.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Reis-Portion halbieren",
+      "text": "100 g statt 200 g Reis spart 130 kcal. Das Curry ist sättigend genug.",
+      "icon": "🍚"
+    },
+    {
+      "title": "Naan-Brot teilen",
+      "text": "Ein Naan (90 g) hat 262 kcal, ein Chapati (68 g) 202 kcal. Teile das Naan oder nimm ein Chapati.",
+      "icon": "🫓"
+    },
+    {
+      "title": "Zu Hause kochen spart Kalorien",
+      "text": "Restaurants verwenden oft mehr Butter und Sahne. Selbst gekocht bestimmst du die Menge: 50 g Sahne weniger sparen 146 kcal im ganzen Topf.",
+      "icon": "👩‍🍳"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Chicken Tikka Masala?", "answer": "Eine Portion (350 g) hat 440 kcal, mit 150 g Reis 635 kcal, mit Naan 702 kcal. Pro 100 g sind es 126 kcal. Gerechnet aus USDA-Nährwerten für ein Rezept mit 500 g Hähnchenbrust, 450 g Tomaten, 150 g Sahne, 150 g Zwiebeln, 100 g Joghurt und 20 g Öl für 4 Portionen."},
-    {"question": "Ist Tikka Masala kalorienreich?", "answer": "Mittel: 126 kcal pro 100 g. Ein Viertel der Kalorien kommt aus der Sahne (438 von 1.760 kcal im ganzen Topf). Die Light-Variante mit fettarmem Joghurt statt Sahne hat mit Reis 549 kcal statt 635 kcal."},
-    {"question": "Was ist der Unterschied zwischen Tikka Masala und Butter Chicken?", "answer": "Butter Chicken wird mit mehr Butter und Sahne gekocht, Tikka Masala hat mehr Tomatengeschmack und Gewürze. Für Tikka Masala mit Reis rechnen wir 635 kcal pro Portion."},
-    {"question": "Wie viel Protein hat Tikka Masala?", "answer": "Eine Portion (350 g) liefert 43 g Protein, mit Reis 47 g. Fast alles stammt aus dem Hähnchen: 125 g Hähnchenbrust pro Portion."},
-    {"question": "Kann man Tikka Masala beim Abnehmen essen?", "answer": "Ja, als Light-Version (fettarmer Joghurt statt Sahne) ohne Reis hat eine Portion 354 kcal und 44 g Protein."},
-    {"question": "Wie viele Kalorien hat Tikka Masala vom Lieferdienst?", "answer": "Lieferdienst-Portionen sind oft größer. Eine große Portion (450 g Curry, 200 g Reis) kommt nach unserem Rezept auf 826 kcal; mit mehr Sahne oder Butter liegt sie darüber."}
+    {
+      "question": "Wie viele Kalorien hat Chicken Tikka Masala?",
+      "answer": "Eine Portion (350 g) hat 440 kcal, mit 150 g Reis 635 kcal, mit Naan 702 kcal. Pro 100 g sind es 126 kcal. Gerechnet aus USDA-Nährwerten für ein Rezept mit 500 g Hähnchenbrust, 450 g Tomaten, 150 g Sahne, 150 g Zwiebeln, 100 g Joghurt und 20 g Öl für 4 Portionen."
+    },
+    {
+      "question": "Ist Tikka Masala kalorienreich?",
+      "answer": "Mittel: 126 kcal pro 100 g. Ein Viertel der Kalorien kommt aus der Sahne (438 von 1.760 kcal im ganzen Topf). Die Light-Variante mit fettarmem Joghurt statt Sahne hat mit Reis 549 kcal statt 635 kcal."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Tikka Masala und Butter Chicken?",
+      "answer": "Butter Chicken wird mit mehr Butter und Sahne gekocht, Tikka Masala hat mehr Tomatengeschmack und Gewürze. Für Tikka Masala mit Reis rechnen wir 635 kcal pro Portion."
+    },
+    {
+      "question": "Wie viel Protein hat Tikka Masala?",
+      "answer": "Eine Portion (350 g) liefert 43 g Protein, mit Reis 47 g. Fast alles stammt aus dem Hähnchen: 125 g Hähnchenbrust pro Portion."
+    },
+    {
+      "question": "Kann man Tikka Masala beim Abnehmen essen?",
+      "answer": "Ja, als Light-Version (fettarmer Joghurt statt Sahne) ohne Reis hat eine Portion 354 kcal und 44 g Protein."
+    },
+    {
+      "question": "Wie viele Kalorien hat Tikka Masala vom Lieferdienst?",
+      "answer": "Lieferdienst-Portionen sind oft größer. Eine große Portion (450 g Curry, 200 g Reis) kommt nach unserem Rezept auf 826 kcal; mit mehr Sahne oder Butter liegt sie darüber."
+    }
   ],
-  "related_foods": ["butter-chicken", "curry-haehnchen", "biryani", "naan-brot"]
+  "related_foods": [
+    "butter-chicken",
+    "curry-haehnchen",
+    "biryani",
+    "naan-brot"
+  ]
 }

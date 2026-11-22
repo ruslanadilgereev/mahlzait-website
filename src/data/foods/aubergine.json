@@ -39,7 +39,7 @@
       "name": "Halbe Aubergine roh (150g)",
       "portion_g": 150,
       "calories": 38,
-      "protein": 1,
+      "protein": 2,
       "carbs": 9,
       "fat": 0
     },
@@ -61,51 +61,102 @@
       "fat": 1
     },
     {
-      "name": "Gegrillt mit 1 TL Öl (150g)",
-      "portion_g": 150,
-      "calories": 95,
+      "name": "Gegrillt mit 1 TL Öl (150g + 5g Öl)",
+      "portion_g": 155,
+      "calories": 82,
       "protein": 2,
       "carbs": 9,
       "fat": 5,
-      "tip": "Fettarm zubereitet"
+      "tip": "Fettarm zubereitet",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "olivenoel",
+          "g": 5
+        }
+      ]
     },
     {
-      "name": "Gebraten in der Pfanne (150g)",
-      "portion_g": 150,
-      "calories": 140,
+      "name": "Gebraten in der Pfanne (150g + 1 EL Öl)",
+      "portion_g": 160,
+      "calories": 126,
       "protein": 2,
       "carbs": 9,
-      "fat": 11
+      "fat": 10,
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "olivenoel",
+          "g": 10
+        }
+      ]
     },
     {
-      "name": "Ofengemüse mit 1 EL Öl (200g)",
-      "portion_g": 200,
-      "calories": 140,
+      "name": "Ofengemüse mit 1 EL Öl (200g + 10g Öl)",
+      "portion_g": 210,
+      "calories": 138,
       "protein": 2,
       "carbs": 12,
-      "fat": 11
+      "fat": 10,
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "slug": "olivenoel",
+          "g": 10
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Zucchini (300g)",
       "calories": 51,
-      "emoji": "🥒"
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "zucchini",
+          "g": 300
+        }
+      ]
     },
     {
       "name": "Paprika (300g)",
-      "calories": 93,
-      "emoji": "🫑"
+      "calories": 78,
+      "emoji": "🫑",
+      "basis": [
+        {
+          "slug": "paprika",
+          "g": 300
+        }
+      ]
     },
     {
       "name": "Tomate (300g)",
       "calories": 54,
-      "emoji": "🍅"
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "tomate",
+          "g": 300
+        }
+      ]
     },
     {
       "name": "Champignons (300g)",
       "calories": 66,
-      "emoji": "🍄"
+      "emoji": "🍄",
+      "basis": [
+        {
+          "slug": "champignons",
+          "g": 300
+        }
+      ]
     }
   ],
   "tips": [
@@ -116,7 +167,7 @@
     },
     {
       "title": "Vorsicht beim Braten in Öl",
-      "text": "Das schwammartige Fruchtfleisch saugt Öl regelrecht auf. Aus 25 kcal können beim Braten schnell 90 kcal pro 100g werden. Grillen oder im Ofen garen spart viel Fett.",
+      "text": "Das schwammartige Fruchtfleisch saugt Öl regelrecht auf. Gebraten mit 1 EL Öl kommen 150g Aubergine schon auf rund 126 kcal statt 38 kcal. Grillen oder im Ofen garen spart viel Fett.",
       "icon": "🫗"
     },
     {
@@ -158,7 +209,7 @@
     },
     {
       "question": "Wie viele Kalorien hat gebratene Aubergine?",
-      "answer": "Das hängt stark vom verwendeten Öl ab. In der Pfanne gebraten kommen 150g schnell auf etwa 140 kcal, weil das Fruchtfleisch viel Fett aufsaugt. Gegrillt mit wenig Öl sind es nur rund 95 kcal."
+      "answer": "Das hängt stark vom verwendeten Öl ab. In der Pfanne mit 1 EL Öl gebraten kommen 150g auf etwa 126 kcal, weil das Fruchtfleisch viel Fett aufsaugt. Gegrillt mit 1 TL Öl sind es nur rund 82 kcal."
     }
   ],
   "related_foods": [

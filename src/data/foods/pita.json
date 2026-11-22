@@ -58,9 +58,15 @@
       "portion_g": 60,
       "calories": 157,
       "protein": 6,
-      "carbs": 32,
+      "carbs": 34,
       "fat": 1,
-      "tip": "Mehr Ballaststoffe"
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 174916,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Mini-Pita (25g)",
@@ -73,41 +79,78 @@
     {
       "name": "Pita mit Falafel & Salat (250g)",
       "portion_g": 250,
-      "calories": 430,
-      "protein": 14,
-      "carbs": 55,
-      "fat": 16,
-      "tip": "gefüllt"
+      "calories": 663,
+      "protein": 16,
+      "carbs": 68,
+      "fat": 37,
+      "tip": "Gefüllt, als Falafel-Sandwich",
+      "basis": [
+        {
+          "fdcId": 2707483,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Pita-Chips (30g)",
       "portion_g": 30,
-      "calories": 130,
-      "protein": 3,
-      "carbs": 18,
-      "fat": 5
+      "calories": 137,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 5,
+      "tip": "Gesalzener Snack",
+      "basis": [
+        {
+          "fdcId": 173147,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Naan-Brot",
-      "calories": 186,
-      "emoji": "🫓"
+      "name": "Naan-Brot (60g)",
+      "calories": 175,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "naan-brot",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Baguette",
-      "calories": 161,
-      "emoji": "🥖"
+      "name": "Baguette (60g)",
+      "calories": 163,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Brötchen",
-      "calories": 156,
-      "emoji": "🥯"
+      "name": "Brötchen (60g)",
+      "calories": 176,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Vollkornbrot",
-      "calories": 124,
-      "emoji": "🍞"
+      "name": "Vollkornbrot (60g)",
+      "calories": 133,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
@@ -118,7 +161,7 @@
     },
     {
       "title": "Vollkorn-Variante bevorzugen",
-      "text": "Vollkorn-Pita liefert mehr Ballaststoffe und sättigt länger als die helle Variante. Der Kaloriengehalt ist dabei kaum höher.",
+      "text": "Vollkorn-Pita liefert mehr Ballaststoffe und sättigt länger als die helle Variante. Der Kaloriengehalt ist dabei sogar etwas niedriger.",
       "icon": "🌾"
     },
     {
@@ -127,8 +170,8 @@
       "icon": "🥙"
     },
     {
-      "title": "Gute Proteinquelle unter den Broten",
-      "text": "Mit etwa 9 g Protein pro 100g enthält Pita mehr Eiweiß als viele andere Weißmehlprodukte.",
+      "title": "Eiweiß wie bei anderen Broten",
+      "text": "Mit etwa 9 g Protein pro 100g liegt Pita beim Eiweiß im Bereich anderer Weißmehlbrote.",
       "icon": "💪"
     },
     {
@@ -152,7 +195,7 @@
     },
     {
       "question": "Wie viel Protein steckt in Pita?",
-      "answer": "Pita enthält etwa 9,1 g Protein pro 100g und damit mehr Eiweiß als die meisten anderen Weißmehlbrote."
+      "answer": "Pita enthält etwa 9,1 g Protein pro 100g und damit ähnlich viel Eiweiß wie andere Weißmehlbrote."
     },
     {
       "question": "Ist Pita zum Abnehmen geeignet?",

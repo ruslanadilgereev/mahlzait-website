@@ -68,47 +68,101 @@
       "protein": 1.2,
       "carbs": 11.4,
       "fat": 0.3,
-      "tip": "Gekocht weniger kcal"
+      "tip": "Gekocht weniger kcal",
+      "basis": [
+        {
+          "fdcId": 168426,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Porree gedünstet in Butter (150g)",
       "portion_g": 150,
-      "calories": 120,
-      "protein": 2,
-      "carbs": 11.4,
-      "fat": 8,
-      "tip": "Mit 1 TL Butter"
+      "calories": 81,
+      "protein": 1.2,
+      "carbs": 11.1,
+      "fat": 4.3,
+      "tip": "Mit 1 TL Butter (5 g)",
+      "basis": [
+        {
+          "fdcId": 168426,
+          "g": 145
+        },
+        {
+          "fdcId": 173430,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Lauchsuppe (1 Teller, 250g)",
       "portion_g": 250,
-      "calories": 130,
-      "protein": 4,
-      "carbs": 12,
-      "fat": 7,
-      "tip": "Mit Sahne & Brühe"
+      "calories": 119,
+      "protein": 1.6,
+      "carbs": 8.3,
+      "fat": 9.5,
+      "tip": "Mit Sahne und Gemüsebrühe",
+      "basis": [
+        {
+          "fdcId": 168426,
+          "g": 80
+        },
+        {
+          "fdcId": 171583,
+          "g": 140
+        },
+        {
+          "fdcId": 170858,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Zwiebel (100g)",
       "calories": 40,
-      "emoji": "🧅"
+      "emoji": "🧅",
+      "basis": [
+        {
+          "slug": "zwiebel",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Brokkoli (100g)",
       "calories": 34,
-      "emoji": "🥦"
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Karotten (100g)",
       "calories": 41,
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Zucchini (100g)",
       "calories": 17,
-      "emoji": "🥒"
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "zucchini",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -149,7 +203,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Porree?",
-      "answer": "Porree enthält etwa 14,2g Kohlenhydrate pro 100g, davon rund 1,8g Ballaststoffe. Der Rest entfällt vor allem auf natürlichen Zucker."
+      "answer": "Porree enthält etwa 14,2g Kohlenhydrate pro 100g, davon rund 1,8g Ballaststoffe und 3,9g Zucker."
     },
     {
       "question": "Wie viel Protein steckt in Porree?",

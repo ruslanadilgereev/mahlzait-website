@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 172820 (Cookies, chocolate chip, commercially prepared, regular, higher fat, unenriched), Werte je 100 g",
   "seo": {
     "title": "Cookie Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Cookie? Ein klassischer Schoko-Cookie (40g) hat ca. 194 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat ein Cookie? Ein klassischer Schoko-Cookie (40g) hat ca. 192 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
     "keywords": [
       "cookie kalorien",
       "cookie kcal",
@@ -18,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 485,
-    "protein_per_100g": 5.5,
-    "carbs_per_100g": 64,
-    "fat_per_100g": 23,
-    "fiber_per_100g": 2.4,
+    "calories_per_100g": 481,
+    "protein_per_100g": 5.4,
+    "carbs_per_100g": 66.8,
+    "fat_per_100g": 22.6,
+    "fiber_per_100g": 2.5,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Cookie (mittel)"
   },
@@ -30,88 +30,118 @@
     {
       "name": "Mini-Cookie (15g)",
       "portion_g": 15,
-      "calories": 73,
+      "calories": 72,
       "protein": 0.8,
-      "carbs": 9.6,
-      "fat": 3.5
+      "carbs": 10,
+      "fat": 3.4
     },
     {
       "name": "Cookie klein (25g)",
       "portion_g": 25,
-      "calories": 121,
+      "calories": 120,
       "protein": 1.4,
-      "carbs": 16,
-      "fat": 5.8
+      "carbs": 16.7,
+      "fat": 5.7
     },
     {
       "name": "Cookie mittel (40g)",
       "portion_g": 40,
-      "calories": 194,
+      "calories": 192,
       "protein": 2.2,
-      "carbs": 25.6,
-      "fat": 9.2,
+      "carbs": 26.7,
+      "fat": 9,
       "tip": "Standard"
     },
     {
       "name": "American Cookie groß (60g)",
       "portion_g": 60,
-      "calories": 291,
-      "protein": 3.3,
-      "carbs": 38.4,
-      "fat": 13.8
+      "calories": 289,
+      "protein": 3.2,
+      "carbs": 40.1,
+      "fat": 13.6
     },
     {
       "name": "XXL-Cookie (90g)",
       "portion_g": 90,
-      "calories": 437,
-      "protein": 5,
-      "carbs": 57.6,
-      "fat": 20.7
+      "calories": 433,
+      "protein": 4.9,
+      "carbs": 60.1,
+      "fat": 20.3
     },
     {
       "name": "Hafer-Cookie (40g)",
       "portion_g": 40,
       "calories": 180,
-      "protein": 2.6,
-      "carbs": 26,
-      "fat": 7.4,
-      "tip": "Etwas weniger Fett, mehr Ballaststoffe"
+      "protein": 2.5,
+      "carbs": 27.5,
+      "fat": 7.2,
+      "tip": "Etwas weniger Fett, mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 172725,
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Doppelpack (2 Cookies, 80g)",
       "portion_g": 80,
-      "calories": 388,
-      "protein": 4.4,
-      "carbs": 51.2,
-      "fat": 18.4
+      "calories": 385,
+      "protein": 4.3,
+      "carbs": 53.4,
+      "fat": 18.1
     }
   ],
   "comparison": [
     {
-      "name": "Brownie",
-      "calories": 466,
-      "emoji": "🍫"
+      "name": "Brownie (100g)",
+      "calories": 405,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "brownie",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Muffin",
-      "calories": 377,
-      "emoji": "🧁"
+      "name": "Muffin (100g)",
+      "calories": 375,
+      "emoji": "🧁",
+      "basis": [
+        {
+          "slug": "muffin",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Donut",
-      "calories": 452,
-      "emoji": "🍩"
+      "name": "Donut (100g)",
+      "calories": 421,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "donut",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kekse",
-      "calories": 480,
-      "emoji": "🍪"
+      "name": "Kekse (100g)",
+      "calories": 492,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "kekse",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kleine Portion bewusst genießen",
-      "text": "Ein einzelner Mini-Cookie mit 15g schlägt nur mit rund 73 kcal zu Buche. Wer bewusst eine kleinere Größe wählt, spart spürbar Kalorien gegenüber dem XXL-Cookie mit über 400 kcal.",
+      "text": "Ein einzelner Mini-Cookie mit 15g schlägt nur mit rund 72 kcal zu Buche. Wer bewusst eine kleinere Größe wählt, spart spürbar Kalorien gegenüber dem XXL-Cookie mit über 400 kcal.",
       "icon": "🍪"
     },
     {
@@ -138,15 +168,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Cookie?",
-      "answer": "Ein klassischer Schoko-Cookie mittlerer Größe (40g) hat ca. 194 kcal. Pro 100g sind es rund 485 kcal."
+      "answer": "Ein klassischer Schoko-Cookie mittlerer Größe (40g) hat ca. 192 kcal. Pro 100g sind es rund 481 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Cookie pro 100g?",
-      "answer": "100g Cookies enthalten im Schnitt etwa 485 kcal. Der genaue Wert hängt von Sorte, Schokoanteil und Fettgehalt ab."
+      "answer": "100g Cookies enthalten im Schnitt etwa 481 kcal. Der genaue Wert hängt von Sorte, Schokoanteil und Fettgehalt ab."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Cookie?",
-      "answer": "Cookies enthalten rund 64g Kohlenhydrate pro 100g, überwiegend Zucker und Mehl. Ein mittlerer Cookie (40g) liefert etwa 25,6g Kohlenhydrate."
+      "answer": "Cookies enthalten rund 67g Kohlenhydrate pro 100g, überwiegend Zucker und Mehl. Ein mittlerer Cookie (40g) liefert etwa 26,7g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat ein Cookie?",

@@ -61,13 +61,19 @@
       "fat": 0
     },
     {
-      "name": "Birne aus der Dose, abgetropft (125g)",
+      "name": "Birne aus der Dose, im Saft (125g)",
       "portion_g": 125,
       "calories": 63,
       "protein": 0,
       "carbs": 16,
       "fat": 0,
-      "tip": "Leichter Sirup"
+      "tip": "Im Saft statt Sirup",
+      "basis": [
+        {
+          "fdcId": 169936,
+          "g": 125
+        }
+      ]
     },
     {
       "name": "Getrocknete Birne (30g)",
@@ -76,24 +82,48 @@
       "protein": 1,
       "carbs": 21,
       "fat": 0,
-      "tip": "Konzentriert"
+      "tip": "Konzentriert",
+      "basis": [
+        {
+          "fdcId": 169121,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Apfel (180g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Banane (120g)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Orange (140g)",
       "calories": 66,
-      "emoji": "🍊"
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "orange",
+          "g": 140
+        }
+      ]
     }
   ],
   "tips": [

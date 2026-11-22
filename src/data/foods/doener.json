@@ -7,7 +7,17 @@
   "seo": {
     "title": "Döner Kalorien: 199 kcal/100g + Rechner & Varianten | Mahlzait",
     "description": "Wie viele Kalorien hat ein Döner? 199 kcal/100g, ein Döner Kebab mit Kalb- oder Rindfleisch (350 g) hat 696 kcal, mit Hähnchen 604. Berechne Kalorien für Kebab, Dürüm & Lahmacun. Inkl. 8 Varianten & Spar-Tipps.",
-    "keywords": ["döner kalorien", "kalorien döner", "döner kebab kalorien", "wie viele kalorien hat ein döner", "döner nährwerte", "hähnchen döner kalorien", "döner kalorien hähnchen", "döner kalorien kalb", "döner mit hähnchenfleisch kalorien"]
+    "keywords": [
+      "döner kalorien",
+      "kalorien döner",
+      "döner kebab kalorien",
+      "wie viele kalorien hat ein döner",
+      "döner nährwerte",
+      "hähnchen döner kalorien",
+      "döner kalorien hähnchen",
+      "döner kalorien kalb",
+      "döner mit hähnchenfleisch kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 199,
@@ -19,36 +29,194 @@
     "typical_portion_name": "1 Döner Kebab"
   },
   "variants": [
-    {"name": "Döner Kebab (Kalb/Rind)", "portion_g": 350, "calories": 696, "protein": 47, "carbs": 71, "fat": 23, "tip": "Fladenbrot, Salat, Joghurtsoße"},
-    {"name": "Döner Kebab (Hähnchen)", "portion_g": 350, "calories": 604, "protein": 45, "carbs": 71, "fat": 14, "tip": "Kalorienärmste Fleisch-Variante"},
-    {"name": "Dürüm (Yufka)", "portion_g": 347, "calories": 724, "protein": 46, "carbs": 62, "fat": 31, "tip": "Yufka-Fladen statt Fladenbrot"},
-    {"name": "Döner Teller mit Salat", "portion_g": 310, "calories": 383, "protein": 37, "carbs": 8, "fat": 22, "tip": "Ohne Brot, kalorienärmste Option"},
-    {"name": "Lahmacun mit Dönerfleisch", "portion_g": 360, "calories": 713, "protein": 52, "carbs": 62, "fat": 27, "tip": "Türkische Pizza mit Döner"},
-    {"name": "Döner mit Falafel (vegetarisch)", "portion_g": 305, "calories": 655, "protein": 24, "carbs": 98, "fat": 18, "tip": "Pflanzliche Alternative"},
-    {"name": "Döner mit Käse", "portion_g": 380, "calories": 803, "protein": 54, "carbs": 72, "fat": 32, "tip": "30 g Gouda extra"},
-    {"name": "Kinder-Döner (klein)", "portion_g": 222, "calories": 429, "protein": 29, "carbs": 43, "fat": 15, "tip": "60 % der Standardportion"}
+    {
+      "name": "Döner Kebab (Kalb/Rind)",
+      "portion_g": 350,
+      "calories": 696,
+      "protein": 47,
+      "carbs": 71,
+      "fat": 23,
+      "tip": "Fladenbrot, Salat, Joghurtsoße"
+    },
+    {
+      "name": "Döner Kebab (Hähnchen)",
+      "portion_g": 350,
+      "calories": 604,
+      "protein": 45,
+      "carbs": 71,
+      "fat": 14,
+      "tip": "Kalorienärmste Fleisch-Variante"
+    },
+    {
+      "name": "Dürüm (Yufka)",
+      "portion_g": 347,
+      "calories": 724,
+      "protein": 46,
+      "carbs": 62,
+      "fat": 31,
+      "tip": "Yufka-Fladen statt Fladenbrot"
+    },
+    {
+      "name": "Döner Teller mit Salat",
+      "portion_g": 310,
+      "calories": 383,
+      "protein": 37,
+      "carbs": 8,
+      "fat": 22,
+      "tip": "Ohne Brot, kalorienärmste Option"
+    },
+    {
+      "name": "Lahmacun mit Dönerfleisch",
+      "portion_g": 360,
+      "calories": 713,
+      "protein": 52,
+      "carbs": 62,
+      "fat": 27,
+      "tip": "Türkische Pizza mit Döner"
+    },
+    {
+      "name": "Döner mit Falafel (vegetarisch)",
+      "portion_g": 305,
+      "calories": 655,
+      "protein": 24,
+      "carbs": 98,
+      "fat": 18,
+      "tip": "Pflanzliche Alternative"
+    },
+    {
+      "name": "Döner mit Käse",
+      "portion_g": 380,
+      "calories": 803,
+      "protein": 54,
+      "carbs": 72,
+      "fat": 32,
+      "tip": "30 g Gouda extra"
+    },
+    {
+      "name": "Kinder-Döner (klein)",
+      "portion_g": 222,
+      "calories": 429,
+      "protein": 29,
+      "carbs": 43,
+      "fat": 15,
+      "tip": "60 % der Standardportion"
+    }
   ],
   "comparison": [
-    {"name": "Döner Box mit Pommes", "calories": 833, "emoji": "📦"},
-    {"name": "Big Mac", "calories": 563, "emoji": "🍔"},
-    {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
-    {"name": "Schnitzel mit Pommes", "calories": 750, "emoji": "🥩"}
+    {
+      "name": "Döner Box mit Pommes",
+      "calories": 833,
+      "emoji": "📦",
+      "basis": [
+        {
+          "slug": "doener-box",
+          "variante": "Döner Box mit Pommes"
+        }
+      ]
+    },
+    {
+      "name": "Big Mac",
+      "calories": 563,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
+    },
+    {
+      "name": "Currywurst mit Pommes",
+      "calories": 1170,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Currywurst mit Pommes"
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel mit Pommes",
+      "calories": 1063,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel",
+          "variante": "Wiener Schnitzel (Kalb)"
+        },
+        {
+          "slug": "pommes-frites",
+          "variante": "Pommes frittiert (klassisch)"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Hähnchen statt Kalb", "text": "Ein Hähnchen-Döner hat 92 kcal weniger als einer mit Kalb- oder Rindfleisch (604 statt 696 kcal) und 9 g weniger Fett.", "icon": "🍗"},
-    {"title": "Joghurt-Sauce wählen", "text": "Joghurtsoße hat 27 kcal pro Portion (30 g), Cocktailsoße 114 kcal. Das macht 87 kcal Unterschied.", "icon": "🥛"},
-    {"title": "Extra Salat, weniger Fleisch", "text": "100 g Salat haben 20 kcal, 100 g Kalb- oder Rindfleisch vom Spieß 250 kcal. Mehr Gemüse im Döner füllt den Magen mit weniger Kalorien. Einfach 'extra Salat' sagen.", "icon": "🥗"},
-    {"title": "Döner-Teller statt Brot", "text": "Ohne Fladenbrot und mit mehr Salat hat ein Döner-Teller 383 kcal statt 696 kcal. Das Fladenbrot allein bringt 330 kcal.", "icon": "🍽️"},
-    {"title": "Weniger Brot essen", "text": "Das Fladenbrot (120 g) liefert mit 330 kcal fast die Hälfte des Döners. Je 10 g Brot weniger sparst du 28 kcal.", "icon": "🫓"}
+    {
+      "title": "Hähnchen statt Kalb",
+      "text": "Ein Hähnchen-Döner hat 92 kcal weniger als einer mit Kalb- oder Rindfleisch (604 statt 696 kcal) und 9 g weniger Fett.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Joghurt-Sauce wählen",
+      "text": "Joghurtsoße hat 27 kcal pro Portion (30 g), Cocktailsoße 114 kcal. Das macht 87 kcal Unterschied.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Extra Salat, weniger Fleisch",
+      "text": "100 g Salat haben 20 kcal, 100 g Kalb- oder Rindfleisch vom Spieß 250 kcal. Mehr Gemüse im Döner füllt den Magen mit weniger Kalorien. Einfach 'extra Salat' sagen.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Döner-Teller statt Brot",
+      "text": "Ohne Fladenbrot und mit mehr Salat hat ein Döner-Teller 383 kcal statt 696 kcal. Das Fladenbrot allein bringt 330 kcal.",
+      "icon": "🍽️"
+    },
+    {
+      "title": "Weniger Brot essen",
+      "text": "Das Fladenbrot (120 g) liefert mit 330 kcal fast die Hälfte des Döners. Je 10 g Brot weniger sparst du 28 kcal.",
+      "icon": "🫓"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein normaler Döner?", "answer": "Ein klassischer Döner Kebab im Fladenbrot mit Kalb- oder Rindfleisch hat 696 kcal (350 g: 120 g Fladenbrot, 130 g Fleisch, 70 g Salat, 30 g Joghurtsoße). Mit Hähnchen sind es 604 kcal, mit Knoblauchsoße statt Joghurtsoße 776 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten."},
-    {"question": "Hähnchen-Döner oder Kalb-Döner: Was hat weniger Kalorien?", "answer": "Der Hähnchen-Döner: 604 kcal gegenüber 696 kcal beim Döner mit Kalb- oder Rindfleisch (je 350 g im Fladenbrot). 130 g Hähnchenfleisch haben 11 g Fett, Kalb- oder Rindfleisch 20 g. Beim Eiweiß liegen beide fast gleich (45 und 47 g)."},
-    {"question": "Was hat weniger Kalorien: Döner oder Dürüm?", "answer": "Ein Döner im Fladenbrot hat 696 kcal, ein Dürüm 724 kcal bei gleicher Füllung. Der Yufka-Fladen (117 g) hat mit 358 kcal etwas mehr als 120 g Fladenbrot (330 kcal)."},
-    {"question": "Ist Döner gut zum Abnehmen?", "answer": "Ein Döner kann in eine Diät passen: Ein Hähnchen-Döner mit Joghurtsoße hat 604 kcal und 45 g Eiweiß. Das ist eine sättigende Mahlzeit. Noch leichter ist der Döner-Teller mit Salat ohne Brot (383 kcal)."},
-    {"question": "Wie viel Protein hat ein Döner?", "answer": "Ein Döner Kebab mit Kalb- oder Rindfleisch liefert 47 g Eiweiß, mit Hähnchen 45 g. Den größten Teil liefern die 130 g Fleisch, 11 g kommen aus dem Fladenbrot."},
-    {"question": "Hat Döner mehr Kalorien als ein Big Mac?", "answer": "Ja. Ein Big Mac hat laut USDA FoodData Central 563 kcal (US-Rezeptur), ein Döner mit Kalb- oder Rindfleisch 696 kcal, mit Hähnchen 604 kcal. Dafür hat der Döner mehr Eiweiß (47 g statt 26 g) und mehr Gemüse."},
-    {"question": "Was ist die kalorienärmste Döner-Variante?", "answer": "Die kalorienärmste Option ist ein Döner-Teller mit Salat ohne Brot und Pommes (383 kcal, mit Hähnchen 290 kcal), gefolgt vom Hähnchen-Döner mit Joghurtsoße im Fladenbrot (604 kcal)."}
+    {
+      "question": "Wie viele Kalorien hat ein normaler Döner?",
+      "answer": "Ein klassischer Döner Kebab im Fladenbrot mit Kalb- oder Rindfleisch hat 696 kcal (350 g: 120 g Fladenbrot, 130 g Fleisch, 70 g Salat, 30 g Joghurtsoße). Mit Hähnchen sind es 604 kcal, mit Knoblauchsoße statt Joghurtsoße 776 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten."
+    },
+    {
+      "question": "Hähnchen-Döner oder Kalb-Döner: Was hat weniger Kalorien?",
+      "answer": "Der Hähnchen-Döner: 604 kcal gegenüber 696 kcal beim Döner mit Kalb- oder Rindfleisch (je 350 g im Fladenbrot). 130 g Hähnchenfleisch haben 11 g Fett, Kalb- oder Rindfleisch 20 g. Beim Eiweiß liegen beide fast gleich (45 und 47 g)."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Döner oder Dürüm?",
+      "answer": "Ein Döner im Fladenbrot hat 696 kcal, ein Dürüm 724 kcal bei gleicher Füllung. Der Yufka-Fladen (117 g) hat mit 358 kcal etwas mehr als 120 g Fladenbrot (330 kcal)."
+    },
+    {
+      "question": "Ist Döner gut zum Abnehmen?",
+      "answer": "Ein Döner kann in eine Diät passen: Ein Hähnchen-Döner mit Joghurtsoße hat 604 kcal und 45 g Eiweiß. Das ist eine sättigende Mahlzeit. Noch leichter ist der Döner-Teller mit Salat ohne Brot (383 kcal)."
+    },
+    {
+      "question": "Wie viel Protein hat ein Döner?",
+      "answer": "Ein Döner Kebab mit Kalb- oder Rindfleisch liefert 47 g Eiweiß, mit Hähnchen 45 g. Den größten Teil liefern die 130 g Fleisch, 11 g kommen aus dem Fladenbrot."
+    },
+    {
+      "question": "Hat Döner mehr Kalorien als ein Big Mac?",
+      "answer": "Ja. Ein Big Mac hat laut USDA FoodData Central 563 kcal (US-Rezeptur), ein Döner mit Kalb- oder Rindfleisch 696 kcal, mit Hähnchen 604 kcal. Dafür hat der Döner mehr Eiweiß (47 g statt 26 g) und mehr Gemüse."
+    },
+    {
+      "question": "Was ist die kalorienärmste Döner-Variante?",
+      "answer": "Die kalorienärmste Option ist ein Döner-Teller mit Salat ohne Brot und Pommes (383 kcal, mit Hähnchen 290 kcal), gefolgt vom Hähnchen-Döner mit Joghurtsoße im Fladenbrot (604 kcal)."
+    }
   ],
-  "related_foods": ["doener-box", "doener-teller", "duerrum", "pizza", "burger", "pommes-frites", "currywurst", "schnitzel"]
+  "related_foods": [
+    "doener-box",
+    "doener-teller",
+    "duerrum",
+    "pizza",
+    "burger",
+    "pommes-frites",
+    "currywurst",
+    "schnitzel"
+  ]
 }

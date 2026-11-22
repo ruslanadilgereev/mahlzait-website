@@ -3,10 +3,10 @@
   "name": "Zitronensaft",
   "emoji": "🍋",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 167747 (Lemon juice, raw), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 167747 (Lemon juice, raw: 22 kcal), Werte je 100 g; je 100 ml mit 1,031 g/ml 23 kcal",
   "seo": {
     "title": "Zitronensaft Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Zitronensaft? Nur ca. 22 kcal pro 100 ml. Nährwerte, Portionen im Überblick + praktische Diät-Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Zitronensaft? Nur ca. 23 kcal pro 100 ml. Nährwerte, Portionen im Überblick + praktische Diät-Tipps zum Abnehmen.",
     "keywords": [
       "zitronensaft kalorien",
       "zitronensaft kcal",
@@ -45,35 +45,46 @@
     },
     {
       "name": "Saft einer halben Zitrone (ca. 25 ml)",
-      "portion_g": 25,
+      "portion_g": 26,
       "calories": 6,
       "protein": 0.1,
-      "carbs": 1.7,
+      "carbs": 1.8,
       "fat": 0.1
     },
     {
       "name": "Saft einer ganzen Zitrone (ca. 50 ml)",
-      "portion_g": 50,
+      "portion_g": 52,
       "calories": 11,
       "protein": 0.2,
-      "carbs": 3.5,
+      "carbs": 3.6,
       "fat": 0.1
     },
     {
       "name": "Glas Zitronenwasser (200 ml mit 1 EL Saft)",
-      "portion_g": 15,
+      "portion_g": 200,
       "calories": 3,
       "protein": 0.1,
       "carbs": 1,
       "fat": 0,
-      "tip": "Kalorienarmer Wasser-Ersatz"
+      "tip": "Kalorienarmer Wasser-Ersatz",
+      "basis": [
+        {
+          "ml": 15,
+          "g": 15
+        },
+        {
+          "fdcId": 173647,
+          "ml": 185,
+          "g": 185
+        }
+      ]
     },
     {
       "name": "100 ml Zitronensaft pur",
-      "portion_g": 100,
-      "calories": 22,
+      "portion_g": 103,
+      "calories": 23,
       "protein": 0.4,
-      "carbs": 6.9,
+      "carbs": 7.1,
       "fat": 0.2
     },
     {
@@ -81,42 +92,77 @@
       "portion_g": 15,
       "calories": 3,
       "protein": 0.1,
-      "carbs": 1,
+      "carbs": 0.8,
       "fat": 0,
-      "tip": "Gesüßte Varianten haben mehr Kalorien – Zutatenliste prüfen"
+      "tip": "Gesüßte Varianten haben mehr Kalorien, Zutatenliste prüfen",
+      "basis": [
+        {
+          "fdcId": 167748,
+          "ml": 15,
+          "g": 15
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Orangensaft",
-      "calories": 45,
-      "emoji": "🍊"
+      "name": "Orangensaft (100 ml)",
+      "calories": 49,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "fdcId": 2709188,
+          "ml": 100,
+          "g": 105
+        }
+      ]
     },
     {
-      "name": "Apfelsaft",
-      "calories": 46,
-      "emoji": "🧃"
+      "name": "Apfelsaft (100 ml)",
+      "calories": 48,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "fdcId": 173933,
+          "ml": 100,
+          "g": 105
+        }
+      ]
     },
     {
-      "name": "Mineralwasser",
+      "name": "Mineralwasser (100 ml)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "fdcId": 2710708,
+          "ml": 100,
+          "g": 101
+        }
+      ]
     },
     {
-      "name": "Cola",
-      "calories": 42,
-      "emoji": "🥤"
+      "name": "Cola (100 ml)",
+      "calories": 44,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "fdcId": 2710541,
+          "ml": 100,
+          "g": 105
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarmer Geschmacksgeber",
-      "text": "Ein Esslöffel Zitronensaft hat nur etwa 3 kcal und bringt Frische in Wasser, Tee oder Salat – ein guter Ersatz für gesüßte Getränke.",
+      "text": "Ein Esslöffel Zitronensaft hat nur etwa 3 kcal und bringt Frische in Wasser, Tee oder Salat, ein guter Ersatz für gesüßte Getränke.",
       "icon": "🍋"
     },
     {
       "title": "Zitronenwasser am Morgen",
-      "text": "Ein Glas warmes Wasser mit dem Saft einer halben Zitrone hat kaum Kalorien und ist ein angenehmer Start in den Tag – satt macht es aber nicht.",
+      "text": "Ein Glas warmes Wasser mit dem Saft einer halben Zitrone hat kaum Kalorien und ist ein angenehmer Start in den Tag, satt macht es aber nicht.",
       "icon": "🌅"
     },
     {
@@ -138,15 +184,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Zitronensaft?",
-      "answer": "Reiner Zitronensaft hat nur etwa 22 kcal pro 100 ml. Ein Esslöffel (15 ml) liefert rund 3 kcal."
+      "answer": "Reiner Zitronensaft hat nur etwa 23 kcal pro 100 ml. Ein Esslöffel (15 ml) liefert rund 3 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Glas Zitronenwasser?",
-      "answer": "Ein Glas Wasser mit dem Saft einer halben Zitrone (ca. 25 ml) enthält nur etwa 6 kcal – praktisch kalorienfrei."
+      "answer": "Ein Glas Wasser mit dem Saft einer halben Zitrone (ca. 25 ml) enthält nur etwa 6 kcal, praktisch kalorienfrei."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Zitronensaft?",
-      "answer": "Zitronensaft enthält rund 6,9 g Kohlenhydrate pro 100 ml, überwiegend natürlichen Fruchtzucker. Ein Esslöffel hat etwa 1 g."
+      "answer": "Zitronensaft enthält rund 7 g Kohlenhydrate pro 100 ml, überwiegend natürlichen Fruchtzucker. Ein Esslöffel hat etwa 1 g."
     },
     {
       "question": "Wie viel Protein steckt in Zitronensaft?",
@@ -154,11 +200,11 @@
     },
     {
       "question": "Ist Zitronensaft zum Abnehmen geeignet?",
-      "answer": "Ja, als kalorienarmer Geschmacksgeber. Zitronensaft selbst lässt aber keine Pfunde schmelzen – entscheidend bleibt die gesamte Kalorienbilanz."
+      "answer": "Ja, als kalorienarmer Geschmacksgeber. Zitronensaft selbst lässt aber keine Pfunde schmelzen, entscheidend bleibt die gesamte Kalorienbilanz."
     },
     {
       "question": "Ist Zitronensaft gesund?",
-      "answer": "Frisch gepresster Zitronensaft ist kalorienarm und reich an Vitamin C. Pur ist er wegen der Fruchtsäure aber nicht zahnschonend – am besten verdünnt genießen."
+      "answer": "Frisch gepresster Zitronensaft ist kalorienarm und reich an Vitamin C. Pur ist er wegen der Fruchtsäure aber nicht zahnschonend, am besten verdünnt genießen."
     }
   ],
   "related_foods": [

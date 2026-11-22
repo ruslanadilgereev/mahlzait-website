@@ -292,8 +292,8 @@ function KalorienIndexPage({ config, foods }: Props) {
                 </summary>
                 <p className="px-4 pb-4 text-gray-600">
                   Im Alltag werden „Kalorien" und „Kilokalorien" (kcal) synonym verwendet. 
-                  Streng genommen sind 1 kcal = 1.000 Kalorien. Wenn wir sagen „ein Apfel hat 52 Kalorien", 
-                  meinen wir eigentlich 52 Kilokalorien (kcal).
+                  Streng genommen sind 1 kcal = 1.000 Kalorien. Wenn wir sagen „ein Apfel hat 94 Kalorien", 
+                  meinen wir eigentlich 94 Kilokalorien (kcal).
                 </p>
               </details>
               <details className="border border-gray-200 rounded-lg">

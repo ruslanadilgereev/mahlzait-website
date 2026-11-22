@@ -3,51 +3,217 @@
   "name": "Hafermilch",
   "emoji": "🥛",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 2257046 (Oat milk, unsweetened, plain, refrigerated), Energie nach Atwater 48 kcal, Werte je 100 ml (ungesüßt)",
+  "source": "USDA FoodData Central, FDC-ID 2257046 (Oat milk, unsweetened, plain, refrigerated: 48 kcal), Werte je 100 g; je 100 ml mit 1,031 g/ml 50 kcal",
   "seo": {
     "title": "Hafermilch Kalorien: 48 kcal/100ml (ungesüßt) | Mahlzait",
-    "description": "Hafermilch hat 48 kcal pro 100ml, ein Glas (250ml) 121 kcal. Nährwerte für Haferdrink ungesüßt & Barista, Vergleich mit Kuh-, Mandel- und Kokosmilch.",
-    "keywords": ["hafermilch kalorien", "kalorien hafermilch", "hafermilch nährwerte", "hafermilch nährwerttabelle", "haferdrink kalorien", "hafermilch zucker", "hafermilch kohlenhydrate", "hafermilch barista kalorien"]
+    "description": "Hafermilch hat 50 kcal pro 100ml, ein Glas (250ml) 124 kcal. Nährwerte für Haferdrink ungesüßt & Barista, Vergleich mit Kuh-, Mandel- und Kokosmilch.",
+    "keywords": [
+      "hafermilch kalorien",
+      "kalorien hafermilch",
+      "hafermilch nährwerte",
+      "hafermilch nährwerttabelle",
+      "haferdrink kalorien",
+      "hafermilch zucker",
+      "hafermilch kohlenhydrate",
+      "hafermilch barista kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 48,
     "protein_per_100g": 0.8,
     "carbs_per_100g": 5.1,
-    "fat_per_100g": 2.7,
+    "fat_per_100g": 2.8,
     "fiber_per_100g": 0,
-    "typical_portion_g": 250,
+    "typical_portion_g": 258,
     "typical_portion_name": "1 Glas (250ml)"
   },
   "variants": [
-    { "name": "1 Glas Hafermilch (250ml)", "portion_g": 250, "calories": 121, "protein": 2, "carbs": 13, "fat": 7, "tip": "Ungesüßter Standardwert" },
-    { "name": "Schluck im Kaffee (30ml)", "portion_g": 30, "calories": 14, "protein": 0, "carbs": 2, "fat": 1 },
-    { "name": "Cappuccino mit Hafermilch (120ml)", "portion_g": 120, "calories": 58, "protein": 1, "carbs": 6, "fat": 3, "tip": "Plus Espresso, der praktisch nichts wiegt" },
-    { "name": "Latte mit Hafermilch (200ml)", "portion_g": 200, "calories": 97, "protein": 2, "carbs": 10, "fat": 5 },
-    { "name": "Im Müsli oder Porridge (150ml)", "portion_g": 150, "calories": 72, "protein": 1, "carbs": 8, "fat": 4 },
-    { "name": "1 Liter Packung komplett", "portion_g": 1000, "calories": 483, "protein": 8, "carbs": 51, "fat": 27 },
-    { "name": "Zum Vergleich: Kuhmilch 1,5% (250ml)", "portion_g": 250, "calories": 118, "protein": 8.5, "carbs": 12, "fat": 3.8, "tip": "Fast gleich viele Kalorien, aber 4x mehr Protein" },
-    { "name": "Zum Vergleich: Mandelmilch ungesüßt (250ml)", "portion_g": 250, "calories": 38, "protein": 1, "carbs": 1, "fat": 3, "tip": "Die kalorienärmste Pflanzenmilch" }
+    {
+      "name": "1 Glas Hafermilch (250ml)",
+      "portion_g": 258,
+      "calories": 124,
+      "protein": 2.1,
+      "carbs": 13.2,
+      "fat": 7.2,
+      "tip": "Ungesüßter Standardwert"
+    },
+    {
+      "name": "Schluck im Kaffee (30ml)",
+      "portion_g": 31,
+      "calories": 15,
+      "protein": 0.2,
+      "carbs": 1.6,
+      "fat": 0.9
+    },
+    {
+      "name": "Cappuccino mit Hafermilch (120ml)",
+      "portion_g": 124,
+      "calories": 60,
+      "protein": 1,
+      "carbs": 6.3,
+      "fat": 3.5,
+      "tip": "Plus Espresso, der praktisch nichts wiegt"
+    },
+    {
+      "name": "Latte mit Hafermilch (200ml)",
+      "portion_g": 206,
+      "calories": 99,
+      "protein": 1.6,
+      "carbs": 10.5,
+      "fat": 5.8
+    },
+    {
+      "name": "Im Müsli oder Porridge (150ml)",
+      "portion_g": 155,
+      "calories": 74,
+      "protein": 1.2,
+      "carbs": 7.9,
+      "fat": 4.3
+    },
+    {
+      "name": "1 Liter Packung komplett",
+      "portion_g": 1031,
+      "calories": 495,
+      "protein": 8.2,
+      "carbs": 52.6,
+      "fat": 28.9
+    },
+    {
+      "name": "Zum Vergleich: fettarme Kuhmilch (250ml)",
+      "portion_g": 258,
+      "calories": 129,
+      "protein": 8.5,
+      "carbs": 12.4,
+      "fat": 5.1,
+      "tip": "Fast gleich viele Kalorien, aber 4x mehr Protein",
+      "basis": [
+        {
+          "fdcId": 171267,
+          "ml": 250,
+          "g": 258
+        }
+      ]
+    },
+    {
+      "name": "Zum Vergleich: Mandelmilch ungesüßt (250ml)",
+      "portion_g": 250,
+      "calories": 38,
+      "protein": 1.5,
+      "carbs": 0.8,
+      "fat": 3,
+      "tip": "Die kalorienärmste Pflanzenmilch",
+      "basis": [
+        {
+          "slug": "mandelmilch",
+          "g": 250
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Mandelmilch", "calories": 15, "emoji": "🥛" },
-    { "name": "Kuhmilch (1,5%)", "calories": 47, "emoji": "🥛" },
-    { "name": "Milch (3,5%)", "calories": 64, "emoji": "🥛" },
-    { "name": "Kokosmilch", "calories": 197, "emoji": "🥥" }
+    {
+      "name": "Mandelmilch (100 ml)",
+      "calories": 15,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "mandelmilch",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Fettarme Milch (100 ml)",
+      "calories": 52,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 171267,
+          "ml": 100,
+          "g": 103
+        }
+      ]
+    },
+    {
+      "name": "Vollmilch (100 ml)",
+      "calories": 63,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch",
+          "g": 103
+        }
+      ]
+    },
+    {
+      "name": "Kokosmilch (100g)",
+      "calories": 197,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "kokosmilch",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Ungesüßt heißt nicht zuckerfrei", "text": "Die 5,1g Kohlenhydrate pro 100ml entstehen beim Fermentieren des Hafers, wenn Stärke in Malzzucker aufgespalten wird. Deshalb schmeckt Hafermilch süßlich, obwohl kein Zucker zugesetzt ist.", "icon": "🌾" },
-    { "title": "Barista-Versionen haben mehr Kalorien", "text": "Barista-Hafermilch enthält zusätzliches Pflanzenöl für den Milchschaum und liegt je nach Hersteller bei 55 bis 70 kcal pro 100ml. Ein Blick aufs Etikett lohnt sich, oder du scannst die Packung mit Mahlzait.", "icon": "☕" },
-    { "title": "Kalorisch fast wie Kuhmilch, aber kaum Protein", "text": "Ein Glas Hafermilch (121 kcal) liegt gleichauf mit fettarmer Kuhmilch (118 kcal), liefert aber nur 2g statt 9g Protein. Wer Milch als Proteinquelle nutzt, muss das anderswo ausgleichen.", "icon": "💪" },
-    { "title": "Der Kaffee-Kalorien-Effekt", "text": "Wer 3 Milchkaffees am Tag trinkt, nimmt über die Hafermilch rund 170 kcal auf. Mit Mandelmilch wären es nur etwa 55 kcal, mit schwarzem Kaffee praktisch null.", "icon": "📊" },
-    { "title": "Kalzium nur wenn angereichert", "text": "Natürliche Hafermilch enthält kaum Kalzium. Viele Hersteller reichern deshalb auf das Kuhmilch-Niveau von 120mg pro 100ml an, erkennbar an der Zutatenliste.", "icon": "🦴" }
+    {
+      "title": "Ungesüßt heißt nicht zuckerfrei",
+      "text": "Die rund 5,3g Kohlenhydrate pro 100ml entstehen beim Fermentieren des Hafers, wenn Stärke in Malzzucker aufgespalten wird. Deshalb schmeckt Hafermilch süßlich, obwohl kein Zucker zugesetzt ist.",
+      "icon": "🌾"
+    },
+    {
+      "title": "Barista-Versionen haben mehr Kalorien",
+      "text": "Barista-Hafermilch enthält zusätzliches Pflanzenöl für den Milchschaum und hat je nach Hersteller spürbar mehr Kalorien als die ungesüßte Variante. Ein Blick aufs Etikett lohnt sich, oder du scannst die Packung mit Mahlzait.",
+      "icon": "☕"
+    },
+    {
+      "title": "Kalorisch fast wie Kuhmilch, aber kaum Protein",
+      "text": "Ein Glas Hafermilch (124 kcal) liegt fast gleichauf mit fettarmer Kuhmilch (129 kcal), liefert aber nur 2g statt rund 8,5g Protein. Wer Milch als Proteinquelle nutzt, muss das anderswo ausgleichen.",
+      "icon": "💪"
+    },
+    {
+      "title": "Der Kaffee-Kalorien-Effekt",
+      "text": "Wer 3 Milchkaffees am Tag trinkt, nimmt über die Hafermilch rund 180 kcal auf. Mit Mandelmilch wären es nur etwa 54 kcal, mit schwarzem Kaffee praktisch null.",
+      "icon": "📊"
+    },
+    {
+      "title": "Kalzium nur wenn angereichert",
+      "text": "Natürliche Hafermilch enthält kaum Kalzium. Viele Hersteller reichern deshalb auf das Kuhmilch-Niveau von 120mg pro 100ml an, erkennbar an der Zutatenliste.",
+      "icon": "🦴"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Hafermilch?", "answer": "Ungesüßte Hafermilch hat 48 kcal pro 100ml (USDA-Wert). Ein Glas mit 250ml kommt auf 121 kcal, ein Schuss im Kaffee auf rund 14 kcal." },
-    { "question": "Ist Hafermilch kalorienärmer als Kuhmilch?", "answer": "Kaum: Hafermilch (48 kcal/100ml) liegt zwischen fettarmer Milch (47 kcal) und Vollmilch (64 kcal). Wer Kalorien sparen will, greift zu ungesüßter Mandelmilch mit nur etwa 15 kcal pro 100ml." },
-    { "question": "Warum schmeckt Hafermilch süß, obwohl sie ungesüßt ist?", "answer": "Bei der Herstellung wird Haferstärke enzymatisch in Malzzucker aufgespalten. Die 5,1g Kohlenhydrate pro 100ml stammen also aus dem Hafer selbst, nicht aus zugesetztem Zucker." },
-    { "question": "Wie viele Kalorien hat Barista-Hafermilch?", "answer": "Barista-Editionen enthalten meist zusätzliches Pflanzenöl für stabilen Schaum und liegen je nach Hersteller bei etwa 55 bis 70 kcal pro 100ml, also bis zu 45 Prozent über der normalen Variante." },
-    { "question": "Wie viel Protein hat Hafermilch?", "answer": "Nur rund 0,8g pro 100ml, ein Glas liefert etwa 2g. Kuhmilch bringt mit 3,4g pro 100ml gut das Vierfache, Sojadrinks liegen ähnlich hoch wie Kuhmilch." },
-    { "question": "Ist Hafermilch zum Abnehmen geeignet?", "answer": "In Maßen ja, sie ist aber kein Spar-Getränk: Ein Glas hat 121 kcal, ähnlich viel wie fettarme Kuhmilch. Wer täglich mehrere Kaffees mit Pflanzenmilch trinkt, spart mit ungesüßter Mandelmilch am meisten." }
+    {
+      "question": "Wie viele Kalorien hat Hafermilch?",
+      "answer": "Ungesüßte Hafermilch hat 50 kcal pro 100ml (USDA-Wert). Ein Glas mit 250ml kommt auf 124 kcal, ein Schuss im Kaffee auf rund 15 kcal."
+    },
+    {
+      "question": "Ist Hafermilch kalorienärmer als Kuhmilch?",
+      "answer": "Kaum: Hafermilch (50 kcal/100ml) liegt knapp unter fettarmer Milch (52 kcal) und deutlich unter Vollmilch (63 kcal). Wer Kalorien sparen will, greift zu ungesüßter Mandelmilch mit nur etwa 15 kcal pro 100ml."
+    },
+    {
+      "question": "Warum schmeckt Hafermilch süß, obwohl sie ungesüßt ist?",
+      "answer": "Bei der Herstellung wird Haferstärke enzymatisch in Malzzucker aufgespalten. Die rund 5,3g Kohlenhydrate pro 100ml stammen also aus dem Hafer selbst, nicht aus zugesetztem Zucker."
+    },
+    {
+      "question": "Wie viele Kalorien hat Barista-Hafermilch?",
+      "answer": "Barista-Editionen enthalten meist zusätzliches Pflanzenöl für stabilen Schaum und haben deshalb je nach Hersteller spürbar mehr Kalorien als die normale Variante. Die genauen Werte stehen auf der Packung."
+    },
+    {
+      "question": "Wie viel Protein hat Hafermilch?",
+      "answer": "Nur rund 0,8g pro 100ml, ein Glas liefert etwa 2g. Kuhmilch bringt mit 3,4g pro 100ml gut das Vierfache, Sojadrinks liegen ähnlich hoch wie Kuhmilch."
+    },
+    {
+      "question": "Ist Hafermilch zum Abnehmen geeignet?",
+      "answer": "In Maßen ja, sie ist aber kein Spar-Getränk: Ein Glas hat 124 kcal, ähnlich viel wie fettarme Kuhmilch. Wer täglich mehrere Kaffees mit Pflanzenmilch trinkt, spart mit ungesüßter Mandelmilch am meisten."
+    }
   ],
-  "related_foods": ["milch", "mandelmilch", "kokosmilch", "haferflocken"]
+  "related_foods": [
+    "milch",
+    "mandelmilch",
+    "kokosmilch",
+    "haferflocken"
+  ]
 }

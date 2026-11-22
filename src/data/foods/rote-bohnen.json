@@ -21,7 +21,7 @@
     "protein_per_100g": 8.7,
     "carbs_per_100g": 22.8,
     "fat_per_100g": 0.5,
-    "fiber_per_100g": 6.4,
+    "fiber_per_100g": 7.4,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Portion gekocht (150g)"
   },
@@ -54,55 +54,97 @@
     {
       "name": "Halbe Dose abgetropft (120g)",
       "portion_g": 120,
-      "calories": 114,
-      "protein": 8,
-      "carbs": 20,
-      "fat": 0
+      "calories": 149,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 1,
+      "basis": [
+        {
+          "fdcId": 174285,
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Ganze Dose abgetropft (240g)",
       "portion_g": 240,
-      "calories": 228,
-      "protein": 16,
-      "carbs": 41,
-      "fat": 1
+      "calories": 298,
+      "protein": 19,
+      "carbs": 52,
+      "fat": 3,
+      "basis": [
+        {
+          "fdcId": 174285,
+          "g": 240
+        }
+      ]
     },
     {
       "name": "Trockene Bohnen (50g, ungekocht)",
       "portion_g": 50,
-      "calories": 167,
+      "calories": 169,
       "protein": 11,
-      "carbs": 30,
+      "carbs": 31,
       "fat": 1,
-      "tip": "Ergibt gekocht ca. 130g"
+      "tip": "Ergibt gekocht ca. 130g",
+      "basis": [
+        {
+          "fdcId": 173744,
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Linsen (gekocht, 150g)",
       "calories": 174,
-      "emoji": "🫘"
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "linsen",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Kichererbsen (gekocht, 150g)",
       "calories": 246,
-      "emoji": "🫛"
+      "emoji": "🫛",
+      "basis": [
+        {
+          "slug": "kichererbsen",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Erbsen (gekocht, 150g)",
-      "calories": 125,
-      "emoji": "🟢"
+      "calories": 126,
+      "emoji": "🟢",
+      "basis": [
+        {
+          "fdcId": 170420,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Reis (gekocht, 150g)",
       "calories": 195,
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sattmacher mit wenig Fett",
-      "text": "Eine Portion gekochte rote Bohnen (150g) liefert nur rund 191 kcal, dafür 13g Eiweiß und fast 10g Ballaststoffe. Das hält lange satt.",
+      "text": "Eine Portion gekochte rote Bohnen (150g) liefert nur rund 191 kcal, dafür 13g Eiweiß und rund 11g Ballaststoffe. Das hält lange satt.",
       "icon": "🫘"
     },
     {
@@ -133,7 +175,7 @@
     },
     {
       "question": "Wie viele Kalorien hat eine Dose rote Bohnen?",
-      "answer": "Eine ganze Dose abgetropft (ca. 240g) hat rund 228 kcal. Abgetropfte Bohnen aus der Dose sind etwas kalorienärmer als frisch gekochte."
+      "answer": "Eine ganze Dose abgetropft (ca. 240g) hat rund 298 kcal. Abgetropfte Bohnen aus der Dose haben etwa gleich viele Kalorien wie frisch gekochte."
     },
     {
       "question": "Wie viel Eiweiß haben rote Bohnen?",
@@ -141,7 +183,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate haben rote Bohnen?",
-      "answer": "Pro 100g gekochter Bohnen sind es etwa 22,8g Kohlenhydrate, davon ein großer Teil als sättigende Ballaststoffe (rund 6,4g)."
+      "answer": "Pro 100g gekochter Bohnen sind es etwa 22,8g Kohlenhydrate, davon ein großer Teil als sättigende Ballaststoffe (rund 7,4g)."
     },
     {
       "question": "Sind rote Bohnen zum Abnehmen geeignet?",

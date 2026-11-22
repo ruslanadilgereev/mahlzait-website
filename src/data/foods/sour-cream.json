@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 171257 (Cream, sour, cultured), Werte je 100 g",
   "seo": {
     "title": "Sour Cream Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Sour Cream? Pro 100g ca. 198 kcal, pro Esslöffel rund 30 kcal. Nährwerte, Varianten & Tipps zum Abnehmen im Überblick.",
+    "description": "Wie viele Kalorien hat Sour Cream? Pro 100g ca. 198 kcal, pro Esslöffel (30g) rund 59 kcal. Nährwerte, Varianten & Tipps zum Abnehmen im Überblick.",
     "keywords": [
       "sour cream kalorien",
       "sour cream kcal",
@@ -78,33 +78,63 @@
     {
       "name": "Light / fettarm (100g)",
       "portion_g": 100,
-      "calories": 130,
+      "calories": 135,
       "protein": 3,
-      "carbs": 7,
-      "fat": 10,
-      "tip": "Reduzierter Fettgehalt"
+      "carbs": 4,
+      "fat": 12,
+      "tip": "Reduzierter Fettgehalt",
+      "basis": [
+        {
+          "fdcId": 171256,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Schmand",
-      "calories": 236,
-      "emoji": "🥛"
+      "name": "Schmand (100g)",
+      "calories": 241,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "schmand",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Crème fraîche",
-      "calories": 292,
-      "emoji": "🥛"
+      "name": "Crème fraîche (100g)",
+      "calories": 297,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "creme-fraiche",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Joghurt",
+      "name": "Joghurt (100g)",
       "calories": 61,
-      "emoji": "🥛"
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "joghurt",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Frischkäse",
+      "name": "Frischkäse (100g)",
       "calories": 253,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -115,7 +145,7 @@
     },
     {
       "title": "Light-Variante wählen",
-      "text": "Fettarme Sour Cream kommt mit etwa 130 kcal pro 100g aus statt knapp 200. Geschmacklich ist der Unterschied bei Dips oft kaum spürbar.",
+      "text": "Fettarme Sour Cream kommt mit etwa 135 kcal pro 100g aus statt knapp 200. Geschmacklich ist der Unterschied bei Dips oft kaum spürbar.",
       "icon": "🪶"
     },
     {
@@ -125,7 +155,7 @@
     },
     {
       "title": "Als Dip statt Mayo",
-      "text": "Im Vergleich zu Mayonnaise (rund 700 kcal pro 100g) ist Sour Cream als Dip-Basis deutlich kalorienärmer und säuerlich-frisch.",
+      "text": "Im Vergleich zu Mayonnaise ist Sour Cream als Dip-Basis deutlich kalorienärmer und säuerlich-frisch.",
       "icon": "🥗"
     },
     {
@@ -157,7 +187,7 @@
     },
     {
       "question": "Ist Sour Cream dasselbe wie saure Sahne?",
-      "answer": "Im Kern ja. Saure Sahne hat meist rund 10 Prozent Fett, klassische Sour Cream eher 20 Prozent. Sie ist damit gehaltvoller und cremiger, vergleichbar mit Schmand."
+      "answer": "Im Kern ja. Saure Sahne hat meist deutlich weniger Fett, klassische Sour Cream rund 20 Prozent. Sie ist damit gehaltvoller und cremiger, vergleichbar mit Schmand."
     }
   ],
   "related_foods": [

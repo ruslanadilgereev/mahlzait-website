@@ -20,7 +20,7 @@
   "overview": {
     "calories_per_100g": 405,
     "protein_per_100g": 0.2,
-    "carbs_per_100g": 91,
+    "carbs_per_100g": 90.8,
     "fat_per_100g": 4.4,
     "fiber_per_100g": 0,
     "typical_portion_g": 45,
@@ -57,7 +57,7 @@
       "portion_g": 136,
       "calories": 551,
       "protein": 0,
-      "carbs": 124,
+      "carbs": 123,
       "fat": 6
     },
     {
@@ -65,7 +65,7 @@
       "portion_g": 160,
       "calories": 648,
       "protein": 0,
-      "carbs": 146,
+      "carbs": 145,
       "fat": 7
     },
     {
@@ -81,28 +81,30 @@
     {
       "name": "Gummibärchen (45g)",
       "calories": 154,
-      "emoji": "🐻"
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 45
+        }
+      ]
     },
     {
-      "name": "Smarties (45g)",
-      "calories": 210,
-      "emoji": "🟤"
-    },
-    {
-      "name": "M&M (45g)",
+      "name": "M&M's (45g)",
       "calories": 221,
-      "emoji": "🔴"
-    },
-    {
-      "name": "Maoam (45g)",
-      "calories": 176,
-      "emoji": "🟨"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 169583,
+          "g": 45
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Reine Zuckerbombe",
-      "text": "Skittles bestehen zu rund 91 % aus Kohlenhydraten, fast ausschließlich Zucker. Eine 45-g-Tüte liefert etwa 38 g Zucker – das ist mehr als die von der WHO empfohlene Tagesmenge an freiem Zucker.",
+      "text": "Skittles bestehen zu rund 91 % aus Kohlenhydraten, fast ausschließlich Zucker. Eine 45-g-Tüte liefert etwa 34 g Zucker, das ist mehr als die von der WHO empfohlene Tagesmenge an freiem Zucker.",
       "icon": "🍬"
     },
     {
@@ -112,7 +114,7 @@
     },
     {
       "title": "Kein Sattmacher",
-      "text": "Mit 0,2 g Protein und 0 g Ballaststoffen sättigen Skittles praktisch nicht. Der schnelle Zucker lässt den Blutzucker steigen und kurz darauf wieder fallen – der Heißhunger kommt oft zurück.",
+      "text": "Mit 0,2 g Protein und 0 g Ballaststoffen sättigen Skittles praktisch nicht. Der schnelle Zucker lässt den Blutzucker steigen und kurz darauf wieder fallen, der Heißhunger kommt oft zurück.",
       "icon": "📉"
     },
     {
@@ -133,7 +135,7 @@
     },
     {
       "question": "Wie viel Zucker steckt in Skittles?",
-      "answer": "Skittles enthalten pro 100 g rund 84 g Zucker. Eine 45-g-Tüte liefert damit etwa 38 g Zucker – fast ausschließlich aus den 91 g Kohlenhydraten."
+      "answer": "Skittles enthalten pro 100 g rund 76 g Zucker. Eine 45-g-Tüte liefert damit etwa 34 g Zucker, der Großteil der 91 g Kohlenhydrate pro 100 g."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Skittles?",

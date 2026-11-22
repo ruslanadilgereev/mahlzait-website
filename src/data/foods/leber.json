@@ -48,19 +48,31 @@
     {
       "name": "Leber gebraten (125g)",
       "portion_g": 125,
-      "calories": 239,
-      "protein": 28,
-      "carbs": 5,
-      "fat": 11,
-      "tip": "In Fett gebraten, höherer Fettgehalt"
+      "calories": 219,
+      "protein": 33,
+      "carbs": 6,
+      "fat": 6,
+      "tip": "In Fett gebraten, höherer Fettgehalt",
+      "basis": [
+        {
+          "fdcId": 168627,
+          "g": 125
+        }
+      ]
     },
     {
       "name": "Kalbsleber roh (100g)",
       "portion_g": 100,
-      "calories": 136,
-      "protein": 19,
-      "carbs": 4,
-      "fat": 5
+      "calories": 140,
+      "protein": 20,
+      "carbs": 3,
+      "fat": 5,
+      "basis": [
+        {
+          "fdcId": 172534,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Hühnerleber roh (100g)",
@@ -68,46 +80,73 @@
       "calories": 119,
       "protein": 17,
       "carbs": 1,
-      "fat": 5
+      "fat": 5,
+      "basis": [
+        {
+          "fdcId": 171060,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Schweineleber roh (100g)",
       "portion_g": 100,
       "calories": 134,
       "protein": 21,
-      "carbs": 3,
-      "fat": 4
-    },
-    {
-      "name": "Leberkäse-Scheibe (50g)",
-      "portion_g": 50,
-      "calories": 68,
-      "protein": 10,
       "carbs": 2,
-      "fat": 2,
-      "tip": "Roher Basiswert anteilig"
+      "fat": 4,
+      "basis": [
+        {
+          "fdcId": 167862,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Hähnchenbrust",
+      "name": "Hähnchenbrust (100g)",
       "calories": 165,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Rindfleisch",
-      "calories": 250,
-      "emoji": "🥩"
+      "name": "Rindfleisch (100g)",
+      "calories": 259,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "rindfleisch",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Lachs",
+      "name": "Lachs (100g)",
       "calories": 208,
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Ei",
+      "name": "Ei (100g)",
       "calories": 155,
-      "emoji": "🥚"
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "ei",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -160,7 +199,7 @@
     },
     {
       "question": "Wie unterscheiden sich Rinder-, Kalbs- und Hühnerleber?",
-      "answer": "Die Werte liegen nah beieinander: Rinderleber rund 135 kcal, Kalbsleber etwa 136 kcal und Hühnerleber rund 119 kcal pro 100g. Hühnerleber ist meist am mildesten im Geschmack."
+      "answer": "Die Werte liegen nah beieinander: Rinderleber rund 135 kcal, Kalbsleber etwa 140 kcal und Hühnerleber rund 119 kcal pro 100g. Hühnerleber ist meist am mildesten im Geschmack."
     }
   ],
   "related_foods": [

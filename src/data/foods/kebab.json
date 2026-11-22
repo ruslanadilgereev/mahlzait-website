@@ -90,24 +90,46 @@
   ],
   "comparison": [
     {
-      "name": "Falafel",
-      "calories": 333,
-      "emoji": "🧆"
+      "name": "Falafel im Pitabrot",
+      "calories": 614,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "falafel",
+          "variante": "Falafel im Pitabrot"
+        }
+      ]
     },
     {
       "name": "Burger",
-      "calories": 540,
-      "emoji": "🍔"
+      "calories": 418,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger"
+        }
+      ]
     },
     {
       "name": "Dürüm",
       "calories": 724,
-      "emoji": "🌯"
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "duerrum",
+          "variante": "Dürüm Döner (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Schawarma",
-      "calories": 480,
-      "emoji": "🥙"
+      "name": "Gyros-Pita",
+      "calories": 515,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "gyros-pita"
+        }
+      ]
     }
   ],
   "tips": [

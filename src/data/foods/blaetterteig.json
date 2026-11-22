@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 172790 (Puff pastry, frozen, ready-to-bake), Werte je 100 g",
   "seo": {
     "title": "Blätterteig Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Blätterteig? Roher Blätterteig hat ca. 558 kcal pro 100g. Nährwerte pro Rolle & Platte, Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Blätterteig? Roher Blätterteig hat ca. 551 kcal pro 100g. Nährwerte pro Rolle & Platte, Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "blaetterteig kalorien",
       "kalorien blaetterteig",
@@ -18,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 558,
+    "calories_per_100g": 551,
     "protein_per_100g": 7.3,
     "carbs_per_100g": 45.1,
     "fat_per_100g": 38.1,
-    "fiber_per_100g": 1.6,
+    "fiber_per_100g": 1.5,
     "typical_portion_g": 270,
     "typical_portion_name": "1 Rolle (TK, 270g)"
   },
@@ -30,7 +30,7 @@
     {
       "name": "1 Platte (45g)",
       "portion_g": 45,
-      "calories": 251,
+      "calories": 248,
       "protein": 3,
       "carbs": 20,
       "fat": 17,
@@ -39,7 +39,7 @@
     {
       "name": "1 Quadrat für Taschen (50g)",
       "portion_g": 50,
-      "calories": 279,
+      "calories": 276,
       "protein": 4,
       "carbs": 23,
       "fat": 19
@@ -47,7 +47,7 @@
     {
       "name": "Croissant-Rohling (60g)",
       "portion_g": 60,
-      "calories": 335,
+      "calories": 331,
       "protein": 4,
       "carbs": 27,
       "fat": 23
@@ -55,7 +55,7 @@
     {
       "name": "Halbe Rolle (135g)",
       "portion_g": 135,
-      "calories": 753,
+      "calories": 744,
       "protein": 10,
       "carbs": 61,
       "fat": 51
@@ -63,7 +63,7 @@
     {
       "name": "1 Rolle TK (270g)",
       "portion_g": 270,
-      "calories": 1507,
+      "calories": 1488,
       "protein": 20,
       "carbs": 122,
       "fat": 103,
@@ -72,7 +72,7 @@
     {
       "name": "Frische Rolle (275g)",
       "portion_g": 275,
-      "calories": 1535,
+      "calories": 1515,
       "protein": 20,
       "carbs": 124,
       "fat": 105
@@ -80,30 +80,43 @@
   ],
   "comparison": [
     {
-      "name": "Blätterteig 1 Platte (45g)",
-      "calories": 251,
-      "emoji": "🥐"
-    },
-    {
       "name": "Croissant (60g)",
-      "calories": 240,
-      "emoji": "🥐"
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Mürbeteig (45g)",
-      "calories": 215,
-      "emoji": "🥧"
+      "calories": 206,
+      "emoji": "🥧",
+      "basis": [
+        {
+          "fdcId": 175065,
+          "g": 45
+        }
+      ]
     },
     {
       "name": "Toastbrot 1 Scheibe (25g)",
       "calories": 67,
-      "emoji": "🍞"
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Fett bestimmt die Kalorien",
-      "text": "Blätterteig besteht zu rund 38 % aus Fett. Das macht ihn mit 558 kcal pro 100g sehr energiereich. Schon eine Platte liefert etwa 251 kcal.",
+      "text": "Blätterteig besteht zu rund 38 % aus Fett. Das macht ihn mit 551 kcal pro 100g sehr energiereich. Schon eine Platte liefert etwa 248 kcal.",
       "icon": "🧈"
     },
     {
@@ -130,7 +143,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Blätterteig?",
-      "answer": "Roher Blätterteig hat ca. 558 kcal pro 100g. Eine einzelne Platte (45g) liefert rund 251 kcal, eine ganze Rolle (270g) etwa 1507 kcal."
+      "answer": "Roher Blätterteig hat ca. 551 kcal pro 100g. Eine einzelne Platte (45g) liefert rund 248 kcal, eine ganze Rolle (270g) etwa 1488 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Blätterteig?",

@@ -22,7 +22,7 @@
     "calories_per_100g": 387,
     "protein_per_100g": 31.8,
     "carbs_per_100g": 3.6,
-    "fat_per_100g": 28,
+    "fat_per_100g": 26.9,
     "fiber_per_100g": 0,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Portion gerieben (30g)"
@@ -59,7 +59,7 @@
       "calories": 194,
       "protein": 16,
       "carbs": 2,
-      "fat": 14
+      "fat": 13
     },
     {
       "name": "Käseplatten-Stück (60g)",
@@ -67,7 +67,7 @@
       "calories": 232,
       "protein": 19,
       "carbs": 2,
-      "fat": 17
+      "fat": 16
     },
     {
       "name": "Pro 100g",
@@ -75,29 +75,53 @@
       "calories": 387,
       "protein": 32,
       "carbs": 4,
-      "fat": 28
+      "fat": 27
     }
   ],
   "comparison": [
     {
       "name": "Parmesan (100g)",
-      "calories": 431,
-      "emoji": "🧀"
+      "calories": 392,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "parmesan",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Gouda (100g)",
       "calories": 356,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "fdcId": 171241,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Feta (100g)",
-      "calories": 264,
-      "emoji": "🧀"
+      "calories": 265,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "feta",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Mozzarella (100g)",
-      "calories": 280,
-      "emoji": "🧀"
+      "calories": 299,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -150,7 +174,7 @@
     },
     {
       "question": "Was ist der Unterschied zwischen Pecorino und Parmesan?",
-      "answer": "Pecorino wird aus Schafsmilch hergestellt und schmeckt kräftig-salzig, während Parmesan aus Kuhmilch besteht. Parmesan hat mit ca. 431 kcal pro 100g etwas mehr Kalorien als Pecorino."
+      "answer": "Pecorino wird aus Schafsmilch hergestellt und schmeckt kräftig-salzig, während Parmesan aus Kuhmilch besteht. Parmesan hat mit ca. 392 kcal pro 100g etwa gleich viele Kalorien wie Pecorino (387 kcal)."
     }
   ],
   "related_foods": [

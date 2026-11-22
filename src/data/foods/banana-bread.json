@@ -21,7 +21,7 @@
     "protein_per_100g": 4.3,
     "carbs_per_100g": 54.6,
     "fat_per_100g": 10.5,
-    "fiber_per_100g": 1.5,
+    "fiber_per_100g": 1.1,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Scheibe (60g)"
   },
@@ -74,37 +74,40 @@
       "protein": 10.8,
       "carbs": 136.5,
       "fat": 26.3
-    },
-    {
-      "name": "Bananenbrot mit Walnüssen, Scheibe (65g)",
-      "portion_g": 65,
-      "calories": 234,
-      "protein": 3.4,
-      "carbs": 31.2,
-      "fat": 10.4,
-      "tip": "Mehr Fett durch Nüsse"
     }
   ],
   "comparison": [
     {
-      "name": "Bananenbrot (Scheibe 60g)",
-      "calories": 196,
-      "emoji": "🍌"
+      "name": "Rührkuchen (Stück 60g)",
+      "calories": 212,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "fdcId": 172704,
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Marmorkuchen (Stück 60g)",
-      "calories": 230,
-      "emoji": "🍰"
-    },
-    {
-      "name": "Croissant (1 Stück)",
-      "calories": 230,
-      "emoji": "🥐"
+      "name": "Croissant (1 Stück, 65g)",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant"
+        }
+      ]
     },
     {
       "name": "Vollkornbrot (Scheibe 50g)",
-      "calories": 110,
-      "emoji": "🍞"
+      "calories": 111,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
@@ -125,7 +128,7 @@
     },
     {
       "title": "Nüsse erhöhen die Energie",
-      "text": "Walnüsse oder Schokostückchen schmecken gut, treiben den Kaloriengehalt aber nach oben. Pro Scheibe können das schnell 30 bis 50 kcal mehr sein. Bei einer Diät lieber sparsam einsetzen.",
+      "text": "Walnüsse oder Schokostückchen schmecken gut, treiben den Kaloriengehalt aber nach oben. Bei einer Diät lieber sparsam einsetzen.",
       "icon": "🥜"
     },
     {

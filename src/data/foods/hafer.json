@@ -66,17 +66,29 @@
       "calories": 178,
       "protein": 6.3,
       "carbs": 30,
-      "fat": 3.5,
-      "tip": "Aus ca. 50g Hafer und Wasser zubereitet"
+      "fat": 3.8,
+      "tip": "Aus ca. 50g Hafer und Wasser zubereitet",
+      "basis": [
+        {
+          "slug": "haferbrei",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Haferbrei mit Milch (250g gekocht)",
       "portion_g": 250,
-      "calories": 285,
-      "protein": 11,
-      "carbs": 38,
-      "fat": 9.5,
-      "tip": "Mit fettarmer Milch deutlich gehaltvoller"
+      "calories": 290,
+      "protein": 13.2,
+      "carbs": 43.5,
+      "fat": 7.2,
+      "tip": "Mit fettarmer Milch deutlich gehaltvoller",
+      "basis": [
+        {
+          "slug": "haferbrei",
+          "variante": "Portion mit fettarmer Milch (250 g)"
+        }
+      ]
     },
     {
       "name": "Packung (500g, roh)",
@@ -90,23 +102,47 @@
   "comparison": [
     {
       "name": "Haferflocken (50g)",
-      "calories": 186,
-      "emoji": "🥣"
+      "calories": 190,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Cornflakes (50g)",
-      "calories": 189,
-      "emoji": "🌽"
+      "calories": 183,
+      "emoji": "🌽",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Reis roh (50g)",
-      "calories": 175,
-      "emoji": "🍚"
+      "calories": 183,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Müsli (50g)",
-      "calories": 184,
-      "emoji": "🥄"
+      "calories": 192,
+      "emoji": "🥄",
+      "basis": [
+        {
+          "slug": "muesli",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
@@ -117,7 +153,7 @@
     },
     {
       "title": "Mit Wasser statt Milch sparen",
-      "text": "Haferbrei mit Wasser hat pro 250g nur etwa 178 kcal, mit Milch dagegen rund 285 kcal. Wer Kalorien sparen möchte, kocht den Hafer mit Wasser.",
+      "text": "Haferbrei mit Wasser hat pro 250g nur etwa 178 kcal, mit Milch dagegen rund 290 kcal. Wer Kalorien sparen möchte, kocht den Hafer mit Wasser.",
       "icon": "💧"
     },
     {
@@ -143,7 +179,7 @@
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Haferbrei?",
-      "answer": "Ein Haferbrei mit Wasser (250g) hat etwa 178 kcal. Mit fettarmer Milch zubereitet sind es rund 285 kcal."
+      "answer": "Ein Haferbrei mit Wasser (250g) hat etwa 178 kcal. Mit fettarmer Milch zubereitet sind es rund 290 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Hafer?",

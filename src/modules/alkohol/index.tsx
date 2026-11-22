@@ -92,9 +92,9 @@ function AlkoholKalorienRechnerPage({ config }: Props) {
 
   const getCalorieComparison = (calories: number) => {
     const comparisons = [
-      { name: "Scheiben Brot", amount: Math.round((calories / 75) * 10) / 10, emoji: "🍞" },
-      { name: "Äpfel", amount: Math.round((calories / 52) * 10) / 10, emoji: "🍎" },
-      { name: "Stücke Pizza", amount: Math.round((calories / 266) * 10) / 10, emoji: "🍕" },
+      { name: "Scheiben Brot", amount: Math.round((calories / 130) * 10) / 10, emoji: "🍞" },
+      { name: "Äpfel", amount: Math.round((calories / 94) * 10) / 10, emoji: "🍎" },
+      { name: "Stücke Pizza", amount: Math.round((calories / 372) * 10) / 10, emoji: "🍕" },
       { name: "Minuten Joggen", amount: Math.round(calories / 10), emoji: "🏃" },
       { name: "Minuten Spazieren", amount: Math.round(calories / 4), emoji: "🚶" },
     ];
@@ -418,7 +418,7 @@ function AlkoholKalorienRechnerPage({ config }: Props) {
                 <thead>
                   <tr>
                     <th>Getränk</th>
-                    <th className="text-right">Kalorien</th>
+                    <th className="text-right">Kalorien aus Alkohol</th>
                     <th className="text-right">Alkohol (g)</th>
                   </tr>
                 </thead>
@@ -558,8 +558,8 @@ function AlkoholKalorienRechnerPage({ config }: Props) {
                 </div>
                 <div className="collapse-content">
                   <p>
-                    Ja, aber weniger. Alkoholfreies Bier (0.5L) hat etwa <strong>80-130 kcal</strong> 
-                    aus den Kohlenhydraten. Das ist etwa halb so viel wie normales Bier. Manche 
+                    Ja, aber weniger. Alkoholfreies Bier hat nur Kalorien aus den Kohlenhydraten, 
+                    die genaue Menge steht auf dem Etikett. Manche 
                     "alkoholfreie" Biere haben noch 0.5% Vol. – also minimal Kalorien aus Alkohol.
                   </p>
                 </div>

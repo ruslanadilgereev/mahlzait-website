@@ -58,24 +58,42 @@
       "protein": 10,
       "carbs": 56,
       "fat": 2,
-      "tip": "aus ca. 80g roh"
+      "tip": "aus ca. 80g roh",
+      "basis": [
+        {
+          "fdcId": 168928,
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Fusilli gekocht große Portion (250g)",
       "portion_g": 250,
       "calories": 395,
       "protein": 15,
-      "carbs": 78,
-      "fat": 2
+      "carbs": 77,
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 168928,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Vollkorn-Fusilli roh (80g)",
       "portion_g": 80,
       "calories": 282,
       "protein": 11,
-      "carbs": 51,
+      "carbs": 59,
       "fat": 2,
-      "tip": "mehr Ballaststoffe"
+      "tip": "mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 169738,
+          "g": 80
+        }
+      ]
     },
     {
       "name": "1 Packung roh (500g)",
@@ -89,23 +107,47 @@
   "comparison": [
     {
       "name": "Penne (250g gekocht)",
-      "calories": 393,
-      "emoji": "🍝"
+      "calories": 395,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "fdcId": 168928,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Spaghetti (250g gekocht)",
-      "calories": 388,
-      "emoji": "🍝"
+      "calories": 395,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Reis (250g gekocht)",
       "calories": 325,
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Gnocchi (250g)",
-      "calories": 350,
-      "emoji": "🥟"
+      "calories": 338,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "gnocchi",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [

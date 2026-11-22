@@ -22,7 +22,7 @@ Der Widerspruch zwischen rund 0,2 kg (Cochrane) und rund 1,3 kg (AJCN) erklärt 
 
 Der vermutete Mechanismus ist die **Thermogenese**: EGCG hemmt ein Enzym (Catechol-O-Methyltransferase), das Noradrenalin abbaut. Dadurch bleibt mehr Noradrenalin aktiv, was Fettabbau und Energieumsatz leicht steigern kann. Koffein verstärkt diesen Weg. In Stoffwechselkammer-Studien lag der Mehrverbrauch durch Grüntee-Extrakt plus Koffein häufig im Bereich von **etwa 4 Prozent** über 24 Stunden – bei einem Tagesumsatz von 2000 kcal also grob 80 kcal.
 
-Das klingt nach etwas, ist es aber kaum: 80 kcal entsprechen etwa einer halben [Banane](/kalorien/banane/). Solche kleinen Mehrverbräuche werden durch alltägliche Schwankungen in Bewegung und Appetit leicht ausgeglichen. Genau deshalb übersetzt sich der messbare thermogene Effekt nicht in eine relevante Gewichtsabnahme. Für eine realistische Einschätzung Ihres eigenen Verbrauchs hilft ein [Kalorienverbrauch-Rechner](/kalorienverbrauch-rechner/) deutlich mehr als jede Tasse Tee.
+Das klingt nach etwas, ist es aber kaum: 80 kcal entsprechen etwa drei Vierteln einer [Banane](/kalorien/banane/). Solche kleinen Mehrverbräuche werden durch alltägliche Schwankungen in Bewegung und Appetit leicht ausgeglichen. Genau deshalb übersetzt sich der messbare thermogene Effekt nicht in eine relevante Gewichtsabnahme. Für eine realistische Einschätzung Ihres eigenen Verbrauchs hilft ein [Kalorienverbrauch-Rechner](/kalorienverbrauch-rechner/) deutlich mehr als jede Tasse Tee.
 
 ## Und Matcha?
 

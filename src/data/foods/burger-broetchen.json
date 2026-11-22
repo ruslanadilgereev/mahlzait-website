@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 172796 (Rolls, hamburger or hotdog, plain), Werte je 100 g",
   "seo": {
     "title": "Burger-Brötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Burger-Brötchen? Ein Standard-Bun (50g) hat ca. 145 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat ein Burger-Brötchen? Ein Standard-Bun (50g) hat ca. 140 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
     "keywords": [
       "burger brötchen kalorien",
       "burger brötchen kcal",
@@ -17,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 9.6,
-    "carbs_per_100g": 51,
-    "fat_per_100g": 4,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 279,
+    "protein_per_100g": 9.8,
+    "carbs_per_100g": 50.1,
+    "fat_per_100g": 3.9,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Burger-Brötchen (Standard)"
   },
@@ -29,82 +29,99 @@
     {
       "name": "Mini-Burger-Brötchen (35g)",
       "portion_g": 35,
-      "calories": 102,
+      "calories": 98,
       "protein": 3.4,
-      "carbs": 17.8,
+      "carbs": 17.5,
       "fat": 1.4,
       "tip": "Ideal für Slider oder kleinere Portionen"
     },
     {
       "name": "Burger-Brötchen Standard (50g)",
       "portion_g": 50,
-      "calories": 145,
-      "protein": 4.8,
-      "carbs": 25.5,
+      "calories": 140,
+      "protein": 4.9,
+      "carbs": 25.1,
       "fat": 2,
       "tip": "Übliche Größe im Supermarkt"
     },
     {
       "name": "Burger-Brötchen groß (60g)",
       "portion_g": 60,
-      "calories": 174,
-      "protein": 5.8,
-      "carbs": 30.6,
-      "fat": 2.4
-    },
-    {
-      "name": "Brioche-Burger-Brötchen (55g)",
-      "portion_g": 55,
-      "calories": 182,
-      "protein": 5,
-      "carbs": 27,
-      "fat": 5.5,
-      "tip": "Mehr Butter & Ei – deutlich gehaltvoller"
+      "calories": 167,
+      "protein": 5.9,
+      "carbs": 30.1,
+      "fat": 2.3
     },
     {
       "name": "Vollkorn-Burger-Brötchen (55g)",
       "portion_g": 55,
-      "calories": 138,
-      "protein": 6,
-      "carbs": 24,
-      "fat": 2,
-      "tip": "Mehr Ballaststoffe, sättigt länger"
+      "calories": 148,
+      "protein": 6.8,
+      "carbs": 24.7,
+      "fat": 2.4,
+      "tip": "Mehr Ballaststoffe, sättigt länger",
+      "basis": [
+        {
+          "fdcId": 174090,
+          "g": 55
+        }
+      ]
     },
     {
       "name": "2 Burger-Brötchen (100g)",
       "portion_g": 100,
-      "calories": 290,
-      "protein": 9.6,
-      "carbs": 51,
-      "fat": 4
+      "calories": 279,
+      "protein": 9.8,
+      "carbs": 50.1,
+      "fat": 3.9
     }
   ],
   "comparison": [
     {
-      "name": "Brötchen",
-      "calories": 145,
-      "emoji": "🥖"
+      "name": "Brötchen (1 Stück, 60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen"
+        }
+      ]
     },
     {
-      "name": "Toastbrot",
-      "calories": 124,
-      "emoji": "🍞"
+      "name": "Toastbrot (1 Scheibe, 30g)",
+      "calories": 80,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot"
+        }
+      ]
     },
     {
-      "name": "Bagel",
-      "calories": 245,
-      "emoji": "🥯"
+      "name": "Bagel (1 Stück, 95g)",
+      "calories": 251,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "bagel"
+        }
+      ]
     },
     {
-      "name": "Brezel",
-      "calories": 167,
-      "emoji": "🥨"
+      "name": "Brezel (1 Stück, 95g)",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Das Brötchen ist nur die halbe Miete",
-      "text": "Ein Burger-Brötchen allein hat ca. 145 kcal. Im fertigen Burger machen Fleisch, Käse und Saucen meist den größeren Teil aus – das Brötchen ist selten das Hauptproblem.",
+      "text": "Ein Burger-Brötchen allein hat ca. 140 kcal. Im fertigen Burger machen Fleisch, Käse und Saucen meist den größeren Teil aus, das Brötchen ist selten das Hauptproblem.",
       "icon": "🍔"
     },
     {
@@ -119,31 +136,31 @@
     },
     {
       "title": "Mini-Buns zum Sparen",
-      "text": "Mit Slider- oder Mini-Brötchen (ca. 35g) sparst du pro Stück rund 40 kcal gegenüber dem Standard-Bun – praktisch, wenn du mehrere kleine Burger machst.",
+      "text": "Mit Slider- oder Mini-Brötchen (ca. 35g) sparst du pro Stück rund 42 kcal gegenüber dem Standard-Bun, praktisch, wenn du mehrere kleine Burger machst.",
       "icon": "📏"
     },
     {
       "title": "Frisch antoasten statt belegen mit Sauce",
-      "text": "Ein kurz angeröstetes Brötchen bringt mehr Aroma ohne Extra-Kalorien – so brauchst du weniger Mayo oder Buttersauce zum Bestreichen.",
+      "text": "Ein kurz angeröstetes Brötchen bringt mehr Aroma ohne Extra-Kalorien, so brauchst du weniger Mayo oder Buttersauce zum Bestreichen.",
       "icon": "🔥"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Burger-Brötchen?",
-      "answer": "Ein Burger-Brötchen in Standardgröße (ca. 50g) hat etwa 145 kcal. Pro 100g sind es rund 290 kcal."
+      "answer": "Ein Burger-Brötchen in Standardgröße (ca. 50g) hat etwa 140 kcal. Pro 100g sind es rund 279 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Burger-Brötchen?",
-      "answer": "Ein Standard-Brötchen (50g) enthält etwa 25,5g Kohlenhydrate, pro 100g sind es rund 51g. Es besteht hauptsächlich aus Weizenmehl."
+      "answer": "Ein Standard-Brötchen (50g) enthält etwa 25,1g Kohlenhydrate, pro 100g sind es rund 50g. Es besteht hauptsächlich aus Weizenmehl."
     },
     {
       "question": "Wie viel Protein hat ein Burger-Brötchen?",
-      "answer": "Ein Standard-Burger-Brötchen (50g) liefert ca. 4,8g Eiweiß. Vollkorn-Varianten enthalten etwas mehr."
+      "answer": "Ein Standard-Burger-Brötchen (50g) liefert ca. 4,9g Eiweiß. Vollkorn-Varianten enthalten etwas mehr."
     },
     {
       "question": "Sind Burger-Brötchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit ca. 145 kcal pro Stück passt ein Burger-Brötchen in eine ausgewogene Ernährung. Vollkorn-Buns sättigen durch mehr Ballaststoffe länger und sind beim Abnehmen die bessere Wahl."
+      "answer": "In Maßen ja. Mit ca. 140 kcal pro Stück passt ein Burger-Brötchen in eine ausgewogene Ernährung. Vollkorn-Buns sättigen durch mehr Ballaststoffe länger und sind beim Abnehmen die bessere Wahl."
     },
     {
       "question": "Sind Burger-Brötchen gesund?",
@@ -151,7 +168,7 @@
     },
     {
       "question": "Was hat mehr Kalorien: Brioche- oder normales Burger-Brötchen?",
-      "answer": "Brioche-Burger-Brötchen haben durch Butter und Ei mehr Fett und damit mehr Kalorien – ein 55g-Brioche-Bun kommt auf ca. 182 kcal gegenüber rund 160 kcal beim hellen Standard-Brötchen gleicher Größe."
+      "answer": "Brioche-Burger-Brötchen haben durch Butter und Ei mehr Fett und damit mehr Kalorien als ein helles Standard-Brötchen gleicher Größe."
     }
   ],
   "related_foods": [

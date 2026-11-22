@@ -68,13 +68,22 @@
       "fat": 0
     },
     {
-      "name": "Fertiges Gelee (100g)",
+      "name": "Fertiges Gelee (100g, 1g Agar)",
       "portion_g": 100,
       "calories": 3,
       "protein": 0,
       "carbs": 1,
       "fat": 0,
-      "tip": "1g Agar auf 100ml Wasser"
+      "tip": "1g Agar auf 100ml Wasser",
+      "basis": [
+        {
+          "g": 1
+        },
+        {
+          "fdcId": 173647,
+          "g": 99
+        }
+      ]
     },
     {
       "name": "100g getrocknetes Pulver",
@@ -87,24 +96,47 @@
   ],
   "comparison": [
     {
-      "name": "Gelatine (2 Blatt)",
+      "name": "Gelatine (1 Blatt, 2g)",
       "calories": 7,
-      "emoji": "🦴"
+      "emoji": "🦴",
+      "basis": [
+        {
+          "slug": "gelatine"
+        }
+      ]
     },
     {
-      "name": "Speisestärke (1 EL)",
+      "name": "Speisestärke (1 EL, 10g)",
       "calories": 38,
-      "emoji": "🌽"
+      "emoji": "🌽",
+      "basis": [
+        {
+          "fdcId": 169698,
+          "g": 10
+        }
+      ]
     },
     {
-      "name": "Pektin (1 Päckchen)",
-      "calories": 35,
-      "emoji": "🍎"
+      "name": "Pektin (10g)",
+      "calories": 33,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "fdcId": 168821,
+          "g": 10
+        }
+      ]
     },
     {
-      "name": "Zucker (1 EL)",
-      "calories": 40,
-      "emoji": "🍚"
+      "name": "Zucker (10g)",
+      "calories": 39,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 10
+        }
+      ]
     }
   ],
   "tips": [
@@ -145,7 +177,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Agar-Agar?",
-      "answer": "100g enthalten ca. 80,9g Kohlenhydrate, die jedoch fast ausschließlich aus unverdaulichen Ballaststoffen bestehen und den Blutzucker kaum beeinflussen."
+      "answer": "100g enthalten laut FDC ca. 80,9g Kohlenhydrate, davon 7,7g Ballaststoffe. Da man nur 1 bis 2g pro Portion verwendet, spielt das für den Blutzucker kaum eine Rolle."
     },
     {
       "question": "Hat Agar-Agar Protein?",

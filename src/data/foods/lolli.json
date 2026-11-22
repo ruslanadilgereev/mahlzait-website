@@ -82,22 +82,46 @@
     {
       "name": "1 Lolli (12g)",
       "calories": 47,
-      "emoji": "🍭"
+      "emoji": "🍭",
+      "basis": [
+        {
+          "slug": "lolli",
+          "g": 12
+        }
+      ]
     },
     {
       "name": "Gummibärchen (15g)",
-      "calories": 52,
-      "emoji": "🐻"
+      "calories": 51,
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Vollmilch-Schokolade (1 Reihe, 16g)",
-      "calories": 88,
-      "emoji": "🍫"
+      "calories": 86,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 16
+        }
+      ]
     },
     {
       "name": "Apfel (mittel, 180g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     }
   ],
   "tips": [

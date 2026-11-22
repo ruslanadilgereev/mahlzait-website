@@ -70,11 +70,17 @@
     {
       "name": "Mini-Croissant mit Schokofüllung (28g)",
       "portion_g": 28,
-      "calories": 126,
-      "protein": 2.3,
-      "carbs": 14,
-      "fat": 6.6,
-      "tip": "Etwas mehr Zucker & Fett durch Füllung"
+      "calories": 118,
+      "protein": 2.1,
+      "carbs": 13.8,
+      "fat": 6.4,
+      "tip": "Etwas mehr Zucker & Fett durch Füllung",
+      "basis": [
+        {
+          "fdcId": 2707680,
+          "g": 28
+        }
+      ]
     },
     {
       "name": "100g (5-6 Stück)",
@@ -89,22 +95,45 @@
     {
       "name": "Croissant (normal, 60g)",
       "calories": 244,
-      "emoji": "🥐"
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Butterkeks (1 Stück)",
-      "calories": 30,
-      "emoji": "🍪"
+      "name": "Butterkekse (25g)",
+      "calories": 117,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "butterkeks",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Brötchen (halb, 30g)",
-      "calories": 79,
-      "emoji": "🥖"
+      "calories": 88,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Berliner (1 Stück)",
-      "calories": 250,
-      "emoji": "🍩"
+      "calories": 272,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner"
+        }
+      ]
     }
   ],
   "tips": [
@@ -115,7 +144,7 @@
     },
     {
       "title": "Bewusst portionieren",
-      "text": "Wer beim Frühstücksbuffet greift, nimmt oft 3-4 Stück. Drei Mini-Croissants entsprechen bereits gut 300 kcal - etwa so viel wie ein normales Croissant.",
+      "text": "Wer beim Frühstücksbuffet greift, nimmt oft 3-4 Stück. Drei Mini-Croissants entsprechen bereits gut 300 kcal, mehr als ein normales Croissant (60g, 244 kcal).",
       "icon": "🍽️"
     },
     {

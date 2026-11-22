@@ -471,7 +471,7 @@ function KalorienbedarfPage({ config }: Props) {
               <div className="card bg-base-100 shadow-lg">
                 <div className="card-body py-4">
                   <h3 className="font-bold text-error">❌ 4. Getränke vergessen</h3>
-                  <p className="text-sm opacity-80">Saft, Limo, Milch im Kaffee, Alkohol – flüssige Kalorien summieren sich schnell. Ein Glas Orangensaft hat 110 kcal. <a href="/alkohol-kalorien-rechner" className="link link-primary">Alkohol-Kalorien-Rechner</a>.</p>
+                  <p className="text-sm opacity-80">Saft, Limo, Milch im Kaffee, Alkohol: flüssige Kalorien summieren sich schnell. Ein Glas Orangensaft hat 123 kcal. <a href="/alkohol-kalorien-rechner" className="link link-primary">Alkohol-Kalorien-Rechner</a>.</p>
                 </div>
               </div>
               <div className="card bg-base-100 shadow-lg">
@@ -674,12 +674,12 @@ function KalorienbedarfPage({ config }: Props) {
               Wer seinen Kalorienbedarf kennt, muss auch wissen, wo die versteckten Kalorien lauern. Hier die häufigsten Überraschungen:
             </p>
             <ul className="list-disc pl-6 space-y-2 my-4">
-              <li><strong>Olivenöl zum Kochen:</strong> 1 Esslöffel = 120 kcal. Zwei Löffel in der Pfanne und du hast 240 kcal extra, ohne es zu bemerken.</li>
+              <li><strong>Olivenöl zum Kochen:</strong> 1 Esslöffel = 88 kcal. Zwei Löffel in der Pfanne und du hast 177 kcal extra, ohne es zu bemerken.</li>
               <li><strong>Nüsse als Snack:</strong> Eine Handvoll Cashews (50 g) = 290 kcal. Gesund, aber kaloriendicht.</li>
               <li><strong>Dressings und Saucen:</strong> 2 Esslöffel Caesar-Dressing = 170 kcal. Der „gesunde Salat" wird schnell zur Kalorienbombe.</li>
-              <li><strong>Getränke:</strong> Latte Macchiato = 180 kcal. Ein Glas <a href="/alkohol-kalorien-rechner" className="link link-primary">Wein oder Bier</a> = 150–200 kcal. Smoothies: 200–400 kcal.</li>
+              <li><strong>Getränke:</strong> Latte Macchiato = 131 kcal. Ein Glas <a href="/alkohol-kalorien-rechner" className="link link-primary">Wein oder Bier</a> = 150 bis 200 kcal. Smoothies (300 ml): rund 150 bis 175 kcal.</li>
               <li><strong>Restaurant-Portionen:</strong> Im Schnitt haben Restaurantgerichte 50–100 % mehr Kalorien als die Heimversion – durch mehr Öl, Butter und grössere Portionen.</li>
-              <li><strong>„Gesunde" Snacks:</strong> Müsliriegel (250 kcal), Trockenfrüchte (70 kcal pro Handvoll), Avocado-Toast (350 kcal). Gesund ≠ kalorienarm.</li>
+              <li><strong>„Gesunde" Snacks:</strong> Müsliriegel (118 kcal), Trockenfrüchte (89 kcal pro Handvoll), Avocado-Toast (350 kcal). Gesund ≠ kalorienarm.</li>
             </ul>
 
             <h3 className="text-xl font-bold mt-8 mb-4">Mahlzait: Kalorien tracken in 3 Sekunden</h3>
@@ -689,7 +689,7 @@ function KalorienbedarfPage({ config }: Props) {
 
             <h3 className="text-xl font-bold mt-8 mb-4">Meal Prep: Kalorien planen statt schätzen</h3>
             <p>
-              Eine der effektivsten Strategien für präzises Kalorienmanagement ist <strong>Meal Prep</strong> – also das Vorkochen und Portionieren von Mahlzeiten. Wenn du am Sonntag drei bis vier Gerichte für die Woche vorkochst, weisst du bei jeder Mahlzeit exakt, wie viele Kalorien und Makros drin stecken. Das eliminiert Schätzfehler, spart Zeit unter der Woche und reduziert die Versuchung, spontan Fast Food zu bestellen. Typische Meal-Prep-Gerichte für ein moderates Defizit: Hähnchenbrust mit Reis und Brokkoli (ca. 450 kcal), Linseneintopf (ca. 380 kcal), Lachs mit Süsskartoffel und Spinat (ca. 520 kcal). Tracke jedes Rezept einmal in Mahlzait, und du hast die Werte für immer gespeichert.
+              Eine der effektivsten Strategien für präzises Kalorienmanagement ist <strong>Meal Prep</strong>, also das Vorkochen und Portionieren von Mahlzeiten. Wenn du am Sonntag drei bis vier Gerichte für die Woche vorkochst, weisst du bei jeder Mahlzeit exakt, wie viele Kalorien und Makros drin stecken. Das eliminiert Schätzfehler, spart Zeit unter der Woche und reduziert die Versuchung, spontan Fast Food zu bestellen. Typische Meal-Prep-Gerichte für ein moderates Defizit: Hähnchenbrust mit Reis und Brokkoli (ca. 450 kcal), Linseneintopf (ca. 240 kcal), Lachs mit Süsskartoffel und Spinat (ca. 520 kcal). Tracke jedes Rezept einmal in Mahlzait, und du hast die Werte für immer gespeichert.
             </p>
 
             <h3 className="text-xl font-bold mt-8 mb-4">Kalorienberechnung für besondere Situationen</h3>

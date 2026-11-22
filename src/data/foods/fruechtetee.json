@@ -3,10 +3,10 @@
   "name": "Früchtetee",
   "emoji": "🍵",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 2710502 (Tea, hot, herbal), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 2710502 (Tea, hot, herbal: 1 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 1 kcal",
   "seo": {
     "title": "Früchtetee Kalorien: Naehrwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Früchtetee? Ungesüßt nur ca. 1 kcal pro 100 ml, also fast 0 kcal pro Tasse. Naehrwerte, Varianten & Abnehm-Tipps.",
+    "description": "Wie viele Kalorien hat Früchtetee? Ungesüßt nur ca. 1 kcal pro 100 ml, also fast 0 kcal pro Tasse. Nährwerte, Varianten & Abnehm-Tipps.",
     "keywords": [
       "früchtetee kalorien",
       "früchtetee kcal",
@@ -22,13 +22,13 @@
     "carbs_per_100g": 0.2,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 250,
+    "typical_portion_g": 254,
     "typical_portion_name": "1 Tasse (250 ml)"
   },
   "variants": [
     {
       "name": "Kleine Tasse (200 ml)",
-      "portion_g": 200,
+      "portion_g": 203,
       "calories": 2,
       "protein": 0,
       "carbs": 0.4,
@@ -36,7 +36,7 @@
     },
     {
       "name": "Tasse (250 ml)",
-      "portion_g": 250,
+      "portion_g": 254,
       "calories": 3,
       "protein": 0,
       "carbs": 0.5,
@@ -45,7 +45,7 @@
     },
     {
       "name": "Große Tasse (300 ml)",
-      "portion_g": 300,
+      "portion_g": 304,
       "calories": 3,
       "protein": 0,
       "carbs": 0.6,
@@ -53,7 +53,7 @@
     },
     {
       "name": "Becher (400 ml)",
-      "portion_g": 400,
+      "portion_g": 406,
       "calories": 4,
       "protein": 0,
       "carbs": 0.8,
@@ -61,7 +61,7 @@
     },
     {
       "name": "Kanne (1 Liter)",
-      "portion_g": 1000,
+      "portion_g": 1014,
       "calories": 10,
       "protein": 0,
       "carbs": 2,
@@ -69,42 +69,86 @@
     },
     {
       "name": "Tasse mit 1 TL Zucker (250 ml)",
-      "portion_g": 255,
-      "calories": 23,
+      "portion_g": 258,
+      "calories": 18,
       "protein": 0,
-      "carbs": 5.5,
+      "carbs": 4.5,
       "fat": 0,
-      "tip": "Mit Zucker deutlich mehr"
+      "tip": "Mit Zucker deutlich mehr",
+      "basis": [
+        {
+          "ml": 250,
+          "g": 254
+        },
+        {
+          "fdcId": 169655,
+          "g": 4
+        }
+      ]
     },
     {
       "name": "Tasse mit 1 TL Honig (250 ml)",
-      "portion_g": 257,
+      "portion_g": 261,
       "calories": 24,
       "protein": 0,
-      "carbs": 6,
-      "fat": 0
+      "carbs": 6.3,
+      "fat": 0,
+      "basis": [
+        {
+          "ml": 250,
+          "g": 254
+        },
+        {
+          "fdcId": 169640,
+          "g": 7
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Früchtetee (250 ml)",
+      "name": "Schwarzer Tee (250 ml)",
       "calories": 3,
-      "emoji": "🍵"
+      "emoji": "🍵",
+      "basis": [
+        {
+          "slug": "schwarzer-tee",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Kräutertee (250 ml)",
-      "calories": 2,
-      "emoji": "🌿"
+      "name": "Eistee (250 ml)",
+      "calories": 118,
+      "emoji": "🧋",
+      "basis": [
+        {
+          "slug": "eistee",
+          "g": 262
+        }
+      ]
     },
     {
       "name": "Apfelsaft (250 ml)",
-      "calories": 115,
-      "emoji": "🧃"
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "g": 262
+        }
+      ]
     },
     {
       "name": "Cola (250 ml)",
-      "calories": 105,
-      "emoji": "🥤"
+      "calories": 110,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "g": 262
+        }
+      ]
     }
   ],
   "tips": [
@@ -115,7 +159,7 @@
     },
     {
       "title": "Vorsicht beim Süßen",
-      "text": "Schon 1 Teelöffel Zucker oder Honig bringt die Tasse auf rund 23 kcal. Wer Kalorien sparen will, trinkt ihn pur.",
+      "text": "Schon 1 Teelöffel Zucker oder Honig bringt die Tasse auf rund 18 bis 24 kcal. Wer Kalorien sparen will, trinkt ihn pur.",
       "icon": "🍯"
     },
     {
@@ -157,7 +201,7 @@
     },
     {
       "question": "Wie viele Kalorien hat Früchtetee mit Zucker?",
-      "answer": "Mit 1 Teelöffel Zucker hat eine Tasse rund 23 kcal, mit Honig etwa 24 kcal."
+      "answer": "Mit 1 Teelöffel Zucker hat eine Tasse rund 18 kcal, mit Honig etwa 24 kcal."
     }
   ],
   "related_foods": [

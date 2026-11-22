@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 169596 (Gelatin desserts, dry mix, prepared with water), Werte je 100 g",
   "seo": {
     "title": "Götterspeise Kalorien: Naehrwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Götterspeise? Fertig zubereitet nur ca. 62 kcal pro 100g, ein Schälchen (150g) rund 93 kcal. Naehrwerte, Varianten & Diaet-Tipps.",
+    "description": "Wie viele Kalorien hat Götterspeise? Fertig zubereitet nur ca. 60 kcal pro 100g, ein Schälchen (150g) rund 90 kcal. Nährwerte, Varianten & Diät-Tipps.",
     "keywords": [
       "götterspeise kalorien",
       "götterspeise kcal",
@@ -18,9 +18,9 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 62,
+    "calories_per_100g": 60,
     "protein_per_100g": 1.2,
-    "carbs_per_100g": 14,
+    "carbs_per_100g": 14.2,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 150,
@@ -30,7 +30,7 @@
     {
       "name": "Kleine Portion (125g)",
       "portion_g": 125,
-      "calories": 78,
+      "calories": 75,
       "protein": 2,
       "carbs": 18,
       "fat": 0
@@ -38,7 +38,7 @@
     {
       "name": "1 Schälchen (150g)",
       "portion_g": 150,
-      "calories": 93,
+      "calories": 90,
       "protein": 2,
       "carbs": 21,
       "fat": 0,
@@ -47,7 +47,7 @@
     {
       "name": "Große Portion (200g)",
       "portion_g": 200,
-      "calories": 124,
+      "calories": 120,
       "protein": 2,
       "carbs": 28,
       "fat": 0
@@ -55,61 +55,95 @@
     {
       "name": "Zuckerfrei mit Süßstoff (150g)",
       "portion_g": 150,
-      "calories": 12,
-      "protein": 2,
-      "carbs": 1,
+      "calories": 30,
+      "protein": 1,
+      "carbs": 6,
       "fat": 0,
-      "tip": "Ideal beim Abnehmen"
+      "tip": "Ideal beim Abnehmen",
+      "basis": [
+        {
+          "fdcId": 169598,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Götterspeise mit Sahne (180g)",
       "portion_g": 180,
-      "calories": 186,
-      "protein": 3,
+      "calories": 178,
+      "protein": 2,
       "carbs": 22,
-      "fat": 9
+      "fat": 9,
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 170858,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Trockenpulver, 1 Beutel (12g)",
       "portion_g": 12,
-      "calories": 43,
+      "calories": 46,
       "protein": 1,
-      "carbs": 10,
+      "carbs": 11,
       "fat": 0,
-      "tip": "Vor dem Anrühren"
+      "tip": "Vor dem Anrühren",
+      "basis": [
+        {
+          "fdcId": 168775,
+          "g": 12
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Magerquark (150g)",
-      "calories": 100,
-      "emoji": "🥛"
-    },
-    {
       "name": "Wassereis (150g)",
-      "calories": 105,
-      "emoji": "🧊"
+      "calories": 119,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "wassereis",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Schokopudding (150g)",
-      "calories": 195,
-      "emoji": "🍫"
+      "calories": 213,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokopudding",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Joghurt natur (150g)",
-      "calories": 99,
-      "emoji": "🥄"
+      "calories": 92,
+      "emoji": "🥄",
+      "basis": [
+        {
+          "slug": "joghurt",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarmes Dessert",
-      "text": "Fertig zubereitet hat ein Schälchen (150g) nur etwa 93 kcal und enthält praktisch kein Fett. Das macht Götterspeise zu einem der leichtesten Nachtische überhaupt.",
+      "text": "Fertig zubereitet hat ein Schälchen (150g) nur etwa 90 kcal und enthält praktisch kein Fett. Das macht Götterspeise zu einem der leichtesten Nachtische überhaupt.",
       "icon": "🍮"
     },
     {
-      "title": "Zuckerfrei spart fast alles",
-      "text": "Mit Süßstoff statt Zucker angerührt sinken die Kalorien auf rund 12 kcal pro Schälchen. So bleibt die Süße, ohne dass die Kalorien zu Buche schlagen.",
+      "title": "Zuckerfrei spart zwei Drittel",
+      "text": "Mit Süßstoff statt Zucker angerührt sinken die Kalorien auf rund 30 kcal pro Schälchen. So bleibt die Süße, ohne dass die Kalorien zu Buche schlagen.",
       "icon": "🔻"
     },
     {
@@ -131,11 +165,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Götterspeise?",
-      "answer": "Fertig zubereitet hat Götterspeise rund 62 kcal pro 100g. Ein typisches Schälchen mit 150g kommt damit auf etwa 93 kcal."
+      "answer": "Fertig zubereitet hat Götterspeise rund 60 kcal pro 100g. Ein typisches Schälchen mit 150g kommt damit auf etwa 90 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Schälchen Götterspeise?",
-      "answer": "Ein Schälchen von 150g hat etwa 93 kcal. Eine kleine Portion (125g) liegt bei rund 78 kcal, eine große Portion (200g) bei etwa 124 kcal."
+      "answer": "Ein Schälchen von 150g hat etwa 90 kcal. Eine kleine Portion (125g) liegt bei rund 75 kcal, eine große Portion (200g) bei etwa 120 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Götterspeise?",
@@ -147,7 +181,7 @@
     },
     {
       "question": "Ist Götterspeise zum Abnehmen geeignet?",
-      "answer": "Ja. Mit nur etwa 93 kcal pro Schälchen und null Fett ist Götterspeise ein sehr leichtes Dessert. In der zuckerfreien Variante mit Süßstoff sinken die Kalorien sogar auf rund 12 kcal."
+      "answer": "Ja. Mit nur etwa 90 kcal pro Schälchen und null Fett ist Götterspeise ein sehr leichtes Dessert. In der zuckerfreien Variante mit Süßstoff sinken die Kalorien sogar auf rund 30 kcal."
     },
     {
       "question": "Ist Götterspeise gesund?",

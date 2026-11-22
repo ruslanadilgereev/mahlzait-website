@@ -3,34 +3,9 @@
   "name": "Matjesbrötchen",
   "emoji": "🥪",
   "category": "fast-food",
-  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Matjesbrötchen à 150 g): 60 g Brötchen (FDC-ID 175031, Rolls, hard (includes kaiser): 293 kcal), 60 g Matjesfilet (Hering) (FDC-ID 175116, Fish, herring, Atlantic, raw: 158 kcal), 20 g Zwiebelringe (FDC-ID 170000, Onions, raw: 40 kcal), 10 g Gewürzgurke (FDC-ID 168558, Pickles, cucumber, dill or kosher dill: 12 kcal); Werte je 100 g",
-  "rezept": {
-    "zutaten": [
-      {
-        "name": "Brötchen",
-        "g": 60,
-        "fdcId": 175031
-      },
-      {
-        "name": "Matjesfilet (Hering)",
-        "g": 60,
-        "fdcId": 175116
-      },
-      {
-        "name": "Zwiebelringe",
-        "g": 20,
-        "fdcId": 170000
-      },
-      {
-        "name": "Gewürzgurke",
-        "g": 10,
-        "fdcId": 168558
-      }
-    ]
-  },
   "seo": {
     "title": "Matjesbrötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Matjesbrötchen? Ein Standard-Brötchen (150g) hat ca. 281 kcal. Nährwerte pro 100g, Varianten im Vergleich & Tipps.",
+    "description": "Wie viele Kalorien hat ein Matjesbrötchen? Ein Standard-Brötchen (150g) hat ca. 330 kcal. Nährwerte pro 100g, Varianten im Vergleich & Tipps.",
     "keywords": [
       "matjes brötchen kalorien",
       "matjesbrötchen kcal",
@@ -43,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 187,
-    "protein_per_100g": 11.3,
-    "carbs_per_100g": 22.5,
-    "fat_per_100g": 5.4,
+    "calories_per_100g": 220,
+    "protein_per_100g": 11.5,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 11,
     "fiber_per_100g": 1.2,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Matjesbrötchen"
@@ -55,147 +30,83 @@
     {
       "name": "Matjesbrötchen klein (120g)",
       "portion_g": 120,
-      "calories": 224,
+      "calories": 264,
       "protein": 14,
-      "carbs": 27,
-      "fat": 6
+      "carbs": 22,
+      "fat": 13
     },
     {
       "name": "Matjesbrötchen Standard (150g)",
       "portion_g": 150,
-      "calories": 281,
+      "calories": 330,
       "protein": 17,
-      "carbs": 34,
-      "fat": 8,
+      "carbs": 27,
+      "fat": 17,
       "tip": "Klassische Größe vom Fischstand"
     },
     {
       "name": "Matjesbrötchen groß (190g)",
       "portion_g": 190,
-      "calories": 355,
-      "protein": 21,
-      "carbs": 43,
-      "fat": 10
+      "calories": 418,
+      "protein": 22,
+      "carbs": 34,
+      "fat": 21
     },
     {
       "name": "Matjesbrötchen halb (75g)",
       "portion_g": 75,
-      "calories": 140,
-      "protein": 8,
-      "carbs": 17,
-      "fat": 4
+      "calories": 165,
+      "protein": 9,
+      "carbs": 14,
+      "fat": 8
     },
     {
       "name": "Matjesbrötchen mit Remoulade (170g)",
       "portion_g": 170,
-      "calories": 390,
-      "protein": 17,
-      "carbs": 34,
-      "fat": 20,
-      "tip": "Remoulade (Mayonnaise mit Gurke) erhöht den Fettgehalt deutlich",
-      "basis": [
-        {
-          "g": 150
-        },
-        {
-          "fdcId": 171009,
-          "g": 16
-        },
-        {
-          "fdcId": 168558,
-          "g": 4
-        }
-      ]
+      "calories": 399,
+      "protein": 19,
+      "carbs": 31,
+      "fat": 26,
+      "tip": "Remoulade erhöht den Fettgehalt deutlich"
     },
     {
       "name": "Nur Matjesfilet (60g)",
       "portion_g": 60,
-      "calories": 95,
-      "protein": 11,
+      "calories": 157,
+      "protein": 10,
       "carbs": 0,
-      "fat": 5,
-      "tip": "Ohne Brötchen, keine Kohlenhydrate",
-      "basis": [
-        {
-          "fdcId": 175116,
-          "g": 60
-        }
-      ]
+      "fat": 13,
+      "tip": "Ohne Brötchen, fast keine Kohlenhydrate"
     },
     {
-      "name": "Brötchen pur (60g)",
-      "portion_g": 60,
-      "calories": 176,
-      "protein": 6,
-      "carbs": 32,
-      "fat": 3,
-      "basis": [
-        {
-          "slug": "broetchen"
-        }
-      ]
+      "name": "Brötchen pur (55g)",
+      "portion_g": 55,
+      "calories": 145,
+      "protein": 5,
+      "carbs": 29,
+      "fat": 1
     }
   ],
   "comparison": [
     {
-      "name": "Bismarckbrötchen (150g)",
-      "calories": 342,
-      "emoji": "🐟",
-      "basis": [
-        {
-          "slug": "broetchen"
-        },
-        {
-          "fdcId": 175118,
-          "g": 60
-        },
-        {
-          "fdcId": 170000,
-          "g": 20
-        },
-        {
-          "fdcId": 168558,
-          "g": 10
-        }
-      ]
+      "name": "Fischbrötchen (Bismarck)",
+      "calories": 300,
+      "emoji": "🐟"
     },
     {
-      "name": "Käsebrötchen (95g)",
-      "calories": 299,
-      "emoji": "🧀",
-      "basis": [
-        {
-          "slug": "kaesebroetchen"
-        }
-      ]
+      "name": "Käsebrötchen",
+      "calories": 350,
+      "emoji": "🧀"
     },
     {
-      "name": "Currywurst (200g)",
-      "calories": 546,
-      "emoji": "🌭",
-      "basis": [
-        {
-          "slug": "currywurst"
-        }
-      ]
+      "name": "Currywurst",
+      "calories": 290,
+      "emoji": "🌭"
     },
     {
-      "name": "Salamibrötchen mit Butter (100g)",
-      "calories": 361,
-      "emoji": "🥖",
-      "basis": [
-        {
-          "slug": "broetchen"
-        },
-        {
-          "slug": "salami",
-          "g": 30
-        },
-        {
-          "fdcId": 173430,
-          "g": 10
-        }
-      ]
+      "name": "Belegtes Brötchen mit Salami",
+      "calories": 310,
+      "emoji": "🥖"
     }
   ],
   "tips": [
@@ -216,7 +127,7 @@
     },
     {
       "title": "Kalorien sparen ohne Remoulade",
-      "text": "Pur mit Zwiebeln belegt liegt das Brötchen bei ca. 281 kcal. Mit Remoulade kommen schnell rund 109 kcal und viel Fett dazu, wer abnehmen will, lässt die Sauce weg.",
+      "text": "Pur mit Zwiebeln belegt liegt das Brötchen bei ca. 330 kcal. Mit Remoulade kommen schnell 70 kcal und viel Fett dazu, wer abnehmen will, lässt die Sauce weg.",
       "icon": "✂️"
     },
     {
@@ -228,19 +139,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Matjesbrötchen?",
-      "answer": "Ein klassisches Matjesbrötchen (150g) hat ca. 281 kcal. Kleine Varianten (120g) liegen bei rund 224 kcal, große (190g) bei etwa 355 kcal. Gerechnet aus USDA-Werten für 60 g Brötchen, 60 g Matjes (Hering), 20 g Zwiebeln und 10 g Gewürzgurke."
+      "answer": "Ein klassisches Matjesbrötchen (150g) hat ca. 330 kcal. Kleine Varianten (120g) liegen bei rund 264 kcal, große (190g) bei etwa 418 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Matjesbrötchen?",
-      "answer": "Ein Standard-Matjesbrötchen liefert ca. 17g Eiweiß (11,3g pro 100g). Damit ist es eines der eiweißreichsten Fischbrötchen am Stand."
+      "answer": "Ein Standard-Matjesbrötchen liefert ca. 17g Eiweiß (11,5g pro 100g). Damit ist es eines der eiweißreichsten Fischbrötchen am Stand."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Matjesbrötchen?",
-      "answer": "Ein 150g-Matjesbrötchen enthält ca. 34g Kohlenhydrate, fast ausschließlich aus dem Brötchen. Der Matjes selbst ist kohlenhydratfrei."
+      "answer": "Ein 150g-Matjesbrötchen enthält ca. 27g Kohlenhydrate, fast ausschließlich aus dem Brötchen. Der Matjes selbst ist praktisch kohlenhydratfrei."
     },
     {
       "question": "Ist ein Matjesbrötchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Durch den hohen Eiweißanteil sättigt es gut. Mit ca. 281 kcal ist es aber kein Leichtgewicht. Wer Kalorien sparen will, lässt die Remoulade weg und wählt ein kleineres oder Vollkornbrötchen."
+      "answer": "In Maßen ja: Durch den hohen Eiweißanteil sättigt es gut. Mit ca. 330 kcal ist es aber kein Leichtgewicht. Wer Kalorien sparen will, lässt die Remoulade weg und wählt ein kleineres oder Vollkornbrötchen."
     },
     {
       "question": "Ist ein Matjesbrötchen gesund?",
@@ -248,7 +159,7 @@
     },
     {
       "question": "Hat ein Matjesbrötchen mehr Kalorien als eine Currywurst?",
-      "answer": "Nein, deutlich weniger. Ein Matjesbrötchen (150g) hat ca. 281 kcal, eine Currywurst ohne Pommes (200g) rund 546 kcal."
+      "answer": "Ja, knapp. Ein Matjesbrötchen (150g) hat ca. 330 kcal, eine Currywurst ohne Pommes liegt bei rund 290 kcal. Der Unterschied kommt vor allem vom Brötchen."
     }
   ],
   "related_foods": [

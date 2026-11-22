@@ -71,7 +71,7 @@ Es gibt nur zwei Hebel:
 Und hier ist der Punkt: Hebel 1 ist viel, viel effektiver.
 
 **Beispiel:**
-- Eine Tafel [Schokolade](/kalorien/schokolade/) weglassen = 500 kcal gespart (dauert 3 Sekunden)
+- Eine Tafel [Schokolade](/kalorien/schokolade/) weglassen = 535 kcal gespart (dauert 3 Sekunden)
 - 500 kcal durchs Laufen verbrennen = 45-60 Minuten schwitzen
 
 Was ist einfacher?

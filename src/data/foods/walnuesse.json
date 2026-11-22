@@ -7,7 +7,16 @@
   "seo": {
     "title": "Walnüsse Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Walnüsse? Nährwerte pro 100g & Handvoll. Omega-3-Quelle, Varianten & Diät-Tipps.",
-    "keywords": ["walnüsse kalorien", "kalorien walnüsse", "walnüsse nährwerte", "walnüsse protein", "walnüsse omega 3", "walnüsse handvoll kalorien", "walnüsse gesund", "walnüsse abnehmen"]
+    "keywords": [
+      "walnüsse kalorien",
+      "kalorien walnüsse",
+      "walnüsse nährwerte",
+      "walnüsse protein",
+      "walnüsse omega 3",
+      "walnüsse handvoll kalorien",
+      "walnüsse gesund",
+      "walnüsse abnehmen"
+    ]
   },
   "overview": {
     "calories_per_100g": 654,
@@ -19,34 +28,190 @@
     "typical_portion_name": "1 Handvoll"
   },
   "variants": [
-    { "name": "Walnüsse roh (30g Handvoll)", "portion_g": 30, "calories": 196, "protein": 5, "carbs": 4, "fat": 20, "tip": "Standard-Portion" },
-    { "name": "Walnusshälften (50g)", "portion_g": 50, "calories": 327, "protein": 8, "carbs": 7, "fat": 33 },
-    { "name": "Walnüsse im Müsli (15g)", "portion_g": 15, "calories": 98, "protein": 2, "carbs": 2, "fat": 10 },
-    { "name": "Walnüsse karamellisiert (30g)", "portion_g": 30, "calories": 210, "protein": 4, "carbs": 10, "fat": 17 },
-    { "name": "Walnussöl (1 EL, 10ml)", "portion_g": 10, "calories": 88, "protein": 0, "carbs": 0, "fat": 10 },
-    { "name": "Walnüsse im Salat (20g)", "portion_g": 20, "calories": 131, "protein": 3, "carbs": 3, "fat": 13 },
-    { "name": "Walnuss-Brot (1 Scheibe)", "portion_g": 60, "calories": 175, "protein": 5, "carbs": 25, "fat": 6 }
+    {
+      "name": "Walnüsse roh (30g Handvoll)",
+      "portion_g": 30,
+      "calories": 196,
+      "protein": 5,
+      "carbs": 4,
+      "fat": 20,
+      "tip": "Standard-Portion"
+    },
+    {
+      "name": "Walnusshälften (50g)",
+      "portion_g": 50,
+      "calories": 327,
+      "protein": 8,
+      "carbs": 7,
+      "fat": 33
+    },
+    {
+      "name": "Walnüsse im Müsli (15g)",
+      "portion_g": 15,
+      "calories": 98,
+      "protein": 2,
+      "carbs": 2,
+      "fat": 10
+    },
+    {
+      "name": "Walnüsse karamellisiert (30g)",
+      "portion_g": 30,
+      "calories": 180,
+      "protein": 4,
+      "carbs": 9,
+      "fat": 16,
+      "tip": "24g Walnüsse mit 6g Zucker karamellisiert",
+      "basis": [
+        {
+          "g": 24
+        },
+        {
+          "fdcId": 169655,
+          "g": 6
+        }
+      ]
+    },
+    {
+      "name": "Walnussöl (1 EL, 10ml)",
+      "portion_g": 9,
+      "calories": 80,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 171030,
+          "ml": 10,
+          "g": 9
+        }
+      ]
+    },
+    {
+      "name": "Walnüsse im Salat (20g)",
+      "portion_g": 20,
+      "calories": 131,
+      "protein": 3,
+      "carbs": 3,
+      "fat": 13
+    },
+    {
+      "name": "Walnussbrötchen (60g)",
+      "portion_g": 60,
+      "calories": 197,
+      "protein": 6,
+      "carbs": 29,
+      "fat": 6,
+      "basis": [
+        {
+          "slug": "walnussbroetchen",
+          "g": 60
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Mandeln", "calories": 576, "emoji": "🌰" },
-    { "name": "Cashewkerne", "calories": 553, "emoji": "🥜" },
-    { "name": "Haselnüsse", "calories": 628, "emoji": "🌰" },
-    { "name": "Macadamia", "calories": 718, "emoji": "🥜" }
+    {
+      "name": "Mandeln (100g)",
+      "calories": 579,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Cashewkerne (100g)",
+      "calories": 553,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "cashewkerne",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Haselnüsse (100g)",
+      "calories": 628,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "haselnuss",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Macadamia (100g)",
+      "calories": 718,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "macadamia",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Omega-3-Superfood", "text": "Walnüsse sind die Omega-3-reichsten Nüsse. Eine Handvoll (30g) deckt den täglichen Omega-3-Bedarf zu über 100%.", "icon": "🧠" },
-    { "title": "Portionsgröße begrenzen", "text": "Eine Handvoll (30g) hat schon 196 kcal. Am besten vorportioniert in kleine Tüten – nie aus der Packung snacken.", "icon": "📏" },
-    { "title": "Gut fürs Gehirn", "text": "Nicht ohne Grund sehen Walnüsse aus wie ein Gehirn: Omega-3 und Antioxidantien fördern die kognitive Funktion.", "icon": "🧠" },
-    { "title": "Im Salat statt als Snack", "text": "20g Walnüsse im Salat machen ihn sättigender und liefern gesunde Fette, die die Aufnahme fettlöslicher Vitamine verbessern.", "icon": "🥗" },
-    { "title": "Kühl und dunkel lagern", "text": "Walnüsse werden durch ihren hohen Fettgehalt schnell ranzig. Im Kühlschrank oder Gefrierfach bleiben sie monatelang frisch.", "icon": "❄️" }
+    {
+      "title": "Omega-3-Superfood",
+      "text": "Walnüsse sind die Omega-3-reichsten Nüsse. Eine Handvoll (30g) deckt den täglichen Omega-3-Bedarf zu über 100%.",
+      "icon": "🧠"
+    },
+    {
+      "title": "Portionsgröße begrenzen",
+      "text": "Eine Handvoll (30g) hat schon 196 kcal. Am besten vorportioniert in kleine Tüten, nie aus der Packung snacken.",
+      "icon": "📏"
+    },
+    {
+      "title": "Gut fürs Gehirn",
+      "text": "Nicht ohne Grund sehen Walnüsse aus wie ein Gehirn: Omega-3 und Antioxidantien fördern die kognitive Funktion.",
+      "icon": "🧠"
+    },
+    {
+      "title": "Im Salat statt als Snack",
+      "text": "20g Walnüsse im Salat machen ihn sättigender und liefern gesunde Fette, die die Aufnahme fettlöslicher Vitamine verbessern.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Kühl und dunkel lagern",
+      "text": "Walnüsse werden durch ihren hohen Fettgehalt schnell ranzig. Im Kühlschrank oder Gefrierfach bleiben sie monatelang frisch.",
+      "icon": "❄️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien haben Walnüsse?", "answer": "Walnüsse haben ca. 654 kcal pro 100g. Eine Handvoll (30g) hat ca. 196 kcal." },
-    { "question": "Sind Walnüsse gut zum Abnehmen?", "answer": "In Maßen ja. Trotz hoher Kaloriendichte sättigen Walnüsse durch Protein, Ballaststoffe und Fett sehr gut. Eine Handvoll pro Tag ist ideal." },
-    { "question": "Wie viele Walnüsse pro Tag sind gesund?", "answer": "Eine Handvoll (ca. 30g oder 7-8 ganze Walnüsse) pro Tag ist die empfohlene Menge. Das senkt nachweislich das Herzinfarkt-Risiko." },
-    { "question": "Haben Walnüsse Omega-3?", "answer": "Ja! Walnüsse sind die beste pflanzliche Omega-3-Quelle mit ca. 9g Alpha-Linolensäure pro 100g. Keine andere Nuss kommt da ran." },
-    { "question": "Was ist gesünder: Mandeln oder Walnüsse?", "answer": "Walnüsse haben mehr Omega-3, Mandeln mehr Protein und Vitamin E. Ideal ist eine Mischung aus beiden." },
-    { "question": "Kann man zu viele Walnüsse essen?", "answer": "Ja, durch die hohe Kaloriendichte. Mehr als 50g/Tag (327 kcal) führt schnell zu einem Kalorienüberschuss. Auch der hohe Fettgehalt kann bei Überkonsum Verdauungsprobleme verursachen." }
+    {
+      "question": "Wie viele Kalorien haben Walnüsse?",
+      "answer": "Walnüsse haben ca. 654 kcal pro 100g. Eine Handvoll (30g) hat ca. 196 kcal."
+    },
+    {
+      "question": "Sind Walnüsse gut zum Abnehmen?",
+      "answer": "In Maßen ja. Trotz hoher Kaloriendichte sättigen Walnüsse durch Protein, Ballaststoffe und Fett sehr gut. Eine Handvoll pro Tag ist ideal."
+    },
+    {
+      "question": "Wie viele Walnüsse pro Tag sind gesund?",
+      "answer": "Eine Handvoll (ca. 30g oder 7-8 ganze Walnüsse) pro Tag ist die empfohlene Menge. Das senkt nachweislich das Herzinfarkt-Risiko."
+    },
+    {
+      "question": "Haben Walnüsse Omega-3?",
+      "answer": "Ja! Walnüsse sind die beste pflanzliche Omega-3-Quelle mit ca. 9g Alpha-Linolensäure pro 100g. Keine andere Nuss kommt da ran."
+    },
+    {
+      "question": "Was ist gesünder: Mandeln oder Walnüsse?",
+      "answer": "Walnüsse haben mehr Omega-3, Mandeln mehr Protein und Vitamin E. Ideal ist eine Mischung aus beiden."
+    },
+    {
+      "question": "Kann man zu viele Walnüsse essen?",
+      "answer": "Ja, durch die hohe Kaloriendichte. Mehr als 50g/Tag (327 kcal) führt schnell zu einem Kalorienüberschuss. Auch der hohe Fettgehalt kann bei Überkonsum Verdauungsprobleme verursachen."
+    }
   ],
-  "related_foods": ["mandeln", "cashewkerne", "haferflocken", "muesli"]
+  "related_foods": [
+    "mandeln",
+    "cashewkerne",
+    "haferflocken",
+    "muesli"
+  ]
 }

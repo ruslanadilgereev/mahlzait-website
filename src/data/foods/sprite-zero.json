@@ -3,10 +3,10 @@
   "name": "Sprite Zero",
   "emoji": "🥤",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 173204 (Beverages, carbonated, low calorie, other than cola or pepper,  without caffeine), Werte je 100 g; allgemeiner FDC-Eintrag, FDC führt Sprite Zero nicht",
+  "source": "USDA FoodData Central, FDC-ID 173204 (Beverages, carbonated, low calorie, other than cola or pepper,  without caffeine: 0 kcal), Werte je 100 g; je 100 ml mit 1,001 g/ml 0 kcal",
   "seo": {
     "title": "Sprite Zero Kalorien: Nährwerte & Vergleich | Mahlzait",
-    "description": "Wie viele Kalorien hat Sprite Zero? Nur 1 kcal pro 100 ml, eine 330-ml-Dose hat ca. 3 kcal. Zuckerfrei – alle Nährwerte & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Sprite Zero? Praktisch 0 kcal pro 100 ml, auch eine 330-ml-Dose bleibt unter 1 kcal. Zuckerfrei, alle Nährwerte & Tipps im Überblick.",
     "keywords": [
       "sprite zero kalorien",
       "sprite zero kcal",
@@ -18,8 +18,8 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 1,
-    "protein_per_100g": 0,
+    "calories_per_100g": 0,
+    "protein_per_100g": 0.1,
     "carbs_per_100g": 0,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
@@ -30,7 +30,7 @@
     {
       "name": "Kleines Glas (200 ml)",
       "portion_g": 200,
-      "calories": 2,
+      "calories": 0,
       "protein": 0,
       "carbs": 0,
       "fat": 0
@@ -38,7 +38,7 @@
     {
       "name": "Glas (250 ml)",
       "portion_g": 250,
-      "calories": 3,
+      "calories": 0,
       "protein": 0,
       "carbs": 0,
       "fat": 0
@@ -46,7 +46,7 @@
     {
       "name": "Dose (330 ml)",
       "portion_g": 330,
-      "calories": 3,
+      "calories": 0,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
@@ -55,24 +55,24 @@
     {
       "name": "Kleine Flasche (500 ml)",
       "portion_g": 500,
-      "calories": 5,
-      "protein": 0,
+      "calories": 0,
+      "protein": 1,
       "carbs": 0,
       "fat": 0
     },
     {
       "name": "Flasche (1 Liter)",
-      "portion_g": 1000,
-      "calories": 10,
-      "protein": 0,
+      "portion_g": 1001,
+      "calories": 0,
+      "protein": 1,
       "carbs": 0,
       "fat": 0
     },
     {
       "name": "Große Flasche (1,5 Liter)",
-      "portion_g": 1500,
-      "calories": 15,
-      "protein": 0,
+      "portion_g": 1501,
+      "calories": 0,
+      "protein": 2,
       "carbs": 0,
       "fat": 0
     }
@@ -80,34 +80,56 @@
   "comparison": [
     {
       "name": "Sprite (330 ml)",
-      "calories": 109,
-      "emoji": "🥤"
+      "calories": 138,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "sprite"
+        }
+      ]
     },
     {
       "name": "Cola (330 ml)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
       "name": "Cola Zero (330 ml)",
       "calories": 1,
-      "emoji": "🥤"
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola-zero"
+        }
+      ]
     },
     {
       "name": "Mineralwasser (330 ml)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Praktisch kalorienfrei",
-      "text": "Sprite Zero hat nur 1 kcal pro 100 ml. Selbst eine ganze 1,5-Liter-Flasche bringt es auf rund 15 kcal – ideal, wenn man auf die Kalorienbilanz achtet.",
+      "text": "Sprite Zero hat laut FDC praktisch 0 kcal pro 100 ml. Selbst eine ganze 1,5-Liter-Flasche bringt kaum Kalorien, ideal, wenn man auf die Kalorienbilanz achtet.",
       "icon": "🥤"
     },
     {
       "title": "Ohne Zucker statt mit",
-      "text": "Im Vergleich zum klassischen Sprite mit etwa 33 g Zucker pro Dose enthält Sprite Zero 0 g Zucker. Der Geschmack kommt von Süßstoffen statt von Zucker.",
+      "text": "Im Vergleich zum klassischen Sprite (138 kcal pro Dose) enthält Sprite Zero 0 g Zucker. Der Geschmack kommt von Süßstoffen statt von Zucker.",
       "icon": "🚫"
     },
     {
@@ -121,7 +143,7 @@
       "icon": "🧪"
     },
     {
-      "title": "Gut für die Zähne – mit Einschränkung",
+      "title": "Gut für die Zähne, mit Einschränkung",
       "text": "Ohne Zucker entfällt das Kariesrisiko durch Zucker. Die enthaltene Zitronensäure macht das Getränk aber sauer, was den Zahnschmelz angreifen kann.",
       "icon": "🦷"
     }
@@ -129,15 +151,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Sprite Zero?",
-      "answer": "Sprite Zero hat nur 1 kcal pro 100 ml. Eine 330-ml-Dose enthält damit rund 3 kcal, eine 500-ml-Flasche etwa 5 kcal."
+      "answer": "Sprite Zero hat laut FDC praktisch 0 kcal pro 100 ml. Auch eine 330-ml-Dose oder eine 500-ml-Flasche liegt unter 1 kcal."
     },
     {
       "question": "Wie viel Zucker ist in Sprite Zero?",
-      "answer": "Sprite Zero enthält 0 g Zucker. Die Süße stammt aus Süßstoffen, nicht aus Zucker. Zum Vergleich: klassischer Sprite hat rund 9 g Zucker pro 100 ml."
+      "answer": "Sprite Zero enthält 0 g Zucker. Die Süße stammt aus Süßstoffen, nicht aus Zucker. Klassischer Sprite enthält dagegen viel Zucker."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Sprite Zero?",
-      "answer": "Sprite Zero enthält laut Hersteller 0 g Kohlenhydrate pro 100 ml und ist damit auch für eine kohlenhydratarme Ernährung geeignet."
+      "answer": "Sprite Zero enthält laut FDC 0 g Kohlenhydrate pro 100 ml und ist damit auch für eine kohlenhydratarme Ernährung geeignet."
     },
     {
       "question": "Hat Sprite Zero Protein?",
@@ -145,7 +167,7 @@
     },
     {
       "question": "Ist Sprite Zero zum Abnehmen geeignet?",
-      "answer": "Mit nur 1 kcal pro 100 ml liefert Sprite Zero praktisch keine Kalorien und kann zuckerhaltige Limonaden ersetzen. Als kalorienfreie Abwechslung beim Abnehmen ist es daher gut geeignet – als Hauptgetränk bleibt Wasser aber die bessere Wahl."
+      "answer": "Mit praktisch 0 kcal pro 100 ml liefert Sprite Zero keine nennenswerten Kalorien und kann zuckerhaltige Limonaden ersetzen. Als kalorienfreie Abwechslung beim Abnehmen ist es daher gut geeignet, als Hauptgetränk bleibt Wasser aber die bessere Wahl."
     },
     {
       "question": "Ist Sprite Zero gesund?",

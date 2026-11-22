@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 168927 (Pasta, dry, unenriched), Werte je 100 g",
   "seo": {
     "title": "Penne Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Penne? Roh ca. 371 kcal pro 100g, gekocht nur 157 kcal. Alle Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
+    "description": "Wie viele Kalorien hat Penne? Roh ca. 371 kcal pro 100g, gekocht nur 158 kcal. Alle Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
     "keywords": [
       "penne kalorien",
       "penne kcal",
@@ -33,7 +33,7 @@
       "calories": 260,
       "protein": 9.1,
       "carbs": 52.3,
-      "fat": 1
+      "fat": 1.1
     },
     {
       "name": "1 Portion roh (80g)",
@@ -48,35 +48,53 @@
       "name": "Große Portion roh (125g)",
       "portion_g": 125,
       "calories": 464,
-      "protein": 16.2,
+      "protein": 16.3,
       "carbs": 93.4,
       "fat": 1.9
     },
     {
       "name": "Penne gekocht (180g)",
       "portion_g": 180,
-      "calories": 283,
+      "calories": 284,
       "protein": 10.4,
-      "carbs": 55.3,
-      "fat": 1.6,
-      "tip": "Aus ca. 80g roh, mit Wasser aufgequollen"
+      "carbs": 55.5,
+      "fat": 1.7,
+      "tip": "Aus ca. 80g roh, mit Wasser aufgequollen",
+      "basis": [
+        {
+          "fdcId": 168928,
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Penne gekocht große Portion (250g)",
       "portion_g": 250,
-      "calories": 392,
+      "calories": 395,
       "protein": 14.5,
-      "carbs": 76.8,
-      "fat": 2.2
+      "carbs": 77.2,
+      "fat": 2.3,
+      "basis": [
+        {
+          "fdcId": 168928,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Penne Vollkorn roh (80g)",
       "portion_g": 80,
-      "calories": 290,
-      "protein": 11.6,
-      "carbs": 53,
-      "fat": 2.2,
-      "tip": "Mehr Ballaststoffe, hält länger satt"
+      "calories": 282,
+      "protein": 11.1,
+      "carbs": 58.7,
+      "fat": 2.3,
+      "tip": "Mehr Ballaststoffe, hält länger satt",
+      "basis": [
+        {
+          "fdcId": 169738,
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Packung roh (500g)",
@@ -89,30 +107,54 @@
   ],
   "comparison": [
     {
-      "name": "Spaghetti",
+      "name": "Spaghetti roh (100g)",
       "calories": 371,
-      "emoji": "🍝"
+      "emoji": "🍝",
+      "basis": [
+        {
+          "fdcId": 168927,
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Reis (roh)",
-      "calories": 360,
-      "emoji": "🍚"
+      "name": "Reis roh (100g)",
+      "calories": 365,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 168877,
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Gnocchi",
-      "calories": 152,
-      "emoji": "🥟"
+      "name": "Gnocchi (100g)",
+      "calories": 135,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "gnocchi",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Couscous (roh)",
+      "name": "Couscous roh (100g)",
       "calories": 376,
-      "emoji": "🌾"
+      "emoji": "🌾",
+      "basis": [
+        {
+          "fdcId": 169699,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Roh und gekocht nicht verwechseln",
-      "text": "100g rohe Penne haben 371 kcal, gekocht nur noch ca. 157 kcal. Beim Kochen nehmen die Nudeln Wasser auf und werden gut doppelt so schwer. Wiege am besten die rohe Menge ab.",
+      "text": "100g rohe Penne haben 371 kcal, gekocht nur noch ca. 158 kcal. Beim Kochen nehmen die Nudeln Wasser auf und werden gut doppelt so schwer. Wiege am besten die rohe Menge ab.",
       "icon": "⚖️"
     },
     {
@@ -139,11 +181,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Penne?",
-      "answer": "Rohe Penne hat ca. 371 kcal pro 100g. Eine typische Portion von 80g roh entspricht etwa 297 kcal. Gekocht hat Penne nur noch rund 157 kcal pro 100g, da sie beim Kochen Wasser aufnimmt."
+      "answer": "Rohe Penne hat ca. 371 kcal pro 100g. Eine typische Portion von 80g roh entspricht etwa 297 kcal. Gekocht hat Penne nur noch rund 158 kcal pro 100g, da sie beim Kochen Wasser aufnimmt."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion gekochte Penne?",
-      "answer": "Eine gekochte Portion aus 80g roher Penne wiegt etwa 180g und liefert rund 283 kcal. Eine große Portion mit 250g gekochter Penne kommt auf etwa 392 kcal."
+      "answer": "Eine gekochte Portion aus 80g roher Penne wiegt etwa 180g und liefert rund 284 kcal. Eine große Portion mit 250g gekochter Penne kommt auf etwa 395 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Penne?",

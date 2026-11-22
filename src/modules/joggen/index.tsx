@@ -286,7 +286,7 @@ function KalorienverbrauchJoggenPage({ config }: Props) {
             </p>
             <p>
               Die Praxis zeigt das Gegenteil: Nach dem Lauf isst man mehr, oft ohne es zu merken. Ein Müsliriegel und
-              ein Glas Saft gleichen 300 kcal aus. Deshalb funktioniert Joggen zum Abnehmen dann, wenn die Zufuhr bekannt
+              ein Glas Saft gleichen rund 240 kcal aus. Deshalb funktioniert Joggen zum Abnehmen dann, wenn die Zufuhr bekannt
               ist. Wer seinen <a href="/kalorienbedarf-berechnen/">Kalorienbedarf</a> kennt und ein moderates
               <a href="/kaloriendefizit-berechnen/"> Defizit</a> hält, für den ist der Lauf ein Puffer, der das Defizit
               erträglicher macht. Wer nur läuft, hält meistens das Gewicht, was für die Gesundheit auch schon viel wert ist.

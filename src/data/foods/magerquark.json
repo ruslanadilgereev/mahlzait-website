@@ -3,230 +3,50 @@
   "name": "Magerquark",
   "emoji": "🥛",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 172181 (Cheese, cottage, nonfat, uncreamed, dry, large or small curd), Werte je 100 g",
   "seo": {
-    "title": "Magerquark Kalorien: 72 kcal/100g + Rechner | Mahlzait",
-    "description": "Magerquark hat 72 kcal pro 100g und 10g Protein. Berechne Kalorien für deinen Becher mit dem kostenlosen Rechner. Inkl. Varianten & Fitness-Tipps.",
-    "keywords": [
-      "magerquark kalorien",
-      "kalorien magerquark",
-      "magerquark protein",
-      "magerquark nährwerte",
-      "magerquark abnehmen",
-      "quark mager kalorien",
-      "magerquark muskelaufbau",
-      "magerquark zucker"
-    ]
+    "title": "Magerquark Kalorien: 67 kcal/100g + Rechner | Mahlzait",
+    "description": "Magerquark hat 67 kcal pro 100g und 12g Protein. Berechne Kalorien für deinen Becher mit dem kostenlosen Rechner. Inkl. Varianten & Fitness-Tipps.",
+    "keywords": ["magerquark kalorien", "kalorien magerquark", "magerquark protein", "magerquark nährwerte", "magerquark abnehmen", "quark mager kalorien", "magerquark muskelaufbau", "magerquark zucker"]
   },
   "overview": {
-    "calories_per_100g": 72,
-    "protein_per_100g": 10.3,
-    "carbs_per_100g": 6.7,
+    "calories_per_100g": 67,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 4,
     "fat_per_100g": 0.3,
     "fiber_per_100g": 0,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Becher"
   },
   "variants": [
-    {
-      "name": "Magerquark pur (250g Becher)",
-      "portion_g": 250,
-      "calories": 180,
-      "protein": 25.8,
-      "carbs": 16.8,
-      "fat": 0.8
-    },
-    {
-      "name": "Magerquark (500g Becher)",
-      "portion_g": 500,
-      "calories": 360,
-      "protein": 51.5,
-      "carbs": 33.5,
-      "fat": 1.5
-    },
-    {
-      "name": "Magerquark mit Beeren (250g + 50g Heidelbeeren)",
-      "portion_g": 300,
-      "calories": 209,
-      "protein": 26.1,
-      "carbs": 24,
-      "fat": 0.9,
-      "tip": "Klassiker für Fitness",
-      "basis": [
-        {
-          "g": 250
-        },
-        {
-          "fdcId": 171711,
-          "g": 50
-        }
-      ]
-    },
-    {
-      "name": "Magerquark + Honig (250g + 1 EL, 21g)",
-      "portion_g": 271,
-      "calories": 244,
-      "protein": 25.8,
-      "carbs": 34,
-      "fat": 0.8,
-      "basis": [
-        {
-          "g": 250
-        },
-        {
-          "slug": "honig",
-          "g": 21
-        }
-      ]
-    },
-    {
-      "name": "Magerquark + Whey (250g + 30g)",
-      "portion_g": 280,
-      "calories": 286,
-      "protein": 49.2,
-      "carbs": 18.6,
-      "fat": 1.2,
-      "tip": "Post-Workout-Bombe",
-      "basis": [
-        {
-          "g": 250
-        },
-        {
-          "slug": "proteinpulver",
-          "g": 30
-        }
-      ]
-    },
-    {
-      "name": "Magerquark mit Mineralwasser cremig (250g)",
-      "portion_g": 250,
-      "calories": 180,
-      "protein": 25.8,
-      "carbs": 16.8,
-      "fat": 0.8,
-      "tip": "Cremig wie Sahnejoghurt, ohne extra kcal"
-    },
-    {
-      "name": "Magerquark als Dip (100g + Kräuter)",
-      "portion_g": 100,
-      "calories": 72,
-      "protein": 10.3,
-      "carbs": 6.7,
-      "fat": 0.3
-    },
-    {
-      "name": "Magerquark als Sahne-Ersatz (100g)",
-      "portion_g": 100,
-      "calories": 72,
-      "protein": 10.3,
-      "carbs": 6.7,
-      "fat": 0.3,
-      "tip": "Spart rund 220 kcal gegenüber 100g Sahne"
-    }
+    { "name": "Magerquark pur (250g Becher)", "portion_g": 250, "calories": 168, "protein": 30, "carbs": 10, "fat": 1, "tip": "Bestes Protein-Kalorien-Verhältnis" },
+    { "name": "Magerquark (500g Becher)", "portion_g": 500, "calories": 335, "protein": 60, "carbs": 20, "fat": 2 },
+    { "name": "Magerquark mit Beeren (300g)", "portion_g": 300, "calories": 230, "protein": 30, "carbs": 22, "fat": 1, "tip": "Klassiker für Fitness" },
+    { "name": "Magerquark + Honig (250g + 1 EL)", "portion_g": 270, "calories": 230, "protein": 30, "carbs": 27, "fat": 1 },
+    { "name": "Magerquark + Whey (250g + 30g)", "portion_g": 280, "calories": 285, "protein": 55, "carbs": 13, "fat": 2, "tip": "Post-Workout-Bombe" },
+    { "name": "Magerquark mit Mineralwasser cremig (250g)", "portion_g": 250, "calories": 168, "protein": 30, "carbs": 10, "fat": 1, "tip": "Cremig wie Sahnejoghurt, ohne extra kcal" },
+    { "name": "Magerquark als Dip (100g + Kräuter)", "portion_g": 100, "calories": 70, "protein": 12, "carbs": 4, "fat": 0.3 },
+    { "name": "Magerquark als Sahne-Ersatz (100g)", "portion_g": 100, "calories": 67, "protein": 12, "carbs": 4, "fat": 0.3, "tip": "Spart 250 kcal pro Sauce" }
   ],
   "comparison": [
-    {
-      "name": "Skyr (100g)",
-      "calories": 59,
-      "emoji": "🥛",
-      "basis": [
-        {
-          "slug": "skyr",
-          "g": 100
-        }
-      ]
-    },
-    {
-      "name": "Griechischer Joghurt (100g)",
-      "calories": 97,
-      "emoji": "🥛",
-      "basis": [
-        {
-          "fdcId": 171304,
-          "g": 100
-        }
-      ]
-    },
-    {
-      "name": "Joghurt 1,5% (100g)",
-      "calories": 63,
-      "emoji": "🥛",
-      "basis": [
-        {
-          "fdcId": 170886,
-          "g": 100
-        }
-      ]
-    },
-    {
-      "name": "Sahne (100g)",
-      "calories": 292,
-      "emoji": "🥛",
-      "basis": [
-        {
-          "slug": "sahne",
-          "g": 100
-        }
-      ]
-    }
+    { "name": "Quark 20% Fett", "calories": 113, "emoji": "🥛" },
+    { "name": "Skyr", "calories": 65, "emoji": "🥛" },
+    { "name": "Griechischer Joghurt", "calories": 130, "emoji": "🥛" },
+    { "name": "Joghurt (1,5%)", "calories": 47, "emoji": "🥛" }
   ],
   "tips": [
-    {
-      "title": "Bestes Protein-Kalorien-Verhältnis",
-      "text": "Magerquark liefert rund 10g Protein pro 100g bei nur 72 kcal und gehört damit zu den effizientesten Milchprodukten für Muskelaufbau und Sättigung im Defizit.",
-      "icon": "💪"
-    },
-    {
-      "title": "Cremig ohne extra Kalorien",
-      "text": "Magerquark mit etwas Mineralwasser (mit Kohlensäure) verrühren: Er wird so cremig wie Sahnejoghurt, ohne Kalorienzunahme.",
-      "icon": "💧"
-    },
-    {
-      "title": "Abend-Snack für Muskeln",
-      "text": "Magerquark vor dem Schlafen liefert Casein, ein langsam verdauliches Protein, das über Nacht die Muskelregeneration unterstützt.",
-      "icon": "🌙"
-    },
-    {
-      "title": "Sahne-Ersatz spart Kalorien",
-      "text": "Magerquark statt Sahne in Saucen oder Aufläufen spart rund 220 kcal je 100g und liefert extra Protein.",
-      "icon": "🍳"
-    },
-    {
-      "title": "Fruchtquark selbst mischen",
-      "text": "Fertiger Fruchtquark enthält oft viel zugesetzten Zucker. Selbst mit frischem Obst gemischt sparst du Zucker und Kalorien und bekommst mehr Protein.",
-      "icon": "🍓"
-    }
+    { "title": "Bestes Protein-Kalorien-Verhältnis", "text": "Magerquark liefert 12g Protein pro 100g bei nur 67 kcal, kein anderes Milchprodukt ist so effizient für Muskelaufbau und Sättigung im Defizit.", "icon": "💪" },
+    { "title": "Cremig ohne extra Kalorien", "text": "Magerquark mit etwas Mineralwasser (mit Kohlensäure) verrühren, wird so cremig wie Sahnejoghurt, ohne Kalorienzunahme.", "icon": "💧" },
+    { "title": "Abend-Snack für Muskeln", "text": "Magerquark vor dem Schlafen liefert Casein, ein langsam verdauliches Protein, das über Nacht die Muskelregeneration unterstützt.", "icon": "🌙" },
+    { "title": "Sahne-Ersatz spart Kalorien", "text": "Magerquark statt Sahne in Saucen oder Aufläufen spart 250+ kcal pro Portion und liefert extra Protein.", "icon": "🍳" },
+    { "title": "Fruchtquark selbst mischen", "text": "Fertiger Fruchtquark hat oft 16g Zucker/100g. Selbst mit frischem Obst gemischt: 50+ kcal weniger und mehr Protein.", "icon": "🍓" }
   ],
   "faq": [
-    {
-      "question": "Wie viele Kalorien hat Magerquark?",
-      "answer": "Magerquark hat 72 kcal pro 100g, also 180 kcal pro Becher (250g). Das ist etwas mehr als Skyr (59 kcal/100g), aber deutlich weniger als griechischer Joghurt (97 kcal/100g)."
-    },
-    {
-      "question": "Wie viel Protein hat Magerquark?",
-      "answer": "Rund 10g Protein pro 100g, ein Becher (250g) liefert rund 26g hochwertiges Protein mit allen essentiellen Aminosäuren. Damit ist Magerquark eine der günstigsten und besten Eiweißquellen überhaupt."
-    },
-    {
-      "question": "Ist Magerquark gut zum Abnehmen?",
-      "answer": "Sehr gut. 180 kcal pro Becher mit 26g Protein sättigen lange und schützen die Muskelmasse beim Kaloriendefizit. Der hohe Wasseranteil füllt zusätzlich den Magen."
-    },
-    {
-      "question": "Magerquark oder Skyr: Was ist besser?",
-      "answer": "Beide sind exzellent: Magerquark hat rund 10g Protein/100g bei 72 kcal, Skyr ebenfalls rund 10g bei 59 kcal. Magerquark ist günstiger, Skyr cremiger. Geschmackssache."
-    },
-    {
-      "question": "Wie kann man Magerquark schmackhafter machen?",
-      "answer": "Mit Mineralwasser cremig rühren, frisches Obst, Zimt, Vanilleextrakt, Honig oder Erythrit dazu. Herzhaft: mit Kräutern, Salz, Senf und Paprika als Dip."
-    },
-    {
-      "question": "Wie viel Magerquark pro Tag ist okay?",
-      "answer": "1-2 Becher (250-500g) pro Tag sind unproblematisch. Bei mehr als 500g/Tag und Niereninsuffizienz Vorsicht wegen der Eiweißlast, ansonsten gibt es keine relevante Obergrenze."
-    }
+    { "question": "Wie viele Kalorien hat Magerquark?", "answer": "Magerquark hat 67 kcal pro 100g, also 168 kcal pro Becher (250g). Das ist deutlich weniger als Quark 20% Fett (113 kcal/100g) oder Quark 40% Fett (146 kcal/100g)." },
+    { "question": "Wie viel Protein hat Magerquark?", "answer": "12g Protein pro 100g, ein Becher (250g) liefert 30g hochwertiges Protein mit allen essentiellen Aminosäuren. Damit ist Magerquark eine der günstigsten und besten Eiweißquellen überhaupt." },
+    { "question": "Ist Magerquark gut zum Abnehmen?", "answer": "Sehr gut. 168 kcal pro Becher mit 30g Protein sättigen lange und schützen die Muskelmasse beim Kaloriendefizit. Der hohe Wasseranteil füllt zusätzlich den Magen." },
+    { "question": "Magerquark oder Skyr, was ist besser?", "answer": "Beide sind exzellent: Magerquark hat 12g Protein/100g bei 67 kcal, Skyr 11g bei 65 kcal. Magerquark ist günstiger, Skyr cremiger. Geschmackssache." },
+    { "question": "Wie kann man Magerquark schmackhafter machen?", "answer": "Mit Mineralwasser cremig rühren, frisches Obst, Zimt, Vanilleextrakt, Honig oder Erythrit dazu. Herzhaft: mit Kräutern, Salz, Senf und Paprika als Dip." },
+    { "question": "Wie viel Magerquark pro Tag ist okay?", "answer": "1-2 Becher (250-500g) pro Tag sind unproblematisch. Bei mehr als 500g/Tag und Niereninsuffizienz Vorsicht wegen der Eiweißlast, ansonsten gibt es keine relevante Obergrenze." }
   ],
-  "related_foods": [
-    "quark",
-    "skyr",
-    "joghurt",
-    "haferflocken"
-  ]
+  "related_foods": ["quark", "skyr", "joghurt", "haferflocken"]
 }

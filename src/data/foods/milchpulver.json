@@ -66,7 +66,13 @@
       "protein": 36,
       "carbs": 52,
       "fat": 1,
-      "tip": "Fast fettfrei, mehr Protein"
+      "tip": "Fast fettfrei, mehr Protein",
+      "basis": [
+        {
+          "fdcId": 170877,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "1 EL Magermilchpulver (12g)",
@@ -74,38 +80,60 @@
       "calories": 43,
       "protein": 4,
       "carbs": 6,
-      "fat": 0
-    },
-    {
-      "name": "Babymilchpulver-Portion (13g)",
-      "portion_g": 13,
-      "calories": 67,
-      "protein": 1,
-      "carbs": 7,
-      "fat": 4,
-      "tip": "Wert je nach Hersteller"
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 170877,
+          "g": 12
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Milch (200ml)",
-      "calories": 130,
-      "emoji": "🥛"
+      "calories": 126,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch",
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
       "name": "Kondensmilch (100g)",
-      "calories": 135,
-      "emoji": "🥫"
+      "calories": 134,
+      "emoji": "🥫",
+      "basis": [
+        {
+          "slug": "kondensmilch",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kaffeeweißer (100g)",
-      "calories": 540,
-      "emoji": "☕"
+      "calories": 529,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffeeweisser",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Proteinpulver (100g)",
-      "calories": 375,
-      "emoji": "💪"
+      "calories": 352,
+      "emoji": "💪",
+      "basis": [
+        {
+          "slug": "proteinpulver",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

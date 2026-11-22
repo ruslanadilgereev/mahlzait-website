@@ -3,10 +3,10 @@
   "name": "Jim Beam",
   "emoji": "🥃",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 2710700 (Whiskey: 231 kcal), Werte je 100 g; je 100 ml mit 0,947 g/ml (FDC-Portion 1 fl oz = 28,0 g) 219 kcal; allgemeiner FDC-Eintrag, FDC führt Jim Beam nicht",
+  "source": "USDA FoodData Central, FDC-ID 2710700 (Whiskey: 231 kcal), Werte je 100 g; je 100 ml mit 0,947 g/ml 219 kcal",
   "seo": {
     "title": "Jim Beam Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Jim Beam? Ein Schnapsglas (4cl) hat ca. 90 kcal. Nährwerte pro 100ml & je Glas, Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Jim Beam? Ein Schnapsglas (4cl) hat ca. 88 kcal. Nährwerte pro 100ml & je Glas, Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "jim beam kalorien",
       "jim beam whiskey kalorien",
@@ -18,27 +18,27 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 225,
+    "calories_per_100g": 231,
     "protein_per_100g": 0,
     "carbs_per_100g": 0,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 40,
+    "typical_portion_g": 38,
     "typical_portion_name": "1 Schnapsglas (4cl)"
   },
   "variants": [
     {
       "name": "Kleines Glas (2cl)",
-      "portion_g": 20,
-      "calories": 45,
+      "portion_g": 19,
+      "calories": 44,
       "protein": 0,
       "carbs": 0,
       "fat": 0
     },
     {
       "name": "1 Schnapsglas (4cl)",
-      "portion_g": 40,
-      "calories": 90,
+      "portion_g": 38,
+      "calories": 88,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
@@ -46,41 +46,43 @@
     },
     {
       "name": "Doppelter (6cl)",
-      "portion_g": 60,
-      "calories": 135,
+      "portion_g": 57,
+      "calories": 132,
       "protein": 0,
       "carbs": 0,
       "fat": 0
     },
     {
       "name": "Jim Beam & Cola (4cl + 0,2l Cola)",
-      "portion_g": 240,
-      "calories": 174,
+      "portion_g": 248,
+      "calories": 176,
       "protein": 0,
-      "carbs": 21,
-      "fat": 0,
-      "tip": "Cola liefert den Großteil der Kohlenhydrate"
-    },
-    {
-      "name": "Jim Beam Cola (Dose 0,33l, Fertigmix)",
-      "portion_g": 330,
-      "calories": 175,
-      "protein": 0,
-      "carbs": 23,
-      "fat": 0
+      "carbs": 22,
+      "fat": 1,
+      "tip": "Cola liefert den Großteil der Kohlenhydrate",
+      "basis": [
+        {
+          "ml": 40,
+          "g": 38
+        },
+        {
+          "slug": "cola",
+          "g": 210
+        }
+      ]
     },
     {
       "name": "Glas (0,2l) pur",
-      "portion_g": 200,
-      "calories": 450,
+      "portion_g": 189,
+      "calories": 437,
       "protein": 0,
       "carbs": 0,
       "fat": 0
     },
     {
       "name": "Flasche (0,7l)",
-      "portion_g": 700,
-      "calories": 1575,
+      "portion_g": 663,
+      "calories": 1532,
       "protein": 0,
       "carbs": 0,
       "fat": 0
@@ -89,34 +91,44 @@
   "comparison": [
     {
       "name": "Wodka (4cl)",
-      "calories": 92,
-      "emoji": "🍸"
+      "calories": 88,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "wodka"
+        }
+      ]
     },
     {
       "name": "Bier (0,5l)",
-      "calories": 210,
-      "emoji": "🍺"
+      "calories": 218,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier"
+        }
+      ]
     },
     {
       "name": "Rotwein (0,2l)",
       "calories": 170,
-      "emoji": "🍷"
-    },
-    {
-      "name": "Aperol Spritz (0,2l)",
-      "calories": 175,
-      "emoji": "🍹"
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-rot"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorien kommen aus dem Alkohol",
-      "text": "Jim Beam enthält weder Fett, Eiweiß noch Kohlenhydrate. Die rund 225 kcal pro 100ml stammen allein aus dem Alkohol (40% Vol.), der etwa 7 kcal pro Gramm liefert.",
+      "text": "Jim Beam enthält weder Fett, Eiweiß noch Kohlenhydrate. Die rund 219 kcal pro 100ml stammen allein aus dem Alkohol (40% Vol.), der etwa 7 kcal pro Gramm liefert.",
       "icon": "🥃"
     },
     {
       "title": "Der Mixer macht den Unterschied",
-      "text": "Pur hat ein Schnapsglas (4cl) nur ca. 90 kcal. Mit 0,2l Cola kommen rund 84 kcal dazu. Mit Cola Zero oder Soda sparst du diese zusätzlichen Kalorien fast komplett.",
+      "text": "Pur hat ein Schnapsglas (4cl) nur ca. 88 kcal. Mit 0,2l Cola kommen rund 88 kcal dazu. Mit Cola Zero oder Soda sparst du diese zusätzlichen Kalorien fast komplett.",
       "icon": "🥤"
     },
     {
@@ -126,31 +138,31 @@
     },
     {
       "title": "Pur oder on the rocks",
-      "text": "Wer auf Kalorien achtet, trinkt Jim Beam pur oder auf Eis. So bleibst du bei rund 90 kcal pro Glas, ohne zuckerhaltige Softdrinks.",
+      "text": "Wer auf Kalorien achtet, trinkt Jim Beam pur oder auf Eis. So bleibst du bei rund 88 kcal pro Glas, ohne zuckerhaltige Softdrinks.",
       "icon": "🧊"
     },
     {
       "title": "Menge im Blick behalten",
-      "text": "Ein doppelter Jim Beam (6cl) liefert bereits 135 kcal. Über einen Abend summieren sich mehrere Gläser schnell zu mehreren Hundert Kalorien.",
+      "text": "Ein doppelter Jim Beam (6cl) liefert bereits 132 kcal. Über einen Abend summieren sich mehrere Gläser schnell zu mehreren Hundert Kalorien.",
       "icon": "📊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Jim Beam?",
-      "answer": "Jim Beam Bourbon Whiskey hat etwa 225 kcal pro 100ml. Ein Schnapsglas (4cl) kommt damit auf rund 90 kcal."
+      "answer": "Jim Beam Bourbon Whiskey hat etwa 219 kcal pro 100ml (USDA-Wert für Whiskey mit 40 % Vol.). Ein Schnapsglas (4cl) kommt damit auf rund 88 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Schnapsglas Jim Beam?",
-      "answer": "Ein Schnapsglas mit 4cl Jim Beam hat ca. 90 kcal. Ein doppelter (6cl) liegt bei etwa 135 kcal."
+      "answer": "Ein Schnapsglas mit 4cl Jim Beam hat ca. 88 kcal. Ein doppelter (6cl) liegt bei etwa 132 kcal."
     },
     {
       "question": "Hat Jim Beam Kohlenhydrate oder Zucker?",
-      "answer": "Reiner Jim Beam Bourbon enthält praktisch keine Kohlenhydrate und keinen Zucker. Kohlenhydrate kommen erst durch Mixer wie Cola hinzu (0,2l Cola ca. 21g)."
+      "answer": "Reiner Jim Beam Bourbon enthält praktisch keine Kohlenhydrate und keinen Zucker. Kohlenhydrate kommen erst durch Mixer wie Cola hinzu (0,2l Cola ca. 22g)."
     },
     {
       "question": "Wie viele Kalorien hat Jim Beam mit Cola?",
-      "answer": "Ein Longdrink aus 4cl Jim Beam und 0,2l Cola hat rund 174 kcal. Mit Cola Zero sinkt der Wert auf etwa 90 kcal, da der Zucker entfällt."
+      "answer": "Ein Longdrink aus 4cl Jim Beam und 0,2l Cola hat rund 176 kcal. Mit Cola Zero sinkt der Wert auf etwa 88 kcal, da der Zucker entfällt."
     },
     {
       "question": "Hat Jim Beam Eiweiß oder Fett?",
@@ -158,7 +170,7 @@
     },
     {
       "question": "Ist Jim Beam beim Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Jim Beam liefert mit 225 kcal pro 100ml relativ viele leere Kalorien und bremst die Fettverbrennung. Wer abnehmen will, trinkt ihn besser selten und pur statt mit zuckerhaltigem Mixer."
+      "answer": "Nur in Maßen. Jim Beam liefert mit 219 kcal pro 100ml relativ viele leere Kalorien und bremst die Fettverbrennung. Wer abnehmen will, trinkt ihn besser selten und pur statt mit zuckerhaltigem Mixer."
     }
   ],
   "related_foods": [

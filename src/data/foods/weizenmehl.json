@@ -20,7 +20,7 @@
   "overview": {
     "calories_per_100g": 364,
     "protein_per_100g": 10.3,
-    "carbs_per_100g": 76,
+    "carbs_per_100g": 76.3,
     "fat_per_100g": 1,
     "fiber_per_100g": 2.7,
     "typical_portion_g": 30,
@@ -50,7 +50,7 @@
       "portion_g": 120,
       "calories": 437,
       "protein": 12,
-      "carbs": 91,
+      "carbs": 92,
       "fat": 1
     },
     {
@@ -66,7 +66,7 @@
       "portion_g": 250,
       "calories": 910,
       "protein": 26,
-      "carbs": 190,
+      "carbs": 191,
       "fat": 3
     },
     {
@@ -74,7 +74,7 @@
       "portion_g": 1000,
       "calories": 3640,
       "protein": 103,
-      "carbs": 760,
+      "carbs": 763,
       "fat": 10,
       "tip": "Übliche Supermarkt-Tüte"
     }
@@ -82,23 +82,47 @@
   "comparison": [
     {
       "name": "Haferflocken (100g)",
-      "calories": 372,
-      "emoji": "🥣"
+      "calories": 379,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Reis roh (100g)",
-      "calories": 360,
-      "emoji": "🍚"
+      "calories": 365,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Zucker (100g)",
       "calories": 387,
-      "emoji": "🧂"
+      "emoji": "🧂",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Nudeln roh (100g)",
-      "calories": 360,
-      "emoji": "🍝"
+      "calories": 371,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "fdcId": 168927,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

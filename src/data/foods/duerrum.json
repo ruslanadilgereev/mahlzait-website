@@ -18,34 +18,170 @@
     "typical_portion_name": "1 Dürüm"
   },
   "variants": [
-    {"name": "Dürüm Döner (Kalb/Rind)", "portion_g": 347, "calories": 724, "protein": 46, "carbs": 62, "fat": 31, "tip": "Klassischer Dürüm"},
-    {"name": "Dürüm Hähnchen", "portion_g": 347, "calories": 632, "protein": 44, "carbs": 62, "fat": 22, "tip": "Leichtere Variante"},
-    {"name": "Dürüm Lamm", "portion_g": 347, "calories": 767, "protein": 44, "carbs": 62, "fat": 37},
-    {"name": "Dürüm Falafel", "portion_g": 302, "calories": 683, "protein": 23, "carbs": 89, "fat": 26, "tip": "Vegetarische Option"},
-    {"name": "Dürüm mit Käse", "portion_g": 377, "calories": 831, "protein": 53, "carbs": 63, "fat": 40},
-    {"name": "Dürüm mit Knoblauchsoße", "portion_g": 347, "calories": 804, "protein": 45, "carbs": 62, "fat": 40, "tip": "Statt Joghurtsoße"},
-    {"name": "Dürüm XL (Portionsgröße 150 %)", "portion_g": 506, "calories": 1073, "protein": 68, "carbs": 93, "fat": 46, "tip": "Mehr Fleisch und Fladen"}
+    {
+      "name": "Dürüm Döner (Kalb/Rind)",
+      "portion_g": 347,
+      "calories": 724,
+      "protein": 46,
+      "carbs": 62,
+      "fat": 31,
+      "tip": "Klassischer Dürüm"
+    },
+    {
+      "name": "Dürüm Hähnchen",
+      "portion_g": 347,
+      "calories": 632,
+      "protein": 44,
+      "carbs": 62,
+      "fat": 22,
+      "tip": "Leichtere Variante"
+    },
+    {
+      "name": "Dürüm Lamm",
+      "portion_g": 347,
+      "calories": 767,
+      "protein": 44,
+      "carbs": 62,
+      "fat": 37
+    },
+    {
+      "name": "Dürüm Falafel",
+      "portion_g": 302,
+      "calories": 683,
+      "protein": 23,
+      "carbs": 89,
+      "fat": 26,
+      "tip": "Vegetarische Option"
+    },
+    {
+      "name": "Dürüm mit Käse",
+      "portion_g": 377,
+      "calories": 831,
+      "protein": 53,
+      "carbs": 63,
+      "fat": 40
+    },
+    {
+      "name": "Dürüm mit Knoblauchsoße",
+      "portion_g": 347,
+      "calories": 804,
+      "protein": 45,
+      "carbs": 62,
+      "fat": 40,
+      "tip": "Statt Joghurtsoße"
+    },
+    {
+      "name": "Dürüm XL (Portionsgröße 150 %)",
+      "portion_g": 506,
+      "calories": 1073,
+      "protein": 68,
+      "carbs": 93,
+      "fat": 46,
+      "tip": "Mehr Fleisch und Fladen"
+    }
   ],
   "comparison": [
-    {"name": "Döner Kebab (im Brot)", "calories": 696, "emoji": "🥙"},
-    {"name": "Lahmacun mit Salat", "calories": 361, "emoji": "🫓"},
-    {"name": "Wrap mit Hähnchen", "calories": 450, "emoji": "🌯"},
-    {"name": "Burrito", "calories": 650, "emoji": "🌯"}
+    {
+      "name": "Döner Kebab (im Brot)",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Lahmacun mit Salat",
+      "calories": 361,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "lahmacun",
+          "variante": "Lahmacun mit Salat"
+        }
+      ]
+    },
+    {
+      "name": "Wrap mit Hähnchen",
+      "calories": 406,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "chicken-wrap",
+          "variante": "Chicken Wrap gegrillt"
+        }
+      ]
+    },
+    {
+      "name": "Burrito",
+      "calories": 876,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "burrito"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Hähnchen statt Kalb", "text": "Ein Hähnchen-Dürüm hat 92 kcal weniger als die Variante mit Kalb- oder Rindfleisch (632 statt 724 kcal).", "icon": "🍗"},
-    {"title": "Weniger Sauce bestellen", "text": "Knoblauch- und Cocktailsoße zusammen fügen 221 kcal hinzu (je 30 g). Joghurtsoße hat 27 kcal, eine Soße reicht oft aus.", "icon": "🥫"},
-    {"title": "Dürüm vs. Döner im Brot", "text": "Ein Dürüm hat 28 kcal mehr als ein Döner im Brot, weil der Yufka-Fladen (117 g, 358 kcal) etwas mehr Kalorien hat als 120 g Fladenbrot (330 kcal).", "icon": "📊"},
-    {"title": "Viel Salat verlangen", "text": "Mehr Salat, Tomaten und Zwiebeln im Dürüm füllen fast ohne Kalorien: 100 g Salat haben 20 kcal.", "icon": "🥗"},
-    {"title": "Falafel-Variante testen", "text": "Ein Falafel-Dürüm hat 683 kcal, 41 kcal weniger als mit Kalb- oder Rindfleisch, aber nur 23 g Eiweiß statt 46 g.", "icon": "🌿"}
+    {
+      "title": "Hähnchen statt Kalb",
+      "text": "Ein Hähnchen-Dürüm hat 92 kcal weniger als die Variante mit Kalb- oder Rindfleisch (632 statt 724 kcal).",
+      "icon": "🍗"
+    },
+    {
+      "title": "Weniger Sauce bestellen",
+      "text": "Knoblauch- und Cocktailsoße zusammen fügen 221 kcal hinzu (je 30 g). Joghurtsoße hat 27 kcal, eine Soße reicht oft aus.",
+      "icon": "🥫"
+    },
+    {
+      "title": "Dürüm vs. Döner im Brot",
+      "text": "Ein Dürüm hat 28 kcal mehr als ein Döner im Brot, weil der Yufka-Fladen (117 g, 358 kcal) etwas mehr Kalorien hat als 120 g Fladenbrot (330 kcal).",
+      "icon": "📊"
+    },
+    {
+      "title": "Viel Salat verlangen",
+      "text": "Mehr Salat, Tomaten und Zwiebeln im Dürüm füllen fast ohne Kalorien: 100 g Salat haben 20 kcal.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Falafel-Variante testen",
+      "text": "Ein Falafel-Dürüm hat 683 kcal, 41 kcal weniger als mit Kalb- oder Rindfleisch, aber nur 23 g Eiweiß statt 46 g.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Dürüm?", "answer": "Ein klassischer Dürüm Döner mit Kalb- oder Rindfleisch hat 724 kcal (347 g). Hähnchen: 632 kcal, Lamm: 767 kcal, Falafel: 683 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten."},
-    {"question": "Was hat mehr Kalorien: Dürüm oder Döner?", "answer": "Ein Dürüm (724 kcal) hat 28 kcal mehr als ein Döner im Brot (696 kcal). Der Unterschied liegt am Yufka-Fladen (117 g, 358 kcal) gegenüber 120 g Fladenbrot (330 kcal)."},
-    {"question": "Ist ein Dürüm gesund?", "answer": "Ein Dürüm liefert 46 g Eiweiß, frisches Gemüse und Salat. Kalorientechnisch ist es eine volle Mahlzeit. Die Hähnchen-Variante hat mit 22 g Fett statt 31 g das beste Verhältnis."},
-    {"question": "Wie viel Protein hat ein Dürüm?", "answer": "Ein Dürüm liefert 23 bis 68 g Eiweiß, je nach Füllung und Größe. Mit Kalb- oder Rindfleisch sind es 46 g, mit Hähnchen 44 g."},
-    {"question": "Was ist der Unterschied zwischen Dürüm und Wrap?", "answer": "Dürüm wird mit dünner Yufka-Flade gemacht und mit Dönerfleisch gefüllt. Ein Wrap verwendet eine Weizen-Tortilla und hat vielfältigere Füllungen."},
-    {"question": "Welcher Dürüm hat am wenigsten Kalorien?", "answer": "Der Hähnchen-Dürüm mit 632 kcal ist am leichtesten. Der Falafel-Dürüm hat 683 kcal, der Dürüm mit Kalb- oder Rindfleisch 724 kcal."}
+    {
+      "question": "Wie viele Kalorien hat ein Dürüm?",
+      "answer": "Ein klassischer Dürüm Döner mit Kalb- oder Rindfleisch hat 724 kcal (347 g). Hähnchen: 632 kcal, Lamm: 767 kcal, Falafel: 683 kcal. Gerechnet aus USDA-Nährwerten der einzelnen Zutaten."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Dürüm oder Döner?",
+      "answer": "Ein Dürüm (724 kcal) hat 28 kcal mehr als ein Döner im Brot (696 kcal). Der Unterschied liegt am Yufka-Fladen (117 g, 358 kcal) gegenüber 120 g Fladenbrot (330 kcal)."
+    },
+    {
+      "question": "Ist ein Dürüm gesund?",
+      "answer": "Ein Dürüm liefert 46 g Eiweiß, frisches Gemüse und Salat. Kalorientechnisch ist es eine volle Mahlzeit. Die Hähnchen-Variante hat mit 22 g Fett statt 31 g das beste Verhältnis."
+    },
+    {
+      "question": "Wie viel Protein hat ein Dürüm?",
+      "answer": "Ein Dürüm liefert 23 bis 68 g Eiweiß, je nach Füllung und Größe. Mit Kalb- oder Rindfleisch sind es 46 g, mit Hähnchen 44 g."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Dürüm und Wrap?",
+      "answer": "Dürüm wird mit dünner Yufka-Flade gemacht und mit Dönerfleisch gefüllt. Ein Wrap verwendet eine Weizen-Tortilla und hat vielfältigere Füllungen."
+    },
+    {
+      "question": "Welcher Dürüm hat am wenigsten Kalorien?",
+      "answer": "Der Hähnchen-Dürüm mit 632 kcal ist am leichtesten. Der Falafel-Dürüm hat 683 kcal, der Dürüm mit Kalb- oder Rindfleisch 724 kcal."
+    }
   ],
-  "related_foods": ["doener-box", "lahmacun", "wrap", "falafel"]
+  "related_foods": [
+    "doener-box",
+    "lahmacun",
+    "wrap",
+    "falafel"
+  ]
 }

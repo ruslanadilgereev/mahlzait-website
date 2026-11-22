@@ -26,7 +26,7 @@ Auf den ersten Blick klingt das beunruhigend. Tatsächlich ist dieser Anstieg je
 
 Besonders aussagekräftig ist eine einjährige Crossover-Studie von Antonio und Kollegen (2016). Krafttrainierte Männer aßen über sechs Monate ihre gewohnte Kost und über sechs Monate eine sehr proteinreiche Ernährung mit im Schnitt **3,3 g Protein pro Kilogramm Körpergewicht** – ein Vielfaches der Standardempfehlung. Trotz dieser hohen Dosis zeigten sich **keine schädlichen Effekte** auf Nieren- und Leberwerte oder Blutfette.
 
-Das ist eine Menge, die kaum jemand im Alltag erreicht. Wer 80 kg wiegt, müsste dafür rund 260 g Protein täglich essen – das entspricht etwa einem Kilogramm Hähnchenbrust. Selbst bei dieser extremen Zufuhr blieb die Nierenfunktion unauffällig.
+Das ist eine Menge, die kaum jemand im Alltag erreicht. Wer 80 kg wiegt, müsste dafür rund 260 g Protein täglich essen, das entspricht etwa 840 g Hähnchenbrust. Selbst bei dieser extremen Zufuhr blieb die Nierenfunktion unauffällig.
 
 ## Wann Eiweiß-Restriktion wirklich nötig ist
 

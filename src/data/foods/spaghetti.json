@@ -21,7 +21,7 @@
   "overview": {
     "calories_per_100g": 158,
     "protein_per_100g": 5.8,
-    "carbs_per_100g": 31,
+    "carbs_per_100g": 30.9,
     "fat_per_100g": 0.9,
     "fiber_per_100g": 1.8,
     "typical_portion_g": 200,
@@ -33,9 +33,15 @@
       "portion_g": 70,
       "calories": 260,
       "protein": 9,
-      "carbs": 53,
+      "carbs": 52,
       "fat": 1,
-      "tip": "Trockengewicht für 1 Portion"
+      "tip": "Trockengewicht für 1 Portion",
+      "basis": [
+        {
+          "fdcId": 169736,
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Spaghetti roh (100g)",
@@ -43,7 +49,13 @@
       "calories": 371,
       "protein": 13,
       "carbs": 75,
-      "fat": 2
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 169736,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Spaghetti gekocht (100g)",
@@ -58,7 +70,7 @@
       "portion_g": 150,
       "calories": 237,
       "protein": 9,
-      "carbs": 47,
+      "carbs": 46,
       "fat": 1
     },
     {
@@ -75,7 +87,7 @@
       "portion_g": 250,
       "calories": 395,
       "protein": 15,
-      "carbs": 78,
+      "carbs": 77,
       "fat": 2
     },
     {
@@ -91,28 +103,52 @@
     {
       "name": "Penne gekocht (200g)",
       "calories": 316,
-      "emoji": "🍝"
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "nudeln",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Reis gekocht (200g)",
       "calories": 260,
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Kartoffeln gekocht (200g)",
-      "calories": 154,
-      "emoji": "🥔"
+      "calories": 172,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Gnocchi (200g)",
-      "calories": 348,
-      "emoji": "🥟"
+      "calories": 270,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "gnocchi",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Trocken- statt Kochgewicht beachten",
-      "text": "Spaghetti nehmen beim Kochen Wasser auf und werden etwa zweieinhalbfach schwerer. 70g rohe Spaghetti ergeben rund 180g gekocht. Wiege im Zweifel das Trockengewicht für eine genaue Angabe.",
+      "text": "Spaghetti nehmen beim Kochen Wasser auf und werden gut doppelt so schwer. 70g rohe Spaghetti ergeben rund 165g gekocht. Wiege im Zweifel das Trockengewicht für eine genaue Angabe.",
       "icon": "⚖️"
     },
     {

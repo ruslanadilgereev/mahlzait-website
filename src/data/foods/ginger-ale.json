@@ -3,10 +3,10 @@
   "name": "Ginger Ale",
   "emoji": "🥤",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 2710555 (Soft drink, ginger ale), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 2710555 (Soft drink, ginger ale: 34 kcal), Werte je 100 g; je 100 ml mit 1,048 g/ml 36 kcal",
   "seo": {
     "title": "Ginger Ale Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Ginger Ale? Pro 100 ml ca. 34 kcal, eine 330-ml-Dose ca. 112 kcal. Nährwerte, Zucker & die Zero-Variante im Überblick.",
+    "description": "Wie viele Kalorien hat Ginger Ale? Pro 100 ml ca. 36 kcal, eine 330-ml-Dose ca. 118 kcal. Nährwerte, Zucker & die Zero-Variante im Überblick.",
     "keywords": [
       "ginger ale kalorien",
       "ginger ale kcal",
@@ -23,92 +23,119 @@
     "carbs_per_100g": 8.8,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 330,
+    "typical_portion_g": 346,
     "typical_portion_name": "1 Dose (330 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (100 ml)",
-      "portion_g": 100,
-      "calories": 34,
+      "portion_g": 105,
+      "calories": 36,
       "protein": 0,
-      "carbs": 8.8,
+      "carbs": 9.2,
       "fat": 0
     },
     {
       "name": "Glas (200 ml)",
-      "portion_g": 200,
-      "calories": 68,
+      "portion_g": 210,
+      "calories": 71,
       "protein": 0,
-      "carbs": 17.6,
+      "carbs": 18.5,
       "fat": 0
     },
     {
       "name": "Dose (330 ml)",
-      "portion_g": 330,
-      "calories": 112,
+      "portion_g": 346,
+      "calories": 118,
       "protein": 0,
-      "carbs": 29,
+      "carbs": 30.4,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Kleine Flasche (500 ml)",
-      "portion_g": 500,
-      "calories": 170,
+      "portion_g": 524,
+      "calories": 178,
       "protein": 0,
-      "carbs": 44,
+      "carbs": 46.1,
       "fat": 0
     },
     {
       "name": "Flasche (1 Liter)",
-      "portion_g": 1000,
-      "calories": 340,
+      "portion_g": 1048,
+      "calories": 356,
       "protein": 0,
-      "carbs": 88,
+      "carbs": 92.2,
       "fat": 0
     },
     {
       "name": "Ginger Ale Zero/Light (330 ml)",
-      "portion_g": 330,
-      "calories": 3,
-      "protein": 0,
+      "portion_g": 335,
+      "calories": 0,
+      "protein": 0.3,
       "carbs": 0,
       "fat": 0,
-      "tip": "Zuckerfrei mit Süßstoff"
+      "tip": "Zuckerfrei mit Süßstoff",
+      "basis": [
+        {
+          "fdcId": 2710556,
+          "ml": 330,
+          "g": 335
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Cola",
-      "calories": 139,
-      "emoji": "🥤"
-    },
-    {
-      "name": "Fanta",
+      "name": "Cola (330 ml)",
       "calories": 145,
-      "emoji": "🍊"
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
-      "name": "Sprite",
-      "calories": 125,
-      "emoji": "🥤"
+      "name": "Fanta (330 ml)",
+      "calories": 106,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "fanta"
+        }
+      ]
     },
     {
-      "name": "Mineralwasser",
+      "name": "Sprite (330 ml)",
+      "calories": 138,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "sprite"
+        }
+      ]
+    },
+    {
+      "name": "Mineralwasser (500 ml)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Etwas leichter als Cola",
-      "text": "Ginger Ale hat mit ca. 34 kcal pro 100 ml etwas weniger Kalorien als klassische Cola (ca. 42 kcal). Eine echte Diät-Limonade ist es deshalb aber nicht.",
+      "text": "Ginger Ale hat mit ca. 36 kcal pro 100 ml etwas weniger Kalorien als klassische Cola: Eine Dose (330 ml) hat rund 118 kcal, Cola kommt auf rund 145 kcal. Eine echte Diät-Limonade ist es deshalb aber nicht.",
       "icon": "🥤"
     },
     {
       "title": "Fast nur Zucker",
-      "text": "Die Kohlenhydrate stammen praktisch vollständig aus Zucker. Eine 330-ml-Dose liefert rund 29 g Zucker, also etwa 10 Stück Würfelzucker.",
+      "text": "Die Kohlenhydrate stammen praktisch vollständig aus Zucker. Eine 330-ml-Dose liefert rund 31 g Zucker, also etwa 13 Stück Würfelzucker (je 2,3 g).",
       "icon": "🍬"
     },
     {
@@ -130,11 +157,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Ginger Ale?",
-      "answer": "Ginger Ale hat ca. 34 kcal pro 100 ml. Eine 330-ml-Dose kommt damit auf rund 112 kcal, eine 500-ml-Flasche auf etwa 170 kcal."
+      "answer": "Ginger Ale hat ca. 36 kcal pro 100 ml. Eine 330-ml-Dose kommt damit auf rund 118 kcal, eine 500-ml-Flasche auf etwa 178 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Ginger Ale?",
-      "answer": "Regular Ginger Ale enthält rund 8,8 g Zucker pro 100 ml. Eine 330-ml-Dose liefert ca. 29 g Zucker, also etwa 10 Stück Würfelzucker."
+      "answer": "Regular Ginger Ale enthält rund 9,3 g Zucker pro 100 ml. Eine 330-ml-Dose liefert ca. 31 g Zucker, also etwa 13 Stück Würfelzucker (je 2,3 g)."
     },
     {
       "question": "Hat Ginger Ale Eiweiß oder Fett?",

@@ -3,10 +3,10 @@
   "name": "Chardonnay",
   "emoji": "🍷",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 174110 (Alcoholic beverage, wine, table, white, Chardonnay), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 174110 (Alcoholic beverage, wine, table, white, Chardonnay: 84 kcal), Werte je 100 g; je 100 ml mit 0,991 g/ml 83 kcal",
   "seo": {
     "title": "Chardonnay Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Chardonnay? Ein Glas (0,1 l) hat ca. 84 kcal. Alle Nährwerte pro 100 ml & pro Glas plus Tipps zum Genießen.",
+    "description": "Wie viele Kalorien hat Chardonnay? Ein Glas (0,1 l) hat ca. 83 kcal. Alle Nährwerte pro 100 ml & pro Glas plus Tipps zum Genießen.",
     "keywords": [
       "chardonnay kalorien",
       "chardonnay kcal",
@@ -23,7 +23,7 @@
     "carbs_per_100g": 2.2,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 100,
+    "typical_portion_g": 99,
     "typical_portion_name": "1 Glas (0,1 l)"
   },
   "variants": [
@@ -31,14 +31,14 @@
       "name": "Probierschluck (50 ml)",
       "portion_g": 50,
       "calories": 42,
-      "protein": 0,
+      "protein": 0.1,
       "carbs": 1.1,
       "fat": 0
     },
     {
       "name": "Kleines Glas (0,1 l)",
-      "portion_g": 100,
-      "calories": 84,
+      "portion_g": 99,
+      "calories": 83,
       "protein": 0.1,
       "carbs": 2.2,
       "fat": 0,
@@ -46,43 +46,54 @@
     },
     {
       "name": "Restaurant-Glas (0,125 l)",
-      "portion_g": 125,
-      "calories": 105,
+      "portion_g": 124,
+      "calories": 104,
       "protein": 0.1,
-      "carbs": 2.8,
+      "carbs": 2.7,
       "fat": 0
     },
     {
       "name": "Großes Glas (0,2 l)",
-      "portion_g": 200,
-      "calories": 168,
-      "protein": 0.1,
+      "portion_g": 198,
+      "calories": 166,
+      "protein": 0.2,
       "carbs": 4.4,
       "fat": 0
     },
     {
       "name": "Weinschorle (0,2 l, halb Wasser)",
-      "portion_g": 200,
-      "calories": 84,
+      "portion_g": 199,
+      "calories": 83,
       "protein": 0.1,
       "carbs": 2.2,
       "fat": 0,
-      "tip": "Kalorienärmer dank Wasser"
+      "tip": "Kalorienärmer dank Wasser",
+      "basis": [
+        {
+          "ml": 100,
+          "g": 99
+        },
+        {
+          "fdcId": 173647,
+          "ml": 100,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Viertele (0,25 l)",
-      "portion_g": 250,
-      "calories": 210,
+      "portion_g": 248,
+      "calories": 208,
       "protein": 0.2,
       "carbs": 5.5,
       "fat": 0
     },
     {
       "name": "Flasche (0,75 l)",
-      "portion_g": 750,
-      "calories": 630,
-      "protein": 0.5,
-      "carbs": 16.5,
+      "portion_g": 743,
+      "calories": 624,
+      "protein": 0.7,
+      "carbs": 16.3,
       "fat": 0
     }
   ],
@@ -90,33 +101,59 @@
     {
       "name": "Rotwein (0,1 l)",
       "calories": 85,
-      "emoji": "🍷"
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-rot",
+          "ml": 100,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Prosecco (0,1 l)",
-      "calories": 80,
-      "emoji": "🥂"
+      "calories": 76,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "prosecco"
+        }
+      ]
     },
     {
       "name": "Bier (0,1 l)",
       "calories": 43,
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 100,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Sekt (0,1 l)",
-      "calories": 79,
-      "emoji": "🍾"
+      "calories": 76,
+      "emoji": "🍾",
+      "basis": [
+        {
+          "fdcId": 2710687,
+          "ml": 100,
+          "g": 101
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorien kommen vom Alkohol",
-      "text": "Der Großteil der 84 kcal in einem Glas Chardonnay stammt aus dem Alkohol, nicht aus Zucker. Trockene Weine wie Chardonnay enthalten nur wenig Restzucker.",
+      "text": "Der Großteil der 83 kcal in einem Glas Chardonnay stammt aus dem Alkohol, nicht aus Zucker. Trockene Weine wie Chardonnay enthalten nur wenig Restzucker.",
       "icon": "🍷"
     },
     {
       "title": "Schorle spart Kalorien",
-      "text": "Eine Weinschorle aus 0,1 l Chardonnay und 0,1 l Wasser hat nur etwa 84 kcal statt 168 kcal bei einem großen Glas puren Weins.",
+      "text": "Eine Weinschorle aus 0,1 l Chardonnay und 0,1 l Wasser hat nur etwa 83 kcal statt 166 kcal bei einem großen Glas puren Weins.",
       "icon": "💧"
     },
     {
@@ -126,7 +163,7 @@
     },
     {
       "title": "Auf die Glasgröße achten",
-      "text": "Im Restaurant werden oft 0,125 l oder 0,2 l ausgeschenkt. Ein großes Glas (0,2 l) schlägt schon mit rund 168 kcal zu Buche.",
+      "text": "Im Restaurant werden oft 0,125 l oder 0,2 l ausgeschenkt. Ein großes Glas (0,2 l) schlägt schon mit rund 166 kcal zu Buche.",
       "icon": "📏"
     },
     {
@@ -138,11 +175,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Glas Chardonnay?",
-      "answer": "Ein kleines Glas (0,1 l) Chardonnay hat etwa 84 kcal. Ein großes Glas (0,2 l) kommt auf rund 168 kcal."
+      "answer": "Ein kleines Glas (0,1 l) Chardonnay hat etwa 83 kcal. Ein großes Glas (0,2 l) kommt auf rund 166 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Chardonnay pro 100 ml?",
-      "answer": "Chardonnay hat etwa 84 kcal pro 100 ml. Der größte Teil davon stammt aus dem Alkohol."
+      "answer": "Chardonnay hat etwa 83 kcal pro 100 ml. Der größte Teil davon stammt aus dem Alkohol."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Chardonnay?",
@@ -158,7 +195,7 @@
     },
     {
       "question": "Ist Chardonnay gesünder als Rotwein?",
-      "answer": "Beide liegen kalorisch nah beieinander (Weißwein ca. 84 kcal, Rotwein ca. 85 kcal pro 100 ml). Rotwein enthält tendenziell mehr Polyphenole, der Kalorienunterschied ist jedoch gering."
+      "answer": "Beide liegen kalorisch nah beieinander (Chardonnay ca. 83 kcal, Rotwein ca. 85 kcal pro 100 ml). Rotwein enthält tendenziell mehr Polyphenole, der Kalorienunterschied ist jedoch gering."
     }
   ],
   "related_foods": [

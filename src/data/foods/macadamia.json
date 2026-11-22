@@ -48,11 +48,17 @@
     {
       "name": "Macadamia geröstet & gesalzen (28g)",
       "portion_g": 28,
-      "calories": 204,
+      "calories": 200,
       "protein": 2,
       "carbs": 4,
-      "fat": 22,
-      "tip": "Etwas fettreicher"
+      "fat": 21,
+      "tip": "Etwas fettreicher",
+      "basis": [
+        {
+          "fdcId": 168598,
+          "g": 28
+        }
+      ]
     },
     {
       "name": "Kleine Schale (50g)",
@@ -73,7 +79,7 @@
     {
       "name": "Macadamia-Mus (1 EL, 15g)",
       "portion_g": 15,
-      "calories": 110,
+      "calories": 108,
       "protein": 1,
       "carbs": 2,
       "fat": 11,
@@ -84,22 +90,46 @@
     {
       "name": "Macadamia (28g)",
       "calories": 201,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "macadamia",
+          "g": 28
+        }
+      ]
     },
     {
       "name": "Walnüsse (28g)",
-      "calories": 185,
-      "emoji": "🌰"
+      "calories": 183,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "walnuesse",
+          "g": 28
+        }
+      ]
     },
     {
       "name": "Mandeln (28g)",
-      "calories": 164,
-      "emoji": "🌰"
+      "calories": 162,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 28
+        }
+      ]
     },
     {
       "name": "Cashewkerne (28g)",
-      "calories": 157,
-      "emoji": "🥜"
+      "calories": 155,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "cashewkerne",
+          "g": 28
+        }
+      ]
     }
   ],
   "tips": [

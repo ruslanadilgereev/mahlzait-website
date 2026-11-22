@@ -82,22 +82,35 @@
     {
       "name": "Chiasamen (10g)",
       "calories": 49,
-      "emoji": "🌱"
+      "emoji": "🌱",
+      "basis": [
+        {
+          "slug": "chiasamen",
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Proteinpulver (10g)",
-      "calories": 38,
-      "emoji": "💪"
-    },
-    {
-      "name": "Matcha (10g)",
-      "calories": 32,
-      "emoji": "🍵"
+      "calories": 35,
+      "emoji": "💪",
+      "basis": [
+        {
+          "slug": "proteinpulver",
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Leinsamen (10g)",
       "calories": 53,
-      "emoji": "🟤"
+      "emoji": "🟤",
+      "basis": [
+        {
+          "slug": "leinsamen",
+          "g": 10
+        }
+      ]
     }
   ],
   "tips": [

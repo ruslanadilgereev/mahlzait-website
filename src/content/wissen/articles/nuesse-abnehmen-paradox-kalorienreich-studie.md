@@ -1,4 +1,4 @@
-Eine Handvoll Mandeln liefert rund 160 Kalorien - und Nuesse gehoeren mit etwa 550 bis 700 kcal pro 100 Gramm zu den energiedichtesten Lebensmitteln ueberhaupt. Nach der reinen Kalorienlogik muessten sie also dick machen. Die Forschung zeichnet ein anderes Bild: Wer regelmaessig Nuesse isst, nimmt im Schnitt nicht zu - eher im Gegenteil. Dieses scheinbare Paradox hat handfeste physiologische Gruende.
+Eine Handvoll Mandeln liefert rund 174 Kalorien - und Nuesse gehoeren mit etwa 550 bis 700 kcal pro 100 Gramm zu den energiedichtesten Lebensmitteln ueberhaupt. Nach der reinen Kalorienlogik muessten sie also dick machen. Die Forschung zeichnet ein anderes Bild: Wer regelmaessig Nuesse isst, nimmt im Schnitt nicht zu - eher im Gegenteil. Dieses scheinbare Paradox hat handfeste physiologische Gruende.
 
 ## Das Wichtigste in Kuerze
 

@@ -39,7 +39,7 @@
       "name": "Portion mit Wasser (250 g)",
       "portion_g": 250,
       "calories": 178,
-      "protein": 6.2,
+      "protein": 6.3,
       "carbs": 30,
       "fat": 3.8,
       "tip": "Standard"
@@ -47,69 +47,119 @@
     {
       "name": "Große Schüssel mit Wasser (350 g)",
       "portion_g": 350,
-      "calories": 248,
+      "calories": 249,
       "protein": 8.8,
       "carbs": 42,
-      "fat": 5.2
+      "fat": 5.3
     },
     {
       "name": "Portion mit fettarmer Milch (250 g)",
       "portion_g": 250,
-      "calories": 238,
-      "protein": 10,
-      "carbs": 34,
-      "fat": 6.2,
-      "tip": "Cremiger & mehr Protein"
+      "calories": 290,
+      "protein": 13.2,
+      "carbs": 43.5,
+      "fat": 7.2,
+      "tip": "Cremiger & mehr Protein",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 50
+        },
+        {
+          "fdcId": 171267,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Große Portion mit fettarmer Milch (350 g)",
       "portion_g": 350,
-      "calories": 332,
-      "protein": 14,
-      "carbs": 47,
-      "fat": 8.8
+      "calories": 405,
+      "protein": 18.5,
+      "carbs": 60.8,
+      "fat": 10.1,
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 70
+        },
+        {
+          "fdcId": 171267,
+          "g": 280
+        }
+      ]
     },
     {
       "name": "Trockene Haferflocken (50 g, ungekocht)",
       "portion_g": 50,
       "calories": 190,
-      "protein": 6.5,
-      "carbs": 30,
-      "fat": 3.5,
-      "tip": "Trockenmenge für 1 Portion"
+      "protein": 6.6,
+      "carbs": 33.9,
+      "fat": 3.3,
+      "tip": "Trockenmenge für 1 Portion",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Müsli mit Milch (250 g)",
-      "calories": 280,
-      "emoji": "🥣"
+      "name": "Müsli mit Milch (60g + 150ml)",
+      "calories": 307,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "muesli",
+          "variante": "Müsli mit fettarmer Milch (60g + 150ml)"
+        }
+      ]
     },
     {
       "name": "Milchreis (250 g)",
-      "calories": 320,
-      "emoji": "🍚"
+      "calories": 270,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "milchreis",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Joghurt natur (250 g)",
-      "calories": 158,
-      "emoji": "🥛"
+      "calories": 153,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "joghurt",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Chia-Pudding (250 g)",
-      "calories": 245,
-      "emoji": "🍮"
+      "calories": 305,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "chia-pudding",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mit Wasser am kalorienärmsten",
-      "text": "Haferbrei mit Wasser hat nur 71 kcal pro 100 g. Eine Portion (250 g) kommt so auf rund 178 kcal – ideal für ein leichtes Frühstück.",
+      "text": "Haferbrei mit Wasser hat nur 71 kcal pro 100 g. Eine Portion (250 g) kommt so auf rund 178 kcal, ideal für ein leichtes Frühstück.",
       "icon": "💧"
     },
     {
       "title": "Mit Milch mehr Protein",
-      "text": "Mit fettarmer Milch zubereitet steigt die Portion auf etwa 238 kcal, liefert dafür aber rund 10 g Eiweiß und macht länger satt.",
+      "text": "Mit fettarmer Milch zubereitet steigt die Portion auf etwa 290 kcal, liefert dafür aber rund 13 g Eiweiß und macht länger satt.",
       "icon": "🥛"
     },
     {
@@ -135,7 +185,7 @@
     },
     {
       "question": "Wie viele Kalorien hat Haferbrei mit Milch?",
-      "answer": "Mit fettarmer Milch zubereitet liegt eine Portion (250 g) bei etwa 238 kcal, mit Vollmilch entsprechend etwas höher."
+      "answer": "Mit fettarmer Milch zubereitet (50 g Haferflocken und 200 g Milch) liegt eine Portion (250 g) bei etwa 290 kcal, mit Vollmilch entsprechend etwas höher."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Haferbrei?",
@@ -143,7 +193,7 @@
     },
     {
       "question": "Wie viel Protein steckt in Haferbrei?",
-      "answer": "Mit Wasser hat eine Portion (250 g) etwa 6 g Eiweiß, mit fettarmer Milch zubereitet rund 10 g."
+      "answer": "Mit Wasser hat eine Portion (250 g) etwa 6 g Eiweiß, mit fettarmer Milch zubereitet rund 13 g."
     },
     {
       "question": "Ist Haferbrei zum Abnehmen geeignet?",

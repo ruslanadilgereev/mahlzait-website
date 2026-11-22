@@ -9,42 +9,194 @@
     "description": "Wie viele Kalorien hat Rindfleisch? Nährwerte für Steak, Filet, Gulasch & Roastbeef. Kostenloser Rechner mit Portionsgrößen."
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 26,
+    "calories_per_100g": 259,
+    "protein_per_100g": 26.1,
     "carbs_per_100g": 0,
-    "fat_per_100g": 17,
+    "fat_per_100g": 16.6,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Steak"
   },
   "variants": [
-    {"name": "Rinderfilet", "portion_g": 200, "calories": 364, "protein": 54, "carbs": 0, "fat": 16, "tip": "Magerster Cut"},
-    {"name": "Rumpsteak", "portion_g": 200, "calories": 470, "protein": 52, "carbs": 0, "fat": 30, "tip": "Klassiker vom Grill"},
-    {"name": "Entrecôte / Ribeye", "portion_g": 200, "calories": 520, "protein": 48, "carbs": 0, "fat": 38, "tip": "Marmoriert und saftig"},
-    {"name": "Rindergulasch (mager)", "portion_g": 200, "calories": 360, "protein": 48, "carbs": 0, "fat": 18, "tip": "Wade oder Schulter"},
-    {"name": "Roastbeef (kalt)", "portion_g": 100, "calories": 175, "protein": 27, "carbs": 0, "fat": 7, "tip": "Aufschnitt-Klassiker"},
-    {"name": "Tafelspitz (gekocht)", "portion_g": 200, "calories": 400, "protein": 48, "carbs": 0, "fat": 24, "tip": "Wiener Tradition"}
+    {
+      "name": "Rinderfilet",
+      "portion_g": 200,
+      "calories": 422,
+      "protein": 61,
+      "carbs": 0,
+      "fat": 18,
+      "tip": "Magerster Cut, gegrillt",
+      "basis": [
+        {
+          "fdcId": 170237,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Rumpsteak",
+      "portion_g": 200,
+      "calories": 556,
+      "protein": 52,
+      "carbs": 0,
+      "fat": 37,
+      "tip": "Klassiker vom Grill, mit Fettrand",
+      "basis": [
+        {
+          "fdcId": 168718,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Entrecôte / Ribeye",
+      "portion_g": 200,
+      "calories": 582,
+      "protein": 47,
+      "carbs": 0,
+      "fat": 44,
+      "tip": "Marmoriert und saftig",
+      "basis": [
+        {
+          "slug": "rib-eye-steak",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Rindergulasch (mager)",
+      "portion_g": 200,
+      "calories": 372,
+      "protein": 65,
+      "carbs": 0,
+      "fat": 13,
+      "tip": "Schmorfleisch aus der Schulter",
+      "basis": [
+        {
+          "fdcId": 171204,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Roastbeef (kalt)",
+      "portion_g": 100,
+      "calories": 115,
+      "protein": 19,
+      "carbs": 1,
+      "fat": 4,
+      "tip": "Aufschnitt-Klassiker",
+      "basis": [
+        {
+          "slug": "roastbeef",
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
-    {"name": "Schweinefleisch", "calories": 242, "emoji": "🥩"},
-    {"name": "Lachsfilet", "calories": 208, "emoji": "🐟"},
-    {"name": "Putenbrust", "calories": 111, "emoji": "🍗"}
+    {
+      "name": "Hähnchenbrust (100g)",
+      "calories": 165,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Schweinefleisch (100g)",
+      "calories": 238,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schweinefleisch",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Lachs gebraten (100g)",
+      "calories": 206,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs-gebraten",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Putenbrust gegart (100g)",
+      "calories": 136,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 174516,
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Filet statt Ribeye", "text": "Rinderfilet hat nur 182 kcal/100g, Ribeye 260 kcal. Bei 200g spart das Filet über 150 kcal.", "icon": "💡"},
-    {"title": "Sichtbares Fett abschneiden", "text": "Fettrand am Steak vor dem Essen abschneiden kann 50-100 kcal pro Portion sparen.", "icon": "🔪"},
-    {"title": "Eisen-Booster", "text": "Rindfleisch enthält 2,5mg Häm-Eisen pro 100g – die am besten verwertbare Form. Ideal bei Eisenmangel.", "icon": "🩸"},
-    {"title": "Sous-vide statt Bratpfanne", "text": "Sous-vide braucht kein Bratfett und das Fleisch wird perfekt gleichmäßig. Nur kurz anbraten für die Kruste.", "icon": "🍳"},
-    {"title": "Portion kontrollieren", "text": "Restaurant-Steaks wiegen oft 300-400g. 150-200g sind eine vollwertige Portion und sparen 200+ kcal.", "icon": "⚖️"}
+    {
+      "title": "Filet statt Ribeye",
+      "text": "Rinderfilet hat nur rund 211 kcal/100g, Ribeye 291 kcal. Bei 200g spart das Filet rund 160 kcal.",
+      "icon": "💡"
+    },
+    {
+      "title": "Sichtbares Fett abschneiden",
+      "text": "Fettrand am Steak vor dem Essen abschneiden spart spürbar Kalorien.",
+      "icon": "🔪"
+    },
+    {
+      "title": "Eisen-Booster",
+      "text": "Rindfleisch enthält laut USDA rund 2,2mg Eisen pro 100g, darunter gut verwertbares Häm-Eisen. Ideal bei Eisenmangel.",
+      "icon": "🩸"
+    },
+    {
+      "title": "Sous-vide statt Bratpfanne",
+      "text": "Sous-vide braucht kein Bratfett und das Fleisch wird perfekt gleichmäßig. Nur kurz anbraten für die Kruste.",
+      "icon": "🍳"
+    },
+    {
+      "title": "Portion kontrollieren",
+      "text": "Restaurant-Steaks wiegen oft 300-400g. 150-200g sind eine vollwertige Portion und sparen 200+ kcal.",
+      "icon": "⚖️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Rindfleisch?", "answer": "Rindfleisch hat 150-260 kcal pro 100g je nach Cut. Filet: 182 kcal, Rumpsteak: 235 kcal, Ribeye: 260 kcal pro 100g."},
-    {"question": "Ist Rindfleisch gut zum Abnehmen?", "answer": "Mageres Rindfleisch (Filet, Gulasch) ist eine exzellente Proteinquelle mit 26g/100g. Fettere Cuts wie Ribeye sollte man portioniert genießen."},
-    {"question": "Wie viel Protein hat Rindfleisch?", "answer": "Rindfleisch liefert 26g Protein pro 100g im Schnitt. Ein 200g-Steak hat 48-54g Protein – mehr als der halbe Tagesbedarf."},
-    {"question": "Was ist das magerste Rindfleisch?", "answer": "Rinderfilet (182 kcal, 8% Fett) ist am magersten, gefolgt von Roastbeef (175 kcal, 7% Fett). Beide haben exzellente Proteinwerte."},
-    {"question": "Wie oft sollte man Rindfleisch essen?", "answer": "Die DGE empfiehlt max. 300-600g Fleisch pro Woche insgesamt. 2-3 Portionen Rindfleisch à 150-200g pro Woche sind ernährungstechnisch sinnvoll."},
-    {"question": "Was ist gesünder: Rind oder Hähnchen?", "answer": "Hähnchenbrust hat weniger Kalorien und Fett, Rindfleisch mehr Eisen, Zink und B12. Beide sind gesund – am besten abwechseln."}
+    {
+      "question": "Wie viele Kalorien hat Rindfleisch?",
+      "answer": "Gegartes Rindfleisch hat je nach Cut rund 186 bis 291 kcal pro 100g, im Mittel der Teilstücke 259 kcal. Filet: 211 kcal, Rumpsteak: 278 kcal, Ribeye: 291 kcal pro 100g."
+    },
+    {
+      "question": "Ist Rindfleisch gut zum Abnehmen?",
+      "answer": "Mageres Rindfleisch (Filet, Gulasch) ist eine exzellente Proteinquelle mit rund 30g Protein pro 100g. Fettere Cuts wie Ribeye sollte man portioniert genießen."
+    },
+    {
+      "question": "Wie viel Protein hat Rindfleisch?",
+      "answer": "Rindfleisch liefert im Schnitt rund 26g Protein pro 100g. Ein 200g-Steak hat rund 47 bis 61g Protein, mehr als der halbe Tagesbedarf."
+    },
+    {
+      "question": "Was ist das magerste Rindfleisch?",
+      "answer": "Unter den Varianten hier ist Roastbeef-Aufschnitt am magersten (115 kcal, rund 4% Fett), gefolgt von magerem Gulaschfleisch (186 kcal, rund 6% Fett) und Rinderfilet (211 kcal, rund 9% Fett). Alle haben exzellente Proteinwerte."
+    },
+    {
+      "question": "Wie oft sollte man Rindfleisch essen?",
+      "answer": "Die DGE empfiehlt max. 300-600g Fleisch pro Woche insgesamt. 2-3 Portionen Rindfleisch à 150-200g pro Woche sind ernährungstechnisch sinnvoll."
+    },
+    {
+      "question": "Was ist gesünder: Rind oder Hähnchen?",
+      "answer": "Hähnchenbrust hat weniger Kalorien und Fett, Rindfleisch mehr Eisen, Zink und B12. Beide sind gesund, am besten abwechseln."
+    }
   ],
-  "related_foods": ["rinderbraten", "gulasch", "haehnchenbrust", "kartoffeln"]
+  "related_foods": [
+    "rinderbraten",
+    "gulasch",
+    "haehnchenbrust",
+    "kartoffeln"
+  ]
 }

@@ -3,7 +3,7 @@
   "name": "Schwarzer Tee",
   "emoji": "🍵",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 173227 (Beverages, tea, black, brewed, prepared with tap water), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 173227 (Beverages, tea, black, brewed, prepared with tap water: 1 kcal), Werte je 100 g; je 100 ml mit 1,002 g/ml 1 kcal",
   "seo": {
     "title": "Schwarzer Tee Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat schwarzer Tee? Ungesüßt fast 0 kcal pro Tasse. Nährwerte pro 100 ml, mit Milch & Zucker im Vergleich und Tipps zum Abnehmen.",
@@ -45,7 +45,7 @@
     },
     {
       "name": "Großer Becher ungesüßt (330 ml)",
-      "portion_g": 330,
+      "portion_g": 331,
       "calories": 3,
       "protein": 0,
       "carbs": 1,
@@ -54,59 +54,128 @@
     {
       "name": "Tasse mit 1 TL Zucker (250 ml)",
       "portion_g": 254,
-      "calories": 19,
+      "calories": 18,
       "protein": 0,
       "carbs": 5,
       "fat": 0,
-      "tip": "4 g Zucker = 16 kcal extra"
+      "tip": "4 g Zucker = 15 kcal extra",
+      "basis": [
+        {
+          "ml": 250,
+          "g": 250
+        },
+        {
+          "slug": "zucker",
+          "g": 4
+        }
+      ]
     },
     {
       "name": "Tasse mit Milch (250 ml + 30 ml)",
       "portion_g": 280,
-      "calories": 22,
+      "calories": 21,
       "protein": 1,
       "carbs": 2,
       "fat": 1,
-      "tip": "Schuss Vollmilch"
+      "tip": "Schuss Vollmilch",
+      "basis": [
+        {
+          "ml": 250,
+          "g": 250
+        },
+        {
+          "slug": "milch",
+          "ml": 30,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Tasse mit Milch & Zucker (250 ml)",
       "portion_g": 284,
-      "calories": 38,
+      "calories": 36,
       "protein": 1,
-      "carbs": 7,
-      "fat": 1
+      "carbs": 6,
+      "fat": 1,
+      "basis": [
+        {
+          "ml": 250,
+          "g": 250
+        },
+        {
+          "slug": "milch",
+          "ml": 30,
+          "g": 30
+        },
+        {
+          "slug": "zucker",
+          "g": 4
+        }
+      ]
     },
     {
       "name": "Eistee schwarz, gesüßt (250 ml)",
       "portion_g": 250,
-      "calories": 70,
+      "calories": 113,
       "protein": 0,
-      "carbs": 17,
-      "fat": 0,
-      "tip": "Fertig-Eistee enthält Zucker"
+      "carbs": 27,
+      "fat": 1,
+      "tip": "Fertig-Eistee enthält Zucker",
+      "basis": [
+        {
+          "slug": "eistee",
+          "ml": 250,
+          "g": 250
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Grüner Tee (250 ml)",
-      "calories": 2,
-      "emoji": "🍵"
+      "calories": 3,
+      "emoji": "🍵",
+      "basis": [
+        {
+          "fdcId": 171917,
+          "ml": 250,
+          "g": 259
+        }
+      ]
     },
     {
       "name": "Kaffee schwarz (250 ml)",
-      "calories": 5,
-      "emoji": "☕"
+      "calories": 3,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffee",
+          "ml": 250,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Cola (250 ml)",
-      "calories": 106,
-      "emoji": "🥤"
+      "calories": 105,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 250,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Apfelsaft (250 ml)",
-      "calories": 115,
-      "emoji": "🧃"
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft"
+        }
+      ]
     }
   ],
   "tips": [
@@ -117,12 +186,12 @@
     },
     {
       "title": "Vorsicht bei Zucker und Milch",
-      "text": "Erst die Zutaten machen den Tee kalorienreich: 1 TL Zucker bringt rund 16 kcal, ein Schuss Vollmilch noch einmal etwa 19 kcal.",
+      "text": "Erst die Zutaten machen den Tee kalorienreich: 1 TL Zucker bringt rund 15 kcal, ein Schuss Vollmilch (30 ml) noch einmal etwa 18 kcal.",
       "icon": "🥄"
     },
     {
       "title": "Fertig-Eistee ist kein Schwarztee",
-      "text": "Gekaufter Eistee enthält viel Zugesetzten Zucker und kommt schnell auf 60 bis 80 kcal pro Glas. Selbst aufgebrühter, ungesüßter Eistee bleibt nahezu kalorienfrei.",
+      "text": "Gekaufter Eistee enthält viel zugesetzten Zucker und kommt schnell auf rund 113 kcal pro Glas (250 ml). Selbst aufgebrühter, ungesüßter Eistee bleibt nahezu kalorienfrei.",
       "icon": "🧊"
     },
     {
@@ -143,7 +212,7 @@
     },
     {
       "question": "Wie viele Kalorien hat schwarzer Tee mit Milch und Zucker?",
-      "answer": "Mit einem Schuss Milch und 1 TL Zucker kommt eine Tasse auf etwa 35 bis 40 kcal. Allein der Zucker bringt rund 16 kcal, die Milch je nach Menge 15 bis 20 kcal."
+      "answer": "Mit einem Schuss Milch (30 ml) und 1 TL Zucker kommt eine Tasse auf etwa 36 kcal. Allein der Zucker bringt rund 15 kcal, die Milch rund 18 kcal."
     },
     {
       "question": "Hat schwarzer Tee Kohlenhydrate?",

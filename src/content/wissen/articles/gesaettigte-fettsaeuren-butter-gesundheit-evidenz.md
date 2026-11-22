@@ -6,7 +6,7 @@ Kaum ein Lebensmittel polarisiert so wie Butter. Mal gilt sie als Herzkiller, ma
 - Entscheidend ist der **Austausch**: Ersetzt man 5 % der Energie aus gesättigten durch mehrfach ungesättigte Fette, sinkt das Risiko für koronare Herzkrankheit um rund **10 %** (Metaanalyse von RCTs).
 - Eine **Mediterrane Ernährung** mit Olivenöl oder Nüssen reduzierte in der PREDIMED-Studie schwere kardiovaskuläre Ereignisse um etwa **30 %**.
 - Butter (rund 80 % Fett, davon über die Hälfte gesättigt) ist nicht das Kernproblem – die Menge und das, was sonst auf dem Teller liegt, zählen mehr.
-- Fürs **Gewicht** bleibt die Kalorienbilanz entscheidend: Butter liefert ca. 740 kcal pro 100 g, egal ob "gesund" oder nicht.
+- Fürs **Gewicht** bleibt die Kalorienbilanz entscheidend: Butter liefert ca. 717 kcal pro 100 g, egal ob "gesund" oder nicht.
 
 ---
 

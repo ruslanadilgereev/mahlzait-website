@@ -59,7 +59,13 @@
       "protein": 1.7,
       "carbs": 10,
       "fat": 0.2,
-      "tip": "Vorgekocht im Vakuumbeutel"
+      "tip": "Vorgekocht im Vakuumbeutel",
+      "basis": [
+        {
+          "fdcId": 169146,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Rote Bete vorgekocht, 1 Knolle (120g)",
@@ -67,25 +73,44 @@
       "calories": 53,
       "protein": 2,
       "carbs": 12,
-      "fat": 0.2
+      "fat": 0.2,
+      "basis": [
+        {
+          "fdcId": 169146,
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Rote-Bete-Saft (200 ml)",
-      "portion_g": 200,
-      "calories": 72,
-      "protein": 1.2,
-      "carbs": 16,
-      "fat": 0.2,
-      "tip": "Direktsaft, ungesüßt"
+      "portion_g": 210,
+      "calories": 53,
+      "protein": 1.5,
+      "carbs": 12.4,
+      "fat": 0.1,
+      "tip": "Direktsaft, ungesüßt",
+      "basis": [
+        {
+          "fdcId": 2709682,
+          "ml": 200,
+          "g": 210
+        }
+      ]
     },
     {
       "name": "Rote Bete sauer eingelegt (100g)",
       "portion_g": 100,
       "calories": 65,
-      "protein": 1,
-      "carbs": 16,
+      "protein": 0.8,
+      "carbs": 16.3,
       "fat": 0.1,
-      "tip": "Im Glas, mit Zucker und Essig"
+      "tip": "Im Glas, mit Zucker und Essig",
+      "basis": [
+        {
+          "fdcId": 170480,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Rote-Bete-Salat-Portion (200g)",
@@ -100,22 +125,46 @@
     {
       "name": "Karotten (100g)",
       "calories": 41,
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kürbis (100g)",
       "calories": 26,
-      "emoji": "🎃"
+      "emoji": "🎃",
+      "basis": [
+        {
+          "slug": "kuerbis",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kartoffeln (100g)",
-      "calories": 77,
-      "emoji": "🥔"
+      "calories": 86,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Süßkartoffeln (100g)",
       "calories": 86,
-      "emoji": "🍠"
+      "emoji": "🍠",
+      "basis": [
+        {
+          "slug": "suesskartoffeln",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -141,14 +190,14 @@
     },
     {
       "title": "Saft als Energiequelle vor dem Sport",
-      "text": "200 ml Rote-Bete-Saft enthalten etwa 72 kcal und natürliches Nitrat. Beliebt als Getränk vor dem Ausdauertraining, aber durch den höheren Zuckergehalt kalorienreicher als ein gleich grosses Stück frische Knolle.",
+      "text": "200 ml Rote-Bete-Saft enthalten laut USDA etwa 53 kcal und natürliches Nitrat. Beliebt als Getränk vor dem Ausdauertraining, liefert der Saft aber weniger Ballaststoffe als die frische Knolle.",
       "icon": "🏃"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Rote Bete?",
-      "answer": "Rohe Rote Bete hat etwa 43 kcal pro 100g. Eine mittelgrosse Knolle (150g) kommt auf rund 65 kcal."
+      "answer": "Rohe Rote Bete hat etwa 43 kcal pro 100g. Eine mittelgroße Knolle (150g) kommt auf rund 65 kcal."
     },
     {
       "question": "Wie viele Kalorien hat gekochte Rote Bete?",
@@ -156,11 +205,11 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Rote Bete?",
-      "answer": "Rote Bete enthält rund 9,6g Kohlenhydrate pro 100g, davon ein grosser Teil natürlicher Zucker. Dazu kommen etwa 2,8g Ballaststoffe."
+      "answer": "Rote Bete enthält rund 9,6g Kohlenhydrate pro 100g, davon rund 6,8g natürlicher Zucker und 2,8g Ballaststoffe."
     },
     {
       "question": "Wie viel Protein hat Rote Bete?",
-      "answer": "Rote Bete liefert etwa 1,6g Eiweiss pro 100g. Sie ist damit kein nennenswerter Eiweisslieferant, sondern punktet eher mit Ballaststoffen und Mikronährstoffen."
+      "answer": "Rote Bete liefert etwa 1,6g Eiweiß pro 100g. Sie ist damit kein nennenswerter Eiweißlieferant, sondern punktet eher mit Ballaststoffen und Mikronährstoffen."
     },
     {
       "question": "Ist Rote Bete zum Abnehmen geeignet?",

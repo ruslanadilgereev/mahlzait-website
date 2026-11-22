@@ -3,7 +3,7 @@
   "name": "Mandelmilch",
   "emoji": "🥛",
   "category": "getraenk",
-  "source": "USDA FoodData Central, FDC-ID 2705409 (Almond milk, unsweetened), Werte je 100 g",
+  "source": "USDA FoodData Central, FDC-ID 2705409 (Almond milk, unsweetened: 15 kcal), Werte je 100 g; je 100 ml mit 1,031 g/ml 15 kcal",
   "seo": {
     "title": "Mandelmilch Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Mandelmilch? Ungesüßt nur 15 kcal pro 100ml. Nährwerte pro Glas, gesüßt vs. ungesüßt im Vergleich plus Diät-Tipps.",
@@ -22,14 +22,14 @@
     "protein_per_100g": 0.6,
     "carbs_per_100g": 0.3,
     "fat_per_100g": 1.2,
-    "fiber_per_100g": 0.3,
-    "typical_portion_g": 200,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 206,
     "typical_portion_name": "1 Glas (200 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas ungesüßt (150 ml)",
-      "portion_g": 150,
+      "portion_g": 155,
       "calories": 23,
       "protein": 1,
       "carbs": 0,
@@ -37,8 +37,8 @@
     },
     {
       "name": "1 Glas ungesüßt (200 ml)",
-      "portion_g": 200,
-      "calories": 30,
+      "portion_g": 206,
+      "calories": 31,
       "protein": 1,
       "carbs": 1,
       "fat": 2,
@@ -46,24 +46,31 @@
     },
     {
       "name": "1 Glas gesüßt (200 ml)",
-      "portion_g": 200,
-      "calories": 48,
+      "portion_g": 206,
+      "calories": 62,
       "protein": 1,
-      "carbs": 7,
+      "carbs": 9,
       "fat": 2,
-      "tip": "Gesüßte Variante mit Zuckerzusatz"
+      "tip": "Gesüßte Variante mit Zuckerzusatz",
+      "basis": [
+        {
+          "fdcId": 2705407,
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
       "name": "Großes Glas ungesüßt (250 ml)",
-      "portion_g": 250,
-      "calories": 38,
+      "portion_g": 258,
+      "calories": 39,
       "protein": 2,
       "carbs": 1,
       "fat": 3
     },
     {
       "name": "Schuss im Kaffee (50 ml)",
-      "portion_g": 50,
+      "portion_g": 52,
       "calories": 8,
       "protein": 0,
       "carbs": 0,
@@ -72,7 +79,7 @@
     },
     {
       "name": "Im Müsli (125 ml)",
-      "portion_g": 125,
+      "portion_g": 129,
       "calories": 19,
       "protein": 1,
       "carbs": 0,
@@ -80,8 +87,8 @@
     },
     {
       "name": "1 Liter Packung ungesüßt",
-      "portion_g": 1000,
-      "calories": 150,
+      "portion_g": 1031,
+      "calories": 155,
       "protein": 6,
       "carbs": 3,
       "fat": 12,
@@ -91,34 +98,66 @@
   "comparison": [
     {
       "name": "Kuhmilch (200 ml, 1,5 %)",
-      "calories": 96,
-      "emoji": "🥛"
+      "calories": 95,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 170872,
+          "ml": 100,
+          "g": 103
+        },
+        {
+          "fdcId": 172205,
+          "ml": 100,
+          "g": 104
+        }
+      ]
     },
     {
       "name": "Hafermilch (200 ml)",
-      "calories": 92,
-      "emoji": "🌾"
+      "calories": 96,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "hafermilch",
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Sojamilch (200 ml)",
-      "calories": 76,
-      "emoji": "🫛"
+      "calories": 78,
+      "emoji": "🫛",
+      "basis": [
+        {
+          "fdcId": 2705405,
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
       "name": "Mandelmilch ungesüßt (200 ml)",
-      "calories": 30,
-      "emoji": "🥛"
+      "calories": 31,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "mandelmilch",
+          "variante": "1 Glas ungesüßt (200 ml)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sehr kalorienarm",
-      "text": "Ungesüßte Mandelmilch liefert nur 15 kcal pro 100 ml und damit deutlich weniger als Kuh-, Hafer- oder Sojamilch. Ein ganzes Glas hat gerade einmal 30 kcal.",
+      "text": "Ungesüßte Mandelmilch liefert nur 15 kcal pro 100 ml und damit deutlich weniger als Kuh-, Hafer- oder Sojamilch. Ein ganzes Glas hat gerade einmal rund 31 kcal.",
       "icon": "🥛"
     },
     {
       "title": "Auf ungesüßt achten",
-      "text": "Gesüßte Sorten enthalten Zuckerzusatz und kommen auf rund 24 kcal pro 100 ml. Wer Kalorien sparen will, greift zur ungesüßten Variante.",
+      "text": "Gesüßte Sorten enthalten Zuckerzusatz und kommen laut FDC auf rund 31 kcal pro 100 ml. Wer Kalorien sparen will, greift zur ungesüßten Variante.",
       "icon": "🔍"
     },
     {
@@ -140,19 +179,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Mandelmilch?",
-      "answer": "Ungesüßte Mandelmilch hat nur etwa 15 kcal pro 100 ml. Ein Glas (200 ml) kommt damit auf rund 30 kcal. Gesüßte Sorten haben mit etwa 24 kcal pro 100 ml etwas mehr."
+      "answer": "Ungesüßte Mandelmilch hat nur etwa 15 kcal pro 100 ml. Ein Glas (200 ml) kommt damit auf rund 31 kcal. Gesüßte Sorten haben mit etwa 31 kcal pro 100 ml rund doppelt so viel."
     },
     {
       "question": "Wie viele Kalorien hat ein Glas Mandelmilch?",
-      "answer": "Ein Glas ungesüßte Mandelmilch (200 ml) hat etwa 30 kcal. Ein großes Glas (250 ml) kommt auf rund 38 kcal."
+      "answer": "Ein Glas ungesüßte Mandelmilch (200 ml) hat etwa 31 kcal. Ein großes Glas (250 ml) kommt auf rund 39 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mandelmilch?",
-      "answer": "Ungesüßte Mandelmilch enthält nur etwa 0,3 g Kohlenhydrate pro 100 ml und ist damit sehr kohlenhydratarm. Gesüßte Varianten haben durch den Zuckerzusatz rund 3,5 g pro 100 ml."
+      "answer": "Ungesüßte Mandelmilch enthält nur etwa 0,3 g Kohlenhydrate pro 100 ml und ist damit sehr kohlenhydratarm. Gesüßte Varianten haben durch den Zuckerzusatz rund 4,4 g pro 100 ml."
     },
     {
       "question": "Wie viel Eiweiß steckt in Mandelmilch?",
-      "answer": "Mandelmilch enthält nur rund 0,6 g Eiweiß pro 100 ml. Im Vergleich zu Kuhmilch (3,4 g) oder Sojamilch (3,3 g) ist das wenig."
+      "answer": "Mandelmilch enthält nur rund 0,6 g Eiweiß pro 100 ml. Im Vergleich zu Kuhmilch (3,4 g) oder Sojamilch (3,7 g) ist das wenig."
     },
     {
       "question": "Ist Mandelmilch zum Abnehmen geeignet?",

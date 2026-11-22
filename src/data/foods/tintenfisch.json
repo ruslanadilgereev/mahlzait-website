@@ -46,30 +46,19 @@
       "tip": "Standard"
     },
     {
-      "name": "Tintenfisch gegrillt (150g)",
-      "portion_g": 150,
-      "calories": 165,
-      "protein": 26,
-      "carbs": 4,
-      "fat": 5,
-      "tip": "Leicht zubereitet mit etwas Öl"
-    },
-    {
-      "name": "Tintenfischringe gegart (150g)",
-      "portion_g": 150,
-      "calories": 158,
-      "protein": 25,
-      "carbs": 5,
-      "fat": 4
-    },
-    {
       "name": "Calamari frittiert (100g)",
       "portion_g": 100,
       "calories": 175,
       "protein": 18,
       "carbs": 8,
       "fat": 7,
-      "tip": "Paniert, deutlich mehr Kalorien"
+      "tip": "Paniert, deutlich mehr Kalorien",
+      "basis": [
+        {
+          "fdcId": 171982,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Calamari frittiert, Portion (200g)",
@@ -77,38 +66,48 @@
       "calories": 350,
       "protein": 36,
       "carbs": 16,
-      "fat": 14
-    },
-    {
-      "name": "Tintenfisch in Tomatensoße (250g)",
-      "portion_g": 250,
-      "calories": 285,
-      "protein": 30,
-      "carbs": 12,
-      "fat": 12,
-      "tip": "Mit Soße als Hauptgericht"
+      "fat": 15,
+      "basis": [
+        {
+          "fdcId": 171982,
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Tintenfisch (150g)",
-      "calories": 138,
-      "emoji": "🦑"
-    },
-    {
       "name": "Garnelen (150g)",
-      "calories": 128,
-      "emoji": "🦐"
+      "calories": 149,
+      "emoji": "🦐",
+      "basis": [
+        {
+          "slug": "garnelen",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Lachs (150g)",
       "calories": 312,
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Thunfisch (150g)",
-      "calories": 173,
-      "emoji": "🐟"
+      "name": "Thunfisch aus der Dose (150g)",
+      "calories": 129,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "thunfisch-dose",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [

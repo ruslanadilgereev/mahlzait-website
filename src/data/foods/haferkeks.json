@@ -18,10 +18,10 @@
   },
   "overview": {
     "calories_per_100g": 450,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 68,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 3,
+    "protein_per_100g": 6.2,
+    "carbs_per_100g": 68.7,
+    "fat_per_100g": 18.1,
+    "fiber_per_100g": 2.8,
     "typical_portion_g": 25,
     "typical_portion_name": "1 Keks (mittel)"
   },
@@ -38,8 +38,8 @@
       "name": "Haferkeks mittel (25g)",
       "portion_g": 25,
       "calories": 113,
-      "protein": 1.5,
-      "carbs": 17,
+      "protein": 1.6,
+      "carbs": 17.2,
       "fat": 4.5,
       "tip": "Standardgröße"
     },
@@ -47,64 +47,75 @@
       "name": "Haferkeks groß (40g)",
       "portion_g": 40,
       "calories": 180,
-      "protein": 2.4,
-      "carbs": 27,
+      "protein": 2.5,
+      "carbs": 27.5,
       "fat": 7.2
     },
     {
       "name": "2 Haferkekse (50g)",
       "portion_g": 50,
       "calories": 225,
-      "protein": 3,
-      "carbs": 34,
-      "fat": 9
+      "protein": 3.1,
+      "carbs": 34.4,
+      "fat": 9.1
     },
     {
       "name": "Portion 3 Stück (75g)",
       "portion_g": 75,
       "calories": 338,
-      "protein": 4.5,
-      "carbs": 51,
-      "fat": 13.5
-    },
-    {
-      "name": "Selbstgebacken, zuckerreduziert (25g)",
-      "portion_g": 25,
-      "calories": 95,
-      "protein": 2,
-      "carbs": 13,
-      "fat": 3.5,
-      "tip": "Weniger Zucker und Fett"
+      "protein": 4.7,
+      "carbs": 51.5,
+      "fat": 13.6
     },
     {
       "name": "Ganze Packung (200g)",
       "portion_g": 200,
       "calories": 900,
-      "protein": 12,
-      "carbs": 136,
-      "fat": 36
+      "protein": 12.4,
+      "carbs": 137.4,
+      "fat": 36.2
     }
   ],
   "comparison": [
     {
-      "name": "Butterkeks (1 Stück)",
-      "calories": 22,
-      "emoji": "🍪"
+      "name": "Butterkeks (4 Stück, 25g)",
+      "calories": 117,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "butterkeks"
+        }
+      ]
     },
     {
       "name": "Müsliriegel (1 Stück)",
-      "calories": 110,
-      "emoji": "🥜"
+      "calories": 118,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "muesli-riegel"
+        }
+      ]
     },
     {
       "name": "Cookie (1 Stück)",
-      "calories": 200,
-      "emoji": "🍪"
+      "calories": 192,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "cookie"
+        }
+      ]
     },
     {
       "name": "Banane (mittel)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane"
+        }
+      ]
     }
   ],
   "tips": [
@@ -115,7 +126,7 @@
     },
     {
       "title": "Selbst backen spart Kalorien",
-      "text": "Mit weniger Zucker und Öl lassen sich Haferkekse auf etwa 95 kcal pro Stück senken. Reife Banane oder Apfelmus ersetzen einen Teil von Zucker und Fett.",
+      "text": "Mit weniger Zucker und Öl lassen sich Haferkekse deutlich leichter backen. Reife Banane oder Apfelmus ersetzen einen Teil von Zucker und Fett.",
       "icon": "🥣"
     },
     {
@@ -145,7 +156,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Haferkeks?",
-      "answer": "100g Haferkekse enthalten etwa 68g Kohlenhydrate, davon ein großer Teil Zucker. Ein mittlerer Keks (25g) liefert rund 17g Kohlenhydrate."
+      "answer": "100g Haferkekse enthalten etwa 69g Kohlenhydrate, davon ein großer Teil Zucker. Ein mittlerer Keks (25g) liefert rund 17g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Haferkeksen?",

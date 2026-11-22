@@ -3,10 +3,10 @@
   "name": "Mie-Nudeln",
   "emoji": "🍜",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 168926 (Noodles, egg, unenriched, cooked, without added salt), Werte je 100 g; Mie-Nudeln als gekochte Eiernudeln",
+  "source": "USDA FoodData Central, FDC-ID 168926 (Noodles, egg, unenriched, cooked, without added salt), Werte je 100 g",
   "seo": {
     "title": "Mie-Nudeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Mie-Nudeln? Gekocht ca. 138 kcal pro 100g, trocken ca. 372 kcal. Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
+    "description": "Wie viele Kalorien haben Mie-Nudeln? Gekocht ca. 138 kcal pro 100g, trocken ca. 384 kcal. Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
     "keywords": [
       "mie nudeln kcal",
       "mie nudeln kalorien",
@@ -19,7 +19,7 @@
   "overview": {
     "calories_per_100g": 138,
     "protein_per_100g": 4.5,
-    "carbs_per_100g": 25,
+    "carbs_per_100g": 25.2,
     "fat_per_100g": 2.1,
     "fiber_per_100g": 1.2,
     "typical_portion_g": 200,
@@ -55,75 +55,100 @@
     {
       "name": "Mie-Nudeln trocken (75g, vor dem Kochen)",
       "portion_g": 75,
-      "calories": 279,
-      "protein": 9,
-      "carbs": 54,
+      "calories": 288,
+      "protein": 11,
+      "carbs": 53,
       "fat": 3,
-      "tip": "Ergibt ca. 200g gekocht"
+      "tip": "Ergibt ca. 200g gekocht",
+      "basis": [
+        {
+          "fdcId": 169755,
+          "g": 75
+        }
+      ]
     },
     {
       "name": "Mie-Nudeln trocken (100g)",
       "portion_g": 100,
-      "calories": 372,
-      "protein": 12,
-      "carbs": 72,
-      "fat": 4
+      "calories": 384,
+      "protein": 14,
+      "carbs": 71,
+      "fat": 4,
+      "basis": [
+        {
+          "fdcId": 169755,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Gebratene Mie-Nudeln mit Öl (300g)",
       "portion_g": 300,
-      "calories": 540,
-      "protein": 15,
-      "carbs": 78,
-      "fat": 18,
-      "tip": "Mit Öl im Wok zubereitet"
-    },
-    {
-      "name": "Instant-Mie-Nudeln zubereitet (1 Packung, 350g)",
-      "portion_g": 350,
-      "calories": 455,
-      "protein": 11,
-      "carbs": 60,
-      "fat": 18,
-      "tip": "Frittierte Instant-Variante"
+      "calories": 526,
+      "protein": 13,
+      "carbs": 72,
+      "fat": 21,
+      "tip": "Mit Öl im Wok zubereitet",
+      "basis": [
+        {
+          "g": 285
+        },
+        {
+          "fdcId": 172336,
+          "g": 15
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Spaghetti gekocht (200g)",
-      "calories": 314,
-      "emoji": "🍝"
+      "calories": 316,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Reis gekocht (200g)",
       "calories": 260,
-      "emoji": "🍚"
-    },
-    {
-      "name": "Glasnudeln gekocht (200g)",
-      "calories": 180,
-      "emoji": "🍜"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Kartoffeln gekocht (200g)",
-      "calories": 154,
-      "emoji": "🥔"
+      "calories": 172,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Gekocht deutlich kalorienärmer",
-      "text": "Mie-Nudeln nehmen beim Kochen viel Wasser auf. Gekocht haben sie nur ca. 138 kcal pro 100g, trocken dagegen rund 372 kcal. Wiege am besten den trockenen Zustand ab.",
+      "text": "Mie-Nudeln nehmen beim Kochen viel Wasser auf. Gekocht haben sie nur ca. 138 kcal pro 100g, trocken dagegen rund 384 kcal. Wiege am besten den trockenen Zustand ab.",
       "icon": "💧"
     },
     {
       "title": "Vorsicht beim Braten",
-      "text": "Im Wok mit Öl gebraten steigt der Fettanteil stark an. Eine Portion gebratene Mie-Nudeln (300g) kommt schnell auf rund 540 kcal. Nutze sparsam Öl oder einen Öl-Sprüher.",
+      "text": "Im Wok mit Öl gebraten steigt der Fettanteil stark an. Eine Portion gebratene Mie-Nudeln (300g) kommt schnell auf rund 526 kcal. Nutze sparsam Öl oder einen Öl-Sprüher.",
       "icon": "🍳"
     },
     {
       "title": "Instant-Mie sind fettreich",
-      "text": "Klassische Instant-Mie-Nudeln werden frittiert und enthalten dadurch deutlich mehr Fett als reine Eiernudeln. Eine ganze Packung liegt bei etwa 455 kcal.",
+      "text": "Klassische Instant-Mie-Nudeln werden frittiert und enthalten dadurch deutlich mehr Fett als reine Eiernudeln.",
       "icon": "📦"
     },
     {
@@ -140,11 +165,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Mie-Nudeln?",
-      "answer": "Gekochte Mie-Nudeln haben ca. 138 kcal pro 100g. Eine typische Portion (200g) liefert rund 276 kcal. Im trockenen Zustand liegen sie bei etwa 372 kcal pro 100g."
+      "answer": "Gekochte Mie-Nudeln haben ca. 138 kcal pro 100g. Eine typische Portion (200g) liefert rund 276 kcal. Im trockenen Zustand liegen sie bei etwa 384 kcal pro 100g."
     },
     {
       "question": "Wie viele Kalorien haben Mie-Nudeln trocken?",
-      "answer": "Trockene, ungekochte Mie-Nudeln haben ca. 372 kcal pro 100g. Eine übliche Einzelportion von 75g vor dem Kochen entspricht etwa 279 kcal."
+      "answer": "Trockene, ungekochte Mie-Nudeln haben ca. 384 kcal pro 100g. Eine übliche Einzelportion von 75g vor dem Kochen entspricht etwa 288 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Mie-Nudeln?",
@@ -160,7 +185,7 @@
     },
     {
       "question": "Sind Mie-Nudeln gesünder als Spaghetti?",
-      "answer": "Gekocht sind Mie-Nudeln mit ca. 138 kcal pro 100g etwas kalorienärmer als Spaghetti (ca. 157 kcal). Beide bestehen aus Weizen. Mie-Nudeln enthalten zusätzlich Ei, liefern aber weniger Ballaststoffe als Vollkornpasta."
+      "answer": "Gekocht sind Mie-Nudeln mit ca. 138 kcal pro 100g etwas kalorienärmer als Spaghetti (ca. 158 kcal). Beide bestehen aus Weizen. Mie-Nudeln enthalten zusätzlich Ei, liefern aber weniger Ballaststoffe als Vollkornpasta."
     }
   ],
   "related_foods": [

@@ -89,22 +89,46 @@
     {
       "name": "Orange (mittel, 130g)",
       "calories": 61,
-      "emoji": "🍊"
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "orange",
+          "g": 130
+        }
+      ]
     },
     {
       "name": "Apfel (mittel, 180g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Banane (mittel, 120g)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Kiwi (mittel, 70g)",
       "calories": 43,
-      "emoji": "🥝"
+      "emoji": "🥝",
+      "basis": [
+        {
+          "slug": "kiwi",
+          "g": 70
+        }
+      ]
     }
   ],
   "tips": [

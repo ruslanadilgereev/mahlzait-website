@@ -19,7 +19,7 @@
   "overview": {
     "calories_per_100g": 380,
     "protein_per_100g": 0.1,
-    "carbs_per_100g": 98,
+    "carbs_per_100g": 98.1,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 4,
@@ -79,24 +79,48 @@
   ],
   "comparison": [
     {
-      "name": "Weißer Zucker",
-      "calories": 405,
-      "emoji": "⬜"
+      "name": "Weißer Zucker (100g)",
+      "calories": 387,
+      "emoji": "⬜",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Honig",
+      "name": "Honig (100g)",
       "calories": 304,
-      "emoji": "🍯"
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Ahornsirup",
+      "name": "Ahornsirup (100g)",
       "calories": 260,
-      "emoji": "🍁"
+      "emoji": "🍁",
+      "basis": [
+        {
+          "slug": "ahornsirup",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Agavendicksaft",
+      "name": "Agavendicksaft (100g)",
       "calories": 310,
-      "emoji": "🌵"
+      "emoji": "🌵",
+      "basis": [
+        {
+          "slug": "agavendicksaft",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -133,7 +157,7 @@
     },
     {
       "question": "Hat brauner Zucker weniger Kalorien als weißer Zucker?",
-      "answer": "Nein, kaum. Brauner Zucker hat mit ca. 380 kcal pro 100g sogar minimal weniger als weißer Zucker (ca. 405 kcal), aber der Unterschied ist für die Ernährung nicht relevant."
+      "answer": "Nein, kaum. Brauner Zucker hat mit ca. 380 kcal pro 100g sogar minimal weniger als weißer Zucker (ca. 387 kcal), aber der Unterschied ist für die Ernährung nicht relevant."
     },
     {
       "question": "Wie viele Kohlenhydrate hat brauner Zucker?",

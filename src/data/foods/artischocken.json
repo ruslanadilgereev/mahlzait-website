@@ -25,7 +25,7 @@
     "fat_per_100g": 0.2,
     "fiber_per_100g": 5.4,
     "typical_portion_g": 130,
-    "typical_portion_name": "1 Artischocke (mittel, gekocht)"
+    "typical_portion_name": "1 Artischocke (mittel, roh, 130g essbar)"
   },
   "variants": [
     {
@@ -51,7 +51,13 @@
       "protein": 4,
       "carbs": 16,
       "fat": 0,
-      "tip": "Standard"
+      "tip": "Standard",
+      "basis": [
+        {
+          "fdcId": 168386,
+          "g": 130
+        }
+      ]
     },
     {
       "name": "Artischockenherz gekocht (60g)",
@@ -59,24 +65,13 @@
       "calories": 32,
       "protein": 2,
       "carbs": 7,
-      "fat": 0
-    },
-    {
-      "name": "Artischockenherzen aus dem Glas, abgetropft (100g)",
-      "portion_g": 100,
-      "calories": 30,
-      "protein": 3,
-      "carbs": 5,
-      "fat": 0
-    },
-    {
-      "name": "Antipasti-Artischocken in Öl, abgetropft (50g)",
-      "portion_g": 50,
-      "calories": 58,
-      "protein": 1,
-      "carbs": 2,
-      "fat": 6,
-      "tip": "Öl treibt die Kalorien hoch"
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 168386,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Artischocke gekocht, groß (180g)",
@@ -84,29 +79,59 @@
       "calories": 95,
       "protein": 5,
       "carbs": 22,
-      "fat": 1
+      "fat": 1,
+      "basis": [
+        {
+          "fdcId": 168386,
+          "g": 180
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Brokkoli",
+      "name": "Brokkoli (100g)",
       "calories": 34,
-      "emoji": "🥦"
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Spinat",
+      "name": "Spinat (100g)",
       "calories": 23,
-      "emoji": "🥬"
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "spinat",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Avocado",
+      "name": "Avocado (100g)",
       "calories": 160,
-      "emoji": "🥑"
+      "emoji": "🥑",
+      "basis": [
+        {
+          "slug": "avocado",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Hummus",
-      "calories": 166,
-      "emoji": "🧆"
+      "name": "Hummus (100g)",
+      "calories": 237,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -117,7 +142,7 @@
     },
     {
       "title": "Reich an Ballaststoffen",
-      "text": "Eine mittlere Artischocke liefert rund 7g Ballaststoffe – mehr als die meisten Gemüse. Das fördert die Verdauung und hält den Blutzucker stabil.",
+      "text": "Eine mittlere Artischocke liefert rund 7g Ballaststoffe, mehr als die meisten Gemüse. Das fördert die Verdauung und hält den Blutzucker stabil.",
       "icon": "🌾"
     },
     {
@@ -143,7 +168,7 @@
     },
     {
       "question": "Sind Artischocken gut zum Abnehmen?",
-      "answer": "Ja. Mit nur 47 kcal/100g, viel Wasser und 5,4g Ballaststoffen pro 100g sättigen Artischocken gut bei wenig Kalorien – ideal für eine kalorienbewusste Ernährung."
+      "answer": "Ja. Mit nur 47 kcal/100g, viel Wasser und 5,4g Ballaststoffen pro 100g sättigen Artischocken gut bei wenig Kalorien, ideal für eine kalorienbewusste Ernährung."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Artischocken?",
@@ -151,7 +176,7 @@
     },
     {
       "question": "Wie viel Eiweiß steckt in Artischocken?",
-      "answer": "Artischocken liefern rund 3,3g Eiweiß pro 100g – ungewöhnlich viel für ein Gemüse. Eine mittlere Artischocke bringt es so auf etwa 4g Protein."
+      "answer": "Artischocken liefern rund 3,3g Eiweiß pro 100g, ungewöhnlich viel für ein Gemüse. Eine mittlere Artischocke bringt es so auf etwa 4g Protein."
     },
     {
       "question": "Sind Artischocken gesund?",
@@ -159,7 +184,7 @@
     },
     {
       "question": "Wie viele Kalorien haben Artischockenherzen aus dem Glas?",
-      "answer": "In Lake eingelegte Artischockenherzen (in Salzlake) haben abgetropft ca. 30 kcal pro 100g. In Öl eingelegte Antipasti-Artischocken liegen durch das Öl deutlich höher bei rund 115 kcal pro 100g."
+      "answer": "In Lake eingelegte Artischockenherzen haben abgetropft nur wenige Kalorien. In Öl eingelegte Antipasti-Artischocken liegen durch das Öl deutlich höher."
     }
   ],
   "related_foods": [

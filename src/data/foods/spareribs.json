@@ -6,7 +6,7 @@
   "source": "USDA FoodData Central, FDC-ID 167854 (Pork, fresh, spareribs, separable lean and fat, cooked, braised), Werte je 100 g",
   "seo": {
     "title": "Spareribs Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Spareribs? Eine Standard-Portion (250g) hat ca. 975 kcal. Nährwerte pro 100g, Portionen im Vergleich & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien haben Spareribs? Eine Standard-Portion (250g) hat ca. 993 kcal. Nährwerte pro 100g, Portionen im Vergleich & Tipps zum Abnehmen.",
     "keywords": [
       "spareribs kalorien",
       "spareribs kcal",
@@ -19,10 +19,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 390,
-    "protein_per_100g": 29,
+    "calories_per_100g": 397,
+    "protein_per_100g": 29.1,
     "carbs_per_100g": 0,
-    "fat_per_100g": 30,
+    "fat_per_100g": 30.3,
     "fiber_per_100g": 0,
     "typical_portion_g": 250,
     "typical_portion_name": "Standard-Portion (250g)"
@@ -31,7 +31,7 @@
     {
       "name": "1 Rippe (ca. 30g)",
       "portion_g": 30,
-      "calories": 117,
+      "calories": 119,
       "protein": 9,
       "carbs": 0,
       "fat": 9
@@ -39,7 +39,7 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 585,
+      "calories": 596,
       "protein": 44,
       "carbs": 0,
       "fat": 45
@@ -47,64 +47,86 @@
     {
       "name": "Standard-Portion (250g)",
       "portion_g": 250,
-      "calories": 975,
-      "protein": 72,
+      "calories": 993,
+      "protein": 73,
       "carbs": 0,
-      "fat": 75,
+      "fat": 76,
       "tip": "Standard"
     },
     {
       "name": "Halbes Rack (350g)",
       "portion_g": 350,
-      "calories": 1365,
+      "calories": 1390,
       "protein": 102,
       "carbs": 0,
-      "fat": 105
+      "fat": 106
     },
     {
       "name": "Ganzes Rack (essbar ca. 420g)",
       "portion_g": 420,
-      "calories": 1638,
+      "calories": 1667,
       "protein": 122,
       "carbs": 0,
-      "fat": 126
+      "fat": 127
     },
     {
-      "name": "Glazed BBQ-Ribs mit Sauce (300g)",
+      "name": "BBQ-Ribs mit Sauce (250g + 50g Sauce)",
       "portion_g": 300,
-      "calories": 1290,
-      "protein": 78,
-      "carbs": 36,
-      "fat": 90,
-      "tip": "BBQ-Sauce bringt zusätzlichen Zucker"
+      "calories": 1079,
+      "protein": 73,
+      "carbs": 20,
+      "fat": 76,
+      "tip": "BBQ-Sauce bringt zusätzlichen Zucker",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "fdcId": 174523,
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Spareribs (250g)",
-      "calories": 975,
-      "emoji": "🍖"
-    },
-    {
       "name": "Bratwurst (250g)",
-      "calories": 750,
-      "emoji": "🌭"
+      "calories": 833,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Schweinebraten (250g)",
-      "calories": 725,
-      "emoji": "🐷"
+      "calories": 453,
+      "emoji": "🐷",
+      "basis": [
+        {
+          "slug": "schweinebraten",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Chicken Wings (250g)",
-      "calories": 625,
-      "emoji": "🍗"
+      "calories": 635,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-wings",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sehr kalorien- und fettreich",
-      "text": "Spareribs liefern ca. 390 kcal pro 100g, davon rund 30g Fett. Eine Standard-Portion (250g) kommt schnell auf etwa 975 kcal – also bewusst genießen.",
+      "text": "Spareribs liefern ca. 397 kcal pro 100g, davon rund 30g Fett. Eine Standard-Portion (250g) kommt schnell auf etwa 993 kcal, also bewusst genießen.",
       "icon": "🍖"
     },
     {
@@ -113,8 +135,8 @@
       "icon": "💪"
     },
     {
-      "title": "Fast keine Kohlenhydrate – Low Carb tauglich",
-      "text": "Pures Rippchen-Fleisch enthält praktisch keine Kohlenhydrate. Vorsicht nur bei BBQ- oder Honig-Glasur: die Sauce bringt schnell 30-40g Zucker dazu.",
+      "title": "Fast keine Kohlenhydrate, Low Carb tauglich",
+      "text": "Pures Rippchen-Fleisch enthält praktisch keine Kohlenhydrate. Vorsicht nur bei BBQ- oder Honig-Glasur: 50g BBQ-Sauce bringen rund 20g Kohlenhydrate, fast nur Zucker, dazu.",
       "icon": "🥩"
     },
     {
@@ -131,15 +153,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Spareribs?",
-      "answer": "Gegarte Spareribs haben ca. 390 kcal pro 100g. Eine Standard-Portion (250g) kommt auf etwa 975 kcal, ein halbes Rack (350g) auf rund 1365 kcal."
+      "answer": "Gegarte Spareribs haben ca. 397 kcal pro 100g. Eine Standard-Portion (250g) kommt auf etwa 993 kcal, ein halbes Rack (350g) auf rund 1390 kcal."
     },
     {
       "question": "Wie viel Protein haben Spareribs?",
-      "answer": "Spareribs liefern ca. 29g Eiweiß pro 100g. Eine Portion von 250g enthält damit über 70g Protein – das macht sie zu einer sehr eiweißreichen Mahlzeit."
+      "answer": "Spareribs liefern ca. 29g Eiweiß pro 100g. Eine Portion von 250g enthält damit über 70g Protein, das macht sie zu einer sehr eiweißreichen Mahlzeit."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Spareribs?",
-      "answer": "Pure Spareribs enthalten praktisch 0g Kohlenhydrate. Erst durch BBQ-Sauce, Honig oder Marinade kommen Kohlenhydrate und Zucker dazu (oft 30-40g pro Portion)."
+      "answer": "Pure Spareribs enthalten praktisch 0g Kohlenhydrate. Erst durch BBQ-Sauce, Honig oder Marinade kommen Kohlenhydrate und Zucker dazu (50g BBQ-Sauce rund 20g)."
     },
     {
       "question": "Sind Spareribs zum Abnehmen geeignet?",
@@ -151,7 +173,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein ganzes Rack Spareribs?",
-      "answer": "Ein ganzes Rack mit etwa 420g essbarem Fleisch hat rund 1638 kcal. Mit Knochen wiegt ein Rack zwar mehr, der reine Fleischanteil ist aber kleiner."
+      "answer": "Ein ganzes Rack mit etwa 420g essbarem Fleisch hat rund 1667 kcal. Mit Knochen wiegt ein Rack zwar mehr, der reine Fleischanteil ist aber kleiner."
     }
   ],
   "related_foods": [

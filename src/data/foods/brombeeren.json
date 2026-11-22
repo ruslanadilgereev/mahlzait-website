@@ -47,7 +47,7 @@
     {
       "name": "1 Portion (150 g)",
       "portion_g": 150,
-      "calories": 64,
+      "calories": 65,
       "protein": 2,
       "carbs": 14,
       "fat": 1,
@@ -72,11 +72,17 @@
     {
       "name": "Tiefkühl-Brombeeren (200 g)",
       "portion_g": 200,
-      "calories": 86,
-      "protein": 3,
-      "carbs": 19,
+      "calories": 128,
+      "protein": 2,
+      "carbs": 31,
       "fat": 1,
-      "tip": "Ganzjährig erhältlich"
+      "tip": "Ganzjährig erhältlich",
+      "basis": [
+        {
+          "fdcId": 171710,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Smoothie-Portion (80 g)",
@@ -90,23 +96,47 @@
   "comparison": [
     {
       "name": "Blaubeeren (125 g)",
-      "calories": 72,
-      "emoji": "🫐"
+      "calories": 71,
+      "emoji": "🫐",
+      "basis": [
+        {
+          "slug": "blaubeeren",
+          "g": 125
+        }
+      ]
     },
     {
       "name": "Erdbeeren (125 g)",
       "calories": 40,
-      "emoji": "🍓"
+      "emoji": "🍓",
+      "basis": [
+        {
+          "slug": "erdbeeren",
+          "g": 125
+        }
+      ]
     },
     {
       "name": "Weintrauben (125 g)",
-      "calories": 84,
-      "emoji": "🍇"
+      "calories": 86,
+      "emoji": "🍇",
+      "basis": [
+        {
+          "slug": "weintrauben",
+          "g": 125
+        }
+      ]
     },
     {
       "name": "Apfel (180 g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     }
   ],
   "tips": [
@@ -139,7 +169,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Brombeeren?",
-      "answer": "Brombeeren haben nur 43 kcal pro 100 g. Eine übliche Schale (125 g) kommt auf etwa 54 kcal, eine Portion von 150 g auf rund 64 kcal."
+      "answer": "Brombeeren haben nur 43 kcal pro 100 g. Eine übliche Schale (125 g) kommt auf etwa 54 kcal, eine Portion von 150 g auf rund 65 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Brombeeren?",
@@ -159,7 +189,7 @@
     },
     {
       "question": "Haben tiefgekühlte Brombeeren mehr Kalorien?",
-      "answer": "Nein. Tiefgekühlte Brombeeren ohne Zuckerzusatz haben praktisch dieselben Nährwerte wie frische, also etwa 43 kcal pro 100 g."
+      "answer": "Etwas mehr: Tiefgekühlte Brombeeren ohne Zuckerzusatz kommen laut FDC auf rund 64 kcal pro 100 g (200 g: 128 kcal), frische auf 43 kcal. Mit Zucker sind es deutlich mehr."
     }
   ],
   "related_foods": [

@@ -95,22 +95,48 @@
     {
       "name": "Döner im Brot",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Lahmacun",
       "calories": 351,
-      "emoji": "🫓"
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "lahmacun",
+          "variante": "Lahmacun pur"
+        }
+      ]
     },
     {
       "name": "Burger mit Pommes",
-      "calories": 950,
-      "emoji": "🍔"
+      "calories": 886,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger"
+        },
+        {
+          "slug": "pommes-frites",
+          "variante": "Pommes frittiert (klassisch)"
+        }
+      ]
     },
     {
       "name": "Falafel-Sandwich",
-      "calories": 620,
-      "emoji": "🧆"
+      "calories": 570,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "falafel-sandwich"
+        }
+      ]
     }
   ],
   "tips": [

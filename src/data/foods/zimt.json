@@ -87,24 +87,45 @@
   ],
   "comparison": [
     {
-      "name": "Zimt (1 TL)",
-      "calories": 6,
-      "emoji": "🟫"
+      "name": "Kurkuma (1 TL)",
+      "calories": 9,
+      "emoji": "🟫",
+      "basis": [
+        {
+          "slug": "kurkuma"
+        }
+      ]
     },
     {
       "name": "Zucker (1 TL)",
-      "calories": 16,
-      "emoji": "🧂"
+      "calories": 15,
+      "emoji": "🧂",
+      "basis": [
+        {
+          "slug": "zucker"
+        }
+      ]
     },
     {
       "name": "Honig (1 TL)",
-      "calories": 22,
-      "emoji": "🍯"
+      "calories": 30,
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig"
+        }
+      ]
     },
     {
-      "name": "Kakao (1 TL)",
-      "calories": 9,
-      "emoji": "🍫"
+      "name": "Kakaopulver (1 TL, 1,8g)",
+      "calories": 4,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 169593,
+          "g": 1.8
+        }
+      ]
     }
   ],
   "tips": [

@@ -3,10 +3,10 @@
   "name": "Cini Minis",
   "emoji": "🥣",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 2708450 (Cereal, cinnamon toast), Werte je 100 g; allgemeiner FDC-Eintrag, FDC führt Cini Minis nicht",
+  "source": "USDA FoodData Central, FDC-ID 2708450 (Cereal, cinnamon toast), Werte je 100 g",
   "seo": {
     "title": "Cini Minis Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Cini Minis? Eine Portion (30 g) hat ca. 126 kcal, 100 g ca. 420 kcal. Alle Nährwerte, Portionen im Vergleich + Tipps zum Genuss.",
+    "description": "Wie viele Kalorien hat Cini Minis? Eine Portion (30 g) hat ca. 124 kcal, 100 g ca. 414 kcal. Alle Nährwerte, Portionen im Vergleich + Tipps zum Genuss.",
     "keywords": [
       "cini minis kalorien",
       "cini minis kcal",
@@ -18,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 420,
-    "protein_per_100g": 6.1,
-    "carbs_per_100g": 73.4,
-    "fat_per_100g": 10.3,
-    "fiber_per_100g": 5,
+    "calories_per_100g": 414,
+    "protein_per_100g": 5.9,
+    "carbs_per_100g": 75.2,
+    "fat_per_100g": 9.9,
+    "fiber_per_100g": 5.1,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Portion (30 g, trocken)"
   },
@@ -30,94 +30,138 @@
     {
       "name": "Kleine Portion (30 g, trocken)",
       "portion_g": 30,
-      "calories": 126,
+      "calories": 124,
       "protein": 1.8,
-      "carbs": 22,
-      "fat": 3.1,
+      "carbs": 22.6,
+      "fat": 3,
       "tip": "Empfohlene Portion laut Hersteller"
     },
     {
       "name": "Mittlere Portion (40 g, trocken)",
       "portion_g": 40,
-      "calories": 168,
+      "calories": 166,
       "protein": 2.4,
-      "carbs": 29.4,
-      "fat": 4.1
+      "carbs": 30.1,
+      "fat": 4
     },
     {
       "name": "Große Portion (50 g, trocken)",
       "portion_g": 50,
-      "calories": 210,
-      "protein": 3.1,
-      "carbs": 36.7,
-      "fat": 5.2
+      "calories": 207,
+      "protein": 3,
+      "carbs": 37.6,
+      "fat": 5
     },
     {
       "name": "XL-Schüssel (60 g, trocken)",
       "portion_g": 60,
-      "calories": 252,
-      "protein": 3.7,
-      "carbs": 44,
-      "fat": 6.2
+      "calories": 248,
+      "protein": 3.5,
+      "carbs": 45.1,
+      "fat": 5.9
     },
     {
-      "name": "30 g + 125 ml fettarme Milch (1,5 %)",
-      "portion_g": 30,
-      "calories": 185,
-      "protein": 5.9,
-      "carbs": 28,
-      "fat": 5.1,
-      "tip": "Klassisches Frühstück mit Milch"
+      "name": "30 g + 125 ml fettarme Milch (1 %)",
+      "portion_g": 159,
+      "calories": 178,
+      "protein": 6.1,
+      "carbs": 29,
+      "fat": 4.2,
+      "tip": "Klassisches Frühstück mit Milch",
+      "basis": [
+        {
+          "g": 30
+        },
+        {
+          "fdcId": 170872,
+          "ml": 125,
+          "g": 129
+        }
+      ]
     },
     {
       "name": "40 g + 150 ml Vollmilch (3,5 %)",
-      "portion_g": 40,
-      "calories": 264,
-      "protein": 7.5,
-      "carbs": 36.6,
-      "fat": 10.1,
-      "tip": "Sättigender, aber kalorienreicher"
+      "portion_g": 190,
+      "calories": 257,
+      "protein": 7.2,
+      "carbs": 37.3,
+      "fat": 8.9,
+      "tip": "Sättigender, aber kalorienreicher",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "slug": "milch",
+          "ml": 150,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "100 g (trocken)",
       "portion_g": 100,
-      "calories": 420,
-      "protein": 6.1,
-      "carbs": 73.4,
-      "fat": 10.3
+      "calories": 414,
+      "protein": 5.9,
+      "carbs": 75.2,
+      "fat": 9.9
     }
   ],
   "comparison": [
     {
-      "name": "Cornflakes",
-      "calories": 114,
-      "emoji": "🌽"
-    },
-    {
-      "name": "Müsli",
+      "name": "Cornflakes (30 g)",
       "calories": 110,
-      "emoji": "🥣"
+      "emoji": "🌽",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Granola",
-      "calories": 144,
-      "emoji": "🥣"
+      "name": "Müsli (30 g)",
+      "calories": 115,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "muesli",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Haferflocken",
-      "calories": 113,
-      "emoji": "🌾"
+      "name": "Granola (30 g)",
+      "calories": 126,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "granola",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Haferflocken (30 g)",
+      "calories": 114,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion abwiegen lohnt sich",
-      "text": "Die meisten füllen sich 50 bis 60 g in die Schüssel. Das sind schon 210 bis 252 kcal allein für die Cerealien. Mit einer Küchenwaage behältst du den Überblick.",
+      "text": "Die meisten füllen sich 50 bis 60 g in die Schüssel. Das sind schon 207 bis 248 kcal allein für die Cerealien. Mit einer Küchenwaage behältst du den Überblick.",
       "icon": "⚖️"
     },
     {
       "title": "Auf den Zucker achten",
-      "text": "Cini Minis enthalten rund 24,9 g Zucker pro 100 g. Eine 30-g-Portion liefert damit etwa 7,5 g Zucker, also ungefähr zweieinhalb Stück Würfelzucker.",
+      "text": "Zimt-Cerealien dieser Art enthalten laut FDC rund 29,8 g Zucker pro 100 g. Eine 30-g-Portion liefert damit etwa 9 g Zucker, also ungefähr drei Stück Würfelzucker.",
       "icon": "🍬"
     },
     {
@@ -139,23 +183,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Portion Cini Minis?",
-      "answer": "Eine Portion von 30 g (trocken) hat ca. 126 kcal. Mit 125 ml fettarmer Milch kommst du auf etwa 185 kcal."
+      "answer": "Eine Portion von 30 g (trocken) hat ca. 124 kcal. Mit 125 ml fettarmer Milch (1 %) kommst du auf etwa 178 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 100 g Cini Minis?",
-      "answer": "100 g Cini Minis haben ca. 420 kcal. Dazu kommen 73,4 g Kohlenhydrate, 10,3 g Fett und 6,1 g Eiweiß."
+      "answer": "100 g Cini Minis haben ca. 414 kcal. Dazu kommen 75,2 g Kohlenhydrate, 9,9 g Fett und 5,9 g Eiweiß."
     },
     {
       "question": "Wie viel Zucker stecken in Cini Minis?",
-      "answer": "Cini Minis enthalten rund 24,9 g Zucker pro 100 g. Eine 30-g-Portion liefert damit etwa 7,5 g Zucker."
+      "answer": "Zimt-Cerealien wie Cini Minis enthalten laut FDC rund 29,8 g Zucker pro 100 g. Eine 30-g-Portion liefert damit etwa 9 g Zucker."
     },
     {
       "question": "Wie viel Eiweiß haben Cini Minis?",
-      "answer": "Cini Minis liefern nur etwa 6,1 g Eiweiß pro 100 g. Eine 30-g-Portion enthält rund 1,8 g, mit Milch steigt der Wert deutlich an."
+      "answer": "Cini Minis liefern nur etwa 5,9 g Eiweiß pro 100 g. Eine 30-g-Portion enthält rund 1,8 g, mit Milch steigt der Wert deutlich an."
     },
     {
       "question": "Sind Cini Minis zum Abnehmen geeignet?",
-      "answer": "Cini Minis sind mit 420 kcal und viel Zucker pro 100 g eher kalorienreich. In kleinen Portionen sind sie okay, zum Abnehmen eignen sich ballaststoffreiche Haferflocken besser."
+      "answer": "Cini Minis sind mit 414 kcal und viel Zucker pro 100 g eher kalorienreich. In kleinen Portionen sind sie okay, zum Abnehmen eignen sich ballaststoffreiche Haferflocken besser."
     },
     {
       "question": "Sind Cini Minis gesund?",

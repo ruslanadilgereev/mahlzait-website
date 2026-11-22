@@ -19,7 +19,7 @@
   },
   "overview": {
     "calories_per_100g": 154,
-    "protein_per_100g": 10.5,
+    "protein_per_100g": 10.6,
     "carbs_per_100g": 0.6,
     "fat_per_100g": 11.7,
     "fiber_per_100g": 0,
@@ -56,60 +56,118 @@
     {
       "name": "Omelett ohne Fett (aus Eiern, 150g)",
       "portion_g": 150,
-      "calories": 195,
-      "protein": 17,
-      "carbs": 1,
-      "fat": 13,
-      "tip": "Beschichtete Pfanne, ohne Butter/Öl"
+      "calories": 224,
+      "protein": 18,
+      "carbs": 2,
+      "fat": 16,
+      "tip": "Beschichtete Pfanne, ohne Butter/Öl",
+      "basis": [
+        {
+          "fdcId": 2707203,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Eiweiß-Omelett (aus 4 Eiweiß, 130g)",
       "portion_g": 130,
-      "calories": 70,
-      "protein": 15,
-      "carbs": 1,
-      "fat": 0,
-      "tip": "Fettarm & proteinreich"
+      "calories": 77,
+      "protein": 14,
+      "carbs": 3,
+      "fat": 1,
+      "tip": "Fettarm & proteinreich",
+      "basis": [
+        {
+          "fdcId": 2707287,
+          "g": 130
+        }
+      ]
     },
     {
       "name": "Käse-Omelett (180g)",
       "portion_g": 180,
-      "calories": 360,
-      "protein": 24,
-      "carbs": 2,
-      "fat": 28,
-      "tip": "Mit ca. 30g Käse"
+      "calories": 365,
+      "protein": 23,
+      "carbs": 3,
+      "fat": 29,
+      "tip": "Mit Käse, in Butter gebraten",
+      "basis": [
+        {
+          "fdcId": 2707209,
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Gemüse-Omelett (200g)",
       "portion_g": 200,
-      "calories": 250,
-      "protein": 17,
+      "calories": 232,
+      "protein": 15,
       "carbs": 5,
-      "fat": 18,
-      "tip": "Mit Paprika, Tomate & Zwiebel"
+      "fat": 17,
+      "tip": "Mit Paprika, Tomate & Zwiebel",
+      "basis": [
+        {
+          "g": 140
+        },
+        {
+          "fdcId": 170108,
+          "g": 25
+        },
+        {
+          "fdcId": 170457,
+          "g": 20
+        },
+        {
+          "fdcId": 170000,
+          "g": 15
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Rührei (3 Eier)",
-      "calories": 245,
-      "emoji": "🍳"
+      "name": "Rührei (3 Eier, 180g)",
+      "calories": 268,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "ruehrei",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Ei (gekocht, Stück)",
-      "calories": 78,
-      "emoji": "🥚"
+      "calories": 93,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "ei"
+        }
+      ]
     },
     {
       "name": "Pancakes (2 Stück)",
-      "calories": 230,
-      "emoji": "🥞"
+      "calories": 272,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "slug": "pancakes",
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Haferflocken (50g)",
-      "calories": 187,
-      "emoji": "🥣"
+      "calories": 190,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
@@ -120,7 +178,7 @@
     },
     {
       "title": "Kalorien beim Braten sparen",
-      "text": "In einer beschichteten Pfanne brauchst du kaum Fett. Ohne Butter oder Öl sparst du je Omelett gut 30-40 kcal.",
+      "text": "In einer beschichteten Pfanne brauchst du kaum Fett. Ohne Butter oder Öl sparst du so die Kalorien des Bratfetts.",
       "icon": "🍳"
     },
     {
@@ -146,7 +204,7 @@
     },
     {
       "question": "Wie viel Eiweiß hat ein Omelett?",
-      "answer": "Ein Omelett aus 3 Eiern liefert ca. 16g Eiweiß. Pro 100g enthält ein Omelett etwa 10,5g Protein."
+      "answer": "Ein Omelett aus 3 Eiern liefert ca. 16g Eiweiß. Pro 100g enthält ein Omelett etwa 10,6g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Omelett?",
@@ -154,7 +212,7 @@
     },
     {
       "question": "Ist ein Omelett zum Abnehmen geeignet?",
-      "answer": "Ja. Durch den hohen Eiweißanteil sättigt ein Omelett gut. Wer Kalorien sparen will, brät ohne Fett oder nutzt ein Eiweiß-Omelett mit nur rund 70 kcal."
+      "answer": "Ja. Durch den hohen Eiweißanteil sättigt ein Omelett gut. Wer Kalorien sparen will, brät ohne Fett oder nutzt ein Eiweiß-Omelett mit nur rund 77 kcal."
     },
     {
       "question": "Ist ein Omelett gesund?",
@@ -162,7 +220,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Käse-Omelett?",
-      "answer": "Ein Käse-Omelett (ca. 180g, mit rund 30g Käse) hat etwa 360 kcal. Käse erhöht vor allem den Fettgehalt deutlich."
+      "answer": "Ein Käse-Omelett (ca. 180g) hat laut FDC etwa 365 kcal. Käse erhöht vor allem den Fettgehalt deutlich."
     }
   ],
   "related_foods": [

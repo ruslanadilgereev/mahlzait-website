@@ -93,10 +93,9 @@ Was den Abnehm-Effekt zunichte macht:
 | Getränk | Kalorien | Problem |
 |---------|----------|---------|
 | Schwarzer Kaffee | ~2 kcal | ✓ Kein Problem |
-| [Cappuccino](/kalorien/cappuccino/) | ~80–120 kcal | Milchkalorien |
-| Latte Macchiato | ~150–200 kcal | Viel Milch |
-| Frappuccino (Starbucks) | ~300–500 kcal | Zucker + Sahne |
-| Kaffee + 2 Löffel Zucker | ~40 kcal extra | Zucker-Kalorien |
+| [Cappuccino](/kalorien/cappuccino/) | ~55 kcal | Milchkalorien |
+| Latte Macchiato | ~131 kcal | Viel Milch |
+| Kaffee + 2 Löffel Zucker | ~31 kcal extra | Zucker-Kalorien |
 
 **Ein Frappuccino am Tag = 3.500 Extra-Kalorien pro Woche = ~0.5 kg Fettzunahme pro Monat**
 
@@ -130,7 +129,7 @@ Bei moderatem Konsum (3–4 Tassen) gibt es keine Dehydrierung.
 
 ## Limitationen und Einordnung
 
-- **Effektgröße ist klein:** 3–4% mehr Stoffwechsel klingt gut, ist aber nur 60–80 kcal – ein halber [Apfel](/kalorien/apfel/)
+- **Effektgröße ist klein:** 3 bis 4% mehr Stoffwechsel klingt gut, ist aber nur 60 bis 80 kcal, etwa drei Viertel eines [Apfels](/kalorien/apfel/)
 - **Gewöhnungseffekt:** Bei Vieltrinkern nimmt die Stoffwechselwirkung ab (Toleranz)
 - **Individuelle Unterschiede:** Manche Menschen verstoffwechseln Koffein schneller (Genetik), bei ihnen ist der Effekt kürzer
 - **Schlaf beachten:** Koffein zu spät am Tag kann den Schlaf stören – und schlechter Schlaf fördert Übergewicht (siehe unseren Artikel dazu)

@@ -3,7 +3,7 @@
   "name": "Sauerbraten",
   "emoji": "🥩",
   "category": "gericht",
-  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Portionen à 300 g mit Soße): 650 g Rinderschmorbraten (Unterschale), geschmort, mager (FDC-ID 170628, Beef, round, bottom round, steak, separable lean only, trimmed to 0\" fat, all grades, cooked, braised: 214 kcal), 350 g Schmorfond aus Marinade und Brühe (FDC-ID 172883, Soup, stock, beef, home-prepared: 13 kcal), 100 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 60 g Karotten (FDC-ID 170394, Carrots, cooked, boiled, drained, without salt: 35 kcal), 40 g Rosinen (FDC-ID 168165, Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program): 299 kcal), 40 g Printen (Lebkuchen) zum Binden (FDC-ID 174956, Cookies, gingersnaps: 416 kcal), 20 g Zuckerrübensirup (wie Melasse) (FDC-ID 168820, Molasses: 290 kcal), 15 g Rapsöl (Anbraten) (FDC-ID 172336, Oil, canola: 884 kcal); 1275 g Zutaten ergeben 1200 g (Einkochen der Soße rund 6 % (Annahme)); Werte je 100 g",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Portionen à 300 g mit Soße): 650 g Rinderschmorbraten (Unterschale), geschmort, mager (FDC-ID 170628, Beef, round, bottom round, steak, separable lean only, trimmed to 0\" fat, all grades, cooked, braised: 214 kcal), 350 g Schmorfond aus Marinade und Brühe (FDC-ID 172883, Soup, stock, beef, home-prepared: 13 kcal), 100 g Zwiebeln (FDC-ID 170000, Onions, raw: 40 kcal), 60 g Karotten (FDC-ID 170394, Carrots, cooked, boiled, drained, without salt: 35 kcal), 40 g Rosinen (FDC-ID 168165, Raisins, dark, seedless (Includes foods for USDA's Food Distribution Program): 299 kcal), 40 g Printen (Lebkuchen) zum Binden (FDC-ID 2707943, Cookie, Lebkuchen: 430 kcal), 20 g Zuckerrübensirup (wie Melasse) (FDC-ID 168820, Molasses: 290 kcal), 15 g Rapsöl (Anbraten) (FDC-ID 172336, Oil, canola: 884 kcal); 1275 g Zutaten ergeben 1200 g (Einkochen der Soße rund 6 % (Annahme)); Werte je 100 g",
   "rezept": {
     "zutaten": [
       {
@@ -34,7 +34,7 @@
       {
         "name": "Printen (Lebkuchen) zum Binden",
         "g": 40,
-        "fdcId": 174956
+        "fdcId": 2707943
       },
       {
         "name": "Zuckerrübensirup (wie Melasse)",
@@ -56,8 +56,8 @@
   "overview": {
     "calories_per_100g": 165,
     "protein_per_100g": 19.4,
-    "carbs_per_100g": 8,
-    "fat_per_100g": 5.8,
+    "carbs_per_100g": 7.9,
+    "fat_per_100g": 5.9,
     "fiber_per_100g": 0.5,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Portion mit Soße"
@@ -69,7 +69,7 @@
       "calories": 495,
       "protein": 58,
       "carbs": 24,
-      "fat": 17,
+      "fat": 18,
       "tip": "Klassiker mit Rosinen-Soße"
     },
     {
@@ -154,7 +154,7 @@
     },
     {
       "name": "Gulasch",
-      "calories": 321,
+      "calories": 378,
       "emoji": "🍲",
       "basis": [
         {

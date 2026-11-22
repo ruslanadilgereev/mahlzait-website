@@ -3,10 +3,9 @@
   "name": "Räuchertofu",
   "emoji": "🟫",
   "category": "supermarkt",
-  "source": "USDA FoodData Central, FDC-ID 172475 (Tofu, raw, firm, prepared with calcium sulfate), Werte je 100 g",
   "seo": {
     "title": "Räuchertofu Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Räuchertofu? 100g haben ca. 144 kcal und 17g Eiweiß. Nährwerte pro Portion, Kohlenhydrate & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Räuchertofu? 100g haben ca. 145 kcal und 16g Eiweiß. Nährwerte pro Portion, Kohlenhydrate & Tipps zum Abnehmen.",
     "keywords": [
       "kalorien räuchertofu",
       "räuchertofu kalorien",
@@ -17,11 +16,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 144,
-    "protein_per_100g": 17.3,
-    "carbs_per_100g": 2.8,
-    "fat_per_100g": 8.7,
-    "fiber_per_100g": 2.3,
+    "calories_per_100g": 145,
+    "protein_per_100g": 16,
+    "carbs_per_100g": 1.2,
+    "fat_per_100g": 8.5,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 100,
     "typical_portion_name": "1/2 Packung (100g)"
   },
@@ -30,121 +29,88 @@
       "name": "Kleine Portion (50g)",
       "portion_g": 50,
       "calories": 72,
-      "protein": 8.7,
-      "carbs": 1.4,
-      "fat": 4.4
+      "protein": 8,
+      "carbs": 0.6,
+      "fat": 4.2
     },
     {
       "name": "1/2 Packung (100g)",
       "portion_g": 100,
-      "calories": 144,
-      "protein": 17.3,
-      "carbs": 2.8,
-      "fat": 8.7,
+      "calories": 145,
+      "protein": 16,
+      "carbs": 1.2,
+      "fat": 8.5,
       "tip": "Standard"
     },
     {
       "name": "Ganze Packung (200g)",
       "portion_g": 200,
-      "calories": 288,
-      "protein": 34.6,
-      "carbs": 5.6,
-      "fat": 17.4,
+      "calories": 290,
+      "protein": 32,
+      "carbs": 2.4,
+      "fat": 17,
       "tip": "Übliche Supermarkt-Packung"
     },
     {
       "name": "Würfel im Salat (80g)",
       "portion_g": 80,
-      "calories": 115,
-      "protein": 13.8,
-      "carbs": 2.2,
-      "fat": 7
+      "calories": 116,
+      "protein": 12.8,
+      "carbs": 1,
+      "fat": 6.8
     },
     {
       "name": "Scheiben in der Pfanne (160g)",
       "portion_g": 160,
-      "calories": 230,
-      "protein": 27.7,
-      "carbs": 4.5,
-      "fat": 13.9
+      "calories": 232,
+      "protein": 25.6,
+      "carbs": 1.9,
+      "fat": 13.6
     },
     {
-      "name": "Gebraten mit 1 EL Öl (100g Tofu)",
-      "portion_g": 114,
-      "calories": 268,
-      "protein": 17.3,
-      "carbs": 2.8,
-      "fat": 22.7,
-      "tip": "Mit 1 EL Öl zum Anbraten",
-      "basis": [
-        {
-          "g": 100
-        },
-        {
-          "fdcId": 172336,
-          "g": 14
-        }
-      ]
+      "name": "Gebraten in Öl (100g)",
+      "portion_g": 100,
+      "calories": 195,
+      "protein": 16,
+      "carbs": 1.2,
+      "fat": 14,
+      "tip": "Mit 1 EL Öl zum Anbraten"
     },
     {
       "name": "Snack-Würfel (30g)",
       "portion_g": 30,
-      "calories": 43,
-      "protein": 5.2,
-      "carbs": 0.8,
+      "calories": 44,
+      "protein": 4.8,
+      "carbs": 0.4,
       "fat": 2.6
     }
   ],
   "comparison": [
     {
-      "name": "Naturtofu (100g)",
-      "calories": 144,
-      "emoji": "⬜",
-      "basis": [
-        {
-          "fdcId": 172475,
-          "g": 100
-        }
-      ]
+      "name": "Naturtofu",
+      "calories": 127,
+      "emoji": "⬜"
     },
     {
-      "name": "Tempeh (100g)",
+      "name": "Tempeh",
       "calories": 192,
-      "emoji": "🟤",
-      "basis": [
-        {
-          "slug": "tempeh",
-          "g": 100
-        }
-      ]
+      "emoji": "🟤"
     },
     {
-      "name": "Hähnchenbrust (100g)",
+      "name": "Hähnchenbrust",
       "calories": 165,
-      "emoji": "🍗",
-      "basis": [
-        {
-          "slug": "haehnchenbrust",
-          "g": 100
-        }
-      ]
+      "emoji": "🍗"
     },
     {
-      "name": "Feta (100g)",
-      "calories": 265,
-      "emoji": "🧀",
-      "basis": [
-        {
-          "fdcId": 173420,
-          "g": 100
-        }
-      ]
+      "name": "Feta",
+      "calories": 264,
+      "emoji": "🧀"
     }
   ],
   "tips": [
     {
       "title": "Eiweißquelle ohne Fleisch",
-      "text": "100g Räuchertofu liefern 17g pflanzliches Eiweiß bei nur 144 kcal. Damit ist er eine gute Alternative zu Fleisch und Käse.",
+      "text": "100g Räuchertofu liefern 16g pflanzliches Eiweiß bei nur 145 kcal. Damit ist er eine gute Alternative zu Fleisch und Käse.",
       "icon": "💪"
     },
     {
@@ -154,7 +120,7 @@
     },
     {
       "title": "Ohne zusätzliches Öl braten",
-      "text": "In einer beschichteten Pfanne lässt sich Räuchertofu fast ohne Öl anbraten und spart so bis zu rund 124 kcal pro Portion (1 EL Öl).",
+      "text": "In einer beschichteten Pfanne lässt sich Räuchertofu fast ohne Öl anbraten und spart so 50 bis 100 kcal pro Portion.",
       "icon": "🍳"
     },
     {
@@ -171,19 +137,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Räuchertofu?",
-      "answer": "100g Räuchertofu haben ca. 144 kcal. Eine ganze Packung (200g) kommt auf rund 288 kcal."
+      "answer": "100g Räuchertofu haben ca. 145 kcal. Eine ganze Packung (200g) kommt auf rund 290 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in Räuchertofu?",
-      "answer": "Räuchertofu liefert etwa 17g Eiweiß pro 100g. Eine ganze Packung (200g) enthält damit rund 35g Protein."
+      "answer": "Räuchertofu liefert etwa 16g Eiweiß pro 100g. Eine ganze Packung (200g) enthält damit rund 32g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Räuchertofu?",
-      "answer": "Räuchertofu ist sehr kohlenhydratarm: nur etwa 2,8g pro 100g. Damit eignet er sich gut für eine Low-Carb-Ernährung."
+      "answer": "Räuchertofu ist sehr kohlenhydratarm: nur etwa 1,2g pro 100g. Damit eignet er sich gut für eine Low-Carb-Ernährung."
     },
     {
       "question": "Ist Räuchertofu zum Abnehmen geeignet?",
-      "answer": "Ja. Räuchertofu hat mit 144 kcal pro 100g eine moderate Kaloriendichte, kaum Kohlenhydrate und viel sättigendes Eiweiß."
+      "answer": "Ja. Räuchertofu hat mit 145 kcal pro 100g eine moderate Kaloriendichte, kaum Kohlenhydrate und viel sättigendes Eiweiß."
     },
     {
       "question": "Ist Räuchertofu gesund?",

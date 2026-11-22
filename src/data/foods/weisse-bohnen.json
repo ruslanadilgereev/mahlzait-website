@@ -21,7 +21,7 @@
     "protein_per_100g": 9.7,
     "carbs_per_100g": 25.1,
     "fat_per_100g": 0.4,
-    "fiber_per_100g": 10.5,
+    "fiber_per_100g": 6.3,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Portion gekocht (150g)"
   },
@@ -55,10 +55,16 @@
       "name": "Weiße Bohnen aus der Dose, abgetropft (240g)",
       "portion_g": 240,
       "calories": 274,
-      "protein": 17.8,
-      "carbs": 50.4,
+      "protein": 17.4,
+      "carbs": 50.9,
       "fat": 0.7,
-      "tip": "1 Dose Abtropfgewicht"
+      "tip": "1 Dose Abtropfgewicht",
+      "basis": [
+        {
+          "fdcId": 175204,
+          "g": 240
+        }
+      ]
     },
     {
       "name": "Getrocknet, roh (100g)",
@@ -67,7 +73,13 @@
       "protein": 23.4,
       "carbs": 60.3,
       "fat": 0.9,
-      "tip": "Vor dem Kochen einweichen"
+      "tip": "Vor dem Kochen einweichen",
+      "basis": [
+        {
+          "fdcId": 175202,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Getrocknet, roh (30g pro Person)",
@@ -75,38 +87,81 @@
       "calories": 100,
       "protein": 7,
       "carbs": 18.1,
-      "fat": 0.3
+      "fat": 0.3,
+      "basis": [
+        {
+          "fdcId": 175202,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Weißer Bohnensalat (200g)",
       "portion_g": 200,
-      "calories": 320,
-      "protein": 16,
-      "carbs": 42,
-      "fat": 9,
-      "tip": "Mit Öl und Zwiebeln"
+      "calories": 328,
+      "protein": 16.3,
+      "carbs": 43.8,
+      "fat": 10.7,
+      "tip": "Mit 10g Olivenöl und Zwiebeln",
+      "basis": [
+        {
+          "g": 165
+        },
+        {
+          "fdcId": 171413,
+          "g": 10
+        },
+        {
+          "fdcId": 170000,
+          "g": 25
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Kidneybohnen",
+      "name": "Kidneybohnen (100g)",
       "calories": 127,
-      "emoji": "🫘"
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "kidneybohnen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kichererbsen",
+      "name": "Kichererbsen (100g)",
       "calories": 164,
-      "emoji": "🫘"
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "kichererbsen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Linsen",
+      "name": "Linsen (100g)",
       "calories": 116,
-      "emoji": "🫘"
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "linsen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Erbsen",
+      "name": "Erbsen (100g)",
       "calories": 81,
-      "emoji": "🟢"
+      "emoji": "🟢",
+      "basis": [
+        {
+          "slug": "erbsen",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -117,7 +172,7 @@
     },
     {
       "title": "Sättigt durch Ballaststoffe",
-      "text": "Mit über 10g Ballaststoffen pro 100g halten weiße Bohnen lange satt und unterstützen eine gesunde Verdauung.",
+      "text": "Mit rund 6g Ballaststoffen pro 100g halten weiße Bohnen lange satt und unterstützen eine gesunde Verdauung.",
       "icon": "🌾"
     },
     {
@@ -151,7 +206,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate haben weiße Bohnen?",
-      "answer": "Gekochte weiße Bohnen haben etwa 25g Kohlenhydrate pro 100g, davon über 10g Ballaststoffe. Die verwertbaren Kohlenhydrate liegen daher deutlich niedriger."
+      "answer": "Gekochte weiße Bohnen haben etwa 25g Kohlenhydrate pro 100g, davon rund 6g Ballaststoffe. Die verwertbaren Kohlenhydrate liegen daher niedriger."
     },
     {
       "question": "Sind weiße Bohnen zum Abnehmen geeignet?",

@@ -7,7 +7,18 @@
   "seo": {
     "title": "Karotten Kalorien: 41 kcal/100g, 1 Stück = 33 | Mahlzait",
     "description": "Eine Karotte (80g) hat 33 kcal, 100g haben 41 kcal. Nährwerte, Beta-Carotin & warum Möhren ideal zum Abnehmen sind.",
-    "keywords": ["karotten kalorien", "kalorien karotten", "karotte kalorien", "kalorien karotte", "möhren kalorien", "karotten nährwerte", "karotten kohlenhydrate", "karotten beta carotin", "karotten abnehmen", "möhren nährwerte"]
+    "keywords": [
+      "karotten kalorien",
+      "kalorien karotten",
+      "karotte kalorien",
+      "kalorien karotte",
+      "möhren kalorien",
+      "karotten nährwerte",
+      "karotten kohlenhydrate",
+      "karotten beta carotin",
+      "karotten abnehmen",
+      "möhren nährwerte"
+    ]
   },
   "overview": {
     "calories_per_100g": 41,
@@ -19,35 +30,198 @@
     "typical_portion_name": "1 Karotte (mittel)"
   },
   "variants": [
-    { "name": "Karotte roh (80g)", "portion_g": 80, "calories": 33, "protein": 1, "carbs": 8, "fat": 0, "tip": "Perfekter Snack" },
-    { "name": "Karotten gekocht (150g)", "portion_g": 150, "calories": 52, "protein": 1, "carbs": 12, "fat": 0 },
-    { "name": "Baby-Karotten (100g)", "portion_g": 100, "calories": 35, "protein": 1, "carbs": 8, "fat": 0 },
-    { "name": "Karottensaft (200ml)", "portion_g": 200, "calories": 80, "protein": 2, "carbs": 18, "fat": 0 },
-    { "name": "Karotten-Sticks (100g)", "portion_g": 100, "calories": 41, "protein": 1, "carbs": 10, "fat": 0 },
-    { "name": "Karotten-Ingwer-Suppe (300ml)", "portion_g": 300, "calories": 120, "protein": 3, "carbs": 18, "fat": 4 },
-    { "name": "Glasierte Karotten (150g)", "portion_g": 150, "calories": 95, "protein": 1, "carbs": 18, "fat": 3 },
-    { "name": "Karottenkuchen (100g)", "portion_g": 100, "calories": 310, "protein": 5, "carbs": 42, "fat": 14 }
+    {
+      "name": "Karotte roh (80g)",
+      "portion_g": 80,
+      "calories": 33,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 0,
+      "tip": "Perfekter Snack"
+    },
+    {
+      "name": "Karotten gekocht (150g)",
+      "portion_g": 150,
+      "calories": 53,
+      "protein": 1,
+      "carbs": 12,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 170394,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Baby-Karotten (100g)",
+      "portion_g": 100,
+      "calories": 35,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 168568,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Karottensaft (200ml)",
+      "portion_g": 200,
+      "calories": 80,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 170491,
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Karotten-Sticks (100g)",
+      "portion_g": 100,
+      "calories": 41,
+      "protein": 1,
+      "carbs": 10,
+      "fat": 0
+    },
+    {
+      "name": "Glasierte Karotten (150g)",
+      "portion_g": 150,
+      "calories": 146,
+      "protein": 1,
+      "carbs": 26,
+      "fat": 4,
+      "basis": [
+        {
+          "fdcId": 2709677,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Karottenkuchen (100g)",
+      "portion_g": 100,
+      "calories": 374,
+      "protein": 2,
+      "carbs": 52,
+      "fat": 18,
+      "basis": [
+        {
+          "fdcId": 2707859,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Gurke", "calories": 12, "emoji": "🥒" },
-    { "name": "Paprika", "calories": 26, "emoji": "🫑" },
-    { "name": "Brokkoli", "calories": 34, "emoji": "🥦" },
-    { "name": "Süßkartoffel", "calories": 86, "emoji": "🍠" }
+    {
+      "name": "Gurke (100g)",
+      "calories": 15,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "gurke",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Paprika (100g)",
+      "calories": 26,
+      "emoji": "🫑",
+      "basis": [
+        {
+          "slug": "paprika",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Brokkoli (100g)",
+      "calories": 34,
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Süßkartoffel (100g)",
+      "calories": 86,
+      "emoji": "🍠",
+      "basis": [
+        {
+          "slug": "suesskartoffeln",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Beta-Carotin-Champion", "text": "Karotten sind die beste Quelle für Beta-Carotin. Der Körper wandelt es in Vitamin A um – wichtig für Augen, Haut und Immunsystem.", "icon": "👁️" },
-    { "title": "Gekocht + Fett = besser", "text": "Beta-Carotin wird besser aufgenommen, wenn Karotten gekocht und mit etwas Fett (Öl, Butter) gegessen werden. Bis zu 5x bessere Aufnahme!", "icon": "🧈" },
-    { "title": "Kauen für Sättigung", "text": "Rohe Karotten müssen lange gekaut werden. Das Signal ans Gehirn: 'Ich esse!' Karotten-Sticks als Snack statt Chips – kalorienarm und sättigend.", "icon": "😋" },
-    { "title": "Lange haltbar", "text": "Karotten halten im Kühlschrank 2-3 Wochen. Grün abschneiden (zieht Feuchtigkeit). In feuchtem Tuch eingewickelt noch länger.", "icon": "📅" },
-    { "title": "Natürliche Süße nutzen", "text": "Karotten sind mit 4,7g Zucker/100g eines der süßesten Gemüse. In Kuchen und Smoothies als natürlicher Süßungsmittel-Ersatz.", "icon": "🍰" }
+    {
+      "title": "Beta-Carotin-Champion",
+      "text": "Karotten sind die beste Quelle für Beta-Carotin. Der Körper wandelt es in Vitamin A um, wichtig für Augen, Haut und Immunsystem.",
+      "icon": "👁️"
+    },
+    {
+      "title": "Gekocht + Fett = besser",
+      "text": "Beta-Carotin wird besser aufgenommen, wenn Karotten gekocht und mit etwas Fett (Öl, Butter) gegessen werden. Bis zu 5x bessere Aufnahme!",
+      "icon": "🧈"
+    },
+    {
+      "title": "Kauen für Sättigung",
+      "text": "Rohe Karotten müssen lange gekaut werden. Das Signal ans Gehirn: 'Ich esse!' Karotten-Sticks als Snack statt Chips: kalorienarm und sättigend.",
+      "icon": "😋"
+    },
+    {
+      "title": "Lange haltbar",
+      "text": "Karotten halten im Kühlschrank 2-3 Wochen. Grün abschneiden (zieht Feuchtigkeit). In feuchtem Tuch eingewickelt noch länger.",
+      "icon": "📅"
+    },
+    {
+      "title": "Natürliche Süße nutzen",
+      "text": "Karotten sind mit 4,7g Zucker/100g eines der süßesten Gemüse. In Kuchen und Smoothies als natürlicher Süßungsmittel-Ersatz.",
+      "icon": "🍰"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Karotte?", "answer": "Eine mittelgroße Karotte (80g) hat ca. 33 kcal. Pro 100g sind es 41 kcal. Damit sind Karotten ein kalorienarmer, sättigender Snack." },
-    { "question": "Sind Karotten gut zum Abnehmen?", "answer": "Ja! Mit 41 kcal/100g, viel Wasser und 2,8g Ballaststoffen pro 100g sättigen Karotten gut. Rohe Karotten-Sticks sind ein idealer Snack-Ersatz." },
-    { "question": "Verbessern Karotten wirklich die Sehkraft?", "answer": "Teilweise wahr: Beta-Carotin wird zu Vitamin A umgewandelt, das für die Sehkraft wichtig ist. Bei Vitamin-A-Mangel hilft es. Aber mehr Karotten machen normale Augen nicht schärfer." },
-    { "question": "Roh oder gekocht – was ist gesünder?", "answer": "Gekocht ist besser für Beta-Carotin (bis zu 5x bessere Aufnahme). Roh ist besser für Vitamin C. Am besten: beides abwechselnd essen." },
-    { "question": "Wie viele Kohlenhydrate haben Karotten?", "answer": "Karotten haben 9,6g Kohlenhydrate pro 100g. Für Low Carb sind sie in kleinen Mengen ok. Zum Vergleich: Gurke hat nur 2,2g." },
-    { "question": "Kann man von zu vielen Karotten orange werden?", "answer": "Ja, tatsächlich! Wer über Wochen täglich >500g Karotten isst, kann eine Carotinämie bekommen – eine harmlose, reversible Orangefärbung der Haut. Selten und ungefährlich." }
+    {
+      "question": "Wie viele Kalorien hat eine Karotte?",
+      "answer": "Eine mittelgroße Karotte (80g) hat ca. 33 kcal. Pro 100g sind es 41 kcal. Damit sind Karotten ein kalorienarmer, sättigender Snack."
+    },
+    {
+      "question": "Sind Karotten gut zum Abnehmen?",
+      "answer": "Ja! Mit 41 kcal/100g, viel Wasser und 2,8g Ballaststoffen pro 100g sättigen Karotten gut. Rohe Karotten-Sticks sind ein idealer Snack-Ersatz."
+    },
+    {
+      "question": "Verbessern Karotten wirklich die Sehkraft?",
+      "answer": "Teilweise wahr: Beta-Carotin wird zu Vitamin A umgewandelt, das für die Sehkraft wichtig ist. Bei Vitamin-A-Mangel hilft es. Aber mehr Karotten machen normale Augen nicht schärfer."
+    },
+    {
+      "question": "Roh oder gekocht: was ist gesünder?",
+      "answer": "Gekocht ist besser für Beta-Carotin (bis zu 5x bessere Aufnahme). Roh ist besser für Vitamin C. Am besten: beides abwechselnd essen."
+    },
+    {
+      "question": "Wie viele Kohlenhydrate haben Karotten?",
+      "answer": "Karotten haben 9,6g Kohlenhydrate pro 100g. Für Low Carb sind sie in kleinen Mengen ok. Zum Vergleich: Gurke hat nur 3,6g."
+    },
+    {
+      "question": "Kann man von zu vielen Karotten orange werden?",
+      "answer": "Ja, tatsächlich! Wer über Wochen täglich >500g Karotten isst, kann eine Carotinämie bekommen, eine harmlose, reversible Orangefärbung der Haut. Selten und ungefährlich."
+    }
   ],
-  "related_foods": ["brokkoli", "paprika", "suesskartoffeln", "spinat"]
+  "related_foods": [
+    "brokkoli",
+    "paprika",
+    "suesskartoffeln",
+    "spinat"
+  ]
 }

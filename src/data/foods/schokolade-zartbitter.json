@@ -7,7 +7,16 @@
   "seo": {
     "title": "Zartbitterschokolade Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Zartbitterschokolade? Nährwerte pro 100g & Stück. 50%, 70%, 85% Kakao im Vergleich + gesunde Nasch-Tipps.",
-    "keywords": ["zartbitterschokolade kalorien", "dunkle schokolade kalorien", "zartbitter nährwerte", "schokolade 70 kalorien", "bitterschokolade kalorien", "dark chocolate kalorien", "zartbitter fett", "schokolade 85 kalorien"]
+    "keywords": [
+      "zartbitterschokolade kalorien",
+      "dunkle schokolade kalorien",
+      "zartbitter nährwerte",
+      "schokolade 70 kalorien",
+      "bitterschokolade kalorien",
+      "dark chocolate kalorien",
+      "zartbitter fett",
+      "schokolade 85 kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 546,
@@ -19,34 +28,210 @@
     "typical_portion_name": "4 Stück (1 Rippe)"
   },
   "variants": [
-    { "name": "1 Rippe (25g, ~4 Stück)", "portion_g": 25, "calories": 137, "protein": 1, "carbs": 15, "fat": 8 },
-    { "name": "½ Tafel (50g)", "portion_g": 50, "calories": 273, "protein": 2, "carbs": 31, "fat": 16 },
-    { "name": "Ganze Tafel (100g)", "portion_g": 100, "calories": 546, "protein": 5, "carbs": 61, "fat": 31 },
-    { "name": "45-59% Kakao (25g)", "portion_g": 25, "calories": 137, "protein": 1, "carbs": 15, "fat": 8 },
-    { "name": "60-69% Kakao (25g)", "portion_g": 25, "calories": 145, "protein": 2, "carbs": 13, "fat": 10, "tip": "Weniger Zucker" },
-    { "name": "70-85% Kakao (25g)", "portion_g": 25, "calories": 150, "protein": 2, "carbs": 11, "fat": 11, "tip": "Am wenigsten Zucker" },
-    { "name": "Zartbitter mit Nüssen (25g)", "portion_g": 25, "calories": 140, "protein": 2, "carbs": 13, "fat": 9 }
+    {
+      "name": "1 Rippe (25g, ~4 Stück)",
+      "portion_g": 25,
+      "calories": 137,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 8,
+      "basis": [
+        {
+          "fdcId": 170271,
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "½ Tafel (50g)",
+      "portion_g": 50,
+      "calories": 273,
+      "protein": 2,
+      "carbs": 31,
+      "fat": 16,
+      "basis": [
+        {
+          "fdcId": 170271,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Ganze Tafel (100g)",
+      "portion_g": 100,
+      "calories": 546,
+      "protein": 5,
+      "carbs": 61,
+      "fat": 31,
+      "basis": [
+        {
+          "fdcId": 170271,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "45-59% Kakao (25g)",
+      "portion_g": 25,
+      "calories": 137,
+      "protein": 1,
+      "carbs": 15,
+      "fat": 8,
+      "basis": [
+        {
+          "fdcId": 170271,
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "60-69% Kakao (25g)",
+      "portion_g": 25,
+      "calories": 145,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 10,
+      "tip": "Weniger Zucker",
+      "basis": [
+        {
+          "fdcId": 170272,
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "70-85% Kakao (25g)",
+      "portion_g": 25,
+      "calories": 150,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 11,
+      "tip": "Am wenigsten Zucker",
+      "basis": [
+        {
+          "fdcId": 170273,
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Zartbitter mit Nüssen (25g)",
+      "portion_g": 25,
+      "calories": 140,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 2710338,
+          "g": 25
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Vollmilchschokolade (25g)", "calories": 134, "emoji": "🍫" },
-    { "name": "Weiße Schokolade (25g)", "calories": 135, "emoji": "🤍" },
-    { "name": "Gummibärchen (25g)", "calories": 86, "emoji": "🧸" },
-    { "name": "Studentenfutter (25g)", "calories": 121, "emoji": "🥜" }
+    {
+      "name": "Vollmilchschokolade (25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 167587,
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Weiße Schokolade (25g)",
+      "calories": 135,
+      "emoji": "🤍",
+      "basis": [
+        {
+          "fdcId": 167571,
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Gummibärchen (25g)",
+      "calories": 86,
+      "emoji": "🧸",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Studentenfutter (25g)",
+      "calories": 116,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "studentenfutter",
+          "g": 25
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Höherer Kakaoanteil = weniger Zucker", "text": "Zartbitter mit 70-85% Kakao hat nur ca. 24g Zucker/100g statt ca. 52g bei Vollmilch. Mehr Kakao heißt weniger Zucker und mehr Ballaststoffe.", "icon": "🎯" },
-    { "title": "Langsam genießen", "text": "Zartbitterschokolade sättigt schneller als Vollmilch. 2-3 Stück bewusst genossen reichen oft, das sind nur ca. 70-100 kcal.", "icon": "🧘" },
-    { "title": "Antioxidantien-Boost", "text": "Dunkle Schokolade ab 70% enthält Flavonoide (sekundäre Pflanzenstoffe, die als antioxidativ gelten). Ein kleines Stück täglich kann sinnvoll sein.", "icon": "💪" },
-    { "title": "Im Kühlschrank lagern", "text": "Kühle Schokolade isst man langsamer, weil sie härter ist. Einfacher Trick gegen zu schnelles Naschen.", "icon": "❄️" },
-    { "title": "Kalorien sind ähnlich!", "text": "Achtung: Zartbitter hat fast genauso viele Kalorien wie Vollmilch (546 vs. 535 kcal/100g). Der Vorteil liegt im Zucker und der Sättigung, nicht in den Kalorien.", "icon": "⚠️" }
+    {
+      "title": "Höherer Kakaoanteil = weniger Zucker",
+      "text": "Zartbitter mit 70-85% Kakao hat nur ca. 24g Zucker/100g statt ca. 52g bei Vollmilch. Mehr Kakao heißt weniger Zucker und mehr Ballaststoffe.",
+      "icon": "🎯"
+    },
+    {
+      "title": "Langsam genießen",
+      "text": "Zartbitterschokolade sättigt schneller als Vollmilch. 2-3 Stück bewusst genossen reichen oft, das sind nur ca. 70-100 kcal.",
+      "icon": "🧘"
+    },
+    {
+      "title": "Antioxidantien-Boost",
+      "text": "Dunkle Schokolade ab 70% enthält Flavonoide (sekundäre Pflanzenstoffe, die als antioxidativ gelten). Ein kleines Stück täglich kann sinnvoll sein.",
+      "icon": "💪"
+    },
+    {
+      "title": "Im Kühlschrank lagern",
+      "text": "Kühle Schokolade isst man langsamer, weil sie härter ist. Einfacher Trick gegen zu schnelles Naschen.",
+      "icon": "❄️"
+    },
+    {
+      "title": "Kalorien sind ähnlich!",
+      "text": "Achtung: Zartbitter hat fast genauso viele Kalorien wie Vollmilch (546 vs. 535 kcal/100g). Der Vorteil liegt im Zucker und der Sättigung, nicht in den Kalorien.",
+      "icon": "⚠️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Zartbitterschokolade?", "answer": "Zartbitterschokolade mit 45-59% Kakao hat 546 kcal pro 100g (USDA-Wert). Eine Rippe (25g, ~4 Stück) hat etwa 137 kcal. Damit ist sie kalorisch fast identisch mit Vollmilchschokolade. Sorten mit 70-85% Kakao kommen auf 598 kcal pro 100g." },
-    { "question": "Ist Zartbitterschokolade gesünder als Vollmilch?", "answer": "Kalorisch kaum Unterschied. Aber Zartbitter hat weniger Zucker, mehr Ballaststoffe (7g vs. 3,4g pro 100g) und mehr Flavonoide. Außerdem sättigt sie schneller, man isst weniger davon." },
-    { "question": "Wie viel Zartbitterschokolade darf man am Tag essen?", "answer": "Ernährungsexperten empfehlen 20-30g (1 Rippe) pro Tag. Das sind ca. 110-165 kcal, absolut vertretbar. Mehr als 50g/Tag wird kalorisch problematisch." },
-    { "question": "Welcher Kakaoanteil ist am besten?", "answer": "Für die Gesundheit: 70% oder mehr. 70% ist ein guter Kompromiss aus Geschmack und wenig Zucker. 85% hat sehr wenig Zucker, schmeckt aber sehr herb." },
-    { "question": "Hat dunkle Schokolade weniger Kalorien?", "answer": "Nein! Dunkle Schokolade hat sogar leicht mehr Fett (mehr Kakaobutter). Der Vorteil liegt im niedrigeren Zuckeranteil und den Ballaststoffen, nicht in den Kalorien." },
-    { "question": "Wie viel Zucker hat Zartbitterschokolade?", "answer": "Das hängt vom Kakaoanteil ab: Mit 45-59% Kakao sind es ca. 48g Zucker/100g, mit 60-69% ca. 37g und mit 70-85% nur ca. 24g. Zum Vergleich: Vollmilchschokolade hat ca. 52g Zucker/100g, mehr als doppelt so viel wie Zartbitter mit 70-85% Kakao." }
+    {
+      "question": "Wie viele Kalorien hat Zartbitterschokolade?",
+      "answer": "Zartbitterschokolade mit 45-59% Kakao hat 546 kcal pro 100g (USDA-Wert). Eine Rippe (25g, ~4 Stück) hat etwa 137 kcal. Damit ist sie kalorisch fast identisch mit Vollmilchschokolade. Sorten mit 70-85% Kakao kommen auf 598 kcal pro 100g."
+    },
+    {
+      "question": "Ist Zartbitterschokolade gesünder als Vollmilch?",
+      "answer": "Kalorisch kaum Unterschied. Aber Zartbitter hat weniger Zucker, mehr Ballaststoffe (7g vs. 3,4g pro 100g) und mehr Flavonoide. Außerdem sättigt sie schneller, man isst weniger davon."
+    },
+    {
+      "question": "Wie viel Zartbitterschokolade darf man am Tag essen?",
+      "answer": "Ernährungsexperten empfehlen 20-30g (1 Rippe) pro Tag. Das sind ca. 110-165 kcal, absolut vertretbar. Mehr als 50g/Tag wird kalorisch problematisch."
+    },
+    {
+      "question": "Welcher Kakaoanteil ist am besten?",
+      "answer": "Für die Gesundheit: 70% oder mehr. 70% ist ein guter Kompromiss aus Geschmack und wenig Zucker. 85% hat sehr wenig Zucker, schmeckt aber sehr herb."
+    },
+    {
+      "question": "Hat dunkle Schokolade weniger Kalorien?",
+      "answer": "Nein! Dunkle Schokolade hat sogar leicht mehr Fett (mehr Kakaobutter). Der Vorteil liegt im niedrigeren Zuckeranteil und den Ballaststoffen, nicht in den Kalorien."
+    },
+    {
+      "question": "Wie viel Zucker hat Zartbitterschokolade?",
+      "answer": "Das hängt vom Kakaoanteil ab: Mit 45-59% Kakao sind es ca. 48g Zucker/100g, mit 60-69% ca. 37g und mit 70-85% nur ca. 24g. Zum Vergleich: Vollmilchschokolade hat ca. 52g Zucker/100g, mehr als doppelt so viel wie Zartbitter mit 70-85% Kakao."
+    }
   ],
-  "related_foods": ["schokolade-vollmilch", "gummibaerchen", "studentenfutter", "nussriegel"]
+  "related_foods": [
+    "schokolade-vollmilch",
+    "gummibaerchen",
+    "studentenfutter",
+    "nussriegel"
+  ]
 }

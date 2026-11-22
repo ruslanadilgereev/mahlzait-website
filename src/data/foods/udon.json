@@ -3,10 +3,9 @@
   "name": "Udon",
   "emoji": "🍜",
   "category": "gericht",
-  "source": "USDA FoodData Central, FDC-ID 168909 (Noodles, japanese, somen, cooked), Werte je 100 g",
   "seo": {
     "title": "Udon Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Udon-Nudeln? Gekocht ca. 131 kcal pro 100g. Nährwerte pro Portion, Kohlenhydrate & Protein im Überblick plus Tipps.",
+    "description": "Wie viele Kalorien haben Udon-Nudeln? Gekocht ca. 127 kcal pro 100g. Nährwerte pro Portion, Kohlenhydrate & Protein im Überblick plus Tipps.",
     "keywords": [
       "udon kalorien",
       "udon nudeln kalorien",
@@ -17,11 +16,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 131,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 27.5,
-    "fat_per_100g": 0.2,
-    "fiber_per_100g": null,
+    "calories_per_100g": 127,
+    "protein_per_100g": 2.8,
+    "carbs_per_100g": 27,
+    "fat_per_100g": 0.4,
+    "fiber_per_100g": 1.5,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion gekocht (250g)"
   },
@@ -29,124 +28,88 @@
     {
       "name": "Udon gekocht (100g)",
       "portion_g": 100,
-      "calories": 131,
-      "protein": 4,
-      "carbs": 27.5,
-      "fat": 0.2
+      "calories": 127,
+      "protein": 2.8,
+      "carbs": 27,
+      "fat": 0.4
     },
     {
       "name": "Kleine Portion gekocht (180g)",
       "portion_g": 180,
-      "calories": 236,
-      "protein": 7.2,
-      "carbs": 49.5,
-      "fat": 0.4
+      "calories": 229,
+      "protein": 5,
+      "carbs": 49,
+      "fat": 1
     },
     {
       "name": "1 Portion gekocht (250g)",
       "portion_g": 250,
-      "calories": 328,
-      "protein": 10,
-      "carbs": 68.8,
-      "fat": 0.5,
+      "calories": 318,
+      "protein": 7,
+      "carbs": 68,
+      "fat": 1,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Portion gekocht (350g)",
       "portion_g": 350,
-      "calories": 459,
-      "protein": 14,
-      "carbs": 96.3,
-      "fat": 0.7
+      "calories": 445,
+      "protein": 10,
+      "carbs": 95,
+      "fat": 1
     },
     {
       "name": "Udon-Suppe (400g Nudeln)",
       "portion_g": 400,
-      "calories": 524,
-      "protein": 16,
-      "carbs": 110,
-      "fat": 0.8
+      "calories": 508,
+      "protein": 11,
+      "carbs": 108,
+      "fat": 2
     },
     {
       "name": "Udon getrocknet (100g, ungekocht)",
       "portion_g": 100,
-      "calories": 356,
-      "protein": 11.4,
-      "carbs": 74.1,
-      "fat": 0.8,
-      "basis": [
-        {
-          "fdcId": 168908,
-          "g": 100
-        }
-      ]
+      "calories": 348,
+      "protein": 8.5,
+      "carbs": 73,
+      "fat": 1
     },
     {
       "name": "Udon getrocknet (80g, ungekocht)",
       "portion_g": 80,
-      "calories": 285,
-      "protein": 9.1,
-      "carbs": 59.3,
-      "fat": 0.6,
-      "tip": "Trockengewicht für 1 Portion",
-      "basis": [
-        {
-          "fdcId": 168908,
-          "g": 80
-        }
-      ]
+      "calories": 278,
+      "protein": 7,
+      "carbs": 58,
+      "fat": 1,
+      "tip": "Trockengewicht für 1 Portion"
     }
   ],
   "comparison": [
     {
       "name": "Spaghetti gekocht (250g)",
-      "calories": 395,
-      "emoji": "🍝",
-      "basis": [
-        {
-          "slug": "spaghetti",
-          "g": 250
-        }
-      ]
+      "calories": 393,
+      "emoji": "🍝"
     },
     {
       "name": "Reis gekocht (250g)",
       "calories": 325,
-      "emoji": "🍚",
-      "basis": [
-        {
-          "slug": "reis",
-          "g": 250
-        }
-      ]
+      "emoji": "🍚"
     },
     {
-      "name": "Soba gekocht (250g)",
-      "calories": 248,
-      "emoji": "🍜",
-      "basis": [
-        {
-          "fdcId": 168907,
-          "g": 250
-        }
-      ]
+      "name": "Ramen-Nudeln gekocht (250g)",
+      "calories": 350,
+      "emoji": "🍜"
     },
     {
       "name": "Mie-Nudeln gekocht (250g)",
-      "calories": 345,
-      "emoji": "🍲",
-      "basis": [
-        {
-          "slug": "mie-nudeln",
-          "g": 250
-        }
-      ]
+      "calories": 343,
+      "emoji": "🍲"
     }
   ],
   "tips": [
     {
       "title": "Gekocht deutlich kalorienärmer",
-      "text": "Udon nehmen beim Kochen viel Wasser auf. Gekocht haben sie nur ca. 131 kcal pro 100g, getrocknet dagegen rund 356 kcal pro 100g.",
+      "text": "Udon nehmen beim Kochen viel Wasser auf. Gekocht haben sie nur ca. 127 kcal pro 100g, getrocknet dagegen rund 348 kcal pro 100g.",
       "icon": "💧"
     },
     {
@@ -166,34 +129,34 @@
     },
     {
       "title": "Realistisch portionieren",
-      "text": "Als Standard-Portion gelten rund 80g Trockengewicht (ca. 285 kcal) oder 250g gekochte Nudeln (ca. 328 kcal). Wer abnimmt, sollte die Portionsgröße im Blick behalten.",
+      "text": "Eine Standard-Portion sind rund 80g Trockengewicht (etwa 250g gekocht) mit ca. 318 kcal. Wer abnimmt, sollte die Portionsgröße im Blick behalten.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Udon-Nudeln?",
-      "answer": "Gekochte Udon-Nudeln haben etwa 131 kcal pro 100g (USDA-Wert für gekochte Somen, ebenfalls japanische Weizennudeln). Eine typische Portion von 250g liefert rund 328 kcal."
+      "answer": "Gekochte Udon-Nudeln haben etwa 127 kcal pro 100g. Eine typische Portion von 250g liefert rund 318 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Udon?",
-      "answer": "Eine Standard-Portion von 250g gekochten Udon hat ca. 328 kcal. Große Portionen mit 350g kommen auf etwa 459 kcal."
+      "answer": "Eine Standard-Portion von 250g gekochten Udon hat ca. 318 kcal. Große Portionen mit 350g kommen auf etwa 445 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Udon?",
-      "answer": "Gekochte Udon enthalten rund 28g Kohlenhydrate pro 100g. Eine Portion von 250g liefert damit etwa 69g Kohlenhydrate."
+      "answer": "Gekochte Udon enthalten rund 27g Kohlenhydrate pro 100g. Eine Portion von 250g liefert damit etwa 68g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Udon?",
-      "answer": "Udon liefern nur wenig Protein, etwa 4g pro 100g. Für eine eiweißreiche Mahlzeit solltest du Tofu, Ei oder Fleisch kombinieren."
+      "answer": "Udon liefern nur wenig Protein, etwa 2,8g pro 100g. Für eine eiweißreiche Mahlzeit solltest du Tofu, Ei oder Fleisch kombinieren."
     },
     {
       "question": "Sind Udon-Nudeln zum Abnehmen geeignet?",
-      "answer": "Gekocht sind Udon mit 131 kcal pro 100g relativ kalorienarm. Achte beim Abnehmen aber auf die Portionsgröße und eine kalorienarme Brühe ohne fettreiche Beilagen."
+      "answer": "Gekocht sind Udon mit 127 kcal pro 100g relativ kalorienarm. Achte beim Abnehmen aber auf die Portionsgröße und eine kalorienarme Brühe ohne fettreiche Beilagen."
     },
     {
       "question": "Sind Udon gesund?",
-      "answer": "Udon bestehen meist aus Weizenmehl und liefern vor allem Kohlenhydrate. Sie sind als Sättigungsbeilage in Ordnung, enthalten aber wenig Eiweiß. Vollkorn-Varianten oder eine gemüsereiche Zubereitung machen sie ausgewogener."
+      "answer": "Udon bestehen meist aus Weizenmehl und liefern vor allem Kohlenhydrate. Sie sind als Sättigungsbeilage in Ordnung, enthalten aber wenig Ballaststoffe und Eiweiß. Vollkorn-Varianten oder eine gemüsereiche Zubereitung machen sie ausgewogener."
     }
   ],
   "related_foods": [
