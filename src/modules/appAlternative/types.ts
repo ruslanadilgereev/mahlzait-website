@@ -39,8 +39,15 @@ export interface AlternativePageContent {
   alternatives: AlternativePick[];
   costHeading: string;
   cost: string[];
-  freeHeading: string;
-  free: string[];
+  /**
+   * Verweis auf eine eigene Kostenseite. Ist er gesetzt, bleibt der
+   * Kostenabschnitt eine Kurzfassung mit diesem Link, ohne Preiskarte, damit
+   * beide Seiten nicht dieselbe Suche bedienen (z. B. /yazio-kosten/).
+   */
+  costLink?: { href: string; label: string };
+  /** Abschnitt "Ist X kostenlos?"; entfällt, wenn die Kostenseite ihn abdeckt. */
+  freeHeading?: string;
+  free?: string[];
   reasons: { title: string; body: string }[];
   extraSections?: ExtraSection[];
   cancelHeading: string;

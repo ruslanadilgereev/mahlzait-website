@@ -81,6 +81,7 @@ const templateConfig: TemplateConfig = {
     comparisonLinks: [
       { href: "/kalorienzaehler-app/", title: "Kalorienzähler-Apps im Vergleich" },
       { href: "/yazio-alternative/", title: "Yazio Alternative" },
+      { href: "/yazio-kosten/", title: "Was kostet YAZIO?" },
       { href: "/myfitnesspal-alternative/", title: "MyFitnessPal Alternative" },
       { href: "/fddb-alternative/", title: "FDDB Alternative" },
       { href: "/lifesum-alternative/", title: "Lifesum Alternative" },

@@ -1,0 +1,58 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+import configWithoutLegal from "utils/configWithoutLegal";
+import YazioKostenPage from "@modules/yazioKosten";
+import { faq, gelesenAm, h1, seo } from "@modules/yazioKosten/content";
+
+const siteUrl = "https://www.mahlzait.de";
+const pageUrl = `${siteUrl}/yazio-kosten/`;
+
+// Dieselben Fragen wie in der sichtbaren FAQ (src/modules/yazioKosten/content.ts).
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: { "@type": "Answer", text: item.answer },
+  })),
+};
+
+const articleSchema = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  headline: h1,
+  description: seo.description,
+  datePublished: gelesenAm,
+  dateModified: gelesenAm,
+  inLanguage: "de-DE",
+  mainEntityOfPage: pageUrl,
+  author: {
+    "@type": "Person",
+    "@id": `${siteUrl}/#person-ruslan`,
+    name: "Ruslan Adilgereev",
+    url: `${siteUrl}/team`,
+  },
+  publisher: {
+    "@type": "Organization",
+    name: "Mahlzait",
+    url: siteUrl,
+    logo: { "@type": "ImageObject", url: `${siteUrl}/logo.png` },
+  },
+};
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData
+    config={defaultTemplateConfig}
+    type="page"
+    pageTitle="Was kostet YAZIO?"
+    pageDescription={seo.description}
+  />
+  <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+
+  <YazioKostenPage client:load config={configWithoutLegal} />
+</Layout>

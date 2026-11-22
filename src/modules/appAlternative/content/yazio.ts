@@ -38,15 +38,14 @@ export const yazioAlternative: AlternativePageContent = {
       why: "Wenn du Vitamine und Mineralstoffe sehen willst, ohne dafür Yazio Pro zu zahlen: über 95 Mikronährstoffe, Barcode-Scanner gratis, die App ist allerdings auf Englisch.",
     },
   ],
-  costHeading: "Was kostet Yazio Pro?",
+  costHeading: "Yazio-Kosten in Kürze",
   cost: [
-    "Die Basisversion ist kostenlos und reicht zum Kalorienzählen aus. Geld kostet Yazio Pro. Yazio verkauft Pro im App Store zu mehreren Preisen, je nach Angebot und Zeitpunkt, oft mit Rabatt auf das Jahresabo. Den Preis, der für dich gilt, zeigt die App vor dem Kauf.",
+    "Yazio ist kostenlos nutzbar, die Gratis-Version zeigt Werbung. Für Pro gibt es im App Store mehrere Preise, je nach Angebot. Alle Preise mit Datum, was gratis bleibt, wie abgebucht wird und wie du kündigst, stehen auf einer eigenen Seite.",
   ],
-  freeHeading: "Ist Yazio kostenlos?",
-  free: [
-    "Ja, in der Grundfunktion. Kalorien und Makros erfassen und das Ernährungstagebuch führen geht ohne Abo, dafür zeigt die kostenlose Version Werbung. Wer nur wissen will, wie viel er isst, kommt damit dauerhaft aus.",
-    "Pro bringt laut App-Store-Beschreibung keine Werbung, einen erweiterten Kalorientracker, die Auswertung aller Nährstoffe inklusive Vitaminen und Mineralstoffen, Auswertungen über mehrere Jahre und das Dokumentieren aller Körperwerte. Welche Funktion genau hinter der Bezahlschranke liegt, ändert Yazio gelegentlich, verbindlich ist die Angabe in der App.",
-  ],
+  costLink: {
+    href: "/yazio-kosten/",
+    label: "Was kostet YAZIO? Preise, Gratis-Version und Kündigung",
+  },
   reasons: [
     {
       title: "Der Preis stört, nicht die App",
@@ -103,14 +102,6 @@ export const yazioAlternative: AlternativePageContent = {
   ],
   faq: [
     {
-      q: "Was kostet Yazio Pro?",
-      a: "Yazio verkauft Pro im deutschen App Store zu mehreren Preisen: Zwölf Monate kosteten im Oktober 2026 zwischen 23,90 und 83,90 €, je nach Angebot, dazu kommen Angebote für drei und sechs Monate. Die Basisversion ist kostenlos. Verbindlich ist der Preis, den die App vor dem Kauf anzeigt.",
-    },
-    {
-      q: "Ist Yazio kostenlos?",
-      a: "In der Grundfunktion ja. Kalorien und Makros erfassen und das Ernährungstagebuch führen geht ohne Abo, mit Werbung. Pro entfernt die Werbung und schaltet unter anderem die Auswertung von Vitaminen und Mineralstoffen frei.",
-    },
-    {
       q: "Wie kündige ich mein Yazio-Abo?",
       a: "Gekündigt wird dort, wo bezahlt wurde. Auf dem iPhone über Einstellungen, den eigenen Namen und Abonnements. Auf Android über den Google Play Store, das Profilbild, Zahlungen und Abos. Wurde direkt bei Yazio gebucht, erfolgt die Kündigung nach dem Login auf yazio.com unter Konto und Abonnement. Die App zu löschen beendet das Abo nicht.",
     },
@@ -132,5 +123,5 @@ export const yazioAlternative: AlternativePageContent = {
     },
   ],
   publishedAt: "2026-08-11",
-  updatedAt: "2026-10-09",
+  updatedAt: "2026-11-22",
 };

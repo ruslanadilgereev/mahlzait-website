@@ -2,6 +2,7 @@ import { articlesMeta } from "@content/wissen";
 import { getPlanPages } from "./planPages";
 import foodLastmodJson from "../data/food-lastmod.json";
 import { appFactsAsOf, calorieApps } from "../data/calorieApps";
+import { gelesenAm as yazioKostenStand } from "../modules/yazioKosten/content";
 
 interface FoodMeta {
   slug?: string;
@@ -73,6 +74,13 @@ const comparisonEntries: SitemapEntry[] = [
       changefreq: "monthly" as const,
       priority: 0.8,
     })),
+  // Kostenseite: lastmod = Tag, an dem die YAZIO-Preise gelesen wurden.
+  {
+    url: `${siteUrl}/yazio-kosten/`,
+    lastmod: yazioKostenStand,
+    changefreq: "monthly",
+    priority: 0.8,
+  },
 ];
 
 const calculatorSlugs = [

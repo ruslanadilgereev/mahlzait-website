@@ -178,30 +178,40 @@ function AppAlternativePage({ config, content }: Props) {
               {text}
             </p>
           ))}
-          <div className="card bg-base-200 max-w-3xl">
-            <div className="card-body">
-              <h3 className="card-title text-lg">
-                {competitor.name} laut App Store
-              </h3>
-              <p className="opacity-80">{competitor.priceNote}</p>
-              <p className="text-sm opacity-60">
-                Stand {formatGermanDate(appFactsAsOf)}. Den verbindlichen Preis
-                zeigt dir die App vor dem Kauf.
-              </p>
+          {content.costLink ? (
+            <p className="max-w-3xl">
+              <a href={content.costLink.href} className="link link-primary font-semibold">
+                {content.costLink.label}
+              </a>
+            </p>
+          ) : (
+            <div className="card bg-base-200 max-w-3xl">
+              <div className="card-body">
+                <h3 className="card-title text-lg">
+                  {competitor.name} laut App Store
+                </h3>
+                <p className="opacity-80">{competitor.priceNote}</p>
+                <p className="text-sm opacity-60">
+                  Stand {formatGermanDate(appFactsAsOf)}. Den verbindlichen Preis
+                  zeigt dir die App vor dem Kauf.
+                </p>
+              </div>
             </div>
-          </div>
+          )}
         </section>
 
-        <section className="max-w-screen-lg mx-auto px-4 pb-12">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">
-            {content.freeHeading}
-          </h2>
-          {content.free.map((text) => (
-            <p key={text} className="opacity-80 mb-4 max-w-3xl">
-              {text}
-            </p>
-          ))}
-        </section>
+        {content.freeHeading && content.free && content.free.length > 0 && (
+          <section className="max-w-screen-lg mx-auto px-4 pb-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              {content.freeHeading}
+            </h2>
+            {content.free.map((text) => (
+              <p key={text} className="opacity-80 mb-4 max-w-3xl">
+                {text}
+              </p>
+            ))}
+          </section>
+        )}
 
         <section className="max-w-screen-lg mx-auto px-4 pb-12">
           <h2 className="text-2xl md:text-3xl font-bold mb-6">
@@ -286,6 +296,11 @@ function AppAlternativePage({ config, content }: Props) {
             <li>
               <a href="/kalorienzaehler-app/" className="link link-primary">
                 Alle {calorieApps.length} Kalorienzähler-Apps im Vergleich
+              </a>
+            </li>
+            <li>
+              <a href="/yazio-kosten/" className="link link-primary">
+                Was kostet YAZIO? Preise, Gratis-Version und Kündigung
               </a>
             </li>
             {otherGuides.map((app) => (
