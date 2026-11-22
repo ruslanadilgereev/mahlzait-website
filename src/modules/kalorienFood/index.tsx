@@ -49,12 +49,24 @@ interface FoodData {
     fiber_per_100g: number | null;
     typical_portion_g: number;
     typical_portion_name: string;
+    // "ml": Werte je 100 ml und Mengen in ml (Herstellerangaben für Getränke)
+    einheit?: "ml";
+  };
+  // Herstellerangabe für Markenprodukte, die USDA FoodData Central nicht führt
+  hersteller?: {
+    name: string;
+    produkt: string;
+    url: string;
+    abgerufen: string;
   };
   variants: FoodVariant[];
   comparison: FoodComparison[];
   tips: FoodTip[];
   faq: FoodFAQ[];
   related_foods: string[];
+  // Herkunft der Werte (docs/naehrwerte-herkunft-audit.md); fehlt bei offenen Seiten
+  source?: string;
+  rezept?: { zutaten: Array<{ name: string; g: number; fdcId: number }> };
 }
 
 interface RelatedArticle {
@@ -92,6 +104,15 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
   const currentCarbs = Math.round(food.overview.carbs_per_100g * multiplier * 10) / 10;
   const currentFat = Math.round(food.overview.fat_per_100g * multiplier * 10) / 10;
   const fiberPer100g = food.overview.fiber_per_100g;
+  // FDC-IDs aus dem source-Feld (eigenes Format, siehe scripts/fdc-referenz.mjs)
+  const istFdc = typeof food.source === "string" && food.source.startsWith("USDA FoodData Central");
+  const istRezept = istFdc && (food.rezept != null || food.source!.includes("Rezeptrechnung"));
+  const fdcIds = istFdc
+    ? [...new Set([...food.source!.matchAll(/\b\d{6,7}\b/g)].map((m) => m[0]))]
+    : [];
+  const unit = food.overview.einheit === "ml" ? "ml" : "g";
+  const amount = (n: number) => (unit === "ml" ? `${n} ml` : `${n}g`);
+  const per100 = unit === "ml" ? "100 ml" : "100g";
   const currentFiber = fiberPer100g == null ? null : Math.round(fiberPer100g * multiplier * 10) / 10;
 
   // Statische Mengen-Tabelle: beantwortet "X g <Food> Kalorien"-Suchanfragen crawlbar,
@@ -158,7 +179,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                 <div className="flex items-center justify-between mb-3">
                   <span className="text-lg font-semibold">Portionsgröße</span>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-3xl font-bold text-primary">{portionGrams}g</span>
+                    <span className="text-3xl font-bold text-primary">{amount(portionGrams)}</span>
                     {portionGrams === food.overview.typical_portion_g && (
                       <span className="text-sm opacity-60">({food.overview.typical_portion_name})</span>
                     )}
@@ -174,9 +195,9 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   className="range range-primary range-lg"
                 />
                 <div className="flex justify-between text-sm px-1 mt-2 opacity-50">
-                  <span>{Math.round(food.overview.typical_portion_g * 0.25)}g</span>
-                  <span>{food.overview.typical_portion_name} ({food.overview.typical_portion_g}g)</span>
-                  <span>{Math.round(food.overview.typical_portion_g * 3)}g</span>
+                  <span>{amount(Math.round(food.overview.typical_portion_g * 0.25))}</span>
+                  <span>{food.overview.typical_portion_name} ({amount(food.overview.typical_portion_g)})</span>
+                  <span>{amount(Math.round(food.overview.typical_portion_g * 3))}</span>
                 </div>
               </div>
 
@@ -270,14 +291,14 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
           {/* Nährwerttabelle pro 100g */}
           <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
             <div className="card-body p-6 md:p-8">
-              <h2 className="text-2xl font-bold mb-4">Nährwerte pro 100g</h2>
+              <h2 className="text-2xl font-bold mb-4">{`Nährwerte pro ${per100}`}</h2>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
                   <thead>
                     <tr>
                       <th>Nährstoff</th>
-                      <th className="text-right">pro 100g</th>
-                      <th className="text-right">pro {food.overview.typical_portion_name} ({food.overview.typical_portion_g}g)</th>
+                      <th className="text-right">pro {per100}</th>
+                      <th className="text-right">pro {food.overview.typical_portion_name} ({amount(food.overview.typical_portion_g)})</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -309,6 +330,20 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   </tbody>
                 </table>
               </div>
+              {food.hersteller && (
+                <p className="mt-4 text-sm opacity-70">
+                  Herstellerangabe: {food.hersteller.name}, {food.hersteller.produkt}, abgerufen am{" "}
+                  {food.hersteller.abgerufen.split("-").reverse().join(".")}.{" "}
+                  <a
+                    href={food.hersteller.url}
+                    className="link"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    Nährwerte beim Hersteller
+                  </a>
+                </p>
+              )}
             </div>
           </div>
 
@@ -317,9 +352,9 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
             <div className="card-body p-6 md:p-8">
               <h2 className="text-2xl font-bold mb-4">Kalorien nach Menge</h2>
               <p className="opacity-80 mb-4">
-                Wie viele Kalorien haben 50 g, 200 g oder 500 g {food.name}? Die Tabelle zeigt
+                Wie viele Kalorien haben 50 {unit}, 200 {unit} oder 500 {unit} {food.name}? Die Tabelle zeigt
                 Kalorien, Protein und Fett für gängige Mengen, berechnet aus{" "}
-                {food.overview.calories_per_100g} kcal pro 100 g.
+                {food.overview.calories_per_100g} kcal pro 100 {unit}.
               </p>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
@@ -335,7 +370,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                     {amountRows.map((row) => (
                       <tr key={row.grams} className={row.isTypical ? "font-semibold" : undefined}>
                         <td>
-                          {row.grams} g {food.name}
+                          {row.grams} {unit} {food.name}
                           {row.isTypical && (
                             <span className="opacity-60 font-normal"> ({food.overview.typical_portion_name})</span>
                           )}
@@ -373,7 +408,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                           {v.name}
                           {v.tip && <div className="text-xs text-primary mt-1">💡 {v.tip}</div>}
                         </td>
-                        <td className="text-right">{v.portion_g}g</td>
+                        <td className="text-right">{amount(v.portion_g)}</td>
                         <td className="text-right font-bold">{v.calories}</td>
                         <td className="text-right">{v.protein}g</td>
                         <td className="text-right">{v.fat}g</td>
@@ -572,27 +607,29 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
               </>
             )}
           </p>
-          {/* Source Footer für Citability (OFF + USDA + Live-Web) */}
+          {/* Quelle der Werte laut source-Feld (für Zitierbarkeit); ohne belegte Quelle kein Hinweis */}
           <div className="max-w-2xl mx-auto mt-4 mb-12 text-xs opacity-60 text-center leading-relaxed">
-            Quelle: Nährwerte basieren auf{" "}
-            <a
-              href="https://world.openfoodfacts.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-100"
-            >
-              Open Food Facts
-            </a>{" "}
-            und{" "}
-            <a
-              href="https://fdc.nal.usda.gov"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline hover:opacity-100"
-            >
-              USDA FoodData Central
-            </a>
-            . Bei Markenprodukten via Live-Web-Recherche aus Hersteller-Quellen ergänzt.
+            {food.hersteller ? (
+              <>
+                Quelle: Herstellerangabe {food.hersteller.name}, {food.hersteller.produkt}, abgerufen am{" "}
+                {food.hersteller.abgerufen.split("-").reverse().join(".")}.{" "}
+              </>
+            ) : fdcIds.length > 0 ? (
+              <>
+                Quelle:{" "}
+                <a
+                  href={fdcIds.length === 1 ? `https://fdc.nal.usda.gov/food-details/${fdcIds[0]}/nutrients` : "https://fdc.nal.usda.gov"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline hover:opacity-100"
+                >
+                  USDA FoodData Central
+                </a>
+                {istRezept
+                  ? `, Rezeptrechnung aus Zutaten mit den FDC-IDs ${fdcIds.join(", ")}. `
+                  : `, FDC-ID ${fdcIds[0]}, Werte je 100 g. `}
+              </>
+            ) : null}
             Korrekturen an{" "}
             <a href="mailto:kontakt@mahlzait.de" className="underline hover:opacity-100">
               kontakt@mahlzait.de

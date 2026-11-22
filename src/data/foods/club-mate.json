@@ -3,6 +3,13 @@
   "name": "Club-Mate",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "Herstellerangabe Brauerei Loscher (CLUB-MATE), Club-Mate Original (https://www.club-mate.de/produkte/, abgerufen am 22.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Brauerei Loscher (CLUB-MATE)",
+    "produkt": "Club-Mate Original",
+    "url": "https://www.club-mate.de/produkte/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Club-Mate Kalorien: Nährwerte & Koffein | Mahlzait",
     "description": "Wie viele Kalorien hat Club-Mate? 100 ml haben nur 20 kcal, eine 0,5-l-Flasche 100 kcal. Nährwerte, Zucker- & Koffeingehalt im Überblick.",
@@ -21,9 +28,10 @@
     "protein_per_100g": 0,
     "carbs_per_100g": 5,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 500,
-    "typical_portion_name": "1 Flasche (0,5 l)"
+    "typical_portion_name": "1 Flasche (0,5 l)",
+    "einheit": "ml"
   },
   "variants": [
     {
@@ -47,7 +55,7 @@
       "portion_g": 330,
       "calories": 66,
       "protein": 0,
-      "carbs": 17,
+      "carbs": 16.5,
       "fat": 0
     },
     {
@@ -58,60 +66,58 @@
       "carbs": 25,
       "fat": 0,
       "tip": "Standard"
-    },
-    {
-      "name": "Dose 0,33 l",
-      "portion_g": 330,
-      "calories": 66,
-      "protein": 0,
-      "carbs": 17,
-      "fat": 0
-    },
-    {
-      "name": "Club-Mate Zero (0,5 l)",
-      "portion_g": 500,
-      "calories": 10,
-      "protein": 0,
-      "carbs": 0.5,
-      "fat": 0,
-      "tip": "Zuckerfreie Variante mit Süßungsmittel"
-    },
-    {
-      "name": "Club-Mate Cola (0,5 l)",
-      "portion_g": 500,
-      "calories": 130,
-      "protein": 0,
-      "carbs": 32,
-      "fat": 0,
-      "tip": "Cola-Variante, etwas mehr Zucker"
     }
   ],
   "comparison": [
     {
-      "name": "Cola",
-      "calories": 210,
-      "emoji": "🥤"
+      "name": "Cola (0,5 l)",
+      "calories": 220,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "variante": "Cola (Flasche 500ml)"
+        }
+      ]
     },
     {
-      "name": "Eistee",
-      "calories": 150,
-      "emoji": "🧋"
+      "name": "Eistee (0,5 l)",
+      "calories": 236,
+      "emoji": "🧋",
+      "basis": [
+        {
+          "slug": "eistee",
+          "variante": "Eistee (0,5l)"
+        }
+      ]
     },
     {
-      "name": "Apfelsaft",
-      "calories": 230,
-      "emoji": "🧃"
+      "name": "Apfelsaft (0,5 l)",
+      "calories": 241,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "variante": "Apfelsaft (0,5l)"
+        }
+      ]
     },
     {
-      "name": "Energy-Drink",
-      "calories": 230,
-      "emoji": "⚡"
+      "name": "Energy-Drink (0,5 l)",
+      "calories": 225,
+      "emoji": "⚡",
+      "basis": [
+        {
+          "slug": "energy-drink",
+          "g": 524
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienärmer als Cola",
-      "text": "Mit 20 kcal pro 100 ml hat Club-Mate nur rund die Hälfte der Kalorien einer klassischen Cola. Eine 0,5-l-Flasche schlägt mit 100 kcal zu Buche.",
+      "text": "Mit 20 kcal pro 100 ml hat Club-Mate laut Hersteller weniger als die Hälfte der Kalorien einer klassischen Cola (laut FDC rund 44 kcal pro 100 ml). Eine 0,5-l-Flasche schlägt mit 100 kcal zu Buche.",
       "icon": "🥤"
     },
     {
@@ -121,12 +127,12 @@
     },
     {
       "title": "Zucker im Blick behalten",
-      "text": "Die 5 g Kohlenhydrate pro 100 ml stammen vollständig aus Zucker. Bei einer 0,5-l-Flasche sind das 25 g, also etwa 8 Stück Würfelzucker.",
+      "text": "Die 5 g Kohlenhydrate pro 100 ml stammen laut Hersteller vollständig aus Zucker. Bei einer 0,5-l-Flasche sind das 25 g Zucker.",
       "icon": "🧊"
     },
     {
       "title": "Zuckerfreie Alternative",
-      "text": "Wer Kalorien sparen möchte, greift zu Club-Mate Zero. Die Variante kommt mit Süßungsmittel statt Zucker auf nur rund 10 kcal pro 0,5-l-Flasche.",
+      "text": "Wer Kalorien sparen möchte, greift zu Club-Mate Zero. Die Variante ist mit Süßungsmitteln statt Zucker gesüßt und praktisch kalorienfrei.",
       "icon": "🚫"
     },
     {
@@ -138,11 +144,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Club-Mate?",
-      "answer": "Club-Mate hat 20 kcal pro 100 ml. Eine 0,5-l-Flasche enthält 100 kcal, eine 0,33-l-Flasche rund 66 kcal."
+      "answer": "Club-Mate hat laut Hersteller 20 kcal pro 100 ml. Eine 0,5-l-Flasche enthält 100 kcal, eine 0,33-l-Flasche rund 66 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Club-Mate?",
-      "answer": "Club-Mate enthält 5 g Zucker pro 100 ml. Das sind 25 g pro 0,5-l-Flasche, was etwa 8 Stück Würfelzucker entspricht."
+      "answer": "Club-Mate enthält laut Hersteller 5 g Zucker pro 100 ml. Das sind 25 g pro 0,5-l-Flasche."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Club-Mate?",

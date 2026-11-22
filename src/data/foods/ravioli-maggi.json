@@ -3,9 +3,16 @@
   "name": "Maggi Ravioli",
   "emoji": "🥫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Nestlé (MAGGI), MAGGI Ravioli in Tomatensauce 800g (https://www.maggi.de/produkte/maggi-ravioli-tomatensauce-800g, abgerufen am 22.11.2026), Werte je 100 g; Hersteller nennt Werte je Portion 400 g (352 kcal), hier auf 100 g umgerechnet",
+  "hersteller": {
+    "name": "Nestlé (MAGGI)",
+    "produkt": "MAGGI Ravioli in Tomatensauce 800g",
+    "url": "https://www.maggi.de/produkte/maggi-ravioli-tomatensauce-800g",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Maggi Ravioli Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Maggi Ravioli? Eine halbe Dose (400g) hat ca. 380 kcal. Nährwerte pro 100g & pro Dose, Kohlenhydrate, Protein & Tipps.",
+    "description": "Wie viele Kalorien hat Maggi Ravioli? Eine halbe Dose (400g) hat laut Hersteller 352 kcal. Nährwerte pro 100g & pro Dose, Kohlenhydrate, Protein & Tipps.",
     "keywords": [
       "ravioli maggi kalorien",
       "maggi ravioli kcal",
@@ -18,10 +25,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 95,
-    "protein_per_100g": 3.5,
-    "carbs_per_100g": 14.5,
-    "fat_per_100g": 2.3,
+    "calories_per_100g": 88,
+    "protein_per_100g": 3.2,
+    "carbs_per_100g": 13.5,
+    "fat_per_100g": 2.1,
     "fiber_per_100g": 1,
     "typical_portion_g": 400,
     "typical_portion_name": "1/2 große Dose (400g)"
@@ -30,79 +37,92 @@
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 95,
-      "protein": 3.5,
-      "carbs": 14.5,
-      "fat": 2.3
+      "calories": 88,
+      "protein": 3.2,
+      "carbs": 13.5,
+      "fat": 2.1
     },
     {
       "name": "Kleine Portion (200g)",
       "portion_g": 200,
-      "calories": 190,
-      "protein": 7,
-      "carbs": 29,
-      "fat": 4.6
+      "calories": 176,
+      "protein": 6.4,
+      "carbs": 27,
+      "fat": 4.2
     },
     {
       "name": "Teller (250g)",
       "portion_g": 250,
-      "calories": 238,
-      "protein": 8.8,
-      "carbs": 36,
-      "fat": 5.8
+      "calories": 220,
+      "protein": 8,
+      "carbs": 33.8,
+      "fat": 5.3
     },
     {
       "name": "Halbe große Dose (400g)",
       "portion_g": 400,
-      "calories": 380,
-      "protein": 14,
-      "carbs": 58,
-      "fat": 9.2,
+      "calories": 352,
+      "protein": 12.8,
+      "carbs": 54,
+      "fat": 8.4,
       "tip": "Standard"
     },
     {
       "name": "Kleine Dose (415g)",
       "portion_g": 415,
-      "calories": 394,
-      "protein": 14.5,
-      "carbs": 60,
-      "fat": 9.5
+      "calories": 365,
+      "protein": 13.3,
+      "carbs": 56,
+      "fat": 8.7
     },
     {
       "name": "Ganze große Dose (800g)",
       "portion_g": 800,
-      "calories": 760,
-      "protein": 28,
-      "carbs": 116,
-      "fat": 18.4
+      "calories": 704,
+      "protein": 25.6,
+      "carbs": 108,
+      "fat": 16.8
     }
   ],
   "comparison": [
     {
       "name": "Ravioli (Dose, 400g)",
-      "calories": 440,
-      "emoji": "🍝"
+      "calories": 388,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "ravioli",
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Baked Beans (400g)",
-      "calories": 340,
-      "emoji": "🫘"
+      "calories": 376,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "baked-beans",
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Chili con Carne (400g)",
-      "calories": 480,
-      "emoji": "🌶️"
-    },
-    {
-      "name": "Spaghetti mit Tomatensauce (400g)",
-      "calories": 520,
-      "emoji": "🍝"
+      "calories": 472,
+      "emoji": "🌶️",
+      "basis": [
+        {
+          "slug": "chili-con-carne",
+          "g": 400
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Vergleichsweise kalorienarmes Fertiggericht",
-      "text": "Eine halbe Dose Maggi Ravioli (400g) hat ca. 380 kcal – weniger als die meisten Fertiggerichte wie Chili con Carne (ca. 480 kcal) oder Spaghetti mit Tomatensauce (ca. 520 kcal) bei gleicher Menge.",
+      "text": "Eine halbe Dose Maggi Ravioli (400g) hat laut Hersteller 352 kcal, also weniger als die gleiche Menge Chili con Carne (ca. 472 kcal).",
       "icon": "🥫"
     },
     {
@@ -112,12 +132,12 @@
     },
     {
       "title": "Protein-Boost für mehr Sättigung",
-      "text": "Mit nur 3,5g Eiweiß pro 100g sättigen Ravioli allein nicht lange. Geriebener Käse oder ein gekochtes Ei dazu erhöhen den Eiweißgehalt spürbar.",
+      "text": "Mit nur 3,2g Eiweiß pro 100g sättigen Ravioli allein nicht lange. Geriebener Käse oder ein gekochtes Ei dazu erhöhen den Eiweißgehalt spürbar.",
       "icon": "🧀"
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Wer die ganze 800g-Dose isst, kommt auf ca. 760 kcal. Eine halbe Dose (400g) reicht als Hauptmahlzeit meist aus und spart die Hälfte der Kalorien.",
+      "text": "Wer die ganze 800g-Dose isst, kommt auf ca. 704 kcal. Eine halbe Dose (400g) reicht als Hauptmahlzeit meist aus und spart die Hälfte der Kalorien.",
       "icon": "⚖️"
     },
     {
@@ -129,23 +149,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Maggi Ravioli?",
-      "answer": "Maggi Ravioli haben ca. 95 kcal pro 100g. Eine halbe große Dose (400g) hat etwa 380 kcal, die ganze 800g-Dose ca. 760 kcal."
+      "answer": "Maggi Ravioli haben rund 88 kcal pro 100g. Eine halbe große Dose (400g) hat laut Hersteller 352 kcal, die ganze 800g-Dose 704 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Dose Maggi Ravioli?",
-      "answer": "Die große 800g-Dose hat ca. 760 kcal. Die kleine Dose (415g) kommt auf etwa 394 kcal."
+      "answer": "Die große 800g-Dose hat laut Hersteller 704 kcal. Die kleine Dose (415g) kommt auf etwa 365 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Maggi Ravioli?",
-      "answer": "Maggi Ravioli enthalten ca. 14,5g Kohlenhydrate pro 100g. Eine halbe Dose (400g) liefert rund 58g Kohlenhydrate – damit eignen sie sich nicht für eine strenge Low-Carb-Ernährung."
+      "answer": "Maggi Ravioli enthalten rund 13,5g Kohlenhydrate pro 100g. Eine halbe Dose (400g) liefert laut Hersteller 54g Kohlenhydrate, damit eignen sie sich nicht für eine strenge Low-Carb-Ernährung."
     },
     {
       "question": "Wie viel Protein steckt in Maggi Ravioli?",
-      "answer": "Der Proteingehalt liegt bei ca. 3,5g pro 100g, also rund 14g pro halber Dose (400g). Das ist eher wenig – mit Käse oder einem Ei lässt sich der Eiweißanteil erhöhen."
+      "answer": "Der Proteingehalt liegt bei rund 3,2g pro 100g, also 12,8g pro halber Dose (400g). Das ist eher wenig, mit Käse oder einem Ei lässt sich der Eiweißanteil erhöhen."
     },
     {
       "question": "Sind Maggi Ravioli zum Abnehmen geeignet?",
-      "answer": "Mit ca. 95 kcal/100g sind sie für ein Fertiggericht relativ kalorienarm. Eine halbe Dose passt durchaus in eine Diät, sättigt aber wegen des geringen Protein- und Ballaststoffgehalts nicht lange. Ein Salat dazu hilft."
+      "answer": "Mit rund 88 kcal/100g sind sie für ein Fertiggericht relativ kalorienarm. Eine halbe Dose passt durchaus in eine Diät, sättigt aber wegen des geringen Protein- und Ballaststoffgehalts nicht lange. Ein Salat dazu hilft."
     },
     {
       "question": "Sind Maggi Ravioli gesund?",

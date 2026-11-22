@@ -3,9 +3,16 @@
   "name": "Kaktus-Eis",
   "emoji": "🍦",
   "category": "supermarkt",
+  "source": "Herstellerangabe Froneri Schöller, PIRULO Kaktus (https://www.froneri-schoeller.de/eis/impulseis/31027989_pirulo-kaktus, abgerufen am 22.11.2026), Werte je 100 g; Eiweiß und Ballaststoffe laut Hersteller unter 0,5 g, hier 0 g; Portion 48 g / 45 ml",
+  "hersteller": {
+    "name": "Froneri Schöller",
+    "produkt": "PIRULO Kaktus",
+    "url": "https://www.froneri-schoeller.de/eis/impulseis/31027989_pirulo-kaktus",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Kaktus-Eis Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Kaktus-Eis von Schöller? Ein Stiel (73 g) hat ca. 73 kcal. Alle Nährwerte pro 100 g und pro Stück im Überblick.",
+    "description": "Wie viele Kalorien hat ein Kaktus-Eis von Schöller? Ein Stiel (48 g) hat ca. 60 kcal. Alle Nährwerte pro 100 g und pro Stück im Überblick.",
     "keywords": [
       "kaktus eis kalorien",
       "kaktus eis kcal",
@@ -16,97 +23,117 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 123,
+    "calories_per_100g": 124,
     "protein_per_100g": 0,
-    "carbs_per_100g": 23.7,
-    "fat_per_100g": 0,
+    "carbs_per_100g": 24,
+    "fat_per_100g": 2.6,
     "fiber_per_100g": 0,
-    "typical_portion_g": 73,
-    "typical_portion_name": "1 Stiel (73 g)"
+    "typical_portion_g": 48,
+    "typical_portion_name": "1 Stiel (48 g)"
   },
   "variants": [
     {
-      "name": "Kaktus-Eis 1 Stiel (73 g)",
-      "portion_g": 73,
-      "calories": 73,
+      "name": "Kaktus-Eis 1 Stiel (48 g)",
+      "portion_g": 48,
+      "calories": 60,
       "protein": 0,
-      "carbs": 17.3,
-      "fat": 0,
+      "carbs": 11.5,
+      "fat": 1.2,
       "tip": "Standard"
     },
     {
-      "name": "Kaktus-Eis halber Stiel (37 g)",
-      "portion_g": 37,
-      "calories": 37,
+      "name": "Kaktus-Eis halber Stiel (24 g)",
+      "portion_g": 24,
+      "calories": 30,
       "protein": 0,
-      "carbs": 8.8,
-      "fat": 0
+      "carbs": 5.8,
+      "fat": 0.6
     },
     {
-      "name": "Kaktus-Eis 2 Stiele (146 g)",
-      "portion_g": 146,
-      "calories": 146,
+      "name": "Kaktus-Eis 2 Stiele (96 g)",
+      "portion_g": 96,
+      "calories": 119,
+      "protein": 0,
+      "carbs": 23,
+      "fat": 2.5
+    },
+    {
+      "name": "Kaktus-Eis 3 Stiele (144 g)",
+      "portion_g": 144,
+      "calories": 179,
       "protein": 0,
       "carbs": 34.6,
-      "fat": 0
-    },
-    {
-      "name": "Kaktus-Eis 3 Stiele (219 g)",
-      "portion_g": 219,
-      "calories": 219,
-      "protein": 0,
-      "carbs": 51.9,
-      "fat": 0
+      "fat": 3.7
     },
     {
       "name": "Kaktus-Eis pro 100 g",
       "portion_g": 100,
-      "calories": 100,
+      "calories": 124,
       "protein": 0,
-      "carbs": 23.7,
-      "fat": 0
+      "carbs": 24,
+      "fat": 2.6
     },
     {
-      "name": "Multipack (6 Stiele, 438 g)",
-      "portion_g": 438,
-      "calories": 438,
+      "name": "6 Stiele (288 g)",
+      "portion_g": 288,
+      "calories": 357,
       "protein": 0,
-      "carbs": 103.8,
-      "fat": 0,
-      "tip": "Ganze Packung"
+      "carbs": 69.1,
+      "fat": 7.5
     }
   ],
   "comparison": [
     {
-      "name": "Wassereis",
-      "calories": 51,
-      "emoji": "🧊"
+      "name": "Wassereis (1 Stück, 60g)",
+      "calories": 47,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "wassereis"
+        }
+      ]
     },
     {
-      "name": "Softeis",
-      "calories": 152,
-      "emoji": "🍦"
+      "name": "Softeis (1 Portion, 75g)",
+      "calories": 167,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "softeis"
+        }
+      ]
     },
     {
-      "name": "Eis Vanille",
-      "calories": 160,
-      "emoji": "🍨"
+      "name": "Vanilleeis (1 Kugel, 75g)",
+      "calories": 155,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille"
+        }
+      ]
     },
     {
-      "name": "Magnum",
-      "calories": 245,
-      "emoji": "🍫"
+      "name": "Eis am Stiel mit Schokoüberzug (79g)",
+      "calories": 261,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 173466,
+          "g": 79
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarme Eis-Wahl",
-      "text": "Ein Kaktus-Stiel hat nur etwa 73 kcal und damit deutlich weniger als ein Magnum (ca. 245 kcal) oder eine Portion Vanilleeis (ca. 160 kcal).",
+      "text": "Ein Kaktus-Stiel hat nur etwa 60 kcal und damit deutlich weniger als ein Eis am Stiel mit Schokoüberzug (ca. 261 kcal) oder eine Kugel Vanilleeis (ca. 155 kcal).",
       "icon": "🍦"
     },
     {
       "title": "Fettfrei, aber zuckerhaltig",
-      "text": "Kaktus-Eis enthält praktisch kein Fett. Die Kalorien stammen fast vollständig aus Zucker, weshalb es trotz niedriger Kalorienzahl kein Sattmacher ist.",
+      "text": "Kaktus-Eis enthält nur wenig Fett (2,6g pro 100g, vor allem aus der grünen Glasur). Die Kalorien stammen überwiegend aus Zucker, weshalb es trotz niedriger Kalorienzahl kein Sattmacher ist.",
       "icon": "🍬"
     },
     {
@@ -116,39 +143,39 @@
     },
     {
       "title": "Kein Eiweiß, kein Sättigungseffekt",
-      "text": "Da Kaktus-Eis kein Protein und keine Ballaststoffe liefert, hält das Sättigungsgefühl nur kurz an. Als Snack zwischendurch besser bewusst genießen.",
+      "text": "Da Kaktus-Eis kaum Protein und Ballaststoffe liefert, hält das Sättigungsgefühl nur kurz an. Als Snack zwischendurch besser bewusst genießen.",
       "icon": "⏳"
     },
     {
       "title": "Portionsgröße im Blick behalten",
-      "text": "Ein einzelner Stiel ist mit 73 kcal harmlos, doch zwei oder drei Stiele summieren sich schnell auf über 200 kcal.",
+      "text": "Ein einzelner Stiel ist mit 60 kcal harmlos, doch zwei oder drei Stiele summieren sich schnell auf 119 bis 179 kcal.",
       "icon": "📊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Kaktus-Eis?",
-      "answer": "Ein Schöller Kaktus-Stiel (73 g) hat etwa 73 kcal. Pro 100 g sind es rund 100 kcal."
+      "answer": "Ein Kaktus-Stiel (48 g) hat etwa 60 kcal. Pro 100 g sind es 124 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Kaktus-Eis pro 100 g?",
-      "answer": "Kaktus-Eis hat laut Hersteller-Deklaration etwa 100 kcal pro 100 g."
+      "answer": "Kaktus-Eis hat laut Hersteller 124 kcal pro 100 g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Kaktus-Eis?",
-      "answer": "Ein Stiel (73 g) enthält rund 17 g Kohlenhydrate, überwiegend Zucker. Pro 100 g sind es etwa 23,7 g."
+      "answer": "Ein Stiel (48 g) enthält rund 12 g Kohlenhydrate, davon knapp 9 g Zucker. Pro 100 g sind es 24 g."
     },
     {
       "question": "Hat Kaktus-Eis Fett oder Eiweiß?",
-      "answer": "Nein, Kaktus-Eis ist als Wassereis praktisch fettfrei und enthält kein nennenswertes Eiweiß. Die Kalorien stammen fast nur aus Zucker."
+      "answer": "Wenig: Kaktus-Eis hat 2,6 g Fett pro 100 g aus der Glasur und laut Hersteller unter 0,5 g Eiweiß. Die Kalorien stammen vor allem aus Zucker."
     },
     {
       "question": "Ist Kaktus-Eis zum Abnehmen geeignet?",
-      "answer": "Mit ca. 73 kcal pro Stiel ist Kaktus-Eis eine der kalorienärmeren Eis-Optionen. Wegen des hohen Zuckeranteils und fehlender Sättigung sollte es aber in Maßen genossen werden."
+      "answer": "Mit ca. 60 kcal pro Stiel ist Kaktus-Eis eine der kalorienärmeren Eis-Optionen. Wegen des hohen Zuckeranteils und fehlender Sättigung sollte es aber in Maßen genossen werden."
     },
     {
       "question": "Ist Kaktus-Eis gesund?",
-      "answer": "Kaktus-Eis ist kalorienarm und fettfrei, liefert aber außer Zucker keine wertvollen Nährstoffe. Als gelegentliche Erfrischung ist es unproblematisch, ein gesundes Lebensmittel ist es jedoch nicht."
+      "answer": "Kaktus-Eis ist kalorienarm und fettarm, liefert aber außer Zucker keine wertvollen Nährstoffe. Als gelegentliche Erfrischung ist es unproblematisch, ein gesundes Lebensmittel ist es jedoch nicht."
     }
   ],
   "related_foods": [

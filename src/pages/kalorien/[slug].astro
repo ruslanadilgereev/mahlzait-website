@@ -101,7 +101,7 @@ const nutritionSchema = {
   "@context": "https://schema.org",
   "@type": "NutritionInformation",
   name: food.name,
-  servingSize: `${food.overview.typical_portion_g}g`,
+  servingSize: `${food.overview.typical_portion_g}${food.overview.einheit === "ml" ? " ml" : "g"}`,
   calories: `${Math.round(food.overview.calories_per_100g * food.overview.typical_portion_g / 100)} kcal`,
   proteinContent: `${Math.round(food.overview.protein_per_100g * food.overview.typical_portion_g / 100)}g`,
   carbohydrateContent: `${Math.round(food.overview.carbs_per_100g * food.overview.typical_portion_g / 100)}g`,
@@ -142,6 +142,30 @@ const howToSchema = {
   ],
 };
 
+const isBasedOn: object[] = [];
+if (typeof food.source === "string" && food.source.startsWith("USDA FoodData Central")) {
+  isBasedOn.push({
+    "@type": "Dataset",
+    name: "USDA FoodData Central",
+    url: "https://fdc.nal.usda.gov",
+    description:
+      "Nährwertdatenbank des US-Landwirtschaftsministeriums mit analytisch ermittelten Werten zu Lebensmitteln.",
+    license: "https://creativecommons.org/publicdomain/zero/1.0/",
+    creator: {
+      "@type": "Organization",
+      name: "U.S. Department of Agriculture",
+      url: "https://www.usda.gov",
+    },
+  });
+} else if (food.hersteller) {
+  isBasedOn.push({
+    "@type": "WebPage",
+    name: `${food.hersteller.produkt}: Nährwertangabe von ${food.hersteller.name}`,
+    url: food.hersteller.url,
+    publisher: { "@type": "Organization", name: food.hersteller.name },
+  });
+}
+
 const webAppSchema = {
   "@context": "https://schema.org",
   "@type": "WebApplication",
@@ -161,34 +185,9 @@ const webAppSchema = {
     "Kalorienverbrauch beim Sport berechnen",
     "Tipps zum Kalorien sparen",
   ],
-  isBasedOn: [
-    {
-      "@type": "Dataset",
-      name: "Open Food Facts",
-      url: "https://world.openfoodfacts.org",
-      description:
-        "Freie, gemeinschaftlich gepflegte Datenbank mit Nährwertangaben und Zutatenlisten zu Lebensmitteln aus aller Welt.",
-      license: "https://opendatacommons.org/licenses/odbl/1-0/",
-      creator: {
-        "@type": "Organization",
-        name: "Open Food Facts",
-        url: "https://world.openfoodfacts.org",
-      },
-    },
-    {
-      "@type": "Dataset",
-      name: "USDA FoodData Central",
-      url: "https://fdc.nal.usda.gov",
-      description:
-        "Nährwertdatenbank des US-Landwirtschaftsministeriums mit analytisch ermittelten Werten zu Lebensmitteln.",
-      license: "https://creativecommons.org/publicdomain/zero/1.0/",
-      creator: {
-        "@type": "Organization",
-        name: "U.S. Department of Agriculture",
-        url: "https://www.usda.gov",
-      },
-    },
-  ],
+  // Grundlage der Werte laut source-Feld: USDA FoodData Central (Eintrag oder
+  // Rezeptrechnung) oder die Herstellerangabe; ohne belegte Quelle keine Angabe.
+  ...(isBasedOn.length ? { isBasedOn } : {}),
 };
 
 const categoryLabels: Record<string, string> = {

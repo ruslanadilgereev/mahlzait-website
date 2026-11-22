@@ -3,9 +3,16 @@
   "name": "Mr. Tom",
   "emoji": "🥜",
   "category": "supermarkt",
+  "source": "Herstellerangabe HOSTA, Mr. Tom Original (https://www.hosta-group.com/unsere-marken/mr-tom/, abgerufen am 22.11.2026), Werte je 100 g; Hersteller nennt je Riegel 40 g 219,6 kcal",
+  "hersteller": {
+    "name": "HOSTA",
+    "produkt": "Mr. Tom Original",
+    "url": "https://www.hosta-group.com/unsere-marken/mr-tom/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Mr. Tom Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mr. Tom? Ein Riegel (40g) hat ca. 219 kcal. Nährwerte pro 100g & Stück, Mini-Varianten im Vergleich und ehrliche Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Mr. Tom? Ein Riegel (40g) hat ca. 220 kcal. Nährwerte pro 100g & Stück, Portionen im Vergleich und ehrliche Diät-Tipps.",
     "keywords": [
       "mr tom kalorien",
       "mr. tom kcal",
@@ -17,28 +24,19 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 547,
-    "protein_per_100g": 20.6,
-    "carbs_per_100g": 38.1,
-    "fat_per_100g": 33.9,
-    "fiber_per_100g": 3.5,
+    "calories_per_100g": 549,
+    "protein_per_100g": 21,
+    "carbs_per_100g": 38,
+    "fat_per_100g": 34,
+    "fiber_per_100g": 6,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Riegel (40g)"
   },
   "variants": [
     {
-      "name": "Mr. Tom Mini (ca. 14g)",
-      "portion_g": 14,
-      "calories": 77,
-      "protein": 3,
-      "carbs": 5,
-      "fat": 5,
-      "tip": "Kleine Portion für den Snack zwischendurch"
-    },
-    {
       "name": "Mr. Tom halber Riegel (20g)",
       "portion_g": 20,
-      "calories": 109,
+      "calories": 110,
       "protein": 4,
       "carbs": 8,
       "fat": 7
@@ -46,7 +44,7 @@
     {
       "name": "Mr. Tom Riegel (40g)",
       "portion_g": 40,
-      "calories": 219,
+      "calories": 220,
       "protein": 8,
       "carbs": 15,
       "fat": 14,
@@ -55,15 +53,15 @@
     {
       "name": "Mr. Tom 2 Riegel (80g)",
       "portion_g": 80,
-      "calories": 438,
-      "protein": 16,
+      "calories": 439,
+      "protein": 17,
       "carbs": 30,
       "fat": 27
     },
     {
       "name": "Mr. Tom 3er-Pack (120g)",
       "portion_g": 120,
-      "calories": 656,
+      "calories": 659,
       "protein": 25,
       "carbs": 46,
       "fat": 41
@@ -71,7 +69,7 @@
     {
       "name": "Mr. Tom pro 100g",
       "portion_g": 100,
-      "calories": 547,
+      "calories": 549,
       "protein": 21,
       "carbs": 38,
       "fat": 34
@@ -80,34 +78,58 @@
   "comparison": [
     {
       "name": "Snickers (50g)",
-      "calories": 245,
-      "emoji": "🍫"
+      "calories": 246,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "snickers",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Studentenfutter (40g)",
-      "calories": 192,
-      "emoji": "🥜"
+      "calories": 185,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "studentenfutter",
+          "g": 40
+        }
+      ]
     },
     {
-      "name": "Proteinriegel (40g)",
-      "calories": 152,
-      "emoji": "💪"
+      "name": "Müsliriegel (40g)",
+      "calories": 188,
+      "emoji": "💪",
+      "basis": [
+        {
+          "slug": "muesli-riegel",
+          "g": 40
+        }
+      ]
     },
     {
-      "name": "Apfel (mittel)",
+      "name": "Apfel (mittel, 180g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Energiedichter Snack",
-      "text": "Ein Riegel (40g) liefert rund 219 kcal, vor allem aus Erdnüssen. Wer auf das Kalorienkonto achtet, plant Mr. Tom besser bewusst als kleinen Genuss ein statt nebenbei.",
+      "text": "Ein Riegel (40g) liefert rund 220 kcal, vor allem aus Erdnüssen. Wer auf das Kalorienkonto achtet, plant Mr. Tom besser bewusst als kleinen Genuss ein statt nebenbei.",
       "icon": "🥜"
     },
     {
       "title": "Ordentlich Eiweiß",
-      "text": "Mit gut 20g Protein pro 100g liefert Mr. Tom mehr Eiweiß als die meisten Schokoriegel. Pro 40g-Riegel sind das etwa 8g.",
+      "text": "Mit 21g Protein pro 100g liefert Mr. Tom mehr Eiweiß als die meisten Schokoriegel. Pro 40g-Riegel sind das etwa 8,4g.",
       "icon": "💪"
     },
     {
@@ -116,8 +138,8 @@
       "icon": "🥜"
     },
     {
-      "title": "Mini-Variante zum Portionieren",
-      "text": "Die Mini-Riegel mit rund 14g (ca. 77 kcal) helfen, die Portion klein zu halten, wenn man nur eine Kleinigkeit naschen möchte.",
+      "title": "Halber Riegel zum Portionieren",
+      "text": "Ein halber Riegel (20g) hat rund 110 kcal und hilft, die Portion klein zu halten, wenn man nur eine Kleinigkeit naschen möchte.",
       "icon": "✂️"
     },
     {
@@ -129,15 +151,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Mr. Tom Riegel?",
-      "answer": "Ein Standard-Riegel (40g) hat etwa 219 kcal. Pro 100g sind es 547 kcal."
+      "answer": "Ein Standard-Riegel (40g) hat etwa 220 kcal. Pro 100g sind es 549 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Mr. Tom pro 100g?",
-      "answer": "Mr. Tom hat laut Herstellerangabe 547 kcal pro 100g."
+      "answer": "Mr. Tom hat laut Herstellerangabe 549 kcal pro 100g."
     },
     {
       "question": "Wie viel Eiweiß steckt in Mr. Tom?",
-      "answer": "Mr. Tom enthält rund 20,6g Eiweiß pro 100g, also etwa 8g pro 40g-Riegel. Das ist für einen Süßigkeiten-Riegel viel."
+      "answer": "Mr. Tom enthält 21g Eiweiß pro 100g, also etwa 8,4g pro 40g-Riegel. Das ist für einen Süßigkeiten-Riegel viel."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mr. Tom?",
@@ -145,7 +167,7 @@
     },
     {
       "question": "Ist Mr. Tom zum Abnehmen geeignet?",
-      "answer": "Mr. Tom ist sehr energiedicht (547 kcal pro 100g) und damit kein klassisches Abnehm-Lebensmittel. Als kleine, bewusst eingeplante Portion lässt er sich aber gut in eine Diät einbauen, da Eiweiß und Erdnüsse sättigen."
+      "answer": "Mr. Tom ist sehr energiedicht (549 kcal pro 100g) und damit kein klassisches Abnehm-Lebensmittel. Als kleine, bewusst eingeplante Portion lässt er sich aber gut in eine Diät einbauen, da Eiweiß und Erdnüsse sättigen."
     },
     {
       "question": "Ist Mr. Tom gesund?",

@@ -3,9 +3,16 @@
   "name": "Monte",
   "emoji": "🍮",
   "category": "supermarkt",
+  "source": "Herstellerangabe Zott, Monte (6er-Pack, Becher 55 g) (https://www.zott-dairy.com/de/marken-produkte/monte/monte-original/, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Zott",
+    "produkt": "Monte (6er-Pack, Becher 55 g)",
+    "url": "https://www.zott-dairy.com/de/marken-produkte/monte/monte-original/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Monte Kalorien: Nährwerte & Portionen | Mahlzait",
-    "description": "Wie viele Kalorien hat Monte? Ein 55g-Becher Monte hat ca. 93 kcal. Nährwerte pro 100g & je Becher, Eiweiß, Kohlenhydrate & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Monte? Ein 55g-Becher Monte hat ca. 100 kcal. Nährwerte pro 100g & je Becher, Eiweiß, Kohlenhydrate & Tipps zum Abnehmen.",
     "keywords": [
       "monte kalorien",
       "monte kcal",
@@ -16,107 +23,122 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 169,
-    "protein_per_100g": 4.3,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 8.6,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 181,
+    "protein_per_100g": 2.6,
+    "carbs_per_100g": 15.7,
+    "fat_per_100g": 11.8,
+    "fiber_per_100g": null,
     "typical_portion_g": 55,
     "typical_portion_name": "1 Becher (55g)"
   },
   "variants": [
     {
-      "name": "Monte Mini (40g)",
-      "portion_g": 40,
-      "calories": 68,
-      "protein": 1.7,
-      "carbs": 7.2,
-      "fat": 3.4
-    },
-    {
       "name": "Monte Becher (55g)",
       "portion_g": 55,
-      "calories": 93,
-      "protein": 2.4,
-      "carbs": 9.9,
-      "fat": 4.7,
+      "calories": 100,
+      "protein": 1.4,
+      "carbs": 8.6,
+      "fat": 6.5,
       "tip": "Standard-Portion"
     },
     {
       "name": "Monte Maxi (100g)",
       "portion_g": 100,
-      "calories": 169,
-      "protein": 4.3,
-      "carbs": 18,
-      "fat": 8.6
+      "calories": 181,
+      "protein": 2.6,
+      "carbs": 15.7,
+      "fat": 11.8
     },
     {
       "name": "2 Becher (110g)",
       "portion_g": 110,
-      "calories": 186,
-      "protein": 4.7,
-      "carbs": 19.8,
-      "fat": 9.5
+      "calories": 199,
+      "protein": 2.9,
+      "carbs": 17.3,
+      "fat": 13
     },
     {
-      "name": "Monte Drink (200ml)",
-      "portion_g": 200,
-      "calories": 218,
-      "protein": 6.4,
-      "carbs": 28,
-      "fat": 9,
-      "tip": "Trinkversion, etwas anderes Profil"
-    },
-    {
-      "name": "Großer Becher (150g)",
+      "name": "Monte Einzelbecher (150g)",
       "portion_g": 150,
-      "calories": 254,
-      "protein": 6.4,
-      "carbs": 27,
-      "fat": 12.9
+      "calories": 272,
+      "protein": 3.9,
+      "carbs": 23.6,
+      "fat": 17.7
+    },
+    {
+      "name": "Mega Monte (400g)",
+      "portion_g": 400,
+      "calories": 724,
+      "protein": 10.4,
+      "carbs": 62.8,
+      "fat": 47.2
     }
   ],
   "comparison": [
     {
       "name": "Schokopudding (55g)",
-      "calories": 66,
-      "emoji": "🍫"
+      "calories": 78,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokopudding",
+          "g": 55
+        }
+      ]
     },
     {
       "name": "Fruchtjoghurt (55g)",
-      "calories": 52,
-      "emoji": "🥛"
+      "calories": 58,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "fruchtjoghurt",
+          "g": 55
+        }
+      ]
     },
     {
       "name": "Mousse au Chocolat (55g)",
-      "calories": 121,
-      "emoji": "🍮"
+      "calories": 124,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "mousse-au-chocolat",
+          "g": 55
+        }
+      ]
     },
     {
       "name": "Milchschnitte (1 Stück, 28g)",
-      "calories": 128,
-      "emoji": "🍰"
+      "calories": 118,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "milchschnitte",
+          "g": 28
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Mini statt Maxi greifen",
-      "text": "Der Monte Mini (40g) hat nur rund 68 kcal. Wer Lust auf den Geschmack hat, aber Kalorien sparen will, ist mit der kleinen Variante gut bedient.",
+      "title": "Kleiner Becher statt Maxi",
+      "text": "Der normale Monte Becher (55g) hat rund 100 kcal, der Monte Maxi (100g) dagegen 181 kcal. Wer Lust auf den Geschmack hat, aber Kalorien sparen will, ist mit dem kleinen Becher gut bedient.",
       "icon": "🥄"
     },
     {
       "title": "Das Fett im Blick behalten",
-      "text": "Monte besteht zu fast 9% aus Fett. Ein einzelner Becher liefert knapp 5g Fett, was den größten Teil der Kalorien ausmacht.",
+      "text": "Monte besteht zu knapp 12% aus Fett. Ein einzelner Becher liefert rund 6,5g Fett, was den größten Teil der Kalorien ausmacht.",
       "icon": "🧈"
     },
     {
       "title": "Als Belohnung statt Hauptmahlzeit",
-      "text": "Mit 93 kcal pro Becher passt Monte gut als kleiner süßer Abschluss. Als Snack zwischendurch sättigt es durch wenig Eiweiß und Ballaststoffe aber kaum.",
+      "text": "Mit rund 100 kcal pro Becher passt Monte gut als kleiner süßer Abschluss. Als Snack zwischendurch sättigt es durch wenig Eiweiß und Ballaststoffe aber kaum.",
       "icon": "🍮"
     },
     {
       "title": "Zuckergehalt beachten",
-      "text": "Ein 55g-Becher enthält fast 10g Kohlenhydrate, davon der Großteil Zucker. Bei mehreren Bechern summiert sich das schnell.",
+      "text": "Ein 55g-Becher enthält knapp 9g Kohlenhydrate, davon rund 7,5g Zucker. Bei mehreren Bechern summiert sich das schnell.",
       "icon": "🍬"
     },
     {
@@ -128,23 +150,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Becher Monte?",
-      "answer": "Ein Standard-Becher Monte (55g) hat ca. 93 kcal. Die Mini-Variante mit 40g kommt auf rund 68 kcal."
+      "answer": "Ein Standard-Becher Monte (55g) hat ca. 100 kcal, der Monte Maxi (100g) 181 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Monte pro 100g?",
-      "answer": "Monte hat laut Hersteller-Deklaration etwa 169 kcal pro 100g."
+      "answer": "Monte hat laut Zott 181 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Monte?",
-      "answer": "Pro 100g enthält Monte rund 18g Kohlenhydrate, davon ist der Großteil Zucker. Ein 55g-Becher hat etwa 9,9g Kohlenhydrate."
+      "answer": "Pro 100g enthält Monte 15,7g Kohlenhydrate, davon 13,7g Zucker. Ein 55g-Becher hat etwa 8,6g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Monte?",
-      "answer": "Monte liefert etwa 4,3g Eiweiß pro 100g, also rund 2,4g pro 55g-Becher. Als echte Eiweißquelle ist es damit eher schwach."
+      "answer": "Monte liefert 2,6g Eiweiß pro 100g, also rund 1,4g pro 55g-Becher. Als echte Eiweißquelle ist es damit eher schwach."
     },
     {
       "question": "Ist Monte zum Abnehmen geeignet?",
-      "answer": "Als gelegentlicher kleiner Genuss lässt sich Monte mit 93 kcal pro Becher gut einplanen. Durch viel Zucker und Fett bei wenig Eiweiß und Ballaststoffen sättigt es aber kaum und eignet sich nicht als Hauptsnack."
+      "answer": "Als gelegentlicher kleiner Genuss lässt sich Monte mit rund 100 kcal pro Becher gut einplanen. Durch viel Zucker und Fett bei wenig Eiweiß und Ballaststoffen sättigt es aber kaum und eignet sich nicht als Hauptsnack."
     },
     {
       "question": "Ist Monte gesund?",

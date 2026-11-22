@@ -3,6 +3,13 @@
   "name": "Karamalz",
   "emoji": "🍺",
   "category": "getraenk",
+  "source": "Herstellerangabe Brauerei C. & A. Veltins (Karamalz), Karamalz Classic (https://www.karamalz.de/produkte/karamalz-classic, abgerufen am 22.11.2026), Werte je 100 ml; Fett, Eiweiß und Ballaststoffe laut Hersteller jeweils unter 0,5 g, als 0 übernommen",
+  "hersteller": {
+    "name": "Brauerei C. & A. Veltins (Karamalz)",
+    "produkt": "Karamalz Classic",
+    "url": "https://www.karamalz.de/produkte/karamalz-classic",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Karamalz Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Karamalz? 45 kcal pro 100 ml, ca. 149 kcal pro 0,33-l-Flasche. Nährwerte, Zucker & Vergleich mit Cola und Bier.",
@@ -17,19 +24,20 @@
   },
   "overview": {
     "calories_per_100g": 45,
-    "protein_per_100g": 0.4,
+    "protein_per_100g": 0,
     "carbs_per_100g": 10.9,
-    "fat_per_100g": 0.1,
+    "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 330,
-    "typical_portion_name": "1 Flasche (0,33 l)"
+    "typical_portion_name": "1 Flasche (0,33 l)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "Glas (0,2 l)",
       "portion_g": 200,
       "calories": 90,
-      "protein": 1,
+      "protein": 0,
       "carbs": 22,
       "fat": 0
     },
@@ -37,7 +45,7 @@
       "name": "Glas (0,25 l)",
       "portion_g": 250,
       "calories": 113,
-      "protein": 1,
+      "protein": 0,
       "carbs": 27,
       "fat": 0
     },
@@ -45,7 +53,7 @@
       "name": "Flasche (0,33 l)",
       "portion_g": 330,
       "calories": 149,
-      "protein": 1,
+      "protein": 0,
       "carbs": 36,
       "fat": 0,
       "tip": "Standard-Gebinde"
@@ -54,18 +62,9 @@
       "name": "Flasche (0,5 l)",
       "portion_g": 500,
       "calories": 225,
-      "protein": 2,
+      "protein": 0,
       "carbs": 55,
-      "fat": 1
-    },
-    {
-      "name": "Karamalz Lemon (0,33 l)",
-      "portion_g": 330,
-      "calories": 139,
-      "protein": 1,
-      "carbs": 33,
-      "fat": 0,
-      "tip": "Mit Zitronenlimonade, etwas weniger Kalorien"
+      "fat": 0
     },
     {
       "name": "Pro 100 ml",
@@ -79,23 +78,49 @@
   "comparison": [
     {
       "name": "Cola (0,33 l)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "variante": "Cola (Dose 330ml)"
+        }
+      ]
     },
     {
       "name": "Bier (0,33 l)",
       "calories": 142,
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "variante": "Pils (0,33l Flasche)"
+        }
+      ]
     },
     {
       "name": "Apfelsaft (0,33 l)",
-      "calories": 152,
-      "emoji": "🧃"
+      "calories": 159,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 330,
+          "g": 346
+        }
+      ]
     },
     {
       "name": "Mineralwasser (0,33 l)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     }
   ],
   "tips": [
@@ -123,7 +148,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Karamalz?",
-      "answer": "Karamalz Classic hat 45 kcal pro 100 ml. Eine 0,33-l-Flasche kommt damit auf rund 149 kcal, eine 0,5-l-Flasche auf etwa 225 kcal."
+      "answer": "Karamalz Classic hat laut Hersteller 45 kcal pro 100 ml. Eine 0,33-l-Flasche kommt damit auf rund 149 kcal, eine 0,5-l-Flasche auf etwa 225 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Karamalz?",
@@ -131,7 +156,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Karamalz?",
-      "answer": "Karamalz liefert ca. 10,9 g Kohlenhydrate pro 100 ml, also rund 36 g pro 0,33-l-Flasche – überwiegend Zucker."
+      "answer": "Karamalz liefert ca. 10,9 g Kohlenhydrate pro 100 ml, also rund 36 g pro 0,33-l-Flasche, überwiegend Zucker."
     },
     {
       "question": "Hat Karamalz viel Eiweiß?",

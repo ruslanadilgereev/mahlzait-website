@@ -3,9 +3,16 @@
   "name": "Rotkäppchen Fruchtsecco",
   "emoji": "🥂",
   "category": "getraenk",
+  "source": "Herstellerangabe Rotkäppchen-Mumm Sektkellereien, Rotkäppchen Fruchtsecco Granatapfel (https://www.rotkaeppchen-mumm.de/produktpass/01/04014741641046/, abgerufen am 22.11.2026), Werte je 100 ml; elektronischer Produktpass der Sorte Granatapfel (0,2 l); andere Sorten mit eigenen Werten",
+  "hersteller": {
+    "name": "Rotkäppchen-Mumm Sektkellereien",
+    "produkt": "Rotkäppchen Fruchtsecco Granatapfel",
+    "url": "https://www.rotkaeppchen-mumm.de/produktpass/01/04014741641046/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Rotkäppchen Fruchtsecco Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Rotkäppchen Fruchtsecco? Ein Glas (100 ml) hat ca. 78 kcal. Nährwerte pro 100 ml & pro Flasche im Überblick.",
+    "description": "Wie viele Kalorien hat Rotkäppchen Fruchtsecco? Ein Glas (100 ml) Fruchtsecco Granatapfel hat laut Hersteller ca. 77 kcal. Nährwerte pro 100 ml & pro Flasche im Überblick.",
     "keywords": [
       "rotkäppchen fruchtsecco kalorien",
       "rotkäppchen fruchtsecco kcal",
@@ -16,19 +23,20 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 78,
+    "calories_per_100g": 77,
     "protein_per_100g": 0,
-    "carbs_per_100g": 7.9,
+    "carbs_per_100g": 7.5,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 100,
-    "typical_portion_name": "1 Sektglas (100 ml)"
+    "typical_portion_name": "1 Sektglas (100 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "1 Sektglas (100 ml)",
       "portion_g": 100,
-      "calories": 78,
+      "calories": 77,
       "protein": 0,
       "carbs": 8,
       "fat": 0,
@@ -37,86 +45,103 @@
     {
       "name": "2 Gläser (200 ml)",
       "portion_g": 200,
-      "calories": 156,
+      "calories": 154,
       "protein": 0,
-      "carbs": 16,
+      "carbs": 15,
       "fat": 0
     },
     {
       "name": "Piccolo-Flasche (0,2 l)",
       "portion_g": 200,
-      "calories": 156,
+      "calories": 154,
       "protein": 0,
-      "carbs": 16,
+      "carbs": 15,
       "fat": 0
     },
     {
       "name": "Halbe Flasche (375 ml)",
       "portion_g": 375,
-      "calories": 293,
+      "calories": 289,
       "protein": 0,
-      "carbs": 30,
+      "carbs": 28,
       "fat": 0
     },
     {
       "name": "Ganze Flasche (0,75 l)",
       "portion_g": 750,
-      "calories": 585,
+      "calories": 578,
       "protein": 0,
-      "carbs": 59,
+      "carbs": 56,
       "fat": 0
-    },
-    {
-      "name": "Alkoholfrei, 1 Glas (100 ml)",
-      "portion_g": 100,
-      "calories": 47,
-      "protein": 0,
-      "carbs": 11,
-      "fat": 0,
-      "tip": "Ohne Alkohol, dafür etwas mehr Zucker"
     }
   ],
   "comparison": [
     {
       "name": "Prosecco (100 ml)",
-      "calories": 80,
-      "emoji": "🥂"
+      "calories": 76,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "prosecco",
+          "variante": "Prosecco brut (0,1l)"
+        }
+      ]
     },
     {
       "name": "Apfelsaft (100 ml)",
-      "calories": 46,
-      "emoji": "🧃"
+      "calories": 48,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 100,
+          "g": 105
+        }
+      ]
     },
     {
       "name": "Bier (100 ml)",
-      "calories": 42,
-      "emoji": "🍺"
+      "calories": 43,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Cola (100 ml)",
-      "calories": 42,
-      "emoji": "🥤"
+      "calories": 44,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 100,
+          "g": 105
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Glas statt Flasche im Blick behalten",
-      "text": "Ein Sektglas (100 ml) schlägt mit rund 78 kcal zu Buche. Die ganze 0,75-l-Flasche kommt schon auf etwa 585 kcal – also bewusst in Gläsern denken.",
+      "text": "Ein Sektglas (100 ml) schlägt mit rund 77 kcal zu Buche. Die ganze 0,75-l-Flasche kommt schon auf etwa 578 kcal, also bewusst in Gläsern denken.",
       "icon": "🥂"
     },
     {
       "title": "Kalorien kommen vom Alkohol und vom Zucker",
-      "text": "Pro 100 ml stecken etwa 7,9 g Kohlenhydrate (überwiegend Zucker) plus rund 6 g Alkohol drin. Beide liefern die meiste Energie – Eiweiß und Fett sind praktisch nicht enthalten.",
+      "text": "Pro 100 ml stecken laut Hersteller 7,5 g Kohlenhydrate (davon 7,0 g Zucker) plus rund 6 g Alkohol drin. Beide liefern die meiste Energie, Eiweiß und Fett sind nicht enthalten.",
       "icon": "🍷"
     },
     {
       "title": "Alkoholfreie Variante spart Kalorien",
-      "text": "Der alkoholfreie Fruchtsecco hat mit ca. 47 kcal pro 100 ml klar weniger Kalorien, weil der Alkohol wegfällt. Dafür ist der Zuckeranteil etwas höher.",
+      "text": "Der alkoholfreie Fruchtsecco hat klar weniger Kalorien, weil der Alkohol wegfällt. Dafür ist der Zuckeranteil etwas höher.",
       "icon": "🚫"
     },
     {
       "title": "Mit Mineralwasser strecken",
-      "text": "Als Schorle mit Mineralwasser halbierst du die Kalorien pro Glas und trinkst automatisch langsamer – gut für die Bilanz und den Kopf.",
+      "text": "Als Schorle mit Mineralwasser halbierst du die Kalorien pro Glas und trinkst automatisch langsamer, gut für die Bilanz und den Kopf.",
       "icon": "💧"
     },
     {
@@ -128,23 +153,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Rotkäppchen Fruchtsecco?",
-      "answer": "Ein Sektglas (100 ml) Rotkäppchen Fruchtsecco hat etwa 78 kcal. Die ganze 0,75-l-Flasche kommt auf rund 585 kcal."
+      "answer": "Ein Sektglas (100 ml) Rotkäppchen Fruchtsecco Granatapfel hat laut Hersteller etwa 77 kcal. Die ganze 0,75-l-Flasche kommt auf rund 578 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Fruchtsecco pro 100 ml?",
-      "answer": "Pro 100 ml hat Rotkäppchen Fruchtsecco laut Hersteller etwa 78 kcal. Die Werte sind je nach Sorte (z. B. Granatapfel, Erdbeere, Mango) nahezu gleich."
+      "answer": "Pro 100 ml hat Rotkäppchen Fruchtsecco Granatapfel laut Hersteller 77 kcal. Andere Sorten haben eigene Werte, die der Hersteller im Produktpass der jeweiligen Flasche nennt."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Rotkäppchen Fruchtsecco?",
-      "answer": "Pro 100 ml stecken rund 7,9 g Kohlenhydrate im Fruchtsecco, fast ausschließlich in Form von Zucker."
+      "answer": "Pro 100 ml stecken laut Hersteller 7,5 g Kohlenhydrate im Fruchtsecco Granatapfel, davon 7,0 g Zucker."
     },
     {
       "question": "Hat Rotkäppchen Fruchtsecco Eiweiß oder Fett?",
-      "answer": "Nein. Fruchtsecco enthält weder nennenswert Eiweiß noch Fett – die Kalorien stammen aus Alkohol und Zucker."
+      "answer": "Nein. Fruchtsecco enthält laut Hersteller 0 g Eiweiß und 0 g Fett, die Kalorien stammen aus Alkohol und Zucker."
     },
     {
       "question": "Ist Rotkäppchen Fruchtsecco zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 78 kcal pro Glas liefert er leere Kalorien ohne Sättigung. Die alkoholfreie Variante (ca. 47 kcal/100 ml) oder eine Schorle sparen Kalorien."
+      "answer": "Nur in Maßen. Mit 77 kcal pro Glas liefert er leere Kalorien ohne Sättigung. Die alkoholfreie Variante oder eine Schorle sparen Kalorien."
     },
     {
       "question": "Wie viel Alkohol hat Rotkäppchen Fruchtsecco?",

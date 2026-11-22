@@ -3,9 +3,16 @@
   "name": "Magnum Mandel",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe The Magnum Ice Cream Company (Langnese), Magnum Mandel 1 x 110 ml (https://www.magnumicecream.com/de/p/magnum-mandel-1-x-110-ml.html/08711327609341, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "The Magnum Ice Cream Company (Langnese)",
+    "produkt": "Magnum Mandel 1 x 110 ml",
+    "url": "https://www.magnumicecream.com/de/p/magnum-mandel-1-x-110-ml.html/08711327609341",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Magnum Mandel Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Magnum Mandel? Ein Stück (79g) hat ca. 233 kcal. Nährwerte pro 100g, Mini-Variante im Vergleich und Tipps zum Genießen.",
+    "description": "Wie viele Kalorien hat ein Magnum Mandel? Ein Stück (110 ml, 83g) hat ca. 276 kcal. Nährwerte pro 100g und Tipps zum Genießen.",
     "keywords": [
       "magnum mandel kalorien",
       "kcal magnum mandel",
@@ -16,102 +23,98 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 295,
-    "protein_per_100g": 4.1,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 79,
-    "typical_portion_name": "1 Magnum Mandel (110ml)"
+    "calories_per_100g": 333,
+    "protein_per_100g": 4.7,
+    "carbs_per_100g": 31,
+    "fat_per_100g": 21,
+    "fiber_per_100g": null,
+    "typical_portion_g": 83,
+    "typical_portion_name": "1 Magnum Mandel (110 ml, 83 g)"
   },
   "variants": [
     {
-      "name": "Magnum Mandel Mini (60ml)",
-      "portion_g": 43,
-      "calories": 127,
-      "protein": 1.8,
-      "carbs": 12,
-      "fat": 7.7,
-      "tip": "Kleinere Portion zum Naschen"
+      "name": "Magnum Mandel halb (41,5g)",
+      "portion_g": 41.5,
+      "calories": 138,
+      "protein": 2,
+      "carbs": 12.9,
+      "fat": 8.7
     },
     {
-      "name": "Magnum Mandel halb (40g)",
-      "portion_g": 40,
-      "calories": 118,
-      "protein": 1.6,
-      "carbs": 11,
-      "fat": 7.2
-    },
-    {
-      "name": "Magnum Mandel (110ml)",
-      "portion_g": 79,
-      "calories": 233,
-      "protein": 3.2,
-      "carbs": 22,
-      "fat": 14,
+      "name": "Magnum Mandel (110 ml, 83g)",
+      "portion_g": 83,
+      "calories": 276,
+      "protein": 3.9,
+      "carbs": 25.7,
+      "fat": 17.4,
       "tip": "Standard"
     },
     {
-      "name": "Magnum Mandel groß (120ml)",
-      "portion_g": 86,
-      "calories": 254,
-      "protein": 3.5,
-      "carbs": 24,
-      "fat": 15
-    },
-    {
-      "name": "2 Magnum Mandel (110ml)",
-      "portion_g": 158,
-      "calories": 466,
-      "protein": 6.5,
-      "carbs": 44,
-      "fat": 28
+      "name": "2 Magnum Mandel (166g)",
+      "portion_g": 166,
+      "calories": 553,
+      "protein": 7.8,
+      "carbs": 51.5,
+      "fat": 34.9
     },
     {
       "name": "Magnum Mandel pro 100g",
       "portion_g": 100,
-      "calories": 295,
-      "protein": 4.1,
-      "carbs": 28,
-      "fat": 18
+      "calories": 333,
+      "protein": 4.7,
+      "carbs": 31,
+      "fat": 21
     }
   ],
   "comparison": [
     {
-      "name": "Magnum Classic",
-      "calories": 244,
-      "emoji": "🍫"
+      "name": "Magnum Classic (110 ml, 81g)",
+      "calories": 247,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "magnum",
+          "g": 81
+        }
+      ]
     },
     {
-      "name": "Snickers Eis",
-      "calories": 180,
-      "emoji": "🍫"
+      "name": "Vanilleeis (1 Kugel, 75g)",
+      "calories": 155,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille",
+          "g": 75
+        }
+      ]
     },
     {
-      "name": "Mars Eis",
-      "calories": 158,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Eis Vanille (1 Kugel)",
-      "calories": 100,
-      "emoji": "🍨"
+      "name": "Bueno Eis (1 Stück, 90 ml)",
+      "calories": 220,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "bueno-eis",
+          "g": 90
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusste Genuss-Portion",
-      "text": "Ein Magnum Mandel hat ca. 233 kcal pro Stück. Als gelegentlicher Nachtisch lässt es sich gut in eine ausgewogene Ernährung einbauen, wenn du es bewusst genießt.",
+      "text": "Ein Magnum Mandel hat ca. 276 kcal pro Stück. Als gelegentlicher Nachtisch lässt es sich gut in eine ausgewogene Ernährung einbauen, wenn du es bewusst genießt.",
       "icon": "🍫"
     },
     {
       "title": "Mini-Variante spart Kalorien",
-      "text": "Das Magnum Mini Mandel (60ml) hat mit ca. 127 kcal nur etwa halb so viele Kalorien wie das große Stück und stillt die Lust auf Süßes trotzdem.",
+      "text": "Die Mini-Variante hat deutlich weniger Kalorien als das große Stück und stillt die Lust auf Süßes trotzdem.",
       "icon": "✂️"
     },
     {
       "title": "Auf das Fett achten",
-      "text": "Mit 18g Fett pro 100g und einem hohen Anteil gesättigter Fettsäuren aus der Schokolade ist Magnum Mandel energiedicht. Eine Portion am Tag reicht.",
+      "text": "Mit 21g Fett pro 100g, davon 13g gesättigte Fettsäuren aus der Schokolade, ist Magnum Mandel energiedicht. Eine Portion am Tag reicht.",
       "icon": "⚖️"
     },
     {
@@ -121,30 +124,30 @@
     },
     {
       "title": "Mandeln liefern etwas Protein",
-      "text": "Durch die Mandelstückchen und die Milchanteile enthält ein Stück rund 3g Eiweiß. Für ein Eis ist das ordentlich, ein echter Eiweißlieferant ist es aber nicht.",
+      "text": "Durch die Mandelstückchen und die Milchanteile enthält ein Stück rund 4g Eiweiß. Für ein Eis ist das ordentlich, ein echter Eiweißlieferant ist es aber nicht.",
       "icon": "🥜"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Magnum Mandel?",
-      "answer": "Ein Magnum Mandel (110ml, ca. 79g) hat etwa 233 kcal. Pro 100g sind es rund 295 kcal."
+      "answer": "Ein Magnum Mandel (110ml, 83g) hat laut Hersteller 276 kcal. Pro 100g sind es 333 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Magnum Mandel Mini?",
-      "answer": "Ein Magnum Mini Mandel (60ml, ca. 43g) hat ungefähr 127 kcal und damit gut die Hälfte der Kalorien eines großen Stücks."
+      "answer": "Das Magnum Mini Mandel ist deutlich kleiner und hat entsprechend weniger Kalorien als das große Stück mit 276 kcal. Die genauen Werte stehen auf der Packung."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Magnum Mandel?",
-      "answer": "Magnum Mandel enthält etwa 28g Kohlenhydrate pro 100g. Ein Stück (79g) liefert rund 22g, überwiegend Zucker."
+      "answer": "Magnum Mandel enthält 31g Kohlenhydrate pro 100g, davon 28g Zucker. Ein Stück (83g) liefert rund 26g, überwiegend Zucker."
     },
     {
       "question": "Wie viel Protein hat Magnum Mandel?",
-      "answer": "Pro 100g stecken etwa 4,1g Eiweiß im Magnum Mandel. Ein ganzes Stück liefert rund 3g Protein, vor allem aus Milch und Mandeln."
+      "answer": "Pro 100g stecken 4,7g Eiweiß im Magnum Mandel. Ein ganzes Stück liefert rund 4g Protein, vor allem aus Milch und Mandeln."
     },
     {
       "question": "Ist Magnum Mandel zum Abnehmen geeignet?",
-      "answer": "Magnum Mandel ist mit 233 kcal pro Stück und 18g Fett pro 100g recht energiedicht. Beim Abnehmen passt es als seltener Genuss, idealerweise als Mini-Variante."
+      "answer": "Magnum Mandel ist mit 276 kcal pro Stück und 21g Fett pro 100g recht energiedicht. Beim Abnehmen passt es als seltener Genuss, idealerweise als Mini-Variante."
     },
     {
       "question": "Ist Magnum Mandel gesund?",

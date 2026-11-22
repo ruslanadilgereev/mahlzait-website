@@ -3,9 +3,16 @@
   "name": "Somersby",
   "emoji": "🍏",
   "category": "getraenk",
+  "source": "Herstellerangabe Carlsberg Deutschland (Somersby), Somersby Apple Cider (https://www.somersby.com/de-de/naehrwertangaben/, abgerufen am 22.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Carlsberg Deutschland (Somersby)",
+    "produkt": "Somersby Apple Cider",
+    "url": "https://www.somersby.com/de-de/naehrwertangaben/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Somersby Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Somersby? Eine 0,33 l Flasche Apple Cider hat ca. 152 kcal. Alle Nährwerte pro 100 ml & je Gebinde, Sorten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat Somersby? Eine 0,33 l Flasche Apple Cider hat laut Hersteller ca. 201 kcal. Alle Nährwerte pro 100 ml & je Gebinde, Vergleiche + Tipps.",
     "keywords": [
       "somersby kalorien",
       "somersby kcal",
@@ -19,11 +26,12 @@
   "overview": {
     "calories_per_100g": 61,
     "protein_per_100g": 0,
-    "carbs_per_100g": 5,
+    "carbs_per_100g": 6.9,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 330,
-    "typical_portion_name": "1 Flasche (0,33 l)"
+    "typical_portion_name": "1 Flasche (0,33 l)",
+    "einheit": "ml"
   },
   "variants": [
     {
@@ -31,7 +39,7 @@
       "portion_g": 100,
       "calories": 61,
       "protein": 0,
-      "carbs": 5,
+      "carbs": 7,
       "fat": 0
     },
     {
@@ -39,7 +47,7 @@
       "portion_g": 200,
       "calories": 122,
       "protein": 0,
-      "carbs": 10,
+      "carbs": 14,
       "fat": 0
     },
     {
@@ -47,7 +55,7 @@
       "portion_g": 330,
       "calories": 201,
       "protein": 0,
-      "carbs": 17,
+      "carbs": 23,
       "fat": 0,
       "tip": "Standard"
     },
@@ -56,7 +64,7 @@
       "portion_g": 500,
       "calories": 305,
       "protein": 0,
-      "carbs": 25,
+      "carbs": 35,
       "fat": 0
     },
     {
@@ -64,58 +72,72 @@
       "portion_g": 1980,
       "calories": 1208,
       "protein": 0,
-      "carbs": 99,
-      "fat": 0
-    },
-    {
-      "name": "Somersby Blackberry (0,33 l)",
-      "portion_g": 330,
-      "calories": 201,
-      "protein": 0,
-      "carbs": 21,
-      "fat": 0,
-      "tip": "Etwas mehr Zucker"
-    },
-    {
-      "name": "Somersby Pear (0,33 l)",
-      "portion_g": 330,
-      "calories": 201,
-      "protein": 0,
-      "carbs": 17,
+      "carbs": 137,
       "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Bier (0,33 l)",
-      "calories": 139,
-      "emoji": "🍺"
+      "calories": 142,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "variante": "Pils (0,33l Flasche)"
+        }
+      ]
     },
     {
       "name": "Radler (0,33 l)",
-      "calories": 165,
-      "emoji": "🍻"
+      "calories": 140,
+      "emoji": "🍻",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 165,
+          "g": 165
+        },
+        {
+          "slug": "sprite",
+          "ml": 165,
+          "g": 172
+        }
+      ]
     },
     {
       "name": "Apfelsaft (0,33 l)",
-      "calories": 152,
-      "emoji": "🧃"
+      "calories": 159,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 330,
+          "g": 346
+        }
+      ]
     },
     {
       "name": "Cola (0,33 l)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "variante": "Cola (Dose 330ml)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Flüssige Kalorien im Blick",
-      "text": "Eine 0,33 l Flasche Somersby Apple liefert ca. 152 kcal, eine 0,5 l Dose schon 230 kcal. Wer abnehmen möchte, sollte das mit einrechnen.",
+      "text": "Eine 0,33 l Flasche Somersby Apple liefert ca. 201 kcal, eine 0,5 l Dose schon 305 kcal. Wer abnehmen möchte, sollte das mit einrechnen.",
       "icon": "🍏"
     },
     {
       "title": "Zucker ist der Hauptpunkt",
-      "text": "Die rund 5 g Kohlenhydrate pro 100 ml stammen fast vollständig aus Zucker. Das macht Somersby süffig, aber auch energiereich.",
+      "text": "Die 6,9 g Kohlenhydrate pro 100 ml stammen laut Hersteller vollständig aus Zucker. Das macht Somersby süffig, aber auch energiereich.",
       "icon": "🍬"
     },
     {
@@ -124,8 +146,8 @@
       "icon": "🧮"
     },
     {
-      "title": "Vergleichbar mit hellem Bier",
-      "text": "Pro 0,33 l liegt Somersby (152 kcal) leicht über einem hellen Bier (ca. 139 kcal) und etwa gleichauf mit einem Glas Apfelsaft.",
+      "title": "Mehr Kalorien als helles Bier",
+      "text": "Pro 0,33 l liegt Somersby (201 kcal) deutlich über einem hellen Bier (ca. 142 kcal) und auch über Apfelsaft (ca. 159 kcal).",
       "icon": "🍺"
     },
     {
@@ -137,11 +159,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Somersby?",
-      "answer": "Somersby Apple Cider hat ca. 61 kcal pro 100 ml. Eine 0,33 l Flasche kommt damit auf rund 152 kcal, eine 0,5 l Dose auf etwa 230 kcal."
+      "answer": "Somersby Apple Cider hat laut Hersteller 61 kcal pro 100 ml. Eine 0,33 l Flasche kommt damit auf rund 201 kcal, eine 0,5 l Dose auf etwa 305 kcal."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in Somersby?",
-      "answer": "Pro 100 ml enthält Somersby rund 5 g Kohlenhydrate, die fast vollständig aus Zucker bestehen. Eine 0,33 l Flasche liefert etwa 17 g Kohlenhydrate."
+      "answer": "Pro 100 ml enthält Somersby laut Hersteller 6,9 g Kohlenhydrate, die vollständig aus Zucker bestehen. Eine 0,33 l Flasche liefert etwa 23 g Kohlenhydrate."
     },
     {
       "question": "Hat Somersby Eiweiß oder Fett?",
@@ -149,11 +171,11 @@
     },
     {
       "question": "Ist Somersby zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit etwa 152 kcal pro Flasche sind es typische flüssige Kalorien ohne sättigende Wirkung. In einer Diät sollte man den Konsum bewusst begrenzen."
+      "answer": "Nur bedingt. Mit etwa 201 kcal pro Flasche sind es typische flüssige Kalorien ohne sättigende Wirkung. In einer Diät sollte man den Konsum bewusst begrenzen."
     },
     {
       "question": "Ist Somersby gesünder als Bier?",
-      "answer": "Beide sind alkoholische Genussgetränke. Pro 0,33 l hat Somersby (152 kcal) sogar etwas mehr Kalorien als ein helles Bier (ca. 139 kcal), vor allem durch den höheren Zuckergehalt."
+      "answer": "Beide sind alkoholische Genussgetränke. Pro 0,33 l hat Somersby (201 kcal) deutlich mehr Kalorien als ein helles Bier (ca. 142 kcal), vor allem durch den höheren Zuckergehalt."
     },
     {
       "question": "Wie viel Prozent Alkohol hat Somersby?",

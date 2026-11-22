@@ -128,7 +128,10 @@ test("Lebensmittel-Seiten: App-Hinweis direkt unter der Kalorien-Antwort, nicht 
   )) {
     const html = readPage(route);
     const answer = html.indexOf(">Kalorien berechnen</h2>");
-    const nextSection = html.indexOf(">Nährwerte pro 100g</h2>");
+    // Herstellerangaben je 100 ml (overview.einheit "ml") zeigen "Nährwerte pro 100 ml"
+    const nextSection = [">Nährwerte pro 100g</h2>", ">Nährwerte pro 100 ml</h2>"]
+      .map((h) => html.indexOf(h))
+      .find((i) => i >= 0) ?? -1;
     const banner = html.indexOf('id="app-banner"');
     const hint = html.indexOf('href="https://apps.apple.com/', answer);
     if (answer < 0 || nextSection < answer || banner < nextSection) {

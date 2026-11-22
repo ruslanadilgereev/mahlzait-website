@@ -3,6 +3,13 @@
   "name": "Heinz Ketchup",
   "emoji": "🍅",
   "category": "supermarkt",
+  "source": "Herstellerangabe Kraft Heinz, Heinz Tomato Ketchup (https://www.heinz.com/de-DE/produkte/00000087157215-tomato-ketchup, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Kraft Heinz",
+    "produkt": "Heinz Tomato Ketchup",
+    "url": "https://www.heinz.com/de-DE/produkte/00000087157215-tomato-ketchup",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Heinz Ketchup Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Heinz Ketchup? 102 kcal pro 100g, ca. 15 kcal pro Esslöffel. Nährwerte, Zucker & Diät-Tipps im Überblick.",
@@ -19,8 +26,8 @@
     "calories_per_100g": 102,
     "protein_per_100g": 1.2,
     "carbs_per_100g": 23.2,
-    "fat_per_100g": 0.1,
-    "fiber_per_100g": 0.7,
+    "fat_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 15,
     "typical_portion_name": "1 EL (15g)"
   },
@@ -56,25 +63,7 @@
       "calories": 51,
       "protein": 0.6,
       "carbs": 11.6,
-      "fat": 0.1
-    },
-    {
-      "name": "Heinz 50% weniger Zucker, 1 EL (15g)",
-      "portion_g": 15,
-      "calories": 11,
-      "protein": 0.2,
-      "carbs": 2,
-      "fat": 0,
-      "tip": "Zuckerreduziert"
-    },
-    {
-      "name": "Heinz No Sugar Added, 1 EL (15g)",
-      "portion_g": 15,
-      "calories": 4,
-      "protein": 0.2,
-      "carbs": 0.8,
-      "fat": 0,
-      "tip": "Ohne Zuckerzusatz"
+      "fat": 0
     },
     {
       "name": "100g",
@@ -82,29 +71,53 @@
       "calories": 102,
       "protein": 1.2,
       "carbs": 23.2,
-      "fat": 0.1
+      "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Mayonnaise (15g)",
-      "calories": 108,
-      "emoji": "🥚"
+      "calories": 102,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "mayo",
+          "g": 15
+        }
+      ]
     },
     {
       "name": "BBQ-Sauce (15g)",
-      "calories": 23,
-      "emoji": "🍖"
+      "calories": 26,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "fdcId": 174523,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Senf (15g)",
-      "calories": 10,
-      "emoji": "🌭"
+      "calories": 9,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "senf",
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Tomatensoße (15g)",
-      "calories": 6,
-      "emoji": "🍅"
+      "calories": 8,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "tomatensosse",
+          "g": 15
+        }
+      ]
     }
   ],
   "tips": [
@@ -120,17 +133,17 @@
     },
     {
       "title": "Zuckerreduzierte Variante",
-      "text": "Die Sorte '50% weniger Zucker' kommt auf rund 11 kcal pro Esslöffel. 'No Sugar Added' liegt sogar nur bei etwa 4 kcal pro Esslöffel.",
+      "text": "Heinz bietet auch Sorten mit weniger Zucker an, etwa \"50% weniger Zucker\". Deren Nährwerte stehen auf der jeweiligen Packung.",
       "icon": "🍃"
     },
     {
       "title": "Fast fettfrei",
-      "text": "Ketchup enthält praktisch kein Fett (0,1g pro 100g). Die Kalorien stammen fast ausschließlich aus Kohlenhydraten.",
+      "text": "Ketchup enthält praktisch kein Fett (laut Heinz 0g pro 100g). Die Kalorien stammen fast ausschließlich aus Kohlenhydraten.",
       "icon": "💧"
     },
     {
       "title": "Bessere Wahl als Mayo",
-      "text": "Wer Kalorien sparen will, greift zu Ketchup statt Mayonnaise: 15g Mayo haben rund 108 kcal, dieselbe Menge Ketchup nur etwa 15 kcal.",
+      "text": "Wer Kalorien sparen will, greift zu Ketchup statt Mayonnaise: 15g Mayo haben rund 102 kcal, dieselbe Menge Ketchup nur etwa 15 kcal.",
       "icon": "⚖️"
     }
   ],
@@ -157,7 +170,7 @@
     },
     {
       "question": "Ist Heinz Ketchup gesund?",
-      "answer": "Ketchup ist kalorienarm und fettfrei, enthält aber viel Zucker und Salz (1,8g pro 100g). Als Würzmittel in Maßen ist er unproblematisch, als Hauptbestandteil eher nicht zu empfehlen."
+      "answer": "Ketchup ist kalorienarm und fettfrei, enthält aber viel Zucker und Salz. Als Würzmittel in Maßen ist er unproblematisch, als Hauptbestandteil eher nicht zu empfehlen."
     }
   ],
   "related_foods": [

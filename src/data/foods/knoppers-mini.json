@@ -3,9 +3,16 @@
   "name": "Knoppers Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe August Storck, Knoppers minis (https://www.storck.com/de/marken/knoppers/naehrwertinformationen/product/knoppers-minis, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "August Storck",
+    "produkt": "Knoppers minis",
+    "url": "https://www.storck.com/de/marken/knoppers/naehrwertinformationen/product/knoppers-minis",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Knoppers Mini Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Knoppers Mini? Ein Riegel (10g) hat ca. 54 kcal. Nährwerte pro 100g & pro Stück, Vergleich und Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Knoppers Mini? Ein Riegel (9,6g) hat ca. 52 kcal. Nährwerte pro 100g & pro Stück, Vergleich und Diät-Tipps im Überblick.",
     "keywords": [
       "knoppers mini kalorien",
       "knoppers mini kcal",
@@ -16,110 +23,121 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 535,
-    "protein_per_100g": 7.6,
-    "carbs_per_100g": 59,
-    "fat_per_100g": 29,
-    "fiber_per_100g": 1.8,
-    "typical_portion_g": 10,
-    "typical_portion_name": "1 Knoppers Mini (10g)"
+    "calories_per_100g": 546,
+    "protein_per_100g": 9.2,
+    "carbs_per_100g": 51.6,
+    "fat_per_100g": 32.8,
+    "fiber_per_100g": null,
+    "typical_portion_g": 9.6,
+    "typical_portion_name": "1 Knoppers Mini (9,6g)"
   },
   "variants": [
     {
-      "name": "1 Knoppers Mini (10g)",
-      "portion_g": 10,
-      "calories": 54,
-      "protein": 0.8,
-      "carbs": 5.9,
-      "fat": 2.9,
+      "name": "1 Knoppers Mini (9,6g)",
+      "portion_g": 9.6,
+      "calories": 52,
+      "protein": 0.9,
+      "carbs": 5,
+      "fat": 3.1,
       "tip": "Standard"
     },
     {
-      "name": "2 Knoppers Mini (20g)",
-      "portion_g": 20,
-      "calories": 107,
-      "protein": 1.5,
-      "carbs": 11.8,
-      "fat": 5.8
+      "name": "2 Knoppers Mini (19,2g)",
+      "portion_g": 19.2,
+      "calories": 105,
+      "protein": 1.8,
+      "carbs": 9.9,
+      "fat": 6.3
     },
     {
-      "name": "3 Knoppers Mini (30g)",
-      "portion_g": 30,
-      "calories": 161,
-      "protein": 2.3,
-      "carbs": 17.7,
-      "fat": 8.7
+      "name": "3 Knoppers Mini (28,8g)",
+      "portion_g": 28.8,
+      "calories": 157,
+      "protein": 2.6,
+      "carbs": 14.9,
+      "fat": 9.4
     },
     {
       "name": "1 klassisches Knoppers (25g)",
       "portion_g": 25,
-      "calories": 134,
-      "protein": 1.9,
-      "carbs": 14.8,
-      "fat": 7.3,
-      "tip": "Großes Original zum Vergleich"
+      "calories": 137,
+      "protein": 2.3,
+      "carbs": 12.9,
+      "fat": 8.2,
+      "tip": "Großes Original zum Vergleich",
+      "basis": [
+        {
+          "slug": "knoppers",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Handvoll (5 Stück, 50g)",
-      "portion_g": 50,
-      "calories": 268,
-      "protein": 3.8,
-      "carbs": 29.5,
-      "fat": 14.5
-    },
-    {
-      "name": "Mini-Beutel (8 Stück, 80g)",
-      "portion_g": 80,
-      "calories": 428,
-      "protein": 6.1,
-      "carbs": 47.2,
-      "fat": 23.2
+      "name": "Handvoll (5 Stück, 48g)",
+      "portion_g": 48,
+      "calories": 262,
+      "protein": 4.4,
+      "carbs": 24.8,
+      "fat": 15.7
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 535,
-      "protein": 7.6,
-      "carbs": 59,
-      "fat": 29
+      "calories": 546,
+      "protein": 9.2,
+      "carbs": 51.6,
+      "fat": 32.8
     }
   ],
   "comparison": [
     {
-      "name": "Knoppers Mini (10g)",
-      "calories": 54,
-      "emoji": "🍫"
+      "name": "Hanuta (1 Stück, 22g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "hanuta",
+          "g": 22
+        }
+      ]
     },
     {
-      "name": "Hanuta (1 Riegel)",
-      "calories": 110,
-      "emoji": "🍫"
+      "name": "Duplo (1 Riegel, 18,2g)",
+      "calories": 100,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "duplo",
+          "g": 18.2
+        }
+      ]
     },
     {
-      "name": "Duplo (1 Riegel)",
-      "calories": 97,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Kinderriegel (1 Stück)",
-      "calories": 113,
-      "emoji": "🍫"
+      "name": "Kinderriegel (1 Riegel, 21g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel",
+          "g": 21
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kleine Portion bewusst nutzen",
-      "text": "Mit nur 54 kcal pro Stück eignet sich ein einzelnes Knoppers Mini gut als kleiner Lust-auf-Süßes-Moment, ohne dass das Tagesbudget gesprengt wird.",
+      "text": "Mit nur 52 kcal pro Stück eignet sich ein einzelnes Knoppers Mini gut als kleiner Lust-auf-Süßes-Moment, ohne dass das Tagesbudget gesprengt wird.",
       "icon": "🍫"
     },
     {
       "title": "Die Tüte ist die Falle",
-      "text": "Einzeln verpackt klingt harmlos, doch eine Handvoll von 5 Stück bringt schon 268 kcal. Portioniere lieber 1 bis 2 Stück und stelle den Beutel weg.",
+      "text": "Einzeln verpackt klingt harmlos, doch eine Handvoll von 5 Stück bringt schon 262 kcal. Portioniere lieber 1 bis 2 Stück und stelle den Beutel weg.",
       "icon": "✋"
     },
     {
       "title": "Hoher Zucker- und Fettanteil",
-      "text": "Mit 59g Kohlenhydraten und 29g Fett pro 100g ist Knoppers Mini ein energiedichter Genuss-Snack und keine sättigende Zwischenmahlzeit.",
+      "text": "Mit 51,6g Kohlenhydraten und 32,8g Fett pro 100g ist Knoppers Mini ein energiedichter Genuss-Snack und keine sättigende Zwischenmahlzeit.",
       "icon": "⚠️"
     },
     {
@@ -136,19 +154,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Knoppers Mini?",
-      "answer": "Ein Knoppers Mini (10g) hat ca. 54 kcal. Pro 100g sind es rund 535 kcal."
+      "answer": "Ein Knoppers Mini (9,6g) hat ca. 52 kcal. Pro 100g sind es 546 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 100g Knoppers Mini?",
-      "answer": "100g Knoppers Mini enthalten ca. 535 kcal, 29g Fett, 59g Kohlenhydrate und 7,6g Eiweiß."
+      "answer": "100g Knoppers Mini enthalten 546 kcal, 32,8g Fett, 51,6g Kohlenhydrate und 9,2g Eiweiß."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in Knoppers Mini?",
-      "answer": "Pro 100g enthält Knoppers Mini etwa 59g Kohlenhydrate, davon überwiegend Zucker. Ein einzelnes Mini bringt rund 5,9g Kohlenhydrate mit."
+      "answer": "Pro 100g enthält Knoppers Mini 51,6g Kohlenhydrate, davon 34,2g Zucker. Ein einzelnes Mini bringt rund 5g Kohlenhydrate mit."
     },
     {
       "question": "Wie viel Protein hat Knoppers Mini?",
-      "answer": "Knoppers Mini liefert ca. 7,6g Eiweiß pro 100g, also nur etwa 0,8g pro Stück. Als Eiweißquelle ist es daher nicht geeignet."
+      "answer": "Knoppers Mini liefert 9,2g Eiweiß pro 100g, also nur knapp 0,9g pro Stück. Als Eiweißquelle ist es daher nicht geeignet."
     },
     {
       "question": "Ist Knoppers Mini zum Abnehmen geeignet?",
@@ -156,7 +174,7 @@
     },
     {
       "question": "Ist ein Knoppers Mini gesünder als ein klassisches Knoppers?",
-      "answer": "Die Rezeptur ist gleich, nur die Portion ist kleiner. Ein Mini (10g) hat 54 kcal, ein klassisches Knoppers (25g) rund 134 kcal. Pro 100g sind beide gleich kalorienreich."
+      "answer": "Die Nährwerte pro 100g sind laut Storck identisch, nur die Portion ist kleiner. Ein Mini (9,6g) hat 52 kcal, ein klassisches Knoppers (25g) 137 kcal."
     }
   ],
   "related_foods": [

@@ -3,9 +3,16 @@
   "name": "Riesen",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe August Storck, RIESEN (https://www.storck.com/de/marken/riesen/naehrwertinformationen/product/riesen, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "August Storck",
+    "produkt": "RIESEN",
+    "url": "https://www.storck.com/de/marken/riesen/naehrwertinformationen/product/riesen",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Riesen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Riesen? Ein Karamell-Bonbon (4,9g) hat ca. 20 kcal, 100g rund 405 kcal. Alle Nährwerte, Portionen & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Riesen? Ein Stück (9,1g) hat laut Storck 41 kcal, 100g 448 kcal. Alle Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "riesen kcal",
       "riesen kalorien",
@@ -17,96 +24,107 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 405,
-    "protein_per_100g": 2.1,
-    "carbs_per_100g": 77.4,
-    "fat_per_100g": 10.3,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 4.9,
-    "typical_portion_name": "1 Bonbon (4,9g)"
+    "calories_per_100g": 448,
+    "protein_per_100g": 4.1,
+    "carbs_per_100g": 66.6,
+    "fat_per_100g": 18,
+    "fiber_per_100g": null,
+    "typical_portion_g": 9.1,
+    "typical_portion_name": "1 Stück (9,1g)"
   },
   "variants": [
     {
-      "name": "1 Bonbon (4,9g)",
-      "portion_g": 4.9,
-      "calories": 20,
-      "protein": 0.1,
-      "carbs": 3.8,
-      "fat": 0.5,
+      "name": "1 Stück (9,1g)",
+      "portion_g": 9.1,
+      "calories": 41,
+      "protein": 0.4,
+      "carbs": 6.1,
+      "fat": 1.6,
       "tip": "Standard-Stück"
     },
     {
-      "name": "3 Bonbons (15g)",
-      "portion_g": 15,
-      "calories": 61,
-      "protein": 0.3,
-      "carbs": 11.6,
-      "fat": 1.5
+      "name": "3 Stück (27,3g)",
+      "portion_g": 27.3,
+      "calories": 122,
+      "protein": 1.1,
+      "carbs": 18.2,
+      "fat": 4.9
     },
     {
-      "name": "Kleine Packung (29g, ca. 6 Stück)",
+      "name": "Kleine Packung (29g, ca. 3 Stück)",
       "portion_g": 29,
-      "calories": 117,
-      "protein": 0.6,
-      "carbs": 22.4,
-      "fat": 3
+      "calories": 130,
+      "protein": 1.2,
+      "carbs": 19.3,
+      "fat": 5.2
     },
     {
       "name": "Handvoll (50g)",
       "portion_g": 50,
-      "calories": 203,
-      "protein": 1.1,
-      "carbs": 38.7,
-      "fat": 5.2
+      "calories": 224,
+      "protein": 2.1,
+      "carbs": 33.3,
+      "fat": 9
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 405,
-      "protein": 2.1,
-      "carbs": 77.4,
-      "fat": 10.3
+      "calories": 448,
+      "protein": 4.1,
+      "carbs": 66.6,
+      "fat": 18
     },
     {
       "name": "Große Tüte (116g)",
       "portion_g": 116,
-      "calories": 470,
-      "protein": 2.4,
-      "carbs": 89.8,
-      "fat": 11.9
+      "calories": 520,
+      "protein": 4.8,
+      "carbs": 77.3,
+      "fat": 20.9
     }
   ],
   "comparison": [
     {
-      "name": "Riesen (1 Bonbon)",
-      "calories": 20,
-      "emoji": "🍬"
+      "name": "Toffifee (1 Stück, 8,3g)",
+      "calories": 43,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "toffifee"
+        }
+      ]
     },
     {
-      "name": "Toffifee (1 Stück)",
-      "calories": 47,
-      "emoji": "🍫"
+      "name": "Karamellbonbon (1 Stück, 8g)",
+      "calories": 31,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "karamell-bonbons"
+        }
+      ]
     },
     {
-      "name": "Werther's Original (1 Bonbon)",
-      "calories": 17,
-      "emoji": "🍬"
-    },
-    {
-      "name": "Gummibärchen (5 Stück)",
-      "calories": 17,
-      "emoji": "🐻"
+      "name": "HARIBO Goldbären (10g)",
+      "calories": 34,
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "haribo",
+          "g": 10
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Einzeln genießen",
-      "text": "Ein Riesen-Bonbon hat nur rund 20 kcal. Da man lange daran kaut, reicht oft ein einziges Stück, um den Süßhunger zu stillen.",
+      "text": "Ein Riesen hat laut Hersteller 41 kcal pro Stück (9,1g). Da man lange daran kaut, reicht oft ein einziges Stück, um den Süßhunger zu stillen.",
       "icon": "🍬"
     },
     {
       "title": "Auf die Menge achten",
-      "text": "100g Riesen liefern rund 405 kcal und über 42g Zucker. Wer aus der Tüte nascht, kommt schnell auf eine Handvoll und damit über 200 kcal.",
+      "text": "100g Riesen liefern 448 kcal und 44,2g Zucker. Wer aus der Tüte nascht, kommt schnell auf eine Handvoll und damit über 200 kcal.",
       "icon": "⚖️"
     },
     {
@@ -116,7 +134,7 @@
     },
     {
       "title": "Kein Sattmacher",
-      "text": "Mit nur 2,1g Eiweiß und ohne Ballaststoffe pro 100g sättigen Riesen kaum. Sie sind ein reiner Süßigkeiten-Genuss, kein Snack gegen Hunger.",
+      "text": "Mit nur 4,1g Eiweiß pro 100g sättigen Riesen kaum. Sie sind ein reiner Süßigkeiten-Genuss, kein Snack gegen Hunger.",
       "icon": "🍽️"
     },
     {
@@ -128,27 +146,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Riesen-Bonbon?",
-      "answer": "Ein einzelnes Riesen Karamell-Bonbon wiegt 4,9g und hat rund 20 kcal. 100g kommen auf etwa 405 kcal."
+      "answer": "Ein einzelnes Riesen (Schokokaramell in Schokolade) wiegt laut Storck 9,1g und hat 41 kcal. 100g kommen auf 448 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine kleine Packung Riesen?",
-      "answer": "Eine kleine Packung mit 29g (ca. 6 Stück) enthält rund 117 kcal."
+      "answer": "Eine kleine Packung mit 29g (ca. 3 Stück) enthält rund 130 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Riesen?",
-      "answer": "Riesen enthalten 42,5g Zucker pro 100g. Pro Bonbon (4,9g) sind das gut 2g Zucker."
+      "answer": "Riesen enthalten 44,2g Zucker pro 100g. Pro Stück (9,1g) sind das laut Hersteller 4,0g Zucker."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Riesen?",
-      "answer": "100g Riesen liefern 77,4g Kohlenhydrate, davon 42,5g Zucker. Ein Bonbon enthält rund 3,8g Kohlenhydrate."
+      "answer": "100g Riesen liefern 66,6g Kohlenhydrate, davon 44,2g Zucker. Ein Stück enthält rund 6,1g Kohlenhydrate."
     },
     {
       "question": "Sind Riesen zum Abnehmen geeignet?",
-      "answer": "Riesen sind mit 405 kcal und viel Zucker pro 100g keine Diät-Süßigkeit. In Maßen passt aber ein einzelnes Bonbon mit nur 20 kcal gut in eine kalorienbewusste Ernährung."
+      "answer": "Riesen sind mit 448 kcal und viel Zucker pro 100g keine Diät-Süßigkeit. In Maßen passt aber ein einzelnes Stück mit 41 kcal gut in eine kalorienbewusste Ernährung."
     },
     {
       "question": "Wie viel Eiweiß haben Riesen?",
-      "answer": "Riesen enthalten nur 2,1g Eiweiß pro 100g und sind damit keine nennenswerte Proteinquelle."
+      "answer": "Riesen enthalten nur 4,1g Eiweiß pro 100g und sind damit keine nennenswerte Proteinquelle."
     }
   ],
   "related_foods": [

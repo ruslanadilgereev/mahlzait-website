@@ -3,9 +3,16 @@
   "name": "Philadelphia (Frischkäse)",
   "emoji": "🧀",
   "category": "supermarkt",
+  "source": "Herstellerangabe Mondelez (Philadelphia), Philadelphia Klassisch Doppelrahmstufe (https://www.philadelphia.eu/de/produkte/philadelphia-doppelrahmstufe-35319/, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mondelez (Philadelphia)",
+    "produkt": "Philadelphia Klassisch Doppelrahmstufe",
+    "url": "https://www.philadelphia.eu/de/produkte/philadelphia-doppelrahmstufe-35319/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Philadelphia Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Philadelphia? Philadelphia Original hat 253 kcal pro 100g, eine Portion (30g) ca. 76 kcal. Nährwerte, Sorten & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Philadelphia? Philadelphia Klassisch hat 226 kcal pro 100g, eine Portion (30g) ca. 68 kcal. Nährwerte, Sorten & Tipps im Überblick.",
     "keywords": [
       "philadelphia kalorien",
       "philadelphia kcal",
@@ -17,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 253,
-    "protein_per_100g": 5.5,
-    "carbs_per_100g": 3.5,
-    "fat_per_100g": 24,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 226,
+    "protein_per_100g": 5.4,
+    "carbs_per_100g": 4.3,
+    "fat_per_100g": 21,
+    "fiber_per_100g": 0.2,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Portion (30g, fürs Brötchen)"
   },
@@ -29,102 +36,109 @@
     {
       "name": "Aufs Brötchen (15g)",
       "portion_g": 15,
-      "calories": 38,
+      "calories": 34,
       "protein": 0.8,
-      "carbs": 0.5,
-      "fat": 3.6,
+      "carbs": 0.6,
+      "fat": 3.2,
       "tip": "Dünn bestrichen"
     },
     {
       "name": "1 Portion (30g)",
       "portion_g": 30,
-      "calories": 76,
+      "calories": 68,
       "protein": 1.6,
-      "carbs": 1.1,
-      "fat": 7.2,
+      "carbs": 1.3,
+      "fat": 6.3,
       "tip": "Standard"
     },
     {
       "name": "Großzügig bestrichen (50g)",
       "portion_g": 50,
-      "calories": 127,
-      "protein": 2.8,
-      "carbs": 1.8,
-      "fat": 12
+      "calories": 113,
+      "protein": 2.7,
+      "carbs": 2.2,
+      "fat": 10.5
     },
     {
-      "name": "Philadelphia Original (100g)",
+      "name": "Philadelphia Klassisch (100g)",
       "portion_g": 100,
-      "calories": 253,
-      "protein": 5.5,
-      "carbs": 3.5,
-      "fat": 24
+      "calories": 226,
+      "protein": 5.4,
+      "carbs": 4.3,
+      "fat": 21
     },
     {
       "name": "Ganze Packung (175g)",
       "portion_g": 175,
-      "calories": 443,
-      "protein": 9.6,
-      "carbs": 6.1,
-      "fat": 42
-    },
-    {
-      "name": "Philadelphia Balance (30g)",
-      "portion_g": 30,
-      "calories": 33,
-      "protein": 2.4,
-      "carbs": 1.5,
-      "fat": 1.8,
-      "tip": "Fettreduziert"
-    },
-    {
-      "name": "Philadelphia Balance (100g)",
-      "portion_g": 100,
-      "calories": 110,
-      "protein": 8,
-      "carbs": 5,
-      "fat": 6
+      "calories": 396,
+      "protein": 9.5,
+      "carbs": 7.5,
+      "fat": 36.8
     },
     {
       "name": "Für Käsekuchen (200g)",
       "portion_g": 200,
-      "calories": 506,
-      "protein": 11,
-      "carbs": 7,
-      "fat": 48
+      "calories": 452,
+      "protein": 10.8,
+      "carbs": 8.6,
+      "fat": 42
     }
   ],
   "comparison": [
     {
-      "name": "Frischkäse (Doppelrahm)",
-      "calories": 250,
-      "emoji": "🧀"
+      "name": "Frischkäse Doppelrahm (100g)",
+      "calories": 253,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Butter",
-      "calories": 741,
-      "emoji": "🧈"
+      "name": "Butter (100g)",
+      "calories": 717,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Magerquark",
-      "calories": 67,
-      "emoji": "🥛"
+      "name": "Magerquark (100g)",
+      "calories": 72,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "magerquark",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Schmelzkäse",
-      "calories": 240,
-      "emoji": "🧀"
+      "name": "Schmelzkäse (100g)",
+      "calories": 371,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "schmelzkaese",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Balance statt Original",
-      "text": "Philadelphia Balance hat mit ca. 110 kcal pro 100g weniger als die Hälfte der Kalorien des Originals (253 kcal) und mehr Eiweiß. Ideal, wenn du Fett sparen willst.",
+      "title": "Balance statt Klassisch",
+      "text": "Philadelphia Balance ist die fettreduzierte Sorte mit weniger Kalorien als der Klassische (226 kcal pro 100g). Ideal, wenn du Fett sparen willst.",
       "icon": "⚖️"
     },
     {
       "title": "Dünn bestreichen lohnt sich",
-      "text": "Der Großteil der Kalorien steckt im Fett. Eine dünne 15g-Schicht bringt nur 38 kcal, während eine dicke 50g-Schicht schon bei 127 kcal liegt.",
+      "text": "Der Großteil der Kalorien steckt im Fett. Eine dünne 15g-Schicht bringt nur 34 kcal, während eine dicke 50g-Schicht schon bei 113 kcal liegt.",
       "icon": "🔪"
     },
     {
@@ -134,7 +148,7 @@
     },
     {
       "title": "Sparsam beim Käsekuchen",
-      "text": "Für einen Käsekuchen werden oft 600g und mehr verwendet, das sind über 1500 kcal nur aus dem Frischkäse. Magerquark als Teilersatz spart deutlich Kalorien.",
+      "text": "Für einen Käsekuchen werden oft 600g und mehr verwendet, das sind über 1350 kcal nur aus dem Frischkäse. Magerquark als Teilersatz spart deutlich Kalorien.",
       "icon": "🍰"
     },
     {
@@ -146,23 +160,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Philadelphia?",
-      "answer": "Philadelphia Original hat 253 kcal pro 100g. Eine typische Portion von 30g zum Bestreichen eines Brötchens liefert ca. 76 kcal."
+      "answer": "Philadelphia Klassisch (Doppelrahmstufe) hat laut Hersteller 226 kcal pro 100g. Eine typische Portion von 30g zum Bestreichen eines Brötchens liefert ca. 68 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Philadelphia Balance?",
-      "answer": "Die fettreduzierte Variante Philadelphia Balance hat nur etwa 110 kcal pro 100g, also rund 33 kcal pro 30g-Portion."
+      "answer": "Die fettreduzierte Sorte Philadelphia Balance hat deutlich weniger Fett und Kalorien als der Klassische. Die genauen Werte stehen auf der Packung."
     },
     {
       "question": "Wie viel Eiweiß steckt in Philadelphia?",
-      "answer": "Philadelphia Original enthält rund 5,5g Eiweiß pro 100g. Eine Portion (30g) liefert damit etwa 1,6g Protein, also eher wenig."
+      "answer": "Philadelphia Klassisch enthält 5,4g Eiweiß pro 100g. Eine Portion (30g) liefert damit etwa 1,6g Protein, also eher wenig."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Philadelphia?",
-      "answer": "Philadelphia Original hat nur etwa 3,5g Kohlenhydrate pro 100g und ist damit recht kohlenhydratarm, gut geeignet für eine Low-Carb-Ernährung."
+      "answer": "Philadelphia Klassisch hat nur 4,3g Kohlenhydrate pro 100g und ist damit recht kohlenhydratarm, gut geeignet für eine Low-Carb-Ernährung."
     },
     {
       "question": "Ist Philadelphia zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Der hohe Fettgehalt macht Philadelphia Original kalorienreich (253 kcal/100g). Wer abnimmt, greift besser zu Philadelphia Balance und bestreicht das Brot dünn."
+      "answer": "In Maßen ja. Der hohe Fettgehalt macht Philadelphia Klassisch kalorienreich (226 kcal/100g). Wer abnimmt, greift besser zu Philadelphia Balance und bestreicht das Brot dünn."
     },
     {
       "question": "Ist Philadelphia gesund?",

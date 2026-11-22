@@ -3,6 +3,13 @@
   "name": "Ditsch Brezel",
   "emoji": "🥨",
   "category": "fast-food",
+  "source": "Herstellerangabe Brezelbäckerei Ditsch, Laugenbrezel, 100 g (Artikel 4186) (https://www.ditsch.de/de/handel/produktwelt/laugenbrezel-100-g-1856?lang=de, abgerufen am 22.11.2026), Werte je 100 g; Werte für das gebackene Produkt",
+  "hersteller": {
+    "name": "Brezelbäckerei Ditsch",
+    "produkt": "Laugenbrezel, 100 g (Artikel 4186)",
+    "url": "https://www.ditsch.de/de/handel/produktwelt/laugenbrezel-100-g-1856?lang=de",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Ditsch Brezel Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat eine Ditsch Brezel? Eine Laugenbrezel (100g) hat ca. 271 kcal. Nährwerte pro 100g & Stück, Varianten und Abnehm-Tipps im Überblick.",
@@ -26,29 +33,12 @@
   },
   "variants": [
     {
-      "name": "Mini-Laugenbrezel (35g)",
-      "portion_g": 35,
-      "calories": 95,
-      "protein": 3,
-      "carbs": 16,
-      "fat": 1.6,
-      "tip": "Kleiner Snack"
-    },
-    {
       "name": "Halbe Brezel (50g)",
       "portion_g": 50,
       "calories": 136,
       "protein": 4.3,
       "carbs": 23.2,
       "fat": 2.3
-    },
-    {
-      "name": "Laugenstange (80g)",
-      "portion_g": 80,
-      "calories": 217,
-      "protein": 6.8,
-      "carbs": 37.1,
-      "fat": 3.6
     },
     {
       "name": "1 Laugenbrezel (100g)",
@@ -60,12 +50,12 @@
       "tip": "Standard"
     },
     {
-      "name": "Große Laugenbrezel (150g)",
-      "portion_g": 150,
-      "calories": 407,
-      "protein": 12.8,
-      "carbs": 69.6,
-      "fat": 6.8
+      "name": "2 Laugenbrezeln (200g)",
+      "portion_g": 200,
+      "calories": 542,
+      "protein": 17,
+      "carbs": 92.8,
+      "fat": 9
     },
     {
       "name": "Laugenbrezel mit Butter (115g)",
@@ -73,30 +63,59 @@
       "calories": 379,
       "protein": 8.6,
       "carbs": 46.4,
-      "fat": 16.6,
-      "tip": "Mit 15g Butter bestrichen"
+      "fat": 16.7,
+      "tip": "Mit 15g Butter bestrichen",
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "fdcId": 173430,
+          "g": 15
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Brötchen",
-      "calories": 134,
-      "emoji": "🥖"
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen"
+        }
+      ]
     },
     {
       "name": "Croissant",
-      "calories": 230,
-      "emoji": "🥐"
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant"
+        }
+      ]
     },
     {
       "name": "Bagel",
-      "calories": 138,
-      "emoji": "🥯"
+      "calories": 251,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "bagel"
+        }
+      ]
     },
     {
       "name": "Brezel",
-      "calories": 271,
-      "emoji": "🥨"
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        }
+      ]
     }
   ],
   "tips": [
@@ -112,7 +131,7 @@
     },
     {
       "title": "Belag macht den Unterschied",
-      "text": "Die Brezel selbst ist moderat. Erst Butter (rund 100 kcal pro Portion) oder Frischkäse treiben die Gesamtkalorien stark nach oben. Pur bleibt sie schlanker.",
+      "text": "Die Brezel selbst ist moderat. Erst Butter (15 g liefern laut FDC rund 108 kcal) oder Frischkäse treiben die Gesamtkalorien stark nach oben. Pur bleibt sie schlanker.",
       "icon": "🧈"
     },
     {
@@ -122,14 +141,14 @@
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Eine Mini-Laugenbrezel mit nur 95 kcal stillt die Lust auf Laugengebäck, ohne das Kalorienbudget zu sprengen. Wer abnehmen will, greift zur kleineren Größe.",
+      "text": "Eine halbe Brezel mit nur 136 kcal stillt die Lust auf Laugengebäck, ohne das Kalorienbudget zu sprengen. Wer abnehmen will, greift zur kleineren Portion.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Ditsch Brezel?",
-      "answer": "Eine Ditsch Laugenbrezel mit 100g hat laut Hersteller-Nährwertangabe ca. 271 kcal. Eine große Brezel (150g) kommt auf rund 407 kcal."
+      "answer": "Eine Ditsch Laugenbrezel mit 100g hat laut Hersteller-Nährwertangabe ca. 271 kcal. Mit 15g Butter bestrichen sind es rund 379 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Ditsch Brezel pro 100g?",

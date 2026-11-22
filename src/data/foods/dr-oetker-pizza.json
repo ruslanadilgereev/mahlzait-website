@@ -3,9 +3,16 @@
   "name": "Dr. Oetker Pizza",
   "emoji": "🍕",
   "category": "supermarkt",
+  "source": "Herstellerangabe Dr. Oetker, Ristorante Pizza Salame (https://www.oetker.de/unsere-produkte/ristorante/salame, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Dr. Oetker",
+    "produkt": "Ristorante Pizza Salame",
+    "url": "https://www.oetker.de/unsere-produkte/ristorante/salame",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Dr. Oetker Pizza Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Dr. Oetker Pizza? Ristorante Salame: ca. 854 kcal pro Pizza (267 kcal/100g). Nährwerte aller Sorten im Überblick.",
+    "description": "Wie viele Kalorien hat eine Dr. Oetker Pizza? Ristorante Salame: ca. 854 kcal pro Pizza (267 kcal/100g). Nährwerte, Portionen und Tipps im Überblick.",
     "keywords": [
       "dr oetker pizza kcal",
       "dr oetker pizza kalorien",
@@ -53,60 +60,47 @@
       "tip": "Standard"
     },
     {
-      "name": "Ganze Ristorante Mozzarella (355g)",
-      "portion_g": 355,
-      "calories": 866,
-      "protein": 36,
-      "carbs": 82,
-      "fat": 43
-    },
-    {
-      "name": "Ganze Ofenfrische Speciale (405g)",
-      "portion_g": 405,
-      "calories": 871,
-      "protein": 38,
-      "carbs": 109,
-      "fat": 30,
-      "tip": "Dickerer Boden, weniger Fett"
-    },
-    {
-      "name": "Ganze Ristorante Hawaii (335g)",
-      "portion_g": 335,
-      "calories": 760,
-      "protein": 30,
-      "carbs": 90,
-      "fat": 30
-    },
-    {
-      "name": "Ganze Ristorante Quattro Formaggi (340g)",
-      "portion_g": 340,
-      "calories": 921,
-      "protein": 38,
-      "carbs": 84,
-      "fat": 47,
-      "tip": "Käsereichste Sorte"
+      "name": "Pro 100g",
+      "portion_g": 100,
+      "calories": 267,
+      "protein": 10,
+      "carbs": 26,
+      "fat": 13
     }
   ],
   "comparison": [
     {
-      "name": "Wagner Steinofen Pizza (ganze, ~360g)",
-      "calories": 900,
-      "emoji": "🍕"
+      "name": "TK-Pizza Salami (ganz, 350g)",
+      "calories": 963,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "tk-pizza",
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Pizza Margherita (frisch, Restaurant)",
-      "calories": 720,
-      "emoji": "🧀"
-    },
-    {
-      "name": "Flammkuchen (ganzer, ~280g)",
-      "calories": 560,
-      "emoji": "🫓"
+      "name": "Lieferdienst-Pizza (ganz, 707g)",
+      "calories": 1994,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "fdcId": 2708640,
+          "g": 707
+        }
+      ]
     },
     {
       "name": "Döner (1 komplett)",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
@@ -122,7 +116,7 @@
     },
     {
       "title": "Sorte clever wählen",
-      "text": "Mozzarella (244 kcal/100g) und Hawaii liegen etwas niedriger als Salame (267) oder Quattro Formaggi (rund 271 kcal/100g). Die Käse-Sorten haben am meisten Fett.",
+      "text": "Die Sorten unterscheiden sich je nach Belag deutlich. Käsereiche Sorten haben am meisten Fett, ein Blick auf die Nährwerte der Packung lohnt sich.",
       "icon": "🧀"
     },
     {
@@ -139,11 +133,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Dr. Oetker Pizza?",
-      "answer": "Eine ganze Dr. Oetker Ristorante Salame (320g) hat ca. 854 kcal, das entspricht 267 kcal pro 100g. Andere Sorten liegen je nach Belag zwischen rund 760 und 920 kcal pro Pizza."
+      "answer": "Eine ganze Dr. Oetker Ristorante Salame (320g) hat ca. 854 kcal, das entspricht 267 kcal pro 100g."
     },
     {
       "question": "Wie viele Kalorien hat eine Dr. Oetker Pizza pro 100g?",
-      "answer": "Die Ristorante Salame hat 267 kcal pro 100g, die Mozzarella 244 kcal/100g und die Ofenfrische Speciale rund 215 kcal/100g. Die dünnen Ristorante-Sorten sind pro 100g energiedichter als die dickeren Ofenfrische-Pizzen."
+      "answer": "Die Ristorante Salame hat laut Dr. Oetker 267 kcal pro 100g. Andere Sorten liegen je nach Belag darüber oder darunter, maßgeblich ist die Angabe auf der Packung."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Dr. Oetker Pizza?",
@@ -151,7 +145,7 @@
     },
     {
       "question": "Wie viel Protein hat eine Dr. Oetker Pizza?",
-      "answer": "Eine ganze Ristorante Salame liefert rund 32g Eiweiß (10g pro 100g), hauptsächlich aus Käse und Salami. Die Quattro Formaggi kommt durch den hohen Käseanteil auf etwa 38g pro Pizza."
+      "answer": "Eine ganze Ristorante Salame liefert rund 32g Eiweiß (10g pro 100g), hauptsächlich aus Käse und Salami."
     },
     {
       "question": "Ist Dr. Oetker Pizza zum Abnehmen geeignet?",

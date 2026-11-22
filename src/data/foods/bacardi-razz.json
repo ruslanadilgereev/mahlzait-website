@@ -3,9 +3,16 @@
   "name": "Bacardi Razz",
   "emoji": "🍹",
   "category": "getraenk",
+  "source": "Herstellerangabe Bacardi Limited, BACARDI RAZZ (32 %) (https://www.bacardilimited.com/nutrition/bacardi?brand_locale=de-DE, abgerufen am 22.11.2026), Werte je 100 ml; Hersteller nennt Werte je 30 ml (66 kcal, 2,8 g Kohlenhydrate), hier auf 100 ml umgerechnet",
+  "hersteller": {
+    "name": "Bacardi Limited",
+    "produkt": "BACARDI RAZZ (32 %)",
+    "url": "https://www.bacardilimited.com/nutrition/bacardi?brand_locale=de-DE",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Bacardi Razz Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Bacardi Razz? Ein 4cl-Shot hat ca. 98 kcal. Nährwerte pro 100 ml & pro Glas, Kohlenhydrate und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Bacardi Razz? Ein 4cl-Shot hat laut Hersteller ca. 88 kcal. Nährwerte pro 100 ml & pro Glas, Kohlenhydrate und Tipps im Überblick.",
     "keywords": [
       "bacardi razz kcal",
       "bacardi razz kalorien",
@@ -16,27 +23,28 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 244,
+    "calories_per_100g": 220,
     "protein_per_100g": 0,
-    "carbs_per_100g": 12,
+    "carbs_per_100g": 9.3,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 40,
-    "typical_portion_name": "1 Shot (4cl)"
+    "typical_portion_name": "1 Shot (4cl)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "Bacardi Razz pro 100 ml",
       "portion_g": 100,
-      "calories": 244,
+      "calories": 220,
       "protein": 0,
-      "carbs": 12,
+      "carbs": 9,
       "fat": 0
     },
     {
       "name": "Kurzer (2cl)",
       "portion_g": 20,
-      "calories": 49,
+      "calories": 44,
       "protein": 0,
       "carbs": 2,
       "fat": 0
@@ -44,78 +52,110 @@
     {
       "name": "1 Shot (4cl)",
       "portion_g": 40,
-      "calories": 98,
+      "calories": 88,
       "protein": 0,
-      "carbs": 5,
+      "carbs": 4,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Doppelter (6cl)",
       "portion_g": 60,
-      "calories": 146,
+      "calories": 132,
       "protein": 0,
-      "carbs": 7,
+      "carbs": 6,
       "fat": 0
     },
     {
       "name": "Longdrink mit Cola (4cl + 200 ml Cola)",
-      "portion_g": 240,
-      "calories": 182,
+      "portion_g": 250,
+      "calories": 176,
       "protein": 0,
       "carbs": 26,
-      "fat": 0,
-      "tip": "inkl. Cola"
+      "fat": 1,
+      "tip": "inkl. Cola",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "slug": "cola",
+          "ml": 200,
+          "g": 210
+        }
+      ]
     },
     {
       "name": "Longdrink mit Cola Zero (4cl + 200 ml)",
       "portion_g": 240,
-      "calories": 99,
+      "calories": 88,
       "protein": 0,
-      "carbs": 5,
+      "carbs": 4,
       "fat": 0,
-      "tip": "kalorienärmer"
-    },
-    {
-      "name": "Cocktail (5cl + Sirup & Saft)",
-      "portion_g": 200,
-      "calories": 215,
-      "protein": 0,
-      "carbs": 28,
-      "fat": 0
+      "tip": "kalorienärmer",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "slug": "cola-zero",
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Wodka (4cl)",
       "calories": 88,
-      "emoji": "🍸"
-    },
-    {
-      "name": "Aperol Spritz (Glas)",
-      "calories": 130,
-      "emoji": "🍹"
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "wodka"
+        }
+      ]
     },
     {
       "name": "Baileys (4cl)",
-      "calories": 130,
-      "emoji": "🥛"
+      "calories": 126,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "baileys",
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Mojito (Glas)",
-      "calories": 168,
-      "emoji": "🍸"
+      "calories": 155,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "mojito"
+        }
+      ]
+    },
+    {
+      "name": "Gin Tonic (Glas)",
+      "calories": 213,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin-tonic"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Auf die Menge achten",
-      "text": "Ein 4cl-Shot hat ca. 98 kcal. Bei mehreren Gläsern am Abend summiert sich das schnell auf mehrere hundert Kalorien.",
+      "text": "Ein 4cl-Shot hat ca. 88 kcal. Bei mehreren Gläsern am Abend summiert sich das schnell auf mehrere hundert Kalorien.",
       "icon": "🍹"
     },
     {
       "title": "Mixer macht den Unterschied",
-      "text": "Mit Cola Zero statt normaler Cola sparst du beim Longdrink rund 80 kcal pro Glas, ohne auf den Geschmack zu verzichten.",
+      "text": "Mit Cola Zero statt normaler Cola sparst du beim Longdrink rund 88 kcal pro Glas, ohne auf den Geschmack zu verzichten.",
       "icon": "🥤"
     },
     {
@@ -137,15 +177,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Bacardi Razz?",
-      "answer": "Ein klassischer 4cl-Shot Bacardi Razz hat ca. 98 kcal. Pro 100 ml sind es rund 244 kcal."
+      "answer": "Ein klassischer 4cl-Shot Bacardi Razz hat laut Hersteller ca. 88 kcal. Pro 100 ml sind es rund 220 kcal."
     },
     {
       "question": "Wie viel Kalorien hat ein Glas Bacardi Razz mit Cola?",
-      "answer": "Ein Longdrink aus 4cl Bacardi Razz und 200 ml Cola kommt auf etwa 182 kcal. Mit Cola Zero sind es nur rund 99 kcal."
+      "answer": "Ein Longdrink aus 4cl Bacardi Razz und 200 ml Cola kommt auf etwa 176 kcal. Mit Cola Zero sind es nur rund 88 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bacardi Razz?",
-      "answer": "Bacardi Razz enthält etwa 12 g Kohlenhydrate pro 100 ml, das entspricht rund 5 g pro 4cl-Shot. Die Kohlenhydrate stammen aus zugesetztem Zucker."
+      "answer": "Bacardi Razz enthält laut Hersteller 2,8 g Kohlenhydrate je 30 ml, also rund 9,3 g pro 100 ml und etwa 3,7 g pro 4cl-Shot. Die Kohlenhydrate stammen vollständig aus Zucker."
     },
     {
       "question": "Hat Bacardi Razz Eiweiß oder Fett?",
@@ -153,7 +193,7 @@
     },
     {
       "question": "Ist Bacardi Razz zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 98 kcal pro Shot liefert er leere Kalorien ohne Sättigung. Wer abnehmen möchte, sollte Alkohol generell sparsam genießen."
+      "answer": "Nur in Maßen. Mit ca. 88 kcal pro Shot liefert er leere Kalorien ohne Sättigung. Wer abnehmen möchte, sollte Alkohol generell sparsam genießen."
     },
     {
       "question": "Wie viel Prozent Alkohol hat Bacardi Razz?",

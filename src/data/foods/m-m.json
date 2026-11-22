@@ -78,17 +78,6 @@
   ],
   "comparison": [
     {
-      "name": "Smarties (90g)",
-      "calories": 419,
-      "emoji": "🟢",
-      "basis": [
-        {
-          "slug": "smarties",
-          "g": 90
-        }
-      ]
-    },
-    {
       "name": "Snickers (50g Riegel)",
       "calories": 246,
       "emoji": "🍫",
@@ -101,11 +90,11 @@
     },
     {
       "name": "Gummibärchen (90g)",
-      "calories": 309,
+      "calories": 356,
       "emoji": "🐻",
       "basis": [
         {
-          "slug": "gummibaerchen",
+          "fdcId": 2710359,
           "g": 90
         }
       ]

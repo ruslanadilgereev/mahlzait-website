@@ -3,9 +3,16 @@
   "name": "Rama",
   "emoji": "🧈",
   "category": "supermarkt",
+  "source": "Herstellerangabe Flora Food Group (Rama), Rama Der Klassiker (https://www.rama.com/de-de/produkte/rama-der-klassiker/rama-klassiker, abgerufen am 22.11.2026), Werte je 100 g; Kohlenhydrate und Eiweiß laut Hersteller jeweils unter 0,5 g, hier als 0 g",
+  "hersteller": {
+    "name": "Flora Food Group (Rama)",
+    "produkt": "Rama Der Klassiker",
+    "url": "https://www.rama.com/de-de/produkte/rama-der-klassiker/rama-klassiker",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Rama Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Rama? 100g Rama Original haben ca. 536 kcal, 1 EL (10g) rund 63 kcal. Nährwerte, Varianten & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Rama? 100g Rama Der Klassiker haben laut Hersteller 540 kcal, 1 EL (10g) rund 54 kcal. Nährwerte, Portionen & Tipps zum Abnehmen.",
     "keywords": [
       "rama kcal",
       "rama kalorien",
@@ -17,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 536,
-    "protein_per_100g": 0.5,
-    "carbs_per_100g": 0.5,
+    "calories_per_100g": 540,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 0,
     "fat_per_100g": 60,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 10,
     "typical_portion_name": "1 EL (10g) zum Streichen"
   },
@@ -32,7 +39,7 @@
       "calories": 27,
       "protein": 0,
       "carbs": 0,
-      "fat": 3.0
+      "fat": 3
     },
     {
       "name": "1 EL dünn (10g)",
@@ -40,86 +47,110 @@
       "calories": 54,
       "protein": 0,
       "carbs": 0,
-      "fat": 6.0,
+      "fat": 6,
       "tip": "Standard zum Streichen"
     },
     {
       "name": "1 Scheibe Brot bestrichen (15g)",
       "portion_g": 15,
-      "calories": 80,
+      "calories": 81,
       "protein": 0,
       "carbs": 0,
-      "fat": 9.0
+      "fat": 9
     },
     {
       "name": "Zum Braten (20g)",
       "portion_g": 20,
-      "calories": 107,
+      "calories": 108,
       "protein": 0,
       "carbs": 0,
-      "fat": 12.0
+      "fat": 12
     },
     {
       "name": "Backportion (30g)",
       "portion_g": 30,
-      "calories": 161,
+      "calories": 162,
       "protein": 0,
       "carbs": 0,
-      "fat": 18.0
+      "fat": 18
     },
     {
       "name": "Halber Becher (250g)",
       "portion_g": 250,
-      "calories": 1340,
-      "protein": 1,
-      "carbs": 1,
-      "fat": 150.0
+      "calories": 1350,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 150
     },
     {
       "name": "Ganzer Becher (500g)",
       "portion_g": 500,
-      "calories": 2680,
-      "protein": 3,
-      "carbs": 3,
-      "fat": 300.0
+      "calories": 2700,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 300
     }
   ],
   "comparison": [
     {
       "name": "Butter (10g)",
-      "calories": 74,
-      "emoji": "🧈"
+      "calories": 72,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Frischkäse (10g)",
       "calories": 25,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Olivenöl (10g)",
       "calories": 88,
-      "emoji": "🫒"
+      "emoji": "🫒",
+      "basis": [
+        {
+          "slug": "olivenoel",
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Marmelade (10g)",
-      "calories": 27,
-      "emoji": "🍓"
+      "calories": 28,
+      "emoji": "🍓",
+      "basis": [
+        {
+          "slug": "marmelade",
+          "g": 10
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Dünn streichen spart Kalorien",
-      "text": "Eine dünn bestrichene Scheibe Brot kommt mit 5 bis 10g Rama aus, also etwa 31 bis 63 kcal. Wer großzügiger streicht, verdoppelt die Kalorien schnell.",
+      "text": "Eine dünn bestrichene Scheibe Brot kommt mit 5 bis 10g Rama aus, also etwa 27 bis 54 kcal. Wer großzügiger streicht, verdoppelt die Kalorien schnell.",
       "icon": "🔪"
     },
     {
       "title": "Weniger gesättigte Fette als Butter",
-      "text": "Rama besteht überwiegend aus pflanzlichen Ölen und enthält dadurch mehr ungesättigte Fettsäuren als Butter, bei nahezu gleichem Kaloriengehalt.",
+      "text": "Rama besteht überwiegend aus pflanzlichen Ölen und enthält dadurch mehr ungesättigte Fettsäuren als Butter. Mit rund 54 kcal pro 10g liefert sie zudem weniger Kalorien als Butter (rund 72 kcal).",
       "icon": "🌱"
     },
     {
       "title": "Kalorienärmere Variante wählen",
-      "text": "Rama bietet auch fettreduzierte Streichfette mit weniger Fett pro 100g an. Diese haben deutlich weniger Kalorien als das Original mit 60% Fett.",
+      "text": "Rama bietet auch fettreduzierte Streichfette mit weniger Fett pro 100g an. Diese haben deutlich weniger Kalorien als der Klassiker mit 60% Fett.",
       "icon": "📉"
     },
     {
@@ -136,27 +167,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Rama?",
-      "answer": "100g Rama Original (60% Fett) haben etwa 536 kcal. Eine typische Portion von 10g zum Bestreichen einer Brotscheibe liefert rund 63 kcal."
+      "answer": "100g Rama Der Klassiker (60% Fett) haben laut Hersteller 540 kcal. Eine typische Portion von 10g zum Bestreichen einer Brotscheibe liefert rund 54 kcal."
     },
     {
       "question": "Wie viel Fett hat Rama?",
-      "answer": "Rama Original enthält etwa 60g Fett pro 100g. Der Großteil davon stammt aus pflanzlichen Ölen mit einem höheren Anteil ungesättigter Fettsäuren als Butter."
+      "answer": "Rama Der Klassiker enthält 60g Fett pro 100g, davon 17g gesättigte Fettsäuren. Der Großteil stammt aus pflanzlichen Ölen mit einem höheren Anteil ungesättigter Fettsäuren als Butter."
     },
     {
       "question": "Hat Rama Kohlenhydrate?",
-      "answer": "Rama enthält kaum Kohlenhydrate, nur etwa 0,5g pro 100g. Auch der Eiweißgehalt ist mit rund 0,5g pro 100g sehr gering, da Rama fast vollständig aus Fett und Wasser besteht."
+      "answer": "Rama enthält kaum Kohlenhydrate, laut Hersteller unter 0,5g pro 100g. Auch der Eiweißgehalt liegt unter 0,5g pro 100g, da Rama fast vollständig aus Fett und Wasser besteht."
     },
     {
       "question": "Ist Rama zum Abnehmen geeignet?",
-      "answer": "Rama ist mit 536 kcal pro 100g sehr kalorienreich. In kleinen Mengen von 5 bis 10g pro Portion lässt es sich gut in eine kalorienbewusste Ernährung einbauen, beim Abnehmen sollte man die Menge aber im Blick behalten."
+      "answer": "Rama ist mit 540 kcal pro 100g sehr kalorienreich. In kleinen Mengen von 5 bis 10g pro Portion lässt es sich gut in eine kalorienbewusste Ernährung einbauen, beim Abnehmen sollte man die Menge aber im Blick behalten."
     },
     {
       "question": "Ist Rama gesünder als Butter?",
-      "answer": "Rama und Butter haben einen ähnlichen Kaloriengehalt. Rama enthält jedoch mehr ungesättigte Fettsäuren und kein Cholesterin, da es auf pflanzlicher Basis hergestellt wird."
+      "answer": "Rama hat mit rund 54 kcal pro 10g weniger Kalorien als Butter (rund 72 kcal pro 10g). Außerdem enthält Rama mehr ungesättigte Fettsäuren und kein Cholesterin, da es auf pflanzlicher Basis hergestellt wird."
     },
     {
       "question": "Wie viele Kalorien hat ein Esslöffel Rama?",
-      "answer": "Ein gut gehäufter Esslöffel Rama wiegt etwa 10g und liefert rund 63 kcal. Ein Teelöffel mit etwa 5g kommt auf circa 31 kcal."
+      "answer": "Ein gut gehäufter Esslöffel Rama wiegt etwa 10g und liefert rund 54 kcal. Ein Teelöffel mit etwa 5g kommt auf circa 27 kcal."
     }
   ],
   "related_foods": [

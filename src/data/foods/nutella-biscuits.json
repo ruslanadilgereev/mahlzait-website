@@ -3,9 +3,16 @@
   "name": "Nutella Biscuits",
   "emoji": "🍪",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, nutella biscuits (https://www.nutella.com/de/de/produkte/biscuits/nutella-biscuits, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "nutella biscuits",
+    "url": "https://www.nutella.com/de/de/produkte/biscuits/nutella-biscuits",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Nutella Biscuits Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Nutella Biscuits? Ein Keks (14g) hat ca. 73 kcal, 100g rund 520 kcal. Nährwerte pro Stück & Packung plus Vergleich und Tipps.",
+    "description": "Wie viele Kalorien haben Nutella Biscuits? Ein Keks (13,8g) hat ca. 71 kcal, 100g rund 515 kcal. Nährwerte pro Stück & Packung plus Vergleich und Tipps.",
     "keywords": [
       "nutella biscuits kalorien",
       "nutella biscuits kcal",
@@ -16,86 +23,104 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 520,
-    "protein_per_100g": 7.2,
-    "carbs_per_100g": 65,
+    "calories_per_100g": 515,
+    "protein_per_100g": 7.9,
+    "carbs_per_100g": 64,
     "fat_per_100g": 24.8,
-    "fiber_per_100g": 2.4,
-    "typical_portion_g": 14,
-    "typical_portion_name": "1 Keks (ca. 14g)"
+    "fiber_per_100g": null,
+    "typical_portion_g": 13.8,
+    "typical_portion_name": "1 Keks (13,8g)"
   },
   "variants": [
     {
-      "name": "1 Keks (14g)",
-      "portion_g": 14,
-      "calories": 73,
-      "protein": 1,
-      "carbs": 9,
-      "fat": 3.5,
+      "name": "1 Keks (13,8g)",
+      "portion_g": 13.8,
+      "calories": 71,
+      "protein": 1.1,
+      "carbs": 8.8,
+      "fat": 3.4,
       "tip": "Standard"
     },
     {
-      "name": "2 Kekse (28g)",
-      "portion_g": 28,
-      "calories": 146,
-      "protein": 2,
-      "carbs": 18,
-      "fat": 6.9
+      "name": "2 Kekse (27,6g)",
+      "portion_g": 27.6,
+      "calories": 142,
+      "protein": 2.2,
+      "carbs": 17.7,
+      "fat": 6.8
     },
     {
-      "name": "3 Kekse (42g)",
-      "portion_g": 42,
-      "calories": 218,
-      "protein": 3,
-      "carbs": 27,
-      "fat": 10.4
+      "name": "3 Kekse (41,4g)",
+      "portion_g": 41.4,
+      "calories": 213,
+      "protein": 3.3,
+      "carbs": 26.5,
+      "fat": 10.3
     },
     {
-      "name": "Mini-Portion 4 Kekse (56g)",
-      "portion_g": 56,
-      "calories": 291,
-      "protein": 4,
-      "carbs": 36,
-      "fat": 13.9
+      "name": "Mini-Portion 4 Kekse (55,2g)",
+      "portion_g": 55.2,
+      "calories": 284,
+      "protein": 4.4,
+      "carbs": 35.3,
+      "fat": 13.7
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 520,
-      "protein": 7.2,
-      "carbs": 65,
+      "calories": 515,
+      "protein": 7.9,
+      "carbs": 64,
       "fat": 24.8
     },
     {
       "name": "Ganze Packung (304g)",
       "portion_g": 304,
-      "calories": 1581,
-      "protein": 21.9,
-      "carbs": 197.6,
+      "calories": 1566,
+      "protein": 24,
+      "carbs": 194.6,
       "fat": 75.4
     }
   ],
   "comparison": [
     {
-      "name": "Butterkeks (1 Stück)",
-      "calories": 28,
-      "emoji": "🍪"
+      "name": "Butterkeks (13,8g)",
+      "calories": 64,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "butterkeks",
+          "g": 13.8
+        }
+      ]
     },
     {
-      "name": "Hanuta (1 Riegel)",
-      "calories": 118,
-      "emoji": "🍫"
+      "name": "Lotus Keks (1 Stück, 7,8g)",
+      "calories": 38,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "lotus-keks",
+          "g": 7.8
+        }
+      ]
     },
     {
-      "name": "Knoppers (1 Riegel)",
-      "calories": 136,
-      "emoji": "🧇"
+      "name": "Nutella (1 EL, 15g)",
+      "calories": 81,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "nutella",
+          "g": 15
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Naschen mit Augenmaß",
-      "text": "Ein einzelner Keks hat rund 73 kcal. Wer bewusst 1 bis 2 Stück genießt statt aus der Packung zu essen, behält die Kalorien gut im Griff.",
+      "text": "Ein einzelner Keks hat rund 71 kcal. Wer bewusst 1 bis 2 Stück genießt statt aus der Packung zu essen, behält die Kalorien gut im Griff.",
       "icon": "🍪"
     },
     {
@@ -115,18 +140,18 @@
     },
     {
       "title": "Mit Mahlzait genau tracken",
-      "text": "Da ein Keks rund 73 kcal liefert, lohnt es sich, die tatsächliche Stückzahl zu erfassen. So bleibt das Tagesbudget realistisch.",
+      "text": "Da ein Keks rund 71 kcal liefert, lohnt es sich, die tatsächliche Stückzahl zu erfassen. So bleibt das Tagesbudget realistisch.",
       "icon": "📱"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Nutella Biscuit?",
-      "answer": "Ein einzelner Nutella Biscuit wiegt etwa 14g und hat rund 73 kcal. Zwei Kekse kommen auf rund 146 kcal."
+      "answer": "Ein einzelner Nutella Biscuit wiegt laut Hersteller 13,8g und hat rund 71 kcal. Zwei Kekse kommen auf rund 142 kcal."
     },
     {
       "question": "Wie viele Kalorien haben Nutella Biscuits pro 100g?",
-      "answer": "Pro 100g haben Nutella Biscuits rund 520 kcal. Das entspricht etwa sieben Keksen."
+      "answer": "Pro 100g haben Nutella Biscuits laut Hersteller 515 kcal. Das entspricht gut sieben Keksen."
     },
     {
       "question": "Wie viel Zucker steckt in Nutella Biscuits?",
@@ -134,11 +159,11 @@
     },
     {
       "question": "Wie viel Eiweiß haben Nutella Biscuits?",
-      "answer": "Nutella Biscuits liefern rund 7,2g Eiweiß pro 100g, pro Keks also etwa 1g. Als Eiweißquelle eignen sie sich nicht."
+      "answer": "Nutella Biscuits liefern rund 7,9g Eiweiß pro 100g, pro Keks also etwa 1g. Als Eiweißquelle eignen sie sich nicht."
     },
     {
       "question": "Sind Nutella Biscuits zum Abnehmen geeignet?",
-      "answer": "Nur in kleinen Mengen. Mit rund 520 kcal und viel Zucker und Fett pro 100g sind sie eine Süßigkeit. In einer Diät passen ein bis zwei Kekse als bewusster Genuss, mehr nicht."
+      "answer": "Nur in kleinen Mengen. Mit rund 515 kcal und viel Zucker und Fett pro 100g sind sie eine Süßigkeit. In einer Diät passen ein bis zwei Kekse als bewusster Genuss, mehr nicht."
     },
     {
       "question": "Sind Nutella Biscuits gesund?",

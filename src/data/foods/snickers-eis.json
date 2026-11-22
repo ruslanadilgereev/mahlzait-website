@@ -3,9 +3,16 @@
   "name": "Snickers Eis",
   "emoji": "🍦",
   "category": "supermarkt",
+  "source": "Herstellerangabe Mars Wrigley (SNICKERS), SNICKERS Eisriegel (https://www.snickers.de/products/dairy-ice/snickers-eisriegel-single-other, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars Wrigley (SNICKERS)",
+    "produkt": "SNICKERS Eisriegel",
+    "url": "https://www.snickers.de/products/dairy-ice/snickers-eisriegel-single-other",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Snickers Eis Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Snickers Eis? Ein Riegel (48g) hat ca. 168 kcal, 100g sind 350 kcal. Nährwerte pro Riegel & Vergleich mit Magnum & Co.",
+    "description": "Wie viele Kalorien hat Snickers Eis? Ein Eisriegel (66g) hat ca. 226 kcal, 100g sind 342 kcal. Nährwerte pro Riegel & Vergleich mit Magnum & Co.",
     "keywords": [
       "snickers eis kalorien",
       "kalorien snickers eis",
@@ -15,42 +22,154 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 350,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 35,
-    "fat_per_100g": 22,
-    "fiber_per_100g": 1,
-    "typical_portion_g": 48,
-    "typical_portion_name": "1 Eisriegel (48g)"
+    "calories_per_100g": 342,
+    "protein_per_100g": 5.9,
+    "carbs_per_100g": 33,
+    "fat_per_100g": 20,
+    "fiber_per_100g": null,
+    "typical_portion_g": 66,
+    "typical_portion_name": "1 Eisriegel (Single, 66g)"
   },
   "variants": [
-    { "name": "1 Eisriegel (48g)", "portion_g": 48, "calories": 168, "protein": 2, "carbs": 17, "fat": 11, "tip": "Standard-Riegel" },
-    { "name": "Halber Riegel (24g)", "portion_g": 24, "calories": 84, "protein": 1, "carbs": 8, "fat": 5 },
-    { "name": "Multipack-Riegel (35g)", "portion_g": 35, "calories": 123, "protein": 1.5, "carbs": 12, "fat": 8, "tip": "Kleiner im 6er-Pack" },
-    { "name": "Großer Riegel (60g)", "portion_g": 60, "calories": 210, "protein": 3, "carbs": 21, "fat": 13 },
-    { "name": "2 Riegel (96g)", "portion_g": 96, "calories": 336, "protein": 4, "carbs": 34, "fat": 21 },
-    { "name": "Pro 100g", "portion_g": 100, "calories": 350, "protein": 4.5, "carbs": 35, "fat": 22 }
+    {
+      "name": "1 Eisriegel (Single, 66g)",
+      "portion_g": 66,
+      "calories": 226,
+      "protein": 3.9,
+      "carbs": 21.8,
+      "fat": 13.2,
+      "tip": "Standard-Riegel"
+    },
+    {
+      "name": "Halber Riegel (33g)",
+      "portion_g": 33,
+      "calories": 113,
+      "protein": 1.9,
+      "carbs": 10.9,
+      "fat": 6.6
+    },
+    {
+      "name": "1 Riegel aus dem 5er-Pack (45,6g)",
+      "portion_g": 45.6,
+      "calories": 156,
+      "protein": 2.7,
+      "carbs": 15,
+      "fat": 9.1,
+      "tip": "Kleiner, 5 Stück zusammen 228 g"
+    },
+    {
+      "name": "5er-Pack (228g)",
+      "portion_g": 228,
+      "calories": 780,
+      "protein": 13.5,
+      "carbs": 75.2,
+      "fat": 45.6
+    },
+    {
+      "name": "Pro 100g",
+      "portion_g": 100,
+      "calories": 342,
+      "protein": 5.9,
+      "carbs": 33,
+      "fat": 20
+    }
   ],
   "comparison": [
-    { "name": "Magnum Classic (1 Riegel)", "calories": 240, "emoji": "🍫" },
-    { "name": "Snickers Schokoriegel (50g)", "calories": 245, "emoji": "🍫" },
-    { "name": "Vanilleeis (1 Kugel, 75g)", "calories": 155, "emoji": "🍦" },
-    { "name": "Wassereis (50g)", "calories": 35, "emoji": "🧊" }
+    {
+      "name": "Magnum Classic (81g)",
+      "calories": 247,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "magnum"
+        }
+      ]
+    },
+    {
+      "name": "Snickers Schokoriegel (50g)",
+      "calories": 246,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "snickers",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Vanilleeis (1 Kugel, 75g)",
+      "calories": 155,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "eis-vanille"
+        }
+      ]
+    },
+    {
+      "name": "Wassereis (100g)",
+      "calories": 79,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "wassereis",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Leichter als der Schokoriegel", "text": "Ein Snickers Eisriegel (48g) hat ca. 168 kcal, der klassische Snickers Schokoriegel (50g) dagegen rund 245 kcal. Das Eis ist die kalorienärmere Portion – auch weil der Riegel kleiner ausfällt.", "icon": "✅" },
-    { "title": "Auf die Portionsgröße achten", "text": "Pro 100g hat Snickers Eis 350 kcal. Ein einzelner Riegel wiegt aber nur 48g. Die 168 kcal pro Riegel klingen deutlich harmloser als der 100g-Wert.", "icon": "⚖️" },
-    { "title": "Fett liefert die meiste Energie", "text": "22g Fett pro 100g stecken im Snickers Eis. Schokoladenüberzug, Karamell und Erdnüsse sind die Fettquellen und machen den Großteil der Kalorien aus. Bewusst als Genuss einplanen.", "icon": "🥜" },
-    { "title": "Multipack hilft beim Portionieren", "text": "Die Riegel aus dem Multipack sind mit ca. 35g kleiner als Einzelriegel: rund 123 kcal pro Stück. Wer bewusst weniger essen will, greift hier zu – aber nur zu einem.", "icon": "📦" },
-    { "title": "Wassereis als leichte Alternative", "text": "Lust auf Eis bei wenig Kalorien? Wassereis hat nur ca. 70 kcal/100g – ein Fünftel von Snickers Eis. Cremig ist es nicht, dafür erfrischend und kalorienarm.", "icon": "🧊" }
+    {
+      "title": "Leichter als der Schokoriegel",
+      "text": "Ein Snickers Eisriegel (66g) hat ca. 226 kcal, der klassische Snickers Schokoriegel (50g) dagegen rund 246 kcal. Das Eis ist die etwas kalorienärmere Portion, obwohl der Riegel schwerer ist.",
+      "icon": "✅"
+    },
+    {
+      "title": "Auf die Portionsgröße achten",
+      "text": "Pro 100g hat Snickers Eis 342 kcal. Ein einzelner Riegel wiegt aber nur 66g. Die 226 kcal pro Riegel klingen deutlich harmloser als der 100g-Wert.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Fett liefert die meiste Energie",
+      "text": "20g Fett pro 100g stecken im Snickers Eis. Schokoladenüberzug, Karamell und Erdnüsse sind die Fettquellen und machen den Großteil der Kalorien aus. Bewusst als Genuss einplanen.",
+      "icon": "🥜"
+    },
+    {
+      "title": "5er-Pack hilft beim Portionieren",
+      "text": "Die Riegel aus dem 5er-Pack sind mit rund 45,6g kleiner als der Einzelriegel: rund 156 kcal pro Stück. Wer bewusst weniger essen will, greift hier zu, aber nur zu einem.",
+      "icon": "📦"
+    },
+    {
+      "title": "Wassereis als leichte Alternative",
+      "text": "Lust auf Eis bei wenig Kalorien? Wassereis hat nur ca. 79 kcal pro 100g, knapp ein Viertel von Snickers Eis. Cremig ist es nicht, dafür erfrischend und kalorienarm.",
+      "icon": "🧊"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Snickers Eisriegel?", "answer": "Ein klassischer Snickers Eisriegel (48g) hat ca. 168 kcal. Die kleineren Riegel aus dem Multipack (ca. 35g) kommen auf etwa 123 kcal." },
-    { "question": "Wie viele Kalorien hat Snickers Eis pro 100g?", "answer": "Snickers Eis hat ca. 350 kcal pro 100g: 4,5g Eiweiß, 35g Kohlenhydrate und 22g Fett. Da ein Riegel nur 48g wiegt, isst man selten volle 100g." },
-    { "question": "Was ist der Unterschied zwischen Snickers Eis und dem Snickers Schokoriegel?", "answer": "Das Eis hat eine andere Zusammensetzung als der Schokoriegel. Pro 100g hat das Eis ca. 350 kcal, der Schokoriegel rund 490 kcal. Das Eis ist pro 100g also deutlich kalorienärmer, weil Milcheis statt Nougat den Kern bildet." },
-    { "question": "Kann man Snickers Eis beim Abnehmen essen?", "answer": "Ja, in Maßen. Ein Riegel mit ca. 168 kcal lässt sich in eine Diät einplanen. Wichtig ist, bei einem Riegel zu bleiben und ihn ins Tagesbudget einzurechnen." },
-    { "question": "Wie viel Zucker und Fett hat Snickers Eis?", "answer": "Pro 100g stecken ca. 22g Fett und rund 33g Zucker drin. Ein Riegel (48g) liefert damit etwa 11g Fett und ca. 16g Zucker – ungefähr 5 Stück Würfelzucker." },
-    { "question": "Hat Snickers Eis viel Eiweiß?", "answer": "Nein, mit ca. 4,5g Eiweiß pro 100g ist es keine nennenswerte Eiweißquelle. Ein Riegel liefert nur rund 2g Eiweiß – es ist klar eine Süßigkeit, kein Snack zum Sattwerden." }
+    {
+      "question": "Wie viele Kalorien hat ein Snickers Eisriegel?",
+      "answer": "Ein Snickers Eisriegel (Single, 66g) hat ca. 226 kcal. Die kleineren Riegel aus dem 5er-Pack (rund 45,6g) kommen auf etwa 156 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat Snickers Eis pro 100g?",
+      "answer": "Snickers Eis hat laut Hersteller 342 kcal pro 100g: 5,9g Eiweiß, 33g Kohlenhydrate und 20g Fett. Da ein Riegel nur 66g wiegt, isst man selten volle 100g."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Snickers Eis und dem Snickers Schokoriegel?",
+      "answer": "Das Eis hat eine andere Zusammensetzung als der Schokoriegel. Ein Eisriegel (66g) hat ca. 226 kcal, ein Schokoriegel (50g) rund 246 kcal. Pro 100g ist das Eis deutlich kalorienärmer, weil Milcheis statt Nougat den Kern bildet."
+    },
+    {
+      "question": "Kann man Snickers Eis beim Abnehmen essen?",
+      "answer": "Ja, in Maßen. Ein Riegel mit ca. 226 kcal lässt sich in eine Diät einplanen. Wichtig ist, bei einem Riegel zu bleiben und ihn ins Tagesbudget einzurechnen."
+    },
+    {
+      "question": "Wie viel Zucker und Fett hat Snickers Eis?",
+      "answer": "Pro 100g stecken 20g Fett und 24g Zucker drin. Ein Riegel (66g) liefert damit etwa 13g Fett und ca. 16g Zucker, ungefähr 5 Stück Würfelzucker."
+    },
+    {
+      "question": "Hat Snickers Eis viel Eiweiß?",
+      "answer": "Nein, mit 5,9g Eiweiß pro 100g ist es keine nennenswerte Eiweißquelle. Ein Riegel liefert nur rund 3,9g Eiweiß, es ist klar eine Süßigkeit, kein Snack zum Sattwerden."
+    }
   ],
   "related_foods": [
     "snickers",

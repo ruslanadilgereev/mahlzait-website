@@ -3,9 +3,16 @@
   "name": "Choco Fresh",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, kinder Chocofresh (https://www.kinder.com/de/de/kinder-chocofresh, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "kinder Chocofresh",
+    "url": "https://www.kinder.com/de/de/kinder-chocofresh",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Choco Fresh Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Choco Fresh? Ein Riegel (20,5g) hat ca. 118 kcal, 100g rund 576 kcal. Nährwerte pro Stück & Packung plus Tipps.",
+    "description": "Wie viele Kalorien hat Choco Fresh? Ein Riegel (20,5g) hat ca. 118 kcal, 100g rund 577 kcal. Nährwerte pro Stück & Packung plus Tipps.",
     "keywords": [
       "choco fresh kalorien",
       "choco fresh kcal",
@@ -17,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 576,
-    "protein_per_100g": 7.4,
-    "carbs_per_100g": 40.1,
-    "fat_per_100g": 42.6,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 577,
+    "protein_per_100g": 7.3,
+    "carbs_per_100g": 40.2,
+    "fat_per_100g": 42.7,
+    "fiber_per_100g": null,
     "typical_portion_g": 20.5,
     "typical_portion_name": "1 Riegel (20,5g)"
   },
@@ -32,71 +39,84 @@
       "calories": 118,
       "protein": 1.5,
       "carbs": 8.2,
-      "fat": 8.7,
+      "fat": 8.8,
       "tip": "Standard-Portion, einzeln verpackt"
     },
     {
       "name": "2 Riegel (41g)",
       "portion_g": 41,
-      "calories": 236,
+      "calories": 237,
       "protein": 3,
-      "carbs": 16.4,
+      "carbs": 16.5,
       "fat": 17.5
     },
     {
       "name": "3 Riegel (61,5g)",
       "portion_g": 61.5,
-      "calories": 354,
-      "protein": 4.6,
+      "calories": 355,
+      "protein": 4.5,
       "carbs": 24.7,
-      "fat": 26.2
+      "fat": 26.3
     },
     {
       "name": "Halbe Packung (51g)",
       "portion_g": 51,
       "calories": 294,
-      "protein": 3.8,
+      "protein": 3.7,
       "carbs": 20.5,
-      "fat": 21.7
+      "fat": 21.8
     },
     {
       "name": "Ganze Packung 5 Stück (102,5g)",
       "portion_g": 102.5,
-      "calories": 590,
-      "protein": 7.6,
-      "carbs": 41.1,
-      "fat": 43.7,
+      "calories": 591,
+      "protein": 7.5,
+      "carbs": 41.2,
+      "fat": 43.8,
       "tip": "Komplette Packung"
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 576,
-      "protein": 7.4,
-      "carbs": 40.1,
-      "fat": 42.6
+      "calories": 577,
+      "protein": 7.3,
+      "carbs": 40.2,
+      "fat": 42.7
     }
   ],
   "comparison": [
     {
-      "name": "Kinderriegel",
-      "calories": 115,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (1 Reihe, 20g)",
+      "calories": 107,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 20
+        }
+      ]
     },
     {
-      "name": "Milchschnitte",
-      "calories": 130,
-      "emoji": "🍫"
+      "name": "KitKat (2 Finger, 20,7g)",
+      "calories": 107,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat",
+          "g": 20.7
+        }
+      ]
     },
     {
-      "name": "Duplo",
-      "calories": 100,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Knoppers",
-      "calories": 104,
-      "emoji": "🧇"
+      "name": "Bueno White (1 Riegel, 19,5g)",
+      "calories": 111,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "bueno-white",
+          "g": 19.5
+        }
+      ]
     }
   ],
   "tips": [
@@ -112,7 +132,7 @@
     },
     {
       "title": "Sehr fettreich beachten",
-      "text": "Mit 42,6g Fett pro 100g gehört Choco Fresh zu den fettreichen Süßigkeiten. Ein Riegel liefert bereits knapp 9g Fett.",
+      "text": "Mit 42,7g Fett pro 100g gehört Choco Fresh zu den fettreichen Süßigkeiten. Ein Riegel liefert bereits knapp 9g Fett.",
       "icon": "⚠️"
     },
     {
@@ -129,23 +149,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Choco Fresh Riegel?",
-      "answer": "Ein einzelner Choco Fresh Riegel (20,5g) hat ca. 118 kcal. Die ganze Packung mit 5 Stück (102,5g) kommt auf rund 590 kcal."
+      "answer": "Ein einzelner Choco Fresh Riegel (20,5g) hat ca. 118 kcal. Die ganze Packung mit 5 Stück (102,5g) kommt auf rund 591 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Choco Fresh pro 100g?",
-      "answer": "Choco Fresh hat laut Hersteller rund 576 kcal pro 100g."
+      "answer": "Choco Fresh hat laut Hersteller rund 577 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Choco Fresh?",
-      "answer": "Pro 100g enthält Choco Fresh 40,1g Kohlenhydrate, davon 39,9g Zucker. Ein Riegel liefert etwa 8,2g Kohlenhydrate."
+      "answer": "Pro 100g enthält Choco Fresh 40,2g Kohlenhydrate, davon 39,6g Zucker. Ein Riegel liefert etwa 8,2g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Choco Fresh?",
-      "answer": "Choco Fresh enthält 7,4g Eiweiß pro 100g, also nur etwa 1,5g pro Riegel. Es ist damit kein nennenswerter Eiweiß-Lieferant."
+      "answer": "Choco Fresh enthält 7,3g Eiweiß pro 100g, also nur etwa 1,5g pro Riegel. Es ist damit kein nennenswerter Eiweiß-Lieferant."
     },
     {
       "question": "Ist Choco Fresh zum Abnehmen geeignet?",
-      "answer": "Choco Fresh ist mit 576 kcal und 42,6g Fett pro 100g sehr energiereich. In einer Diät ist ein einzelner Riegel (118 kcal) als kleiner Genuss möglich, in Maßen und eingeplant in die Tagesbilanz."
+      "answer": "Choco Fresh ist mit 577 kcal und 42,7g Fett pro 100g sehr energiereich. In einer Diät ist ein einzelner Riegel (118 kcal) als kleiner Genuss möglich, in Maßen und eingeplant in die Tagesbilanz."
     },
     {
       "question": "Ist Choco Fresh gesund?",

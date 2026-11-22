@@ -3,6 +3,13 @@
   "name": "Corona Extra",
   "emoji": "🍺",
   "category": "getraenk",
+  "source": "Herstellerangabe Anheuser-Busch InBev (Corona Deutschland), Corona Extra (https://www.corona.de/product-corona-extra, abgerufen am 22.11.2026), Werte je 100 ml; Fett laut Hersteller unter 0,01 g, als 0 übernommen",
+  "hersteller": {
+    "name": "Anheuser-Busch InBev (Corona Deutschland)",
+    "produkt": "Corona Extra",
+    "url": "https://www.corona.de/product-corona-extra",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Corona Extra Kalorien: Nährwerte & Flaschen | Mahlzait",
     "description": "Wie viele Kalorien hat Corona Extra? Eine Flasche (0,355 l) hat ca. 149 kcal. Alle Nährwerte pro 100 ml & je Flasche plus Vergleich mit anderen Bieren.",
@@ -20,16 +27,17 @@
     "protein_per_100g": 0.3,
     "carbs_per_100g": 4,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 355,
-    "typical_portion_name": "1 Flasche (0,355 l)"
+    "typical_portion_name": "1 Flasche (0,355 l)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "Pro 100 ml",
       "portion_g": 100,
       "calories": 42,
-      "protein": 0,
+      "protein": 0.3,
       "carbs": 4,
       "fat": 0
     },
@@ -37,7 +45,7 @@
       "name": "Kleines Glas (0,2 l)",
       "portion_g": 200,
       "calories": 84,
-      "protein": 1,
+      "protein": 0.6,
       "carbs": 8,
       "fat": 0
     },
@@ -46,15 +54,15 @@
       "portion_g": 330,
       "calories": 139,
       "protein": 1,
-      "carbs": 13,
+      "carbs": 13.2,
       "fat": 0
     },
     {
       "name": "Flasche 0,355 l (Standard)",
       "portion_g": 355,
       "calories": 149,
-      "protein": 1,
-      "carbs": 14,
+      "protein": 1.1,
+      "carbs": 14.2,
       "fat": 0,
       "tip": "Die klassische Corona-Flasche"
     },
@@ -62,7 +70,7 @@
       "name": "Großes Glas (0,5 l)",
       "portion_g": 500,
       "calories": 210,
-      "protein": 2,
+      "protein": 1.5,
       "carbs": 20,
       "fat": 0
     },
@@ -70,8 +78,8 @@
       "name": "Sixpack (6 x 0,355 l)",
       "portion_g": 2130,
       "calories": 895,
-      "protein": 6,
-      "carbs": 85,
+      "protein": 6.4,
+      "carbs": 85.2,
       "fat": 0
     }
   ],
@@ -79,28 +87,59 @@
     {
       "name": "Corona Extra (0,355 l)",
       "calories": 149,
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "corona-extra",
+          "ml": 355,
+          "g": 355
+        }
+      ]
     },
     {
       "name": "Pils (0,33 l)",
       "calories": 142,
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "variante": "Pils (0,33l Flasche)"
+        }
+      ]
     },
     {
       "name": "Radler (0,33 l)",
-      "calories": 165,
-      "emoji": "🍻"
+      "calories": 140,
+      "emoji": "🍻",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 165,
+          "g": 165
+        },
+        {
+          "slug": "sprite",
+          "ml": 165,
+          "g": 172
+        }
+      ]
     },
     {
       "name": "Weizenbier (0,5 l)",
-      "calories": 215,
-      "emoji": "🍺"
+      "calories": 216,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "weizenbier",
+          "variante": "Hefeweizen (0,5l)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mit Limette servieren",
-      "text": "Die typische Limettenscheibe im Flaschenhals fügt praktisch keine Kalorien hinzu (eine Spalte hat nur 1-2 kcal) und sorgt für den frischen Geschmack.",
+      "text": "Die typische Limettenscheibe im Flaschenhals fügt praktisch keine Kalorien hinzu und sorgt für den frischen Geschmack.",
       "icon": "🍋"
     },
     {
@@ -127,11 +166,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Corona Extra?",
-      "answer": "Eine Standardflasche Corona Extra (0,355 l) hat etwa 149 kcal. Pro 100 ml sind es 42 kcal. Eine 0,33-l-Flasche liegt bei rund 139 kcal."
+      "answer": "Eine Standardflasche Corona Extra (0,355 l) hat etwa 149 kcal. Pro 100 ml sind es laut Hersteller 42 kcal. Eine 0,33-l-Flasche liegt bei rund 139 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Corona Extra?",
-      "answer": "Corona Extra enthält 4,0 g Kohlenhydrate pro 100 ml. Eine 0,355-l-Flasche kommt damit auf etwa 14 g Kohlenhydrate."
+      "answer": "Corona Extra enthält laut Hersteller 4 g Kohlenhydrate pro 100 ml. Eine 0,355-l-Flasche kommt damit auf etwa 14 g Kohlenhydrate."
     },
     {
       "question": "Hat Corona Extra Eiweiß?",
@@ -147,7 +186,7 @@
     },
     {
       "question": "Hat Corona Extra weniger Kalorien als normales Pils?",
-      "answer": "Die Werte sind ähnlich: Corona Extra liegt bei 42 kcal pro 100 ml, ein klassisches Pils bei etwa 43 kcal pro 100 ml. Der Unterschied pro Flasche ist gering."
+      "answer": "Die Werte sind ähnlich: Corona Extra liegt laut Hersteller bei 42 kcal pro 100 ml, normales Bier laut FDC bei etwa 43 kcal pro 100 g. Der Unterschied pro Flasche ist gering."
     }
   ],
   "related_foods": [

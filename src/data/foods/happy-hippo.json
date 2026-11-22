@@ -3,9 +3,16 @@
   "name": "Happy Hippo",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, kinder Happy Hippo Kakao (https://www.kinder.com/de/de/kinder-happy-hippo, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "kinder Happy Hippo Kakao",
+    "url": "https://www.kinder.com/de/de/kinder-happy-hippo",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Happy Hippo Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Happy Hippo? Ein Riegel (21g) hat ca. 124 kcal. Nährwerte pro 100g & pro Stück, Varianten Kakao & Haselnuss im Überblick.",
+    "description": "Wie viele Kalorien hat ein Happy Hippo? Ein Riegel (20,7g) hat ca. 123 kcal. Nährwerte pro 100g & pro Stück im Überblick.",
     "keywords": [
       "happy hippo kalorien",
       "happy hippo kcal",
@@ -16,61 +23,53 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 589,
+    "calories_per_100g": 593,
     "protein_per_100g": 6.7,
     "carbs_per_100g": 53.6,
     "fat_per_100g": 38.6,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 21,
+    "fiber_per_100g": null,
+    "typical_portion_g": 20.7,
     "typical_portion_name": "1 Riegel (20,7g)"
   },
   "variants": [
     {
-      "name": "1 Riegel Kakao (21g)",
-      "portion_g": 21,
-      "calories": 124,
+      "name": "1 Riegel Kakao (20,7g)",
+      "portion_g": 20.7,
+      "calories": 123,
       "protein": 1.4,
-      "carbs": 11.3,
-      "fat": 8.1,
+      "carbs": 11.1,
+      "fat": 8,
       "tip": "Standard-Riegel"
     },
     {
-      "name": "1 Riegel Haselnuss (21g)",
-      "portion_g": 21,
-      "calories": 124,
-      "protein": 1.8,
-      "carbs": 10.6,
-      "fat": 8.2
-    },
-    {
-      "name": "2 Riegel (42g)",
-      "portion_g": 42,
-      "calories": 247,
+      "name": "2 Riegel (41,4g)",
+      "portion_g": 41.4,
+      "calories": 246,
       "protein": 2.8,
-      "carbs": 22.5,
-      "fat": 16.2
+      "carbs": 22.2,
+      "fat": 16
     },
     {
-      "name": "3 Riegel (62g)",
-      "portion_g": 62,
-      "calories": 365,
+      "name": "3 Riegel (62,1g)",
+      "portion_g": 62.1,
+      "calories": 368,
       "protein": 4.2,
-      "carbs": 33.2,
-      "fat": 23.9
+      "carbs": 33.3,
+      "fat": 24
     },
     {
       "name": "5er-Pack (103,5g)",
       "portion_g": 103.5,
-      "calories": 610,
+      "calories": 614,
       "protein": 6.9,
       "carbs": 55.5,
-      "fat": 39.9,
+      "fat": 40,
       "tip": "Ganze Packung"
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 589,
+      "calories": 593,
       "protein": 6.7,
       "carbs": 53.6,
       "fat": 38.6
@@ -78,35 +77,59 @@
   ],
   "comparison": [
     {
-      "name": "Knoppers (1 Riegel)",
-      "calories": 135,
-      "emoji": "🍫"
+      "name": "Knoppers (1 Stück, 25g)",
+      "calories": 137,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "knoppers",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Hanuta (1 Stück)",
-      "calories": 110,
-      "emoji": "🍫"
+      "name": "Hanuta (1 Stück, 22g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "hanuta",
+          "g": 22
+        }
+      ]
     },
     {
-      "name": "Duplo (1 Riegel)",
+      "name": "Duplo (1 Riegel, 18,2g)",
       "calories": 100,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "duplo",
+          "g": 18.2
+        }
+      ]
     },
     {
-      "name": "Milchschnitte (1 Stück)",
-      "calories": 127,
-      "emoji": "🥛"
+      "name": "Kinderriegel (1 Riegel, 21g)",
+      "calories": 119,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "kinderriegel",
+          "g": 21
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Leichter Snack zum Kaffee",
-      "text": "Ein einzelner Happy Hippo hat nur etwa 124 kcal und passt damit gut als kleine Süßigkeit zwischendurch, ohne das Tagesbudget stark zu belasten.",
+      "text": "Ein einzelner Happy Hippo hat etwa 123 kcal und passt damit gut als kleine Süßigkeit zwischendurch, ohne das Tagesbudget stark zu belasten.",
       "icon": "☕"
     },
     {
       "title": "Auf die Portion achten",
-      "text": "Die Riegel werden oft im 5er-Pack gegessen. Eine ganze Packung kommt schon auf rund 610 kcal. Wer abnehmen möchte, sollte es bei ein bis zwei Riegeln belassen.",
+      "text": "Die Riegel werden oft im 5er-Pack gegessen. Eine ganze Packung kommt schon auf rund 614 kcal. Wer abnehmen möchte, sollte es bei ein bis zwei Riegeln belassen.",
       "icon": "⚖️"
     },
     {
@@ -128,11 +151,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Happy Hippo?",
-      "answer": "Ein einzelner Happy Hippo Riegel (20,7g) hat etwa 124 kcal. Pro 100g sind es rund 589 kcal."
+      "answer": "Ein einzelner Happy Hippo Riegel (20,7g) hat etwa 123 kcal. Pro 100g sind es 593 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Packung Happy Hippo?",
-      "answer": "Ein 5er-Pack (103,5g) enthält ungefähr 610 kcal, also etwa 124 kcal pro Riegel."
+      "answer": "Ein 5er-Pack (103,5g) enthält ungefähr 614 kcal, also etwa 123 kcal pro Riegel."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Happy Hippo?",
@@ -147,8 +170,8 @@
       "answer": "Happy Hippo ist sehr fett- und zuckerreich und sättigt kaum. In einer Diät ist er nur als kleiner, seltener Genuss sinnvoll, nicht als regelmäßiger Snack."
     },
     {
-      "question": "Was ist der Unterschied zwischen Kakao und Haselnuss?",
-      "answer": "Die Kalorien sind mit je rund 124 kcal pro Riegel nahezu gleich. Die Haselnuss-Variante hat etwas mehr Eiweiß, die Kakao-Variante etwas mehr Zucker."
+      "question": "Gilt das auch für Happy Hippo Haselnuss?",
+      "answer": "Die Werte auf dieser Seite sind die Herstellerangabe für Happy Hippo Kakao (123 kcal pro Riegel). Für die Haselnuss-Sorte gelten eigene Werte, die auf der Packung stehen."
     }
   ],
   "related_foods": [

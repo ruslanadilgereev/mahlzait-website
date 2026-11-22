@@ -3,9 +3,16 @@
   "name": "Lindt Lindor Kugel",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Lindt & Sprüngli, LINDOR Kugeln Milch (https://www.lindt.de/lindor-kugel-beutel-milch-100g, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Lindt & Sprüngli",
+    "produkt": "LINDOR Kugeln Milch",
+    "url": "https://www.lindt.de/lindor-kugel-beutel-milch-100g",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Lindor Kugel Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Lindt Lindor Kugel? Eine Kugel (12,5g) hat ca. 77 kcal. Alle Nährwerte pro 100g & pro Kugel plus Sorten-Vergleich.",
+    "description": "Wie viele Kalorien hat eine Lindt Lindor Kugel? Eine Kugel (12,5g) hat ca. 78 kcal. Alle Nährwerte pro 100g & pro Kugel plus Tipps.",
     "keywords": [
       "lindor kugel kalorien",
       "kalorien lindor kugel",
@@ -17,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 616,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 47,
-    "fat_per_100g": 44,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 623,
+    "protein_per_100g": 4.7,
+    "carbs_per_100g": 44,
+    "fat_per_100g": 47,
+    "fiber_per_100g": null,
     "typical_portion_g": 12.5,
     "typical_portion_name": "1 Kugel (12,5g)"
   },
@@ -29,7 +36,7 @@
     {
       "name": "1 Kugel (12,5g)",
       "portion_g": 12.5,
-      "calories": 77,
+      "calories": 78,
       "protein": 1,
       "carbs": 6,
       "fat": 6,
@@ -38,94 +45,90 @@
     {
       "name": "2 Kugeln (25g)",
       "portion_g": 25,
-      "calories": 154,
+      "calories": 156,
       "protein": 1,
-      "carbs": 12,
-      "fat": 11
+      "carbs": 11,
+      "fat": 12
     },
     {
       "name": "3 Kugeln (37,5g)",
       "portion_g": 37.5,
-      "calories": 231,
+      "calories": 234,
       "protein": 2,
-      "carbs": 18,
-      "fat": 17
+      "carbs": 17,
+      "fat": 18
     },
     {
       "name": "5 Kugeln (62,5g)",
       "portion_g": 62.5,
-      "calories": 385,
+      "calories": 389,
       "protein": 3,
-      "carbs": 29,
-      "fat": 28
-    },
-    {
-      "name": "Lindor Dunkel 1 Kugel (12,5g)",
-      "portion_g": 12.5,
-      "calories": 78,
-      "protein": 1,
-      "carbs": 5,
-      "fat": 6,
-      "tip": "Etwas weniger Zucker"
-    },
-    {
-      "name": "Lindor Weiß 1 Kugel (12,5g)",
-      "portion_g": 12.5,
-      "calories": 78,
-      "protein": 1,
-      "carbs": 7,
-      "fat": 6
+      "carbs": 28,
+      "fat": 29
     },
     {
       "name": "Beutel 100g (8 Kugeln)",
       "portion_g": 100,
-      "calories": 616,
+      "calories": 623,
       "protein": 5,
-      "carbs": 47,
-      "fat": 44
+      "carbs": 44,
+      "fat": 47
     }
   ],
   "comparison": [
     {
-      "name": "Schokolade Vollmilch (1 Riegel 25g)",
+      "name": "Vollmilchschokolade (1 Riegel, 25g)",
       "calories": 134,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Kinderriegel (1 Stück 21g)",
-      "calories": 113,
-      "emoji": "🍫"
+      "name": "KitKat (2 Finger, 20,7g)",
+      "calories": 107,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat",
+          "g": 20.7
+        }
+      ]
     },
     {
-      "name": "Hanuta (1 Riegel 22g)",
-      "calories": 122,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Gummibärchen (Handvoll 25g)",
-      "calories": 86,
-      "emoji": "🐻"
+      "name": "Bueno White (1 Riegel, 19,5g)",
+      "calories": 111,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "bueno-white",
+          "g": 19.5
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eine Kugel reicht oft",
-      "text": "Eine Lindor Kugel hat nur etwa 77 kcal. Wer bewusst eine einzelne Kugel langsam zergehen lässt, hat den Genuss ohne große Kalorienbilanz.",
+      "text": "Eine Lindor Kugel hat nur etwa 78 kcal. Wer bewusst eine einzelne Kugel langsam zergehen lässt, hat den Genuss ohne große Kalorienbilanz.",
       "icon": "🍫"
     },
     {
       "title": "Fett statt Zucker im Vordergrund",
-      "text": "Anders als bei vielen Süßigkeiten kommen rund zwei Drittel der Kalorien aus Fett (44g pro 100g), nicht aus Zucker. Das macht die zartschmelzende Füllung aus.",
+      "text": "Anders als bei vielen Süßigkeiten kommen rund zwei Drittel der Kalorien aus Fett (47g pro 100g), nicht aus Zucker. Das macht die zartschmelzende Füllung aus.",
       "icon": "🧈"
     },
     {
       "title": "Portion vorher abzählen",
-      "text": "Aus einer offenen Tüte greift man schnell mehrfach zu. Zählen Sie 2 bis 3 Kugeln ab und stellen Sie die Packung weg, dann bleibt es bei rund 150 bis 230 kcal.",
+      "text": "Aus einer offenen Tüte greift man schnell mehrfach zu. Zählen Sie 2 bis 3 Kugeln ab und stellen Sie die Packung weg, dann bleibt es bei rund 156 bis 234 kcal.",
       "icon": "🔢"
     },
     {
       "title": "Dunkle Variante zum Kaffee",
-      "text": "Lindor Dunkel schmeckt intensiver, dadurch ist man oft schneller zufrieden. Die Kalorien pro Kugel sind aber praktisch identisch zur Vollmilch-Sorte.",
+      "text": "Lindor Dunkel schmeckt intensiver, dadurch ist man oft schneller zufrieden. Kalorienarm ist aber auch die dunkle Sorte nicht.",
       "icon": "☕"
     },
     {
@@ -137,23 +140,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Lindt Lindor Kugel?",
-      "answer": "Eine einzelne Lindor Kugel (12,5g) hat etwa 77 kcal. Drei Kugeln kommen auf rund 231 kcal."
+      "answer": "Eine einzelne Lindor Kugel (12,5g) hat etwa 78 kcal. Drei Kugeln kommen auf rund 234 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Lindor pro 100g?",
-      "answer": "Lindor Vollmilch hat laut Hersteller etwa 616 kcal pro 100g. Das entspricht rund acht Kugeln."
+      "answer": "Lindor Milch hat laut Hersteller 623 kcal pro 100g. Das entspricht rund acht Kugeln."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in einer Lindor Kugel?",
-      "answer": "Eine Kugel enthält etwa 6g Kohlenhydrate, davon der Großteil Zucker. Pro 100g sind es 47g Kohlenhydrate."
+      "answer": "Eine Kugel enthält etwa 5,5g Kohlenhydrate, fast alles davon Zucker. Pro 100g sind es 44g Kohlenhydrate, davon 43g Zucker."
     },
     {
       "question": "Wie viel Eiweiß hat eine Lindor Kugel?",
-      "answer": "Der Eiweißanteil ist gering: rund 0,6g pro Kugel beziehungsweise 5g pro 100g. Lindor ist eine Süßigkeit, keine Eiweißquelle."
+      "answer": "Der Eiweißanteil ist gering: rund 0,6g pro Kugel beziehungsweise 4,7g pro 100g. Lindor ist eine Süßigkeit, keine Eiweißquelle."
     },
     {
       "question": "Ist Lindor zum Abnehmen geeignet?",
-      "answer": "Lindor ist mit 616 kcal pro 100g sehr energiereich, vor allem durch den hohen Fettanteil. In einer Diät ist eine einzelne Kugel mit 77 kcal als kleiner Genuss machbar, größere Mengen sollte man jedoch meiden."
+      "answer": "Lindor ist mit 623 kcal pro 100g sehr energiereich, vor allem durch den hohen Fettanteil. In einer Diät ist eine einzelne Kugel mit 78 kcal als kleiner Genuss machbar, größere Mengen sollte man jedoch meiden."
     },
     {
       "question": "Ist Lindor gesund?",

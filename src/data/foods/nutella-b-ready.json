@@ -3,6 +3,13 @@
   "name": "Nutella B-ready",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, nutella B-ready (https://www.nutella.com/de/de/produkte/biscuits/b-ready, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "nutella B-ready",
+    "url": "https://www.nutella.com/de/de/produkte/biscuits/b-ready",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Nutella B-ready Kalorien: Nährwerte & Riegel | Mahlzait",
     "description": "Wie viele Kalorien hat Nutella B-ready? Ein Riegel (22g) hat ca. 115 kcal. Nährwerte pro 100g & Stück, Packung im Überblick + Tipps.",
@@ -16,10 +23,10 @@
   },
   "overview": {
     "calories_per_100g": 521,
-    "protein_per_100g": 7.3,
-    "carbs_per_100g": 60.4,
+    "protein_per_100g": 7.2,
+    "carbs_per_100g": 60.7,
     "fat_per_100g": 27,
-    "fiber_per_100g": 2.5,
+    "fiber_per_100g": null,
     "typical_portion_g": 22,
     "typical_portion_name": "1 Riegel (22g)"
   },
@@ -63,30 +70,43 @@
       "portion_g": 100,
       "calories": 521,
       "protein": 7,
-      "carbs": 60,
+      "carbs": 61,
       "fat": 27
     }
   ],
   "comparison": [
     {
-      "name": "Knoppers (1 Riegel)",
-      "calories": 138,
-      "emoji": "🧇"
-    },
-    {
-      "name": "Hanuta (1 Stück)",
-      "calories": 111,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Duplo (1 Riegel)",
-      "calories": 99,
-      "emoji": "🍫"
-    },
-    {
       "name": "Nutella (1 EL, 15g)",
-      "calories": 80,
-      "emoji": "🥜"
+      "calories": 81,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "nutella",
+          "g": 15
+        }
+      ]
+    },
+    {
+      "name": "KitKat (2 Finger, 20,7g)",
+      "calories": 107,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat",
+          "g": 20.7
+        }
+      ]
+    },
+    {
+      "name": "Bueno White (1 Riegel, 19,5g)",
+      "calories": 111,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "bueno-white",
+          "g": 19.5
+        }
+      ]
     }
   ],
   "tips": [
@@ -126,7 +146,7 @@
     },
     {
       "question": "Wie viel Eiweiß hat Nutella B-ready?",
-      "answer": "Mit 7,3g Eiweiß pro 100g ist der Proteingehalt gering. Ein Riegel liefert nur etwa 2g."
+      "answer": "Mit 7,2g Eiweiß pro 100g ist der Proteingehalt gering. Ein Riegel liefert nur etwa 2g."
     },
     {
       "question": "Ist Nutella B-ready zum Abnehmen geeignet?",

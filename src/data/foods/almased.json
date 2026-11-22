@@ -3,9 +3,16 @@
   "name": "Almased",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "Herstellerangabe Almased, Almased Original (Pulver) (https://www.almased.de/produkt/almased-original, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Almased",
+    "produkt": "Almased Original (Pulver)",
+    "url": "https://www.almased.de/produkt/almased-original",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Almased Kalorien: Nährwerte & Shake-Vergleich | Mahlzait",
-    "description": "Wie viele Kalorien hat Almased? Eine Portion (50 g Pulver) hat ca. 177 kcal. Nährwerte pro 100 g, Shake-Varianten mit Öl oder Milch und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Almased? Eine Portion (50 g Pulver) hat laut Hersteller ca. 174 kcal. Nährwerte pro 100 g, Shake-Varianten mit Öl oder Milch und Diät-Tipps.",
     "keywords": [
       "almased kalorien",
       "almased shake kalorien",
@@ -16,11 +23,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 354,
-    "protein_per_100g": 53.3,
-    "carbs_per_100g": 30.5,
-    "fat_per_100g": 2,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 347,
+    "protein_per_100g": 52.2,
+    "carbs_per_100g": 29.1,
+    "fat_per_100g": 1.8,
+    "fiber_per_100g": null,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Portion (50 g Pulver)"
   },
@@ -28,17 +35,17 @@
     {
       "name": "Halbe Portion (25 g Pulver)",
       "portion_g": 25,
-      "calories": 89,
+      "calories": 87,
       "protein": 13,
-      "carbs": 8,
-      "fat": 1,
+      "carbs": 7,
+      "fat": 0,
       "tip": "Zum Einschleichen oder als kleiner Eiweiß-Snack."
     },
     {
       "name": "1 Portion Pulver in Wasser (50 g)",
       "portion_g": 50,
-      "calories": 177,
-      "protein": 27,
+      "calories": 174,
+      "protein": 26,
       "carbs": 15,
       "fat": 1,
       "tip": "Standard"
@@ -46,72 +53,136 @@
     {
       "name": "Shake mit Wasser + 2 TL Rapsöl (50 g + 10 g Öl)",
       "portion_g": 60,
-      "calories": 267,
-      "protein": 27,
+      "calories": 262,
+      "protein": 26,
       "carbs": 15,
       "fat": 11,
-      "tip": "Vom Hersteller empfohlene Zubereitung."
+      "tip": "Vom Hersteller empfohlene Zubereitung.",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 172336,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Shake mit fettarmer Milch 1,5 % (50 g + 200 ml)",
-      "portion_g": 250,
-      "calories": 271,
-      "protein": 34,
+      "portion_g": 257,
+      "calories": 269,
+      "protein": 33,
       "carbs": 25,
-      "fat": 4
+      "fat": 4,
+      "tip": "Milch als Mischung aus 1- und 2-%-Milch gerechnet",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 170872,
+          "ml": 100,
+          "g": 103
+        },
+        {
+          "fdcId": 172205,
+          "ml": 100,
+          "g": 104
+        }
+      ]
     },
     {
       "name": "Shake mit Buttermilch (50 g + 200 ml)",
-      "portion_g": 250,
-      "calories": 251,
-      "protein": 34,
-      "carbs": 23,
-      "fat": 2
+      "portion_g": 257,
+      "calories": 256,
+      "protein": 33,
+      "carbs": 24,
+      "fat": 3,
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 170874,
+          "ml": 200,
+          "g": 207
+        }
+      ]
     },
     {
       "name": "100 g Pulver",
       "portion_g": 100,
-      "calories": 354,
-      "protein": 53,
-      "carbs": 31,
+      "calories": 347,
+      "protein": 52,
+      "carbs": 29,
       "fat": 2
     },
     {
       "name": "Tagesportion Startphase (3 Shakes mit Öl)",
       "portion_g": 180,
-      "calories": 801,
-      "protein": 80,
-      "carbs": 46,
+      "calories": 786,
+      "protein": 78,
+      "carbs": 44,
       "fat": 33,
-      "tip": "Erste Diätphase: 3 Mahlzeiten durch Shakes ersetzen."
+      "tip": "Erste Diätphase: 3 Mahlzeiten durch Shakes ersetzen.",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 172336,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Proteinshake",
-      "calories": 120,
-      "emoji": "🥤"
+      "name": "Eiweißshake (250 ml)",
+      "calories": 165,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "eiweissshake"
+        }
+      ]
     },
     {
-      "name": "Magerquark",
-      "calories": 67,
-      "emoji": "🥛"
+      "name": "Skyr (1 Becher)",
+      "calories": 89,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "skyr"
+        }
+      ]
     },
     {
-      "name": "Milch",
-      "calories": 64,
-      "emoji": "🥛"
+      "name": "Milch (250 ml)",
+      "calories": 157,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch"
+        }
+      ]
     },
     {
-      "name": "Smoothie (Beeren)",
-      "calories": 60,
-      "emoji": "🫐"
+      "name": "Smoothie (Beeren, 300 ml)",
+      "calories": 148,
+      "emoji": "🫐",
+      "basis": [
+        {
+          "slug": "smoothie-beeren"
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Eine Portion = 177 kcal",
-      "text": "50 g Almased-Pulver in Wasser liefern rund 177 kcal und 27 g Eiweiß. Mit den empfohlenen 2 TL Öl steigt der Shake auf etwa 267 kcal.",
+      "title": "Eine Portion = 174 kcal",
+      "text": "50 g Almased-Pulver in Wasser liefern laut Hersteller rund 174 kcal und 26 g Eiweiß. Mit den empfohlenen 2 TL Rapsöl (10 g) steigt der Shake auf etwa 262 kcal.",
       "icon": "🥤"
     },
     {
@@ -121,12 +192,12 @@
     },
     {
       "title": "Hoher Eiweißanteil",
-      "text": "Mit über 53 g Protein pro 100 g zählt Almased zu den eiweißreichen Pulvern. Das unterstützt das Sättigungsgefühl während einer Diät.",
+      "text": "Mit über 52 g Protein pro 100 g zählt Almased zu den eiweißreichen Pulvern. Das unterstützt das Sättigungsgefühl während einer Diät.",
       "icon": "💪"
     },
     {
       "title": "Mit Milch wird der Shake sättigender",
-      "text": "Statt Wasser sorgt fettarme Milch für mehr Protein und Volumen, erhöht aber auch die Kalorien auf rund 271 kcal pro Shake.",
+      "text": "Statt Wasser sorgt fettarme Milch für mehr Protein und Volumen, erhöht aber auch die Kalorien auf rund 269 kcal pro Shake.",
       "icon": "🥛"
     },
     {
@@ -138,19 +209,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Almased?",
-      "answer": "Eine Standard-Portion mit 50 g Pulver in Wasser hat etwa 177 kcal. Pro 100 g sind es 354 kcal."
+      "answer": "Eine Standard-Portion mit 50 g Pulver in Wasser hat laut Hersteller etwa 174 kcal. Pro 100 g sind es 347 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Almased-Shake mit Öl?",
-      "answer": "Mit den vom Hersteller empfohlenen 2 TL Rapsöl kommt ein Shake auf rund 267 kcal."
+      "answer": "Mit den vom Hersteller empfohlenen 2 TL Rapsöl (10 g) kommt ein Shake auf rund 262 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Almased?",
-      "answer": "Almased ist sehr eiweißreich: 100 g Pulver enthalten 53,3 g Protein, eine Portion (50 g) rund 27 g."
+      "answer": "Almased ist sehr eiweißreich: 100 g Pulver enthalten laut Hersteller 52,2 g Protein, eine Portion (50 g) rund 26 g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Almased?",
-      "answer": "100 g Pulver enthalten 30,5 g Kohlenhydrate, eine Portion (50 g) also etwa 15 g."
+      "answer": "100 g Pulver enthalten laut Hersteller 29,1 g Kohlenhydrate, davon 29,1 g Zucker. Eine Portion (50 g) liefert also etwa 15 g."
     },
     {
       "question": "Hilft Almased beim Abnehmen?",

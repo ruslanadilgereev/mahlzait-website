@@ -3,9 +3,16 @@
   "name": "Magnum Almond",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe The Magnum Ice Cream Company (Langnese), Magnum Mandel 1 x 110 ml (https://www.magnumicecream.com/de/p/magnum-mandel-1-x-110-ml.html/08711327609341, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "The Magnum Ice Cream Company (Langnese)",
+    "produkt": "Magnum Mandel 1 x 110 ml",
+    "url": "https://www.magnumicecream.com/de/p/magnum-mandel-1-x-110-ml.html/08711327609341",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Magnum Almond Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Magnum Almond? Ein Stiel-Eis (110 ml) hat ca. 334 kcal. Nährwerte pro 100 g & pro Stück, Mini-Variante & Tipps.",
+    "description": "Wie viele Kalorien hat ein Magnum Almond? Ein Stiel-Eis (110 ml, 83 g) hat ca. 276 kcal. Nährwerte pro 100 g & pro Stück & Tipps.",
     "keywords": [
       "magnum almond kalorien",
       "magnum almond kcal",
@@ -16,113 +23,111 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 334,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 30,
+    "calories_per_100g": 333,
+    "protein_per_100g": 4.7,
+    "carbs_per_100g": 31,
     "fat_per_100g": 21,
-    "fiber_per_100g": 1,
-    "typical_portion_g": 100,
-    "typical_portion_name": "1 Stiel-Eis (110 ml)"
+    "fiber_per_100g": null,
+    "typical_portion_g": 83,
+    "typical_portion_name": "1 Stiel-Eis (110 ml, 83 g)"
   },
   "variants": [
     {
-      "name": "Magnum Mini Almond (1 Stück, 43 g)",
-      "portion_g": 43,
-      "calories": 144,
+      "name": "Magnum Almond halbes Eis (41,5 g)",
+      "portion_g": 41.5,
+      "calories": 138,
       "protein": 2,
       "carbs": 13,
       "fat": 9,
-      "tip": "Kleinere Portion für den kleinen Hunger"
-    },
-    {
-      "name": "Magnum Almond halbes Eis (50 g)",
-      "portion_g": 50,
-      "calories": 167,
-      "protein": 3,
-      "carbs": 15,
-      "fat": 11,
       "tip": "Teilen spart die Hälfte der Kalorien"
     },
     {
-      "name": "Magnum Mini Almond (2 Stück, 86 g)",
-      "portion_g": 86,
-      "calories": 287,
+      "name": "Magnum Almond Stiel-Eis (1 Stück, 110 ml, 83 g)",
+      "portion_g": 83,
+      "calories": 276,
       "protein": 4,
       "carbs": 26,
-      "fat": 18
-    },
-    {
-      "name": "Magnum Almond Stiel-Eis (1 Stück, 110 ml)",
-      "portion_g": 100,
-      "calories": 334,
-      "protein": 5,
-      "carbs": 30,
-      "fat": 21,
+      "fat": 17,
       "tip": "Standard-Portion"
     },
     {
-      "name": "Magnum Almond White (1 Stück, 110 ml)",
+      "name": "Magnum Almond (4 Stück, 332 g)",
+      "portion_g": 332,
+      "calories": 1106,
+      "protein": 16,
+      "carbs": 103,
+      "fat": 70,
+      "tip": "Ganze 4er-Packung, nicht auf einmal"
+    },
+    {
+      "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 332,
+      "calories": 333,
       "protein": 5,
       "carbs": 31,
-      "fat": 21,
-      "tip": "Variante mit weißer Schokolade"
-    },
-    {
-      "name": "Magnum Mini Almond Multipack (3 Stück, 129 g)",
-      "portion_g": 129,
-      "calories": 431,
-      "protein": 6,
-      "carbs": 39,
-      "fat": 27
-    },
-    {
-      "name": "Magnum Almond Großpackung (4 Stück, 400 g)",
-      "portion_g": 400,
-      "calories": 1336,
-      "protein": 20,
-      "carbs": 120,
-      "fat": 84,
-      "tip": "Ganze 4er-Packung – nicht auf einmal"
+      "fat": 21
     }
   ],
   "comparison": [
     {
-      "name": "Magnum Classic",
-      "calories": 244,
-      "emoji": "🍦"
+      "name": "Magnum Classic (110 ml, 81 g)",
+      "calories": 247,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "magnum",
+          "g": 81
+        }
+      ]
     },
     {
-      "name": "Eis Schokolade",
-      "calories": 216,
-      "emoji": "🍨"
+      "name": "Schokoladeneis (1 Kugel, 75 g)",
+      "calories": 162,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-schokolade",
+          "g": 75
+        }
+      ]
     },
     {
-      "name": "Snickers",
-      "calories": 245,
-      "emoji": "🍫"
+      "name": "Snickers (50 g)",
+      "calories": 246,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "snickers",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Schokolade",
-      "calories": 535,
-      "emoji": "🍫"
+      "name": "Schokolade (1 Riegel, 25 g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Genuss bewusst einplanen",
-      "text": "Ein Magnum Almond liefert rund 334 kcal pro Stiel – das entspricht etwa einem kleinen Dessert oder einer Zwischenmahlzeit. Wer es einplant, kann es ohne schlechtes Gewissen genießen.",
+      "text": "Ein Magnum Almond liefert rund 276 kcal pro Stiel, das entspricht etwa einem kleinen Dessert oder einer Zwischenmahlzeit. Wer es einplant, kann es ohne schlechtes Gewissen genießen.",
       "icon": "🍫"
     },
     {
       "title": "Mini statt Maxi",
-      "text": "Die Mini-Variante hat mit ca. 144 kcal pro Stück deutlich weniger Kalorien als das große Stiel-Eis. Für den kleinen Eis-Moment oft die bessere Wahl.",
+      "text": "Die Mini-Variante hat deutlich weniger Kalorien als das große Stiel-Eis. Für den kleinen Eis-Moment oft die bessere Wahl.",
       "icon": "🥄"
     },
     {
       "title": "Hoher Fettanteil beachten",
-      "text": "Mit 21 g Fett pro 100 g stammen über die Hälfte der Kalorien aus Fett – vor allem aus der Schokolade und den Mandeln. Beim Abnehmen bewusst dosieren.",
+      "text": "Mit 21 g Fett pro 100 g stammen über die Hälfte der Kalorien aus Fett, vor allem aus der Schokolade und den Mandeln. Beim Abnehmen bewusst dosieren.",
       "icon": "⚖️"
     },
     {
@@ -132,30 +137,30 @@
     },
     {
       "title": "Mandeln als kleines Plus",
-      "text": "Die knackigen Mandelstücke liefern etwas pflanzliches Eiweiß und ungesättigte Fettsäuren – ein Eis bleibt es trotzdem.",
+      "text": "Die knackigen Mandelstücke liefern etwas pflanzliches Eiweiß und ungesättigte Fettsäuren, ein Eis bleibt es trotzdem.",
       "icon": "🌰"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Magnum Almond?",
-      "answer": "Ein Magnum Almond Stiel-Eis (110 ml, ca. 100 g) hat etwa 334 kcal. Pro 100 g sind es ebenfalls rund 334 kcal."
+      "answer": "Ein Magnum Almond (in Deutschland Magnum Mandel) hat laut Hersteller 276 kcal pro Stiel-Eis (110 ml, 83 g). Pro 100 g sind es 333 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Magnum Mini Almond?",
-      "answer": "Ein Magnum Mini Almond (ca. 43 g) hat etwa 144 kcal und damit deutlich weniger als das große Stiel-Eis."
+      "answer": "Das Magnum Mini Mandel ist deutlich kleiner und hat entsprechend weniger Kalorien als das große Stiel-Eis mit 276 kcal. Die genauen Werte stehen auf der Packung."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Magnum Almond?",
-      "answer": "Magnum Almond enthält rund 30 g Kohlenhydrate pro 100 g, davon etwa 28 g Zucker. Ein ganzes Stiel-Eis liefert also ca. 30 g Kohlenhydrate."
+      "answer": "Magnum Almond enthält 31 g Kohlenhydrate pro 100 g, davon 28 g Zucker. Ein ganzes Stiel-Eis liefert also rund 26 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Magnum Almond?",
-      "answer": "Magnum Almond enthält etwa 5 g Eiweiß pro 100 g. Pro Stiel-Eis sind das rund 5 g – ein eher niedriger Wert für ein Eis."
+      "answer": "Magnum Almond enthält 4,7 g Eiweiß pro 100 g. Pro Stiel-Eis sind das rund 4 g, ein eher niedriger Wert."
     },
     {
       "question": "Ist Magnum Almond zum Abnehmen geeignet?",
-      "answer": "Als Diät-Snack ist Magnum Almond wegen des hohen Fett- und Zuckeranteils nur bedingt geeignet. In Maßen und bewusst eingeplant passt es aber in eine ausgewogene Ernährung – die Mini-Variante ist die kalorienärmere Option."
+      "answer": "Als Diät-Snack ist Magnum Almond wegen des hohen Fett- und Zuckeranteils nur bedingt geeignet. In Maßen und bewusst eingeplant passt es aber in eine ausgewogene Ernährung, die Mini-Variante ist die kalorienärmere Option."
     },
     {
       "question": "Ist Magnum Almond gesund?",

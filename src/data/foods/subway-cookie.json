@@ -3,9 +3,16 @@
   "name": "Subway Cookie",
   "emoji": "🍪",
   "category": "fast-food",
+  "source": "Herstellerangabe Subway Deutschland, Chocolate Chunk Cookie (https://www.subway.com/v1v2/assets/de-at/nutrition/documents/germany-nutritional-information-full-menu-c2-march-2026-german.pdf, abgerufen am 22.11.2026), Werte je 100 g; Nährwertinformationen März 2026 (Deutschland), ein Cookie wiegt 45 g",
+  "hersteller": {
+    "name": "Subway Deutschland",
+    "produkt": "Chocolate Chunk Cookie",
+    "url": "https://www.subway.com/v1v2/assets/de-at/nutrition/documents/germany-nutritional-information-full-menu-c2-march-2026-german.pdf",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Subway Cookie Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Subway Cookie? Ein Cookie (45g) hat ca. 205 kcal. Nährwerte pro 100g & Stück, alle Sorten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat ein Subway Cookie? Ein Chocolate Chunk Cookie (45g) hat laut Subway ca. 214 kcal. Nährwerte pro 100g & Stück + Tipps.",
     "keywords": [
       "subway cookie kalorien",
       "subway keks kalorien",
@@ -16,11 +23,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 456,
+    "calories_per_100g": 476,
     "protein_per_100g": 5,
-    "carbs_per_100g": 64,
-    "fat_per_100g": 21,
-    "fiber_per_100g": 2,
+    "carbs_per_100g": 62,
+    "fat_per_100g": 23,
+    "fiber_per_100g": 2.7,
     "typical_portion_g": 45,
     "typical_portion_name": "1 Cookie (45g)"
   },
@@ -28,108 +35,102 @@
     {
       "name": "Halber Cookie (23g)",
       "portion_g": 23,
-      "calories": 105,
+      "calories": 109,
       "protein": 1,
-      "carbs": 15,
+      "carbs": 14,
       "fat": 5
     },
     {
       "name": "1 Cookie (45g)",
       "portion_g": 45,
-      "calories": 205,
+      "calories": 214,
       "protein": 2,
-      "carbs": 29,
-      "fat": 9,
+      "carbs": 28,
+      "fat": 10,
       "tip": "Standard-Portion"
     },
     {
       "name": "2 Cookies (90g)",
       "portion_g": 90,
-      "calories": 410,
+      "calories": 428,
       "protein": 5,
-      "carbs": 58,
-      "fat": 19
+      "carbs": 56,
+      "fat": 21
     },
     {
       "name": "3er-Pack (135g)",
       "portion_g": 135,
-      "calories": 616,
+      "calories": 643,
       "protein": 7,
-      "carbs": 86,
-      "fat": 28,
+      "carbs": 84,
+      "fat": 31,
       "tip": "Beliebtes Beilagen-Angebot"
-    },
-    {
-      "name": "Chocolate Chip (1 Stück)",
-      "portion_g": 45,
-      "calories": 205,
-      "protein": 2,
-      "carbs": 29,
-      "fat": 9,
-      "tip": "Klassiker"
-    },
-    {
-      "name": "Double Chocolate (1 Stück)",
-      "portion_g": 45,
-      "calories": 210,
-      "protein": 3,
-      "carbs": 29,
-      "fat": 9
-    },
-    {
-      "name": "White Chip Macadamia (1 Stück)",
-      "portion_g": 45,
-      "calories": 215,
-      "protein": 2,
-      "carbs": 28,
-      "fat": 11,
-      "tip": "Fettreichste Sorte"
     },
     {
       "name": "12er-Box (540g)",
       "portion_g": 540,
-      "calories": 2462,
+      "calories": 2570,
       "protein": 27,
-      "carbs": 346,
-      "fat": 113
+      "carbs": 335,
+      "fat": 124
     }
   ],
   "comparison": [
     {
       "name": "Donut",
-      "calories": 280,
-      "emoji": "🍩"
+      "calories": 295,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "donut"
+        }
+      ]
     },
     {
       "name": "Brownie",
-      "calories": 220,
-      "emoji": "🍫"
+      "calories": 324,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "brownie"
+        }
+      ]
     },
     {
       "name": "Muffin",
-      "calories": 380,
-      "emoji": "🧁"
+      "calories": 413,
+      "emoji": "🧁",
+      "basis": [
+        {
+          "slug": "muffin"
+        }
+      ]
     },
     {
-      "name": "Kekse",
-      "calories": 50,
-      "emoji": "🍪"
+      "name": "Keks (1 Stück)",
+      "calories": 39,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "kekse"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst genießen",
-      "text": "Ein Cookie liefert mit 205 kcal so viel Energie wie eine ganze Mahlzeitsbeilage. Wer abnimmt, plant ihn am besten als seltenes Extra ein, nicht als täglichen Snack.",
+      "text": "Ein Cookie liefert mit 214 kcal so viel Energie wie eine ganze Mahlzeitsbeilage. Wer abnimmt, plant ihn am besten als seltenes Extra ein, nicht als täglichen Snack.",
       "icon": "🍪"
     },
     {
       "title": "Halbieren statt verzichten",
-      "text": "Ein halber Cookie hat nur rund 105 kcal. Das Teilen mit jemandem reduziert die Kalorien spürbar, ohne dass der Genuss auf der Strecke bleibt.",
+      "text": "Ein halber Cookie hat nur rund 109 kcal. Das Teilen mit jemandem reduziert die Kalorien spürbar, ohne dass der Genuss auf der Strecke bleibt.",
       "icon": "✂️"
     },
     {
       "title": "Sorte macht den Unterschied",
-      "text": "White Chip Macadamia ist durch die Nüsse die fettreichste Sorte. Chocolate Chip ist etwas leichter, der Unterschied bleibt aber gering.",
+      "text": "Die klassischen Schoko-Sorten unterscheiden sich laut Subway-Nährwerttabelle kaum. Deutlich leichter ist nur der Oat & Raisin Cookie.",
       "icon": "🥜"
     },
     {
@@ -139,18 +140,18 @@
     },
     {
       "title": "Zum Sub einkalkulieren",
-      "text": "Cookies kommen oft günstig im Menü dazu. Wer den Sub schon gegessen hat, sollte die zusätzlichen 200 kcal pro Cookie bewusst mitrechnen.",
+      "text": "Cookies kommen oft günstig im Menü dazu. Wer den Sub schon gegessen hat, sollte die zusätzlichen rund 214 kcal pro Cookie bewusst mitrechnen.",
       "icon": "🧮"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Subway Cookie?",
-      "answer": "Ein einzelner Subway Cookie (ca. 45g) hat rund 205 kcal. Pro 100g sind es etwa 456 kcal."
+      "answer": "Ein Chocolate Chunk Cookie (45g) hat laut Subway 214 kcal. Pro 100g sind es 476 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Subway Cookie?",
-      "answer": "Ein Cookie enthält etwa 29g Kohlenhydrate, davon ein großer Teil Zucker. Pro 100g sind es rund 64g."
+      "answer": "Ein Chocolate Chunk Cookie enthält laut Subway 28g Kohlenhydrate, davon 16g Zucker. Pro 100g sind es 62g."
     },
     {
       "question": "Wie viel Protein steckt in einem Subway Cookie?",
@@ -158,11 +159,11 @@
     },
     {
       "question": "Welche Subway Cookie Sorte hat die wenigsten Kalorien?",
-      "answer": "Die Unterschiede sind klein. Chocolate Chip liegt mit etwa 205 kcal am niedrigsten, White Chip Macadamia mit rund 215 kcal am höchsten."
+      "answer": "Laut Subway-Nährwerttabelle hat der Oat & Raisin Cookie deutlich weniger Kalorien als die Schoko-Sorten, die untereinander kaum abweichen. Die genauen Werte je Sorte nennt die Tabelle."
     },
     {
       "question": "Kann man Subway Cookies beim Abnehmen essen?",
-      "answer": "In Maßen ja. Mit 205 kcal und viel Zucker ist ein Cookie aber ein kalorienreiches Extra ohne Sättigungswert. Als seltener Genuss passt er, als täglicher Snack erschwert er das Abnehmen."
+      "answer": "In Maßen ja. Mit 214 kcal und viel Zucker ist ein Cookie aber ein kalorienreiches Extra ohne Sättigungswert. Als seltener Genuss passt er, als täglicher Snack erschwert er das Abnehmen."
     },
     {
       "question": "Sind Subway Cookies gesund?",

@@ -3,9 +3,16 @@
   "name": "Corny Schoko",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Schwartauer Werke (Corny), CORNY Classic Schoko (https://corny.com/de/produkte/corny-classic/corny-classic-schoko, abgerufen am 22.11.2026), Werte je 100 g; Hersteller nennt Werte je Riegel 25 g",
+  "hersteller": {
+    "name": "Schwartauer Werke (Corny)",
+    "produkt": "CORNY Classic Schoko",
+    "url": "https://corny.com/de/produkte/corny-classic/corny-classic-schoko",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Corny Schoko Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Corny Schoko Riegel? Ein Riegel (25g) hat ca. 106 kcal. Nährwerte pro 100g & pro Riegel + Tipps zum Snacken.",
+    "description": "Wie viele Kalorien hat ein Corny Schoko Riegel? Ein Riegel (25g) hat ca. 108 kcal. Nährwerte pro 100g & pro Riegel + Tipps zum Snacken.",
     "keywords": [
       "corny schoko kalorien",
       "corny schoko kcal",
@@ -16,11 +23,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 446,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 70,
-    "fat_per_100g": 17.6,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 432,
+    "protein_per_100g": 6.4,
+    "carbs_per_100g": 64.8,
+    "fat_per_100g": 15.6,
+    "fiber_per_100g": 3.6,
     "typical_portion_g": 25,
     "typical_portion_name": "1 Riegel (25g)"
   },
@@ -28,89 +35,102 @@
     {
       "name": "1 Riegel (25g)",
       "portion_g": 25,
-      "calories": 112,
-      "protein": 1.5,
-      "carbs": 17.5,
-      "fat": 3,
+      "calories": 108,
+      "protein": 1.6,
+      "carbs": 16.2,
+      "fat": 3.9,
       "tip": "Standard"
     },
     {
       "name": "1/2 Riegel (12,5g)",
       "portion_g": 12.5,
-      "calories": 56,
+      "calories": 54,
       "protein": 0.8,
-      "carbs": 8.8,
-      "fat": 1.5
+      "carbs": 8.1,
+      "fat": 2
     },
     {
       "name": "2 Riegel (50g)",
       "portion_g": 50,
-      "calories": 223,
-      "protein": 3,
-      "carbs": 35,
-      "fat": 6
+      "calories": 216,
+      "protein": 3.2,
+      "carbs": 32.4,
+      "fat": 7.8
     },
     {
       "name": "3 Riegel (75g)",
       "portion_g": 75,
-      "calories": 334,
-      "protein": 4.5,
-      "carbs": 52.5,
-      "fat": 9
+      "calories": 324,
+      "protein": 4.8,
+      "carbs": 48.6,
+      "fat": 11.7
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 446,
-      "protein": 6,
-      "carbs": 70,
-      "fat": 12
+      "calories": 432,
+      "protein": 6.4,
+      "carbs": 64.8,
+      "fat": 15.6
     },
     {
       "name": "6er-Packung (150g)",
       "portion_g": 150,
-      "calories": 669,
-      "protein": 9,
-      "carbs": 105,
-      "fat": 18
+      "calories": 648,
+      "protein": 9.6,
+      "carbs": 97.2,
+      "fat": 23.4
     }
   ],
   "comparison": [
     {
-      "name": "Corny Riegel (1 Riegel 25g)",
-      "calories": 100,
-      "emoji": "🌾"
+      "name": "Apfel (1 Stück, 180g)",
+      "calories": 94,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     },
     {
-      "name": "Müsliriegel (1 Riegel 25g)",
-      "calories": 115,
-      "emoji": "🥜"
-    },
-    {
-      "name": "Knoppers (1 Riegel 25g)",
-      "calories": 137,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Banane (1 Stück 120g)",
+      "name": "Banane (1 Stück, 120g)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 120
+        }
+      ]
+    },
+    {
+      "name": "KitKat (2 Finger, 20,7g)",
+      "calories": 107,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat",
+          "g": 20.7
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Praktischer Snack für unterwegs",
-      "text": "Ein Corny Schoko Riegel hat ca. 106 kcal und passt in jede Tasche. Als kleiner Energiekick zwischendurch ist er gut portionierbar.",
+      "text": "Ein Corny Schoko Riegel hat ca. 108 kcal und passt in jede Tasche. Als kleiner Energiekick zwischendurch ist er gut portionierbar.",
       "icon": "🎒"
     },
     {
       "title": "Zucker im Blick behalten",
-      "text": "Mit rund 70g Kohlenhydraten pro 100g, davon ein Großteil Zucker, ist Corny Schoko eher süß. Bei einer Diät lieber bei einem Riegel bleiben.",
+      "text": "Mit rund 65g Kohlenhydraten pro 100g, davon knapp die Hälfte Zucker, ist Corny Schoko eher süß. Bei einer Diät lieber bei einem Riegel bleiben.",
       "icon": "🍬"
     },
     {
       "title": "Kein Ersatz für eine Mahlzeit",
-      "text": "Mit nur 1,5g Protein pro Riegel sättigt Corny Schoko kaum lange. Wer länger satt sein möchte, kombiniert ihn mit einem Joghurt oder etwas Obst.",
+      "text": "Mit nur 1,6g Protein pro Riegel sättigt Corny Schoko kaum lange. Wer länger satt sein möchte, kombiniert ihn mit einem Joghurt oder etwas Obst.",
       "icon": "⏱️"
     },
     {
@@ -127,23 +147,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Corny Schoko Riegel?",
-      "answer": "Ein Corny Schoko Riegel (25g) hat ca. 106 kcal. Pro 100g sind es etwa 423 kcal."
+      "answer": "Ein Corny Schoko Riegel (25g) hat laut Hersteller 108 kcal. Pro 100g sind es etwa 432 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Corny Schoko pro 100g?",
-      "answer": "Corny Schoko hat ca. 423 kcal pro 100g. Das entspricht rund 106 kcal je einzelnem Riegel (25g)."
+      "answer": "Corny Schoko hat ca. 432 kcal pro 100g. Das entspricht 108 kcal je einzelnem Riegel (25g)."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Corny Schoko?",
-      "answer": "Corny Schoko enthält etwa 70g Kohlenhydrate pro 100g. Pro Riegel (25g) sind das rund 17,5g, ein großer Teil davon ist Zucker."
+      "answer": "Corny Schoko enthält etwa 65g Kohlenhydrate pro 100g. Pro Riegel (25g) sind das 16,2g, davon 7,4g Zucker."
     },
     {
       "question": "Wie viel Protein hat Corny Schoko?",
-      "answer": "Corny Schoko liefert nur etwa 6g Protein pro 100g, also rund 1,5g pro Riegel. Als Eiweißquelle ist er daher kaum geeignet."
+      "answer": "Corny Schoko liefert nur etwa 6,4g Protein pro 100g, also rund 1,6g pro Riegel. Als Eiweißquelle ist er daher kaum geeignet."
     },
     {
       "question": "Ist Corny Schoko zum Abnehmen geeignet?",
-      "answer": "Mit ca. 106 kcal pro Riegel passt Corny Schoko gelegentlich auch in eine Diät. Er sättigt aber wegen wenig Protein und Ballaststoffen nur kurz, daher besser bewusst und in Maßen einplanen."
+      "answer": "Mit ca. 108 kcal pro Riegel passt Corny Schoko gelegentlich auch in eine Diät. Er sättigt aber wegen wenig Protein und Ballaststoffen nur kurz, daher besser bewusst und in Maßen einplanen."
     },
     {
       "question": "Ist Corny Schoko gesund?",

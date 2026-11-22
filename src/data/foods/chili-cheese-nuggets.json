@@ -3,9 +3,16 @@
   "name": "Chili Cheese Nuggets",
   "emoji": "🧀",
   "category": "fast-food",
+  "source": "Herstellerangabe Burger King Deutschland, Chili Cheese Nuggets (https://www.burgerking.de/menu/picker-cc6a89a2-d632-4249-8118-c5dd039428f5, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Burger King Deutschland",
+    "produkt": "Chili Cheese Nuggets",
+    "url": "https://www.burgerking.de/menu/picker-cc6a89a2-d632-4249-8118-c5dd039428f5",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Chili Cheese Nuggets Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Chili Cheese Nuggets? 6 Stück (115g) haben ca. 334 kcal. Nährwerte pro 100g & Stück, Protein, Kohlenhydrate & Tipps.",
+    "description": "Wie viele Kalorien haben Chili Cheese Nuggets? 6 Stück (112g) haben laut Burger King ca. 319 kcal. Nährwerte pro 100g & Stück, Protein, Kohlenhydrate & Tipps.",
     "keywords": [
       "chili cheese nuggets kalorien",
       "chili cheese nuggets kcal",
@@ -18,146 +25,154 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
+    "calories_per_100g": 285,
     "protein_per_100g": 9,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 115,
-    "typical_portion_name": "6 Stück (Standardportion)"
+    "carbs_per_100g": 27.9,
+    "fat_per_100g": 15,
+    "fiber_per_100g": null,
+    "typical_portion_g": 112,
+    "typical_portion_name": "6 Stück (112g)"
   },
   "variants": [
     {
       "name": "1 Stück (19g)",
       "portion_g": 19,
-      "calories": 55,
+      "calories": 54,
       "protein": 1.7,
-      "carbs": 4.2,
-      "fat": 3.4
+      "carbs": 5.3,
+      "fat": 2.9
     },
     {
-      "name": "2 Stück (38g)",
-      "portion_g": 38,
-      "calories": 110,
-      "protein": 3.4,
-      "carbs": 8.4,
-      "fat": 6.8
+      "name": "3 Stück (56g)",
+      "portion_g": 56,
+      "calories": 160,
+      "protein": 5,
+      "carbs": 15.6,
+      "fat": 8.4
     },
     {
-      "name": "3 Stück (57g)",
-      "portion_g": 57,
-      "calories": 165,
-      "protein": 5.1,
-      "carbs": 12.5,
-      "fat": 10.3
-    },
-    {
-      "name": "4 Stück (76g)",
-      "portion_g": 76,
-      "calories": 220,
-      "protein": 6.8,
-      "carbs": 16.7,
-      "fat": 13.7
-    },
-    {
-      "name": "6 Stück (115g)",
-      "portion_g": 115,
-      "calories": 334,
-      "protein": 10.3,
-      "carbs": 25.3,
-      "fat": 20.7,
+      "name": "6 Stück (112g)",
+      "portion_g": 112,
+      "calories": 319,
+      "protein": 10.1,
+      "carbs": 31.2,
+      "fat": 16.8,
       "tip": "Standard"
     },
     {
-      "name": "8 Stück (152g)",
-      "portion_g": 152,
-      "calories": 441,
-      "protein": 13.7,
-      "carbs": 33.4,
-      "fat": 27.4
+      "name": "9 Stück (167g)",
+      "portion_g": 167,
+      "calories": 476,
+      "protein": 15,
+      "carbs": 46.6,
+      "fat": 25.1,
+      "tip": "Portion laut Burger King"
     },
     {
-      "name": "10 Stück (190g)",
-      "portion_g": 190,
-      "calories": 551,
-      "protein": 17.1,
-      "carbs": 41.8,
-      "fat": 34.2
+      "name": "20 Stück (372g)",
+      "portion_g": 372,
+      "calories": 1060,
+      "protein": 33.5,
+      "carbs": 103.8,
+      "fat": 55.8
     }
   ],
   "comparison": [
     {
       "name": "Chicken McNuggets (6 Stück)",
-      "calories": 259,
-      "emoji": "🍗"
+      "calories": 290,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-mcnuggets"
+        }
+      ]
     },
     {
       "name": "Mozzarella Sticks (3 Stück)",
-      "calories": 210,
-      "emoji": "🧀"
+      "calories": 254,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella-sticks",
+          "variante": "Mozzarella Sticks (3 Stück)"
+        }
+      ]
     },
     {
       "name": "Onion Rings (100g)",
-      "calories": 280,
-      "emoji": "🧅"
+      "calories": 352,
+      "emoji": "🧅",
+      "basis": [
+        {
+          "slug": "onion-rings",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Pommes Frites (150g)",
-      "calories": 440,
-      "emoji": "🍟"
+      "calories": 468,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 2709461,
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Beilage, keine Hauptmahlzeit",
-      "text": "Eine Portion mit 6 Stück liefert bereits ca. 334 kcal und 21g Fett. In Kombination mit Burger und Pommes summiert sich das schnell auf über 1.000 kcal.",
+      "text": "Eine Portion mit 6 Stück liefert bereits ca. 319 kcal und 17g Fett. In Kombination mit Burger und Pommes wird daraus schnell eine sehr kalorienreiche Mahlzeit.",
       "icon": "🍔"
     },
     {
-      "title": "Der Käse macht den Unterschied",
-      "text": "Mit 290 kcal/100g sind Chili Cheese Nuggets deutlich gehaltvoller als klassische Chicken Nuggets (ca. 270 kcal/100g) – die schmelzende Käsefüllung und Panade treiben das Fett nach oben.",
+      "title": "Ähnlich gehaltvoll wie Chicken Nuggets",
+      "text": "Mit 285 kcal pro 100g liegen Chili Cheese Nuggets laut Burger King etwa auf dem Niveau klassischer Chicken McNuggets (laut FDC 302 kcal pro 100g). Käsefüllung und Panade liefern dabei viel Fett.",
       "icon": "🧀"
     },
     {
       "title": "Dips bewusst wählen",
-      "text": "Sweet-Chili-Dips oder Mayo bringen pro Portion schnell 50 bis 120 zusätzliche kcal. Senf oder ein scharfer Tomaten-Dip sind die kalorienärmere Wahl.",
+      "text": "Sweet-Chili-Dips oder Mayo bringen schnell zusätzliche Kalorien. Senf oder ein scharfer Tomaten-Dip sind die kalorienärmere Wahl.",
       "icon": "🥫"
     },
     {
       "title": "Im Backofen statt frittiert",
-      "text": "Tiefkühl-Varianten im Backofen oder Heißluftfritteuse zubereiten spart gegenüber der Pfanne mit Öl spürbar Fett und Kalorien – ohne zusätzliches Frittierfett.",
+      "text": "Tiefkühl-Varianten im Backofen oder in der Heißluftfritteuse zubereiten spart gegenüber der Pfanne mit Öl spürbar Fett und Kalorien, ohne zusätzliches Frittierfett.",
       "icon": "🔥"
     },
     {
       "title": "Kleinere Portion bewusst genießen",
-      "text": "Wer 3 statt 6 Stück nimmt, halbiert die Kalorien auf ca. 165 kcal. Als gelegentlicher Snack lässt sich das gut in den Tag einplanen.",
+      "text": "Wer 3 statt 6 Stück nimmt, halbiert die Kalorien auf ca. 160 kcal. Als gelegentlicher Snack lässt sich das gut in den Tag einplanen.",
       "icon": "✋"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Chili Cheese Nuggets?",
-      "answer": "Eine Standardportion mit 6 Stück (ca. 115g) hat rund 334 kcal. Pro 100g sind es etwa 290 kcal, ein einzelnes Stück liefert ca. 55 kcal."
+      "answer": "Eine Standardportion mit 6 Stück (ca. 112g) hat laut Burger King rund 319 kcal. Pro 100g sind es 285 kcal, ein einzelnes Stück liefert ca. 54 kcal."
     },
     {
       "question": "Wie viele Kalorien hat 1 Chili Cheese Nugget?",
-      "answer": "Ein einzelnes Chili Cheese Nugget (ca. 19g) hat etwa 55 kcal. 3 Stück kommen auf rund 165 kcal, 10 Stück auf ca. 551 kcal."
+      "answer": "Ein einzelnes Chili Cheese Nugget (ca. 19g) hat etwa 54 kcal. 3 Stück kommen auf rund 160 kcal, die 9er-Portion (167g) auf ca. 476 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Chili Cheese Nuggets?",
-      "answer": "Pro 100g enthalten Chili Cheese Nuggets ca. 22g Kohlenhydrate. Eine Portion mit 6 Stück (115g) liefert rund 25g – der Großteil stammt aus der Panade."
+      "answer": "Pro 100g enthalten Chili Cheese Nuggets laut Burger King 27,9g Kohlenhydrate. Eine Portion mit 6 Stück (112g) liefert rund 31g, der Großteil stammt aus der Panade."
     },
     {
       "question": "Wie viel Protein haben Chili Cheese Nuggets?",
-      "answer": "Mit ca. 9g Protein pro 100g sind sie keine ausgeprägte Eiweißquelle. Eine 6er-Portion bringt rund 10g Protein – deutlich weniger als reine Hähnchen-Nuggets."
+      "answer": "Mit 9g Protein pro 100g sind sie keine ausgeprägte Eiweißquelle. Eine 6er-Portion bringt rund 10g Protein, deutlich weniger als reine Hähnchen-Nuggets."
     },
     {
       "question": "Sind Chili Cheese Nuggets zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 290 kcal und 18g Fett pro 100g sind sie sehr energiedicht. Beim Abnehmen besser als seltener Genuss in kleiner Portion einplanen, nicht als regelmäßiger Snack."
+      "answer": "Nur in Maßen. Mit 285 kcal und 15g Fett pro 100g sind sie sehr energiedicht. Beim Abnehmen besser als seltener Genuss in kleiner Portion einplanen, nicht als regelmäßiger Snack."
     },
     {
       "question": "Sind Chili Cheese Nuggets gesund?",
-      "answer": "Als frittierter, panierter Snack mit Käsefüllung gehören sie zu den fettreichen Fast-Food-Beilagen. Sie liefern viel Fett und wenig Ballaststoffe – als gelegentlicher Genuss in Ordnung, nicht als tägliche Mahlzeit."
+      "answer": "Als frittierter, panierter Snack mit Käsefüllung gehören sie zu den fettreichen Fast-Food-Beilagen. Als gelegentlicher Genuss in Ordnung, nicht als tägliche Mahlzeit."
     }
   ],
   "related_foods": [

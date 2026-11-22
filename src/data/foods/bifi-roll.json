@@ -3,9 +3,16 @@
   "name": "BiFi Roll",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "Herstellerangabe BiFi (Jack Link's), BiFi Roll (https://www.bifi.com/products/16, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "BiFi (Jack Link's)",
+    "produkt": "BiFi Roll",
+    "url": "https://www.bifi.com/products/16",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "BiFi Roll Kalorien: Nährwerte & Portionen | Mahlzait",
-    "description": "Wie viele Kalorien hat eine BiFi Roll? Eine Rolle (45g) hat ca. 203 kcal. Nährwerte pro 100g, Protein, Kohlenhydrate, Fett & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat eine BiFi Roll? Eine Rolle (45g) hat ca. 217 kcal. Nährwerte pro 100g, Protein, Kohlenhydrate, Fett & Tipps im Überblick.",
     "keywords": [
       "bifi roll kalorien",
       "bifi roll kcal",
@@ -16,11 +23,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 450,
-    "protein_per_100g": 15,
-    "carbs_per_100g": 27,
-    "fat_per_100g": 31,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 482,
+    "protein_per_100g": 13,
+    "carbs_per_100g": 31,
+    "fat_per_100g": 34,
+    "fiber_per_100g": null,
     "typical_portion_g": 45,
     "typical_portion_name": "1 BiFi Roll (45g)"
   },
@@ -28,81 +35,96 @@
     {
       "name": "1 BiFi Roll (45g)",
       "portion_g": 45,
-      "calories": 203,
-      "protein": 7,
-      "carbs": 12,
-      "fat": 14,
+      "calories": 217,
+      "protein": 6,
+      "carbs": 14,
+      "fat": 15,
       "tip": "Standard-Einzelpackung"
     },
     {
       "name": "2 BiFi Rolls (90g)",
       "portion_g": 90,
-      "calories": 405,
-      "protein": 14,
-      "carbs": 24,
-      "fat": 28
+      "calories": 434,
+      "protein": 12,
+      "carbs": 28,
+      "fat": 31
     },
     {
       "name": "3er-Pack (135g)",
       "portion_g": 135,
-      "calories": 608,
-      "protein": 20,
-      "carbs": 36,
-      "fat": 42,
+      "calories": 651,
+      "protein": 18,
+      "carbs": 42,
+      "fat": 46,
       "tip": "Multipack-Gebinde"
     },
     {
       "name": "Halbe Rolle (22,5g)",
       "portion_g": 22.5,
-      "calories": 101,
+      "calories": 108,
       "protein": 3,
-      "carbs": 6,
-      "fat": 7
+      "carbs": 7,
+      "fat": 8
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 450,
-      "protein": 15,
-      "carbs": 27,
-      "fat": 31
-    },
-    {
-      "name": "BiFi Roll Korn (45g)",
-      "portion_g": 45,
-      "calories": 196,
-      "protein": 8,
-      "carbs": 11,
-      "fat": 13,
-      "tip": "Variante mit Körnern, etwas weniger Fett"
+      "calories": 482,
+      "protein": 13,
+      "carbs": 31,
+      "fat": 34
     }
   ],
   "comparison": [
     {
-      "name": "BiFi (Original)",
-      "calories": 233,
-      "emoji": "🥓"
+      "name": "BiFi Original (2 Sticks, 45g)",
+      "calories": 231,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "slug": "bifi",
+          "g": 45
+        }
+      ]
     },
     {
-      "name": "Bockwurst",
-      "calories": 280,
-      "emoji": "🌭"
+      "name": "Bockwurst (1 Stück, 100g)",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Salami (Scheibe)",
-      "calories": 35,
-      "emoji": "🍕"
+      "name": "Salami (1 Scheibe, 10g)",
+      "calories": 38,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "salami",
+          "g": 10
+        }
+      ]
     },
     {
-      "name": "Käsebrötchen",
-      "calories": 260,
-      "emoji": "🧀"
+      "name": "Käsebrötchen (1 Stück, 95g)",
+      "calories": 299,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesebroetchen",
+          "g": 95
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Gehaltvoller Snack",
-      "text": "Eine BiFi Roll liefert mit ca. 203 kcal viel Fett (14g). Als gelegentlicher Snack okay, für eine kalorienbewusste Ernährung aber eher sparsam einsetzen.",
+      "text": "Eine BiFi Roll liefert mit ca. 217 kcal viel Fett (15g). Als gelegentlicher Snack okay, für eine kalorienbewusste Ernährung aber eher sparsam einsetzen.",
       "icon": "🌭"
     },
     {
@@ -129,19 +151,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine BiFi Roll?",
-      "answer": "Eine einzelne BiFi Roll (45g) hat ca. 203 kcal. Pro 100g sind es rund 450 kcal."
+      "answer": "Eine einzelne BiFi Roll (45g) hat laut Hersteller ca. 217 kcal. Pro 100g sind es 482 kcal."
     },
     {
       "question": "Wie viel Protein steckt in einer BiFi Roll?",
-      "answer": "Eine BiFi Roll (45g) enthält etwa 7g Eiweiß. Pro 100g sind es 15g Protein."
+      "answer": "Eine BiFi Roll (45g) enthält etwa 6g Eiweiß. Pro 100g sind es 13g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine BiFi Roll?",
-      "answer": "Eine BiFi Roll (45g) hat ca. 12g Kohlenhydrate, davon etwa 1,6g Zucker. Pro 100g sind es 27g Kohlenhydrate."
+      "answer": "Eine BiFi Roll (45g) hat ca. 14g Kohlenhydrate, davon etwa 1,6g Zucker. Pro 100g sind es 31g Kohlenhydrate."
     },
     {
       "question": "Ist die BiFi Roll zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit 31g Fett pro 100g und ca. 203 kcal je Rolle ist sie recht kalorienreich. Als seltener Snack passt sie in eine Diät, als Dauer-Snack eher nicht."
+      "answer": "Nur bedingt. Mit 34g Fett pro 100g und ca. 217 kcal je Rolle ist sie recht kalorienreich. Als seltener Snack passt sie in eine Diät, als Dauer-Snack eher nicht."
     },
     {
       "question": "Ist die BiFi Roll gesund?",
@@ -149,7 +171,7 @@
     },
     {
       "question": "Wie viel Fett hat eine BiFi Roll?",
-      "answer": "Eine BiFi Roll (45g) enthält rund 14g Fett, davon etwa 6g gesättigte Fettsäuren. Pro 100g sind es 31g Fett."
+      "answer": "Eine BiFi Roll (45g) enthält rund 15g Fett, davon etwa 7g gesättigte Fettsäuren. Pro 100g sind es 34g Fett."
     }
   ],
   "related_foods": [

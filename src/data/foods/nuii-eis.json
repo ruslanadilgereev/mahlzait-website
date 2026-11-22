@@ -3,9 +3,16 @@
   "name": "Nuii Eis",
   "emoji": "🍦",
   "category": "supermarkt",
+  "source": "Herstellerangabe Froneri Schöller, Nuii Salted Caramel & Australian Macadamia (https://www.froneri-schoeller.de/eis/impulseis/31026471_nuii-salted-caramel-australian-macadamia, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Froneri Schöller",
+    "produkt": "Nuii Salted Caramel & Australian Macadamia",
+    "url": "https://www.froneri-schoeller.de/eis/impulseis/31026471_nuii-salted-caramel-australian-macadamia",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Nuii Eis Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat Nuii Eis? Ein Stiel (62 g) hat ca. 189 kcal. Alle Nährwerte pro 100 g & pro Stiel sowie die Sorten im Vergleich.",
+    "description": "Wie viele Kalorien hat Nuii Eis? Ein Stiel (68 g) hat ca. 245 kcal. Alle Nährwerte pro 100 g & pro Stiel im Überblick.",
     "keywords": [
       "nuii eis kalorien",
       "nuii kcal",
@@ -17,116 +24,114 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 361,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 19,
-    "fiber_per_100g": 1,
-    "typical_portion_g": 62,
-    "typical_portion_name": "1 Stiel (62 g)"
+    "calories_per_100g": 360,
+    "protein_per_100g": 3.8,
+    "carbs_per_100g": 38,
+    "fat_per_100g": 21,
+    "fiber_per_100g": 0.9,
+    "typical_portion_g": 68,
+    "typical_portion_name": "1 Stiel (68 g, 90 ml)"
   },
   "variants": [
     {
-      "name": "1 Stiel Salted Caramel & Macadamia (62 g)",
-      "portion_g": 62,
-      "calories": 189,
-      "protein": 1.9,
-      "carbs": 18.6,
-      "fat": 11.8,
+      "name": "1 Stiel Salted Caramel & Macadamia (68 g)",
+      "portion_g": 68,
+      "calories": 245,
+      "protein": 2.6,
+      "carbs": 25.8,
+      "fat": 14.3,
       "tip": "Standard"
     },
     {
-      "name": "1 Stiel Vanilla & Almond (60 g)",
-      "portion_g": 60,
-      "calories": 180,
-      "protein": 2.1,
-      "carbs": 16.8,
-      "fat": 11.4
-    },
-    {
-      "name": "1 Stiel Mango & Cream (60 g)",
-      "portion_g": 60,
-      "calories": 162,
-      "protein": 1.7,
-      "carbs": 18.6,
-      "fat": 9,
-      "tip": "Kalorienärmste Sorte"
-    },
-    {
-      "name": "1 Stiel Chocolate & Brownie (62 g)",
-      "portion_g": 62,
-      "calories": 195,
-      "protein": 2,
-      "carbs": 20.5,
-      "fat": 11.8
-    },
-    {
-      "name": "Mini-Stiel (40 g)",
-      "portion_g": 40,
+      "name": "Halber Stiel (34 g)",
+      "portion_g": 34,
       "calories": 122,
-      "protein": 1.2,
-      "carbs": 12,
-      "fat": 7.6,
-      "tip": "Kleine Portion"
+      "protein": 1.3,
+      "carbs": 12.9,
+      "fat": 7.1
     },
     {
       "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 305,
-      "protein": 3,
-      "carbs": 30,
-      "fat": 19
+      "calories": 360,
+      "protein": 3.8,
+      "carbs": 38,
+      "fat": 21
     },
     {
-      "name": "2 Stiele (124 g)",
-      "portion_g": 124,
-      "calories": 378,
-      "protein": 3.7,
-      "carbs": 37.2,
-      "fat": 23.6
+      "name": "2 Stiele (136 g)",
+      "portion_g": 136,
+      "calories": 490,
+      "protein": 5.2,
+      "carbs": 51.7,
+      "fat": 28.6
     }
   ],
   "comparison": [
     {
-      "name": "Magnum Classic (Stiel)",
-      "calories": 256,
-      "emoji": "🍫"
+      "name": "Magnum Classic (1 Stiel, 81 g)",
+      "calories": 247,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "magnum",
+          "g": 81
+        }
+      ]
     },
     {
-      "name": "Vanilleeis (62 g)",
-      "calories": 130,
-      "emoji": "🍨"
+      "name": "Nogger (1 Stück, 67 g)",
+      "calories": 225,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "nogger-eis",
+          "g": 67
+        }
+      ]
     },
     {
-      "name": "Bounty-Riegel",
-      "calories": 270,
-      "emoji": "🥥"
+      "name": "Vanilleeis (68 g)",
+      "calories": 141,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille",
+          "g": 68
+        }
+      ]
     },
     {
-      "name": "Wassereis (Stiel)",
-      "calories": 45,
-      "emoji": "🧊"
+      "name": "Wassereis (1 Stiel, 50 g)",
+      "calories": 40,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "fdcId": 168813,
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ein Stiel ist eine klare Portion",
-      "text": "Ein Nuii-Stiel hat rund 189 kcal. Da das Eis einzeln verpackt ist, lässt sich die Menge gut kontrollieren - anders als bei der offenen Eispackung.",
+      "text": "Ein Nuii-Stiel hat rund 245 kcal. Da das Eis einzeln verpackt ist, lässt sich die Menge gut kontrollieren, anders als bei der offenen Eispackung.",
       "icon": "🍦"
     },
     {
-      "title": "Mango & Cream ist die leichteste Sorte",
-      "text": "Mit ca. 162 kcal pro Stiel liegt Mango & Cream unter den cremigeren Nuss- und Karamellsorten, weil sie etwas weniger Fett enthält.",
+      "title": "Sorten unterscheiden sich",
+      "text": "Die Werte unterscheiden sich je Sorte. Wer Kalorien sparen will, vergleicht die Angaben auf der Packung, bevor er zugreift.",
       "icon": "🥭"
     },
     {
       "title": "Fett bestimmt die Kalorien",
-      "text": "Knapp 19 g Fett pro 100 g machen einen Großteil der Energie aus. Das stammt vor allem aus Sahne, Kokosfett und der Schokoladenhülle mit Nüssen.",
+      "text": "21 g Fett pro 100 g machen gut die Hälfte der Energie aus. Das stammt vor allem aus Sahne, Kokosfett und der Schokoladenhülle mit Nüssen.",
       "icon": "🥜"
     },
     {
-      "title": "Mini-Variante für den kleinen Appetit",
-      "text": "Die Mini-Stiele liefern nur etwa 122 kcal und sind eine gute Wahl, wenn du Lust auf etwas Süßes hast, aber das Tagesbudget im Blick behältst.",
+      "title": "Kleine Portion für den kleinen Appetit",
+      "text": "Wer nur Lust auf eine kleine Portion hat, teilt den Stiel: Ein halber Stiel liefert rund 122 kcal und behält das Tagesbudget im Blick.",
       "icon": "📏"
     },
     {
@@ -138,27 +143,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Nuii Eis?",
-      "answer": "Ein Standard-Stiel (62 g) der Sorte Salted Caramel & Macadamia hat ca. 189 kcal. Pro 100 g sind es rund 305 kcal."
+      "answer": "Ein Stiel (68 g, 90 ml) der Sorte Salted Caramel & Macadamia hat laut Hersteller 245 kcal. Pro 100 g sind es 360 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Nuii pro 100 g?",
-      "answer": "Je nach Sorte etwa 270 bis 315 kcal pro 100 g. Die cremigen Nuss- und Schokosorten liegen am oberen, fruchtige Sorten wie Mango am unteren Ende."
+      "answer": "Salted Caramel & Macadamia hat laut Hersteller 360 kcal pro 100 g. Die anderen Sorten haben eigene Werte, die auf der Packung stehen."
     },
     {
       "question": "Welche Nuii-Sorte hat die wenigsten Kalorien?",
-      "answer": "Mango & Cream ist mit ca. 162 kcal pro Stiel die kalorienärmste der gängigen Sorten, da sie etwas weniger Fett enthält."
+      "answer": "Die genauen Werte je Sorte stehen auf der Packung bzw. auf der Herstellerseite. Salted Caramel & Macadamia hat 245 kcal pro Stiel."
     },
     {
       "question": "Wie viele Kohlenhydrate und wie viel Zucker stecken in Nuii?",
-      "answer": "Ein Stiel enthält etwa 18 bis 21 g Kohlenhydrate, davon der größte Teil Zucker. Pro 100 g sind es rund 30 g Kohlenhydrate."
+      "answer": "Ein Stiel enthält etwa 26 g Kohlenhydrate, davon rund 20 g Zucker. Pro 100 g sind es 38 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Nuii Eis?",
-      "answer": "Mit rund 3 g Protein pro 100 g (etwa 2 g pro Stiel) ist Nuii keine nennenswerte Eiweißquelle - es ist ein Dessert, kein Proteinsnack."
+      "answer": "Mit 3,8 g Protein pro 100 g (etwa 2,6 g pro Stiel) ist Nuii keine nennenswerte Eiweißquelle, es ist ein Dessert, kein Proteinsnack."
     },
     {
       "question": "Ist Nuii Eis zum Abnehmen geeignet?",
-      "answer": "Nuii ist mit etwa 189 kcal pro Stiel ein kalorienreiches Dessert. In einer Diät ist es als eingeplanter Genuss möglich, eignet sich aber nicht als regelmäßiger Snack."
+      "answer": "Nuii ist mit etwa 245 kcal pro Stiel ein kalorienreiches Dessert. In einer Diät ist es als eingeplanter Genuss möglich, eignet sich aber nicht als regelmäßiger Snack."
     }
   ],
   "related_foods": [

@@ -3,9 +3,16 @@
   "name": "Martini",
   "emoji": "🍸",
   "category": "getraenk",
+  "source": "Herstellerangabe Bacardi (Martini), Martini Bianco (https://www.bacardilimited.com/nutrition/martini?brand_locale=de-DE, abgerufen am 22.11.2026), Werte je 100 ml; Hersteller nennt Werte je Portion 60 ml (87 kcal, 9,6 g Kohlenhydrate), umgerechnet auf 100 ml",
+  "hersteller": {
+    "name": "Bacardi (Martini)",
+    "produkt": "Martini Bianco",
+    "url": "https://www.bacardilimited.com/nutrition/martini?brand_locale=de-DE",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Martini Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Martini? Ein Glas (50 ml) Martini Bianco hat ca. 70 kcal. Alle Nährwerte pro 100 ml, alle Sorten im Vergleich & Tipps.",
+    "description": "Wie viele Kalorien hat Martini? Ein Glas (50 ml) Martini Bianco hat laut Hersteller ca. 73 kcal. Nährwerte pro 100 ml, Vergleiche & Tipps.",
     "keywords": [
       "martini kcal",
       "martini kalorien",
@@ -18,19 +25,20 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 140,
+    "calories_per_100g": 145,
     "protein_per_100g": 0,
     "carbs_per_100g": 16,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 50,
-    "typical_portion_name": "1 Glas (50 ml)"
+    "typical_portion_name": "1 Glas (50 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "Schluck (20 ml)",
       "portion_g": 20,
-      "calories": 28,
+      "calories": 29,
       "protein": 0,
       "carbs": 3,
       "fat": 0
@@ -38,87 +46,103 @@
     {
       "name": "1 Glas Martini Bianco (50 ml)",
       "portion_g": 50,
-      "calories": 70,
+      "calories": 73,
       "protein": 0,
       "carbs": 8,
       "fat": 0,
       "tip": "Standard-Aperitif"
     },
     {
-      "name": "Martini Extra Dry (50 ml)",
-      "portion_g": 50,
-      "calories": 53,
+      "name": "Portion laut Hersteller (60 ml)",
+      "portion_g": 60,
+      "calories": 87,
       "protein": 0,
-      "carbs": 1,
-      "fat": 0,
-      "tip": "Trockenste Sorte, kaum Zucker"
-    },
-    {
-      "name": "Martini Rosso (50 ml)",
-      "portion_g": 50,
-      "calories": 70,
-      "protein": 0,
-      "carbs": 8,
+      "carbs": 10,
       "fat": 0
     },
     {
       "name": "Großes Glas (100 ml)",
       "portion_g": 100,
-      "calories": 140,
+      "calories": 145,
       "protein": 0,
       "carbs": 16,
       "fat": 0
     },
     {
       "name": "Martini mit Tonic (50 ml + 150 ml)",
-      "portion_g": 200,
-      "calories": 130,
+      "portion_g": 205,
+      "calories": 125,
       "protein": 0,
-      "carbs": 24,
+      "carbs": 22,
       "fat": 0,
-      "tip": "Tonic Water bringt zusätzlichen Zucker"
-    },
-    {
-      "name": "Martini Cocktail klassisch (Gin/Wodka, 90 ml)",
-      "portion_g": 90,
-      "calories": 180,
-      "protein": 0,
-      "carbs": 1,
-      "fat": 0,
-      "tip": "Spirituosen-Cocktail, kein Wermut pur"
+      "tip": "Tonic Water bringt zusätzlichen Zucker",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 171869,
+          "ml": 150,
+          "g": 155
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Aperol Spritz (200 ml)",
-      "calories": 175,
-      "emoji": "🍹"
-    },
-    {
       "name": "Weißwein (100 ml)",
-      "calories": 75,
-      "emoji": "🍷"
+      "calories": 81,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-weiss",
+          "ml": 100,
+          "g": 99
+        }
+      ]
     },
     {
       "name": "Prosecco (100 ml)",
-      "calories": 80,
-      "emoji": "🥂"
+      "calories": 76,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "prosecco",
+          "variante": "Prosecco brut (0,1l)"
+        }
+      ]
     },
     {
       "name": "Bier (100 ml)",
-      "calories": 42,
-      "emoji": "🍺"
+      "calories": 43,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Gin Tonic (250 ml)",
+      "calories": 213,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin-tonic"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Extra Dry spart Kalorien",
-      "text": "Martini Extra Dry hat mit ca. 53 kcal pro Glas (50 ml) deutlich weniger Kalorien als Bianco oder Rosso (je ca. 70 kcal), weil er kaum Restzucker enthält.",
+      "text": "Martini Extra Dry hat deutlich weniger Kalorien als Martini Bianco (rund 73 kcal pro Glas mit 50 ml), weil er kaum Restzucker enthält.",
       "icon": "🍸"
     },
     {
       "title": "Vorsicht bei den Filler-Getränken",
-      "text": "Der Wermut selbst ist nur ein Teil der Rechnung. Mit zuckerhaltigem Tonic Water oder Limonade kommen schnell 60 bis 80 kcal extra ins Glas. Mit Soda Water bleibt es kalorienarm.",
+      "text": "Der Wermut selbst ist nur ein Teil der Rechnung. Mit 150 ml zuckerhaltigem Tonic Water kommen laut FDC rund 53 kcal extra ins Glas. Mit Soda Water bleibt es kalorienarm.",
       "icon": "💧"
     },
     {
@@ -140,15 +164,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Martini?",
-      "answer": "Ein Glas Martini Bianco (50 ml) hat ca. 70 kcal. Pro 100 ml sind es rund 140 kcal."
+      "answer": "Ein Glas Martini Bianco (50 ml) hat ca. 73 kcal. Pro 100 ml sind es laut Hersteller rund 145 kcal (87 kcal je 60-ml-Portion)."
     },
     {
       "question": "Wie viele Kalorien hat Martini Extra Dry?",
-      "answer": "Martini Extra Dry ist die kalorienärmste Sorte: Ein 50-ml-Glas hat nur ca. 53 kcal, da er fast keinen Restzucker enthält."
+      "answer": "Martini Extra Dry ist die kalorienärmste der klassischen Sorten, da er fast keinen Restzucker enthält. Die genauen Werte nennt der Hersteller in seiner Nährwerttabelle."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Martini?",
-      "answer": "Martini Bianco und Rosso enthalten ca. 16 g Kohlenhydrate pro 100 ml (überwiegend Zucker), pro 50-ml-Glas also rund 8 g. Extra Dry liegt mit ca. 2 g pro 100 ml deutlich darunter."
+      "answer": "Martini Bianco enthält laut Hersteller 16 g Kohlenhydrate pro 100 ml (alles Zucker), pro 50-ml-Glas also rund 8 g. Extra Dry liegt deutlich darunter."
     },
     {
       "question": "Hat Martini Protein oder Fett?",
@@ -156,7 +180,7 @@
     },
     {
       "question": "Ist Martini zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit ca. 70 kcal pro Glas ist Martini moderat, liefert aber leere Kalorien ohne Sättigung. Extra Dry und ein kalorienfreier Filler wie Soda sparen Kalorien."
+      "answer": "Nur in Maßen. Mit ca. 73 kcal pro Glas ist Martini moderat, liefert aber leere Kalorien ohne Sättigung. Extra Dry und ein kalorienfreier Filler wie Soda sparen Kalorien."
     },
     {
       "question": "Ist Martini gesund?",

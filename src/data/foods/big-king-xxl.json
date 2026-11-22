@@ -3,9 +3,16 @@
   "name": "Big King XXL",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "Herstellerangabe Burger King Deutschland, Big King XXL (https://www.burgerking.de/menu/picker-2155651d-bd41-4dfa-882e-c2cf2ccfb9df, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Burger King Deutschland",
+    "produkt": "Big King XXL",
+    "url": "https://www.burgerking.de/menu/picker-2155651d-bd41-4dfa-882e-c2cf2ccfb9df",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Big King XXL Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Big King XXL? Der Burger King Klassiker hat ca. 743 kcal pro Portion. Nährwerte pro 100g, Protein & Fett im Überblick.",
+    "description": "Wie viele Kalorien hat ein Big King XXL? Der Burger King Klassiker hat laut Hersteller ca. 940 kcal pro Portion (363g). Nährwerte pro 100g, Protein & Fett im Überblick.",
     "keywords": [
       "big king xxl kcal",
       "big king xxl kalorien",
@@ -15,110 +22,127 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 300,
-    "protein_per_100g": 15,
-    "carbs_per_100g": 13.5,
-    "fat_per_100g": 16.4,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 281,
-    "typical_portion_name": "1 Big King XXL (281g)"
+    "calories_per_100g": 259,
+    "protein_per_100g": 14.8,
+    "carbs_per_100g": 13.9,
+    "fat_per_100g": 15.7,
+    "fiber_per_100g": null,
+    "typical_portion_g": 363,
+    "typical_portion_name": "1 Big King XXL (363g)"
   },
   "variants": [
     {
-      "name": "Big King XXL (281g)",
-      "portion_g": 281,
-      "calories": 843,
-      "protein": 42,
-      "carbs": 38,
-      "fat": 46,
+      "name": "Big King XXL (363g)",
+      "portion_g": 363,
+      "calories": 940,
+      "protein": 54,
+      "carbs": 50,
+      "fat": 57,
       "tip": "Standard-Portion laut Burger King"
     },
     {
-      "name": "Big King (regulär, 220g)",
-      "portion_g": 220,
-      "calories": 660,
-      "protein": 30,
-      "carbs": 30,
-      "fat": 36,
-      "tip": "Kleinere Variante ohne XXL-Patties"
+      "name": "Halber Big King XXL (182g)",
+      "portion_g": 182,
+      "calories": 471,
+      "protein": 27,
+      "carbs": 25,
+      "fat": 29
     },
     {
-      "name": "Halber Big King XXL (140g)",
-      "portion_g": 140,
-      "calories": 420,
-      "protein": 21,
-      "carbs": 19,
-      "fat": 23
+      "name": "Big King XXL Menü mit großen Pommes & Cola 0,5 l",
+      "portion_g": 1046,
+      "calories": 1598,
+      "protein": 59,
+      "carbs": 164,
+      "fat": 79,
+      "tip": "Komplettes Menü, deutlich kalorienreicher",
+      "basis": [
+        {
+          "g": 363
+        },
+        {
+          "slug": "burger-king-pommes",
+          "g": 159
+        },
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     },
     {
-      "name": "Big King XXL Menü mit Pommes & Cola (ca. 600g)",
-      "portion_g": 600,
-      "calories": 1800,
-      "protein": 50,
-      "carbs": 150,
-      "fat": 55,
-      "tip": "Komplettes Menü, deutlich kalorienreicher"
-    },
-    {
-      "name": "Nur Patties (2 Stück, ca. 120g)",
-      "portion_g": 120,
-      "calories": 360,
-      "protein": 28,
-      "carbs": 2,
-      "fat": 22,
-      "tip": "Ohne Brötchen, Low-Carb-Variante"
-    },
-    {
-      "name": "Big King XXL ohne Sauce (ca. 260g)",
-      "portion_g": 260,
-      "calories": 780,
-      "protein": 41,
-      "carbs": 35,
-      "fat": 38,
-      "tip": "Spart etwa 80 kcal Fett"
+      "name": "100 g Big King XXL",
+      "portion_g": 100,
+      "calories": 259,
+      "protein": 15,
+      "carbs": 14,
+      "fat": 16
     }
   ],
   "comparison": [
     {
-      "name": "Big King XXL (281g)",
-      "calories": 743,
-      "emoji": "🍔"
-    },
-    {
       "name": "Big Mac (219g)",
       "calories": 563,
-      "emoji": "🍔"
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
     },
     {
-      "name": "Whopper (270g)",
-      "calories": 627,
-      "emoji": "🍔"
+      "name": "Whopper (291g)",
+      "calories": 678,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger-king"
+        }
+      ]
     },
     {
-      "name": "Cheeseburger (114g)",
-      "calories": 302,
-      "emoji": "🧀"
+      "name": "Double Burger (230g)",
+      "calories": 667,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "double-burger"
+        }
+      ]
+    },
+    {
+      "name": "McDonald's Cheeseburger (119g)",
+      "calories": 313,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "fdcId": 170320,
+          "g": 119
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sehr energiereich",
-      "text": "Ein Big King XXL deckt mit 743 kcal rund ein Drittel des Tagesbedarfs eines Erwachsenen. Wer abnehmen möchte, sollte ihn als Ausnahme einplanen.",
+      "text": "Ein Big King XXL bringt laut Burger King rund 940 kcal mit, das ist fast die Hälfte des Tagesbedarfs eines Erwachsenen. Wer abnehmen möchte, sollte ihn als Ausnahme einplanen.",
       "icon": "⚡"
     },
     {
       "title": "Menü vervielfacht die Kalorien",
-      "text": "Mit Pommes und Cola steigt die Mahlzeit auf etwa 1290 kcal. Wasser statt Limonade und der Verzicht auf Pommes sparen viele Kalorien.",
+      "text": "Mit großen Pommes und einer Cola (0,5 l) steigt die Mahlzeit auf rund 1.598 kcal. Wasser statt Limonade und der Verzicht auf Pommes sparen viele Kalorien.",
       "icon": "🥤"
     },
     {
       "title": "Hoher Proteingehalt",
-      "text": "Mit etwa 42g Eiweiß liefert der Burger reichlich Protein, das gut sättigt. Der hohe Fettanteil bleibt aber das Hauptthema.",
+      "text": "Mit rund 54g Eiweiß liefert der Burger reichlich Protein, das gut sättigt. Der hohe Fettanteil bleibt aber das Hauptthema.",
       "icon": "💪"
     },
     {
       "title": "Patties ohne Brötchen",
-      "text": "Wer Kohlenhydrate sparen will, kann nur die beiden Rindfleisch-Patties essen. Das senkt die KH deutlich auf etwa 2g.",
+      "text": "Wer Kohlenhydrate sparen will, kann das Brötchen weglassen: Die Kohlenhydrate stammen größtenteils aus dem Brötchen.",
       "icon": "🥩"
     },
     {
@@ -130,23 +154,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Big King XXL?",
-      "answer": "Ein Big King XXL hat laut Burger King ca. 743 kcal pro Portion (281g). Das entspricht rund 264 kcal pro 100g."
+      "answer": "Ein Big King XXL hat laut Burger King ca. 940 kcal pro Portion (363g). Das entspricht 259 kcal pro 100g."
     },
     {
       "question": "Wie viel Protein hat ein Big King XXL?",
-      "answer": "Ein Big King XXL liefert etwa 42g Eiweiß, vor allem aus den beiden Rindfleisch-Patties und dem Käse."
+      "answer": "Ein Big King XXL liefert laut Burger King rund 54g Eiweiß, vor allem aus dem Beef (222g vor dem Grillen) und den drei Käsescheiben."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Big King XXL?",
-      "answer": "Der Burger enthält ca. 38g Kohlenhydrate, die hauptsächlich aus dem Sesambrötchen stammen."
+      "answer": "Der Burger enthält rund 50g Kohlenhydrate, die hauptsächlich aus dem Sesambrötchen stammen."
     },
     {
       "question": "Wie viel Fett steckt im Big King XXL?",
-      "answer": "Mit rund 46g Fett ist der Big King XXL sehr fettreich. Das Fett macht mehr als die Hälfte der Kalorien aus."
+      "answer": "Mit rund 57g Fett ist der Big King XXL sehr fettreich. Das Fett macht mehr als die Hälfte der Kalorien aus."
     },
     {
       "question": "Kann man Big King XXL beim Abnehmen essen?",
-      "answer": "Gelegentlich ja, aber mit 743 kcal ist er sehr energiereich. Ohne Menü, mit Wasser statt Cola, lässt er sich besser in eine Diät einbauen."
+      "answer": "Gelegentlich ja, aber mit rund 940 kcal ist er sehr energiereich. Ohne Menü, mit Wasser statt Cola, lässt er sich besser in eine Diät einbauen."
     },
     {
       "question": "Ist der Big King XXL gesund?",

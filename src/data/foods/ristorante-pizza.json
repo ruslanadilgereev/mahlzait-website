@@ -3,9 +3,16 @@
   "name": "Ristorante Pizza",
   "emoji": "🍕",
   "category": "supermarkt",
+  "source": "Herstellerangabe Dr. Oetker, Ristorante Pizza Salame (https://www.oetker.de/unsere-produkte/ristorante/salame, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Dr. Oetker",
+    "produkt": "Ristorante Pizza Salame",
+    "url": "https://www.oetker.de/unsere-produkte/ristorante/salame",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Ristorante Pizza Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Ristorante Pizza? Eine ganze Pizza Salame (320g) hat ca. 854 kcal. Nährwerte pro 100g, alle Sorten im Vergleich & Tipps.",
+    "description": "Wie viele Kalorien hat eine Ristorante Pizza? Eine ganze Pizza Salame (320g) hat laut Dr. Oetker 854 kcal. Nährwerte pro 100g, Portionen & Tipps.",
     "keywords": [
       "ristorante pizza kcal",
       "ristorante pizza kalorien",
@@ -44,41 +51,6 @@
       "tip": "Standard"
     },
     {
-      "name": "Ganze Pizza Funghi (365g)",
-      "portion_g": 365,
-      "calories": 829,
-      "protein": 29,
-      "carbs": 80,
-      "fat": 40,
-      "tip": "Etwas kalorienärmer als Salame"
-    },
-    {
-      "name": "Ganze Pizza Mozzarella (355g)",
-      "portion_g": 355,
-      "calories": 845,
-      "protein": 36,
-      "carbs": 82,
-      "fat": 39
-    },
-    {
-      "name": "Ganze Pizza Speciale (330g)",
-      "portion_g": 330,
-      "calories": 871,
-      "protein": 33,
-      "carbs": 86,
-      "fat": 43,
-      "tip": "Mit Salami, Schinken & Paprika"
-    },
-    {
-      "name": "Ganze Pizza Hawaii (355g)",
-      "portion_g": 355,
-      "calories": 817,
-      "protein": 32,
-      "carbs": 92,
-      "fat": 32,
-      "tip": "Mit Schinken & Ananas, etwas weniger Fett"
-    },
-    {
       "name": "Pro 100g (Salame)",
       "portion_g": 100,
       "calories": 267,
@@ -89,24 +61,36 @@
   ],
   "comparison": [
     {
-      "name": "Tiefkühlpizza Margherita (ganz)",
-      "calories": 760,
-      "emoji": "🍕"
-    },
-    {
       "name": "Döner (1 Tasche)",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Big Mac",
       "calories": 563,
-      "emoji": "🍔"
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
     },
     {
-      "name": "Spaghetti Bolognese (Portion)",
-      "calories": 600,
-      "emoji": "🍝"
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese"
+        }
+      ]
     }
   ],
   "tips": [
@@ -117,7 +101,7 @@
     },
     {
       "title": "Sorte clever wählen",
-      "text": "Die Funghi (Pilze) hat mit 227 kcal pro 100g spürbar weniger als die Salame mit 267 kcal pro 100g. Gemüse-Sorten sparen Kalorien gegenüber Salami und Käse.",
+      "text": "Die Salame hat laut Hersteller 267 kcal pro 100g. Gemüse-Sorten wie die Funghi sparen Kalorien gegenüber Salami und Käse; die genauen Werte stehen auf der jeweiligen Packung.",
       "icon": "🍄"
     },
     {
@@ -134,7 +118,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Ristorante Pizza?",
-      "answer": "Eine ganze Dr. Oetker Ristorante Pizza Salame (320g) hat ca. 854 kcal. Pro 100g sind es 267 kcal."
+      "answer": "Eine ganze Dr. Oetker Ristorante Pizza Salame (320g) hat laut Hersteller 854 kcal. Pro 100g sind es 267 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine halbe Ristorante Pizza?",
@@ -142,7 +126,7 @@
     },
     {
       "question": "Welche Ristorante Pizza hat die wenigsten Kalorien?",
-      "answer": "Die gemüselastigen Sorten wie Funghi liegen mit 227 kcal pro 100g am niedrigsten. Salami- und käsereiche Sorten haben mit 267 kcal pro 100g am meisten."
+      "answer": "Gemüselastige Sorten wie Funghi liegen in der Regel niedriger als Sorten mit Salami und viel Käse. Die Salame hat laut Hersteller 267 kcal pro 100g, die Werte der anderen Sorten stehen auf der jeweiligen Packung."
     },
     {
       "question": "Wie viel Eiweiß und Kohlenhydrate hat eine Ristorante Pizza?",

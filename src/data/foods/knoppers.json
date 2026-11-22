@@ -3,50 +3,188 @@
   "name": "Knoppers",
   "emoji": "🧇",
   "category": "supermarkt",
+  "source": "Herstellerangabe August Storck, Knoppers (Haselnuss) (https://www.storck.com/de/marken/knoppers/naehrwertinformationen/product/knoppers-haselnuss-1er, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "August Storck",
+    "produkt": "Knoppers (Haselnuss)",
+    "url": "https://www.storck.com/de/marken/knoppers/naehrwertinformationen/product/knoppers-haselnuss-1er",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Knoppers Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Knoppers? Nährwerte pro Stück & 100g. Original, Erdnuss, Kokos & Riegel im Vergleich + Tipps.",
-    "keywords": ["knoppers kalorien", "knoppers nährwerte", "knoppers kalorien pro stück", "knoppers zucker", "knoppers fett", "knoppers gesund", "knoppers protein", "knoppers riegel kalorien"]
+    "description": "Wie viele Kalorien hat ein Knoppers? Nährwerte pro Stück & 100g, Vergleich mit anderen Riegeln + Tipps.",
+    "keywords": [
+      "knoppers kalorien",
+      "knoppers nährwerte",
+      "knoppers kalorien pro stück",
+      "knoppers zucker",
+      "knoppers fett",
+      "knoppers gesund",
+      "knoppers protein",
+      "knoppers riegel kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 532,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 33,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 546,
+    "protein_per_100g": 9.2,
+    "carbs_per_100g": 51.6,
+    "fat_per_100g": 32.8,
+    "fiber_per_100g": null,
     "typical_portion_g": 25,
     "typical_portion_name": "1 Stück"
   },
   "variants": [
-    { "name": "Knoppers Original (25g)", "portion_g": 25, "calories": 133, "protein": 2, "carbs": 13, "fat": 8 },
-    { "name": "2 Knoppers (50g)", "portion_g": 50, "calories": 266, "protein": 4, "carbs": 25, "fat": 17 },
-    { "name": "Knoppers Erdnuss Riegel (40g)", "portion_g": 40, "calories": 213, "protein": 4, "carbs": 20, "fat": 13 },
-    { "name": "Knoppers Kokos Riegel (40g)", "portion_g": 40, "calories": 218, "protein": 3, "carbs": 22, "fat": 13 },
-    { "name": "Knoppers Nuss Riegel (40g)", "portion_g": 40, "calories": 215, "protein": 4, "carbs": 20, "fat": 13 },
-    { "name": "Knoppers minis (1 Stück, 12g)", "portion_g": 12, "calories": 64, "protein": 1, "carbs": 6, "fat": 4, "tip": "Mini-Portion" },
-    { "name": "5er Pack (125g)", "portion_g": 125, "calories": 665, "protein": 10, "carbs": 63, "fat": 41 },
-    { "name": "8er Pack (200g)", "portion_g": 200, "calories": 1064, "protein": 16, "carbs": 100, "fat": 66 }
+    {
+      "name": "Knoppers Original (25g)",
+      "portion_g": 25,
+      "calories": 137,
+      "protein": 2,
+      "carbs": 13,
+      "fat": 8
+    },
+    {
+      "name": "2 Knoppers (50g)",
+      "portion_g": 50,
+      "calories": 273,
+      "protein": 5,
+      "carbs": 26,
+      "fat": 16
+    },
+    {
+      "name": "Knoppers minis (1 Stück, 9,6g)",
+      "portion_g": 9.6,
+      "calories": 52,
+      "protein": 1,
+      "carbs": 5,
+      "fat": 3,
+      "tip": "Mini-Portion",
+      "basis": [
+        {
+          "slug": "knoppers-mini",
+          "g": 9.6
+        }
+      ]
+    },
+    {
+      "name": "5er Pack (125g)",
+      "portion_g": 125,
+      "calories": 683,
+      "protein": 12,
+      "carbs": 65,
+      "fat": 41
+    },
+    {
+      "name": "8er Pack (200g)",
+      "portion_g": 200,
+      "calories": 1092,
+      "protein": 18,
+      "carbs": 103,
+      "fat": 66
+    }
   ],
   "comparison": [
-    { "name": "Milchschnitte (28g)", "calories": 106, "emoji": "🥛" },
-    { "name": "Hanuta (22g)", "calories": 116, "emoji": "🧱" },
-    { "name": "Kinderriegel (21g)", "calories": 117, "emoji": "🍫" },
-    { "name": "Müsliriegel (25g)", "calories": 100, "emoji": "🥜" }
+    {
+      "name": "Hanuta (22g)",
+      "calories": 119,
+      "emoji": "🧱",
+      "basis": [
+        {
+          "slug": "hanuta",
+          "g": 22
+        }
+      ]
+    },
+    {
+      "name": "Kinderriegel (21g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel",
+          "g": 21
+        }
+      ]
+    },
+    {
+      "name": "Müsliriegel (25g)",
+      "calories": 118,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "muesli-riegel",
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Duplo (18,2g)",
+      "calories": 100,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "duplo",
+          "g": 18.2
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Das Frühstückchen-Problem", "text": "\"Morgens halb zehn in Deutschland\" – aber 133 kcal mit 8g Fett und 13g Zucker ist kein Frühstück. Es ist ein Schokoriegel mit Waffel.", "icon": "⏰" },
-    { "title": "Mini-Version wählen", "text": "Knoppers minis (12g) haben nur 64 kcal. Perfekt, wenn du den Geschmack willst, aber die Kalorien kontrollieren musst.", "icon": "🤏" },
-    { "title": "Nicht den ganzen Pack", "text": "Ein 5er-Pack (665 kcal) ist schnell weg. Kaufe Einzelpackungen statt Multipacks – weniger Versuchung.", "icon": "📦" },
-    { "title": "Nährstoffarm trotz Nüssen", "text": "Ja, Haselnüsse sind drin. Aber die Menge ist minimal. Die meisten Kalorien kommen aus Zucker, Palmfett und Milchcreme.", "icon": "🌰" },
-    { "title": "Bewusst genießen", "text": "Wenn schon Knoppers, dann bewusst: langsam essen, die Schichten einzeln genießen. 1 Stück = okay, 3 Stück = Mahlzeit.", "icon": "🧘" }
+    {
+      "title": "Das Frühstückchen-Problem",
+      "text": "\"Morgens halb zehn in Deutschland\", aber 137 kcal mit 8g Fett und knapp 9g Zucker sind kein Frühstück. Es ist ein Schokoriegel mit Waffel.",
+      "icon": "⏰"
+    },
+    {
+      "title": "Mini-Version wählen",
+      "text": "Knoppers minis (9,6g) haben nur 52 kcal. Perfekt, wenn du den Geschmack willst, aber die Kalorien kontrollieren musst.",
+      "icon": "🤏"
+    },
+    {
+      "title": "Nicht den ganzen Pack",
+      "text": "Ein 5er-Pack (683 kcal) ist schnell weg. Kaufe Einzelpackungen statt Multipacks, das ist weniger Versuchung.",
+      "icon": "📦"
+    },
+    {
+      "title": "Nährstoffarm trotz Nüssen",
+      "text": "Ja, Haselnüsse sind drin, laut Zutatenliste 9,2 Prozent. Die meisten Kalorien kommen aus Zucker, Pflanzenfett und Milchcreme.",
+      "icon": "🌰"
+    },
+    {
+      "title": "Bewusst genießen",
+      "text": "Wenn schon Knoppers, dann bewusst: langsam essen, die Schichten einzeln genießen. 1 Stück = okay, 3 Stück = Mahlzeit.",
+      "icon": "🧘"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Knoppers?", "answer": "Ein Knoppers (25g) hat 133 kcal. Das entspricht etwa einer Banane, aber mit deutlich mehr Zucker und Fett. Zwei Stück: 266 kcal." },
-    { "question": "Wie viele Kalorien hat Knoppers pro 100g?", "answer": "532 kcal pro 100g. Damit liegt Knoppers auf Schokoladen-Niveau. Die Kombination aus Waffel, Milchcreme, Haselnuss und Schokolade treibt den Wert." },
-    { "question": "Ist Knoppers gesund?", "answer": "Nein. 33g Fett und 50g Kohlenhydrate pro 100g. Das Marketing als 'Frühstückchen' täuscht – es ist eine Süßigkeit mit Waffel." },
-    { "question": "Wie viel Zucker hat ein Knoppers?", "answer": "Ca. 8g Zucker pro Stück (25g). Das sind fast 3 Würfelzucker. Pro 100g: ca. 33g Zucker." },
-    { "question": "Knoppers oder Milchschnitte – was hat weniger Kalorien?", "answer": "Milchschnitte: 106 kcal (28g). Knoppers: 133 kcal (25g). Pro 100g: Milchschnitte 380 kcal, Knoppers 532 kcal. Milchschnitte gewinnt deutlich." },
-    { "question": "Wie viel Fett hat ein Knoppers?", "answer": "8g Fett pro Stück (25g). Pro 100g: 33g Fett. Hauptquellen: Palmfett, Kakaobutter und Haselnüsse." }
+    {
+      "question": "Wie viele Kalorien hat ein Knoppers?",
+      "answer": "Ein Knoppers (25g) hat 137 kcal. Zwei Stück: 273 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat Knoppers pro 100g?",
+      "answer": "546 kcal pro 100g. Damit liegt Knoppers auf Schokoladen-Niveau. Die Kombination aus Waffel, Milchcreme, Haselnuss und Schokolade treibt den Wert."
+    },
+    {
+      "question": "Ist Knoppers gesund?",
+      "answer": "Nein. 32,8g Fett und 51,6g Kohlenhydrate pro 100g. Das Marketing als 'Frühstückchen' täuscht, es ist eine Süßigkeit mit Waffel."
+    },
+    {
+      "question": "Wie viel Zucker hat ein Knoppers?",
+      "answer": "Knapp 9g Zucker pro Stück (25g). Das sind knapp 3 Würfelzucker. Pro 100g: 34,2g Zucker."
+    },
+    {
+      "question": "Knoppers oder Hanuta: Was hat weniger Kalorien?",
+      "answer": "Hanuta: 119 kcal (22g). Knoppers: 137 kcal (25g). Pro 100g: Hanuta 542 kcal, Knoppers 546 kcal. Pro Stück hat Hanuta weniger, weil es leichter ist."
+    },
+    {
+      "question": "Wie viel Fett hat ein Knoppers?",
+      "answer": "8g Fett pro Stück (25g). Pro 100g: 32,8g Fett. Hauptquellen laut Zutatenliste: Palm- und Sheafett, Butterreinfett und Haselnüsse."
+    }
   ],
-  "related_foods": ["milchschnitte", "hanuta", "kinderriegel", "kekse"]
+  "related_foods": [
+    "milchschnitte",
+    "hanuta",
+    "kinderriegel",
+    "kekse"
+  ]
 }

@@ -3,9 +3,16 @@
   "name": "Bionade",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "Herstellerangabe BIONADE, Bionade Holunder (https://www.bionade.de/sorte/holunder/, abgerufen am 22.11.2026), Werte je 100 ml; Fett und Eiweiß laut Hersteller jeweils unter 0,5 g, hier als 0 g",
+  "hersteller": {
+    "name": "BIONADE",
+    "produkt": "Bionade Holunder",
+    "url": "https://www.bionade.de/sorte/holunder/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Bionade Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat Bionade? Eine 330-ml-Flasche hat ca. 79 kcal. Nährwerte pro 100 ml, alle Sorten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Bionade? Eine 330-ml-Flasche Bionade Holunder hat laut Hersteller ca. 73 kcal. Nährwerte pro 100 ml, Flaschengrößen und Tipps zum Abnehmen.",
     "keywords": [
       "bionade kalorien",
       "bionade kcal",
@@ -17,19 +24,20 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 24,
+    "calories_per_100g": 22,
     "protein_per_100g": 0,
-    "carbs_per_100g": 5.2,
+    "carbs_per_100g": 5,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 330,
-    "typical_portion_name": "1 Flasche (330 ml)"
+    "typical_portion_name": "1 Flasche (330 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "Glas (200 ml)",
       "portion_g": 200,
-      "calories": 48,
+      "calories": 44,
       "protein": 0,
       "carbs": 10,
       "fat": 0
@@ -37,7 +45,7 @@
     {
       "name": "Glas (250 ml)",
       "portion_g": 250,
-      "calories": 60,
+      "calories": 55,
       "protein": 0,
       "carbs": 13,
       "fat": 0
@@ -45,82 +53,102 @@
     {
       "name": "Flasche (330 ml)",
       "portion_g": 330,
-      "calories": 79,
+      "calories": 73,
       "protein": 0,
       "carbs": 17,
       "fat": 0,
       "tip": "Standard-Glasflasche"
     },
     {
-      "name": "Flasche (500 ml)",
-      "portion_g": 500,
-      "calories": 120,
+      "name": "PET-Flasche (400 ml)",
+      "portion_g": 400,
+      "calories": 88,
       "protein": 0,
-      "carbs": 26,
+      "carbs": 20,
       "fat": 0
     },
     {
-      "name": "Dose (330 ml)",
-      "portion_g": 330,
-      "calories": 79,
+      "name": "Flasche (500 ml)",
+      "portion_g": 500,
+      "calories": 110,
       "protein": 0,
-      "carbs": 17,
+      "carbs": 25,
       "fat": 0
     },
     {
       "name": "Pro 100 ml",
       "portion_g": 100,
-      "calories": 24,
+      "calories": 22,
       "protein": 0,
       "carbs": 5,
       "fat": 0,
       "tip": "Referenzwert"
     },
     {
-      "name": "Ganze Liter-Flasche (1 l)",
+      "name": "1 Liter",
       "portion_g": 1000,
-      "calories": 240,
+      "calories": 220,
       "protein": 0,
-      "carbs": 52,
+      "carbs": 50,
       "fat": 0
     }
   ],
   "comparison": [
     {
-      "name": "Cola",
-      "calories": 139,
-      "emoji": "🥤"
+      "name": "Cola (0,33 l)",
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
-      "name": "Apfelsaft",
-      "calories": 152,
-      "emoji": "🧃"
+      "name": "Apfelsaft (250 ml)",
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft"
+        }
+      ]
     },
     {
-      "name": "Almdudler",
-      "calories": 125,
-      "emoji": "🥤"
+      "name": "Almdudler (0,33 l)",
+      "calories": 109,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "almdudler"
+        }
+      ]
     },
     {
-      "name": "Mineralwasser",
+      "name": "Mineralwasser (0,5 l)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Leichter als klassische Limonade",
-      "text": "Mit rund 24 kcal pro 100 ml hat Bionade etwa halb so viele Kalorien wie eine herkömmliche Cola (ca. 42 kcal pro 100 ml). Eine 330-ml-Flasche bringt es auf etwa 79 kcal.",
+      "text": "Mit 22 kcal pro 100 ml hat Bionade Holunder etwa halb so viele Kalorien wie eine herkömmliche Cola (laut FDC rund 44 kcal pro 100 ml). Eine 330-ml-Flasche bringt es auf etwa 73 kcal.",
       "icon": "🥤"
     },
     {
       "title": "Auf die Sorte achten",
-      "text": "Die Kalorien variieren je nach Sorte nur leicht. Sorten wie Holunder, Litschi oder Ingwer-Orange liegen alle im Bereich von etwa 20 bis 26 kcal pro 100 ml. Schau am besten auf das Etikett der jeweiligen Flasche.",
+      "text": "Die Kalorien variieren je nach Sorte leicht. Die Werte auf dieser Seite gelten für Bionade Holunder; schau bei anderen Sorten auf das Etikett der jeweiligen Flasche.",
       "icon": "🏷️"
     },
     {
       "title": "Trotzdem ein Zuckergetränk",
-      "text": "Bionade enthält rund 5 g Zucker pro 100 ml, also etwa 17 g in einer 330-ml-Flasche. Beim Abnehmen zählt das mit. In Maßen eine bessere Wahl als Cola, aber kein kalorienfreies Getränk.",
+      "text": "Bionade Holunder enthält 5 g Zucker pro 100 ml, also rund 17 g in einer 330-ml-Flasche. Beim Abnehmen zählt das mit. In Maßen eine bessere Wahl als Cola, aber kein kalorienfreies Getränk.",
       "icon": "🍬"
     },
     {
@@ -130,30 +158,30 @@
     },
     {
       "title": "Alkoholfrei und vegan",
-      "text": "Bionade wird durch Fermentation hergestellt, ist aber alkoholfrei (unter 0,5 % vol.) und vegan. Damit eignet es sich auch als Alternative zu alkoholischen Getränken.",
+      "text": "Bionade wird durch Fermentation hergestellt, ist aber alkoholfrei und vegan. Damit eignet es sich auch als Alternative zu alkoholischen Getränken.",
       "icon": "🌱"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Flasche Bionade?",
-      "answer": "Eine 330-ml-Flasche Bionade hat etwa 79 kcal. Bei der 500-ml-Flasche sind es rund 120 kcal."
+      "answer": "Eine 330-ml-Flasche Bionade Holunder hat laut Hersteller etwa 73 kcal. Bei der 500-ml-Flasche sind es rund 110 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Bionade pro 100 ml?",
-      "answer": "Bionade hat etwa 24 kcal pro 100 ml. Damit liegt sie deutlich unter klassischen Limonaden wie Cola."
+      "answer": "Bionade Holunder hat laut Hersteller 22 kcal pro 100 ml. Damit liegt sie deutlich unter klassischen Limonaden wie Cola."
     },
     {
       "question": "Wie viel Zucker steckt in Bionade?",
-      "answer": "Bionade enthält rund 5 g Zucker pro 100 ml. Eine 330-ml-Flasche kommt damit auf etwa 17 g Kohlenhydrate, fast ausschließlich Zucker."
+      "answer": "Bionade Holunder enthält 5 g Zucker pro 100 ml. Eine 330-ml-Flasche kommt damit auf rund 17 g Kohlenhydrate, ausschließlich Zucker."
     },
     {
       "question": "Hat Bionade Eiweiß oder Fett?",
-      "answer": "Nein, Bionade enthält praktisch kein Eiweiß und kein Fett. Die Kalorien stammen nahezu vollständig aus dem Zucker."
+      "answer": "Nein, Bionade enthält praktisch kein Eiweiß und kein Fett (laut Hersteller jeweils unter 0,5 g pro 100 ml). Die Kalorien stammen nahezu vollständig aus dem Zucker."
     },
     {
       "question": "Ist Bionade zum Abnehmen geeignet?",
-      "answer": "Bionade ist mit etwa 79 kcal pro Flasche kalorienärmer als Cola, aber kein kalorienfreies Getränk. Beim Abnehmen sollte man sie sparsam trinken oder als Schorle mit Wasser verdünnen."
+      "answer": "Bionade ist mit etwa 73 kcal pro Flasche kalorienärmer als Cola, aber kein kalorienfreies Getränk. Beim Abnehmen sollte man sie sparsam trinken oder als Schorle mit Wasser verdünnen."
     },
     {
       "question": "Ist Bionade gesund?",

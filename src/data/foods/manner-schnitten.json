@@ -3,6 +3,13 @@
   "name": "Manner Schnitten",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Josef Manner & Comp, Manner Original Neapolitaner Schnitten 75 g (https://www.manner.com/de-de/sortiment/waffelprodukte/manner-original-neapolitaner-waffeln-75g/, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Josef Manner & Comp",
+    "produkt": "Manner Original Neapolitaner Schnitten 75 g",
+    "url": "https://www.manner.com/de-de/sortiment/waffelprodukte/manner-original-neapolitaner-waffeln-75g/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Manner Schnitten Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Manner Schnitten? Eine Schnitte (7,5g) hat ca. 36 kcal, die 75g-Packung 364 kcal. Nährwerte pro 100g & Stück im Überblick.",
@@ -21,7 +28,7 @@
     "protein_per_100g": 5.6,
     "carbs_per_100g": 65,
     "fat_per_100g": 22,
-    "fiber_per_100g": 2,
+    "fiber_per_100g": null,
     "typical_portion_g": 75,
     "typical_portion_name": "1 Packung (75g, 10 Schnitten)"
   },
@@ -62,15 +69,6 @@
       "tip": "Standard"
     },
     {
-      "name": "Vollkorn Schnitten, 1 Packung (75g)",
-      "portion_g": 75,
-      "calories": 353,
-      "protein": 6.8,
-      "carbs": 45,
-      "fat": 16,
-      "tip": "Mehr Ballaststoffe"
-    },
-    {
       "name": "100g (ca. 13 Schnitten)",
       "portion_g": 100,
       "calories": 485,
@@ -81,24 +79,37 @@
   ],
   "comparison": [
     {
-      "name": "Knoppers (1 Riegel, 25g)",
-      "calories": 135,
-      "emoji": "🍫"
+      "name": "KitKat (2 Finger, 20,7g)",
+      "calories": 107,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat",
+          "g": 20.7
+        }
+      ]
     },
     {
-      "name": "Hanuta (1 Stück, 22g)",
-      "calories": 122,
-      "emoji": "🍫"
+      "name": "Knoppers NussRiegel (1 Riegel, 40g)",
+      "calories": 212,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "knoppers-nussriegel",
+          "g": 40
+        }
+      ]
     },
     {
-      "name": "Pickup! (1 Riegel, 28g)",
-      "calories": 150,
-      "emoji": "🍪"
-    },
-    {
-      "name": "5 Manner Schnitten (37,5g)",
-      "calories": 182,
-      "emoji": "🍫"
+      "name": "Butterkekse (25g)",
+      "calories": 117,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "butterkeks",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [

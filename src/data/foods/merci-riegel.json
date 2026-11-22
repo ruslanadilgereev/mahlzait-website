@@ -3,9 +3,16 @@
   "name": "Merci Riegel",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe August Storck, merci Große Vielfalt (https://www.storck.com/de/marken/merci/naehrwertinformationen/product/merci-grosse-vielfalt-250g-1, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "August Storck",
+    "produkt": "merci Große Vielfalt",
+    "url": "https://www.storck.com/de/marken/merci/naehrwertinformationen/product/merci-grosse-vielfalt-250g-1",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Merci Riegel Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Merci Riegel? Ein Stück (12,5g) hat ca. 71 kcal, 100g ca. 566 kcal. Nährwerte, Sorten & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Merci Riegel? Ein Stück (12,5g) hat ca. 71 kcal, 100g 564 kcal. Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "kalorien merci riegel",
       "merci riegel kalorien",
@@ -16,11 +23,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 566,
-    "protein_per_100g": 6.5,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 37,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 564,
+    "protein_per_100g": 7.6,
+    "carbs_per_100g": 50,
+    "fat_per_100g": 36.2,
+    "fiber_per_100g": null,
     "typical_portion_g": 12.5,
     "typical_portion_name": "1 Riegel (12,5g)"
   },
@@ -29,73 +36,93 @@
       "name": "1 Riegel (12,5g)",
       "portion_g": 12.5,
       "calories": 71,
-      "protein": 0.8,
-      "carbs": 6.5,
-      "fat": 4.6,
+      "protein": 1,
+      "carbs": 6.3,
+      "fat": 4.5,
       "tip": "Standard"
     },
     {
       "name": "2 Riegel (25g)",
       "portion_g": 25,
-      "calories": 142,
-      "protein": 1.6,
-      "carbs": 13,
-      "fat": 9.2
-    },
-    {
-      "name": "Halbe Packung (125g)",
-      "portion_g": 125,
-      "calories": 708,
-      "protein": 8.1,
-      "carbs": 65,
-      "fat": 46.2
-    },
-    {
-      "name": "Ganze Packung (250g)",
-      "portion_g": 250,
-      "calories": 1415,
-      "protein": 16.2,
-      "carbs": 130,
-      "fat": 92.5
-    },
-    {
-      "name": "Merci Petits Stück (ca. 5g)",
-      "portion_g": 5,
-      "calories": 28,
-      "protein": 0.3,
-      "carbs": 2.6,
-      "fat": 1.9,
-      "tip": "Kleine Praline"
+      "calories": 141,
+      "protein": 1.9,
+      "carbs": 12.5,
+      "fat": 9.1
     },
     {
       "name": "3 Riegel (37,5g)",
       "portion_g": 37.5,
       "calories": 212,
-      "protein": 2.4,
-      "carbs": 19.5,
-      "fat": 13.9
+      "protein": 2.9,
+      "carbs": 18.8,
+      "fat": 13.6
+    },
+    {
+      "name": "Pro 100g",
+      "portion_g": 100,
+      "calories": 564,
+      "protein": 7.6,
+      "carbs": 50,
+      "fat": 36.2
+    },
+    {
+      "name": "Halbe Packung (125g)",
+      "portion_g": 125,
+      "calories": 705,
+      "protein": 9.5,
+      "carbs": 62.5,
+      "fat": 45.3
+    },
+    {
+      "name": "Ganze Packung (250g)",
+      "portion_g": 250,
+      "calories": 1410,
+      "protein": 19,
+      "carbs": 125,
+      "fat": 90.5
     }
   ],
   "comparison": [
     {
-      "name": "1 Merci Riegel (12,5g)",
-      "calories": 71,
-      "emoji": "🍫"
-    },
-    {
       "name": "1 Stück Vollmilchschokolade (12,5g)",
       "calories": 67,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 12.5
+        }
+      ]
     },
     {
-      "name": "1 Ferrero Rocher",
-      "calories": 73,
-      "emoji": "🟤"
+      "name": "1 Toffifee (8,3g)",
+      "calories": 43,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "toffifee"
+        }
+      ]
     },
     {
-      "name": "1 Praline",
-      "calories": 55,
-      "emoji": "🍬"
+      "name": "1 duplo (18,2g)",
+      "calories": 100,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "duplo"
+        }
+      ]
+    },
+    {
+      "name": "1 Kinderriegel (21g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel"
+        }
+      ]
     }
   ],
   "tips": [
@@ -106,12 +133,12 @@
     },
     {
       "title": "Portion abzählen statt aus der Box naschen",
-      "text": "Bei 1.415 kcal pro 250g-Packung summiert sich beiläufiges Naschen schnell. Nimm dir bewusst ein bis zwei Riegel heraus und stelle die Box weg.",
+      "text": "Bei 1.410 kcal pro 250g-Packung summiert sich beiläufiges Naschen schnell. Nimm dir bewusst ein bis zwei Riegel heraus und stelle die Box weg.",
       "icon": "✋"
     },
     {
       "title": "Hoher Fettanteil",
-      "text": "Mit 37g Fett pro 100g liefert Merci viel Energie auf kleinem Raum. Das macht die Riegel zu einem Genussprodukt, nicht zu einem Sattmacher.",
+      "text": "Mit 36,2g Fett pro 100g liefert Merci viel Energie auf kleinem Raum. Das macht die Riegel zu einem Genussprodukt, nicht zu einem Sattmacher.",
       "icon": "🧈"
     },
     {
@@ -128,23 +155,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Merci Riegel?",
-      "answer": "Ein einzelner Merci Riegel (12,5g) hat ca. 71 kcal. Pro 100g sind es rund 566 kcal."
+      "answer": "Ein einzelner Merci Riegel (12,5g) hat ca. 71 kcal. Pro 100g sind es laut Storck 564 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Packung Merci?",
-      "answer": "Eine 250g-Packung Merci enthält ca. 1.415 kcal, das entspricht 20 Riegeln à 12,5g."
+      "answer": "Eine 250g-Packung Merci enthält ca. 1.410 kcal, das entspricht 20 Riegeln à 12,5g."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in Merci?",
-      "answer": "Merci liefert ca. 52g Kohlenhydrate pro 100g, davon der Großteil Zucker. Ein einzelner Riegel hat rund 6,5g Kohlenhydrate."
+      "answer": "Merci liefert 50g Kohlenhydrate pro 100g, davon 48,1g Zucker. Ein einzelner Riegel hat rund 6,3g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Merci?",
-      "answer": "Mit ca. 6,5g Eiweiß pro 100g ist Merci keine nennenswerte Proteinquelle. Ein Riegel liefert weniger als 1g."
+      "answer": "Mit 7,6g Eiweiß pro 100g ist Merci keine nennenswerte Proteinquelle. Ein Riegel liefert rund 1g."
     },
     {
       "question": "Ist Merci zum Abnehmen geeignet?",
-      "answer": "Merci ist sehr energiedicht (566 kcal pro 100g) und fettreich. In einer Diät ist ein einzelner Riegel als bewusster Genuss möglich, größere Mengen passen aber schwer in ein Kaloriendefizit."
+      "answer": "Merci ist sehr energiedicht (564 kcal pro 100g) und fettreich. In einer Diät ist ein einzelner Riegel als bewusster Genuss möglich, größere Mengen passen aber schwer in ein Kaloriendefizit."
     },
     {
       "question": "Ist Merci Schokolade gesund?",

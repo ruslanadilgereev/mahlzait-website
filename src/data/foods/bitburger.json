@@ -3,9 +3,16 @@
   "name": "Bitburger",
   "emoji": "🍺",
   "category": "getraenk",
+  "source": "Herstellerangabe Bitburger Braugruppe, Bitburger Premium Pils (https://www.bitburger.de/klassiker/premium-pils/, abgerufen am 22.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Bitburger Braugruppe",
+    "produkt": "Bitburger Premium Pils",
+    "url": "https://www.bitburger.de/klassiker/premium-pils/",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Bitburger Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Bitburger? Ein 0,5l Glas Bitburger Pils hat ca. 210 kcal (42 kcal/100ml). Nährwerte pro Glas, Flasche & 100ml im Überblick.",
+    "description": "Wie viele Kalorien hat Bitburger? Ein 0,5l Glas Bitburger Pils hat laut Hersteller ca. 200 kcal (40 kcal/100ml). Nährwerte pro Glas, Flasche & 100ml im Überblick.",
     "keywords": [
       "bitburger kalorien",
       "bitburger kcal",
@@ -17,28 +24,29 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 42,
-    "protein_per_100g": 0.4,
-    "carbs_per_100g": 3,
+    "calories_per_100g": 40,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 3.1,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 500,
-    "typical_portion_name": "1 Glas (0,5l)"
+    "typical_portion_name": "1 Glas (0,5l)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "Kleines Glas (0,25l)",
       "portion_g": 250,
-      "calories": 105,
-      "protein": 1,
+      "calories": 100,
+      "protein": 0,
       "carbs": 8,
       "fat": 0
     },
     {
       "name": "Flasche (0,33l)",
       "portion_g": 330,
-      "calories": 139,
-      "protein": 1,
+      "calories": 132,
+      "protein": 0,
       "carbs": 10,
       "fat": 0,
       "tip": "Standard-Stubbi"
@@ -46,64 +54,83 @@
     {
       "name": "Glas (0,5l)",
       "portion_g": 500,
-      "calories": 210,
-      "protein": 2,
-      "carbs": 15,
+      "calories": 200,
+      "protein": 0,
+      "carbs": 16,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Flasche (0,5l)",
       "portion_g": 500,
-      "calories": 210,
-      "protein": 2,
-      "carbs": 15,
+      "calories": 200,
+      "protein": 0,
+      "carbs": 16,
       "fat": 0
     },
     {
       "name": "Maß (1l)",
       "portion_g": 1000,
-      "calories": 420,
-      "protein": 4,
-      "carbs": 30,
+      "calories": 400,
+      "protein": 0,
+      "carbs": 31,
       "fat": 0
-    },
-    {
-      "name": "Bitburger 0,0% (0,5l)",
-      "portion_g": 500,
-      "calories": 115,
-      "protein": 2,
-      "carbs": 26,
-      "fat": 0,
-      "tip": "Alkoholfrei, weniger Kalorien"
     }
   ],
   "comparison": [
     {
-      "name": "Radler",
-      "calories": 200,
-      "emoji": "🍺"
+      "name": "Bier allgemein (0,5l)",
+      "calories": 218,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 507
+        }
+      ]
     },
     {
       "name": "Weizenbier (0,5l)",
-      "calories": 220,
-      "emoji": "🍺"
+      "calories": 216,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "weizenbier",
+          "ml": 500,
+          "g": 502
+        }
+      ]
     },
     {
       "name": "Cola (0,5l)",
-      "calories": 210,
-      "emoji": "🥤"
+      "calories": 220,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     },
     {
       "name": "Apfelsaft (0,5l)",
-      "calories": 230,
-      "emoji": "🧃"
+      "calories": 241,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Alkohol liefert die meisten Kalorien",
-      "text": "Die Kalorien im Bitburger Pils stammen überwiegend aus dem Alkohol (ca. 4,8 % vol), nicht aus Zucker. Pro 100 ml sind es nur 42 kcal.",
+      "text": "Die Kalorien im Bitburger Pils stammen überwiegend aus dem Alkohol (4,8 % vol), nicht aus Zucker: Laut Hersteller enthält es 0 g Zucker. Pro 100 ml sind es nur 40 kcal.",
       "icon": "🍺"
     },
     {
@@ -113,12 +140,12 @@
     },
     {
       "title": "Die Glasgröße macht den Unterschied",
-      "text": "Ein 0,33l-Stubbi hat ca. 139 kcal, ein 0,5l-Glas schon 210 kcal. Wer die Menge im Blick behält, spart leicht Kalorien.",
+      "text": "Ein 0,33l-Stubbi hat ca. 132 kcal, ein 0,5l-Glas schon 200 kcal. Wer die Menge im Blick behält, spart leicht Kalorien.",
       "icon": "📏"
     },
     {
-      "title": "Praktisch fett- und ballaststofffrei",
-      "text": "Bitburger enthält kein Fett und keine nennenswerten Ballaststoffe. Die Kohlenhydrate liegen bei nur 3 g pro 100 ml.",
+      "title": "Fettfrei und ohne Zucker",
+      "text": "Bitburger enthält laut Hersteller kein Fett und keinen Zucker. Die Kohlenhydrate liegen bei nur 3,1 g pro 100 ml.",
       "icon": "🥦"
     },
     {
@@ -130,19 +157,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Bitburger?",
-      "answer": "Ein 0,5l-Glas Bitburger Pils hat ca. 210 kcal. Pro 100 ml sind es rund 42 kcal."
+      "answer": "Ein 0,5l-Glas Bitburger Pils hat laut Hersteller ca. 200 kcal. Pro 100 ml sind es 40 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Bitburger pro 100 ml?",
-      "answer": "Bitburger Pils hat laut Hersteller ca. 42 kcal (178 kJ) pro 100 ml."
+      "answer": "Bitburger Pils hat laut Hersteller 40 kcal (170 kJ) pro 100 ml."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bitburger?",
-      "answer": "Bitburger Pils enthält etwa 3,0 g Kohlenhydrate pro 100 ml. In einem 0,5l-Glas sind das rund 15 g."
+      "answer": "Bitburger Pils enthält laut Hersteller 3,1 g Kohlenhydrate pro 100 ml, davon 0 g Zucker. In einem 0,5l-Glas sind das rund 16 g."
     },
     {
       "question": "Wie viel Protein steckt in Bitburger?",
-      "answer": "Bitburger liefert nur etwa 0,4 g Eiweiß pro 100 ml, also rund 2 g pro 0,5l-Glas. Als Proteinquelle eignet es sich nicht."
+      "answer": "Bitburger enthält laut Hersteller 0 g Eiweiß pro 100 ml. Als Proteinquelle eignet es sich nicht."
     },
     {
       "question": "Ist Bitburger zum Abnehmen geeignet?",
@@ -150,7 +177,7 @@
     },
     {
       "question": "Hat Bitburger 0,0 % weniger Kalorien?",
-      "answer": "Ja, das alkoholfreie Bitburger 0,0 % hat mit ca. 23 kcal pro 100 ml deutlich weniger Kalorien als das Pils, da der Alkohol fehlt."
+      "answer": "Ja, das alkoholfreie Bitburger 0,0 % hat deutlich weniger Kalorien als das Pils, da der Alkohol fehlt. Die genauen Werte nennt der Hersteller auf der Produktseite."
     }
   ],
   "related_foods": [

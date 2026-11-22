@@ -3,9 +3,16 @@
   "name": "Magnum Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe The Magnum Ice Cream Company (Langnese), Magnum Mini Classic 6 x 55 ml (https://www.magnumicecream.com/de/p/magnum-mini-classic-6-x-55-ml.html/08711327608207, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "The Magnum Ice Cream Company (Langnese)",
+    "produkt": "Magnum Mini Classic 6 x 55 ml",
+    "url": "https://www.magnumicecream.com/de/p/magnum-mini-classic-6-x-55-ml.html/08711327608207",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Magnum Mini Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Magnum Mini? Ein Mini Classic (50 g) hat ca. 168 kcal. Nährwerte pro 100 g, alle Sorten im Vergleich + Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Magnum Mini? Ein Mini Classic (41,5 g) hat ca. 137 kcal. Nährwerte pro 100 g, Vergleich + Diät-Tipps.",
     "keywords": [
       "magnum mini kalorien",
       "mini magnum kalorien",
@@ -16,113 +23,112 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 336,
-    "protein_per_100g": 3.7,
+    "calories_per_100g": 331,
+    "protein_per_100g": 3.5,
     "carbs_per_100g": 31,
-    "fat_per_100g": 22,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 50,
-    "typical_portion_name": "1 Magnum Mini Classic (50 g)"
+    "fat_per_100g": 21,
+    "fiber_per_100g": null,
+    "typical_portion_g": 41.5,
+    "typical_portion_name": "1 Magnum Mini Classic (41,5 g)"
   },
   "variants": [
     {
-      "name": "1 Magnum Mini Classic (50 g)",
-      "portion_g": 50,
-      "calories": 168,
-      "protein": 1.9,
-      "carbs": 15.5,
-      "fat": 11,
+      "name": "1 Magnum Mini Classic (41,5 g)",
+      "portion_g": 41.5,
+      "calories": 137,
+      "protein": 1.5,
+      "carbs": 12.9,
+      "fat": 8.7,
       "tip": "Standard-Portion"
     },
     {
-      "name": "2 Magnum Mini (100 g)",
-      "portion_g": 100,
-      "calories": 336,
-      "protein": 3.7,
-      "carbs": 31,
-      "fat": 22
+      "name": "2 Magnum Mini (83 g)",
+      "portion_g": 83,
+      "calories": 275,
+      "protein": 2.9,
+      "carbs": 25.7,
+      "fat": 17.4
     },
     {
-      "name": "3 Magnum Mini (150 g)",
-      "portion_g": 150,
-      "calories": 504,
-      "protein": 5.6,
-      "carbs": 46.5,
-      "fat": 33
+      "name": "3 Magnum Mini (124,5 g)",
+      "portion_g": 124.5,
+      "calories": 412,
+      "protein": 4.4,
+      "carbs": 38.6,
+      "fat": 26.1
     },
     {
-      "name": "Ganze Packung (6 Mini, 300 g)",
-      "portion_g": 300,
-      "calories": 1008,
-      "protein": 11,
-      "carbs": 93,
-      "fat": 66,
+      "name": "Ganze Packung (6 Mini, 249 g)",
+      "portion_g": 249,
+      "calories": 824,
+      "protein": 8.7,
+      "carbs": 77.2,
+      "fat": 52.3,
       "tip": "Komplette 6er-Packung"
     },
     {
-      "name": "1 Magnum Mini White (50 g)",
-      "portion_g": 50,
-      "calories": 166,
-      "protein": 2.1,
-      "carbs": 17,
-      "fat": 10,
-      "tip": "Weiße Schokolade"
-    },
-    {
-      "name": "1 Magnum Mini Almond / Mandel (50 g)",
-      "portion_g": 50,
-      "calories": 172,
-      "protein": 2.4,
-      "carbs": 16,
-      "fat": 10.5,
-      "tip": "Mit Mandelstückchen"
-    },
-    {
-      "name": "1 Magnum Mini Dark (50 g)",
-      "portion_g": 50,
-      "calories": 165,
-      "protein": 2.3,
-      "carbs": 13.5,
-      "fat": 11.5,
-      "tip": "Zartbitterschokolade, etwas weniger Zucker"
+      "name": "Pro 100 g",
+      "portion_g": 100,
+      "calories": 331,
+      "protein": 3.5,
+      "carbs": 31,
+      "fat": 21
     }
   ],
   "comparison": [
     {
-      "name": "Magnum Classic (ganz, 79 g)",
-      "calories": 265,
-      "emoji": "🍦"
+      "name": "Magnum Classic (ganz, 81 g)",
+      "calories": 247,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "magnum",
+          "g": 81
+        }
+      ]
     },
     {
-      "name": "Bounty (Riegel)",
-      "calories": 137,
-      "emoji": "🥥"
+      "name": "Vanilleeis (1 Kugel, 75 g)",
+      "calories": 155,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "eis-vanille",
+          "g": 75
+        }
+      ]
     },
     {
       "name": "Schokolade (1 Riegel-Stück, 25 g)",
       "calories": 134,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Die kleinere Portion bewusst nutzen",
-      "text": "Ein Magnum Mini hat mit rund 168 kcal nur etwa zwei Drittel der Kalorien eines normalen Magnum Classic (ca. 265 kcal). Wer Lust auf Magnum hat, kommt mit der Mini-Variante günstiger weg.",
+      "text": "Ein Magnum Mini hat mit rund 137 kcal nur gut die Hälfte der Kalorien eines normalen Magnum Classic (247 kcal). Wer Lust auf Magnum hat, kommt mit der Mini-Variante günstiger weg.",
       "icon": "🍫"
     },
     {
       "title": "Bei der Packung aufpassen",
-      "text": "Eine 6er-Packung Magnum Mini summiert sich auf über 1000 kcal. Die kleine Größe verführt dazu, gleich mehrere zu essen. Ein bis zwei Stück als Portion einplanen.",
+      "text": "Eine 6er-Packung Magnum Mini summiert sich auf über 800 kcal. Die kleine Größe verführt dazu, gleich mehrere zu essen. Ein bis zwei Stück als Portion einplanen.",
       "icon": "⚠️"
     },
     {
       "title": "Fett liefert die meisten Kalorien",
-      "text": "Mit 22 g Fett pro 100 g stammen rund 60 Prozent der Kalorien aus Fett. Magnum Mini ist daher eher ein Genuss-Snack als ein sättigendes Lebensmittel.",
+      "text": "Mit 21 g Fett pro 100 g stammen fast 60 Prozent der Kalorien aus Fett. Magnum Mini ist daher eher ein Genuss-Snack als ein sättigendes Lebensmittel.",
       "icon": "🧈"
     },
     {
       "title": "Sorten unterscheiden sich kaum",
-      "text": "Classic, White, Dark und Almond liegen pro Stück alle zwischen ca. 165 und 172 kcal. Die Sorte kann man also nach Geschmack wählen, nicht nach Kalorien.",
+      "text": "Neben Classic gibt es weitere Mini-Sorten wie Mandel. Pro Stück liegen sie nah beieinander, die Mandel-Variante hat etwas mehr Kalorien als Classic. Die Sorte kann man also nach Geschmack wählen.",
       "icon": "🍦"
     },
     {
@@ -134,27 +140,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Magnum Mini?",
-      "answer": "Ein Magnum Mini Classic (50 g) hat ca. 168 kcal. Pro 100 g sind es 336 kcal."
+      "answer": "Ein Magnum Mini Classic (41,5 g) hat laut Hersteller 137 kcal. Pro 100 g sind es 331 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Packung Magnum Mini?",
-      "answer": "Eine 6er-Packung Magnum Mini Classic (300 g) hat rund 1008 kcal, also etwa 168 kcal pro Stück."
+      "answer": "Eine 6er-Packung Magnum Mini Classic (249 g) hat rund 824 kcal, also etwa 137 kcal pro Stück."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Magnum Mini?",
-      "answer": "Ein Magnum Mini Classic enthält ca. 15,5 g Kohlenhydrate pro Stück (31 g pro 100 g), davon stammt der Großteil aus Zucker."
+      "answer": "Ein Magnum Mini Classic enthält ca. 13 g Kohlenhydrate pro Stück (31 g pro 100 g), davon rund 12 g Zucker."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Magnum Mini?",
-      "answer": "Ein Magnum Mini hat nur etwa 1,9 g Eiweiß pro Stück (3,7 g pro 100 g) und ist damit keine relevante Proteinquelle."
+      "answer": "Ein Magnum Mini hat nur etwa 1,5 g Eiweiß pro Stück (3,5 g pro 100 g) und ist damit keine relevante Proteinquelle."
     },
     {
       "question": "Ist Magnum Mini zum Abnehmen geeignet?",
-      "answer": "Magnum Mini ist mit viel Fett und Zucker eher kalorienreich. Als kleine, eingeplante Portion mit ca. 168 kcal kann es in einer Diät trotzdem Platz finden, sättigt aber kaum."
+      "answer": "Magnum Mini ist mit viel Fett und Zucker eher kalorienreich. Als kleine, eingeplante Portion mit ca. 137 kcal kann es in einer Diät trotzdem Platz finden, sättigt aber kaum."
     },
     {
       "question": "Welche Magnum-Mini-Sorte hat die wenigsten Kalorien?",
-      "answer": "Die Unterschiede sind gering: Mini Dark (ca. 165 kcal) und Mini White (ca. 166 kcal) liegen knapp unter Classic (ca. 168 kcal) und Almond (ca. 172 kcal) pro Stück."
+      "answer": "Die Unterschiede zwischen den Mini-Sorten sind gering, die Mandel-Variante liegt laut Hersteller etwas über Classic. Der Mini Classic hat 137 kcal pro Stück."
     }
   ],
   "related_foods": [

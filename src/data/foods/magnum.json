@@ -3,9 +3,16 @@
   "name": "Magnum",
   "emoji": "🍦",
   "category": "supermarkt",
+  "source": "Herstellerangabe The Magnum Ice Cream Company (Langnese), Magnum Classic 1 x 110 ml (https://www.magnumicecream.com/de/p/magnum-classic-1-x-110-ml.html/08711327612372, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "The Magnum Ice Cream Company (Langnese)",
+    "produkt": "Magnum Classic 1 x 110 ml",
+    "url": "https://www.magnumicecream.com/de/p/magnum-classic-1-x-110-ml.html/08711327612372",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Magnum Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Magnum? Ein Magnum Classic am Stiel (79g) hat ca. 229 kcal. Nährwerte pro 100g, alle Sorten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat ein Magnum? Ein Magnum Classic am Stiel (110 ml, 81g) hat ca. 247 kcal. Nährwerte pro 100g, Sorten im Vergleich + Tipps.",
     "keywords": [
       "magnum kalorien",
       "magnum eis kalorien",
@@ -18,135 +25,163 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
+    "calories_per_100g": 305,
     "protein_per_100g": 3.3,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 0.8,
-    "typical_portion_g": 79,
-    "typical_portion_name": "1 Magnum Classic am Stiel (79g)"
+    "carbs_per_100g": 30,
+    "fat_per_100g": 19,
+    "fiber_per_100g": null,
+    "typical_portion_g": 81,
+    "typical_portion_name": "1 Magnum Classic am Stiel (110 ml, 81g)"
   },
   "variants": [
     {
-      "name": "Magnum Mini Classic (55g)",
-      "portion_g": 55,
-      "calories": 160,
-      "protein": 1.8,
-      "carbs": 15.4,
-      "fat": 9.9,
-      "tip": "Kleinere Portion zum Genießen"
+      "name": "Magnum Mini Classic (41,5g)",
+      "portion_g": 41.5,
+      "calories": 137,
+      "protein": 1.5,
+      "carbs": 12.9,
+      "fat": 8.7,
+      "tip": "Kleinere Portion zum Genießen",
+      "basis": [
+        {
+          "slug": "magnum-mini",
+          "g": 41.5
+        }
+      ]
     },
     {
-      "name": "Magnum Classic am Stiel (79g)",
-      "portion_g": 79,
-      "calories": 229,
-      "protein": 2.6,
-      "carbs": 22.1,
-      "fat": 14.2,
+      "name": "Magnum Classic am Stiel (81g)",
+      "portion_g": 81,
+      "calories": 247,
+      "protein": 2.7,
+      "carbs": 24.3,
+      "fat": 15.4,
       "tip": "Standard"
     },
     {
-      "name": "Magnum White am Stiel (79g)",
-      "portion_g": 79,
-      "calories": 229,
-      "protein": 2.7,
-      "carbs": 23.7,
-      "fat": 13.4
+      "name": "Magnum Mandel am Stiel (83g)",
+      "portion_g": 83,
+      "calories": 276,
+      "protein": 3.9,
+      "carbs": 25.7,
+      "fat": 17.4,
+      "basis": [
+        {
+          "slug": "magnum-mandel",
+          "g": 83
+        }
+      ]
     },
     {
-      "name": "Magnum Mandel am Stiel (79g)",
-      "portion_g": 79,
-      "calories": 246,
-      "protein": 3.2,
-      "carbs": 21.3,
-      "fat": 15.8
-    },
-    {
-      "name": "Magnum Double Caramel (88g)",
-      "portion_g": 88,
-      "calories": 290,
-      "protein": 3.1,
-      "carbs": 29,
-      "fat": 17.6
+      "name": "2 Magnum Classic (162g)",
+      "portion_g": 162,
+      "calories": 494,
+      "protein": 5.3,
+      "carbs": 48.6,
+      "fat": 30.8
     },
     {
       "name": "Magnum pro 100g",
       "portion_g": 100,
-      "calories": 290,
+      "calories": 305,
       "protein": 3.3,
-      "carbs": 28,
-      "fat": 18
+      "carbs": 30,
+      "fat": 19
     }
   ],
   "comparison": [
     {
-      "name": "Eis Vanille (Kugel)",
-      "calories": 200,
-      "emoji": "🍨"
+      "name": "Vanilleeis (1 Kugel, 75g)",
+      "calories": 155,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille",
+          "g": 75
+        }
+      ]
     },
     {
-      "name": "Snickers Eis",
-      "calories": 230,
-      "emoji": "🍫"
+      "name": "Wassereis (1 Stiel, 50g)",
+      "calories": 40,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "fdcId": 168813,
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Wassereis",
-      "calories": 70,
-      "emoji": "🧊"
+      "name": "Vollmilchschokolade (1 Reihe, 25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Schokolade Vollmilch",
-      "calories": 535,
-      "emoji": "🍫"
+      "name": "Bueno Eis (1 Stück, 90 ml)",
+      "calories": 220,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "bueno-eis",
+          "g": 90
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mini statt Classic",
-      "text": "Ein Magnum Mini hat mit ca. 160 kcal rund 70 kcal weniger als ein Classic am Stiel. Wer naschen möchte, kommt mit der kleinen Variante günstiger weg.",
+      "text": "Ein Magnum Mini Classic hat mit ca. 137 kcal rund 110 kcal weniger als ein Classic am Stiel. Wer naschen möchte, kommt mit der kleinen Variante günstiger weg.",
       "icon": "🍦"
     },
     {
       "title": "Fett liefert die meisten Kalorien",
-      "text": "Mit 18g Fett pro 100g stammt der Großteil der Kalorien aus der Schokoladenhülle und dem Sahneeis. Das macht Magnum kalorienreicher als ein einfaches Milcheis.",
+      "text": "Mit 19g Fett pro 100g stammt der Großteil der Kalorien aus der Schokoladenhülle und dem Eis. Das macht Magnum kalorienreicher als ein einfaches Milcheis.",
       "icon": "🧈"
     },
     {
       "title": "Bewusst als Genuss einplanen",
-      "text": "Ein Magnum Classic passt mit 229 kcal gut in den Tag, wenn man es als geplanten Nachtisch einrechnet statt nebenbei zu naschen.",
+      "text": "Ein Magnum Classic passt mit 247 kcal gut in den Tag, wenn man es als geplanten Nachtisch einrechnet statt nebenbei zu naschen.",
       "icon": "📅"
     },
     {
       "title": "Mandel-Variante sättigt etwas mehr",
-      "text": "Magnum Mandel enthält durch die Nüsse minimal mehr Protein und Fett. Geschmacklich intensiver, aber kalorisch ähnlich dem Classic.",
+      "text": "Magnum Mandel enthält durch die Nüsse etwas mehr Protein und Fett. Geschmacklich intensiver und mit 276 kcal etwas kalorienreicher als der Classic.",
       "icon": "🌰"
     },
     {
       "title": "Leichtere Alternative an heißen Tagen",
-      "text": "Wer auf Kalorien achtet, kann zu einem Wassereis (ca. 70 kcal) greifen. Es kühlt genauso, hat aber kaum Fett und Zucker im Vergleich.",
+      "text": "Wer auf Kalorien achtet, kann zu einem Wassereis (ca. 40 kcal) greifen. Es kühlt genauso, hat aber kaum Fett und Zucker im Vergleich.",
       "icon": "🧊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Magnum?",
-      "answer": "Ein Magnum Classic am Stiel (79g) hat ca. 229 kcal. Pro 100g sind es rund 290 kcal."
+      "answer": "Ein Magnum Classic am Stiel (110 ml, 81g) hat laut Hersteller 247 kcal. Pro 100g sind es 305 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Magnum Mini?",
-      "answer": "Ein Magnum Mini Classic (55g) hat etwa 160 kcal und damit rund 70 kcal weniger als ein Magnum am Stiel."
+      "answer": "Ein Magnum Mini Classic (41,5g) hat 137 kcal und damit rund 110 kcal weniger als ein Magnum am Stiel."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Magnum?",
-      "answer": "Ein Magnum Classic (79g) enthält ca. 22g Kohlenhydrate, überwiegend in Form von Zucker. Pro 100g sind es etwa 28g."
+      "answer": "Ein Magnum Classic (81g) enthält ca. 24g Kohlenhydrate, davon rund 22g Zucker. Pro 100g sind es 30g."
     },
     {
       "question": "Wie viel Protein steckt in einem Magnum?",
-      "answer": "Ein Magnum Classic liefert nur ca. 2,6g Eiweiß. Als Proteinquelle ist es nicht geeignet, es zählt klar als Süßigkeit."
+      "answer": "Ein Magnum Classic liefert nur ca. 2,7g Eiweiß. Als Proteinquelle ist es nicht geeignet, es zählt klar als Süßigkeit."
     },
     {
       "question": "Ist Magnum zum Abnehmen geeignet?",
-      "answer": "Magnum ist mit 229 kcal pro Stiel kein typisches Diät-Lebensmittel, lässt sich aber als geplanter Genuss in eine Kalorienbilanz einbauen. Eine Mini-Variante oder ein Wassereis sind kalorienärmer."
+      "answer": "Magnum ist mit 247 kcal pro Stiel kein typisches Diät-Lebensmittel, lässt sich aber als geplanter Genuss in eine Kalorienbilanz einbauen. Eine Mini-Variante oder ein Wassereis sind kalorienärmer."
     },
     {
       "question": "Ist Magnum gesund?",

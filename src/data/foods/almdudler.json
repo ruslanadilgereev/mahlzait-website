@@ -3,9 +3,16 @@
   "name": "Almdudler",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "Herstellerangabe Almdudler, Almdudler Original (https://almdudler.com/de/almdudler-das-original, abgerufen am 22.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Almdudler",
+    "produkt": "Almdudler Original",
+    "url": "https://almdudler.com/de/almdudler-das-original",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Almdudler Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Almdudler? 100 ml haben 33 kcal, eine 0,33-l-Dose 109 kcal. Nährwerte, zuckerfreie Variante & Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Almdudler? 100 ml haben laut Hersteller 33 kcal, eine 0,33-l-Dose 109 kcal. Nährwerte, Packungsgrößen & Diät-Tipps im Überblick.",
     "keywords": [
       "almdudler kalorien",
       "almdudler kcal",
@@ -21,9 +28,10 @@
     "protein_per_100g": 0,
     "carbs_per_100g": 7.9,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 330,
-    "typical_portion_name": "1 Dose (0,33 l)"
+    "typical_portion_name": "1 Dose (0,33 l)",
+    "einheit": "ml"
   },
   "variants": [
     {
@@ -66,43 +74,54 @@
       "protein": 0,
       "carbs": 79,
       "fat": 0
-    },
-    {
-      "name": "Almdudler Zuckerfrei (0,33 l)",
-      "portion_g": 330,
-      "calories": 2,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 0,
-      "tip": "Fast kalorienfrei dank Süßungsmitteln"
     }
   ],
   "comparison": [
     {
-      "name": "Cola",
-      "calories": 139,
-      "emoji": "🥤"
+      "name": "Cola (0,33 l)",
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
-      "name": "Fanta",
-      "calories": 125,
-      "emoji": "🍊"
+      "name": "Sprite (0,33 l)",
+      "calories": 138,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "sprite"
+        }
+      ]
     },
     {
-      "name": "Sprite",
-      "calories": 109,
-      "emoji": "🥤"
+      "name": "Eistee (0,33 l)",
+      "calories": 156,
+      "emoji": "🧋",
+      "basis": [
+        {
+          "slug": "eistee"
+        }
+      ]
     },
     {
-      "name": "Apfelsaft",
-      "calories": 152,
-      "emoji": "🧃"
+      "name": "Apfelsaft (250 ml)",
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Vergleichbar mit Cola",
-      "text": "Almdudler hat mit 33 kcal pro 100 ml etwas weniger Kalorien als klassische Cola (rund 42 kcal pro 100 ml), liegt aber im selben Bereich gezuckerter Limonaden.",
+      "text": "Almdudler hat mit 33 kcal pro 100 ml etwas weniger Kalorien als klassische Cola (laut FDC rund 44 kcal pro 100 ml), liegt aber im selben Bereich gezuckerter Limonaden.",
       "icon": "🥤"
     },
     {
@@ -112,7 +131,7 @@
     },
     {
       "title": "Auf die Portionsgröße achten",
-      "text": "Eine 0,5-l-PET-Flasche enthält bereits 165 kcal und rund 40 g Zucker. Das entspricht etwa 13 Stück Würfelzucker.",
+      "text": "Eine 0,5-l-PET-Flasche enthält bereits 165 kcal und rund 40 g Zucker.",
       "icon": "🧊"
     },
     {
@@ -129,15 +148,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Almdudler?",
-      "answer": "Almdudler Original hat 33 kcal pro 100 ml. Eine 0,33-l-Dose kommt damit auf rund 109 kcal, eine 0,5-l-Flasche auf etwa 165 kcal."
+      "answer": "Almdudler Original hat laut Hersteller 33 kcal pro 100 ml. Eine 0,33-l-Dose kommt damit auf rund 109 kcal, eine 0,5-l-Flasche auf etwa 165 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Almdudler?",
-      "answer": "Almdudler Original enthält 7,9 g Zucker pro 100 ml. Eine 0,33-l-Dose liefert somit rund 26 g Zucker, eine 0,5-l-Flasche etwa 40 g."
+      "answer": "Almdudler Original enthält laut Hersteller 7,9 g Zucker pro 100 ml. Eine 0,33-l-Dose liefert somit rund 26 g Zucker, eine 0,5-l-Flasche etwa 40 g."
     },
     {
       "question": "Wie viele Kalorien hat Almdudler Zuckerfrei?",
-      "answer": "Almdudler Zuckerfrei ist mit etwa 1 kcal pro 100 ml praktisch kalorienfrei. Eine ganze Dose enthält nur rund 2 kcal."
+      "answer": "Almdudler Zuckerfrei ist mit Süßstoffen gesüßt und praktisch kalorienfrei. Die genauen Werte nennt der Hersteller auf der Produktseite."
     },
     {
       "question": "Hat Almdudler Eiweiß oder Fett?",

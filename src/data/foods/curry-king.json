@@ -3,9 +3,16 @@
   "name": "Curry King",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "Herstellerangabe Meica, Curry King (220 g) (https://www.meica.de/produkte/curry-king/curry-king, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Meica",
+    "produkt": "Curry King (220 g)",
+    "url": "https://www.meica.de/produkte/curry-king/curry-king",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Curry King Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Curry King? Eine Portion (220g) hat ca. 486 kcal. Nährwerte pro 100g & pro Becher, Eiweiß, Kohlenhydrate & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Curry King? Eine Portion (220g) hat ca. 473 kcal. Nährwerte pro 100g & pro Becher, Eiweiß, Kohlenhydrate & Diät-Tipps.",
     "keywords": [
       "curry king kalorien",
       "curry king kcal",
@@ -18,11 +25,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 221,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 8.5,
-    "fat_per_100g": 17,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 215,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 12,
+    "fat_per_100g": 15,
+    "fiber_per_100g": null,
     "typical_portion_g": 220,
     "typical_portion_name": "1 Becher (220g)"
   },
@@ -30,102 +37,133 @@
     {
       "name": "Curry King pro 100g",
       "portion_g": 100,
-      "calories": 221,
-      "protein": 9,
-      "carbs": 8.5,
-      "fat": 17
+      "calories": 215,
+      "protein": 8,
+      "carbs": 12,
+      "fat": 15
     },
     {
       "name": "Halber Becher (110g)",
       "portion_g": 110,
-      "calories": 243,
-      "protein": 9.9,
-      "carbs": 9.4,
-      "fat": 18.7
+      "calories": 237,
+      "protein": 8.8,
+      "carbs": 13.2,
+      "fat": 16.5
     },
     {
       "name": "1 Becher (220g)",
       "portion_g": 220,
-      "calories": 486,
-      "protein": 19.8,
-      "carbs": 18.7,
-      "fat": 37.4,
+      "calories": 473,
+      "protein": 17.6,
+      "carbs": 26.4,
+      "fat": 33,
       "tip": "Standard-Portion"
     },
     {
-      "name": "Große Portion mit Pommes (350g)",
+      "name": "Curry King mit Pommes (220g + 130g)",
       "portion_g": 350,
-      "calories": 774,
-      "protein": 31.5,
-      "carbs": 29.8,
-      "fat": 59.5
+      "calories": 879,
+      "protein": 22.1,
+      "carbs": 80.3,
+      "fat": 52.1,
+      "basis": [
+        {
+          "g": 220
+        },
+        {
+          "fdcId": 2709461,
+          "g": 130
+        }
+      ]
     },
     {
-      "name": "Curry King mit Brötchen (300g)",
-      "portion_g": 300,
-      "calories": 663,
-      "protein": 27,
-      "carbs": 25.5,
-      "fat": 51
+      "name": "Curry King mit Brötchen (220g + 60g)",
+      "portion_g": 280,
+      "calories": 649,
+      "protein": 23.5,
+      "carbs": 58,
+      "fat": 35.6,
+      "basis": [
+        {
+          "g": 220
+        },
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Snack-Portion (150g)",
       "portion_g": 150,
-      "calories": 332,
-      "protein": 13.5,
-      "carbs": 12.8,
-      "fat": 25.5
+      "calories": 323,
+      "protein": 12,
+      "carbs": 18,
+      "fat": 22.5
     },
     {
       "name": "Doppelte Portion (440g)",
       "portion_g": 440,
-      "calories": 972,
-      "protein": 39.6,
-      "carbs": 37.4,
-      "fat": 74.8
+      "calories": 946,
+      "protein": 35.2,
+      "carbs": 52.8,
+      "fat": 66
     }
   ],
   "comparison": [
     {
-      "name": "Currywurst (frisch)",
-      "calories": 580,
-      "emoji": "🌭"
+      "name": "Currywurst frisch (1 Portion, 200g)",
+      "calories": 500,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Bockwurst",
-      "calories": 250,
-      "emoji": "🌭"
+      "name": "Bockwurst (1 Stück, 100g)",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Pommes-Currywurst",
-      "calories": 820,
-      "emoji": "🍟"
-    },
-    {
-      "name": "Bratwurst",
-      "calories": 290,
-      "emoji": "🌭"
+      "name": "Bratwurst (1 Stück, 150g)",
+      "calories": 500,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Fettreich – als Snack einplanen",
-      "text": "Ein Becher (220g) liefert ca. 486 kcal und 37g Fett. Das ist eine vollwertige Mahlzeit, kein Zwischensnack. Plane sie als Hauptgericht ein.",
+      "title": "Fettreich: als Mahlzeit einplanen",
+      "text": "Ein Becher (220g) liefert ca. 473 kcal und 33g Fett. Das ist eine vollwertige Mahlzeit, kein Zwischensnack. Plane sie als Hauptgericht ein.",
       "icon": "🌭"
     },
     {
       "title": "Ohne Beilage spart Kalorien",
-      "text": "Pur gegessen bleibt Curry King bei ca. 486 kcal. Mit Pommes oder Brötchen kommen schnell 250–350 kcal extra dazu. Eine Gurke oder Salat als Beilage ist die leichtere Wahl.",
+      "text": "Pur gegessen bleibt Curry King bei ca. 473 kcal. Mit Brötchen oder Pommes kommen schnell 176 bis 406 kcal extra dazu. Eine Gurke oder Salat als Beilage ist die leichtere Wahl.",
       "icon": "🥒"
     },
     {
       "title": "Eiweiß-Anteil nutzen",
-      "text": "Mit knapp 20g Eiweiß pro Becher sättigt Curry King ordentlich. Kombiniert mit etwas Gemüse hält das Sättigungsgefühl länger an.",
+      "text": "Mit knapp 18g Eiweiß pro Becher sättigt Curry King ordentlich. Kombiniert mit etwas Gemüse hält das Sättigungsgefühl länger an.",
       "icon": "💪"
     },
     {
       "title": "Halbe Portion bei Diät",
-      "text": "Wer auf die Kalorien achtet, isst nur den halben Becher (ca. 243 kcal) und füllt den Teller mit Salat oder gedünstetem Gemüse auf.",
+      "text": "Wer auf die Kalorien achtet, isst nur den halben Becher (ca. 237 kcal) und füllt den Teller mit Salat oder gedünstetem Gemüse auf.",
       "icon": "⚖️"
     },
     {
@@ -137,23 +175,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Curry King?",
-      "answer": "Ein Becher Curry King (220g) hat ca. 486 kcal. Pro 100g sind es etwa 221 kcal. Der hohe Wert kommt vor allem vom Fettanteil der Wurst."
+      "answer": "Ein Becher Curry King (220g) hat laut Hersteller ca. 473 kcal. Pro 100g sind es 215 kcal. Der hohe Wert kommt vor allem vom Fettanteil der Wurst."
     },
     {
       "question": "Wie viele Kalorien hat Curry King pro 100g?",
-      "answer": "Curry King hat laut Hersteller-Nährwertangabe ca. 221 kcal pro 100g, mit 17g Fett, 9g Eiweiß und 8,5g Kohlenhydraten."
+      "answer": "Curry King hat laut Hersteller-Nährwertangabe 215 kcal pro 100g, mit 15g Fett, 8g Eiweiß und 12g Kohlenhydraten."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Curry King?",
-      "answer": "Pro 100g hat Curry King ca. 8,5g Kohlenhydrate, ein ganzer Becher (220g) rund 19g. Der Großteil davon stammt aus dem Zucker der Currysauce."
+      "answer": "Pro 100g hat Curry King 12g Kohlenhydrate, ein ganzer Becher (220g) rund 26g. Laut Hersteller ist alles davon Zucker, vor allem aus der Currysauce."
     },
     {
       "question": "Wie viel Eiweiß hat Curry King?",
-      "answer": "Curry King liefert ca. 9g Eiweiß pro 100g, also etwa 20g pro Becher (220g) – ein ordentlicher Eiweißanteil durch die Wurst."
+      "answer": "Curry King liefert 8g Eiweiß pro 100g, also etwa 18g pro Becher (220g), ein ordentlicher Eiweißanteil durch die Wurst."
     },
     {
       "question": "Ist Curry King zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit 17g Fett pro 100g und fast 500 kcal pro Becher ist Curry King recht kalorien- und fettreich. In einer Diät besser nur den halben Becher essen und mit Gemüse oder Salat kombinieren."
+      "answer": "Nur bedingt. Mit 15g Fett pro 100g und rund 470 kcal pro Becher ist Curry King recht kalorien- und fettreich. In einer Diät besser nur den halben Becher essen und mit Gemüse oder Salat kombinieren."
     },
     {
       "question": "Ist Curry King gesund?",

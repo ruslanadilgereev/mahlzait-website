@@ -3,9 +3,16 @@
   "name": "Duplo",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, duplo Classic (https://www.duplo.de/sortiment/classic, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "duplo Classic",
+    "url": "https://www.duplo.de/sortiment/classic",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Duplo Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Duplo? Ein Riegel (18,2g) hat ca. 98 kcal. Nährwerte pro 100g & pro Riegel, Varianten im Vergleich plus Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Duplo? Ein Riegel (18,2g) hat ca. 100 kcal. Nährwerte pro 100g & pro Riegel, Vergleich mit anderen Riegeln plus Diät-Tipps.",
     "keywords": [
       "duplo kalorien",
       "kalorien duplo",
@@ -17,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 539,
-    "protein_per_100g": 6.8,
-    "carbs_per_100g": 55,
-    "fat_per_100g": 31.5,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 551,
+    "protein_per_100g": 6.1,
+    "carbs_per_100g": 56,
+    "fat_per_100g": 33,
+    "fiber_per_100g": null,
     "typical_portion_g": 18.2,
     "typical_portion_name": "1 Riegel (18,2g)"
   },
@@ -29,7 +36,7 @@
     {
       "name": "1 Riegel (18,2g)",
       "portion_g": 18.2,
-      "calories": 98,
+      "calories": 100,
       "protein": 1,
       "carbs": 10,
       "fat": 6,
@@ -38,79 +45,86 @@
     {
       "name": "Halber Riegel (9g)",
       "portion_g": 9,
-      "calories": 49,
+      "calories": 50,
       "protein": 1,
       "carbs": 5,
       "fat": 3
     },
     {
-      "name": "Duplo Chocnut Riegel (26g)",
-      "portion_g": 26,
-      "calories": 140,
-      "protein": 2,
-      "carbs": 14,
-      "fat": 8,
-      "tip": "Variante mit Erdnüssen"
-    },
-    {
-      "name": "Duplo White Riegel (18,2g)",
-      "portion_g": 18.2,
-      "calories": 99,
-      "protein": 1,
-      "carbs": 11,
-      "fat": 6
-    },
-    {
       "name": "2 Riegel (36,4g)",
       "portion_g": 36.4,
-      "calories": 196,
+      "calories": 201,
       "protein": 2,
       "carbs": 20,
-      "fat": 11
+      "fat": 12
     },
     {
       "name": "Multipack 10 Riegel (182g)",
       "portion_g": 182,
-      "calories": 981,
-      "protein": 12,
-      "carbs": 100,
-      "fat": 57
+      "calories": 1003,
+      "protein": 11,
+      "carbs": 102,
+      "fat": 60
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 539,
-      "protein": 7,
-      "carbs": 55,
-      "fat": 32
+      "calories": 551,
+      "protein": 6,
+      "carbs": 56,
+      "fat": 33
     }
   ],
   "comparison": [
     {
-      "name": "Duplo (1 Riegel, 18,2g)",
-      "calories": 98,
-      "emoji": "🍫"
-    },
-    {
       "name": "Hanuta (1 Riegel, 22g)",
-      "calories": 123,
-      "emoji": "🍫"
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "hanuta",
+          "g": 22
+        }
+      ]
     },
     {
       "name": "Knoppers (1 Riegel, 25g)",
-      "calories": 135,
-      "emoji": "🧇"
+      "calories": 137,
+      "emoji": "🧇",
+      "basis": [
+        {
+          "slug": "knoppers",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Kinderriegel (1 Riegel, 21g)",
-      "calories": 118,
-      "emoji": "🍫"
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel",
+          "g": 21
+        }
+      ]
+    },
+    {
+      "name": "Happy Hippo (1 Riegel, 20,7g)",
+      "calories": 123,
+      "emoji": "🦛",
+      "basis": [
+        {
+          "slug": "happy-hippo",
+          "g": 20.7
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portionsgröße kennen",
-      "text": "Ein einzelner Duplo-Riegel hat nur rund 98 kcal. Wer es bei einem Riegel belässt, bleibt mit einem überschaubaren Snack im Rahmen.",
+      "text": "Ein einzelner Duplo-Riegel hat rund 100 kcal. Wer es bei einem Riegel belässt, bleibt mit einem überschaubaren Snack im Rahmen.",
       "icon": "🍫"
     },
     {
@@ -137,23 +151,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Duplo?",
-      "answer": "Ein einzelner Duplo-Riegel (18,2g) hat ca. 98 kcal. Pro 100g sind es 539 kcal."
+      "answer": "Ein einzelner Duplo-Riegel (18,2g) hat ca. 100 kcal. Pro 100g sind es 551 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Duplo?",
-      "answer": "Ein Riegel (18,2g) enthält rund 10g Kohlenhydrate, davon der größte Teil als Zucker. Pro 100g sind es etwa 55g Kohlenhydrate."
+      "answer": "Ein Riegel (18,2g) enthält rund 10g Kohlenhydrate, davon der größte Teil als Zucker. Pro 100g sind es 56g Kohlenhydrate."
     },
     {
       "question": "Wie viel Zucker steckt in Duplo?",
-      "answer": "Duplo besteht zu einem großen Teil aus Zucker. Pro 100g sind es rund 51g Zucker, pro Riegel etwa 9g."
+      "answer": "Duplo besteht zu einem großen Teil aus Zucker. Pro 100g sind es rund 50g Zucker, pro Riegel etwa 9g."
     },
     {
       "question": "Wie viel Protein hat ein Duplo?",
-      "answer": "Der Eiweißgehalt ist gering: Ein Riegel liefert etwa 1g Protein, pro 100g sind es rund 6,8g."
+      "answer": "Der Eiweißgehalt ist gering: Ein Riegel liefert etwa 1g Protein, pro 100g sind es 6,1g."
     },
     {
       "question": "Ist Duplo zum Abnehmen geeignet?",
-      "answer": "Duplo ist sehr energiedicht und liefert kaum sättigende Nährstoffe. Als seltener, fest eingeplanter Genuss-Snack ist ein einzelner Riegel mit 98 kcal aber gut mit einer Diät vereinbar."
+      "answer": "Duplo ist sehr energiedicht und liefert kaum sättigende Nährstoffe. Als seltener, fest eingeplanter Genuss-Snack ist ein einzelner Riegel mit 100 kcal aber gut mit einer Diät vereinbar."
     },
     {
       "question": "Ist Duplo gesund?",

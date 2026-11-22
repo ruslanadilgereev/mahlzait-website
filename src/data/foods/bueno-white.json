@@ -3,9 +3,16 @@
   "name": "Bueno White",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, kinder bueno White (https://www.kinder.com/de/de/kinder-bueno-white, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "kinder bueno White",
+    "url": "https://www.kinder.com/de/de/kinder-bueno-white",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Bueno White Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kinder Bueno White? Ein Riegel (39g) hat ca. 236 kcal. Nährwerte pro 100g, pro Stück und je Portion im Überblick.",
+    "description": "Wie viele Kalorien hat Kinder Bueno White? Ein Riegel (19,5g) hat ca. 111 kcal, eine Packung (39g) 223 kcal. Nährwerte pro 100g und je Portion im Überblick.",
     "keywords": [
       "bueno white kalorien",
       "bueno white kcal",
@@ -17,97 +24,93 @@
   },
   "overview": {
     "calories_per_100g": 571,
-    "protein_per_100g": 8.4,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 39,
-    "fiber_per_100g": 2.5,
+    "protein_per_100g": 8.5,
+    "carbs_per_100g": 53,
+    "fat_per_100g": 35.9,
+    "fiber_per_100g": null,
     "typical_portion_g": 39,
-    "typical_portion_name": "1 Riegel (Packung 39g)"
+    "typical_portion_name": "1 Packung (2 Riegel, 39g)"
   },
   "variants": [
     {
-      "name": "Ein Finger (19,5g)",
+      "name": "1 Riegel (19,5g)",
       "portion_g": 19.5,
       "calories": 111,
-      "protein": 1.6,
-      "carbs": 10.1,
-      "fat": 7.6,
+      "protein": 1.7,
+      "carbs": 10.3,
+      "fat": 7,
       "tip": "Eine der beiden Stangen"
     },
     {
-      "name": "1 Riegel / Packung (39g)",
+      "name": "1 Packung (2 Riegel, 39g)",
       "portion_g": 39,
       "calories": 223,
       "protein": 3.3,
-      "carbs": 20.3,
-      "fat": 15.2,
+      "carbs": 20.7,
+      "fat": 14,
       "tip": "Standard-Portion"
     },
     {
-      "name": "2 Riegel (78g)",
+      "name": "2 Packungen (78g)",
       "portion_g": 78,
       "calories": 445,
       "protein": 6.6,
-      "carbs": 40.6,
-      "fat": 30.4
-    },
-    {
-      "name": "Mini-Riegel (ca. 12g)",
-      "portion_g": 12,
-      "calories": 69,
-      "protein": 1,
-      "carbs": 6.2,
-      "fat": 4.7,
-      "tip": "Aus der Mini-Mix-Tüte"
-    },
-    {
-      "name": "Halber Riegel (19,5g)",
-      "portion_g": 19.5,
-      "calories": 111,
-      "protein": 1.6,
-      "carbs": 10.1,
-      "fat": 7.6
+      "carbs": 41.3,
+      "fat": 28
     },
     {
       "name": "100 g",
       "portion_g": 100,
       "calories": 571,
-      "protein": 8.4,
-      "carbs": 52,
-      "fat": 39
+      "protein": 8.5,
+      "carbs": 53,
+      "fat": 35.9
     }
   ],
   "comparison": [
     {
-      "name": "Kinderriegel",
-      "calories": 566,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Duplo",
-      "calories": 565,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Schokolade (Vollmilch)",
+      "name": "Vollmilchschokolade (100g)",
       "calories": 535,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Hanuta",
-      "calories": 540,
-      "emoji": "🍫"
+      "name": "Weiße Schokolade (100g)",
+      "calories": 539,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 167571,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "KitKat (100g)",
+      "calories": 518,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hoher Fettanteil beachten",
-      "text": "Bueno White besteht zu rund 39 % aus Fett. Das macht den Riegel mit 571 kcal pro 100g sehr energiedicht – eine kleine Menge liefert viele Kalorien.",
+      "text": "Bueno White besteht zu rund 36 % aus Fett. Das macht den Riegel mit 571 kcal pro 100g sehr energiedicht, eine kleine Menge liefert viele Kalorien.",
       "icon": "⚠️"
     },
     {
       "title": "Eine Stange als Portion",
-      "text": "Wer naschen, aber Kalorien sparen möchte, isst nur einen der beiden Finger (ca. 118 kcal) und hebt den zweiten für später auf.",
+      "text": "Wer naschen, aber Kalorien sparen möchte, isst nur einen der beiden Riegel (ca. 111 kcal) und hebt den zweiten für später auf.",
       "icon": "✂️"
     },
     {
@@ -117,31 +120,31 @@
     },
     {
       "title": "Wenig Sättigung",
-      "text": "Mit nur 8,4g Protein und 2,5g Ballaststoffen pro 100g sättigt Bueno White kaum. Als Snack zum Sattwerden ist Obst oder Joghurt die bessere Wahl.",
+      "text": "Mit nur 8,5g Protein pro 100g sättigt Bueno White kaum. Als Snack zum Sattwerden ist Obst oder Joghurt die bessere Wahl.",
       "icon": "🍎"
     },
     {
       "title": "In die Tagesbilanz einplanen",
-      "text": "Ein Riegel (236 kcal) lässt sich gut in eine ausgewogene Ernährung integrieren – tracke ihn einfach mit und gleiche ihn über den Tag aus.",
+      "text": "Eine Packung (223 kcal) lässt sich gut in eine ausgewogene Ernährung integrieren, tracke sie einfach mit und gleiche sie über den Tag aus.",
       "icon": "📊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kinder Bueno White?",
-      "answer": "Ein Riegel (eine Packung, 39g) hat ca. 236 kcal. Pro 100g sind es 571 kcal."
+      "answer": "Eine Packung (2 Riegel, 39g) hat ca. 223 kcal, ein Riegel (19,5g) laut Hersteller 111 kcal. Pro 100g sind es 571 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein einzelner Finger Bueno White?",
-      "answer": "Eine der beiden Stangen wiegt etwa 19,5g und hat rund 118 kcal."
+      "answer": "Ein einzelner Riegel wiegt 19,5g und hat laut Hersteller 111 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bueno White?",
-      "answer": "Bueno White enthält 52g Kohlenhydrate pro 100g, davon viel Zucker. Ein Riegel (39g) liefert ca. 20g Kohlenhydrate."
+      "answer": "Bueno White enthält 53g Kohlenhydrate pro 100g, davon 43,9g Zucker. Eine Packung (39g) liefert ca. 21g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Bueno White?",
-      "answer": "Der Eiweißgehalt ist mit 8,4g pro 100g gering. Ein Riegel liefert etwa 3,3g Protein."
+      "answer": "Der Eiweißgehalt ist mit 8,5g pro 100g gering. Eine Packung liefert etwa 3,3g Protein."
     },
     {
       "question": "Ist Bueno White zum Abnehmen geeignet?",

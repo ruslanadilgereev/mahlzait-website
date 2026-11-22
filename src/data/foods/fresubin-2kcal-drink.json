@@ -3,6 +3,13 @@
   "name": "Fresubin 2 kcal Drink",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "Herstellerangabe Fresenius Kabi Deutschland, Fresubin 2 kcal Drink (https://www.fresenius-kabi.com/content/dam/fresenius-kabi/de/products/product-documents/klinische-ernaehrung/enterale-ernaehrung/trinknahrung-und-orale-supplemente/fresubin-2-kcal-drink/Datenblatt_LMIV_Fresubin-2-KCAL-Drink_2026-mit-KP.pdf.coredownload.inline.pdf, abgerufen am 22.11.2026), Werte je 100 ml; Produktinformation Version 07, Februar 2026; Werte gleich für alle Geschmacksrichtungen (nur der Zucker unterscheidet sich)",
+  "hersteller": {
+    "name": "Fresenius Kabi Deutschland",
+    "produkt": "Fresubin 2 kcal Drink",
+    "url": "https://www.fresenius-kabi.com/content/dam/fresenius-kabi/de/products/product-documents/klinische-ernaehrung/enterale-ernaehrung/trinknahrung-und-orale-supplemente/fresubin-2-kcal-drink/Datenblatt_LMIV_Fresubin-2-KCAL-Drink_2026-mit-KP.pdf.coredownload.inline.pdf",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Fresubin 2 kcal Drink Kalorien: Nährwerte | Mahlzait",
     "description": "Wie viele Kalorien hat Fresubin 2 kcal Drink? 200 kcal pro 100 ml, eine Flasche (200 ml) liefert 400 kcal. Nährwerte, Protein & Tipps im Überblick.",
@@ -22,7 +29,8 @@
     "fat_per_100g": 7.8,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
-    "typical_portion_name": "1 Flasche (200 ml)"
+    "typical_portion_name": "1 Flasche (200 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
@@ -79,24 +87,48 @@
   ],
   "comparison": [
     {
-      "name": "Fresubin Vanille",
-      "calories": 150,
-      "emoji": "🥤"
+      "name": "Fresubin ENERGY Drink (200 ml)",
+      "calories": 300,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "fresubin"
+        }
+      ]
     },
     {
-      "name": "Almased",
-      "calories": 359,
-      "emoji": "🥤"
+      "name": "Almased-Shake mit Milch 1,5 % (50 g + 200 ml)",
+      "calories": 269,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "almased",
+          "variante": "Shake mit fettarmer Milch 1,5 % (50 g + 200 ml)"
+        }
+      ]
     },
     {
-      "name": "Proteinshake",
-      "calories": 65,
-      "emoji": "🥤"
+      "name": "Eiweißshake fertig (250 ml)",
+      "calories": 165,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "eiweissshake",
+          "variante": "Glas trinkfertig (250 ml)"
+        }
+      ]
     },
     {
-      "name": "Milch (3,5%)",
-      "calories": 64,
-      "emoji": "🥛"
+      "name": "Milch 3,5 % (200 ml)",
+      "calories": 126,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch",
+          "ml": 200,
+          "g": 206
+        }
+      ]
     }
   ],
   "tips": [

@@ -3,6 +3,13 @@
   "name": "Knoppers NussRiegel",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe August Storck, Knoppers NussRiegel (https://www.storck.com/de/marken/knoppers/naehrwertinformationen/product/knoppers-nussriegel-1er, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "August Storck",
+    "produkt": "Knoppers NussRiegel",
+    "url": "https://www.storck.com/de/marken/knoppers/naehrwertinformationen/product/knoppers-nussriegel-1er",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Knoppers NussRiegel Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Knoppers NussRiegel? Ein Riegel (40g) hat ca. 212 kcal. Nährwerte pro 100g & Portion, Eiweiß, Kohlenhydrate & Diät-Tipps.",
@@ -20,7 +27,7 @@
     "protein_per_100g": 8.4,
     "carbs_per_100g": 52.2,
     "fat_per_100g": 31.6,
-    "fiber_per_100g": 2.4,
+    "fiber_per_100g": null,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Riegel (40g)"
   },
@@ -78,24 +85,37 @@
   ],
   "comparison": [
     {
-      "name": "Knoppers Original (25g)",
-      "calories": 137,
-      "emoji": "🧇"
-    },
-    {
-      "name": "Kinderriegel (21g)",
-      "calories": 118,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Balisto (18,5g)",
-      "calories": 95,
-      "emoji": "🍫"
-    },
-    {
       "name": "Snickers (50g)",
-      "calories": 245,
-      "emoji": "🥜"
+      "calories": 246,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "snickers",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Twix (2 Riegel, 50g)",
+      "calories": 251,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "KitKat (4 Finger, 41,5g)",
+      "calories": 215,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat",
+          "g": 41.5
+        }
+      ]
     }
   ],
   "tips": [

@@ -3,6 +3,13 @@
   "name": "Haribo Roulette",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe HARIBO, Roulette (https://www.haribo.com/de-de/produkte/haribo/roulette, abgerufen am 22.11.2026), Werte je 100 g; Fett laut Hersteller unter 0,5 g, hier 0 g",
+  "hersteller": {
+    "name": "HARIBO",
+    "produkt": "Roulette",
+    "url": "https://www.haribo.com/de-de/produkte/haribo/roulette",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Haribo Roulette Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Haribo Roulette? Eine Rolle (25g) hat ca. 86 kcal. Nährwerte pro 100g & pro Rolle, Kohlenhydrate, Zucker und Diät-Tipps.",
@@ -19,8 +26,8 @@
     "calories_per_100g": 343,
     "protein_per_100g": 6.9,
     "carbs_per_100g": 77,
-    "fat_per_100g": 0.5,
-    "fiber_per_100g": 0,
+    "fat_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 25,
     "typical_portion_name": "1 Rolle (25g)"
   },
@@ -40,15 +47,15 @@
       "calories": 43,
       "protein": 0.9,
       "carbs": 9.6,
-      "fat": 0.1
+      "fat": 0
     },
     {
       "name": "1 Rolle (25g)",
       "portion_g": 25,
       "calories": 86,
       "protein": 1.7,
-      "carbs": 19.2,
-      "fat": 0.1,
+      "carbs": 19.3,
+      "fat": 0,
       "tip": "Standard-Gebinde"
     },
     {
@@ -57,7 +64,7 @@
       "calories": 172,
       "protein": 3.5,
       "carbs": 38.5,
-      "fat": 0.2
+      "fat": 0
     },
     {
       "name": "Pro 100g",
@@ -65,7 +72,7 @@
       "calories": 343,
       "protein": 6.9,
       "carbs": 77,
-      "fat": 0.5
+      "fat": 0
     },
     {
       "name": "Vorratsbeutel (200g)",
@@ -73,30 +80,43 @@
       "calories": 686,
       "protein": 13.8,
       "carbs": 154,
-      "fat": 1,
+      "fat": 0,
       "tip": "Ganze Packung"
     }
   ],
   "comparison": [
     {
-      "name": "Gummibärchen",
+      "name": "Haribo Goldbären (25g)",
       "calories": 86,
-      "emoji": "🐻"
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "haribo",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Traubenzucker",
-      "calories": 95,
-      "emoji": "🍬"
+      "name": "Lakritz (25g)",
+      "calories": 99,
+      "emoji": "🖤",
+      "basis": [
+        {
+          "slug": "lakritz",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Lakritz",
-      "calories": 90,
-      "emoji": "🖤"
-    },
-    {
-      "name": "Schokolade",
-      "calories": 133,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
@@ -107,7 +127,7 @@
     },
     {
       "title": "Fast fettfrei, aber zuckerreich",
-      "text": "Roulette enthält praktisch kein Fett, dafür aber 77g Kohlenhydrate pro 100g, fast ausschließlich Zucker. Die Kalorien kommen also nahezu komplett aus Zucker.",
+      "text": "Roulette enthält praktisch kein Fett, dafür aber 77g Kohlenhydrate pro 100g, davon 46g Zucker. Die Kalorien kommen also nahezu komplett aus Kohlenhydraten.",
       "icon": "🍭"
     },
     {
@@ -137,7 +157,7 @@
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in Roulette?",
-      "answer": "Pro 100g enthält Roulette etwa 77g Kohlenhydrate, fast ausschließlich Zucker. Eine Rolle (25g) bringt es auf rund 19g Kohlenhydrate."
+      "answer": "Pro 100g enthält Roulette 77g Kohlenhydrate, davon 46g Zucker. Eine Rolle (25g) bringt es auf rund 19g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß und Fett hat Roulette?",

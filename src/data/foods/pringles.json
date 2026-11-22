@@ -3,9 +3,16 @@
   "name": "Pringles",
   "emoji": "🥔",
   "category": "supermarkt",
+  "source": "Herstellerangabe Kellanova (Pringles), Pringles Original (https://www.pringles.com/de/products/flavours/pringles-original-product.html, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Kellanova (Pringles)",
+    "produkt": "Pringles Original",
+    "url": "https://www.pringles.com/de/products/flavours/pringles-original-product.html",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Pringles Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Pringles? 100g Pringles Original haben 534 kcal, eine 30g-Portion etwa 160 kcal. Nährwerte, ganze Dose & Vergleich im Überblick.",
+    "description": "Wie viele Kalorien hat Pringles? 100g Pringles Original haben 528 kcal, eine 30g-Portion etwa 158 kcal. Nährwerte, ganze Dose & Vergleich im Überblick.",
     "keywords": [
       "kcal pringles",
       "pringles kalorien",
@@ -16,11 +23,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 534,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 33,
-    "fiber_per_100g": 3.5,
+    "calories_per_100g": 528,
+    "protein_per_100g": 6.2,
+    "carbs_per_100g": 54,
+    "fat_per_100g": 31,
+    "fiber_per_100g": 4.1,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Handvoll (ca. 30g)"
   },
@@ -36,95 +43,127 @@
     {
       "name": "1 Handvoll (30g)",
       "portion_g": 30,
-      "calories": 160,
-      "protein": 1.2,
-      "carbs": 15,
-      "fat": 9.9,
+      "calories": 158,
+      "protein": 1.9,
+      "carbs": 16.2,
+      "fat": 9.3,
       "tip": "Standard-Snackportion"
     },
     {
       "name": "Kleine Portion (50g)",
       "portion_g": 50,
-      "calories": 267,
-      "protein": 2,
-      "carbs": 25,
-      "fat": 16.5
+      "calories": 264,
+      "protein": 3.1,
+      "carbs": 27,
+      "fat": 15.5
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 534,
-      "protein": 4,
-      "carbs": 50,
-      "fat": 33
+      "calories": 528,
+      "protein": 6.2,
+      "carbs": 54,
+      "fat": 31
+    },
+    {
+      "name": "Mini-Dose (40g)",
+      "portion_g": 40,
+      "calories": 211,
+      "protein": 2.5,
+      "carbs": 21.6,
+      "fat": 12.4
+    },
+    {
+      "name": "Kleine Dose (70g)",
+      "portion_g": 70,
+      "calories": 370,
+      "protein": 4.3,
+      "carbs": 37.8,
+      "fat": 21.7
     },
     {
       "name": "Halbe Dose (ca. 82g)",
       "portion_g": 82,
-      "calories": 438,
-      "protein": 3.3,
-      "carbs": 41,
-      "fat": 27.1
+      "calories": 433,
+      "protein": 5.1,
+      "carbs": 44.3,
+      "fat": 25.4
     },
     {
       "name": "Ganze Dose Original (165g)",
       "portion_g": 165,
-      "calories": 881,
-      "protein": 6.6,
-      "carbs": 82.5,
-      "fat": 54.5,
+      "calories": 871,
+      "protein": 10.2,
+      "carbs": 89.1,
+      "fat": 51.2,
       "tip": "Aktuelle Standarddose"
-    },
-    {
-      "name": "Ganze Dose groß (200g)",
-      "portion_g": 200,
-      "calories": 1068,
-      "protein": 8,
-      "carbs": 100,
-      "fat": 66
     }
   ],
   "comparison": [
     {
-      "name": "Chips (Kartoffel)",
-      "calories": 536,
-      "emoji": "🥔"
+      "name": "Kartoffelchips (100g)",
+      "calories": 532,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Salzstangen",
-      "calories": 374,
-      "emoji": "🥨"
+      "name": "Salzstangen (100g)",
+      "calories": 384,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "salzstangen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Popcorn (gesalzen)",
-      "calories": 479,
-      "emoji": "🍿"
+      "name": "Popcorn (100g)",
+      "calories": 382,
+      "emoji": "🍿",
+      "basis": [
+        {
+          "slug": "popcorn",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Cracker",
-      "calories": 430,
-      "emoji": "🍘"
+      "name": "Cracker (100g)",
+      "calories": 510,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "cracker",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion abfüllen statt aus der Dose essen",
-      "text": "Aus der Dose isst man leicht 100g und mehr (über 530 kcal). Fülle dir lieber eine Handvoll (30g, ca. 160 kcal) in eine Schale.",
+      "text": "Aus der Dose isst man leicht 100g und mehr (über 520 kcal). Fülle dir lieber eine Handvoll (30g, ca. 158 kcal) in eine Schale.",
       "icon": "🥣"
     },
     {
       "title": "Fettreich, aber kein Sättiger",
-      "text": "Mit 33g Fett pro 100g liefern Pringles viele Kalorien, sättigen aber kaum. Zu einem Getränk und etwas Gemüse kombinieren, das bremst den Appetit.",
+      "text": "Mit 31g Fett pro 100g liefern Pringles viele Kalorien, sättigen aber kaum. Zu einem Getränk und etwas Gemüse kombinieren, das bremst den Appetit.",
       "icon": "🥒"
     },
     {
       "title": "Ganze Dose hat es in sich",
-      "text": "Eine komplette 165g-Dose bringt rund 881 kcal auf den Teller, fast die Hälfte des Tagesbedarfs vieler Menschen. Bewusst genießen.",
+      "text": "Eine komplette 165g-Dose bringt rund 871 kcal auf den Teller, fast die Hälfte des Tagesbedarfs vieler Menschen. Bewusst genießen.",
       "icon": "📦"
     },
     {
       "title": "Salzgehalt im Blick behalten",
-      "text": "Pringles enthalten relativ viel Salz (ca. 1,4g pro 100g). Wer auf den Blutdruck achtet, sollte die Menge begrenzen.",
+      "text": "Pringles enthalten relativ viel Salz (1,0g pro 100g). Wer auf den Blutdruck achtet, sollte die Menge begrenzen.",
       "icon": "🧂"
     },
     {
@@ -136,27 +175,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Pringles?",
-      "answer": "Pringles Original haben 534 kcal pro 100g. Eine typische Handvoll (30g) liefert etwa 160 kcal, eine ganze 165g-Dose rund 881 kcal."
+      "answer": "Pringles Original haben laut Hersteller 528 kcal pro 100g. Eine typische Handvoll (30g) liefert etwa 158 kcal, eine ganze 165g-Dose rund 871 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Dose Pringles?",
-      "answer": "Die aktuelle Standarddose mit 165g enthält etwa 881 kcal. Größere 200g-Dosen kommen auf rund 1068 kcal."
+      "answer": "Die Standarddose mit 165g enthält etwa 871 kcal. Die kleinere 70g-Dose kommt auf rund 370 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Pringles?",
-      "answer": "Pringles enthalten etwa 50g Kohlenhydrate pro 100g, davon rund 2,5g Zucker. Eine 30g-Portion liefert ungefähr 15g Kohlenhydrate."
+      "answer": "Pringles enthalten 54g Kohlenhydrate pro 100g, davon nur 0,9g Zucker. Eine 30g-Portion liefert ungefähr 16g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Pringles?",
-      "answer": "Mit nur 4g Eiweiß pro 100g sind Pringles keine nennenswerte Proteinquelle. Eine 30g-Portion enthält etwa 1,2g Protein."
+      "answer": "Mit nur 6,2g Eiweiß pro 100g sind Pringles keine nennenswerte Proteinquelle. Eine 30g-Portion enthält etwa 1,9g Protein."
     },
     {
       "question": "Sind Pringles zum Abnehmen geeignet?",
-      "answer": "Pringles sind sehr energiedicht (534 kcal/100g) und fettreich, sättigen aber kaum. Zum Abnehmen sind sie nur in kleinen, abgezählten Portionen sinnvoll."
+      "answer": "Pringles sind sehr energiedicht (528 kcal/100g) und fettreich, sättigen aber kaum. Zum Abnehmen sind sie nur in kleinen, abgezählten Portionen sinnvoll."
     },
     {
       "question": "Sind Pringles gesund?",
-      "answer": "Pringles sind ein Genuss-Snack mit viel Fett und Salz, aber wenig Ballaststoffen und Eiweiß. In Maßen sind sie okay, als regelmäßige Mahlzeit jedoch ungeeignet."
+      "answer": "Pringles sind ein Genuss-Snack mit viel Fett und Salz, aber wenig Eiweiß. In Maßen sind sie okay, als regelmäßige Mahlzeit jedoch ungeeignet."
     }
   ],
   "related_foods": [

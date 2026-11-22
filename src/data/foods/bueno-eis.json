@@ -3,9 +3,16 @@
   "name": "Bueno Eis",
   "emoji": "🍦",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, kinder Bueno Eis (https://www.ferrero-eis.de/kinder-bueno-eis, abgerufen am 22.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "kinder Bueno Eis",
+    "url": "https://www.ferrero-eis.de/kinder-bueno-eis",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Bueno Eis Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Bueno Eis? Ein Stick (31g) hat ca. 119 kcal. Nährwerte pro 100g & pro Riegel plus Vergleich und Tipps.",
+    "description": "Wie viele Kalorien hat Bueno Eis? Ein Stück (90 ml) hat ca. 220 kcal. Nährwerte pro 100 ml & pro Stück plus Vergleich und Tipps.",
     "keywords": [
       "bueno eis kalorien",
       "bueno eis kcal",
@@ -16,98 +23,103 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 384,
-    "protein_per_100g": 5.4,
-    "carbs_per_100g": 31,
-    "fat_per_100g": 26,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 31,
-    "typical_portion_name": "1 Eis-Stick (31g)"
+    "calories_per_100g": 244,
+    "protein_per_100g": 4.6,
+    "carbs_per_100g": 24.2,
+    "fat_per_100g": 14,
+    "fiber_per_100g": null,
+    "typical_portion_g": 90,
+    "typical_portion_name": "1 Stück (90 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
-      "name": "1 Eis-Stick (31g)",
-      "portion_g": 31,
-      "calories": 119,
-      "protein": 1.7,
-      "carbs": 9.6,
-      "fat": 8.1,
+      "name": "1 Stück (90 ml)",
+      "portion_g": 90,
+      "calories": 220,
+      "protein": 4.1,
+      "carbs": 21.8,
+      "fat": 12.6,
       "tip": "Standard-Portion"
     },
     {
-      "name": "1/2 Eis-Stick (15.5g)",
-      "portion_g": 15.5,
-      "calories": 60,
-      "protein": 0.8,
-      "carbs": 4.8,
-      "fat": 4
+      "name": "1/2 Stück (45 ml)",
+      "portion_g": 45,
+      "calories": 110,
+      "protein": 2.1,
+      "carbs": 10.9,
+      "fat": 6.3
     },
     {
-      "name": "2 Eis-Sticks (62g)",
-      "portion_g": 62,
-      "calories": 238,
-      "protein": 3.3,
-      "carbs": 19.2,
-      "fat": 16.1
+      "name": "2 Stück (180 ml)",
+      "portion_g": 180,
+      "calories": 439,
+      "protein": 8.3,
+      "carbs": 43.6,
+      "fat": 25.2
     },
     {
-      "name": "Multipack 4 Sticks (124g)",
-      "portion_g": 124,
-      "calories": 476,
-      "protein": 6.7,
-      "carbs": 38.4,
-      "fat": 32.2,
+      "name": "Multipack 4 Stück (360 ml)",
+      "portion_g": 360,
+      "calories": 878,
+      "protein": 16.6,
+      "carbs": 87.1,
+      "fat": 50.4,
       "tip": "Ganze Packung"
     },
     {
-      "name": "pro 100g",
+      "name": "pro 100 ml",
       "portion_g": 100,
-      "calories": 384,
-      "protein": 5.4,
-      "carbs": 31,
-      "fat": 26
-    },
-    {
-      "name": "Bueno Eis Sandwich (ca. 40g)",
-      "portion_g": 40,
-      "calories": 154,
-      "protein": 2.2,
-      "carbs": 12.4,
-      "fat": 10.4,
-      "tip": "Variante mit Waffel"
+      "calories": 244,
+      "protein": 4.6,
+      "carbs": 24.2,
+      "fat": 14
     }
   ],
   "comparison": [
     {
-      "name": "Magnum Eis",
-      "calories": 244,
-      "emoji": "🍫"
+      "name": "Vanilleeis (1 Kugel, 75g)",
+      "calories": 155,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "eis-vanille",
+          "g": 75
+        }
+      ]
     },
     {
-      "name": "Snickers Eis",
-      "calories": 200,
-      "emoji": "🥜"
+      "name": "Softeis (1 Portion, 75g)",
+      "calories": 167,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "softeis",
+          "g": 75
+        }
+      ]
     },
     {
-      "name": "Eis Vanille",
-      "calories": 100,
-      "emoji": "🍦"
-    },
-    {
-      "name": "Wassereis",
+      "name": "Wassereis (1 Stiel, 50g)",
       "calories": 40,
-      "emoji": "🧊"
+      "emoji": "🧊",
+      "basis": [
+        {
+          "fdcId": 168813,
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kleine Portion, klarer Genuss",
-      "text": "Ein einzelner Bueno Eis-Stick hat mit ca. 119 kcal eine überschaubare Portionsgröße. Wer bei einem Stick bleibt, hält den Eis-Genuss kalorisch gut im Rahmen.",
+      "text": "Ein einzelnes kinder Bueno Eis (90 ml) hat mit rund 220 kcal eine überschaubare Portionsgröße. Wer bei einem Stück bleibt, hält den Eis-Genuss kalorisch gut im Rahmen.",
       "icon": "🍦"
     },
     {
       "title": "Fett ist der Hauptkalorienlieferant",
-      "text": "Mit 26g Fett pro 100g stammt der Großteil der Kalorien aus Fett. Das macht Bueno Eis cremig, aber auch energiedicht - bewusst genießen statt nebenbei naschen.",
+      "text": "Mit 14g Fett pro 100 ml stammt gut die Hälfte der Kalorien aus Fett. Das macht Bueno Eis cremig, aber auch energiedicht, bewusst genießen statt nebenbei naschen.",
       "icon": "🧈"
     },
     {
@@ -117,7 +129,7 @@
     },
     {
       "title": "Im Tagesbudget einplanen",
-      "text": "Ein Stick passt gut in eine ausgewogene Ernährung, wenn du die rund 119 kcal in dein Tagesbudget einrechnest. Eine Kalorienzähler-App hilft dir dabei.",
+      "text": "Ein Stück passt gut in eine ausgewogene Ernährung, wenn du die rund 220 kcal in dein Tagesbudget einrechnest. Eine Kalorienzähler-App hilft dir dabei.",
       "icon": "📊"
     },
     {
@@ -129,23 +141,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Bueno Eis?",
-      "answer": "Ein Bueno Eis-Stick (31g) hat laut Herstellerangabe ca. 119 kcal. Pro 100g sind es rund 384 kcal."
+      "answer": "Ein kinder Bueno Eis (1 Stück, 90 ml) hat laut Herstellerangabe rund 220 kcal. Pro 100 ml sind es 244 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Bueno Eis-Stick?",
-      "answer": "Ein einzelner Stick wiegt etwa 31g und liefert rund 119 kcal. Eine ganze 4er-Packung kommt auf ca. 476 kcal."
+      "answer": "Ein einzelnes Stück hat 90 ml und liefert rund 220 kcal. Eine ganze 4er-Packung kommt auf ca. 878 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bueno Eis?",
-      "answer": "Bueno Eis enthält pro 100g etwa 31g Kohlenhydrate, davon rund 28g Zucker. Ein Stick (31g) hat damit ca. 9,6g Kohlenhydrate."
+      "answer": "Bueno Eis enthält pro 100 ml etwa 24g Kohlenhydrate, davon rund 18g Zucker. Ein Stück (90 ml) hat damit ca. 22g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Bueno Eis?",
-      "answer": "Der Eiweißgehalt liegt bei etwa 5,4g pro 100g, also rund 1,7g pro Stick. Bueno Eis ist damit keine relevante Eiweißquelle."
+      "answer": "Der Eiweißgehalt liegt bei etwa 4,6g pro 100 ml, also rund 4,1g pro Stück. Bueno Eis ist damit keine relevante Eiweißquelle."
     },
     {
       "question": "Ist Bueno Eis zum Abnehmen geeignet?",
-      "answer": "Mit 384 kcal pro 100g ist Bueno Eis recht energiedicht. Als gelegentlicher Genuss in einer kalorienbewussten Ernährung ist ein einzelner Stick aber gut einplanbar."
+      "answer": "Mit 244 kcal pro 100 ml ist Bueno Eis recht energiedicht. Als gelegentlicher Genuss in einer kalorienbewussten Ernährung ist ein einzelnes Stück aber gut einplanbar."
     },
     {
       "question": "Ist Bueno Eis gesund?",

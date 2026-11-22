@@ -3,9 +3,16 @@
   "name": "Cola Zero",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "Herstellerangabe Coca-Cola Deutschland, Coca-Cola Zero Sugar (https://www.coca-cola.com/de/de/brands/coca-cola-zero-sugar, abgerufen am 22.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Coca-Cola Deutschland",
+    "produkt": "Coca-Cola Zero Sugar",
+    "url": "https://www.coca-cola.com/de/de/brands/coca-cola-zero-sugar",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Cola Zero Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Cola Zero? Quasi 0 kcal pro 100 ml und 0 g Zucker. Nährwerte pro 100 ml & Dose, Vergleich mit normaler Cola und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Cola Zero? Laut Hersteller 0,2 kcal pro 100 ml und 0 g Zucker. Nährwerte pro 100 ml & Dose, Vergleich mit normaler Cola und Diät-Tipps.",
     "keywords": [
       "cola zero kcal",
       "cola zero kalorien",
@@ -21,9 +28,10 @@
     "protein_per_100g": 0,
     "carbs_per_100g": 0,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 330,
-    "typical_portion_name": "1 Dose (330 ml)"
+    "typical_portion_name": "1 Dose (330 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
@@ -86,35 +94,55 @@
   ],
   "comparison": [
     {
-      "name": "Cola (normal)",
-      "calories": 139,
-      "emoji": "🥤"
+      "name": "Cola (normal, 0,33 l)",
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
-      "name": "Fanta",
-      "calories": 125,
-      "emoji": "🍊"
+      "name": "Sprite (0,33 l)",
+      "calories": 138,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "sprite"
+        }
+      ]
     },
     {
-      "name": "Apfelsaft",
-      "calories": 152,
-      "emoji": "🧃"
+      "name": "Apfelsaft (250 ml)",
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft"
+        }
+      ]
     },
     {
-      "name": "Mineralwasser",
+      "name": "Mineralwasser (0,5 l)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Praktisch kalorienfrei",
-      "text": "Cola Zero enthält mit rund 0,2 kcal pro 100 ml so gut wie keine Kalorien. Auch eine ganze Dose (330 ml) liegt unter 1 kcal und fällt in der Tagesbilanz nicht ins Gewicht.",
+      "text": "Cola Zero enthält laut Hersteller nur 0,2 kcal pro 100 ml und damit so gut wie keine Kalorien. Auch eine ganze Dose (330 ml) liegt unter 1 kcal und fällt in der Tagesbilanz nicht ins Gewicht.",
       "icon": "🥤"
     },
     {
       "title": "Süße ohne Zucker",
-      "text": "Den süßen Geschmack liefern die Süßstoffe Aspartam und Acesulfam-K statt Zucker. Im Vergleich zur normalen Cola sparst du pro Dose etwa 35 g Zucker und rund 139 kcal.",
+      "text": "Den süßen Geschmack liefern Süßungsmittel (Cyclamat, Acesulfam K, Aspartam und Steviolglycoside) statt Zucker. Im Vergleich zu einer normalen Cola (0,33 l, ca. 145 kcal) sparst du pro Dose rund 144 kcal.",
       "icon": "🍬"
     },
     {
@@ -124,7 +152,7 @@
     },
     {
       "title": "Koffein beachten",
-      "text": "Cola Zero enthält wie die klassische Cola etwa 9,6 mg Koffein pro 100 ml, also rund 32 mg pro Dose. Am späten Abend kann das den Schlaf stören.",
+      "text": "Cola Zero enthält wie die klassische Cola Koffein. Am späten Abend kann das den Schlaf stören.",
       "icon": "☕"
     },
     {
@@ -136,11 +164,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Cola Zero?",
-      "answer": "Cola Zero hat etwa 0,2 kcal pro 100 ml und ist damit praktisch kalorienfrei. Eine Dose (330 ml) liegt unter 1 kcal."
+      "answer": "Cola Zero hat laut Hersteller 0,2 kcal pro 100 ml und ist damit praktisch kalorienfrei. Eine Dose (330 ml) liegt unter 1 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Cola Zero?",
-      "answer": "Cola Zero enthält 0 g Zucker. Die Süße stammt von den Süßstoffen Aspartam und Acesulfam-K. Eine normale Cola hat im Vergleich rund 10,6 g Zucker pro 100 ml."
+      "answer": "Cola Zero enthält 0 g Zucker. Die Süße stammt von Süßungsmitteln (Cyclamat, Acesulfam K, Aspartam und Steviolglycoside). Eine normale Cola ist dagegen stark gezuckert."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Cola Zero?",
