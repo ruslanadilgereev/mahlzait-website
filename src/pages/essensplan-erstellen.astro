@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
+import { calculatorPageConfig } from "utils/storeLinkConfigs";
 import EssensplanPage from "@modules/essensplan";
 
 const seo = {
@@ -147,12 +148,6 @@ const howToSchema = {
   ],
 };
 
-const homeConfig = {
-  ...defaultTemplateConfig,
-  privacyPolicy: { seo: defaultTemplateConfig.privacyPolicy.seo, content: "" },
-  cookiesPolicy: { seo: defaultTemplateConfig.cookiesPolicy.seo, content: "" },
-  termsAndConditions: { seo: defaultTemplateConfig.termsAndConditions.seo, content: "" },
-};
 ---
 
 <Layout {...defaultTemplateConfig} seo={seo}>
@@ -160,5 +155,5 @@ const homeConfig = {
   <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
-  <EssensplanPage client:load config={homeConfig} />
+  <EssensplanPage client:load config={calculatorPageConfig} />
 </Layout>

@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { calculatorPageConfig } from "utils/storeLinkConfigs";
 import MakrosPage from "@modules/makros";
 
 const seo = {
@@ -113,6 +113,6 @@ const authorPersonSchema = {
   <!-- HowTo Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(howToSchema)} />
 
-  <MakrosPage client:load config={configWithoutLegal} />
+  <MakrosPage client:load config={calculatorPageConfig} />
 </Layout>
 

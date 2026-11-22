@@ -8,6 +8,7 @@ type TrackingSource =
   | "hero"
   | "cta_banner"
   | "calculator"
+  | "food"
   | "wissen"
   | "footer"
   | "pricing"
@@ -26,21 +27,25 @@ interface TrackedLinkOptions {
  * Builds clean URLs from the App-ID constants (NOT from `templateConfig.*Link`,
  * because those carry default homepage UTMs and would produce duplicates that
  * the stores discard).
+ *
+ * Both stores get the same campaign token, e.g. "website_food": `ct` in the
+ * App Store, `utm_campaign` in the Google Play referrer (like the /go/ links).
  */
 export function getTrackedAppLink(options: TrackedLinkOptions): string {
   const { platform, source, campaign = "website" } = options;
+  // Apple allows at most 40 characters for the campaign token.
+  const token = `${campaign}_${source}`.slice(0, 40);
 
   if (platform === "ios") {
-    // Apple App Store: ct = campaign token (max 40 chars), pt = provider token.
-    const ct = `${campaign}_${source}`.slice(0, 40);
-    return `https://apps.apple.com/app/apple-store/${APP_STORE_ID}?pt=${APP_STORE_PT}&ct=${ct}&mt=8`;
+    // Apple App Store: ct = campaign token, pt = provider token.
+    return `https://apps.apple.com/app/apple-store/${APP_STORE_ID}?pt=${APP_STORE_PT}&ct=${token}&mt=8`;
   }
 
   // Google Play: ALL UTMs must be URL-encoded inside ONE `referrer=` parameter,
   // otherwise Play Store discards them and the app receives no install referrer.
   // Doku: https://developer.android.com/google/play/installreferrer
   const referrer = encodeURIComponent(
-    `utm_source=website&utm_medium=${source}&utm_campaign=${campaign}`
+    `utm_source=website&utm_medium=${source}&utm_campaign=${token}`
   );
   return `https://play.google.com/store/apps/details?id=${PLAY_STORE_ID}&referrer=${referrer}`;
 }

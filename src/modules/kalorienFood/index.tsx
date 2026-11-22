@@ -147,7 +147,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
           </header>
 
           {/* Interactive Calculator */}
-          <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-12">
+          <div className="card bg-base-100 shadow-xl max-w-2xl mx-auto mb-4">
             <div className="card-body p-6 md:p-8">
               <h2 className="card-title text-2xl mb-6">Kalorien berechnen</h2>
 
@@ -233,6 +233,35 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   ))}
                 </div>
               </div>
+            </div>
+          </div>
+
+          {/* App-Hinweis direkt unter der Kalorien-Antwort, kompakt. Stand vorher
+              erst nach FAQ und Artikeln, bei rund 80 % der Seitenlänge
+              (OpenSEO-Audit vom 22.11.2026). */}
+          <div className="max-w-2xl mx-auto mb-12 flex flex-col gap-3 rounded-2xl border border-primary/30 bg-primary/5 px-4 py-3 sm:flex-row sm:items-center">
+            <p className="flex-1 text-sm">
+              <span className="font-semibold">{food.name} tracken mit Mahlzait:</span> Foto machen
+              oder sagen, was du gegessen hast. Die App schätzt Kalorien und Nährwerte für dein
+              Tagebuch.
+            </p>
+            <div className="flex shrink-0 gap-2">
+              <a
+                href={config.appStoreLink}
+                className="btn btn-sm btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                App Store
+              </a>
+              <a
+                href={config.googlePlayLink}
+                className="btn btn-sm btn-outline btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Play
+              </a>
             </div>
           </div>
 
@@ -525,47 +554,22 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
             </div>
           </div>
 
-          {/* App CTA */}
-          <div className="card bg-primary text-primary-content shadow-xl max-w-2xl mx-auto mb-12">
-            <div className="card-body p-6 md:p-8 text-center">
-              <h2 className="text-2xl font-bold mb-2">{food.name} tracken mit Mahlzait</h2>
-              <p className="opacity-90 mb-4">
-                Fotografiere dein Essen und erhalte sofort alle Nährwerte. KI-gestützt, kostenlos, auf Deutsch.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-3 justify-center">
-                <a
-                  href={config.appStoreLink}
-                  className="btn btn-lg bg-white text-primary hover:bg-gray-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  🍎 App Store
+          {/* Der App-Hinweis steht oben unter dem Rechner; hier bleiben die
+              Links zum App-Vergleich. */}
+          <p className="max-w-2xl mx-auto mb-12 text-sm text-center opacity-80">
+            Du suchst noch die passende App?{" "}
+            <a href={comparisonHub} className="link link-primary font-semibold">
+              Kalorienzähler-Apps im Vergleich
+            </a>
+            {alternativeGuide && (
+              <>
+                {" · "}
+                <a href={alternativeGuide.href} className="link link-primary">
+                  {alternativeGuide.title}
                 </a>
-                <a
-                  href={config.googlePlayLink}
-                  className="btn btn-lg bg-white text-primary hover:bg-gray-100"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  🤖 Google Play
-                </a>
-              </div>
-              <p className="mt-5 text-sm opacity-90">
-                Du suchst noch die passende App?{" "}
-                <a href={comparisonHub} className="underline font-semibold">
-                  Kalorienzähler-Apps im Vergleich
-                </a>
-                {alternativeGuide && (
-                  <>
-                    {" · "}
-                    <a href={alternativeGuide.href} className="underline">
-                      {alternativeGuide.title}
-                    </a>
-                  </>
-                )}
-              </p>
-            </div>
-          </div>
+              </>
+            )}
+          </p>
           {/* Source Footer für Citability (OFF + USDA + Live-Web) */}
           <div className="max-w-2xl mx-auto mt-4 mb-12 text-xs opacity-60 text-center leading-relaxed">
             Quelle: Nährwerte basieren auf{" "}

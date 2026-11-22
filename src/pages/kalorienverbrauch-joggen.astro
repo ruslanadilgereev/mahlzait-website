@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { calculatorPageConfig } from "utils/storeLinkConfigs";
 import KalorienverbrauchJoggenPage from "@modules/joggen";
 
 const seo = {
@@ -79,5 +79,5 @@ const authorPersonSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(authorPersonSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
-  <KalorienverbrauchJoggenPage client:load config={configWithoutLegal} />
+  <KalorienverbrauchJoggenPage client:load config={calculatorPageConfig} />
 </Layout>

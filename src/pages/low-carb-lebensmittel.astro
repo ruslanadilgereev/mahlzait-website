@@ -2,6 +2,7 @@
 import Layout from "Layout.astro";
 import FoodListTable from "@components/FoodListTable.astro";
 import defaultTemplateConfig from "utils/config";
+import { foodPageConfig } from "utils/storeLinkConfigs";
 import { foodsByCarbsAsc } from "utils/foodData";
 
 const seo = {
@@ -99,7 +100,7 @@ const itemListSchema = {
     <section class="mt-10 rounded-2xl bg-base-200 p-6 text-center">
       <h2 class="text-xl font-bold mb-2">Kohlenhydrate im Blick behalten</h2>
       <p class="opacity-80 mb-4">Mit Mahlzait trackst du Kohlenhydrate, Eiweiß und Fett automatisch per Foto.</p>
-      <a href={defaultTemplateConfig.appStoreLink} class="btn btn-primary">App laden</a>
+      <a href={foodPageConfig.appStoreLink} class="btn btn-primary">App laden</a>
     </section>
   </main>
 </Layout>

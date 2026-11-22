@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { foodPageConfig } from "utils/storeLinkConfigs";
 import KalorienFoodPage from "@modules/kalorienFood";
 import { articlesMeta } from "@content/wissen";
 import { getCalculatorsForFood } from "utils/topicClusters";
@@ -262,7 +262,7 @@ const authorPersonSchema = {
 
   <KalorienFoodPage
     client:visible
-    config={configWithoutLegal}
+    config={foodPageConfig}
     food={food}
     relatedFoodsMeta={relatedFoodsMeta}
     relatedArticles={relatedArticles}

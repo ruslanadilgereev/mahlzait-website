@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { foodPageConfig } from "utils/storeLinkConfigs";
 import KalorienCategoryPage from "@modules/kalorienCategory";
 import { articlesMeta } from "@content/wissen";
 
@@ -237,7 +237,7 @@ const faqSchema = {
 
   <KalorienCategoryPage
     client:visible
-    config={configWithoutLegal}
+    config={foodPageConfig}
     category={category as string}
     categoryConfig={catConfig}
     foods={foods}

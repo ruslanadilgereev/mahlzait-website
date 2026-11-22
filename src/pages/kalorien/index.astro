@@ -1,7 +1,7 @@
 ---
 import Layout from "Layout.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { foodPageConfig } from "utils/storeLinkConfigs";
 import KalorienIndexPage from "@modules/kalorienIndex";
 
 const foodFiles = import.meta.glob("../../data/foods/*.json", { eager: true });
@@ -70,7 +70,7 @@ const itemListSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(itemListSchema)} />
 
-  <KalorienIndexPage client:load config={configWithoutLegal} foods={foods} />
+  <KalorienIndexPage client:load config={foodPageConfig} foods={foods} />
 
   <section class="max-w-screen-lg mx-auto px-4 py-10">
     <h2 class="text-2xl font-bold mb-6 text-center">Lebensmittel-Listen & Tabellen</h2>

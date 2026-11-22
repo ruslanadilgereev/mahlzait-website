@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { getTrackedAppLink } from 'utils/trackingLinks';
 
 const activities = [
   { name: "Joggen", kcalPerMin: 10, emoji: "🏃" },
@@ -99,7 +100,7 @@ const DoenerRechner = () => {
 
           <p className="text-sm mb-4">Lieber vorher wissen, was du isst?</p>
           <a 
-            href="https://apps.apple.com/de/app/mahlzait-ki-kalorienz%C3%A4hler/id6747400456?ct=mahlzait-website&mt=8" 
+            href={getTrackedAppLink({ platform: "ios", source: "calculator" })}
             className="btn btn-primary"
           >
             🚀 Kalorien tracken mit Mahlzait

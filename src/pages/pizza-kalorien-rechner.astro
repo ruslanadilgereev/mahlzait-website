@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { calculatorPageConfig } from "utils/storeLinkConfigs";
 import PizzaKalorienRechnerPage from "@modules/pizza";
 
 const seo = {
@@ -173,5 +173,5 @@ const authorPersonSchema = {
   <!-- NutritionInformation Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
-  <PizzaKalorienRechnerPage client:load config={configWithoutLegal} />
+  <PizzaKalorienRechnerPage client:load config={calculatorPageConfig} />
 </Layout>

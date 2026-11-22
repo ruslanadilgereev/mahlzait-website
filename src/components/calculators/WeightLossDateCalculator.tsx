@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { getTrackedAppLink } from 'utils/trackingLinks';
 
 const WeightLossDateCalculator = () => {
   const [currentWeight, setCurrentWeight] = useState<number>(90);
@@ -96,7 +97,7 @@ const WeightLossDateCalculator = () => {
             <div className="divider my-6"></div>
             
             <p className="text-sm mb-4">Um das Datum zu halten, musst du tracken.</p>
-            <a href="https://apps.apple.com/de/app/mahlzait-ki-kalorienz%C3%A4hler/id6747400456?ct=mahlzait-website&mt=8" className="btn btn-primary w-full">
+            <a href={getTrackedAppLink({ platform: "ios", source: "calculator" })} className="btn btn-primary w-full">
               🚀 Jetzt starten & Datum sichern
             </a>
           </div>

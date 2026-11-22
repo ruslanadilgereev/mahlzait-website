@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { calculatorPageConfig } from "utils/storeLinkConfigs";
 import KoffeinRechnerPage from "@modules/koffein";
 
 const seo = {
@@ -136,5 +136,5 @@ const authorPersonSchema = {
   <!-- Caffeine Amount Table Schema -->
   <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
-  <KoffeinRechnerPage client:load config={configWithoutLegal} />
+  <KoffeinRechnerPage client:load config={calculatorPageConfig} />
 </Layout>

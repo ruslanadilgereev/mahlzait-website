@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { calculatorPageConfig } from "utils/storeLinkConfigs";
 import SchlafRechnerPage from "@modules/schlaf";
 
 const seo = {
@@ -147,5 +147,5 @@ const authorPersonSchema = {
   <!-- SoftwareApplication Schema for calculator -->
   <script type="application/ld+json" set:html={JSON.stringify(schema1)} />
 
-  <SchlafRechnerPage client:load config={configWithoutLegal} />
+  <SchlafRechnerPage client:load config={calculatorPageConfig} />
 </Layout>

@@ -2,7 +2,7 @@
 import Layout from "Layout.astro";
 import StructuredData from "@components/seo/StructuredData.astro";
 import defaultTemplateConfig from "utils/config";
-import configWithoutLegal from "utils/configWithoutLegal";
+import { calculatorPageConfig } from "utils/storeLinkConfigs";
 import FastfoodKalorienPage from "@modules/fastfoodKalorien";
 import type { FastFoodItem } from "@modules/fastfoodKalorien";
 
@@ -159,5 +159,5 @@ const breadcrumbSchema = {
   <script type="application/ld+json" set:html={JSON.stringify(datasetSchema)} />
   <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 
-  <FastfoodKalorienPage client:load config={configWithoutLegal} items={items} />
+  <FastfoodKalorienPage client:load config={calculatorPageConfig} items={items} />
 </Layout>
