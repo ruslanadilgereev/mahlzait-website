@@ -7751,6 +7751,147 @@ export const articlesMeta: ArticleMeta[] = [
       }
     ]
   },
+  {
+    slug: "trotz-kaloriendefizit-nicht-abnehmen-gruende",
+    title: "Trotz Kaloriendefizit nicht abnehmen: die häufigsten Gründe",
+    description:
+      "Kein Gewichtsverlust trotz Defizit? Studien zeigen: Meist wird mehr gegessen als notiert, Wasser verdeckt Fettverlust und der Bedarf sinkt mit dem Gewicht.",
+    tags: [
+      "Kaloriendefizit",
+      "Abnehmen",
+      "Plateau",
+      "Stoffwechsel",
+      "Tracking",
+      "Kalorien zählen",
+      "Studie",
+    ],
+    relatedCalculators: [
+      "kaloriendefizit-berechnen",
+      "kalorienbedarf-berechnen",
+      "abnahmedatum-berechnen",
+    ],
+    publishedAt: "2026-11-22",
+    readingTime: 8,
+    sources: [
+      {
+        title: "Discrepancy between self-reported and actual caloric intake and exercise in obese subjects",
+        authors: "Lichtman SW, Pisarska K, Berman ER, et al.",
+        journal: "New England Journal of Medicine",
+        year: 1992,
+        doi: "10.1056/NEJM199212313272701",
+        pmid: "1454084",
+      },
+      {
+        title: "Effect of dietary adherence on the body weight plateau: a mathematical model incorporating intermittent compliance with energy intake prescription",
+        authors: "Thomas DM, Martin CK, Redman LM, et al.",
+        journal: "American Journal of Clinical Nutrition",
+        year: 2014,
+        doi: "10.3945/ajcn.113.079822",
+        pmid: "25080458",
+      },
+      {
+        title: "Metabolic adaptation is an illusion, only present when participants are in negative energy balance",
+        authors: "Martins C, Roekenes J, Salamati S, Gower BA, Hunter GR",
+        journal: "American Journal of Clinical Nutrition",
+        year: 2020,
+        doi: "10.1093/ajcn/nqaa220",
+        pmid: "32844188",
+      },
+      {
+        title: "Quantification of the effect of energy imbalance on bodyweight",
+        authors: "Hall KD, Sacks G, Chandramohan D, et al.",
+        journal: "The Lancet",
+        year: 2011,
+        doi: "10.1016/S0140-6736(11)60812-X",
+        pmid: "21872751",
+      },
+      {
+        title: "Can a weight loss of one pound a week be achieved with a 3500-kcal deficit? Commentary on a commonly accepted rule",
+        authors: "Thomas DM, Martin CK, Lettieri S, et al.",
+        journal: "International Journal of Obesity",
+        year: 2013,
+        doi: "10.1038/ijo.2013.51",
+        pmid: "23628852",
+      },
+      {
+        title: "Glycogen storage: illusions of easy weight loss, excessive weight regain, and distortions in estimates of body composition",
+        authors: "Kreitzman SN, Coxon AY, Szaz KF",
+        journal: "American Journal of Clinical Nutrition",
+        year: 1992,
+        doi: "10.1093/ajcn/56.1.292S",
+        pmid: "1615908",
+      },
+      {
+        title: "Weight rhythms: weight increases during weekends and decreases during weekdays",
+        authors: "Orsama AL, Mattila E, Ermes M, et al.",
+        journal: "Obesity Facts",
+        year: 2014,
+        doi: "10.1159/000356147",
+        pmid: "24504358",
+      },
+      {
+        title: "The accuracy of stated energy contents of reduced-energy, commercially prepared foods",
+        authors: "Urban LE, Dallal GE, Robinson LM, et al.",
+        journal: "Journal of the American Dietetic Association",
+        year: 2010,
+        doi: "10.1016/j.jada.2009.10.003",
+        pmid: "20102837",
+      },
+      {
+        title: "Accuracy in wrist-worn, sensor-based measurements of heart rate and energy expenditure in a diverse cohort",
+        authors: "Shcherbina A, Mattsson CM, Waggott D, et al.",
+        journal: "Journal of Personalized Medicine",
+        year: 2017,
+        doi: "10.3390/jpm7020003",
+        pmid: "28538708",
+      },
+      {
+        title: "Constrained total energy expenditure and metabolic adaptation to physical activity in adult humans",
+        authors: "Pontzer H, Durazo-Arvizu R, Dugas LR, et al.",
+        journal: "Current Biology",
+        year: 2016,
+        doi: "10.1016/j.cub.2015.12.046",
+        pmid: "26832439",
+      },
+      {
+        title: "Self-monitoring in weight loss: a systematic review of the literature",
+        authors: "Burke LE, Wang J, Sevick MA",
+        journal: "Journal of the American Dietetic Association",
+        year: 2011,
+        doi: "10.1016/j.jada.2010.10.008",
+        pmid: "21185970",
+      },
+    ],
+    kernaussage:
+      "Wer im Kaloriendefizit nicht abnimmt, isst meist mehr, als er notiert: In einer Studie im New England Journal of Medicine unterschätzten Betroffene ihre Essensmenge um 47 Prozent, ihr Energieverbrauch war normal. Dazu verdecken Wasserschwankungen den Fettverlust, und weil der Bedarf mit dem Gewicht sinkt, schrumpft ein festes Defizit. Eine Stoffwechselanpassung gibt es, sie betrug in einer Studie aber nur rund 92 kcal am Tag.",
+    faqs: [
+      {
+        question: "Warum nehme ich trotz Kaloriendefizit nicht ab?",
+        answer:
+          "Meist ist das Defizit kleiner als gedacht. In einer Studie im New England Journal of Medicine unterschätzten Menschen, die trotz angeblich weniger als 1.200 kcal am Tag nicht abnahmen, ihre Essensmenge um 47 Prozent und überschätzten ihre Bewegung um 51 Prozent, ihr Energieverbrauch war normal. Dazu kommen Wasserschwankungen und ein Bedarf, der mit dem Gewicht sinkt.",
+      },
+      {
+        question: "Kann Wasser den Fettverlust auf der Waage verdecken?",
+        answer:
+          "Ja. Glykogen wird mit drei bis vier Teilen Wasser gespeichert, ändern sich die Speicher, ändert sich das Gewicht, ohne dass Fett dazukommt. Außerdem schwankt das Gewicht im Wochenrhythmus: In einer Auswertung von 80 Erwachsenen lag es am Sonntag und Montag am höchsten. Aussagekräftig ist deshalb der Wochendurchschnitt.",
+      },
+      {
+        question: "Ist mein Stoffwechsel kaputt, wenn ich nicht abnehme?",
+        answer:
+          "Sehr wahrscheinlich nicht. Bei Menschen mit angeblicher Diät-Resistenz lagen Ruheumsatz und Gesamtverbrauch innerhalb von 5 Prozent der erwarteten Werte. Eine Anpassung des Ruheumsatzes gibt es, sie betrug in einer Studie aber nur rund 92 kcal am Tag während einer strengen Diät und sank auf etwa 38 kcal, sobald das Gewicht stabil blieb.",
+      },
+      {
+        question: "Warum stagniert das Gewicht nach einigen Monaten?",
+        answer:
+          "Ein Rechenmodell auf Basis mehrerer Studien erklärt das typische Plateau nach etwa sechs Monaten vor allem damit, dass die Ernährung mit der Zeit weniger konsequent eingehalten wird, nicht mit Stoffwechselanpassung. Zudem sinkt der Verbrauch mit jedem Kilo, ein festes Kalorienziel ergibt also ein immer kleineres Defizit.",
+      },
+      {
+        question: "Soll ich die Kalorien von der Fitness-Uhr zurückessen?",
+        answer:
+          "Nur mit Vorsicht. In einem Test von sieben Fitness-Uhren schätzte keine den Energieverbrauch genauer als auf 20 Prozent. Wer die angezeigten Sport-Kalorien vollständig nachisst, kann sein Defizit damit aufheben.",
+      },
+    ],
+  },
 ];
 
 // Helper: Alle Artikel-Slugs (für getStaticPaths)
