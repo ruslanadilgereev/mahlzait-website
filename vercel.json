@@ -273,6 +273,46 @@
       "permanent": true
     },
     {
+      "source": "/kalorien/chicken-tikka-masala",
+      "destination": "/kalorien/tikka-masala/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/chicken-tikka-masala/",
+      "destination": "/kalorien/tikka-masala/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/lachs-gerauchert",
+      "destination": "/kalorien/raeucherlachs/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/lachs-gerauchert/",
+      "destination": "/kalorien/raeucherlachs/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/rotwein",
+      "destination": "/kalorien/wein-rot/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/rotwein/",
+      "destination": "/kalorien/wein-rot/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/zartbitterschokolade",
+      "destination": "/kalorien/schokolade-zartbitter/",
+      "permanent": true
+    },
+    {
+      "source": "/kalorien/zartbitterschokolade/",
+      "destination": "/kalorien/schokolade-zartbitter/",
+      "permanent": true
+    },
+    {
       "source": "/:path((?!api/|go/|i/|social/|_vercel/|wp-)[^.]*[^/.])",
       "destination": "/:path/",
       "permanent": true

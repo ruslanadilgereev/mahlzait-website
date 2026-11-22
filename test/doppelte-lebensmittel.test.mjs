@@ -1,21 +1,38 @@
 // Doppelte Lebensmittel-Seiten zusammengelegt (22.11.2026): Je zwei Seiten
-// hatten denselben Titel und bedienten dieselbe Suche („Maggi Ravioli Kalorien“,
-// „Reispapier Kalorien“). Es bleibt die Seite mit mehr Impressionen in der
-// Search Console (Seiten, letzte 3 Monate, 19.08. bis 19.11.2026):
+// zeigten dasselbe Lebensmittel unter demselben Namen und bedienten dieselbe
+// Suche („Maggi Ravioli Kalorien“, „Reispapier Kalorien“, „Chicken Tikka Masala
+// Kalorien“, „Räucherlachs Kalorien“, „Rotwein Kalorien“, „Zartbitterschokolade
+// Kalorien“). Es bleibt die Seite mit mehr Impressionen in der Search Console
+// (Seiten, letzte 3 Monate, 19.08. bis 19.11.2026):
 // /kalorien/ravioli-maggi/ 1.625 gegen /kalorien/maggi-ravioli/ 961,
-// /kalorien/rice-paper/ 6.837 gegen /kalorien/reispapier/ 1.280.
+// /kalorien/rice-paper/ 6.837 gegen /kalorien/reispapier/ 1.280,
+// /kalorien/tikka-masala/ 1.070 gegen /kalorien/chicken-tikka-masala/ 894,
+// /kalorien/raeucherlachs/ 4.712 gegen /kalorien/lachs-gerauchert/ 0,
+// /kalorien/wein-rot/ 1.762 gegen /kalorien/rotwein/ 0,
+// /kalorien/schokolade-zartbitter/ 1.433 gegen /kalorien/zartbitterschokolade/ 900.
 // Die andere Adresse leitet per 308 um, steht weder in den Daten noch in der
-// Sitemap, und keine Seite verlinkt sie noch. Prüft vercel.json, die Daten und
+// Sitemap, und keine Seite verlinkt sie noch. Lebensmittel, die sie als verwandt
+// führten, zeigen auf die verbliebene Seite. Prüft vercel.json, die Daten und
 // das gebaute dist/ (vorher pnpm build).
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
-import { distDir, pageExists, readRepoFile, repoRoot } from "./dist-html.mjs";
+import {
+  distDir,
+  pageExists,
+  readPage,
+  readRepoFile,
+  repoRoot,
+} from "./dist-html.mjs";
 
 const zusammengelegt = [
   { alt: "maggi-ravioli", bleibt: "ravioli-maggi" },
   { alt: "reispapier", bleibt: "rice-paper" },
+  { alt: "chicken-tikka-masala", bleibt: "tikka-masala" },
+  { alt: "lachs-gerauchert", bleibt: "raeucherlachs" },
+  { alt: "rotwein", bleibt: "wein-rot" },
+  { alt: "zartbitterschokolade", bleibt: "schokolade-zartbitter" },
 ];
 
 const redirects = JSON.parse(readRepoFile("vercel.json")).redirects;
@@ -88,4 +105,29 @@ test("keine Seite und keine Textdatei im Build verweist auf die entfernte Adress
     }
   }
   assert.deepEqual(funde.slice(0, 10), [], `${funde.length} Verweise`);
+});
+
+test("verwandte Lebensmittel zeigen auf die verbliebene Seite statt auf die entfernte", () => {
+  const alt = new Set(zusammengelegt.map((z) => z.alt));
+  const funde = [];
+  for (const datei of readdirSync(join(repoRoot, "src/data/foods"))) {
+    if (!datei.endsWith(".json")) continue;
+    const food = JSON.parse(readRepoFile(`src/data/foods/${datei}`));
+    for (const slug of food.related_foods ?? []) {
+      if (alt.has(slug)) funde.push(`${datei}: ${slug}`);
+    }
+  }
+  assert.deepEqual(funde, []);
+  // Diese Seiten führten die entfernte Adresse als verwandt; die Vorlage
+  // verwirft unbekannte Slugs still, der Link wäre sonst einfach weg.
+  for (const [seite, bleibt] of [
+    ["chardonnay", "wein-rot"],
+    ["kaviar", "raeucherlachs"],
+    ["lachs", "raeucherlachs"],
+  ]) {
+    assert.ok(
+      readPage(`/kalorien/${seite}/`).includes(`href="/kalorien/${bleibt}/"`),
+      `/kalorien/${seite}/ verlinkt /kalorien/${bleibt}/ nicht`,
+    );
+  }
 });
