@@ -1,0 +1,116 @@
+---
+import Layout from "Layout.astro";
+import StructuredData from "@components/seo/StructuredData.astro";
+import defaultTemplateConfig from "utils/config";
+
+// Hilfeseite zur Spracheingabe. Der Ablauf ist im App-Code nachgeprüft
+// (Flutter-Repo, lib/screens/chat_log_screen_ui.dart und
+// lib/services/voice_transcription.dart, Stand 22.11.2026): Mikrofon gedrückt
+// halten, nach links wischen bricht ab, unter 0,5 s wird verworfen, die
+// Aufnahme geht zur Spracherkennung an Gemini (Firebase AI), der Text landet im
+// Eingabefeld und wird nicht automatisch gesendet; die Testnutzungen zählen
+// erst beim Senden.
+const seo = {
+  title: "Mahlzeit per Spracheingabe eintragen | Mahlzait Hilfe",
+  description:
+    "So trägst du in Mahlzait eine Mahlzeit per Sprache ein: Mikrofon gedrückt halten, sprechen, Text prüfen und abschicken. Die KI schätzt Kalorien und Nährwerte.",
+};
+
+const steps = [
+  "Öffne in der App „Mit KI eintragen“. Auf der Seite „Heute“ ist das der Knopf mit dem Funken-Symbol unten.",
+  "Halte den Mikrofon-Knopf rechts neben dem Eingabefeld gedrückt und sprich, zum Beispiel: „Zwei Brötchen mit Butter und ein Cappuccino“.",
+  "Lass los, wenn du fertig bist. Solange die App deine Aufnahme in Text umschreibt, steht dort „Sprache wird erkannt...“.",
+  "Der erkannte Text steht danach im Eingabefeld. Prüfe ihn, ändere, was nicht stimmt, und tippe auf Senden. Mahlzait schickt nichts von selbst ab.",
+  "Die KI schätzt Menge, Kalorien und Nährwerte und zeigt das Ergebnis als Karte. Der Knopf darunter, zum Beispiel „450 kcal eintragen“, speichert es in deinem Tagebuch.",
+];
+---
+
+<Layout {...defaultTemplateConfig} seo={seo}>
+  <StructuredData
+    config={defaultTemplateConfig}
+    type="page"
+    pageTitle="Mahlzeit per Spracheingabe eintragen"
+    pageDescription={seo.description}
+  />
+  <main class="prose prose-lg max-w-4xl mx-auto px-6 py-16">
+    <p><a href="/">Mahlzait</a> · Hilfe</p>
+    <h1>Mahlzeit per Spracheingabe eintragen</h1>
+    <p>
+      In Mahlzait kannst du sagen, was du gegessen hast, statt es zu tippen. Die
+      App schreibt deine Aufnahme in Text um. Den Text prüfst du und schickst
+      ihn ab, die KI schätzt daraus Kalorien und Nährwerte für dein Tagebuch.
+    </p>
+
+    <h2>So geht's</h2>
+    <ol>
+      {steps.map((step) => <li>{step}</li>)}
+    </ol>
+    <p>
+      Passt etwas am Ergebnis nicht, schreibst oder sprichst du einfach eine
+      Korrektur hinterher, etwa „nur eine halbe Portion“.
+    </p>
+
+    <h2>Aufnahme abbrechen</h2>
+    <p>
+      Wischst du beim Sprechen mit dem Finger nach links, wird der Knopf rot.
+      Lässt du dann los, verwirft Mahlzait die Aufnahme. Sehr kurze Aufnahmen
+      unter einer halben Sekunde verwirft die App ebenfalls und zeigt den
+      Hinweis „Halten zum Aufnehmen“.
+    </p>
+
+    <h2>Beim ersten Mal: Mikrofon erlauben</h2>
+    <p>
+      Beim ersten Gedrückthalten fragt dein Handy, ob Mahlzait das Mikrofon
+      nutzen darf. Ohne diese Erlaubnis geht die Spracheingabe nicht. Hast du
+      abgelehnt, zeigt die App einen Hinweis mit „Einstellungen öffnen“, dort
+      kannst du das Mikrofon für Mahlzait erlauben.
+    </p>
+
+    <h2>Wenn es nicht klappt</h2>
+    <ul>
+      <li>
+        <strong>Kein Mikrofon zu sehen:</strong> Der Mikrofon-Knopf erscheint, solange
+        das Eingabefeld leer ist und kein Foto oder Video angehängt ist. Steht schon
+        Text im Feld, ist an seiner Stelle der Senden-Knopf.
+      </li>
+      <li>
+        <strong>„Konnte dich leider nicht verstehen“:</strong> Die Aufnahme war still
+        oder nicht zu verstehen. Sprich etwas näher am Handy und versuch es noch
+        einmal.
+      </li>
+      <li>
+        <strong>„Die Aufnahme hat nicht geklappt“:</strong> Meist fehlt die Internetverbindung.
+        Die Spracherkennung läuft über das Internet und gibt nach 30 Sekunden ohne
+        Antwort auf.
+      </li>
+    </ul>
+
+    <h2>Was kostet die Spracheingabe?</h2>
+    <p>
+      Das Umschreiben in Text zählt nicht. Gezählt wird erst der abgeschickte
+      Eintrag mit KI: Ohne Mahlzait Pro kannst du „Mit KI eintragen“ fünfmal
+      kostenlos testen, egal ob per Sprache, Text oder Foto. Danach brauchst du
+      Mahlzait Pro, die ersten 7 Tage Pro sind kostenlos.
+    </p>
+
+    <h2>Datenschutz</h2>
+    <p>
+      Für die Spracherkennung schickt die App deine Aufnahme an ein KI-Modell
+      von Google (Gemini, über Firebase). Die Tondatei auf deinem Handy löscht
+      Mahlzait danach wieder. Weiter geht nur der Text, den du selbst
+      abschickst, wie bei einer getippten Nachricht. Mehr dazu steht in der
+      <a href="/datenschutz/">Datenschutzerklärung</a> (Abschnitt 4.4).
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Fragen oder Probleme mit der Spracheingabe? Schreib an
+      <a href="mailto:kontakt@mahlzait.de">kontakt@mahlzait.de</a>.
+    </p>
+    <p>
+      Mahlzait gibt es für iPhone und Android:
+      <a href={defaultTemplateConfig.appStoreLink}>App Store</a> ·
+      <a href={defaultTemplateConfig.googlePlayLink}>Google Play</a>.
+    </p>
+  </main>
+</Layout>

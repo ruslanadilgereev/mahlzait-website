@@ -75,6 +75,7 @@ const templateConfig: TemplateConfig = {
       { href: "/kalorienarme-lebensmittel/", title: "Kalorienarme Lebensmittel" },
       { href: "/eiweissreiche-lebensmittel/", title: "Eiweißreiche Lebensmittel" },
       { href: "/low-carb-lebensmittel/", title: "Low-Carb-Lebensmittel" },
+      { href: "/spracheingabe/", title: "Hilfe: Mahlzeit per Sprache eintragen" },
     ],
     // App-Vergleich und Alternativ-Seiten (Daten: src/data/calorie-apps.json)
     comparisonLinks: [

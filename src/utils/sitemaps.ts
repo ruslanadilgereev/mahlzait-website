@@ -53,6 +53,7 @@ const coreEntries: SitemapEntry[] = [
   { url: `${siteUrl}/team/`, changefreq: "monthly", priority: 0.5 },
   { url: `${siteUrl}/ueber-uns/`, changefreq: "monthly", priority: 0.5 },
   { url: `${siteUrl}/chat-assistenten/`, changefreq: "monthly", priority: 0.5 },
+  { url: `${siteUrl}/spracheingabe/`, changefreq: "monthly", priority: 0.5 },
   { url: `${siteUrl}/redaktionelle-standards/`, changefreq: "yearly", priority: 0.4 },
 ];
 
