@@ -3,9 +3,10 @@
   "name": "Subway",
   "emoji": "🥖",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170705 (SUBWAY, sweet onion chicken teriyaki sub on white bread with lettuce, tomato and sweet onion sauce), Werte je 100 g",
   "seo": {
     "title": "Subway Kalorien: Nährwerte & Subs im Vergleich | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Subway Sub? Ein 6-Inch hat je nach Belag ca. 230-480 kcal. Nährwerte pro Sub & 100g, alle Subs im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat ein Subway Sub? Ein 6-Inch hat je nach Belag ca. 258 bis 553 kcal. Nährwerte pro Sub & 100g, alle Subs im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "subway kalorien",
       "subway sandwich kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 154,
-    "protein_per_100g": 10.5,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 2.5,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 155,
+    "protein_per_100g": 10.9,
+    "carbs_per_100g": 22.5,
+    "fat_per_100g": 2.4,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 230,
     "typical_portion_name": "1 Sub 6-Inch (15 cm)"
   },
@@ -29,102 +30,154 @@
     {
       "name": "Veggie Delite 6-Inch",
       "portion_g": 215,
-      "calories": 230,
-      "protein": 9,
-      "carbs": 44,
-      "fat": 2.5,
-      "tip": "Die kalorienärmste Wahl"
+      "calories": 258,
+      "protein": 8.5,
+      "carbs": 46.3,
+      "fat": 4.5,
+      "tip": "Die kalorienärmste Wahl",
+      "basis": [
+        {
+          "fdcId": 2709132,
+          "g": 215
+        }
+      ]
     },
     {
       "name": "Turkey (Truthahn) 6-Inch",
       "portion_g": 220,
-      "calories": 280,
-      "protein": 18,
-      "carbs": 46,
-      "fat": 3.5,
-      "tip": "Viel Eiweiß, wenig Fett"
+      "calories": 323,
+      "protein": 20.1,
+      "carbs": 49.3,
+      "fat": 5.1,
+      "tip": "Viel Eiweiß, wenig Fett",
+      "basis": [
+        {
+          "fdcId": 170711,
+          "g": 220
+        }
+      ]
     },
     {
       "name": "Chicken Teriyaki 6-Inch",
       "portion_g": 240,
-      "calories": 370,
-      "protein": 27,
-      "carbs": 53,
-      "fat": 5,
+      "calories": 372,
+      "protein": 26.2,
+      "carbs": 54,
+      "fat": 5.8,
       "tip": "Beliebter Klassiker"
     },
     {
       "name": "Steak & Cheese 6-Inch",
       "portion_g": 245,
-      "calories": 380,
-      "protein": 26,
-      "carbs": 45,
-      "fat": 10
+      "calories": 448,
+      "protein": 30.1,
+      "carbs": 52.7,
+      "fat": 13.1,
+      "basis": [
+        {
+          "fdcId": 170310,
+          "g": 245
+        }
+      ]
     },
     {
       "name": "Tuna (Thunfisch) 6-Inch",
       "portion_g": 250,
-      "calories": 480,
-      "protein": 20,
-      "carbs": 44,
-      "fat": 25,
-      "tip": "Fettreich durch Mayo"
+      "calories": 553,
+      "protein": 30.8,
+      "carbs": 39.9,
+      "fat": 30.1,
+      "tip": "Fettreich durch Mayo",
+      "basis": [
+        {
+          "fdcId": 170316,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Chicken Teriyaki Footlong (30 cm)",
       "portion_g": 480,
-      "calories": 740,
-      "protein": 54,
-      "carbs": 106,
-      "fat": 10,
+      "calories": 744,
+      "protein": 52.3,
+      "carbs": 108,
+      "fat": 11.5,
       "tip": "Doppelte Portion"
     },
     {
       "name": "Cookie (Schoko, 1 Stück)",
       "portion_g": 45,
       "calories": 200,
-      "protein": 2,
-      "carbs": 30,
-      "fat": 9,
-      "tip": "Beliebte Beilage"
+      "protein": 1.6,
+      "carbs": 29.6,
+      "fat": 8.9,
+      "tip": "Beliebte Beilage",
+      "basis": [
+        {
+          "fdcId": 172717,
+          "g": 45
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Cheeseburger",
-      "calories": 300,
-      "emoji": "🍔"
+      "name": "Cheeseburger (165g)",
+      "calories": 488,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "cheeseburger"
+        }
+      ]
     },
     {
-      "name": "Wrap",
-      "calories": 350,
-      "emoji": "🌯"
+      "name": "Wrap (280g)",
+      "calories": 650,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "wrap"
+        }
+      ]
     },
     {
-      "name": "Baguette",
-      "calories": 250,
-      "emoji": "🥖"
+      "name": "Baguette (90g)",
+      "calories": 245,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 90
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Veggie statt Tuna wählen",
-      "text": "Ein Veggie Delite 6-Inch hat nur 230 kcal, ein Tuna-Sub dagegen rund 480 kcal. Der Belag entscheidet über die Hälfte der Kalorien.",
+      "text": "Ein Veggie Delite 6-Inch hat nur rund 258 kcal, ein Tuna-Sub dagegen rund 553 kcal. Der Belag entscheidet über die Hälfte der Kalorien.",
       "icon": "🥗"
     },
     {
       "title": "Eiweiß-Subs sättigen länger",
-      "text": "Subs mit Hähnchen oder Truthahn liefern 18 bis 27 g Eiweiß pro 6-Inch. Das sättigt deutlich besser als ein reiner Käse- oder Thunfisch-Sub.",
+      "text": "Subs mit Hähnchen oder Truthahn liefern rund 20 bis 26 g Eiweiß pro 6-Inch. Das sättigt deutlich besser als ein Veggie-Sub mit rund 8 g.",
       "icon": "💪"
     },
     {
       "title": "Saucen sparsam dosieren",
-      "text": "Mayonnaise, Honey-Mustard und Sweet-Onion-Sauce können 100 bis 150 kcal zusätzlich bringen. Senf, Essig oder ganz ohne Sauce sparen am meisten.",
+      "text": "Mayonnaise, Honey-Mustard und Sweet-Onion-Sauce bringen spürbar Kalorien dazu. Senf, Essig oder ganz ohne Sauce sparen am meisten.",
       "icon": "🧴"
     },
     {
@@ -141,23 +194,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Subway Sub?",
-      "answer": "Das hängt stark vom Belag ab. Ein 6-Inch (15 cm) hat zwischen 230 kcal (Veggie Delite) und 480 kcal (Tuna). Ein beliebter Chicken Teriyaki liegt bei rund 370 kcal."
+      "answer": "Das hängt stark vom Belag ab. Ein 6-Inch (15 cm) hat zwischen 258 kcal (Veggie Delite) und 553 kcal (Tuna). Ein beliebter Chicken Teriyaki liegt bei rund 372 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Subway Footlong?",
-      "answer": "Ein Footlong (30 cm) entspricht der doppelten Portion eines 6-Inch. Je nach Belag sind das etwa 460 bis 960 kcal, ein Chicken Teriyaki Footlong liegt bei ca. 740 kcal."
+      "answer": "Ein Footlong (30 cm) entspricht der doppelten Portion eines 6-Inch. Je nach Belag sind das etwa 516 bis 1106 kcal, ein Chicken Teriyaki Footlong liegt bei ca. 744 kcal."
     },
     {
       "question": "Wie viel Protein hat ein Subway Sandwich?",
-      "answer": "Fleisch- und Geflügel-Subs liefern viel Eiweiß: Ein Chicken Teriyaki 6-Inch hat ca. 27 g, ein Turkey-Sub ca. 18 g Protein. Veggie-Subs enthalten rund 9 g."
+      "answer": "Fleisch- und Geflügel-Subs liefern viel Eiweiß: Ein Chicken Teriyaki 6-Inch hat ca. 26 g, ein Turkey-Sub ca. 20 g Protein. Veggie-Subs enthalten rund 8 g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Subway Sub?",
-      "answer": "Der Großteil der Kohlenhydrate steckt im Brot. Ein 6-Inch hat etwa 44 bis 53 g Kohlenhydrate, ein Footlong entsprechend das Doppelte."
+      "answer": "Der Großteil der Kohlenhydrate steckt im Brot. Ein 6-Inch hat etwa 40 bis 54 g Kohlenhydrate, ein Footlong entsprechend das Doppelte."
     },
     {
       "question": "Ist Subway gut zum Abnehmen?",
-      "answer": "Subway kann in eine Diät passen, wenn man einen mageren Sub (Veggie, Turkey, Chicken) wählt, fettige Saucen weglässt und auf 6-Inch statt Footlong setzt. So bleibt ein Sub bei 230 bis 370 kcal."
+      "answer": "Subway kann in eine Diät passen, wenn man einen mageren Sub (Veggie, Turkey, Chicken) wählt, fettige Saucen weglässt und auf 6-Inch statt Footlong setzt. So bleibt ein Sub bei rund 258 bis 372 kcal."
     },
     {
       "question": "Ist ein Subway Sandwich gesund?",

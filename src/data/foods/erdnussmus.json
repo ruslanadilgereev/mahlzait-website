@@ -3,9 +3,10 @@
   "name": "Erdnussmus",
   "emoji": "🥜",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 173806 (Peanuts, all types, dry-roasted, without salt), Werte je 100 g",
   "seo": {
     "title": "Erdnussmus Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Erdnussmus? Reines Erdnussmus hat ca. 597 kcal pro 100g, 1 EL (15g) rund 90 kcal. Nährwerte, Protein & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Erdnussmus? Reines Erdnussmus hat ca. 587 kcal pro 100g, 1 EL (15g) rund 88 kcal. Nährwerte, Protein & Tipps im Überblick.",
     "keywords": [
       "erdnussmus kalorien",
       "erdnussmus kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 597,
-    "protein_per_100g": 25,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 50,
-    "fiber_per_100g": 6,
+    "calories_per_100g": 587,
+    "protein_per_100g": 24.4,
+    "carbs_per_100g": 21.3,
+    "fat_per_100g": 49.7,
+    "fiber_per_100g": 8.4,
     "typical_portion_g": 15,
     "typical_portion_name": "1 EL (15g)"
   },
@@ -30,7 +31,7 @@
     {
       "name": "1 TL (8g)",
       "portion_g": 8,
-      "calories": 48,
+      "calories": 47,
       "protein": 2,
       "carbs": 2,
       "fat": 4
@@ -38,73 +39,97 @@
     {
       "name": "1 EL (15g)",
       "portion_g": 15,
-      "calories": 90,
+      "calories": 88,
       "protein": 4,
       "carbs": 3,
-      "fat": 8,
+      "fat": 7,
       "tip": "Typische Portion aufs Brot"
     },
     {
       "name": "2 EL (32g)",
       "portion_g": 32,
-      "calories": 191,
+      "calories": 188,
       "protein": 8,
-      "carbs": 6,
+      "carbs": 7,
       "fat": 16,
       "tip": "Portion im Müsli oder Shake"
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 597,
-      "protein": 25,
-      "carbs": 20,
+      "calories": 587,
+      "protein": 24,
+      "carbs": 21,
       "fat": 50
     },
     {
       "name": "Erdnussmus knackig / crunchy (15g)",
       "portion_g": 15,
-      "calories": 91,
+      "calories": 88,
       "protein": 4,
       "carbs": 3,
-      "fat": 8,
+      "fat": 7,
       "tip": "Mit Erdnussstückchen, kaum Unterschied zur cremigen Variante"
     },
     {
       "name": "Glas Erdnussmus (250g)",
       "portion_g": 250,
-      "calories": 1493,
-      "protein": 63,
-      "carbs": 50,
-      "fat": 125
+      "calories": 1468,
+      "protein": 61,
+      "carbs": 53,
+      "fat": 124
     }
   ],
   "comparison": [
     {
       "name": "Erdnussbutter gesüßt (2 EL, 32g)",
-      "calories": 190,
-      "emoji": "🥜"
+      "calories": 191,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnussbutter",
+          "g": 32
+        }
+      ]
     },
     {
       "name": "Mandelmus (2 EL, 32g)",
       "calories": 196,
-      "emoji": "🌰"
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandelmus",
+          "g": 32
+        }
+      ]
     },
     {
       "name": "Nutella (2 EL, 32g)",
       "calories": 172,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "nutella",
+          "g": 32
+        }
+      ]
     },
     {
       "name": "Butter (2 EL, 32g)",
-      "calories": 237,
-      "emoji": "🧈"
+      "calories": 229,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 32
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienreich, aber sättigend",
-      "text": "Erdnussmus liefert mit ca. 597 kcal pro 100g viel Energie. Schon 1 EL (15g) mit rund 90 kcal sättigt durch das Fett und Eiweiß gut und länger als süßer Brotaufstrich.",
+      "text": "Erdnussmus liefert mit ca. 587 kcal pro 100g viel Energie. Schon 1 EL (15g) mit rund 88 kcal sättigt durch das Fett und Eiweiß gut und länger als süßer Brotaufstrich.",
       "icon": "🥜"
     },
     {
@@ -114,7 +139,7 @@
     },
     {
       "title": "Gute Eiweißquelle",
-      "text": "Mit 25g Protein pro 100g ist Erdnussmus auch für Sportler und in der vegetarischen Ernährung ein praktischer Eiweißlieferant. 2 EL liefern bereits etwa 8g Eiweiß.",
+      "text": "Mit rund 24g Protein pro 100g ist Erdnussmus auch für Sportler und in der vegetarischen Ernährung ein praktischer Eiweißlieferant. 2 EL liefern bereits etwa 8g Eiweiß.",
       "icon": "💪"
     },
     {
@@ -131,23 +156,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Erdnussmus?",
-      "answer": "Reines Erdnussmus hat ca. 597 kcal pro 100g. Ein Esslöffel (15g) liefert rund 90 kcal, zwei Esslöffel (32g) etwa 191 kcal."
+      "answer": "Reines Erdnussmus hat ca. 587 kcal pro 100g. Ein Esslöffel (15g) liefert rund 88 kcal, zwei Esslöffel (32g) etwa 188 kcal."
     },
     {
       "question": "Wie viele Kalorien hat 1 Esslöffel Erdnussmus?",
-      "answer": "Ein Esslöffel Erdnussmus (ca. 15g) hat etwa 90 kcal sowie rund 4g Eiweiß und 8g Fett."
+      "answer": "Ein Esslöffel Erdnussmus (ca. 15g) hat etwa 88 kcal sowie rund 4g Eiweiß und 7,5g Fett."
     },
     {
       "question": "Wie viel Protein steckt in Erdnussmus?",
-      "answer": "Erdnussmus enthält etwa 25g Eiweiß pro 100g. Damit gehört es zu den proteinreichsten Brotaufstrichen und ist eine gute pflanzliche Eiweißquelle."
+      "answer": "Erdnussmus enthält etwa 24g Eiweiß pro 100g. Damit gehört es zu den proteinreichsten Brotaufstrichen und ist eine gute pflanzliche Eiweißquelle."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Erdnussmus?",
-      "answer": "Erdnussmus hat rund 20g Kohlenhydrate pro 100g, davon nur wenige Gramm Zucker. Hinzu kommen etwa 6g Ballaststoffe pro 100g."
+      "answer": "Erdnussmus hat rund 21g Kohlenhydrate pro 100g, davon etwa 8g Ballaststoffe und nur rund 5g Zucker."
     },
     {
       "question": "Ist Erdnussmus zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Erdnussmus ist mit 597 kcal pro 100g sehr kalorienreich, sättigt durch Eiweiß und Fett aber gut. Eine kleine Portion von 1 bis 2 EL passt auch in eine kalorienbewusste Ernährung, sofern man die Menge im Blick behält."
+      "answer": "In Maßen ja. Erdnussmus ist mit 587 kcal pro 100g sehr kalorienreich, sättigt durch Eiweiß und Fett aber gut. Eine kleine Portion von 1 bis 2 EL passt auch in eine kalorienbewusste Ernährung, sofern man die Menge im Blick behält."
     },
     {
       "question": "Ist Erdnussmus gesund?",

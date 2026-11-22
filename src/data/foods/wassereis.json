@@ -3,9 +3,10 @@
   "name": "Wassereis",
   "emoji": "🧊",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 168813 (Frozen novelties, ice type, pop), Werte je 100 g",
   "seo": {
     "title": "Wassereis Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Wassereis? Ein Standard-Stück (60g) hat nur ca. 42 kcal. Nährwerte pro 100g & Stück, Sorten im Vergleich plus Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Wassereis? Ein Standard-Stück (60g) hat nur ca. 47 kcal. Nährwerte pro 100g & Stück, Sorten im Vergleich plus Diät-Tipps.",
     "keywords": [
       "wassereis kalorien",
       "kalorien wassereis",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 70,
+    "calories_per_100g": 79,
     "protein_per_100g": 0,
-    "carbs_per_100g": 17.5,
-    "fat_per_100g": 0,
+    "carbs_per_100g": 19.2,
+    "fat_per_100g": 0.2,
     "fiber_per_100g": 0,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Wassereis (Standard)"
@@ -29,51 +30,51 @@
     {
       "name": "Mini-Wassereis (40g)",
       "portion_g": 40,
-      "calories": 28,
+      "calories": 32,
       "protein": 0,
-      "carbs": 7,
+      "carbs": 8,
       "fat": 0,
       "tip": "Kleine Portion für Kinder"
     },
     {
       "name": "Wassereis Standard (60g)",
       "portion_g": 60,
-      "calories": 42,
+      "calories": 47,
       "protein": 0,
-      "carbs": 11,
+      "carbs": 12,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Familienpackung 1 Stück (75g)",
       "portion_g": 75,
-      "calories": 52,
+      "calories": 59,
       "protein": 0,
-      "carbs": 13,
+      "carbs": 14,
       "fat": 0
     },
     {
       "name": "Großes Wassereis (100g)",
       "portion_g": 100,
-      "calories": 70,
+      "calories": 79,
       "protein": 0,
-      "carbs": 18,
+      "carbs": 19,
       "fat": 0
     },
     {
       "name": "2 Stück (120g)",
       "portion_g": 120,
-      "calories": 84,
+      "calories": 95,
       "protein": 0,
-      "carbs": 21,
+      "carbs": 23,
       "fat": 0
     },
     {
       "name": "Wassereis-Tüte XL (150g)",
       "portion_g": 150,
-      "calories": 105,
+      "calories": 119,
       "protein": 0,
-      "carbs": 26,
+      "carbs": 29,
       "fat": 0
     }
   ],
@@ -81,33 +82,56 @@
     {
       "name": "Eis (Vanille, 60g)",
       "calories": 124,
-      "emoji": "🍨"
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Magnum (1 Stück)",
-      "calories": 250,
-      "emoji": "🍦"
+      "name": "Eis am Stiel mit Schokoüberzug (79g)",
+      "calories": 261,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "fdcId": 173466,
+          "g": 79
+        }
+      ]
     },
     {
       "name": "Frozen Yogurt (100g)",
-      "calories": 130,
-      "emoji": "🍧"
+      "calories": 127,
+      "emoji": "🍧",
+      "basis": [
+        {
+          "slug": "frozen-yogurt",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Apfel (mittel)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienärmste Eis-Variante",
-      "text": "Mit nur etwa 42 kcal pro Stück ist Wassereis eine der leichtesten Erfrischungen im Tiefkühlfach. Klassisches Milcheis hat ein Vielfaches an Kalorien.",
+      "text": "Mit nur etwa 47 kcal pro Stück ist Wassereis eine der leichtesten Erfrischungen im Tiefkühlfach. Klassisches Milcheis hat ein Vielfaches an Kalorien.",
       "icon": "🧊"
     },
     {
       "title": "Fettfrei, aber zuckerreich",
-      "text": "Wassereis enthält praktisch kein Fett und kein Eiweiß. Die Kalorien stammen fast vollständig aus Zucker, der die Hauptzutat neben Wasser ist.",
+      "text": "Wassereis enthält praktisch kein Fett und kein Eiweiß. Die Kalorien stammen fast vollständig aus Kohlenhydraten, vor allem aus Zucker, der die Hauptzutat neben Wasser ist.",
       "icon": "🍬"
     },
     {
@@ -129,19 +153,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Wassereis?",
-      "answer": "Ein Wassereis im Standardformat (60g) hat etwa 42 kcal. Mini-Wassereis (40g) kommt auf rund 28 kcal, ein großes Stück (100g) auf ca. 70 kcal."
+      "answer": "Ein Wassereis im Standardformat (60g) hat etwa 47 kcal. Mini-Wassereis (40g) kommt auf rund 32 kcal, ein großes Stück (100g) auf ca. 79 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Wassereis?",
-      "answer": "Wassereis besteht fast nur aus Zucker. Pro 100g sind es etwa 17,5g Kohlenhydrate, ein Standard-Stück (60g) enthält rund 11g, davon nahezu alles Zucker."
+      "answer": "Wassereis besteht neben Wasser vor allem aus Zucker. Pro 100g sind es etwa 19g Kohlenhydrate, davon knapp 14g Zucker. Ein Standard-Stück (60g) enthält rund 12g Kohlenhydrate."
     },
     {
       "question": "Hat Wassereis viel Eiweiß oder Fett?",
-      "answer": "Nein. Wassereis enthält praktisch kein Eiweiß und kein Fett. Es liefert ausschließlich schnelle Kohlenhydrate aus Zucker."
+      "answer": "Nein. Wassereis enthält praktisch kein Eiweiß und kein Fett. Es liefert fast nur Kohlenhydrate, vor allem Zucker."
     },
     {
       "question": "Ist Wassereis zum Abnehmen geeignet?",
-      "answer": "Im Vergleich zu Milcheis ist Wassereis mit ca. 42 kcal pro Stück sehr kalorienarm und passt gut in eine Diät. Es macht aber nicht satt und besteht hauptsächlich aus Zucker, daher in Maßen genießen."
+      "answer": "Im Vergleich zu Milcheis ist Wassereis mit ca. 47 kcal pro Stück sehr kalorienarm und passt gut in eine Diät. Es macht aber nicht satt und besteht hauptsächlich aus Zucker, daher in Maßen genießen."
     },
     {
       "question": "Ist Wassereis gesund?",
@@ -149,7 +173,7 @@
     },
     {
       "question": "Wie viel Zucker steckt in Wassereis?",
-      "answer": "Der Zuckergehalt entspricht weitgehend den Kohlenhydraten: rund 17,5g pro 100g. Ein Standard-Wassereis (60g) liefert damit etwa 11g Zucker, das sind ungefähr drei Würfelzucker."
+      "answer": "Laut USDA enthält Wassereis rund 14g Zucker pro 100g. Ein Standard-Wassereis (60g) liefert damit etwa 8g Zucker, das sind knapp drei Würfelzucker."
     }
   ],
   "related_foods": [

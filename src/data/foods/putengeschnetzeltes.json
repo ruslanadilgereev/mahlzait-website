@@ -3,47 +3,183 @@
   "name": "Putengeschnetzeltes",
   "emoji": "🍗",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706432 (Chicken or turkey with mushroom sauce), Werte je 100 g",
   "seo": {
     "title": "Putengeschnetzeltes Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Putengeschnetzeltes? Nährwerte für Puten-Rahm-Geschnetzeltes, mit Pilzen & mehr. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 130,
-    "protein_per_100g": 22,
-    "carbs_per_100g": 2,
-    "fat_per_100g": 4,
-    "fiber_per_100g": 0.3,
+    "calories_per_100g": 136,
+    "protein_per_100g": 19.3,
+    "carbs_per_100g": 1.8,
+    "fat_per_100g": 5.7,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Putengeschnetzeltes mit Champignons", "portion_g": 300, "calories": 390, "protein": 66, "carbs": 6, "fat": 12, "tip": "Leichter Klassiker"},
-    {"name": "Puten-Rahm-Geschnetzeltes", "portion_g": 300, "calories": 480, "protein": 58, "carbs": 8, "fat": 24, "tip": "Mit Sahnesauce"},
-    {"name": "Putengeschnetzeltes mit Paprika", "portion_g": 300, "calories": 380, "protein": 62, "carbs": 10, "fat": 10, "tip": "Bunte Variante"},
-    {"name": "Putengeschnetzeltes Curry", "portion_g": 300, "calories": 450, "protein": 56, "carbs": 14, "fat": 18, "tip": "Mit Kokosmilch"},
-    {"name": "Putengeschnetzeltes pur", "portion_g": 200, "calories": 260, "protein": 44, "carbs": 0, "fat": 8, "tip": "Kalorienärmste Variante"},
-    {"name": "Putengeschnetzeltes Zürcher Art", "portion_g": 300, "calories": 510, "protein": 55, "carbs": 8, "fat": 28, "tip": "Nach Schweizer Art mit Rösti"}
+    {
+      "name": "Putengeschnetzeltes mit Champignons",
+      "portion_g": 300,
+      "calories": 408,
+      "protein": 58,
+      "carbs": 5,
+      "fat": 17,
+      "tip": "Leichter Klassiker"
+    },
+    {
+      "name": "Puten-Rahm-Geschnetzeltes",
+      "portion_g": 300,
+      "calories": 471,
+      "protein": 59,
+      "carbs": 8,
+      "fat": 22,
+      "tip": "Mit Sahnesauce",
+      "basis": [
+        {
+          "fdcId": 2706431,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Putengeschnetzeltes pur",
+      "portion_g": 200,
+      "calories": 272,
+      "protein": 59,
+      "carbs": 0,
+      "fat": 4,
+      "tip": "Nur gegarte Putenbrust, ohne Sauce",
+      "basis": [
+        {
+          "fdcId": 174516,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Putengeschnetzeltes Zürcher Art (200g mit 100g Rösti)",
+      "portion_g": 300,
+      "calories": 504,
+      "protein": 42,
+      "carbs": 24,
+      "fat": 27,
+      "tip": "In Rahmsauce, nach Schweizer Art mit Rösti",
+      "basis": [
+        {
+          "fdcId": 2706431,
+          "g": 200
+        },
+        {
+          "slug": "roesti",
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Hähnchen-Geschnetzeltes", "calories": 145, "emoji": "🍗"},
-    {"name": "Rindergeschnetzeltes", "calories": 155, "emoji": "🥩"},
-    {"name": "Schweinegeschnetzeltes", "calories": 175, "emoji": "🥩"},
-    {"name": "Tofu-Geschnetzeltes", "calories": 105, "emoji": "🌱"}
+    {
+      "name": "Hähnchen-Geschnetzeltes (300g)",
+      "calories": 471,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchen-geschnetzeltes",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Rindergeschnetzeltes (300g)",
+      "calories": 489,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "rindergeschnetzeltes",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Schweinegeschnetzeltes mit Pilzsauce (300g)",
+      "calories": 501,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 2706403,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Magerste Fleisch-Variante", "text": "Putenbrust hat nur 1% Fett – weniger als Hähnchen, Rind oder Schwein. Ideal für kalorienarme Mahlzeiten.", "icon": "💪"},
-    {"title": "Sauce kontrollieren", "text": "Das Fleisch ist mager, aber die Sauce macht den Unterschied: Rahmsauce +90 kcal, Tomatensauce nur +30 kcal.", "icon": "🍅"},
-    {"title": "Nicht zu lange braten", "text": "Putenfleisch wird schnell trocken. Auf hoher Hitze kurz anbraten, dann bei niedriger Temperatur garziehen lassen.", "icon": "🔥"},
-    {"title": "Proteinbombe", "text": "300g Putengeschnetzeltes liefern 66g Protein – mehr als die meisten anderen Gerichte. Perfekt für Muskelaufbau.", "icon": "🏋️"},
-    {"title": "Vollkornreis dazu", "text": "Vollkornreis als Beilage hält länger satt als weißer Reis und liefert mehr Ballaststoffe.", "icon": "🍚"}
+    {
+      "title": "Magerste Fleisch-Variante",
+      "text": "Putenbrust hat gegart nur rund 2% Fett, weniger als Hähnchen, Rind oder Schwein. Ideal für kalorienarme Mahlzeiten.",
+      "icon": "💪"
+    },
+    {
+      "title": "Sauce kontrollieren",
+      "text": "Das Fleisch ist mager, aber die Sauce macht den Unterschied: Mit Rahmsauce hat eine Portion (300g) rund 63 kcal mehr als mit Champignons.",
+      "icon": "🍅"
+    },
+    {
+      "title": "Nicht zu lange braten",
+      "text": "Putenfleisch wird schnell trocken. Auf hoher Hitze kurz anbraten, dann bei niedriger Temperatur garziehen lassen.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Proteinbombe",
+      "text": "300g Putengeschnetzeltes liefern 58g Protein, mehr als die meisten anderen Gerichte. Perfekt für Muskelaufbau.",
+      "icon": "🏋️"
+    },
+    {
+      "title": "Vollkornreis dazu",
+      "text": "Vollkornreis als Beilage hält länger satt als weißer Reis und liefert mehr Ballaststoffe.",
+      "icon": "🍚"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Putengeschnetzeltes?", "answer": "Eine Portion Putengeschnetzeltes (300g) hat ca. 390 kcal mit Champignons. In Rahmsauce ca. 480 kcal."},
-    {"question": "Ist Putengeschnetzeltes gut zum Abnehmen?", "answer": "Ja, Putenfleisch ist das magerste Fleisch mit nur 130 kcal/100g und 22g Protein. Ideal für jede Diät, wenn die Sauce leicht bleibt."},
-    {"question": "Hähnchen oder Pute – was ist besser zum Abnehmen?", "answer": "Pute (130 kcal/100g) ist minimal kalorienärmer als Hähnchen (145 kcal/100g). Beide sind hervorragend für eine kalorienarme Ernährung."},
-    {"question": "Wie viel Pute pro Person?", "answer": "Für Geschnetzeltes rechnet man 150-200g rohe Putenbrust pro Person. Das ergibt mit Sauce und Gemüse eine 300g-Portion."},
-    {"question": "Wie macht man Putengeschnetzeltes saftig?", "answer": "Fleisch in Streifen schneiden, auf hoher Hitze kurz anbraten, herausnehmen, Sauce separat kochen, dann Fleisch wieder dazugeben."},
-    {"question": "Welche Sauce hat die wenigsten Kalorien?", "answer": "Tomatensauce (~30 kcal/100g) ist am kalorienärmsten. Rahmsauce hat ~120 kcal/100g, Currysauce mit Kokosmilch ~90 kcal/100g."}
+    {
+      "question": "Wie viele Kalorien hat Putengeschnetzeltes?",
+      "answer": "Eine Portion Putengeschnetzeltes (300g) hat ca. 408 kcal mit Champignons. In Rahmsauce ca. 471 kcal."
+    },
+    {
+      "question": "Ist Putengeschnetzeltes gut zum Abnehmen?",
+      "answer": "Ja, Putenfleisch ist sehr mager: Putengeschnetzeltes mit Champignons hat nur 136 kcal/100g und 19g Protein. Ideal für jede Diät, wenn die Sauce leicht bleibt."
+    },
+    {
+      "question": "Hähnchen oder Pute: Was ist besser zum Abnehmen?",
+      "answer": "Putenbrust ist etwas kalorienärmer: 200g gegarte Putenbrust haben ca. 272 kcal, 200g Hähnchenbrust ca. 330 kcal. Beide sind hervorragend für eine kalorienarme Ernährung."
+    },
+    {
+      "question": "Wie viel Pute pro Person?",
+      "answer": "Für Geschnetzeltes rechnet man 150-200g rohe Putenbrust pro Person. Das ergibt mit Sauce und Gemüse eine 300g-Portion."
+    },
+    {
+      "question": "Wie macht man Putengeschnetzeltes saftig?",
+      "answer": "Fleisch in Streifen schneiden, auf hoher Hitze kurz anbraten, herausnehmen, Sauce separat kochen, dann Fleisch wieder dazugeben."
+    },
+    {
+      "question": "Welche Sauce hat die wenigsten Kalorien?",
+      "answer": "Tomatensauce ist am kalorienärmsten, Rahmsauce und Currysauce mit Kokosmilch liefern deutlich mehr. Mit Rahmsauce hat eine Portion (300g) rund 63 kcal mehr als mit Champignons."
+    }
   ],
-  "related_foods": ["haehnchen-geschnetzeltes", "rindergeschnetzeltes", "haehnchenbrust", "reis"]
+  "related_foods": [
+    "haehnchen-geschnetzeltes",
+    "rindergeschnetzeltes",
+    "haehnchenbrust",
+    "reis"
+  ]
 }

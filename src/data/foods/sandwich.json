@@ -3,9 +3,10 @@
   "name": "Sandwich",
   "emoji": "🥪",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706880 (Sandwich, NFS), Werte je 100 g",
   "seo": {
     "title": "Sandwich Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Sandwich? Ein belegtes Standard-Sandwich (150g) hat ca. 375 kcal. Alle Nährwerte pro 100g & je Portion plus Tipps.",
+    "description": "Wie viele Kalorien hat ein Sandwich? Ein belegtes Standard-Sandwich (150g) hat ca. 431 kcal. Alle Nährwerte pro 100g & je Portion plus Tipps.",
     "keywords": [
       "kalorien sandwich",
       "sandwich kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 27,
-    "fat_per_100g": 10.5,
-    "fiber_per_100g": 2.2,
+    "calories_per_100g": 287,
+    "protein_per_100g": 12.8,
+    "carbs_per_100g": 33.8,
+    "fat_per_100g": 12,
+    "fiber_per_100g": 1.9,
     "typical_portion_g": 150,
     "typical_portion_name": "1 belegtes Sandwich (Standard)"
   },
@@ -29,74 +30,110 @@
     {
       "name": "Sandwich-Toast pur, 2 Scheiben (60g)",
       "portion_g": 60,
-      "calories": 150,
+      "calories": 160,
       "protein": 5,
-      "carbs": 28,
+      "carbs": 30,
       "fat": 2,
-      "tip": "Nur die Brotscheiben, ohne Belag"
+      "tip": "Nur die Brotscheiben, ohne Belag",
+      "basis": [
+        {
+          "fdcId": 174924,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Halbes belegtes Sandwich (75g)",
       "portion_g": 75,
-      "calories": 188,
-      "protein": 8,
-      "carbs": 20,
-      "fat": 8
+      "calories": 215,
+      "protein": 10,
+      "carbs": 25,
+      "fat": 9
     },
     {
       "name": "Sandwich klein (110g)",
       "portion_g": 110,
-      "calories": 275,
-      "protein": 12,
-      "carbs": 30,
-      "fat": 12
+      "calories": 316,
+      "protein": 14,
+      "carbs": 37,
+      "fat": 13
     },
     {
       "name": "Sandwich Standard (150g)",
       "portion_g": 150,
-      "calories": 375,
-      "protein": 16,
-      "carbs": 40,
-      "fat": 16,
+      "calories": 431,
+      "protein": 19,
+      "carbs": 51,
+      "fat": 18,
       "tip": "Standard"
     },
     {
       "name": "Doppeldecker-Sandwich (200g)",
       "portion_g": 200,
-      "calories": 500,
-      "protein": 22,
-      "carbs": 54,
-      "fat": 21
+      "calories": 574,
+      "protein": 26,
+      "carbs": 68,
+      "fat": 24
     },
     {
       "name": "Club-Sandwich (230g)",
       "portion_g": 230,
-      "calories": 575,
-      "protein": 25,
-      "carbs": 62,
-      "fat": 24
+      "calories": 511,
+      "protein": 35,
+      "carbs": 53,
+      "fat": 17,
+      "basis": [
+        {
+          "fdcId": 2706993,
+          "g": 230
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Burger",
-      "calories": 295,
-      "emoji": "🍔"
+      "name": "Burger (220g)",
+      "calories": 634,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger",
+          "g": 220
+        }
+      ]
     },
     {
-      "name": "Wrap",
-      "calories": 218,
-      "emoji": "🌯"
+      "name": "Wrap (280g)",
+      "calories": 650,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "wrap",
+          "g": 280
+        }
+      ]
     },
     {
-      "name": "Baguette",
-      "calories": 270,
-      "emoji": "🥖"
+      "name": "Baguette (100g)",
+      "calories": 272,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Döner",
-      "calories": 199,
-      "emoji": "🥙"
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
@@ -122,26 +159,26 @@
     },
     {
       "title": "Portion im Blick behalten",
-      "text": "Ein Club-Sandwich kommt schnell auf über 550 kcal. Ein halbes Sandwich mit Salat ist die leichtere Wahl zum Mittag.",
+      "text": "Ein Club-Sandwich (230g) kommt auf rund 511 kcal. Ein halbes Sandwich mit Salat ist die leichtere Wahl zum Mittag.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Sandwich?",
-      "answer": "Ein belegtes Standard-Sandwich (150g) hat etwa 375 kcal. Pro 100g sind es im Durchschnitt rund 250 kcal."
+      "answer": "Ein belegtes Standard-Sandwich (150g) hat etwa 431 kcal. Pro 100g sind es im Durchschnitt rund 287 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Club-Sandwich?",
-      "answer": "Ein Club-Sandwich (ca. 230g) liefert rund 575 kcal, da es aus drei Brotscheiben und reichlich Belag besteht."
+      "answer": "Ein Club-Sandwich (ca. 230g) liefert rund 511 kcal, da es aus drei Brotscheiben und reichlich Belag besteht."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Sandwich?",
-      "answer": "Ein Sandwich enthält etwa 27g Kohlenhydrate pro 100g. Ein Standard-Sandwich (150g) kommt damit auf rund 40g, hauptsächlich aus dem Brot."
+      "answer": "Ein Sandwich enthält etwa 34g Kohlenhydrate pro 100g. Ein Standard-Sandwich (150g) kommt damit auf rund 51g, hauptsächlich aus dem Brot."
     },
     {
       "question": "Wie viel Protein hat ein Sandwich?",
-      "answer": "Pro 100g liefert ein belegtes Sandwich etwa 11g Eiweiß. Mit magerem Belag wie Putenbrust oder Ei lässt sich der Proteingehalt zusätzlich steigern."
+      "answer": "Pro 100g liefert ein belegtes Sandwich etwa 12,8g Eiweiß. Mit magerem Belag wie Putenbrust oder Ei lässt sich der Proteingehalt zusätzlich steigern."
     },
     {
       "question": "Ist ein Sandwich zum Abnehmen geeignet?",

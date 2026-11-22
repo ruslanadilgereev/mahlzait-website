@@ -3,9 +3,10 @@
   "name": "Chinesische Nudeln",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708798 (Lo mein, NFS), Werte je 100 g",
   "seo": {
     "title": "Chinesische Nudeln Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben chinesische Nudeln? Gebratene Nudeln haben ca. 166 kcal pro 100g. Nährwerte pro Portion, Kohlenhydrate, Protein & Diät-Tipps.",
+    "description": "Wie viele Kalorien haben chinesische Nudeln? Gebratene Nudeln haben ca. 121 kcal pro 100g. Nährwerte pro Portion, Kohlenhydrate, Protein & Diät-Tipps.",
     "keywords": [
       "kalorien chinesische nudeln",
       "chinesische nudeln kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 166,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 5.5,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 121,
+    "protein_per_100g": 4.8,
+    "carbs_per_100g": 20.2,
+    "fat_per_100g": 2.4,
+    "fiber_per_100g": 1.3,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion gebratene Nudeln (250g)"
   },
@@ -28,89 +29,125 @@
     {
       "name": "Kleine Portion (180g)",
       "portion_g": 180,
-      "calories": 298,
+      "calories": 218,
       "protein": 9,
-      "carbs": 43,
-      "fat": 10,
+      "carbs": 36,
+      "fat": 4,
       "tip": "Als Beilage"
     },
     {
       "name": "Standard-Portion gebraten (250g)",
       "portion_g": 250,
-      "calories": 414,
+      "calories": 303,
       "protein": 12,
-      "carbs": 60,
-      "fat": 14,
+      "carbs": 51,
+      "fat": 6,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (350g)",
       "portion_g": 350,
-      "calories": 579,
-      "protein": 18,
-      "carbs": 84,
-      "fat": 19
+      "calories": 424,
+      "protein": 17,
+      "carbs": 71,
+      "fat": 8
     },
     {
       "name": "Restaurant-Teller (450g)",
       "portion_g": 450,
-      "calories": 745,
+      "calories": 545,
       "protein": 22,
-      "carbs": 108,
-      "fat": 25
+      "carbs": 91,
+      "fat": 11
     },
     {
       "name": "China-Imbiss To-Go-Box (500g)",
       "portion_g": 500,
-      "calories": 828,
-      "protein": 25,
-      "carbs": 120,
-      "fat": 28
+      "calories": 605,
+      "protein": 24,
+      "carbs": 101,
+      "fat": 12
     },
     {
       "name": "Gekochte Nudeln ohne Bratfett (200g)",
       "portion_g": 200,
-      "calories": 260,
-      "protein": 10,
+      "calories": 276,
+      "protein": 9,
       "carbs": 50,
-      "fat": 2,
-      "tip": "Fettärmer"
+      "fat": 4,
+      "tip": "Fettärmer",
+      "basis": [
+        {
+          "fdcId": 169732,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Getrocknete Nudeln roh (75g, 1 Nest)",
       "portion_g": 75,
-      "calories": 262,
-      "protein": 9,
+      "calories": 288,
+      "protein": 11,
       "carbs": 53,
-      "fat": 2
+      "fat": 3,
+      "basis": [
+        {
+          "fdcId": 169731,
+          "g": 75
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Gebratener Reis",
-      "calories": 163,
-      "emoji": "🍚"
+      "name": "Gebratener Reis (1 Teller, 350g)",
+      "calories": 609,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "fried-rice",
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Spaghetti (gekocht)",
-      "calories": 158,
-      "emoji": "🍝"
+      "name": "Spaghetti gekocht (1 Portion, 200g)",
+      "calories": 316,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Ramen",
-      "calories": 110,
-      "emoji": "🍜"
+      "name": "Ramen (1 Schüssel, 550g)",
+      "calories": 699,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "ramen",
+          "g": 550
+        }
+      ]
     },
     {
-      "name": "Glasnudeln (gekocht)",
-      "calories": 90,
-      "emoji": "🍲"
+      "name": "Glasnudeln gekocht (200g)",
+      "calories": 168,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "fdcId": 2708355,
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Das Öl entscheidet",
-      "text": "Beim Braten im Wok kommt das meiste Fett über das Öl dazu. Wer sparsam ölt oder die Nudeln nur kocht statt brät, spart pro Portion schnell 100 bis 150 kcal.",
+      "text": "Beim Braten im Wok kommt das meiste Fett über das Öl dazu. Wer sparsam ölt oder die Nudeln nur kocht statt brät, spart pro Portion spürbar Kalorien.",
       "icon": "🛢️"
     },
     {
@@ -137,19 +174,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben chinesische Nudeln?",
-      "answer": "Gebratene chinesische Nudeln haben etwa 166 kcal pro 100g. Eine normale Portion von 250g liefert rund 414 kcal."
+      "answer": "Gebratene chinesische Nudeln haben etwa 121 kcal pro 100g. Eine normale Portion von 250g liefert rund 303 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion gebratene Nudeln?",
-      "answer": "Eine Standard-Portion (250g) hat ca. 414 kcal. Eine große Restaurant-Portion (450g) kommt auf rund 745 kcal."
+      "answer": "Eine Standard-Portion (250g) hat ca. 303 kcal. Eine große Restaurant-Portion (450g) kommt auf rund 545 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben chinesische Nudeln?",
-      "answer": "Gebratene chinesische Nudeln enthalten rund 24g Kohlenhydrate pro 100g. Eine Portion von 250g liefert damit etwa 60g Kohlenhydrate."
+      "answer": "Gebratene chinesische Nudeln enthalten rund 20g Kohlenhydrate pro 100g. Eine Portion von 250g liefert damit etwa 50g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in chinesischen Nudeln?",
-      "answer": "Pro 100g stecken etwa 5g Protein in gebratenen Nudeln. Mit Hähnchen, Tofu oder Garnelen lässt sich der Proteinanteil deutlich erhöhen."
+      "answer": "Pro 100g stecken etwa 4,8g Protein in gebratenen Nudeln. Mit Hähnchen, Tofu oder Garnelen lässt sich der Proteinanteil deutlich erhöhen."
     },
     {
       "question": "Sind chinesische Nudeln zum Abnehmen geeignet?",

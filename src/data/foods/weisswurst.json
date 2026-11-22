@@ -3,47 +3,166 @@
   "name": "Weißwurst",
   "emoji": "🌭",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 174595 (Bratwurst, veal, cooked), Werte je 100 g",
   "seo": {
     "title": "Weißwurst Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat eine Weißwurst? Nährwerte für Münchner Weißwurst, mit Brezel & süßem Senf. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 1,
-    "fat_per_100g": 22,
+    "calories_per_100g": 341,
+    "protein_per_100g": 14,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 31.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Weißwurst"
   },
   "variants": [
-    {"name": "Münchner Weißwurst (1 Stück)", "portion_g": 80, "calories": 200, "protein": 10, "carbs": 1, "fat": 18, "tip": "Klassiker"},
-    {"name": "2 Weißwürste mit Brezel", "portion_g": 260, "calories": 610, "protein": 24, "carbs": 45, "fat": 38, "tip": "Typisches Frühstück"},
-    {"name": "Weißwurst-Frühstück komplett", "portion_g": 400, "calories": 780, "protein": 30, "carbs": 55, "fat": 48, "tip": "Mit Brezel, Senf & Bier"},
-    {"name": "Weißwurst ohne Haut", "portion_g": 70, "calories": 175, "protein": 9, "carbs": 1, "fat": 15, "tip": "So wird sie gegessen"},
-    {"name": "Kalbsweißwurst", "portion_g": 80, "calories": 190, "protein": 11, "carbs": 1, "fat": 16, "tip": "Etwas kalorienärmer"},
-    {"name": "Mini-Weißwürste (3 Stück)", "portion_g": 120, "calories": 300, "protein": 14, "carbs": 2, "fat": 26, "tip": "Party-Variante"}
+    {
+      "name": "Münchner Weißwurst (1 Stück)",
+      "portion_g": 80,
+      "calories": 273,
+      "protein": 11,
+      "carbs": 0,
+      "fat": 25,
+      "tip": "Klassiker"
+    },
+    {
+      "name": "2 Weißwürste mit Brezel (160g + 1 Brezel 95g)",
+      "portion_g": 255,
+      "calories": 867,
+      "protein": 30,
+      "carbs": 66,
+      "fat": 54,
+      "tip": "Typisches Frühstück",
+      "basis": [
+        {
+          "g": 160
+        },
+        {
+          "slug": "brezel"
+        }
+      ]
+    },
+    {
+      "name": "Weißwurst ohne Haut",
+      "portion_g": 70,
+      "calories": 239,
+      "protein": 10,
+      "carbs": 0,
+      "fat": 22,
+      "tip": "So wird sie gegessen"
+    },
+    {
+      "name": "Mini-Weißwürste (3 Stück)",
+      "portion_g": 120,
+      "calories": 409,
+      "protein": 17,
+      "carbs": 0,
+      "fat": 38,
+      "tip": "Party-Variante"
+    }
   ],
   "comparison": [
-    {"name": "Bockwurst", "calories": 275, "emoji": "🌭"},
-    {"name": "Bratwurst", "calories": 313, "emoji": "🔥"},
-    {"name": "Nürnberger Rostbratwurst (3 St.)", "calories": 300, "emoji": "🌭"},
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+    {
+      "name": "Bockwurst",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst"
+        }
+      ]
+    },
+    {
+      "name": "Bratwurst",
+      "calories": 500,
+      "emoji": "🔥",
+      "basis": [
+        {
+          "slug": "bratwurst"
+        }
+      ]
+    },
+    {
+      "name": "Nürnberger Rostbratwurst (3 St.)",
+      "calories": 250,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "nuernberger-rostbratwurst",
+          "g": 75
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Nur 2 Stück", "text": "Zwei Weißwürste (160g) haben 400 kcal – ohne Beilagen. Beschränke dich auf 2 Stück für eine moderate Mahlzeit.", "icon": "✌️"},
-    {"title": "Brezel halbieren", "text": "Eine ganze Brezel hat ca. 210 kcal. Teile sie mit jemandem oder iss nur die Hälfte.", "icon": "🥨"},
-    {"title": "Süßer Senf ist kalorienarm", "text": "Süßer Senf hat nur ca. 100 kcal pro 100g – deutlich weniger als andere Saucen wie Ketchup oder Mayo.", "icon": "🟡"},
-    {"title": "Vor 12 Uhr", "text": "Traditionell isst man Weißwürste vor dem Mittagsläuten – und tatsächlich sind sie als Frühstück sinnvoller als als Abendessen.", "icon": "🕐"},
-    {"title": "Haut nicht mitessen", "text": "Die Wursthaut wird nicht mitgegessen – sie aufzuschneiden (zuzeln) spart zwar keine Kalorien, gehört aber zur Tradition.", "icon": "🔪"}
+    {
+      "title": "Nur 2 Stück",
+      "text": "Zwei Weißwürste (160g) haben rund 546 kcal, ohne Beilagen. Beschränke dich auf 2 Stück für eine moderate Mahlzeit.",
+      "icon": "✌️"
+    },
+    {
+      "title": "Brezel halbieren",
+      "text": "Eine ganze Brezel (95g) hat ca. 321 kcal. Teile sie mit jemandem oder iss nur die Hälfte.",
+      "icon": "🥨"
+    },
+    {
+      "title": "Senf statt Mayo",
+      "text": "Süßer Senf hat deutlich weniger Kalorien als Mayonnaise und passt traditionell zur Weißwurst.",
+      "icon": "🟡"
+    },
+    {
+      "title": "Vor 12 Uhr",
+      "text": "Traditionell isst man Weißwürste vor dem Mittagsläuten, und tatsächlich sind sie als Frühstück sinnvoller als als Abendessen.",
+      "icon": "🕐"
+    },
+    {
+      "title": "Haut nicht mitessen",
+      "text": "Die Wursthaut wird nicht mitgegessen. Sie aufzuschneiden (zuzeln) spart zwar keine Kalorien, gehört aber zur Tradition.",
+      "icon": "🔪"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat eine Weißwurst?", "answer": "Eine Weißwurst (80g) hat ca. 200 kcal. Zwei Weißwürste mit Brezel und süßem Senf kommen auf ca. 610-780 kcal."},
-    {"question": "Ist Weißwurst gesund?", "answer": "Weißwurst hat viel Fett (22g/100g) und ist nicht gerade ein Diät-Lebensmittel. Dafür enthält sie gutes Protein und wenig Kohlenhydrate."},
-    {"question": "Wie viele Weißwürste pro Person?", "answer": "Traditionell isst man 2-3 Weißwürste pro Person. Für eine kalorienärmere Mahlzeit reichen 2 Stück mit etwas Brezel."},
-    {"question": "Was hat mehr Kalorien: Weißwurst oder Bratwurst?", "answer": "Eine Bratwurst (313 kcal/100g) hat mehr Kalorien als eine Weißwurst (250 kcal/100g). Pro Stück ist die Bratwurst aber schwerer."},
-    {"question": "Wie isst man Weißwurst richtig?", "answer": "Die Haut wird nicht mitgegessen. Man kann die Wurst der Länge nach aufschneiden oder traditionell 'zuzeln' (aussaugen). Dazu süßer Senf und Brezel."},
-    {"question": "Warum isst man Weißwurst nur vormittags?", "answer": "Früher gab es keine Kühlung, daher mussten frische Weißwürste vor Mittag gegessen werden. Heute ist es Tradition, kein Muss."}
+    {
+      "question": "Wie viele Kalorien hat eine Weißwurst?",
+      "answer": "Eine Weißwurst (80g) hat ca. 273 kcal. Zwei Weißwürste mit einer Brezel kommen auf ca. 867 kcal."
+    },
+    {
+      "question": "Ist Weißwurst gesund?",
+      "answer": "Weißwurst hat viel Fett (rund 32g/100g) und ist nicht gerade ein Diät-Lebensmittel. Dafür enthält sie gutes Protein und wenig Kohlenhydrate."
+    },
+    {
+      "question": "Wie viele Weißwürste pro Person?",
+      "answer": "Traditionell isst man 2-3 Weißwürste pro Person. Für eine kalorienärmere Mahlzeit reichen 2 Stück mit etwas Brezel."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Weißwurst oder Bratwurst?",
+      "answer": "Pro 100g liegen beide nah beieinander: Weißwurst rund 341 kcal, Bratwurst rund 333 kcal. Pro Stück hat die Bratwurst (150g, rund 500 kcal) aber deutlich mehr als eine Weißwurst (80g, rund 273 kcal), weil sie schwerer ist."
+    },
+    {
+      "question": "Wie isst man Weißwurst richtig?",
+      "answer": "Die Haut wird nicht mitgegessen. Man kann die Wurst der Länge nach aufschneiden oder traditionell 'zuzeln' (aussaugen). Dazu süßer Senf und Brezel."
+    },
+    {
+      "question": "Warum isst man Weißwurst nur vormittags?",
+      "answer": "Früher gab es keine Kühlung, daher mussten frische Weißwürste vor Mittag gegessen werden. Heute ist es Tradition, kein Muss."
+    }
   ],
-  "related_foods": ["bratwurst", "bockwurst", "brezel", "leberkaese"]
+  "related_foods": [
+    "bratwurst",
+    "bockwurst",
+    "brezel",
+    "leberkaese"
+  ]
 }

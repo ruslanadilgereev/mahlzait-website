@@ -3,9 +3,10 @@
   "name": "Piña Colada",
   "emoji": "🍹",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710662 (Pina Colada: 151 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 153 kcal",
   "seo": {
     "title": "Piña Colada Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Piña Colada? Ein Standard-Cocktail (250 ml) liefert ca. 438 kcal. Alle Nährwerte pro 100 ml & pro Glas im Überblick.",
+    "description": "Wie viele Kalorien hat eine Piña Colada? Ein Standard-Cocktail (250 ml) liefert ca. 384 kcal. Alle Nährwerte pro 100 ml & pro Glas im Überblick.",
     "keywords": [
       "pina colada kalorien",
       "piña colada kcal",
@@ -17,109 +18,141 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 175,
-    "protein_per_100g": 0.5,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 0.4,
-    "typical_portion_g": 250,
+    "calories_per_100g": 151,
+    "protein_per_100g": 0.4,
+    "carbs_per_100g": 19.5,
+    "fat_per_100g": 2.1,
+    "fiber_per_100g": 0.1,
+    "typical_portion_g": 254,
     "typical_portion_name": "1 Cocktailglas (250 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (150 ml)",
-      "portion_g": 150,
-      "calories": 263,
-      "protein": 0.8,
-      "carbs": 36,
-      "fat": 9
+      "portion_g": 152,
+      "calories": 230,
+      "protein": 0.6,
+      "carbs": 29.6,
+      "fat": 3.2
     },
     {
       "name": "Standard-Cocktail (250 ml)",
-      "portion_g": 250,
-      "calories": 438,
-      "protein": 1.2,
-      "carbs": 60,
-      "fat": 15,
+      "portion_g": 254,
+      "calories": 384,
+      "protein": 1,
+      "carbs": 49.5,
+      "fat": 5.3,
       "tip": "Klassische Bar-Portion"
     },
     {
       "name": "Großes Glas (350 ml)",
-      "portion_g": 350,
-      "calories": 613,
-      "protein": 1.8,
-      "carbs": 84,
-      "fat": 21
+      "portion_g": 355,
+      "calories": 536,
+      "protein": 1.4,
+      "carbs": 69.2,
+      "fat": 7.5
     },
     {
       "name": "Fertigmix-Dose (200 ml)",
-      "portion_g": 200,
-      "calories": 350,
-      "protein": 1,
-      "carbs": 48,
-      "fat": 12,
-      "tip": "Vorgemischt aus der Dose"
+      "portion_g": 220,
+      "calories": 521,
+      "protein": 1.3,
+      "carbs": 60.7,
+      "fat": 16.7,
+      "tip": "Vorgemischt aus der Dose",
+      "basis": [
+        {
+          "fdcId": 168750,
+          "ml": 200,
+          "g": 220
+        }
+      ]
     },
     {
       "name": "Virgin Piña Colada, alkoholfrei (250 ml)",
-      "portion_g": 250,
-      "calories": 300,
-      "protein": 1,
-      "carbs": 50,
-      "fat": 10,
-      "tip": "Ohne Rum, dafür mehr Saft"
-    },
-    {
-      "name": "Light-Variante mit Kokoswasser (250 ml)",
-      "portion_g": 250,
-      "calories": 220,
-      "protein": 0.8,
-      "carbs": 38,
-      "fat": 5,
-      "tip": "Kokoscreme reduziert"
+      "portion_g": 254,
+      "calories": 325,
+      "protein": 1.2,
+      "carbs": 65.1,
+      "fat": 7.1,
+      "tip": "Ohne Rum, dafür mehr Saft",
+      "basis": [
+        {
+          "fdcId": 2710574,
+          "ml": 250,
+          "g": 254
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Aperol Spritz",
-      "calories": 180,
-      "emoji": "🥂"
+      "name": "Aperol Spritz (250ml)",
+      "calories": 175,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 250,
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Mojito",
-      "calories": 215,
-      "emoji": "🍸"
+      "name": "Mojito (250ml)",
+      "calories": 155,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "mojito",
+          "ml": 250,
+          "g": 254
+        }
+      ]
     },
     {
-      "name": "Caipirinha",
-      "calories": 250,
-      "emoji": "🍋"
+      "name": "Caipirinha (150g)",
+      "calories": 240,
+      "emoji": "🍋",
+      "basis": [
+        {
+          "slug": "caipirinha",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Bier (0,5 l)",
-      "calories": 210,
-      "emoji": "🍺"
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 500
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienfalle Kokoscreme",
-      "text": "Der größte Teil der Kalorien stammt nicht vom Rum, sondern aus der fettreichen Kokoscreme. Ein Standard-Cocktail kommt so auf rund 438 kcal.",
+      "text": "Neben dem Rum liefern vor allem der Zucker aus Ananassaft und süßer Kokoscreme die Kalorien. Ein Standard-Cocktail kommt so auf rund 384 kcal.",
       "icon": "🥥"
     },
     {
       "title": "Virgin spart kaum Kalorien",
-      "text": "Eine alkoholfreie Piña Colada (ca. 300 kcal pro Glas) ist nur etwas leichter, weil oft mehr Saft und Sirup verwendet werden. Der Zuckeranteil bleibt hoch.",
+      "text": "Eine alkoholfreie Piña Colada (ca. 325 kcal pro Glas) ist nur etwas leichter, weil oft mehr Saft und Sirup verwendet werden. Der Zuckeranteil bleibt hoch.",
       "icon": "🚫"
     },
     {
       "title": "Mit Kokoswasser leichter mixen",
-      "text": "Wer Kokoscreme teilweise durch Kokoswasser ersetzt, kommt auf etwa 220 kcal pro Glas und spart so fast die Hälfte der Kalorien.",
+      "text": "Wer Kokoscreme teilweise durch Kokoswasser ersetzt, spart einen guten Teil der Kalorien.",
       "icon": "💧"
     },
     {
       "title": "Als Dessert einplanen",
-      "text": "Mit etwa 60 g Kohlenhydraten pro Glas entspricht eine Piña Colada eher einem Nachtisch als einem Getränk. Am besten bewusst statt nebenbei genießen.",
+      "text": "Mit etwa 50 g Kohlenhydraten pro Glas entspricht eine Piña Colada eher einem Nachtisch als einem Getränk. Am besten bewusst statt nebenbei genießen.",
       "icon": "🍮"
     },
     {
@@ -131,27 +164,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Piña Colada?",
-      "answer": "Ein Standard-Cocktail mit 250 ml liefert rund 438 kcal. Pro 100 ml sind es etwa 175 kcal."
+      "answer": "Ein Standard-Cocktail mit 250 ml liefert laut USDA rund 384 kcal. Pro 100 ml sind es etwa 153 kcal."
     },
     {
       "question": "Warum hat eine Piña Colada so viele Kalorien?",
-      "answer": "Hauptursache ist die fettreiche Kokoscreme, dazu kommen Zucker aus dem Ananassaft und der Alkohol aus dem Rum. Zusammen ergibt das einen kaloriendichten Cocktail."
+      "answer": "Viel Zucker aus Ananassaft und süßer Kokoscreme, der Alkohol aus dem Rum und das Fett der Kokoscreme kommen zusammen. Das ergibt einen kaloriendichten Cocktail."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in einer Piña Colada?",
-      "answer": "Pro Glas (250 ml) sind es etwa 60 g Kohlenhydrate, überwiegend Zucker aus Ananassaft und Kokoscreme."
+      "answer": "Pro Glas (250 ml) sind es etwa 50 g Kohlenhydrate, überwiegend Zucker aus Ananassaft und Kokoscreme."
     },
     {
       "question": "Wie viel Protein hat eine Piña Colada?",
-      "answer": "Sehr wenig: nur etwa 1,2 g Eiweiß pro Glas. Als Eiweißquelle ist der Cocktail nicht geeignet."
+      "answer": "Sehr wenig: nur etwa 1 g Eiweiß pro Glas. Als Eiweißquelle ist der Cocktail nicht geeignet."
     },
     {
       "question": "Ist eine Piña Colada zum Abnehmen geeignet?",
-      "answer": "Eher nicht. Mit rund 438 kcal und 60 g Zucker pro Glas ist sie sehr kalorienreich. Wer abnehmen möchte, greift besser zu einer leichteren Variante mit Kokoswasser oder zu einem kalorienarmen Getränk."
+      "answer": "Eher nicht. Mit rund 384 kcal und rund 45 g Zucker pro Glas ist sie sehr kalorienreich. Wer abnehmen möchte, greift besser zu einer leichteren Variante mit Kokoswasser oder zu einem kalorienarmen Getränk."
     },
     {
       "question": "Hat die alkoholfreie Piña Colada weniger Kalorien?",
-      "answer": "Nur wenig. Eine Virgin Piña Colada hat etwa 300 kcal pro Glas, da häufig mehr Saft und Sirup statt Rum verwendet werden."
+      "answer": "Nur wenig. Eine Virgin Piña Colada hat laut USDA etwa 325 kcal pro Glas, da häufig mehr Saft und Sirup statt Rum verwendet werden."
     }
   ],
   "related_foods": [

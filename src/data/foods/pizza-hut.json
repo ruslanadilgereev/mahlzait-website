@@ -3,9 +3,10 @@
   "name": "Pizza Hut",
   "emoji": "🍕",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 172041 (PIZZA HUT 12\" Cheese Pizza, Pan Crust), Werte je 100 g",
   "seo": {
     "title": "Pizza Hut Kalorien: Nährwerte & Vergleich | Mahlzait",
-    "description": "Wie viele Kalorien hat Pizza Hut? Ein Stück Pan-Pizza (110g) hat ca. 286 kcal, eine ganze mittlere Pizza rund 1560 kcal. Nährwerte pro 100g & je Portion.",
+    "description": "Wie viele Kalorien hat Pizza Hut? Ein Stück Pan-Pizza (110g) hat ca. 308 kcal, eine ganze mittlere Pizza rund 1680 kcal. Nährwerte pro 100g & je Portion.",
     "keywords": [
       "pizza hut kalorien",
       "pizza hut kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 260,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 280,
+    "protein_per_100g": 11.7,
+    "carbs_per_100g": 29.9,
+    "fat_per_100g": 12.6,
+    "fiber_per_100g": 1.7,
     "typical_portion_g": 110,
     "typical_portion_name": "1 Stück Pan-Pizza"
   },
@@ -28,94 +29,150 @@
     {
       "name": "1 Stück Pan-Pizza (110g)",
       "portion_g": 110,
-      "calories": 286,
-      "protein": 12,
+      "calories": 308,
+      "protein": 13,
       "carbs": 33,
-      "fat": 11,
+      "fat": 14,
       "tip": "Standard-Stück"
+    },
+    {
+      "name": "1 Stück Thin 'n Crispy (69g)",
+      "portion_g": 69,
+      "calories": 209,
+      "protein": 11,
+      "carbs": 20,
+      "fat": 10,
+      "tip": "Dünner Boden, leichteres Stück",
+      "basis": [
+        {
+          "fdcId": 172042,
+          "g": 69
+        }
+      ]
     },
     {
       "name": "Personal Pan Pizza (250g)",
       "portion_g": 250,
-      "calories": 650,
-      "protein": 28,
+      "calories": 700,
+      "protein": 29,
       "carbs": 75,
-      "fat": 25
+      "fat": 32
     },
     {
       "name": "Halbe mittlere Pizza (300g)",
       "portion_g": 300,
-      "calories": 780,
-      "protein": 33,
+      "calories": 840,
+      "protein": 35,
       "carbs": 90,
-      "fat": 30
+      "fat": 38
     },
     {
       "name": "Ganze mittlere Pizza (600g)",
       "portion_g": 600,
-      "calories": 1560,
-      "protein": 66,
-      "carbs": 180,
-      "fat": 60
+      "calories": 1680,
+      "protein": 70,
+      "carbs": 179,
+      "fat": 76
     },
     {
       "name": "Ganze große Pizza (900g)",
       "portion_g": 900,
-      "calories": 2340,
-      "protein": 99,
-      "carbs": 270,
-      "fat": 90
+      "calories": 2484,
+      "protein": 98,
+      "carbs": 296,
+      "fat": 101,
+      "basis": [
+        {
+          "fdcId": 173291,
+          "g": 900
+        }
+      ]
     },
     {
-      "name": "Knoblauchbrot 4 Stück (120g)",
+      "name": "Knoblauchbrot (120g)",
       "portion_g": 120,
-      "calories": 360,
-      "protein": 8,
-      "carbs": 44,
-      "fat": 16,
-      "tip": "Beilage, andere Werte"
+      "calories": 412,
+      "protein": 15,
+      "carbs": 53,
+      "fat": 15,
+      "tip": "Beilage, andere Werte",
+      "basis": [
+        {
+          "fdcId": 170789,
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Chicken Wings 6 Stück (180g)",
       "portion_g": 180,
-      "calories": 430,
-      "protein": 38,
-      "carbs": 6,
-      "fat": 28,
-      "tip": "Beilage, andere Werte"
+      "calories": 497,
+      "protein": 31,
+      "carbs": 24,
+      "fat": 31,
+      "tip": "Beilage, andere Werte",
+      "basis": [
+        {
+          "fdcId": 2706071,
+          "g": 180
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Tiefkühl-Pizza Salami (1 Stück)",
-      "calories": 245,
-      "emoji": "🍕"
+      "name": "Tiefkühl-Pizza Salami (¼ Pizza, 80g)",
+      "calories": 219,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 2708635,
+          "g": 80
+        }
+      ]
     },
     {
-      "name": "Domino's Pizza (1 Stück)",
-      "calories": 275,
-      "emoji": "🍕"
+      "name": "Domino's Pizza (1 Stück, 75g)",
+      "calories": 193,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "dominos-pizza",
+          "g": 75
+        }
+      ]
     },
     {
-      "name": "Cheeseburger",
-      "calories": 300,
-      "emoji": "🍔"
+      "name": "Cheeseburger (165g)",
+      "calories": 488,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "cheeseburger"
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Stückzahl im Blick behalten",
-      "text": "Ein einzelnes Stück Pan-Pizza liefert ca. 286 kcal. Bei einer ganzen mittleren Pizza summiert sich das schnell auf rund 1560 kcal.",
+      "text": "Ein einzelnes Stück Pan-Pizza liefert ca. 308 kcal. Bei einer ganzen mittleren Pizza summiert sich das schnell auf rund 1680 kcal.",
       "icon": "🍕"
     },
     {
       "title": "Dünner Boden spart Kalorien",
-      "text": "Die dicke Pan-Variante hat mehr Teig und Öl. Eine Pizza mit dünnem Boden hat pro Stück spürbar weniger Kalorien.",
+      "text": "Die dicke Pan-Variante hat mehr Teig. Ein Stück Thin 'n Crispy (69g) hat mit ca. 209 kcal spürbar weniger als ein Stück Pan-Pizza.",
       "icon": "📏"
     },
     {
@@ -125,7 +182,7 @@
     },
     {
       "title": "Beilagen mitzählen",
-      "text": "Knoblauchbrot und Wings kommen schnell auf 360 bis 430 kcal pro Portion zusätzlich zur Pizza.",
+      "text": "Knoblauchbrot und Wings kommen schnell auf 412 bis 497 kcal pro Portion zusätzlich zur Pizza.",
       "icon": "🍗"
     },
     {
@@ -137,15 +194,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Pizza Hut?",
-      "answer": "Pizza Hut hat im Schnitt etwa 260 kcal pro 100g. Ein Stück Pan-Pizza (110g) liefert rund 286 kcal, eine ganze mittlere Pizza (600g) etwa 1560 kcal."
+      "answer": "Pizza Hut hat im Schnitt etwa 280 kcal pro 100g. Ein Stück Pan-Pizza (110g) liefert rund 308 kcal, eine ganze mittlere Pizza (600g) etwa 1680 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza Hut?",
-      "answer": "Ein einzelnes Stück Pan-Pizza wiegt rund 110g und hat etwa 286 kcal. Bei dünnem Boden oder Gemüse-Belag liegt der Wert etwas niedriger."
+      "answer": "Ein einzelnes Stück Pan-Pizza wiegt rund 110g und hat etwa 308 kcal. Ein dünneres Stück Thin 'n Crispy (69g) liegt bei rund 209 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Pizza Hut?",
-      "answer": "Pro 100g enthält die Pizza etwa 11g Eiweiß, hauptsächlich aus Käse und Belag. Eine mittlere Pizza kommt so auf rund 66g Protein."
+      "answer": "Pro 100g enthält die Pizza etwa 12g Eiweiß, hauptsächlich aus Käse und Belag. Eine mittlere Pizza kommt so auf rund 70g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Pizza Hut?",
@@ -153,7 +210,7 @@
     },
     {
       "question": "Ist Pizza Hut zum Abnehmen geeignet?",
-      "answer": "Eine ganze Pizza deckt mit über 1500 kcal einen großen Teil des Tagesbedarfs. Wer abnehmen möchte, beschränkt sich besser auf wenige Stücke und kombiniert sie mit Salat."
+      "answer": "Eine ganze mittlere Pizza deckt mit rund 1680 kcal einen großen Teil des Tagesbedarfs. Wer abnehmen möchte, beschränkt sich besser auf wenige Stücke und kombiniert sie mit Salat."
     },
     {
       "question": "Ist Pizza Hut gesund?",

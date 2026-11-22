@@ -3,50 +3,256 @@
   "name": "Wrap",
   "emoji": "🌯",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2706881 (Sandwich wrap, NFS), Werte je 100 g",
   "seo": {
     "title": "Wrap Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Wrap? Nährwerte pro Stück & 100g. Chicken, Veggie & Caesar Wrap im Vergleich + kalorienarme Tipps.",
-    "keywords": ["wrap kalorien", "kalorien wrap", "wrap nährwerte", "chicken wrap kalorien", "tortilla wrap kalorien", "wrap kalorien pro stück", "veggie wrap kalorien", "caesar wrap kalorien"]
+    "keywords": [
+      "wrap kalorien",
+      "kalorien wrap",
+      "wrap nährwerte",
+      "chicken wrap kalorien",
+      "tortilla wrap kalorien",
+      "wrap kalorien pro stück",
+      "veggie wrap kalorien",
+      "caesar wrap kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 190,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 7,
+    "calories_per_100g": 232,
+    "protein_per_100g": 12.8,
+    "carbs_per_100g": 23.3,
+    "fat_per_100g": 9.4,
     "fiber_per_100g": 1.5,
     "typical_portion_g": 280,
     "typical_portion_name": "1 Wrap"
   },
   "variants": [
-    { "name": "Chicken Wrap (gegrillt)", "portion_g": 280, "calories": 480, "protein": 30, "carbs": 40, "fat": 22 },
-    { "name": "Caesar Wrap", "portion_g": 300, "calories": 550, "protein": 28, "carbs": 42, "fat": 30 },
-    { "name": "Veggie Wrap", "portion_g": 260, "calories": 380, "protein": 12, "carbs": 46, "fat": 16, "tip": "Kalorienärmste" },
-    { "name": "Thunfisch Wrap", "portion_g": 280, "calories": 460, "protein": 28, "carbs": 40, "fat": 20 },
-    { "name": "Falafel Wrap", "portion_g": 300, "calories": 520, "protein": 16, "carbs": 52, "fat": 26 },
-    { "name": "Pulled Pork Wrap", "portion_g": 300, "calories": 580, "protein": 32, "carbs": 44, "fat": 30 },
-    { "name": "Lachs Wrap", "portion_g": 280, "calories": 490, "protein": 26, "carbs": 38, "fat": 24 },
-    { "name": "Protein Wrap (Fitness)", "portion_g": 260, "calories": 380, "protein": 36, "carbs": 30, "fat": 12, "tip": "Proteinreichste" }
+    {
+      "name": "Chicken Wrap (gegrillt)",
+      "portion_g": 280,
+      "calories": 706,
+      "protein": 58,
+      "carbs": 48,
+      "fat": 29,
+      "basis": [
+        {
+          "fdcId": 2707017,
+          "g": 280
+        }
+      ]
+    },
+    {
+      "name": "Caesar Wrap",
+      "portion_g": 300,
+      "calories": 843,
+      "protein": 57,
+      "carbs": 48,
+      "fat": 45,
+      "basis": [
+        {
+          "fdcId": 2707017,
+          "g": 270
+        },
+        {
+          "fdcId": 169055,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Veggie Wrap",
+      "portion_g": 260,
+      "calories": 416,
+      "protein": 14,
+      "carbs": 51,
+      "fat": 17,
+      "tip": "Kalorienärmste",
+      "basis": [
+        {
+          "fdcId": 2709136,
+          "g": 260
+        }
+      ]
+    },
+    {
+      "name": "Thunfisch Wrap",
+      "portion_g": 280,
+      "calories": 683,
+      "protein": 30,
+      "carbs": 48,
+      "fat": 41,
+      "basis": [
+        {
+          "fdcId": 2707038,
+          "g": 280
+        }
+      ]
+    },
+    {
+      "name": "Falafel Wrap",
+      "portion_g": 300,
+      "calories": 795,
+      "protein": 19,
+      "carbs": 81,
+      "fat": 44,
+      "basis": [
+        {
+          "fdcId": 2707483,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Pulled Pork Wrap",
+      "portion_g": 300,
+      "calories": 647,
+      "protein": 33,
+      "carbs": 61,
+      "fat": 29,
+      "basis": [
+        {
+          "fdcId": 2707824,
+          "g": 70
+        },
+        {
+          "fdcId": 2706399,
+          "g": 150
+        },
+        {
+          "fdcId": 2709815,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Lachs Wrap",
+      "portion_g": 280,
+      "calories": 427,
+      "protein": 23,
+      "carbs": 39,
+      "fat": 20,
+      "basis": [
+        {
+          "fdcId": 2707824,
+          "g": 70
+        },
+        {
+          "fdcId": 173687,
+          "g": 80
+        },
+        {
+          "fdcId": 173418,
+          "g": 30
+        },
+        {
+          "fdcId": 169248,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Döner Kebab", "calories": 696, "emoji": "🥙" },
-    { "name": "Sandwich", "calories": 380, "emoji": "🥪" },
-    { "name": "Burrito", "calories": 650, "emoji": "🌯" },
-    { "name": "Big Mac", "calories": 563, "emoji": "🍔" }
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Sandwich (150g)",
+      "calories": 431,
+      "emoji": "🥪",
+      "basis": [
+        {
+          "slug": "sandwich"
+        }
+      ]
+    },
+    {
+      "name": "Burrito (400g)",
+      "calories": 876,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "burrito"
+        }
+      ]
+    },
+    {
+      "name": "Big Mac",
+      "calories": 563,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Vollkorn-Tortilla verwenden", "text": "Vollkorn-Wraps haben mehr Ballaststoffe und halten länger satt – bei gleichen Kalorien wie weiße Tortillas.", "icon": "🌾" },
-    { "title": "Soße sparsam dosieren", "text": "Mayo-basierte Saucen fügen 100-150 kcal hinzu. Senf, Salsa oder Joghurt-Dressing sind leichtere Alternativen.", "icon": "🫙" },
-    { "title": "Mehr Gemüse, weniger Fleisch", "text": "Die Füllung mit extra Salat, Gurke und Tomate strecken – macht voller bei weniger Kalorien.", "icon": "🥗" },
-    { "title": "Protein-Wraps nutzen", "text": "Protein-Tortillas aus dem Supermarkt haben 120 kcal statt 200 kcal und deutlich mehr Protein.", "icon": "💪" },
-    { "title": "Selbst machen spart Kalorien", "text": "Wraps vom Imbiss haben oft doppelt so viel Soße und Fett wie selbstgemachte. Du kontrollierst die Zutaten.", "icon": "👨‍🍳" }
+    {
+      "title": "Vollkorn-Tortilla verwenden",
+      "text": "Vollkorn-Wraps haben mehr Ballaststoffe und halten länger satt, bei gleichen Kalorien wie weiße Tortillas.",
+      "icon": "🌾"
+    },
+    {
+      "title": "Soße sparsam dosieren",
+      "text": "Mayo-basierte Saucen bringen viele Extra-Kalorien. Senf, Salsa oder Joghurt-Dressing sind leichtere Alternativen.",
+      "icon": "🫙"
+    },
+    {
+      "title": "Mehr Gemüse, weniger Fleisch",
+      "text": "Die Füllung mit extra Salat, Gurke und Tomate strecken, das macht voller bei weniger Kalorien.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Protein-Wraps nutzen",
+      "text": "Protein-Tortillas aus dem Supermarkt haben oft weniger Kalorien und deutlich mehr Protein.",
+      "icon": "💪"
+    },
+    {
+      "title": "Selbst machen spart Kalorien",
+      "text": "Wraps vom Imbiss haben oft deutlich mehr Soße und Fett als selbstgemachte. Du kontrollierst die Zutaten.",
+      "icon": "👨‍🍳"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Wrap?", "answer": "Ein Chicken Wrap hat ca. 480 kcal, ein Caesar Wrap ca. 550 kcal und ein Veggie Wrap ca. 380 kcal. Die Kalorien variieren stark je nach Füllung und Soße." },
-    { "question": "Ist ein Wrap gesünder als ein Burger?", "answer": "Nicht unbedingt. Ein Wrap kann genauso viele Kalorien haben wie ein Burger. Der Vorteil: Mehr Gemüse und Ballaststoffe passen rein. Es kommt auf die Füllung an." },
-    { "question": "Wie viele Kalorien hat eine Tortilla?", "answer": "Eine Weizen-Tortilla (60g) hat ca. 200 kcal, eine Vollkorn-Tortilla ca. 180 kcal. Low-Carb-Tortillas gibt es mit nur 100-120 kcal." },
-    { "question": "Welcher Wrap hat die wenigsten Kalorien?", "answer": "Ein Veggie Wrap mit viel Gemüse und Joghurt-Dressing hat ca. 380 kcal. Noch leichter: Salat-Wrap ohne Tortilla (Salatblatt als Hülle) mit nur 200 kcal." },
-    { "question": "Wie viel Protein hat ein Wrap?", "answer": "Ein Chicken Wrap liefert ca. 30g Protein. Ein Protein-Fitness-Wrap mit extra Hähnchen und Protein-Tortilla kann 36g erreichen." },
-    { "question": "Was hat weniger Kalorien: Wrap oder Döner?", "answer": "Ein Chicken Wrap (480 kcal) hat weniger als ein Döner (696 kcal). Das liegt am dünneren Fladenbrot und weniger Soße." }
+    {
+      "question": "Wie viele Kalorien hat ein Wrap?",
+      "answer": "Ein Chicken Wrap (280g) hat ca. 706 kcal, ein Caesar Wrap (300g) ca. 843 kcal und ein Veggie Wrap (260g) ca. 416 kcal. Die Kalorien variieren stark je nach Füllung und Soße."
+    },
+    {
+      "question": "Ist ein Wrap gesünder als ein Burger?",
+      "answer": "Nicht unbedingt. Ein Wrap kann genauso viele Kalorien haben wie ein Burger. Der Vorteil: Mehr Gemüse und Ballaststoffe passen rein. Es kommt auf die Füllung an."
+    },
+    {
+      "question": "Wie viele Kalorien hat eine Tortilla?",
+      "answer": "Eine Weizen-Tortilla (60g) hat ca. 184 kcal. Vollkorn-Tortillas liegen etwa gleichauf, Low-Carb-Tortillas haben je nach Produkt weniger."
+    },
+    {
+      "question": "Welcher Wrap hat die wenigsten Kalorien?",
+      "answer": "Ein Veggie Wrap mit viel Gemüse (260g) hat ca. 416 kcal. Noch leichter: Salat-Wrap ohne Tortilla (Salatblatt als Hülle)."
+    },
+    {
+      "question": "Wie viel Protein hat ein Wrap?",
+      "answer": "Ein Chicken Wrap (280g) liefert ca. 58g Protein, ein Veggie Wrap nur rund 14g."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Wrap oder Döner?",
+      "answer": "Ein Chicken Wrap (280g, ca. 706 kcal) liegt etwa gleichauf mit einem Döner (696 kcal). Ein Veggie Wrap (416 kcal) ist deutlich leichter."
+    }
   ],
-  "related_foods": ["falafel", "chicken-nuggets", "burger", "gyros"]
+  "related_foods": [
+    "falafel",
+    "chicken-nuggets",
+    "burger",
+    "gyros"
+  ]
 }

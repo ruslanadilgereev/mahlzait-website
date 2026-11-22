@@ -3,48 +3,187 @@
   "name": "Fischstäbchen",
   "emoji": "🐟",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 174195 (Fish, fish sticks, frozen, prepared), Werte je 100 g",
   "seo": {
     "title": "Fischstäbchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Fischstäbchen? Nährwerte pro Stück, aus dem Ofen & Pfanne. Kostenloser Kalorien-Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 220,
-    "protein_per_100g": 13,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 277,
+    "protein_per_100g": 11,
+    "carbs_per_100g": 21.7,
+    "fat_per_100g": 16.2,
+    "fiber_per_100g": 1.5,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Fischstäbchen"
   },
   "variants": [
-    {"name": "Fischstäbchen aus dem Ofen (5 Stück)", "portion_g": 150, "calories": 300, "protein": 20, "carbs": 27, "fat": 13, "tip": "Kalorienärmste Zubereitungsart"},
-    {"name": "Fischstäbchen aus der Pfanne (5 Stück)", "portion_g": 150, "calories": 370, "protein": 20, "carbs": 27, "fat": 20, "tip": "Knuspriger, aber fettiger"},
-    {"name": "1 Fischstäbchen", "portion_g": 30, "calories": 66, "protein": 4, "carbs": 5, "fat": 3, "tip": "Einzelnes Stäbchen"},
-    {"name": "Fischstäbchen mit Kartoffelpüree", "portion_g": 400, "calories": 550, "protein": 26, "carbs": 55, "fat": 24, "tip": "Kinderessen-Klassiker"},
-    {"name": "Fischstäbchen-Burger (3 Stück im Brötchen)", "portion_g": 200, "calories": 420, "protein": 18, "carbs": 45, "fat": 18, "tip": "Fish-Finger-Sandwich"},
-    {"name": "Fischstäbchen aus der Heißluftfritteuse", "portion_g": 150, "calories": 280, "protein": 20, "carbs": 27, "fat": 10, "tip": "Weniger Fett als Pfanne"},
-    {"name": "Bio-Fischstäbchen (5 Stück)", "portion_g": 150, "calories": 310, "protein": 22, "carbs": 25, "fat": 14, "tip": "Mehr Fisch, weniger Panade"}
+    {
+      "name": "Fischstäbchen aus dem Ofen (5 Stück)",
+      "portion_g": 150,
+      "calories": 416,
+      "protein": 17,
+      "carbs": 33,
+      "fat": 24,
+      "tip": "Kalorienärmste Zubereitungsart"
+    },
+    {
+      "name": "1 Fischstäbchen",
+      "portion_g": 30,
+      "calories": 83,
+      "protein": 3,
+      "carbs": 7,
+      "fat": 5,
+      "tip": "Einzelnes Stäbchen"
+    },
+    {
+      "name": "10 Fischstäbchen (300g)",
+      "portion_g": 300,
+      "calories": 831,
+      "protein": 33,
+      "carbs": 65,
+      "fat": 49
+    },
+    {
+      "name": "Fischstäbchen mit Kartoffelpüree",
+      "portion_g": 400,
+      "calories": 701,
+      "protein": 22,
+      "carbs": 77,
+      "fat": 34,
+      "tip": "Kinderessen-Klassiker",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 2709496,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Fischstäbchen-Burger (3 Stück im Brötchen)",
+      "portion_g": 140,
+      "calories": 389,
+      "protein": 15,
+      "carbs": 45,
+      "fat": 17,
+      "tip": "Fish-Finger-Sandwich",
+      "basis": [
+        {
+          "g": 90
+        },
+        {
+          "fdcId": 172796,
+          "g": 50
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Backfisch", "calories": 250, "emoji": "🐟"},
-    {"name": "Chicken Nuggets", "calories": 250, "emoji": "🍗"},
-    {"name": "Fish & Chips", "calories": 240, "emoji": "🐟"},
-    {"name": "Kabeljau pur", "calories": 82, "emoji": "🐟"}
+    {
+      "name": "Backfisch (1 Filet, 200g)",
+      "calories": 438,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "backfisch",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Chicken Nuggets (6 Stück, 100g)",
+      "calories": 307,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-nuggets",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Fish & Chips (1 Portion, 400g)",
+      "calories": 840,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "fish-and-chips",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Kabeljau gegart (150g)",
+      "calories": 158,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "fdcId": 171956,
+          "g": 150
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Ofen statt Pfanne", "text": "Im Ofen zubereitete Fischstäbchen haben ca. 70 kcal weniger als aus der Pfanne – bei fast gleicher Knusprigkeit.", "icon": "🔥"},
-    {"title": "Heißluftfritteuse", "text": "Die Heißluftfritteuse macht Fischstäbchen knusprig mit minimalem Fett – fast so gut wie frittiert.", "icon": "🌪️"},
-    {"title": "Fischanteil prüfen", "text": "Achte auf den Fischanteil: 65%+ ist gut. Billige Produkte haben oft nur 50% Fisch und mehr Panade.", "icon": "🔍"},
-    {"title": "Gemüse dazu", "text": "Statt nur Fischstäbchen mit Pommes: Gemüse wie Erbsen, Mais oder Brokkoli dazu – macht satter und gesünder.", "icon": "🥦"},
-    {"title": "Portionskontrolle", "text": "5 Fischstäbchen (300 kcal) sind eine moderate Portion. Oft werden 8-10 Stück aufgetischt – das sind schon 530-660 kcal.", "icon": "5️⃣"}
+    {
+      "title": "Ofen statt Pfanne",
+      "text": "Im Ofen zubereitete Fischstäbchen brauchen kein zusätzliches Bratfett und haben deshalb weniger Kalorien als aus der Pfanne, bei fast gleicher Knusprigkeit.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Heißluftfritteuse",
+      "text": "Die Heißluftfritteuse macht Fischstäbchen knusprig mit minimalem Fett, fast so gut wie frittiert.",
+      "icon": "🌪️"
+    },
+    {
+      "title": "Fischanteil prüfen",
+      "text": "Achte auf den Fischanteil: 65%+ ist gut. Billige Produkte haben oft nur 50% Fisch und mehr Panade.",
+      "icon": "🔍"
+    },
+    {
+      "title": "Gemüse dazu",
+      "text": "Statt nur Fischstäbchen mit Pommes: Gemüse wie Erbsen, Mais oder Brokkoli dazu, das macht satter und gesünder.",
+      "icon": "🥦"
+    },
+    {
+      "title": "Portionskontrolle",
+      "text": "5 Fischstäbchen (150g, ca. 416 kcal) sind eine moderate Portion. Oft werden 8-10 Stück aufgetischt, das sind schon rund 665 bis 831 kcal.",
+      "icon": "5️⃣"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Fischstäbchen?", "answer": "Ein einzelnes Fischstäbchen (30g) hat ca. 66 kcal. Fünf Stück aus dem Ofen kommen auf ca. 300 kcal."},
-    {"question": "Sind Fischstäbchen gesund?", "answer": "Fischstäbchen enthalten Protein und Omega-3 aus dem Fisch, aber auch Fett aus der Panade. Im Ofen zubereitet und mit Gemüse sind sie eine akzeptable Mahlzeit."},
-    {"question": "Wie viele Fischstäbchen pro Person?", "answer": "Für Kinder reichen 3-4 Stück, für Erwachsene 5-7 Stück. Mit Beilagen (Kartoffeln, Gemüse) reichen 5 Stück für eine sättigende Mahlzeit."},
-    {"question": "Ofen oder Pfanne – was ist besser?", "answer": "Ofen ist kalorienärmer (300 vs. 370 kcal für 5 Stück). Die Pfanne macht sie knuspriger, braucht aber extra Fett."},
-    {"question": "Welcher Fisch ist in Fischstäbchen?", "answer": "In den meisten Fischstäbchen ist Alaska-Seelachs (kein echter Lachs). Manche Premium-Produkte enthalten Kabeljau. Auf die Zutatenliste schauen!"},
-    {"question": "Kann man Fischstäbchen einfrieren?", "answer": "Fischstäbchen sind ein Tiefkühlprodukt und werden tiefgekühlt gelagert. Einmal aufgetaut sollten sie nicht wieder eingefroren werden."}
+    {
+      "question": "Wie viele Kalorien hat ein Fischstäbchen?",
+      "answer": "Ein einzelnes Fischstäbchen (30g) hat ca. 83 kcal. Fünf Stück aus dem Ofen kommen auf ca. 416 kcal."
+    },
+    {
+      "question": "Sind Fischstäbchen gesund?",
+      "answer": "Fischstäbchen enthalten Protein und Omega-3 aus dem Fisch, aber auch Fett aus der Panade. Im Ofen zubereitet und mit Gemüse sind sie eine akzeptable Mahlzeit."
+    },
+    {
+      "question": "Wie viele Fischstäbchen pro Person?",
+      "answer": "Für Kinder reichen 3-4 Stück, für Erwachsene 5-7 Stück. Mit Beilagen (Kartoffeln, Gemüse) reichen 5 Stück für eine sättigende Mahlzeit."
+    },
+    {
+      "question": "Ofen oder Pfanne: Was ist besser?",
+      "answer": "Der Ofen ist kalorienärmer, weil kein zusätzliches Fett nötig ist: 5 Stück (150g) kommen auf ca. 416 kcal. Die Pfanne macht sie knuspriger, braucht aber extra Fett."
+    },
+    {
+      "question": "Welcher Fisch ist in Fischstäbchen?",
+      "answer": "In den meisten Fischstäbchen ist Alaska-Seelachs (kein echter Lachs). Manche Premium-Produkte enthalten Kabeljau. Auf die Zutatenliste schauen!"
+    },
+    {
+      "question": "Kann man Fischstäbchen einfrieren?",
+      "answer": "Fischstäbchen sind ein Tiefkühlprodukt und werden tiefgekühlt gelagert. Einmal aufgetaut sollten sie nicht wieder eingefroren werden."
+    }
   ],
-  "related_foods": ["backfisch", "fish-and-chips", "chicken-nuggets", "forelle"]
+  "related_foods": [
+    "backfisch",
+    "fish-and-chips",
+    "chicken-nuggets",
+    "forelle"
+  ]
 }

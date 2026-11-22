@@ -3,6 +3,7 @@
   "name": "Pepperoni",
   "emoji": "🌶️",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169766 (Peppers, hot pickled, canned), Werte je 100 g",
   "seo": {
     "title": "Pepperoni Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Pepperoni? Eingelegte Peperoni haben nur ca. 22 kcal pro 100g. Nährwerte je Portion, Varianten im Vergleich & Tipps zum Abnehmen.",
@@ -17,10 +18,10 @@
   },
   "overview": {
     "calories_per_100g": 22,
-    "protein_per_100g": 1,
-    "carbs_per_100g": 3.5,
-    "fat_per_100g": 0.3,
-    "fiber_per_100g": 1.5,
+    "protein_per_100g": 0.8,
+    "carbs_per_100g": 4.6,
+    "fat_per_100g": 0.4,
+    "fiber_per_100g": 2.6,
     "typical_portion_g": 30,
     "typical_portion_name": "Salat-Portion (ca. 30g)"
   },
@@ -30,7 +31,7 @@
       "portion_g": 12,
       "calories": 3,
       "protein": 0,
-      "carbs": 0,
+      "carbs": 1,
       "fat": 0
     },
     {
@@ -46,7 +47,7 @@
       "name": "Antipasti-Portion (50g)",
       "portion_g": 50,
       "calories": 11,
-      "protein": 1,
+      "protein": 0,
       "carbs": 2,
       "fat": 0
     },
@@ -54,26 +55,38 @@
       "name": "Eingelegt, Abtropfgewicht Glas (150g)",
       "portion_g": 150,
       "calories": 33,
-      "protein": 2,
-      "carbs": 5,
-      "fat": 0
+      "protein": 1,
+      "carbs": 7,
+      "fat": 1
     },
     {
       "name": "Frische rohe Pepperoni (100g)",
       "portion_g": 100,
       "calories": 40,
-      "protein": 1,
+      "protein": 2,
       "carbs": 9,
       "fat": 0,
-      "tip": "Roh etwas mehr Kohlenhydrate"
+      "tip": "Roh etwas mehr Kohlenhydrate",
+      "basis": [
+        {
+          "fdcId": 170497,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Getrocknet / Chiliflocken (10g)",
       "portion_g": 10,
-      "calories": 28,
+      "calories": 32,
       "protein": 1,
-      "carbs": 5,
-      "fat": 1
+      "carbs": 7,
+      "fat": 1,
+      "basis": [
+        {
+          "fdcId": 168570,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Pepperoni-Wurst (Salami-Art, 30g)",
@@ -82,24 +95,48 @@
       "protein": 6,
       "carbs": 0,
       "fat": 14,
-      "tip": "Anderes Produkt – fettreiche Wurst"
+      "tip": "Anderes Produkt: fettreiche Wurst",
+      "basis": [
+        {
+          "fdcId": 174575,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Gurke",
-      "calories": 4,
-      "emoji": "🥒"
+      "name": "Gurke (30g)",
+      "calories": 5,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "fdcId": 168409,
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Paprika",
-      "calories": 9,
-      "emoji": "🫑"
+      "name": "Paprika (30g)",
+      "calories": 8,
+      "emoji": "🫑",
+      "basis": [
+        {
+          "slug": "paprika",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Oliven",
-      "calories": 44,
-      "emoji": "🫒"
+      "name": "Oliven (30g)",
+      "calories": 35,
+      "emoji": "🫒",
+      "basis": [
+        {
+          "slug": "oliven",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
@@ -140,11 +177,11 @@
     },
     {
       "question": "Wie viele Kohlenhydrate haben Pepperoni?",
-      "answer": "Eingelegte Pepperoni enthalten rund 3,5g Kohlenhydrate pro 100g. Eine 30g-Portion kommt damit auf etwa 1g Kohlenhydrate."
+      "answer": "Eingelegte Pepperoni enthalten rund 4,6g Kohlenhydrate pro 100g. Eine 30g-Portion kommt damit auf etwa 1,4g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein haben Pepperoni?",
-      "answer": "Mit etwa 1g Eiweiß pro 100g sind Pepperoni keine nennenswerte Proteinquelle. Sie dienen eher als kalorienarme Würze."
+      "answer": "Mit unter 1g Eiweiß pro 100g sind Pepperoni keine nennenswerte Proteinquelle. Sie dienen eher als kalorienarme Würze."
     },
     {
       "question": "Sind Pepperoni zum Abnehmen geeignet?",

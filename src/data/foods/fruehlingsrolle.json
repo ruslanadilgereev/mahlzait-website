@@ -3,48 +3,203 @@
   "name": "Frühlingsrolle",
   "emoji": "🥟",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2708700 (Egg roll, meatless), Werte je 100 g",
   "seo": {
     "title": "Frühlingsrolle Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Frühlingsrolle? Frittiert, gebacken oder Sommerrolle – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat eine Frühlingsrolle? Mit Gemüse, Fleisch oder Garnelen: alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 230,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 25,
-    "fat_per_100g": 12,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 270,
+    "protein_per_100g": 5.6,
+    "carbs_per_100g": 30,
+    "fat_per_100g": 14.1,
+    "fiber_per_100g": 2.3,
     "typical_portion_g": 120,
     "typical_portion_name": "1 Frühlingsrolle"
   },
   "variants": [
-    {"name": "Frühlingsrolle frittiert (Gemüse)", "portion_g": 120, "calories": 276, "protein": 7, "carbs": 30, "fat": 14, "tip": "Standard-Imbiss"},
-    {"name": "Frühlingsrolle frittiert (Fleisch)", "portion_g": 130, "calories": 320, "protein": 12, "carbs": 28, "fat": 18},
-    {"name": "Mini-Frühlingsrollen (5 Stück)", "portion_g": 150, "calories": 345, "protein": 9, "carbs": 38, "fat": 18, "tip": "Beliebter Snack"},
-    {"name": "Sommerrolle (Rice Paper Roll)", "portion_g": 120, "calories": 140, "protein": 8, "carbs": 22, "fat": 2, "tip": "Kalorienärmste Variante"},
-    {"name": "Frühlingsrolle aus dem Ofen", "portion_g": 120, "calories": 210, "protein": 7, "carbs": 28, "fat": 8, "tip": "Weniger Fett als frittiert"},
-    {"name": "Frühlingsrolle mit Garnelen", "portion_g": 130, "calories": 290, "protein": 14, "carbs": 26, "fat": 14, "tip": "Mehr Protein"},
-    {"name": "Vietnamesische Nem (2 Stück)", "portion_g": 160, "calories": 368, "protein": 14, "carbs": 32, "fat": 20}
+    {
+      "name": "Frühlingsrolle frittiert (Gemüse)",
+      "portion_g": 120,
+      "calories": 324,
+      "protein": 7,
+      "carbs": 36,
+      "fat": 17,
+      "tip": "Standard-Imbiss"
+    },
+    {
+      "name": "Frühlingsrolle frittiert (Fleisch)",
+      "portion_g": 130,
+      "calories": 354,
+      "protein": 10,
+      "carbs": 35,
+      "fat": 19,
+      "basis": [
+        {
+          "fdcId": 2708702,
+          "g": 130
+        }
+      ]
+    },
+    {
+      "name": "Frühlingsrolle mit Garnelen",
+      "portion_g": 130,
+      "calories": 335,
+      "protein": 9,
+      "carbs": 35,
+      "fat": 18,
+      "tip": "Mehr Protein als die Gemüse-Variante",
+      "basis": [
+        {
+          "fdcId": 2708701,
+          "g": 130
+        }
+      ]
+    },
+    {
+      "name": "Frühlingsrolle mit süß-saurer Sauce (28g)",
+      "portion_g": 148,
+      "calories": 367,
+      "protein": 7,
+      "carbs": 47,
+      "fat": 17,
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "fdcId": 2710296,
+          "g": 28
+        }
+      ]
+    },
+    {
+      "name": "Mini-Frühlingsrollen (5 Stück)",
+      "portion_g": 65,
+      "calories": 176,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 9,
+      "tip": "Beliebter Snack"
+    },
+    {
+      "name": "Vietnamesische Nem (2 Stück)",
+      "portion_g": 160,
+      "calories": 435,
+      "protein": 12,
+      "carbs": 43,
+      "fat": 24,
+      "tip": "Angenähert als Rolle mit Schweinefleisch",
+      "basis": [
+        {
+          "fdcId": 2708702,
+          "g": 160
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Wan-Tan frittiert", "calories": 310, "emoji": "🥟"},
-    {"name": "Samosa", "calories": 260, "emoji": "🔺"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Edamame", "calories": 120, "emoji": "🫛"}
+    {
+      "name": "Wan-Tan frittiert (6 Stück)",
+      "calories": 288,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "fdcId": 2708705,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Samosa (1 Stück)",
+      "calories": 310,
+      "emoji": "🔺",
+      "basis": [
+        {
+          "fdcId": 2708730,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Edamame",
+      "calories": 122,
+      "emoji": "🫛",
+      "basis": [
+        {
+          "slug": "edamame"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Sommerrolle statt Frühlingsrolle", "text": "Sommerrollen (Rice Paper) sind nicht frittiert und haben nur ca. 140 kcal – halb so viel wie frittierte.", "icon": "🌿"},
-    {"title": "Aus dem Ofen zubereiten", "text": "Im Ofen gebacken statt frittiert sparst du ca. 30% Fett und damit 60-80 kcal pro Rolle.", "icon": "🔥"},
-    {"title": "Süß-Sauer-Sauce portionieren", "text": "Die Dip-Sauce hat ca. 40-60 kcal pro Portion. Sparsam dippen spart Kalorien.", "icon": "🥫"},
-    {"title": "Als Vorspeise, nicht als Hauptgericht", "text": "Eine Frühlingsrolle als Vorspeise ist ok. 4-5 Stück als Hauptgericht können schnell 1000+ kcal erreichen.", "icon": "☝️"},
-    {"title": "Gemüse-Füllung bevorzugen", "text": "Gemüse-Frühlingsrollen haben ca. 15% weniger Kalorien als Fleisch-Varianten.", "icon": "🥬"}
+    {
+      "title": "Sommerrolle statt Frühlingsrolle",
+      "text": "Sommerrollen aus Reispapier werden nicht frittiert und sind deshalb deutlich leichter als frittierte Frühlingsrollen.",
+      "icon": "🌿"
+    },
+    {
+      "title": "Aus dem Ofen zubereiten",
+      "text": "Im Ofen gebacken statt frittiert sparst du Fett und Kalorien.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Süß-Sauer-Sauce portionieren",
+      "text": "Die süß-saure Dip-Sauce (28g) hat rund 43 kcal. Sparsam dippen spart Kalorien.",
+      "icon": "🥫"
+    },
+    {
+      "title": "Als Vorspeise, nicht als Hauptgericht",
+      "text": "Eine Frühlingsrolle als Vorspeise ist ok. 4 Stück (je 120g) als Hauptgericht kommen schon auf rund 1.296 kcal.",
+      "icon": "☝️"
+    },
+    {
+      "title": "Füllung ist zweitrangig",
+      "text": "Laut FDC haben Gemüse- und Fleisch-Frühlingsrollen pro 100g fast gleich viele Kalorien (270 und 272 kcal). Fleisch bringt aber etwas mehr Protein.",
+      "icon": "🥬"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat eine Frühlingsrolle?", "answer": "Eine frittierte Frühlingsrolle hat ca. 276-320 kcal, je nach Füllung. Eine nicht-frittierte Sommerrolle hat nur ca. 140 kcal."},
-    {"question": "Sind Frühlingsrollen ungesund?", "answer": "Frittierte Frühlingsrollen haben relativ viel Fett. Als gelegentlicher Snack sind sie in Ordnung. Sommerrollen oder Ofen-Varianten sind deutlich gesünder."},
-    {"question": "Wie viele Kalorien haben 5 Mini-Frühlingsrollen?", "answer": "5 Mini-Frühlingsrollen haben zusammen ca. 345 kcal. Das entspricht etwa einer großen frittierten Frühlingsrolle plus etwas Extra."},
-    {"question": "Was ist der Unterschied zwischen Frühlingsrolle und Sommerrolle?", "answer": "Frühlingsrollen werden frittiert (ca. 276 kcal), Sommerrollen werden in Reispapier gewickelt und nicht gebraten (ca. 140 kcal). Sommerrollen sind deutlich kalorienärmer."},
-    {"question": "Wie viel Fett hat eine Frühlingsrolle?", "answer": "Eine frittierte Frühlingsrolle enthält ca. 12-18g Fett. Eine Sommerrolle hat nur ca. 2g Fett."},
-    {"question": "Kann man Frühlingsrollen kalorienärmer machen?", "answer": "Ja: Im Ofen backen statt frittieren (spart 30% Fett), Gemüse-Füllung wählen, oder auf Sommerrollen umsteigen."}
+    {
+      "question": "Wie viele Kalorien hat eine Frühlingsrolle?",
+      "answer": "Eine frittierte Frühlingsrolle (120g) hat ca. 324 kcal, mit Fleisch (130g) ca. 354 kcal. Nicht frittierte Sommerrollen sind deutlich leichter."
+    },
+    {
+      "question": "Sind Frühlingsrollen ungesund?",
+      "answer": "Frittierte Frühlingsrollen haben relativ viel Fett. Als gelegentlicher Snack sind sie in Ordnung. Sommerrollen oder Ofen-Varianten sind deutlich gesünder."
+    },
+    {
+      "question": "Wie viele Kalorien haben 5 Mini-Frühlingsrollen?",
+      "answer": "5 Mini-Frühlingsrollen (je 13g) haben zusammen ca. 176 kcal, gut halb so viel wie eine große frittierte Frühlingsrolle (120g)."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Frühlingsrolle und Sommerrolle?",
+      "answer": "Frühlingsrollen werden frittiert (ca. 324 kcal pro Stück mit 120g), Sommerrollen werden in Reispapier gewickelt und nicht gebraten. Sommerrollen sind deutlich kalorienärmer."
+    },
+    {
+      "question": "Wie viel Fett hat eine Frühlingsrolle?",
+      "answer": "Eine frittierte Frühlingsrolle enthält ca. 17 bis 19g Fett, je nach Füllung. Eine Sommerrolle hat nur sehr wenig Fett."
+    },
+    {
+      "question": "Kann man Frühlingsrollen kalorienärmer machen?",
+      "answer": "Ja: Im Ofen backen statt frittieren, sparsam dippen oder auf Sommerrollen umsteigen."
+    }
   ],
-  "related_foods": ["gyros", "falafel", "chicken-nuggets", "wrap"]
+  "related_foods": [
+    "gyros",
+    "falafel",
+    "chicken-nuggets",
+    "wrap"
+  ]
 }

@@ -3,9 +3,10 @@
   "name": "Nudelsuppe",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2709149 (Soup, chicken noodle), Werte je 100 g",
   "seo": {
     "title": "Nudelsuppe Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Nudelsuppe? Ein Teller (400g) hat ca. 152 kcal. Nährwerte pro 100g & Portion, Varianten im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Nudelsuppe? Ein Teller (400g) hat ca. 212 kcal. Nährwerte pro 100g & Portion, Varianten im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "nudelsuppe kcal",
       "nudelsuppe kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 38,
-    "protein_per_100g": 2,
-    "carbs_per_100g": 5,
-    "fat_per_100g": 1,
-    "fiber_per_100g": 0.4,
+    "calories_per_100g": 53,
+    "protein_per_100g": 3.8,
+    "carbs_per_100g": 6.2,
+    "fat_per_100g": 1.4,
+    "fiber_per_100g": 0.7,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Teller (400g)"
   },
@@ -28,83 +29,125 @@
     {
       "name": "Tasse Nudelsuppe (250g)",
       "portion_g": 250,
-      "calories": 95,
-      "protein": 5,
-      "carbs": 13,
-      "fat": 3,
+      "calories": 133,
+      "protein": 10,
+      "carbs": 16,
+      "fat": 4,
       "tip": "Kleine Vorspeisen-Portion"
     },
     {
       "name": "Teller Nudelsuppe (400g)",
       "portion_g": 400,
-      "calories": 152,
-      "protein": 8,
-      "carbs": 20,
-      "fat": 4,
+      "calories": 212,
+      "protein": 15,
+      "carbs": 25,
+      "fat": 6,
       "tip": "Standard"
     },
     {
       "name": "Großer Teller (500g)",
       "portion_g": 500,
-      "calories": 190,
-      "protein": 10,
-      "carbs": 25,
-      "fat": 5
+      "calories": 265,
+      "protein": 19,
+      "carbs": 31,
+      "fat": 7
     },
     {
       "name": "Hühnernudelsuppe aus der Dose (400g)",
       "portion_g": 400,
-      "calories": 160,
-      "protein": 9,
-      "carbs": 21,
-      "fat": 5,
-      "tip": "Fertigprodukt, oft salzhaltig"
+      "calories": 168,
+      "protein": 10,
+      "carbs": 24,
+      "fat": 4,
+      "tip": "Fertigprodukt, oft salzhaltig",
+      "basis": [
+        {
+          "fdcId": 2709148,
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Tütensuppe zubereitet (250g)",
       "portion_g": 250,
-      "calories": 75,
-      "protein": 3,
-      "carbs": 12,
-      "fat": 2,
-      "tip": "Instant aus dem Beutel"
+      "calories": 58,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 1,
+      "tip": "Instant aus dem Beutel",
+      "basis": [
+        {
+          "fdcId": 172925,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Asia-Instant-Nudelsuppe zubereitet (300g)",
       "portion_g": 300,
-      "calories": 210,
-      "protein": 6,
-      "carbs": 30,
+      "calories": 198,
+      "protein": 5,
+      "carbs": 27,
       "fat": 8,
-      "tip": "Fettreicher durch frittierte Nudeln"
+      "tip": "Fettreicher durch frittierte Nudeln",
+      "basis": [
+        {
+          "fdcId": 2709152,
+          "g": 300
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Kartoffelsuppe (400g)",
-      "calories": 240,
-      "emoji": "🥔"
+      "calories": 360,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelsuppe",
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Gulaschsuppe (400g)",
-      "calories": 320,
-      "emoji": "🍲"
+      "calories": 480,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulaschsuppe",
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Tomatensuppe (400g)",
-      "calories": 160,
-      "emoji": "🍅"
+      "calories": 76,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "fdcId": 2709757,
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Minestrone (400g)",
-      "calories": 180,
-      "emoji": "🥬"
+      "calories": 160,
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "minestrone",
+          "g": 400
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ideal zum Abnehmen",
-      "text": "Eine klare Nudelsuppe hat durch den hohen Wasseranteil nur etwa 38 kcal pro 100g. Ein Teller (400g) sättigt mit rund 152 kcal und eignet sich gut als leichte Mahlzeit.",
+      "text": "Eine klare Nudelsuppe hat durch den hohen Wasseranteil nur etwa 53 kcal pro 100g. Ein Teller (400g) sättigt mit rund 212 kcal und eignet sich gut als leichte Mahlzeit.",
       "icon": "🍜"
     },
     {
@@ -119,7 +162,7 @@
     },
     {
       "title": "Vorsicht bei Asia-Instant-Nudeln",
-      "text": "Asiatische Instant-Nudelsuppen sind durch frittierte Nudeln deutlich fett- und kalorienreicher als klare Brühen-Suppen, oft über 70 kcal pro 100g.",
+      "text": "Asiatische Instant-Nudelsuppen sind durch frittierte Nudeln fett- und kalorienreicher als klare Brühen-Suppen: zubereitet rund 66 kcal pro 100g, mit fast doppelt so viel Fett wie Hühnernudelsuppe.",
       "icon": "⚠️"
     },
     {
@@ -131,23 +174,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Nudelsuppe?",
-      "answer": "Eine klare Nudelsuppe hat etwa 38 kcal pro 100g. Ein normaler Teller (400g) kommt damit auf rund 152 kcal, eine kleine Tasse (250g) auf etwa 95 kcal."
+      "answer": "Eine klare Nudelsuppe hat etwa 53 kcal pro 100g. Ein normaler Teller (400g) kommt damit auf rund 212 kcal, eine kleine Tasse (250g) auf etwa 133 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Hühnernudelsuppe?",
-      "answer": "Hühnernudelsuppe aus der Dose hat etwa 40 kcal pro 100g. Ein Teller von 400g liefert rund 160 kcal. Selbst gekochte Varianten liegen meist ähnlich oder etwas niedriger."
+      "answer": "Hühnernudelsuppe aus der Dose hat etwa 42 kcal pro 100g. Ein Teller von 400g liefert rund 168 kcal. Die allgemeine Hühnernudelsuppe, auf die sich diese Seite bezieht, liegt mit 53 kcal pro 100g etwas höher."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Nudelsuppe?",
-      "answer": "Eine klare Nudelsuppe enthält etwa 5g Kohlenhydrate pro 100g, vor allem aus den Nudeln. Ein Teller (400g) kommt auf rund 20g Kohlenhydrate."
+      "answer": "Eine klare Nudelsuppe enthält etwa 6g Kohlenhydrate pro 100g, vor allem aus den Nudeln. Ein Teller (400g) kommt auf rund 25g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Nudelsuppe?",
-      "answer": "Nudelsuppe liefert etwa 2g Eiweiß pro 100g, also rund 8g pro Teller (400g). Mit Hühnerfleisch oder Ei lässt sich der Eiweißgehalt deutlich erhöhen."
+      "answer": "Nudelsuppe liefert etwa 3,8g Eiweiß pro 100g, also rund 15g pro Teller (400g). Mit Hühnerfleisch oder Ei lässt sich der Eiweißgehalt deutlich erhöhen."
     },
     {
       "question": "Ist Nudelsuppe zum Abnehmen geeignet?",
-      "answer": "Ja, eine klare Nudelsuppe ist mit nur etwa 152 kcal pro Teller sehr kalorienarm und sättigt durch viel Flüssigkeit gut. Fettreiche Asia-Instant-Varianten sind dafür weniger geeignet."
+      "answer": "Ja, eine klare Nudelsuppe ist mit nur etwa 212 kcal pro Teller kalorienarm und sättigt durch viel Flüssigkeit gut. Fettreiche Asia-Instant-Varianten sind dafür weniger geeignet."
     },
     {
       "question": "Ist Nudelsuppe gesund?",

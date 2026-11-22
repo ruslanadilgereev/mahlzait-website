@@ -3,9 +3,10 @@
   "name": "Bruschetta",
   "emoji": "🍅",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2707652 (Bruschetta), Werte je 100 g",
   "seo": {
     "title": "Bruschetta Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Bruschetta? Eine Scheibe (55g) hat ca. 121 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Bruschetta? Eine Scheibe (55g) hat ca. 94 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps zum Abnehmen.",
     "keywords": [
       "bruschetta kalorien",
       "bruschetta kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 220,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 27,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 171,
+    "protein_per_100g": 4.3,
+    "carbs_per_100g": 21.3,
+    "fat_per_100g": 7.6,
+    "fiber_per_100g": 1.5,
     "typical_portion_g": 55,
     "typical_portion_name": "1 Scheibe Bruschetta"
   },
@@ -28,82 +29,106 @@
     {
       "name": "Kleine Scheibe (40g)",
       "portion_g": 40,
-      "calories": 88,
+      "calories": 68,
       "protein": 2,
-      "carbs": 11,
-      "fat": 4
+      "carbs": 9,
+      "fat": 3
     },
     {
       "name": "1 Scheibe (55g)",
       "portion_g": 55,
-      "calories": 121,
-      "protein": 3,
-      "carbs": 15,
-      "fat": 6,
+      "calories": 94,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 4,
       "tip": "Standard"
     },
     {
-      "name": "Bruschetta ohne Olivenöl, leicht (55g)",
-      "portion_g": 55,
-      "calories": 96,
-      "protein": 3,
-      "carbs": 16,
-      "fat": 1,
-      "tip": "Kalorienärmste Variante"
-    },
-    {
-      "name": "Bruschetta mit Mozzarella (55g)",
-      "portion_g": 55,
-      "calories": 148,
+      "name": "Bruschetta mit Mozzarella (70g)",
+      "portion_g": 70,
+      "calories": 139,
       "protein": 6,
-      "carbs": 14,
-      "fat": 8
+      "carbs": 12,
+      "fat": 8,
+      "basis": [
+        {
+          "g": 55
+        },
+        {
+          "fdcId": 170845,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "2 Scheiben (110g)",
       "portion_g": 110,
-      "calories": 242,
-      "protein": 6,
-      "carbs": 30,
-      "fat": 11
+      "calories": 188,
+      "protein": 5,
+      "carbs": 23,
+      "fat": 8
     },
     {
       "name": "Vorspeise, 3 Scheiben (165g)",
       "portion_g": 165,
-      "calories": 363,
-      "protein": 8,
-      "carbs": 45,
-      "fat": 17
+      "calories": 282,
+      "protein": 7,
+      "carbs": 35,
+      "fat": 13
     },
     {
       "name": "Große Portion, 4 Scheiben (220g)",
       "portion_g": 220,
-      "calories": 484,
-      "protein": 11,
-      "carbs": 59,
-      "fat": 22
+      "calories": 376,
+      "protein": 9,
+      "carbs": 47,
+      "fat": 17
     }
   ],
   "comparison": [
     {
-      "name": "Flammkuchen",
-      "calories": 260,
-      "emoji": "🔥"
+      "name": "Flammkuchen (100g)",
+      "calories": 220,
+      "emoji": "🔥",
+      "basis": [
+        {
+          "slug": "flammkuchen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Baguette",
-      "calories": 274,
-      "emoji": "🥖"
+      "name": "Baguette (55g)",
+      "calories": 150,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 55
+        }
+      ]
     },
     {
-      "name": "Pizza Margherita",
-      "calories": 240,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (1 Stück, 140g)",
+      "calories": 372,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 140
+        }
+      ]
     },
     {
-      "name": "Tomate",
-      "calories": 18,
-      "emoji": "🍅"
+      "name": "Tomate (1 Stück, 120g)",
+      "calories": 22,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "tomate",
+          "g": 120
+        }
+      ]
     }
   ],
   "tips": [
@@ -124,7 +149,7 @@
     },
     {
       "title": "Gut als leichte Vorspeise",
-      "text": "Ein bis zwei Scheiben als Vorspeise liegen bei rund 120 bis 240 kcal. So bleibt die Mahlzeit überschaubar, ohne dass du auf Geschmack verzichtest.",
+      "text": "Ein bis zwei Scheiben als Vorspeise liegen bei rund 94 bis 188 kcal. So bleibt die Mahlzeit überschaubar, ohne dass du auf Geschmack verzichtest.",
       "icon": "🍽️"
     },
     {
@@ -136,19 +161,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Scheibe Bruschetta?",
-      "answer": "Eine klassische Scheibe Bruschetta (ca. 55g) hat etwa 121 kcal. Zwei Scheiben kommen auf rund 242 kcal."
+      "answer": "Eine klassische Scheibe Bruschetta (ca. 55g) hat etwa 94 kcal. Zwei Scheiben kommen auf rund 188 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Bruschetta pro 100g?",
-      "answer": "Klassische Tomaten-Bruschetta hat etwa 220 kcal pro 100g. Der Wert kann je nach Brotsorte und Menge Olivenöl schwanken."
+      "answer": "Klassische Tomaten-Bruschetta hat etwa 171 kcal pro 100g. Der Wert kann je nach Brotsorte und Menge Olivenöl schwanken."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bruschetta?",
-      "answer": "Pro 100g enthält Bruschetta etwa 27g Kohlenhydrate, die hauptsächlich aus dem Brot stammen. Eine Scheibe (55g) hat rund 15g."
+      "answer": "Pro 100g enthält Bruschetta etwa 21g Kohlenhydrate, die hauptsächlich aus dem Brot stammen. Eine Scheibe (55g) hat rund 12g."
     },
     {
       "question": "Wie viel Protein hat Bruschetta?",
-      "answer": "Bruschetta liefert etwa 5g Protein pro 100g. Mit Mozzarella oder Parmesan steigt der Eiweißgehalt deutlich an."
+      "answer": "Bruschetta liefert etwa 4,3g Protein pro 100g. Mit Mozzarella oder Parmesan steigt der Eiweißgehalt deutlich an."
     },
     {
       "question": "Ist Bruschetta zum Abnehmen geeignet?",

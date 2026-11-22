@@ -3,9 +3,10 @@
   "name": "Weetabix",
   "emoji": "🥣",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169040 (Cereals ready-to-eat, WEETABIX whole grain cereal), Werte je 100 g",
   "seo": {
     "title": "Weetabix Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Weetabix? 2 Weetabix-Riegel (37,5g) haben ca. 136 kcal. Alle Nährwerte pro 100g & pro Portion plus Frühstücks-Tipps.",
+    "description": "Wie viele Kalorien hat Weetabix? 2 Weetabix-Riegel (37,5g) haben ca. 139 kcal. Alle Nährwerte pro 100g & pro Portion plus Frühstücks-Tipps.",
     "keywords": [
       "weetabix kalorien",
       "weetabix kcal",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 362,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 69,
-    "fat_per_100g": 2,
-    "fiber_per_100g": 10,
+    "calories_per_100g": 371,
+    "protein_per_100g": 11.4,
+    "carbs_per_100g": 81.5,
+    "fat_per_100g": 2.9,
+    "fiber_per_100g": 11.4,
     "typical_portion_g": 37.5,
     "typical_portion_name": "2 Weetabix-Riegel (37,5g)"
   },
@@ -29,104 +30,150 @@
     {
       "name": "1 Weetabix-Riegel (19g)",
       "portion_g": 19,
-      "calories": 69,
+      "calories": 70,
       "protein": 2,
-      "carbs": 13,
-      "fat": 0
+      "carbs": 15,
+      "fat": 1
     },
     {
       "name": "2 Weetabix-Riegel (37,5g)",
       "portion_g": 37.5,
-      "calories": 136,
-      "protein": 5,
-      "carbs": 26,
+      "calories": 139,
+      "protein": 4,
+      "carbs": 31,
       "fat": 1,
       "tip": "Standardportion laut Hersteller"
     },
     {
       "name": "3 Weetabix-Riegel (56g)",
       "portion_g": 56,
-      "calories": 203,
-      "protein": 7,
-      "carbs": 39,
-      "fat": 1
+      "calories": 208,
+      "protein": 6,
+      "carbs": 46,
+      "fat": 2
     },
     {
       "name": "Portion trocken (40g)",
       "portion_g": 40,
-      "calories": 145,
+      "calories": 148,
       "protein": 5,
-      "carbs": 28,
+      "carbs": 33,
       "fat": 1
     },
     {
       "name": "2 Riegel + 200ml fettarme Milch",
-      "portion_g": 237.5,
-      "calories": 230,
+      "portion_g": 244.5,
+      "calories": 234,
       "protein": 11,
-      "carbs": 36,
+      "carbs": 41,
       "fat": 4,
-      "tip": "Klassisches Frühstück"
+      "tip": "Klassisches Frühstück",
+      "basis": [
+        {
+          "g": 37.5
+        },
+        {
+          "fdcId": 173441,
+          "ml": 100,
+          "g": 103
+        },
+        {
+          "fdcId": 172205,
+          "ml": 100,
+          "g": 104
+        }
+      ]
     },
     {
       "name": "2 Riegel + 150g Magerquark",
       "portion_g": 187.5,
-      "calories": 235,
-      "protein": 16,
-      "carbs": 32,
-      "fat": 1,
-      "tip": "Eiweißreich"
+      "calories": 247,
+      "protein": 20,
+      "carbs": 41,
+      "fat": 2,
+      "tip": "Eiweißreich",
+      "basis": [
+        {
+          "g": 37.5
+        },
+        {
+          "fdcId": 172181,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "2 Riegel + 125g Naturjoghurt",
       "portion_g": 162.5,
       "calories": 215,
-      "protein": 10,
-      "carbs": 32,
-      "fat": 5
+      "protein": 9,
+      "carbs": 36,
+      "fat": 5,
+      "basis": [
+        {
+          "g": 37.5
+        },
+        {
+          "fdcId": 171284,
+          "g": 125
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Cornflakes (30g)",
-      "calories": 113,
-      "emoji": "🌽"
+      "calories": 110,
+      "emoji": "🌽",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Haferflocken (40g)",
-      "calories": 150,
-      "emoji": "🥣"
-    },
-    {
-      "name": "Müsli (50g)",
-      "calories": 190,
-      "emoji": "🥜"
+      "calories": 152,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Toastbrot (2 Scheiben)",
-      "calories": 130,
-      "emoji": "🍞"
+      "calories": 160,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ballaststoff-Frühstück",
-      "text": "Mit 10g Ballaststoffen pro 100g liefern 2 Weetabix-Riegel rund 3,8g Ballaststoffe und sättigen dadurch länger als viele Frühstücksflocken.",
+      "text": "Mit gut 11g Ballaststoffen pro 100g liefern 2 Weetabix-Riegel rund 4,3g Ballaststoffe und sättigen dadurch länger als viele Frühstücksflocken.",
       "icon": "🌾"
     },
     {
       "title": "Wenig Fett, wenig Zucker",
-      "text": "Weetabix enthält nur 2g Fett und 4,4g Zucker pro 100g und ist damit deutlich zuckerärmer als die meisten gesüßten Cerealien.",
+      "text": "Weetabix enthält nur knapp 3g Fett und 5,7g Zucker pro 100g und ist damit deutlich zuckerärmer als die meisten gesüßten Cerealien.",
       "icon": "🍃"
     },
     {
       "title": "Eiweiß aufstocken",
-      "text": "Wer mehr Protein möchte, kombiniert die Riegel mit Magerquark oder Skyr statt nur mit Milch. Das hebt das Eiweiß auf über 15g pro Portion.",
+      "text": "Wer mehr Protein möchte, kombiniert die Riegel mit Magerquark oder Skyr statt nur mit Milch. Mit 150g Magerquark kommt die Portion auf rund 20g Eiweiß.",
       "icon": "💪"
     },
     {
       "title": "Portion im Blick behalten",
-      "text": "Drei statt zwei Riegel plus Milch bringen die Portion schnell über 280 kcal. Beim Abnehmen lieber bei 2 Riegeln bleiben.",
+      "text": "Drei statt zwei Riegel plus Milch bringen die Portion schnell auf rund 300 kcal. Beim Abnehmen lieber bei 2 Riegeln bleiben.",
       "icon": "⚖️"
     },
     {
@@ -138,19 +185,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Weetabix?",
-      "answer": "Die Standardportion aus 2 Riegeln (37,5g) hat laut Hersteller ca. 136 kcal. Pro 100g sind es 362 kcal."
+      "answer": "Die Standardportion aus 2 Riegeln (37,5g) hat ca. 139 kcal. Pro 100g sind es 371 kcal."
     },
     {
       "question": "Wie viele Kalorien haben Weetabix mit Milch?",
-      "answer": "2 Riegel mit 200ml fettarmer Milch kommen auf rund 230 kcal. Mit Vollmilch sind es etwas mehr."
+      "answer": "2 Riegel mit 200ml fettarmer Milch kommen auf rund 234 kcal. Mit Vollmilch sind es etwas mehr."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Weetabix?",
-      "answer": "Weetabix enthält 69g Kohlenhydrate pro 100g, davon 4,4g Zucker. Zwei Riegel liefern etwa 26g Kohlenhydrate."
+      "answer": "Weetabix enthält 81,5g Kohlenhydrate pro 100g (inklusive Ballaststoffe), davon 5,7g Zucker. Zwei Riegel liefern etwa 31g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Weetabix?",
-      "answer": "Pro 100g sind 12g Protein enthalten. Eine Portion aus 2 Riegeln liefert rund 4,5g Eiweiß, mit Milch oder Quark deutlich mehr."
+      "answer": "Pro 100g sind gut 11g Protein enthalten. Eine Portion aus 2 Riegeln liefert rund 4,3g Eiweiß, mit Milch oder Quark deutlich mehr."
     },
     {
       "question": "Ist Weetabix zum Abnehmen geeignet?",

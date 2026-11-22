@@ -3,9 +3,10 @@
   "name": "Vollkorn-Penne",
   "emoji": "🍝",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169738 (Pasta, whole-wheat, dry (Includes foods for USDA's Food Distribution Program)), Werte je 100 g",
   "seo": {
     "title": "Vollkorn-Penne Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Vollkorn-Penne? 100g roh haben ca. 348 kcal, gekocht nur ca. 131 kcal. Nährwerte pro Portion, Protein & Ballaststoffe.",
+    "description": "Wie viele Kalorien hat Vollkorn-Penne? 100g roh haben ca. 352 kcal, gekocht nur ca. 149 kcal. Nährwerte pro Portion, Protein & Ballaststoffe.",
     "keywords": [
       "vollkorn penne kalorien",
       "vollkorn penne kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 348,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 71,
-    "fat_per_100g": 2.5,
-    "fiber_per_100g": 9,
+    "calories_per_100g": 352,
+    "protein_per_100g": 13.9,
+    "carbs_per_100g": 73.4,
+    "fat_per_100g": 2.9,
+    "fiber_per_100g": 9.2,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Portion roh (80g)"
   },
@@ -28,91 +29,122 @@
     {
       "name": "Kleine Portion roh (60g)",
       "portion_g": 60,
-      "calories": 209,
-      "protein": 8,
-      "carbs": 43,
-      "fat": 2,
-      "tip": "Trockengewicht, ergibt ca. 150g gekocht"
+      "calories": 211,
+      "protein": 8.3,
+      "carbs": 44,
+      "fat": 1.7,
+      "tip": "Trockengewicht, ergibt ca. 140g gekocht"
     },
     {
       "name": "1 Portion roh (80g)",
       "portion_g": 80,
-      "calories": 278,
-      "protein": 11,
-      "carbs": 57,
-      "fat": 2,
+      "calories": 282,
+      "protein": 11.1,
+      "carbs": 58.7,
+      "fat": 2.3,
       "tip": "Standard-Portion trocken"
     },
     {
       "name": "Große Portion roh (125g)",
       "portion_g": 125,
-      "calories": 435,
-      "protein": 18,
-      "carbs": 89,
-      "fat": 3,
+      "calories": 440,
+      "protein": 17.4,
+      "carbs": 91.8,
+      "fat": 3.6,
       "tip": "Sättigt auch hungrige Esser"
     },
     {
       "name": "100g roh",
       "portion_g": 100,
-      "calories": 348,
-      "protein": 14,
-      "carbs": 71,
-      "fat": 2.5
+      "calories": 352,
+      "protein": 13.9,
+      "carbs": 73.4,
+      "fat": 2.9
     },
     {
       "name": "100g gekocht",
       "portion_g": 100,
-      "calories": 131,
-      "protein": 5,
-      "carbs": 27,
-      "fat": 1,
-      "tip": "Nimmt beim Kochen Wasser auf"
+      "calories": 149,
+      "protein": 6,
+      "carbs": 30.1,
+      "fat": 1.7,
+      "tip": "Nimmt beim Kochen Wasser auf",
+      "basis": [
+        {
+          "fdcId": 168910,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "1 Teller gekocht (200g)",
       "portion_g": 200,
-      "calories": 262,
-      "protein": 11,
-      "carbs": 54,
-      "fat": 1.5,
-      "tip": "Entspricht ca. 80g roh"
+      "calories": 298,
+      "protein": 12,
+      "carbs": 60.1,
+      "fat": 3.4,
+      "tip": "Entspricht ca. 85g roh",
+      "basis": [
+        {
+          "fdcId": 168910,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Große Portion gekocht (250g)",
       "portion_g": 250,
-      "calories": 328,
-      "protein": 13,
-      "carbs": 68,
-      "fat": 2
+      "calories": 373,
+      "protein": 15,
+      "carbs": 75.2,
+      "fat": 4.3,
+      "basis": [
+        {
+          "fdcId": 168910,
+          "g": 250
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Penne (hell, 80g roh)",
-      "calories": 282,
-      "emoji": "🍝"
+      "calories": 297,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "penne",
+          "g": 80
+        }
+      ]
     },
     {
-      "name": "Dinkelnudeln (80g roh)",
-      "calories": 268,
-      "emoji": "🌾"
-    },
-    {
-      "name": "Linsennudeln (80g roh)",
-      "calories": 282,
-      "emoji": "🫘"
+      "name": "Naturreis (80g roh)",
+      "calories": 294,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169703,
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Basmati-Reis (80g roh)",
-      "calories": 280,
-      "emoji": "🍚"
+      "calories": 292,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 80
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Roh oder gekocht beachten",
-      "text": "100g rohe Vollkorn-Penne haben ca. 348 kcal, gekocht nur noch etwa 131 kcal pro 100g, weil die Nudeln beim Kochen viel Wasser aufnehmen. Verwechsle die beiden Werte nicht beim Tracken.",
+      "text": "100g rohe Vollkorn-Penne haben ca. 352 kcal, gekocht nur noch etwa 149 kcal pro 100g, weil die Nudeln beim Kochen viel Wasser aufnehmen. Verwechsle die beiden Werte nicht beim Tracken.",
       "icon": "⚖️"
     },
     {
@@ -139,15 +171,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Vollkorn-Penne?",
-      "answer": "100g rohe Vollkorn-Penne haben ca. 348 kcal. Eine typische Portion von 80g (roh) liefert rund 278 kcal. Gekocht sind es nur noch etwa 131 kcal pro 100g."
+      "answer": "100g rohe Vollkorn-Penne haben ca. 352 kcal. Eine typische Portion von 80g (roh) liefert rund 282 kcal. Gekocht sind es nur noch etwa 149 kcal pro 100g."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion gekochte Vollkorn-Penne?",
-      "answer": "Ein Teller mit 200g gekochter Vollkorn-Penne hat ca. 262 kcal. Das entspricht etwa 80g im trockenen Zustand."
+      "answer": "Ein Teller mit 200g gekochter Vollkorn-Penne hat ca. 298 kcal. Das entspricht etwa 85g im trockenen Zustand."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Vollkorn-Penne?",
-      "answer": "100g rohe Vollkorn-Penne enthalten ca. 71g Kohlenhydrate. Gekocht sind es etwa 27g pro 100g. Davon sind rund 9g pro 100g (roh) Ballaststoffe."
+      "answer": "100g rohe Vollkorn-Penne enthalten ca. 73g Kohlenhydrate. Gekocht sind es etwa 30g pro 100g. Davon sind rund 9g pro 100g (roh) Ballaststoffe."
     },
     {
       "question": "Wie viel Protein hat Vollkorn-Penne?",

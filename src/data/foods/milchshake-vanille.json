@@ -3,50 +3,200 @@
   "name": "Milchshake Vanille",
   "emoji": "🥛",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2705504 (Milk shake, home recipe, flavors other than chocolate: 113 kcal), Werte je 100 g; je 100 ml mit 0,947 g/ml 107 kcal",
   "seo": {
     "title": "Milchshake Vanille Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Vanille-Milchshake? Nährwerte pro 100ml & Glas. McDonald's, Selbstgemacht & kalorienarme Alternativen.",
-    "keywords": ["milchshake vanille kalorien", "vanille milchshake kalorien", "milchshake kalorien", "mcdonalds milchshake kalorien", "milchshake nährwerte", "vanillemilch kalorien", "shake kalorien", "milchshake selbstgemacht kalorien"]
+    "description": "Wie viele Kalorien hat ein Vanille-Milchshake? Nährwerte pro 100ml & Glas. Fast Food, selbstgemacht & kalorienarme Alternativen.",
+    "keywords": [
+      "milchshake vanille kalorien",
+      "vanille milchshake kalorien",
+      "milchshake kalorien",
+      "mcdonalds milchshake kalorien",
+      "milchshake nährwerte",
+      "vanillemilch kalorien",
+      "shake kalorien",
+      "milchshake selbstgemacht kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 113,
-    "protein_per_100g": 3.5,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 3.2,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 300,
+    "protein_per_100g": 3.4,
+    "carbs_per_100g": 11.4,
+    "fat_per_100g": 6,
+    "fiber_per_100g": 0.2,
+    "typical_portion_g": 284,
     "typical_portion_name": "1 Glas (300ml)"
   },
   "variants": [
-    { "name": "Vanille-Milchshake klassisch (300ml)", "portion_g": 300, "calories": 339, "protein": 11, "carbs": 54, "fat": 10 },
-    { "name": "McDonald's Milchshake Vanille (M)", "portion_g": 400, "calories": 440, "protein": 12, "carbs": 72, "fat": 12 },
-    { "name": "McDonald's Milchshake Vanille (S)", "portion_g": 250, "calories": 275, "protein": 8, "carbs": 45, "fat": 8 },
-    { "name": "Selbstgemacht mit Eis (300ml)", "portion_g": 300, "calories": 380, "protein": 10, "carbs": 50, "fat": 16 },
-    { "name": "Kalorienarm mit Skyr (300ml)", "portion_g": 300, "calories": 180, "protein": 20, "carbs": 22, "fat": 2, "tip": "Protein-Alternative" },
-    { "name": "Vanille-Proteinshake (300ml)", "portion_g": 300, "calories": 160, "protein": 25, "carbs": 10, "fat": 3 },
-    { "name": "Veganer Vanille-Shake (300ml)", "portion_g": 300, "calories": 250, "protein": 5, "carbs": 38, "fat": 8 },
-    { "name": "Starbucks Vanilla Frappuccino (Grande)", "portion_g": 480, "calories": 380, "protein": 5, "carbs": 65, "fat": 12 }
+    {
+      "name": "Vanille-Milchshake klassisch (300ml)",
+      "portion_g": 284,
+      "calories": 321,
+      "protein": 10,
+      "carbs": 32,
+      "fat": 17
+    },
+    {
+      "name": "Fast-Food-Vanille-Shake (400ml)",
+      "portion_g": 379,
+      "calories": 561,
+      "protein": 13,
+      "carbs": 74,
+      "fat": 25,
+      "basis": [
+        {
+          "fdcId": 2705509,
+          "ml": 400,
+          "g": 379
+        }
+      ]
+    },
+    {
+      "name": "Fast-Food-Vanille-Shake (250ml)",
+      "portion_g": 237,
+      "calories": 351,
+      "protein": 8,
+      "carbs": 46,
+      "fat": 15,
+      "basis": [
+        {
+          "fdcId": 2705509,
+          "ml": 250,
+          "g": 237
+        }
+      ]
+    },
+    {
+      "name": "Selbstgemacht mit Vanilleeis (150 g Eis + 150 ml Milch)",
+      "portion_g": 305,
+      "calories": 405,
+      "protein": 10,
+      "carbs": 43,
+      "fat": 21,
+      "basis": [
+        {
+          "fdcId": 2705630,
+          "g": 150
+        },
+        {
+          "fdcId": 2705385,
+          "ml": 150,
+          "g": 155
+        }
+      ]
+    },
+    {
+      "name": "Vanille-Proteinshake (300ml)",
+      "portion_g": 325,
+      "calories": 198,
+      "protein": 21,
+      "carbs": 3,
+      "fat": 11,
+      "tip": "trinkfertig",
+      "basis": [
+        {
+          "fdcId": 2710726,
+          "ml": 300,
+          "g": 325
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Milchshake Schoko (300ml)", "calories": 360, "emoji": "🍫" },
-    { "name": "Smoothie Beeren (300ml)", "calories": 180, "emoji": "🫐" },
-    { "name": "Cola (300ml)", "calories": 126, "emoji": "🥤" },
-    { "name": "Proteinshake (300ml)", "calories": 160, "emoji": "💪" }
+    {
+      "name": "Milchshake Schoko (300ml)",
+      "calories": 341,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "milchshake-schoko",
+          "ml": 300,
+          "g": 284
+        }
+      ]
+    },
+    {
+      "name": "Smoothie Beeren (300ml)",
+      "calories": 148,
+      "emoji": "🫐",
+      "basis": [
+        {
+          "slug": "smoothie-beeren",
+          "ml": 300,
+          "g": 274
+        }
+      ]
+    },
+    {
+      "name": "Cola (300ml)",
+      "calories": 132,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 300,
+          "g": 314
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Skyr statt Eis", "text": "Vanille-Milchshake mit Skyr statt Speiseeis: nur 180 kcal statt 339 kcal, dafür 20g Protein. Schmeckt genauso cremig.", "icon": "💡" },
-    { "title": "Gefrorene Banane als Basis", "text": "Eine gefrorene Banane + Milch + Vanille-Extrakt ergibt einen natürlich süßen Shake ohne zugesetzten Zucker.", "icon": "🍌" },
-    { "title": "Kleine Größe wählen", "text": "Bei McDonald's: Small (275 kcal) statt Medium (440 kcal). Das sind 165 kcal Ersparnis.", "icon": "📏" },
-    { "title": "Milchshake als Dessert sehen", "text": "Ein Milchshake ist kein Getränk, sondern ein Dessert (339 kcal). So einordnen und bewusst genießen.", "icon": "🍰" },
-    { "title": "Pflanzenmilch reduziert Fett", "text": "Hafermilch statt Vollmilch spart 30-40 kcal pro Shake und ist dazu noch laktosefrei.", "icon": "🌱" }
+    {
+      "title": "Skyr statt Eis",
+      "text": "Vanille-Milchshake mit Skyr statt Speiseeis hat deutlich weniger Kalorien und dafür mehr Protein. Schmeckt genauso cremig.",
+      "icon": "💡"
+    },
+    {
+      "title": "Gefrorene Banane als Basis",
+      "text": "Eine gefrorene Banane + Milch + Vanille-Extrakt ergibt einen natürlich süßen Shake ohne zugesetzten Zucker.",
+      "icon": "🍌"
+    },
+    {
+      "title": "Kleine Größe wählen",
+      "text": "Beim Fast-Food-Shake: 250ml (ca. 351 kcal) statt 400ml (ca. 561 kcal). Das sind rund 210 kcal Ersparnis.",
+      "icon": "📏"
+    },
+    {
+      "title": "Milchshake als Dessert sehen",
+      "text": "Ein Milchshake ist kein Getränk, sondern ein Dessert (ca. 321 kcal). So einordnen und bewusst genießen.",
+      "icon": "🍰"
+    },
+    {
+      "title": "Pflanzenmilch reduziert Fett",
+      "text": "Hafermilch statt Vollmilch spart etwas Fett und ist dazu noch laktosefrei.",
+      "icon": "🌱"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Vanille-Milchshake?", "answer": "Ein klassischer Vanille-Milchshake (300ml) hat ca. 339 kcal. Bei McDonald's sind es 275 kcal (S) bis 440 kcal (M). Kalorienarme Varianten mit Skyr haben nur 180 kcal." },
-    { "question": "Wie viele Kalorien hat ein McDonald's Milchshake?", "answer": "Ein McDonald's Vanille-Milchshake hat ca. 275 kcal (Small) bzw. 440 kcal (Medium). Schoko und Erdbeer sind kalorisch sehr ähnlich." },
-    { "question": "Ist ein Milchshake gesund?", "answer": "Ein klassischer Milchshake hat viel Zucker und Fett. Er liefert aber auch Kalzium und Protein aus der Milch. Als gelegentlicher Genuss okay, als Getränk zu kalorienreich." },
-    { "question": "Wie mache ich einen kalorienarmen Milchshake?", "answer": "200ml Milch (1,5%) + 100g Skyr + Vanille-Extrakt + Süßstoff. Ergebnis: ca. 180 kcal, 20g Protein, cremig und sättigend." },
-    { "question": "Milchshake oder Smoothie – was ist kalorienärmer?", "answer": "Smoothies sind meist kalorienärmer: 130-180 kcal vs. 339 kcal beim Milchshake. Der Unterschied: Milchshakes enthalten Speiseeis und mehr Zucker." },
-    { "question": "Wie viel Zucker hat ein Vanille-Milchshake?", "answer": "Ein 300ml-Milchshake enthält ca. 54g Zucker – 13,5 Zuckerwürfel. Bei McDonald's (M) sind es sogar 72g. Fast die dreifache WHO-Tagesempfehlung." }
+    {
+      "question": "Wie viele Kalorien hat ein Vanille-Milchshake?",
+      "answer": "Ein klassischer Vanille-Milchshake (300ml) hat ca. 321 kcal. Fast-Food-Shakes kommen auf ca. 351 kcal (250ml) bis 561 kcal (400ml). Kalorienarme Varianten mit Skyr liegen deutlich darunter."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Fast-Food-Milchshake?",
+      "answer": "Ein Fast-Food-Vanille-Shake hat laut USDA ca. 351 kcal (250ml) bzw. 561 kcal (400ml). Schoko-Shakes sind kalorisch sehr ähnlich."
+    },
+    {
+      "question": "Ist ein Milchshake gesund?",
+      "answer": "Ein klassischer Milchshake hat viel Zucker und Fett. Er liefert aber auch Kalzium und Protein aus der Milch. Als gelegentlicher Genuss okay, als Getränk zu kalorienreich."
+    },
+    {
+      "question": "Wie mache ich einen kalorienarmen Milchshake?",
+      "answer": "200ml Milch (1,5%) + 100g Skyr + Vanille-Extrakt + Süßstoff. Ergebnis: deutlich weniger Kalorien als ein klassischer Shake, viel Protein, cremig und sättigend."
+    },
+    {
+      "question": "Milchshake oder Smoothie: Was ist kalorienärmer?",
+      "answer": "Smoothies sind meist kalorienärmer: Ein Beeren-Smoothie (300ml) hat laut USDA ca. 148 kcal, ein Vanille-Milchshake ca. 321 kcal. Der Unterschied: Milchshakes enthalten Speiseeis und mehr Zucker."
+    },
+    {
+      "question": "Wie viel Zucker hat ein Vanille-Milchshake?",
+      "answer": "Ein 300ml-Milchshake enthält ca. 30g Zucker. Beim Fast-Food-Shake (400ml) sind es sogar rund 52g. Gut das Doppelte der WHO-Tagesempfehlung."
+    }
   ],
-  "related_foods": ["milchshake-schoko", "proteinshake", "smoothie-beeren", "eis-vanille"]
+  "related_foods": [
+    "milchshake-schoko",
+    "proteinshake",
+    "smoothie-beeren",
+    "eis-vanille"
+  ]
 }

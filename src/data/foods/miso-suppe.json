@@ -3,9 +3,10 @@
   "name": "Miso-Suppe",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2707455 (Soup, miso or tofu), Werte je 100 g",
   "seo": {
     "title": "Miso-Suppe Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Miso-Suppe? Eine Schale (250g) hat nur ca. 100 kcal. Nährwerte pro 100g & Portion, Varianten mit Tofu + Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Miso-Suppe? Eine Schale (250g) hat nur ca. 60 kcal. Nährwerte pro 100g & Portion, Varianten mit Tofu + Diät-Tipps.",
     "keywords": [
       "miso suppe kalorien",
       "miso suppe kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 40,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 1.4,
-    "fiber_per_100g": 0.9,
+    "calories_per_100g": 24,
+    "protein_per_100g": 2.2,
+    "carbs_per_100g": 2.3,
+    "fat_per_100g": 0.9,
+    "fiber_per_100g": 0.6,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Schale (250g)"
   },
@@ -30,99 +31,131 @@
     {
       "name": "Kleine Schale (150g)",
       "portion_g": 150,
-      "calories": 60,
-      "protein": 3.8,
-      "carbs": 6,
-      "fat": 2.1
+      "calories": 36,
+      "protein": 3.3,
+      "carbs": 3.5,
+      "fat": 1.4
     },
     {
       "name": "1 Schale (250g)",
       "portion_g": 250,
-      "calories": 100,
-      "protein": 6.2,
-      "carbs": 10,
-      "fat": 3.5,
+      "calories": 60,
+      "protein": 5.5,
+      "carbs": 5.8,
+      "fat": 2.3,
       "tip": "Standard"
     },
     {
       "name": "Große Schale (300g)",
       "portion_g": 300,
-      "calories": 120,
-      "protein": 7.5,
-      "carbs": 12,
-      "fat": 4.2
-    },
-    {
-      "name": "Instant-Miso-Suppe (1 Tüte, 200g zubereitet)",
-      "portion_g": 200,
-      "calories": 80,
-      "protein": 5,
-      "carbs": 8,
-      "fat": 2.8,
-      "tip": "Schnell"
+      "calories": 72,
+      "protein": 6.6,
+      "carbs": 6.9,
+      "fat": 2.7
     },
     {
       "name": "Miso-Suppe mit Tofu & Wakame (250g)",
       "portion_g": 250,
-      "calories": 110,
-      "protein": 8,
-      "carbs": 9,
-      "fat": 4
+      "calories": 77,
+      "protein": 7.6,
+      "carbs": 6,
+      "fat": 3.3,
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 172449,
+          "g": 40
+        },
+        {
+          "fdcId": 170496,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Restaurant-Vorspeise (200g)",
       "portion_g": 200,
-      "calories": 80,
-      "protein": 5,
-      "carbs": 8,
-      "fat": 2.8
+      "calories": 48,
+      "protein": 4.4,
+      "carbs": 4.6,
+      "fat": 1.8
     },
     {
       "name": "Miso-Paste pur (1 EL, 18g)",
       "portion_g": 18,
       "calories": 36,
-      "protein": 2.2,
-      "carbs": 4.7,
+      "protein": 2.3,
+      "carbs": 4.6,
       "fat": 1.1,
-      "tip": "Zutat"
+      "tip": "Zutat",
+      "basis": [
+        {
+          "fdcId": 172442,
+          "g": 18
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Gemüsebrühe (Schale)",
-      "calories": 30,
-      "emoji": "🥣"
+      "name": "Gemüsebrühe (1 Tasse, 250 ml)",
+      "calories": 12,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "gemuesebruehe"
+        }
+      ]
     },
     {
-      "name": "Ramen (Schale)",
-      "calories": 480,
-      "emoji": "🍜"
+      "name": "Ramen (1 Schüssel, 550g)",
+      "calories": 699,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "ramen"
+        }
+      ]
     },
     {
       "name": "Edamame (100g)",
-      "calories": 125,
-      "emoji": "🫛"
+      "calories": 122,
+      "emoji": "🫛",
+      "basis": [
+        {
+          "slug": "edamame",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Sushi (6 Stück)",
-      "calories": 230,
-      "emoji": "🍣"
+      "name": "Sushi (6 Stück, 150g)",
+      "calories": 141,
+      "emoji": "🍣",
+      "basis": [
+        {
+          "slug": "sushi",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarme Vorspeise",
-      "text": "Eine Schale Miso-Suppe (250g) hat nur etwa 100 kcal. Als Vorspeise gegessen, füllt sie den Magen und reduziert die Portionsgröße der Hauptmahlzeit.",
+      "text": "Eine Schale Miso-Suppe (250g) hat nur etwa 60 kcal. Als Vorspeise gegessen, füllt sie den Magen und reduziert die Portionsgröße der Hauptmahlzeit.",
       "icon": "🥣"
     },
     {
       "title": "Auf den Salzgehalt achten",
-      "text": "Miso ist von Natur aus sehr salzhaltig. Eine Schale enthält oft 1,5 bis 2g Salz. Bei Bluthochdruck lieber salzreduziertes Miso verwenden und sparsam würzen.",
+      "text": "Miso ist von Natur aus sehr salzhaltig. Eine Schale (250g) enthält rund 1,2g Natrium, das entspricht knapp 3g Salz. Bei Bluthochdruck lieber salzreduziertes Miso verwenden und sparsam würzen.",
       "icon": "🧂"
     },
     {
       "title": "Miso erst zum Schluss einrühren",
-      "text": "Miso nicht mitkochen. Die Paste erst nach dem Herd in die heiße Brühe einrühren – so bleiben die enthaltenen Mikroorganismen und das Aroma erhalten.",
+      "text": "Miso nicht mitkochen. Die Paste erst nach dem Herd in die heiße Brühe einrühren, so bleiben die enthaltenen Mikroorganismen und das Aroma erhalten.",
       "icon": "🔥"
     },
     {
@@ -139,27 +172,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Miso-Suppe?",
-      "answer": "Eine Schale Miso-Suppe (250g) hat ca. 100 kcal. Pro 100g sind es nur etwa 40 kcal. Eine kleine Schale (150g) liegt bei rund 60 kcal."
+      "answer": "Eine Schale Miso-Suppe (250g) hat ca. 60 kcal. Pro 100g sind es nur etwa 24 kcal. Eine kleine Schale (150g) liegt bei rund 36 kcal."
     },
     {
       "question": "Ist Miso-Suppe gut zum Abnehmen?",
-      "answer": "Ja. Mit nur 40 kcal/100g ist Miso-Suppe sehr kalorienarm und macht durch das warme Volumen satt. Als Vorspeise hilft sie, weniger von der Hauptmahlzeit zu essen."
+      "answer": "Ja. Mit nur 24 kcal/100g ist Miso-Suppe sehr kalorienarm und macht durch das warme Volumen satt. Als Vorspeise hilft sie, weniger von der Hauptmahlzeit zu essen."
     },
     {
       "question": "Wie viel Protein hat Miso-Suppe?",
-      "answer": "Eine Schale (250g) liefert rund 6g Protein. Mit zusätzlichem Tofu steigt der Wert auf etwa 8g pro Schale – das Eiweiß stammt aus der fermentierten Sojabohne."
+      "answer": "Eine Schale (250g) liefert rund 5,5g Protein. Mit zusätzlichem Tofu und Wakame steigt der Wert auf etwa 7,6g pro Schale, das Eiweiß stammt vor allem aus der Sojabohne (Miso und Tofu)."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Miso-Suppe?",
-      "answer": "Eine Schale (250g) enthält ca. 10g Kohlenhydrate, pro 100g sind es etwa 4g. Damit ist Miso-Suppe auch für eine kohlenhydratarme Ernährung gut geeignet."
+      "answer": "Eine Schale (250g) enthält ca. 6g Kohlenhydrate, pro 100g sind es etwa 2,3g. Damit ist Miso-Suppe auch für eine kohlenhydratarme Ernährung gut geeignet."
     },
     {
       "question": "Ist Miso-Suppe gesund?",
-      "answer": "Miso-Suppe ist fettarm, eiweißhaltig und fermentiert. Das fermentierte Soja liefert Mikroorganismen für die Darmflora. Einziger Nachteil ist der hohe Salzgehalt von 1,5 bis 2g pro Schale."
+      "answer": "Miso-Suppe ist fettarm, eiweißhaltig und fermentiert. Das fermentierte Soja liefert Mikroorganismen für die Darmflora. Einziger Nachteil ist der hohe Salzgehalt von knapp 3g pro Schale (250g)."
     },
     {
       "question": "Hat Instant-Miso-Suppe mehr Kalorien?",
-      "answer": "Nein, eine zubereitete Tüte Instant-Miso-Suppe (ca. 200g) hat mit rund 80 kcal ähnlich wenig wie frisch gekochte. Sie enthält jedoch oft mehr Salz und Zusatzstoffe."
+      "answer": "Nein, zubereitet ist Instant-Miso-Suppe meist ähnlich kalorienarm wie frisch gekochte. Sie enthält jedoch oft mehr Salz und Zusatzstoffe."
     }
   ],
   "related_foods": [

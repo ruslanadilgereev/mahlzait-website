@@ -3,9 +3,10 @@
   "name": "Wasabi",
   "emoji": "🥬",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2710103 (Wasabi paste), Werte je 100 g",
   "seo": {
     "title": "Wasabi Kalorien: Nährwerte, Paste & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Wasabi? Wasabi-Paste hat ca. 266 kcal pro 100g, eine Portion (5g) nur ~13 kcal. Alle Nährwerte, Varianten & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Wasabi? Wasabi-Paste hat ca. 292 kcal pro 100g, eine Portion (5g) nur ~15 kcal. Alle Nährwerte, Varianten & Tipps im Überblick.",
     "keywords": [
       "wasabi kcal",
       "wasabi kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 266,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 40,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 7,
+    "calories_per_100g": 292,
+    "protein_per_100g": 2.2,
+    "carbs_per_100g": 46.1,
+    "fat_per_100g": 10.9,
+    "fiber_per_100g": 6.1,
     "typical_portion_g": 5,
     "typical_portion_name": "1 Klecks (erbsengroß)"
   },
@@ -29,7 +30,7 @@
     {
       "name": "Kleiner Klecks (3g)",
       "portion_g": 3,
-      "calories": 8,
+      "calories": 9,
       "protein": 0,
       "carbs": 1,
       "fat": 0,
@@ -38,7 +39,7 @@
     {
       "name": "Klecks erbsengroß (5g)",
       "portion_g": 5,
-      "calories": 13,
+      "calories": 15,
       "protein": 0,
       "carbs": 2,
       "fat": 1,
@@ -47,17 +48,17 @@
     {
       "name": "Teelöffel Wasabi-Paste (10g)",
       "portion_g": 10,
-      "calories": 27,
+      "calories": 29,
       "protein": 0,
-      "carbs": 4,
+      "carbs": 5,
       "fat": 1
     },
     {
       "name": "Esslöffel Wasabi-Paste (15g)",
       "portion_g": 15,
-      "calories": 40,
-      "protein": 1,
-      "carbs": 6,
+      "calories": 44,
+      "protein": 0,
+      "carbs": 7,
       "fat": 2
     },
     {
@@ -67,52 +68,88 @@
       "protein": 5,
       "carbs": 24,
       "fat": 1,
-      "tip": "Echte Wasabi-Wurzel, fettarm"
+      "tip": "Echte Wasabi-Wurzel, fettarm",
+      "basis": [
+        {
+          "fdcId": 168583,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Wasabi-Erbsen Snack (30g)",
       "portion_g": 30,
       "calories": 130,
       "protein": 4,
-      "carbs": 21,
-      "fat": 3,
-      "tip": "Frittierter Knabber-Snack"
+      "carbs": 19,
+      "fat": 4,
+      "tip": "Gerösteter Knabber-Snack",
+      "basis": [
+        {
+          "fdcId": 173157,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Tube Wasabi-Paste (43g)",
       "portion_g": 43,
-      "calories": 114,
-      "protein": 2,
-      "carbs": 17,
-      "fat": 4
+      "calories": 126,
+      "protein": 1,
+      "carbs": 20,
+      "fat": 5
     }
   ],
   "comparison": [
     {
       "name": "Senf (5g)",
-      "calories": 4,
-      "emoji": "🌭"
+      "calories": 3,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "senf",
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Ketchup (5g)",
       "calories": 5,
-      "emoji": "🍅"
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "ketchup",
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Mayonnaise (5g)",
       "calories": 34,
-      "emoji": "🥚"
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "mayo",
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Sojasauce (5g)",
       "calories": 3,
-      "emoji": "🍶"
+      "emoji": "🍶",
+      "basis": [
+        {
+          "slug": "sojasauce",
+          "g": 5
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Winzige Portion, kaum Kalorien",
-      "text": "Wasabi wird nur in sehr kleinen Mengen gegessen. Ein erbsengroßer Klecks (5g) liefert lediglich rund 13 kcal und fällt damit kalorisch kaum ins Gewicht.",
+      "text": "Wasabi wird nur in sehr kleinen Mengen gegessen. Ein erbsengroßer Klecks (5g) liefert lediglich rund 15 kcal und fällt damit kalorisch kaum ins Gewicht.",
       "icon": "🥬"
     },
     {
@@ -122,7 +159,7 @@
     },
     {
       "title": "Vorsicht bei Wasabi-Erbsen",
-      "text": "Wasabi-Erbsen sind ein frittierter Knabber-Snack mit rund 430 kcal pro 100g. Sie haben deutlich mehr Kalorien als die Paste selbst.",
+      "text": "Wasabi-Erbsen sind ein gerösteter Knabber-Snack mit rund 432 kcal pro 100g. Sie haben deutlich mehr Kalorien als die Paste selbst.",
       "icon": "⚠️"
     },
     {
@@ -139,23 +176,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Wasabi?",
-      "answer": "Wasabi-Paste hat etwa 266 kcal pro 100g. Da man aber nur winzige Mengen verwendet, liefert ein erbsengroßer Klecks (5g) nur rund 13 kcal."
+      "answer": "Wasabi-Paste hat etwa 292 kcal pro 100g. Da man aber nur winzige Mengen verwendet, liefert ein erbsengroßer Klecks (5g) nur rund 15 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Teelöffel Wasabi?",
-      "answer": "Ein Teelöffel Wasabi-Paste (ca. 10g) hat rund 27 kcal."
+      "answer": "Ein Teelöffel Wasabi-Paste (ca. 10g) hat rund 29 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Wasabi?",
-      "answer": "Wasabi-Paste enthält etwa 40g Kohlenhydrate pro 100g. In einer typischen Portion von 5g sind das aber nur rund 2g."
+      "answer": "Wasabi-Paste enthält etwa 46g Kohlenhydrate pro 100g. In einer typischen Portion von 5g sind das aber nur rund 2g."
     },
     {
       "question": "Wie viel Protein hat Wasabi?",
-      "answer": "Wasabi liefert kaum Eiweiß: etwa 4g pro 100g. Bei den üblichen Kleinstmengen spielt das für die Proteinzufuhr keine Rolle."
+      "answer": "Wasabi liefert kaum Eiweiß: etwa 2g pro 100g. Bei den üblichen Kleinstmengen spielt das für die Proteinzufuhr keine Rolle."
     },
     {
       "question": "Ist Wasabi zum Abnehmen geeignet?",
-      "answer": "Ja, in den üblichen kleinen Mengen ist Wasabi nahezu kalorienfrei und sorgt für intensiven Geschmack. Vorsicht ist nur bei frittierten Wasabi-Erbsen geboten."
+      "answer": "Ja, in den üblichen kleinen Mengen ist Wasabi nahezu kalorienfrei und sorgt für intensiven Geschmack. Vorsicht ist nur bei Wasabi-Erbsen geboten."
     },
     {
       "question": "Ist Wasabi gesund?",

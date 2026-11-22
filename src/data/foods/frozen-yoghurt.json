@@ -3,6 +3,7 @@
   "name": "Frozen Yoghurt",
   "emoji": "🍦",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2705451 (Frozen yogurt, NFS), Werte je 100 g",
   "seo": {
     "title": "Frozen Yoghurt Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Frozen Yoghurt? 100g haben ca. 127 kcal, ein mittlerer Becher (200g) rund 254 kcal. Nährwerte, Portionen & Diät-Tipps.",
@@ -17,9 +18,9 @@
   },
   "overview": {
     "calories_per_100g": 127,
-    "protein_per_100g": 3.5,
-    "carbs_per_100g": 22.5,
-    "fat_per_100g": 3.1,
+    "protein_per_100g": 3,
+    "carbs_per_100g": 21.6,
+    "fat_per_100g": 3.6,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Becher mittel (200g)"
@@ -29,79 +30,103 @@
       "name": "Kleine Kugel (80g)",
       "portion_g": 80,
       "calories": 102,
-      "protein": 3,
-      "carbs": 18,
-      "fat": 2
+      "protein": 2,
+      "carbs": 17,
+      "fat": 3
     },
     {
       "name": "Becher klein (150g)",
       "portion_g": 150,
       "calories": 191,
       "protein": 5,
-      "carbs": 34,
+      "carbs": 32,
       "fat": 5
     },
     {
       "name": "Becher mittel (200g)",
       "portion_g": 200,
       "calories": 254,
-      "protein": 7,
-      "carbs": 45,
-      "fat": 6,
+      "protein": 6,
+      "carbs": 43,
+      "fat": 7,
       "tip": "Standard"
     },
     {
       "name": "Becher groß (300g)",
       "portion_g": 300,
       "calories": 381,
-      "protein": 11,
-      "carbs": 68,
-      "fat": 9
+      "protein": 9,
+      "carbs": 65,
+      "fat": 11
     },
     {
-      "name": "Self-Service Becher mit Toppings (250g)",
+      "name": "Self-Service Becher (250g)",
       "portion_g": 250,
       "calories": 318,
-      "protein": 9,
-      "carbs": 56,
-      "fat": 8,
+      "protein": 8,
+      "carbs": 54,
+      "fat": 9,
       "tip": "Ohne Toppings gerechnet"
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
       "calories": 127,
-      "protein": 4,
-      "carbs": 23,
-      "fat": 3
+      "protein": 3,
+      "carbs": 22,
+      "fat": 4
     }
   ],
   "comparison": [
     {
       "name": "Speiseeis (Vanille, 100g)",
-      "calories": 201,
-      "emoji": "🍨"
+      "calories": 207,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis-vanille",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Sorbet (100g)",
-      "calories": 134,
-      "emoji": "🍧"
+      "calories": 110,
+      "emoji": "🍧",
+      "basis": [
+        {
+          "fdcId": 2709314,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Naturjoghurt (100g)",
       "calories": 61,
-      "emoji": "🥛"
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 171284,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Softeis (100g)",
-      "calories": 159,
-      "emoji": "🍦"
+      "calories": 222,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "softeis",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Leichter als Sahneeis",
-      "text": "Frozen Yoghurt hat mit 127 kcal pro 100g deutlich weniger Kalorien und Fett als klassisches Vanille-Speiseeis mit rund 200 kcal.",
+      "text": "Frozen Yoghurt hat mit 127 kcal pro 100g deutlich weniger Kalorien und Fett als klassisches Vanille-Speiseeis mit rund 207 kcal.",
       "icon": "🍦"
     },
     {
@@ -116,12 +141,12 @@
     },
     {
       "title": "Etwas Eiweiß inklusive",
-      "text": "Durch den Joghurtanteil liefert Frozen Yoghurt rund 3,5g Eiweiß pro 100g, mehr als Sorbet oder Wassereis.",
+      "text": "Durch den Joghurtanteil liefert Frozen Yoghurt rund 3g Eiweiß pro 100g, mehr als Sorbet oder Wassereis.",
       "icon": "💪"
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Ein kleiner Becher (150g) mit knapp 190 kcal reicht als Dessert meist aus, der große Becher (300g) schlägt dagegen mit 381 kcal zu Buche.",
+      "text": "Ein kleiner Becher (150g) mit rund 191 kcal reicht als Dessert meist aus, der große Becher (300g) schlägt dagegen mit 381 kcal zu Buche.",
       "icon": "🥄"
     }
   ],
@@ -136,11 +161,11 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Frozen Yoghurt?",
-      "answer": "Pro 100g enthält Frozen Yoghurt rund 22,5g Kohlenhydrate, davon etwa 20g Zucker. Ein mittlerer Becher (200g) liefert ca. 45g Kohlenhydrate."
+      "answer": "Pro 100g enthält Frozen Yoghurt rund 21,6g Kohlenhydrate, davon etwa 20g Zucker. Ein mittlerer Becher (200g) liefert ca. 43g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Frozen Yoghurt?",
-      "answer": "Durch den Joghurtanteil liefert Frozen Yoghurt etwa 3,5g Eiweiß pro 100g, also rund 7g pro mittlerem Becher (200g)."
+      "answer": "Durch den Joghurtanteil liefert Frozen Yoghurt etwa 3g Eiweiß pro 100g, also rund 6g pro mittlerem Becher (200g)."
     },
     {
       "question": "Ist Frozen Yoghurt zum Abnehmen geeignet?",

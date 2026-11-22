@@ -3,9 +3,10 @@
   "name": "Focaccia",
   "emoji": "🍞",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167945 (Focaccia, Italian flatbread, plain), Werte je 100 g",
   "seo": {
     "title": "Focaccia Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Focaccia? 100g haben ca. 273 kcal, ein Stück (80g) ca. 218 kcal. Nährwerte, Kohlenhydrate & Protein im Überblick.",
+    "description": "Wie viele Kalorien hat Focaccia? 100g haben ca. 249 kcal, ein Stück (80g) ca. 199 kcal. Nährwerte, Kohlenhydrate & Protein im Überblick.",
     "keywords": [
       "focaccia kalorien",
       "focaccia kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 273,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 46,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 249,
+    "protein_per_100g": 8.8,
+    "carbs_per_100g": 35.8,
+    "fat_per_100g": 7.9,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Stück (80g)"
   },
@@ -28,90 +29,123 @@
     {
       "name": "Beilage (50g)",
       "portion_g": 50,
-      "calories": 137,
+      "calories": 125,
       "protein": 4,
-      "carbs": 23,
+      "carbs": 18,
       "fat": 4
     },
     {
       "name": "Mini-Focaccia (40g)",
       "portion_g": 40,
-      "calories": 109,
-      "protein": 3,
-      "carbs": 18,
+      "calories": 100,
+      "protein": 4,
+      "carbs": 14,
       "fat": 3
     },
     {
       "name": "1 Stück klein (80g)",
       "portion_g": 80,
-      "calories": 218,
-      "protein": 6,
-      "carbs": 37,
+      "calories": 199,
+      "protein": 7,
+      "carbs": 29,
       "fat": 6,
       "tip": "Standard"
     },
     {
       "name": "1 Stück groß (120g)",
       "portion_g": 120,
-      "calories": 328,
-      "protein": 10,
-      "carbs": 55,
-      "fat": 8
+      "calories": 299,
+      "protein": 11,
+      "carbs": 43,
+      "fat": 9
     },
     {
-      "name": "Focaccia mit Olivenöl & Rosmarin (100g)",
-      "portion_g": 100,
-      "calories": 310,
-      "protein": 8,
-      "carbs": 46,
-      "fat": 11,
-      "tip": "Extra Olivenöl erhöht das Fett"
+      "name": "Focaccia mit extra Olivenöl & Rosmarin (100g + 5g Öl)",
+      "portion_g": 105,
+      "calories": 293,
+      "protein": 9,
+      "carbs": 36,
+      "fat": 13,
+      "tip": "Extra Olivenöl erhöht das Fett",
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "fdcId": 171413,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 273,
-      "protein": 8,
-      "carbs": 46,
-      "fat": 7
+      "calories": 249,
+      "protein": 9,
+      "carbs": 36,
+      "fat": 8
     },
     {
       "name": "Halbes Blech (200g)",
       "portion_g": 200,
-      "calories": 546,
-      "protein": 16,
-      "carbs": 92,
-      "fat": 14
+      "calories": 498,
+      "protein": 18,
+      "carbs": 72,
+      "fat": 16
     },
     {
       "name": "Ganzes Blech (400g)",
       "portion_g": 400,
-      "calories": 1092,
-      "protein": 32,
-      "carbs": 184,
-      "fat": 28
+      "calories": 996,
+      "protein": 35,
+      "carbs": 143,
+      "fat": 32
     }
   ],
   "comparison": [
     {
       "name": "Ciabatta (80g)",
-      "calories": 217,
-      "emoji": "🍞"
+      "calories": 207,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "ciabatta",
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Baguette (80g)",
       "calories": 218,
-      "emoji": "🥖"
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Brezel (80g)",
-      "calories": 271,
-      "emoji": "🥨"
+      "calories": 270,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Pizza Margherita (80g)",
-      "calories": 184,
-      "emoji": "🍕"
+      "calories": 213,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 80
+        }
+      ]
     }
   ],
   "tips": [
@@ -122,12 +156,12 @@
     },
     {
       "title": "Portionsgröße im Blick behalten",
-      "text": "Ein Stück (80g) hat ca. 218 kcal. Ein ganzes Blech kommt schnell auf über 1000 kcal, daher bewusst portionieren.",
+      "text": "Ein Stück (80g) hat ca. 199 kcal. Ein ganzes Blech kommt schnell auf rund 1000 kcal, daher bewusst portionieren.",
       "icon": "⚖️"
     },
     {
       "title": "Als Beilage statt Hauptmahlzeit",
-      "text": "Eine kleine Beilage-Portion (50g) mit nur 137 kcal passt gut zu Salat oder Suppe, ohne den Tagesbedarf zu sprengen.",
+      "text": "Eine kleine Beilage-Portion (50g) mit nur 125 kcal passt gut zu Salat oder Suppe, ohne den Tagesbedarf zu sprengen.",
       "icon": "🥗"
     },
     {
@@ -144,19 +178,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Focaccia?",
-      "answer": "100g Focaccia haben ca. 273 kcal. Ein typisches Stück (80g) kommt auf rund 218 kcal."
+      "answer": "100g Focaccia haben ca. 249 kcal. Ein typisches Stück (80g) kommt auf rund 199 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Focaccia?",
-      "answer": "Ein kleines Stück (80g) hat ca. 218 kcal, ein größeres Stück (120g) etwa 328 kcal."
+      "answer": "Ein kleines Stück (80g) hat ca. 199 kcal, ein größeres Stück (120g) etwa 299 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Focaccia?",
-      "answer": "Focaccia enthält ca. 46g Kohlenhydrate pro 100g, da sie hauptsächlich aus Weizenmehl besteht."
+      "answer": "Focaccia enthält ca. 36g Kohlenhydrate pro 100g, da sie hauptsächlich aus Weizenmehl besteht."
     },
     {
       "question": "Wie viel Protein steckt in Focaccia?",
-      "answer": "Focaccia liefert ca. 8g Protein pro 100g. Das ist ein moderater Wert, der vom Weizenmehl stammt."
+      "answer": "Focaccia liefert ca. 9g Protein pro 100g. Das ist ein moderater Wert, der vom Weizenmehl stammt."
     },
     {
       "question": "Ist Focaccia zum Abnehmen geeignet?",

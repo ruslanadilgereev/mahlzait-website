@@ -3,9 +3,10 @@
   "name": "Tomate-Mozzarella",
   "emoji": "🍅",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2705818 (Mozzarella cheese, tomato, and basil, with oil and vinegar dressing), Werte je 100 g",
   "seo": {
     "title": "Tomate-Mozzarella Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Tomate-Mozzarella? Eine Portion (200g) ohne Öl hat ca. 268 kcal. Nährwerte pro 100g, Eiweiß & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Tomate-Mozzarella? Eine Portion (200g) mit Öl-Essig-Dressing hat ca. 278 kcal, ohne Öl ca. 205 kcal. Nährwerte pro 100g, Eiweiß & Tipps zum Abnehmen.",
     "keywords": [
       "kalorien tomate mozzarella",
       "tomate mozzarella kalorien",
@@ -16,141 +17,213 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 134,
-    "protein_per_100g": 9.5,
-    "carbs_per_100g": 3.2,
-    "fat_per_100g": 9.6,
-    "fiber_per_100g": 0.6,
+    "calories_per_100g": 139,
+    "protein_per_100g": 7.2,
+    "carbs_per_100g": 3.9,
+    "fat_per_100g": 10.9,
+    "fiber_per_100g": 0.8,
     "typical_portion_g": 200,
-    "typical_portion_name": "1 Portion (ohne Öl)"
+    "typical_portion_name": "1 Portion (mit Öl-Essig-Dressing)"
   },
   "variants": [
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 134,
-      "protein": 9.5,
-      "carbs": 3.2,
-      "fat": 9.6
+      "calories": 139,
+      "protein": 7.2,
+      "carbs": 3.9,
+      "fat": 10.9
     },
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 201,
-      "protein": 14.2,
-      "carbs": 4.8,
-      "fat": 14.4
+      "calories": 209,
+      "protein": 10.8,
+      "carbs": 5.9,
+      "fat": 16.4
     },
     {
-      "name": "1 Portion ohne Öl (200g)",
+      "name": "1 Portion ohne Öl (140g Tomate + 60g Mozzarella)",
       "portion_g": 200,
-      "calories": 268,
-      "protein": 19,
-      "carbs": 6.4,
-      "fat": 19.2,
-      "tip": "Standard"
+      "calories": 205,
+      "protein": 14.5,
+      "carbs": 6.9,
+      "fat": 13.6,
+      "tip": "Ohne Öl und Dressing",
+      "basis": [
+        {
+          "fdcId": 170457,
+          "g": 140
+        },
+        {
+          "fdcId": 170845,
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "1 Portion mit Olivenöl (200g + 1 EL Öl)",
+      "name": "1 Portion mit Olivenöl (140g Tomate + 60g Mozzarella + 10g Öl)",
       "portion_g": 210,
-      "calories": 356,
-      "protein": 19,
-      "carbs": 6.4,
-      "fat": 29.2,
-      "tip": "1 EL Olivenöl bringt rund 90 kcal extra"
+      "calories": 293,
+      "protein": 14.5,
+      "carbs": 6.9,
+      "fat": 23.6,
+      "tip": "10g Olivenöl bringen rund 88 kcal extra",
+      "basis": [
+        {
+          "fdcId": 170457,
+          "g": 140
+        },
+        {
+          "fdcId": 170845,
+          "g": 60
+        },
+        {
+          "fdcId": 171413,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Große Portion (300g)",
       "portion_g": 300,
-      "calories": 402,
-      "protein": 28.5,
-      "carbs": 9.6,
-      "fat": 28.8
+      "calories": 417,
+      "protein": 21.6,
+      "carbs": 11.7,
+      "fat": 32.7
     },
     {
-      "name": "Light-Variante mit Magermozzarella (200g)",
+      "name": "Light-Variante (140g Tomate + 60g Mozzarella teilentrahmt)",
       "portion_g": 200,
       "calories": 178,
-      "protein": 20.8,
-      "carbs": 5.4,
-      "fat": 8.2,
-      "tip": "Spart durch fettarmen Mozzarella rund 90 kcal"
+      "protein": 15.8,
+      "carbs": 7.1,
+      "fat": 9.8,
+      "tip": "Teilentrahmter Mozzarella spart rund 27 kcal",
+      "basis": [
+        {
+          "fdcId": 170457,
+          "g": 140
+        },
+        {
+          "fdcId": 170847,
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Caprese mit Basilikum & Balsamico (220g)",
+      "name": "Caprese mit Balsamico (140g Tomate + 60g Mozzarella + 20g Balsamico)",
       "portion_g": 220,
-      "calories": 300,
-      "protein": 19.2,
-      "carbs": 9,
-      "fat": 19.4,
-      "tip": "Balsamico statt Öl hält die Kalorien niedrig"
+      "calories": 222,
+      "protein": 14.6,
+      "carbs": 10.3,
+      "fat": 13.6,
+      "tip": "Balsamico statt Öl hält die Kalorien niedrig",
+      "basis": [
+        {
+          "fdcId": 170457,
+          "g": 140
+        },
+        {
+          "fdcId": 170845,
+          "g": 60
+        },
+        {
+          "fdcId": 172241,
+          "g": 20
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Mozzarella (pur)",
-      "calories": 254,
-      "emoji": "🧀"
+      "name": "Mozzarella (100g)",
+      "calories": 299,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Tomate",
+      "name": "Tomate (100g)",
       "calories": 18,
-      "emoji": "🍅"
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "tomate",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Feta",
-      "calories": 264,
-      "emoji": "🧀"
+      "name": "Feta (100g)",
+      "calories": 265,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "feta",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Hummus",
-      "calories": 177,
-      "emoji": "🥣"
+      "name": "Hummus (100g)",
+      "calories": 237,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich und sättigend",
-      "text": "Eine Portion (200g) liefert rund 19g Eiweiß aus dem Mozzarella und sättigt dadurch gut – ideal als leichtes Mittagessen.",
+      "text": "Eine Portion (200g) liefert rund 14g Eiweiß aus dem Mozzarella und sättigt dadurch gut, ideal als leichtes Mittagessen.",
       "icon": "💪"
     },
     {
       "title": "Öl ist der Kalorientreiber",
-      "text": "Das Gericht selbst ist moderat. Erst 1 EL Olivenöl bringt rund 90 kcal extra. Wer abnehmen will, dosiert das Öl sparsam oder nimmt Balsamico.",
+      "text": "Tomate und Mozzarella allein sind moderat. Erst das Öl treibt die Kalorien: 10g Olivenöl bringen rund 88 kcal extra. Wer abnehmen will, dosiert das Öl sparsam oder nimmt Balsamico.",
       "icon": "🫒"
     },
     {
       "title": "Fettarmer Mozzarella spart Kalorien",
-      "text": "Mit Magermozzarella sinkt die Portion von 268 auf rund 178 kcal – bei gleichem oder höherem Eiweißgehalt.",
+      "text": "Mit teilentrahmtem Mozzarella sinkt die Portion ohne Öl von 205 auf rund 178 kcal, bei etwas höherem Eiweißgehalt.",
       "icon": "⚖️"
     },
     {
       "title": "Wenig Kohlenhydrate",
-      "text": "Mit nur etwa 6g Kohlenhydraten pro Portion passt Tomate-Mozzarella gut in eine kohlenhydratarme Ernährung.",
+      "text": "Mit nur etwa 8g Kohlenhydraten pro Portion passt Tomate-Mozzarella gut in eine kohlenhydratarme Ernährung.",
       "icon": "🥗"
     },
     {
       "title": "Frischer Mozzarella im Wasser",
-      "text": "Wasserpackungen (Fior di Latte) haben etwas weniger Fett als gereifter Pizza-Mozzarella am Stück – ein guter Standard für das Gericht.",
+      "text": "Wasserpackungen (Fior di Latte) haben etwas weniger Fett als gereifter Pizza-Mozzarella am Stück, ein guter Standard für das Gericht.",
       "icon": "💧"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Tomate-Mozzarella?",
-      "answer": "Eine Portion (200g) Tomate-Mozzarella ohne Öl hat etwa 268 kcal. Pro 100g sind es rund 134 kcal."
+      "answer": "Eine Portion (200g) Tomate-Mozzarella mit Öl-Essig-Dressing hat etwa 278 kcal, pro 100g rund 139 kcal. Ohne Öl (140g Tomate, 60g Mozzarella) sind es rund 205 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Tomate-Mozzarella mit Olivenöl?",
-      "answer": "Mit 1 EL Olivenöl kommt eine Portion auf etwa 356 kcal, da das Öl allein rund 90 kcal beisteuert."
+      "answer": "Mit 10g Olivenöl kommt eine Portion (140g Tomate, 60g Mozzarella) auf etwa 293 kcal, da das Öl allein rund 88 kcal beisteuert."
     },
     {
       "question": "Wie viel Eiweiß steckt in Tomate-Mozzarella?",
-      "answer": "Eine Portion (200g) liefert rund 19g Eiweiß, das fast vollständig aus dem Mozzarella stammt."
+      "answer": "Eine Portion (200g) liefert rund 14g Eiweiß, das fast vollständig aus dem Mozzarella stammt."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Tomate-Mozzarella?",
-      "answer": "Das Gericht ist kohlenhydratarm: Pro 100g sind es nur etwa 3,2g, also rund 6g pro Portion (200g)."
+      "answer": "Das Gericht ist kohlenhydratarm: Pro 100g sind es nur etwa 3,9g, also rund 8g pro Portion (200g)."
     },
     {
       "question": "Ist Tomate-Mozzarella zum Abnehmen geeignet?",

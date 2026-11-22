@@ -3,52 +3,246 @@
   "name": "Eis",
   "emoji": "🍦",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2705629 (Ice cream, NFS), Werte je 100 g",
   "seo": {
-    "title": "Eis Kalorien: 200 kcal/100g + Rechner | Mahlzait",
-    "description": "Eis hat ca. 200 kcal pro 100g. Berechne Kalorien für Vanille, Schoko, Erdbeer, Sorbet, Frozen Yogurt und Eis am Stiel mit dem kostenlosen Rechner.",
-    "keywords": ["eis kalorien", "kalorien eis", "vanilleeis kalorien", "schokoeis kalorien", "sorbet kalorien", "frozen yogurt kalorien", "eis am stiel kalorien", "magnum kalorien"]
+    "title": "Eis Kalorien: 221 kcal/100g + Rechner | Mahlzait",
+    "description": "Eis hat ca. 221 kcal pro 100g. Berechne Kalorien für Vanille, Schoko, Erdbeer, Sorbet, Frozen Yogurt und Eis am Stiel mit dem kostenlosen Rechner.",
+    "keywords": [
+      "eis kalorien",
+      "kalorien eis",
+      "vanilleeis kalorien",
+      "schokoeis kalorien",
+      "sorbet kalorien",
+      "frozen yogurt kalorien",
+      "eis am stiel kalorien",
+      "magnum kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 200,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 100,
-    "typical_portion_name": "1 Kugel"
+    "calories_per_100g": 221,
+    "protein_per_100g": 3.6,
+    "carbs_per_100g": 26.4,
+    "fat_per_100g": 11.3,
+    "fiber_per_100g": 0.8,
+    "typical_portion_g": 80,
+    "typical_portion_name": "1 Kugel (80g)"
   },
   "variants": [
-    { "name": "Vanilleeis (1 Kugel 80g)", "portion_g": 80, "calories": 160, "protein": 3, "carbs": 18, "fat": 9 },
-    { "name": "Schokoeis (1 Kugel 80g)", "portion_g": 80, "calories": 175, "protein": 3, "carbs": 20, "fat": 10 },
-    { "name": "Erdbeereis (1 Kugel 80g)", "portion_g": 80, "calories": 145, "protein": 2, "carbs": 19, "fat": 7 },
-    { "name": "Sorbet (1 Kugel 80g)", "portion_g": 80, "calories": 100, "protein": 0, "carbs": 25, "fat": 0, "tip": "Fettfrei, aber viel Zucker" },
-    { "name": "Frozen Yogurt (1 Kugel 80g)", "portion_g": 80, "calories": 110, "protein": 4, "carbs": 18, "fat": 3, "tip": "Kalorienärmste Eiscreme" },
-    { "name": "Magnum Mandel (110ml)", "portion_g": 90, "calories": 270, "protein": 4, "carbs": 23, "fat": 18 },
-    { "name": "Cornetto Classico (90ml)", "portion_g": 70, "calories": 180, "protein": 3, "carbs": 22, "fat": 9 },
-    { "name": "Solero Exotic (50g)", "portion_g": 50, "calories": 90, "protein": 1, "carbs": 18, "fat": 1 },
-    { "name": "Becher mit 3 Kugeln Vanille", "portion_g": 240, "calories": 480, "protein": 9, "carbs": 54, "fat": 27 },
-    { "name": "Spaghetti-Eis (300g)", "portion_g": 300, "calories": 450, "protein": 8, "carbs": 50, "fat": 25 }
+    {
+      "name": "1 Kugel Eis (80g)",
+      "portion_g": 80,
+      "calories": 177,
+      "protein": 3,
+      "carbs": 21,
+      "fat": 9
+    },
+    {
+      "name": "Vanilleeis (1 Kugel 80g)",
+      "portion_g": 80,
+      "calories": 166,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 167575,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Schokoeis (1 Kugel 80g)",
+      "portion_g": 80,
+      "calories": 173,
+      "protein": 3,
+      "carbs": 23,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 168809,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Erdbeereis (1 Kugel 80g)",
+      "portion_g": 80,
+      "calories": 154,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 7,
+      "basis": [
+        {
+          "fdcId": 168810,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Sorbet (1 Kugel 80g)",
+      "portion_g": 80,
+      "calories": 88,
+      "protein": 1,
+      "carbs": 22,
+      "fat": 0,
+      "tip": "Fettfrei, aber viel Zucker",
+      "basis": [
+        {
+          "fdcId": 2709314,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Frozen Yogurt (1 Kugel 80g)",
+      "portion_g": 80,
+      "calories": 102,
+      "protein": 2,
+      "carbs": 17,
+      "fat": 3,
+      "tip": "Kalorienärmste Eiscreme",
+      "basis": [
+        {
+          "fdcId": 2705451,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Schoko-Eis am Stiel mit Nüssen (90g)",
+      "portion_g": 90,
+      "calories": 273,
+      "protein": 5,
+      "carbs": 11,
+      "fat": 23,
+      "basis": [
+        {
+          "fdcId": 171305,
+          "g": 90
+        }
+      ]
+    },
+    {
+      "name": "Eistüte mit Schoko und Nüssen (70g)",
+      "portion_g": 70,
+      "calories": 248,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 15,
+      "basis": [
+        {
+          "fdcId": 172228,
+          "g": 70
+        }
+      ]
+    },
+    {
+      "name": "Becher mit 3 Kugeln Vanille (240g)",
+      "portion_g": 240,
+      "calories": 497,
+      "protein": 8,
+      "carbs": 57,
+      "fat": 26,
+      "basis": [
+        {
+          "fdcId": 167575,
+          "g": 240
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Schokolade", "calories": 540, "emoji": "🍫" },
-    { "name": "Joghurt", "calories": 60, "emoji": "🥛" },
-    { "name": "Pudding", "calories": 130, "emoji": "🍮" },
-    { "name": "Kuchen", "calories": 380, "emoji": "🍰" }
+    {
+      "name": "Schokolade (4 Stücke, 25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade",
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Joghurt (1 Becher, 150g)",
+      "calories": 92,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "joghurt",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Pudding (1 Becher, 150g)",
+      "calories": 170,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "pudding",
+          "g": 150
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Sorbet & Frozen Yogurt sind Top-Picks", "text": "Sorbet (100 kcal/Kugel, 0g Fett) und Frozen Yogurt (110 kcal/Kugel) sind die kalorienärmsten Eis-Sorten. Bei kleineren Becher: 200-300 kcal Ersparnis.", "icon": "📉" },
-    { "title": "Stieleis sind oft Kalorienbomben", "text": "Magnum Mandel hat 270 kcal pro Stück – mehr als 3 Kugeln Vanilleeis. Cornetto, Magnum & Co. genau lesen, oft mehr Fett als gedacht.", "icon": "⚠️" },
-    { "title": "1 Kugel = ca. 80g, nicht 50g", "text": "Eis-Kugel im Café meist 80-100g. Beim Berechnen besser realistisch ansetzen: 1 große Kugel = 160-200 kcal, nicht 100.", "icon": "⚖️" },
-    { "title": "Spaghetti-Eis ist eine Mahlzeit", "text": "Spaghetti-Eis (300g mit Erdbeersauce + Sahne) hat oft 450-550 kcal – wie ein Mittagessen. Als Dessert direkt nach Pizza gerne 1.500+ kcal Tagesextra.", "icon": "🍝" },
-    { "title": "Eis selbst machen", "text": "1 gefrorene Banane + 30g Magerquark + Vanille + Mandelmus = nur 140 kcal/Portion und über 200 kcal weniger als gekauftes Eis.", "icon": "🧑‍🍳" }
+    {
+      "title": "Sorbet & Frozen Yogurt sind Top-Picks",
+      "text": "Sorbet (88 kcal/Kugel, praktisch fettfrei) und Frozen Yogurt (102 kcal/Kugel) sind die kalorienärmsten Eis-Sorten. Bei einem Becher mit 3 Kugeln sparst du gegenüber Vanilleeis rund 190 bis 230 kcal.",
+      "icon": "📉"
+    },
+    {
+      "title": "Stieleis sind oft Kalorienbomben",
+      "text": "Ein Schoko-Eis am Stiel mit Nüssen (90g) hat rund 273 kcal, deutlich mehr als eine Kugel Vanilleeis (166 kcal). Cornetto, Magnum & Co. genau lesen, oft mehr Fett als gedacht.",
+      "icon": "⚠️"
+    },
+    {
+      "title": "1 Kugel = ca. 80g, nicht 50g",
+      "text": "Eis-Kugel im Café meist 80 bis 100g. Beim Berechnen besser realistisch ansetzen: 1 große Kugel = 177 bis 221 kcal, nicht 100.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Spaghetti-Eis ist eine Mahlzeit",
+      "text": "Spaghetti-Eis mit Erdbeersauce und Sahne kommt schnell auf so viele Kalorien wie ein Mittagessen. Als Dessert direkt nach einer Pizza wird daraus ein großes Tagesextra.",
+      "icon": "🍝"
+    },
+    {
+      "title": "Eis selbst machen",
+      "text": "Eine gefrorene Banane mit etwas Magerquark, Vanille und Mandelmus ergibt ein cremiges Eis mit weniger Kalorien als gekauftes Eis.",
+      "icon": "🧑‍🍳"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Kugel Eis?", "answer": "Eine durchschnittliche Kugel Vanilleeis (80g) hat ca. 160 kcal. Schokoeis ca. 175 kcal, Erdbeer 145 kcal, Sorbet nur 100 kcal pro Kugel." },
-    { "question": "Welche Eissorte hat die wenigsten Kalorien?", "answer": "Sorbet (100 kcal/Kugel) und Frozen Yogurt (110 kcal/Kugel) sind klar die kalorienärmsten. Wassereis am Stiel hat oft nur 50-80 kcal pro Stück." },
-    { "question": "Wie viele Kalorien hat ein Magnum?", "answer": "Magnum Classic: 245 kcal. Magnum Mandel: 270 kcal. Magnum White: 250 kcal. Mini-Magnum: 130 kcal. Die Schokoladen-Hülle macht etwa die Hälfte der Kalorien aus." },
-    { "question": "Macht Eis dick?", "answer": "Eine Kugel pro Woche bestimmt nicht. Aber: 3 Kugeln Eisbecher (480 kcal) als Nachmittag-Snack 5x/Woche = 2.400 kcal extra/Woche = 0,3kg Gewichtszunahme/Woche." },
-    { "question": "Frozen Yogurt vs. Eis – was ist besser?", "answer": "Frozen Yogurt: 110 kcal pro Kugel, etwas Protein, weniger Fett. Vanilleeis: 160 kcal, mehr Fett. Frozen Yogurt ist klar die magerere Wahl, schmeckt aber leicht säuerlicher." },
-    { "question": "Sorbet oder Eis bei Diät?", "answer": "Sorbet ist fettfrei (100 kcal pro Kugel), hat aber viel Zucker. Frozen Yogurt sättigt durch Protein etwas länger. Beides ist klar besser als Sahne-Eis (200+ kcal/Kugel)." }
+    {
+      "question": "Wie viele Kalorien hat eine Kugel Eis?",
+      "answer": "Eine durchschnittliche Kugel Vanilleeis (80g) hat ca. 166 kcal. Schokoeis ca. 173 kcal, Erdbeer 154 kcal, Sorbet nur 88 kcal pro Kugel."
+    },
+    {
+      "question": "Welche Eissorte hat die wenigsten Kalorien?",
+      "answer": "Sorbet (88 kcal/Kugel) und Frozen Yogurt (102 kcal/Kugel) sind klar die kalorienärmsten. Wassereis am Stiel ist oft noch leichter."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Magnum?",
+      "answer": "Ein Schoko-Eis am Stiel mit Nüssen wie Magnum Mandel (90g) liegt nach dem USDA-Wert für diese Eisart bei rund 273 kcal. Die genauen Magnum-Werte stehen auf der Packung. Die Schokoladen-Hülle macht einen großen Teil der Kalorien aus."
+    },
+    {
+      "question": "Macht Eis dick?",
+      "answer": "Eine Kugel pro Woche bestimmt nicht. Aber: 3 Kugeln Eisbecher (497 kcal) als Nachmittag-Snack 5x/Woche = rund 2.485 kcal extra/Woche = 0,3kg Gewichtszunahme/Woche."
+    },
+    {
+      "question": "Frozen Yogurt vs. Eis: Was ist besser?",
+      "answer": "Frozen Yogurt: 102 kcal pro Kugel, etwas Protein, weniger Fett. Vanilleeis: 166 kcal, mehr Fett. Frozen Yogurt ist klar die magerere Wahl, schmeckt aber leicht säuerlicher."
+    },
+    {
+      "question": "Sorbet oder Eis bei Diät?",
+      "answer": "Sorbet ist fettfrei (88 kcal pro Kugel), hat aber viel Zucker. Frozen Yogurt sättigt durch Protein etwas länger. Beides ist klar besser als Sahne-Eis (rund 166 kcal pro Kugel Vanille)."
+    }
   ],
-  "related_foods": ["eis-vanille", "eis-schokolade", "frozen-yogurt", "milchshake-vanille"]
+  "related_foods": [
+    "eis-vanille",
+    "eis-schokolade",
+    "frozen-yogurt",
+    "milchshake-vanille"
+  ]
 }

@@ -3,6 +3,7 @@
   "name": "Baked Beans",
   "emoji": "🫘",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 175182 (Beans, baked, canned, plain or vegetarian), Werte je 100 g",
   "seo": {
     "title": "Baked Beans Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Baked Beans? 100g haben ca. 94 kcal. Nährwerte pro Portion & Dose, Eiweiß, Kohlenhydrate und Diät-Tipps im Überblick.",
@@ -17,10 +18,10 @@
   },
   "overview": {
     "calories_per_100g": 94,
-    "protein_per_100g": 5.2,
-    "carbs_per_100g": 21,
+    "protein_per_100g": 4.8,
+    "carbs_per_100g": 21.1,
     "fat_per_100g": 0.4,
-    "fiber_per_100g": 5.5,
+    "fiber_per_100g": 4.1,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion (halbe Dose)"
   },
@@ -47,7 +48,7 @@
       "name": "Halbe Dose (210g)",
       "portion_g": 210,
       "calories": 197,
-      "protein": 11,
+      "protein": 10,
       "carbs": 44,
       "fat": 1
     },
@@ -55,8 +56,8 @@
       "name": "Ganze Dose (415g)",
       "portion_g": 415,
       "calories": 390,
-      "protein": 22,
-      "carbs": 87,
+      "protein": 20,
+      "carbs": 88,
       "fat": 2,
       "tip": "Große Dose"
     },
@@ -64,7 +65,7 @@
       "name": "Englisches Frühstück (150g)",
       "portion_g": 150,
       "calories": 141,
-      "protein": 8,
+      "protein": 7,
       "carbs": 32,
       "fat": 1
     },
@@ -72,31 +73,55 @@
       "name": "Esslöffel (30g)",
       "portion_g": 30,
       "calories": 28,
-      "protein": 2,
+      "protein": 1,
       "carbs": 6,
       "fat": 0
     }
   ],
   "comparison": [
     {
-      "name": "Kidneybohnen",
-      "calories": 127,
-      "emoji": "🫘"
+      "name": "Kidneybohnen (gekocht, 200g)",
+      "calories": 254,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "kidneybohnen",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Kichererbsen",
-      "calories": 119,
-      "emoji": "🫘"
+      "name": "Kichererbsen (gekocht, 200g)",
+      "calories": 328,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "kichererbsen",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Linsen (gekocht)",
-      "calories": 116,
-      "emoji": "🫘"
+      "name": "Linsen (gekocht, 200g)",
+      "calories": 232,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "linsen",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Weiße Bohnen",
-      "calories": 110,
-      "emoji": "🫘"
+      "name": "Weiße Bohnen (gekocht, 200g)",
+      "calories": 278,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "weisse-bohnen",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
@@ -112,12 +137,12 @@
     },
     {
       "title": "Gute pflanzliche Eiweißquelle",
-      "text": "Eine Portion (200g) bringt rund 10g Eiweiß. In Kombination mit Vollkornbrot ergibt sich ein hochwertiges pflanzliches Eiweißprofil.",
+      "text": "Eine Portion (200g) bringt knapp 10g Eiweiß. In Kombination mit Vollkornbrot ergibt sich ein hochwertiges pflanzliches Eiweißprofil.",
       "icon": "💪"
     },
     {
       "title": "Ballaststoffe für die Verdauung",
-      "text": "Mit etwa 5,5g Ballaststoffen pro 100g unterstützen Baked Beans eine gesunde Verdauung und halten den Blutzucker stabiler.",
+      "text": "Mit etwa 4,1g Ballaststoffen pro 100g unterstützen Baked Beans eine gesunde Verdauung und halten den Blutzucker stabiler.",
       "icon": "🌾"
     },
     {
@@ -133,7 +158,7 @@
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Dose Baked Beans?",
-      "answer": "Eine ganze Dose (ca. 415g) enthält rund 390 kcal, etwa 22g Eiweiß und 87g Kohlenhydrate."
+      "answer": "Eine ganze Dose (ca. 415g) enthält rund 390 kcal, etwa 20g Eiweiß und 88g Kohlenhydrate."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Baked Beans?",
@@ -141,7 +166,7 @@
     },
     {
       "question": "Wie viel Eiweiß steckt in Baked Beans?",
-      "answer": "100g Baked Beans liefern rund 5,2g Eiweiß. Eine Portion von 200g kommt damit auf etwa 10g pflanzliches Eiweiß."
+      "answer": "100g Baked Beans liefern rund 4,8g Eiweiß. Eine Portion von 200g kommt damit auf knapp 10g pflanzliches Eiweiß."
     },
     {
       "question": "Sind Baked Beans zum Abnehmen geeignet?",

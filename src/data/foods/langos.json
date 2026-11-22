@@ -3,48 +3,226 @@
   "name": "Lángos",
   "emoji": "🫓",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2707653 (Bread, dough, fried), Werte je 100 g",
   "seo": {
     "title": "Lángos Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Lángos? Mit Knoblauch, Käse oder Sauerrahm – alle Nährwerte und Spar-Tipps."
+    "description": "Wie viele Kalorien hat Lángos? Mit Knoblauch, Käse oder Sauerrahm: alle Nährwerte und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 320,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 38,
-    "fat_per_100g": 16,
-    "fiber_per_100g": 1.0,
-    "typical_portion_g": 250,
-    "typical_portion_name": "1 Lángos"
+    "calories_per_100g": 384,
+    "protein_per_100g": 9.4,
+    "carbs_per_100g": 45,
+    "fat_per_100g": 18.8,
+    "fiber_per_100g": 1.5,
+    "typical_portion_g": 180,
+    "typical_portion_name": "1 Lángos (pur)"
   },
   "variants": [
-    {"name": "Lángos mit Knoblauchöl", "portion_g": 200, "calories": 560, "protein": 10, "carbs": 68, "fat": 28, "tip": "Einfachste Variante"},
-    {"name": "Lángos mit Sauerrahm & Käse", "portion_g": 280, "calories": 780, "protein": 20, "carbs": 72, "fat": 44, "tip": "Beliebteste Variante"},
-    {"name": "Lángos mit Nutella", "portion_g": 250, "calories": 720, "protein": 12, "carbs": 92, "fat": 34},
-    {"name": "Lángos mit Schinken & Käse", "portion_g": 300, "calories": 830, "protein": 28, "carbs": 72, "fat": 46},
-    {"name": "Lángos pur (nur Teig)", "portion_g": 180, "calories": 480, "protein": 8, "carbs": 62, "fat": 22, "tip": "Kalorienärmste Variante"},
-    {"name": "Lángos mit Gemüse-Topping", "portion_g": 270, "calories": 620, "protein": 14, "carbs": 75, "fat": 30},
-    {"name": "Mini-Lángos (Snack)", "portion_g": 120, "calories": 340, "protein": 5, "carbs": 42, "fat": 16}
+    {
+      "name": "Lángos mit Knoblauchöl",
+      "portion_g": 200,
+      "calories": 831,
+      "protein": 17,
+      "carbs": 83,
+      "fat": 49,
+      "tip": "Mit 15 g Öl und Knoblauch",
+      "basis": [
+        {
+          "g": 180
+        },
+        {
+          "fdcId": 171025,
+          "g": 15
+        },
+        {
+          "fdcId": 169230,
+          "g": 5
+        }
+      ]
+    },
+    {
+      "name": "Lángos mit Sauerrahm & Käse",
+      "portion_g": 280,
+      "calories": 915,
+      "protein": 29,
+      "carbs": 84,
+      "fat": 52,
+      "tip": "Mit 60 g Sauerrahm und 40 g Käse",
+      "basis": [
+        {
+          "g": 180
+        },
+        {
+          "slug": "sauerrahm",
+          "g": 60
+        },
+        {
+          "fdcId": 171241,
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Lángos mit Schoko-Nuss-Creme (40g)",
+      "portion_g": 220,
+      "calories": 907,
+      "protein": 19,
+      "carbs": 106,
+      "fat": 46,
+      "basis": [
+        {
+          "g": 180
+        },
+        {
+          "fdcId": 2710289,
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Lángos mit Schinken & Käse",
+      "portion_g": 300,
+      "calories": 928,
+      "protein": 36,
+      "carbs": 84,
+      "fat": 50,
+      "basis": [
+        {
+          "g": 180
+        },
+        {
+          "slug": "schinken",
+          "g": 50
+        },
+        {
+          "fdcId": 171241,
+          "g": 40
+        },
+        {
+          "slug": "sauerrahm",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Lángos pur (nur Teig)",
+      "portion_g": 180,
+      "calories": 691,
+      "protein": 17,
+      "carbs": 81,
+      "fat": 34,
+      "tip": "Kalorienärmste Variante"
+    },
+    {
+      "name": "Mini-Lángos (Snack)",
+      "portion_g": 120,
+      "calories": 461,
+      "protein": 11,
+      "carbs": 54,
+      "fat": 23
+    }
   ],
   "comparison": [
-    {"name": "Pizza Margherita", "calories": 750, "emoji": "🍕"},
-    {"name": "Flammkuchen", "calories": 770, "emoji": "🫓"},
-    {"name": "Churros (6 Stück)", "calories": 380, "emoji": "🍩"},
-    {"name": "Brezel", "calories": 240, "emoji": "🥨"}
+    {
+      "name": "Pizza Margherita (1 Stück)",
+      "calories": 229,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 2708614,
+          "g": 86
+        }
+      ]
+    },
+    {
+      "name": "Döner",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Churros (6 Stück)",
+      "calories": 503,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "churros"
+        }
+      ]
+    },
+    {
+      "name": "Brezel",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Nur Knoblauchöl wählen", "text": "Lángos mit nur Knoblauchöl hat ca. 220 kcal weniger als die Variante mit Sauerrahm und Käse.", "icon": "🧄"},
-    {"title": "Teilen ist schlau", "text": "Ein Lángos mit Käse hat fast 800 kcal – zu zweit teilen macht es zur akzeptablen Portion.", "icon": "✂️"},
-    {"title": "Mini-Variante nehmen", "text": "Auf Jahrmärkten gibt es oft Mini-Lángos für ca. 340 kcal – eine bessere Wahl als die XXL-Version.", "icon": "📏"},
-    {"title": "Sauerrahm statt Käse", "text": "Nur Sauerrahm ohne Käse spart ca. 150 kcal gegenüber der Kombi.", "icon": "🥛"},
-    {"title": "Nicht als Hauptmahlzeit", "text": "Lángos hat viele leere Kalorien (Fett + Kohlenhydrate, wenig Protein). Besser als gelegentlicher Snack.", "icon": "⚠️"}
+    {
+      "title": "Nur Knoblauchöl wählen",
+      "text": "Lángos mit nur Knoblauchöl hat ca. 84 kcal weniger als die Variante mit Sauerrahm und Käse.",
+      "icon": "🧄"
+    },
+    {
+      "title": "Teilen ist schlau",
+      "text": "Ein Lángos mit Sauerrahm und Käse hat rund 915 kcal, zu zweit teilen macht es zur akzeptablen Portion.",
+      "icon": "✂️"
+    },
+    {
+      "title": "Mini-Variante nehmen",
+      "text": "Auf Jahrmärkten gibt es oft Mini-Lángos (120g) für ca. 461 kcal, eine bessere Wahl als die XXL-Version.",
+      "icon": "📏"
+    },
+    {
+      "title": "Sauerrahm statt Käse",
+      "text": "Nur Sauerrahm ohne Käse spart rund 142 kcal gegenüber der Kombi.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Nicht als Hauptmahlzeit",
+      "text": "Lángos hat viele leere Kalorien (Fett + Kohlenhydrate, wenig Protein). Besser als gelegentlicher Snack.",
+      "icon": "⚠️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Lángos?", "answer": "Ein Lángos hat je nach Topping 480-830 kcal. Mit Sauerrahm und Käse ca. 780 kcal, nur mit Knoblauchöl ca. 560 kcal."},
-    {"question": "Ist Lángos ungesund?", "answer": "Lángos ist frittierter Teig und damit kalorienreich (320 kcal/100g, 16g Fett). Als gelegentlicher Genuss auf dem Jahrmarkt okay, aber nicht regelmäßig."},
-    {"question": "Was ist Lángos?", "answer": "Lángos ist ein ungarisches Street Food aus frittiertem Hefeteig, typischerweise mit Sauerrahm, Käse und Knoblauch serviert. Beliebt auf Jahrmärkten und Weihnachtsmärkten."},
-    {"question": "Wie viel Fett hat Lángos?", "answer": "Ein Lángos mit Sauerrahm und Käse enthält ca. 44g Fett – mehr als 60% des täglichen Fettbedarfs in einer Portion."},
-    {"question": "Was hat weniger Kalorien: Lángos oder Pizza?", "answer": "Lángos mit Käse (780 kcal) hat ähnlich viele Kalorien wie eine kleine Pizza (750 kcal). Lángos hat aber mehr Fett durch das Frittieren."},
-    {"question": "Kann man Lángos im Ofen machen?", "answer": "Ja, Ofen-Lángos bei 220°C für 15-20 Minuten spart ca. 30% Fett. Der Teig wird nicht ganz so knusprig, aber deutlich kalorienärmer."}
+    {
+      "question": "Wie viele Kalorien hat ein Lángos?",
+      "answer": "Ein Lángos pur (180g) hat ca. 691 kcal, mit Belag bis rund 928 kcal. Mit Sauerrahm und Käse sind es ca. 915 kcal, mit Knoblauchöl ca. 831 kcal."
+    },
+    {
+      "question": "Ist Lángos ungesund?",
+      "answer": "Lángos ist frittierter Teig und damit kalorienreich (384 kcal/100g, 19g Fett). Als gelegentlicher Genuss auf dem Jahrmarkt okay, aber nicht regelmäßig."
+    },
+    {
+      "question": "Was ist Lángos?",
+      "answer": "Lángos ist ein ungarisches Street Food aus frittiertem Hefeteig, typischerweise mit Sauerrahm, Käse und Knoblauch serviert. Beliebt auf Jahrmärkten und Weihnachtsmärkten."
+    },
+    {
+      "question": "Wie viel Fett hat Lángos?",
+      "answer": "Ein Lángos mit Sauerrahm und Käse enthält ca. 52g Fett, mehr als 60% des täglichen Fettbedarfs in einer Portion."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Lángos oder Pizza?",
+      "answer": "Ein Lángos pur (180g, ca. 691 kcal) hat so viele Kalorien wie drei Stück Pizza Margherita (je ca. 229 kcal). Lángos hat aber mehr Fett durch das Frittieren."
+    },
+    {
+      "question": "Kann man Lángos im Ofen machen?",
+      "answer": "Ja, Ofen-Lángos bei 220°C für 15-20 Minuten kommt ohne Frittierfett aus. Der Teig wird nicht ganz so knusprig, aber deutlich kalorienärmer."
+    }
   ],
-  "related_foods": ["flammkuchen", "churros", "brezel", "pizza-margherita"]
+  "related_foods": [
+    "flammkuchen",
+    "churros",
+    "brezel",
+    "pizza-margherita"
+  ]
 }

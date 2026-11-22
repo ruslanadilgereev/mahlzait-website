@@ -3,6 +3,7 @@
   "name": "Cannelloni",
   "emoji": "🍝",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708777 (Manicotti, cheese-filled, with meat sauce), Werte je 100 g",
   "seo": {
     "title": "Cannelloni Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Cannelloni? Eine Portion (300g) hat ca. 480 kcal. Nährwerte pro 100g, Füllungen im Vergleich & Tipps zum Abnehmen.",
@@ -17,10 +18,10 @@
   },
   "overview": {
     "calories_per_100g": 160,
-    "protein_per_100g": 7.5,
-    "carbs_per_100g": 15,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 1.5,
+    "protein_per_100g": 8.8,
+    "carbs_per_100g": 15.1,
+    "fat_per_100g": 7.3,
+    "fiber_per_100g": 0.8,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Portion (3-4 Röhrchen)"
   },
@@ -29,88 +30,102 @@
       "name": "1 Röhrchen gefüllt (75g)",
       "portion_g": 75,
       "calories": 120,
-      "protein": 6,
+      "protein": 7,
       "carbs": 11,
-      "fat": 6
+      "fat": 5
     },
     {
       "name": "Kleine Portion (200g)",
       "portion_g": 200,
       "calories": 320,
-      "protein": 15,
+      "protein": 18,
       "carbs": 30,
-      "fat": 16,
+      "fat": 15,
       "tip": "Vorspeise"
     },
     {
       "name": "Portion (300g)",
       "portion_g": 300,
       "calories": 480,
-      "protein": 23,
+      "protein": 26,
       "carbs": 45,
-      "fat": 24,
+      "fat": 22,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (400g)",
       "portion_g": 400,
       "calories": 640,
-      "protein": 30,
+      "protein": 35,
       "carbs": 60,
-      "fat": 32
+      "fat": 29
     },
     {
       "name": "Cannelloni Ricotta-Spinat (300g)",
       "portion_g": 300,
-      "calories": 435,
-      "protein": 21,
-      "carbs": 42,
-      "fat": 21,
-      "tip": "Leichter"
-    },
-    {
-      "name": "Cannelloni mit Hackfleisch (300g)",
-      "portion_g": 300,
-      "calories": 510,
-      "protein": 27,
-      "carbs": 42,
-      "fat": 27
-    },
-    {
-      "name": "Cannelloni-Auflauf mit Käse (350g)",
-      "portion_g": 350,
-      "calories": 595,
-      "protein": 28,
-      "carbs": 50,
-      "fat": 31
+      "calories": 405,
+      "protein": 19,
+      "carbs": 48,
+      "fat": 16,
+      "tip": "Leichter",
+      "basis": [
+        {
+          "fdcId": 2708778,
+          "g": 300
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Lasagne (Portion)",
-      "calories": 405,
-      "emoji": "🍝"
+      "name": "Lasagne (1 Stück, 400g)",
+      "calories": 556,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Tortellini (Portion)",
-      "calories": 450,
-      "emoji": "🍝"
+      "name": "Tortellini (1 Teller, 300g)",
+      "calories": 708,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "tortellini",
+          "g": 300
+        }
+      ]
     },
     {
-      "name": "Spaghetti Bolognese (Portion)",
-      "calories": 525,
-      "emoji": "🍝"
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Ravioli (Portion)",
-      "calories": 390,
-      "emoji": "🥟"
+      "name": "Ravioli (1 Dose, 400g)",
+      "calories": 388,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "ravioli",
+          "g": 400
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Füllung macht den Unterschied",
-      "text": "Cannelloni mit Ricotta-Spinat-Füllung sind mit ca. 435 kcal pro Portion etwas leichter als die Variante mit Hackfleisch (ca. 510 kcal). Wer Kalorien sparen will, greift zur vegetarischen Füllung.",
+      "text": "Cannelloni mit Ricotta-Spinat-Füllung und Tomatensauce sind mit ca. 405 kcal pro Portion (300g) leichter als die Variante mit Fleischsauce (ca. 480 kcal). Wer Kalorien sparen will, greift zur vegetarischen Füllung.",
       "icon": "🥬"
     },
     {
@@ -120,7 +135,7 @@
     },
     {
       "title": "Portionsgröße im Blick",
-      "text": "Drei bis vier Röhrchen (ca. 300g) sind eine sättigende Hauptmahlzeit mit rund 480 kcal. Ein großer Auflauf-Teller kann schnell über 600 kcal liegen.",
+      "text": "Drei bis vier Röhrchen (ca. 300g) sind eine sättigende Hauptmahlzeit mit rund 480 kcal. Ein großer Teller (400g) liegt schon bei rund 640 kcal.",
       "icon": "⚖️"
     },
     {
@@ -141,7 +156,7 @@
     },
     {
       "question": "Wie viele Kalorien haben Cannelloni pro 100g?",
-      "answer": "Gefüllte und überbackene Cannelloni haben im Schnitt etwa 160 kcal pro 100g. Vegetarische Ricotta-Spinat-Varianten liegen etwas darunter, Hackfleisch-Füllungen darüber."
+      "answer": "Gefüllte und überbackene Cannelloni haben im Schnitt etwa 160 kcal pro 100g. Vegetarische Ricotta-Spinat-Varianten mit Tomatensauce liegen mit rund 135 kcal darunter."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Cannelloni?",
@@ -149,7 +164,7 @@
     },
     {
       "question": "Wie viel Protein stecken in Cannelloni?",
-      "answer": "Pro 100g liefern Cannelloni etwa 7,5g Eiweiß. Eine Portion (300g) kommt so auf rund 23g Protein, vor allem aus Käse, Ricotta oder Hackfleisch in der Füllung."
+      "answer": "Pro 100g liefern Cannelloni etwa 8,8g Eiweiß. Eine Portion (300g) kommt so auf rund 26g Protein, vor allem aus Käse, Ricotta und der Fleischsauce."
     },
     {
       "question": "Sind Cannelloni zum Abnehmen geeignet?",

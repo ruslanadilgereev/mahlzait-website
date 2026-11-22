@@ -3,50 +3,201 @@
   "name": "Granola",
   "emoji": "🥣",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2708461 (Cereal, granola), Werte je 100 g",
   "seo": {
     "title": "Granola Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Granola? Nährwerte pro 100g & Portion. Selbstgemacht, Schoko, Protein & Low-Sugar im Vergleich + Diät-Tipps.",
-    "keywords": ["granola kalorien", "granola nährwerte", "granola kalorien pro 100g", "granola gesund", "granola zucker", "granola fett", "granola müsli kalorien", "granola diät"]
+    "description": "Wie viele Kalorien hat Granola? Nährwerte pro 100g & Portion. Mit Milch, mit Joghurt & selbstgemacht im Vergleich + Diät-Tipps.",
+    "keywords": [
+      "granola kalorien",
+      "granola nährwerte",
+      "granola kalorien pro 100g",
+      "granola gesund",
+      "granola zucker",
+      "granola fett",
+      "granola müsli kalorien",
+      "granola diät"
+    ]
   },
   "overview": {
-    "calories_per_100g": 471,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 60,
-    "fat_per_100g": 21,
-    "fiber_per_100g": 6,
+    "calories_per_100g": 420,
+    "protein_per_100g": 9.8,
+    "carbs_per_100g": 67.4,
+    "fat_per_100g": 13,
+    "fiber_per_100g": 7.4,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    { "name": "1 Portion (50g)", "portion_g": 50, "calories": 236, "protein": 5, "carbs": 30, "fat": 11 },
-    { "name": "1 Portion + Milch (200ml)", "portion_g": 250, "calories": 330, "protein": 12, "carbs": 40, "fat": 14 },
-    { "name": "1 Portion + Joghurt (150g)", "portion_g": 200, "calories": 326, "protein": 12, "carbs": 38, "fat": 14 },
-    { "name": "Schoko-Granola (50g)", "portion_g": 50, "calories": 248, "protein": 5, "carbs": 32, "fat": 12 },
-    { "name": "Nuss-Granola (50g)", "portion_g": 50, "calories": 255, "protein": 6, "carbs": 27, "fat": 14 },
-    { "name": "Protein-Granola (50g)", "portion_g": 50, "calories": 210, "protein": 12, "carbs": 22, "fat": 8, "tip": "Mehr Protein, weniger Zucker" },
-    { "name": "Low-Sugar-Granola (50g)", "portion_g": 50, "calories": 215, "protein": 6, "carbs": 25, "fat": 10, "tip": "Weniger Zucker" },
-    { "name": "Selbstgemacht (50g)", "portion_g": 50, "calories": 220, "protein": 6, "carbs": 28, "fat": 10, "tip": "Zuckerkontrolle" }
+    {
+      "name": "1 Portion (50g)",
+      "portion_g": 50,
+      "calories": 210,
+      "protein": 5,
+      "carbs": 34,
+      "fat": 7
+    },
+    {
+      "name": "1 Portion + Milch (50g + 200ml)",
+      "portion_g": 256,
+      "calories": 336,
+      "protein": 11,
+      "carbs": 44,
+      "fat": 13,
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 171265,
+          "ml": 200,
+          "g": 206
+        }
+      ]
+    },
+    {
+      "name": "1 Portion + Joghurt (50g + 150g)",
+      "portion_g": 200,
+      "calories": 302,
+      "protein": 10,
+      "carbs": 41,
+      "fat": 11,
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 171284,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Selbstgemacht (50g)",
+      "portion_g": 50,
+      "calories": 245,
+      "protein": 7,
+      "carbs": 27,
+      "fat": 12,
+      "tip": "Zuckerkontrolle",
+      "basis": [
+        {
+          "fdcId": 171646,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Große Schale (100g)",
+      "portion_g": 100,
+      "calories": 420,
+      "protein": 10,
+      "carbs": 67,
+      "fat": 13
+    }
   ],
   "comparison": [
-    { "name": "Haferflocken (50g)", "calories": 185, "emoji": "🌾" },
-    { "name": "Müsli (50g)", "calories": 175, "emoji": "🥣" },
-    { "name": "Cornflakes (50g)", "calories": 185, "emoji": "🌽" },
-    { "name": "Porridge (200g)", "calories": 200, "emoji": "🥣" }
+    {
+      "name": "Haferflocken (50g)",
+      "calories": 190,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "fdcId": 173904,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Müsli (50g)",
+      "calories": 183,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "muesli",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Cornflakes (50g)",
+      "calories": 183,
+      "emoji": "🌽",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Porridge (200g)",
+      "calories": 142,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferbrei",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Granola ist kalorienreich!", "text": "471 kcal/100g – mehr als Kuchen! Das liegt am gerösteten Öl und Zucker/Honig. Eine Portion MUSS abgewogen werden (50g max).", "icon": "⚠️" },
-    { "title": "50g abwiegen", "text": "Die meisten kippen 80-100g in die Schale. Abwiegen zeigt: 50g sind eine überraschend kleine Portion. 100g wären 471 kcal – ein ganzes Mittagessen.", "icon": "⚖️" },
-    { "title": "Haferflocken als Basis", "text": "50g pure Haferflocken: 185 kcal. 50g Granola: 236 kcal. Haferflocken sind 20% kalorienärmer und haben mehr Ballaststoffe.", "icon": "🌾" },
-    { "title": "Selbst machen = Zucker kontrollieren", "text": "Gekauftes Granola hat oft 20-25g Zucker/100g. Selbstgemacht: Haferflocken, Nüsse, 1 EL Honig, Ofen. Halb so viel Zucker.", "icon": "👨‍🍳" },
-    { "title": "Als Topping, nicht als Basis", "text": "Statt eine Schale Granola: Joghurt oder Quark als Basis, 2 EL Granola als knuspriges Topping. Halbiert die Kalorien, behält den Crunch.", "icon": "💡" }
+    {
+      "title": "Granola ist kalorienreich!",
+      "text": "420 kcal/100g, mehr als Kuchen! Das liegt am gerösteten Öl und Zucker/Honig. Eine Portion MUSS abgewogen werden (50g max).",
+      "icon": "⚠️"
+    },
+    {
+      "title": "50g abwiegen",
+      "text": "Die meisten kippen 80 bis 100g in die Schale. Abwiegen zeigt: 50g sind eine überraschend kleine Portion. 100g wären 420 kcal, ein ganzes Mittagessen.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Haferflocken als Basis",
+      "text": "50g pure Haferflocken: 190 kcal. 50g Granola: 210 kcal. Haferflocken sind rund 10% kalorienärmer und haben mehr Ballaststoffe.",
+      "icon": "🌾"
+    },
+    {
+      "title": "Selbst machen = Zucker kontrollieren",
+      "text": "Gekauftes Granola hat rund 22g Zucker/100g. Selbstgemacht: Haferflocken, Nüsse, 1 EL Honig, Ofen. So bestimmst du die Zuckermenge selbst.",
+      "icon": "👨‍🍳"
+    },
+    {
+      "title": "Als Topping, nicht als Basis",
+      "text": "Statt eine Schale Granola: Joghurt oder Quark als Basis, 2 EL Granola als knuspriges Topping. Halbiert die Kalorien, behält den Crunch.",
+      "icon": "💡"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Granola?", "answer": "Granola hat ca. 471 kcal pro 100g. Eine Portion (50g) hat 236 kcal. Mit Milch: 330 kcal. Mit Joghurt: 326 kcal." },
-    { "question": "Ist Granola gesund?", "answer": "Jein. Granola hat Ballaststoffe (6g/100g) und Protein (10g). Aber auch viel Zucker (20g) und Fett (21g). Es ist nahrhaft, aber kalorienreich – Portionsgröße ist entscheidend." },
-    { "question": "Granola oder Haferflocken – was ist besser?", "answer": "Haferflocken: 370 kcal/100g, 5g Zucker. Granola: 471 kcal, 20g Zucker. Haferflocken sind kalorienärmer und haben weniger Zucker. Granola schmeckt besser, ist aber die kalorienreichere Wahl." },
-    { "question": "Wie viel Zucker hat Granola?", "answer": "Gekauftes Granola: 20-25g Zucker/100g. Das sind 7-8 Würfelzucker. Low-Sugar-Varianten haben 8-12g. Selbstgemacht kann man auf 5-8g kommen." },
-    { "question": "Wie viel Granola sollte man essen?", "answer": "50g pro Portion – abgewogen! Das sind ca. 236 kcal. 100g (was viele essen) wären 471 kcal. Eine Küchenwaage ist beim Granola Pflicht." },
-    { "question": "Kann man mit Granola abnehmen?", "answer": "Nur mit strikter Portionskontrolle. 50g + Joghurt (326 kcal) ist ein solides Frühstück. Aber unkontrolliert aus der Packung essen führt schnell zu 500+ kcal." }
+    {
+      "question": "Wie viele Kalorien hat Granola?",
+      "answer": "Granola hat ca. 420 kcal pro 100g. Eine Portion (50g) hat 210 kcal. Mit 200ml Milch: 336 kcal. Mit 150g Joghurt: 302 kcal."
+    },
+    {
+      "question": "Ist Granola gesund?",
+      "answer": "Jein. Granola hat Ballaststoffe (7,4g/100g) und Protein (10g). Aber auch viel Zucker (22g) und Fett (13g). Es ist nahrhaft, aber kalorienreich, die Portionsgröße ist entscheidend."
+    },
+    {
+      "question": "Granola oder Haferflocken: Was ist besser?",
+      "answer": "Haferflocken: 379 kcal/100g, 1g Zucker. Granola: 420 kcal, 22g Zucker. Haferflocken sind kalorienärmer und haben weniger Zucker. Granola schmeckt besser, ist aber die kalorienreichere Wahl."
+    },
+    {
+      "question": "Wie viel Zucker hat Granola?",
+      "answer": "Gekauftes Granola hat laut USDA rund 22g Zucker pro 100g. Low-Sugar-Varianten liegen meist darunter, bei selbstgemachtem Granola hängt der Zucker vom Rezept ab."
+    },
+    {
+      "question": "Wie viel Granola sollte man essen?",
+      "answer": "50g pro Portion, abgewogen! Das sind ca. 210 kcal. 100g (was viele essen) wären 420 kcal. Eine Küchenwaage ist beim Granola Pflicht."
+    },
+    {
+      "question": "Kann man mit Granola abnehmen?",
+      "answer": "Nur mit strikter Portionskontrolle. 50g + Joghurt (302 kcal) ist ein solides Frühstück. Aber unkontrolliert aus der Packung essen führt schnell zu 500+ kcal."
+    }
   ],
-  "related_foods": ["haferflocken", "muesli", "muesli-riegel", "joghurt"]
+  "related_foods": [
+    "haferflocken",
+    "muesli",
+    "muesli-riegel",
+    "joghurt"
+  ]
 }

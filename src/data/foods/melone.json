@@ -3,9 +3,10 @@
   "name": "Melone",
   "emoji": "🍈",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169911 (Melons, honeydew, raw), Werte je 100 g",
   "seo": {
-    "title": "Melone Kalorien: 38 kcal/100g (Honig & Galia) | Mahlzait",
-    "description": "Melone hat nur ca. 38 kcal pro 100g: Honigmelone, Galiamelone & Cantaloupe im Vergleich. Nährwerte pro Spalte & Schale plus Diät-Tipps.",
+    "title": "Melone Kalorien: 36 kcal/100g (Honig & Galia) | Mahlzait",
+    "description": "Melone hat nur ca. 36 kcal pro 100g: Honigmelone, Galiamelone & Cantaloupe im Vergleich. Nährwerte pro Spalte & Schale plus Diät-Tipps.",
     "keywords": [
       "melone kalorien",
       "kalorien melone",
@@ -20,10 +21,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 38,
-    "protein_per_100g": 0.6,
-    "carbs_per_100g": 9,
-    "fat_per_100g": 0.2,
+    "calories_per_100g": 36,
+    "protein_per_100g": 0.5,
+    "carbs_per_100g": 9.1,
+    "fat_per_100g": 0.1,
     "fiber_per_100g": 0.8,
     "typical_portion_g": 160,
     "typical_portion_name": "1 Melonenspalte (mittel)"
@@ -32,7 +33,7 @@
     {
       "name": "Kleine Spalte (100g)",
       "portion_g": 100,
-      "calories": 38,
+      "calories": 36,
       "protein": 1,
       "carbs": 9,
       "fat": 0
@@ -40,16 +41,16 @@
     {
       "name": "Melonenspalte mittel (160g)",
       "portion_g": 160,
-      "calories": 61,
+      "calories": 58,
       "protein": 1,
-      "carbs": 14,
+      "carbs": 15,
       "fat": 0,
       "tip": "Standardportion"
     },
     {
       "name": "Becher Melonenwürfel (170g)",
       "portion_g": 170,
-      "calories": 65,
+      "calories": 61,
       "protein": 1,
       "carbs": 15,
       "fat": 0
@@ -57,55 +58,85 @@
     {
       "name": "Viertel Honigmelone (250g)",
       "portion_g": 250,
-      "calories": 95,
-      "protein": 2,
-      "carbs": 22,
-      "fat": 1,
+      "calories": 90,
+      "protein": 1,
+      "carbs": 23,
+      "fat": 0,
       "tip": "Sättigender Snack"
     },
     {
       "name": "Halbe Melone (400g)",
       "portion_g": 400,
-      "calories": 152,
+      "calories": 144,
       "protein": 2,
       "carbs": 36,
-      "fat": 1
+      "fat": 0
     },
     {
       "name": "Ganze Cantaloupe (550g)",
       "portion_g": 550,
-      "calories": 209,
-      "protein": 3,
-      "carbs": 50,
-      "fat": 1
+      "calories": 187,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 1,
+      "basis": [
+        {
+          "fdcId": 169092,
+          "g": 550
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Wassermelone (160g)",
       "calories": 48,
-      "emoji": "🍉"
+      "emoji": "🍉",
+      "basis": [
+        {
+          "slug": "wassermelone",
+          "g": 160
+        }
+      ]
     },
     {
       "name": "Apfel (160g)",
       "calories": 83,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 160
+        }
+      ]
     },
     {
       "name": "Weintrauben (160g)",
-      "calories": 109,
-      "emoji": "🍇"
+      "calories": 110,
+      "emoji": "🍇",
+      "basis": [
+        {
+          "fdcId": 174683,
+          "g": 160
+        }
+      ]
     },
     {
       "name": "Mango (160g)",
       "calories": 96,
-      "emoji": "🥭"
+      "emoji": "🥭",
+      "basis": [
+        {
+          "slug": "mango",
+          "g": 160
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarmer Sommer-Snack",
-      "text": "Eine Melonenspalte (160g) liefert nur rund 61 kcal. Durch den hohen Wassergehalt von etwa 90 Prozent sättigt Melone gut, ohne stark zu Buche zu schlagen.",
+      "text": "Eine Melonenspalte (160g) liefert nur rund 58 kcal. Durch den hohen Wassergehalt von etwa 90 Prozent sättigt Melone gut, ohne stark zu Buche zu schlagen.",
       "icon": "🍈"
     },
     {
@@ -132,27 +163,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Melone?",
-      "answer": "Melone hat etwa 38 kcal pro 100g. Eine mittlere Melonenspalte (160g) kommt auf rund 61 kcal, ein Viertel einer Honigmelone (250g) auf etwa 95 kcal."
+      "answer": "Melone hat etwa 36 kcal pro 100g. Eine mittlere Melonenspalte (160g) kommt auf rund 58 kcal, ein Viertel einer Honigmelone (250g) auf etwa 90 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Honigmelone?",
-      "answer": "Honigmelone liegt bei etwa 38 kcal pro 100g. Eine ganze kleine Honigmelone von rund 1 kg Fruchtfleisch hat damit ungefähr 380 kcal."
+      "answer": "Honigmelone liegt bei etwa 36 kcal pro 100g. Eine ganze kleine Honigmelone von rund 1 kg Fruchtfleisch hat damit ungefähr 360 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Galiamelone?",
-      "answer": "Die Galiamelone ist eine Kreuzung aus Cantaloupe- und Honigmelone und liegt wie ihre Elternsorten bei rund 34 bis 38 kcal pro 100g (USDA-Werte für Cantaloupe und Honigmelone). Eine halbe Galiamelone mit etwa 400g Fruchtfleisch hat damit ungefähr 140 bis 150 kcal."
+      "answer": "Die Galiamelone ist eine Kreuzung aus Cantaloupe- und Honigmelone und liegt wie ihre Elternsorten bei rund 34 bis 36 kcal pro 100g (USDA-Werte für Cantaloupe und Honigmelone). Eine halbe Galiamelone mit etwa 400g Fruchtfleisch hat damit ungefähr 136 bis 144 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Melone?",
-      "answer": "Melone enthält rund 9g Kohlenhydrate pro 100g, überwiegend in Form von natürlichem Fruchtzucker. Eine Spalte von 160g liefert etwa 14g Kohlenhydrate."
+      "answer": "Melone enthält rund 9g Kohlenhydrate pro 100g, überwiegend in Form von natürlichem Fruchtzucker. Eine Spalte von 160g liefert etwa 15g Kohlenhydrate."
     },
     {
       "question": "Ist Melone zum Abnehmen geeignet?",
-      "answer": "Ja. Mit nur etwa 38 kcal pro 100g und rund 90 Prozent Wasseranteil ist Melone ein kalorienarmer Snack. Wegen des Fruchtzuckers sollte man die Portionsgröße im Blick behalten."
+      "answer": "Ja. Mit nur etwa 36 kcal pro 100g und rund 90 Prozent Wasseranteil ist Melone ein kalorienarmer Snack. Wegen des Fruchtzuckers sollte man die Portionsgröße im Blick behalten."
     },
     {
       "question": "Wie viel Protein hat Melone?",
-      "answer": "Melone enthält nur etwa 0,6g Protein pro 100g und ist damit keine nennenswerte Eiweißquelle. Als Beilage zu Magerquark oder Skyr lässt sich der Eiweißgehalt einer Mahlzeit erhöhen."
+      "answer": "Melone enthält nur etwa 0,5g Protein pro 100g und ist damit keine nennenswerte Eiweißquelle. Als Beilage zu Magerquark oder Skyr lässt sich der Eiweißgehalt einer Mahlzeit erhöhen."
     },
     {
       "question": "Ist Melone gesund?",

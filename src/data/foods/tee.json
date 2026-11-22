@@ -3,52 +3,281 @@
   "name": "Tee",
   "emoji": "🍵",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 173227 (Beverages, tea, black, brewed, prepared with tap water: 1 kcal), Werte je 100 g; je 100 ml mit 1,002 g/ml 1 kcal",
   "seo": {
     "title": "Tee Kalorien: 1 kcal pur + Rechner | Mahlzait",
-    "description": "Tee pur hat 1 kcal pro Tasse – praktisch kalorienfrei. Mit Milch, Zucker oder Honig wird's mehr. Berechne Kalorien für Schwarz-, Grün- und Kräutertee.",
-    "keywords": ["tee kalorien", "kalorien tee", "grüner tee kalorien", "schwarzer tee kalorien", "kräutertee kalorien", "tee mit milch kalorien", "tee mit zucker kalorien", "tee abnehmen"]
+    "description": "Tee pur hat nur rund 3 kcal pro Tasse, praktisch kalorienfrei. Mit Milch, Zucker oder Honig wird's mehr. Berechne Kalorien für Schwarz-, Grün- und Kräutertee.",
+    "keywords": [
+      "tee kalorien",
+      "kalorien tee",
+      "grüner tee kalorien",
+      "schwarzer tee kalorien",
+      "kräutertee kalorien",
+      "tee mit milch kalorien",
+      "tee mit zucker kalorien",
+      "tee abnehmen"
+    ]
   },
   "overview": {
     "calories_per_100g": 1,
     "protein_per_100g": 0,
-    "carbs_per_100g": 0,
+    "carbs_per_100g": 0.3,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Tasse (250ml)"
   },
   "variants": [
-    { "name": "Schwarzer Tee pur (250ml)", "portion_g": 250, "calories": 2, "protein": 0, "carbs": 0, "fat": 0 },
-    { "name": "Grüner Tee pur (250ml)", "portion_g": 250, "calories": 2, "protein": 0, "carbs": 0, "fat": 0, "tip": "Reich an Antioxidantien" },
-    { "name": "Matcha Latte (250ml mit Hafermilch)", "portion_g": 250, "calories": 95, "protein": 3, "carbs": 12, "fat": 4 },
-    { "name": "Kräutertee (Kamille, Pfefferminz, 250ml)", "portion_g": 250, "calories": 0, "protein": 0, "carbs": 0, "fat": 0 },
-    { "name": "Früchtetee (250ml)", "portion_g": 250, "calories": 2, "protein": 0, "carbs": 0, "fat": 0 },
-    { "name": "Tee mit 1 Stk. Zucker", "portion_g": 255, "calories": 22, "protein": 0, "carbs": 5, "fat": 0 },
-    { "name": "Tee mit 1 EL Honig", "portion_g": 270, "calories": 65, "protein": 0, "carbs": 17, "fat": 0 },
-    { "name": "Tee mit 50ml Milch", "portion_g": 300, "calories": 32, "protein": 2, "carbs": 3, "fat": 2, "tip": "Klassischer Schwarztee mit Milch" },
-    { "name": "Chai Latte (250ml mit Milch)", "portion_g": 250, "calories": 180, "protein": 5, "carbs": 30, "fat": 5 },
-    { "name": "Bubble Tea (400ml)", "portion_g": 400, "calories": 380, "protein": 1, "carbs": 80, "fat": 5, "tip": "Tapioka-Perlen sind Kalorienbomben" }
+    {
+      "name": "Schwarzer Tee pur (250ml)",
+      "portion_g": 250,
+      "calories": 3,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0
+    },
+    {
+      "name": "Grüner Tee pur (250ml)",
+      "portion_g": 259,
+      "calories": 3,
+      "protein": 1,
+      "carbs": 0,
+      "fat": 0,
+      "tip": "Reich an Antioxidantien",
+      "basis": [
+        {
+          "fdcId": 171917,
+          "ml": 250,
+          "g": 259
+        }
+      ]
+    },
+    {
+      "name": "Kräutertee (Kamille, Pfefferminz, 250ml)",
+      "portion_g": 250,
+      "calories": 3,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 174156,
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Früchtetee (250ml)",
+      "portion_g": 250,
+      "calories": 0,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "tip": "USDA-Wert für Hibiskustee",
+      "basis": [
+        {
+          "fdcId": 171946,
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Tee mit 1 TL Zucker",
+      "portion_g": 254,
+      "calories": 18,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "basis": [
+        {
+          "ml": 250,
+          "g": 250
+        },
+        {
+          "fdcId": 169655,
+          "g": 4
+        }
+      ]
+    },
+    {
+      "name": "Tee mit 1 EL Honig",
+      "portion_g": 271,
+      "calories": 66,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "basis": [
+        {
+          "ml": 250,
+          "g": 250
+        },
+        {
+          "fdcId": 169640,
+          "g": 21
+        }
+      ]
+    },
+    {
+      "name": "Tee mit 50ml Milch",
+      "portion_g": 302,
+      "calories": 34,
+      "protein": 2,
+      "carbs": 3,
+      "fat": 2,
+      "tip": "Klassischer Schwarztee mit Milch",
+      "basis": [
+        {
+          "ml": 250,
+          "g": 250
+        },
+        {
+          "slug": "milch",
+          "ml": 50,
+          "g": 52
+        }
+      ]
+    },
+    {
+      "name": "Chai Latte (250ml mit Milch)",
+      "portion_g": 250,
+      "calories": 155,
+      "protein": 6,
+      "carbs": 25,
+      "fat": 4,
+      "basis": [
+        {
+          "slug": "chai-latte",
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Bubble Tea (400ml)",
+      "portion_g": 406,
+      "calories": 223,
+      "protein": 2,
+      "carbs": 42,
+      "fat": 6,
+      "tip": "Tapioka-Perlen sind Kalorienbomben",
+      "basis": [
+        {
+          "fdcId": 2710508,
+          "ml": 400,
+          "g": 406
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Kaffee schwarz", "calories": 2, "emoji": "☕" },
-    { "name": "Wasser", "calories": 0, "emoji": "💧" },
-    { "name": "Cola (250ml)", "calories": 105, "emoji": "🥤" },
-    { "name": "Apfelsaft (250ml)", "calories": 113, "emoji": "🧃" }
+    {
+      "name": "Kaffee schwarz (250ml)",
+      "calories": 3,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffee",
+          "ml": 250,
+          "g": 254
+        }
+      ]
+    },
+    {
+      "name": "Wasser (250ml)",
+      "calories": 0,
+      "emoji": "💧",
+      "basis": [
+        {
+          "fdcId": 173647,
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Cola (250ml)",
+      "calories": 110,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Apfelsaft (250ml)",
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Tee = Kalorienfrei trinken", "text": "Schwarzer, grüner und Kräutertee haben 0-2 kcal pro Tasse. Perfekt fürs Defizit – 5 Tassen pro Tag = nur 10 kcal.", "icon": "💧" },
-    { "title": "Grüner Tee unterstützt Stoffwechsel", "text": "Studien zeigen: Catechine in grünem Tee können den Energieverbrauch um 3-4% erhöhen. 3-4 Tassen täglich sind ein moderater Stoffwechsel-Booster.", "icon": "🔥" },
-    { "title": "Bubble Tea ist Süßigkeit", "text": "Ein Bubble Tea hat 380-500 kcal – mehr als ein Schoko-Riegel. Die Tapioka-Perlen sind reine Stärke + Zucker. Eher Dessert als Getränk.", "icon": "⚠️" },
-    { "title": "Kräutertee als Hunger-Stiller", "text": "Pfefferminz- oder Fencheltee zwischen den Mahlzeiten füllt den Magen, hat 0 kcal und stillt Heißhunger oft erstaunlich gut.", "icon": "🌿" },
-    { "title": "Süßstoff statt Zucker", "text": "1 Stück Würfelzucker im Tee = 20 kcal. Bei 4 Tassen täglich: 80 kcal eingespart, wenn du auf Erythrit oder Stevia umsteigst.", "icon": "🚫" }
+    {
+      "title": "Tee = Kalorienfrei trinken",
+      "text": "Schwarzer, grüner und Kräutertee haben nur rund 3 kcal pro Tasse. Perfekt fürs Defizit: 5 Tassen pro Tag = rund 15 kcal.",
+      "icon": "💧"
+    },
+    {
+      "title": "Grüner Tee unterstützt Stoffwechsel",
+      "text": "Studien zeigen: Catechine in grünem Tee können den Energieverbrauch um 3-4% erhöhen. 3-4 Tassen täglich sind ein moderater Stoffwechsel-Booster.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Bubble Tea ist Süßigkeit",
+      "text": "Ein Bubble Tea (400ml) hat laut USDA rund 223 kcal. Die Tapioka-Perlen sind reine Stärke + Zucker. Eher Dessert als Getränk.",
+      "icon": "⚠️"
+    },
+    {
+      "title": "Kräutertee als Hunger-Stiller",
+      "text": "Pfefferminz- oder Fencheltee zwischen den Mahlzeiten füllt den Magen, hat kaum Kalorien und stillt Heißhunger oft erstaunlich gut.",
+      "icon": "🌿"
+    },
+    {
+      "title": "Süßstoff statt Zucker",
+      "text": "1 TL Zucker im Tee = rund 15 kcal. Bei 4 Tassen täglich: rund 60 kcal eingespart, wenn du auf Erythrit oder Stevia umsteigst.",
+      "icon": "🚫"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Tasse Tee?", "answer": "Tee pur hat 1-2 kcal pro Tasse (250ml) – praktisch kalorienfrei. Mit Milch, Zucker oder Honig kommen 30-180 kcal dazu." },
-    { "question": "Hilft grüner Tee beim Abnehmen?", "answer": "Leicht ja: Catechine erhöhen den Stoffwechsel um 3-4%. Über 1 Jahr summiert sich das auf etwa 1-2kg zusätzlichen Gewichtsverlust. Kein Wundermittel, aber ein netter Bonus." },
-    { "question": "Wie viele Kalorien hat Tee mit Milch?", "answer": "Tee mit einem Schuss Milch (50ml) hat ca. 32 kcal. Chai Latte (mit ganzer Tasse Milch und Sirup) bringt es auf 180 kcal. Britischer Tee mit Milch: ca. 30-40 kcal." },
-    { "question": "Welcher Tee ist am gesündesten?", "answer": "Grüner Tee (besonders Matcha) ist top: viele Antioxidantien, Stoffwechsel-Effekt, Polyphenole. Schwarzer Tee ist ähnlich gut. Kräutertees sind je nach Sorte beruhigend, verdauungsfördernd, etc." },
-    { "question": "Wie viel Tee pro Tag ist okay?", "answer": "5-6 Tassen pro Tag sind unproblematisch. Bei koffeinhaltigem Tee (schwarz/grün) gilt das EFSA-Limit von 400mg Koffein – das entspricht ca. 8-10 Tassen." },
-    { "question": "Macht Bubble Tea dick?", "answer": "Wenn regelmäßig: ja. Ein Bubble Tea hat 380-500 kcal und ist primär Zucker + Stärke. Ein Bubble Tea pro Woche kostet 6 Wochen lang täglich 50 kcal extra – das macht über die Zeit 1kg+ aus." }
+    {
+      "question": "Wie viele Kalorien hat eine Tasse Tee?",
+      "answer": "Tee pur hat rund 3 kcal pro Tasse (250ml), praktisch kalorienfrei. Mit Zucker, Milch oder Honig kommen etwa 15 bis 64 kcal dazu."
+    },
+    {
+      "question": "Hilft grüner Tee beim Abnehmen?",
+      "answer": "Leicht ja: Catechine erhöhen den Stoffwechsel um 3-4%. Über 1 Jahr summiert sich das auf etwa 1-2kg zusätzlichen Gewichtsverlust. Kein Wundermittel, aber ein netter Bonus."
+    },
+    {
+      "question": "Wie viele Kalorien hat Tee mit Milch?",
+      "answer": "Tee mit einem Schuss Milch (50ml) hat ca. 34 kcal. Chai Latte (mit ganzer Tasse Milch und Sirup) liegt deutlich höher. Britischer Tee mit Milch liegt im selben Bereich wie Tee mit einem Schuss Milch."
+    },
+    {
+      "question": "Welcher Tee ist am gesündesten?",
+      "answer": "Grüner Tee (besonders Matcha) ist top: viele Antioxidantien, Stoffwechsel-Effekt, Polyphenole. Schwarzer Tee ist ähnlich gut. Kräutertees sind je nach Sorte beruhigend, verdauungsfördernd, etc."
+    },
+    {
+      "question": "Wie viel Tee pro Tag ist okay?",
+      "answer": "5-6 Tassen pro Tag sind unproblematisch. Bei koffeinhaltigem Tee (schwarz/grün) gilt das EFSA-Limit von 400mg Koffein, das entspricht laut USDA-Koffeinwerten ca. 8 Tassen Schwarztee oder 13 Tassen Grüntee."
+    },
+    {
+      "question": "Macht Bubble Tea dick?",
+      "answer": "Wenn regelmäßig: ja. Ein Bubble Tea (400ml) hat laut USDA rund 223 kcal und ist primär Zucker + Stärke. Regelmäßig getrunken summiert sich das über die Zeit."
+    }
   ],
-  "related_foods": ["eistee", "mate-tee", "chai-latte", "kakao"]
+  "related_foods": [
+    "eistee",
+    "mate-tee",
+    "chai-latte",
+    "kakao"
+  ]
 }

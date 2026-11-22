@@ -3,9 +3,10 @@
   "name": "Fondue",
   "emoji": "🫕",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2705791 (Cheese fondue), Werte je 100 g",
   "seo": {
     "title": "Fondue Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Fondue? Käsefondue hat ca. 290 kcal pro 100g. Nährwerte pro Portion, Varianten im Vergleich und Tipps zum Genießen.",
+    "description": "Wie viele Kalorien hat Fondue? Käsefondue hat ca. 276 kcal pro 100g. Nährwerte pro Portion, Varianten im Vergleich und Tipps zum Genießen.",
     "keywords": [
       "fondue kalorien",
       "käsefondue kalorien",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 19,
-    "carbs_per_100g": 3,
-    "fat_per_100g": 22,
+    "calories_per_100g": 276,
+    "protein_per_100g": 19.3,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 21.2,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion Käsefondue (200g)"
@@ -28,96 +29,117 @@
     {
       "name": "Kleine Portion Käsefondue (150g)",
       "portion_g": 150,
-      "calories": 435,
+      "calories": 414,
       "protein": 29,
-      "carbs": 5,
-      "fat": 33
+      "carbs": 3,
+      "fat": 32
     },
     {
       "name": "1 Portion Käsefondue (200g)",
       "portion_g": 200,
-      "calories": 580,
-      "protein": 38,
-      "carbs": 6,
-      "fat": 44,
+      "calories": 552,
+      "protein": 39,
+      "carbs": 4,
+      "fat": 42,
       "tip": "Übliche Portion"
     },
     {
       "name": "Große Portion Käsefondue (250g)",
       "portion_g": 250,
-      "calories": 725,
+      "calories": 690,
       "protein": 48,
-      "carbs": 8,
-      "fat": 55
+      "carbs": 5,
+      "fat": 53
     },
     {
       "name": "Käsefondue mit Brot (300g, inkl. Brotwürfel)",
       "portion_g": 300,
-      "calories": 780,
-      "protein": 42,
-      "carbs": 55,
-      "fat": 47,
-      "tip": "Mit Brot zum Tunken"
-    },
-    {
-      "name": "Fleischfondue mageres Rind (200g, ohne Öl-Aufnahme)",
-      "portion_g": 200,
-      "calories": 280,
-      "protein": 42,
-      "carbs": 0,
-      "fat": 12,
-      "tip": "Magere Alternative"
-    },
-    {
-      "name": "Schokoladenfondue (100g Schokomasse)",
-      "portion_g": 100,
-      "calories": 540,
-      "protein": 6,
-      "carbs": 50,
-      "fat": 35,
-      "tip": "Dessert-Variante"
+      "calories": 824,
+      "protein": 49,
+      "carbs": 56,
+      "fat": 45,
+      "tip": "Mit Brot zum Tunken",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 172675,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Brühfondue / Fondue chinoise (200g Fleisch in Brühe)",
       "portion_g": 200,
-      "calories": 260,
-      "protein": 44,
+      "calories": 400,
+      "protein": 58,
       "carbs": 0,
-      "fat": 9,
-      "tip": "Fettarm"
+      "fat": 17,
+      "tip": "Fettarm",
+      "basis": [
+        {
+          "fdcId": 171811,
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Raclette (Portion)",
-      "calories": 480,
-      "emoji": "🧀"
+      "name": "Raclette-Käse (4 Pfännchen, 200g)",
+      "calories": 714,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "raclette",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Pizza (Stück)",
-      "calories": 270,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (1 Stück, 140g)",
+      "calories": 372,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 140
+        }
+      ]
     },
     {
-      "name": "Käsespätzle (Portion)",
-      "calories": 620,
-      "emoji": "🧀"
+      "name": "Käsespätzle (1 Teller, 350g)",
+      "calories": 781,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesespaetzle",
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Lasagne (Portion)",
-      "calories": 400,
-      "emoji": "🍝"
+      "name": "Lasagne (1 Stück, 400g)",
+      "calories": 556,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 400
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Käsefondue ist sehr gehaltvoll",
-      "text": "Eine übliche Portion Käsefondue (200g) liefert rund 580 kcal und 44g Fett. Wer auf die Kalorien achtet, hält die Käsemenge bewusst klein.",
+      "text": "Eine übliche Portion Käsefondue (200g) liefert rund 552 kcal und 42g Fett. Wer auf die Kalorien achtet, hält die Käsemenge bewusst klein.",
       "icon": "🧀"
     },
     {
       "title": "Magere Fleisch- statt Käsefondue",
-      "text": "Brühfondue (Fondue chinoise) mit magerem Rind oder Geflügel in Gemüsebrühe kommt auf nur rund 260 kcal pro Portion - eine deutlich leichtere Wahl.",
+      "text": "Brühfondue (Fondue chinoise) mit magerem Rind oder Geflügel in Gemüsebrühe kommt auf rund 400 kcal pro Portion (200g Fleisch), eine deutlich leichtere Wahl.",
       "icon": "🥩"
     },
     {
@@ -139,27 +161,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Fondue?",
-      "answer": "Käsefondue hat etwa 290 kcal pro 100g. Eine übliche Portion von 200g kommt damit auf rund 580 kcal, ohne das Brot zum Tunken."
+      "answer": "Käsefondue hat etwa 276 kcal pro 100g. Eine übliche Portion von 200g kommt damit auf rund 552 kcal, ohne das Brot zum Tunken."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Käsefondue?",
-      "answer": "Eine übliche Portion Käsefondue (200g Käsemasse) liefert ca. 580 kcal. Mit Brotwürfeln zum Tunken steigt der Wert deutlich an."
+      "answer": "Eine übliche Portion Käsefondue (200g Käsemasse) liefert ca. 552 kcal. Mit Brotwürfeln zum Tunken (100g) steigt der Wert auf rund 824 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in Käsefondue?",
-      "answer": "Käsefondue ist sehr proteinreich: 100g enthalten rund 19g Eiweiß, eine 200g-Portion etwa 38g - durch den hohen Käseanteil."
+      "answer": "Käsefondue ist sehr proteinreich: 100g enthalten rund 19g Eiweiß, eine 200g-Portion etwa 39g, durch den hohen Käseanteil."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Käsefondue?",
-      "answer": "Die reine Käsemasse enthält mit etwa 3g pro 100g kaum Kohlenhydrate. Die meisten Kohlenhydrate kommen erst durch das Brot zum Tunken dazu."
+      "answer": "Die reine Käsemasse enthält mit etwa 2g pro 100g kaum Kohlenhydrate. Die meisten Kohlenhydrate kommen erst durch das Brot zum Tunken dazu."
     },
     {
       "question": "Ist Fondue zum Abnehmen geeignet?",
-      "answer": "Käsefondue ist mit 290 kcal pro 100g und 22g Fett sehr gehaltvoll. Wer abnehmen möchte, greift besser zum Brühfondue mit magerem Fleisch (rund 260 kcal pro Portion)."
+      "answer": "Käsefondue ist mit 276 kcal pro 100g und 21g Fett sehr gehaltvoll. Wer abnehmen möchte, greift besser zum Brühfondue mit magerem Fleisch (rund 400 kcal pro Portion)."
     },
     {
       "question": "Welches Fondue hat die wenigsten Kalorien?",
-      "answer": "Das Brühfondue (Fondue chinoise) mit magerem Fleisch in Brühe ist mit etwa 260 kcal pro Portion die kalorienärmste Variante, deutlich leichter als Käse- oder Schokoladenfondue."
+      "answer": "Das Brühfondue (Fondue chinoise) mit magerem Fleisch in Brühe ist mit etwa 400 kcal pro Portion (200g Fleisch) die kalorienärmste Variante, deutlich leichter als Käse- oder Schokoladenfondue."
     }
   ],
   "related_foods": [

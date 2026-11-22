@@ -3,9 +3,10 @@
   "name": "Tortilla-Wrap",
   "emoji": "🌯",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167535 (Tortillas, ready-to-bake or -fry, flour, shelf stable), Werte je 100 g",
   "seo": {
     "title": "Tortilla-Wrap Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Tortilla-Wrap? Ein großer Weizen-Wrap (62g) hat ca. 190 kcal. Nährwerte pro 100g & Stück, Varianten & Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Tortilla-Wrap? Ein großer Weizen-Wrap (62g) hat ca. 184 kcal. Nährwerte pro 100g & Stück, Varianten & Diät-Tipps im Überblick.",
     "keywords": [
       "tortilla wrap kalorien",
       "tortilla wrap kcal",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 306,
-    "protein_per_100g": 8.2,
-    "carbs_per_100g": 49.4,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 297,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 49.3,
+    "fat_per_100g": 7.6,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 62,
     "typical_portion_name": "1 großer Wrap (ca. 25 cm)"
   },
@@ -29,82 +30,103 @@
     {
       "name": "Tortilla-Wrap klein (ca. 15 cm, 32g)",
       "portion_g": 32,
-      "calories": 98,
+      "calories": 95,
       "protein": 2.6,
       "carbs": 15.8,
-      "fat": 2.6,
+      "fat": 2.4,
       "tip": "Ideal für kleine Snacks oder Kinderportionen."
     },
     {
       "name": "Tortilla-Wrap mittel (ca. 20 cm, 45g)",
       "portion_g": 45,
-      "calories": 138,
-      "protein": 3.7,
+      "calories": 134,
+      "protein": 3.6,
       "carbs": 22.2,
-      "fat": 3.6
+      "fat": 3.4
     },
     {
       "name": "Tortilla-Wrap groß (ca. 25 cm, 62g)",
       "portion_g": 62,
-      "calories": 190,
-      "protein": 5.1,
+      "calories": 184,
+      "protein": 5,
       "carbs": 30.6,
-      "fat": 5,
+      "fat": 4.7,
       "tip": "Standardgröße im Supermarkt."
     },
     {
       "name": "Vollkorn-Tortilla-Wrap groß (62g)",
       "portion_g": 62,
-      "calories": 186,
-      "protein": 5.6,
-      "carbs": 28,
-      "fat": 4.5,
-      "tip": "Mehr Ballaststoffe, sättigt länger."
-    },
-    {
-      "name": "Low-Carb-Wrap (45g)",
-      "portion_g": 45,
-      "calories": 110,
-      "protein": 8,
-      "carbs": 9,
-      "fat": 4,
-      "tip": "Weniger Kohlenhydrate, mehr Eiweiß und Ballaststoffe."
+      "calories": 192,
+      "protein": 6.1,
+      "carbs": 28.5,
+      "fat": 6.1,
+      "tip": "Mehr Ballaststoffe, sättigt länger.",
+      "basis": [
+        {
+          "fdcId": 174081,
+          "g": 62
+        }
+      ]
     },
     {
       "name": "2 große Wraps (124g)",
       "portion_g": 124,
-      "calories": 379,
-      "protein": 10.2,
-      "carbs": 61.3,
-      "fat": 9.9
+      "calories": 368,
+      "protein": 9.9,
+      "carbs": 61.1,
+      "fat": 9.4
     }
   ],
   "comparison": [
     {
       "name": "Toastbrot (2 Scheiben)",
-      "calories": 124,
-      "emoji": "🍞"
+      "calories": 160,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Bagel",
-      "calories": 245,
-      "emoji": "🥯"
+      "name": "Bagel (1 Stück, 95g)",
+      "calories": 251,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "bagel",
+          "g": 95
+        }
+      ]
     },
     {
-      "name": "Naan-Brot",
-      "calories": 280,
-      "emoji": "🫓"
+      "name": "Naan-Brot (1 Stück, 90g)",
+      "calories": 262,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "naan-brot",
+          "g": 90
+        }
+      ]
     },
     {
-      "name": "Brötchen",
-      "calories": 130,
-      "emoji": "🥖"
+      "name": "Brötchen (1 Stück, 60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Auf die Größe achten",
-      "text": "Ein kleiner Wrap (32g) hat nur rund 98 kcal, ein großer Wrap (62g) bereits etwa 190 kcal. Beim Abnehmen lohnt sich der kleinere Durchmesser.",
+      "text": "Ein kleiner Wrap (32g) hat nur rund 95 kcal, ein großer Wrap (62g) bereits etwa 184 kcal. Beim Abnehmen lohnt sich der kleinere Durchmesser.",
       "icon": "📏"
     },
     {
@@ -131,19 +153,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Tortilla-Wrap?",
-      "answer": "Ein großer Weizen-Tortilla-Wrap (ca. 25 cm, 62g) hat etwa 190 kcal. Ein mittelgroßer Wrap (45g) kommt auf rund 138 kcal, ein kleiner (32g) auf etwa 98 kcal. Pro 100g sind es ca. 306 kcal."
+      "answer": "Ein großer Weizen-Tortilla-Wrap (ca. 25 cm, 62g) hat etwa 184 kcal. Ein mittelgroßer Wrap (45g) kommt auf rund 134 kcal, ein kleiner (32g) auf etwa 95 kcal. Pro 100g sind es ca. 297 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Tortilla-Wrap?",
-      "answer": "Pro 100g enthält ein Weizen-Tortilla-Wrap rund 49 g Kohlenhydrate. Ein großer Wrap (62g) liefert etwa 31 g. Low-Carb-Wraps haben mit ca. 9 g pro Stück deutlich weniger."
+      "answer": "Pro 100g enthält ein Weizen-Tortilla-Wrap rund 49 g Kohlenhydrate. Ein großer Wrap (62g) liefert etwa 31 g. Low-Carb-Wraps haben deutlich weniger."
     },
     {
       "question": "Wie viel Eiweiß hat ein Tortilla-Wrap?",
-      "answer": "Ein Weizen-Tortilla-Wrap enthält rund 8 g Protein pro 100g. Ein großer Wrap (62g) liefert damit etwa 5 g Eiweiß. Low-Carb-Wraps sind mit bis zu 8 g pro Stück deutlich eiweißreicher."
+      "answer": "Ein Weizen-Tortilla-Wrap enthält rund 8 g Protein pro 100g. Ein großer Wrap (62g) liefert damit etwa 5 g Eiweiß. Low-Carb-Wraps sind deutlich eiweißreicher."
     },
     {
       "question": "Sind Tortilla-Wraps zum Abnehmen geeignet?",
-      "answer": "Ja, in Maßen. Der Wrap selbst ist mit etwa 190 kcal pro großem Stück moderat. Entscheidend ist die Füllung: Mit magerem Eiweiß, viel Gemüse und leichten Saucen bleibt der fertige Wrap kalorienarm und sättigend."
+      "answer": "Ja, in Maßen. Der Wrap selbst ist mit etwa 184 kcal pro großem Stück moderat. Entscheidend ist die Füllung: Mit magerem Eiweiß, viel Gemüse und leichten Saucen bleibt der fertige Wrap kalorienarm und sättigend."
     },
     {
       "question": "Sind Tortilla-Wraps gesund?",
@@ -151,7 +173,7 @@
     },
     {
       "question": "Was ist kalorienärmer: Wrap oder Brot?",
-      "answer": "Pro 100g hat ein Tortilla-Wrap (306 kcal) etwas mehr Kalorien als normales Brot (ca. 250 kcal), da im Teig Öl oder Fett steckt. Pro Portion liegt ein kleiner Wrap mit 98 kcal aber oft niedriger als zwei Scheiben Brot."
+      "answer": "Pro 100g hat ein Tortilla-Wrap (297 kcal) etwas mehr Kalorien als Toastbrot (266 kcal), da im Teig Öl oder Fett steckt. Pro Portion liegt ein kleiner Wrap mit 95 kcal aber niedriger als zwei Scheiben Toast (160 kcal)."
     }
   ],
   "related_foods": [

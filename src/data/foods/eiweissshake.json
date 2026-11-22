@@ -3,9 +3,10 @@
   "name": "Eiweißshake",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710726 (Nutritional drink or shake, high protein, ready-to-drink, NFS: 61 kcal), Werte je 100 g; je 100 ml mit 1,082 g/ml 66 kcal",
   "seo": {
     "title": "Eiweißshake Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Eiweißshake? Ein trinkfertiger Shake (250 ml) hat ca. 125 kcal. Nährwerte pro 100 ml, Varianten mit Wasser & Milch + Tipps.",
+    "description": "Wie viele Kalorien hat ein Eiweißshake? Ein trinkfertiger Shake (250 ml) hat ca. 165 kcal. Nährwerte pro 100 ml, Varianten mit Wasser & Milch + Tipps.",
     "keywords": [
       "eiweißshake kalorien",
       "eiweißshake kcal",
@@ -16,105 +17,150 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 50,
-    "protein_per_100g": 8.5,
-    "carbs_per_100g": 2.5,
-    "fat_per_100g": 0.8,
-    "fiber_per_100g": 0.3,
-    "typical_portion_g": 250,
+    "calories_per_100g": 61,
+    "protein_per_100g": 6.6,
+    "carbs_per_100g": 0.9,
+    "fat_per_100g": 3.4,
+    "fiber_per_100g": 0.4,
+    "typical_portion_g": 271,
     "typical_portion_name": "1 Glas (250 ml)"
   },
   "variants": [
     {
       "name": "Glas trinkfertig (250 ml)",
-      "portion_g": 250,
-      "calories": 125,
-      "protein": 21,
-      "carbs": 6,
-      "fat": 2,
+      "portion_g": 271,
+      "calories": 165,
+      "protein": 18,
+      "carbs": 2,
+      "fat": 9,
       "tip": "Standard"
     },
     {
       "name": "Flasche trinkfertig (330 ml)",
-      "portion_g": 330,
-      "calories": 165,
-      "protein": 28,
-      "carbs": 8,
-      "fat": 3
+      "portion_g": 357,
+      "calories": 218,
+      "protein": 24,
+      "carbs": 3,
+      "fat": 12
     },
     {
       "name": "Große Flasche trinkfertig (500 ml)",
-      "portion_g": 500,
-      "calories": 250,
-      "protein": 42,
-      "carbs": 13,
-      "fat": 4
+      "portion_g": 541,
+      "calories": 330,
+      "protein": 36,
+      "carbs": 5,
+      "fat": 18
     },
     {
       "name": "Pulver in Wasser (30 g + 300 ml)",
       "portion_g": 330,
-      "calories": 113,
-      "protein": 24,
-      "carbs": 3,
-      "fat": 2,
-      "tip": "Kalorienärmste Variante"
+      "calories": 106,
+      "protein": 23,
+      "carbs": 2,
+      "fat": 0,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 173180,
+          "g": 30
+        },
+        {
+          "fdcId": 173647,
+          "ml": 300,
+          "g": 300
+        }
+      ]
     },
     {
-      "name": "Pulver in fettarmer Milch 1,5 % (30 g + 300 ml)",
-      "portion_g": 330,
-      "calories": 257,
-      "protein": 34,
+      "name": "Pulver in Vollmilch (30 g + 300 ml)",
+      "portion_g": 339,
+      "calories": 294,
+      "protein": 33,
       "carbs": 17,
-      "fat": 6
-    },
-    {
-      "name": "Pulver in Vollmilch 3,5 % (30 g + 300 ml)",
-      "portion_g": 330,
-      "calories": 305,
-      "protein": 34,
-      "carbs": 17,
-      "fat": 12
+      "fat": 11,
+      "basis": [
+        {
+          "fdcId": 173180,
+          "g": 30
+        },
+        {
+          "fdcId": 171265,
+          "ml": 300,
+          "g": 309
+        }
+      ]
     },
     {
       "name": "Nur Pulver (1 Portion, 30 g)",
       "portion_g": 30,
-      "calories": 113,
-      "protein": 24,
-      "carbs": 3,
-      "fat": 2
+      "calories": 106,
+      "protein": 23,
+      "carbs": 2,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 173180,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Proteinriegel",
-      "calories": 190,
-      "emoji": "🍫"
+      "name": "Proteinriegel (55 g)",
+      "calories": 193,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "proteinriegel",
+          "g": 55
+        }
+      ]
     },
     {
       "name": "Magerquark (250 g)",
-      "calories": 168,
-      "emoji": "🥛"
+      "calories": 180,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "magerquark",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Skyr (250 g)",
-      "calories": 158,
-      "emoji": "🥛"
+      "calories": 148,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "skyr",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Milch 1,5 % (250 ml)",
-      "calories": 120,
-      "emoji": "🥛"
+      "name": "Milch (250 ml)",
+      "calories": 157,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch",
+          "ml": 250,
+          "g": 258
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mit Wasser statt Milch sparen",
-      "text": "Ein Eiweißshake mit Wasser angerührt hat rund 113 kcal, mit Vollmilch dagegen über 300 kcal. Wer abnehmen möchte, mischt das Pulver mit Wasser.",
+      "text": "Ein Eiweißshake mit Wasser angerührt hat rund 106 kcal, mit Vollmilch dagegen fast 300 kcal. Wer abnehmen möchte, mischt das Pulver mit Wasser.",
       "icon": "💧"
     },
     {
       "title": "Hoher Proteinanteil",
-      "text": "Ein trinkfertiger Shake (250 ml) liefert etwa 21 g Eiweiß bei nur 125 kcal. Das macht ihn zu einer eiweißreichen Zwischenmahlzeit mit wenig Fett und Zucker.",
+      "text": "Ein trinkfertiger Shake (250 ml) liefert etwa 18 g Eiweiß bei rund 165 kcal. Das macht ihn zu einer eiweißreichen Zwischenmahlzeit mit wenig Zucker.",
       "icon": "💪"
     },
     {
@@ -136,19 +182,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Eiweißshake?",
-      "answer": "Ein trinkfertiger Eiweißshake hat etwa 50 kcal pro 100 ml. Ein Glas (250 ml) kommt damit auf rund 125 kcal."
+      "answer": "Ein trinkfertiger Eiweißshake hat etwa 66 kcal pro 100 ml. Ein Glas (250 ml) kommt damit auf rund 165 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Eiweißshake mit Wasser?",
-      "answer": "Eine Portion Proteinpulver (30 g) in Wasser angerührt hat etwa 113 kcal. Das ist die kalorienärmste Zubereitung."
+      "answer": "Eine Portion Proteinpulver (30 g) in Wasser angerührt hat etwa 106 kcal. Das ist die kalorienärmste Zubereitung."
     },
     {
       "question": "Wie viel Protein steckt in einem Eiweißshake?",
-      "answer": "Ein Glas (250 ml) liefert rund 21 g Protein, eine Pulverportion mit Wasser sogar etwa 24 g Eiweiß."
+      "answer": "Ein Glas (250 ml) liefert rund 18 g Protein, eine Pulverportion mit Wasser sogar etwa 23 g Eiweiß."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Eiweißshake?",
-      "answer": "Ein trinkfertiger Shake hat etwa 2,5 g Kohlenhydrate pro 100 ml, also rund 6 g pro Glas (250 ml). Mit Milch zubereitet steigt der Wert deutlich an."
+      "answer": "Ein trinkfertiger Shake hat laut USDA nur etwa 1 g Kohlenhydrate pro 100 ml, also rund 2 g pro Glas (250 ml). Mit Milch zubereitet steigt der Wert deutlich an."
     },
     {
       "question": "Ist ein Eiweißshake zum Abnehmen geeignet?",

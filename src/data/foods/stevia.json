@@ -3,9 +3,10 @@
   "name": "Stevia",
   "emoji": "🌿",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 170679 (Sweetener, herbal extract powder from Stevia leaf), Werte je 100 g",
   "seo": {
     "title": "Stevia Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Stevia? Reines Stevia-Extrakt hat praktisch 0 kcal. Nährwerte pro 100g & Portion, Tafelsüße im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Stevia? Reines Stevia-Extrakt hat praktisch 0 kcal. Nährwerte pro 100g & Portion, Zucker und Honig im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "stevia kalorien",
       "stevia kcal",
@@ -19,7 +20,7 @@
   "overview": {
     "calories_per_100g": 0,
     "protein_per_100g": 0,
-    "carbs_per_100g": 0,
+    "carbs_per_100g": 100,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 0.5,
@@ -31,81 +32,89 @@
       "portion_g": 0.5,
       "calories": 0,
       "protein": 0,
-      "carbs": 0,
+      "carbs": 0.5,
       "fat": 0,
       "tip": "Standard zum Süßen"
+    },
+    {
+      "name": "1 Päckchen (1 g)",
+      "portion_g": 1,
+      "calories": 0,
+      "protein": 0,
+      "carbs": 1,
+      "fat": 0
     },
     {
       "name": "Reines Stevia-Pulver (100 g)",
       "portion_g": 100,
       "calories": 0,
       "protein": 0,
-      "carbs": 0,
+      "carbs": 100,
       "fat": 0
     },
     {
-      "name": "Flüssig-Stevia, 5 Tropfen (ca. 0,25 g)",
-      "portion_g": 0.25,
+      "name": "Flüssig-Stevia, 5 Tropfen (ca. 0,5 g)",
+      "portion_g": 0.5,
       "calories": 0,
       "protein": 0,
-      "carbs": 0,
-      "fat": 0
-    },
-    {
-      "name": "Stevia-Tafelsüße (Stevia + Erythrit), 1 TL (3 g)",
-      "portion_g": 3,
-      "calories": 1,
-      "protein": 0,
-      "carbs": 3,
+      "carbs": 0.1,
       "fat": 0,
-      "tip": "Erythrit gilt rechtlich als 0 kcal"
+      "basis": [
+        {
+          "fdcId": 2710265,
+          "g": 0.5
+        }
+      ]
     },
     {
-      "name": "Stevia-Streusüße (mit Maltodextrin), 1 TL (4 g)",
-      "portion_g": 4,
-      "calories": 15,
-      "protein": 0,
-      "carbs": 4,
-      "fat": 0
-    },
-    {
-      "name": "Stevia-Streusüße (mit Maltodextrin), 100 g",
-      "portion_g": 100,
-      "calories": 390,
-      "protein": 0,
-      "carbs": 96,
-      "fat": 0
-    },
-    {
-      "name": "Stevia-Tab (1 Tablette)",
-      "portion_g": 0.06,
+      "name": "Stevia-Tab (1 Tablette, 0,1 g)",
+      "portion_g": 0.1,
       "calories": 0,
       "protein": 0,
-      "carbs": 0,
+      "carbs": 0.1,
       "fat": 0,
-      "tip": "Süßt wie 1 Stück Würfelzucker"
+      "tip": "Süßt wie 1 Stück Würfelzucker",
+      "basis": [
+        {
+          "fdcId": 2710264,
+          "g": 0.1
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Zucker (1 TL, 4 g)",
       "calories": 16,
-      "emoji": "🍬"
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 4
+        }
+      ]
     },
     {
       "name": "Honig (1 TL, 7 g)",
-      "calories": 22,
-      "emoji": "🍯"
+      "calories": 21,
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 7
+        }
+      ]
     },
     {
       "name": "Agavendicksaft (1 TL, 7 g)",
-      "calories": 21,
-      "emoji": "🌵"
-    },
-    {
-      "name": "Traubenzucker (1 TL, 4 g)",
-      "calories": 15,
-      "emoji": "🍭"
+      "calories": 22,
+      "emoji": "🌵",
+      "basis": [
+        {
+          "slug": "agavendicksaft",
+          "g": 7
+        }
+      ]
     }
   ],
   "tips": [
@@ -142,11 +151,11 @@
     },
     {
       "question": "Hat Stevia wirklich keine Kalorien?",
-      "answer": "Reines Stevia ist nahezu kalorienfrei. Vorsicht jedoch bei Stevia-Tafelsüße aus dem Supermarkt: Mischungen mit Maltodextrin können bis zu rund 390 kcal pro 100 g enthalten, Mischungen mit Erythrit dagegen kaum welche."
+      "answer": "Reines Stevia ist nahezu kalorienfrei. Vorsicht jedoch bei Stevia-Tafelsüße aus dem Supermarkt: Mischungen mit Maltodextrin können fast so viele Kalorien wie Zucker enthalten, Mischungen mit Erythrit dagegen kaum welche."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Stevia?",
-      "answer": "Reines Stevia-Extrakt enthält praktisch keine verwertbaren Kohlenhydrate. Streusüße mit Maltodextrin enthält dagegen rund 96 g Kohlenhydrate pro 100 g."
+      "answer": "Laut USDA zählt reines Stevia-Extrakt rechnerisch komplett zu den Kohlenhydraten (100 g pro 100 g, als Differenz ermittelt). Verwertbar sind sie nicht, deshalb liefert es trotzdem 0 kcal. Eine Prise (0,5 g) enthält 0,5 g."
     },
     {
       "question": "Ist Stevia gut zum Abnehmen?",
@@ -158,7 +167,7 @@
     },
     {
       "question": "Wie viel Stevia entspricht einem Teelöffel Zucker?",
-      "answer": "Da Stevia 200- bis 300-mal süßer als Zucker ist, ersetzt schon eine kleine Prise reines Extrakt (etwa 0,02–0,05 g) einen Teelöffel Zucker. Bei Tafelsüße-Mischungen gilt meist die auf der Packung angegebene Dosierung."
+      "answer": "Da Stevia 200- bis 300-mal süßer als Zucker ist, ersetzt schon eine kleine Prise reines Extrakt (etwa 0,02 bis 0,05 g) einen Teelöffel Zucker. Bei Tafelsüße-Mischungen gilt meist die auf der Packung angegebene Dosierung."
     }
   ],
   "related_foods": [

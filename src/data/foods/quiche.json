@@ -3,9 +3,10 @@
   "name": "Quiche",
   "emoji": "🥧",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708731 (Quiche with meat, poultry or fish), Werte je 100 g",
   "seo": {
     "title": "Quiche Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Quiche? Quiche Lorraine hat ca. 286 kcal pro 100g. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Quiche? Quiche Lorraine hat ca. 387 kcal pro 100g. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "quiche kalorien",
       "quiche lorraine kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 286,
-    "protein_per_100g": 8.6,
-    "carbs_per_100g": 16,
-    "fat_per_100g": 21,
-    "fiber_per_100g": 0.9,
+    "calories_per_100g": 387,
+    "protein_per_100g": 15.5,
+    "carbs_per_100g": 12.1,
+    "fat_per_100g": 30.6,
+    "fiber_per_100g": 0.7,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Stück (150g)"
   },
@@ -28,85 +29,89 @@
     {
       "name": "Quiche pro 100g",
       "portion_g": 100,
-      "calories": 286,
-      "protein": 9,
-      "carbs": 16,
-      "fat": 21
+      "calories": 387,
+      "protein": 16,
+      "carbs": 12,
+      "fat": 31
     },
     {
       "name": "1 Stück Quiche Lorraine (150g)",
       "portion_g": 150,
-      "calories": 429,
-      "protein": 13,
-      "carbs": 24,
-      "fat": 32,
+      "calories": 581,
+      "protein": 23,
+      "carbs": 18,
+      "fat": 46,
       "tip": "Standard"
     },
     {
       "name": "Großes Stück (200g)",
       "portion_g": 200,
-      "calories": 572,
-      "protein": 17,
-      "carbs": 32,
-      "fat": 42
+      "calories": 774,
+      "protein": 31,
+      "carbs": 24,
+      "fat": 61
     },
     {
       "name": "Mini-Quiche (50g)",
       "portion_g": 50,
-      "calories": 143,
-      "protein": 4,
-      "carbs": 8,
-      "fat": 11
-    },
-    {
-      "name": "Gemüse-Quiche Stück (150g)",
-      "portion_g": 150,
-      "calories": 375,
-      "protein": 12,
-      "carbs": 33,
-      "fat": 24,
-      "tip": "Leichter durch mehr Gemüse, weniger Speck"
+      "calories": 194,
+      "protein": 8,
+      "carbs": 6,
+      "fat": 15
     },
     {
       "name": "Ganze Quiche (800g)",
       "portion_g": 800,
-      "calories": 2288,
-      "protein": 69,
-      "carbs": 128,
-      "fat": 168
+      "calories": 3096,
+      "protein": 124,
+      "carbs": 97,
+      "fat": 245
     }
   ],
   "comparison": [
     {
-      "name": "Quiche Lorraine (1 Stück, 150g)",
-      "calories": 429,
-      "emoji": "🥧"
-    },
-    {
       "name": "Flammkuchen (1 Stück, 150g)",
-      "calories": 320,
-      "emoji": "🔥"
+      "calories": 330,
+      "emoji": "🔥",
+      "basis": [
+        {
+          "slug": "flammkuchen",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Pizza Margherita (1 Stück, 150g)",
-      "calories": 360,
-      "emoji": "🍕"
+      "calories": 399,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Omelett (150g)",
-      "calories": 230,
-      "emoji": "🍳"
+      "calories": 231,
+      "emoji": "🍳",
+      "basis": [
+        {
+          "slug": "omelett",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mit Gemüse leichter machen",
-      "text": "Wer den Speck durch Lauch, Spinat oder Brokkoli ersetzt, spart pro Stück rund 50 kcal und erhöht den Ballaststoff-Anteil.",
+      "text": "Wer den Speck durch Lauch, Spinat oder Brokkoli ersetzt, spart pro Stück Kalorien und erhöht den Ballaststoff-Anteil.",
       "icon": "🥦"
     },
     {
       "title": "Der Boden macht den Unterschied",
-      "text": "Der Mürbeteigboden liefert den Großteil der Kalorien. Eine Quiche ohne Boden oder mit dünnem Teig kommt deutlich leichter daher.",
+      "text": "Der Mürbeteigboden liefert einen großen Teil der Kalorien. Eine Quiche ohne Boden oder mit dünnem Teig kommt deutlich leichter daher.",
       "icon": "🥧"
     },
     {
@@ -121,30 +126,30 @@
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Ein Stück (150g) hat bereits etwa 429 kcal. Wer abnehmen möchte, bleibt besser bei einem statt zwei Stücken.",
+      "text": "Ein Stück (150g) hat bereits etwa 581 kcal. Wer abnehmen möchte, bleibt besser bei einem statt zwei Stücken.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Stück Quiche?",
-      "answer": "Ein typisches Stück Quiche Lorraine (150g) hat etwa 429 kcal. Pro 100g sind es rund 286 kcal."
+      "answer": "Ein typisches Stück Quiche Lorraine (150g) hat etwa 581 kcal. Pro 100g sind es rund 387 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Quiche pro 100g?",
-      "answer": "Quiche Lorraine hat ca. 286 kcal pro 100g, mit etwa 21g Fett, 16g Kohlenhydraten und 8,6g Eiweiß."
+      "answer": "Quiche Lorraine hat ca. 387 kcal pro 100g, mit etwa 30,6g Fett, 12,1g Kohlenhydraten und 15,5g Eiweiß."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Quiche?",
-      "answer": "Pro 100g enthält Quiche rund 16g Kohlenhydrate, die hauptsächlich aus dem Mürbeteigboden stammen. Ein Stück (150g) liefert etwa 24g."
+      "answer": "Pro 100g enthält Quiche rund 12g Kohlenhydrate, die hauptsächlich aus dem Mürbeteigboden stammen. Ein Stück (150g) liefert etwa 18g."
     },
     {
       "question": "Wie viel Protein hat Quiche?",
-      "answer": "Quiche enthält etwa 8,6g Eiweiß pro 100g, vor allem aus Eiern, Käse und gegebenenfalls Speck. Ein Stück (150g) liefert rund 13g."
+      "answer": "Quiche enthält etwa 15,5g Eiweiß pro 100g, vor allem aus Eiern, Käse und gegebenenfalls Speck. Ein Stück (150g) liefert rund 23g."
     },
     {
       "question": "Ist Quiche zum Abnehmen geeignet?",
-      "answer": "Quiche ist mit 286 kcal pro 100g recht kalorienreich, vor allem wegen Mürbeteig und Eier-Sahne-Füllung. In kleiner Portion mit Salat und mehr Gemüse statt Speck passt sie aber in eine ausgewogene Ernährung."
+      "answer": "Quiche ist mit 387 kcal pro 100g recht kalorienreich, vor allem wegen Mürbeteig und Eier-Sahne-Füllung. In kleiner Portion mit Salat und mehr Gemüse statt Speck passt sie aber in eine ausgewogene Ernährung."
     },
     {
       "question": "Ist Quiche gesund?",

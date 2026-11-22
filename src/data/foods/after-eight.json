@@ -3,9 +3,10 @@
   "name": "After Eight",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 168766 (Candies, NESTLE, AFTER EIGHT Mints), Werte je 100 g",
   "seo": {
     "title": "After Eight Kalorien: Nährwerte & Portionen | Mahlzait",
-    "description": "Wie viele Kalorien hat After Eight? Ein Täfelchen hat ca. 35 kcal, 100g rund 427 kcal. Nährwerte, Portionen & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat After Eight? Ein Täfelchen hat ca. 36 kcal, 100g rund 432 kcal. Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "after eight kalorien",
       "after eight kcal",
@@ -17,110 +18,126 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 427,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 70,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 3,
-    "typical_portion_g": 6.25,
-    "typical_portion_name": "1 Täfelchen (6 g)"
+    "calories_per_100g": 432,
+    "protein_per_100g": 1.7,
+    "carbs_per_100g": 79.5,
+    "fat_per_100g": 11.9,
+    "fiber_per_100g": 2.4,
+    "typical_portion_g": 8.4,
+    "typical_portion_name": "1 Täfelchen (8,4 g)"
   },
   "variants": [
     {
-      "name": "1 Täfelchen (6 g)",
-      "portion_g": 6.25,
-      "calories": 27,
-      "protein": 0.2,
-      "carbs": 5.8,
-      "fat": 1.1,
-      "tip": "Standard - 1 Stück aus der Schachtel"
+      "name": "1 Täfelchen (8,4 g)",
+      "portion_g": 8.4,
+      "calories": 36,
+      "protein": 0.1,
+      "carbs": 6.7,
+      "fat": 1,
+      "tip": "Standard: 1 Stück aus der Schachtel"
     },
     {
-      "name": "2 Täfelchen (13 g)",
-      "portion_g": 12.5,
-      "calories": 53,
+      "name": "2 Täfelchen (17 g)",
+      "portion_g": 16.8,
+      "calories": 73,
+      "protein": 0.3,
+      "carbs": 13.4,
+      "fat": 2
+    },
+    {
+      "name": "3 Täfelchen (25 g)",
+      "portion_g": 25.2,
+      "calories": 109,
       "protein": 0.4,
-      "carbs": 11.6,
-      "fat": 2.2
+      "carbs": 20,
+      "fat": 3
     },
     {
-      "name": "3 Täfelchen (19 g)",
-      "portion_g": 18.75,
-      "calories": 80,
-      "protein": 0.6,
-      "carbs": 17.5,
-      "fat": 3.3
-    },
-    {
-      "name": "5 Täfelchen (31 g)",
-      "portion_g": 31.25,
-      "calories": 133,
-      "protein": 1,
-      "carbs": 29,
-      "fat": 5.4
-    },
-    {
-      "name": "2 Täfelchen (13 g)",
-      "portion_g": 12.5,
-      "calories": 53,
-      "protein": 2.5,
-      "carbs": 70,
-      "fat": 13
+      "name": "5 Täfelchen (42 g)",
+      "portion_g": 42,
+      "calories": 181,
+      "protein": 0.7,
+      "carbs": 33.4,
+      "fat": 5
     },
     {
       "name": "Halbe Schachtel (100 g)",
       "portion_g": 100,
-      "calories": 427,
-      "protein": 2.5,
-      "carbs": 70,
-      "fat": 13
+      "calories": 432,
+      "protein": 1.7,
+      "carbs": 79.5,
+      "fat": 11.9
     },
     {
       "name": "Ganze Schachtel (200 g)",
       "portion_g": 200,
-      "calories": 854,
-      "protein": 5,
-      "carbs": 140,
-      "fat": 26,
+      "calories": 864,
+      "protein": 3.4,
+      "carbs": 159,
+      "fat": 23.8,
       "tip": "Komplette 200-g-Packung"
     }
   ],
   "comparison": [
     {
-      "name": "Vollmilchschokolade",
-      "calories": 535,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (1 Reihe, 25 g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 167587,
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Zartbitterschokolade",
-      "calories": 530,
-      "emoji": "🍫"
+      "name": "Zartbitterschokolade (1 Rippe, 25 g)",
+      "calories": 137,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-zartbitter",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Lindor",
-      "calories": 590,
-      "emoji": "🍬"
+      "name": "Lindor Kugel (12,5 g)",
+      "calories": 77,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "lindor",
+          "g": 12.5
+        }
+      ]
     },
     {
-      "name": "Toffifee",
-      "calories": 530,
-      "emoji": "🍬"
+      "name": "Toffifee (1 Stück, 7,5 g)",
+      "calories": 40,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "toffifee",
+          "g": 7.5
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Pro Stück gut kalkulierbar",
-      "text": "Ein einzelnes After-Eight-Täfelchen hat nur etwa 35 kcal. Wer es bei ein bis zwei Stück belässt, bleibt bei rund 70 kcal - ideal als kleiner Abschluss nach dem Essen.",
+      "text": "Ein einzelnes After-Eight-Täfelchen hat nur etwa 36 kcal. Wer es bei ein bis zwei Stück belässt, bleibt bei rund 36 bis 73 kcal, ideal als kleiner Abschluss nach dem Essen.",
       "icon": "🔢"
     },
     {
       "title": "Weniger Fett als Tafelschokolade",
-      "text": "Mit rund 13 g Fett pro 100 g enthält After Eight deutlich weniger Fett als klassische Vollmilchschokolade (ca. 30 g). Dafür liegt der Zuckeranteil mit etwa 63 g pro 100 g sehr hoch.",
+      "text": "Mit rund 12 g Fett pro 100 g enthält After Eight deutlich weniger Fett als klassische Vollmilchschokolade (ca. 30 g). Dafür liegt der Zuckeranteil mit etwa 67 g pro 100 g sehr hoch.",
       "icon": "📉"
     },
     {
       "title": "Die Schachtel ist die Falle",
-      "text": "Einzeln wirken die Täfelchen harmlos, doch die ganze 200-g-Schachtel bringt es auf rund 854 kcal. Portioniere bewusst und stelle die offene Packung nicht griffbereit hin.",
+      "text": "Einzeln wirken die Täfelchen harmlos, doch die ganze 200-g-Schachtel bringt es auf rund 864 kcal. Portioniere bewusst und stelle die offene Packung nicht griffbereit hin.",
       "icon": "⚠️"
     },
     {
@@ -130,30 +147,30 @@
     },
     {
       "title": "Kein Protein- oder Sattmacher",
-      "text": "Mit nur 2,5 g Protein und kaum Ballaststoffen sättigt After Eight nicht. Es ist ein reines Naschwerk - plane es als Genuss ein, nicht als Snack gegen Hunger.",
+      "text": "Mit nur 1,7 g Protein pro 100 g und kaum Ballaststoffen sättigt After Eight nicht. Es ist ein reines Naschwerk: Plane es als Genuss ein, nicht als Snack gegen Hunger.",
       "icon": "🍃"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein After-Eight-Täfelchen?",
-      "answer": "Ein einzelnes After-Eight-Täfelchen (ca. 8 g) hat rund 35 kcal. Zwei Stück kommen auf etwa 71 kcal."
+      "answer": "Ein einzelnes After-Eight-Täfelchen (ca. 8,4 g) hat rund 36 kcal. Zwei Stück kommen auf etwa 73 kcal."
     },
     {
       "question": "Wie viele Kalorien hat After Eight pro 100 g?",
-      "answer": "100 g After Eight enthalten etwa 427 kcal. Das entspricht ungefähr 12 Täfelchen."
+      "answer": "100 g After Eight enthalten etwa 432 kcal. Das entspricht ungefähr 12 Täfelchen."
     },
     {
       "question": "Wie viel Zucker steckt in After Eight?",
-      "answer": "After Eight ist sehr zuckerreich: Pro 100 g sind rund 63 g Zucker enthalten, der Großteil der etwa 70 g Kohlenhydrate."
+      "answer": "After Eight ist sehr zuckerreich: Pro 100 g sind rund 67 g Zucker enthalten, der Großteil der knapp 80 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat After Eight?",
-      "answer": "After Eight enthält nur etwa 2,5 g Protein pro 100 g. Es ist somit keine nennenswerte Eiweißquelle."
+      "answer": "After Eight enthält nur etwa 1,7 g Protein pro 100 g. Es ist somit keine nennenswerte Eiweißquelle."
     },
     {
       "question": "Ist After Eight zum Abnehmen geeignet?",
-      "answer": "After Eight ist mit viel Zucker und 427 kcal pro 100 g kein Diätprodukt. In kleinen Mengen - etwa ein bis zwei Täfelchen mit rund 35 bis 71 kcal - passt es aber gut als kalorienarmer Genuss in eine bewusste Ernährung."
+      "answer": "After Eight ist mit viel Zucker und 432 kcal pro 100 g kein Diätprodukt. In kleinen Mengen, etwa ein bis zwei Täfelchen mit rund 36 bis 73 kcal, passt es aber gut als kalorienarmer Genuss in eine bewusste Ernährung."
     },
     {
       "question": "Ist After Eight vegan?",

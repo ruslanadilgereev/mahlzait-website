@@ -3,9 +3,10 @@
   "name": "Lebkuchenherz",
   "emoji": "🍪",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174956 (Cookies, gingersnaps), Werte je 100 g",
   "seo": {
     "title": "Lebkuchenherz Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Lebkuchenherz? 100g haben ca. 380 kcal, ein kleines Herz (75g) rund 285 kcal. Nährwerte, Größen-Vergleich & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Lebkuchenherz? 100g haben ca. 416 kcal, ein kleines Herz (75g) rund 312 kcal. Nährwerte, Größen-Vergleich & Diät-Tipps.",
     "keywords": [
       "lebkuchenherz kalorien",
       "lebkuchenherz kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 380,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 70,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 416,
+    "protein_per_100g": 5.6,
+    "carbs_per_100g": 76.9,
+    "fat_per_100g": 9.8,
+    "fiber_per_100g": 2.2,
     "typical_portion_g": 75,
     "typical_portion_name": "1 kleines Herz (75g)"
   },
@@ -28,96 +29,120 @@
     {
       "name": "Mini-Herz (25g)",
       "portion_g": 25,
-      "calories": 95,
-      "protein": 2,
-      "carbs": 18,
+      "calories": 104,
+      "protein": 1,
+      "carbs": 19,
       "fat": 2,
       "tip": "Klassisches Wurfgeschenk / Mitgebsel"
     },
     {
       "name": "Kleines Herz (50g)",
       "portion_g": 50,
-      "calories": 190,
+      "calories": 208,
       "protein": 3,
-      "carbs": 35,
-      "fat": 4
+      "carbs": 38,
+      "fat": 5
     },
     {
       "name": "1 Herz typisch (75g)",
       "portion_g": 75,
-      "calories": 285,
-      "protein": 5,
-      "carbs": 53,
-      "fat": 6,
+      "calories": 312,
+      "protein": 4,
+      "carbs": 58,
+      "fat": 7,
       "tip": "Standard"
     },
     {
       "name": "Mittleres Herz (100g)",
       "portion_g": 100,
-      "calories": 380,
+      "calories": 416,
       "protein": 6,
-      "carbs": 70,
-      "fat": 8
+      "carbs": 77,
+      "fat": 10
     },
     {
       "name": "Großes Herz (200g)",
       "portion_g": 200,
-      "calories": 760,
-      "protein": 12,
-      "carbs": 140,
-      "fat": 16
+      "calories": 832,
+      "protein": 11,
+      "carbs": 154,
+      "fat": 20
     },
     {
       "name": "Riesenherz Wiesn/Markt (300g)",
       "portion_g": 300,
-      "calories": 1140,
-      "protein": 18,
-      "carbs": 210,
-      "fat": 24,
-      "tip": "Eher Deko als Snack – am besten teilen"
+      "calories": 1248,
+      "protein": 17,
+      "carbs": 231,
+      "fat": 29,
+      "tip": "Eher Deko als Snack, am besten teilen"
     }
   ],
   "comparison": [
     {
       "name": "Lebkuchen (klassisch, 100g)",
-      "calories": 360,
-      "emoji": "🍪"
+      "calories": 356,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "lebkuchen",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Marzipan (100g)",
-      "calories": 480,
-      "emoji": "🟡"
+      "calories": 458,
+      "emoji": "🟡",
+      "basis": [
+        {
+          "slug": "marzipan",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Vollmilchschokolade (100g)",
       "calories": 535,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Berliner (100g)",
-      "calories": 290,
-      "emoji": "🍩"
+      "calories": 340,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Zucker dominiert",
-      "text": "Ein Lebkuchenherz besteht zu rund zwei Dritteln aus Kohlenhydraten, überwiegend Zucker aus Glasur und Sirup. Der Genusswert steht klar vor dem Nährwert.",
+      "text": "Ein Lebkuchenherz besteht zu mehr als drei Vierteln aus Kohlenhydraten, davon rund 20g Zucker pro 100g (Zuckerguss nicht mitgerechnet). Der Genusswert steht klar vor dem Nährwert.",
       "icon": "🍬"
     },
     {
       "title": "Herz lieber teilen",
-      "text": "Ein großes Marktherz (200–300g) bringt 760 bis über 1100 kcal mit. Zum gemeinsamen Knabbern teilen statt allein zu essen spart spürbar Kalorien.",
+      "text": "Ein großes Marktherz (200 bis 300g) bringt 832 bis 1248 kcal mit. Zum gemeinsamen Knabbern teilen statt allein zu essen spart spürbar Kalorien.",
       "icon": "🤝"
     },
     {
       "title": "Bewusst genießen statt nebenbei",
-      "text": "Auf Märkten isst man Lebkuchenherzen oft beiläufig. Wer sie als bewusste Süßigkeit einplant, kommt mit einem kleinen Herz (75g, 285 kcal) gut aus.",
+      "text": "Auf Märkten isst man Lebkuchenherzen oft beiläufig. Wer sie als bewusste Süßigkeit einplant, kommt mit einem kleinen Herz (75g, 312 kcal) gut aus.",
       "icon": "🎯"
     },
     {
       "title": "Mit Bedacht zu Glühwein",
-      "text": "Lebkuchenherz plus Glühwein summiert sich schnell auf 500+ kcal. Eines von beiden bewusst wählen hält die Bilanz im Rahmen.",
+      "text": "Lebkuchenherz plus Glühwein summiert sich schnell zu einer großen Kalorienmenge. Eines von beiden bewusst wählen hält die Bilanz im Rahmen.",
       "icon": "♨️"
     },
     {
@@ -129,19 +154,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Lebkuchenherz?",
-      "answer": "Ein typisches kleines Lebkuchenherz (75g) hat rund 285 kcal. Pro 100g sind es etwa 380 kcal. Große Marktherzen mit 200–300g kommen auf 760 bis über 1100 kcal."
+      "answer": "Ein typisches kleines Lebkuchenherz (75g) hat rund 312 kcal. Pro 100g sind es etwa 416 kcal. Große Marktherzen mit 200 bis 300g kommen auf 832 bis 1248 kcal."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in einem Lebkuchenherz?",
-      "answer": "Pro 100g enthält ein Lebkuchenherz etwa 70g Kohlenhydrate, davon den Großteil als Zucker aus Glasur und Sirup. Ein 75g-Herz liefert somit rund 53g Kohlenhydrate."
+      "answer": "Pro 100g enthält ein Lebkuchenherz etwa 77g Kohlenhydrate, davon rund 20g Zucker (Zuckerguss nicht mitgerechnet). Ein 75g-Herz liefert somit rund 58g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat ein Lebkuchenherz?",
-      "answer": "Mit rund 6g Eiweiß pro 100g ist ein Lebkuchenherz keine nennenswerte Proteinquelle. Ein kleines Herz (75g) liefert etwa 5g Protein."
+      "answer": "Mit rund 5,6g Eiweiß pro 100g ist ein Lebkuchenherz keine nennenswerte Proteinquelle. Ein kleines Herz (75g) liefert etwa 4g Protein."
     },
     {
       "question": "Ist ein Lebkuchenherz zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit etwa 380 kcal pro 100g und viel Zucker ist es kalorienreich und sättigt kaum. Als bewusst eingeplante Süßigkeit in kleiner Portion passt es aber in eine ausgewogene Ernährung."
+      "answer": "Nur in Maßen. Mit etwa 416 kcal pro 100g und viel Zucker ist es kalorienreich und sättigt kaum. Als bewusst eingeplante Süßigkeit in kleiner Portion passt es aber in eine ausgewogene Ernährung."
     },
     {
       "question": "Ist ein Lebkuchenherz gesund?",
@@ -149,7 +174,7 @@
     },
     {
       "question": "Hat ein Lebkuchenherz mehr Kalorien als klassischer Lebkuchen?",
-      "answer": "Etwas mehr: Durch die dicke Zuckerglasur kommt ein Lebkuchenherz auf rund 380 kcal pro 100g, klassischer Lebkuchen liegt mit etwa 360 kcal knapp darunter."
+      "answer": "Ja: Ein Lebkuchenherz kommt auf rund 416 kcal pro 100g, klassischer Lebkuchen auf etwa 356 kcal. Der Grund ist vor allem der harte, trockene Teig."
     }
   ],
   "related_foods": [

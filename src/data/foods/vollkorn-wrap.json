@@ -3,6 +3,7 @@
   "name": "Vollkorn-Wrap",
   "emoji": "🌯",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174081 (Tortillas, ready-to-bake or -fry, whole wheat), Werte je 100 g",
   "seo": {
     "title": "Vollkorn-Wrap Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Vollkorn-Wrap? Ein großer Wrap (62g) hat ca. 192 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich & Tipps.",
@@ -19,10 +20,10 @@
   },
   "overview": {
     "calories_per_100g": 310,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 5.5,
+    "protein_per_100g": 9.8,
+    "carbs_per_100g": 45.9,
+    "fat_per_100g": 9.8,
+    "fiber_per_100g": 9.8,
     "typical_portion_g": 62,
     "typical_portion_name": "1 Wrap (groß)"
   },
@@ -32,8 +33,8 @@
       "portion_g": 62,
       "calories": 192,
       "protein": 6,
-      "carbs": 31,
-      "fat": 4,
+      "carbs": 28,
+      "fat": 6,
       "tip": "Standard"
     },
     {
@@ -41,76 +42,105 @@
       "portion_g": 45,
       "calories": 140,
       "protein": 4,
-      "carbs": 23,
-      "fat": 3
+      "carbs": 21,
+      "fat": 4
     },
     {
       "name": "Vollkorn-Wrap mini (30g)",
       "portion_g": 30,
       "calories": 93,
       "protein": 3,
-      "carbs": 15,
-      "fat": 2
+      "carbs": 14,
+      "fat": 3
     },
     {
       "name": "100g Vollkorn-Wrap",
       "portion_g": 100,
       "calories": 310,
-      "protein": 9,
-      "carbs": 50,
-      "fat": 7
+      "protein": 10,
+      "carbs": 46,
+      "fat": 10
     },
     {
       "name": "Gefüllter Chicken-Wrap (250g)",
       "portion_g": 250,
-      "calories": 380,
-      "protein": 22,
-      "carbs": 38,
-      "fat": 14
+      "calories": 630,
+      "protein": 52,
+      "carbs": 43,
+      "fat": 26,
+      "tip": "Fast-Food-Wrap mit gegrilltem Hähnchen",
+      "basis": [
+        {
+          "fdcId": 2707017,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Gefüllter Veggie-Wrap (220g)",
       "portion_g": 220,
-      "calories": 320,
-      "protein": 11,
-      "carbs": 42,
-      "fat": 11
-    },
-    {
-      "name": "Wrap mit Hähnchen & Salat (300g)",
-      "portion_g": 300,
-      "calories": 450,
-      "protein": 28,
-      "carbs": 40,
-      "fat": 18
+      "calories": 352,
+      "protein": 12,
+      "carbs": 43,
+      "fat": 14,
+      "basis": [
+        {
+          "fdcId": 2709136,
+          "g": 220
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Weißmehl-Tortilla (62g)",
-      "calories": 195,
-      "emoji": "🫓"
+      "calories": 184,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "tortilla",
+          "g": 62
+        }
+      ]
     },
     {
-      "name": "Vollkornbrot (1 Scheibe)",
-      "calories": 100,
-      "emoji": "🍞"
+      "name": "Weizenvollkornbrot (1 Scheibe, 32g)",
+      "calories": 81,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "fdcId": 172688,
+          "g": 32
+        }
+      ]
     },
     {
       "name": "Pita (60g)",
       "calories": 165,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "pita",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Bagel (1 Stück)",
-      "calories": 270,
-      "emoji": "🥯"
+      "name": "Bagel (1 Stück, 95g)",
+      "calories": 251,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "bagel",
+          "g": 95
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ballaststoffe machen satt",
-      "text": "Ein Vollkorn-Wrap liefert ca. 5,5g Ballaststoffe pro 100g – deutlich mehr als eine Weißmehl-Tortilla. Das sättigt länger und hält den Blutzucker stabiler.",
+      "text": "Ein Vollkorn-Wrap liefert ca. 9,8g Ballaststoffe pro 100g, deutlich mehr als eine Weißmehl-Tortilla. Das sättigt länger und hält den Blutzucker stabiler.",
       "icon": "🌾"
     },
     {
@@ -120,17 +150,17 @@
     },
     {
       "title": "Helle Sauce sparen",
-      "text": "Eine Schicht Mayo oder Aioli kann 100–150 kcal zusätzlich bedeuten. Senf, Joghurt-Dip oder Hummus sind die kalorienärmere Alternative.",
+      "text": "Eine Schicht Mayo oder Aioli bringt schnell viele zusätzliche Kalorien. Senf, Joghurt-Dip oder Hummus sind die kalorienärmere Alternative.",
       "icon": "🥫"
     },
     {
       "title": "Mehr Protein durch die Füllung",
-      "text": "Der Wrap selbst hat nur 9g Protein/100g. Mit Hähnchenbrust, Putenbrust oder Tofu wird daraus eine eiweißreiche, sättigende Mahlzeit.",
+      "text": "Der Wrap selbst hat nur rund 10g Protein/100g. Mit Hähnchenbrust, Putenbrust oder Tofu wird daraus eine eiweißreiche, sättigende Mahlzeit.",
       "icon": "💪"
     },
     {
       "title": "Wrap statt zwei Scheiben Brot",
-      "text": "Ein großer Wrap (62g) entspricht etwa zwei Scheiben Vollkornbrot bei den Kalorien – ideal als Alternative für unterwegs.",
+      "text": "Ein großer Wrap (62g, 192 kcal) hat etwas mehr Kalorien als zwei Scheiben Weizenvollkornbrot (je 81 kcal), ist aber ideal als Alternative für unterwegs.",
       "icon": "🍞"
     }
   ],
@@ -141,15 +171,15 @@
     },
     {
       "question": "Hat ein Vollkorn-Wrap weniger Kalorien als eine normale Tortilla?",
-      "answer": "Kaum. Mit ca. 310 kcal/100g liegt der Vollkorn-Wrap fast gleichauf mit der Weißmehl-Tortilla (ca. 315 kcal/100g). Der Vorteil liegt nicht bei den Kalorien, sondern bei den deutlich höheren Ballaststoffen (5,5g vs. ca. 2,5g pro 100g)."
+      "answer": "Nein. Mit ca. 310 kcal/100g liegt der Vollkorn-Wrap sogar leicht über der Weißmehl-Tortilla (ca. 297 kcal/100g). Der Vorteil liegt nicht bei den Kalorien, sondern bei den deutlich höheren Ballaststoffen (9,8g vs. 2,4g pro 100g)."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Vollkorn-Wrap?",
-      "answer": "Ein großer Wrap (62g) enthält ca. 31g Kohlenhydrate, pro 100g sind es rund 50g. Damit ist er für Low Carb eher ungeeignet, durch den Vollkornanteil aber langsamer verdaulich als ein Weißmehl-Wrap."
+      "answer": "Ein großer Wrap (62g) enthält ca. 28g Kohlenhydrate, pro 100g sind es rund 46g. Damit ist er für Low Carb eher ungeeignet, durch den Vollkornanteil aber langsamer verdaulich als ein Weißmehl-Wrap."
     },
     {
       "question": "Wie viel Protein hat ein Vollkorn-Wrap?",
-      "answer": "Der Wrap selbst liefert ca. 9g Protein pro 100g, also rund 6g pro großem Wrap (62g). Erst durch eine Füllung wie Hähnchen, Tofu oder Käse wird daraus eine wirklich eiweißreiche Mahlzeit."
+      "answer": "Der Wrap selbst liefert ca. 10g Protein pro 100g, also rund 6g pro großem Wrap (62g). Erst durch eine Füllung wie Hähnchen, Tofu oder Käse wird daraus eine wirklich eiweißreiche Mahlzeit."
     },
     {
       "question": "Ist ein Vollkorn-Wrap gut zum Abnehmen?",
@@ -157,7 +187,7 @@
     },
     {
       "question": "Ist ein Vollkorn-Wrap gesünder als ein normaler Wrap?",
-      "answer": "Tendenziell ja. Bei ähnlichem Kaloriengehalt liefert der Vollkorn-Wrap mehr Ballaststoffe und sättigt länger. Achten sollte man auf die Zutatenliste – manche Produkte enthalten nur wenig echtes Vollkornmehl."
+      "answer": "Tendenziell ja. Bei ähnlichem Kaloriengehalt liefert der Vollkorn-Wrap mehr Ballaststoffe und sättigt länger. Achten sollte man auf die Zutatenliste, manche Produkte enthalten nur wenig echtes Vollkornmehl."
     }
   ],
   "related_foods": [

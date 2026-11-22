@@ -3,48 +3,201 @@
   "name": "Churros",
   "emoji": "🍩",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2708070 (Churros), Werte je 100 g",
   "seo": {
     "title": "Churros Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Churros? Mit Schokolade, Zucker oder Zimt – alle Nährwerte und Spar-Tipps."
+    "description": "Wie viele Kalorien haben Churros? Mit Schokolade, Zucker oder Zimt: alle Nährwerte und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 350,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 42,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 0.8,
+    "calories_per_100g": 419,
+    "protein_per_100g": 6.1,
+    "carbs_per_100g": 48.9,
+    "fat_per_100g": 22.2,
+    "fiber_per_100g": 2.6,
     "typical_portion_g": 120,
     "typical_portion_name": "6 Churros"
   },
   "variants": [
-    {"name": "Churros mit Zucker & Zimt (6 Stück)", "portion_g": 120, "calories": 420, "protein": 5, "carbs": 50, "fat": 22, "tip": "Klassiker"},
-    {"name": "Churros mit Schokoladen-Dip", "portion_g": 150, "calories": 550, "protein": 6, "carbs": 68, "fat": 28},
-    {"name": "Churros mit Nutella-Füllung", "portion_g": 130, "calories": 520, "protein": 6, "carbs": 62, "fat": 28},
-    {"name": "Churros pur (ohne Zucker)", "portion_g": 100, "calories": 310, "protein": 4, "carbs": 35, "fat": 18, "tip": "Weniger Zucker"},
-    {"name": "Mini-Churros (4 Stück)", "portion_g": 80, "calories": 280, "protein": 3, "carbs": 34, "fat": 14, "tip": "Snack-Portion"},
-    {"name": "Churros mit Dulce de Leche", "portion_g": 150, "calories": 580, "protein": 7, "carbs": 72, "fat": 30},
-    {"name": "Churros aus dem Ofen", "portion_g": 120, "calories": 320, "protein": 5, "carbs": 48, "fat": 12, "tip": "Kalorienärmste Variante"}
+    {
+      "name": "Churros mit Zucker & Zimt (6 Stück)",
+      "portion_g": 120,
+      "calories": 503,
+      "protein": 7,
+      "carbs": 59,
+      "fat": 27,
+      "tip": "Klassiker"
+    },
+    {
+      "name": "Churros mit Schokoladen-Dip",
+      "portion_g": 150,
+      "calories": 621,
+      "protein": 8,
+      "carbs": 78,
+      "fat": 31,
+      "tip": "Mit 30 g Schoko-Dip",
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "fdcId": 2710294,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Churros mit Schoko-Nuss-Creme-Füllung",
+      "portion_g": 130,
+      "calories": 569,
+      "protein": 8,
+      "carbs": 66,
+      "fat": 30,
+      "basis": [
+        {
+          "g": 110
+        },
+        {
+          "fdcId": 2710289,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Mini-Churros (4 Stück)",
+      "portion_g": 60,
+      "calories": 251,
+      "protein": 4,
+      "carbs": 29,
+      "fat": 13,
+      "tip": "Snack-Portion"
+    },
+    {
+      "name": "Churros mit Dulce de Leche",
+      "portion_g": 150,
+      "calories": 597,
+      "protein": 9,
+      "carbs": 75,
+      "fat": 29,
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "fdcId": 173461,
+          "g": 30
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Donut", "calories": 450, "emoji": "🍩"},
-    {"name": "Crêpe mit Nutella", "calories": 380, "emoji": "🥞"},
-    {"name": "Berliner (Krapfen)", "calories": 350, "emoji": "🍩"},
-    {"name": "Waffel mit Sahne", "calories": 400, "emoji": "🧇"}
+    {
+      "name": "Donut",
+      "calories": 295,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "donut"
+        }
+      ]
+    },
+    {
+      "name": "Crêpe mit Schoko-Nuss-Creme",
+      "calories": 296,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "fdcId": 2708342,
+          "g": 60
+        },
+        {
+          "fdcId": 2710289,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Berliner (Krapfen)",
+      "calories": 272,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner"
+        }
+      ]
+    },
+    {
+      "name": "Waffel mit Sahne",
+      "calories": 384,
+      "emoji": "🧇",
+      "basis": [
+        {
+          "fdcId": 2708325,
+          "g": 75
+        },
+        {
+          "fdcId": 2705598,
+          "g": 30
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Ohne Dip genießen", "text": "Churros mit nur Zimtzucker haben ca. 130 kcal weniger als mit Schokoladen-Dip.", "icon": "🍫"},
-    {"title": "Mini-Portion wählen", "text": "4 statt 6 Churros sparen ca. 140 kcal – oft reichen die kleineren Portionen geschmacklich aus.", "icon": "📏"},
-    {"title": "Im Ofen zubereiten", "text": "Ofen-Churros haben ca. 25% weniger Kalorien als frittierte und sind zu Hause leicht machbar.", "icon": "🫕"},
-    {"title": "Weniger Zucker", "text": "Die Hälfte des Zuckermantels weglassen spart ca. 40-50 kcal pro Portion.", "icon": "🚫"},
-    {"title": "Bewusst genießen", "text": "Churros sind ein Genuss-Snack. Langsam essen und jeden Bissen genießen – man braucht weniger.", "icon": "🧘"}
+    {
+      "title": "Ohne Dip genießen",
+      "text": "Churros mit nur Zimtzucker haben ca. 118 kcal weniger als mit Schokoladen-Dip.",
+      "icon": "🍫"
+    },
+    {
+      "title": "Mini-Portion wählen",
+      "text": "4 Mini-Churros (60g) statt 6 Churros (120g) sparen ca. 251 kcal, oft reichen die kleineren Portionen geschmacklich aus.",
+      "icon": "📏"
+    },
+    {
+      "title": "Im Ofen zubereiten",
+      "text": "Ofen-Churros kommen ohne Frittierfett aus und sind zu Hause leicht machbar.",
+      "icon": "🫕"
+    },
+    {
+      "title": "Weniger Zucker",
+      "text": "Weniger Zuckermantel spart Zucker und Kalorien.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Bewusst genießen",
+      "text": "Churros sind ein Genuss-Snack. Langsam essen und jeden Bissen genießen, man braucht weniger.",
+      "icon": "🧘"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Churros?", "answer": "6 Churros mit Zucker und Zimt haben ca. 420 kcal. Mit Schokoladen-Dip ca. 550 kcal."},
-    {"question": "Sind Churros ungesund?", "answer": "Churros sind frittiert und zuckerreich (350 kcal/100g, 18g Fett). Als gelegentlicher Genuss okay, aber nicht als regelmäßiger Snack."},
-    {"question": "Wie viel Zucker haben Churros?", "answer": "Churros mit Zimtzucker haben ca. 25-30g Zucker pro Portion – fast so viel wie eine Dose Cola."},
-    {"question": "Wie viel Fett haben Churros?", "answer": "6 Churros enthalten ca. 22g Fett, hauptsächlich durch das Frittieren in Öl."},
-    {"question": "Kann man Churros zu Hause machen?", "answer": "Ja, selbstgemachte Churros aus dem Ofen haben nur ca. 320 kcal pro Portion und sind deutlich fettärmer als frittierte."},
-    {"question": "Was hat weniger Kalorien: Churros oder Donuts?", "answer": "6 Churros (420 kcal) haben etwa gleich viele Kalorien wie ein Donut (450 kcal). Churros sind aber besser teilbar."}
+    {
+      "question": "Wie viele Kalorien haben Churros?",
+      "answer": "6 Churros mit Zucker und Zimt (120g) haben ca. 503 kcal. Mit Schokoladen-Dip ca. 621 kcal."
+    },
+    {
+      "question": "Sind Churros ungesund?",
+      "answer": "Churros sind frittiert und zuckerreich (419 kcal/100g, 22g Fett). Als gelegentlicher Genuss okay, aber nicht als regelmäßiger Snack."
+    },
+    {
+      "question": "Wie viel Zucker haben Churros?",
+      "answer": "Churros mit Zimtzucker haben laut FDC ca. 28g Zucker pro Portion (6 Stück, 120g)."
+    },
+    {
+      "question": "Wie viel Fett haben Churros?",
+      "answer": "6 Churros enthalten ca. 27g Fett, hauptsächlich durch das Frittieren in Öl."
+    },
+    {
+      "question": "Kann man Churros zu Hause machen?",
+      "answer": "Ja, selbstgemachte Churros aus dem Ofen kommen ohne Frittierfett aus und sind dadurch deutlich fettärmer als frittierte."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Churros oder Donuts?",
+      "answer": "6 Churros (ca. 503 kcal) haben deutlich mehr Kalorien als ein glasierter Donut (70g, ca. 295 kcal). Pro 100g liegen beide fast gleich. Churros sind aber besser teilbar."
+    }
   ],
-  "related_foods": ["donut", "crepes-nutella", "langos", "brezel"]
+  "related_foods": [
+    "donut",
+    "crepes-nutella",
+    "langos",
+    "brezel"
+  ]
 }

@@ -3,6 +3,7 @@
   "name": "Apfelringe",
   "emoji": "🍎",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171691 (Apples, dried, sulfured, uncooked), Werte je 100 g",
   "seo": {
     "title": "Apfelringe Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Apfelringe? Getrocknete Apfelringe haben ca. 243 kcal pro 100g. Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
@@ -18,8 +19,8 @@
   },
   "overview": {
     "calories_per_100g": 243,
-    "protein_per_100g": 1,
-    "carbs_per_100g": 72.5,
+    "protein_per_100g": 0.9,
+    "carbs_per_100g": 65.9,
     "fat_per_100g": 0.3,
     "fiber_per_100g": 8.7,
     "typical_portion_g": 30,
@@ -27,11 +28,11 @@
   },
   "variants": [
     {
-      "name": "5 Apfelringe (ca. 15g)",
-      "portion_g": 15,
-      "calories": 36,
+      "name": "1 Apfelring (6,4g)",
+      "portion_g": 6.4,
+      "calories": 16,
       "protein": 0,
-      "carbs": 11,
+      "carbs": 4,
       "fat": 0
     },
     {
@@ -39,7 +40,7 @@
       "portion_g": 30,
       "calories": 73,
       "protein": 0,
-      "carbs": 22,
+      "carbs": 20,
       "fat": 0,
       "tip": "Typische Snack-Portion"
     },
@@ -47,8 +48,8 @@
       "name": "Kleine Snack-Tüte (50g)",
       "portion_g": 50,
       "calories": 122,
-      "protein": 1,
-      "carbs": 36,
+      "protein": 0,
+      "carbs": 33,
       "fat": 0
     },
     {
@@ -56,18 +57,9 @@
       "portion_g": 100,
       "calories": 243,
       "protein": 1,
-      "carbs": 73,
+      "carbs": 66,
       "fat": 0,
       "tip": "Sehr energiedicht"
-    },
-    {
-      "name": "Selbstgetrocknet ungeschwefelt (30g)",
-      "portion_g": 30,
-      "calories": 73,
-      "protein": 0,
-      "carbs": 22,
-      "fat": 0,
-      "tip": "Ohne Zusätze, gleiche Kalorien"
     },
     {
       "name": "Frischer Apfel zum Vergleich (180g)",
@@ -76,29 +68,59 @@
       "protein": 1,
       "carbs": 25,
       "fat": 0,
-      "tip": "Roh deutlich kalorienärmer"
+      "tip": "Roh deutlich kalorienärmer",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Frischer Apfel (100g)",
       "calories": 52,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Rosinen (100g)",
       "calories": 299,
-      "emoji": "🍇"
+      "emoji": "🍇",
+      "basis": [
+        {
+          "fdcId": 168165,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Getrocknete Aprikosen (100g)",
       "calories": 241,
-      "emoji": "🍑"
+      "emoji": "🍑",
+      "basis": [
+        {
+          "fdcId": 173941,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Banane (100g)",
       "calories": 89,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -134,16 +156,16 @@
       "answer": "Getrocknete Apfelringe haben etwa 243 kcal pro 100g. Eine typische Handvoll von rund 30g liefert ca. 73 kcal."
     },
     {
-      "question": "Warum haben Apfelringe so viele Kalorien wie frische Äpfel nicht?",
+      "question": "Warum haben Apfelringe so viel mehr Kalorien als frische Äpfel?",
       "answer": "Beim Trocknen wird dem Apfel das Wasser entzogen, wodurch sich Zucker und Kalorien stark konzentrieren. Ein frischer Apfel hat nur 52 kcal pro 100g, getrocknete Apfelringe dagegen 243 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Apfelringe?",
-      "answer": "Apfelringe enthalten etwa 72,5g Kohlenhydrate pro 100g, davon einen großen Anteil natürlichen Fruchtzucker. In 30g stecken rund 22g Kohlenhydrate."
+      "answer": "Apfelringe enthalten etwa 65,9g Kohlenhydrate pro 100g, davon einen großen Anteil natürlichen Fruchtzucker. In 30g stecken rund 20g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Apfelringen?",
-      "answer": "Apfelringe enthalten kaum Eiweiß, nur etwa 1g pro 100g. Sie sind keine relevante Proteinquelle, sondern ein Kohlenhydrat-Snack."
+      "answer": "Apfelringe enthalten kaum Eiweiß, nur knapp 1g pro 100g. Sie sind keine relevante Proteinquelle, sondern ein Kohlenhydrat-Snack."
     },
     {
       "question": "Sind Apfelringe zum Abnehmen geeignet?",

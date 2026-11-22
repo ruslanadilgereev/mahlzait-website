@@ -3,50 +3,198 @@
   "name": "Hummus",
   "emoji": "🧆",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174289 (Hummus, commercial), Werte je 100 g",
   "seo": {
     "title": "Hummus Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Hummus? Nährwerte pro 100g & Portion. Klassisch, Rote Beete, Avocado & mehr im Vergleich.",
-    "keywords": ["hummus kalorien", "kalorien hummus", "hummus nährwerte", "hummus protein", "hummus gesund", "hummus abnehmen", "hummus kohlenhydrate", "hummus fett"]
+    "description": "Wie viele Kalorien hat Hummus? Nährwerte pro 100g & Portion. Klassisch, selbstgemacht, Paprika, Rote Beete & mehr im Vergleich.",
+    "keywords": [
+      "hummus kalorien",
+      "kalorien hummus",
+      "hummus nährwerte",
+      "hummus protein",
+      "hummus gesund",
+      "hummus abnehmen",
+      "hummus kohlenhydrate",
+      "hummus fett"
+    ]
   },
   "overview": {
-    "calories_per_100g": 166,
-    "protein_per_100g": 7.9,
-    "carbs_per_100g": 14.3,
-    "fat_per_100g": 9.6,
-    "fiber_per_100g": 6.0,
+    "calories_per_100g": 237,
+    "protein_per_100g": 7.8,
+    "carbs_per_100g": 15,
+    "fat_per_100g": 17.8,
+    "fiber_per_100g": 5.5,
     "typical_portion_g": 50,
     "typical_portion_name": "2 EL"
   },
   "variants": [
-    { "name": "Hummus klassisch (50g)", "portion_g": 50, "calories": 83, "protein": 4, "carbs": 7, "fat": 5, "tip": "Standard-Portion" },
-    { "name": "Hummus große Portion (100g)", "portion_g": 100, "calories": 166, "protein": 8, "carbs": 14, "fat": 10 },
-    { "name": "Hummus Rote Beete (50g)", "portion_g": 50, "calories": 78, "protein": 3, "carbs": 8, "fat": 4 },
-    { "name": "Hummus Avocado (50g)", "portion_g": 50, "calories": 90, "protein": 3, "carbs": 6, "fat": 6 },
-    { "name": "Hummus Paprika (50g)", "portion_g": 50, "calories": 80, "protein": 4, "carbs": 7, "fat": 5 },
-    { "name": "Hummus selbstgemacht (50g)", "portion_g": 50, "calories": 75, "protein": 4, "carbs": 6, "fat": 4, "tip": "Kalorienärmste Variante" },
-    { "name": "Hummus mit Fladenbrot (1 Portion)", "portion_g": 200, "calories": 420, "protein": 14, "carbs": 50, "fat": 18 },
-    { "name": "Hummus Light (50g)", "portion_g": 50, "calories": 60, "protein": 4, "carbs": 6, "fat": 2 }
+    {
+      "name": "Hummus klassisch (50g)",
+      "portion_g": 50,
+      "calories": 119,
+      "protein": 4,
+      "carbs": 8,
+      "fat": 9,
+      "tip": "Standard-Portion"
+    },
+    {
+      "name": "Hummus große Portion (100g)",
+      "portion_g": 100,
+      "calories": 237,
+      "protein": 8,
+      "carbs": 15,
+      "fat": 18
+    },
+    {
+      "name": "Hummus Paprika oder Rote Beete (50g)",
+      "portion_g": 50,
+      "calories": 121,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 2707403,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Hummus selbstgemacht (50g)",
+      "portion_g": 50,
+      "calories": 89,
+      "protein": 2,
+      "carbs": 10,
+      "fat": 4,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 172454,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Hummus mit Fladenbrot (100g + 100g)",
+      "portion_g": 200,
+      "calories": 512,
+      "protein": 17,
+      "carbs": 71,
+      "fat": 19,
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "slug": "pita",
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Guacamole", "calories": 160, "emoji": "🥑" },
-    { "name": "Frischkäse", "calories": 249, "emoji": "🧀" },
-    { "name": "Tzatziki", "calories": 75, "emoji": "🥒" },
-    { "name": "Erdnussbutter", "calories": 588, "emoji": "🥜" }
+    {
+      "name": "Guacamole (100g)",
+      "calories": 155,
+      "emoji": "🥑",
+      "basis": [
+        {
+          "slug": "guacamole",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Frischkäse (100g)",
+      "calories": 253,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Tzatziki (100g)",
+      "calories": 91,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "tzatziki",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Erdnussbutter (100g)",
+      "calories": 598,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnussbutter",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Portionsgröße beachten", "text": "Hummus ist gesund, aber kalorienreich. 2 EL (50g, 83 kcal) reichen als Dip – direkt aus dem Becher löffeln kann schnell 300+ kcal kosten.", "icon": "📏" },
-    { "title": "Gemüse statt Brot dippen", "text": "Karotten, Gurken und Paprika statt Fladenbrot sparen massiv Kalorien und liefern extra Vitamine.", "icon": "🥕" },
-    { "title": "Selbstgemacht = weniger Öl", "text": "Selbstgemachter Hummus hat oft weniger Kalorien, weil du die Ölmenge kontrollierst. Aquafaba (Kichererbsenwasser) macht ihn cremig.", "icon": "👨‍🍳" },
-    { "title": "Pflanzliche Proteinquelle", "text": "Mit 7,9g Protein pro 100g ist Hummus ein guter pflanzlicher Eiweißlieferant, besonders für Veganer und Vegetarier.", "icon": "💪" },
-    { "title": "Ballaststoff-Boost", "text": "6g Ballaststoffe pro 100g fördern die Verdauung und sorgen für ein langes Sättigungsgefühl.", "icon": "🌿" }
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Hummus ist gesund, aber kalorienreich. 2 EL (50g, 119 kcal) reichen als Dip. Wer direkt aus dem Becher löffelt, ist schnell bei 100g und mehr (237 kcal).",
+      "icon": "📏"
+    },
+    {
+      "title": "Gemüse statt Brot dippen",
+      "text": "Karotten, Gurken und Paprika statt Fladenbrot sparen massiv Kalorien und liefern extra Vitamine.",
+      "icon": "🥕"
+    },
+    {
+      "title": "Selbstgemacht = weniger Öl",
+      "text": "Selbstgemachter Hummus hat oft weniger Kalorien, weil du die Ölmenge kontrollierst. Aquafaba (Kichererbsenwasser) macht ihn cremig.",
+      "icon": "👨‍🍳"
+    },
+    {
+      "title": "Pflanzliche Proteinquelle",
+      "text": "Mit 7,8g Protein pro 100g ist Hummus ein guter pflanzlicher Eiweißlieferant, besonders für Veganer und Vegetarier.",
+      "icon": "💪"
+    },
+    {
+      "title": "Ballaststoff-Boost",
+      "text": "5,5g Ballaststoffe pro 100g fördern die Verdauung und sorgen für ein langes Sättigungsgefühl.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Hummus?", "answer": "Hummus hat ca. 166 kcal pro 100g. Eine typische Portion (2 EL, 50g) hat ca. 83 kcal." },
-    { "question": "Ist Hummus gut zum Abnehmen?", "answer": "In Maßen ja. Hummus sättigt gut durch Protein und Ballaststoffe, hat aber relativ viele Kalorien durch das Olivenöl und Tahini. 2 EL als Dip sind ideal." },
-    { "question": "Wie viel Protein hat Hummus?", "answer": "Hummus enthält ca. 7,9g Protein pro 100g. Als pflanzliche Proteinquelle ist er besonders für Veganer und Vegetarier wertvoll." },
-    { "question": "Ist Hummus gesund?", "answer": "Ja! Hummus liefert pflanzliches Protein, gesunde Fette aus Tahini und Olivenöl, Ballaststoffe und wichtige Mineralstoffe wie Eisen und Magnesium." },
-    { "question": "Wie viel Hummus pro Tag ist gesund?", "answer": "50-100g pro Tag (2-4 EL) sind eine gesunde Menge. Das liefert 83-166 kcal und gute Nährstoffe ohne zu viele Kalorien." },
-    { "question": "Welcher Hummus hat die wenigsten Kalorien?", "answer": "Hummus Light/fettreduziert hat ca. 120 kcal/100g. Selbstgemachter Hummus mit weniger Öl kommt auf ca. 150 kcal/100g. Rote-Beete-Hummus ist oft etwas kalorienärmer." }
+    {
+      "question": "Wie viele Kalorien hat Hummus?",
+      "answer": "Hummus hat ca. 237 kcal pro 100g. Eine typische Portion (2 EL, 50g) hat ca. 119 kcal."
+    },
+    {
+      "question": "Ist Hummus gut zum Abnehmen?",
+      "answer": "In Maßen ja. Hummus sättigt gut durch Protein und Ballaststoffe, hat aber relativ viele Kalorien durch das Olivenöl und Tahini. 2 EL als Dip sind ideal."
+    },
+    {
+      "question": "Wie viel Protein hat Hummus?",
+      "answer": "Hummus enthält ca. 7,8g Protein pro 100g. Als pflanzliche Proteinquelle ist er besonders für Veganer und Vegetarier wertvoll."
+    },
+    {
+      "question": "Ist Hummus gesund?",
+      "answer": "Ja! Hummus liefert pflanzliches Protein, gesunde Fette aus Tahini und Olivenöl, Ballaststoffe und wichtige Mineralstoffe wie Eisen und Magnesium."
+    },
+    {
+      "question": "Wie viel Hummus pro Tag ist gesund?",
+      "answer": "50 bis 100g pro Tag (2 bis 4 EL) sind eine gesunde Menge. Das liefert 119 bis 237 kcal und gute Nährstoffe ohne zu viele Kalorien."
+    },
+    {
+      "question": "Welcher Hummus hat die wenigsten Kalorien?",
+      "answer": "Selbstgemachter Hummus mit weniger Öl hat rund 177 kcal pro 100g, deutlich weniger als gekaufter (237 kcal). Fettreduzierter Light-Hummus spart ebenfalls Kalorien. Sorten mit Geschmack wie Paprika oder Rote Beete liegen etwa gleichauf mit klassischem Hummus."
+    }
   ],
-  "related_foods": ["kichererbsen", "falafel", "avocado", "tofu"]
+  "related_foods": [
+    "kichererbsen",
+    "falafel",
+    "avocado",
+    "tofu"
+  ]
 }

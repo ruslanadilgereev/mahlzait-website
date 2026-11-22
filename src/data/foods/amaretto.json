@@ -3,9 +3,10 @@
   "name": "Amaretto",
   "emoji": "🥃",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710623 (Liqueur: 279 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 283 kcal",
   "seo": {
     "title": "Amaretto Kalorien: Nährwerte, Mengen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Amaretto? Ein Schnapsglas (4cl) hat ca. 112 kcal. Nährwerte pro 100ml & Portion, Vergleich mit anderen Likören + Tipps.",
+    "description": "Wie viele Kalorien hat Amaretto? Ein Schnapsglas (4cl) hat ca. 114 kcal. Nährwerte pro 100ml & Portion, Vergleich mit anderen Likören + Tipps.",
     "keywords": [
       "amaretto kcal",
       "amaretto kalorien",
@@ -18,12 +19,12 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 280,
+    "calories_per_100g": 279,
     "protein_per_100g": 0,
-    "carbs_per_100g": 31,
-    "fat_per_100g": 0,
+    "carbs_per_100g": 33.2,
+    "fat_per_100g": 0.1,
     "fiber_per_100g": 0,
-    "typical_portion_g": 40,
+    "typical_portion_g": 41,
     "typical_portion_name": "1 Schnapsglas (4cl)"
   },
   "variants": [
@@ -32,86 +33,126 @@
       "portion_g": 20,
       "calories": 56,
       "protein": 0,
-      "carbs": 6,
+      "carbs": 7,
       "fat": 0
     },
     {
       "name": "Schnapsglas (4cl)",
-      "portion_g": 40,
-      "calories": 112,
+      "portion_g": 41,
+      "calories": 114,
       "protein": 0,
-      "carbs": 12,
+      "carbs": 14,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Amaretto auf Eis (5cl)",
-      "portion_g": 50,
-      "calories": 140,
+      "portion_g": 51,
+      "calories": 142,
       "protein": 0,
-      "carbs": 16,
+      "carbs": 17,
       "fat": 0
     },
     {
       "name": "Doppelter Amaretto (8cl)",
-      "portion_g": 80,
-      "calories": 224,
+      "portion_g": 81,
+      "calories": 226,
       "protein": 0,
-      "carbs": 25,
+      "carbs": 27,
       "fat": 0
     },
     {
       "name": "Amaretto Sour (1 Glas)",
-      "portion_g": 150,
-      "calories": 215,
+      "portion_g": 109,
+      "calories": 199,
       "protein": 0,
-      "carbs": 28,
+      "carbs": 31,
       "fat": 0,
-      "tip": "mit Zitronensaft & Zuckersirup"
+      "tip": "mit 5cl Amaretto, 3cl Zitronensaft & 2cl Zuckersirup",
+      "basis": [
+        {
+          "ml": 50,
+          "g": 51
+        },
+        {
+          "fdcId": 167747,
+          "ml": 30,
+          "g": 31
+        },
+        {
+          "fdcId": 2710278,
+          "ml": 20,
+          "g": 27
+        }
+      ]
     },
     {
       "name": "Amaretto im Kaffee (2cl)",
       "portion_g": 20,
       "calories": 56,
       "protein": 0,
-      "carbs": 6,
+      "carbs": 7,
       "fat": 0
     },
     {
       "name": "Flasche (0,7 l)",
-      "portion_g": 700,
-      "calories": 1960,
+      "portion_g": 710,
+      "calories": 1981,
       "protein": 0,
-      "carbs": 217,
-      "fat": 0
+      "carbs": 236,
+      "fat": 1
     }
   ],
   "comparison": [
     {
       "name": "Baileys (4cl)",
       "calories": 131,
-      "emoji": "🥛"
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "baileys",
+          "ml": 40,
+          "g": 40
+        }
+      ]
     },
     {
-      "name": "Eierlikör (4cl)",
-      "calories": 108,
-      "emoji": "🥚"
+      "name": "Kaffeelikör (4cl)",
+      "calories": 138,
+      "emoji": "☕",
+      "basis": [
+        {
+          "fdcId": 2710625,
+          "ml": 40,
+          "g": 41
+        }
+      ]
     },
     {
       "name": "Wodka (4cl)",
-      "calories": 92,
-      "emoji": "🍸"
+      "calories": 88,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "wodka"
+        }
+      ]
     },
     {
-      "name": "Aperol (4cl)",
-      "calories": 60,
-      "emoji": "🍹"
+      "name": "Campari (4cl)",
+      "calories": 96,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "campari"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Zucker treibt die Kalorien",
-      "text": "Amaretto hat mit ca. 31g Zucker pro 100ml einen hohen Zuckergehalt. Neben dem Alkohol ist das der zweite große Kalorienlieferant.",
+      "text": "Amaretto hat mit ca. 34g Zucker pro 100ml einen hohen Zuckergehalt. Neben dem Alkohol ist das der zweite große Kalorienlieferant.",
       "icon": "🍬"
     },
     {
@@ -121,12 +162,12 @@
     },
     {
       "title": "Kleine Gläser nutzen",
-      "text": "Schon ein doppelter Amaretto (8cl) liefert 224 kcal – so viel wie ein kleiner Schokoriegel. Beim Genuss hilft ein kleines 2cl-Gläschen.",
+      "text": "Schon ein doppelter Amaretto (8cl) liefert 226 kcal, so viel wie ein kleiner Schokoriegel. Beim Genuss hilft ein kleines 2cl-Gläschen.",
       "icon": "🥃"
     },
     {
       "title": "Als Aroma sparsam dosieren",
-      "text": "Zum Verfeinern von Tiramisu oder Kaffee reichen 1–2cl. Diese Menge schlägt mit nur ca. 28–56 kcal zu Buche.",
+      "text": "Zum Verfeinern von Tiramisu oder Kaffee reichen 1 bis 2cl. Diese Menge schlägt mit nur ca. 28 bis 56 kcal zu Buche.",
       "icon": "☕"
     },
     {
@@ -138,27 +179,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Amaretto?",
-      "answer": "Amaretto hat ca. 280 kcal pro 100ml. Ein Schnapsglas (4cl) kommt auf rund 112 kcal, ein kleines Gläschen (2cl) auf ca. 56 kcal."
+      "answer": "Amaretto hat ca. 283 kcal pro 100ml (279 kcal pro 100g). Ein Schnapsglas (4cl) kommt auf rund 114 kcal, ein kleines Gläschen (2cl) auf ca. 56 kcal."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate hat Amaretto?",
-      "answer": "Amaretto enthält ca. 31g Kohlenhydrate pro 100ml, fast ausschließlich Zucker. Ein 4cl-Schnapsglas liefert damit rund 12g Zucker."
+      "answer": "Amaretto enthält ca. 34g Kohlenhydrate pro 100ml, fast ausschließlich Zucker. Ein 4cl-Schnapsglas liefert damit rund 14g Zucker."
     },
     {
       "question": "Hat Amaretto Protein oder Fett?",
-      "answer": "Nein. Amaretto enthält praktisch kein Eiweiß und kein Fett. Die Kalorien stammen allein aus Alkohol (ca. 22g/100ml) und Zucker."
+      "answer": "Nein. Amaretto enthält praktisch kein Eiweiß und kein Fett. Die Kalorien stammen allein aus Alkohol (ca. 21g/100ml) und Zucker."
     },
     {
       "question": "Ist Amaretto zum Abnehmen geeignet?",
-      "answer": "Eher nicht. Mit 280 kcal/100ml und viel Zucker ist Amaretto kalorienreich, und Alkohol bremst den Fettabbau. In einer Diät besser nur in kleinen Mengen genießen."
+      "answer": "Eher nicht. Mit 283 kcal/100ml und viel Zucker ist Amaretto kalorienreich, und Alkohol bremst den Fettabbau. In einer Diät besser nur in kleinen Mengen genießen."
     },
     {
       "question": "Wie viel Alkohol hat Amaretto?",
-      "answer": "Klassischer Amaretto hat meist 24–28% vol. Bekannte Sorten wie Disaronno liegen bei 28% vol – das entspricht ca. 22g reinem Alkohol pro 100ml."
+      "answer": "Der USDA-Wert für Likör liegt bei ca. 21g reinem Alkohol pro 100ml, das entspricht rund 27% vol. Der genaue Alkoholgehalt hängt von der Marke ab und steht auf dem Etikett."
     },
     {
       "question": "Hat Amaretto Sour mehr Kalorien als purer Amaretto?",
-      "answer": "Ja. Ein Amaretto Sour kommt durch Zuckersirup und Zitronensaft auf ca. 215 kcal pro Glas, während 4cl purer Amaretto nur ca. 112 kcal haben."
+      "answer": "Ja. Ein Amaretto Sour (5cl Amaretto, 3cl Zitronensaft, 2cl Zuckersirup) kommt durch den Zuckersirup auf ca. 199 kcal pro Glas, während 4cl purer Amaretto nur ca. 114 kcal haben."
     }
   ],
   "related_foods": [

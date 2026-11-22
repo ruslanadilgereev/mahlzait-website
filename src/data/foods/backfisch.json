@@ -3,48 +3,250 @@
   "name": "Backfisch",
   "emoji": "🐟",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 169846 (Restaurant, family style, fish fillet, battered or breaded, fried), Werte je 100 g",
   "seo": {
     "title": "Backfisch Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Backfisch? Im Brötchen, mit Pommes oder als Teller – alle Nährwerte und Spar-Tipps."
+    "description": "Wie viele Kalorien hat Backfisch? Ein Filet (200g) hat ca. 438 kcal. Im Brötchen, mit Pommes oder als Teller: alle Nährwerte und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 230,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 16,
-    "fat_per_100g": 12,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 219,
+    "protein_per_100g": 13.5,
+    "carbs_per_100g": 16.9,
+    "fat_per_100g": 10.8,
+    "fiber_per_100g": 0.9,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Backfisch-Filet"
   },
   "variants": [
-    {"name": "Backfisch im Brötchen", "portion_g": 280, "calories": 520, "protein": 22, "carbs": 48, "fat": 26, "tip": "Norddeutscher Klassiker"},
-    {"name": "Backfisch mit Pommes", "portion_g": 400, "calories": 750, "protein": 28, "carbs": 65, "fat": 40},
-    {"name": "Backfisch-Teller mit Kartoffelsalat", "portion_g": 450, "calories": 680, "protein": 30, "carbs": 58, "fat": 35},
-    {"name": "Backfisch mit Remoulade", "portion_g": 230, "calories": 550, "protein": 22, "carbs": 20, "fat": 38},
-    {"name": "Fischstäbchen (5 Stück)", "portion_g": 150, "calories": 320, "protein": 16, "carbs": 22, "fat": 18, "tip": "Kleinere Portion"},
-    {"name": "Backfisch-Filet ohne Panade", "portion_g": 180, "calories": 280, "protein": 28, "carbs": 2, "fat": 16, "tip": "Kalorienärmste Variante"},
-    {"name": "Backfisch im Bierteig", "portion_g": 220, "calories": 510, "protein": 24, "carbs": 28, "fat": 32}
+    {
+      "name": "Backfisch im Brötchen",
+      "portion_g": 210,
+      "calories": 504,
+      "protein": 26,
+      "carbs": 57,
+      "fat": 19,
+      "tip": "Norddeutscher Klassiker",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "broetchen"
+        }
+      ]
+    },
+    {
+      "name": "Backfisch mit Pommes",
+      "portion_g": 350,
+      "calories": 906,
+      "protein": 32,
+      "carbs": 96,
+      "fat": 44,
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 2709461,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Backfisch-Teller mit Kartoffelsalat",
+      "portion_g": 450,
+      "calories": 796,
+      "protein": 34,
+      "carbs": 62,
+      "fat": 42,
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "slug": "kartoffelsalat"
+        }
+      ]
+    },
+    {
+      "name": "Backfisch mit Remoulade",
+      "portion_g": 230,
+      "calories": 602,
+      "protein": 27,
+      "carbs": 34,
+      "fat": 40,
+      "tip": "Remoulade (30 g) aus Mayonnaise und Gewürzgurke",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "slug": "mayo",
+          "g": 24
+        },
+        {
+          "fdcId": 168558,
+          "g": 6
+        }
+      ]
+    },
+    {
+      "name": "Fischstäbchen (5 Stück)",
+      "portion_g": 150,
+      "calories": 416,
+      "protein": 17,
+      "carbs": 33,
+      "fat": 24,
+      "tip": "Kleinere Portion",
+      "basis": [
+        {
+          "slug": "fischstaebchen",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Seelachsfilet ohne Panade (gegrillt)",
+      "portion_g": 180,
+      "calories": 212,
+      "protein": 45,
+      "carbs": 0,
+      "fat": 2,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 174237,
+          "g": 180
+        }
+      ]
+    },
+    {
+      "name": "Backfisch aus dem Ofen (Kabeljau, 200g)",
+      "portion_g": 200,
+      "calories": 304,
+      "protein": 35,
+      "carbs": 16,
+      "fat": 11,
+      "tip": "Paniert, aber gebacken statt frittiert",
+      "basis": [
+        {
+          "fdcId": 2706243,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Backfisch im Bierteig",
+      "portion_g": 220,
+      "calories": 482,
+      "protein": 30,
+      "carbs": 37,
+      "fat": 24
+    }
   ],
   "comparison": [
-    {"name": "Fish and Chips", "calories": 800, "emoji": "🐟"},
-    {"name": "Fischstäbchen (10 Stück)", "calories": 640, "emoji": "🐟"},
-    {"name": "Bratfisch", "calories": 350, "emoji": "🐟"},
-    {"name": "Lachsfilet gegrillt", "calories": 280, "emoji": "🐟"}
+    {
+      "name": "Fischstäbchen (10 Stück)",
+      "calories": 831,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "fischstaebchen",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Bratwurst im Brötchen",
+      "calories": 675,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "variante": "Bratwurst im Brötchen"
+        }
+      ]
+    },
+    {
+      "name": "Lachsfilet gegrillt (150g)",
+      "calories": 309,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "fdcId": 175168,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Ohne Panade bestellen", "text": "Gegrillter Fisch ohne Panade hat nur ca. 280 kcal statt 460+ kcal – fast die Hälfte.", "icon": "🔥"},
-    {"title": "Remoulade weglassen", "text": "Remoulade allein hat ca. 100-150 kcal pro Portion. Zitrone als Alternative ist kalorienfrei.", "icon": "🍋"},
-    {"title": "Salat statt Pommes", "text": "Pommes als Beilage bringen 300+ kcal extra. Ein Beilagensalat spart erheblich.", "icon": "🥗"},
-    {"title": "Seelachs statt Kabeljau", "text": "Seelachs ist fettärmer als Kabeljau und hat weniger Kalorien in der Panade.", "icon": "🐟"},
-    {"title": "Im Ofen statt frittiert", "text": "Backfisch aus dem Ofen hat ca. 30% weniger Fett als frittierter Backfisch.", "icon": "🫕"}
+    {
+      "title": "Ohne Panade bestellen",
+      "text": "Gegrillter Seelachs ohne Panade (180g) hat nur ca. 212 kcal, ein Backfisch-Filet (200g) ca. 438 kcal, also mehr als doppelt so viel.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Remoulade weglassen",
+      "text": "Remoulade (30g) bringt rund 164 kcal mit. Zitrone als Alternative ist praktisch kalorienfrei.",
+      "icon": "🍋"
+    },
+    {
+      "title": "Salat statt Pommes",
+      "text": "Pommes (150g) als Beilage bringen rund 468 kcal extra. Ein Beilagensalat spart erheblich.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Fischsorte ist zweitrangig",
+      "text": "Seelachs und Kabeljau sind beide sehr mager. Die Kalorien stecken vor allem in Panade und Frittierfett.",
+      "icon": "🐟"
+    },
+    {
+      "title": "Im Ofen statt frittiert",
+      "text": "Backfisch aus dem Ofen hat laut FDC nur etwa halb so viel Fett wie frittierter: rund 11g statt 22g pro 200-g-Filet.",
+      "icon": "🫕"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Backfisch?", "answer": "Ein Backfisch-Filet hat ca. 460 kcal (200g). Im Brötchen ca. 520 kcal, mit Pommes ca. 750 kcal."},
-    {"question": "Ist Backfisch gesund?", "answer": "Fisch ist grundsätzlich gesund (Omega-3, Protein), aber die Panade und das Frittieren machen Backfisch kalorienreich. Gegrillter Fisch ist die bessere Wahl."},
-    {"question": "Wie viel Fett hat Backfisch?", "answer": "Backfisch hat ca. 12g Fett pro 100g. Ein Filet mit Panade kommt auf 24-32g Fett, hauptsächlich durch das Frittieröl."},
-    {"question": "Was hat weniger Kalorien: Backfisch oder Bratwurst?", "answer": "Ein Backfisch im Brötchen (520 kcal) hat mehr Kalorien als eine Bratwurst im Brötchen (450 kcal), aber auch mehr Protein."},
-    {"question": "Wie viel Protein hat Backfisch?", "answer": "Backfisch liefert ca. 14g Protein pro 100g. Ein ganzes Filet enthält ca. 28g Protein – eine gute Eiweißquelle."},
-    {"question": "Kann man Backfisch zum Abnehmen essen?", "answer": "Gegrillter oder gebackener Fisch ohne Panade (280 kcal) ist ideal zum Abnehmen. Frittierter Backfisch mit Pommes (750 kcal) eher nicht."}
+    {
+      "question": "Wie viele Kalorien hat Backfisch?",
+      "answer": "Ein Backfisch-Filet hat ca. 438 kcal (200g). Im Brötchen ca. 504 kcal, mit Pommes ca. 906 kcal."
+    },
+    {
+      "question": "Ist Backfisch gesund?",
+      "answer": "Fisch ist grundsätzlich gesund (Omega-3, Protein), aber die Panade und das Frittieren machen Backfisch kalorienreich. Gegrillter Fisch ist die bessere Wahl."
+    },
+    {
+      "question": "Wie viel Fett hat Backfisch?",
+      "answer": "Backfisch hat ca. 11g Fett pro 100g. Ein Filet (200g) kommt auf rund 22g Fett, hauptsächlich durch das Frittieröl."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Backfisch oder Bratwurst?",
+      "answer": "Ein Backfisch im Brötchen (ca. 504 kcal) hat weniger Kalorien als eine Bratwurst im Brötchen (ca. 675 kcal), bei etwa gleich viel Protein."
+    },
+    {
+      "question": "Wie viel Protein hat Backfisch?",
+      "answer": "Backfisch liefert ca. 13g Protein pro 100g. Ein ganzes Filet (200g) enthält ca. 27g Protein, eine gute Eiweißquelle."
+    },
+    {
+      "question": "Kann man Backfisch zum Abnehmen essen?",
+      "answer": "Gegrillter oder gebackener Fisch ohne Panade (Seelachs, 180g: ca. 212 kcal) ist ideal zum Abnehmen. Frittierter Backfisch mit Pommes (ca. 906 kcal) eher nicht."
+    }
   ],
-  "related_foods": ["fish-and-chips", "fischstaebchen", "bratwurst", "pommes-frites"]
+  "related_foods": [
+    "fish-and-chips",
+    "fischstaebchen",
+    "bratwurst",
+    "pommes-frites"
+  ]
 }

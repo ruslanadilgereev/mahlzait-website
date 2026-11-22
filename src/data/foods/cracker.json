@@ -3,50 +3,226 @@
   "name": "Cracker",
   "emoji": "🍘",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2708132 (Crackers, NFS), Werte je 100 g",
   "seo": {
     "title": "Cracker Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Cracker? Nährwerte pro 100g & Stück. TUC, Ritz, Vollkorn & Käse-Cracker im Vergleich + Snack-Tipps.",
-    "keywords": ["cracker kalorien", "cracker nährwerte", "tuc cracker kalorien", "ritz cracker kalorien", "cracker kalorien pro stück", "cracker gesund", "vollkorn cracker kalorien", "cracker fett"]
+    "description": "Wie viele Kalorien haben Cracker? Nährwerte pro 100g & Stück. Ritz, Vollkorn-, Käse- & Reis-Cracker im Vergleich + Snack-Tipps.",
+    "keywords": [
+      "cracker kalorien",
+      "cracker nährwerte",
+      "tuc cracker kalorien",
+      "ritz cracker kalorien",
+      "cracker kalorien pro stück",
+      "cracker gesund",
+      "vollkorn cracker kalorien",
+      "cracker fett"
+    ]
   },
   "overview": {
-    "calories_per_100g": 440,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 62,
-    "fat_per_100g": 17,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 510,
+    "protein_per_100g": 6.6,
+    "carbs_per_100g": 61.3,
+    "fat_per_100g": 26.4,
+    "fiber_per_100g": 2.3,
     "typical_portion_g": 7,
     "typical_portion_name": "1 Cracker"
   },
   "variants": [
-    { "name": "1 Cracker (7g)", "portion_g": 7, "calories": 31, "protein": 1, "carbs": 4, "fat": 1 },
-    { "name": "5 Cracker (35g)", "portion_g": 35, "calories": 154, "protein": 3, "carbs": 22, "fat": 6 },
-    { "name": "TUC Original (35g, ~5 Stück)", "portion_g": 35, "calories": 163, "protein": 3, "carbs": 21, "fat": 7 },
-    { "name": "Ritz Cracker (35g, ~7 Stück)", "portion_g": 35, "calories": 175, "protein": 2, "carbs": 22, "fat": 9 },
-    { "name": "Vollkorn-Cracker (35g)", "portion_g": 35, "calories": 140, "protein": 4, "carbs": 19, "fat": 5, "tip": "Mehr Ballaststoffe" },
-    { "name": "Käse-Cracker (35g)", "portion_g": 35, "calories": 172, "protein": 4, "carbs": 19, "fat": 9 },
-    { "name": "Cracker mit Frischkäse (45g)", "portion_g": 45, "calories": 186, "protein": 4, "carbs": 22, "fat": 9 },
-    { "name": "Reis-Cracker (35g)", "portion_g": 35, "calories": 135, "protein": 2, "carbs": 25, "fat": 3, "tip": "Am wenigsten Fett" }
+    {
+      "name": "1 Cracker (7g)",
+      "portion_g": 7,
+      "calories": 36,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 2
+    },
+    {
+      "name": "5 Cracker (35g)",
+      "portion_g": 35,
+      "calories": 179,
+      "protein": 2,
+      "carbs": 21,
+      "fat": 9
+    },
+    {
+      "name": "Ritz Cracker (35g, ca. 11 Stück)",
+      "portion_g": 35,
+      "calories": 172,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 8,
+      "basis": [
+        {
+          "fdcId": 173258,
+          "g": 35
+        }
+      ]
+    },
+    {
+      "name": "Vollkorn-Cracker (35g)",
+      "portion_g": 35,
+      "calories": 149,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 5,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 172749,
+          "g": 35
+        }
+      ]
+    },
+    {
+      "name": "Käse-Cracker (35g)",
+      "portion_g": 35,
+      "calories": 171,
+      "protein": 4,
+      "carbs": 21,
+      "fat": 8,
+      "basis": [
+        {
+          "fdcId": 174975,
+          "g": 35
+        }
+      ]
+    },
+    {
+      "name": "Cracker mit Frischkäse (35g + 10g)",
+      "portion_g": 45,
+      "calories": 204,
+      "protein": 3,
+      "carbs": 22,
+      "fat": 12,
+      "basis": [
+        {
+          "g": 35
+        },
+        {
+          "fdcId": 171246,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Reis-Cracker (35g)",
+      "portion_g": 35,
+      "calories": 146,
+      "protein": 4,
+      "carbs": 29,
+      "fat": 2,
+      "tip": "Am wenigsten Fett",
+      "basis": [
+        {
+          "fdcId": 173161,
+          "g": 35
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Salzstangen (35g)", "calories": 134, "emoji": "🥨" },
-    { "name": "Chips (35g)", "calories": 188, "emoji": "🥔" },
-    { "name": "Knäckebrot (35g)", "calories": 123, "emoji": "🍞" },
-    { "name": "Reiswaffeln (35g, ~4 St.)", "calories": 135, "emoji": "🍘" }
+    {
+      "name": "Salzstangen (35g)",
+      "calories": 134,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "fdcId": 167555,
+          "g": 35
+        }
+      ]
+    },
+    {
+      "name": "Chips (35g)",
+      "calories": 186,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 35
+        }
+      ]
+    },
+    {
+      "name": "Knäckebrot (35g)",
+      "calories": 128,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "fdcId": 172739,
+          "g": 35
+        }
+      ]
+    },
+    {
+      "name": "Reiswaffeln (35g, ~4 St.)",
+      "calories": 135,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "reiswaffeln",
+          "g": 35
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Besser als Chips, schlechter als Salzstangen", "text": "Cracker: 440 kcal/100g. Chips: 536 kcal. Salzstangen: 382 kcal. Cracker liegen genau dazwischen – kein gesunder Snack, aber besser als Chips.", "icon": "📊" },
-    { "title": "Portionsgröße beachten", "text": "Ein einzelner Cracker hat nur 31 kcal. Aber niemand isst nur einen. 10 Stück sind 310 kcal – fast eine Mahlzeit.", "icon": "🔢" },
-    { "title": "Vollkorn-Cracker bevorzugen", "text": "Vollkorn: 400 kcal/100g und 6g Ballaststoffe. Standard: 440 kcal und 3g Ballaststoffe. Vollkorn sättigt besser und hat 10% weniger Kalorien.", "icon": "🌾" },
-    { "title": "Mit Protein-Aufstrich kombinieren", "text": "Cracker pur sättigen kaum. Mit Hummus, Frischkäse oder Quark wird ein sättigender Snack daraus: Protein + Fett bremsen den Hunger.", "icon": "🫕" },
-    { "title": "Reis-Cracker als Light-Option", "text": "Reis-Cracker haben nur 385 kcal/100g und 8g Fett (statt 17g). Fast halb so viel Fett wie normale Cracker.", "icon": "🌾" }
+    {
+      "title": "Besser als Chips, schlechter als Salzstangen",
+      "text": "Cracker: 510 kcal/100g. Chips: 532 kcal. Salzstangen: 384 kcal. Cracker liegen dazwischen, aber nah an den Chips: kein gesunder Snack, nur etwas besser als Chips.",
+      "icon": "📊"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Ein einzelner Cracker hat nur 36 kcal. Aber niemand isst nur einen. 10 Stück sind 357 kcal, fast eine Mahlzeit.",
+      "icon": "🔢"
+    },
+    {
+      "title": "Vollkorn-Cracker bevorzugen",
+      "text": "Vollkorn: 427 kcal/100g und 10g Ballaststoffe. Standard: 510 kcal und 2,3g Ballaststoffe. Vollkorn sättigt besser und hat 16% weniger Kalorien.",
+      "icon": "🌾"
+    },
+    {
+      "title": "Mit Protein-Aufstrich kombinieren",
+      "text": "Cracker pur sättigen kaum. Mit Hummus, Frischkäse oder Quark wird ein sättigender Snack daraus: Protein + Fett bremsen den Hunger.",
+      "icon": "🫕"
+    },
+    {
+      "title": "Reis-Cracker als Light-Option",
+      "text": "Reis-Cracker haben nur 416 kcal/100g und 5g Fett (statt 26g). Das ist nicht einmal ein Fünftel des Fetts normaler Cracker.",
+      "icon": "🌾"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Cracker?", "answer": "Ein einzelner Cracker (~7g) hat ca. 31 kcal. 5 Cracker: 154 kcal. TUC: 163 kcal für 5 Stück. Ritz: 175 kcal für 7 Stück." },
-    { "question": "Sind Cracker gesund?", "answer": "Nein. Cracker sind Weißmehl + Fett + Salz. 440 kcal/100g, wenig Protein, kaum Vitamine. Als Snack okay, aber kein Gesundheitsfood." },
-    { "question": "Cracker oder Knäckebrot – was ist besser?", "answer": "Knäckebrot: 350 kcal/100g, 10g Ballaststoffe. Cracker: 440 kcal, 3g Ballaststoffe. Knäckebrot ist kalorienärmer, sättigender und ballaststoffreicher." },
-    { "question": "Wie viele Cracker kann man essen?", "answer": "3-5 Stück (93-155 kcal) sind ein moderater Snack. Mit Aufstrich rechne 180-200 kcal. Mehr als 10 Stück (310 kcal) wird kalorisch problematisch." },
-    { "question": "Haben TUC Cracker viele Kalorien?", "answer": "TUC hat 465 kcal/100g – etwas mehr als der Durchschnitt (440 kcal). 5 TUC-Cracker (35g) haben 163 kcal. Der Butteranteil macht den Unterschied." },
-    { "question": "Welche Cracker haben die wenigsten Kalorien?", "answer": "Reis-Cracker: 385 kcal/100g. Vollkorn-Cracker: 400 kcal. Standard: 440 kcal. TUC/Ritz: 465-500 kcal. Die einfachen sind die leichtesten." }
+    {
+      "question": "Wie viele Kalorien hat ein Cracker?",
+      "answer": "Ein einzelner Cracker (~7g) hat ca. 36 kcal. 5 Cracker: 179 kcal. Ritz: 172 kcal für 35g (ca. 11 Stück)."
+    },
+    {
+      "question": "Sind Cracker gesund?",
+      "answer": "Nein. Cracker sind Weißmehl + Fett + Salz. 510 kcal/100g, wenig Protein, kaum Vitamine. Als Snack okay, aber kein Gesundheitsfood."
+    },
+    {
+      "question": "Cracker oder Knäckebrot: Was ist besser?",
+      "answer": "Knäckebrot: 366 kcal/100g, 16,5g Ballaststoffe. Cracker: 510 kcal, 2,3g Ballaststoffe. Knäckebrot ist kalorienärmer, sättigender und ballaststoffreicher."
+    },
+    {
+      "question": "Wie viele Cracker kann man essen?",
+      "answer": "3 bis 5 Stück (107 bis 179 kcal) sind ein moderater Snack. Mit Aufstrich rechne mit rund 204 kcal (35g Cracker + 10g Frischkäse). Mehr als 10 Stück (357 kcal) wird kalorisch problematisch."
+    },
+    {
+      "question": "Haben TUC Cracker viele Kalorien?",
+      "answer": "TUC ist ein klassischer Snack-Cracker. Solche Cracker haben laut USDA rund 510 kcal pro 100g, 5 Stück (35g) also rund 179 kcal. Die genauen TUC-Werte stehen auf der Packung."
+    },
+    {
+      "question": "Welche Cracker haben die wenigsten Kalorien?",
+      "answer": "Reis-Cracker: 416 kcal/100g. Vollkorn-Cracker: 427 kcal. Käse-Cracker: 489 kcal. Ritz und Standard-Cracker: 492 bis 510 kcal. Reis- und Vollkorn-Cracker sind die leichtesten."
+    }
   ],
-  "related_foods": ["salzstangen", "reiswaffeln", "chips", "kekse"]
+  "related_foods": [
+    "salzstangen",
+    "reiswaffeln",
+    "chips",
+    "kekse"
+  ]
 }

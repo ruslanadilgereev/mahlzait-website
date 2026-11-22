@@ -3,50 +3,209 @@
   "name": "Grüner Smoothie",
   "emoji": "🥬",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710151 (Fruit and vegetable smoothie, no dairy: 63 kcal), Werte je 100 g; je 100 ml mit 0,913 g/ml 58 kcal",
   "seo": {
     "title": "Grüner Smoothie Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein grüner Smoothie? Nährwerte pro 100ml & Glas. Spinat, Grünkohl, Obst-Gemüse-Smoothies im Vergleich.",
-    "keywords": ["grüner smoothie kalorien", "green smoothie kalorien", "smoothie kalorien", "smoothie nährwerte", "spinat smoothie kalorien", "detox smoothie kalorien", "gemüse smoothie kalorien", "smoothie kalorienarm"]
+    "keywords": [
+      "grüner smoothie kalorien",
+      "green smoothie kalorien",
+      "smoothie kalorien",
+      "smoothie nährwerte",
+      "spinat smoothie kalorien",
+      "detox smoothie kalorien",
+      "gemüse smoothie kalorien",
+      "smoothie kalorienarm"
+    ]
   },
   "overview": {
-    "calories_per_100g": 55,
-    "protein_per_100g": 1.5,
-    "carbs_per_100g": 10,
-    "fat_per_100g": 0.8,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 300,
+    "calories_per_100g": 63,
+    "protein_per_100g": 1.1,
+    "carbs_per_100g": 13.8,
+    "fat_per_100g": 0.4,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 274,
     "typical_portion_name": "1 Glas (300ml)"
   },
   "variants": [
-    { "name": "Spinat-Banane-Apfel (300ml)", "portion_g": 300, "calories": 165, "protein": 4, "carbs": 32, "fat": 2 },
-    { "name": "Grünkohl-Mango (300ml)", "portion_g": 300, "calories": 175, "protein": 5, "carbs": 34, "fat": 2 },
-    { "name": "Gurke-Minze-Limette (300ml)", "portion_g": 300, "calories": 80, "protein": 2, "carbs": 16, "fat": 1, "tip": "Kalorienärmste Variante" },
-    { "name": "Spinat-Avocado (300ml)", "portion_g": 300, "calories": 210, "protein": 5, "carbs": 20, "fat": 12 },
-    { "name": "Fertig-Smoothie grün (250ml)", "portion_g": 250, "calories": 140, "protein": 2, "carbs": 28, "fat": 2 },
-    { "name": "Detox-Smoothie Sellerie-Apfel (300ml)", "portion_g": 300, "calories": 90, "protein": 2, "carbs": 18, "fat": 1 },
-    { "name": "Protein-Green-Smoothie (400ml)", "portion_g": 400, "calories": 280, "protein": 25, "carbs": 30, "fat": 6 },
-    { "name": "Spinat-Ingwer-Ananas (300ml)", "portion_g": 300, "calories": 155, "protein": 3, "carbs": 30, "fat": 2 }
+    {
+      "name": "Spinat-Banane-Apfel (300ml)",
+      "portion_g": 274,
+      "calories": 173,
+      "protein": 3,
+      "carbs": 38,
+      "fat": 1
+    },
+    {
+      "name": "Grüner Smoothie mit Joghurt (300ml)",
+      "portion_g": 274,
+      "calories": 175,
+      "protein": 4,
+      "carbs": 35,
+      "fat": 2,
+      "tip": "Obst-Gemüse-Smoothie mit Milchprodukt",
+      "basis": [
+        {
+          "fdcId": 2710146,
+          "ml": 300,
+          "g": 274
+        }
+      ]
+    },
+    {
+      "name": "Grüner Smoothie mit Pflanzendrink (300ml)",
+      "portion_g": 274,
+      "calories": 164,
+      "protein": 3,
+      "carbs": 34,
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 2710148,
+          "ml": 300,
+          "g": 274
+        }
+      ]
+    },
+    {
+      "name": "Fertig-Smoothie grün (250ml)",
+      "portion_g": 262,
+      "calories": 139,
+      "protein": 2,
+      "carbs": 33,
+      "fat": 1,
+      "basis": [
+        {
+          "fdcId": 2710150,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Protein-Green-Smoothie (400ml)",
+      "portion_g": 365,
+      "calories": 303,
+      "protein": 26,
+      "carbs": 44,
+      "fat": 3,
+      "tip": "Mit Proteinzusatz, ohne Milch",
+      "basis": [
+        {
+          "fdcId": 2710149,
+          "ml": 400,
+          "g": 365
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Beeren-Smoothie (300ml)", "calories": 180, "emoji": "🫐" },
-    { "name": "Orangensaft (300ml)", "calories": 132, "emoji": "🍊" },
-    { "name": "Cola (300ml)", "calories": 126, "emoji": "🥤" },
-    { "name": "Mineralwasser", "calories": 0, "emoji": "💧" }
+    {
+      "name": "Beeren-Smoothie (300ml)",
+      "calories": 148,
+      "emoji": "🫐",
+      "basis": [
+        {
+          "slug": "smoothie-beeren",
+          "ml": 300,
+          "g": 274
+        }
+      ]
+    },
+    {
+      "name": "Orangensaft (300ml)",
+      "calories": 148,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "orangensaft",
+          "ml": 300,
+          "g": 314
+        }
+      ]
+    },
+    {
+      "name": "Cola (300ml)",
+      "calories": 132,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 300,
+          "g": 314
+        }
+      ]
+    },
+    {
+      "name": "Mineralwasser (300ml)",
+      "calories": 0,
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser",
+          "ml": 300,
+          "g": 300
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Mehr Gemüse als Obst", "text": "Ideal: 60% Gemüse, 40% Obst. Zu viel Obst macht den Smoothie zur Kalorienbombe. Spinat und Gurke sind die besten Basen.", "icon": "🥬" },
-    { "title": "Keine versteckten Kalorien", "text": "Erdnussbutter, Kokosöl, Agavendicksaft – beliebte Smoothie-Extras, die die Kalorien verdoppeln. Weglassen!", "icon": "🚫" },
-    { "title": "Selber mixen spart Kalorien", "text": "Fertig-Smoothies haben oft zugesetzten Zucker und Saftkonzentrate. Selbst gemacht ist günstiger und gesünder.", "icon": "🧑‍🍳" },
-    { "title": "Als Mahlzeitersatz nutzen", "text": "Ein Green Smoothie mit Protein (280 kcal) kann ein Frühstück ersetzen. Ohne Protein ist er nur ein Snack.", "icon": "🍽️" },
-    { "title": "TK-Spinat geht auch", "text": "Tiefkühlspinat ist günstiger als frischer und hat die gleichen Nährstoffe. Perfekt für Smoothies.", "icon": "❄️" }
+    {
+      "title": "Mehr Gemüse als Obst",
+      "text": "Ideal: 60% Gemüse, 40% Obst. Zu viel Obst macht den Smoothie zur Kalorienbombe. Spinat und Gurke sind die besten Basen.",
+      "icon": "🥬"
+    },
+    {
+      "title": "Keine versteckten Kalorien",
+      "text": "Erdnussbutter, Kokosöl, Agavendicksaft: beliebte Smoothie-Extras, die die Kalorien schnell in die Höhe treiben. Weglassen!",
+      "icon": "🚫"
+    },
+    {
+      "title": "Selber mixen spart Kalorien",
+      "text": "Fertig-Smoothies haben oft zugesetzten Zucker und Saftkonzentrate. Selbst gemacht ist günstiger und gesünder.",
+      "icon": "🧑‍🍳"
+    },
+    {
+      "title": "Als Mahlzeitersatz nutzen",
+      "text": "Ein Green Smoothie mit Protein (400ml, ca. 303 kcal) kann ein Frühstück ersetzen. Ohne Protein ist er nur ein Snack.",
+      "icon": "🍽️"
+    },
+    {
+      "title": "TK-Spinat geht auch",
+      "text": "Tiefkühlspinat ist günstiger als frischer und hat die gleichen Nährstoffe. Perfekt für Smoothies.",
+      "icon": "❄️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein grüner Smoothie?", "answer": "Je nach Rezept 80-210 kcal pro 300ml. Ein typischer Spinat-Banane-Apfel-Smoothie hat ca. 165 kcal. Reine Gemüse-Smoothies haben nur 80-90 kcal." },
-    { "question": "Sind grüne Smoothies gesund?", "answer": "Ja, sie liefern Vitamine, Mineralstoffe und Ballaststoffe. Wichtig: mehr Gemüse als Obst verwenden und keine kalorienreichen Extras hinzufügen." },
-    { "question": "Kann ich mit grünen Smoothies abnehmen?", "answer": "Als Mahlzeitersatz (statt Frühstück) ja. Als Extra zum normalen Essen eher nicht – 165 kcal kommen zum Tagesbudget dazu." },
-    { "question": "Welches Gemüse eignet sich für grüne Smoothies?", "answer": "Spinat (mild, vielseitig), Grünkohl (nährstoffreich), Gurke (kalorienarm), Sellerie (erfrischend), Feldsalat und Mangold. Spinat ist der Klassiker." },
-    { "question": "Ist ein Smoothie besser als ganzes Obst?", "answer": "Nein. Ganzes Obst hat mehr Ballaststoffe und sättigt besser. Smoothies sind aber praktisch für Gemüse wie Spinat, das man sonst selten roh isst." },
-    { "question": "Wie lange hält ein grüner Smoothie?", "answer": "Frisch trinken ist ideal. Im Kühlschrank max. 24 Stunden in einer geschlossenen Flasche. Vitamine bauen bei Lagerung ab." }
+    {
+      "question": "Wie viele Kalorien hat ein grüner Smoothie?",
+      "answer": "Ein typischer Obst-Gemüse-Smoothie wie Spinat-Banane-Apfel (300ml) hat laut USDA ca. 173 kcal, ein Fertig-Smoothie (250ml) ca. 139 kcal. Mit Joghurt sind es ca. 175 kcal, die Protein-Variante (400ml) kommt auf ca. 303 kcal."
+    },
+    {
+      "question": "Sind grüne Smoothies gesund?",
+      "answer": "Ja, sie liefern Vitamine, Mineralstoffe und Ballaststoffe. Wichtig: mehr Gemüse als Obst verwenden und keine kalorienreichen Extras hinzufügen."
+    },
+    {
+      "question": "Kann ich mit grünen Smoothies abnehmen?",
+      "answer": "Als Mahlzeitersatz (statt Frühstück) ja. Als Extra zum normalen Essen eher nicht, ca. 173 kcal kommen zum Tagesbudget dazu."
+    },
+    {
+      "question": "Welches Gemüse eignet sich für grüne Smoothies?",
+      "answer": "Spinat (mild, vielseitig), Grünkohl (nährstoffreich), Gurke (kalorienarm), Sellerie (erfrischend), Feldsalat und Mangold. Spinat ist der Klassiker."
+    },
+    {
+      "question": "Ist ein Smoothie besser als ganzes Obst?",
+      "answer": "Nein. Ganzes Obst hat mehr Ballaststoffe und sättigt besser. Smoothies sind aber praktisch für Gemüse wie Spinat, das man sonst selten roh isst."
+    },
+    {
+      "question": "Wie lange hält ein grüner Smoothie?",
+      "answer": "Frisch trinken ist ideal. Im Kühlschrank max. 24 Stunden in einer geschlossenen Flasche. Vitamine bauen bei Lagerung ab."
+    }
   ],
-  "related_foods": ["smoothie-beeren", "apfelsaft", "orangensaft", "spinat"]
+  "related_foods": [
+    "smoothie-beeren",
+    "apfelsaft",
+    "orangensaft",
+    "spinat"
+  ]
 }

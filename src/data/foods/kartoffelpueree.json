@@ -3,6 +3,7 @@
   "name": "Kartoffelpüree",
   "emoji": "🥔",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 168555 (Potatoes, mashed, home-prepared, whole milk and butter added), Werte je 100 g",
   "seo": {
     "title": "Kartoffelpüree Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Kartoffelpüree? Nährwerte pro 100g & Portion. Klassisch ca. 113 kcal/100g. Varianten, Vergleich & Tipps zum Abnehmen.",
@@ -18,16 +19,16 @@
   },
   "overview": {
     "calories_per_100g": 113,
-    "protein_per_100g": 2,
-    "carbs_per_100g": 15,
-    "fat_per_100g": 4.8,
+    "protein_per_100g": 1.9,
+    "carbs_per_100g": 16.8,
+    "fat_per_100g": 4.2,
     "fiber_per_100g": 1.5,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion (Beilage)"
   },
   "variants": [
     {
-      "name": "1 Esslöffel (30g)",
+      "name": "2 Esslöffel (30g)",
       "portion_g": 30,
       "calories": 34,
       "protein": 1,
@@ -40,16 +41,16 @@
       "portion_g": 100,
       "calories": 113,
       "protein": 2,
-      "carbs": 15,
-      "fat": 5
+      "carbs": 17,
+      "fat": 4
     },
     {
       "name": "Beilage normal (150g)",
       "portion_g": 150,
       "calories": 170,
       "protein": 3,
-      "carbs": 22,
-      "fat": 7,
+      "carbs": 25,
+      "fat": 6,
       "tip": "Üblich"
     },
     {
@@ -57,56 +58,92 @@
       "portion_g": 200,
       "calories": 226,
       "protein": 4,
-      "carbs": 30,
-      "fat": 10
+      "carbs": 34,
+      "fat": 8
     },
     {
       "name": "Hauptgericht-Teller (250g)",
       "portion_g": 250,
-      "calories": 282,
+      "calories": 283,
       "protein": 5,
-      "carbs": 38,
-      "fat": 12
+      "carbs": 42,
+      "fat": 11
     },
     {
       "name": "Püree aus Pulver, zubereitet (200g)",
       "portion_g": 200,
-      "calories": 192,
+      "calories": 194,
       "protein": 4,
-      "carbs": 28,
-      "fat": 7,
-      "tip": "Mit Wasser und Milch"
+      "carbs": 22,
+      "fat": 10,
+      "tip": "Mit Wasser und Milch",
+      "basis": [
+        {
+          "fdcId": 170446,
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Püree mit Wasser, fettarm (200g)",
+      "name": "Püree nur mit Milch, ohne Butter (200g)",
       "portion_g": 200,
-      "calories": 150,
+      "calories": 166,
       "protein": 4,
-      "carbs": 30,
+      "carbs": 35,
       "fat": 1,
-      "tip": "Kalorienärmer"
+      "tip": "Kalorienärmer",
+      "basis": [
+        {
+          "fdcId": 170493,
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Salzkartoffeln (150g)",
-      "calories": 130,
-      "emoji": "🥔"
+      "calories": 129,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "fdcId": 170440,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Reis gekocht (150g)",
       "calories": 195,
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Nudeln gekocht (150g)",
       "calories": 237,
-      "emoji": "🍝"
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Pommes frites (150g)",
-      "calories": 470,
-      "emoji": "🍟"
+      "calories": 468,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "slug": "pommes-frites",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
@@ -139,11 +176,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kartoffelpüree?",
-      "answer": "Klassisches Kartoffelpüree mit Milch und Butter hat etwa 113 kcal pro 100g. Eine normale Beilagenportion (150g) liefert rund 170 kcal, ein großer Teller (250g) etwa 282 kcal."
+      "answer": "Klassisches Kartoffelpüree mit Milch und Butter hat etwa 113 kcal pro 100g. Eine normale Beilagenportion (150g) liefert rund 170 kcal, ein großer Teller (250g) etwa 283 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kartoffelpüree?",
-      "answer": "Kartoffelpüree enthält etwa 15g Kohlenhydrate pro 100g. Eine Portion von 200g kommt damit auf rund 30g Kohlenhydrate."
+      "answer": "Kartoffelpüree enthält etwa 17g Kohlenhydrate pro 100g. Eine Portion von 200g kommt damit auf rund 34g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Kartoffelpüree?",
@@ -159,7 +196,7 @@
     },
     {
       "question": "Hat Püree aus der Tüte weniger Kalorien?",
-      "answer": "Nach Zubereitung mit Wasser und Milch hat Püree aus Pulver etwa 96 kcal pro 100g, also leicht weniger als die klassische Variante mit viel Butter. Die genauen Werte hängen aber von Marke und Zubereitung ab."
+      "answer": "Nach Zubereitung mit Wasser, Milch und Butter hat Püree aus Pulver etwa 97 kcal pro 100g, also leicht weniger als die klassische Variante. Die genauen Werte hängen aber von Marke und Zubereitung ab."
     }
   ],
   "related_foods": [

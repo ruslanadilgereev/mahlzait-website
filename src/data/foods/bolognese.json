@@ -3,9 +3,10 @@
   "name": "Bolognese",
   "emoji": "🍝",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706470 (Spaghetti sauce with meat), Werte je 100 g",
   "seo": {
     "title": "Bolognese Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Bolognese? Die klassische Sauce hat ca. 140 kcal pro 100g. Nährwerte je Portion, Varianten im Vergleich & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Bolognese? Die klassische Sauce hat ca. 90 kcal pro 100g. Nährwerte je Portion, Varianten im Vergleich & Tipps zum Abnehmen.",
     "keywords": [
       "bolognese kalorien",
       "bolognese kcal",
@@ -18,10 +19,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 140,
-    "protein_per_100g": 9.5,
-    "carbs_per_100g": 5.5,
-    "fat_per_100g": 8.5,
+    "calories_per_100g": 90,
+    "protein_per_100g": 5.9,
+    "carbs_per_100g": 6.5,
+    "fat_per_100g": 4.4,
     "fiber_per_100g": 1.5,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion Sauce (200g)"
@@ -30,94 +31,116 @@
     {
       "name": "Kleine Portion Sauce (150g)",
       "portion_g": 150,
-      "calories": 210,
-      "protein": 14,
-      "carbs": 8,
-      "fat": 13
+      "calories": 135,
+      "protein": 9,
+      "carbs": 10,
+      "fat": 7
     },
     {
       "name": "Portion Sauce (200g)",
       "portion_g": 200,
-      "calories": 280,
-      "protein": 19,
-      "carbs": 11,
-      "fat": 17,
+      "calories": 180,
+      "protein": 12,
+      "carbs": 13,
+      "fat": 9,
       "tip": "Standard"
     },
     {
       "name": "Große Portion Sauce (250g)",
       "portion_g": 250,
-      "calories": 350,
-      "protein": 24,
-      "carbs": 14,
-      "fat": 21
+      "calories": 225,
+      "protein": 15,
+      "carbs": 16,
+      "fat": 11
     },
     {
       "name": "Bolognese aus Putenhack (200g)",
       "portion_g": 200,
-      "calories": 210,
-      "protein": 22,
-      "carbs": 10,
-      "fat": 9,
-      "tip": "Eiweißreich & fettarm"
-    },
-    {
-      "name": "Vegetarische Bolognese (200g)",
-      "portion_g": 200,
-      "calories": 180,
-      "protein": 12,
-      "carbs": 16,
-      "fat": 6,
-      "tip": "Mit Linsen oder Soja-Granulat"
-    },
-    {
-      "name": "Fertigsauce aus dem Glas (125g)",
-      "portion_g": 125,
-      "calories": 106,
-      "protein": 5,
-      "carbs": 10,
-      "fat": 5
+      "calories": 150,
+      "protein": 13,
+      "carbs": 13,
+      "fat": 5,
+      "tip": "Eiweißreich & fettarm",
+      "basis": [
+        {
+          "fdcId": 2706422,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Spaghetti Bolognese (Teller, 350g)",
       "portion_g": 350,
-      "calories": 490,
-      "protein": 25,
-      "carbs": 55,
-      "fat": 18
+      "calories": 451,
+      "protein": 20,
+      "carbs": 72,
+      "fat": 8,
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "spaghetti",
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Spaghetti Bolognese (Teller)",
-      "calories": 490,
-      "emoji": "🍝"
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Lasagne (Portion)",
-      "calories": 450,
-      "emoji": "🧀"
+      "name": "Lasagne (1 Stück, 400g)",
+      "calories": 556,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Tomatensauce (Portion)",
-      "calories": 80,
-      "emoji": "🍅"
+      "name": "Tomatensauce ohne Fleisch (200g)",
+      "calories": 102,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "fdcId": 2709745,
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Hackfleisch roh (100g)",
+      "name": "Rinderhackfleisch roh (100g)",
       "calories": 215,
-      "emoji": "🥩"
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 171796,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mageres Hack spart Fett",
-      "text": "Mit Hackfleisch aus Rind (statt gemischt mit Schwein) oder Putenhack sparst du pro Portion 5-8g Fett. Das senkt die Kalorien deutlich, ohne dass das Protein leidet.",
+      "text": "Mit magerem Rinderhack (statt gemischt mit Schwein) oder Putenhack sparst du Fett: Die Putenhack-Variante hat pro Portion (200g) rund 3,5g Fett weniger. Das senkt die Kalorien, ohne dass das Protein leidet.",
       "icon": "🥩"
     },
     {
       "title": "Sauce statt Nudeln betonen",
-      "text": "Die Bolognese-Sauce selbst hat mit ca. 140 kcal/100g und viel Eiweiß ein gutes Sättigungsprofil. Wer abnehmen will, nimmt mehr Sauce und weniger Spaghetti.",
+      "text": "Die Bolognese-Sauce selbst hat mit ca. 90 kcal/100g und viel Eiweiß ein gutes Sättigungsprofil. Wer abnehmen will, nimmt mehr Sauce und weniger Spaghetti.",
       "icon": "🍝"
     },
     {
@@ -127,35 +150,35 @@
     },
     {
       "title": "Vegetarisch mit Linsen",
-      "text": "Rote oder braune Linsen ersetzen das Hack fast vollständig: ähnlich viel Eiweiß, mehr Ballaststoffe und rund ein Drittel weniger Kalorien pro Portion.",
+      "text": "Rote oder braune Linsen ersetzen das Hack fast vollständig und liefern dabei Eiweiß und mehr Ballaststoffe.",
       "icon": "🌱"
     },
     {
       "title": "Öl gezielt dosieren",
-      "text": "Schon 1 EL Olivenöl mehr bringt rund 90 kcal extra. Brate das Hack in einer beschichteten Pfanne an und gib das Öl bewusst statt großzügig dazu.",
+      "text": "Jeder zusätzliche EL Olivenöl treibt die Kalorien nach oben. Brate das Hack in einer beschichteten Pfanne an und gib das Öl bewusst statt großzügig dazu.",
       "icon": "🫒"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Bolognese?",
-      "answer": "Die klassische Bolognese-Sauce hat ca. 140 kcal pro 100g. Eine normale Portion Sauce (200g) liefert rund 280 kcal. Mit Spaghetti zusammen kommt ein Teller (350g) auf etwa 490 kcal."
+      "answer": "Die klassische Bolognese-Sauce hat ca. 90 kcal pro 100g. Eine normale Portion Sauce (200g) liefert rund 180 kcal. Mit Spaghetti zusammen (150g Sauce, 200g gekochte Spaghetti) kommt ein Teller (350g) auf etwa 451 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Bolognese-Sauce pro 100g?",
-      "answer": "Eine selbst gekochte Bolognese-Sauce hat etwa 140 kcal pro 100g. Fertigsaucen aus dem Glas haben meist weniger (ca. 85 kcal/100g), weil sie mehr Tomate und weniger Fleisch enthalten."
+      "answer": "Bolognese-Sauce mit Fleisch hat etwa 90 kcal pro 100g. Fertigsaucen aus dem Glas haben oft weniger, weil sie mehr Tomate und weniger Fleisch enthalten."
     },
     {
       "question": "Wie viel Eiweiß hat Bolognese?",
-      "answer": "Durch das Hackfleisch ist Bolognese relativ eiweißreich: ca. 9,5g Protein pro 100g. Eine Portion Sauce (200g) liefert rund 19g Eiweiß, eine Variante mit Putenhack sogar über 20g."
+      "answer": "Durch das Hackfleisch ist Bolognese relativ eiweißreich: ca. 6g Protein pro 100g. Eine Portion Sauce (200g) liefert rund 12g Eiweiß, eine Variante mit Putenhack knapp 13g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bolognese?",
-      "answer": "Die reine Sauce ist Low Carb: nur ca. 5,5g Kohlenhydrate pro 100g, hauptsächlich aus Tomaten und Gemüse. Die meisten Kohlenhydrate eines Bolognese-Gerichts stecken in den Spaghetti."
+      "answer": "Die reine Sauce ist Low Carb: nur ca. 6,5g Kohlenhydrate pro 100g, hauptsächlich aus Tomaten und Gemüse. Die meisten Kohlenhydrate eines Bolognese-Gerichts stecken in den Spaghetti."
     },
     {
       "question": "Ist Bolognese gut zum Abnehmen?",
-      "answer": "Die Sauce selbst passt gut in eine Diät: viel Eiweiß, wenig Kohlenhydrate und sättigend. Achte auf mageres Hack und wenig Öl. Beim ganzen Gericht sind die Nudeln der Kalorienfaktor – kleinere Portion oder Zoodles helfen."
+      "answer": "Die Sauce selbst passt gut in eine Diät: viel Eiweiß, wenig Kohlenhydrate und sättigend. Achte auf mageres Hack und wenig Öl. Beim ganzen Gericht sind die Nudeln der Kalorienfaktor: Eine kleinere Portion oder Zoodles helfen."
     },
     {
       "question": "Ist Bolognese gesund?",

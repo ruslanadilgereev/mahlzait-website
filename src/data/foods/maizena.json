@@ -3,9 +3,10 @@
   "name": "Maizena",
   "emoji": "🌽",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169698 (Cornstarch), Werte je 100 g",
   "seo": {
     "title": "Maizena Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Maizena? 100g Speisestärke haben 355 kcal, 1 EL (10g) nur 36 kcal. Nährwerte, Portionen & Tipps zum Andicken.",
+    "description": "Wie viele Kalorien hat Maizena? 100g Speisestärke haben 381 kcal, 1 EL (10g) nur 38 kcal. Nährwerte, Portionen & Tipps zum Andicken.",
     "keywords": [
       "maizena kcal",
       "maizena kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 355,
-    "protein_per_100g": 0.5,
-    "carbs_per_100g": 86,
-    "fat_per_100g": 0.5,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 381,
+    "protein_per_100g": 0.3,
+    "carbs_per_100g": 91.3,
+    "fat_per_100g": 0.1,
+    "fiber_per_100g": 0.9,
     "typical_portion_g": 10,
     "typical_portion_name": "1 EL (10g)"
   },
@@ -38,7 +39,7 @@
     {
       "name": "1 EL Maizena (10g)",
       "portion_g": 10,
-      "calories": 36,
+      "calories": 38,
       "protein": 0,
       "carbs": 9,
       "fat": 0,
@@ -47,62 +48,86 @@
     {
       "name": "2 EL Maizena (20g)",
       "portion_g": 20,
-      "calories": 71,
+      "calories": 76,
       "protein": 0,
-      "carbs": 17,
+      "carbs": 18,
       "fat": 0
     },
     {
       "name": "Maizena pro 100g",
       "portion_g": 100,
-      "calories": 355,
-      "protein": 1,
-      "carbs": 86,
-      "fat": 1
+      "calories": 381,
+      "protein": 0,
+      "carbs": 91,
+      "fat": 0
     },
     {
       "name": "Packung Maizena (250g)",
       "portion_g": 250,
-      "calories": 888,
+      "calories": 953,
       "protein": 1,
-      "carbs": 215,
-      "fat": 1
+      "carbs": 228,
+      "fat": 0
     },
     {
       "name": "Packung Maizena (400g)",
       "portion_g": 400,
-      "calories": 1420,
-      "protein": 2,
-      "carbs": 344,
-      "fat": 2
+      "calories": 1524,
+      "protein": 1,
+      "carbs": 365,
+      "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Weizenmehl (100g)",
-      "calories": 348,
-      "emoji": "🌾"
+      "calories": 364,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "weizenmehl",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Zucker (100g)",
       "calories": 405,
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Reis roh (100g)",
-      "calories": 351,
-      "emoji": "🍚"
+      "calories": 365,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 168877,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Mandelmehl (100g)",
-      "calories": 612,
-      "emoji": "🌰"
+      "calories": 578,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandelmehl",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sparsam dosieren",
-      "text": "Schon 1 EL (10g) mit nur 36 kcal dickt einen halben Liter Sauce an. Maizena wird in kleinen Mengen verwendet, der Kalorienbeitrag pro Gericht ist daher gering.",
+      "text": "Schon 1 EL (10g) mit nur 38 kcal dickt einen halben Liter Sauce an. Maizena wird in kleinen Mengen verwendet, der Kalorienbeitrag pro Gericht ist daher gering.",
       "icon": "🥄"
     },
     {
@@ -117,7 +142,7 @@
     },
     {
       "title": "Fast nur Kohlenhydrate",
-      "text": "Mit 86g Kohlenhydraten pro 100g und kaum Eiweiß oder Fett liefert Maizena vor allem schnelle Energie. Für eine Low-Carb-Ernährung ist es daher weniger geeignet.",
+      "text": "Mit 91g Kohlenhydraten pro 100g und kaum Eiweiß oder Fett liefert Maizena vor allem schnelle Energie. Für eine Low-Carb-Ernährung ist es daher weniger geeignet.",
       "icon": "⚡"
     },
     {
@@ -129,15 +154,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Maizena?",
-      "answer": "100g Maizena haben 355 kcal. Da Speisestärke nur sparsam zum Andicken verwendet wird, hat 1 EL (10g) lediglich etwa 36 kcal."
+      "answer": "100g Maizena haben 381 kcal. Da Speisestärke nur sparsam zum Andicken verwendet wird, hat 1 EL (10g) lediglich etwa 38 kcal."
     },
     {
       "question": "Wie viele Kalorien hat 1 EL Maizena?",
-      "answer": "Ein gestrichener Esslöffel Maizena (ca. 10g) hat rund 36 kcal und etwa 9g Kohlenhydrate."
+      "answer": "Ein gestrichener Esslöffel Maizena (ca. 10g) hat rund 38 kcal und etwa 9g Kohlenhydrate."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Maizena?",
-      "answer": "Maizena besteht fast vollständig aus Stärke und enthält 86g Kohlenhydrate pro 100g, davon weniger als 0,5g Zucker."
+      "answer": "Maizena besteht fast vollständig aus Stärke und enthält 91g Kohlenhydrate pro 100g, davon praktisch keinen Zucker."
     },
     {
       "question": "Hat Maizena viel Eiweiß?",

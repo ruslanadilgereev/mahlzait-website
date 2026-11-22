@@ -3,9 +3,10 @@
   "name": "Krakauer",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 172954 (Sausage, Polish, pork and beef, smoked), Werte je 100 g",
   "seo": {
     "title": "Krakauer Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Krakauer? 100g haben ca. 285 kcal, eine ganze Wurst (150g) rund 428 kcal. Nährwerte, Eiweiß & Fett im Überblick.",
+    "description": "Wie viele Kalorien hat Krakauer? 100g haben ca. 301 kcal, eine ganze Wurst (150g) rund 452 kcal. Nährwerte, Eiweiß & Fett im Überblick.",
     "keywords": [
       "krakauer kalorien",
       "krakauer kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 285,
-    "protein_per_100g": 13,
-    "carbs_per_100g": 1,
-    "fat_per_100g": 25,
+    "calories_per_100g": 301,
+    "protein_per_100g": 12.1,
+    "carbs_per_100g": 2,
+    "fat_per_100g": 26.6,
     "fiber_per_100g": 0,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Krakauer (ganze Wurst)"
@@ -29,86 +30,119 @@
     {
       "name": "Scheibe Krakauer als Aufschnitt (25g)",
       "portion_g": 25,
-      "calories": 71,
+      "calories": 75,
       "protein": 3,
-      "carbs": 0,
-      "fat": 6,
+      "carbs": 1,
+      "fat": 7,
       "tip": "Dünne Scheibe aufs Brot"
     },
     {
       "name": "Halbe Krakauer (75g)",
       "portion_g": 75,
-      "calories": 214,
-      "protein": 10,
-      "carbs": 1,
-      "fat": 19
+      "calories": 226,
+      "protein": 9,
+      "carbs": 2,
+      "fat": 20
     },
     {
       "name": "Krakauer klein (100g)",
       "portion_g": 100,
-      "calories": 285,
-      "protein": 13,
-      "carbs": 1,
-      "fat": 25
+      "calories": 301,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 27
     },
     {
       "name": "1 Krakauer ganze Wurst (150g)",
       "portion_g": 150,
-      "calories": 428,
-      "protein": 20,
-      "carbs": 2,
-      "fat": 38,
+      "calories": 452,
+      "protein": 18,
+      "carbs": 3,
+      "fat": 40,
       "tip": "Standard-Portion"
     },
     {
-      "name": "Krakauer im Brötchen (230g)",
-      "portion_g": 230,
-      "calories": 638,
-      "protein": 26,
-      "carbs": 33,
-      "fat": 41,
-      "tip": "Wurst plus Brötchen"
+      "name": "Krakauer im Brötchen (150g + 60g)",
+      "portion_g": 210,
+      "calories": 627,
+      "protein": 24,
+      "carbs": 35,
+      "fat": 42,
+      "tip": "Wurst plus Brötchen",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "2 Krakauer (300g)",
       "portion_g": 300,
-      "calories": 855,
-      "protein": 39,
-      "carbs": 3,
-      "fat": 75
+      "calories": 903,
+      "protein": 36,
+      "carbs": 6,
+      "fat": 80
     }
   ],
   "comparison": [
     {
       "name": "Bockwurst (1 Stück, 100g)",
-      "calories": 250,
-      "emoji": "🌭"
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Bratwurst (1 Stück, 100g)",
-      "calories": 295,
-      "emoji": "🍖"
+      "calories": 333,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Wiener Würstchen (1 Stück, 100g)",
-      "calories": 270,
-      "emoji": "🌭"
+      "name": "Wiener Würstchen (1 Paar, 100g)",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "wiener-wuerstchen",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Leberkäse (1 Scheibe, 100g)",
-      "calories": 240,
-      "emoji": "🥩"
+      "calories": 308,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "leberkaese",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißlieferant mit viel Fett",
-      "text": "100g Krakauer liefern rund 13g Eiweiß, aber auch 25g Fett. Der hohe Fettanteil ist der Hauptgrund für die 285 kcal.",
+      "text": "100g Krakauer liefern rund 12g Eiweiß, aber auch 27g Fett. Der hohe Fettanteil ist der Hauptgrund für die 301 kcal.",
       "icon": "🥩"
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Eine ganze Krakauer (150g) schlägt mit etwa 428 kcal zu Buche. Wer abnehmen möchte, isst lieber eine halbe Wurst oder nutzt sie als dünnen Aufschnitt.",
+      "text": "Eine ganze Krakauer (150g) schlägt mit etwa 452 kcal zu Buche. Wer abnehmen möchte, isst lieber eine halbe Wurst oder nutzt sie als dünnen Aufschnitt.",
       "icon": "⚖️"
     },
     {
@@ -123,30 +157,30 @@
     },
     {
       "title": "Kaum Kohlenhydrate",
-      "text": "Mit etwa 1g Kohlenhydraten pro 100g passt Krakauer gut in eine kohlenhydratarme oder ketogene Ernährung - die Fettmenge sollte man dabei trotzdem im Blick behalten.",
+      "text": "Mit etwa 2g Kohlenhydraten pro 100g passt Krakauer gut in eine kohlenhydratarme oder ketogene Ernährung, die Fettmenge sollte man dabei trotzdem im Blick behalten.",
       "icon": "🚫"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Krakauer?",
-      "answer": "100g Krakauer haben etwa 285 kcal. Eine ganze Wurst von rund 150g kommt damit auf ca. 428 kcal."
+      "answer": "100g Krakauer haben etwa 301 kcal. Eine ganze Wurst von rund 150g kommt damit auf ca. 452 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Krakauer Wurst?",
-      "answer": "Eine typische Krakauer wiegt etwa 150g und liefert rund 428 kcal, etwa 20g Eiweiß und 38g Fett."
+      "answer": "Eine typische Krakauer wiegt etwa 150g und liefert rund 452 kcal, etwa 18g Eiweiß und 40g Fett."
     },
     {
       "question": "Wie viel Eiweiß steckt in Krakauer?",
-      "answer": "Krakauer enthält etwa 13g Eiweiß pro 100g. Eine ganze Wurst (150g) liefert damit rund 20g Protein."
+      "answer": "Krakauer enthält etwa 12g Eiweiß pro 100g. Eine ganze Wurst (150g) liefert damit rund 18g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Krakauer?",
-      "answer": "Krakauer ist nahezu kohlenhydratfrei und enthält nur rund 1g Kohlenhydrate pro 100g. Damit eignet sie sich für eine Low-Carb-Ernährung."
+      "answer": "Krakauer ist nahezu kohlenhydratfrei und enthält nur rund 2g Kohlenhydrate pro 100g. Damit eignet sie sich für eine Low-Carb-Ernährung."
     },
     {
       "question": "Ist Krakauer zum Abnehmen geeignet?",
-      "answer": "Krakauer ist sehr fettreich (25g pro 100g) und kalorienreich. In kleinen Portionen und mit einer Gemüsebeilage lässt sie sich aber auch in einer kalorienbewussten Ernährung unterbringen."
+      "answer": "Krakauer ist sehr fettreich (27g pro 100g) und kalorienreich. In kleinen Portionen und mit einer Gemüsebeilage lässt sie sich aber auch in einer kalorienbewussten Ernährung unterbringen."
     },
     {
       "question": "Ist Krakauer gesund?",

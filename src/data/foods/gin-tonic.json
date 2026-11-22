@@ -3,50 +3,255 @@
   "name": "Gin Tonic",
   "emoji": "🍸",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710633 (Gin and tonic: 84 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 85 kcal",
   "seo": {
     "title": "Gin Tonic Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Gin Tonic? Nährwerte pro Glas. Klassisch, mit Fever-Tree, kalorienarm & andere Longdrinks im Vergleich.",
-    "keywords": ["gin tonic kalorien", "kalorien gin tonic", "gin kalorien", "gin tonic nährwerte", "tonic water kalorien", "gin tonic zucker", "fever tree kalorien", "gin pur kalorien"]
+    "description": "Wie viele Kalorien hat ein Gin Tonic? Nährwerte pro Glas. Klassisch, selbst gemixt, kalorienarm & andere Longdrinks im Vergleich.",
+    "keywords": [
+      "gin tonic kalorien",
+      "kalorien gin tonic",
+      "gin kalorien",
+      "gin tonic nährwerte",
+      "tonic water kalorien",
+      "gin tonic zucker",
+      "fever tree kalorien",
+      "gin pur kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 76,
+    "calories_per_100g": 84,
     "protein_per_100g": 0,
-    "carbs_per_100g": 6,
+    "carbs_per_100g": 6.6,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 250,
+    "typical_portion_g": 254,
     "typical_portion_name": "1 Glas (250ml)"
   },
   "variants": [
-    { "name": "Gin Tonic klassisch (250ml)", "portion_g": 250, "calories": 190, "protein": 0, "carbs": 15, "fat": 0 },
-    { "name": "Gin Tonic mit Light Tonic (250ml)", "portion_g": 250, "calories": 115, "protein": 0, "carbs": 2, "fat": 0, "tip": "40% weniger Kalorien" },
-    { "name": "Gin Tonic Fever-Tree (250ml)", "portion_g": 250, "calories": 195, "protein": 0, "carbs": 16, "fat": 0 },
-    { "name": "Gin Tonic groß/Pint (400ml)", "portion_g": 400, "calories": 280, "protein": 0, "carbs": 24, "fat": 0 },
-    { "name": "Gin pur / Gin Shot (40ml)", "portion_g": 40, "calories": 96, "protein": 0, "carbs": 0, "fat": 0 },
-    { "name": "Gin & Soda (250ml)", "portion_g": 250, "calories": 96, "protein": 0, "carbs": 0, "fat": 0 },
-    { "name": "Vodka Tonic (250ml)", "portion_g": 250, "calories": 185, "protein": 0, "carbs": 15, "fat": 0 },
-    { "name": "Gin Basil Smash (200ml)", "portion_g": 200, "calories": 175, "protein": 0, "carbs": 10, "fat": 0 }
+    {
+      "name": "Gin Tonic klassisch (250ml)",
+      "portion_g": 254,
+      "calories": 213,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0
+    },
+    {
+      "name": "Gin Tonic selbst gemixt (5cl Gin + 200ml Tonic)",
+      "portion_g": 250,
+      "calories": 178,
+      "protein": 0,
+      "carbs": 18,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 2710702,
+          "ml": 50,
+          "g": 47
+        },
+        {
+          "fdcId": 2710538,
+          "ml": 200,
+          "g": 203
+        }
+      ]
+    },
+    {
+      "name": "Gin Tonic groß/Pint (400ml)",
+      "portion_g": 406,
+      "calories": 341,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0
+    },
+    {
+      "name": "Gin pur / Gin Shot (40ml)",
+      "portion_g": 38,
+      "calories": 88,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 2710702,
+          "ml": 40,
+          "g": 38
+        }
+      ]
+    },
+    {
+      "name": "Gin & Soda (5cl Gin + 200ml Soda)",
+      "portion_g": 247,
+      "calories": 109,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 2710702,
+          "ml": 50,
+          "g": 47
+        },
+        {
+          "fdcId": 174842,
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Vodka Tonic (250ml)",
+      "portion_g": 254,
+      "calories": 213,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 2710670,
+          "ml": 250,
+          "g": 254
+        }
+      ]
+    },
+    {
+      "name": "Gin Basil Smash (1 Drink)",
+      "portion_g": 117,
+      "calories": 189,
+      "protein": 0,
+      "carbs": 14,
+      "fat": 0,
+      "tip": "6cl Gin, 3cl Zitronensaft, 2cl Zuckersirup, Basilikum",
+      "basis": [
+        {
+          "fdcId": 2710702,
+          "ml": 60,
+          "g": 57
+        },
+        {
+          "fdcId": 167747,
+          "ml": 30,
+          "g": 31
+        },
+        {
+          "fdcId": 2710278,
+          "ml": 20,
+          "g": 27
+        },
+        {
+          "fdcId": 172232,
+          "g": 2
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Aperol Spritz (250ml)", "calories": 175, "emoji": "🍹" },
-    { "name": "Mojito (250ml)", "calories": 217, "emoji": "🍸" },
-    { "name": "Bier (500ml)", "calories": 215, "emoji": "🍺" },
-    { "name": "Weißwein (200ml)", "calories": 138, "emoji": "🍷" }
+    {
+      "name": "Aperol Spritz (250ml)",
+      "calories": 175,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Mojito (250ml)",
+      "calories": 155,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "mojito",
+          "ml": 250,
+          "g": 254
+        }
+      ]
+    },
+    {
+      "name": "Bier (500ml)",
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Weißwein (200ml)",
+      "calories": 163,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-weiss",
+          "ml": 200,
+          "g": 199
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Light Tonic Water verwenden", "text": "Normales Tonic: 34 kcal/100ml. Light Tonic: 1 kcal/100ml. Ein Wechsel spart 75 kcal pro Drink – ohne geschmacklichen Verlust.", "icon": "📉" },
-    { "title": "Gin & Soda statt Gin Tonic", "text": "Gin mit Soda (0 kcal) statt Tonic Water: nur 96 kcal vs. 190 kcal. Zitronenscheibe dazu – schlank und erfrischend.", "icon": "💧" },
-    { "title": "Weniger Gin, mehr Tonic", "text": "Standard: 5cl Gin. Bar-Portionen sind oft 6-8cl. Weniger Gin = weniger Kalorien (jeder cl Gin = 24 kcal).", "icon": "📏" },
-    { "title": "Tonic Water hat mehr Zucker als gedacht", "text": "200ml Tonic Water haben 17g Zucker – fast so viel wie Cola. Das ist die versteckte Kalorienfalle im Gin Tonic.", "icon": "🍬" },
-    { "title": "Maximal 2 Drinks einplanen", "text": "2 Gin Tonics = 380 kcal. 4 Drinks = 760 kcal – ein Drittel des Tagesbedarfs. Qualität statt Quantität.", "icon": "🎯" }
+    {
+      "title": "Light Tonic Water verwenden",
+      "text": "Normales Tonic hat ca. 34 kcal/100ml, im Drink (200ml) also rund 69 kcal. Light Tonic hat kaum Kalorien, ein Wechsel spart den Großteil davon, ohne geschmacklichen Verlust.",
+      "icon": "📉"
+    },
+    {
+      "title": "Gin & Soda statt Gin Tonic",
+      "text": "Gin mit Soda (0 kcal) statt Tonic Water: nur ca. 109 kcal vs. ca. 178 kcal (jeweils 5cl Gin + 200ml). Zitronenscheibe dazu, schlank und erfrischend.",
+      "icon": "💧"
+    },
+    {
+      "title": "Weniger Gin, mehr Tonic",
+      "text": "Standard: 5cl Gin. Bar-Portionen sind oft 6-8cl. Weniger Gin = weniger Kalorien (jeder cl Gin = ca. 22 kcal).",
+      "icon": "📏"
+    },
+    {
+      "title": "Tonic Water hat mehr Zucker als gedacht",
+      "text": "200ml Tonic Water haben rund 18g Zucker, fast so viel wie Cola. Das ist die versteckte Kalorienfalle im Gin Tonic.",
+      "icon": "🍬"
+    },
+    {
+      "title": "Maximal 2 Drinks einplanen",
+      "text": "2 Gin Tonics = ca. 426 kcal. 4 Drinks = ca. 852 kcal, ein Drittel des Tagesbedarfs. Qualität statt Quantität.",
+      "icon": "🎯"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Gin Tonic?", "answer": "Ein Gin Tonic (250ml mit 5cl Gin) hat ca. 190 kcal. Mit Light Tonic nur 115 kcal. Gin & Soda hat nur 96 kcal." },
-    { "question": "Wie viele Kalorien hat Gin?", "answer": "Gin hat ca. 240 kcal/100ml bzw. 96 kcal pro Portion (40ml). Die Kalorien kommen ausschließlich vom Alkohol – Gin hat keinen Zucker." },
-    { "question": "Hat Gin Tonic weniger Kalorien als Bier?", "answer": "Ein Gin Tonic (190 kcal) hat weniger als ein Bier 0,5l (215 kcal). Aber: Gin Tonics werden schneller getrunken und nachbestellt." },
-    { "question": "Warum hat Tonic Water so viele Kalorien?", "answer": "Tonic Water enthält viel Zucker (8-9g/100ml), um die Bitterkeit des Chinins auszugleichen. 200ml haben 68 kcal – fast wie Cola." },
-    { "question": "Welcher Gin hat die wenigsten Kalorien?", "answer": "Alle Gins mit 40% Vol. haben identische Kalorien: 240 kcal/100ml. Es gibt keinen 'kalorienärmeren' Gin. Der Unterschied liegt im Tonic Water." },
-    { "question": "Gin Tonic oder Wodka Tonic – was hat weniger Kalorien?", "answer": "Fast gleich: Gin Tonic 190 kcal, Vodka Tonic 185 kcal (Vodka hat minimal weniger kcal). Der Unterschied ist vernachlässigbar." }
+    {
+      "question": "Wie viele Kalorien hat ein Gin Tonic?",
+      "answer": "Ein Gin Tonic (250ml) hat laut USDA ca. 213 kcal. Selbst gemixt mit 5cl Gin und 200ml Tonic sind es ca. 178 kcal. Gin & Soda hat nur ca. 109 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat Gin?",
+      "answer": "Gin hat ca. 219 kcal/100ml bzw. ca. 88 kcal pro Portion (40ml). Die Kalorien kommen ausschließlich vom Alkohol, Gin hat keinen Zucker."
+    },
+    {
+      "question": "Hat Gin Tonic weniger Kalorien als Bier?",
+      "answer": "Kaum: Ein Gin Tonic (250ml, ca. 213 kcal) liegt fast gleichauf mit einem Bier 0,5l (ca. 215 kcal). Aber: Gin Tonics werden schneller getrunken und nachbestellt."
+    },
+    {
+      "question": "Warum hat Tonic Water so viele Kalorien?",
+      "answer": "Tonic Water enthält viel Zucker (ca. 9g/100ml), um die Bitterkeit des Chinins auszugleichen. 200ml haben ca. 69 kcal, fast wie Cola."
+    },
+    {
+      "question": "Welcher Gin hat die wenigsten Kalorien?",
+      "answer": "Alle Gins mit 40% Vol. haben praktisch identische Kalorien: ca. 219 kcal/100ml. Es gibt keinen 'kalorienärmeren' Gin. Der Unterschied liegt im Tonic Water."
+    },
+    {
+      "question": "Gin Tonic oder Wodka Tonic: Was hat weniger Kalorien?",
+      "answer": "Gleich viel: Gin Tonic und Vodka Tonic haben laut USDA jeweils ca. 213 kcal pro 250ml. Der Unterschied ist vernachlässigbar."
+    }
   ],
-  "related_foods": ["aperol-spritz", "hugo", "mojito", "bier"]
+  "related_foods": [
+    "aperol-spritz",
+    "hugo",
+    "mojito",
+    "bier"
+  ]
 }

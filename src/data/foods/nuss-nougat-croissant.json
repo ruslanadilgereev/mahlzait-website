@@ -3,9 +3,10 @@
   "name": "Nuss-Nougat-Croissant",
   "emoji": "🥐",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2707680 (Croissant, chocolate), Werte je 100 g",
   "seo": {
     "title": "Nuss-Nougat-Croissant Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Nuss-Nougat-Croissant? Ein Stück (70g) hat ca. 287 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Nuss-Nougat-Croissant? Ein Stück (70g) hat ca. 295 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps im Überblick.",
     "keywords": [
       "kalorien nuss nougat croissant",
       "nuss nougat croissant kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 410,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 48,
-    "fat_per_100g": 21,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 421,
+    "protein_per_100g": 7.4,
+    "carbs_per_100g": 49.4,
+    "fat_per_100g": 22.8,
+    "fiber_per_100g": 3.3,
     "typical_portion_g": 70,
     "typical_portion_name": "1 Croissant (Stück)"
   },
@@ -28,80 +29,102 @@
     {
       "name": "Mini-Croissant (35g)",
       "portion_g": 35,
-      "calories": 144,
-      "protein": 2,
+      "calories": 147,
+      "protein": 3,
       "carbs": 17,
-      "fat": 7,
+      "fat": 8,
       "tip": "Kleine Variante zum Naschen"
     },
     {
       "name": "Nuss-Nougat-Croissant (70g)",
       "portion_g": 70,
-      "calories": 287,
+      "calories": 295,
       "protein": 5,
-      "carbs": 34,
-      "fat": 15,
+      "carbs": 35,
+      "fat": 16,
       "tip": "Standard"
     },
     {
       "name": "Großes Croissant (90g)",
       "portion_g": 90,
-      "calories": 369,
-      "protein": 6,
-      "carbs": 43,
-      "fat": 19
+      "calories": 379,
+      "protein": 7,
+      "carbs": 44,
+      "fat": 21
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 410,
+      "calories": 421,
       "protein": 7,
-      "carbs": 48,
-      "fat": 21
+      "carbs": 49,
+      "fat": 23
     },
     {
       "name": "2 Croissants (140g)",
       "portion_g": 140,
-      "calories": 574,
+      "calories": 589,
       "protein": 10,
-      "carbs": 67,
-      "fat": 29
+      "carbs": 69,
+      "fat": 32
     },
     {
       "name": "XXL-Croissant (120g)",
       "portion_g": 120,
-      "calories": 492,
-      "protein": 8,
-      "carbs": 58,
-      "fat": 25
+      "calories": 505,
+      "protein": 9,
+      "carbs": 59,
+      "fat": 27
     }
   ],
   "comparison": [
     {
-      "name": "Croissant (pur)",
-      "calories": 277,
-      "emoji": "🥐"
+      "name": "Croissant pur (65g)",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant"
+        }
+      ]
     },
     {
-      "name": "Berliner",
-      "calories": 276,
-      "emoji": "🍩"
+      "name": "Berliner (80g)",
+      "calories": 272,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner"
+        }
+      ]
     },
     {
-      "name": "Donut",
-      "calories": 300,
-      "emoji": "🍩"
+      "name": "Donut (70g)",
+      "calories": 295,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "fdcId": 172758,
+          "g": 70
+        }
+      ]
     },
     {
-      "name": "Schokomuffin",
-      "calories": 380,
-      "emoji": "🧁"
+      "name": "Schokomuffin (110g)",
+      "calories": 435,
+      "emoji": "🧁",
+      "basis": [
+        {
+          "fdcId": 2707833,
+          "g": 110
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst genießen",
-      "text": "Ein Nuss-Nougat-Croissant liefert mit ca. 287 kcal pro Stück gut ein Achtel des Tagesbedarfs. Als gelegentlicher Genuss völlig in Ordnung, nicht als tägliches Frühstück.",
+      "text": "Ein Nuss-Nougat-Croissant liefert mit ca. 295 kcal pro Stück gut ein Achtel des Tagesbedarfs. Als gelegentlicher Genuss völlig in Ordnung, nicht als tägliches Frühstück.",
       "icon": "🥐"
     },
     {
@@ -111,12 +134,12 @@
     },
     {
       "title": "Auf das Fett achten",
-      "text": "Rund 21g Fett pro 100g kommen aus Butter und der Nuss-Nougat-Füllung. Die Mini-Variante mit 35g halbiert die Kalorien fast.",
+      "text": "Rund 23g Fett pro 100g kommen aus Butter und der Nuss-Nougat-Füllung. Die Mini-Variante mit 35g halbiert die Kalorien.",
       "icon": "🧈"
     },
     {
       "title": "Pur statt gefüllt sparen",
-      "text": "Ein klassisches Croissant ohne Füllung hat pro Stück deutlich weniger Kalorien. Die Nuss-Nougat-Creme treibt Zucker und Fett spürbar nach oben.",
+      "text": "Ein klassisches Croissant ohne Füllung hat pro Stück etwas weniger Kalorien (rund 264 statt 295 kcal). Die Nuss-Nougat-Creme treibt vor allem den Zucker spürbar nach oben.",
       "icon": "📉"
     },
     {
@@ -128,15 +151,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Nuss-Nougat-Croissant?",
-      "answer": "Ein durchschnittliches Nuss-Nougat-Croissant (70g) hat etwa 287 kcal. Pro 100g sind es rund 410 kcal."
+      "answer": "Ein durchschnittliches Nuss-Nougat-Croissant (70g) hat etwa 295 kcal. Pro 100g sind es rund 421 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Nuss-Nougat-Croissant pro 100g?",
-      "answer": "Pro 100g enthält ein Nuss-Nougat-Croissant etwa 410 kcal, 7g Eiweiß, 48g Kohlenhydrate und 21g Fett."
+      "answer": "Pro 100g enthält ein Nuss-Nougat-Croissant etwa 421 kcal, 7g Eiweiß, 49g Kohlenhydrate und 23g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Nuss-Nougat-Croissant?",
-      "answer": "Pro 100g sind es rund 48g Kohlenhydrate. Ein Stück (70g) liefert etwa 34g, davon ein größerer Anteil Zucker aus der Füllung."
+      "answer": "Pro 100g sind es rund 49g Kohlenhydrate. Ein Stück (70g) liefert etwa 35g, davon ein größerer Anteil Zucker aus der Füllung."
     },
     {
       "question": "Wie viel Eiweiß hat ein Nuss-Nougat-Croissant?",

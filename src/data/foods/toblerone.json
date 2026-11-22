@@ -3,9 +3,10 @@
   "name": "Toblerone",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167947 (Candies, TOBLERONE, milk chocolate with honey and almond nougat), Werte je 100 g",
   "seo": {
     "title": "Toblerone Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Toblerone? Eine Tafel (100g) hat ca. 535 kcal. Nährwerte pro 100g & je Dreieck, Varianten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat Toblerone? Eine Tafel (100g) hat ca. 489 kcal. Nährwerte pro 100g & je Dreieck, Varianten im Vergleich + Tipps.",
     "keywords": [
       "toblerone kcal",
       "toblerone kalorien",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 535,
-    "protein_per_100g": 5.6,
-    "carbs_per_100g": 60.5,
-    "fat_per_100g": 29.5,
+    "calories_per_100g": 489,
+    "protein_per_100g": 5.7,
+    "carbs_per_100g": 61.2,
+    "fat_per_100g": 28.6,
     "fiber_per_100g": 2.5,
     "typical_portion_g": 100,
     "typical_portion_name": "1 Tafel (100g)"
@@ -28,7 +29,7 @@
     {
       "name": "1 Dreieck / Zacken (7g)",
       "portion_g": 7,
-      "calories": 37,
+      "calories": 34,
       "protein": 0,
       "carbs": 4,
       "fat": 2,
@@ -37,7 +38,7 @@
     {
       "name": "2 Dreiecke (15g)",
       "portion_g": 15,
-      "calories": 80,
+      "calories": 73,
       "protein": 1,
       "carbs": 9,
       "fat": 4
@@ -45,7 +46,7 @@
     {
       "name": "Toblerone Tiny / Mini (35g)",
       "portion_g": 35,
-      "calories": 187,
+      "calories": 171,
       "protein": 2,
       "carbs": 21,
       "fat": 10
@@ -53,65 +54,89 @@
     {
       "name": "Halbe Tafel (50g)",
       "portion_g": 50,
-      "calories": 268,
+      "calories": 245,
       "protein": 3,
-      "carbs": 30,
-      "fat": 15
+      "carbs": 31,
+      "fat": 14
     },
     {
       "name": "1 Tafel (100g)",
       "portion_g": 100,
-      "calories": 535,
+      "calories": 489,
       "protein": 6,
       "carbs": 61,
-      "fat": 30,
+      "fat": 29,
       "tip": "Standardtafel"
     },
     {
       "name": "Großtafel (200g)",
       "portion_g": 200,
-      "calories": 1070,
+      "calories": 978,
       "protein": 11,
-      "carbs": 121,
-      "fat": 59
+      "carbs": 122,
+      "fat": 57
     }
   ],
   "comparison": [
     {
-      "name": "Milka Schokolade (100g)",
-      "calories": 530,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Ritter Sport (100g)",
-      "calories": 556,
-      "emoji": "🟫"
+      "name": "Vollmilchschokolade (100g)",
+      "calories": 535,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Snickers (50g Riegel)",
-      "calories": 245,
-      "emoji": "🍬"
+      "calories": 246,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "snickers",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Kinderriegel (21g)",
-      "calories": 115,
-      "emoji": "🍫"
+      "name": "Twix (2 Riegel, 50g)",
+      "calories": 251,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "KitKat (41,5g)",
+      "calories": 215,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 167992,
+          "g": 41.5
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "In Dreiecken denken",
-      "text": "Ein einzelnes Toblerone-Dreieck hat nur etwa 37 kcal. Wer bewusst ein bis zwei Zacken genießt statt die ganze Tafel, bleibt schnell unter 80 kcal.",
+      "text": "Ein einzelnes Toblerone-Dreieck hat nur etwa 34 kcal. Wer bewusst ein bis zwei Zacken genießt statt die ganze Tafel, bleibt bei höchstens rund 73 kcal.",
       "icon": "🔺"
     },
     {
       "title": "Honig-Mandel-Nougat erkennen",
-      "text": "Die typischen weißen Stückchen im Riegel sind Honig-Mandel-Nougat. Sie sind der Grund für den hohen Zuckeranteil von rund 59,5 g pro 100 g.",
+      "text": "Die typischen weißen Stückchen im Riegel sind Honig-Mandel-Nougat. Sie sind der Grund für den hohen Zuckeranteil von rund 55,7 g pro 100 g.",
       "icon": "🍯"
     },
     {
       "title": "Energiedichte beachten",
-      "text": "Mit 535 kcal pro 100 g zählt Toblerone wie jede Vollmilchschokolade zu den energiedichten Lebensmitteln. Schon kleine Mengen liefern viele Kalorien.",
+      "text": "Mit 489 kcal pro 100 g zählt Toblerone wie jede Vollmilchschokolade zu den energiedichten Lebensmitteln. Schon kleine Mengen liefern viele Kalorien.",
       "icon": "⚡"
     },
     {
@@ -128,23 +153,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Toblerone?",
-      "answer": "Eine ganze Tafel Toblerone Milchschokolade (100g) hat etwa 535 kcal. Ein einzelnes Dreieck (ca. 7g) kommt auf rund 37 kcal."
+      "answer": "Eine ganze Tafel Toblerone Milchschokolade (100g) hat etwa 489 kcal. Ein einzelnes Dreieck (ca. 7g) kommt auf rund 34 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Toblerone-Dreieck?",
-      "answer": "Ein einzelnes Toblerone-Dreieck wiegt etwa 7 g und liefert rund 37 kcal."
+      "answer": "Ein einzelnes Toblerone-Dreieck wiegt etwa 7 g und liefert rund 34 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Toblerone?",
-      "answer": "Pro 100 g enthält Toblerone etwa 60,5 g Kohlenhydrate, davon rund 59,5 g Zucker. Der Riegel ist also sehr zuckerreich."
+      "answer": "Pro 100 g enthält Toblerone etwa 61,2 g Kohlenhydrate, davon rund 55,7 g Zucker. Der Riegel ist also sehr zuckerreich."
     },
     {
       "question": "Wie viel Protein hat Toblerone?",
-      "answer": "Toblerone liefert rund 5,6 g Eiweiß pro 100 g. Das stammt vor allem aus Milch und den enthaltenen Mandeln."
+      "answer": "Toblerone liefert rund 5,7 g Eiweiß pro 100 g. Das stammt vor allem aus Milch und den enthaltenen Mandeln."
     },
     {
       "question": "Ist Toblerone zum Abnehmen geeignet?",
-      "answer": "Toblerone ist mit 535 kcal pro 100 g sehr energiedicht und sollte beim Abnehmen nur in kleinen Mengen genossen werden. Ein bis zwei Dreiecke lassen sich aber gut in eine ausgewogene Ernährung einbauen."
+      "answer": "Toblerone ist mit 489 kcal pro 100 g sehr energiedicht und sollte beim Abnehmen nur in kleinen Mengen genossen werden. Ein bis zwei Dreiecke lassen sich aber gut in eine ausgewogene Ernährung einbauen."
     },
     {
       "question": "Ist Toblerone gesund?",

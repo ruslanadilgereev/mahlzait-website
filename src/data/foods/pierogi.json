@@ -3,48 +3,167 @@
   "name": "Pierogi",
   "emoji": "🥟",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708720 (Pierogi), Werte je 100 g",
   "seo": {
     "title": "Pierogi Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Pierogi? Nährwerte für polnische Teigtaschen mit verschiedenen Füllungen. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 210,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 195,
+    "protein_per_100g": 5.3,
+    "carbs_per_100g": 29.6,
+    "fat_per_100g": 6.1,
+    "fiber_per_100g": 0.9,
     "typical_portion_g": 250,
     "typical_portion_name": "5 Stück"
   },
   "variants": [
-    {"name": "Ruskie (Kartoffel-Käse)", "portion_g": 250, "calories": 525, "protein": 18, "carbs": 70, "fat": 20, "tip": "Polnischer Klassiker"},
-    {"name": "Fleischfüllung", "portion_g": 250, "calories": 550, "protein": 24, "carbs": 62, "fat": 22},
-    {"name": "Sauerkraut-Pilz", "portion_g": 250, "calories": 450, "protein": 14, "carbs": 64, "fat": 16, "tip": "Leichtere Variante"},
-    {"name": "Quark-Füllung (süß)", "portion_g": 250, "calories": 480, "protein": 18, "carbs": 68, "fat": 16},
-    {"name": "Gekocht (ohne Braten)", "portion_g": 250, "calories": 430, "protein": 16, "carbs": 66, "fat": 12, "tip": "Kalorienärmste Zubereitung"},
-    {"name": "In Butter gebraten", "portion_g": 250, "calories": 580, "protein": 16, "carbs": 62, "fat": 28},
-    {"name": "Blaubeerfüllung (süß)", "portion_g": 250, "calories": 460, "protein": 12, "carbs": 72, "fat": 14}
+    {
+      "name": "Ruskie (Kartoffel-Käse)",
+      "portion_g": 250,
+      "calories": 488,
+      "protein": 13,
+      "carbs": 74,
+      "fat": 15,
+      "tip": "Polnischer Klassiker"
+    },
+    {
+      "name": "3 Stück als Beilage (150g)",
+      "portion_g": 150,
+      "calories": 293,
+      "protein": 8,
+      "carbs": 44,
+      "fat": 9
+    },
+    {
+      "name": "In Butter gebraten (250g + 10g Butter)",
+      "portion_g": 260,
+      "calories": 559,
+      "protein": 13,
+      "carbs": 74,
+      "fat": 23,
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "100 g",
+      "portion_g": 100,
+      "calories": 195,
+      "protein": 5,
+      "carbs": 30,
+      "fat": 6
+    }
   ],
   "comparison": [
-    {"name": "Maultaschen (4 Stück)", "calories": 420, "emoji": "🥟"},
-    {"name": "Tortellini (250g)", "calories": 380, "emoji": "🍝"},
-    {"name": "Empanadas (2 Stück)", "calories": 700, "emoji": "🥟"},
-    {"name": "Wan Tan (6 Stück)", "calories": 280, "emoji": "🥟"}
+    {
+      "name": "Maultaschen (4 Stück, 350g)",
+      "calories": 665,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "maultaschen",
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Tortellini (250g)",
+      "calories": 590,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "tortellini",
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Empanadas (2 Stück, 300g)",
+      "calories": 873,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "empanadas",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Wan Tan (6 Stück, 250g)",
+      "calories": 283,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "wan-tan",
+          "g": 250
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Gekocht statt gebraten", "text": "Nur gekochte Pierogi haben ca. 100 kcal weniger als in Butter gebratene – der Geschmack bleibt gut.", "icon": "💧"},
-    {"title": "Sauerkraut-Füllung wählen", "text": "Sauerkraut-Pierogi haben die wenigsten Kalorien und liefern Probiotika.", "icon": "🥬"},
-    {"title": "Saure Sahne sparsam", "text": "Der traditionelle Klecks saure Sahne hat 50 kcal pro EL. Fettarme Variante: nur 20 kcal.", "icon": "🥄"},
-    {"title": "Selbst machen, Füllung kontrollieren", "text": "Selbstgemachte Pierogi: Kartoffelpüree mit weniger Butter und fettärmerem Käse füllen.", "icon": "👨‍🍳"},
-    {"title": "Portionsgröße beachten", "text": "5 Pierogi sind eine normale Portion. 7-8 sind schnell gegessen, aber 30% mehr Kalorien.", "icon": "📏"}
+    {
+      "title": "Gekocht statt gebraten",
+      "text": "Gekochte Pierogi ohne Butter haben pro Portion (250g) rund 71 kcal weniger als in 10g Butter gebratene, der Geschmack bleibt gut.",
+      "icon": "💧"
+    },
+    {
+      "title": "Sauerkraut-Füllung wählen",
+      "text": "Sauerkraut-Pierogi haben die wenigsten Kalorien und liefern Probiotika.",
+      "icon": "🥬"
+    },
+    {
+      "title": "Saure Sahne sparsam",
+      "text": "Der traditionelle Klecks saure Sahne bringt zusätzliche Kalorien, eine fettarme Variante deutlich weniger.",
+      "icon": "🥄"
+    },
+    {
+      "title": "Selbst machen, Füllung kontrollieren",
+      "text": "Selbstgemachte Pierogi: Kartoffelpüree mit weniger Butter und fettärmerem Käse füllen.",
+      "icon": "👨‍🍳"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "5 Pierogi sind eine normale Portion. 7 bis 8 sind schnell gegessen, bringen aber 40 bis 60% mehr Kalorien.",
+      "icon": "📏"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Pierogi?", "answer": "5 Pierogi (250g) haben je nach Füllung 430-580 kcal. Ruskie (Kartoffel-Käse) liegen bei ca. 525 kcal."},
-    {"question": "Sind Pierogi gut zum Abnehmen?", "answer": "In Maßen: 5 gekochte Sauerkraut-Pierogi (430 kcal) passen in eine Diät. Vermeide Butter-Braten und extra saure Sahne."},
-    {"question": "Wie viel Protein haben Pierogi?", "answer": "5 Pierogi liefern 14-24g Protein je nach Füllung. Fleisch-Pierogi haben den höchsten Proteingehalt."},
-    {"question": "Was ist der Unterschied zwischen Pierogi und Maultaschen?", "answer": "Pierogi haben dünneren, weicheren Teig und werden oft süß gefüllt. Maultaschen sind größer mit deftigerer Füllung und dickerem Nudelteig."},
-    {"question": "Wie viele Pierogi sind eine Portion?", "answer": "5 Stück als Hauptgericht (250g, ca. 500 kcal). 3 Stück als Beilage (150g, ca. 315 kcal)."},
-    {"question": "Kann man Pierogi einfrieren?", "answer": "Ja – auf einem Blech vorfrieren, dann in Beutel packen. Gefrorene Pierogi direkt ins kochende Wasser geben (keine Extra-Kalorien)."}
+    {
+      "question": "Wie viele Kalorien haben Pierogi?",
+      "answer": "5 Pierogi (250g) mit Kartoffel-Käse-Füllung (Ruskie) haben ca. 488 kcal. In Butter gebraten sind es rund 559 kcal."
+    },
+    {
+      "question": "Sind Pierogi gut zum Abnehmen?",
+      "answer": "In Maßen: 5 Pierogi ohne Braten (ca. 488 kcal) passen in eine Diät. Vermeide Butter-Braten und extra saure Sahne."
+    },
+    {
+      "question": "Wie viel Protein haben Pierogi?",
+      "answer": "5 Pierogi (250g) mit Kartoffel-Käse-Füllung liefern ca. 13g Protein. Fleisch-Pierogi haben den höchsten Proteingehalt."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Pierogi und Maultaschen?",
+      "answer": "Pierogi haben dünneren, weicheren Teig und werden oft süß gefüllt. Maultaschen sind größer mit deftigerer Füllung und dickerem Nudelteig."
+    },
+    {
+      "question": "Wie viele Pierogi sind eine Portion?",
+      "answer": "5 Stück als Hauptgericht (250g, ca. 488 kcal). 3 Stück als Beilage (150g, ca. 293 kcal)."
+    },
+    {
+      "question": "Kann man Pierogi einfrieren?",
+      "answer": "Ja: Auf einem Blech vorfrieren, dann in Beutel packen. Gefrorene Pierogi direkt ins kochende Wasser geben (keine Extra-Kalorien)."
+    }
   ],
-  "related_foods": ["maultaschen", "wan-tan", "tortellini", "empanadas"]
+  "related_foods": [
+    "maultaschen",
+    "wan-tan",
+    "tortellini",
+    "empanadas"
+  ]
 }

@@ -3,9 +3,10 @@
   "name": "Reispapier",
   "emoji": "📄",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2708166 (Rice paper), Werte je 100 g",
   "seo": {
     "title": "Reispapier Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Reispapier? Ein Blatt (11g) hat nur ca. 37 kcal, 100g getrocknet ca. 333 kcal. Nährwerte, Sommerrollen & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Reispapier? Ein Blatt (11g) hat nur ca. 36 kcal, 100g getrocknet ca. 323 kcal. Nährwerte, Sommerrollen & Diät-Tipps.",
     "keywords": [
       "rice paper kcal",
       "reispapier kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 333,
-    "protein_per_100g": 5.2,
-    "carbs_per_100g": 82.8,
-    "fat_per_100g": 0.5,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 323,
+    "protein_per_100g": 5.9,
+    "carbs_per_100g": 72.3,
+    "fat_per_100g": 1.1,
+    "fiber_per_100g": 0.5,
     "typical_portion_g": 11,
     "typical_portion_name": "1 Blatt (getrocknet)"
   },
@@ -29,88 +30,126 @@
     {
       "name": "1 Blatt klein (8g)",
       "portion_g": 8,
-      "calories": 27,
-      "protein": 0.4,
-      "carbs": 6.6,
-      "fat": 0
+      "calories": 26,
+      "protein": 0.5,
+      "carbs": 5.8,
+      "fat": 0.1
     },
     {
       "name": "1 Blatt Standard (11g)",
       "portion_g": 11,
-      "calories": 37,
+      "calories": 36,
       "protein": 0.6,
-      "carbs": 9.1,
+      "carbs": 8,
       "fat": 0.1,
       "tip": "Übliche Größe (22 cm)"
     },
     {
       "name": "1 Blatt groß (14g)",
       "portion_g": 14,
-      "calories": 47,
-      "protein": 0.7,
-      "carbs": 11.6,
-      "fat": 0.1
+      "calories": 45,
+      "protein": 0.8,
+      "carbs": 10.1,
+      "fat": 0.2
     },
     {
       "name": "2 Blatt (Sommerrolle-Basis, 22g)",
       "portion_g": 22,
-      "calories": 73,
-      "protein": 1.1,
-      "carbs": 18.2,
-      "fat": 0.1
+      "calories": 71,
+      "protein": 1.3,
+      "carbs": 15.9,
+      "fat": 0.2
     },
     {
       "name": "1 Sommerrolle mit Garnele (ca. 90g)",
       "portion_g": 90,
-      "calories": 85,
-      "protein": 6,
-      "carbs": 13,
-      "fat": 0.8,
-      "tip": "Reispapier + Glasnudeln, Gemüse, Garnele"
+      "calories": 81,
+      "protein": 5.8,
+      "carbs": 14.2,
+      "fat": 0.3,
+      "tip": "Reispapier + Glasnudeln, Gemüse, Garnele",
+      "basis": [
+        {
+          "g": 11
+        },
+        {
+          "fdcId": 175180,
+          "g": 20
+        },
+        {
+          "fdcId": 2708355,
+          "g": 20
+        },
+        {
+          "fdcId": 169247,
+          "g": 15
+        },
+        {
+          "fdcId": 170393,
+          "g": 12
+        },
+        {
+          "fdcId": 168409,
+          "g": 12
+        }
+      ]
     },
     {
       "name": "Portion 50g (getrocknet)",
       "portion_g": 50,
-      "calories": 166,
-      "protein": 2.6,
-      "carbs": 41.4,
-      "fat": 0.2
+      "calories": 162,
+      "protein": 3,
+      "carbs": 36.2,
+      "fat": 0.6
     },
     {
       "name": "100g getrocknet",
       "portion_g": 100,
-      "calories": 333,
-      "protein": 5.2,
-      "carbs": 82.8,
-      "fat": 0.5
+      "calories": 323,
+      "protein": 5.9,
+      "carbs": 72.3,
+      "fat": 1.1
     }
   ],
   "comparison": [
     {
-      "name": "Reispapier (1 Blatt, 11g)",
-      "calories": 37,
-      "emoji": "📄"
-    },
-    {
       "name": "Reiswaffel (1 Stück, 9g)",
       "calories": 35,
-      "emoji": "🍘"
+      "emoji": "🍘",
+      "basis": [
+        {
+          "fdcId": 170250,
+          "g": 9
+        }
+      ]
     },
     {
       "name": "Weizen-Tortilla (1 Stück, 40g)",
-      "calories": 122,
-      "emoji": "🌯"
+      "calories": 119,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "fdcId": 167535,
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Toastbrot (1 Scheibe, 25g)",
-      "calories": 66,
-      "emoji": "🍞"
+      "calories": 67,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "fdcId": 174924,
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sehr kalorienarme Hülle",
-      "text": "Ein einzelnes Blatt Reispapier hat nur ca. 37 kcal und ist damit deutlich leichter als eine Weizen-Tortilla (ca. 122 kcal). Ideal für leichte Wraps und Rollen.",
+      "text": "Ein einzelnes Blatt Reispapier hat nur ca. 36 kcal und ist damit deutlich leichter als eine Weizen-Tortilla (ca. 119 kcal). Ideal für leichte Wraps und Rollen.",
       "icon": "📄"
     },
     {
@@ -125,35 +164,35 @@
     },
     {
       "title": "Von Natur aus glutenfrei",
-      "text": "Reispapier besteht meist nur aus Reismehl, Tapiokastärke, Wasser und Salz und enthält kein Gluten – eine gute Wrap-Alternative bei Glutenunverträglichkeit.",
+      "text": "Reispapier besteht meist nur aus Reismehl, Tapiokastärke, Wasser und Salz und enthält kein Gluten, eine gute Wrap-Alternative bei Glutenunverträglichkeit.",
       "icon": "🌾"
     },
     {
       "title": "Kaum Fett, viele Kohlenhydrate",
-      "text": "Reispapier liefert fast ausschließlich Kohlenhydrate (ca. 83g pro 100g) und praktisch kein Fett – als Sattmacher eignen sich proteinreichere Füllungen besser.",
+      "text": "Reispapier liefert fast ausschließlich Kohlenhydrate (ca. 72g pro 100g) und praktisch kein Fett, als Sattmacher eignen sich proteinreichere Füllungen besser.",
       "icon": "🍚"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Reispapier?",
-      "answer": "Ein Standard-Blatt Reispapier (ca. 11g, 22 cm Durchmesser) hat etwa 37 kcal. 100g getrocknetes Reispapier liefern rund 333 kcal."
+      "answer": "Ein Standard-Blatt Reispapier (ca. 11g, 22 cm Durchmesser) hat etwa 36 kcal. 100g getrocknetes Reispapier liefern rund 323 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Sommerrolle aus Reispapier?",
-      "answer": "Eine frische Sommerrolle mit Garnele, Gemüse und Glasnudeln hat je nach Füllung ca. 80–90 kcal. Das Reispapier selbst macht davon nur etwa 37 kcal aus."
+      "answer": "Eine frische Sommerrolle mit Garnele, Gemüse und Glasnudeln (ca. 90g) hat je nach Füllung rund 81 kcal. Das Reispapier selbst macht davon nur etwa 36 kcal aus."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Reispapier?",
-      "answer": "Reispapier besteht fast nur aus Kohlenhydraten: ca. 82,8g pro 100g, also rund 9g pro Blatt. Es enthält kaum Fett und wenig Protein."
+      "answer": "Reispapier besteht fast nur aus Kohlenhydraten: ca. 72g pro 100g, also rund 8g pro Blatt. Es enthält kaum Fett und wenig Protein."
     },
     {
       "question": "Ist Reispapier zum Abnehmen geeignet?",
-      "answer": "Ja. Mit nur ca. 37 kcal pro Blatt ist Reispapier eine kalorienarme Wrap-Alternative. Entscheidend ist die Füllung – Gemüse, Kräuter und mageres Eiweiß halten die Sommerrolle leicht."
+      "answer": "Ja. Mit nur ca. 36 kcal pro Blatt ist Reispapier eine kalorienarme Wrap-Alternative. Entscheidend ist die Füllung: Gemüse, Kräuter und mageres Eiweiß halten die Sommerrolle leicht."
     },
     {
       "question": "Hat Reispapier viel Protein?",
-      "answer": "Nein, Reispapier hat nur wenig Eiweiß (ca. 5,2g pro 100g bzw. unter 1g pro Blatt). Für mehr Protein eignen sich Füllungen wie Garnelen, Hähnchen oder Tofu."
+      "answer": "Nein, Reispapier hat nur wenig Eiweiß (ca. 5,9g pro 100g bzw. unter 1g pro Blatt). Für mehr Protein eignen sich Füllungen wie Garnelen, Hähnchen oder Tofu."
     },
     {
       "question": "Ist Reispapier gesund und glutenfrei?",

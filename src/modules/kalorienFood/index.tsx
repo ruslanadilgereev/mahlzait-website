@@ -45,7 +45,8 @@ interface FoodData {
     protein_per_100g: number;
     carbs_per_100g: number;
     fat_per_100g: number;
-    fiber_per_100g: number;
+    // null: der FDC-Eintrag nennt keinen Ballaststoffwert (Anzeige "k. A.")
+    fiber_per_100g: number | null;
     typical_portion_g: number;
     typical_portion_name: string;
   };
@@ -90,7 +91,8 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
   const currentProtein = Math.round(food.overview.protein_per_100g * multiplier * 10) / 10;
   const currentCarbs = Math.round(food.overview.carbs_per_100g * multiplier * 10) / 10;
   const currentFat = Math.round(food.overview.fat_per_100g * multiplier * 10) / 10;
-  const currentFiber = Math.round(food.overview.fiber_per_100g * multiplier * 10) / 10;
+  const fiberPer100g = food.overview.fiber_per_100g;
+  const currentFiber = fiberPer100g == null ? null : Math.round(fiberPer100g * multiplier * 10) / 10;
 
   // Statische Mengen-Tabelle: beantwortet "X g <Food> Kalorien"-Suchanfragen crawlbar,
   // ohne dass der Besucher den Schieberegler bedienen muss.
@@ -201,7 +203,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   </div>
                   <div className="text-center p-3 bg-base-100 rounded-xl">
                     <div className="text-xs opacity-60 mb-1">Ballaststoffe</div>
-                    <div className="text-lg font-bold text-green-500">{currentFiber}g</div>
+                    <div className="text-lg font-bold text-green-500">{currentFiber == null ? "k. A." : `${currentFiber}g`}</div>
                   </div>
                 </div>
 
@@ -301,8 +303,8 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                     </tr>
                     <tr>
                       <td>Ballaststoffe</td>
-                      <td className="text-right">{food.overview.fiber_per_100g}g</td>
-                      <td className="text-right">{Math.round(food.overview.fiber_per_100g * food.overview.typical_portion_g / 100 * 10) / 10}g</td>
+                      <td className="text-right">{fiberPer100g == null ? "k. A." : `${fiberPer100g}g`}</td>
+                      <td className="text-right">{fiberPer100g == null ? "k. A." : `${Math.round(fiberPer100g * food.overview.typical_portion_g / 100 * 10) / 10}g`}</td>
                     </tr>
                   </tbody>
                 </table>

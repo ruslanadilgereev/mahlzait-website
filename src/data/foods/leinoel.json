@@ -3,6 +3,7 @@
   "name": "Leinöl",
   "emoji": "🫗",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167702 (Oil, flaxseed, cold pressed), Werte je 100 g",
   "seo": {
     "title": "Leinöl Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Leinöl? 100g haben 884 kcal, 1 EL ca. 124 kcal. Nährwerte, Omega-3-Gehalt & Tipps zum gesunden Einsatz im Überblick.",
@@ -17,7 +18,7 @@
   },
   "overview": {
     "calories_per_100g": 884,
-    "protein_per_100g": 0,
+    "protein_per_100g": 0.1,
     "carbs_per_100g": 0,
     "fat_per_100g": 100,
     "fiber_per_100g": 0,
@@ -79,24 +80,48 @@
   ],
   "comparison": [
     {
-      "name": "Olivenöl",
+      "name": "Olivenöl (100g)",
       "calories": 884,
-      "emoji": "🫒"
+      "emoji": "🫒",
+      "basis": [
+        {
+          "slug": "olivenoel",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Butter",
+      "name": "Butter (100g)",
       "calories": 717,
-      "emoji": "🧈"
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Margarine",
-      "calories": 720,
-      "emoji": "🧈"
+      "name": "Margarine (100g)",
+      "calories": 713,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "margarine",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Leinsamen",
+      "name": "Leinsamen (100g)",
       "calories": 534,
-      "emoji": "🌱"
+      "emoji": "🌱",
+      "basis": [
+        {
+          "slug": "leinsamen",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [

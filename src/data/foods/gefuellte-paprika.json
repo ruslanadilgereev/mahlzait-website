@@ -3,9 +3,10 @@
   "name": "Gefüllte Paprika",
   "emoji": "🫑",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2709073 (Stuffed pepper, with rice and meat), Werte je 100 g",
   "seo": {
     "title": "Gefüllte Paprika Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat gefüllte Paprika? Eine klassisch gefüllte Paprika (220g) mit Hackfleisch hat ca. 253 kcal. Nährwerte pro 100g, Portionen & Tipps.",
+    "description": "Wie viele Kalorien hat gefüllte Paprika? Eine klassisch gefüllte Paprika (220g) mit Hackfleisch hat ca. 392 kcal. Nährwerte pro 100g, Portionen & Tipps.",
     "keywords": [
       "gefüllte paprika kalorien",
       "gefüllte paprika kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 115,
-    "protein_per_100g": 6.5,
-    "carbs_per_100g": 8,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 178,
+    "protein_per_100g": 7.8,
+    "carbs_per_100g": 9.9,
+    "fat_per_100g": 11.7,
+    "fiber_per_100g": 0.7,
     "typical_portion_g": 220,
     "typical_portion_name": "1 gefüllte Paprika (mit Hackfleisch)"
   },
@@ -28,95 +29,112 @@
     {
       "name": "Pro 100g (gekocht)",
       "portion_g": 100,
-      "calories": 115,
-      "protein": 6.5,
-      "carbs": 8,
-      "fat": 6
+      "calories": 178,
+      "protein": 7.8,
+      "carbs": 9.9,
+      "fat": 11.7
     },
     {
       "name": "1 gefüllte Paprika (220g)",
       "portion_g": 220,
-      "calories": 253,
-      "protein": 14,
-      "carbs": 18,
-      "fat": 13,
+      "calories": 392,
+      "protein": 17.2,
+      "carbs": 21.8,
+      "fat": 25.7,
       "tip": "Standard-Portion"
     },
     {
       "name": "2 gefüllte Paprika (440g)",
       "portion_g": 440,
-      "calories": 506,
-      "protein": 29,
-      "carbs": 35,
-      "fat": 26,
+      "calories": 783,
+      "protein": 34.3,
+      "carbs": 43.6,
+      "fat": 51.5,
       "tip": "Hauptmahlzeit"
     },
     {
       "name": "Kleine gefüllte Paprika (170g)",
       "portion_g": 170,
-      "calories": 196,
-      "protein": 11,
-      "carbs": 14,
-      "fat": 10
+      "calories": 303,
+      "protein": 13.3,
+      "carbs": 16.8,
+      "fat": 19.9
     },
     {
       "name": "Vegetarisch gefüllt, Reis & Gemüse (220g)",
       "portion_g": 220,
-      "calories": 198,
-      "protein": 8,
-      "carbs": 26,
-      "fat": 6,
-      "tip": "Leichtere Variante"
-    },
-    {
-      "name": "Mit Feta & Couscous gefüllt (220g)",
-      "portion_g": 220,
-      "calories": 231,
-      "protein": 9,
-      "carbs": 25,
-      "fat": 10
+      "calories": 365,
+      "protein": 8.3,
+      "carbs": 26.4,
+      "fat": 24.8,
+      "tip": "Leichtere Variante",
+      "basis": [
+        {
+          "fdcId": 2709074,
+          "g": 220
+        }
+      ]
     },
     {
       "name": "Rohe Paprikahälfte ungefüllt (80g)",
       "portion_g": 80,
-      "calories": 25,
-      "protein": 1,
-      "carbs": 5,
-      "fat": 0,
-      "tip": "Nur die Schote"
+      "calories": 21,
+      "protein": 0.8,
+      "carbs": 4.8,
+      "fat": 0.2,
+      "tip": "Nur die Schote",
+      "basis": [
+        {
+          "slug": "paprika",
+          "g": 80
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Gefüllte Paprika (220g)",
-      "calories": 253,
-      "emoji": "🫑"
+      "name": "Frikadellen (2 Stück, 300g)",
+      "calories": 588,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "frikadellen",
+          "g": 300
+        }
+      ]
     },
     {
-      "name": "Frikadellen (2 Stück)",
-      "calories": 340,
-      "emoji": "🍖"
+      "name": "Lasagne (1 Stück, 400g)",
+      "calories": 556,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Lasagne (Portion)",
-      "calories": 410,
-      "emoji": "🍝"
-    },
-    {
-      "name": "Ratatouille (Portion)",
-      "calories": 160,
-      "emoji": "🍲"
+      "name": "Ratatouille (1 Portion, 250g)",
+      "calories": 168,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "ratatouille",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sättigend bei moderaten Kalorien",
-      "text": "Eine gefüllte Paprika (220g) liefert rund 253 kcal und durch das Hackfleisch etwa 14g Eiweiß. Sie sättigt durch Volumen und Protein gut, ohne stark ins Gewicht zu fallen.",
+      "text": "Eine gefüllte Paprika (220g) liefert rund 392 kcal und durch das Hackfleisch etwa 17g Eiweiß. Sie sättigt durch Volumen und Protein gut.",
       "icon": "🫑"
     },
     {
       "title": "Vegetarisch spart Kalorien",
-      "text": "Mit Reis und Gemüse statt Hackfleisch gefüllt, sinken die Kalorien auf etwa 198 kcal pro Schote. Eine gute Option, wenn Sie auf Fett verzichten möchten.",
+      "text": "Mit Reis und Gemüse statt Hackfleisch gefüllt, sinken die Kalorien laut USDA leicht auf etwa 365 kcal pro Schote. Entscheidend ist, wie viel Fett in die Füllung kommt.",
       "icon": "🥕"
     },
     {
@@ -138,23 +156,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine gefüllte Paprika?",
-      "answer": "Eine klassisch mit Hackfleisch und Reis gefüllte Paprika (ca. 220g) hat rund 253 kcal. Pro 100g sind es etwa 115 kcal."
+      "answer": "Eine klassisch mit Hackfleisch und Reis gefüllte Paprika (ca. 220g) hat rund 392 kcal. Pro 100g sind es etwa 178 kcal."
     },
     {
       "question": "Wie viele Kalorien hat gefüllte Paprika mit Hackfleisch pro 100g?",
-      "answer": "Die gekochte, mit Hackfleisch und Reis gefüllte Paprika hat etwa 115 kcal pro 100g, davon rund 6,5g Eiweiß, 8g Kohlenhydrate und 6g Fett."
+      "answer": "Die gekochte, mit Hackfleisch und Reis gefüllte Paprika hat etwa 178 kcal pro 100g, davon rund 7,8g Eiweiß, 9,9g Kohlenhydrate und 11,7g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat gefüllte Paprika?",
-      "answer": "Pro 100g enthält die klassische Variante etwa 8g Kohlenhydrate, eine ganze Schote (220g) rund 18g. Der Reis in der Füllung liefert den Großteil davon."
+      "answer": "Pro 100g enthält die klassische Variante etwa 10g Kohlenhydrate, eine ganze Schote (220g) rund 22g. Der Reis in der Füllung liefert den Großteil davon."
     },
     {
       "question": "Wie viel Eiweiß hat eine gefüllte Paprika?",
-      "answer": "Eine gefüllte Paprika mit Hackfleisch (220g) liefert etwa 14g Eiweiß. Das Hackfleisch ist die wichtigste Proteinquelle des Gerichts."
+      "answer": "Eine gefüllte Paprika mit Hackfleisch (220g) liefert etwa 17g Eiweiß. Das Hackfleisch ist die wichtigste Proteinquelle des Gerichts."
     },
     {
       "question": "Ist gefüllte Paprika zum Abnehmen geeignet?",
-      "answer": "Ja, in Maßen. Mit magerem Hackfleisch oder vegetarisch gefüllt und wenig Reis ist eine Portion sättigend und liegt bei rund 200 bis 250 kcal, was gut in eine kalorienbewusste Ernährung passt."
+      "answer": "Ja, in Maßen. Mit magerem Hackfleisch oder vegetarisch gefüllt und wenig Reis ist eine Portion sättigend. Laut USDA liegt eine Schote (220g) bei rund 365 bis 392 kcal."
     },
     {
       "question": "Ist gefüllte Paprika gesund?",

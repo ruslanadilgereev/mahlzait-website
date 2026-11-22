@@ -3,50 +3,240 @@
   "name": "Latte Macchiato",
   "emoji": "🥛",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710386 (Coffee, Latte: 43 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 44 kcal",
   "seo": {
     "title": "Latte Macchiato Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Latte Macchiato? Nährwerte pro Glas. Vollmilch, Hafermilch, Starbucks & kalorienarme Alternativen.",
-    "keywords": ["latte macchiato kalorien", "kalorien latte macchiato", "latte kalorien", "latte macchiato nährwerte", "starbucks latte kalorien", "latte macchiato zucker", "cafe latte kalorien", "milchkaffee kalorien"]
+    "description": "Wie viele Kalorien hat ein Latte Macchiato? Nährwerte pro Glas. Magermilch, Pflanzendrink, Sirup, Grande-Größe & kalorienarme Alternativen.",
+    "keywords": [
+      "latte macchiato kalorien",
+      "kalorien latte macchiato",
+      "latte kalorien",
+      "latte macchiato nährwerte",
+      "starbucks latte kalorien",
+      "latte macchiato zucker",
+      "cafe latte kalorien",
+      "milchkaffee kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 50,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 4.5,
-    "fat_per_100g": 2,
+    "calories_per_100g": 43,
+    "protein_per_100g": 2.8,
+    "carbs_per_100g": 4.4,
+    "fat_per_100g": 1.6,
     "fiber_per_100g": 0,
-    "typical_portion_g": 300,
+    "typical_portion_g": 304,
     "typical_portion_name": "1 Glas (300ml)"
   },
   "variants": [
-    { "name": "Latte Macchiato Vollmilch (300ml)", "portion_g": 300, "calories": 150, "protein": 9, "carbs": 14, "fat": 6 },
-    { "name": "Latte Macchiato fettarme Milch (300ml)", "portion_g": 300, "calories": 105, "protein": 9, "carbs": 14, "fat": 2, "tip": "Kaloriensparend" },
-    { "name": "Latte Macchiato + 1 Zucker", "portion_g": 300, "calories": 170, "protein": 9, "carbs": 19, "fat": 6 },
-    { "name": "Latte Macchiato Hafermilch (300ml)", "portion_g": 300, "calories": 120, "protein": 3, "carbs": 18, "fat": 4 },
-    { "name": "Latte Macchiato Mandelmilch (300ml)", "portion_g": 300, "calories": 65, "protein": 3, "carbs": 6, "fat": 4 },
-    { "name": "Starbucks Latte (Grande)", "portion_g": 480, "calories": 220, "protein": 13, "carbs": 19, "fat": 9 },
-    { "name": "Starbucks Vanilla Latte (Grande)", "portion_g": 480, "calories": 300, "protein": 13, "carbs": 38, "fat": 9 },
-    { "name": "Latte Macchiato Karamell (300ml)", "portion_g": 300, "calories": 210, "protein": 9, "carbs": 28, "fat": 7 }
+    {
+      "name": "Latte Macchiato (300ml)",
+      "portion_g": 304,
+      "calories": 131,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 5
+    },
+    {
+      "name": "Latte Macchiato mit Magermilch (300ml)",
+      "portion_g": 304,
+      "calories": 91,
+      "protein": 9,
+      "carbs": 13,
+      "fat": 0,
+      "tip": "Kaloriensparend",
+      "basis": [
+        {
+          "fdcId": 2710387,
+          "ml": 300,
+          "g": 304
+        }
+      ]
+    },
+    {
+      "name": "Latte Macchiato + 1 TL Zucker (300ml)",
+      "portion_g": 308,
+      "calories": 146,
+      "protein": 9,
+      "carbs": 17,
+      "fat": 5,
+      "basis": [
+        {
+          "ml": 300,
+          "g": 304
+        },
+        {
+          "fdcId": 169655,
+          "g": 4
+        }
+      ]
+    },
+    {
+      "name": "Latte Macchiato mit Pflanzendrink (300ml)",
+      "portion_g": 304,
+      "calories": 85,
+      "protein": 3,
+      "carbs": 9,
+      "fat": 4,
+      "basis": [
+        {
+          "fdcId": 2710388,
+          "ml": 300,
+          "g": 304
+        }
+      ]
+    },
+    {
+      "name": "Latte Grande (473ml)",
+      "portion_g": 480,
+      "calories": 206,
+      "protein": 13,
+      "carbs": 21,
+      "fat": 8,
+      "tip": "Coffeeshop-Größe (16 fl oz)"
+    },
+    {
+      "name": "Latte mit Sirup, Grande (473ml)",
+      "portion_g": 496,
+      "calories": 273,
+      "protein": 13,
+      "carbs": 37,
+      "fat": 8,
+      "tip": "Vanille- oder Karamellsirup",
+      "basis": [
+        {
+          "fdcId": 2710389,
+          "ml": 473,
+          "g": 496
+        }
+      ]
+    },
+    {
+      "name": "Latte Macchiato mit Sirup (300ml)",
+      "portion_g": 314,
+      "calories": 173,
+      "protein": 9,
+      "carbs": 24,
+      "fat": 5,
+      "tip": "Vanille- oder Karamellsirup",
+      "basis": [
+        {
+          "fdcId": 2710389,
+          "ml": 300,
+          "g": 314
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Cappuccino (200ml)", "calories": 80, "emoji": "☕" },
-    { "name": "Espresso", "calories": 2, "emoji": "☕" },
-    { "name": "Kakao (250ml)", "calories": 210, "emoji": "🍫" },
-    { "name": "Schwarzer Kaffee", "calories": 2, "emoji": "☕" }
+    {
+      "name": "Cappuccino (200ml)",
+      "calories": 55,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "cappuccino"
+        }
+      ]
+    },
+    {
+      "name": "Espresso (30ml)",
+      "calories": 3,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "espresso"
+        }
+      ]
+    },
+    {
+      "name": "Kakao (250ml)",
+      "calories": 238,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kakao"
+        }
+      ]
+    },
+    {
+      "name": "Schwarzer Kaffee (200ml)",
+      "calories": 2,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffee"
+        }
+      ]
+    },
+    {
+      "name": "Apfel (1 Stück, 180g)",
+      "calories": 94,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Cappuccino statt Latte", "text": "Cappuccino hat 80 kcal, Latte Macchiato 150 kcal. Fast gleicher Geschmack, aber 47% weniger Kalorien durch mehr Schaum und weniger Milch.", "icon": "💡" },
-    { "title": "Fettarme Milch spart 45 kcal", "text": "1,5% statt 3,5% Milch: 105 statt 150 kcal. Bei 2 Lattes täglich sind das 33.000 kcal im Jahr gespart.", "icon": "📉" },
-    { "title": "Sirup verdoppelt die Kalorien", "text": "Karamell- oder Vanillesirup kann die Kalorien von 150 auf 210-300 verdoppeln. Pur trinken ist besser.", "icon": "🚫" },
-    { "title": "Mandelmilch als Light-Alternative", "text": "Latte Macchiato mit Mandelmilch hat nur 65 kcal – weniger als die Hälfte der Vollmilch-Version.", "icon": "🌱" },
-    { "title": "Bewusst genießen", "text": "Ein Latte Macchiato hat so viele Kalorien wie 1,5 Äpfel. Als Genussgetränk einplanen statt nebenbei trinken.", "icon": "🧘" }
+    {
+      "title": "Cappuccino statt Latte",
+      "text": "Ein Cappuccino (200ml) hat ca. 55 kcal, ein Latte Macchiato (300ml) ca. 131 kcal. Fast gleicher Geschmack, aber rund 58% weniger Kalorien durch mehr Schaum und weniger Milch.",
+      "icon": "💡"
+    },
+    {
+      "title": "Magermilch spart rund 40 kcal",
+      "text": "Magermilch statt normaler Milch: ca. 91 statt 131 kcal. Bei 2 Lattes täglich sind das rund 29.000 kcal im Jahr gespart.",
+      "icon": "📉"
+    },
+    {
+      "title": "Sirup treibt die Kalorien hoch",
+      "text": "Karamell- oder Vanillesirup hebt einen Latte Macchiato (300ml) laut USDA von ca. 131 auf ca. 173 kcal. Pur trinken ist besser.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Pflanzendrink als Light-Alternative",
+      "text": "Latte Macchiato mit Pflanzendrink hat laut USDA nur ca. 85 kcal, deutlich weniger als mit Kuhmilch.",
+      "icon": "🌱"
+    },
+    {
+      "title": "Bewusst genießen",
+      "text": "Ein Latte Macchiato (ca. 131 kcal) hat fast so viele Kalorien wie 1,5 Äpfel (je ca. 94 kcal). Als Genussgetränk einplanen statt nebenbei trinken.",
+      "icon": "🧘"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Latte Macchiato?", "answer": "Ein Latte Macchiato (300ml) hat ca. 150 kcal mit Vollmilch, 105 kcal mit fettarmer Milch. Ein Starbucks Grande Latte hat ca. 220 kcal." },
-    { "question": "Latte Macchiato oder Cappuccino – was hat weniger Kalorien?", "answer": "Cappuccino hat deutlich weniger: 80 kcal (200ml) vs. 150 kcal (300ml). Cappuccino hat mehr Espresso-Schaum und weniger flüssige Milch." },
-    { "question": "Ist Latte Macchiato beim Abnehmen schlecht?", "answer": "150 kcal sind moderat. Bei 2 pro Tag (300 kcal) sind es aber über 100.000 Kalorien im Jahr. Lieber 1x täglich als Genuss einplanen." },
-    { "question": "Wie viele Kalorien hat ein Starbucks Latte?", "answer": "Starbucks Grande Caffè Latte: 220 kcal. Vanilla Latte: 300 kcal. Caramel Macchiato: 280 kcal. Alles mit Vollmilch – fettarm spart 30-40%." },
-    { "question": "Welche Milch ist die kalorienärmste für Latte Macchiato?", "answer": "Mandelmilch (65 kcal/Latte), dann Sojamilch (85 kcal), Hafermilch (120 kcal), fettarme Milch (105 kcal), Vollmilch (150 kcal)." },
-    { "question": "Was ist der Unterschied zwischen Latte Macchiato und Milchkaffee?", "answer": "Latte Macchiato wird geschichtet (Milch → Espresso → Schaum), Milchkaffee gemischt. Kalorisch sind sie fast gleich – es kommt auf die Milchmenge an." }
+    {
+      "question": "Wie viele Kalorien hat ein Latte Macchiato?",
+      "answer": "Ein Latte Macchiato (300ml) hat laut USDA ca. 131 kcal, mit Magermilch ca. 91 kcal. Ein großer Latte (Grande, 473ml) hat ca. 206 kcal."
+    },
+    {
+      "question": "Latte Macchiato oder Cappuccino: Was hat weniger Kalorien?",
+      "answer": "Cappuccino hat deutlich weniger: ca. 55 kcal (200ml) vs. ca. 131 kcal (300ml). Cappuccino hat mehr Espresso-Schaum und weniger flüssige Milch."
+    },
+    {
+      "question": "Ist Latte Macchiato beim Abnehmen schlecht?",
+      "answer": "Rund 131 kcal sind moderat. Bei 2 pro Tag (ca. 262 kcal) sind es aber über 95.000 Kalorien im Jahr. Lieber 1x täglich als Genuss einplanen."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein großer Latte (Grande)?",
+      "answer": "Ein Latte in Grande-Größe (473ml) hat laut USDA ca. 206 kcal, mit Vanille- oder Karamellsirup ca. 273 kcal. Mit Magermilch statt normaler Milch spart man rund 30%."
+    },
+    {
+      "question": "Welche Milch ist die kalorienärmste für Latte Macchiato?",
+      "answer": "Laut USDA: Pflanzendrink (ca. 85 kcal pro 300ml), Magermilch (ca. 91 kcal), normale Milch (ca. 131 kcal). Bei Pflanzendrinks hängt der Wert stark von der Sorte ab."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Latte Macchiato und Milchkaffee?",
+      "answer": "Latte Macchiato wird geschichtet (Milch → Espresso → Schaum), Milchkaffee gemischt. Kalorisch sind sie fast gleich, es kommt auf die Milchmenge an."
+    }
   ],
-  "related_foods": ["cappuccino", "eiskaffee", "chai-latte", "kakao"]
+  "related_foods": [
+    "cappuccino",
+    "eiskaffee",
+    "chai-latte",
+    "kakao"
+  ]
 }

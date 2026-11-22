@@ -3,50 +3,218 @@
   "name": "Mais",
   "emoji": "🌽",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169998 (Corn, sweet, yellow, raw), Werte je 100 g",
   "seo": {
     "title": "Mais Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Mais? Nährwerte pro 100g & Kolben. Dosenmais, Popcorn & ob Mais beim Abnehmen hilft.",
-    "keywords": ["mais kalorien", "kalorien mais", "mais nährwerte", "maiskolben kalorien", "dosenmais kalorien", "mais kohlenhydrate", "mais abnehmen", "popcorn kalorien"]
+    "keywords": [
+      "mais kalorien",
+      "kalorien mais",
+      "mais nährwerte",
+      "maiskolben kalorien",
+      "dosenmais kalorien",
+      "mais kohlenhydrate",
+      "mais abnehmen",
+      "popcorn kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 86,
-    "protein_per_100g": 3.2,
-    "carbs_per_100g": 19.0,
-    "fat_per_100g": 1.2,
-    "fiber_per_100g": 2.7,
+    "protein_per_100g": 3.3,
+    "carbs_per_100g": 18.7,
+    "fat_per_100g": 1.4,
+    "fiber_per_100g": 2,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Maiskolben"
   },
   "variants": [
-    { "name": "Maiskolben gekocht (200g)", "portion_g": 200, "calories": 172, "protein": 6, "carbs": 38, "fat": 2 },
-    { "name": "Dosenmais (140g, abgetropft)", "portion_g": 140, "calories": 108, "protein": 4, "carbs": 22, "fat": 1, "tip": "Praktische Variante" },
-    { "name": "Mais roh (Körner, 100g)", "portion_g": 100, "calories": 86, "protein": 3, "carbs": 19, "fat": 1 },
-    { "name": "Mais gegrillt (200g Kolben)", "portion_g": 200, "calories": 180, "protein": 7, "carbs": 38, "fat": 2 },
-    { "name": "Mais mit Butter (200g + 10g)", "portion_g": 210, "calories": 246, "protein": 6, "carbs": 38, "fat": 9 },
-    { "name": "Popcorn natur (30g)", "portion_g": 30, "calories": 116, "protein": 3, "carbs": 19, "fat": 4 },
-    { "name": "Popcorn süß (50g)", "portion_g": 50, "calories": 240, "protein": 3, "carbs": 40, "fat": 8 },
-    { "name": "Maissalat (150g)", "portion_g": 150, "calories": 130, "protein": 4, "carbs": 20, "fat": 4 }
+    {
+      "name": "Maiskolben gekocht (200g)",
+      "portion_g": 200,
+      "calories": 192,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 3,
+      "basis": [
+        {
+          "fdcId": 169999,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Dosenmais (140g, abgetropft)",
+      "portion_g": 140,
+      "calories": 94,
+      "protein": 3,
+      "carbs": 20,
+      "fat": 2,
+      "tip": "Praktische Variante",
+      "basis": [
+        {
+          "fdcId": 169214,
+          "g": 140
+        }
+      ]
+    },
+    {
+      "name": "Mais roh (Körner, 100g)",
+      "portion_g": 100,
+      "calories": 86,
+      "protein": 3,
+      "carbs": 19,
+      "fat": 1
+    },
+    {
+      "name": "Mais mit Butter (200g gekocht + 10g Butter)",
+      "portion_g": 210,
+      "calories": 264,
+      "protein": 7,
+      "carbs": 42,
+      "fat": 11,
+      "basis": [
+        {
+          "fdcId": 169999,
+          "g": 200
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Popcorn natur (30g)",
+      "portion_g": 30,
+      "calories": 116,
+      "protein": 4,
+      "carbs": 23,
+      "fat": 1,
+      "basis": [
+        {
+          "fdcId": 167959,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Popcorn süß (50g)",
+      "portion_g": 50,
+      "calories": 216,
+      "protein": 2,
+      "carbs": 40,
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 167552,
+          "g": 50
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Erbsen", "calories": 81, "emoji": "🟢" },
-    { "name": "Kartoffeln", "calories": 70, "emoji": "🥔" },
-    { "name": "Reis (gekocht)", "calories": 130, "emoji": "🍚" },
-    { "name": "Brokkoli", "calories": 34, "emoji": "🥦" }
+    {
+      "name": "Erbsen (100g)",
+      "calories": 81,
+      "emoji": "🟢",
+      "basis": [
+        {
+          "slug": "erbsen",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Kartoffeln (100g)",
+      "calories": 86,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffeln",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Reis gekocht (100g)",
+      "calories": 130,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Brokkoli (100g)",
+      "calories": 34,
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Maiskolben statt Dose", "text": "Frischer Maiskolben hat mehr Geschmack und knackigere Textur. Dosenmais ist aber nährstoffmäßig fast gleichwertig – nur mehr Natrium.", "icon": "🌽" },
-    { "title": "Glutenfrei von Natur aus", "text": "Mais ist natürlich glutenfrei. Maismehl, Polenta und Tortillas sind gute Alternativen für Menschen mit Zöliakie.", "icon": "🚫" },
-    { "title": "Popcorn als gesunder Snack", "text": "Popcorn ohne Zucker/Butter hat nur 387 kcal/100g – und wer isst 100g? 30g reichen als Snack mit 116 kcal. Mehr Ballaststoffe als die meisten Snacks.", "icon": "🍿" },
-    { "title": "Mais + Bohnen = perfekte Kombi", "text": "Mais und Bohnen zusammen liefern alle essentiellen Aminosäuren. Die Kombination ist ein vollständiges Protein – beliebt in Lateinamerika.", "icon": "🫘" },
-    { "title": "Nicht zu lange kochen", "text": "Maiskolben nur 5-8 Minuten kochen. Zu langes Kochen macht die Körner hart und zäh statt weich und süß.", "icon": "⏱️" }
+    {
+      "title": "Maiskolben statt Dose",
+      "text": "Frischer Maiskolben hat mehr Geschmack und knackigere Textur. Dosenmais ist aber nährstoffmäßig fast gleichwertig, nur mit mehr Natrium.",
+      "icon": "🌽"
+    },
+    {
+      "title": "Glutenfrei von Natur aus",
+      "text": "Mais ist natürlich glutenfrei. Maismehl, Polenta und Tortillas sind gute Alternativen für Menschen mit Zöliakie.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Popcorn als gesunder Snack",
+      "text": "Popcorn ohne Zucker und Butter hat nur 387 kcal/100g, und wer isst schon 100g? 30g reichen als Snack mit 116 kcal. Mehr Ballaststoffe als die meisten Snacks.",
+      "icon": "🍿"
+    },
+    {
+      "title": "Mais + Bohnen = perfekte Kombi",
+      "text": "Mais und Bohnen zusammen liefern alle essentiellen Aminosäuren. Die Kombination ist ein vollständiges Protein und in Lateinamerika beliebt.",
+      "icon": "🫘"
+    },
+    {
+      "title": "Nicht zu lange kochen",
+      "text": "Maiskolben nur 5-8 Minuten kochen. Zu langes Kochen macht die Körner hart und zäh statt weich und süß.",
+      "icon": "⏱️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Mais?", "answer": "100g Maiskörner haben 86 kcal. Ein ganzer Maiskolben (200g) hat ca. 172 kcal. Dosenmais hat etwas weniger (77 kcal/100g) durch den höheren Wasseranteil." },
-    { "question": "Ist Mais gut zum Abnehmen?", "answer": "In Maßen ja. Mais hat mit 86 kcal/100g mehr Kalorien als die meisten Gemüsesorten, dafür aber Ballaststoffe (2,7g) und Protein (3,2g). Besser als Chips, aber kalorienreicher als Gurke." },
-    { "question": "Ist Mais ein Gemüse oder Getreide?", "answer": "Botanisch ist Mais ein Getreide (Gras-Familie). Im Supermarkt wird er aber als Gemüse verkauft. Ernährungstechnisch liegt er dazwischen: mehr Kohlenhydrate als Gemüse, weniger als Weizen." },
-    { "question": "Wie viele Kohlenhydrate hat Mais?", "answer": "Mais hat 19g Kohlenhydrate pro 100g – deutlich mehr als die meisten Gemüsesorten. Für Low Carb nur in kleinen Mengen geeignet." },
-    { "question": "Ist Dosenmais gesund?", "answer": "Ja, Dosenmais behält die meisten Nährstoffe. Nachteile: Etwas mehr Natrium und weniger Vitamin C als frischer Mais. Abspülen reduziert das Natrium." },
-    { "question": "Wie viele Kalorien hat Popcorn?", "answer": "Popcorn natur: ca. 387 kcal/100g. Aber 30g (eine Schale) haben nur 116 kcal und viel Volumen. Süßes Popcorn: ca. 480 kcal/100g. Kino-Popcorn noch mehr durch Butter." }
+    {
+      "question": "Wie viele Kalorien hat Mais?",
+      "answer": "100g rohe Maiskörner haben 86 kcal. Ein Maiskolben (200g) hat roh ca. 172 kcal, gekocht ca. 192 kcal. Dosenmais hat etwas weniger (67 kcal/100g) durch den höheren Wasseranteil."
+    },
+    {
+      "question": "Ist Mais gut zum Abnehmen?",
+      "answer": "In Maßen ja. Mais hat mit 86 kcal/100g mehr Kalorien als die meisten Gemüsesorten, dafür aber Ballaststoffe (2g) und Protein (3,3g). Besser als Chips, aber kalorienreicher als Gurke."
+    },
+    {
+      "question": "Ist Mais ein Gemüse oder Getreide?",
+      "answer": "Botanisch ist Mais ein Getreide (Gras-Familie). Im Supermarkt wird er aber als Gemüse verkauft. Ernährungstechnisch liegt er dazwischen: mehr Kohlenhydrate als Gemüse, weniger als Weizen."
+    },
+    {
+      "question": "Wie viele Kohlenhydrate hat Mais?",
+      "answer": "Mais hat rund 19g Kohlenhydrate pro 100g, deutlich mehr als die meisten Gemüsesorten. Für Low Carb nur in kleinen Mengen geeignet."
+    },
+    {
+      "question": "Ist Dosenmais gesund?",
+      "answer": "Ja, Dosenmais behält die meisten Nährstoffe. Nachteile: Etwas mehr Natrium und weniger Vitamin C als frischer Mais. Abspülen reduziert das Natrium."
+    },
+    {
+      "question": "Wie viele Kalorien hat Popcorn?",
+      "answer": "Popcorn natur: ca. 387 kcal/100g. Aber 30g (eine Schale) haben nur 116 kcal und viel Volumen. Karamellisiertes Popcorn: ca. 431 kcal/100g. Kino-Popcorn noch mehr durch Butter."
+    }
   ],
-  "related_foods": ["kidneybohnen", "reis", "kartoffeln", "erbsen"]
+  "related_foods": [
+    "kidneybohnen",
+    "reis",
+    "kartoffeln",
+    "erbsen"
+  ]
 }

@@ -3,9 +3,10 @@
   "name": "Laugenzopf",
   "emoji": "🥨",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169064 (Pretzels, soft), Werte je 100 g",
   "seo": {
     "title": "Laugenzopf Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Laugenzopf? Ein Laugenzopf (90g) hat ca. 252 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat ein Laugenzopf? Ein Laugenzopf (90g) hat ca. 304 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "laugenzopf kalorien",
       "laugenzopf kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 280,
-    "protein_per_100g": 8.5,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 338,
+    "protein_per_100g": 8.2,
+    "carbs_per_100g": 69.4,
+    "fat_per_100g": 3.1,
+    "fiber_per_100g": 1.7,
     "typical_portion_g": 90,
     "typical_portion_name": "1 Laugenzopf (mittel)"
   },
@@ -28,100 +29,139 @@
     {
       "name": "Halber Laugenzopf (45g)",
       "portion_g": 45,
-      "calories": 126,
+      "calories": 152,
       "protein": 4,
-      "carbs": 23,
-      "fat": 2,
+      "carbs": 31,
+      "fat": 1,
       "tip": "Kleine Portion zum Kaffee"
     },
     {
       "name": "Laugenzopf klein (70g)",
       "portion_g": 70,
-      "calories": 196,
+      "calories": 237,
       "protein": 6,
-      "carbs": 36,
+      "carbs": 49,
       "fat": 2
     },
     {
       "name": "Laugenzopf mittel (90g)",
       "portion_g": 90,
-      "calories": 252,
-      "protein": 8,
-      "carbs": 47,
+      "calories": 304,
+      "protein": 7,
+      "carbs": 62,
       "fat": 3,
       "tip": "Standard beim Bäcker"
     },
     {
       "name": "Laugenzopf groß (120g)",
       "portion_g": 120,
-      "calories": 336,
+      "calories": 406,
       "protein": 10,
-      "carbs": 62,
+      "carbs": 83,
       "fat": 4
     },
     {
       "name": "Laugenzopf pro 100g",
       "portion_g": 100,
-      "calories": 280,
-      "protein": 9,
-      "carbs": 52,
-      "fat": 4
+      "calories": 338,
+      "protein": 8,
+      "carbs": 69,
+      "fat": 3
     },
     {
       "name": "Laugenzopf mit Käse (110g)",
       "portion_g": 110,
-      "calories": 330,
-      "protein": 13,
-      "carbs": 50,
-      "fat": 9,
-      "tip": "Käse erhöht Fett und Kalorien"
+      "calories": 373,
+      "protein": 11,
+      "carbs": 69,
+      "fat": 6,
+      "tip": "Käse erhöht Fett und Kalorien",
+      "basis": [
+        {
+          "fdcId": 2708276,
+          "g": 110
+        }
+      ]
     },
     {
-      "name": "Laugenzopf mit Butter (95g)",
-      "portion_g": 95,
-      "calories": 310,
-      "protein": 8,
-      "carbs": 47,
-      "fat": 9,
-      "tip": "Butter bringt zusätzliches Fett"
+      "name": "Laugenzopf mit Butter (90g + 10g Butter)",
+      "portion_g": 100,
+      "calories": 376,
+      "protein": 7,
+      "carbs": 62,
+      "fat": 11,
+      "tip": "Butter bringt zusätzliches Fett",
+      "basis": [
+        {
+          "g": 90
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Brezel (70g)",
-      "calories": 219,
-      "emoji": "🥨"
+      "calories": 237,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Croissant (60g)",
-      "calories": 250,
-      "emoji": "🥐"
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Brötchen (45g)",
-      "calories": 120,
-      "emoji": "🥖"
+      "calories": 132,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 45
+        }
+      ]
     },
     {
       "name": "Bagel (90g)",
-      "calories": 245,
-      "emoji": "🥯"
+      "calories": 238,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "bagel",
+          "g": 90
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Halbe Portion spart Kalorien",
-      "text": "Ein halber Laugenzopf (45g) hat nur rund 126 kcal. Wer den Heißhunger schon mit der halben Portion stillt, spart die Hälfte der Kalorien.",
+      "text": "Ein halber Laugenzopf (45g) hat nur rund 152 kcal. Wer den Heißhunger schon mit der halben Portion stillt, spart die Hälfte der Kalorien.",
       "icon": "✂️"
     },
     {
       "title": "Belag macht den Unterschied",
-      "text": "Pur hat ein Laugenzopf rund 252 kcal. Mit Käse oder Butter steigt der Wert deutlich, vor allem durch das zusätzliche Fett.",
+      "text": "Pur hat ein Laugenzopf rund 304 kcal. Mit Käse oder Butter steigt der Wert deutlich, vor allem durch das zusätzliche Fett.",
       "icon": "🧈"
     },
     {
       "title": "Wenig Fett, viele Kohlenhydrate",
-      "text": "Mit nur 3,5g Fett pro 100g ist der Laugenzopf fettarm. Den Großteil der Kalorien liefern die Kohlenhydrate aus dem Mehl.",
+      "text": "Mit nur 3,1g Fett pro 100g ist der Laugenzopf fettarm. Den Großteil der Kalorien liefern die Kohlenhydrate aus dem Mehl.",
       "icon": "🌾"
     },
     {
@@ -138,23 +178,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Laugenzopf?",
-      "answer": "Ein mittelgroßer Laugenzopf (90g) hat etwa 252 kcal. Pro 100g sind es rund 280 kcal."
+      "answer": "Ein mittelgroßer Laugenzopf (90g) hat etwa 304 kcal. Pro 100g sind es rund 338 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Laugenzopf pro 100g?",
-      "answer": "Pro 100g enthält ein Laugenzopf etwa 280 kcal, 8,5g Protein, 52g Kohlenhydrate und 3,5g Fett."
+      "answer": "Pro 100g enthält ein Laugenzopf etwa 338 kcal, 8,2g Protein, 69,4g Kohlenhydrate und 3,1g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Laugenzopf?",
-      "answer": "Ein Laugenzopf hat rund 52g Kohlenhydrate pro 100g. Ein mittlerer Zopf (90g) liefert etwa 47g Kohlenhydrate."
+      "answer": "Ein Laugenzopf hat rund 69g Kohlenhydrate pro 100g. Ein mittlerer Zopf (90g) liefert etwa 62g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat ein Laugenzopf?",
-      "answer": "Ein Laugenzopf enthält etwa 8,5g Protein pro 100g, also rund 8g pro mittlerem Stück (90g) - für ein Gebäck ein solider Wert."
+      "answer": "Ein Laugenzopf enthält etwa 8,2g Protein pro 100g, also rund 7g pro mittlerem Stück (90g), für ein Gebäck ein solider Wert."
     },
     {
       "question": "Ist ein Laugenzopf zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 252 kcal pro Stück passt ein Laugenzopf in eine ausgewogene Ernährung. Wer abnehmen möchte, sollte auf fettreichen Belag verzichten und die Portion im Blick behalten."
+      "answer": "In Maßen ja. Mit rund 304 kcal pro Stück passt ein Laugenzopf in eine ausgewogene Ernährung. Wer abnehmen möchte, sollte auf fettreichen Belag verzichten und die Portion im Blick behalten."
     },
     {
       "question": "Ist ein Laugenzopf gesund?",

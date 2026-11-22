@@ -3,9 +3,10 @@
   "name": "Peking-Suppe",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2707136 (Soup, hot and sour), Werte je 100 g",
   "seo": {
     "title": "Peking-Suppe Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Peking-Suppe? Eine Schale (250g) hat ca. 115 kcal. Nährwerte pro 100g & Portion, Eiweiß, Kohlenhydrate und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Peking-Suppe? Eine Schale (250g) hat ca. 98 kcal. Nährwerte pro 100g & Portion, Eiweiß, Kohlenhydrate und Tipps zum Abnehmen.",
     "keywords": [
       "peking suppe kalorien",
       "peking suppe kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 46,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 5.5,
-    "fat_per_100g": 1.5,
+    "calories_per_100g": 39,
+    "protein_per_100g": 2.6,
+    "carbs_per_100g": 4.4,
+    "fat_per_100g": 1.2,
     "fiber_per_100g": 0.5,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Schale (250g)"
@@ -28,79 +29,103 @@
     {
       "name": "Kleine Schale (200g)",
       "portion_g": 200,
-      "calories": 92,
-      "protein": 5,
-      "carbs": 11,
-      "fat": 3
+      "calories": 78,
+      "protein": 5.2,
+      "carbs": 8.8,
+      "fat": 2.4
     },
     {
       "name": "1 Schale (250g)",
       "portion_g": 250,
-      "calories": 115,
-      "protein": 6.2,
-      "carbs": 13.8,
-      "fat": 3.8,
+      "calories": 98,
+      "protein": 6.5,
+      "carbs": 11,
+      "fat": 3,
       "tip": "Standard-Portion im Restaurant"
     },
     {
       "name": "Große Schale (300g)",
       "portion_g": 300,
-      "calories": 138,
-      "protein": 7.5,
-      "carbs": 16.5,
-      "fat": 4.5
+      "calories": 117,
+      "protein": 7.8,
+      "carbs": 13.2,
+      "fat": 3.6
     },
     {
       "name": "Vorspeisen-Schälchen (150g)",
       "portion_g": 150,
-      "calories": 69,
-      "protein": 3.8,
-      "carbs": 8.3,
-      "fat": 2.3
+      "calories": 59,
+      "protein": 3.9,
+      "carbs": 6.6,
+      "fat": 1.8
     },
     {
       "name": "Familienschüssel (500g)",
       "portion_g": 500,
-      "calories": 230,
-      "protein": 12.5,
-      "carbs": 27.5,
-      "fat": 7.5
+      "calories": 195,
+      "protein": 13,
+      "carbs": 22,
+      "fat": 6
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 46,
-      "protein": 2.5,
-      "carbs": 5.5,
-      "fat": 1.5
+      "calories": 39,
+      "protein": 2.6,
+      "carbs": 4.4,
+      "fat": 1.2
     }
   ],
   "comparison": [
     {
       "name": "Miso-Suppe (250g)",
-      "calories": 88,
-      "emoji": "🍵"
+      "calories": 60,
+      "emoji": "🍵",
+      "basis": [
+        {
+          "slug": "miso-suppe",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Wan-Tan-Suppe (250g)",
-      "calories": 158,
-      "emoji": "🥟"
+      "calories": 83,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "fdcId": 2709160,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Tom Kha Gai (250g)",
-      "calories": 225,
-      "emoji": "🥥"
+      "calories": 213,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "tom-kha-gai",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Gulaschsuppe (250g)",
-      "calories": 200,
-      "emoji": "🍲"
+      "calories": 300,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulaschsuppe",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienarmer Sattmacher",
-      "text": "Eine Schale Peking-Suppe (250g) hat nur etwa 115 kcal. Durch den hohen Wasseranteil füllt sie den Magen, ohne stark zu Buche zu schlagen.",
+      "text": "Eine Schale Peking-Suppe (250g) hat nur etwa 98 kcal. Durch den hohen Wasseranteil füllt sie den Magen, ohne stark zu Buche zu schlagen.",
       "icon": "🍲"
     },
     {
@@ -127,23 +152,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Peking-Suppe?",
-      "answer": "Eine Schale Peking-Suppe (250g) hat ca. 115 kcal. Pro 100g sind es etwa 46 kcal. Damit gehört sie zu den kalorienarmen Suppen."
+      "answer": "Eine Schale Peking-Suppe (250g) hat ca. 98 kcal. Pro 100g sind es etwa 39 kcal. Damit gehört sie zu den kalorienarmen Suppen."
     },
     {
       "question": "Wie viele Kalorien hat Peking-Suppe pro 100g?",
-      "answer": "Peking-Suppe hat rund 46 kcal pro 100g, mit 2,5g Eiweiß, 5,5g Kohlenhydraten und 1,5g Fett."
+      "answer": "Peking-Suppe hat rund 39 kcal pro 100g, mit 2,6g Eiweiß, 4,4g Kohlenhydraten und 1,2g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Peking-Suppe?",
-      "answer": "Peking-Suppe enthält etwa 5,5g Kohlenhydrate pro 100g, also rund 13,8g pro Schale (250g). Die Kohlenhydrate stammen vor allem aus der Speisestärke zur Bindung."
+      "answer": "Peking-Suppe enthält etwa 4,4g Kohlenhydrate pro 100g, also rund 11g pro Schale (250g). Die Kohlenhydrate stammen vor allem aus der Speisestärke zur Bindung."
     },
     {
       "question": "Wie viel Eiweiß hat Peking-Suppe?",
-      "answer": "Eine Schale (250g) liefert rund 6g Eiweiß. Das Protein kommt aus Tofu, Ei und gegebenenfalls Fleisch- oder Pilzeinlagen."
+      "answer": "Eine Schale (250g) liefert rund 6,5g Eiweiß. Das Protein kommt aus Tofu, Ei und gegebenenfalls Fleisch- oder Pilzeinlagen."
     },
     {
       "question": "Ist Peking-Suppe zum Abnehmen geeignet?",
-      "answer": "Ja. Mit etwa 115 kcal pro Schale ist Peking-Suppe sehr kalorienarm und sättigt durch den hohen Wasseranteil gut. Als Vorspeise kann sie helfen, insgesamt weniger zu essen."
+      "answer": "Ja. Mit etwa 98 kcal pro Schale ist Peking-Suppe sehr kalorienarm und sättigt durch den hohen Wasseranteil gut. Als Vorspeise kann sie helfen, insgesamt weniger zu essen."
     },
     {
       "question": "Ist Peking-Suppe gesund?",

@@ -3,6 +3,7 @@
   "name": "Lauch",
   "emoji": "🥬",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169246 (Leeks, (bulb and lower leaf-portion), raw), Werte je 100 g",
   "seo": {
     "title": "Lauch Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Lauch? Roher Lauch (Porree) hat nur 61 kcal pro 100g. Nährwerte je Stange & Portion, gekocht im Vergleich plus Tipps zum Abnehmen.",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 26,
-    "protein_per_100g": 2.1,
-    "carbs_per_100g": 3.3,
+    "calories_per_100g": 61,
+    "protein_per_100g": 1.5,
+    "carbs_per_100g": 14.2,
     "fat_per_100g": 0.3,
-    "fiber_per_100g": 2.5,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Lauchstange (mittel)"
   },
@@ -30,84 +31,133 @@
     {
       "name": "Lauchstange klein (100g)",
       "portion_g": 100,
-      "calories": 26,
-      "protein": 2.1,
-      "carbs": 3.3,
+      "calories": 61,
+      "protein": 1.5,
+      "carbs": 14.2,
       "fat": 0.3
     },
     {
       "name": "Lauchstange mittel (150g)",
       "portion_g": 150,
-      "calories": 39,
-      "protein": 3.1,
-      "carbs": 5.0,
+      "calories": 92,
+      "protein": 2.3,
+      "carbs": 21.3,
       "fat": 0.5,
       "tip": "Standard"
     },
     {
       "name": "Lauchstange groß (250g)",
       "portion_g": 250,
-      "calories": 65,
-      "protein": 5.2,
-      "carbs": 8.2,
+      "calories": 153,
+      "protein": 3.8,
+      "carbs": 35.5,
       "fat": 0.8
     },
     {
       "name": "Lauch geschnitten (1 Tasse, 90g)",
       "portion_g": 90,
-      "calories": 23,
-      "protein": 1.9,
-      "carbs": 3.0,
+      "calories": 55,
+      "protein": 1.4,
+      "carbs": 12.8,
       "fat": 0.3
     },
     {
       "name": "Lauch gekocht (150g)",
       "portion_g": 150,
-      "calories": 39,
-      "protein": 3.1,
-      "carbs": 5.0,
-      "fat": 0.5,
-      "tip": "Gedünstet/gekocht weniger Kalorien als roh, da wasserreich"
+      "calories": 47,
+      "protein": 1.2,
+      "carbs": 11.4,
+      "fat": 0.3,
+      "tip": "Gedünstet/gekocht weniger Kalorien als roh, da wasserreich",
+      "basis": [
+        {
+          "fdcId": 168426,
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Lauch in Butter gebraten (150g)",
+      "name": "Lauch in Butter gebraten (140g + 10g Butter)",
       "portion_g": 150,
-      "calories": 138,
+      "calories": 157,
       "protein": 2.2,
-      "carbs": 21.3,
-      "fat": 6,
-      "tip": "Fett aus dem Bratfett treibt die Kalorien hoch"
+      "carbs": 19.9,
+      "fat": 8.5,
+      "tip": "Fett aus dem Bratfett treibt die Kalorien hoch",
+      "basis": [
+        {
+          "g": 140
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
-      "name": "Lauchgemüse mit Sahne (200g)",
+      "name": "Lauchgemüse mit Sahne (170g gekochter Lauch + 30g Sahne)",
       "portion_g": 200,
-      "calories": 52,
-      "protein": 4.2,
-      "carbs": 6.6,
-      "fat": 0.6,
-      "tip": "Beilage mit Sahne, deutlich gehaltvoller"
+      "calories": 140,
+      "protein": 2,
+      "carbs": 13.8,
+      "fat": 9.6,
+      "tip": "Beilage mit Sahne, deutlich gehaltvoller",
+      "basis": [
+        {
+          "fdcId": 168426,
+          "g": 170
+        },
+        {
+          "fdcId": 170858,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Zwiebel",
+      "name": "Zwiebel (100g)",
       "calories": 40,
-      "emoji": "🧅"
+      "emoji": "🧅",
+      "basis": [
+        {
+          "slug": "zwiebel",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Brokkoli",
+      "name": "Brokkoli (100g)",
       "calories": 34,
-      "emoji": "🥦"
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Karotten",
+      "name": "Karotten (100g)",
       "calories": 41,
-      "emoji": "🥕"
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Zucchini",
+      "name": "Zucchini (100g)",
       "calories": 17,
-      "emoji": "🥒"
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "zucchini",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -118,7 +168,7 @@
     },
     {
       "title": "Gekocht noch leichter",
-      "text": "Gedünsteter oder gekochter Lauch kommt auf etwa 31 kcal pro 100g, weil er beim Garen zusammenfällt und kaum zusätzliche Kalorien hinzukommen – ideal als Beilage.",
+      "text": "Gedünsteter oder gekochter Lauch kommt auf etwa 31 kcal pro 100g, weil er beim Garen zusammenfällt und kaum zusätzliche Kalorien hinzukommen, ideal als Beilage.",
       "icon": "♨️"
     },
     {
@@ -133,7 +183,7 @@
     },
     {
       "title": "Vom Schnitt zum Geschmack",
-      "text": "Das hellere Weiße ist milder und zarter, das dunkle Grün kräftiger im Aroma. Beide Teile haben praktisch gleiche Kalorien – das Grün also ruhig mitverwenden.",
+      "text": "Das hellere Weiße ist milder und zarter, das dunkle Grün kräftiger im Aroma. Beide Teile haben praktisch gleiche Kalorien, das Grün also ruhig mitverwenden.",
       "icon": "🔪"
     }
   ],
@@ -148,7 +198,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Lauch?",
-      "answer": "Lauch enthält etwa 14,2g Kohlenhydrate pro 100g, davon ein Teil als Ballaststoffe (ca. 1,8g). Der Zuckergehalt ist mit rund 4g moderat."
+      "answer": "Lauch enthält etwa 14,2g Kohlenhydrate pro 100g, davon ein Teil als Ballaststoffe (ca. 1,8g). Der Zuckergehalt ist mit rund 3,9g moderat."
     },
     {
       "question": "Wie viel Protein hat Lauch?",
@@ -156,7 +206,7 @@
     },
     {
       "question": "Ist Lauch zum Abnehmen geeignet?",
-      "answer": "Ja. Mit wenigen Kalorien, viel Wasser und Ballaststoffen ist Lauch ideal zum Abnehmen. Entscheidend ist die fettarme Zubereitung – gedünstet oder in Brühe statt in viel Butter oder Sahne."
+      "answer": "Ja. Mit wenigen Kalorien, viel Wasser und Ballaststoffen ist Lauch ideal zum Abnehmen. Entscheidend ist die fettarme Zubereitung: gedünstet oder in Brühe statt in viel Butter oder Sahne."
     },
     {
       "question": "Ist Lauch gesund?",

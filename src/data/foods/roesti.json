@@ -3,9 +3,10 @@
   "name": "Rösti",
   "emoji": "🥔",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2709483 (Potato, hash brown, from fresh), Werte je 100 g",
   "seo": {
     "title": "Rösti Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Rösti? Eine Portion (150g) hat ca. 248 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Rösti? Eine Portion (150g) hat ca. 285 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "kalorien rösti",
       "rösti kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 165,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 21,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 190,
+    "protein_per_100g": 1.9,
+    "carbs_per_100g": 18.6,
+    "fat_per_100g": 12.3,
+    "fiber_per_100g": 1.6,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Portion (150g)"
   },
@@ -28,87 +29,114 @@
     {
       "name": "Kleine Portion (100g)",
       "portion_g": 100,
-      "calories": 165,
-      "protein": 2.5,
-      "carbs": 21,
-      "fat": 8
+      "calories": 190,
+      "protein": 1.9,
+      "carbs": 18.6,
+      "fat": 12.3
     },
     {
       "name": "Rösti aus der Pfanne (150g)",
       "portion_g": 150,
-      "calories": 248,
-      "protein": 3.8,
-      "carbs": 32,
-      "fat": 12,
+      "calories": 285,
+      "protein": 2.9,
+      "carbs": 27.9,
+      "fat": 18.5,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Portion (250g)",
       "portion_g": 250,
-      "calories": 413,
-      "protein": 6.2,
-      "carbs": 52,
-      "fat": 20
+      "calories": 475,
+      "protein": 4.8,
+      "carbs": 46.5,
+      "fat": 30.8
     },
     {
       "name": "Restaurant-Beilage (300g)",
       "portion_g": 300,
-      "calories": 495,
-      "protein": 7.5,
-      "carbs": 63,
-      "fat": 24,
-      "tip": "Oft als sättigende Beilage serviert"
+      "calories": 816,
+      "protein": 7.7,
+      "carbs": 86.6,
+      "fat": 51.1,
+      "tip": "Restaurant-Rösti, meist fettreicher",
+      "basis": [
+        {
+          "fdcId": 2709480,
+          "g": 300
+        }
+      ]
     },
     {
-      "name": "Ofen-Rösti, fettärmer (150g)",
-      "portion_g": 150,
-      "calories": 188,
-      "protein": 3.6,
-      "carbs": 33,
-      "fat": 4.5,
-      "tip": "Im Ofen statt in der Pfanne, spart Bratfett"
-    },
-    {
-      "name": "Tiefkühl-Rösti, knusprig frittiert (125g)",
+      "name": "Tiefkühl-Rösti, in der Pfanne gebraten (125g)",
       "portion_g": 125,
-      "calories": 250,
-      "protein": 3.4,
-      "carbs": 29,
-      "fat": 14,
-      "tip": "Fertigprodukt mit mehr Fett"
+      "calories": 274,
+      "protein": 3.3,
+      "carbs": 35.6,
+      "fat": 14.5,
+      "tip": "Fertigprodukt aus dem Tiefkühlregal",
+      "basis": [
+        {
+          "fdcId": 170044,
+          "g": 125
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Bratkartoffeln",
-      "calories": 168,
-      "emoji": "🥔"
+      "name": "Bratkartoffeln (150g)",
+      "calories": 278,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "bratkartoffeln",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Kartoffelpuffer",
-      "calories": 195,
-      "emoji": "🥞"
+      "name": "Kartoffelpuffer (150g)",
+      "calories": 294,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "slug": "kartoffelpuffer",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Pommes frites",
-      "calories": 290,
-      "emoji": "🍟"
+      "name": "Pommes frites (150g)",
+      "calories": 468,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "slug": "pommes-frites",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Kartoffeln (gekocht)",
-      "calories": 70,
-      "emoji": "🥔"
+      "name": "Kartoffeln (gekocht, 150g)",
+      "calories": 129,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "fdcId": 170440,
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Das Bratfett bestimmt die Kalorien",
-      "text": "Reine Kartoffel hat nur etwa 77 kcal pro 100g. Der Großteil der Rösti-Kalorien stammt aus dem Öl oder der Butter beim Braten. Wer sparsam fettet, senkt den Wert deutlich.",
+      "text": "Gekochte Kartoffeln haben nur etwa 86 kcal pro 100g. Der Großteil der Rösti-Kalorien stammt aus dem Öl oder der Butter beim Braten. Wer sparsam fettet, senkt den Wert deutlich.",
       "icon": "🧈"
     },
     {
       "title": "Im Ofen statt in der Pfanne",
-      "text": "Eine Ofen-Rösti mit nur wenig Öl bestrichen kommt auf rund 125 kcal pro 100g statt 165 kcal. Das spart bei einer Portion etwa 60 kcal.",
+      "text": "Eine Ofen-Rösti, nur dünn mit Öl bestrichen, kommt mit deutlich weniger Fett aus als eine Pfannen-Rösti mit rund 190 kcal pro 100g.",
       "icon": "🔥"
     },
     {
@@ -130,19 +158,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Portion Rösti?",
-      "answer": "Eine normale Portion Rösti aus der Pfanne (150g) hat etwa 248 kcal. Eine große Portion von 250g kommt auf rund 413 kcal."
+      "answer": "Eine normale Portion Rösti aus der Pfanne (150g) hat etwa 285 kcal. Eine große Portion von 250g kommt auf rund 475 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Rösti pro 100g?",
-      "answer": "In der Pfanne gebratene Rösti hat etwa 165 kcal pro 100g. Der genaue Wert hängt stark von der Menge des verwendeten Bratfetts ab."
+      "answer": "In der Pfanne gebratene Rösti hat etwa 190 kcal pro 100g. Der genaue Wert hängt stark von der Menge des verwendeten Bratfetts ab."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Rösti?",
-      "answer": "Rösti enthält etwa 21g Kohlenhydrate pro 100g, da sie hauptsächlich aus Kartoffeln besteht. Eine Portion (150g) liefert rund 32g."
+      "answer": "Rösti enthält etwa 18,6g Kohlenhydrate pro 100g, da sie hauptsächlich aus Kartoffeln besteht. Eine Portion (150g) liefert rund 28g."
     },
     {
       "question": "Wie viel Protein steckt in Rösti?",
-      "answer": "Rösti ist nicht besonders eiweißreich und enthält etwa 2,5g Protein pro 100g. Kombiniert man sie mit Ei oder Quark, steigt der Eiweißgehalt der Mahlzeit deutlich."
+      "answer": "Rösti ist nicht besonders eiweißreich und enthält etwa 1,9g Protein pro 100g. Kombiniert man sie mit Ei oder Quark, steigt der Eiweißgehalt der Mahlzeit deutlich."
     },
     {
       "question": "Ist Rösti zum Abnehmen geeignet?",

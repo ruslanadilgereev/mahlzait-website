@@ -3,9 +3,10 @@
   "name": "Powerade",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710770 (Sports drink (Powerade): 32 kcal), Werte je 100 g; je 100 ml mit 1,048 g/ml 34 kcal",
   "seo": {
     "title": "Powerade Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Powerade? Eine 500-ml-Flasche hat ca. 130 kcal. Alle Nährwerte pro 100 ml, Gebindegrößen im Vergleich & Tipps zum Sportgetränk.",
+    "description": "Wie viele Kalorien hat Powerade? Eine 500-ml-Flasche hat ca. 168 kcal. Alle Nährwerte pro 100 ml, Gebindegrößen im Vergleich & Tipps zum Sportgetränk.",
     "keywords": [
       "powerade kalorien",
       "powerade kcal",
@@ -17,86 +18,126 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 26,
+    "calories_per_100g": 32,
     "protein_per_100g": 0,
-    "carbs_per_100g": 6.3,
-    "fat_per_100g": 0,
+    "carbs_per_100g": 7.8,
+    "fat_per_100g": 0.1,
     "fiber_per_100g": 0,
-    "typical_portion_g": 500,
+    "typical_portion_g": 524,
     "typical_portion_name": "1 Flasche (500 ml)"
   },
   "variants": [
     {
       "name": "Glas (200 ml)",
-      "portion_g": 200,
-      "calories": 52,
+      "portion_g": 210,
+      "calories": 67,
       "protein": 0,
-      "carbs": 12.6,
-      "fat": 0
+      "carbs": 16.4,
+      "fat": 0.2
     },
     {
       "name": "Dose (330 ml)",
-      "portion_g": 330,
-      "calories": 86,
+      "portion_g": 346,
+      "calories": 111,
       "protein": 0,
-      "carbs": 20.8,
-      "fat": 0
+      "carbs": 27,
+      "fat": 0.3
     },
     {
       "name": "Flasche (500 ml)",
-      "portion_g": 500,
-      "calories": 130,
+      "portion_g": 524,
+      "calories": 168,
       "protein": 0,
-      "carbs": 31.5,
-      "fat": 0,
+      "carbs": 40.9,
+      "fat": 0.5,
       "tip": "Standard"
     },
     {
       "name": "Sportflasche (750 ml)",
-      "portion_g": 750,
-      "calories": 195,
+      "portion_g": 786,
+      "calories": 252,
       "protein": 0,
-      "carbs": 47.3,
-      "fat": 0
+      "carbs": 61.3,
+      "fat": 0.8
     },
     {
       "name": "PET-Flasche (1 Liter)",
-      "portion_g": 1000,
-      "calories": 260,
+      "portion_g": 1048,
+      "calories": 335,
       "protein": 0,
-      "carbs": 63,
-      "fat": 0
+      "carbs": 81.7,
+      "fat": 1
     },
     {
       "name": "Powerade Zero (500 ml)",
-      "portion_g": 500,
-      "calories": 5,
+      "portion_g": 507,
+      "calories": 0,
       "protein": 0,
-      "carbs": 0.5,
+      "carbs": 0.7,
       "fat": 0,
-      "tip": "Zuckerfreie Variante"
+      "tip": "Zuckerfreie Variante",
+      "basis": [
+        {
+          "fdcId": 2710773,
+          "ml": 500,
+          "g": 507
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Cola (500 ml)",
-      "calories": 210,
-      "emoji": "🥤"
+      "calories": 220,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     },
     {
       "name": "Apfelschorle (500 ml)",
-      "calories": 110,
-      "emoji": "🍎"
+      "calories": 121,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 250,
+          "g": 262
+        },
+        {
+          "slug": "mineralwasser",
+          "ml": 250,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Mineralwasser (500 ml)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser",
+          "ml": 500,
+          "g": 500
+        }
+      ]
     },
     {
       "name": "Eistee (500 ml)",
-      "calories": 150,
-      "emoji": "🧊"
+      "calories": 236,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "eistee",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     }
   ],
   "tips": [
@@ -107,12 +148,12 @@
     },
     {
       "title": "Auf den Zucker achten",
-      "text": "Eine 500-ml-Flasche enthält rund 31 g Kohlenhydrate, fast ausschließlich Zucker. Das entspricht etwa 10 Stück Würfelzucker, was beim Abnehmen schnell zu Buche schlägt.",
+      "text": "Eine 500-ml-Flasche enthält rund 41 g Kohlenhydrate, davon rund 32 g Zucker. Das schlägt beim Abnehmen schnell zu Buche.",
       "icon": "🍬"
     },
     {
       "title": "Zero-Variante spart Kalorien",
-      "text": "Powerade Zero kommt mit Süßstoffen statt Zucker aus und hat pro 500 ml nur etwa 5 kcal. Den Elektrolyt-Effekt bietet sie weiterhin.",
+      "text": "Powerade Zero kommt mit Süßstoffen statt Zucker aus und hat laut USDA praktisch keine Kalorien. Den Elektrolyt-Effekt bietet sie weiterhin.",
       "icon": "🟢"
     },
     {
@@ -129,11 +170,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Powerade?",
-      "answer": "Powerade hat etwa 26 kcal pro 100 ml. Eine 500-ml-Flasche kommt damit auf rund 130 kcal, eine 1-Liter-Flasche auf etwa 260 kcal."
+      "answer": "Powerade hat etwa 34 kcal pro 100 ml. Eine 500-ml-Flasche kommt damit auf rund 168 kcal, eine 1-Liter-Flasche auf etwa 335 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Powerade?",
-      "answer": "Powerade enthält etwa 6,3 g Kohlenhydrate pro 100 ml, fast vollständig Zucker. Eine 500-ml-Flasche liefert somit rund 31 g Zucker, das entspricht etwa 10 Stück Würfelzucker."
+      "answer": "Powerade enthält etwa 8,2 g Kohlenhydrate pro 100 ml, davon rund 6,4 g Zucker. Eine 500-ml-Flasche liefert somit rund 32 g Zucker."
     },
     {
       "question": "Hat Powerade Eiweiß oder Fett?",
@@ -149,7 +190,7 @@
     },
     {
       "question": "Was ist der Unterschied zwischen Powerade und Powerade Zero?",
-      "answer": "Powerade Zero wird mit Süßstoffen statt Zucker gesüßt und hat statt rund 26 kcal nur etwa 1 kcal pro 100 ml. Beide enthalten Elektrolyte wie Natrium."
+      "answer": "Powerade Zero wird mit Süßstoffen statt Zucker gesüßt und hat laut USDA statt rund 34 kcal praktisch 0 kcal pro 100 ml. Beide enthalten Elektrolyte wie Natrium."
     }
   ],
   "related_foods": [

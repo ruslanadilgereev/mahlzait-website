@@ -3,9 +3,10 @@
   "name": "KFC",
   "emoji": "🍗",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170346 (KFC, Fried Chicken, ORIGINAL RECIPE, Thigh, meat and skin with breading), Werte je 100 g",
   "seo": {
     "title": "KFC Kalorien: Nährwerte & Menüs | Mahlzait",
-    "description": "Wie viele Kalorien hat KFC? Ein Original-Recipe-Hähnchenteil hat ca. 270 kcal. Alle Nährwerte pro 100g & Portion, Menüs im Vergleich + Diät-Tipps.",
+    "description": "Wie viele Kalorien hat KFC? Ein Original-Recipe-Schenkel (135g) hat ca. 363 kcal. Alle Nährwerte pro 100g & Portion, Menüs im Vergleich + Diät-Tipps.",
     "keywords": [
       "kfc kalorien",
       "kentucky fried chicken kalorien",
@@ -16,103 +17,213 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 245,
-    "protein_per_100g": 20,
-    "carbs_per_100g": 9,
-    "fat_per_100g": 15,
-    "fiber_per_100g": 0.7,
-    "typical_portion_g": 110,
-    "typical_portion_name": "1 Original-Recipe-Hähnchenteil"
+    "calories_per_100g": 269,
+    "protein_per_100g": 18.9,
+    "carbs_per_100g": 8.5,
+    "fat_per_100g": 17.7,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 135,
+    "typical_portion_name": "1 Original-Recipe-Schenkel"
   },
   "variants": [
     {
-      "name": "Original Recipe Hähnchenteil (110g)",
-      "portion_g": 110,
-      "calories": 270,
-      "protein": 22,
-      "carbs": 8,
-      "fat": 16,
+      "name": "Original Recipe Schenkel (135g)",
+      "portion_g": 135,
+      "calories": 363,
+      "protein": 26,
+      "carbs": 11,
+      "fat": 24,
       "tip": "Das klassische, panierte Hähnchenteil"
+    },
+    {
+      "name": "Original Recipe Brust (212g)",
+      "portion_g": 212,
+      "calories": 490,
+      "protein": 47,
+      "carbs": 13,
+      "fat": 28,
+      "basis": [
+        {
+          "fdcId": 170744,
+          "g": 212
+        }
+      ]
+    },
+    {
+      "name": "Brust ohne Haut und Panade (152g)",
+      "portion_g": 152,
+      "calories": 226,
+      "protein": 41,
+      "carbs": 0,
+      "fat": 7,
+      "tip": "Haut und Panade entfernt",
+      "basis": [
+        {
+          "fdcId": 170739,
+          "g": 152
+        }
+      ]
     },
     {
       "name": "Hot Wings (6 Stück, 130g)",
       "portion_g": 130,
-      "calories": 360,
-      "protein": 22,
-      "carbs": 12,
-      "fat": 25
+      "calories": 386,
+      "protein": 28,
+      "carbs": 13,
+      "fat": 25,
+      "tip": "Werte von Original-Recipe-Flügeln",
+      "basis": [
+        {
+          "fdcId": 170347,
+          "g": 130
+        }
+      ]
     },
     {
       "name": "Chicken Nuggets (6 Stück, 90g)",
       "portion_g": 90,
-      "calories": 215,
+      "calories": 276,
       "protein": 14,
       "carbs": 13,
-      "fat": 12
+      "fat": 18,
+      "basis": [
+        {
+          "fdcId": 2706093,
+          "g": 90
+        }
+      ]
     },
     {
       "name": "Filet Bites (Box, 130g)",
       "portion_g": 130,
-      "calories": 310,
+      "calories": 356,
       "protein": 26,
       "carbs": 18,
-      "fat": 15
+      "fat": 20,
+      "tip": "Werte von Crispy Chicken Strips",
+      "basis": [
+        {
+          "fdcId": 170341,
+          "g": 130
+        }
+      ]
     },
     {
-      "name": "Twister Wrap (1 Stück, 230g)",
+      "name": "Crispy-Chicken-Wrap (230g)",
       "portion_g": 230,
-      "calories": 525,
-      "protein": 30,
-      "carbs": 45,
-      "fat": 25,
-      "tip": "Wrap mit Tortilla, Salat & Sauce"
+      "calories": 688,
+      "protein": 29,
+      "carbs": 56,
+      "fat": 38,
+      "tip": "Wrap mit Tortilla, Salat & Sauce",
+      "basis": [
+        {
+          "fdcId": 2707016,
+          "g": 230
+        }
+      ]
     },
     {
-      "name": "Zinger Burger (1 Stück, 210g)",
+      "name": "Chicken-Burger paniert (210g)",
       "portion_g": 210,
-      "calories": 470,
-      "protein": 28,
-      "carbs": 40,
-      "fat": 22,
-      "tip": "Scharf panierter Hähnchenburger"
+      "calories": 590,
+      "protein": 26,
+      "carbs": 58,
+      "fat": 28,
+      "tip": "Panierter Hähnchenburger",
+      "basis": [
+        {
+          "fdcId": 2707003,
+          "g": 210
+        }
+      ]
+    },
+    {
+      "name": "Coleslaw (112g)",
+      "portion_g": 112,
+      "calories": 161,
+      "protein": 1,
+      "carbs": 18,
+      "fat": 10,
+      "basis": [
+        {
+          "fdcId": 170340,
+          "g": 112
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "McDonald's Big Mac",
       "calories": 563,
-      "emoji": "🍔"
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
     },
     {
       "name": "Chicken Nuggets (6 Stück)",
-      "calories": 215,
-      "emoji": "🍗"
+      "calories": 295,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-nuggets"
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Pommes frites (mittel)",
-      "calories": 350,
-      "emoji": "🍟"
+      "calories": 378,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 170721,
+          "g": 117
+        }
+      ]
+    },
+    {
+      "name": "Cola (0,5 l)",
+      "calories": 220,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich, aber fettig",
-      "text": "Ein Original-Recipe-Hähnchenteil liefert 22g Protein, aber durch die frittierte Panade auch 16g Fett. Wer abnehmen will, sollte die Portionen im Blick behalten.",
+      "text": "Ein Original-Recipe-Schenkel (135g) liefert rund 26g Protein, aber durch die frittierte Panade auch rund 24g Fett. Wer abnehmen will, sollte die Portionen im Blick behalten.",
       "icon": "🍗"
     },
     {
       "title": "Panade kostet Kalorien",
-      "text": "Der größte Teil der Kalorien steckt in der frittierten Panade. Wer sie teilweise entfernt, spart spürbar Fett und Kalorien ein.",
+      "text": "Der größte Teil der Kalorien steckt in Haut und frittierter Panade. Bei der Brust macht das laut FDC rund 264 kcal aus: 490 kcal mit, 226 kcal ohne Haut und Panade.",
       "icon": "✂️"
     },
     {
       "title": "Beilagen mitzählen",
-      "text": "Pommes, Coleslaw und Saucen werden leicht unterschätzt. Eine Portion Pommes kann das Menü um 300-400 kcal nach oben treiben.",
+      "text": "Pommes, Coleslaw und Saucen werden leicht unterschätzt. Eine mittlere Portion Pommes bringt rund 378 kcal, Coleslaw (112g) rund 161 kcal.",
       "icon": "🍟"
     },
     {
@@ -122,26 +233,26 @@
     },
     {
       "title": "Getränk nicht vergessen",
-      "text": "Eine große Cola bringt rund 200 kcal extra. Mit Wasser oder einem Light-Getränk bleibt das Menü deutlich kalorienärmer.",
+      "text": "Eine große Cola (0,5 l) bringt rund 220 kcal extra. Mit Wasser oder einem Light-Getränk bleibt das Menü deutlich kalorienärmer.",
       "icon": "🥤"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat KFC?",
-      "answer": "Ein Original-Recipe-Hähnchenteil (110g) hat ca. 270 kcal. Pro 100g sind es rund 245 kcal. Ein komplettes Menü mit Pommes und Getränk kommt schnell auf 800-1000 kcal."
+      "answer": "Ein Original-Recipe-Schenkel (135g) hat ca. 363 kcal. Pro 100g sind es rund 269 kcal. Ein Menü aus Schenkel, mittleren Pommes und großer Cola (0,5 l) kommt auf rund 961 kcal."
     },
     {
       "question": "Wie viele Kalorien haben KFC Hot Wings?",
-      "answer": "Sechs Hot Wings (ca. 130g) haben rund 360 kcal mit etwa 22g Protein und 25g Fett."
+      "answer": "Sechs Hot Wings (ca. 130g) haben rund 386 kcal mit etwa 28g Protein und 25g Fett."
     },
     {
       "question": "Wie viel Protein hat KFC-Hähnchen?",
-      "answer": "Ein Original-Recipe-Hähnchenteil liefert etwa 22g Protein. Hähnchen ist damit eine gute Eiweißquelle, allerdings durch die Panade auch fettreich."
+      "answer": "Ein Original-Recipe-Schenkel liefert etwa 26g Protein, eine Brust (212g) sogar rund 47g. Hähnchen ist damit eine gute Eiweißquelle, allerdings durch die Panade auch fettreich."
     },
     {
       "question": "Wie viele Kohlenhydrate hat KFC?",
-      "answer": "Pures Hähnchen hat mit rund 9g Kohlenhydraten pro 100g wenig davon. Wraps, Burger und Beilagen wie Pommes enthalten deutlich mehr."
+      "answer": "Paniertes Original-Recipe-Hähnchen hat mit rund 8g Kohlenhydraten pro 100g wenig davon. Wraps, Burger und Beilagen wie Pommes enthalten deutlich mehr."
     },
     {
       "question": "Ist KFC zum Abnehmen geeignet?",

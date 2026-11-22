@@ -3,9 +3,10 @@
   "name": "Tequila",
   "emoji": "🥃",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710705 (Tequila: 231 kcal), Werte je 100 g; je 100 ml mit 0,947 g/ml 219 kcal",
   "seo": {
     "title": "Tequila Kalorien: Nährwerte, Mengen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Tequila? Ein Schnapsglas (4cl) hat ca. 76 kcal, 100ml rund 231 kcal. Nährwerte, Mengen im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Tequila? Ein Schnapsglas (4cl) hat ca. 88 kcal, 100ml rund 219 kcal. Nährwerte, Mengen im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "tequila kalorien",
       "tequila kcal",
@@ -23,22 +24,22 @@
     "carbs_per_100g": 0,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 33,
+    "typical_portion_g": 38,
     "typical_portion_name": "1 Schnapsglas (4cl)"
   },
   "variants": [
     {
       "name": "Halbes Schnapsglas (2cl)",
-      "portion_g": 17,
-      "calories": 39,
+      "portion_g": 19,
+      "calories": 44,
       "protein": 0,
       "carbs": 0,
       "fat": 0
     },
     {
       "name": "1 Schnapsglas (4cl)",
-      "portion_g": 33,
-      "calories": 76,
+      "portion_g": 38,
+      "calories": 88,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
@@ -46,34 +47,48 @@
     },
     {
       "name": "Doppelter (8cl)",
-      "portion_g": 66,
-      "calories": 152,
+      "portion_g": 76,
+      "calories": 176,
       "protein": 0,
       "carbs": 0,
       "fat": 0
     },
     {
-      "name": "Tequila Sunrise (Cocktail)",
-      "portion_g": 250,
-      "calories": 230,
+      "name": "Tequila Sunrise (Cocktail, 250ml)",
+      "portion_g": 254,
+      "calories": 282,
       "protein": 1,
-      "carbs": 38,
-      "fat": 0,
-      "tip": "Mit Orangensaft & Grenadine deutlich kalorienreicher"
+      "carbs": 32,
+      "fat": 1,
+      "tip": "Mit Orangensaft & Grenadine deutlich kalorienreicher",
+      "basis": [
+        {
+          "fdcId": 2710678,
+          "ml": 250,
+          "g": 254
+        }
+      ]
     },
     {
-      "name": "Margarita (Cocktail)",
-      "portion_g": 200,
-      "calories": 280,
+      "name": "Margarita (Cocktail, 200ml)",
+      "portion_g": 203,
+      "calories": 248,
       "protein": 0,
-      "carbs": 22,
+      "carbs": 33,
       "fat": 0,
-      "tip": "Durch Likör & Sirup zuckerreich"
+      "tip": "Durch Likör & Sirup zuckerreich",
+      "basis": [
+        {
+          "fdcId": 2710638,
+          "ml": 200,
+          "g": 203
+        }
+      ]
     },
     {
       "name": "100ml Tequila pur",
-      "portion_g": 100,
-      "calories": 231,
+      "portion_g": 95,
+      "calories": 219,
       "protein": 0,
       "carbs": 0,
       "fat": 0
@@ -82,34 +97,62 @@
   "comparison": [
     {
       "name": "Wodka (4cl)",
-      "calories": 83,
-      "emoji": "🍸"
+      "calories": 88,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "wodka",
+          "ml": 40,
+          "g": 38
+        }
+      ]
     },
     {
       "name": "Gin (4cl)",
-      "calories": 87,
-      "emoji": "🍸"
+      "calories": 84,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin",
+          "ml": 40,
+          "g": 38
+        }
+      ]
     },
     {
       "name": "Bier (0,33l)",
       "calories": 142,
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
       "name": "Rotwein (0,1l)",
-      "calories": 85,
-      "emoji": "🍷"
+      "calories": 84,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-rot",
+          "ml": 100,
+          "g": 99
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorien aus Alkohol",
-      "text": "Reiner Tequila enthält keine Kohlenhydrate, kein Fett und kein Eiweiß. Die rund 76 kcal pro Schnapsglas stammen ausschließlich aus dem Alkohol (ca. 7 kcal pro Gramm).",
+      "text": "Reiner Tequila enthält keine Kohlenhydrate, kein Fett und kein Eiweiß. Die rund 88 kcal pro Schnapsglas stammen ausschließlich aus dem Alkohol (ca. 7 kcal pro Gramm).",
       "icon": "🥃"
     },
     {
       "title": "Pur statt Cocktail",
-      "text": "Ein Tequila pur hat etwa 76 kcal. In Cocktails wie Margarita oder Tequila Sunrise steigen die Kalorien durch Säfte, Likör und Sirup schnell auf 230 bis 280 kcal pro Glas.",
+      "text": "Ein Tequila pur hat etwa 88 kcal. In Cocktails wie Margarita oder Tequila Sunrise steigen die Kalorien durch Säfte, Likör und Sirup schnell auf rund 248 bis 282 kcal pro Glas.",
       "icon": "🍹"
     },
     {
@@ -131,7 +174,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Schnapsglas Tequila?",
-      "answer": "Ein Schnapsglas Tequila (4cl) hat etwa 76 kcal. Pro 100ml sind es rund 231 kcal, die vollständig aus dem Alkohol stammen."
+      "answer": "Ein Schnapsglas Tequila (4cl) hat etwa 88 kcal. Pro 100ml sind es rund 219 kcal, die vollständig aus dem Alkohol stammen."
     },
     {
       "question": "Hat Tequila Kohlenhydrate?",
@@ -151,7 +194,7 @@
     },
     {
       "question": "Wie viele Kalorien hat eine Margarita?",
-      "answer": "Eine Margarita liefert je nach Rezept etwa 250 bis 300 kcal. Der Großteil davon stammt nicht aus dem Tequila, sondern aus Orangenlikör, Limettensaft und Zuckersirup."
+      "answer": "Eine Margarita (200ml) liefert laut USDA etwa 248 kcal. Gut die Hälfte davon stammt nicht aus dem Tequila, sondern aus dem Zucker in Orangenlikör und Sirup."
     }
   ],
   "related_foods": [

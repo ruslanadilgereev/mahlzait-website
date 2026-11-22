@@ -3,9 +3,10 @@
   "name": "Belgische Waffeln",
   "emoji": "🧇",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708325 (Waffle, plain), Werte je 100 g",
   "seo": {
     "title": "Belgische Waffeln Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben belgische Waffeln? Eine Waffel hat ca. 218 kcal. Nährwerte pro 100g & Stück, Lütticher vs. Brüsseler + Diät-Tipps.",
+    "description": "Wie viele Kalorien haben belgische Waffeln? Eine Waffel hat ca. 280 kcal. Nährwerte pro 100g & Stück, Lütticher vs. Brüsseler + Diät-Tipps.",
     "keywords": [
       "belgische waffeln kalorien",
       "belgische waffel kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 33,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 373,
+    "protein_per_100g": 8.7,
+    "carbs_per_100g": 41.5,
+    "fat_per_100g": 18.8,
+    "fiber_per_100g": 2.5,
     "typical_portion_g": 75,
     "typical_portion_name": "1 belgische Waffel"
   },
@@ -30,88 +31,140 @@
     {
       "name": "1 belgische Waffel (75g)",
       "portion_g": 75,
-      "calories": 218,
-      "protein": 5,
-      "carbs": 25,
-      "fat": 11,
+      "calories": 280,
+      "protein": 7,
+      "carbs": 31,
+      "fat": 14,
       "tip": "Standard"
     },
     {
       "name": "2 Waffeln (150g)",
       "portion_g": 150,
-      "calories": 435,
-      "protein": 9,
-      "carbs": 50,
-      "fat": 21
-    },
-    {
-      "name": "Lütticher Waffel (90g)",
-      "portion_g": 90,
-      "calories": 342,
-      "protein": 6,
-      "carbs": 45,
-      "fat": 16,
-      "tip": "Dichter & süßer durch Hagelzucker"
+      "calories": 560,
+      "protein": 13,
+      "carbs": 62,
+      "fat": 28
     },
     {
       "name": "Waffel mit Puderzucker (85g)",
       "portion_g": 85,
-      "calories": 257,
-      "protein": 5,
-      "carbs": 35,
-      "fat": 11
+      "calories": 319,
+      "protein": 7,
+      "carbs": 41,
+      "fat": 14,
+      "basis": [
+        {
+          "g": 75
+        },
+        {
+          "fdcId": 169656,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Waffel mit Sahne & Erdbeeren (180g)",
       "portion_g": 180,
-      "calories": 360,
-      "protein": 6,
-      "carbs": 35,
-      "fat": 21
+      "calories": 408,
+      "protein": 8,
+      "carbs": 40,
+      "fat": 24,
+      "basis": [
+        {
+          "g": 75
+        },
+        {
+          "fdcId": 2705598,
+          "g": 30
+        },
+        {
+          "fdcId": 167762,
+          "g": 75
+        }
+      ]
     },
     {
-      "name": "Waffel mit Schokosauce (150g)",
-      "portion_g": 150,
-      "calories": 432,
-      "protein": 6,
-      "carbs": 50,
-      "fat": 22
+      "name": "Waffel mit Schokosauce (115g)",
+      "portion_g": 115,
+      "calories": 387,
+      "protein": 7,
+      "carbs": 58,
+      "fat": 14,
+      "basis": [
+        {
+          "g": 75
+        },
+        {
+          "fdcId": 2710276,
+          "g": 40
+        }
+      ]
     },
     {
       "name": "TK-Waffel aufgebacken (60g)",
       "portion_g": 60,
-      "calories": 174,
+      "calories": 187,
       "protein": 4,
-      "carbs": 20,
-      "fat": 8
+      "carbs": 30,
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 175048,
+          "g": 60
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Pancakes",
-      "calories": 227,
-      "emoji": "🥞"
+      "name": "Pancake (1 Stück, 60g)",
+      "calories": 136,
+      "emoji": "🥞",
+      "basis": [
+        {
+          "slug": "pancakes",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Crêpes Nutella",
-      "calories": 320,
-      "emoji": "🥐"
+      "name": "Crêpe mit Nutella (1 Stück, 150g)",
+      "calories": 390,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "crepes-nutella",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Croissant",
-      "calories": 230,
-      "emoji": "🥐"
+      "name": "Croissant (1 Stück, 65g)",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 65
+        }
+      ]
     },
     {
-      "name": "Donut",
-      "calories": 280,
-      "emoji": "🍩"
+      "name": "Donut (1 Stück, 70g)",
+      "calories": 294,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "donut",
+          "g": 70
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Pur statt mit Topping",
-      "text": "Eine Waffel pur hat ca. 218 kcal. Sahne, Schokosauce oder Eis verdoppeln die Kalorien schnell – lieber mit frischen Beeren genießen.",
+      "text": "Eine Waffel pur hat ca. 280 kcal. Sahne (30g) bringt rund 104 kcal dazu, Schokosauce (40g) rund 108 kcal. Lieber mit frischen Beeren genießen.",
       "icon": "🍓"
     },
     {
@@ -121,12 +174,12 @@
     },
     {
       "title": "Quark als leichte Begleitung",
-      "text": "Statt Sahne passt Magerquark mit Beeren – das bringt Eiweiß ins Spiel und spart Fett und Kalorien beim Topping.",
+      "text": "Statt Sahne passt Magerquark mit Beeren: Das bringt Eiweiß ins Spiel und spart Fett und Kalorien beim Topping.",
       "icon": "🥣"
     },
     {
       "title": "Portion bewusst halten",
-      "text": "Belgische Waffeln sind ein Genussgericht, kein Sattmacher. Eine Waffel als Dessert reicht meist – zwei sind bereits eine kleine Mahlzeit.",
+      "text": "Belgische Waffeln sind ein Genussgericht, kein Sattmacher. Eine Waffel als Dessert reicht meist, zwei sind bereits eine kleine Mahlzeit.",
       "icon": "⚖️"
     },
     {
@@ -138,27 +191,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine belgische Waffel?",
-      "answer": "Eine belgische Waffel (ca. 75g) hat rund 218 kcal. Pro 100g sind es etwa 290 kcal. Lütticher Waffeln liegen durch den Hagelzucker mit ca. 380 kcal/100g höher."
+      "answer": "Eine belgische Waffel (ca. 75g) hat rund 280 kcal. Pro 100g sind es etwa 373 kcal. Lütticher Waffeln liegen durch den Hagelzucker höher."
     },
     {
       "question": "Wie viele Kohlenhydrate haben belgische Waffeln?",
-      "answer": "Pro 100g enthalten belgische Waffeln ca. 33g Kohlenhydrate. Eine einzelne Waffel kommt auf etwa 25g, davon ein größerer Anteil Zucker."
+      "answer": "Pro 100g enthalten belgische Waffeln ca. 41,5g Kohlenhydrate. Eine einzelne Waffel kommt auf etwa 31g, davon rund 6g Zucker."
     },
     {
       "question": "Wie viel Protein haben belgische Waffeln?",
-      "answer": "Belgische Waffeln liefern ca. 6g Protein pro 100g, also rund 5g pro Waffel. Der Eiweißgehalt stammt vor allem aus Ei und Milch im Teig."
+      "answer": "Belgische Waffeln liefern ca. 8,7g Protein pro 100g, also rund 6,5g pro Waffel. Der Eiweißgehalt stammt vor allem aus Ei und Milch im Teig."
     },
     {
       "question": "Sind belgische Waffeln zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 290 kcal/100g und viel Zucker und Fett sind sie ein Genussgericht. Wer abnimmt, sollte sie selten essen und auf Toppings wie Sahne und Schokosauce verzichten."
+      "answer": "Nur in Maßen. Mit 373 kcal/100g und reichlich Fett sind sie ein Genussgericht. Wer abnimmt, sollte sie selten essen und auf Toppings wie Sahne und Schokosauce verzichten."
     },
     {
       "question": "Sind belgische Waffeln gesund?",
-      "answer": "Belgische Waffeln sind eine Süßspeise mit wenig Ballaststoffen (ca. 1g/100g) und viel Zucker und Fett. Als gelegentlicher Genuss in Ordnung, aber kein Bestandteil einer ausgewogenen Ernährung."
+      "answer": "Belgische Waffeln sind eine Süßspeise mit wenig Ballaststoffen (ca. 2,5g/100g) und viel Fett (ca. 19g/100g). Als gelegentlicher Genuss in Ordnung, aber kein Bestandteil einer ausgewogenen Ernährung."
     },
     {
       "question": "Was ist der Unterschied zwischen Brüsseler und Lütticher Waffeln?",
-      "answer": "Brüsseler Waffeln sind leicht, luftig und rechteckig und werden aus dünnem Teig gebacken. Lütticher Waffeln sind kleiner, dichter und enthalten Hagelzucker, der beim Backen karamellisiert – dadurch haben sie mehr Kalorien."
+      "answer": "Brüsseler Waffeln sind leicht, luftig und rechteckig und werden aus dünnem Teig gebacken. Lütticher Waffeln sind kleiner, dichter und enthalten Hagelzucker, der beim Backen karamellisiert. Dadurch haben sie mehr Kalorien."
     }
   ],
   "related_foods": [

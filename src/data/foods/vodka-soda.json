@@ -3,9 +3,10 @@
   "name": "Vodka Soda",
   "emoji": "🍸",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710664 (Vodka and soda: 59 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 60 kcal",
   "seo": {
     "title": "Vodka Soda Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Vodka Soda? Ein Standard-Drink (45ml Wodka + Soda) hat nur ca. 104 kcal, 0g Zucker und 0g Kohlenhydrate. Alle Werte im Überblick.",
+    "description": "Wie viele Kalorien hat Vodka Soda? Ein Standard-Drink (45ml Wodka + Soda) hat nur ca. 99 kcal, 0g Zucker und 0g Kohlenhydrate. Alle Werte im Überblick.",
     "keywords": [
       "vodka soda kalorien",
       "vodka soda kcal",
@@ -17,99 +18,199 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 53,
+    "calories_per_100g": 59,
     "protein_per_100g": 0,
     "carbs_per_100g": 0,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 195,
-    "typical_portion_name": "1 Vodka Soda (45ml Wodka + Soda)"
+    "typical_portion_g": 225,
+    "typical_portion_name": "1 Drink (225 g)"
   },
   "variants": [
     {
       "name": "Single (30ml Wodka + Soda)",
-      "portion_g": 150,
-      "calories": 69,
+      "portion_g": 148,
+      "calories": 65,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
-      "tip": "Leichte Variante"
+      "tip": "Leichte Variante",
+      "basis": [
+        {
+          "fdcId": 2710704,
+          "ml": 30,
+          "g": 28
+        },
+        {
+          "fdcId": 174842,
+          "ml": 120,
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Standard (45ml Wodka + Soda)",
-      "portion_g": 195,
-      "calories": 104,
+      "portion_g": 193,
+      "calories": 99,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
-      "tip": "Gängige Bar-Menge"
+      "tip": "Gängige Bar-Menge",
+      "basis": [
+        {
+          "fdcId": 2710704,
+          "ml": 45,
+          "g": 43
+        },
+        {
+          "fdcId": 174842,
+          "ml": 150,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Im Cocktailglas (40ml Wodka)",
-      "portion_g": 180,
-      "calories": 92,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 0
-    },
-    {
-      "name": "Highball gross (50ml Wodka + viel Soda)",
-      "portion_g": 300,
-      "calories": 116,
+      "portion_g": 178,
+      "calories": 88,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
-      "tip": "Lang gemacht, gleich wenig Kalorien"
+      "basis": [
+        {
+          "fdcId": 2710704,
+          "ml": 40,
+          "g": 38
+        },
+        {
+          "fdcId": 174842,
+          "ml": 140,
+          "g": 140
+        }
+      ]
+    },
+    {
+      "name": "Highball groß (50ml Wodka + viel Soda)",
+      "portion_g": 297,
+      "calories": 109,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "tip": "Lang gemacht, gleich wenig Kalorien",
+      "basis": [
+        {
+          "fdcId": 2710704,
+          "ml": 50,
+          "g": 47
+        },
+        {
+          "fdcId": 174842,
+          "ml": 250,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Doppelt (60ml Wodka + Soda)",
-      "portion_g": 210,
-      "calories": 139,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 0
-    },
-    {
-      "name": "Dose fertig (250ml, ca. 5% Vol.)",
-      "portion_g": 250,
-      "calories": 69,
+      "portion_g": 207,
+      "calories": 132,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
-      "tip": "Fertig gemischt, ohne Zuckerzusatz"
+      "basis": [
+        {
+          "fdcId": 2710704,
+          "ml": 60,
+          "g": 57
+        },
+        {
+          "fdcId": 174842,
+          "ml": 150,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Dose fertig (250ml, ca. 5% Vol.)",
+      "portion_g": 248,
+      "calories": 67,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 0,
+      "tip": "Fertig gemischt, ohne Zuckerzusatz (31ml Wodka auf 250ml)",
+      "basis": [
+        {
+          "fdcId": 2710704,
+          "ml": 31,
+          "g": 29
+        },
+        {
+          "fdcId": 174842,
+          "ml": 219,
+          "g": 219
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Gin Tonic (200ml)",
-      "calories": 180,
-      "emoji": "🥃"
+      "calories": 171,
+      "emoji": "🥃",
+      "basis": [
+        {
+          "slug": "gin-tonic",
+          "ml": 200,
+          "g": 203
+        }
+      ]
     },
     {
       "name": "Aperol Spritz (200ml)",
-      "calories": 150,
-      "emoji": "🍹"
+      "calories": 140,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Bier (0,33l)",
-      "calories": 140,
-      "emoji": "🍺"
+      "calories": 142,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
       "name": "Cola (250ml)",
-      "calories": 105,
-      "emoji": "🥤"
+      "calories": 110,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 250,
+          "g": 262
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Der kalorienärmste Longdrink",
-      "text": "Mit ca. 104 kcal pro Standard-Drink gehört Vodka Soda zu den schlanksten Mixgetränken. Soda- bzw. Mineralwasser liefert keine Kalorien, alle Kalorien stammen allein aus dem Wodka.",
+      "text": "Mit ca. 99 kcal pro Standard-Drink (45ml Wodka) gehört Vodka Soda zu den schlanksten Mixgetränken. Soda- bzw. Mineralwasser liefert keine Kalorien, alle Kalorien stammen allein aus dem Wodka.",
       "icon": "🍸"
     },
     {
       "title": "Null Zucker, null Kohlenhydrate",
-      "text": "Im Gegensatz zu Gin Tonic oder Wodka-Cola enthält Vodka Soda keinen Zucker und keine Kohlenhydrate, da Soda ungesüsst ist. Das macht ihn bei kohlenhydratarmer Ernährung beliebt.",
+      "text": "Im Gegensatz zu Gin Tonic oder Wodka-Cola enthält Vodka Soda keinen Zucker und keine Kohlenhydrate, da Soda ungesüßt ist. Das macht ihn bei kohlenhydratarmer Ernährung beliebt.",
       "icon": "🚫"
     },
     {
@@ -119,7 +220,7 @@
     },
     {
       "title": "Auf die Menge des Wodkas achten",
-      "text": "Die Kalorien steigen direkt mit dem Wodka-Anteil. Ein doppelter Wodka (60ml) bringt den Drink bereits auf rund 139 kcal. Mehr Soda statt mehr Wodka hält ihn leicht.",
+      "text": "Die Kalorien steigen direkt mit dem Wodka-Anteil. Ein doppelter Wodka (60ml) bringt den Drink bereits auf rund 132 kcal. Mehr Soda statt mehr Wodka hält ihn leicht.",
       "icon": "⚖️"
     },
     {
@@ -131,27 +232,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Vodka Soda?",
-      "answer": "Ein Standard-Vodka-Soda mit 45ml Wodka und Soda hat ca. 104 kcal. Pro 100ml sind es bei diesem Mischverhältnis etwa 53 kcal."
+      "answer": "Ein Standard-Vodka-Soda mit 45ml Wodka und Soda hat ca. 99 kcal. Pro 100ml sind es bei diesem Mischverhältnis etwa 51 kcal. Der USDA-Wert für Vodka Soda (mit etwas mehr Wodka) liegt bei 59 kcal pro 100g."
     },
     {
       "question": "Hat Vodka Soda Kohlenhydrate oder Zucker?",
-      "answer": "Nein. Vodka Soda enthält weder Zucker noch Kohlenhydrate. Wodka liefert keine Kohlenhydrate und Soda- bzw. Mineralwasser ist ungesüsst."
+      "answer": "Nein. Vodka Soda enthält weder Zucker noch Kohlenhydrate. Wodka liefert keine Kohlenhydrate und Soda- bzw. Mineralwasser ist ungesüßt."
     },
     {
       "question": "Ist Vodka Soda zum Abnehmen geeignet?",
-      "answer": "Unter den alkoholischen Getränken zählt Vodka Soda zu den kalorienärmsten Optionen, da kein Zucker enthalten ist. Alkohol liefert aber 7 kcal pro Gramm und hemmt die Fettverbrennung, daher gilt: in Massen geniessen."
+      "answer": "Unter den alkoholischen Getränken zählt Vodka Soda zu den kalorienärmsten Optionen, da kein Zucker enthalten ist. Alkohol liefert aber 7 kcal pro Gramm und hemmt die Fettverbrennung, daher gilt: in Maßen genießen."
     },
     {
       "question": "Wie viel Wodka ist in einem Vodka Soda?",
-      "answer": "Üblich sind 30 bis 45ml Wodka (ein einfaches bis grosszügiges Mass), aufgefüllt mit Soda- oder Mineralwasser. Der Wodka bestimmt fast die gesamte Kalorienzahl."
+      "answer": "Üblich sind 30 bis 45ml Wodka (ein einfaches bis großzügiges Maß), aufgefüllt mit Soda- oder Mineralwasser. Der Wodka bestimmt fast die gesamte Kalorienzahl."
     },
     {
       "question": "Was hat weniger Kalorien: Vodka Soda oder Gin Tonic?",
-      "answer": "Vodka Soda hat klar weniger Kalorien. Ein Gin Tonic bringt durch den Zucker im Tonic Water etwa 180 kcal pro Glas, ein Vodka Soda nur rund 104 kcal."
+      "answer": "Vodka Soda hat klar weniger Kalorien. Ein Gin Tonic (200ml) bringt durch den Zucker im Tonic Water etwa 171 kcal, ein Vodka Soda (45ml Wodka) nur rund 99 kcal."
     },
     {
       "question": "Wie viel Protein und Fett stecken in Vodka Soda?",
-      "answer": "Vodka Soda enthält weder Protein noch Fett. Die Kalorien stammen ausschliesslich aus dem Alkohol des Wodkas."
+      "answer": "Vodka Soda enthält weder Protein noch Fett. Die Kalorien stammen ausschließlich aus dem Alkohol des Wodkas."
     }
   ],
   "related_foods": [

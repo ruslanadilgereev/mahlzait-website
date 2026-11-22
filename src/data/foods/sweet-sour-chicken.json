@@ -3,47 +3,212 @@
   "name": "Süß-Sauer Hähnchen",
   "emoji": "🍗",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706435 (Sweet and sour chicken or turkey), Werte je 100 g",
   "seo": {
     "title": "Süß-Sauer Hähnchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Süß-Sauer Hähnchen? Nährwerte für verschiedene Zubereitungen und Portionsgrößen. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 170,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 16,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 1.0,
+    "calories_per_100g": 250,
+    "protein_per_100g": 10.1,
+    "carbs_per_100g": 23.9,
+    "fat_per_100g": 12.7,
+    "fiber_per_100g": 1,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Klassisch frittiert", "portion_g": 350, "calories": 595, "protein": 28, "carbs": 56, "fat": 28, "tip": "Restaurant-Standard"},
-    {"name": "Mit Reis", "portion_g": 500, "calories": 780, "protein": 30, "carbs": 106, "fat": 28},
-    {"name": "Nicht frittiert (Pfanne)", "portion_g": 350, "calories": 440, "protein": 32, "carbs": 42, "fat": 16, "tip": "Deutlich weniger Fett"},
-    {"name": "Mit Nudeln", "portion_g": 480, "calories": 720, "protein": 32, "carbs": 88, "fat": 26},
-    {"name": "Vegetarisch (Tofu)", "portion_g": 350, "calories": 480, "protein": 22, "carbs": 54, "fat": 20},
-    {"name": "Leichte Version (wenig Sauce)", "portion_g": 300, "calories": 380, "protein": 30, "carbs": 30, "fat": 16, "tip": "Kalorienärmste Variante"}
+    {
+      "name": "Klassisch frittiert",
+      "portion_g": 350,
+      "calories": 875,
+      "protein": 35,
+      "carbs": 84,
+      "fat": 44,
+      "tip": "Restaurant-Standard"
+    },
+    {
+      "name": "Mit Reis (350g + 150g Reis)",
+      "portion_g": 500,
+      "calories": 1070,
+      "protein": 39,
+      "carbs": 126,
+      "fat": 45,
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 168878,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Nicht frittiert (150g Hähnchenbrust + 100g Sauce + 100g Wokgemüse)",
+      "portion_g": 350,
+      "calories": 473,
+      "protein": 49,
+      "carbs": 48,
+      "fat": 8,
+      "tip": "Deutlich weniger Fett",
+      "basis": [
+        {
+          "fdcId": 171477,
+          "g": 150
+        },
+        {
+          "fdcId": 2710296,
+          "g": 100
+        },
+        {
+          "fdcId": 2710036,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Mit Nudeln (350g + 130g Eiernudeln)",
+      "portion_g": 480,
+      "calories": 1054,
+      "protein": 41,
+      "carbs": 116,
+      "fat": 47,
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 169732,
+          "g": 130
+        }
+      ]
+    },
+    {
+      "name": "Leichte Version (150g Hähnchenbrust + 50g Sauce + 100g Wokgemüse)",
+      "portion_g": 300,
+      "calories": 396,
+      "protein": 49,
+      "carbs": 29,
+      "fat": 8,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 171477,
+          "g": 150
+        },
+        {
+          "fdcId": 2710296,
+          "g": 50
+        },
+        {
+          "fdcId": 2710036,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Curry-Hähnchen", "calories": 450, "emoji": "🍛"},
-    {"name": "Gebratene Nudeln", "calories": 455, "emoji": "🍜"},
-    {"name": "Chicken Nuggets (10 Stück)", "calories": 460, "emoji": "🍗"},
-    {"name": "Wok-Gemüse mit Hähnchen", "calories": 340, "emoji": "🥦"}
+    {
+      "name": "Curry-Hähnchen",
+      "calories": 375,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "slug": "curry-haehnchen"
+        }
+      ]
+    },
+    {
+      "name": "Gebratene Nudeln",
+      "calories": 424,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "gebratene-nudeln"
+        }
+      ]
+    },
+    {
+      "name": "Chicken Nuggets (10 Stück)",
+      "calories": 491,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-nuggets",
+          "g": 160
+        }
+      ]
+    },
+    {
+      "name": "Wok-Gemüse mit Hähnchen (350g)",
+      "calories": 333,
+      "emoji": "🥦",
+      "basis": [
+        {
+          "fdcId": 167678,
+          "g": 350
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Nicht frittiert bestellen", "text": "In der Pfanne statt frittiert spart ca. 150 kcal pro Portion. Den Geschmack macht die Sauce.", "icon": "🍳"},
-    {"title": "Sauce separat", "text": "Bestelle die Süß-Sauer-Sauce separat und dosiere selbst – Restaurants verwenden oft die doppelte Menge.", "icon": "🥄"},
-    {"title": "Reis portionieren", "text": "Eine volle Portion Reis (200g) hat 260 kcal. Halbiere die Reismenge und fülle mit Gemüse auf.", "icon": "🍚"},
-    {"title": "Selbst machen mit weniger Zucker", "text": "Fertige Süß-Sauer-Sauce enthält viel Zucker. Selbstgemacht aus Tomatenmark, Essig und etwas Honig: 50% weniger Zucker.", "icon": "🍯"},
-    {"title": "Hähnchenbrust verwenden", "text": "Im Restaurant wird oft Hähnchen mit Haut frittiert. Zu Hause: Hähnchenbrust ohne Haut nutzen.", "icon": "💪"}
+    {
+      "title": "Nicht frittiert bestellen",
+      "text": "In der Pfanne statt frittiert spart rund 400 kcal pro Portion (473 statt 875 kcal bei 350g). Den Geschmack macht die Sauce.",
+      "icon": "🍳"
+    },
+    {
+      "title": "Sauce separat",
+      "text": "Bestelle die Süß-Sauer-Sauce separat und dosiere selbst, Restaurants sind damit oft großzügig.",
+      "icon": "🥄"
+    },
+    {
+      "title": "Reis portionieren",
+      "text": "Eine volle Portion Reis (200g) hat 260 kcal. Halbiere die Reismenge und fülle mit Gemüse auf.",
+      "icon": "🍚"
+    },
+    {
+      "title": "Selbst machen mit weniger Zucker",
+      "text": "Fertige Süß-Sauer-Sauce enthält viel Zucker (rund 19g je 100g). Selbstgemacht aus Tomatenmark, Essig und etwas Honig bestimmst du die Zuckermenge selbst.",
+      "icon": "🍯"
+    },
+    {
+      "title": "Hähnchenbrust verwenden",
+      "text": "Im Restaurant wird oft Hähnchen mit Haut frittiert. Zu Hause: Hähnchenbrust ohne Haut nutzen.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Süß-Sauer Hähnchen?", "answer": "Eine Portion Süß-Sauer Hähnchen (350g, frittiert) hat ca. 595 kcal. Ohne Frittieren nur ca. 440 kcal."},
-    {"question": "Ist Süß-Sauer Hähnchen ungesund?", "answer": "Die frittierte Version hat viel Fett und die Sauce viel Zucker. Nicht frittiert und mit weniger Sauce ist es eine akzeptable Mahlzeit mit gutem Proteingehalt."},
-    {"question": "Wie viel Zucker hat Süß-Sauer Sauce?", "answer": "Fertige Süß-Sauer-Sauce enthält ca. 25-30g Zucker pro 100ml. Das sind ca. 6 Stück Würfelzucker in einer Portion."},
-    {"question": "Was hat weniger Kalorien: Süß-Sauer oder Curry-Hähnchen?", "answer": "Curry-Hähnchen (450 kcal) hat weniger als frittiertes Süß-Sauer (595 kcal). Nicht frittiert sind beide ähnlich."},
-    {"question": "Wie viel Protein hat Süß-Sauer Hähnchen?", "answer": "Eine Portion liefert ca. 28-32g Protein – je nach Hähnchenmenge ein guter Wert für eine Hauptmahlzeit."},
-    {"question": "Kann man Süß-Sauer Hähnchen beim Abnehmen essen?", "answer": "Die leichte Version ohne Frittieren und mit weniger Sauce (380 kcal) kann in eine Diät passen. Wichtig: Reis-Portion begrenzen."}
+    {
+      "question": "Wie viele Kalorien hat Süß-Sauer Hähnchen?",
+      "answer": "Eine Portion Süß-Sauer Hähnchen (350g, frittiert) hat ca. 875 kcal. In der Pfanne statt frittiert (150g Hähnchenbrust, 100g Sauce, 100g Wokgemüse) sind es ca. 473 kcal."
+    },
+    {
+      "question": "Ist Süß-Sauer Hähnchen ungesund?",
+      "answer": "Die frittierte Version hat viel Fett und die Sauce viel Zucker. Nicht frittiert und mit weniger Sauce ist es eine akzeptable Mahlzeit mit gutem Proteingehalt."
+    },
+    {
+      "question": "Wie viel Zucker hat Süß-Sauer Sauce?",
+      "answer": "Fertige Süß-Sauer-Sauce enthält rund 19g Zucker pro 100g, bei rund 38g Kohlenhydraten insgesamt."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Süß-Sauer oder Curry-Hähnchen?",
+      "answer": "Curry-Hähnchen (375 kcal pro 350g) hat deutlich weniger als frittiertes Süß-Sauer (875 kcal). Nicht frittiert (473 kcal) liegt Süß-Sauer näher am Curry."
+    },
+    {
+      "question": "Wie viel Protein hat Süß-Sauer Hähnchen?",
+      "answer": "Eine frittierte Portion (350g) liefert ca. 35g Protein, die Pfannenvariante mit 150g Hähnchenbrust rund 49g. Beides ist ein guter Wert für eine Hauptmahlzeit."
+    },
+    {
+      "question": "Kann man Süß-Sauer Hähnchen beim Abnehmen essen?",
+      "answer": "Die leichte Version ohne Frittieren und mit weniger Sauce (396 kcal) kann in eine Diät passen. Wichtig: Reis-Portion begrenzen."
+    }
   ],
-  "related_foods": ["curry-haehnchen", "gebratene-nudeln", "wok-gemuese", "fried-rice"]
+  "related_foods": [
+    "curry-haehnchen",
+    "gebratene-nudeln",
+    "wok-gemuese",
+    "fried-rice"
+  ]
 }

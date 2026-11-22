@@ -3,9 +3,10 @@
   "name": "Cider",
   "emoji": "🍏",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710621 (Hard cider: 56 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 57 kcal",
   "seo": {
     "title": "Cider Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Cider? Ein Glas (200 ml) hat ca. 100 kcal. Nährwerte pro 100 ml, Apfelwein im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Cider? Ein Glas (200 ml) hat ca. 114 kcal. Nährwerte pro 100 ml, Apfelwein im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "cider kalorien",
       "cider kcal",
@@ -18,106 +19,116 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 50,
-    "protein_per_100g": 0.1,
-    "carbs_per_100g": 2.6,
+    "calories_per_100g": 56,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 5.9,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 200,
+    "typical_portion_g": 203,
     "typical_portion_name": "1 Glas (200 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (100 ml)",
-      "portion_g": 100,
-      "calories": 50,
+      "portion_g": 101,
+      "calories": 57,
       "protein": 0,
-      "carbs": 3,
+      "carbs": 6,
       "fat": 0
     },
     {
       "name": "Glas (200 ml)",
-      "portion_g": 200,
-      "calories": 100,
+      "portion_g": 203,
+      "calories": 114,
       "protein": 0,
-      "carbs": 5,
+      "carbs": 12,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Großes Glas (300 ml)",
-      "portion_g": 300,
-      "calories": 150,
+      "portion_g": 304,
+      "calories": 170,
       "protein": 0,
-      "carbs": 8,
+      "carbs": 18,
       "fat": 0
     },
     {
       "name": "Flasche (330 ml)",
-      "portion_g": 330,
-      "calories": 165,
+      "portion_g": 335,
+      "calories": 188,
       "protein": 0,
-      "carbs": 9,
+      "carbs": 20,
       "fat": 0
     },
     {
       "name": "Halber Liter (500 ml)",
-      "portion_g": 500,
-      "calories": 250,
-      "protein": 1,
-      "carbs": 13,
+      "portion_g": 507,
+      "calories": 284,
+      "protein": 0,
+      "carbs": 30,
       "fat": 0
-    },
-    {
-      "name": "Süßer Cider (200 ml)",
-      "portion_g": 200,
-      "calories": 130,
-      "protein": 0,
-      "carbs": 14,
-      "fat": 0,
-      "tip": "Mehr Restzucker"
-    },
-    {
-      "name": "Trockener Cider (200 ml)",
-      "portion_g": 200,
-      "calories": 90,
-      "protein": 0,
-      "carbs": 3,
-      "fat": 0,
-      "tip": "Wenig Restzucker"
     }
   ],
   "comparison": [
     {
       "name": "Bier (200 ml)",
-      "calories": 84,
-      "emoji": "🍺"
+      "calories": 86,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Apfelsaft (200 ml)",
-      "calories": 92,
-      "emoji": "🧃"
+      "calories": 97,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 200,
+          "g": 210
+        }
+      ]
     },
     {
       "name": "Weißwein (200 ml)",
-      "calories": 166,
-      "emoji": "🍷"
+      "calories": 163,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-weiss",
+          "ml": 200,
+          "g": 199
+        }
+      ]
     },
     {
       "name": "Prosecco (200 ml)",
-      "calories": 142,
-      "emoji": "🥂"
+      "calories": 152,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "prosecco",
+          "ml": 200,
+          "g": 203
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Alkohol liefert die meisten Kalorien",
-      "text": "Die Kalorien im Cider stammen vor allem vom Alkohol (7 kcal pro Gramm), nicht vom Zucker. Deshalb passt die übliche Nährwert-Rechnung aus Eiweiß, Kohlenhydraten und Fett hier nicht.",
+      "text": "Die Kalorien im Cider stammen zu einem großen Teil vom Alkohol (7 kcal pro Gramm), der Rest vor allem vom Zucker. Deshalb passt die übliche Nährwert-Rechnung aus Eiweiß, Kohlenhydraten und Fett hier nicht.",
       "icon": "🍷"
     },
     {
       "title": "Trocken statt süß wählen",
-      "text": "Trockener Cider hat deutlich weniger Restzucker und damit weniger Kalorien als süße Sorten. Ein trockenes Glas (200 ml) kommt auf rund 90 kcal statt 130 kcal.",
+      "text": "Trockener Cider hat deutlich weniger Restzucker und damit weniger Kalorien als süße Sorten. Ein Blick auf die Nährwertangabe der Flasche zeigt den Unterschied.",
       "icon": "🍏"
     },
     {
@@ -127,27 +138,27 @@
     },
     {
       "title": "Auf die Menge achten",
-      "text": "Ein halber Liter Cider hat bereits rund 250 kcal. Beim Abnehmen lohnt es sich, beim kleinen Glas zu bleiben.",
+      "text": "Ein halber Liter Cider hat bereits rund 284 kcal. Beim Abnehmen lohnt es sich, beim kleinen Glas zu bleiben.",
       "icon": "📏"
     },
     {
       "title": "Vergleichbar mit Bier",
-      "text": "Cider liegt kalorisch im Bereich von Bier und enthält oft etwas mehr Zucker. Beide sollten als Genussmittel und nicht als Durstlöscher gelten.",
+      "text": "Cider liegt kalorisch etwas über Bier und enthält mehr Zucker. Beide sollten als Genussmittel und nicht als Durstlöscher gelten.",
       "icon": "🍺"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Cider?",
-      "answer": "Cider hat etwa 50 kcal pro 100 ml. Ein normales Glas (200 ml) kommt damit auf rund 100 kcal, eine 330-ml-Flasche auf etwa 165 kcal."
+      "answer": "Cider hat etwa 57 kcal pro 100 ml. Ein normales Glas (200 ml) kommt damit auf rund 114 kcal, eine 330-ml-Flasche auf etwa 188 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Glas Cider?",
-      "answer": "Ein Glas mit 200 ml hat ca. 100 kcal. Süße Sorten liegen mit rund 130 kcal höher, trockene mit etwa 90 kcal niedriger."
+      "answer": "Ein Glas mit 200 ml hat ca. 114 kcal. Süße Sorten liegen höher, trockene niedriger."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Cider?",
-      "answer": "Cider enthält rund 2 bis 3 g Kohlenhydrate (Restzucker) pro 100 ml. Süße Sorten können deutlich mehr haben, trockene fast keine."
+      "answer": "Cider enthält laut USDA rund 6 g Kohlenhydrate pro 100 ml, fast vollständig Restzucker. Süße Sorten können deutlich mehr haben, trockene fast keine."
     },
     {
       "question": "Hat Cider viel Eiweiß?",
@@ -155,11 +166,11 @@
     },
     {
       "question": "Ist Cider zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit rund 100 kcal pro Glas ist Cider kein Diät-Getränk. Wer abnehmen möchte, sollte zu trockenen Sorten greifen oder als Schorle mit Wasser trinken."
+      "answer": "Nur in Maßen. Mit rund 114 kcal pro Glas ist Cider kein Diät-Getränk. Wer abnehmen möchte, sollte zu trockenen Sorten greifen oder als Schorle mit Wasser trinken."
     },
     {
       "question": "Ist Cider gesünder als Bier?",
-      "answer": "Beide liegen kalorisch ähnlich. Cider enthält oft etwas mehr Zucker, Bier dagegen Stoffe aus Hopfen und Malz. Gesundheitlich bleibt es bei beiden ein alkoholisches Genussmittel."
+      "answer": "Cider liegt kalorisch etwas über Bier. Cider enthält mehr Zucker, Bier dagegen Stoffe aus Hopfen und Malz. Gesundheitlich bleibt es bei beiden ein alkoholisches Genussmittel."
     }
   ],
   "related_foods": [

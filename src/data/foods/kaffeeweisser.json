@@ -3,9 +3,10 @@
   "name": "Kaffeeweißer",
   "emoji": "🥛",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171263 (Cream substitute, powdered), Werte je 100 g",
   "seo": {
     "title": "Kaffeeweißer Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kaffeeweißer? Pulver hat ca. 540 kcal pro 100g, ein Teelöffel (2g) nur 11 kcal. Nährwerte, Varianten & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Kaffeeweißer? Pulver hat ca. 529 kcal pro 100g, ein Teelöffel (2g) nur 11 kcal. Nährwerte, Varianten & Tipps zum Abnehmen.",
     "keywords": [
       "kaffeeweißer kalorien",
       "kaffeeweißer kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 540,
-    "protein_per_100g": 3.5,
-    "carbs_per_100g": 58,
-    "fat_per_100g": 33,
+    "calories_per_100g": 529,
+    "protein_per_100g": 2.5,
+    "carbs_per_100g": 59.3,
+    "fat_per_100g": 32.9,
     "fiber_per_100g": 0,
     "typical_portion_g": 2,
     "typical_portion_name": "1 Teelöffel (2g)"
@@ -38,7 +39,7 @@
     {
       "name": "2 Teelöffel Pulver (4g)",
       "portion_g": 4,
-      "calories": 22,
+      "calories": 21,
       "protein": 0,
       "carbs": 2,
       "fat": 1
@@ -48,7 +49,7 @@
       "portion_g": 6,
       "calories": 32,
       "protein": 0,
-      "carbs": 3,
+      "carbs": 4,
       "fat": 2
     },
     {
@@ -64,54 +65,82 @@
       "portion_g": 15,
       "calories": 20,
       "protein": 0,
-      "carbs": 3,
+      "carbs": 2,
       "fat": 1,
-      "tip": "Cremiger, aber weniger konzentriert"
+      "tip": "Cremiger, aber weniger konzentriert",
+      "basis": [
+        {
+          "fdcId": 171262,
+          "ml": 15,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Fettarmer Kaffeeweißer (2g)",
       "portion_g": 2,
-      "calories": 8,
+      "calories": 9,
       "protein": 0,
       "carbs": 1,
       "fat": 0,
-      "tip": "Reduzierte Variante"
+      "tip": "Reduzierte Variante",
+      "basis": [
+        {
+          "fdcId": 167688,
+          "g": 2
+        }
+      ]
     },
     {
       "name": "100g Pulver",
       "portion_g": 100,
-      "calories": 540,
-      "protein": 4,
-      "carbs": 58,
+      "calories": 529,
+      "protein": 3,
+      "carbs": 59,
       "fat": 33
     }
   ],
   "comparison": [
     {
-      "name": "Kaffeeweißer (1 TL)",
-      "calories": 11,
-      "emoji": "🥛"
-    },
-    {
       "name": "Vollmilch (1 Schuss, 20ml)",
-      "calories": 13,
-      "emoji": "🥛"
+      "calories": 12,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milch",
+          "ml": 20,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Sahne (1 Schuss, 15ml)",
       "calories": 44,
-      "emoji": "🥛"
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sahne",
+          "ml": 15,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Zucker (1 TL, 4g)",
-      "calories": 16,
-      "emoji": "🍬"
+      "calories": 15,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "fdcId": 169655,
+          "g": 4
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Wenig pro Tasse, viel pro 100g",
-      "text": "Mit 540 kcal pro 100g ist Kaffeeweißer sehr energiedicht. Pro Tasse landet aber nur etwa 1 Teelöffel (2g) im Kaffee, das sind rund 11 kcal.",
+      "text": "Mit 529 kcal pro 100g ist Kaffeeweißer sehr energiedicht. Pro Tasse landet aber nur etwa 1 Teelöffel (2g) im Kaffee, das sind rund 11 kcal.",
       "icon": "☕"
     },
     {
@@ -121,7 +150,7 @@
     },
     {
       "title": "Frische Milch als Alternative",
-      "text": "Ein Schuss Vollmilch (20ml) hat mit etwa 13 kcal kaum mehr Kalorien als ein Teelöffel Kaffeeweißer, liefert aber echtes Eiweiß und Kalzium.",
+      "text": "Ein Schuss Vollmilch (20ml) hat mit etwa 12 kcal kaum mehr Kalorien als ein Teelöffel Kaffeeweißer, liefert aber echtes Eiweiß und Kalzium.",
       "icon": "🥛"
     },
     {
@@ -138,19 +167,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kaffeeweißer?",
-      "answer": "Kaffeeweißer-Pulver hat etwa 540 kcal pro 100g. Pro Tasse verwendet man aber meist nur einen Teelöffel (2g), das entspricht rund 11 kcal."
+      "answer": "Kaffeeweißer-Pulver hat etwa 529 kcal pro 100g. Pro Tasse verwendet man aber meist nur einen Teelöffel (2g), das entspricht rund 11 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Teelöffel Kaffeeweißer?",
-      "answer": "Ein gehäufter Teelöffel Kaffeeweißer (etwa 2g) hat ungefähr 11 kcal. Zwei Teelöffel kommen auf rund 22 kcal."
+      "answer": "Ein gehäufter Teelöffel Kaffeeweißer (etwa 2g) hat ungefähr 11 kcal. Zwei Teelöffel kommen auf rund 21 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kaffeeweißer?",
-      "answer": "Kaffeeweißer enthält etwa 58g Kohlenhydrate pro 100g, überwiegend aus Glukosesirup. Pro Teelöffel (2g) ist das etwa 1g."
+      "answer": "Kaffeeweißer enthält etwa 59g Kohlenhydrate pro 100g, überwiegend aus Glukosesirup. Pro Teelöffel (2g) ist das etwa 1g."
     },
     {
       "question": "Hat Kaffeeweißer viel Eiweiß?",
-      "answer": "Nein. Mit nur etwa 3,5g Eiweiß pro 100g ist Kaffeeweißer keine nennenswerte Eiweißquelle. Er besteht hauptsächlich aus pflanzlichem Fett und Zucker."
+      "answer": "Nein. Mit nur etwa 2,5g Eiweiß pro 100g ist Kaffeeweißer keine nennenswerte Eiweißquelle. Er besteht hauptsächlich aus pflanzlichem Fett und Zucker."
     },
     {
       "question": "Ist Kaffeeweißer zum Abnehmen geeignet?",

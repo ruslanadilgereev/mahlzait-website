@@ -3,9 +3,10 @@
   "name": "Curly Fries",
   "emoji": "🍟",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2709462 (Potato, french fries, restaurant), Werte je 100 g",
   "seo": {
     "title": "Curly Fries Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Curly Fries? Eine mittlere Portion (150g) hat ca. 428 kcal. Nährwerte pro 100g, Portionen im Vergleich & Tipps.",
+    "description": "Wie viele Kalorien haben Curly Fries? Eine mittlere Portion (150g) hat ca. 434 kcal. Nährwerte pro 100g, Portionen im Vergleich & Tipps.",
     "keywords": [
       "curly fries kalorien",
       "curly fries kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 285,
-    "protein_per_100g": 3.6,
-    "carbs_per_100g": 32,
-    "fat_per_100g": 16,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 289,
+    "protein_per_100g": 3.5,
+    "carbs_per_100g": 37.2,
+    "fat_per_100g": 14,
+    "fiber_per_100g": 3.9,
     "typical_portion_g": 150,
     "typical_portion_name": "1 mittlere Portion"
   },
@@ -30,99 +31,135 @@
     {
       "name": "Kleine Portion (100g)",
       "portion_g": 100,
-      "calories": 285,
+      "calories": 289,
       "protein": 4,
-      "carbs": 32,
-      "fat": 16
+      "carbs": 37,
+      "fat": 14
     },
     {
       "name": "Mittlere Portion (150g)",
       "portion_g": 150,
-      "calories": 428,
+      "calories": 434,
       "protein": 5,
-      "carbs": 48,
-      "fat": 24,
+      "carbs": 56,
+      "fat": 21,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (200g)",
       "portion_g": 200,
-      "calories": 570,
+      "calories": 578,
       "protein": 7,
-      "carbs": 64,
-      "fat": 32
+      "carbs": 74,
+      "fat": 28
     },
     {
       "name": "Beilage im Restaurant (120g)",
       "portion_g": 120,
-      "calories": 342,
+      "calories": 347,
       "protein": 4,
-      "carbs": 38,
-      "fat": 19
+      "carbs": 45,
+      "fat": 17
     },
     {
       "name": "XL / zum Teilen (250g)",
       "portion_g": 250,
-      "calories": 712,
+      "calories": 723,
       "protein": 9,
-      "carbs": 80,
-      "fat": 40
+      "carbs": 93,
+      "fat": 35
     },
     {
-      "name": "Aus dem Airfryer (150g)",
+      "name": "TK aus Ofen oder Airfryer (150g)",
       "portion_g": 150,
-      "calories": 262,
-      "protein": 5,
-      "carbs": 45,
-      "fat": 9,
-      "tip": "Weniger Fett"
+      "calories": 237,
+      "protein": 4,
+      "carbs": 38,
+      "fat": 8,
+      "tip": "Weniger Fett",
+      "basis": [
+        {
+          "fdcId": 2709460,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "TK roh, ungebacken (100g)",
       "portion_g": 100,
-      "calories": 180,
-      "protein": 3,
-      "carbs": 27,
-      "fat": 7,
-      "tip": "Vor dem Backen"
+      "calories": 147,
+      "protein": 2,
+      "carbs": 25,
+      "fat": 5,
+      "tip": "Vor dem Backen",
+      "basis": [
+        {
+          "fdcId": 170523,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Pommes Frites",
-      "calories": 312,
-      "emoji": "🍟"
+      "name": "Pommes Frites (150g)",
+      "calories": 468,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 2709461,
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Onion Rings",
-      "calories": 411,
-      "emoji": "🧅"
+      "name": "Onion Rings (120g)",
+      "calories": 422,
+      "emoji": "🧅",
+      "basis": [
+        {
+          "fdcId": 2710055,
+          "g": 120
+        }
+      ]
     },
     {
-      "name": "Kroketten",
-      "calories": 369,
-      "emoji": "🥔"
+      "name": "Kroketten (125g)",
+      "calories": 296,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "fdcId": 2709516,
+          "g": 125
+        }
+      ]
     },
     {
-      "name": "Ofenkartoffel",
+      "name": "Ofenkartoffel (100g)",
       "calories": 93,
-      "emoji": "🥔"
+      "emoji": "🥔",
+      "basis": [
+        {
+          "fdcId": 170093,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ähnlich kalorienreich wie Pommes",
-      "text": "Durch ihre Spiralform haben Curly Fries eine größere Oberfläche und nehmen beim Frittieren mehr Öl auf – etwa 16g Fett pro 100g gegenüber rund 14g bei normalen Pommes.",
+      "text": "Für Curly Fries gibt es keinen eigenen FDC-Eintrag. Die Werte auf dieser Seite sind die von frittierten Restaurant-Pommes: rund 289 kcal und 14g Fett pro 100g.",
       "icon": "🌀"
     },
     {
       "title": "Airfryer spart Kalorien",
-      "text": "Im Heißluftofen statt in der Fritteuse zubereitet, fällt der Fettanteil deutlich. Aus 285 kcal pro 100g werden so etwa 175 kcal – fast 40% weniger.",
+      "text": "TK-Pommes aus Ofen oder Airfryer haben laut FDC rund 158 kcal statt 289 kcal pro 100g, also fast die Hälfte weniger.",
       "icon": "💨"
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Eine mittlere Portion (150g) bringt schon 428 kcal mit. Wer abnehmen möchte, bestellt eine kleine Portion oder teilt sich eine große mit anderen.",
+      "text": "Eine mittlere Portion (150g) bringt schon ca. 434 kcal mit. Wer abnehmen möchte, bestellt eine kleine Portion oder teilt sich eine große mit anderen.",
       "icon": "⚖️"
     },
     {
@@ -132,30 +169,30 @@
     },
     {
       "title": "Auf Soßen achten",
-      "text": "Mayo, Käsesoße oder Sour Cream können schnell 100-200 kcal extra bedeuten. Ketchup oder Senf sind die kalorienärmeren Alternativen.",
+      "text": "Mayo, Käsesoße oder Sour Cream bringen schnell viele Kalorien extra. Ketchup oder Senf sind die kalorienärmeren Alternativen.",
       "icon": "🥫"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Curly Fries?",
-      "answer": "Eine mittlere Portion Curly Fries (150g) hat ca. 428 kcal. Pro 100g sind es rund 285 kcal. Eine große Portion (200g) kommt auf etwa 570 kcal."
+      "answer": "Eine mittlere Portion Curly Fries (150g) hat ca. 434 kcal. Pro 100g sind es rund 289 kcal. Eine große Portion (200g) kommt auf etwa 578 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Curly Fries?",
-      "answer": "Curly Fries enthalten ca. 32g Kohlenhydrate pro 100g. Eine mittlere Portion (150g) liefert damit rund 48g Kohlenhydrate."
+      "answer": "Curly Fries enthalten ca. 37g Kohlenhydrate pro 100g. Eine mittlere Portion (150g) liefert damit rund 56g Kohlenhydrate."
     },
     {
       "question": "Haben Curly Fries mehr Kalorien als normale Pommes?",
-      "answer": "Ja, meist etwas mehr. Durch die gewürzte Panierung und die größere Oberfläche nehmen Curly Fries mehr Öl auf – etwa 285 kcal/100g gegenüber rund 312 kcal bei stark frittierten Pommes, in der Regel liegen sie aber im selben oder höheren Bereich."
+      "answer": "FDC führt Curly Fries nicht eigens. Diese Seite nutzt frittierte Restaurant-Pommes mit ca. 289 kcal/100g; Fast-Food-Pommes liegen laut FDC bei ca. 312 kcal/100g. Durch die gewürzte Panade können Curly Fries je nach Hersteller etwas mehr Öl aufnehmen."
     },
     {
       "question": "Sind Curly Fries zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 285 kcal und 16g Fett pro 100g sind sie kalorienreich. In einer Diät besser kleine Portionen wählen oder im Airfryer zubereiten, dann sinken die Kalorien deutlich."
+      "answer": "Nur in Maßen. Mit ca. 289 kcal und 14g Fett pro 100g sind sie kalorienreich. In einer Diät besser kleine Portionen wählen oder im Airfryer zubereiten, dann sinken die Kalorien deutlich."
     },
     {
       "question": "Wie viel Protein haben Curly Fries?",
-      "answer": "Curly Fries enthalten nur etwa 3,6g Protein pro 100g. Sie sind also keine gute Eiweißquelle und sollten mit einer proteinreichen Beilage kombiniert werden."
+      "answer": "Curly Fries enthalten nur etwa 3,5g Protein pro 100g. Sie sind also keine gute Eiweißquelle und sollten mit einer proteinreichen Beilage kombiniert werden."
     },
     {
       "question": "Sind Curly Fries gesund?",

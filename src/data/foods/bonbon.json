@@ -3,9 +3,10 @@
   "name": "Bonbon",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167990 (Candies, hard), Werte je 100 g",
   "seo": {
     "title": "Bonbon Kalorien: Nährwerte, Sorten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Bonbon? Ein Hartbonbon (6g) hat ca. 23 kcal, 100g rund 390 kcal. Nährwerte, Sorten im Vergleich & Tipps.",
+    "description": "Wie viele Kalorien hat ein Bonbon? Ein Hartbonbon (6g) hat ca. 24 kcal, 100g rund 394 kcal. Nährwerte, Sorten im Vergleich & Tipps.",
     "keywords": [
       "bonbon kcal",
       "bonbon kalorien",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 390,
+    "calories_per_100g": 394,
     "protein_per_100g": 0,
     "carbs_per_100g": 98,
-    "fat_per_100g": 0,
+    "fat_per_100g": 0.2,
     "fiber_per_100g": 0,
     "typical_portion_g": 6,
     "typical_portion_name": "1 Bonbon (6g)"
@@ -28,7 +29,7 @@
     {
       "name": "1 Bonbon (6g)",
       "portion_g": 6,
-      "calories": 23,
+      "calories": 24,
       "protein": 0,
       "carbs": 6,
       "fat": 0,
@@ -53,7 +54,7 @@
     {
       "name": "Handvoll (5 Bonbons, 30g)",
       "portion_g": 30,
-      "calories": 117,
+      "calories": 118,
       "protein": 0,
       "carbs": 29,
       "fat": 0
@@ -61,7 +62,7 @@
     {
       "name": "Kleine Tüte (75g)",
       "portion_g": 75,
-      "calories": 293,
+      "calories": 296,
       "protein": 0,
       "carbs": 74,
       "fat": 0
@@ -69,25 +70,22 @@
     {
       "name": "Sahnebonbon / Karamell (8g)",
       "portion_g": 8,
-      "calories": 32,
+      "calories": 31,
       "protein": 0,
       "carbs": 6,
       "fat": 1,
-      "tip": "Mit Sahne/Butter, etwas Fett"
-    },
-    {
-      "name": "Zuckerfreies Bonbon (5g)",
-      "portion_g": 5,
-      "calories": 12,
-      "protein": 0,
-      "carbs": 5,
-      "fat": 0,
-      "tip": "Mit Zuckeraustauschstoffen, weniger kcal"
+      "tip": "Mit Sahne/Butter, etwas Fett",
+      "basis": [
+        {
+          "fdcId": 167974,
+          "g": 8
+        }
+      ]
     },
     {
       "name": "100g Bonbons",
       "portion_g": 100,
-      "calories": 390,
+      "calories": 394,
       "protein": 0,
       "carbs": 98,
       "fat": 0
@@ -97,28 +95,52 @@
     {
       "name": "Gummibärchen (10g)",
       "calories": 34,
-      "emoji": "🐻"
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Lakritz (10g)",
-      "calories": 33,
-      "emoji": "⚫"
+      "calories": 40,
+      "emoji": "⚫",
+      "basis": [
+        {
+          "slug": "lakritz",
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Praline (12g)",
-      "calories": 62,
-      "emoji": "🍫"
+      "calories": 66,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "praline",
+          "g": 12
+        }
+      ]
     },
     {
-      "name": "Traubenzucker (1 Stück, 6g)",
+      "name": "Traubenzucker (2 Plättchen, 6g)",
       "calories": 23,
-      "emoji": "🟦"
+      "emoji": "🟦",
+      "basis": [
+        {
+          "slug": "traubenzucker",
+          "g": 6
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein, aber zuckerreich",
-      "text": "Ein einzelnes Bonbon hat nur rund 23 kcal, besteht aber fast vollständig aus Zucker. Die Menge summiert sich schnell, wenn man dauerhaft lutscht.",
+      "text": "Ein einzelnes Bonbon hat nur rund 24 kcal, besteht aber fast vollständig aus Kohlenhydraten, vor allem Zucker. Die Menge summiert sich schnell, wenn man dauerhaft lutscht.",
       "icon": "🍬"
     },
     {
@@ -128,7 +150,7 @@
     },
     {
       "title": "Zuckerfreie Varianten sparen Kalorien",
-      "text": "Zuckerfreie Bonbons mit Süßungsmitteln haben oft nur die Hälfte der Kalorien und sind zahnfreundlicher.",
+      "text": "Zuckerfreie Bonbons mit Süßungsmitteln haben oft weniger Kalorien und sind zahnfreundlicher.",
       "icon": "🦷"
     },
     {
@@ -138,22 +160,22 @@
     },
     {
       "title": "Portion bewusst abzählen",
-      "text": "Statt aus der offenen Tüte zu naschen, lieber 2-3 Bonbons abzählen. So behältst du den Überblick über die Kalorien.",
+      "text": "Statt aus der offenen Tüte zu naschen, lieber 2 bis 3 Bonbons abzählen. So behältst du den Überblick über die Kalorien.",
       "icon": "✋"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Bonbon?",
-      "answer": "Ein normales Hartbonbon (6g) hat etwa 23 kcal. Kleinere Bonbons (4g) kommen auf rund 16 kcal."
+      "answer": "Ein normales Hartbonbon (6g) hat etwa 24 kcal. Kleinere Bonbons (4g) kommen auf rund 16 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 100g Bonbons?",
-      "answer": "100g Bonbons haben rund 390 kcal, da sie fast vollständig aus Zucker bestehen."
+      "answer": "100g Bonbons haben rund 394 kcal, da sie fast vollständig aus Kohlenhydraten bestehen."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Bonbon?",
-      "answer": "Bonbons bestehen fast nur aus Kohlenhydraten in Form von Zucker: etwa 98g pro 100g, also rund 6g pro einzelnem Bonbon."
+      "answer": "Bonbons bestehen fast nur aus Kohlenhydraten: etwa 98g pro 100g, davon rund 63g Zucker. Ein einzelnes Bonbon liefert also rund 6g Kohlenhydrate."
     },
     {
       "question": "Haben Bonbons Eiweiß oder Fett?",
@@ -161,7 +183,7 @@
     },
     {
       "question": "Sind Bonbons zum Abnehmen geeignet?",
-      "answer": "Bonbons liefern reine Zuckerkalorien ohne Sättigung und sind daher zum Abnehmen ungünstig. In kleinen Mengen sind sie aber ein kalorienarmer Einzel-Snack, wenn man es bei 1-2 Stück belässt."
+      "answer": "Bonbons liefern reine Zuckerkalorien ohne Sättigung und sind daher zum Abnehmen ungünstig. In kleinen Mengen sind sie aber ein kalorienarmer Einzel-Snack, wenn man es bei 1 bis 2 Stück belässt."
     },
     {
       "question": "Sind zuckerfreie Bonbons gesünder?",

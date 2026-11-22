@@ -3,48 +3,212 @@
   "name": "Schweinebraten",
   "emoji": "🥩",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2705882 (Pork, roast), Werte je 100 g",
   "seo": {
     "title": "Schweinebraten Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Schweinebraten? Nährwerte für Krustenbraten, Schweinshaxe & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 230,
-    "protein_per_100g": 22,
+    "calories_per_100g": 181,
+    "protein_per_100g": 26.6,
     "carbs_per_100g": 0,
-    "fat_per_100g": 15,
+    "fat_per_100g": 7.5,
     "fiber_per_100g": 0,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Schweinebraten klassisch", "portion_g": 250, "calories": 575, "protein": 55, "carbs": 0, "fat": 38, "tip": "Ohne Beilagen"},
-    {"name": "Krustenbraten", "portion_g": 250, "calories": 620, "protein": 50, "carbs": 0, "fat": 45, "tip": "Knusprige Kruste erhöht den Fettgehalt"},
-    {"name": "Schweinebraten mit Knödeln", "portion_g": 500, "calories": 850, "protein": 58, "carbs": 62, "fat": 42, "tip": "Bayerisches Komplettgericht"},
-    {"name": "Schweinshaxe", "portion_g": 350, "calories": 900, "protein": 65, "carbs": 0, "fat": 70, "tip": "Sehr fettreich"},
-    {"name": "Schweinefilet gebraten", "portion_g": 200, "calories": 320, "protein": 48, "carbs": 0, "fat": 14, "tip": "Kalorienärmste Variante"},
-    {"name": "Schweinebraten mit Sauerkraut", "portion_g": 400, "calories": 630, "protein": 58, "carbs": 12, "fat": 40, "tip": "Traditionell bayerisch"},
-    {"name": "Pulled Pork", "portion_g": 200, "calories": 460, "protein": 40, "carbs": 5, "fat": 32, "tip": "Langsam gegart, sehr saftig"}
+    {
+      "name": "Schweinebraten klassisch",
+      "portion_g": 250,
+      "calories": 453,
+      "protein": 67,
+      "carbs": 0,
+      "fat": 19,
+      "tip": "Ohne Beilagen"
+    },
+    {
+      "name": "Schweinebraten mit Fettrand (Schulter, 250g)",
+      "portion_g": 250,
+      "calories": 730,
+      "protein": 58,
+      "carbs": 0,
+      "fat": 53,
+      "tip": "Mit Fettrand, deutlich fettreicher",
+      "basis": [
+        {
+          "fdcId": 167844,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Schweinshaxe",
+      "portion_g": 350,
+      "calories": 812,
+      "protein": 91,
+      "carbs": 0,
+      "fat": 47,
+      "tip": "Sehr fettreich",
+      "basis": [
+        {
+          "slug": "schweinshaxe",
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Schweinefilet gebraten",
+      "portion_g": 200,
+      "calories": 286,
+      "protein": 52,
+      "carbs": 0,
+      "fat": 7,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 168250,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Schweinebraten mit Sauerkraut (250g + 150g)",
+      "portion_g": 400,
+      "calories": 481,
+      "protein": 68,
+      "carbs": 6,
+      "fat": 19,
+      "tip": "Traditionell bayerisch",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "slug": "sauerkraut",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Pulled Pork (mit BBQ-Sauce)",
+      "portion_g": 200,
+      "calories": 336,
+      "protein": 26,
+      "carbs": 37,
+      "fat": 9,
+      "tip": "Langsam gegart, sehr saftig",
+      "basis": [
+        {
+          "fdcId": 173344,
+          "g": 200
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Rinderbraten", "calories": 450, "emoji": "🥩"},
-    {"name": "Hähnchenschenkel", "calories": 380, "emoji": "🍗"},
-    {"name": "Schnitzel", "calories": 550, "emoji": "🍖"},
-    {"name": "Sauerbraten", "calories": 465, "emoji": "🍲"}
+    {
+      "name": "Rinderbraten (250g)",
+      "calories": 515,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "rinderbraten",
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenkeule (150g)",
+      "calories": 276,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenkeule",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel (250g)",
+      "calories": 595,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "schnitzel",
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Sauerbraten (300g)",
+      "calories": 465,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "sauerbraten",
+          "g": 300
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Filet statt Nacken", "text": "Schweinefilet hat nur 140 kcal/100g statt 230 kcal – fast 40% weniger Kalorien.", "icon": "🥩"},
-    {"title": "Kruste separat essen", "text": "Genieße nur ein kleines Stück Kruste – sie enthält das meiste Fett.", "icon": "🍖"},
-    {"title": "Soße entfetten", "text": "Stelle die Bratsoße kurz kalt und schöpfe das erstarrte Fett ab.", "icon": "🥄"},
-    {"title": "Sauerkraut als Beilage", "text": "Sauerkraut hat nur 19 kcal/100g und ist voll Vitamin C – die perfekte leichte Beilage.", "icon": "🥬"},
-    {"title": "Portionsgröße beachten", "text": "Im Restaurant sind Portionen oft 300-400g. Zuhause reichen 200g als Proteinquelle völlig aus.", "icon": "⚖️"}
+    {
+      "title": "Filet statt Nacken",
+      "text": "Schweinefilet hat nur 143 kcal/100g statt 181 kcal beim Schweinebraten, rund ein Fünftel weniger Kalorien.",
+      "icon": "🥩"
+    },
+    {
+      "title": "Kruste separat essen",
+      "text": "Genieße nur ein kleines Stück Kruste, sie enthält das meiste Fett.",
+      "icon": "🍖"
+    },
+    {
+      "title": "Soße entfetten",
+      "text": "Stelle die Bratsoße kurz kalt und schöpfe das erstarrte Fett ab.",
+      "icon": "🥄"
+    },
+    {
+      "title": "Sauerkraut als Beilage",
+      "text": "Sauerkraut hat nur 19 kcal/100g und ist voll Vitamin C, die perfekte leichte Beilage.",
+      "icon": "🥬"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Im Restaurant sind Portionen oft 300-400g. Zuhause reichen 200g als Proteinquelle völlig aus.",
+      "icon": "⚖️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Schweinebraten?", "answer": "Eine Portion Schweinebraten (250g) hat ca. 575 kcal. Mit Knödeln und Soße kommt ein komplettes Gericht auf 850 kcal."},
-    {"question": "Ist Schweinebraten gesund?", "answer": "Schweinebraten liefert viel Protein (22g/100g) und B-Vitamine. Der Fettgehalt ist mit 15g/100g aber relativ hoch."},
-    {"question": "Was hat weniger Kalorien: Schweinebraten oder Rinderbraten?", "answer": "Rinderbraten (180 kcal/100g) hat weniger Kalorien als Schweinebraten (230 kcal/100g). Am magersten ist Schweinefilet (140 kcal)."},
-    {"question": "Wie viel Protein hat Schweinebraten?", "answer": "Schweinebraten liefert ca. 22g Protein pro 100g. Eine Portion (250g) bringt 55g Protein."},
-    {"question": "Wie viele Kalorien hat eine Schweinshaxe?", "answer": "Eine Schweinshaxe (350g) hat ca. 900 kcal. Sie gehört zu den kalorienreichsten deutschen Gerichten durch den hohen Fettanteil."},
-    {"question": "Kann man Schweinebraten beim Abnehmen essen?", "answer": "Ja, wähle magere Teilstücke wie Filet (320 kcal/200g) und leichte Beilagen wie Sauerkraut statt Knödel."}
+    {
+      "question": "Wie viele Kalorien hat Schweinebraten?",
+      "answer": "Eine Portion Schweinebraten (250g) hat ca. 453 kcal. Mit 150g Sauerkraut kommt ein komplettes Gericht auf rund 481 kcal."
+    },
+    {
+      "question": "Ist Schweinebraten gesund?",
+      "answer": "Schweinebraten liefert viel Protein (26,6g/100g) und B-Vitamine. Der Fettgehalt ist mit 7,5g/100g moderat, mit Fettrand aber deutlich höher."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Schweinebraten oder Rinderbraten?",
+      "answer": "Schweinebraten (181 kcal/100g) hat etwas weniger Kalorien als Rinderbraten (206 kcal/100g). Am magersten ist Schweinefilet (143 kcal)."
+    },
+    {
+      "question": "Wie viel Protein hat Schweinebraten?",
+      "answer": "Schweinebraten liefert ca. 26,6g Protein pro 100g. Eine Portion (250g) bringt rund 67g Protein."
+    },
+    {
+      "question": "Wie viele Kalorien hat eine Schweinshaxe?",
+      "answer": "Eine Schweinshaxe (350g Fleisch) hat ca. 812 kcal. Sie gehört zu den kalorienreichsten deutschen Gerichten durch den hohen Fettanteil."
+    },
+    {
+      "question": "Kann man Schweinebraten beim Abnehmen essen?",
+      "answer": "Ja, wähle magere Teilstücke wie Filet (286 kcal/200g) und leichte Beilagen wie Sauerkraut statt Knödel."
+    }
   ],
-  "related_foods": ["rinderbraten", "sauerbraten", "schnitzel", "bratwurst"]
+  "related_foods": [
+    "rinderbraten",
+    "sauerbraten",
+    "schnitzel",
+    "bratwurst"
+  ]
 }

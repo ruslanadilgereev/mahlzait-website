@@ -3,48 +3,164 @@
   "name": "Calzone",
   "emoji": "🍕",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2708685 (Calzone, with meat and cheese), Werte je 100 g",
   "seo": {
     "title": "Calzone Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Calzone? Gefüllte Pizza mit Schinken, Salami oder Gemüse – alle Nährwerte. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat eine Calzone? Gefüllte Pizza mit Schinken, Salami oder vegetarisch mit Käse: alle Nährwerte. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 245,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 26,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 343,
+    "protein_per_100g": 14.8,
+    "carbs_per_100g": 31.3,
+    "fat_per_100g": 17.7,
+    "fiber_per_100g": 1.4,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Calzone"
   },
   "variants": [
-    {"name": "Calzone mit Schinken & Käse", "portion_g": 400, "calories": 980, "protein": 48, "carbs": 104, "fat": 44, "tip": "Klassische Füllung"},
-    {"name": "Calzone mit Salami", "portion_g": 400, "calories": 1060, "protein": 44, "carbs": 100, "fat": 52},
-    {"name": "Calzone Vegetarisch", "portion_g": 380, "calories": 850, "protein": 32, "carbs": 102, "fat": 34, "tip": "Mit Gemüse & Ricotta"},
-    {"name": "Calzone mit Spinat & Ricotta", "portion_g": 370, "calories": 810, "protein": 34, "carbs": 95, "fat": 32, "tip": "Italienischer Klassiker"},
-    {"name": "Calzone (halbe Portion)", "portion_g": 200, "calories": 490, "protein": 24, "carbs": 52, "fat": 22},
-    {"name": "Mini-Calzone (Panzerotti)", "portion_g": 150, "calories": 390, "protein": 16, "carbs": 40, "fat": 18, "tip": "Frittierte Mini-Version"},
-    {"name": "Calzone mit Thunfisch", "portion_g": 400, "calories": 920, "protein": 50, "carbs": 100, "fat": 38, "tip": "Proteinreiche Variante"}
+    {
+      "name": "Calzone mit Schinken oder Salami & Käse",
+      "portion_g": 400,
+      "calories": 1372,
+      "protein": 59,
+      "carbs": 125,
+      "fat": 71,
+      "tip": "Klassische Füllung"
+    },
+    {
+      "name": "Calzone Vegetarisch (mit Käse)",
+      "portion_g": 400,
+      "calories": 1556,
+      "protein": 70,
+      "carbs": 118,
+      "fat": 90,
+      "tip": "Ohne Fleisch, aber kalorienreicher",
+      "basis": [
+        {
+          "fdcId": 2708684,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Calzone (halbe Portion)",
+      "portion_g": 200,
+      "calories": 686,
+      "protein": 30,
+      "carbs": 63,
+      "fat": 35
+    },
+    {
+      "name": "Mini-Calzone (150g)",
+      "portion_g": 150,
+      "calories": 515,
+      "protein": 22,
+      "carbs": 47,
+      "fat": 27
+    }
   ],
   "comparison": [
-    {"name": "Pizza Salami (ganz)", "calories": 2210, "emoji": "🍕"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Lasagne", "calories": 550, "emoji": "🍝"},
-    {"name": "Wrap mit Hähnchen", "calories": 450, "emoji": "🌯"}
+    {
+      "name": "Pizza Salami (ganz, 516g)",
+      "calories": 1455,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 2708638,
+          "g": 516
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Lasagne",
+      "calories": 556,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "lasagne"
+        }
+      ]
+    },
+    {
+      "name": "Wrap mit Hähnchen",
+      "calories": 406,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "fdcId": 2707017,
+          "g": 161
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Halbe Calzone teilen", "text": "Eine ganze Calzone hat fast 1000 kcal. Die Hälfte (490 kcal) reicht als Mahlzeit – Rest mitnehmen.", "icon": "✂️"},
-    {"title": "Gemüse-Füllung wählen", "text": "Calzone mit Spinat & Ricotta hat ca. 15% weniger Kalorien als die Schinken-Variante.", "icon": "🥬"},
-    {"title": "Dünner Teig anfragen", "text": "Weniger Teig = weniger Kalorien. Der Teig macht ca. 40% der Gesamtkalorien aus.", "icon": "📏"},
-    {"title": "Ohne extra Käse bestellen", "text": "Viele Pizzerien geben extra Käse auf die Calzone. Ohne Extra-Käse sparst du ca. 100 kcal.", "icon": "🧀"},
-    {"title": "Salat als Beilage", "text": "Ein Beilagensalat statt Pommes oder Brot dazu hilft, die Gesamtkalorien im Rahmen zu halten.", "icon": "🥗"}
+    {
+      "title": "Halbe Calzone teilen",
+      "text": "Eine ganze Calzone (400g) hat rund 1.372 kcal. Die Hälfte (ca. 686 kcal) reicht als Mahlzeit, den Rest mitnehmen.",
+      "icon": "✂️"
+    },
+    {
+      "title": "Vegetarisch heißt nicht leichter",
+      "text": "Die vegetarische Calzone mit Käse hat laut FDC pro 100g sogar mehr Kalorien als die mit Fleisch und Käse: ca. 389 statt 343 kcal.",
+      "icon": "🥬"
+    },
+    {
+      "title": "Dünner Teig anfragen",
+      "text": "Weniger Teig bedeutet weniger Kalorien und Kohlenhydrate.",
+      "icon": "📏"
+    },
+    {
+      "title": "Ohne extra Käse bestellen",
+      "text": "Viele Pizzerien geben extra Käse auf die Calzone. Ohne Extra-Käse sparst du spürbar Kalorien.",
+      "icon": "🧀"
+    },
+    {
+      "title": "Salat als Beilage",
+      "text": "Ein Beilagensalat statt Pommes oder Brot dazu hilft, die Gesamtkalorien im Rahmen zu halten.",
+      "icon": "🥗"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat eine Calzone?", "answer": "Eine ganze Calzone hat ca. 810-1060 kcal, je nach Füllung. Die klassische Schinken-Käse-Variante hat ca. 980 kcal."},
-    {"question": "Was hat mehr Kalorien: Calzone oder Pizza?", "answer": "Eine Calzone (980 kcal) hat weniger als eine ganze Pizza (1650-2210 kcal), da sie kleiner ist. Pro 100g sind beide ähnlich kalorienreich."},
-    {"question": "Ist eine Calzone ungesund?", "answer": "Eine ganze Calzone mit fast 1000 kcal ist eine sehr kalorienreiche Mahlzeit. Die halbe Portion (490 kcal) ist deutlich moderater."},
-    {"question": "Wie viel Protein hat eine Calzone?", "answer": "Eine Calzone liefert 32-50g Protein, je nach Füllung. Die Thunfisch-Variante hat mit 50g den höchsten Proteinwert."},
-    {"question": "Was ist der Unterschied zwischen Calzone und Pizza?", "answer": "Calzone ist eine zusammengeklappte, gefüllte Pizza. Der Teig umschließt die Füllung komplett. Dadurch bleibt der Käse innen geschmolzen."},
-    {"question": "Welche Calzone hat am wenigsten Kalorien?", "answer": "Die Calzone mit Spinat & Ricotta (810 kcal) ist die kalorienärmste Variante. Die halbe Portion jeder Calzone (ca. 490 kcal) ist die beste Strategie."}
+    {
+      "question": "Wie viele Kalorien hat eine Calzone?",
+      "answer": "Eine ganze Calzone (400g) mit Schinken oder Salami und Käse hat ca. 1.372 kcal, die vegetarische mit Käse ca. 1.556 kcal."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Calzone oder Pizza?",
+      "answer": "Eine Calzone (400g, ca. 1.372 kcal) hat etwas weniger als eine ganze Salamipizza (516g, ca. 1.455 kcal), weil sie leichter ist. Pro 100g ist die Calzone mit ca. 343 kcal aber kalorienreicher als die Pizza (ca. 282 kcal)."
+    },
+    {
+      "question": "Ist eine Calzone ungesund?",
+      "answer": "Eine ganze Calzone mit rund 1.372 kcal ist eine sehr kalorienreiche Mahlzeit. Die halbe Portion (ca. 686 kcal) ist deutlich moderater."
+    },
+    {
+      "question": "Wie viel Protein hat eine Calzone?",
+      "answer": "Eine Calzone (400g) mit Schinken oder Salami liefert rund 59g Protein, die vegetarische mit Käse sogar rund 70g."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Calzone und Pizza?",
+      "answer": "Calzone ist eine zusammengeklappte, gefüllte Pizza. Der Teig umschließt die Füllung komplett. Dadurch bleibt der Käse innen geschmolzen."
+    },
+    {
+      "question": "Welche Calzone hat am wenigsten Kalorien?",
+      "answer": "Laut FDC hat die Calzone mit Fleisch und Käse (ca. 343 kcal pro 100g) weniger Kalorien als die vegetarische mit Käse (ca. 389 kcal). Am meisten spart die halbe Portion (ca. 686 kcal) oder eine Mini-Calzone (150g, ca. 515 kcal)."
+    }
   ],
-  "related_foods": ["pizza-salami", "pizza-margherita", "lasagne", "pizza"]
+  "related_foods": [
+    "pizza-salami",
+    "pizza-margherita",
+    "lasagne",
+    "pizza"
+  ]
 }

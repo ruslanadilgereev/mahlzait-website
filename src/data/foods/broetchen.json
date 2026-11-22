@@ -3,48 +3,209 @@
   "name": "Brötchen",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 175031 (Rolls, hard (includes kaiser)), Werte je 100 g",
   "seo": {
-    "title": "Brötchen Kalorien: 156 kcal pro Stück (60g) | Mahlzait",
-    "description": "Ein Brötchen (60g) hat 156 kcal. Nährwerte für Weizenbrötchen, Vollkornbrötchen, Laugenbrötchen & mehr. Mit Portionsrechner."
+    "title": "Brötchen Kalorien: 176 kcal pro Stück (60g) | Mahlzait",
+    "description": "Ein Brötchen (60g) hat 176 kcal. Nährwerte für Weizenbrötchen, Vollkornbrötchen, Laugenbrötchen & mehr. Mit Portionsrechner."
   },
   "overview": {
-    "calories_per_100g": 260,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 2,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 293,
+    "protein_per_100g": 9.9,
+    "carbs_per_100g": 52.7,
+    "fat_per_100g": 4.3,
+    "fiber_per_100g": 2.3,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Brötchen"
   },
   "variants": [
-    {"name": "Weizenbrötchen (Semmel)", "portion_g": 60, "calories": 156, "protein": 5, "carbs": 30, "fat": 1, "tip": "Klassisches Sonntagsbrötchen"},
-    {"name": "Vollkornbrötchen", "portion_g": 70, "calories": 155, "protein": 6, "carbs": 26, "fat": 2, "tip": "Mehr Ballaststoffe und Sättigung"},
-    {"name": "Laugenbrötchen", "portion_g": 80, "calories": 220, "protein": 7, "carbs": 40, "fat": 3, "tip": "Größer und mit Laugencharakter"},
-    {"name": "Körnerbrötchen", "portion_g": 75, "calories": 195, "protein": 7, "carbs": 28, "fat": 5, "tip": "Mit Sonnenblumenkernen und Leinsaat"},
-    {"name": "Ciabatta-Brötchen", "portion_g": 80, "calories": 200, "protein": 6, "carbs": 38, "fat": 3, "tip": "Italienisches Weizenbrötchen"},
-    {"name": "Aufbackbrötchen", "portion_g": 55, "calories": 150, "protein": 5, "carbs": 27, "fat": 2, "tip": "Tiefkühl-Variante"},
-    {"name": "Eiweißbrötchen", "portion_g": 70, "calories": 150, "protein": 14, "carbs": 7, "fat": 7, "tip": "Low-Carb mit viel Protein"}
+    {
+      "name": "Weizenbrötchen (Semmel)",
+      "portion_g": 60,
+      "calories": 176,
+      "protein": 6,
+      "carbs": 32,
+      "fat": 3,
+      "tip": "Klassisches Sonntagsbrötchen"
+    },
+    {
+      "name": "Vollkornbrötchen",
+      "portion_g": 70,
+      "calories": 186,
+      "protein": 6,
+      "carbs": 36,
+      "fat": 3,
+      "tip": "Mehr Ballaststoffe und Sättigung",
+      "basis": [
+        {
+          "fdcId": 172794,
+          "g": 70
+        }
+      ]
+    },
+    {
+      "name": "Laugenbrötchen",
+      "portion_g": 80,
+      "calories": 270,
+      "protein": 7,
+      "carbs": 56,
+      "fat": 2,
+      "tip": "Größer und mit Laugencharakter",
+      "basis": [
+        {
+          "fdcId": 169064,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Körnerbrötchen",
+      "portion_g": 75,
+      "calories": 197,
+      "protein": 7,
+      "carbs": 33,
+      "fat": 5,
+      "tip": "Mit Sonnenblumenkernen und Leinsaat",
+      "basis": [
+        {
+          "fdcId": 2707782,
+          "g": 75
+        }
+      ]
+    },
+    {
+      "name": "Ciabatta-Brötchen",
+      "portion_g": 80,
+      "calories": 207,
+      "protein": 8,
+      "carbs": 38,
+      "fat": 2,
+      "tip": "Italienisches Weizenbrötchen",
+      "basis": [
+        {
+          "fdcId": 174913,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Aufbackbrötchen",
+      "portion_g": 55,
+      "calories": 161,
+      "protein": 5,
+      "carbs": 29,
+      "fat": 2,
+      "tip": "Tiefkühl-Variante",
+      "basis": [
+        {
+          "slug": "aufbackbroetchen",
+          "g": 55
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Croissant", "calories": 393, "emoji": "🥐"},
-    {"name": "Toastbrot (2 Scheiben)", "calories": 156, "emoji": "🍞"},
-    {"name": "Vollkornbrot (2 Scheiben)", "calories": 200, "emoji": "🍞"},
-    {"name": "Brezel", "calories": 300, "emoji": "🥨"}
+    {
+      "name": "Croissant (1 Stück, 65g)",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 65
+        }
+      ]
+    },
+    {
+      "name": "Toastbrot (2 Scheiben, 60g)",
+      "calories": 160,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Vollkornbrot (2 Scheiben, 100g)",
+      "calories": 200,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Brezel (1 Stück, 95g)",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 95
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Vollkornbrötchen bevorzugen", "text": "Vollkornbrötchen haben ähnliche Kalorien wie Weizenbrötchen, sättigen aber durch doppelt so viele Ballaststoffe deutlich besser.", "icon": "🌾"},
-    {"title": "Belag steuert die Kalorien", "text": "Ein Brötchen hat 156 kcal – mit Butter und Käse wird daraus schnell 320 kcal. Bewusst belegen!", "icon": "⚖️"},
-    {"title": "Sonntagsbrötchen genießen", "text": "2 Brötchen zum Frühstück (312 kcal) sind völlig ok – solange der Belag nicht übertrieben wird.", "icon": "☀️"},
-    {"title": "Laugenbrötchen sind größer", "text": "Laugenbrötchen wiegen oft 80g statt 60g – das macht einen Unterschied von 64 kcal pro Brötchen.", "icon": "📏"},
-    {"title": "Eiweißbrötchen für Low-Carb", "text": "Mit 14g Protein und nur 7g Kohlenhydraten pro Brötchen perfekt für die eiweißreiche Ernährung.", "icon": "💪"}
+    {
+      "title": "Vollkornbrötchen bevorzugen",
+      "text": "Vollkornbrötchen haben ähnliche Kalorien wie Weizenbrötchen, sättigen aber durch rund dreimal so viele Ballaststoffe deutlich besser.",
+      "icon": "🌾"
+    },
+    {
+      "title": "Belag steuert die Kalorien",
+      "text": "Ein Brötchen hat 176 kcal, mit Butter und Käse werden daraus schnell deutlich mehr. Bewusst belegen!",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Sonntagsbrötchen genießen",
+      "text": "2 Brötchen zum Frühstück (352 kcal) sind völlig ok, solange der Belag nicht übertrieben wird.",
+      "icon": "☀️"
+    },
+    {
+      "title": "Laugenbrötchen sind größer",
+      "text": "Laugenbrötchen wiegen oft 80g statt 60g, das macht einen Unterschied von 94 kcal pro Brötchen.",
+      "icon": "📏"
+    },
+    {
+      "title": "Eiweißbrötchen für Low-Carb",
+      "text": "Eiweißbrötchen enthalten deutlich mehr Protein und weniger Kohlenhydrate als normale Brötchen und passen so gut zur eiweißreichen Ernährung.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Brötchen?", "answer": "Ein Weizenbrötchen (60g) hat ca. 156 kcal. Laugenbrötchen (80g) haben ca. 220 kcal, Vollkornbrötchen (70g) ca. 155 kcal."},
-    {"question": "Was hat weniger Kalorien: Brötchen oder Croissant?", "answer": "Ein Brötchen (156 kcal) hat deutlich weniger als ein Croissant (ca. 300 kcal). Croissants enthalten viel Butter."},
-    {"question": "Ist ein Brötchen zum Abnehmen geeignet?", "answer": "In Maßen ja. Ein Brötchen hat 156 kcal – mit leichtem Belag (Frischkäse, Gurke, Tomate) bleibt man unter 250 kcal pro belegtem Brötchen."},
-    {"question": "Wie viele Kohlenhydrate hat ein Brötchen?", "answer": "Ein Weizenbrötchen (60g) hat ca. 30g Kohlenhydrate. Eiweißbrötchen haben mit nur 7g deutlich weniger."},
-    {"question": "Welches Brötchen hat die wenigsten Kalorien?", "answer": "Aufbackbrötchen (150 kcal/55g) und Eiweißbrötchen (150 kcal/70g) haben die wenigsten Kalorien. Weizenbrötchen folgen mit 156 kcal."},
-    {"question": "Wie viel Protein hat ein Brötchen?", "answer": "Ein normales Brötchen hat ca. 5g Protein. Eiweißbrötchen haben mit 14g fast dreimal so viel – ideal für Sportler."}
+    {
+      "question": "Wie viele Kalorien hat ein Brötchen?",
+      "answer": "Ein Weizenbrötchen (60g) hat ca. 176 kcal. Laugenbrötchen (80g) haben ca. 270 kcal, Vollkornbrötchen (70g) ca. 186 kcal."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Brötchen oder Croissant?",
+      "answer": "Ein Brötchen (176 kcal) hat deutlich weniger als ein Croissant (ca. 264 kcal). Croissants enthalten viel Butter."
+    },
+    {
+      "question": "Ist ein Brötchen zum Abnehmen geeignet?",
+      "answer": "In Maßen ja. Ein Brötchen hat 176 kcal. Mit leichtem Belag (Frischkäse, Gurke, Tomate) bleibt auch das belegte Brötchen im Rahmen."
+    },
+    {
+      "question": "Wie viele Kohlenhydrate hat ein Brötchen?",
+      "answer": "Ein Weizenbrötchen (60g) hat ca. 32g Kohlenhydrate. Eiweißbrötchen haben deutlich weniger."
+    },
+    {
+      "question": "Welches Brötchen hat die wenigsten Kalorien?",
+      "answer": "Aufbackbrötchen (161 kcal/55g) haben wegen ihrer geringeren Größe die wenigsten Kalorien. Weizenbrötchen folgen mit 176 kcal."
+    },
+    {
+      "question": "Wie viel Protein hat ein Brötchen?",
+      "answer": "Ein normales Brötchen hat ca. 6g Protein. Eiweißbrötchen haben deutlich mehr, ideal für Sportler."
+    }
   ],
-  "related_foods": ["brot", "vollkornbrot", "toastbrot", "croissant"]
+  "related_foods": [
+    "brot",
+    "vollkornbrot",
+    "toastbrot",
+    "croissant"
+  ]
 }

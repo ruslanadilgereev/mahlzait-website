@@ -3,49 +3,207 @@
   "name": "Linseneintopf",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2707462 (Soup, lentil), Werte je 100 g",
   "seo": {
-    "title": "Linseneintopf / Linsensuppe Kalorien: 95 kcal/100g | Mahlzait",
-    "description": "Linseneintopf (Linsensuppe) hat 95 kcal pro 100g, ein Teller (400g) rund 380 kcal. Nährwerte mit Würstchen & Varianten plus Spar-Tipps."
+    "title": "Linseneintopf / Linsensuppe Kalorien: 60 kcal/100g | Mahlzait",
+    "description": "Linseneintopf (Linsensuppe) hat 60 kcal pro 100g, ein Teller (400g) rund 240 kcal. Nährwerte mit Würstchen & Varianten plus Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 95,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 12,
-    "fat_per_100g": 2.5,
-    "fiber_per_100g": 4,
+    "calories_per_100g": 60,
+    "protein_per_100g": 3.8,
+    "carbs_per_100g": 10.2,
+    "fat_per_100g": 0.7,
+    "fiber_per_100g": 3.7,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    {"name": "Klassisch mit Würstchen", "portion_g": 450, "calories": 520, "protein": 28, "carbs": 54, "fat": 22, "tip": "Traditionelles Rezept"},
-    {"name": "Vegetarischer Linseneintopf", "portion_g": 400, "calories": 380, "protein": 24, "carbs": 48, "fat": 10, "tip": "Ohne Fleisch"},
-    {"name": "Linseneintopf mit Speck", "portion_g": 400, "calories": 480, "protein": 26, "carbs": 48, "fat": 20, "tip": "Deftiger Geschmack"},
-    {"name": "Rote-Linsen-Eintopf", "portion_g": 400, "calories": 360, "protein": 22, "carbs": 52, "fat": 8, "tip": "Schnell gekocht, kalorienarm"},
-    {"name": "Dal (indisch)", "portion_g": 350, "calories": 400, "protein": 20, "carbs": 45, "fat": 16, "tip": "Mit Kokosmilch und Gewürzen"},
-    {"name": "Linseneintopf mit Kartoffeln", "portion_g": 450, "calories": 430, "protein": 22, "carbs": 62, "fat": 12, "tip": "Sättigende Variante"},
-    {"name": "Beluga-Linsen-Salat (warm)", "portion_g": 300, "calories": 340, "protein": 20, "carbs": 38, "fat": 12, "tip": "Edle Variante"}
+    {
+      "name": "Klassisch mit Würstchen",
+      "portion_g": 450,
+      "calories": 375,
+      "protein": 22,
+      "carbs": 41,
+      "fat": 15,
+      "tip": "Traditionelles Rezept",
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 172964,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Vegetarischer Linseneintopf",
+      "portion_g": 400,
+      "calories": 240,
+      "protein": 15,
+      "carbs": 41,
+      "fat": 3,
+      "tip": "Ohne Fleisch"
+    },
+    {
+      "name": "Linseneintopf mit Speck",
+      "portion_g": 400,
+      "calories": 322,
+      "protein": 21,
+      "carbs": 39,
+      "fat": 10,
+      "tip": "Deftiger Geschmack",
+      "basis": [
+        {
+          "g": 380
+        },
+        {
+          "fdcId": 2705889,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Dal (indisch)",
+      "portion_g": 350,
+      "calories": 508,
+      "protein": 30,
+      "carbs": 67,
+      "fat": 15,
+      "tip": "Mit Gewürzen",
+      "basis": [
+        {
+          "fdcId": 2707427,
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Linseneintopf mit Kartoffeln",
+      "portion_g": 450,
+      "calories": 296,
+      "protein": 15,
+      "carbs": 56,
+      "fat": 3,
+      "tip": "Sättigende Variante",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 170440,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Erbsensuppe", "calories": 440, "emoji": "🟢"},
-    {"name": "Kartoffelsuppe", "calories": 350, "emoji": "🥔"},
-    {"name": "Gulaschsuppe", "calories": 480, "emoji": "🍲"},
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+    {
+      "name": "Erbsensuppe (1 Teller, 400g)",
+      "calories": 320,
+      "emoji": "🟢",
+      "basis": [
+        {
+          "slug": "erbsensuppe",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Kartoffelsuppe (1 Teller, 400g)",
+      "calories": 360,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelsuppe",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Gulaschsuppe (1 Teller, 400g)",
+      "calories": 480,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulaschsuppe",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (1 Stück, 200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Würstchen weglassen", "text": "Ohne Würstchen sparst du ca. 140 kcal pro Portion. Die Linsen liefern genug Protein.", "icon": "🌭"},
-    {"title": "Rote Linsen sind schneller", "text": "Rote Linsen kochen in 15 Minuten und haben ähnliche Nährwerte wie braune Linsen.", "icon": "⏱️"},
-    {"title": "Großen Topf kochen", "text": "Linseneintopf lässt sich perfekt einfrieren – koche gleich für die ganze Woche.", "icon": "📦"},
-    {"title": "Essig nicht vergessen", "text": "Ein Schuss Essig am Ende verbessert den Geschmack und die Eisenaufnahme aus den Linsen.", "icon": "🍶"},
-    {"title": "Proteinbombe nutzen", "text": "Linsen liefern 25g Protein pro 100g (roh). Ein Teller deckt fast den halben Tagesbedarf.", "icon": "💪"}
+    {
+      "title": "Würstchen weglassen",
+      "text": "Ohne Würstchen sparst du ca. 135 kcal pro Portion. Die Linsen liefern genug Protein.",
+      "icon": "🌭"
+    },
+    {
+      "title": "Rote Linsen sind schneller",
+      "text": "Rote Linsen kochen in 15 Minuten und haben ähnliche Nährwerte wie braune Linsen.",
+      "icon": "⏱️"
+    },
+    {
+      "title": "Großen Topf kochen",
+      "text": "Linseneintopf lässt sich perfekt einfrieren: Koche gleich für die ganze Woche.",
+      "icon": "📦"
+    },
+    {
+      "title": "Essig nicht vergessen",
+      "text": "Ein Schuss Essig am Ende verbessert den Geschmack und die Eisenaufnahme aus den Linsen.",
+      "icon": "🍶"
+    },
+    {
+      "title": "Proteinbombe nutzen",
+      "text": "Linsen sind eine der besten pflanzlichen Proteinquellen. Ein Teller (400g) liefert laut USDA rund 15g Protein.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Linseneintopf?", "answer": "Ein Teller Linseneintopf (400g) hat ca. 380-520 kcal, je nach Zutaten. Die vegetarische Variante ist am kalorienärmsten."},
-    {"question": "Sind Linsensuppe und Linseneintopf dasselbe?", "answer": "Im Alltag ja: Beide Begriffe meinen das Gericht aus Linsen, Gemüse und oft Würstchen. Eine Linsensuppe ist meist nur etwas flüssiger als der dickere Eintopf, die Kalorien pro Teller liegen mit rund 350-500 kcal in derselben Größenordnung. Alle Werte auf dieser Seite gelten für beide Varianten."},
-    {"question": "Ist Linseneintopf gesund?", "answer": "Ja, Linseneintopf ist sehr gesund: viel Protein, Ballaststoffe (4g/100g), Eisen und B-Vitamine. Einer der gesündesten Eintöpfe."},
-    {"question": "Wie viel Protein hat Linseneintopf?", "answer": "Ein Teller liefert 22-28g Protein. Linsen sind eine der besten pflanzlichen Proteinquellen."},
-    {"question": "Ist Linseneintopf gut zum Abnehmen?", "answer": "Ja, besonders die vegetarische Variante (380 kcal/Teller). Die Ballaststoffe sättigen lange und beugen Heißhunger vor."},
-    {"question": "Kann man Linseneintopf einfrieren?", "answer": "Ja, Linseneintopf lässt sich hervorragend portionsweise einfrieren. Im Kühlschrank hält er 4-5 Tage."},
-    {"question": "Welche Linsen haben die wenigsten Kalorien?", "answer": "Alle Linsen haben ähnlich viele Kalorien (ca. 270-350 kcal/100g roh). Im Eintopf quellen sie auf und die Kaloriendichte sinkt auf ca. 95 kcal/100g."}
+    {
+      "question": "Wie viele Kalorien hat Linseneintopf?",
+      "answer": "Ein Teller Linseneintopf (400 bis 450g) hat ca. 240 bis 375 kcal, je nach Zutaten. Die vegetarische Variante ist am kalorienärmsten."
+    },
+    {
+      "question": "Sind Linsensuppe und Linseneintopf dasselbe?",
+      "answer": "Im Alltag ja: Beide Begriffe meinen das Gericht aus Linsen, Gemüse und oft Würstchen. Eine Linsensuppe ist meist nur etwas flüssiger als der dickere Eintopf, die Kalorien pro Teller liegen mit rund 240 bis 375 kcal in derselben Größenordnung. Alle Werte auf dieser Seite gelten für beide Varianten."
+    },
+    {
+      "question": "Ist Linseneintopf gesund?",
+      "answer": "Ja, Linseneintopf ist sehr gesund: viel Protein, Ballaststoffe (3,7g/100g), Eisen und B-Vitamine. Einer der gesündesten Eintöpfe."
+    },
+    {
+      "question": "Wie viel Protein hat Linseneintopf?",
+      "answer": "Ein Teller liefert rund 15 bis 22g Protein. Linsen sind eine der besten pflanzlichen Proteinquellen."
+    },
+    {
+      "question": "Ist Linseneintopf gut zum Abnehmen?",
+      "answer": "Ja, besonders die vegetarische Variante (240 kcal/Teller). Die Ballaststoffe sättigen lange und beugen Heißhunger vor."
+    },
+    {
+      "question": "Kann man Linseneintopf einfrieren?",
+      "answer": "Ja, Linseneintopf lässt sich hervorragend portionsweise einfrieren. Im Kühlschrank hält er 4-5 Tage."
+    },
+    {
+      "question": "Welche Linsen haben die wenigsten Kalorien?",
+      "answer": "Roh haben alle Linsen ähnlich viele Kalorien. Im Eintopf quellen sie auf und die Kaloriendichte sinkt auf ca. 60 kcal/100g."
+    }
   ],
-  "related_foods": ["erbsensuppe", "kartoffelsuppe", "gulaschsuppe", "gulasch"]
+  "related_foods": [
+    "erbsensuppe",
+    "kartoffelsuppe",
+    "gulaschsuppe",
+    "gulasch"
+  ]
 }

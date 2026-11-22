@@ -3,9 +3,10 @@
   "name": "Bud Light",
   "emoji": "🍺",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 169572 (Alcoholic beverage, beer, light, BUD LIGHT: 29 kcal), Werte je 100 g; je 100 ml mit 0,998 g/ml 29 kcal",
   "seo": {
     "title": "Bud Light Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Bud Light? Eine Dose (355 ml) hat ca. 110 kcal. Nährwerte pro 100 ml & pro Dose, Kohlenhydrate & Vergleich mit anderen Bieren.",
+    "description": "Wie viele Kalorien hat Bud Light? Eine Dose (355 ml) hat ca. 103 kcal. Nährwerte pro 100 ml & pro Dose, Kohlenhydrate & Vergleich mit anderen Bieren.",
     "keywords": [
       "bud light kalorien",
       "bud light kcal",
@@ -16,92 +17,120 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 31,
+    "calories_per_100g": 29,
     "protein_per_100g": 0.3,
-    "carbs_per_100g": 1.9,
+    "carbs_per_100g": 1.3,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 355,
+    "typical_portion_g": 354,
     "typical_portion_name": "1 Dose/Flasche (355 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (200 ml)",
       "portion_g": 200,
-      "calories": 62,
+      "calories": 58,
       "protein": 0.6,
-      "carbs": 3.8,
+      "carbs": 2.6,
       "fat": 0
     },
     {
       "name": "Dose/Flasche (355 ml)",
-      "portion_g": 355,
-      "calories": 110,
-      "protein": 1,
-      "carbs": 6.6,
+      "portion_g": 354,
+      "calories": 103,
+      "protein": 1.1,
+      "carbs": 4.6,
       "fat": 0,
       "tip": "Standard-Portion in den USA"
     },
     {
       "name": "Großes Glas (0,5 l)",
-      "portion_g": 500,
-      "calories": 155,
+      "portion_g": 499,
+      "calories": 145,
       "protein": 1.5,
-      "carbs": 9.5,
+      "carbs": 6.5,
       "fat": 0
     },
     {
       "name": "Pint (473 ml)",
-      "portion_g": 473,
-      "calories": 147,
+      "portion_g": 472,
+      "calories": 137,
       "protein": 1.4,
-      "carbs": 8.8,
+      "carbs": 6.1,
       "fat": 0
     },
     {
       "name": "Sixpack (6 × 355 ml)",
-      "portion_g": 2130,
-      "calories": 660,
-      "protein": 6,
-      "carbs": 39.6,
+      "portion_g": 2125,
+      "calories": 616,
+      "protein": 6.4,
+      "carbs": 27.6,
       "fat": 0,
       "tip": "Komplettes Sixpack"
     },
     {
       "name": "Pro 100 ml",
       "portion_g": 100,
-      "calories": 31,
+      "calories": 29,
       "protein": 0.3,
-      "carbs": 1.9,
+      "carbs": 1.3,
       "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Bier (Pils, 0,5 l)",
-      "calories": 210,
-      "emoji": "🍺"
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 500
+        }
+      ]
     },
     {
       "name": "Weizenbier (0,5 l)",
-      "calories": 225,
-      "emoji": "🍺"
+      "calories": 216,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "weizenbier",
+          "ml": 500,
+          "g": 502
+        }
+      ]
     },
     {
       "name": "Radler (0,5 l)",
-      "calories": 200,
-      "emoji": "🍺"
+      "calories": 185,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "radler",
+          "ml": 500,
+          "g": 500
+        }
+      ]
     },
     {
       "name": "Cola (0,33 l)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 330,
+          "g": 346
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Leichter als normales Bier",
-      "text": "Bud Light hat mit ca. 110 kcal pro Dose (355 ml) deutlich weniger Kalorien als ein klassisches Pils, das im halben Liter rund 210 kcal liefert.",
+      "text": "Bud Light hat mit ca. 103 kcal pro Dose (355 ml) deutlich weniger Kalorien als ein klassisches Pils, das im halben Liter rund 215 kcal liefert.",
       "icon": "🍺"
     },
     {
@@ -111,7 +140,7 @@
     },
     {
       "title": "Beim Abnehmen mitzählen",
-      "text": "Auch ein Light-Bier ist kein Freifahrtschein: Mehrere Dosen summieren sich schnell. Ein Sixpack bringt es bereits auf rund 660 kcal.",
+      "text": "Auch ein Light-Bier ist kein Freifahrtschein: Mehrere Dosen summieren sich schnell. Ein Sixpack bringt es bereits auf rund 616 kcal.",
       "icon": "⚖️"
     },
     {
@@ -121,30 +150,30 @@
     },
     {
       "title": "Wenig Kohlenhydrate",
-      "text": "Mit etwa 6,6 g Kohlenhydraten pro Dose ist Bud Light vergleichsweise kohlenhydratarm und beliebt bei kalorienbewussten Biertrinkern.",
+      "text": "Mit etwa 4,6 g Kohlenhydraten pro Dose ist Bud Light vergleichsweise kohlenhydratarm und beliebt bei kalorienbewussten Biertrinkern.",
       "icon": "🌾"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Bud Light?",
-      "answer": "Eine Dose bzw. Flasche Bud Light (355 ml) hat laut Hersteller ca. 110 kcal. Das entspricht etwa 31 kcal pro 100 ml."
+      "answer": "Eine Dose bzw. Flasche Bud Light (355 ml) hat laut USDA ca. 103 kcal. Das entspricht etwa 29 kcal pro 100 ml."
     },
     {
       "question": "Wie viele Kalorien hat Bud Light pro 100 ml?",
-      "answer": "Bud Light hat rund 31 kcal pro 100 ml. Ein halber Liter kommt damit auf etwa 155 kcal."
+      "answer": "Bud Light hat rund 29 kcal pro 100 ml. Ein halber Liter kommt damit auf etwa 145 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bud Light?",
-      "answer": "Eine Dose Bud Light (355 ml) enthält etwa 6,6 g Kohlenhydrate, also rund 1,9 g pro 100 ml. Damit ist es vergleichsweise kohlenhydratarm."
+      "answer": "Eine Dose Bud Light (355 ml) enthält etwa 4,6 g Kohlenhydrate, also rund 1,3 g pro 100 ml. Damit ist es vergleichsweise kohlenhydratarm."
     },
     {
       "question": "Hat Bud Light Eiweiß und Fett?",
-      "answer": "Bud Light enthält nur Spuren von Eiweiß (unter 1 g pro Dose) und praktisch kein Fett. Die Kalorien kommen vor allem aus dem Alkohol."
+      "answer": "Bud Light enthält nur wenig Eiweiß (rund 1 g pro Dose) und praktisch kein Fett. Die Kalorien kommen vor allem aus dem Alkohol."
     },
     {
       "question": "Ist Bud Light zum Abnehmen geeignet?",
-      "answer": "Mit rund 110 kcal pro Dose ist Bud Light kalorienärmer als normales Bier, aber kein Schlankmacher. In Maßen lässt es sich aber leichter in eine kalorienbewusste Ernährung einbauen."
+      "answer": "Mit rund 103 kcal pro Dose ist Bud Light kalorienärmer als normales Bier, aber kein Schlankmacher. In Maßen lässt es sich aber leichter in eine kalorienbewusste Ernährung einbauen."
     },
     {
       "question": "Ist Bud Light gesünder als normales Bier?",

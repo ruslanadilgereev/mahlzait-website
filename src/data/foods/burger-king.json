@@ -3,9 +3,10 @@
   "name": "Burger King",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170727 (BURGER KING, WHOPPER, no cheese), Werte je 100 g",
   "seo": {
     "title": "Burger King Kalorien: Nährwerte & Menü | Mahlzait",
-    "description": "Wie viele Kalorien hat Burger King? Ein Whopper hat ca. 630 kcal. Alle Nährwerte zu Burgern, Pommes & Nuggets pro Portion und 100g im Überblick.",
+    "description": "Wie viele Kalorien hat Burger King? Ein Whopper hat ca. 678 kcal. Alle Nährwerte zu Burgern, Pommes & Nuggets pro Portion und 100g im Überblick.",
     "keywords": [
       "burger king kcal",
       "burger king kalorien",
@@ -16,147 +17,228 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 234,
-    "protein_per_100g": 11.5,
-    "carbs_per_100g": 18.5,
-    "fat_per_100g": 13.5,
-    "fiber_per_100g": 1.2,
-    "typical_portion_g": 270,
-    "typical_portion_name": "1 Whopper (270g)"
+    "calories_per_100g": 233,
+    "protein_per_100g": 10.7,
+    "carbs_per_100g": 18.6,
+    "fat_per_100g": 12.8,
+    "fiber_per_100g": 1.8,
+    "typical_portion_g": 291,
+    "typical_portion_name": "1 Whopper (291g)"
   },
   "variants": [
     {
-      "name": "Hamburger (105g)",
-      "portion_g": 105,
-      "calories": 251,
-      "protein": 13,
-      "carbs": 28,
-      "fat": 9,
-      "tip": "Kleinste Burger-Option"
+      "name": "Hamburger (99g)",
+      "portion_g": 99,
+      "calories": 258,
+      "protein": 15,
+      "carbs": 26,
+      "fat": 10,
+      "tip": "Kleinste Burger-Option",
+      "basis": [
+        {
+          "fdcId": 170328,
+          "g": 99
+        }
+      ]
     },
     {
-      "name": "Cheeseburger (130g)",
-      "portion_g": 130,
-      "calories": 359,
-      "protein": 18,
-      "carbs": 35,
-      "fat": 16
+      "name": "Cheeseburger (133g)",
+      "portion_g": 133,
+      "calories": 380,
+      "protein": 19,
+      "carbs": 32,
+      "fat": 20,
+      "basis": [
+        {
+          "fdcId": 170329,
+          "g": 133
+        }
+      ]
     },
     {
       "name": "Chickenburger (150g)",
       "portion_g": 150,
-      "calories": 348,
-      "protein": 16,
-      "carbs": 39,
-      "fat": 14
+      "calories": 422,
+      "protein": 18,
+      "carbs": 41,
+      "fat": 20,
+      "basis": [
+        {
+          "fdcId": 2707003,
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Whopper (270g)",
-      "portion_g": 270,
-      "calories": 632,
+      "name": "Whopper (291g)",
+      "portion_g": 291,
+      "calories": 678,
       "protein": 31,
-      "carbs": 50,
-      "fat": 36,
+      "carbs": 54,
+      "fat": 37,
       "tip": "Der Klassiker"
     },
     {
-      "name": "Big King (230g)",
-      "portion_g": 230,
-      "calories": 566,
-      "protein": 30,
-      "carbs": 39,
-      "fat": 32
+      "name": "Whopper mit Käse (316g)",
+      "portion_g": 316,
+      "calories": 790,
+      "protein": 35,
+      "carbs": 53,
+      "fat": 48,
+      "basis": [
+        {
+          "fdcId": 170728,
+          "g": 316
+        }
+      ]
     },
     {
-      "name": "Long Chicken (200g)",
-      "portion_g": 200,
-      "calories": 522,
+      "name": "Long Chicken (199g)",
+      "portion_g": 199,
+      "calories": 569,
       "protein": 24,
-      "carbs": 48,
-      "fat": 26
+      "carbs": 52,
+      "fat": 29,
+      "basis": [
+        {
+          "fdcId": 170331,
+          "g": 199
+        }
+      ]
     },
     {
       "name": "Pommes mittel (117g)",
       "portion_g": 117,
-      "calories": 357,
+      "calories": 328,
       "protein": 4,
-      "carbs": 46,
-      "fat": 18
+      "carbs": 45,
+      "fat": 15,
+      "basis": [
+        {
+          "fdcId": 170327,
+          "g": 117
+        }
+      ]
     },
     {
       "name": "9 Chicken Nuggets (150g)",
       "portion_g": 150,
-      "calories": 382,
-      "protein": 22,
+      "calories": 461,
+      "protein": 24,
       "carbs": 22,
-      "fat": 22
+      "fat": 31,
+      "basis": [
+        {
+          "fdcId": 2706093,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Cola (0,5 l)",
+      "portion_g": 524,
+      "calories": 220,
+      "protein": 0,
+      "carbs": 54,
+      "fat": 2,
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "McDonald's Big Mac",
       "calories": 563,
-      "emoji": "🍔"
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Currywurst mit Pommes",
-      "calories": 780,
-      "emoji": "🌭"
+      "name": "McDonald's Cheeseburger",
+      "calories": 313,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170320,
+          "g": 119
+        }
+      ]
     },
     {
-      "name": "Pizza Margherita",
-      "calories": 700,
-      "emoji": "🍕"
+      "name": "Bratwurst im Brötchen",
+      "calories": 675,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "variante": "Bratwurst im Brötchen"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Whopper ist die Kalorienfalle",
-      "text": "Ein einzelner Whopper liefert schon rund 630 kcal. Mit Pommes und Cola landet ein komplettes Menü schnell bei über 1.100 kcal.",
+      "text": "Ein einzelner Whopper liefert schon rund 678 kcal. Mit mittleren Pommes und einer großen Cola (0,5 l) landet ein komplettes Menü bei rund 1.226 kcal.",
       "icon": "🍔"
     },
     {
       "title": "Kleiner bestellen spart viel",
-      "text": "Ein einfacher Hamburger hat mit ca. 250 kcal weniger als die Hälfte eines Whoppers. Wer den Hunger nur stillen will, fährt damit deutlich leichter.",
+      "text": "Ein einfacher Hamburger hat mit ca. 258 kcal weniger als die Hälfte eines Whoppers. Wer den Hunger nur stillen will, fährt damit deutlich leichter.",
       "icon": "📉"
     },
     {
       "title": "Pommes weglassen lohnt sich",
-      "text": "Eine mittlere Portion Pommes bringt allein etwa 360 kcal. Ein Salat oder Wasser als Beilage spart hier ohne Mühe mehrere hundert Kalorien.",
+      "text": "Eine mittlere Portion Pommes bringt allein etwa 328 kcal. Ein Salat oder Wasser statt Pommes spart davon ohne Mühe den Großteil.",
       "icon": "🍟"
     },
     {
       "title": "Auf das Getränk achten",
-      "text": "Eine große Cola kann 200 kcal und mehr beitragen. Wasser oder ein Getränk ohne Zucker macht das Menü spürbar leichter.",
+      "text": "Eine große Cola (0,5 l) bringt rund 220 kcal. Wasser oder ein Getränk ohne Zucker macht das Menü spürbar leichter.",
       "icon": "🥤"
     },
     {
       "title": "Nuggets statt Burger",
-      "text": "9 Chicken Nuggets liefern mit ca. 380 kcal viel Eiweiß bei moderaten Kalorien und sind eine sättigende Alternative zum großen Burger.",
+      "text": "9 Chicken Nuggets liefern mit ca. 461 kcal rund 24g Eiweiß und deutlich weniger Kalorien als ein Whopper.",
       "icon": "🍗"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Burger King?",
-      "answer": "Das hängt vom Produkt ab. Ein Whopper hat ca. 630 kcal, ein einfacher Hamburger nur etwa 250 kcal. Pro 100g liegt ein Burger im Schnitt bei rund 234 kcal."
+      "answer": "Das hängt vom Produkt ab. Ein Whopper hat ca. 678 kcal, ein einfacher Hamburger nur etwa 258 kcal. Pro 100g liegt der Whopper bei rund 233 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Whopper?",
-      "answer": "Ein Whopper (ca. 270g) liefert rund 630 kcal, etwa 31g Eiweiß, 50g Kohlenhydrate und 36g Fett."
+      "answer": "Ein Whopper (ca. 291g) liefert rund 678 kcal, etwa 31g Eiweiß, 54g Kohlenhydrate und 37g Fett."
     },
     {
       "question": "Wie viele Kalorien hat ein Burger-King-Menü?",
-      "answer": "Ein Whopper-Menü mit mittleren Pommes und einer Cola kommt schnell auf über 1.100 kcal. Genaue Werte hängen von Burger, Beilage und Getränk ab."
+      "answer": "Ein Whopper-Menü mit mittleren Pommes und einer großen Cola (0,5 l) kommt auf rund 1.226 kcal. Genaue Werte hängen von Burger, Beilage und Getränk ab."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Burger King Burger?",
-      "answer": "Ein Whopper enthält ca. 31g Eiweiß, ein Cheeseburger etwa 18g. Damit decken die Burger einen guten Teil des Tagesbedarfs an Protein."
+      "answer": "Ein Whopper enthält ca. 31g Eiweiß, ein Cheeseburger etwa 19g. Damit decken die Burger einen guten Teil des Tagesbedarfs an Protein."
     },
     {
       "question": "Kann man Burger King beim Abnehmen essen?",
@@ -164,7 +246,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Whopper?",
-      "answer": "Ein Whopper enthält rund 50g Kohlenhydrate, die zum großen Teil aus dem Brötchen stammen."
+      "answer": "Ein Whopper enthält rund 54g Kohlenhydrate, die zum großen Teil aus dem Brötchen stammen."
     }
   ],
   "related_foods": [

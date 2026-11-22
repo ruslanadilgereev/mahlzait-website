@@ -3,9 +3,10 @@
   "name": "Tteokbokki",
   "emoji": "🌶️",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708957 (Dukboki or Tteokbokki, Korean), Werte je 100 g",
   "seo": {
     "title": "Tteokbokki Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Tteokbokki? 100g haben ca. 165 kcal, eine Portion (250g) ca. 413 kcal. Nährwerte, Varianten & Tipps zum koreanischen Reiskuchen.",
+    "description": "Wie viele Kalorien hat Tteokbokki? 100g haben ca. 131 kcal, eine Portion (250g) ca. 328 kcal. Nährwerte, Varianten & Tipps zum koreanischen Reiskuchen.",
     "keywords": [
       "tteokbokki kcal",
       "tteokbokki kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 165,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 33,
-    "fat_per_100g": 2,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 131,
+    "protein_per_100g": 4.1,
+    "carbs_per_100g": 19.6,
+    "fat_per_100g": 4.1,
+    "fiber_per_100g": 0.8,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion (250g)"
   },
@@ -28,94 +29,109 @@
     {
       "name": "Tteokbokki 100g",
       "portion_g": 100,
-      "calories": 165,
-      "protein": 3,
-      "carbs": 33,
-      "fat": 2
+      "calories": 131,
+      "protein": 4,
+      "carbs": 20,
+      "fat": 4
     },
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 248,
-      "protein": 5,
-      "carbs": 50,
-      "fat": 3
+      "calories": 197,
+      "protein": 6,
+      "carbs": 29,
+      "fat": 6
     },
     {
       "name": "1 Portion (250g)",
       "portion_g": 250,
-      "calories": 413,
-      "protein": 8,
-      "carbs": 83,
-      "fat": 5,
+      "calories": 328,
+      "protein": 10,
+      "carbs": 49,
+      "fat": 10,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (350g)",
       "portion_g": 350,
-      "calories": 578,
-      "protein": 11,
-      "carbs": 116,
-      "fat": 7
+      "calories": 459,
+      "protein": 14,
+      "carbs": 69,
+      "fat": 14
     },
     {
-      "name": "Reiskuchen pur, ungekocht (100g)",
-      "portion_g": 100,
-      "calories": 220,
-      "protein": 4,
-      "carbs": 49,
-      "fat": 0,
-      "tip": "Nur die Tteok ohne Soße"
-    },
-    {
-      "name": "Instant-Becher (120g zubereitet)",
-      "portion_g": 120,
-      "calories": 204,
-      "protein": 4,
-      "carbs": 41,
-      "fat": 3
-    },
-    {
-      "name": "Mit Käse (Rabokki, 250g)",
+      "name": "Mit Käse (220g + 30g Mozzarella)",
       "portion_g": 250,
-      "calories": 520,
+      "calories": 378,
       "protein": 16,
-      "carbs": 84,
-      "fat": 14,
-      "tip": "Käse erhöht Fett & Kalorien deutlich"
+      "carbs": 44,
+      "fat": 16,
+      "tip": "Käse erhöht Fett & Kalorien deutlich",
+      "basis": [
+        {
+          "g": 220
+        },
+        {
+          "fdcId": 170845,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Tteokbokki (250g)",
-      "calories": 413,
-      "emoji": "🌶️"
+      "calories": 328,
+      "emoji": "🌶️",
+      "basis": [
+        {
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Bibimbap (250g)",
-      "calories": 350,
-      "emoji": "🍚"
+      "calories": 190,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "bibimbap",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Kimbap (250g)",
       "calories": 380,
-      "emoji": "🍙"
+      "emoji": "🍙",
+      "basis": [
+        {
+          "slug": "kimbap",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Ramen (250g)",
-      "calories": 218,
-      "emoji": "🍜"
+      "calories": 318,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "ramen",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kohlenhydratreiche Mahlzeit",
-      "text": "Tteokbokki besteht überwiegend aus Reiskuchen. Eine Portion (250g) liefert rund 83g Kohlenhydrate, aber kaum Ballaststoffe und wenig Eiweiß.",
+      "text": "Tteokbokki besteht überwiegend aus Reiskuchen. Eine Portion (250g) liefert rund 49g Kohlenhydrate, aber kaum Ballaststoffe und wenig Eiweiß.",
       "icon": "🍚"
     },
     {
       "title": "Käse macht es kalorienreicher",
-      "text": "Mit Käse (Rabokki) steigt eine Portion von ca. 413 auf rund 520 kcal, vor allem durch das zusätzliche Fett. Ohne Käse bleibt das Gericht leichter.",
+      "text": "Mit 30g Mozzarella steigt eine Portion (250g) von ca. 328 auf rund 378 kcal, vor allem durch das zusätzliche Fett. Ohne Käse bleibt das Gericht leichter.",
       "icon": "🧀"
     },
     {
@@ -130,30 +146,30 @@
     },
     {
       "title": "Als Beilage statt Hauptgericht",
-      "text": "Eine kleine Portion (150g) mit rund 248 kcal passt gut als Beilage neben einem eiweißreichen Hauptgericht.",
+      "text": "Eine kleine Portion (150g) mit rund 197 kcal passt gut als Beilage neben einem eiweißreichen Hauptgericht.",
       "icon": "🥢"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Tteokbokki?",
-      "answer": "Eine typische Portion Tteokbokki (250g) hat rund 413 kcal. Pro 100g sind es etwa 165 kcal."
+      "answer": "Eine typische Portion Tteokbokki (250g) hat rund 328 kcal. Pro 100g sind es etwa 131 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 100g Tteokbokki?",
-      "answer": "100g zubereitetes Tteokbokki haben ca. 165 kcal, 3g Eiweiß, 33g Kohlenhydrate und 2g Fett."
+      "answer": "100g zubereitetes Tteokbokki haben ca. 131 kcal, 4g Eiweiß, 20g Kohlenhydrate und 4g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Tteokbokki?",
-      "answer": "Tteokbokki ist sehr kohlenhydratreich: 100g enthalten etwa 33g Kohlenhydrate, eine Portion (250g) rund 83g, da Reiskuchen die Hauptzutat ist."
+      "answer": "Tteokbokki ist kohlenhydratreich: 100g enthalten etwa 20g Kohlenhydrate, eine Portion (250g) rund 49g, da Reiskuchen die Hauptzutat ist."
     },
     {
       "question": "Wie viel Eiweiß hat Tteokbokki?",
-      "answer": "Der Eiweißgehalt ist niedrig: ca. 3g pro 100g bzw. rund 8g pro Portion (250g). Mit Ei oder Fischkuchen lässt er sich erhöhen."
+      "answer": "Der Eiweißgehalt ist niedrig: ca. 4g pro 100g bzw. rund 10g pro Portion (250g). Mit Ei oder Fischkuchen lässt er sich erhöhen."
     },
     {
       "question": "Ist Tteokbokki zum Abnehmen geeignet?",
-      "answer": "Tteokbokki ist sehr kohlenhydrat- und kalorienreich bei wenig Eiweiß und Ballaststoffen, daher in einer Diät nur in kleinen Portionen sinnvoll."
+      "answer": "Tteokbokki liefert vor allem Kohlenhydrate bei wenig Eiweiß und Ballaststoffen, daher in einer Diät nur in kleinen Portionen sinnvoll."
     },
     {
       "question": "Ist Tteokbokki gesund?",

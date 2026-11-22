@@ -3,48 +3,247 @@
   "name": "Pulled Pork Burger",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2706975 (Barbecue pork sandwich, on white bun), Werte je 100 g",
   "seo": {
     "title": "Pulled Pork Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Pulled Pork Burger? Nährwerte für klassische und leichtere Varianten. Kostenloser Kalorien-Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 220,
+    "calories_per_100g": 243,
     "protein_per_100g": 15,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 10,
+    "carbs_per_100g": 24.9,
+    "fat_per_100g": 8.8,
     "fiber_per_100g": 0.8,
     "typical_portion_g": 320,
     "typical_portion_name": "1 Burger"
   },
   "variants": [
-    {"name": "Pulled Pork Burger klassisch", "portion_g": 320, "calories": 704, "protein": 42, "carbs": 55, "fat": 34, "tip": "Mit BBQ-Sauce & Coleslaw"},
-    {"name": "Pulled Pork Burger mit Käse", "portion_g": 350, "calories": 810, "protein": 48, "carbs": 55, "fat": 42, "tip": "Extra Cheddar"},
-    {"name": "Pulled Pork Sandwich", "portion_g": 280, "calories": 580, "protein": 38, "carbs": 45, "fat": 26, "tip": "Im einfachen Brötchen"},
-    {"name": "Pulled Pork Bowl (ohne Brötchen)", "portion_g": 300, "calories": 520, "protein": 45, "carbs": 30, "fat": 24, "tip": "Low-Carb-Variante"},
-    {"name": "Pulled Pork Burger mit Jalapeños", "portion_g": 330, "calories": 720, "protein": 43, "carbs": 56, "fat": 35},
-    {"name": "Pulled Chicken Burger", "portion_g": 300, "calories": 580, "protein": 44, "carbs": 52, "fat": 22, "tip": "Leichtere Alternative"},
-    {"name": "Pulled Pork Burger XL", "portion_g": 420, "calories": 920, "protein": 56, "carbs": 68, "fat": 45, "tip": "Doppelte Fleischportion"}
+    {
+      "name": "Pulled Pork Burger klassisch",
+      "portion_g": 320,
+      "calories": 778,
+      "protein": 48,
+      "carbs": 80,
+      "fat": 28,
+      "tip": "Mit BBQ-Sauce"
+    },
+    {
+      "name": "Pulled Pork Burger mit Coleslaw",
+      "portion_g": 380,
+      "calories": 848,
+      "protein": 49,
+      "carbs": 86,
+      "fat": 33,
+      "tip": "Mit Krautsalat als Beilage",
+      "basis": [
+        {
+          "g": 320
+        },
+        {
+          "fdcId": 2709815,
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Pulled Pork Burger mit Käse",
+      "portion_g": 350,
+      "calories": 901,
+      "protein": 55,
+      "carbs": 80,
+      "fat": 38,
+      "tip": "Extra Cheddar",
+      "basis": [
+        {
+          "g": 320
+        },
+        {
+          "fdcId": 170899,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Pulled Pork Sandwich",
+      "portion_g": 280,
+      "calories": 680,
+      "protein": 42,
+      "carbs": 70,
+      "fat": 25,
+      "tip": "Im einfachen Brötchen"
+    },
+    {
+      "name": "Pulled Pork Bowl (ohne Brötchen)",
+      "portion_g": 300,
+      "calories": 569,
+      "protein": 36,
+      "carbs": 35,
+      "fat": 31,
+      "tip": "Low-Carb-Variante",
+      "basis": [
+        {
+          "fdcId": 2706399,
+          "g": 200
+        },
+        {
+          "fdcId": 2709815,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Pulled Pork Burger mit Jalapeños",
+      "portion_g": 330,
+      "calories": 780,
+      "protein": 48,
+      "carbs": 80,
+      "fat": 28,
+      "basis": [
+        {
+          "g": 320
+        },
+        {
+          "fdcId": 170080,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Pulled Chicken Burger",
+      "portion_g": 300,
+      "calories": 612,
+      "protein": 48,
+      "carbs": 75,
+      "fat": 13,
+      "tip": "Leichtere Alternative",
+      "basis": [
+        {
+          "fdcId": 2706998,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Pulled Pork Burger XL",
+      "portion_g": 420,
+      "calories": 1004,
+      "protein": 66,
+      "carbs": 92,
+      "fat": 39,
+      "tip": "Mit extra Fleisch (100g)",
+      "basis": [
+        {
+          "g": 320
+        },
+        {
+          "fdcId": 2706399,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Cheeseburger", "calories": 530, "emoji": "🍔"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
-    {"name": "Hähnchenbrust-Sandwich", "calories": 380, "emoji": "🥪"}
+    {
+      "name": "Cheeseburger (165g)",
+      "calories": 488,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "cheeseburger"
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Currywurst mit Pommes (400g)",
+      "calories": 800,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "variante": "Currywurst mit Pommes"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust-Sandwich (180g)",
+      "calories": 389,
+      "emoji": "🥪",
+      "basis": [
+        {
+          "fdcId": 2707012,
+          "g": 180
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "BBQ-Sauce sparsam verwenden", "text": "BBQ-Sauce hat ca. 50 kcal pro EL und viel Zucker. Weniger Sauce spart Kalorien und Zucker.", "icon": "🥫"},
-    {"title": "Coleslaw ohne Mayo", "text": "Coleslaw mit Essig-Dressing statt Mayo spart ca. 100 kcal und schmeckt frischer.", "icon": "🥗"},
-    {"title": "Pulled Chicken wählen", "text": "Pulled Chicken hat ca. 20% weniger Fett als Pulled Pork – bei ähnlichem Geschmack.", "icon": "🍗"},
-    {"title": "Bowl statt Burger", "text": "Ohne Brötchen sparst du ca. 180 kcal. Dafür mehr Salat und Gemüse dazu.", "icon": "🥗"},
-    {"title": "Portion kontrollieren", "text": "Restaurant-Burger haben oft 150-200g Fleisch. Zuhause reichen 120g für einen sättigenden Burger.", "icon": "⚖️"}
+    {
+      "title": "BBQ-Sauce sparsam verwenden",
+      "text": "BBQ-Sauce bringt viel Zucker und Kalorien mit. Weniger Sauce spart Kalorien und Zucker.",
+      "icon": "🥫"
+    },
+    {
+      "title": "Coleslaw ohne Mayo",
+      "text": "Coleslaw mit Essig-Dressing statt Mayo spart Kalorien und schmeckt frischer.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Pulled Chicken wählen",
+      "text": "Pulled Chicken hat rund halb so viel Fett wie Pulled Pork, bei ähnlichem Geschmack.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Bowl statt Burger",
+      "text": "Als Bowl ohne Brötchen sparst du rund 209 kcal gegenüber dem klassischen Burger. Dafür mehr Salat und Gemüse dazu.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Portion kontrollieren",
+      "text": "Restaurant-Burger haben oft 150-200g Fleisch. Zuhause reichen 120g für einen sättigenden Burger.",
+      "icon": "⚖️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Pulled Pork Burger?", "answer": "Ein klassischer Pulled Pork Burger hat ca. 700 kcal. Mit extra Käse sind es ca. 810 kcal, als Bowl ohne Brötchen nur ca. 520 kcal."},
-    {"question": "Ist Pulled Pork kalorienreich?", "answer": "Pulled Pork selbst hat ca. 215 kcal/100g – weniger als viele denken. Die Kalorien kommen hauptsächlich von BBQ-Sauce, Brötchen und Toppings."},
-    {"question": "Wie viel Protein hat ein Pulled Pork Burger?", "answer": "Ein Pulled Pork Burger liefert ca. 42-56g Protein pro Portion. Das macht ihn trotz der Kalorien zu einer proteinreichen Mahlzeit."},
-    {"question": "Was hat weniger Kalorien: Pulled Pork oder Döner?", "answer": "Ein Döner (696 kcal) und ein Pulled Pork Burger (700 kcal) liegen fast gleichauf. Pulled Pork als Bowl (520 kcal) ist leichter."},
-    {"question": "Kann man Pulled Pork kalorienärmer essen?", "answer": "Ja: Als Bowl ohne Brötchen (spart 180 kcal), weniger BBQ-Sauce, Coleslaw mit Essig statt Mayo, oder Pulled Chicken statt Pork."},
-    {"question": "Wie lange muss Pulled Pork garen?", "answer": "Pulled Pork braucht 8-12 Stunden bei niedriger Temperatur (110-130°C). Die lange Garzeit macht das Fleisch zart und löst es vom Knochen."}
+    {
+      "question": "Wie viele Kalorien hat ein Pulled Pork Burger?",
+      "answer": "Ein klassischer Pulled Pork Burger (320g) hat ca. 778 kcal. Mit extra Käse sind es ca. 901 kcal, als Bowl ohne Brötchen ca. 569 kcal."
+    },
+    {
+      "question": "Ist Pulled Pork kalorienreich?",
+      "answer": "Pulled Pork mit BBQ-Sauce hat ca. 226 kcal/100g. Im Burger kommen Brötchen und Toppings dazu."
+    },
+    {
+      "question": "Wie viel Protein hat ein Pulled Pork Burger?",
+      "answer": "Ein Pulled Pork Burger liefert ca. 48 bis 66g Protein pro Portion. Das macht ihn trotz der Kalorien zu einer proteinreichen Mahlzeit."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Pulled Pork oder Döner?",
+      "answer": "Ein Döner (696 kcal) hat etwas weniger als ein Pulled Pork Burger (778 kcal). Pulled Pork als Bowl (569 kcal) ist leichter."
+    },
+    {
+      "question": "Kann man Pulled Pork kalorienärmer essen?",
+      "answer": "Ja: Als Bowl ohne Brötchen (spart rund 209 kcal), weniger BBQ-Sauce, Coleslaw mit Essig statt Mayo, oder Pulled Chicken statt Pork."
+    },
+    {
+      "question": "Wie lange muss Pulled Pork garen?",
+      "answer": "Pulled Pork braucht 8-12 Stunden bei niedriger Temperatur (110-130°C). Die lange Garzeit macht das Fleisch zart und löst es vom Knochen."
+    }
   ],
-  "related_foods": ["burger", "cheeseburger", "chicken-burger", "wrap"]
+  "related_foods": [
+    "burger",
+    "cheeseburger",
+    "chicken-burger",
+    "wrap"
+  ]
 }

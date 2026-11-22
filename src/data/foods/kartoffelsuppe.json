@@ -3,48 +3,188 @@
   "name": "Kartoffelsuppe",
   "emoji": "🥔",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2709556 (Soup, potato), Werte je 100 g",
   "seo": {
     "title": "Kartoffelsuppe Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Kartoffelsuppe? Nährwerte für klassische Kartoffelsuppe mit Würstchen & Varianten. Kostenloser Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 75,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 10,
-    "fat_per_100g": 3,
+    "calories_per_100g": 90,
+    "protein_per_100g": 1.5,
+    "carbs_per_100g": 10.5,
+    "fat_per_100g": 4.7,
     "fiber_per_100g": 1.2,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    {"name": "Klassische Kartoffelsuppe", "portion_g": 400, "calories": 300, "protein": 10, "carbs": 40, "fat": 12, "tip": "Omas Rezept"},
-    {"name": "Mit Würstchen", "portion_g": 450, "calories": 450, "protein": 18, "carbs": 42, "fat": 24, "tip": "Deftige Variante"},
-    {"name": "Kartoffel-Lauch-Suppe", "portion_g": 400, "calories": 340, "protein": 10, "carbs": 38, "fat": 16, "tip": "Cremig mit Lauch"},
-    {"name": "Kartoffelcremesuppe", "portion_g": 400, "calories": 380, "protein": 10, "carbs": 40, "fat": 20, "tip": "Mit Sahne verfeinert"},
-    {"name": "Kartoffelsuppe mit Speck", "portion_g": 400, "calories": 420, "protein": 16, "carbs": 40, "fat": 22, "tip": "Krosser Speck on top"},
-    {"name": "Leichte Kartoffelsuppe", "portion_g": 400, "calories": 240, "protein": 8, "carbs": 38, "fat": 6, "tip": "Kalorienärmste Variante"},
-    {"name": "Kartoffelsuppe mit Lachs", "portion_g": 400, "calories": 400, "protein": 22, "carbs": 38, "fat": 18, "tip": "Edlere Variante mit Omega-3"}
+    {
+      "name": "Klassische Kartoffelsuppe",
+      "portion_g": 400,
+      "calories": 360,
+      "protein": 6,
+      "carbs": 42,
+      "fat": 19,
+      "tip": "Omas Rezept"
+    },
+    {
+      "name": "Mit Würstchen",
+      "portion_g": 450,
+      "calories": 495,
+      "protein": 12,
+      "carbs": 42,
+      "fat": 31,
+      "tip": "Deftige Variante",
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 172964,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Kartoffelsuppe mit Speck",
+      "portion_g": 400,
+      "calories": 417,
+      "protein": 11,
+      "carbs": 41,
+      "fat": 23,
+      "tip": "Krosser Speck on top",
+      "basis": [
+        {
+          "g": 385
+        },
+        {
+          "fdcId": 2705889,
+          "g": 15
+        }
+      ]
+    },
+    {
+      "name": "Kartoffelsuppe mit Lachs",
+      "portion_g": 400,
+      "calories": 374,
+      "protein": 14,
+      "carbs": 37,
+      "fat": 19,
+      "tip": "Edlere Variante mit Omega-3",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 173687,
+          "g": 50
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Erbsensuppe", "calories": 440, "emoji": "🟢"},
-    {"name": "Gulaschsuppe", "calories": 480, "emoji": "🍲"},
-    {"name": "Tomatensuppe", "calories": 200, "emoji": "🍅"},
-    {"name": "Linseneintopf", "calories": 380, "emoji": "🫘"}
+    {
+      "name": "Erbsensuppe (1 Teller, 400g)",
+      "calories": 320,
+      "emoji": "🟢",
+      "basis": [
+        {
+          "slug": "erbsensuppe",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Gulaschsuppe (1 Teller, 400g)",
+      "calories": 480,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulaschsuppe",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Tomatensuppe (1 Teller, 400g)",
+      "calories": 76,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "fdcId": 2709757,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Linseneintopf (1 Teller, 400g)",
+      "calories": 240,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "eintopf-linsen",
+          "g": 400
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Sahne weglassen", "text": "Pürierte Kartoffeln machen die Suppe auch ohne Sahne cremig – spart 80-100 kcal.", "icon": "🥛"},
-    {"title": "Würstchen weglassen", "text": "Ohne Würstchen sparst du 150 kcal. Ein Löffel Schmand reicht für den Geschmack.", "icon": "🌭"},
-    {"title": "Mehlig kochend wählen", "text": "Mehlige Kartoffeln zerfallen beim Kochen und machen die Suppe cremig ohne Zusätze.", "icon": "🥔"},
-    {"title": "Gemüse einarbeiten", "text": "Karotten, Sellerie und Lauch machen die Suppe nährstoffreicher ohne viel Extrakalorien.", "icon": "🥕"},
-    {"title": "Einfrieren geht super", "text": "Kartoffelsuppe hält eingefroren 2-3 Monate. Perfekt für schnelle Abendessen.", "icon": "❄️"}
+    {
+      "title": "Sahne weglassen",
+      "text": "Pürierte Kartoffeln machen die Suppe auch ohne Sahne cremig, das spart Kalorien.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Würstchen weglassen",
+      "text": "Ohne Würstchen (50g) sparst du rund 135 kcal. Ein Löffel Schmand reicht für den Geschmack.",
+      "icon": "🌭"
+    },
+    {
+      "title": "Mehlig kochend wählen",
+      "text": "Mehlige Kartoffeln zerfallen beim Kochen und machen die Suppe cremig ohne Zusätze.",
+      "icon": "🥔"
+    },
+    {
+      "title": "Gemüse einarbeiten",
+      "text": "Karotten, Sellerie und Lauch machen die Suppe nährstoffreicher ohne viel Extrakalorien.",
+      "icon": "🥕"
+    },
+    {
+      "title": "Einfrieren geht super",
+      "text": "Kartoffelsuppe hält eingefroren 2-3 Monate. Perfekt für schnelle Abendessen.",
+      "icon": "❄️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Kartoffelsuppe?", "answer": "Ein Teller Kartoffelsuppe (400g) hat 240-450 kcal, je nach Zutaten. Die leichte Variante ohne Sahne nur 240 kcal."},
-    {"question": "Ist Kartoffelsuppe gesund?", "answer": "Ja, Kartoffeln liefern Kalium, Vitamin C und Ballaststoffe. Die Suppe ist besonders gesund ohne Sahne und Speck."},
-    {"question": "Wie viel Protein hat Kartoffelsuppe?", "answer": "Ein Teller hat 8-22g Protein. Mit Lachs oder Würstchen steigt der Proteingehalt deutlich."},
-    {"question": "Ist Kartoffelsuppe gut zum Abnehmen?", "answer": "Ja, die leichte Variante (240 kcal) ist sehr sättigend. Kartoffeln haben eine hohe Sättigungswirkung bei moderaten Kalorien."},
-    {"question": "Was macht Kartoffelsuppe so sättigend?", "answer": "Kartoffeln haben den höchsten Sättigungsindex aller Kohlenhydratquellen. Die Kombination mit Ballaststoffen und Flüssigkeit sättigt besonders gut."},
-    {"question": "Wie lange hält Kartoffelsuppe?", "answer": "Im Kühlschrank 3-4 Tage, eingefroren 2-3 Monate. Gut verschlossen aufbewahren."}
+    {
+      "question": "Wie viele Kalorien hat Kartoffelsuppe?",
+      "answer": "Ein Teller Kartoffelsuppe (400g) hat ca. 360 kcal, mit Würstchen (450g) rund 495 kcal."
+    },
+    {
+      "question": "Ist Kartoffelsuppe gesund?",
+      "answer": "Ja, Kartoffeln liefern Kalium, Vitamin C und Ballaststoffe. Die Suppe ist besonders gesund ohne Sahne und Speck."
+    },
+    {
+      "question": "Wie viel Protein hat Kartoffelsuppe?",
+      "answer": "Ein Teller hat rund 6 bis 14g Protein. Mit Lachs oder Würstchen steigt der Proteingehalt deutlich."
+    },
+    {
+      "question": "Ist Kartoffelsuppe gut zum Abnehmen?",
+      "answer": "Ja, besonders ohne Sahne, Speck und Würstchen. Kartoffeln haben eine hohe Sättigungswirkung bei moderaten Kalorien, ein Teller (400g) hat ca. 360 kcal."
+    },
+    {
+      "question": "Was macht Kartoffelsuppe so sättigend?",
+      "answer": "Kartoffeln haben den höchsten Sättigungsindex aller Kohlenhydratquellen. Die Kombination mit Ballaststoffen und Flüssigkeit sättigt besonders gut."
+    },
+    {
+      "question": "Wie lange hält Kartoffelsuppe?",
+      "answer": "Im Kühlschrank 3-4 Tage, eingefroren 2-3 Monate. Gut verschlossen aufbewahren."
+    }
   ],
-  "related_foods": ["erbsensuppe", "eintopf-linsen", "gulaschsuppe", "kartoffeln"]
+  "related_foods": [
+    "erbsensuppe",
+    "eintopf-linsen",
+    "gulaschsuppe",
+    "kartoffeln"
+  ]
 }

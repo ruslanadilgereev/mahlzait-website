@@ -3,6 +3,7 @@
   "name": "Rinderhackfleisch",
   "emoji": "🥩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174030 (Beef, ground, 90% lean meat / 10% fat, raw), Werte je 100 g",
   "seo": {
     "title": "Rinderhackfleisch Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Rinderhackfleisch? Nährwerte für mager, regular & in Burgern. Rechner mit Portionsgrößen und Tipps."
@@ -11,39 +12,200 @@
     "calories_per_100g": 176,
     "protein_per_100g": 20,
     "carbs_per_100g": 0,
-    "fat_per_100g": 11,
+    "fat_per_100g": 10,
     "fiber_per_100g": 0,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Rinderhack regular (15% Fett)", "portion_g": 150, "calories": 264, "protein": 30, "carbs": 0, "fat": 16.5, "tip": "Standard-Qualität"},
-    {"name": "Rinderhack mager (5% Fett)", "portion_g": 150, "calories": 228, "protein": 33, "carbs": 0, "fat": 7.5, "tip": "Tararsteak-Qualität"},
-    {"name": "Rinderpatty (Burger)", "portion_g": 125, "calories": 280, "protein": 25, "carbs": 1, "fat": 20, "tip": "Höherer Fettgehalt für Saftigkeit"},
-    {"name": "Rinderhack gebraten", "portion_g": 125, "calories": 240, "protein": 28, "carbs": 0, "fat": 15, "tip": "Fett tritt beim Braten aus"},
-    {"name": "Tatar (roh)", "portion_g": 100, "calories": 152, "protein": 22, "carbs": 0, "fat": 5, "tip": "Mageres rohes Rinderhack"},
-    {"name": "Rinderhack in Chili con Carne", "portion_g": 100, "calories": 176, "protein": 20, "carbs": 0, "fat": 11, "tip": "Typischer Hack-Anteil"}
+    {
+      "name": "Rinderhack regular (15% Fett)",
+      "portion_g": 150,
+      "calories": 323,
+      "protein": 27.9,
+      "carbs": 0,
+      "fat": 22.5,
+      "tip": "Standard-Qualität",
+      "basis": [
+        {
+          "fdcId": 171796,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Rinderhack mager (5% Fett)",
+      "portion_g": 150,
+      "calories": 206,
+      "protein": 32.1,
+      "carbs": 0,
+      "fat": 7.5,
+      "tip": "Tatar-Qualität",
+      "basis": [
+        {
+          "fdcId": 171790,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Rinderpatty (Burger, gegrillt)",
+      "portion_g": 125,
+      "calories": 338,
+      "protein": 32.2,
+      "carbs": 0,
+      "fat": 22.2,
+      "tip": "Höherer Fettgehalt für Saftigkeit",
+      "basis": [
+        {
+          "fdcId": 171797,
+          "g": 125
+        }
+      ]
+    },
+    {
+      "name": "Rinderhack gebraten",
+      "portion_g": 125,
+      "calories": 288,
+      "protein": 35.6,
+      "carbs": 0,
+      "fat": 15.1,
+      "tip": "Fett tritt beim Braten aus",
+      "basis": [
+        {
+          "fdcId": 171794,
+          "g": 125
+        }
+      ]
+    },
+    {
+      "name": "Tatar (roh)",
+      "portion_g": 100,
+      "calories": 137,
+      "protein": 21.4,
+      "carbs": 0,
+      "fat": 5,
+      "tip": "Mageres rohes Rinderhack",
+      "basis": [
+        {
+          "fdcId": 171790,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Rinderhack in Chili con Carne",
+      "portion_g": 100,
+      "calories": 176,
+      "protein": 20,
+      "carbs": 0,
+      "fat": 10,
+      "tip": "Typischer Hack-Anteil"
+    }
   ],
   "comparison": [
-    {"name": "Hackfleisch gemischt", "calories": 212, "emoji": "🥩"},
-    {"name": "Putenhackfleisch", "calories": 137, "emoji": "🍗"},
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
-    {"name": "Lachsfilet", "calories": 208, "emoji": "🐟"}
+    {
+      "name": "Hackfleisch gemischt (150g)",
+      "calories": 318,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "hackfleisch-gemischt",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Putenhackfleisch (150g)",
+      "calories": 222,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 171505,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (150g)",
+      "calories": 248,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Lachsfilet (150g)",
+      "calories": 312,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachsfilet",
+          "g": 150
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Mageres Hack bevorzugen", "text": "5% Fett statt 15% spart pro 150g-Portion 90 kcal – bei mehr Protein und besserem Gewissen.", "icon": "💡"},
-    {"title": "Fett abtropfen lassen", "text": "Nach dem Anbraten Hack in ein Sieb geben und Fett abtropfen lassen. Spart 30-60 kcal.", "icon": "🫗"},
-    {"title": "Eisen-Lieferant #1", "text": "Rinderhack liefert 2,6mg Eisen pro 100g – besser bioverfügbar als pflanzliches Eisen.", "icon": "🩸"},
-    {"title": "Portionsgröße reduzieren", "text": "125g statt 200g Rinderhack pro Portion und dafür mehr Bohnen oder Gemüse dazu – spart 130 kcal.", "icon": "⚖️"},
-    {"title": "Für Burger: 20% Fett", "text": "Für saftige Burgerpatties braucht man mehr Fett. Hack mit 15-20% Fett ergibt bessere Patties als mageres.", "icon": "🍔"}
+    {
+      "title": "Mageres Hack bevorzugen",
+      "text": "5% Fett statt 15% spart pro 150g-Portion 117 kcal, bei mehr Protein und besserem Gewissen.",
+      "icon": "💡"
+    },
+    {
+      "title": "Fett abtropfen lassen",
+      "text": "Nach dem Anbraten Hack in ein Sieb geben und Fett abtropfen lassen. Das spart zusätzlich Kalorien.",
+      "icon": "🫗"
+    },
+    {
+      "title": "Eisen-Lieferant #1",
+      "text": "Rinderhack liefert 2,2mg Eisen pro 100g, besser bioverfügbar als pflanzliches Eisen.",
+      "icon": "🩸"
+    },
+    {
+      "title": "Portionsgröße reduzieren",
+      "text": "125g statt 200g Rinderhack pro Portion und dafür mehr Bohnen oder Gemüse dazu, das spart rund 132 kcal.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Für Burger: 20% Fett",
+      "text": "Für saftige Burgerpatties braucht man mehr Fett. Hack mit 15-20% Fett ergibt bessere Patties als mageres.",
+      "icon": "🍔"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Rinderhackfleisch?", "answer": "Rinderhack (regular, 10-15% Fett) hat ca. 176 kcal pro 100g. Mageres Rinderhack (5% Fett) hat ca. 152 kcal pro 100g."},
-    {"question": "Ist Rinderhack gesünder als gemischtes Hack?", "answer": "Rinderhack hat weniger Kalorien (176 vs. 212 kcal) und mehr Protein (20g vs. 17g pro 100g). Dazu liefert es mehr Eisen und B12."},
-    {"question": "Wie viel Protein hat Rinderhack?", "answer": "Rinderhack enthält ca. 20g Protein pro 100g. Mageres Rinderhack sogar 22g. Eine 150g-Portion liefert 30-33g Protein."},
-    {"question": "Verliert Hackfleisch beim Braten Kalorien?", "answer": "Ja, weil Fett austritt. 150g rohes Hack schrumpfen auf ca. 125g gebraten. Pro 100g sinken die Kalorien aber kaum – das Fett fehlt einfach."},
-    {"question": "Was ist besser zum Abnehmen: Rinderhack oder Hähnchenbrust?", "answer": "Hähnchenbrust ist kalorienärmer (165 vs. 176 kcal) und fettärmer. Aber Rinderhack liefert mehr Eisen und Zink. Beide passen in eine Diät."},
-    {"question": "Kann man Rinderhack roh essen?", "answer": "Nur als Tatar/Mett-Qualität vom Metzger, am gleichen Tag. Supermarkt-Hackfleisch sollte immer durchgegart werden wegen erhöhter Keimbelastung."}
+    {
+      "question": "Wie viele Kalorien hat Rinderhackfleisch?",
+      "answer": "Rinderhack mit 10% Fett hat ca. 176 kcal pro 100g, mit 15% Fett rund 215 kcal. Mageres Rinderhack (5% Fett) hat ca. 137 kcal pro 100g."
+    },
+    {
+      "question": "Ist Rinderhack gesünder als gemischtes Hack?",
+      "answer": "Rinderhack mit 10% Fett hat weniger Kalorien als gemischtes Hack (siehe Vergleich) und mehr Protein. Dazu liefert es mehr Eisen und B12."
+    },
+    {
+      "question": "Wie viel Protein hat Rinderhack?",
+      "answer": "Rinderhack enthält ca. 20g Protein pro 100g. Mageres Rinderhack sogar 21g. Eine 150g-Portion liefert 30 bis 32g Protein."
+    },
+    {
+      "question": "Verliert Hackfleisch beim Braten Kalorien?",
+      "answer": "Nur wenig. Beim Braten verliert Hack vor allem Wasser und etwas Fett und schrumpft deutlich. Pro 100g gebratenem Hack sind es deshalb sogar mehr Kalorien (230 statt 176 kcal roh)."
+    },
+    {
+      "question": "Was ist besser zum Abnehmen: Rinderhack oder Hähnchenbrust?",
+      "answer": "Hähnchenbrust ist kalorienärmer und fettärmer. Aber Rinderhack liefert mehr Eisen und Zink. Beide passen in eine Diät."
+    },
+    {
+      "question": "Kann man Rinderhack roh essen?",
+      "answer": "Nur als Tatar/Mett-Qualität vom Metzger, am gleichen Tag. Supermarkt-Hackfleisch sollte immer durchgegart werden wegen erhöhter Keimbelastung."
+    }
   ],
-  "related_foods": ["hackfleisch-gemischt", "burger", "spaghetti-bolognese", "cheeseburger"]
+  "related_foods": [
+    "hackfleisch-gemischt",
+    "burger",
+    "spaghetti-bolognese",
+    "cheeseburger"
+  ]
 }

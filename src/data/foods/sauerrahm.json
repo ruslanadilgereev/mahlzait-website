@@ -3,9 +3,10 @@
   "name": "Sauerrahm",
   "emoji": "🥛",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171256 (Cream, sour, reduced fat, cultured), Werte je 100 g",
   "seo": {
     "title": "Sauerrahm Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Sauerrahm? Sauerrahm (10% Fett) hat ca. 115 kcal pro 100g. Nährwerte pro Esslöffel & Becher plus Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Sauerrahm? Sauerrahm hat ca. 135 kcal pro 100g. Nährwerte pro Esslöffel & Becher plus Tipps zum Abnehmen.",
     "keywords": [
       "sauerrahm kalorien",
       "sauerrahm kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 115,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 10,
+    "calories_per_100g": 135,
+    "protein_per_100g": 2.9,
+    "carbs_per_100g": 4.3,
+    "fat_per_100g": 12,
     "fiber_per_100g": 0,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Esslöffel (30g)"
@@ -28,7 +29,7 @@
     {
       "name": "1 Teelöffel (10g)",
       "portion_g": 10,
-      "calories": 12,
+      "calories": 14,
       "protein": 0,
       "carbs": 0,
       "fat": 1
@@ -36,85 +37,89 @@
     {
       "name": "1 Esslöffel (30g)",
       "portion_g": 30,
-      "calories": 35,
+      "calories": 41,
       "protein": 1,
       "carbs": 1,
-      "fat": 3,
+      "fat": 4,
       "tip": "Standard"
     },
     {
       "name": "2 Esslöffel (60g)",
       "portion_g": 60,
-      "calories": 69,
+      "calories": 81,
       "protein": 2,
-      "carbs": 2,
-      "fat": 6
+      "carbs": 3,
+      "fat": 7
     },
     {
       "name": "Portion fürs Dressing (50g)",
       "portion_g": 50,
-      "calories": 58,
-      "protein": 2,
+      "calories": 68,
+      "protein": 1,
       "carbs": 2,
-      "fat": 5
+      "fat": 6
     },
     {
       "name": "Halber Becher (100g)",
       "portion_g": 100,
-      "calories": 115,
+      "calories": 135,
       "protein": 3,
       "carbs": 4,
-      "fat": 10
+      "fat": 12
     },
     {
       "name": "Ganzer Becher (200g)",
       "portion_g": 200,
-      "calories": 230,
+      "calories": 270,
       "protein": 6,
-      "carbs": 8,
-      "fat": 20
-    },
-    {
-      "name": "Schmand (24% Fett, 100g)",
-      "portion_g": 100,
-      "calories": 237,
-      "protein": 3,
-      "carbs": 4,
-      "fat": 24,
-      "tip": "Fettere Alternative"
+      "carbs": 9,
+      "fat": 24
     }
   ],
   "comparison": [
     {
       "name": "Sauerrahm (100g)",
-      "calories": 115,
-      "emoji": "🥛"
-    },
-    {
-      "name": "Schmand (100g)",
-      "calories": 237,
-      "emoji": "🥛"
+      "calories": 135,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sauerrahm",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Schlagsahne (100g)",
-      "calories": 290,
-      "emoji": "🥛"
+      "calories": 292,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sahne",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Magerquark (100g)",
-      "calories": 67,
-      "emoji": "🥛"
+      "calories": 72,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 172181,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Leichter als Schmand und Sahne",
-      "text": "Sauerrahm mit 10% Fett hat mit 115 kcal pro 100g deutlich weniger Kalorien als Schmand (237 kcal) oder Schlagsahne (290 kcal). Wer Kalorien sparen will, greift zum Sauerrahm.",
+      "text": "Sauerrahm hat mit rund 135 kcal pro 100g deutlich weniger Kalorien als Schmand oder Schlagsahne (292 kcal). Wer Kalorien sparen will, greift zum Sauerrahm.",
       "icon": "🥛"
     },
     {
       "title": "Esslöffel reicht oft",
-      "text": "Ein Esslöffel Sauerrahm (30g) hat nur etwa 35 kcal. Als Klecks auf Suppe, Pellkartoffeln oder Gulasch fällt das kalorisch kaum ins Gewicht.",
+      "text": "Ein Esslöffel Sauerrahm (30g) hat nur etwa 41 kcal. Als Klecks auf Suppe, Pellkartoffeln oder Gulasch fällt das kalorisch kaum ins Gewicht.",
       "icon": "🥄"
     },
     {
@@ -129,22 +134,22 @@
     },
     {
       "title": "Quark als magere Alternative",
-      "text": "Wer noch mehr Kalorien sparen möchte, kann Sauerrahm teilweise durch Magerquark ersetzen. Der bringt mehr Protein und kommt auf nur rund 67 kcal pro 100g.",
+      "text": "Wer noch mehr Kalorien sparen möchte, kann Sauerrahm teilweise durch Magerquark ersetzen. Der bringt mehr Protein und kommt auf nur rund 72 kcal pro 100g.",
       "icon": "💪"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Sauerrahm?",
-      "answer": "Sauerrahm mit 10% Fett hat etwa 115 kcal pro 100g. Ein Esslöffel (30g) kommt auf rund 35 kcal."
+      "answer": "Sauerrahm hat etwa 135 kcal pro 100g. Ein Esslöffel (30g) kommt auf rund 41 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Esslöffel Sauerrahm?",
-      "answer": "Ein Esslöffel Sauerrahm (etwa 30g) hat rund 35 kcal. Ein Teelöffel (10g) liefert etwa 12 kcal."
+      "answer": "Ein Esslöffel Sauerrahm (etwa 30g) hat rund 41 kcal. Ein Teelöffel (10g) liefert etwa 14 kcal."
     },
     {
       "question": "Wie viel Kalorien hat saure Sahne?",
-      "answer": "Saure Sahne und Sauerrahm sind weitgehend identisch und liegen mit 10% Fett bei etwa 115 kcal pro 100g."
+      "answer": "Saure Sahne und Sauerrahm sind weitgehend identisch und liegen bei etwa 135 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Sauerrahm?",
@@ -152,7 +157,7 @@
     },
     {
       "question": "Ist Sauerrahm zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit 115 kcal pro 100g ist Sauerrahm leichter als Schmand oder Sahne. Ein Esslöffel als Topping ist kalorisch unkritisch, größere Mengen summieren sich aber."
+      "answer": "In Maßen ja. Mit 135 kcal pro 100g ist Sauerrahm leichter als Schmand oder Sahne. Ein Esslöffel als Topping ist kalorisch unkritisch, größere Mengen summieren sich aber."
     },
     {
       "question": "Wie viel Protein hat Sauerrahm?",

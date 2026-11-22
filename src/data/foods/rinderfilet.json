@@ -3,9 +3,10 @@
   "name": "Rinderfilet",
   "emoji": "🥩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171767 (Beef, loin, tenderloin steak, boneless, separable lean only, trimmed to 0\" fat, all grades, raw), Werte je 100 g",
   "seo": {
     "title": "Rinderfilet Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Rinderfilet? Rohes Rinderfilet hat ca. 125 kcal pro 100g. Nährwerte, Eiweiß & Portionen im Überblick – roh und gebraten.",
+    "description": "Wie viele Kalorien hat Rinderfilet? Rohes Rinderfilet hat ca. 139 kcal pro 100g. Nährwerte, Eiweiß & Portionen im Überblick, roh und gebraten.",
     "keywords": [
       "rinderfilet kcal",
       "rinderfilet kalorien",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 125,
-    "protein_per_100g": 21.5,
+    "calories_per_100g": 139,
+    "protein_per_100g": 21.9,
     "carbs_per_100g": 0,
-    "fat_per_100g": 4,
+    "fat_per_100g": 5.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Steak (200g, roh)"
@@ -29,99 +30,141 @@
     {
       "name": "Rinderfilet roh (100g)",
       "portion_g": 100,
-      "calories": 125,
+      "calories": 139,
       "protein": 22,
       "carbs": 0,
-      "fat": 4,
+      "fat": 6,
       "tip": "Referenzwert pro 100g"
     },
     {
       "name": "Rinderfilet-Medaillon roh (150g)",
       "portion_g": 150,
-      "calories": 188,
-      "protein": 32,
+      "calories": 209,
+      "protein": 33,
       "carbs": 0,
-      "fat": 6
+      "fat": 9
     },
     {
       "name": "Rinderfilet-Steak roh (200g)",
       "portion_g": 200,
-      "calories": 250,
-      "protein": 43,
+      "calories": 278,
+      "protein": 44,
       "carbs": 0,
-      "fat": 8,
+      "fat": 11,
       "tip": "Standard-Portion"
     },
     {
       "name": "Großes Rinderfilet roh (250g)",
       "portion_g": 250,
-      "calories": 313,
-      "protein": 54,
+      "calories": 348,
+      "protein": 55,
       "carbs": 0,
-      "fat": 10
+      "fat": 14
     },
     {
       "name": "Rinderfilet gebraten (150g)",
       "portion_g": 150,
-      "calories": 308,
-      "protein": 41,
+      "calories": 297,
+      "protein": 46,
       "carbs": 0,
-      "fat": 14,
-      "tip": "Durch Wasserverlust gehaltvoller als roh"
+      "fat": 12,
+      "tip": "Durch Wasserverlust gehaltvoller als roh",
+      "basis": [
+        {
+          "fdcId": 170641,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Rinderfilet gebraten (200g)",
       "portion_g": 200,
-      "calories": 410,
-      "protein": 55,
+      "calories": 396,
+      "protein": 61,
       "carbs": 0,
-      "fat": 19
+      "fat": 17,
+      "basis": [
+        {
+          "fdcId": 170641,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Filet-Mignon gebraten (120g)",
       "portion_g": 120,
-      "calories": 246,
-      "protein": 33,
+      "calories": 238,
+      "protein": 37,
       "carbs": 0,
-      "fat": 11
+      "fat": 10,
+      "basis": [
+        {
+          "fdcId": 170641,
+          "g": 120
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Hähnchenbrust (200g, roh)",
-      "calories": 330,
-      "emoji": "🍗"
+      "calories": 240,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 171077,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Lachsfilet (200g, roh)",
       "calories": 416,
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachsfilet",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Schweinefleisch mager (200g, roh)",
       "calories": 286,
-      "emoji": "🐖"
+      "emoji": "🐖",
+      "basis": [
+        {
+          "fdcId": 168230,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Hackfleisch Rind (200g, roh)",
-      "calories": 472,
-      "emoji": "🥩"
+      "calories": 352,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 174030,
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mageres Edelstück",
-      "text": "Rinderfilet ist mit rund 4g Fett pro 100g (roh) das fettärmste Stück vom Rind und liefert dabei viel hochwertiges Eiweiß.",
+      "text": "Rinderfilet ist mit knapp 6g Fett pro 100g (roh) eines der fettärmsten Stücke vom Rind und liefert dabei viel hochwertiges Eiweiß.",
       "icon": "🥩"
     },
     {
       "title": "Roh und gebraten unterscheiden",
-      "text": "Beim Braten verliert das Filet Wasser, dadurch steigen die Kalorien pro 100g auf etwa 205 kcal. Wiege das Fleisch am besten im rohen Zustand.",
+      "text": "Beim Braten verliert das Filet Wasser, dadurch steigen die Kalorien pro 100g auf etwa 198 kcal. Wiege das Fleisch am besten im rohen Zustand.",
       "icon": "🍳"
     },
     {
       "title": "Eiweißquelle für den Muskelaufbau",
-      "text": "Ein 200g-Steak liefert rund 43g Eiweiß und deckt damit einen großen Teil des Tagesbedarfs – ideal nach dem Training.",
+      "text": "Ein 200g-Steak liefert rund 44g Eiweiß und deckt damit einen großen Teil des Tagesbedarfs, ideal nach dem Training.",
       "icon": "💪"
     },
     {
@@ -138,15 +181,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Rinderfilet?",
-      "answer": "Rohes Rinderfilet hat etwa 125 kcal pro 100g. Eine typische Portion von 200g (roh) kommt auf rund 250 kcal."
+      "answer": "Rohes Rinderfilet hat etwa 139 kcal pro 100g. Eine typische Portion von 200g (roh) kommt auf rund 278 kcal."
     },
     {
       "question": "Wie viele Kalorien hat gebratenes Rinderfilet?",
-      "answer": "Durch den Wasserverlust beim Braten steigt der Wert auf etwa 205 kcal pro 100g. Ein gebratenes 150g-Steak hat damit rund 308 kcal."
+      "answer": "Durch den Wasserverlust beim Braten steigt der Wert auf etwa 198 kcal pro 100g. Ein gebratenes 150g-Steak hat damit rund 297 kcal."
     },
     {
       "question": "Wie viel Eiweiß hat Rinderfilet?",
-      "answer": "Rinderfilet liefert etwa 21,5g Eiweiß pro 100g (roh). Ein 200g-Steak enthält damit rund 43g hochwertiges Protein."
+      "answer": "Rinderfilet liefert etwa 21,9g Eiweiß pro 100g (roh). Ein 200g-Steak enthält damit rund 44g hochwertiges Protein."
     },
     {
       "question": "Hat Rinderfilet Kohlenhydrate?",
@@ -154,7 +197,7 @@
     },
     {
       "question": "Ist Rinderfilet zum Abnehmen geeignet?",
-      "answer": "Ja. Rinderfilet ist fettarm, kohlenhydratfrei und sehr eiweißreich. Das sättigt gut und unterstützt den Erhalt der Muskelmasse während einer Diät – am besten fettarm zubereitet."
+      "answer": "Ja. Rinderfilet ist fettarm, kohlenhydratfrei und sehr eiweißreich. Das sättigt gut und unterstützt den Erhalt der Muskelmasse während einer Diät, am besten fettarm zubereitet."
     },
     {
       "question": "Ist Rinderfilet gesund?",

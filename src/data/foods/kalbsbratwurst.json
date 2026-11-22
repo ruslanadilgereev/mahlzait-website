@@ -3,9 +3,10 @@
   "name": "Kalbsbratwurst",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174595 (Bratwurst, veal, cooked), Werte je 100 g",
   "seo": {
     "title": "Kalbsbratwurst Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Kalbsbratwurst? Eine Wurst (120g) hat ca. 318 kcal. Nährwerte pro 100g & Portion, Eiweiß, Fett & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat eine Kalbsbratwurst? Eine Wurst (120g) hat ca. 409 kcal. Nährwerte pro 100g & Portion, Eiweiß, Fett & Tipps im Überblick.",
     "keywords": [
       "kalbsbratwurst kalorien",
       "kalbsbratwurst kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 265,
-    "protein_per_100g": 13.5,
-    "carbs_per_100g": 0.8,
-    "fat_per_100g": 23,
+    "calories_per_100g": 341,
+    "protein_per_100g": 14,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 31.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 120,
     "typical_portion_name": "1 Kalbsbratwurst (gebraten)"
@@ -28,87 +29,120 @@
     {
       "name": "Kleine Kalbsbratwurst (80g)",
       "portion_g": 80,
-      "calories": 212,
-      "protein": 10.8,
-      "carbs": 0.6,
-      "fat": 18.4,
+      "calories": 273,
+      "protein": 11.2,
+      "carbs": 0,
+      "fat": 25.4,
       "tip": "Grillgröße, z.B. fränkische Art"
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 265,
-      "protein": 13.5,
-      "carbs": 0.8,
-      "fat": 23
+      "calories": 341,
+      "protein": 14,
+      "carbs": 0,
+      "fat": 31.7
     },
     {
       "name": "Kalbsbratwurst (120g)",
       "portion_g": 120,
-      "calories": 318,
-      "protein": 16.2,
-      "carbs": 1,
-      "fat": 27.6,
+      "calories": 409,
+      "protein": 16.8,
+      "carbs": 0,
+      "fat": 38,
       "tip": "Standard, eine Wurst gebraten"
     },
     {
       "name": "Große Kalbsbratwurst (150g)",
       "portion_g": 150,
-      "calories": 398,
-      "protein": 20.2,
-      "carbs": 1.2,
-      "fat": 34.5
+      "calories": 512,
+      "protein": 21,
+      "carbs": 0,
+      "fat": 47.6
     },
     {
       "name": "2 Kalbsbratwürste (240g)",
       "portion_g": 240,
-      "calories": 636,
-      "protein": 32.4,
-      "carbs": 1.9,
-      "fat": 55.2,
+      "calories": 818,
+      "protein": 33.6,
+      "carbs": 0,
+      "fat": 76.1,
       "tip": "Typische Mahlzeit mit Beilage"
     },
     {
-      "name": "Kalbsbratwurst im Brötchen (190g)",
-      "portion_g": 190,
-      "calories": 458,
-      "protein": 21.6,
-      "carbs": 28,
-      "fat": 29.6,
-      "tip": "120g Wurst + Brötchen, ohne Senf gerechnet"
+      "name": "Kalbsbratwurst im Brötchen (120g + 60g)",
+      "portion_g": 180,
+      "calories": 585,
+      "protein": 22.7,
+      "carbs": 31.6,
+      "fat": 40.6,
+      "tip": "120g Wurst + Brötchen, ohne Senf gerechnet",
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Bratwurst (120g)",
-      "calories": 357,
-      "emoji": "🌭"
+      "calories": 400,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Geflügelbratwurst (120g)",
-      "calories": 240,
-      "emoji": "🍗"
+      "calories": 211,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "gefluegelbratwurst",
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Weißwurst (120g)",
-      "calories": 320,
-      "emoji": "🥨"
+      "calories": 409,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "weisswurst",
+          "g": 120
+        }
+      ]
     },
     {
       "name": "Wiener Würstchen (120g)",
-      "calories": 305,
-      "emoji": "🌭"
+      "calories": 323,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "wiener-wuerstchen",
+          "g": 120
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mageres Fleisch, viel Fett",
-      "text": "Kalbfleisch selbst ist mager, doch in der Bratwurst sorgt zugesetztes Fett für rund 23g Fett pro 100g. Damit liegen die Kalorien fast komplett im Fettanteil.",
+      "text": "Kalbfleisch selbst ist mager, doch in der Bratwurst sorgt zugesetztes Fett für rund 32g Fett pro 100g. Damit liegen die Kalorien fast komplett im Fettanteil.",
       "icon": "🥩"
     },
     {
       "title": "Geflügelvariante spart Kalorien",
-      "text": "Eine Geflügelbratwurst hat mit etwa 240 kcal pro 120g spürbar weniger Kalorien als die Kalbsbratwurst mit rund 318 kcal. Wer Kalorien sparen will, greift dazu.",
+      "text": "Eine Geflügelbratwurst hat mit etwa 211 kcal pro 120g spürbar weniger Kalorien als die Kalbsbratwurst mit rund 409 kcal. Wer Kalorien sparen will, greift dazu.",
       "icon": "🍗"
     },
     {
@@ -118,7 +152,7 @@
     },
     {
       "title": "Eiweißlieferant mit Maß",
-      "text": "Mit etwa 16g Eiweiß pro Wurst (120g) liefert die Kalbsbratwurst durchaus Protein. Wegen des hohen Fettanteils bleibt sie aber ein Genussprodukt, kein Sportler-Snack.",
+      "text": "Mit etwa 17g Eiweiß pro Wurst (120g) liefert die Kalbsbratwurst durchaus Protein. Wegen des hohen Fettanteils bleibt sie aber ein Genussprodukt, kein Sportler-Snack.",
       "icon": "💪"
     },
     {
@@ -130,11 +164,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Kalbsbratwurst?",
-      "answer": "Eine durchschnittliche Kalbsbratwurst (120g, gebraten) hat etwa 318 kcal. Pro 100g sind es rund 265 kcal."
+      "answer": "Eine durchschnittliche Kalbsbratwurst (120g, gebraten) hat etwa 409 kcal. Pro 100g sind es rund 341 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in einer Kalbsbratwurst?",
-      "answer": "Pro 100g enthält die Kalbsbratwurst etwa 13,5g Eiweiß. Eine Wurst von 120g liefert damit rund 16g Protein."
+      "answer": "Pro 100g enthält die Kalbsbratwurst etwa 14g Eiweiß. Eine Wurst von 120g liefert damit rund 17g Protein."
     },
     {
       "question": "Hat eine Kalbsbratwurst viele Kohlenhydrate?",
@@ -142,15 +176,15 @@
     },
     {
       "question": "Ist eine Kalbsbratwurst zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Durch den hohen Fettanteil von rund 23g pro 100g ist sie sehr kalorienreich. Eine Geflügelbratwurst ist mit weniger Kalorien die schlankere Alternative."
+      "answer": "Nur in Maßen. Durch den hohen Fettanteil von rund 32g pro 100g ist sie sehr kalorienreich. Eine Geflügelbratwurst ist mit weniger Kalorien die schlankere Alternative."
     },
     {
       "question": "Ist eine Kalbsbratwurst gesünder als eine normale Bratwurst?",
-      "answer": "Etwas. Eine klassische Schweinsbratwurst kommt auf etwa 357 kcal pro 120g, die Kalbsbratwurst auf rund 318 kcal. Der Unterschied ist vorhanden, aber moderat."
+      "answer": "Kaum. Kalorisch liegen beide etwa gleichauf: Eine klassische Bratwurst kommt auf etwa 400 kcal pro 120g, die Kalbsbratwurst auf rund 409 kcal."
     },
     {
       "question": "Wie viel Fett hat eine Kalbsbratwurst?",
-      "answer": "Pro 100g enthält die Kalbsbratwurst etwa 23g Fett. Eine Wurst von 120g kommt damit auf rund 28g Fett."
+      "answer": "Pro 100g enthält die Kalbsbratwurst etwa 32g Fett. Eine Wurst von 120g kommt damit auf rund 38g Fett."
     }
   ],
   "related_foods": [

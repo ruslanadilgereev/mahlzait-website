@@ -3,48 +3,237 @@
   "name": "Nachos",
   "emoji": "🌮",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170291 (Fast foods, nachos, with cheese), Werte je 100 g",
   "seo": {
-    "title": "Nachos Kalorien: 480-980 kcal pro Portion | Mahlzait",
-    "description": "Nachos haben 480-980 kcal pro Portion, je nach Topping: pur, mit Käse, Guacamole oder Salsa. Alle Nährwerte im Überblick plus Spar-Tipps fürs Kino."
+    "title": "Nachos Kalorien: 426 bis 767 kcal pro Portion | Mahlzait",
+    "description": "Nachos haben je nach Topping ca. 426 bis 767 kcal pro Portion: pur, mit Käse, Guacamole oder Salsa. Alle Nährwerte im Überblick plus Spar-Tipps fürs Kino."
   },
   "overview": {
-    "calories_per_100g": 340,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 38,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 3.0,
+    "calories_per_100g": 343,
+    "protein_per_100g": 4.3,
+    "carbs_per_100g": 34.9,
+    "fat_per_100g": 21.5,
+    "fiber_per_100g": 3.2,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Nachos pur (Tortilla-Chips)", "portion_g": 100, "calories": 480, "protein": 7, "carbs": 58, "fat": 24, "tip": "Ohne Toppings"},
-    {"name": "Nachos mit Käse-Dip", "portion_g": 200, "calories": 780, "protein": 18, "carbs": 70, "fat": 46, "tip": "Kino-Klassiker"},
-    {"name": "Nachos Überbacken (Loaded)", "portion_g": 350, "calories": 980, "protein": 32, "carbs": 85, "fat": 55, "tip": "Restaurant-Style"},
-    {"name": "Nachos mit Salsa", "portion_g": 160, "calories": 520, "protein": 8, "carbs": 64, "fat": 26, "tip": "Leichtere Variante"},
-    {"name": "Nachos mit Guacamole", "portion_g": 180, "calories": 640, "protein": 10, "carbs": 60, "fat": 40, "tip": "Gute Fette aus Avocado"},
-    {"name": "Nachos Vegetarisch (mit Bohnen)", "portion_g": 300, "calories": 820, "protein": 25, "carbs": 90, "fat": 38},
-    {"name": "Nachos Light (Ofenchips)", "portion_g": 150, "calories": 420, "protein": 8, "carbs": 62, "fat": 16, "tip": "Gebacken statt frittiert"}
+    {
+      "name": "Nachos pur (Tortilla-Chips)",
+      "portion_g": 100,
+      "calories": 497,
+      "protein": 7,
+      "carbs": 67,
+      "fat": 22,
+      "tip": "Ohne Toppings",
+      "basis": [
+        {
+          "fdcId": 173143,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Nachos mit Käse-Dip",
+      "portion_g": 200,
+      "calories": 686,
+      "protein": 9,
+      "carbs": 70,
+      "fat": 43,
+      "tip": "Kino-Klassiker"
+    },
+    {
+      "name": "Nachos Überbacken (Loaded)",
+      "portion_g": 350,
+      "calories": 767,
+      "protein": 22,
+      "carbs": 75,
+      "fat": 44,
+      "tip": "Mit Käse, Bohnen, Hackfleisch und Tomaten",
+      "basis": [
+        {
+          "fdcId": 170292,
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Nachos mit Salsa",
+      "portion_g": 160,
+      "calories": 514,
+      "protein": 8,
+      "carbs": 71,
+      "fat": 22,
+      "tip": "Leichtere Variante",
+      "basis": [
+        {
+          "fdcId": 173143,
+          "g": 100
+        },
+        {
+          "slug": "salsa",
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Nachos mit Guacamole",
+      "portion_g": 180,
+      "calories": 621,
+      "protein": 8,
+      "carbs": 74,
+      "fat": 34,
+      "tip": "Gute Fette aus Avocado",
+      "basis": [
+        {
+          "fdcId": 173143,
+          "g": 100
+        },
+        {
+          "slug": "guacamole",
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Nachos Vegetarisch (mit Bohnen)",
+      "portion_g": 300,
+      "calories": 630,
+      "protein": 14,
+      "carbs": 70,
+      "fat": 34,
+      "basis": [
+        {
+          "fdcId": 2708582,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Nachos Light (fettreduzierte Chips mit Salsa)",
+      "portion_g": 150,
+      "calories": 426,
+      "protein": 12,
+      "carbs": 82,
+      "fat": 6,
+      "tip": "Fettreduzierte Chips",
+      "basis": [
+        {
+          "fdcId": 2708209,
+          "g": 100
+        },
+        {
+          "slug": "salsa",
+          "g": 50
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Chips (Tüte)", "calories": 536, "emoji": "🥔"},
-    {"name": "Popcorn (Kino)", "calories": 400, "emoji": "🍿"},
-    {"name": "Pizza (1 Stück)", "calories": 270, "emoji": "🍕"},
-    {"name": "Gemüsesticks mit Hummus", "calories": 180, "emoji": "🥕"}
+    {
+      "name": "Kartoffelchips (100g)",
+      "calories": 532,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Popcorn (Kino)",
+      "calories": 676,
+      "emoji": "🍿",
+      "basis": [
+        {
+          "slug": "popcorn-kino"
+        }
+      ]
+    },
+    {
+      "name": "Pizza (1 Stück)",
+      "calories": 229,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 2708614,
+          "g": 86
+        }
+      ]
+    },
+    {
+      "name": "Gemüsesticks mit Hummus",
+      "calories": 160,
+      "emoji": "🥕",
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 100
+        },
+        {
+          "slug": "hummus"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Salsa statt Käse-Dip", "text": "Salsa hat nur ca. 20 kcal pro Portion vs. 150 kcal für Käse-Dip. Geschmacklich mindestens gleichwertig.", "icon": "🍅"},
-    {"title": "Portionsgröße beachten", "text": "Im Kino oder Restaurant sind Nachos-Portionen riesig (300-500g). Eine Handvoll (50g) als Snack reicht.", "icon": "✋"},
-    {"title": "Gebackene Tortilla-Chips wählen", "text": "Gebackene Chips haben ca. 30% weniger Fett als frittierte. Im Supermarkt auf 'ofengebacken' achten.", "icon": "🔥"},
-    {"title": "Selber machen", "text": "Tortillas in Dreiecke schneiden und im Ofen backen – deutlich weniger Fett als gekaufte Chips.", "icon": "👨‍🍳"},
-    {"title": "Protein-Toppings hinzufügen", "text": "Bohnen, Hähnchen oder Hackfleisch machen Nachos sättigender. So isst du insgesamt weniger Chips.", "icon": "💪"}
+    {
+      "title": "Salsa statt Käse-Dip",
+      "text": "Salsa (60g) hat nur ca. 17 kcal und ist damit viel leichter als Käse-Dip. Geschmacklich mindestens gleichwertig.",
+      "icon": "🍅"
+    },
+    {
+      "title": "Portionsgröße beachten",
+      "text": "Im Kino oder Restaurant sind Nachos-Portionen riesig (300 bis 500g). Eine Handvoll (50g) als Snack reicht.",
+      "icon": "✋"
+    },
+    {
+      "title": "Gebackene Tortilla-Chips wählen",
+      "text": "Fettreduzierte Tortilla-Chips haben laut FDC rund drei Viertel weniger Fett als normale (ca. 6 statt 22g pro 100g). Im Supermarkt auf 'ofengebacken' achten.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Selber machen",
+      "text": "Tortillas in Dreiecke schneiden und im Ofen backen, das bringt deutlich weniger Fett als gekaufte Chips.",
+      "icon": "👨‍🍳"
+    },
+    {
+      "title": "Protein-Toppings hinzufügen",
+      "text": "Bohnen, Hähnchen oder Hackfleisch machen Nachos sättigender. So isst du insgesamt weniger Chips.",
+      "icon": "💪"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Nachos?", "answer": "Eine Portion Nachos hat 480-980 kcal, je nach Größe und Toppings. Nachos pur: ca. 480 kcal/100g. Mit Käse-Dip: ca. 780 kcal, Loaded: ca. 980 kcal."},
-    {"question": "Sind Nachos ungesund?", "answer": "Nachos sind kalorienreich, fettreich und haben wenig Nährwert. Als gelegentlicher Snack in kleinen Mengen okay, aber nicht als regelmäßige Mahlzeit."},
-    {"question": "Wie viel Fett haben Nachos?", "answer": "Nachos enthalten 16-55g Fett pro Portion, je nach Toppings. Der Großteil kommt aus dem Frittieren der Chips und dem Käse-Dip."},
-    {"question": "Was hat weniger Kalorien: Nachos oder Chips?", "answer": "Pro 100g haben Nachos (480 kcal) und Kartoffelchips (536 kcal) ähnliche Werte. Der Unterschied liegt bei den Toppings."},
-    {"question": "Welche Nachos haben am wenigsten Kalorien?", "answer": "Gebackene Tortilla-Chips mit Salsa (ca. 420-520 kcal) sind die kalorienärmste Variante. Vermeide Käse-Dip und überbackene Versionen."},
-    {"question": "Wie viele Nachos sind eine Portion?", "answer": "Eine typische Snack-Portion sind ca. 30-50g (ca. 15-25 Chips, 150-240 kcal). Restaurant-Portionen sind oft 200-350g – das 4-7-fache."}
+    {
+      "question": "Wie viele Kalorien haben Nachos?",
+      "answer": "Eine Portion Nachos hat je nach Größe und Toppings ca. 426 bis 767 kcal. Nachos pur: ca. 497 kcal/100g. Mit Käse-Dip (200g): ca. 686 kcal, Loaded (350g): ca. 767 kcal."
+    },
+    {
+      "question": "Sind Nachos ungesund?",
+      "answer": "Nachos sind kalorienreich, fettreich und haben wenig Nährwert. Als gelegentlicher Snack in kleinen Mengen okay, aber nicht als regelmäßige Mahlzeit."
+    },
+    {
+      "question": "Wie viel Fett haben Nachos?",
+      "answer": "Nachos enthalten je nach Toppings ca. 6 bis 44g Fett pro Portion. Der Großteil kommt aus dem Frittieren der Chips und dem Käse-Dip."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Nachos oder Chips?",
+      "answer": "Pro 100g haben Tortilla-Chips (ca. 497 kcal) und Kartoffelchips (ca. 532 kcal) ähnliche Werte. Der Unterschied liegt bei den Toppings."
+    },
+    {
+      "question": "Welche Nachos haben am wenigsten Kalorien?",
+      "answer": "Fettreduzierte Tortilla-Chips mit Salsa (ca. 426 kcal) sind die kalorienärmste Variante. Vermeide Käse-Dip und überbackene Versionen."
+    },
+    {
+      "question": "Wie viele Nachos sind eine Portion?",
+      "answer": "Eine typische Snack-Portion sind ca. 30 bis 50g Tortilla-Chips (ca. 15 bis 25 Chips, rund 149 bis 249 kcal). Restaurant-Portionen sind oft 200 bis 350g, das 4- bis 7-fache."
+    }
   ],
-  "related_foods": ["chips", "quesadilla", "wrap", "pizza"]
+  "related_foods": [
+    "chips",
+    "quesadilla",
+    "wrap",
+    "pizza"
+  ]
 }

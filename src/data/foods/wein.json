@@ -3,52 +3,297 @@
   "name": "Wein",
   "emoji": "🍷",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 173185 (Alcoholic beverage, wine, table, all: 83 kcal), Werte je 100 g; je 100 ml mit 0,998 g/ml 83 kcal",
   "seo": {
-    "title": "Wein Kalorien: 80 kcal/100ml + Rechner | Mahlzait",
-    "description": "Wein hat ca. 80 kcal pro 100ml. Berechne Kalorien für Rotwein, Weißwein, Sekt und Glühwein mit dem kostenlosen Rechner. Plus Tipps.",
-    "keywords": ["wein kalorien", "kalorien wein", "rotwein kalorien", "weißwein kalorien", "sekt kalorien", "wein nährwerte", "wein zucker", "wein abnehmen"]
+    "title": "Wein Kalorien: 83 kcal/100ml + Rechner | Mahlzait",
+    "description": "Wein hat ca. 83 kcal pro 100ml. Berechne Kalorien für Rotwein, Weißwein, Sekt und Glühwein mit dem kostenlosen Rechner. Plus Tipps.",
+    "keywords": [
+      "wein kalorien",
+      "kalorien wein",
+      "rotwein kalorien",
+      "weißwein kalorien",
+      "sekt kalorien",
+      "wein nährwerte",
+      "wein zucker",
+      "wein abnehmen"
+    ]
   },
   "overview": {
-    "calories_per_100g": 80,
+    "calories_per_100g": 83,
     "protein_per_100g": 0.1,
-    "carbs_per_100g": 2.5,
+    "carbs_per_100g": 2.7,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Glas (200ml)"
   },
   "variants": [
-    { "name": "Rotwein trocken (200ml)", "portion_g": 200, "calories": 170, "protein": 0, "carbs": 5, "fat": 0 },
-    { "name": "Weißwein trocken (200ml)", "portion_g": 200, "calories": 152, "protein": 0, "carbs": 4, "fat": 0 },
-    { "name": "Roséwein (200ml)", "portion_g": 200, "calories": 160, "protein": 0, "carbs": 5, "fat": 0 },
-    { "name": "Weißwein lieblich (200ml)", "portion_g": 200, "calories": 180, "protein": 0, "carbs": 12, "fat": 0, "tip": "Mehr Restzucker = mehr kcal" },
-    { "name": "Sekt brut (200ml)", "portion_g": 200, "calories": 160, "protein": 0, "carbs": 4, "fat": 0 },
-    { "name": "Prosecco (200ml)", "portion_g": 200, "calories": 156, "protein": 0, "carbs": 4, "fat": 0 },
-    { "name": "Champagner brut (200ml)", "portion_g": 200, "calories": 162, "protein": 0, "carbs": 3, "fat": 0 },
-    { "name": "Glühwein rot (200ml)", "portion_g": 200, "calories": 200, "protein": 0, "carbs": 24, "fat": 0, "tip": "Plus Zucker" },
-    { "name": "Hugo / Aperol Spritz (200ml)", "portion_g": 200, "calories": 175, "protein": 0, "carbs": 18, "fat": 0 },
-    { "name": "Weinschorle 50/50 (250ml)", "portion_g": 250, "calories": 90, "protein": 0, "carbs": 3, "fat": 0, "tip": "Halbiert die Kalorien" }
+    {
+      "name": "Rotwein trocken (200ml)",
+      "portion_g": 199,
+      "calories": 169,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "wein-rot",
+          "ml": 200,
+          "g": 199
+        }
+      ]
+    },
+    {
+      "name": "Weißwein trocken (200ml)",
+      "portion_g": 199,
+      "calories": 163,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "wein-weiss",
+          "ml": 200,
+          "g": 199
+        }
+      ]
+    },
+    {
+      "name": "Roséwein (200ml)",
+      "portion_g": 205,
+      "calories": 170,
+      "protein": 1,
+      "carbs": 8,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 171908,
+          "ml": 200,
+          "g": 205
+        }
+      ]
+    },
+    {
+      "name": "Weißwein lieblich (200ml)",
+      "portion_g": 208,
+      "calories": 233,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "tip": "Spätlese (Late Harvest): mehr Restzucker = mehr kcal",
+      "basis": [
+        {
+          "fdcId": 173202,
+          "ml": 200,
+          "g": 208
+        }
+      ]
+    },
+    {
+      "name": "Sekt brut (200ml)",
+      "portion_g": 203,
+      "calories": 152,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 2710687,
+          "ml": 200,
+          "g": 203
+        }
+      ]
+    },
+    {
+      "name": "Prosecco (200ml)",
+      "portion_g": 203,
+      "calories": 152,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "prosecco",
+          "ml": 200,
+          "g": 203
+        }
+      ]
+    },
+    {
+      "name": "Champagner brut (200ml)",
+      "portion_g": 203,
+      "calories": 152,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "champagner",
+          "ml": 200,
+          "g": 203
+        }
+      ]
+    },
+    {
+      "name": "Glühwein rot (200ml)",
+      "portion_g": 200,
+      "calories": 200,
+      "protein": 0,
+      "carbs": 24,
+      "fat": 0,
+      "tip": "Plus Zucker",
+      "basis": [
+        {
+          "slug": "gluehwein",
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Aperol Spritz (200ml)",
+      "portion_g": 200,
+      "calories": 140,
+      "protein": 0,
+      "carbs": 16,
+      "fat": 0,
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Weinschorle 50/50 (250ml)",
+      "portion_g": 249,
+      "calories": 102,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "tip": "Halbiert die Kalorien",
+      "basis": [
+        {
+          "slug": "wein-weiss",
+          "ml": 125,
+          "g": 124
+        },
+        {
+          "slug": "mineralwasser",
+          "ml": 125,
+          "g": 125
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Bier (500ml)", "calories": 215, "emoji": "🍺" },
-    { "name": "Cocktail (200ml)", "calories": 280, "emoji": "🍹" },
-    { "name": "Apfelsaft (250ml)", "calories": 113, "emoji": "🧃" },
-    { "name": "Whisky (4cl)", "calories": 95, "emoji": "🥃" }
+    {
+      "name": "Bier (500ml)",
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Cocktail (200ml)",
+      "calories": 181,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "fdcId": 2710626,
+          "ml": 200,
+          "g": 203
+        }
+      ]
+    },
+    {
+      "name": "Apfelsaft (250ml)",
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Whisky (4cl)",
+      "calories": 88,
+      "emoji": "🥃",
+      "basis": [
+        {
+          "fdcId": 2710700,
+          "ml": 40,
+          "g": 38
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Trocken statt lieblich", "text": "Trockener Wein hat 4-5g Restzucker/L, lieblicher 30-50g/L. Macht pro Glas (200ml) bis zu 30 kcal Unterschied – über einen Abend schnell 100 kcal mehr.", "icon": "📉" },
-    { "title": "Schorle halbiert die Kalorien", "text": "Eine Weißweinschorle (50/50) hat nur 90 kcal pro 250ml statt 175 kcal pro 200ml puren Wein. Wasser füllt zusätzlich den Magen.", "icon": "💧" },
-    { "title": "Sekt hat weniger Kalorien als Wein", "text": "Sekt brut (160 kcal/200ml) ist meist kalorienärmer als Rotwein (170 kcal). Champagner brut sogar noch leicht kalorienärmer durch weniger Restzucker.", "icon": "🥂" },
-    { "title": "Cocktails sind Falle", "text": "Aperol Spritz (175 kcal) ist noch okay, aber Pina Colada oder Long Island Ice Tea sprengen schnell 400-500 kcal pro Glas. Wer Kalorien sparen will: Wein pur oder als Schorle.", "icon": "🍹" },
-    { "title": "Alkohol blockiert Fettverbrennung", "text": "Solange der Körper Alkohol abbaut (3-5h pro Glas), pausiert er die Fettverbrennung. Regelmäßiger Weinkonsum bremst Abnehmen merklich.", "icon": "⏸️" }
+    {
+      "title": "Trocken statt lieblich",
+      "text": "Trockener Wein hat 4-5g Restzucker/L, lieblicher 30-50g/L. Laut USDA macht das pro Glas (200ml) rund 70 kcal Unterschied, über einen Abend schnell 200 kcal mehr.",
+      "icon": "📉"
+    },
+    {
+      "title": "Schorle halbiert die Kalorien",
+      "text": "Eine Weißweinschorle (50/50) hat nur ca. 102 kcal pro 250ml statt ca. 163 kcal pro 200ml purem Weißwein. Wasser füllt zusätzlich den Magen.",
+      "icon": "💧"
+    },
+    {
+      "title": "Sekt hat weniger Kalorien als Wein",
+      "text": "Sekt brut (ca. 152 kcal/200ml) ist laut USDA kalorienärmer als Rotwein (ca. 169 kcal). Champagner brut liegt gleichauf, USDA führt für Schaumwein einen gemeinsamen Wert.",
+      "icon": "🥂"
+    },
+    {
+      "title": "Cocktails sind Falle",
+      "text": "Aperol Spritz ist noch okay, aber Pina Colada oder Long Island Ice Tea sind deutlich kalorienreicher. Wer Kalorien sparen will: Wein pur oder als Schorle.",
+      "icon": "🍹"
+    },
+    {
+      "title": "Alkohol blockiert Fettverbrennung",
+      "text": "Solange der Körper Alkohol abbaut (3-5h pro Glas), pausiert er die Fettverbrennung. Regelmäßiger Weinkonsum bremst Abnehmen merklich.",
+      "icon": "⏸️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Glas Wein?", "answer": "Ein Glas trockener Rotwein (200ml) hat ca. 170 kcal, Weißwein ca. 152 kcal, Sekt 160 kcal. Lieblicher Wein hat durch Restzucker bis zu 30 kcal mehr pro Glas." },
-    { "question": "Hat Rotwein oder Weißwein mehr Kalorien?", "answer": "Rotwein hat leicht mehr Kalorien (170 vs. 152 kcal pro 200ml), weil er meist etwas mehr Alkohol hat (12-14% vs. 11-12%). Der Unterschied ist klein." },
-    { "question": "Wie viele Kalorien hat eine Flasche Wein?", "answer": "Eine 0,75-Liter-Flasche Rotwein hat ca. 600 kcal, Weißwein ca. 570 kcal. Eine ganze Flasche Sekt entspricht 600-650 kcal – wie zwei Mahlzeiten." },
-    { "question": "Macht Wein dick?", "answer": "Ja, wenn regelmäßig: 2 Gläser pro Abend = 340 kcal extra. Plus: Alkohol blockiert die Fettverbrennung für mehrere Stunden. Wer abnehmen will, sollte Wein auf 1-2 Tage/Woche begrenzen." },
-    { "question": "Wie viele Kalorien hat eine Weinschorle?", "answer": "Eine Weißweinschorle 50/50 (250ml) hat ca. 90 kcal, sauere Schorle (1/3 Wein) sogar nur 60 kcal. Halbiert bzw. drittelt die Kalorien gegenüber purem Wein." },
-    { "question": "Welcher Wein hat am wenigsten Kalorien?", "answer": "Trockener Sekt brut oder Champagner brut (160 kcal/200ml) sind die kalorienärmsten regulären Weine. Noch besser: als Schorle trinken (90 kcal/250ml)." }
+    {
+      "question": "Wie viele Kalorien hat ein Glas Wein?",
+      "answer": "Ein Glas trockener Rotwein (200ml) hat laut USDA ca. 169 kcal, Weißwein ca. 163 kcal, Sekt ca. 152 kcal. Lieblicher Wein (Spätlese) hat durch Restzucker rund 70 kcal mehr pro Glas."
+    },
+    {
+      "question": "Hat Rotwein oder Weißwein mehr Kalorien?",
+      "answer": "Rotwein hat leicht mehr Kalorien (ca. 169 vs. 163 kcal pro 200ml), weil er laut USDA etwas mehr Alkohol enthält (10,6 g vs. 10,3 g pro 100g). Der Unterschied ist klein."
+    },
+    {
+      "question": "Wie viele Kalorien hat eine Flasche Wein?",
+      "answer": "Eine 0,75-Liter-Flasche Rotwein hat ca. 634 kcal, Weißwein ca. 611 kcal. Eine ganze Flasche Sekt entspricht ca. 571 kcal, so viel wie eine Mahlzeit."
+    },
+    {
+      "question": "Macht Wein dick?",
+      "answer": "Ja, wenn regelmäßig: 2 Gläser pro Abend = ca. 332 kcal extra. Plus: Alkohol blockiert die Fettverbrennung für mehrere Stunden. Wer abnehmen will, sollte Wein auf 1-2 Tage/Woche begrenzen."
+    },
+    {
+      "question": "Wie viele Kalorien hat eine Weinschorle?",
+      "answer": "Eine Weißweinschorle 50/50 (250ml) hat ca. 102 kcal, saure Schorle (1/3 Wein) sogar nur ca. 68 kcal. Halbiert bzw. drittelt die Kalorien gegenüber purem Wein."
+    },
+    {
+      "question": "Welcher Wein hat am wenigsten Kalorien?",
+      "answer": "Trockener Sekt brut oder Champagner brut (ca. 152 kcal/200ml) sind die kalorienärmsten regulären Weine. Noch besser: als Schorle trinken (ca. 102 kcal/250ml)."
+    }
   ],
-  "related_foods": ["gluehwein", "wein-rot", "wein-weiss", "aperol-spritz"]
+  "related_foods": [
+    "gluehwein",
+    "wein-rot",
+    "wein-weiss",
+    "aperol-spritz"
+  ]
 }

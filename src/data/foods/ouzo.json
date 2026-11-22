@@ -3,9 +3,10 @@
   "name": "Ouzo",
   "emoji": "🥃",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 174815 (Alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof: 231 kcal), Werte je 100 g; je 100 ml mit 0,94 g/ml 217 kcal",
   "seo": {
     "title": "Ouzo Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Ouzo? Ein 2cl-Gläschen hat ca. 45 kcal, 100 ml rund 225 kcal. Nährwerte, Portionen im Vergleich & Tipps zum Genuss.",
+    "description": "Wie viele Kalorien hat Ouzo? Ein 2cl-Gläschen hat ca. 44 kcal, 100 ml rund 217 kcal. Nährwerte, Portionen im Vergleich & Tipps zum Genuss.",
     "keywords": [
       "ouzo kalorien",
       "ouzo kcal",
@@ -16,86 +17,125 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 225,
+    "calories_per_100g": 231,
     "protein_per_100g": 0,
-    "carbs_per_100g": 3,
+    "carbs_per_100g": 0,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 20,
+    "typical_portion_g": 19,
     "typical_portion_name": "1 Gläschen (2 cl)"
   },
   "variants": [
     {
       "name": "Ouzo 2 cl (Gläschen)",
-      "portion_g": 20,
-      "calories": 45,
+      "portion_g": 19,
+      "calories": 44,
       "protein": 0,
-      "carbs": 0.6,
+      "carbs": 0,
       "fat": 0,
       "tip": "Standard-Portion in der Bar"
     },
     {
       "name": "Ouzo 4 cl (Doppelter)",
-      "portion_g": 40,
-      "calories": 90,
+      "portion_g": 38,
+      "calories": 88,
       "protein": 0,
-      "carbs": 1.2,
+      "carbs": 0,
       "fat": 0
     },
     {
       "name": "Ouzo 5 cl (großes Glas)",
-      "portion_g": 50,
-      "calories": 112,
+      "portion_g": 47,
+      "calories": 109,
       "protein": 0,
-      "carbs": 1.5,
+      "carbs": 0,
       "fat": 0
     },
     {
-      "name": "Ouzo mit Wasser (2 cl + Wasser)",
-      "portion_g": 20,
-      "calories": 45,
+      "name": "Ouzo mit Wasser (2 cl + 4 cl Wasser)",
+      "portion_g": 59,
+      "calories": 44,
       "protein": 0,
-      "carbs": 0.6,
+      "carbs": 0,
       "fat": 0,
-      "tip": "Wasser fügt keine Kalorien hinzu"
+      "tip": "Wasser fügt keine Kalorien hinzu",
+      "basis": [
+        {
+          "ml": 20,
+          "g": 19
+        },
+        {
+          "fdcId": 173647,
+          "ml": 40,
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Ouzo pro 100 ml",
-      "portion_g": 100,
-      "calories": 225,
+      "portion_g": 94,
+      "calories": 217,
       "protein": 0,
-      "carbs": 3,
+      "carbs": 0,
       "fat": 0
     },
     {
       "name": "Ouzo Flasche (0,7 l)",
-      "portion_g": 700,
-      "calories": 1575,
+      "portion_g": 658,
+      "calories": 1520,
       "protein": 0,
-      "carbs": 21,
+      "carbs": 0,
       "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Wodka (2 cl)",
-      "calories": 46,
-      "emoji": "🍸"
+      "calories": 44,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "wodka",
+          "ml": 20,
+          "g": 19
+        }
+      ]
     },
     {
       "name": "Prosecco (0,1 l)",
-      "calories": 80,
-      "emoji": "🥂"
+      "calories": 76,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "prosecco",
+          "ml": 100,
+          "g": 101
+        }
+      ]
     },
     {
       "name": "Bier (0,33 l)",
-      "calories": 140,
-      "emoji": "🍺"
+      "calories": 142,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
       "name": "Aperol Spritz (0,2 l)",
-      "calories": 145,
-      "emoji": "🍹"
+      "calories": 140,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 200,
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
@@ -111,12 +151,12 @@
     },
     {
       "title": "Auf die Menge achten",
-      "text": "Ein 2cl-Gläschen hat nur 45 kcal, doch mehrere Gläschen summieren sich schnell. Eine ganze 0,7-l-Flasche kommt auf etwa 1575 kcal.",
+      "text": "Ein 2cl-Gläschen hat nur 44 kcal, doch mehrere Gläschen summieren sich schnell. Eine ganze 0,7-l-Flasche kommt auf etwa 1520 kcal.",
       "icon": "🔢"
     },
     {
       "title": "Kaum Kohlenhydrate",
-      "text": "Mit nur etwa 3 g Kohlenhydraten pro 100 ml ist Ouzo relativ zuckerarm. Süße Cocktails und Liköre enthalten oft ein Vielfaches.",
+      "text": "Laut USDA-Wert für Spirituosen enthält Ouzo praktisch keine Kohlenhydrate, manche Sorten sind leicht gezuckert. Süße Cocktails und Liköre enthalten deutlich mehr Zucker.",
       "icon": "🍬"
     },
     {
@@ -128,15 +168,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Ouzo?",
-      "answer": "Ein klassisches Gläschen Ouzo (2 cl) hat etwa 45 kcal. Pro 100 ml kommt Ouzo auf rund 225 kcal, da er etwa 40 % Alkohol enthält."
+      "answer": "Ein klassisches Gläschen Ouzo (2 cl) hat etwa 44 kcal. Pro 100 ml kommt Ouzo auf rund 217 kcal, da er etwa 40 % Alkohol enthält."
     },
     {
       "question": "Wie viele Kalorien hat ein Gläschen Ouzo?",
-      "answer": "Ein Standard-Gläschen mit 2 cl hat ca. 45 kcal, ein doppeltes (4 cl) rund 90 kcal."
+      "answer": "Ein Standard-Gläschen mit 2 cl hat ca. 44 kcal, ein doppeltes (4 cl) rund 88 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Ouzo?",
-      "answer": "Ouzo enthält etwa 3 g Kohlenhydrate pro 100 ml, also nur rund 0,6 g pro 2cl-Gläschen. Diese stammen aus dem geringen Zuckeranteil."
+      "answer": "Laut USDA-Wert für Spirituosen mit 40 % vol praktisch keine. Manche Ouzo-Sorten sind leicht gezuckert, der genaue Wert steht auf dem Etikett."
     },
     {
       "question": "Hat Ouzo Eiweiß oder Fett?",
@@ -144,7 +184,7 @@
     },
     {
       "question": "Ist Ouzo zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Ouzo ist mit 225 kcal pro 100 ml recht energiereich und der Alkohol bremst die Fettverbrennung. In kleinen Mengen lässt er sich aber in eine bewusste Ernährung einbauen."
+      "answer": "Nur bedingt. Ouzo ist mit rund 217 kcal pro 100 ml recht energiereich und der Alkohol bremst die Fettverbrennung. In kleinen Mengen lässt er sich aber in eine bewusste Ernährung einbauen."
     },
     {
       "question": "Ist Ouzo gesund?",

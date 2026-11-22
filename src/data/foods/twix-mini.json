@@ -3,9 +3,10 @@
   "name": "Twix Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 168768 (Candies, MARS SNACKFOOD US, TWIX Caramel Cookie Bars), Werte je 100 g",
   "seo": {
     "title": "Twix Mini Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Twix Mini? Ein Riegel (20g) hat ca. 99 kcal. Alle Nährwerte pro 100g & Stück, Vergleich und Snack-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Twix Mini? Ein Riegel (20g) hat ca. 100 kcal. Alle Nährwerte pro 100g & Stück, Vergleich und Snack-Tipps im Überblick.",
     "keywords": [
       "twix mini kalorien",
       "twix minis kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 493,
-    "protein_per_100g": 4.6,
-    "carbs_per_100g": 65,
-    "fat_per_100g": 24,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 502,
+    "protein_per_100g": 4.9,
+    "carbs_per_100g": 64.8,
+    "fat_per_100g": 24.9,
+    "fiber_per_100g": 1.1,
     "typical_portion_g": 20,
     "typical_portion_name": "1 Twix Mini (20g)"
   },
@@ -28,7 +29,7 @@
     {
       "name": "1 Twix Mini (20g)",
       "portion_g": 20,
-      "calories": 99,
+      "calories": 100,
       "protein": 1,
       "carbs": 13,
       "fat": 5,
@@ -37,7 +38,7 @@
     {
       "name": "2 Twix Minis (40g)",
       "portion_g": 40,
-      "calories": 197,
+      "calories": 201,
       "protein": 2,
       "carbs": 26,
       "fat": 10
@@ -45,32 +46,32 @@
     {
       "name": "3 Twix Minis (60g)",
       "portion_g": 60,
-      "calories": 296,
+      "calories": 301,
       "protein": 3,
       "carbs": 39,
-      "fat": 14
+      "fat": 15
     },
     {
       "name": "Handvoll (5 Stück, 100g)",
       "portion_g": 100,
-      "calories": 493,
+      "calories": 502,
       "protein": 5,
       "carbs": 65,
-      "fat": 24
+      "fat": 25
     },
     {
       "name": "Beutel (227g)",
       "portion_g": 227,
-      "calories": 1119,
-      "protein": 10,
-      "carbs": 148,
-      "fat": 54,
+      "calories": 1140,
+      "protein": 11,
+      "carbs": 147,
+      "fat": 57,
       "tip": "ganze Packung"
     },
     {
       "name": "Twix Standard-Riegel (1 Stück, 25g)",
       "portion_g": 25,
-      "calories": 123,
+      "calories": 126,
       "protein": 1,
       "carbs": 16,
       "fat": 6,
@@ -79,30 +80,53 @@
   ],
   "comparison": [
     {
-      "name": "Twix Standard (1 Riegel)",
-      "calories": 123,
-      "emoji": "🍫"
-    },
-    {
       "name": "Snickers Mini (1 Stück)",
-      "calories": 91,
-      "emoji": "🥜"
+      "calories": 88,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "snickers-mini"
+        }
+      ]
     },
     {
-      "name": "Mars Mini (1 Stück)",
-      "calories": 80,
-      "emoji": "🍫"
+      "name": "KitKat (2 Finger, 21g)",
+      "calories": 109,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 167992,
+          "g": 21
+        }
+      ]
     },
     {
-      "name": "Bounty Mini (1 Stück)",
-      "calories": 142,
-      "emoji": "🥥"
+      "name": "Schokoriegel mit Kokosfüllung (28g)",
+      "calories": 140,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "fdcId": 2710343,
+          "g": 28
+        }
+      ]
+    },
+    {
+      "name": "Vollmilchschokolade (20g)",
+      "calories": 107,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 20
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion bewusst wählen",
-      "text": "Ein einzelner Twix Mini liefert rund 99 kcal. Wer nur einen statt einer Handvoll nimmt, bleibt deutlich unter 100 kcal pro Nascherei.",
+      "text": "Ein einzelner Twix Mini liefert rund 100 kcal. Wer nur einen statt einer Handvoll nimmt, bleibt bei rund 100 kcal pro Nascherei.",
       "icon": "🍫"
     },
     {
@@ -112,7 +136,7 @@
     },
     {
       "title": "Reine Genussportion",
-      "text": "Mit 24g Fett und 493 kcal pro 100g ist Twix Mini energiedicht. Am besten als kleine, geplante Belohnung statt als Dauersnack.",
+      "text": "Mit 25g Fett und 502 kcal pro 100g ist Twix Mini energiedicht. Am besten als kleine, geplante Belohnung statt als Dauersnack.",
       "icon": "⚖️"
     },
     {
@@ -129,11 +153,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Twix Mini?",
-      "answer": "Ein einzelner Twix Mini (20g) hat ca. 99 kcal. Pro 100g sind es 493 kcal."
+      "answer": "Ein einzelner Twix Mini (20g) hat ca. 100 kcal. Pro 100g sind es 502 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Twix Mini im Vergleich zum normalen Twix?",
-      "answer": "Ein Twix Mini (20g) hat ca. 99 kcal, ein einzelner Standard-Twix-Riegel (25g) etwa 123 kcal. Beide haben pro 100g denselben Brennwert von 493 kcal."
+      "answer": "Ein Twix Mini (20g) hat ca. 100 kcal, ein einzelner Standard-Twix-Riegel (25g) etwa 126 kcal. Beide haben pro 100g denselben Brennwert von 502 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Twix Mini?",
@@ -141,11 +165,11 @@
     },
     {
       "question": "Wie viel Protein hat Twix Mini?",
-      "answer": "Der Proteingehalt ist gering: 4,6g pro 100g, also rund 1g je Mini-Riegel. Twix Mini ist kein Eiweißlieferant."
+      "answer": "Der Proteingehalt ist gering: 4,9g pro 100g, also rund 1g je Mini-Riegel. Twix Mini ist kein Eiweißlieferant."
     },
     {
       "question": "Ist Twix Mini zum Abnehmen geeignet?",
-      "answer": "Twix Mini ist mit 493 kcal und 48g Zucker pro 100g energiedicht und nährstoffarm. In einer Diät passt ein einzelner Mini als bewusste kleine Belohnung, größere Mengen erschweren das Kaloriendefizit."
+      "answer": "Twix Mini ist mit 502 kcal und 48g Zucker pro 100g energiedicht und nährstoffarm. In einer Diät passt ein einzelner Mini als bewusste kleine Belohnung, größere Mengen erschweren das Kaloriendefizit."
     },
     {
       "question": "Ist Twix Mini gesund?",

@@ -3,9 +3,10 @@
   "name": "20er Nuggets",
   "emoji": "🍗",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 173297 (McDONALD'S, Chicken McNUGGETS), Werte je 100 g",
   "seo": {
     "title": "20er Nuggets Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben 20er Nuggets? Eine 20er-Box McNuggets hat ca. 928 kcal. Nährwerte pro 100g & Portion, Vergleich und Tipps.",
+    "description": "Wie viele Kalorien haben 20er Nuggets? Eine 20er-Box McNuggets hat ca. 966 kcal. Nährwerte pro 100g & Portion, Vergleich und Tipps.",
     "keywords": [
       "20er nuggets kalorien",
       "20 nuggets kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 15,
-    "carbs_per_100g": 16,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 302,
+    "protein_per_100g": 15.8,
+    "carbs_per_100g": 15.1,
+    "fat_per_100g": 19.8,
+    "fiber_per_100g": null,
     "typical_portion_g": 320,
     "typical_portion_name": "1 Box mit 20 Nuggets (320g)"
   },
@@ -28,132 +29,165 @@
     {
       "name": "1 Nugget (16g)",
       "portion_g": 16,
-      "calories": 46,
-      "protein": 2,
-      "carbs": 3,
+      "calories": 48,
+      "protein": 3,
+      "carbs": 2,
       "fat": 3
     },
     {
       "name": "4er Nuggets (64g)",
       "portion_g": 64,
-      "calories": 186,
+      "calories": 193,
       "protein": 10,
       "carbs": 10,
-      "fat": 12
+      "fat": 13
     },
     {
       "name": "6er Nuggets (96g)",
       "portion_g": 96,
-      "calories": 278,
-      "protein": 14,
-      "carbs": 15,
-      "fat": 17
+      "calories": 290,
+      "protein": 15,
+      "carbs": 14,
+      "fat": 19
     },
     {
       "name": "9er Nuggets (144g)",
       "portion_g": 144,
-      "calories": 418,
-      "protein": 22,
-      "carbs": 23,
-      "fat": 26
+      "calories": 435,
+      "protein": 23,
+      "carbs": 22,
+      "fat": 29
     },
     {
       "name": "20er Nuggets (320g)",
       "portion_g": 320,
-      "calories": 928,
-      "protein": 48,
-      "carbs": 51,
-      "fat": 58,
+      "calories": 966,
+      "protein": 51,
+      "carbs": 48,
+      "fat": 63,
       "tip": "Standard-Box"
     },
     {
       "name": "20er Nuggets ohne Sauce",
       "portion_g": 320,
-      "calories": 928,
-      "protein": 48,
-      "carbs": 51,
-      "fat": 58,
-      "tip": "Sauce spart je nach Sorte 40 bis 100 kcal extra"
+      "calories": 966,
+      "protein": 51,
+      "carbs": 48,
+      "fat": 63,
+      "tip": "Ohne Dip: spart rund 43 kcal je süß-saurer Sauce"
     },
     {
       "name": "20er Nuggets + 2 süß-sauer Saucen",
-      "portion_g": 380,
-      "calories": 1028,
-      "protein": 48,
-      "carbs": 75,
-      "fat": 58,
-      "tip": "Jede süß-saure Sauce bringt rund 50 kcal zusätzlich"
+      "portion_g": 376,
+      "calories": 1053,
+      "protein": 51,
+      "carbs": 70,
+      "fat": 63,
+      "tip": "Jede süß-saure Sauce (28 g) bringt rund 43 kcal zusätzlich",
+      "basis": [
+        {
+          "g": 320
+        },
+        {
+          "fdcId": 2710296,
+          "g": 56
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Pommes frites (große Portion)",
-      "calories": 444,
-      "emoji": "🍟"
+      "calories": 497,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 170721,
+          "g": 154
+        }
+      ]
     },
     {
-      "name": "Cheeseburger",
-      "calories": 300,
-      "emoji": "🍔"
+      "name": "Cheeseburger (McDonald's)",
+      "calories": 313,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170320,
+          "g": 119
+        }
+      ]
     },
     {
       "name": "Fischstäbchen (6 Stück)",
-      "calories": 360,
-      "emoji": "🐟"
+      "calories": 499,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "fischstaebchen",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust (200g)",
       "calories": 330,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Die ganze Box ist eine volle Mahlzeit",
-      "text": "Mit rund 928 kcal liegt eine 20er-Box auf dem Niveau einer kompletten Hauptmahlzeit. Zum Teilen für zwei Personen geeignet, als Snack für eine Person ist sie reichlich.",
+      "text": "Mit rund 966 kcal liegt eine 20er-Box auf dem Niveau einer kompletten Hauptmahlzeit. Zum Teilen für zwei Personen geeignet, als Snack für eine Person ist sie reichlich.",
       "icon": "🍗"
     },
     {
       "title": "Saucen separat einrechnen",
-      "text": "Die Nährwerte gelten für die Nuggets allein. Süß-saure oder Curry-Sauce bringen je etwa 50 kcal zusätzlich, Mayo-basierte Dips deutlich mehr.",
+      "text": "Die Nährwerte gelten für die Nuggets allein. Eine süß-saure Sauce (28 g) bringt etwa 43 kcal zusätzlich, Mayo-basierte Dips deutlich mehr.",
       "icon": "🥫"
     },
     {
       "title": "Fett kommt vor allem aus der Panade",
-      "text": "Etwa 18g Fett pro 100g stammen größtenteils aus dem frittierten Teigmantel. Selbst im Backofen statt in der Fritteuse zubereitete Nuggets sparen spürbar Fett.",
+      "text": "Etwa 20g Fett pro 100g stammen größtenteils aus dem frittierten Teigmantel. Selbst im Backofen statt in der Fritteuse zubereitete Nuggets sparen spürbar Fett.",
       "icon": "🔥"
     },
     {
       "title": "Eiweiß ist solide, aber kein Schlankmacher",
-      "text": "20 Nuggets liefern rund 48g Protein. Das sättigt zwar, der hohe Fettanteil macht sie für eine kalorienbewusste Ernährung aber weniger ideal als pures Hähnchenfleisch.",
+      "text": "20 Nuggets liefern rund 51g Protein. Das sättigt zwar, der hohe Fettanteil macht sie für eine kalorienbewusste Ernährung aber weniger ideal als pures Hähnchenfleisch.",
       "icon": "💪"
     },
     {
       "title": "Kleinere Box wählen",
-      "text": "Wer die Lust auf Nuggets stillen, aber Kalorien sparen möchte, greift zur 6er- oder 9er-Box. Eine 9er-Box hat mit ca. 418 kcal weniger als die Hälfte der 20er-Variante.",
+      "text": "Wer die Lust auf Nuggets stillen, aber Kalorien sparen möchte, greift zur 6er- oder 9er-Box. Eine 9er-Box hat mit ca. 435 kcal weniger als die Hälfte der 20er-Variante.",
       "icon": "📦"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben 20er Nuggets?",
-      "answer": "Eine Box mit 20 Chicken McNuggets (ca. 320g) hat rund 928 kcal. Das entspricht etwa 290 kcal pro 100g."
+      "answer": "Eine Box mit 20 Chicken McNuggets (ca. 320g) hat rund 966 kcal. Das entspricht etwa 302 kcal pro 100g."
     },
     {
       "question": "Wie viele Kalorien hat ein einzelnes Nugget?",
-      "answer": "Ein einzelnes Nugget wiegt etwa 16g und hat rund 46 kcal. Die Werte können je nach Größe leicht schwanken."
+      "answer": "Ein einzelnes Nugget wiegt etwa 16g und hat rund 48 kcal. Die Werte können je nach Größe leicht schwanken."
     },
     {
       "question": "Wie viel Eiweiß steckt in 20 Nuggets?",
-      "answer": "20 Nuggets liefern etwa 48g Protein, also rund 15g pro 100g. Damit decken sie einen ordentlichen Teil des Tagesbedarfs."
+      "answer": "20 Nuggets liefern etwa 51g Protein, also rund 16g pro 100g. Damit decken sie einen ordentlichen Teil des Tagesbedarfs."
     },
     {
       "question": "Wie viele Kohlenhydrate haben 20er Nuggets?",
-      "answer": "In einer 20er-Box stecken etwa 51g Kohlenhydrate (16g pro 100g). Sie stammen hauptsächlich aus der Panade. Saucen erhöhen den Wert zusätzlich."
+      "answer": "In einer 20er-Box stecken etwa 48g Kohlenhydrate (15g pro 100g). Sie stammen hauptsächlich aus der Panade. Saucen erhöhen den Wert zusätzlich."
     },
     {
       "question": "Sind Nuggets zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit rund 18g Fett pro 100g sind Nuggets recht kalorienreich. In einer Diät besser eine kleine Box wählen oder zu magerem Hähnchenfleisch greifen."
+      "answer": "Nur bedingt. Mit rund 20g Fett pro 100g sind Nuggets recht kalorienreich. In einer Diät besser eine kleine Box wählen oder zu magerem Hähnchenfleisch greifen."
     },
     {
       "question": "Sind Chicken Nuggets gesund?",

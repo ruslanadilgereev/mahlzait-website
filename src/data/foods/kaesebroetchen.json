@@ -3,9 +3,10 @@
   "name": "Käsebrötchen",
   "emoji": "🧀",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2707660 (Roll, cheese), Werte je 100 g",
   "seo": {
     "title": "Käsebrötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Käsebrötchen? Ein Stück (95g) hat ca. 266 kcal. Nährwerte pro 100g & Stück, Eiweiß, Kohlenhydrate und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Käsebrötchen? Ein Stück (95g) hat ca. 299 kcal. Nährwerte pro 100g & Stück, Eiweiß, Kohlenhydrate und Diät-Tipps.",
     "keywords": [
       "kaesebroetchen kalorien",
       "broetchen mit kaese kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 280,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 38,
-    "fat_per_100g": 9.5,
-    "fiber_per_100g": 2.2,
+    "calories_per_100g": 315,
+    "protein_per_100g": 11.5,
+    "carbs_per_100g": 49.6,
+    "fat_per_100g": 7.9,
+    "fiber_per_100g": 1.9,
     "typical_portion_g": 95,
     "typical_portion_name": "1 Käsebrötchen (mittel)"
   },
@@ -29,74 +30,89 @@
     {
       "name": "Käsebrötchen klein (70g)",
       "portion_g": 70,
-      "calories": 196,
+      "calories": 221,
       "protein": 8,
-      "carbs": 27,
-      "fat": 7
+      "carbs": 35,
+      "fat": 6
     },
     {
       "name": "Käsebrötchen mittel (95g)",
       "portion_g": 95,
-      "calories": 266,
-      "protein": 10,
-      "carbs": 36,
-      "fat": 9,
+      "calories": 299,
+      "protein": 11,
+      "carbs": 47,
+      "fat": 8,
       "tip": "Standard beim Bäcker"
     },
     {
       "name": "Käsebrötchen groß (120g)",
       "portion_g": 120,
-      "calories": 336,
-      "protein": 13,
-      "carbs": 46,
-      "fat": 11
-    },
-    {
-      "name": "Belegtes Käsebrötchen (Brötchen + Scheibe Gouda)",
-      "portion_g": 110,
-      "calories": 290,
-      "protein": 15,
-      "carbs": 33,
-      "fat": 10,
-      "tip": "Mit Käsescheibe belegt"
-    },
-    {
-      "name": "Laugen-Käsebrötchen (100g)",
-      "portion_g": 100,
-      "calories": 285,
-      "protein": 11,
-      "carbs": 39,
+      "calories": 378,
+      "protein": 14,
+      "carbs": 60,
       "fat": 9
+    },
+    {
+      "name": "Belegtes Käsebrötchen (Brötchen 60g + Scheibe Gouda 30g)",
+      "portion_g": 90,
+      "calories": 283,
+      "protein": 13,
+      "carbs": 32,
+      "fat": 11,
+      "tip": "Mit Käsescheibe belegt",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        },
+        {
+          "slug": "kaese-gouda",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Mini-Käsebrötchen (40g)",
       "portion_g": 40,
-      "calories": 112,
-      "protein": 4,
-      "carbs": 15,
-      "fat": 4
+      "calories": 126,
+      "protein": 5,
+      "carbs": 20,
+      "fat": 3
     }
   ],
   "comparison": [
     {
       "name": "Brötchen (ohne Käse, 50g)",
-      "calories": 134,
-      "emoji": "🥖"
+      "calories": 147,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Croissant (60g)",
-      "calories": 246,
-      "emoji": "🥐"
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Brezel (80g)",
-      "calories": 220,
-      "emoji": "🥨"
-    },
-    {
-      "name": "Laugenstange (90g)",
-      "calories": 252,
-      "emoji": "🥨"
+      "calories": 270,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 80
+        }
+      ]
     }
   ],
   "tips": [
@@ -107,7 +123,7 @@
     },
     {
       "title": "Auf die Portion achten",
-      "text": "Ein mittleres Käsebrötchen hat rund 266 kcal. Schon ein großes Exemplar liegt bei über 330 kcal – das entspricht einer kleinen Mahlzeit.",
+      "text": "Ein mittleres Käsebrötchen hat rund 299 kcal. Schon ein großes Exemplar liegt bei rund 378 kcal, das entspricht einer kleinen Mahlzeit.",
       "icon": "⚖️"
     },
     {
@@ -129,23 +145,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Käsebrötchen?",
-      "answer": "Ein mittelgroßes Käsebrötchen (95g) hat ca. 266 kcal. Kleine Brötchen (70g) liegen bei etwa 196 kcal, große (120g) bei rund 336 kcal."
+      "answer": "Ein mittelgroßes Käsebrötchen (95g) hat ca. 299 kcal. Kleine Brötchen (70g) liegen bei etwa 221 kcal, große (120g) bei rund 378 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Käsebrötchen pro 100g?",
-      "answer": "Ein überbackenes Käsebrötchen hat im Schnitt rund 280 kcal pro 100g – etwas mehr als ein normales Brötchen, da der Käse zusätzlich Fett und Eiweiß liefert."
+      "answer": "Ein überbackenes Käsebrötchen hat im Schnitt rund 315 kcal pro 100g, etwas mehr als ein normales Brötchen, da der Käse zusätzlich Fett und Eiweiß liefert."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Käsebrötchen?",
-      "answer": "Pro 100g enthält ein Käsebrötchen etwa 38g Kohlenhydrate. Ein mittleres Stück (95g) kommt damit auf rund 36g – sie stammen überwiegend aus dem Weizenmehl."
+      "answer": "Pro 100g enthält ein Käsebrötchen etwa 50g Kohlenhydrate. Ein mittleres Stück (95g) kommt damit auf rund 47g, sie stammen überwiegend aus dem Weizenmehl."
     },
     {
       "question": "Wie viel Eiweiß hat ein Käsebrötchen?",
-      "answer": "Ein Käsebrötchen liefert rund 11g Eiweiß pro 100g. Ein mittleres Stück enthält also etwa 10g – mehr als ein einfaches Brötchen dank des überbackenen Käses."
+      "answer": "Ein Käsebrötchen liefert rund 11g Eiweiß pro 100g. Ein mittleres Stück enthält also etwa 11g, mehr als ein einfaches Brötchen dank des überbackenen Käses."
     },
     {
       "question": "Ist ein Käsebrötchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 266 kcal pro Stück passt es in eine ausgewogene Ernährung, ist aber kein Leichtgewicht. Kombiniert mit Gemüse und in passender Portionsgröße lässt es sich gut einplanen."
+      "answer": "In Maßen ja. Mit rund 299 kcal pro Stück passt es in eine ausgewogene Ernährung, ist aber kein Leichtgewicht. Kombiniert mit Gemüse und in passender Portionsgröße lässt es sich gut einplanen."
     },
     {
       "question": "Ist ein Käsebrötchen gesund?",

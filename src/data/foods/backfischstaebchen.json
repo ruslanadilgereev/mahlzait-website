@@ -3,9 +3,10 @@
   "name": "Backfischstäbchen",
   "emoji": "🐟",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174195 (Fish, fish sticks, frozen, prepared), Werte je 100 g",
   "seo": {
     "title": "Backfischstäbchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Backfischstäbchen? Ca. 252 kcal pro 100g, rund 76 kcal je Stäbchen. Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
+    "description": "Wie viele Kalorien haben Backfischstäbchen? Ca. 277 kcal pro 100g, rund 83 kcal je Stäbchen. Nährwerte, Portionen & Tipps zum Abnehmen im Überblick.",
     "keywords": [
       "backfischstäbchen kalorien",
       "backfischstäbchen kcal",
@@ -15,11 +16,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 252,
+    "calories_per_100g": 277,
     "protein_per_100g": 11,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 0.9,
+    "carbs_per_100g": 21.7,
+    "fat_per_100g": 16.2,
+    "fiber_per_100g": 1.5,
     "typical_portion_g": 90,
     "typical_portion_name": "3 Stäbchen (Portion)"
   },
@@ -27,86 +28,101 @@
     {
       "name": "1 Backfischstäbchen (30g)",
       "portion_g": 30,
-      "calories": 76,
+      "calories": 83,
       "protein": 3,
-      "carbs": 6,
-      "fat": 4
+      "carbs": 7,
+      "fat": 5
     },
     {
       "name": "3 Stäbchen / Portion (90g)",
       "portion_g": 90,
-      "calories": 227,
+      "calories": 249,
       "protein": 10,
-      "carbs": 18,
-      "fat": 13,
+      "carbs": 20,
+      "fat": 15,
       "tip": "Übliche Mahlzeit-Portion"
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 252,
+      "calories": 277,
       "protein": 11,
-      "carbs": 20,
-      "fat": 14,
+      "carbs": 22,
+      "fat": 16,
       "tip": "Referenzwert"
-    },
-    {
-      "name": "Im Ofen statt Pfanne (90g)",
-      "portion_g": 90,
-      "calories": 205,
-      "protein": 10,
-      "carbs": 18,
-      "fat": 11,
-      "tip": "Weniger Fett ohne Bratöl"
     },
     {
       "name": "Halbe Packung (150g)",
       "portion_g": 150,
-      "calories": 378,
+      "calories": 416,
       "protein": 17,
-      "carbs": 30,
-      "fat": 21
+      "carbs": 33,
+      "fat": 24
     },
     {
       "name": "Ganze Packung (300g)",
       "portion_g": 300,
-      "calories": 756,
+      "calories": 831,
       "protein": 33,
-      "carbs": 60,
-      "fat": 42
+      "carbs": 65,
+      "fat": 49
     }
   ],
   "comparison": [
     {
       "name": "Fischstäbchen (3 Stk, 90g)",
-      "calories": 200,
-      "emoji": "🐟"
+      "calories": 249,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "fischstaebchen",
+          "g": 90
+        }
+      ]
     },
     {
       "name": "Backfisch (90g)",
-      "calories": 250,
-      "emoji": "🍤"
+      "calories": 197,
+      "emoji": "🍤",
+      "basis": [
+        {
+          "slug": "backfisch",
+          "g": 90
+        }
+      ]
     },
     {
       "name": "Chicken Nuggets (90g)",
-      "calories": 270,
-      "emoji": "🍗"
+      "calories": 276,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-nuggets",
+          "g": 90
+        }
+      ]
     },
     {
       "name": "Pommes frites (90g)",
-      "calories": 290,
-      "emoji": "🍟"
+      "calories": 281,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "slug": "pommes-frites",
+          "g": 90
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Im Ofen sparen Kalorien",
-      "text": "Im Backofen oder Airfryer zubereitet, kommt kein zusätzliches Bratfett dazu. Das spart pro Portion rund 20 kcal gegenüber der Pfanne.",
+      "text": "Im Backofen oder Airfryer zubereitet, kommt kein zusätzliches Bratfett dazu. Das spart Kalorien gegenüber der Pfanne.",
       "icon": "🔥"
     },
     {
       "title": "Mit Gemüse strecken",
-      "text": "Eine Portion Backfischstäbchen (227 kcal) liefert wenig Volumen. Mit Salat, Erbsen oder Kartoffeln auf dem Teller wird die Mahlzeit sättigender, ohne dass viele Kalorien dazukommen.",
+      "text": "Eine Portion Backfischstäbchen (249 kcal) liefert wenig Volumen. Mit Salat, Erbsen oder Kartoffeln auf dem Teller wird die Mahlzeit sättigender, ohne dass viele Kalorien dazukommen.",
       "icon": "🥗"
     },
     {
@@ -128,15 +144,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Backfischstäbchen?",
-      "answer": "Backfischstäbchen haben zubereitet rund 252 kcal pro 100g. Ein einzelnes Stäbchen (ca. 30g) liefert etwa 76 kcal, eine Portion aus drei Stäbchen rund 227 kcal."
+      "answer": "Backfischstäbchen haben zubereitet rund 277 kcal pro 100g. Ein einzelnes Stäbchen (ca. 30g) liefert etwa 83 kcal, eine Portion aus drei Stäbchen rund 249 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Backfischstäbchen?",
-      "answer": "Ein Backfischstäbchen wiegt etwa 30g und hat rund 76 kcal. Drei Stäbchen, die übliche Portion, kommen auf etwa 227 kcal."
+      "answer": "Ein Backfischstäbchen wiegt etwa 30g und hat rund 83 kcal. Drei Stäbchen, die übliche Portion, kommen auf etwa 249 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Backfischstäbchen?",
-      "answer": "Backfischstäbchen enthalten rund 20g Kohlenhydrate pro 100g. Diese stammen fast vollständig aus dem Backteig, der Zuckeranteil ist mit unter 1g sehr gering."
+      "answer": "Backfischstäbchen enthalten rund 22g Kohlenhydrate pro 100g. Diese stammen fast vollständig aus dem Backteig, der Zuckeranteil ist mit rund 1,7g sehr gering."
     },
     {
       "question": "Wie viel Eiweiß haben Backfischstäbchen?",
@@ -144,7 +160,7 @@
     },
     {
       "question": "Sind Backfischstäbchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit 252 kcal pro 100g sind sie kalorienreicher als purer Fisch, vor allem durch den fettreichen Backteig. Im Ofen zubereitet und mit Salat kombiniert passen sie aber gut in eine kalorienbewusste Ernährung."
+      "answer": "In Maßen ja. Mit 277 kcal pro 100g sind sie kalorienreicher als purer Fisch, vor allem durch den fettreichen Backteig. Im Ofen zubereitet und mit Salat kombiniert passen sie aber gut in eine kalorienbewusste Ernährung."
     },
     {
       "question": "Sind Backfischstäbchen gesund?",

@@ -3,9 +3,10 @@
   "name": "Debreziner",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174585 (Sausage, smoked link sausage, pork and beef), Werte je 100 g",
   "seo": {
     "title": "Debreziner Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Debreziner? Ein Würstchen (80g) hat ca. 232 kcal, 100g rund 290 kcal. Nährwerte, Eiweiß & Fett pro Portion im Überblick.",
+    "description": "Wie viele Kalorien hat Debreziner? Ein Würstchen (80g) hat ca. 256 kcal, 100g rund 320 kcal. Nährwerte, Eiweiß & Fett pro Portion im Überblick.",
     "keywords": [
       "debreziner kalorien",
       "debreziner kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 13.5,
-    "carbs_per_100g": 1.5,
-    "fat_per_100g": 26,
+    "calories_per_100g": 320,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 2.4,
+    "fat_per_100g": 28.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Debreziner (80g)"
@@ -28,88 +29,121 @@
     {
       "name": "1 Debreziner (80g)",
       "portion_g": 80,
-      "calories": 232,
-      "protein": 11,
-      "carbs": 1,
-      "fat": 21,
+      "calories": 256,
+      "protein": 10,
+      "carbs": 2,
+      "fat": 23,
       "tip": "Standardgröße"
     },
     {
       "name": "Halbe Debreziner (40g)",
       "portion_g": 40,
-      "calories": 116,
+      "calories": 128,
       "protein": 5,
       "carbs": 1,
-      "fat": 10
+      "fat": 11
     },
     {
       "name": "Paar Debreziner (2 Stück, 160g)",
       "portion_g": 160,
-      "calories": 464,
-      "protein": 22,
-      "carbs": 2,
-      "fat": 42
+      "calories": 512,
+      "protein": 19,
+      "carbs": 4,
+      "fat": 46
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 290,
-      "protein": 14,
+      "calories": 320,
+      "protein": 12,
       "carbs": 2,
-      "fat": 26
+      "fat": 29
     },
     {
       "name": "Mini-Debreziner (50g)",
       "portion_g": 50,
-      "calories": 145,
-      "protein": 7,
+      "calories": 160,
+      "protein": 6,
       "carbs": 1,
-      "fat": 13
+      "fat": 14
     },
     {
       "name": "3 Stück (240g)",
       "portion_g": 240,
-      "calories": 696,
-      "protein": 32,
-      "carbs": 4,
-      "fat": 62
+      "calories": 768,
+      "protein": 29,
+      "carbs": 6,
+      "fat": 69
     },
     {
       "name": "Debreziner mit Brötchen (80g + 50g)",
       "portion_g": 130,
-      "calories": 366,
-      "protein": 16,
-      "carbs": 26,
-      "fat": 22,
-      "tip": "Mit Semmel als Snack"
+      "calories": 403,
+      "protein": 15,
+      "carbs": 28,
+      "fat": 25,
+      "tip": "Mit Semmel als Snack",
+      "basis": [
+        {
+          "g": 80
+        },
+        {
+          "slug": "broetchen",
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Bockwurst",
-      "calories": 250,
-      "emoji": "🌭"
+      "name": "Bockwurst (1 Stück, 100g)",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Wiener Würstchen",
-      "calories": 270,
-      "emoji": "🌭"
+      "name": "Wiener Würstchen (1 Stück, 50g)",
+      "calories": 135,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "wiener-wuerstchen",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Bratwurst",
-      "calories": 290,
-      "emoji": "🌭"
+      "name": "Bratwurst (1 Stück, 150g)",
+      "calories": 500,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Käsekrainer",
-      "calories": 320,
-      "emoji": "🧀"
+      "name": "Käsekrainer (1 Stück, 130g)",
+      "calories": 426,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesekrainer",
+          "g": 130
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißlieferant mit viel Fett",
-      "text": "Eine Debreziner (80g) liefert rund 11g Eiweiß, bringt aber auch etwa 21g Fett mit. Sie sättigt gut, sollte aber nicht die einzige Eiweißquelle sein.",
+      "text": "Eine Debreziner (80g) liefert knapp 10g Eiweiß, bringt aber auch etwa 23g Fett mit. Sie sättigt gut, sollte aber nicht die einzige Eiweißquelle sein.",
       "icon": "💪"
     },
     {
@@ -129,30 +163,30 @@
     },
     {
       "title": "Portion bewusst halten",
-      "text": "Ein Paar Debreziner kommt bereits auf rund 464 kcal. Wer abnimmt, bleibt besser bei einem Würstchen und füllt den Teller mit Gemüse auf.",
+      "text": "Ein Paar Debreziner kommt bereits auf rund 512 kcal. Wer abnimmt, bleibt besser bei einem Würstchen und füllt den Teller mit Gemüse auf.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Debreziner?",
-      "answer": "Ein einzelnes Debreziner-Würstchen (ca. 80g) hat rund 232 kcal. Pro 100g sind es etwa 290 kcal."
+      "answer": "Ein einzelnes Debreziner-Würstchen (ca. 80g) hat rund 256 kcal. Pro 100g sind es etwa 320 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Paar Debreziner?",
-      "answer": "Ein Paar Debreziner (2 Stück, ca. 160g) liefert rund 464 kcal."
+      "answer": "Ein Paar Debreziner (2 Stück, ca. 160g) liefert rund 512 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in Debreziner?",
-      "answer": "Debreziner enthält etwa 13,5g Eiweiß pro 100g. Ein Würstchen (80g) bringt damit rund 11g Eiweiß."
+      "answer": "Debreziner enthält etwa 12g Eiweiß pro 100g. Ein Würstchen (80g) bringt damit knapp 10g Eiweiß."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Debreziner?",
-      "answer": "Debreziner ist sehr kohlenhydratarm: nur etwa 1,5g pro 100g. Damit passt sie gut in eine Low-Carb-Ernährung."
+      "answer": "Debreziner ist sehr kohlenhydratarm: nur etwa 2,4g pro 100g. Damit passt sie gut in eine Low-Carb-Ernährung."
     },
     {
       "question": "Ist Debreziner zum Abnehmen geeignet?",
-      "answer": "Durch den hohen Fettanteil von rund 26g pro 100g ist Debreziner kalorienreich. In Maßen und mit Gemüse als Beilage lässt sie sich aber auch beim Abnehmen einbauen."
+      "answer": "Durch den hohen Fettanteil von rund 29g pro 100g ist Debreziner kalorienreich. In Maßen und mit Gemüse als Beilage lässt sie sich aber auch beim Abnehmen einbauen."
     },
     {
       "question": "Ist Debreziner gesund?",

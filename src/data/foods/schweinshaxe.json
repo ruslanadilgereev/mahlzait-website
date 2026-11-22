@@ -3,9 +3,10 @@
   "name": "Schweinshaxe",
   "emoji": "🍖",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 168227 (Pork, fresh, leg (ham), shank half, separable lean and fat, cooked, roasted), Werte je 100 g",
   "seo": {
     "title": "Schweinshaxe Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Schweinshaxe? Gebackene Haxe hat ca. 290 kcal pro 100g. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat eine Schweinshaxe? Gebratene Haxe hat ca. 232 kcal pro 100g. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps.",
     "keywords": [
       "schweinshaxe kalorien",
       "schweinshaxe kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 24,
+    "calories_per_100g": 232,
+    "protein_per_100g": 26,
     "carbs_per_100g": 0,
-    "fat_per_100g": 21,
+    "fat_per_100g": 13.4,
     "fiber_per_100g": 0,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Schweinshaxe (Fleischanteil, Restaurantportion)"
@@ -29,92 +30,93 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 435,
-      "protein": 36,
+      "calories": 348,
+      "protein": 39,
       "carbs": 0,
-      "fat": 32
+      "fat": 20
     },
     {
       "name": "Mittlere Portion (250g)",
       "portion_g": 250,
-      "calories": 725,
-      "protein": 60,
+      "calories": 580,
+      "protein": 65,
       "carbs": 0,
-      "fat": 53
+      "fat": 34
     },
     {
       "name": "Restaurantportion (350g)",
       "portion_g": 350,
-      "calories": 1015,
-      "protein": 84,
+      "calories": 812,
+      "protein": 91,
       "carbs": 0,
-      "fat": 74,
+      "fat": 47,
       "tip": "Typische Wirtshaus-Portion (nur Fleisch)"
-    },
-    {
-      "name": "Schweinshaxe mit Knochen (500g)",
-      "portion_g": 500,
-      "calories": 1450,
-      "protein": 120,
-      "carbs": 0,
-      "fat": 105,
-      "tip": "Ganze Haxe inkl. nicht essbarem Knochen"
-    },
-    {
-      "name": "Gekochtes Eisbein, ohne Kruste (250g)",
-      "portion_g": 250,
-      "calories": 575,
-      "protein": 53,
-      "carbs": 0,
-      "fat": 40,
-      "tip": "Gekocht statt knusprig gebacken, deutlich weniger Fett pro 100g"
     },
     {
       "name": "Haxenfleisch ohne Haut (200g)",
       "portion_g": 200,
-      "calories": 380,
-      "protein": 56,
+      "calories": 350,
+      "protein": 57,
       "carbs": 0,
-      "fat": 18,
-      "tip": "Ohne knusprige Schwarte spart man viel Fett"
+      "fat": 12,
+      "tip": "Ohne knusprige Schwarte spart man viel Fett",
+      "basis": [
+        {
+          "fdcId": 168229,
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Schweinebraten (300g)",
-      "calories": 750,
-      "emoji": "🍖"
+      "calories": 543,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "schweinebraten",
+          "g": 300
+        }
+      ]
     },
     {
       "name": "Schnitzel paniert (250g)",
-      "calories": 625,
-      "emoji": "🍴"
+      "calories": 595,
+      "emoji": "🍴",
+      "basis": [
+        {
+          "slug": "schnitzel",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust (300g)",
       "calories": 495,
-      "emoji": "🍗"
-    },
-    {
-      "name": "Schweinshaxe (350g)",
-      "calories": 1015,
-      "emoji": "🍖"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 300
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kruste macht den Unterschied",
-      "text": "Die knusprige Schwarte besteht fast nur aus Fett. Lässt man sie weg, sinkt der Kaloriengehalt pro 100g von rund 290 auf etwa 190 kcal.",
+      "text": "Schwarte und Fettrand bestehen fast nur aus Fett. Lässt man sie weg, sinkt der Kaloriengehalt pro 100g von rund 232 auf etwa 175 kcal.",
       "icon": "🔥"
     },
     {
-      "title": "Eisbein statt Krustenhaxe",
-      "text": "Gekochtes Eisbein ohne Kruste hat mit ca. 230 kcal pro 100g weniger Fett als die gebackene Haxe und liefert trotzdem reichlich Eiweiß.",
+      "title": "Mageres Haxenfleisch",
+      "text": "Das magere Fleisch der Haxe ohne Schwarte liefert rund 29g Eiweiß pro 100g bei nur etwa 5,8g Fett.",
       "icon": "💧"
     },
     {
       "title": "Eiweißreich und sättigend",
-      "text": "Mit rund 24g Protein pro 100g zählt die Schweinshaxe zu den eiweißreichsten Gerichten der deutschen Küche und hält lange satt.",
+      "text": "Mit rund 26g Protein pro 100g zählt die Schweinshaxe zu den eiweißreichsten Gerichten der deutschen Küche und hält lange satt.",
       "icon": "💪"
     },
     {
@@ -124,22 +126,22 @@
     },
     {
       "title": "Portionsgröße im Blick behalten",
-      "text": "Eine ganze Restaurant-Haxe kann über 1000 kcal liefern. Eine halbe Portion teilen oder Reste mitnehmen hilft beim Kaloriensparen.",
+      "text": "Eine Restaurant-Haxe mit 350g Fleisch liefert rund 812 kcal. Eine halbe Portion teilen oder Reste mitnehmen hilft beim Kaloriensparen.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Schweinshaxe?",
-      "answer": "Gebackene Schweinshaxe mit Kruste hat etwa 290 kcal pro 100g. Eine typische Restaurantportion mit rund 350g Fleisch liefert ca. 1015 kcal."
+      "answer": "Gebratene Schweinshaxe (Fleisch mit Fett) hat etwa 232 kcal pro 100g. Eine typische Restaurantportion mit rund 350g Fleisch liefert ca. 812 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Schweinshaxe pro 100g?",
-      "answer": "Eine knusprig gebackene Schweinshaxe hat rund 290 kcal pro 100g. Ohne die fettreiche Kruste sind es nur etwa 190 kcal pro 100g."
+      "answer": "Eine gebratene Schweinshaxe hat rund 232 kcal pro 100g. Nur das magere Fleisch ohne Schwarte und Fettrand hat etwa 175 kcal pro 100g."
     },
     {
       "question": "Wie viel Protein hat Schweinshaxe?",
-      "answer": "Schweinshaxe ist sehr eiweißreich: Sie liefert etwa 24g Protein pro 100g. Eine 350g-Portion enthält rund 84g Eiweiß."
+      "answer": "Schweinshaxe ist sehr eiweißreich: Sie liefert etwa 26g Protein pro 100g. Eine 350g-Portion enthält rund 91g Eiweiß."
     },
     {
       "question": "Hat Schweinshaxe Kohlenhydrate?",
@@ -147,7 +149,7 @@
     },
     {
       "question": "Ist Schweinshaxe zum Abnehmen geeignet?",
-      "answer": "Durch den hohen Fettanteil ist die gebackene Haxe sehr kalorienreich. Wer abnehmen möchte, sollte die Kruste weglassen, auf gekochtes Eisbein ausweichen und die Portion klein halten."
+      "answer": "Durch den hohen Fettanteil ist die gebratene Haxe sehr kalorienreich. Wer abnehmen möchte, sollte die Kruste weglassen, das magere Fleisch bevorzugen und die Portion klein halten."
     },
     {
       "question": "Ist Schweinshaxe gesund?",

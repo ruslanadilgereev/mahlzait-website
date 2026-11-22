@@ -3,9 +3,10 @@
   "name": "Brötchen mit Käse",
   "emoji": "🧀",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2705794 (Cheese sandwich, NFS), Werte je 100 g",
   "seo": {
     "title": "Brötchen mit Käse Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Brötchen mit Käse? Ein belegtes Brötchen (80g) hat ca. 256 kcal. Nährwerte pro 100g & Portion plus Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Brötchen mit Käse? Ein belegtes Brötchen (80g) hat ca. 238 kcal. Nährwerte pro 100g & Portion plus Diät-Tipps im Überblick.",
     "keywords": [
       "brötchen mit käse kalorien",
       "käsebrötchen kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 320,
-    "protein_per_100g": 13.5,
-    "carbs_per_100g": 32,
-    "fat_per_100g": 15,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 297,
+    "protein_per_100g": 12.5,
+    "carbs_per_100g": 31.9,
+    "fat_per_100g": 13.3,
+    "fiber_per_100g": 1.4,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Brötchen mit Käse"
   },
@@ -28,96 +29,137 @@
     {
       "name": "Halbes Brötchen mit Käse (40g)",
       "portion_g": 40,
-      "calories": 128,
-      "protein": 5.4,
+      "calories": 119,
+      "protein": 5,
       "carbs": 12.8,
-      "fat": 6,
+      "fat": 5.3,
       "tip": "Kleiner Snack"
     },
     {
       "name": "1 Brötchen mit Käse (80g)",
       "portion_g": 80,
-      "calories": 256,
-      "protein": 10.8,
-      "carbs": 25.6,
-      "fat": 12,
+      "calories": 238,
+      "protein": 10,
+      "carbs": 25.5,
+      "fat": 10.6,
       "tip": "Standard"
     },
     {
-      "name": "Käsebrötchen ohne Butter (75g)",
-      "portion_g": 75,
-      "calories": 222,
-      "protein": 10.8,
+      "name": "Brötchen mit Käse und Butter (85g)",
+      "portion_g": 85,
+      "calories": 273,
+      "protein": 10,
       "carbs": 25.5,
-      "fat": 8.3,
-      "tip": "Leichter"
-    },
-    {
-      "name": "Vollkornbrötchen mit Käse (75g)",
-      "portion_g": 75,
-      "calories": 209,
-      "protein": 11.3,
-      "carbs": 21.5,
-      "fat": 8.3,
-      "tip": "Mehr Ballaststoffe"
+      "fat": 14.7,
+      "tip": "Mit 5g Butter",
+      "basis": [
+        {
+          "g": 80
+        },
+        {
+          "fdcId": 173410,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Großes Brötchen mit Käse (100g)",
       "portion_g": 100,
-      "calories": 320,
-      "protein": 13.5,
-      "carbs": 32,
-      "fat": 15
+      "calories": 297,
+      "protein": 12.5,
+      "carbs": 31.9,
+      "fat": 13.3
     },
     {
       "name": "Doppelt mit Käse belegt (110g)",
       "portion_g": 110,
-      "calories": 352,
-      "protein": 14.8,
-      "carbs": 35.2,
-      "fat": 16.5
+      "calories": 344,
+      "protein": 17.5,
+      "carbs": 26.2,
+      "fat": 18.9,
+      "basis": [
+        {
+          "g": 80
+        },
+        {
+          "fdcId": 171241,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "2 Brötchen mit Käse (160g)",
       "portion_g": 160,
-      "calories": 512,
-      "protein": 21.6,
-      "carbs": 51.2,
-      "fat": 24,
+      "calories": 475,
+      "protein": 20,
+      "carbs": 51,
+      "fat": 21.3,
       "tip": "Sattes Frühstück"
     }
   ],
   "comparison": [
     {
-      "name": "Brötchen pur",
-      "calories": 133,
-      "emoji": "🥖"
+      "name": "Brötchen pur (60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "fdcId": 175031,
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Brötchen mit Marmelade",
-      "calories": 185,
-      "emoji": "🍓"
+      "name": "Brötchen mit Marmelade (80g)",
+      "calories": 231,
+      "emoji": "🍓",
+      "basis": [
+        {
+          "fdcId": 175031,
+          "g": 60
+        },
+        {
+          "fdcId": 169641,
+          "g": 20
+        }
+      ]
     },
     {
-      "name": "Brötchen mit Wurst",
-      "calories": 245,
-      "emoji": "🥓"
+      "name": "Brötchen mit Wurst (Lyoner, 80g)",
+      "calories": 232,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "fdcId": 175031,
+          "g": 60
+        },
+        {
+          "fdcId": 2706176,
+          "g": 20
+        }
+      ]
     },
     {
-      "name": "Croissant",
-      "calories": 230,
-      "emoji": "🥐"
+      "name": "Croissant (1 Stück, 65g)",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 65
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Käse liefert Eiweiß",
-      "text": "Der Käse macht das Brötchen zur sättigenden Eiweißquelle: Ein belegtes Brötchen (80g) bringt rund 11g Protein und hält dadurch länger satt als ein süßes Frühstück.",
+      "text": "Der Käse macht das Brötchen zur sättigenden Eiweißquelle: Ein belegtes Brötchen (80g) bringt rund 10g Protein und hält dadurch länger satt als ein süßes Frühstück.",
       "icon": "💪"
     },
     {
       "title": "Butter weglassen spart Fett",
-      "text": "Ohne Butterschicht sinken die Kalorien von etwa 256 auf rund 222 kcal pro Brötchen. Frischkäse statt Butter ist eine noch leichtere Alternative.",
+      "text": "Eine dünne Butterschicht (5g) bringt rund 36 kcal extra: Mit Butter hat das Brötchen etwa 273 kcal, ohne rund 238 kcal. Frischkäse statt Butter ist eine noch leichtere Alternative.",
       "icon": "🧈"
     },
     {
@@ -139,23 +181,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Brötchen mit Käse?",
-      "answer": "Ein klassisch mit Butter und einer Scheibe Käse belegtes Brötchen (ca. 80g) hat rund 256 kcal. Ohne Butter sind es etwa 222 kcal."
+      "answer": "Ein Brötchen mit Käse (ca. 80g) hat rund 238 kcal. Mit einer dünnen Schicht Butter (5g) sind es etwa 273 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Käsebrötchen pro 100g?",
-      "answer": "Pro 100g hat ein fertig belegtes Brötchen mit Käse etwa 320 kcal, 13,5g Eiweiß, 32g Kohlenhydrate und 15g Fett."
+      "answer": "Pro 100g hat ein fertig belegtes Brötchen mit Käse etwa 297 kcal, 12,5g Eiweiß, 31,9g Kohlenhydrate und 13,3g Fett."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Brötchen mit Käse?",
-      "answer": "Ein belegtes Brötchen (80g) liefert etwa 11g Eiweiß. Den Großteil davon steuert der Käse bei, das Brötchen selbst trägt nur einen kleinen Teil bei."
+      "answer": "Ein belegtes Brötchen (80g) liefert etwa 10g Eiweiß. Den Großteil davon steuert der Käse bei, das Brötchen selbst trägt nur einen kleinen Teil bei."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Brötchen mit Käse?",
-      "answer": "Ein Brötchen mit Käse enthält pro Stück (80g) rund 26g Kohlenhydrate, die fast vollständig aus dem Brötchen stammen. Käse selbst ist kohlenhydratarm."
+      "answer": "Ein Brötchen mit Käse enthält pro Stück (80g) rund 25,5g Kohlenhydrate, die fast vollständig aus dem Brötchen stammen. Käse selbst ist kohlenhydratarm."
     },
     {
       "question": "Ist ein Brötchen mit Käse zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Mit rund 256 kcal passt es in eine ausgewogene Ernährung. Wer Kalorien sparen will, lässt die Butter weg, wählt mageren Käse oder ein Vollkornbrötchen."
+      "answer": "In Maßen ja: Mit rund 238 kcal passt es in eine ausgewogene Ernährung. Wer Kalorien sparen will, lässt die Butter weg, wählt mageren Käse oder ein Vollkornbrötchen."
     },
     {
       "question": "Ist ein Brötchen mit Käse gesund?",

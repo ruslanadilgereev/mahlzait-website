@@ -3,47 +3,208 @@
   "name": "Putenbrust",
   "emoji": "🍗",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174515 (Turkey, retail parts, breast, meat only, raw), Werte je 100 g",
   "seo": {
     "title": "Putenbrust Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Putenbrust? Nährwerte für roh, gebraten, als Aufschnitt & geräuchert. Rechner mit Portionsgrößen."
   },
   "overview": {
-    "calories_per_100g": 111,
-    "protein_per_100g": 24,
+    "calories_per_100g": 114,
+    "protein_per_100g": 23.3,
     "carbs_per_100g": 0,
-    "fat_per_100g": 1.5,
+    "fat_per_100g": 2.3,
     "fiber_per_100g": 0,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Putensteak"
   },
   "variants": [
-    {"name": "Putenbrust roh", "portion_g": 150, "calories": 167, "protein": 36, "carbs": 0, "fat": 2.3, "tip": "Magerste Fleischsorte"},
-    {"name": "Putenbrust gebraten", "portion_g": 150, "calories": 225, "protein": 37.5, "carbs": 0, "fat": 7.5, "tip": "Plus Bratfett einrechnen"},
-    {"name": "Putenbrust gegrillt", "portion_g": 150, "calories": 195, "protein": 37.5, "carbs": 0, "fat": 4.5, "tip": "Weniger Fett als Pfanne"},
-    {"name": "Putenbrustaufschnitt", "portion_g": 30, "calories": 31, "protein": 6, "carbs": 0.3, "fat": 0.6, "tip": "3 Scheiben fürs Brot"},
-    {"name": "Putenbrust geräuchert", "portion_g": 100, "calories": 120, "protein": 24, "carbs": 0.5, "fat": 2, "tip": "Aromatisch und mager"},
-    {"name": "Putenschnitzel paniert", "portion_g": 200, "calories": 420, "protein": 38, "carbs": 22, "fat": 20, "tip": "Panade verdoppelt die Kalorien"}
+    {
+      "name": "Putenbrust roh",
+      "portion_g": 150,
+      "calories": 171,
+      "protein": 35,
+      "carbs": 0,
+      "fat": 3.5,
+      "tip": "Magerste Fleischsorte"
+    },
+    {
+      "name": "Putenbrust gebraten",
+      "portion_g": 150,
+      "calories": 204,
+      "protein": 44.3,
+      "carbs": 0,
+      "fat": 3,
+      "tip": "Plus Bratfett einrechnen",
+      "basis": [
+        {
+          "fdcId": 174516,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Putenbrust gegrillt",
+      "portion_g": 150,
+      "calories": 204,
+      "protein": 44.3,
+      "carbs": 0,
+      "fat": 3,
+      "basis": [
+        {
+          "fdcId": 174516,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Putenbrustaufschnitt",
+      "portion_g": 30,
+      "calories": 32,
+      "protein": 4.4,
+      "carbs": 0.7,
+      "fat": 1.1,
+      "tip": "3 Scheiben fürs Brot",
+      "basis": [
+        {
+          "fdcId": 172941,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Putenbrust geräuchert",
+      "portion_g": 100,
+      "calories": 95,
+      "protein": 20.9,
+      "carbs": 1.3,
+      "fat": 0.7,
+      "tip": "Aromatisch und mager",
+      "basis": [
+        {
+          "fdcId": 174612,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Putenschnitzel paniert",
+      "portion_g": 200,
+      "calories": 346,
+      "protein": 54.5,
+      "carbs": 12.9,
+      "fat": 7.4,
+      "tip": "Panade und Bratfett erhöhen die Kalorien deutlich",
+      "basis": [
+        {
+          "fdcId": 2706107,
+          "g": 200
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
-    {"name": "Schweinefleisch", "calories": 242, "emoji": "🥩"},
-    {"name": "Rindfleisch", "calories": 250, "emoji": "🥩"},
-    {"name": "Lachs", "calories": 208, "emoji": "🐟"}
+    {
+      "name": "Hähnchenbrust roh (150g)",
+      "calories": 180,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 171077,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Schweinefleisch roh (150g)",
+      "calories": 324,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 167888,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Rindfleisch roh (150g)",
+      "calories": 323,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 169483,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Lachs roh (150g)",
+      "calories": 312,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs",
+          "g": 150
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Kalorienärmstes Fleisch", "text": "Putenbrust hat mit 111 kcal pro 100g weniger Kalorien als fast jedes andere Fleisch – sogar weniger als Hähnchenbrust.", "icon": "🏆"},
-    {"title": "Nicht zu lange braten", "text": "Putenbrust wird schnell trocken. 3-4 Minuten pro Seite bei mittlerer Hitze reichen – saftiger und weniger Fett nötig.", "icon": "🍳"},
-    {"title": "Als Aufschnitt ideal", "text": "Putenbrustaufschnitt hat nur 103 kcal pro 100g und ist einer der kalorienärmsten Brotbeläge.", "icon": "🍞"},
-    {"title": "Meal-Prep tauglich", "text": "Putenbrust hält im Kühlschrank 2-3 Tage und eignet sich perfekt zum Vorkochen für die ganze Woche.", "icon": "📦"},
-    {"title": "Würzen statt panieren", "text": "Kräuter, Paprika und Knoblauch statt Panade – gleicher Geschmack, 200 kcal weniger pro Portion.", "icon": "🌿"}
+    {
+      "title": "Kalorienärmstes Fleisch",
+      "text": "Putenbrust hat mit 114 kcal pro 100g weniger Kalorien als fast jedes andere Fleisch, sogar etwas weniger als Hähnchenbrust (roh 120 kcal).",
+      "icon": "🏆"
+    },
+    {
+      "title": "Nicht zu lange braten",
+      "text": "Putenbrust wird schnell trocken. 3-4 Minuten pro Seite bei mittlerer Hitze reichen, das hält sie saftiger und braucht weniger Fett.",
+      "icon": "🍳"
+    },
+    {
+      "title": "Als Aufschnitt ideal",
+      "text": "Putenbrustaufschnitt hat nur 106 kcal pro 100g und ist einer der kalorienärmsten Brotbeläge.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Meal-Prep tauglich",
+      "text": "Putenbrust hält im Kühlschrank 2-3 Tage und eignet sich perfekt zum Vorkochen für die ganze Woche.",
+      "icon": "📦"
+    },
+    {
+      "title": "Würzen statt panieren",
+      "text": "Kräuter, Paprika und Knoblauch statt Panade: gleicher Geschmack, rund 74 kcal weniger pro 200-g-Portion.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Putenbrust?", "answer": "Putenbrust hat ca. 111 kcal pro 100g (roh). Gebraten ca. 150 kcal/100g. Ein ganzes Putensteak (150g) hat 167-225 kcal je nach Zubereitung."},
-    {"question": "Ist Putenbrust gut zum Abnehmen?", "answer": "Hervorragend. Mit 111 kcal und 24g Protein pro 100g hat Putenbrust eines der besten Protein-Kalorien-Verhältnisse aller Lebensmittel."},
-    {"question": "Was ist besser: Puten- oder Hähnchenbrust?", "answer": "Putenbrust ist etwas kalorienärmer (111 vs. 165 kcal) und fettärmer. Geschmacklich ist Hähnchenbrust saftiger. Beide sind exzellente Proteinquellen."},
-    {"question": "Wie viel Protein hat Putenbrust?", "answer": "Putenbrust liefert 24g Protein pro 100g. Ein 150g-Steak hat 36g Protein – fast die Hälfte des Tagesbedarfs."},
-    {"question": "Ist Putenbrustaufschnitt gesund?", "answer": "Kalorienarm und proteinreich, ja. Aber: Aufschnitt enthält oft Salz, Nitritpökelsalz und Zusatzstoffe. Lieber selbst zubereitete Putenbrust aufschneiden."},
-    {"question": "Wie viel Putenbrust pro Mahlzeit?", "answer": "125-200g sind eine gute Portion. Das liefert 30-48g Protein bei nur 139-222 kcal. Genug für eine sättigende Mahlzeit mit Beilage."}
+    {
+      "question": "Wie viele Kalorien hat Putenbrust?",
+      "answer": "Putenbrust hat ca. 114 kcal pro 100g (roh). Gebraten ca. 136 kcal/100g. Ein ganzes Putensteak (150g) hat 171-204 kcal je nach Zubereitung, Bratfett nicht eingerechnet."
+    },
+    {
+      "question": "Ist Putenbrust gut zum Abnehmen?",
+      "answer": "Hervorragend. Mit 114 kcal und 23g Protein pro 100g hat Putenbrust eines der besten Protein-Kalorien-Verhältnisse aller Lebensmittel."
+    },
+    {
+      "question": "Was ist besser: Puten- oder Hähnchenbrust?",
+      "answer": "Putenbrust ist minimal kalorienärmer (114 vs. 120 kcal pro 100g, jeweils roh) und etwas fettärmer. Geschmacklich ist Hähnchenbrust saftiger. Beide sind exzellente Proteinquellen."
+    },
+    {
+      "question": "Wie viel Protein hat Putenbrust?",
+      "answer": "Putenbrust liefert 23g Protein pro 100g. Ein 150g-Steak hat 35g Protein, fast die Hälfte des Tagesbedarfs."
+    },
+    {
+      "question": "Ist Putenbrustaufschnitt gesund?",
+      "answer": "Kalorienarm und proteinreich, ja. Aber: Aufschnitt enthält oft Salz, Nitritpökelsalz und Zusatzstoffe. Lieber selbst zubereitete Putenbrust aufschneiden."
+    },
+    {
+      "question": "Wie viel Putenbrust pro Mahlzeit?",
+      "answer": "125-200g sind eine gute Portion. Das liefert rund 29-47g Protein bei nur 143-228 kcal. Genug für eine sättigende Mahlzeit mit Beilage."
+    }
   ],
-  "related_foods": ["haehnchenbrust", "putengeschnetzeltes", "reis", "kartoffeln"]
+  "related_foods": [
+    "haehnchenbrust",
+    "putengeschnetzeltes",
+    "reis",
+    "kartoffeln"
+  ]
 }

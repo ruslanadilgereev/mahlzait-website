@@ -3,9 +3,10 @@
   "name": "Kurkuma",
   "emoji": "🟡",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 172231 (Spices, turmeric, ground), Werte je 100 g",
   "seo": {
     "title": "Kurkuma Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kurkuma? Kurkumapulver hat ca. 354 kcal pro 100g, ein Teelöffel nur ca. 11 kcal. Nährwerte, Portionen & Tipps.",
+    "description": "Wie viele Kalorien hat Kurkuma? Kurkumapulver hat ca. 312 kcal pro 100g, ein Teelöffel nur ca. 9 kcal. Nährwerte, Portionen & Tipps.",
     "keywords": [
       "kurkuma kcal",
       "kurkuma kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 354,
-    "protein_per_100g": 7.8,
-    "carbs_per_100g": 64.9,
-    "fat_per_100g": 9.9,
-    "fiber_per_100g": 21.1,
+    "calories_per_100g": 312,
+    "protein_per_100g": 9.7,
+    "carbs_per_100g": 67.1,
+    "fat_per_100g": 3.3,
+    "fiber_per_100g": 22.7,
     "typical_portion_g": 3,
     "typical_portion_name": "1 TL Kurkumapulver (3g)"
   },
@@ -38,52 +39,43 @@
     {
       "name": "1 TL Pulver (3g)",
       "portion_g": 3,
-      "calories": 11,
-      "protein": 0.2,
-      "carbs": 1.9,
-      "fat": 0.3,
+      "calories": 9,
+      "protein": 0.3,
+      "carbs": 2,
+      "fat": 0.1,
       "tip": "Standard-Portion"
     },
     {
       "name": "1 EL Pulver (9g)",
       "portion_g": 9,
-      "calories": 32,
-      "protein": 0.7,
-      "carbs": 5.8,
-      "fat": 0.9
+      "calories": 28,
+      "protein": 0.9,
+      "carbs": 6,
+      "fat": 0.3
     },
     {
       "name": "Kurkumapulver (10g)",
       "portion_g": 10,
-      "calories": 35,
-      "protein": 0.8,
-      "carbs": 6.5,
-      "fat": 1
+      "calories": 31,
+      "protein": 1,
+      "carbs": 6.7,
+      "fat": 0.3
     },
     {
       "name": "Kurkumapulver pro 100g",
       "portion_g": 100,
-      "calories": 354,
-      "protein": 7.8,
-      "carbs": 64.9,
-      "fat": 9.9
-    },
-    {
-      "name": "Frische Kurkumawurzel roh (20g)",
-      "portion_g": 20,
-      "calories": 13,
-      "protein": 0.2,
-      "carbs": 2.6,
-      "fat": 0.2,
-      "tip": "Frisch deutlich kalorienärmer"
+      "calories": 312,
+      "protein": 9.7,
+      "carbs": 67.1,
+      "fat": 3.3
     },
     {
       "name": "Goldene Milch (1 Tasse, ca. 2g Kurkuma)",
       "portion_g": 2,
-      "calories": 7,
+      "calories": 6,
       "protein": 0.2,
       "carbs": 1.3,
-      "fat": 0.2,
+      "fat": 0.1,
       "tip": "Plus Milch & Honig separat rechnen"
     }
   ],
@@ -91,28 +83,52 @@
     {
       "name": "Ingwer gemahlen (100g)",
       "calories": 335,
-      "emoji": "🫚"
+      "emoji": "🫚",
+      "basis": [
+        {
+          "fdcId": 170926,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Paprikapulver (100g)",
       "calories": 282,
-      "emoji": "🌶️"
+      "emoji": "🌶️",
+      "basis": [
+        {
+          "fdcId": 171329,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Zimt gemahlen (100g)",
       "calories": 247,
-      "emoji": "🟤"
+      "emoji": "🟤",
+      "basis": [
+        {
+          "fdcId": 171320,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Schwarzer Pfeffer (100g)",
       "calories": 251,
-      "emoji": "⚫"
+      "emoji": "⚫",
+      "basis": [
+        {
+          "fdcId": 170931,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Pro Portion fast kalorienfrei",
-      "text": "Auch wenn 100g Kurkuma 354 kcal haben: Die übliche Würzmenge von 1 TL (3g) liefert nur etwa 11 kcal. Beim Würzen spielen die Kalorien also keine Rolle.",
+      "text": "Auch wenn 100g Kurkuma 312 kcal haben: Die übliche Würzmenge von 1 TL (3g) liefert nur etwa 9 kcal. Beim Würzen spielen die Kalorien also keine Rolle.",
       "icon": "🟡"
     },
     {
@@ -139,19 +155,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Kurkuma?",
-      "answer": "Kurkumapulver hat etwa 354 kcal pro 100g. Eine übliche Würzportion von 1 TL (3g) liefert aber nur rund 11 kcal."
+      "answer": "Kurkumapulver hat etwa 312 kcal pro 100g. Eine übliche Würzportion von 1 TL (3g) liefert aber nur rund 9 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Teelöffel Kurkuma?",
-      "answer": "Ein Teelöffel Kurkumapulver (ca. 3g) hat etwa 11 kcal. Ein Esslöffel (ca. 9g) kommt auf rund 32 kcal."
+      "answer": "Ein Teelöffel Kurkumapulver (ca. 3g) hat etwa 9 kcal. Ein Esslöffel (ca. 9g) kommt auf rund 28 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kurkuma?",
-      "answer": "Pro 100g enthält Kurkumapulver ca. 64,9g Kohlenhydrate, davon aber 21,1g Ballaststoffe. Pro Teelöffel sind es nur etwa 1,9g Kohlenhydrate."
+      "answer": "Pro 100g enthält Kurkumapulver ca. 67,1g Kohlenhydrate, davon aber 22,7g Ballaststoffe. Pro Teelöffel sind es nur etwa 2g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Kurkuma?",
-      "answer": "Kurkumapulver liefert rund 7,8g Protein pro 100g. Da man nur kleine Mengen verwendet, trägt es kaum zur Eiweißzufuhr bei."
+      "answer": "Kurkumapulver liefert rund 9,7g Protein pro 100g. Da man nur kleine Mengen verwendet, trägt es kaum zur Eiweißzufuhr bei."
     },
     {
       "question": "Ist Kurkuma zum Abnehmen geeignet?",

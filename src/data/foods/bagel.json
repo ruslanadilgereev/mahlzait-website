@@ -3,9 +3,10 @@
   "name": "Bagel",
   "emoji": "🥯",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174899 (Bagels, plain, enriched, with calcium propionate (includes onion, poppy, sesame)), Werte je 100 g",
   "seo": {
     "title": "Bagel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Bagel? Ein Bagel (95g) hat ca. 244 kcal. Nährwerte pro 100g & Stück, Varianten mit Frischkäse im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat ein Bagel? Ein Bagel (95g) hat ca. 251 kcal. Nährwerte pro 100g & Stück, Varianten mit Frischkäse im Vergleich + Tipps.",
     "keywords": [
       "bagel kalorien",
       "bagel kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 257,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 1.5,
-    "fiber_per_100g": 2.2,
+    "calories_per_100g": 264,
+    "protein_per_100g": 10.6,
+    "carbs_per_100g": 52.4,
+    "fat_per_100g": 1.3,
+    "fiber_per_100g": 1.6,
     "typical_portion_g": 95,
     "typical_portion_name": "1 Bagel (mittel)"
   },
@@ -28,26 +29,26 @@
     {
       "name": "Bagel mini (50g)",
       "portion_g": 50,
-      "calories": 129,
+      "calories": 132,
       "protein": 5,
-      "carbs": 25,
+      "carbs": 26,
       "fat": 1
     },
     {
       "name": "Bagel mittel (95g)",
       "portion_g": 95,
-      "calories": 244,
+      "calories": 251,
       "protein": 10,
-      "carbs": 48,
+      "carbs": 50,
       "fat": 1,
       "tip": "Standard-Größe im Handel"
     },
     {
       "name": "Bagel groß (130g)",
       "portion_g": 130,
-      "calories": 334,
-      "protein": 13,
-      "carbs": 65,
+      "calories": 343,
+      "protein": 14,
+      "carbs": 68,
       "fat": 2
     },
     {
@@ -55,68 +56,126 @@
       "portion_g": 95,
       "calories": 238,
       "protein": 10,
-      "carbs": 44,
-      "fat": 2,
-      "tip": "Mehr Ballaststoffe, sättigt länger"
+      "carbs": 46,
+      "fat": 1,
+      "tip": "Mehr Ballaststoffe, sättigt länger",
+      "basis": [
+        {
+          "fdcId": 2707733,
+          "g": 95
+        }
+      ]
     },
     {
       "name": "Bagel mit Frischkäse (95g + 30g)",
       "portion_g": 125,
-      "calories": 343,
-      "protein": 12,
-      "carbs": 49,
-      "fat": 11,
-      "tip": "Klassischer Belag"
+      "calories": 327,
+      "protein": 13,
+      "carbs": 51,
+      "fat": 8,
+      "tip": "Klassischer Belag",
+      "basis": [
+        {
+          "g": 95
+        },
+        {
+          "fdcId": 171246,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Bagel mit Lachs & Frischkäse (95g + 30g + 40g)",
       "portion_g": 165,
-      "calories": 416,
-      "protein": 21,
-      "carbs": 49,
-      "fat": 14,
-      "tip": "Eiweißreich"
+      "calories": 374,
+      "protein": 20,
+      "carbs": 51,
+      "fat": 10,
+      "tip": "Eiweißreich",
+      "basis": [
+        {
+          "g": 95
+        },
+        {
+          "fdcId": 171246,
+          "g": 30
+        },
+        {
+          "fdcId": 173687,
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Zimt-Rosinen-Bagel (95g)",
       "portion_g": 95,
-      "calories": 257,
+      "calories": 260,
       "protein": 9,
-      "carbs": 51,
-      "fat": 2
+      "carbs": 52,
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 172664,
+          "g": 95
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Brötchen",
-      "calories": 138,
-      "emoji": "🥖"
+      "name": "Brötchen (1 Stück, 60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Brezel",
-      "calories": 168,
-      "emoji": "🥨"
+      "name": "Brezel (1 Stück, 95g)",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 95
+        }
+      ]
     },
     {
-      "name": "Croissant",
-      "calories": 203,
-      "emoji": "🥐"
+      "name": "Croissant (1 Stück, 65g)",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 65
+        }
+      ]
     },
     {
-      "name": "Toastbrot",
-      "calories": 124,
-      "emoji": "🍞"
+      "name": "Toastbrot (2 Scheiben, 60g)",
+      "calories": 160,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Vollkorn wählen",
-      "text": "Ein Vollkorn-Bagel liefert mehr Ballaststoffe als die helle Variante und hält dadurch länger satt – bei ähnlicher Kalorienzahl.",
+      "text": "Ein Vollkorn-Bagel liefert mehr Ballaststoffe als die helle Variante und hält dadurch länger satt, bei ähnlicher Kalorienzahl.",
       "icon": "🌾"
     },
     {
       "title": "Auf den Belag achten",
-      "text": "Der Bagel selbst hat moderate 244 kcal. Frischkäse, Butter oder Lachs treiben die Kalorien schnell um 100 bis 200 kcal nach oben.",
+      "text": "Der Bagel selbst hat moderate 251 kcal. Frischkäse, Butter oder Lachs treiben die Kalorien schnell nach oben: 30g Frischkäse bringen rund 76 kcal, mit 40g Räucherlachs dazu sind es rund 123 kcal mehr.",
       "icon": "🧀"
     },
     {
@@ -126,7 +185,7 @@
     },
     {
       "title": "Halbe Portion als Snack",
-      "text": "Eine Bagelhälfte mit etwas Frischkäse liegt bei rund 170 kcal – ideal als kleiner Zwischensnack statt der ganzen Mahlzeit.",
+      "text": "Eine Bagelhälfte mit 15g Frischkäse liegt bei rund 163 kcal, ideal als kleiner Zwischensnack statt der ganzen Mahlzeit.",
       "icon": "✂️"
     },
     {
@@ -138,15 +197,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Bagel?",
-      "answer": "Ein mittelgroßer Bagel (95g) hat etwa 244 kcal. Pro 100g sind es rund 257 kcal."
+      "answer": "Ein mittelgroßer Bagel (95g) hat etwa 251 kcal. Pro 100g sind es rund 264 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Bagel mit Frischkäse?",
-      "answer": "Ein Bagel (95g) mit etwa 30g Frischkäse kommt auf rund 343 kcal. Der Frischkäse steuert dabei knapp 100 kcal bei."
+      "answer": "Ein Bagel (95g) mit etwa 30g Frischkäse kommt auf rund 327 kcal. Der Frischkäse steuert dabei rund 76 kcal bei."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Bagel?",
-      "answer": "Ein Bagel (95g) enthält etwa 48g Kohlenhydrate. Pro 100g sind es rund 50g – Bagels sind also recht kohlenhydratreich."
+      "answer": "Ein Bagel (95g) enthält etwa 50g Kohlenhydrate. Pro 100g sind es rund 52g, Bagels sind also recht kohlenhydratreich."
     },
     {
       "question": "Wie viel Protein hat ein Bagel?",

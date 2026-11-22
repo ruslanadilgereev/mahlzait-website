@@ -3,9 +3,10 @@
   "name": "Tabasco",
   "emoji": "🌶️",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174528 (Sauce, ready-to-serve, pepper, TABASCO: 12 kcal), Werte je 100 g; je 100 ml mit 0,974 g/ml 12 kcal",
   "seo": {
     "title": "Tabasco Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Tabasco? 45 kcal pro 100 ml, ein Spritzer fast 0 kcal. Nährwerte, Kohlenhydrate & Tipps zum Abnehmen mit der scharfen Sauce.",
+    "description": "Wie viele Kalorien hat Tabasco? 12 kcal pro 100 ml, ein Spritzer fast 0 kcal. Nährwerte, Kohlenhydrate & Tipps zum Abnehmen mit der scharfen Sauce.",
     "keywords": [
       "tabasco kalorien",
       "tabasco sauce kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 45,
-    "protein_per_100g": 1,
-    "carbs_per_100g": 1.6,
-    "fat_per_100g": 0.7,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 12,
+    "protein_per_100g": 1.3,
+    "carbs_per_100g": 0.8,
+    "fat_per_100g": 0.8,
+    "fiber_per_100g": 0.6,
     "typical_portion_g": 5,
     "typical_portion_name": "1 TL (5 ml)"
   },
@@ -38,65 +39,87 @@
     {
       "name": "1 TL (5 ml)",
       "portion_g": 5,
-      "calories": 2,
-      "protein": 0,
-      "carbs": 0.1,
+      "calories": 1,
+      "protein": 0.1,
+      "carbs": 0,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "1 EL (15 ml)",
       "portion_g": 15,
-      "calories": 7,
+      "calories": 2,
       "protein": 0.2,
-      "carbs": 0.2,
+      "carbs": 0.1,
       "fat": 0.1
     },
     {
       "name": "Mini-Fläschchen (60 ml)",
-      "portion_g": 60,
-      "calories": 27,
-      "protein": 0.6,
-      "carbs": 1,
-      "fat": 0.4
+      "portion_g": 58,
+      "calories": 7,
+      "protein": 0.8,
+      "carbs": 0.5,
+      "fat": 0.5
     },
     {
       "name": "Standard-Flasche (57 ml)",
-      "portion_g": 57,
-      "calories": 26,
-      "protein": 0.6,
-      "carbs": 0.9,
+      "portion_g": 56,
+      "calories": 7,
+      "protein": 0.7,
+      "carbs": 0.4,
       "fat": 0.4
     },
     {
       "name": "100 ml",
-      "portion_g": 100,
-      "calories": 45,
-      "protein": 1,
-      "carbs": 1.6,
-      "fat": 0.7
+      "portion_g": 97,
+      "calories": 12,
+      "protein": 1.3,
+      "carbs": 0.8,
+      "fat": 0.8
     }
   ],
   "comparison": [
     {
       "name": "Ketchup (1 EL)",
-      "calories": 15,
-      "emoji": "🍅"
+      "calories": 17,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "ketchup",
+          "g": 17
+        }
+      ]
     },
     {
       "name": "Sriracha (1 EL)",
-      "calories": 15,
-      "emoji": "🌶️"
+      "calories": 18,
+      "emoji": "🌶️",
+      "basis": [
+        {
+          "fdcId": 171186,
+          "g": 19.5
+        }
+      ]
     },
     {
       "name": "Senf (1 EL)",
-      "calories": 10,
-      "emoji": "🟡"
+      "calories": 9,
+      "emoji": "🟡",
+      "basis": [
+        {
+          "slug": "senf"
+        }
+      ]
     },
     {
       "name": "Sojasauce (1 EL)",
       "calories": 8,
-      "emoji": "🍶"
+      "emoji": "🍶",
+      "basis": [
+        {
+          "slug": "sojasauce"
+        }
+      ]
     }
   ],
   "tips": [
@@ -112,12 +135,12 @@
     },
     {
       "title": "Auf den Salzgehalt achten",
-      "text": "Tabasco enthält rund 1,8 g Salz pro 100 ml. Bei der typischen Spritzer-Menge spielt das kaum eine Rolle, bei größeren Mengen lohnt sich ein Blick aufs Salzkonto.",
+      "text": "Tabasco enthält rund 1,5 g Salz pro 100 ml. Bei der typischen Spritzer-Menge spielt das kaum eine Rolle, bei größeren Mengen lohnt sich ein Blick aufs Salzkonto.",
       "icon": "🧂"
     },
     {
       "title": "Praktisch keine Kohlenhydrate",
-      "text": "Mit nur 1,6 g Kohlenhydraten pro 100 ml passt Tabasco gut in eine kohlenhydratarme oder ketogene Ernährung.",
+      "text": "Mit nur 0,8 g Kohlenhydraten pro 100 ml passt Tabasco gut in eine kohlenhydratarme oder ketogene Ernährung.",
       "icon": "🥗"
     },
     {
@@ -129,27 +152,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Tabasco?",
-      "answer": "Tabasco Original hat laut Herstellerangabe 45 kcal pro 100 ml. Ein typischer Spritzer (etwa 1 ml) liegt bei unter 1 kcal, ein Teelöffel (5 ml) bei rund 2 kcal."
+      "answer": "Tabasco Original hat 12 kcal pro 100 ml. Ein typischer Spritzer (etwa 1 ml) liegt bei unter 1 kcal, ein Teelöffel (5 ml) bei rund 1 kcal."
     },
     {
       "question": "Wie viele Kalorien hat 1 Teelöffel Tabasco?",
-      "answer": "Ein Teelöffel (5 ml) Tabasco hat etwa 2 kcal. Ein Esslöffel (15 ml) kommt auf rund 7 kcal."
+      "answer": "Ein Teelöffel (5 ml) Tabasco hat etwa 1 kcal. Ein Esslöffel (15 ml) kommt auf rund 2 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Tabasco?",
-      "answer": "Tabasco enthält nur 1,6 g Kohlenhydrate pro 100 ml, davon 0 g Zucker. In der üblichen Spritzer-Menge ist der Anteil verschwindend gering."
+      "answer": "Tabasco enthält nur 0,8 g Kohlenhydrate pro 100 ml, davon kaum Zucker (0,1 g). In der üblichen Spritzer-Menge ist der Anteil verschwindend gering."
     },
     {
       "question": "Wie viel Protein hat Tabasco?",
-      "answer": "Tabasco liefert etwa 1,0 g Eiweiß pro 100 ml. Als Würzsauce ist es keine relevante Proteinquelle."
+      "answer": "Tabasco liefert etwa 1,3 g Eiweiß pro 100 ml. Als Würzsauce ist es keine relevante Proteinquelle."
     },
     {
       "question": "Ist Tabasco zum Abnehmen geeignet?",
-      "answer": "Ja. Tabasco ist mit nur 45 kcal pro 100 ml und fast keinen Kalorien pro Spritzer ein guter Geschmacksgeber beim Abnehmen, der zucker- und fettreiche Saucen ersetzen kann."
+      "answer": "Ja. Tabasco ist mit nur 12 kcal pro 100 ml und fast keinen Kalorien pro Spritzer ein guter Geschmacksgeber beim Abnehmen, der zucker- und fettreiche Saucen ersetzen kann."
     },
     {
       "question": "Ist Tabasco gesund?",
-      "answer": "Tabasco besteht aus Chilis, Essig und Salz, ist kalorienarm und zuckerfrei. Der einzige Punkt, auf den man achten sollte, ist der Salzgehalt von 1,8 g pro 100 ml bei größeren Mengen."
+      "answer": "Tabasco besteht aus Chilis, Essig und Salz, ist kalorienarm und praktisch zuckerfrei. Der einzige Punkt, auf den man achten sollte, ist der Salzgehalt von rund 1,5 g pro 100 ml bei größeren Mengen."
     }
   ],
   "related_foods": [

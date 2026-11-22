@@ -3,9 +3,10 @@
   "name": "Pho Bo",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2707124 (Soup, pho, with meat), Werte je 100 g",
   "seo": {
     "title": "Pho Bo Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Pho Bo? Eine Standardschüssel (550 g) der vietnamesischen Rindersuppe hat ca. 248 kcal. Nährwerte pro 100 g, Portionen & Tipps.",
+    "description": "Wie viele Kalorien hat Pho Bo? Eine Standardschüssel (550 g) der vietnamesischen Rindersuppe hat ca. 424 kcal. Nährwerte pro 100 g, Portionen & Tipps.",
     "keywords": [
       "pho bo kalorien",
       "pho bo kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 45,
-    "protein_per_100g": 3.5,
-    "carbs_per_100g": 6,
-    "fat_per_100g": 0.8,
+    "calories_per_100g": 77,
+    "protein_per_100g": 5.8,
+    "carbs_per_100g": 5.6,
+    "fat_per_100g": 3.3,
     "fiber_per_100g": 0.4,
     "typical_portion_g": 550,
     "typical_portion_name": "1 Schüssel (Standard)"
@@ -29,85 +30,86 @@
     {
       "name": "Kleine Schüssel (400 g)",
       "portion_g": 400,
-      "calories": 180,
-      "protein": 14,
-      "carbs": 24,
-      "fat": 3
+      "calories": 308,
+      "protein": 23,
+      "carbs": 22,
+      "fat": 13
     },
     {
       "name": "Schüssel Standard (550 g)",
       "portion_g": 550,
-      "calories": 248,
-      "protein": 19,
-      "carbs": 33,
-      "fat": 4,
+      "calories": 424,
+      "protein": 32,
+      "carbs": 31,
+      "fat": 18,
       "tip": "Typische Portion"
     },
     {
       "name": "Große Schüssel (700 g)",
       "portion_g": 700,
-      "calories": 315,
-      "protein": 24,
-      "carbs": 42,
-      "fat": 6
+      "calories": 539,
+      "protein": 41,
+      "carbs": 39,
+      "fat": 23
     },
     {
       "name": "Restaurant-Portion (600 g)",
       "portion_g": 600,
-      "calories": 270,
-      "protein": 21,
-      "carbs": 36,
-      "fat": 5
-    },
-    {
-      "name": "Nur Brühe ohne Nudeln (300 g)",
-      "portion_g": 300,
-      "calories": 90,
-      "protein": 9,
-      "carbs": 6,
-      "fat": 2,
-      "tip": "Low-Carb-Variante"
-    },
-    {
-      "name": "Tiefkühl-Fertiggericht (400 g)",
-      "portion_g": 400,
-      "calories": 200,
-      "protein": 13,
-      "carbs": 28,
-      "fat": 4
+      "calories": 462,
+      "protein": 35,
+      "carbs": 34,
+      "fat": 20
     }
   ],
   "comparison": [
     {
-      "name": "Ramen (Schüssel)",
-      "calories": 495,
-      "emoji": "🍜"
+      "name": "Ramen (Schüssel, 550 g)",
+      "calories": 699,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "ramen",
+          "g": 550
+        }
+      ]
     },
     {
-      "name": "Pad Thai (Portion)",
-      "calories": 578,
-      "emoji": "🍤"
+      "name": "Pad Thai (Teller, 400 g)",
+      "calories": 616,
+      "emoji": "🍤",
+      "basis": [
+        {
+          "slug": "pad-thai",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Miso-Suppe",
-      "calories": 88,
-      "emoji": "🥣"
+      "name": "Miso-Suppe (250 g)",
+      "calories": 60,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "miso-suppe",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Schlanke Asia-Wahl",
-      "text": "Eine Standardschüssel Pho Bo hat nur etwa 248 kcal und damit deutlich weniger als Ramen oder Pad Thai. Die klare Brühe und der hohe Wasseranteil sorgen für Volumen ohne viele Kalorien.",
+      "text": "Eine Standardschüssel Pho Bo hat etwa 424 kcal und damit weniger als Ramen oder Pad Thai. Die klare Brühe und der hohe Wasseranteil sorgen für Volumen ohne viele Kalorien.",
       "icon": "🍜"
     },
     {
       "title": "Eiweiß aus magerem Rind",
-      "text": "Die dünnen Scheiben Rindfleisch liefern rund 19 g Protein pro Schüssel. Das sättigt gut und unterstützt den Muskelerhalt während einer Diät.",
+      "text": "Eine Schüssel liefert rund 32 g Protein, vor allem aus den dünnen Scheiben Rindfleisch. Das sättigt gut und unterstützt den Muskelerhalt während einer Diät.",
       "icon": "🥩"
     },
     {
       "title": "Brühe statt Nudeln",
-      "text": "Wer Kohlenhydrate sparen möchte, kann die Reisnudeln reduzieren oder weglassen. Nur die Brühe mit Fleisch hat etwa 90 kcal und kaum Kohlenhydrate.",
+      "text": "Wer Kohlenhydrate sparen möchte, kann die Reisnudeln reduzieren oder weglassen. Nur die Brühe mit Fleisch hat deutlich weniger Kalorien und kaum Kohlenhydrate.",
       "icon": "💧"
     },
     {
@@ -124,27 +126,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Pho Bo?",
-      "answer": "Eine Standardschüssel Pho Bo (550 g) hat etwa 248 kcal. Pro 100 g sind es rund 45 kcal, da die klare Brühe sehr viel Wasser enthält."
+      "answer": "Eine Standardschüssel Pho Bo (550 g) hat etwa 424 kcal. Pro 100 g sind es rund 77 kcal, da die klare Brühe sehr viel Wasser enthält."
     },
     {
       "question": "Wie viele Kalorien hat Pho Bo pro 100 g?",
-      "answer": "Pho Bo hat als fertige Suppe etwa 45 kcal pro 100 g. Der niedrige Wert entsteht durch den hohen Anteil an Brühe und Wasser."
+      "answer": "Pho Bo hat als fertige Suppe etwa 77 kcal pro 100 g. Der niedrige Wert entsteht durch den hohen Anteil an Brühe und Wasser."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Pho Bo?",
-      "answer": "Eine Standardschüssel (550 g) enthält etwa 33 g Kohlenhydrate, hauptsächlich aus den Reisnudeln (Banh Pho). Ohne Nudeln sinkt der Wert auf wenige Gramm."
+      "answer": "Eine Standardschüssel (550 g) enthält etwa 31 g Kohlenhydrate, hauptsächlich aus den Reisnudeln (Banh Pho). Ohne Nudeln sinkt der Wert auf wenige Gramm."
     },
     {
       "question": "Wie viel Protein steckt in Pho Bo?",
-      "answer": "Eine Schüssel liefert rund 19 g Protein aus den dünnen Scheiben mageren Rindfleischs. Das macht Pho Bo zu einem sättigenden Gericht."
+      "answer": "Eine Schüssel liefert rund 32 g Protein, vor allem aus den dünnen Scheiben mageren Rindfleischs. Das macht Pho Bo zu einem sättigenden Gericht."
     },
     {
       "question": "Ist Pho Bo zum Abnehmen geeignet?",
-      "answer": "Ja. Mit etwa 248 kcal pro Schüssel, viel Eiweiß und hohem Wasseranteil ist Pho Bo eine sättigende, kalorienarme Mahlzeit. Vorsicht nur bei süßen Soßen und großen Portionen."
+      "answer": "Ja. Mit etwa 424 kcal pro Schüssel, viel Eiweiß und hohem Wasseranteil ist Pho Bo eine sättigende Mahlzeit mit moderaten Kalorien. Vorsicht nur bei süßen Soßen und großen Portionen."
     },
     {
       "question": "Ist Pho Bo gesund?",
-      "answer": "Pho Bo gilt als ausgewogenes Gericht: magere Proteine, frische Kräuter und eine fettarme Brühe. Etwas Aufmerksamkeit verdient der Salzgehalt der Brühe."
+      "answer": "Pho Bo gilt als ausgewogenes Gericht: magere Proteine, frische Kräuter und eine klare Brühe. Etwas Aufmerksamkeit verdient der Salzgehalt der Brühe."
     }
   ],
   "related_foods": [

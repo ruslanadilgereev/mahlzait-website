@@ -3,9 +3,10 @@
   "name": "Burger King Long Chicken",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170331 (BURGER KING, Original Chicken Sandwich), Werte je 100 g",
   "seo": {
     "title": "Burger King Long Chicken Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Burger King Long Chicken? Ein Long Chicken (210g) hat ca. 578 kcal. Nährwerte pro 100g & Portion, Menü-Vergleich & Tipps.",
+    "description": "Wie viele Kalorien hat ein Burger King Long Chicken? Ein Long Chicken (199g) hat ca. 569 kcal. Nährwerte pro 100g & Portion, Menü-Vergleich & Tipps.",
     "keywords": [
       "burger king long chicken kalorien",
       "bk long chicken kcal",
@@ -16,107 +17,168 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 275,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 1,
-    "typical_portion_g": 210,
+    "calories_per_100g": 286,
+    "protein_per_100g": 12.1,
+    "carbs_per_100g": 26.2,
+    "fat_per_100g": 14.7,
+    "fiber_per_100g": 2.4,
+    "typical_portion_g": 199,
     "typical_portion_name": "1 Long Chicken"
   },
   "variants": [
     {
-      "name": "Halbes Long Chicken (105g)",
-      "portion_g": 105,
-      "calories": 289,
-      "protein": 13,
-      "carbs": 25,
+      "name": "Halbes Long Chicken (100g)",
+      "portion_g": 100,
+      "calories": 286,
+      "protein": 12,
+      "carbs": 26,
       "fat": 15,
       "tip": "Kleinere Portion oder geteilt"
     },
     {
-      "name": "1 Long Chicken (210g)",
-      "portion_g": 210,
-      "calories": 578,
-      "protein": 25,
-      "carbs": 50,
+      "name": "1 Long Chicken (199g)",
+      "portion_g": 199,
+      "calories": 569,
+      "protein": 24,
+      "carbs": 52,
       "fat": 29,
       "tip": "Standard"
     },
     {
       "name": "Long Chicken + kleine Pommes",
-      "portion_g": 290,
-      "calories": 808,
-      "protein": 28,
-      "carbs": 78,
-      "fat": 41
+      "portion_g": 273,
+      "calories": 776,
+      "protein": 26,
+      "carbs": 81,
+      "fat": 38,
+      "basis": [
+        {
+          "g": 199
+        },
+        {
+          "fdcId": 170327,
+          "g": 74
+        }
+      ]
     },
     {
       "name": "Long Chicken King Menü (mittlere Pommes + Cola 0,4l)",
-      "portion_g": 530,
-      "calories": 1036,
-      "protein": 30,
-      "carbs": 132,
-      "fat": 44
+      "portion_g": 735,
+      "calories": 1073,
+      "protein": 28,
+      "carbs": 141,
+      "fat": 45,
+      "basis": [
+        {
+          "g": 199
+        },
+        {
+          "fdcId": 170327,
+          "g": 117
+        },
+        {
+          "slug": "cola",
+          "ml": 400,
+          "g": 419
+        }
+      ]
     },
     {
       "name": "Long Chicken Menü groß (große Pommes + Cola 0,5l)",
-      "portion_g": 660,
-      "calories": 1250,
-      "protein": 32,
-      "carbs": 165,
-      "fat": 50
+      "portion_g": 883,
+      "calories": 1237,
+      "protein": 29,
+      "carbs": 169,
+      "fat": 51,
+      "basis": [
+        {
+          "g": 199
+        },
+        {
+          "fdcId": 170327,
+          "g": 160
+        },
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
     },
     {
-      "name": "2 Long Chicken (420g)",
-      "portion_g": 420,
-      "calories": 1156,
-      "protein": 50,
-      "carbs": 100,
-      "fat": 58
+      "name": "2 Long Chicken (398g)",
+      "portion_g": 398,
+      "calories": 1138,
+      "protein": 48,
+      "carbs": 104,
+      "fat": 59
     }
   ],
   "comparison": [
     {
       "name": "Burger King Cheeseburger",
-      "calories": 300,
-      "emoji": "🍔"
+      "calories": 380,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170329,
+          "g": 133
+        }
+      ]
     },
     {
       "name": "McDonald's Big Mac",
       "calories": 563,
-      "emoji": "🍔"
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
     },
     {
-      "name": "Chicken Wrap",
-      "calories": 350,
-      "emoji": "🌯"
+      "name": "Chicken Wrap (gegrillt)",
+      "calories": 406,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "fdcId": 2707017,
+          "g": 161
+        }
+      ]
     },
     {
       "name": "Doppel-Whopper",
-      "calories": 900,
-      "emoji": "🍔"
+      "calories": 942,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170729,
+          "g": 374
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ohne Menü sparen",
-      "text": "Der Long Chicken allein hat ca. 578 kcal. Pommes und Cola verdoppeln das fast. Wer ihn einzeln statt im Menü bestellt, spart rund 450 kcal.",
+      "text": "Der Long Chicken allein hat ca. 569 kcal. Pommes und Cola verdoppeln das fast. Wer ihn einzeln statt im Menü bestellt, spart rund 504 kcal.",
       "icon": "🍟"
     },
     {
       "title": "Mayo weglassen",
-      "text": "Die Salat-Mayo macht einen großen Teil des Fetts aus. Ohne Mayo bestellt sinken die Kalorien spürbar um etwa 80 bis 120 kcal.",
+      "text": "Die Salat-Mayo macht einen großen Teil des Fetts aus. Ohne Mayo bestellt sinken die Kalorien spürbar.",
       "icon": "🥄"
     },
     {
       "title": "Wasser statt Softdrink",
-      "text": "Eine Cola 0,4 l bringt rund 170 kcal mit. Mit Wasser oder einem Getränk ohne Zucker bleibt das Essen deutlich leichter.",
+      "text": "Eine Cola 0,4 l bringt rund 176 kcal mit. Mit Wasser oder einem Getränk ohne Zucker bleibt das Essen deutlich leichter.",
       "icon": "💧"
     },
     {
       "title": "Eiweiß ist solide, aber kein Schnäppchen",
-      "text": "Mit rund 25g Protein liefert der Long Chicken ordentlich Eiweiß. Durch die Panade und Mayo kommt aber auch viel Fett dazu.",
+      "text": "Mit rund 24g Protein liefert der Long Chicken ordentlich Eiweiß. Durch die Panade und Mayo kommt aber auch viel Fett dazu.",
       "icon": "💪"
     },
     {
@@ -128,23 +190,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Burger King Long Chicken?",
-      "answer": "Ein Long Chicken (ca. 210g) hat rund 578 kcal. Pro 100g sind es etwa 275 kcal."
+      "answer": "Ein Long Chicken (ca. 199g) hat rund 569 kcal. Pro 100g sind es etwa 286 kcal."
     },
     {
       "question": "Wie viele Kalorien hat das Long Chicken King Menü?",
-      "answer": "Mit mittleren Pommes und einer Cola 0,4 l kommt das Menü auf etwa 1.036 kcal. Mit großen Beilagen sind es rund 1.250 kcal."
+      "answer": "Mit mittleren Pommes und einer Cola 0,4 l kommt das Menü auf etwa 1.073 kcal. Mit großen Beilagen sind es rund 1.237 kcal."
     },
     {
       "question": "Wie viel Protein steckt im Long Chicken?",
-      "answer": "Ein Long Chicken liefert etwa 25g Eiweiß, das entspricht rund 12g pro 100g."
+      "answer": "Ein Long Chicken liefert etwa 24g Eiweiß, das entspricht rund 12g pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat der Long Chicken?",
-      "answer": "Ein Long Chicken enthält ca. 50g Kohlenhydrate, vor allem aus dem langen Sesambrötchen und der Panade. Pro 100g sind es etwa 24g."
+      "answer": "Ein Long Chicken enthält ca. 52g Kohlenhydrate, vor allem aus dem langen Sesambrötchen und der Panade. Pro 100g sind es etwa 26g."
     },
     {
       "question": "Ist der Long Chicken zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 578 kcal lässt er sich in ein Kalorienbudget einplanen, besonders ohne Menü und ohne zuckerhaltiges Getränk. Als regelmäßige Mahlzeit ist er durch Panade und Mayo eher fettreich."
+      "answer": "In Maßen ja. Mit rund 569 kcal lässt er sich in ein Kalorienbudget einplanen, besonders ohne Menü und ohne zuckerhaltiges Getränk. Als regelmäßige Mahlzeit ist er durch Panade und Mayo eher fettreich."
     },
     {
       "question": "Ist der Long Chicken gesund?",

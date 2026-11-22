@@ -3,9 +3,10 @@
   "name": "Tortilla",
   "emoji": "🫓",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167535 (Tortillas, ready-to-bake or -fry, flour, shelf stable), Werte je 100 g",
   "seo": {
     "title": "Tortilla Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Tortilla? Ein Weizen-Fladen (62g) hat ca. 192 kcal. Nährwerte pro 100g, Mais- vs. Weizen-Tortilla & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat eine Tortilla? Ein Weizen-Fladen (62g) hat ca. 184 kcal. Nährwerte pro 100g, Mais- vs. Weizen-Tortilla & Tipps zum Abnehmen.",
     "keywords": [
       "tortilla kalorien",
       "tortilla kcal",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 310,
+    "calories_per_100g": 297,
     "protein_per_100g": 8,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 3,
+    "carbs_per_100g": 49.3,
+    "fat_per_100g": 7.6,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 62,
     "typical_portion_name": "1 Weizen-Tortilla (mittel)"
   },
@@ -29,15 +30,15 @@
     {
       "name": "Tortilla klein (45g)",
       "portion_g": 45,
-      "calories": 140,
+      "calories": 134,
       "protein": 4,
-      "carbs": 23,
-      "fat": 4
+      "carbs": 22,
+      "fat": 3
     },
     {
       "name": "Weizen-Tortilla mittel (62g)",
       "portion_g": 62,
-      "calories": 192,
+      "calories": 184,
       "protein": 5,
       "carbs": 31,
       "fat": 5,
@@ -46,72 +47,97 @@
     {
       "name": "Weizen-Tortilla groß / Wrap (72g)",
       "portion_g": 72,
-      "calories": 223,
+      "calories": 214,
       "protein": 6,
-      "carbs": 36,
-      "fat": 6
+      "carbs": 35,
+      "fat": 5
     },
     {
       "name": "2 Weizen-Tortillas (124g)",
       "portion_g": 124,
-      "calories": 384,
+      "calories": 368,
       "protein": 10,
-      "carbs": 62,
-      "fat": 10
+      "carbs": 61,
+      "fat": 9
     },
     {
       "name": "Maistortilla 1 Stück (26g)",
       "portion_g": 26,
       "calories": 57,
-      "protein": 2,
+      "protein": 1,
       "carbs": 12,
       "fat": 1,
-      "tip": "Glutenfrei, weniger Kalorien als Weizen"
+      "tip": "Glutenfrei, weniger Kalorien als Weizen",
+      "basis": [
+        {
+          "fdcId": 175036,
+          "g": 26
+        }
+      ]
     },
     {
       "name": "Vollkorn-Weizentortilla (62g)",
       "portion_g": 62,
-      "calories": 186,
+      "calories": 192,
       "protein": 6,
       "carbs": 28,
-      "fat": 5,
-      "tip": "Mehr Ballaststoffe, sättigt besser"
+      "fat": 6,
+      "tip": "Mehr Ballaststoffe, sättigt besser",
+      "basis": [
+        {
+          "fdcId": 174081,
+          "g": 62
+        }
+      ]
     },
     {
       "name": "Tortilla pro 100g",
       "portion_g": 100,
-      "calories": 310,
+      "calories": 297,
       "protein": 8,
-      "carbs": 50,
+      "carbs": 49,
       "fat": 8
     }
   ],
   "comparison": [
     {
-      "name": "Wrap",
-      "calories": 223,
-      "emoji": "🌯"
+      "name": "Brötchen (1 Stück, 60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Brötchen",
-      "calories": 145,
-      "emoji": "🥖"
-    },
-    {
-      "name": "Pita",
+      "name": "Pita (1 Stück, 60g)",
       "calories": 165,
-      "emoji": "🫓"
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "pita",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Naan-Brot",
-      "calories": 290,
-      "emoji": "🫓"
+      "name": "Naan-Brot (1 Stück, 90g)",
+      "calories": 262,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "naan-brot",
+          "g": 90
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mais statt Weizen wählen",
-      "text": "Eine Maistortilla hat pro 100g rund 218 kcal statt 310 kcal wie bei der Weizen-Variante und ist zudem glutenfrei. Pro Stück (26g) sind das nur etwa 57 kcal.",
+      "text": "Eine Maistortilla hat pro 100g rund 218 kcal statt 297 kcal wie bei der Weizen-Variante und ist zudem glutenfrei. Pro Stück (26g) sind das nur etwa 57 kcal.",
       "icon": "🌽"
     },
     {
@@ -121,12 +147,12 @@
     },
     {
       "title": "Auf die Füllung achten",
-      "text": "Der Fladen selbst ist überschaubar – die Kalorien stecken meist in Käse, Sauce und fettigem Fleisch. Magere Füllungen wie Hähnchen, Bohnen und Gemüse halten den Wrap leicht.",
+      "text": "Der Fladen selbst ist überschaubar, die Kalorien stecken meist in Käse, Sauce und fettigem Fleisch. Magere Füllungen wie Hähnchen, Bohnen und Gemüse halten den Wrap leicht.",
       "icon": "🥗"
     },
     {
       "title": "Größe macht den Unterschied",
-      "text": "Eine kleine Tortilla (45g) hat nur etwa 140 kcal, ein großer Wrap-Fladen (72g) dagegen rund 223 kcal. Wer Kalorien sparen will, greift zur kleineren Größe.",
+      "text": "Eine kleine Tortilla (45g) hat nur etwa 134 kcal, ein großer Wrap-Fladen (72g) dagegen rund 214 kcal. Wer Kalorien sparen will, greift zur kleineren Größe.",
       "icon": "📏"
     },
     {
@@ -138,7 +164,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Tortilla?",
-      "answer": "Eine mittelgroße Weizen-Tortilla (62g) hat etwa 192 kcal. Pro 100g sind es rund 310 kcal."
+      "answer": "Eine mittelgroße Weizen-Tortilla (62g) hat etwa 184 kcal. Pro 100g sind es rund 297 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Maistortilla?",
@@ -146,7 +172,7 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Tortilla?",
-      "answer": "Eine Weizen-Tortilla enthält pro 100g etwa 50g Kohlenhydrate. Ein mittlerer Fladen (62g) kommt auf rund 31g."
+      "answer": "Eine Weizen-Tortilla enthält pro 100g etwa 49g Kohlenhydrate. Ein mittlerer Fladen (62g) kommt auf rund 31g."
     },
     {
       "question": "Wie viel Protein hat eine Tortilla?",
@@ -154,7 +180,7 @@
     },
     {
       "question": "Sind Tortillas zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Wähle am besten eine kleine oder eine Vollkorn- oder Maistortilla und belege sie mager mit Gemüse, Hähnchen oder Bohnen. Entscheidend ist die Füllung – fettige Saucen und Käse treiben die Kalorien schnell hoch."
+      "answer": "In Maßen ja. Wähle am besten eine kleine oder eine Vollkorn- oder Maistortilla und belege sie mager mit Gemüse, Hähnchen oder Bohnen. Entscheidend ist die Füllung, fettige Saucen und Käse treiben die Kalorien schnell hoch."
     },
     {
       "question": "Sind Tortillas gesund?",

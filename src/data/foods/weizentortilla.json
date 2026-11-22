@@ -3,9 +3,10 @@
   "name": "Weizentortilla",
   "emoji": "🫓",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167535 (Tortillas, ready-to-bake or -fry, flour, shelf stable), Werte je 100 g",
   "seo": {
     "title": "Weizentortilla Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Weizentortilla? Eine mittlere Tortilla (60g) hat ca. 187 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat eine Weizentortilla? Eine mittlere Tortilla (60g) hat ca. 178 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps zum Abnehmen.",
     "keywords": [
       "weizentortilla kalorien",
       "weizentortilla kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 312,
-    "protein_per_100g": 8.2,
-    "carbs_per_100g": 49.4,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 3.1,
+    "calories_per_100g": 297,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 49.3,
+    "fat_per_100g": 7.6,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Tortilla (mittel, 25 cm)"
   },
@@ -28,7 +29,7 @@
     {
       "name": "Weizentortilla klein (40g, 20 cm)",
       "portion_g": 40,
-      "calories": 125,
+      "calories": 119,
       "protein": 3,
       "carbs": 20,
       "fat": 3
@@ -36,7 +37,7 @@
     {
       "name": "Weizentortilla mittel (60g, 25 cm)",
       "portion_g": 60,
-      "calories": 187,
+      "calories": 178,
       "protein": 5,
       "carbs": 30,
       "fat": 5,
@@ -45,64 +46,85 @@
     {
       "name": "Weizentortilla groß (72g, 30 cm)",
       "portion_g": 72,
-      "calories": 225,
+      "calories": 214,
       "protein": 6,
-      "carbs": 36,
-      "fat": 6
+      "carbs": 35,
+      "fat": 5
     },
     {
       "name": "2 Weizentortillas (120g)",
       "portion_g": 120,
-      "calories": 374,
+      "calories": 356,
       "protein": 10,
       "carbs": 59,
-      "fat": 10
+      "fat": 9
     },
     {
       "name": "Vollkorn-Weizentortilla (60g)",
       "portion_g": 60,
-      "calories": 180,
-      "protein": 5,
-      "carbs": 27,
-      "fat": 4,
-      "tip": "Mehr Ballaststoffe, sättigt länger"
-    },
-    {
-      "name": "Low-Carb Weizentortilla (45g)",
-      "portion_g": 45,
-      "calories": 110,
-      "protein": 8,
-      "carbs": 6,
-      "fat": 4,
-      "tip": "Weniger Kohlenhydrate, mehr Protein"
+      "calories": 186,
+      "protein": 6,
+      "carbs": 28,
+      "fat": 6,
+      "tip": "Mehr Ballaststoffe, sättigt länger",
+      "basis": [
+        {
+          "fdcId": 174081,
+          "g": 60
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Maistortilla (Stück)",
-      "calories": 62,
-      "emoji": "🌽"
+      "name": "Maistortilla (1 Stück, 26g)",
+      "calories": 57,
+      "emoji": "🌽",
+      "basis": [
+        {
+          "fdcId": 175036,
+          "g": 26
+        }
+      ]
     },
     {
-      "name": "Toastbrot (Scheibe)",
-      "calories": 75,
-      "emoji": "🍞"
+      "name": "Toastbrot (1 Scheibe, 30g)",
+      "calories": 80,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Pita (1 Stück)",
+      "name": "Pita (1 Stück, 60g)",
       "calories": 165,
-      "emoji": "🫓"
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "pita",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Naan-Brot (Stück)",
-      "calories": 260,
-      "emoji": "🫓"
+      "name": "Naan-Brot (1 Stück, 90g)",
+      "calories": 262,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "naan-brot",
+          "g": 90
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion im Blick behalten",
-      "text": "Eine mittlere Weizentortilla (60g) liefert ca. 187 kcal. Wer zwei Tortillas isst, kommt schnell auf rund 374 kcal allein für die Hülle.",
+      "text": "Eine mittlere Weizentortilla (60g) liefert ca. 178 kcal. Wer zwei Tortillas isst, kommt schnell auf rund 356 kcal allein für die Hülle.",
       "icon": "🫓"
     },
     {
@@ -112,7 +134,7 @@
     },
     {
       "title": "Maistortilla als leichte Alternative",
-      "text": "Eine Maistortilla hat pro Stück nur etwa 62 kcal. Wer Kalorien sparen will, fährt damit leichter als mit der Weizentortilla.",
+      "text": "Eine Maistortilla hat pro Stück nur etwa 57 kcal. Wer Kalorien sparen will, fährt damit leichter als mit der Weizentortilla.",
       "icon": "🌽"
     },
     {
@@ -122,26 +144,26 @@
     },
     {
       "title": "Low-Carb-Variante zum Abnehmen",
-      "text": "Low-Carb-Weizentortillas bringen bei rund 110 kcal pro Stück mehr Eiweiß und weniger Kohlenhydrate mit und passen gut in eine kalorienreduzierte Ernährung.",
+      "text": "Low-Carb-Weizentortillas bringen mehr Eiweiß und weniger Kohlenhydrate mit und passen gut in eine kalorienreduzierte Ernährung.",
       "icon": "💪"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Weizentortilla?",
-      "answer": "Eine mittlere Weizentortilla (60g, 25 cm) hat ca. 187 kcal. Pro 100g sind es etwa 312 kcal."
+      "answer": "Eine mittlere Weizentortilla (60g, 25 cm) hat ca. 178 kcal. Pro 100g sind es etwa 297 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in einer Weizentortilla?",
-      "answer": "Pro 100g enthält eine Weizentortilla rund 49,4g Kohlenhydrate. Eine mittlere Tortilla (60g) liefert etwa 30g."
+      "answer": "Pro 100g enthält eine Weizentortilla rund 49g Kohlenhydrate. Eine mittlere Tortilla (60g) liefert etwa 30g."
     },
     {
       "question": "Wie viel Protein hat eine Weizentortilla?",
-      "answer": "Mit etwa 8,2g Eiweiß pro 100g ist die Weizentortilla eine moderate Proteinquelle. Eine mittlere Tortilla bringt rund 5g mit."
+      "answer": "Mit etwa 8g Eiweiß pro 100g ist die Weizentortilla eine moderate Proteinquelle. Eine mittlere Tortilla bringt rund 5g mit."
     },
     {
       "question": "Ist eine Weizentortilla zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Eine einzelne Tortilla hält sich mit ca. 187 kcal im Rahmen. Wer Kalorien sparen möchte, greift zur kleineren, zur Vollkorn- oder zur Low-Carb-Variante und achtet auf eine leichte Füllung."
+      "answer": "In Maßen ja. Eine einzelne Tortilla hält sich mit ca. 178 kcal im Rahmen. Wer Kalorien sparen möchte, greift zur kleineren, zur Vollkorn- oder zur Low-Carb-Variante und achtet auf eine leichte Füllung."
     },
     {
       "question": "Ist eine Weizentortilla gesund?",
@@ -149,7 +171,7 @@
     },
     {
       "question": "Hat eine Weizen- oder eine Maistortilla mehr Kalorien?",
-      "answer": "Die Weizentortilla hat mehr Kalorien: ca. 187 kcal für eine mittlere Tortilla gegenüber rund 62 kcal für eine Maistortilla."
+      "answer": "Die Weizentortilla hat mehr Kalorien: ca. 178 kcal für eine mittlere Tortilla gegenüber rund 57 kcal für eine Maistortilla."
     }
   ],
   "related_foods": [

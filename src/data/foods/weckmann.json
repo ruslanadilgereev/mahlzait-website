@@ -3,9 +3,10 @@
   "name": "Weckmann",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2707666 (Roll, sweet, no frosting), Werte je 100 g",
   "seo": {
     "title": "Weckmann Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Weckmann? Ein mittlerer Stutenkerl (150g) hat ca. 435 kcal. Nährwerte pro 100g & Stück, Varianten und Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Weckmann? Ein mittlerer Stutenkerl (150g) hat ca. 482 kcal. Nährwerte pro 100g & Stück, Varianten und Diät-Tipps im Überblick.",
     "keywords": [
       "weckmann kalorien",
       "stutenkerl kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 7.5,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 321,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 53.6,
+    "fat_per_100g": 7.4,
+    "fiber_per_100g": 3.1,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Weckmann (mittel)"
   },
@@ -29,99 +30,132 @@
     {
       "name": "Mini-Weckmann (40g)",
       "portion_g": 40,
-      "calories": 116,
-      "protein": 3,
+      "calories": 128,
+      "protein": 4,
       "carbs": 21,
-      "fat": 2
+      "fat": 3
     },
     {
       "name": "Weckmann klein (80g)",
       "portion_g": 80,
-      "calories": 232,
-      "protein": 6,
-      "carbs": 42,
-      "fat": 5
+      "calories": 257,
+      "protein": 8,
+      "carbs": 43,
+      "fat": 6
     },
     {
       "name": "Weckmann mittel (150g)",
       "portion_g": 150,
-      "calories": 435,
-      "protein": 11,
-      "carbs": 78,
-      "fat": 9,
+      "calories": 482,
+      "protein": 15,
+      "carbs": 80,
+      "fat": 11,
       "tip": "Standardgröße beim Bäcker"
     },
     {
       "name": "Weckmann groß (250g)",
       "portion_g": 250,
-      "calories": 725,
-      "protein": 19,
-      "carbs": 130,
-      "fat": 15
+      "calories": 803,
+      "protein": 25,
+      "carbs": 134,
+      "fat": 19
     },
     {
       "name": "Weckmann XL (350g)",
       "portion_g": 350,
-      "calories": 1015,
-      "protein": 26,
-      "carbs": 182,
-      "fat": 21,
+      "calories": 1124,
+      "protein": 35,
+      "carbs": 188,
+      "fat": 26,
       "tip": "Festtags-Variante zum Teilen"
     },
     {
-      "name": "Weckmann mit Rosinen (150g)",
+      "name": "Weckmann mit Rosinen (135g + 15g Rosinen)",
       "portion_g": 150,
-      "calories": 450,
-      "protein": 11,
-      "carbs": 82,
-      "fat": 9,
-      "tip": "Rosinen erhöhen den Zuckeranteil leicht"
+      "calories": 478,
+      "protein": 14,
+      "carbs": 84,
+      "fat": 10,
+      "tip": "Rosinen erhöhen den Zuckeranteil leicht",
+      "basis": [
+        {
+          "g": 135
+        },
+        {
+          "fdcId": 168165,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 290,
-      "protein": 8,
-      "carbs": 52,
-      "fat": 6
+      "calories": 321,
+      "protein": 10,
+      "carbs": 54,
+      "fat": 7
     }
   ],
   "comparison": [
     {
-      "name": "Berliner",
-      "calories": 280,
-      "emoji": "🍩"
+      "name": "Berliner (1 Stück, 80g)",
+      "calories": 272,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner",
+          "g": 80
+        }
+      ]
     },
     {
-      "name": "Croissant",
-      "calories": 245,
-      "emoji": "🥐"
+      "name": "Croissant (1 Stück, 65g)",
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 65
+        }
+      ]
     },
     {
-      "name": "Brezel",
-      "calories": 340,
-      "emoji": "🥨"
+      "name": "Brezel (1 Stück, 95g)",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 95
+        }
+      ]
     },
     {
-      "name": "Brötchen",
-      "calories": 135,
-      "emoji": "🥯"
+      "name": "Brötchen (1 Stück, 60g)",
+      "calories": 176,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Süßes Gebäck, nicht Brot",
-      "text": "Ein Weckmann wird aus süßem Hefeteig mit Zucker und Fett gebacken. Mit rund 290 kcal pro 100g liegt er deutlich über einem normalen Brötchen.",
+      "text": "Ein Weckmann wird aus süßem Hefeteig mit Zucker und Fett gebacken. Mit rund 321 kcal pro 100g liegt er über einem normalen Brötchen (293 kcal).",
       "icon": "🥖"
     },
     {
       "title": "Kleinere Größe wählen",
-      "text": "Ein kleiner Weckmann (80g) hat etwa 232 kcal, ein mittlerer (150g) bereits 435 kcal. Wer Kalorien sparen möchte, greift zur kleineren Größe.",
+      "text": "Ein kleiner Weckmann (80g) hat etwa 257 kcal, ein mittlerer (150g) bereits 482 kcal. Wer Kalorien sparen möchte, greift zur kleineren Größe.",
       "icon": "⚖️"
     },
     {
       "title": "Bewusst teilen",
-      "text": "Große Weckmänner ab 250g bringen 725 kcal und mehr auf den Teller. Zu zweit geteilt bleibt der Genuss, die Kalorienmenge halbiert sich.",
+      "text": "Große Weckmänner ab 250g bringen 803 kcal und mehr auf den Teller. Zu zweit geteilt bleibt der Genuss, die Kalorienmenge halbiert sich.",
       "icon": "✂️"
     },
     {
@@ -138,23 +172,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Weckmann?",
-      "answer": "Ein mittelgroßer Weckmann (150g) hat ca. 435 kcal. Pro 100g sind es etwa 290 kcal."
+      "answer": "Ein mittelgroßer Weckmann (150g) hat ca. 482 kcal. Pro 100g sind es etwa 321 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Stutenkerl?",
-      "answer": "Stutenkerl ist eine andere Bezeichnung für den Weckmann. Ein mittlerer Stutenkerl von 150g enthält rund 435 kcal."
+      "answer": "Stutenkerl ist eine andere Bezeichnung für den Weckmann. Ein mittlerer Stutenkerl von 150g enthält rund 482 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Weckmann?",
-      "answer": "Pro 100g enthält ein Weckmann etwa 52g Kohlenhydrate. Ein mittlerer Weckmann (150g) kommt damit auf rund 78g."
+      "answer": "Pro 100g enthält ein Weckmann etwa 54g Kohlenhydrate. Ein mittlerer Weckmann (150g) kommt damit auf rund 80g."
     },
     {
       "question": "Wie viel Protein steckt in einem Weckmann?",
-      "answer": "Pro 100g liefert ein Weckmann etwa 7,5g Eiweiß. Ein mittlerer Weckmann (150g) enthält rund 11g Protein."
+      "answer": "Pro 100g liefert ein Weckmann etwa 10g Eiweiß. Ein mittlerer Weckmann (150g) enthält rund 15g Protein."
     },
     {
       "question": "Ist ein Weckmann zum Abnehmen geeignet?",
-      "answer": "Mit rund 435 kcal pro Stück ist ein mittlerer Weckmann eher kalorienreich. In einer Diät passt er als gelegentlicher Genuss, am besten in kleiner Größe oder geteilt."
+      "answer": "Mit rund 482 kcal pro Stück ist ein mittlerer Weckmann eher kalorienreich. In einer Diät passt er als gelegentlicher Genuss, am besten in kleiner Größe oder geteilt."
     },
     {
       "question": "Ist ein Weckmann gesund?",

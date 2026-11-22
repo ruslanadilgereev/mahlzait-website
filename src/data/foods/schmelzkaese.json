@@ -3,24 +3,25 @@
   "name": "Schmelzkäse",
   "emoji": "🧀",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171290 (Cheese, pasteurized process, American, without added vitamin D), Werte je 100 g",
   "seo": {
-    "title": "Schmelzkäse Kalorien: Naehrwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Schmelzkäse? 100g haben ca. 280 kcal, eine Scheibe rund 56 kcal. Naehrwerte, Light-Varianten und Tipps im Ueberblick.",
+    "title": "Schmelzkäse Kalorien: Nährwerte & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Schmelzkäse? 100g haben ca. 371 kcal, eine Scheibe rund 74 kcal. Nährwerte, Light-Varianten und Tipps im Überblick.",
     "keywords": [
       "kalorien schmelzkäse",
       "schmelzkäse kalorien",
       "schmelzkäse kcal",
-      "schmelzkäse naehrwerte",
+      "schmelzkäse nährwerte",
       "wie viele kalorien hat schmelzkäse",
       "schmelzkäse scheibe kalorien",
       "light schmelzkäse kalorien"
     ]
   },
   "overview": {
-    "calories_per_100g": 280,
-    "protein_per_100g": 16,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 23,
+    "calories_per_100g": 371,
+    "protein_per_100g": 18.1,
+    "carbs_per_100g": 3.7,
+    "fat_per_100g": 31.8,
     "fiber_per_100g": 0,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Portion (30g)"
@@ -29,136 +30,178 @@
     {
       "name": "1 Scheibe (20g)",
       "portion_g": 20,
-      "calories": 56,
-      "protein": 3.2,
-      "carbs": 0.8,
-      "fat": 4.6
+      "calories": 74,
+      "protein": 3.6,
+      "carbs": 0.7,
+      "fat": 6.4
     },
     {
       "name": "1 Schmelzkäse-Ecke (25g)",
       "portion_g": 25,
-      "calories": 70,
-      "protein": 4,
-      "carbs": 1,
-      "fat": 5.8,
-      "tip": "Klassisches Portionsdreieck"
+      "calories": 73,
+      "protein": 4.1,
+      "carbs": 2.2,
+      "fat": 5.3,
+      "tip": "Klassisches Portionsdreieck",
+      "basis": [
+        {
+          "fdcId": 171254,
+          "g": 25
+        }
+      ]
     },
     {
       "name": "1 Portion (30g)",
       "portion_g": 30,
-      "calories": 84,
-      "protein": 4.8,
-      "carbs": 1.2,
-      "fat": 6.9,
+      "calories": 111,
+      "protein": 5.4,
+      "carbs": 1.1,
+      "fat": 9.5,
       "tip": "Standard-Streichmenge"
     },
     {
       "name": "1 EL Streichkäse (15g)",
       "portion_g": 15,
-      "calories": 42,
-      "protein": 2.4,
-      "carbs": 0.6,
-      "fat": 3.4
+      "calories": 44,
+      "protein": 2.5,
+      "carbs": 1.3,
+      "fat": 3.2,
+      "basis": [
+        {
+          "fdcId": 171254,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Toastbrot-Belag (40g)",
       "portion_g": 40,
-      "calories": 112,
-      "protein": 6.4,
-      "carbs": 1.6,
-      "fat": 9.2
+      "calories": 148,
+      "protein": 7.2,
+      "carbs": 1.5,
+      "fat": 12.7
     },
     {
       "name": "100g normal",
       "portion_g": 100,
-      "calories": 280,
-      "protein": 16,
-      "carbs": 4,
-      "fat": 23
+      "calories": 371,
+      "protein": 18.1,
+      "carbs": 3.7,
+      "fat": 31.8
     },
     {
       "name": "Light-Schmelzkäse 100g",
       "portion_g": 100,
-      "calories": 175,
-      "protein": 18,
-      "carbs": 6,
-      "fat": 9,
-      "tip": "Fettreduziert, deutlich weniger Kalorien"
+      "calories": 180,
+      "protein": 24.6,
+      "carbs": 3.5,
+      "fat": 7,
+      "tip": "Fettreduziert, deutlich weniger Kalorien",
+      "basis": [
+        {
+          "fdcId": 169080,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Frischkäse",
-      "calories": 250,
-      "emoji": "🧀"
+      "name": "Frischkäse (30g)",
+      "calories": 76,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "fdcId": 171246,
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Gouda",
-      "calories": 356,
-      "emoji": "🧀"
+      "name": "Gouda (30g)",
+      "calories": 107,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "fdcId": 171241,
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Butter",
-      "calories": 717,
-      "emoji": "🧈"
+      "name": "Butter (30g)",
+      "calories": 215,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Quark (mager)",
-      "calories": 67,
-      "emoji": "🥛"
+      "name": "Magerquark (30g)",
+      "calories": 22,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 172181,
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Auf die Portion achten",
-      "text": "100g Schmelzkäse haben rund 280 kcal. Eine einzelne Scheibe oder Ecke liegt aber nur bei 56 bis 70 kcal - in haushaltsueblichen Mengen ist er also gut planbar.",
+      "text": "100g Schmelzkäse haben rund 371 kcal. Eine einzelne Scheibe (20g) oder Ecke (25g) liegt aber nur bei rund 73 bis 74 kcal, in haushaltsüblichen Mengen ist er also gut planbar.",
       "icon": "🧀"
     },
     {
       "title": "Light-Variante spart Kalorien",
-      "text": "Fettreduzierter Schmelzkäse kommt auf etwa 175 kcal pro 100g statt 280 kcal und liefert dabei sogar etwas mehr Eiweiss. Ideal, wenn Sie auf Kalorien achten.",
+      "text": "Fettreduzierter Schmelzkäse kommt auf etwa 180 kcal pro 100g statt 371 kcal und liefert dabei sogar mehr Eiweiß. Ideal, wenn Sie auf Kalorien achten.",
       "icon": "🪶"
     },
     {
-      "title": "Solider Eiweisslieferant",
-      "text": "Mit etwa 16g Protein pro 100g traegt Schmelzkäse zur Eiweissversorgung bei. Eine Portion auf Vollkornbrot kombiniert Eiweiss mit saettigenden Ballaststoffen.",
+      "title": "Solider Eiweißlieferant",
+      "text": "Mit etwa 18g Protein pro 100g trägt Schmelzkäse zur Eiweißversorgung bei. Eine Portion auf Vollkornbrot kombiniert Eiweiß mit sättigenden Ballaststoffen.",
       "icon": "💪"
     },
     {
       "title": "Salzgehalt im Blick behalten",
-      "text": "Schmelzkäse enthaelt durch die Schmelzsalze meist relativ viel Salz. Wer auf den Blutdruck achtet, sollte ihn eher sparsam einsetzen und salzarme Beilagen waehlen.",
+      "text": "Schmelzkäse enthält durch die Schmelzsalze meist relativ viel Salz. Wer auf den Blutdruck achtet, sollte ihn eher sparsam einsetzen und salzarme Beilagen wählen.",
       "icon": "🧂"
     },
     {
-      "title": "Praktisch zum Ueberbacken",
-      "text": "Schmelzkäse wird beim Erhitzen schoen cremig und eignet sich gut fuer Toast, Aufläufe oder Saucen - die Kalorien bleiben dabei gleich, nur die Menge zaehlt.",
+      "title": "Praktisch zum Überbacken",
+      "text": "Schmelzkäse wird beim Erhitzen schön cremig und eignet sich gut für Toast, Aufläufe oder Saucen, die Kalorien bleiben dabei gleich, nur die Menge zählt.",
       "icon": "🔥"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Schmelzkäse?",
-      "answer": "100g Schmelzkäse haben etwa 280 kcal. Eine Scheibe (20g) liegt bei rund 56 kcal, eine klassische Ecke (25g) bei etwa 70 kcal."
+      "answer": "100g Schmelzkäse haben etwa 371 kcal. Eine Scheibe (20g) liegt bei rund 74 kcal, eine klassische Ecke (25g) bei etwa 73 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Scheibe Schmelzkäse?",
-      "answer": "Eine Scheibe Schmelzkäse (ca. 20g) hat rund 56 kcal mit etwa 3g Eiweiss und 4,6g Fett."
+      "answer": "Eine Scheibe Schmelzkäse (ca. 20g) hat rund 74 kcal mit etwa 3,6g Eiweiß und 6,4g Fett."
     },
     {
       "question": "Wie viel Protein steckt in Schmelzkäse?",
-      "answer": "Schmelzkäse liefert etwa 16g Protein pro 100g. Eine 30g-Portion bringt also rund 4,8g Eiweiss."
+      "answer": "Schmelzkäse liefert etwa 18g Protein pro 100g. Eine 30g-Portion bringt also rund 5,4g Eiweiß."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Schmelzkäse?",
-      "answer": "Schmelzkäse ist kohlenhydratarm: Pro 100g sind es nur etwa 4g Kohlenhydrate, eine Portion von 30g enthaelt rund 1,2g."
+      "answer": "Schmelzkäse ist kohlenhydratarm: Pro 100g sind es nur etwa 3,7g Kohlenhydrate, eine Portion von 30g enthält rund 1,1g."
     },
     {
       "question": "Ist Schmelzkäse zum Abnehmen geeignet?",
-      "answer": "In Massen ja. Eine Scheibe oder Ecke mit 56 bis 70 kcal ist gut einplanbar. Die fettreduzierte Light-Variante mit etwa 175 kcal pro 100g spart zusaetzlich Kalorien."
+      "answer": "In Maßen ja. Eine Scheibe oder Ecke mit rund 73 bis 74 kcal ist gut einplanbar. Die fettreduzierte Light-Variante mit etwa 180 kcal pro 100g spart zusätzlich Kalorien."
     },
     {
       "question": "Ist Schmelzkäse gesund?",
-      "answer": "Schmelzkäse liefert Eiweiss und Calcium, enthaelt aber relativ viel Fett und Salz durch die Schmelzsalze. In normalen Portionen ist er unbedenklich, sollte aber nicht in grossen Mengen gegessen werden."
+      "answer": "Schmelzkäse liefert Eiweiß und Calcium, enthält aber relativ viel Fett und Salz durch die Schmelzsalze. In normalen Portionen ist er unbedenklich, sollte aber nicht in großen Mengen gegessen werden."
     }
   ],
   "related_foods": [

@@ -3,9 +3,10 @@
   "name": "Cordon Bleu",
   "emoji": "🍖",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706418 (Veal cordon bleu), Werte je 100 g",
   "seo": {
     "title": "Cordon Bleu Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Cordon Bleu? Eine Portion (200g) hat ca. 500 kcal. Alle Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat ein Cordon Bleu? Eine Portion (200g) hat ca. 438 kcal. Alle Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "cordon bleu kcal",
       "cordon bleu kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 18,
-    "carbs_per_100g": 13,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 0.8,
+    "calories_per_100g": 219,
+    "protein_per_100g": 23.7,
+    "carbs_per_100g": 9.3,
+    "fat_per_100g": 9.7,
+    "fiber_per_100g": 0.6,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Cordon Bleu (Portion)"
   },
@@ -28,89 +29,103 @@
     {
       "name": "Cordon Bleu klein (150g)",
       "portion_g": 150,
-      "calories": 375,
-      "protein": 27,
-      "carbs": 20,
-      "fat": 21
+      "calories": 329,
+      "protein": 36,
+      "carbs": 14,
+      "fat": 15
     },
     {
       "name": "Cordon Bleu Portion (200g)",
       "portion_g": 200,
-      "calories": 500,
-      "protein": 36,
-      "carbs": 26,
-      "fat": 28,
+      "calories": 438,
+      "protein": 47,
+      "carbs": 19,
+      "fat": 19,
       "tip": "Standard"
     },
     {
       "name": "Cordon Bleu groß (250g)",
       "portion_g": 250,
-      "calories": 625,
-      "protein": 45,
-      "carbs": 33,
-      "fat": 35
+      "calories": 548,
+      "protein": 59,
+      "carbs": 23,
+      "fat": 24
     },
     {
       "name": "Restaurant-Portion (300g)",
       "portion_g": 300,
-      "calories": 750,
-      "protein": 54,
-      "carbs": 39,
-      "fat": 42,
+      "calories": 657,
+      "protein": 71,
+      "carbs": 28,
+      "fat": 29,
       "tip": "Oft mit Pommes serviert"
     },
     {
       "name": "Puten-Cordon-Bleu (200g)",
       "portion_g": 200,
       "calories": 420,
-      "protein": 38,
-      "carbs": 24,
-      "fat": 22,
-      "tip": "Magerere Variante"
-    },
-    {
-      "name": "TK-Cordon-Bleu paniert (180g)",
-      "portion_g": 180,
-      "calories": 470,
-      "protein": 31,
-      "carbs": 25,
-      "fat": 25
-    },
-    {
-      "name": "Cordon Bleu vom Schwein, 1 Stück",
-      "portion_g": 220,
-      "calories": 550,
-      "protein": 40,
-      "carbs": 29,
-      "fat": 31
+      "protein": 45,
+      "carbs": 19,
+      "fat": 18,
+      "tip": "Magerere Variante",
+      "basis": [
+        {
+          "fdcId": 2706441,
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Schnitzel",
-      "calories": 580,
-      "emoji": "🍖"
+      "name": "Wiener Schnitzel (1 Stück, 250g)",
+      "calories": 595,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "schnitzel",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Putenschnitzel",
-      "calories": 290,
-      "emoji": "🦃"
+      "name": "Putenschnitzel natur (120g)",
+      "calories": 163,
+      "emoji": "🦃",
+      "basis": [
+        {
+          "slug": "putenschnitzel",
+          "g": 120
+        }
+      ]
     },
     {
-      "name": "Hähnchenbrust",
+      "name": "Hähnchenbrust (1 Stück, 200g)",
       "calories": 330,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Frikadellen",
-      "calories": 460,
-      "emoji": "🍔"
+      "name": "Frikadelle (1 Stück, 150g)",
+      "calories": 294,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "frikadellen",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Putenfleisch wählen",
-      "text": "Ein Cordon Bleu aus Putenfleisch ist magerer als die Schweine-Variante und spart pro Portion rund 80 kcal bei mehr Eiweiß.",
+      "text": "Ein Cordon Bleu aus Putenfleisch ist etwas magerer als die klassische Variante: Pro Portion (200g) spart es rund 18 kcal und etwa 1g Fett.",
       "icon": "🦃"
     },
     {
@@ -130,22 +145,22 @@
     },
     {
       "title": "Portion im Blick behalten",
-      "text": "Ein großes Cordon Bleu (250g) liefert bereits 625 kcal. Eine kleinere Portion reicht oft für ein sättigendes Mittagessen.",
+      "text": "Ein großes Cordon Bleu (250g) liefert bereits 548 kcal. Eine kleinere Portion reicht oft für ein sättigendes Mittagessen.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Cordon Bleu?",
-      "answer": "Eine normale Portion Cordon Bleu (200g) hat etwa 500 kcal. Pro 100g sind es rund 250 kcal."
+      "answer": "Eine normale Portion Cordon Bleu (200g) hat etwa 438 kcal. Pro 100g sind es rund 219 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Cordon Bleu?",
-      "answer": "Eine Portion (200g) liefert etwa 36g Eiweiß. Damit ist Cordon Bleu trotz hohem Fettgehalt eine eiweißreiche Mahlzeit."
+      "answer": "Eine Portion (200g) liefert etwa 47g Eiweiß. Damit ist Cordon Bleu trotz hohem Fettgehalt eine eiweißreiche Mahlzeit."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Cordon Bleu?",
-      "answer": "Pro 100g enthält Cordon Bleu etwa 13g Kohlenhydrate, hauptsächlich aus der Panade. Eine Portion (200g) kommt auf rund 26g."
+      "answer": "Pro 100g enthält Cordon Bleu etwa 9g Kohlenhydrate, hauptsächlich aus der Panade. Eine Portion (200g) kommt auf rund 19g."
     },
     {
       "question": "Ist Cordon Bleu zum Abnehmen geeignet?",
@@ -157,7 +172,7 @@
     },
     {
       "question": "Hat Puten-Cordon-Bleu weniger Kalorien?",
-      "answer": "Ja. Eine Puten-Variante (200g) hat mit rund 420 kcal etwa 80 kcal weniger als die klassische Schweine-Variante und mehr Eiweiß."
+      "answer": "Kaum. Eine Puten-Variante (200g) hat mit rund 420 kcal nur etwa 18 kcal weniger als das klassische Cordon Bleu (ca. 438 kcal) und ähnlich viel Eiweiß."
     }
   ],
   "related_foods": [

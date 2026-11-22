@@ -3,9 +3,10 @@
   "name": "Hot-Dog-Brötchen",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 172796 (Rolls, hamburger or hotdog, plain), Werte je 100 g",
   "seo": {
     "title": "Hot-Dog-Brötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Hot-Dog-Brötchen? Ein Brötchen (45g) hat ca. 131 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat ein Hot-Dog-Brötchen? Ein Brötchen (45g) hat ca. 126 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps zum Abnehmen.",
     "keywords": [
       "hot dog brötchen kalorien",
       "hot dog brötchen kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 4.5,
-    "fiber_per_100g": 2.3,
+    "calories_per_100g": 279,
+    "protein_per_100g": 9.8,
+    "carbs_per_100g": 50.1,
+    "fat_per_100g": 3.9,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 45,
     "typical_portion_name": "1 Hot-Dog-Brötchen (45g)"
   },
@@ -28,15 +29,15 @@
     {
       "name": "Hot-Dog-Brötchen klein/Mini (30g)",
       "portion_g": 30,
-      "calories": 87,
+      "calories": 84,
       "protein": 3,
-      "carbs": 16,
+      "carbs": 15,
       "fat": 1
     },
     {
       "name": "1 Hot-Dog-Brötchen (45g)",
       "portion_g": 45,
-      "calories": 131,
+      "calories": 126,
       "protein": 4,
       "carbs": 23,
       "fat": 2,
@@ -45,71 +46,99 @@
     {
       "name": "1 Hot-Dog-Brötchen groß (60g)",
       "portion_g": 60,
-      "calories": 174,
-      "protein": 5,
-      "carbs": 31,
-      "fat": 3
+      "calories": 167,
+      "protein": 6,
+      "carbs": 30,
+      "fat": 2
     },
     {
       "name": "2 Hot-Dog-Brötchen (90g)",
       "portion_g": 90,
-      "calories": 261,
-      "protein": 8,
-      "carbs": 47,
+      "calories": 251,
+      "protein": 9,
+      "carbs": 45,
       "fat": 4
     },
     {
       "name": "Vollkorn-Hot-Dog-Brötchen (45g)",
       "portion_g": 45,
-      "calories": 124,
-      "protein": 5,
-      "carbs": 21,
+      "calories": 121,
+      "protein": 6,
+      "carbs": 20,
       "fat": 2,
-      "tip": "Mehr Ballaststoffe"
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 174090,
+          "g": 45
+        }
+      ]
     },
     {
       "name": "4er-Packung (180g)",
       "portion_g": 180,
-      "calories": 522,
-      "protein": 16,
-      "carbs": 94,
-      "fat": 8
+      "calories": 502,
+      "protein": 18,
+      "carbs": 90,
+      "fat": 7
     },
     {
       "name": "8er-Packung (360g)",
       "portion_g": 360,
-      "calories": 1044,
-      "protein": 32,
-      "carbs": 187,
-      "fat": 16
+      "calories": 1004,
+      "protein": 35,
+      "carbs": 180,
+      "fat": 14
     }
   ],
   "comparison": [
     {
-      "name": "Burger-Brötchen",
-      "calories": 135,
-      "emoji": "🍔"
+      "name": "Burger-Brötchen (1 Stück, 50g)",
+      "calories": 145,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger-broetchen",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Brötchen (Weizen)",
-      "calories": 140,
-      "emoji": "🥖"
+      "name": "Brötchen (Weizen, 60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Toastbrot (Scheibe)",
-      "calories": 66,
-      "emoji": "🍞"
+      "calories": 80,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot"
+        }
+      ]
     },
     {
-      "name": "Brezel",
-      "calories": 160,
-      "emoji": "🥨"
+      "name": "Brezel (1 Stück)",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienschlanke Wahl beim Brot",
-      "text": "Ein Hot-Dog-Brötchen mit 45g hat nur etwa 131 kcal und damit weniger als ein klassisches Weizenbrötchen. Wer auf das Gewicht achtet, kann hier ruhig zugreifen.",
+      "text": "Ein Hot-Dog-Brötchen mit 45g hat nur etwa 126 kcal und damit weniger als ein klassisches Weizenbrötchen. Wer auf das Gewicht achtet, kann hier ruhig zugreifen.",
       "icon": "🌭"
     },
     {
@@ -119,7 +148,7 @@
     },
     {
       "title": "Auf den Belag achten",
-      "text": "Nicht das Brötchen selbst, sondern Würstchen, Ketchup, Senf und geröstete Zwiebeln treiben die Kalorien hoch. Ein kompletter Hot Dog kommt schnell auf 300 bis 400 kcal.",
+      "text": "Nicht das Brötchen selbst, sondern Würstchen, Ketchup, Senf und geröstete Zwiebeln treiben die Kalorien hoch. Ein kompletter Hot Dog hat schnell ein Vielfaches der Kalorien des Brötchens.",
       "icon": "🥫"
     },
     {
@@ -136,23 +165,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Hot-Dog-Brötchen?",
-      "answer": "Ein einzelnes Hot-Dog-Brötchen (45g) hat etwa 131 kcal. Pro 100g sind es rund 290 kcal."
+      "answer": "Ein einzelnes Hot-Dog-Brötchen (45g) hat etwa 126 kcal. Pro 100g sind es rund 279 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Hot-Dog-Brötchen pro 100g?",
-      "answer": "100g Hot-Dog-Brötchen enthalten ungefähr 290 kcal, 9g Eiweiß, 52g Kohlenhydrate und 4,5g Fett."
+      "answer": "100g Hot-Dog-Brötchen enthalten ungefähr 279 kcal, 9,8g Eiweiß, 50g Kohlenhydrate und 3,9g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Hot-Dog-Brötchen?",
-      "answer": "Ein Brötchen (45g) liefert rund 23g Kohlenhydrate. Pro 100g sind es etwa 52g, da das Brötchen überwiegend aus Weizenmehl besteht."
+      "answer": "Ein Brötchen (45g) liefert rund 23g Kohlenhydrate. Pro 100g sind es etwa 50g, da das Brötchen überwiegend aus Weizenmehl besteht."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Hot-Dog-Brötchen?",
-      "answer": "Ein Hot-Dog-Brötchen (45g) enthält etwa 4g Eiweiß, pro 100g rund 9g. Vollkorn-Varianten liefern etwas mehr."
+      "answer": "Ein Hot-Dog-Brötchen (45g) enthält etwa 4g Eiweiß, pro 100g rund 10g. Vollkorn-Varianten liefern etwas mehr."
     },
     {
       "question": "Sind Hot-Dog-Brötchen zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 131 kcal pro Brötchen sind sie kalorienärmer als viele andere Brötchen. Entscheidend für die Kalorienbilanz ist vor allem der Belag."
+      "answer": "In Maßen ja. Mit rund 126 kcal pro Brötchen sind sie kalorienärmer als viele andere Brötchen. Entscheidend für die Kalorienbilanz ist vor allem der Belag."
     },
     {
       "question": "Sind Hot-Dog-Brötchen gesund?",

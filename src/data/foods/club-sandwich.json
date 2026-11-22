@@ -3,9 +3,10 @@
   "name": "Club Sandwich",
   "emoji": "🥪",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706993 (Club sandwich on white), Werte je 100 g",
   "seo": {
     "title": "Club Sandwich Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Club Sandwich? Ein Standard-Club-Sandwich (280g) hat ca. 700 kcal. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Club Sandwich? Ein Standard-Club-Sandwich (280g) hat ca. 622 kcal. Nährwerte pro 100g & Portion, Varianten und Diät-Tipps.",
     "keywords": [
       "club sandwich kcal",
       "club sandwich kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 12,
-    "fiber_per_100g": 1.6,
+    "calories_per_100g": 222,
+    "protein_per_100g": 15.1,
+    "carbs_per_100g": 23.1,
+    "fat_per_100g": 7.5,
+    "fiber_per_100g": 1,
     "typical_portion_g": 280,
     "typical_portion_name": "1 Club Sandwich (Standard)"
   },
@@ -28,90 +29,123 @@
     {
       "name": "Mini/Snack-Portion (120g)",
       "portion_g": 120,
-      "calories": 300,
-      "protein": 17,
-      "carbs": 26,
-      "fat": 14
+      "calories": 266,
+      "protein": 18,
+      "carbs": 28,
+      "fat": 9
     },
     {
       "name": "Halbes Club Sandwich (150g)",
       "portion_g": 150,
-      "calories": 375,
-      "protein": 21,
-      "carbs": 33,
-      "fat": 18
+      "calories": 333,
+      "protein": 23,
+      "carbs": 35,
+      "fat": 11
     },
     {
       "name": "Club Sandwich klein (200g)",
       "portion_g": 200,
-      "calories": 500,
-      "protein": 28,
-      "carbs": 44,
-      "fat": 24
+      "calories": 444,
+      "protein": 30,
+      "carbs": 46,
+      "fat": 15
     },
     {
       "name": "Club Sandwich Standard (280g)",
       "portion_g": 280,
-      "calories": 700,
-      "protein": 39,
-      "carbs": 62,
-      "fat": 34,
+      "calories": 622,
+      "protein": 42,
+      "carbs": 65,
+      "fat": 21,
       "tip": "Standard"
     },
     {
       "name": "Club Sandwich groß (340g)",
       "portion_g": 340,
-      "calories": 850,
-      "protein": 48,
-      "carbs": 75,
-      "fat": 41
+      "calories": 755,
+      "protein": 51,
+      "carbs": 79,
+      "fat": 26
     },
     {
       "name": "Café-Portion mit Pommes (450g)",
       "portion_g": 450,
-      "calories": 1125,
-      "protein": 52,
-      "carbs": 118,
-      "fat": 56,
-      "tip": "Mit Beilage"
+      "calories": 1113,
+      "protein": 48,
+      "carbs": 128,
+      "fat": 45,
+      "tip": "Mit Beilage",
+      "basis": [
+        {
+          "g": 280
+        },
+        {
+          "fdcId": 2709462,
+          "g": 170
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Burger",
-      "calories": 520,
-      "emoji": "🍔"
+      "name": "Burger (1 Stück, 220g)",
+      "calories": 634,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger",
+          "g": 220
+        }
+      ]
     },
     {
-      "name": "Subway-Sandwich",
-      "calories": 390,
-      "emoji": "🥪"
+      "name": "Subway-Sandwich (6 Inch, 230g)",
+      "calories": 361,
+      "emoji": "🥪",
+      "basis": [
+        {
+          "slug": "subway-sandwich",
+          "g": 230
+        }
+      ]
     },
     {
-      "name": "Sandwich (einfach)",
-      "calories": 340,
-      "emoji": "🍞"
+      "name": "Sandwich einfach (1 Stück, 150g)",
+      "calories": 431,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "sandwich",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreiche Hauptmahlzeit",
-      "text": "Durch Hähnchen, Speck und Ei liefert ein Standard-Club-Sandwich (280g) rund 39g Eiweiß und sättigt dadurch lange.",
+      "text": "Durch Hähnchen, Speck und Ei liefert ein Standard-Club-Sandwich (280g) rund 42g Eiweiß und sättigt dadurch lange.",
       "icon": "💪"
     },
     {
       "title": "Mayonnaise sparen",
-      "text": "Ein Großteil des Fetts steckt in der Mayonnaise. Wer sie weglässt oder durch Senf oder Joghurt-Dressing ersetzt, spart leicht 100 bis 150 kcal.",
+      "text": "Ein Großteil des Fetts steckt in der Mayonnaise. Wer sie weglässt oder durch Senf oder Joghurt-Dressing ersetzt, spart spürbar Kalorien.",
       "icon": "🥄"
     },
     {
       "title": "Halbe Portion zum Abnehmen",
-      "text": "Ein halbes Club Sandwich (150g) hat etwa 375 kcal und passt mit einem Beilagensalat gut in eine kalorienbewusste Mittagsmahlzeit.",
+      "text": "Ein halbes Club Sandwich (150g) hat etwa 333 kcal und passt mit einem Beilagensalat gut in eine kalorienbewusste Mittagsmahlzeit.",
       "icon": "🥗"
     },
     {
@@ -121,26 +155,26 @@
     },
     {
       "title": "Auf die Beilage achten",
-      "text": "Werden Pommes statt Salat dazu serviert, verdoppelt sich die Kalorienmenge der Mahlzeit schnell auf über 1100 kcal.",
+      "text": "Werden Pommes statt Salat dazu serviert, steigt die Mahlzeit schnell auf rund 1113 kcal, fast doppelt so viel wie das Sandwich allein.",
       "icon": "🍟"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Club Sandwich?",
-      "answer": "Ein Standard-Club-Sandwich (280g) hat etwa 700 kcal. Pro 100g sind es rund 250 kcal."
+      "answer": "Ein Standard-Club-Sandwich (280g) hat etwa 622 kcal. Pro 100g sind es rund 222 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Club Sandwich?",
-      "answer": "Ein Standard-Club-Sandwich (280g) liefert etwa 39g Eiweiß, hauptsächlich aus Hähnchen, Speck und Ei. Pro 100g sind es rund 14g."
+      "answer": "Ein Standard-Club-Sandwich (280g) liefert etwa 42g Eiweiß, hauptsächlich aus Hähnchen, Speck und Ei. Pro 100g sind es rund 15g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Club Sandwich?",
-      "answer": "Pro 100g enthält ein Club Sandwich etwa 22g Kohlenhydrate. Ein Standard-Sandwich (280g) kommt damit auf rund 62g, vor allem aus dem Toastbrot."
+      "answer": "Pro 100g enthält ein Club Sandwich etwa 23g Kohlenhydrate. Ein Standard-Sandwich (280g) kommt damit auf rund 65g, vor allem aus dem Toastbrot."
     },
     {
       "question": "Ist ein Club Sandwich zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit etwa 700 kcal ist ein ganzes Club Sandwich eine vollwertige Hauptmahlzeit. Wer abnehmen möchte, wählt eine halbe Portion (ca. 375 kcal) oder spart bei Mayonnaise und Beilage."
+      "answer": "In Maßen ja. Mit etwa 622 kcal ist ein ganzes Club Sandwich eine vollwertige Hauptmahlzeit. Wer abnehmen möchte, wählt eine halbe Portion (ca. 333 kcal) oder spart bei Mayonnaise und Beilage."
     },
     {
       "question": "Ist ein Club Sandwich gesund?",
@@ -148,7 +182,7 @@
     },
     {
       "question": "Hat ein Club Sandwich mehr Kalorien als ein Burger?",
-      "answer": "Pro Portion ja: Ein Standard-Club-Sandwich (280g) hat mit ca. 700 kcal mehr als ein durchschnittlicher Burger mit rund 520 kcal, da es doppelstöckig ist und mehr Belag enthält."
+      "answer": "Pro Portion etwa gleich viel: Ein Standard-Club-Sandwich (280g) hat mit ca. 622 kcal etwas weniger als ein Burger (220g) mit rund 634 kcal, obwohl es doppelstöckig ist und mehr Belag enthält."
     }
   ],
   "related_foods": [

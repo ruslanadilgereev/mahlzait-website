@@ -3,50 +3,267 @@
   "name": "Weißwein",
   "emoji": "🍷",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 174837 (Alcoholic beverage, wine, table, white: 82 kcal), Werte je 100 g; je 100 ml mit 0,994 g/ml 82 kcal",
   "seo": {
     "title": "Weißwein Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Weißwein? Nährwerte pro 100ml & Glas. Riesling, Chardonnay, Grauburgunder & Schorle im Vergleich.",
-    "keywords": ["weißwein kalorien", "kalorien weißwein", "wein kalorien", "riesling kalorien", "weißwein nährwerte", "weinschorle kalorien", "chardonnay kalorien", "grauburgunder kalorien"]
+    "keywords": [
+      "weißwein kalorien",
+      "kalorien weißwein",
+      "wein kalorien",
+      "riesling kalorien",
+      "weißwein nährwerte",
+      "weinschorle kalorien",
+      "chardonnay kalorien",
+      "grauburgunder kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 69,
+    "calories_per_100g": 82,
     "protein_per_100g": 0.1,
-    "carbs_per_100g": 0.6,
+    "carbs_per_100g": 2.6,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 200,
+    "typical_portion_g": 199,
     "typical_portion_name": "1 Glas (0,2l)"
   },
   "variants": [
-    { "name": "Riesling trocken (0,2l)", "portion_g": 200, "calories": 136, "protein": 0, "carbs": 1, "fat": 0, "tip": "Kalorienärmster Weißwein" },
-    { "name": "Chardonnay (0,2l)", "portion_g": 200, "calories": 146, "protein": 0, "carbs": 2, "fat": 0 },
-    { "name": "Grauburgunder (0,2l)", "portion_g": 200, "calories": 142, "protein": 0, "carbs": 1, "fat": 0 },
-    { "name": "Müller-Thurgau (0,2l)", "portion_g": 200, "calories": 140, "protein": 0, "carbs": 4, "fat": 0 },
-    { "name": "Sauvignon Blanc (0,2l)", "portion_g": 200, "calories": 140, "protein": 0, "carbs": 2, "fat": 0 },
-    { "name": "Weißweinschorle (0,4l)", "portion_g": 400, "calories": 138, "protein": 0, "carbs": 1, "fat": 0 },
-    { "name": "Spätlese halbtrocken (0,2l)", "portion_g": 200, "calories": 160, "protein": 0, "carbs": 10, "fat": 0 },
-    { "name": "Gewürztraminer (0,2l)", "portion_g": 200, "calories": 152, "protein": 0, "carbs": 6, "fat": 0 }
+    {
+      "name": "Riesling trocken (0,2l)",
+      "portion_g": 200,
+      "calories": 160,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 173200,
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Chardonnay (0,2l)",
+      "portion_g": 198,
+      "calories": 166,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 174110,
+          "ml": 200,
+          "g": 198
+        }
+      ]
+    },
+    {
+      "name": "Grauburgunder (0,2l)",
+      "portion_g": 198,
+      "calories": 164,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "tip": "USDA: Pinot Gris (Grigio)",
+      "basis": [
+        {
+          "fdcId": 174841,
+          "ml": 200,
+          "g": 198
+        }
+      ]
+    },
+    {
+      "name": "Müller-Thurgau (0,2l)",
+      "portion_g": 200,
+      "calories": 152,
+      "protein": 0,
+      "carbs": 7,
+      "fat": 0,
+      "tip": "Kalorienärmster Weißwein laut USDA",
+      "basis": [
+        {
+          "fdcId": 173198,
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Sauvignon Blanc (0,2l)",
+      "portion_g": 198,
+      "calories": 160,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 173201,
+          "ml": 200,
+          "g": 198
+        }
+      ]
+    },
+    {
+      "name": "Weißweinschorle (0,4l)",
+      "portion_g": 399,
+      "calories": 163,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "tip": "halb Wein, halb Wasser",
+      "basis": [
+        {
+          "ml": 200,
+          "g": 199
+        },
+        {
+          "slug": "mineralwasser",
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Spätlese (0,2l)",
+      "portion_g": 208,
+      "calories": 233,
+      "protein": 0,
+      "carbs": 28,
+      "fat": 0,
+      "tip": "Late Harvest, süß",
+      "basis": [
+        {
+          "fdcId": 173202,
+          "ml": 200,
+          "g": 208
+        }
+      ]
+    },
+    {
+      "name": "Gewürztraminer (0,2l)",
+      "portion_g": 200,
+      "calories": 162,
+      "protein": 0,
+      "carbs": 5,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 174843,
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Rotwein (0,2l)", "calories": 170, "emoji": "🍷" },
-    { "name": "Bier (0,5l)", "calories": 215, "emoji": "🍺" },
-    { "name": "Prosecco (0,1l)", "calories": 80, "emoji": "🥂" },
-    { "name": "Aperol Spritz", "calories": 175, "emoji": "🍹" }
+    {
+      "name": "Rotwein (0,2l)",
+      "calories": 169,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-rot",
+          "ml": 200,
+          "g": 199
+        }
+      ]
+    },
+    {
+      "name": "Bier (0,5l)",
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Prosecco (0,1l)",
+      "calories": 76,
+      "emoji": "🥂",
+      "basis": [
+        {
+          "slug": "prosecco",
+          "ml": 100,
+          "g": 101
+        }
+      ]
+    },
+    {
+      "name": "Aperol Spritz (250ml)",
+      "calories": 175,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Weinschorle trinken", "text": "Weißweinschorle hat nur die Hälfte der Kalorien eines vollen Glases – und ist auch erfrischender.", "icon": "💧" },
-    { "title": "Trocken wählen", "text": "Trockener Weißwein hat 1-4g Restzucker pro Liter, lieblicher bis zu 45g. Das macht bis zu 30% Kalorienunterschied.", "icon": "📉" },
-    { "title": "Kleine Gläser nutzen", "text": "Ein 0,1l-Glas hat nur 69 kcal – genug zum Genießen, ohne das Kalorienkonto zu sprengen.", "icon": "📏" },
-    { "title": "Zwischen den Gläsern Wasser", "text": "Abwechselnd Wein und Wasser trinken halbiert die Kalorienmenge und den Alkoholkonsum.", "icon": "🚰" },
-    { "title": "Riesling als beste Wahl", "text": "Deutscher Riesling trocken hat mit ca. 68 kcal/100ml die wenigsten Kalorien unter den Weißweinen.", "icon": "🏆" }
+    {
+      "title": "Weinschorle trinken",
+      "text": "Weißweinschorle hat nur die Hälfte der Kalorien eines vollen Glases und ist auch erfrischender.",
+      "icon": "💧"
+    },
+    {
+      "title": "Trocken wählen",
+      "text": "Trockener Weißwein hat 1-4g Restzucker pro Liter, lieblicher bis zu 45g. Laut USDA hat ein Glas süße Spätlese rund 40 % mehr Kalorien als trockener Weißwein.",
+      "icon": "📉"
+    },
+    {
+      "title": "Kleine Gläser nutzen",
+      "text": "Ein 0,1l-Glas hat nur rund 81 kcal, genug zum Genießen, ohne das Kalorienkonto zu sprengen.",
+      "icon": "📏"
+    },
+    {
+      "title": "Zwischen den Gläsern Wasser",
+      "text": "Abwechselnd Wein und Wasser trinken halbiert die Kalorienmenge und den Alkoholkonsum.",
+      "icon": "🚰"
+    },
+    {
+      "title": "Leichte Rebsorten wählen",
+      "text": "Laut USDA liegt Müller-Thurgau mit ca. 76 kcal/100ml am niedrigsten, Riesling mit ca. 80 kcal/100ml knapp dahinter.",
+      "icon": "🏆"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Glas Weißwein?", "answer": "Ein Glas Weißwein (0,2l) hat ca. 136-152 kcal je nach Sorte. Trockener Riesling am wenigsten (136 kcal), Gewürztraminer etwas mehr (152 kcal)." },
-    { "question": "Hat Weißwein weniger Kalorien als Rotwein?", "answer": "Ja, leicht. Weißwein hat ca. 69 kcal/100ml, Rotwein ca. 85 kcal/100ml. Pro Glas (0,2l) sind das ca. 30 kcal Unterschied." },
-    { "question": "Wie viele Kalorien hat eine Weinschorle?", "answer": "Eine Weinschorle (0,4l, halb Wein halb Wasser) hat ca. 138 kcal – so viel wie ein Glas purer Wein, aber mit doppeltem Volumen." },
-    { "question": "Welcher Weißwein hat die wenigsten Kalorien?", "answer": "Trockener Riesling mit ca. 68 kcal/100ml. Generell gilt: je trockener der Wein, desto weniger Kalorien durch weniger Restzucker." },
-    { "question": "Macht Weißwein dick?", "answer": "Alkohol hat 7 kcal/g und hemmt die Fettverbrennung. Ein Glas täglich (138 kcal) sind 50.000 kcal im Jahr – theoretisch 7kg. Moderat genossen ist es aber kein Problem." },
-    { "question": "Wie viel Zucker hat Weißwein?", "answer": "Trockener Weißwein: unter 4g/Liter. Halbtrocken: bis 12g/Liter. Lieblich: bis 45g/Liter. Je süßer, desto mehr Kalorien." }
+    {
+      "question": "Wie viele Kalorien hat ein Glas Weißwein?",
+      "answer": "Ein Glas Weißwein (0,2l) hat laut USDA ca. 152 bis 166 kcal je nach Sorte. Müller-Thurgau am wenigsten (ca. 152 kcal), Chardonnay am meisten (ca. 166 kcal). Süße Spätlese kommt auf ca. 233 kcal."
+    },
+    {
+      "question": "Hat Weißwein weniger Kalorien als Rotwein?",
+      "answer": "Ja, leicht. Weißwein hat ca. 82 kcal/100ml, Rotwein ca. 85 kcal/100ml. Pro Glas (0,2l) sind das ca. 6 kcal Unterschied."
+    },
+    {
+      "question": "Wie viele Kalorien hat eine Weinschorle?",
+      "answer": "Eine Weinschorle (0,4l, halb Wein halb Wasser) hat ca. 163 kcal, so viel wie ein Glas purer Wein, aber mit doppeltem Volumen."
+    },
+    {
+      "question": "Welcher Weißwein hat die wenigsten Kalorien?",
+      "answer": "Laut USDA Müller-Thurgau mit ca. 76 kcal/100ml, gefolgt von Riesling (ca. 80 kcal/100ml). Generell gilt: je trockener der Wein, desto weniger Kalorien durch weniger Restzucker."
+    },
+    {
+      "question": "Macht Weißwein dick?",
+      "answer": "Alkohol hat 7 kcal/g und hemmt die Fettverbrennung. Ein Glas täglich (ca. 163 kcal) sind rund 59.000 kcal im Jahr, theoretisch mehrere Kilo Körperfett. Moderat genossen ist es aber kein Problem."
+    },
+    {
+      "question": "Wie viel Zucker hat Weißwein?",
+      "answer": "Laut USDA enthält Weißwein im Schnitt rund 1g Zucker pro 100ml. Trockener Weißwein: unter 4g/Liter. Halbtrocken: bis 12g/Liter. Lieblich: bis 45g/Liter. Je süßer, desto mehr Kalorien."
+    }
   ],
-  "related_foods": ["wein-rot", "prosecco", "aperol-spritz", "hugo"]
+  "related_foods": [
+    "wein-rot",
+    "prosecco",
+    "aperol-spritz",
+    "hugo"
+  ]
 }

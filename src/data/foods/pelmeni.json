@@ -3,9 +3,10 @@
   "name": "Pelmeni",
   "emoji": "🥟",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708763 (Ravioli, meat-filled, no sauce), Werte je 100 g",
   "seo": {
     "title": "Pelmeni Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Pelmeni? Gekocht ca. 252 kcal pro 100g. Nährwerte je Portion & Stück, russische Teigtaschen im Vergleich + Diät-Tipps.",
+    "description": "Wie viele Kalorien haben Pelmeni? Gekocht ca. 190 kcal pro 100g. Nährwerte je Portion & Stück, russische Teigtaschen im Vergleich + Diät-Tipps.",
     "keywords": [
       "pelmeni kalorien",
       "pelmeni kcal",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 252,
-    "protein_per_100g": 11.5,
-    "carbs_per_100g": 27,
-    "fat_per_100g": 10.5,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 190,
+    "protein_per_100g": 12.6,
+    "carbs_per_100g": 17.7,
+    "fat_per_100g": 7.4,
+    "fiber_per_100g": 0.6,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion (gekocht)"
   },
@@ -29,91 +30,124 @@
     {
       "name": "1 Pelmen einzeln (12g)",
       "portion_g": 12,
-      "calories": 30,
-      "protein": 1,
-      "carbs": 3,
-      "fat": 1
+      "calories": 23,
+      "protein": 1.5,
+      "carbs": 2.1,
+      "fat": 0.9
     },
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 378,
-      "protein": 17,
-      "carbs": 41,
-      "fat": 16,
+      "calories": 285,
+      "protein": 18.9,
+      "carbs": 26.6,
+      "fat": 11.1,
       "tip": "Beilage oder leichte Mahlzeit"
     },
     {
       "name": "Normale Portion (250g)",
       "portion_g": 250,
-      "calories": 630,
-      "protein": 29,
-      "carbs": 68,
-      "fat": 26,
+      "calories": 475,
+      "protein": 31.5,
+      "carbs": 44.3,
+      "fat": 18.5,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (350g)",
       "portion_g": 350,
-      "calories": 882,
-      "protein": 40,
-      "carbs": 95,
-      "fat": 37
+      "calories": 665,
+      "protein": 44.1,
+      "carbs": 62,
+      "fat": 25.9
     },
     {
-      "name": "Pelmeni gebraten (250g)",
-      "portion_g": 250,
-      "calories": 730,
-      "protein": 29,
-      "carbs": 68,
-      "fat": 38,
-      "tip": "In Öl/Butter gebraten, deutlich fettreicher"
-    },
-    {
-      "name": "Pelmeni roh (100g, vor dem Kochen)",
-      "portion_g": 100,
-      "calories": 275,
-      "protein": 12.5,
-      "carbs": 29,
-      "fat": 11.5,
-      "tip": "Ungekocht etwas dichter, Wert bezieht sich auf die rohe Teigtasche"
+      "name": "Pelmeni gebraten (250g + 10g Butter)",
+      "portion_g": 260,
+      "calories": 547,
+      "protein": 31.6,
+      "carbs": 44.3,
+      "fat": 26.6,
+      "tip": "In Butter gebraten, fettreicher",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Mit Schmand (250g + 30g)",
       "portion_g": 280,
-      "calories": 720,
-      "protein": 30,
-      "carbs": 69,
-      "fat": 35,
-      "tip": "Klassisch mit Schmand serviert"
+      "calories": 547,
+      "protein": 32.3,
+      "carbs": 45.2,
+      "fat": 25.7,
+      "tip": "Klassisch mit Schmand serviert",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "slug": "schmand",
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Maultaschen (250g)",
-      "calories": 410,
-      "emoji": "🥟"
+      "calories": 475,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "maultaschen",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Tortellini (250g)",
-      "calories": 575,
-      "emoji": "🍝"
+      "calories": 590,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "tortellini",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Ravioli (250g)",
-      "calories": 535,
-      "emoji": "🥟"
+      "calories": 243,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "ravioli",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Gyoza (250g)",
-      "calories": 525,
-      "emoji": "🥟"
+      "calories": 480,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "gyoza",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Auf die Portionsgröße achten",
-      "text": "Eine normale Portion von 250g bringt schon rund 630 kcal auf den Teller. Wer abnehmen möchte, bleibt besser bei 150g und ergänzt mit Salat oder Gemüse.",
+      "text": "Eine normale Portion von 250g bringt schon rund 475 kcal auf den Teller. Wer abnehmen möchte, bleibt besser bei 150g und ergänzt mit Salat oder Gemüse.",
       "icon": "⚖️"
     },
     {
@@ -123,12 +157,12 @@
     },
     {
       "title": "Gekocht statt gebraten wählen",
-      "text": "Gebratene Pelmeni nehmen viel Fett auf und liegen pro Portion etwa 100 kcal höher als gekochte. Wer Kalorien sparen will, kocht sie klassisch in Brühe oder Wasser.",
+      "text": "Gebratene Pelmeni nehmen Fett auf: Schon 10g Butter in der Pfanne bringen pro Portion (250g) rund 72 kcal mehr als gekocht. Wer Kalorien sparen will, kocht sie klassisch in Brühe oder Wasser.",
       "icon": "🍲"
     },
     {
       "title": "Guter Eiweißlieferant",
-      "text": "Durch die Fleischfüllung liefern Pelmeni rund 11,5g Eiweiß pro 100g und sättigen dadurch länger als reine Teigwaren.",
+      "text": "Durch die Fleischfüllung liefern Pelmeni rund 12,6g Eiweiß pro 100g und sättigen dadurch länger als reine Teigwaren.",
       "icon": "💪"
     },
     {
@@ -140,19 +174,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Pelmeni?",
-      "answer": "Gekochte Pelmeni haben rund 252 kcal pro 100g. Eine normale Portion von 250g kommt damit auf etwa 630 kcal."
+      "answer": "Gekochte Pelmeni haben rund 190 kcal pro 100g. Eine normale Portion von 250g kommt damit auf etwa 475 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Pelmeni?",
-      "answer": "Eine normale Portion von 250g liefert ca. 630 kcal. Eine kleine Portion (150g) hat etwa 378 kcal, eine große Portion (350g) rund 882 kcal."
+      "answer": "Eine normale Portion von 250g liefert ca. 475 kcal. Eine kleine Portion (150g) hat etwa 285 kcal, eine große Portion (350g) rund 665 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Pelmeni?",
-      "answer": "Pelmeni enthalten etwa 27g Kohlenhydrate pro 100g, vor allem aus dem Teig. Eine 250g-Portion liefert rund 68g Kohlenhydrate."
+      "answer": "Pelmeni enthalten etwa 17,7g Kohlenhydrate pro 100g, vor allem aus dem Teig. Eine 250g-Portion liefert rund 44g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß haben Pelmeni?",
-      "answer": "Dank der Fleischfüllung liefern Pelmeni etwa 11,5g Eiweiß pro 100g, also rund 29g pro normaler Portion (250g)."
+      "answer": "Dank der Fleischfüllung liefern Pelmeni etwa 12,6g Eiweiß pro 100g, also rund 31,5g pro normaler Portion (250g)."
     },
     {
       "question": "Sind Pelmeni zum Abnehmen geeignet?",

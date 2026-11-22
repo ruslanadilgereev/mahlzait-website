@@ -3,24 +3,25 @@
   "name": "Sprühsahne",
   "emoji": "🥫",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 170860 (Cream, whipped, cream topping, pressurized), Werte je 100 g",
   "seo": {
-    "title": "Sprühsahne Kalorien: Naehrwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Sprühsahne? Pro 100g rund 290 kcal, ein Sahnehäubchen (10g) nur 29 kcal. Naehrwerte, Portionen & Tipps im Ueberblick.",
+    "title": "Sprühsahne Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat Sprühsahne? Pro 100g rund 257 kcal, ein Sahnehäubchen (10g) nur 26 kcal. Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "sprühsahne kalorien",
-      "spruehsahne kcal",
+      "sprühsahne kcal",
       "sahne aus der dose kalorien",
-      "sprühsahne naehrwerte",
+      "sprühsahne nährwerte",
       "kalorien sprühsahne",
       "wie viele kalorien hat sprühsahne",
       "sprühsahne fett"
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 2.3,
-    "carbs_per_100g": 8.5,
-    "fat_per_100g": 27,
+    "calories_per_100g": 257,
+    "protein_per_100g": 3.2,
+    "carbs_per_100g": 12.5,
+    "fat_per_100g": 22.2,
     "fiber_per_100g": 0,
     "typical_portion_g": 10,
     "typical_portion_name": "1 Sahnehäubchen (10g)"
@@ -29,108 +30,131 @@
     {
       "name": "Sahnehäubchen klein (5g)",
       "portion_g": 5,
-      "calories": 15,
-      "protein": 0.1,
-      "carbs": 0.4,
-      "fat": 1.4,
+      "calories": 13,
+      "protein": 0.2,
+      "carbs": 0.6,
+      "fat": 1.1,
       "tip": "Klecks auf den Kaffee"
     },
     {
       "name": "Sahnehäubchen (10g)",
       "portion_g": 10,
-      "calories": 29,
-      "protein": 0.2,
-      "carbs": 0.9,
-      "fat": 2.7,
+      "calories": 26,
+      "protein": 0.3,
+      "carbs": 1.3,
+      "fat": 2.2,
       "tip": "Standard"
     },
     {
       "name": "Portion auf Kuchen (20g)",
       "portion_g": 20,
-      "calories": 58,
-      "protein": 0.5,
-      "carbs": 1.7,
-      "fat": 5.4
+      "calories": 51,
+      "protein": 0.6,
+      "carbs": 2.5,
+      "fat": 4.4
     },
     {
-      "name": "Grosszuegige Portion (30g)",
+      "name": "Großzügige Portion (30g)",
       "portion_g": 30,
-      "calories": 87,
-      "protein": 0.7,
-      "carbs": 2.6,
-      "fat": 8.1
+      "calories": 77,
+      "protein": 1,
+      "carbs": 3.8,
+      "fat": 6.7
     },
     {
       "name": "Portion Eisbecher (50g)",
       "portion_g": 50,
-      "calories": 145,
-      "protein": 1.2,
-      "carbs": 4.3,
-      "fat": 13.5
+      "calories": 129,
+      "protein": 1.6,
+      "carbs": 6.3,
+      "fat": 11.1
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 290,
-      "protein": 2.3,
-      "carbs": 8.5,
-      "fat": 27
+      "calories": 257,
+      "protein": 3.2,
+      "carbs": 12.5,
+      "fat": 22.2
     },
     {
       "name": "Ganze Dose (250g)",
       "portion_g": 250,
-      "calories": 725,
-      "protein": 5.8,
-      "carbs": 21.3,
-      "fat": 67.5,
+      "calories": 643,
+      "protein": 8,
+      "carbs": 31.3,
+      "fat": 55.5,
       "tip": "Komplette Sprühdose"
     }
   ],
   "comparison": [
     {
       "name": "Schlagsahne geschlagen (30g)",
-      "calories": 87,
-      "emoji": "🥛"
+      "calories": 88,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sahne",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Crème fraîche (30g)",
       "calories": 89,
-      "emoji": "🥣"
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "creme-fraiche",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Sahnehäubchen Sprühsahne (30g)",
-      "calories": 87,
-      "emoji": "🥫"
+      "calories": 77,
+      "emoji": "🥫",
+      "basis": [
+        {
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Kaffeesahne (30g)",
-      "calories": 40,
-      "emoji": "☕"
+      "calories": 39,
+      "emoji": "☕",
+      "basis": [
+        {
+          "fdcId": 171255,
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Kleine Portion, grosse Wirkung",
-      "text": "Ein Sahnehäubchen von 10g schlaegt nur mit rund 29 kcal zu Buche. Die luftige Konsistenz laesst die Portion groesser wirken, als sie kalorisch ist.",
+      "title": "Kleine Portion, große Wirkung",
+      "text": "Ein Sahnehäubchen von 10g schlägt nur mit rund 26 kcal zu Buche. Die luftige Konsistenz lässt die Portion größer wirken, als sie kalorisch ist.",
       "icon": "🥫"
     },
     {
       "title": "Fett ist der Hauptfaktor",
-      "text": "Mit etwa 27g Fett pro 100g liefert Sprühsahne fast ihre gesamte Energie aus Fett. Wer Kalorien sparen will, dosiert sie sparsam statt grosszuegig.",
+      "text": "Mit etwa 22g Fett pro 100g liefert Sprühsahne den Großteil ihrer Energie aus Fett. Wer Kalorien sparen will, dosiert sie sparsam statt großzügig.",
       "icon": "🧈"
     },
     {
       "title": "Auf den Zucker achten",
-      "text": "Sprühsahne ist meist gesuesst und enthaelt rund 8,5g Kohlenhydrate pro 100g. Ungesuesste Schlagsahne hat weniger Zucker, muss aber selbst geschlagen werden.",
+      "text": "Sprühsahne ist meist gesüßt und enthält rund 12,5g Kohlenhydrate pro 100g. Ungesüßte Schlagsahne hat weniger Zucker, muss aber selbst geschlagen werden.",
       "icon": "🍬"
     },
     {
       "title": "Leichte Alternative",
-      "text": "Es gibt fettreduzierte Sprühsahne-Varianten mit weniger Fett und Kalorien. Ein Blick auf die Naehrwerttabelle der Dose lohnt sich beim Einkauf.",
+      "text": "Es gibt fettreduzierte Sprühsahne-Varianten mit weniger Fett und Kalorien. Ein Blick auf die Nährwerttabelle der Dose lohnt sich beim Einkauf.",
       "icon": "🔍"
     },
     {
-      "title": "Bewusst geniessen",
+      "title": "Bewusst genießen",
       "text": "Als Dekoration auf Kaffee, Kuchen oder Eis ist Sprühsahne in kleinen Mengen problemlos. Kritisch wird es erst, wenn die halbe Dose auf dem Dessert landet.",
       "icon": "🍰"
     }
@@ -138,27 +162,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Sprühsahne?",
-      "answer": "Sprühsahne hat rund 290 kcal pro 100g. Ein typisches Sahnehäubchen von 10g liefert etwa 29 kcal, eine Portion von 30g rund 87 kcal."
+      "answer": "Sprühsahne hat rund 257 kcal pro 100g. Ein typisches Sahnehäubchen von 10g liefert etwa 26 kcal, eine Portion von 30g rund 77 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Sahnehäubchen Sprühsahne?",
-      "answer": "Ein kleines Sahnehäubchen von 10g hat etwa 29 kcal. Bei einer grosszuegigen Portion von 30g sind es rund 87 kcal."
+      "answer": "Ein kleines Sahnehäubchen von 10g hat etwa 26 kcal. Bei einer großzügigen Portion von 30g sind es rund 77 kcal."
     },
     {
       "question": "Wie viel Fett steckt in Sprühsahne?",
-      "answer": "Sprühsahne enthaelt etwa 27g Fett pro 100g. In einem 10g-Häubchen sind das knapp 3g Fett. Das Fett liefert den Grossteil der Kalorien."
+      "answer": "Sprühsahne enthält etwa 22g Fett pro 100g. In einem 10g-Häubchen sind das gut 2g Fett. Das Fett liefert den Großteil der Kalorien."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Sprühsahne?",
-      "answer": "Pro 100g enthaelt Sprühsahne rund 8,5g Kohlenhydrate, ueberwiegend aus zugesetztem Zucker. Ungesuesste Schlagsahne enthaelt deutlich weniger."
+      "answer": "Pro 100g enthält Sprühsahne rund 12,5g Kohlenhydrate, davon etwa 8g Zucker. Ungesüßte Schlagsahne enthält deutlich weniger."
     },
     {
       "question": "Ist Sprühsahne zum Abnehmen geeignet?",
-      "answer": "In kleinen Mengen ja. Ein Sahnehäubchen von 10g hat nur 29 kcal. Problematisch wird es bei grossen Mengen, da Sprühsahne sehr fettreich ist."
+      "answer": "In kleinen Mengen ja. Ein Sahnehäubchen von 10g hat nur 26 kcal. Problematisch wird es bei großen Mengen, da Sprühsahne sehr fettreich ist."
     },
     {
-      "question": "Ist Sprühsahne gesuender als Schlagsahne?",
-      "answer": "Naehrwertlich sind beide aehnlich. Sprühsahne ist meist gesuesst und enthaelt mehr Zucker, dafuer ist die Dosierung kleiner und bequemer."
+      "question": "Ist Sprühsahne gesünder als Schlagsahne?",
+      "answer": "Nährwertlich sind beide ähnlich. Sprühsahne ist meist gesüßt und enthält mehr Zucker, dafür ist die Dosierung kleiner und bequemer."
     }
   ],
   "related_foods": [

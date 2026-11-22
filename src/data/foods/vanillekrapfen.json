@@ -3,9 +3,10 @@
   "name": "Vanillekrapfen",
   "emoji": "🍩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2708075 (Doughnut, custard-filled), Werte je 100 g",
   "seo": {
     "title": "Vanillekrapfen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Vanillekrapfen? Ein Stück (80g) hat ca. 280 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Vanillekrapfen? Ein Stück (80g) hat ca. 290 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Diät-Tipps.",
     "keywords": [
       "vanillekrapfen kalorien",
       "vanillekrapfen kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 350,
-    "protein_per_100g": 5.5,
-    "carbs_per_100g": 41,
-    "fat_per_100g": 17.5,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 363,
+    "protein_per_100g": 5.2,
+    "carbs_per_100g": 42.9,
+    "fat_per_100g": 18.9,
+    "fiber_per_100g": 1.7,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Vanillekrapfen"
   },
@@ -30,7 +31,7 @@
     {
       "name": "Mini-Krapfen (50g)",
       "portion_g": 50,
-      "calories": 175,
+      "calories": 182,
       "protein": 3,
       "carbs": 21,
       "fat": 9
@@ -38,86 +39,116 @@
     {
       "name": "Vanillekrapfen klein (75g)",
       "portion_g": 75,
-      "calories": 263,
+      "calories": 272,
       "protein": 4,
-      "carbs": 31,
-      "fat": 13
+      "carbs": 32,
+      "fat": 14
     },
     {
       "name": "Vanillekrapfen (1 Stück, 80g)",
       "portion_g": 80,
-      "calories": 280,
+      "calories": 290,
       "protein": 4,
-      "carbs": 33,
-      "fat": 14,
+      "carbs": 34,
+      "fat": 15,
       "tip": "Standard"
     },
     {
       "name": "Vanillekrapfen groß (95g)",
       "portion_g": 95,
-      "calories": 333,
+      "calories": 345,
       "protein": 5,
-      "carbs": 39,
-      "fat": 17
-    },
-    {
-      "name": "Vanillekrapfen pro 100g",
-      "portion_g": 100,
-      "calories": 350,
-      "protein": 6,
       "carbs": 41,
       "fat": 18
     },
     {
+      "name": "Vanillekrapfen pro 100g",
+      "portion_g": 100,
+      "calories": 363,
+      "protein": 5,
+      "carbs": 43,
+      "fat": 19
+    },
+    {
       "name": "Vanillekrapfen mit Puderzucker (85g)",
       "portion_g": 85,
-      "calories": 305,
-      "protein": 5,
-      "carbs": 38,
-      "fat": 15
+      "calories": 310,
+      "protein": 4,
+      "carbs": 39,
+      "fat": 15,
+      "tip": "80g Krapfen + 5g Puderzucker",
+      "basis": [
+        {
+          "g": 80
+        },
+        {
+          "fdcId": 169656,
+          "g": 5
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Berliner (mit Marmelade)",
-      "calories": 255,
-      "emoji": "🍩"
+      "calories": 272,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner"
+        }
+      ]
     },
     {
-      "name": "Apfelstrudel (1 Stück)",
-      "calories": 360,
-      "emoji": "🥐"
+      "name": "Apfelstrudel (1 Stück, 200g)",
+      "calories": 548,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "apfelstrudel"
+        }
+      ]
     },
     {
       "name": "Apfel (mittel)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel"
+        }
+      ]
     },
     {
-      "name": "Banane",
+      "name": "Banane (mittel)",
       "calories": 107,
-      "emoji": "🍌"
+      "emoji": "🍌",
+      "basis": [
+        {
+          "slug": "banane"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eine Portion bewusst genießen",
-      "text": "Ein Vanillekrapfen hat ca. 280 kcal – das entspricht etwa drei mittelgroßen Äpfeln. Als Genussmoment völlig in Ordnung, aber kein täglicher Snack.",
+      "text": "Ein Vanillekrapfen hat ca. 290 kcal, das entspricht etwa drei mittelgroßen Äpfeln. Als Genussmoment völlig in Ordnung, aber kein täglicher Snack.",
       "icon": "🍩"
     },
     {
       "title": "Fettarm geht nicht",
-      "text": "Krapfen werden frittiert, daher sind die 17,5g Fett pro 100g unvermeidbar. Wer Kalorien sparen will, greift zu kleineren Stücken statt 'light'-Varianten zu suchen.",
+      "text": "Krapfen werden frittiert, daher sind die rund 19g Fett pro 100g unvermeidbar. Wer Kalorien sparen will, greift zu kleineren Stücken statt 'light'-Varianten zu suchen.",
       "icon": "🍳"
     },
     {
       "title": "Mini-Krapfen als Kompromiss",
-      "text": "Ein Mini-Krapfen (50g) hat nur ca. 175 kcal. So bleibt der süße Genuss, ohne dass die Kalorienbilanz aus dem Ruder läuft.",
+      "text": "Ein Mini-Krapfen (50g) hat nur ca. 182 kcal. So bleibt der süße Genuss, ohne dass die Kalorienbilanz aus dem Ruder läuft.",
       "icon": "🤏"
     },
     {
       "title": "Zum Kaffee statt zwischendurch",
-      "text": "Den Krapfen bewusst zu einer Mahlzeit oder zum Kaffee einplanen statt nebenbei zu naschen – so bleibt es bei einem Stück.",
+      "text": "Den Krapfen bewusst zu einer Mahlzeit oder zum Kaffee einplanen statt nebenbei zu naschen, so bleibt es bei einem Stück.",
       "icon": "☕"
     },
     {
@@ -129,27 +160,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Vanillekrapfen?",
-      "answer": "Ein durchschnittlicher Vanillekrapfen (80g) hat ca. 280 kcal. Kleine Stücke (75g) haben rund 263 kcal, große (95g) etwa 333 kcal."
+      "answer": "Ein durchschnittlicher Vanillekrapfen (80g) hat ca. 290 kcal. Kleine Stücke (75g) haben rund 272 kcal, große (95g) etwa 345 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Vanillekrapfen pro 100g?",
-      "answer": "Pro 100g hat ein Vanillekrapfen ca. 350 kcal. Das liegt am frittierten Teig und der süßen Vanillecreme-Füllung."
+      "answer": "Pro 100g hat ein Vanillekrapfen ca. 363 kcal. Das liegt am frittierten Teig und der süßen Vanillecreme-Füllung."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Vanillekrapfen?",
-      "answer": "Ein Vanillekrapfen (80g) enthält ca. 33g Kohlenhydrate, davon ein großer Teil Zucker. Für Low Carb ist er daher nicht geeignet."
+      "answer": "Ein Vanillekrapfen (80g) enthält ca. 34g Kohlenhydrate, davon ein großer Teil Zucker. Für Low Carb ist er daher nicht geeignet."
     },
     {
       "question": "Wie viel Protein hat ein Vanillekrapfen?",
-      "answer": "Der Proteingehalt ist mit ca. 4g pro Stück (5,5g/100g) gering. Ein Vanillekrapfen ist eine Süßspeise und keine nennenswerte Eiweißquelle."
+      "answer": "Der Proteingehalt ist mit ca. 4g pro Stück (5,2g/100g) gering. Ein Vanillekrapfen ist eine Süßspeise und keine nennenswerte Eiweißquelle."
     },
     {
       "question": "Ist ein Vanillekrapfen zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 350 kcal/100g und viel Fett und Zucker ist er kalorienreich. Wer abnehmen möchte, sollte ihn als seltenen Genuss einplanen – ein Mini-Krapfen (175 kcal) ist die schlankere Alternative."
+      "answer": "Nur in Maßen. Mit 363 kcal/100g und viel Fett und Zucker ist er kalorienreich. Wer abnehmen möchte, sollte ihn als seltenen Genuss einplanen, ein Mini-Krapfen (182 kcal) ist die schlankere Alternative."
     },
     {
       "question": "Ist ein Vanillekrapfen gesund?",
-      "answer": "Ein Vanillekrapfen ist ein klassisches Gebäck mit hohem Zucker- und Fettanteil und wenig Ballaststoffen. Er liefert schnelle Energie, aber kaum Nährstoffe – als gelegentlicher Genuss in Ordnung, nicht als Grundnahrungsmittel."
+      "answer": "Ein Vanillekrapfen ist ein klassisches Gebäck mit hohem Zucker- und Fettanteil und wenig Ballaststoffen. Er liefert schnelle Energie, aber kaum Nährstoffe, als gelegentlicher Genuss in Ordnung, nicht als Grundnahrungsmittel."
     }
   ],
   "related_foods": [

@@ -3,9 +3,10 @@
   "name": "Tzatziki",
   "emoji": "🥒",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2705448 (Tzatziki dip), Werte je 100 g",
   "seo": {
     "title": "Tzatziki Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Tzatziki? 100g haben ca. 130 kcal. Nährwerte pro Portion & Esslöffel, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Tzatziki? 100g haben ca. 91 kcal. Nährwerte pro Portion & Esslöffel, Vergleich mit anderen Dips und Tipps zum Abnehmen.",
     "keywords": [
       "tzatziki kalorien",
       "tzatziki kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 130,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 3.5,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 0.4,
+    "calories_per_100g": 91,
+    "protein_per_100g": 5.2,
+    "carbs_per_100g": 4.1,
+    "fat_per_100g": 6,
+    "fiber_per_100g": 0.2,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Portion (50g)"
   },
@@ -28,101 +29,107 @@
     {
       "name": "1 Esslöffel (15g)",
       "portion_g": 15,
-      "calories": 20,
-      "protein": 0.7,
-      "carbs": 0.5,
-      "fat": 1.7,
+      "calories": 14,
+      "protein": 0.8,
+      "carbs": 0.6,
+      "fat": 0.9,
       "tip": "Als Klecks zum Dippen"
     },
     {
       "name": "1 kleine Portion (30g)",
       "portion_g": 30,
-      "calories": 39,
-      "protein": 1.4,
-      "carbs": 1.1,
-      "fat": 3.3
+      "calories": 27,
+      "protein": 1.6,
+      "carbs": 1.2,
+      "fat": 1.8
     },
     {
       "name": "1 Portion (50g)",
       "portion_g": 50,
-      "calories": 65,
-      "protein": 2.3,
-      "carbs": 1.8,
-      "fat": 5.5,
+      "calories": 46,
+      "protein": 2.6,
+      "carbs": 2.1,
+      "fat": 3,
       "tip": "Standard-Beilage"
     },
     {
       "name": "1 große Portion (100g)",
       "portion_g": 100,
-      "calories": 130,
-      "protein": 4.5,
-      "carbs": 3.5,
-      "fat": 11
+      "calories": 91,
+      "protein": 5.2,
+      "carbs": 4.1,
+      "fat": 6
     },
     {
       "name": "Becher Supermarkt (200g)",
       "portion_g": 200,
-      "calories": 260,
-      "protein": 9,
-      "carbs": 7,
-      "fat": 22,
+      "calories": 182,
+      "protein": 10.4,
+      "carbs": 8.2,
+      "fat": 12,
       "tip": "Ganzer Becher"
-    },
-    {
-      "name": "Leichte Variante (50g)",
-      "portion_g": 50,
-      "calories": 40,
-      "protein": 2.5,
-      "carbs": 2,
-      "fat": 2.5,
-      "tip": "Mit fettarmem Joghurt"
-    },
-    {
-      "name": "Selbstgemacht griechisch (50g)",
-      "portion_g": 50,
-      "calories": 53,
-      "protein": 2,
-      "carbs": 1.5,
-      "fat": 4.5,
-      "tip": "Weniger Öl als gekauft"
     }
   ],
   "comparison": [
     {
-      "name": "Hummus",
-      "calories": 177,
-      "emoji": "🧆"
+      "name": "Hummus (50g)",
+      "calories": 119,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Frischkäse",
-      "calories": 253,
-      "emoji": "🧀"
+      "name": "Frischkäse (50g)",
+      "calories": 127,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Magerquark",
-      "calories": 67,
-      "emoji": "🥛"
+      "name": "Magerquark (50g)",
+      "calories": 36,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 172181,
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Mayo",
-      "calories": 680,
-      "emoji": "🥚"
+      "name": "Mayo (50g)",
+      "calories": 340,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "mayo",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Öl bestimmt die Kalorien",
-      "text": "Der größte Teil der Kalorien in Tzatziki stammt aus dem Olivenöl. Wer beim Selbermachen das Öl reduziert, spart spürbar Kalorien ein.",
+      "text": "Der größte Teil der Kalorien in Tzatziki stammt aus dem Fett von Joghurt und Olivenöl. Wer beim Selbermachen das Öl reduziert, spart spürbar Kalorien ein.",
       "icon": "🫒"
     },
     {
       "title": "Mit Magerjoghurt leichter",
-      "text": "Statt 10%-Sahnejoghurt lässt sich Tzatziki gut mit fettarmem Joghurt oder Skyr zubereiten. Das senkt die Kalorien fast um die Hälfte und erhöht den Proteinanteil.",
+      "text": "Statt 10%-Sahnejoghurt lässt sich Tzatziki gut mit fettarmem Joghurt oder Skyr zubereiten. Das senkt die Kalorien deutlich und erhöht den Proteinanteil.",
       "icon": "🥛"
     },
     {
       "title": "Eiweißreicher Dip",
-      "text": "Durch den Joghurt liefert Tzatziki rund 4,5g Protein pro 100g. Mit Skyr als Basis wird daraus ein sättigender, proteinreicher Dip.",
+      "text": "Durch den Joghurt liefert Tzatziki rund 5g Protein pro 100g. Mit Skyr als Basis wird daraus ein sättigender, proteinreicher Dip.",
       "icon": "💪"
     },
     {
@@ -132,26 +139,26 @@
     },
     {
       "title": "Portion im Auge behalten",
-      "text": "Ein gehäufter Esslöffel hat nur rund 20 kcal. Schnell werden daraus aber 100g und mehr, wenn man unkontrolliert dippt.",
+      "text": "Ein gehäufter Esslöffel hat nur rund 14 kcal. Schnell werden daraus aber 100g und mehr, wenn man unkontrolliert dippt.",
       "icon": "🥄"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Tzatziki?",
-      "answer": "Tzatziki hat durchschnittlich ca. 130 kcal pro 100g. Eine typische Portion von 50g als Beilage liefert rund 65 kcal. Der genaue Wert hängt vom Fettgehalt des Joghurts und der Ölmenge ab."
+      "answer": "Tzatziki hat durchschnittlich ca. 91 kcal pro 100g. Eine typische Portion von 50g als Beilage liefert rund 46 kcal. Der genaue Wert hängt vom Fettgehalt des Joghurts und der Ölmenge ab."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Tzatziki?",
-      "answer": "Tzatziki enthält nur etwa 3,5g Kohlenhydrate pro 100g. Es ist damit von Natur aus kohlenhydratarm und passt gut in eine Low-Carb-Ernährung."
+      "answer": "Tzatziki enthält nur etwa 4g Kohlenhydrate pro 100g. Es ist damit von Natur aus kohlenhydratarm und passt gut in eine Low-Carb-Ernährung."
     },
     {
       "question": "Wie viel Protein steckt in Tzatziki?",
-      "answer": "Pro 100g liefert Tzatziki etwa 4,5g Eiweiß, das fast vollständig aus dem Joghurt stammt. Mit Skyr oder Magerquark als Basis lässt sich der Proteingehalt deutlich steigern."
+      "answer": "Pro 100g liefert Tzatziki etwa 5g Eiweiß, das fast vollständig aus dem Joghurt stammt. Mit Skyr oder Magerquark als Basis lässt sich der Proteingehalt deutlich steigern."
     },
     {
       "question": "Ist Tzatziki zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Tzatziki ist kohlenhydratarm und liefert Protein, der hohe Fettanteil aus dem Öl macht es aber relativ kalorienreich. Eine leichte Variante mit Magerjoghurt und wenig Öl kommt auf rund 80 kcal pro 100g."
+      "answer": "In Maßen ja. Tzatziki ist kohlenhydratarm und liefert Protein, der Fettanteil aus Joghurt und Öl liefert aber den Großteil der Kalorien. Eine leichte Variante mit Magerjoghurt und wenig Öl spart zusätzlich Kalorien."
     },
     {
       "question": "Ist Tzatziki gesund?",
@@ -159,7 +166,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein ganzer Becher Tzatziki?",
-      "answer": "Ein üblicher Supermarkt-Becher mit 200g hat etwa 260 kcal. Das entspricht ungefähr einer kleinen Mahlzeit, wenn man den gesamten Becher verzehrt."
+      "answer": "Ein üblicher Supermarkt-Becher mit 200g hat etwa 182 kcal. Das entspricht etwa einem kleinen Snack, wenn man den gesamten Becher verzehrt."
     }
   ],
   "related_foods": [

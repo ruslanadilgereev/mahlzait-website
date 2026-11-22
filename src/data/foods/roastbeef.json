@@ -3,9 +3,10 @@
   "name": "Roastbeef",
   "emoji": "🥩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174570 (Roast beef, deli style, prepackaged, sliced), Werte je 100 g",
   "seo": {
     "title": "Roastbeef Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Roastbeef? Magerer Braten hat ca. 152 kcal pro 100g. Nährwerte, Eiweiß & Portionen im Überblick.",
+    "description": "Wie viele Kalorien hat Roastbeef? Roastbeef-Aufschnitt hat ca. 115 kcal pro 100g, gebratenes Roastbeef rund 195 kcal. Nährwerte, Eiweiß & Portionen im Überblick.",
     "keywords": [
       "roastbeef kalorien",
       "roastbeef kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 152,
-    "protein_per_100g": 27,
-    "carbs_per_100g": 0,
-    "fat_per_100g": 4.5,
+    "calories_per_100g": 115,
+    "protein_per_100g": 18.6,
+    "carbs_per_100g": 0.6,
+    "fat_per_100g": 3.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 50,
     "typical_portion_name": "3 Scheiben Aufschnitt"
@@ -29,16 +30,16 @@
     {
       "name": "1 Scheibe Aufschnitt (15g)",
       "portion_g": 15,
-      "calories": 23,
-      "protein": 4,
+      "calories": 17,
+      "protein": 3,
       "carbs": 0,
       "fat": 1
     },
     {
       "name": "Aufschnitt-Portion (50g)",
       "portion_g": 50,
-      "calories": 76,
-      "protein": 14,
+      "calories": 58,
+      "protein": 9,
       "carbs": 0,
       "fat": 2,
       "tip": "Standard-Belag"
@@ -46,64 +47,95 @@
     {
       "name": "Roastbeef-Brötchen-Belag (80g)",
       "portion_g": 80,
-      "calories": 122,
-      "protein": 22,
+      "calories": 92,
+      "protein": 15,
       "carbs": 0,
-      "fat": 4
+      "fat": 3
     },
     {
       "name": "Roastbeef-Steak (150g)",
       "portion_g": 150,
-      "calories": 228,
-      "protein": 41,
-      "carbs": 0,
-      "fat": 7,
-      "tip": "Hauptgericht"
+      "calories": 293,
+      "protein": 42,
+      "carbs": 1,
+      "fat": 13,
+      "tip": "Hauptgericht",
+      "basis": [
+        {
+          "fdcId": 173046,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Großer Braten-Teller (200g)",
       "portion_g": 200,
-      "calories": 304,
-      "protein": 54,
-      "carbs": 0,
-      "fat": 9
+      "calories": 390,
+      "protein": 57,
+      "carbs": 2,
+      "fat": 18,
+      "basis": [
+        {
+          "fdcId": 173046,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Roastbeef roh, mager (100g)",
       "portion_g": 100,
-      "calories": 130,
-      "protein": 22,
+      "calories": 138,
+      "protein": 23,
       "carbs": 0,
-      "fat": 4,
-      "tip": "Vor dem Braten"
+      "fat": 5,
+      "tip": "Vor dem Braten",
+      "basis": [
+        {
+          "fdcId": 171814,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Putenbrust (50g)",
-      "calories": 52,
-      "emoji": "🦃"
-    },
-    {
-      "name": "Roastbeef (50g)",
-      "calories": 76,
-      "emoji": "🥩"
+      "name": "Putenbrust-Aufschnitt (50g)",
+      "calories": 53,
+      "emoji": "🦃",
+      "basis": [
+        {
+          "fdcId": 172941,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Salami (50g)",
-      "calories": 188,
-      "emoji": "🍖"
+      "calories": 189,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "fdcId": 174582,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Schinken gekocht (50g)",
-      "calories": 65,
-      "emoji": "🐖"
+      "calories": 54,
+      "emoji": "🐖",
+      "basis": [
+        {
+          "fdcId": 173863,
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich & mager",
-      "text": "Roastbeef liefert rund 27g Eiweiß pro 100g bei nur 4,5g Fett. Damit zählt es zu den proteinreichsten Aufschnitt-Sorten.",
+      "text": "Roastbeef-Aufschnitt liefert rund 19g Eiweiß pro 100g bei nur knapp 4g Fett. Damit zählt es zu den proteinreicheren Aufschnitt-Sorten.",
       "icon": "💪"
     },
     {
@@ -118,7 +150,7 @@
     },
     {
       "title": "Cleverer Brötchen-Belag",
-      "text": "50g Roastbeef-Aufschnitt haben nur etwa 76 kcal und sind eine schlankere Alternative zu Salami oder Leberwurst.",
+      "text": "50g Roastbeef-Aufschnitt haben nur etwa 58 kcal und sind eine schlankere Alternative zu Salami oder Leberwurst.",
       "icon": "🥪"
     },
     {
@@ -130,11 +162,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Roastbeef?",
-      "answer": "Roastbeef hat etwa 152 kcal pro 100g (mager, gebraten). Eine typische Aufschnitt-Portion von 50g liefert rund 76 kcal."
+      "answer": "Roastbeef-Aufschnitt hat etwa 115 kcal pro 100g, gebratenes mageres Roastbeef am Stück rund 195 kcal. Eine typische Aufschnitt-Portion von 50g liefert rund 58 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in Roastbeef?",
-      "answer": "Roastbeef ist sehr eiweißreich: Pro 100g sind es etwa 27g Protein. Damit ist es eine der proteinreichsten Aufschnitt-Sorten."
+      "answer": "Roastbeef ist eiweißreich: Pro 100g Aufschnitt sind es etwa 19g Protein, gebraten am Stück rund 28g. Damit ist es eine der proteinreicheren Aufschnitt-Sorten."
     },
     {
       "question": "Hat Roastbeef Kohlenhydrate?",
@@ -150,7 +182,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Roastbeef-Steak?",
-      "answer": "Ein gebratenes Roastbeef-Steak von 150g hat etwa 228 kcal und liefert rund 41g Eiweiß."
+      "answer": "Ein gebratenes Roastbeef-Steak von 150g hat etwa 293 kcal und liefert rund 42g Eiweiß."
     }
   ],
   "related_foods": [

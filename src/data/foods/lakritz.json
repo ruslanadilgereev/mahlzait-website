@@ -3,50 +3,168 @@
   "name": "Lakritz",
   "emoji": "🖤",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2710352 (Candy, licorice), Werte je 100 g",
   "seo": {
     "title": "Lakritz Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Lakritz? Nährwerte pro 100g & Portion. Weich, salzig, Lakritzkonfekt & mehr im Vergleich + Tipps.",
-    "keywords": ["lakritz kalorien", "lakritz nährwerte", "lakritz kalorien pro stück", "lakritz zucker", "lakritz fett", "salzlakritz kalorien", "lakritz gesund", "haribo lakritz kalorien"]
+    "description": "Wie viele Kalorien hat Lakritz? Nährwerte pro 100g & Portion. Weiche Lakritz, Schnecken, Stangen & mehr im Vergleich + Tipps.",
+    "keywords": [
+      "lakritz kalorien",
+      "lakritz nährwerte",
+      "lakritz kalorien pro stück",
+      "lakritz zucker",
+      "lakritz fett",
+      "salzlakritz kalorien",
+      "lakritz gesund",
+      "haribo lakritz kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 313,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 70,
-    "fat_per_100g": 2,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 396,
+    "protein_per_100g": 0,
+    "carbs_per_100g": 98.9,
+    "fat_per_100g": 0,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Handvoll"
   },
   "variants": [
-    { "name": "Weiche Lakritz (40g)", "portion_g": 40, "calories": 125, "protein": 2, "carbs": 28, "fat": 1 },
-    { "name": "Salzlakritz (40g)", "portion_g": 40, "calories": 130, "protein": 2, "carbs": 29, "fat": 1 },
-    { "name": "Lakritzkonfekt (40g)", "portion_g": 40, "calories": 155, "protein": 1, "carbs": 30, "fat": 3 },
-    { "name": "Lakritzschnecken (50g)", "portion_g": 50, "calories": 157, "protein": 2, "carbs": 35, "fat": 1 },
-    { "name": "Haribo Lakritz (100g Beutel)", "portion_g": 100, "calories": 340, "protein": 5, "carbs": 74, "fat": 2 },
-    { "name": "Lakritzstangen (30g, 3 St.)", "portion_g": 30, "calories": 94, "protein": 1, "carbs": 21, "fat": 1, "tip": "Kleine Portion" },
-    { "name": "Zuckerfreie Lakritz (40g)", "portion_g": 40, "calories": 90, "protein": 2, "carbs": 22, "fat": 0, "tip": "Kalorienärmste Variante" },
-    { "name": "Schokolierte Lakritz (50g)", "portion_g": 50, "calories": 210, "protein": 2, "carbs": 34, "fat": 7 }
+    {
+      "name": "Weiche Lakritz (40g)",
+      "portion_g": 40,
+      "calories": 158,
+      "protein": 0,
+      "carbs": 40,
+      "fat": 0
+    },
+    {
+      "name": "Lakritzschnecken (50g)",
+      "portion_g": 50,
+      "calories": 198,
+      "protein": 0,
+      "carbs": 49,
+      "fat": 0
+    },
+    {
+      "name": "Beutel Lakritz (100g)",
+      "portion_g": 100,
+      "calories": 396,
+      "protein": 0,
+      "carbs": 99,
+      "fat": 0
+    },
+    {
+      "name": "Lakritzstangen (30g, 3 St.)",
+      "portion_g": 30,
+      "calories": 119,
+      "protein": 0,
+      "carbs": 30,
+      "fat": 0,
+      "tip": "Kleine Portion"
+    }
   ],
   "comparison": [
-    { "name": "Gummibärchen (40g)", "calories": 138, "emoji": "🍬" },
-    { "name": "Weingummi (40g)", "calories": 140, "emoji": "🍭" },
-    { "name": "Schokolade Vollmilch (40g)", "calories": 214, "emoji": "🍫" },
-    { "name": "Salzstangen (40g)", "calories": 148, "emoji": "🥨" }
+    {
+      "name": "Gummibärchen (40g)",
+      "calories": 137,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Weingummi (40g)",
+      "calories": 158,
+      "emoji": "🍭",
+      "basis": [
+        {
+          "slug": "weingummi",
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Schokolade Vollmilch (40g)",
+      "calories": 214,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Salzstangen (40g)",
+      "calories": 154,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "salzstangen",
+          "g": 40
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Portionen abzählen", "text": "Eine Handvoll (40g) hat 125 kcal. Problem: Der ganze Beutel ist schnell leer. Kleine Schüssel abfüllen, Beutel wegpacken.", "icon": "🤏" },
-    { "title": "Zuckerfreie Variante", "text": "Zuckerfreie Lakritz spart ca. 30% Kalorien. Geschmack ist ähnlich – der intensive Lakritzgeschmack überdeckt den Unterschied.", "icon": "🚫" },
-    { "title": "Vorsicht bei Salzlakritz", "text": "Salmiak-Lakritz enthält viel Salz. Wer auf Blutdruck achtet, sollte nicht täglich zugreifen. Max. 50g am Tag.", "icon": "🧂" },
-    { "title": "Fettarm aber zuckerreich", "text": "Lakritz hat fast kein Fett (2g/100g), aber 70g Kohlenhydrate. Der Zucker ist das Hauptproblem, nicht das Fett.", "icon": "📊" },
-    { "title": "Nicht vor dem Sport", "text": "Lakritz kann den Blutdruck beeinflussen. Vor intensivem Training lieber ein Stück Obst als Energiequelle.", "icon": "🏃" }
+    {
+      "title": "Portionen abzählen",
+      "text": "Eine Handvoll (40g) hat 158 kcal. Problem: Der ganze Beutel ist schnell leer. Kleine Schüssel abfüllen, Beutel wegpacken.",
+      "icon": "🤏"
+    },
+    {
+      "title": "Zuckerfreie Variante",
+      "text": "Zuckerfreie Lakritz spart Kalorien. Der Geschmack ist ähnlich, der intensive Lakritzgeschmack überdeckt den Unterschied.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Vorsicht bei Salzlakritz",
+      "text": "Salmiak-Lakritz enthält viel Salz. Wer auf Blutdruck achtet, sollte nicht täglich zugreifen. Max. 50g am Tag.",
+      "icon": "🧂"
+    },
+    {
+      "title": "Fettarm aber zuckerreich",
+      "text": "Lakritz hat praktisch kein Fett (0g/100g), aber rund 99g Kohlenhydrate. Der Zucker ist das Hauptproblem, nicht das Fett.",
+      "icon": "📊"
+    },
+    {
+      "title": "Nicht vor dem Sport",
+      "text": "Lakritz kann den Blutdruck beeinflussen. Vor intensivem Training lieber ein Stück Obst als Energiequelle.",
+      "icon": "🏃"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Lakritz?", "answer": "Ca. 313 kcal pro 100g. Eine Handvoll (40g) hat ca. 125 kcal. Salzlakritz ist mit 130 kcal pro 40g minimal kalorienreicher." },
-    { "question": "Ist Lakritz gesünder als Schokolade?", "answer": "Kalorisch ja: 313 vs. 536 kcal pro 100g. Aber: Lakritz hat viel Zucker (70g/100g) und wenig Nährstoffe. Beide sind Süßigkeiten." },
-    { "question": "Wie viel Zucker hat Lakritz?", "answer": "Ca. 50-60g Zucker pro 100g. Das sind 16-20 Würfelzucker! Die WHO empfiehlt max. 25g freien Zucker am Tag." },
-    { "question": "Kann man von Lakritz zunehmen?", "answer": "Ja, wenn man viel isst. Ein 200g Beutel hat 626 kcal – das ist ein Drittel des Tagesbedarfs. Portionskontrolle ist wichtig." },
-    { "question": "Ist Lakritz vegan?", "answer": "Meist ja – klassische Lakritz enthält Süßholzwurzel, Zucker, Stärke. Aber: Manche Sorten enthalten Gelatine oder Bienenwachs. Zutatenliste checken!" },
-    { "question": "Warum soll man nicht zu viel Lakritz essen?", "answer": "Glycyrrhizin in Lakritz kann den Blutdruck erhöhen und den Kaliumspiegel senken. Das BfR empfiehlt: max. 100mg Glycyrrhizin/Tag, das sind ca. 50g Lakritz." }
+    {
+      "question": "Wie viele Kalorien hat Lakritz?",
+      "answer": "Ca. 396 kcal pro 100g. Eine Handvoll (40g) hat ca. 158 kcal."
+    },
+    {
+      "question": "Ist Lakritz gesünder als Schokolade?",
+      "answer": "Kalorisch ja: 396 vs. 535 kcal pro 100g. Aber: Lakritz hat viel Zucker (rund 59g/100g) und wenig Nährstoffe. Beide sind Süßigkeiten."
+    },
+    {
+      "question": "Wie viel Zucker hat Lakritz?",
+      "answer": "Rund 59g Zucker pro 100g. Die WHO empfiehlt max. 25g freien Zucker am Tag."
+    },
+    {
+      "question": "Kann man von Lakritz zunehmen?",
+      "answer": "Ja, wenn man viel isst. Ein 200g Beutel hat rund 792 kcal, das ist ein großer Teil des Tagesbedarfs. Portionskontrolle ist wichtig."
+    },
+    {
+      "question": "Ist Lakritz vegan?",
+      "answer": "Meist ja: Klassische Lakritz enthält Süßholzwurzel, Zucker, Stärke. Aber: Manche Sorten enthalten Gelatine oder Bienenwachs. Zutatenliste checken!"
+    },
+    {
+      "question": "Warum soll man nicht zu viel Lakritz essen?",
+      "answer": "Glycyrrhizin in Lakritz kann den Blutdruck erhöhen und den Kaliumspiegel senken. Das BfR empfiehlt: max. 100mg Glycyrrhizin/Tag, das sind ca. 50g Lakritz."
+    }
   ],
-  "related_foods": ["gummibaerchen", "schokolade-vollmilch", "salzstangen", "kekse"]
+  "related_foods": [
+    "gummibaerchen",
+    "schokolade-vollmilch",
+    "salzstangen",
+    "kekse"
+  ]
 }

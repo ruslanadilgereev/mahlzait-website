@@ -3,9 +3,10 @@
   "name": "Tatar",
   "emoji": "🥩",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 171790 (Beef, ground, 95% lean meat / 5% fat, raw), Werte je 100 g",
   "seo": {
     "title": "Tatar Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Tatar? 100g Rindertatar haben ca. 127 kcal und 22g Protein. Nährwerte pro Portion, Varianten im Vergleich & Tipps.",
+    "description": "Wie viele Kalorien hat Tatar? 100g Rindertatar haben ca. 137 kcal und 21g Protein. Nährwerte pro Portion, Varianten im Vergleich & Tipps.",
     "keywords": [
       "tatar kalorien",
       "tatar kcal",
@@ -18,10 +19,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 127,
-    "protein_per_100g": 21.5,
-    "carbs_per_100g": 0.5,
-    "fat_per_100g": 4.5,
+    "calories_per_100g": 137,
+    "protein_per_100g": 21.4,
+    "carbs_per_100g": 0,
+    "fat_per_100g": 5,
     "fiber_per_100g": 0,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Portion Tatar (150g)"
@@ -30,90 +31,139 @@
     {
       "name": "Tatar-Häppchen (50g)",
       "portion_g": 50,
-      "calories": 64,
+      "calories": 69,
       "protein": 11,
       "carbs": 0,
-      "fat": 2,
+      "fat": 3,
       "tip": "Als Vorspeise auf Brot"
     },
     {
       "name": "Tatar pur (100g)",
       "portion_g": 100,
-      "calories": 127,
-      "protein": 22,
-      "carbs": 1,
+      "calories": 137,
+      "protein": 21,
+      "carbs": 0,
       "fat": 5
     },
     {
       "name": "Kleine Portion (120g)",
       "portion_g": 120,
-      "calories": 152,
+      "calories": 164,
       "protein": 26,
-      "carbs": 1,
-      "fat": 5
+      "carbs": 0,
+      "fat": 6
     },
     {
       "name": "1 Portion Tatar (150g)",
       "portion_g": 150,
-      "calories": 190,
+      "calories": 206,
       "protein": 32,
-      "carbs": 1,
-      "fat": 7,
+      "carbs": 0,
+      "fat": 8,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Portion (200g)",
       "portion_g": 200,
-      "calories": 254,
+      "calories": 274,
       "protein": 43,
-      "carbs": 1,
-      "fat": 9
+      "carbs": 0,
+      "fat": 10
     },
     {
-      "name": "Tatar angerichtet mit Eigelb & Zwiebeln (180g)",
+      "name": "Tatar angerichtet (150g + 1 Eigelb + 13g Zwiebeln)",
       "portion_g": 180,
-      "calories": 280,
-      "protein": 36,
-      "carbs": 3,
-      "fat": 14,
-      "tip": "Inkl. Eigelb, Zwiebeln & Gewürzen"
+      "calories": 265,
+      "protein": 35,
+      "carbs": 2,
+      "fat": 12,
+      "tip": "Inkl. Eigelb, Zwiebeln & Gewürzen",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 172184,
+          "g": 17
+        },
+        {
+          "fdcId": 170000,
+          "g": 13
+        }
+      ]
     },
     {
-      "name": "Tatar auf Brot (Tatarbrötchen, ca. 200g)",
+      "name": "Tatarbrötchen (65g Brötchen + 125g Tatar + 10g Zwiebeln)",
       "portion_g": 200,
-      "calories": 380,
-      "protein": 35,
-      "carbs": 38,
-      "fat": 10,
-      "tip": "Mit Brötchen serviert"
+      "calories": 366,
+      "protein": 33,
+      "carbs": 35,
+      "fat": 9,
+      "tip": "Mit Brötchen serviert",
+      "basis": [
+        {
+          "fdcId": 175031,
+          "g": 65
+        },
+        {
+          "g": 125
+        },
+        {
+          "fdcId": 170000,
+          "g": 10
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Tatar (150g)",
-      "calories": 190,
-      "emoji": "🥩"
+      "calories": 206,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust roh (150g)",
-      "calories": 165,
-      "emoji": "🍗"
+      "calories": 180,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 171077,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Lachs roh (150g)",
       "calories": 312,
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "fdcId": 175167,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Mett (150g)",
-      "calories": 405,
-      "emoji": "🐖"
+      "calories": 395,
+      "emoji": "🐖",
+      "basis": [
+        {
+          "slug": "mett",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich & fettarm",
-      "text": "Tatar besteht aus magerem Rindfleisch und liefert pro 100g rund 22g Protein bei nur etwa 4,5g Fett. Das macht es zu einer der proteinreichsten Fleischzubereitungen überhaupt.",
+      "text": "Tatar besteht aus magerem Rindfleisch und liefert pro 100g rund 21g Protein bei nur etwa 5g Fett. Das macht es zu einer sehr eiweißreichen, mageren Fleischzubereitung.",
       "icon": "💪"
     },
     {
@@ -140,19 +190,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Tatar?",
-      "answer": "100g pures Rindertatar haben etwa 127 kcal. Eine typische Portion von 150g kommt auf rund 190 kcal."
+      "answer": "100g pures Rindertatar haben etwa 137 kcal. Eine typische Portion von 150g kommt auf rund 206 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Tatar?",
-      "answer": "Tatar ist sehr eiweißreich: 100g liefern ca. 22g Protein, eine 150g-Portion etwa 32g."
+      "answer": "Tatar ist sehr eiweißreich: 100g liefern ca. 21g Protein, eine 150g-Portion etwa 32g."
     },
     {
       "question": "Hat Tatar Kohlenhydrate?",
-      "answer": "Pures Rindertatar ist nahezu kohlenhydratfrei (rund 0,5g pro 100g). Erst Beilagen wie Brot bringen nennenswerte Kohlenhydrate hinzu."
+      "answer": "Pures Rindertatar enthält keine Kohlenhydrate (0g pro 100g). Erst Beilagen wie Brot bringen nennenswerte Kohlenhydrate hinzu."
     },
     {
       "question": "Ist Tatar zum Abnehmen geeignet?",
-      "answer": "Ja, pures Tatar ist mit ca. 127 kcal pro 100g fettarm und sehr proteinreich, was gut sättigt. Achte aber auf kalorienreiche Beilagen wie Eigelb, Öl und Brot."
+      "answer": "Ja, pures Tatar ist mit ca. 137 kcal pro 100g fettarm und sehr proteinreich, was gut sättigt. Achte aber auf kalorienreiche Beilagen wie Eigelb, Öl und Brot."
     },
     {
       "question": "Ist Tatar gesund?",
@@ -160,7 +210,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Tatarbrötchen?",
-      "answer": "Ein belegtes Tatarbrötchen (ca. 200g) kommt durch das Brötchen auf rund 380 kcal, deutlich mehr als pures Tatar."
+      "answer": "Ein belegtes Tatarbrötchen (65g Brötchen, 125g Tatar, 10g Zwiebeln) kommt durch das Brötchen auf rund 366 kcal, deutlich mehr als pures Tatar."
     }
   ],
   "related_foods": [

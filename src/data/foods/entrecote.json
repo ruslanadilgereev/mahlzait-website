@@ -3,9 +3,10 @@
   "name": "Entrecôte",
   "emoji": "🥩",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 172164 (Beef, rib eye steak, boneless, lip off, separable lean and fat, trimmed to 0\" fat, all grades, cooked, grilled), Werte je 100 g",
   "seo": {
     "title": "Entrecôte Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Entrecôte? Ein gebratenes Entrecôte (200g) hat ca. 500 kcal. Nährwerte pro 100g, Portionen im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Entrecôte? Ein gebratenes Entrecôte (200g) hat ca. 542 kcal. Nährwerte pro 100g, Portionen im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "entrecote kalorien",
       "entrecôte kalorien",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 26,
+    "calories_per_100g": 271,
+    "protein_per_100g": 24.9,
     "carbs_per_100g": 0,
-    "fat_per_100g": 16,
+    "fat_per_100g": 19,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Entrecôte (200g, gebraten)"
@@ -29,80 +30,110 @@
     {
       "name": "Entrecôte roh (100g)",
       "portion_g": 100,
-      "calories": 224,
-      "protein": 20,
+      "calories": 228,
+      "protein": 19,
       "carbs": 0,
-      "fat": 16,
-      "tip": "Vor dem Braten"
+      "fat": 17,
+      "tip": "Vor dem Braten",
+      "basis": [
+        {
+          "fdcId": 173402,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Entrecôte gebraten (100g)",
       "portion_g": 100,
-      "calories": 250,
-      "protein": 26,
+      "calories": 271,
+      "protein": 25,
       "carbs": 0,
-      "fat": 16
+      "fat": 19
     },
     {
       "name": "Entrecôte klein (150g)",
       "portion_g": 150,
-      "calories": 375,
-      "protein": 39,
+      "calories": 407,
+      "protein": 37,
       "carbs": 0,
-      "fat": 24
+      "fat": 29
     },
     {
       "name": "Entrecôte mittel (200g)",
       "portion_g": 200,
-      "calories": 500,
-      "protein": 52,
+      "calories": 542,
+      "protein": 50,
       "carbs": 0,
-      "fat": 32,
+      "fat": 38,
       "tip": "Standard"
     },
     {
       "name": "Entrecôte groß (250g)",
       "portion_g": 250,
-      "calories": 625,
-      "protein": 65,
+      "calories": 678,
+      "protein": 62,
       "carbs": 0,
-      "fat": 40
+      "fat": 48
     },
     {
       "name": "Entrecôte XXL (300g)",
       "portion_g": 300,
-      "calories": 750,
-      "protein": 78,
+      "calories": 813,
+      "protein": 75,
       "carbs": 0,
-      "fat": 48
+      "fat": 57
     }
   ],
   "comparison": [
     {
-      "name": "Rumpsteak",
-      "calories": 200,
-      "emoji": "🥩"
+      "name": "Rumpsteak (200g, roh gewogen)",
+      "calories": 310,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "rumpsteak",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Hähnchenbrust",
-      "calories": 165,
-      "emoji": "🍗"
+      "name": "Hähnchenbrust (1 Stück, 200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Lachsfilet",
-      "calories": 208,
-      "emoji": "🐟"
+      "name": "Lachsfilet (1 Filet, 150g)",
+      "calories": 312,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachsfilet",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Schweinebraten",
-      "calories": 290,
-      "emoji": "🍖"
+      "name": "Schweinebraten (1 Portion, 250g)",
+      "calories": 453,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "schweinebraten",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Viel hochwertiges Eiweiß",
-      "text": "Ein Entrecôte von 200g liefert rund 52g Protein und deckt damit einen großen Teil des Tagesbedarfs. Das hält lange satt und unterstützt den Muskelerhalt.",
+      "text": "Ein Entrecôte von 200g liefert rund 50g Protein und deckt damit einen großen Teil des Tagesbedarfs. Das hält lange satt und unterstützt den Muskelerhalt.",
       "icon": "💪"
     },
     {
@@ -112,7 +143,7 @@
     },
     {
       "title": "Sichtbares Fett reduzieren",
-      "text": "Der Fettrand lässt sich vor oder nach dem Braten teilweise entfernen. Das spart pro Portion schnell 50 bis 100 kcal, ohne den Geschmack stark zu verändern.",
+      "text": "Der Fettrand lässt sich vor oder nach dem Braten teilweise entfernen. Das spart pro Portion Kalorien, ohne den Geschmack stark zu verändern.",
       "icon": "✂️"
     },
     {
@@ -129,15 +160,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Entrecôte?",
-      "answer": "Ein gebratenes Entrecôte von 200g hat etwa 500 kcal. Pro 100g sind es rund 250 kcal."
+      "answer": "Ein gebratenes Entrecôte von 200g hat etwa 542 kcal. Pro 100g sind es rund 271 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Entrecôte pro 100g?",
-      "answer": "Gebratenes Entrecôte hat ca. 250 kcal pro 100g. Roh sind es etwa 224 kcal pro 100g, da beim Braten Wasser verdunstet und der Nährstoffanteil steigt."
+      "answer": "Gebratenes Entrecôte hat ca. 271 kcal pro 100g. Roh sind es etwa 228 kcal pro 100g, da beim Braten Wasser verdunstet und der Nährstoffanteil steigt."
     },
     {
       "question": "Wie viel Protein hat ein Entrecôte?",
-      "answer": "Gebratenes Entrecôte enthält rund 26g Eiweiß pro 100g. Eine Portion von 200g liefert damit etwa 52g hochwertiges Protein."
+      "answer": "Gebratenes Entrecôte enthält rund 25g Eiweiß pro 100g. Eine Portion von 200g liefert damit etwa 50g hochwertiges Protein."
     },
     {
       "question": "Hat Entrecôte Kohlenhydrate?",

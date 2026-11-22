@@ -3,9 +3,10 @@
   "name": "Hühnerfrikassee",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706429 (Chicken or turkey fricassee), Werte je 100 g",
   "seo": {
     "title": "Hühnerfrikassee Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Hühnerfrikassee? Eine normale Portion (350g) hat ca. 420 kcal. Nährwerte pro 100g, Portionen & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Hühnerfrikassee? Eine normale Portion (350g) hat ca. 424 kcal. Nährwerte pro 100g, Portionen & Tipps zum Abnehmen.",
     "keywords": [
       "hühnerfrikassee kalorien",
       "hühnerfrikassee kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 120,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 6,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 0.8,
+    "calories_per_100g": 121,
+    "protein_per_100g": 10.7,
+    "carbs_per_100g": 3.5,
+    "fat_per_100g": 7.2,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Portion (normal)"
   },
@@ -28,91 +29,95 @@
     {
       "name": "Hühnerfrikassee 100g",
       "portion_g": 100,
-      "calories": 120,
-      "protein": 9,
-      "carbs": 6,
+      "calories": 121,
+      "protein": 11,
+      "carbs": 4,
       "fat": 7
     },
     {
       "name": "Kleine Portion (200g)",
       "portion_g": 200,
-      "calories": 240,
-      "protein": 18,
-      "carbs": 12,
+      "calories": 242,
+      "protein": 21,
+      "carbs": 7,
       "fat": 14,
       "tip": "Als Vorspeise oder leichtes Essen"
     },
     {
       "name": "Normale Portion (350g)",
       "portion_g": 350,
-      "calories": 420,
-      "protein": 32,
-      "carbs": 21,
+      "calories": 424,
+      "protein": 37,
+      "carbs": 12,
       "fat": 25,
       "tip": "Standard-Hauptgericht"
     },
     {
       "name": "Große Portion (450g)",
       "portion_g": 450,
-      "calories": 540,
-      "protein": 41,
-      "carbs": 27,
+      "calories": 545,
+      "protein": 48,
+      "carbs": 16,
       "fat": 32
     },
     {
       "name": "Mit Reis als Beilage (350g + 150g Reis)",
       "portion_g": 500,
-      "calories": 615,
-      "protein": 35,
-      "carbs": 60,
+      "calories": 619,
+      "protein": 41,
+      "carbs": 54,
       "fat": 26,
-      "tip": "Reis erhöht die Kohlenhydrate deutlich"
-    },
-    {
-      "name": "Leichte Variante (350g, ohne Sahne)",
-      "portion_g": 350,
-      "calories": 315,
-      "protein": 33,
-      "carbs": 18,
-      "fat": 13,
-      "tip": "Sauce mit Milch statt Sahne spart Fett"
-    },
-    {
-      "name": "Fertiggericht Dose (400g)",
-      "portion_g": 400,
-      "calories": 460,
-      "protein": 28,
-      "carbs": 28,
-      "fat": 26,
-      "tip": "Oft mehr Kohlenhydrate durch Bindemittel"
+      "tip": "Reis erhöht die Kohlenhydrate deutlich",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Hühnerfrikassee (350g)",
-      "calories": 420,
-      "emoji": "🍲"
-    },
-    {
       "name": "Gulasch (350g)",
-      "calories": 490,
-      "emoji": "🥘"
+      "calories": 375,
+      "emoji": "🥘",
+      "basis": [
+        {
+          "slug": "gulasch",
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Haehnchenbrust pur (350g)",
-      "calories": 580,
-      "emoji": "🍗"
+      "name": "Hähnchenbrust pur (350g)",
+      "calories": 578,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Königsberger Klopse (350g)",
-      "calories": 525,
-      "emoji": "🍲"
+      "calories": 595,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "koenigsberger-klopse",
+          "g": 350
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich und sättigend",
-      "text": "Eine normale Portion (350g) liefert rund 32g Protein aus dem Hühnerfleisch und hält dadurch lange satt.",
+      "text": "Eine normale Portion (350g) liefert rund 37g Protein aus dem Hühnerfleisch und hält dadurch lange satt.",
       "icon": "💪"
     },
     {
@@ -122,7 +127,7 @@
     },
     {
       "title": "Vorsicht bei der Beilage",
-      "text": "Reis verdoppelt fast die Kalorien der Mahlzeit. Eine kleinere Reisportion oder Blumenkohlreis hält die Mahlzeit leichter.",
+      "text": "Eine Portion Reis (150g) erhöht die Mahlzeit um rund 195 kcal auf ca. 619 kcal. Eine kleinere Reisportion oder Blumenkohlreis hält die Mahlzeit leichter.",
       "icon": "🍚"
     },
     {
@@ -139,19 +144,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Hühnerfrikassee?",
-      "answer": "Eine normale Portion Hühnerfrikassee (350g) hat etwa 420 kcal. Pro 100g sind es rund 120 kcal."
+      "answer": "Eine normale Portion Hühnerfrikassee (350g) hat etwa 424 kcal. Pro 100g sind es rund 121 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Hühnerfrikassee pro 100g?",
-      "answer": "Hühnerfrikassee hat ca. 120 kcal pro 100g, abhängig von der Menge an Sahne und Butter in der Sauce."
+      "answer": "Hühnerfrikassee hat ca. 121 kcal pro 100g, abhängig von der Menge an Sahne und Butter in der Sauce."
     },
     {
       "question": "Wie viel Protein steckt in Hühnerfrikassee?",
-      "answer": "Eine normale Portion (350g) liefert etwa 32g Eiweiß, hauptsächlich aus dem Hühnerfleisch. Das macht das Gericht recht eiweißreich."
+      "answer": "Eine normale Portion (350g) liefert etwa 37g Eiweiß, hauptsächlich aus dem Hühnerfleisch. Das macht das Gericht recht eiweißreich."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Hühnerfrikassee?",
-      "answer": "Pur enthält Hühnerfrikassee nur ca. 6g Kohlenhydrate pro 100g, also rund 21g je normaler Portion. Mit Reis als Beilage steigt der Wert deutlich an."
+      "answer": "Pur enthält Hühnerfrikassee nur ca. 3,5g Kohlenhydrate pro 100g, also rund 12g je normaler Portion. Mit Reis als Beilage steigt der Wert deutlich an."
     },
     {
       "question": "Ist Hühnerfrikassee zum Abnehmen geeignet?",

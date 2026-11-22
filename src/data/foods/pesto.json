@@ -3,9 +3,10 @@
   "name": "Pesto",
   "emoji": "🌿",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171580 (Sauce, pesto, ready-to-serve, shelf stable), Werte je 100 g",
   "seo": {
     "title": "Pesto Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Pesto? Grünes Pesto hat ca. 460 kcal pro 100g. Nährwerte pro EL & Portion, rotes Pesto im Vergleich + Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Pesto? Grünes Pesto hat ca. 426 kcal pro 100g. Nährwerte pro EL & Portion, Vergleich mit Mayonnaise & Hummus + Diät-Tipps.",
     "keywords": [
       "pesto kalorien",
       "pesto kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 460,
+    "calories_per_100g": 426,
     "protein_per_100g": 5,
-    "carbs_per_100g": 6,
-    "fat_per_100g": 46,
-    "fiber_per_100g": 2,
+    "carbs_per_100g": 6.1,
+    "fat_per_100g": 42.4,
+    "fiber_per_100g": 1.7,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Portion für Pasta (50g)"
   },
@@ -30,96 +31,111 @@
     {
       "name": "1 TL (5g)",
       "portion_g": 5,
-      "calories": 23,
+      "calories": 21,
       "protein": 0.3,
       "carbs": 0.3,
-      "fat": 2.3
+      "fat": 2.1
     },
     {
       "name": "1 EL (15g)",
       "portion_g": 15,
-      "calories": 69,
+      "calories": 64,
       "protein": 0.8,
       "carbs": 0.9,
-      "fat": 6.9,
+      "fat": 6.4,
       "tip": "Typische Menge fürs Brot"
     },
     {
       "name": "Portion für Pasta (50g)",
       "portion_g": 50,
-      "calories": 230,
+      "calories": 213,
       "protein": 2.5,
-      "carbs": 3,
-      "fat": 23,
+      "carbs": 3.1,
+      "fat": 21.2,
       "tip": "Standard"
     },
     {
       "name": "Großzügige Portion (70g)",
       "portion_g": 70,
-      "calories": 322,
+      "calories": 298,
       "protein": 3.5,
-      "carbs": 4.2,
-      "fat": 32.2
-    },
-    {
-      "name": "Pesto Rosso, 1 EL (15g)",
-      "portion_g": 15,
-      "calories": 58,
-      "protein": 0.6,
-      "carbs": 1.5,
-      "fat": 5.4,
-      "tip": "Rotes Pesto ist etwas kalorienärmer"
+      "carbs": 4.3,
+      "fat": 29.7
     },
     {
       "name": "Kleines Glas (190g)",
       "portion_g": 190,
-      "calories": 874,
+      "calories": 809,
       "protein": 9.5,
-      "carbs": 11.4,
-      "fat": 87.4
+      "carbs": 11.6,
+      "fat": 80.6
     }
   ],
   "comparison": [
     {
       "name": "Pesto (100g)",
-      "calories": 460,
-      "emoji": "🌿"
+      "calories": 426,
+      "emoji": "🌿",
+      "basis": [
+        {
+          "slug": "pesto",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Mayonnaise (100g)",
       "calories": 680,
-      "emoji": "🥚"
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "mayo",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Hummus (100g)",
-      "calories": 245,
-      "emoji": "🧆"
+      "calories": 237,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "fdcId": 174289,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Tomatensoße (100g)",
-      "calories": 35,
-      "emoji": "🍅"
+      "calories": 50,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "fdcId": 171192,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sparsam dosieren",
-      "text": "Pesto ist mit rund 460 kcal pro 100g sehr energiereich. Schon 1 EL (15g) bringt etwa 69 kcal mit – damit lässt sich Pasta würzen, ohne zu übertreiben.",
+      "text": "Pesto ist mit rund 426 kcal pro 100g sehr energiereich. Schon 1 EL (15g) bringt etwa 64 kcal mit, damit lässt sich Pasta würzen, ohne zu übertreiben.",
       "icon": "🥄"
     },
     {
       "title": "Fett kommt vom Öl",
-      "text": "Der hohe Fettgehalt von 46g pro 100g stammt überwiegend aus Olivenöl und Pinienkernen. Das sind großteils ungesättigte Fettsäuren, aber kalorisch trotzdem dicht.",
+      "text": "Der hohe Fettgehalt von 42g pro 100g stammt überwiegend aus Olivenöl und Pinienkernen. Das sind großteils ungesättigte Fettsäuren, aber kalorisch trotzdem dicht.",
       "icon": "🫒"
     },
     {
       "title": "Rotes Pesto sparsamer",
-      "text": "Pesto Rosso mit getrockneten Tomaten enthält oft etwas weniger Fett und damit weniger Kalorien als die grüne Variante – ein guter Tausch beim Abnehmen.",
+      "text": "Pesto Rosso mit getrockneten Tomaten enthält oft etwas weniger Fett und damit weniger Kalorien als die grüne Variante, ein guter Tausch beim Abnehmen.",
       "icon": "🍅"
     },
     {
       "title": "Mit Pasta richtig rechnen",
-      "text": "Gekochte Nudeln (ca. 130 kcal pro 100g) sind nicht das Problem – das Pesto macht den Unterschied. Eine 50g-Portion Pesto auf einem Teller Nudeln schlägt mit rund 230 kcal zu Buche.",
+      "text": "Gekochte Nudeln sind nicht das Problem, das Pesto macht den Unterschied. Eine 50g-Portion Pesto auf einem Teller Nudeln schlägt mit rund 213 kcal zu Buche.",
       "icon": "🍝"
     },
     {
@@ -131,11 +147,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Pesto?",
-      "answer": "Grünes Pesto hat ca. 460 kcal pro 100g. Ein Esslöffel (15g) liefert rund 69 kcal, eine typische Pasta-Portion von 50g etwa 230 kcal."
+      "answer": "Grünes Pesto hat ca. 426 kcal pro 100g. Ein Esslöffel (15g) liefert rund 64 kcal, eine typische Pasta-Portion von 50g etwa 213 kcal."
     },
     {
       "question": "Wie viele Kalorien hat 1 Esslöffel Pesto?",
-      "answer": "Ein gehäufter Esslöffel Pesto (ca. 15g) hat rund 69 kcal. Auf einem Brot oder zum Verfeinern reicht das meist aus."
+      "answer": "Ein gehäufter Esslöffel Pesto (ca. 15g) hat rund 64 kcal. Auf einem Brot oder zum Verfeinern reicht das meist aus."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Pesto?",
@@ -147,11 +163,11 @@
     },
     {
       "question": "Ist Pesto zum Abnehmen geeignet?",
-      "answer": "Pesto ist mit 460 kcal pro 100g sehr kalorienreich. In kleinen Mengen (1 EL) passt es in eine Diät, größere Portionen solltest du beim Abnehmen aber im Blick behalten."
+      "answer": "Pesto ist mit 426 kcal pro 100g sehr kalorienreich. In kleinen Mengen (1 EL) passt es in eine Diät, größere Portionen solltest du beim Abnehmen aber im Blick behalten."
     },
     {
       "question": "Ist Pesto gesund?",
-      "answer": "Pesto enthält wertvolle ungesättigte Fettsäuren aus Olivenöl und Nüssen. Es ist nährstoffreich, aber durch den hohen Fettanteil energiedicht – die Menge macht den Unterschied."
+      "answer": "Pesto enthält wertvolle ungesättigte Fettsäuren aus Olivenöl und Nüssen. Es ist nährstoffreich, aber durch den hohen Fettanteil energiedicht, die Menge macht den Unterschied."
     }
   ],
   "related_foods": [

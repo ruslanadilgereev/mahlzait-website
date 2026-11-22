@@ -3,49 +3,245 @@
   "name": "Naan-Brot",
   "emoji": "🫓",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 171845 (Bread, naan, plain, commercially prepared, refrigerated), Werte je 100 g",
   "seo": {
     "title": "Naan-Brot Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Naan-Brot? Nährwerte für Butter Naan, Knoblauch-Naan & Cheese Naan. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 48,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 291,
+    "protein_per_100g": 9.6,
+    "carbs_per_100g": 50.4,
+    "fat_per_100g": 5.7,
+    "fiber_per_100g": 2.2,
     "typical_portion_g": 90,
     "typical_portion_name": "1 Stück"
   },
   "variants": [
-    {"name": "Plain Naan", "portion_g": 90, "calories": 260, "protein": 7, "carbs": 43, "fat": 6, "tip": "Standard-Variante"},
-    {"name": "Butter Naan", "portion_g": 90, "calories": 310, "protein": 7, "carbs": 43, "fat": 12, "tip": "Klassiker im Restaurant"},
-    {"name": "Garlic Naan (Knoblauch)", "portion_g": 100, "calories": 300, "protein": 8, "carbs": 45, "fat": 10},
-    {"name": "Cheese Naan", "portion_g": 110, "calories": 380, "protein": 14, "carbs": 44, "fat": 16, "tip": "Kalorienreichste Variante"},
-    {"name": "Peshwari Naan (süß, mit Nüssen)", "portion_g": 110, "calories": 370, "protein": 10, "carbs": 50, "fat": 15},
-    {"name": "Keema Naan (mit Hackfleisch)", "portion_g": 120, "calories": 390, "protein": 16, "carbs": 44, "fat": 16},
-    {"name": "Chapati (dünnes Fladenbrot)", "portion_g": 60, "calories": 120, "protein": 4, "carbs": 22, "fat": 2, "tip": "Kalorienärmste Alternative"},
-    {"name": "Roti", "portion_g": 65, "calories": 140, "protein": 4, "carbs": 24, "fat": 3}
+    {
+      "name": "Plain Naan",
+      "portion_g": 90,
+      "calories": 262,
+      "protein": 9,
+      "carbs": 45,
+      "fat": 5,
+      "tip": "Standard-Variante"
+    },
+    {
+      "name": "Butter Naan",
+      "portion_g": 97,
+      "calories": 312,
+      "protein": 9,
+      "carbs": 45,
+      "fat": 11,
+      "tip": "Klassiker im Restaurant",
+      "basis": [
+        {
+          "g": 90
+        },
+        {
+          "fdcId": 173410,
+          "g": 7
+        }
+      ]
+    },
+    {
+      "name": "Garlic Naan (Knoblauch)",
+      "portion_g": 100,
+      "calories": 317,
+      "protein": 9,
+      "carbs": 46,
+      "fat": 11,
+      "basis": [
+        {
+          "g": 90
+        },
+        {
+          "fdcId": 173410,
+          "g": 7
+        },
+        {
+          "fdcId": 169230,
+          "g": 3
+        }
+      ]
+    },
+    {
+      "name": "Cheese Naan",
+      "portion_g": 110,
+      "calories": 322,
+      "protein": 13,
+      "carbs": 46,
+      "fat": 10,
+      "tip": "Mit Käsefüllung",
+      "basis": [
+        {
+          "g": 90
+        },
+        {
+          "fdcId": 170845,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Keema Naan (mit Hackfleisch)",
+      "portion_g": 120,
+      "calories": 347,
+      "protein": 16,
+      "carbs": 45,
+      "fat": 11,
+      "basis": [
+        {
+          "g": 90
+        },
+        {
+          "fdcId": 172544,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Vollkorn-Naan",
+      "portion_g": 90,
+      "calories": 257,
+      "protein": 9,
+      "carbs": 42,
+      "fat": 6,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 174077,
+          "g": 90
+        }
+      ]
+    },
+    {
+      "name": "Chapati (dünnes Fladenbrot)",
+      "portion_g": 60,
+      "calories": 178,
+      "protein": 7,
+      "carbs": 28,
+      "fat": 4,
+      "tip": "Pro Stück leichter",
+      "basis": [
+        {
+          "fdcId": 171844,
+          "g": 60
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Brot (1 Scheibe)", "calories": 130, "emoji": "🍞"},
-    {"name": "Brötchen", "calories": 160, "emoji": "🥖"},
-    {"name": "Pita-Brot", "calories": 165, "emoji": "🫓"},
-    {"name": "Tortilla-Wrap", "calories": 210, "emoji": "🌯"}
+    {
+      "name": "Brot (1 Scheibe, 50g)",
+      "calories": 130,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "brot"
+        }
+      ]
+    },
+    {
+      "name": "Brötchen (60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen"
+        }
+      ]
+    },
+    {
+      "name": "Pita-Brot (60g)",
+      "calories": 165,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "pita"
+        }
+      ]
+    },
+    {
+      "name": "Tortilla-Wrap (62g)",
+      "calories": 184,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "tortilla-wrap"
+        }
+      ]
+    },
+    {
+      "name": "Reis gekocht (150g)",
+      "calories": 195,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Chapati statt Naan", "text": "Ein Chapati hat nur 120 kcal vs. 260-310 kcal für Naan – weniger als die Hälfte.", "icon": "🫓"},
-    {"title": "Naan teilen", "text": "Ein halbes Naan reicht zum Dippen. Spart 130-155 kcal.", "icon": "✂️"},
-    {"title": "Butter Naan meiden", "text": "Butter Naan hat 50 kcal mehr als Plain Naan durch die zusätzliche Butter.", "icon": "🧈"},
-    {"title": "Zum Curry, nicht als Snack", "text": "Naan ist als Beilage zum Curry gedacht – nicht als Snack zwischendurch essen.", "icon": "🍛"},
-    {"title": "Vollkorn-Naan suchen", "text": "Einige Restaurants bieten Vollkorn-Naan an – mehr Ballaststoffe, gleich viele Kalorien.", "icon": "🌾"}
+    {
+      "title": "Chapati statt Naan",
+      "text": "Ein Chapati (60g) hat ca. 178 kcal, ein Plain Naan (90g) ca. 262 kcal. Pro Stück spart das rund 84 kcal, pro 100g sind beide etwa gleich.",
+      "icon": "🫓"
+    },
+    {
+      "title": "Naan teilen",
+      "text": "Ein halbes Naan reicht zum Dippen. Spart rund 131 kcal.",
+      "icon": "✂️"
+    },
+    {
+      "title": "Butter Naan meiden",
+      "text": "Butter Naan hat rund 50 kcal mehr als Plain Naan durch die zusätzliche Butter (ca. 7g).",
+      "icon": "🧈"
+    },
+    {
+      "title": "Zum Curry, nicht als Snack",
+      "text": "Naan ist als Beilage zum Curry gedacht, nicht als Snack zwischendurch essen.",
+      "icon": "🍛"
+    },
+    {
+      "title": "Vollkorn-Naan suchen",
+      "text": "Einige Restaurants bieten Vollkorn-Naan an: mehr Ballaststoffe, gleich viele Kalorien.",
+      "icon": "🌾"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Naan-Brot?", "answer": "Ein Stück Plain Naan hat ca. 260 kcal, Butter Naan ca. 310 kcal und Cheese Naan ca. 380 kcal."},
-    {"question": "Ist Naan-Brot kalorienreich?", "answer": "Ja, mit 290 kcal/100g ist Naan kalorienreicher als normales Brot (250 kcal/100g), vor allem durch die Butter."},
-    {"question": "Was hat weniger Kalorien: Naan oder Reis?", "answer": "150g Reis (195 kcal) hat weniger als ein Naan (260-310 kcal). Reis ist die kalorienärmere Beilage."},
-    {"question": "Wie viel Protein hat Naan?", "answer": "Ein Stück Naan hat ca. 7-8g Protein. Keema Naan (mit Hackfleisch) hat 16g Protein."},
-    {"question": "Was ist gesünder: Naan oder Chapati?", "answer": "Chapati ist gesünder: nur 120 kcal, weniger Fett, kein Hefeteig. Naan hat 260-310 kcal und mehr Butter."},
-    {"question": "Kann man Naan beim Abnehmen essen?", "answer": "In Maßen. Wähle ein halbes Plain Naan (130 kcal) oder einen Chapati (120 kcal) als Beilage."}
+    {
+      "question": "Wie viele Kalorien hat Naan-Brot?",
+      "answer": "Ein Stück Plain Naan hat ca. 262 kcal, Butter Naan ca. 312 kcal und Cheese Naan ca. 322 kcal."
+    },
+    {
+      "question": "Ist Naan-Brot kalorienreich?",
+      "answer": "Ja, mit 291 kcal/100g ist Naan etwas kalorienreicher als normales Brot (259 kcal/100g), vor allem durch das Fett im Teig."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Naan oder Reis?",
+      "answer": "150g Reis (195 kcal) hat weniger als ein Naan (262 bis 312 kcal). Reis ist die kalorienärmere Beilage."
+    },
+    {
+      "question": "Wie viel Protein hat Naan?",
+      "answer": "Ein Stück Naan hat ca. 9g Protein. Keema Naan (mit Hackfleisch) hat rund 16g Protein."
+    },
+    {
+      "question": "Was ist gesünder: Naan oder Chapati?",
+      "answer": "Pro Stück hat ein Chapati (60g) mit ca. 178 kcal weniger als ein Naan (262 bis 312 kcal), weil es kleiner ist. Pro 100g liegen beide fast gleich (297 zu 291 kcal), Chapati kommt aber ohne Hefeteig aus."
+    },
+    {
+      "question": "Kann man Naan beim Abnehmen essen?",
+      "answer": "In Maßen. Wähle ein halbes Plain Naan (131 kcal) oder einen Chapati (178 kcal) als Beilage."
+    }
   ],
-  "related_foods": ["butter-chicken", "tikka-masala", "brot", "lahmacun"]
+  "related_foods": [
+    "butter-chicken",
+    "tikka-masala",
+    "brot",
+    "lahmacun"
+  ]
 }

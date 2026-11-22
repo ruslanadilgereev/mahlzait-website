@@ -4,8 +4,10 @@
  * Lebensmittelseiten (src/data/foods/*.json).
  *
  * Liest die FDC-Massendaten (https://fdc.nal.usda.gov/download-datasets) und
- * schreibt für jede FDC-ID, die ein source-Feld nennt, Datensatz, Beschreibung
- * und kcal, Eiweiß, Fett und Kohlenhydrate je 100 g nach test/fdc-referenz.json.
+ * schreibt für jede FDC-ID, die eine Lebensmittelseite nennt (source-Feld,
+ * Rezeptzutaten, Bestandteile von Varianten und Vergleichen), Datensatz,
+ * Beschreibung und kcal, Eiweiß, Fett, Kohlenhydrate und Ballaststoffe je 100 g
+ * nach test/fdc-referenz.json.
  * test/naehrwerte-herkunft.test.mjs prüft die Lebensmittelseiten gegen diese
  * Datei und, wenn FDC_DATA_DIR gesetzt ist, die Datei gegen die Massendaten.
  *
@@ -37,15 +39,33 @@ export function fdcIds(source) {
   return [...source.matchAll(/\b\d{6,7}\b/g)].map((m) => Number(m[0]));
 }
 
-/** Alle Lebensmittel mit source-Feld: [{ slug, food }] */
-export function lebensmittelMitQuelle() {
+/** Alle Lebensmittel: [{ slug, food }] */
+export function alleLebensmittel() {
   const dir = path.join(repoRoot, "src", "data", "foods");
   return fs
     .readdirSync(dir)
     .filter((f) => f.endsWith(".json"))
     .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf8")))
-    .filter((food) => typeof food.source === "string")
     .map((food) => ({ slug: food.slug, food }));
+}
+
+/** Alle Lebensmittel mit source-Feld: [{ slug, food }] */
+export function lebensmittelMitQuelle() {
+  return alleLebensmittel().filter(({ food }) => typeof food.source === "string");
+}
+
+/** Bestandteile (basis) aller Varianten und Vergleiche einer Seite */
+export function bestandteile(food) {
+  return [...(food.variants ?? []), ...(food.comparison ?? [])].flatMap((x) => x.basis ?? []);
+}
+
+/** Alle FDC-IDs einer Seite: source-Feld, Rezeptzutaten, Varianten und Vergleiche */
+export function fdcIdsDerSeite(food) {
+  return [
+    ...fdcIds(food.source ?? ""),
+    ...(food.rezept?.zutaten ?? []).map((z) => z.fdcId),
+    ...bestandteile(food).filter((b) => b.fdcId != null).map((b) => b.fdcId),
+  ];
 }
 
 function finde(dir, name) {
@@ -98,8 +118,8 @@ function leseCsv(datei, behalten) {
 
 // Nährstoffe: SR Legacy und Foundation nennen die Nährstoff-ID, FNDDS in
 // food_nutrient.csv die Nährstoffnummer (208 = Energie usw.).
-const NAEHRSTOFF_ID = { 1008: "kcal1008", 2048: "kcal2048", 2047: "kcal2047", 1003: "eiweiss", 1004: "fett", 1085: "fettNlea", 1005: "kh", 1050: "khSumme" };
-const NAEHRSTOFF_NR = { 208: "kcal1008", 203: "eiweiss", 204: "fett", 205: "kh" };
+const NAEHRSTOFF_ID = { 1008: "kcal1008", 2048: "kcal2048", 2047: "kcal2047", 1003: "eiweiss", 1004: "fett", 1085: "fettNlea", 1005: "kh", 1050: "khSumme", 1079: "ballaststoffe" };
+const NAEHRSTOFF_NR = { 208: "kcal1008", 203: "eiweiss", 204: "fett", 205: "kh", 291: "ballaststoffe" };
 
 function eintrag(id, datensatz, beschreibung, n) {
   const kcalNaehrstoff = n.kcal1008 != null ? 1008 : n.kcal2048 != null ? 2048 : n.kcal2047 != null ? 2047 : null;
@@ -112,6 +132,7 @@ function eintrag(id, datensatz, beschreibung, n) {
     eiweiss: n.eiweiss ?? null,
     fett: n.fett ?? n.fettNlea ?? null,
     kohlenhydrate: n.kh ?? n.khSumme ?? null,
+    ballaststoffe: n.ballaststoffe ?? null,
   };
 }
 
@@ -157,7 +178,7 @@ export function referenzInhalt(eintraege) {
   return {
     quelle: "USDA FoodData Central, https://fdc.nal.usda.gov/download-datasets",
     datensaetze: ["SR Legacy 2018-04 (CSV)", "Foundation Foods 2026-10-29 (JSON)", "FNDDS 2024-10-31 (CSV)"],
-    werte: "je 100 g; kcal aus Nährstoff 1008 (Energy), bei Foundation ohne 1008 aus 2048 (Atwater Specific Factors) oder 2047 (Atwater General Factors)",
+    werte: "je 100 g; kcal aus Nährstoff 1008 (Energy), bei Foundation ohne 1008 aus 2048 (Atwater Specific Factors) oder 2047 (Atwater General Factors); Ballaststoffe aus 1079 (FNDDS: Nährstoffnummer 291), null wenn der Eintrag keinen Wert nennt",
     eintraege,
   };
 }
@@ -168,7 +189,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
     console.error("Aufruf: node scripts/fdc-referenz.mjs <Ordner mit den entpackten FDC-Daten>");
     process.exit(1);
   }
-  const ids = [...new Set(lebensmittelMitQuelle().flatMap(({ food }) => fdcIds(food.source)))].sort((a, b) => a - b);
+  const ids = [...new Set(alleLebensmittel().flatMap(({ food }) => fdcIdsDerSeite(food)))].sort((a, b) => a - b);
   const eintraege = extrahiere(dataDir, ids);
   fs.writeFileSync(referenzDatei, JSON.stringify(referenzInhalt(eintraege), null, 1) + "\n");
   const fehlen = ids.filter((id) => !eintraege[String(id)]);

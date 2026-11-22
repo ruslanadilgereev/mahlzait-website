@@ -3,9 +3,10 @@
   "name": "Butterkeks",
   "emoji": "🍪",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 172819 (Cookies, butter, commercially prepared, unenriched), Werte je 100 g",
   "seo": {
     "title": "Butterkeks Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Butterkeks? 100g haben ca. 450 kcal, ein einzelner Keks ca. 28 kcal. Nährwerte, Portionen & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Butterkeks? 100g haben ca. 467 kcal, ein einzelner Keks ca. 28 kcal. Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "butterkeks kalorien",
       "butterkeks kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 450,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 71,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 467,
+    "protein_per_100g": 6.1,
+    "carbs_per_100g": 68.9,
+    "fat_per_100g": 18.8,
+    "fiber_per_100g": 0.8,
     "typical_portion_g": 25,
     "typical_portion_name": "4 Kekse (25g)"
   },
@@ -28,7 +29,7 @@
     {
       "name": "1 Butterkeks (6g)",
       "portion_g": 6,
-      "calories": 27,
+      "calories": 28,
       "protein": 0,
       "carbs": 4,
       "fat": 1,
@@ -37,75 +38,90 @@
     {
       "name": "4 Kekse (25g)",
       "portion_g": 25,
-      "calories": 113,
+      "calories": 117,
       "protein": 2,
-      "carbs": 18,
-      "fat": 3,
+      "carbs": 17,
+      "fat": 5,
       "tip": "Standard-Portion"
     },
     {
       "name": "Kleine Handvoll (30g)",
       "portion_g": 30,
-      "calories": 135,
+      "calories": 140,
       "protein": 2,
       "carbs": 21,
-      "fat": 4
+      "fat": 6
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 450,
-      "protein": 7,
-      "carbs": 71,
-      "fat": 13
+      "calories": 467,
+      "protein": 6,
+      "carbs": 69,
+      "fat": 19
     },
     {
       "name": "Halbe Packung (100g)",
       "portion_g": 100,
-      "calories": 450,
-      "protein": 7,
-      "carbs": 71,
-      "fat": 13
+      "calories": 467,
+      "protein": 6,
+      "carbs": 69,
+      "fat": 19
     },
     {
       "name": "Ganze Packung (200g)",
       "portion_g": 200,
-      "calories": 900,
-      "protein": 14,
-      "carbs": 142,
-      "fat": 26,
+      "calories": 934,
+      "protein": 12,
+      "carbs": 138,
+      "fat": 38,
       "tip": "Komplette Tüte"
-    },
-    {
-      "name": "Vollkorn-Butterkeks (25g)",
-      "portion_g": 25,
-      "calories": 108,
-      "protein": 2,
-      "carbs": 16,
-      "fat": 4,
-      "tip": "Mehr Ballaststoffe"
     }
   ],
   "comparison": [
     {
-      "name": "Cracker",
-      "calories": 113,
-      "emoji": "🍘"
+      "name": "Cracker (25 g)",
+      "calories": 128,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "cracker",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Kekse",
-      "calories": 120,
-      "emoji": "🍪"
+      "name": "Kekse (25 g)",
+      "calories": 123,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "kekse",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Reiswaffeln",
-      "calories": 95,
-      "emoji": "🍙"
+      "name": "Reiswaffeln (25 g)",
+      "calories": 97,
+      "emoji": "🍙",
+      "basis": [
+        {
+          "slug": "reiswaffeln",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Cookie",
-      "calories": 160,
-      "emoji": "🍪"
+      "name": "Cookie (25 g)",
+      "calories": 121,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "cookie",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
@@ -116,7 +132,7 @@
     },
     {
       "title": "Hoher Zuckeranteil",
-      "text": "Butterkekse bestehen zu rund 71 Prozent aus Kohlenhydraten, davon ein großer Teil Zucker. Sie sind ein Genussmittel, kein sättigender Snack.",
+      "text": "Butterkekse bestehen zu rund 69 Prozent aus Kohlenhydraten, davon ein großer Teil Zucker. Sie sind ein Genussmittel, kein sättigender Snack.",
       "icon": "🍬"
     },
     {
@@ -138,19 +154,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Butterkeks?",
-      "answer": "Ein einzelner klassischer Butterkeks (etwa 6g) hat rund 27 bis 28 kcal. 100g Butterkekse liefern circa 450 kcal."
+      "answer": "Ein einzelner klassischer Butterkeks (etwa 6g) hat rund 28 kcal. 100g Butterkekse liefern circa 467 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 4 Butterkekse?",
-      "answer": "Vier Butterkekse wiegen zusammen etwa 25g und haben rund 113 kcal."
+      "answer": "Vier Butterkekse wiegen zusammen etwa 25g und haben rund 117 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Butterkeks?",
-      "answer": "Butterkekse enthalten pro 100g etwa 71g Kohlenhydrate, davon einen großen Anteil Zucker. Ein einzelner Keks hat rund 4g Kohlenhydrate."
+      "answer": "Butterkekse enthalten pro 100g etwa 69g Kohlenhydrate, davon einen großen Anteil Zucker. Ein einzelner Keks hat rund 4g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Butterkeksen?",
-      "answer": "Butterkekse liefern pro 100g nur etwa 7g Eiweiß und sind damit keine nennenswerte Proteinquelle."
+      "answer": "Butterkekse liefern pro 100g nur etwa 6g Eiweiß und sind damit keine nennenswerte Proteinquelle."
     },
     {
       "question": "Sind Butterkekse zum Abnehmen geeignet?",

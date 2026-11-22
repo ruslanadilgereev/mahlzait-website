@@ -3,49 +3,208 @@
   "name": "Tacos",
   "emoji": "🌮",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708514 (Taco, NFS), Werte je 100 g",
   "seo": {
     "title": "Tacos Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Tacos? Nährwerte für Chicken, Beef & Fish Tacos. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 210,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 246,
+    "protein_per_100g": 15.3,
+    "carbs_per_100g": 15.6,
+    "fat_per_100g": 13.6,
+    "fiber_per_100g": 2.2,
     "typical_portion_g": 260,
     "typical_portion_name": "3 Tacos"
   },
   "variants": [
-    {"name": "Chicken Tacos (3 Stück)", "portion_g": 270, "calories": 540, "protein": 34, "carbs": 48, "fat": 22, "tip": "Beliebter Klassiker"},
-    {"name": "Beef Tacos (3 Stück)", "portion_g": 270, "calories": 600, "protein": 30, "carbs": 48, "fat": 30},
-    {"name": "Fish Tacos (3 Stück)", "portion_g": 270, "calories": 510, "protein": 28, "carbs": 50, "fat": 20, "tip": "Leichtere Variante"},
-    {"name": "Carnitas Tacos (Schwein, 3 Stück)", "portion_g": 270, "calories": 580, "protein": 32, "carbs": 46, "fat": 28},
-    {"name": "Bean Tacos vegetarisch (3 Stück)", "portion_g": 260, "calories": 450, "protein": 18, "carbs": 56, "fat": 16, "tip": "Kalorienärmste Variante"},
-    {"name": "Hard Shell Tacos (3 Stück)", "portion_g": 240, "calories": 520, "protein": 26, "carbs": 42, "fat": 28, "tip": "Frittierte Schale"},
-    {"name": "Taco al Pastor (3 Stück)", "portion_g": 280, "calories": 560, "protein": 30, "carbs": 50, "fat": 26},
-    {"name": "Street Tacos (5 kleine)", "portion_g": 300, "calories": 600, "protein": 32, "carbs": 54, "fat": 28}
+    {
+      "name": "Chicken Tacos (3 Stück)",
+      "portion_g": 270,
+      "calories": 570,
+      "protein": 44,
+      "carbs": 41,
+      "fat": 26,
+      "tip": "Beliebter Klassiker",
+      "basis": [
+        {
+          "fdcId": 2708519,
+          "g": 270
+        }
+      ]
+    },
+    {
+      "name": "Beef Tacos (3 Stück)",
+      "portion_g": 270,
+      "calories": 672,
+      "protein": 42,
+      "carbs": 41,
+      "fat": 38,
+      "basis": [
+        {
+          "fdcId": 2708515,
+          "g": 270
+        }
+      ]
+    },
+    {
+      "name": "Fish Tacos (3 Stück)",
+      "portion_g": 270,
+      "calories": 743,
+      "protein": 31,
+      "carbs": 62,
+      "fat": 41,
+      "basis": [
+        {
+          "fdcId": 2708529,
+          "g": 270
+        }
+      ]
+    },
+    {
+      "name": "Carnitas Tacos (Schwein, 3 Stück)",
+      "portion_g": 270,
+      "calories": 678,
+      "protein": 40,
+      "carbs": 41,
+      "fat": 39,
+      "basis": [
+        {
+          "fdcId": 2708517,
+          "g": 270
+        }
+      ]
+    },
+    {
+      "name": "Bean Tacos vegetarisch (3 Stück)",
+      "portion_g": 260,
+      "calories": 458,
+      "protein": 15,
+      "carbs": 60,
+      "fat": 19,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 2708521,
+          "g": 260
+        }
+      ]
+    },
+    {
+      "name": "Street Tacos (5 kleine, Fleisch ohne Käse)",
+      "portion_g": 300,
+      "calories": 729,
+      "protein": 45,
+      "carbs": 48,
+      "fat": 40,
+      "basis": [
+        {
+          "fdcId": 2708530,
+          "g": 300
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Burrito", "calories": 650, "emoji": "🌯"},
-    {"name": "Quesadilla", "calories": 520, "emoji": "🧀"},
-    {"name": "Nachos", "calories": 580, "emoji": "🌮"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"}
+    {
+      "name": "Burrito",
+      "calories": 876,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "burrito"
+        }
+      ]
+    },
+    {
+      "name": "Quesadilla",
+      "calories": 790,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "quesadilla"
+        }
+      ]
+    },
+    {
+      "name": "Nachos",
+      "calories": 686,
+      "emoji": "🌮",
+      "basis": [
+        {
+          "slug": "nachos"
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Corn statt Flour Tortillas", "text": "Mais-Tortillas haben ca. 60 kcal pro Stück, Weizen-Tortillas ca. 90 kcal. Spart 90 kcal bei 3 Tacos.", "icon": "🌽"},
-    {"title": "Salsa statt Sour Cream", "text": "Frische Salsa hat 20 kcal/EL, Sour Cream 30 kcal/EL. Plus: Salsa hat Vitamine.", "icon": "🍅"},
-    {"title": "Hähnchen oder Fisch wählen", "text": "Chicken und Fish Tacos haben weniger Fett als Beef oder Carnitas.", "icon": "🐟"},
-    {"title": "Tacos portionieren", "text": "2 Tacos (ca. 360 kcal) statt 3 reichen oft als Mahlzeit – besonders mit Salat dazu.", "icon": "⚖️"},
-    {"title": "Frische Toppings nutzen", "text": "Koriander, Limette, Zwiebeln und Jalapeños haben fast keine Kalorien und maximalen Geschmack.", "icon": "🌿"}
+    {
+      "title": "Corn statt Flour Tortillas",
+      "text": "Mais-Tortillas haben weniger Kalorien und weniger Fett als Weizen-Tortillas. Bei mehreren Tacos summiert sich das.",
+      "icon": "🌽"
+    },
+    {
+      "title": "Salsa statt Sour Cream",
+      "text": "Frische Salsa hat deutlich weniger Kalorien als Sour Cream. Plus: Salsa hat Vitamine.",
+      "icon": "🍅"
+    },
+    {
+      "title": "Hähnchen oder Fisch wählen",
+      "text": "Chicken Tacos haben weniger Fett als Beef, Carnitas oder Fish Tacos.",
+      "icon": "🐟"
+    },
+    {
+      "title": "Tacos portionieren",
+      "text": "2 Tacos (ca. 427 kcal) statt 3 (640 kcal) reichen oft als Mahlzeit, besonders mit Salat dazu.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Frische Toppings nutzen",
+      "text": "Koriander, Limette, Zwiebeln und Jalapeños haben fast keine Kalorien und maximalen Geschmack.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Tacos?", "answer": "3 Tacos haben ca. 450-600 kcal, je nach Füllung. Chicken Tacos ca. 540 kcal, Beef Tacos ca. 600 kcal."},
-    {"question": "Wie viele Kalorien hat ein einzelner Taco?", "answer": "Ein einzelner Taco hat ca. 150-200 kcal. Ein Street Taco (kleiner) hat ca. 120 kcal."},
-    {"question": "Sind Tacos gut zum Abnehmen?", "answer": "In Maßen ja. 2 Chicken Tacos (360 kcal) sind eine gute Mahlzeit. Mais-Tortillas und Hähnchen wählen."},
-    {"question": "Was hat weniger Kalorien: Tacos oder Burrito?", "answer": "3 Tacos (540 kcal) haben weniger als ein Burrito (650 kcal), da weniger Tortilla und kein Reis im Taco ist."},
-    {"question": "Wie viel Protein haben Tacos?", "answer": "3 Chicken Tacos liefern ca. 34g Protein. Beef Tacos ca. 30g Protein."},
-    {"question": "Hard Shell oder Soft Shell – was hat weniger Kalorien?", "answer": "Soft Corn Tortillas (60 kcal/Stück) haben weniger als Hard Shells (70 kcal/Stück). Hard Shells werden frittiert."}
+    {
+      "question": "Wie viele Kalorien haben Tacos?",
+      "answer": "3 Tacos (260g) haben ca. 640 kcal. Je nach Füllung liegen 3 Stück zwischen ca. 458 kcal (Bohnen) und 743 kcal (Fisch). Chicken Tacos haben ca. 570 kcal, Beef Tacos ca. 672 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein einzelner Taco?",
+      "answer": "Ein einzelner Taco hat je nach Füllung ca. 153 bis 248 kcal, im Schnitt rund 213 kcal. Ein Street Taco (kleiner) hat ca. 146 kcal."
+    },
+    {
+      "question": "Sind Tacos gut zum Abnehmen?",
+      "answer": "In Maßen ja. 2 Chicken Tacos (380 kcal) sind eine gute Mahlzeit. Mais-Tortillas und Hähnchen wählen."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Tacos oder Burrito?",
+      "answer": "3 Tacos (640 kcal) haben weniger als ein Burrito (876 kcal), da weniger Tortilla und kein Reis im Taco ist."
+    },
+    {
+      "question": "Wie viel Protein haben Tacos?",
+      "answer": "3 Chicken Tacos liefern ca. 44g Protein, Beef Tacos ca. 42g Protein."
+    },
+    {
+      "question": "Hard Shell oder Soft Shell: Was hat weniger Kalorien?",
+      "answer": "Pro Stück liegen eine weiche Mais-Tortilla und eine Hard Shell nah beieinander, weil die Hard Shell leichter ist. Pro 100g hat die Hard Shell aber deutlich mehr Kalorien und Fett als die weiche Tortilla."
+    }
   ],
-  "related_foods": ["burrito", "quesadilla", "nachos", "enchiladas"]
+  "related_foods": [
+    "burrito",
+    "quesadilla",
+    "nachos",
+    "enchiladas"
+  ]
 }

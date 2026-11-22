@@ -3,50 +3,256 @@
   "name": "Kakao",
   "emoji": "☕",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2705473 (Hot chocolate / cocoa, made with whole or reduced fat (2%) milk: 91 kcal), Werte je 100 g; je 100 ml mit 1,048 g/ml 95 kcal",
   "seo": {
     "title": "Kakao Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kakao? Nährwerte pro Tasse. Heiße Schokolade, Kaba, Ovomaltine & kalorienarme Alternativen im Vergleich.",
-    "keywords": ["kakao kalorien", "kalorien kakao", "heiße schokolade kalorien", "kakao nährwerte", "trinkschokolade kalorien", "kakao mit milch kalorien", "kaba kalorien", "ovomaltine kalorien"]
+    "description": "Wie viele Kalorien hat Kakao? Nährwerte pro Tasse. Mit Vollmilch, Wasser, Nesquik, Malzkakao & kalorienarme Alternativen im Vergleich.",
+    "keywords": [
+      "kakao kalorien",
+      "kalorien kakao",
+      "heiße schokolade kalorien",
+      "kakao nährwerte",
+      "trinkschokolade kalorien",
+      "kakao mit milch kalorien",
+      "kaba kalorien",
+      "ovomaltine kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 70,
-    "protein_per_100g": 3.5,
-    "carbs_per_100g": 10,
-    "fat_per_100g": 1.8,
-    "fiber_per_100g": 0.5,
-    "typical_portion_g": 250,
+    "calories_per_100g": 91,
+    "protein_per_100g": 2.7,
+    "carbs_per_100g": 16.5,
+    "fat_per_100g": 1.5,
+    "fiber_per_100g": 0,
+    "typical_portion_g": 262,
     "typical_portion_name": "1 Tasse (250ml)"
   },
   "variants": [
-    { "name": "Kakao mit Vollmilch (250ml)", "portion_g": 250, "calories": 210, "protein": 9, "carbs": 28, "fat": 7 },
-    { "name": "Kakao mit fettarmer Milch (250ml)", "portion_g": 250, "calories": 170, "protein": 9, "carbs": 27, "fat": 3 },
-    { "name": "Heiße Schokolade (250ml)", "portion_g": 250, "calories": 260, "protein": 8, "carbs": 35, "fat": 10 },
-    { "name": "Kakao mit Wasser (250ml)", "portion_g": 250, "calories": 90, "protein": 2, "carbs": 18, "fat": 2, "tip": "Kalorienärmste Variante" },
-    { "name": "Kaba/Nesquik (250ml Milch)", "portion_g": 250, "calories": 215, "protein": 9, "carbs": 30, "fat": 7 },
-    { "name": "Ovomaltine (250ml Milch)", "portion_g": 250, "calories": 220, "protein": 9, "carbs": 32, "fat": 6 },
-    { "name": "Kakao mit Sahnehaube (250ml)", "portion_g": 280, "calories": 310, "protein": 8, "carbs": 28, "fat": 18 },
-    { "name": "Kakao mit Hafermilch (250ml)", "portion_g": 250, "calories": 175, "protein": 4, "carbs": 30, "fat": 4 }
+    {
+      "name": "Kakao mit Vollmilch (250ml)",
+      "portion_g": 262,
+      "calories": 238,
+      "protein": 7,
+      "carbs": 43,
+      "fat": 4
+    },
+    {
+      "name": "Kakao mit fettarmer Milch (250ml)",
+      "portion_g": 262,
+      "calories": 204,
+      "protein": 7,
+      "carbs": 43,
+      "fat": 0,
+      "basis": [
+        {
+          "fdcId": 2705474,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Backkakao mit Wasser (2 EL + 250ml)",
+      "portion_g": 261,
+      "calories": 25,
+      "protein": 2,
+      "carbs": 6,
+      "fat": 2,
+      "tip": "Kalorienärmste Variante, ungesüßt oder mit Süßstoff",
+      "basis": [
+        {
+          "fdcId": 169593,
+          "g": 11
+        },
+        {
+          "fdcId": 173647,
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Kakao mit Wasser (250ml)",
+      "portion_g": 262,
+      "calories": 141,
+      "protein": 2,
+      "carbs": 30,
+      "fat": 1,
+      "tip": "Instantpulver, mit Wasser angerührt",
+      "basis": [
+        {
+          "fdcId": 2705483,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Nesquik mit Milch (250ml)",
+      "portion_g": 262,
+      "calories": 194,
+      "protein": 9,
+      "carbs": 26,
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 2705477,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Malzkakao-Pulver in Vollmilch (250ml Milch)",
+      "portion_g": 280,
+      "calories": 238,
+      "protein": 9,
+      "carbs": 31,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 174867,
+          "ml": 250,
+          "g": 280
+        }
+      ]
+    },
+    {
+      "name": "Kakao mit Sahnehaube (250ml)",
+      "portion_g": 262,
+      "calories": 265,
+      "protein": 7,
+      "carbs": 43,
+      "fat": 7,
+      "basis": [
+        {
+          "fdcId": 2705476,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Kakao mit Pflanzendrink (250ml)",
+      "portion_g": 262,
+      "calories": 199,
+      "protein": 2,
+      "carbs": 39,
+      "fat": 3,
+      "basis": [
+        {
+          "fdcId": 2705475,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Cappuccino (250ml)", "calories": 120, "emoji": "☕" },
-    { "name": "Milchshake Schoko (300ml)", "calories": 360, "emoji": "🍫" },
-    { "name": "Latte Macchiato", "calories": 150, "emoji": "🥛" },
-    { "name": "Schwarzer Kaffee", "calories": 2, "emoji": "☕" }
+    {
+      "name": "Cappuccino (250ml)",
+      "calories": 69,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "cappuccino",
+          "ml": 250,
+          "g": 254
+        }
+      ]
+    },
+    {
+      "name": "Milchshake Schoko (300ml)",
+      "calories": 341,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "milchshake-schoko",
+          "ml": 300,
+          "g": 284
+        }
+      ]
+    },
+    {
+      "name": "Latte Macchiato (300ml)",
+      "calories": 131,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "latte-macchiato",
+          "ml": 300,
+          "g": 304
+        }
+      ]
+    },
+    {
+      "name": "Schwarzer Kaffee (200ml)",
+      "calories": 2,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffee"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Backkakao statt Trinkpulver", "text": "2 EL stark entölter Backkakao + Süßstoff in heißer Milch: intensiver Geschmack, 30% weniger Zucker als Fertigpulver.", "icon": "🍫" },
-    { "title": "Fettarme Milch verwenden", "text": "Milch 1,5% statt 3,5% spart 40 kcal pro Tasse. Der Geschmack ist kaum anders.", "icon": "📉" },
-    { "title": "Sahne weglassen", "text": "Eine Sahnehaube fügt 100 kcal zum Kakao hinzu. Die cremige Milch reicht völlig.", "icon": "🚫" },
-    { "title": "Mini-Marshmallows kontrollieren", "text": "5 Mini-Marshmallows = 25 kcal. Eine Handvoll = 100 kcal. Lieber 2-3 als Topping, nicht eine halbe Tüte.", "icon": "📏" },
-    { "title": "Kakao als Genussmoment", "text": "Eine Tasse Kakao (210 kcal) ist ein vollwertiger Snack. Bewusst genießen statt nebenbei trinken – dann reicht eine Tasse.", "icon": "🧘" }
+    {
+      "title": "Backkakao statt Trinkpulver",
+      "text": "2 EL stark entölter Backkakao + Süßstoff in heißer Milch: intensiver Geschmack, deutlich weniger Zucker als Fertigpulver.",
+      "icon": "🍫"
+    },
+    {
+      "title": "Fettarme Milch verwenden",
+      "text": "Fettarme Milch statt Vollmilch spart rund 34 kcal pro Tasse. Der Geschmack ist kaum anders.",
+      "icon": "📉"
+    },
+    {
+      "title": "Sahne weglassen",
+      "text": "Eine Sahnehaube bringt laut USDA rund 27 kcal pro Tasse zusätzlich, eine große Haube deutlich mehr. Die cremige Milch reicht völlig.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Mini-Marshmallows kontrollieren",
+      "text": "Mini-Marshmallows liefern fast nur Zucker. Lieber 2-3 als Topping, nicht eine halbe Tüte.",
+      "icon": "📏"
+    },
+    {
+      "title": "Kakao als Genussmoment",
+      "text": "Eine Tasse Kakao (ca. 238 kcal) ist ein vollwertiger Snack. Bewusst genießen statt nebenbei trinken, dann reicht eine Tasse.",
+      "icon": "🧘"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat eine Tasse Kakao?", "answer": "Eine Tasse Kakao mit Vollmilch (250ml) hat ca. 210 kcal. Mit fettarmer Milch 170 kcal, mit Wasser nur 90 kcal. Heiße Schokolade vom Café hat oft 260+ kcal." },
-    { "question": "Ist Kakao gesund?", "answer": "Kakaopulver enthält Flavonoide (Antioxidantien), Magnesium und Eisen. Die Milch liefert Kalzium und Protein. Problematisch ist nur der zugesetzte Zucker in Fertigpulvern." },
-    { "question": "Was hat weniger Kalorien – Kakao oder Kaffee?", "answer": "Schwarzer Kaffee hat 2 kcal, Kakao 210 kcal. Cappuccino (120 kcal) liegt dazwischen. Kakao ist ein Snack, Kaffee ein Getränk." },
-    { "question": "Wie viel Zucker hat Kakao?", "answer": "Kakao mit Milch hat ca. 28g Zucker (davon 12g Milchzucker). Fertigpulver wie Kaba/Nesquik bestehen zu 70-80% aus Zucker. Backkakao hat kaum Zucker." },
-    { "question": "Welcher Kakao hat die wenigsten Kalorien?", "answer": "Backkakao (stark entölt) mit Wasser und Süßstoff: ca. 30 kcal. Mit fettarmer Milch: 170 kcal. Am kalorienreichsten: Heiße Schokolade mit Sahne (310+ kcal)." },
-    { "question": "Kakao am Abend – schlecht zum Abnehmen?", "answer": "210 kcal passen in jedes Kalorienbudget, wenn man sie einplant. Kakao mit Milch kann sogar beim Einschlafen helfen (Tryptophan). Nur nicht zusätzlich zum Kalorienziel trinken." }
+    {
+      "question": "Wie viele Kalorien hat eine Tasse Kakao?",
+      "answer": "Eine Tasse Kakao mit Vollmilch (250ml) hat ca. 238 kcal. Mit fettarmer Milch ca. 204 kcal, aus Instantpulver mit Wasser ca. 141 kcal. Mit Sahnehaube sind es ca. 265 kcal."
+    },
+    {
+      "question": "Ist Kakao gesund?",
+      "answer": "Kakaopulver enthält Flavonoide (Antioxidantien), Magnesium und Eisen. Die Milch liefert Kalzium und Protein. Problematisch ist nur der zugesetzte Zucker in Fertigpulvern."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Kakao oder Kaffee?",
+      "answer": "Schwarzer Kaffee hat ca. 2 kcal, Kakao ca. 238 kcal. Cappuccino (ca. 69 kcal pro 250ml) liegt dazwischen. Kakao ist ein Snack, Kaffee ein Getränk."
+    },
+    {
+      "question": "Wie viel Zucker hat Kakao?",
+      "answer": "Eine Tasse Kakao mit Milch (250ml) hat laut USDA rund 40g Zucker, ein Teil davon ist Milchzucker. Fertigpulver bestehen zum Großteil aus Zucker. Backkakao hat kaum Zucker."
+    },
+    {
+      "question": "Welcher Kakao hat die wenigsten Kalorien?",
+      "answer": "Backkakao mit Wasser und Süßstoff: ca. 25 kcal. Mit fettarmer Milch: ca. 204 kcal. Am kalorienreichsten: Kakao mit Sahnehaube (ca. 265 kcal)."
+    },
+    {
+      "question": "Kakao am Abend: schlecht zum Abnehmen?",
+      "answer": "Rund 238 kcal passen in jedes Kalorienbudget, wenn man sie einplant. Kakao mit Milch kann sogar beim Einschlafen helfen (Tryptophan). Nur nicht zusätzlich zum Kalorienziel trinken."
+    }
   ],
-  "related_foods": ["milchshake-schoko", "cappuccino", "latte-macchiato", "milch"]
+  "related_foods": [
+    "milchshake-schoko",
+    "cappuccino",
+    "latte-macchiato",
+    "milch"
+  ]
 }

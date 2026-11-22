@@ -3,50 +3,213 @@
   "name": "Mojito",
   "emoji": "🍸",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710644 (Mojito: 61 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 62 kcal",
   "seo": {
     "title": "Mojito Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Mojito? Nährwerte pro Glas. Klassisch, Virgin Mojito, frozen & andere Cocktails im Vergleich.",
-    "keywords": ["mojito kalorien", "kalorien mojito", "mojito nährwerte", "virgin mojito kalorien", "mojito zucker", "cocktail kalorien", "frozen mojito kalorien", "mojito alkohol"]
+    "description": "Wie viele Kalorien hat ein Mojito? Nährwerte pro Glas. Klassisch, Virgin Mojito, ohne Zucker & andere Cocktails im Vergleich.",
+    "keywords": [
+      "mojito kalorien",
+      "kalorien mojito",
+      "mojito nährwerte",
+      "virgin mojito kalorien",
+      "mojito zucker",
+      "cocktail kalorien",
+      "frozen mojito kalorien",
+      "mojito alkohol"
+    ]
   },
   "overview": {
-    "calories_per_100g": 87,
-    "protein_per_100g": 0,
-    "carbs_per_100g": 10,
+    "calories_per_100g": 61,
+    "protein_per_100g": 0.1,
+    "carbs_per_100g": 2.5,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 250,
+    "fiber_per_100g": 0.2,
+    "typical_portion_g": 254,
     "typical_portion_name": "1 Glas (250ml)"
   },
   "variants": [
-    { "name": "Mojito klassisch (250ml)", "portion_g": 250, "calories": 217, "protein": 0, "carbs": 25, "fat": 0 },
-    { "name": "Virgin Mojito (alkoholfrei, 250ml)", "portion_g": 250, "calories": 90, "protein": 0, "carbs": 22, "fat": 0, "tip": "Alkoholfrei & leicht" },
-    { "name": "Frozen Mojito (300ml)", "portion_g": 300, "calories": 280, "protein": 0, "carbs": 35, "fat": 0 },
-    { "name": "Mojito mit wenig Zucker (250ml)", "portion_g": 250, "calories": 170, "protein": 0, "carbs": 15, "fat": 0 },
-    { "name": "Erdbeer-Mojito (250ml)", "portion_g": 250, "calories": 235, "protein": 0, "carbs": 30, "fat": 0 },
-    { "name": "Mojito Fertigmix (200ml)", "portion_g": 200, "calories": 190, "protein": 0, "carbs": 24, "fat": 0 },
-    { "name": "Mango-Mojito (250ml)", "portion_g": 250, "calories": 240, "protein": 0, "carbs": 32, "fat": 0 },
-    { "name": "Mojito ohne Zucker (Süßstoff, 250ml)", "portion_g": 250, "calories": 130, "protein": 0, "carbs": 3, "fat": 0 }
+    {
+      "name": "Mojito klassisch (250ml)",
+      "portion_g": 254,
+      "calories": 155,
+      "protein": 0,
+      "carbs": 6,
+      "fat": 0
+    },
+    {
+      "name": "Virgin Mojito (alkoholfrei, 250ml)",
+      "portion_g": 241,
+      "calories": 40,
+      "protein": 0,
+      "carbs": 11,
+      "fat": 0,
+      "tip": "3cl Limettensaft, 2 TL Zucker, Soda, Minze",
+      "basis": [
+        {
+          "fdcId": 168156,
+          "ml": 30,
+          "g": 31
+        },
+        {
+          "fdcId": 169655,
+          "g": 8
+        },
+        {
+          "fdcId": 174842,
+          "ml": 200,
+          "g": 200
+        },
+        {
+          "fdcId": 173475,
+          "g": 2
+        }
+      ]
+    },
+    {
+      "name": "Mojito ohne Zucker (Süßstoff, 250ml)",
+      "portion_g": 250,
+      "calories": 117,
+      "protein": 0,
+      "carbs": 3,
+      "fat": 0,
+      "tip": "5cl Rum, 3cl Limettensaft, Soda, Minze, Süßstoff",
+      "basis": [
+        {
+          "fdcId": 2710703,
+          "ml": 50,
+          "g": 47
+        },
+        {
+          "fdcId": 168156,
+          "ml": 30,
+          "g": 31
+        },
+        {
+          "fdcId": 174842,
+          "ml": 170,
+          "g": 170
+        },
+        {
+          "fdcId": 173475,
+          "g": 2
+        }
+      ]
+    },
+    {
+      "name": "Mojito großes Glas (400ml)",
+      "portion_g": 406,
+      "calories": 248,
+      "protein": 0,
+      "carbs": 10,
+      "fat": 0
+    }
   ],
   "comparison": [
-    { "name": "Gin Tonic (250ml)", "calories": 190, "emoji": "🍸" },
-    { "name": "Aperol Spritz (250ml)", "calories": 175, "emoji": "🍹" },
-    { "name": "Caipirinha (250ml)", "calories": 250, "emoji": "🍋" },
-    { "name": "Bier (500ml)", "calories": 215, "emoji": "🍺" }
+    {
+      "name": "Gin Tonic (250ml)",
+      "calories": 213,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin-tonic",
+          "ml": 250,
+          "g": 254
+        }
+      ]
+    },
+    {
+      "name": "Aperol Spritz (250ml)",
+      "calories": 175,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 250,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Caipirinha (150g)",
+      "calories": 240,
+      "emoji": "🍋",
+      "basis": [
+        {
+          "slug": "caipirinha",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Bier (500ml)",
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Weniger Zucker muddlen", "text": "Das klassische Rezept braucht 2 TL Zucker (40 kcal). Mit 1 TL (20 kcal) oder Süßstoff wird der Mojito 30-85 kcal leichter.", "icon": "📉" },
-    { "title": "Virgin Mojito als Alternative", "text": "Ohne Rum, mit Limette, Minze und Soda: nur 90 kcal statt 217 kcal. Schmeckt erfrischend und sieht identisch aus.", "icon": "🌿" },
-    { "title": "Frozen Mojito meiden", "text": "Die Frozen-Variante hat 280 kcal – der Zuckersirup macht den Unterschied. Lieber on the rocks.", "icon": "🚫" },
-    { "title": "Selbst mixen kontrolliert Kalorien", "text": "Bar-Mojitos haben oft doppelt so viel Zucker und Rum wie nötig. Zu Hause selbst mixen gibt Kontrolle über die Kalorien.", "icon": "🧑‍🍳" },
-    { "title": "Frucht-Mojitos haben mehr Kalorien", "text": "Erdbeer- oder Mango-Mojito klingen gesund, haben aber 20-30% mehr Kalorien durch den zusätzlichen Fruchtzucker.", "icon": "🍓" }
+    {
+      "title": "Weniger Zucker muddlen",
+      "text": "Das klassische Rezept braucht 2 TL Zucker (ca. 31 kcal). Mit 1 TL (ca. 15 kcal) oder Süßstoff wird der Mojito rund 15 bis 31 kcal leichter.",
+      "icon": "📉"
+    },
+    {
+      "title": "Virgin Mojito als Alternative",
+      "text": "Ohne Rum, mit Limette, Minze und Soda: nur ca. 40 kcal statt ca. 155 kcal. Schmeckt erfrischend und sieht identisch aus.",
+      "icon": "🌿"
+    },
+    {
+      "title": "Frozen Mojito meiden",
+      "text": "Die Frozen-Variante enthält meist zusätzlichen Zuckersirup, das treibt die Kalorien hoch. Lieber on the rocks.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Selbst mixen kontrolliert Kalorien",
+      "text": "Bar-Mojitos haben oft deutlich mehr Zucker und Rum als nötig. Zu Hause selbst mixen gibt Kontrolle über die Kalorien.",
+      "icon": "🧑‍🍳"
+    },
+    {
+      "title": "Frucht-Mojitos haben mehr Kalorien",
+      "text": "Erdbeer- oder Mango-Mojito klingen gesund, haben aber durch Fruchtpüree und zusätzlichen Zucker mehr Kalorien.",
+      "icon": "🍓"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Mojito?", "answer": "Ein klassischer Mojito (250ml) hat ca. 217 kcal. Virgin Mojito: 90 kcal. Frozen Mojito: 280 kcal. Mit weniger Zucker: ca. 170 kcal." },
-    { "question": "Woraus besteht ein Mojito?", "answer": "Weißer Rum (5cl), frische Limette, frische Minze, Zucker (oder Zuckersirup), Soda und Crushed Ice. Die Kalorien kommen aus Rum und Zucker." },
-    { "question": "Mojito oder Gin Tonic – was hat weniger Kalorien?", "answer": "Gin Tonic hat mit 190 kcal weniger als ein Mojito (217 kcal). Gin Tonic mit Light Tonic hat sogar nur 115 kcal." },
-    { "question": "Wie viel Alkohol hat ein Mojito?", "answer": "Ca. 10-12 Vol.-%. Ein Mojito hat etwas mehr Alkohol als ein Glas Wein (11-13%), wirkt durch die Süße aber milder." },
-    { "question": "Kann ich einen Mojito kalorienarm machen?", "answer": "Ja! Weniger Zucker (oder Süßstoff), normaler Rum-Anteil, viel Minze und Limette. So kommst du auf 130-170 kcal statt 217 kcal." },
-    { "question": "Welcher Cocktail hat die wenigsten Kalorien?", "answer": "Unter den klassischen Cocktails: Gin & Soda (96 kcal), Vodka Soda (96 kcal), Gin Tonic Light (115 kcal). Mojito (217 kcal) und Caipirinha (250 kcal) haben die meisten." }
+    {
+      "question": "Wie viele Kalorien hat ein Mojito?",
+      "answer": "Ein klassischer Mojito (250ml) hat laut USDA ca. 155 kcal. Virgin Mojito: ca. 40 kcal. Mit Süßstoff statt Zucker: ca. 117 kcal."
+    },
+    {
+      "question": "Woraus besteht ein Mojito?",
+      "answer": "Weißer Rum (5cl), frische Limette, frische Minze, Zucker (oder Zuckersirup), Soda und Crushed Ice. Die Kalorien kommen aus Rum und Zucker."
+    },
+    {
+      "question": "Mojito oder Gin Tonic: Was hat weniger Kalorien?",
+      "answer": "Laut USDA-Werten der Mojito: ca. 155 kcal pro 250ml gegenüber ca. 213 kcal beim Gin Tonic. Mit viel Zuckersirup kann sich das umdrehen."
+    },
+    {
+      "question": "Wie viel Alkohol hat ein Mojito?",
+      "answer": "Laut USDA rund 10 Vol.-% (ca. 7,7 g Alkohol pro 100 ml). Das liegt etwas unter einem Glas Wein, wirkt durch die Süße aber milder."
+    },
+    {
+      "question": "Kann ich einen Mojito kalorienarm machen?",
+      "answer": "Ja! Weniger Zucker (oder Süßstoff), normaler Rum-Anteil, viel Minze und Limette. Mit Süßstoff kommst du so auf ca. 117 kcal statt ca. 155 kcal."
+    },
+    {
+      "question": "Welcher Cocktail hat die wenigsten Kalorien?",
+      "answer": "Am wenigsten haben Longdrinks mit Soda wie Gin & Soda oder Vodka Soda, weil Soda keine Kalorien liefert. Ein Mojito (250ml) liegt laut USDA bei ca. 155 kcal, ein Gin Tonic bei ca. 213 kcal, eine Caipirinha (150g) bei ca. 240 kcal."
+    }
   ],
-  "related_foods": ["gin-tonic", "aperol-spritz", "hugo", "prosecco"]
+  "related_foods": [
+    "gin-tonic",
+    "aperol-spritz",
+    "hugo",
+    "prosecco"
+  ]
 }

@@ -3,9 +3,10 @@
   "name": "Knacker",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 173867 (Knackwurst, knockwurst, pork, beef), Werte je 100 g",
   "seo": {
     "title": "Knacker Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Knacker? Eine Knackwurst (70g) hat ca. 209 kcal. Alle Nährwerte pro 100g & pro Stück plus Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat eine Knacker? Eine Knackwurst (70g) hat ca. 215 kcal. Alle Nährwerte pro 100g & pro Stück plus Tipps zum Abnehmen.",
     "keywords": [
       "knacker kalorien",
       "knackwurst kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 298,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 2,
-    "fat_per_100g": 27,
+    "calories_per_100g": 307,
+    "protein_per_100g": 11.1,
+    "carbs_per_100g": 3.2,
+    "fat_per_100g": 27.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 70,
     "typical_portion_name": "1 Knacker (70g)"
@@ -29,94 +30,115 @@
     {
       "name": "Knacker klein (50g)",
       "portion_g": 50,
-      "calories": 149,
+      "calories": 154,
       "protein": 6,
-      "carbs": 1,
+      "carbs": 2,
       "fat": 14
     },
     {
       "name": "1 Knacker (70g)",
       "portion_g": 70,
-      "calories": 209,
+      "calories": 215,
       "protein": 8,
-      "carbs": 1,
+      "carbs": 2,
       "fat": 19,
       "tip": "Standard"
     },
     {
       "name": "1 Knacker groß (100g)",
       "portion_g": 100,
-      "calories": 298,
-      "protein": 12,
-      "carbs": 2,
-      "fat": 27
+      "calories": 307,
+      "protein": 11,
+      "carbs": 3,
+      "fat": 28
     },
     {
       "name": "2 Knacker (140g)",
       "portion_g": 140,
-      "calories": 417,
-      "protein": 17,
-      "carbs": 3,
-      "fat": 38
-    },
-    {
-      "name": "Knacker gegrillt (70g)",
-      "portion_g": 70,
-      "calories": 200,
-      "protein": 8,
-      "carbs": 1,
-      "fat": 18,
-      "tip": "Etwas Fett tropft beim Grillen ab"
+      "calories": 430,
+      "protein": 16,
+      "carbs": 4,
+      "fat": 39
     },
     {
       "name": "Packung 4 Stück (280g)",
       "portion_g": 280,
-      "calories": 834,
-      "protein": 34,
-      "carbs": 6,
-      "fat": 76
+      "calories": 860,
+      "protein": 31,
+      "carbs": 9,
+      "fat": 78
     },
     {
       "name": "Geflügel-Knacker (70g)",
       "portion_g": 70,
-      "calories": 154,
-      "protein": 10,
-      "carbs": 1,
-      "fat": 12,
-      "tip": "Magerere Alternative aus Geflügel"
+      "calories": 156,
+      "protein": 11,
+      "carbs": 2,
+      "fat": 11,
+      "tip": "Magerere Alternative aus Geflügel",
+      "basis": [
+        {
+          "fdcId": 171624,
+          "g": 70
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Wiener Würstchen (Paar, 50g)",
-      "calories": 148,
-      "emoji": "🌭"
+      "name": "Wiener Würstchen (1 Stück, 50g)",
+      "calories": 135,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "wiener-wuerstchen",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Bockwurst (100g)",
-      "calories": 250,
-      "emoji": "🌭"
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Bratwurst (100g)",
-      "calories": 290,
-      "emoji": "🍖"
+      "calories": 333,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Currywurst (150g)",
-      "calories": 420,
-      "emoji": "🍛"
+      "calories": 375,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "slug": "currywurst",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hoher Fettanteil beachten",
-      "text": "Eine Knacker liefert pro 100g rund 27g Fett. Damit stammen etwa 80 Prozent der Kalorien aus Fett. Plane sie bewusst als gehaltvolle Beilage ein.",
+      "text": "Eine Knacker liefert pro 100g rund 28g Fett. Damit stammen etwa 80 Prozent der Kalorien aus Fett. Plane sie bewusst als gehaltvolle Beilage ein.",
       "icon": "🧈"
     },
     {
       "title": "Fast keine Kohlenhydrate",
-      "text": "Mit nur etwa 2g Kohlenhydraten pro 100g passt die Knacker gut in eine kohlenhydratarme oder ketogene Ernährung.",
+      "text": "Mit nur etwa 3g Kohlenhydraten pro 100g passt die Knacker gut in eine kohlenhydratarme oder ketogene Ernährung.",
       "icon": "🥩"
     },
     {
@@ -138,15 +160,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Knacker?",
-      "answer": "Eine durchschnittliche Knacker mit 70g hat etwa 209 kcal. Pro 100g sind es rund 298 kcal."
+      "answer": "Eine durchschnittliche Knacker mit 70g hat etwa 215 kcal. Pro 100g sind es rund 307 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in einer Knacker?",
-      "answer": "Eine Knacker liefert pro 100g etwa 12g Eiweiß. Ein einzelnes Stück (70g) enthält rund 8g Protein."
+      "answer": "Eine Knacker liefert pro 100g etwa 11g Eiweiß. Ein einzelnes Stück (70g) enthält rund 8g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Knackwurst?",
-      "answer": "Knackwürste sind nahezu kohlenhydratfrei. Pro 100g enthalten sie nur etwa 2g Kohlenhydrate."
+      "answer": "Knackwürste sind nahezu kohlenhydratfrei. Pro 100g enthalten sie nur etwa 3g Kohlenhydrate."
     },
     {
       "question": "Sind Knacker zum Abnehmen geeignet?",
@@ -158,7 +180,7 @@
     },
     {
       "question": "Wie viele Kalorien haben 2 Knacker?",
-      "answer": "Zwei Knacker mit zusammen 140g haben etwa 417 kcal, dazu rund 17g Eiweiß und 38g Fett."
+      "answer": "Zwei Knacker mit zusammen 140g haben etwa 430 kcal, dazu rund 16g Eiweiß und 39g Fett."
     }
   ],
   "related_foods": [

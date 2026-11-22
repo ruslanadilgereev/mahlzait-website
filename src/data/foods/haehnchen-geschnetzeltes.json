@@ -3,47 +3,182 @@
   "name": "Hähnchen-Geschnetzeltes",
   "emoji": "🍗",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706431 (Chicken or turkey with cream sauce), Werte je 100 g",
   "seo": {
     "title": "Hähnchen-Geschnetzeltes Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Hähnchen-Geschnetzeltes? Nährwerte für Geschnetzeltes mit Rahm, Pilzen & mehr. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 145,
-    "protein_per_100g": 20,
-    "carbs_per_100g": 3,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 157,
+    "protein_per_100g": 19.8,
+    "carbs_per_100g": 2.8,
+    "fat_per_100g": 7.5,
+    "fiber_per_100g": 0,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Hähnchen-Geschnetzeltes mit Pilzen", "portion_g": 300, "calories": 435, "protein": 60, "carbs": 9, "fat": 18, "tip": "Klassiker"},
-    {"name": "Hähnchen-Rahm-Geschnetzeltes", "portion_g": 300, "calories": 510, "protein": 55, "carbs": 8, "fat": 28, "tip": "Mit Sahnesauce"},
-    {"name": "Hähnchen-Geschnetzeltes in Currysoße", "portion_g": 300, "calories": 480, "protein": 52, "carbs": 12, "fat": 24, "tip": "Asiatisch angehaucht"},
-    {"name": "Hähnchen-Geschnetzeltes mit Paprika", "portion_g": 300, "calories": 420, "protein": 58, "carbs": 10, "fat": 16, "tip": "Leichtere Variante"},
-    {"name": "Geschnetzeltes pur (ohne Sauce)", "portion_g": 200, "calories": 290, "protein": 40, "carbs": 0, "fat": 14, "tip": "Kalorienärmste Variante"},
-    {"name": "Hähnchen-Geschnetzeltes mit Reis", "portion_g": 450, "calories": 600, "protein": 58, "carbs": 50, "fat": 18, "tip": "Komplette Mahlzeit"}
+    {
+      "name": "Hähnchen-Geschnetzeltes mit Pilzen",
+      "portion_g": 300,
+      "calories": 408,
+      "protein": 58,
+      "carbs": 6,
+      "fat": 17,
+      "tip": "Klassiker",
+      "basis": [
+        {
+          "fdcId": 2706432,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Hähnchen-Rahm-Geschnetzeltes",
+      "portion_g": 300,
+      "calories": 471,
+      "protein": 59,
+      "carbs": 8,
+      "fat": 23,
+      "tip": "Mit Sahnesauce"
+    },
+    {
+      "name": "Hähnchen-Geschnetzeltes in Currysoße",
+      "portion_g": 300,
+      "calories": 321,
+      "protein": 19,
+      "carbs": 20,
+      "fat": 19,
+      "tip": "Asiatisch angehaucht",
+      "basis": [
+        {
+          "fdcId": 2706437,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Geschnetzeltes pur (ohne Sauce)",
+      "portion_g": 200,
+      "calories": 352,
+      "protein": 59,
+      "carbs": 0,
+      "fat": 11,
+      "basis": [
+        {
+          "fdcId": 2705972,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Hähnchen-Geschnetzeltes mit Reis",
+      "portion_g": 450,
+      "calories": 612,
+      "protein": 37,
+      "carbs": 58,
+      "fat": 26,
+      "tip": "Komplette Mahlzeit",
+      "basis": [
+        {
+          "fdcId": 2706539,
+          "g": 450
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Putengeschnetzeltes", "calories": 130, "emoji": "🍗"},
-    {"name": "Rindergeschnetzeltes", "calories": 155, "emoji": "🥩"},
-    {"name": "Schweinegeschnetzeltes", "calories": 175, "emoji": "🥩"},
-    {"name": "Hähnchenbrust pur", "calories": 165, "emoji": "🍗"}
+    {
+      "name": "Putengeschnetzeltes (1 Portion, 300g)",
+      "calories": 408,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "putengeschnetzeltes",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Rindergeschnetzeltes (1 Portion, 300g)",
+      "calories": 489,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "rindergeschnetzeltes",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust pur (1 Stück, 200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Crème fraîche statt Sahne", "text": "Verwende Crème fraîche légère statt Sahne in der Sauce – ähnliche Konsistenz bei 40% weniger Fett.", "icon": "🥛"},
-    {"title": "Viel Gemüse", "text": "Füge Paprika, Zucchini und Champignons hinzu – mehr Volumen, weniger Kalorien pro Portion und mehr Nährstoffe.", "icon": "🥬"},
-    {"title": "Brustfleisch verwenden", "text": "Hähnchenbrust ist die magerste Wahl mit nur 1-2% Fett. Oberschenkel haben doppelt so viel Fett.", "icon": "🍗"},
-    {"title": "Ohne Mehl andicken", "text": "Statt Mehlschwitze die Sauce mit püriertem Blumenkohl oder Senfkörner andicken – spart Kohlenhydrate.", "icon": "🌿"},
-    {"title": "Meal Prep geeignet", "text": "Hähnchen-Geschnetzeltes lässt sich gut für 3-4 Tage vorbereiten und in Portionsdosen einfrieren.", "icon": "📦"}
+    {
+      "title": "Crème fraîche statt Sahne",
+      "text": "Verwende Crème fraîche légère statt Sahne in der Sauce: ähnliche Konsistenz bei weniger Fett.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Viel Gemüse",
+      "text": "Füge Paprika, Zucchini und Champignons hinzu: mehr Volumen, weniger Kalorien pro Portion und mehr Nährstoffe.",
+      "icon": "🥬"
+    },
+    {
+      "title": "Brustfleisch verwenden",
+      "text": "Hähnchenbrust ist die magerste Wahl. Oberschenkel haben deutlich mehr Fett.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Ohne Mehl andicken",
+      "text": "Statt Mehlschwitze die Sauce mit püriertem Blumenkohl oder Senfkörner andicken, das spart Kohlenhydrate.",
+      "icon": "🌿"
+    },
+    {
+      "title": "Meal Prep geeignet",
+      "text": "Hähnchen-Geschnetzeltes lässt sich gut für 3-4 Tage vorbereiten und in Portionsdosen einfrieren.",
+      "icon": "📦"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Hähnchen-Geschnetzeltes?", "answer": "Eine Portion Hähnchen-Geschnetzeltes (300g) hat ca. 435 kcal mit Pilzen. In Rahmsauce steigt es auf ca. 510 kcal."},
-    {"question": "Ist Hähnchen-Geschnetzeltes gesund?", "answer": "Ja, Hähnchen-Geschnetzeltes ist proteinreich (20g/100g) und relativ fettarm. Mit Gemüse und leichter Sauce ist es eine ausgewogene Mahlzeit."},
-    {"question": "Was passt als Beilage?", "answer": "Reis (130 kcal/100g), Nudeln (160 kcal/100g) oder Kartoffeln (70 kcal/100g). Für weniger Kalorien: Blumenkohlreis oder Zucchininudeln."},
-    {"question": "Wie viel Hähnchen pro Person?", "answer": "Für Geschnetzeltes rechnet man 150-200g rohes Hähnchen pro Person. Mit Sauce und Gemüse ergibt das 300g fertige Portion."},
-    {"question": "Kann man Geschnetzeltes aufwärmen?", "answer": "Ja, Hähnchen-Geschnetzeltes lässt sich gut aufwärmen. Nicht zu stark erhitzen, damit das Fleisch nicht trocken wird. Am besten in der Pfanne."},
-    {"question": "Hähnchen oder Pute – was ist kalorienärmer?", "answer": "Pute (130 kcal/100g) hat minimal weniger Kalorien als Hähnchen (145 kcal/100g). Der Unterschied ist gering – beide sind gute Proteinquellen."}
+    {
+      "question": "Wie viele Kalorien hat Hähnchen-Geschnetzeltes?",
+      "answer": "Eine Portion Hähnchen-Geschnetzeltes (300g) hat ca. 408 kcal mit Pilzen. In Rahmsauce steigt es auf ca. 471 kcal."
+    },
+    {
+      "question": "Ist Hähnchen-Geschnetzeltes gesund?",
+      "answer": "Ja, Hähnchen-Geschnetzeltes ist proteinreich (rund 20g/100g) und relativ fettarm. Mit Gemüse und leichter Sauce ist es eine ausgewogene Mahlzeit."
+    },
+    {
+      "question": "Was passt als Beilage?",
+      "answer": "Reis, Nudeln oder Kartoffeln passen gut. Mit Reis kommt eine Portion (450g) auf ca. 612 kcal. Für weniger Kalorien: Blumenkohlreis oder Zucchininudeln."
+    },
+    {
+      "question": "Wie viel Hähnchen pro Person?",
+      "answer": "Für Geschnetzeltes rechnet man 150-200g rohes Hähnchen pro Person. Mit Sauce und Gemüse ergibt das 300g fertige Portion."
+    },
+    {
+      "question": "Kann man Geschnetzeltes aufwärmen?",
+      "answer": "Ja, Hähnchen-Geschnetzeltes lässt sich gut aufwärmen. Nicht zu stark erhitzen, damit das Fleisch nicht trocken wird. Am besten in der Pfanne."
+    },
+    {
+      "question": "Hähnchen oder Pute: Was ist kalorienärmer?",
+      "answer": "Laut USDA kaum ein Unterschied: Die Werte gelten für Hähnchen und Pute gleichermaßen. Den Unterschied macht die Sauce, in Rahmsauce ca. 157 kcal/100g, mit Pilzsauce ca. 136 kcal/100g. Beide sind gute Proteinquellen."
+    }
   ],
-  "related_foods": ["putengeschnetzeltes", "haehnchenbrust", "rindergeschnetzeltes", "kaesespaetzle"]
+  "related_foods": [
+    "putengeschnetzeltes",
+    "haehnchenbrust",
+    "rindergeschnetzeltes",
+    "kaesespaetzle"
+  ]
 }

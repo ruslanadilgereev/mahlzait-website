@@ -3,9 +3,10 @@
   "name": "Fertigpizza",
   "emoji": "🍕",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 170317 (Pizza, cheese topping, regular crust, frozen, cooked), Werte je 100 g",
   "seo": {
     "title": "Fertigpizza Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Fertigpizza? Eine gebackene Tiefkühlpizza (350g) hat ca. 910 kcal. Nährwerte pro 100g, Sorten im Vergleich & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat eine Fertigpizza? Eine gebackene Tiefkühlpizza (350g) hat ca. 938 kcal. Nährwerte pro 100g, Sorten im Vergleich & Tipps zum Abnehmen.",
     "keywords": [
       "fertigpizza kalorien",
       "fertigpizza kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 260,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 10,
+    "calories_per_100g": 268,
+    "protein_per_100g": 10.4,
+    "carbs_per_100g": 29,
+    "fat_per_100g": 12.3,
     "fiber_per_100g": 2.2,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Fertigpizza (gebacken)"
@@ -29,96 +30,116 @@
     {
       "name": "Halbe Fertigpizza (175g)",
       "portion_g": 175,
-      "calories": 455,
-      "protein": 19,
-      "carbs": 53,
-      "fat": 18,
+      "calories": 469,
+      "protein": 18,
+      "carbs": 51,
+      "fat": 22,
       "tip": "Mit Salat als sättigende Beilage"
     },
     {
       "name": "Ganze Fertigpizza Margherita (340g)",
       "portion_g": 340,
-      "calories": 850,
-      "protein": 36,
-      "carbs": 105,
-      "fat": 30,
+      "calories": 911,
+      "protein": 35,
+      "carbs": 99,
+      "fat": 42,
       "tip": "Magerste Standardsorte"
     },
     {
       "name": "Ganze Fertigpizza Salami (350g)",
       "portion_g": 350,
-      "calories": 910,
-      "protein": 39,
-      "carbs": 105,
-      "fat": 35,
-      "tip": "Klassiker"
-    },
-    {
-      "name": "Ganze Fertigpizza Schinken (350g)",
-      "portion_g": 350,
-      "calories": 875,
-      "protein": 39,
-      "carbs": 105,
-      "fat": 32
+      "calories": 959,
+      "protein": 50,
+      "carbs": 86,
+      "fat": 46,
+      "tip": "Klassiker",
+      "basis": [
+        {
+          "fdcId": 172096,
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Steinofen-Pizza (400g)",
       "portion_g": 400,
-      "calories": 940,
-      "protein": 40,
-      "carbs": 120,
-      "fat": 36,
-      "tip": "Dünner Boden, dafür größer"
-    },
-    {
-      "name": "Pizza Hawaii (360g)",
-      "portion_g": 360,
-      "calories": 850,
-      "protein": 38,
-      "carbs": 108,
-      "fat": 28
+      "calories": 1052,
+      "protein": 48,
+      "carbs": 115,
+      "fat": 44,
+      "tip": "Dünner Boden, dafür größer",
+      "basis": [
+        {
+          "fdcId": 170373,
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Mini-Pizza / Pizzabrötchen (150g)",
       "portion_g": 150,
-      "calories": 390,
-      "protein": 17,
-      "carbs": 45,
-      "fat": 15,
+      "calories": 402,
+      "protein": 16,
+      "carbs": 44,
+      "fat": 18,
       "tip": "Kleine Portion zum Snacken"
     }
   ],
   "comparison": [
     {
       "name": "Fertigpizza Salami (350g)",
-      "calories": 910,
-      "emoji": "🍕"
+      "calories": 959,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 172096,
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Pizza vom Italiener (Margherita)",
-      "calories": 800,
-      "emoji": "🍕"
+      "name": "Pizza vom Italiener (Margherita, 360g)",
+      "calories": 958,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 360
+        }
+      ]
     },
     {
-      "name": "Tellergericht Spaghetti Bolognese",
-      "calories": 600,
-      "emoji": "🍝"
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Halbe Pizza plus Salat",
-      "text": "Eine ganze Fertigpizza hat schnell über 900 kcal. Wer nur die Hälfte isst und einen großen grünen Salat dazu nimmt, spart rund 450 kcal und wird trotzdem satt.",
+      "text": "Eine ganze Fertigpizza hat schnell über 900 kcal. Wer nur die Hälfte isst und einen großen grünen Salat dazu nimmt, spart rund 469 kcal und wird trotzdem satt.",
       "icon": "🥗"
     },
     {
       "title": "Margherita statt Salami wählen",
-      "text": "Sorten ohne Wurst sparen Fett und Kalorien. Eine Margherita hat pro Pizza rund 60 kcal weniger als die Salami-Variante.",
+      "text": "Sorten ohne Wurst sparen Fett und Kalorien. Eine Margherita hat pro Pizza rund 48 kcal weniger als die Salami-Variante.",
       "icon": "🍅"
     },
     {
@@ -128,7 +149,7 @@
     },
     {
       "title": "Auf die Portionsgröße achten",
-      "text": "Die Nährwerte auf der Packung beziehen sich oft auf 100g, nicht auf die ganze Pizza. Eine Pizza wiegt meist 320 bis 400g - rechne entsprechend hoch.",
+      "text": "Die Nährwerte auf der Packung beziehen sich oft auf 100g, nicht auf die ganze Pizza. Eine Pizza wiegt meist 320 bis 400g, rechne entsprechend hoch.",
       "icon": "⚖️"
     },
     {
@@ -140,19 +161,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Fertigpizza?",
-      "answer": "Eine ganze gebackene Tiefkühlpizza (ca. 350g) hat je nach Sorte rund 850 bis 940 kcal. Pro 100g sind es etwa 260 kcal."
+      "answer": "Eine ganze gebackene Tiefkühlpizza (ca. 350g) hat je nach Sorte rund 910 bis 1.050 kcal. Pro 100g sind es etwa 268 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Fertigpizza pro 100g?",
-      "answer": "Eine gebackene Fertigpizza hat im Schnitt etwa 260 kcal pro 100g, mit 11g Eiweiß, 30g Kohlenhydraten und 10g Fett."
+      "answer": "Eine gebackene Fertigpizza hat im Schnitt etwa 268 kcal pro 100g, mit 10g Eiweiß, 29g Kohlenhydraten und 12g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Fertigpizza?",
-      "answer": "Pro 100g enthält eine Fertigpizza rund 30g Kohlenhydrate, hauptsächlich aus dem Teigboden. Eine ganze Pizza kommt so auf etwa 105g."
+      "answer": "Pro 100g enthält eine Fertigpizza rund 29g Kohlenhydrate, hauptsächlich aus dem Teigboden. Eine ganze Pizza kommt so auf etwa 102g."
     },
     {
       "question": "Wie viel Protein steckt in einer Fertigpizza?",
-      "answer": "Eine ganze Fertigpizza (350g) liefert rund 39g Eiweiß, vor allem aus Käse und Wurstbelag. Pro 100g sind es etwa 11g."
+      "answer": "Eine ganze Fertigpizza (350g) liefert rund 36g Eiweiß, vor allem aus dem Käse. Pro 100g sind es etwa 10g."
     },
     {
       "question": "Ist Fertigpizza zum Abnehmen geeignet?",

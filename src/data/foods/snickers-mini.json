@@ -3,6 +3,7 @@
   "name": "Snickers Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169589 (Candies, MARS SNACKFOOD US, SNICKERS Bar), Werte je 100 g",
   "seo": {
     "title": "Snickers Mini Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Snickers Mini? Ein Riegel (18g) hat ca. 88 kcal. Nährwerte pro 100g und je Portion plus Tipps zum bewussten Naschen.",
@@ -15,11 +16,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 488,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 60,
-    "fat_per_100g": 24,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 491,
+    "protein_per_100g": 7.5,
+    "carbs_per_100g": 61.5,
+    "fat_per_100g": 23.9,
+    "fiber_per_100g": 2.3,
     "typical_portion_g": 18,
     "typical_portion_name": "1 Snickers Mini (18g)"
   },
@@ -29,72 +30,96 @@
       "portion_g": 18,
       "calories": 88,
       "protein": 1.4,
-      "carbs": 10.8,
+      "carbs": 11.1,
       "fat": 4.3,
       "tip": "Standard"
     },
     {
       "name": "2 Snickers Mini (36g)",
       "portion_g": 36,
-      "calories": 176,
-      "protein": 2.9,
-      "carbs": 21.6,
+      "calories": 177,
+      "protein": 2.7,
+      "carbs": 22.1,
       "fat": 8.6
     },
     {
       "name": "3 Snickers Mini (54g)",
       "portion_g": 54,
-      "calories": 264,
-      "protein": 4.3,
-      "carbs": 32.4,
-      "fat": 13
+      "calories": 265,
+      "protein": 4.1,
+      "carbs": 33.2,
+      "fat": 12.9
     },
     {
       "name": "Handvoll (5 Stück, 90g)",
       "portion_g": 90,
-      "calories": 439,
-      "protein": 7.2,
-      "carbs": 54,
-      "fat": 21.6
+      "calories": 442,
+      "protein": 6.8,
+      "carbs": 55.4,
+      "fat": 21.5
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 488,
-      "protein": 8,
-      "carbs": 60,
-      "fat": 24
+      "calories": 491,
+      "protein": 7.5,
+      "carbs": 61.5,
+      "fat": 23.9
     },
     {
       "name": "Snickers Standard-Riegel (50g)",
       "portion_g": 50,
-      "calories": 244,
-      "protein": 4,
-      "carbs": 30,
+      "calories": 246,
+      "protein": 3.8,
+      "carbs": 30.8,
       "fat": 12,
       "tip": "Zum Vergleich: knapp 3 Mini"
     }
   ],
   "comparison": [
     {
-      "name": "Mars Mini (18g)",
-      "calories": 81,
-      "emoji": "🍫"
-    },
-    {
       "name": "Twix (1 Riegel 25g)",
-      "calories": 124,
-      "emoji": "🍫"
+      "calories": 126,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Kinderriegel (21g)",
-      "calories": 119,
-      "emoji": "🍫"
+      "name": "KitKat (2 Finger, 21g)",
+      "calories": 109,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 167992,
+          "g": 21
+        }
+      ]
     },
     {
-      "name": "Bounty Mini (28g)",
-      "calories": 134,
-      "emoji": "🥥"
+      "name": "Schokoriegel mit Kokosfüllung (28g)",
+      "calories": 140,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "fdcId": 2710343,
+          "g": 28
+        }
+      ]
+    },
+    {
+      "name": "Vollmilchschokolade (18g)",
+      "calories": 96,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 18
+        }
+      ]
     }
   ],
   "tips": [
@@ -105,17 +130,17 @@
     },
     {
       "title": "Die Tüte ist die Falle",
-      "text": "Aus einer Mini-Tüte sind schnell fünf Riegel weg, also rund 439 kcal. Nimm dir lieber zwei Stück heraus und stell die Packung außer Sicht.",
+      "text": "Aus einer Mini-Tüte sind schnell fünf Riegel weg, also rund 442 kcal. Nimm dir lieber zwei Stück heraus und stell die Packung außer Sicht.",
       "icon": "👀"
     },
     {
       "title": "Mini statt Standard",
-      "text": "Ein Standard-Snickers (50g) hat 244 kcal, ein Mini nur 88 kcal. Greifst du zur Mini-Variante, isst du oft automatisch weniger Gesamtmenge.",
+      "text": "Ein Standard-Snickers (50g) hat 246 kcal, ein Mini nur 88 kcal. Greifst du zur Mini-Variante, isst du oft automatisch weniger Gesamtmenge.",
       "icon": "⚖️"
     },
     {
       "title": "Erdnüsse liefern etwas Eiweiß",
-      "text": "Durch die Erdnüsse hat Snickers Mini mit 8g Protein pro 100g etwas mehr Eiweiß als reine Schokolade, bleibt aber eine Süßigkeit und kein Eiweiß-Snack.",
+      "text": "Durch die Erdnüsse hat Snickers Mini mit 7,5g Protein pro 100g etwas mehr Eiweiß als reine Schokolade, bleibt aber eine Süßigkeit und kein Eiweiß-Snack.",
       "icon": "🥜"
     },
     {
@@ -127,19 +152,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Snickers Mini?",
-      "answer": "Ein Snickers Mini (18g) hat ca. 88 kcal. Pro 100g sind es rund 488 kcal."
+      "answer": "Ein Snickers Mini (18g) hat ca. 88 kcal. Pro 100g sind es rund 491 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 100g Snickers Mini?",
-      "answer": "100g Snickers Mini haben etwa 488 kcal, das entspricht rund 5 bis 6 einzelnen Mini-Riegeln."
+      "answer": "100g Snickers Mini haben etwa 491 kcal, das entspricht rund 5 bis 6 einzelnen Mini-Riegeln."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Snickers Mini?",
-      "answer": "Ein Snickers Mini (18g) enthält rund 10,8g Kohlenhydrate, davon der größte Teil Zucker. Pro 100g sind es 60g Kohlenhydrate."
+      "answer": "Ein Snickers Mini (18g) enthält rund 11,1g Kohlenhydrate, davon der größte Teil Zucker. Pro 100g sind es 61,5g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Snickers Mini?",
-      "answer": "Snickers Mini liefert 8g Protein pro 100g, ein einzelner Riegel also nur etwa 1,4g. Das stammt vor allem aus den Erdnüssen."
+      "answer": "Snickers Mini liefert 7,5g Protein pro 100g, ein einzelner Riegel also nur etwa 1,4g. Das stammt vor allem aus den Erdnüssen."
     },
     {
       "question": "Ist Snickers Mini zum Abnehmen geeignet?",
@@ -147,7 +172,7 @@
     },
     {
       "question": "Ist Snickers Mini gesünder als ein normaler Snickers?",
-      "answer": "Pro 100g sind die Nährwerte identisch. Der Vorteil der Mini-Variante ist allein die kleinere Portion: 88 kcal pro Riegel statt 244 kcal beim Standard-Snickers."
+      "answer": "Pro 100g sind die Nährwerte identisch. Der Vorteil der Mini-Variante ist allein die kleinere Portion: 88 kcal pro Riegel statt 246 kcal beim Standard-Snickers."
     }
   ],
   "related_foods": [

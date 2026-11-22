@@ -3,52 +3,259 @@
   "name": "Mehl",
   "emoji": "🌾",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169761 (Wheat flour, white, all-purpose, unenriched), Werte je 100 g",
   "seo": {
-    "title": "Mehl Kalorien: 348 kcal/100g + Rechner | Mahlzait",
-    "description": "Mehl hat ca. 348 kcal pro 100g. Berechne Kalorien für Weizen-, Dinkel-, Roggen-, Vollkorn-, Mandel- und Kokosmehl. Inkl. Backtipps.",
-    "keywords": ["mehl kalorien", "kalorien mehl", "weizenmehl kalorien", "dinkelmehl kalorien", "roggenmehl kalorien", "vollkornmehl kalorien", "mandelmehl kalorien", "kokosmehl kalorien"]
+    "title": "Mehl Kalorien: 364 kcal/100g + Rechner | Mahlzait",
+    "description": "Mehl hat ca. 364 kcal pro 100g. Berechne Kalorien für Weizen-, Dinkel-, Roggen-, Vollkorn-, Mandel- und Kokosmehl. Inkl. Backtipps.",
+    "keywords": [
+      "mehl kalorien",
+      "kalorien mehl",
+      "weizenmehl kalorien",
+      "dinkelmehl kalorien",
+      "roggenmehl kalorien",
+      "vollkornmehl kalorien",
+      "mandelmehl kalorien",
+      "kokosmehl kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 348,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 72,
+    "calories_per_100g": 364,
+    "protein_per_100g": 10.3,
+    "carbs_per_100g": 76.3,
     "fat_per_100g": 1,
-    "fiber_per_100g": 4,
+    "fiber_per_100g": 2.7,
     "typical_portion_g": 100,
     "typical_portion_name": "1 Tasse"
   },
   "variants": [
-    { "name": "Weizenmehl Type 405 (100g)", "portion_g": 100, "calories": 348, "protein": 10, "carbs": 72, "fat": 1, "tip": "Klassisches Backmehl" },
-    { "name": "Weizenmehl Type 1050 (100g)", "portion_g": 100, "calories": 340, "protein": 11, "carbs": 70, "fat": 1 },
-    { "name": "Dinkelmehl Type 630 (100g)", "portion_g": 100, "calories": 342, "protein": 11, "carbs": 71, "fat": 1 },
-    { "name": "Roggenmehl Type 1150 (100g)", "portion_g": 100, "calories": 325, "protein": 7, "carbs": 70, "fat": 1 },
-    { "name": "Vollkornmehl (Weizen, 100g)", "portion_g": 100, "calories": 332, "protein": 13, "carbs": 65, "fat": 2, "tip": "Mehr Ballaststoffe als Type 405" },
-    { "name": "Mandelmehl entölt (100g)", "portion_g": 100, "calories": 380, "protein": 50, "carbs": 9, "fat": 11, "tip": "Low Carb, hoch im Protein" },
-    { "name": "Kokosmehl (100g)", "portion_g": 100, "calories": 410, "protein": 18, "carbs": 22, "fat": 14 },
-    { "name": "Buchweizenmehl (100g)", "portion_g": 100, "calories": 335, "protein": 13, "carbs": 71, "fat": 2, "tip": "Glutenfrei" },
-    { "name": "Maismehl Polenta (100g)", "portion_g": 100, "calories": 358, "protein": 9, "carbs": 73, "fat": 4 },
-    { "name": "Hafermehl (100g)", "portion_g": 100, "calories": 380, "protein": 13, "carbs": 67, "fat": 7 }
+    {
+      "name": "Weizenmehl Type 405 (100g)",
+      "portion_g": 100,
+      "calories": 364,
+      "protein": 10,
+      "carbs": 76,
+      "fat": 1,
+      "tip": "Klassisches Backmehl"
+    },
+    {
+      "name": "Dinkelvollkornmehl (100g)",
+      "portion_g": 100,
+      "calories": 341,
+      "protein": 15,
+      "carbs": 71,
+      "fat": 3,
+      "basis": [
+        {
+          "fdcId": 2003587,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Roggenmehl Type 1150 (100g)",
+      "portion_g": 100,
+      "calories": 349,
+      "protein": 11,
+      "carbs": 75,
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 168886,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Vollkornmehl (Weizen, 100g)",
+      "portion_g": 100,
+      "calories": 340,
+      "protein": 13,
+      "carbs": 72,
+      "fat": 3,
+      "tip": "Mehr Ballaststoffe als Type 405",
+      "basis": [
+        {
+          "fdcId": 168893,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Mandelmehl, nicht entölt (100g)",
+      "portion_g": 100,
+      "calories": 578,
+      "protein": 26,
+      "carbs": 16,
+      "fat": 50,
+      "tip": "Low Carb, hoch im Protein",
+      "basis": [
+        {
+          "fdcId": 2261420,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Kokosmehl (100g)",
+      "portion_g": 100,
+      "calories": 424,
+      "protein": 16,
+      "carbs": 59,
+      "fat": 15,
+      "basis": [
+        {
+          "fdcId": 2515382,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Buchweizenmehl (100g)",
+      "portion_g": 100,
+      "calories": 335,
+      "protein": 13,
+      "carbs": 71,
+      "fat": 3,
+      "tip": "Glutenfrei",
+      "basis": [
+        {
+          "fdcId": 170687,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Maismehl Polenta (100g)",
+      "portion_g": 100,
+      "calories": 370,
+      "protein": 7,
+      "carbs": 79,
+      "fat": 2,
+      "basis": [
+        {
+          "fdcId": 168929,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Hafermehl (100g)",
+      "portion_g": 100,
+      "calories": 386,
+      "protein": 13,
+      "carbs": 70,
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 2261421,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Haferflocken", "calories": 372, "emoji": "🌾" },
-    { "name": "Reis (roh)", "calories": 360, "emoji": "🍚" },
-    { "name": "Nudeln (roh)", "calories": 358, "emoji": "🍝" },
-    { "name": "Couscous (roh)", "calories": 376, "emoji": "🍛" }
+    {
+      "name": "Haferflocken (100g)",
+      "calories": 379,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "fdcId": 173904,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Reis (roh, 100g)",
+      "calories": 365,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Nudeln (roh, 100g)",
+      "calories": 371,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "fdcId": 168927,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Couscous (roh, 100g)",
+      "calories": 376,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "fdcId": 169699,
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Vollkorn statt Weiß", "text": "Vollkornmehl hat 4-fachen Ballaststoff-Gehalt von Weizenmehl Type 405 – sättigt deutlich besser bei nahezu gleichen Kalorien.", "icon": "🌾" },
-    { "title": "Mandelmehl für Low Carb", "text": "Mandelmehl hat nur 9g Carbs pro 100g (statt 72g) bei dafür 50g Protein. Perfekt für Low-Carb-Backen, aber nicht 1:1 ersetzbar.", "icon": "🥜" },
-    { "title": "Kokosmehl saugt Flüssigkeit", "text": "Kokosmehl bindet 4x so viel Flüssigkeit wie Weizenmehl. Beim Backen Rezept anpassen, sonst wird's zu trocken.", "icon": "🥥" },
-    { "title": "Type-Zahl = Mineralstoffe", "text": "Die Type-Zahl (405, 1050, 1700) zeigt den Mineralstoffgehalt in mg pro 100g Trockenmasse. Höher = mehr Vollkorn-Anteil = nahrhafter.", "icon": "🔢" },
-    { "title": "Mehl portionieren", "text": "100g Mehl = ca. 1 Tasse = 348 kcal. Beim Backen einer Pizza schnell 800+ kcal allein durch den Teig. Portionsweise abwiegen statt schätzen.", "icon": "⚖️" }
+    {
+      "title": "Vollkorn statt Weiß",
+      "text": "Vollkornmehl hat rund den 4-fachen Ballaststoff-Gehalt von Weizenmehl Type 405 und sättigt deutlich besser bei nahezu gleichen Kalorien.",
+      "icon": "🌾"
+    },
+    {
+      "title": "Mandelmehl für Low Carb",
+      "text": "Mandelmehl (nicht entölt) hat nur rund 16g Carbs pro 100g (statt 76g) bei dafür 26g Protein. Perfekt für Low-Carb-Backen, aber nicht 1:1 ersetzbar.",
+      "icon": "🥜"
+    },
+    {
+      "title": "Kokosmehl saugt Flüssigkeit",
+      "text": "Kokosmehl bindet 4x so viel Flüssigkeit wie Weizenmehl. Beim Backen Rezept anpassen, sonst wird's zu trocken.",
+      "icon": "🥥"
+    },
+    {
+      "title": "Type-Zahl = Mineralstoffe",
+      "text": "Die Type-Zahl (405, 1050, 1700) zeigt den Mineralstoffgehalt in mg pro 100g Trockenmasse. Höher = mehr Vollkorn-Anteil = nahrhafter.",
+      "icon": "🔢"
+    },
+    {
+      "title": "Mehl portionieren",
+      "text": "100g Mehl = ca. 1 Tasse = 364 kcal. Beim Backen einer Pizza schnell 800+ kcal allein durch den Teig. Portionsweise abwiegen statt schätzen.",
+      "icon": "⚖️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Mehl?", "answer": "Weizenmehl Type 405 hat 348 kcal pro 100g. Vollkornmehl etwas weniger (332 kcal), Mandelmehl etwas mehr (380 kcal). Eine Tasse (100g) hat etwa 1/6 des Tagesbedarfs." },
-    { "question": "Welches Mehl hat die wenigsten Kalorien?", "answer": "Roggenmehl Type 1150 (325 kcal/100g) hat die wenigsten klassischen Mehlkalorien. Wer Low Carb will: Mandelmehl mit nur 9g Carbs (aber 380 kcal). Echter Carb-Champion ist Lupinenmehl (~330 kcal, 6g Carbs)." },
-    { "question": "Mandelmehl oder Weizenmehl?", "answer": "Geschmackssache und Verwendungszweck: Weizenmehl ist klassisch, günstig, vielseitig. Mandelmehl ist Low Carb, glutenfrei, proteinreich – aber 5x teurer und nicht 1:1 austauschbar." },
-    { "question": "Wie viel Mehl pro Tag?", "answer": "Es gibt keine offizielle Obergrenze. Ein normaler Brotkonsum (5 Scheiben) entspricht ca. 100-150g Mehl-Äquivalent = 350-520 kcal. Wer abnehmen will: Mehlprodukte bewusst portionieren." },
-    { "question": "Glutenfreie Mehl-Alternativen?", "answer": "Reismehl, Maismehl, Buchweizenmehl (trotz Name glutenfrei!), Hirse-, Mandel-, Kokos- und Kichererbsenmehl sind alle glutenfrei. Für Backwaren oft Mischungen nötig." },
-    { "question": "Hat Vollkornmehl weniger Kalorien?", "answer": "Nur leicht (332 vs. 348 kcal/100g), aber deutlich mehr Ballaststoffe (10g vs. 4g). Sättigt länger und stabilisiert den Blutzucker – langfristig besser fürs Gewicht." }
+    {
+      "question": "Wie viele Kalorien hat Mehl?",
+      "answer": "Weizenmehl Type 405 hat 364 kcal pro 100g. Vollkornmehl etwas weniger (340 kcal), Mandelmehl (nicht entölt) deutlich mehr (578 kcal). Eine Tasse (100g) hat etwa 1/6 des Tagesbedarfs."
+    },
+    {
+      "question": "Welches Mehl hat die wenigsten Kalorien?",
+      "answer": "Die Unterschiede sind klein: Buchweizenmehl (335 kcal/100g), Weizenvollkornmehl (340 kcal) und Dinkelvollkornmehl (341 kcal) liegen am niedrigsten, Weizenmehl Type 405 bei 364 kcal. Wer Low Carb will: Mandelmehl mit nur rund 16g Carbs (aber 578 kcal, nicht entölt)."
+    },
+    {
+      "question": "Mandelmehl oder Weizenmehl?",
+      "answer": "Geschmackssache und Verwendungszweck: Weizenmehl ist klassisch, günstig, vielseitig. Mandelmehl ist Low Carb, glutenfrei, proteinreich, aber 5x teurer und nicht 1:1 austauschbar."
+    },
+    {
+      "question": "Wie viel Mehl pro Tag?",
+      "answer": "Es gibt keine offizielle Obergrenze. Ein normaler Brotkonsum (5 Scheiben) entspricht ca. 100-150g Mehl-Äquivalent = rund 360-550 kcal. Wer abnehmen will: Mehlprodukte bewusst portionieren."
+    },
+    {
+      "question": "Glutenfreie Mehl-Alternativen?",
+      "answer": "Reismehl, Maismehl, Buchweizenmehl (trotz Name glutenfrei!), Hirse-, Mandel-, Kokos- und Kichererbsenmehl sind alle glutenfrei. Für Backwaren oft Mischungen nötig."
+    },
+    {
+      "question": "Hat Vollkornmehl weniger Kalorien?",
+      "answer": "Nur leicht (340 vs. 364 kcal/100g), aber deutlich mehr Ballaststoffe (rund 11g vs. knapp 3g). Sättigt länger und stabilisiert den Blutzucker, langfristig besser fürs Gewicht."
+    }
   ],
-  "related_foods": ["brot", "broetchen", "haferflocken", "nudeln"]
+  "related_foods": [
+    "brot",
+    "broetchen",
+    "haferflocken",
+    "nudeln"
+  ]
 }

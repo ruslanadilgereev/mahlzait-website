@@ -3,47 +3,184 @@
   "name": "Grünkohl",
   "emoji": "🥬",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 169238 (Kale, cooked, boiled, drained, without salt), Werte je 100 g",
   "seo": {
     "title": "Grünkohl Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Grünkohl? Nährwerte für Grünkohl mit Pinkel, Smoothie & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
+    "description": "Wie viele Kalorien hat Grünkohl? Nährwerte für Grünkohl gekocht, mit Kasseler, Mettwurst & mehr. Kostenloser Rechner mit Portionsgrößen und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 45,
-    "protein_per_100g": 4.3,
-    "carbs_per_100g": 4.4,
-    "fat_per_100g": 0.9,
-    "fiber_per_100g": 4.2,
+    "calories_per_100g": 36,
+    "protein_per_100g": 2.9,
+    "carbs_per_100g": 5.3,
+    "fat_per_100g": 1.2,
+    "fiber_per_100g": 4,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Grünkohl gekocht (ohne Fett)", "portion_g": 250, "calories": 113, "protein": 11, "carbs": 11, "fat": 2, "tip": "Kalorienärmste Variante"},
-    {"name": "Grünkohl mit Pinkel & Kasseler", "portion_g": 400, "calories": 580, "protein": 28, "carbs": 18, "fat": 42, "tip": "Norddeutscher Klassiker"},
-    {"name": "Grünkohl mit Mettwurst", "portion_g": 350, "calories": 480, "protein": 22, "carbs": 15, "fat": 35, "tip": "Deftige Variante"},
-    {"name": "Grünkohl-Chips", "portion_g": 30, "calories": 135, "protein": 4, "carbs": 10, "fat": 9, "tip": "Knuspriger Snack"},
-    {"name": "Grünkohl-Smoothie", "portion_g": 300, "calories": 120, "protein": 4, "carbs": 22, "fat": 2, "tip": "Vitamin-Booster"},
-    {"name": "Grünkohl-Salat roh", "portion_g": 150, "calories": 75, "protein": 5, "carbs": 10, "fat": 2, "tip": "Superfood-Salat"}
+    {
+      "name": "Grünkohl gekocht (ohne Fett)",
+      "portion_g": 250,
+      "calories": 90,
+      "protein": 7,
+      "carbs": 13,
+      "fat": 3
+    },
+    {
+      "name": "Grünkohl mit Kasseler",
+      "portion_g": 400,
+      "calories": 309,
+      "protein": 50,
+      "carbs": 16,
+      "fat": 7,
+      "tip": "Norddeutscher Klassiker",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "fdcId": 2705884,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Grünkohl mit Mettwurst",
+      "portion_g": 350,
+      "calories": 399,
+      "protein": 19,
+      "carbs": 14,
+      "fat": 31,
+      "tip": "Deftige Variante",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "fdcId": 174584,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Grünkohl roh (150g, ohne Dressing)",
+      "portion_g": 150,
+      "calories": 53,
+      "protein": 4,
+      "carbs": 7,
+      "fat": 2,
+      "tip": "Für Kale Salad",
+      "basis": [
+        {
+          "fdcId": 168421,
+          "g": 150
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Spinat gekocht", "calories": 23, "emoji": "🥬"},
-    {"name": "Brokkoli gekocht", "calories": 35, "emoji": "🥦"},
-    {"name": "Rotkohl gekocht", "calories": 55, "emoji": "🟣"},
-    {"name": "Sauerkraut", "calories": 19, "emoji": "🥗"}
+    {
+      "name": "Spinat gekocht (250g)",
+      "calories": 58,
+      "emoji": "🥬",
+      "basis": [
+        {
+          "slug": "spinat",
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Brokkoli gekocht (250g)",
+      "calories": 85,
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Rotkohl gekocht (250g)",
+      "calories": 73,
+      "emoji": "🟣",
+      "basis": [
+        {
+          "fdcId": 169978,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Sauerkraut (1 Portion, 200g)",
+      "calories": 38,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "slug": "sauerkraut",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Superfood aus Deutschland", "text": "Grünkohl ist eines der nährstoffreichsten Gemüse: reich an Vitamin K, C, A, Eisen und Calcium.", "icon": "💪"},
-    {"title": "Roh im Salat", "text": "Roher Grünkohl als Salat (Kale Salad) spart Kalorien und erhält mehr Vitamine als die gekochte Version.", "icon": "🥗"},
-    {"title": "Wurst reduzieren", "text": "Der klassische Grünkohl mit Pinkel hat 580 kcal durch die Wurst. Halbiere die Wurstmenge und spare 200 kcal.", "icon": "🌭"},
-    {"title": "Frost macht mild", "text": "Grünkohl nach dem ersten Frost geerntet schmeckt milder und süßer – oder kurz einfrieren vor dem Kochen.", "icon": "❄️"},
-    {"title": "Protein-Gemüse", "text": "Mit 4,3g Protein pro 100g hat Grünkohl mehr Eiweiß als die meisten Gemüsesorten – ideal für pflanzliche Ernährung.", "icon": "🌱"}
+    {
+      "title": "Superfood aus Deutschland",
+      "text": "Grünkohl ist eines der nährstoffreichsten Gemüse: reich an Vitamin K, C, A, Eisen und Calcium.",
+      "icon": "💪"
+    },
+    {
+      "title": "Roh im Salat",
+      "text": "Roher Grünkohl als Salat (Kale Salad) erhält mehr Vitamine als die gekochte Version.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Wurst reduzieren",
+      "text": "Grünkohl mit Mettwurst (350g) hat rund 399 kcal, gut drei Viertel davon aus der Wurst. Halbiere die Wurstmenge und spare rund 155 kcal.",
+      "icon": "🌭"
+    },
+    {
+      "title": "Frost macht mild",
+      "text": "Grünkohl nach dem ersten Frost geerntet schmeckt milder und süßer, oder kurz einfrieren vor dem Kochen.",
+      "icon": "❄️"
+    },
+    {
+      "title": "Protein-Gemüse",
+      "text": "Mit rund 2,9g Protein pro 100g hat Grünkohl mehr Eiweiß als viele Gemüsesorten, ideal für pflanzliche Ernährung.",
+      "icon": "🌱"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Grünkohl?", "answer": "Grünkohl pur hat nur 45 kcal pro 100g. Eine Portion gekocht (250g) kommt auf 113 kcal. Mit Pinkel und Kasseler steigt es auf ca. 580 kcal."},
-    {"question": "Ist Grünkohl gesund?", "answer": "Grünkohl ist extrem gesund: Er enthält mehr Vitamin C als Orangen, viel Vitamin K, Eisen, Calcium und Antioxidantien bei wenig Kalorien."},
-    {"question": "Wie viel Grünkohl pro Person?", "answer": "Als Beilage 200-250g, als Hauptgericht mit Beilagen 300-400g pro Person. Frischer Grünkohl schrumpft beim Kochen erheblich."},
-    {"question": "Ist Grünkohl gut zum Abnehmen?", "answer": "Ja! Grünkohl hat wenig Kalorien, viel Ballaststoffe und Protein. Achte nur auf fettarme Zubereitung – die Wurst macht den Unterschied."},
-    {"question": "Kann man Grünkohl roh essen?", "answer": "Ja, roher Grünkohl (Kale) ist im Salat oder Smoothie sogar gesünder, da mehr Vitamine erhalten bleiben. Gut massieren für weichere Konsistenz."},
-    {"question": "Wann hat Grünkohl Saison?", "answer": "Grünkohl hat von November bis März Saison. Nach dem ersten Frost schmeckt er am besten, da Stärke in Zucker umgewandelt wird."}
+    {
+      "question": "Wie viele Kalorien hat Grünkohl?",
+      "answer": "Grünkohl gekocht hat nur 36 kcal pro 100g. Eine Portion (250g) kommt auf 90 kcal. Mit Kasseler (400g) steigt es auf ca. 309 kcal, mit Mettwurst (350g) auf ca. 399 kcal."
+    },
+    {
+      "question": "Ist Grünkohl gesund?",
+      "answer": "Grünkohl ist extrem gesund: Roh enthält er mehr Vitamin C als Orangen, dazu viel Vitamin K, Eisen, Calcium und Antioxidantien bei wenig Kalorien."
+    },
+    {
+      "question": "Wie viel Grünkohl pro Person?",
+      "answer": "Als Beilage 200-250g, als Hauptgericht mit Beilagen 300-400g pro Person. Frischer Grünkohl schrumpft beim Kochen erheblich."
+    },
+    {
+      "question": "Ist Grünkohl gut zum Abnehmen?",
+      "answer": "Ja! Grünkohl hat wenig Kalorien, viel Ballaststoffe und Protein. Achte nur auf fettarme Zubereitung: Die Wurst macht den Unterschied."
+    },
+    {
+      "question": "Kann man Grünkohl roh essen?",
+      "answer": "Ja, roher Grünkohl (Kale) ist im Salat oder Smoothie sogar gesünder, da mehr Vitamine erhalten bleiben. Gut massieren für weichere Konsistenz."
+    },
+    {
+      "question": "Wann hat Grünkohl Saison?",
+      "answer": "Grünkohl hat von November bis März Saison. Nach dem ersten Frost schmeckt er am besten, da Stärke in Zucker umgewandelt wird."
+    }
   ],
-  "related_foods": ["rotkohl", "sauerkraut", "spinat", "brokkoli"]
+  "related_foods": [
+    "rotkohl",
+    "sauerkraut",
+    "spinat",
+    "brokkoli"
+  ]
 }

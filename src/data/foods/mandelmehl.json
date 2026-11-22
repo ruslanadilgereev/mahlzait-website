@@ -3,9 +3,10 @@
   "name": "Mandelmehl",
   "emoji": "🌾",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2261420 (Flour, almond), Werte je 100 g",
   "seo": {
     "title": "Mandelmehl Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mandelmehl? 571 kcal pro 100g, viel Protein & wenig Kohlenhydrate. Nährwerte, Portionen & Backtipps im Überblick.",
+    "description": "Wie viele Kalorien hat Mandelmehl? 578 kcal pro 100g, viel Protein & wenig Kohlenhydrate. Nährwerte, Portionen & Backtipps im Überblick.",
     "keywords": [
       "mandelmehl kalorien",
       "mandelmehl kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 571,
-    "protein_per_100g": 21,
-    "carbs_per_100g": 21.6,
-    "fat_per_100g": 50,
-    "fiber_per_100g": 10.7,
+    "calories_per_100g": 578,
+    "protein_per_100g": 26.2,
+    "carbs_per_100g": 16.2,
+    "fat_per_100g": 50.2,
+    "fiber_per_100g": 9.3,
     "typical_portion_g": 30,
     "typical_portion_name": "1 gehäufter Esslöffel (30g)"
   },
@@ -31,94 +32,109 @@
       "name": "1 Esslöffel (12g)",
       "portion_g": 12,
       "calories": 69,
-      "protein": 2.5,
-      "carbs": 2.6,
+      "protein": 3.1,
+      "carbs": 1.9,
       "fat": 6,
       "tip": "Zum Andicken oder Panieren"
     },
     {
       "name": "Portion zum Backen (30g)",
       "portion_g": 30,
-      "calories": 171,
-      "protein": 6.3,
-      "carbs": 6.5,
-      "fat": 15,
+      "calories": 173,
+      "protein": 7.9,
+      "carbs": 4.9,
+      "fat": 15.1,
       "tip": "Standard"
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 571,
-      "protein": 21,
-      "carbs": 21.6,
-      "fat": 50
+      "calories": 578,
+      "protein": 26.2,
+      "carbs": 16.2,
+      "fat": 50.2
     },
     {
       "name": "Ersatz für 100g Weizenmehl (96g)",
       "portion_g": 96,
-      "calories": 548,
-      "protein": 20.2,
-      "carbs": 20.7,
-      "fat": 48,
+      "calories": 555,
+      "protein": 25.2,
+      "carbs": 15.6,
+      "fat": 48.2,
       "tip": "Mandelmehl bindet stärker, etwas weniger nehmen"
     },
     {
       "name": "Kleine Backration (120g)",
       "portion_g": 120,
-      "calories": 685,
-      "protein": 25.2,
-      "carbs": 25.9,
-      "fat": 60
-    },
-    {
-      "name": "Mandelmehl teilentölt (100g)",
-      "portion_g": 100,
-      "calories": 380,
-      "protein": 45,
-      "carbs": 8,
-      "fat": 11,
-      "tip": "Entöltes Mehl: mehr Protein, weniger Fett"
+      "calories": 694,
+      "protein": 31.4,
+      "carbs": 19.4,
+      "fat": 60.2
     },
     {
       "name": "Packung (250g)",
       "portion_g": 250,
-      "calories": 1428,
-      "protein": 52.5,
-      "carbs": 54,
-      "fat": 125
+      "calories": 1445,
+      "protein": 65.5,
+      "carbs": 40.5,
+      "fat": 125.5
     }
   ],
   "comparison": [
     {
       "name": "Weizenmehl (100g)",
-      "calories": 340,
-      "emoji": "🌾"
+      "calories": 364,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "weizenmehl",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Mandeln (100g)",
-      "calories": 579,
-      "emoji": "🥜"
+      "calories": 576,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Haferflocken (100g)",
-      "calories": 372,
-      "emoji": "🥣"
+      "calories": 379,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferflocken",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Kokosmehl (100g)",
-      "calories": 400,
-      "emoji": "🥥"
+      "calories": 424,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "fdcId": 2515382,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Beliebt bei Low Carb",
-      "text": "Mit nur rund 22g Kohlenhydraten pro 100g und davon etwa der Hälfte als Ballaststoffe ist Mandelmehl ein häufiger Weizenmehl-Ersatz beim kohlenhydratarmen Backen.",
+      "text": "Mit nur rund 16g Kohlenhydraten pro 100g und davon gut der Hälfte als Ballaststoffe ist Mandelmehl ein häufiger Weizenmehl-Ersatz beim kohlenhydratarmen Backen.",
       "icon": "🥗"
     },
     {
       "title": "Hoher Fettanteil beachten",
-      "text": "Mandelmehl liefert mit 571 kcal pro 100g fast doppelt so viel Energie wie Weizenmehl. Das Fett stammt überwiegend aus ungesättigten Fettsäuren, die Menge zählt aber trotzdem.",
+      "text": "Mandelmehl liefert mit 578 kcal pro 100g rund 60% mehr Energie als Weizenmehl (364 kcal). Das Fett stammt überwiegend aus ungesättigten Fettsäuren, die Menge zählt aber trotzdem.",
       "icon": "⚖️"
     },
     {
@@ -128,7 +144,7 @@
     },
     {
       "title": "Teilentöltes Mehl für mehr Protein",
-      "text": "Teilentöltes Mandelmehl hat nur etwa 380 kcal, dafür bis zu 45g Protein pro 100g. Eine gute Wahl, wenn du Kalorien sparen und Eiweiß erhöhen willst.",
+      "text": "Teilentöltes Mandelmehl hat deutlich weniger Fett und Kalorien, dafür mehr Protein. Eine gute Wahl, wenn du Kalorien sparen und Eiweiß erhöhen willst.",
       "icon": "💪"
     },
     {
@@ -140,15 +156,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Mandelmehl?",
-      "answer": "Mandelmehl hat etwa 571 kcal pro 100g. Ein gehäufter Esslöffel (30g) liefert rund 171 kcal."
+      "answer": "Mandelmehl hat etwa 578 kcal pro 100g. Ein gehäufter Esslöffel (30g) liefert rund 173 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mandelmehl?",
-      "answer": "Mandelmehl enthält rund 21,6g Kohlenhydrate pro 100g, davon ist mit etwa 10,7g Ballaststoffen ungefähr die Hälfte unverdaulich. Das macht es zu einem beliebten Low-Carb-Mehl."
+      "answer": "Mandelmehl enthält rund 16,2g Kohlenhydrate pro 100g, davon ist mit etwa 9,3g Ballaststoffen gut die Hälfte unverdaulich. Das macht es zu einem beliebten Low-Carb-Mehl."
     },
     {
       "question": "Wie viel Protein steckt in Mandelmehl?",
-      "answer": "Klassisches Mandelmehl liefert etwa 21g Protein pro 100g. Teilentöltes Mandelmehl kommt sogar auf bis zu 45g Protein pro 100g."
+      "answer": "Klassisches Mandelmehl liefert etwa 26g Protein pro 100g. Teilentöltes Mandelmehl liefert noch mehr."
     },
     {
       "question": "Ist Mandelmehl zum Abnehmen geeignet?",

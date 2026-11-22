@@ -3,47 +3,205 @@
   "name": "Wiener Würstchen",
   "emoji": "🌭",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 172964 (Frankfurter, pork), Werte je 100 g",
   "seo": {
     "title": "Wiener Würstchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Wiener Würstchen? Nährwerte pro Stück, mit Senf, im Brötchen & mehr. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 260,
-    "protein_per_100g": 13,
-    "carbs_per_100g": 1,
-    "fat_per_100g": 23,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 269,
+    "protein_per_100g": 12.8,
+    "carbs_per_100g": 0.3,
+    "fat_per_100g": 23.7,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Würstchen"
   },
   "variants": [
-    {"name": "Wiener Würstchen (1 Stück)", "portion_g": 50, "calories": 130, "protein": 7, "carbs": 1, "fat": 12, "tip": "Einzelnes Würstchen"},
-    {"name": "Paar Wiener (2 Stück)", "portion_g": 100, "calories": 260, "protein": 13, "carbs": 1, "fat": 23, "tip": "Klassische Portion"},
-    {"name": "Wiener mit Kartoffelsalat", "portion_g": 300, "calories": 530, "protein": 19, "carbs": 35, "fat": 35, "tip": "Silvester-Klassiker"},
-    {"name": "Wiener im Schlafrock", "portion_g": 120, "calories": 380, "protein": 12, "carbs": 25, "fat": 26, "tip": "Im Blätterteig"},
-    {"name": "Geflügel-Wiener (2 Stück)", "portion_g": 100, "calories": 190, "protein": 15, "carbs": 1, "fat": 14, "tip": "Kalorienärmste Variante"},
-    {"name": "Wiener in der Erbsensuppe", "portion_g": 400, "calories": 420, "protein": 22, "carbs": 35, "fat": 22, "tip": "Deftiger Eintopf"}
+    {
+      "name": "Wiener Würstchen (1 Stück)",
+      "portion_g": 50,
+      "calories": 135,
+      "protein": 6,
+      "carbs": 0,
+      "fat": 12,
+      "tip": "Einzelnes Würstchen"
+    },
+    {
+      "name": "Paar Wiener (2 Stück)",
+      "portion_g": 100,
+      "calories": 269,
+      "protein": 13,
+      "carbs": 0,
+      "fat": 24,
+      "tip": "Klassische Portion"
+    },
+    {
+      "name": "Wiener mit Kartoffelsalat (2 Stück + 200g Kartoffelsalat)",
+      "portion_g": 300,
+      "calories": 555,
+      "protein": 18,
+      "carbs": 23,
+      "fat": 40,
+      "tip": "Silvester-Klassiker",
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "slug": "kartoffelsalat",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Wiener im Schlafrock",
+      "portion_g": 120,
+      "calories": 372,
+      "protein": 14,
+      "carbs": 23,
+      "fat": 25,
+      "tip": "Im Teigmantel",
+      "basis": [
+        {
+          "fdcId": 2707045,
+          "g": 120
+        }
+      ]
+    },
+    {
+      "name": "Geflügel-Wiener (2 Stück)",
+      "portion_g": 100,
+      "calories": 223,
+      "protein": 16,
+      "carbs": 3,
+      "fat": 16,
+      "tip": "Weniger Fett als Schwein",
+      "basis": [
+        {
+          "fdcId": 171624,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Wiener in der Erbsensuppe (1 Stück + 350g Suppe)",
+      "portion_g": 400,
+      "calories": 415,
+      "protein": 26,
+      "carbs": 32,
+      "fat": 20,
+      "tip": "Deftiger Eintopf",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "slug": "erbsensuppe",
+          "g": 350
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Bockwurst", "calories": 275, "emoji": "🌭"},
-    {"name": "Bratwurst", "calories": 313, "emoji": "🔥"},
-    {"name": "Weißwurst", "calories": 250, "emoji": "🌭"},
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+    {
+      "name": "Bockwurst",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst"
+        }
+      ]
+    },
+    {
+      "name": "Bratwurst",
+      "calories": 500,
+      "emoji": "🔥",
+      "basis": [
+        {
+          "slug": "bratwurst"
+        }
+      ]
+    },
+    {
+      "name": "Weißwurst",
+      "calories": 273,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "weisswurst"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Geflügel-Variante", "text": "Geflügel-Wiener haben ca. 30% weniger Kalorien und Fett als die klassische Schwein-Rind-Variante.", "icon": "🍗"},
-    {"title": "Nicht kochen", "text": "Wiener nur in heißem Wasser (ca. 75°C) ziehen lassen, nicht kochen – so bleiben sie saftig ohne zu platzen.", "icon": "🫕"},
-    {"title": "Senf ist die beste Sauce", "text": "Mittelscharfer Senf hat kaum Kalorien und unterstreicht den Geschmack – besser als Mayo oder Ketchup.", "icon": "🟡"},
-    {"title": "Portionskontrolle", "text": "Ein Würstchen (130 kcal) ist ein akzeptabler Snack. Problematisch wird es ab 3-4 Stück mit Brötchen.", "icon": "☝️"},
-    {"title": "Alternative Beilage", "text": "Statt Kartoffelsalat mit Mayo lieber Gurkensalat oder Krautsalat – deutlich weniger Kalorien.", "icon": "🥗"}
+    {
+      "title": "Geflügel-Variante",
+      "text": "Geflügel-Wiener haben rund 17% weniger Kalorien und knapp ein Drittel weniger Fett als die klassische Variante aus Schweinefleisch.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Nicht kochen",
+      "text": "Wiener nur in heißem Wasser (ca. 75°C) ziehen lassen, nicht kochen, so bleiben sie saftig ohne zu platzen.",
+      "icon": "🫕"
+    },
+    {
+      "title": "Senf ist die beste Sauce",
+      "text": "Mittelscharfer Senf hat kaum Kalorien und unterstreicht den Geschmack, besser als Mayo oder Ketchup.",
+      "icon": "🟡"
+    },
+    {
+      "title": "Portionskontrolle",
+      "text": "Ein Würstchen (135 kcal) ist ein akzeptabler Snack. Problematisch wird es ab 3-4 Stück mit Brötchen.",
+      "icon": "☝️"
+    },
+    {
+      "title": "Alternative Beilage",
+      "text": "Statt Kartoffelsalat mit Mayo lieber Gurkensalat oder Krautsalat, das hat deutlich weniger Kalorien.",
+      "icon": "🥗"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Wiener Würstchen?", "answer": "Ein Wiener Würstchen (50g) hat ca. 130 kcal. Ein Paar Wiener (100g) kommt auf ca. 260 kcal."},
-    {"question": "Sind Wiener Würstchen gesund?", "answer": "Wiener sind verarbeitetes Fleisch mit viel Fett. Gelegentlich in Ordnung, aber nicht als tägliches Essen empfohlen. Geflügel-Varianten sind etwas besser."},
-    {"question": "Was ist der Unterschied zwischen Wiener und Frankfurter?", "answer": "In Deutschland heißen sie Wiener, in Österreich Frankfurter. Der Unterschied liegt nur im Namen – das Rezept ist praktisch identisch."},
-    {"question": "Wie viele Wiener Würstchen pro Person?", "answer": "Üblich sind 2-3 Stück pro Erwachsener (100-150g) mit Beilage. Für Kinder reichen 1-2 Stück."},
-    {"question": "Kann man Wiener Würstchen einfrieren?", "answer": "Ja, Wiener lassen sich gut einfrieren (bis 3 Monate). Am besten vakuumiert oder in Gefrierbeuteln."},
-    {"question": "Wie viel Protein haben Wiener Würstchen?", "answer": "Wiener Würstchen enthalten 13g Protein pro 100g. Das ist moderat – Hähnchenbrust liefert mit 31g pro 100g deutlich mehr."}
+    {
+      "question": "Wie viele Kalorien hat ein Wiener Würstchen?",
+      "answer": "Ein Wiener Würstchen (50g) hat ca. 135 kcal. Ein Paar Wiener (100g) kommt auf ca. 269 kcal."
+    },
+    {
+      "question": "Sind Wiener Würstchen gesund?",
+      "answer": "Wiener sind verarbeitetes Fleisch mit viel Fett. Gelegentlich in Ordnung, aber nicht als tägliches Essen empfohlen. Geflügel-Varianten sind etwas besser."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Wiener und Frankfurter?",
+      "answer": "In Deutschland heißen sie Wiener, in Österreich Frankfurter. Der Unterschied liegt nur im Namen, das Rezept ist praktisch identisch."
+    },
+    {
+      "question": "Wie viele Wiener Würstchen pro Person?",
+      "answer": "Üblich sind 2-3 Stück pro Erwachsener (100-150g) mit Beilage. Für Kinder reichen 1-2 Stück."
+    },
+    {
+      "question": "Kann man Wiener Würstchen einfrieren?",
+      "answer": "Ja, Wiener lassen sich gut einfrieren (bis 3 Monate). Am besten vakuumiert oder in Gefrierbeuteln."
+    },
+    {
+      "question": "Wie viel Protein haben Wiener Würstchen?",
+      "answer": "Wiener Würstchen enthalten rund 13g Protein pro 100g. Das ist moderat, Hähnchenbrust liefert mit 31g pro 100g deutlich mehr."
+    }
   ],
-  "related_foods": ["bockwurst", "bratwurst", "hot-dog", "erbsensuppe"]
+  "related_foods": [
+    "bockwurst",
+    "bratwurst",
+    "hot-dog",
+    "erbsensuppe"
+  ]
 }

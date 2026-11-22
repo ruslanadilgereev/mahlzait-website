@@ -3,50 +3,241 @@
   "name": "Pancakes",
   "emoji": "🥞",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 175009 (Pancakes, plain, prepared from recipe), Werte je 100 g",
   "seo": {
     "title": "Pancakes Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Pancakes? Nährwerte pro 100g & Stück. Classic, Protein, Banane & mit Ahornsirup im Vergleich + Tipps.",
-    "keywords": ["pancakes kalorien", "pancakes nährwerte", "pancake kalorien pro stück", "pancakes mit ahornsirup kalorien", "pancakes protein", "pancakes gesund", "american pancakes kalorien", "pfannkuchen kalorien"]
+    "keywords": [
+      "pancakes kalorien",
+      "pancakes nährwerte",
+      "pancake kalorien pro stück",
+      "pancakes mit ahornsirup kalorien",
+      "pancakes protein",
+      "pancakes gesund",
+      "american pancakes kalorien",
+      "pfannkuchen kalorien"
+    ]
   },
   "overview": {
     "calories_per_100g": 227,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 29,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 1,
+    "protein_per_100g": 6.4,
+    "carbs_per_100g": 28.3,
+    "fat_per_100g": 9.7,
+    "fiber_per_100g": null,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Pancake"
   },
   "variants": [
-    { "name": "1 Pancake (60g)", "portion_g": 60, "calories": 136, "protein": 4, "carbs": 17, "fat": 6 },
-    { "name": "3 Pancakes (180g)", "portion_g": 180, "calories": 409, "protein": 11, "carbs": 52, "fat": 18 },
-    { "name": "3 Pancakes + Ahornsirup", "portion_g": 210, "calories": 487, "protein": 11, "carbs": 72, "fat": 18 },
-    { "name": "3 Pancakes + Nutella", "portion_g": 210, "calories": 569, "protein": 13, "carbs": 68, "fat": 28 },
-    { "name": "Banane-Pancakes (60g)", "portion_g": 60, "calories": 110, "protein": 4, "carbs": 15, "fat": 4, "tip": "Ohne Mehl" },
-    { "name": "Protein-Pancakes (60g)", "portion_g": 60, "calories": 95, "protein": 10, "carbs": 8, "fat": 3, "tip": "30% weniger kcal, 2x Protein" },
-    { "name": "Buttermilch-Pancakes (60g)", "portion_g": 60, "calories": 142, "protein": 4, "carbs": 18, "fat": 6 },
-    { "name": "Japanische Soufflé-Pancakes (80g)", "portion_g": 80, "calories": 168, "protein": 5, "carbs": 22, "fat": 7 }
+    {
+      "name": "1 Pancake (60g)",
+      "portion_g": 60,
+      "calories": 136,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 6
+    },
+    {
+      "name": "3 Pancakes (180g)",
+      "portion_g": 180,
+      "calories": 409,
+      "protein": 12,
+      "carbs": 51,
+      "fat": 17
+    },
+    {
+      "name": "3 Pancakes + Ahornsirup",
+      "portion_g": 210,
+      "calories": 487,
+      "protein": 12,
+      "carbs": 71,
+      "fat": 17,
+      "basis": [
+        {
+          "g": 180
+        },
+        {
+          "slug": "ahornsirup",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "3 Pancakes + Nutella",
+      "portion_g": 210,
+      "calories": 570,
+      "protein": 13,
+      "carbs": 70,
+      "fat": 26,
+      "basis": [
+        {
+          "g": 180
+        },
+        {
+          "fdcId": 168000,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Banane-Pancakes (60g)",
+      "portion_g": 60,
+      "calories": 69,
+      "protein": 4,
+      "carbs": 8,
+      "fat": 3,
+      "tip": "Ohne Mehl",
+      "basis": [
+        {
+          "fdcId": 173944,
+          "g": 32
+        },
+        {
+          "fdcId": 171287,
+          "g": 28
+        }
+      ]
+    },
+    {
+      "name": "Protein-Pancakes (60g)",
+      "portion_g": 60,
+      "calories": 85,
+      "protein": 9,
+      "carbs": 9,
+      "fat": 2,
+      "tip": "Rund 37% weniger kcal, über 2x Protein",
+      "basis": [
+        {
+          "fdcId": 173180,
+          "g": 9
+        },
+        {
+          "fdcId": 171287,
+          "g": 15
+        },
+        {
+          "fdcId": 173944,
+          "g": 36
+        }
+      ]
+    },
+    {
+      "name": "Buttermilch-Pancakes (60g)",
+      "portion_g": 60,
+      "calories": 136,
+      "protein": 4,
+      "carbs": 17,
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 175047,
+          "g": 60
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Waffeln (75g)", "calories": 234, "emoji": "🧇" },
-    { "name": "French Toast (2 Scheiben)", "calories": 276, "emoji": "🍞" },
-    { "name": "Croissant (60g)", "calories": 246, "emoji": "🥐" },
-    { "name": "Haferflocken mit Milch (200g)", "calories": 220, "emoji": "🥣" }
+    {
+      "name": "Waffeln (75g)",
+      "calories": 218,
+      "emoji": "🧇",
+      "basis": [
+        {
+          "fdcId": 175039,
+          "g": 75
+        }
+      ]
+    },
+    {
+      "name": "French Toast (2 Scheiben, 120g)",
+      "calories": 276,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "french-toast",
+          "g": 120
+        }
+      ]
+    },
+    {
+      "name": "Croissant (60g)",
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Haferflocken mit Milch (200g)",
+      "calories": 232,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "fdcId": 2708383,
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Topping dominiert die Kalorien", "text": "3 Pancakes pur: 409 kcal. Mit Ahornsirup: 487 kcal. Mit Nutella: 569 kcal. Der Belag kann 40% mehr Kalorien ausmachen.", "icon": "🍯" },
-    { "title": "Protein-Pancakes lohnen sich", "text": "Proteinpulver + Ei + Banane = Protein-Pancakes mit 95 kcal und 10g Protein pro Stück. Sättigen doppelt so lang wie klassische Pancakes.", "icon": "💪" },
-    { "title": "Banane-Ei-Pancakes (2 Zutaten)", "text": "1 Banane + 2 Eier, vermengen, braten. Kein Mehl, kein Zucker. 110 kcal pro Stück, natürlich süß. Der einfachste Healthy-Hack.", "icon": "🍌" },
-    { "title": "Ahornsirup portionieren", "text": "1 EL Ahornsirup hat 52 kcal. Die meisten kippen 3-4 EL drauf = 200 kcal nur vom Sirup! Besser: Frisches Obst als Topping.", "icon": "🥄" },
-    { "title": "Vollkornmehl verwenden", "text": "Vollkornmehl statt Weißmehl: mehr Ballaststoffe, langsamerer Blutzuckeranstieg, gleiche Kalorien. Man isst automatisch weniger.", "icon": "🌾" }
+    {
+      "title": "Topping dominiert die Kalorien",
+      "text": "3 Pancakes pur: 409 kcal. Mit Ahornsirup: 487 kcal. Mit Nutella: 570 kcal. Der Belag kann rund 40% mehr Kalorien ausmachen.",
+      "icon": "🍯"
+    },
+    {
+      "title": "Protein-Pancakes lohnen sich",
+      "text": "Proteinpulver + Ei + Banane = Protein-Pancakes mit 85 kcal und 9g Protein pro Stück. Sättigen deutlich länger als klassische Pancakes.",
+      "icon": "💪"
+    },
+    {
+      "title": "Banane-Ei-Pancakes (2 Zutaten)",
+      "text": "1 Banane + 2 Eier, vermengen, braten. Kein Mehl, kein Zucker. Rund 69 kcal pro Stück (60g), natürlich süß. Der einfachste Healthy-Hack.",
+      "icon": "🍌"
+    },
+    {
+      "title": "Ahornsirup portionieren",
+      "text": "1 EL Ahornsirup hat 52 kcal. Die meisten kippen 3-4 EL drauf = bis zu 208 kcal nur vom Sirup! Besser: Frisches Obst als Topping.",
+      "icon": "🥄"
+    },
+    {
+      "title": "Vollkornmehl verwenden",
+      "text": "Vollkornmehl statt Weißmehl: mehr Ballaststoffe, langsamerer Blutzuckeranstieg, gleiche Kalorien. Man isst automatisch weniger.",
+      "icon": "🌾"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Pancake?", "answer": "Ein klassischer Pancake (60g) hat ca. 136 kcal. 3 Pancakes: 409 kcal. Mit Ahornsirup: 487 kcal. Mit Nutella: 569 kcal." },
-    { "question": "Wie viele Kalorien haben 3 Pancakes?", "answer": "3 klassische Pancakes: 409 kcal. Mit Ahornsirup: 487 kcal. Protein-Pancakes: 285 kcal. Die Portion ohne Topping ist die Basis." },
-    { "question": "Sind Protein-Pancakes wirklich besser?", "answer": "Ja: 95 kcal und 10g Protein vs. 136 kcal und 4g Protein. 30% weniger Kalorien, doppelt so viel Protein. Sättigen deutlich besser." },
-    { "question": "Pancakes oder Waffeln – was hat weniger Kalorien?", "answer": "Pancakes: 227 kcal/100g. Waffeln: 312 kcal/100g. Pancakes haben weniger Fett, weil weniger Butter im Teig ist. Klarer Kaloriensieger." },
-    { "question": "Wie kann man Pancakes kalorienärmer machen?", "answer": "Banane-Ei-Pancakes (kein Mehl), Proteinpulver statt Hälfte Mehl, Obst statt Sirup. So sparst du 30-50% Kalorien pro Portion." },
-    { "question": "Sind Pancakes ein gutes Frühstück?", "answer": "Klassische Pancakes haben viel Zucker und wenig Protein – kein ideales Frühstück. Protein-Pancakes mit Obst sind dagegen eine gute Wahl: sättigend und nährstoffreich." }
+    {
+      "question": "Wie viele Kalorien hat ein Pancake?",
+      "answer": "Ein klassischer Pancake (60g) hat ca. 136 kcal. 3 Pancakes: 409 kcal. Mit Ahornsirup: 487 kcal. Mit Nutella: 570 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien haben 3 Pancakes?",
+      "answer": "3 klassische Pancakes: 409 kcal. Mit Ahornsirup: 487 kcal. Protein-Pancakes: rund 256 kcal. Die Portion ohne Topping ist die Basis."
+    },
+    {
+      "question": "Sind Protein-Pancakes wirklich besser?",
+      "answer": "Ja: 85 kcal und 9g Protein vs. 136 kcal und 4g Protein. Rund 37% weniger Kalorien, mehr als doppelt so viel Protein. Sättigen deutlich besser."
+    },
+    {
+      "question": "Pancakes oder Waffeln: Was hat weniger Kalorien?",
+      "answer": "Pancakes: 227 kcal/100g. Waffeln: 291 kcal/100g. Pancakes haben weniger Fett, weil weniger Butter im Teig ist. Klarer Kaloriensieger."
+    },
+    {
+      "question": "Wie kann man Pancakes kalorienärmer machen?",
+      "answer": "Banane-Ei-Pancakes (kein Mehl), Proteinpulver statt Hälfte Mehl, Obst statt Sirup. So sparst du rund 37 bis 49% Kalorien pro Portion."
+    },
+    {
+      "question": "Sind Pancakes ein gutes Frühstück?",
+      "answer": "Klassische Pancakes haben viel Zucker und wenig Protein, kein ideales Frühstück. Protein-Pancakes mit Obst sind dagegen eine gute Wahl: sättigend und nährstoffreich."
+    }
   ],
-  "related_foods": ["waffeln", "french-toast", "crepes-nutella", "haferflocken"]
+  "related_foods": [
+    "waffeln",
+    "french-toast",
+    "crepes-nutella",
+    "haferflocken"
+  ]
 }

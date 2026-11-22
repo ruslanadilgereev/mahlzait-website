@@ -3,9 +3,10 @@
   "name": "Pizza Calzone",
   "emoji": "🍕",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708685 (Calzone, with meat and cheese), Werte je 100 g",
   "seo": {
     "title": "Pizza Calzone Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Pizza Calzone? Eine Standard-Calzone (250g) hat ca. 663 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps.",
+    "description": "Wie viele Kalorien hat eine Pizza Calzone? Eine Standard-Calzone (250g) hat ca. 858 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps.",
     "keywords": [
       "pizza calzone kcal",
       "pizza calzone kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 265,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 1.8,
+    "calories_per_100g": 343,
+    "protein_per_100g": 14.8,
+    "carbs_per_100g": 31.3,
+    "fat_per_100g": 17.7,
+    "fiber_per_100g": 1.4,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Calzone (Standard)"
   },
@@ -28,86 +29,107 @@
     {
       "name": "Mini-Calzone (120g)",
       "portion_g": 120,
-      "calories": 318,
-      "protein": 13,
-      "carbs": 36,
-      "fat": 13
+      "calories": 412,
+      "protein": 18,
+      "carbs": 38,
+      "fat": 21
+    },
+    {
+      "name": "Kleine Calzone (200g)",
+      "portion_g": 200,
+      "calories": 686,
+      "protein": 30,
+      "carbs": 63,
+      "fat": 35
     },
     {
       "name": "Calzone Standard (250g)",
       "portion_g": 250,
-      "calories": 663,
-      "protein": 28,
-      "carbs": 75,
-      "fat": 28,
+      "calories": 858,
+      "protein": 37,
+      "carbs": 78,
+      "fat": 44,
       "tip": "Übliche Portion"
     },
     {
       "name": "Calzone groß / Restaurant (350g)",
       "portion_g": 350,
-      "calories": 928,
-      "protein": 39,
-      "carbs": 105,
-      "fat": 39
+      "calories": 1201,
+      "protein": 52,
+      "carbs": 110,
+      "fat": 62
     },
     {
-      "name": "TK-Calzone gebacken (200g)",
-      "portion_g": 200,
-      "calories": 530,
-      "protein": 22,
-      "carbs": 60,
-      "fat": 22
-    },
-    {
-      "name": "Calzone mit Salami (250g)",
+      "name": "Calzone mit Käse, ohne Fleisch (250g)",
       "portion_g": 250,
-      "calories": 725,
-      "protein": 30,
-      "carbs": 73,
-      "fat": 31,
-      "tip": "Fettreicher durch Wurst"
-    },
-    {
-      "name": "Calzone vegetarisch, Spinat-Ricotta (250g)",
-      "portion_g": 250,
-      "calories": 625,
-      "protein": 26,
-      "carbs": 73,
-      "fat": 24,
-      "tip": "Etwas leichter"
+      "calories": 973,
+      "protein": 44,
+      "carbs": 74,
+      "fat": 56,
+      "tip": "Vegetarisch, durch viel Käse aber kalorienreicher",
+      "basis": [
+        {
+          "fdcId": 2708684,
+          "g": 250
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Pizza Margherita (250g)",
-      "calories": 600,
-      "emoji": "🍕"
+      "calories": 665,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Döner (250g)",
-      "calories": 497,
-      "emoji": "🥙"
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Lasagne (250g)",
-      "calories": 350,
-      "emoji": "🍝"
+      "calories": 348,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Burger (250g)",
-      "calories": 625,
-      "emoji": "🍔"
+      "calories": 720,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sättigend, aber kalorienreich",
-      "text": "Eine Standard-Calzone (250g) liefert rund 663 kcal – das ist fast ein Drittel des Tagesbedarfs. Plane sie als vollwertige Hauptmahlzeit ein, nicht als Snack zwischendurch.",
+      "text": "Eine Standard-Calzone (250g) liefert rund 858 kcal. Plane sie als vollwertige Hauptmahlzeit ein, nicht als Snack zwischendurch.",
       "icon": "🍕"
     },
     {
-      "title": "Vegetarisch spart Fett",
-      "text": "Eine Calzone mit Spinat-Ricotta-Füllung statt Salami spart pro Portion rund 100 kcal und liefert trotzdem ordentlich Eiweiß.",
+      "title": "Gemüse statt Wurst und Käse",
+      "text": "Eine Füllung mit viel Gemüse wie Spinat statt Salami hält die Calzone leichter. Eine reine Käse-Calzone ohne Fleisch spart dagegen nichts: Sie kommt pro 250g auf ca. 973 kcal, mehr als die Standard-Calzone.",
       "icon": "🥬"
     },
     {
@@ -117,7 +139,7 @@
     },
     {
       "title": "Halbe Portion einplanen",
-      "text": "Die Calzone ist klassisch sehr groß. Wer abnehmen will, isst eine halbe Calzone (ca. 330 kcal) und packt die andere Hälfte für den nächsten Tag ein.",
+      "text": "Die Calzone ist klassisch sehr groß. Wer abnehmen will, isst eine halbe Calzone (ca. 429 kcal) und packt die andere Hälfte für den nächsten Tag ein.",
       "icon": "✂️"
     },
     {
@@ -129,27 +151,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Pizza Calzone?",
-      "answer": "Eine Standard-Calzone (250g) hat ca. 663 kcal. Pro 100g sind es rund 265 kcal."
+      "answer": "Eine Standard-Calzone (250g) hat ca. 858 kcal. Pro 100g sind es rund 343 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Calzone pro 100g?",
-      "answer": "Eine gebackene Calzone hat etwa 265 kcal pro 100g, mit 11g Eiweiß, 30g Kohlenhydraten und 11g Fett."
+      "answer": "Eine gebackene Calzone mit Fleisch und Käse hat etwa 343 kcal pro 100g, mit 14,8g Eiweiß, 31,3g Kohlenhydraten und 17,7g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Calzone?",
-      "answer": "Eine Standard-Calzone (250g) enthält etwa 75g Kohlenhydrate, hauptsächlich aus dem Pizzateig."
+      "answer": "Eine Standard-Calzone (250g) enthält etwa 78g Kohlenhydrate, hauptsächlich aus dem Pizzateig."
     },
     {
       "question": "Wie viel Protein hat eine Calzone?",
-      "answer": "Eine Calzone (250g) liefert rund 28g Eiweiß, vor allem aus Käse und Schinken in der Füllung."
+      "answer": "Eine Calzone (250g) liefert rund 37g Eiweiß, vor allem aus Käse und Fleisch in der Füllung."
     },
     {
       "question": "Ist eine Calzone zum Abnehmen geeignet?",
-      "answer": "Mit rund 663 kcal pro Portion ist die Calzone kalorienreich. In einer Diät lässt sie sich integrieren, wenn man eine halbe Portion isst oder eine vegetarische Variante mit Salat kombiniert."
+      "answer": "Mit rund 858 kcal pro Portion ist die Calzone kalorienreich. In einer Diät lässt sie sich integrieren, wenn man eine halbe Portion isst und sie mit Salat kombiniert."
     },
     {
       "question": "Ist eine Calzone gesünder als eine Pizza?",
-      "answer": "Pro 100g liegen Calzone und Pizza ähnlich. Da eine Calzone meist schwerer und dichter gefüllt ist, hat sie pro Portion oft mehr Kalorien als eine klassische Margherita."
+      "answer": "Pro 100g hat eine Calzone mit Fleisch und Käse (343 kcal) mehr Kalorien als eine Pizza Margherita. Da eine Calzone zudem meist schwerer und dichter gefüllt ist, hat sie pro Portion oft deutlich mehr Kalorien als eine klassische Margherita."
     }
   ],
   "related_foods": [

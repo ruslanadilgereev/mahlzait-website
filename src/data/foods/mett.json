@@ -3,9 +3,10 @@
   "name": "Mett",
   "emoji": "🥩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 167902 (Pork, fresh, ground, raw), Werte je 100 g",
   "seo": {
     "title": "Mett Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mett? 100g rohes Mett haben ca. 246 kcal. Nährwerte, Protein & Fett im Überblick plus Vergleich mit anderen Wurstwaren.",
+    "description": "Wie viele Kalorien hat Mett? 100g rohes Mett haben ca. 263 kcal. Nährwerte, Protein & Fett im Überblick plus Vergleich mit anderen Wurstwaren.",
     "keywords": [
       "mett kalorien",
       "mett kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 246,
-    "protein_per_100g": 17.5,
+    "calories_per_100g": 263,
+    "protein_per_100g": 16.9,
     "carbs_per_100g": 0,
-    "fat_per_100g": 20,
+    "fat_per_100g": 21.2,
     "fiber_per_100g": 0,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Mettbrötchen-Portion (50g)"
@@ -29,96 +30,139 @@
     {
       "name": "Dünner Aufstrich (30g)",
       "portion_g": 30,
-      "calories": 74,
-      "protein": 5.2,
+      "calories": 79,
+      "protein": 5.1,
       "carbs": 0,
-      "fat": 6,
+      "fat": 6.4,
       "tip": "Für ein belegtes Brötchen"
     },
     {
       "name": "1 Mettbrötchen-Portion (50g)",
       "portion_g": 50,
-      "calories": 123,
-      "protein": 8.8,
+      "calories": 132,
+      "protein": 8.5,
       "carbs": 0,
-      "fat": 10,
+      "fat": 10.6,
       "tip": "Standard"
     },
     {
       "name": "Mettbrötchen mit Zwiebeln (gesamt, ca. 110g)",
       "portion_g": 110,
-      "calories": 270,
-      "protein": 12,
-      "carbs": 28,
-      "fat": 11,
-      "tip": "Inklusive Brötchen und Zwiebeln"
+      "calories": 282,
+      "protein": 13.5,
+      "carbs": 27.3,
+      "fat": 12.8,
+      "tip": "Inklusive Brötchen und Zwiebeln",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 175031,
+          "g": 50
+        },
+        {
+          "fdcId": 170000,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Großzügige Portion (100g)",
       "portion_g": 100,
-      "calories": 246,
-      "protein": 17.5,
+      "calories": 263,
+      "protein": 16.9,
       "carbs": 0,
-      "fat": 20
+      "fat": 21.2
     },
     {
       "name": "Mett-Igel (150g)",
       "portion_g": 150,
-      "calories": 369,
-      "protein": 26.2,
+      "calories": 395,
+      "protein": 25.4,
       "carbs": 0,
-      "fat": 30,
+      "fat": 31.8,
       "tip": "Beliebt auf Partys"
     },
     {
       "name": "Halbes Pfund roh (250g)",
       "portion_g": 250,
-      "calories": 615,
-      "protein": 43.8,
+      "calories": 658,
+      "protein": 42.3,
       "carbs": 0,
-      "fat": 50
+      "fat": 53
     },
     {
       "name": "Gebratenes Mett (100g)",
       "portion_g": 100,
-      "calories": 280,
-      "protein": 24,
+      "calories": 297,
+      "protein": 25.7,
       "carbs": 0,
-      "fat": 21,
-      "tip": "Durch Wasserverlust gehaltvoller pro 100g"
+      "fat": 20.8,
+      "tip": "Durch Wasserverlust gehaltvoller pro 100g",
+      "basis": [
+        {
+          "fdcId": 167903,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Mett (100g)",
-      "calories": 246,
-      "emoji": "🥩"
+      "calories": 263,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "mett",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Schinken gekocht (100g)",
-      "calories": 110,
-      "emoji": "🍖"
+      "calories": 107,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "fdcId": 173863,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Leberwurst (100g)",
-      "calories": 325,
-      "emoji": "🥓"
+      "calories": 326,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "fdcId": 173870,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Salami (100g)",
-      "calories": 370,
-      "emoji": "🌭"
+      "calories": 378,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "fdcId": 174582,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich, aber fettig",
-      "text": "100g Mett liefern rund 17,5g Protein, aber auch 20g Fett. Der Großteil der 246 kcal stammt also aus dem Fett.",
+      "text": "100g Mett liefern rund 17g Protein, aber auch 21g Fett. Der Großteil der 263 kcal stammt also aus dem Fett.",
       "icon": "🥩"
     },
     {
       "title": "Sparsam aufstreichen",
-      "text": "Ein dünner Aufstrich (30g) auf dem Brötchen hat nur etwa 74 kcal. So bleibt der Genuss kalorienärmer als eine dicke Schicht.",
+      "text": "Ein dünner Aufstrich (30g) auf dem Brötchen hat nur etwa 79 kcal. So bleibt der Genuss kalorienärmer als eine dicke Schicht.",
       "icon": "🔪"
     },
     {
@@ -140,11 +184,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Mett?",
-      "answer": "100g rohes Mett haben etwa 246 kcal. Eine typische Mettbrötchen-Portion von 50g kommt auf rund 123 kcal."
+      "answer": "100g rohes Mett haben etwa 263 kcal. Eine typische Mettbrötchen-Portion von 50g kommt auf rund 132 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Mett?",
-      "answer": "Mett liefert rund 17,5g Eiweiß pro 100g. Damit ist es eine gute Proteinquelle, bringt aber zugleich viel Fett mit."
+      "answer": "Mett liefert rund 17g Eiweiß pro 100g. Damit ist es eine gute Proteinquelle, bringt aber zugleich viel Fett mit."
     },
     {
       "question": "Hat Mett Kohlenhydrate?",
@@ -152,7 +196,7 @@
     },
     {
       "question": "Ist Mett zum Abnehmen geeignet?",
-      "answer": "Mett ist eiweißreich und kohlenhydratfrei, aber mit 246 kcal und 20g Fett pro 100g recht gehaltvoll. In Maßen und mit magerem Brot passt es in eine Diät, große Portionen schlagen aber schnell zu Buche."
+      "answer": "Mett ist eiweißreich und kohlenhydratfrei, aber mit 263 kcal und 21g Fett pro 100g recht gehaltvoll. In Maßen und mit magerem Brot passt es in eine Diät, große Portionen schlagen aber schnell zu Buche."
     },
     {
       "question": "Ist Mett gesund?",
@@ -160,7 +204,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Mettbrötchen?",
-      "answer": "Ein komplettes Mettbrötchen mit Zwiebeln (Brötchen plus ca. 50g Mett) hat insgesamt rund 270 kcal."
+      "answer": "Ein komplettes Mettbrötchen mit Zwiebeln (Brötchen plus ca. 50g Mett) hat insgesamt rund 282 kcal."
     }
   ],
   "related_foods": [

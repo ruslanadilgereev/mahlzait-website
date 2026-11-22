@@ -3,48 +3,254 @@
   "name": "Double Burger",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2706938 (Double hamburger, on white bun, 2 medium patties), Werte je 100 g",
   "seo": {
     "title": "Double Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Double Burger? Big Mac, Whopper & mehr – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+    "description": "Wie viele Kalorien hat ein Double Burger? Big Mac, Whopper & mehr: alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 255,
-    "protein_per_100g": 16,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 0.8,
-    "typical_portion_g": 280,
+    "calories_per_100g": 290,
+    "protein_per_100g": 19.5,
+    "carbs_per_100g": 13,
+    "fat_per_100g": 17.1,
+    "fiber_per_100g": 0.5,
+    "typical_portion_g": 230,
     "typical_portion_name": "1 Double Burger"
   },
   "variants": [
-    {"name": "Big Mac (McDonald's)", "portion_g": 215, "calories": 509, "protein": 27, "carbs": 43, "fat": 26, "tip": "Doppeltes Patty, Special Sauce"},
-    {"name": "Double Whopper (Burger King)", "portion_g": 374, "calories": 900, "protein": 52, "carbs": 50, "fat": 56, "tip": "Flame-grilled"},
-    {"name": "Double Cheeseburger", "portion_g": 175, "calories": 450, "protein": 26, "carbs": 30, "fat": 24},
-    {"name": "Double Burger selbstgemacht", "portion_g": 350, "calories": 750, "protein": 50, "carbs": 40, "fat": 42, "tip": "2x 125g Patties"},
-    {"name": "Double Bacon Burger", "portion_g": 320, "calories": 820, "protein": 48, "carbs": 38, "fat": 50, "tip": "Extra Bacon & Käse"},
-    {"name": "Double Smash Burger", "portion_g": 280, "calories": 680, "protein": 40, "carbs": 35, "fat": 38, "tip": "Trendy & knusprig"},
-    {"name": "Double Veggie Burger", "portion_g": 300, "calories": 560, "protein": 28, "carbs": 55, "fat": 24, "tip": "Pflanzliche Alternative"}
+    {
+      "name": "Big Mac (McDonald's)",
+      "portion_g": 219,
+      "calories": 563,
+      "protein": 26,
+      "carbs": 44,
+      "fat": 33,
+      "tip": "Doppeltes Patty, Special Sauce",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
+    },
+    {
+      "name": "Double Whopper (Burger King)",
+      "portion_g": 374,
+      "calories": 942,
+      "protein": 52,
+      "carbs": 51,
+      "fat": 59,
+      "tip": "Flame-grilled",
+      "basis": [
+        {
+          "fdcId": 170729,
+          "g": 374
+        }
+      ]
+    },
+    {
+      "name": "Double Cheeseburger",
+      "portion_g": 270,
+      "calories": 810,
+      "protein": 53,
+      "carbs": 32,
+      "fat": 51,
+      "basis": [
+        {
+          "fdcId": 2706907,
+          "g": 270
+        }
+      ]
+    },
+    {
+      "name": "Double Burger selbstgemacht (2 große Patties)",
+      "portion_g": 290,
+      "calories": 841,
+      "protein": 59,
+      "carbs": 30,
+      "fat": 52,
+      "tip": "Zwei große Patties",
+      "basis": [
+        {
+          "fdcId": 2706940,
+          "g": 290
+        }
+      ]
+    },
+    {
+      "name": "Double Bacon Burger",
+      "portion_g": 266,
+      "calories": 824,
+      "protein": 55,
+      "carbs": 31,
+      "fat": 52,
+      "tip": "Extra Bacon & Käse",
+      "basis": [
+        {
+          "g": 230
+        },
+        {
+          "fdcId": 168322,
+          "g": 16
+        },
+        {
+          "fdcId": 2705709,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Double Smash Burger (2 kleine Patties mit Käse)",
+      "portion_g": 205,
+      "calories": 607,
+      "protein": 40,
+      "carbs": 27,
+      "fat": 37,
+      "tip": "Trendy & knusprig",
+      "basis": [
+        {
+          "fdcId": 2706905,
+          "g": 205
+        }
+      ]
+    },
+    {
+      "name": "Double Veggie Burger",
+      "portion_g": 260,
+      "calories": 535,
+      "protein": 36,
+      "carbs": 64,
+      "fat": 15,
+      "tip": "Vegetarische Alternative",
+      "basis": [
+        {
+          "fdcId": 2707481,
+          "g": 160
+        },
+        {
+          "fdcId": 2707473,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Einfacher Cheeseburger", "calories": 304, "emoji": "🍔"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Schnitzel", "calories": 550, "emoji": "🥩"},
-    {"name": "Hähnchenbrust mit Reis", "calories": 450, "emoji": "🍗"}
+    {
+      "name": "Einfacher Hamburger",
+      "calories": 418,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger",
+          "variante": "Hamburger (einfach)"
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel",
+      "calories": 595,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust mit Reis",
+      "calories": 508,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 150
+        },
+        {
+          "slug": "reis",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Pommes frites (mittlere Portion)",
+      "calories": 378,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 170721,
+          "g": 117
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Einfacher Burger reicht oft", "text": "Ein Single-Burger (300-400 kcal) macht genauso satt wie ein Double (500-900 kcal), wenn du langsam isst.", "icon": "1️⃣"},
-    {"title": "Smash Burger wählen", "text": "Smash Burger haben dünnere Patties und dadurch ca. 15% weniger Kalorien als dicke Patties gleichen Gewichts.", "icon": "🔨"},
-    {"title": "Ohne Sauce bestellen", "text": "Special Sauce, Mayo und Ketchup zusammen fügen ca. 150-200 kcal hinzu. Senf reicht oft aus.", "icon": "🚫"},
-    {"title": "Salat als Beilage", "text": "Ein Double Burger ohne Pommes ist eine Mahlzeit für sich. Pommes dazu machen es schnell 1000+ kcal.", "icon": "🥗"},
-    {"title": "Veggie-Double probieren", "text": "Ein doppelter Veggie-Burger hat ca. 560 kcal – 200-350 kcal weniger als die Fleisch-Variante.", "icon": "🌱"}
+    {
+      "title": "Einfacher Burger reicht oft",
+      "text": "Ein einfacher Hamburger (ca. 418 kcal) macht oft genauso satt wie ein Double (ca. 563 bis 942 kcal), wenn du langsam isst.",
+      "icon": "1️⃣"
+    },
+    {
+      "title": "Smash Burger wählen",
+      "text": "Smash Burger haben dünnere, kleinere Patties. Pro 100g hat ein Double Smash Burger laut FDC aber kaum weniger Kalorien als ein normaler Double Cheeseburger (296 statt 300 kcal), er ist nur kleiner (205g, ca. 607 kcal).",
+      "icon": "🔨"
+    },
+    {
+      "title": "Ohne Sauce bestellen",
+      "text": "Special Sauce, Mayo und Ketchup bringen zusammen viele Extra-Kalorien. Senf reicht oft aus.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Salat als Beilage",
+      "text": "Ein Double Burger (ca. 667 kcal) ist eine Mahlzeit für sich. Mit mittleren Pommes (ca. 378 kcal) kommst du schon auf rund 1.045 kcal.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Veggie-Double probieren",
+      "text": "Ein doppelter Veggie-Burger hat ca. 535 kcal, rund 132 kcal weniger als ein Double Burger mit Fleisch (230g, ca. 667 kcal).",
+      "icon": "🌱"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Double Burger?", "answer": "Ein Double Burger hat 450-900 kcal, je nach Variante. Big Mac: 509 kcal, Double Whopper: 900 kcal, Double Cheeseburger: 450 kcal."},
-    {"question": "Was hat mehr Kalorien: Big Mac oder Double Whopper?", "answer": "Der Double Whopper (900 kcal) hat fast doppelt so viele Kalorien wie ein Big Mac (509 kcal), da er deutlich größer und schwerer ist."},
-    {"question": "Wie viel Protein hat ein Double Burger?", "answer": "Ein Double Burger liefert 26-52g Protein. Der Double Whopper führt mit 52g, ein selbstgemachter Double Burger hat ca. 50g."},
-    {"question": "Ist ein Double Burger ungesund?", "answer": "Mit 450-900 kcal und bis zu 56g Fett ist ein Double Burger eine sehr kalorienreiche Mahlzeit. Gelegentlich okay, aber nicht für eine regelmäßige Ernährung."},
-    {"question": "Wie viel Fett hat ein Double Burger?", "answer": "Ein Double Burger enthält 24-56g Fett. Das entspricht bei einem Double Whopper fast dem gesamten Tagesbedarf an Fett."},
-    {"question": "Lohnt sich der Double Burger kalorienmäßig?", "answer": "Ein Double hat ca. 50-80% mehr Kalorien als ein Single, aber nur ca. 50% mehr Protein. Kalorienmäßig ist der Single-Burger effizienter."}
+    {
+      "question": "Wie viele Kalorien hat ein Double Burger?",
+      "answer": "Ein Double Burger (230g) hat ca. 667 kcal. Je nach Variante: Big Mac ca. 563 kcal, Double Cheeseburger ca. 810 kcal, Double Whopper ca. 942 kcal."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Big Mac oder Double Whopper?",
+      "answer": "Der Double Whopper (942 kcal) hat rund zwei Drittel mehr Kalorien als ein Big Mac (563 kcal), da er deutlich größer und schwerer ist."
+    },
+    {
+      "question": "Wie viel Protein hat ein Double Burger?",
+      "answer": "Ein Double Burger liefert je nach Variante ca. 26 bis 59g Protein. Der selbstgemachte mit zwei großen Patties führt mit ca. 59g, der Double Whopper hat ca. 52g."
+    },
+    {
+      "question": "Ist ein Double Burger ungesund?",
+      "answer": "Mit ca. 563 bis 942 kcal und bis zu 59g Fett ist ein Double Burger eine sehr kalorienreiche Mahlzeit. Gelegentlich okay, aber nicht für eine regelmäßige Ernährung."
+    },
+    {
+      "question": "Wie viel Fett hat ein Double Burger?",
+      "answer": "Ein Double Burger enthält je nach Variante ca. 33 bis 59g Fett. Das entspricht bei einem Double Whopper fast dem gesamten Tagesbedarf an Fett."
+    },
+    {
+      "question": "Lohnt sich der Double Burger kalorienmäßig?",
+      "answer": "Ein Double (230g, ca. 667 kcal) hat rund 60% mehr Kalorien als ein einfacher Hamburger (145g, ca. 418 kcal), aber auch rund 77% mehr Protein. Kalorienmäßig ist er also nicht ineffizienter, nur größer."
+    }
   ],
-  "related_foods": ["cheeseburger", "burger", "chicken-burger", "pommes-frites"]
+  "related_foods": [
+    "cheeseburger",
+    "burger",
+    "chicken-burger",
+    "pommes-frites"
+  ]
 }

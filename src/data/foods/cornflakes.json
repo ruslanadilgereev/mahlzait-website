@@ -3,48 +3,209 @@
   "name": "Cornflakes",
   "emoji": "🥣",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2708453 (Cereal, corn flakes, plain), Werte je 100 g",
   "seo": {
     "title": "Cornflakes Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Cornflakes? Nährwerte für Cornflakes pur, mit Milch & als Müsli-Basis. Mit Portionsrechner und gesündere Alternativen."
   },
   "overview": {
-    "calories_per_100g": 370,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 84,
-    "fat_per_100g": 1,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 365,
+    "protein_per_100g": 6.4,
+    "carbs_per_100g": 79.5,
+    "fat_per_100g": 1.6,
+    "fiber_per_100g": 3.5,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Portion (Schüssel)"
   },
   "variants": [
-    {"name": "Cornflakes pur (ohne Milch)", "portion_g": 40, "calories": 148, "protein": 3, "carbs": 34, "fat": 0.4, "tip": "Nur Flocken"},
-    {"name": "Cornflakes mit Vollmilch", "portion_g": 190, "calories": 243, "protein": 8, "carbs": 40, "fat": 5, "tip": "Klassisches Frühstück"},
-    {"name": "Cornflakes mit fettarmer Milch", "portion_g": 190, "calories": 218, "protein": 8, "carbs": 40, "fat": 2, "tip": "Kalorienärmere Variante"},
-    {"name": "Schoko-Cornflakes", "portion_g": 40, "calories": 160, "protein": 3, "carbs": 35, "fat": 1.5, "tip": "Mehr Zucker und Kakao"},
-    {"name": "Honig-Cornflakes", "portion_g": 40, "calories": 155, "protein": 2, "carbs": 36, "fat": 0.5, "tip": "Süßer durch Honig"},
-    {"name": "Bio-Cornflakes (ungesüßt)", "portion_g": 40, "calories": 140, "protein": 3, "carbs": 32, "fat": 0.4, "tip": "Ohne Zuckerzusatz"},
-    {"name": "Cornflakes mit Obst und Joghurt", "portion_g": 250, "calories": 310, "protein": 10, "carbs": 48, "fat": 8, "tip": "Vollwertige Frühstücksschüssel"}
+    {
+      "name": "Cornflakes pur (ohne Milch)",
+      "portion_g": 40,
+      "calories": 146,
+      "protein": 2.6,
+      "carbs": 31.8,
+      "fat": 0.6,
+      "tip": "Nur Flocken"
+    },
+    {
+      "name": "Cornflakes mit Vollmilch (40g + 150ml)",
+      "portion_g": 195,
+      "calories": 241,
+      "protein": 7.4,
+      "carbs": 39.2,
+      "fat": 5.7,
+      "tip": "Klassisches Frühstück",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "fdcId": 171265,
+          "ml": 150,
+          "g": 155
+        }
+      ]
+    },
+    {
+      "name": "Cornflakes mit fettarmer Milch (40g + 150ml)",
+      "portion_g": 195,
+      "calories": 224,
+      "protein": 7.7,
+      "carbs": 39.2,
+      "fat": 3.7,
+      "tip": "Kalorienärmere Variante",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "fdcId": 171267,
+          "ml": 150,
+          "g": 155
+        }
+      ]
+    },
+    {
+      "name": "Gesüßte Cornflakes (40g)",
+      "portion_g": 40,
+      "calories": 150,
+      "protein": 1.9,
+      "carbs": 33.9,
+      "fat": 0.5,
+      "tip": "Z. B. mit Honig oder Schoko, deutlich mehr Zucker",
+      "basis": [
+        {
+          "fdcId": 2708474,
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Cornflakes mit Obst und Joghurt (40g + 150g + 60g)",
+      "portion_g": 250,
+      "calories": 291,
+      "protein": 8.4,
+      "carbs": 52.5,
+      "fat": 5.7,
+      "tip": "Vollwertige Frühstücksschüssel",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "fdcId": 171284,
+          "g": 150
+        },
+        {
+          "fdcId": 173944,
+          "g": 60
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Haferflocken", "calories": 370, "emoji": "🥣"},
-    {"name": "Müsli (Früchte)", "calories": 365, "emoji": "🥣"},
-    {"name": "Granola", "calories": 450, "emoji": "🥣"},
-    {"name": "Porridge (zubereitet)", "calories": 130, "emoji": "🥣"}
+    {
+      "name": "Haferflocken (40g)",
+      "calories": 152,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "fdcId": 173904,
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Müsli (Früchte, 40g)",
+      "calories": 146,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "muesli",
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Granola (40g)",
+      "calories": 168,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "granola",
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Porridge (zubereitet, 250g)",
+      "calories": 178,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "haferbrei",
+          "g": 250
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Ungesüßte Variante wählen", "text": "Bio-Cornflakes ohne Zucker haben ca. 8 kcal weniger pro Portion als Standard-Cornflakes – und weniger Zucker.", "icon": "🍬"},
-    {"title": "Fettarme Milch verwenden", "text": "Mit 1.5% Milch statt Vollmilch sparst du ca. 25 kcal pro Frühstück – bei kaum merklichem Unterschied.", "icon": "🥛"},
-    {"title": "Portion abwiegen", "text": "40g sehen in der Schüssel wenig aus – aber eine volle Schüssel hat oft 60-80g (220-300 kcal pur). Wiege ab!", "icon": "⚖️"},
-    {"title": "Obst statt Zucker", "text": "Frische Beeren oder Banane geben natürliche Süße – kein zusätzlicher Zucker nötig.", "icon": "🍓"},
-    {"title": "Haferflocken als Alternative", "text": "Haferflocken haben ähnliche Kalorien, aber deutlich mehr Protein und Ballaststoffe – sättigen viel besser.", "icon": "🌾"}
+    {
+      "title": "Ungesüßte Variante wählen",
+      "text": "Bio-Cornflakes ohne Zuckerzusatz haben weniger Zucker als Standard-Cornflakes.",
+      "icon": "🍬"
+    },
+    {
+      "title": "Fettarme Milch verwenden",
+      "text": "Mit fettarmer Milch statt Vollmilch sparst du ca. 17 kcal pro Frühstück, bei kaum merklichem Unterschied.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Portion abwiegen",
+      "text": "40g sehen in der Schüssel wenig aus, aber eine volle Schüssel hat oft 60 bis 80g (219 bis 292 kcal pur). Wiege ab!",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Obst statt Zucker",
+      "text": "Frische Beeren oder Banane geben natürliche Süße, kein zusätzlicher Zucker nötig.",
+      "icon": "🍓"
+    },
+    {
+      "title": "Haferflocken als Alternative",
+      "text": "Haferflocken haben ähnliche Kalorien, aber deutlich mehr Protein und Ballaststoffe, sie sättigen viel besser.",
+      "icon": "🌾"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Cornflakes?", "answer": "Eine Portion Cornflakes (40g) hat ca. 148 kcal pur. Mit Vollmilch (150ml) steigt der Wert auf ca. 243 kcal."},
-    {"question": "Sind Cornflakes gesund?", "answer": "Cornflakes enthalten wenig Fett, aber viel Zucker und wenig Ballaststoffe. Als Frühstück sättigen sie nur kurz. Haferflocken sind die gesündere Alternative."},
-    {"question": "Wie viel Zucker haben Cornflakes?", "answer": "Standard-Cornflakes enthalten ca. 8g Zucker pro 100g. Schoko-Cornflakes sogar 30-35g/100g. Bio-Varianten ohne Zucker sind deutlich besser."},
-    {"question": "Was hat weniger Kalorien: Cornflakes oder Haferflocken?", "answer": "Pro 100g sind beide fast gleich (370 kcal). Aber Haferflocken haben mehr Protein (13g vs. 7g) und Ballaststoffe (10g vs. 3g) – sie sättigen besser."},
-    {"question": "Machen Cornflakes dick?", "answer": "Cornflakes selbst haben moderate Kalorien (148 kcal/40g). Problematisch: Man isst leicht zu viel (60-80g), und Schoko- oder Honig-Varianten haben viel Zucker."},
-    {"question": "Wie viel Protein haben Cornflakes?", "answer": "Cornflakes liefern nur ca. 7g Protein pro 100g. Mit Milch (150ml) kommt eine Portion auf ca. 8g Protein – für ein Frühstück relativ wenig."}
+    {
+      "question": "Wie viele Kalorien haben Cornflakes?",
+      "answer": "Eine Portion Cornflakes (40g) hat ca. 146 kcal pur. Mit Vollmilch (150ml) steigt der Wert auf ca. 241 kcal."
+    },
+    {
+      "question": "Sind Cornflakes gesund?",
+      "answer": "Cornflakes enthalten wenig Fett, aber viel Zucker und wenig Ballaststoffe. Als Frühstück sättigen sie nur kurz. Haferflocken sind die gesündere Alternative."
+    },
+    {
+      "question": "Wie viel Zucker haben Cornflakes?",
+      "answer": "Standard-Cornflakes enthalten ca. 9g Zucker pro 100g. Gesüßte Sorten wie Schoko- oder Honig-Cornflakes kommen auf rund 33g pro 100g. Varianten ohne Zuckerzusatz sind deutlich besser."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Cornflakes oder Haferflocken?",
+      "answer": "Pro 100g sind beide fast gleich (365 vs. 379 kcal). Aber Haferflocken haben mehr Protein (13g vs. 6g) und Ballaststoffe (10g vs. 3,5g), sie sättigen besser."
+    },
+    {
+      "question": "Machen Cornflakes dick?",
+      "answer": "Cornflakes selbst haben moderate Kalorien (146 kcal/40g). Problematisch: Man isst leicht zu viel (60 bis 80g), und Schoko- oder Honig-Varianten haben viel Zucker."
+    },
+    {
+      "question": "Wie viel Protein haben Cornflakes?",
+      "answer": "Cornflakes liefern nur ca. 6,4g Protein pro 100g. Mit Milch (150ml) kommt eine Portion auf ca. 7g Protein, für ein Frühstück relativ wenig."
+    }
   ],
-  "related_foods": ["haferflocken", "muesli", "joghurt", "banane"]
+  "related_foods": [
+    "haferflocken",
+    "muesli",
+    "joghurt",
+    "banane"
+  ]
 }

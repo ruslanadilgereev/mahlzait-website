@@ -3,50 +3,196 @@
   "name": "Muffin",
   "emoji": "🧁",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2707829 (Muffin, NFS), Werte je 100 g",
   "seo": {
     "title": "Muffin Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Muffin? Nährwerte pro 100g & Stück. Schoko, Blaubeere, Zitrone & Protein-Muffin im Vergleich + Tipps.",
-    "keywords": ["muffin kalorien", "muffin nährwerte", "muffin kalorien pro stück", "schokomuffin kalorien", "blaubeer muffin kalorien", "muffin zucker", "muffin fett", "muffin kalorien starbucks"]
+    "description": "Wie viele Kalorien hat ein Muffin? Nährwerte pro 100g & Stück. Schoko, Blaubeere, Zitrone & Mini-Muffin im Vergleich + Tipps.",
+    "keywords": [
+      "muffin kalorien",
+      "muffin nährwerte",
+      "muffin kalorien pro stück",
+      "schokomuffin kalorien",
+      "blaubeer muffin kalorien",
+      "muffin zucker",
+      "muffin fett",
+      "muffin kalorien starbucks"
+    ]
   },
   "overview": {
-    "calories_per_100g": 370,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 48,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 375,
+    "protein_per_100g": 4.5,
+    "carbs_per_100g": 53,
+    "fat_per_100g": 16.1,
+    "fiber_per_100g": 1.1,
     "typical_portion_g": 110,
     "typical_portion_name": "1 Muffin"
   },
   "variants": [
-    { "name": "1 Standard-Muffin (110g)", "portion_g": 110, "calories": 407, "protein": 6, "carbs": 53, "fat": 20 },
-    { "name": "Schokomuffin (110g)", "portion_g": 110, "calories": 430, "protein": 6, "carbs": 55, "fat": 22 },
-    { "name": "Blaubeermuffin (110g)", "portion_g": 110, "calories": 385, "protein": 5, "carbs": 52, "fat": 18, "tip": "Etwas leichter" },
-    { "name": "Zitronenmuffin (110g)", "portion_g": 110, "calories": 400, "protein": 5, "carbs": 54, "fat": 19 },
-    { "name": "Mini-Muffin (35g)", "portion_g": 35, "calories": 130, "protein": 2, "carbs": 17, "fat": 6, "tip": "Portionskontrolle" },
-    { "name": "Starbucks-Muffin (140g)", "portion_g": 140, "calories": 490, "protein": 7, "carbs": 65, "fat": 23 },
-    { "name": "Protein-Muffin (80g)", "portion_g": 80, "calories": 200, "protein": 15, "carbs": 20, "fat": 7, "tip": "Deutlich mehr Protein" },
-    { "name": "Muffin mit Streuseln (120g)", "portion_g": 120, "calories": 468, "protein": 6, "carbs": 58, "fat": 24 }
+    {
+      "name": "1 Standard-Muffin (110g)",
+      "portion_g": 110,
+      "calories": 413,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 18
+    },
+    {
+      "name": "Schokomuffin (110g)",
+      "portion_g": 110,
+      "calories": 435,
+      "protein": 7,
+      "carbs": 56,
+      "fat": 21,
+      "basis": [
+        {
+          "fdcId": 2707833,
+          "g": 110
+        }
+      ]
+    },
+    {
+      "name": "Blaubeermuffin (110g)",
+      "portion_g": 110,
+      "calories": 413,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 18,
+      "basis": [
+        {
+          "fdcId": 172765,
+          "g": 110
+        }
+      ]
+    },
+    {
+      "name": "Zitronenmuffin (110g)",
+      "portion_g": 110,
+      "calories": 413,
+      "protein": 5,
+      "carbs": 58,
+      "fat": 18
+    },
+    {
+      "name": "Mini-Muffin (35g)",
+      "portion_g": 35,
+      "calories": 131,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 6,
+      "tip": "Portionskontrolle"
+    },
+    {
+      "name": "Großer Muffin (140g)",
+      "portion_g": 140,
+      "calories": 525,
+      "protein": 6,
+      "carbs": 74,
+      "fat": 23
+    }
   ],
   "comparison": [
-    { "name": "Brownie (80g)", "calories": 324, "emoji": "🟫" },
-    { "name": "Donut (75g)", "calories": 300, "emoji": "🍩" },
-    { "name": "Croissant (60g)", "calories": 246, "emoji": "🥐" },
-    { "name": "Berliner (80g)", "calories": 264, "emoji": "🫓" }
+    {
+      "name": "Brownie (80g)",
+      "calories": 324,
+      "emoji": "🟫",
+      "basis": [
+        {
+          "fdcId": 172713,
+          "g": 80
+        }
+      ]
+    },
+    {
+      "name": "Donut (75g)",
+      "calories": 316,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "fdcId": 172758,
+          "g": 75
+        }
+      ]
+    },
+    {
+      "name": "Croissant (60g)",
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
+    },
+    {
+      "name": "Berliner (80g)",
+      "calories": 272,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "slug": "berliner",
+          "g": 80
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Muffins sind getarnte Kuchen", "text": "Ein Muffin hat 407 kcal – so viel wie ein Stück Kuchen. Der gesunde Eindruck trügt: Mehl, Zucker, Butter – Kuchen in Becherform.", "icon": "🎭" },
-    { "title": "Mini-Muffins wählen", "text": "Mini-Muffins haben 130 kcal statt 407 kcal. Gleicher Geschmack, ein Drittel der Kalorien. Perfekt für portionierte Genussmomente.", "icon": "📏" },
-    { "title": "Starbucks-Muffins sind riesig", "text": "Starbucks-Muffins wiegen 140g statt der üblichen 110g. Ergebnis: 490 kcal – fast so viel wie ein ganzes Mittagessen.", "icon": "☕" },
-    { "title": "Protein-Muffin backen", "text": "Rezept: Proteinpulver statt Hälfte Mehl, Banane statt Zucker, griechischer Joghurt statt Butter. 200 kcal, 15g Protein.", "icon": "💪" },
-    { "title": "Nicht zum Frühstück", "text": "407 kcal aus Zucker und Fett, kaum Protein – ein Muffin zum Frühstück sorgt für Blutzucker-Achterbahn und Heißhunger um 10 Uhr.", "icon": "🌅" }
+    {
+      "title": "Muffins sind getarnte Kuchen",
+      "text": "Ein Muffin hat rund 413 kcal, so viel wie ein Stück Kuchen. Der gesunde Eindruck trügt: Mehl, Zucker, Butter, also Kuchen in Becherform.",
+      "icon": "🎭"
+    },
+    {
+      "title": "Mini-Muffins wählen",
+      "text": "Mini-Muffins haben 131 kcal statt 413 kcal. Gleicher Geschmack, ein Drittel der Kalorien. Perfekt für portionierte Genussmomente.",
+      "icon": "📏"
+    },
+    {
+      "title": "Coffeeshop-Muffins sind riesig",
+      "text": "Muffins aus dem Coffeeshop wiegen oft 140g statt der üblichen 110g. Ergebnis: rund 525 kcal, fast so viel wie ein ganzes Mittagessen.",
+      "icon": "☕"
+    },
+    {
+      "title": "Protein-Muffin backen",
+      "text": "Rezept: Proteinpulver statt Hälfte Mehl, Banane statt Zucker, griechischer Joghurt statt Butter. So wird der Muffin leichter und eiweißreicher.",
+      "icon": "💪"
+    },
+    {
+      "title": "Nicht zum Frühstück",
+      "text": "Rund 413 kcal aus Zucker und Fett, kaum Protein: Ein Muffin zum Frühstück sorgt für Blutzucker-Achterbahn und Heißhunger um 10 Uhr.",
+      "icon": "🌅"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Muffin?", "answer": "Ein Standard-Muffin (110g) hat ca. 407 kcal. Schoko: 430 kcal. Blaubeere: 385 kcal. Mini-Muffin: 130 kcal. Starbucks: bis 490 kcal." },
-    { "question": "Sind Blaubeermuffins gesünder?", "answer": "Minimal: 385 kcal vs. 407 kcal beim Standard. Die Blaubeeren machen kaum einen Unterschied – der Teig dominiert. Es bleibt Kuchen mit Obst-Deko." },
-    { "question": "Wie viel Zucker hat ein Muffin?", "answer": "Ca. 30-35g Zucker pro Muffin (110g) – das sind 10-12 Würfelzucker! Plus das Weizenmehl, das wie Zucker verdaut wird." },
-    { "question": "Muffin oder Donut – was hat weniger Kalorien?", "answer": "Donut: 300 kcal (75g). Muffin: 407 kcal (110g). Der Donut ist tatsächlich kalorienärmer! Der Muffin ist einfach größer und hat mehr Teig." },
-    { "question": "Kann man Muffins kalorienärmer backen?", "answer": "Ja: Zucker halbieren, Apfelmus statt Butter, Vollkornmehl, Proteinpulver dazu. So kommst du auf 200-250 kcal pro Muffin." },
-    { "question": "Wie viele Kalorien hat ein Mini-Muffin?", "answer": "Ein Mini-Muffin (35g) hat ca. 130 kcal. Das ist ein Drittel des Standard-Muffins und eine vertretbare Snack-Größe." }
+    {
+      "question": "Wie viele Kalorien hat ein Muffin?",
+      "answer": "Ein Standard-Muffin (110g) hat ca. 413 kcal. Schoko: 435 kcal. Blaubeere: 413 kcal. Mini-Muffin: 131 kcal. Großer Muffin (140g): rund 525 kcal."
+    },
+    {
+      "question": "Sind Blaubeermuffins gesünder?",
+      "answer": "Nein: Ein Blaubeermuffin hat mit rund 413 kcal genauso viel wie ein Standard-Muffin. Die Blaubeeren machen kaum einen Unterschied, der Teig dominiert. Es bleibt Kuchen mit Obst-Deko."
+    },
+    {
+      "question": "Wie viel Zucker hat ein Muffin?",
+      "answer": "Rund 35g Zucker pro Muffin (110g), das sind 11 bis 12 Würfelzucker! Plus das Weizenmehl, das wie Zucker verdaut wird."
+    },
+    {
+      "question": "Muffin oder Donut: Was hat weniger Kalorien?",
+      "answer": "Donut: 316 kcal (75g). Muffin: 413 kcal (110g). Der Donut ist tatsächlich kalorienärmer! Der Muffin ist einfach größer und hat mehr Teig."
+    },
+    {
+      "question": "Kann man Muffins kalorienärmer backen?",
+      "answer": "Ja: Zucker halbieren, Apfelmus statt Butter, Vollkornmehl, Proteinpulver dazu. So wird jeder Muffin deutlich kalorienärmer."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Mini-Muffin?",
+      "answer": "Ein Mini-Muffin (35g) hat ca. 131 kcal. Das ist ein Drittel des Standard-Muffins und eine vertretbare Snack-Größe."
+    }
   ],
-  "related_foods": ["brownie", "donut", "zimtschnecke", "kekse"]
+  "related_foods": [
+    "brownie",
+    "donut",
+    "zimtschnecke",
+    "kekse"
+  ]
 }

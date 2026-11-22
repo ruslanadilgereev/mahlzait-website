@@ -3,48 +3,208 @@
   "name": "Ćevapčići",
   "emoji": "🥩",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2705820 (Meat, ground, NFS), Werte je 100 g",
   "seo": {
     "title": "Ćevapčići Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Ćevapčići? Mit Fladenbrot, Reis oder als Teller – alle Nährwerte und Spar-Tipps."
+    "description": "Wie viele Kalorien haben Ćevapčići? Mit Fladenbrot, Reis oder als Teller: alle Nährwerte und Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 230,
-    "protein_per_100g": 18,
-    "carbs_per_100g": 3,
+    "calories_per_100g": 262,
+    "protein_per_100g": 25.6,
+    "carbs_per_100g": 0,
     "fat_per_100g": 17,
-    "fiber_per_100g": 0.2,
+    "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "6 Ćevapčići"
   },
   "variants": [
-    {"name": "Ćevapčići pur (6 Stück)", "portion_g": 200, "calories": 460, "protein": 36, "carbs": 6, "fat": 34, "tip": "Proteinreich"},
-    {"name": "Ćevapčići mit Fladenbrot", "portion_g": 320, "calories": 650, "protein": 40, "carbs": 48, "fat": 36},
-    {"name": "Ćevapčići-Teller mit Reis", "portion_g": 400, "calories": 720, "protein": 42, "carbs": 65, "fat": 32, "tip": "Volle Mahlzeit"},
-    {"name": "Ćevapčići mit Pommes", "portion_g": 380, "calories": 780, "protein": 38, "carbs": 58, "fat": 44},
-    {"name": "Ćevapčići mit Ajvar", "portion_g": 230, "calories": 500, "protein": 36, "carbs": 12, "fat": 36},
-    {"name": "Ćevapčići klein (4 Stück)", "portion_g": 130, "calories": 300, "protein": 24, "carbs": 4, "fat": 22, "tip": "Kleinere Portion"},
-    {"name": "Ćevapčići vom Hähnchen", "portion_g": 200, "calories": 340, "protein": 38, "carbs": 4, "fat": 20, "tip": "Kalorienärmste Variante"}
+    {
+      "name": "Ćevapčići pur (6 Stück)",
+      "portion_g": 200,
+      "calories": 524,
+      "protein": 51,
+      "carbs": 0,
+      "fat": 34,
+      "tip": "Proteinreich"
+    },
+    {
+      "name": "Ćevapčići mit Fladenbrot",
+      "portion_g": 320,
+      "calories": 854,
+      "protein": 62,
+      "carbs": 67,
+      "fat": 35,
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "slug": "pita",
+          "g": 120
+        }
+      ]
+    },
+    {
+      "name": "Ćevapčići-Teller mit Reis",
+      "portion_g": 400,
+      "calories": 784,
+      "protein": 57,
+      "carbs": 56,
+      "fat": 35,
+      "tip": "Volle Mahlzeit",
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "slug": "reis",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Ćevapčići mit Pommes",
+      "portion_g": 350,
+      "calories": 992,
+      "protein": 56,
+      "carbs": 62,
+      "fat": 56,
+      "basis": [
+        {
+          "g": 200
+        },
+        {
+          "fdcId": 2709461,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Ćevapčići klein (4 Stück)",
+      "portion_g": 130,
+      "calories": 341,
+      "protein": 33,
+      "carbs": 0,
+      "fat": 22,
+      "tip": "Kleinere Portion"
+    },
+    {
+      "name": "Ćevapčići vom Hähnchen",
+      "portion_g": 200,
+      "calories": 402,
+      "protein": 54,
+      "carbs": 0,
+      "fat": 21,
+      "tip": "Kalorienärmste Variante",
+      "basis": [
+        {
+          "fdcId": 2706091,
+          "g": 200
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Bratwurst", "calories": 370, "emoji": "🌭"},
-    {"name": "Frikadellen (2 Stück)", "calories": 420, "emoji": "🥩"},
-    {"name": "Gyros", "calories": 450, "emoji": "🥩"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"}
+    {
+      "name": "Bratwurst",
+      "calories": 500,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst"
+        }
+      ]
+    },
+    {
+      "name": "Frikadelle (1 Stück)",
+      "calories": 294,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "frikadellen"
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Hähnchen-Ćevapčići probieren", "text": "Ćevapčići vom Hähnchen haben ca. 120 kcal weniger als die klassische Rind/Lamm-Variante.", "icon": "🍗"},
-    {"title": "Salat statt Pommes", "text": "Ćevapčići mit Salat statt Pommes spart ca. 250 kcal und liefert mehr Vitamine.", "icon": "🥗"},
-    {"title": "Ajvar als Sauce", "text": "Ajvar hat nur ca. 40 kcal pro Portion – deutlich weniger als Tzatziki (80 kcal) oder Mayo (200 kcal).", "icon": "🌶️"},
-    {"title": "Grillen statt braten", "text": "Gegrillte Ćevapčići haben weniger Fett als in der Pfanne gebratene, da das Fett abtropft.", "icon": "🔥"},
-    {"title": "4 statt 6 Stück", "text": "4 Ćevapčići reichen mit einer guten Beilage als Mahlzeit und sparen ca. 160 kcal.", "icon": "📏"}
+    {
+      "title": "Hähnchen-Ćevapčići probieren",
+      "text": "Ćevapčići vom Hähnchen haben ca. 122 kcal weniger als die klassische Variante aus Hackfleisch (je 6 Stück, 200g).",
+      "icon": "🍗"
+    },
+    {
+      "title": "Salat statt Pommes",
+      "text": "Salat statt Pommes spart den Großteil der rund 468 kcal einer Portion Pommes (150g) und liefert mehr Vitamine.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Ajvar als Sauce",
+      "text": "Ajvar aus Paprika ist eine deutlich leichtere Sauce als Mayo.",
+      "icon": "🌶️"
+    },
+    {
+      "title": "Grillen statt braten",
+      "text": "Gegrillte Ćevapčići haben weniger Fett als in der Pfanne gebratene, da das Fett abtropft.",
+      "icon": "🔥"
+    },
+    {
+      "title": "4 statt 6 Stück",
+      "text": "4 Ćevapčići reichen mit einer guten Beilage als Mahlzeit und sparen ca. 183 kcal.",
+      "icon": "📏"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Ćevapčići?", "answer": "6 Ćevapčići (200g) haben ca. 460 kcal pur. Mit Fladenbrot ca. 650 kcal, mit Pommes ca. 780 kcal."},
-    {"question": "Sind Ćevapčići zum Abnehmen geeignet?", "answer": "Ćevapčići sind proteinreich (18g/100g), aber auch fettreich (17g/100g). 4 Stück mit Salat (ca. 380 kcal) passen in eine Diät."},
-    {"question": "Wie viel Protein haben Ćevapčići?", "answer": "6 Ćevapčići liefern ca. 36g Protein – eine der besten Fast-Food-Proteinquellen überhaupt."},
-    {"question": "Was hat weniger Kalorien: Ćevapčići oder Bratwurst?", "answer": "6 Ćevapčići (460 kcal) haben etwas mehr Kalorien als eine Bratwurst (370 kcal), liefern aber auch deutlich mehr Protein."},
-    {"question": "Woraus bestehen Ćevapčići?", "answer": "Ćevapčići sind gegrillte Röllchen aus Hackfleisch (meist Rind/Lamm-Mischung) mit Knoblauch und Gewürzen. Sie stammen aus der Balkanküche."},
-    {"question": "Wie viel Fett haben Ćevapčići?", "answer": "6 Ćevapčići enthalten ca. 34g Fett. Hähnchen-Ćevapčići haben mit ca. 20g deutlich weniger Fett."}
+    {
+      "question": "Wie viele Kalorien haben Ćevapčići?",
+      "answer": "6 Ćevapčići (200g) haben ca. 524 kcal pur. Mit Fladenbrot ca. 854 kcal, mit Pommes ca. 992 kcal."
+    },
+    {
+      "question": "Sind Ćevapčići zum Abnehmen geeignet?",
+      "answer": "Ćevapčići sind proteinreich (26g/100g), aber auch fettreich (17g/100g). 4 Stück (ca. 341 kcal) mit Salat passen in eine Diät."
+    },
+    {
+      "question": "Wie viel Protein haben Ćevapčići?",
+      "answer": "6 Ćevapčići liefern ca. 51g Protein, eine der besten Fast-Food-Proteinquellen überhaupt."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Ćevapčići oder Bratwurst?",
+      "answer": "6 Ćevapčići (524 kcal) haben etwas mehr Kalorien als eine Bratwurst (500 kcal), liefern aber auch deutlich mehr Protein."
+    },
+    {
+      "question": "Woraus bestehen Ćevapčići?",
+      "answer": "Ćevapčići sind gegrillte Röllchen aus Hackfleisch (meist Rind/Lamm-Mischung) mit Knoblauch und Gewürzen. Sie stammen aus der Balkanküche."
+    },
+    {
+      "question": "Wie viel Fett haben Ćevapčići?",
+      "answer": "6 Ćevapčići enthalten ca. 34g Fett. Hähnchen-Ćevapčići haben mit ca. 21g deutlich weniger Fett."
+    }
   ],
-  "related_foods": ["gyros", "frikadellen", "bratwurst", "doener-box"]
+  "related_foods": [
+    "gyros",
+    "frikadellen",
+    "bratwurst",
+    "doener-box"
+  ]
 }

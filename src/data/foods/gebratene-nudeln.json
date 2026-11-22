@@ -3,48 +3,200 @@
   "name": "Gebratene Nudeln",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708798 (Lo mein, NFS), Werte je 100 g",
   "seo": {
     "title": "Gebratene Nudeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben gebratene Nudeln? Nährwerte für Asia-Nudeln, Chow Mein & mehr. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 150,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 5,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 121,
+    "protein_per_100g": 4.8,
+    "carbs_per_100g": 20.2,
+    "fat_per_100g": 2.4,
+    "fiber_per_100g": 1.3,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    {"name": "Gebratene Nudeln mit Gemüse", "portion_g": 350, "calories": 455, "protein": 14, "carbs": 64, "fat": 16, "tip": "Standard-Variante"},
-    {"name": "Mit Hähnchen", "portion_g": 400, "calories": 540, "protein": 28, "carbs": 62, "fat": 20, "tip": "Proteinreich"},
-    {"name": "Mit Garnelen", "portion_g": 400, "calories": 490, "protein": 26, "carbs": 60, "fat": 16},
-    {"name": "Chow Mein", "portion_g": 350, "calories": 480, "protein": 18, "carbs": 58, "fat": 20},
-    {"name": "Bami Goreng", "portion_g": 350, "calories": 510, "protein": 20, "carbs": 60, "fat": 22},
-    {"name": "Glasnudeln gebraten", "portion_g": 300, "calories": 380, "protein": 12, "carbs": 56, "fat": 12, "tip": "Leichtere Alternative"},
-    {"name": "Mit Ei", "portion_g": 350, "calories": 500, "protein": 22, "carbs": 60, "fat": 20}
+    {
+      "name": "Gebratene Nudeln mit Gemüse",
+      "portion_g": 350,
+      "calories": 424,
+      "protein": 17,
+      "carbs": 71,
+      "fat": 8,
+      "tip": "Standard-Variante",
+      "basis": [
+        {
+          "fdcId": 2708799,
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Mit Hähnchen",
+      "portion_g": 400,
+      "calories": 520,
+      "protein": 37,
+      "carbs": 65,
+      "fat": 13,
+      "tip": "Proteinreich",
+      "basis": [
+        {
+          "fdcId": 2708803,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Mit Garnelen",
+      "portion_g": 400,
+      "calories": 484,
+      "protein": 34,
+      "carbs": 65,
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 2708800,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Chow Mein",
+      "portion_g": 350,
+      "calories": 459,
+      "protein": 35,
+      "carbs": 39,
+      "fat": 19,
+      "basis": [
+        {
+          "fdcId": 2706722,
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Mit Ei",
+      "portion_g": 350,
+      "calories": 438,
+      "protein": 19,
+      "carbs": 61,
+      "fat": 13,
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 172187,
+          "g": 50
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Pad Thai", "calories": 480, "emoji": "🍜"},
-    {"name": "Fried Rice", "calories": 420, "emoji": "🍚"},
-    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"},
-    {"name": "Wok-Gemüse", "calories": 217, "emoji": "🥦"}
+    {
+      "name": "Pad Thai (1 Teller, 400g)",
+      "calories": 616,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "pad-thai",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Fried Rice (1 Teller, 350g)",
+      "calories": 609,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "fried-rice",
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Wok-Gemüse (1 Portion, 350g)",
+      "calories": 249,
+      "emoji": "🥦",
+      "basis": [
+        {
+          "slug": "wok-gemuese",
+          "g": 350
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Weniger Öl verwenden", "text": "Im Restaurant werden gebratene Nudeln oft in viel Öl gebraten. Zu Hause reicht 1 EL für den Wok.", "icon": "🫒"},
-    {"title": "Vollkorn- oder Reisnudeln", "text": "Reisnudeln haben ähnliche Kalorien wie Weizennudeln, aber Glasnudeln sind leichter (330 kcal/100g trocken).", "icon": "🍝"},
-    {"title": "Sojasauce statt Austernsoße", "text": "Sojasauce hat weniger Kalorien als Austernsoße. Für Geschmack: Ingwer und Knoblauch dazugeben.", "icon": "🥢"},
-    {"title": "Proteinquelle hinzufügen", "text": "Ohne Fleisch fehlen gebratenen Nudeln Proteine. 150g Hähnchen oder 2 Eier machen die Mahlzeit komplett.", "icon": "💪"},
-    {"title": "Gemüse-Anteil erhöhen", "text": "50% Gemüse und 50% Nudeln senken die Kaloriendichte deutlich und machen satter.", "icon": "🥕"}
+    {
+      "title": "Weniger Öl verwenden",
+      "text": "Im Restaurant werden gebratene Nudeln oft in viel Öl gebraten. Zu Hause reicht 1 EL für den Wok.",
+      "icon": "🫒"
+    },
+    {
+      "title": "Vollkorn- oder Reisnudeln",
+      "text": "Reisnudeln haben ähnliche Kalorien wie Weizennudeln, Glasnudeln sind etwas leichter.",
+      "icon": "🍝"
+    },
+    {
+      "title": "Sojasauce statt Austernsoße",
+      "text": "Sojasauce hat weniger Kalorien als Austernsoße. Für Geschmack: Ingwer und Knoblauch dazugeben.",
+      "icon": "🥢"
+    },
+    {
+      "title": "Proteinquelle hinzufügen",
+      "text": "Ohne Fleisch fehlen gebratenen Nudeln Proteine. 150g Hähnchen oder 2 Eier machen die Mahlzeit komplett.",
+      "icon": "💪"
+    },
+    {
+      "title": "Gemüse-Anteil erhöhen",
+      "text": "50% Gemüse und 50% Nudeln senken die Kaloriendichte deutlich und machen satter.",
+      "icon": "🥕"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben gebratene Nudeln?", "answer": "Ein Teller gebratene Nudeln (350g) hat ca. 455 kcal. Mit Hähnchen steigt der Wert auf ca. 540 kcal."},
-    {"question": "Sind gebratene Nudeln kalorienreich?", "answer": "Ja, gebratene Nudeln sind relativ kalorienreich (150 kcal/100g) durch Öl und Sauce. Im Restaurant oft noch mehr."},
-    {"question": "Was hat weniger Kalorien: gebratene Nudeln oder Reis?", "answer": "Gebratene Nudeln (455 kcal/Portion) und Fried Rice (420 kcal) sind ähnlich. Wok-Gemüse ohne Beilage ist deutlich leichter."},
-    {"question": "Wie viel Protein haben gebratene Nudeln?", "answer": "Ohne Fleisch nur ca. 14g Protein. Mit Hähnchen ca. 28g – empfehlenswert für eine ausgewogene Mahlzeit."},
-    {"question": "Kann man gebratene Nudeln beim Abnehmen essen?", "answer": "In moderater Portion ja. Tipp: Mehr Gemüse, weniger Nudeln, wenig Öl und mageres Protein dazu."},
-    {"question": "Wie viele Kalorien haben gebratene Nudeln vom Asiaten?", "answer": "Beim Asia-Imbiss haben gebratene Nudeln oft 550-650 kcal pro Portion, da mehr Öl und süßere Saucen verwendet werden."}
+    {
+      "question": "Wie viele Kalorien haben gebratene Nudeln?",
+      "answer": "Ein Teller gebratene Nudeln (350g) hat ca. 424 kcal. Mit Hähnchen (400g) steigt der Wert auf ca. 520 kcal."
+    },
+    {
+      "question": "Sind gebratene Nudeln kalorienreich?",
+      "answer": "Eher nicht: Laut USDA haben gebratene Nudeln mit Gemüse rund 121 kcal pro 100g. Entscheidend sind die Mengen an Öl und Sauce."
+    },
+    {
+      "question": "Was hat weniger Kalorien: gebratene Nudeln oder Reis?",
+      "answer": "Gebratene Nudeln haben weniger: Ein Teller (350g) kommt auf ca. 424 kcal, Fried Rice (350g) auf ca. 609 kcal. Wok-Gemüse ohne Beilage ist deutlich leichter."
+    },
+    {
+      "question": "Wie viel Protein haben gebratene Nudeln?",
+      "answer": "Ohne Fleisch ca. 17g Protein pro Teller (350g). Mit Hähnchen (400g) ca. 37g, empfehlenswert für eine ausgewogene Mahlzeit."
+    },
+    {
+      "question": "Kann man gebratene Nudeln beim Abnehmen essen?",
+      "answer": "In moderater Portion ja. Tipp: Mehr Gemüse, weniger Nudeln, wenig Öl und mageres Protein dazu."
+    },
+    {
+      "question": "Wie viele Kalorien haben gebratene Nudeln vom Asiaten?",
+      "answer": "Die USDA-Werte stammen aus Restaurant-Portionen: Ein Teller (350g) kommt auf ca. 424 kcal. Mehr Öl und süßere Saucen können den Wert deutlich erhöhen."
+    }
   ],
-  "related_foods": ["pad-thai", "fried-rice", "wok-gemuese", "ramen"]
+  "related_foods": [
+    "pad-thai",
+    "fried-rice",
+    "wok-gemuese",
+    "ramen"
+  ]
 }

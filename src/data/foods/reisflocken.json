@@ -3,9 +3,10 @@
   "name": "Reisflocken",
   "emoji": "🍚",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169756 (Rice, white, long-grain, regular, raw, unenriched), Werte je 100 g",
   "seo": {
     "title": "Reisflocken Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Reisflocken? 360 kcal pro 100g trocken. Nährwerte, Kohlenhydrate & Protein im Überblick plus Tipps zum Kochen und Abnehmen.",
+    "description": "Wie viele Kalorien haben Reisflocken? 365 kcal pro 100g trocken. Nährwerte, Kohlenhydrate & Protein im Überblick plus Tipps zum Kochen und Abnehmen.",
     "keywords": [
       "reisflocken kalorien",
       "reisflocken kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 360,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 78,
-    "fat_per_100g": 1,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 365,
+    "protein_per_100g": 7.1,
+    "carbs_per_100g": 80,
+    "fat_per_100g": 0.7,
+    "fiber_per_100g": 1.3,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Portion (40g trocken)"
   },
@@ -28,75 +29,117 @@
     {
       "name": "1 EL Reisflocken (10g trocken)",
       "portion_g": 10,
-      "calories": 36,
+      "calories": 37,
       "protein": 0.7,
-      "carbs": 7.8,
+      "carbs": 8,
       "fat": 0.1
     },
     {
       "name": "Kleine Portion (30g trocken)",
       "portion_g": 30,
-      "calories": 108,
+      "calories": 110,
       "protein": 2.1,
-      "carbs": 23.4,
-      "fat": 0.3
+      "carbs": 24,
+      "fat": 0.2
     },
     {
       "name": "1 Portion (40g trocken)",
       "portion_g": 40,
-      "calories": 144,
+      "calories": 146,
       "protein": 2.8,
-      "carbs": 31.2,
-      "fat": 0.4,
+      "carbs": 32,
+      "fat": 0.3,
       "tip": "Standard-Portion für einen Brei"
     },
     {
       "name": "Große Portion (60g trocken)",
       "portion_g": 60,
-      "calories": 216,
-      "protein": 4.2,
-      "carbs": 46.8,
-      "fat": 0.6
+      "calories": 219,
+      "protein": 4.3,
+      "carbs": 48,
+      "fat": 0.4
     },
     {
       "name": "Reisflocken-Brei gekocht (250g)",
       "portion_g": 250,
-      "calories": 263,
-      "protein": 5,
-      "carbs": 57,
-      "fat": 0.8,
-      "tip": "Mit Wasser gekocht, ca. 40g trocken aufgequollen"
+      "calories": 146,
+      "protein": 2.8,
+      "carbs": 32,
+      "fat": 0.3,
+      "tip": "Mit Wasser gekocht, ca. 40g trocken aufgequollen",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "fdcId": 173647,
+          "g": 210
+        }
+      ]
     },
     {
       "name": "100g gekocht (mit Wasser)",
       "portion_g": 100,
-      "calories": 105,
-      "protein": 2,
-      "carbs": 23,
-      "fat": 0.3,
-      "tip": "Quellt beim Kochen stark auf"
+      "calories": 58,
+      "protein": 1.1,
+      "carbs": 12.8,
+      "fat": 0.1,
+      "tip": "Quellt beim Kochen stark auf",
+      "basis": [
+        {
+          "g": 16
+        },
+        {
+          "fdcId": 173647,
+          "g": 84
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Haferflocken (40g)",
-      "calories": 150,
-      "emoji": "🥣"
+      "calories": 152,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "fdcId": 173904,
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Cornflakes (40g)",
-      "calories": 150,
-      "emoji": "🥣"
+      "calories": 146,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Milchreis (40g roh)",
-      "calories": 137,
-      "emoji": "🍚"
+      "calories": 143,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 168931,
+          "g": 40
+        }
+      ]
     },
     {
       "name": "Reiswaffeln (40g)",
-      "calories": 152,
-      "emoji": "🍘"
+      "calories": 155,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "fdcId": 170250,
+          "g": 40
+        }
+      ]
     }
   ],
   "tips": [
@@ -112,12 +155,12 @@
     },
     {
       "title": "Portion abwiegen lohnt sich",
-      "text": "Trocken haben Reisflocken mit 360 kcal pro 100g eine hohe Energiedichte. Eine abgewogene Portion von 40g (144 kcal) hilft, beim Frühstück nicht zu viel zu erwischen.",
+      "text": "Trocken haben Reisflocken mit 365 kcal pro 100g eine hohe Energiedichte. Eine abgewogene Portion von 40g (146 kcal) hilft, beim Frühstück nicht zu viel zu erwischen.",
       "icon": "⚖️"
     },
     {
       "title": "Mit Wasser statt Milch sparen",
-      "text": "Gekocht mit Wasser hat ein Reisflocken-Brei nur rund 105 kcal pro 100g. Mit Vollmilch und Zucker steigt der Wert deutlich, das ist beim Abnehmen wichtig.",
+      "text": "Gekocht mit Wasser hat ein Reisflocken-Brei nur rund 58 kcal pro 100g. Mit Vollmilch und Zucker steigt der Wert deutlich, das ist beim Abnehmen wichtig.",
       "icon": "💧"
     },
     {
@@ -129,15 +172,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Reisflocken?",
-      "answer": "Trockene Reisflocken haben rund 360 kcal pro 100g. Eine typische Portion von 40g für einen Brei liefert etwa 144 kcal."
+      "answer": "Trockene Reisflocken haben rund 365 kcal pro 100g. Eine typische Portion von 40g für einen Brei liefert etwa 146 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein gekochter Reisflocken-Brei?",
-      "answer": "Mit Wasser gekocht hat ein Reisflocken-Brei nur etwa 105 kcal pro 100g, da die Flocken stark aufquellen. Eine Schüssel von 250g kommt auf rund 263 kcal."
+      "answer": "Mit Wasser gekocht hat ein Reisflocken-Brei nur etwa 58 kcal pro 100g, da die Flocken stark aufquellen. Eine Schüssel von 250g (aus 40g trocken) kommt auf rund 146 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Reisflocken?",
-      "answer": "Reisflocken bestehen überwiegend aus Kohlenhydraten: etwa 78g pro 100g im trockenen Zustand. Eine 40g-Portion enthält rund 31g Kohlenhydrate."
+      "answer": "Reisflocken bestehen überwiegend aus Kohlenhydraten: etwa 80g pro 100g im trockenen Zustand. Eine 40g-Portion enthält rund 32g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein haben Reisflocken?",

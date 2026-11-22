@@ -3,9 +3,10 @@
   "name": "Kotelett",
   "emoji": "🍖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 168238 (Pork, fresh, loin, center loin (chops), bone-in, separable lean and fat, raw), Werte je 100 g",
   "seo": {
     "title": "Kotelett Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Kotelett? Ein Schweinekotelett (180g, roh) hat ca. 382 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Kotelett? Ein Schweinekotelett (180g, roh) hat ca. 306 kcal. Nährwerte pro 100g & Portion, Varianten und Tipps im Überblick.",
     "keywords": [
       "kotelett kalorien",
       "kotelett kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 212,
-    "protein_per_100g": 20.5,
+    "calories_per_100g": 170,
+    "protein_per_100g": 20.7,
     "carbs_per_100g": 0,
-    "fat_per_100g": 14,
+    "fat_per_100g": 9,
     "fiber_per_100g": 0,
     "typical_portion_g": 180,
     "typical_portion_name": "1 Kotelett (mittel, roh)"
@@ -28,89 +29,131 @@
     {
       "name": "Kotelett klein (120g, roh)",
       "portion_g": 120,
-      "calories": 254,
+      "calories": 204,
       "protein": 25,
       "carbs": 0,
-      "fat": 17
+      "fat": 11
     },
     {
       "name": "Kotelett mittel (180g, roh)",
       "portion_g": 180,
-      "calories": 382,
+      "calories": 306,
       "protein": 37,
       "carbs": 0,
-      "fat": 25,
+      "fat": 16,
       "tip": "Standard-Portion"
     },
     {
       "name": "Kotelett groß (250g, roh)",
       "portion_g": 250,
-      "calories": 530,
-      "protein": 51,
+      "calories": 425,
+      "protein": 52,
       "carbs": 0,
-      "fat": 35
+      "fat": 23
     },
     {
       "name": "Kotelett 100g (roh)",
       "portion_g": 100,
-      "calories": 212,
+      "calories": 170,
       "protein": 21,
       "carbs": 0,
-      "fat": 14
+      "fat": 9
     },
     {
       "name": "Kotelett gebraten (150g)",
       "portion_g": 150,
-      "calories": 375,
-      "protein": 40,
+      "calories": 357,
+      "protein": 41,
       "carbs": 0,
-      "fat": 24,
-      "tip": "Garverlust konzentriert Protein und Kalorien"
+      "fat": 20,
+      "tip": "Garverlust konzentriert Protein und Kalorien",
+      "basis": [
+        {
+          "fdcId": 168292,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Kotelett paniert (180g)",
       "portion_g": 180,
-      "calories": 522,
-      "protein": 40,
-      "carbs": 22,
-      "fat": 31,
-      "tip": "Panade und Bratfett erhöhen die Kalorien deutlich"
+      "calories": 412,
+      "protein": 45,
+      "carbs": 13,
+      "fat": 19,
+      "tip": "Panade und Bratfett erhöhen die Kalorien deutlich",
+      "basis": [
+        {
+          "fdcId": 2705870,
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Lammkotelett (100g, roh)",
       "portion_g": 100,
-      "calories": 230,
-      "protein": 19,
+      "calories": 298,
+      "protein": 15,
       "carbs": 0,
-      "fat": 17
+      "fat": 26,
+      "basis": [
+        {
+          "fdcId": 172517,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Hähnchenbrust",
+      "name": "Hähnchenbrust (180g)",
       "calories": 297,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 180
+        }
+      ]
     },
     {
-      "name": "Schnitzel (paniert)",
-      "calories": 450,
-      "emoji": "🍖"
+      "name": "Wiener Schnitzel (paniert, 180g)",
+      "calories": 428,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "schnitzel",
+          "g": 180
+        }
+      ]
     },
     {
-      "name": "Putenschnitzel",
-      "calories": 198,
-      "emoji": "🦃"
+      "name": "Putenschnitzel (180g)",
+      "calories": 245,
+      "emoji": "🦃",
+      "basis": [
+        {
+          "slug": "putenschnitzel",
+          "g": 180
+        }
+      ]
     },
     {
-      "name": "Rindersteak",
-      "calories": 396,
-      "emoji": "🥩"
+      "name": "Rindersteak (180g)",
+      "calories": 412,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "steak",
+          "g": 180
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Proteinreich und kohlenhydratfrei",
-      "text": "Ein Kotelett liefert pro 100g rund 20g Eiweiß und praktisch keine Kohlenhydrate. Damit eignet es sich gut für eine eiweißbetonte oder Low-Carb-Ernährung.",
+      "text": "Ein Kotelett liefert pro 100g rund 21g Eiweiß und praktisch keine Kohlenhydrate. Damit eignet es sich gut für eine eiweißbetonte oder Low-Carb-Ernährung.",
       "icon": "💪"
     },
     {
@@ -137,19 +180,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Kotelett?",
-      "answer": "Ein mittelgroßes Schweinekotelett (180g, roh) hat etwa 382 kcal. Pro 100g sind es rund 212 kcal."
+      "answer": "Ein mittelgroßes Schweinekotelett (180g, roh) hat etwa 306 kcal. Pro 100g sind es rund 170 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Kotelett pro 100g?",
-      "answer": "100g rohes Schweinekotelett enthalten ca. 212 kcal, 20,5g Eiweiß und 14g Fett. Gebraten steigt der Wert durch Wasserverlust auf etwa 250 kcal pro 100g."
+      "answer": "100g rohes Schweinekotelett enthalten ca. 170 kcal, 20,7g Eiweiß und 9g Fett. Gebraten steigt der Wert durch Wasserverlust auf etwa 238 kcal pro 100g."
     },
     {
       "question": "Wie viel Protein hat ein Kotelett?",
-      "answer": "Ein Kotelett liefert pro 100g rund 20,5g Eiweiß. Eine 180g-Portion deckt mit etwa 37g einen großen Teil des täglichen Eiweißbedarfs."
+      "answer": "Ein Kotelett liefert pro 100g rund 20,7g Eiweiß. Eine 180g-Portion deckt mit etwa 37g einen großen Teil des täglichen Eiweißbedarfs."
     },
     {
       "question": "Hat ein Kotelett Kohlenhydrate?",
-      "answer": "Naturbelassenes Kotelett enthält praktisch keine Kohlenhydrate. Erst durch Panade kommen pro Portion rund 20g Kohlenhydrate hinzu."
+      "answer": "Naturbelassenes Kotelett enthält praktisch keine Kohlenhydrate. Erst durch Panade kommen pro Portion rund 13g Kohlenhydrate hinzu."
     },
     {
       "question": "Ist Kotelett zum Abnehmen geeignet?",

@@ -3,9 +3,10 @@
   "name": "Parmaschinken",
   "emoji": "🍖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2705879 (Ham, prosciutto), Werte je 100 g",
   "seo": {
     "title": "Parmaschinken Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Parmaschinken? 245 kcal pro 100g, eine Scheibe nur ca. 37 kcal. Nährwerte, Protein & Tipps zum Abnehmen im Überblick.",
+    "description": "Wie viele Kalorien hat Parmaschinken? 195 kcal pro 100g, eine Scheibe nur ca. 29 kcal. Nährwerte, Protein & Tipps zum Abnehmen im Überblick.",
     "keywords": [
       "parmaschinken kalorien",
       "parmaschinken kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 245,
-    "protein_per_100g": 27,
-    "carbs_per_100g": 0.5,
-    "fat_per_100g": 15,
+    "calories_per_100g": 195,
+    "protein_per_100g": 27.8,
+    "carbs_per_100g": 0.3,
+    "fat_per_100g": 8.3,
     "fiber_per_100g": 0,
     "typical_portion_g": 30,
     "typical_portion_name": "2 Scheiben (30g)"
@@ -29,85 +30,118 @@
     {
       "name": "1 Scheibe (15g)",
       "portion_g": 15,
-      "calories": 37,
-      "protein": 4,
-      "carbs": 0.1,
-      "fat": 2.3,
+      "calories": 29,
+      "protein": 4.2,
+      "carbs": 0,
+      "fat": 1.2,
       "tip": "Hauchdünn aufgeschnitten"
     },
     {
       "name": "2 Scheiben (30g)",
       "portion_g": 30,
-      "calories": 74,
-      "protein": 8.1,
-      "carbs": 0.2,
-      "fat": 4.5,
+      "calories": 59,
+      "protein": 8.3,
+      "carbs": 0.1,
+      "fat": 2.5,
       "tip": "Standard-Portion"
     },
     {
       "name": "Antipasti-Portion (50g)",
       "portion_g": 50,
-      "calories": 123,
-      "protein": 13.5,
-      "carbs": 0.3,
-      "fat": 7.5
+      "calories": 98,
+      "protein": 13.9,
+      "carbs": 0.2,
+      "fat": 4.2
     },
     {
       "name": "Packung (70g)",
       "portion_g": 70,
-      "calories": 172,
-      "protein": 18.9,
-      "carbs": 0.4,
-      "fat": 10.5
+      "calories": 137,
+      "protein": 19.5,
+      "carbs": 0.2,
+      "fat": 5.8
     },
     {
-      "name": "Melone mit Schinken (80g Schinken)",
-      "portion_g": 80,
-      "calories": 196,
-      "protein": 21.6,
-      "carbs": 0.4,
-      "fat": 12
+      "name": "Melone mit Schinken (80g Schinken + 160g Melone)",
+      "portion_g": 240,
+      "calories": 214,
+      "protein": 23,
+      "carbs": 14.8,
+      "fat": 6.8,
+      "basis": [
+        {
+          "g": 80
+        },
+        {
+          "slug": "melone",
+          "g": 160
+        }
+      ]
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 245,
-      "protein": 27,
-      "carbs": 0.5,
-      "fat": 15
+      "calories": 195,
+      "protein": 27.8,
+      "carbs": 0.3,
+      "fat": 8.3
     }
   ],
   "comparison": [
     {
       "name": "Schinken (gekocht, 30g)",
-      "calories": 33,
-      "emoji": "🍖"
+      "calories": 32,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "fdcId": 173863,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Mortadella (30g)",
-      "calories": 87,
-      "emoji": "🥓"
+      "calories": 93,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "slug": "mortadella",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Salami (30g)",
-      "calories": 111,
-      "emoji": "🍕"
+      "calories": 113,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 174582,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Speck (30g)",
-      "calories": 162,
-      "emoji": "🥓"
+      "calories": 118,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "fdcId": 168277,
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich und kohlenhydratarm",
-      "text": "Parmaschinken liefert rund 27g Protein pro 100g bei nahezu null Kohlenhydraten und passt damit gut in eine Low-Carb- oder eiweißbetonte Ernährung.",
+      "text": "Parmaschinken liefert rund 28g Protein pro 100g bei nahezu null Kohlenhydraten und passt damit gut in eine Low-Carb- oder eiweißbetonte Ernährung.",
       "icon": "💪"
     },
     {
       "title": "Dünn aufschneiden spart Kalorien",
-      "text": "Eine hauchdünne Scheibe wiegt nur etwa 15g und hat rund 37 kcal. Wer dünn schneidet, kann viel Geschmack mit wenig Kalorien genießen.",
+      "text": "Eine hauchdünne Scheibe wiegt nur etwa 15g und hat rund 29 kcal. Wer dünn schneidet, kann viel Geschmack mit wenig Kalorien genießen.",
       "icon": "🔪"
     },
     {
@@ -117,7 +151,7 @@
     },
     {
       "title": "Klassiker: Melone mit Schinken",
-      "text": "Mit Honigmelone kombiniert ergibt Parmaschinken eine leichte Vorspeise. 80g Schinken plus Melone bleiben unter 250 kcal.",
+      "text": "Mit Honigmelone kombiniert ergibt Parmaschinken eine leichte Vorspeise. 80g Schinken plus eine Melonenspalte (160g) kommen auf rund 214 kcal und bleiben damit unter 250 kcal.",
       "icon": "🍈"
     },
     {
@@ -129,19 +163,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Parmaschinken?",
-      "answer": "Parmaschinken hat etwa 245 kcal pro 100g. Eine dünne Scheibe (15g) kommt auf rund 37 kcal, zwei Scheiben (30g) auf etwa 74 kcal."
+      "answer": "Parmaschinken hat etwa 195 kcal pro 100g. Eine dünne Scheibe (15g) kommt auf rund 29 kcal, zwei Scheiben (30g) auf etwa 59 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Parmaschinken?",
-      "answer": "Parmaschinken ist sehr eiweißreich: Pro 100g liefert er rund 27g Protein. Damit zählt er zu den proteinreichsten Aufschnitt-Sorten."
+      "answer": "Parmaschinken ist sehr eiweißreich: Pro 100g liefert er rund 28g Protein. Damit zählt er zu den proteinreichsten Aufschnitt-Sorten."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Parmaschinken?",
-      "answer": "Parmaschinken enthält praktisch keine Kohlenhydrate, nur etwa 0,5g pro 100g. Er ist damit ideal für eine Low-Carb-Ernährung."
+      "answer": "Parmaschinken enthält praktisch keine Kohlenhydrate, nur etwa 0,3g pro 100g. Er ist damit ideal für eine Low-Carb-Ernährung."
     },
     {
       "question": "Ist Parmaschinken zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Er ist eiweißreich, kohlenhydratarm und sättigt gut. Allerdings ist der Fett- und Salzgehalt relativ hoch, daher besser sparsam dosieren."
+      "answer": "In Maßen ja: Er ist eiweißreich, kohlenhydratarm und sättigt gut. Allerdings ist der Salzgehalt hoch, daher besser sparsam dosieren."
     },
     {
       "question": "Ist Parmaschinken gesund?",
@@ -149,7 +183,7 @@
     },
     {
       "question": "Wie viele Kalorien hat eine Scheibe Parmaschinken?",
-      "answer": "Eine hauchdünne Scheibe Parmaschinken wiegt etwa 15g und hat rund 37 kcal. Etwas dicker geschnitten (ca. 20g) sind es rund 49 kcal."
+      "answer": "Eine hauchdünne Scheibe Parmaschinken wiegt etwa 15g und hat rund 29 kcal. Etwas dicker geschnitten (ca. 20g) sind es rund 39 kcal."
     }
   ],
   "related_foods": [

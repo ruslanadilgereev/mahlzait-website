@@ -3,9 +3,10 @@
   "name": "Instant Nudeln",
   "emoji": "🍜",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171177 (Soup, ramen noodle, any flavor, dry), Werte je 100 g",
   "seo": {
     "title": "Instant Nudeln Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Instant Nudeln? Eine Packung (85g) hat ca. 389 kcal. Nährwerte pro 100g & Portion, Varianten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien haben Instant Nudeln? Eine Packung (85g) hat ca. 374 kcal. Nährwerte pro 100g & Portion, Varianten im Vergleich + Tipps.",
     "keywords": [
       "instant nudeln kalorien",
       "instant noodles kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 458,
-    "protein_per_100g": 9.4,
-    "carbs_per_100g": 65,
+    "calories_per_100g": 440,
+    "protein_per_100g": 10.2,
+    "carbs_per_100g": 60.3,
     "fat_per_100g": 17.6,
-    "fiber_per_100g": 3.3,
+    "fiber_per_100g": 2.9,
     "typical_portion_g": 85,
     "typical_portion_name": "1 Packung (85g, trocken)"
   },
@@ -29,86 +30,114 @@
     {
       "name": "1 Becher klein (60g, trocken)",
       "portion_g": 60,
-      "calories": 275,
+      "calories": 264,
       "protein": 6,
-      "carbs": 39,
+      "carbs": 36,
       "fat": 11
     },
     {
-      "name": "1 Becher Yum Yum (70g, trocken)",
+      "name": "1 Becher (70g, trocken)",
       "portion_g": 70,
-      "calories": 321,
+      "calories": 308,
       "protein": 7,
-      "carbs": 46,
+      "carbs": 42,
       "fat": 12
     },
     {
       "name": "1 Packung (85g, trocken)",
       "portion_g": 85,
-      "calories": 389,
-      "protein": 8,
-      "carbs": 55,
+      "calories": 374,
+      "protein": 9,
+      "carbs": 51,
       "fat": 15,
       "tip": "Standard-Tüte"
     },
     {
       "name": "Große Packung (100g, trocken)",
       "portion_g": 100,
-      "calories": 458,
-      "protein": 9,
-      "carbs": 65,
+      "calories": 440,
+      "protein": 10,
+      "carbs": 60,
       "fat": 18
     },
     {
-      "name": "Luftgetrocknet, nicht frittiert (100g)",
+      "name": "Fett- und salzreduzierte Sorte (100g)",
       "portion_g": 100,
       "calories": 350,
       "protein": 11,
-      "carbs": 72,
+      "carbs": 71,
       "fat": 3,
-      "tip": "Deutlich fettärmer"
+      "tip": "Deutlich fettärmer",
+      "basis": [
+        {
+          "fdcId": 171822,
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Zubereitete Schale aus 85g-Tüte",
+      "name": "Zubereitete Schale aus 85g-Tüte (85g + 315ml Wasser)",
       "portion_g": 400,
-      "calories": 389,
-      "protein": 8,
-      "carbs": 55,
+      "calories": 374,
+      "protein": 9,
+      "carbs": 51,
       "fat": 15,
-      "tip": "Wasser fügt keine Kalorien hinzu"
+      "tip": "Wasser fügt keine Kalorien hinzu",
+      "basis": [
+        {
+          "g": 85
+        },
+        {
+          "fdcId": 173647,
+          "g": 315
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Instant Nudeln (85g Pck)",
-      "calories": 389,
-      "emoji": "🍜"
-    },
-    {
       "name": "Spaghetti gekocht (200g)",
-      "calories": 314,
-      "emoji": "🍝"
+      "calories": 316,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Mie-Nudeln gekocht (200g)",
       "calories": 276,
-      "emoji": "🍜"
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "mie-nudeln",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Ramen-Schale fertig (1 Portion)",
-      "calories": 450,
-      "emoji": "🍲"
+      "name": "Ramen-Schale fertig (1 Schüssel, 550g)",
+      "calories": 699,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "ramen",
+          "g": 550
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Das Fett steckt im Frittieren",
-      "text": "Klassische Instant-Nudeln werden frittiert und kommen so auf rund 458 kcal pro 100g. Luftgetrocknete Varianten haben oft nur etwa 350 kcal und deutlich weniger Fett.",
+      "text": "Klassische Instant-Nudeln werden frittiert und kommen so auf rund 440 kcal pro 100g. Fett- und salzreduzierte Sorten haben nur rund 350 kcal und deutlich weniger Fett.",
       "icon": "🍳"
     },
     {
       "title": "Würzpulver sparsam nutzen",
-      "text": "Das Würzpulver ist sehr salzreich (oft 4-6g Salz pro Packung). Nur die halbe Tüte verwenden senkt den Salzgehalt spürbar, ohne dass viel Geschmack verloren geht.",
+      "text": "Das Würzpulver ist sehr salzreich: Eine 85g-Packung enthält samt Würzpulver rund 1,6g Natrium, das sind etwa 4g Salz. Nur die halbe Tüte verwenden senkt den Salzgehalt spürbar, ohne dass viel Geschmack verloren geht.",
       "icon": "🧂"
     },
     {
@@ -130,23 +159,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Instant Nudeln?",
-      "answer": "Eine Standard-Packung Instant Nudeln (85g, trocken) hat etwa 389 kcal. Pro 100g sind es rund 458 kcal, da die Nudeln meist frittiert sind."
+      "answer": "Eine Standard-Packung Instant Nudeln (85g, trocken) hat etwa 374 kcal. Pro 100g sind es rund 440 kcal, da die Nudeln meist frittiert sind."
     },
     {
       "question": "Wie viele Kalorien hat eine zubereitete Schale Instant Nudeln?",
-      "answer": "Eine fertige Schale aus einer 85g-Tüte hat ebenfalls etwa 389 kcal. Das aufgegossene Wasser enthält keine Kalorien, die Energie steckt allein in Nudeln und Würzpulver."
+      "answer": "Eine fertige Schale aus einer 85g-Tüte hat ebenfalls etwa 374 kcal. Das aufgegossene Wasser enthält keine Kalorien, die Energie steckt allein in Nudeln und Würzpulver."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Instant Nudeln?",
-      "answer": "Instant Nudeln enthalten rund 65g Kohlenhydrate pro 100g. Eine 85g-Packung liefert damit etwa 55g Kohlenhydrate."
+      "answer": "Instant Nudeln enthalten rund 60g Kohlenhydrate pro 100g. Eine 85g-Packung liefert damit etwa 51g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß haben Instant Nudeln?",
-      "answer": "Mit etwa 9,4g Protein pro 100g sind Instant Nudeln eher eiweißarm. Eine Packung (85g) liefert nur rund 8g Eiweiß."
+      "answer": "Mit etwa 10g Protein pro 100g sind Instant Nudeln eher eiweißarm. Eine Packung (85g) liefert nur rund 9g Eiweiß."
     },
     {
       "question": "Sind Instant Nudeln zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit rund 458 kcal pro 100g sind sie kalorien- und fettreich, aber arm an Eiweiß und Ballaststoffen, sodass sie kaum sättigen. Mit Gemüse und Ei aufgewertet passen sie aber gelegentlich in eine Diät."
+      "answer": "Nur bedingt. Mit rund 440 kcal pro 100g sind sie kalorien- und fettreich, aber arm an Eiweiß und Ballaststoffen, sodass sie kaum sättigen. Mit Gemüse und Ei aufgewertet passen sie aber gelegentlich in eine Diät."
     },
     {
       "question": "Sind Instant Nudeln gesund?",

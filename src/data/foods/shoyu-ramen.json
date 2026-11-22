@@ -3,9 +3,10 @@
   "name": "Shoyu Ramen",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2709153 (Ramen bowl, NFS), Werte je 100 g",
   "seo": {
     "title": "Shoyu Ramen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Shoyu Ramen? Eine mittlere Schale (550g) hat ca. 300 kcal. Nährwerte pro 100g & Portion, Kohlenhydrate, Protein und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Shoyu Ramen? Eine mittlere Schale (550g) hat ca. 699 kcal. Nährwerte pro 100g & Portion, Kohlenhydrate, Protein und Diät-Tipps.",
     "keywords": [
       "shoyu ramen kcal",
       "shoyu ramen kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 55,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 7,
-    "fat_per_100g": 1.5,
-    "fiber_per_100g": 0.7,
+    "calories_per_100g": 127,
+    "protein_per_100g": 7.1,
+    "carbs_per_100g": 14,
+    "fat_per_100g": 4.6,
+    "fiber_per_100g": 0.9,
     "typical_portion_g": 550,
     "typical_portion_name": "1 Schale (mittel)"
   },
@@ -29,90 +30,106 @@
     {
       "name": "100g Shoyu Ramen",
       "portion_g": 100,
-      "calories": 55,
-      "protein": 3,
-      "carbs": 7,
-      "fat": 1.5
+      "calories": 127,
+      "protein": 7.1,
+      "carbs": 14,
+      "fat": 4.6
     },
     {
       "name": "Kleine Schale (400g)",
       "portion_g": 400,
-      "calories": 220,
-      "protein": 12,
-      "carbs": 28,
-      "fat": 6
+      "calories": 508,
+      "protein": 28.4,
+      "carbs": 56,
+      "fat": 18.4
     },
     {
       "name": "Mittlere Schale (550g)",
       "portion_g": 550,
-      "calories": 302,
-      "protein": 16.5,
-      "carbs": 38.5,
-      "fat": 8.2,
+      "calories": 699,
+      "protein": 39.1,
+      "carbs": 77,
+      "fat": 25.3,
       "tip": "Standard-Portion im Restaurant"
     },
     {
       "name": "Große Schale (700g)",
       "portion_g": 700,
-      "calories": 385,
-      "protein": 21,
-      "carbs": 49,
-      "fat": 10.5
+      "calories": 889,
+      "protein": 49.7,
+      "carbs": 98,
+      "fat": 32.2
     },
     {
-      "name": "Nur Brühe (300g)",
-      "portion_g": 300,
-      "calories": 90,
-      "protein": 5,
-      "carbs": 4,
-      "fat": 4,
-      "tip": "Ohne Nudeln und Einlage"
-    },
-    {
-      "name": "Schale mit Ei & Chashu (600g)",
+      "name": "Schale mit Ei und Fleisch (600g)",
       "portion_g": 600,
-      "calories": 430,
-      "protein": 24,
-      "carbs": 40,
-      "fat": 16,
-      "tip": "Mit extra Schweinebauch und Ei"
+      "calories": 762,
+      "protein": 42.8,
+      "carbs": 83.7,
+      "fat": 27.4,
+      "tip": "Mit Fleisch und Ei",
+      "basis": [
+        {
+          "fdcId": 2709158,
+          "g": 600
+        }
+      ]
     },
     {
       "name": "Vegetarisch (550g)",
       "portion_g": 550,
-      "calories": 270,
-      "protein": 12,
-      "carbs": 40,
-      "fat": 6,
-      "tip": "Mit Tofu statt Fleisch"
+      "calories": 594,
+      "protein": 22.1,
+      "carbs": 85.6,
+      "fat": 18.3,
+      "tip": "Ohne Fleisch",
+      "basis": [
+        {
+          "fdcId": 2709157,
+          "g": 550
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Pho (Schale)",
-      "calories": 350,
-      "emoji": "🍲"
+      "name": "Pho (Schale, 550g)",
+      "calories": 424,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "pho",
+          "g": 550
+        }
+      ]
     },
     {
-      "name": "Miso-Suppe (Schale)",
-      "calories": 85,
-      "emoji": "🥣"
+      "name": "Miso-Suppe (Schale, 250g)",
+      "calories": 60,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "miso-suppe",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Udon-Suppe (Schale)",
-      "calories": 380,
-      "emoji": "🍜"
-    },
-    {
-      "name": "Instant-Ramen (Becher)",
-      "calories": 350,
-      "emoji": "🥡"
+      "name": "Instant-Ramen (1 Päckchen, 85g trocken)",
+      "calories": 381,
+      "emoji": "🥡",
+      "basis": [
+        {
+          "slug": "instant-ramen",
+          "g": 85
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Vergleichsweise kalorienarm",
-      "text": "Eine mittlere Schale Shoyu Ramen liegt bei rund 300 kcal. Da die Brühe größtenteils aus Wasser besteht, ist die Kaloriendichte niedriger als bei vielen Nudelgerichten ohne Suppe.",
+      "title": "Niedrige Kaloriendichte",
+      "text": "Eine mittlere Schale Shoyu Ramen (550g) liegt bei rund 699 kcal. Da die Brühe größtenteils aus Wasser besteht, hat sie mit 127 kcal pro 100g trotzdem eine niedrigere Kaloriendichte als viele Nudelgerichte ohne Suppe.",
       "icon": "🍜"
     },
     {
@@ -127,7 +144,7 @@
     },
     {
       "title": "Sättigt durch Volumen",
-      "text": "Das große Flüssigkeitsvolumen einer Schale macht satt, ohne viele Kalorien zu liefern. Das macht Shoyu Ramen zu einer guten Wahl beim Auswärtsessen, wenn man auf die Menge achtet.",
+      "text": "Das große Flüssigkeitsvolumen einer Schale macht satt. Das macht Shoyu Ramen zu einer guten Wahl beim Auswärtsessen, wenn man auf die Menge achtet.",
       "icon": "🍲"
     },
     {
@@ -139,27 +156,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Shoyu Ramen?",
-      "answer": "Eine mittlere Schale Shoyu Ramen (550g) hat ca. 300 kcal. Pro 100g der fertigen Suppe sind es etwa 55 kcal."
+      "answer": "Eine mittlere Schale Shoyu Ramen (550g) hat ca. 699 kcal. Pro 100g der fertigen Suppe sind es etwa 127 kcal. Die USDA-Daten unterscheiden nicht nach Brühe, die Werte gelten für eine Ramen-Schale allgemein."
     },
     {
       "question": "Wie viele Kalorien hat eine Schale Shoyu Ramen?",
-      "answer": "Eine kleine Schale (400g) liefert rund 220 kcal, eine mittlere (550g) ca. 300 kcal und eine große Schale (700g) etwa 385 kcal."
+      "answer": "Eine kleine Schale (400g) liefert rund 508 kcal, eine mittlere (550g) ca. 699 kcal und eine große Schale (700g) etwa 889 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Shoyu Ramen?",
-      "answer": "Pro 100g enthält Shoyu Ramen rund 7g Kohlenhydrate, vor allem aus den Weizennudeln. Eine mittlere Schale kommt damit auf etwa 38g."
+      "answer": "Pro 100g enthält Shoyu Ramen rund 14g Kohlenhydrate, vor allem aus den Weizennudeln. Eine mittlere Schale kommt damit auf etwa 77g."
     },
     {
       "question": "Wie viel Protein hat Shoyu Ramen?",
-      "answer": "Pro 100g liefert Shoyu Ramen etwa 3g Protein. Eine mittlere Schale mit Ei und Fleischeinlage erreicht je nach Topping 16 bis 24g."
+      "answer": "Pro 100g liefert Shoyu Ramen etwa 7g Protein. Eine mittlere Schale (550g) mit Ei und Fleischeinlage erreicht rund 39g."
     },
     {
       "question": "Ist Shoyu Ramen zum Abnehmen geeignet?",
-      "answer": "Mit rund 300 kcal pro Schale ist Shoyu Ramen vergleichsweise sättigend und nicht übermäßig kalorienreich. Wer abnehmen möchte, sollte auf fettreiche Einlagen wie Schweinebauch verzichten und den hohen Salzgehalt der Brühe im Blick behalten."
+      "answer": "Mit rund 699 kcal pro Schale ist Shoyu Ramen sättigend, aber eine vollwertige Mahlzeit. Wer abnehmen möchte, sollte auf fettreiche Einlagen wie Schweinebauch verzichten und den hohen Salzgehalt der Brühe im Blick behalten."
     },
     {
       "question": "Ist Shoyu Ramen gesund?",
-      "answer": "Shoyu Ramen liefert Eiweiß und ist moderat in den Kalorien. Der hohe Salzgehalt durch die Sojasauce-Brühe ist jedoch ein Nachteil, weshalb sie eher gelegentlich als täglich auf dem Speiseplan stehen sollte."
+      "answer": "Shoyu Ramen liefert Eiweiß, ist mit rund 699 kcal pro Schale aber recht gehaltvoll. Der hohe Salzgehalt durch die Sojasauce-Brühe ist ein weiterer Nachteil, weshalb sie eher gelegentlich als täglich auf dem Speiseplan stehen sollte."
     }
   ],
   "related_foods": [

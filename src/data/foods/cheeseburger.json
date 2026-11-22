@@ -3,48 +3,242 @@
   "name": "Cheeseburger",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2706888 (Cheeseburger, NFS), Werte je 100 g",
   "seo": {
     "title": "Cheeseburger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Cheeseburger? McDonald's, Burger King & selbstgemacht – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat ein Cheeseburger? McDonald's, Burger King & selbstgemacht: alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 263,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 13,
-    "fiber_per_100g": 1.0,
-    "typical_portion_g": 200,
+    "calories_per_100g": 296,
+    "protein_per_100g": 17.9,
+    "carbs_per_100g": 18.7,
+    "fat_per_100g": 16.2,
+    "fiber_per_100g": 0.6,
+    "typical_portion_g": 165,
     "typical_portion_name": "1 Cheeseburger"
   },
   "variants": [
-    {"name": "Cheeseburger (McDonald's)", "portion_g": 119, "calories": 304, "protein": 16, "carbs": 30, "fat": 13, "tip": "Fast-Food-Standard"},
-    {"name": "Cheeseburger (Burger King)", "portion_g": 133, "calories": 320, "protein": 17, "carbs": 28, "fat": 15},
-    {"name": "Double Cheeseburger", "portion_g": 175, "calories": 450, "protein": 26, "carbs": 30, "fat": 24, "tip": "Doppeltes Patty"},
-    {"name": "Cheeseburger selbstgemacht", "portion_g": 250, "calories": 530, "protein": 32, "carbs": 35, "fat": 28, "tip": "Größeres Patty als Fast Food"},
-    {"name": "Bacon Cheeseburger", "portion_g": 230, "calories": 580, "protein": 34, "carbs": 32, "fat": 34, "tip": "Extra Bacon"},
-    {"name": "Cheeseburger mit Vollkorn-Bun", "portion_g": 240, "calories": 510, "protein": 33, "carbs": 38, "fat": 24, "tip": "Mehr Ballaststoffe"},
-    {"name": "Mini-Cheeseburger (Slider)", "portion_g": 80, "calories": 210, "protein": 11, "carbs": 16, "fat": 11}
+    {
+      "name": "Cheeseburger (McDonald's)",
+      "portion_g": 119,
+      "calories": 313,
+      "protein": 15,
+      "carbs": 33,
+      "fat": 14,
+      "tip": "Fast-Food-Standard",
+      "basis": [
+        {
+          "fdcId": 170320,
+          "g": 119
+        }
+      ]
+    },
+    {
+      "name": "Cheeseburger (Burger King)",
+      "portion_g": 133,
+      "calories": 380,
+      "protein": 19,
+      "carbs": 32,
+      "fat": 20,
+      "basis": [
+        {
+          "fdcId": 170329,
+          "g": 133
+        }
+      ]
+    },
+    {
+      "name": "Double Cheeseburger (McDonald's)",
+      "portion_g": 155,
+      "calories": 437,
+      "protein": 24,
+      "carbs": 29,
+      "fat": 25,
+      "tip": "Doppeltes Patty",
+      "basis": [
+        {
+          "fdcId": 172065,
+          "g": 155
+        }
+      ]
+    },
+    {
+      "name": "Cheeseburger selbstgemacht (großes Patty)",
+      "portion_g": 210,
+      "calories": 628,
+      "protein": 39,
+      "carbs": 32,
+      "fat": 37,
+      "tip": "Größeres Patty als Fast Food",
+      "basis": [
+        {
+          "fdcId": 2706903,
+          "g": 210
+        }
+      ]
+    },
+    {
+      "name": "Bacon Cheeseburger",
+      "portion_g": 181,
+      "calories": 563,
+      "protein": 35,
+      "carbs": 31,
+      "fat": 32,
+      "tip": "Mit 16 g Bacon",
+      "basis": [
+        {
+          "g": 165
+        },
+        {
+          "fdcId": 168322,
+          "g": 16
+        }
+      ]
+    },
+    {
+      "name": "Cheeseburger mit Vollkorn-Bun",
+      "portion_g": 165,
+      "calories": 480,
+      "protein": 30,
+      "carbs": 28,
+      "fat": 27,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 2706902,
+          "g": 165
+        }
+      ]
+    },
+    {
+      "name": "Mini-Cheeseburger (Slider)",
+      "portion_g": 80,
+      "calories": 238,
+      "protein": 14,
+      "carbs": 14,
+      "fat": 13,
+      "basis": [
+        {
+          "fdcId": 2706894,
+          "g": 80
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Big Mac", "calories": 563, "emoji": "🍔"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Currywurst", "calories": 500, "emoji": "🌭"},
-    {"name": "Veggie-Burger", "calories": 380, "emoji": "🌿"}
+    {
+      "name": "Big Mac",
+      "calories": 563,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Veggie-Burger",
+      "calories": 358,
+      "emoji": "🌿",
+      "basis": [
+        {
+          "fdcId": 2707481,
+          "g": 160
+        }
+      ]
+    },
+    {
+      "name": "Hamburger (McDonald's)",
+      "calories": 251,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170717,
+          "g": 95
+        }
+      ]
+    },
+    {
+      "name": "Pommes frites (mittlere Portion)",
+      "calories": 378,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 170721,
+          "g": 117
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Einzelnes Patty reicht", "text": "Ein Single Cheeseburger hat ca. 300 kcal, ein Double ca. 450 kcal. Das Extra-Patty lohnt sich kalorientechnisch selten.", "icon": "1️⃣"},
-    {"title": "Kein Mayo, dafür Senf", "text": "Mayo hat ca. 100 kcal/EL, Senf nur 10 kcal. Einfachster Tausch für weniger Kalorien.", "icon": "💛"},
-    {"title": "Dünneres Brötchen oder Wrap", "text": "Ein normales Burger-Bun hat ca. 150 kcal. Ein Wrap oder dünnes Bun spart 50-80 kcal.", "icon": "🍞"},
-    {"title": "Salat statt Pommes", "text": "Als Beilage Salat statt Pommes spart ca. 300 kcal. Der Burger selbst ist die Hauptmahlzeit.", "icon": "🥗"},
-    {"title": "Selbstgemacht ist besser", "text": "Zuhause kontrollierst du Fleischqualität, Fettgehalt und Portionsgröße. Mageres Hack (5% Fett) spart erheblich.", "icon": "👨‍🍳"}
+    {
+      "title": "Einzelnes Patty reicht",
+      "text": "Bei McDonald's hat ein Cheeseburger ca. 313 kcal, ein Double Cheeseburger ca. 437 kcal. Das Extra-Patty lohnt sich kalorientechnisch selten.",
+      "icon": "1️⃣"
+    },
+    {
+      "title": "Kein Mayo, dafür Senf",
+      "text": "Mayo hat ein Vielfaches der Kalorien von Senf. Einfachster Tausch für weniger Kalorien.",
+      "icon": "💛"
+    },
+    {
+      "title": "Dünneres Brötchen oder Wrap",
+      "text": "Das Brötchen liefert den Großteil der Kohlenhydrate. Ein Wrap oder dünnes Bun spart Kalorien.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Salat statt Pommes",
+      "text": "Als Beilage Salat statt Pommes (mittlere Portion ca. 378 kcal) spart den Großteil davon. Der Burger selbst ist die Hauptmahlzeit.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Selbstgemacht ist besser",
+      "text": "Zuhause kontrollierst du Fleischqualität, Fettgehalt und Portionsgröße. Mageres Hack spart erheblich.",
+      "icon": "👨‍🍳"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Cheeseburger?", "answer": "Ein Cheeseburger hat ca. 300-530 kcal, je nach Größe. McDonald's Cheeseburger: 304 kcal, selbstgemacht: ca. 530 kcal (größeres Patty)."},
-    {"question": "Was hat mehr Kalorien: Cheeseburger oder Hamburger?", "answer": "Ein Cheeseburger hat durch den Käse ca. 50-80 kcal mehr als ein Hamburger gleicher Größe. Eine Scheibe Käse fügt ca. 60-80 kcal hinzu."},
-    {"question": "Wie viel Protein hat ein Cheeseburger?", "answer": "Ein Cheeseburger liefert 16-34g Protein, je nach Größe und Patty. Ein selbstgemachter mit 150g-Patty hat ca. 32g Protein."},
-    {"question": "Ist ein Cheeseburger ungesund?", "answer": "Ein einfacher Cheeseburger (300 kcal) ist kalorienmäßig moderate Kost. Problematisch wird es bei Double/Triple-Varianten, Extra-Sauce und Pommes als Beilage."},
-    {"question": "Wie viel Fett hat ein Cheeseburger?", "answer": "Ein Cheeseburger enthält 13-34g Fett. Der Großteil kommt aus dem Patty und dem Käse. Mageres Hackfleisch reduziert den Fettgehalt deutlich."},
-    {"question": "Welcher Cheeseburger hat am wenigsten Kalorien?", "answer": "Der einfache McDonald's Cheeseburger mit 304 kcal ist einer der kalorienärmsten. Slider/Mini-Cheeseburger haben nur ca. 210 kcal."}
+    {
+      "question": "Wie viele Kalorien hat ein Cheeseburger?",
+      "answer": "Ein Cheeseburger hat je nach Größe ca. 313 bis 628 kcal: McDonald's ca. 313 kcal, Burger King ca. 380 kcal, selbstgemacht mit großem Patty ca. 628 kcal."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Cheeseburger oder Hamburger?",
+      "answer": "Bei McDonald's hat der Cheeseburger (119g, ca. 313 kcal) rund 62 kcal mehr als der Hamburger (95g, ca. 251 kcal), vor allem durch die Käsescheibe."
+    },
+    {
+      "question": "Wie viel Protein hat ein Cheeseburger?",
+      "answer": "Ein Cheeseburger liefert je nach Größe ca. 15 bis 39g Protein: McDonald's ca. 15g, selbstgemacht mit großem Patty ca. 39g."
+    },
+    {
+      "question": "Ist ein Cheeseburger ungesund?",
+      "answer": "Ein einfacher Cheeseburger (ca. 313 kcal bei McDonald's) ist kalorienmäßig moderate Kost. Problematisch wird es bei Double/Triple-Varianten, Extra-Sauce und Pommes als Beilage."
+    },
+    {
+      "question": "Wie viel Fett hat ein Cheeseburger?",
+      "answer": "Ein Cheeseburger enthält je nach Größe ca. 14 bis 37g Fett. Der Großteil kommt aus dem Patty und dem Käse. Mageres Hackfleisch reduziert den Fettgehalt deutlich."
+    },
+    {
+      "question": "Welcher Cheeseburger hat am wenigsten Kalorien?",
+      "answer": "Der einfache McDonald's Cheeseburger mit ca. 313 kcal ist einer der kalorienärmsten. Slider/Mini-Cheeseburger haben nur ca. 238 kcal."
+    }
   ],
-  "related_foods": ["burger", "double-burger", "chicken-burger", "pommes-frites"]
+  "related_foods": [
+    "burger",
+    "double-burger",
+    "chicken-burger",
+    "pommes-frites"
+  ]
 }

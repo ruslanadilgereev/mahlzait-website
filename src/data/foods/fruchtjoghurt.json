@@ -3,9 +3,10 @@
   "name": "Fruchtjoghurt",
   "emoji": "🍓",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2705426 (Yogurt, whole milk, fruit), Werte je 100 g",
   "seo": {
     "title": "Fruchtjoghurt Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Fruchtjoghurt? Ein 150g-Becher hat ca. 147 kcal. Nährwerte pro 100g & Becher, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Fruchtjoghurt? Ein 150g-Becher hat ca. 159 kcal. Nährwerte pro 100g & Becher, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "fruchtjoghurt kalorien",
       "fruchtjoghurt kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 98,
+    "calories_per_100g": 106,
     "protein_per_100g": 3.3,
-    "carbs_per_100g": 13.5,
-    "fat_per_100g": 3,
+    "carbs_per_100g": 14.4,
+    "fat_per_100g": 3.9,
     "fiber_per_100g": 0.2,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Becher (150g)"
@@ -29,91 +30,116 @@
     {
       "name": "Fruchtjoghurt pro 100g",
       "portion_g": 100,
-      "calories": 98,
+      "calories": 106,
       "protein": 3.3,
-      "carbs": 13.5,
-      "fat": 3
+      "carbs": 14.4,
+      "fat": 3.9
     },
     {
       "name": "Becher (150g)",
       "portion_g": 150,
-      "calories": 147,
+      "calories": 159,
       "protein": 5,
-      "carbs": 20.3,
-      "fat": 4.5,
+      "carbs": 21.6,
+      "fat": 5.9,
       "tip": "Standard-Becher"
     },
     {
       "name": "Großer Becher (250g)",
       "portion_g": 250,
-      "calories": 245,
+      "calories": 265,
       "protein": 8.3,
-      "carbs": 33.8,
-      "fat": 7.5
+      "carbs": 36,
+      "fat": 9.8
     },
     {
       "name": "Familienpackung (500g)",
       "portion_g": 500,
-      "calories": 490,
+      "calories": 530,
       "protein": 16.5,
-      "carbs": 67.5,
-      "fat": 15
+      "carbs": 72,
+      "fat": 19.5
     },
     {
       "name": "Fettarm 1,5% (150g)",
       "portion_g": 150,
-      "calories": 113,
-      "protein": 6,
-      "carbs": 19.5,
-      "fat": 2.3,
-      "tip": "Weniger Fett, etwas mehr Eiweiß"
+      "calories": 140,
+      "protein": 6.9,
+      "carbs": 23.5,
+      "fat": 2,
+      "tip": "Weniger Fett, etwas mehr Eiweiß",
+      "basis": [
+        {
+          "fdcId": 2705427,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Zuckerreduziert / Light (150g)",
       "portion_g": 150,
-      "calories": 75,
-      "protein": 6.5,
-      "carbs": 8,
-      "fat": 1.5,
-      "tip": "Beste Wahl zum Abnehmen"
+      "calories": 69,
+      "protein": 5.5,
+      "carbs": 11.5,
+      "fat": 0.1,
+      "tip": "Beste Wahl zum Abnehmen",
+      "basis": [
+        {
+          "fdcId": 2705428,
+          "g": 150
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Naturjoghurt (150g)",
-      "calories": 102,
-      "emoji": "🥛"
+      "calories": 92,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 171284,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Skyr (150g)",
-      "calories": 96,
-      "emoji": "🥄"
+      "calories": 89,
+      "emoji": "🥄",
+      "basis": [
+        {
+          "slug": "skyr",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Fruchtzwerge (2 Stück, 100g)",
-      "calories": 124,
-      "emoji": "🧒"
-    },
-    {
-      "name": "Quark mit Frucht (150g)",
-      "calories": 165,
-      "emoji": "🍶"
+      "calories": 100,
+      "emoji": "🧒",
+      "basis": [
+        {
+          "slug": "fruchtzwerge",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Zucker ist der Knackpunkt",
-      "text": "Der Großteil der 13,5g Kohlenhydrate pro 100g stammt aus zugesetztem Zucker und Fruchtzubereitung, nicht aus der eigentlichen Frucht. Ein Blick auf die Zutatenliste lohnt sich.",
+      "text": "Der Großteil der 14,4g Kohlenhydrate pro 100g stammt aus zugesetztem Zucker und Fruchtzubereitung, nicht aus der eigentlichen Frucht. Ein Blick auf die Zutatenliste lohnt sich.",
       "icon": "🍬"
     },
     {
       "title": "Selbst mischen spart Kalorien",
-      "text": "Naturjoghurt mit frischen Beeren ergibt einen Fruchtjoghurt mit deutlich weniger Zucker. So sparen Sie pro Becher leicht 40 bis 60 kcal.",
+      "text": "Naturjoghurt mit frischen Beeren ergibt einen Fruchtjoghurt mit deutlich weniger Zucker. Ein Becher Naturjoghurt (150g) hat nur 92 kcal statt 159 kcal, die Beeren bringen nur wenig dazu.",
       "icon": "🥄"
     },
     {
       "title": "Light-Variante zum Abnehmen",
-      "text": "Zuckerreduzierter Fruchtjoghurt bringt es auf nur etwa 75 kcal pro 150g-Becher bei mehr Eiweiß. Ideal als Snack in einer kalorienreduzierten Ernährung.",
+      "text": "Zuckerreduzierter Fruchtjoghurt bringt es auf nur etwa 69 kcal pro 150g-Becher bei etwas mehr Eiweiß. Ideal als Snack in einer kalorienreduzierten Ernährung.",
       "icon": "📉"
     },
     {
@@ -123,18 +149,18 @@
     },
     {
       "title": "Auf die Portion achten",
-      "text": "Große 250g-Becher liefern schon 245 kcal. Wer Kalorien zählt, bleibt besser beim klassischen 150g-Becher.",
+      "text": "Große 250g-Becher liefern schon 265 kcal. Wer Kalorien zählt, bleibt besser beim klassischen 150g-Becher.",
       "icon": "📏"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Fruchtjoghurt?",
-      "answer": "Ein klassischer Becher Fruchtjoghurt (150g) hat etwa 147 kcal. Pro 100g sind es rund 98 kcal."
+      "answer": "Ein klassischer Becher Fruchtjoghurt (150g) hat etwa 159 kcal. Pro 100g sind es rund 106 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Fruchtjoghurt?",
-      "answer": "Fruchtjoghurt enthält etwa 13,5g Kohlenhydrate pro 100g, also rund 20g pro 150g-Becher. Ein großer Teil davon ist zugesetzter Zucker."
+      "answer": "Fruchtjoghurt enthält etwa 14,4g Kohlenhydrate pro 100g, also rund 22g pro 150g-Becher. Ein großer Teil davon ist zugesetzter Zucker."
     },
     {
       "question": "Wie viel Eiweiß hat Fruchtjoghurt?",
@@ -142,7 +168,7 @@
     },
     {
       "question": "Ist Fruchtjoghurt zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Wegen des zugesetzten Zuckers ist die zuckerreduzierte Light-Variante mit etwa 75 kcal pro Becher die bessere Wahl. Noch besser: Naturjoghurt mit frischen Früchten selbst mischen."
+      "answer": "In Maßen ja. Wegen des zugesetzten Zuckers ist die zuckerreduzierte Light-Variante mit etwa 69 kcal pro Becher die bessere Wahl. Noch besser: Naturjoghurt mit frischen Früchten selbst mischen."
     },
     {
       "question": "Ist Fruchtjoghurt gesund?",
@@ -150,7 +176,7 @@
     },
     {
       "question": "Hat Fruchtjoghurt mehr Kalorien als Naturjoghurt?",
-      "answer": "Pro 100g liegen beide nah beieinander, doch durch die zugesetzte Fruchtzubereitung und den Zucker hat Fruchtjoghurt oft etwas mehr Kohlenhydrate als reiner Naturjoghurt."
+      "answer": "Ja: Fruchtjoghurt hat mit 106 kcal pro 100g deutlich mehr als Naturjoghurt (61 kcal), vor allem durch die zugesetzte Fruchtzubereitung und den Zucker."
     }
   ],
   "related_foods": [

@@ -3,49 +3,226 @@
   "name": "Veggie Burger",
   "emoji": "🌿",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2707481 (Veggie burger, on bun), Werte je 100 g",
   "seo": {
     "title": "Veggie Burger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Veggie Burger? Beyond, Impossible, Bohnen & Gemüse – alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat ein Veggie Burger? Mit Käse, Tofu oder Portobello: alle Nährwerte im Vergleich. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 200,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 9,
-    "fiber_per_100g": 3.0,
+    "calories_per_100g": 224,
+    "protein_per_100g": 13,
+    "carbs_per_100g": 30.8,
+    "fat_per_100g": 5.2,
+    "fiber_per_100g": 3.5,
     "typical_portion_g": 220,
     "typical_portion_name": "1 Veggie Burger"
   },
   "variants": [
-    {"name": "Beyond Meat Burger", "portion_g": 230, "calories": 480, "protein": 24, "carbs": 38, "fat": 24, "tip": "Fleischähnlich"},
-    {"name": "Impossible Burger", "portion_g": 230, "calories": 490, "protein": 26, "carbs": 40, "fat": 24},
-    {"name": "Bohnen-Burger (Black Bean)", "portion_g": 200, "calories": 380, "protein": 16, "carbs": 48, "fat": 12, "tip": "Ballaststoffreich"},
-    {"name": "Gemüse-Burger (Grünkern)", "portion_g": 200, "calories": 350, "protein": 12, "carbs": 42, "fat": 14, "tip": "Kalorienärmste Variante"},
-    {"name": "Halloumi-Burger", "portion_g": 230, "calories": 520, "protein": 22, "carbs": 35, "fat": 32, "tip": "Vegetarisch, nicht vegan"},
-    {"name": "Tofu-Burger", "portion_g": 210, "calories": 360, "protein": 20, "carbs": 35, "fat": 14, "tip": "Proteinreich & leicht"},
-    {"name": "McPlant (McDonald's)", "portion_g": 190, "calories": 405, "protein": 18, "carbs": 40, "fat": 18, "tip": "Fast-Food-Option"},
-    {"name": "Portobello-Burger", "portion_g": 220, "calories": 320, "protein": 10, "carbs": 35, "fat": 16, "tip": "Low-Cal mit Pilz-Patty"}
+    {
+      "name": "Veggie Burger (220g)",
+      "portion_g": 220,
+      "calories": 493,
+      "protein": 29,
+      "carbs": 68,
+      "fat": 11,
+      "tip": "Standard"
+    },
+    {
+      "name": "Veggie Burger mit Käse (230g)",
+      "portion_g": 230,
+      "calories": 559,
+      "protein": 32,
+      "carbs": 63,
+      "fat": 19,
+      "basis": [
+        {
+          "fdcId": 2707482,
+          "g": 230
+        }
+      ]
+    },
+    {
+      "name": "Veggie-Patty ohne Brötchen (100g)",
+      "portion_g": 100,
+      "calories": 177,
+      "protein": 16,
+      "carbs": 14,
+      "fat": 6,
+      "tip": "Ohne Brot",
+      "basis": [
+        {
+          "fdcId": 2707473,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Tofu-Burger",
+      "portion_g": 210,
+      "calories": 445,
+      "protein": 25,
+      "carbs": 41,
+      "fat": 23,
+      "tip": "Proteinreich",
+      "basis": [
+        {
+          "fdcId": 172796,
+          "g": 60
+        },
+        {
+          "fdcId": 172451,
+          "g": 100
+        },
+        {
+          "fdcId": 169248,
+          "g": 30
+        },
+        {
+          "fdcId": 170457,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Portobello-Burger",
+      "portion_g": 220,
+      "calories": 211,
+      "protein": 10,
+      "carbs": 36,
+      "fat": 3,
+      "tip": "Low-Cal mit Pilz-Patty",
+      "basis": [
+        {
+          "fdcId": 172796,
+          "g": 60
+        },
+        {
+          "fdcId": 2710251,
+          "g": 120
+        },
+        {
+          "fdcId": 169248,
+          "g": 20
+        },
+        {
+          "fdcId": 170457,
+          "g": 20
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Cheeseburger (Rind)", "calories": 530, "emoji": "🍔"},
-    {"name": "Chicken Burger", "calories": 420, "emoji": "🍗"},
-    {"name": "Falafel im Fladenbrot", "calories": 520, "emoji": "🧆"},
-    {"name": "Gemüse-Wrap", "calories": 350, "emoji": "🌯"}
+    {
+      "name": "Cheeseburger (Rind, 165g)",
+      "calories": 488,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "cheeseburger"
+        }
+      ]
+    },
+    {
+      "name": "Chicken Burger (140g)",
+      "calories": 393,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-burger"
+        }
+      ]
+    },
+    {
+      "name": "Falafel im Fladenbrot (300g)",
+      "calories": 795,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "fdcId": 2707483,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Gemüse-Wrap (165g)",
+      "calories": 264,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "fdcId": 2709136,
+          "g": 165
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Beyond/Impossible ≠ kalorienarm", "text": "Fleischersatz-Burger haben fast gleich viele Kalorien wie echte Burger. Für Kaloriensparen besser Bohnen- oder Gemüse-Patties.", "icon": "⚠️"},
-    {"title": "Bohnen-Burger für Ballaststoffe", "text": "Black-Bean-Burger liefern 8-10g Ballaststoffe pro Portion – dreimal so viel wie ein Fleisch-Burger.", "icon": "🫘"},
-    {"title": "Tofu-Patty für Protein", "text": "Tofu-Burger haben ein gutes Protein-zu-Kalorien-Verhältnis: 20g Protein bei nur 360 kcal.", "icon": "💪"},
-    {"title": "Saucen bewusst wählen", "text": "Vegane Mayo hat ähnlich viele Kalorien wie normale. Hummus oder Senf sind kalorienärmere Alternativen.", "icon": "🥫"},
-    {"title": "Selbst machen lohnt sich", "text": "Selbstgemachte Veggie-Burger aus Bohnen, Haferflocken und Gewürzen haben oft nur 200-250 kcal pro Patty.", "icon": "👨‍🍳"}
+    {
+      "title": "Veggie heißt nicht kalorienarm",
+      "text": "Ein Veggie Burger (220g) hat mit rund 493 kcal etwa so viele Kalorien wie ein Cheeseburger (165g, 488 kcal). Für Kaloriensparen besser Gemüse-Patties wie Portobello.",
+      "icon": "⚠️"
+    },
+    {
+      "title": "Viele Ballaststoffe",
+      "text": "Ein Veggie Burger (220g) liefert rund 8g Ballaststoffe, ein Cheeseburger nur rund 1g.",
+      "icon": "🫘"
+    },
+    {
+      "title": "Tofu-Patty für Protein",
+      "text": "Tofu-Burger haben ein gutes Protein-zu-Kalorien-Verhältnis: rund 25g Protein bei 445 kcal.",
+      "icon": "💪"
+    },
+    {
+      "title": "Saucen bewusst wählen",
+      "text": "Vegane Mayo hat ähnlich viele Kalorien wie normale. Hummus oder Senf sind kalorienärmere Alternativen.",
+      "icon": "🥫"
+    },
+    {
+      "title": "Selbst machen lohnt sich",
+      "text": "Selbstgemachte Veggie-Burger aus Bohnen, Haferflocken und Gewürzen lassen sich fettarm zubereiten.",
+      "icon": "👨‍🍳"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Veggie Burger?", "answer": "Ein Veggie Burger hat 320-520 kcal, je nach Patty-Art. Gemüse-Patty: ca. 350 kcal, Beyond Meat: ca. 480 kcal, Halloumi: ca. 520 kcal."},
-    {"question": "Ist ein Veggie Burger kalorienärmer als ein normaler Burger?", "answer": "Nicht unbedingt. Beyond/Impossible Burger (480-490 kcal) sind fast gleichwertig mit Fleisch-Burgern. Bohnen- und Gemüse-Patties (320-380 kcal) sind deutlich leichter."},
-    {"question": "Wie viel Protein hat ein Veggie Burger?", "answer": "Veggie Burger liefern 10-26g Protein. Beyond/Impossible (24-26g) kommen nahe an Fleisch heran, Gemüse-Patties (10-12g) haben deutlich weniger."},
-    {"question": "Sind Veggie Burger gesund?", "answer": "Veggie Burger aus Bohnen, Gemüse oder Tofu sind ballaststoffreich und nährstoffdicht. Hochverarbeitete Fleischersatz-Produkte sind kalorisch ähnlich zu Fleisch-Burgern."},
-    {"question": "Was hat weniger Kalorien: Veggie Burger oder Döner?", "answer": "Die meisten Veggie Burger (320-490 kcal) haben deutlich weniger Kalorien als ein Döner (696 kcal). Auch der Halloumi-Burger (520 kcal) liegt darunter."},
-    {"question": "Welcher Veggie Burger hat am meisten Protein?", "answer": "Impossible Burger (26g) und Beyond Meat (24g) haben am meisten Protein. Bei natürlichen Alternativen liegt der Tofu-Burger (20g) vorne."}
+    {
+      "question": "Wie viele Kalorien hat ein Veggie Burger?",
+      "answer": "Ein Veggie Burger hat je nach Patty rund 211 bis 559 kcal. Mit Portobello-Pilz ca. 211 kcal, der klassische Veggie Burger (220g) ca. 493 kcal, mit Käse ca. 559 kcal."
+    },
+    {
+      "question": "Ist ein Veggie Burger kalorienärmer als ein normaler Burger?",
+      "answer": "Nicht unbedingt. Ein Veggie Burger (220g, ca. 493 kcal) liegt etwa auf dem Niveau eines Cheeseburgers (165g, 488 kcal). Gemüse-Patties wie Portobello (ca. 211 kcal) sind deutlich leichter."
+    },
+    {
+      "question": "Wie viel Protein hat ein Veggie Burger?",
+      "answer": "Veggie Burger liefern rund 10 bis 32g Protein. Der klassische Veggie Burger (29g) und der Tofu-Burger (25g) kommen nahe an Fleisch heran, ein Portobello-Burger (10g) hat deutlich weniger."
+    },
+    {
+      "question": "Sind Veggie Burger gesund?",
+      "answer": "Veggie Burger aus Bohnen, Gemüse oder Tofu sind ballaststoffreich und nährstoffdicht. Hochverarbeitete Fleischersatz-Produkte sind kalorisch ähnlich zu Fleisch-Burgern."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Veggie Burger oder Döner?",
+      "answer": "Die meisten Veggie Burger (211 bis 559 kcal) haben weniger Kalorien als ein Döner (696 kcal)."
+    },
+    {
+      "question": "Welcher Veggie Burger hat am meisten Protein?",
+      "answer": "Der Veggie Burger mit Käse (32g) und der klassische Veggie Burger (29g) haben am meisten Protein. Der Tofu-Burger liegt mit 25g knapp dahinter."
+    }
   ],
-  "related_foods": ["burger", "falafel", "cheeseburger", "wrap"]
+  "related_foods": [
+    "burger",
+    "falafel",
+    "cheeseburger",
+    "wrap"
+  ]
 }

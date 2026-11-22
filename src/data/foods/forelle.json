@@ -3,48 +3,203 @@
   "name": "Forelle",
   "emoji": "🐟",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 173717 (Fish, trout, rainbow, farmed, raw), Werte je 100 g",
   "seo": {
     "title": "Forelle Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Forelle? Nährwerte für Forelle Müllerin, geräuchert, gegrillt & mehr. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat eine Forelle? Nährwerte für Forelle Müllerin, gegrillt, blau & mehr. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 119,
-    "protein_per_100g": 20,
+    "calories_per_100g": 141,
+    "protein_per_100g": 19.9,
     "carbs_per_100g": 0,
-    "fat_per_100g": 4,
+    "fat_per_100g": 6.2,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Forelle (Filet)"
   },
   "variants": [
-    {"name": "Forelle Müllerin Art", "portion_g": 250, "calories": 380, "protein": 40, "carbs": 10, "fat": 20, "tip": "Klassiker mit Mehlpanade"},
-    {"name": "Forelle geräuchert", "portion_g": 150, "calories": 225, "protein": 32, "carbs": 0, "fat": 10, "tip": "Intensiver Geschmack"},
-    {"name": "Forelle gegrillt", "portion_g": 200, "calories": 250, "protein": 40, "carbs": 0, "fat": 9, "tip": "Kalorienärmste Zubereitungsart"},
-    {"name": "Forelle im Ofen", "portion_g": 200, "calories": 260, "protein": 38, "carbs": 0, "fat": 11, "tip": "Einfach & gesund"},
-    {"name": "Forelle blau (pochiert)", "portion_g": 200, "calories": 238, "protein": 40, "carbs": 0, "fat": 8, "tip": "Schonende Zubereitung"},
-    {"name": "Lachsforelle", "portion_g": 200, "calories": 290, "protein": 38, "carbs": 0, "fat": 14, "tip": "Etwas fettreicher"},
-    {"name": "Forelle im Speckmantel", "portion_g": 250, "calories": 420, "protein": 42, "carbs": 1, "fat": 26, "tip": "Deftige Variante"}
+    {
+      "name": "Forelle Müllerin Art",
+      "portion_g": 250,
+      "calories": 678,
+      "protein": 43,
+      "carbs": 29,
+      "fat": 42,
+      "tip": "Klassiker mit Mehlpanade",
+      "basis": [
+        {
+          "fdcId": 2706306,
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Forelle gegrillt",
+      "portion_g": 200,
+      "calories": 398,
+      "protein": 51,
+      "carbs": 0,
+      "fat": 20,
+      "basis": [
+        {
+          "fdcId": 2706304,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Forelle im Ofen",
+      "portion_g": 200,
+      "calories": 432,
+      "protein": 50,
+      "carbs": 0,
+      "fat": 24,
+      "tip": "Einfach & gesund",
+      "basis": [
+        {
+          "fdcId": 2706303,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Forelle blau (pochiert)",
+      "portion_g": 200,
+      "calories": 356,
+      "protein": 50,
+      "carbs": 0,
+      "fat": 16,
+      "tip": "Schonende Zubereitung",
+      "basis": [
+        {
+          "fdcId": 2706307,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Forelle im Speckmantel",
+      "portion_g": 250,
+      "calories": 616,
+      "protein": 65,
+      "carbs": 1,
+      "fat": 37,
+      "tip": "Deftige Variante",
+      "basis": [
+        {
+          "fdcId": 2706303,
+          "g": 220
+        },
+        {
+          "fdcId": 2705889,
+          "g": 30
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Lachs", "calories": 208, "emoji": "🐟"},
-    {"name": "Kabeljau", "calories": 82, "emoji": "🐟"},
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"},
-    {"name": "Thunfisch (Dose)", "calories": 110, "emoji": "🐟"}
+    {
+      "name": "Lachs (1 Filet, 150g)",
+      "calories": 312,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Kabeljau roh (200g)",
+      "calories": 164,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "fdcId": 171955,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (1 Stück, 200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Thunfisch (Dose, abgetropft, 150g)",
+      "calories": 129,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "thunfisch-dose",
+          "g": 150
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Grillen oder Ofen", "text": "Gegrillt oder im Ofen zubereitet spart Kalorien gegenüber Forelle Müllerin (in Butter gebraten).", "icon": "🔥"},
-    {"title": "Hochwertiges Protein", "text": "Forelle liefert 20g Protein pro 100g bei nur 119 kcal – eines der besten Protein-Kalorien-Verhältnisse.", "icon": "💪"},
-    {"title": "Omega-3 aus der Region", "text": "Deutsche Zuchtforelle ist eine gute Alternative zu Lachs – weniger Kalorien, gute Omega-3-Werte und regional.", "icon": "🌍"},
-    {"title": "Mit Zitrone servieren", "text": "Zitronensaft bringt Geschmack ohne Kalorien und hilft, weniger Butter zu verwenden.", "icon": "🍋"},
-    {"title": "Ganze Forelle günstiger", "text": "Eine ganze Forelle vom Markt ist günstiger als Filets – und der Geschmack ist intensiver.", "icon": "💰"}
+    {
+      "title": "Grillen oder Ofen",
+      "text": "Gegrillt oder im Ofen zubereitet spart Kalorien gegenüber Forelle Müllerin (in Butter gebraten).",
+      "icon": "🔥"
+    },
+    {
+      "title": "Hochwertiges Protein",
+      "text": "Forelle liefert 20g Protein pro 100g bei nur 141 kcal, eines der besten Protein-Kalorien-Verhältnisse.",
+      "icon": "💪"
+    },
+    {
+      "title": "Omega-3 aus der Region",
+      "text": "Deutsche Zuchtforelle ist eine gute Alternative zu Lachs: weniger Kalorien, gute Omega-3-Werte und regional.",
+      "icon": "🌍"
+    },
+    {
+      "title": "Mit Zitrone servieren",
+      "text": "Zitronensaft bringt Geschmack ohne Kalorien und hilft, weniger Butter zu verwenden.",
+      "icon": "🍋"
+    },
+    {
+      "title": "Ganze Forelle günstiger",
+      "text": "Eine ganze Forelle vom Markt ist günstiger als Filets, und der Geschmack ist intensiver.",
+      "icon": "💰"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat eine Forelle?", "answer": "Eine Forelle (200g Filet) hat ca. 238 kcal pur. Forelle Müllerin Art kommt auf ca. 380 kcal durch die Mehl-Butter-Zubereitung."},
-    {"question": "Ist Forelle gesund?", "answer": "Sehr gesund! Forelle liefert hochwertiges Protein, Omega-3-Fettsäuren, Vitamin D und Vitamin B12 bei wenig Kalorien."},
-    {"question": "Was hat weniger Kalorien: Forelle oder Lachs?", "answer": "Forelle (119 kcal/100g) hat deutlich weniger Kalorien als Lachs (208 kcal/100g) – fast 40% weniger, bei ähnlich hohem Proteingehalt."},
-    {"question": "Wie viel Forelle pro Person?", "answer": "Als Filet rechnet man 150-200g pro Person. Eine ganze Forelle wiegt 250-350g, davon sind ca. 60% essbares Fleisch."},
-    {"question": "Welche Beilagen passen zur Forelle?", "answer": "Klassisch: Petersilienkartoffeln und Salat. Auch Reis, Gemüse oder Stampfkartoffeln passen. Mandeln sind bei Forelle Müllerin typisch."},
-    {"question": "Was ist der Unterschied zwischen Forelle und Lachsforelle?", "answer": "Lachsforelle ist eine große Regenbogenforelle mit rosa Fleisch (durch Carotin im Futter). Sie hat mehr Fett und einen lachsähnlichen Geschmack."}
+    {
+      "question": "Wie viele Kalorien hat eine Forelle?",
+      "answer": "Eine Forelle (200g Filet, roh gewogen) hat ca. 282 kcal pur. Forelle Müllerin Art (250g) kommt auf ca. 678 kcal durch die Mehl-Butter-Zubereitung."
+    },
+    {
+      "question": "Ist Forelle gesund?",
+      "answer": "Sehr gesund! Forelle liefert hochwertiges Protein, Omega-3-Fettsäuren, Vitamin D und Vitamin B12 bei wenig Kalorien."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Forelle oder Lachs?",
+      "answer": "Forelle (141 kcal/100g) hat deutlich weniger Kalorien als Lachs (208 kcal/100g), rund ein Drittel weniger, bei ähnlich hohem Proteingehalt."
+    },
+    {
+      "question": "Wie viel Forelle pro Person?",
+      "answer": "Als Filet rechnet man 150-200g pro Person. Eine ganze Forelle wiegt 250-350g, davon sind ca. 60% essbares Fleisch."
+    },
+    {
+      "question": "Welche Beilagen passen zur Forelle?",
+      "answer": "Klassisch: Petersilienkartoffeln und Salat. Auch Reis, Gemüse oder Stampfkartoffeln passen. Mandeln sind bei Forelle Müllerin typisch."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Forelle und Lachsforelle?",
+      "answer": "Lachsforelle ist eine große Regenbogenforelle mit rosa Fleisch (durch Carotin im Futter). Sie hat mehr Fett und einen lachsähnlichen Geschmack."
+    }
   ],
-  "related_foods": ["lachs-gebraten", "fischstaebchen", "matjes", "haehnchenbrust"]
+  "related_foods": [
+    "lachs-gebraten",
+    "fischstaebchen",
+    "matjes",
+    "haehnchenbrust"
+  ]
 }

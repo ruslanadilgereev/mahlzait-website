@@ -3,9 +3,10 @@
   "name": "Geflügel-Wiener",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171624 (Frankfurter, chicken), Werte je 100 g",
   "seo": {
     "title": "Geflügel-Wiener Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Geflügel-Wiener? 100g haben ca. 215 kcal, ein Würstchen (50g) ca. 108 kcal. Nährwerte, Eiweiß & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Geflügel-Wiener? 100g haben ca. 223 kcal, ein Würstchen (50g) ca. 112 kcal. Nährwerte, Eiweiß & Tipps zum Abnehmen.",
     "keywords": [
       "geflügel wiener kalorien",
       "geflügel wiener kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 215,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 1.5,
-    "fat_per_100g": 17,
+    "calories_per_100g": 223,
+    "protein_per_100g": 15.5,
+    "carbs_per_100g": 2.7,
+    "fat_per_100g": 16.2,
     "fiber_per_100g": 0,
     "typical_portion_g": 100,
     "typical_portion_name": "2 Würstchen (1 Paar)"
@@ -28,90 +29,131 @@
     {
       "name": "1 Würstchen klein (40g)",
       "portion_g": 40,
-      "calories": 86,
+      "calories": 89,
       "protein": 6,
       "carbs": 1,
-      "fat": 7
+      "fat": 6
     },
     {
       "name": "1 Würstchen (50g)",
       "portion_g": 50,
-      "calories": 108,
-      "protein": 7,
+      "calories": 112,
+      "protein": 8,
       "carbs": 1,
-      "fat": 9,
+      "fat": 8,
       "tip": "Einzelnes Würstchen"
     },
     {
       "name": "2 Würstchen / 1 Paar (100g)",
       "portion_g": 100,
-      "calories": 215,
-      "protein": 14,
-      "carbs": 2,
-      "fat": 17,
+      "calories": 223,
+      "protein": 16,
+      "carbs": 3,
+      "fat": 16,
       "tip": "Standard"
     },
     {
       "name": "3 Würstchen (150g)",
       "portion_g": 150,
-      "calories": 323,
-      "protein": 21,
-      "carbs": 2,
-      "fat": 26
+      "calories": 335,
+      "protein": 23,
+      "carbs": 4,
+      "fat": 24
     },
     {
       "name": "Halbe Packung (125g)",
       "portion_g": 125,
-      "calories": 269,
-      "protein": 18,
-      "carbs": 2,
-      "fat": 21
+      "calories": 279,
+      "protein": 19,
+      "carbs": 3,
+      "fat": 20
     },
     {
       "name": "Ganze Packung (250g)",
       "portion_g": 250,
-      "calories": 538,
-      "protein": 35,
-      "carbs": 4,
-      "fat": 43
+      "calories": 558,
+      "protein": 39,
+      "carbs": 7,
+      "fat": 41
+    },
+    {
+      "name": "2 Würstchen mit Brötchen (100g + 60g)",
+      "portion_g": 160,
+      "calories": 399,
+      "protein": 21,
+      "carbs": 34,
+      "fat": 19,
+      "basis": [
+        {
+          "g": 100
+        },
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Wiener Würstchen (Schwein, 50g)",
-      "calories": 140,
-      "emoji": "🌭"
+      "name": "Wiener Würstchen (Schwein/Rind, 50g)",
+      "calories": 145,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "fdcId": 172968,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Bockwurst (1 Stück, 100g)",
-      "calories": 270,
-      "emoji": "🌭"
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Putenbrust (Aufschnitt, 50g)",
-      "calories": 52,
-      "emoji": "🦃"
+      "calories": 53,
+      "emoji": "🦃",
+      "basis": [
+        {
+          "fdcId": 172941,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Bratwurst (1 Stück, 100g)",
-      "calories": 290,
-      "emoji": "🍖"
+      "calories": 333,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Leichter als klassische Wiener",
-      "text": "Geflügel-Wiener haben mit ca. 215 kcal pro 100g spürbar weniger Kalorien als Wiener aus Schwein und Rind (oft 280 kcal pro 100g) und sind fettärmer.",
+      "text": "Geflügel-Wiener haben mit ca. 223 kcal pro 100g spürbar weniger Kalorien als Wiener aus Schwein und Rind (rund 290 kcal pro 100g) und sind fettärmer.",
       "icon": "🌭"
     },
     {
       "title": "Solide Eiweißquelle",
-      "text": "Ein Paar (100g) liefert rund 14g Eiweiß. Mit einem Salat oder Gemüse kombiniert ergibt das eine sättigende, eiweißreiche Mahlzeit.",
+      "text": "Ein Paar (100g) liefert rund 16g Eiweiß. Mit einem Salat oder Gemüse kombiniert ergibt das eine sättigende, eiweißreiche Mahlzeit.",
       "icon": "💪"
     },
     {
       "title": "Auf das Fett achten",
-      "text": "Trotz Geflügel stammen etwa 70 Prozent der Kalorien aus Fett. Wer abnehmen möchte, bleibt am besten bei ein bis zwei Würstchen pro Portion.",
+      "text": "Trotz Geflügel stammen etwa zwei Drittel der Kalorien aus Fett. Wer abnehmen möchte, bleibt am besten bei ein bis zwei Würstchen pro Portion.",
       "icon": "⚖️"
     },
     {
@@ -121,22 +163,22 @@
     },
     {
       "title": "Ohne Brötchen sparen",
-      "text": "Ein Brötchen dazu bringt schnell 130 bis 200 kcal extra. Mit Senf und Gemüse statt Brot bleibt die Mahlzeit deutlich leichter.",
+      "text": "Ein Brötchen (60g) dazu bringt rund 176 kcal extra. Mit Senf und Gemüse statt Brot bleibt die Mahlzeit deutlich leichter.",
       "icon": "🥗"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Geflügel-Wiener?",
-      "answer": "Geflügel-Wiener haben etwa 215 kcal pro 100g. Ein einzelnes Würstchen (50g) kommt auf rund 108 kcal, ein Paar (100g) auf ca. 215 kcal."
+      "answer": "Geflügel-Wiener haben etwa 223 kcal pro 100g. Ein einzelnes Würstchen (50g) kommt auf rund 112 kcal, ein Paar (100g) auf ca. 223 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in Geflügel-Wiener?",
-      "answer": "Pro 100g enthalten Geflügel-Wiener ca. 14g Eiweiß. Ein Paar deckt damit einen guten Teil des Eiweißbedarfs einer Mahlzeit."
+      "answer": "Pro 100g enthalten Geflügel-Wiener ca. 15,5g Eiweiß. Ein Paar deckt damit einen guten Teil des Eiweißbedarfs einer Mahlzeit."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Geflügel-Wiener?",
-      "answer": "Mit rund 1,5g Kohlenhydraten pro 100g sind Geflügel-Wiener nahezu kohlenhydratfrei und damit auch für eine Low-Carb-Ernährung geeignet."
+      "answer": "Mit rund 2,7g Kohlenhydraten pro 100g sind Geflügel-Wiener nahezu kohlenhydratfrei und damit auch für eine Low-Carb-Ernährung geeignet."
     },
     {
       "question": "Sind Geflügel-Wiener gesünder als normale Wiener?",
@@ -148,7 +190,7 @@
     },
     {
       "question": "Wie viel Fett haben Geflügel-Wiener?",
-      "answer": "Geflügel-Wiener enthalten etwa 17g Fett pro 100g. Damit stammt der Großteil der Kalorien aus Fett, obwohl es sich um Geflügelfleisch handelt."
+      "answer": "Geflügel-Wiener enthalten etwa 16g Fett pro 100g. Damit stammt der Großteil der Kalorien aus Fett, obwohl es sich um Geflügelfleisch handelt."
     }
   ],
   "related_foods": [

@@ -3,9 +3,10 @@
   "name": "Gyros Pita",
   "emoji": "🥙",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2706962 (Gyro sandwich), Werte je 100 g",
   "seo": {
     "title": "Gyros Pita Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Gyros Pita? Eine Standard-Portion (280g) hat ca. 615 kcal. Nährwerte pro 100g & je Portion, Varianten & Tipps.",
+    "description": "Wie viele Kalorien hat eine Gyros Pita? Eine Standard-Portion (280g) hat ca. 515 kcal. Nährwerte pro 100g & je Portion, Varianten & Tipps.",
     "keywords": [
       "gyros pita kcal",
       "gyros pita kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 220,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 9,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 184,
+    "protein_per_100g": 11.2,
+    "carbs_per_100g": 18.8,
+    "fat_per_100g": 6.8,
+    "fiber_per_100g": 1,
     "typical_portion_g": 280,
     "typical_portion_name": "1 Gyros Pita (Standard)"
   },
@@ -28,94 +29,113 @@
     {
       "name": "Gyros Pita klein (200g)",
       "portion_g": 200,
-      "calories": 440,
-      "protein": 24,
-      "carbs": 44,
-      "fat": 18
+      "calories": 368,
+      "protein": 22,
+      "carbs": 38,
+      "fat": 14
     },
     {
       "name": "Gyros Pita Standard (280g)",
       "portion_g": 280,
-      "calories": 615,
-      "protein": 34,
-      "carbs": 62,
-      "fat": 25,
+      "calories": 515,
+      "protein": 31,
+      "carbs": 53,
+      "fat": 19,
       "tip": "Übliche Imbiss-Größe"
     },
     {
       "name": "Gyros Pita groß (350g)",
       "portion_g": 350,
-      "calories": 770,
-      "protein": 42,
-      "carbs": 77,
-      "fat": 32
+      "calories": 644,
+      "protein": 39,
+      "carbs": 66,
+      "fat": 24
     },
     {
       "name": "Gyros Pita mit Pommes (450g)",
       "portion_g": 450,
-      "calories": 1080,
-      "protein": 50,
-      "carbs": 115,
-      "fat": 45,
-      "tip": "Mit Fritten gefüllt deutlich kalorienreicher"
-    },
-    {
-      "name": "Gyros Pita mit Hähnchen (280g)",
-      "portion_g": 280,
-      "calories": 560,
-      "protein": 38,
-      "carbs": 62,
-      "fat": 18,
-      "tip": "Magerere Variante mit Geflügel"
+      "calories": 1046,
+      "protein": 37,
+      "carbs": 123,
+      "fat": 44,
+      "tip": "Mit Fritten gefüllt deutlich kalorienreicher",
+      "basis": [
+        {
+          "g": 280
+        },
+        {
+          "fdcId": 2709461,
+          "g": 170
+        }
+      ]
     },
     {
       "name": "Pita-Brot allein (75g)",
       "portion_g": 75,
-      "calories": 205,
+      "calories": 206,
       "protein": 7,
-      "carbs": 41,
-      "fat": 1
-    },
-    {
-      "name": "Gyrosfleisch allein (120g)",
-      "portion_g": 120,
-      "calories": 260,
-      "protein": 23,
-      "carbs": 1,
-      "fat": 18
+      "carbs": 42,
+      "fat": 1,
+      "basis": [
+        {
+          "slug": "pita",
+          "g": 75
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Pita-Brot allein",
-      "calories": 205,
-      "emoji": "🫓"
+      "name": "Falafel-Sandwich",
+      "calories": 570,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "falafel-sandwich"
+        }
+      ]
     },
     {
-      "name": "Gyros (Fleisch)",
-      "calories": 260,
-      "emoji": "🍖"
+      "name": "Chicken Wrap",
+      "calories": 406,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "chicken-wrap"
+        }
+      ]
     },
     {
       "name": "Burger",
-      "calories": 500,
-      "emoji": "🍔"
+      "calories": 418,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "burger"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hähnchen statt Schwein wählen",
-      "text": "Eine Gyros Pita mit Hähnchen spart Fett: ca. 560 kcal statt 615 kcal bei der Schweine-Variante, bei mehr Protein.",
+      "text": "Hähnchen-Gyros ist meist magerer als Gyros vom Schwein. FDC führt für beide keinen eigenen Eintrag; die Werte hier stammen vom Gyro-Sandwich im Pitabrot.",
       "icon": "🍗"
     },
     {
       "title": "Ohne Pommes bestellen",
-      "text": "Wird die Pita zusätzlich mit Fritten gefüllt, steigt sie auf rund 1080 kcal. Ohne Pommes bleibt es bei etwa 615 kcal.",
+      "text": "Wird die Pita zusätzlich mit Fritten (170g) gefüllt, steigt sie auf rund 1.046 kcal. Ohne Pommes bleibt es bei etwa 515 kcal.",
       "icon": "🍟"
     },
     {
@@ -130,26 +150,26 @@
     },
     {
       "title": "Proteinreiche Sattmacher-Mahlzeit",
-      "text": "Mit rund 34g Protein pro Standard-Portion liefert die Gyros Pita ordentlich Eiweiß und hält dadurch länger satt.",
+      "text": "Mit rund 31g Protein pro Standard-Portion liefert die Gyros Pita ordentlich Eiweiß und hält dadurch länger satt.",
       "icon": "💪"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Gyros Pita?",
-      "answer": "Eine Gyros Pita in Standard-Größe (ca. 280g) hat etwa 615 kcal. Pro 100g sind es rund 220 kcal."
+      "answer": "Eine Gyros Pita in Standard-Größe (ca. 280g) hat etwa 515 kcal. Pro 100g sind es rund 184 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine große Gyros Pita?",
-      "answer": "Eine große Gyros Pita (ca. 350g) kommt auf etwa 770 kcal. Mit zusätzlichen Pommes gefüllt sind es rund 1080 kcal."
+      "answer": "Eine große Gyros Pita (ca. 350g) kommt auf etwa 644 kcal. Eine Standard-Pita mit Pommes gefüllt (450g) hat rund 1.046 kcal."
     },
     {
       "question": "Wie viel Protein hat eine Gyros Pita?",
-      "answer": "Eine Standard-Portion liefert etwa 34g Protein, vor allem aus dem Gyrosfleisch. Die Hähnchen-Variante kommt sogar auf rund 38g."
+      "answer": "Eine Standard-Portion liefert etwa 31g Protein, vor allem aus dem Gyrosfleisch."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Gyros Pita?",
-      "answer": "Eine Standard-Gyros-Pita (280g) enthält etwa 62g Kohlenhydrate, die größtenteils aus dem Pita-Brot stammen."
+      "answer": "Eine Standard-Gyros-Pita (280g) enthält etwa 53g Kohlenhydrate, die größtenteils aus dem Pita-Brot stammen."
     },
     {
       "question": "Ist Gyros Pita zum Abnehmen geeignet?",

@@ -3,49 +3,228 @@
   "name": "Gnocchi",
   "emoji": "🥔",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708722 (Gnocchi, potato), Werte je 100 g",
   "seo": {
     "title": "Gnocchi Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Gnocchi? Nährwerte für alle Varianten von Gnocchi mit Pesto bis Gnocchi alla Sorrentina. Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 133,
-    "protein_per_100g": 3,
-    "carbs_per_100g": 27,
-    "fat_per_100g": 1,
-    "fiber_per_100g": 1.8,
+    "calories_per_100g": 135,
+    "protein_per_100g": 2.4,
+    "carbs_per_100g": 17.2,
+    "fat_per_100g": 6.3,
+    "fiber_per_100g": 1,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    {"name": "Gnocchi mit Tomatensauce", "portion_g": 400, "calories": 480, "protein": 12, "carbs": 85, "fat": 10, "tip": "Leichte Variante"},
-    {"name": "Gnocchi mit Pesto", "portion_g": 350, "calories": 550, "protein": 14, "carbs": 78, "fat": 22, "tip": "Beliebter Klassiker"},
-    {"name": "Gnocchi alla Sorrentina (Mozzarella)", "portion_g": 400, "calories": 620, "protein": 20, "carbs": 82, "fat": 24},
-    {"name": "Gnocchi mit Salbei-Butter", "portion_g": 350, "calories": 530, "protein": 10, "carbs": 80, "fat": 20},
-    {"name": "Gnocchi mit Gorgonzola-Sauce", "portion_g": 380, "calories": 640, "protein": 18, "carbs": 78, "fat": 30, "tip": "Kalorienreichste Variante"},
-    {"name": "Gnocchi mit Gemüse", "portion_g": 400, "calories": 440, "protein": 12, "carbs": 82, "fat": 8, "tip": "Ideal zum Abnehmen"},
-    {"name": "Süßkartoffel-Gnocchi", "portion_g": 350, "calories": 460, "protein": 10, "carbs": 85, "fat": 9},
-    {"name": "Gnocchi aus der Pfanne (angebraten)", "portion_g": 350, "calories": 580, "protein": 11, "carbs": 78, "fat": 26}
+    {
+      "name": "Gnocchi mit Tomatensauce",
+      "portion_g": 400,
+      "calories": 456,
+      "protein": 9,
+      "carbs": 60,
+      "fat": 20,
+      "tip": "Leichte Variante",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 2709745,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Gnocchi mit Pesto",
+      "portion_g": 350,
+      "calories": 618,
+      "protein": 10,
+      "carbs": 55,
+      "fat": 40,
+      "tip": "Beliebter Klassiker",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 171580,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Gnocchi alla Sorrentina (Mozzarella)",
+      "portion_g": 400,
+      "calories": 538,
+      "protein": 17,
+      "carbs": 56,
+      "fat": 28,
+      "basis": [
+        {
+          "g": 280
+        },
+        {
+          "fdcId": 2709745,
+          "g": 80
+        },
+        {
+          "fdcId": 170845,
+          "g": 40
+        }
+      ]
+    },
+    {
+      "name": "Gnocchi mit Salbei-Butter",
+      "portion_g": 350,
+      "calories": 589,
+      "protein": 8,
+      "carbs": 57,
+      "fat": 37,
+      "basis": [
+        {
+          "g": 330
+        },
+        {
+          "fdcId": 173410,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Gnocchi mit Gemüse",
+      "portion_g": 400,
+      "calories": 435,
+      "protein": 10,
+      "carbs": 63,
+      "fat": 16,
+      "tip": "Ideal zum Abnehmen",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "fdcId": 170472,
+          "g": 150
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"},
-    {"name": "Kartoffelpüree", "calories": 310, "emoji": "🥔"},
-    {"name": "Risotto", "calories": 490, "emoji": "🍚"},
-    {"name": "Penne Arrabiata", "calories": 580, "emoji": "🌶️"}
+    {
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Kartoffelpüree (1 Portion, 200g)",
+      "calories": 226,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelpueree",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Risotto (1 Teller, 350g)",
+      "calories": 490,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "risotto",
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Penne Arrabiata (1 Teller, 400g)",
+      "calories": 424,
+      "emoji": "🌶️",
+      "basis": [
+        {
+          "slug": "penne-arrabiata",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Nudeln gekocht (1 Portion, 200g)",
+      "calories": 316,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Gnocchi pur sind kalorienarm", "text": "Gnocchi ohne Sauce haben nur 133 kcal/100g – weniger als Pasta (158 kcal/100g gekocht).", "icon": "💡"},
-    {"title": "Tomatensauce statt Sahnesauce", "text": "Tomatensauce spart ca. 150 kcal pro Teller im Vergleich zu Gorgonzola- oder Sahnesauce.", "icon": "🍅"},
-    {"title": "Nicht in Butter anbraten", "text": "Angebratene Gnocchi saugen viel Fett auf – das verdoppelt fast den Fettgehalt.", "icon": "🍳"},
-    {"title": "Selbstgemacht ist besser", "text": "Selbstgemachte Gnocchi aus Kartoffeln, Mehl und Ei sind frischer und du kontrollierst die Zutaten.", "icon": "👩‍🍳"},
-    {"title": "Gemüse als Beilage", "text": "Ein Blattsalat oder gebratenes Gemüse ergänzt Gnocchi perfekt und macht satter ohne viele Kalorien.", "icon": "🥗"}
+    {
+      "title": "Gnocchi pur sind kalorienarm",
+      "text": "Gnocchi ohne Sauce haben nur 135 kcal/100g, weniger als Pasta (158 kcal/100g gekocht).",
+      "icon": "💡"
+    },
+    {
+      "title": "Tomatensauce statt Sahnesauce",
+      "text": "Tomatensauce ist deutlich leichter als Gorgonzola- oder Sahnesauce.",
+      "icon": "🍅"
+    },
+    {
+      "title": "Nicht in Butter anbraten",
+      "text": "Angebratene Gnocchi saugen viel Fett auf und werden dadurch deutlich gehaltvoller.",
+      "icon": "🍳"
+    },
+    {
+      "title": "Selbstgemacht ist besser",
+      "text": "Selbstgemachte Gnocchi aus Kartoffeln, Mehl und Ei sind frischer und du kontrollierst die Zutaten.",
+      "icon": "👩‍🍳"
+    },
+    {
+      "title": "Gemüse als Beilage",
+      "text": "Ein Blattsalat oder gebratenes Gemüse ergänzt Gnocchi perfekt und macht satter ohne viele Kalorien.",
+      "icon": "🥗"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Gnocchi?", "answer": "100g Gnocchi (ohne Sauce) haben ca. 133 kcal. Ein Teller mit Sauce hat je nach Variante 440-640 kcal."},
-    {"question": "Haben Gnocchi mehr Kalorien als Pasta?", "answer": "Nein, Gnocchi haben weniger Kalorien pro 100g (133 kcal) als gekochte Pasta (158 kcal), da sie aus Kartoffeln bestehen."},
-    {"question": "Sind Gnocchi gut zum Abnehmen?", "answer": "In Maßen ja. Gnocchi mit Tomatensauce und Gemüse sind eine gute Wahl mit ca. 440-480 kcal pro Teller."},
-    {"question": "Wie viel Protein haben Gnocchi?", "answer": "Gnocchi haben nur ca. 3g Protein pro 100g – relativ wenig. Ergänze mit Hähnchen oder Mozzarella für mehr Eiweiß."},
-    {"question": "Welche Gnocchi-Sauce hat am wenigsten Kalorien?", "answer": "Tomatensauce ist am kalorienärmsten (ca. 40 kcal/100g). Gorgonzola- und Sahnesaucen haben 3-4x so viele Kalorien."},
-    {"question": "Wie viele Gnocchi sind eine Portion?", "answer": "Eine Standard-Portion sind ca. 250-350g Gnocchi. Eine Packung (500g) reicht für 2 Portionen."}
+    {
+      "question": "Wie viele Kalorien haben Gnocchi?",
+      "answer": "100g Gnocchi (ohne Sauce) haben ca. 135 kcal. Ein Teller mit Sauce hat je nach Variante ca. 435 bis 618 kcal."
+    },
+    {
+      "question": "Haben Gnocchi mehr Kalorien als Pasta?",
+      "answer": "Nein, Gnocchi haben weniger Kalorien pro 100g (135 kcal) als gekochte Pasta (158 kcal), da sie aus Kartoffeln bestehen."
+    },
+    {
+      "question": "Sind Gnocchi gut zum Abnehmen?",
+      "answer": "In Maßen ja. Gnocchi mit Gemüse oder Tomatensauce sind eine gute Wahl mit ca. 435 bis 456 kcal pro Teller."
+    },
+    {
+      "question": "Wie viel Protein haben Gnocchi?",
+      "answer": "Gnocchi haben nur ca. 2,4g Protein pro 100g, relativ wenig. Ergänze mit Hähnchen oder Mozzarella für mehr Eiweiß."
+    },
+    {
+      "question": "Welche Gnocchi-Sauce hat am wenigsten Kalorien?",
+      "answer": "Tomatensauce ist am kalorienärmsten (ca. 51 kcal/100g). Gorgonzola- und Sahnesaucen haben deutlich mehr Kalorien."
+    },
+    {
+      "question": "Wie viele Gnocchi sind eine Portion?",
+      "answer": "Eine Standard-Portion sind ca. 250-350g Gnocchi. Eine Packung (500g) reicht für 2 Portionen."
+    }
   ],
-  "related_foods": ["spaghetti-bolognese", "kartoffeln", "risotto", "penne-arrabiata"]
+  "related_foods": [
+    "spaghetti-bolognese",
+    "kartoffeln",
+    "risotto",
+    "penne-arrabiata"
+  ]
 }

@@ -3,9 +3,10 @@
   "name": "Spaghetti Napoli",
   "emoji": "🍝",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708831 (Pasta with tomato-based sauce, home recipe), Werte je 100 g",
   "seo": {
     "title": "Spaghetti Napoli Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Spaghetti Napoli? Eine Portion (300g) hat ca. 393 kcal. Nährwerte pro 100g, Portionen im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Spaghetti Napoli? Eine Portion (300g) hat ca. 318 kcal. Nährwerte pro 100g, Portionen im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "spaghetti napoli kalorien",
       "spaghetti napoli kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 131,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 2.5,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 106,
+    "protein_per_100g": 3.7,
+    "carbs_per_100g": 19.9,
+    "fat_per_100g": 1.2,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Teller (300g)"
   },
@@ -28,82 +29,115 @@
     {
       "name": "Kleine Portion (200g)",
       "portion_g": 200,
-      "calories": 262,
-      "protein": 10,
-      "carbs": 44,
-      "fat": 5,
+      "calories": 212,
+      "protein": 7,
+      "carbs": 40,
+      "fat": 2,
       "tip": "Beilage oder leichter Hunger"
     },
     {
       "name": "1 Teller (300g)",
       "portion_g": 300,
-      "calories": 393,
-      "protein": 15,
-      "carbs": 66,
-      "fat": 8,
+      "calories": 318,
+      "protein": 11,
+      "carbs": 60,
+      "fat": 4,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Portion (400g)",
       "portion_g": 400,
-      "calories": 524,
-      "protein": 20,
-      "carbs": 88,
-      "fat": 10,
+      "calories": 424,
+      "protein": 15,
+      "carbs": 80,
+      "fat": 5,
       "tip": "Hauptmahlzeit mit Hunger"
     },
     {
       "name": "Familienteller (500g)",
       "portion_g": 500,
-      "calories": 655,
-      "protein": 25,
-      "carbs": 110,
-      "fat": 13
+      "calories": 530,
+      "protein": 19,
+      "carbs": 100,
+      "fat": 6
     },
     {
       "name": "Mit Parmesan (300g + 15g)",
       "portion_g": 315,
-      "calories": 451,
-      "protein": 21,
-      "carbs": 66,
-      "fat": 12,
-      "tip": "Pro Esslöffel Parmesan ca. 58 kcal extra"
+      "calories": 381,
+      "protein": 15,
+      "carbs": 62,
+      "fat": 8,
+      "tip": "Pro Esslöffel Parmesan (15g) ca. 63 kcal extra",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 171247,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Kinderportion (150g)",
       "portion_g": 150,
-      "calories": 197,
-      "protein": 8,
-      "carbs": 33,
-      "fat": 4
+      "calories": 159,
+      "protein": 6,
+      "carbs": 30,
+      "fat": 2
     }
   ],
   "comparison": [
     {
       "name": "Spaghetti Bolognese (300g)",
-      "calories": 432,
-      "emoji": "🍝"
+      "calories": 375,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 300
+        }
+      ]
     },
     {
       "name": "Spaghetti Carbonara (300g)",
-      "calories": 588,
-      "emoji": "🍝"
+      "calories": 492,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-carbonara",
+          "g": 300
+        }
+      ]
     },
     {
       "name": "Penne Arrabiata (300g)",
-      "calories": 369,
-      "emoji": "🍝"
+      "calories": 318,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "penne-arrabiata",
+          "g": 300
+        }
+      ]
     },
     {
       "name": "Pizza Margherita (300g)",
-      "calories": 700,
-      "emoji": "🍕"
+      "calories": 798,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 300
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Die leichteste Pasta-Variante",
-      "text": "Spaghetti Napoli ist mit ca. 131 kcal pro 100g eine der kalorienärmsten Pasta-Gerichte, da die Tomatensauce ohne Sahne oder Hackfleisch auskommt.",
+      "text": "Spaghetti Napoli ist mit ca. 106 kcal pro 100g eines der kalorienärmsten Pasta-Gerichte, da die Tomatensauce ohne Sahne oder Hackfleisch auskommt.",
       "icon": "🍅"
     },
     {
@@ -113,40 +147,40 @@
     },
     {
       "title": "Mehr Protein mit kleinem Trick",
-      "text": "Eine Portion liefert nur rund 15g Eiweiß. Wer Vollkorn-Spaghetti nimmt oder etwas Hülsenfrüchte unterrührt, erhöht Protein und Ballaststoffe spürbar.",
+      "text": "Eine Portion liefert nur rund 11g Eiweiß. Wer Vollkorn-Spaghetti nimmt oder etwas Hülsenfrüchte unterrührt, erhöht Protein und Ballaststoffe spürbar.",
       "icon": "💪"
     },
     {
       "title": "Vorsicht beim Käse",
-      "text": "Ein gehäufter Esslöffel Parmesan (15g) bringt rund 58 kcal zusätzlich. Beim Abnehmen lieber sparsam streuen.",
+      "text": "Ein gehäufter Esslöffel Parmesan (15g) bringt rund 63 kcal zusätzlich. Beim Abnehmen lieber sparsam streuen.",
       "icon": "🧀"
     },
     {
       "title": "Portionsgröße im Blick behalten",
-      "text": "Der Unterschied zwischen 200g und 500g sind fast 400 kcal. Eine Küchenwaage hilft, die tatsächliche Menge realistisch einzuschätzen.",
+      "text": "Der Unterschied zwischen 200g und 500g beträgt rund 318 kcal. Eine Küchenwaage hilft, die tatsächliche Menge realistisch einzuschätzen.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Portion Spaghetti Napoli?",
-      "answer": "Ein normaler Teller (300g) hat ca. 393 kcal. Eine kleine Portion (200g) kommt auf rund 262 kcal, eine große Portion (400g) auf etwa 524 kcal."
+      "answer": "Ein normaler Teller (300g) hat ca. 318 kcal. Eine kleine Portion (200g) kommt auf rund 212 kcal, eine große Portion (400g) auf etwa 424 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Spaghetti Napoli pro 100g?",
-      "answer": "Spaghetti Napoli (gekocht, mit Tomatensauce) hat ca. 131 kcal pro 100g."
+      "answer": "Spaghetti Napoli (gekocht, mit Tomatensauce) hat ca. 106 kcal pro 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Spaghetti Napoli?",
-      "answer": "Pro 100g sind es etwa 22g Kohlenhydrate. Ein Teller (300g) liefert rund 66g, hauptsächlich aus den gekochten Spaghetti."
+      "answer": "Pro 100g sind es etwa 19,9g Kohlenhydrate. Ein Teller (300g) liefert rund 60g, hauptsächlich aus den gekochten Spaghetti."
     },
     {
       "question": "Wie viel Protein hat Spaghetti Napoli?",
-      "answer": "Pro 100g enthält das Gericht etwa 5g Eiweiß, eine Portion (300g) also rund 15g. Das Eiweiß stammt überwiegend aus der Pasta."
+      "answer": "Pro 100g enthält das Gericht etwa 3,7g Eiweiß, eine Portion (300g) also rund 11g. Das Eiweiß stammt überwiegend aus der Pasta."
     },
     {
       "question": "Ist Spaghetti Napoli zum Abnehmen geeignet?",
-      "answer": "Ja, in Maßen. Mit nur 131 kcal pro 100g ist es eine der leichteren Pasta-Optionen. Auf die Portionsgröße achten und Käse sparsam einsetzen."
+      "answer": "Ja, in Maßen. Mit nur 106 kcal pro 100g ist es eine der leichteren Pasta-Optionen. Auf die Portionsgröße achten und Käse sparsam einsetzen."
     },
     {
       "question": "Ist Spaghetti Napoli gesund?",

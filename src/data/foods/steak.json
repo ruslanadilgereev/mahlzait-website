@@ -3,9 +3,10 @@
   "name": "Steak",
   "emoji": "🥩",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2705824 (Beef, steak, NFS), Werte je 100 g",
   "seo": {
     "title": "Steak Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Steak? Ein 200g Rumpsteak hat ca. 540 kcal. Nährwerte pro 100g & Portion, Teilstücke im Vergleich plus Eiweiß-Tipps.",
+    "description": "Wie viele Kalorien hat ein Steak? Ein Steak (200g) hat ca. 458 kcal. Nährwerte pro 100g & Portion, Teilstücke im Vergleich plus Eiweiß-Tipps.",
     "keywords": [
       "steak kalorien",
       "kalorien steak",
@@ -18,10 +19,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 270,
+    "calories_per_100g": 229,
     "protein_per_100g": 27,
     "carbs_per_100g": 0,
-    "fat_per_100g": 18,
+    "fat_per_100g": 12.9,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Steak (200g)"
@@ -30,83 +31,126 @@
     {
       "name": "Kleines Steak (150g)",
       "portion_g": 150,
-      "calories": 405,
+      "calories": 344,
       "protein": 41,
       "carbs": 0,
-      "fat": 27
+      "fat": 19
     },
     {
       "name": "Steak (200g)",
       "portion_g": 200,
-      "calories": 540,
+      "calories": 458,
       "protein": 54,
       "carbs": 0,
-      "fat": 36,
+      "fat": 26,
       "tip": "Standard-Portion"
     },
     {
       "name": "Großes Steak (250g)",
       "portion_g": 250,
-      "calories": 675,
+      "calories": 573,
       "protein": 68,
-      "carbs": 0,
-      "fat": 45
-    },
-    {
-      "name": "Rumpsteak (180g)",
-      "portion_g": 180,
-      "calories": 486,
-      "protein": 49,
       "carbs": 0,
       "fat": 32
     },
     {
+      "name": "Rumpsteak (180g)",
+      "portion_g": 180,
+      "calories": 475,
+      "protein": 48,
+      "carbs": 0,
+      "fat": 30,
+      "tip": "Mit Fettrand, gegrillt",
+      "basis": [
+        {
+          "fdcId": 169539,
+          "g": 180
+        }
+      ]
+    },
+    {
       "name": "Filetsteak (200g, mager)",
       "portion_g": 200,
-      "calories": 370,
-      "protein": 50,
+      "calories": 400,
+      "protein": 58,
       "carbs": 0,
-      "fat": 18,
-      "tip": "Magerstes Teilstück"
+      "fat": 17,
+      "tip": "Magerstes Teilstück",
+      "basis": [
+        {
+          "fdcId": 171811,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Ribeye (250g, durchwachsen)",
       "portion_g": 250,
-      "calories": 750,
+      "calories": 728,
       "protein": 60,
       "carbs": 0,
-      "fat": 56,
-      "tip": "Fettreich"
+      "fat": 54,
+      "tip": "Fettreich",
+      "basis": [
+        {
+          "slug": "rib-eye-steak",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "100g Steak",
       "portion_g": 100,
-      "calories": 270,
+      "calories": 229,
       "protein": 27,
       "carbs": 0,
-      "fat": 18
+      "fat": 13
     }
   ],
   "comparison": [
     {
       "name": "Hähnchenbrust (200g)",
       "calories": 330,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Lachsfilet (200g)",
       "calories": 416,
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachsfilet",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Schweineschnitzel (200g, paniert)",
-      "calories": 580,
-      "emoji": "🐖"
+      "name": "Wiener Schnitzel (200g, paniert)",
+      "calories": 476,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Tofu (200g)",
-      "calories": 290,
-      "emoji": "🧆"
+      "calories": 288,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "tofu",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
@@ -127,7 +171,7 @@
     },
     {
       "title": "Sparsam mit Öl braten",
-      "text": "Eine beschichtete oder gusseiserne Pfanne braucht kaum Fett. Jeder Esslöffel Öl bringt rund 90 kcal zusätzlich auf den Teller.",
+      "text": "Eine beschichtete oder gusseiserne Pfanne braucht kaum Fett. Jeder Esslöffel Öl bringt zusätzliche Kalorien auf den Teller.",
       "icon": "🍳"
     },
     {
@@ -139,7 +183,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Steak?",
-      "answer": "Ein klassisches 200g Rindersteak hat etwa 540 kcal. Pro 100g sind es rund 270 kcal. Ein kleines 150g Steak liegt bei ca. 405 kcal."
+      "answer": "Ein klassisches 200g Rindersteak hat etwa 458 kcal. Pro 100g sind es rund 229 kcal. Ein kleines 150g Steak liegt bei ca. 344 kcal."
     },
     {
       "question": "Wie viel Protein hat ein Steak?",
@@ -155,7 +199,7 @@
     },
     {
       "question": "Welches Steak hat die wenigsten Kalorien?",
-      "answer": "Filetsteak ist das magerste Teilstück mit ca. 185 kcal pro 100g. Fettreiche Teilstücke wie Ribeye oder T-Bone kommen dagegen auf rund 300 kcal pro 100g."
+      "answer": "Filetsteak ist das magerste Teilstück mit ca. 200 kcal pro 100g. Fettreiche Teilstücke wie Ribeye kommen dagegen auf rund 291 kcal pro 100g."
     },
     {
       "question": "Ist Steak gesund?",

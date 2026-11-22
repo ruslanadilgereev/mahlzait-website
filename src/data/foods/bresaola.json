@@ -3,51 +3,239 @@
   "name": "Bresaola",
   "emoji": "🥩",
   "category": "supermarkt",
-  "source": "Herstellerangabe Citterio, Bresaola della Valtellina IGP (EAN 80551058, Open Food Facts), Werte je 100 g; Spanne je nach Hersteller 150 bis 175 kcal",
+  "source": "USDA FoodData Central, FDC-ID 170604 (Beef, cured, dried), Werte je 100 g",
   "seo": {
-    "title": "Bresaola Kalorien: 154 kcal/100g, 34g Protein | Mahlzait",
-    "description": "Bresaola hat rund 154 kcal und 34g Protein pro 100g – der magerste Aufschnitt im Kühlregal. Berechne Kalorien pro Scheibe & Portion. Inkl. Vergleich mit Parmaschinken.",
-    "keywords": ["bresaola kalorien", "kalorien bresaola", "bresaola nährwerte", "bresaola protein", "bresaola della valtellina kalorien", "bresaola abnehmen", "bresaola gesund", "luftgetrocknetes rindfleisch kalorien"]
+    "title": "Bresaola Kalorien: 153 kcal/100g, 31g Protein | Mahlzait",
+    "description": "Bresaola hat rund 153 kcal und 31g Protein pro 100g, einer der magersten Aufschnitte im Kühlregal. Berechne Kalorien pro Scheibe & Portion. Inkl. Vergleich mit Parmaschinken.",
+    "keywords": [
+      "bresaola kalorien",
+      "kalorien bresaola",
+      "bresaola nährwerte",
+      "bresaola protein",
+      "bresaola della valtellina kalorien",
+      "bresaola abnehmen",
+      "bresaola gesund",
+      "luftgetrocknetes rindfleisch kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 154,
-    "protein_per_100g": 34,
-    "carbs_per_100g": 0.5,
-    "fat_per_100g": 2,
+    "calories_per_100g": 153,
+    "protein_per_100g": 31.1,
+    "carbs_per_100g": 2.8,
+    "fat_per_100g": 1.9,
     "fiber_per_100g": 0,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Portion (ca. 7 Scheiben)"
   },
   "variants": [
-    { "name": "Bresaola pur (Portion, 50g)", "portion_g": 50, "calories": 77, "protein": 17, "carbs": 0, "fat": 1, "tip": "17g Protein für nur 77 kcal" },
-    { "name": "1 Scheibe (7g)", "portion_g": 7, "calories": 11, "protein": 2, "carbs": 0, "fat": 0 },
-    { "name": "Packung Aufschnitt (70g)", "portion_g": 70, "calories": 108, "protein": 24, "carbs": 0, "fat": 1 },
-    { "name": "Bresaola-Carpaccio mit Rucola, Parmesan & Olivenöl (50g + 20g + 1 TL)", "portion_g": 95, "calories": 200, "protein": 24, "carbs": 1, "fat": 12, "tip": "Klassische italienische Vorspeise" },
-    { "name": "Vollkornbrot mit Bresaola (1 Scheibe + 30g)", "portion_g": 80, "calories": 156, "protein": 15, "carbs": 21, "fat": 2, "tip": "Magerer Brotbelag statt Wurst" },
-    { "name": "Bresaola-Röllchen mit Frischkäse (30g + 30g)", "portion_g": 60, "calories": 116, "protein": 12, "carbs": 1, "fat": 8, "tip": "Low-Carb-Snack" },
-    { "name": "Statt Salami aufs Brot (30g)", "portion_g": 30, "calories": 46, "protein": 10, "carbs": 0, "fat": 1, "tip": "Spart rund 55 kcal gegenüber Salami" },
-    { "name": "Protein-Snack pur (25g)", "portion_g": 25, "calories": 39, "protein": 9, "carbs": 0, "fat": 0 }
+    {
+      "name": "Bresaola pur (Portion, 50g)",
+      "portion_g": 50,
+      "calories": 77,
+      "protein": 16,
+      "carbs": 1,
+      "fat": 1,
+      "tip": "16g Protein für nur 77 kcal"
+    },
+    {
+      "name": "1 Scheibe (7g)",
+      "portion_g": 7,
+      "calories": 11,
+      "protein": 2,
+      "carbs": 0,
+      "fat": 0
+    },
+    {
+      "name": "Packung Aufschnitt (70g)",
+      "portion_g": 70,
+      "calories": 107,
+      "protein": 22,
+      "carbs": 2,
+      "fat": 1
+    },
+    {
+      "name": "Bresaola-Carpaccio mit Rucola, Parmesan & Olivenöl (50g + 20g + 20g + 1 TL)",
+      "portion_g": 94.5,
+      "calories": 200,
+      "protein": 23,
+      "carbs": 3,
+      "fat": 11,
+      "tip": "Klassische italienische Vorspeise",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 169387,
+          "g": 20
+        },
+        {
+          "fdcId": 170848,
+          "g": 20
+        },
+        {
+          "fdcId": 171413,
+          "g": 4.5
+        }
+      ]
+    },
+    {
+      "name": "Vollkornbrot mit Bresaola (1 Scheibe + 30g)",
+      "portion_g": 80,
+      "calories": 146,
+      "protein": 13,
+      "carbs": 19,
+      "fat": 1,
+      "tip": "Magerer Brotbelag statt Wurst",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 50
+        },
+        {
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Bresaola-Röllchen mit Frischkäse (30g + 30g)",
+      "portion_g": 60,
+      "calories": 122,
+      "protein": 12,
+      "carbs": 2,
+      "fat": 7,
+      "tip": "Low-Carb-Snack",
+      "basis": [
+        {
+          "g": 30
+        },
+        {
+          "slug": "frischkaese",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Statt Salami aufs Brot (30g)",
+      "portion_g": 30,
+      "calories": 46,
+      "protein": 9,
+      "carbs": 1,
+      "fat": 1,
+      "tip": "Spart rund 68 kcal gegenüber Salami"
+    },
+    {
+      "name": "Protein-Snack pur (25g)",
+      "portion_g": 25,
+      "calories": 38,
+      "protein": 8,
+      "carbs": 1,
+      "fat": 0
+    }
   ],
   "comparison": [
-    { "name": "Putenbrust-Aufschnitt", "calories": 111, "emoji": "🍗" },
-    { "name": "Roastbeef", "calories": 152, "emoji": "🥩" },
-    { "name": "Parmaschinken", "calories": 245, "emoji": "🍖" },
-    { "name": "Salami", "calories": 336, "emoji": "🥓" }
+    {
+      "name": "Putenbrust-Aufschnitt (50g)",
+      "calories": 53,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 172941,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Roastbeef (50g)",
+      "calories": 58,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "roastbeef",
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Parmaschinken (50g)",
+      "calories": 98,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "fdcId": 2705879,
+          "g": 50
+        }
+      ]
+    },
+    {
+      "name": "Salami (50g)",
+      "calories": 189,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "fdcId": 174582,
+          "g": 50
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Protein-König unter den Aufschnitten", "text": "34g Protein pro 100g bei nur 154 kcal: Bresaola liefert mehr Eiweiß als Parmaschinken (27g) bei fast 40 Prozent weniger Kalorien. Kaum ein Aufschnitt hat eine bessere Protein-Kalorien-Bilanz.", "icon": "💪" },
-    { "title": "Was ist Bresaola eigentlich?", "text": "Luftgetrocknetes, gepökeltes Rindfleisch aus dem Veltlin (Lombardei). Die Bezeichnung Bresaola della Valtellina IGP ist eine geschützte geografische Angabe und wird aus mageren Teilstücken der Rinderkeule hergestellt.", "icon": "🇮🇹" },
-    { "title": "Salzgehalt im Blick behalten", "text": "Herstellungsbedingt enthält Bresaola rund 4g Salz pro 100g. Schon 100g decken damit fast die von der WHO empfohlene Tagesmenge von 5g. Wer auf den Blutdruck achtet, bleibt bei kleinen Portionen.", "icon": "🧂" },
-    { "title": "Fast ohne Fett und Kohlenhydrate", "text": "Mit rund 2g Fett und 0,5g Kohlenhydraten pro 100g passt Bresaola in praktisch jede Ernährungsform, von Low Carb bis zur klassischen Diät.", "icon": "🎯" },
-    { "title": "Werte schwanken je nach Hersteller", "text": "IGP-Produkte liegen je nach Hersteller und Zuschnitt zwischen 150 und 175 kcal pro 100g (Fettgehalt 2 bis 4g). Ein Blick aufs Etikett lohnt sich, oder du scannst die Packung einfach mit Mahlzait.", "icon": "🏷️" }
+    {
+      "title": "Protein-König unter den Aufschnitten",
+      "text": "31g Protein pro 100g bei nur 153 kcal: Bresaola liefert mehr Eiweiß als Parmaschinken (28g) bei rund 20 Prozent weniger Kalorien. Kaum ein Aufschnitt hat eine bessere Protein-Kalorien-Bilanz.",
+      "icon": "💪"
+    },
+    {
+      "title": "Was ist Bresaola eigentlich?",
+      "text": "Luftgetrocknetes, gepökeltes Rindfleisch aus dem Veltlin (Lombardei). Die Bezeichnung Bresaola della Valtellina IGP ist eine geschützte geografische Angabe und wird aus mageren Teilstücken der Rinderkeule hergestellt.",
+      "icon": "🇮🇹"
+    },
+    {
+      "title": "Salzgehalt im Blick behalten",
+      "text": "Herstellungsbedingt enthält Bresaola rund 7g Salz pro 100g. Schon 100g überschreiten damit die von der WHO empfohlene Tagesmenge von 5g. Wer auf den Blutdruck achtet, bleibt bei kleinen Portionen.",
+      "icon": "🧂"
+    },
+    {
+      "title": "Fast ohne Fett und Kohlenhydrate",
+      "text": "Mit rund 2g Fett und 2,8g Kohlenhydraten pro 100g passt Bresaola in praktisch jede Ernährungsform, von Low Carb bis zur klassischen Diät.",
+      "icon": "🎯"
+    },
+    {
+      "title": "Werte schwanken je nach Hersteller",
+      "text": "IGP-Produkte unterscheiden sich je nach Hersteller und Zuschnitt in Kalorien und Fettgehalt. Ein Blick aufs Etikett lohnt sich, oder du scannst die Packung einfach mit Mahlzait.",
+      "icon": "🏷️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Bresaola?", "answer": "Bresaola hat rund 154 kcal pro 100g (Herstellerangabe Citterio für Bresaola della Valtellina IGP). Je nach Hersteller liegen die Werte zwischen 150 und 175 kcal. Eine übliche Portion von 50g kommt auf etwa 77 kcal." },
-    { "question": "Was ist Bresaola?", "answer": "Bresaola ist luftgetrockneter, gepökelter Rinderschinken aus dem Veltlin in der Lombardei. Bresaola della Valtellina IGP ist eine geschützte geografische Angabe: Hergestellt wird sie aus besonders mageren Teilstücken der Rinderkeule, klassisch der Punta d'anca." },
-    { "question": "Ist Bresaola gut zum Abnehmen?", "answer": "Ja, unter den Wurstwaren hat Bresaola eine der besten Protein-Kalorien-Bilanzen: 34g Eiweiß bei nur 154 kcal pro 100g sättigen stark und schützen die Muskeln im Kaloriendefizit. Einziger Haken ist der hohe Salzgehalt von rund 4g pro 100g." },
-    { "question": "Bresaola oder Parmaschinken, was ist kalorienärmer?", "answer": "Bresaola ist deutlich leichter: 154 kcal und 2g Fett pro 100g gegenüber 245 kcal und rund 16g Fett beim Parmaschinken. Bresaola wird aus Rind hergestellt, Parmaschinken aus Schwein." },
-    { "question": "Wie viel wiegt eine Scheibe Bresaola?", "answer": "Eine hauchdünne Scheibe wiegt etwa 7g und hat damit nur rund 11 kcal. Selbst 10 Scheiben bleiben unter 110 kcal." },
-    { "question": "Ist Bresaola Low Carb geeignet?", "answer": "Ja, mit 0,5g Kohlenhydraten pro 100g ist Bresaola praktisch kohlenhydratfrei und ein Klassiker für Low-Carb-Snacks, etwa als Röllchen mit Frischkäse gefüllt." }
+    {
+      "question": "Wie viele Kalorien hat Bresaola?",
+      "answer": "Bresaola hat rund 153 kcal pro 100g (USDA-Wert für gepökeltes, getrocknetes Rindfleisch). Je nach Hersteller weichen die Werte etwas ab. Eine übliche Portion von 50g kommt auf etwa 77 kcal."
+    },
+    {
+      "question": "Was ist Bresaola?",
+      "answer": "Bresaola ist luftgetrockneter, gepökelter Rinderschinken aus dem Veltlin in der Lombardei. Bresaola della Valtellina IGP ist eine geschützte geografische Angabe: Hergestellt wird sie aus besonders mageren Teilstücken der Rinderkeule, klassisch der Punta d'anca."
+    },
+    {
+      "question": "Ist Bresaola gut zum Abnehmen?",
+      "answer": "Ja, unter den Wurstwaren hat Bresaola eine der besten Protein-Kalorien-Bilanzen: 31g Eiweiß bei nur 153 kcal pro 100g sättigen stark und schützen die Muskeln im Kaloriendefizit. Einziger Haken ist der hohe Salzgehalt von rund 7g pro 100g."
+    },
+    {
+      "question": "Bresaola oder Parmaschinken, was ist kalorienärmer?",
+      "answer": "Bresaola ist deutlich leichter: 153 kcal und 1,9g Fett pro 100g gegenüber 195 kcal und rund 8g Fett beim Parmaschinken. Bresaola wird aus Rind hergestellt, Parmaschinken aus Schwein."
+    },
+    {
+      "question": "Wie viel wiegt eine Scheibe Bresaola?",
+      "answer": "Eine hauchdünne Scheibe wiegt etwa 7g und hat damit nur rund 11 kcal. Selbst 10 Scheiben bleiben unter 110 kcal."
+    },
+    {
+      "question": "Ist Bresaola Low Carb geeignet?",
+      "answer": "Ja, mit rund 2,8g Kohlenhydraten pro 100g ist Bresaola nahezu kohlenhydratfrei und ein Klassiker für Low-Carb-Snacks, etwa als Röllchen mit Frischkäse gefüllt."
+    }
   ],
-  "related_foods": ["parmaschinken", "salami", "roastbeef", "putenbrust"]
+  "related_foods": [
+    "parmaschinken",
+    "salami",
+    "roastbeef",
+    "putenbrust"
+  ]
 }

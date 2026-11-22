@@ -3,9 +3,10 @@
   "name": "Jack Daniel's",
   "emoji": "🥃",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710700 (Whiskey: 231 kcal), Werte je 100 g; je 100 ml mit 0,947 g/ml 219 kcal",
   "seo": {
     "title": "Jack Daniel's Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Jack Daniel's? Ein Glas (4cl) hat ca. 89 kcal. Nährwerte pro 100ml, Varianten im Vergleich und Tipps zu Whiskey.",
+    "description": "Wie viele Kalorien hat Jack Daniel's? Ein Glas (4cl) hat ca. 88 kcal. Nährwerte pro 100ml, Varianten im Vergleich und Tipps zu Whiskey.",
     "keywords": [
       "jack daniels kalorien",
       "jack daniels kcal",
@@ -17,7 +18,7 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 235,
+    "calories_per_100g": 231,
     "protein_per_100g": 0,
     "carbs_per_100g": 0,
     "fat_per_100g": 0,
@@ -29,7 +30,7 @@
     {
       "name": "Kurzer / Pinnchen (2cl)",
       "portion_g": 19,
-      "calories": 45,
+      "calories": 44,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
@@ -38,7 +39,7 @@
     {
       "name": "1 Glas / Bar-Maß (4cl)",
       "portion_g": 38,
-      "calories": 89,
+      "calories": 88,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
@@ -46,7 +47,7 @@
     },
     {
       "name": "Doppelter (8cl)",
-      "portion_g": 75,
+      "portion_g": 76,
       "calories": 176,
       "protein": 0,
       "carbs": 0,
@@ -54,25 +55,52 @@
     },
     {
       "name": "Jack & Cola (4cl + 0,2l Cola)",
-      "portion_g": 238,
-      "calories": 173,
+      "portion_g": 248,
+      "calories": 176,
       "protein": 0,
-      "carbs": 21,
-      "fat": 0,
-      "tip": "Die Cola liefert den Zucker"
+      "carbs": 22,
+      "fat": 1,
+      "tip": "Die Cola liefert den Zucker",
+      "basis": [
+        {
+          "ml": 40,
+          "g": 38
+        },
+        {
+          "fdcId": 2710541,
+          "ml": 200,
+          "g": 210
+        }
+      ]
     },
     {
-      "name": "Whiskey Sour (4cl JD + Zitrone + Sirup)",
-      "portion_g": 120,
-      "calories": 160,
+      "name": "Whiskey Sour (4cl JD + 2cl Zitrone + 2cl Sirup)",
+      "portion_g": 86,
+      "calories": 142,
       "protein": 0,
       "carbs": 14,
-      "fat": 0
+      "fat": 0,
+      "basis": [
+        {
+          "ml": 40,
+          "g": 38
+        },
+        {
+          "fdcId": 167747,
+          "ml": 20,
+          "g": 21
+        },
+        {
+          "fdcId": 2710278,
+          "ml": 20,
+          "g": 27
+        }
+      ]
     },
     {
       "name": "100 ml pur",
-      "portion_g": 94,
-      "calories": 221,
+      "portion_g": 95,
+      "calories": 219,
       "protein": 0,
       "carbs": 0,
       "fat": 0
@@ -82,33 +110,57 @@
     {
       "name": "Bier (0,33l)",
       "calories": 142,
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
       "name": "Rotwein (0,2l)",
       "calories": 170,
-      "emoji": "🍷"
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-rot",
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Wodka (4cl)",
       "calories": 88,
-      "emoji": "🍸"
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "wodka"
+        }
+      ]
     },
     {
-      "name": "Aperol Spritz",
-      "calories": 140,
-      "emoji": "🍹"
+      "name": "Aperol Spritz (250ml)",
+      "calories": 175,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Alle Kalorien aus Alkohol",
-      "text": "Jack Daniel's enthält keine Kohlenhydrate, kein Fett und kein Eiweiß. Die rund 89 kcal pro Glas stammen vollständig aus dem Alkohol (40 % vol).",
+      "text": "Jack Daniel's enthält keine Kohlenhydrate, kein Fett und kein Eiweiß. Die rund 88 kcal pro Glas stammen vollständig aus dem Alkohol (40 % vol).",
       "icon": "🥃"
     },
     {
       "title": "Vorsicht bei Mixgetränken",
-      "text": "Pur ist Whiskey zuckerfrei. Erst die Cola oder der Sirup machen aus dem Drink eine Kalorienbombe: Jack & Cola hat fast doppelt so viele Kalorien wie ein Glas pur.",
+      "text": "Pur ist Whiskey zuckerfrei. Erst die Cola oder der Sirup machen aus dem Drink eine Kalorienbombe: Jack & Cola hat rund doppelt so viele Kalorien wie ein Glas pur.",
       "icon": "🥤"
     },
     {
@@ -130,11 +182,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Jack Daniel's?",
-      "answer": "Ein Glas Jack Daniel's (4cl) hat ca. 89 kcal. Pro 100 ml sind es rund 221 kcal, das entspricht etwa 235 kcal pro 100 g."
+      "answer": "Ein Glas Jack Daniel's (4cl) hat ca. 88 kcal. Pro 100 ml sind es rund 219 kcal, das entspricht etwa 231 kcal pro 100 g."
     },
     {
       "question": "Wie viele Kalorien hat Jack Daniel's mit Cola?",
-      "answer": "Ein Jack & Cola mit 4cl Whiskey und 0,2l Cola kommt auf etwa 173 kcal. Der Großteil der zusätzlichen Kalorien stammt aus dem Zucker der Cola."
+      "answer": "Ein Jack & Cola mit 4cl Whiskey und 0,2l Cola kommt auf etwa 176 kcal. Der Großteil der zusätzlichen Kalorien stammt aus dem Zucker der Cola."
     },
     {
       "question": "Hat Jack Daniel's Kohlenhydrate oder Zucker?",
@@ -146,11 +198,11 @@
     },
     {
       "question": "Ist Jack Daniel's zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 89 kcal pro Glas ist pur getrunkener Whiskey kalorisch überschaubar, doch der Alkohol bremst die Fettverbrennung. Beim Abnehmen sollte man Spirituosen daher sparsam einplanen."
+      "answer": "Nur in Maßen. Mit ca. 88 kcal pro Glas ist pur getrunkener Whiskey kalorisch überschaubar, doch der Alkohol bremst die Fettverbrennung. Beim Abnehmen sollte man Spirituosen daher sparsam einplanen."
     },
     {
       "question": "Wie viel Prozent Alkohol hat Jack Daniel's?",
-      "answer": "Jack Daniel's Old No. 7 hat 40 % vol Alkohol. Dieser Alkoholgehalt ist der alleinige Grund für die rund 221 kcal pro 100 ml."
+      "answer": "Jack Daniel's Old No. 7 hat 40 % vol Alkohol. Dieser Alkoholgehalt ist der alleinige Grund für die rund 219 kcal pro 100 ml."
     }
   ],
   "related_foods": [

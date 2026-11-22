@@ -3,49 +3,239 @@
   "name": "Burrito",
   "emoji": "🌯",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708534 (Burrito, NFS), Werte je 100 g",
   "seo": {
     "title": "Burrito Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Burrito? Nährwerte für Chicken, Beef & Bean Burrito. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 175,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 219,
+    "protein_per_100g": 11.1,
+    "carbs_per_100g": 23.9,
+    "fat_per_100g": 8.5,
+    "fiber_per_100g": 2.5,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Burrito"
   },
   "variants": [
-    {"name": "Chicken Burrito", "portion_g": 400, "calories": 650, "protein": 36, "carbs": 72, "fat": 24, "tip": "Beliebter Klassiker"},
-    {"name": "Beef Burrito", "portion_g": 400, "calories": 720, "protein": 34, "carbs": 70, "fat": 32},
-    {"name": "Bean Burrito (vegetarisch)", "portion_g": 380, "calories": 560, "protein": 20, "carbs": 78, "fat": 18, "tip": "Kalorienärmste Variante"},
-    {"name": "Burrito mit Guacamole & Sour Cream", "portion_g": 450, "calories": 800, "protein": 34, "carbs": 76, "fat": 40},
-    {"name": "Burrito Bowl (ohne Tortilla)", "portion_g": 400, "calories": 520, "protein": 34, "carbs": 56, "fat": 18, "tip": "Ohne Tortilla – Low-Carb"},
-    {"name": "Breakfast Burrito (Ei & Speck)", "portion_g": 350, "calories": 580, "protein": 28, "carbs": 50, "fat": 30},
-    {"name": "Veggie Burrito (Grillgemüse)", "portion_g": 380, "calories": 500, "protein": 16, "carbs": 68, "fat": 18},
-    {"name": "Burrito XXL (Chipotle-Style)", "portion_g": 550, "calories": 960, "protein": 46, "carbs": 98, "fat": 42, "tip": "Kalorienreichste Variante"}
+    {
+      "name": "Chicken Burrito",
+      "portion_g": 400,
+      "calories": 836,
+      "protein": 44,
+      "carbs": 104,
+      "fat": 26,
+      "tip": "Beliebter Klassiker",
+      "basis": [
+        {
+          "fdcId": 2708546,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Beef Burrito",
+      "portion_g": 400,
+      "calories": 900,
+      "protein": 43,
+      "carbs": 104,
+      "fat": 33,
+      "basis": [
+        {
+          "fdcId": 2708538,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Bean Burrito (vegetarisch)",
+      "portion_g": 380,
+      "calories": 768,
+      "protein": 26,
+      "carbs": 122,
+      "fat": 19,
+      "tip": "Kalorienärmster Burrito mit Tortilla",
+      "basis": [
+        {
+          "fdcId": 2708549,
+          "g": 380
+        }
+      ]
+    },
+    {
+      "name": "Burrito mit Guacamole & Sour Cream",
+      "portion_g": 450,
+      "calories": 962,
+      "protein": 46,
+      "carbs": 99,
+      "fat": 42,
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 2709307,
+          "g": 30
+        },
+        {
+          "fdcId": 2705614,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Burrito Bowl (ohne Tortilla)",
+      "portion_g": 400,
+      "calories": 580,
+      "protein": 52,
+      "carbs": 42,
+      "fat": 22,
+      "tip": "Ohne Tortilla, Low-Carb",
+      "basis": [
+        {
+          "fdcId": 2708555,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Breakfast Burrito (Ei & Speck)",
+      "portion_g": 350,
+      "calories": 910,
+      "protein": 42,
+      "carbs": 67,
+      "fat": 52,
+      "basis": [
+        {
+          "fdcId": 2707345,
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Burrito XXL (550g)",
+      "portion_g": 550,
+      "calories": 1205,
+      "protein": 61,
+      "carbs": 131,
+      "fat": 47,
+      "tip": "Kalorienreichste Variante"
+    }
   ],
   "comparison": [
-    {"name": "Tacos (3 Stück)", "calories": 540, "emoji": "🌮"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Quesadilla", "calories": 520, "emoji": "🧀"},
-    {"name": "Wrap mit Hähnchen", "calories": 480, "emoji": "🌯"}
+    {
+      "name": "Tacos (3 Stück, 260g)",
+      "calories": 640,
+      "emoji": "🌮",
+      "basis": [
+        {
+          "slug": "tacos",
+          "g": 260
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Quesadilla (1 Stück, 250g)",
+      "calories": 790,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "quesadilla",
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Chicken Wrap (1 Stück, 300g)",
+      "calories": 756,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "chicken-wrap",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Weizen-Tortilla allein (extra groß, 104g)",
+      "calories": 318,
+      "emoji": "🫓",
+      "basis": [
+        {
+          "fdcId": 2707824,
+          "g": 104
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Burrito Bowl spart die Tortilla", "text": "Ohne Tortilla (ca. 300 kcal) sparst du fast ein Drittel der Kalorien. Inhalt bleibt gleich lecker.", "icon": "🥗"},
-    {"title": "Sour Cream gegen Joghurt tauschen", "text": "Griechischer Joghurt statt Sour Cream spart 60 kcal und liefert mehr Protein.", "icon": "🥛"},
-    {"title": "Bohnen sind super Sättiger", "text": "Schwarze Bohnen liefern 8g Protein und 7g Ballaststoffe pro 100g bei nur 130 kcal.", "icon": "🫘"},
-    {"title": "Guacamole in Maßen", "text": "Guacamole hat 160 kcal/100g. 2 EL (ca. 30g) reichen für Geschmack – 48 kcal statt 160.", "icon": "🥑"},
-    {"title": "Vollkorn-Tortilla wählen", "text": "Vollkorn-Tortillas haben mehr Ballaststoffe und halten länger satt.", "icon": "🌾"}
+    {
+      "title": "Burrito Bowl spart die Tortilla",
+      "text": "Als Burrito Bowl ohne Tortilla (400g) hat er ca. 580 statt 876 kcal, das spart rund ein Drittel der Kalorien. Inhalt bleibt gleich lecker.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Sour Cream gegen Joghurt tauschen",
+      "text": "Griechischer Joghurt statt Sour Cream spart Kalorien und liefert mehr Protein.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Bohnen sind super Sättiger",
+      "text": "Schwarze Bohnen liefern viel Protein und Ballaststoffe bei moderaten Kalorien.",
+      "icon": "🫘"
+    },
+    {
+      "title": "Guacamole in Maßen",
+      "text": "Guacamole hat 155 kcal/100g. 2 EL (ca. 30g) reichen für Geschmack: rund 47 kcal statt 155.",
+      "icon": "🥑"
+    },
+    {
+      "title": "Vollkorn-Tortilla wählen",
+      "text": "Vollkorn-Tortillas haben mehr Ballaststoffe und halten länger satt.",
+      "icon": "🌾"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Burrito?", "answer": "Ein Chicken Burrito hat ca. 650 kcal, ein Beef Burrito ca. 720 kcal. XXL-Burritos können bis zu 960 kcal haben."},
-    {"question": "Ist ein Burrito gut zum Abnehmen?", "answer": "Als Burrito Bowl (ohne Tortilla, 520 kcal) oder Bean Burrito (560 kcal) ja. Vollwertige Burritos sind kalorienreich."},
-    {"question": "Wie viel Protein hat ein Burrito?", "answer": "Ein Chicken Burrito liefert ca. 36g Protein, ein Bean Burrito ca. 20g. Ideal für den Muskelaufbau."},
-    {"question": "Was hat weniger Kalorien: Burrito oder Döner?", "answer": "Ein Döner hat 696 kcal, ein Chicken Burrito ca. 650 kcal. Beide liegen nah beieinander, der Burrito ist leicht kalorienärmer."},
-    {"question": "Wie viele Kalorien hat die Tortilla allein?", "answer": "Eine große Weizen-Tortilla hat ca. 280-300 kcal. Das ist oft ein Drittel der Gesamtkalorien."},
-    {"question": "Wie viele Kalorien hat ein Burrito von Chipotle?", "answer": "Ein Chipotle-Style Burrito mit allem hat ca. 800-960 kcal, je nach Zutaten und Portion."}
+    {
+      "question": "Wie viele Kalorien hat ein Burrito?",
+      "answer": "Ein Chicken Burrito (400g) hat ca. 836 kcal, ein Beef Burrito ca. 900 kcal. XXL-Burritos (550g) können bis zu 1205 kcal haben."
+    },
+    {
+      "question": "Ist ein Burrito gut zum Abnehmen?",
+      "answer": "Am ehesten als Burrito Bowl (ohne Tortilla, ca. 580 kcal). Ein Bean Burrito (ca. 768 kcal) liegt schon deutlich höher, vollwertige Burritos sind kalorienreich."
+    },
+    {
+      "question": "Wie viel Protein hat ein Burrito?",
+      "answer": "Ein Chicken Burrito (400g) liefert ca. 44g Protein, ein Bean Burrito (380g) ca. 26g. Ideal für den Muskelaufbau."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Burrito oder Döner?",
+      "answer": "Ein Döner hat 696 kcal, ein Chicken Burrito (400g) ca. 836 kcal. Der Döner ist damit etwas kalorienärmer, der Burrito aber auch größer."
+    },
+    {
+      "question": "Wie viele Kalorien hat die Tortilla allein?",
+      "answer": "Eine extra große Weizen-Tortilla (104g) hat ca. 318 kcal. Das ist gut ein Drittel der Gesamtkalorien eines Burritos."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Burrito von Chipotle?",
+      "answer": "Ein XXL-Burrito im Chipotle-Stil (ca. 550g) kommt auf rund 1205 kcal, je nach Zutaten und Portion."
+    }
   ],
-  "related_foods": ["tacos", "wrap", "quesadilla", "nachos"]
+  "related_foods": [
+    "tacos",
+    "wrap",
+    "quesadilla",
+    "nachos"
+  ]
 }

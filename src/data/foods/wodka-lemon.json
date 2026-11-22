@@ -3,9 +3,10 @@
   "name": "Wodka Lemon",
   "emoji": "🍸",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710665 (Vodka and lemonade: 93 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 94 kcal",
   "seo": {
     "title": "Wodka Lemon Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Wodka Lemon? Ein Glas (190 ml) hat ca. 150 kcal. Nährwerte pro 100 ml & pro Glas, Varianten und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat ein Wodka Lemon? Ein Glas (190 ml) hat ca. 179 kcal. Nährwerte pro 100 ml & pro Glas, Varianten und Tipps zum Abnehmen.",
     "keywords": [
       "wodka lemon kalorien",
       "wodka lemon kcal",
@@ -16,104 +17,148 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 79,
+    "calories_per_100g": 93,
     "protein_per_100g": 0,
-    "carbs_per_100g": 7.5,
+    "carbs_per_100g": 9,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 190,
-    "typical_portion_name": "1 Glas (4 cl Wodka + Bitter Lemon, ca. 190 ml)"
+    "typical_portion_g": 193,
+    "typical_portion_name": "1 Glas (ca. 190 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (150 ml)",
-      "portion_g": 150,
-      "calories": 119,
-      "protein": 0,
-      "carbs": 11,
-      "fat": 0,
-      "tip": "Mit weniger Bitter Lemon"
-    },
-    {
-      "name": "1 Glas Standard (190 ml)",
-      "portion_g": 190,
-      "calories": 150,
+      "portion_g": 152,
+      "calories": 141,
       "protein": 0,
       "carbs": 14,
-      "fat": 0,
-      "tip": "4 cl Wodka + Bitter Lemon"
-    },
-    {
-      "name": "Großes Glas (250 ml)",
-      "portion_g": 250,
-      "calories": 198,
-      "protein": 0,
-      "carbs": 19,
       "fat": 0
     },
     {
-      "name": "Longdrink (300 ml)",
-      "portion_g": 300,
-      "calories": 237,
+      "name": "1 Glas Standard (190 ml)",
+      "portion_g": 193,
+      "calories": 179,
+      "protein": 0,
+      "carbs": 17,
+      "fat": 0,
+      "tip": "Fertige Mischung aus Wodka und Limonade"
+    },
+    {
+      "name": "Großes Glas (250 ml)",
+      "portion_g": 254,
+      "calories": 236,
       "protein": 0,
       "carbs": 23,
       "fat": 0
     },
     {
-      "name": "Mit Zero-Limonade (190 ml)",
+      "name": "Longdrink (300 ml)",
+      "portion_g": 304,
+      "calories": 283,
+      "protein": 0,
+      "carbs": 27,
+      "fat": 0
+    },
+    {
+      "name": "4 cl Wodka + 150 ml Zero-Limonade",
       "portion_g": 190,
-      "calories": 92,
+      "calories": 88,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
-      "tip": "Zuckerfreie Variante, fast nur Wodka-Kalorien"
+      "tip": "Zuckerfreie Variante, fast nur Wodka-Kalorien",
+      "basis": [
+        {
+          "slug": "wodka",
+          "ml": 40,
+          "g": 38
+        },
+        {
+          "fdcId": 2710552,
+          "ml": 150,
+          "g": 152
+        }
+      ]
     },
     {
       "name": "Nur 4 cl Wodka (40 ml)",
-      "portion_g": 40,
-      "calories": 92,
+      "portion_g": 38,
+      "calories": 88,
       "protein": 0,
       "carbs": 0,
       "fat": 0,
-      "tip": "Reiner Wodka-Anteil ohne Limonade"
+      "tip": "Wodka pur, ohne Limonade",
+      "basis": [
+        {
+          "slug": "wodka",
+          "ml": 40,
+          "g": 38
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Bier (0,33 l)",
-      "calories": 139,
-      "emoji": "🍺"
+      "calories": 144,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 330,
+          "g": 335
+        }
+      ]
     },
     {
-      "name": "Aperol Spritz (1 Glas)",
-      "calories": 180,
-      "emoji": "🍹"
+      "name": "Weinschorle (0,2 l)",
+      "calories": 99,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "spritzer",
+          "ml": 200,
+          "g": 203
+        }
+      ]
     },
     {
       "name": "Cola (0,2 l)",
-      "calories": 84,
-      "emoji": "🥤"
+      "calories": 88,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 200,
+          "g": 210
+        }
+      ]
     },
     {
       "name": "Gin Tonic (1 Glas)",
-      "calories": 160,
-      "emoji": "🍸"
+      "calories": 213,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin-tonic"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Die Kalorien stecken im Alkohol und Zucker",
-      "text": "Von den 150 kcal eines Glases stammen rund 90 kcal aus dem Wodka und der Rest aus dem Zucker der Bitter Lemon. Alkohol liefert 7 kcal pro Gramm.",
+      "text": "Ein Glas (190 ml) enthält laut FDC rund 16 g Alkohol, das sind rund 115 kcal, denn Alkohol liefert 7 kcal pro Gramm. Der Rest der 179 kcal stammt vor allem aus dem Zucker der Limonade.",
       "icon": "🍸"
     },
     {
       "title": "Zero-Limonade spart Zucker",
-      "text": "Mit einer zuckerfreien Lemon-Limonade fallen die Limo-Kalorien fast komplett weg. Ein Glas kommt dann nur noch auf etwa 92 kcal, allein durch den Wodka.",
+      "text": "Mit zuckerfreier Limonade fallen die Limo-Kalorien komplett weg. 4 cl Wodka mit 150 ml Zero-Limonade kommen nur noch auf etwa 88 kcal, allein durch den Wodka.",
       "icon": "🧊"
     },
     {
       "title": "Menge im Blick behalten",
-      "text": "Wodka Lemon trinkt sich leicht weg. Drei Gläser bringen schon rund 450 kcal mit sich, ohne dass es satt macht.",
+      "text": "Wodka Lemon trinkt sich leicht weg. Drei Gläser (je 190 ml) bringen schon rund 537 kcal mit sich, ohne dass es satt macht.",
       "icon": "🔢"
     },
     {
@@ -130,11 +175,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Wodka Lemon?",
-      "answer": "Ein Standardglas Wodka Lemon (4 cl Wodka mit Bitter Lemon, ca. 190 ml) hat etwa 150 kcal. Pro 100 ml sind es rund 79 kcal."
+      "answer": "Ein Standardglas Wodka Lemon (ca. 190 ml) hat etwa 179 kcal. Pro 100 ml sind es rund 94 kcal."
     },
     {
       "question": "Wie viel Zucker bzw. Kohlenhydrate hat Wodka Lemon?",
-      "answer": "Ein Glas enthält etwa 14 g Kohlenhydrate, fast ausschließlich Zucker aus der Bitter Lemon. Mit zuckerfreier Limonade sinkt der Wert auf nahezu 0 g."
+      "answer": "Ein Glas (190 ml) enthält etwa 17 g Kohlenhydrate, fast ausschließlich Zucker aus der Limonade. Mit zuckerfreier Limonade sinkt der Wert auf nahezu 0 g."
     },
     {
       "question": "Hat Wodka Lemon Eiweiß oder Fett?",
@@ -142,15 +187,15 @@
     },
     {
       "question": "Ist Wodka Lemon zum Abnehmen geeignet?",
-      "answer": "Bedingt. Mit zuckerfreier Limonade ist er kalorienärmer als viele andere Drinks, liefert aber weiterhin etwa 92 kcal pro Glas allein durch den Wodka. Alkohol bremst zudem den Fettabbau."
+      "answer": "Bedingt. Mit zuckerfreier Limonade ist er kalorienärmer als viele andere Drinks, liefert aber weiterhin etwa 88 kcal pro Glas allein durch 4 cl Wodka. Alkohol bremst zudem den Fettabbau."
     },
     {
       "question": "Wie viele Kalorien hat ein großer Wodka Lemon?",
-      "answer": "Ein großes Glas mit 250 ml kommt auf rund 198 kcal, ein Longdrink mit 300 ml auf etwa 237 kcal."
+      "answer": "Ein großes Glas mit 250 ml kommt auf rund 236 kcal, ein Longdrink mit 300 ml auf etwa 283 kcal."
     },
     {
       "question": "Hat Wodka Lemon mehr Kalorien als Bier?",
-      "answer": "Ungefähr gleich viel: Ein Glas Wodka Lemon (190 ml) hat ca. 150 kcal, ein kleines Bier (0,33 l) etwa 139 kcal. Pro Milliliter ist der Wodka Lemon kalorienreicher."
+      "answer": "Etwas mehr: Ein Glas Wodka Lemon (190 ml) hat ca. 179 kcal, ein kleines Bier (0,33 l) etwa 144 kcal. Pro Milliliter ist der Wodka Lemon mehr als doppelt so kalorienreich."
     }
   ],
   "related_foods": [

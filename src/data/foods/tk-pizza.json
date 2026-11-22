@@ -3,9 +3,10 @@
   "name": "TK-Pizza",
   "emoji": "🍕",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2708636 (Pizza with pepperoni, from frozen, medium crust), Werte je 100 g",
   "seo": {
     "title": "TK-Pizza Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat eine TK-Pizza? Eine ganze Tiefkühlpizza (350g) hat ca. 900 kcal, 100g ca. 258 kcal. Nährwerte, Sorten & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat eine TK-Pizza? Eine ganze Tiefkühlpizza (350g) hat ca. 963 kcal, 100g ca. 275 kcal. Nährwerte, Sorten & Tipps im Überblick.",
     "keywords": [
       "tk pizza kalorien",
       "tiefkühlpizza kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 258,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2.2,
+    "calories_per_100g": 275,
+    "protein_per_100g": 11.5,
+    "carbs_per_100g": 27.8,
+    "fat_per_100g": 13.1,
+    "fiber_per_100g": 2.5,
     "typical_portion_g": 350,
     "typical_portion_name": "1 ganze TK-Pizza (Salami)"
   },
@@ -28,91 +29,123 @@
     {
       "name": "Halbe TK-Pizza (175g)",
       "portion_g": 175,
-      "calories": 452,
-      "protein": 19,
-      "carbs": 53,
-      "fat": 18,
+      "calories": 481,
+      "protein": 20,
+      "carbs": 49,
+      "fat": 23,
       "tip": "Halbe Portion"
     },
     {
       "name": "TK-Pizza Margherita ganz (300g)",
       "portion_g": 300,
-      "calories": 690,
-      "protein": 30,
-      "carbs": 96,
-      "fat": 21,
-      "tip": "Kalorienärmste Sorte"
+      "calories": 804,
+      "protein": 31,
+      "carbs": 87,
+      "fat": 37,
+      "tip": "Kalorienärmste Sorte",
+      "basis": [
+        {
+          "fdcId": 170317,
+          "g": 300
+        }
+      ]
     },
     {
       "name": "TK-Pizza Salami ganz (350g)",
       "portion_g": 350,
-      "calories": 903,
-      "protein": 39,
-      "carbs": 105,
-      "fat": 35,
+      "calories": 963,
+      "protein": 40,
+      "carbs": 97,
+      "fat": 46,
       "tip": "Standard"
     },
     {
       "name": "TK-Pizza Speziale ganz (400g)",
       "portion_g": 400,
-      "calories": 1100,
-      "protein": 46,
-      "carbs": 116,
-      "fat": 48,
-      "tip": "Reich belegt"
+      "calories": 1104,
+      "protein": 45,
+      "carbs": 101,
+      "fat": 58,
+      "tip": "Reich belegt",
+      "basis": [
+        {
+          "fdcId": 2708661,
+          "g": 400
+        }
+      ]
     },
     {
       "name": "TK-Steinofen-Pizza Schinken (320g)",
       "portion_g": 320,
-      "calories": 800,
-      "protein": 38,
-      "carbs": 99,
-      "fat": 26
+      "calories": 854,
+      "protein": 39,
+      "carbs": 86,
+      "fat": 39,
+      "basis": [
+        {
+          "fdcId": 2708646,
+          "g": 320
+        }
+      ]
     },
     {
-      "name": "Mini-TK-Pizza / Pizzabrötchen (150g)",
+      "name": "Mini-TK-Pizza Salami (150g)",
       "portion_g": 150,
-      "calories": 387,
-      "protein": 16,
-      "carbs": 45,
-      "fat": 15
-    },
-    {
-      "name": "TK-Flammkuchen ganz (260g)",
-      "portion_g": 260,
-      "calories": 580,
-      "protein": 16,
-      "carbs": 60,
-      "fat": 29,
-      "tip": "Dünner Boden, weniger Käse"
+      "calories": 413,
+      "protein": 17,
+      "carbs": 42,
+      "fat": 20
     }
   ],
   "comparison": [
     {
-      "name": "Lieferdienst-Pizza (ganz)",
-      "calories": 1150,
-      "emoji": "🍕"
+      "name": "Lieferdienst-Pizza (ganz, 707g)",
+      "calories": 1994,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 2708640,
+          "g": 707
+        }
+      ]
     },
     {
-      "name": "TK-Lasagne (Portion)",
-      "calories": 480,
-      "emoji": "🍝"
+      "name": "TK-Lasagne (Portion, 250g)",
+      "calories": 310,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "fdcId": 2708754,
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "TK-Baguette (1 Stück)",
-      "calories": 420,
-      "emoji": "🥖"
+      "name": "Pizza-Baguette (1 Hälfte, 125g)",
+      "calories": 335,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "pizza-baguette"
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Margherita statt Salami wählen",
-      "text": "Eine ganze Margherita (300g) hat rund 690 kcal, während eine Salami-Pizza (350g) auf etwa 900 kcal kommt. Wer auf Kalorien achtet, fährt mit der schlichten Variante deutlich besser.",
+      "text": "Eine ganze Margherita (300g) hat rund 804 kcal, während eine Salami-Pizza (350g) auf etwa 963 kcal kommt. Wer auf Kalorien achtet, fährt mit der schlichten Variante deutlich besser.",
       "icon": "🍅"
     },
     {
@@ -122,12 +155,12 @@
     },
     {
       "title": "Halbe Pizza plus Salat",
-      "text": "Eine halbe Pizza (ca. 450 kcal) mit einem großen Beilagensalat sättigt besser als die ganze Pizza allein und spart leicht 400 bis 500 kcal ein.",
+      "text": "Eine halbe Pizza (ca. 481 kcal) mit einem großen Beilagensalat sättigt besser als die ganze Pizza allein und spart gegenüber der ganzen Pizza (963 kcal) deutlich Kalorien ein.",
       "icon": "🥗"
     },
     {
       "title": "Auf den Käse achten",
-      "text": "Vier-Käse- oder extra käsereiche Sorten liefern durch den hohen Fettanteil oft über 280 kcal pro 100g. Belegte Gemüse- oder Thunfisch-Varianten sind meist die leichtere Wahl.",
+      "text": "Vier-Käse- oder extra käsereiche Sorten liefern durch den hohen Fettanteil oft mehr Kalorien pro 100g. Belegte Gemüse- oder Thunfisch-Varianten sind meist die leichtere Wahl.",
       "icon": "🧀"
     },
     {
@@ -139,23 +172,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine TK-Pizza?",
-      "answer": "Eine ganze TK-Pizza mit Salami (350g) hat rund 900 kcal. Pro 100g liegt eine typische Tiefkühlpizza bei etwa 258 kcal."
+      "answer": "Eine ganze TK-Pizza mit Salami (350g) hat rund 963 kcal. Pro 100g liegt eine typische Tiefkühlpizza bei etwa 275 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine TK-Pizza pro 100g?",
-      "answer": "Im Durchschnitt liefert eine gebackene Tiefkühlpizza etwa 258 kcal pro 100g. Schlichte Sorten wie Margherita liegen darunter (ca. 230 kcal), käse- und salamireiche Varianten darüber."
+      "answer": "Im Durchschnitt liefert eine gebackene Tiefkühlpizza etwa 275 kcal pro 100g. Schlichte Sorten wie Margherita liegen etwas darunter (ca. 268 kcal), reich belegte wie Speziale etwa gleichauf (ca. 276 kcal)."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine TK-Pizza?",
-      "answer": "Eine TK-Pizza enthält durch den Teigboden etwa 30g Kohlenhydrate pro 100g. Eine ganze 350g-Pizza kommt damit auf rund 105g Kohlenhydrate."
+      "answer": "Eine TK-Pizza enthält durch den Teigboden etwa 28g Kohlenhydrate pro 100g. Eine ganze 350g-Pizza kommt damit auf rund 97g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat eine TK-Pizza?",
-      "answer": "Pro 100g stecken etwa 11g Eiweiß in einer TK-Pizza, hauptsächlich aus Käse und Wurst. Eine ganze Salami-Pizza (350g) liefert rund 39g Protein."
+      "answer": "Pro 100g stecken etwa 11g Eiweiß in einer TK-Pizza, hauptsächlich aus Käse und Wurst. Eine ganze Salami-Pizza (350g) liefert rund 40g Protein."
     },
     {
       "question": "Ist TK-Pizza zum Abnehmen geeignet?",
-      "answer": "Eine ganze TK-Pizza ist mit 800 bis 1100 kcal recht kalorienreich. Wer abnehmen möchte, isst am besten nur eine halbe Pizza mit Salat oder wählt eine leichtere Margherita-Variante."
+      "answer": "Eine ganze TK-Pizza ist mit 804 bis 1104 kcal recht kalorienreich. Wer abnehmen möchte, isst am besten nur eine halbe Pizza mit Salat oder wählt eine leichtere Margherita-Variante."
     },
     {
       "question": "Ist TK-Pizza ungesund?",

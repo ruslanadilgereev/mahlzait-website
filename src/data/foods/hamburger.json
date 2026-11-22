@@ -3,9 +3,10 @@
   "name": "Hamburger",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2706921 (Hamburger, from fast food, 1 small patty), Werte je 100 g",
   "seo": {
     "title": "Hamburger Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Hamburger? Ein Standard-Hamburger hat ca. 280 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat ein Hamburger? Ein Standard-Hamburger (90g) hat ca. 257 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
     "keywords": [
       "kalorien hamburger",
       "hamburger kalorien",
@@ -18,113 +19,158 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 255,
-    "protein_per_100g": 13,
-    "carbs_per_100g": 25,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 1.5,
-    "typical_portion_g": 110,
+    "calories_per_100g": 285,
+    "protein_per_100g": 15.5,
+    "carbs_per_100g": 28.3,
+    "fat_per_100g": 11.7,
+    "fiber_per_100g": 1,
+    "typical_portion_g": 90,
     "typical_portion_name": "1 Hamburger"
   },
   "variants": [
     {
-      "name": "Hamburger klein (100g)",
-      "portion_g": 100,
-      "calories": 255,
-      "protein": 13,
-      "carbs": 25,
-      "fat": 11
-    },
-    {
-      "name": "Hamburger Standard (110g)",
-      "portion_g": 110,
-      "calories": 280,
+      "name": "Hamburger Standard (90g)",
+      "portion_g": 90,
+      "calories": 257,
       "protein": 14,
-      "carbs": 28,
-      "fat": 12,
+      "carbs": 25,
+      "fat": 11,
       "tip": "Standard"
     },
     {
-      "name": "Hamburger groß (160g)",
-      "portion_g": 160,
-      "calories": 410,
-      "protein": 21,
-      "carbs": 40,
-      "fat": 18
+      "name": "Hamburger (100g)",
+      "portion_g": 100,
+      "calories": 285,
+      "protein": 16,
+      "carbs": 28,
+      "fat": 12
     },
     {
-      "name": "McDonald's Hamburger (105g)",
-      "portion_g": 105,
-      "calories": 250,
+      "name": "McDonald's Hamburger (95g)",
+      "portion_g": 95,
+      "calories": 251,
       "protein": 12,
-      "carbs": 31,
-      "fat": 8,
-      "tip": "Magerste Variante"
+      "carbs": 29,
+      "fat": 10,
+      "tip": "Fast-Food-Klassiker",
+      "basis": [
+        {
+          "fdcId": 170717,
+          "g": 95
+        }
+      ]
     },
     {
       "name": "Cheeseburger (115g)",
       "portion_g": 115,
-      "calories": 300,
-      "protein": 15,
-      "carbs": 31,
-      "fat": 12
+      "calories": 344,
+      "protein": 19,
+      "carbs": 28,
+      "fat": 17,
+      "basis": [
+        {
+          "fdcId": 2706889,
+          "g": 115
+        }
+      ]
     },
     {
-      "name": "Doppel-Hamburger (200g)",
-      "portion_g": 200,
-      "calories": 510,
-      "protein": 26,
-      "carbs": 50,
-      "fat": 22
+      "name": "Doppel-Hamburger (130g)",
+      "portion_g": 130,
+      "calories": 374,
+      "protein": 23,
+      "carbs": 26,
+      "fat": 19,
+      "basis": [
+        {
+          "fdcId": 2706942,
+          "g": 130
+        }
+      ]
     },
     {
-      "name": "Hausgemacht mit dickerem Patty (220g)",
-      "portion_g": 220,
-      "calories": 640,
-      "protein": 33,
-      "carbs": 38,
-      "fat": 38
+      "name": "Hausgemacht mit großem Patty (175g)",
+      "portion_g": 175,
+      "calories": 506,
+      "protein": 32,
+      "carbs": 30,
+      "fat": 27,
+      "basis": [
+        {
+          "fdcId": 2706934,
+          "g": 175
+        }
+      ]
     },
     {
-      "name": "Veggie-Hamburger (150g)",
-      "portion_g": 150,
-      "calories": 345,
-      "protein": 17,
-      "carbs": 35,
-      "fat": 14
+      "name": "Veggie-Hamburger (160g)",
+      "portion_g": 160,
+      "calories": 358,
+      "protein": 21,
+      "carbs": 49,
+      "fat": 8,
+      "basis": [
+        {
+          "fdcId": 2707481,
+          "g": 160
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Cheeseburger",
-      "calories": 300,
-      "emoji": "🍔"
+      "calories": 488,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "cheeseburger"
+        }
+      ]
     },
     {
       "name": "Pommes frites (mittel)",
-      "calories": 340,
-      "emoji": "🍟"
+      "calories": 378,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 170721,
+          "g": 117
+        }
+      ]
     },
     {
       "name": "Hot Dog",
-      "calories": 290,
-      "emoji": "🌭"
+      "calories": 302,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "fdcId": 2707056,
+          "g": 102
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hamburger statt Cheeseburger",
-      "text": "Ein einfacher Hamburger hat ca. 280 kcal, ein Cheeseburger durch den Käse rund 300 kcal und deutlich mehr Fett. Wer Kalorien sparen will, lässt den Käse weg.",
+      "text": "Ein einfacher Hamburger (90g) hat ca. 257 kcal, ein Fast-Food-Cheeseburger (115g) durch den Käse rund 344 kcal und deutlich mehr Fett. Wer Kalorien sparen will, lässt den Käse weg.",
       "icon": "🍔"
     },
     {
       "title": "Vorsicht bei der Beilage",
-      "text": "Der Hamburger selbst ist mit 280 kcal moderat. Eine mittlere Portion Pommes (340 kcal) und Cola verdoppeln die Mahlzeit schnell auf über 700 kcal.",
+      "text": "Der Hamburger selbst ist mit ca. 257 kcal moderat. Eine mittlere Portion Pommes (ca. 378 kcal) dazu macht daraus schon rund 635 kcal, mit Cola noch mehr.",
       "icon": "🍟"
     },
     {
@@ -134,35 +180,35 @@
     },
     {
       "title": "Solide Eiweißquelle",
-      "text": "Ein Standard-Hamburger liefert rund 14g Eiweiß aus dem Rindfleisch-Patty – ordentlich für ein Fast-Food-Gericht und gut für die Sättigung.",
+      "text": "Ein Standard-Hamburger liefert rund 14g Eiweiß aus dem Rindfleisch-Patty, ordentlich für ein Fast-Food-Gericht und gut für die Sättigung.",
       "icon": "💪"
     },
     {
       "title": "Selbst machen spart nichts automatisch",
-      "text": "Ein hausgemachter Burger mit dickem Patty kann 600 kcal und mehr haben. Mageres Hackfleisch (unter 10% Fett) und ein normal großes Patty halten die Kalorien im Rahmen.",
+      "text": "Ein hausgemachter Burger mit großem Patty (175g) hat laut FDC schon rund 506 kcal. Mageres Hackfleisch und ein normal großes Patty halten die Kalorien im Rahmen.",
       "icon": "🏠"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Hamburger?",
-      "answer": "Ein Standard-Hamburger (110g) hat ca. 280 kcal. Ein kleiner Hamburger (100g) liegt bei rund 255 kcal, ein großer (160g) bei etwa 410 kcal."
+      "answer": "Ein Standard-Hamburger (90g) hat ca. 257 kcal. 100g Hamburger haben rund 285 kcal, ein hausgemachter mit großem Patty (175g) etwa 506 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Hamburger von McDonald's?",
-      "answer": "Der klassische Hamburger von McDonald's (105g) hat ca. 250 kcal. Er ist damit eine der kalorienärmsten Optionen, weil er ohne Käse auskommt."
+      "answer": "Der klassische Hamburger von McDonald's (95g) hat ca. 251 kcal. Er ist damit eine der kalorienärmsten Optionen, weil er ohne Käse auskommt."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Hamburger?",
-      "answer": "Ein Standard-Hamburger hat ca. 28g Kohlenhydrate, hauptsächlich aus dem Brötchen. Bei Low Carb ist ein Burger im Brötchen daher eher ungeeignet."
+      "answer": "Ein Standard-Hamburger (90g) hat ca. 25g Kohlenhydrate, hauptsächlich aus dem Brötchen. Bei Low Carb ist ein Burger im Brötchen daher eher ungeeignet."
     },
     {
       "question": "Wie viel Eiweiß hat ein Hamburger?",
-      "answer": "Ein Standard-Hamburger liefert ca. 14g Eiweiß aus dem Rindfleisch-Patty. Doppel-Hamburger kommen auf rund 26g Eiweiß."
+      "answer": "Ein Standard-Hamburger liefert ca. 14g Eiweiß aus dem Rindfleisch-Patty. Ein Doppel-Hamburger (130g) kommt auf rund 23g Eiweiß."
     },
     {
       "question": "Ist ein Hamburger zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit 280 kcal passt ein einfacher Hamburger in eine kalorienbewusste Ernährung. Problematisch wird es durch Pommes, Cola und große Mengen – nicht durch den Burger allein."
+      "answer": "In Maßen ja. Mit ca. 257 kcal passt ein einfacher Hamburger in eine kalorienbewusste Ernährung. Problematisch wird es durch Pommes, Cola und große Mengen, nicht durch den Burger allein."
     },
     {
       "question": "Ist ein Hamburger gesund?",

@@ -3,9 +3,10 @@
   "name": "Jacky Cola",
   "emoji": "🥃",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710657 (Whiskey and cola: 89 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 90 kcal",
   "seo": {
     "title": "Jacky Cola Kalorien: Nährwerte & Portionen | Mahlzait",
-    "description": "Wie viele Kalorien hat Jacky Cola? 100 ml haben ca. 84 kcal, eine 0,33-l-Dose rund 277 kcal. Nährwerte, Alkohol & Vergleich im Überblick.",
+    "description": "Wie viele Kalorien hat Jacky Cola? 100 ml haben ca. 90 kcal, eine 0,33-l-Dose rund 298 kcal. Nährwerte, Alkohol & Vergleich im Überblick.",
     "keywords": [
       "jacky cola kalorien",
       "jacky cola kcal",
@@ -17,96 +18,120 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 84,
+    "calories_per_100g": 89,
     "protein_per_100g": 0,
-    "carbs_per_100g": 12.5,
-    "fat_per_100g": 0,
+    "carbs_per_100g": 7.8,
+    "fat_per_100g": 0.2,
     "fiber_per_100g": 0,
-    "typical_portion_g": 330,
+    "typical_portion_g": 335,
     "typical_portion_name": "1 Dose (0,33 l)"
   },
   "variants": [
     {
       "name": "Glas (200 ml)",
-      "portion_g": 200,
-      "calories": 168,
+      "portion_g": 203,
+      "calories": 181,
       "protein": 0,
-      "carbs": 25,
+      "carbs": 16,
       "fat": 0
     },
     {
       "name": "Dose 0,33 l",
-      "portion_g": 330,
-      "calories": 277,
+      "portion_g": 335,
+      "calories": 298,
       "protein": 0,
-      "carbs": 41,
-      "fat": 0,
+      "carbs": 26,
+      "fat": 1,
       "tip": "Standard-Gebinde"
     },
     {
       "name": "Dose 0,5 l",
-      "portion_g": 500,
-      "calories": 420,
+      "portion_g": 507,
+      "calories": 451,
       "protein": 0,
-      "carbs": 63,
-      "fat": 0
+      "carbs": 40,
+      "fat": 1
     },
     {
       "name": "Flasche 0,275 l",
-      "portion_g": 275,
-      "calories": 231,
+      "portion_g": 279,
+      "calories": 248,
       "protein": 0,
-      "carbs": 34,
-      "fat": 0
+      "carbs": 22,
+      "fat": 1
     },
     {
       "name": "Kleines Glas (100 ml)",
-      "portion_g": 100,
-      "calories": 84,
+      "portion_g": 101,
+      "calories": 90,
       "protein": 0,
-      "carbs": 13,
+      "carbs": 8,
       "fat": 0
     },
     {
       "name": "Becher (0,4 l)",
-      "portion_g": 400,
-      "calories": 336,
+      "portion_g": 406,
+      "calories": 361,
       "protein": 0,
-      "carbs": 50,
-      "fat": 0
+      "carbs": 32,
+      "fat": 1
     }
   ],
   "comparison": [
     {
       "name": "Cola (0,33 l)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
       "name": "Bier (0,33 l)",
       "calories": 142,
-      "emoji": "🍺"
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
       "name": "Cola Zero (0,33 l)",
       "calories": 1,
-      "emoji": "🥤"
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola-zero",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
-      "name": "Jack Daniel's & Cola (0,33 l)",
-      "calories": 300,
-      "emoji": "🥃"
+      "name": "Jack Daniel's pur (4cl)",
+      "calories": 88,
+      "emoji": "🥃",
+      "basis": [
+        {
+          "slug": "jack-daniels"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Alkohol liefert die meisten Kalorien",
-      "text": "Von den rund 84 kcal pro 100 ml stammt etwa die Hälfte aus dem Alkohol (ca. 4,8 g pro 100 ml). Alkohol hat 7 kcal pro Gramm und lässt sich nicht einsparen, ohne die Menge zu reduzieren.",
+      "text": "Von den rund 90 kcal pro 100 ml stammen etwa zwei Drittel aus dem Alkohol (ca. 8,4 g pro 100 ml). Alkohol hat 7 kcal pro Gramm und lässt sich nicht einsparen, ohne die Menge zu reduzieren.",
       "icon": "🥃"
     },
     {
       "title": "Die Dose hat es in sich",
-      "text": "Eine 0,33-l-Dose bringt es auf rund 277 kcal, eine 0,5-l-Dose sogar auf etwa 420 kcal. Wer mehrere trinkt, kommt schnell auf den Kaloriengehalt einer ganzen Mahlzeit.",
+      "text": "Eine 0,33-l-Dose bringt es auf rund 298 kcal, eine 0,5-l-Dose sogar auf etwa 451 kcal. Wer mehrere trinkt, kommt schnell auf den Kaloriengehalt einer ganzen Mahlzeit.",
       "icon": "🔢"
     },
     {
@@ -116,7 +141,7 @@
     },
     {
       "title": "Selbst mixen spart Zucker",
-      "text": "Eine selbst gemixte Whisky-Cola Zero kommt ohne zugesetzten Zucker aus. So bleiben nur die Kalorien des Alkohols (ca. 65 kcal pro 2-cl-Schuss Whisky) übrig.",
+      "text": "Eine selbst gemixte Whisky-Cola Zero kommt ohne zugesetzten Zucker aus. So bleiben nur die Kalorien des Alkohols (ca. 44 kcal pro 2-cl-Schuss Whisky) übrig.",
       "icon": "🧊"
     },
     {
@@ -128,19 +153,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Jacky Cola?",
-      "answer": "Jacky Cola hat etwa 84 kcal pro 100 ml. Eine 0,33-l-Dose enthält damit rund 277 kcal, eine 0,5-l-Dose etwa 420 kcal."
+      "answer": "Jacky Cola hat etwa 90 kcal pro 100 ml. Eine 0,33-l-Dose enthält damit rund 298 kcal, eine 0,5-l-Dose etwa 451 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Dose Jacky Cola?",
-      "answer": "Eine Standard-Dose mit 0,33 l hat ca. 277 kcal. Die größere 0,5-l-Dose kommt auf etwa 420 kcal."
+      "answer": "Eine Standard-Dose mit 0,33 l hat ca. 298 kcal. Die größere 0,5-l-Dose kommt auf etwa 451 kcal."
     },
     {
       "question": "Wie viel Alkohol steckt in Jacky Cola?",
-      "answer": "Jacky Cola hat rund 4,8 % vol, also etwa 4,8 g Alkohol pro 100 ml. Der Alkohol macht etwa die Hälfte der Kalorien aus."
+      "answer": "Laut USDA enthält Whiskey-Cola rund 8,4 g Alkohol pro 100 ml, das entspricht etwa 11 % vol. Der genaue Wert hängt vom Mischverhältnis ab und steht bei Dosen auf dem Etikett. Der Alkohol macht etwa zwei Drittel der Kalorien aus."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Jacky Cola?",
-      "answer": "Pro 100 ml sind rund 12,5 g Kohlenhydrate enthalten, davon der Großteil als Zucker aus der Cola. Eine 0,33-l-Dose liefert damit etwa 41 g Kohlenhydrate."
+      "answer": "Pro 100 ml sind rund 7,9 g Kohlenhydrate enthalten, davon der Großteil als Zucker aus der Cola. Eine 0,33-l-Dose liefert damit etwa 26 g Kohlenhydrate."
     },
     {
       "question": "Ist Jacky Cola zum Abnehmen geeignet?",

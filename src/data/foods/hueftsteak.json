@@ -3,9 +3,10 @@
   "name": "Hüftsteak",
   "emoji": "🥩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 169457 (Beef, top sirloin, steak, separable lean and fat, trimmed to 0\" fat, all grades, cooked, broiled), Werte je 100 g",
   "seo": {
     "title": "Hüftsteak Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Hüftsteak? Gebraten ca. 201 kcal pro 100g, ein 200g-Steak rund 402 kcal. Nährwerte, Eiweiß & Portionen im Überblick.",
+    "description": "Wie viele Kalorien hat ein Hüftsteak? Gebraten ca. 212 kcal pro 100g, ein 200g-Steak rund 424 kcal. Nährwerte, Eiweiß & Portionen im Überblick.",
     "keywords": [
       "hüftsteak kalorien",
       "hüftsteak kcal",
@@ -17,10 +18,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 201,
-    "protein_per_100g": 29.5,
+    "calories_per_100g": 212,
+    "protein_per_100g": 29.3,
     "carbs_per_100g": 0,
-    "fat_per_100g": 9,
+    "fat_per_100g": 9.7,
     "fiber_per_100g": 0,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Hüftsteak (gebraten, 200g)"
@@ -29,81 +30,111 @@
     {
       "name": "Hüftsteak roh (100g)",
       "portion_g": 100,
-      "calories": 125,
+      "calories": 146,
       "protein": 22,
       "carbs": 0,
-      "fat": 4,
-      "tip": "Rohgewicht, vor dem Braten"
+      "fat": 6,
+      "tip": "Rohgewicht, vor dem Braten",
+      "basis": [
+        {
+          "fdcId": 2727574,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Hüftsteak gebraten (100g)",
       "portion_g": 100,
-      "calories": 201,
-      "protein": 30,
+      "calories": 212,
+      "protein": 29,
       "carbs": 0,
-      "fat": 9,
+      "fat": 10,
       "tip": "Werte pro 100g"
     },
     {
       "name": "Kleines Steak (150g)",
       "portion_g": 150,
-      "calories": 302,
+      "calories": 318,
       "protein": 44,
       "carbs": 0,
-      "fat": 14
+      "fat": 15
     },
     {
       "name": "Standard-Steak (200g)",
       "portion_g": 200,
-      "calories": 402,
+      "calories": 424,
       "protein": 59,
       "carbs": 0,
-      "fat": 18,
+      "fat": 19,
       "tip": "Übliche Portion"
     },
     {
       "name": "Großes Steak (250g)",
       "portion_g": 250,
-      "calories": 503,
-      "protein": 74,
+      "calories": 530,
+      "protein": 73,
       "carbs": 0,
-      "fat": 22
+      "fat": 24
     },
     {
       "name": "XXL-Steak (300g)",
       "portion_g": 300,
-      "calories": 603,
+      "calories": 636,
       "protein": 88,
       "carbs": 0,
-      "fat": 27
+      "fat": 29
     }
   ],
   "comparison": [
     {
       "name": "Hähnchenbrust (200g)",
       "calories": 330,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Lachsfilet (200g)",
       "calories": 416,
-      "emoji": "🐟"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachsfilet",
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Schweinebraten (200g)",
-      "calories": 510,
-      "emoji": "🐷"
+      "calories": 362,
+      "emoji": "🐷",
+      "basis": [
+        {
+          "slug": "schweinebraten",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Rindfleisch mager (200g)",
-      "calories": 360,
-      "emoji": "🥩"
+      "name": "Rindfleisch mager, gegart (200g)",
+      "calories": 406,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 170208,
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mageres Eiweiß satt",
-      "text": "Ein 200g-Hüftsteak liefert rund 59g Protein bei nur etwa 402 kcal. Damit ist es eine der eiweißreichsten Fleischportionen überhaupt.",
+      "text": "Ein 200g-Hüftsteak liefert rund 59g Protein bei etwa 424 kcal. Damit ist es eine der eiweißreichsten Fleischportionen überhaupt.",
       "icon": "💪"
     },
     {
@@ -130,11 +161,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Hüftsteak?",
-      "answer": "Ein gebratenes Hüftsteak hat etwa 201 kcal pro 100g. Eine übliche Portion von 200g kommt damit auf rund 402 kcal."
+      "answer": "Ein gebratenes Hüftsteak hat etwa 212 kcal pro 100g. Eine übliche Portion von 200g kommt damit auf rund 424 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Hüftsteak?",
-      "answer": "Hüftsteak ist sehr eiweißreich: 100g gebraten liefern etwa 29-30g Protein, ein 200g-Steak rund 59g. Das deckt einen großen Teil des Tagesbedarfs."
+      "answer": "Hüftsteak ist sehr eiweißreich: 100g gebraten liefern etwa 29g Protein, ein 200g-Steak rund 59g. Das deckt einen großen Teil des Tagesbedarfs."
     },
     {
       "question": "Hat Hüftsteak Kohlenhydrate?",
@@ -146,11 +177,11 @@
     },
     {
       "question": "Wie viel Fett hat ein Hüftsteak?",
-      "answer": "Hüftsteak gehört zu den mageren Rindersteaks. Gebraten enthält es etwa 9g Fett pro 100g, ohne sichtbaren Fettrand auch deutlich weniger."
+      "answer": "Hüftsteak gehört zu den mageren Rindersteaks. Gebraten enthält es etwa 10g Fett pro 100g, ganz ohne sichtbares Fett auch deutlich weniger."
     },
     {
       "question": "Wie viele Kalorien hat ein Hüftsteak roh?",
-      "answer": "Roh hat Hüftsteak rund 125 kcal pro 100g. Beim Braten verliert das Fleisch Wasser, dadurch steigt der Kaloriengehalt pro 100g auf etwa 201 kcal."
+      "answer": "Roh hat Hüftsteak rund 146 kcal pro 100g. Beim Braten verliert das Fleisch Wasser, dadurch steigt der Kaloriengehalt pro 100g auf etwa 212 kcal."
     }
   ],
   "related_foods": [

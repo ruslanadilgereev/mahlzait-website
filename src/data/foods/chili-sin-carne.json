@@ -3,9 +3,10 @@
   "name": "Chili sin Carne",
   "emoji": "🌶️",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2707411 (Chili, vegetarian), Werte je 100 g",
   "seo": {
     "title": "Chili sin Carne Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Chili sin Carne? Eine Portion (250g) hat ca. 238 kcal. Nährwerte pro 100g & Portion, viel Protein & Ballaststoffe aus Bohnen.",
+    "description": "Wie viele Kalorien hat Chili sin Carne? Eine Portion (250g) hat ca. 298 kcal. Nährwerte pro 100g & Portion, viel Protein & Ballaststoffe aus Bohnen.",
     "keywords": [
       "chili sin carne kalorien",
       "chili sin carne kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 95,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 14,
-    "fat_per_100g": 2,
-    "fiber_per_100g": 5,
+    "calories_per_100g": 119,
+    "protein_per_100g": 6.3,
+    "carbs_per_100g": 18.9,
+    "fat_per_100g": 2.4,
+    "fiber_per_100g": 6,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion (250g)"
   },
@@ -28,93 +29,126 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 143,
-      "protein": 8,
-      "carbs": 21,
-      "fat": 3
+      "calories": 179,
+      "protein": 9,
+      "carbs": 28,
+      "fat": 4
     },
     {
       "name": "1 Portion (250g)",
       "portion_g": 250,
-      "calories": 238,
-      "protein": 13,
-      "carbs": 35,
-      "fat": 5,
+      "calories": 298,
+      "protein": 16,
+      "carbs": 47,
+      "fat": 6,
       "tip": "Standard-Portion als Hauptgericht"
     },
     {
       "name": "Große Portion (350g)",
       "portion_g": 350,
-      "calories": 333,
-      "protein": 18,
-      "carbs": 49,
-      "fat": 7
+      "calories": 417,
+      "protein": 22,
+      "carbs": 66,
+      "fat": 8
     },
     {
       "name": "Tellergericht (400g)",
       "portion_g": 400,
-      "calories": 380,
-      "protein": 20,
-      "carbs": 56,
-      "fat": 8
+      "calories": 476,
+      "protein": 25,
+      "carbs": 76,
+      "fat": 10
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 95,
-      "protein": 5,
-      "carbs": 14,
+      "calories": 119,
+      "protein": 6,
+      "carbs": 19,
       "fat": 2
     },
     {
       "name": "Beilage (200g)",
       "portion_g": 200,
-      "calories": 190,
-      "protein": 10,
-      "carbs": 28,
-      "fat": 4
+      "calories": 238,
+      "protein": 13,
+      "carbs": 38,
+      "fat": 5
     },
     {
       "name": "Chili mit Reis (Portion 400g)",
       "portion_g": 400,
-      "calories": 480,
-      "protein": 15,
-      "carbs": 82,
+      "calories": 493,
+      "protein": 20,
+      "carbs": 89,
       "fat": 6,
-      "tip": "Mit gekochtem Reis kombiniert"
+      "tip": "Mit gekochtem Reis kombiniert",
+      "basis": [
+        {
+          "g": 250
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Chili con Carne",
-      "calories": 300,
-      "emoji": "🥩"
+      "name": "Chili con Carne (250g)",
+      "calories": 295,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "chili-con-carne",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Linsen (gekocht)",
-      "calories": 116,
-      "emoji": "🫘"
+      "name": "Linsen gekocht (1 Portion, 200g)",
+      "calories": 232,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "linsen",
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Kidneybohnen (gekocht)",
-      "calories": 127,
-      "emoji": "🫘"
+      "name": "Kidneybohnen gekocht (1 Portion, 150g)",
+      "calories": 191,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "kidneybohnen",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Eintopf mit Linsen",
-      "calories": 100,
-      "emoji": "🍲"
+      "name": "Linseneintopf (250g)",
+      "calories": 150,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "eintopf-linsen",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich ganz ohne Fleisch",
-      "text": "Die Kombination aus Kidneybohnen, Kichererbsen und Mais liefert pflanzliches Protein. Eine Portion (250g) bringt rund 13g Eiweiß und sättigt lange.",
+      "text": "Die Kombination aus Kidneybohnen, Kichererbsen und Mais liefert pflanzliches Protein. Eine Portion (250g) bringt rund 16g Eiweiß und sättigt lange.",
       "icon": "💪"
     },
     {
       "title": "Sehr ballaststoffreich",
-      "text": "Mit etwa 5g Ballaststoffen pro 100g unterstützt Chili sin Carne die Verdauung und sorgt für ein langanhaltendes Sättigungsgefühl bei vergleichsweise wenig Kalorien.",
+      "text": "Mit etwa 6g Ballaststoffen pro 100g unterstützt Chili sin Carne die Verdauung und sorgt für ein langanhaltendes Sättigungsgefühl bei vergleichsweise wenig Kalorien.",
       "icon": "🌾"
     },
     {
@@ -136,15 +170,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Chili sin Carne?",
-      "answer": "Eine normale Portion Chili sin Carne (250g) hat etwa 238 kcal. Pro 100g sind es rund 95 kcal."
+      "answer": "Eine normale Portion Chili sin Carne (250g) hat etwa 298 kcal. Pro 100g sind es rund 119 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Chili sin Carne?",
-      "answer": "Eine Portion (250g) liefert ca. 13g Eiweiß, pro 100g sind es etwa 5g. Das Protein stammt aus Kidneybohnen, Kichererbsen und Mais."
+      "answer": "Eine Portion (250g) liefert ca. 16g Eiweiß, pro 100g sind es etwa 6,3g. Das Protein stammt aus Kidneybohnen, Kichererbsen und Mais."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Chili sin Carne?",
-      "answer": "Chili sin Carne enthält pro 100g etwa 14g Kohlenhydrate. Eine Portion von 250g kommt damit auf rund 35g."
+      "answer": "Chili sin Carne enthält pro 100g etwa 19g Kohlenhydrate. Eine Portion von 250g kommt damit auf rund 47g."
     },
     {
       "question": "Ist Chili sin Carne zum Abnehmen geeignet?",
@@ -156,7 +190,7 @@
     },
     {
       "question": "Hat Chili sin Carne weniger Kalorien als Chili con Carne?",
-      "answer": "Ja. Chili sin Carne hat mit ca. 95 kcal pro 100g deutlich weniger Kalorien als die Variante mit Hackfleisch (Chili con Carne, ca. 120 kcal pro 100g und mehr Fett)."
+      "answer": "Kaum. Laut USDA hat Chili sin Carne mit ca. 119 kcal pro 100g etwa gleich viele Kalorien wie Chili con Carne (ca. 118 kcal pro 100g), enthält aber nur gut halb so viel Fett."
     }
   ],
   "related_foods": [

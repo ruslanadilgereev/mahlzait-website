@@ -3,47 +3,206 @@
   "name": "Weizenbier",
   "emoji": "🍺",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 168746 (Alcoholic beverage, beer, regular, all: 43 kcal), Werte je 100 g; je 100 ml mit 1,004 g/ml 43 kcal",
   "seo": {
     "title": "Weizenbier Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Weizenbier? Nährwerte für Hefeweizen, Kristallweizen und alkoholfreies Weizen. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 45,
-    "protein_per_100g": 0.4,
-    "carbs_per_100g": 3.2,
+    "calories_per_100g": 43,
+    "protein_per_100g": 0.5,
+    "carbs_per_100g": 3.6,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 500,
+    "typical_portion_g": 502,
     "typical_portion_name": "1 Halbe (0,5l)"
   },
   "variants": [
-    {"name": "Hefeweizen (0,5l)", "portion_g": 500, "calories": 225, "protein": 2, "carbs": 16, "fat": 0, "tip": "Bayerischer Klassiker"},
-    {"name": "Kristallweizen (0,5l)", "portion_g": 500, "calories": 215, "protein": 2, "carbs": 14, "fat": 0},
-    {"name": "Dunkles Weizen (0,5l)", "portion_g": 500, "calories": 235, "protein": 2, "carbs": 18, "fat": 0},
-    {"name": "Alkoholfreies Weizen (0,5l)", "portion_g": 500, "calories": 130, "protein": 2, "carbs": 26, "fat": 0, "tip": "Fast halb so viele Kalorien"},
-    {"name": "Leichtes Weizen (2,5% Alk.)", "portion_g": 500, "calories": 160, "protein": 2, "carbs": 18, "fat": 0, "tip": "Kompromiss"},
-    {"name": "Weizen-Radler (0,5l)", "portion_g": 500, "calories": 185, "protein": 1, "carbs": 24, "fat": 0}
+    {
+      "name": "Hefeweizen (0,5l)",
+      "portion_g": 502,
+      "calories": 216,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0,
+      "tip": "Bayerischer Klassiker"
+    },
+    {
+      "name": "Kristallweizen (0,5l)",
+      "portion_g": 502,
+      "calories": 216,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0
+    },
+    {
+      "name": "Dunkles Weizen (0,5l)",
+      "portion_g": 502,
+      "calories": 216,
+      "protein": 3,
+      "carbs": 18,
+      "fat": 0
+    },
+    {
+      "name": "Alkoholfreies Weizen (0,5l)",
+      "portion_g": 507,
+      "calories": 188,
+      "protein": 1,
+      "carbs": 41,
+      "fat": 1,
+      "tip": "Etwas weniger Kalorien",
+      "basis": [
+        {
+          "fdcId": 2710610,
+          "ml": 500,
+          "g": 507
+        }
+      ]
+    },
+    {
+      "name": "Weizen-Radler (0,5l)",
+      "portion_g": 513,
+      "calories": 213,
+      "protein": 1,
+      "carbs": 36,
+      "fat": 0,
+      "tip": "halb Weizen, halb Zitronenlimo",
+      "basis": [
+        {
+          "ml": 250,
+          "g": 251
+        },
+        {
+          "fdcId": 2710551,
+          "ml": 250,
+          "g": 262
+        }
+      ]
+    },
+    {
+      "name": "Kleines Weizen (0,3l)",
+      "portion_g": 301,
+      "calories": 129,
+      "protein": 2,
+      "carbs": 11,
+      "fat": 0
+    },
+    {
+      "name": "Maß (1l)",
+      "portion_g": 1004,
+      "calories": 432,
+      "protein": 5,
+      "carbs": 36,
+      "fat": 0
+    }
   ],
   "comparison": [
-    {"name": "Pils (0,5l)", "calories": 210, "emoji": "🍺"},
-    {"name": "Radler (0,5l)", "calories": 185, "emoji": "🍋"},
-    {"name": "Wein rot (0,2l)", "calories": 170, "emoji": "🍷"},
-    {"name": "Cola (0,5l)", "calories": 210, "emoji": "🥤"}
+    {
+      "name": "Pils (0,5l)",
+      "calories": 215,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Radler (0,5l)",
+      "calories": 185,
+      "emoji": "🍋",
+      "basis": [
+        {
+          "slug": "radler",
+          "ml": 500,
+          "g": 500
+        }
+      ]
+    },
+    {
+      "name": "Wein rot (0,2l)",
+      "calories": 169,
+      "emoji": "🍷",
+      "basis": [
+        {
+          "slug": "wein-rot",
+          "ml": 200,
+          "g": 199
+        }
+      ]
+    },
+    {
+      "name": "Cola (0,5l)",
+      "calories": 220,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 500,
+          "g": 524
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Alkoholfrei wählen", "text": "Alkoholfreies Weizen hat nur 130 kcal statt 225 kcal pro 0,5l – und gilt als isotonisches Sportgetränk.", "icon": "🏃"},
-    {"title": "Russ'n statt pur", "text": "Weizen mit Zitronenlimonade ('Russ'n') hat weniger Alkohol und schmeckt erfischend – ca. 185 kcal.", "icon": "🍋"},
-    {"title": "Kalorien kommen vom Alkohol", "text": "Alkohol hat 7 kcal/g – fast so viel wie Fett. Jedes Bier weniger spart ca. 225 kcal.", "icon": "📊"},
-    {"title": "Zum Essen statt als Snack", "text": "Ein Weizenbier zum Essen ersetzt kalorisch ein Stück Brot. Als Snackgetränk sind es leere Kalorien.", "icon": "🍽️"},
-    {"title": "Glas statt Maß", "text": "Eine Maß (1l) hat 450 kcal – so viel wie eine komplette Mahlzeit. Ein kleines Weizen (0,3l) hat nur 135 kcal.", "icon": "🥛"}
+    {
+      "title": "Alkoholfrei wählen",
+      "text": "Alkoholfreies Weizen hat laut USDA ca. 188 kcal statt ca. 216 kcal pro 0,5l und gilt als isotonisches Sportgetränk.",
+      "icon": "🏃"
+    },
+    {
+      "title": "Russ'n statt pur",
+      "text": "Weizen mit Zitronenlimonade ('Russ'n') hat weniger Alkohol und schmeckt erfrischend, ca. 213 kcal pro 0,5l.",
+      "icon": "🍋"
+    },
+    {
+      "title": "Kalorien kommen vom Alkohol",
+      "text": "Alkohol hat 7 kcal/g, fast so viel wie Fett. Jedes Weizen (0,5l) weniger spart ca. 216 kcal.",
+      "icon": "📊"
+    },
+    {
+      "title": "Zum Essen statt als Snack",
+      "text": "Ein Weizenbier zum Essen ersetzt kalorisch ein Stück Brot. Als Snackgetränk sind es leere Kalorien.",
+      "icon": "🍽️"
+    },
+    {
+      "title": "Glas statt Maß",
+      "text": "Eine Maß (1l) hat ca. 432 kcal, so viel wie eine komplette Mahlzeit. Ein kleines Weizen (0,3l) hat nur ca. 129 kcal.",
+      "icon": "🥛"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Weizenbier?", "answer": "Ein Hefeweizen (0,5l) hat ca. 225 kcal. Alkoholfrei nur ca. 130 kcal."},
-    {"question": "Hat Weizenbier mehr Kalorien als Pils?", "answer": "Ja, leicht: Weizenbier ca. 225 kcal/0,5l vs. Pils ca. 210 kcal. Der Unterschied ist gering."},
-    {"question": "Ist alkoholfreies Weizen gesund?", "answer": "Relativ gesehen ja – es ist isotonisch, enthält B-Vitamine und hat nur 130 kcal. Als Sportgetränk durchaus geeignet."},
-    {"question": "Wie viel Zucker hat Weizenbier?", "answer": "Hefeweizen enthält ca. 16g Kohlenhydrate (davon ca. 3-4g Zucker) pro 0,5l – mehr als Pils."},
-    {"question": "Macht Weizenbier dick?", "answer": "Regelmäßiger Konsum ja – 3 Weizenbier pro Woche sind 675 Extra-Kalorien. Das entspricht fast 100g Fettgewebe pro Woche."},
-    {"question": "Wie viel Alkohol hat Weizenbier?", "answer": "Typisch 5,0-5,5% vol. – ähnlich wie Pils. Alkoholfreies Weizen hat max. 0,5% vol."}
+    {
+      "question": "Wie viele Kalorien hat ein Weizenbier?",
+      "answer": "Ein Hefeweizen (0,5l) hat laut USDA ca. 216 kcal. Alkoholfrei ca. 188 kcal."
+    },
+    {
+      "question": "Hat Weizenbier mehr Kalorien als Pils?",
+      "answer": "Kaum: Laut USDA liegen Weizen (ca. 216 kcal/0,5l) und Pils (ca. 215 kcal) praktisch gleichauf, die USDA unterscheidet die Biersorten nicht."
+    },
+    {
+      "question": "Ist alkoholfreies Weizen gesund?",
+      "answer": "Relativ gesehen ja, es ist isotonisch, enthält B-Vitamine und hat ca. 188 kcal pro 0,5l. Als Sportgetränk durchaus geeignet."
+    },
+    {
+      "question": "Wie viel Zucker hat Weizenbier?",
+      "answer": "Laut USDA enthält ein Weizen (0,5l) ca. 18g Kohlenhydrate und praktisch keinen Zucker, genauso viel wie Pils."
+    },
+    {
+      "question": "Macht Weizenbier dick?",
+      "answer": "Regelmäßiger Konsum ja: 3 Weizenbier pro Woche sind rund 648 Extra-Kalorien. Das entspricht fast 100g Fettgewebe pro Woche."
+    },
+    {
+      "question": "Wie viel Alkohol hat Weizenbier?",
+      "answer": "Laut USDA rund 5 % vol, ähnlich wie Pils. Alkoholfreies Weizen hat max. 0,5% vol."
+    }
   ],
-  "related_foods": ["bier", "radler", "wein-rot", "cola"]
+  "related_foods": [
+    "bier",
+    "radler",
+    "wein-rot",
+    "cola"
+  ]
 }

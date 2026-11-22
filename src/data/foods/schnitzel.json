@@ -3,47 +3,179 @@
   "name": "Wiener Schnitzel",
   "emoji": "🥩",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 173819 (Veal, leg (top round), separable lean and fat, cooked, pan-fried, breaded), Werte je 100 g",
   "seo": {
-    "title": "Schnitzel Kalorien: 237 kcal/100g + Rechner & Varianten | Mahlzait",
-    "description": "Schnitzel hat 237 kcal pro 100g. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 6 Varianten & Spar-Tipps."
+    "title": "Schnitzel Kalorien: 238 kcal/100g + Rechner & Varianten | Mahlzait",
+    "description": "Schnitzel hat 238 kcal pro 100g. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 4 Varianten & Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 237,
-    "protein_per_100g": 18,
-    "carbs_per_100g": 12,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 0.5,
+    "calories_per_100g": 238,
+    "protein_per_100g": 27.3,
+    "carbs_per_100g": 9.9,
+    "fat_per_100g": 9.2,
+    "fiber_per_100g": 0.3,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Schnitzel"
   },
   "variants": [
-    {"name": "Wiener Schnitzel (Kalb)", "portion_g": 250, "calories": 593, "protein": 45, "carbs": 30, "fat": 35, "tip": "Klassiker aus Österreich"},
-    {"name": "Schnitzel Wiener Art (Schwein)", "portion_g": 250, "calories": 550, "protein": 40, "carbs": 28, "fat": 32, "tip": "Günstigere Alternative"},
-    {"name": "Hähnchenschnitzel", "portion_g": 200, "calories": 380, "protein": 42, "carbs": 20, "fat": 16, "tip": "Kalorienärmste Variante"},
-    {"name": "Jägerschnitzel", "portion_g": 350, "calories": 680, "protein": 38, "carbs": 25, "fat": 45, "tip": "Mit Pilzrahmsauce"},
-    {"name": "Rahmschnitzel", "portion_g": 350, "calories": 720, "protein": 36, "carbs": 22, "fat": 50, "tip": "Sahnesauce erhöht Kaloriengehalt"},
-    {"name": "Schnitzel im Ofen (ungepaniert)", "portion_g": 200, "calories": 290, "protein": 38, "carbs": 2, "fat": 14, "tip": "Ohne Panade spart 40% Kalorien"}
+    {
+      "name": "Wiener Schnitzel (Kalb)",
+      "portion_g": 250,
+      "calories": 595,
+      "protein": 68,
+      "carbs": 25,
+      "fat": 23,
+      "tip": "Klassiker aus Österreich"
+    },
+    {
+      "name": "Hähnchenschnitzel",
+      "portion_g": 200,
+      "calories": 438,
+      "protein": 49,
+      "carbs": 12,
+      "fat": 20,
+      "tip": "Paniert, Hähnchenbrust ohne Haut",
+      "basis": [
+        {
+          "fdcId": 2705975,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Jägerschnitzel",
+      "portion_g": 350,
+      "calories": 585,
+      "protein": 72,
+      "carbs": 6,
+      "fat": 28,
+      "tip": "Schweineschnitzel mit Pilzsauce, unpaniert",
+      "basis": [
+        {
+          "fdcId": 2706403,
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel im Ofen (ungepaniert)",
+      "portion_g": 200,
+      "calories": 302,
+      "protein": 64,
+      "carbs": 0,
+      "fat": 5,
+      "tip": "Kalbsschnitzel ohne Panade, spart gut ein Drittel der Kalorien",
+      "basis": [
+        {
+          "fdcId": 174880,
+          "g": 200
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Big Mac", "calories": 563, "emoji": "🍔"},
-    {"name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭"},
-    {"name": "Hähnchenbrust gegrillt", "calories": 165, "emoji": "🍗"}
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Big Mac",
+      "calories": 563,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
+    },
+    {
+      "name": "Currywurst mit Pommes (450g)",
+      "calories": 968,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "pommes-currywurst",
+          "g": 450
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Hähnchen statt Schwein", "text": "Ein Hähnchenschnitzel hat ca. 30% weniger Kalorien als ein klassisches Schweineschnitzel – bei mehr Protein.", "icon": "🍗"},
-    {"title": "Im Ofen statt in der Pfanne", "text": "Ofenschnitzel brauchen deutlich weniger Fett. Du sparst bis zu 200 kcal pro Portion.", "icon": "🔥"},
-    {"title": "Panade dünn halten", "text": "Je dicker die Panade, desto mehr Fett wird aufgesogen. Dünne Panade = weniger Kalorien.", "icon": "🍞"},
-    {"title": "Beilage smart wählen", "text": "Statt Pommes (300 kcal) lieber Kartoffelsalat mit Essig-Öl-Dressing (150 kcal) oder Salat.", "icon": "🥗"},
-    {"title": "Portion bewusst wählen", "text": "Ein Restaurant-Schnitzel wiegt oft 300-400g. Zuhause reichen 200g für eine sättigende Mahlzeit.", "icon": "⚖️"}
+    {
+      "title": "Hähnchen statt Schwein",
+      "text": "Ein paniertes Hähnchenschnitzel hat mit 219 kcal pro 100g etwas weniger Kalorien als ein Wiener Schnitzel vom Kalb (238 kcal pro 100g).",
+      "icon": "🍗"
+    },
+    {
+      "title": "Im Ofen statt in der Pfanne",
+      "text": "Ofenschnitzel brauchen deutlich weniger Fett. Ungepaniert aus dem Ofen hat ein Kalbsschnitzel nur rund 151 kcal pro 100g statt 238 kcal paniert.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Panade dünn halten",
+      "text": "Je dicker die Panade, desto mehr Fett wird aufgesogen. Dünne Panade = weniger Kalorien.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Beilage smart wählen",
+      "text": "Statt Pommes lieber Kartoffelsalat mit Essig-Öl-Dressing oder Salat.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Portion bewusst wählen",
+      "text": "Ein Restaurant-Schnitzel wiegt oft 300-400g. Zuhause reichen 200g für eine sättigende Mahlzeit.",
+      "icon": "⚖️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Schnitzel?", "answer": "Ein klassisches Wiener Schnitzel (Schwein, paniert) hat ca. 550 kcal pro Portion (250g). Die Kalorienzahl variiert je nach Fleischart, Panade und Zubereitungsart zwischen 290 und 720 kcal."},
-    {"question": "Ist Schnitzel gut zum Abnehmen?", "answer": "Paniertes Schnitzel ist kalorienreich durch die Panade und das Bratfett. Besser: Hähnchenschnitzel ohne Panade aus dem Ofen – nur ca. 290 kcal mit 38g Protein."},
-    {"question": "Was hat weniger Kalorien: Schnitzel oder Döner?", "answer": "Ein Hähnchenschnitzel (380 kcal) hat weniger als ein Döner (696 kcal). Auch ein paniertes Schweineschnitzel (550 kcal) liegt darunter."},
-    {"question": "Wie viel Protein hat ein Schnitzel?", "answer": "Ein Schnitzel liefert 36-45g Protein pro Portion – abhängig von der Fleischart. Hähnchen hat mit 42g pro 200g den höchsten Proteingehalt."},
-    {"question": "Warum hat Jägerschnitzel mehr Kalorien?", "answer": "Die Pilzrahmsauce beim Jägerschnitzel enthält Sahne und Butter, was zusätzlich 130-180 kcal zur Portion hinzufügt."},
-    {"question": "Wie viele Kalorien hat ein Schnitzel ohne Panade?", "answer": "Ein Schnitzel ohne Panade hat nur ca. 165-200 kcal pro 200g – die Panade und das Bratfett machen etwa 40-50% der Gesamtkalorien aus."}
+    {
+      "question": "Wie viele Kalorien hat ein Schnitzel?",
+      "answer": "Ein Wiener Schnitzel (Kalb, paniert) hat ca. 595 kcal pro Portion (250g). Je nach Fleischart, Panade und Zubereitung liegt eine Portion zwischen rund 302 kcal (ohne Panade aus dem Ofen, 200g) und 595 kcal."
+    },
+    {
+      "question": "Ist Schnitzel gut zum Abnehmen?",
+      "answer": "Paniertes Schnitzel ist kalorienreich durch die Panade und das Bratfett. Besser: ein Schnitzel ohne Panade aus dem Ofen, nur ca. 302 kcal pro 200g mit rund 64g Protein."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Schnitzel oder Döner?",
+      "answer": "Ein paniertes Hähnchenschnitzel (438 kcal) hat weniger als ein Döner (696 kcal). Auch ein Wiener Schnitzel vom Kalb (595 kcal) liegt darunter."
+    },
+    {
+      "question": "Wie viel Protein hat ein Schnitzel?",
+      "answer": "Ein Schnitzel liefert je nach Fleischart und Portion rund 49 bis 72g Protein. Ein Wiener Schnitzel vom Kalb (250g) kommt auf rund 68g, ein Hähnchenschnitzel (200g) auf rund 49g."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Jägerschnitzel?",
+      "answer": "Ein Jägerschnitzel mit Pilzsauce (350g) kommt auf rund 585 kcal, etwa so viel wie ein paniertes Wiener Schnitzel (595 kcal). Die Sauce enthält oft Sahne und Butter, dafür fehlt meist die Panade."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Schnitzel ohne Panade?",
+      "answer": "Ein Kalbsschnitzel ohne Panade hat aus dem Ofen rund 302 kcal pro 200g (151 kcal pro 100g). Paniert und gebraten sind es 238 kcal pro 100g, Panade und Bratfett machen also gut ein Drittel der Kalorien aus."
+    }
   ],
-  "related_foods": ["currywurst", "pommes-frites", "haehnchenbrust", "bratwurst"]
+  "related_foods": [
+    "currywurst",
+    "pommes-frites",
+    "haehnchenbrust",
+    "bratwurst"
+  ]
 }

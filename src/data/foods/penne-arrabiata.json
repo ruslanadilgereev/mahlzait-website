@@ -3,49 +3,209 @@
   "name": "Penne Arrabiata",
   "emoji": "🌶️",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708831 (Pasta with tomato-based sauce, home recipe), Werte je 100 g",
   "seo": {
     "title": "Penne Arrabiata Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Penne Arrabiata? Nährwerte pro Portion, Varianten & Spar-Tipps. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 145,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 106,
+    "protein_per_100g": 3.7,
+    "carbs_per_100g": 19.9,
+    "fat_per_100g": 1.2,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    {"name": "Klassisch (Penne, Tomatensauce, Chili)", "portion_g": 400, "calories": 580, "protein": 18, "carbs": 96, "fat": 14, "tip": "Standard-Rezept"},
-    {"name": "Mit Hähnchenbrust", "portion_g": 450, "calories": 640, "protein": 35, "carbs": 96, "fat": 16, "tip": "Extra Protein"},
-    {"name": "Mit Parmesan", "portion_g": 420, "calories": 650, "protein": 22, "carbs": 96, "fat": 20},
-    {"name": "Vollkorn-Penne", "portion_g": 400, "calories": 560, "protein": 20, "carbs": 88, "fat": 14, "tip": "Mehr Ballaststoffe"},
-    {"name": "Vegan (ohne Käse)", "portion_g": 400, "calories": 520, "protein": 15, "carbs": 94, "fat": 10, "tip": "Kalorienärmste Variante"},
-    {"name": "Kleine Portion", "portion_g": 250, "calories": 363, "protein": 11, "carbs": 60, "fat": 9, "tip": "Ideal zum Abnehmen"},
-    {"name": "Mit Garnelen", "portion_g": 420, "calories": 570, "protein": 28, "carbs": 92, "fat": 12, "tip": "Leicht & proteinreich"},
-    {"name": "Restaurant-Portion", "portion_g": 500, "calories": 725, "protein": 23, "carbs": 120, "fat": 18}
+    {
+      "name": "Klassisch (Penne, Tomatensauce, Chili)",
+      "portion_g": 400,
+      "calories": 424,
+      "protein": 15,
+      "carbs": 80,
+      "fat": 5,
+      "tip": "Standard-Rezept"
+    },
+    {
+      "name": "Mit Hähnchen oder Pute",
+      "portion_g": 450,
+      "calories": 531,
+      "protein": 27,
+      "carbs": 86,
+      "fat": 8,
+      "tip": "Extra Protein",
+      "basis": [
+        {
+          "fdcId": 2708844,
+          "g": 450
+        }
+      ]
+    },
+    {
+      "name": "Mit Parmesan",
+      "portion_g": 420,
+      "calories": 508,
+      "protein": 20,
+      "carbs": 82,
+      "fat": 10,
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 171247,
+          "g": 20
+        }
+      ]
+    },
+    {
+      "name": "Vollkorn-Penne",
+      "portion_g": 400,
+      "calories": 408,
+      "protein": 15,
+      "carbs": 78,
+      "fat": 6,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 2708880,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Kleine Portion",
+      "portion_g": 250,
+      "calories": 265,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 3,
+      "tip": "Ideal zum Abnehmen"
+    },
+    {
+      "name": "Mit Meeresfrüchten",
+      "portion_g": 420,
+      "calories": 475,
+      "protein": 23,
+      "carbs": 82,
+      "fat": 5,
+      "tip": "Leicht & proteinreich",
+      "basis": [
+        {
+          "fdcId": 2708850,
+          "g": 420
+        }
+      ]
+    },
+    {
+      "name": "Restaurant-Portion",
+      "portion_g": 500,
+      "calories": 800,
+      "protein": 17,
+      "carbs": 92,
+      "fat": 40,
+      "tip": "Fettreicher als selbst gekocht",
+      "basis": [
+        {
+          "fdcId": 2708830,
+          "g": 500
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Spaghetti Carbonara", "calories": 700, "emoji": "🍝"},
-    {"name": "Penne Pesto", "calories": 680, "emoji": "🌿"},
-    {"name": "Pizza Margherita", "calories": 800, "emoji": "🍕"},
-    {"name": "Reis mit Gemüse", "calories": 380, "emoji": "🍚"}
+    {
+      "name": "Spaghetti Carbonara (380g)",
+      "calories": 623,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-carbonara",
+          "g": 380
+        }
+      ]
+    },
+    {
+      "name": "Pizza Margherita (400g)",
+      "calories": 1064,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Reis mit Gemüse (400g)",
+      "calories": 496,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 2709028,
+          "g": 400
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Arrabiata ist kalorienarm", "text": "Tomatensauce hat nur ca. 40 kcal/100g – deutlich weniger als Sahne- oder Pesto-Saucen.", "icon": "🍅"},
-    {"title": "Pasta al dente kochen", "text": "Al dente gekochte Pasta hat einen niedrigeren glykämischen Index – du bleibst länger satt.", "icon": "⏱️"},
-    {"title": "Chili kurbelt den Stoffwechsel an", "text": "Capsaicin in Chili kann den Energieverbrauch kurzfristig um 5-8% steigern.", "icon": "🌶️"},
-    {"title": "80g Pasta trocken reichen", "text": "Eine Portion Pasta (trocken) sollte 70-80g sein – das ergibt ca. 180g gekocht.", "icon": "⚖️"},
-    {"title": "Gemüse hinzufügen", "text": "Paprika, Zucchini oder Aubergine in der Sauce sorgen für Sättigung bei wenig Kalorien.", "icon": "🥒"}
+    {
+      "title": "Arrabiata ist kalorienarm",
+      "text": "Tomatensauce hat deutlich weniger Kalorien als Sahne- oder Pesto-Saucen.",
+      "icon": "🍅"
+    },
+    {
+      "title": "Pasta al dente kochen",
+      "text": "Al dente gekochte Pasta hat einen niedrigeren glykämischen Index, so bleibst du länger satt.",
+      "icon": "⏱️"
+    },
+    {
+      "title": "Chili kurbelt den Stoffwechsel an",
+      "text": "Capsaicin in Chili kann den Energieverbrauch kurzfristig um 5-8% steigern.",
+      "icon": "🌶️"
+    },
+    {
+      "title": "80g Pasta trocken reichen",
+      "text": "Eine Portion Pasta (trocken) sollte 70 bis 80g sein, das ergibt ca. 180g gekocht.",
+      "icon": "⚖️"
+    },
+    {
+      "title": "Gemüse hinzufügen",
+      "text": "Paprika, Zucchini oder Aubergine in der Sauce sorgen für Sättigung bei wenig Kalorien.",
+      "icon": "🥒"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Penne Arrabiata?", "answer": "Ein Teller Penne Arrabiata (400g) hat ca. 580 kcal. Als vegane Variante ohne Käse sind es nur ca. 520 kcal."},
-    {"question": "Ist Penne Arrabiata gut zum Abnehmen?", "answer": "Ja! Arrabiata ist eine der kalorienärmsten Pasta-Saucen. Eine kleine Portion (250g) hat nur ca. 363 kcal."},
-    {"question": "Wie viel Protein hat Penne Arrabiata?", "answer": "Ein Teller hat ca. 18g Protein. Mit Hähnchenbrust steigt der Wert auf ca. 35g."},
-    {"question": "Was ist gesünder: Arrabiata oder Carbonara?", "answer": "Arrabiata ist deutlich kalorienärmer (580 vs. 700 kcal) und fettärmer, da keine Sahne, kein Ei und kein Speck verwendet wird."},
-    {"question": "Wie viele Kalorien hat die Arrabiata-Sauce allein?", "answer": "Die Arrabiata-Sauce hat nur ca. 40-50 kcal pro 100g – hauptsächlich aus Tomaten, Olivenöl und Knoblauch."},
-    {"question": "Ist Vollkorn-Penne besser?", "answer": "Vollkorn-Penne hat ähnlich viele Kalorien, aber doppelt so viele Ballaststoffe (6g vs. 3g pro Portion). Du bleibst länger satt."}
+    {
+      "question": "Wie viele Kalorien hat Penne Arrabiata?",
+      "answer": "Ein Teller Penne Arrabiata (400g) hat ca. 424 kcal. Eine Restaurant-Portion (500g) ist fettreicher und kommt auf rund 800 kcal."
+    },
+    {
+      "question": "Ist Penne Arrabiata gut zum Abnehmen?",
+      "answer": "Ja! Arrabiata ist eine der kalorienärmsten Pasta-Saucen. Eine kleine Portion (250g) hat nur ca. 265 kcal."
+    },
+    {
+      "question": "Wie viel Protein hat Penne Arrabiata?",
+      "answer": "Ein Teller (400g) hat ca. 15g Protein. Mit Hähnchen oder Pute (450g) steigt der Wert auf ca. 27g."
+    },
+    {
+      "question": "Was ist gesünder: Arrabiata oder Carbonara?",
+      "answer": "Arrabiata ist deutlich kalorienärmer (424 kcal pro Teller mit 400g vs. 623 kcal für 380g Carbonara) und fettärmer, da keine Sahne, kein Ei und kein Speck verwendet wird."
+    },
+    {
+      "question": "Wie viele Kalorien hat die Arrabiata-Sauce allein?",
+      "answer": "Die Arrabiata-Sauce selbst ist kalorienarm, ihre Kalorien stammen hauptsächlich aus Tomaten, Olivenöl und Knoblauch."
+    },
+    {
+      "question": "Ist Vollkorn-Penne besser?",
+      "answer": "Vollkorn-Penne hat etwa gleich viele Kalorien (ca. 408 statt 424 kcal pro Teller mit 400g), aber deutlich mehr Ballaststoffe (rund 11,6g statt 7,2g). Du bleibst länger satt."
+    }
   ],
-  "related_foods": ["spaghetti-bolognese", "spaghetti-carbonara", "lasagne", "gnocchi"]
+  "related_foods": [
+    "spaghetti-bolognese",
+    "spaghetti-carbonara",
+    "lasagne",
+    "gnocchi"
+  ]
 }

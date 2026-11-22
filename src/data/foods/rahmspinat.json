@@ -3,9 +3,10 @@
   "name": "Rahmspinat",
   "emoji": "🥬",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2709628 (Spinach, creamed), Werte je 100 g",
   "seo": {
     "title": "Rahmspinat Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Rahmspinat? Ca. 64 kcal pro 100g. Nährwerte, Protein & Kohlenhydrate pro Portion plus Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Rahmspinat? Ca. 90 kcal pro 100g. Nährwerte, Protein & Kohlenhydrate pro Portion plus Tipps zum Abnehmen.",
     "keywords": [
       "rahmspinat kcal",
       "rahmspinat kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 64,
-    "protein_per_100g": 2.8,
-    "carbs_per_100g": 4,
-    "fat_per_100g": 4.2,
-    "fiber_per_100g": 1.8,
+    "calories_per_100g": 90,
+    "protein_per_100g": 2.4,
+    "carbs_per_100g": 6.1,
+    "fat_per_100g": 6.1,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion (200g)"
   },
@@ -28,80 +29,93 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 96,
-      "protein": 4.2,
-      "carbs": 6,
-      "fat": 6.3
+      "calories": 135,
+      "protein": 3.6,
+      "carbs": 9.2,
+      "fat": 9.2
     },
     {
       "name": "1 Portion (200g)",
       "portion_g": 200,
-      "calories": 128,
-      "protein": 5.6,
-      "carbs": 8,
-      "fat": 8.4,
+      "calories": 180,
+      "protein": 4.8,
+      "carbs": 12.2,
+      "fat": 12.2,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (300g)",
       "portion_g": 300,
-      "calories": 192,
-      "protein": 8.4,
-      "carbs": 12,
-      "fat": 12.6
+      "calories": 270,
+      "protein": 7.2,
+      "carbs": 18.3,
+      "fat": 18.3
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 64,
-      "protein": 2.8,
-      "carbs": 4,
-      "fat": 4.2
+      "calories": 90,
+      "protein": 2.4,
+      "carbs": 6.1,
+      "fat": 6.1
     },
     {
       "name": "Tiefkühl-Packung (450g)",
       "portion_g": 450,
-      "calories": 288,
-      "protein": 12.6,
-      "carbs": 18,
-      "fat": 18.9,
+      "calories": 405,
+      "protein": 10.8,
+      "carbs": 27.5,
+      "fat": 27.5,
       "tip": "ganze Packung"
     },
     {
       "name": "Beilage zu Kartoffeln (250g)",
       "portion_g": 250,
-      "calories": 160,
-      "protein": 7,
-      "carbs": 10,
-      "fat": 10.5
+      "calories": 225,
+      "protein": 6,
+      "carbs": 15.3,
+      "fat": 15.3
     }
   ],
   "comparison": [
     {
       "name": "Spinat (gekocht, 200g)",
       "calories": 46,
-      "emoji": "🥬"
+      "emoji": "🥬",
+      "basis": [
+        {
+          "fdcId": 168463,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Brokkoli (gekocht, 200g)",
       "calories": 70,
-      "emoji": "🥦"
-    },
-    {
-      "name": "Rahmspinat (200g)",
-      "calories": 128,
-      "emoji": "🥬"
+      "emoji": "🥦",
+      "basis": [
+        {
+          "fdcId": 169967,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Kartoffelpüree (200g)",
-      "calories": 220,
-      "emoji": "🥔"
+      "calories": 226,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelpueree",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mehr als purer Spinat",
-      "text": "Durch Sahne und Butter hat Rahmspinat mit ca. 64 kcal pro 100g rund dreimal so viele Kalorien wie reiner gekochter Spinat (ca. 23 kcal). Der Großteil stammt aus dem Fett der Sahne.",
+      "text": "Durch Sahne und Butter hat Rahmspinat mit ca. 90 kcal pro 100g rund viermal so viele Kalorien wie reiner gekochter Spinat (ca. 23 kcal). Der Großteil stammt aus dem Fett der Sahne.",
       "icon": "🥛"
     },
     {
@@ -128,23 +142,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Rahmspinat?",
-      "answer": "Rahmspinat hat ca. 64 kcal pro 100g. Eine typische Portion von 200g kommt auf rund 128 kcal."
+      "answer": "Rahmspinat hat ca. 90 kcal pro 100g. Eine typische Portion von 200g kommt auf rund 180 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Rahmspinat?",
-      "answer": "Eine normale Portion (200g) hat etwa 128 kcal. Eine kleine Beilage (150g) liegt bei ca. 96 kcal, eine große Portion (300g) bei rund 192 kcal."
+      "answer": "Eine normale Portion (200g) hat etwa 180 kcal. Eine kleine Beilage (150g) liegt bei ca. 135 kcal, eine große Portion (300g) bei rund 270 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Rahmspinat?",
-      "answer": "Rahmspinat enthält ca. 4g Kohlenhydrate pro 100g, eine 200g-Portion also rund 8g. Damit ist er vergleichsweise kohlenhydratarm."
+      "answer": "Rahmspinat enthält ca. 6,1g Kohlenhydrate pro 100g, eine 200g-Portion also rund 12g. Damit ist er vergleichsweise kohlenhydratarm."
     },
     {
       "question": "Wie viel Protein steckt in Rahmspinat?",
-      "answer": "Rahmspinat liefert ca. 2,8g Eiweiß pro 100g. Eine 200g-Portion enthält damit etwa 5,6g Protein."
+      "answer": "Rahmspinat liefert ca. 2,4g Eiweiß pro 100g. Eine 200g-Portion enthält damit etwa 4,8g Protein."
     },
     {
       "question": "Ist Rahmspinat zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit ca. 64 kcal pro 100g ist Rahmspinat moderat kalorienhaltig. Das meiste Fett stammt aus der Sahne. Eine leichtere Variante mit Milch statt Sahne spart zusätzlich Kalorien."
+      "answer": "In Maßen ja. Mit ca. 90 kcal pro 100g ist Rahmspinat moderat kalorienhaltig. Das meiste Fett stammt aus der Sahne. Eine leichtere Variante mit Milch statt Sahne spart zusätzlich Kalorien."
     },
     {
       "question": "Ist Rahmspinat gesund?",

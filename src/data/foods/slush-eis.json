@@ -3,9 +3,10 @@
   "name": "Slush-Eis",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710576 (Slush frozen drink: 28 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 28 kcal",
   "seo": {
     "title": "Slush-Eis Kalorien: Nährwerte, Größen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Slush-Eis? Pro 100 ml ca. 50 kcal, ein mittlerer Becher (300 ml) rund 150 kcal. Nährwerte, Größen im Vergleich und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Slush-Eis? Pro 100 ml ca. 28 kcal, ein mittlerer Becher (300 ml) rund 85 kcal. Nährwerte, Größen im Vergleich und Diät-Tipps.",
     "keywords": [
       "slush eis kalorien",
       "slush kcal",
@@ -17,95 +18,128 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 50,
+    "calories_per_100g": 28,
     "protein_per_100g": 0,
-    "carbs_per_100g": 12.5,
+    "carbs_per_100g": 7.7,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 300,
+    "typical_portion_g": 304,
     "typical_portion_name": "1 Becher mittel (300 ml)"
   },
   "variants": [
     {
       "name": "Slush-Eis klein (200 ml)",
-      "portion_g": 200,
-      "calories": 100,
+      "portion_g": 203,
+      "calories": 57,
       "protein": 0,
-      "carbs": 25,
+      "carbs": 16,
       "fat": 0
     },
     {
       "name": "Slush-Eis mittel (300 ml)",
-      "portion_g": 300,
-      "calories": 150,
+      "portion_g": 304,
+      "calories": 85,
       "protein": 0,
-      "carbs": 38,
+      "carbs": 23,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Slush-Eis groß (400 ml)",
-      "portion_g": 400,
-      "calories": 200,
+      "portion_g": 406,
+      "calories": 114,
       "protein": 0,
-      "carbs": 50,
+      "carbs": 31,
       "fat": 0
     },
     {
       "name": "Slush-Eis XXL (500 ml)",
-      "portion_g": 500,
-      "calories": 250,
+      "portion_g": 507,
+      "calories": 142,
       "protein": 0,
-      "carbs": 63,
+      "carbs": 39,
       "fat": 0,
       "tip": "Kino-/Freizeitpark-Größe"
     },
     {
       "name": "Slush-Eis Mini (150 ml)",
-      "portion_g": 150,
-      "calories": 75,
+      "portion_g": 152,
+      "calories": 43,
       "protein": 0,
-      "carbs": 19,
+      "carbs": 12,
       "fat": 0
     },
     {
-      "name": "Slush-Eis zuckerfrei (300 ml)",
-      "portion_g": 300,
-      "calories": 15,
+      "name": "Slush-Eis ohne Zuckerzusatz (300 ml)",
+      "portion_g": 304,
+      "calories": 33,
       "protein": 0,
-      "carbs": 3,
+      "carbs": 9,
       "fat": 0,
-      "tip": "Mit Süßstoff statt Zucker, deutlich kalorienärmer"
+      "tip": "Mit Süßstoff statt Zucker, deutlich kalorienärmer",
+      "basis": [
+        {
+          "fdcId": 2710577,
+          "ml": 300,
+          "g": 304
+        }
+      ]
     },
     {
       "name": "Pro 100 ml",
-      "portion_g": 100,
-      "calories": 50,
+      "portion_g": 101,
+      "calories": 28,
       "protein": 0,
-      "carbs": 13,
+      "carbs": 8,
       "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Cola (300 ml)",
-      "calories": 126,
-      "emoji": "🥤"
+      "calories": 132,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 300,
+          "g": 314
+        }
+      ]
     },
     {
-      "name": "Wassereis (1 Stück)",
-      "calories": 40,
-      "emoji": "🧊"
+      "name": "Wassereis (1 Stück, 60g)",
+      "calories": 47,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "wassereis",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Apfelsaft (300 ml)",
-      "calories": 138,
-      "emoji": "🧃"
+      "calories": 144,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 300,
+          "g": 314
+        }
+      ]
     },
     {
-      "name": "Eis (1 Kugel)",
-      "calories": 100,
-      "emoji": "🍨"
+      "name": "Eis (1 Kugel, 100g)",
+      "calories": 221,
+      "emoji": "🍨",
+      "basis": [
+        {
+          "slug": "eis",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -116,12 +150,12 @@
     },
     {
       "title": "Auf die Größe achten",
-      "text": "Der Becher macht den Unterschied: 200 ml haben rund 100 kcal, ein XXL-Becher mit 500 ml schon etwa 250 kcal. Wähle im Zweifel die kleine Größe.",
+      "text": "Der Becher macht den Unterschied: 200 ml haben rund 57 kcal, ein XXL-Becher mit 500 ml schon etwa 142 kcal. Wähle im Zweifel die kleine Größe.",
       "icon": "📏"
     },
     {
       "title": "Zuckerfreie Variante wählen",
-      "text": "Slush-Eis mit Süßstoff statt Zucker hat pro Becher nur etwa 15 kcal. Wer den Geschmack mag, spart so fast die kompletten Kalorien.",
+      "text": "Slush-Eis ohne Zuckerzusatz (mit Süßstoff) hat pro Becher (300 ml) nur etwa 33 kcal. Wer den Geschmack mag, spart so rund 60 % der Kalorien.",
       "icon": "🚫"
     },
     {
@@ -138,11 +172,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Slush-Eis?",
-      "answer": "Slush-Eis hat etwa 50 kcal pro 100 ml. Ein mittlerer Becher (300 ml) kommt damit auf rund 150 kcal, ein kleiner Becher (200 ml) auf etwa 100 kcal."
+      "answer": "Slush-Eis hat laut USDA etwa 28 kcal pro 100 ml. Ein mittlerer Becher (300 ml) kommt damit auf rund 85 kcal, ein kleiner Becher (200 ml) auf etwa 57 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Slush-Eis?",
-      "answer": "Fast die gesamte Energie stammt aus Zucker: pro 100 ml etwa 12,5 g Kohlenhydrate. Ein 300-ml-Becher enthält also rund 38 g Kohlenhydrate."
+      "answer": "Fast die gesamte Energie stammt aus Zucker: pro 100 ml etwa 7,8 g Kohlenhydrate. Ein 300-ml-Becher enthält also rund 23 g Kohlenhydrate."
     },
     {
       "question": "Hat Slush-Eis Eiweiß oder Fett?",
@@ -150,7 +184,7 @@
     },
     {
       "question": "Ist Slush-Eis zum Abnehmen geeignet?",
-      "answer": "Eher nicht. Es liefert reine Zuckerkalorien ohne Sättigung. Wer abnehmen möchte, greift besser zur zuckerfreien Variante mit nur etwa 15 kcal pro Becher oder zu Wasser."
+      "answer": "Eher nicht. Es liefert reine Zuckerkalorien ohne Sättigung. Wer abnehmen möchte, greift besser zur Variante ohne Zuckerzusatz mit nur etwa 33 kcal pro Becher oder zu Wasser."
     },
     {
       "question": "Ist Slush-Eis gesund?",
@@ -158,7 +192,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein XXL-Slush-Eis?",
-      "answer": "Ein großer XXL-Becher mit 500 ml hat etwa 250 kcal, da der Kaloriengehalt direkt mit der Menge steigt."
+      "answer": "Ein großer XXL-Becher mit 500 ml hat etwa 142 kcal, da der Kaloriengehalt direkt mit der Menge steigt."
     }
   ],
   "related_foods": [

@@ -3,9 +3,10 @@
   "name": "Chicken Wings",
   "emoji": "🍗",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 173630 (Chicken, broilers or fryers, wing, meat and skin, cooked, roasted), Werte je 100 g",
   "seo": {
     "title": "Chicken Wings Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Chicken Wings? 100g gegart haben ca. 290 kcal. Nährwerte pro Flügel & Portion, Buffalo-Variante und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien haben Chicken Wings? 100g gegart haben ca. 254 kcal. Nährwerte pro Flügel & Portion, Buffalo-Variante und Tipps zum Abnehmen.",
     "keywords": [
       "chicken wings kalorien",
       "hähnchen wings kalorien",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 290,
-    "protein_per_100g": 26.9,
+    "calories_per_100g": 254,
+    "protein_per_100g": 23.8,
     "carbs_per_100g": 0,
-    "fat_per_100g": 19.5,
+    "fat_per_100g": 16.9,
     "fiber_per_100g": 0,
     "typical_portion_g": 105,
     "typical_portion_name": "3 Flügel (gegart)"
@@ -28,52 +29,64 @@
     {
       "name": "1 Flügel gegart (35g)",
       "portion_g": 35,
-      "calories": 102,
-      "protein": 9,
+      "calories": 89,
+      "protein": 8,
       "carbs": 0,
-      "fat": 7
+      "fat": 6
     },
     {
       "name": "3 Flügel (105g)",
       "portion_g": 105,
-      "calories": 305,
-      "protein": 28,
+      "calories": 267,
+      "protein": 25,
       "carbs": 0,
-      "fat": 20,
+      "fat": 18,
       "tip": "Standard-Portion"
     },
     {
       "name": "6 Flügel Portion (210g)",
       "portion_g": 210,
-      "calories": 609,
-      "protein": 57,
+      "calories": 533,
+      "protein": 50,
       "carbs": 0,
-      "fat": 41
+      "fat": 35
     },
     {
       "name": "100g gegart (Backofen)",
       "portion_g": 100,
-      "calories": 290,
-      "protein": 27,
+      "calories": 254,
+      "protein": 24,
       "carbs": 0,
-      "fat": 20
+      "fat": 17
     },
     {
       "name": "Buffalo Wings mit Sauce (100g)",
       "portion_g": 100,
-      "calories": 300,
-      "protein": 25,
-      "carbs": 3,
+      "calories": 272,
+      "protein": 17,
+      "carbs": 6,
       "fat": 20,
-      "tip": "mit scharfer Sauce"
+      "tip": "mit scharfer Sauce",
+      "basis": [
+        {
+          "fdcId": 2706070,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Wings paniert & frittiert (100g)",
       "portion_g": 100,
-      "calories": 320,
-      "protein": 22,
-      "carbs": 8,
-      "fat": 21
+      "calories": 323,
+      "protein": 18,
+      "carbs": 15,
+      "fat": 21,
+      "basis": [
+        {
+          "fdcId": 2706067,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Wings roh, mit Haut (100g)",
@@ -81,36 +94,64 @@
       "calories": 191,
       "protein": 18,
       "carbs": 0,
-      "fat": 11,
-      "tip": "vor dem Garen"
+      "fat": 13,
+      "tip": "vor dem Garen",
+      "basis": [
+        {
+          "fdcId": 172390,
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Chicken Nuggets",
-      "calories": 296,
-      "emoji": "🍗"
+      "name": "Chicken Nuggets (6 Stück)",
+      "calories": 295,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "chicken-nuggets"
+        }
+      ]
     },
     {
-      "name": "Hähnchenbrust",
+      "name": "Hähnchenbrust (100g)",
       "calories": 165,
-      "emoji": "🐔"
+      "emoji": "🐔",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Currywurst",
-      "calories": 290,
-      "emoji": "🌭"
+      "name": "Bratwurst",
+      "calories": 500,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst"
+        }
+      ]
     },
     {
-      "name": "Hot Dog",
-      "calories": 290,
-      "emoji": "🌭"
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Im Backofen statt Fritteuse",
-      "text": "Im Ofen gegarte Wings kommen ohne Frittierfett aus und sparen gegenüber der panierten, frittierten Variante rund 30 kcal pro 100g sowie Kohlenhydrate aus der Panade.",
+      "text": "Im Ofen gegarte Wings kommen ohne Frittierfett aus und sparen gegenüber der panierten, frittierten Variante rund 69 kcal pro 100g sowie Kohlenhydrate aus der Panade.",
       "icon": "🔥"
     },
     {
@@ -120,7 +161,7 @@
     },
     {
       "title": "Proteinreich, aber fettreich",
-      "text": "Chicken Wings liefern viel Eiweiß (rund 27g pro 100g), enthalten aber durch die Haut auch viel Fett. Für eine ausgewogene Mahlzeit mit Gemüse oder Salat kombinieren.",
+      "text": "Chicken Wings liefern viel Eiweiß (rund 24g pro 100g), enthalten aber durch die Haut auch viel Fett. Für eine ausgewogene Mahlzeit mit Gemüse oder Salat kombinieren.",
       "icon": "💪"
     },
     {
@@ -130,26 +171,26 @@
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "6 Flügel kommen schnell auf über 600 kcal. Wer abnehmen möchte, hält sich an 3 bis 4 Flügel und ergänzt mit Rohkost.",
+      "text": "6 Flügel kommen schnell auf über 500 kcal. Wer abnehmen möchte, hält sich an 3 bis 4 Flügel und ergänzt mit Rohkost.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Chicken Wings?",
-      "answer": "Gegarte Chicken Wings mit Haut haben etwa 290 kcal pro 100g. Eine Portion mit 3 Flügeln (ca. 105g) liefert rund 305 kcal."
+      "answer": "Gegarte Chicken Wings mit Haut haben etwa 254 kcal pro 100g. Eine Portion mit 3 Flügeln (ca. 105g) liefert rund 267 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein einzelner Chicken Wing?",
-      "answer": "Ein gegarter Flügel mit etwa 35g essbarem Anteil hat rund 100 kcal."
+      "answer": "Ein gegarter Flügel mit etwa 35g essbarem Anteil hat rund 89 kcal."
     },
     {
       "question": "Wie viel Protein haben Chicken Wings?",
-      "answer": "Chicken Wings liefern etwa 27g Eiweiß pro 100g und sind damit eine gute Proteinquelle. Drei Flügel enthalten rund 28g Protein."
+      "answer": "Chicken Wings liefern etwa 24g Eiweiß pro 100g und sind damit eine gute Proteinquelle. Drei Flügel enthalten rund 25g Protein."
     },
     {
       "question": "Haben Chicken Wings Kohlenhydrate?",
-      "answer": "Pure gegarte Wings sind nahezu kohlenhydratfrei. Panierte oder mit süßer Sauce glasierte Varianten enthalten dagegen einige Kohlenhydrate, meist 3 bis 8g pro 100g."
+      "answer": "Pure gegarte Wings sind nahezu kohlenhydratfrei. Panierte oder mit Sauce zubereitete Varianten enthalten dagegen einige Kohlenhydrate, laut FDC etwa 6g (Buffalo Wings) bis 15g (paniert) pro 100g."
     },
     {
       "question": "Sind Chicken Wings zum Abnehmen geeignet?",

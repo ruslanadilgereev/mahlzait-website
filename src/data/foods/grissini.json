@@ -3,9 +3,10 @@
   "name": "Grissini",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174929 (Bread, sticks, plain), Werte je 100 g",
   "seo": {
     "title": "Grissini Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Grissini? 100g haben ca. 440 kcal, eine einzelne Stange nur ca. 18 kcal. Nährwerte, Varianten & Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Grissini? 100g haben ca. 412 kcal, eine einzelne Stange nur ca. 16 kcal. Nährwerte, Varianten & Diät-Tipps im Überblick.",
     "keywords": [
       "grissini kalorien",
       "grissini kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 440,
-    "protein_per_100g": 11.5,
-    "carbs_per_100g": 71,
-    "fat_per_100g": 13,
+    "calories_per_100g": 412,
+    "protein_per_100g": 12,
+    "carbs_per_100g": 68.4,
+    "fat_per_100g": 9.5,
     "fiber_per_100g": 3,
     "typical_portion_g": 4,
     "typical_portion_name": "1 Stange (4g)"
@@ -28,92 +29,115 @@
     {
       "name": "1 Stange (4g)",
       "portion_g": 4,
-      "calories": 18,
+      "calories": 16,
       "protein": 0,
       "carbs": 3,
-      "fat": 1,
+      "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "3 Stangen (12g)",
       "portion_g": 12,
-      "calories": 53,
+      "calories": 49,
       "protein": 1,
-      "carbs": 9,
-      "fat": 2
+      "carbs": 8,
+      "fat": 1
     },
     {
       "name": "Kleine Handvoll (20g)",
       "portion_g": 20,
-      "calories": 88,
+      "calories": 82,
       "protein": 2,
       "carbs": 14,
-      "fat": 3
+      "fat": 2
     },
     {
       "name": "Portion (30g)",
       "portion_g": 30,
-      "calories": 132,
-      "protein": 3,
+      "calories": 124,
+      "protein": 4,
       "carbs": 21,
-      "fat": 4
+      "fat": 3
     },
     {
       "name": "Halbe Packung (62g)",
       "portion_g": 62,
-      "calories": 273,
+      "calories": 255,
       "protein": 7,
-      "carbs": 44,
-      "fat": 8
+      "carbs": 42,
+      "fat": 6
     },
     {
       "name": "Ganze Packung (125g)",
       "portion_g": 125,
-      "calories": 550,
-      "protein": 14,
-      "carbs": 89,
-      "fat": 16
+      "calories": 515,
+      "protein": 15,
+      "carbs": 86,
+      "fat": 12
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 440,
+      "calories": 412,
       "protein": 12,
-      "carbs": 71,
-      "fat": 13
+      "carbs": 68,
+      "fat": 10
     }
   ],
   "comparison": [
     {
       "name": "Brezel (1 Stück)",
-      "calories": 230,
-      "emoji": "🥨"
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        }
+      ]
     },
     {
       "name": "Salzstangen (30g)",
-      "calories": 116,
-      "emoji": "🥨"
+      "calories": 115,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "fdcId": 167555,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Cracker (30g)",
-      "calories": 130,
-      "emoji": "🍘"
+      "calories": 153,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "cracker",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Baguette (Scheibe 30g)",
       "calories": 82,
-      "emoji": "🥖"
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Pro Stange überraschend wenig",
-      "text": "Eine einzelne Grissini-Stange hat nur ca. 18 kcal. Das täuscht aber: Da man selten bei einer bleibt, summieren sich 8 bis 10 Stangen schnell auf über 150 kcal.",
+      "text": "Eine einzelne Grissini-Stange hat nur ca. 16 kcal. Das täuscht aber: Da man selten bei einer bleibt, summieren sich 8 bis 10 Stangen schnell auf über 130 kcal.",
       "icon": "🥖"
     },
     {
       "title": "Kaloriendichte beachten",
-      "text": "Mit ca. 440 kcal pro 100g zählen Grissini zu den kalorienreichen Knabbereien. Der niedrige Wassergehalt macht sie sehr energiedicht im Vergleich zu frischem Brot.",
+      "text": "Mit ca. 412 kcal pro 100g zählen Grissini zu den kalorienreichen Knabbereien. Der niedrige Wassergehalt macht sie sehr energiedicht im Vergleich zu frischem Brot.",
       "icon": "⚖️"
     },
     {
@@ -135,23 +159,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Grissini?",
-      "answer": "100g Grissini haben ca. 440 kcal. Eine einzelne dünne Stange (ca. 4g) hat nur etwa 18 kcal."
+      "answer": "100g Grissini haben ca. 412 kcal. Eine einzelne dünne Stange (ca. 4g) hat nur etwa 16 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Grissini-Stange?",
-      "answer": "Eine klassische dünne Grissini-Stange wiegt ca. 4g und hat rund 18 kcal. Dickere Stangen können entsprechend mehr haben."
+      "answer": "Eine klassische dünne Grissini-Stange wiegt ca. 4g und hat rund 16 kcal. Dickere Stangen können entsprechend mehr haben."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Grissini?",
-      "answer": "Grissini bestehen überwiegend aus Weizenmehl und enthalten ca. 71g Kohlenhydrate pro 100g. Eine Stange liefert rund 3g."
+      "answer": "Grissini bestehen überwiegend aus Weizenmehl und enthalten ca. 68g Kohlenhydrate pro 100g. Eine Stange liefert rund 3g."
     },
     {
       "question": "Wie viel Protein haben Grissini?",
-      "answer": "Grissini enthalten ca. 11,5g Protein pro 100g. Als Eiweißquelle sind sie weniger geeignet, der Großteil der Kalorien stammt aus Kohlenhydraten."
+      "answer": "Grissini enthalten ca. 12g Protein pro 100g. Als Eiweißquelle sind sie weniger geeignet, der Großteil der Kalorien stammt aus Kohlenhydraten."
     },
     {
       "question": "Sind Grissini zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Eine einzelne Stange hat wenig Kalorien. Wegen der hohen Kaloriendichte von 440 kcal pro 100g sollte man die Portion aber bewusst klein halten."
+      "answer": "In Maßen ja: Eine einzelne Stange hat wenig Kalorien. Wegen der hohen Kaloriendichte von 412 kcal pro 100g sollte man die Portion aber bewusst klein halten."
     },
     {
       "question": "Sind Grissini gesund?",

@@ -3,9 +3,10 @@
   "name": "Wiener",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 172964 (Frankfurter, pork), Werte je 100 g",
   "seo": {
     "title": "Wiener Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Wiener Würstchen? Ein Paar (100g) hat ca. 270 kcal. Nährwerte pro 100g & pro Stück, Eiweiß, Fett + Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Wiener Würstchen? Ein Paar (100g) hat ca. 269 kcal. Nährwerte pro 100g & pro Stück, Eiweiß, Fett + Diät-Tipps im Überblick.",
     "keywords": [
       "wiener kalorien",
       "wiener würstchen kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 270,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 0.5,
-    "fat_per_100g": 24.5,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 269,
+    "protein_per_100g": 12.8,
+    "carbs_per_100g": 0.3,
+    "fat_per_100g": 23.7,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 100,
     "typical_portion_name": "1 Paar (2 Würstchen)"
   },
@@ -29,94 +30,133 @@
       "name": "1 Wiener (50g)",
       "portion_g": 50,
       "calories": 135,
-      "protein": 6,
-      "carbs": 0.3,
-      "fat": 12,
+      "protein": 6.4,
+      "carbs": 0.2,
+      "fat": 11.9,
       "tip": "Ein einzelnes Würstchen"
     },
     {
       "name": "1 Paar (100g)",
       "portion_g": 100,
-      "calories": 270,
-      "protein": 12,
-      "carbs": 0.5,
-      "fat": 25,
+      "calories": 269,
+      "protein": 12.8,
+      "carbs": 0.3,
+      "fat": 23.7,
       "tip": "Standardportion"
     },
     {
       "name": "Kleines Wiener (40g)",
       "portion_g": 40,
       "calories": 108,
-      "protein": 5,
-      "carbs": 0.2,
-      "fat": 10
+      "protein": 5.1,
+      "carbs": 0.1,
+      "fat": 9.5
     },
     {
       "name": "Wiener vom Metzger (75g)",
       "portion_g": 75,
-      "calories": 203,
-      "protein": 9,
-      "carbs": 0.4,
-      "fat": 18
+      "calories": 202,
+      "protein": 9.6,
+      "carbs": 0.2,
+      "fat": 17.8
     },
     {
       "name": "Dose Wiener (4 Stück, 200g)",
       "portion_g": 200,
-      "calories": 540,
-      "protein": 24,
-      "carbs": 1,
-      "fat": 49
+      "calories": 538,
+      "protein": 25.6,
+      "carbs": 0.6,
+      "fat": 47.4
     },
     {
       "name": "Geflügel-Wiener (50g)",
       "portion_g": 50,
-      "calories": 90,
-      "protein": 7,
-      "carbs": 0.3,
-      "fat": 6,
-      "tip": "Magerere Alternative"
+      "calories": 112,
+      "protein": 7.8,
+      "carbs": 1.4,
+      "fat": 8.1,
+      "tip": "Magerere Alternative",
+      "basis": [
+        {
+          "fdcId": 171624,
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Hot Dog mit 1 Wiener (120g)",
+      "name": "Hot Dog mit 1 Wiener (50g + 70g Brötchen)",
       "portion_g": 120,
-      "calories": 290,
-      "protein": 9,
-      "carbs": 24,
-      "fat": 16,
-      "tip": "Inkl. Brötchen"
+      "calories": 330,
+      "protein": 13.2,
+      "carbs": 35.2,
+      "fat": 14.6,
+      "tip": "Inkl. Brötchen",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 172796,
+          "g": 70
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Bockwurst",
-      "calories": 250,
-      "emoji": "🌭"
+      "name": "Bockwurst (100g)",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Bratwurst",
-      "calories": 297,
-      "emoji": "🌭"
+      "name": "Bratwurst (100g)",
+      "calories": 333,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Weißwurst",
-      "calories": 256,
-      "emoji": "🌭"
+      "name": "Weißwurst (100g)",
+      "calories": 341,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "weisswurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Putenbrust",
-      "calories": 110,
-      "emoji": "🦃"
+      "name": "Putenbrust-Aufschnitt (100g)",
+      "calories": 106,
+      "emoji": "🦃",
+      "basis": [
+        {
+          "fdcId": 172941,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Fettgehalt im Blick behalten",
-      "text": "Ein Wiener besteht zu rund einem Viertel aus Fett. Bei 2 Würstchen sind das schon etwa 25g Fett, daher als Beilage und nicht als Hauptmenge einplanen.",
+      "text": "Ein Wiener besteht zu rund einem Viertel aus Fett. Bei 2 Würstchen sind das schon knapp 24g Fett, daher als Beilage und nicht als Hauptmenge einplanen.",
       "icon": "🧈"
     },
     {
       "title": "Magerere Alternative wählen",
-      "text": "Geflügel-Wiener aus Pute oder Huhn haben oft nur rund 180 kcal pro 100g und deutlich weniger Fett bei ähnlichem Eiweißgehalt.",
+      "text": "Geflügel-Wiener haben rund 223 kcal pro 100g, deutlich weniger Fett und sogar etwas mehr Eiweiß als klassische Wiener.",
       "icon": "🦃"
     },
     {
@@ -138,19 +178,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Wiener Würstchen?",
-      "answer": "Ein einzelnes Wiener Würstchen (ca. 50g) hat rund 135 kcal. Ein Paar mit zwei Würstchen (100g) kommt auf etwa 270 kcal."
+      "answer": "Ein einzelnes Wiener Würstchen (ca. 50g) hat rund 135 kcal. Ein Paar mit zwei Würstchen (100g) kommt auf etwa 269 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Wiener pro 100g?",
-      "answer": "Wiener Würstchen haben pro 100g etwa 270 kcal, 12g Eiweiß und 24,5g Fett. Der Fettanteil macht den Großteil der Kalorien aus."
+      "answer": "Wiener Würstchen haben pro 100g etwa 269 kcal, 13g Eiweiß und 24g Fett. Der Fettanteil macht den Großteil der Kalorien aus."
     },
     {
       "question": "Wie viel Eiweiß hat ein Wiener?",
-      "answer": "Ein Paar Wiener (100g) liefert etwa 12g Eiweiß. Das ist ein solider Wert, allerdings gehen damit auch rund 25g Fett einher."
+      "answer": "Ein Paar Wiener (100g) liefert etwa 13g Eiweiß. Das ist ein solider Wert, allerdings gehen damit auch rund 24g Fett einher."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Wiener Würstchen?",
-      "answer": "Wiener Würstchen enthalten kaum Kohlenhydrate, nur etwa 0,5g pro 100g. Damit sind sie für eine Low-Carb-Ernährung grundsätzlich geeignet."
+      "answer": "Wiener Würstchen enthalten kaum Kohlenhydrate, nur etwa 0,3g pro 100g. Damit sind sie für eine Low-Carb-Ernährung grundsätzlich geeignet."
     },
     {
       "question": "Sind Wiener zum Abnehmen geeignet?",

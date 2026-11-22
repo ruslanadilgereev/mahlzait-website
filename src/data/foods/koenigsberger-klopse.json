@@ -3,48 +3,178 @@
   "name": "Königsberger Klopse",
   "emoji": "🧆",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706384 (Swedish meatballs with cream or white sauce), Werte je 100 g",
   "seo": {
     "title": "Königsberger Klopse Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien haben Königsberger Klopse? Nährwerte mit Kapernsoße, Varianten & Spar-Tipps. Kostenloser Kalorien-Rechner für jede Portionsgröße."
   },
   "overview": {
-    "calories_per_100g": 145,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 6,
-    "fat_per_100g": 8,
+    "calories_per_100g": 170,
+    "protein_per_100g": 12.5,
+    "carbs_per_100g": 6.3,
+    "fat_per_100g": 10.3,
     "fiber_per_100g": 0.2,
     "typical_portion_g": 400,
     "typical_portion_name": "3 Klopse mit Soße"
   },
   "variants": [
-    {"name": "Klassisch mit Kapernsoße", "portion_g": 400, "calories": 580, "protein": 48, "carbs": 24, "fat": 32, "tip": "Traditionsrezept"},
-    {"name": "Mit Salzkartoffeln", "portion_g": 550, "calories": 750, "protein": 52, "carbs": 60, "fat": 34, "tip": "Komplette Mahlzeit"},
-    {"name": "Mit Reis", "portion_g": 550, "calories": 780, "protein": 50, "carbs": 72, "fat": 33, "tip": "Alternative Beilage"},
-    {"name": "Light mit Putengehacktem", "portion_g": 400, "calories": 480, "protein": 52, "carbs": 22, "fat": 20, "tip": "Kalorienärmste Variante"},
-    {"name": "Ohne Soße (nur Klopse)", "portion_g": 250, "calories": 380, "protein": 35, "carbs": 12, "fat": 22, "tip": "Soße weglassen spart Kalorien"},
-    {"name": "Mit leichter Soße (Joghurt)", "portion_g": 400, "calories": 500, "protein": 50, "carbs": 20, "fat": 24, "tip": "Joghurt statt Sahne"},
-    {"name": "Vegetarisch (Gemüseklopse)", "portion_g": 400, "calories": 420, "protein": 18, "carbs": 40, "fat": 22, "tip": "Pflanzliche Alternative"}
+    {
+      "name": "Klassisch mit Kapernsoße",
+      "portion_g": 400,
+      "calories": 680,
+      "protein": 50,
+      "carbs": 25,
+      "fat": 41,
+      "tip": "Traditionsrezept"
+    },
+    {
+      "name": "Kleine Portion (250g)",
+      "portion_g": 250,
+      "calories": 425,
+      "protein": 31,
+      "carbs": 16,
+      "fat": 26
+    },
+    {
+      "name": "Mit Salzkartoffeln",
+      "portion_g": 550,
+      "calories": 809,
+      "protein": 53,
+      "carbs": 55,
+      "fat": 41,
+      "tip": "Komplette Mahlzeit",
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 170440,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Mit Reis",
+      "portion_g": 550,
+      "calories": 875,
+      "protein": 54,
+      "carbs": 67,
+      "fat": 42,
+      "tip": "Alternative Beilage",
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "slug": "reis",
+          "g": 150
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Frikadellen", "calories": 500, "emoji": "🍔"},
-    {"name": "Gulasch", "calories": 500, "emoji": "🍲"},
-    {"name": "Rinderroulade", "calories": 525, "emoji": "🥩"},
-    {"name": "Hähnchenbrust", "calories": 165, "emoji": "🍗"}
+    {
+      "name": "Frikadellen (2 Stück, 300g)",
+      "calories": 588,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "frikadellen",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Gulasch (1 Teller, 300g)",
+      "calories": 321,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulasch",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Rinderroulade mit Soße (300g)",
+      "calories": 585,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "rouladen",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (1 Stück, 200g)",
+      "calories": 330,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 200
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Putengehacktes verwenden", "text": "Ersetze gemischtes Hackfleisch durch Putengehacktes und spare ca. 100 kcal pro Portion.", "icon": "🦃"},
-    {"title": "Sahne reduzieren", "text": "Verwende nur die Hälfte der Sahne oder ersetze sie durch Crème fraîche light.", "icon": "🥛"},
-    {"title": "Brötchen einweichen spart Fett", "text": "Gut eingeweichtes Brötchen macht die Klopse saftig, ohne extra Fett hinzuzufügen.", "icon": "🍞"},
-    {"title": "Kartoffeln statt Reis", "text": "Salzkartoffeln haben weniger Kalorien als die gleiche Menge Reis.", "icon": "🥔"},
-    {"title": "Kapern sind Kalorienneutral", "text": "Kapern haben fast keine Kalorien, geben aber viel Geschmack. Ruhig großzügig verwenden.", "icon": "✨"}
+    {
+      "title": "Putengehacktes verwenden",
+      "text": "Ersetze gemischtes Hackfleisch durch Putengehacktes und spare Kalorien pro Portion.",
+      "icon": "🦃"
+    },
+    {
+      "title": "Sahne reduzieren",
+      "text": "Verwende nur die Hälfte der Sahne oder ersetze sie durch Crème fraîche light.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Brötchen einweichen spart Fett",
+      "text": "Gut eingeweichtes Brötchen macht die Klopse saftig, ohne extra Fett hinzuzufügen.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Kartoffeln statt Reis",
+      "text": "Salzkartoffeln haben weniger Kalorien als die gleiche Menge Reis.",
+      "icon": "🥔"
+    },
+    {
+      "title": "Kapern sind Kalorienneutral",
+      "text": "Kapern haben fast keine Kalorien, geben aber viel Geschmack. Ruhig großzügig verwenden.",
+      "icon": "✨"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien haben Königsberger Klopse?", "answer": "Drei Königsberger Klopse mit Kapernsoße (400g) haben ca. 580 kcal. Mit Salzkartoffeln kommt man auf ca. 750 kcal."},
-    {"question": "Sind Königsberger Klopse gesund?", "answer": "Sie liefern gutes Protein (12g/100g). Die Sahnesoße ist kalorienreich – mit leichter Soße wird das Gericht deutlich gesünder."},
-    {"question": "Wie viel Protein haben Königsberger Klopse?", "answer": "Eine Portion (400g) liefert ca. 48g Protein. Mit Putengehacktes sogar 52g."},
-    {"question": "Was hat weniger Kalorien: Königsberger Klopse oder Frikadellen?", "answer": "Königsberger Klopse (580 kcal) liegen ähnlich wie Frikadellen (500 kcal), aber die Soße macht den Unterschied."},
-    {"question": "Kann man Königsberger Klopse beim Abnehmen essen?", "answer": "Ja, besonders die Light-Variante mit Putengehacktes (480 kcal) passt gut in eine kalorienbewusste Ernährung."},
-    {"question": "Wie macht man kalorienarme Königsberger Klopse?", "answer": "Verwende mageres Putengehacktes, reduziere die Sahne in der Soße und serviere mit Salzkartoffeln statt Reis."}
+    {
+      "question": "Wie viele Kalorien haben Königsberger Klopse?",
+      "answer": "Drei Königsberger Klopse mit Kapernsoße (400g) haben ca. 680 kcal. Mit Salzkartoffeln (150g) kommt man auf ca. 809 kcal."
+    },
+    {
+      "question": "Sind Königsberger Klopse gesund?",
+      "answer": "Sie liefern gutes Protein (rund 12,5g/100g). Die Sahnesoße ist kalorienreich, mit leichter Soße wird das Gericht deutlich gesünder."
+    },
+    {
+      "question": "Wie viel Protein haben Königsberger Klopse?",
+      "answer": "Eine Portion (400g) liefert ca. 50g Protein."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Königsberger Klopse oder Frikadellen?",
+      "answer": "Drei Königsberger Klopse mit Soße (400g, ca. 680 kcal) haben etwas mehr als zwei Frikadellen (300g, ca. 588 kcal). Die Soße macht den Unterschied."
+    },
+    {
+      "question": "Kann man Königsberger Klopse beim Abnehmen essen?",
+      "answer": "Ja, in Maßen: Mit magerem Putengehackten und weniger Sahne in der Soße passt das Gericht gut in eine kalorienbewusste Ernährung."
+    },
+    {
+      "question": "Wie macht man kalorienarme Königsberger Klopse?",
+      "answer": "Verwende mageres Putengehacktes, reduziere die Sahne in der Soße und serviere mit Salzkartoffeln statt Reis."
+    }
   ],
-  "related_foods": ["frikadellen", "gulasch", "kartoffelsalat", "hackbraten"]
+  "related_foods": [
+    "frikadellen",
+    "gulasch",
+    "kartoffelsalat",
+    "hackbraten"
+  ]
 }

@@ -3,50 +3,215 @@
   "name": "Lasagne",
   "emoji": "🧀",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708750 (Lasagna with meat), Werte je 100 g",
   "seo": {
     "title": "Lasagne Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Lasagne? Nährwerte pro Portion & 100g. Klassisch, vegetarisch & Light im Vergleich + kalorienarme Tipps.",
-    "keywords": ["lasagne kalorien", "kalorien lasagne", "lasagne nährwerte", "lasagne kalorien pro portion", "lasagne kalorien pro stück", "vegetarische lasagne kalorien", "lasagne bolognese kalorien", "tiefkühl lasagne kalorien"]
+    "keywords": [
+      "lasagne kalorien",
+      "kalorien lasagne",
+      "lasagne nährwerte",
+      "lasagne kalorien pro portion",
+      "lasagne kalorien pro stück",
+      "vegetarische lasagne kalorien",
+      "lasagne bolognese kalorien",
+      "tiefkühl lasagne kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 145,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 13,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 139,
+    "protein_per_100g": 7.5,
+    "carbs_per_100g": 16.2,
+    "fat_per_100g": 5,
+    "fiber_per_100g": 1.6,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Stück"
   },
   "variants": [
-    { "name": "Lasagne Bolognese (klassisch)", "portion_g": 400, "calories": 580, "protein": 32, "carbs": 52, "fat": 28 },
-    { "name": "Lasagne aus dem Restaurant", "portion_g": 450, "calories": 700, "protein": 35, "carbs": 55, "fat": 36 },
-    { "name": "TK-Lasagne (Iglo/Dr. Oetker)", "portion_g": 375, "calories": 500, "protein": 24, "carbs": 48, "fat": 22 },
-    { "name": "Gemüse-Lasagne", "portion_g": 400, "calories": 440, "protein": 20, "carbs": 50, "fat": 18, "tip": "Kalorienärmste" },
-    { "name": "Spinat-Lasagne", "portion_g": 400, "calories": 460, "protein": 24, "carbs": 48, "fat": 18 },
-    { "name": "Lachs-Lasagne", "portion_g": 400, "calories": 560, "protein": 30, "carbs": 48, "fat": 26 },
-    { "name": "Lasagne ohne Béchamel", "portion_g": 380, "calories": 480, "protein": 30, "carbs": 50, "fat": 18, "tip": "Weniger Fett" },
-    { "name": "Vegane Lasagne", "portion_g": 400, "calories": 400, "protein": 18, "carbs": 52, "fat": 14, "tip": "Pflanzlich" }
+    {
+      "name": "Lasagne Bolognese (klassisch)",
+      "portion_g": 400,
+      "calories": 556,
+      "protein": 30,
+      "carbs": 65,
+      "fat": 20
+    },
+    {
+      "name": "Lasagne selbstgemacht (400g)",
+      "portion_g": 400,
+      "calories": 824,
+      "protein": 55,
+      "carbs": 52,
+      "fat": 44,
+      "basis": [
+        {
+          "fdcId": 2708753,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Lasagne aus dem Restaurant",
+      "portion_g": 450,
+      "calories": 833,
+      "protein": 49,
+      "carbs": 51,
+      "fat": 48,
+      "basis": [
+        {
+          "fdcId": 2708752,
+          "g": 450
+        }
+      ]
+    },
+    {
+      "name": "TK-Lasagne (375g)",
+      "portion_g": 375,
+      "calories": 465,
+      "protein": 25,
+      "carbs": 54,
+      "fat": 17,
+      "basis": [
+        {
+          "fdcId": 2708754,
+          "g": 375
+        }
+      ]
+    },
+    {
+      "name": "Gemüse-Lasagne",
+      "portion_g": 400,
+      "calories": 752,
+      "protein": 45,
+      "carbs": 58,
+      "fat": 38,
+      "tip": "Vegetarisch, mit Käse",
+      "basis": [
+        {
+          "fdcId": 2708759,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Käse-Lasagne (ohne Fleisch)",
+      "portion_g": 400,
+      "calories": 520,
+      "protein": 26,
+      "carbs": 55,
+      "fat": 21,
+      "tip": "Vegetarisch",
+      "basis": [
+        {
+          "fdcId": 2708758,
+          "g": 400
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Spaghetti Bolognese", "calories": 520, "emoji": "🍝" },
-    { "name": "Pizza Margherita", "calories": 735, "emoji": "🍕" },
-    { "name": "Cannelloni", "calories": 560, "emoji": "🍝" },
-    { "name": "Moussaka", "calories": 480, "emoji": "🍆" }
+    {
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Pizza Margherita (300g)",
+      "calories": 798,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Cannelloni (1 Portion, 300g)",
+      "calories": 480,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "cannelloni",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Moussaka (1 Stück, 350g)",
+      "calories": 336,
+      "emoji": "🍆",
+      "basis": [
+        {
+          "slug": "moussaka",
+          "g": 350
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Béchamel reduzieren", "text": "Die Béchamelsoße macht ca. 30% der Kalorien aus. Dünner auftragen oder durch fettarme Milch zubereiten spart 100+ kcal.", "icon": "🥛" },
-    { "title": "Gemüse-Schichten einbauen", "text": "Zucchini- oder Auberginen-Schichten statt jeder zweiten Nudelplatte – gleiche Optik, 25% weniger Kalorien.", "icon": "🥒" },
-    { "title": "Mageres Hackfleisch nehmen", "text": "Rinderhack (5% Fett) statt gemischtes Hack (20% Fett) spart pro Portion ca. 80 kcal.", "icon": "🥩" },
-    { "title": "Portionsgröße kontrollieren", "text": "Ein Restaurant-Stück Lasagne wiegt oft 450g+. Zuhause auf 350-400g reduzieren und mit Salat ergänzen.", "icon": "📏" },
-    { "title": "Käse sparsam einsetzen", "text": "Parmesan hat mehr Geschmack als Gouda – 20g Parmesan geben mehr Aroma als 50g Gouda bei weniger Kalorien.", "icon": "🧀" }
+    {
+      "title": "Béchamel reduzieren",
+      "text": "Die Béchamelsoße macht einen guten Teil der Kalorien aus. Dünner auftragen oder mit fettarmer Milch zubereiten spart Kalorien.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Gemüse-Schichten einbauen",
+      "text": "Zucchini- oder Auberginen-Schichten statt jeder zweiten Nudelplatte: gleiche Optik, weniger Kalorien.",
+      "icon": "🥒"
+    },
+    {
+      "title": "Mageres Hackfleisch nehmen",
+      "text": "Mageres Rinderhack statt gemischtem Hack spart pro Portion Kalorien.",
+      "icon": "🥩"
+    },
+    {
+      "title": "Portionsgröße kontrollieren",
+      "text": "Ein Restaurant-Stück Lasagne wiegt oft 450g+. Zuhause auf 350-400g reduzieren und mit Salat ergänzen.",
+      "icon": "📏"
+    },
+    {
+      "title": "Käse sparsam einsetzen",
+      "text": "Parmesan hat mehr Geschmack als Gouda: 20g Parmesan geben mehr Aroma als 50g Gouda bei weniger Kalorien.",
+      "icon": "🧀"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Stück Lasagne?", "answer": "Ein Stück Lasagne (400g) hat ca. 580 kcal. Im Restaurant können es durch größere Portionen und mehr Käse bis zu 700 kcal sein." },
-    { "question": "Wie viele Kalorien hat Lasagne pro 100g?", "answer": "Lasagne Bolognese hat ca. 145 kcal pro 100g. Gemüse-Lasagne hat nur ca. 110 kcal/100g." },
-    { "question": "Ist Lasagne gut zum Abnehmen?", "answer": "Lasagne ist mit 580 kcal pro Portion eher gehaltvoll. Wähle Gemüse-Lasagne (440 kcal) oder reduziere Béchamel und Käse für eine kalorienärmere Version." },
-    { "question": "Wie viele Kalorien hat TK-Lasagne?", "answer": "TK-Lasagne hat je nach Marke 130-150 kcal/100g. Eine Packung (375g) hat ca. 500 kcal – oft weniger als selbstgemacht durch kontrolliertere Zutaten." },
-    { "question": "Was hat weniger Kalorien: Lasagne oder Pizza?", "answer": "Lasagne hat mit ca. 580 kcal pro Portion weniger als eine ganze Pizza Margherita (735 kcal). Pro 100g sind die Werte ähnlich." },
-    { "question": "Wie viel Protein hat Lasagne?", "answer": "Eine Portion Lasagne Bolognese hat ca. 32g Protein – hauptsächlich aus Hackfleisch und Käse. Das deckt etwa 40% des täglichen Proteinbedarfs." }
+    {
+      "question": "Wie viele Kalorien hat ein Stück Lasagne?",
+      "answer": "Ein Stück Lasagne (400g) hat ca. 556 kcal. Im Restaurant können es durch größere Portionen (450g) und gehaltvollere Rezepte ca. 833 kcal sein."
+    },
+    {
+      "question": "Wie viele Kalorien hat Lasagne pro 100g?",
+      "answer": "Lasagne Bolognese hat ca. 139 kcal pro 100g, selbstgemacht eher ca. 206 kcal. Gemüse-Lasagne liegt bei ca. 188 kcal/100g."
+    },
+    {
+      "question": "Ist Lasagne gut zum Abnehmen?",
+      "answer": "Lasagne ist mit ca. 556 kcal pro Portion (400g) eher gehaltvoll. Gemüse-Lasagne ist nicht automatisch leichter (ca. 752 kcal pro 400g); reduziere Béchamel und Käse für eine kalorienärmere Version."
+    },
+    {
+      "question": "Wie viele Kalorien hat TK-Lasagne?",
+      "answer": "TK-Lasagne mit Fleisch hat ca. 124 kcal/100g. Eine Packung (375g) hat ca. 465 kcal, deutlich weniger als selbstgemachte Lasagne (ca. 206 kcal/100g)."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Lasagne oder Pizza?",
+      "answer": "Lasagne hat mit ca. 556 kcal pro Portion (400g) weniger als eine Pizza Margherita (300g). Auch pro 100g liegt Lasagne darunter."
+    },
+    {
+      "question": "Wie viel Protein hat Lasagne?",
+      "answer": "Eine Portion Lasagne Bolognese hat ca. 30g Protein, hauptsächlich aus Hackfleisch und Käse. Das deckt etwa 40% des täglichen Proteinbedarfs."
+    }
   ],
-  "related_foods": ["spaghetti-bolognese", "pizza", "spaghetti-carbonara", "nudeln"]
+  "related_foods": [
+    "spaghetti-bolognese",
+    "pizza",
+    "spaghetti-carbonara",
+    "nudeln"
+  ]
 }

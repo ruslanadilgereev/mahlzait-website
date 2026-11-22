@@ -3,9 +3,10 @@
   "name": "Carbonara",
   "emoji": "🍝",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708862 (Pasta with cream sauce and meat, home recipe), Werte je 100 g",
   "seo": {
     "title": "Carbonara Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Carbonara? Eine Standardportion (350g) hat ca. 585 kcal. Nährwerte pro 100g & je Portion + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Carbonara? Eine Standardportion (350g) hat ca. 574 kcal. Nährwerte pro 100g & je Portion + Tipps zum Abnehmen.",
     "keywords": [
       "carbonara kalorien",
       "carbonara kcal",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 167,
-    "protein_per_100g": 6.5,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 7.5,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 164,
+    "protein_per_100g": 6.1,
+    "carbs_per_100g": 16.7,
+    "fat_per_100g": 7.9,
+    "fiber_per_100g": 0.9,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Portion (Standard)"
   },
@@ -29,86 +30,113 @@
     {
       "name": "Carbonara kleine Portion (250g)",
       "portion_g": 250,
-      "calories": 418,
-      "protein": 16,
-      "carbs": 45,
-      "fat": 19
+      "calories": 410,
+      "protein": 15,
+      "carbs": 42,
+      "fat": 20
     },
     {
       "name": "Carbonara Standardportion (350g)",
       "portion_g": 350,
-      "calories": 585,
-      "protein": 23,
-      "carbs": 63,
-      "fat": 26,
+      "calories": 574,
+      "protein": 21,
+      "carbs": 58,
+      "fat": 28,
       "tip": "Übliche Tellergröße zu Hause"
     },
     {
       "name": "Carbonara große Portion (450g)",
       "portion_g": 450,
-      "calories": 752,
-      "protein": 29,
-      "carbs": 81,
-      "fat": 34
+      "calories": 738,
+      "protein": 27,
+      "carbs": 75,
+      "fat": 36
     },
     {
       "name": "Restaurant-Portion (500g)",
       "portion_g": 500,
-      "calories": 835,
-      "protein": 33,
-      "carbs": 90,
-      "fat": 38,
-      "tip": "Oft mit extra Sahne und mehr Speck"
+      "calories": 1065,
+      "protein": 28,
+      "carbs": 77,
+      "fat": 71,
+      "tip": "Oft mit extra Sahne und mehr Speck",
+      "basis": [
+        {
+          "fdcId": 2708861,
+          "g": 500
+        }
+      ]
     },
     {
       "name": "Fertiggericht Kühlregal (400g)",
       "portion_g": 400,
-      "calories": 668,
-      "protein": 26,
-      "carbs": 72,
-      "fat": 30
-    },
-    {
-      "name": "Leichte Carbonara ohne Sahne (350g)",
-      "portion_g": 350,
-      "calories": 490,
+      "calories": 708,
       "protein": 24,
-      "carbs": 64,
-      "fat": 15,
-      "tip": "Original italienisch nur mit Ei statt Sahne"
+      "carbs": 65,
+      "fat": 38,
+      "basis": [
+        {
+          "fdcId": 2708863,
+          "g": 400
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Spaghetti Bolognese",
-      "calories": 130,
-      "emoji": "🍝"
+      "name": "Spaghetti Bolognese (1 Teller, 400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Lasagne",
-      "calories": 150,
-      "emoji": "🧀"
+      "name": "Lasagne (1 Stück, 400g)",
+      "calories": 556,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Pizza Margherita",
-      "calories": 230,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (350g)",
+      "calories": 931,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Spaghetti mit Tomatensoße",
-      "calories": 110,
-      "emoji": "🍝"
+      "name": "Spaghetti mit Tomatensoße (1 Teller, 350g)",
+      "calories": 371,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-mit-tomatensosse",
+          "g": 350
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sahne weglassen spart Fett",
-      "text": "Die original italienische Carbonara kommt ganz ohne Sahne aus - nur Ei, Pecorino und Speck binden die Soße. Das spart pro Portion rund 100 kcal und viel gesättigtes Fett.",
+      "text": "Die original italienische Carbonara kommt ganz ohne Sahne aus: Nur Ei, Pecorino und Speck binden die Soße. Das spart Kalorien und viel gesättigtes Fett.",
       "icon": "🥛"
     },
     {
       "title": "Portionsgröße im Blick behalten",
-      "text": "Eine Restaurant-Portion liefert mit über 800 kcal fast die Hälfte des Tagesbedarfs. Wer abnehmen möchte, bleibt besser bei 250 bis 300g.",
+      "text": "Eine Restaurant-Portion (500g) liefert mit rund 1065 kcal mehr als die Hälfte des Tagesbedarfs. Wer abnehmen möchte, bleibt besser bei 250 bis 300g.",
       "icon": "⚖️"
     },
     {
@@ -130,19 +158,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Portion Carbonara?",
-      "answer": "Eine Standardportion Carbonara (350g) hat etwa 585 kcal. Eine größere Restaurant-Portion (500g) kommt auf rund 835 kcal."
+      "answer": "Eine Standardportion Carbonara (350g) hat etwa 574 kcal. Eine größere Restaurant-Portion (500g) kommt auf rund 1065 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Carbonara pro 100g?",
-      "answer": "Carbonara hat zubereitet etwa 167 kcal pro 100g. Der genaue Wert hängt davon ab, wie viel Speck, Käse und Sahne verwendet werden."
+      "answer": "Carbonara hat zubereitet etwa 164 kcal pro 100g. Der genaue Wert hängt davon ab, wie viel Speck, Käse und Sahne verwendet werden."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Carbonara?",
-      "answer": "Carbonara enthält rund 18g Kohlenhydrate pro 100g, vor allem aus den Nudeln. Eine Standardportion (350g) liefert etwa 63g Kohlenhydrate."
+      "answer": "Carbonara enthält rund 16,7g Kohlenhydrate pro 100g, vor allem aus den Nudeln. Eine Standardportion (350g) liefert etwa 58g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Carbonara?",
-      "answer": "Carbonara liefert etwa 6,5g Protein pro 100g, also rund 23g in einer Standardportion. Ei, Käse und Speck sind die Eiweißquellen."
+      "answer": "Carbonara liefert etwa 6,1g Protein pro 100g, also rund 21g in einer Standardportion. Ei, Käse und Speck sind die Eiweißquellen."
     },
     {
       "question": "Ist Carbonara zum Abnehmen geeignet?",

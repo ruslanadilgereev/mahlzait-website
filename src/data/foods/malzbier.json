@@ -3,9 +3,10 @@
   "name": "Malzbier",
   "emoji": "🍺",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 174863 (Malt beverage, includes non-alcoholic beer: 37 kcal), Werte je 100 g; je 100 ml mit 1,002 g/ml 37 kcal",
   "seo": {
     "title": "Malzbier Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Malzbier? Eine 0,33-l-Flasche hat ca. 158 kcal. Nährwerte pro 100 ml, Zucker, Gebinde im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat Malzbier? Eine 0,33-l-Flasche hat ca. 122 kcal. Nährwerte pro 100 ml, Zucker, Gebinde im Vergleich + Tipps.",
     "keywords": [
       "malzbier kalorien",
       "malzbier kcal",
@@ -18,62 +19,62 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 48,
-    "protein_per_100g": 0.5,
-    "carbs_per_100g": 11.5,
-    "fat_per_100g": 0,
+    "calories_per_100g": 37,
+    "protein_per_100g": 0.2,
+    "carbs_per_100g": 8.1,
+    "fat_per_100g": 0.1,
     "fiber_per_100g": 0,
-    "typical_portion_g": 330,
+    "typical_portion_g": 331,
     "typical_portion_name": "1 Flasche (0,33 l)"
   },
   "variants": [
     {
       "name": "Glas (0,2 l)",
       "portion_g": 200,
-      "calories": 96,
-      "protein": 1,
-      "carbs": 23,
+      "calories": 74,
+      "protein": 0,
+      "carbs": 16,
       "fat": 0
     },
     {
       "name": "Flasche (0,33 l)",
-      "portion_g": 330,
-      "calories": 158,
-      "protein": 2,
-      "carbs": 38,
+      "portion_g": 331,
+      "calories": 122,
+      "protein": 1,
+      "carbs": 27,
       "fat": 0,
       "tip": "Standard-Gebinde"
     },
     {
       "name": "Dose (0,33 l)",
-      "portion_g": 330,
-      "calories": 158,
-      "protein": 2,
-      "carbs": 38,
+      "portion_g": 331,
+      "calories": 122,
+      "protein": 1,
+      "carbs": 27,
       "fat": 0
     },
     {
       "name": "Flasche (0,5 l)",
-      "portion_g": 500,
-      "calories": 240,
-      "protein": 3,
-      "carbs": 58,
-      "fat": 0
+      "portion_g": 501,
+      "calories": 185,
+      "protein": 1,
+      "carbs": 41,
+      "fat": 1
     },
     {
       "name": "Großes Glas (0,4 l)",
-      "portion_g": 400,
-      "calories": 192,
-      "protein": 2,
-      "carbs": 46,
+      "portion_g": 401,
+      "calories": 148,
+      "protein": 1,
+      "carbs": 32,
       "fat": 0
     },
     {
       "name": "Pro 100 ml",
       "portion_g": 100,
-      "calories": 48,
-      "protein": 1,
-      "carbs": 12,
+      "calories": 37,
+      "protein": 0,
+      "carbs": 8,
       "fat": 0,
       "tip": "Basiswert"
     }
@@ -81,34 +82,60 @@
   "comparison": [
     {
       "name": "Malzbier (0,33 l)",
-      "calories": 158,
-      "emoji": "🍺"
+      "calories": 122,
+      "emoji": "🍺",
+      "basis": [
+        {
+          "slug": "malzbier",
+          "ml": 330,
+          "g": 331
+        }
+      ]
     },
     {
       "name": "Cola (0,33 l)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
       "name": "Pils (0,33 l)",
-      "calories": 140,
-      "emoji": "🍻"
+      "calories": 142,
+      "emoji": "🍻",
+      "basis": [
+        {
+          "slug": "bier",
+          "ml": 330,
+          "g": 330
+        }
+      ]
     },
     {
       "name": "Apfelsaft (0,33 l)",
-      "calories": 152,
-      "emoji": "🧃"
+      "calories": 159,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 330,
+          "g": 346
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mehr Zucker als gedacht",
-      "text": "Malzbier ist mit rund 11,5 g Kohlenhydraten pro 100 ml fast vollständig Zucker. Eine 0,33-l-Flasche liefert etwa 38 g Zucker – mehr als manche Limonade.",
+      "text": "Malzbier ist mit rund 8 g Kohlenhydraten pro 100 ml fast vollständig Zucker. Eine 0,33-l-Flasche liefert etwa 27 g Zucker.",
       "icon": "🍬"
     },
     {
       "title": "Kein klassisches Diät-Getränk",
-      "text": "Mit 158 kcal pro 0,33 l liegt Malzbier über Cola und Pils. Wer Kalorien sparen will, greift besser zu Wasser, ungesüßtem Tee oder einer kleinen Portion.",
+      "text": "Mit ca. 122 kcal pro 0,33 l liegt Malzbier laut USDA etwas unter Cola und Pils, liefert aber fast nur Zucker. Wer Kalorien sparen will, greift besser zu Wasser, ungesüßtem Tee oder einer kleinen Portion.",
       "icon": "⚖️"
     },
     {
@@ -118,31 +145,31 @@
     },
     {
       "title": "Kleines Glas statt großer Flasche",
-      "text": "Ein 0,2-l-Glas hat nur 96 kcal statt 158 kcal. Wer den Geschmack mag, kann die Menge bewusst klein halten.",
+      "text": "Ein 0,2-l-Glas hat nur 74 kcal statt 122 kcal. Wer den Geschmack mag, kann die Menge bewusst klein halten.",
       "icon": "🥃"
     },
     {
       "title": "Auf das Etikett schauen",
-      "text": "Werte schwanken je nach Marke zwischen etwa 45 und 55 kcal pro 100 ml. Ein Blick auf die Nährwerttabelle der jeweiligen Sorte lohnt sich.",
+      "text": "Werte schwanken je nach Marke deutlich, der USDA-Wert liegt bei ca. 37 kcal pro 100 ml. Ein Blick auf die Nährwerttabelle der jeweiligen Sorte lohnt sich.",
       "icon": "🔎"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Malzbier?",
-      "answer": "Malzbier hat etwa 48 kcal pro 100 ml. Eine 0,33-l-Flasche kommt damit auf rund 158 kcal, eine 0,5-l-Flasche auf etwa 240 kcal."
+      "answer": "Malzbier hat etwa 37 kcal pro 100 ml. Eine 0,33-l-Flasche kommt damit auf rund 122 kcal, eine 0,5-l-Flasche auf etwa 185 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Malzbier?",
-      "answer": "Malzbier enthält rund 11,5 g Kohlenhydrate pro 100 ml, überwiegend Zucker. Eine 0,33-l-Flasche liefert damit etwa 38 g Zucker."
+      "answer": "Malzbier enthält rund 8 g Kohlenhydrate pro 100 ml, überwiegend Zucker. Eine 0,33-l-Flasche liefert damit etwa 27 g Zucker."
     },
     {
       "question": "Hat Malzbier mehr Kalorien als Cola?",
-      "answer": "Ja, geringfügig. Pro 0,33 l hat Malzbier ca. 158 kcal, Cola etwa 139 kcal. Der Unterschied stammt vom Malzzucker."
+      "answer": "Nein, laut USDA-Werten etwas weniger: Pro 0,33 l hat Malzbier ca. 122 kcal, Cola etwa 145 kcal. Bei beiden stammen die Kalorien fast nur aus Zucker."
     },
     {
       "question": "Ist Malzbier zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit 158 kcal pro Flasche und viel Zucker ist Malzbier eher kalorienreich. In einer Diät besser sparsam einsetzen oder zu Wasser greifen."
+      "answer": "Nur bedingt. Mit ca. 122 kcal pro Flasche und viel Zucker ist Malzbier eher kalorienreich. In einer Diät besser sparsam einsetzen oder zu Wasser greifen."
     },
     {
       "question": "Enthält Malzbier Alkohol?",
@@ -150,7 +177,7 @@
     },
     {
       "question": "Wie viel Eiweiß hat Malzbier?",
-      "answer": "Malzbier liefert nur wenig Eiweiß – etwa 0,5 g pro 100 ml, also rund 2 g je 0,33-l-Flasche. Fett ist praktisch nicht enthalten."
+      "answer": "Malzbier liefert nur wenig Eiweiß, etwa 0,2 g pro 100 ml, also unter 1 g je 0,33-l-Flasche. Fett ist praktisch nicht enthalten."
     }
   ],
   "related_foods": [

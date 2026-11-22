@@ -3,9 +3,10 @@
   "name": "Chicken McNuggets",
   "emoji": "🍗",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 173297 (McDONALD'S, Chicken McNUGGETS), Werte je 100 g",
   "seo": {
     "title": "Chicken McNuggets Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Chicken McNuggets? 6 Stück (100g) haben ca. 296 kcal. Nährwerte pro Portion & 100g, alle Gebinde im Vergleich.",
+    "description": "Wie viele Kalorien haben Chicken McNuggets? 6 Stück (96g) haben ca. 290 kcal. Nährwerte pro Portion & 100g, alle Gebinde im Vergleich.",
     "keywords": [
       "chicken mcnuggets kalorien",
       "20 chicken mcnuggets kalorien",
@@ -17,103 +18,145 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 296,
-    "protein_per_100g": 15,
-    "carbs_per_100g": 16,
-    "fat_per_100g": 18,
-    "fiber_per_100g": 1.2,
-    "typical_portion_g": 100,
-    "typical_portion_name": "6 Stück (100g)"
+    "calories_per_100g": 302,
+    "protein_per_100g": 15.8,
+    "carbs_per_100g": 15.1,
+    "fat_per_100g": 19.8,
+    "fiber_per_100g": null,
+    "typical_portion_g": 96,
+    "typical_portion_name": "6 Stück (96g)"
   },
   "variants": [
     {
       "name": "1 Stück (16g)",
       "portion_g": 16,
-      "calories": 47,
-      "protein": 2,
-      "carbs": 3,
+      "calories": 48,
+      "protein": 3,
+      "carbs": 2,
       "fat": 3
     },
     {
-      "name": "4 Stück (65g)",
-      "portion_g": 65,
-      "calories": 192,
+      "name": "4 Stück (64g)",
+      "portion_g": 64,
+      "calories": 193,
       "protein": 10,
       "carbs": 10,
-      "fat": 12
+      "fat": 13
     },
     {
-      "name": "6 Stück (100g)",
-      "portion_g": 100,
-      "calories": 296,
+      "name": "6 Stück (96g)",
+      "portion_g": 96,
+      "calories": 290,
       "protein": 15,
-      "carbs": 16,
-      "fat": 18,
+      "carbs": 14,
+      "fat": 19,
       "tip": "Standard-Portion"
     },
     {
-      "name": "9 Stück (150g)",
-      "portion_g": 150,
-      "calories": 444,
-      "protein": 23,
-      "carbs": 24,
-      "fat": 27
+      "name": "6 Stück + 1 süß-saure Sauce (28g)",
+      "portion_g": 124,
+      "calories": 333,
+      "protein": 15,
+      "carbs": 25,
+      "fat": 19,
+      "tip": "Der Dip bringt rund 43 kcal dazu",
+      "basis": [
+        {
+          "g": 96
+        },
+        {
+          "fdcId": 2710296,
+          "g": 28
+        }
+      ]
     },
     {
-      "name": "20 Stück Sharebox (333g)",
-      "portion_g": 333,
-      "calories": 985,
-      "protein": 50,
-      "carbs": 53,
-      "fat": 60,
+      "name": "9 Stück (144g)",
+      "portion_g": 144,
+      "calories": 435,
+      "protein": 23,
+      "carbs": 22,
+      "fat": 29
+    },
+    {
+      "name": "20 Stück Sharebox (320g)",
+      "portion_g": 320,
+      "calories": 966,
+      "protein": 51,
+      "carbs": 48,
+      "fat": 63,
       "tip": "Zum Teilen gedacht"
     },
     {
-      "name": "Happy Meal: 4 Stück (65g)",
-      "portion_g": 65,
-      "calories": 192,
+      "name": "Happy Meal: 4 Stück (64g)",
+      "portion_g": 64,
+      "calories": 193,
       "protein": 10,
       "carbs": 10,
-      "fat": 12,
+      "fat": 13,
       "tip": "Ohne Beilage/Getränk"
     }
   ],
   "comparison": [
     {
-      "name": "Pommes frites",
-      "calories": 312,
-      "emoji": "🍟"
+      "name": "Pommes frites (mittlere Portion)",
+      "calories": 378,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 170721,
+          "g": 117
+        }
+      ]
     },
     {
-      "name": "Cheeseburger",
-      "calories": 250,
-      "emoji": "🍔"
+      "name": "Cheeseburger (McDonald's)",
+      "calories": 313,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170320,
+          "g": 119
+        }
+      ]
     },
     {
-      "name": "Fischstäbchen",
-      "calories": 191,
-      "emoji": "🐟"
+      "name": "Fischstäbchen (100g)",
+      "calories": 277,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "fischstaebchen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Hähnchenbrust",
+      "name": "Hähnchenbrust (100g)",
       "calories": 165,
-      "emoji": "🍗"
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion bewusst wählen",
-      "text": "Eine 6er-Portion liefert rund 296 kcal. Wer die 20er-Box allein isst, kommt schnell auf fast 1000 kcal nur für die Nuggets, ohne Dip und Beilage.",
+      "text": "Eine 6er-Portion liefert rund 290 kcal. Wer die 20er-Box allein isst, kommt auf rund 966 kcal nur für die Nuggets, ohne Dip und Beilage.",
       "icon": "🍗"
     },
     {
       "title": "Dips nicht vergessen",
-      "text": "Süß-saure oder Curry-Dips bringen pro Portion meist 50 bis 90 kcal zusätzlich. Bei mehreren Dips summiert sich das schnell und wird leicht übersehen.",
+      "text": "Ein süß-saurer Dip (28 g) bringt rund 43 kcal zusätzlich. Bei mehreren Dips summiert sich das schnell und wird leicht übersehen.",
       "icon": "🥄"
     },
     {
       "title": "Fettgehalt beachten",
-      "text": "Mit etwa 18g Fett pro 100g machen Nuggets durch die Panade und das Frittieren den größten Kalorienanteil über das Fett aus.",
+      "text": "Mit etwa 20g Fett pro 100g machen Nuggets durch die Panade und das Frittieren den größten Kalorienanteil über das Fett aus.",
       "icon": "💧"
     },
     {
@@ -130,27 +173,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Chicken McNuggets?",
-      "answer": "Eine Standard-Portion mit 6 Stück (rund 100g) hat etwa 296 kcal. Pro Stück sind es ungefähr 47 kcal."
+      "answer": "Eine Standard-Portion mit 6 Stück (rund 96g) hat etwa 290 kcal. Pro Stück sind es ungefähr 48 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 20 Chicken McNuggets?",
-      "answer": "Die 20er-Sharebox (rund 333g) hat etwa 985 kcal. Sie ist eigentlich zum Teilen gedacht."
+      "answer": "Die 20er-Sharebox (rund 320g) hat etwa 966 kcal. Sie ist eigentlich zum Teilen gedacht."
     },
     {
       "question": "Wie viele Kalorien haben 9 Chicken McNuggets?",
-      "answer": "9 Stück wiegen rund 150g und haben etwa 444 kcal, dazu kommen je nach Dip noch einmal 50 bis 90 kcal."
+      "answer": "9 Stück wiegen rund 144g und haben etwa 435 kcal, dazu kommen mit einem süß-sauren Dip (28 g) noch einmal rund 43 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Chicken McNuggets?",
-      "answer": "Pro 100g liefern Nuggets etwa 15g Eiweiß. Eine 6er-Portion bringt also rund 15g Protein."
+      "answer": "Pro 100g liefern Nuggets etwa 16g Eiweiß. Eine 6er-Portion (96g) bringt also rund 15g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Chicken McNuggets?",
-      "answer": "Pro 100g enthalten Chicken McNuggets etwa 16g Kohlenhydrate, hauptsächlich aus der Panade."
+      "answer": "Pro 100g enthalten Chicken McNuggets etwa 15g Kohlenhydrate, hauptsächlich aus der Panade."
     },
     {
       "question": "Sind Chicken McNuggets zum Abnehmen geeignet?",
-      "answer": "In Maßen ja, aber mit etwa 18g Fett pro 100g sind sie recht kalorienreich. Eine kleine Portion mit Salat statt Pommes passt eher in eine kalorienbewusste Ernährung."
+      "answer": "In Maßen ja, aber mit etwa 20g Fett pro 100g sind sie recht kalorienreich. Eine kleine Portion mit Salat statt Pommes passt eher in eine kalorienbewusste Ernährung."
     }
   ],
   "related_foods": [

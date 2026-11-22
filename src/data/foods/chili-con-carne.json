@@ -3,9 +3,10 @@
   "name": "Chili con Carne",
   "emoji": "🌶",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706375 (Chili with meat and beans), Werte je 100 g",
   "seo": {
     "title": "Chili con Carne Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Chili con Carne? Eine Portion (350g) hat ca. 462 kcal. Nährwerte pro 100g & Portion, Protein, Kohlenhydrate & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Chili con Carne? Eine Portion (350g) hat ca. 413 kcal. Nährwerte pro 100g & Portion, Protein, Kohlenhydrate & Diät-Tipps.",
     "keywords": [
       "chili con carne kalorien",
       "kalorien chili con carne",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 132,
-    "protein_per_100g": 8.5,
-    "carbs_per_100g": 10,
-    "fat_per_100g": 6.5,
-    "fiber_per_100g": 3.5,
+    "calories_per_100g": 118,
+    "protein_per_100g": 9.8,
+    "carbs_per_100g": 10.3,
+    "fat_per_100g": 4.3,
+    "fiber_per_100g": 3,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller (350g)"
   },
@@ -29,82 +30,123 @@
     {
       "name": "Kleine Portion (250g)",
       "portion_g": 250,
-      "calories": 330,
-      "protein": 21,
-      "carbs": 25,
-      "fat": 16,
+      "calories": 295,
+      "protein": 25,
+      "carbs": 26,
+      "fat": 11,
       "tip": "Vorspeise oder leichte Mahlzeit"
     },
     {
       "name": "1 Teller (350g)",
       "portion_g": 350,
-      "calories": 462,
-      "protein": 30,
-      "carbs": 35,
-      "fat": 23,
+      "calories": 413,
+      "protein": 34,
+      "carbs": 36,
+      "fat": 15,
       "tip": "Standardportion"
     },
     {
       "name": "Große Portion (500g)",
       "portion_g": 500,
-      "calories": 660,
-      "protein": 43,
-      "carbs": 50,
-      "fat": 33,
+      "calories": 590,
+      "protein": 49,
+      "carbs": 52,
+      "fat": 22,
       "tip": "Sättigende Hauptmahlzeit"
     },
     {
       "name": "Dosen-Fertiggericht (400g)",
       "portion_g": 400,
-      "calories": 528,
-      "protein": 34,
-      "carbs": 40,
-      "fat": 26,
-      "tip": "Ganze Dose"
+      "calories": 428,
+      "protein": 23,
+      "carbs": 52,
+      "fat": 14,
+      "tip": "Ganze Dose",
+      "basis": [
+        {
+          "fdcId": 172097,
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Beilage (150g)",
       "portion_g": 150,
-      "calories": 198,
-      "protein": 13,
+      "calories": 177,
+      "protein": 15,
       "carbs": 15,
-      "fat": 10
+      "fat": 6
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 132,
-      "protein": 9,
+      "calories": 118,
+      "protein": 10,
       "carbs": 10,
-      "fat": 7
+      "fat": 4
     }
   ],
   "comparison": [
     {
       "name": "Gulasch (350g)",
-      "calories": 511,
-      "emoji": "🍲"
+      "calories": 375,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulasch",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Spaghetti Bolognese (350g)",
-      "calories": 542,
-      "emoji": "🍝"
+      "calories": 438,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Linseneintopf (350g)",
-      "calories": 322,
-      "emoji": "🍛"
+      "calories": 210,
+      "emoji": "🍛",
+      "basis": [
+        {
+          "slug": "eintopf-linsen",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Burrito (350g)",
-      "calories": 735,
-      "emoji": "🌯"
+      "calories": 767,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "burrito",
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Chili sin Carne (350g)",
+      "calories": 417,
+      "emoji": "🌱",
+      "basis": [
+        {
+          "slug": "chili-sin-carne",
+          "g": 350
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich und sättigend",
-      "text": "Durch Hackfleisch und Bohnen liefert eine Portion rund 30g Protein. Das sättigt lange und unterstützt den Muskelerhalt beim Abnehmen.",
+      "text": "Durch Hackfleisch und Bohnen liefert eine Portion rund 34g Protein. Das sättigt lange und unterstützt den Muskelerhalt beim Abnehmen.",
       "icon": "💪"
     },
     {
@@ -114,12 +156,12 @@
     },
     {
       "title": "Kalorien mit magerem Fleisch senken",
-      "text": "Mit magerem Rinderhack (5% Fett) statt gemischtem Hack sparen Sie pro Portion rund 80 bis 100 kcal ein, ohne Geschmack zu verlieren.",
+      "text": "Mit magerem Rinderhack (5% Fett) statt gemischtem Hack sparen Sie pro Portion Kalorien ein, ohne Geschmack zu verlieren.",
       "icon": "🥩"
     },
     {
       "title": "Vegetarische Variante",
-      "text": "Ein Chili sin Carne mit doppelter Bohnenmenge statt Fleisch ist kalorienärmer und trotzdem proteinreich. Ideal für fleischlose Tage.",
+      "text": "Ein Chili sin Carne mit Bohnen statt Fleisch hat laut USDA etwa gleich viele Kalorien, ist aber trotzdem proteinreich. Ideal für fleischlose Tage.",
       "icon": "🌱"
     },
     {
@@ -131,19 +173,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Portion Chili con Carne?",
-      "answer": "Ein normaler Teller (350g) hat etwa 462 kcal. Eine kleine Portion (250g) kommt auf rund 330 kcal, eine große Portion (500g) auf etwa 660 kcal."
+      "answer": "Ein normaler Teller (350g) hat etwa 413 kcal. Eine kleine Portion (250g) kommt auf rund 295 kcal, eine große Portion (500g) auf etwa 590 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Chili con Carne pro 100g?",
-      "answer": "Zubereitetes Chili con Carne mit Hackfleisch und Bohnen hat etwa 132 kcal pro 100g. Der genaue Wert hängt vom Fettgehalt des Hackfleischs ab."
+      "answer": "Zubereitetes Chili con Carne mit Hackfleisch und Bohnen hat etwa 118 kcal pro 100g. Der genaue Wert hängt vom Fettgehalt des Hackfleischs ab."
     },
     {
       "question": "Wie viel Protein hat Chili con Carne?",
-      "answer": "Eine Portion (350g) liefert rund 30g Eiweiß, vor allem aus Hackfleisch und Bohnen. Pro 100g sind es etwa 8,5g Protein."
+      "answer": "Eine Portion (350g) liefert rund 34g Eiweiß, vor allem aus Hackfleisch und Bohnen. Pro 100g sind es etwa 9,8g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Chili con Carne?",
-      "answer": "Pro 100g enthält Chili con Carne etwa 10g Kohlenhydrate, eine Portion (350g) rund 35g. Die Kohlenhydrate stammen hauptsächlich aus Bohnen und Mais."
+      "answer": "Pro 100g enthält Chili con Carne etwa 10g Kohlenhydrate, eine Portion (350g) rund 36g. Die Kohlenhydrate stammen hauptsächlich aus Bohnen und Mais."
     },
     {
       "question": "Ist Chili con Carne zum Abnehmen geeignet?",

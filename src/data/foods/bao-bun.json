@@ -3,9 +3,10 @@
   "name": "Bao Bun",
   "emoji": "🥟",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708724 (Bao bun), Werte je 100 g",
   "seo": {
     "title": "Bao Bun Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Bao Bun? Ein gefüllter Dampfbun (80g) hat ca. 200 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat ein Bao Bun? Ein gefüllter Dampfbun (80g) hat ca. 218 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
     "keywords": [
       "bao bun kcal",
       "bao bun kalorien",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 8,
-    "carbs_per_100g": 38,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 273,
+    "protein_per_100g": 11.2,
+    "carbs_per_100g": 39.8,
+    "fat_per_100g": 7.6,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 80,
     "typical_portion_name": "1 Bao Bun (mittel)"
   },
@@ -29,90 +30,105 @@
     {
       "name": "Bao Bun klein (60g)",
       "portion_g": 60,
-      "calories": 150,
-      "protein": 5,
-      "carbs": 23,
-      "fat": 4
+      "calories": 164,
+      "protein": 7,
+      "carbs": 24,
+      "fat": 5
     },
     {
       "name": "Bao Bun mittel (80g)",
       "portion_g": 80,
-      "calories": 200,
-      "protein": 6,
-      "carbs": 30,
+      "calories": 218,
+      "protein": 9,
+      "carbs": 32,
       "fat": 6,
       "tip": "Standard"
     },
     {
       "name": "Bao Bun groß (100g)",
       "portion_g": 100,
-      "calories": 250,
-      "protein": 8,
-      "carbs": 38,
-      "fat": 7
+      "calories": 273,
+      "protein": 11,
+      "carbs": 40,
+      "fat": 8
     },
     {
       "name": "Gua Bao gefüllt (120g)",
       "portion_g": 120,
-      "calories": 300,
-      "protein": 10,
-      "carbs": 46,
-      "fat": 8,
+      "calories": 328,
+      "protein": 13,
+      "carbs": 48,
+      "fat": 9,
       "tip": "Mit Schweinebauch & Gemüse"
     },
     {
       "name": "Portion 2 Bao Buns (160g)",
       "portion_g": 160,
-      "calories": 400,
-      "protein": 13,
-      "carbs": 61,
-      "fat": 11
+      "calories": 437,
+      "protein": 18,
+      "carbs": 64,
+      "fat": 12
     },
     {
       "name": "Portion 3 Bao Buns (240g)",
       "portion_g": 240,
-      "calories": 600,
-      "protein": 19,
-      "carbs": 91,
-      "fat": 17,
+      "calories": 655,
+      "protein": 27,
+      "carbs": 96,
+      "fat": 18,
       "tip": "Sättigende Hauptmahlzeit"
-    },
-    {
-      "name": "Bao Bun pur (ohne Füllung, 70g)",
-      "portion_g": 70,
-      "calories": 154,
-      "protein": 4,
-      "carbs": 31,
-      "fat": 1,
-      "tip": "Reiner Dampfteig, fettarm"
     }
   ],
   "comparison": [
     {
-      "name": "Gyoza (Portion)",
-      "calories": 200,
-      "emoji": "🥟"
+      "name": "Gyoza (5 Stück, 125g)",
+      "calories": 240,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "gyoza",
+          "g": 125
+        }
+      ]
     },
     {
-      "name": "Dim Sum (Portion)",
-      "calories": 180,
-      "emoji": "🥢"
+      "name": "Dim Sum (4 Stück, 100g)",
+      "calories": 113,
+      "emoji": "🥢",
+      "basis": [
+        {
+          "slug": "dim-sum",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Frühlingsrolle (1 Stück)",
-      "calories": 160,
-      "emoji": "🌯"
+      "name": "Frühlingsrolle (1 Stück, 120g)",
+      "calories": 324,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "fruehlingsrolle",
+          "g": 120
+        }
+      ]
     },
     {
-      "name": "Wan Tan (Portion)",
-      "calories": 140,
-      "emoji": "🥟"
+      "name": "Wan Tan (6 Stück, 250g)",
+      "calories": 283,
+      "emoji": "🥟",
+      "basis": [
+        {
+          "slug": "wan-tan",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Pur statt gefüllt sparen",
-      "text": "Ein Bao ohne Füllung (Dampfteig pur) hat nur rund 154 kcal pro 70g und kaum Fett. Die Füllung macht den größten Kalorienunterschied aus.",
+      "text": "Ein Bao ohne Füllung (Dampfteig pur) hat kaum Fett. Die Füllung macht den größten Kalorienunterschied aus.",
       "icon": "🥟"
     },
     {
@@ -127,7 +143,7 @@
     },
     {
       "title": "Portionsgröße im Blick",
-      "text": "Zwei mittlere Bao Buns liefern rund 400 kcal. Wer abnehmen möchte, kombiniert ein bis zwei Buns mit einer großen Portion Gemüse oder Salat.",
+      "text": "Zwei mittlere Bao Buns liefern rund 437 kcal. Wer abnehmen möchte, kombiniert ein bis zwei Buns mit einer großen Portion Gemüse oder Salat.",
       "icon": "⚖️"
     },
     {
@@ -139,23 +155,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Bao Bun?",
-      "answer": "Ein mittlerer gefüllter Bao Bun (80g) hat ca. 200 kcal. Pro 100g sind es rund 250 kcal."
+      "answer": "Ein mittlerer gefüllter Bao Bun (80g) hat ca. 218 kcal. Pro 100g sind es rund 273 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Bao Bun ohne Füllung?",
-      "answer": "Ein purer Dampfbun ohne Füllung (70g) hat nur etwa 154 kcal, da er fast ausschließlich aus Teig besteht und kaum Fett enthält."
+      "answer": "Für einen puren Dampfbun ohne Füllung führt die USDA-Datenbank keinen eigenen Wert. Er besteht fast ausschließlich aus Teig und enthält kaum Fett, seine Kalorien hängen daher vor allem von der Größe ab."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Bao Bun?",
-      "answer": "Ein mittlerer Bao Bun (80g) enthält rund 30g Kohlenhydrate, da der Teig aus Weißmehl besteht. Pro 100g sind es etwa 38g."
+      "answer": "Ein mittlerer Bao Bun (80g) enthält rund 32g Kohlenhydrate, da der Teig aus Weißmehl besteht. Pro 100g sind es etwa 40g."
     },
     {
       "question": "Wie viel Protein steckt in einem Bao Bun?",
-      "answer": "Ein gefüllter Bao Bun (80g) liefert etwa 6g Eiweiß. Mit einer proteinreichen Füllung wie Hähnchen oder Tofu kann der Wert höher liegen."
+      "answer": "Ein gefüllter Bao Bun (80g) liefert etwa 9g Eiweiß. Mit einer proteinreichen Füllung wie Hähnchen oder Tofu kann der Wert höher liegen."
     },
     {
       "question": "Sind Bao Buns zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit rund 200 kcal pro Stück passen ein bis zwei Bao Buns in eine ausgewogene Ernährung, am besten kombiniert mit Gemüse. Wegen des Weißmehls sättigen sie aber nicht lange."
+      "answer": "In Maßen ja. Mit rund 218 kcal pro Stück passen ein bis zwei Bao Buns in eine ausgewogene Ernährung, am besten kombiniert mit Gemüse. Wegen des Weißmehls sättigen sie aber nicht lange."
     },
     {
       "question": "Sind Bao Buns gesund?",

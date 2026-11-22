@@ -3,9 +3,10 @@
   "name": "Mac and Cheese",
   "emoji": "🧀",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708811 (Macaroni or noodles with cheese), Werte je 100 g",
   "seo": {
     "title": "Mac and Cheese Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mac and Cheese? Eine Portion (250g) hat ca. 875 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Mac and Cheese? Eine Portion (250g) hat ca. 558 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "mac and cheese kcal",
       "mac and cheese kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 350,
-    "protein_per_100g": 13,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 19,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 223,
+    "protein_per_100g": 8.7,
+    "carbs_per_100g": 23.1,
+    "fat_per_100g": 10.5,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion (250g)"
   },
@@ -28,94 +29,122 @@
     {
       "name": "Kleine Portion (150g)",
       "portion_g": 150,
-      "calories": 525,
-      "protein": 20,
-      "carbs": 45,
-      "fat": 29
+      "calories": 335,
+      "protein": 13,
+      "carbs": 35,
+      "fat": 16
     },
     {
       "name": "Portion (250g)",
       "portion_g": 250,
-      "calories": 875,
-      "protein": 33,
-      "carbs": 75,
-      "fat": 48,
+      "calories": 558,
+      "protein": 22,
+      "carbs": 58,
+      "fat": 26,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (350g)",
       "portion_g": 350,
-      "calories": 1225,
-      "protein": 46,
-      "carbs": 105,
-      "fat": 67
+      "calories": 781,
+      "protein": 30,
+      "carbs": 81,
+      "fat": 37
     },
     {
-      "name": "Pro 100g (klassisch, überbacken)",
-      "portion_g": 100,
-      "calories": 350,
-      "protein": 13,
-      "carbs": 30,
-      "fat": 19
+      "name": "Mit Vollkornnudeln (250g)",
+      "portion_g": 250,
+      "calories": 548,
+      "protein": 22,
+      "carbs": 57,
+      "fat": 27,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 2708824,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Fertiggericht aus der Box (200g)",
       "portion_g": 200,
-      "calories": 380,
-      "protein": 14,
-      "carbs": 54,
-      "fat": 12,
-      "tip": "Weniger Käse, mehr Nudeln"
-    },
-    {
-      "name": "Leichte Variante mit Magerquark (250g)",
-      "portion_g": 250,
-      "calories": 550,
-      "protein": 38,
-      "carbs": 70,
-      "fat": 15,
-      "tip": "Käse teils durch Magerquark ersetzt"
+      "calories": 358,
+      "protein": 9,
+      "carbs": 44,
+      "fat": 16,
+      "tip": "Aus der Packungsmischung",
+      "basis": [
+        {
+          "fdcId": 2708813,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Beilagen-Portion (100g)",
       "portion_g": 100,
-      "calories": 350,
-      "protein": 13,
-      "carbs": 30,
-      "fat": 19
+      "calories": 223,
+      "protein": 9,
+      "carbs": 23,
+      "fat": 11
     }
   ],
   "comparison": [
     {
       "name": "Käsespätzle (250g)",
-      "calories": 680,
-      "emoji": "🧀"
+      "calories": 558,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesespaetzle",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Lasagne (250g)",
-      "calories": 350,
-      "emoji": "🍝"
+      "calories": 348,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Spaghetti Carbonara (250g)",
-      "calories": 400,
-      "emoji": "🍝"
+      "calories": 410,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-carbonara",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Pizza Margherita (250g)",
-      "calories": 540,
-      "emoji": "🍕"
+      "calories": 665,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Käse ist der Kalorientreiber",
-      "text": "Fast die Hälfte der Kalorien stammt aus dem Fett der Käse-Sahne-Sauce. Mit fettreduziertem Käse oder etwas Magerquark in der Sauce lässt sich die Kalorienzahl deutlich senken.",
+      "text": "Gut 40% der Kalorien stammen aus dem Fett der Käse-Sahne-Sauce. Mit fettreduziertem Käse oder etwas Magerquark in der Sauce lässt sich die Kalorienzahl deutlich senken.",
       "icon": "🧀"
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Eine klassische Portion (250g) liefert bereits rund 875 kcal. Wer abnehmen möchte, isst Mac and Cheese besser als kleine Beilage statt als alleinige Hauptmahlzeit.",
+      "text": "Eine klassische Portion (250g) liefert bereits rund 558 kcal. Wer abnehmen möchte, isst Mac and Cheese besser als kleine Beilage statt als alleinige Hauptmahlzeit.",
       "icon": "⚖️"
     },
     {
@@ -137,23 +166,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Mac and Cheese?",
-      "answer": "Klassisch überbackene Mac and Cheese hat etwa 350 kcal pro 100g. Eine normale Portion von 250g kommt damit auf rund 875 kcal."
+      "answer": "Mac and Cheese hat etwa 223 kcal pro 100g. Eine normale Portion von 250g kommt damit auf rund 558 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Mac and Cheese?",
-      "answer": "Eine Standardportion von 250g liefert ca. 875 kcal. Eine kleine Portion (150g) hat etwa 525 kcal, eine große (350g) rund 1.225 kcal."
+      "answer": "Eine Standardportion von 250g liefert ca. 558 kcal. Eine kleine Portion (150g) hat etwa 335 kcal, eine große (350g) rund 781 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mac and Cheese?",
-      "answer": "Mac and Cheese enthält etwa 30g Kohlenhydrate pro 100g, hauptsächlich aus den Nudeln. Eine Portion (250g) kommt damit auf rund 75g Kohlenhydrate."
+      "answer": "Mac and Cheese enthält etwa 23g Kohlenhydrate pro 100g, hauptsächlich aus den Nudeln. Eine Portion (250g) kommt damit auf rund 58g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Mac and Cheese?",
-      "answer": "Mit rund 13g Eiweiß pro 100g ist Mac and Cheese durch den Käse moderat proteinreich. Eine Portion (250g) liefert etwa 33g Protein."
+      "answer": "Mit rund 8,7g Eiweiß pro 100g ist Mac and Cheese durch den Käse moderat proteinreich. Eine Portion (250g) liefert etwa 22g Protein."
     },
     {
       "question": "Ist Mac and Cheese zum Abnehmen geeignet?",
-      "answer": "Mac and Cheese ist mit rund 350 kcal pro 100g recht energiedicht und durch die Käse-Sahne-Sauce fettreich. Beim Abnehmen am besten kleine Portionen wählen, mit Gemüse strecken oder fettärmeren Käse verwenden."
+      "answer": "Mac and Cheese ist mit rund 223 kcal pro 100g recht energiedicht und durch die Käse-Sahne-Sauce fettreich. Beim Abnehmen am besten kleine Portionen wählen, mit Gemüse strecken oder fettärmeren Käse verwenden."
     },
     {
       "question": "Ist Mac and Cheese gesund?",

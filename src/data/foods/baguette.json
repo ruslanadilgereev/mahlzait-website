@@ -3,6 +3,7 @@
   "name": "Baguette",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 172675 (Bread, french or vienna (includes sourdough)), Werte je 100 g",
   "seo": {
     "title": "Baguette Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Baguette? 100g haben ca. 272 kcal, eine Scheibe (30g) rund 82 kcal. Nährwerte, Portionen im Vergleich und Tipps zum Abnehmen.",
@@ -17,10 +18,10 @@
   },
   "overview": {
     "calories_per_100g": 272,
-    "protein_per_100g": 9.1,
-    "carbs_per_100g": 53,
-    "fat_per_100g": 2.5,
-    "fiber_per_100g": 2.7,
+    "protein_per_100g": 10.8,
+    "carbs_per_100g": 51.9,
+    "fat_per_100g": 2.4,
+    "fiber_per_100g": 2.2,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Scheibe (30g)"
   },
@@ -38,7 +39,7 @@
       "name": "Crostini-Scheibe (15g)",
       "portion_g": 15,
       "calories": 41,
-      "protein": 1,
+      "protein": 2,
       "carbs": 8,
       "fat": 0
     },
@@ -46,7 +47,7 @@
       "name": "Drittel Baguette (80g)",
       "portion_g": 80,
       "calories": 218,
-      "protein": 7,
+      "protein": 9,
       "carbs": 42,
       "fat": 2
     },
@@ -54,56 +55,86 @@
       "name": "Sandwich-Baguette (150g)",
       "portion_g": 150,
       "calories": 408,
-      "protein": 14,
-      "carbs": 80,
+      "protein": 16,
+      "carbs": 78,
       "fat": 4
     },
     {
       "name": "Halbes Baguette (125g)",
       "portion_g": 125,
       "calories": 340,
-      "protein": 11,
-      "carbs": 66,
+      "protein": 14,
+      "carbs": 65,
       "fat": 3
     },
     {
       "name": "Ganzes Baguette (250g)",
       "portion_g": 250,
       "calories": 680,
-      "protein": 23,
-      "carbs": 133,
+      "protein": 27,
+      "carbs": 130,
       "fat": 6
     },
     {
       "name": "Vollkorn-Baguette (30g)",
       "portion_g": 30,
-      "calories": 75,
-      "protein": 3,
-      "carbs": 13,
-      "fat": 1,
-      "tip": "Mehr Ballaststoffe"
+      "calories": 72,
+      "protein": 2,
+      "carbs": 15,
+      "fat": 0,
+      "tip": "Mehr Ballaststoffe",
+      "basis": [
+        {
+          "fdcId": 174091,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Brötchen (50g)",
-      "calories": 130,
-      "emoji": "🥐"
+      "calories": 147,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Brot, Scheibe (50g)",
-      "calories": 124,
-      "emoji": "🍞"
+      "calories": 130,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "brot",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Toastbrot, Scheibe (25g)",
-      "calories": 65,
-      "emoji": "🍞"
+      "calories": 67,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Vollkornbrot, Scheibe (50g)",
-      "calories": 105,
-      "emoji": "🌾"
+      "calories": 100,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
@@ -114,7 +145,7 @@
     },
     {
       "title": "Vollkorn statt Weißmehl",
-      "text": "Ein Vollkorn-Baguette liefert deutlich mehr Ballaststoffe und sättigt länger als die helle Variante aus Weißmehl, bei kaum mehr Kalorien.",
+      "text": "Ein Vollkorn-Baguette liefert deutlich mehr Ballaststoffe und sättigt länger als die helle Variante aus Weißmehl, bei sogar etwas weniger Kalorien.",
       "icon": "🌾"
     },
     {
@@ -144,11 +175,11 @@
     },
     {
       "question": "Wie viele Kohlenhydrate hat Baguette?",
-      "answer": "Baguette enthält etwa 53g Kohlenhydrate pro 100g. Eine Scheibe (30g) liefert rund 16g, ein halbes Baguette (125g) etwa 66g Kohlenhydrate."
+      "answer": "Baguette enthält etwa 52g Kohlenhydrate pro 100g. Eine Scheibe (30g) liefert rund 16g, ein halbes Baguette (125g) etwa 65g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Baguette?",
-      "answer": "Baguette enthält etwa 9,1g Eiweiß pro 100g. Das ist für ein Weißmehlgebäck moderat, deckt den Eiweißbedarf aber nur teilweise. Eine eiweißreiche Auflage ergänzt gut."
+      "answer": "Baguette enthält etwa 10,8g Eiweiß pro 100g. Das ist für ein Weißmehlgebäck moderat, deckt den Eiweißbedarf aber nur teilweise. Eine eiweißreiche Auflage ergänzt gut."
     },
     {
       "question": "Ist Baguette zum Abnehmen geeignet?",

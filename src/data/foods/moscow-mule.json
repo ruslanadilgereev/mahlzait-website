@@ -3,9 +3,10 @@
   "name": "Moscow Mule",
   "emoji": "🍹",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710645 (Moscow mule: 91 kcal), Werte je 100 g; je 100 ml mit 1,014 g/ml 92 kcal",
   "seo": {
     "title": "Moscow Mule Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Moscow Mule? Ein Standard-Drink (175 ml) hat ca. 149 kcal. Nährwerte pro 100 ml, Varianten im Vergleich & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat ein Moscow Mule? Ein Standard-Drink (175 ml) hat ca. 162 kcal. Nährwerte pro 100 ml, Varianten im Vergleich & Tipps zum Abnehmen.",
     "keywords": [
       "moscow mule kalorien",
       "moscow mule kcal",
@@ -16,101 +17,123 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 85,
+    "calories_per_100g": 91,
     "protein_per_100g": 0,
-    "carbs_per_100g": 7.1,
+    "carbs_per_100g": 8.6,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 175,
+    "typical_portion_g": 178,
     "typical_portion_name": "1 Moscow Mule (175 ml)"
   },
   "variants": [
     {
       "name": "Kleines Glas (150 ml)",
-      "portion_g": 150,
-      "calories": 128,
+      "portion_g": 152,
+      "calories": 138,
       "protein": 0,
-      "carbs": 11,
+      "carbs": 13,
       "fat": 0
     },
     {
       "name": "Standard Moscow Mule (175 ml)",
-      "portion_g": 175,
-      "calories": 149,
+      "portion_g": 178,
+      "calories": 162,
       "protein": 0,
-      "carbs": 12,
+      "carbs": 15,
       "fat": 0,
       "tip": "Klassisches Rezept"
     },
     {
       "name": "Kupferbecher (200 ml)",
-      "portion_g": 200,
-      "calories": 170,
+      "portion_g": 203,
+      "calories": 185,
       "protein": 0,
-      "carbs": 14,
+      "carbs": 17,
       "fat": 0
     },
     {
       "name": "Doppelter (250 ml)",
-      "portion_g": 250,
-      "calories": 212,
+      "portion_g": 254,
+      "calories": 231,
       "protein": 0,
-      "carbs": 18,
+      "carbs": 22,
       "fat": 0
     },
     {
       "name": "Pitcher-Portion (300 ml)",
-      "portion_g": 300,
-      "calories": 255,
+      "portion_g": 304,
+      "calories": 277,
       "protein": 0,
-      "carbs": 21,
+      "carbs": 26,
       "fat": 0
-    },
-    {
-      "name": "Light mit Zero-Ginger-Beer (175 ml)",
-      "portion_g": 175,
-      "calories": 103,
-      "protein": 0,
-      "carbs": 1,
-      "fat": 0,
-      "tip": "Spart fast die gesamten Kohlenhydrate"
-    },
-    {
-      "name": "Virgin Mule, alkoholfrei (175 ml)",
-      "portion_g": 175,
-      "calories": 49,
-      "protein": 0,
-      "carbs": 12,
-      "fat": 0,
-      "tip": "Ohne Wodka, nur Ginger Beer & Limette"
     }
   ],
   "comparison": [
     {
       "name": "Aperol Spritz (150 ml)",
-      "calories": 130,
-      "emoji": "🍊"
+      "calories": 105,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "ml": 150,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Mojito (200 ml)",
-      "calories": 170,
-      "emoji": "🌿"
+      "calories": 124,
+      "emoji": "🌿",
+      "basis": [
+        {
+          "slug": "mojito",
+          "ml": 200,
+          "g": 203
+        }
+      ]
     },
     {
       "name": "Gin Tonic (200 ml)",
-      "calories": 180,
-      "emoji": "🍸"
+      "calories": 171,
+      "emoji": "🍸",
+      "basis": [
+        {
+          "slug": "gin-tonic",
+          "ml": 200,
+          "g": 203
+        }
+      ]
     },
     {
       "name": "Caipirinha (200 ml)",
-      "calories": 230,
-      "emoji": "🍋"
+      "calories": 320,
+      "emoji": "🍋",
+      "basis": [
+        {
+          "slug": "caipirinha",
+          "ml": 200,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Wodka pur (45 ml)",
+      "calories": 99,
+      "emoji": "🥃",
+      "basis": [
+        {
+          "fdcId": 2710704,
+          "ml": 45,
+          "g": 43
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorien sparen mit Zero-Ginger-Beer",
-      "text": "Der Großteil der Kohlenhydrate im Moscow Mule stammt aus dem Zucker des Ginger Beers. Mit einer zuckerfreien Variante sinkt der Drink von 149 auf rund 103 kcal.",
+      "text": "Der Großteil der Kohlenhydrate im Moscow Mule stammt aus dem Zucker des Ginger Beers. Mit einer zuckerfreien Variante sinkt der Kaloriengehalt deutlich.",
       "icon": "🫚"
     },
     {
@@ -125,7 +148,7 @@
     },
     {
       "title": "Alkoholfreie Alternative",
-      "text": "Ein Virgin Mule aus Ginger Beer und Limette ohne Wodka kommt auf nur rund 49 kcal pro 175 ml und liefert denselben frischen Geschmack.",
+      "text": "Ein Virgin Mule aus Ginger Beer und Limette ohne Wodka hat deutlich weniger Kalorien und liefert denselben frischen Geschmack.",
       "icon": "🍋"
     },
     {
@@ -137,15 +160,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Moscow Mule?",
-      "answer": "Ein klassischer Moscow Mule (175 ml aus Wodka, Ginger Beer und Limette) hat ca. 149 kcal."
+      "answer": "Ein klassischer Moscow Mule (175 ml aus Wodka, Ginger Beer und Limette) hat laut USDA ca. 162 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Moscow Mule pro 100 ml?",
-      "answer": "Pro 100 ml liefert ein Moscow Mule rund 85 kcal. Der genaue Wert hängt vom Zuckergehalt des verwendeten Ginger Beers ab."
+      "answer": "Pro 100 ml liefert ein Moscow Mule rund 92 kcal. Der genaue Wert hängt vom Zuckergehalt des verwendeten Ginger Beers ab."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Moscow Mule?",
-      "answer": "Ein Standard-Drink enthält etwa 12 g Kohlenhydrate, fast ausschließlich Zucker aus dem Ginger Beer. Mit Zero-Ginger-Beer sind es nur rund 1 g."
+      "answer": "Ein Standard-Drink enthält etwa 15 g Kohlenhydrate, fast ausschließlich Zucker aus dem Ginger Beer. Mit Zero-Ginger-Beer sind es deutlich weniger."
     },
     {
       "question": "Hat ein Moscow Mule Eiweiß?",
@@ -153,7 +176,7 @@
     },
     {
       "question": "Ist ein Moscow Mule zum Abnehmen geeignet?",
-      "answer": "Mit rund 149 kcal ist er kalorienärmer als viele Cocktails, der Alkohol bremst aber die Fettverbrennung. Wer abnehmen will, greift zur Zero- oder zur alkoholfreien Virgin-Variante."
+      "answer": "Mit rund 162 kcal liegt er im Mittelfeld der Cocktails, der Alkohol bremst aber die Fettverbrennung. Wer abnehmen will, greift zur Zero- oder zur alkoholfreien Virgin-Variante."
     },
     {
       "question": "Ist ein Moscow Mule gesund?",

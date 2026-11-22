@@ -3,9 +3,10 @@
   "name": "Schmelzflocken",
   "emoji": "🥣",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171661 (Cereals, oats, instant, fortified, plain, dry), Werte je 100 g",
   "seo": {
     "title": "Schmelzflocken Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Schmelzflocken? 100g haben ca. 365 kcal, eine Portion (30g) rund 110 kcal. Nährwerte, Protein & Tipps im Überblick.",
+    "description": "Wie viele Kalorien haben Schmelzflocken? 100g haben ca. 362 kcal, eine Portion (30g) rund 109 kcal. Nährwerte, Protein & Tipps im Überblick.",
     "keywords": [
       "schmelzflocken kalorien",
       "schmelzflocken kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 365,
-    "protein_per_100g": 12.5,
-    "carbs_per_100g": 60,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 9.5,
+    "calories_per_100g": 362,
+    "protein_per_100g": 11.9,
+    "carbs_per_100g": 69.5,
+    "fat_per_100g": 6.9,
+    "fiber_per_100g": 10,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Portion (30g, trocken)"
   },
@@ -28,100 +29,133 @@
     {
       "name": "Babylöffel (20g, trocken)",
       "portion_g": 20,
-      "calories": 73,
-      "protein": 2.5,
-      "carbs": 12,
+      "calories": 72,
+      "protein": 2.4,
+      "carbs": 13.9,
       "fat": 1.4,
       "tip": "Klassisch für den ersten Getreidebrei"
     },
     {
       "name": "Kleine Portion (30g, trocken)",
       "portion_g": 30,
-      "calories": 110,
-      "protein": 3.8,
-      "carbs": 18,
+      "calories": 109,
+      "protein": 3.6,
+      "carbs": 20.9,
       "fat": 2.1,
       "tip": "Standard-Portion"
     },
     {
       "name": "Mittlere Portion (40g, trocken)",
       "portion_g": 40,
-      "calories": 146,
-      "protein": 5,
-      "carbs": 24,
+      "calories": 145,
+      "protein": 4.8,
+      "carbs": 27.8,
       "fat": 2.8
     },
     {
       "name": "Große Portion (50g, trocken)",
       "portion_g": 50,
-      "calories": 183,
-      "protein": 6.3,
-      "carbs": 30,
+      "calories": 181,
+      "protein": 6,
+      "carbs": 34.8,
       "fat": 3.5
     },
     {
       "name": "Brei mit Wasser (30g + 200ml Wasser)",
       "portion_g": 230,
-      "calories": 110,
-      "protein": 3.8,
-      "carbs": 18,
+      "calories": 109,
+      "protein": 3.6,
+      "carbs": 20.9,
       "fat": 2.1,
-      "tip": "Wasser hat keine Kalorien"
+      "tip": "Wasser hat keine Kalorien",
+      "basis": [
+        {
+          "g": 30
+        },
+        {
+          "fdcId": 173647,
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Brei mit Milch (30g + 200ml Vollmilch)",
-      "portion_g": 230,
-      "calories": 238,
-      "protein": 10.6,
-      "carbs": 27.6,
-      "fat": 9.1,
-      "tip": "Mit Milch deutlich gehaltvoller"
+      "portion_g": 236,
+      "calories": 234,
+      "protein": 10.1,
+      "carbs": 30.7,
+      "fat": 8.8,
+      "tip": "Mit Milch deutlich gehaltvoller",
+      "basis": [
+        {
+          "g": 30
+        },
+        {
+          "fdcId": 172217,
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
       "name": "Packung (500g, trocken)",
       "portion_g": 500,
-      "calories": 1825,
-      "protein": 62.5,
-      "carbs": 300,
-      "fat": 35
+      "calories": 1810,
+      "protein": 59.5,
+      "carbs": 347.5,
+      "fat": 34.5
     }
   ],
   "comparison": [
     {
       "name": "Haferflocken (100g)",
-      "calories": 372,
-      "emoji": "🌾"
+      "calories": 379,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "fdcId": 173904,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Cornflakes (100g)",
-      "calories": 357,
-      "emoji": "🥣"
-    },
-    {
-      "name": "Müsli (100g)",
-      "calories": 380,
-      "emoji": "🥜"
+      "calories": 365,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Reisflocken (100g)",
-      "calories": 360,
-      "emoji": "🍚"
+      "calories": 365,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reisflocken",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion macht den Unterschied",
-      "text": "Pro 100g klingen 365 kcal viel, doch eine normale Portion sind nur 30g mit rund 110 kcal. Wer abnehmen will, wiegt die Menge am besten ab.",
+      "text": "Pro 100g klingen 362 kcal viel, doch eine normale Portion sind nur 30g mit rund 109 kcal. Wer abnehmen will, wiegt die Menge am besten ab.",
       "icon": "⚖️"
     },
     {
       "title": "Mit Wasser sparst du Kalorien",
-      "text": "Schmelzflocken mit Wasser angerührt bleiben bei etwa 110 kcal pro Portion. Mit Vollmilch kommen rund 130 kcal hinzu.",
+      "text": "Schmelzflocken mit Wasser angerührt bleiben bei etwa 109 kcal pro Portion. Mit 200ml Vollmilch kommen rund 125 kcal hinzu.",
       "icon": "💧"
     },
     {
       "title": "Gute Ballaststoffquelle",
-      "text": "Mit etwa 9,5g Ballaststoffen pro 100g sättigen Schmelzflocken gut und unterstützen eine geregelte Verdauung.",
+      "text": "Mit etwa 10g Ballaststoffen pro 100g sättigen Schmelzflocken gut und unterstützen eine geregelte Verdauung.",
       "icon": "🌾"
     },
     {
@@ -138,23 +172,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Schmelzflocken?",
-      "answer": "100g Schmelzflocken (trocken) haben rund 365 kcal. Eine typische Portion von 30g liefert etwa 110 kcal."
+      "answer": "100g Schmelzflocken (trocken) haben rund 362 kcal. Eine typische Portion von 30g liefert etwa 109 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Schmelzflocken?",
-      "answer": "Eine Portion von 30g hat ca. 110 kcal. Mit 200ml Vollmilch zubereitet kommt der Brei auf rund 238 kcal."
+      "answer": "Eine Portion von 30g hat ca. 109 kcal. Mit 200ml Vollmilch zubereitet kommt der Brei auf rund 234 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Schmelzflocken?",
-      "answer": "Schmelzflocken enthalten etwa 60g Kohlenhydrate pro 100g. In einer 30g-Portion sind das rund 18g."
+      "answer": "Schmelzflocken enthalten etwa 70g Kohlenhydrate pro 100g. In einer 30g-Portion sind das rund 21g."
     },
     {
       "question": "Wie viel Protein steckt in Schmelzflocken?",
-      "answer": "Pro 100g liefern Schmelzflocken etwa 12,5g Eiweiß. Eine 30g-Portion enthält knapp 4g Protein."
+      "answer": "Pro 100g liefern Schmelzflocken etwa 11,9g Eiweiß. Eine 30g-Portion enthält knapp 4g Protein."
     },
     {
       "question": "Sind Schmelzflocken zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Eine abgewogene 30g-Portion mit Wasser hat nur etwa 110 kcal und sättigt durch Ballaststoffe. Auf die Menge und kalorienreiche Zutaten wie Zucker oder Sahne achten."
+      "answer": "In Maßen ja: Eine abgewogene 30g-Portion mit Wasser hat nur etwa 109 kcal und sättigt durch Ballaststoffe. Auf die Menge und kalorienreiche Zutaten wie Zucker oder Sahne achten."
     },
     {
       "question": "Sind Schmelzflocken gesund?",

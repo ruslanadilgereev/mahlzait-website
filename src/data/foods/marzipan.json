@@ -3,9 +3,10 @@
   "name": "Marzipan",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 170160 (Nuts, almond paste), Werte je 100 g",
   "seo": {
     "title": "Marzipan Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Marzipan? 100g haben ca. 485 kcal. Nährwerte, Varianten wie Marzipankartoffeln & Riegel im Vergleich plus Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Marzipan? 100g haben ca. 458 kcal. Nährwerte, Varianten wie Marzipankartoffeln & Riegel im Vergleich plus Diät-Tipps.",
     "keywords": [
       "marzipan kalorien",
       "marzipan kcal",
@@ -17,11 +18,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 485,
+    "calories_per_100g": 458,
     "protein_per_100g": 9,
-    "carbs_per_100g": 49,
-    "fat_per_100g": 28,
-    "fiber_per_100g": 5,
+    "carbs_per_100g": 47.8,
+    "fat_per_100g": 27.7,
+    "fiber_per_100g": 4.8,
     "typical_portion_g": 25,
     "typical_portion_name": "1 Riegel/Stück (25g)"
   },
@@ -29,7 +30,7 @@
     {
       "name": "Marzipankartoffel (10g)",
       "portion_g": 10,
-      "calories": 49,
+      "calories": 46,
       "protein": 1,
       "carbs": 5,
       "fat": 3,
@@ -38,7 +39,7 @@
     {
       "name": "1 Stück/Riegel (25g)",
       "portion_g": 25,
-      "calories": 121,
+      "calories": 115,
       "protein": 2,
       "carbs": 12,
       "fat": 7,
@@ -47,72 +48,85 @@
     {
       "name": "Marzipanriegel (50g)",
       "portion_g": 50,
-      "calories": 243,
+      "calories": 229,
       "protein": 5,
-      "carbs": 25,
+      "carbs": 24,
       "fat": 14
     },
     {
       "name": "Marzipanbrot mit Schokolade (75g)",
       "portion_g": 75,
-      "calories": 375,
-      "protein": 8,
-      "carbs": 30,
-      "fat": 25,
-      "tip": "Schokohülle erhöht das Fett"
+      "calories": 357,
+      "protein": 6,
+      "carbs": 38,
+      "fat": 21,
+      "tip": "Schokohülle erhöht das Fett",
+      "basis": [
+        {
+          "g": 60
+        },
+        {
+          "fdcId": 170271,
+          "g": 15
+        }
+      ]
     },
     {
-      "name": "Marzipanrohmasse pur (50g)",
-      "portion_g": 50,
-      "calories": 225,
-      "protein": 5,
-      "carbs": 21,
-      "fat": 13,
-      "tip": "Mehr Mandeln, weniger Zucker"
-    },
-    {
-      "name": "Marzipanrohmasse pur (100g)",
+      "name": "100 g",
       "portion_g": 100,
-      "calories": 450,
-      "protein": 10,
-      "carbs": 42,
-      "fat": 26
+      "calories": 458,
+      "protein": 9,
+      "carbs": 48,
+      "fat": 28
     },
     {
       "name": "Packung (200g)",
       "portion_g": 200,
-      "calories": 970,
+      "calories": 916,
       "protein": 18,
-      "carbs": 98,
-      "fat": 56
+      "carbs": 96,
+      "fat": 55
     }
   ],
   "comparison": [
     {
-      "name": "Schokolade Vollmilch",
-      "calories": 535,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 167587,
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Nougat",
-      "calories": 478,
-      "emoji": "🍬"
+      "name": "Mandeln (1 Handvoll, 30g)",
+      "calories": 173,
+      "emoji": "🌰",
+      "basis": [
+        {
+          "slug": "mandeln",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Mandeln",
-      "calories": 579,
-      "emoji": "🌰"
-    },
-    {
-      "name": "Gummibärchen",
-      "calories": 343,
-      "emoji": "🐻"
+      "name": "Gummibärchen (25g)",
+      "calories": 99,
+      "emoji": "🐻",
+      "basis": [
+        {
+          "fdcId": 2710359,
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein dosieren",
-      "text": "Marzipan ist sehr energiedicht. Ein Stück von 25g hat schon rund 121 kcal. Schneide es in kleine Häppchen, dann reicht eine kleine Menge länger.",
+      "text": "Marzipan ist sehr energiedicht. Ein Stück von 25g hat schon rund 115 kcal. Schneide es in kleine Häppchen, dann reicht eine kleine Menge länger.",
       "icon": "🔪"
     },
     {
@@ -139,15 +153,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Marzipan?",
-      "answer": "100g Marzipan haben rund 485 kcal. Ein einzelnes Stück oder ein kleiner Riegel von 25g bringt es auf etwa 121 kcal."
+      "answer": "100g Marzipan haben rund 458 kcal. Ein einzelnes Stück oder ein kleiner Riegel von 25g bringt es auf etwa 115 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Marzipankartoffel?",
-      "answer": "Eine klassische Marzipankartoffel wiegt etwa 10g und hat rund 49 kcal."
+      "answer": "Eine klassische Marzipankartoffel wiegt etwa 10g und hat rund 46 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Marzipan?",
-      "answer": "Marzipan enthält pro 100g etwa 49g Kohlenhydrate, davon der größte Teil Zucker. Das macht es zu einer kohlenhydratreichen Süßigkeit."
+      "answer": "Marzipan enthält pro 100g etwa 48g Kohlenhydrate, davon der größte Teil Zucker. Das macht es zu einer kohlenhydratreichen Süßigkeit."
     },
     {
       "question": "Wie viel Protein steckt in Marzipan?",
@@ -155,7 +169,7 @@
     },
     {
       "question": "Ist Marzipan zum Abnehmen geeignet?",
-      "answer": "Marzipan ist mit 485 kcal pro 100g sehr energiedicht und damit kein klassisches Diät-Lebensmittel. In kleinen Mengen lässt es sich aber gut in ein Kalorienziel einplanen."
+      "answer": "Marzipan ist mit 458 kcal pro 100g sehr energiedicht und damit kein klassisches Diät-Lebensmittel. In kleinen Mengen lässt es sich aber gut in ein Kalorienziel einplanen."
     },
     {
       "question": "Ist Marzipan gesund?",

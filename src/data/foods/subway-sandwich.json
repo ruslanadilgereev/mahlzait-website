@@ -3,9 +3,10 @@
   "name": "Subway Sandwich",
   "emoji": "🥪",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170314 (SUBWAY, oven roasted chicken sub on white bread with lettuce and tomato), Werte je 100 g",
   "seo": {
     "title": "Subway Sandwich Kalorien: Nährwerte & Subs | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Subway Sandwich? Ein 6-Inch-Hähnchen-Sub hat ca. 330 kcal. Nährwerte pro Sub & 100g, alle Subs im Vergleich + Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Subway Sandwich? Ein 6-Inch-Hähnchen-Sub hat ca. 361 kcal. Nährwerte pro Sub & 100g, alle Subs im Vergleich + Diät-Tipps.",
     "keywords": [
       "subway sandwich kalorien",
       "subway sandwich kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 143,
-    "protein_per_100g": 9.5,
-    "carbs_per_100g": 21,
-    "fat_per_100g": 2.8,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 157,
+    "protein_per_100g": 10.8,
+    "carbs_per_100g": 21.4,
+    "fat_per_100g": 3.2,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 230,
     "typical_portion_name": "1 Sub 6-Inch (15 cm)"
   },
@@ -30,61 +31,91 @@
     {
       "name": "Veggie Delite 6-Inch",
       "portion_g": 200,
-      "calories": 230,
-      "protein": 9,
-      "carbs": 44,
-      "fat": 3,
-      "tip": "Kalorienärmster Sub"
+      "calories": 240,
+      "protein": 8,
+      "carbs": 43,
+      "fat": 4,
+      "tip": "Kalorienärmster Sub",
+      "basis": [
+        {
+          "fdcId": 2709132,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Truthahn 6-Inch",
       "portion_g": 220,
-      "calories": 280,
-      "protein": 18,
-      "carbs": 44,
-      "fat": 4
+      "calories": 323,
+      "protein": 20,
+      "carbs": 49,
+      "fat": 5,
+      "basis": [
+        {
+          "fdcId": 170711,
+          "g": 220
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust 6-Inch",
       "portion_g": 230,
-      "calories": 330,
-      "protein": 26,
-      "carbs": 47,
-      "fat": 5,
+      "calories": 361,
+      "protein": 25,
+      "carbs": 49,
+      "fat": 7,
       "tip": "Standard"
     },
     {
       "name": "Steak & Cheese 6-Inch",
       "portion_g": 240,
-      "calories": 360,
-      "protein": 25,
-      "carbs": 45,
-      "fat": 10
+      "calories": 439,
+      "protein": 29,
+      "carbs": 52,
+      "fat": 13,
+      "basis": [
+        {
+          "fdcId": 170310,
+          "g": 240
+        }
+      ]
     },
     {
       "name": "Chicken Teriyaki 6-Inch",
       "portion_g": 250,
-      "calories": 370,
-      "protein": 26,
+      "calories": 388,
+      "protein": 27,
       "carbs": 56,
-      "fat": 5
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 170705,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Thunfisch 6-Inch",
       "portion_g": 230,
-      "calories": 480,
-      "protein": 24,
-      "carbs": 44,
-      "fat": 24,
-      "tip": "Mayo macht ihn fettreich"
+      "calories": 508,
+      "protein": 28,
+      "carbs": 37,
+      "fat": 28,
+      "tip": "Mayo macht ihn fettreich",
+      "basis": [
+        {
+          "fdcId": 170316,
+          "g": 230
+        }
+      ]
     },
     {
       "name": "Hähnchenbrust Footlong (30 cm)",
       "portion_g": 460,
-      "calories": 660,
-      "protein": 52,
-      "carbs": 94,
-      "fat": 10,
+      "calories": 722,
+      "protein": 50,
+      "carbs": 98,
+      "fat": 15,
       "tip": "Doppelte Portion"
     }
   ],
@@ -92,38 +123,60 @@
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Big Mac",
       "calories": 563,
-      "emoji": "🍔"
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
     },
     {
-      "name": "Wrap",
-      "calories": 350,
-      "emoji": "🌯"
+      "name": "Wrap (280g)",
+      "calories": 650,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "wrap"
+        }
+      ]
     },
     {
-      "name": "Belegtes Brötchen",
-      "calories": 290,
-      "emoji": "🥖"
+      "name": "Belegtes Brötchen mit Käse (80g)",
+      "calories": 238,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen-mit-kaese"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Veggie & magere Subs wählen",
-      "text": "Der Veggie Delite (230 kcal) und der Truthahn-Sub (280 kcal) sind die kalorienärmsten Subs. So bleibt ein Subway-Besuch auch in der Diät machbar.",
+      "text": "Der Veggie Delite (240 kcal) und der Truthahn-Sub (323 kcal) sind die kalorienärmsten Subs. So bleibt ein Subway-Besuch auch in der Diät machbar.",
       "icon": "🥗"
     },
     {
       "title": "Saucen sind die größte Kalorienfalle",
-      "text": "Mayonnaise und cremige Dressings bringen schnell 100-150 kcal extra. Senf, Essig oder Sweet-Onion-Sauce sind deutlich leichter.",
+      "text": "Mayonnaise und cremige Dressings bringen schnell viele Extra-Kalorien. Senf, Essig oder Sweet-Onion-Sauce sind deutlich leichter.",
       "icon": "🥄"
     },
     {
       "title": "Käse weglassen spart Fett",
-      "text": "Zwei Scheiben Käse fügen rund 50-60 kcal und Fett hinzu. Ohne Käse wird der Sub spürbar leichter, ohne dass viel Geschmack verloren geht.",
+      "text": "Käse fügt zusätzliche Kalorien und Fett hinzu. Ohne Käse wird der Sub spürbar leichter, ohne dass viel Geschmack verloren geht.",
       "icon": "🧀"
     },
     {
@@ -140,19 +193,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Subway Sandwich?",
-      "answer": "Ein 6-Inch-Sub (15 cm) hat je nach Belag ca. 230-480 kcal. Der beliebte Hähnchenbrust-Sub liegt bei rund 330 kcal, der Veggie Delite bei nur 230 kcal."
+      "answer": "Ein 6-Inch-Sub (15 cm) hat je nach Belag ca. 240 bis 508 kcal. Der beliebte Hähnchenbrust-Sub liegt bei rund 361 kcal, der Veggie Delite bei nur 240 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Footlong-Sub?",
-      "answer": "Ein Footlong (30 cm) hat etwa die doppelte Menge eines 6-Inch-Subs. Beim Hähnchen-Sub sind das rund 660 kcal, bei fettreichen Sorten wie Thunfisch auch deutlich mehr."
+      "answer": "Ein Footlong (30 cm) hat etwa die doppelte Menge eines 6-Inch-Subs. Beim Hähnchen-Sub sind das rund 722 kcal, bei fettreichen Sorten wie Thunfisch auch deutlich mehr."
     },
     {
       "question": "Welcher Subway-Sub hat die wenigsten Kalorien?",
-      "answer": "Der Veggie Delite ist mit ca. 230 kcal pro 6-Inch der kalorienärmste Sub. Auch der Truthahn-Sub (ca. 280 kcal) ist eine leichte Wahl."
+      "answer": "Der Veggie Delite ist mit ca. 240 kcal pro 6-Inch der kalorienärmste Sub. Auch der Truthahn-Sub (ca. 323 kcal) ist eine leichte Wahl."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Subway-Sandwich?",
-      "answer": "Ein 6-Inch-Sub liefert etwa 44-56g Kohlenhydrate, hauptsächlich aus dem Brot. Wer Kohlenhydrate sparen möchte, kann den Sub als Salat (Salad Bowl) ohne Brot bestellen."
+      "answer": "Ein 6-Inch-Sub liefert etwa 37 bis 56g Kohlenhydrate, hauptsächlich aus dem Brot. Wer Kohlenhydrate sparen möchte, kann den Sub als Salat (Salad Bowl) ohne Brot bestellen."
     },
     {
       "question": "Ist Subway gut zum Abnehmen?",
@@ -160,7 +213,7 @@
     },
     {
       "question": "Wie viel Eiweiß hat ein Subway-Sub?",
-      "answer": "Ein Hähnchen- oder Truthahn-Sub liefert etwa 18-26g Eiweiß pro 6-Inch. Ein Footlong mit Hähnchen kommt auf über 50g Protein und ist damit eine sättigende, proteinreiche Mahlzeit."
+      "answer": "Ein Hähnchen- oder Truthahn-Sub liefert etwa 20 bis 25g Eiweiß pro 6-Inch. Ein Footlong mit Hähnchen kommt auf rund 50g Protein und ist damit eine sättigende, proteinreiche Mahlzeit."
     }
   ],
   "related_foods": [

@@ -3,9 +3,10 @@
   "name": "Pastel de Nata",
   "emoji": "🥧",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2708054 (Pastry, puff, custard or cream filled, iced or not iced), Werte je 100 g",
   "seo": {
     "title": "Pastel de Nata Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Pastel de Nata? Ein Stück (55g) hat ca. 164 kcal. Nährwerte pro 100g, Portionen im Vergleich und Tipps zum Genuss.",
+    "description": "Wie viele Kalorien hat ein Pastel de Nata? Ein Stück (55g) hat ca. 226 kcal. Nährwerte pro 100g, Portionen im Vergleich und Tipps zum Genuss.",
     "keywords": [
       "pastel de nata kalorien",
       "pastel de nata kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 298,
-    "protein_per_100g": 5.5,
-    "carbs_per_100g": 35,
-    "fat_per_100g": 15,
-    "fiber_per_100g": 0.9,
+    "calories_per_100g": 410,
+    "protein_per_100g": 5.7,
+    "carbs_per_100g": 30.1,
+    "fat_per_100g": 29.7,
+    "fiber_per_100g": 0.8,
     "typical_portion_g": 55,
     "typical_portion_name": "1 Stück (55g)"
   },
@@ -28,79 +29,97 @@
     {
       "name": "Mini-Häppchen (30g)",
       "portion_g": 30,
-      "calories": 89,
+      "calories": 123,
       "protein": 2,
-      "carbs": 11,
-      "fat": 5
+      "carbs": 9,
+      "fat": 9
     },
     {
       "name": "1 Stück (55g)",
       "portion_g": 55,
-      "calories": 164,
+      "calories": 226,
       "protein": 3,
-      "carbs": 19,
-      "fat": 8,
+      "carbs": 17,
+      "fat": 16,
       "tip": "Standard"
     },
     {
       "name": "1 Stück groß (70g)",
       "portion_g": 70,
-      "calories": 209,
+      "calories": 287,
       "protein": 4,
-      "carbs": 25,
-      "fat": 11
+      "carbs": 21,
+      "fat": 21
     },
     {
       "name": "2 Stück (110g)",
       "portion_g": 110,
-      "calories": 328,
+      "calories": 451,
       "protein": 6,
-      "carbs": 39,
-      "fat": 17
+      "carbs": 33,
+      "fat": 33
     },
     {
       "name": "6er-Packung (330g)",
       "portion_g": 330,
-      "calories": 983,
-      "protein": 18,
-      "carbs": 116,
-      "fat": 50
+      "calories": 1353,
+      "protein": 19,
+      "carbs": 99,
+      "fat": 98
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 298,
+      "calories": 410,
       "protein": 6,
-      "carbs": 35,
-      "fat": 15
+      "carbs": 30,
+      "fat": 30
     }
   ],
   "comparison": [
     {
       "name": "Croissant (60g)",
-      "calories": 245,
-      "emoji": "🥐"
+      "calories": 244,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Donut (60g)",
-      "calories": 270,
-      "emoji": "🍩"
+      "calories": 253,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "fdcId": 172758,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Berliner (70g)",
-      "calories": 195,
-      "emoji": "🍩"
+      "calories": 238,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner",
+          "g": 70
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein, aber kalorienreich",
-      "text": "Ein einzelnes Pastel de Nata (55g) hat zwar nur etwa 164 kcal, durch die geringe Größe isst man aber schnell zwei oder drei Stück. Bewusst genießen lohnt sich.",
+      "text": "Ein einzelnes Pastel de Nata (55g) hat etwa 226 kcal, und durch die geringe Größe isst man schnell zwei oder drei Stück. Bewusst genießen lohnt sich.",
       "icon": "🥧"
     },
     {
       "title": "Fett aus Blätterteig",
-      "text": "Rund die Hälfte der Kalorien stammt aus Fett, vor allem aus dem buttrigen Blätterteig. Das macht das Törtchen so knusprig, aber auch energiedicht.",
+      "text": "Rund zwei Drittel der Kalorien stammen aus Fett, vor allem aus dem buttrigen Blätterteig. Das macht das Törtchen so knusprig, aber auch energiedicht.",
       "icon": "🧈"
     },
     {
@@ -115,22 +134,22 @@
     },
     {
       "title": "Portion im Blick behalten",
-      "text": "Die 6er-Packung aus dem Supermarkt bringt zusammen fast 1000 kcal mit. Einzeln portionieren hilft, den Überblick zu behalten.",
+      "text": "Die 6er-Packung aus dem Supermarkt bringt zusammen über 1300 kcal mit. Einzeln portionieren hilft, den Überblick zu behalten.",
       "icon": "📦"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Pastel de Nata?",
-      "answer": "Ein typisches Pastel de Nata (55g) hat etwa 164 kcal. Pro 100g sind es rund 298 kcal."
+      "answer": "Ein typisches Pastel de Nata (55g) hat etwa 226 kcal. Pro 100g sind es rund 410 kcal."
     },
     {
       "question": "Wie viele Kalorien haben 100g Pastel de Nata?",
-      "answer": "100g Pastel de Nata enthalten ungefähr 298 kcal, 5,5g Protein, 35g Kohlenhydrate und 15g Fett."
+      "answer": "100g Pastel de Nata enthalten ungefähr 410 kcal, 5,7g Protein, 30g Kohlenhydrate und 30g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Pastel de Nata?",
-      "answer": "Ein Stück (55g) liefert etwa 19g Kohlenhydrate. Pro 100g sind es rund 35g, überwiegend aus Zucker und Blätterteig."
+      "answer": "Ein Stück (55g) liefert etwa 17g Kohlenhydrate. Pro 100g sind es rund 30g, überwiegend aus Zucker und Blätterteig."
     },
     {
       "question": "Wie viel Protein steckt in einem Pastel de Nata?",
@@ -138,7 +157,7 @@
     },
     {
       "question": "Ist Pastel de Nata zum Abnehmen geeignet?",
-      "answer": "Pastel de Nata ist mit 298 kcal pro 100g recht energiedicht und zuckerreich. In einer Diät passt es als kleiner, bewusst eingeplanter Genuss, ersetzt aber keine sättigende Mahlzeit."
+      "answer": "Pastel de Nata ist mit 410 kcal pro 100g recht energiedicht und zuckerreich. In einer Diät passt es als kleiner, bewusst eingeplanter Genuss, ersetzt aber keine sättigende Mahlzeit."
     },
     {
       "question": "Ist Pastel de Nata gesund?",

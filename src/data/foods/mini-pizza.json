@@ -3,9 +3,10 @@
   "name": "Mini-Pizza",
   "emoji": "🍕",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708613 (Pizza, cheese, from frozen, thick crust), Werte je 100 g",
   "seo": {
     "title": "Mini-Pizza Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Mini-Pizza? Eine Mini-Pizza (60g) hat ca. 156 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat eine Mini-Pizza? Eine Mini-Pizza (60g) hat ca. 161 kcal. Nährwerte pro 100g & Stück, Varianten im Vergleich + Tipps.",
     "keywords": [
       "mini pizza kcal",
       "mini pizza kalorien",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 260,
-    "protein_per_100g": 11,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 268,
+    "protein_per_100g": 10.4,
+    "carbs_per_100g": 29,
+    "fat_per_100g": 12.3,
+    "fiber_per_100g": 2.2,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Mini-Pizza"
   },
@@ -30,92 +31,116 @@
     {
       "name": "1 Mini-Pizza (60g)",
       "portion_g": 60,
-      "calories": 156,
-      "protein": 7,
-      "carbs": 18,
-      "fat": 6,
+      "calories": 161,
+      "protein": 6,
+      "carbs": 17,
+      "fat": 7,
       "tip": "Standard"
     },
     {
       "name": "Mini-Pizza klein (40g)",
       "portion_g": 40,
-      "calories": 104,
+      "calories": 107,
       "protein": 4,
       "carbs": 12,
-      "fat": 4
+      "fat": 5
     },
     {
       "name": "2 Mini-Pizzen (120g)",
       "portion_g": 120,
-      "calories": 312,
-      "protein": 13,
-      "carbs": 36,
-      "fat": 12
+      "calories": 322,
+      "protein": 12,
+      "carbs": 35,
+      "fat": 15
     },
     {
       "name": "Party-Teller (5 Stück, 300g)",
       "portion_g": 300,
-      "calories": 780,
-      "protein": 33,
-      "carbs": 90,
-      "fat": 30
+      "calories": 804,
+      "protein": 31,
+      "carbs": 87,
+      "fat": 37
     },
     {
       "name": "Mini-Pizza Salami (65g)",
       "portion_g": 65,
-      "calories": 185,
-      "protein": 8,
+      "calories": 179,
+      "protein": 7,
       "carbs": 18,
-      "fat": 9
-    },
-    {
-      "name": "Mini-Pizza Margherita (60g)",
-      "portion_g": 60,
-      "calories": 144,
-      "protein": 6,
-      "carbs": 18,
-      "fat": 5
+      "fat": 9,
+      "basis": [
+        {
+          "fdcId": 2708637,
+          "g": 65
+        }
+      ]
     },
     {
       "name": "Mini-Pizza Vollkorn (60g)",
       "portion_g": 60,
-      "calories": 150,
+      "calories": 159,
       "protein": 7,
-      "carbs": 17,
-      "fat": 5
+      "carbs": 20,
+      "fat": 6,
+      "basis": [
+        {
+          "fdcId": 2708688,
+          "g": 60
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Pizza-Stück",
-      "calories": 285,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (1 Stück, 140g)",
+      "calories": 372,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita"
+        }
+      ]
     },
     {
-      "name": "Brezel",
-      "calories": 165,
-      "emoji": "🥨"
+      "name": "Brezel (1 Stück, 95g)",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        }
+      ]
     },
     {
-      "name": "Käsebrötchen",
-      "calories": 220,
-      "emoji": "🧀"
+      "name": "Käsebrötchen (95g)",
+      "calories": 299,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaesebroetchen"
+        }
+      ]
     },
     {
-      "name": "Mini-Croissant",
-      "calories": 110,
-      "emoji": "🥐"
+      "name": "Mini-Croissant (25g)",
+      "calories": 102,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "mini-croissant"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Beliebter Party-Snack",
-      "text": "Eine Mini-Pizza hat ca. 156 kcal. Auf einem Buffet summiert sich das schnell – 5 Stück liefern bereits rund 780 kcal.",
+      "text": "Eine Mini-Pizza hat ca. 161 kcal. Auf einem Buffet summiert sich das schnell: 5 Stück liefern bereits rund 804 kcal.",
       "icon": "🍕"
     },
     {
       "title": "Margherita spart Kalorien",
-      "text": "Ohne Salami und Extra-Käse hat eine Mini-Pizza Margherita nur ca. 144 kcal statt 185 kcal mit Salami. Der Belag macht den Unterschied.",
+      "text": "Ohne Salami hat eine Mini-Pizza Margherita (60g) ca. 161 kcal statt 179 kcal mit Salami (65g). Der Belag macht einen kleinen Unterschied.",
       "icon": "🍅"
     },
     {
@@ -137,23 +162,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Mini-Pizza?",
-      "answer": "Eine Mini-Pizza (60g) hat ca. 156 kcal. Pro 100g sind es rund 260 kcal. Eine kleine Variante (40g) liegt bei etwa 104 kcal."
+      "answer": "Eine Mini-Pizza (60g) hat ca. 161 kcal. Pro 100g sind es rund 268 kcal. Eine kleine Variante (40g) liegt bei etwa 107 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Mini-Pizza?",
-      "answer": "Eine Mini-Pizza (60g) liefert ca. 18g Kohlenhydrate, hauptsächlich aus dem Teigboden. Pro 100g sind es etwa 30g."
+      "answer": "Eine Mini-Pizza (60g) liefert ca. 17g Kohlenhydrate, hauptsächlich aus dem Teigboden. Pro 100g sind es etwa 29g."
     },
     {
       "question": "Wie viel Protein steckt in einer Mini-Pizza?",
-      "answer": "Eine Mini-Pizza (60g) enthält ca. 7g Eiweiß, vor allem aus Käse und Mehl. Salami-Varianten kommen auf etwa 8g."
+      "answer": "Eine Mini-Pizza (60g) enthält ca. 6g Eiweiß, vor allem aus Käse und Mehl. Salami-Varianten kommen auf etwa 7g."
     },
     {
       "question": "Ist Mini-Pizza zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit ca. 260 kcal/100g und wenig Ballaststoffen sättigt Mini-Pizza eher schlecht. 1-2 Stück mit Salat passen aber in eine ausgewogene Ernährung."
+      "answer": "Nur in Maßen. Mit ca. 268 kcal/100g und wenig Ballaststoffen sättigt Mini-Pizza eher schlecht. 1-2 Stück mit Salat passen aber in eine ausgewogene Ernährung."
     },
     {
       "question": "Wie viele Kalorien hat eine Mini-Pizza Salami?",
-      "answer": "Eine Mini-Pizza mit Salami (65g) hat ca. 185 kcal. Die Salami liefert zusätzliches Fett, daher etwas mehr als die Margherita-Variante mit rund 144 kcal."
+      "answer": "Eine Mini-Pizza mit Salami (65g) hat ca. 179 kcal. Die Salami liefert zusätzliches Fett, daher etwas mehr als die Margherita-Variante (60g) mit rund 161 kcal."
     },
     {
       "question": "Ist Mini-Pizza gesund?",

@@ -3,9 +3,10 @@
   "name": "Pizza Vegetariana",
   "emoji": "🍕",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708626 (Pizza, cheese, with vegetables, from restaurant or fast food, thin crust), Werte je 100 g",
   "seo": {
     "title": "Pizza Vegetariana Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Pizza Vegetariana? Eine ganze Pizza (350g) hat ca. 822 kcal. Nährwerte pro 100g & pro Pizza, Stück-Vergleich und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat eine Pizza Vegetariana? Eine ganze Pizza (350g) hat ca. 819 kcal. Nährwerte pro 100g & pro Pizza, Stück-Vergleich und Diät-Tipps.",
     "keywords": [
       "pizza vegetariana kcal",
       "pizza vegetariana kalorien",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 235,
-    "protein_per_100g": 9.5,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 8.5,
+    "calories_per_100g": 234,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 29.9,
+    "fat_per_100g": 8.4,
     "fiber_per_100g": 2.2,
     "typical_portion_g": 350,
     "typical_portion_name": "1 ganze Pizza (350g)"
@@ -28,93 +29,115 @@
     {
       "name": "100g Pizza Vegetariana",
       "portion_g": 100,
-      "calories": 235,
+      "calories": 234,
       "protein": 10,
-      "carbs": 28,
-      "fat": 9
+      "carbs": 30,
+      "fat": 8
     },
     {
       "name": "1 Stück (1/8 Pizza, 45g)",
       "portion_g": 45,
-      "calories": 106,
-      "protein": 4,
+      "calories": 105,
+      "protein": 5,
       "carbs": 13,
       "fat": 4
     },
     {
       "name": "Halbe Pizza (175g)",
       "portion_g": 175,
-      "calories": 411,
-      "protein": 17,
-      "carbs": 49,
+      "calories": 410,
+      "protein": 18,
+      "carbs": 52,
       "fat": 15
     },
     {
       "name": "1 ganze Pizza (350g)",
       "portion_g": 350,
-      "calories": 823,
-      "protein": 33,
-      "carbs": 98,
-      "fat": 30,
+      "calories": 819,
+      "protein": 35,
+      "carbs": 105,
+      "fat": 29,
       "tip": "Standard, frisch gebacken"
     },
     {
       "name": "Große Pizza (450g)",
       "portion_g": 450,
-      "calories": 1058,
-      "protein": 43,
-      "carbs": 126,
+      "calories": 1053,
+      "protein": 45,
+      "carbs": 135,
       "fat": 38
     },
     {
       "name": "TK-Pizza Vegetariana (390g)",
       "portion_g": 390,
-      "calories": 917,
-      "protein": 37,
-      "carbs": 109,
-      "fat": 33,
-      "tip": "Tiefkühl, oft etwas fetter"
-    },
-    {
-      "name": "Pizzabrötchen vegetarisch (50g)",
-      "portion_g": 50,
-      "calories": 118,
-      "protein": 5,
-      "carbs": 14,
-      "fat": 4
+      "calories": 936,
+      "protein": 36,
+      "carbs": 103,
+      "fat": 42,
+      "tip": "Tiefkühl, oft etwas fetter",
+      "basis": [
+        {
+          "fdcId": 2708624,
+          "g": 390
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Pizza Margherita (350g)",
-      "calories": 840,
-      "emoji": "🍕"
+      "calories": 931,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Pizza Salami (350g)",
-      "calories": 980,
-      "emoji": "🍕"
+      "calories": 987,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami",
+          "g": 350
+        }
+      ]
     },
     {
       "name": "Döner (350g)",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
       "name": "Lasagne (350g)",
-      "calories": 472,
-      "emoji": "🍝"
+      "calories": 487,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "lasagne",
+          "g": 350
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Etwas leichter als Salami-Pizza",
-      "text": "Eine Pizza Vegetariana hat mit ca. 822 kcal pro ganzer Pizza (350g) spürbar weniger Kalorien als eine Pizza Salami (ca. 980 kcal), weil Gemüse fett- und kalorienärmer als Wurst ist.",
+      "text": "Eine Pizza Vegetariana hat mit ca. 819 kcal pro ganzer Pizza (350g) spürbar weniger Kalorien als eine Pizza Salami (ca. 987 kcal), weil Gemüse fett- und kalorienärmer als Wurst ist.",
       "icon": "🥦"
     },
     {
       "title": "Den Käse im Blick behalten",
-      "text": "Der Großteil der Kalorien und des Fetts stammt vom Mozzarella, nicht vom Gemüse. Eine dünnere Käseschicht oder Light-Mozzarella spart pro Pizza schnell 100 bis 150 kcal.",
+      "text": "Der Großteil der Kalorien und des Fetts stammt vom Mozzarella, nicht vom Gemüse. Eine dünnere Käseschicht oder Light-Mozzarella spart pro Pizza spürbar Kalorien.",
       "icon": "🧀"
     },
     {
@@ -124,35 +147,35 @@
     },
     {
       "title": "Dünner Boden spart Kohlenhydrate",
-      "text": "Ein dünner Boden (Pizza Romana) hat weniger Teig und damit weniger Kohlenhydrate und Kalorien als ein dicker amerikanischer Boden. Bei gleicher Größe sind das oft 80 bis 120 kcal Unterschied.",
+      "text": "Ein dünner Boden (Pizza Romana) hat weniger Teig und damit weniger Kohlenhydrate und Kalorien als ein dicker amerikanischer Boden.",
       "icon": "📏"
     },
     {
       "title": "Halbe Pizza plus Salat",
-      "text": "Wer abnehmen möchte, isst eine halbe Pizza (ca. 411 kcal) und dazu einen großen grünen Salat. Das hält die Kalorienbilanz im Rahmen und sättigt gut.",
+      "text": "Wer abnehmen möchte, isst eine halbe Pizza (ca. 410 kcal) und dazu einen großen grünen Salat. Das hält die Kalorienbilanz im Rahmen und sättigt gut.",
       "icon": "🥗"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Pizza Vegetariana?",
-      "answer": "Eine ganze Pizza Vegetariana (ca. 350g) hat rund 822 kcal. Pro 100g sind es etwa 235 kcal."
+      "answer": "Eine ganze Pizza Vegetariana (ca. 350g) hat rund 819 kcal. Pro 100g sind es etwa 234 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza Vegetariana?",
-      "answer": "Ein Achtel einer Pizza (ca. 45g) hat etwa 106 kcal. Bei größeren Stücken steigt der Wert entsprechend an."
+      "answer": "Ein Achtel einer Pizza (ca. 45g) hat etwa 105 kcal. Bei größeren Stücken steigt der Wert entsprechend an."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Pizza Vegetariana?",
-      "answer": "Pro 100g enthält eine Pizza Vegetariana etwa 28g Kohlenhydrate, vor allem aus dem Teigboden. Eine ganze Pizza (350g) kommt auf rund 98g."
+      "answer": "Pro 100g enthält eine Pizza Vegetariana etwa 30g Kohlenhydrate, vor allem aus dem Teigboden. Eine ganze Pizza (350g) kommt auf rund 105g."
     },
     {
       "question": "Wie viel Protein hat eine Pizza Vegetariana?",
-      "answer": "Eine ganze Pizza Vegetariana (350g) liefert etwa 33g Protein, hauptsächlich aus dem Käse. Pro 100g sind es rund 9,5g."
+      "answer": "Eine ganze Pizza Vegetariana (350g) liefert etwa 35g Protein, hauptsächlich aus dem Käse. Pro 100g sind es rund 10g."
     },
     {
       "question": "Ist Pizza Vegetariana zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Eine halbe Pizza (ca. 411 kcal) mit einem großen Salat passt gut in eine kalorienbewusste Ernährung. Eine ganze Pizza ist mit über 800 kcal aber recht gehaltvoll."
+      "answer": "In Maßen ja. Eine halbe Pizza (ca. 410 kcal) mit einem großen Salat passt gut in eine kalorienbewusste Ernährung. Eine ganze Pizza ist mit rund 819 kcal aber recht gehaltvoll."
     },
     {
       "question": "Ist eine Pizza Vegetariana gesund?",

@@ -3,6 +3,7 @@
   "name": "Schoko-Donut",
   "emoji": "🍩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174991 (Doughnuts, cake-type, plain, chocolate-coated or frosted), Werte je 100 g",
   "seo": {
     "title": "Schoko-Donut Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Schoko-Donut? Ein Donut (60g) hat ca. 271 kcal. Alle Nährwerte pro 100g & pro Stück plus Diät-Tipps im Überblick.",
@@ -17,10 +18,10 @@
   },
   "overview": {
     "calories_per_100g": 452,
-    "protein_per_100g": 4.8,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 23,
-    "fiber_per_100g": 1.8,
+    "protein_per_100g": 4.9,
+    "carbs_per_100g": 51.3,
+    "fat_per_100g": 25.3,
+    "fiber_per_100g": 1.9,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Schoko-Donut (mittel)"
   },
@@ -30,87 +31,111 @@
       "portion_g": 45,
       "calories": 203,
       "protein": 2.2,
-      "carbs": 23.4,
-      "fat": 10.4
+      "carbs": 23.1,
+      "fat": 11.4
     },
     {
       "name": "Schoko-Donut mittel (60g)",
       "portion_g": 60,
       "calories": 271,
       "protein": 2.9,
-      "carbs": 31.2,
-      "fat": 13.8,
+      "carbs": 30.8,
+      "fat": 15.2,
       "tip": "Standardgröße"
     },
     {
       "name": "Schoko-Donut groß (75g)",
       "portion_g": 75,
       "calories": 339,
-      "protein": 3.6,
-      "carbs": 39,
-      "fat": 17.3
+      "protein": 3.7,
+      "carbs": 38.5,
+      "fat": 19
     },
     {
       "name": "Mini-Schoko-Donut (25g)",
       "portion_g": 25,
       "calories": 113,
       "protein": 1.2,
-      "carbs": 13,
-      "fat": 5.8,
+      "carbs": 12.8,
+      "fat": 6.3,
       "tip": "Für kleine Naschmomente"
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
       "calories": 452,
-      "protein": 4.8,
-      "carbs": 52,
-      "fat": 23
+      "protein": 4.9,
+      "carbs": 51.3,
+      "fat": 25.3
     },
     {
       "name": "2 Schoko-Donuts (120g)",
       "portion_g": 120,
       "calories": 542,
-      "protein": 5.8,
-      "carbs": 62.4,
-      "fat": 27.6
+      "protein": 5.9,
+      "carbs": 61.6,
+      "fat": 30.4
     },
     {
       "name": "Schoko-Donut mit Streuseln (70g)",
       "portion_g": 70,
-      "calories": 322,
+      "calories": 316,
       "protein": 3.4,
-      "carbs": 37.5,
-      "fat": 16.6,
+      "carbs": 35.9,
+      "fat": 17.7,
       "tip": "Etwas mehr durch Zuckerstreusel"
     }
   ],
   "comparison": [
     {
       "name": "Donut natur (60g)",
-      "calories": 253,
-      "emoji": "🍩"
+      "calories": 260,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "fdcId": 174990,
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Berliner (80g)",
-      "calories": 293,
-      "emoji": "🥯"
+      "calories": 272,
+      "emoji": "🥯",
+      "basis": [
+        {
+          "slug": "berliner",
+          "g": 80
+        }
+      ]
     },
     {
       "name": "Croissant (60g)",
       "calories": 244,
-      "emoji": "🥐"
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Muffin (110g)",
-      "calories": 408,
-      "emoji": "🧁"
+      "calories": 413,
+      "emoji": "🧁",
+      "basis": [
+        {
+          "slug": "muffin",
+          "g": 110
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst genießen",
-      "text": "Ein mittlerer Schoko-Donut bringt rund 271 kcal mit – etwa so viel wie ein kleines Stück Kuchen. Als gelegentlicher Genuss gut vertretbar.",
+      "text": "Ein mittlerer Schoko-Donut bringt rund 271 kcal mit, etwa so viel wie ein kleines Stück Kuchen. Als gelegentlicher Genuss gut vertretbar.",
       "icon": "🍩"
     },
     {
@@ -130,7 +155,7 @@
     },
     {
       "title": "Timing nutzen",
-      "text": "Wer naschen möchte, plant den Donut am besten in eine aktive Phase des Tages ein – etwa nach dem Sport, wenn der Körper Kohlenhydrate gut verwertet.",
+      "text": "Wer naschen möchte, plant den Donut am besten in eine aktive Phase des Tages ein, etwa nach dem Sport, wenn der Körper Kohlenhydrate gut verwertet.",
       "icon": "⏱️"
     }
   ],
@@ -141,7 +166,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Schoko-Donut pro 100g?",
-      "answer": "Pro 100g liefert ein Schoko-Donut etwa 452 kcal, 52g Kohlenhydrate und 23g Fett."
+      "answer": "Pro 100g liefert ein Schoko-Donut etwa 452 kcal, 51g Kohlenhydrate und 25g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Schoko-Donut?",
@@ -149,7 +174,7 @@
     },
     {
       "question": "Wie viel Protein hat ein Schoko-Donut?",
-      "answer": "Der Proteingehalt ist mit etwa 2,9g pro Donut (60g) gering. Donuts sind eher ein Kohlenhydrat- und Fettlieferant."
+      "answer": "Der Proteingehalt ist mit etwa 3g pro Donut (60g) gering. Donuts sind eher ein Kohlenhydrat- und Fettlieferant."
     },
     {
       "question": "Sind Schoko-Donuts zum Abnehmen geeignet?",

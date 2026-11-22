@@ -3,48 +3,208 @@
   "name": "Pad Thai",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2708804 (Pad Thai, NFS), Werte je 100 g",
   "seo": {
     "title": "Pad Thai Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Pad Thai? Nährwerte für Pad Thai mit Garnelen, Hähnchen & Tofu. Kostenloser Kalorien-Rechner."
+    "description": "Wie viele Kalorien hat Pad Thai? Nährwerte für Pad Thai mit Garnelen oder Hähnchen & vegetarisch. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 120,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 16,
-    "fat_per_100g": 4,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 154,
+    "protein_per_100g": 8.1,
+    "carbs_per_100g": 14.4,
+    "fat_per_100g": 7.5,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 400,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    {"name": "Pad Thai mit Garnelen", "portion_g": 400, "calories": 480, "protein": 28, "carbs": 64, "fat": 14, "tip": "Klassiker"},
-    {"name": "Pad Thai mit Hähnchen", "portion_g": 400, "calories": 510, "protein": 30, "carbs": 64, "fat": 16},
-    {"name": "Pad Thai mit Tofu", "portion_g": 400, "calories": 460, "protein": 20, "carbs": 66, "fat": 14, "tip": "Vegetarische Variante"},
-    {"name": "Pad Thai vegetarisch (nur Gemüse)", "portion_g": 400, "calories": 420, "protein": 12, "carbs": 68, "fat": 12, "tip": "Kalorienärmste Variante"},
-    {"name": "Pad Thai mit Rindfleisch", "portion_g": 400, "calories": 540, "protein": 32, "carbs": 62, "fat": 18},
-    {"name": "Pad Thai Restaurant-Portion", "portion_g": 500, "calories": 640, "protein": 34, "carbs": 82, "fat": 20},
-    {"name": "Pad Thai mit extra Erdnüssen", "portion_g": 420, "calories": 560, "protein": 26, "carbs": 66, "fat": 22}
+    {
+      "name": "Pad Thai mit Garnelen",
+      "portion_g": 400,
+      "calories": 588,
+      "protein": 27,
+      "carbs": 60,
+      "fat": 27,
+      "tip": "Klassiker",
+      "basis": [
+        {
+          "fdcId": 2708807,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Pad Thai mit Hähnchen",
+      "portion_g": 400,
+      "calories": 616,
+      "protein": 33,
+      "carbs": 57,
+      "fat": 30,
+      "basis": [
+        {
+          "fdcId": 2708806,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Pad Thai vegetarisch (ohne Fleisch)",
+      "portion_g": 400,
+      "calories": 660,
+      "protein": 23,
+      "carbs": 65,
+      "fat": 37,
+      "tip": "Vegetarische Variante",
+      "basis": [
+        {
+          "fdcId": 2708805,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Pad Thai mit Fleisch",
+      "portion_g": 400,
+      "calories": 640,
+      "protein": 33,
+      "carbs": 59,
+      "fat": 32,
+      "basis": [
+        {
+          "fdcId": 2708808,
+          "g": 400
+        }
+      ]
+    },
+    {
+      "name": "Pad Thai Restaurant-Portion",
+      "portion_g": 500,
+      "calories": 770,
+      "protein": 41,
+      "carbs": 72,
+      "fat": 38
+    },
+    {
+      "name": "Pad Thai mit extra Erdnüssen",
+      "portion_g": 420,
+      "calories": 733,
+      "protein": 37,
+      "carbs": 62,
+      "fat": 40,
+      "basis": [
+        {
+          "g": 400
+        },
+        {
+          "fdcId": 173806,
+          "g": 20
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Gebratene Nudeln", "calories": 520, "emoji": "🍜"},
-    {"name": "Gebratener Reis", "calories": 460, "emoji": "🍚"},
-    {"name": "Ramen", "calories": 500, "emoji": "🍜"},
-    {"name": "Spaghetti Bolognese", "calories": 528, "emoji": "🍝"}
+    {
+      "name": "Gebratene Nudeln (350g)",
+      "calories": 424,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "gebratene-nudeln",
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Gebratener Reis (350g)",
+      "calories": 609,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "fried-rice",
+          "g": 350
+        }
+      ]
+    },
+    {
+      "name": "Ramen (550g)",
+      "calories": 699,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "ramen",
+          "g": 550
+        }
+      ]
+    },
+    {
+      "name": "Spaghetti Bolognese (400g)",
+      "calories": 500,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-bolognese",
+          "g": 400
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Reisnudeln sind leichter", "text": "Reisnudeln haben ca. 110 kcal/100g (gekocht) – etwas weniger als Weizennudeln (158 kcal).", "icon": "🍜"},
-    {"title": "Erdnüsse sparsam dosieren", "text": "Erdnüsse haben 580 kcal/100g. Ein Esslöffel (15g) reicht für Crunch bei nur 87 kcal.", "icon": "🥜"},
-    {"title": "Garnelen sind proteinreich", "text": "Garnelen haben nur 85 kcal/100g bei 18g Protein – perfekte Proteinquelle für Pad Thai.", "icon": "🦐"},
-    {"title": "Weniger Öl beim Braten", "text": "Statt 3 EL Öl reicht 1 EL in einer guten Wok-Pfanne. Das spart ca. 180 kcal.", "icon": "🫒"},
-    {"title": "Tamarindenpaste gibt Geschmack", "text": "Die süß-saure Paste hat wenig Kalorien und gibt Pad Thai den authentischen Geschmack.", "icon": "✨"}
+    {
+      "title": "Reisnudeln sind leichter",
+      "text": "Reisnudeln haben gekocht weniger Kalorien als Weizennudeln.",
+      "icon": "🍜"
+    },
+    {
+      "title": "Erdnüsse sparsam dosieren",
+      "text": "Erdnüsse haben rund 587 kcal/100g. Ein Esslöffel (15g) reicht für Crunch bei nur ca. 88 kcal.",
+      "icon": "🥜"
+    },
+    {
+      "title": "Garnelen sind proteinreich",
+      "text": "Garnelen sind kalorienarm und reich an Protein, eine perfekte Proteinquelle für Pad Thai.",
+      "icon": "🦐"
+    },
+    {
+      "title": "Weniger Öl beim Braten",
+      "text": "Statt 3 EL Öl reicht 1 EL in einer guten Wok-Pfanne. Das spart viele Kalorien.",
+      "icon": "🫒"
+    },
+    {
+      "title": "Tamarindenpaste gibt Geschmack",
+      "text": "Die süß-saure Paste hat wenig Kalorien und gibt Pad Thai den authentischen Geschmack.",
+      "icon": "✨"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Pad Thai?", "answer": "Ein Teller Pad Thai (400g) hat ca. 460-540 kcal, je nach Protein-Zutat. Mit Garnelen sind es ca. 480 kcal."},
-    {"question": "Ist Pad Thai gesund?", "answer": "Pad Thai enthält Protein, Gemüse und Kohlenhydrate – eine ausgewogene Mahlzeit. Achte auf die Öl- und Erdnussmenge für weniger Kalorien."},
-    {"question": "Wie viel Protein hat Pad Thai?", "answer": "Je nach Variante 12-32g Protein pro Teller. Mit Garnelen oder Hähnchen am meisten (28-30g)."},
-    {"question": "Was hat weniger Kalorien: Pad Thai oder gebratener Reis?", "answer": "Pad Thai (480 kcal) und gebratener Reis (460 kcal) sind ähnlich kalorienreich. Pad Thai hat meist etwas mehr Protein."},
-    {"question": "Kann man Pad Thai beim Abnehmen essen?", "answer": "Ja, besonders die vegetarische Variante (420 kcal) oder mit Garnelen (480 kcal) passt gut in einen Diätplan."},
-    {"question": "Wie viele Kalorien hat Pad Thai vom Lieferservice?", "answer": "Restaurant-Portionen sind größer (500g+) und öliger – rechne mit 600-700 kcal pro Portion."}
+    {
+      "question": "Wie viele Kalorien hat Pad Thai?",
+      "answer": "Ein Teller Pad Thai (400g) hat ca. 616 kcal. Je nach Protein-Zutat sind es zwischen ca. 588 kcal (mit Garnelen) und 660 kcal (vegetarisch ohne Fleisch)."
+    },
+    {
+      "question": "Ist Pad Thai gesund?",
+      "answer": "Pad Thai enthält Protein, Gemüse und Kohlenhydrate und ist damit eine ausgewogene Mahlzeit. Achte auf die Öl- und Erdnussmenge für weniger Kalorien."
+    },
+    {
+      "question": "Wie viel Protein hat Pad Thai?",
+      "answer": "Je nach Variante 23 bis 33g Protein pro Teller (400g). Mit Hähnchen oder Fleisch am meisten (ca. 33g)."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Pad Thai oder gebratener Reis?",
+      "answer": "Pad Thai (ca. 616 kcal pro Teller mit 400g) und gebratener Reis (ca. 609 kcal pro Teller mit 350g) sind ähnlich kalorienreich. Pad Thai hat deutlich mehr Protein."
+    },
+    {
+      "question": "Kann man Pad Thai beim Abnehmen essen?",
+      "answer": "Ja, besonders die Variante mit Garnelen (ca. 588 kcal pro Teller) passt gut in einen Diätplan."
+    },
+    {
+      "question": "Wie viele Kalorien hat Pad Thai vom Lieferservice?",
+      "answer": "Restaurant-Portionen sind größer (500g und mehr) und oft öliger: Rechne mit rund 770 kcal pro Portion von 500g."
+    }
   ],
-  "related_foods": ["fried-rice", "ramen", "gebratene-nudeln", "curry-haehnchen"]
+  "related_foods": [
+    "fried-rice",
+    "ramen",
+    "gebratene-nudeln",
+    "curry-haehnchen"
+  ]
 }

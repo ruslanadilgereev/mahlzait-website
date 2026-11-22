@@ -3,9 +3,10 @@
   "name": "Ciabatta-Brötchen",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174913 (Bread, Italian), Werte je 100 g",
   "seo": {
     "title": "Ciabatta-Brötchen Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Ciabatta-Brötchen? Ein Stück (85g) hat ca. 230 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Ciabatta-Brötchen? Ein Stück (85g) hat ca. 220 kcal. Nährwerte pro 100g & Stück, Varianten und Tipps im Überblick.",
     "keywords": [
       "ciabatta brötchen kalorien",
       "ciabatta brötchen kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 271,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 3.5,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 259,
+    "protein_per_100g": 9.5,
+    "carbs_per_100g": 48.1,
+    "fat_per_100g": 2.7,
+    "fiber_per_100g": 2.1,
     "typical_portion_g": 85,
     "typical_portion_name": "1 Ciabatta-Brötchen (85g)"
   },
@@ -28,96 +29,135 @@
     {
       "name": "Halbes Ciabatta-Brötchen (45g)",
       "portion_g": 45,
-      "calories": 122,
+      "calories": 117,
       "protein": 4,
-      "carbs": 23,
-      "fat": 2
+      "carbs": 22,
+      "fat": 1
     },
     {
       "name": "1 Ciabatta-Brötchen (85g)",
       "portion_g": 85,
-      "calories": 230,
+      "calories": 220,
       "protein": 8,
-      "carbs": 44,
-      "fat": 3,
+      "carbs": 41,
+      "fat": 2,
       "tip": "Standardgröße im Handel"
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 271,
-      "protein": 9,
-      "carbs": 52,
-      "fat": 4
+      "calories": 259,
+      "protein": 10,
+      "carbs": 48,
+      "fat": 3
     },
     {
       "name": "Großes Ciabatta-Brötchen (120g)",
       "portion_g": 120,
-      "calories": 325,
+      "calories": 311,
       "protein": 11,
-      "carbs": 62,
-      "fat": 4
+      "carbs": 58,
+      "fat": 3
     },
     {
       "name": "Ciabatta-Brötchen mit Butter (85g + 10g)",
       "portion_g": 95,
-      "calories": 305,
+      "calories": 292,
       "protein": 8,
-      "carbs": 44,
-      "fat": 11,
-      "tip": "Butter erhöht vor allem das Fett"
+      "carbs": 41,
+      "fat": 10,
+      "tip": "Butter erhöht vor allem das Fett",
+      "basis": [
+        {
+          "g": 85
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Getoastetes Ciabatta-Brötchen (80g)",
       "portion_g": 80,
-      "calories": 234,
+      "calories": 228,
       "protein": 8,
-      "carbs": 44,
-      "fat": 3,
-      "tip": "Toasten verändert die Kalorien kaum"
+      "carbs": 42,
+      "fat": 2,
+      "tip": "Toasten verändert die Kalorien kaum",
+      "basis": [
+        {
+          "fdcId": 2707615,
+          "g": 80
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Brötchen (weiß)",
-      "calories": 230,
-      "emoji": "🥖"
+      "name": "Brötchen (weiß, 1 Stück, 60g)",
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen",
+          "g": 60
+        }
+      ]
     },
     {
-      "name": "Baguette (Stück)",
-      "calories": 274,
-      "emoji": "🥖"
+      "name": "Baguette (Stück, 100g)",
+      "calories": 272,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Vollkornbrot (Scheibe)",
-      "calories": 99,
-      "emoji": "🍞"
+      "name": "Vollkornbrot (1 Scheibe, 50g)",
+      "calories": 100,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Brezel",
-      "calories": 320,
-      "emoji": "🥨"
+      "name": "Brezel (1 Stück, 95g)",
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel",
+          "g": 95
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Olivenöl macht den Unterschied",
-      "text": "Ciabatta wird mit Olivenöl gebacken. Dadurch hat es etwas mehr Kalorien und Fett als ein klassisches Weizenbrötchen, bleibt aber innen saftig.",
+      "text": "Ciabatta wird traditionell mit Olivenöl gebacken und bleibt dadurch innen saftig. Kalorien und Fett liegen dabei sogar etwas unter einem klassischen Weizenbrötchen.",
       "icon": "🫒"
     },
     {
       "title": "Belag entscheidet die Kalorienbilanz",
-      "text": "Das Brötchen selbst hat ca. 230 kcal. Butter, Käse oder Salami können den Wert schnell verdoppeln. Magerer Belag wie Putenbrust oder Tomate hält die Bilanz schlank.",
+      "text": "Das Brötchen selbst hat ca. 220 kcal. Butter, Käse oder Salami treiben den Wert schnell nach oben. Magerer Belag wie Putenbrust oder Tomate hält die Bilanz schlank.",
       "icon": "🧈"
     },
     {
       "title": "Eher arm an Ballaststoffen",
-      "text": "Als helles Weizengebäck liefert Ciabatta nur etwa 2,5g Ballaststoffe pro 100g und sättigt weniger lang als Vollkornbrot. Eine Vollkorn-Variante hält länger satt.",
+      "text": "Als helles Weizengebäck liefert Ciabatta nur etwa 2,1g Ballaststoffe pro 100g und sättigt weniger lang als Vollkornbrot. Eine Vollkorn-Variante hält länger satt.",
       "icon": "🌾"
     },
     {
       "title": "Halbe Portion spart spürbar",
-      "text": "Wer nur ein halbes Ciabatta-Brötchen (45g) isst, kommt auf rund 122 kcal. Das lässt mehr Spielraum für einen reichhaltigen Belag.",
+      "text": "Wer nur ein halbes Ciabatta-Brötchen (45g) isst, kommt auf rund 117 kcal. Das lässt mehr Spielraum für einen reichhaltigen Belag.",
       "icon": "✂️"
     },
     {
@@ -129,27 +169,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Ciabatta-Brötchen?",
-      "answer": "Ein typisches Ciabatta-Brötchen (85g) hat etwa 230 kcal. Pro 100g sind es rund 271 kcal."
+      "answer": "Ein typisches Ciabatta-Brötchen (85g) hat etwa 220 kcal. Pro 100g sind es rund 259 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in einem Ciabatta-Brötchen?",
-      "answer": "Ciabatta liefert etwa 52g Kohlenhydrate pro 100g. Ein Brötchen mit 85g enthält damit rund 44g Kohlenhydrate."
+      "answer": "Ciabatta liefert etwa 48g Kohlenhydrate pro 100g. Ein Brötchen mit 85g enthält damit rund 41g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Ciabatta?",
-      "answer": "Pro 100g enthält Ciabatta etwa 9g Eiweiß. Ein Brötchen (85g) kommt auf rund 8g Protein."
+      "answer": "Pro 100g enthält Ciabatta etwa 9,5g Eiweiß. Ein Brötchen (85g) kommt auf rund 8g Protein."
     },
     {
       "question": "Ist ein Ciabatta-Brötchen zum Abnehmen geeignet?",
-      "answer": "Als helles Weizengebäck ist es mit 271 kcal pro 100g recht energiereich und sättigt nicht lange. In Maßen und mit magerem Belag passt es in eine Diät, Vollkornbrot ist aber die sättigendere Wahl."
+      "answer": "Als helles Weizengebäck ist es mit 259 kcal pro 100g recht energiereich und sättigt nicht lange. In Maßen und mit magerem Belag passt es in eine Diät, Vollkornbrot ist aber die sättigendere Wahl."
     },
     {
       "question": "Ist Ciabatta gesünder als ein normales Brötchen?",
-      "answer": "Die Werte sind sehr ähnlich. Ciabatta hat durch das Olivenöl etwas mehr Fett, ein normales Weizenbrötchen ähnliche Kalorien. Beide enthalten wenig Ballaststoffe."
+      "answer": "Die Werte sind ähnlich. Ciabatta hat sogar etwas weniger Fett und Kalorien als ein normales Weizenbrötchen. Beide enthalten wenig Ballaststoffe."
     },
     {
       "question": "Wie viel Fett hat ein Ciabatta-Brötchen?",
-      "answer": "Ciabatta enthält etwa 3,5g Fett pro 100g, vor allem aus Olivenöl. Ein Brötchen (85g) hat damit rund 3g Fett."
+      "answer": "Ciabatta enthält etwa 2,7g Fett pro 100g, vor allem aus Olivenöl. Ein Brötchen (85g) hat damit rund 2,3g Fett."
     }
   ],
   "related_foods": [

@@ -3,9 +3,10 @@
   "name": "Red Velvet Cake",
   "emoji": "🍰",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2707884 (Cake or cupcake, red velvet), Werte je 100 g",
   "seo": {
     "title": "Red Velvet Cake Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Red Velvet Cake? Ein Stück (110g) hat ca. 418 kcal. Nährwerte pro 100g & Portion, Vergleich mit anderen Kuchen + Tipps.",
+    "description": "Wie viele Kalorien hat Red Velvet Cake? Ein Stück (110g) hat ca. 391 kcal. Nährwerte pro 100g & Portion, Vergleich mit anderen Kuchen + Tipps.",
     "keywords": [
       "red velvet kcal",
       "red velvet kalorien",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 380,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 18,
+    "calories_per_100g": 355,
+    "protein_per_100g": 2.8,
+    "carbs_per_100g": 54.4,
+    "fat_per_100g": 14.6,
     "fiber_per_100g": 1.2,
     "typical_portion_g": 110,
     "typical_portion_name": "1 Stück (mittel)"
@@ -28,85 +29,101 @@
     {
       "name": "Cupcake (60g)",
       "portion_g": 60,
-      "calories": 228,
-      "protein": 3,
-      "carbs": 30,
-      "fat": 11,
+      "calories": 213,
+      "protein": 1.7,
+      "carbs": 32.6,
+      "fat": 8.8,
       "tip": "Mit Frosting-Haube"
     },
     {
       "name": "Kleines Stück (90g)",
       "portion_g": 90,
-      "calories": 342,
-      "protein": 4,
-      "carbs": 45,
-      "fat": 16
+      "calories": 320,
+      "protein": 2.5,
+      "carbs": 49,
+      "fat": 13.1
     },
     {
       "name": "1 Stück mittel (110g)",
       "portion_g": 110,
-      "calories": 418,
-      "protein": 5,
-      "carbs": 55,
-      "fat": 20,
+      "calories": 391,
+      "protein": 3.1,
+      "carbs": 59.8,
+      "fat": 16.1,
       "tip": "Standard"
     },
     {
       "name": "Großes Stück (150g)",
       "portion_g": 150,
-      "calories": 570,
-      "protein": 7,
-      "carbs": 75,
-      "fat": 27
+      "calories": 533,
+      "protein": 4.2,
+      "carbs": 81.6,
+      "fat": 21.9
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 380,
-      "protein": 4.5,
-      "carbs": 50,
-      "fat": 18
-    },
-    {
-      "name": "Cake Pop (35g)",
-      "portion_g": 35,
-      "calories": 133,
-      "protein": 2,
-      "carbs": 18,
-      "fat": 6
+      "calories": 355,
+      "protein": 2.8,
+      "carbs": 54.4,
+      "fat": 14.6
     }
   ],
   "comparison": [
     {
-      "name": "Käsekuchen (Stück)",
-      "calories": 360,
-      "emoji": "🍰"
+      "name": "Käsekuchen (Stück, 150g)",
+      "calories": 375,
+      "emoji": "🍰",
+      "basis": [
+        {
+          "slug": "kaesekuchen",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Schwarzwälder Kirschtorte",
-      "calories": 290,
-      "emoji": "🍒"
+      "name": "Schwarzwälder Kirschtorte (150g)",
+      "calories": 342,
+      "emoji": "🍒",
+      "basis": [
+        {
+          "slug": "schwarzwaelder-kirschtorte",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Tiramisu (Portion)",
-      "calories": 320,
-      "emoji": "🍮"
+      "name": "Tiramisu (Portion, 150g)",
+      "calories": 530,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "tiramisu",
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Muffin",
-      "calories": 420,
-      "emoji": "🧁"
+      "name": "Muffin (110g)",
+      "calories": 413,
+      "emoji": "🧁",
+      "basis": [
+        {
+          "slug": "muffin",
+          "g": 110
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Hauptsache Frosting",
-      "text": "Ein Großteil der Kalorien steckt im Frischkäse-Frosting aus Butter und Puderzucker. Wer eine dünnere Schicht nimmt oder das Frosting halbiert, spart leicht 80 bis 120 kcal pro Stück.",
+      "text": "Ein Großteil der Kalorien steckt im Frischkäse-Frosting aus Butter und Puderzucker. Wer eine dünnere Schicht nimmt oder das Frosting halbiert, spart spürbar Kalorien pro Stück.",
       "icon": "🧈"
     },
     {
       "title": "Kleinere Portion wählen",
-      "text": "Ein mittleres Stück (110g) hat schon 418 kcal. Ein kleines Stück (90g) bringt es auf 342 kcal und stillt den Heißhunger oft genauso gut.",
+      "text": "Ein mittleres Stück (110g) hat schon 391 kcal. Ein kleines Stück (90g) bringt es auf 320 kcal und stillt den Heißhunger oft genauso gut.",
       "icon": "🍰"
     },
     {
@@ -116,7 +133,7 @@
     },
     {
       "title": "Cupcake-Variante",
-      "text": "Ein einzelner Red Velvet Cupcake (60g) liegt bei rund 228 kcal und ist eine natürlich portionierte Alternative zum großen Tortenstück.",
+      "text": "Ein einzelner Red Velvet Cupcake (60g) liegt bei rund 213 kcal und ist eine natürlich portionierte Alternative zum großen Tortenstück.",
       "icon": "🧁"
     },
     {
@@ -128,23 +145,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Red Velvet Cake?",
-      "answer": "Ein mittleres Stück Red Velvet Cake (110g) mit Frischkäse-Frosting hat ca. 418 kcal. Pro 100g sind es rund 380 kcal."
+      "answer": "Ein mittleres Stück Red Velvet Cake (110g) mit Frischkäse-Frosting hat ca. 391 kcal. Pro 100g sind es rund 355 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Red Velvet Cupcake?",
-      "answer": "Ein einzelner Red Velvet Cupcake (ca. 60g) hat etwa 228 kcal, abhängig von der Menge des Frostings."
+      "answer": "Ein einzelner Red Velvet Cupcake (ca. 60g) hat etwa 213 kcal, abhängig von der Menge des Frostings."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Red Velvet Cake?",
-      "answer": "Red Velvet Cake enthält rund 50g Kohlenhydrate pro 100g, überwiegend aus Zucker und Mehl. Ein Stück (110g) liefert etwa 55g."
+      "answer": "Red Velvet Cake enthält rund 54g Kohlenhydrate pro 100g, überwiegend aus Zucker und Mehl. Ein Stück (110g) liefert etwa 60g."
     },
     {
       "question": "Wie viel Protein hat Red Velvet Cake?",
-      "answer": "Der Proteingehalt ist mit etwa 4,5g pro 100g eher gering. Ein Stück (110g) liefert rund 5g Eiweiß."
+      "answer": "Der Proteingehalt ist mit etwa 2,8g pro 100g eher gering. Ein Stück (110g) liefert rund 3g Eiweiß."
     },
     {
       "question": "Ist Red Velvet Cake zum Abnehmen geeignet?",
-      "answer": "Red Velvet Cake ist mit 380 kcal pro 100g sehr energiedicht und enthält viel Zucker und Fett. Zum Abnehmen eignet er sich nur als gelegentlicher Genuss in kleiner Portion."
+      "answer": "Red Velvet Cake ist mit 355 kcal pro 100g sehr energiedicht und enthält viel Zucker und Fett. Zum Abnehmen eignet er sich nur als gelegentlicher Genuss in kleiner Portion."
     },
     {
       "question": "Ist Red Velvet Cake gesund?",

@@ -3,9 +3,10 @@
   "name": "Subway Tuna",
   "emoji": "🥪",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170316 (SUBWAY, tuna sub on white bread with lettuce and tomato), Werte je 100 g",
   "seo": {
     "title": "Subway Tuna Kalorien: Nährwerte & Größen | Mahlzait",
-    "description": "Wie viele Kalorien hat Subway Tuna? Ein 15cm Sub hat ca. ~460 kcal. Nährwerte pro 100g, 15cm & 30cm Footlong plus Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Subway Tuna? Ein 15cm Sub hat ca. 497 kcal. Nährwerte pro 100g, 15cm & 30cm Footlong plus Tipps zum Abnehmen.",
     "keywords": [
       "subway tuna kalorien",
       "subway thunfisch kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 208,
-    "protein_per_100g": 8.7,
-    "carbs_per_100g": 17,
-    "fat_per_100g": 5.6,
-    "fiber_per_100g": 1.3,
+    "calories_per_100g": 221,
+    "protein_per_100g": 12.3,
+    "carbs_per_100g": 16,
+    "fat_per_100g": 12,
+    "fiber_per_100g": 0.7,
     "typical_portion_g": 225,
     "typical_portion_name": "1 Sub 15cm (Italian Bread)"
   },
@@ -28,87 +29,124 @@
     {
       "name": "Subway Tuna 15cm (225g)",
       "portion_g": 225,
-      "calories": 468,
-      "protein": 20,
-      "carbs": 38,
-      "fat": 13,
+      "calories": 497,
+      "protein": 28,
+      "carbs": 36,
+      "fat": 27,
       "tip": "Standard-Portion"
     },
     {
       "name": "Subway Tuna 30cm Footlong (450g)",
       "portion_g": 450,
-      "calories": 936,
-      "protein": 39,
-      "carbs": 77,
-      "fat": 25
+      "calories": 995,
+      "protein": 55,
+      "carbs": 72,
+      "fat": 54
     },
     {
-      "name": "Subway Tuna 15cm Vollkorn (230g)",
-      "portion_g": 230,
-      "calories": 478,
-      "protein": 21,
-      "carbs": 38,
-      "fat": 13,
-      "tip": "Mehr Ballaststoffe als Weißbrot"
+      "name": "Subway Tuna 15cm mit Käse (240g)",
+      "portion_g": 240,
+      "calories": 559,
+      "protein": 31,
+      "carbs": 36,
+      "fat": 32,
+      "tip": "Extra Käse bringt mehr Fett",
+      "basis": [
+        {
+          "g": 225
+        },
+        {
+          "fdcId": 170899,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Subway Tuna Salat-Bowl (ohne Brot)",
       "portion_g": 200,
-      "calories": 416,
-      "protein": 16,
+      "calories": 209,
+      "protein": 11,
       "carbs": 6,
-      "fat": 14,
-      "tip": "Brot weglassen spart KH"
+      "fat": 16,
+      "tip": "Brot weglassen spart KH",
+      "basis": [
+        {
+          "fdcId": 2706828,
+          "g": 100
+        },
+        {
+          "fdcId": 169248,
+          "g": 70
+        },
+        {
+          "fdcId": 170457,
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 208,
-      "protein": 9,
-      "carbs": 17,
-      "fat": 6
-    },
-    {
-      "name": "Subway Tuna 15cm ohne Käse (215g)",
-      "portion_g": 215,
-      "calories": 447,
-      "protein": 18,
-      "carbs": 37,
-      "fat": 11,
-      "tip": "Käse weglassen spart Fett"
+      "calories": 221,
+      "protein": 12,
+      "carbs": 16,
+      "fat": 12
     }
   ],
   "comparison": [
     {
-      "name": "Subway Chicken Teriyaki 15cm",
-      "calories": 320,
-      "emoji": "🐔"
+      "name": "Subway Chicken Teriyaki 15cm (233g)",
+      "calories": 361,
+      "emoji": "🐔",
+      "basis": [
+        {
+          "slug": "subway-chicken-teriyaki"
+        }
+      ]
     },
     {
-      "name": "Subway Veggie Delite 15cm",
-      "calories": 230,
-      "emoji": "🥗"
+      "name": "Subway Veggie Delite 15cm (215g)",
+      "calories": 258,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "fdcId": 2709132,
+          "g": 215
+        }
+      ]
     },
     {
       "name": "Big Mac",
       "calories": 563,
-      "emoji": "🍔"
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Vollkornbrot wählen",
-      "text": "Auf Vollkornbrot statt Italian Bread bekommst du mehr Ballaststoffe bei fast gleicher Kalorienzahl – das sättigt länger.",
+      "text": "Auf Vollkornbrot statt Italian Bread bekommst du mehr Ballaststoffe bei fast gleicher Kalorienzahl, das sättigt länger.",
       "icon": "🌾"
     },
     {
       "title": "Käse und Mayo sparen",
-      "text": "Der Thunfisch ist bereits mit Mayonnaise angemacht. Verzichtest du auf extra Käse und Saucen, sparst du leicht 50–80 kcal pro Sub.",
+      "text": "Der Thunfisch ist bereits mit Mayonnaise angemacht. Verzichtest du auf extra Käse, sparst du rund 62 kcal pro Sub, ohne zusätzliche Saucen noch mehr.",
       "icon": "🧀"
     },
     {
@@ -118,39 +156,39 @@
     },
     {
       "title": "15cm statt 30cm",
-      "text": "Ein 15cm-Sub mit ~460 kcal reicht meist als Mahlzeit. Der 30cm Footlong verdoppelt die Kalorien auf über 700 kcal.",
+      "text": "Ein 15cm-Sub mit rund 497 kcal reicht meist als Mahlzeit. Der 30cm Footlong verdoppelt die Kalorien auf rund 995 kcal.",
       "icon": "📏"
     },
     {
       "title": "Als Salat-Bowl bestellen",
-      "text": "Den Tuna-Belag gibt es auch als Bowl ohne Brot – das senkt die Kohlenhydrate deutlich und ist ideal in einer Low-Carb-Phase.",
+      "text": "Den Tuna-Belag gibt es auch als Bowl ohne Brot, das senkt die Kohlenhydrate deutlich und ist ideal in einer Low-Carb-Phase.",
       "icon": "🥣"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Subway Tuna?",
-      "answer": "Ein 15cm Subway Tuna auf Italian Bread hat ca. ~460 kcal. Der 30cm Footlong kommt auf rund ~900 kcal."
+      "answer": "Ein 15cm Subway Tuna (225g) hat ca. 497 kcal. Der 30cm Footlong kommt auf rund 995 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Subway Tuna pro 100g?",
-      "answer": "Subway Tuna hat etwa 158 kcal pro 100g – inklusive Brot, Thunfisch-Mayo-Belag und Gemüse."
+      "answer": "Subway Tuna hat etwa 221 kcal pro 100g, inklusive Brot, Thunfisch-Mayo-Belag und Gemüse."
     },
     {
       "question": "Wie viel Protein hat ein Subway Tuna?",
-      "answer": "Ein 15cm Tuna Sub liefert rund 20g Protein, der 30cm Footlong etwa 39g – durch den Thunfisch ein guter Eiweißlieferant."
+      "answer": "Ein 15cm Tuna Sub liefert rund 28g Protein, der 30cm Footlong etwa 55g, durch den Thunfisch ein guter Eiweißlieferant."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Subway Tuna?",
-      "answer": "Ein 15cm Tuna Sub enthält ca. 38g Kohlenhydrate, die fast vollständig aus dem Brot stammen. Als Salat-Bowl ohne Brot sind es nur etwa 6g."
+      "answer": "Ein 15cm Tuna Sub enthält ca. 36g Kohlenhydrate, die fast vollständig aus dem Brot stammen. Als Salat-Bowl ohne Brot sind es nur etwa 6g."
     },
     {
       "question": "Ist Subway Tuna zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Mit ca. ~460 kcal liegt der 15cm Sub im Rahmen einer Mahlzeit. Achte auf Vollkornbrot, viel Gemüse und verzichte auf extra Käse und Saucen."
+      "answer": "In Maßen ja: Mit ca. 497 kcal liegt der 15cm Sub im Rahmen einer Mahlzeit. Achte auf Vollkornbrot, viel Gemüse und verzichte auf extra Käse und Saucen."
     },
     {
       "question": "Ist Subway Tuna gesund?",
-      "answer": "Der Thunfisch liefert hochwertiges Eiweiß und Omega-3-Fettsäuren. Durch die Mayonnaise ist der Tuna-Belag aber fettreicher als z. B. Hähnchen – in Maßen und mit viel Gemüse ist er eine ausgewogene Option."
+      "answer": "Der Thunfisch liefert hochwertiges Eiweiß und Omega-3-Fettsäuren. Durch die Mayonnaise ist der Tuna-Belag aber fettreicher als z. B. Hähnchen, in Maßen und mit viel Gemüse ist er eine ausgewogene Option."
     }
   ],
   "related_foods": [

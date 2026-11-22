@@ -1,5 +1,6 @@
 {
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2709307 (Guacamole, NFS), Werte je 100 g",
   "slug": "guacamole",
   "name": "Guacamole",
   "emoji": "🥑",
@@ -18,19 +19,19 @@
   "overview": {
     "calories_per_100g": 155,
     "protein_per_100g": 2,
-    "carbs_per_100g": 8,
-    "fat_per_100g": 14,
-    "fiber_per_100g": 6,
+    "carbs_per_100g": 8.5,
+    "fat_per_100g": 14.2,
+    "fiber_per_100g": 6.5,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Portion als Dip (50g)"
   },
   "variants": [
     {
-      "name": "1 Esslöffel (30g)",
+      "name": "2 Esslöffel (30g)",
       "portion_g": 30,
       "calories": 47,
       "protein": 1,
-      "carbs": 2,
+      "carbs": 3,
       "fat": 4,
       "tip": "Als Topping"
     },
@@ -48,7 +49,7 @@
       "portion_g": 100,
       "calories": 155,
       "protein": 2,
-      "carbs": 8,
+      "carbs": 9,
       "fat": 14
     },
     {
@@ -56,7 +57,7 @@
       "portion_g": 150,
       "calories": 233,
       "protein": 3,
-      "carbs": 12,
+      "carbs": 13,
       "fat": 21
     },
     {
@@ -64,39 +65,54 @@
       "portion_g": 200,
       "calories": 310,
       "protein": 4,
-      "carbs": 16,
+      "carbs": 17,
       "fat": 28
-    },
-    {
-      "name": "Selbstgemacht, avocadoreich (100g)",
-      "portion_g": 100,
-      "calories": 165,
-      "protein": 2,
-      "carbs": 7,
-      "fat": 15,
-      "tip": "Weniger Tomate/Zwiebel"
     }
   ],
   "comparison": [
     {
       "name": "Hummus (100g)",
-      "calories": 177,
-      "emoji": "🧆"
+      "calories": 237,
+      "emoji": "🧆",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Tzatziki (100g)",
-      "calories": 60,
-      "emoji": "🥒"
+      "calories": 91,
+      "emoji": "🥒",
+      "basis": [
+        {
+          "slug": "tzatziki",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Sour Cream (100g)",
-      "calories": 190,
-      "emoji": "🥛"
+      "calories": 198,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "sour-cream",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Salsa Tomate (100g)",
-      "calories": 36,
-      "emoji": "🍅"
+      "calories": 34,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "fdcId": 2709738,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -122,7 +138,7 @@
     },
     {
       "title": "Sättigende Ballaststoffe",
-      "text": "6g Ballaststoffe pro 100g aus der Avocado tragen zu einem länger anhaltenden Sättigungsgefühl bei.",
+      "text": "6,5g Ballaststoffe pro 100g aus der Avocado tragen zu einem länger anhaltenden Sättigungsgefühl bei.",
       "icon": "✨"
     }
   ],
@@ -133,7 +149,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein Esslöffel Guacamole?",
-      "answer": "Ein Esslöffel (ca. 30g) Guacamole hat etwa 47 kcal."
+      "answer": "Ein Esslöffel (ca. 15g) Guacamole hat etwa 23 kcal, zwei Esslöffel (30g) rund 47 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Guacamole?",

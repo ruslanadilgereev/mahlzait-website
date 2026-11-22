@@ -3,47 +3,216 @@
   "name": "Rindergeschnetzeltes",
   "emoji": "🥩",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2706385 (Beef with mushroom sauce), Werte je 100 g",
   "seo": {
     "title": "Rindergeschnetzeltes Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Rindergeschnetzeltes? Nährwerte für Zürcher Geschnetzeltes, Stroganoff & mehr. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 155,
+    "calories_per_100g": 163,
     "protein_per_100g": 22,
-    "carbs_per_100g": 2,
-    "fat_per_100g": 7,
-    "fiber_per_100g": 0.3,
+    "carbs_per_100g": 1.8,
+    "fat_per_100g": 7.5,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 300,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    {"name": "Rindergeschnetzeltes mit Champignons", "portion_g": 300, "calories": 465, "protein": 66, "carbs": 6, "fat": 21, "tip": "Klassische Variante"},
-    {"name": "Boeuf Stroganoff", "portion_g": 300, "calories": 540, "protein": 58, "carbs": 10, "fat": 30, "tip": "Russischer Klassiker"},
-    {"name": "Zürcher Geschnetzeltes", "portion_g": 300, "calories": 560, "protein": 55, "carbs": 8, "fat": 34, "tip": "Schweizer Spezialität mit Rösti"},
-    {"name": "Rindergeschnetzeltes mit Paprika", "portion_g": 300, "calories": 440, "protein": 62, "carbs": 10, "fat": 18, "tip": "Ungarische Art"},
-    {"name": "Rindergeschnetzeltes pur", "portion_g": 200, "calories": 310, "protein": 44, "carbs": 0, "fat": 14, "tip": "Ohne Sauce"},
-    {"name": "Rindergeschnetzeltes mit Nudeln", "portion_g": 450, "calories": 680, "protein": 60, "carbs": 52, "fat": 26, "tip": "Sättigende Mahlzeit"}
+    {
+      "name": "Rindergeschnetzeltes mit Champignons",
+      "portion_g": 300,
+      "calories": 489,
+      "protein": 66,
+      "carbs": 5,
+      "fat": 23,
+      "tip": "Klassische Variante"
+    },
+    {
+      "name": "Boeuf Stroganoff",
+      "portion_g": 300,
+      "calories": 450,
+      "protein": 30,
+      "carbs": 19,
+      "fat": 28,
+      "tip": "Russischer Klassiker",
+      "basis": [
+        {
+          "fdcId": 2706382,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Zürcher Geschnetzeltes (200g mit 100g Rösti)",
+      "portion_g": 300,
+      "calories": 560,
+      "protein": 47,
+      "carbs": 24,
+      "fat": 31,
+      "tip": "In Rahmsauce, Schweizer Spezialität mit Rösti",
+      "basis": [
+        {
+          "fdcId": 2706381,
+          "g": 200
+        },
+        {
+          "slug": "roesti",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Rindergeschnetzeltes mit Paprika",
+      "portion_g": 300,
+      "calories": 345,
+      "protein": 23,
+      "carbs": 18,
+      "fat": 22,
+      "tip": "Mit Gemüse in Tomatensauce",
+      "basis": [
+        {
+          "fdcId": 2706734,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Rindergeschnetzeltes pur",
+      "portion_g": 200,
+      "calories": 456,
+      "protein": 68,
+      "carbs": 4,
+      "fat": 17,
+      "tip": "Gebratene Oberschale, ohne Sauce",
+      "basis": [
+        {
+          "fdcId": 168708,
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Rindergeschnetzeltes mit Nudeln (300g + 150g)",
+      "portion_g": 450,
+      "calories": 726,
+      "protein": 75,
+      "carbs": 52,
+      "fat": 24,
+      "tip": "Sättigende Mahlzeit",
+      "basis": [
+        {
+          "g": 300
+        },
+        {
+          "fdcId": 169737,
+          "g": 150
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Putengeschnetzeltes", "calories": 130, "emoji": "🍗"},
-    {"name": "Hähnchen-Geschnetzeltes", "calories": 145, "emoji": "🍗"},
-    {"name": "Schweinegeschnetzeltes", "calories": 175, "emoji": "🥩"},
-    {"name": "Gulasch", "calories": 120, "emoji": "🍲"}
+    {
+      "name": "Putengeschnetzeltes (300g)",
+      "calories": 408,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "putengeschnetzeltes",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Hähnchen-Geschnetzeltes (300g)",
+      "calories": 471,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchen-geschnetzeltes",
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Schweinegeschnetzeltes mit Pilzsauce (300g)",
+      "calories": 501,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "fdcId": 2706403,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Gulasch (300g)",
+      "calories": 321,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "gulasch",
+          "g": 300
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Mageres Stück wählen", "text": "Hüfte oder Oberschale haben weniger Fett als Roastbeef. So sparst du 30-50 kcal pro Portion.", "icon": "🥩"},
-    {"title": "Scharf anbraten", "text": "Rindfleisch auf hoher Hitze kurz anbraten – das versiegelt die Poren und hält den Saft im Fleisch.", "icon": "🔥"},
-    {"title": "Sauce entscheidend", "text": "Pur hat Rindergeschnetzeltes moderate Kalorien. Die Sauce verdoppelt oft den Fettgehalt – Tomatensauce statt Rahm wählen.", "icon": "🍅"},
-    {"title": "Eisenquelle", "text": "Rindfleisch ist eine der besten Eisenquellen. 200g liefern ca. 5mg Eisen – fast die Hälfte des Tagesbedarfs.", "icon": "🩸"},
-    {"title": "Qualität vor Quantität", "text": "150g hochwertiges Rinderfilet schmecken besser und sättigen genauso wie 250g günstiges Fleisch.", "icon": "⭐"}
+    {
+      "title": "Mageres Stück wählen",
+      "text": "Hüfte oder Oberschale haben weniger Fett als Roastbeef. So sparst du Kalorien pro Portion.",
+      "icon": "🥩"
+    },
+    {
+      "title": "Scharf anbraten",
+      "text": "Rindfleisch auf hoher Hitze kurz anbraten, das versiegelt die Poren und hält den Saft im Fleisch.",
+      "icon": "🔥"
+    },
+    {
+      "title": "Sauce entscheidend",
+      "text": "Die Sauce entscheidet: Mit Gemüse in Tomatensauce hat eine Portion (300g) rund 345 kcal, als Zürcher Geschnetzeltes in Rahmsauce mit Rösti rund 560 kcal. Tomatensauce statt Rahm wählen.",
+      "icon": "🍅"
+    },
+    {
+      "title": "Eisenquelle",
+      "text": "Rindfleisch ist eine der besten Eisenquellen. 200g gebratene Oberschale liefern ca. 6,8mg Eisen, fast die Hälfte des Tagesbedarfs.",
+      "icon": "🩸"
+    },
+    {
+      "title": "Qualität vor Quantität",
+      "text": "150g hochwertiges Rinderfilet schmecken besser und sättigen genauso wie 250g günstiges Fleisch.",
+      "icon": "⭐"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Rindergeschnetzeltes?", "answer": "Eine Portion Rindergeschnetzeltes (300g) hat ca. 465 kcal mit Champignons. Boeuf Stroganoff kommt auf ca. 540 kcal."},
-    {"question": "Welches Fleisch für Geschnetzeltes?", "answer": "Am besten eignen sich Hüfte, Oberschale oder Rumpsteak. Filet ist am zartesten, aber auch am teuersten. Das Fleisch in dünne Streifen schneiden."},
-    {"question": "Ist Rindergeschnetzeltes gesund?", "answer": "Rindfleisch liefert hochwertiges Protein, Eisen, Zink und B-Vitamine. In Maßen und mit leichter Sauce ist es eine nährstoffreiche Mahlzeit."},
-    {"question": "Was hat weniger Kalorien: Rind oder Hähnchen?", "answer": "Hähnchenbrust (145 kcal/100g) hat weniger als Rindergeschnetzeltes (155 kcal/100g). Allerdings liefert Rind mehr Eisen und Zink."},
-    {"question": "Was ist Boeuf Stroganoff?", "answer": "Ein russisches Gericht aus Rinderstreifen in einer cremigen Sauce aus Sauerrahm, Senf und Champignons. Benannt nach der Familie Stroganow."},
-    {"question": "Wie lange braucht Rindergeschnetzeltes?", "answer": "Nur 3-5 Minuten bei hoher Hitze. Das Fleisch sollte innen noch rosa sein – durchbraten macht es zäh."}
+    {
+      "question": "Wie viele Kalorien hat Rindergeschnetzeltes?",
+      "answer": "Eine Portion Rindergeschnetzeltes (300g) hat ca. 489 kcal mit Champignons. Boeuf Stroganoff kommt auf ca. 450 kcal."
+    },
+    {
+      "question": "Welches Fleisch für Geschnetzeltes?",
+      "answer": "Am besten eignen sich Hüfte, Oberschale oder Rumpsteak. Filet ist am zartesten, aber auch am teuersten. Das Fleisch in dünne Streifen schneiden."
+    },
+    {
+      "question": "Ist Rindergeschnetzeltes gesund?",
+      "answer": "Rindfleisch liefert hochwertiges Protein, Eisen, Zink und B-Vitamine. In Maßen und mit leichter Sauce ist es eine nährstoffreiche Mahlzeit."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Rind oder Hähnchen?",
+      "answer": "Hähnchen-Geschnetzeltes (157 kcal/100g) hat etwas weniger als Rindergeschnetzeltes (163 kcal/100g). Allerdings liefert Rind mehr Eisen und Zink."
+    },
+    {
+      "question": "Was ist Boeuf Stroganoff?",
+      "answer": "Ein russisches Gericht aus Rinderstreifen in einer cremigen Sauce aus Sauerrahm, Senf und Champignons. Benannt nach der Familie Stroganow."
+    },
+    {
+      "question": "Wie lange braucht Rindergeschnetzeltes?",
+      "answer": "Nur 3-5 Minuten bei hoher Hitze. Das Fleisch sollte innen noch rosa sein, durchbraten macht es zäh."
+    }
   ],
-  "related_foods": ["gulasch", "haehnchen-geschnetzeltes", "putengeschnetzeltes", "schweinebraten"]
+  "related_foods": [
+    "gulasch",
+    "haehnchen-geschnetzeltes",
+    "putengeschnetzeltes",
+    "schweinebraten"
+  ]
 }

@@ -3,9 +3,10 @@
   "name": "Light Mozzarella",
   "emoji": "🧀",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 170847 (Cheese, mozzarella, part skim milk), Werte je 100 g",
   "seo": {
     "title": "Light Mozzarella Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Light Mozzarella? Nur 210 kcal pro 100g – rund 25% weniger als normaler Mozzarella. Nährwerte, Portionen & Vergleich.",
+    "description": "Wie viele Kalorien hat Light Mozzarella? Nur 254 kcal pro 100g, rund 15% weniger als normaler Mozzarella. Nährwerte, Portionen & Vergleich.",
     "keywords": [
       "light mozzarella kalorien",
       "mozzarella light kcal",
@@ -18,10 +19,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 210,
-    "protein_per_100g": 22,
-    "carbs_per_100g": 3,
-    "fat_per_100g": 12,
+    "calories_per_100g": 254,
+    "protein_per_100g": 24.3,
+    "carbs_per_100g": 2.8,
+    "fat_per_100g": 15.9,
     "fiber_per_100g": 0,
     "typical_portion_g": 125,
     "typical_portion_name": "1 Kugel light (125g Abtropfgewicht)"
@@ -30,126 +31,150 @@
     {
       "name": "1 Kugel light (125g)",
       "portion_g": 125,
-      "calories": 262,
-      "protein": 28,
+      "calories": 318,
+      "protein": 30,
       "carbs": 4,
-      "fat": 15,
+      "fat": 20,
       "tip": "Standard"
     },
     {
       "name": "200g Packung",
       "portion_g": 200,
-      "calories": 420,
-      "protein": 44,
+      "calories": 508,
+      "protein": 49,
       "carbs": 6,
-      "fat": 24
+      "fat": 32
     },
     {
       "name": "Mini-Kugeln light (100g)",
       "portion_g": 100,
-      "calories": 210,
-      "protein": 22,
+      "calories": 254,
+      "protein": 24,
       "carbs": 3,
-      "fat": 12
+      "fat": 16
     },
     {
       "name": "Halbe Kugel (60g)",
       "portion_g": 60,
-      "calories": 126,
-      "protein": 13,
+      "calories": 152,
+      "protein": 15,
       "carbs": 2,
-      "fat": 7
+      "fat": 10
     },
     {
       "name": "Scheibe (30g)",
       "portion_g": 30,
-      "calories": 63,
+      "calories": 76,
       "protein": 7,
       "carbs": 1,
-      "fat": 4
+      "fat": 5
     },
     {
       "name": "Auf Pizza light (80g)",
       "portion_g": 80,
-      "calories": 168,
-      "protein": 18,
+      "calories": 203,
+      "protein": 19,
       "carbs": 2,
-      "fat": 10
+      "fat": 13
     }
   ],
   "comparison": [
     {
-      "name": "Mozzarella (normal)",
-      "calories": 280,
-      "emoji": "🧀"
+      "name": "Mozzarella normal (100g)",
+      "calories": 299,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Feta",
-      "calories": 264,
-      "emoji": "🧀"
+      "name": "Feta (100g)",
+      "calories": 265,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "feta",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Magerquark",
-      "calories": 67,
-      "emoji": "🥛"
+      "name": "Magerquark (100g)",
+      "calories": 72,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "magerquark",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Grillkäse",
-      "calories": 320,
-      "emoji": "🧀"
+      "name": "Grillkäse (100g)",
+      "calories": 330,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "grillkaese",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Weniger Fett, viel Eiweiß",
-      "text": "Light Mozzarella liefert mit 22g Protein und nur 12g Fett pro 100g rund 25% weniger Kalorien als normaler Mozzarella (280 kcal). Ideal für eine eiweißreiche Ernährung.",
+      "text": "Light Mozzarella liefert mit 24g Protein und nur 16g Fett pro 100g rund 15% weniger Kalorien als normaler Mozzarella (299 kcal). Ideal für eine eiweißreiche Ernährung.",
       "icon": "💪"
     },
     {
       "title": "Abtropfgewicht beachten",
-      "text": "Mozzarella liegt in Lake. Auf der Packung steht oft ein höheres Füllgewicht – für die Kalorien zählt nur das abgetropfte Käsegewicht (meist 125g pro Kugel).",
+      "text": "Mozzarella liegt in Lake. Auf der Packung steht oft ein höheres Füllgewicht, für die Kalorien zählt nur das abgetropfte Käsegewicht (meist 125g pro Kugel).",
       "icon": "💧"
     },
     {
       "title": "Perfekt für Tomate-Mozzarella",
-      "text": "Mit Tomaten, Basilikum und etwas Balsamico wird Light Mozzarella zur leichten Vorspeise. Beim Olivenöl sparsam sein – das ist der eigentliche Kalorienträger.",
+      "text": "Mit Tomaten, Basilikum und etwas Balsamico wird Light Mozzarella zur leichten Vorspeise. Beim Olivenöl sparsam sein, das ist der eigentliche Kalorienträger.",
       "icon": "🍅"
     },
     {
       "title": "Sparsamer Pizzabelag",
-      "text": "Auf Pizza reichen 80g Light Mozzarella (168 kcal) statt 120g normaler Mozzarella. Schmilzt etwas fester, spart aber spürbar Fett und Kalorien.",
+      "text": "Auf Pizza reichen 80g Light Mozzarella (203 kcal) statt 120g normaler Mozzarella. Schmilzt etwas fester, spart aber spürbar Fett und Kalorien.",
       "icon": "🍕"
     },
     {
       "title": "Kaum Kohlenhydrate",
-      "text": "Mit nur 3g Kohlenhydraten pro 100g passt Light Mozzarella gut in eine Low-Carb-Ernährung und macht durch das hohe Eiweiß lange satt.",
+      "text": "Mit nur 2,8g Kohlenhydraten pro 100g passt Light Mozzarella gut in eine Low-Carb-Ernährung und macht durch das hohe Eiweiß lange satt.",
       "icon": "🔢"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Light Mozzarella?",
-      "answer": "Light Mozzarella hat ca. 210 kcal pro 100g. Eine ganze Kugel (125g Abtropfgewicht) kommt auf rund 262 kcal – etwa 25% weniger als normaler Mozzarella."
+      "answer": "Light Mozzarella hat ca. 254 kcal pro 100g. Eine ganze Kugel (125g Abtropfgewicht) kommt auf rund 318 kcal, etwa 15% weniger als normaler Mozzarella."
     },
     {
       "question": "Wie viele Kalorien hat eine Kugel Light Mozzarella?",
-      "answer": "Eine Standard-Kugel mit 125g Abtropfgewicht hat ca. 262 kcal, 28g Eiweiß, 4g Kohlenhydrate und 15g Fett."
+      "answer": "Eine Standard-Kugel mit 125g Abtropfgewicht hat ca. 318 kcal, 30g Eiweiß, 4g Kohlenhydrate und 20g Fett."
     },
     {
       "question": "Wie viel Eiweiß hat Light Mozzarella?",
-      "answer": "Light Mozzarella liefert ca. 22g Eiweiß pro 100g. Eine ganze Kugel (125g) bringt es auf rund 28g Protein – ein sehr guter Eiweißlieferant."
+      "answer": "Light Mozzarella liefert ca. 24g Eiweiß pro 100g. Eine ganze Kugel (125g) bringt es auf rund 30g Protein, ein sehr guter Eiweißlieferant."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Light Mozzarella?",
-      "answer": "Sehr wenige: nur etwa 3g Kohlenhydrate pro 100g. Damit eignet sich Light Mozzarella gut für eine Low-Carb- oder ketogene Ernährung."
+      "answer": "Sehr wenige: nur etwa 2,8g Kohlenhydrate pro 100g. Damit eignet sich Light Mozzarella gut für eine Low-Carb- oder ketogene Ernährung."
     },
     {
       "question": "Ist Light Mozzarella gut zum Abnehmen?",
-      "answer": "Ja. Mit 210 kcal/100g, viel Eiweiß und kaum Kohlenhydraten ist Light Mozzarella sättigender als normaler Mozzarella (280 kcal). Auf die Portionsgröße und das Öl im Salat sollte man trotzdem achten."
+      "answer": "Ja. Mit 254 kcal/100g, viel Eiweiß und kaum Kohlenhydraten ist Light Mozzarella sättigender als normaler Mozzarella (299 kcal). Auf die Portionsgröße und das Öl im Salat sollte man trotzdem achten."
     },
     {
       "question": "Was ist der Unterschied zwischen Light und normalem Mozzarella?",
-      "answer": "Light Mozzarella wird aus teilentrahmter Milch hergestellt und hat dadurch weniger Fett (ca. 12g statt 18g pro 100g) und weniger Kalorien (210 statt 280 kcal), bei ähnlich hohem Eiweißgehalt."
+      "answer": "Light Mozzarella wird aus teilentrahmter Milch hergestellt und hat dadurch weniger Fett (ca. 16g statt 22g pro 100g) und weniger Kalorien (254 statt 299 kcal), bei ähnlich hohem Eiweißgehalt."
     }
   ],
   "related_foods": [

@@ -3,9 +3,10 @@
   "name": "Minestrone",
   "emoji": "🍲",
   "category": "gericht",
+  "source": "USDA FoodData Central, FDC-ID 2710114 (Soup, minestrone), Werte je 100 g",
   "seo": {
     "title": "Minestrone Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Minestrone? Ein Teller (350g) hat ca. 120 kcal. Nährwerte pro 100g, Protein & Kohlenhydrate der italienischen Gemüsesuppe.",
+    "description": "Wie viele Kalorien hat Minestrone? Ein Teller (350g) hat ca. 140 kcal. Nährwerte pro 100g, Protein & Kohlenhydrate der italienischen Gemüsesuppe.",
     "keywords": [
       "minestrone kalorien",
       "minestrone kcal",
@@ -16,10 +17,10 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 34,
+    "calories_per_100g": 40,
     "protein_per_100g": 1.7,
-    "carbs_per_100g": 5.5,
-    "fat_per_100g": 0.9,
+    "carbs_per_100g": 7.3,
+    "fat_per_100g": 0.5,
     "fiber_per_100g": 1.5,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller (350g)"
@@ -28,83 +29,135 @@
     {
       "name": "Kleine Tasse (200g)",
       "portion_g": 200,
-      "calories": 68,
+      "calories": 80,
       "protein": 3,
-      "carbs": 11,
-      "fat": 2,
+      "carbs": 15,
+      "fat": 1,
       "tip": "Vorspeise"
     },
     {
       "name": "1 Teller (350g)",
       "portion_g": 350,
-      "calories": 119,
+      "calories": 140,
       "protein": 6,
-      "carbs": 19,
-      "fat": 3,
+      "carbs": 26,
+      "fat": 2,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Schüssel (450g)",
       "portion_g": 450,
-      "calories": 153,
+      "calories": 180,
       "protein": 8,
-      "carbs": 25,
-      "fat": 4
+      "carbs": 33,
+      "fat": 2
     },
     {
       "name": "Dose / Fertigsuppe (400g)",
       "portion_g": 400,
-      "calories": 136,
-      "protein": 7,
-      "carbs": 22,
-      "fat": 4,
-      "tip": "Konserve, fertig"
+      "calories": 212,
+      "protein": 9,
+      "carbs": 35,
+      "fat": 5,
+      "tip": "Konserve, fertig",
+      "basis": [
+        {
+          "fdcId": 171550,
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Hausgemacht mit Pasta (400g)",
       "portion_g": 400,
-      "calories": 220,
+      "calories": 219,
       "protein": 9,
-      "carbs": 34,
-      "fat": 5,
-      "tip": "Mit Nudeln & mehr Öl"
+      "carbs": 41,
+      "fat": 2,
+      "tip": "Mit Nudeln",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 169737,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Reichhaltig mit Bohnen & Speck (400g)",
       "portion_g": 400,
-      "calories": 280,
-      "protein": 13,
-      "carbs": 32,
-      "fat": 11,
-      "tip": "Deftige Variante"
+      "calories": 275,
+      "protein": 15,
+      "carbs": 34,
+      "fat": 9,
+      "tip": "Deftige Variante",
+      "basis": [
+        {
+          "g": 340
+        },
+        {
+          "fdcId": 175204,
+          "g": 40
+        },
+        {
+          "fdcId": 2705889,
+          "g": 20
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Gemüsesuppe (Teller)",
+      "name": "Gemüsesuppe (1 Teller, 350g)",
       "calories": 95,
-      "emoji": "🥣"
+      "emoji": "🥣",
+      "basis": [
+        {
+          "fdcId": 2710113,
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Tomatensuppe (Teller)",
-      "calories": 130,
-      "emoji": "🍅"
+      "name": "Tomatensuppe (1 Teller, 350g)",
+      "calories": 67,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "fdcId": 2709757,
+          "g": 350
+        }
+      ]
     },
     {
-      "name": "Linsensuppe (Teller)",
-      "calories": 210,
-      "emoji": "🍲"
+      "name": "Linseneintopf (1 Teller, 400g)",
+      "calories": 240,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "eintopf-linsen",
+          "g": 400
+        }
+      ]
     },
     {
-      "name": "Kartoffelsuppe (Teller)",
-      "calories": 245,
-      "emoji": "🥔"
+      "name": "Kartoffelsuppe (1 Teller, 400g)",
+      "calories": 360,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "kartoffelsuppe",
+          "g": 400
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ideal zum Abnehmen",
-      "text": "Mit nur rund 34 kcal pro 100g gehört Minestrone zu den kalorienärmsten warmen Gerichten. Ein ganzer Teller hat nur etwa 120 kcal und sättigt durch viel Gemüse und Flüssigkeit.",
+      "text": "Mit nur rund 40 kcal pro 100g gehört Minestrone zu den kalorienärmsten warmen Gerichten. Ein ganzer Teller hat nur etwa 140 kcal und sättigt durch viel Gemüse und Flüssigkeit.",
       "icon": "🥗"
     },
     {
@@ -131,19 +184,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Minestrone?",
-      "answer": "Ein Teller Minestrone (350g) hat etwa 120 kcal. Pro 100g sind es rund 34 kcal, womit die Suppe sehr kalorienarm ist."
+      "answer": "Ein Teller Minestrone (350g) hat etwa 140 kcal. Pro 100g sind es rund 40 kcal, womit die Suppe sehr kalorienarm ist."
     },
     {
       "question": "Wie viele Kalorien hat ein Teller Minestrone?",
-      "answer": "Ein Standard-Teller mit 350g liefert ca. 119 kcal. Eine große Schüssel (450g) kommt auf etwa 153 kcal."
+      "answer": "Ein Standard-Teller mit 350g liefert ca. 140 kcal. Eine große Schüssel (450g) kommt auf etwa 180 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Minestrone?",
-      "answer": "Minestrone enthält etwa 5,5g Kohlenhydrate pro 100g. Mit zusätzlicher Pasta steigt der Kohlenhydratanteil deutlich an."
+      "answer": "Minestrone enthält etwa 7,3g Kohlenhydrate pro 100g. Mit zusätzlicher Pasta steigt der Kohlenhydratanteil deutlich an."
     },
     {
       "question": "Wie viel Protein hat Minestrone?",
-      "answer": "Pro 100g stecken rund 1,7g Eiweiß in der Suppe. Varianten mit Bohnen oder Speck enthalten mehr Protein, bis zu 13g pro Portion."
+      "answer": "Pro 100g stecken rund 1,7g Eiweiß in der Suppe. Varianten mit Bohnen und Speck enthalten mehr Protein, rund 15g pro Portion (400g)."
     },
     {
       "question": "Ist Minestrone zum Abnehmen geeignet?",

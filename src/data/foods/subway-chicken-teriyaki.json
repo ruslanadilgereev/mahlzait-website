@@ -3,9 +3,10 @@
   "name": "Subway Chicken Teriyaki",
   "emoji": "🥪",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 170705 (SUBWAY, sweet onion chicken teriyaki sub on white bread with lettuce, tomato and sweet onion sauce), Werte je 100 g",
   "seo": {
     "title": "Subway Chicken Teriyaki Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Subway Chicken Teriyaki? Ein 15-cm-Sub hat ca. 296 kcal. Nährwerte pro 100g, 15 cm & 30 cm plus Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Subway Chicken Teriyaki? Ein 15-cm-Sub hat ca. 361 kcal. Nährwerte pro 100g, 15 cm & 30 cm plus Diät-Tipps im Überblick.",
     "keywords": [
       "subway chicken teriyaki kalorien",
       "subway teriyaki kcal",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 127,
-    "protein_per_100g": 9.5,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 1.5,
-    "fiber_per_100g": 1.3,
+    "calories_per_100g": 155,
+    "protein_per_100g": 10.9,
+    "carbs_per_100g": 22.5,
+    "fat_per_100g": 2.4,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 233,
     "typical_portion_name": "1 Sub 15 cm (233g)"
   },
@@ -28,86 +29,126 @@
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 127,
-      "protein": 10,
-      "carbs": 18,
+      "calories": 155,
+      "protein": 11,
+      "carbs": 23,
       "fat": 2
     },
     {
       "name": "Sub 15 cm (233g)",
       "portion_g": 233,
-      "calories": 296,
-      "protein": 22,
-      "carbs": 42,
-      "fat": 4,
+      "calories": 361,
+      "protein": 25,
+      "carbs": 52,
+      "fat": 6,
       "tip": "Standard"
     },
     {
       "name": "Sub 30 cm (466g)",
       "portion_g": 466,
-      "calories": 592,
-      "protein": 44,
-      "carbs": 84,
-      "fat": 7
+      "calories": 722,
+      "protein": 51,
+      "carbs": 105,
+      "fat": 11
     },
     {
       "name": "Chicken Teriyaki als Salat (ohne Brot, 250g)",
       "portion_g": 250,
-      "calories": 130,
-      "protein": 22,
-      "carbs": 12,
-      "fat": 2,
-      "tip": "Brot weglassen spart die meisten Kohlenhydrate"
+      "calories": 149,
+      "protein": 21,
+      "carbs": 7,
+      "fat": 5,
+      "tip": "Brot weglassen spart die meisten Kohlenhydrate",
+      "basis": [
+        {
+          "fdcId": 2706433,
+          "g": 75
+        },
+        {
+          "fdcId": 169248,
+          "g": 125
+        },
+        {
+          "fdcId": 170457,
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Chicken Teriyaki im Wrap (250g)",
-      "portion_g": 250,
-      "calories": 360,
-      "protein": 24,
-      "carbs": 48,
-      "fat": 7
-    },
-    {
-      "name": "Sub 15 cm mit Käse & Sauce (ca. 280g)",
-      "portion_g": 280,
-      "calories": 400,
-      "protein": 25,
-      "carbs": 45,
-      "fat": 12,
-      "tip": "Mit Belag & Dressing klettert der Wert deutlich"
+      "name": "Sub 15 cm mit Käse & Mayo (270g)",
+      "portion_g": 270,
+      "calories": 553,
+      "protein": 31,
+      "carbs": 53,
+      "fat": 24,
+      "tip": "Mit Belag & Dressing klettert der Wert deutlich",
+      "basis": [
+        {
+          "g": 233
+        },
+        {
+          "fdcId": 170899,
+          "g": 22
+        },
+        {
+          "fdcId": 171009,
+          "g": 15
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Subway Sandwich (15 cm, gemischt)",
-      "calories": 330,
-      "emoji": "🥪"
+      "name": "Subway Sandwich (15 cm, 230g)",
+      "calories": 361,
+      "emoji": "🥪",
+      "basis": [
+        {
+          "slug": "subway-sandwich"
+        }
+      ]
     },
     {
       "name": "Döner",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     },
     {
-      "name": "Hamburger",
-      "calories": 480,
-      "emoji": "🍔"
+      "name": "Hamburger (90g)",
+      "calories": 257,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "slug": "hamburger"
+        }
+      ]
     },
     {
-      "name": "Chicken Wrap",
-      "calories": 400,
-      "emoji": "🌯"
+      "name": "Chicken Wrap (161g)",
+      "calories": 406,
+      "emoji": "🌯",
+      "basis": [
+        {
+          "slug": "chicken-wrap"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich für Fast Food",
-      "text": "Ein 15-cm-Chicken-Teriyaki liefert rund 22g Protein bei nur 296 kcal. Das magere Hähnchen macht ihn zu einer der proteinreichsten Subway-Optionen.",
+      "text": "Ein 15-cm-Chicken-Teriyaki liefert rund 25g Protein bei 361 kcal. Das magere Hähnchen bringt viel Eiweiß bei wenig Fett.",
       "icon": "💪"
     },
     {
       "title": "Auf das Dressing achten",
-      "text": "Die Teriyaki-Marinade bringt von Natur aus etwas Zucker mit. Zusätzliche Saucen wie Mayo oder Honey-Mustard können 100 bis 200 kcal extra bedeuten.",
+      "text": "Die Teriyaki-Marinade bringt von Natur aus etwas Zucker mit. Schon eine Portion Mayo (15g) bringt rund 102 kcal extra.",
       "icon": "🍯"
     },
     {
@@ -117,7 +158,7 @@
     },
     {
       "title": "Salat-Variante zum Abnehmen",
-      "text": "Als Salat ohne Brot bestellt, sinkt der Wert auf etwa 130 kcal bei vollem Protein. Ideal für eine kohlenhydratarme Mahlzeit.",
+      "text": "Als Salat ohne Brot bestellt, sinkt der Wert auf etwa 149 kcal bei fast gleich viel Protein. Ideal für eine kohlenhydratarme Mahlzeit.",
       "icon": "🥗"
     },
     {
@@ -129,15 +170,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Subway Chicken Teriyaki?",
-      "answer": "Ein 15-cm-Sub (233g) hat rund 296 kcal, ein 30-cm-Sub etwa 592 kcal. Pro 100g sind es ca. 127 kcal. Belag und Saucen können die Werte erhöhen."
+      "answer": "Ein 15-cm-Sub (233g) hat rund 361 kcal, ein 30-cm-Sub etwa 722 kcal. Pro 100g sind es ca. 155 kcal. Belag und Saucen können die Werte erhöhen."
     },
     {
       "question": "Wie viel Protein hat der Subway Chicken Teriyaki?",
-      "answer": "Der 15-cm-Sub liefert etwa 22g Protein, der 30-cm-Sub rund 44g. Das macht ihn zu einer der eiweißreichsten Optionen bei Subway."
+      "answer": "Der 15-cm-Sub liefert etwa 25g Protein, der 30-cm-Sub rund 51g. Das ist viel Eiweiß für ein Fast-Food-Gericht."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken im Chicken Teriyaki?",
-      "answer": "Ein 15-cm-Sub enthält etwa 42g Kohlenhydrate, vor allem aus dem Brot. Als Salat ohne Brot sind es nur rund 12g."
+      "answer": "Ein 15-cm-Sub enthält etwa 52g Kohlenhydrate, vor allem aus dem Brot. Als Salat ohne Brot sind es nur rund 7g."
     },
     {
       "question": "Ist der Subway Chicken Teriyaki gesund?",
@@ -145,11 +186,11 @@
     },
     {
       "question": "Eignet sich der Chicken Teriyaki zum Abnehmen?",
-      "answer": "Ja, der 15-cm-Sub passt mit ca. 296 kcal und 22g Protein gut in eine kalorienbewusste Ernährung. Wer Saucen sparsam dosiert oder die Salat-Variante wählt, spart zusätzlich."
+      "answer": "Ja, der 15-cm-Sub passt mit ca. 361 kcal und 25g Protein gut in eine kalorienbewusste Ernährung. Wer Saucen sparsam dosiert oder die Salat-Variante wählt, spart zusätzlich."
     },
     {
       "question": "Wie viel Fett hat der Subway Chicken Teriyaki?",
-      "answer": "Sehr wenig: Der 15-cm-Sub hat nur etwa 4g Fett, der 30-cm-Sub rund 7g. Erst Käse und cremige Saucen erhöhen den Fettgehalt deutlich."
+      "answer": "Sehr wenig: Der 15-cm-Sub hat nur etwa 6g Fett, der 30-cm-Sub rund 11g. Erst Käse und cremige Saucen erhöhen den Fettgehalt deutlich."
     }
   ],
   "related_foods": [

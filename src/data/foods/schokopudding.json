@@ -3,6 +3,7 @@
   "name": "Schokopudding",
   "emoji": "🍮",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 168778 (Puddings, chocolate, ready-to-eat), Werte je 100 g",
   "seo": {
     "title": "Schokopudding Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Schokopudding? Ca. 142 kcal pro 100g, rund 178 kcal pro Becher (125g). Nährwerte, Varianten und Tipps zum Abnehmen.",
@@ -19,8 +20,8 @@
     "calories_per_100g": 142,
     "protein_per_100g": 2.1,
     "carbs_per_100g": 23,
-    "fat_per_100g": 4.3,
-    "fiber_per_100g": 1,
+    "fat_per_100g": 4.6,
+    "fiber_per_100g": 0,
     "typical_portion_g": 125,
     "typical_portion_name": "1 Becher (125g)"
   },
@@ -31,7 +32,7 @@
       "calories": 142,
       "protein": 2,
       "carbs": 23,
-      "fat": 4
+      "fat": 5
     },
     {
       "name": "Standard-Becher (125g)",
@@ -39,7 +40,7 @@
       "calories": 178,
       "protein": 3,
       "carbs": 29,
-      "fat": 5,
+      "fat": 6,
       "tip": "Häufigste Bechergröße im Supermarkt"
     },
     {
@@ -56,7 +57,7 @@
       "calories": 355,
       "protein": 5,
       "carbs": 58,
-      "fat": 11
+      "fat": 12
     },
     {
       "name": "Fettarm / Light (125g)",
@@ -65,49 +66,70 @@
       "protein": 2,
       "carbs": 26,
       "fat": 0,
-      "tip": "Fettreduzierte Variante, dafür oft etwas mehr Zucker"
-    },
-    {
-      "name": "Protein-Pudding Becher (200g)",
-      "portion_g": 200,
-      "calories": 160,
-      "protein": 20,
-      "carbs": 12,
-      "fat": 3,
-      "tip": "Eiweißreiche Variante mit deutlich mehr Protein"
+      "tip": "Fettreduzierte Variante mit weniger Kalorien",
+      "basis": [
+        {
+          "fdcId": 168799,
+          "g": 125
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Milchreis",
-      "calories": 130,
-      "emoji": "🍚"
+      "name": "Milchreis (125g)",
+      "calories": 135,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 2705685,
+          "g": 125
+        }
+      ]
     },
     {
-      "name": "Vanillepudding",
-      "calories": 130,
-      "emoji": "🍮"
+      "name": "Vanillepudding (125g)",
+      "calories": 163,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "fdcId": 169608,
+          "g": 125
+        }
+      ]
     },
     {
-      "name": "Joghurt",
-      "calories": 61,
-      "emoji": "🥛"
+      "name": "Joghurt (125g)",
+      "calories": 76,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 171284,
+          "g": 125
+        }
+      ]
     },
     {
-      "name": "Mousse au Chocolat",
-      "calories": 230,
-      "emoji": "🍫"
+      "name": "Mousse au Chocolat (125g)",
+      "calories": 281,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "fdcId": 168777,
+          "g": 125
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Auf die Bechergröße achten",
-      "text": "Ein Standard-Becher (125g) liefert rund 178 kcal. Größere 200g-Becher kommen schnell auf knapp 285 kcal. Ein Blick auf die Grammzahl lohnt sich.",
+      "text": "Ein Standard-Becher (125g) liefert rund 178 kcal. Größere 200g-Becher kommen schnell auf rund 284 kcal. Ein Blick auf die Grammzahl lohnt sich.",
       "icon": "🍮"
     },
     {
       "title": "Protein-Variante als Alternative",
-      "text": "Protein-Pudding bringt bei ähnlicher Kalorienzahl deutlich mehr Eiweiß (oft 18-20g pro Becher). Das sättigt länger und ist im Vergleich die bessere Wahl.",
+      "text": "Protein-Pudding bringt bei ähnlicher Kalorienzahl deutlich mehr Eiweiß. Das sättigt länger und ist im Vergleich die bessere Wahl.",
       "icon": "💪"
     },
     {
@@ -141,7 +163,7 @@
     },
     {
       "question": "Wie viel Protein hat Schokopudding?",
-      "answer": "Klassischer Schokopudding hat nur rund 2g Eiweiß pro 100g. Spezielle Protein-Puddings liefern dagegen oft 18-20g Eiweiß pro Becher."
+      "answer": "Klassischer Schokopudding hat nur rund 2g Eiweiß pro 100g. Spezielle Protein-Puddings liefern dagegen deutlich mehr."
     },
     {
       "question": "Ist Schokopudding zum Abnehmen geeignet?",

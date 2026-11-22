@@ -3,9 +3,10 @@
   "name": "Apfelmark",
   "emoji": "🍎",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 171695 (Applesauce, canned, unsweetened, without added ascorbic acid (Includes foods for USDA's Food Distribution Program)), Werte je 100 g",
   "seo": {
     "title": "Apfelmark Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Apfelmark? Ungesüßtes Apfelmark hat nur ca. 50 kcal/100g. Nährwerte pro Portion, Vergleich mit Apfelmus & Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Apfelmark? Ungesüßtes Apfelmark hat nur 42 kcal/100g (USDA). Nährwerte pro Portion, Vergleich mit Apfelmus & Diät-Tipps.",
     "keywords": [
       "apfelmark kalorien",
       "apfelmark kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 50,
-    "protein_per_100g": 0.3,
-    "carbs_per_100g": 12,
+    "calories_per_100g": 42,
+    "protein_per_100g": 0.2,
+    "carbs_per_100g": 11.3,
     "fat_per_100g": 0.1,
-    "fiber_per_100g": 1.5,
+    "fiber_per_100g": 1.1,
     "typical_portion_g": 125,
     "typical_portion_name": "1 Portion (125g)"
   },
@@ -30,48 +31,48 @@
     {
       "name": "Kleine Portion (80g)",
       "portion_g": 80,
-      "calories": 40,
+      "calories": 34,
       "protein": 0,
-      "carbs": 10,
+      "carbs": 9,
       "fat": 0
     },
     {
       "name": "1 Portion (125g)",
       "portion_g": 125,
-      "calories": 63,
+      "calories": 53,
       "protein": 0,
-      "carbs": 15,
+      "carbs": 14,
       "fat": 0,
       "tip": "Standard"
     },
     {
       "name": "Große Portion (150g)",
       "portion_g": 150,
-      "calories": 75,
-      "protein": 1,
-      "carbs": 18,
+      "calories": 63,
+      "protein": 0,
+      "carbs": 17,
       "fat": 0
     },
     {
       "name": "Kleiner Becher (200g)",
       "portion_g": 200,
-      "calories": 100,
-      "protein": 1,
-      "carbs": 24,
+      "calories": 84,
+      "protein": 0,
+      "carbs": 23,
       "fat": 0
     },
     {
       "name": "Großes Glas (250g)",
       "portion_g": 250,
-      "calories": 125,
+      "calories": 105,
       "protein": 1,
-      "carbs": 30,
+      "carbs": 28,
       "fat": 0
     },
     {
       "name": "1 Esslöffel (20g)",
       "portion_g": 20,
-      "calories": 10,
+      "calories": 8,
       "protein": 0,
       "carbs": 2,
       "fat": 0
@@ -79,39 +80,69 @@
     {
       "name": "Apfelmus gesüßt (125g)",
       "portion_g": 125,
-      "calories": 88,
+      "calories": 85,
       "protein": 0,
-      "carbs": 21,
+      "carbs": 22,
       "fat": 0,
-      "tip": "Mit Zucker – mehr Kalorien"
+      "tip": "Mit Zucker, deshalb mehr Kalorien",
+      "basis": [
+        {
+          "fdcId": 171696,
+          "g": 125
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Apfelmus (gesüßt, 125g)",
-      "calories": 88,
-      "emoji": "🍏"
+      "calories": 85,
+      "emoji": "🍏",
+      "basis": [
+        {
+          "fdcId": 171696,
+          "g": 125
+        }
+      ]
     },
     {
       "name": "Fruchtjoghurt (150g)",
-      "calories": 150,
-      "emoji": "🥣"
+      "calories": 159,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "fruchtjoghurt",
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Apfel (mittel, 180g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Pudding (125g)",
-      "calories": 165,
-      "emoji": "🍮"
+      "calories": 141,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "pudding",
+          "g": 125
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ungesüßt ist die schlankere Wahl",
-      "text": "Apfelmark wird ohne Zuckerzusatz hergestellt und hat nur ca. 50 kcal/100g. Gesüßtes Apfelmus kommt dagegen auf rund 70 kcal/100g.",
+      "text": "Apfelmark wird ohne Zuckerzusatz hergestellt und hat nur 42 kcal/100g. Gesüßtes Apfelmus kommt dagegen auf rund 68 kcal/100g.",
       "icon": "🍎"
     },
     {
@@ -121,12 +152,12 @@
     },
     {
       "title": "Toppingt für Haferbrei und Quark",
-      "text": "1 Esslöffel Apfelmark (20g) bringt nur ca. 10 kcal, sorgt aber für natürliche Süße in Porridge, Magerquark oder Joghurt.",
+      "text": "1 Esslöffel Apfelmark (20g) bringt nur ca. 8 kcal, sorgt aber für natürliche Süße in Porridge, Magerquark oder Joghurt.",
       "icon": "🥣"
     },
     {
       "title": "Auf die Zutatenliste achten",
-      "text": "Echtes Apfelmark enthält nur Äpfel, ohne Zuckerzusatz. Manche Produkte sind dennoch mit Zucker oder Vitamin C versetzt – kurz prüfen.",
+      "text": "Echtes Apfelmark enthält nur Äpfel, ohne Zuckerzusatz. Manche Produkte sind dennoch mit Zucker oder Vitamin C versetzt, also kurz prüfen.",
       "icon": "🔍"
     },
     {
@@ -138,27 +169,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Apfelmark?",
-      "answer": "Ungesüßtes Apfelmark hat ca. 50 kcal pro 100g. Eine typische Portion (125g) kommt damit auf rund 63 kcal."
+      "answer": "Ungesüßtes Apfelmark hat 42 kcal pro 100g. Eine typische Portion (125g) kommt damit auf rund 53 kcal."
     },
     {
       "question": "Was ist der Unterschied zwischen Apfelmark und Apfelmus?",
-      "answer": "Apfelmark wird ohne Zuckerzusatz hergestellt und hat ca. 50 kcal/100g. Apfelmus enthält meist zugesetzten Zucker und liegt bei rund 70 kcal/100g."
+      "answer": "Apfelmark wird ohne Zuckerzusatz hergestellt und hat 42 kcal/100g. Apfelmus enthält meist zugesetzten Zucker und liegt bei rund 68 kcal/100g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Apfelmark?",
-      "answer": "Apfelmark hat ca. 12g Kohlenhydrate pro 100g, fast ausschließlich aus dem natürlichen Fruchtzucker der Äpfel. Eine 125g-Portion enthält ca. 15g."
+      "answer": "Apfelmark hat ca. 11g Kohlenhydrate pro 100g, fast ausschließlich aus dem natürlichen Fruchtzucker der Äpfel. Eine 125g-Portion enthält ca. 14g."
     },
     {
       "question": "Ist Apfelmark zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit nur 50 kcal/100g und kaum Fett ist Apfelmark kalorienarm. Da es weniger sättigt als ein ganzer Apfel, sollte man auf die Portionsgröße achten."
+      "answer": "In Maßen ja. Mit nur 42 kcal/100g und kaum Fett ist Apfelmark kalorienarm. Da es weniger sättigt als ein ganzer Apfel, sollte man auf die Portionsgröße achten."
     },
     {
       "question": "Wie viel Protein hat Apfelmark?",
-      "answer": "Apfelmark enthält nur etwa 0,3g Protein pro 100g. Es ist kein Eiweißlieferant, sondern liefert vor allem Kohlenhydrate."
+      "answer": "Apfelmark enthält nur etwa 0,2g Protein pro 100g. Es ist kein Eiweißlieferant, sondern liefert vor allem Kohlenhydrate."
     },
     {
       "question": "Ist Apfelmark gesund?",
-      "answer": "Apfelmark aus reinen Äpfeln ist eine fett- und zuckerzusatzfreie Alternative zu süßen Desserts und liefert etwas Ballaststoffe (ca. 1,5g/100g). Ein frischer Apfel hat aber mehr Ballaststoffe und sättigt besser."
+      "answer": "Apfelmark aus reinen Äpfeln ist eine fett- und zuckerzusatzfreie Alternative zu süßen Desserts und liefert etwas Ballaststoffe (ca. 1,1g/100g). Ein frischer Apfel hat aber mehr Ballaststoffe und sättigt besser."
     }
   ],
   "related_foods": [

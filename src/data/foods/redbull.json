@@ -3,9 +3,10 @@
   "name": "Red Bull",
   "emoji": "🥫",
   "category": "getraenk",
+  "source": "USDA FoodData Central, FDC-ID 2710752 (Energy drink (Red Bull): 43 kcal), Werte je 100 g; je 100 ml mit 1,048 g/ml 45 kcal",
   "seo": {
     "title": "Red Bull Kalorien: Nährwerte & Dosen | Mahlzait",
-    "description": "Wie viele Kalorien hat Red Bull? Eine 250-ml-Dose hat ca. 115 kcal. Alle Nährwerte pro 100 ml, Dosengrößen im Vergleich + Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Red Bull? Eine 250-ml-Dose hat ca. 113 kcal. Alle Nährwerte pro 100 ml, Dosengrößen im Vergleich + Tipps zum Abnehmen.",
     "keywords": [
       "kcal redbull",
       "red bull kalorien",
@@ -17,62 +18,69 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 46,
-    "protein_per_100g": 0,
-    "carbs_per_100g": 11,
+    "calories_per_100g": 43,
+    "protein_per_100g": 0.5,
+    "carbs_per_100g": 10.2,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
-    "typical_portion_g": 250,
+    "typical_portion_g": 262,
     "typical_portion_name": "1 Dose (250 ml)"
   },
   "variants": [
     {
       "name": "Red Bull Dose (250 ml)",
-      "portion_g": 250,
-      "calories": 115,
-      "protein": 0,
-      "carbs": 28,
+      "portion_g": 262,
+      "calories": 113,
+      "protein": 1,
+      "carbs": 27,
       "fat": 0,
       "tip": "Standard-Dose"
     },
     {
       "name": "Red Bull Mini (200 ml)",
-      "portion_g": 200,
-      "calories": 92,
-      "protein": 0,
-      "carbs": 22,
+      "portion_g": 210,
+      "calories": 90,
+      "protein": 1,
+      "carbs": 21,
       "fat": 0
     },
     {
       "name": "Red Bull Dose groß (355 ml)",
-      "portion_g": 355,
-      "calories": 163,
-      "protein": 0,
-      "carbs": 39,
+      "portion_g": 372,
+      "calories": 160,
+      "protein": 2,
+      "carbs": 38,
       "fat": 0
     },
     {
       "name": "Red Bull XXL (473 ml)",
-      "portion_g": 473,
-      "calories": 218,
-      "protein": 0,
-      "carbs": 52,
+      "portion_g": 496,
+      "calories": 213,
+      "protein": 2,
+      "carbs": 51,
       "fat": 0
     },
     {
       "name": "Red Bull Sugarfree (250 ml)",
-      "portion_g": 250,
-      "calories": 3,
-      "protein": 0,
-      "carbs": 0,
+      "portion_g": 254,
+      "calories": 13,
+      "protein": 1,
+      "carbs": 2,
       "fat": 0,
-      "tip": "Fast kalorienfrei"
+      "tip": "Fast kalorienfrei",
+      "basis": [
+        {
+          "fdcId": 2710763,
+          "ml": 250,
+          "g": 254
+        }
+      ]
     },
     {
       "name": "Pro 100 ml",
-      "portion_g": 100,
-      "calories": 46,
-      "protein": 0,
+      "portion_g": 105,
+      "calories": 45,
+      "protein": 1,
       "carbs": 11,
       "fat": 0
     }
@@ -80,39 +88,67 @@
   "comparison": [
     {
       "name": "Cola (250 ml)",
-      "calories": 105,
-      "emoji": "🥤"
+      "calories": 110,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "ml": 250,
+          "g": 262
+        }
+      ]
     },
     {
       "name": "Apfelsaft (250 ml)",
-      "calories": 115,
-      "emoji": "🧃"
+      "calories": 121,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "ml": 250,
+          "g": 262
+        }
+      ]
     },
     {
       "name": "Club Mate (250 ml)",
       "calories": 50,
-      "emoji": "🧉"
+      "emoji": "🧉",
+      "basis": [
+        {
+          "slug": "club-mate",
+          "ml": 250,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Mineralwasser (250 ml)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser",
+          "ml": 250,
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Versteckter Zucker",
-      "text": "Eine 250-ml-Dose Red Bull enthält rund 28 g Zucker – das entspricht etwa 9 Stück Würfelzucker. Wer mehrere Dosen am Tag trinkt, summiert schnell viele leere Kalorien.",
+      "text": "Eine 250-ml-Dose Red Bull enthält rund 27 g Zucker. Wer mehrere Dosen am Tag trinkt, summiert schnell viele leere Kalorien.",
       "icon": "🍬"
     },
     {
       "title": "Sugarfree spart Kalorien",
-      "text": "Die zuckerfreie Variante hat statt 115 kcal nur etwa 3 kcal pro Dose. Beim Abnehmen ist sie die deutlich bessere Wahl, der Koffeingehalt bleibt gleich.",
+      "text": "Die zuckerfreie Variante hat statt ca. 113 kcal nur etwa 13 kcal pro Dose. Beim Abnehmen ist sie die deutlich bessere Wahl, der Koffeingehalt bleibt gleich.",
       "icon": "✅"
     },
     {
       "title": "Koffein im Blick behalten",
-      "text": "Eine Dose (250 ml) liefert rund 80 mg Koffein, ähnlich wie eine Tasse Filterkaffee. Mehrere Dosen über den Tag können den Schlaf stören.",
+      "text": "Eine Dose (250 ml) liefert laut USDA rund 76 mg Koffein, ähnlich wie eine Tasse Filterkaffee. Mehrere Dosen über den Tag können den Schlaf stören.",
       "icon": "☕"
     },
     {
@@ -122,22 +158,22 @@
     },
     {
       "title": "Portion bewusst wählen",
-      "text": "Die kleine 200-ml-Mini-Dose hat mit 92 kcal etwas weniger als die Standard-Dose. So kontrollierst du Zucker- und Kalorienmenge leichter.",
+      "text": "Die kleine 200-ml-Mini-Dose hat mit ca. 90 kcal etwas weniger als die Standard-Dose. So kontrollierst du Zucker- und Kalorienmenge leichter.",
       "icon": "📏"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Dose Red Bull?",
-      "answer": "Eine Standard-Dose Red Bull (250 ml) hat ca. 115 kcal. Die große 355-ml-Dose kommt auf etwa 163 kcal."
+      "answer": "Eine Standard-Dose Red Bull (250 ml) hat laut USDA ca. 113 kcal. Die große 355-ml-Dose kommt auf etwa 160 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Red Bull pro 100 ml?",
-      "answer": "Red Bull hat 46 kcal pro 100 ml. Diese Angabe stammt aus der offiziellen Nährwertdeklaration des Herstellers."
+      "answer": "Laut USDA hat Red Bull ca. 45 kcal pro 100 ml (43 kcal pro 100 g)."
     },
     {
       "question": "Wie viel Zucker steckt in Red Bull?",
-      "answer": "Pro 100 ml enthält Red Bull 11 g Zucker. Eine 250-ml-Dose kommt damit auf rund 28 g – etwa 9 Stück Würfelzucker."
+      "answer": "Pro 100 ml enthält Red Bull rund 10,7 g Zucker. Eine 250-ml-Dose kommt damit auf rund 27 g."
     },
     {
       "question": "Hat Red Bull Eiweiß oder Fett?",
@@ -145,11 +181,11 @@
     },
     {
       "question": "Ist Red Bull zum Abnehmen geeignet?",
-      "answer": "Die normale Variante liefert mit 28 g Zucker pro Dose viele leere Kalorien und ist beim Abnehmen ungünstig. Red Bull Sugarfree hat dagegen nur etwa 3 kcal pro Dose."
+      "answer": "Die normale Variante liefert mit rund 27 g Zucker pro Dose viele leere Kalorien und ist beim Abnehmen ungünstig. Red Bull Sugarfree hat dagegen nur etwa 13 kcal pro Dose."
     },
     {
       "question": "Wie viele Kalorien hat Red Bull Sugarfree?",
-      "answer": "Red Bull Sugarfree ist nahezu kalorienfrei: Eine 250-ml-Dose hat nur rund 3 kcal, da der Zucker durch Süßstoffe ersetzt wird."
+      "answer": "Red Bull Sugarfree ist nahezu kalorienfrei: Eine 250-ml-Dose hat laut USDA nur rund 13 kcal, da der Zucker durch Süßstoffe ersetzt wird."
     }
   ],
   "related_foods": [

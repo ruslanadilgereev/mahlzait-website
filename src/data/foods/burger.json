@@ -3,50 +3,243 @@
   "name": "Burger",
   "emoji": "🍔",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2706920 (Hamburger, NFS), Werte je 100 g",
   "seo": {
-    "title": "Burger Kalorien: 250 kcal/100g + Rechner & Varianten | Mahlzait",
-    "description": "Burger hat 250 kcal pro 100g. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 8 Varianten & Spar-Tipps.",
-    "keywords": ["burger kalorien", "kalorien burger", "burger nährwerte", "cheeseburger kalorien", "big mac kalorien", "veggie burger kalorien", "burger kalorien pro stück", "wie viele kalorien hat ein burger"]
+    "title": "Burger Kalorien: 288 kcal/100g + Rechner & Varianten | Mahlzait",
+    "description": "Burger hat ca. 288 kcal pro 100g. Berechne Kalorien für deine Portion mit dem kostenlosen Rechner. Inkl. 8 Varianten & Spar-Tipps.",
+    "keywords": [
+      "burger kalorien",
+      "kalorien burger",
+      "burger nährwerte",
+      "cheeseburger kalorien",
+      "big mac kalorien",
+      "veggie burger kalorien",
+      "burger kalorien pro stück",
+      "wie viele kalorien hat ein burger"
+    ]
   },
   "overview": {
-    "calories_per_100g": 250,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 22,
-    "fat_per_100g": 12,
-    "fiber_per_100g": 1.2,
-    "typical_portion_g": 220,
+    "calories_per_100g": 288,
+    "protein_per_100g": 17.5,
+    "carbs_per_100g": 20.7,
+    "fat_per_100g": 14.4,
+    "fiber_per_100g": 0.7,
+    "typical_portion_g": 145,
     "typical_portion_name": "1 Burger"
   },
   "variants": [
-    { "name": "Hamburger (einfach)", "portion_g": 170, "calories": 390, "protein": 22, "carbs": 33, "fat": 18 },
-    { "name": "Cheeseburger", "portion_g": 190, "calories": 470, "protein": 26, "carbs": 34, "fat": 24 },
-    { "name": "Big Mac", "portion_g": 215, "calories": 509, "protein": 26, "carbs": 43, "fat": 26 },
-    { "name": "Double Cheeseburger", "portion_g": 250, "calories": 650, "protein": 40, "carbs": 36, "fat": 36, "tip": "Meistes Protein" },
-    { "name": "Whopper (Burger King)", "portion_g": 270, "calories": 660, "protein": 30, "carbs": 50, "fat": 38 },
-    { "name": "Chicken Burger", "portion_g": 200, "calories": 430, "protein": 28, "carbs": 38, "fat": 18, "tip": "Weniger Fett" },
-    { "name": "Veggie Burger", "portion_g": 200, "calories": 370, "protein": 16, "carbs": 40, "fat": 14, "tip": "Kalorienärmste" },
-    { "name": "Gourmet-Burger (Restaurant)", "portion_g": 300, "calories": 780, "protein": 38, "carbs": 42, "fat": 48 }
+    {
+      "name": "Hamburger (einfach)",
+      "portion_g": 145,
+      "calories": 418,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 21
+    },
+    {
+      "name": "Cheeseburger",
+      "portion_g": 165,
+      "calories": 488,
+      "protein": 29,
+      "carbs": 31,
+      "fat": 27,
+      "basis": [
+        {
+          "fdcId": 2706888,
+          "g": 165
+        }
+      ]
+    },
+    {
+      "name": "Big Mac",
+      "portion_g": 219,
+      "calories": 563,
+      "protein": 26,
+      "carbs": 44,
+      "fat": 33,
+      "basis": [
+        {
+          "fdcId": 170720,
+          "g": 219
+        }
+      ]
+    },
+    {
+      "name": "Double Cheeseburger",
+      "portion_g": 270,
+      "calories": 810,
+      "protein": 53,
+      "carbs": 32,
+      "fat": 51,
+      "tip": "Meistes Protein",
+      "basis": [
+        {
+          "fdcId": 2706907,
+          "g": 270
+        }
+      ]
+    },
+    {
+      "name": "Whopper (Burger King)",
+      "portion_g": 291,
+      "calories": 678,
+      "protein": 31,
+      "carbs": 54,
+      "fat": 37,
+      "basis": [
+        {
+          "fdcId": 170727,
+          "g": 291
+        }
+      ]
+    },
+    {
+      "name": "Chicken Burger",
+      "portion_g": 140,
+      "calories": 393,
+      "protein": 17,
+      "carbs": 38,
+      "fat": 19,
+      "tip": "Etwas weniger Fett",
+      "basis": [
+        {
+          "fdcId": 2707000,
+          "g": 140
+        }
+      ]
+    },
+    {
+      "name": "Veggie Burger",
+      "portion_g": 160,
+      "calories": 358,
+      "protein": 21,
+      "carbs": 49,
+      "fat": 8,
+      "tip": "Kalorienärmste",
+      "basis": [
+        {
+          "fdcId": 2707481,
+          "g": 160
+        }
+      ]
+    },
+    {
+      "name": "Burger mit großem Patty",
+      "portion_g": 175,
+      "calories": 506,
+      "protein": 32,
+      "carbs": 30,
+      "fat": 27,
+      "basis": [
+        {
+          "fdcId": 2706934,
+          "g": 175
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Döner Kebab", "calories": 696, "emoji": "🥙" },
-    { "name": "Pizza Margherita", "calories": 735, "emoji": "🍕" },
-    { "name": "Currywurst mit Pommes", "calories": 800, "emoji": "🌭" },
-    { "name": "Schnitzel (paniert)", "calories": 500, "emoji": "🥩" }
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Schnitzel (paniert)",
+      "calories": 595,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel"
+        }
+      ]
+    },
+    {
+      "name": "Bratwurst im Brötchen",
+      "calories": 675,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "variante": "Bratwurst im Brötchen"
+        }
+      ]
+    },
+    {
+      "name": "Pommes frites (mittlere Portion)",
+      "calories": 378,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "fdcId": 170721,
+          "g": 117
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Chicken Burger wählen", "text": "Ein Chicken Burger hat ca. 20% weniger Kalorien und weniger Fett als ein Beef-Burger.", "icon": "🍗" },
-    { "title": "Ohne Mayo bestellen", "text": "Mayo und spezielle Saucen fügen 80-150 kcal hinzu. Senf oder Ketchup sind leichter.", "icon": "🚫" },
-    { "title": "Einfach statt Doppel", "text": "Ein einfacher Hamburger hat 390 kcal – ein Double Cheeseburger 650 kcal. Das Patty macht den Unterschied.", "icon": "1️⃣" },
-    { "title": "Pommes durch Salat ersetzen", "text": "Statt Pommes als Beilage (300+ kcal) lieber einen Beilagensalat (50 kcal) bestellen.", "icon": "🥗" },
-    { "title": "Selbst machen", "text": "Selbstgemachte Burger mit magerem Hackfleisch und Vollkornbrötchen haben weniger Fett als Fast-Food-Burger.", "icon": "👩‍🍳" }
+    {
+      "title": "Chicken Burger wählen",
+      "text": "Ein Chicken Burger (140g) hat mit ca. 393 kcal etwas weniger Kalorien und Fett als ein einfacher Hamburger (145g, ca. 418 kcal). Der Unterschied ist kleiner als oft gedacht.",
+      "icon": "🍗"
+    },
+    {
+      "title": "Ohne Mayo bestellen",
+      "text": "Mayo und spezielle Saucen bringen viele zusätzliche Kalorien. Senf oder Ketchup sind leichter.",
+      "icon": "🚫"
+    },
+    {
+      "title": "Einfach statt Doppel",
+      "text": "Ein einfacher Hamburger hat ca. 418 kcal, ein Double Cheeseburger ca. 810 kcal. Das zweite Patty und der Käse machen den Unterschied.",
+      "icon": "1️⃣"
+    },
+    {
+      "title": "Pommes durch Salat ersetzen",
+      "text": "Statt Pommes als Beilage (mittlere Portion ca. 378 kcal) lieber einen Beilagensalat bestellen.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Selbst machen",
+      "text": "Selbstgemachte Burger mit magerem Hackfleisch und Vollkornbrötchen haben weniger Fett als Fast-Food-Burger.",
+      "icon": "👩‍🍳"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Burger?", "answer": "Ein einfacher Hamburger hat ca. 390 kcal, ein Cheeseburger ca. 470 kcal, ein Big Mac ca. 509 kcal. Gourmet-Burger im Restaurant können auf 780 kcal kommen." },
-    { "question": "Wie viele Kalorien hat ein Big Mac?", "answer": "Ein Big Mac hat ca. 509 kcal, 26g Protein, 43g Kohlenhydrate und 26g Fett. Mit einer mittleren Portion Pommes und Cola kommt das Menü auf über 1.000 kcal." },
-    { "question": "Welcher Burger hat die wenigsten Kalorien?", "answer": "Ein Veggie Burger hat mit ca. 370 kcal die wenigsten Kalorien. Ein einfacher Hamburger ohne Käse liegt bei ca. 390 kcal." },
-    { "question": "Ist Burger oder Döner kalorienärmer?", "answer": "Ein einfacher Hamburger (390 kcal) hat weniger Kalorien als ein Döner (696 kcal). Ein Cheeseburger (470 kcal) liegt aber bereits näher am Döner." },
-    { "question": "Wie viel Protein hat ein Burger?", "answer": "Ein Hamburger hat ca. 22g Protein, ein Cheeseburger ca. 26g. Ein Double Cheeseburger liefert mit 40g Protein am meisten – gut für den Muskelaufbau." },
-    { "question": "Kann man Burger essen und trotzdem abnehmen?", "answer": "Ja, wenn du die Kalorien im Blick behältst. Wähle einen einfachen Hamburger oder Chicken Burger, verzichte auf Pommes und Cola, und plane den Burger in dein Tagesbudget ein." }
+    {
+      "question": "Wie viele Kalorien hat ein Burger?",
+      "answer": "Ein einfacher Hamburger hat ca. 418 kcal, ein Cheeseburger ca. 488 kcal, ein Big Mac ca. 563 kcal. Ein Double Cheeseburger kommt auf rund 810 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Big Mac?",
+      "answer": "Ein Big Mac (219g) hat ca. 563 kcal, 26g Protein, 44g Kohlenhydrate und 33g Fett. Mit einer mittleren Portion Pommes (ca. 378 kcal) kommt das Menü schon auf rund 941 kcal, ein Softdrink kommt noch dazu."
+    },
+    {
+      "question": "Welcher Burger hat die wenigsten Kalorien?",
+      "answer": "Ein Veggie Burger hat mit ca. 358 kcal die wenigsten Kalorien. Ein Chicken Burger liegt bei ca. 393 kcal, ein einfacher Hamburger ohne Käse bei ca. 418 kcal."
+    },
+    {
+      "question": "Ist Burger oder Döner kalorienärmer?",
+      "answer": "Ein einfacher Hamburger (418 kcal) hat weniger Kalorien als ein Döner (696 kcal). Ein Cheeseburger (488 kcal) liegt aber bereits näher am Döner."
+    },
+    {
+      "question": "Wie viel Protein hat ein Burger?",
+      "answer": "Ein Hamburger hat ca. 25g Protein, ein Cheeseburger ca. 29g. Ein Double Cheeseburger liefert mit ca. 53g Protein am meisten, gut für den Muskelaufbau."
+    },
+    {
+      "question": "Kann man Burger essen und trotzdem abnehmen?",
+      "answer": "Ja, wenn du die Kalorien im Blick behältst. Wähle einen einfachen Hamburger oder Chicken Burger, verzichte auf Pommes und Cola, und plane den Burger in dein Tagesbudget ein."
+    }
   ],
-  "related_foods": ["pommes-frites", "pizza", "currywurst", "schnitzel"]
+  "related_foods": [
+    "pommes-frites",
+    "pizza",
+    "currywurst",
+    "schnitzel"
+  ]
 }

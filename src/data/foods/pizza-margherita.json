@@ -3,48 +3,207 @@
   "name": "Pizza Margherita",
   "emoji": "🍕",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 2708614 (Pizza, cheese, from restaurant or fast food, NS as to type of crust), Werte je 100 g",
   "seo": {
     "title": "Pizza Margherita Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Pizza Margherita? Pro Stück, ganze Pizza & TK – alle Nährwerte. Kostenloser Kalorien-Rechner mit Spar-Tipps."
+    "description": "Wie viele Kalorien hat Pizza Margherita? Pro Stück, ganze Pizza & TK: alle Nährwerte. Kostenloser Kalorien-Rechner mit Spar-Tipps."
   },
   "overview": {
-    "calories_per_100g": 220,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 28,
-    "fat_per_100g": 8,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 266,
+    "protein_per_100g": 11.4,
+    "carbs_per_100g": 33.3,
+    "fat_per_100g": 9.7,
+    "fiber_per_100g": 2.3,
     "typical_portion_g": 140,
-    "typical_portion_name": "1 Stück (⅛ Pizza)"
+    "typical_portion_name": "1 Stück (140g)"
   },
   "variants": [
-    {"name": "Pizza Margherita (1 Stück, Pizzeria)", "portion_g": 140, "calories": 308, "protein": 13, "carbs": 39, "fat": 11},
-    {"name": "Pizza Margherita ganz (Pizzeria)", "portion_g": 750, "calories": 1650, "protein": 68, "carbs": 210, "fat": 60, "tip": "Ganze 30cm Pizza"},
-    {"name": "TK-Pizza Margherita", "portion_g": 300, "calories": 660, "protein": 27, "carbs": 84, "fat": 24, "tip": "Tiefkühl-Version"},
-    {"name": "Neapolitanische Margherita", "portion_g": 300, "calories": 680, "protein": 28, "carbs": 85, "fat": 25, "tip": "Dünner Boden, mehr Belag"},
-    {"name": "Pizza Margherita mit Büffelmozzarella", "portion_g": 160, "calories": 350, "protein": 16, "carbs": 38, "fat": 14, "tip": "Premium-Variante"},
-    {"name": "Pizza Margherita Dünn & Knusprig", "portion_g": 260, "calories": 546, "protein": 22, "carbs": 68, "fat": 20, "tip": "Weniger Teig"},
-    {"name": "Mini-Pizza Margherita", "portion_g": 160, "calories": 352, "protein": 14, "carbs": 45, "fat": 13}
+    {
+      "name": "Pizza Margherita (1 Stück, Pizzeria)",
+      "portion_g": 140,
+      "calories": 372,
+      "protein": 16,
+      "carbs": 47,
+      "fat": 14
+    },
+    {
+      "name": "Pizza Margherita ganz (Pizzeria)",
+      "portion_g": 750,
+      "calories": 1995,
+      "protein": 86,
+      "carbs": 250,
+      "fat": 73,
+      "tip": "Ganze 30cm Pizza"
+    },
+    {
+      "name": "TK-Pizza Margherita",
+      "portion_g": 300,
+      "calories": 789,
+      "protein": 36,
+      "carbs": 86,
+      "fat": 33,
+      "tip": "Tiefkühl-Version",
+      "basis": [
+        {
+          "fdcId": 2708612,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Neapolitanische Margherita",
+      "portion_g": 300,
+      "calories": 798,
+      "protein": 34,
+      "carbs": 100,
+      "fat": 29,
+      "tip": "Dünner Boden, mehr Belag",
+      "basis": [
+        {
+          "fdcId": 2708615,
+          "g": 300
+        }
+      ]
+    },
+    {
+      "name": "Pizza Margherita Dünn & Knusprig",
+      "portion_g": 260,
+      "calories": 692,
+      "protein": 30,
+      "carbs": 87,
+      "fat": 25,
+      "tip": "Dünner Boden",
+      "basis": [
+        {
+          "fdcId": 2708615,
+          "g": 260
+        }
+      ]
+    },
+    {
+      "name": "Mini-Pizza Margherita",
+      "portion_g": 160,
+      "calories": 429,
+      "protein": 17,
+      "carbs": 46,
+      "fat": 20,
+      "basis": [
+        {
+          "slug": "mini-pizza",
+          "g": 160
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Pizza Salami (1 Stück)", "calories": 390, "emoji": "🍕"},
-    {"name": "Pizza Hawaii (1 Stück)", "calories": 353, "emoji": "🍕"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Pasta Aglio e Olio", "calories": 450, "emoji": "🍝"}
+    {
+      "name": "Pizza Salami (1 Stück, 150g)",
+      "calories": 423,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami"
+        }
+      ]
+    },
+    {
+      "name": "Pizza Hawaii (1 Stück, 150g)",
+      "calories": 341,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-hawaii"
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Spaghetti Aglio e Olio (220g)",
+      "calories": 456,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 200
+        },
+        {
+          "fdcId": 171413,
+          "g": 15
+        },
+        {
+          "fdcId": 169230,
+          "g": 5
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Kalorienärmste Pizza-Klassik", "text": "Pizza Margherita hat von allen Klassikern die wenigsten Kalorien – ca. 220 kcal/100g. Salami hat 260, Quattro Formaggi 280.", "icon": "🏆"},
-    {"title": "Neapolitanisch wählen", "text": "Neapolitanische Pizza hat einen dünnen Boden mit mehr Belag-Verhältnis – geschmacklich und kalorienmäßig oft besser.", "icon": "🇮🇹"},
-    {"title": "Olivenöl sparsam", "text": "Ein EL Olivenöl hat 90 kcal. Viele Pizzerien geben extra Öl auf die fertige Pizza. Bei Bedarf ablehnen.", "icon": "🫒"},
-    {"title": "Mit Salat kombinieren", "text": "Ein Beilagensalat vor der Pizza sättigt und verhindert, dass du die ganze Pizza isst.", "icon": "🥗"},
-    {"title": "Frische Basilikum-Topping", "text": "Basilikum, Rucola oder Tomaten nach dem Backen sind kalorienfreie Geschmacksverstärker.", "icon": "🌿"}
+    {
+      "title": "Leichter als Salami",
+      "text": "Pizza Margherita liegt mit ca. 266 kcal/100g unter Pizza Salami (282 kcal/100g). Pizza Hawaii hat sogar noch weniger (227 kcal/100g).",
+      "icon": "🏆"
+    },
+    {
+      "title": "Neapolitanisch wählen",
+      "text": "Neapolitanische Pizza hat einen dünnen Boden mit mehr Belag-Verhältnis, geschmacklich oft besser.",
+      "icon": "🇮🇹"
+    },
+    {
+      "title": "Olivenöl sparsam",
+      "text": "Ein EL Olivenöl (15g) hat rund 133 kcal. Viele Pizzerien geben extra Öl auf die fertige Pizza. Bei Bedarf ablehnen.",
+      "icon": "🫒"
+    },
+    {
+      "title": "Mit Salat kombinieren",
+      "text": "Ein Beilagensalat vor der Pizza sättigt und verhindert, dass du die ganze Pizza isst.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Frische Basilikum-Topping",
+      "text": "Basilikum, Rucola oder Tomaten nach dem Backen sind kalorienfreie Geschmacksverstärker.",
+      "icon": "🌿"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat ein Stück Pizza Margherita?", "answer": "Ein Stück Pizza Margherita hat ca. 308 kcal (⅛ einer großen Pizza). Das macht sie zur kalorienärmsten der klassischen Pizzen."},
-    {"question": "Wie viele Kalorien hat eine ganze Pizza Margherita?", "answer": "Eine ganze Pizza Margherita (30cm) hat ca. 1650 kcal. Eine TK-Pizza hat ca. 660 kcal, da sie deutlich kleiner ist."},
-    {"question": "Ist Pizza Margherita die gesündeste Pizza?", "answer": "Unter den Klassikern ja. Mit ca. 220 kcal/100g und wenig Fett ist sie die leichteste Standard-Pizza. Pizza mit Gemüse-Belag kann noch kalorienärmer sein."},
-    {"question": "Wie viel Fett hat Pizza Margherita?", "answer": "Pizza Margherita hat ca. 8g Fett pro 100g – das kommt hauptsächlich vom Mozzarella und dem Olivenöl im Teig."},
-    {"question": "Was hat weniger Kalorien: Pizza Margherita oder Döner?", "answer": "Zwei Stücke Pizza Margherita (616 kcal) haben etwas weniger Kalorien als ein Döner (696 kcal). Drei Stücke (924 kcal) sind bereits mehr."},
-    {"question": "Wie viel Protein hat Pizza Margherita?", "answer": "Ein Stück Pizza Margherita liefert ca. 13g Protein, hauptsächlich aus dem Mozzarella. Das ist weniger als bei Pizza mit Fleischbelag."}
+    {
+      "question": "Wie viele Kalorien hat ein Stück Pizza Margherita?",
+      "answer": "Ein Stück Pizza Margherita (140g) hat ca. 372 kcal. Das ist weniger als ein Stück Pizza Salami (150g, 423 kcal)."
+    },
+    {
+      "question": "Wie viele Kalorien hat eine ganze Pizza Margherita?",
+      "answer": "Eine ganze Pizza Margherita (30cm) hat ca. 1995 kcal. Eine TK-Pizza (300g) hat ca. 789 kcal, da sie deutlich kleiner ist."
+    },
+    {
+      "question": "Ist Pizza Margherita die gesündeste Pizza?",
+      "answer": "Nicht unbedingt. Mit ca. 266 kcal/100g liegt sie unter Pizza Salami, Pizza Hawaii (227 kcal/100g) und Pizza mit Gemüse-Belag sind aber noch kalorienärmer."
+    },
+    {
+      "question": "Wie viel Fett hat Pizza Margherita?",
+      "answer": "Pizza Margherita hat ca. 10g Fett pro 100g, das kommt hauptsächlich vom Mozzarella und dem Olivenöl im Teig."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Pizza Margherita oder Döner?",
+      "answer": "Schon zwei Stücke Pizza Margherita (744 kcal) haben etwas mehr Kalorien als ein Döner (696 kcal). Ein Stück (372 kcal) hat gut die Hälfte."
+    },
+    {
+      "question": "Wie viel Protein hat Pizza Margherita?",
+      "answer": "Ein Stück Pizza Margherita liefert ca. 16g Protein, hauptsächlich aus dem Mozzarella. Das ist etwa so viel wie bei Pizza mit Fleischbelag."
+    }
   ],
-  "related_foods": ["pizza-salami", "pizza-hawaii", "pizza", "lasagne"]
+  "related_foods": [
+    "pizza-salami",
+    "pizza-hawaii",
+    "pizza",
+    "lasagne"
+  ]
 }

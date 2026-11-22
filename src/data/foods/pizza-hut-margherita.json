@@ -3,9 +3,10 @@
   "name": "Pizza Hut Margherita",
   "emoji": "🍕",
   "category": "fast-food",
+  "source": "USDA FoodData Central, FDC-ID 172040 (PIZZA HUT 12\" Cheese Pizza, Hand-Tossed Crust), Werte je 100 g",
   "seo": {
     "title": "Pizza Hut Margherita Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Pizza Hut Margherita? Eine mittlere Classic-Margherita hat ca. 870 kcal. Alle Nährwerte pro 100g, je Größe & Slice.",
+    "description": "Wie viele Kalorien hat eine Pizza Hut Margherita? Eine mittlere Classic-Margherita hat ca. 965 kcal. Alle Nährwerte pro 100g, je Größe & Slice.",
     "keywords": [
       "pizza hut margherita kcal",
       "pizza hut margherita kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 245,
-    "protein_per_100g": 10,
-    "carbs_per_100g": 30,
-    "fat_per_100g": 8.5,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 271,
+    "protein_per_100g": 11.9,
+    "carbs_per_100g": 31.2,
+    "fat_per_100g": 10.9,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 356,
     "typical_portion_name": "1 mittlere Margherita (Classic, 356g)"
   },
@@ -28,92 +29,127 @@
     {
       "name": "1 Slice mittlere Margherita (60g)",
       "portion_g": 60,
-      "calories": 147,
-      "protein": 6,
-      "carbs": 18,
-      "fat": 5,
+      "calories": 163,
+      "protein": 7,
+      "carbs": 19,
+      "fat": 7,
       "tip": "Eine mittlere Pizza wird meist in 6 Stücke geteilt."
     },
     {
       "name": "Margherita klein (Classic, 230g)",
       "portion_g": 230,
-      "calories": 564,
-      "protein": 23,
-      "carbs": 69,
-      "fat": 20
+      "calories": 623,
+      "protein": 27,
+      "carbs": 72,
+      "fat": 25
     },
     {
       "name": "Margherita mittel (Classic, 356g)",
       "portion_g": 356,
-      "calories": 872,
-      "protein": 36,
-      "carbs": 107,
-      "fat": 30,
+      "calories": 965,
+      "protein": 42,
+      "carbs": 111,
+      "fat": 39,
       "tip": "Standard"
     },
     {
       "name": "Margherita groß (Classic, 600g)",
       "portion_g": 600,
-      "calories": 1470,
-      "protein": 60,
-      "carbs": 180,
-      "fat": 51
+      "calories": 1626,
+      "protein": 71,
+      "carbs": 187,
+      "fat": 65
     },
     {
       "name": "Margherita mittel (Pan, dicker Boden, 400g)",
       "portion_g": 400,
-      "calories": 1100,
-      "protein": 40,
+      "calories": 1120,
+      "protein": 47,
       "carbs": 120,
-      "fat": 42,
-      "tip": "Der Pan-Boden ist dicker und fettreicher als Classic."
+      "fat": 50,
+      "tip": "Der Pan-Boden ist dicker und fettreicher als Classic.",
+      "basis": [
+        {
+          "fdcId": 172041,
+          "g": 400
+        }
+      ]
     },
     {
       "name": "Margherita mittel (Italian, dünner Boden, 300g)",
       "portion_g": 300,
-      "calories": 690,
-      "protein": 29,
-      "carbs": 84,
-      "fat": 23,
-      "tip": "Dünner Boden = die kalorienärmste Variante."
+      "calories": 909,
+      "protein": 46,
+      "carbs": 86,
+      "fat": 42,
+      "tip": "Dünner Boden, leichteste mittlere Pizza.",
+      "basis": [
+        {
+          "fdcId": 172042,
+          "g": 300
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Dominos Margherita (mittel)",
-      "calories": 800,
-      "emoji": "🍕"
+      "name": "Domino's Käsepizza (356g)",
+      "calories": 915,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "dominos-pizza",
+          "g": 356
+        }
+      ]
     },
     {
-      "name": "Pizza Margherita (TK, ganz)",
-      "calories": 590,
-      "emoji": "🍕"
+      "name": "Pizza Margherita (TK, ganz, 300g)",
+      "calories": 789,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-margherita",
+          "variante": "TK-Pizza Margherita"
+        }
+      ]
     },
     {
-      "name": "L'Osteria Margherita",
-      "calories": 920,
-      "emoji": "🍕"
+      "name": "L'Osteria Margherita (30 cm, 430g)",
+      "calories": 903,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "l-osteria-pizza"
+        }
+      ]
     },
     {
-      "name": "Cheeseburger (McDonald's)",
-      "calories": 302,
-      "emoji": "🍔"
+      "name": "Cheeseburger (McDonald's, 119g)",
+      "calories": 313,
+      "emoji": "🍔",
+      "basis": [
+        {
+          "fdcId": 170320,
+          "g": 119
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Dünner Boden spart Kalorien",
-      "text": "Die Italian-Variante mit dünnem Boden hat rund 690 kcal pro mittlerer Pizza und damit fast 200 kcal weniger als die Classic-Version.",
+      "text": "Die Italian-Variante mit dünnem Boden hat rund 909 kcal pro mittlerer Pizza (300g) und damit rund 56 kcal weniger als die Classic-Version (356g).",
       "icon": "🍕"
     },
     {
       "title": "Slices zählen statt Pizza",
-      "text": "Ein Stück der mittleren Margherita hat ca. 147 kcal. Wer 3 Stücke isst statt der ganzen Pizza, bleibt unter 450 kcal.",
+      "text": "Ein Stück der mittleren Margherita hat ca. 163 kcal. Wer 3 Stücke isst statt der ganzen Pizza, kommt auf rund 489 kcal.",
       "icon": "🔢"
     },
     {
       "title": "Pan-Boden ist die Kalorienfalle",
-      "text": "Der dicke Pan-Boden bringt eine mittlere Margherita auf rund 1100 kcal. Für weniger Kalorien lieber Classic oder Italian wählen.",
+      "text": "Der dicke Pan-Boden bringt eine mittlere Margherita (400g) auf rund 1120 kcal. Für weniger Kalorien lieber Classic oder Italian wählen.",
       "icon": "⚠️"
     },
     {
@@ -123,34 +159,34 @@
     },
     {
       "title": "Reste einplanen",
-      "text": "Eine große Margherita hat etwa 1470 kcal. Es lohnt sich, von vornherein die Hälfte für den nächsten Tag zur Seite zu legen.",
+      "text": "Eine große Margherita hat etwa 1626 kcal. Es lohnt sich, von vornherein die Hälfte für den nächsten Tag zur Seite zu legen.",
       "icon": "📦"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Pizza Hut Margherita?",
-      "answer": "Eine mittlere Margherita mit Classic-Boden (356g) hat ca. 872 kcal. Pro 100g sind es rund 245 kcal."
+      "answer": "Eine mittlere Margherita mit Classic-Boden (356g) hat ca. 965 kcal. Pro 100g sind es rund 271 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza Hut Margherita?",
-      "answer": "Ein Stück der mittleren Margherita (ca. 60g) hat etwa 147 kcal. Eine mittlere Pizza wird üblicherweise in 6 Stücke geteilt."
+      "answer": "Ein Stück der mittleren Margherita (ca. 60g) hat etwa 163 kcal. Eine mittlere Pizza wird üblicherweise in 6 Stücke geteilt."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Pizza Hut Margherita?",
-      "answer": "Eine mittlere Classic-Margherita liefert rund 107g Kohlenhydrate, das meiste davon aus dem Pizzateig. Pro 100g sind es etwa 30g."
+      "answer": "Eine mittlere Classic-Margherita liefert rund 111g Kohlenhydrate, das meiste davon aus dem Pizzateig. Pro 100g sind es etwa 31g."
     },
     {
       "question": "Wie viel Protein hat eine Pizza Hut Margherita?",
-      "answer": "Eine mittlere Margherita enthält rund 36g Eiweiß, hauptsächlich aus dem Käse. Pro 100g sind das etwa 10g."
+      "answer": "Eine mittlere Margherita enthält rund 42g Eiweiß, hauptsächlich aus dem Käse. Pro 100g sind das etwa 12g."
     },
     {
       "question": "Ist Pizza Hut Margherita zum Abnehmen geeignet?",
-      "answer": "Mit fast 900 kcal für eine mittlere Pizza ist die Margherita kalorienreich. In einer Diät besser nur einzelne Slices essen, den dünnen Italian-Boden wählen und mit Salat kombinieren."
+      "answer": "Mit rund 965 kcal für eine mittlere Pizza ist die Margherita kalorienreich. In einer Diät besser nur einzelne Slices essen, den dünnen Italian-Boden wählen und mit Salat kombinieren."
     },
     {
       "question": "Ist die Margherita die kalorienärmste Pizza Hut Pizza?",
-      "answer": "Ja, die Margherita gehört zu den leichtesten Optionen, da sie nur mit Tomate und Käse belegt ist. Pizzen mit Salami, Schinken oder extra Käse haben deutlich mehr Kalorien."
+      "answer": "Nicht ganz. Die Margherita gehört zu den leichteren Optionen, da sie nur mit Tomate und Käse belegt ist. Pizzen mit Salami liegen aber nur wenig darüber, und eine Pizza mit viel Gemüse kann sogar leichter sein."
     }
   ],
   "related_foods": [

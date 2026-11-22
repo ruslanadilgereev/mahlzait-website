@@ -3,9 +3,10 @@
   "name": "Brioche",
   "emoji": "🍞",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 2707682 (Brioche), Werte je 100 g",
   "seo": {
     "title": "Brioche Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Brioche? Pro 100g ca. 340 kcal, eine Scheibe (35g) ca. 119 kcal. Nährwerte, Varianten & Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Brioche? Pro 100g ca. 427 kcal, eine Scheibe (35g) ca. 149 kcal. Nährwerte, Varianten & Diät-Tipps im Überblick.",
     "keywords": [
       "brioche kcal",
       "brioche kalorien",
@@ -16,11 +17,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 340,
+    "calories_per_100g": 427,
     "protein_per_100g": 9,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 11,
-    "fiber_per_100g": 2,
+    "carbs_per_100g": 36.3,
+    "fat_per_100g": 27.5,
+    "fiber_per_100g": 1.5,
     "typical_portion_g": 35,
     "typical_portion_name": "1 Scheibe (35g)"
   },
@@ -28,93 +29,126 @@
     {
       "name": "1 Scheibe (35g)",
       "portion_g": 35,
-      "calories": 119,
+      "calories": 149,
       "protein": 3,
-      "carbs": 18,
-      "fat": 4,
+      "carbs": 13,
+      "fat": 10,
       "tip": "Standard"
     },
     {
       "name": "2 Scheiben (70g)",
       "portion_g": 70,
-      "calories": 238,
+      "calories": 299,
       "protein": 6,
-      "carbs": 35,
-      "fat": 8
+      "carbs": 25,
+      "fat": 19
     },
     {
       "name": "Brioche-Brötchen (50g)",
       "portion_g": 50,
-      "calories": 170,
+      "calories": 214,
       "protein": 5,
-      "carbs": 25,
-      "fat": 6
+      "carbs": 18,
+      "fat": 14
     },
     {
       "name": "Brioche-Burger-Bun groß (75g)",
       "portion_g": 75,
-      "calories": 255,
+      "calories": 320,
       "protein": 7,
-      "carbs": 38,
-      "fat": 8
+      "carbs": 27,
+      "fat": 21
     },
     {
       "name": "Brioche-Knoten (60g)",
       "portion_g": 60,
-      "calories": 204,
+      "calories": 256,
       "protein": 5,
-      "carbs": 30,
-      "fat": 7
+      "carbs": 22,
+      "fat": 17
     },
     {
       "name": "Getoastet mit Butter (35g + 10g Butter)",
       "portion_g": 45,
-      "calories": 191,
+      "calories": 221,
       "protein": 3,
-      "carbs": 18,
-      "fat": 12,
-      "tip": "Butter erhöht Kalorien deutlich"
+      "carbs": 13,
+      "fat": 18,
+      "tip": "Butter erhöht Kalorien deutlich",
+      "basis": [
+        {
+          "g": 35
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 340,
+      "calories": 427,
       "protein": 9,
-      "carbs": 50,
-      "fat": 11
+      "carbs": 36,
+      "fat": 28
     }
   ],
   "comparison": [
     {
       "name": "Toastbrot (100g)",
-      "calories": 265,
-      "emoji": "🍞"
+      "calories": 266,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "toastbrot",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Croissant (100g)",
       "calories": 406,
-      "emoji": "🥐"
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Vollkornbrot (100g)",
-      "calories": 210,
-      "emoji": "🍞"
+      "calories": 200,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Baguette (100g)",
-      "calories": 270,
-      "emoji": "🥖"
+      "calories": 272,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Buttergebäck mit Kalorien",
-      "text": "Brioche enthält Butter und Eier. Mit ca. 340 kcal pro 100g liegt sie deutlich über normalem Mischbrot, aber unter einem Croissant.",
+      "text": "Brioche enthält Butter und Eier. Mit ca. 427 kcal pro 100g liegt sie deutlich über normalem Mischbrot und sogar etwas über einem Croissant.",
       "icon": "🧈"
     },
     {
       "title": "Portion klein halten",
-      "text": "Eine dünne Scheibe (35g) hat nur etwa 119 kcal. Wer aufs Gewicht achtet, bleibt lieber bei einer Scheibe statt zwei.",
+      "text": "Eine dünne Scheibe (35g) hat etwa 149 kcal. Wer aufs Gewicht achtet, bleibt lieber bei einer Scheibe statt zwei.",
       "icon": "🔪"
     },
     {
@@ -124,7 +158,7 @@
     },
     {
       "title": "Wenig Ballaststoffe",
-      "text": "Mit rund 2g Ballaststoffen pro 100g sättigt Brioche kaum lange. Vollkornbrot hält durch mehr Ballaststoffe deutlich länger satt.",
+      "text": "Mit rund 1,5g Ballaststoffen pro 100g sättigt Brioche kaum lange. Vollkornbrot hält durch mehr Ballaststoffe deutlich länger satt.",
       "icon": "🌾"
     },
     {
@@ -136,15 +170,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Brioche?",
-      "answer": "Brioche hat ca. 340 kcal pro 100g. Eine Scheibe (35g) liefert etwa 119 kcal, ein kleines Brioche-Brötchen (50g) rund 170 kcal."
+      "answer": "Brioche hat ca. 427 kcal pro 100g. Eine Scheibe (35g) liefert etwa 149 kcal, ein kleines Brioche-Brötchen (50g) rund 214 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Brioche-Brötchen?",
-      "answer": "Ein Brioche-Brötchen von etwa 50g hat ca. 170 kcal. Ein großes Brioche-Burger-Bun (75g) kommt auf rund 255 kcal."
+      "answer": "Ein Brioche-Brötchen von etwa 50g hat ca. 214 kcal. Ein großes Brioche-Burger-Bun (75g) kommt auf rund 320 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Brioche?",
-      "answer": "Brioche enthält etwa 50g Kohlenhydrate pro 100g. Eine Scheibe (35g) liefert rund 18g Kohlenhydrate."
+      "answer": "Brioche enthält etwa 36g Kohlenhydrate pro 100g. Eine Scheibe (35g) liefert rund 13g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Brioche?",
@@ -152,7 +186,7 @@
     },
     {
       "question": "Ist Brioche zum Abnehmen geeignet?",
-      "answer": "Brioche ist mit 340 kcal pro 100g recht energiedicht und ballaststoffarm. In einer Diät besser nur in kleinen Portionen oder als gelegentlicher Genuss einplanen."
+      "answer": "Brioche ist mit 427 kcal pro 100g recht energiedicht und ballaststoffarm. In einer Diät besser nur in kleinen Portionen oder als gelegentlicher Genuss einplanen."
     },
     {
       "question": "Ist Brioche gesund?",

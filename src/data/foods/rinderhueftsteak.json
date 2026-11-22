@@ -3,24 +3,25 @@
   "name": "Rinderhüftsteak",
   "emoji": "🥩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 174055 (Beef, top sirloin, steak, separable lean only, trimmed to 1/8\" fat, all grades, raw), Werte je 100 g",
   "seo": {
-    "title": "Rinderhüftsteak Kalorien: Naehrwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Rinderhüftsteak? Roh nur 129 kcal pro 100g, mageres Eiweiß satt. Naehrwerte pro 100g & Portion, gebraten vs. roh im Vergleich.",
+    "title": "Rinderhüftsteak Kalorien: Nährwerte & Tipps | Mahlzait",
+    "description": "Wie viele Kalorien hat ein Rinderhüftsteak? Roh nur 131 kcal pro 100g, mageres Eiweiß satt. Nährwerte pro 100g & Portion, gebraten vs. roh im Vergleich.",
     "keywords": [
       "rinderhüftsteak kalorien",
       "rinderhüftsteak kcal",
       "hüftsteak rind",
-      "rinderhüftsteak naehrwerte",
+      "rinderhüftsteak nährwerte",
       "wie viele kalorien hat ein rinderhüftsteak",
       "hüftsteak kalorien",
       "rinderhüftsteak protein"
     ]
   },
   "overview": {
-    "calories_per_100g": 129,
-    "protein_per_100g": 22,
+    "calories_per_100g": 131,
+    "protein_per_100g": 22.1,
     "carbs_per_100g": 0,
-    "fat_per_100g": 4.5,
+    "fat_per_100g": 4.1,
     "fiber_per_100g": 0,
     "typical_portion_g": 180,
     "typical_portion_name": "1 Steak (roh, 180g)"
@@ -29,88 +30,113 @@
     {
       "name": "Rinderhüftsteak roh (150g)",
       "portion_g": 150,
-      "calories": 194,
-      "protein": 33,
+      "calories": 197,
+      "protein": 33.2,
       "carbs": 0,
-      "fat": 6.8
+      "fat": 6.2
     },
     {
       "name": "Rinderhüftsteak roh (180g)",
       "portion_g": 180,
-      "calories": 232,
-      "protein": 40,
+      "calories": 236,
+      "protein": 39.8,
       "carbs": 0,
-      "fat": 8.1,
+      "fat": 7.4,
       "tip": "Standard-Portion vor dem Braten"
     },
     {
       "name": "Rinderhüftsteak roh (250g)",
       "portion_g": 250,
-      "calories": 322,
-      "protein": 55,
+      "calories": 328,
+      "protein": 55.3,
       "carbs": 0,
-      "fat": 11.2,
+      "fat": 10.3,
       "tip": "Große Portion"
     },
     {
       "name": "Rinderhüftsteak gebraten/gegrillt (150g)",
       "portion_g": 150,
-      "calories": 308,
-      "protein": 44,
+      "calories": 267,
+      "protein": 44.1,
       "carbs": 0,
-      "fat": 14.2,
-      "tip": "Kurz gebraten, ohne zusätzliches Fett im Wert"
+      "fat": 8.8,
+      "tip": "Kurz gebraten, ohne zusätzliches Fett im Wert",
+      "basis": [
+        {
+          "fdcId": 174054,
+          "g": 150
+        }
+      ]
     },
     {
       "name": "Rinderhüftsteak gebraten/gegrillt (200g)",
       "portion_g": 200,
-      "calories": 410,
-      "protein": 58,
+      "calories": 356,
+      "protein": 58.8,
       "carbs": 0,
-      "fat": 19,
-      "tip": "Hungrige Portion gegart"
+      "fat": 11.7,
+      "tip": "Hungrige Portion gegart",
+      "basis": [
+        {
+          "fdcId": 174054,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Rinderhüftsteak mager (lean, 100g roh)",
       "portion_g": 100,
-      "calories": 129,
-      "protein": 22,
+      "calories": 131,
+      "protein": 22.1,
       "carbs": 0,
-      "fat": 4.5,
+      "fat": 4.1,
       "tip": "Referenzwert pro 100g"
     }
   ],
   "comparison": [
     {
       "name": "Hähnchenbrust (180g roh)",
-      "calories": 198,
-      "emoji": "🍗"
+      "calories": 216,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 171077,
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Schweineschnitzel (180g roh)",
-      "calories": 256,
-      "emoji": "🐷"
+      "calories": 245,
+      "emoji": "🐷",
+      "basis": [
+        {
+          "fdcId": 168224,
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Lachsfilet (180g roh)",
       "calories": 374,
-      "emoji": "🐟"
-    },
-    {
-      "name": "Rinderhüftsteak (180g roh)",
-      "calories": 232,
-      "emoji": "🥩"
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachsfilet",
+          "g": 180
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mageres Eiweiß pur",
-      "text": "Rinderhüftsteak liefert pro 100g rund 22g Eiweiß bei nur 129 kcal und ist fast frei von Fett und Kohlenhydraten. Ideal für eine eiweißreiche Ernährung.",
+      "text": "Rinderhüftsteak liefert pro 100g rund 22g Eiweiß bei nur 131 kcal und ist fast frei von Fett und Kohlenhydraten. Ideal für eine eiweißreiche Ernährung.",
       "icon": "💪"
     },
     {
       "title": "Achtung beim Braten",
-      "text": "Roh hat das Steak 129 kcal pro 100g, gebraten steigt der Wert durch Wasserverlust und Bratfett deutlich. Brate fettarm in der beschichteten Pfanne oder auf dem Grill.",
+      "text": "Roh hat das Steak 131 kcal pro 100g, gebraten steigt der Wert durch Wasserverlust und Bratfett deutlich. Brate fettarm in der beschichteten Pfanne oder auf dem Grill.",
       "icon": "🔥"
     },
     {
@@ -132,7 +158,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Rinderhüftsteak?",
-      "answer": "Rohes Rinderhüftsteak hat etwa 129 kcal pro 100g. Ein typisches Steak von 180g kommt roh auf rund 232 kcal. Gebraten steigt der Wert durch Wasserverlust und Bratfett auf etwa 410 kcal pro 200g."
+      "answer": "Rohes Rinderhüftsteak hat etwa 131 kcal pro 100g. Ein typisches Steak von 180g kommt roh auf rund 236 kcal. Gebraten steigt der Wert durch den Wasserverlust auf etwa 356 kcal pro 200g, Bratfett kommt noch hinzu."
     },
     {
       "question": "Wie viel Eiweiß steckt im Rinderhüftsteak?",
@@ -144,7 +170,7 @@
     },
     {
       "question": "Ist Rinderhüftsteak zum Abnehmen geeignet?",
-      "answer": "Ja. Mit nur 129 kcal und 22g Eiweiß pro 100g ist es ein magerer, sättigender Eiweißlieferant. Entscheidend sind fettarme Zubereitung und eine gemüsereiche Beilage statt Pommes oder Sauce Hollandaise."
+      "answer": "Ja. Mit nur 131 kcal und 22g Eiweiß pro 100g ist es ein magerer, sättigender Eiweißlieferant. Entscheidend sind fettarme Zubereitung und eine gemüsereiche Beilage statt Pommes oder Sauce Hollandaise."
     },
     {
       "question": "Ist Rinderhüftsteak gesund?",
@@ -152,7 +178,7 @@
     },
     {
       "question": "Wie viele Kalorien hat ein gebratenes Rinderhüftsteak?",
-      "answer": "Gebraten oder gegrillt hat Rinderhüftsteak etwa 205 kcal pro 100g. Eine 150g-Portion gegart liegt bei rund 308 kcal, abhängig vom verwendeten Bratfett."
+      "answer": "Gebraten oder gegrillt hat Rinderhüftsteak etwa 178 kcal pro 100g. Eine 150g-Portion gegart liegt bei rund 267 kcal, dazu kommt das verwendete Bratfett."
     }
   ],
   "related_foods": [

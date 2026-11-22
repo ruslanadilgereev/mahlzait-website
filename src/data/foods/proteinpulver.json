@@ -3,9 +3,10 @@
   "name": "Proteinpulver",
   "emoji": "🥤",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 173180 (Beverages, Protein powder whey based), Werte je 100 g",
   "seo": {
     "title": "Proteinpulver Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Proteinpulver? Eine Portion (30g) Whey hat ca. 114 kcal und 22g Eiweiß. Nährwerte pro 100g, Varianten & Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Proteinpulver? Eine Portion (30g) Whey hat ca. 106 kcal und 23g Eiweiß. Nährwerte pro 100g, Varianten & Tipps zum Abnehmen.",
     "keywords": [
       "proteinpulver kalorien",
       "proteinpulver kcal",
@@ -18,11 +19,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 380,
-    "protein_per_100g": 75,
-    "carbs_per_100g": 8,
-    "fat_per_100g": 6,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 352,
+    "protein_per_100g": 78.1,
+    "carbs_per_100g": 6.3,
+    "fat_per_100g": 1.6,
+    "fiber_per_100g": 3.1,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Portion (30g)"
   },
@@ -30,94 +31,117 @@
     {
       "name": "1 Esslöffel (15g)",
       "portion_g": 15,
-      "calories": 57,
-      "protein": 11,
+      "calories": 53,
+      "protein": 12,
       "carbs": 1,
-      "fat": 1
+      "fat": 0
     },
     {
       "name": "1 Messlöffel (25g)",
       "portion_g": 25,
-      "calories": 95,
-      "protein": 19,
+      "calories": 88,
+      "protein": 20,
       "carbs": 2,
-      "fat": 2
+      "fat": 0
     },
     {
       "name": "1 Portion (30g)",
       "portion_g": 30,
-      "calories": 114,
+      "calories": 106,
       "protein": 23,
       "carbs": 2,
-      "fat": 2,
+      "fat": 0,
       "tip": "Standard-Portion"
     },
     {
       "name": "2 Portionen (60g)",
       "portion_g": 60,
-      "calories": 228,
-      "protein": 45,
-      "carbs": 5,
-      "fat": 4
+      "calories": 211,
+      "protein": 47,
+      "carbs": 4,
+      "fat": 1
     },
     {
       "name": "100 g Pulver",
       "portion_g": 100,
-      "calories": 380,
-      "protein": 75,
-      "carbs": 8,
-      "fat": 6
+      "calories": 352,
+      "protein": 78,
+      "carbs": 6,
+      "fat": 2
     },
     {
       "name": "Shake mit Wasser (30g)",
       "portion_g": 30,
-      "calories": 114,
+      "calories": 106,
       "protein": 23,
       "carbs": 2,
-      "fat": 2,
+      "fat": 0,
       "tip": "Kalorienärmste Zubereitung"
     },
     {
       "name": "Shake mit Milch (30g + 250ml)",
-      "portion_g": 280,
-      "calories": 229,
-      "protein": 31,
-      "carbs": 14,
-      "fat": 6,
-      "tip": "Mehr Kalorien durch die Milch"
+      "portion_g": 289,
+      "calories": 225,
+      "protein": 32,
+      "carbs": 15,
+      "fat": 4,
+      "tip": "Mehr Kalorien durch die Milch",
+      "basis": [
+        {
+          "g": 30
+        },
+        {
+          "slug": "milch",
+          "variante": "Fettarme Milch 1,5%"
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Proteinshake (fertig)",
-      "calories": 60,
-      "emoji": "🥤"
+      "name": "Proteinshake fertig (330 ml)",
+      "calories": 218,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "fdcId": 2710726,
+          "ml": 330,
+          "g": 357
+        }
+      ]
     },
     {
-      "name": "Proteinriegel",
-      "calories": 350,
-      "emoji": "🍫"
+      "name": "Magerquark (250g)",
+      "calories": 180,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 172181,
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Magerquark",
-      "calories": 67,
-      "emoji": "🥛"
-    },
-    {
-      "name": "Skyr",
-      "calories": 63,
-      "emoji": "🥛"
+      "name": "Skyr (150g)",
+      "calories": 89,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 170894,
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mit Wasser sparst du Kalorien",
-      "text": "Ein Shake mit Wasser hat nur etwa 114 kcal, mit 250 ml Milch sind es rund 229 kcal. Wer abnehmen möchte, mischt das Pulver mit Wasser an.",
+      "text": "Ein Shake mit Wasser hat nur etwa 106 kcal, mit 250 ml fettarmer Milch sind es rund 225 kcal. Wer abnehmen möchte, mischt das Pulver mit Wasser an.",
       "icon": "💧"
     },
     {
       "title": "Sehr hoher Eiweißanteil",
-      "text": "Eine Portion Whey-Pulver (30g) liefert rund 23g Eiweiß bei nur 114 kcal. Das macht es zu einer der eiweißreichsten Zutaten überhaupt.",
+      "text": "Eine Portion Whey-Pulver (30g) liefert rund 23g Eiweiß bei nur 106 kcal. Das macht es zu einer der eiweißreichsten Zutaten überhaupt.",
       "icon": "💪"
     },
     {
@@ -127,7 +151,7 @@
     },
     {
       "title": "Auf die Sorte achten",
-      "text": "Whey-Konzentrat hat etwas mehr Kohlenhydrate und Fett als Whey-Isolat. Isolat kommt auf bis zu 90g Eiweiß pro 100g bei weniger Kohlenhydraten.",
+      "text": "Whey-Konzentrat hat etwas mehr Kohlenhydrate und Fett als Whey-Isolat. Isolat kommt auf einen noch höheren Eiweißanteil bei weniger Kohlenhydraten.",
       "icon": "🏷️"
     },
     {
@@ -139,23 +163,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Proteinpulver?",
-      "answer": "Eine Portion Proteinpulver (30g) hat etwa 114 kcal. Pro 100g sind es rund 380 kcal."
+      "answer": "Eine Portion Proteinpulver (30g) hat etwa 106 kcal. Pro 100g sind es rund 352 kcal."
     },
     {
       "question": "Wie viel Eiweiß steckt in einer Portion Proteinpulver?",
-      "answer": "Eine Portion Whey-Proteinpulver (30g) liefert etwa 23g Eiweiß. Pro 100g sind es rund 75g."
+      "answer": "Eine Portion Whey-Proteinpulver (30g) liefert etwa 23g Eiweiß. Pro 100g sind es rund 78g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Proteinpulver?",
-      "answer": "Whey-Proteinpulver enthält pro 100g nur etwa 8g Kohlenhydrate. Eine Portion (30g) hat damit rund 2g."
+      "answer": "Whey-Proteinpulver enthält pro 100g nur etwa 6g Kohlenhydrate. Eine Portion (30g) hat damit rund 2g."
     },
     {
       "question": "Ist Proteinpulver gut zum Abnehmen?",
-      "answer": "Ja. Mit Wasser angerührt hat ein Shake nur etwa 114 kcal, sättigt aber gut durch den hohen Eiweißanteil und hilft, Muskelmasse während einer Diät zu erhalten."
+      "answer": "Ja. Mit Wasser angerührt hat ein Shake nur etwa 106 kcal, sättigt aber gut durch den hohen Eiweißanteil und hilft, Muskelmasse während einer Diät zu erhalten."
     },
     {
       "question": "Hat ein Shake mit Milch mehr Kalorien?",
-      "answer": "Ja. Ein Shake aus 30g Pulver und Wasser hat etwa 114 kcal, mit 250 ml fettarmer Milch sind es rund 229 kcal."
+      "answer": "Ja. Ein Shake aus 30g Pulver und Wasser hat etwa 106 kcal, mit 250 ml fettarmer Milch sind es rund 225 kcal."
     },
     {
       "question": "Ist Proteinpulver gesund?",
