@@ -475,7 +475,7 @@ const templateConfig: TemplateConfig = {
       id: "pricing",
       title: "Preise",
       subtitle:
-        "Kostenloser Kalorienzähler – Pro-Version für unlimited AI-Features (Stand: Februar 2026)",
+        "Kostenloser Kalorienzähler, Pro-Version für unlimited AI-Features (Stand: November 2026)",
       actionText: "App herunterladen",
       plans: [
         {
@@ -498,7 +498,7 @@ const templateConfig: TemplateConfig = {
             "Unlimited AI Meal Logging (Foto/Text)",
             "Unlimited AI-Vorschläge (Kühlschrank etc.)",
             "Unlimited Rezept-Import von Web-Rezeptseiten",
-            "Spare 50% (nur 3,33 €/Monat)",
+            "Spare 58 % (nur 3,33 €/Monat)",
           ],
         },
         {
