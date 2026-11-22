@@ -117,7 +117,7 @@ export const kalorienzaehlerAppFaq: { q: string; a: string }[] = [
   },
   {
     q: "Welche App zählt Kalorien per Foto?",
-    a: "Foto-Erkennung bieten Mahlzait, Yazio, FDDB, Lifesum, Foodvisor, Cal AI und WeightWatchers. Bei MyFitnessPal heißt die Funktion Mahlzeiten-Scan und gehört zu Premium, bei Cronometer zum Gold-Abo. Bei Cal AI gibt es die Ergebnisse nur im Abo, bei Mahlzait fünf Testnutzungen und danach mit Pro.",
+    a: "Foto-Erkennung bieten Mahlzait, Yazio, FDDB, Lifesum, Foodvisor, Cal AI und WeightWatchers. Bei MyFitnessPal heißt die Funktion Mahlzeiten-Scan und gehört zu Premium, bei Cronometer zum Gold-Abo. Bei Cal AI gibt es die Ergebnisse nur im Abo, bei Mahlzait fünf Testnutzungen insgesamt, egal ob per Foto, Text, Sprache oder Video, und danach mit Pro.",
   },
   {
     q: "Welche Kalorienzähler-Apps kommen aus Deutschland?",

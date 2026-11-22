@@ -149,12 +149,12 @@ export const vergleich: {
     {
       merkmal: "Mahlzeit per Foto",
       yazio: "laut YAZIO-Hilfe Teil von Pro",
-      mahlzait: "mit Pro, vorher fünfmal zum Testen",
+      mahlzait: "mit Pro, vorher fünf Versuche insgesamt, egal ob per Foto, Text, Sprache oder Video",
     },
     {
       merkmal: "Mahlzeit per Sprache",
       yazio: "laut Google-Play-Beschreibung vorhanden",
-      mahlzait: "mit Pro, vorher fünfmal zum Testen",
+      mahlzait: "mit Pro, vorher fünf Versuche insgesamt, egal ob per Foto, Text, Sprache oder Video",
     },
     {
       merkmal: "Rezepte und Fastenpläne",

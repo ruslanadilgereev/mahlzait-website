@@ -487,7 +487,7 @@ const templateConfig: TemplateConfig = {
             "Kalorien & Makros tracken",
             "Gewichtsverlauf & Kalender",
             "Health-Integration",
-            "Je 5x AI-Features testen",
+            "Mit KI eintragen: 5 Versuche insgesamt, egal ob per Foto, Text, Sprache oder Video",
           ],
         },
         {
