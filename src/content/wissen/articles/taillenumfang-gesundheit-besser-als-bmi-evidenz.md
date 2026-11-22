@@ -36,7 +36,7 @@ So lassen sich die gaengigen Grenzwerte einordnen:
 | Erhoeht | 94 bis 102 cm | 80 bis 88 cm |
 | Deutlich erhoeht | ueber 102 cm | ueber 88 cm |
 
-Beim **Taille-Groesse-Verhaeltnis** gilt geschlechtsunabhaengig: Werte unter 0,5 gelten als guenstig, ab 0,5 steigt das Risiko. Beispiel: Bei 1,75 m Koerpergroesse liegt die Grenze bei 87,5 cm Taillenumfang. Diesen Wert koennen Sie mit dem [Taille-Huefte-Verhaeltnis-Rechner](/taille-huefte-verhaeltnis-rechner/) leicht selbst bestimmen.
+Beim **Taille-Groesse-Verhaeltnis** gilt geschlechtsunabhaengig: Werte unter 0,5 gelten als guenstig, ab 0,5 steigt das Risiko. Beispiel: Bei 1,75 m Koerpergroesse liegt die Grenze bei 87,5 cm Taillenumfang. Diesen Wert berechnen Sie selbst: Taillenumfang geteilt durch Körpergröße. Das Verhältnis von Taille zu Hüfte zeigt der [Taille-Hüft-Verhältnis-Rechner](/taille-hueft-verhaeltnis-rechner/).
 
 ## Was heisst das praktisch?
 

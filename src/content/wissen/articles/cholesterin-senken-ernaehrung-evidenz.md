@@ -36,7 +36,7 @@ Bei Übergewicht verbessert eine Gewichtsabnahme das gesamte Lipidprofil. Studie
 
 - **Hafer zum Frühstück:** 60-80 g [Haferflocken](/kalorien/haferflocken/) liefern relevante Mengen Beta-Glucan.
 - **Pflanzensterine gezielt einsetzen:** angereicherte Produkte mit rund 2 g pro Tag, möglichst zu den Mahlzeiten.
-- **Bausteine kombinieren:** Hülsenfrüchte, [Walnüsse](/kalorien/walnuss/), Sojaprodukte und lösliche Ballaststoffe summieren sich - das ist das Prinzip der Portfolio-Diät.
+- **Bausteine kombinieren:** Hülsenfrüchte, [Walnüsse](/kalorien/walnuesse/), Sojaprodukte und lösliche Ballaststoffe summieren sich - das ist das Prinzip der Portfolio-Diät.
 - **Fette tauschen:** Olivenöl, Rapsöl und Nüsse statt Butter und Wurst.
 - **Gewicht im Blick:** Bei Übergewicht senkt eine moderate Abnahme zusätzlich das LDL.
 

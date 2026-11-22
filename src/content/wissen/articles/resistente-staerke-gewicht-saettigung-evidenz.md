@@ -14,7 +14,7 @@ Abgekuehlte Kartoffeln und Reis gelten in vielen Ratgebern als Geheimtipp zum Ab
 
 Resistente Staerke ist ein Staerketyp, der den enzymatischen Abbau im Duenndarm uebersteht und unverdaut in den Dickdarm gelangt. Dort dient sie den Darmbakterien als Nahrung und wird zu kurzkettigen Fettsaeuren wie Butyrat fermentiert. Das hat zwei Konsequenzen: Erstens liefert sie weniger verwertbare Energie (etwa 2 kcal/g), zweitens verhaelt sie sich aehnlich wie ein Ballaststoff und naehrt das Mikrobiom.
 
-Beim Kochen quillt die Staerke auf (Gelatinierung). Kuehlt das Lebensmittel anschliessend ab, ordnen sich die Staerkemolekuele neu und werden teilweise verdauungsresistent - dieser Vorgang heisst Retrogradation. Genau deshalb enthalten abgekuehlte [Kartoffeln](/kalorien/kartoffel/) oder kalter Reis mehr resistente Staerke als frisch gekochte.
+Beim Kochen quillt die Staerke auf (Gelatinierung). Kuehlt das Lebensmittel anschliessend ab, ordnen sich die Staerkemolekuele neu und werden teilweise verdauungsresistent - dieser Vorgang heisst Retrogradation. Genau deshalb enthalten abgekuehlte [Kartoffeln](/kalorien/kartoffeln/) oder kalter Reis mehr resistente Staerke als frisch gekochte.
 
 ## Was sagt die Wissenschaft zum Blutzucker?
 
