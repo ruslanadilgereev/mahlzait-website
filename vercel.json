@@ -251,6 +251,11 @@
       "source": "/kalorienliste/:slug*/",
       "destination": "/kalorien/:slug*/",
       "permanent": true
+    },
+    {
+      "source": "/:path((?!api/|go/|i/|social/|_vercel/|wp-)[^.]*[^/.])",
+      "destination": "/:path/",
+      "permanent": true
     }
   ],
   "headers": [

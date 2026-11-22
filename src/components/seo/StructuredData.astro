@@ -7,7 +7,6 @@ import { generateSoftwareAppSchema } from "./schemas/softwareApp";
 import { generateFAQSchema } from "./schemas/faq";
 import { generateHowToSchema } from "./schemas/howto";
 import { generateBreadcrumbSchema } from "./schemas/breadcrumb";
-import { generateProductSchemas } from "./schemas/product";
 import { generateWebPageSchema } from "./schemas/webpage";
 
 interface Props {
@@ -55,7 +54,6 @@ const softwareAppSchema = isHomepage
 let faqSchema = null;
 let howToSchema = null;
 let breadcrumbSchema = null;
-let productSchemas = null;
 let webPageSchema = null;
 
 if (isHomepage && config.home) {
@@ -84,26 +82,10 @@ if (isHomepage && config.home) {
   //   );
   // }
 
-  // Product Schemas für Preismodelle
-  productSchemas = generateProductSchemas(siteUrl, config.name, [
-    {
-      name: "Kostenlos",
-      description: "Kostenlose Version mit Basis-Features",
-      price: "0",
-    },
-    {
-      name: "Pro Monat",
-      description: "Monatliches Abo mit allen Premium-Features und unbegrenzter KI",
-      price: "7.99",
-      billingPeriod: "month",
-    },
-    {
-      name: "Pro Jahr",
-      description: "Jahresabo mit allen Premium-Features - spare 50%",
-      price: "39.99",
-      billingPeriod: "year",
-    },
-  ]);
+  // Keine Product-Blöcke für die Abo-Stufen: Google wertete sie als
+  // Produkt-Snippets und meldete fehlende Bewertungsfelder. Bewertungen für
+  // einzelne Abo-Stufen gibt es nicht, die Preise stehen in den Angeboten des
+  // MobileApplication- und SoftwareApplication-Schemas.
 
   // Breadcrumb für Homepage
   breadcrumbSchema = generateBreadcrumbSchema([
@@ -141,7 +123,6 @@ if (softwareAppSchema) allSchemas.push(softwareAppSchema);
 if (breadcrumbSchema) allSchemas.push(breadcrumbSchema);
 if (faqSchema) allSchemas.push(faqSchema);
 if (howToSchema) allSchemas.push(howToSchema);
-if (productSchemas) allSchemas.push(...productSchemas);
 if (webPageSchema) allSchemas.push(webPageSchema);
 ---
 
