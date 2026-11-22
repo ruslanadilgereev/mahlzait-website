@@ -3,50 +3,174 @@
   "name": "Gummibärchen",
   "emoji": "🧸",
   "category": "supermarkt",
+  "source": "Herstellerangabe HARIBO, Goldbären (https://www.haribo.com/de-de/produkte/haribo/goldbaeren, abgerufen am 22.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel HARIBO Goldbären",
+  "hersteller": {
+    "name": "HARIBO",
+    "produkt": "Goldbären",
+    "url": "https://www.haribo.com/de-de/produkte/haribo/goldbaeren",
+    "abgerufen": "2026-11-22",
+    "beispiel": true
+  },
   "seo": {
     "title": "Gummibärchen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Gummibärchen? Nährwerte pro 100g & Stück. Haribo, Zuckerfreie & Fruchtgummi im Vergleich + Nasch-Tipps.",
-    "keywords": ["gummibärchen kalorien", "haribo kalorien", "gummibärchen nährwerte", "fruchtgummi kalorien", "gummibärchen kalorien pro stück", "haribo goldbären kalorien", "gummibärchen zucker", "fruchtgummi nährwerte"]
+    "description": "Wie viele Kalorien haben Gummibärchen? 343 kcal pro 100g am Beispiel HARIBO Goldbären. Nährwerte pro Handvoll & Tüte im Vergleich + Nasch-Tipps.",
+    "keywords": [
+      "gummibärchen kalorien",
+      "haribo kalorien",
+      "gummibärchen nährwerte",
+      "fruchtgummi kalorien",
+      "gummibärchen kalorien pro stück",
+      "haribo goldbären kalorien",
+      "gummibärchen zucker",
+      "fruchtgummi nährwerte"
+    ]
   },
   "overview": {
     "calories_per_100g": 343,
-    "protein_per_100g": 7,
+    "protein_per_100g": 6.9,
     "carbs_per_100g": 77,
-    "fat_per_100g": 0.5,
-    "fiber_per_100g": 0,
+    "fat_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 25,
-    "typical_portion_name": "1 Handvoll (~12 Stück)"
+    "typical_portion_name": "1 Handvoll (25g)"
   },
   "variants": [
-    { "name": "1 Bärchen (~2,2g)", "portion_g": 2, "calories": 7, "protein": 0, "carbs": 2, "fat": 0 },
-    { "name": "1 Handvoll (25g, ~12 Stück)", "portion_g": 25, "calories": 86, "protein": 2, "carbs": 19, "fat": 0 },
-    { "name": "Kleine Tüte (100g)", "portion_g": 100, "calories": 343, "protein": 7, "carbs": 77, "fat": 1 },
-    { "name": "Große Tüte (200g)", "portion_g": 200, "calories": 686, "protein": 14, "carbs": 154, "fat": 1 },
-    { "name": "Zuckerfrei (25g)", "portion_g": 25, "calories": 53, "protein": 2, "carbs": 18, "fat": 0, "tip": "40% weniger Kalorien" },
-    { "name": "Saure Bärchen (25g)", "portion_g": 25, "calories": 88, "protein": 2, "carbs": 20, "fat": 0 },
-    { "name": "Fruchtgummi Schnüre (25g)", "portion_g": 25, "calories": 85, "protein": 1, "carbs": 20, "fat": 0 },
-    { "name": "Vegane Gummibärchen (25g)", "portion_g": 25, "calories": 84, "protein": 0, "carbs": 21, "fat": 0 }
+    {
+      "name": "1 Bärchen (ca. 2g)",
+      "portion_g": 2,
+      "calories": 7,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 0
+    },
+    {
+      "name": "1 Handvoll (25g)",
+      "portion_g": 25,
+      "calories": 86,
+      "protein": 2,
+      "carbs": 19,
+      "fat": 0
+    },
+    {
+      "name": "Kleine Tüte (100g)",
+      "portion_g": 100,
+      "calories": 343,
+      "protein": 7,
+      "carbs": 77,
+      "fat": 0
+    },
+    {
+      "name": "Große Tüte (200g)",
+      "portion_g": 200,
+      "calories": 686,
+      "protein": 14,
+      "carbs": 154,
+      "fat": 0
+    }
   ],
   "comparison": [
-    { "name": "Schokolade Vollmilch (25g)", "calories": 134, "emoji": "🍫" },
-    { "name": "Chips (25g)", "calories": 134, "emoji": "🥔" },
-    { "name": "Lakritz (25g)", "calories": 78, "emoji": "⬛" },
-    { "name": "Reiswaffeln (25g)", "calories": 97, "emoji": "🍘" }
+    {
+      "name": "Vollmilchschokolade (25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Chips (25g)",
+      "calories": 133,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Lakritz (25g)",
+      "calories": 99,
+      "emoji": "🖤",
+      "basis": [
+        {
+          "slug": "lakritz",
+          "g": 25
+        }
+      ]
+    },
+    {
+      "name": "Reiswaffeln (25g)",
+      "calories": 97,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "reiswaffeln",
+          "g": 25
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Fettfrei, aber Zuckerbomben", "text": "Gummibärchen haben quasi kein Fett – aber 77g Zucker pro 100g! Das ist reiner Zucker mit Gelatine. Wenig Fett heißt nicht automatisch gesund.", "icon": "⚠️" },
-    { "title": "Handvoll-Regel", "text": "Eine Handvoll (25g, ~12 Bärchen) hat nur 86 kcal – das ist absolut vertretbar. Problematisch wird's erst, wenn die ganze Tüte dran glauben muss.", "icon": "✋" },
-    { "title": "Zuckerfreie Variante probieren", "text": "Zuckerfreie Gummibärchen haben 40% weniger Kalorien. Aber Vorsicht: Zuckeralkohole können in großen Mengen abführend wirken.", "icon": "🚽" },
-    { "title": "Proteinquelle Gelatine", "text": "Überraschend: Gummibärchen haben 7g Protein/100g durch die Gelatine. Kein Ersatz für echte Proteinquellen, aber mehr als erwartet.", "icon": "💪" },
-    { "title": "Nicht vor dem Sport", "text": "Schnelle Kohlenhydrate aus Gummibärchen können als Pre-Workout funktionieren. Bodybuilder nutzen das tatsächlich – 5-10 Bärchen vor dem Training.", "icon": "🏋️" }
+    {
+      "title": "Fettfrei, aber Zuckerbomben",
+      "text": "Gummibärchen haben quasi kein Fett, aber 46g Zucker pro 100g (HARIBO Goldbären). Das ist vor allem Zucker mit Gelatine. Wenig Fett heißt nicht automatisch gesund.",
+      "icon": "⚠️"
+    },
+    {
+      "title": "Handvoll-Regel",
+      "text": "Eine Handvoll (25g) hat nur 86 kcal, das ist absolut vertretbar. Problematisch wird's erst, wenn die ganze Tüte dran glauben muss.",
+      "icon": "✋"
+    },
+    {
+      "title": "Zuckerfreie Variante probieren",
+      "text": "Zuckerfreie Gummibärchen haben weniger Kalorien. Aber Vorsicht: Zuckeralkohole können in großen Mengen abführend wirken.",
+      "icon": "🚽"
+    },
+    {
+      "title": "Proteinquelle Gelatine",
+      "text": "Überraschend: Gummibärchen haben knapp 7g Protein/100g durch die Gelatine. Kein Ersatz für echte Proteinquellen, aber mehr als erwartet.",
+      "icon": "💪"
+    },
+    {
+      "title": "Nicht vor dem Sport",
+      "text": "Schnelle Kohlenhydrate aus Gummibärchen können als Pre-Workout funktionieren. Bodybuilder nutzen das tatsächlich: 5 bis 10 Bärchen vor dem Training.",
+      "icon": "🏋️"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien haben Gummibärchen?", "answer": "Gummibärchen (Haribo Goldbären) haben ca. 343 kcal pro 100g. Ein einzelnes Bärchen hat nur 7 kcal, eine Handvoll (25g) ca. 86 kcal." },
-    { "question": "Wie viele Kalorien hat ein einzelnes Gummibärchen?", "answer": "Ein Haribo Goldbär wiegt ca. 2,2g und hat ca. 7 kcal. Das Problem: Niemand isst nur eins – eine Handvoll (12 Stück) sind schon 86 kcal." },
-    { "question": "Sind Gummibärchen besser als Schokolade?", "answer": "Kalorienmäßig ja: 343 kcal/100g vs. 536 kcal/100g. Gummibärchen haben kein Fett. Aber sie bestehen zu 77% aus Zucker – Schokolade hat wenigstens etwas Fett zur Sättigung." },
-    { "question": "Sind zuckerfreie Gummibärchen gesünder?", "answer": "Sie haben ca. 40% weniger Kalorien (210 kcal/100g). Aber: Die verwendeten Zuckeralkohole (Maltit, Isomalt) können in Mengen über 30g abführend wirken." },
-    { "question": "Wie viel Zucker haben Gummibärchen?", "answer": "Ca. 46g Zucker pro 100g (Haribo Goldbären). Eine 200g-Tüte enthält also 92g Zucker – das sind 31 Würfelzucker!" },
-    { "question": "Sind Gummibärchen vegan?", "answer": "Standard-Gummibärchen enthalten Gelatine (Schwein) und sind nicht vegan. Es gibt aber vegane Alternativen mit Pektin oder Stärke – z.B. Katjes oder Haribo Veggie." }
+    {
+      "question": "Wie viele Kalorien haben Gummibärchen?",
+      "answer": "Gummibärchen haben am Beispiel HARIBO Goldbären 343 kcal pro 100g (Herstellerangabe). Ein einzelnes Bärchen (ca. 2g) hat rund 7 kcal, eine Handvoll (25g) 86 kcal."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein einzelnes Gummibärchen?",
+      "answer": "Ein HARIBO Goldbär wiegt ca. 2g und hat rund 7 kcal. Das Problem: Niemand isst nur eins, eine Handvoll (25g) sind schon 86 kcal."
+    },
+    {
+      "question": "Sind Gummibärchen besser als Schokolade?",
+      "answer": "Kalorienmäßig ja: 343 kcal/100g vs. 535 kcal/100g bei Vollmilchschokolade. Gummibärchen haben kaum Fett. Aber sie bestehen zu 77% aus Kohlenhydraten, Schokolade hat wenigstens etwas Fett zur Sättigung."
+    },
+    {
+      "question": "Sind zuckerfreie Gummibärchen gesünder?",
+      "answer": "Sie haben weniger Kalorien als normale Gummibärchen, die genauen Werte stehen auf der Packung. Aber: Die verwendeten Zuckeralkohole (Maltit, Isomalt) können in Mengen über 30g abführend wirken."
+    },
+    {
+      "question": "Wie viel Zucker haben Gummibärchen?",
+      "answer": "Ca. 46g Zucker pro 100g (HARIBO Goldbären). Eine 200g-Tüte enthält also 92g Zucker."
+    },
+    {
+      "question": "Sind Gummibärchen vegan?",
+      "answer": "Standard-Gummibärchen enthalten Gelatine (Schwein) und sind nicht vegan. Es gibt aber vegane Alternativen mit Pektin oder Stärke, z.B. Katjes oder Haribo Veggie."
+    }
   ],
-  "related_foods": ["schokolade-vollmilch", "lakritz", "kekse", "salzstangen"]
+  "related_foods": [
+    "schokolade-vollmilch",
+    "lakritz",
+    "kekse",
+    "salzstangen"
+  ]
 }

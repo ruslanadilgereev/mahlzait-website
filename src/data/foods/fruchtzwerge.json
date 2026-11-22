@@ -3,9 +3,16 @@
   "name": "Fruchtzwerge",
   "emoji": "🍓",
   "category": "supermarkt",
+  "source": "Herstellerangabe Danone, Fruchtzwerge Klassiker Erdbeere/Himbeere/Kirsche (6 x 50 g) (https://www.fruchtzwerge.de/produkte/fruchtzwerge-klassiker/erdbeere-himbeere-kirsche-6er.html, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Danone",
+    "produkt": "Fruchtzwerge Klassiker Erdbeere/Himbeere/Kirsche (6 x 50 g)",
+    "url": "https://www.fruchtzwerge.de/produkte/fruchtzwerge-klassiker/erdbeere-himbeere-kirsche-6er.html",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Fruchtzwerge Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Fruchtzwerge? Ein Becher (50g) hat ca. 50 kcal. Nährwerte pro 100g, Protein, Zucker & Tipps im Überblick.",
+    "description": "Wie viele Kalorien haben Fruchtzwerge? Ein Becher (50g) hat ca. 45 kcal. Nährwerte pro 100g, Protein, Zucker & Tipps im Überblick.",
     "keywords": [
       "fruchtzwerge kalorien",
       "fruchtzwerge kcal",
@@ -16,11 +23,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 100,
-    "protein_per_100g": 6.5,
-    "carbs_per_100g": 13.5,
-    "fat_per_100g": 2.8,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 90,
+    "protein_per_100g": 6.3,
+    "carbs_per_100g": 10.5,
+    "fat_per_100g": 2.5,
+    "fiber_per_100g": null,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Becher (50g)"
   },
@@ -28,90 +35,110 @@
     {
       "name": "1 Becher (50g)",
       "portion_g": 50,
-      "calories": 50,
+      "calories": 45,
       "protein": 3.2,
-      "carbs": 6.8,
-      "fat": 1.4,
+      "carbs": 5.3,
+      "fat": 1.3,
       "tip": "Standard-Portion, ein Becher"
     },
     {
       "name": "2 Becher (100g)",
       "portion_g": 100,
-      "calories": 100,
-      "protein": 6.5,
-      "carbs": 13.5,
-      "fat": 2.8
+      "calories": 90,
+      "protein": 6.3,
+      "carbs": 10.5,
+      "fat": 2.5
     },
     {
       "name": "4er-Pack (200g)",
       "portion_g": 200,
-      "calories": 200,
-      "protein": 13.0,
-      "carbs": 27,
-      "fat": 5.6
+      "calories": 180,
+      "protein": 12.6,
+      "carbs": 21,
+      "fat": 5
     },
     {
       "name": "6er-Pack (300g)",
       "portion_g": 300,
-      "calories": 300,
-      "protein": 19.5,
-      "carbs": 40.5,
-      "fat": 8.4
+      "calories": 270,
+      "protein": 18.9,
+      "carbs": 31.5,
+      "fat": 7.5
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 100,
-      "protein": 6.5,
-      "carbs": 13.5,
-      "fat": 2.8,
+      "calories": 90,
+      "protein": 6.3,
+      "carbs": 10.5,
+      "fat": 2.5,
       "tip": "Vergleichswert laut Nährwerttabelle"
     },
     {
       "name": "Halber Becher (25g)",
       "portion_g": 25,
-      "calories": 25,
+      "calories": 23,
       "protein": 1.6,
-      "carbs": 3.4,
-      "fat": 0.7
+      "carbs": 2.6,
+      "fat": 0.6
     }
   ],
   "comparison": [
     {
-      "name": "Magerquark",
-      "calories": 33,
-      "emoji": "🥛"
+      "name": "Magerquark (1 Becher, 250g)",
+      "calories": 180,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "magerquark"
+        }
+      ]
     },
     {
-      "name": "Joghurt",
-      "calories": 65,
-      "emoji": "🥛"
+      "name": "Joghurt (1 Becher, 150g)",
+      "calories": 92,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "joghurt"
+        }
+      ]
     },
     {
-      "name": "Skyr",
-      "calories": 63,
-      "emoji": "🥄"
+      "name": "Skyr (1 Becher, 150g)",
+      "calories": 89,
+      "emoji": "🥄",
+      "basis": [
+        {
+          "slug": "skyr"
+        }
+      ]
     },
     {
-      "name": "Pudding",
-      "calories": 130,
-      "emoji": "🍮"
+      "name": "Pudding (1 Becher, 150g)",
+      "calories": 170,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "pudding"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kleine Portion, schnell gegessen",
-      "text": "Ein Becher Fruchtzwerge hat nur 50 kcal. Da die Becher klein sind, isst man jedoch oft mehrere auf einmal - 4 Becher kommen schon auf 200 kcal.",
+      "text": "Ein Becher Fruchtzwerge hat nur 45 kcal. Da die Becher klein sind, isst man jedoch oft mehrere auf einmal - 4 Becher kommen schon auf 180 kcal.",
       "icon": "🍓"
     },
     {
       "title": "Zuckergehalt beachten",
-      "text": "Fruchtzwerge enthalten rund 12 g Zucker pro 100g. Für eine zuckerärmere Alternative eignet sich Naturjoghurt oder Quark mit frischen Erdbeeren.",
+      "text": "Fruchtzwerge enthalten rund 9,8 g Zucker pro 100g. Für eine zuckerärmere Alternative eignet sich Naturjoghurt oder Quark mit frischen Erdbeeren.",
       "icon": "🧊"
     },
     {
       "title": "Ordentlich Protein und Calcium",
-      "text": "Auf Frischkäse-Basis liefern Fruchtzwerge etwa 6,5 g Eiweiß pro 100g sowie Calcium - ein sättigender Baustein für Kinder.",
+      "text": "Auf Frischkäse-Basis liefern Fruchtzwerge etwa 6,3 g Eiweiß pro 100g sowie Calcium - ein sättigender Baustein für Kinder.",
       "icon": "💪"
     },
     {
@@ -128,23 +155,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Fruchtzwerg?",
-      "answer": "Ein Becher Fruchtzwerge (50g) hat ca. 50 kcal. Pro 100g sind es rund 100 kcal."
+      "answer": "Ein Becher Fruchtzwerge (50g) hat ca. 45 kcal. Pro 100g sind es laut Herstellerangabe 90 kcal."
     },
     {
       "question": "Wie viele Kalorien haben Fruchtzwerge pro 100g?",
-      "answer": "Pro 100g haben Fruchtzwerge etwa 100 kcal, 6,5 g Eiweiß, 13,5 g Kohlenhydrate und 2,8 g Fett."
+      "answer": "Pro 100g haben Fruchtzwerge laut Danone 90 kcal, 6,3 g Eiweiß, 10,5 g Kohlenhydrate und 2,5 g Fett."
     },
     {
       "question": "Wie viel Zucker steckt in Fruchtzwergen?",
-      "answer": "Fruchtzwerge enthalten rund 12 g Zucker pro 100g, das entspricht etwa 6 g pro Becher (50g)."
+      "answer": "Fruchtzwerge enthalten rund 9,8 g Zucker pro 100g, das entspricht etwa 4,9 g pro Becher (50g)."
     },
     {
       "question": "Wie viel Protein haben Fruchtzwerge?",
-      "answer": "Fruchtzwerge liefern auf Frischkäse-Basis etwa 6,5 g Eiweiß pro 100g, also rund 3,3 g pro Becher."
+      "answer": "Fruchtzwerge liefern auf Frischkäse-Basis etwa 6,3 g Eiweiß pro 100g, also rund 3,2 g pro Becher."
     },
     {
       "question": "Sind Fruchtzwerge zum Abnehmen geeignet?",
-      "answer": "Ein einzelner Becher ist mit 50 kcal kalorienarm. Durch den Zuckergehalt und die kleinen Portionen isst man jedoch leicht mehrere - kalorienärmer ist Magerquark oder Naturjoghurt mit frischem Obst."
+      "answer": "Ein einzelner Becher ist mit 45 kcal kalorienarm. Durch den Zuckergehalt und die kleinen Portionen isst man jedoch leicht mehrere - kalorienärmer ist Magerquark oder Naturjoghurt mit frischem Obst."
     },
     {
       "question": "Sind Fruchtzwerge gesund?",

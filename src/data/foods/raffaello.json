@@ -3,9 +3,16 @@
   "name": "Raffaello",
   "emoji": "🥥",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, Raffaello (Packung 150 g) (https://www.raffaello.de/raffaello, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "Raffaello (Packung 150 g)",
+    "url": "https://www.raffaello.de/raffaello",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Raffaello Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Raffaello? Eine Praline (10g) hat ca. 63 kcal, 100g rund 628 kcal. Nährwerte pro Stück & Packung plus Tipps.",
+    "description": "Wie viele Kalorien hat Raffaello? Eine Praline (10g) hat ca. 63 kcal, 100g rund 627 kcal. Nährwerte pro Stück & Packung plus Tipps.",
     "keywords": [
       "kcal raffaello",
       "raffaello kalorien",
@@ -17,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 628,
-    "protein_per_100g": 7.2,
-    "carbs_per_100g": 38.3,
-    "fat_per_100g": 48.6,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 627,
+    "protein_per_100g": 7.4,
+    "carbs_per_100g": 38.6,
+    "fat_per_100g": 48.3,
+    "fiber_per_100g": null,
     "typical_portion_g": 10,
     "typical_portion_name": "1 Raffaello (1 Stück)"
   },
@@ -31,15 +38,15 @@
       "portion_g": 10,
       "calories": 63,
       "protein": 0.7,
-      "carbs": 3.8,
-      "fat": 4.9,
+      "carbs": 3.9,
+      "fat": 4.8,
       "tip": "Standard, 1 Praline"
     },
     {
       "name": "2 Raffaello (20g)",
       "portion_g": 20,
-      "calories": 126,
-      "protein": 1.4,
+      "calories": 125,
+      "protein": 1.5,
       "carbs": 7.7,
       "fat": 9.7
     },
@@ -48,64 +55,83 @@
       "portion_g": 30,
       "calories": 188,
       "protein": 2.2,
-      "carbs": 11.5,
-      "fat": 14.6
+      "carbs": 11.6,
+      "fat": 14.5
     },
     {
       "name": "4 Raffaello (40g)",
       "portion_g": 40,
       "calories": 251,
-      "protein": 2.9,
-      "carbs": 15.3,
-      "fat": 19.4
-    },
-    {
-      "name": "Kleine Packung T3 (30g)",
-      "portion_g": 30,
-      "calories": 188,
-      "protein": 2.2,
-      "carbs": 11.5,
-      "fat": 14.6,
-      "tip": "3 Stück to go"
+      "protein": 3,
+      "carbs": 15.4,
+      "fat": 19.3
     },
     {
       "name": "Packung 150g (ca. 15 Stück)",
       "portion_g": 150,
-      "calories": 942,
-      "protein": 10.8,
-      "carbs": 57.5,
-      "fat": 72.9,
+      "calories": 941,
+      "protein": 11.1,
+      "carbs": 57.9,
+      "fat": 72.5,
       "tip": "Ganze Packung"
+    },
+    {
+      "name": "Packung 230g (ca. 23 Stück)",
+      "portion_g": 230,
+      "calories": 1442,
+      "protein": 17,
+      "carbs": 88.8,
+      "fat": 111.1
     },
     {
       "name": "100g (Vergleichswert)",
       "portion_g": 100,
-      "calories": 628,
-      "protein": 7.2,
-      "carbs": 38.3,
-      "fat": 48.6
+      "calories": 627,
+      "protein": 7.4,
+      "carbs": 38.6,
+      "fat": 48.3
     }
   ],
   "comparison": [
     {
-      "name": "Ferrero Küsschen",
-      "calories": 64,
-      "emoji": "🍫"
+      "name": "Ferrero Rocher",
+      "calories": 75,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "ferrero-rocher"
+        }
+      ]
     },
     {
       "name": "Duplo",
-      "calories": 117,
-      "emoji": "🍫"
+      "calories": 100,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "duplo"
+        }
+      ]
     },
     {
       "name": "Toffifee",
-      "calories": 47,
-      "emoji": "🍬"
+      "calories": 43,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "toffifee"
+        }
+      ]
     },
     {
-      "name": "Schokolade (1 Reihe)",
-      "calories": 90,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (1 Reihe)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch"
+        }
+      ]
     }
   ],
   "tips": [
@@ -126,31 +152,31 @@
     },
     {
       "title": "Kein Eiweiß-Lieferant",
-      "text": "Mit nur 7,2g Eiweiß pro 100g sättigt Raffaello kaum. Wer wirklich Hunger hat, greift besser zu Nüssen oder Magerquark und gönnt sich Raffaello danach als Dessert.",
+      "text": "Mit nur 7,4g Eiweiß pro 100g sättigt Raffaello kaum. Wer wirklich Hunger hat, greift besser zu Nüssen oder Magerquark und gönnt sich Raffaello danach als Dessert.",
       "icon": "💪"
     },
     {
       "title": "In die Tagesbilanz einplanen",
-      "text": "Plane die Pralinen fest in deine tägliche Kalorienbilanz ein. Drei Stück entsprechen rund 188 kcal, was etwa einer kleinen Banane zusätzlich entspricht.",
+      "text": "Plane die Pralinen fest in deine tägliche Kalorienbilanz ein. Drei Stück entsprechen schon rund 188 kcal.",
       "icon": "📊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Raffaello?",
-      "answer": "Ein einzelnes Raffaello wiegt etwa 10g und hat rund 63 kcal. Pro 100g sind es ca. 628 kcal."
+      "answer": "Ein einzelnes Raffaello wiegt etwa 10g und hat rund 63 kcal. Pro 100g sind es laut Hersteller 627 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Packung Raffaello?",
-      "answer": "Die 150g-Packung enthält rund 15 Stück und kommt auf etwa 942 kcal."
+      "answer": "Die 150g-Packung enthält rund 15 Stück und kommt auf etwa 941 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Raffaello?",
-      "answer": "Raffaello hat 38,3g Kohlenhydrate pro 100g, davon etwa 33g Zucker. Ein Stück enthält rund 3,8g Kohlenhydrate."
+      "answer": "Raffaello hat laut Hersteller 38,6g Kohlenhydrate pro 100g, davon 33,6g Zucker. Ein Stück enthält rund 3,9g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Raffaello?",
-      "answer": "Der Eiweißgehalt ist mit 7,2g pro 100g gering. Ein einzelnes Raffaello liefert nur etwa 0,7g Eiweiß."
+      "answer": "Der Eiweißgehalt ist mit 7,4g pro 100g gering. Ein einzelnes Raffaello liefert nur etwa 0,7g Eiweiß."
     },
     {
       "question": "Ist Raffaello zum Abnehmen geeignet?",

@@ -70,3 +70,20 @@ test("Lebensmittelseiten nennen Open Food Facts nicht mehr als Grundlage der Wer
     assert.ok(!q.includes("Open Food Facts") && !q.includes("openfoodfacts"), slug + ": isBasedOn");
   }
 });
+
+test("allgemeine Seite mit Herstellerangabe als Beispiel: sichtbar gekennzeichnet", () => {
+  for (const [slug, beispiel] of [
+    ["gummibaerchen", "HARIBO Goldbären"],
+    ["creme-fraiche", "Dr. Oetker Crème fraîche Classic"],
+    ["schmand", "MILRAM Frischer Schmand"],
+  ]) {
+    const food = lade(slug);
+    const h = food.hersteller;
+    assert.equal(h.beispiel, true, slug);
+    assert.ok(food.source.includes("Werte am Beispiel " + beispiel), slug + ": source");
+    const t = text(slug);
+    assert.ok(t.includes(`Werte am Beispiel ${beispiel} (Herstellerangabe), abgerufen am ${datum(h.abgerufen)}.`), slug + ": Hinweis");
+    assert.ok(t.includes(`Quelle: Werte am Beispiel ${beispiel} (Herstellerangabe), abgerufen am ${datum(h.abgerufen)}.`), slug + ": Fußzeile");
+    assert.ok(seite(slug).includes(`href="${h.url}"`), slug + ": Link");
+  }
+});

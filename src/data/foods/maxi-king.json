@@ -3,6 +3,13 @@
   "name": "Maxi King",
   "emoji": "🍮",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ferrero, kinder Maxi King (https://www.kinder.com/de/de/kinder-maxi-king, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ferrero",
+    "produkt": "kinder Maxi King",
+    "url": "https://www.kinder.com/de/de/kinder-maxi-king",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Maxi King Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat ein Maxi King? Ein Stück (35g) hat ca. 182 kcal. Nährwerte pro 100g & Stück, Vergleich mit Knoppers & Milchschnitte + Tipps.",
@@ -17,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 520,
-    "protein_per_100g": 6.6,
-    "carbs_per_100g": 38.3,
-    "fat_per_100g": 37.4,
-    "fiber_per_100g": 1.7,
+    "calories_per_100g": 521,
+    "protein_per_100g": 6.7,
+    "carbs_per_100g": 38.2,
+    "fat_per_100g": 37.5,
+    "fiber_per_100g": null,
     "typical_portion_g": 35,
     "typical_portion_name": "1 Stück (35g)"
   },
@@ -32,7 +39,7 @@
       "calories": 91,
       "protein": 1.2,
       "carbs": 6.7,
-      "fat": 6.5,
+      "fat": 6.6,
       "tip": "Wenn die Lust auf etwas Süßes kommt"
     },
     {
@@ -47,68 +54,92 @@
     {
       "name": "2 Stück (70g)",
       "portion_g": 70,
-      "calories": 364,
-      "protein": 4.6,
-      "carbs": 26.8,
-      "fat": 26.2
+      "calories": 365,
+      "protein": 4.7,
+      "carbs": 26.7,
+      "fat": 26.3
     },
     {
       "name": "3er-Packung (105g)",
       "portion_g": 105,
-      "calories": 546,
-      "protein": 6.9,
-      "carbs": 40.2,
-      "fat": 39.3,
+      "calories": 547,
+      "protein": 7,
+      "carbs": 40.1,
+      "fat": 39.4,
       "tip": "Die ganze Packung"
     },
     {
       "name": "Pro 50g",
       "portion_g": 50,
-      "calories": 260,
-      "protein": 3.3,
-      "carbs": 19.2,
-      "fat": 18.7
+      "calories": 261,
+      "protein": 3.4,
+      "carbs": 19.1,
+      "fat": 18.8
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 520,
-      "protein": 6.6,
-      "carbs": 38.3,
-      "fat": 37.4
+      "calories": 521,
+      "protein": 6.7,
+      "carbs": 38.2,
+      "fat": 37.5
     }
   ],
   "comparison": [
     {
       "name": "Knoppers (25g)",
-      "calories": 138,
-      "emoji": "🍫"
+      "calories": 137,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "knoppers",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Milchschnitte (28g)",
-      "calories": 125,
-      "emoji": "🥛"
+      "calories": 118,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "milchschnitte",
+          "g": 28
+        }
+      ]
     },
     {
       "name": "Hanuta (22g)",
-      "calories": 123,
-      "emoji": "🍫"
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "hanuta",
+          "g": 22
+        }
+      ]
     },
     {
       "name": "Duplo (18g)",
-      "calories": 100,
-      "emoji": "🍬"
+      "calories": 99,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "duplo",
+          "g": 18
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorienreicher Snack",
-      "text": "Ein Maxi King liefert mit 182 kcal pro Stück deutlich mehr Energie als ein vergleichbares Knoppers (138 kcal) oder eine Milchschnitte (125 kcal). Das liegt vor allem am hohen Fettanteil von 37g pro 100g.",
+      "text": "Ein Maxi King liefert mit 182 kcal pro Stück deutlich mehr Energie als ein Knoppers (137 kcal) oder eine Milchschnitte (118 kcal). Das liegt vor allem am hohen Fettanteil von 37,5g pro 100g.",
       "icon": "🍮"
     },
     {
       "title": "Bewusst genießen",
-      "text": "Da fast die Hälfte des Gewichts aus Fett besteht, eignet sich der Maxi King eher als gelegentlicher Genuss statt als täglicher Snack.",
+      "text": "Da mehr als ein Drittel des Gewichts aus Fett besteht, eignet sich der Maxi King eher als gelegentlicher Genuss statt als täglicher Snack.",
       "icon": "⚖️"
     },
     {
@@ -130,23 +161,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Maxi King?",
-      "answer": "Ein Stück Maxi King (35g) hat ca. 182 kcal. Pro 100g sind es rund 520 kcal."
+      "answer": "Ein Stück Maxi King (35g) hat ca. 182 kcal. Pro 100g sind es laut Hersteller 521 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine 3er-Packung Maxi King?",
-      "answer": "Die komplette 3er-Packung (105g) liefert ca. 546 kcal."
+      "answer": "Die komplette 3er-Packung (105g) liefert ca. 547 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Maxi King?",
-      "answer": "Ein Stück (35g) enthält etwa 13,4g Kohlenhydrate, davon rund 12,5g Zucker. Pro 100g sind es 38,3g Kohlenhydrate."
+      "answer": "Ein Stück (35g) enthält etwa 13,4g Kohlenhydrate, davon rund 12,5g Zucker. Pro 100g sind es 38,2g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat ein Maxi King?",
-      "answer": "Ein Maxi King liefert nur etwa 2,3g Eiweiß pro Stück (6,6g pro 100g) und ist damit kein nennenswerter Proteinlieferant."
+      "answer": "Ein Maxi King liefert nur etwa 2,3g Eiweiß pro Stück (6,7g pro 100g) und ist damit kein nennenswerter Proteinlieferant."
     },
     {
       "question": "Ist Maxi King zum Abnehmen geeignet?",
-      "answer": "Nur in Maßen. Mit 520 kcal und 37g Fett pro 100g ist der Maxi King sehr energiedicht. In einer Diät passt er als gelegentlicher kleiner Genuss, sollte aber in die Tagesbilanz eingerechnet werden."
+      "answer": "Nur in Maßen. Mit 521 kcal und 37,5g Fett pro 100g ist der Maxi King sehr energiedicht. In einer Diät passt er als gelegentlicher kleiner Genuss, sollte aber in die Tagesbilanz eingerechnet werden."
     },
     {
       "question": "Ist Maxi King gesund?",

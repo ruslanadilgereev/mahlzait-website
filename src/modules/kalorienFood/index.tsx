@@ -58,6 +58,8 @@ interface FoodData {
     produkt: string;
     url: string;
     abgerufen: string;
+    // allgemeine Seite, deren Werte ein Markenprodukt als Beispiel nennen
+    beispiel?: boolean;
   };
   variants: FoodVariant[];
   comparison: FoodComparison[];
@@ -332,7 +334,9 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
               </div>
               {food.hersteller && (
                 <p className="mt-4 text-sm opacity-70">
-                  Herstellerangabe: {food.hersteller.name}, {food.hersteller.produkt}, abgerufen am{" "}
+                  {food.hersteller.beispiel
+                    ? `Werte am Beispiel ${food.hersteller.name} ${food.hersteller.produkt} (Herstellerangabe), abgerufen am `
+                    : `Herstellerangabe: ${food.hersteller.name}, ${food.hersteller.produkt}, abgerufen am `}
                   {food.hersteller.abgerufen.split("-").reverse().join(".")}.{" "}
                   <a
                     href={food.hersteller.url}
@@ -611,7 +615,9 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
           <div className="max-w-2xl mx-auto mt-4 mb-12 text-xs opacity-60 text-center leading-relaxed">
             {food.hersteller ? (
               <>
-                Quelle: Herstellerangabe {food.hersteller.name}, {food.hersteller.produkt}, abgerufen am{" "}
+                {food.hersteller.beispiel
+                  ? `Quelle: Werte am Beispiel ${food.hersteller.name} ${food.hersteller.produkt} (Herstellerangabe), abgerufen am `
+                  : `Quelle: Herstellerangabe ${food.hersteller.name}, ${food.hersteller.produkt}, abgerufen am `}
                 {food.hersteller.abgerufen.split("-").reverse().join(".")}.{" "}
               </>
             ) : fdcIds.length > 0 ? (

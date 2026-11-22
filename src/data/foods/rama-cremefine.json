@@ -3,9 +3,16 @@
   "name": "Rama Cremefine",
   "emoji": "🥛",
   "category": "supermarkt",
+  "source": "Herstellerangabe Flora Food Group (Rama), Rama Cremefine zum Kochen 15% Fett (https://www.rama.com/de-de/produkte/rama-cremefine/rama-cremefine-zum-kochen-15, abgerufen am 22.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Flora Food Group (Rama)",
+    "produkt": "Rama Cremefine zum Kochen 15% Fett",
+    "url": "https://www.rama.com/de-de/produkte/rama-cremefine/rama-cremefine-zum-kochen-15",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Rama Cremefine Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat Rama Cremefine? Cremefine zum Kochen (15%) hat 155 kcal pro 100g, eine Portion (50ml) nur ca. 78 kcal. Alle Sorten im Überblick.",
+    "description": "Wie viele Kalorien hat Rama Cremefine? Cremefine zum Kochen (15%) hat 160 kcal pro 100 ml, eine Portion (50ml) nur ca. 80 kcal. Sorten im Überblick.",
     "keywords": [
       "rama cremefine kalorien",
       "rama cremefine kcal",
@@ -17,111 +24,129 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 155,
-    "protein_per_100g": 2.8,
-    "carbs_per_100g": 3.4,
+    "calories_per_100g": 160,
+    "protein_per_100g": 2,
+    "carbs_per_100g": 4,
     "fat_per_100g": 15,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 50,
-    "typical_portion_name": "1 Portion zum Kochen (50ml)"
+    "typical_portion_name": "1 Portion zum Kochen (50ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
-      "name": "Cremefine zum Kochen 15% - 1 EL (15g)",
+      "name": "Cremefine zum Kochen 15% - 1 EL (15 ml)",
       "portion_g": 15,
-      "calories": 23,
-      "protein": 0.4,
-      "carbs": 0.5,
+      "calories": 24,
+      "protein": 0.3,
+      "carbs": 0.6,
       "fat": 2.3
     },
     {
       "name": "Cremefine zum Kochen 15% - 1 Portion (50ml)",
       "portion_g": 50,
-      "calories": 78,
-      "protein": 1.4,
-      "carbs": 1.7,
+      "calories": 80,
+      "protein": 1,
+      "carbs": 2,
       "fat": 7.5,
       "tip": "Standard"
     },
     {
-      "name": "Cremefine zum Kochen 15% - halber Becher (100ml)",
+      "name": "Cremefine zum Kochen 15% - 100 ml",
       "portion_g": 100,
-      "calories": 155,
-      "protein": 2.8,
-      "carbs": 3.4,
+      "calories": 160,
+      "protein": 2,
+      "carbs": 4,
       "fat": 15
     },
     {
-      "name": "Cremefine zum Kochen 15% - ganzer Becher (200ml)",
+      "name": "Cremefine zum Kochen 15% - 200 ml",
       "portion_g": 200,
-      "calories": 310,
-      "protein": 5.6,
-      "carbs": 6.8,
+      "calories": 320,
+      "protein": 4,
+      "carbs": 8,
       "fat": 30
     },
     {
       "name": "Cremefine zum Kochen 7% - 1 Portion (50ml)",
       "portion_g": 50,
-      "calories": 39,
-      "protein": 1.5,
-      "carbs": 1.8,
+      "calories": 45,
+      "protein": 0.5,
+      "carbs": 2.3,
       "fat": 3.5,
-      "tip": "Kalorienärmere Sorte"
+      "tip": "Kalorienärmere Sorte",
+      "basis": [
+        {
+          "slug": "cremefine",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Cremefine zum Kochen 7% - ganzer Becher (200ml)",
+      "name": "Cremefine zum Kochen 7% - 200 ml",
       "portion_g": 200,
-      "calories": 156,
-      "protein": 6,
-      "carbs": 7.2,
-      "fat": 14
-    },
-    {
-      "name": "Cremefine zum Aufschlagen 19% - 1 Portion (30g)",
-      "portion_g": 30,
-      "calories": 57,
-      "protein": 0.8,
-      "carbs": 1,
-      "fat": 5.7,
-      "tip": "Schlagcreme-Alternative"
+      "calories": 180,
+      "protein": 2,
+      "carbs": 9,
+      "fat": 14,
+      "basis": [
+        {
+          "slug": "cremefine",
+          "g": 200
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Schlagsahne (30% Fett)",
-      "calories": 309,
-      "emoji": "🥛"
+      "name": "Schlagsahne 30 % (100 ml)",
+      "calories": 295,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "fdcId": 170858,
+          "ml": 100,
+          "g": 101
+        }
+      ]
     },
     {
-      "name": "Crème fraîche (30%)",
-      "calories": 292,
-      "emoji": "🥄"
+      "name": "Crème fraîche 30 % (100g)",
+      "calories": 297,
+      "emoji": "🥄",
+      "basis": [
+        {
+          "slug": "creme-fraiche",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Schmand (24%)",
-      "calories": 237,
-      "emoji": "🥄"
-    },
-    {
-      "name": "Kaffeesahne (10%)",
-      "calories": 120,
-      "emoji": "☕"
+      "name": "Kaffeesahne (100g)",
+      "calories": 131,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffeesahne",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Leichter als Sahne",
-      "text": "Cremefine zum Kochen (15% Fett) hat mit 155 kcal pro 100g nur rund die Hälfte der Kalorien von klassischer Schlagsahne (ca. 309 kcal). So sparst du beim Verfeinern von Soßen und Suppen Fett ein.",
+      "text": "Cremefine zum Kochen (15% Fett) hat mit 160 kcal pro 100 ml nur rund die Hälfte der Kalorien von klassischer Schlagsahne (ca. 295 kcal). So sparst du beim Verfeinern von Soßen und Suppen Fett ein.",
       "icon": "🥛"
     },
     {
       "title": "Sorte gezielt wählen",
-      "text": "Wer Kalorien sparen möchte, greift zur Sorte zum Kochen mit nur 7% Fett (78 kcal pro 100g). Zum Kochen liefert die 15%-Variante mehr Geschmack und Bindung in warmen Gerichten.",
+      "text": "Wer Kalorien sparen möchte, greift zur Sorte zum Kochen mit nur 7% Fett (90 kcal pro 100 ml). Zum Kochen liefert die 15%-Variante mehr Geschmack und Bindung in warmen Gerichten.",
       "icon": "🔍"
     },
     {
       "title": "Portion klein halten",
-      "text": "Schon 1 Esslöffel (15g) verfeinert viele Gerichte und schlägt nur mit etwa 23 kcal zu Buche. Tropfenweise dosieren spart spürbar Kalorien gegenüber dem großzügigen Schuss aus dem Becher.",
+      "text": "Schon 1 Esslöffel (15 ml) verfeinert viele Gerichte und schlägt nur mit etwa 24 kcal zu Buche. Tropfenweise dosieren spart spürbar Kalorien gegenüber dem großzügigen Schuss aus dem Becher.",
       "icon": "🥄"
     },
     {
@@ -138,19 +163,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Rama Cremefine?",
-      "answer": "Rama Cremefine zum Kochen (15% Fett) hat 155 kcal pro 100g. Eine typische Portion von 50ml liefert rund 78 kcal, ein Esslöffel (15g) etwa 23 kcal."
+      "answer": "Rama Cremefine zum Kochen (15% Fett) hat laut Hersteller 160 kcal pro 100 ml. Eine typische Portion von 50 ml liefert rund 80 kcal, ein Esslöffel (15 ml) etwa 24 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Cremefine zum Kochen?",
-      "answer": "Cremefine zum Kochen mit 15% Fett enthält 155 kcal pro 100g. Damit hat sie etwa halb so viele Kalorien wie klassische Schlagsahne mit 30% Fett."
+      "answer": "Cremefine zum Kochen mit 15% Fett enthält 160 kcal pro 100 ml. Damit hat sie etwa halb so viele Kalorien wie klassische Schlagsahne mit 30% Fett."
     },
     {
       "question": "Welche Cremefine-Sorte hat die wenigsten Kalorien?",
-      "answer": "Am kalorienärmsten ist Cremefine zum Kochen mit nur 7% Fett und rund 78 kcal pro 100g. Die Sorte zum Aufschlagen (19% Fett) hat mit etwa 190 kcal pro 100g am meisten."
+      "answer": "Am kalorienärmsten ist Cremefine zum Kochen mit nur 7% Fett und rund 90 kcal pro 100 ml. Die Sorte zum Aufschlagen mit 19% Fett liegt deutlich höher."
     },
     {
       "question": "Wie viele Kohlenhydrate und wie viel Eiweiß hat Rama Cremefine?",
-      "answer": "Cremefine zum Kochen liefert pro 100g etwa 3,4g Kohlenhydrate und 2,8g Eiweiß. Der Hauptanteil der Kalorien stammt mit 15g pro 100g aus Fett."
+      "answer": "Cremefine zum Kochen liefert pro 100 ml 4g Kohlenhydrate und 2g Eiweiß. Der Hauptanteil der Kalorien stammt mit 15g pro 100 ml aus Fett."
     },
     {
       "question": "Ist Rama Cremefine zum Abnehmen geeignet?",

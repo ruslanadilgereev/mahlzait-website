@@ -3,9 +3,29 @@
   "name": "Nougat",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (500 g Nuss-Nougat-Masse): 200 g Haselnüsse, geröstet und gemahlen (FDC-ID 170583, Nuts, hazelnuts or filberts, dry roasted, without salt added: 646 kcal), 150 g Puderzucker (FDC-ID 169656, Sugars, powdered: 389 kcal), 150 g Vollmilchschokolade (FDC-ID 167587, Candies, milk chocolate: 535 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Haselnüsse, geröstet und gemahlen",
+        "g": 200,
+        "fdcId": 170583
+      },
+      {
+        "name": "Puderzucker",
+        "g": 150,
+        "fdcId": 169656
+      },
+      {
+        "name": "Vollmilchschokolade",
+        "g": 150,
+        "fdcId": 167587
+      }
+    ]
+  },
   "seo": {
     "title": "Nougat Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Nougat? 100g Nuss-Nougat haben ca. 550 kcal. Nährwerte pro Stück & 100g, Sorten im Vergleich und praktische Tipps.",
+    "description": "Wie viele Kalorien hat Nougat? 100g Nuss-Nougat haben ca. 536 kcal. Nährwerte pro Stück & 100g, Sorten im Vergleich und praktische Tipps.",
     "keywords": [
       "nougat kcal",
       "nougat kalorien",
@@ -16,11 +36,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 550,
-    "protein_per_100g": 6.5,
-    "carbs_per_100g": 52,
-    "fat_per_100g": 35,
-    "fiber_per_100g": 3.5,
+    "calories_per_100g": 536,
+    "protein_per_100g": 8.3,
+    "carbs_per_100g": 54.8,
+    "fat_per_100g": 33.9,
+    "fiber_per_100g": 4.8,
     "typical_portion_g": 25,
     "typical_portion_name": "1 Stück (25g)"
   },
@@ -28,7 +48,7 @@
     {
       "name": "1 Stück klein (15g)",
       "portion_g": 15,
-      "calories": 83,
+      "calories": 80,
       "protein": 1,
       "carbs": 8,
       "fat": 5
@@ -36,85 +56,132 @@
     {
       "name": "1 Stück (25g)",
       "portion_g": 25,
-      "calories": 138,
+      "calories": 134,
       "protein": 2,
-      "carbs": 13,
-      "fat": 9,
+      "carbs": 14,
+      "fat": 8,
       "tip": "Standard-Portion"
     },
     {
       "name": "Riegel (50g)",
       "portion_g": 50,
-      "calories": 275,
-      "protein": 3,
-      "carbs": 26,
-      "fat": 18
+      "calories": 268,
+      "protein": 4,
+      "carbs": 27,
+      "fat": 17
     },
     {
       "name": "Nougat-Tafel (100g)",
       "portion_g": 100,
-      "calories": 550,
-      "protein": 7,
-      "carbs": 52,
-      "fat": 35
+      "calories": 536,
+      "protein": 8,
+      "carbs": 55,
+      "fat": 34
     },
     {
       "name": "Esslöffel Nougatcreme (20g)",
       "portion_g": 20,
-      "calories": 110,
+      "calories": 108,
       "protein": 1,
-      "carbs": 10,
-      "fat": 7
+      "carbs": 12,
+      "fat": 6,
+      "tip": "Nuss-Nougat-Creme als Brotaufstrich",
+      "basis": [
+        {
+          "fdcId": 168000,
+          "g": 20
+        }
+      ]
     },
     {
       "name": "Praline mit Nougatfüllung (12g)",
       "portion_g": 12,
-      "calories": 66,
+      "calories": 64,
       "protein": 1,
-      "carbs": 6,
-      "fat": 4
+      "carbs": 7,
+      "fat": 4,
+      "tip": "7g Nougat in 5g Schokoladenhülle",
+      "basis": [
+        {
+          "g": 7
+        },
+        {
+          "fdcId": 167587,
+          "g": 5
+        }
+      ]
     },
     {
       "name": "Weißer Nougat / Montélimar (30g)",
       "portion_g": 30,
-      "calories": 120,
-      "protein": 2,
-      "carbs": 22,
-      "fat": 3,
-      "tip": "Eiweiß-Zucker-Variante, fettärmer"
+      "calories": 119,
+      "protein": 1,
+      "carbs": 28,
+      "fat": 1,
+      "tip": "Eiweiß-Zucker-Variante, fettärmer",
+      "basis": [
+        {
+          "fdcId": 169060,
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Marzipan (25g)",
-      "calories": 113,
-      "emoji": "🟡"
+      "calories": 115,
+      "emoji": "🟡",
+      "basis": [
+        {
+          "slug": "marzipan",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Vollmilchschokolade (25g)",
       "calories": 134,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Erdnussbutter (25g)",
       "calories": 150,
-      "emoji": "🥜"
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnussbutter",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Gummibärchen (25g)",
-      "calories": 86,
-      "emoji": "🐻"
+      "calories": 99,
+      "emoji": "🐻",
+      "basis": [
+        {
+          "fdcId": 2710359,
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst portionieren",
-      "text": "Ein Stück Nougat (25g) liefert rund 138 kcal. Wer bei einem Stück bleibt, genießt ohne große Kalorienlast – die Tafel mit 550 kcal pro 100g summiert sich schnell.",
+      "text": "Ein Stück Nougat (25g) liefert rund 134 kcal. Wer bei einem Stück bleibt, genießt ohne große Kalorienlast. Die Tafel mit 536 kcal pro 100g summiert sich schnell.",
       "icon": "🍫"
     },
     {
       "title": "Hoher Fettanteil beachten",
-      "text": "Mit etwa 35g Fett pro 100g zählt Nougat zu den fettreichen Süßigkeiten. Der Fettanteil stammt überwiegend aus Haselnüssen und Kakaobutter.",
+      "text": "Mit etwa 34g Fett pro 100g zählt Nougat zu den fettreichen Süßigkeiten. Der Fettanteil stammt überwiegend aus Haselnüssen und Kakaobutter.",
       "icon": "🥜"
     },
     {
@@ -136,23 +203,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Nougat?",
-      "answer": "100g Nuss-Nougat haben etwa 550 kcal. Ein typisches Stück (25g) kommt auf rund 138 kcal."
+      "answer": "100g Nuss-Nougat haben etwa 536 kcal. Ein typisches Stück (25g) kommt auf rund 134 kcal. Gerechnet aus USDA-Werten für eine Nougatmasse aus 200g gerösteten Haselnüssen, 150g Puderzucker und 150g Vollmilchschokolade."
     },
     {
       "question": "Wie viele Kalorien hat 100g Nougatmasse?",
-      "answer": "100g Nougatmasse liefern ungefähr 550 kcal, etwa 52g Kohlenhydrate und 35g Fett."
+      "answer": "100g Nougatmasse liefern ungefähr 536 kcal, etwa 55g Kohlenhydrate und 34g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Nougat?",
-      "answer": "Nougat enthält rund 52g Kohlenhydrate pro 100g, davon der Großteil Zucker. Ein Stück (25g) hat etwa 13g Kohlenhydrate."
+      "answer": "Nougat enthält rund 55g Kohlenhydrate pro 100g, davon der Großteil Zucker. Ein Stück (25g) hat etwa 14g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Nougat?",
-      "answer": "Nougat hat etwa 6,5g Eiweiß pro 100g, hauptsächlich aus den enthaltenen Haselnüssen. Als Eiweißquelle eignet es sich aber kaum."
+      "answer": "Nougat hat etwa 8g Eiweiß pro 100g, hauptsächlich aus den enthaltenen Haselnüssen. Als Eiweißquelle eignet es sich aber kaum."
     },
     {
       "question": "Ist Nougat zum Abnehmen geeignet?",
-      "answer": "Nougat ist mit 550 kcal und 35g Fett pro 100g sehr energiereich und daher nur in kleinen Mengen sinnvoll. Als gelegentlicher Genuss in Maßen passt es auch in eine Diät."
+      "answer": "Nougat ist mit 536 kcal und 34g Fett pro 100g sehr energiereich und daher nur in kleinen Mengen sinnvoll. Als gelegentlicher Genuss in Maßen passt es auch in eine Diät."
     },
     {
       "question": "Ist Nougat gesund?",

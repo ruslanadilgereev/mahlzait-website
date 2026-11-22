@@ -3,9 +3,16 @@
   "name": "Nic Nac's",
   "emoji": "🥜",
   "category": "supermarkt",
+  "source": "Herstellerangabe Lorenz Snacks, NicNac's Original (https://lorenz-snacks.de/nicnacs-original, abgerufen am 22.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Lorenz Snacks",
+    "produkt": "NicNac's Original",
+    "url": "https://lorenz-snacks.de/nicnacs-original",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Nic Nac's Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Nic Nac's? 100g haben ca. 540 kcal, eine kleine Tüte (50g) rund 270 kcal. Nährwerte, Portionen & Tipps im Überblick.",
+    "description": "Wie viele Kalorien haben Nic Nac's? 100g haben ca. 533 kcal, eine Portion (50g) rund 267 kcal. Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "nic nacs kalorien",
       "nic nac's kcal",
@@ -17,103 +24,106 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 540,
-    "protein_per_100g": 18,
-    "carbs_per_100g": 38,
-    "fat_per_100g": 34,
-    "fiber_per_100g": 4,
+    "calories_per_100g": 533,
+    "protein_per_100g": 15,
+    "carbs_per_100g": 34,
+    "fat_per_100g": 36,
+    "fiber_per_100g": 6.5,
     "typical_portion_g": 50,
-    "typical_portion_name": "1 kleine Tüte (50g)"
+    "typical_portion_name": "1 Portion (50g)"
   },
   "variants": [
     {
       "name": "Handvoll (25g)",
       "portion_g": 25,
-      "calories": 135,
-      "protein": 5,
-      "carbs": 10,
+      "calories": 133,
+      "protein": 4,
+      "carbs": 9,
       "fat": 9,
       "tip": "Kleine Knabbermenge"
     },
     {
-      "name": "Kleine Tüte (50g)",
+      "name": "Kleine Portion (50g)",
       "portion_g": 50,
-      "calories": 270,
-      "protein": 9,
-      "carbs": 19,
-      "fat": 17,
-      "tip": "Standard-Snackbeutel"
+      "calories": 267,
+      "protein": 8,
+      "carbs": 17,
+      "fat": 18
     },
     {
       "name": "Portion (75g)",
       "portion_g": 75,
-      "calories": 405,
-      "protein": 14,
-      "carbs": 29,
-      "fat": 26
-    },
-    {
-      "name": "Halbe große Tüte (62g)",
-      "portion_g": 62,
-      "calories": 335,
+      "calories": 400,
       "protein": 11,
-      "carbs": 24,
-      "fat": 21
+      "carbs": 26,
+      "fat": 27
     },
     {
-      "name": "Große Tüte (125g)",
+      "name": "Große Portion (125g)",
       "portion_g": 125,
-      "calories": 675,
-      "protein": 23,
-      "carbs": 48,
-      "fat": 43,
-      "tip": "Ganzer Beutel"
+      "calories": 666,
+      "protein": 19,
+      "carbs": 43,
+      "fat": 45
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 540,
-      "protein": 18,
-      "carbs": 38,
-      "fat": 34
+      "calories": 533,
+      "protein": 15,
+      "carbs": 34,
+      "fat": 36
     }
   ],
   "comparison": [
     {
-      "name": "Erdnüsse (50g)",
-      "calories": 285,
-      "emoji": "🥜"
+      "name": "Erdnüsse, geröstet und gesalzen (50g)",
+      "calories": 294,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "fdcId": 174262,
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Kartoffelchips (50g)",
-      "calories": 268,
-      "emoji": "🥔"
+      "calories": 266,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Salzstangen (50g)",
-      "calories": 185,
-      "emoji": "🥨"
-    },
-    {
-      "name": "Flips (50g)",
-      "calories": 265,
-      "emoji": "🌽"
+      "calories": 192,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "salzstangen",
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst portionieren",
-      "text": "Eine kleine Tüte (50g) hat bereits rund 270 kcal. Wer aus der großen Tüte direkt isst, verliert schnell den Überblick. Lieber eine kleine Schale abfüllen.",
+      "text": "Eine Portion von 50g hat bereits rund 267 kcal. Wer aus der großen Tüte direkt isst, verliert schnell den Überblick. Lieber eine kleine Schale abfüllen.",
       "icon": "🥣"
     },
     {
       "title": "Fett im Blick behalten",
-      "text": "Mit etwa 34g Fett pro 100g sind Nic Nac's ein fettreicher Knabberartikel. Das macht sie kalorienreich, auch wenn die Portion klein wirkt.",
+      "text": "Mit 36g Fett pro 100g sind Nic Nac's ein fettreicher Knabberartikel. Das macht sie kalorienreich, auch wenn die Portion klein wirkt.",
       "icon": "🧈"
     },
     {
       "title": "Eiweißanteil aus der Erdnuss",
-      "text": "Der Erdnusskern liefert rund 18g Protein pro 100g. Als Sattmacher taugt der Snack durch den hohen Fett- und Salzgehalt aber nur bedingt.",
+      "text": "Nic Nac's liefern rund 15g Protein pro 100g, vor allem aus dem Erdnusskern. Als Sattmacher taugt der Snack durch den hohen Fett- und Salzgehalt aber nur bedingt.",
       "icon": "💪"
     },
     {
@@ -130,23 +140,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Nic Nac's?",
-      "answer": "100g Nic Nac's haben rund 540 kcal. Eine kleine Tüte (50g) liefert etwa 270 kcal, eine große Tüte (125g) rund 675 kcal."
+      "answer": "100g Nic Nac's haben laut Hersteller 533 kcal. Eine Portion von 50g liefert etwa 267 kcal, 125g rund 666 kcal."
     },
     {
-      "question": "Wie viele Kalorien hat eine kleine Tüte Nic Nac's?",
-      "answer": "Eine kleine Tüte mit 50g hat ungefähr 270 kcal."
+      "question": "Wie viele Kalorien haben 50g Nic Nac's?",
+      "answer": "Eine kleine Portion mit 50g hat ungefähr 267 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Nic Nac's?",
-      "answer": "Nic Nac's enthalten etwa 38g Kohlenhydrate pro 100g, in einer kleinen Tüte (50g) sind es rund 19g."
+      "answer": "Nic Nac's enthalten 34g Kohlenhydrate pro 100g, in einer Portion von 50g sind es rund 17g."
     },
     {
       "question": "Wie viel Protein steckt in Nic Nac's?",
-      "answer": "Pro 100g liefern Nic Nac's etwa 18g Eiweiß, das vor allem aus dem Erdnusskern stammt. Eine 50g-Tüte enthält rund 9g."
+      "answer": "Pro 100g liefern Nic Nac's 15g Eiweiß, das vor allem aus dem Erdnusskern stammt. 50g enthalten rund 7,5g."
     },
     {
       "question": "Sind Nic Nac's zum Abnehmen geeignet?",
-      "answer": "Nur in kleinen Mengen. Mit etwa 540 kcal und 34g Fett pro 100g sind Nic Nac's sehr energiedicht. Als gelegentlicher Snack in kleiner Portion sind sie okay, als Dauer-Knabberei in einer Diät eher ungeeignet."
+      "answer": "Nur in kleinen Mengen. Mit 533 kcal und 36g Fett pro 100g sind Nic Nac's sehr energiedicht. Als gelegentlicher Snack in kleiner Portion sind sie okay, als Dauer-Knabberei in einer Diät eher ungeeignet."
     },
     {
       "question": "Sind Nic Nac's gesund?",

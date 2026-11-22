@@ -3,6 +3,13 @@
   "name": "Dextro Energy",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe Dextro Energy, Dextro Energy* Würfel Classic (46 g, 8 Täfelchen) (https://dextro-energy.com/products/wuerfel-classic, abgerufen am 22.11.2026), Werte je 100 g; Fett laut Hersteller unter 0,5 g, hier 0 g; Täfelchen 5,75 g aus 8 Täfelchen je 46-g-Würfel",
+  "hersteller": {
+    "name": "Dextro Energy",
+    "produkt": "Dextro Energy* Würfel Classic (46 g, 8 Täfelchen)",
+    "url": "https://dextro-energy.com/products/wuerfel-classic",
+    "abgerufen": "2026-11-22"
+  },
   "seo": {
     "title": "Dextro Energy Kalorien: Nährwerte & Tipps | Mahlzait",
     "description": "Wie viele Kalorien hat Dextro Energy? Ein Täfelchen (5,75g) hat ca. 21 kcal, 100g haben 368 kcal. Alle Nährwerte, Portionen & Tipps im Überblick.",
@@ -19,8 +26,8 @@
     "calories_per_100g": 368,
     "protein_per_100g": 0,
     "carbs_per_100g": 91,
-    "fat_per_100g": 0.5,
-    "fiber_per_100g": 0,
+    "fat_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 11.5,
     "typical_portion_name": "2 Täfelchen (11,5g)"
   },
@@ -45,7 +52,7 @@
     {
       "name": "3 Täfelchen (17,25g)",
       "portion_g": 17.25,
-      "calories": 64,
+      "calories": 63,
       "protein": 0,
       "carbs": 16,
       "fat": 0
@@ -72,24 +79,30 @@
       "calories": 368,
       "protein": 0,
       "carbs": 91,
-      "fat": 1
+      "fat": 0
     }
   ],
   "comparison": [
     {
-      "name": "Traubenzucker",
-      "calories": 42,
-      "emoji": "🧊"
+      "name": "Gummibärchen (1 Handvoll, 25g)",
+      "calories": 86,
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "gummibaerchen"
+        }
+      ]
     },
     {
-      "name": "Gummibärchen",
-      "calories": 41,
-      "emoji": "🐻"
-    },
-    {
-      "name": "Schokolade Vollmilch",
-      "calories": 63,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (12g)",
+      "calories": 64,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 12
+        }
+      ]
     }
   ],
   "tips": [
@@ -100,7 +113,7 @@
     },
     {
       "title": "Beim Abnehmen sparsam einsetzen",
-      "text": "Mit 368 kcal pro 100g und 91g Zucker ist Dextro Energy keine Diät-Hilfe. Wer abnehmen möchte, sollte einzelne Täfelchen bewusst zählen.",
+      "text": "Mit 368 kcal pro 100g und 82g Zucker ist Dextro Energy keine Diät-Hilfe. Wer abnehmen möchte, sollte einzelne Täfelchen bewusst zählen.",
       "icon": "⚖️"
     },
     {
@@ -122,7 +135,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Dextro Energy?",
-      "answer": "Ein einzelnes Täfelchen (5,75g) hat ca. 21 kcal. Ein ganzer Würfel mit 8 Täfelchen (46g) kommt auf etwa 169 kcal. Pro 100g sind es 368 kcal."
+      "answer": "Ein einzelnes Täfelchen (5,75g) hat ca. 21 kcal. Ein ganzer Würfel mit 8 Täfelchen (46g) kommt auf etwa 169 kcal. Pro 100g sind es laut Herstellerangabe 368 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Würfel Dextro Energy?",
@@ -130,15 +143,15 @@
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Dextro Energy?",
-      "answer": "Dextro Energy besteht zu rund 91g pro 100g aus Kohlenhydraten, fast ausschließlich in Form von Traubenzucker (Dextrose). Ein Täfelchen liefert etwa 5g Kohlenhydrate."
+      "answer": "Dextro Energy besteht zu rund 91g pro 100g aus Kohlenhydraten, davon 82g Zucker, vor allem Traubenzucker (Dextrose, 89 %) und etwas Maltodextrin. Ein Täfelchen liefert etwa 5g Kohlenhydrate."
     },
     {
       "question": "Enthält Dextro Energy Eiweiß oder Fett?",
-      "answer": "Nein, nennenswerte Mengen sind nicht enthalten. Pro 100g liegt das Eiweiß bei 0g und das Fett bei nur etwa 0,5g."
+      "answer": "Nein, nennenswerte Mengen sind nicht enthalten. Pro 100g liegt das Eiweiß bei 0g und das Fett unter 0,5g."
     },
     {
       "question": "Ist Dextro Energy zum Abnehmen geeignet?",
-      "answer": "Nicht wirklich. Mit 368 kcal und 91g Zucker pro 100g liefert Dextro Energy schnelle Energie, sättigt aber nicht. Beim Abnehmen sollte man es nur gezielt und sparsam verwenden."
+      "answer": "Nicht wirklich. Mit 368 kcal und 82g Zucker pro 100g liefert Dextro Energy schnelle Energie, sättigt aber nicht. Beim Abnehmen sollte man es nur gezielt und sparsam verwenden."
     },
     {
       "question": "Ist Dextro Energy gesund?",
