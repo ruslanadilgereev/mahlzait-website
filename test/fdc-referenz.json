@@ -1,0 +1,2101 @@
+{
+ "quelle": "USDA FoodData Central, https://fdc.nal.usda.gov/download-datasets",
+ "datensaetze": [
+  "SR Legacy 2018-04 (CSV)",
+  "Foundation Foods 2026-10-29 (JSON)",
+  "FNDDS 2024-10-31 (CSV)"
+ ],
+ "werte": "je 100 g; kcal aus Nährstoff 1008 (Energy), bei Foundation ohne 1008 aus 2048 (Atwater Specific Factors) oder 2047 (Atwater General Factors)",
+ "eintraege": {
+  "167571": {
+   "id": 167571,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Candies, white chocolate",
+   "kcal": 539,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.87,
+   "fett": 32.09,
+   "kohlenhydrate": 59.24
+  },
+  "167587": {
+   "id": 167587,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Candies, milk chocolate",
+   "kcal": 535,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 7.65,
+   "fett": 29.66,
+   "kohlenhydrate": 59.4
+  },
+  "167747": {
+   "id": 167747,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Lemon juice, raw",
+   "kcal": 22,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.35,
+   "fett": 0.24,
+   "kohlenhydrate": 6.9
+  },
+  "167758": {
+   "id": 167758,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Rhubarb, raw",
+   "kcal": 21,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.9,
+   "fett": 0.2,
+   "kohlenhydrate": 4.54
+  },
+  "167762": {
+   "id": 167762,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Strawberries, raw",
+   "kcal": 32,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.67,
+   "fett": 0.3,
+   "kohlenhydrate": 7.68
+  },
+  "167765": {
+   "id": 167765,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Watermelon, raw",
+   "kcal": 30,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.61,
+   "fett": 0.15,
+   "kohlenhydrate": 7.55
+  },
+  "167854": {
+   "id": 167854,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pork, fresh, spareribs, separable lean and fat, cooked, braised",
+   "kcal": 397,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 29.06,
+   "fett": 30.3,
+   "kohlenhydrate": 0
+  },
+  "167981": {
+   "id": 167981,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Ice creams, french vanilla, soft-serve",
+   "kcal": 222,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 4.1,
+   "fett": 13,
+   "kohlenhydrate": 22.2
+  },
+  "168153": {
+   "id": 168153,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Kiwifruit, green, raw",
+   "kcal": 61,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.14,
+   "fett": 0.52,
+   "kohlenhydrate": 14.66
+  },
+  "168191": {
+   "id": 168191,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Dates, medjool",
+   "kcal": 277,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.81,
+   "fett": 0.15,
+   "kohlenhydrate": 74.97
+  },
+  "168195": {
+   "id": 168195,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Clementines, raw",
+   "kcal": 47,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.85,
+   "fett": 0.15,
+   "kohlenhydrate": 12.02
+  },
+  "168312": {
+   "id": 168312,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pork, fresh, loin, tenderloin, separable lean and fat, raw",
+   "kcal": 120,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 20.65,
+   "fett": 3.53,
+   "kohlenhydrate": 0
+  },
+  "168409": {
+   "id": 168409,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cucumber, with peel, raw",
+   "kcal": 15,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.65,
+   "fett": 0.11,
+   "kohlenhydrate": 3.63
+  },
+  "168411": {
+   "id": 168411,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Edamame, frozen, prepared",
+   "kcal": 121,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 11.91,
+   "fett": 5.2,
+   "kohlenhydrate": 8.91
+  },
+  "168448": {
+   "id": 168448,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pumpkin, raw",
+   "kcal": 26,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1,
+   "fett": 0.1,
+   "kohlenhydrate": 6.5
+  },
+  "168451": {
+   "id": 168451,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Radishes, oriental, raw",
+   "kcal": 18,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.6,
+   "fett": 0.1,
+   "kohlenhydrate": 4.1
+  },
+  "168462": {
+   "id": 168462,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Spinach, raw",
+   "kcal": 23,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.86,
+   "fett": 0.39,
+   "kohlenhydrate": 3.63
+  },
+  "168482": {
+   "id": 168482,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)",
+   "kcal": 86,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.57,
+   "fett": 0.05,
+   "kohlenhydrate": 20.12
+  },
+  "168556": {
+   "id": 168556,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Catsup",
+   "kcal": 101,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.04,
+   "fett": 0.1,
+   "kohlenhydrate": 27.4
+  },
+  "168588": {
+   "id": 168588,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, almond butter, plain, without salt added",
+   "kcal": 614,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 20.96,
+   "fett": 55.5,
+   "kohlenhydrate": 18.82
+  },
+  "168721": {
+   "id": 168721,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8\" fat, prime, raw",
+   "kcal": 281,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 19,
+   "fett": 22.17,
+   "kohlenhydrate": 0
+  },
+  "168768": {
+   "id": 168768,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Candies, MARS SNACKFOOD US, TWIX Caramel Cookie Bars",
+   "kcal": 502,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 4.91,
+   "fett": 24.85,
+   "kohlenhydrate": 64.8
+  },
+  "168833": {
+   "id": 168833,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Sugars, brown",
+   "kcal": 380,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.12,
+   "fett": 0,
+   "kohlenhydrate": 98.09
+  },
+  "168843": {
+   "id": 168843,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Candies, MARS SNACKFOOD US, SKITTLES Original Bite Size Candies",
+   "kcal": 405,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.19,
+   "fett": 4.37,
+   "kohlenhydrate": 90.78
+  },
+  "168849": {
+   "id": 168849,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Snacks, banana chips",
+   "kcal": 519,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.3,
+   "fett": 33.6,
+   "kohlenhydrate": 58.4
+  },
+  "168878": {
+   "id": 168878,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Rice, white, long-grain, regular, enriched, cooked",
+   "kcal": 130,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.69,
+   "fett": 0.28,
+   "kohlenhydrate": 28.17
+  },
+  "168926": {
+   "id": 168926,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Noodles, egg, unenriched, cooked, without added salt",
+   "kcal": 138,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 4.54,
+   "fett": 2.07,
+   "kohlenhydrate": 25.16
+  },
+  "168927": {
+   "id": 168927,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pasta, dry, unenriched",
+   "kcal": 371,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 13.04,
+   "fett": 1.51,
+   "kohlenhydrate": 74.67
+  },
+  "168933": {
+   "id": 168933,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Semolina, unenriched",
+   "kcal": 360,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 12.68,
+   "fett": 1.05,
+   "kohlenhydrate": 72.83
+  },
+  "169086": {
+   "id": 169086,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Litchis, raw",
+   "kcal": 66,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.83,
+   "fett": 0.44,
+   "kohlenhydrate": 16.53
+  },
+  "169094": {
+   "id": 169094,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Olives, ripe, canned (small-extra large)",
+   "kcal": 116,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.84,
+   "fett": 10.9,
+   "kohlenhydrate": 6.04
+  },
+  "169097": {
+   "id": 169097,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Oranges, raw, all commercial varieties",
+   "kcal": 47,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.94,
+   "fett": 0.12,
+   "kohlenhydrate": 11.75
+  },
+  "169108": {
+   "id": 169108,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Passion-fruit, (granadilla), purple, raw",
+   "kcal": 97,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.2,
+   "fett": 0.7,
+   "kohlenhydrate": 23.38
+  },
+  "169118": {
+   "id": 169118,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pears, raw",
+   "kcal": 57,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.36,
+   "fett": 0.14,
+   "kohlenhydrate": 15.23
+  },
+  "169124": {
+   "id": 169124,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pineapple, raw, all varieties",
+   "kcal": 50,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.54,
+   "fett": 0.12,
+   "kohlenhydrate": 13.12
+  },
+  "169145": {
+   "id": 169145,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beets, raw",
+   "kcal": 43,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.61,
+   "fett": 0.17,
+   "kohlenhydrate": 9.56
+  },
+  "169205": {
+   "id": 169205,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Artichokes, (globe or french), raw",
+   "kcal": 47,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.27,
+   "fett": 0.15,
+   "kohlenhydrate": 10.51
+  },
+  "169228": {
+   "id": 169228,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Eggplant, raw",
+   "kcal": 25,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.98,
+   "fett": 0.18,
+   "kohlenhydrate": 5.88
+  },
+  "169230": {
+   "id": 169230,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Garlic, raw",
+   "kcal": 149,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 6.36,
+   "fett": 0.5,
+   "kohlenhydrate": 33.06
+  },
+  "169231": {
+   "id": 169231,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Ginger root, raw",
+   "kcal": 80,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.82,
+   "fett": 0.75,
+   "kohlenhydrate": 17.77
+  },
+  "169246": {
+   "id": 169246,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Leeks, (bulb and lower leaf-portion), raw",
+   "kcal": 61,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.5,
+   "fett": 0.3,
+   "kohlenhydrate": 14.15
+  },
+  "169248": {
+   "id": 169248,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Lettuce, iceberg (includes crisphead types), raw",
+   "kcal": 14,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.9,
+   "fett": 0.14,
+   "kohlenhydrate": 2.97
+  },
+  "169251": {
+   "id": 169251,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Mushrooms, white, raw",
+   "kcal": 22,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.09,
+   "fett": 0.34,
+   "kohlenhydrate": 3.26
+  },
+  "169291": {
+   "id": 169291,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Squash, summer, zucchini, includes skin, raw",
+   "kcal": 17,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.21,
+   "fett": 0.32,
+   "kohlenhydrate": 3.11
+  },
+  "169378": {
+   "id": 169378,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pickles, cucumber, sweet (includes bread and butter pickles)",
+   "kcal": 91,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.58,
+   "fett": 0.41,
+   "kohlenhydrate": 21.15
+  },
+  "169414": {
+   "id": 169414,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Seeds, flaxseed",
+   "kcal": 534,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 18.29,
+   "fett": 42.16,
+   "kohlenhydrate": 28.88
+  },
+  "169451": {
+   "id": 169451,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, variety meats and by-products, liver, raw",
+   "kcal": 135,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 20.36,
+   "fett": 3.63,
+   "kohlenhydrate": 3.89
+  },
+  "169484": {
+   "id": 169484,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8\" fat, all grades, cooked",
+   "kcal": 259,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 26.11,
+   "fett": 16.59,
+   "kohlenhydrate": 0
+  },
+  "169596": {
+   "id": 169596,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Gelatin desserts, dry mix, prepared with water",
+   "kcal": 60,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.22,
+   "fett": 0,
+   "kohlenhydrate": 14.19
+  },
+  "169599": {
+   "id": 169599,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Gelatins, dry powder, unsweetened",
+   "kcal": 335,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 85.6,
+   "fett": 0.1,
+   "kohlenhydrate": 0
+  },
+  "169640": {
+   "id": 169640,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Honey",
+   "kcal": 304,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.3,
+   "fett": 0,
+   "kohlenhydrate": 82.4
+  },
+  "169655": {
+   "id": 169655,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Sugars, granulated",
+   "kcal": 387,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 99.98
+  },
+  "169656": {
+   "id": 169656,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Sugars, powdered",
+   "kcal": 389,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 99.77
+  },
+  "169661": {
+   "id": 169661,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Syrups, maple",
+   "kcal": 260,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.04,
+   "fett": 0.06,
+   "kohlenhydrate": 67.04
+  },
+  "169704": {
+   "id": 169704,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)",
+   "kcal": 123,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.74,
+   "fett": 0.97,
+   "kohlenhydrate": 25.58
+  },
+  "169705": {
+   "id": 169705,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Oats (Includes foods for USDA's Food Distribution Program)",
+   "kcal": 389,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 16.89,
+   "fett": 6.9,
+   "kohlenhydrate": 66.27
+  },
+  "169737": {
+   "id": 169737,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Pasta, cooked, enriched, without added salt",
+   "kcal": 158,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.8,
+   "fett": 0.93,
+   "kohlenhydrate": 30.86
+  },
+  "169757": {
+   "id": 169757,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Rice, white, long-grain, regular, unenriched, cooked without salt",
+   "kcal": 130,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.69,
+   "fett": 0.28,
+   "kohlenhydrate": 28.17
+  },
+  "169761": {
+   "id": 169761,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Wheat flour, white, all-purpose, unenriched",
+   "kcal": 364,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 10.33,
+   "fett": 0.98,
+   "kohlenhydrate": 76.31
+  },
+  "169910": {
+   "id": 169910,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Mangos, raw",
+   "kcal": 60,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.82,
+   "fett": 0.38,
+   "kohlenhydrate": 14.98
+  },
+  "169911": {
+   "id": 169911,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Melons, honeydew, raw",
+   "kcal": 36,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.54,
+   "fett": 0.14,
+   "kohlenhydrate": 9.09
+  },
+  "169914": {
+   "id": 169914,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nectarines, raw",
+   "kcal": 44,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.06,
+   "fett": 0.32,
+   "kohlenhydrate": 10.55
+  },
+  "169926": {
+   "id": 169926,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Papayas, raw",
+   "kcal": 43,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.47,
+   "fett": 0.26,
+   "kohlenhydrate": 10.82
+  },
+  "169941": {
+   "id": 169941,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Persimmons, japanese, raw",
+   "kcal": 70,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.58,
+   "fett": 0.19,
+   "kohlenhydrate": 18.59
+  },
+  "169949": {
+   "id": 169949,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Plums, raw",
+   "kcal": 46,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.7,
+   "fett": 0.28,
+   "kohlenhydrate": 11.42
+  },
+  "169975": {
+   "id": 169975,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cabbage, raw",
+   "kcal": 25,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.28,
+   "fett": 0.1,
+   "kohlenhydrate": 5.8
+  },
+  "169977": {
+   "id": 169977,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cabbage, red, raw",
+   "kcal": 31,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.43,
+   "fett": 0.16,
+   "kohlenhydrate": 7.37
+  },
+  "169991": {
+   "id": 169991,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chard, swiss, raw",
+   "kcal": 19,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.8,
+   "fett": 0.2,
+   "kohlenhydrate": 3.74
+  },
+  "170000": {
+   "id": 170000,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Onions, raw",
+   "kcal": 40,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.1,
+   "fett": 0.1,
+   "kohlenhydrate": 9.34
+  },
+  "170005": {
+   "id": 170005,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Onions, spring or scallions (includes tops and bulb), raw",
+   "kcal": 32,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.83,
+   "fett": 0.19,
+   "kohlenhydrate": 7.34
+  },
+  "170090": {
+   "id": 170090,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Seaweed, agar, dried",
+   "kcal": 306,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 6.21,
+   "fett": 0.3,
+   "kohlenhydrate": 80.88
+  },
+  "170108": {
+   "id": 170108,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Peppers, sweet, red, raw",
+   "kcal": 26,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.99,
+   "fett": 0.3,
+   "kohlenhydrate": 6.03
+  },
+  "170150": {
+   "id": 170150,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Seeds, sesame seeds, whole, dried",
+   "kcal": 573,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 17.73,
+   "fett": 49.67,
+   "kohlenhydrate": 23.45
+  },
+  "170162": {
+   "id": 170162,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, cashew nuts, raw",
+   "kcal": 553,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 18.22,
+   "fett": 43.85,
+   "kohlenhydrate": 30.19
+  },
+  "170169": {
+   "id": 170169,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, coconut meat, raw",
+   "kcal": 354,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.33,
+   "fett": 33.49,
+   "kohlenhydrate": 15.23
+  },
+  "170173": {
+   "id": 170173,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, coconut milk, canned (liquid expressed from grated meat and water)",
+   "kcal": 197,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.02,
+   "fett": 21.33,
+   "kohlenhydrate": 2.81
+  },
+  "170178": {
+   "id": 170178,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, macadamia nuts, raw",
+   "kcal": 718,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 7.91,
+   "fett": 75.77,
+   "kohlenhydrate": 13.82
+  },
+  "170184": {
+   "id": 170184,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, pistachio nuts, raw",
+   "kcal": 560,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 20.16,
+   "fett": 45.32,
+   "kohlenhydrate": 27.17
+  },
+  "170187": {
+   "id": 170187,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, walnuts, english",
+   "kcal": 654,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 15.23,
+   "fett": 65.21,
+   "kohlenhydrate": 13.71
+  },
+  "170190": {
+   "id": 170190,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, chestnuts, european, roasted",
+   "kcal": 245,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.17,
+   "fett": 2.2,
+   "kohlenhydrate": 52.96
+  },
+  "170247": {
+   "id": 170247,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Snacks, popcorn, oil-popped, white popcorn, salt added",
+   "kcal": 500,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 9,
+   "fett": 28.1,
+   "kohlenhydrate": 57.2
+  },
+  "170271": {
+   "id": 170271,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chocolate, dark, 45- 59% cacao solids",
+   "kcal": 546,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 4.88,
+   "fett": 31.28,
+   "kohlenhydrate": 61.17
+  },
+  "170272": {
+   "id": 170272,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chocolate, dark, 60-69% cacao solids",
+   "kcal": 579,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 6.12,
+   "fett": 38.31,
+   "kohlenhydrate": 52.42
+  },
+  "170273": {
+   "id": 170273,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chocolate, dark, 70-85% cacao solids",
+   "kcal": 598,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 7.79,
+   "fett": 42.63,
+   "kohlenhydrate": 45.9
+  },
+  "170277": {
+   "id": 170277,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Sweetener, syrup, agave",
+   "kcal": 310,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.09,
+   "fett": 0.45,
+   "kohlenhydrate": 76.37
+  },
+  "170287": {
+   "id": 170287,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Bulgur, cooked",
+   "kcal": 83,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.08,
+   "fett": 0.24,
+   "kohlenhydrate": 18.58
+  },
+  "170327": {
+   "id": 170327,
+   "datensatz": "SR Legacy",
+   "beschreibung": "BURGER KING, french fries",
+   "kcal": 280,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.23,
+   "fett": 12.48,
+   "kohlenhydrate": 38.7
+  },
+  "170379": {
+   "id": 170379,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Broccoli, raw",
+   "kcal": 34,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.82,
+   "fett": 0.37,
+   "kohlenhydrate": 6.64
+  },
+  "170390": {
+   "id": 170390,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cabbage, chinese (pak-choi), raw",
+   "kcal": 13,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.5,
+   "fett": 0.2,
+   "kohlenhydrate": 2.18
+  },
+  "170392": {
+   "id": 170392,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cabbage, kimchi",
+   "kcal": 15,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.1,
+   "fett": 0.5,
+   "kohlenhydrate": 2.4
+  },
+  "170393": {
+   "id": 170393,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Carrots, raw",
+   "kcal": 41,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.93,
+   "fett": 0.24,
+   "kohlenhydrate": 9.58
+  },
+  "170419": {
+   "id": 170419,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Peas, green, raw",
+   "kcal": 81,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.42,
+   "fett": 0.4,
+   "kohlenhydrate": 14.45
+  },
+  "170457": {
+   "id": 170457,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Tomatoes, red, ripe, raw, year round average",
+   "kcal": 18,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.88,
+   "fett": 0.2,
+   "kohlenhydrate": 3.89
+  },
+  "170459": {
+   "id": 170459,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Tomato products, canned, paste, without salt added (Includes foods for USDA's Food Distribution Program)",
+   "kcal": 82,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 4.32,
+   "fett": 0.47,
+   "kohlenhydrate": 18.91
+  },
+  "170495": {
+   "id": 170495,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Seaweed, spirulina, dried",
+   "kcal": 290,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 57.47,
+   "fett": 7.72,
+   "kohlenhydrate": 23.9
+  },
+  "170501": {
+   "id": 170501,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Tomatoes, crushed, canned",
+   "kcal": 32,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.64,
+   "fett": 0.28,
+   "kohlenhydrate": 7.29
+  },
+  "170554": {
+   "id": 170554,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Seeds, chia seeds, dried",
+   "kcal": 486,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 16.54,
+   "fett": 30.74,
+   "kohlenhydrate": 42.12
+  },
+  "170562": {
+   "id": 170562,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Seeds, sunflower seed kernels, dried",
+   "kcal": 584,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 20.78,
+   "fett": 51.46,
+   "kohlenhydrate": 20
+  },
+  "170567": {
+   "id": 170567,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, almonds",
+   "kcal": 579,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 21.15,
+   "fett": 49.93,
+   "kohlenhydrate": 21.55
+  },
+  "170581": {
+   "id": 170581,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Nuts, hazelnuts or filberts",
+   "kcal": 628,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 14.95,
+   "fett": 60.75,
+   "kohlenhydrate": 16.7
+  },
+  "170602": {
+   "id": 170602,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, cured, corned beef, canned",
+   "kcal": 250,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 27.1,
+   "fett": 14.93,
+   "kohlenhydrate": 0
+  },
+  "170698": {
+   "id": 170698,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Fast foods, potato, french fried in vegetable oil",
+   "kcal": 312,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.43,
+   "fett": 14.73,
+   "kohlenhydrate": 41.44
+  },
+  "170720": {
+   "id": 170720,
+   "datensatz": "SR Legacy",
+   "beschreibung": "McDONALD'S, BIG MAC",
+   "kcal": 257,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 11.82,
+   "fett": 14.96,
+   "kohlenhydrate": 20.08
+  },
+  "170858": {
+   "id": 170858,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cream, fluid, light whipping",
+   "kcal": 292,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.17,
+   "fett": 30.91,
+   "kohlenhydrate": 2.96
+  },
+  "170886": {
+   "id": 170886,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Yogurt, plain, low fat",
+   "kcal": 63,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.25,
+   "fett": 1.55,
+   "kohlenhydrate": 7.04
+  },
+  "170924": {
+   "id": 170924,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Spices, curry powder",
+   "kcal": 325,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 14.29,
+   "fett": 14.01,
+   "kohlenhydrate": 55.83
+  },
+  "171009": {
+   "id": 171009,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Salad dressing, mayonnaise, regular",
+   "kcal": 680,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.96,
+   "fett": 74.85,
+   "kohlenhydrate": 0.57
+  },
+  "171177": {
+   "id": 171177,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Soup, ramen noodle, any flavor, dry",
+   "kcal": 440,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 10.17,
+   "fett": 17.59,
+   "kohlenhydrate": 60.26
+  },
+  "171186": {
+   "id": 171186,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Sauce, hot chile, sriracha",
+   "kcal": 93,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.93,
+   "fett": 0.93,
+   "kohlenhydrate": 19.16
+  },
+  "171241": {
+   "id": 171241,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cheese, gouda",
+   "kcal": 356,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 24.94,
+   "fett": 27.44,
+   "kohlenhydrate": 2.22
+  },
+  "171249": {
+   "id": 171249,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cheese, romano",
+   "kcal": 387,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 31.8,
+   "fett": 26.94,
+   "kohlenhydrate": 3.63
+  },
+  "171257": {
+   "id": 171257,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cream, sour, cultured",
+   "kcal": 198,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.44,
+   "fett": 19.35,
+   "kohlenhydrate": 4.63
+  },
+  "171284": {
+   "id": 171284,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Yogurt, plain, whole milk",
+   "kcal": 61,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.47,
+   "fett": 3.25,
+   "kohlenhydrate": 4.66
+  },
+  "171320": {
+   "id": 171320,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Spices, cinnamon, ground",
+   "kcal": 247,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.99,
+   "fett": 1.24,
+   "kohlenhydrate": 80.59
+  },
+  "171402": {
+   "id": 171402,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Salad dressing, thousand island, commercial, regular",
+   "kcal": 379,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.09,
+   "fett": 35.06,
+   "kohlenhydrate": 14.64
+  },
+  "171413": {
+   "id": 171413,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Oil, olive, salad or cooking",
+   "kcal": 884,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 100,
+   "kohlenhydrate": 0
+  },
+  "171477": {
+   "id": 171477,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chicken, broilers or fryers, breast, meat only, cooked, roasted",
+   "kcal": 165,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 31.02,
+   "fett": 3.57,
+   "kohlenhydrate": 0
+  },
+  "171688": {
+   "id": 171688,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)",
+   "kcal": 52,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.26,
+   "fett": 0.17,
+   "kohlenhydrate": 13.81
+  },
+  "171697": {
+   "id": 171697,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Apricots, raw",
+   "kcal": 48,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.4,
+   "fett": 0.39,
+   "kohlenhydrate": 11.12
+  },
+  "171705": {
+   "id": 171705,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Avocados, raw, all commercial varieties",
+   "kcal": 160,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2,
+   "fett": 14.66,
+   "kohlenhydrate": 8.53
+  },
+  "171711": {
+   "id": 171711,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Blueberries, raw",
+   "kcal": 57,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.74,
+   "fett": 0.33,
+   "kohlenhydrate": 14.49
+  },
+  "171719": {
+   "id": 171719,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cherries, sweet, raw",
+   "kcal": 63,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.06,
+   "fett": 0.2,
+   "kohlenhydrate": 16.01
+  },
+  "171726": {
+   "id": 171726,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Dates, deglet noor",
+   "kcal": 282,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.45,
+   "fett": 0.39,
+   "kohlenhydrate": 75.03
+  },
+  "171805": {
+   "id": 171805,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8\" fat, select, cooked, grilled",
+   "kcal": 177,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 29.44,
+   "fett": 5.73,
+   "kohlenhydrate": 0
+  },
+  "171844": {
+   "id": 171844,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Bread, chapati or roti, plain, commercially prepared",
+   "kcal": 297,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 11.25,
+   "fett": 7.45,
+   "kohlenhydrate": 46.36
+  },
+  "171845": {
+   "id": 171845,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Bread, naan, plain, commercially prepared, refrigerated",
+   "kcal": 291,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 9.62,
+   "fett": 5.65,
+   "kohlenhydrate": 50.43
+  },
+  "171869": {
+   "id": 171869,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beverages, carbonated, tonic water",
+   "kcal": 34,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 8.8
+  },
+  "171985": {
+   "id": 171985,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Fish, salmon, chinook, smoked, (lox), regular",
+   "kcal": 117,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 18.28,
+   "fett": 4.32,
+   "kohlenhydrate": 0
+  },
+  "172178": {
+   "id": 172178,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cheese, camembert",
+   "kcal": 300,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 19.8,
+   "fett": 24.26,
+   "kohlenhydrate": 0.46
+  },
+  "172179": {
+   "id": 172179,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cheese, cottage, creamed, large or small curd",
+   "kcal": 98,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 11.12,
+   "fett": 4.3,
+   "kohlenhydrate": 3.38
+  },
+  "172183": {
+   "id": 172183,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Egg, white, raw, fresh",
+   "kcal": 52,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 10.9,
+   "fett": 0.17,
+   "kohlenhydrate": 0.73
+  },
+  "172184": {
+   "id": 172184,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Egg, yolk, raw, fresh",
+   "kcal": 322,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 15.86,
+   "fett": 26.54,
+   "kohlenhydrate": 3.59
+  },
+  "172185": {
+   "id": 172185,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Egg, whole, cooked, omelet",
+   "kcal": 154,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 10.57,
+   "fett": 11.66,
+   "kohlenhydrate": 0.64
+  },
+  "172191": {
+   "id": 172191,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Egg, quail, whole, fresh, raw",
+   "kcal": 158,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 13.05,
+   "fett": 11.09,
+   "kohlenhydrate": 0.41
+  },
+  "172226": {
+   "id": 172226,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Ice cream sandwich",
+   "kcal": 237,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 4.29,
+   "fett": 8.57,
+   "kohlenhydrate": 37.14
+  },
+  "172237": {
+   "id": 172237,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Vinegar, distilled",
+   "kcal": 18,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 0.04
+  },
+  "172241": {
+   "id": 172241,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Vinegar, balsamic",
+   "kcal": 88,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.49,
+   "fett": 0,
+   "kohlenhydrate": 17.03
+  },
+  "172336": {
+   "id": 172336,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Oil, canola",
+   "kcal": 884,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 100,
+   "kohlenhydrate": 0
+  },
+  "172378": {
+   "id": 172378,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chicken, broilers or fryers, leg, meat and skin, raw",
+   "kcal": 214,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 16.37,
+   "fett": 15.95,
+   "kohlenhydrate": 0.17
+  },
+  "172380": {
+   "id": 172380,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chicken, broilers or fryers, leg, meat only, cooked, roasted",
+   "kcal": 174,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 24.22,
+   "fett": 7.8,
+   "kohlenhydrate": 0
+  },
+  "172388": {
+   "id": 172388,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chicken, broilers or fryers, thigh, meat only, cooked, roasted",
+   "kcal": 179,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 24.76,
+   "fett": 8.15,
+   "kohlenhydrate": 0
+  },
+  "172421": {
+   "id": 172421,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Lentils, mature seeds, cooked, boiled, without salt",
+   "kcal": 116,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 9.02,
+   "fett": 0.38,
+   "kohlenhydrate": 20.13
+  },
+  "172430": {
+   "id": 172430,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Peanuts, all types, raw",
+   "kcal": 567,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 25.8,
+   "fett": 49.24,
+   "kohlenhydrate": 16.13
+  },
+  "172442": {
+   "id": 172442,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Miso",
+   "kcal": 198,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 12.79,
+   "fett": 6.01,
+   "kohlenhydrate": 25.37
+  },
+  "172455": {
+   "id": 172455,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Falafel, home-prepared",
+   "kcal": 333,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 13.31,
+   "fett": 17.8,
+   "kohlenhydrate": 31.84
+  },
+  "172544": {
+   "id": 172544,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Lamb, ground, cooked, broiled",
+   "kcal": 283,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 24.75,
+   "fett": 19.65,
+   "kohlenhydrate": 0
+  },
+  "172711": {
+   "id": 172711,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cake, cheesecake, commercially prepared",
+   "kcal": 321,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.5,
+   "fett": 22.5,
+   "kohlenhydrate": 25.5
+  },
+  "172718": {
+   "id": 172718,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cookies, chocolate sandwich, with creme filling, regular",
+   "kcal": 464,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.21,
+   "fett": 19.14,
+   "kohlenhydrate": 71
+  },
+  "172725": {
+   "id": 172725,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cookies, oatmeal, commercially prepared, regular",
+   "kcal": 450,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 6.2,
+   "fett": 18.1,
+   "kohlenhydrate": 68.7
+  },
+  "172790": {
+   "id": 172790,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Puff pastry, frozen, ready-to-bake",
+   "kcal": 551,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 7.3,
+   "fett": 38.1,
+   "kohlenhydrate": 45.1
+  },
+  "172796": {
+   "id": 172796,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Rolls, hamburger or hotdog, plain",
+   "kcal": 279,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 9.77,
+   "fett": 3.91,
+   "kohlenhydrate": 50.12
+  },
+  "172816": {
+   "id": 172816,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Bread, pita, white, unenriched",
+   "kcal": 275,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 9.1,
+   "fett": 1.2,
+   "kohlenhydrate": 55.7
+  },
+  "172820": {
+   "id": 172820,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cookies, chocolate chip, commercially prepared, regular, higher fat, unenriched",
+   "kcal": 481,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.4,
+   "fett": 22.6,
+   "kohlenhydrate": 66.8
+  },
+  "172880": {
+   "id": 172880,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Sauce, pizza, canned, ready-to-serve",
+   "kcal": 54,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.18,
+   "fett": 1.15,
+   "kohlenhydrate": 8.66
+  },
+  "173021": {
+   "id": 173021,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Figs, raw",
+   "kcal": 74,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.75,
+   "fett": 0.3,
+   "kohlenhydrate": 19.18
+  },
+  "173043": {
+   "id": 173043,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Groundcherries, (cape-gooseberries or poha), raw",
+   "kcal": 53,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.9,
+   "fett": 0.7,
+   "kohlenhydrate": 11.2
+  },
+  "173116": {
+   "id": 173116,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, short loin, top loin, steak, separable lean only, trimmed to 1/8\" fat, choice, raw",
+   "kcal": 155,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 22.78,
+   "fett": 6.43,
+   "kohlenhydrate": 0
+  },
+  "173190": {
+   "id": 173190,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Alcoholic beverage, wine, table, red",
+   "kcal": 85,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.07,
+   "fett": 0,
+   "kohlenhydrate": 2.61
+  },
+  "173204": {
+   "id": 173204,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beverages, carbonated, low calorie, other than cola or pepper,  without caffeine",
+   "kcal": 0,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.1,
+   "fett": 0,
+   "kohlenhydrate": 0
+  },
+  "173227": {
+   "id": 173227,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beverages, tea, black, brewed, prepared with tap water",
+   "kcal": 1,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 0.3
+  },
+  "173392": {
+   "id": 173392,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, rib eye steak, boneless, lip-on, separable lean and fat, trimmed to 1/8\" fat, all grades, cooked, grilled",
+   "kcal": 291,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 23.69,
+   "fett": 21.81,
+   "kohlenhydrate": 0
+  },
+  "173418": {
+   "id": 173418,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cheese, cream",
+   "kcal": 350,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 6.15,
+   "fett": 34.44,
+   "kohlenhydrate": 5.52
+  },
+  "173423": {
+   "id": 173423,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Egg, whole, cooked, fried",
+   "kcal": 196,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 13.61,
+   "fett": 14.84,
+   "kohlenhydrate": 0.83
+  },
+  "173454": {
+   "id": 173454,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Milk, dry, whole, without added vitamin D",
+   "kcal": 496,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 26.32,
+   "fett": 26.71,
+   "kohlenhydrate": 38.42
+  },
+  "173615": {
+   "id": 173615,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chicken, broilers or fryers, leg, meat and skin, cooked, fried, batter",
+   "kcal": 273,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 21.77,
+   "fett": 16.17,
+   "kohlenhydrate": 8.72
+  },
+  "173617": {
+   "id": 173617,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chicken, broilers or fryers, leg, meat and skin, cooked, roasted",
+   "kcal": 184,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 24.03,
+   "fett": 8.99,
+   "kohlenhydrate": 0
+  },
+  "173687": {
+   "id": 173687,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Fish, salmon, chinook, smoked",
+   "kcal": 117,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 18.28,
+   "fett": 4.32,
+   "kohlenhydrate": 0
+  },
+  "173740": {
+   "id": 173740,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beans, kidney, all types, mature seeds, cooked, boiled, without salt",
+   "kcal": 127,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 8.67,
+   "fett": 0.5,
+   "kohlenhydrate": 22.8
+  },
+  "173757": {
+   "id": 173757,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Chickpeas (garbanzo beans, bengal gram), mature seeds, cooked, boiled, without salt",
+   "kcal": 164,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 8.86,
+   "fett": 2.59,
+   "kohlenhydrate": 27.42
+  },
+  "173905": {
+   "id": 173905,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Cereals, oats, regular and quick, unenriched, cooked with water (includes boiling and microwaving), without salt",
+   "kcal": 71,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 2.54,
+   "fett": 1.52,
+   "kohlenhydrate": 12
+  },
+  "173944": {
+   "id": 173944,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Bananas, raw",
+   "kcal": 89,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.09,
+   "fett": 0.33,
+   "kohlenhydrate": 22.84
+  },
+  "173946": {
+   "id": 173946,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Blackberries, raw",
+   "kcal": 43,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 1.39,
+   "fett": 0.49,
+   "kohlenhydrate": 9.61
+  },
+  "174032": {
+   "id": 174032,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beef, ground, 85% lean meat / 15% fat, patty, cooked, broiled",
+   "kcal": 250,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 25.93,
+   "fett": 15.41,
+   "kohlenhydrate": 0
+  },
+  "174110": {
+   "id": 174110,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Alcoholic beverage, wine, table, white, Chardonnay",
+   "kcal": 84,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.07,
+   "fett": 0,
+   "kohlenhydrate": 2.16
+  },
+  "174188": {
+   "id": 174188,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Fish, caviar, black and red, granular",
+   "kcal": 264,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 24.6,
+   "fett": 17.9,
+   "kohlenhydrate": 4
+  },
+  "174217": {
+   "id": 174217,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Mollusks, mussel, blue, cooked, moist heat",
+   "kcal": 172,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 23.8,
+   "fett": 4.48,
+   "kohlenhydrate": 7.39
+  },
+  "174223": {
+   "id": 174223,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Mollusks, squid, mixed species, raw",
+   "kcal": 92,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 15.58,
+   "fett": 1.38,
+   "kohlenhydrate": 3.08
+  },
+  "174272": {
+   "id": 174272,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Tempeh",
+   "kcal": 192,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 20.29,
+   "fett": 10.8,
+   "kohlenhydrate": 7.64
+  },
+  "174277": {
+   "id": 174277,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Soy sauce made from soy and wheat (shoyu)",
+   "kcal": 53,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 8.14,
+   "fett": 0.57,
+   "kohlenhydrate": 4.93
+  },
+  "174278": {
+   "id": 174278,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Soy sauce made from soy (tamari)",
+   "kcal": 60,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 10.51,
+   "fett": 0.1,
+   "kohlenhydrate": 5.57
+  },
+  "174906": {
+   "id": 174906,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Bread, banana, prepared from recipe, made with margarine",
+   "kcal": 326,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 4.3,
+   "fett": 10.5,
+   "kohlenhydrate": 54.6
+  },
+  "174915": {
+   "id": 174915,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Bread, pita, white, enriched",
+   "kcal": 275,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 9.1,
+   "fett": 1.2,
+   "kohlenhydrate": 55.7
+  },
+  "174987": {
+   "id": 174987,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Croissants, butter",
+   "kcal": 406,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 8.2,
+   "fett": 21,
+   "kohlenhydrate": 45.8
+  },
+  "174998": {
+   "id": 174998,
+   "datensatz": "SR Legacy",
+   "beschreibung": "French toast, prepared from recipe, made with low fat (2%) milk",
+   "kcal": 229,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 7.7,
+   "fett": 10.8,
+   "kohlenhydrate": 25
+  },
+  "175037": {
+   "id": 175037,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Tortillas, ready-to-bake or -fry, flour, refrigerated",
+   "kcal": 306,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 8.2,
+   "fett": 7.99,
+   "kohlenhydrate": 49.38
+  },
+  "175116": {
+   "id": 175116,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Fish, herring, Atlantic, raw",
+   "kcal": 158,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 17.96,
+   "fett": 9.04,
+   "kohlenhydrate": 0
+  },
+  "175167": {
+   "id": 175167,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Fish, salmon, Atlantic, farmed, raw",
+   "kcal": 208,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 20.42,
+   "fett": 13.42,
+   "kohlenhydrate": 0
+  },
+  "175194": {
+   "id": 175194,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beans, kidney, red, mature seeds, cooked, boiled, without salt",
+   "kcal": 127,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 8.67,
+   "fett": 0.5,
+   "kohlenhydrate": 22.8
+  },
+  "175203": {
+   "id": 175203,
+   "datensatz": "SR Legacy",
+   "beschreibung": "Beans, white, mature seeds, cooked, boiled, without salt",
+   "kcal": 139,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 9.73,
+   "fett": 0.35,
+   "kohlenhydrate": 25.09
+  },
+  "324653": {
+   "id": 324653,
+   "datensatz": "Foundation",
+   "beschreibung": "Pickles, cucumber, dill or kosher dill",
+   "kcal": 12,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.48,
+   "fett": 0.43,
+   "kohlenhydrate": 1.99
+  },
+  "2257046": {
+   "id": 2257046,
+   "datensatz": "Foundation",
+   "beschreibung": "Oat milk, unsweetened, plain, refrigerated",
+   "kcal": 48.3,
+   "kcalNaehrstoff": 2047,
+   "eiweiss": 0.797,
+   "fett": 2.75,
+   "kohlenhydrate": 5.1
+  },
+  "2685580": {
+   "id": 2685580,
+   "datensatz": "Foundation",
+   "beschreibung": "Tomato, paste, canned, without salt added",
+   "kcal": 88.5,
+   "kcalNaehrstoff": 2048,
+   "eiweiss": 4.23,
+   "fett": 0.732,
+   "kohlenhydrate": 20.2
+  },
+  "2705399": {
+   "id": 2705399,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Milk, evaporated, whole",
+   "kcal": 134,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 6.81,
+   "fett": 7.56,
+   "kohlenhydrate": 10.04
+  },
+  "2705409": {
+   "id": 2705409,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Almond milk, unsweetened",
+   "kcal": 15,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.55,
+   "fett": 1.22,
+   "kohlenhydrate": 0.34
+  },
+  "2705448": {
+   "id": 2705448,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Tzatziki dip",
+   "kcal": 91,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.22,
+   "fett": 6,
+   "kohlenhydrate": 4.1
+  },
+  "2708450": {
+   "id": 2708450,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Cereal, cinnamon toast",
+   "kcal": 414,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 5.88,
+   "fett": 9.92,
+   "kohlenhydrate": 75.23
+  },
+  "2709077": {
+   "id": 2709077,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Rice pilaf",
+   "kcal": 137,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 3.29,
+   "fett": 3.03,
+   "kohlenhydrate": 24.08
+  },
+  "2710180": {
+   "id": 2710180,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Vegetable oil, NFS",
+   "kcal": 900,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 100,
+   "kohlenhydrate": 0
+  },
+  "2710338": {
+   "id": 2710338,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Dark chocolate candy with nuts",
+   "kcal": 560,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 8.26,
+   "fett": 36.27,
+   "kohlenhydrate": 52.18
+  },
+  "2710361": {
+   "id": 2710361,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Candy, lollipop",
+   "kcal": 394,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0.2,
+   "kohlenhydrate": 98
+  },
+  "2710375": {
+   "id": 2710375,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Coffee, brewed",
+   "kcal": 1,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.12,
+   "fett": 0.02,
+   "kohlenhydrate": 0
+  },
+  "2710378": {
+   "id": 2710378,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Coffee, espresso",
+   "kcal": 9,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.12,
+   "fett": 0.18,
+   "kohlenhydrate": 1.67
+  },
+  "2710502": {
+   "id": 2710502,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Tea, hot, herbal",
+   "kcal": 1,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 0.2
+  },
+  "2710555": {
+   "id": 2710555,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Soft drink, ginger ale",
+   "kcal": 34,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 8.76
+  },
+  "2710616": {
+   "id": 2710616,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Beer",
+   "kcal": 43,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0.46,
+   "fett": 0,
+   "kohlenhydrate": 3.55
+  },
+  "2710700": {
+   "id": 2710700,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Whiskey",
+   "kcal": 231,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 0
+  },
+  "2710702": {
+   "id": 2710702,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Gin",
+   "kcal": 231,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 0
+  },
+  "2710703": {
+   "id": 2710703,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Rum",
+   "kcal": 231,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 0
+  },
+  "2710708": {
+   "id": 2710708,
+   "datensatz": "Survey (FNDDS)",
+   "beschreibung": "Water, bottled, plain",
+   "kcal": 0,
+   "kcalNaehrstoff": 1008,
+   "eiweiss": 0,
+   "fett": 0,
+   "kohlenhydrate": 0
+  }
+ }
+}
