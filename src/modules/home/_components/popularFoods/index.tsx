@@ -1,21 +1,21 @@
 import { motion } from "framer-motion";
 
 const popularFoods = [
-  { name: "Döner", slug: "doener", cal: 215 },
+  { name: "Döner", slug: "doener", cal: 199 },
   { name: "Banane", slug: "banane", cal: 89 },
   { name: "Reis", slug: "reis", cal: 130 },
-  { name: "Haferflocken", slug: "haferflocken", cal: 372 },
+  { name: "Haferflocken", slug: "haferflocken", cal: 379 },
   { name: "Ei", slug: "ei", cal: 155 },
   { name: "Avocado", slug: "avocado", cal: 160 },
   { name: "Lachs", slug: "lachs", cal: 208 },
   { name: "Pizza", slug: "pizza", cal: 266 },
-  { name: "Kartoffeln", slug: "kartoffeln", cal: 77 },
+  { name: "Kartoffeln", slug: "kartoffeln", cal: 86 },
   { name: "Hähnchenbrust", slug: "haehnchenbrust", cal: 165 },
-  { name: "Magerquark", slug: "magerquark", cal: 67 },
-  { name: "Nudeln", slug: "nudeln", cal: 131 },
+  { name: "Magerquark", slug: "magerquark", cal: 68 },
+  { name: "Nudeln", slug: "nudeln", cal: 158 },
   { name: "Brokkoli", slug: "brokkoli", cal: 34 },
-  { name: "Tofu", slug: "tofu", cal: 76 },
-  { name: "Brot", slug: "brot", cal: 265 },
+  { name: "Tofu", slug: "tofu", cal: 144 },
+  { name: "Brot", slug: "brot", cal: 259 },
 ];
 
 function PopularFoods() {
