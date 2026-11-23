@@ -91,8 +91,14 @@
     },
     {
       "name": "Celebrations (1 Stück)",
-      "calories": 38,
-      "emoji": "🍬"
+      "calories": 45,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "celebrations",
+          "variante": "1 Praline (ca. 9 g)"
+        }
+      ]
     },
     {
       "name": "Toffifee (1 Stück)",
@@ -101,8 +107,14 @@
     },
     {
       "name": "Milka Schokolade (1 Reihe, 25g)",
-      "calories": 134,
-      "emoji": "🍫"
+      "calories": 135,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "milka-schokolade",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [

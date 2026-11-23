@@ -96,8 +96,13 @@
     },
     {
       "name": "Smarties (38g Rolle)",
-      "calories": 174,
-      "emoji": "🔴"
+      "calories": 179,
+      "emoji": "🔴",
+      "basis": [
+        {
+          "slug": "smarties"
+        }
+      ]
     },
     {
       "name": "Bounty (1 Riegel 57g)",

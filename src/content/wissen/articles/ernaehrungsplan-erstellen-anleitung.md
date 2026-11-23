@@ -356,14 +356,14 @@ Hier sind drei konkrete Tagespläne für verschiedene Ziele. Alle Angaben sind R
 
 | Mahlzeit | Gericht | Kalorien | Protein |
 |----------|---------|---------|---------|
-| **Frühstück** | 50g Haferflocken + 150g Skyr + Handvoll Beeren | ~380 kcal | 25g |
+| **Frühstück** | 50g Haferflocken + 150g Skyr + Handvoll Beeren | ~376 kcal | 24g |
 | **Mittagessen** | 150g Hähnchenbrust + 150g Vollkornreis + 200g Brokkoli + 1 TL Olivenöl | ~520 kcal | 45g |
-| **Snack** | 150g Magerquark + 1 Apfel | ~170 kcal | 18g |
+| **Snack** | 150g Magerquark + 1 Apfel | ~172 kcal | 18g |
 | **Abendessen** | Großer Salat mit 2 Eiern + 100g Kidneybohnen + 30g Feta | ~430 kcal | 28g |
 | **Snack** | 20g Mandeln | ~115 kcal | 4g |
-| **Gesamt** | | **~1.615 kcal** | **120g** |
+| **Gesamt** | | **~1.613 kcal** | **119g** |
 
-**Makros:** 120g Protein (30%) | 55g Fett (31%) | 160g KH (39%)
+**Makros:** 119g Protein (30%) | 55g Fett (31%) | 160g KH (39%)
 
 ### Ernährungsplan für Muskelaufbau (2.500 kcal)
 
@@ -371,14 +371,14 @@ Hier sind drei konkrete Tagespläne für verschiedene Ziele. Alle Angaben sind R
 
 | Mahlzeit | Gericht | Kalorien | Protein |
 |----------|---------|---------|---------|
-| **Frühstück** | 80g Haferflocken + 200g Skyr + 1 Banane + 10g Honig | ~560 kcal | 30g |
+| **Frühstück** | 80g Haferflocken + 200g Skyr + 1 Banane + 10g Honig | ~554 kcal | 28g |
 | **Snack** | 2 Eier + 2 Scheiben Vollkornbrot + Tomate | ~429 kcal | 23g |
 | **Mittagessen** | 200g Lachs + 200g Süßkartoffeln + 200g Gemüse + Olivenöl | ~680 kcal | 45g |
-| **Post-Workout** | 200g Magerquark + 30g Proteinpulver + 1 Banane | ~380 kcal | 48g |
+| **Post-Workout** | 200g Magerquark + 30g Proteinpulver + 1 Banane | ~382 kcal | 48g |
 | **Abendessen** | 200g Putenbrust + 150g Vollkornpasta + Tomatensauce + Gemüse | ~550 kcal | 48g |
-| **Gesamt** | | **~2.599 kcal** | **194g** |
+| **Gesamt** | | **~2.595 kcal** | **192g** |
 
-**Makros:** 194g Protein (30%) | 78g Fett (27%) | 281g KH (43%)
+**Makros:** 192g Protein (30%) | 78g Fett (27%) | 281g KH (43%)
 
 ### Ernährungsplan vegetarisch (1.800 kcal)
 
@@ -386,14 +386,14 @@ Hier sind drei konkrete Tagespläne für verschiedene Ziele. Alle Angaben sind R
 
 | Mahlzeit | Gericht | Kalorien | Protein |
 |----------|---------|---------|---------|
-| **Frühstück** | Overnight Oats: 60g Haferflocken + 150ml Sojamilch + 100g Skyr + Beeren + 10g Chiasamen | ~420 kcal | 24g |
+| **Frühstück** | Overnight Oats: 60g Haferflocken + 150ml Sojamilch + 100g Skyr + Beeren + 10g Chiasamen | ~417 kcal | 23g |
 | **Mittagessen** | Buddha Bowl: 100g Quinoa + 150g Kichererbsen + Avocado (½) + Gemüse + Tahini-Dressing | ~560 kcal | 22g |
 | **Snack** | 200g Griechischer Joghurt + 20g Walnüsse | ~325 kcal | 21g |
 | **Abendessen** | Linsen-Curry: 100g rote Linsen + 200g Gemüse + 100ml Kokosmilch + Gewürze + 80g Reis | ~520 kcal | 25g |
 | **Snack** | 1 Apfel + 15g Erdnussbutter | ~183 kcal | 4g |
-| **Gesamt** | | **~2.008 kcal** | **96g** |
+| **Gesamt** | | **~2.005 kcal** | **95g** |
 
-**Makros:** 96g Protein (19%) | 78g Fett (35%) | 235g KH (46%)
+**Makros:** 95g Protein (19%) | 78g Fett (35%) | 235g KH (46%)
 
 > **Tipp:** Bei vegetarischer Ernährung ist es etwas schwieriger, auf 1,6+ g Protein/kg zu kommen. Kombiniere immer Hülsenfrüchte + Getreide für ein vollständiges Aminosäureprofil. Skyr und Magerquark sind hervorragende vegetarische Protein-Booster.
 

@@ -324,6 +324,30 @@ test("Vergleiche nennen ihre Bestandteile, die kcal folgen daraus", () => {
   assert.deepEqual(abweichungen, []);
 });
 
+// Vergleiche offener Seiten, die eine umgestellte Seite zitieren, nennen deren
+// Bestandteile (Batch F, Regel 6); wo eine offene Seite Bestandteile nennt, folgen die kcal daraus.
+test("Vergleiche offener Seiten mit Bestandteilen folgen aus deren Werten", () => {
+  const abweichungen = [];
+  for (const { slug, food } of alle.filter(({ slug }) => OFFEN.has(slug))) {
+    for (const c of food.comparison) {
+      if (!Array.isArray(c.basis)) continue;
+      const s = summe(c.basis, food);
+      if (Math.abs(c.calories - s.kcal) > 1) abweichungen.push(slug + " / " + c.name + ": " + c.calories + " kcal statt " + eineStelle(s.kcal));
+    }
+  }
+  assert.deepEqual(abweichungen, []);
+  for (const [slug, name] of [
+    ["daim-mini", "Celebrations (1 Stück)"],
+    ["daim-mini", "Milka Schokolade (1 Reihe, 25g)"],
+    ["kaese", "Quark 20%"],
+    ["maltesers", "Smarties (38g Rolle)"],
+    ["proteinriegel", "Quark 500g"],
+  ]) {
+    const c = seiten.get(slug).comparison.find((x) => x.name === name);
+    assert.ok(c?.basis?.length, slug + " / " + name + ": keine Bestandteile");
+  }
+});
+
 test("Bestandteile verweisen nicht auf offene Seiten", () => {
   const verweise = [];
   for (const { slug, food } of alle) {

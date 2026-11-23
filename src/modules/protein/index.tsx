@@ -168,7 +168,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
       icon: "⚖️",
       weight: "70kg, Kaloriendefizit",
       meals: [
-        { meal: "Frühstück", foods: "200g Skyr + 30g Haferflocken + Beeren", protein: 25 },
+        { meal: "Frühstück", foods: "200g Skyr + 30g Haferflocken + Beeren", protein: 23 },
         { meal: "Mittagessen", foods: "150g Putenbrust + grosser Salat + Olivenöl", protein: 35 },
         { meal: "Snack", foods: "100g Harzer Käse + Gurke", protein: 30 },
         { meal: "Abendessen", foods: "150g Garnelen + Zucchini-Nudeln + Tomaten", protein: 36 },

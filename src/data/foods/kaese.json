@@ -31,21 +31,21 @@
   ],
   "comparison": [
     { "name": "Wurst Salami", "calories": 380, "emoji": "🌭" },
-    { "name": "Quark 20%", "calories": 113, "emoji": "🥛" },
+    { "name": "Quark 20%", "calories": 97, "emoji": "🥛", "basis": [{ "slug": "topfen", "g": 100 }] },
     { "name": "Joghurt", "calories": 60, "emoji": "🥛" },
     { "name": "Tofu", "calories": 144, "emoji": "🍢" }
   ],
   "tips": [
-    { "title": "Hüttenkäse + Harzer = Protein-Powerhouse", "text": "Hüttenkäse (100 kcal/100g, 13g Protein) und Harzer Käse (124 kcal/100g, 30g Protein) sind die beiden magersten Käse-Sorten – ideal zum Abnehmen.", "icon": "💪" },
-    { "title": "Parmesan: weniger ist mehr", "text": "Parmesan hat zwar 410 kcal/100g, aber 1 EL (10g) reicht für volles Aroma – nur 41 kcal. Geriebener Parmesan würzt besser als jeder Streukäse.", "icon": "🧂" },
-    { "title": "Light-Versionen prüfen", "text": "Light-Käse (z.B. Gouda 30% Fett i.Tr.) hat ca. 230 statt 350 kcal/100g – spart 120 kcal pro 100g bei kaum Geschmacksunterschied.", "icon": "📉" },
-    { "title": "Mozzarella light für Pizza", "text": "Mozzarella light (1,5% Fett) hat 130 statt 250 kcal/100g – perfekt für selbstgemachte Pizza ohne Kalorien-Explosion.", "icon": "🍕" },
-    { "title": "Käse vor dem Essen sättigt", "text": "30g Käse zum Snack vor dem Essen können laut Studien die Hauptmahlzeit kalorienärmer machen – durch frühe Sättigung.", "icon": "⏱️" }
+    { "title": "Hüttenkäse + Harzer = Protein-Powerhouse", "text": "Hüttenkäse (100 kcal/100g, 13g Protein) und Harzer Käse (124 kcal/100g, 30g Protein) sind die beiden magersten Käse-Sorten, ideal zum Abnehmen.", "icon": "💪" },
+    { "title": "Parmesan: weniger ist mehr", "text": "Parmesan hat zwar 410 kcal/100g, aber 1 EL (10g) reicht für volles Aroma, nur 41 kcal. Geriebener Parmesan würzt besser als jeder Streukäse.", "icon": "🧂" },
+    { "title": "Light-Versionen prüfen", "text": "Light-Käse (z.B. Gouda 30% Fett i.Tr.) hat ca. 230 statt 350 kcal/100g und spart 120 kcal pro 100g bei kaum Geschmacksunterschied.", "icon": "📉" },
+    { "title": "Mozzarella light für Pizza", "text": "Mozzarella light (1,5% Fett) hat 130 statt 250 kcal/100g, perfekt für selbstgemachte Pizza ohne Kalorien-Explosion.", "icon": "🍕" },
+    { "title": "Käse vor dem Essen sättigt", "text": "30g Käse zum Snack vor dem Essen können laut Studien die Hauptmahlzeit kalorienärmer machen, durch frühe Sättigung.", "icon": "⏱️" }
   ],
   "faq": [
     { "question": "Wie viele Kalorien hat Käse?", "answer": "Sehr unterschiedlich: Frischkäse hat 250 kcal/100g, Gouda 350, Parmesan 410, Hüttenkäse nur 100 und Harzer Käse 124 kcal/100g. Pro Scheibe (30g) sind es typisch 100-120 kcal." },
     { "question": "Welcher Käse hat die wenigsten Kalorien?", "answer": "Harzer Käse (124 kcal/100g) und Hüttenkäse (100 kcal/100g) sind mit großem Abstand die magersten. Beide haben fast kein Fett, aber sehr viel Protein." },
-    { "question": "Ist Käse beim Abnehmen erlaubt?", "answer": "Ja – in moderaten Mengen. Magere Sorten (Hüttenkäse, Harzer, Mozzarella light) jederzeit. Bei Hartkäse: 30-50g/Tag als Snack. Käse sättigt durch Protein und Fett gut." },
+    { "question": "Ist Käse beim Abnehmen erlaubt?", "answer": "Ja, in moderaten Mengen. Magere Sorten (Hüttenkäse, Harzer, Mozzarella light) jederzeit. Bei Hartkäse: 30-50g/Tag als Snack. Käse sättigt durch Protein und Fett gut." },
     { "question": "Wie viel Protein hat Käse?", "answer": "Hartkäse 25-30g/100g, Frischkäse nur 5-8g/100g, Hüttenkäse 13g und Harzer Käse beeindruckende 30g. Käse ist eine der besten Protein-Quellen." },
     { "question": "Welcher Käse ist am gesündesten?", "answer": "Magere Sorten mit hohem Protein und wenig Fett: Hüttenkäse, Harzer Käse, Mozzarella light. Auch Feta in Maßen ist gut. Schmelz- und Streichkäse haben oft mehr Zusatzstoffe." },
     { "question": "Wie viel Käse pro Tag ist okay?", "answer": "30-60g pro Tag sind unproblematisch. Wegen des Salzgehalts (oft 1-3g pro 100g) sollte man bei mehr als 100g/Tag den Natriumkonsum im Blick haben." }
