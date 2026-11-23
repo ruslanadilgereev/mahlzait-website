@@ -3,52 +3,276 @@
   "name": "Fleisch",
   "emoji": "🥩",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 168312 (Pork, fresh, loin, tenderloin, separable lean and fat, raw), Werte je 100 g; allgemeine Seite, Werte am Beispiel Schweinefilet, roh",
+  "beispiel": {
+    "name": "Schweinefilet, roh",
+    "slug": "schweinefilet"
+  },
   "seo": {
     "title": "Fleisch Kalorien: Übersicht aller Sorten + Rechner | Mahlzait",
-    "description": "Fleisch hat je nach Sorte 100-380 kcal pro 100g. Berechne Kalorien für Rind, Schwein, Hähnchen, Pute, Lamm und Hackfleisch mit dem kostenlosen Rechner.",
-    "keywords": ["fleisch kalorien", "kalorien fleisch", "rindfleisch kalorien", "schweinefleisch kalorien", "hähnchen kalorien", "putenfleisch kalorien", "fleisch nährwerte", "fleisch protein"]
+    "description": "Fleisch hat roh je nach Sorte 114 bis 393 kcal pro 100 g, am Beispiel Schweinefilet 120 kcal. Kalorien für Rind, Schwein, Hähnchen, Pute, Lamm und Hack.",
+    "keywords": [
+      "fleisch kalorien",
+      "kalorien fleisch",
+      "rindfleisch kalorien",
+      "schweinefleisch kalorien",
+      "hähnchen kalorien",
+      "putenfleisch kalorien",
+      "fleisch nährwerte",
+      "fleisch protein"
+    ]
   },
   "overview": {
-    "calories_per_100g": 200,
-    "protein_per_100g": 22,
+    "calories_per_100g": 120,
+    "protein_per_100g": 20.7,
     "carbs_per_100g": 0,
-    "fat_per_100g": 13,
+    "fat_per_100g": 3.5,
     "fiber_per_100g": 0,
     "typical_portion_g": 150,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    { "name": "Hähnchenbrust roh (150g)", "portion_g": 150, "calories": 248, "protein": 35, "carbs": 0, "fat": 11, "tip": "Magerstes Fleisch" },
-    { "name": "Putenbrust roh (150g)", "portion_g": 150, "calories": 220, "protein": 36, "carbs": 0, "fat": 8, "tip": "Noch magerer als Hähnchen" },
-    { "name": "Rindfleisch mager (Filet, 150g)", "portion_g": 150, "calories": 247, "protein": 33, "carbs": 0, "fat": 12 },
-    { "name": "Rinderhack (150g)", "portion_g": 150, "calories": 360, "protein": 28, "carbs": 0, "fat": 27 },
-    { "name": "Schweinefleisch (Filet, 150g)", "portion_g": 150, "calories": 215, "protein": 33, "carbs": 0, "fat": 9 },
-    { "name": "Schweineschnitzel (paniert, 200g)", "portion_g": 200, "calories": 480, "protein": 40, "carbs": 24, "fat": 22 },
-    { "name": "Lammkotelett (150g)", "portion_g": 150, "calories": 446, "protein": 33, "carbs": 0, "fat": 35 },
-    { "name": "Hackfleisch gemischt (150g)", "portion_g": 150, "calories": 350, "protein": 25, "carbs": 0, "fat": 28 },
-    { "name": "Speck (1 Scheibe 30g)", "portion_g": 30, "calories": 165, "protein": 5, "carbs": 0, "fat": 17 },
-    { "name": "Frikadellen (1 Stück 100g)", "portion_g": 100, "calories": 250, "protein": 18, "carbs": 5, "fat": 18 }
+    {
+      "name": "Schweinefilet roh (150 g)",
+      "portion_g": 150,
+      "calories": 180,
+      "protein": 31.1,
+      "carbs": 0,
+      "fat": 5.3
+    },
+    {
+      "name": "Hähnchenbrust roh (150 g)",
+      "portion_g": 150,
+      "calories": 180,
+      "protein": 33.8,
+      "carbs": 0,
+      "fat": 3.9,
+      "tip": "Viel Protein, wenig Fett",
+      "basis": [
+        {
+          "fdcId": 171077,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Putenbrust roh (150 g)",
+      "portion_g": 150,
+      "calories": 171,
+      "protein": 35,
+      "carbs": 0,
+      "fat": 3.5,
+      "tip": "Kalorienärmste Sorte hier",
+      "basis": [
+        {
+          "slug": "putenbrust",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Rinderfilet roh (150 g)",
+      "portion_g": 150,
+      "calories": 209,
+      "protein": 32.9,
+      "carbs": 0,
+      "fat": 8.6,
+      "basis": [
+        {
+          "slug": "rinderfilet",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Rinderhack roh, 10 % Fett (150 g)",
+      "portion_g": 150,
+      "calories": 264,
+      "protein": 30,
+      "carbs": 0,
+      "fat": 15,
+      "basis": [
+        {
+          "slug": "hackfleisch-rind",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Hackfleisch gemischt, roh (150 g)",
+      "portion_g": 150,
+      "calories": 357,
+      "protein": 26.6,
+      "carbs": 0,
+      "fat": 27,
+      "basis": [
+        {
+          "slug": "hackfleisch-gemischt",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Schweinekotelett paniert (180 g)",
+      "portion_g": 180,
+      "calories": 412,
+      "protein": 45,
+      "carbs": 13,
+      "fat": 19,
+      "basis": [
+        {
+          "slug": "kotelett",
+          "variante": "Kotelett paniert (180g)"
+        }
+      ]
+    },
+    {
+      "name": "Lammkotelett roh (150 g)",
+      "portion_g": 150,
+      "calories": 447,
+      "protein": 23.1,
+      "carbs": 0.3,
+      "fat": 39.3,
+      "basis": [
+        {
+          "fdcId": 172517,
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Speck roh (30 g)",
+      "portion_g": 30,
+      "calories": 118,
+      "protein": 4.1,
+      "carbs": 0,
+      "fat": 11.1,
+      "basis": [
+        {
+          "slug": "speck",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Frikadelle (1 Stück, 150 g)",
+      "portion_g": 150,
+      "calories": 294,
+      "protein": 26,
+      "carbs": 10.8,
+      "fat": 15.8,
+      "basis": [
+        {
+          "slug": "frikadellen",
+          "g": 150
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Tofu", "calories": 144, "emoji": "🍢" },
-    { "name": "Lachs", "calories": 208, "emoji": "🐟" },
-    { "name": "Käse Gouda", "calories": 350, "emoji": "🧀" },
-    { "name": "Eier", "calories": 155, "emoji": "🥚" }
+    {
+      "name": "Tofu (150 g)",
+      "calories": 216,
+      "emoji": "🍢",
+      "basis": [
+        {
+          "slug": "tofu",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Lachs roh (150 g)",
+      "calories": 312,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "lachs",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Gouda (30 g)",
+      "calories": 107,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaese-gouda",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Eier (2 Stück, 120 g)",
+      "calories": 186,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "ei",
+          "g": 120
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Pute & Hähnchenbrust = Eiweiß-Champion", "text": "Pute (146 kcal/100g) und Hähnchenbrust (165 kcal) liefern 22-24g Protein bei wenig Fett. Beste Wahl für Muskelaufbau und Fettverlust.", "icon": "💪" },
-    { "title": "Magere Schnittwahl macht den Unterschied", "text": "Rinderfilet: 165 kcal/100g. Rinderhack: 240 kcal. Bratenfleisch fett: 280 kcal. Beim gleichen Tier können Schnittwahl und Zubereitung 100+ kcal/100g ausmachen.", "icon": "✂️" },
-    { "title": "Panaden verdoppeln Kalorien", "text": "Schweineschnitzel paniert hat 240 kcal/100g, unpaniert nur 165. Die Panade saugt zudem viel Bratfett auf – 100 kcal extra pro Schnitzel.", "icon": "🍞" },
-    { "title": "Rotes Fleisch limitieren", "text": "WHO empfiehlt max. 300-600g rotes Fleisch (Rind, Schwein, Lamm) pro Woche. Bei mehr steigt das Risiko für Herz-Kreislauf und Darmkrebs leicht.", "icon": "📋" },
-    { "title": "Zubereitung zählt", "text": "Hähnchen gegrillt: 200 kcal/100g. Hähnchen frittiert (KFC-Style): 320 kcal. Kochen, Grillen, Backen sind kalorienärmer als Frittieren oder in viel Bratfett.", "icon": "🔥" }
+    {
+      "title": "Pute & Hähnchenbrust = Eiweiß-Champion",
+      "text": "Putenbrust (roh 114 kcal pro 100 g, 23,3 g Protein) und Hähnchenbrust (roh 120 kcal, 22,5 g Protein) liefern viel Protein bei wenig Fett. Beste Wahl für Muskelaufbau und Fettverlust.",
+      "icon": "💪"
+    },
+    {
+      "title": "Magere Schnittwahl macht den Unterschied",
+      "text": "Rinderfilet hat roh 139 kcal pro 100 g, Rib-Eye 244 kcal. Schweinefilet hat 120 kcal, Kotelett 170 kcal. Beim gleichen Tier kann die Schnittwahl über 100 kcal pro 100 g ausmachen.",
+      "icon": "✂️"
+    },
+    {
+      "title": "Panade bringt Extra-Kalorien",
+      "text": "Hähnchenbrust hat gegart ohne Panade 165 kcal pro 100 g, paniert und gebraten 243 kcal. Die Panade saugt Bratfett auf und macht hier 78 kcal pro 100 g aus.",
+      "icon": "🍞"
+    },
+    {
+      "title": "Rotes Fleisch limitieren",
+      "text": "WHO empfiehlt max. 300-600g rotes Fleisch (Rind, Schwein, Lamm) pro Woche. Bei mehr steigt das Risiko für Herz-Kreislauf und Darmkrebs leicht.",
+      "icon": "📋"
+    },
+    {
+      "title": "Zubereitung zählt",
+      "text": "Hähnchenkeule mit Haut hat gebraten 184 kcal pro 100 g, frittiert und paniert 273 kcal. Kochen, Grillen, Backen sind kalorienärmer als Frittieren oder in viel Bratfett.",
+      "icon": "🔥"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Fleisch?", "answer": "Sehr unterschiedlich: Putenbrust 146 kcal/100g, Hähnchenbrust 165, Rinderfilet 165, Schweinebauch 380. Eine Portion (150g) bringt es auf 220-570 kcal." },
-    { "question": "Welches Fleisch hat die wenigsten Kalorien?", "answer": "Putenbrust (146 kcal/100g) und Hähnchenbrust (165 kcal) sind die magersten. Beide haben kaum Fett (1-3g) und viel Protein (24g). Rinderfilet und Schweinefilet folgen mit ca. 165-180 kcal." },
-    { "question": "Wie viel Fleisch pro Woche?", "answer": "Die DGE empfiehlt max. 300-600g Fleisch und Wurst pro Woche – also etwa 1-2 Portionen. Bei höherem Konsum steigen Risiken für Herz-Kreislauf und Darmkrebs." },
-    { "question": "Welches Fleisch hat das meiste Protein?", "answer": "Putenbrust und Hähnchenbrust mit 23-25g Protein/100g. Rinderfilet ähnlich (22g). Beim Steak (300g) sind das 70g Protein – mehr als der Tagesbedarf eines Erwachsenen." },
-    { "question": "Ist Hackfleisch gesund?", "answer": "In Maßen ja – aber Hackfleisch hat oft 20-30% Fett (240-350 kcal/100g). Mageres Hackfleisch (5% Fett) bei der Bedientheke verlangen oder selbst durchdrehen lassen." },
-    { "question": "Fleisch oder Fisch zum Abnehmen?", "answer": "Beides funktioniert: Hähnchenbrust (165 kcal) und Lachs (208 kcal) ähnlich. Lachs liefert dazu Omega-3, Hähnchen ist günstiger. Beste Strategie: 2x Fisch + 2-3x Geflügel pro Woche." }
+    {
+      "question": "Wie viele Kalorien hat Fleisch?",
+      "answer": "Am Beispiel Schweinefilet (roh) hat Fleisch 120 kcal pro 100 g (USDA FoodData Central), eine Portion (150 g) 180 kcal. Andere Sorten roh je 100 g: Putenbrust 114, Hähnchenbrust 120, Rinderfilet 139, Rinderhack mit 10 % Fett 176, gemischtes Hackfleisch 238, Lammkotelett 298 und Speck 393 kcal."
+    },
+    {
+      "question": "Welches Fleisch hat die wenigsten Kalorien?",
+      "answer": "Putenbrust (roh 114 kcal pro 100 g, 2,3 g Fett) und Hähnchenbrust (120 kcal, 2,6 g Fett) mit 22,5 bis 23,3 g Protein. Schweinefilet liegt mit 120 kcal und 3,5 g Fett gleichauf, danach folgen Rinderhüftsteak (131 kcal) und Rinderfilet (139 kcal)."
+    },
+    {
+      "question": "Wie viel Fleisch pro Woche?",
+      "answer": "Die DGE empfiehlt max. 300-600g Fleisch und Wurst pro Woche, also etwa 2 bis 4 Portionen à 150 g. Bei höherem Konsum steigen Risiken für Herz-Kreislauf und Darmkrebs."
+    },
+    {
+      "question": "Welches Fleisch hat das meiste Protein?",
+      "answer": "Putenbrust mit 23,3 g und Hähnchenbrust mit 22,5 g Protein pro 100 g (roh). Rinderfilet liefert 21,9 g, Schweinefilet 20,7 g. Ein gebratenes Hüftsteak (200 g) kommt auf rund 59 g Protein."
+    },
+    {
+      "question": "Ist Hackfleisch gesund?",
+      "answer": "In Maßen ja, aber gemischtes Hackfleisch hat roh 18 g Fett und 238 kcal pro 100 g. Mageres Rinderhack (5 % Fett) hat 137 kcal pro 100 g: an der Bedientheke verlangen oder selbst durchdrehen lassen."
+    },
+    {
+      "question": "Fleisch oder Fisch zum Abnehmen?",
+      "answer": "Beides funktioniert: Hähnchenbrust hat roh 120 kcal pro 100 g, Lachs 208 kcal. Lachs liefert dazu Omega-3, Hähnchen ist günstiger. Beste Strategie: 2x Fisch + 2-3x Geflügel pro Woche."
+    }
   ],
-  "related_foods": ["haehnchenbrust", "rindfleisch", "schweinefleisch", "hackfleisch-rind", "frikadellen"]
+  "related_foods": [
+    "haehnchenbrust",
+    "rindfleisch",
+    "schweinefleisch",
+    "hackfleisch-rind",
+    "frikadellen"
+  ]
 }

@@ -3,52 +3,278 @@
   "name": "Gemüse",
   "emoji": "🥦",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 170457 (Tomatoes, red, ripe, raw, year round average), Werte je 100 g; allgemeine Seite, Werte am Beispiel Tomate, roh",
+  "beispiel": {
+    "name": "Tomate, roh",
+    "slug": "tomate"
+  },
   "seo": {
     "title": "Gemüse Kalorien: Übersicht aller Sorten + Rechner | Mahlzait",
-    "description": "Gemüse hat je nach Sorte 15-90 kcal pro 100g. Berechne Kalorien für Brokkoli, Spinat, Tomaten, Paprika, Karotten, Zucchini & mehr.",
-    "keywords": ["gemüse kalorien", "kalorien gemüse", "grünes gemüse kalorien", "gemüse abnehmen", "kalorienarmes gemüse", "gemüse nährwerte", "gemüse pro tag", "gemüse vitamine"]
+    "description": "Gemüse hat roh je nach Sorte 15 bis 86 kcal pro 100 g, am Beispiel Tomate 18 kcal. Kalorien für Brokkoli, Spinat, Tomaten, Paprika, Karotten und Zucchini.",
+    "keywords": [
+      "gemüse kalorien",
+      "kalorien gemüse",
+      "grünes gemüse kalorien",
+      "gemüse abnehmen",
+      "kalorienarmes gemüse",
+      "gemüse nährwerte",
+      "gemüse pro tag",
+      "gemüse vitamine"
+    ]
   },
   "overview": {
-    "calories_per_100g": 30,
-    "protein_per_100g": 2,
-    "carbs_per_100g": 5,
-    "fat_per_100g": 0.3,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 18,
+    "protein_per_100g": 0.9,
+    "carbs_per_100g": 3.9,
+    "fat_per_100g": 0.2,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 200,
     "typical_portion_name": "1 Portion"
   },
   "variants": [
-    { "name": "Brokkoli (200g gegart)", "portion_g": 200, "calories": 70, "protein": 6, "carbs": 7, "fat": 1, "tip": "Hoher Vitamin-C-Gehalt" },
-    { "name": "Spinat (200g)", "portion_g": 200, "calories": 46, "protein": 6, "carbs": 2, "fat": 1, "tip": "Eisen-Lieferant" },
-    { "name": "Paprika rot (200g)", "portion_g": 200, "calories": 80, "protein": 2, "carbs": 12, "fat": 1 },
-    { "name": "Tomaten (200g)", "portion_g": 200, "calories": 38, "protein": 2, "carbs": 6, "fat": 0 },
-    { "name": "Gurke (200g)", "portion_g": 200, "calories": 24, "protein": 1, "carbs": 3, "fat": 0, "tip": "Sehr wasserreich" },
-    { "name": "Zucchini (200g)", "portion_g": 200, "calories": 38, "protein": 3, "carbs": 5, "fat": 1 },
-    { "name": "Karotten / Möhren (200g)", "portion_g": 200, "calories": 82, "protein": 2, "carbs": 19, "fat": 0 },
-    { "name": "Champignons (200g)", "portion_g": 200, "calories": 44, "protein": 6, "carbs": 4, "fat": 1 },
-    { "name": "Aubergine (200g)", "portion_g": 200, "calories": 50, "protein": 2, "carbs": 12, "fat": 0 },
-    { "name": "Mais (200g aus der Dose)", "portion_g": 200, "calories": 200, "protein": 8, "carbs": 38, "fat": 4, "tip": "Stärkeärmstes Getreide-Gemüse" }
+    {
+      "name": "Tomaten roh (200 g)",
+      "portion_g": 200,
+      "calories": 36,
+      "protein": 1.8,
+      "carbs": 7.8,
+      "fat": 0.4
+    },
+    {
+      "name": "Gurke roh (200 g)",
+      "portion_g": 200,
+      "calories": 30,
+      "protein": 1.4,
+      "carbs": 7.2,
+      "fat": 0.2,
+      "tip": "Sehr wasserreich",
+      "basis": [
+        {
+          "slug": "gurke",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Zucchini roh (200 g)",
+      "portion_g": 200,
+      "calories": 34,
+      "protein": 2.4,
+      "carbs": 6.2,
+      "fat": 0.6,
+      "basis": [
+        {
+          "slug": "zucchini",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Champignons roh (200 g)",
+      "portion_g": 200,
+      "calories": 44,
+      "protein": 6.2,
+      "carbs": 6.6,
+      "fat": 0.6,
+      "basis": [
+        {
+          "slug": "champignons",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Spinat roh (200 g)",
+      "portion_g": 200,
+      "calories": 46,
+      "protein": 5.8,
+      "carbs": 7.2,
+      "fat": 0.8,
+      "tip": "Eisen-Lieferant",
+      "basis": [
+        {
+          "slug": "spinat",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Aubergine roh (200 g)",
+      "portion_g": 200,
+      "calories": 50,
+      "protein": 2,
+      "carbs": 11.8,
+      "fat": 0.4,
+      "basis": [
+        {
+          "slug": "aubergine",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Paprika rot, roh (200 g)",
+      "portion_g": 200,
+      "calories": 52,
+      "protein": 2,
+      "carbs": 12,
+      "fat": 0.6,
+      "basis": [
+        {
+          "slug": "paprika",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Brokkoli gekocht (200 g)",
+      "portion_g": 200,
+      "calories": 70,
+      "protein": 5,
+      "carbs": 14,
+      "fat": 1,
+      "tip": "Hoher Vitamin-C-Gehalt",
+      "basis": [
+        {
+          "slug": "brokkoli",
+          "variante": "Brokkoli gekocht (200g)"
+        }
+      ]
+    },
+    {
+      "name": "Karotten / Möhren roh (200 g)",
+      "portion_g": 200,
+      "calories": 82,
+      "protein": 1.8,
+      "carbs": 19.2,
+      "fat": 0.4,
+      "basis": [
+        {
+          "slug": "karotten",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Mais aus der Dose, abgetropft (200 g)",
+      "portion_g": 200,
+      "calories": 134,
+      "protein": 4.6,
+      "carbs": 28.7,
+      "fat": 2.4,
+      "tip": "Stärkereich, eher Beilage",
+      "basis": [
+        {
+          "fdcId": 169214,
+          "g": 200
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Obst (Apfel)", "calories": 52, "emoji": "🍎" },
-    { "name": "Salat", "calories": 14, "emoji": "🥗" },
-    { "name": "Hülsenfrüchte (Erbsen)", "calories": 81, "emoji": "🫛" },
-    { "name": "Vollkornbrot", "calories": 220, "emoji": "🍞" }
+    {
+      "name": "Apfel (mittel, 180 g)",
+      "calories": 94,
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
+    },
+    {
+      "name": "Blattsalat (100 g)",
+      "calories": 15,
+      "emoji": "🥗",
+      "basis": [
+        {
+          "fdcId": 169249,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Erbsen roh (100 g)",
+      "calories": 81,
+      "emoji": "🫛",
+      "basis": [
+        {
+          "slug": "erbsen",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Vollkornbrot (1 Scheibe, 50 g)",
+      "calories": 111,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 50
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "5 Portionen pro Tag", "text": "DGE-Empfehlung: 5 Portionen Obst und Gemüse täglich (ca. 650g). Davon 3 Portionen Gemüse, 2 Portionen Obst. Liefert ~150 kcal + alle Mikronährstoffe.", "icon": "🥗" },
-    { "title": "Volumetrics: viel Gemüse füllt", "text": "Gemüse hat 90% Wasser und Ballaststoffe – füllt den Magen ohne viele Kalorien. Wer mit 200g Gemüse anfängt, isst danach automatisch weniger.", "icon": "🍽️" },
-    { "title": "Tiefkühl ist okay", "text": "Tiefkühl-Gemüse hat oft mehr Vitamine als „frisches\", das tagelang transportiert wurde. Plus: schneller, günstiger, kein Schnippelaufwand.", "icon": "❄️" },
-    { "title": "Mit Fett besser aufgenommen", "text": "Fettlösliche Vitamine (A, D, E, K) brauchen Fett zur Aufnahme. Karottensalat mit 1 EL Olivenöl: 60% mehr Beta-Carotin im Blut als pur.", "icon": "🫒" },
-    { "title": "Stärkereiches Gemüse limitieren", "text": "Mais (90 kcal/100g), Kartoffeln (70 kcal), Süßkartoffeln (90 kcal) sind eher Sättigungsbeilage als Gemüse-Kalorien-Trick. Echtes Diät-Gemüse: Gurke, Zucchini, Spinat, Brokkoli.", "icon": "📊" }
+    {
+      "title": "5 Portionen pro Tag",
+      "text": "DGE-Empfehlung: 5 Portionen Obst und Gemüse täglich (ca. 650g). Davon 3 Portionen Gemüse, 2 Portionen Obst. Mit 400 g Tomaten und 250 g Äpfeln sind das nur rund 200 kcal.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Volumetrics: viel Gemüse füllt",
+      "text": "Gemüse besteht vor allem aus Wasser (Tomaten zu rund 95 %) und enthält Ballaststoffe: Das füllt den Magen ohne viele Kalorien. Wer mit 200 g Gemüse anfängt, isst danach automatisch weniger.",
+      "icon": "🍽️"
+    },
+    {
+      "title": "Tiefkühl ist okay",
+      "text": "Tiefkühl-Gemüse hat oft mehr Vitamine als „frisches“, das tagelang transportiert wurde. Plus: schneller, günstiger, kein Schnippelaufwand.",
+      "icon": "❄️"
+    },
+    {
+      "title": "Mit Fett besser aufgenommen",
+      "text": "Fettlösliche Vitamine (A, D, E, K) brauchen Fett zur Aufnahme. Karottensalat mit 1 EL Olivenöl liefert deshalb mehr verwertbares Beta-Carotin als pur.",
+      "icon": "🫒"
+    },
+    {
+      "title": "Stärkereiches Gemüse limitieren",
+      "text": "Mais (roh 86 kcal pro 100 g), Kartoffeln (gekocht 86 kcal) und Süßkartoffeln (roh 86 kcal) sind eher Sättigungsbeilage als Gemüse-Kalorien-Trick. Echtes Diät-Gemüse: Gurke, Zucchini, Spinat, Brokkoli.",
+      "icon": "📊"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Gemüse?", "answer": "Sehr unterschiedlich: Gurke und Salat 12-15 kcal/100g, Brokkoli 35, Karotten 41, Mais 90 kcal/100g. Pro Portion (200g) typisch 25-180 kcal." },
-    { "question": "Welches Gemüse hat die wenigsten Kalorien?", "answer": "Gurke (12 kcal/100g), Salat (14 kcal), Spinat (23 kcal), Tomate (19 kcal) und Zucchini (19 kcal) sind die kalorienärmsten. Praktisch unbegrenzt essbar im Defizit." },
-    { "question": "Wie viel Gemüse sollte man täglich essen?", "answer": "Die DGE empfiehlt 3 Portionen Gemüse pro Tag (ca. 400g). Studien zeigen: bei 5 Portionen Obst+Gemüse sinkt das Risiko für Herz-Kreislauf-Erkrankungen um 28%." },
-    { "question": "Hilft Gemüse beim Abnehmen?", "answer": "Sehr stark. Gemüse ist kalorienarm (15-50 kcal/100g) und sättigt durch Volumen und Ballaststoffe. Wer jede Mahlzeit mit Gemüse füllt, isst automatisch 200-400 kcal weniger pro Tag." },
-    { "question": "Roh oder gekocht – was ist besser?", "answer": "Beides hat Vorteile. Roh: mehr Vitamin C, mehr Enzyme. Gekocht: mehr Lycopin (Tomaten), mehr Beta-Carotin (Karotten), bessere Verträglichkeit. Mix beides ab." },
-    { "question": "Hat Gemüse Protein?", "answer": "Wenig, aber doch: Brokkoli und Spinat liefern 3g Protein/100g, Erbsen 5g, Sojabohnen 36g (gekocht 12g). Wer vegan isst, kombiniert Gemüse mit Hülsenfrüchten und Vollkorn für komplettes Protein." }
+    {
+      "question": "Wie viele Kalorien hat Gemüse?",
+      "answer": "Am Beispiel Tomate (roh) hat Gemüse 18 kcal pro 100 g (USDA FoodData Central), eine Portion (200 g) 36 kcal. Andere Sorten roh je 100 g: Gurke 15, Zucchini 17, Champignons 22, Spinat 23, Aubergine 25, Paprika 26, Brokkoli 34, Karotten 41 und Mais 86 kcal."
+    },
+    {
+      "question": "Welches Gemüse hat die wenigsten Kalorien?",
+      "answer": "Gurke und Blattsalat (je 15 kcal pro 100 g), Zucchini (17 kcal), Tomate (18 kcal), Champignons (22 kcal) und Spinat (23 kcal) sind die kalorienärmsten. Praktisch unbegrenzt essbar im Defizit."
+    },
+    {
+      "question": "Wie viel Gemüse sollte man täglich essen?",
+      "answer": "Die DGE empfiehlt 3 Portionen Gemüse pro Tag (ca. 400g). Studien zeigen: bei 5 Portionen Obst+Gemüse sinkt das Risiko für Herz-Kreislauf-Erkrankungen um 28%."
+    },
+    {
+      "question": "Hilft Gemüse beim Abnehmen?",
+      "answer": "Sehr stark. Gemüse ist kalorienarm (die meisten Sorten hier 15 bis 41 kcal pro 100 g) und sättigt durch Volumen und Ballaststoffe. Wer jede Mahlzeit mit Gemüse füllt, isst automatisch 200-400 kcal weniger pro Tag."
+    },
+    {
+      "question": "Roh oder gekocht: Was ist besser?",
+      "answer": "Beides hat Vorteile. Roh: mehr Vitamin C, mehr Enzyme. Gekocht: mehr Lycopin (Tomaten), mehr Beta-Carotin (Karotten), bessere Verträglichkeit. Mix beides ab."
+    },
+    {
+      "question": "Hat Gemüse Protein?",
+      "answer": "Wenig, aber doch: Brokkoli hat 2,8 g und Spinat 2,9 g Protein pro 100 g, Erbsen 5,4 g und Edamame (grüne Sojabohnen) 11,9 g. Wer vegan isst, kombiniert Gemüse mit Hülsenfrüchten und Vollkorn für komplettes Protein."
+    }
   ],
-  "related_foods": ["brokkoli", "spinat", "tomate", "paprika", "gurke"]
+  "related_foods": [
+    "brokkoli",
+    "spinat",
+    "tomate",
+    "paprika",
+    "gurke"
+  ]
 }

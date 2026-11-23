@@ -3,52 +3,277 @@
   "name": "Wurst",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "USDA FoodData Central, FDC-ID 172013 (Bologna, beef and pork), Werte je 100 g; allgemeine Seite, Werte am Beispiel Fleischwurst",
+  "beispiel": {
+    "name": "Fleischwurst",
+    "slug": "fleischwurst"
+  },
   "seo": {
     "title": "Wurst Kalorien: Übersicht aller Sorten + Rechner | Mahlzait",
-    "description": "Wurst hat je nach Sorte 100-450 kcal pro 100g. Berechne Kalorien für Bratwurst, Salami, Currywurst, Bockwurst und Aufschnitt mit dem kostenlosen Rechner.",
-    "keywords": ["wurst kalorien", "kalorien wurst", "salami kalorien", "bratwurst kalorien", "currywurst kalorien", "fleischwurst kalorien", "wurst nährwerte", "wurst protein"]
+    "description": "Wurst hat je nach Sorte 106 bis 378 kcal pro 100 g, am Beispiel Fleischwurst 308 kcal. Kalorien für Bratwurst, Salami, Currywurst, Bockwurst und Aufschnitt.",
+    "keywords": [
+      "wurst kalorien",
+      "kalorien wurst",
+      "salami kalorien",
+      "bratwurst kalorien",
+      "currywurst kalorien",
+      "fleischwurst kalorien",
+      "wurst nährwerte",
+      "wurst protein"
+    ]
   },
   "overview": {
-    "calories_per_100g": 300,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 1,
-    "fat_per_100g": 27,
+    "calories_per_100g": 308,
+    "protein_per_100g": 15.2,
+    "carbs_per_100g": 5.5,
+    "fat_per_100g": 24.6,
     "fiber_per_100g": 0,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Scheibe"
   },
   "variants": [
-    { "name": "Bratwurst (1 Stück 100g)", "portion_g": 100, "calories": 290, "protein": 13, "carbs": 1, "fat": 26 },
-    { "name": "Currywurst mit Sauce (200g)", "portion_g": 200, "calories": 540, "protein": 23, "carbs": 24, "fat": 38 },
-    { "name": "Bockwurst (1 Paar 100g)", "portion_g": 100, "calories": 270, "protein": 12, "carbs": 1, "fat": 24 },
-    { "name": "Salami (1 Scheibe 10g)", "portion_g": 10, "calories": 38, "protein": 2, "carbs": 0, "fat": 3, "tip": "Eine der fettreichsten Wurstsorten" },
-    { "name": "Fleischwurst (1 Scheibe 30g)", "portion_g": 30, "calories": 75, "protein": 4, "carbs": 0, "fat": 6 },
-    { "name": "Mortadella (1 Scheibe 30g)", "portion_g": 30, "calories": 84, "protein": 5, "carbs": 0, "fat": 7 },
-    { "name": "Leberwurst (1 EL 30g)", "portion_g": 30, "calories": 96, "protein": 4, "carbs": 1, "fat": 9 },
-    { "name": "Mettwurst grob (30g)", "portion_g": 30, "calories": 118, "protein": 4, "carbs": 0, "fat": 11 },
-    { "name": "Kochschinken (1 Scheibe 25g)", "portion_g": 25, "calories": 30, "protein": 5, "carbs": 0, "fat": 1, "tip": "Magerste Wurst-Alternative" },
-    { "name": "Putenbrust-Aufschnitt (1 Scheibe 25g)", "portion_g": 25, "calories": 28, "protein": 5, "carbs": 0, "fat": 1, "tip": "Mageres Frühstück" }
+    {
+      "name": "Fleischwurst (1 Scheibe, 30 g)",
+      "portion_g": 30,
+      "calories": 92,
+      "protein": 4.6,
+      "carbs": 1.7,
+      "fat": 7.4
+    },
+    {
+      "name": "Bratwurst (1 Stück, 150 g)",
+      "portion_g": 150,
+      "calories": 500,
+      "protein": 20.6,
+      "carbs": 4.4,
+      "fat": 43.8,
+      "basis": [
+        {
+          "slug": "bratwurst",
+          "g": 150
+        }
+      ]
+    },
+    {
+      "name": "Currywurst mit Sauce (200 g)",
+      "portion_g": 200,
+      "calories": 546,
+      "protein": 20.8,
+      "carbs": 20,
+      "fat": 42.8,
+      "basis": [
+        {
+          "slug": "currywurst",
+          "g": 200
+        }
+      ]
+    },
+    {
+      "name": "Bockwurst (1 Stück, 100 g)",
+      "portion_g": 100,
+      "calories": 269,
+      "protein": 12.8,
+      "carbs": 0.3,
+      "fat": 23.7,
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Salami (1 Scheibe, 10 g)",
+      "portion_g": 10,
+      "calories": 38,
+      "protein": 2.1,
+      "carbs": 0.1,
+      "fat": 3.2,
+      "tip": "Eine der fettreichsten Wurstsorten",
+      "basis": [
+        {
+          "slug": "salami",
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Mortadella (2 Scheiben, 30 g)",
+      "portion_g": 30,
+      "calories": 93,
+      "protein": 4.9,
+      "carbs": 0.9,
+      "fat": 7.6,
+      "basis": [
+        {
+          "slug": "mortadella",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Leberwurst (1 Portion, 30 g)",
+      "portion_g": 30,
+      "calories": 98,
+      "protein": 4.2,
+      "carbs": 0.7,
+      "fat": 8.6,
+      "basis": [
+        {
+          "slug": "leberwurst",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Mettwurst (30 g)",
+      "portion_g": 30,
+      "calories": 109,
+      "protein": 5.3,
+      "carbs": 1,
+      "fat": 9.1,
+      "basis": [
+        {
+          "slug": "mettwurst",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Kochschinken (2 Scheiben, 30 g)",
+      "portion_g": 30,
+      "calories": 32,
+      "protein": 5.1,
+      "carbs": 0.2,
+      "fat": 1.2,
+      "tip": "Magere Wurst-Alternative",
+      "basis": [
+        {
+          "slug": "schinken",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Putenbrust-Aufschnitt (30 g)",
+      "portion_g": 30,
+      "calories": 32,
+      "protein": 4.4,
+      "carbs": 0.7,
+      "fat": 1.1,
+      "tip": "Mageres Frühstück",
+      "basis": [
+        {
+          "slug": "putenbrust",
+          "variante": "Putenbrustaufschnitt"
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Käse Gouda", "calories": 350, "emoji": "🧀" },
-    { "name": "Hähnchenbrust", "calories": 165, "emoji": "🍗" },
-    { "name": "Tofu", "calories": 144, "emoji": "🍢" },
-    { "name": "Hummus", "calories": 230, "emoji": "🫘" }
+    {
+      "name": "Gouda (30 g)",
+      "calories": 107,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaese-gouda",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Hähnchenbrust (100 g)",
+      "calories": 165,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "slug": "haehnchenbrust",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Tofu (100 g)",
+      "calories": 144,
+      "emoji": "🍢",
+      "basis": [
+        {
+          "slug": "tofu",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Hummus (50 g)",
+      "calories": 119,
+      "emoji": "🫘",
+      "basis": [
+        {
+          "slug": "hummus",
+          "g": 50
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Kochschinken & Putenbrust für Defizit", "text": "Kochschinken (110 kcal/100g) und Putenbrust-Aufschnitt (110 kcal/100g) sind mit Abstand die magersten Wurstsorten – mehr Protein, weniger Fett.", "icon": "💪" },
-    { "title": "Salami ist Fettbombe", "text": "Salami hat 380 kcal/100g – fast 4x so viel wie Putenaufschnitt. Pro Scheibe (10g) sind das 38 kcal – im Snack 3-4 Scheiben = 150 kcal.", "icon": "⚠️" },
-    { "title": "Currywurst ist eine Mahlzeit", "text": "Currywurst mit Pommes (550g) hat oft 1.000+ kcal – die halbe Tagesration. Wer Wurst will: Bratwurst pur (290 kcal) und Salat dazu spart 700 kcal.", "icon": "🍟" },
-    { "title": "WHO: max. 50g verarbeitetes Fleisch/Tag", "text": "WHO stuft verarbeitetes Fleisch (Wurst, Salami, Schinken) als „wahrscheinlich krebserregend\" ein bei mehr als 50g/Tag. Aufschnitt-Brot ist da schnell drüber.", "icon": "📋" },
-    { "title": "Vegane Wurst nicht automatisch besser", "text": "Vegane Wurst hat oft ähnlich viele Kalorien wie das Original (200-300 kcal/100g) und viele Zusatzstoffe. Ernährungstechnisch nur die Salzbelastung etwas geringer.", "icon": "🌱" }
+    {
+      "title": "Kochschinken & Putenbrust für Defizit",
+      "text": "Kochschinken (107 kcal pro 100 g) und Putenbrust-Aufschnitt (106 kcal) sind die magersten Sorten in dieser Übersicht: viel Protein bei nur rund 4 g Fett.",
+      "icon": "💪"
+    },
+    {
+      "title": "Salami ist Fettbombe",
+      "text": "Salami hat 378 kcal pro 100 g, mehr als dreimal so viel wie Putenbrust-Aufschnitt. Pro Scheibe (10 g) sind das 38 kcal, im Snack mit 4 Scheiben rund 151 kcal.",
+      "icon": "⚠️"
+    },
+    {
+      "title": "Currywurst ist eine Mahlzeit",
+      "text": "Currywurst mit Pommes (400 g) hat rund 1.170 kcal, etwa die halbe Tagesration. Wer Wurst will: Bratwurst pur (150 g, rund 500 kcal) und Salat dazu spart über 600 kcal.",
+      "icon": "🍟"
+    },
+    {
+      "title": "WHO: max. 50g verarbeitetes Fleisch/Tag",
+      "text": "WHO stuft verarbeitetes Fleisch (Wurst, Salami, Schinken) als „wahrscheinlich krebserregend“ ein bei mehr als 50g/Tag. Aufschnitt-Brot ist da schnell drüber.",
+      "icon": "📋"
+    },
+    {
+      "title": "Vegane Wurst nicht automatisch besser",
+      "text": "Vegane Wurst hat oft ähnlich viele Kalorien wie das Original, eine fleischlose Bratwurst zum Beispiel 255 kcal pro 100 g, und viele Zusatzstoffe. Auch beim Salz liegt sie mit rund 2,3 g pro 100 g ähnlich hoch.",
+      "icon": "🌱"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat Wurst?", "answer": "Sehr unterschiedlich: Putenaufschnitt 110 kcal/100g, Bratwurst 290, Salami 380. Pro Scheibe (30g) typisch 30-100 kcal. Salami liegt bei 38 kcal pro 10g-Scheibe." },
-    { "question": "Welche Wurst hat die wenigsten Kalorien?", "answer": "Kochschinken und Putenbrust-Aufschnitt mit ca. 110 kcal/100g. Beide haben kaum Fett (1-2g) und viel Protein (20g). Geflügel-Wurst und Roastbeef sind ähnlich gut." },
-    { "question": "Macht Wurst dick?", "answer": "In Maßen nicht. Aber: 5 Scheiben Salami am Frühstück = 200 kcal extra. Plus Wurst ist meist sehr salzig (1,5-3g Salz pro 100g) – bei viel Konsum: Wassereinlagerung und Blutdruck-Risiko." },
-    { "question": "Wie viel Wurst pro Tag ist okay?", "answer": "Die WHO empfiehlt max. 50g verarbeitetes Fleisch pro Tag (= ca. 2 Scheiben Aufschnitt oder 1/2 Bratwurst). Bei höherem Konsum steigt das Krebsrisiko (Darmkrebs) leicht messbar." },
-    { "question": "Salami oder Schinken – was ist besser?", "answer": "Kochschinken: 110 kcal/100g, 20g Protein, 2g Fett. Salami: 380 kcal/100g, 22g Protein, 32g Fett. Kochschinken ist klar die kalorienärmere und gesündere Wahl." },
-    { "question": "Welche Wurst ist Low Carb?", "answer": "Fast alle: Wurst hat typisch 0-2g Carbs/100g. Die kalorienärmsten Low-Carb-Optionen sind Kochschinken, Putenbrust-Aufschnitt, Roastbeef und Bündnerfleisch." }
+    {
+      "question": "Wie viele Kalorien hat Wurst?",
+      "answer": "Am Beispiel Fleischwurst hat Wurst 308 kcal pro 100 g (USDA FoodData Central), eine Scheibe (30 g) rund 92 kcal. Andere Sorten je 100 g: Putenbrust-Aufschnitt 106, Kochschinken 107, Bockwurst 269, Mortadella 311, Leberwurst 326, Bratwurst 333, Mettwurst 362 und Salami 378 kcal."
+    },
+    {
+      "question": "Welche Wurst hat die wenigsten Kalorien?",
+      "answer": "Putenbrust-Aufschnitt (106 kcal pro 100 g, 14,8 g Protein) und Kochschinken (107 kcal, 16,9 g Protein) mit jeweils rund 4 g Fett. Roastbeef-Aufschnitt liegt mit 115 kcal ähnlich niedrig."
+    },
+    {
+      "question": "Macht Wurst dick?",
+      "answer": "In Maßen nicht. Aber: 5 Scheiben Salami (50 g) am Frühstück bringen 189 kcal extra. Dazu ist Wurst meist sehr salzig (Fleischwurst rund 2,4 g Salz pro 100 g, Salami rund 4,5 g). Bei viel Konsum: Wassereinlagerung und Blutdruck-Risiko."
+    },
+    {
+      "question": "Wie viel Wurst pro Tag ist okay?",
+      "answer": "Die WHO empfiehlt max. 50g verarbeitetes Fleisch pro Tag (= ca. 2 Scheiben Aufschnitt oder 1/3 Bratwurst). Bei höherem Konsum steigt das Krebsrisiko (Darmkrebs) leicht messbar."
+    },
+    {
+      "question": "Salami oder Schinken: Was ist besser?",
+      "answer": "Kochschinken: 107 kcal pro 100 g, 16,9 g Protein, 4 g Fett. Salami: 378 kcal pro 100 g, 21,1 g Protein, 31,7 g Fett. Kochschinken ist klar die kalorien- und fettärmere Wahl."
+    },
+    {
+      "question": "Welche Wurst ist Low Carb?",
+      "answer": "Fast alle: Bockwurst hat 0,3 g, Salami und Kochschinken haben je 0,7 g, Bratwurst 2,9 g und Fleischwurst 5,5 g Kohlenhydrate pro 100 g. Die kalorienärmsten Low-Carb-Optionen sind Kochschinken, Putenbrust-Aufschnitt und Roastbeef."
+    }
   ],
-  "related_foods": ["bratwurst", "currywurst", "bockwurst", "salami", "fleischwurst"]
+  "related_foods": [
+    "bratwurst",
+    "currywurst",
+    "bockwurst",
+    "salami",
+    "fleischwurst"
+  ]
 }

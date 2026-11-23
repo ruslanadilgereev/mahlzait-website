@@ -59,6 +59,9 @@ interface FoodData {
   };
   // Herstellerangabe für Markenprodukte, die USDA FoodData Central nicht führt
   hersteller?: Herstellerangabe;
+  // Sammelseite (z. B. Käse): Werte je 100 g am Beispiel eines typischen Lebensmittels
+  // mit eigenem FDC-Eintrag (source) und eigener Seite (slug)
+  beispiel?: { name: string; slug: string };
   // offene Seite: sichtbarer Vermerk, warum die Werte nicht belegt sind
   vermerk?: string;
   variants: FoodVariant[];
@@ -133,9 +136,11 @@ interface Props {
   relatedArticles?: RelatedArticle[];
   foodSpecificCalculators?: FoodSpecificCalculator[];
   rezeptHerstellerangaben?: RezeptHerstellerangabe[];
+  // Name der Seite des Beispiels (food.beispiel.slug)
+  beispielSeite?: string;
 }
 
-function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foodSpecificCalculators, rezeptHerstellerangaben = [] }: Props) {
+function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foodSpecificCalculators, rezeptHerstellerangaben = [], beispielSeite }: Props) {
   const [portionGrams, setPortionGrams] = useState<number>(food.overview.typical_portion_g);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -377,6 +382,23 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                 </p>
               )}
               {food.vermerk && <p className="mt-4 text-sm opacity-70">{`Hinweis: ${food.vermerk}.`}</p>}
+              {food.beispiel && (
+                <p className="mt-4 text-sm opacity-70">
+                  {`Werte am Beispiel ${food.beispiel.name} (USDA FoodData Central, FDC-ID ${fdcIds[0]}).`}{" "}
+                  <a
+                    href={`https://fdc.nal.usda.gov/food-details/${fdcIds[0]}/nutrients`}
+                    className="link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Nährwerte im FDC-Eintrag
+                  </a>
+                  {" · "}
+                  <a href={`/kalorien/${food.beispiel.slug}/`} className="link">
+                    {`Seite ${beispielSeite}`}
+                  </a>
+                </p>
+              )}
               {food.hersteller && (
                 <p className="mt-4 text-sm opacity-70">
                   {herstellerHinweis(food.hersteller, "hinweis")}.{" "}
@@ -400,7 +422,8 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
               <p className="opacity-80 mb-4">
                 Wie viele Kalorien haben 50 {unit}, 200 {unit} oder 500 {unit} {food.name}? Die Tabelle zeigt
                 Kalorien, Protein und Fett für gängige Mengen, berechnet aus{" "}
-                {food.overview.calories_per_100g} kcal pro 100 {unit}.
+                {food.overview.calories_per_100g} kcal pro 100 {unit}
+                {food.beispiel && ` (am Beispiel ${food.beispiel.name})`}.
               </p>
               <div className="overflow-x-auto">
                 <table className="table table-zebra w-full">
@@ -663,6 +686,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
             ) : fdcIds.length > 0 ? (
               <>
                 Quelle:{" "}
+                {food.beispiel && `Werte am Beispiel ${food.beispiel.name} (`}
                 <a
                   href={fdcIds.length === 1 ? `https://fdc.nal.usda.gov/food-details/${fdcIds[0]}/nutrients` : "https://fdc.nal.usda.gov"}
                   target="_blank"
@@ -673,7 +697,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                 </a>
                 {istRezept
                   ? `, Rezeptrechnung aus Zutaten mit den FDC-IDs ${fdcIds.join(", ")}${rezeptHerstellerangaben.length ? "" : ". "}`
-                  : `, FDC-ID ${fdcIds[0]}, Werte je 100 g. `}
+                  : `, FDC-ID ${fdcIds[0]}${food.beispiel ? ")" : ""}, Werte je 100 g. `}
                 {istRezept &&
                   rezeptHerstellerangaben.map((r) => (
                     <span key={r.slug}>

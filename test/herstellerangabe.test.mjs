@@ -9,6 +9,9 @@
 // Händler-Etikett (Vorschlag vom 23.11.2026): Werte aus der Kennzeichnung des
 // Herstellers auf der Verpackung, wie sie ein deutscher Händler zeigt, sichtbar
 // "Herstellerangabe laut Verpackung, angezeigt bei <Händler>, abgerufen am <Datum>".
+// Sammelseite (Auftrag vom 23.11.2026): Werte am Beispiel eines typischen Lebensmittels
+// mit eigenem FDC-Eintrag, sichtbar "Werte am Beispiel <Lebensmittel> (USDA FoodData
+// Central, FDC-ID <ID>)" mit Link auf den Eintrag und auf die Seite des Lebensmittels.
 // Prüft Daten und das gebaute dist/ (vorher pnpm build).
 import { test } from "node:test";
 import assert from "node:assert/strict";
@@ -60,11 +63,39 @@ test("Rezeptseite: Fußzeile nennt die Rezeptrechnung mit den FDC-IDs", () => {
 });
 
 test("Seite ohne belegte Quelle: kein Quellenhinweis und kein isBasedOn", () => {
-  // bis 7311273 mars, seitdem mit Händler-Etikett
-  const food = lade("kaese");
+  // bis 7311273 mars, seitdem mit Händler-Etikett; bis 32ba386 kaese, seitdem am Beispiel Gouda
+  const food = lade("schokoriegel");
   assert.equal(food.source, undefined);
-  assert.ok(!/Quelle:/.test(text("kaese")), "Quellenhinweis");
-  assert.equal(webApp("kaese").isBasedOn, undefined);
+  assert.ok(!/Quelle:/.test(text("schokoriegel")), "Quellenhinweis");
+  assert.ok(!text("schokoriegel").includes("Werte am Beispiel"), "Beispielhinweis");
+  assert.equal(webApp("schokoriegel").isBasedOn, undefined);
+});
+
+test("Sammelseite am Beispiel eines FDC-Eintrags: sichtbar gekennzeichnet, Links auf den Eintrag und die Seite des Beispiels", () => {
+  for (const [slug, beispiel, id, vertreter, seitenname] of [
+    ["kaese", "Gouda", 171241, "kaese-gouda", "Gouda Käse"],
+    ["wurst", "Fleischwurst", 172013, "fleischwurst", "Fleischwurst"],
+    ["fleisch", "Schweinefilet, roh", 168312, "schweinefilet", "Schweinefilet"],
+    ["gemuese", "Tomate, roh", 170457, "tomate", "Tomate"],
+  ]) {
+    const t = text(slug).replace(/\( /g, "(");
+    assert.ok(t.includes(`Werte am Beispiel ${beispiel} (USDA FoodData Central, FDC-ID ${id}). Nährwerte im FDC-Eintrag · Seite ${seitenname}`), slug + ": Hinweis unter der Nährwerttabelle");
+    assert.ok(t.includes(`Quelle: Werte am Beispiel ${beispiel} (USDA FoodData Central, FDC-ID ${id}), Werte je 100 g.`), slug + ": Fußzeile");
+    const o = lade(slug).overview;
+    assert.ok(t.includes(`berechnet aus ${o.calories_per_100g} kcal pro 100 g (am Beispiel ${beispiel}).`), slug + ": Mengentabelle");
+    const h = seite(slug);
+    // Hinweis und Fußzeile verlinken den Eintrag, der Hinweis die Seite des Beispiels
+    assert.equal(h.split(`href="https://fdc.nal.usda.gov/food-details/${id}/nutrients"`).length - 1, 2, slug + ": Links zum FDC-Eintrag");
+    assert.match(h, new RegExp(`href="/kalorien/${vertreter}/"[^>]*>Seite ${seitenname}<`), slug + ": Link zur Seite " + vertreter);
+    assert.deepEqual(webApp(slug).isBasedOn.map((q) => q.name), ["USDA FoodData Central"], slug);
+    // Beispiel auch dort, wo die Texte den Wert nennen (wie gummibaerchen)
+    const food = lade(slug);
+    const kcal = food.overview.calories_per_100g + " kcal";
+    const kurz = beispiel.split(",")[0];
+    for (const [wo, s] of [["seo.description", food.seo.description], ["faq[0]", food.faq[0].answer]]) {
+      assert.ok(s.toLowerCase().includes("am beispiel " + kurz.toLowerCase()) && s.includes(kcal), slug + ": " + wo);
+    }
+  }
 });
 
 test("Lebensmittelseiten nennen Open Food Facts nicht mehr als Grundlage der Werte", () => {

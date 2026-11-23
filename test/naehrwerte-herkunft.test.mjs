@@ -9,7 +9,9 @@
 // Herstellerangabe gefunden; ihre Werte sind unverändert):
 // - ein FDC-Eintrag: kcal, Eiweiß, Fett, Kohlenhydrate und Ballaststoffe je
 //   100 g passen auf 5 % zu diesem Eintrag (Unterschiede bis 1 kcal bzw. 0,1 g
-//   gelten als Rundung);
+//   gelten als Rundung); Sammelseiten (Käse, Wurst, Fleisch, Gemüse) nennen im
+//   Feld beispiel das typische Lebensmittel, dessen Eintrag sie zeigen, und
+//   dessen Seite mit denselben Werten (Auftrag vom 23.11.2026);
 // - eine Rezeptrechnung: das Feld rezept nennt jede Zutat mit Gramm und FDC-ID,
 //   die Werte je 100 g sind daraus gerechnet (die älteren Rezeptseiten ohne
 //   dieses Feld prüfen eigene Tests, siehe EIGENE_TESTS); Zutaten ohne
@@ -72,13 +74,25 @@ const HAENDLER = {
 // <OFFEN>
 const OFFEN = new Set([
    "ben-and-jerry-s", "bowl", "campari", "captain-morgan", "feta-light", "five-guys-burger",
-   "fleisch", "fruehstueck", "gemuese", "giotto", "guinness", "hans-im-glueck-burger", "kaese",
-   "katjes", "klopfer", "l-osteria-pizza", "magnum-double-caramel", "mate-tee", "mc-frappe",
-   "oreo-donut", "pepsi-max", "philadelphia-light", "pop-tarts", "praline", "proteinriegel",
-   "schokoriegel", "smirnoff-ice", "snickers-crisp", "twister-eis", "vapiano", "wonderwaffel",
-   "wurst", "yfood",
+   "fruehstueck", "giotto", "guinness", "hans-im-glueck-burger", "katjes", "klopfer",
+   "l-osteria-pizza", "magnum-double-caramel", "mate-tee", "mc-frappe", "oreo-donut", "pepsi-max",
+   "philadelphia-light", "pop-tarts", "praline", "proteinriegel", "schokoriegel", "smirnoff-ice",
+   "snickers-crisp", "twister-eis", "vapiano", "wonderwaffel", "yfood",
 ]);
 // </OFFEN>
+
+// Sammelseiten mit einem typischen, eindeutig passenden Vertreter (Auftrag vom
+// 23.11.2026): Werte am Beispiel dieses Lebensmittels, das einen eigenen
+// FDC-Eintrag und eine eigene Seite hat. Begründung je Seite im Audit.
+const SAMMELSEITEN = {
+  kaese: { name: "Gouda", slug: "kaese-gouda", fdcId: 171241 },
+  wurst: { name: "Fleischwurst", slug: "fleischwurst", fdcId: 172013 },
+  fleisch: { name: "Schweinefilet, roh", slug: "schweinefilet", fdcId: 168312 },
+  gemuese: { name: "Tomate, roh", slug: "tomate", fdcId: 170457 },
+};
+
+// Sammelseiten ohne eindeutigen Vertreter in FDC: bleiben offen (Begründung im Audit)
+const SAMMELSEITEN_OFFEN = ["ben-and-jerry-s", "bowl", "fruehstueck", "katjes", "mate-tee", "praline", "proteinriegel", "schokoriegel"];
 
 // Seiten nach Regel 4 (Herstellerwerte je 100 g, Stückgewicht geschätzt)
 const STUECKGEWICHT_GESCHAETZT = new Set(["celebrations", "ferrero-kuesschen", "fritt", "gustavo-gusto-margherita", "gustavo-gusto-pizza", "heisse-tasse", "iglo-backfisch", "leibniz-butterkeks", "lidl-ciabatta", "lion", "maggi", "maoam", "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mentos", "milka-noisette", "milka-schokolade", "mon-cheri", "neuburger", "nordsee-backfisch-baguette", "ritter-sport", "schogetten", "smarties", "tuc", "tuc-cracker", "tuc-kekse"]);
@@ -112,7 +126,7 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 906, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 910, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
 test("jedes source-Feld nennt FDC, eine Herstellerangabe oder ein Händler-Etikett", () => {
@@ -154,7 +168,30 @@ test("Seiten mit einem FDC-Eintrag als Quelle passen auf 5 % zu diesem Eintrag",
     geprueft++;
   }
   assert.deepEqual(abweichungen, []);
-  assert.ok(geprueft >= 585, "nur " + geprueft + " Seiten geprüft");
+  assert.ok(geprueft >= 589, "nur " + geprueft + " Seiten geprüft");
+});
+
+test("Sammelseiten: Werte am Beispiel eines typischen Lebensmittels mit eigenem FDC-Eintrag und eigener Seite", () => {
+  assert.deepEqual(alle.filter(({ food }) => food.beispiel != null).map(({ slug }) => slug).sort(), Object.keys(SAMMELSEITEN).sort());
+  for (const [slug, { name, slug: vertreter, fdcId }] of Object.entries(SAMMELSEITEN)) {
+    const food = seiten.get(slug);
+    const e = eintraege[String(fdcId)];
+    assert.ok(e, slug + ": FDC " + fdcId + " fehlt in der Referenz");
+    assert.deepEqual(food.beispiel, { name, slug: vertreter }, slug);
+    assert.equal(food.source, "USDA FoodData Central, FDC-ID " + fdcId + " (" + e.beschreibung + "), Werte je 100 g; allgemeine Seite, Werte am Beispiel " + name, slug);
+    assert.equal(food.hersteller, undefined, slug + ": Herstellerangabe");
+    assert.equal(food.rezept, undefined, slug + ": Rezept");
+    // Der Vertreter ist eine belegte Seite mit demselben FDC-Eintrag, und beide zeigen dieselben Werte je 100 g.
+    const v = seiten.get(vertreter);
+    assert.ok(v && !OFFEN.has(vertreter) && istFdc(v) && !istRezept(v) && v.beispiel == null, slug + ": Seite " + vertreter + " ohne eigenen FDC-Eintrag");
+    assert.deepEqual(fdcIds(v.source), [fdcId], slug + ": Seite " + vertreter + " mit anderem FDC-Eintrag");
+    for (const k of ["calories_per_100g", "protein_per_100g", "carbs_per_100g", "fat_per_100g", "fiber_per_100g"]) {
+      assert.equal(food.overview[k], v.overview[k], slug + ": " + k + " anders als auf " + vertreter);
+    }
+    // Erste Variante ist der Vertreter selbst, jede andere Sorte nennt ihre Bestandteile.
+    assert.deepEqual(food.variants.map((x) => Array.isArray(x.basis) && x.basis.length > 0), food.variants.map((_, i) => i > 0), slug + ": Varianten");
+  }
+  for (const slug of SAMMELSEITEN_OFFEN) assert.ok(OFFEN.has(slug) && seiten.get(slug).beispiel == null, slug);
 });
 
 test("Rezeptrechnungen: Werte je 100 g folgen aus den Zutaten", () => {
@@ -444,7 +481,6 @@ test("Vergleiche offener Seiten mit Bestandteilen folgen aus deren Werten", () =
   assert.deepEqual(abweichungen, []);
   for (const [slug, name] of [
     ["campari", "Aperol Spritz (100 ml)"],
-    ["kaese", "Quark 20%"],
     ["proteinriegel", "Quark 500g"],
     ["smirnoff-ice", "Aperol Spritz (Flasche, 200 ml)"],
   ]) {

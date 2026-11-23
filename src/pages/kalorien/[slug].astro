@@ -77,6 +77,9 @@ const rezeptHerstellerangaben = (food.rezept?.zutaten ?? [])
     hersteller: allFoodsBySlug[z.slug].hersteller,
   }));
 
+// Sammelseite mit Werten am Beispiel eines typischen Lebensmittels: Name seiner Seite für den Link
+const beispielSeite = food.beispiel ? allFoodsBySlug[food.beispiel.slug].name : undefined;
+
 const seo = {
   title: food.seo.title,
   description: food.seo.description,
@@ -283,5 +286,6 @@ const authorPersonSchema = {
     relatedArticles={relatedArticles}
     foodSpecificCalculators={foodSpecificCalculators}
     rezeptHerstellerangaben={rezeptHerstellerangaben}
+    beispielSeite={beispielSeite}
   />
 </Layout>
