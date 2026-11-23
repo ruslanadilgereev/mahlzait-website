@@ -3,9 +3,16 @@
   "name": "TUC",
   "emoji": "🍘",
   "category": "supermarkt",
+  "source": "Herstellerangabe Mondelez (TUC), TUC Original (https://www.tuc.eu/produkte_de/, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mondelez (TUC)",
+    "produkt": "TUC Original",
+    "url": "https://www.tuc.eu/produkte_de/",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "TUC Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat TUC? 100g TUC Original haben 479 kcal, ein Cracker ca. 14 kcal. Nährwerte pro Portion & Packung plus Snack-Tipps.",
+    "description": "Wie viele Kalorien hat TUC? 100 g TUC Original haben 482 kcal, ein Cracker (ca. 3 g) rund 14 kcal. Nährwerte pro Portion & Packung plus Snack-Tipps.",
     "keywords": [
       "tuc kalorien",
       "tuc kcal",
@@ -17,96 +24,113 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 479,
-    "protein_per_100g": 8.4,
+    "calories_per_100g": 482,
+    "protein_per_100g": 8.3,
     "carbs_per_100g": 67,
     "fat_per_100g": 19,
     "fiber_per_100g": 2.4,
     "typical_portion_g": 25,
-    "typical_portion_name": "Snack-Portion (ca. 8 Cracker)"
+    "typical_portion_name": "Snack-Portion (25 g, ca. 8 Cracker)"
   },
   "variants": [
     {
-      "name": "1 Cracker (3g)",
+      "name": "1 Cracker (ca. 3 g)",
       "portion_g": 3,
       "calories": 14,
       "protein": 0,
       "carbs": 2,
-      "fat": 1
+      "fat": 1,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Snack-Portion (25g, ca. 8 Cracker)",
+      "name": "Snack-Portion (25 g, ca. 8 Cracker)",
       "portion_g": 25,
-      "calories": 120,
+      "calories": 121,
       "protein": 2,
       "carbs": 17,
       "fat": 5,
       "tip": "Standard"
     },
     {
-      "name": "Mini-Packung (30g)",
+      "name": "1 Portion laut Hersteller (30 g)",
       "portion_g": 30,
-      "calories": 144,
-      "protein": 3,
+      "calories": 145,
+      "protein": 2,
       "carbs": 20,
       "fat": 6
     },
     {
-      "name": "Halbe Packung (50g)",
+      "name": "50 g",
       "portion_g": 50,
-      "calories": 240,
+      "calories": 241,
       "protein": 4,
       "carbs": 34,
       "fat": 10
     },
     {
-      "name": "Ganze Packung (100g)",
+      "name": "100 g",
       "portion_g": 100,
-      "calories": 479,
+      "calories": 482,
       "protein": 8,
       "carbs": 67,
       "fat": 19
-    },
-    {
-      "name": "Große Packung (250g)",
-      "portion_g": 250,
-      "calories": 1198,
-      "protein": 21,
-      "carbs": 168,
-      "fat": 48
     }
   ],
   "comparison": [
     {
-      "name": "Cracker",
-      "calories": 120,
-      "emoji": "🍘"
+      "name": "Cracker (25 g)",
+      "calories": 128,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "cracker",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Salzstangen",
-      "calories": 95,
-      "emoji": "🥨"
+      "name": "Salzstangen (25 g)",
+      "calories": 96,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "salzstangen",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Chips",
-      "calories": 134,
-      "emoji": "🍟"
+      "name": "Chips (25 g)",
+      "calories": 133,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Reiswaffeln",
-      "calories": 95,
-      "emoji": "🍘"
+      "name": "Reiswaffeln (25 g)",
+      "calories": 97,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "reiswaffeln",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion bewusst abteilen",
-      "text": "Eine ganze 100g-Packung TUC liefert 479 kcal. Wer eine Snack-Portion von 25g (rund 8 Cracker) abteilt, bleibt bei etwa 120 kcal.",
+      "text": "100 g TUC liefern 482 kcal. Wer eine Snack-Portion von 25 g (rund 8 Cracker) abteilt, bleibt bei etwa 121 kcal.",
       "icon": "🤏"
     },
     {
       "title": "Fettgehalt im Blick",
-      "text": "Mit 19g Fett pro 100g sind TUC vergleichsweise fettreich. Die Cracker sind deshalb energiedicht und sättigen pro Kalorie weniger als Gemüse oder Obst.",
+      "text": "Mit 19 g Fett pro 100 g sind TUC vergleichsweise fettreich. Die Cracker sind deshalb energiedicht und sättigen pro Kalorie weniger als Gemüse oder Obst.",
       "icon": "🧈"
     },
     {
@@ -116,7 +140,7 @@
     },
     {
       "title": "Salzgehalt beachten",
-      "text": "Mit 1,7g Salz pro 100g zählen TUC zu den salzigeren Knabbereien. Bei salzarmer Ernährung lieber kleine Mengen wählen.",
+      "text": "Mit 1,7 g Salz pro 100 g zählen TUC zu den salzigeren Knabbereien. Bei salzarmer Ernährung lieber kleine Mengen wählen.",
       "icon": "🧂"
     },
     {
@@ -128,23 +152,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat TUC?",
-      "answer": "100g TUC Original haben 479 kcal. Eine Snack-Portion von 25g (rund 8 Cracker) liefert etwa 120 kcal, ein einzelner Cracker ungefähr 14 kcal."
+      "answer": "100 g TUC Original haben laut Hersteller 482 kcal. Eine Snack-Portion von 25 g (rund 8 Cracker) liefert etwa 121 kcal, die Herstellerportion von 30 g 145 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein TUC Cracker?",
-      "answer": "Ein einzelner TUC Cracker wiegt rund 3g und hat etwa 14 kcal."
+      "answer": "Ein einzelner TUC Cracker wiegt ca. 3 g (Stückgewicht nicht vom Hersteller angegeben) und hat etwa 14 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben TUC?",
-      "answer": "TUC Original enthalten 67g Kohlenhydrate pro 100g, davon 7,1g Zucker. Eine 25g-Portion kommt auf etwa 17g Kohlenhydrate."
+      "answer": "TUC Original enthalten 67 g Kohlenhydrate pro 100 g, davon 7,1 g Zucker. Eine 25-g-Portion kommt auf etwa 17 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in TUC?",
-      "answer": "TUC liefern 8,4g Eiweiß pro 100g. Das ist für ein Salzgebäck moderat, deckt aber keinen nennenswerten Eiweißbedarf."
+      "answer": "TUC liefern 8,3 g Eiweiß pro 100 g. Das ist für ein Salzgebäck moderat, deckt aber keinen nennenswerten Eiweißbedarf."
     },
     {
       "question": "Sind TUC zum Abnehmen geeignet?",
-      "answer": "TUC sind mit 479 kcal pro 100g energiedicht und fettreich. In kleinen, abgewogenen Portionen passen sie in eine Diät, eignen sich aber nicht als sättigender Hauptsnack."
+      "answer": "TUC sind mit 482 kcal pro 100 g energiedicht und fettreich. In kleinen, abgewogenen Portionen passen sie in eine Diät, eignen sich aber nicht als sättigender Hauptsnack."
     },
     {
       "question": "Sind TUC gesund?",

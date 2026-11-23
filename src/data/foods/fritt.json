@@ -3,9 +3,16 @@
   "name": "Fritt",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe August Storck, FRITT Kaustreifen Frucht (https://www.fritt.de/produkte/frucht/, abgerufen am 23.11.2026), Werte je 100 g; gleiche Nährwerttabelle für alle Fruchtsorten (Wildberry, Orange, Himbeere, Zitrone, Erdbeere, Kirsche)",
+  "hersteller": {
+    "name": "August Storck",
+    "produkt": "FRITT Kaustreifen Frucht",
+    "url": "https://www.fritt.de/produkte/frucht/",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Fritt Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Fritt? Ein Kaubonbon (6g) hat ca. 23 kcal, 100g ca. 386 kcal. Nährwerte pro Stück & Päckchen plus Tipps zum Naschen.",
+    "description": "Wie viele Kalorien hat Fritt? Ein Kaubonbon (ca. 6 g) hat rund 24 kcal, 100 g haben 401 kcal. Nährwerte pro Stück & Päckchen plus Tipps zum Naschen.",
     "keywords": [
       "fritt kalorien",
       "fritt kcal",
@@ -17,101 +24,130 @@
   },
   "overview": {
     "calories_per_100g": 401,
-    "protein_per_100g": 2.0,
-    "carbs_per_100g": 80,
-    "fat_per_100g": 6.5,
-    "fiber_per_100g": 0,
+    "protein_per_100g": 2,
+    "carbs_per_100g": 79,
+    "fat_per_100g": 8.5,
+    "fiber_per_100g": null,
     "typical_portion_g": 6,
-    "typical_portion_name": "1 Kaubonbon (6g)"
+    "typical_portion_name": "1 Kaubonbon (ca. 6 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Kaubonbon (6g)",
+      "name": "1 Kaubonbon (ca. 6 g)",
       "portion_g": 6,
       "calories": 24,
       "protein": 0,
       "carbs": 5,
-      "fat": 0,
-      "tip": "Standard"
+      "fat": 1,
+      "tip": "Standard",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "2 Kaubonbons (12g)",
+      "name": "2 Kaubonbons (ca. 12 g)",
       "portion_g": 12,
       "calories": 48,
       "protein": 0,
-      "carbs": 10,
-      "fat": 1
+      "carbs": 9,
+      "fat": 1,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "5 Kaubonbons (30g)",
+      "name": "5 Kaubonbons (ca. 30 g)",
       "portion_g": 30,
       "calories": 120,
-      "protein": 0,
+      "protein": 1,
       "carbs": 24,
-      "fat": 2
+      "fat": 3,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Halbes Päckchen (35g)",
+      "name": "Halbes Päckchen (ca. 35 g)",
       "portion_g": 35,
       "calories": 140,
-      "protein": 0,
+      "protein": 1,
       "carbs": 28,
-      "fat": 2
+      "fat": 3,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Ganzes Päckchen (70g)",
+      "name": "Ganzes Päckchen (ca. 70 g)",
       "portion_g": 70,
       "calories": 281,
-      "protein": 0,
-      "carbs": 56,
-      "fat": 5,
-      "tip": "Ganze Packung"
+      "protein": 1,
+      "carbs": 55,
+      "fat": 6,
+      "tip": "Ganze Packung",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "100g Fritt",
+      "name": "100 g Fritt",
       "portion_g": 100,
       "calories": 401,
-      "protein": 0,
-      "carbs": 80,
-      "fat": 7
+      "protein": 2,
+      "carbs": 79,
+      "fat": 9
     }
   ],
   "comparison": [
     {
-      "name": "Maoam (1 Stück)",
-      "calories": 24,
-      "emoji": "🍬"
+      "name": "Maoam Stripes (1 Stück, ca. 5,1 g)",
+      "calories": 21,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "maoam-stripes",
+          "variante": "1 Stück (ca. 5,1 g)"
+        }
+      ]
     },
     {
-      "name": "Haribo (1 Bärchen)",
+      "name": "Haribo Goldbär (1 Stück, ca. 2 g)",
+      "calories": 7,
+      "emoji": "🧸",
+      "basis": [
+        {
+          "slug": "haribo",
+          "variante": "1 Goldbär (ca. 2g)"
+        }
+      ]
+    },
+    {
+      "name": "Mentos (1 Dragee, ca. 2,7 g)",
       "calories": 10,
-      "emoji": "🐻"
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "mentos",
+          "variante": "1 Dragee (ca. 2,7 g)"
+        }
+      ]
     },
     {
-      "name": "Mentos (1 Dragee)",
-      "calories": 11,
-      "emoji": "⚪"
-    },
-    {
-      "name": "Karamell-Bonbon (1 Stück)",
-      "calories": 20,
-      "emoji": "🟤"
+      "name": "Karamell-Bonbon (1 Stück, 8 g)",
+      "calories": 31,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "karamell-bonbons"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein portionieren",
-      "text": "Ein einzelnes Fritt hat nur rund 23 kcal. Wer bewusst Stück für Stück nascht statt das Päckchen auf einmal zu leeren, behält die Kalorien gut im Blick.",
+      "text": "Ein einzelnes Fritt hat nur rund 24 kcal. Wer bewusst Stück für Stück nascht statt das Päckchen auf einmal zu leeren, behält die Kalorien gut im Blick.",
       "icon": "🍬"
     },
     {
       "title": "Viel Zucker beachten",
-      "text": "Fritt besteht zu etwa 80 Prozent aus Kohlenhydraten, überwiegend Zucker. Als reine Süßigkeit liefert es schnelle Energie, aber kaum Nährstoffe.",
+      "text": "Fritt besteht zu 79 Prozent aus Kohlenhydraten, davon 50 g Zucker pro 100 g. Als reine Süßigkeit liefert es schnelle Energie, aber kaum Nährstoffe.",
       "icon": "🍭"
     },
     {
       "title": "Kein Sattmacher",
-      "text": "Da Fritt weder nennenswert Eiweiß noch Ballaststoffe enthält, sättigt es kaum. Als Snack zwischendurch lieber bewusst genießen statt nebenbei wegzunaschen.",
+      "text": "Mit 2 g Eiweiß pro 100 g sättigt Fritt kaum. Als Snack zwischendurch lieber bewusst genießen statt nebenbei wegzunaschen.",
       "icon": "🤏"
     },
     {
@@ -128,27 +164,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Fritt?",
-      "answer": "Ein einzelnes Fritt Kaubonbon (ca. 6g) hat rund 23 kcal. 100g Fritt enthalten etwa 386 kcal."
+      "answer": "Ein einzelnes Fritt Kaubonbon wiegt ca. 6 g (Stückgewicht nicht vom Hersteller angegeben) und hat damit rund 24 kcal. 100 g Fritt enthalten laut Hersteller 401 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein ganzes Päckchen Fritt?",
-      "answer": "Ein typisches Päckchen Fritt mit etwa 70g liefert rund 270 kcal."
+      "answer": "In einer Packung Fritt Wildberry stecken laut Hersteller 6 Kaustreifen. Bei ca. 70 g je Päckchen (Gewicht nicht vom Hersteller angegeben) sind das rund 281 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Fritt?",
-      "answer": "Fritt besteht zu rund 80 Prozent aus Kohlenhydraten, davon der Großteil Zucker. Pro Kaubonbon sind das etwa 5g Kohlenhydrate."
+      "answer": "Fritt enthält laut Hersteller 50 g Zucker pro 100 g, bei insgesamt 79 g Kohlenhydraten. Ein Kaubonbon (ca. 6 g) liefert damit rund 3 g Zucker."
     },
     {
       "question": "Hat Fritt viel Eiweiß?",
-      "answer": "Nein. Fritt enthält mit etwa 0,3g pro 100g praktisch kein Eiweiß und eignet sich daher nicht als Eiweißquelle."
+      "answer": "Nein. Fritt enthält mit 2 g pro 100 g nur wenig Eiweiß und eignet sich daher nicht als Eiweißquelle."
     },
     {
       "question": "Ist Fritt zum Abnehmen geeignet?",
-      "answer": "Fritt ist eine zuckerreiche Süßigkeit ohne sättigende Ballaststoffe. In einer Diät ist es nur in kleinen Mengen sinnvoll, da es viele Kalorien auf wenig Volumen liefert."
+      "answer": "Fritt ist eine zuckerreiche Süßigkeit und sättigt kaum. In einer Diät ist es nur in kleinen Mengen sinnvoll, da es viele Kalorien auf wenig Volumen liefert."
     },
     {
       "question": "Ist Fritt vegan?",
-      "answer": "Die klassischen Fritt Kaubonbons enthalten in der Regel keine tierische Gelatine. Wer sicher gehen will, prüft die Zutatenliste auf der aktuellen Packung, da Rezepturen sich ändern können."
+      "answer": "Dazu macht fritt.de keine Angabe. Ob eine Sorte vegan ist, zeigt die Zutatenliste auf der aktuellen Packung, da Rezepturen sich ändern können."
     }
   ],
   "related_foods": [

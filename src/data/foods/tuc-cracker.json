@@ -3,9 +3,16 @@
   "name": "TUC Cracker",
   "emoji": "🍘",
   "category": "supermarkt",
+  "source": "Herstellerangabe Mondelez (TUC), TUC Original (https://www.tuc.eu/produkte_de/, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mondelez (TUC)",
+    "produkt": "TUC Original",
+    "url": "https://www.tuc.eu/produkte_de/",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "TUC Cracker Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat TUC Cracker? 100g haben 487 kcal, ein Cracker ca. 15 kcal. Nährwerte, Portionen & Tipps für die salzigen Cracker im Überblick.",
+    "description": "Wie viele Kalorien hat TUC Cracker? 100 g haben 482 kcal, ein Cracker (ca. 3 g) rund 14 kcal. Nährwerte, Portionen & Tipps für die salzigen Cracker im Überblick.",
     "keywords": [
       "tuc cracker kalorien",
       "tuc cracker kcal",
@@ -17,97 +24,123 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 487,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 63,
-    "fat_per_100g": 21,
-    "fiber_per_100g": 2.7,
+    "calories_per_100g": 482,
+    "protein_per_100g": 8.3,
+    "carbs_per_100g": 67,
+    "fat_per_100g": 19,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 25,
-    "typical_portion_name": "kleine Portion (ca. 8 Cracker)"
+    "typical_portion_name": "Kleine Portion (25 g, ca. 8 Cracker)"
   },
   "variants": [
     {
-      "name": "1 Cracker (3g)",
+      "name": "1 Cracker (ca. 3 g)",
       "portion_g": 3,
-      "calories": 15,
-      "protein": 0.3,
-      "carbs": 1.9,
-      "fat": 0.6
+      "calories": 14,
+      "protein": 0.2,
+      "carbs": 2,
+      "fat": 0.6,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "5 Cracker (15g)",
+      "name": "5 Cracker (ca. 15 g)",
       "portion_g": 15,
-      "calories": 73,
-      "protein": 1.4,
-      "carbs": 9.4,
-      "fat": 3.2
+      "calories": 72,
+      "protein": 1.2,
+      "carbs": 10,
+      "fat": 2.9,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Kleine Portion (25g)",
+      "name": "Kleine Portion (25 g, ca. 8 Cracker)",
       "portion_g": 25,
-      "calories": 122,
-      "protein": 2.2,
-      "carbs": 15.8,
-      "fat": 5.2,
+      "calories": 121,
+      "protein": 2.1,
+      "carbs": 16.8,
+      "fat": 4.8,
       "tip": "Standard-Snackportion, ca. 8 Cracker"
     },
     {
-      "name": "Mini-Packung (37,5g)",
-      "portion_g": 37.5,
-      "calories": 183,
-      "protein": 3.4,
-      "carbs": 23.6,
-      "fat": 7.9
+      "name": "1 Portion laut Hersteller (30 g)",
+      "portion_g": 30,
+      "calories": 145,
+      "protein": 2.5,
+      "carbs": 20.1,
+      "fat": 5.7
     },
     {
-      "name": "Halbe Packung (50g)",
+      "name": "50 g",
       "portion_g": 50,
-      "calories": 244,
-      "protein": 4.5,
-      "carbs": 31.5,
-      "fat": 10.5
+      "calories": 241,
+      "protein": 4.2,
+      "carbs": 33.5,
+      "fat": 9.5
     },
     {
-      "name": "Ganze Packung (100g)",
+      "name": "100 g",
       "portion_g": 100,
-      "calories": 487,
-      "protein": 9,
-      "carbs": 63,
-      "fat": 21,
+      "calories": 482,
+      "protein": 8.3,
+      "carbs": 67,
+      "fat": 19,
       "tip": "Komplette Standardpackung"
     }
   ],
   "comparison": [
     {
-      "name": "Salzstangen (25g)",
-      "calories": 88,
-      "emoji": "🥨"
+      "name": "Salzstangen (25 g)",
+      "calories": 96,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "salzstangen",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Butterkeks (25g)",
-      "calories": 110,
-      "emoji": "🍪"
+      "name": "Butterkeks (25 g)",
+      "calories": 117,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "butterkeks",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Chips (25g)",
-      "calories": 134,
-      "emoji": "🥔"
+      "name": "Chips (25 g)",
+      "calories": 133,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Reiswaffeln (25g)",
-      "calories": 95,
-      "emoji": "🍘"
+      "name": "Reiswaffeln (25 g)",
+      "calories": 97,
+      "emoji": "🍘",
+      "basis": [
+        {
+          "slug": "reiswaffeln",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion bewusst abzählen",
-      "text": "Aus der Packung snackt man schnell zu viel. Lege dir vorab eine kleine Portion (ca. 8 Cracker, 25g) hin, das sind rund 122 kcal.",
+      "text": "Aus der Packung snackt man schnell zu viel. Lege dir vorab eine kleine Portion (25 g, ca. 8 Cracker) hin, das sind rund 121 kcal.",
       "icon": "🔢"
     },
     {
       "title": "Fett im Blick behalten",
-      "text": "Mit 21g Fett pro 100g sind TUC Cracker recht fettreich. Der Großteil der Kalorien stammt aus Fett und Kohlenhydraten, nicht aus Protein.",
+      "text": "Mit 19 g Fett pro 100 g sind TUC Cracker recht fettreich. Der Großteil der Kalorien stammt aus Fett und Kohlenhydraten, nicht aus Protein.",
       "icon": "🧈"
     },
     {
@@ -117,35 +150,35 @@
     },
     {
       "title": "Salzgehalt beachten",
-      "text": "TUC Cracker sind salzig und enthalten viel Natrium. Wer auf den Blutdruck achtet, sollte die Menge im Auge behalten und ungesalzene Alternativen prüfen.",
+      "text": "TUC Cracker sind mit 1,7 g Salz pro 100 g recht salzig. Wer auf den Blutdruck achtet, sollte die Menge im Auge behalten und ungesalzene Alternativen prüfen.",
       "icon": "🧂"
     },
     {
       "title": "Sättigender Vergleich",
-      "text": "25g TUC liefern 122 kcal und sättigen kaum. Eine vergleichbare Kalorienmenge aus Obst oder Joghurt hält durch Wasser und Ballaststoffe deutlich länger satt.",
+      "text": "25 g TUC liefern 121 kcal und sättigen kaum. Eine vergleichbare Kalorienmenge aus Obst oder Joghurt hält durch Wasser und Ballaststoffe deutlich länger satt.",
       "icon": "🍎"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat TUC Cracker?",
-      "answer": "100g TUC Cracker haben ca. 487 kcal. Ein einzelner Cracker (ca. 3g) liefert rund 15 kcal, eine kleine Portion von 25g etwa 122 kcal."
+      "answer": "100 g TUC Cracker (TUC Original) haben laut Hersteller 482 kcal. Ein einzelner Cracker (ca. 3 g) liefert rund 14 kcal, eine kleine Portion von 25 g etwa 121 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein einzelner TUC Cracker?",
-      "answer": "Ein TUC Cracker wiegt etwa 3g und hat rund 15 kcal. 10 Cracker kommen damit auf ca. 150 kcal."
+      "answer": "Ein TUC Cracker wiegt ca. 3 g (Stückgewicht nicht vom Hersteller angegeben) und hat rund 14 kcal. 5 Cracker kommen damit auf ca. 72 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben TUC Cracker?",
-      "answer": "Pro 100g enthalten TUC Cracker ca. 63g Kohlenhydrate. In einer kleinen Portion (25g) sind es etwa 16g."
+      "answer": "Pro 100 g enthalten TUC Cracker 67 g Kohlenhydrate, davon 7,1 g Zucker. In einer kleinen Portion (25 g) sind es etwa 17 g."
     },
     {
       "question": "Wie viel Eiweiß haben TUC Cracker?",
-      "answer": "TUC Cracker liefern etwa 9g Eiweiß pro 100g. Das ist für einen Snack moderat, der Hauptanteil der Kalorien stammt aus Kohlenhydraten und Fett."
+      "answer": "TUC Cracker liefern 8,3 g Eiweiß pro 100 g. Das ist für einen Snack moderat, der Hauptanteil der Kalorien stammt aus Kohlenhydraten und Fett."
     },
     {
       "question": "Sind TUC Cracker zum Abnehmen geeignet?",
-      "answer": "Mit 487 kcal pro 100g sind TUC Cracker kalorienreich und sättigen wenig. In kleinen, abgezählten Portionen sind sie okay, als Sattmacher zum Abnehmen eignen sie sich aber kaum."
+      "answer": "Mit 482 kcal pro 100 g sind TUC Cracker kalorienreich und sättigen wenig. In kleinen, abgezählten Portionen sind sie okay, als Sattmacher zum Abnehmen eignen sie sich aber kaum."
     },
     {
       "question": "Sind TUC Cracker gesund?",

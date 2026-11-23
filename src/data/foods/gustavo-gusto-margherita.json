@@ -3,9 +3,16 @@
   "name": "Gustavo Gusto Margherita",
   "emoji": "🍕",
   "category": "supermarkt",
+  "source": "Herstellerangabe Gustavo Gusto, Pizza Margherita (https://gustavo-gusto.de/naehrwerte-pizza/, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Gustavo Gusto",
+    "produkt": "Pizza Margherita",
+    "url": "https://gustavo-gusto.de/naehrwerte-pizza/",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Gustavo Gusto Margherita Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat die Gustavo Gusto Margherita? Eine ganze Pizza (410g) hat ca. 906 kcal, pro 100g sind es 221 kcal. Alle Nährwerte im Überblick.",
+    "description": "Wie viele Kalorien hat die Gustavo Gusto Margherita? Eine ganze Pizza (ca. 410 g) hat rund 865 kcal, pro 100 g sind es 211 kcal. Alle Nährwerte im Überblick.",
     "keywords": [
       "gustavo gusto margherita kalorien",
       "gustavo gusto margherita kcal",
@@ -15,90 +22,119 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 221,
-    "protein_per_100g": 9.8,
-    "carbs_per_100g": 28.8,
-    "fat_per_100g": 7.1,
+    "calories_per_100g": 211,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 27,
+    "fat_per_100g": 6.5,
     "fiber_per_100g": 2,
     "typical_portion_g": 205,
-    "typical_portion_name": "1/2 Pizza (205g)"
+    "typical_portion_name": "1/2 Pizza (ca. 205 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "Pro 100g",
+      "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 221,
-      "protein": 9.8,
-      "carbs": 28.8,
-      "fat": 7.1
+      "calories": 211,
+      "protein": 10,
+      "carbs": 27,
+      "fat": 6.5
     },
     {
-      "name": "1/4 Pizza (103g)",
+      "name": "1/4 Pizza (ca. 103 g)",
       "portion_g": 103,
-      "calories": 228,
-      "protein": 10.1,
-      "carbs": 29.7,
-      "fat": 7.3,
-      "tip": "Kleine Beilage zum Salat"
+      "calories": 217,
+      "protein": 10.3,
+      "carbs": 27.8,
+      "fat": 6.7,
+      "tip": "Kleine Beilage zum Salat",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "1/3 Pizza (137g)",
+      "name": "1/3 Pizza (ca. 137 g)",
       "portion_g": 137,
-      "calories": 303,
-      "protein": 13.4,
-      "carbs": 39.5,
-      "fat": 9.7
+      "calories": 289,
+      "protein": 13.7,
+      "carbs": 37,
+      "fat": 8.9,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "1/2 Pizza (205g)",
+      "name": "1/2 Pizza (ca. 205 g)",
       "portion_g": 205,
-      "calories": 453,
-      "protein": 20.1,
-      "carbs": 59,
-      "fat": 14.6,
-      "tip": "Standard-Portion"
+      "calories": 433,
+      "protein": 20.5,
+      "carbs": 55.4,
+      "fat": 13.3,
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Ganze Pizza (410g)",
+      "name": "Ganze Pizza (ca. 410 g)",
       "portion_g": 410,
-      "calories": 906,
-      "protein": 40.2,
-      "carbs": 118.1,
-      "fat": 29.1,
-      "tip": "Komplette Packung"
+      "calories": 865,
+      "protein": 41,
+      "carbs": 110.7,
+      "fat": 26.7,
+      "tip": "Komplette Packung",
+      "stueck_geschaetzt": true
     }
   ],
   "comparison": [
     {
-      "name": "Halbe Gustavo Gusto Margherita",
-      "calories": 453,
-      "emoji": "🍕"
+      "name": "TK-Pizza Margherita (halbe, 150 g)",
+      "calories": 402,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "fdcId": 170317,
+          "g": 150
+        }
+      ]
     },
     {
-      "name": "Tiefkühl-Pizza Margherita (halbe, Standard)",
-      "calories": 380,
-      "emoji": "🧊"
+      "name": "Pizza Salami Pizzeria (halbe, 175 g)",
+      "calories": 494,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami",
+          "variante": "Pizza Salami (halbe Pizza)"
+        }
+      ]
     },
     {
-      "name": "Pizza Salami (Lieferdienst, halbe)",
-      "calories": 560,
-      "emoji": "🍕"
+      "name": "Dr. Oetker Ristorante Salame (halbe, 160 g)",
+      "calories": 427,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "dr-oetker-pizza",
+          "variante": "Halbe Ristorante Salame (160g)"
+        }
+      ]
     },
     {
-      "name": "Döner",
+      "name": "Döner Kebab",
       "calories": 696,
-      "emoji": "🥙"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Halbe Pizza als Portion",
-      "text": "Eine halbe Gustavo Gusto Margherita (205g) liefert rund 453 kcal. In Kombination mit einem großen Beilagensalat wird daraus eine sättigende, ausgewogene Mahlzeit.",
+      "text": "Eine halbe Gustavo Gusto Margherita (ca. 205 g) liefert rund 433 kcal. In Kombination mit einem großen Beilagensalat wird daraus eine sättigende, ausgewogene Mahlzeit.",
       "icon": "🥗"
     },
     {
       "title": "Eiweiß durch Mozzarella",
-      "text": "Mit 9,8g Eiweiß pro 100g liefert die Margherita dank Mozzarella mehr Protein als viele andere Tiefkühlpizzen. Das unterstützt die Sättigung.",
+      "text": "Mit 10 g Eiweiß pro 100 g liefert die Margherita dank Mozzarella ordentlich Protein. Das unterstützt die Sättigung.",
       "icon": "🧀"
     },
     {
@@ -108,7 +144,7 @@
     },
     {
       "title": "Komplette Pizza im Blick behalten",
-      "text": "Eine ganze Margherita kommt auf rund 906 kcal. Wer abnehmen möchte, teilt die Pizza besser auf zwei Personen auf oder kombiniert sie mit Salat.",
+      "text": "Eine ganze Margherita (ca. 410 g) kommt auf rund 865 kcal. Wer abnehmen möchte, teilt die Pizza besser auf zwei Personen auf oder kombiniert sie mit Salat.",
       "icon": "⚖️"
     },
     {
@@ -120,27 +156,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine ganze Gustavo Gusto Margherita?",
-      "answer": "Eine ganze Gustavo Gusto Pizza Margherita (410g) hat rund 906 kcal. Pro 100g sind es etwa 221 kcal."
+      "answer": "Eine ganze Gustavo Gusto Pizza Margherita hat bei ca. 410 g (Pizzagewicht nicht vom Hersteller angegeben) rund 865 kcal. Pro 100 g sind es laut Hersteller 211 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine halbe Gustavo Gusto Margherita?",
-      "answer": "Eine halbe Pizza (205g) liefert ca. 453 kcal mit rund 20g Eiweiß, 59g Kohlenhydraten und 15g Fett."
+      "answer": "Eine halbe Pizza (ca. 205 g) liefert rund 433 kcal mit etwa 21 g Eiweiß, 55 g Kohlenhydraten und 13 g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat die Gustavo Gusto Margherita?",
-      "answer": "Pro 100g enthält die Margherita etwa 28,8g Kohlenhydrate. Eine ganze Pizza kommt damit auf rund 118g Kohlenhydrate, hauptsächlich aus dem Teig."
+      "answer": "Pro 100 g enthält die Margherita 27 g Kohlenhydrate. Eine ganze Pizza (ca. 410 g) kommt damit auf rund 111 g Kohlenhydrate, hauptsächlich aus dem Teig."
     },
     {
       "question": "Wie viel Protein hat die Gustavo Gusto Margherita?",
-      "answer": "Die Pizza liefert 9,8g Eiweiß pro 100g. Eine halbe Pizza enthält damit etwa 20g Protein, vor allem aus dem Mozzarella."
+      "answer": "Die Pizza liefert 10 g Eiweiß pro 100 g. Eine halbe Pizza (ca. 205 g) enthält damit etwa 21 g Protein, vor allem aus dem Mozzarella."
     },
     {
       "question": "Ist die Gustavo Gusto Margherita zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Eine halbe Pizza (453 kcal) lässt sich gut in eine kalorienbewusste Ernährung einbauen, besonders mit einem Salat als Beilage. Eine ganze Pizza ist mit 906 kcal allerdings recht kalorienreich."
+      "answer": "In Maßen ja. Eine halbe Pizza (rund 433 kcal) lässt sich gut in eine kalorienbewusste Ernährung einbauen, besonders mit einem Salat als Beilage. Eine ganze Pizza ist mit rund 865 kcal allerdings recht kalorienreich."
     },
     {
       "question": "Ist die Gustavo Gusto Margherita gesund?",
-      "answer": "Die Margherita ist eine eher schlichte Pizza mit Tomaten und Mozzarella und erhält den Nutri-Score C. Sie liefert ordentlich Eiweiß, aber auch viele Kohlenhydrate und Salz. Als gelegentliche Mahlzeit ist sie in Ordnung."
+      "answer": "Die Margherita ist eine eher schlichte Pizza mit Tomaten und Mozzarella. Sie liefert ordentlich Eiweiß, aber auch viele Kohlenhydrate und laut Hersteller 1,3 g Salz pro 100 g. Als gelegentliche Mahlzeit ist sie in Ordnung."
     }
   ],
   "related_foods": [

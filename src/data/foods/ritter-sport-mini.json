@@ -3,9 +3,16 @@
   "name": "Ritter Sport Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Alfred Ritter (RITTER SPORT), RITTER SPORT mini Alpenmilch (https://www.ritter-sport.com/de/produkte/alpenmilch-mini, abgerufen am 23.11.2026), Werte je 100 g; Werte aus der Nährwertdatenbank der Herstellerseite (Artikel A-369 „mini Alpenmilch“), Nettofüllmenge 16,67 g je Täfelchen laut Deklarationsdatei der Produktseite (https://irp.cdn-website.com/6cb74a62/files/uploaded/20220624_declarations.txt)",
+  "hersteller": {
+    "name": "Alfred Ritter (RITTER SPORT)",
+    "produkt": "RITTER SPORT mini Alpenmilch",
+    "url": "https://www.ritter-sport.com/de/produkte/alpenmilch-mini",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Ritter Sport Mini Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Ritter Sport Mini? Ein Täfelchen (16,67g) Alpenmilch hat ca. 92 kcal. Nährwerte pro 100g, alle Sorten & Tipps.",
+    "description": "Wie viele Kalorien hat ein Ritter Sport Mini? Ein Täfelchen Alpenmilch (16,67 g) hat rund 91 kcal. Nährwerte pro 100 g, Portionen & Tipps.",
     "keywords": [
       "ritter sport mini kalorien",
       "ritter sport mini kcal",
@@ -16,107 +23,102 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 556,
-    "protein_per_100g": 7.5,
-    "carbs_per_100g": 56,
-    "fat_per_100g": 32.5,
-    "fiber_per_100g": 2.4,
+    "calories_per_100g": 547,
+    "protein_per_100g": 8.2,
+    "carbs_per_100g": 54,
+    "fat_per_100g": 32,
+    "fiber_per_100g": null,
     "typical_portion_g": 16.67,
-    "typical_portion_name": "1 Täfelchen (16,67g)"
+    "typical_portion_name": "1 Täfelchen (16,67 g)"
   },
   "variants": [
     {
-      "name": "1 Täfelchen Alpenmilch (16,67g)",
+      "name": "1 Täfelchen Alpenmilch (16,67 g)",
       "portion_g": 16.67,
-      "calories": 93,
-      "protein": 1.3,
-      "carbs": 9.3,
-      "fat": 5.4,
+      "calories": 91,
+      "protein": 1.4,
+      "carbs": 9,
+      "fat": 5.3,
       "tip": "Standard - eines von 18 im Beutel"
     },
     {
-      "name": "2 Täfelchen (33g)",
-      "portion_g": 33,
-      "calories": 184,
-      "protein": 2.5,
-      "carbs": 18.5,
+      "name": "2 Täfelchen (33,34 g)",
+      "portion_g": 33.34,
+      "calories": 182,
+      "protein": 2.7,
+      "carbs": 18,
       "fat": 10.7
     },
     {
-      "name": "3 Täfelchen (50g)",
+      "name": "3 Täfelchen (50 g)",
       "portion_g": 50,
-      "calories": 278,
-      "protein": 3.8,
-      "carbs": 28,
-      "fat": 16.3
+      "calories": 274,
+      "protein": 4.1,
+      "carbs": 27,
+      "fat": 16
     },
     {
-      "name": "Beutel Alpenmilch (150g, 9 Stück)",
+      "name": "9 Täfelchen (150 g)",
       "portion_g": 150,
-      "calories": 834,
-      "protein": 11.3,
-      "carbs": 84,
-      "fat": 48.8,
+      "calories": 821,
+      "protein": 12.3,
+      "carbs": 81,
+      "fat": 48,
       "tip": "Ganzer Mini-Beutel"
-    },
-    {
-      "name": "1 Täfelchen Marzipan (16,67g)",
-      "portion_g": 16.67,
-      "calories": 81,
-      "protein": 1,
-      "carbs": 9.7,
-      "fat": 4.3,
-      "tip": "Etwas weniger Fett als Alpenmilch"
-    },
-    {
-      "name": "1 Täfelchen Knusperflakes (16,67g)",
-      "portion_g": 16.67,
-      "calories": 91,
-      "protein": 1.2,
-      "carbs": 9.7,
-      "fat": 5.2
-    },
-    {
-      "name": "1 Täfelchen Halbbitter (16,67g)",
-      "portion_g": 16.67,
-      "calories": 90,
-      "protein": 1.3,
-      "carbs": 8,
-      "fat": 5.8,
-      "tip": "Mehr Kakao, weniger Zucker"
     }
   ],
   "comparison": [
     {
-      "name": "1 Täfelchen Ritter Sport Mini",
-      "calories": 93,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (16,67 g)",
+      "calories": 89,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 16.67
+        }
+      ]
     },
     {
-      "name": "1 Stück Tafelschokolade (16,67g)",
-      "calories": 90,
-      "emoji": "🍫"
+      "name": "1 Kinderriegel (21 g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel"
+        }
+      ]
     },
     {
-      "name": "1 Praline",
-      "calories": 70,
-      "emoji": "🍬"
+      "name": "1 duplo (18,2 g)",
+      "calories": 100,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "duplo"
+        }
+      ]
     },
     {
-      "name": "1 Riegel Kinderriegel",
-      "calories": 115,
-      "emoji": "🍫"
+      "name": "1 Hanuta (22 g)",
+      "calories": 119,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "hanuta"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eingebaute Portionskontrolle",
-      "text": "Ein einzelnes Mini-Täfelchen hat mit rund 93 kcal eine klar abgegrenzte Portion. Wer bewusst nur ein Stück nimmt und den Beutel weglegt, bleibt deutlich unter der Kalorienmenge einer ganzen Tafel.",
+      "text": "Ein einzelnes Mini-Täfelchen hat mit rund 91 kcal eine klar abgegrenzte Portion. Wer bewusst nur ein Stück nimmt und den Beutel weglegt, bleibt deutlich unter der Kalorienmenge einer ganzen Tafel.",
       "icon": "🍫"
     },
     {
       "title": "Sorte clever wählen",
-      "text": "Die Marzipan-Sorte hat mit etwa 81 kcal pro Täfelchen weniger als die Alpenmilch-Variante. Auch Halbbitter punktet mit mehr Kakaoanteil und etwas weniger Zucker.",
+      "text": "Die Sorte Marzipan hat laut Ritter Sport 499 kcal pro 100 g, ein Täfelchen also rund 83 kcal statt 91 kcal bei Alpenmilch. Auch Knusperflakes liegt mit rund 86 kcal je Täfelchen darunter.",
       "icon": "🔄"
     },
     {
@@ -126,7 +128,7 @@
     },
     {
       "title": "Achtung Energiedichte",
-      "text": "Mit 556 kcal pro 100g und über 32g Fett gehört Schokolade zu den energiedichtesten Lebensmitteln. In einer Diät zählt jedes Täfelchen sichtbar mit.",
+      "text": "Mit 547 kcal pro 100 g und 32 g Fett gehört Schokolade zu den energiedichtesten Lebensmitteln. In einer Diät zählt jedes Täfelchen sichtbar mit.",
       "icon": "⚠️"
     },
     {
@@ -138,23 +140,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Ritter Sport Mini?",
-      "answer": "Ein einzelnes Mini-Täfelchen Alpenmilch (16,67g) hat etwa 93 kcal. Pro 100g sind es rund 556 kcal."
+      "answer": "Ein Mini-Täfelchen Alpenmilch wiegt laut Hersteller 16,67 g und hat rund 91 kcal. Pro 100 g sind es 547 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein ganzer Beutel Ritter Sport Mini?",
-      "answer": "Ein 150g-Beutel Alpenmilch (9 Täfelchen) liefert ca. 834 kcal. Beim Sortiment-Beutel mit 18 kleineren Täfelchen verteilt sich die Menge entsprechend auf mehr Stücke."
+      "answer": "In einem 150-g-Beutel stecken laut Hersteller 9 Täfelchen à 16,67 g. Als Alpenmilch gerechnet sind das rund 821 kcal, bei gemischten Beuteln hängen die Werte von den Sorten ab."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in Ritter Sport Mini?",
-      "answer": "Alpenmilch enthält rund 56g Kohlenhydrate pro 100g, davon der Großteil Zucker. Ein Mini-Täfelchen kommt damit auf etwa 9g Kohlenhydrate."
+      "answer": "Alpenmilch enthält 54 g Kohlenhydrate pro 100 g, davon 53 g Zucker. Ein Mini-Täfelchen kommt damit auf etwa 9 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Ritter Sport Mini?",
-      "answer": "Mit etwa 7,5g Eiweiß pro 100g ist der Proteingehalt gering. Ein Täfelchen liefert nur rund 1,3g - Schokolade ist keine relevante Eiweißquelle."
+      "answer": "Mit 8,2 g Eiweiß pro 100 g ist der Proteingehalt gering. Ein Täfelchen liefert nur rund 1,4 g, Schokolade ist also keine relevante Eiweißquelle."
     },
     {
       "question": "Kann man Ritter Sport Mini beim Abnehmen essen?",
-      "answer": "In Maßen ja. Ein Mini-Täfelchen mit etwa 93 kcal lässt sich gut ins Kalorienbudget einplanen. Wegen der hohen Energiedichte sollte es aber bei ein bis zwei Stück bleiben."
+      "answer": "In Maßen ja. Ein Mini-Täfelchen mit etwa 91 kcal lässt sich gut ins Kalorienbudget einplanen. Wegen der hohen Energiedichte sollte es aber bei ein bis zwei Stück bleiben."
     },
     {
       "question": "Ist Ritter Sport Mini gesund?",

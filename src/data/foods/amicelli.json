@@ -3,9 +3,16 @@
   "name": "Amicelli",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Alfred Ritter (Amicelli), Amicelli Haselnuss (https://www.amicelli.com/de, abgerufen am 23.11.2026), Werte je 100 g; Deklarationstabelle der Herstellerseite (Haselnuss je 100 g und je Portion 12,5 g)",
+  "hersteller": {
+    "name": "Alfred Ritter (Amicelli)",
+    "produkt": "Amicelli Haselnuss",
+    "url": "https://www.amicelli.com/de",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Amicelli Kalorien: Nährwerte, Stück & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Amicelli? Ein Röllchen (12,5g) hat ca. 64 kcal, 100g rund 512 kcal. Alle Nährwerte, Portionen im Vergleich und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Amicelli? Ein Röllchen (12,5 g) hat 64 kcal, 100 g haben 512 kcal. Alle Nährwerte, Portionen im Vergleich und Diät-Tipps.",
     "keywords": [
       "amicelli kalorien",
       "amicelli kcal",
@@ -18,16 +25,16 @@
   },
   "overview": {
     "calories_per_100g": 512,
-    "protein_per_100g": 6.4,
-    "carbs_per_100g": 62.4,
-    "fat_per_100g": 26.4,
-    "fiber_per_100g": 2.4,
+    "protein_per_100g": 6.1,
+    "carbs_per_100g": 62,
+    "fat_per_100g": 26,
+    "fiber_per_100g": null,
     "typical_portion_g": 12.5,
-    "typical_portion_name": "1 Röllchen (12,5g)"
+    "typical_portion_name": "1 Röllchen (12,5 g)"
   },
   "variants": [
     {
-      "name": "1 Röllchen (12,5g)",
+      "name": "1 Röllchen (12,5 g)",
       "portion_g": 12.5,
       "calories": 64,
       "protein": 0.8,
@@ -36,86 +43,102 @@
       "tip": "Standard"
     },
     {
-      "name": "2 Röllchen (25g)",
+      "name": "Doppelröllchen (2 Röllchen, 25 g)",
       "portion_g": 25,
       "calories": 128,
-      "protein": 1.6,
-      "carbs": 15.6,
-      "fat": 6.6
+      "protein": 1.5,
+      "carbs": 15.5,
+      "fat": 6.5
     },
     {
-      "name": "3 Röllchen (37,5g)",
+      "name": "3 Röllchen (37,5 g)",
       "portion_g": 37.5,
       "calories": 192,
-      "protein": 2.4,
-      "carbs": 23.4,
-      "fat": 9.9
+      "protein": 2.3,
+      "carbs": 23.3,
+      "fat": 9.8
     },
     {
-      "name": "Kleine Handvoll (50g)",
+      "name": "4 Röllchen (50 g)",
       "portion_g": 50,
       "calories": 256,
-      "protein": 3.2,
-      "carbs": 31.2,
-      "fat": 13.2
+      "protein": 3.1,
+      "carbs": 31,
+      "fat": 13
     },
     {
-      "name": "Halbe Packung (62,5g)",
-      "portion_g": 62.5,
-      "calories": 320,
-      "protein": 4,
-      "carbs": 39,
-      "fat": 16.5
-    },
-    {
-      "name": "Ganze Packung (125g)",
-      "portion_g": 125,
-      "calories": 640,
-      "protein": 8,
-      "carbs": 78,
-      "fat": 33,
+      "name": "12 Röllchen (150 g, Inhalt einer Box)",
+      "portion_g": 150,
+      "calories": 768,
+      "protein": 9.1,
+      "carbs": 93,
+      "fat": 39,
       "tip": "Standardpackung"
     },
     {
-      "name": "100g",
+      "name": "100 g",
       "portion_g": 100,
       "calories": 512,
-      "protein": 6.4,
-      "carbs": 62.4,
-      "fat": 26.4
+      "protein": 6.1,
+      "carbs": 62,
+      "fat": 26
     }
   ],
   "comparison": [
     {
-      "name": "Hanuta",
-      "calories": 561,
-      "emoji": "🍫"
+      "name": "Hanuta (100 g)",
+      "calories": 542,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "hanuta",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Knoppers",
+      "name": "Knoppers (100 g)",
+      "calories": 546,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "knoppers",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Duplo (100 g)",
+      "calories": 551,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "duplo",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Vollmilchschokolade (100 g)",
       "calories": 535,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Duplo",
-      "calories": 558,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Vollmilch-Schokolade",
-      "calories": 535,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Vorportionieren statt aus der Packung",
-      "text": "Ein einzelnes Röllchen hat nur 64 kcal. Wer sich bewusst 2 bis 3 Stück hinlegt und die Packung wegräumt, bleibt leicht bei 130 bis 190 kcal statt unbemerkt die ganze Packung mit 640 kcal zu leeren.",
+      "text": "Ein einzelnes Röllchen hat 64 kcal. Wer sich bewusst 2 bis 3 Stück hinlegt und die Packung wegräumt, bleibt bei 128 bis 192 kcal statt unbemerkt eine ganze Box mit 12 Röllchen (rund 768 kcal) zu leeren.",
       "icon": "✋"
     },
     {
       "title": "Hoher Zuckeranteil beachten",
-      "text": "Rund 53g der 62g Kohlenhydrate pro 100g sind Zucker. Amicelli ist damit eine süße Nascherei und kein sättigender Snack. Als bewusster Genuss zwischendurch ist es okay, als Hungerstiller ungeeignet.",
+      "text": "52 g der 62 g Kohlenhydrate pro 100 g sind Zucker. Amicelli ist damit eine süße Nascherei und kein sättigender Snack. Als bewusster Genuss zwischendurch ist es okay, als Hungerstiller ungeeignet.",
       "icon": "🍬"
     },
     {
@@ -130,34 +153,34 @@
     },
     {
       "title": "Fettgehalt im Blick",
-      "text": "Mit 26g Fett pro 100g liefert ein Röllchen rund 3g Fett. Das ist beim Naschen normal, summiert sich aber. Schon deshalb lohnt es sich, bei der Stückzahl ehrlich mitzuzählen.",
+      "text": "Mit 26 g Fett pro 100 g liefert ein Röllchen gut 3 g Fett. Das ist beim Naschen normal, summiert sich aber. Schon deshalb lohnt es sich, bei der Stückzahl ehrlich mitzuzählen.",
       "icon": "🧈"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Amicelli?",
-      "answer": "Ein einzelnes Amicelli-Röllchen (12,5g) hat ca. 64 kcal. Pro 100g sind es rund 512 kcal."
+      "answer": "Ein einzelnes Amicelli-Röllchen wiegt 12,5 g (Portionsangabe des Herstellers, ein Doppelröllchen wiegt 25 g) und hat 64 kcal. Pro 100 g sind es 512 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Packung Amicelli?",
-      "answer": "Eine Standardpackung mit 125g hat etwa 640 kcal. Das entspricht ungefähr 10 Röllchen à 64 kcal."
+      "answer": "Die Box Amicelli Haselnuss enthält laut Packungsabbildung des Herstellers 12 Röllchen. Bei 12,5 g je Röllchen sind das 150 g mit rund 768 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Amicelli?",
-      "answer": "Amicelli enthält rund 53g Zucker pro 100g. Ein Röllchen (12,5g) liefert damit etwa 6,6g Zucker."
+      "answer": "Amicelli Haselnuss enthält laut Hersteller 52 g Zucker pro 100 g. Ein Röllchen (12,5 g) liefert damit 6,5 g Zucker."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Amicelli?",
-      "answer": "Pro 100g enthält Amicelli ca. 62,4g Kohlenhydrate, davon der größte Teil Zucker. Ein Röllchen kommt auf rund 7,8g Kohlenhydrate."
+      "answer": "Pro 100 g enthält Amicelli 62 g Kohlenhydrate, davon 52 g Zucker. Ein Röllchen kommt auf rund 7,8 g Kohlenhydrate."
     },
     {
       "question": "Ist Amicelli zum Abnehmen geeignet?",
-      "answer": "Amicelli ist mit 512 kcal pro 100g recht kalorienreich und zuckerhaltig. In kleinen Mengen und eingeplant in die Tagesbilanz lässt es sich aber gut in eine Diät integrieren."
+      "answer": "Amicelli ist mit 512 kcal pro 100 g recht kalorienreich und zuckerhaltig. In kleinen Mengen und eingeplant in die Tagesbilanz lässt es sich aber gut in eine Diät integrieren."
     },
     {
       "question": "Wie viel Eiweiß hat Amicelli?",
-      "answer": "Der Eiweißgehalt ist mit ca. 6,4g pro 100g gering. Ein Röllchen liefert nur etwa 0,8g Protein, es ist also keine nennenswerte Eiweißquelle."
+      "answer": "Der Eiweißgehalt ist mit 6,1 g pro 100 g gering. Ein Röllchen liefert nur etwa 0,8 g Protein, es ist also keine nennenswerte Eiweißquelle."
     }
   ],
   "related_foods": [

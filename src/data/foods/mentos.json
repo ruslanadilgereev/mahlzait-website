@@ -3,9 +3,16 @@
   "name": "Mentos",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe Perfetti Van Melle (Mentos), Mentos Frucht (https://www.mentos.de/produkte/mentos-frucht, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Perfetti Van Melle (Mentos)",
+    "produkt": "Mentos Frucht",
+    "url": "https://www.mentos.de/produkte/mentos-frucht",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Mentos Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mentos? Eine ganze Rolle (38g) hat ca. 149 kcal, ein Dragee ca. 11 kcal. Nährwerte pro 100g, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Mentos? Eine Rolle Mentos Frucht (ca. 38 g) hat rund 147 kcal, ein Dragee rund 10 kcal. Nährwerte pro 100 g, Varianten und Tipps im Überblick.",
     "keywords": [
       "mentos kalorien",
       "mentos kcal",
@@ -17,92 +24,122 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 393,
+    "calories_per_100g": 388,
     "protein_per_100g": 0,
-    "carbs_per_100g": 89,
-    "fat_per_100g": 2.6,
-    "fiber_per_100g": 0,
+    "carbs_per_100g": 92,
+    "fat_per_100g": 1.9,
+    "fiber_per_100g": null,
     "typical_portion_g": 38,
-    "typical_portion_name": "1 Rolle (38g, 14 Dragees)"
+    "typical_portion_name": "1 Rolle (ca. 38 g, 14 Dragees)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Dragee (2,7g)",
+      "name": "1 Dragee (ca. 2,7 g)",
       "portion_g": 2.7,
-      "calories": 11,
+      "calories": 10,
       "protein": 0,
-      "carbs": 2,
-      "fat": 0,
-      "tip": "Ein einzelnes Bonbon"
+      "carbs": 2.5,
+      "fat": 0.1,
+      "tip": "Ein einzelnes Bonbon",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "3 Dragees (8g)",
+      "name": "3 Dragees (ca. 8 g)",
       "portion_g": 8,
       "calories": 31,
       "protein": 0,
-      "carbs": 7,
-      "fat": 0
+      "carbs": 7.4,
+      "fat": 0.2,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Halbe Rolle (19g, 7 Dragees)",
+      "name": "Halbe Rolle (ca. 19 g, 7 Dragees)",
       "portion_g": 19,
-      "calories": 75,
+      "calories": 74,
       "protein": 0,
-      "carbs": 17,
-      "fat": 0
+      "carbs": 17.5,
+      "fat": 0.4,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "1 Rolle (38g, 14 Dragees)",
+      "name": "1 Rolle (ca. 38 g, 14 Dragees)",
       "portion_g": 38,
-      "calories": 149,
+      "calories": 147,
       "protein": 0,
-      "carbs": 34,
-      "fat": 1,
-      "tip": "Standard"
+      "carbs": 35,
+      "fat": 0.7,
+      "tip": "Standard",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Pro 100g",
+      "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 393,
+      "calories": 388,
       "protein": 0,
-      "carbs": 89,
-      "fat": 2.6
+      "carbs": 92,
+      "fat": 1.9
     },
     {
-      "name": "Großpackung 2 Rollen (76g)",
+      "name": "2 Rollen (ca. 76 g)",
       "portion_g": 76,
-      "calories": 299,
+      "calories": 295,
       "protein": 0,
-      "carbs": 68,
-      "fat": 2
+      "carbs": 69.9,
+      "fat": 1.4,
+      "stueck_geschaetzt": true
     }
   ],
   "comparison": [
     {
-      "name": "Haribo",
+      "name": "Haribo Goldbären (100 g)",
       "calories": 343,
-      "emoji": "🐻"
+      "emoji": "🧸",
+      "basis": [
+        {
+          "slug": "haribo",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Traubenzucker",
-      "calories": 380,
-      "emoji": "🍬"
+      "name": "Maoam Stripes (100 g)",
+      "calories": 409,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "maoam-stripes",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Schokolade",
+      "name": "Vollmilchschokolade (100 g)",
       "calories": 535,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Lakritz",
-      "calories": 350,
-      "emoji": "🖤"
+      "name": "Lakritz (100 g)",
+      "calories": 396,
+      "emoji": "🖤",
+      "basis": [
+        {
+          "slug": "lakritz",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Fast nur Zucker",
-      "text": "Mentos besteht zu rund 89 % aus Kohlenhydraten, fast ausschließlich Zucker. Ein Dragee liefert etwa 11 kcal, eine ganze Rolle rund 149 kcal.",
+      "text": "Mentos Frucht besteht zu 92 % aus Kohlenhydraten, davon 69 g Zucker pro 100 g. Ein Dragee liefert etwa 10 kcal, eine ganze Rolle rund 147 kcal.",
       "icon": "🍬"
     },
     {
@@ -112,7 +149,7 @@
     },
     {
       "title": "Kein Sattmacher",
-      "text": "Mentos enthält weder Eiweiß noch Ballaststoffe und sättigt daher kaum. Als kleine süße Belohnung okay, als Snack zum Hungerstillen ungeeignet.",
+      "text": "Mentos enthält kein Eiweiß und sättigt daher kaum. Als kleine süße Belohnung okay, als Snack zum Hungerstillen ungeeignet.",
       "icon": "🤔"
     },
     {
@@ -122,26 +159,26 @@
     },
     {
       "title": "Zuckerfreie Alternative",
-      "text": "Es gibt Mentos auch als zuckerfreie Variante mit Süßungsmitteln. Diese hat deutlich weniger Kalorien, kann in größeren Mengen aber abführend wirken.",
+      "text": "Zuckerfreie Kaubonbons und Kaugummis mit Süßungsmitteln haben weniger Kalorien, können in größeren Mengen aber abführend wirken.",
       "icon": "🌿"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Mentos?",
-      "answer": "Eine ganze Rolle Mentos (38g, 14 Dragees) hat etwa 149 kcal. Pro 100g sind es rund 393 kcal."
+      "answer": "Eine ganze Rolle Mentos Frucht hat bei ca. 38 g (14 Dragees; Rollengewicht nicht vom Hersteller angegeben) rund 147 kcal. Pro 100 g sind es laut Hersteller 388 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein einzelnes Mentos-Dragee?",
-      "answer": "Ein einzelnes Dragee wiegt etwa 2,7g und hat rund 11 kcal. Drei Dragees kommen auf etwa 31 kcal."
+      "answer": "Ein einzelnes Dragee wiegt ca. 2,7 g und hat rund 10 kcal. Drei Dragees (ca. 8 g) kommen auf etwa 31 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Mentos?",
-      "answer": "Mentos besteht zu rund 89 % aus Kohlenhydraten, davon fast alles Zucker. Eine Rolle (38g) enthält etwa 34g Kohlenhydrate."
+      "answer": "Mentos Frucht enthält 92 g Kohlenhydrate pro 100 g, davon 69 g Zucker. Eine Rolle (ca. 38 g) enthält etwa 35 g Kohlenhydrate."
     },
     {
       "question": "Hat Mentos Eiweiß oder Fett?",
-      "answer": "Eiweiß ist praktisch nicht enthalten (0g). Der Fettanteil ist mit etwa 2,6g pro 100g gering, eine Rolle liefert rund 1g Fett."
+      "answer": "Eiweiß ist nicht enthalten (0 g). Der Fettanteil ist mit 1,9 g pro 100 g gering, eine Rolle liefert knapp 1 g Fett."
     },
     {
       "question": "Sind Mentos zum Abnehmen geeignet?",

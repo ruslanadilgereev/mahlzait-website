@@ -3,9 +3,16 @@
   "name": "Celebrations",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Mars (CELEBRATIONS), CELEBRATIONS Geschenkbox 186 g (https://www.celebrations.de/products/chocolate/celebrations-geschenkbox-186g, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars (CELEBRATIONS)",
+    "produkt": "CELEBRATIONS Geschenkbox 186 g",
+    "url": "https://www.celebrations.de/products/chocolate/celebrations-geschenkbox-186g",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Celebrations Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Celebrations? Eine Praline hat ca. 43 kcal, 100g ca. 480 kcal. Alle Nährwerte, Portionen & Tipps zum Naschen im Überblick.",
+    "description": "Wie viele Kalorien hat Celebrations? Eine Praline (ca. 9 g) hat rund 45 kcal, 100 g haben 495 kcal. Alle Nährwerte, Portionen & Tipps zum Naschen im Überblick.",
     "keywords": [
       "celebrations kalorien",
       "celebrations kcal",
@@ -16,110 +23,133 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 480,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 60,
+    "calories_per_100g": 495,
+    "protein_per_100g": 5.6,
+    "carbs_per_100g": 62,
     "fat_per_100g": 24,
-    "fiber_per_100g": 1.5,
+    "fiber_per_100g": null,
     "typical_portion_g": 18,
-    "typical_portion_name": "2 Pralinen (~18g)"
+    "typical_portion_name": "2 Pralinen (ca. 18 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Praline (~9g)",
+      "name": "1 Praline (ca. 9 g)",
       "portion_g": 9,
-      "calories": 43,
-      "protein": 0,
-      "carbs": 5,
+      "calories": 45,
+      "protein": 1,
+      "carbs": 6,
       "fat": 2,
-      "tip": "Eine einzelne Mini-Praline"
+      "tip": "Eine einzelne Mini-Praline",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "2 Pralinen (~18g)",
+      "name": "2 Pralinen (ca. 18 g)",
       "portion_g": 18,
-      "calories": 86,
+      "calories": 89,
       "protein": 1,
       "carbs": 11,
       "fat": 4,
-      "tip": "Standard-Portion"
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Handvoll (~35g)",
+      "name": "1 Handvoll (35 g)",
       "portion_g": 35,
-      "calories": 168,
+      "calories": 173,
       "protein": 2,
-      "carbs": 21,
+      "carbs": 22,
       "fat": 8
     },
     {
-      "name": "100g",
+      "name": "100 g",
       "portion_g": 100,
-      "calories": 480,
-      "protein": 5,
-      "carbs": 60,
+      "calories": 495,
+      "protein": 6,
+      "carbs": 62,
       "fat": 24
     },
     {
-      "name": "Beutel klein (135g)",
-      "portion_g": 135,
-      "calories": 648,
-      "protein": 6,
-      "carbs": 81,
-      "fat": 32
+      "name": "Geschenkbox (186 g)",
+      "portion_g": 186,
+      "calories": 921,
+      "protein": 10,
+      "carbs": 115,
+      "fat": 45
     },
     {
-      "name": "Beutel groß (200g)",
-      "portion_g": 200,
-      "calories": 960,
-      "protein": 9,
-      "carbs": 120,
-      "fat": 48
+      "name": "Geschenkbox (269 g)",
+      "portion_g": 269,
+      "calories": 1332,
+      "protein": 15,
+      "carbs": 167,
+      "fat": 65
     },
     {
-      "name": "Box (320g)",
-      "portion_g": 320,
-      "calories": 1536,
-      "protein": 14,
-      "carbs": 192,
-      "fat": 77
+      "name": "Pop Geschenkbox (350 g)",
+      "portion_g": 350,
+      "calories": 1733,
+      "protein": 20,
+      "carbs": 217,
+      "fat": 84
     }
   ],
   "comparison": [
     {
-      "name": "Ferrero Rocher",
-      "calories": 73,
-      "emoji": "🍫"
+      "name": "Ferrero Rocher (1 Praline, 12,5 g)",
+      "calories": 75,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "ferrero-rocher"
+        }
+      ]
     },
     {
-      "name": "Toffifee",
-      "calories": 47,
-      "emoji": "🍬"
+      "name": "Toffifee (1 Stück, 8,3 g)",
+      "calories": 43,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "toffifee"
+        }
+      ]
     },
     {
-      "name": "Praline",
-      "calories": 55,
-      "emoji": "🍫"
+      "name": "Lindor (1 Kugel, 12,5 g)",
+      "calories": 78,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "lindor"
+        }
+      ]
     },
     {
-      "name": "Lindor",
-      "calories": 73,
-      "emoji": "🍫"
+      "name": "Raffaello (1 Stück, 10 g)",
+      "calories": 63,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "raffaello"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Größe der Pralinen beachten",
-      "text": "Celebrations enthält unterschiedlich große Mini-Riegel. Ein Bounty- oder Malteser-Stück ist leichter als ein Snickers- oder Mars-Mini, der schnell über 50 kcal liegt.",
+      "text": "Celebrations mischt Mini-Riegel von Mars, Snickers, Twix, Bounty, Milky Way, Galaxy, Galaxy Caramel und Maltesers Teasers. Die Stücke sind unterschiedlich groß, die rund 45 kcal je Praline sind deshalb ein Mittelwert für ca. 9 g.",
       "icon": "⚖️"
     },
     {
       "title": "Portion abzählen statt aus der Box naschen",
-      "text": "Lege dir 2 bis 3 Pralinen auf einen Teller und stelle die Box weg. So bleibst du bei etwa 90 bis 130 kcal statt unbemerkt eine Handvoll zu vernaschen.",
+      "text": "Lege dir 2 bis 3 Pralinen auf einen Teller und stelle die Box weg. So bleibst du bei etwa 89 bis 134 kcal statt unbemerkt eine Handvoll zu vernaschen.",
       "icon": "🍽️"
     },
     {
       "title": "Hoher Zucker- und Fettanteil",
-      "text": "Mit rund 58g Zucker und 24g Fett pro 100g liefert Celebrations vor allem schnelle Energie und wenig Sättigung. Als Genuss-Snack einplanen, nicht als Zwischenmahlzeit.",
+      "text": "Mit 55 g Zucker und 24 g Fett pro 100 g liefert Celebrations vor allem schnelle Energie und wenig Sättigung. Als Genuss-Snack einplanen, nicht als Zwischenmahlzeit.",
       "icon": "🍬"
     },
     {
@@ -129,26 +159,26 @@
     },
     {
       "title": "In die Tagesbilanz einplanen",
-      "text": "Plane das Naschen bewusst ein und tracke es mit. Zwei Pralinen mit 86 kcal passen gut in einen Tag, eine ganze Box mit über 1500 kcal sprengt dagegen jede Bilanz.",
+      "text": "Plane das Naschen bewusst ein und tracke es mit. Zwei Pralinen mit rund 89 kcal passen gut in einen Tag, eine ganze Geschenkbox (186 g) mit rund 921 kcal sprengt dagegen schnell die Bilanz.",
       "icon": "📋"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Celebrations Praline?",
-      "answer": "Eine einzelne Celebrations-Praline (~9g) hat im Schnitt etwa 43 kcal. Je nach Sorte schwankt der Wert: Bounty- und Malteser-Minis sind leichter, Snickers- und Mars-Minis liegen höher."
+      "answer": "Eine einzelne Celebrations-Praline wiegt ca. 9 g (Stückgewicht nicht vom Hersteller angegeben) und hat damit im Schnitt rund 45 kcal. Je nach Sorte sind die Mini-Riegel unterschiedlich groß."
     },
     {
       "question": "Wie viele Kalorien hat Celebrations pro 100g?",
-      "answer": "100g Celebrations haben rund 480 kcal. Das entspricht etwa 11 durchschnittlichen Pralinen."
+      "answer": "100 g Celebrations haben laut Hersteller 495 kcal. Das entspricht etwa 11 Pralinen à ca. 9 g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Celebrations?",
-      "answer": "Celebrations enthält etwa 60g Kohlenhydrate pro 100g, davon rund 58g Zucker. Zwei Pralinen liefern damit etwa 11g Kohlenhydrate."
+      "answer": "Celebrations enthält 62 g Kohlenhydrate pro 100 g, davon 55 g Zucker. Zwei Pralinen (ca. 18 g) liefern damit etwa 11 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Celebrations?",
-      "answer": "Der Proteingehalt ist mit etwa 4,5g pro 100g gering. Celebrations ist eine Süßigkeit und keine nennenswerte Eiweißquelle."
+      "answer": "Der Proteingehalt ist mit 5,6 g pro 100 g gering. Celebrations ist eine Süßigkeit und keine nennenswerte Eiweißquelle."
     },
     {
       "question": "Ist Celebrations zum Abnehmen geeignet?",

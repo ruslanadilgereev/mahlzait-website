@@ -17,6 +17,8 @@ interface FoodVariant {
   carbs: number;
   fat: number;
   tip?: string;
+  // Stückgewicht der Variante geschätzt, der Hersteller nennt es nicht
+  stueck_geschaetzt?: boolean;
 }
 
 interface FoodComparison {
@@ -52,6 +54,8 @@ interface FoodData {
     typical_portion_name: string;
     // "ml": Werte je 100 ml und Mengen in ml (Herstellerangaben für Getränke)
     einheit?: "ml";
+    // Gewicht der typischen Portion geschätzt, der Hersteller nennt kein Stückgewicht
+    portion_geschaetzt?: boolean;
   };
   // Herstellerangabe für Markenprodukte, die USDA FoodData Central nicht führt
   hersteller?: Herstellerangabe;
@@ -356,6 +360,11 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   </tbody>
                 </table>
               </div>
+              {food.overview.portion_geschaetzt && (
+                <p className="mt-4 text-sm opacity-70">
+                  {`${food.overview.typical_portion_name}: ca. ${amount(food.overview.typical_portion_g)}, Stückgewicht nicht vom Hersteller angegeben.`}
+                </p>
+              )}
               {food.hersteller && (
                 <p className="mt-4 text-sm opacity-70">
                   {herstellerHinweis(food.hersteller, "hinweis")}.{" "}
@@ -431,9 +440,12 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                       <tr key={i} className={i === 0 ? "font-semibold" : ""}>
                         <td>
                           {v.name}
+                          {v.stueck_geschaetzt && (
+                            <div className="text-xs opacity-70 mt-1">{`ca. ${amount(v.portion_g)}, Stückgewicht nicht vom Hersteller angegeben`}</div>
+                          )}
                           {v.tip && <div className="text-xs text-primary mt-1">💡 {v.tip}</div>}
                         </td>
-                        <td className="text-right">{amount(v.portion_g)}</td>
+                        <td className="text-right">{v.stueck_geschaetzt ? `ca. ${amount(v.portion_g)}` : amount(v.portion_g)}</td>
                         <td className="text-right font-bold">{v.calories}</td>
                         <td className="text-right">{menge(v.protein)}</td>
                         <td className="text-right">{menge(v.fat)}</td>

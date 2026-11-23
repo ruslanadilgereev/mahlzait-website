@@ -3,9 +3,16 @@
   "name": "Ritter Sport",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Alfred Ritter (RITTER SPORT), RITTER SPORT Alpenmilch 100 g (https://www.ritter-sport.com/de/produkte/alpenmilch, abgerufen am 23.11.2026), Werte je 100 g; Werte aus der Nährwertdatenbank der Herstellerseite (Artikel A-18 „100 g Alpenmilch“; gleiche Werte für 250 g Alpenmilch und mini Alpenmilch)",
+  "hersteller": {
+    "name": "Alfred Ritter (RITTER SPORT)",
+    "produkt": "RITTER SPORT Alpenmilch 100 g",
+    "url": "https://www.ritter-sport.com/de/produkte/alpenmilch",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Ritter Sport Kalorien: Nährwerte & Sorten | Mahlzait",
-    "description": "Wie viele Kalorien hat Ritter Sport? Eine ganze Tafel Alpenmilch (100g) hat ca. 556 kcal, ein Quadrat ca. 35 kcal. Alle Sorten & Nährwerte im Überblick.",
+    "description": "Wie viele Kalorien hat Ritter Sport? Eine ganze Tafel Alpenmilch (100 g) hat 547 kcal, ein Quadrat (ca. 6 g) rund 33 kcal. Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "ritter sport kalorien",
       "ritter sport kcal",
@@ -16,150 +23,171 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 556,
-    "protein_per_100g": 7.6,
-    "carbs_per_100g": 56,
-    "fat_per_100g": 33,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 547,
+    "protein_per_100g": 8.2,
+    "carbs_per_100g": 54,
+    "fat_per_100g": 32,
+    "fiber_per_100g": null,
     "typical_portion_g": 25,
-    "typical_portion_name": "4 Quadrate (25g)"
+    "typical_portion_name": "4 Quadrate (ca. 25 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Quadrat (6g)",
+      "name": "1 Quadrat (ca. 6 g)",
       "portion_g": 6,
       "calories": 33,
       "protein": 0.5,
-      "carbs": 3.4,
-      "fat": 2,
-      "tip": "Kleinste Einheit zum Naschen"
+      "carbs": 3.2,
+      "fat": 1.9,
+      "tip": "Kleinste Einheit zum Naschen",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "4 Quadrate (25g)",
+      "name": "4 Quadrate (ca. 25 g)",
       "portion_g": 25,
-      "calories": 139,
-      "protein": 1.9,
-      "carbs": 14,
-      "fat": 8.3,
-      "tip": "Standard-Portion"
+      "calories": 137,
+      "protein": 2.1,
+      "carbs": 13.5,
+      "fat": 8,
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Halbe Tafel (50g)",
+      "name": "Halbe Tafel (50 g)",
       "portion_g": 50,
-      "calories": 278,
-      "protein": 3.8,
-      "carbs": 28,
-      "fat": 16.5
+      "calories": 274,
+      "protein": 4.1,
+      "carbs": 27,
+      "fat": 16
     },
     {
-      "name": "Ganze Tafel Alpenmilch (100g)",
+      "name": "Ganze Tafel Alpenmilch (100 g)",
       "portion_g": 100,
-      "calories": 556,
-      "protein": 7.6,
-      "carbs": 56,
-      "fat": 33
+      "calories": 547,
+      "protein": 8.2,
+      "carbs": 54,
+      "fat": 32
     },
     {
-      "name": "Mini-Tafel (16,67g)",
-      "portion_g": 17,
-      "calories": 95,
-      "protein": 1.3,
-      "carbs": 9.5,
-      "fat": 5.6,
-      "tip": "Aus dem Mini-Mix"
+      "name": "Mini-Tafel (16,67 g)",
+      "portion_g": 16.67,
+      "calories": 91,
+      "protein": 1.4,
+      "carbs": 9,
+      "fat": 5.3,
+      "tip": "Aus dem Mini-Mix",
+      "basis": [
+        {
+          "slug": "ritter-sport-mini",
+          "g": 16.67
+        }
+      ]
     },
     {
-      "name": "Tafel Halbbitter / Zartbitter (100g)",
-      "portion_g": 100,
-      "calories": 530,
-      "protein": 6,
-      "carbs": 48,
-      "fat": 34,
-      "tip": "Etwas weniger Zucker, mehr Kakao"
-    },
-    {
-      "name": "Tafel Nugat (100g)",
-      "portion_g": 100,
-      "calories": 575,
-      "protein": 8,
-      "carbs": 51,
-      "fat": 37,
-      "tip": "Durch Nuss-Nougat fettreicher"
+      "name": "Große Tafel Alpenmilch (250 g)",
+      "portion_g": 250,
+      "calories": 1368,
+      "protein": 20.5,
+      "carbs": 135,
+      "fat": 80
     }
   ],
   "comparison": [
     {
-      "name": "Milka Schokolade (100g)",
-      "calories": 530,
-      "emoji": "🍫"
+      "name": "Milka Alpenmilch (100 g)",
+      "calories": 539,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "milka-schokolade",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kinderriegel (1 Stück, 21g)",
-      "calories": 115,
-      "emoji": "🍫"
+      "name": "Kinderriegel (1 Stück, 21 g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel"
+        }
+      ]
     },
     {
-      "name": "Hanuta (1 Stück, 22g)",
-      "calories": 122,
-      "emoji": "🧇"
+      "name": "Hanuta (1 Stück, 22 g)",
+      "calories": 119,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "hanuta"
+        }
+      ]
     },
     {
-      "name": "Apfel (mittel, 180g)",
+      "name": "Apfel (mittel, 180 g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "In Quadraten denken",
-      "text": "Die Tafel ist in 16 Quadrate geteilt. Ein einzelnes Quadrat hat nur rund 35 kcal. Wer bewusst 2 bis 4 Quadrate nimmt und die Tafel wegräumt, bleibt leicht unter 150 kcal.",
+      "text": "Ein einzelnes Quadrat (ca. 6 g) hat rund 33 kcal. Wer bewusst 2 bis 4 Quadrate nimmt und die Tafel wegräumt, bleibt bei höchstens rund 137 kcal.",
       "icon": "🔢"
     },
     {
       "title": "Zartbitter spart kaum Kalorien",
-      "text": "Halbbitter und Zartbitter haben mit rund 530 kcal pro 100g kaum weniger Kalorien als Alpenmilch. Der Vorteil liegt eher im niedrigeren Zucker- und höheren Kakaoanteil.",
+      "text": "Halbbitter hat laut Ritter Sport 534 kcal pro 100 g und damit kaum weniger als Alpenmilch mit 547 kcal. Der Unterschied liegt eher beim Zucker: 48 g statt 53 g pro 100 g.",
       "icon": "🌑"
     },
     {
-      "title": "Nuss-Sorten sind die kalorienreichsten",
-      "text": "Sorten mit ganzen Haselnüssen oder Nougat liegen bei rund 575 bis 600 kcal pro 100g, weil Nüsse viel Fett mitbringen. Plane sie als kleinere Portion ein.",
+      "title": "Nuss-Sorten liegen höher",
+      "text": "Sorten mit ganzen Nüssen haben mehr Kalorien, Voll-Nuss etwa 566 kcal pro 100 g, weil Nüsse viel Fett mitbringen. Plane sie als kleinere Portion ein.",
       "icon": "🥜"
     },
     {
       "title": "Bewusst genießen statt nebenbei",
-      "text": "Schokolade nebenbei am Schreibtisch ist schnell weggegessen. Eine ganze Tafel hat mit 556 kcal etwa so viel wie eine kleine Mahlzeit. Lieber bewusst ein paar Quadrate genießen.",
+      "text": "Schokolade nebenbei am Schreibtisch ist schnell weggegessen. Eine ganze Tafel hat mit 547 kcal etwa so viel wie eine kleine Mahlzeit. Lieber bewusst ein paar Quadrate genießen.",
       "icon": "🧘"
     },
     {
       "title": "Mini-Tafeln zur Portionskontrolle",
-      "text": "Die kleinen Mini-Tafeln mit knapp 17g helfen beim Maßhalten: eine Mini-Tafel liegt bei etwa 95 kcal, eine handliche feste Portion ohne offene Tafel.",
+      "text": "Die kleinen Mini-Tafeln mit 16,67 g helfen beim Maßhalten: eine Mini-Tafel Alpenmilch liegt bei etwa 91 kcal, eine handliche feste Portion ohne offene Tafel.",
       "icon": "📏"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Tafel Ritter Sport?",
-      "answer": "Eine ganze Tafel Ritter Sport Alpenmilch (100g) hat ca. 556 kcal. Andere Sorten liegen je nach Zutaten zwischen rund 530 kcal (Zartbitter) und etwa 600 kcal (Nuss-Sorten)."
+      "answer": "Eine ganze Tafel Ritter Sport Alpenmilch (100 g) hat laut Hersteller 547 kcal. Andere Sorten liegen je nach Zutaten darunter oder darüber, Halbbitter etwa bei 534 kcal und Voll-Nuss bei 566 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Quadrat Ritter Sport?",
-      "answer": "Ein einzelnes Quadrat wiegt etwa 6g und hat rund 35 kcal. Die Tafel besteht aus 16 Quadraten."
+      "answer": "Ein einzelnes Quadrat wiegt ca. 6 g (Stückgewicht nicht vom Hersteller angegeben) und hat rund 33 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Ritter Sport?",
-      "answer": "Ritter Sport Alpenmilch enthält etwa 56g Kohlenhydrate pro 100g, davon der Großteil als Zucker. Zartbitter-Sorten liegen mit rund 48g etwas niedriger."
+      "answer": "Ritter Sport Alpenmilch enthält 54 g Kohlenhydrate pro 100 g, davon 53 g Zucker. Halbbitter liegt mit 50 g Kohlenhydraten und 48 g Zucker etwas niedriger."
     },
     {
       "question": "Wie viel Protein steckt in Ritter Sport?",
-      "answer": "Alpenmilch liefert etwa 7,6g Eiweiß pro 100g, vor allem aus dem Milchanteil. Bei 4 Quadraten (25g) sind das knapp 2g Protein."
+      "answer": "Alpenmilch liefert 8,2 g Eiweiß pro 100 g, vor allem aus dem Milchanteil. Bei 4 Quadraten (ca. 25 g) sind das rund 2 g Protein."
     },
     {
       "question": "Ist Ritter Sport zum Abnehmen geeignet?",
-      "answer": "Mit rund 556 kcal pro 100g ist Ritter Sport sehr energiedicht und kein klassisches Diät-Lebensmittel. In kleinen Portionen von 2 bis 4 Quadraten passt sie aber gut in eine bewusste Ernährung."
+      "answer": "Mit 547 kcal pro 100 g ist Ritter Sport sehr energiedicht und kein klassisches Diät-Lebensmittel. In kleinen Portionen von 2 bis 4 Quadraten passt sie aber gut in eine bewusste Ernährung."
     },
     {
       "question": "Ist Zartbitter-Ritter-Sport gesünder als Alpenmilch?",
-      "answer": "Zartbitter hat einen höheren Kakaoanteil und weniger Zucker, aber kaum weniger Kalorien. Wer auf den Zuckergehalt achtet, fährt mit den dunklen Sorten meist besser."
+      "answer": "Halbbitter hat einen höheren Kakaoanteil und etwas weniger Zucker (48 g statt 53 g pro 100 g), aber kaum weniger Kalorien (534 statt 547 kcal). Wer auf den Zuckergehalt achtet, fährt mit den dunklen Sorten etwas besser."
     }
   ],
   "related_foods": [

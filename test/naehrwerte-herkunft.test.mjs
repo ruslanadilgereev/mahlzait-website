@@ -54,24 +54,22 @@ const DRITTE = ["fddb.info", "yazio.com", "openfoodfacts.org", "openfoodfacts.ne
 
 // <OFFEN>
 const OFFEN = new Set([
-   "amicelli", "aperol-spritz", "aquafaba", "balisto", "balisto-lila", "balisto-orange",
-   "ben-and-jerry-s", "bounty", "bounty-mini", "bowl", "campari", "captain-morgan", "caro-kaffee",
-   "celebrations", "daim-mini", "dr-pepper", "ebly", "ferrero-kuesschen", "feta-light",
-   "five-guys-burger", "fleisch", "fritt", "fruehstueck", "gemuese", "giotto", "guinness",
-   "gustavo-gusto-margherita", "gustavo-gusto-pizza", "hans-im-glueck-burger", "heisse-tasse",
-   "iglo-backfisch", "kaese", "katjes", "kfc-hot-wings", "kfc-twister", "kiri", "klopfer",
-   "l-osteria-pizza", "leibniz-butterkeks", "lidl-ciabatta", "lidl-croissant", "lidl-donut",
-   "lillet", "lion", "lion-mini", "maggi", "magnum-double-caramel", "maltesers", "maoam",
-   "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mars", "mars-eis", "mars-mini",
-   "mars-riegel", "mate-tee", "mc-frappe", "mc-toast", "mentos", "mikado", "milka-noisette",
-   "milka-schokolade", "milky-way", "mini-milky-way", "mon-cheri", "muellermilch", "nesquik",
-   "neuburger", "nordsee-backfisch-baguette", "nuts", "oreo-donut", "pepsi-max",
-   "philadelphia-light", "piccolinis", "pop-tarts", "praline", "proteinriegel", "ritter-sport",
-   "ritter-sport-mini", "schogetten", "schokoriegel", "smarties", "smirnoff-ice",
-   "snickers-crisp", "stella-artois", "tassimo-milka", "tuc", "tuc-cracker", "tuc-kekse",
+   "aperol-spritz", "aquafaba", "balisto", "balisto-lila", "balisto-orange", "ben-and-jerry-s",
+   "bounty", "bounty-mini", "bowl", "campari", "captain-morgan", "caro-kaffee", "daim-mini",
+   "dr-pepper", "ebly", "feta-light", "five-guys-burger", "fleisch", "fruehstueck", "gemuese",
+   "giotto", "guinness", "hans-im-glueck-burger", "kaese", "katjes", "kfc-hot-wings",
+   "kfc-twister", "kiri", "klopfer", "l-osteria-pizza", "lidl-ciabatta", "lidl-croissant",
+   "lidl-donut", "lillet", "lion", "lion-mini", "magnum-double-caramel", "maltesers", "mars",
+   "mars-eis", "mars-mini", "mars-riegel", "mate-tee", "mc-frappe", "mc-toast", "mikado",
+   "milky-way", "mini-milky-way", "muellermilch", "nesquik", "neuburger", "nuts", "oreo-donut",
+   "pepsi-max", "philadelphia-light", "piccolinis", "pop-tarts", "praline", "proteinriegel",
+   "schokoriegel", "smarties", "smirnoff-ice", "snickers-crisp", "stella-artois", "tassimo-milka",
    "twister-eis", "vapiano", "waterdrop", "wonderwaffel", "wurst", "yfood", "yum-yum",
 ]);
 // </OFFEN>
+
+// Seiten nach Regel 4 (Herstellerwerte je 100 g, Stückgewicht geschätzt)
+const STUECKGEWICHT_GESCHAETZT = new Set(["celebrations", "ferrero-kuesschen", "fritt", "gustavo-gusto-margherita", "gustavo-gusto-pizza", "heisse-tasse", "iglo-backfisch", "leibniz-butterkeks", "maggi", "maoam", "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mentos", "milka-noisette", "milka-schokolade", "mon-cheri", "nordsee-backfisch-baguette", "ritter-sport", "schogetten", "tuc", "tuc-cracker", "tuc-kekse"]);
 
 const alle = alleLebensmittel();
 const seiten = new Map(alle.map(({ slug, food }) => [slug, food]));
@@ -95,7 +93,7 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 842, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 867, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
 test("jedes source-Feld nennt FDC oder eine Herstellerangabe", () => {
@@ -192,6 +190,28 @@ test("Herstellerangaben nennen Hersteller, Produkt, https-Adresse und Abrufdatum
     assert.ok(food.source.includes(h.url), slug + ": URL fehlt im source-Text");
     const [j, m, t] = h.abgerufen.split("-");
     assert.ok(food.source.includes("abgerufen am " + t + "." + m + "." + j), slug + ": Abrufdatum fehlt im source-Text");
+  }
+});
+
+// Herstellerwerte je 100 g ohne Stückgewicht vom Hersteller (Entscheidung vom
+// 23.11.2026): Das bisherige Stückgewicht bleibt, als Schätzung gekennzeichnet
+// (stueck_geschaetzt an der Variante, portion_geschaetzt an der typischen
+// Portion, "ca." im Namen; die Seite zeigt "Stückgewicht nicht vom Hersteller
+// angegeben").
+test("geschätzte Stückgewichte nur bei Herstellerangaben und mit ca. im Namen", () => {
+  const befunde = [];
+  for (const { slug, food } of alle) {
+    const geschaetzt = food.variants.filter((v) => v.stueck_geschaetzt);
+    if (!geschaetzt.length && !food.overview.portion_geschaetzt) continue;
+    if (!istHersteller(food)) befunde.push(slug + ": geschätztes Stückgewicht ohne Herstellerangabe");
+    for (const v of geschaetzt) if (!/\bca\. /.test(v.name)) befunde.push(slug + " / " + v.name + ": ohne ca.");
+    if (food.overview.portion_geschaetzt && !/\bca\. /.test(food.overview.typical_portion_name)) befunde.push(slug + ": typische Portion ohne ca.");
+  }
+  assert.deepEqual(befunde, []);
+  for (const slug of STUECKGEWICHT_GESCHAETZT) {
+    const food = seiten.get(slug);
+    assert.ok(istHersteller(food), slug + ": keine Herstellerangabe");
+    assert.ok(food.overview.portion_geschaetzt || food.variants.some((v) => v.stueck_geschaetzt), slug + ": Schätzung nicht gekennzeichnet");
   }
 });
 

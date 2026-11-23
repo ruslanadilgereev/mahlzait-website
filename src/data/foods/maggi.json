@@ -3,9 +3,16 @@
   "name": "Maggi",
   "emoji": "🧂",
   "category": "supermarkt",
+  "source": "Herstellerangabe Nestlé, MAGGI Würze (https://www.ernaehrungsstudio.de/services/produkte/maggi/naehrwertangaben?categoryId=4, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Nestlé",
+    "produkt": "MAGGI Würze",
+    "url": "https://www.ernaehrungsstudio.de/services/produkte/maggi/naehrwertangaben?categoryId=4",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Maggi Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Maggi Würze? 147 kcal pro 100 ml, aber nur ca. 4 kcal pro TL. Nährwerte, Portionen im Vergleich & Tipps zum sparsamen Würzen.",
+    "description": "Wie viele Kalorien hat Maggi Würze? 68 kcal pro 100 g, aber nur rund 2 kcal pro TL (ca. 3 g). Nährwerte, Portionen im Vergleich & Tipps zum sparsamen Würzen.",
     "keywords": [
       "maggi kcal",
       "maggi kalorien",
@@ -18,148 +25,157 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 100,
-    "protein_per_100g": 14,
-    "carbs_per_100g": 21,
-    "fat_per_100g": 0,
+    "calories_per_100g": 68,
+    "protein_per_100g": 9.8,
+    "carbs_per_100g": 6.5,
+    "fat_per_100g": 0.1,
     "fiber_per_100g": 0,
     "typical_portion_g": 3,
-    "typical_portion_name": "1 TL Maggi Würze (3 ml)"
+    "typical_portion_name": "1 TL Maggi Würze (ca. 3 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Spritzer (1 ml)",
+      "name": "1 Spritzer (ca. 1 g)",
       "portion_g": 1,
-      "calories": 1.0,
-      "protein": 0,
-      "carbs": 0,
+      "calories": 1,
+      "protein": 0.1,
+      "carbs": 0.1,
       "fat": 0,
-      "tip": "Übliche Menge zum Abschmecken"
+      "tip": "Übliche Menge zum Abschmecken",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "1 TL Maggi Würze (3 ml)",
+      "name": "1 TL Maggi Würze (ca. 3 g)",
       "portion_g": 3,
-      "calories": 3.0,
-      "protein": 0,
-      "carbs": 1,
+      "calories": 2,
+      "protein": 0.3,
+      "carbs": 0.2,
       "fat": 0,
-      "tip": "Standard"
+      "tip": "Standard",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "1 EL Maggi Würze (15 ml)",
+      "name": "1 EL Maggi Würze (ca. 15 g)",
       "portion_g": 15,
-      "calories": 15.0,
-      "protein": 2,
-      "carbs": 3,
-      "fat": 0
-    },
-    {
-      "name": "Maggi Würze pro 100 ml",
-      "portion_g": 100,
-      "calories": 100.0,
-      "protein": 14,
-      "carbs": 21,
-      "fat": 0
-    },
-    {
-      "name": "Maggi Klare Suppe (1 Teller, 200 ml)",
-      "portion_g": 200,
-      "calories": 200.0,
-      "protein": 1,
+      "calories": 10,
+      "protein": 1.5,
       "carbs": 1,
       "fat": 0,
-      "tip": "Fertig zubereitet, sehr kalorienarm"
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Maggi 5-Minuten-Terrine (fertig, 1 Becher)",
-      "portion_g": 270,
-      "calories": 270.0,
-      "protein": 7,
-      "carbs": 38,
-      "fat": 5
+      "name": "Maggi Würze pro 100 g",
+      "portion_g": 100,
+      "calories": 68,
+      "protein": 9.8,
+      "carbs": 6.5,
+      "fat": 0.1
     },
     {
-      "name": "Maggi Fix Spaghetti Bolognese (1 Portion fertig)",
-      "portion_g": 300,
-      "calories": 300.0,
-      "protein": 14,
-      "carbs": 52,
-      "fat": 10
+      "name": "Flasche (250 g)",
+      "portion_g": 250,
+      "calories": 170,
+      "protein": 24.5,
+      "carbs": 16.3,
+      "fat": 0.3,
+      "tip": "Packung laut Hersteller"
     }
   ],
   "comparison": [
     {
       "name": "Sojasauce (1 EL)",
       "calories": 8,
-      "emoji": "🍶"
+      "emoji": "🍶",
+      "basis": [
+        {
+          "slug": "sojasauce"
+        }
+      ]
     },
     {
-      "name": "Ketchup (1 EL)",
-      "calories": 18,
-      "emoji": "🍅"
+      "name": "Ketchup (1 EL, 15 g)",
+      "calories": 15,
+      "emoji": "🍅",
+      "basis": [
+        {
+          "slug": "ketchup",
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Senf (1 EL)",
-      "calories": 12,
-      "emoji": "🌭"
+      "calories": 9,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "senf"
+        }
+      ]
     },
     {
       "name": "Mayonnaise (1 EL)",
-      "calories": 100,
-      "emoji": "🥚"
+      "calories": 102,
+      "emoji": "🥚",
+      "basis": [
+        {
+          "slug": "mayo"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorien fast vernachlässigbar",
-      "text": "Ein paar Spritzer Maggi Würze haben nur 1-2 kcal. Selbst ein ganzer Teelöffel liegt bei rund 4 kcal – beim Abnehmen also kein Problem.",
+      "text": "Ein paar Spritzer Maggi Würze haben nur 1 bis 2 kcal. Selbst ein ganzer Teelöffel (ca. 3 g) liegt bei rund 2 kcal, beim Abnehmen also kein Problem.",
       "icon": "💧"
     },
     {
       "title": "Salz ist die eigentliche Frage",
-      "text": "Maggi Würze enthält etwa 22g Salz pro 100 ml. Wer auf den Blutdruck achtet, sollte sparsam würzen statt großzügig zu spritzen.",
+      "text": "Maggi Würze enthält laut Hersteller 18,2 g Salz pro 100 g. Wer auf den Blutdruck achtet, sollte sparsam würzen statt großzügig zu spritzen.",
       "icon": "🧂"
     },
     {
-      "title": "Kein Fett, kaum Zucker",
-      "text": "Maggi Würze hat 0g Fett und nur wenig Zucker. Die Kalorien stammen fast nur aus Eiweiß und Kohlenhydraten der Würzbasis.",
+      "title": "Kaum Fett, wenig Zucker",
+      "text": "Maggi Würze hat laut Hersteller nur 0,1 g Fett und 3,5 g Zucker pro 100 g. Die Kalorien stammen fast nur aus Eiweiß und Kohlenhydraten der Würzbasis.",
       "icon": "✅"
     },
     {
       "title": "Vorsicht bei Fertiggerichten",
-      "text": "Nicht die Würze, sondern Maggi-Fertigprodukte wie Terrinen oder Fix-Mischungen liefern die meisten Kalorien – hier lohnt der Blick aufs Etikett.",
+      "text": "Nicht die Würze, sondern Maggi-Fertigprodukte wie Terrinen oder Fix-Mischungen liefern die meisten Kalorien, hier lohnt der Blick aufs Etikett.",
       "icon": "📦"
     },
     {
       "title": "Geschmack ohne Reue",
-      "text": "Statt mit Butter oder Sahne lässt sich Gemüse oder Suppe mit ein paar Tropfen Maggi würzen – intensiver Geschmack bei nahezu null Kalorien.",
+      "text": "Statt mit Butter oder Sahne lässt sich Gemüse oder Suppe mit ein paar Tropfen Maggi würzen: intensiver Geschmack bei nahezu null Kalorien.",
       "icon": "🍲"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Maggi Würze?",
-      "answer": "Maggi Würze hat ca. 147 kcal pro 100 ml. In der Praxis nutzt man aber nur wenige Spritzer: 1 TL (3 ml) hat etwa 4 kcal, 1 EL (15 ml) rund 22 kcal."
+      "answer": "Maggi Würze hat laut Hersteller 68 kcal pro 100 g. In der Praxis nutzt man aber nur wenige Spritzer: 1 TL (ca. 3 g) hat etwa 2 kcal, 1 EL (ca. 15 g) rund 10 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Spritzer Maggi?",
-      "answer": "Ein einzelner Spritzer (ca. 1 ml) hat nur rund 1 kcal. Selbst kräftiges Würzen kommt selten über 5 kcal hinaus."
+      "answer": "Ein einzelner Spritzer (ca. 1 g, Stückgewicht nicht vom Hersteller angegeben) hat nur rund 1 kcal. Selbst kräftiges Würzen kommt selten über 5 kcal hinaus."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Maggi Würze?",
-      "answer": "Maggi Würze enthält ca. 21g Kohlenhydrate pro 100 ml, davon nur wenig Zucker. Pro Teelöffel sind das unter 1g – für Low Carb unbedenklich."
+      "answer": "Maggi Würze enthält laut Hersteller 6,5 g Kohlenhydrate pro 100 g, davon 3,5 g Zucker. Pro Teelöffel sind das deutlich unter 1 g, für Low Carb unbedenklich."
     },
     {
       "question": "Hat Maggi viel Eiweiß?",
-      "answer": "Pro 100 ml stecken ca. 14g Eiweiß in Maggi Würze. Da man aber nur wenige Milliliter verwendet, trägt sie praktisch nichts zur Eiweißversorgung bei."
+      "answer": "Pro 100 g stecken 9,8 g Eiweiß in Maggi Würze. Da man aber nur wenige Gramm verwendet, trägt sie praktisch nichts zur Eiweißversorgung bei."
     },
     {
       "question": "Ist Maggi zum Abnehmen geeignet?",
-      "answer": "Ja, die Würze selbst ist mit wenigen Kalorien pro Spritzer kein Problem beim Abnehmen. Achten sollte man eher auf den hohen Salzgehalt (ca. 22g/100 ml)."
+      "answer": "Ja, die Würze selbst ist mit wenigen Kalorien pro Spritzer kein Problem beim Abnehmen. Achten sollte man eher auf den hohen Salzgehalt (18,2 g pro 100 g)."
     },
     {
       "question": "Ist Maggi Würze gesund?",
-      "answer": "Maggi Würze ist kalorienarm und fettfrei, aber sehr salzhaltig. In Maßen verwendet ist sie unbedenklich – nur wer viel würzt, sollte den Salzkonsum im Auge behalten."
+      "answer": "Maggi Würze ist kalorienarm und fast fettfrei, aber sehr salzhaltig. In Maßen verwendet ist sie unbedenklich, nur wer viel würzt, sollte den Salzkonsum im Auge behalten."
     }
   ],
   "related_foods": [

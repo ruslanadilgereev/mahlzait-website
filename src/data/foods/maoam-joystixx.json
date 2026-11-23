@@ -3,9 +3,16 @@
   "name": "Maoam Joystixx",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe HARIBO, MAOAM JoyStixx (https://www.haribo.com/de-de/produkte/maoam/maoam-joystixx, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "HARIBO",
+    "produkt": "MAOAM JoyStixx",
+    "url": "https://www.haribo.com/de-de/produkte/maoam/maoam-joystixx",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Maoam Joystixx Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Maoam Joystixx? Ein Stick (12g) hat ca. 47 kcal, 100g rund 394 kcal. Alle Nährwerte, Portionen & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Maoam Joystixx? Ein Stick (ca. 12 g) hat rund 47 kcal, 100 g haben 394 kcal. Alle Nährwerte, Portionen & Tipps im Überblick.",
     "keywords": [
       "maoam joystixx kcal",
       "maoam joystixx kalorien",
@@ -20,30 +27,33 @@
     "protein_per_100g": 1,
     "carbs_per_100g": 84,
     "fat_per_100g": 6.4,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 12,
-    "typical_portion_name": "1 Stick (12g)"
+    "typical_portion_name": "1 Stick (ca. 12 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Stick (12g)",
+      "name": "1 Stick (ca. 12 g)",
       "portion_g": 12,
       "calories": 47,
       "protein": 0,
       "carbs": 10,
       "fat": 1,
-      "tip": "Standard-Portion"
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "3 Sticks (36g)",
+      "name": "3 Sticks (ca. 36 g)",
       "portion_g": 36,
       "calories": 142,
       "protein": 0,
       "carbs": 30,
-      "fat": 2
+      "fat": 2,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Kleine Handvoll (50g)",
+      "name": "Kleine Handvoll (50 g)",
       "portion_g": 50,
       "calories": 197,
       "protein": 1,
@@ -51,7 +61,7 @@
       "fat": 3
     },
     {
-      "name": "100g",
+      "name": "100 g",
       "portion_g": 100,
       "calories": 394,
       "protein": 1,
@@ -59,7 +69,7 @@
       "fat": 6
     },
     {
-      "name": "Beutel 200g",
+      "name": "Beutel (200 g)",
       "portion_g": 200,
       "calories": 788,
       "protein": 2,
@@ -67,7 +77,7 @@
       "fat": 13
     },
     {
-      "name": "Beutel 325g",
+      "name": "Beutel (325 g)",
       "portion_g": 325,
       "calories": 1281,
       "protein": 3,
@@ -77,24 +87,48 @@
   ],
   "comparison": [
     {
-      "name": "Maoam (Original, 100g)",
-      "calories": 384,
-      "emoji": "🍬"
+      "name": "Maoam Stripes (100 g)",
+      "calories": 409,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "maoam-stripes",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Gummibärchen (100g)",
+      "name": "Haribo Goldbären (100 g)",
       "calories": 343,
-      "emoji": "🐻"
+      "emoji": "🧸",
+      "basis": [
+        {
+          "slug": "haribo",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Mentos (100g)",
-      "calories": 400,
-      "emoji": "⚪"
+      "name": "Mentos Frucht (100 g)",
+      "calories": 388,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "mentos",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Lakritz (100g)",
-      "calories": 350,
-      "emoji": "🖤"
+      "name": "Lakritz (100 g)",
+      "calories": 396,
+      "emoji": "🖤",
+      "basis": [
+        {
+          "slug": "lakritz",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -105,12 +139,12 @@
     },
     {
       "title": "Fast nur Zucker",
-      "text": "Mit 60g Zucker pro 100g sind Joystixx praktisch reine Kohlenhydrate. Als gelegentlicher Genuss okay, als Sattmacher ungeeignet.",
+      "text": "Mit 60 g Zucker pro 100 g sind Joystixx praktisch reine Kohlenhydrate. Als gelegentlicher Genuss okay, als Sattmacher ungeeignet.",
       "icon": "🍭"
     },
     {
       "title": "Kein Sattmacher",
-      "text": "Joystixx enthalten kaum Eiweiß und keine Ballaststoffe. Der Sättigungseffekt ist gering, der Hunger kommt schnell zurück.",
+      "text": "Joystixx enthalten kaum Eiweiß (1 g pro 100 g). Der Sättigungseffekt ist gering, der Hunger kommt schnell zurück.",
       "icon": "⚖️"
     },
     {
@@ -127,19 +161,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Maoam Joystixx?",
-      "answer": "Ein einzelner Joystixx-Stick (12g) hat rund 47 kcal. 100g kommen auf etwa 394 kcal."
+      "answer": "Ein einzelner Joystixx-Stick wiegt ca. 12 g (Stückgewicht nicht vom Hersteller angegeben) und hat rund 47 kcal. 100 g haben laut Hersteller 394 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Beutel Maoam Joystixx?",
-      "answer": "Ein 200g-Beutel hat rund 788 kcal, ein großer 325g-Beutel etwa 1281 kcal."
+      "answer": "Ein 200-g-Beutel hat rund 788 kcal, ein großer 325-g-Beutel etwa 1281 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Maoam Joystixx?",
-      "answer": "Joystixx bestehen zu rund 84g pro 100g aus Kohlenhydraten, davon etwa 60g Zucker. Pro Stick sind das rund 10g Kohlenhydrate."
+      "answer": "Joystixx enthalten 84 g Kohlenhydrate pro 100 g, davon 60 g Zucker. Pro Stick (ca. 12 g) sind das rund 10 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Maoam Joystixx?",
-      "answer": "Sehr wenig: nur etwa 1g Eiweiß pro 100g. Joystixx liefern fast ausschließlich Zucker und etwas Fett."
+      "answer": "Sehr wenig: nur 1 g Eiweiß pro 100 g. Joystixx liefern fast ausschließlich Zucker und etwas Fett."
     },
     {
       "question": "Sind Maoam Joystixx zum Abnehmen geeignet?",

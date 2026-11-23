@@ -3,9 +3,16 @@
   "name": "Maoam Stripes",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe HARIBO, MAOAM Stripes Classic (https://www.haribo.com/de-de/produkte/maoam/maoam-stripes-classic, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "HARIBO",
+    "produkt": "MAOAM Stripes Classic",
+    "url": "https://www.haribo.com/de-de/produkte/maoam/maoam-stripes-classic",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Maoam Stripes Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Maoam Stripes? Ein Stück (5,1g) hat ca. 21 kcal, 100g rund 409 kcal. Nährwerte, Portionen & Vergleich im Überblick.",
+    "description": "Wie viele Kalorien hat Maoam Stripes? Ein Stück (ca. 5,1 g) hat rund 21 kcal, 100 g haben 409 kcal. Nährwerte, Portionen & Vergleich im Überblick.",
     "keywords": [
       "maoam stripes kalorien",
       "maoam stripes kcal",
@@ -20,54 +27,51 @@
     "protein_per_100g": 1.5,
     "carbs_per_100g": 84,
     "fat_per_100g": 7.8,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 25,
-    "typical_portion_name": "5 Stück (kleine Handvoll)"
+    "typical_portion_name": "5 Stück (ca. 25 g, kleine Handvoll)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Stück (5,1g)",
+      "name": "1 Stück (ca. 5,1 g)",
       "portion_g": 5.1,
       "calories": 21,
       "protein": 0,
       "carbs": 4,
-      "fat": 0
+      "fat": 0,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "3 Stück (15g)",
+      "name": "3 Stück (ca. 15 g)",
       "portion_g": 15,
       "calories": 61,
       "protein": 0,
       "carbs": 13,
-      "fat": 1
+      "fat": 1,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "5 Stück (25g)",
+      "name": "5 Stück (ca. 25 g)",
       "portion_g": 25,
       "calories": 102,
       "protein": 0,
       "carbs": 21,
       "fat": 2,
-      "tip": "Standard-Portion"
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Mini-Beutel (20g)",
-      "portion_g": 20,
-      "calories": 82,
-      "protein": 0,
-      "carbs": 17,
-      "fat": 2
-    },
-    {
-      "name": "10 Stück (51g)",
+      "name": "10 Stück (ca. 51 g)",
       "portion_g": 51,
       "calories": 209,
       "protein": 1,
       "carbs": 43,
-      "fat": 4
+      "fat": 4,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Großbeutel (175g)",
+      "name": "Beutel (175 g)",
       "portion_g": 175,
       "calories": 716,
       "protein": 3,
@@ -78,40 +82,64 @@
   ],
   "comparison": [
     {
-      "name": "Gummibärchen (25g)",
+      "name": "Haribo Goldbären (25 g)",
       "calories": 86,
-      "emoji": "🐻"
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "haribo",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Vollmilchschokolade (25g)",
+      "name": "Vollmilchschokolade (25 g)",
       "calories": 134,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Lakritz (25g)",
-      "calories": 79,
-      "emoji": "🖤"
+      "name": "Lakritz (25 g)",
+      "calories": 99,
+      "emoji": "🖤",
+      "basis": [
+        {
+          "slug": "lakritz",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Weingummi (25g)",
-      "calories": 84,
-      "emoji": "🍷"
+      "name": "Bonbons (25 g)",
+      "calories": 99,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "bonbon",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kalorien pro Stück im Blick",
-      "text": "Ein einzelnes Maoam Stripes hat nur rund 21 kcal. Wer bewusst 2-3 Stück genießt, bleibt mit etwa 40-60 kcal im überschaubaren Rahmen.",
+      "text": "Ein einzelnes Maoam Stripes hat nur rund 21 kcal. Wer bewusst 3 Stück (ca. 15 g) genießt, bleibt mit etwa 61 kcal im überschaubaren Rahmen.",
       "icon": "🍬"
     },
     {
       "title": "Achtung Großbeutel",
-      "text": "Eine ganze 175g-Tüte bringt es auf rund 716 kcal - das entspricht fast einer vollwertigen Mahlzeit. Portioniere dir lieber eine kleine Handvoll.",
+      "text": "Eine ganze 175-g-Tüte bringt es auf rund 716 kcal, das entspricht fast einer vollwertigen Mahlzeit. Portioniere dir lieber eine kleine Handvoll.",
       "icon": "⚠️"
     },
     {
       "title": "Fast nur Zucker",
-      "text": "84g Kohlenhydrate pro 100g, davon der Großteil Zucker. Maoam Stripes liefern schnelle Energie, aber kaum Eiweiß oder Ballaststoffe.",
+      "text": "84 g Kohlenhydrate pro 100 g, davon 58 g Zucker. Maoam Stripes liefern schnelle Energie, aber kaum Eiweiß.",
       "icon": "🍭"
     },
     {
@@ -128,19 +156,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Maoam Stripes?",
-      "answer": "Ein einzelnes Maoam Stripes (ca. 5,1g) hat etwa 21 kcal. Pro 100g sind es rund 409 kcal."
+      "answer": "Ein einzelnes Maoam Stripes wiegt ca. 5,1 g (Stückgewicht nicht vom Hersteller angegeben) und hat etwa 21 kcal. Pro 100 g sind es laut Hersteller 409 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Tüte Maoam Stripes?",
-      "answer": "Ein 175g-Großbeutel liefert rund 716 kcal. Das ist etwa so viel wie eine kleine Hauptmahlzeit."
+      "answer": "Ein 175-g-Beutel liefert rund 716 kcal. Das ist etwa so viel wie eine kleine Hauptmahlzeit."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Maoam Stripes?",
-      "answer": "100g enthalten 84g Kohlenhydrate, davon etwa 58g Zucker. Pro Stück sind das rund 4g Kohlenhydrate."
+      "answer": "100 g enthalten 84 g Kohlenhydrate, davon 58 g Zucker. Pro Stück (ca. 5,1 g) sind das rund 4 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Maoam Stripes?",
-      "answer": "Sehr wenig: nur 1,5g Eiweiß pro 100g. Maoam ist kein nennenswerter Eiweißlieferant."
+      "answer": "Sehr wenig: nur 1,5 g Eiweiß pro 100 g. Maoam ist kein nennenswerter Eiweißlieferant."
     },
     {
       "question": "Ist Maoam Stripes zum Abnehmen geeignet?",

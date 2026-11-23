@@ -3,9 +3,16 @@
   "name": "Iglo Backfisch",
   "emoji": "🐟",
   "category": "supermarkt",
+  "source": "Herstellerangabe iglo, Filegro Ofen-Backfisch (https://www.iglo.de/sortiment/fisch/filegro-ofenbackfisch, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "iglo",
+    "produkt": "Filegro Ofen-Backfisch",
+    "url": "https://www.iglo.de/sortiment/fisch/filegro-ofenbackfisch",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Iglo Backfisch Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Iglo Backfisch? Ein Filet (120g) hat ca. 294 kcal, pro 100g sind es 247 kcal. Nährwerte, Portionen und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Iglo Backfisch? Ein Filet (ca. 120 g) hat ca. 296 kcal, pro 100 g sind es 247 kcal. Nährwerte, Portionen und Tipps im Überblick.",
     "keywords": [
       "iglo backfisch kalorien",
       "iglo backfisch kcal",
@@ -20,13 +27,14 @@
     "protein_per_100g": 11,
     "carbs_per_100g": 19,
     "fat_per_100g": 14,
-    "fiber_per_100g": 0.8,
+    "fiber_per_100g": 0.5,
     "typical_portion_g": 120,
-    "typical_portion_name": "1 Filet (120g)"
+    "typical_portion_name": "1 Filet (ca. 120 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "Halbe Portion (80g)",
+      "name": "Kleine Portion (80 g)",
       "portion_g": 80,
       "calories": 198,
       "protein": 9,
@@ -34,30 +42,24 @@
       "fat": 11
     },
     {
-      "name": "1 Filet (120g)",
+      "name": "1 Filet (ca. 120 g)",
       "portion_g": 120,
       "calories": 296,
       "protein": 13,
       "carbs": 23,
       "fat": 17,
-      "tip": "Standard-Portion"
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "1 Filet ohne Panade (ca. 90g)",
-      "portion_g": 90,
-      "calories": 130,
-      "protein": 16,
-      "carbs": 1,
-      "fat": 6,
-      "tip": "Geschätzt nur Fischanteil, deutlich magerer"
-    },
-    {
-      "name": "Große Portion, 2 Filets (240g)",
+      "name": "2 Filets (ca. 240 g)",
       "portion_g": 240,
       "calories": 593,
       "protein": 26,
       "carbs": 46,
-      "fat": 34
+      "fat": 34,
+      "tip": "Packung mit 2 Filets",
+      "stueck_geschaetzt": true
     },
     {
       "name": "Pro 100g",
@@ -68,55 +70,102 @@
       "fat": 14
     },
     {
-      "name": "Mit Remoulade (1 Filet + 30g)",
+      "name": "Mit Remoulade (1 Filet ca. 120 g + 30 g)",
       "portion_g": 150,
-      "calories": 414,
+      "calories": 461,
       "protein": 14,
-      "carbs": 24,
-      "fat": 30,
-      "tip": "Remoulade treibt das Fett stark hoch"
+      "carbs": 23,
+      "fat": 35,
+      "tip": "Remoulade treibt das Fett stark hoch",
+      "stueck_geschaetzt": true,
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "slug": "remoulade",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Im Brötchen als Backfischbrötchen",
+      "name": "Backfischbrötchen (Filet ca. 120 g, Brötchen, 20 g Remoulade)",
       "portion_g": 200,
-      "calories": 446,
-      "protein": 18,
-      "carbs": 51,
-      "fat": 19,
-      "tip": "1 Filet plus Brötchen und etwas Sauce"
+      "calories": 582,
+      "protein": 19,
+      "carbs": 55,
+      "fat": 31,
+      "tip": "1 Filet plus Brötchen und etwas Sauce",
+      "stueck_geschaetzt": true,
+      "basis": [
+        {
+          "g": 120
+        },
+        {
+          "slug": "broetchen"
+        },
+        {
+          "slug": "remoulade",
+          "g": 20
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Iglo Fischstäbchen (5 Stück, ca. 150g)",
-      "calories": 290,
-      "emoji": "🐠"
+      "name": "Fischstäbchen aus dem Ofen (5 Stück, 150 g)",
+      "calories": 416,
+      "emoji": "🐠",
+      "basis": [
+        {
+          "slug": "fischstaebchen",
+          "variante": "Fischstäbchen aus dem Ofen (5 Stück)"
+        }
+      ]
     },
     {
-      "name": "Schlemmerfilet (1 Stück, ca. 200g)",
-      "calories": 320,
-      "emoji": "🧀"
+      "name": "Schlemmerfilet Bordelaise (190 g)",
+      "calories": 289,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "schlemmerfilet",
+          "variante": "1 Filet à la Bordelaise (190g)"
+        }
+      ]
     },
     {
-      "name": "Lachsfilet natur (120g)",
+      "name": "Lachsfilet natur (120 g)",
       "calories": 250,
-      "emoji": "🍣"
+      "emoji": "🍣",
+      "basis": [
+        {
+          "slug": "lachsfilet",
+          "g": 120
+        }
+      ]
     },
     {
-      "name": "Forelle gegart (120g)",
-      "calories": 150,
-      "emoji": "🎣"
+      "name": "Forelle, roh (120 g)",
+      "calories": 169,
+      "emoji": "🎣",
+      "basis": [
+        {
+          "slug": "forelle",
+          "g": 120
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Backofen statt Pfanne",
-      "text": "Iglo Backfisch ist für den Ofen gemacht. Im Ofen zubereitet brauchst du kein zusätzliches Öl, in der Pfanne kommen schnell 50 bis 100 kcal extra dazu.",
+      "text": "Iglo Filegro Ofen-Backfisch ist laut Hersteller für Backofen oder Heißluftfritteuse gedacht und wird dabei ohne zusätzliches Öl zubereitet.",
       "icon": "🔥"
     },
     {
       "title": "Die Panade macht die Kalorien",
-      "text": "Von den 247 kcal pro 100g stammt ein großer Teil aus der frittierten Panade. Der reine Fischanteil ist mager und eiweißreich.",
+      "text": "Von den 247 kcal pro 100 g stammt ein großer Teil aus dem Backteig mit Rapsöl. Der Fisch macht laut Zutatenliste 56 % aus, Alaska-Seelachs selbst ist mager und eiweißreich.",
       "icon": "🍞"
     },
     {
@@ -126,39 +175,39 @@
     },
     {
       "title": "Beilage clever kombinieren",
-      "text": "Zu einem Filet (294 kcal) passt ein großer Salat oder Gemüse besser als Pommes, wenn du auf die Kalorien achtest.",
+      "text": "Zu einem Filet (ca. 296 kcal) passt ein großer Salat oder Gemüse besser als Pommes, wenn du auf die Kalorien achtest.",
       "icon": "🥗"
     },
     {
       "title": "Eine Portion reicht",
-      "text": "Ein Filet liefert bereits rund 13g Eiweiß und sättigt gut. Zwei Filets bringen dich schon auf knapp 600 kcal.",
+      "text": "Ein Filet (ca. 120 g) liefert rund 13 g Eiweiß und sättigt gut. Zwei Filets bringen dich schon auf knapp 600 kcal.",
       "icon": "🐟"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Iglo Backfisch?",
-      "answer": "Ein Filet Iglo Ofen-Backfisch (120g) hat ca. 294 kcal. Pro 100g sind es laut Hersteller 247 kcal."
+      "answer": "Ein Filet Iglo Ofen-Backfisch (ca. 120 g, Stückgewicht nicht vom Hersteller angegeben) hat ca. 296 kcal. Pro 100 g sind es laut Hersteller 247 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Iglo Backfisch pro 100g?",
-      "answer": "Pro 100g hat Iglo Backfisch ca. 247 kcal, 11g Eiweiß, 19g Kohlenhydrate und 14g Fett."
+      "answer": "Pro 100 g hat Iglo Backfisch laut Hersteller 247 kcal, 11 g Eiweiß, 19 g Kohlenhydrate und 14 g Fett."
     },
     {
       "question": "Wie viel Eiweiß steckt in Iglo Backfisch?",
-      "answer": "Iglo Backfisch enthält etwa 11g Eiweiß pro 100g. Ein Filet (120g) liefert damit rund 13g Eiweiß."
+      "answer": "Iglo Backfisch enthält laut Hersteller 11 g Eiweiß pro 100 g. Ein Filet (ca. 120 g) liefert damit rund 13 g Eiweiß."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Iglo Backfisch?",
-      "answer": "Pro 100g enthält Iglo Backfisch ca. 19g Kohlenhydrate. Diese stammen vor allem aus der Panade, der reine Fisch ist nahezu kohlenhydratfrei."
+      "answer": "Pro 100 g enthält Iglo Backfisch laut Hersteller 19 g Kohlenhydrate. Diese stammen vor allem aus dem Backteig, der reine Fisch ist nahezu kohlenhydratfrei."
     },
     {
       "question": "Ist Iglo Backfisch zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Ein Filet hat ca. 294 kcal. Bereite ihn im Ofen ohne zusätzliches Fett zu und kombiniere ihn mit Salat oder Gemüse statt Pommes und Remoulade."
+      "answer": "In Maßen ja. Ein Filet (ca. 120 g) hat ca. 296 kcal. Bereite ihn im Ofen ohne zusätzliches Fett zu und kombiniere ihn mit Salat oder Gemüse statt Pommes und Remoulade."
     },
     {
       "question": "Ist Iglo Backfisch gesund?",
-      "answer": "Der Fischkern liefert hochwertiges Eiweiß. Durch die frittierte Panade ist das Produkt aber fett- und kalorienreicher als reiner Fisch. Als gelegentliche Mahlzeit ist es in Ordnung."
+      "answer": "Der Fischkern liefert hochwertiges Eiweiß. Durch den Backteig ist das Produkt aber fett- und kalorienreicher als reiner Fisch. Als gelegentliche Mahlzeit ist es in Ordnung."
     }
   ],
   "related_foods": [

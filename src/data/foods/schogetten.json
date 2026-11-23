@@ -3,9 +3,16 @@
   "name": "Schogetten",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Ludwig Schokolade (Schogetten), Schogetten Edel-Alpenvollmilch (https://www.schogetten.de/produkte/originals/schogetten-edel-alpenvollmilch/, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Ludwig Schokolade (Schogetten)",
+    "produkt": "Schogetten Edel-Alpenvollmilch",
+    "url": "https://www.schogetten.de/produkte/originals/schogetten-edel-alpenvollmilch/",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Schogetten Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Schogetten? Eine ganze 100g-Tafel hat 560 kcal, ein Stück nur 31 kcal. Alle Nährwerte pro Stück, Tafel & im Vergleich.",
+    "description": "Wie viele Kalorien hat Schogetten? Eine ganze 100-g-Tafel hat 560 kcal, ein Stück (ca. 5,5 g) rund 31 kcal. Alle Nährwerte pro Stück, Tafel & im Vergleich.",
     "keywords": [
       "schogetten kalorien",
       "schogetten kcal",
@@ -23,45 +30,50 @@
     "fat_per_100g": 35,
     "fiber_per_100g": 1.9,
     "typical_portion_g": 11,
-    "typical_portion_name": "2 Stück (11g)"
+    "typical_portion_name": "2 Stück (ca. 11 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Stück (5,5g)",
+      "name": "1 Stück (ca. 5,5 g)",
       "portion_g": 5.5,
       "calories": 31,
       "protein": 0.3,
       "carbs": 3,
       "fat": 1.9,
-      "tip": "Ein einzelnes Täfelchen"
+      "tip": "Ein einzelnes Täfelchen",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "2 Stück (11g)",
+      "name": "2 Stück (ca. 11 g)",
       "portion_g": 11,
       "calories": 62,
       "protein": 0.6,
       "carbs": 6.1,
       "fat": 3.9,
-      "tip": "Standard-Portion"
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "4 Stück (22g)",
+      "name": "4 Stück (ca. 22 g)",
       "portion_g": 22,
       "calories": 123,
       "protein": 1.2,
       "carbs": 12.1,
-      "fat": 7.7
+      "fat": 7.7,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "6 Stück (33g)",
+      "name": "6 Stück (ca. 33 g)",
       "portion_g": 33,
       "calories": 185,
       "protein": 1.8,
       "carbs": 18.2,
-      "fat": 11.6
+      "fat": 11.6,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Halbe Tafel (50g)",
+      "name": "Halbe Tafel (50 g)",
       "portion_g": 50,
       "calories": 280,
       "protein": 2.7,
@@ -69,54 +81,67 @@
       "fat": 17.5
     },
     {
-      "name": "Ganze Tafel (100g)",
+      "name": "Ganze Tafel (100 g)",
       "portion_g": 100,
       "calories": 560,
       "protein": 5.4,
       "carbs": 55,
       "fat": 35
-    },
-    {
-      "name": "Edel-Alpenvollmilch-Haselnuss, Tafel (100g)",
-      "portion_g": 100,
-      "calories": 575,
-      "protein": 5.9,
-      "carbs": 51,
-      "fat": 38,
-      "tip": "Haselnuss-Sorte, etwas fettreicher"
     }
   ],
   "comparison": [
     {
-      "name": "Milka Alpenmilch (100g)",
-      "calories": 530,
-      "emoji": "🍫"
+      "name": "Milka Alpenmilch (100 g)",
+      "calories": 539,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "milka-schokolade",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Ritter Sport Vollmilch (100g)",
-      "calories": 556,
-      "emoji": "🍫"
+      "name": "Ritter Sport Alpenmilch (100 g)",
+      "calories": 547,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "ritter-sport",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kinderriegel (1 Riegel)",
-      "calories": 116,
-      "emoji": "🍬"
+      "name": "Kinderriegel (1 Riegel, 21 g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel"
+        }
+      ]
     },
     {
-      "name": "Hanuta (1 Stück)",
-      "calories": 122,
-      "emoji": "🍫"
+      "name": "Hanuta (1 Stück, 22 g)",
+      "calories": 119,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "hanuta"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Stück für Stück genießen",
-      "text": "Ein einzelnes Schogetten-Stück hat nur rund 31 kcal. Wer bewusst ein bis zwei Stücke isst statt der ganzen Tafel, hält den Naschmoment bei etwa 30 bis 60 kcal.",
+      "text": "Ein einzelnes Schogetten-Stück hat nur rund 31 kcal. Wer bewusst ein bis zwei Stücke isst statt der ganzen Tafel, hält den Naschmoment bei etwa 31 bis 62 kcal.",
       "icon": "🍫"
     },
     {
       "title": "Vollmilchschokolade ist energiereich",
-      "text": "Mit 560 kcal pro 100g zählt Schogetten zu den kalorienreichen Lebensmitteln. Der hohe Wert kommt vor allem vom Fett (35g) und dem Zucker (55g).",
+      "text": "Mit 560 kcal pro 100 g zählt Schogetten zu den kalorienreichen Lebensmitteln. Der hohe Wert kommt vor allem vom Fett (35 g) und dem Zucker (55 g).",
       "icon": "⚡"
     },
     {
@@ -138,23 +163,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Schogetten?",
-      "answer": "Schogetten Vollmilch hat 560 kcal pro 100g. Ein einzelnes Stück (ca. 5,5g) hat rund 31 kcal, zwei Stück etwa 62 kcal."
+      "answer": "Schogetten Edel-Alpenvollmilch hat laut Hersteller 560 kcal pro 100 g. Ein einzelnes Stück (ca. 5,5 g) hat rund 31 kcal, zwei Stück etwa 62 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Schogetten?",
-      "answer": "Ein einzelnes Schogetten-Stück wiegt etwa 5,5g und hat rund 31 kcal. Eine ganze 100g-Tafel besteht aus 18 Stücken."
+      "answer": "Ein einzelnes Schogetten-Stück wiegt ca. 5,5 g (Stückgewicht nicht vom Hersteller angegeben) und hat rund 31 kcal. Eine 100-g-Packung entspricht damit etwa 18 Stück."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Schogetten?",
-      "answer": "Schogetten enthält 55g Kohlenhydrate pro 100g, davon nahezu der gesamte Anteil als Zucker. Ein Stück hat etwa 3g Kohlenhydrate."
+      "answer": "Schogetten enthält 55 g Kohlenhydrate pro 100 g, laut Hersteller davon 55 g Zucker. Ein Stück hat etwa 3 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Schogetten?",
-      "answer": "Der Eiweißgehalt liegt bei 5,4g pro 100g. Damit ist Schogetten keine nennenswerte Proteinquelle, sondern eine reine Süßigkeit."
+      "answer": "Der Eiweißgehalt liegt bei 5,4 g pro 100 g. Damit ist Schogetten keine nennenswerte Proteinquelle, sondern eine reine Süßigkeit."
     },
     {
       "question": "Ist Schogetten zum Abnehmen geeignet?",
-      "answer": "Schogetten ist mit 560 kcal pro 100g sehr energiereich und kein Schlankmacher. In kleinen Portionen von ein bis zwei Stück lässt es sich aber gut in eine kalorienbewusste Ernährung einbauen."
+      "answer": "Schogetten ist mit 560 kcal pro 100 g sehr energiereich und kein Schlankmacher. In kleinen Portionen von ein bis zwei Stück lässt es sich aber gut in eine kalorienbewusste Ernährung einbauen."
     },
     {
       "question": "Ist Schogetten gesund?",

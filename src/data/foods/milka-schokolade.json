@@ -3,9 +3,16 @@
   "name": "Milka Schokolade",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe Mondelez (Milka), Milka Alpenmilch 90 g (https://www.milka.com/de/produkte/milka-alpenmilch-90g-39030/, abgerufen am 23.11.2026), Werte je 100 g; gleiche Werte für Die Kleine Alpenmilch 45 g, Extra Alpenmilch 190 g und Mmmax Alpenmilch 250 g",
+  "hersteller": {
+    "name": "Mondelez (Milka)",
+    "produkt": "Milka Alpenmilch 90 g",
+    "url": "https://www.milka.com/de/produkte/milka-alpenmilch-90g-39030/",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Milka Schokolade Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Milka Schokolade? 100g Milka Alpenmilch haben ca. 530 kcal, ein Riegel (ca. 12,5g) rund 66 kcal. Nährwerte, Varianten & Tipps.",
+    "description": "Wie viele Kalorien hat Milka Schokolade? 100 g Milka Alpenmilch haben 539 kcal, ein Riegel (ca. 12,5 g) rund 67 kcal. Nährwerte, Varianten & Tipps.",
     "keywords": [
       "milka schokolade kalorien",
       "milka kalorien",
@@ -17,93 +24,137 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 530,
-    "protein_per_100g": 6.6,
-    "carbs_per_100g": 58,
-    "fat_per_100g": 29,
-    "fiber_per_100g": 2,
+    "calories_per_100g": 539,
+    "protein_per_100g": 6.5,
+    "carbs_per_100g": 57,
+    "fat_per_100g": 31,
+    "fiber_per_100g": 2.3,
     "typical_portion_g": 25,
-    "typical_portion_name": "2 Riegel (25g)"
+    "typical_portion_name": "2 Riegel (ca. 25 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Riegel (12,5g)",
+      "name": "1 Riegel (ca. 12,5 g)",
       "portion_g": 12.5,
-      "calories": 66,
+      "calories": 67,
       "protein": 0.8,
-      "carbs": 7.3,
-      "fat": 3.6,
-      "tip": "Kleine Nascherei zwischendurch"
+      "carbs": 7.1,
+      "fat": 3.9,
+      "tip": "Kleine Nascherei zwischendurch",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "2 Riegel (25g)",
+      "name": "1 Portion laut Hersteller (15 g)",
+      "portion_g": 15,
+      "calories": 81,
+      "protein": 1,
+      "carbs": 8.5,
+      "fat": 4.6
+    },
+    {
+      "name": "2 Riegel (ca. 25 g)",
       "portion_g": 25,
-      "calories": 133,
-      "protein": 1.7,
-      "carbs": 14.5,
-      "fat": 7.3,
-      "tip": "Standard-Portion"
+      "calories": 135,
+      "protein": 1.6,
+      "carbs": 14.3,
+      "fat": 7.8,
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "4 Riegel (50g)",
+      "name": "4 Riegel (ca. 50 g)",
       "portion_g": 50,
-      "calories": 265,
+      "calories": 270,
       "protein": 3.3,
-      "carbs": 29,
-      "fat": 14.5
+      "carbs": 28.5,
+      "fat": 15.5,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Halbe Tafel (50g)",
-      "portion_g": 50,
-      "calories": 265,
-      "protein": 3.3,
-      "carbs": 29,
-      "fat": 14.5
+      "name": "Die Kleine Alpenmilch (45 g)",
+      "portion_g": 45,
+      "calories": 243,
+      "protein": 2.9,
+      "carbs": 25.7,
+      "fat": 14
     },
     {
-      "name": "Ganze Tafel (100g)",
-      "portion_g": 100,
-      "calories": 530,
-      "protein": 6.6,
-      "carbs": 58,
-      "fat": 29
+      "name": "Tafel Alpenmilch (90 g)",
+      "portion_g": 90,
+      "calories": 485,
+      "protein": 5.9,
+      "carbs": 51.3,
+      "fat": 27.9
     },
     {
-      "name": "Große Tafel (270g)",
-      "portion_g": 270,
-      "calories": 1431,
-      "protein": 17.8,
-      "carbs": 156.6,
-      "fat": 78.3,
+      "name": "Extra-Tafel Alpenmilch (190 g)",
+      "portion_g": 190,
+      "calories": 1024,
+      "protein": 12.4,
+      "carbs": 108.3,
+      "fat": 58.9
+    },
+    {
+      "name": "Mmmax Alpenmilch (250 g)",
+      "portion_g": 250,
+      "calories": 1348,
+      "protein": 16.3,
+      "carbs": 142.5,
+      "fat": 77.5,
       "tip": "Familientafel - zum Teilen gedacht"
     }
   ],
   "comparison": [
     {
-      "name": "Schokolade Vollmilch",
+      "name": "Schokolade Vollmilch (100 g)",
       "calories": 535,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Schokolade Zartbitter",
-      "calories": 547,
-      "emoji": "🍫"
+      "name": "Schokolade Zartbitter (100 g)",
+      "calories": 546,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-zartbitter",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Nutella",
+      "name": "Nutella (100 g)",
       "calories": 539,
-      "emoji": "🍫"
+      "emoji": "🥄",
+      "basis": [
+        {
+          "slug": "nutella",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Gummibärchen",
+      "name": "Gummibärchen (100 g)",
       "calories": 343,
-      "emoji": "🐻"
+      "emoji": "🧸",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst portionieren",
-      "text": "Statt der ganzen Tafel zwei Riegel (25g) bewusst abbrechen und den Rest wegräumen. So bleibt es bei rund 133 kcal.",
+      "text": "Statt der ganzen Tafel zwei Riegel (ca. 25 g) bewusst abbrechen und den Rest wegräumen. So bleibt es bei rund 135 kcal.",
       "icon": "✂️"
     },
     {
@@ -113,7 +164,7 @@
     },
     {
       "title": "Fett liefert die meisten Kalorien",
-      "text": "Mit 29g Fett pro 100g steckt der Großteil der Energie im Fettanteil - deshalb ist Schokolade so kalorienreich.",
+      "text": "Mit 31 g Fett pro 100 g steckt der Großteil der Energie im Fettanteil, deshalb ist Schokolade so kalorienreich.",
       "icon": "🧈"
     },
     {
@@ -130,23 +181,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Milka Schokolade?",
-      "answer": "100g Milka Alpenmilch haben ca. 530 kcal. Eine ganze 100g-Tafel entspricht also rund 530 kcal, zwei Riegel (25g) etwa 133 kcal."
+      "answer": "100 g Milka Alpenmilch haben laut Hersteller 539 kcal. Eine Tafel (90 g) hat rund 485 kcal, zwei Riegel (ca. 25 g) etwa 135 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Riegel Milka?",
-      "answer": "Ein einzelner Riegel (ca. 12,5g) hat etwa 66 kcal. Eine Standard-Tafel besteht aus 8 Riegeln."
+      "answer": "Ein einzelner Riegel wiegt ca. 12,5 g (Stückgewicht nicht vom Hersteller angegeben) und hat etwa 67 kcal. Milka selbst rechnet mit einer Portion von 15 g, das sind 81 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Milka Schokolade?",
-      "answer": "Milka Alpenmilch enthält ca. 58g Kohlenhydrate pro 100g, davon rund 56g Zucker. Eine ganze Tafel liefert damit fast die gesamte empfohlene Tageszuckermenge."
+      "answer": "Milka Alpenmilch enthält 57 g Kohlenhydrate pro 100 g, davon 55 g Zucker. Eine ganze Tafel liefert damit fast die gesamte empfohlene Tageszuckermenge."
     },
     {
       "question": "Wie viel Protein hat Milka Schokolade?",
-      "answer": "Milka liefert etwa 6,6g Eiweiß pro 100g. Das Protein stammt überwiegend aus dem hohen Milchanteil der Alpenmilch-Schokolade."
+      "answer": "Milka liefert 6,5 g Eiweiß pro 100 g. Das Protein stammt überwiegend aus dem Milchanteil der Alpenmilch-Schokolade."
     },
     {
       "question": "Ist Milka Schokolade zum Abnehmen geeignet?",
-      "answer": "Mit 530 kcal pro 100g ist Milka sehr kalorienreich. Beim Abnehmen ist sie kein Tabu, sollte aber in kleinen Portionen und bewusst genossen werden."
+      "answer": "Mit 539 kcal pro 100 g ist Milka sehr kalorienreich. Beim Abnehmen ist sie kein Tabu, sollte aber in kleinen Portionen und bewusst genossen werden."
     },
     {
       "question": "Ist Milka Schokolade gesund?",

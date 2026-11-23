@@ -138,3 +138,23 @@ test("Rezept mit Zutat aus einer Herstellerangabe: Fußzeile nennt sie mit Link,
     }
   }
 });
+
+test("Stückgewicht nicht vom Hersteller: als Schätzung sichtbar", () => {
+  // Regel 4 (23.11.2026): Werte je 100 g vom Hersteller, das bisherige Stückgewicht bleibt als Schätzung
+  const menge = (g, einheit) => String(g).replace(".", ",") + " " + einheit;
+  for (const slug of ["celebrations","ferrero-kuesschen","fritt","gustavo-gusto-margherita","gustavo-gusto-pizza","heisse-tasse","iglo-backfisch","leibniz-butterkeks","maggi","maoam","maoam-bloxx","maoam-joystixx","maoam-stripes","mentos","milka-noisette","milka-schokolade","mon-cheri","nordsee-backfisch-baguette","ritter-sport","schogetten","tuc","tuc-cracker","tuc-kekse"]) {
+    const food = lade(slug);
+    assert.ok(food.source.startsWith("Herstellerangabe"), slug + ": keine Herstellerangabe");
+    const einheit = food.overview.einheit === "ml" ? "ml" : "g";
+    const t = text(slug);
+    const geschaetzt = food.variants.filter((v) => v.stueck_geschaetzt);
+    assert.ok(geschaetzt.length > 0 || food.overview.portion_geschaetzt, slug + ": keine Schätzung gekennzeichnet");
+    for (const v of geschaetzt) {
+      assert.ok(t.includes(`ca. ${menge(v.portion_g, einheit)}, Stückgewicht nicht vom Hersteller angegeben`), slug + " / " + v.name);
+    }
+    if (food.overview.portion_geschaetzt) {
+      const o = food.overview;
+      assert.ok(t.includes(`${o.typical_portion_name}: ca. ${menge(o.typical_portion_g, einheit)}, Stückgewicht nicht vom Hersteller angegeben.`), slug + ": typische Portion");
+    }
+  }
+});

@@ -3,9 +3,16 @@
   "name": "Nordsee Backfisch-Baguette",
   "emoji": "🥖",
   "category": "fast-food",
+  "source": "Herstellerangabe Nordsee Deutschland, Backfisch-Baguette (https://www.nordsee.com/de/produkte/snacks/backfisch-baguette, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Nordsee Deutschland",
+    "produkt": "Backfisch-Baguette",
+    "url": "https://www.nordsee.com/de/produkte/snacks/backfisch-baguette",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Nordsee Backfisch-Baguette Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat das Nordsee Backfisch-Baguette? Ein Baguette (250g) hat ca. 538 kcal. Nährwerte pro 100g & Portion plus Vergleich und Tipps.",
+    "description": "Wie viele Kalorien hat das Nordsee Backfisch-Baguette? Ein Baguette (ca. 250 g) hat rund 643 kcal, 100 g haben 257 kcal. Nährwerte pro 100 g & Portion plus Vergleich und Tipps.",
     "keywords": [
       "nordsee backfisch baguette kalorien",
       "backfisch baguette kcal",
@@ -15,108 +22,98 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 215,
-    "protein_per_100g": 8.5,
-    "carbs_per_100g": 24,
-    "fat_per_100g": 10,
-    "fiber_per_100g": 1.8,
+    "calories_per_100g": 257,
+    "protein_per_100g": 10,
+    "carbs_per_100g": 31,
+    "fat_per_100g": 8.9,
+    "fiber_per_100g": null,
     "typical_portion_g": 250,
-    "typical_portion_name": "1 Backfisch-Baguette"
+    "typical_portion_name": "1 Backfisch-Baguette (ca. 250 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "Kleine Portion (180g)",
-      "portion_g": 180,
-      "calories": 387,
-      "protein": 15,
-      "carbs": 43,
-      "fat": 18
-    },
-    {
-      "name": "1 Backfisch-Baguette (250g)",
+      "name": "1 Backfisch-Baguette (ca. 250 g)",
       "portion_g": 250,
-      "calories": 538,
-      "protein": 21,
-      "carbs": 60,
-      "fat": 25,
-      "tip": "Standard-Portion"
+      "calories": 643,
+      "protein": 25,
+      "carbs": 78,
+      "fat": 22,
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Großes Baguette (300g)",
-      "portion_g": 300,
-      "calories": 645,
-      "protein": 26,
-      "carbs": 72,
-      "fat": 30
-    },
-    {
-      "name": "Halbes Baguette (125g)",
+      "name": "Halbes Baguette (ca. 125 g)",
       "portion_g": 125,
-      "calories": 269,
-      "protein": 11,
-      "carbs": 30,
-      "fat": 13,
-      "tip": "Kleiner Hunger"
+      "calories": 321,
+      "protein": 13,
+      "carbs": 39,
+      "fat": 11,
+      "tip": "Kleiner Hunger",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Pro 100g",
+      "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 215,
-      "protein": 9,
-      "carbs": 24,
-      "fat": 10
-    },
-    {
-      "name": "Baguette ohne Remoulade (220g)",
-      "portion_g": 220,
-      "calories": 396,
-      "protein": 19,
-      "carbs": 53,
-      "fat": 12,
-      "tip": "Fettärmer"
+      "calories": 257,
+      "protein": 10,
+      "carbs": 31,
+      "fat": 9
     }
   ],
   "comparison": [
     {
-      "name": "Fischbrötchen (Backfisch)",
-      "calories": 360,
-      "emoji": "🐟"
+      "name": "Backfisch im Brötchen (210 g)",
+      "calories": 504,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "backfisch",
+          "variante": "Backfisch im Brötchen"
+        }
+      ]
     },
     {
-      "name": "Bistro-Baguette",
-      "calories": 420,
-      "emoji": "🥖"
+      "name": "Fish and Chips (1 Portion, 400 g)",
+      "calories": 1064,
+      "emoji": "🍟",
+      "basis": [
+        {
+          "slug": "fish-and-chips"
+        }
+      ]
     },
     {
-      "name": "Döner",
+      "name": "Döner Kebab",
       "calories": 696,
-      "emoji": "🥙"
-    },
-    {
-      "name": "Fish and Chips",
-      "calories": 595,
-      "emoji": "🍟"
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sättigende Hauptmahlzeit",
-      "text": "Mit rund 538 kcal pro Baguette ersetzt das Backfisch-Baguette eine vollwertige Mahlzeit. Wer abnehmen will, sollte es nicht zusätzlich zwischendurch essen.",
+      "text": "Mit rund 643 kcal pro Baguette (ca. 250 g) ersetzt das Backfisch-Baguette eine vollwertige Mahlzeit. Wer abnehmen will, sollte es nicht zusätzlich zwischendurch essen.",
       "icon": "🥖"
     },
     {
       "title": "Remoulade ist der Fett-Treiber",
-      "text": "Ein großer Teil des Fetts steckt in der Remoulade. Ohne die Soße sparst du pro Baguette gut 100 kcal und reichlich Fett ein.",
+      "text": "Ein großer Teil des Fetts steckt in Remoulade und Panade. Ohne Soße sparst du Fett und Kalorien, eigene Werte dafür nennt Nordsee aber nicht.",
       "icon": "🥄"
     },
     {
       "title": "Ordentlich Eiweiß",
-      "text": "Mit etwa 21g Protein pro Baguette liefert der Backfisch einen soliden Eiweißanteil, der zusätzlich sättigt.",
+      "text": "Mit etwa 25 g Protein pro Baguette (ca. 250 g) liefert der Backfisch einen soliden Eiweißanteil, der zusätzlich sättigt.",
       "icon": "💪"
     },
     {
-      "title": "Frittiert statt gedünstet",
-      "text": "Der Fisch ist paniert und frittiert. Eine gegrillte oder gedünstete Fischvariante hat bei gleicher Menge deutlich weniger Kalorien.",
+      "title": "Panade bringt Kalorien",
+      "text": "Das Seelachsfilet steckt in einer würzigen Panade. Eine gegrillte oder gedünstete Fischvariante hat bei gleicher Menge deutlich weniger Kalorien.",
       "icon": "🍳"
     },
     {
@@ -128,27 +125,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat das Nordsee Backfisch-Baguette?",
-      "answer": "Ein Backfisch-Baguette (ca. 250g) hat rund 538 kcal. Pro 100g sind es etwa 215 kcal."
+      "answer": "Ein Backfisch-Baguette hat bei ca. 250 g (Gewicht nicht vom Hersteller angegeben) rund 643 kcal. Pro 100 g sind es laut Nordsee 257 kcal."
     },
     {
       "question": "Wie viele Kalorien hat das Backfisch-Baguette pro 100g?",
-      "answer": "Pro 100g enthält das Backfisch-Baguette etwa 215 kcal, 8,5g Eiweiß, 24g Kohlenhydrate und 10g Fett."
+      "answer": "Pro 100 g enthält das Backfisch-Baguette laut Nordsee 257 kcal, 10 g Eiweiß, 31 g Kohlenhydrate und 8,9 g Fett."
     },
     {
       "question": "Wie viel Eiweiß steckt im Backfisch-Baguette?",
-      "answer": "Ein ganzes Baguette liefert rund 21g Protein, vor allem aus dem panierten Fischfilet."
+      "answer": "Ein ganzes Baguette (ca. 250 g) liefert rund 25 g Protein, vor allem aus dem panierten Fischfilet."
     },
     {
       "question": "Wie viele Kohlenhydrate hat das Backfisch-Baguette?",
-      "answer": "Pro Baguette sind es etwa 60g Kohlenhydrate, die größtenteils aus dem Weißmehl-Baguette stammen."
+      "answer": "Pro Baguette (ca. 250 g) sind es etwa 78 g Kohlenhydrate, die größtenteils aus Baguette und Panade stammen."
     },
     {
       "question": "Ist das Backfisch-Baguette zum Abnehmen geeignet?",
-      "answer": "Mit rund 538 kcal ist es eine vollwertige Mahlzeit. In einer Diät passt es in Maßen, wenn du es als Hauptmahlzeit einplanst und auf Extras wie Pommes verzichtest."
+      "answer": "Mit rund 643 kcal ist es eine vollwertige Mahlzeit. In einer Diät passt es in Maßen, wenn du es als Hauptmahlzeit einplanst und auf Extras wie Pommes verzichtest."
     },
     {
       "question": "Ist das Backfisch-Baguette gesund?",
-      "answer": "Der Fisch liefert Eiweiß, durch Panade, Frittierfett und Remoulade ist das Baguette aber recht fett- und kalorienreich. Als gelegentliche Mahlzeit ist es in Ordnung, nicht als tägliche Kost."
+      "answer": "Der Fisch liefert Eiweiß, durch Panade und Remoulade ist das Baguette aber recht kalorienreich. Als gelegentliche Mahlzeit ist es in Ordnung, nicht als tägliche Kost."
     }
   ],
   "related_foods": [

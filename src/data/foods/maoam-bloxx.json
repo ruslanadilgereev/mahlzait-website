@@ -3,9 +3,16 @@
   "name": "Maoam Bloxx",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe HARIBO, MAOAM Bloxx (https://www.haribo.com/de-de/produkte/maoam/maoam-bloxx, abgerufen am 23.11.2026), Werte je 100 g; Fett und Eiweiß nennt die Herstellertabelle nur als Obergrenze („< 6,4 g“ und „< 1 g“), hier mit 6,4 g und 1 g eingetragen",
+  "hersteller": {
+    "name": "HARIBO",
+    "produkt": "MAOAM Bloxx",
+    "url": "https://www.haribo.com/de-de/produkte/maoam/maoam-bloxx",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Maoam Bloxx Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Maoam Bloxx? Ein Bloxx (4,4 g) hat ca. 17 kcal, 100 g rund 393 kcal. Alle Nährwerte, Portionen und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Maoam Bloxx? Ein Bloxx (ca. 4,4 g) hat rund 17 kcal, 100 g haben 394 kcal. Alle Nährwerte, Portionen und Tipps im Überblick.",
     "keywords": [
       "maoam bloxx kalorien",
       "maoam bloxx kcal",
@@ -17,110 +24,145 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 393,
-    "protein_per_100g": 0.5,
+    "calories_per_100g": 394,
+    "protein_per_100g": 1,
     "carbs_per_100g": 84,
     "fat_per_100g": 6.4,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 22,
-    "typical_portion_name": "1 Riegel (5 Bloxx, 22 g)"
+    "typical_portion_name": "1 Riegel (5 Bloxx, ca. 22 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Bloxx (4,4 g)",
+      "name": "1 Bloxx (ca. 4,4 g)",
       "portion_g": 4.4,
       "calories": 17,
       "protein": 0,
       "carbs": 3.7,
-      "fat": 0.3
+      "fat": 0.3,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "1 Riegel (5 Bloxx, 22 g)",
+      "name": "1 Riegel (5 Bloxx, ca. 22 g)",
       "portion_g": 22,
-      "calories": 86,
-      "protein": 0.1,
+      "calories": 87,
+      "protein": 0.2,
       "carbs": 18.5,
       "fat": 1.4,
-      "tip": "Standard-Portion"
+      "tip": "Standard-Portion",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "2 Riegel (10 Bloxx, 44 g)",
+      "name": "2 Riegel (10 Bloxx, ca. 44 g)",
       "portion_g": 44,
       "calories": 173,
-      "protein": 0.2,
+      "protein": 0.4,
       "carbs": 37,
-      "fat": 2.8
+      "fat": 2.8,
+      "stueck_geschaetzt": true
     },
     {
       "name": "Kleine Handvoll (50 g)",
       "portion_g": 50,
-      "calories": 196,
-      "protein": 0.2,
+      "calories": 197,
+      "protein": 0.5,
       "carbs": 42,
       "fat": 3.2
     },
     {
       "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 393,
-      "protein": 0.5,
-      "carbs": 84,
-      "fat": 6
-    },
-    {
-      "name": "Halbe Tüte (100 g)",
-      "portion_g": 100,
-      "calories": 393,
-      "protein": 0.5,
-      "carbs": 84,
-      "fat": 6
-    },
-    {
-      "name": "Ganze Tüte (200 g)",
-      "portion_g": 200,
-      "calories": 786,
+      "calories": 394,
       "protein": 1,
-      "carbs": 168,
-      "fat": 6,
-      "tip": "Familienbeutel, nicht für eine Portion gedacht"
+      "carbs": 84,
+      "fat": 6.4
+    },
+    {
+      "name": "Packung (66 g)",
+      "portion_g": 66,
+      "calories": 260,
+      "protein": 0.7,
+      "carbs": 55.4,
+      "fat": 4.2
+    },
+    {
+      "name": "Packung (110 g)",
+      "portion_g": 110,
+      "calories": 433,
+      "protein": 1.1,
+      "carbs": 92.4,
+      "fat": 7
+    },
+    {
+      "name": "Packung (220 g)",
+      "portion_g": 220,
+      "calories": 867,
+      "protein": 2.2,
+      "carbs": 184.8,
+      "fat": 14.1
     }
   ],
   "comparison": [
     {
-      "name": "Gummibärchen",
+      "name": "Haribo Goldbären (100 g)",
       "calories": 343,
-      "emoji": "🐻"
+      "emoji": "🧸",
+      "basis": [
+        {
+          "slug": "haribo",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Haribo",
-      "calories": 343,
-      "emoji": "🍬"
-    },
-    {
-      "name": "Schokolade Vollmilch",
+      "name": "Vollmilchschokolade (100 g)",
       "calories": 535,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Chupa Chups",
-      "calories": 388,
-      "emoji": "🍭"
+      "name": "Chupa Chups (100 g)",
+      "calories": 385,
+      "emoji": "🍭",
+      "basis": [
+        {
+          "slug": "chupa-chups",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Maoam Stripes (100 g)",
+      "calories": 409,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "maoam-stripes",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein, aber kalorienreich",
-      "text": "Ein einzelnes Bloxx hat nur 17 kcal, doch durch den hohen Zuckeranteil summiert sich eine ganze Tüte (200 g) schnell auf knapp 800 kcal.",
+      "text": "Ein einzelnes Bloxx hat nur rund 17 kcal, doch durch den hohen Zuckeranteil summiert sich eine 220-g-Packung schnell auf rund 867 kcal.",
       "icon": "🍬"
     },
     {
       "title": "Portion abzählen",
-      "text": "Teilen Sie sich die Bonbons in kleine Riegel zu je 5 Bloxx ein. So behalten Sie mit rund 86 kcal pro Riegel den Überblick statt aus der offenen Tüte zu naschen.",
+      "text": "Laut Hersteller stecken in einem Riegel fünf Bloxx. Mit rund 87 kcal pro Riegel (ca. 22 g) behalten Sie den Überblick, statt aus der offenen Tüte zu naschen.",
       "icon": "🔢"
     },
     {
       "title": "Fast nur Kohlenhydrate",
-      "text": "Maoam Bloxx liefern mit 84 g Kohlenhydraten pro 100 g praktisch reinen Zucker. Eiweiß und Ballaststoffe fehlen, daher sättigen sie kaum.",
+      "text": "Maoam Bloxx liefern mit 84 g Kohlenhydraten pro 100 g, davon 60 g Zucker, vor allem schnelle Energie. Eiweiß ist kaum enthalten, daher sättigen sie kaum.",
       "icon": "🍭"
     },
     {
@@ -137,19 +179,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Maoam Bloxx?",
-      "answer": "Ein einzelnes Bloxx (4,4 g) hat etwa 17 kcal. Pro 100 g kommen Maoam Bloxx auf rund 393 kcal."
+      "answer": "Ein einzelnes Bloxx wiegt ca. 4,4 g (Stückgewicht nicht vom Hersteller angegeben) und hat etwa 17 kcal. Pro 100 g kommen Maoam Bloxx laut Hersteller auf 394 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Riegel Maoam Bloxx?",
-      "answer": "Ein Riegel mit 5 Bloxx (22 g) enthält ca. 86 kcal."
+      "answer": "Ein Riegel mit 5 Bloxx (ca. 22 g) enthält rund 87 kcal."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in Maoam Bloxx?",
-      "answer": "Maoam Bloxx bestehen fast vollständig aus Kohlenhydraten: 84 g pro 100 g, davon der überwiegende Teil Zucker. Ein Riegel (22 g) liefert rund 18,5 g Kohlenhydrate."
+      "answer": "Maoam Bloxx bestehen fast vollständig aus Kohlenhydraten: 84 g pro 100 g, davon 60 g Zucker. Ein Riegel (ca. 22 g) liefert rund 18,5 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß haben Maoam Bloxx?",
-      "answer": "Sehr wenig: nur etwa 0,5 g Eiweiß pro 100 g. Als Eiweißquelle sind sie ungeeignet."
+      "answer": "Sehr wenig: laut Hersteller unter 1 g Eiweiß pro 100 g. Als Eiweißquelle sind sie ungeeignet."
     },
     {
       "question": "Sind Maoam Bloxx zum Abnehmen geeignet?",
@@ -157,7 +199,7 @@
     },
     {
       "question": "Sind Maoam Bloxx gesund?",
-      "answer": "Maoam Bloxx sind eine Süßigkeit ohne nennenswerte Nährstoffe. Sie liefern Zucker und Fett, aber keine Ballaststoffe oder Vitamine. In Maßen genossen sind sie unbedenklich, gesund sind sie jedoch nicht."
+      "answer": "Maoam Bloxx sind eine Süßigkeit ohne nennenswerte Nährstoffe. Sie liefern vor allem Zucker und Fett. In Maßen genossen sind sie unbedenklich, gesund sind sie jedoch nicht."
     }
   ],
   "related_foods": [
