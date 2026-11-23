@@ -3,9 +3,17 @@
   "name": "Lion",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe (Schweiz) Nestlé Professional Schweiz, LION 42 g (https://www.nestleprofessional.ch/nestle-confectionery/lion-42-g, abgerufen am 23.11.2026), Werte je 100 g; Energie laut Hersteller 2043 kJ, nur in kJ angegeben, umgerechnet 488 kcal (kJ geteilt durch 4,184)",
+  "hersteller": {
+    "name": "Nestlé Professional Schweiz",
+    "produkt": "LION 42 g",
+    "url": "https://www.nestleprofessional.ch/nestle-confectionery/lion-42-g",
+    "abgerufen": "2026-11-23",
+    "land": "Schweiz"
+  },
   "seo": {
     "title": "Lion Kalorien: Nährwerte, Riegel & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Lion? Ein Lion Riegel (42g) hat ca. 205 kcal. Nährwerte pro 100g & pro Riegel, Varianten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Lion? Ein Lion Riegel (42 g) hat rund 205 kcal, 100 g haben 488 kcal. Nährwerte pro 100 g & pro Riegel, Varianten und Tipps im Überblick.",
     "keywords": [
       "lion kalorien",
       "lion riegel kalorien",
@@ -17,10 +25,10 @@
   },
   "overview": {
     "calories_per_100g": 488,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 64,
-    "fat_per_100g": 22.5,
-    "fiber_per_100g": 1.5,
+    "protein_per_100g": 4.5,
+    "carbs_per_100g": 67.1,
+    "fat_per_100g": 22,
+    "fiber_per_100g": 1.2,
     "typical_portion_g": 42,
     "typical_portion_name": "1 Lion Riegel (42g)"
   },
@@ -29,104 +37,98 @@
       "name": "Lion Riegel (42g)",
       "portion_g": 42,
       "calories": 205,
-      "protein": 2.1,
-      "carbs": 27,
-      "fat": 9.4,
+      "protein": 1.9,
+      "carbs": 28.2,
+      "fat": 9.2,
       "tip": "Standard-Einzelriegel"
     },
     {
       "name": "Lion halber Riegel (21g)",
       "portion_g": 21,
       "calories": 102,
-      "protein": 1,
-      "carbs": 13,
-      "fat": 4.7
+      "protein": 0.9,
+      "carbs": 14.1,
+      "fat": 4.6
     },
     {
-      "name": "Lion King Size (60g)",
+      "name": "Lion King Size (ca. 60 g)",
       "portion_g": 60,
       "calories": 293,
-      "protein": 3,
-      "carbs": 38,
-      "fat": 13.5
-    },
-    {
-      "name": "Lion Mini (15g)",
-      "portion_g": 15,
-      "calories": 73,
-      "protein": 0.8,
-      "carbs": 10,
-      "fat": 3.4,
-      "tip": "Aus der Sharing-Tüte"
-    },
-    {
-      "name": "Lion Peanut Riegel (41g)",
-      "portion_g": 41,
-      "calories": 207,
-      "protein": 3.3,
-      "carbs": 24,
-      "fat": 10.7,
-      "tip": "Erdnuss-Variante, etwas mehr Fett"
-    },
-    {
-      "name": "Lion White Riegel (42g)",
-      "portion_g": 42,
-      "calories": 212,
-      "protein": 2.3,
-      "carbs": 28,
-      "fat": 10,
-      "tip": "Weiße Schokolade"
+      "protein": 2.7,
+      "carbs": 40.3,
+      "fat": 13.2,
+      "stueck_geschaetzt": true
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
       "calories": 488,
-      "protein": 5,
-      "carbs": 64,
-      "fat": 22.5
+      "protein": 4.5,
+      "carbs": 67.1,
+      "fat": 22
     }
   ],
   "comparison": [
     {
-      "name": "Snickers",
-      "calories": 245,
-      "emoji": "🍫"
+      "name": "Snickers (50g)",
+      "calories": 246,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "snickers"
+        }
+      ]
     },
     {
-      "name": "Twix",
-      "calories": 250,
-      "emoji": "🍫"
+      "name": "Twix (2 Riegel, 50g)",
+      "calories": 251,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix"
+        }
+      ]
     },
     {
-      "name": "Mars",
-      "calories": 230,
-      "emoji": "🍫"
+      "name": "KitKat (4 Finger, 41,5g)",
+      "calories": 215,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat"
+        }
+      ]
     },
     {
-      "name": "Kinderriegel",
-      "calories": 115,
-      "emoji": "🍫"
+      "name": "Kinderriegel (21g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Standard-Riegel im Blick",
-      "text": "Ein Lion Riegel (42g) liefert rund 205 kcal. Das ist eine ähnliche Menge wie bei Snickers, Twix oder Mars in vergleichbarer Größe.",
+      "text": "Ein Lion Riegel (42 g) liefert rund 205 kcal. Das ist eine ähnliche Menge wie bei Snickers, Twix oder KitKat in vergleichbarer Größe.",
       "icon": "🍫"
     },
     {
       "title": "Hoher Zuckeranteil",
-      "text": "Mit etwa 64g Kohlenhydraten pro 100g besteht Lion zu großen Teilen aus Zucker. Als gelegentlicher Genuss ist das in Ordnung, als täglicher Snack eher ungünstig.",
+      "text": "Mit 67,1 g Kohlenhydraten pro 100 g, davon 53,4 g Zucker, besteht Lion zu großen Teilen aus Zucker. Als gelegentlicher Genuss ist das in Ordnung, als täglicher Snack eher ungünstig.",
       "icon": "🍬"
     },
     {
-      "title": "Mini-Riegel zum Portionieren",
-      "text": "Die kleinen Lion Mini (ca. 15g, rund 73 kcal) eignen sich gut, wenn man eine festgelegte Portion möchte, statt einen ganzen Riegel zu essen.",
+      "title": "Halber Riegel zum Portionieren",
+      "text": "Ein halber Lion Riegel (21 g) hat rund 102 kcal. Das eignet sich gut, wenn man eine festgelegte kleine Portion möchte, statt einen ganzen Riegel zu essen.",
       "icon": "✂️"
     },
     {
       "title": "Kaum sättigend",
-      "text": "Lion enthält wenig Eiweiß und kaum Ballaststoffe, sättigt also nur kurz. Wer länger satt bleiben will, ist mit Nüssen oder Obst besser bedient.",
+      "text": "Lion enthält wenig Eiweiß (4,5 g pro 100 g) und kaum Ballaststoffe (1,2 g pro 100 g), sättigt also nur kurz. Wer länger satt bleiben will, ist mit Nüssen oder Obst besser bedient.",
       "icon": "⏱️"
     },
     {
@@ -138,19 +140,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Lion Riegel?",
-      "answer": "Ein normaler Lion Riegel (42g) hat ca. 205 kcal. Pro 100g sind es rund 488 kcal."
+      "answer": "Ein Lion Riegel (42 g) hat rund 205 kcal, pro 100 g sind es 488 kcal. Nestlé Professional Schweiz gibt die Energie nur in Kilojoule an (2043 kJ pro 100 g), die kcal sind daraus umgerechnet."
     },
     {
       "question": "Wie viele Kalorien hat ein Lion pro 100g?",
-      "answer": "Lion hat etwa 488 kcal pro 100g, dazu rund 5g Eiweiß, 64g Kohlenhydrate und 22,5g Fett."
+      "answer": "Lion hat 488 kcal pro 100 g (umgerechnet aus 2043 kJ), dazu laut Hersteller 4,5 g Eiweiß, 67,1 g Kohlenhydrate und 22 g Fett."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Lion?",
-      "answer": "Ein Lion Riegel (42g) enthält etwa 27g Kohlenhydrate, davon der größte Teil Zucker. Pro 100g sind es rund 64g."
+      "answer": "Ein Lion Riegel (42 g) enthält rund 28 g Kohlenhydrate, davon gut 22 g Zucker. Pro 100 g sind es 67,1 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat ein Lion?",
-      "answer": "Ein Lion Riegel (42g) liefert nur etwa 2g Eiweiß. Lion ist damit keine nennenswerte Eiweißquelle."
+      "answer": "Ein Lion Riegel (42 g) liefert nur knapp 2 g Eiweiß (4,5 g pro 100 g). Lion ist damit keine nennenswerte Eiweißquelle."
     },
     {
       "question": "Ist Lion zum Abnehmen geeignet?",

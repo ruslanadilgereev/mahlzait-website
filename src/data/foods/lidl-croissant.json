@@ -3,9 +3,17 @@
   "name": "Lidl Croissant",
   "emoji": "🥐",
   "category": "supermarkt",
+  "source": "Herstellerangabe (Österreich) Lidl, Butter-Croissant 60 g (https://www.lidl.at/p/butter-croissant-60-g/p99914733, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Lidl Österreich",
+    "produkt": "Butter-Croissant 60 g",
+    "url": "https://www.lidl.at/p/butter-croissant-60-g/p99914733",
+    "abgerufen": "2026-11-23",
+    "land": "Österreich"
+  },
   "seo": {
     "title": "Lidl Croissant Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Lidl Croissant? Ein Stück (60g) hat ca. 244 kcal, 100g rund 406 kcal. Nährwerte, Varianten & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Lidl Croissant? Ein Butter-Croissant (60 g) hat laut Lidl Österreich 262 kcal, 100 g haben 437 kcal. Nährwerte, Varianten & Tipps im Überblick.",
     "keywords": [
       "lidl croissant kcal",
       "lidl croissant kalorien",
@@ -16,107 +24,128 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 406,
+    "calories_per_100g": 437,
     "protein_per_100g": 8.7,
-    "carbs_per_100g": 46,
-    "fat_per_100g": 21,
-    "fiber_per_100g": 2.2,
+    "carbs_per_100g": 44,
+    "fat_per_100g": 24,
+    "fiber_per_100g": 1.8,
     "typical_portion_g": 60,
     "typical_portion_name": "1 Croissant (60g)"
   },
   "variants": [
     {
-      "name": "Mini-Croissant (30g)",
+      "name": "Halbes Croissant (30 g)",
       "portion_g": 30,
-      "calories": 122,
+      "calories": 131,
       "protein": 3,
-      "carbs": 14,
-      "fat": 6
+      "carbs": 13,
+      "fat": 7
     },
     {
       "name": "1 Croissant (60g)",
       "portion_g": 60,
-      "calories": 244,
+      "calories": 262,
       "protein": 5,
-      "carbs": 28,
-      "fat": 13,
+      "carbs": 26,
+      "fat": 14,
       "tip": "Standard"
-    },
-    {
-      "name": "1 großes Croissant (75g)",
-      "portion_g": 75,
-      "calories": 305,
-      "protein": 7,
-      "carbs": 35,
-      "fat": 16
     },
     {
       "name": "100g Croissant",
       "portion_g": 100,
-      "calories": 406,
+      "calories": 437,
       "protein": 9,
-      "carbs": 46,
-      "fat": 21
+      "carbs": 44,
+      "fat": 24
     },
     {
       "name": "2 Croissants (120g)",
       "portion_g": 120,
-      "calories": 487,
+      "calories": 524,
       "protein": 10,
-      "carbs": 55,
-      "fat": 25
+      "carbs": 53,
+      "fat": 29
     },
     {
       "name": "Nougat-Croissant (80g)",
       "portion_g": 80,
-      "calories": 263,
-      "protein": 5,
-      "carbs": 28,
-      "fat": 14,
-      "tip": "Schoko-/Nougatfüllung"
+      "calories": 337,
+      "protein": 6,
+      "carbs": 40,
+      "fat": 18,
+      "tip": "Schoko-/Nougatfüllung",
+      "basis": [
+        {
+          "slug": "nuss-nougat-croissant",
+          "g": 80
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Brötchen",
-      "calories": 134,
-      "emoji": "🥖"
+      "calories": 176,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "broetchen"
+        }
+      ]
     },
     {
       "name": "Croissant (60g)",
       "calories": 244,
-      "emoji": "🥐"
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant",
+          "g": 60
+        }
+      ]
     },
     {
       "name": "Pain au Chocolat (70g)",
-      "calories": 290,
-      "emoji": "🍫"
+      "calories": 295,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "pain-au-chocolat",
+          "g": 70
+        }
+      ]
     },
     {
       "name": "Donut (60g)",
-      "calories": 270,
-      "emoji": "🍩"
+      "calories": 253,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "donut",
+          "g": 60
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Fett liefert die meisten Kalorien",
-      "text": "Rund die Hälfte der Kalorien eines Lidl Croissants stammt aus Fett (21g pro 100g). Das macht das Gebäck energiereich, aber wenig sättigend.",
+      "text": "Rund die Hälfte der Kalorien eines Lidl Croissants stammt aus Fett (24 g pro 100 g). Das macht das Gebäck energiereich, aber wenig sättigend.",
       "icon": "🧈"
     },
     {
       "title": "Bewusst genießen statt nebenbei",
-      "text": "Ein Croissant von 60g liefert ca. 244 kcal. Wer es als Frühstück plant, kombiniert es am besten mit Eiweiß wie Quark oder einem Ei, um länger satt zu bleiben.",
+      "text": "Ein Croissant von 60 g liefert 262 kcal. Wer es als Frühstück plant, kombiniert es am besten mit Eiweiß wie Quark oder einem Ei, um länger satt zu bleiben.",
       "icon": "🍽️"
     },
     {
-      "title": "Mini-Variante spart Kalorien",
-      "text": "Ein Mini-Croissant (30g) hat nur etwa 122 kcal. Wer Lust auf den Geschmack hat, aber Kalorien sparen möchte, greift zur kleinen Version.",
+      "title": "Halbes Croissant spart Kalorien",
+      "text": "Ein halbes Croissant (30 g) hat rund 131 kcal. Wer Lust auf den Geschmack hat, aber Kalorien sparen möchte, teilt sich das Croissant.",
       "icon": "🤏"
     },
     {
       "title": "Gefüllte Croissants beachten",
-      "text": "Nougat- oder Schoko-Croissants haben durch die Füllung zusätzlichen Zucker. Pro Stück landen schnell 260 kcal und mehr auf dem Teller.",
+      "text": "Nougat- oder Schoko-Croissants haben durch die Füllung zusätzlichen Zucker. Ein Nougat-Croissant mit 80 g kommt auf rund 337 kcal.",
       "icon": "🍫"
     },
     {
@@ -128,23 +157,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Lidl Croissant?",
-      "answer": "Ein Lidl Croissant aus der Backstation (ca. 60g) hat rund 244 kcal. Pro 100g sind es etwa 406 kcal."
+      "answer": "Ein Butter-Croissant von Lidl (60 g) hat laut Lidl Österreich 262 kcal. Pro 100 g sind es 437 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Lidl Croissant pro 100g?",
-      "answer": "Ein Lidl Croissant hat laut Nährwertangabe etwa 406 kcal pro 100g, mit rund 21g Fett und 46g Kohlenhydraten."
+      "answer": "Laut Lidl Österreich hat das Butter-Croissant 437 kcal pro 100 g, mit 24 g Fett und 44 g Kohlenhydraten."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Lidl Croissant?",
-      "answer": "Pro 100g enthält ein Lidl Croissant rund 46g Kohlenhydrate. Ein Stück von 60g kommt auf etwa 28g."
+      "answer": "Pro 100 g enthält das Lidl Croissant 44 g Kohlenhydrate, davon 7,2 g Zucker. Ein Stück von 60 g kommt auf rund 26 g."
     },
     {
       "question": "Wie viel Eiweiß steckt in einem Lidl Croissant?",
-      "answer": "Ein Lidl Croissant liefert etwa 8,7g Eiweiß pro 100g. Ein einzelnes Croissant (60g) enthält rund 5g Protein."
+      "answer": "Das Lidl Croissant liefert 8,7 g Eiweiß pro 100 g. Ein einzelnes Croissant (60 g) enthält rund 5 g Protein."
     },
     {
       "question": "Ist ein Lidl Croissant zum Abnehmen geeignet?",
-      "answer": "Ein Croissant ist sehr fett- und kalorienreich und sättigt durch wenig Eiweiß und Ballaststoffe kaum. In einer Diät passt es nur als gelegentlicher Genuss, am besten in der Mini-Variante."
+      "answer": "Ein Croissant ist sehr fett- und kalorienreich und sättigt durch wenig Eiweiß und Ballaststoffe kaum. In einer Diät passt es nur als gelegentlicher Genuss, am besten als halbes Croissant."
     },
     {
       "question": "Ist ein Lidl Croissant gesund?",

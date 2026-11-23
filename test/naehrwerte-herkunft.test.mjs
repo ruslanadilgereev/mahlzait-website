@@ -16,7 +16,8 @@
 //   FDC-Eintrag (Quark, Matjes, Leberkäse) rechnen mit den Werten einer Seite
 //   mit Herstellerangabe (slug statt FDC-ID, Entscheidung vom 23.11.2026);
 // - eine Herstellerangabe: das Feld hersteller nennt Hersteller, Produkt, die
-//   https-Adresse der Herstellerseite und das Abrufdatum.
+//   https-Adresse der Herstellerseite und das Abrufdatum; Seiten aus Österreich
+//   oder der Schweiz nennen das Land (hersteller.land).
 // Portionswerte folgen aus den Werten je 100 g: Eine Variante, die nur eine
 // andere Menge ist, rechnet mit den Werten der Seite; jede andere Variante und
 // jeder Vergleich nennt ihre Bestandteile (basis: eigene Seite, FDC-ID, andere
@@ -58,18 +59,17 @@ const OFFEN = new Set([
    "bounty", "bounty-mini", "bowl", "campari", "captain-morgan", "caro-kaffee", "daim-mini",
    "dr-pepper", "ebly", "feta-light", "five-guys-burger", "fleisch", "fruehstueck", "gemuese",
    "giotto", "guinness", "hans-im-glueck-burger", "kaese", "katjes", "kfc-hot-wings",
-   "kfc-twister", "kiri", "klopfer", "l-osteria-pizza", "lidl-ciabatta", "lidl-croissant",
-   "lidl-donut", "lillet", "lion", "lion-mini", "magnum-double-caramel", "maltesers", "mars",
-   "mars-eis", "mars-mini", "mars-riegel", "mate-tee", "mc-frappe", "mc-toast", "mikado",
-   "milky-way", "mini-milky-way", "muellermilch", "nesquik", "neuburger", "nuts", "oreo-donut",
-   "pepsi-max", "philadelphia-light", "piccolinis", "pop-tarts", "praline", "proteinriegel",
-   "schokoriegel", "smarties", "smirnoff-ice", "snickers-crisp", "stella-artois", "tassimo-milka",
+   "kfc-twister", "kiri", "klopfer", "l-osteria-pizza", "lillet", "lion-mini",
+   "magnum-double-caramel", "maltesers", "mars", "mars-eis", "mars-mini", "mars-riegel",
+   "mate-tee", "mc-frappe", "mc-toast", "mikado", "milky-way", "mini-milky-way", "muellermilch",
+   "nesquik", "nuts", "oreo-donut", "pepsi-max", "philadelphia-light", "piccolinis", "pop-tarts",
+   "praline", "proteinriegel", "schokoriegel", "smirnoff-ice", "snickers-crisp", "tassimo-milka",
    "twister-eis", "vapiano", "waterdrop", "wonderwaffel", "wurst", "yfood", "yum-yum",
 ]);
 // </OFFEN>
 
 // Seiten nach Regel 4 (Herstellerwerte je 100 g, Stückgewicht geschätzt)
-const STUECKGEWICHT_GESCHAETZT = new Set(["celebrations", "ferrero-kuesschen", "fritt", "gustavo-gusto-margherita", "gustavo-gusto-pizza", "heisse-tasse", "iglo-backfisch", "leibniz-butterkeks", "maggi", "maoam", "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mentos", "milka-noisette", "milka-schokolade", "mon-cheri", "nordsee-backfisch-baguette", "ritter-sport", "schogetten", "tuc", "tuc-cracker", "tuc-kekse"]);
+const STUECKGEWICHT_GESCHAETZT = new Set(["celebrations", "ferrero-kuesschen", "fritt", "gustavo-gusto-margherita", "gustavo-gusto-pizza", "heisse-tasse", "iglo-backfisch", "leibniz-butterkeks", "lidl-ciabatta", "lion", "maggi", "maoam", "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mentos", "milka-noisette", "milka-schokolade", "mon-cheri", "neuburger", "nordsee-backfisch-baguette", "ritter-sport", "schogetten", "smarties", "tuc", "tuc-cracker", "tuc-kekse"]);
 
 const alle = alleLebensmittel();
 const seiten = new Map(alle.map(({ slug, food }) => [slug, food]));
@@ -93,7 +93,7 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 867, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 874, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
 test("jedes source-Feld nennt FDC oder eine Herstellerangabe", () => {
@@ -190,6 +190,14 @@ test("Herstellerangaben nennen Hersteller, Produkt, https-Adresse und Abrufdatum
     assert.ok(food.source.includes(h.url), slug + ": URL fehlt im source-Text");
     const [j, m, t] = h.abgerufen.split("-");
     assert.ok(food.source.includes("abgerufen am " + t + "." + m + "." + j), slug + ": Abrufdatum fehlt im source-Text");
+    // Herstellerseite aus Österreich oder der Schweiz (Entscheidung vom 23.11.2026), sonst für den deutschen Markt
+    if (h.land != null) {
+      assert.ok(["Österreich", "Schweiz"].includes(h.land), slug + ": land " + h.land);
+      assert.ok(!h.beispiel, slug + ": Beispiel mit Land");
+      assert.ok(food.source.startsWith("Herstellerangabe (" + h.land + ") "), slug + ": source ohne Land");
+    } else {
+      assert.ok(!food.source.startsWith("Herstellerangabe ("), slug + ": Land im source-Text, aber nicht in hersteller.land");
+    }
   }
 });
 

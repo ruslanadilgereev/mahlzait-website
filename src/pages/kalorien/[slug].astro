@@ -156,7 +156,7 @@ const howToSchema = {
 const isBasedOn: object[] = [];
 const herstellerSeite = (h: any) => ({
   "@type": "WebPage",
-  name: `${h.produkt}: Nährwertangabe von ${h.name}`,
+  name: `${h.produkt}: Nährwertangabe von ${h.name}${h.land ? ` (${h.land})` : ""}`,
   url: h.url,
   publisher: { "@type": "Organization", name: h.name },
 });

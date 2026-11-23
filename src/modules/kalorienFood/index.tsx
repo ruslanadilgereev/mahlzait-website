@@ -77,6 +77,8 @@ interface Herstellerangabe {
   abgerufen: string;
   // allgemeine Seite, deren Werte ein Markenprodukt als Beispiel nennen
   beispiel?: boolean;
+  // offizielle Herstellerseite aus Österreich oder der Schweiz (keine für Deutschland)
+  land?: "Österreich" | "Schweiz";
 }
 
 // Rezeptzutat mit den Werten einer anderen Seite, deren Werte eine Herstellerangabe sind
@@ -88,12 +90,12 @@ interface RezeptHerstellerangabe {
 }
 
 const datum = (iso: string) => iso.split("-").reverse().join(".");
-// Hinweis unter der Nährwerttabelle ("Herstellerangabe: ..."), Fußzeile ("Quelle: Herstellerangabe ...")
+// Hinweis unter der Nährwerttabelle ("Herstellerangabe: ...", "Herstellerangabe (Österreich): ..."), Fußzeile ("Quelle: Herstellerangabe ...")
 // oder Rezeptzutat; allgemeine Seiten "Werte am Beispiel ... (Herstellerangabe)"
 function herstellerHinweis(h: Herstellerangabe, form: "hinweis" | "quelle" | "zutat") {
   const vor = form === "quelle" ? "Quelle: " : "";
   if (h.beispiel) return `${vor}Werte am Beispiel ${h.name} ${h.produkt} (Herstellerangabe), abgerufen am ${datum(h.abgerufen)}`;
-  const art = "Herstellerangabe";
+  const art = h.land ? `Herstellerangabe (${h.land})` : "Herstellerangabe";
   if (form === "hinweis") return `${art}: ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}`;
   return `${vor}${art} ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}`;
 }

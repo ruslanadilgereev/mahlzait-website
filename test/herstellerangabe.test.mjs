@@ -139,10 +139,25 @@ test("Rezept mit Zutat aus einer Herstellerangabe: Fußzeile nennt sie mit Link,
   }
 });
 
+test("Herstellerangabe aus Österreich oder der Schweiz: sichtbar mit Land gekennzeichnet", () => {
+  // Regel 3 (23.11.2026): Markenprodukte, die nur offizielle Herstellerseiten aus Österreich oder der Schweiz haben
+  for (const slug of ["lidl-ciabatta","lidl-croissant","lidl-donut","lion","neuburger","smarties","stella-artois"]) {
+    const food = lade(slug);
+    const h = food.hersteller;
+    assert.ok(h && ["Österreich", "Schweiz"].includes(h.land), slug + ": hersteller.land");
+    assert.ok(food.source.startsWith(`Herstellerangabe (${h.land}) `), slug + ": source");
+    const t = text(slug);
+    assert.ok(t.includes(`Herstellerangabe (${h.land}): ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}.`), slug + ": Hinweis unter der Nährwerttabelle");
+    assert.ok(t.includes(`Quelle: Herstellerangabe (${h.land}) ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}.`), slug + ": Fußzeile");
+    assert.ok(seite(slug).includes(`href="${h.url}"`), slug + ": Link zur Herstellerseite");
+    assert.deepEqual(webApp(slug).isBasedOn.map((q) => q.name), [`${h.produkt}: Nährwertangabe von ${h.name} (${h.land})`], slug);
+  }
+});
+
 test("Stückgewicht nicht vom Hersteller: als Schätzung sichtbar", () => {
   // Regel 4 (23.11.2026): Werte je 100 g vom Hersteller, das bisherige Stückgewicht bleibt als Schätzung
   const menge = (g, einheit) => String(g).replace(".", ",") + " " + einheit;
-  for (const slug of ["celebrations","ferrero-kuesschen","fritt","gustavo-gusto-margherita","gustavo-gusto-pizza","heisse-tasse","iglo-backfisch","leibniz-butterkeks","maggi","maoam","maoam-bloxx","maoam-joystixx","maoam-stripes","mentos","milka-noisette","milka-schokolade","mon-cheri","nordsee-backfisch-baguette","ritter-sport","schogetten","tuc","tuc-cracker","tuc-kekse"]) {
+  for (const slug of ["celebrations","ferrero-kuesschen","fritt","gustavo-gusto-margherita","gustavo-gusto-pizza","heisse-tasse","iglo-backfisch","leibniz-butterkeks","maggi","maoam","maoam-bloxx","maoam-joystixx","maoam-stripes","mentos","milka-noisette","milka-schokolade","mon-cheri","nordsee-backfisch-baguette","ritter-sport","schogetten","tuc","tuc-cracker","tuc-kekse","lidl-ciabatta","lion","neuburger","smarties"]) {
     const food = lade(slug);
     assert.ok(food.source.startsWith("Herstellerangabe"), slug + ": keine Herstellerangabe");
     const einheit = food.overview.einheit === "ml" ? "ml" : "g";

@@ -3,9 +3,17 @@
   "name": "Lidl Donut",
   "emoji": "🍩",
   "category": "supermarkt",
+  "source": "Herstellerangabe (Österreich) Lidl, Schokodonut 56 g (https://www.lidl.at/p/schokodonut-56-g/p99902404, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Lidl Österreich",
+    "produkt": "Schokodonut 56 g",
+    "url": "https://www.lidl.at/p/schokodonut-56-g/p99902404",
+    "abgerufen": "2026-11-23",
+    "land": "Österreich"
+  },
   "seo": {
     "title": "Lidl Donut Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Lidl Donut? Ein Stück (55g) hat ca. 226 kcal. Nährwerte pro 100g & Stück, Kohlenhydrate, Protein und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat ein Lidl Donut? Ein Schokodonut (56 g) hat laut Lidl Österreich 243 kcal, 100 g haben 434 kcal. Nährwerte pro Stück, Zucker und Tipps im Überblick.",
     "keywords": [
       "lidl donut kcal",
       "lidl donut kalorien",
@@ -16,102 +24,113 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 410,
-    "protein_per_100g": 6,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 20,
-    "fiber_per_100g": 2,
-    "typical_portion_g": 55,
-    "typical_portion_name": "1 Donut (55g)"
+    "calories_per_100g": 434,
+    "protein_per_100g": 6.8,
+    "carbs_per_100g": 42,
+    "fat_per_100g": 26,
+    "fiber_per_100g": 2.3,
+    "typical_portion_g": 56,
+    "typical_portion_name": "1 Donut (56 g)"
   },
   "variants": [
     {
-      "name": "Mini-Donut (25g)",
-      "portion_g": 25,
-      "calories": 103,
-      "protein": 2,
-      "carbs": 13,
-      "fat": 5
-    },
-    {
-      "name": "Halber Donut (28g)",
+      "name": "Halber Donut (28 g)",
       "portion_g": 28,
-      "calories": 115,
+      "calories": 122,
       "protein": 2,
-      "carbs": 14,
-      "fat": 6
+      "carbs": 12,
+      "fat": 7
     },
     {
-      "name": "1 Donut (55g)",
-      "portion_g": 55,
-      "calories": 226,
-      "protein": 3,
-      "carbs": 28,
-      "fat": 11,
+      "name": "1 Donut (56 g)",
+      "portion_g": 56,
+      "calories": 243,
+      "protein": 4,
+      "carbs": 24,
+      "fat": 15,
       "tip": "Standard"
     },
     {
-      "name": "Pro 100g",
+      "name": "100 g",
       "portion_g": 100,
-      "calories": 410,
-      "protein": 6,
-      "carbs": 50,
-      "fat": 20
-    },
-    {
-      "name": "2 Donuts (110g)",
-      "portion_g": 110,
-      "calories": 451,
+      "calories": 434,
       "protein": 7,
-      "carbs": 55,
-      "fat": 22
+      "carbs": 42,
+      "fat": 26
     },
     {
-      "name": "Packung (4 Stück, 220g)",
-      "portion_g": 220,
-      "calories": 902,
-      "protein": 13,
-      "carbs": 110,
-      "fat": 44,
-      "tip": "Ganze Packung"
+      "name": "2 Donuts (112 g)",
+      "portion_g": 112,
+      "calories": 486,
+      "protein": 8,
+      "carbs": 47,
+      "fat": 29
+    },
+    {
+      "name": "4 Donuts (224 g)",
+      "portion_g": 224,
+      "calories": 972,
+      "protein": 15,
+      "carbs": 94,
+      "fat": 58
     }
   ],
   "comparison": [
     {
       "name": "Berliner",
-      "calories": 250,
-      "emoji": "🍩"
+      "calories": 272,
+      "emoji": "🍩",
+      "basis": [
+        {
+          "slug": "berliner"
+        }
+      ]
     },
     {
       "name": "Croissant",
-      "calories": 203,
-      "emoji": "🥐"
+      "calories": 264,
+      "emoji": "🥐",
+      "basis": [
+        {
+          "slug": "croissant"
+        }
+      ]
     },
     {
       "name": "Muffin",
-      "calories": 320,
-      "emoji": "🧁"
+      "calories": 413,
+      "emoji": "🧁",
+      "basis": [
+        {
+          "slug": "muffin"
+        }
+      ]
     },
     {
       "name": "Apfel",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst genießen",
-      "text": "Ein Lidl Donut hat mit ca. 226 kcal so viel Energie wie eine kleine Mahlzeit. Als gelegentliche Süßigkeit ist er in Ordnung, sollte aber nicht zur täglichen Gewohnheit werden.",
+      "text": "Ein Lidl Donut hat mit 243 kcal so viel Energie wie eine kleine Mahlzeit. Als gelegentliche Süßigkeit ist er in Ordnung, sollte aber nicht zur täglichen Gewohnheit werden.",
       "icon": "🍩"
     },
     {
       "title": "Auf den Fettgehalt achten",
-      "text": "Mit 20g Fett pro 100g liefert der Donut viel Energie aus Fett. Das frittierte Teiggebäck enthält zudem oft gehärtete Pflanzenfette.",
+      "text": "Mit 26 g Fett pro 100 g liefert der Schokodonut viel Energie aus Fett. Dazu tragen das in Fett gebackene Hefegebäck und die Schokoladenkuvertüre bei.",
       "icon": "🧈"
     },
     {
       "title": "Portion teilen",
-      "text": "Wer nur Lust auf etwas Süßes hat, kann einen halben Donut essen und kommt so mit rund 115 kcal aus.",
+      "text": "Wer nur Lust auf etwas Süßes hat, kann einen halben Donut essen und kommt so mit rund 122 kcal aus.",
       "icon": "✂️"
     },
     {
@@ -120,35 +139,35 @@
       "icon": "📉"
     },
     {
-      "title": "Bewegung als Ausgleich",
-      "text": "Die rund 226 kcal eines Donuts entsprechen etwa 30 Minuten zügigem Spazierengehen. Ein kurzer Verdauungsspaziergang gleicht den Snack gut aus.",
-      "icon": "🚶"
+      "title": "Zucker mitdenken",
+      "text": "Laut Lidl Österreich stecken 14 g Zucker in 100 g Schokodonut. Ein Donut (56 g) liefert also knapp 8 g Zucker.",
+      "icon": "🍬"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Lidl Donut?",
-      "answer": "Ein einzelner Lidl Donut (ca. 55g) hat rund 226 kcal. Pro 100g sind es etwa 410 kcal."
+      "answer": "Ein Schokodonut von Lidl (56 g) hat laut Lidl Österreich 243 kcal. Pro 100 g sind es 434 kcal."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in einem Lidl Donut?",
-      "answer": "Pro 100g enthält der Donut etwa 50g Kohlenhydrate, davon ein großer Anteil Zucker. Ein einzelner Donut (55g) liefert rund 28g Kohlenhydrate."
+      "answer": "Pro 100 g enthält der Schokodonut 42 g Kohlenhydrate, davon 14 g Zucker. Ein einzelner Donut (56 g) liefert rund 24 g Kohlenhydrate und knapp 8 g Zucker."
     },
     {
       "question": "Wie viel Protein hat ein Lidl Donut?",
-      "answer": "Der Eiweißgehalt ist mit etwa 6g pro 100g gering. Ein Donut liefert damit nur rund 3g Protein und sättigt entsprechend kurz."
+      "answer": "Der Eiweißgehalt ist mit 6,8 g pro 100 g gering. Ein Donut liefert damit nur rund 4 g Protein und sättigt entsprechend kurz."
     },
     {
       "question": "Sind Lidl Donuts zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Mit ca. 410 kcal pro 100g und viel Zucker und Fett sind Donuts energiedicht. In einer Diät passen sie höchstens als seltene kleine Portion ins Kalorienbudget."
+      "answer": "Nur bedingt. Mit 434 kcal pro 100 g und viel Zucker und Fett sind Donuts energiedicht. In einer Diät passen sie höchstens als seltene kleine Portion ins Kalorienbudget."
     },
     {
       "question": "Sind Lidl Donuts gesund?",
       "answer": "Donuts sind ein Genussmittel und kein gesundes Lebensmittel. Sie liefern viel Zucker, Fett und Weißmehl, aber kaum Ballaststoffe, Vitamine oder Mineralstoffe."
     },
     {
-      "question": "Wie viele Kalorien hat eine ganze Packung Lidl Donuts?",
-      "answer": "Eine Packung mit 4 Donuts (ca. 220g) kommt auf rund 902 kcal. Das entspricht etwa einem Drittel des Tagesbedarfs eines Erwachsenen."
+      "question": "Wie viele Kalorien haben vier Lidl Donuts?",
+      "answer": "Vier Donuts (224 g) haben zusammen rund 972 kcal. Das ist fast die Hälfte des Referenzwerts für Erwachsene von 2000 kcal am Tag."
     }
   ],
   "related_foods": [

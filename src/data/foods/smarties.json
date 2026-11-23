@@ -3,9 +3,17 @@
   "name": "Smarties",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe (Schweiz) Nestlé Professional Schweiz, SMARTIES 38 g (https://www.nestleprofessional.ch/nestle-confectionery/smarties-38-g, abgerufen am 23.11.2026), Werte je 100 g; Energie laut Hersteller 1975 kJ, nur in kJ angegeben, umgerechnet 472 kcal (kJ geteilt durch 4,184)",
+  "hersteller": {
+    "name": "Nestlé Professional Schweiz",
+    "produkt": "SMARTIES 38 g",
+    "url": "https://www.nestleprofessional.ch/nestle-confectionery/smarties-38-g",
+    "abgerufen": "2026-11-23",
+    "land": "Schweiz"
+  },
   "seo": {
     "title": "Smarties Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Smarties? Eine Rolle (38g) hat ca. 177 kcal, 100g 466 kcal. Nährwerte, Zucker & Tipps zum bewussten Naschen im Überblick.",
+    "description": "Wie viele Kalorien hat Smarties? Eine Rolle (38 g) hat rund 179 kcal, 100 g haben 472 kcal. Nährwerte, Zucker & Tipps zum bewussten Naschen im Überblick.",
     "keywords": [
       "smarties kalorien",
       "smarties kcal",
@@ -17,111 +25,127 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 466,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 73,
-    "fat_per_100g": 17,
-    "fiber_per_100g": 1.3,
+    "calories_per_100g": 472,
+    "protein_per_100g": 5.4,
+    "carbs_per_100g": 68.8,
+    "fat_per_100g": 18.7,
+    "fiber_per_100g": 1.9,
     "typical_portion_g": 38,
     "typical_portion_name": "1 Rolle (38g)"
   },
   "variants": [
     {
-      "name": "Mini-Rolle (15g)",
+      "name": "Mini-Rolle (ca. 15 g)",
       "portion_g": 15,
-      "calories": 70,
+      "calories": 71,
       "protein": 1,
-      "carbs": 11,
+      "carbs": 10,
       "fat": 3,
-      "tip": "Praktische kleine Portion"
+      "tip": "Praktische kleine Portion",
+      "stueck_geschaetzt": true
     },
     {
       "name": "1 Rolle (38g)",
       "portion_g": 38,
-      "calories": 177,
+      "calories": 179,
       "protein": 2,
-      "carbs": 28,
-      "fat": 6,
+      "carbs": 26,
+      "fat": 7,
       "tip": "Standard"
-    },
-    {
-      "name": "Hexatube (45g)",
-      "portion_g": 45,
-      "calories": 210,
-      "protein": 2,
-      "carbs": 33,
-      "fat": 8
     },
     {
       "name": "Eine Handvoll (25g)",
       "portion_g": 25,
-      "calories": 117,
+      "calories": 118,
       "protein": 1,
-      "carbs": 18,
-      "fat": 4
+      "carbs": 17,
+      "fat": 5
     },
     {
       "name": "100g",
       "portion_g": 100,
-      "calories": 466,
+      "calories": 472,
       "protein": 5,
-      "carbs": 73,
-      "fat": 17
+      "carbs": 69,
+      "fat": 19
     },
     {
-      "name": "Sharing-Box (130g)",
+      "name": "Sharing-Box (ca. 130 g)",
       "portion_g": 130,
-      "calories": 606,
-      "protein": 6,
-      "carbs": 95,
-      "fat": 22,
-      "tip": "Zum Teilen gedacht"
+      "calories": 614,
+      "protein": 7,
+      "carbs": 89,
+      "fat": 24,
+      "tip": "Zum Teilen gedacht",
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Großbeutel (250g)",
+      "name": "Großbeutel (ca. 250 g)",
       "portion_g": 250,
-      "calories": 1165,
-      "protein": 11,
-      "carbs": 183,
-      "fat": 43
+      "calories": 1180,
+      "protein": 14,
+      "carbs": 172,
+      "fat": 47,
+      "stueck_geschaetzt": true
     }
   ],
   "comparison": [
     {
-      "name": "M&M's",
-      "calories": 73,
-      "emoji": "🍫"
+      "name": "M&M's (38 g)",
+      "calories": 187,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "m-m",
+          "g": 38
+        }
+      ]
     },
     {
-      "name": "Gummibärchen",
-      "calories": 26,
-      "emoji": "🐻"
+      "name": "Gummibärchen (1 Handvoll, 25 g)",
+      "calories": 86,
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "gummibaerchen"
+        }
+      ]
     },
     {
-      "name": "Schokolade",
-      "calories": 53,
-      "emoji": "🍫"
+      "name": "Schokolade (4 Stücke, 25 g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade"
+        }
+      ]
     },
     {
-      "name": "Toffifee",
-      "calories": 38,
-      "emoji": "🍬"
+      "name": "Toffifee (1 Stück)",
+      "calories": 43,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "toffifee"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst portionieren",
-      "text": "Eine ganze Rolle hat 177 kcal. Wer eine kleine Handvoll (25g) abzählt, kommt mit rund 117 kcal aus und nascht trotzdem mit.",
+      "text": "Eine ganze Rolle hat rund 179 kcal. Wer eine kleine Handvoll (25 g) abzählt, kommt mit rund 118 kcal aus und nascht trotzdem mit.",
       "icon": "✋"
     },
     {
       "title": "Achtung Zuckergehalt",
-      "text": "73g Kohlenhydrate pro 100g sind fast vollständig Zucker. Smarties sind eine Süßigkeit für zwischendurch, kein Sattmacher.",
+      "text": "Von 68,8 g Kohlenhydraten pro 100 g sind laut Hersteller 59,8 g Zucker. Smarties sind eine Süßigkeit für zwischendurch, kein Sattmacher.",
       "icon": "🍬"
     },
     {
       "title": "Wenig Fett, viel Zucker",
-      "text": "Mit 17g Fett pro 100g sind Smarties fettärmer als reine Schokolade. Den Großteil der Kalorien liefert hier der Zucker.",
+      "text": "Mit 18,7 g Fett pro 100 g sind Smarties fettärmer als reine Schokolade. Den Großteil der Kalorien liefert hier der Zucker.",
       "icon": "📊"
     },
     {
@@ -131,26 +155,26 @@
     },
     {
       "title": "Gut zum Teilen",
-      "text": "Eine Sharing-Box mit 130g hat über 600 kcal. Aufgeteilt auf mehrere Personen bleibt die Portion pro Kopf überschaubar.",
+      "text": "Eine Sharing-Box mit ca. 130 g (Gewicht nicht vom Hersteller angegeben) hat über 600 kcal. Aufgeteilt auf mehrere Personen bleibt die Portion pro Kopf überschaubar.",
       "icon": "🤝"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Rolle Smarties?",
-      "answer": "Eine klassische Rolle Smarties (38g) hat etwa 177 kcal."
+      "answer": "Eine Rolle Smarties (38 g) hat rund 179 kcal, pro 100 g sind es 472 kcal. Nestlé Professional Schweiz gibt die Energie nur in Kilojoule an (1975 kJ pro 100 g), die kcal sind daraus umgerechnet."
     },
     {
       "question": "Wie viele Kalorien haben Smarties pro 100g?",
-      "answer": "Smarties haben rund 466 kcal pro 100g."
+      "answer": "Smarties haben 472 kcal pro 100 g, umgerechnet aus 1975 kJ laut Nestlé Professional Schweiz."
     },
     {
       "question": "Wie viel Zucker stecken in Smarties?",
-      "answer": "Smarties enthalten etwa 73g Kohlenhydrate pro 100g, davon nahezu alles Zucker. Eine Rolle (38g) liefert also rund 28g Kohlenhydrate."
+      "answer": "Smarties enthalten 68,8 g Kohlenhydrate pro 100 g, davon 59,8 g Zucker. Eine Rolle (38 g) liefert also rund 26 g Kohlenhydrate und knapp 23 g Zucker."
     },
     {
       "question": "Wie viel Protein haben Smarties?",
-      "answer": "Smarties enthalten nur etwa 4,5g Eiweiß pro 100g, eine Rolle liefert rund 2g. Sie sind keine relevante Proteinquelle."
+      "answer": "Smarties enthalten nur 5,4 g Eiweiß pro 100 g, eine Rolle liefert rund 2 g. Sie sind keine relevante Proteinquelle."
     },
     {
       "question": "Sind Smarties zum Abnehmen geeignet?",
