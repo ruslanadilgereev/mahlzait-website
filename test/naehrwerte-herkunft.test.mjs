@@ -56,15 +56,14 @@ const DRITTE = ["fddb.info", "yazio.com", "openfoodfacts.org", "openfoodfacts.ne
 // <OFFEN>
 const OFFEN = new Set([
    "aperol-spritz", "aquafaba", "balisto", "balisto-lila", "balisto-orange", "ben-and-jerry-s",
-   "bounty", "bounty-mini", "bowl", "campari", "captain-morgan", "caro-kaffee", "daim-mini",
-   "dr-pepper", "ebly", "feta-light", "five-guys-burger", "fleisch", "fruehstueck", "gemuese",
-   "giotto", "guinness", "hans-im-glueck-burger", "kaese", "katjes", "kfc-hot-wings",
-   "kfc-twister", "kiri", "klopfer", "l-osteria-pizza", "lillet", "lion-mini",
+   "bounty", "bounty-mini", "bowl", "campari", "captain-morgan", "daim-mini", "ebly",
+   "feta-light", "five-guys-burger", "fleisch", "fruehstueck", "gemuese", "giotto", "guinness",
+   "hans-im-glueck-burger", "kaese", "katjes", "kiri", "klopfer", "l-osteria-pizza", "lion-mini",
    "magnum-double-caramel", "maltesers", "mars", "mars-eis", "mars-mini", "mars-riegel",
-   "mate-tee", "mc-frappe", "mc-toast", "mikado", "milky-way", "mini-milky-way", "muellermilch",
-   "nesquik", "nuts", "oreo-donut", "pepsi-max", "philadelphia-light", "piccolinis", "pop-tarts",
-   "praline", "proteinriegel", "schokoriegel", "smirnoff-ice", "snickers-crisp", "tassimo-milka",
-   "twister-eis", "vapiano", "waterdrop", "wonderwaffel", "wurst", "yfood", "yum-yum",
+   "mate-tee", "mc-frappe", "mikado", "milky-way", "mini-milky-way", "nesquik", "nuts",
+   "oreo-donut", "pepsi-max", "philadelphia-light", "piccolinis", "pop-tarts", "praline",
+   "proteinriegel", "schokoriegel", "smirnoff-ice", "snickers-crisp", "twister-eis", "vapiano",
+   "waterdrop", "wonderwaffel", "wurst", "yfood", "yum-yum",
 ]);
 // </OFFEN>
 
@@ -93,7 +92,7 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 874, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 882, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
 test("jedes source-Feld nennt FDC oder eine Herstellerangabe", () => {

@@ -173,3 +173,17 @@ test("Stückgewicht nicht vom Hersteller: als Schätzung sichtbar", () => {
     }
   }
 });
+
+test("Herstellerangabe für den deutschen Markt, am 23.11.2026 neu gefunden: sichtbarer Hinweis, Fußzeile und Link", () => {
+  // vorher offen, weil die Herstellerseite gesperrt oder nicht erreichbar war (KFC-PDF, McDonald's, lillet.com) oder nicht gefunden wurde
+  for (const slug of ["caro-kaffee","dr-pepper","kfc-hot-wings","kfc-twister","lillet","mc-toast","muellermilch","tassimo-milka"]) {
+    const food = lade(slug);
+    const h = food.hersteller;
+    assert.ok(h && !h.land && !h.beispiel && food.source.startsWith("Herstellerangabe "), slug + ": keine Herstellerangabe für Deutschland");
+    const t = text(slug);
+    assert.ok(t.includes(`Herstellerangabe: ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}.`), slug + ": Hinweis unter der Nährwerttabelle");
+    assert.ok(t.includes(`Quelle: Herstellerangabe ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}.`), slug + ": Fußzeile");
+    assert.ok(seite(slug).includes(`href="${h.url.replaceAll("&", "&amp;")}"`), slug + ": Link zur Herstellerseite");
+    assert.deepEqual(webApp(slug).isBasedOn.map((q) => q.url), [h.url], slug);
+  }
+});

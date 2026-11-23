@@ -3,9 +3,16 @@
   "name": "Dr Pepper",
   "emoji": "🥤",
   "category": "getraenk",
+  "source": "Herstellerangabe Drinks & More, Dr Pepper Classic (https://www.drpepper.de/produkte/dr-pepper-classic, abgerufen am 23.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Drinks & More",
+    "produkt": "Dr Pepper Classic",
+    "url": "https://www.drpepper.de/produkte/dr-pepper-classic",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Dr Pepper Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Dr Pepper? Eine 0,33-l-Dose hat ca. 139 kcal (42 kcal pro 100 ml). Nährwerte, Zucker & Vergleich zu Cola.",
+    "description": "Wie viele Kalorien hat Dr Pepper? Eine 0,33-l-Dose hat ca. 89 kcal (27 kcal pro 100 ml). Nährwerte, Zucker & Vergleich zu Cola.",
     "keywords": [
       "dr pepper kcal",
       "dr pepper kalorien",
@@ -18,11 +25,12 @@
   "overview": {
     "calories_per_100g": 27,
     "protein_per_100g": 0,
-    "carbs_per_100g": 10.3,
+    "carbs_per_100g": 6.8,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 330,
-    "typical_portion_name": "1 Dose (0,33 l)"
+    "typical_portion_name": "1 Dose (0,33 l)",
+    "einheit": "ml"
   },
   "variants": [
     {
@@ -30,7 +38,7 @@
       "portion_g": 200,
       "calories": 54,
       "protein": 0,
-      "carbs": 20.6,
+      "carbs": 13.6,
       "fat": 0
     },
     {
@@ -38,16 +46,16 @@
       "portion_g": 330,
       "calories": 89,
       "protein": 0,
-      "carbs": 34,
+      "carbs": 22.4,
       "fat": 0,
       "tip": "Standard"
     },
     {
-      "name": "Kleine Flasche (0,5 l)",
-      "portion_g": 500,
-      "calories": 135,
+      "name": "Flasche (0,591 l)",
+      "portion_g": 591,
+      "calories": 160,
       "protein": 0,
-      "carbs": 51.5,
+      "carbs": 40.2,
       "fat": 0
     },
     {
@@ -55,53 +63,68 @@
       "portion_g": 700,
       "calories": 189,
       "protein": 0,
-      "carbs": 72.1,
+      "carbs": 47.6,
       "fat": 0
     },
     {
-      "name": "Flasche (1 l)",
-      "portion_g": 1000,
-      "calories": 270,
+      "name": "Flasche (1,25 l)",
+      "portion_g": 1250,
+      "calories": 338,
       "protein": 0,
-      "carbs": 103,
+      "carbs": 85,
       "fat": 0
-    },
-    {
-      "name": "Dr Pepper Zero (0,33 l)",
-      "portion_g": 330,
-      "calories": 89,
-      "protein": 0,
-      "carbs": 0,
-      "fat": 0,
-      "tip": "Praktisch zuckerfrei"
     }
   ],
   "comparison": [
     {
-      "name": "Cola (0,33 l)",
-      "calories": 139,
-      "emoji": "🥤"
+      "name": "Cola (Dose 330 ml)",
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola",
+          "variante": "Cola (Dose 330ml)"
+        }
+      ]
     },
     {
-      "name": "Fanta (0,33 l)",
-      "calories": 152,
-      "emoji": "🍊"
+      "name": "Fanta Orange (Dose 330 ml)",
+      "calories": 106,
+      "emoji": "🍊",
+      "basis": [
+        {
+          "slug": "fanta",
+          "variante": "Fanta Orange (Dose 330ml)"
+        }
+      ]
     },
     {
-      "name": "Apfelsaft (0,33 l)",
-      "calories": 152,
-      "emoji": "🧃"
+      "name": "Apfelsaft (330 ml)",
+      "calories": 159,
+      "emoji": "🧃",
+      "basis": [
+        {
+          "slug": "apfelsaft",
+          "g": 346
+        }
+      ]
     },
     {
-      "name": "Mineralwasser (0,33 l)",
+      "name": "Mineralwasser (330 ml)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser",
+          "g": 335
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Versteckter Zucker",
-      "text": "Eine 0,33-l-Dose Dr Pepper enthält rund 34 g Zucker, das entspricht etwa 11 Würfeln Zucker. Wer abnehmen möchte, sollte den Konsum im Blick behalten.",
+      "text": "Eine 0,33-l-Dose Dr Pepper Classic enthält laut Hersteller rund 22 g Zucker (6,8 g pro 100 ml), das entspricht etwa 7 Würfeln Zucker. Wer abnehmen möchte, sollte den Konsum im Blick behalten.",
       "icon": "🧊"
     },
     {
@@ -111,7 +134,7 @@
     },
     {
       "title": "Reine Trinkkalorien",
-      "text": "Dr Pepper liefert ausschließlich Zucker-Kalorien ohne Eiweiß, Ballaststoffe oder nennenswerte Nährstoffe und sättigt daher kaum.",
+      "text": "Dr Pepper Classic liefert seine Kalorien ausschließlich aus Zucker, ohne Eiweiß und Fett, und sättigt daher kaum.",
       "icon": "💧"
     },
     {
@@ -121,34 +144,34 @@
     },
     {
       "title": "Portion verkleinern",
-      "text": "Ein kleines Glas (200 ml) statt einer ganzen 0,5-l-Flasche spart über 120 kcal, ohne ganz auf den Geschmack zu verzichten.",
+      "text": "Ein kleines Glas (200 ml) statt einer ganzen 0,591-l-Flasche spart rund 106 kcal, ohne ganz auf den Geschmack zu verzichten.",
       "icon": "🥃"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Dr Pepper?",
-      "answer": "Dr Pepper hat 42 kcal pro 100 ml. Eine 0,33-l-Dose kommt damit auf rund 139 kcal, eine 0,5-l-Flasche auf etwa 210 kcal."
+      "answer": "Dr Pepper Classic hat laut Hersteller 27 kcal pro 100 ml. Eine 0,33-l-Dose kommt damit auf rund 89 kcal, die 0,591-l-Flasche auf etwa 160 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Dr Pepper?",
-      "answer": "Dr Pepper enthält rund 10,3 g Zucker pro 100 ml. Eine 0,33-l-Dose liefert damit etwa 34 g Zucker, also rund 11 Stück Würfelzucker."
+      "answer": "Dr Pepper Classic enthält laut Hersteller 6,8 g Zucker pro 100 ml und ist zusätzlich mit Süßungsmitteln (Acesulfam-K und Sucralose) gesüßt. Eine 0,33-l-Dose liefert damit etwa 22 g Zucker, also rund 7 Stück Würfelzucker."
     },
     {
       "question": "Hat Dr Pepper Eiweiß oder Fett?",
-      "answer": "Nein. Dr Pepper enthält weder Eiweiß noch Fett. Die Kalorien stammen praktisch vollständig aus Zucker."
+      "answer": "Nein. Dr Pepper Classic enthält laut Hersteller 0 g Eiweiß und 0 g Fett. Die Kalorien stammen vollständig aus Zucker."
     },
     {
       "question": "Hat Dr Pepper mehr Kalorien als Cola?",
-      "answer": "Nein, beide liegen praktisch gleichauf. Dr Pepper hat etwa 42 kcal pro 100 ml, Cola rund 42 kcal pro 100 ml. Eine 0,33-l-Dose hat bei beiden um die 139 kcal."
+      "answer": "Nein, weniger. Dr Pepper Classic hat laut Hersteller 27 kcal pro 100 ml, weil es mit Zucker und Süßungsmitteln gesüßt ist. Eine 0,33-l-Dose hat 89 kcal, eine Dose Cola rund 145 kcal."
     },
     {
       "question": "Ist Dr Pepper zum Abnehmen geeignet?",
-      "answer": "Klassisches Dr Pepper ist beim Abnehmen wegen des hohen Zuckergehalts ungünstig. Die zuckerfreie Variante Dr Pepper Zero ist mit nahezu 0 kcal die bessere Wahl."
+      "answer": "Klassisches Dr Pepper ist beim Abnehmen wegen des Zuckers (rund 22 g pro Dose) ungünstig. Die zuckerfreie Variante Dr Pepper Zero ist mit 1 kcal pro 100 ml die bessere Wahl."
     },
     {
       "question": "Wie viele Kalorien hat Dr Pepper Zero?",
-      "answer": "Dr Pepper Zero ist praktisch kalorienfrei und enthält keinen Zucker. Eine 0,33-l-Dose hat unter 2 kcal."
+      "answer": "Dr Pepper Zero hat laut Hersteller 1 kcal pro 100 ml und enthält keinen Zucker. Eine 0,33-l-Dose hat damit rund 3 kcal."
     }
   ],
   "related_foods": [
