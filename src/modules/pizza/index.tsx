@@ -6,193 +6,64 @@ import Breadcrumbs from "@components/Breadcrumbs";
 import RelatedWissen from "@components/RelatedWissen";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
+import {
+  auswahl,
+  belaege,
+  belag,
+  belagJeStueck,
+  berechne,
+  bodenJeStueck,
+  boeden,
+  fdcPortionen,
+  flaechenfaktor,
+  ganzeKcal,
+  gerundet,
+  groesse,
+  groessen,
+  PIZZA_GRAMM,
+  pizzaGramm,
+  sorte,
+  sorten,
+  stueckKcal,
+  STUECK_GRAMM,
+  TEIG_GRAMM,
+  tiefkuehl,
+  zahl,
+  zutatKcal,
+  zutaten,
+  type Auswahl,
+  type Ergebnis,
+} from "./rechnung";
+import { faq } from "./faq";
 
 import AuthorByline from "@components/AuthorByline";
 interface Props {
   config: TemplateConfig;
 }
 
-interface PizzaSize {
-  id: string;
-  name: string;
-  diameter: string;
-  slices: number;
-  baseMultiplier: number;
-  icon: string;
-}
-
-interface PizzaType {
-  id: string;
-  name: string;
-  caloriesPerSlice: number;
-  protein: number;
-  carbs: number;
-  fat: number;
-  icon: string;
-  description: string;
-}
-
-interface ToppingType {
-  id: string;
-  name: string;
-  caloriesPerSlice: number;
-  icon: string;
-}
-
-interface CrustType {
-  id: string;
-  name: string;
-  calorieModifier: number;
-  icon: string;
-}
-
-interface PizzaResult {
-  totalCalories: number;
-  protein: number;
-  carbs: number;
-  fat: number;
-  perSlice: number;
-  slices: number;
-}
-
-const pizzaSizes: PizzaSize[] = [
-  { id: "small", name: "Klein", diameter: "26 cm", slices: 6, baseMultiplier: 0.7, icon: "🔵" },
-  { id: "medium", name: "Normal", diameter: "30 cm", slices: 8, baseMultiplier: 1.0, icon: "🟢" },
-  { id: "large", name: "Gross", diameter: "36 cm", slices: 10, baseMultiplier: 1.4, icon: "🟡" },
-  { id: "family", name: "Familien", diameter: "45 cm", slices: 12, baseMultiplier: 2.0, icon: "🔴" },
-];
-
-const pizzaTypes: PizzaType[] = [
-  {
-    id: "margherita",
-    name: "Margherita",
-    caloriesPerSlice: 200,
-    protein: 8,
-    carbs: 26,
-    fat: 7,
-    icon: "🍕",
-    description: "Tomaten, Mozzarella, Basilikum",
-  },
-  {
-    id: "salami",
-    name: "Salami",
-    caloriesPerSlice: 260,
-    protein: 11,
-    carbs: 26,
-    fat: 12,
-    icon: "🍕",
-    description: "Tomaten, Mozzarella, Salami",
-  },
-  {
-    id: "prosciutto",
-    name: "Prosciutto",
-    caloriesPerSlice: 235,
-    protein: 12,
-    carbs: 25,
-    fat: 9,
-    icon: "🍕",
-    description: "Tomaten, Mozzarella, Schinken",
-  },
-  {
-    id: "tonno",
-    name: "Tonno",
-    caloriesPerSlice: 225,
-    protein: 14,
-    carbs: 24,
-    fat: 8,
-    icon: "🐟",
-    description: "Tomaten, Mozzarella, Thunfisch, Zwiebeln",
-  },
-  {
-    id: "hawaii",
-    name: "Hawaii",
-    caloriesPerSlice: 245,
-    protein: 11,
-    carbs: 28,
-    fat: 9,
-    icon: "🍍",
-    description: "Tomaten, Mozzarella, Schinken, Ananas",
-  },
-  {
-    id: "quattro-formaggi",
-    name: "Quattro Formaggi",
-    caloriesPerSlice: 290,
-    protein: 13,
-    carbs: 24,
-    fat: 16,
-    icon: "🧀",
-    description: "Vier verschiedene Käsesorten",
-  },
-  {
-    id: "diavola",
-    name: "Diavola",
-    caloriesPerSlice: 270,
-    protein: 12,
-    carbs: 26,
-    fat: 13,
-    icon: "🌶️",
-    description: "Tomaten, Mozzarella, scharfe Salami",
-  },
-  {
-    id: "capricciosa",
-    name: "Capricciosa",
-    caloriesPerSlice: 250,
-    protein: 12,
-    carbs: 26,
-    fat: 10,
-    icon: "🍄",
-    description: "Schinken, Pilze, Artischocken, Oliven",
-  },
-  {
-    id: "vegetariana",
-    name: "Vegetariana",
-    caloriesPerSlice: 210,
-    protein: 9,
-    carbs: 28,
-    fat: 7,
-    icon: "🥬",
-    description: "Verschiedene Gemüsesorten",
-  },
-  {
-    id: "bbq-chicken",
-    name: "BBQ Chicken",
-    caloriesPerSlice: 280,
-    protein: 15,
-    carbs: 30,
-    fat: 11,
-    icon: "🍗",
-    description: "BBQ-Sauce, Hähnchen, Zwiebeln",
-  },
-];
-
-const toppingTypes: ToppingType[] = [
-  { id: "extra-cheese", name: "Extra Käse", caloriesPerSlice: 40, icon: "🧀" },
-  { id: "pepperoni", name: "Pepperoni", caloriesPerSlice: 30, icon: "🥓" },
-  { id: "mushrooms", name: "Pilze", caloriesPerSlice: 5, icon: "🍄" },
-  { id: "olives", name: "Oliven", caloriesPerSlice: 15, icon: "🫒" },
-  { id: "onions", name: "Zwiebeln", caloriesPerSlice: 5, icon: "🧅" },
-  { id: "bacon", name: "Speck", caloriesPerSlice: 35, icon: "🥓" },
-  { id: "jalapenos", name: "Jalapeños", caloriesPerSlice: 3, icon: "🌶️" },
-  { id: "anchovies", name: "Sardellen", caloriesPerSlice: 20, icon: "🐟" },
-];
-
-const crustTypes: CrustType[] = [
-  { id: "classic", name: "Klassisch", calorieModifier: 0, icon: "🍞" },
-  { id: "thin", name: "Dünn/Knusprig", calorieModifier: -30, icon: "📄" },
-  { id: "thick", name: "Dick/Pfannenpizza", calorieModifier: 50, icon: "🥧" },
-  { id: "stuffed", name: "Käserand", calorieModifier: 80, icon: "🧀" },
-  { id: "wholegrain", name: "Vollkorn", calorieModifier: -10, icon: "🌾" },
-];
-
-const pizzaCalorieTable = [
-  { name: "Margherita (ganze Pizza)", size: "30 cm", calories: "800-900", slices: "8" },
-  { name: "Salami (ganze Pizza)", size: "30 cm", calories: "1000-1100", slices: "8" },
-  { name: "Quattro Formaggi", size: "30 cm", calories: "1100-1200", slices: "8" },
-  { name: "Hawaii", size: "30 cm", calories: "950-1050", slices: "8" },
-  { name: "Vegetariana", size: "30 cm", calories: "850-950", slices: "8" },
-  { name: "Tiefkühlpizza Salami", size: "320g", calories: "750-850", slices: "4" },
-  { name: "Tiefkühlpizza Margherita", size: "300g", calories: "650-750", slices: "4" },
-];
+// Zahlen für die Texte, alle aus der Rechnung (30 cm, klassischer Boden)
+const margherita = sorte("margherita").je100g;
+const nachStueck = [...sorten].sort(
+  (a, b) => stueckKcal(a.id) - stueckKcal(b.id) || a.name.localeCompare(b.name),
+);
+const ganzKcal = (sorteId: string, bodenId: string) =>
+  berechne(auswahl(sorteId, "medium", bodenId)).ganz.kcal;
+const duennSpart = Math.round(ganzKcal("margherita", "classic") - ganzKcal("margherita", "thin"));
+const duennGegenDick = Math.round(ganzKcal("margherita", "thick") - ganzKcal("margherita", "thin"));
+const duennTeig = -boeden.find((b) => b.id === "thin")!.teile[0].gramm;
+const dickTeig = boeden.find((b) => b.id === "thick")!.teile[0].gramm;
+const kaeserand = boeden.find((b) => b.id === "stuffed")!.teile[0];
+const halbeMargherita = Math.round(berechne(auswahl("margherita", "medium", "classic", [], 4)).gegessen.kcal);
+const extraKaese = belag("extra-cheese");
+const pepperoni = belag("pepperoni");
+const speck = belag("bacon");
+const pilze = belag("mushrooms");
+const zwiebeln = belag("onions");
+const jeStueck = (id: string) => Math.round(belagJeStueck(id));
+const klein = groesse("small");
+const gross = groesse("large");
+const fdc = (id: string) => `FDC ${zutaten[id].fdcId}`;
+const vorzeichen = (wert: number) => (wert > 0 ? "+" : "") + zahl(wert);
 
 function PizzaKalorienRechnerPage({ config }: Props) {
   const [selectedSize, setSelectedSize] = useState<string>("medium");
@@ -200,7 +71,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
   const [selectedCrust, setSelectedCrust] = useState<string>("classic");
   const [selectedToppings, setSelectedToppings] = useState<string[]>([]);
   const [slicesToEat, setSlicesToEat] = useState<number>(2);
-  const [result, setResult] = useState<PizzaResult | null>(null);
+  const [result, setResult] = useState<{ auswahl: Auswahl; ergebnis: Ergebnis } | null>(null);
 
   const toggleTopping = (toppingId: string) => {
     setSelectedToppings((prev) =>
@@ -208,51 +79,39 @@ function PizzaKalorienRechnerPage({ config }: Props) {
     );
   };
 
-  const selectedSizeData = pizzaSizes.find((s) => s.id === selectedSize)!;
+  const selectedSizeData = groesse(selectedSize);
+
+  // Eine kleinere Pizza hat weniger Stücke: die Auswahl bleibt in ihrem Bereich.
+  const selectSize = (sizeId: string) => {
+    setSelectedSize(sizeId);
+    setSlicesToEat((n) => Math.min(n, groesse(sizeId).stuecke));
+  };
 
   const calculateCalories = () => {
-    const size = pizzaSizes.find((s) => s.id === selectedSize)!;
-    const pizza = pizzaTypes.find((p) => p.id === selectedPizza)!;
-    const crust = crustTypes.find((c) => c.id === selectedCrust)!;
-
-    const toppingsCalories = selectedToppings.reduce((sum, toppingId) => {
-      const topping = toppingTypes.find((t) => t.id === toppingId);
-      return sum + (topping?.caloriesPerSlice || 0);
-    }, 0);
-
-    const caloriesPerSlice = Math.round(
-      (pizza.caloriesPerSlice + crust.calorieModifier + toppingsCalories) * size.baseMultiplier
-    );
-
-    const totalSlices = size.slices;
-    const totalCaloriesWholePizza = caloriesPerSlice * totalSlices;
-    const totalCaloriesEaten = caloriesPerSlice * slicesToEat;
-
-    const proteinPerSlice = Math.round(pizza.protein * size.baseMultiplier);
-    const carbsPerSlice = Math.round(pizza.carbs * size.baseMultiplier);
-    const fatPerSlice = Math.round(pizza.fat * size.baseMultiplier);
-
-    setResult({
-      totalCalories: totalCaloriesEaten,
-      protein: proteinPerSlice * slicesToEat,
-      carbs: carbsPerSlice * slicesToEat,
-      fat: fatPerSlice * slicesToEat,
-      perSlice: caloriesPerSlice,
-      slices: totalSlices,
-    });
+    const a: Auswahl = {
+      groesse: selectedSize,
+      sorte: selectedPizza,
+      boden: selectedCrust,
+      belaege: selectedToppings,
+      stuecke: slicesToEat,
+    };
+    setResult({ auswahl: a, ergebnis: berechne(a) });
   };
 
   const getCalorieComparison = (calories: number) => {
     return [
       { name: "Döner Kebabs", amount: Math.round((calories / 696) * 10) / 10, emoji: "🥙" },
       { name: "Big Macs", amount: Math.round((calories / 563) * 10) / 10, emoji: "🍔" },
-      { name: "Tafeln Schoko", amount: Math.round((calories / 530) * 10) / 10, emoji: "🍫" },
+      { name: "Tafeln Schoko", amount: Math.round((calories / 535) * 10) / 10, emoji: "🍫" },
       { name: "Min. Joggen", amount: Math.round(calories / 10), emoji: "🏃" },
       { name: "Min. Spazieren", amount: Math.round(calories / 4), emoji: "🚶" },
     ];
   };
 
-  const selectedPizzaData = pizzaTypes.find((p) => p.id === selectedPizza);
+  const gegessen = result ? gerundet(result.ergebnis.gegessen) : null;
+  const stueck = result ? gerundet(result.ergebnis.stueck) : null;
+  const ganz = result ? gerundet(result.ergebnis.ganz) : null;
+  const resultPizza = result ? sorte(result.auswahl.sorte) : null;
 
   return (
     <ConfigContext.Provider value={config}>
@@ -274,7 +133,8 @@ function PizzaKalorienRechnerPage({ config }: Props) {
             <AuthorByline />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
               Wie viele Kalorien hat deine Pizza? Berechne die Nährwerte für Margherita, Salami,
-              Hawaii und mehr – mit verschiedenen Grössen, Teigarten und Extra-Belägen.
+              Hawaii und mehr, mit verschiedenen Größen, Teigarten und Extra-Belägen. Gerechnet
+              wird in Gramm, mit Werten aus USDA FoodData Central.
             </p>
           </header>
 
@@ -285,20 +145,24 @@ function PizzaKalorienRechnerPage({ config }: Props) {
 
               {/* Size Selection */}
               <div className="mb-8">
-                <span className="text-lg font-semibold block mb-4">1. Pizza-Grösse wählen</span>
+                <span className="text-lg font-semibold block mb-4">1. Pizza-Größe wählen</span>
                 <div className="grid gap-3 grid-cols-2 md:grid-cols-4">
-                  {pizzaSizes.map((size) => (
+                  {groessen.map((size) => (
                     <button
                       key={size.id}
-                      onClick={() => setSelectedSize(size.id)}
+                      onClick={() => selectSize(size.id)}
                       className={`btn btn-lg h-auto py-4 flex-col ${
                         selectedSize === size.id ? "btn-primary" : "btn-outline"
                       }`}
                     >
                       <span className="text-2xl">{size.icon}</span>
                       <span className="font-semibold">{size.name}</span>
-                      <span className="text-xs opacity-70">{size.diameter}</span>
-                      <span className="text-xs opacity-70">{size.slices} Stücke</span>
+                      <span className="text-xs opacity-70">
+                        {`${size.durchmesser} cm, ${zahl(Math.round(pizzaGramm(size.id)))} g`}
+                      </span>
+                      <span className="text-xs opacity-70">
+                        {`${size.stuecke}\u00a0Stücke à ${Math.round(pizzaGramm(size.id) / size.stuecke)}\u00a0g`}
+                      </span>
                     </button>
                   ))}
                 </div>
@@ -308,7 +172,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
               <div className="mb-8">
                 <span className="text-lg font-semibold block mb-4">2. Pizza-Sorte wählen</span>
                 <div className="grid gap-3 md:grid-cols-2">
-                  {pizzaTypes.map((pizza) => (
+                  {sorten.map((pizza) => (
                     <button
                       key={pizza.id}
                       onClick={() => setSelectedPizza(pizza.id)}
@@ -330,7 +194,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
               <div className="mb-8">
                 <span className="text-lg font-semibold block mb-4">3. Teigart wählen</span>
                 <div className="flex flex-wrap gap-2">
-                  {crustTypes.map((crust) => (
+                  {boeden.map((crust) => (
                     <button
                       key={crust.id}
                       onClick={() => setSelectedCrust(crust.id)}
@@ -338,10 +202,10 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                         selectedCrust === crust.id ? "btn-primary" : "btn-outline"
                       }`}
                     >
-                      {crust.icon} {crust.name}{" "}
-                      {crust.calorieModifier !== 0 && (
+                      {`${crust.icon} ${crust.name} `}
+                      {crust.teile.length > 0 && (
                         <span className="text-xs opacity-70">
-                          ({crust.calorieModifier > 0 ? "+" : ""}{crust.calorieModifier} kcal/Stück)
+                          {`(${vorzeichen(Math.round(bodenJeStueck(crust.id, selectedSize)))} kcal/Stück)`}
                         </span>
                       )}
                     </button>
@@ -353,7 +217,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
               <div className="mb-8">
                 <span className="text-lg font-semibold block mb-4">4. Extra-Beläge (optional)</span>
                 <div className="flex flex-wrap gap-2">
-                  {toppingTypes.map((topping) => (
+                  {belaege.map((topping) => (
                     <button
                       key={topping.id}
                       onClick={() => toggleTopping(topping.id)}
@@ -361,7 +225,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                         selectedToppings.includes(topping.id) ? "btn-secondary" : "btn-outline"
                       }`}
                     >
-                      {topping.icon} {topping.name} (+{topping.caloriesPerSlice} kcal/Stück)
+                      {`${topping.icon} ${topping.name} ${Math.round(topping.gramm * flaechenfaktor(selectedSize))} g (+${Math.round(belagJeStueck(topping.id, selectedSize))} kcal/Stück)`}
                     </button>
                   ))}
                 </div>
@@ -373,13 +237,13 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                   <span className="text-lg font-semibold">5. Wie viele Stücke isst du?</span>
                   <div className="flex items-baseline gap-1">
                     <span className="text-3xl font-bold text-primary">{slicesToEat}</span>
-                    <span className="opacity-70">von {selectedSizeData.slices}</span>
+                    <span className="opacity-70">von {selectedSizeData.stuecke}</span>
                   </div>
                 </div>
                 <input
                   type="range"
                   min="1"
-                  max={selectedSizeData.slices}
+                  max={selectedSizeData.stuecke}
                   step="1"
                   value={slicesToEat}
                   onChange={(e) => setSlicesToEat(Number(e.target.value))}
@@ -397,18 +261,18 @@ function PizzaKalorienRechnerPage({ config }: Props) {
               </button>
 
               {/* Results */}
-              {result && (
+              {result && gegessen && stueck && ganz && resultPizza && (
                 <div className="mt-8 space-y-4">
                   <div className="divider">Dein Ergebnis</div>
 
                   <div className="text-center py-6">
-                    <div className="text-6xl font-bold text-primary">{result.totalCalories} kcal</div>
+                    <div className="text-6xl font-bold text-primary">{zahl(gegessen.kcal)} kcal</div>
                     <div className="text-lg opacity-70 mt-2">
-                      {slicesToEat} Stück {selectedPizzaData?.name}
-                      {slicesToEat === result.slices && " (ganze Pizza)"}
+                      {result.ergebnis.stuecke} Stück {resultPizza.name} ({zahl(gegessen.gramm)} g)
+                      {result.ergebnis.stuecke === result.ergebnis.stueckzahl && " (ganze Pizza)"}
                     </div>
                     <div className="text-sm opacity-50 mt-1">
-                      {result.perSlice} kcal pro Stück
+                      {stueck.kcal} kcal pro Stück ({stueck.gramm} g)
                     </div>
                   </div>
 
@@ -417,7 +281,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                     <div className="card bg-green-100 dark:bg-green-900">
                       <div className="card-body py-4 text-center">
                         <div className="text-3xl font-bold text-green-600 dark:text-green-400">
-                          {result.protein}g
+                          {gegessen.protein}g
                         </div>
                         <div className="text-sm opacity-70">Protein</div>
                       </div>
@@ -425,7 +289,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                     <div className="card bg-yellow-100 dark:bg-yellow-900">
                       <div className="card-body py-4 text-center">
                         <div className="text-3xl font-bold text-yellow-600 dark:text-yellow-400">
-                          {result.carbs}g
+                          {gegessen.kh}g
                         </div>
                         <div className="text-sm opacity-70">Kohlenhydrate</div>
                       </div>
@@ -433,7 +297,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                     <div className="card bg-red-100 dark:bg-red-900">
                       <div className="card-body py-4 text-center">
                         <div className="text-3xl font-bold text-red-600 dark:text-red-400">
-                          {result.fat}g
+                          {gegessen.fett}g
                         </div>
                         <div className="text-sm opacity-70">Fett</div>
                       </div>
@@ -447,16 +311,22 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                       <div className="space-y-2 text-sm">
                         <div className="flex justify-between">
                           <span>Kalorien pro Stück:</span>
-                          <span className="font-mono">{result.perSlice} kcal</span>
+                          <span className="font-mono">{stueck.kcal} kcal</span>
+                        </div>
+                        <div className="flex justify-between">
+                          <span>Gewicht pro Stück:</span>
+                          <span className="font-mono">{stueck.gramm} g</span>
                         </div>
                         <div className="flex justify-between">
                           <span>Anzahl Stücke gegessen:</span>
-                          <span className="font-mono">{slicesToEat} von {result.slices}</span>
+                          <span className="font-mono">
+                            {result.ergebnis.stuecke} von {result.ergebnis.stueckzahl}
+                          </span>
                         </div>
                         <div className="divider my-1"></div>
                         <div className="flex justify-between font-bold">
-                          <span>Ganze Pizza hätte:</span>
-                          <span className="font-mono">{result.perSlice * result.slices} kcal</span>
+                          <span>Ganze Pizza ({zahl(ganz.gramm)} g) hätte:</span>
+                          <span className="font-mono">{zahl(ganz.kcal)} kcal</span>
                         </div>
                       </div>
                     </div>
@@ -464,7 +334,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
 
                   {/* Comparison */}
                   <div className="grid gap-3 md:grid-cols-5 mt-6">
-                    {getCalorieComparison(result.totalCalories).map((item, i) => (
+                    {getCalorieComparison(gegessen.kcal).map((item, i) => (
                       <div key={i} className="card bg-base-200">
                         <div className="card-body py-3 px-2 text-center">
                           <div className="text-2xl">{item.emoji}</div>
@@ -476,7 +346,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                   </div>
 
                   {/* Tip based on calories */}
-                  {result.totalCalories > 800 && (
+                  {gegessen.kcal > 800 && (
                     <div className="alert alert-warning mt-4">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -495,7 +365,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                         <p className="font-semibold">Kalorienreiche Mahlzeit!</p>
                         <p className="text-sm">
                           Über 800 kcal entspricht etwa 40% des Tagesbedarfs. Teile die Pizza
-                          oder wähle eine Margherita mit dünnem Teig für weniger Kalorien.
+                          oder wähle einen dünnen Boden für weniger Kalorien.
                         </p>
                       </div>
                     </div>
@@ -518,12 +388,118 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                     <div>
                       <p className="font-semibold">Tracke deine Pizza mit Mahlzait!</p>
                       <p className="text-sm">
-                        Fotografiere dein Essen und erfasse die Kalorien automatisch – auch bei Pizza.
+                        Fotografiere dein Essen und erfasse die Kalorien automatisch, auch bei Pizza.
                       </p>
                     </div>
                   </div>
                 </div>
               )}
+            </div>
+          </div>
+        </section>
+
+        {/* So rechnen wir */}
+        <section className="py-16" id="so-rechnen-wir">
+          <div className="max-w-screen-lg mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">So rechnen wir</h2>
+            <div className="max-w-3xl mx-auto space-y-4">
+              <p>
+                {`Der Rechner arbeitet in Gramm. Grundlage ist eine Pizza mit 30 cm Durchmesser und ${PIZZA_GRAMM} g, wie auf unserer Seite `}
+                <a href="/kalorien/pizza/" className="link">Pizza</a>
+                {`. Ein Stück ist ein Achtel davon, also ${zahl(STUECK_GRAMM)} g, gerundet ${Math.round(STUECK_GRAMM)} g.`}
+              </p>
+              <ul className="list-disc pl-6 space-y-2">
+                <li>
+                  <strong>Sorte:</strong>
+                  {` Kalorien und Nährwerte je 100 g stammen von der Lebensmittelseite der Sorte, deren Werte aus USDA FoodData Central (FDC) kommen. Ein Stück Margherita hat ${margherita.kcal} kcal je 100 g mal ${zahl(STUECK_GRAMM)} g, also ${stueckKcal("margherita")} kcal. Prosciutto, Capricciosa und BBQ Chicken haben keine eigene Seite, für sie rechnen wir ein Rezept aus FDC-Zutaten (Tabelle unten).`}
+                </li>
+                <li>
+                  <strong>Größe:</strong>
+                  {` Das Gewicht wächst mit der Fläche, also mit dem Quadrat des Durchmessers: ${groessen
+                    .map((g) => `${g.durchmesser} cm ${zahl(Math.round(pizzaGramm(g.id)))} g`)
+                    .join(", ")}. Boden und Beläge wachsen im selben Verhältnis mit.`}
+                </li>
+                <li>
+                  <strong>Boden:</strong>
+                  {` Die Werte je 100 g gelten für jeden Boden, denn FDC nennt für Käsepizza mit normalem und mit dünnem Boden dieselben Werte je 100 g. Der Boden ändert das Gewicht: Eine mittlere Käsepizza (11 bis 12 Zoll) wiegt laut FDC mit normalem Boden ${fdcPortionen.mittlerePizza.normal.gramm} g, mit dünnem ${fdcPortionen.mittlerePizza.duenn.gramm} g, mit dickem ${fdcPortionen.mittlerePizza.dick.gramm} g und mit Käserand ${fdcPortionen.mittlerePizza.kaeserand.gramm} g. Auf unsere ${PIZZA_GRAMM}-g-Pizza übertragen sind das ${duennTeig} g Teig weniger beim dünnen Boden, ${dickTeig} g Teig mehr beim dicken und ${kaeserand.gramm} g Mozzarella im Käserand. Teig rechnen wir wie Weißbrot. Beim Vollkornboden sind die ${TEIG_GRAMM} g Teig einer 30-cm-Pizza aus Vollkorn; laut FDC wiegt der Belag einer Käsepizza ${zahl(fdcPortionen.quadratzoll.belag.gramm)} von ${zahl(fdcPortionen.quadratzoll.pizza.gramm)} g je Quadratzoll, der Rest ist Teig.`}
+                </li>
+                <li>
+                  <strong>Extra-Beläge:</strong> feste Mengen je 30-cm-Pizza mit den FDC-Werten der
+                  Zutat, bei anderen Größen im Verhältnis der Fläche.
+                </li>
+                <li>
+                  <strong>Rundung:</strong>
+                  {` Wir rechnen ungerundet und runden erst das Ergebnis. Die ganze Margherita hat deshalb ${ganzeKcal("margherita")} kcal, nicht 8 × ${stueckKcal("margherita")} = ${8 * stueckKcal("margherita")} kcal.`}
+                </li>
+              </ul>
+
+              <div className="overflow-x-auto">
+                <table className="table bg-base-100 shadow">
+                  <caption className="text-left font-semibold py-2">
+                    Boden und Extra-Beläge je 30-cm-Pizza
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>Auswahl</th>
+                      <th>Zutat (Quelle)</th>
+                      <th className="text-right">Menge</th>
+                      <th className="text-right">kcal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {boeden.flatMap((b) =>
+                      b.teile.map((t, i) => (
+                        <tr key={b.id + i}>
+                          <td>{b.name}</td>
+                          <td>{`${zutaten[t.zutat].name} (${fdc(t.zutat)})`}</td>
+                          <td className="text-right font-mono">{`${vorzeichen(t.gramm)} g`}</td>
+                          <td className="text-right font-mono">
+                            {vorzeichen(zutatKcal(t.zutat, t.gramm))}
+                          </td>
+                        </tr>
+                      )),
+                    )}
+                    {belaege.map((b) => (
+                      <tr key={b.id}>
+                        <td>{b.name}</td>
+                        <td>{`${zutaten[b.zutat].name} (${fdc(b.zutat)})`}</td>
+                        <td className="text-right font-mono">{`+${b.gramm} g`}</td>
+                        <td className="text-right font-mono">{`+${zutatKcal(b.zutat, b.gramm)}`}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="overflow-x-auto">
+                <table className="table bg-base-100 shadow">
+                  <caption className="text-left font-semibold py-2">
+                    {`Rezepte für Sorten ohne eigene Seite, je ${PIZZA_GRAMM}-g-Pizza`}
+                  </caption>
+                  <thead>
+                    <tr>
+                      <th>Sorte</th>
+                      <th>Zutaten (Quelle)</th>
+                      <th className="text-right">kcal je 100 g</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {sorten
+                      .filter((s) => s.rezept)
+                      .map((s) => (
+                        <tr key={s.id}>
+                          <td>{s.name}</td>
+                          <td>
+                            {s
+                              .rezept!.map((t) => `${t.gramm} g ${zutaten[t.zutat].name} (${fdc(t.zutat)})`)
+                              .join(", ")}
+                          </td>
+                          <td className="text-right font-mono">{Math.round(s.je100g.kcal)}</td>
+                        </tr>
+                      ))}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </section>
@@ -534,30 +510,42 @@ function PizzaKalorienRechnerPage({ config }: Props) {
             <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
               Pizza Kalorientabelle im Überblick
             </h2>
-            <div className="overflow-x-auto max-w-2xl mx-auto">
+            <div className="overflow-x-auto max-w-3xl mx-auto">
               <table className="table bg-base-100 shadow-xl">
                 <thead>
                   <tr>
                     <th>Pizza-Sorte</th>
-                    <th className="text-right">Grösse</th>
-                    <th className="text-right">Kalorien</th>
-                    <th className="text-right">Stücke</th>
+                    <th className="text-right">je 100 g</th>
+                    <th className="text-right">{`1 Stück (${Math.round(STUECK_GRAMM)} g)`}</th>
+                    <th className="text-right">{`30 cm (${PIZZA_GRAMM} g)`}</th>
+                    <th>Grundlage</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {pizzaCalorieTable.map((item, i) => (
-                    <tr key={i}>
-                      <td>{item.name}</td>
-                      <td className="text-right font-mono">{item.size}</td>
-                      <td className="text-right font-mono">{item.calories}</td>
-                      <td className="text-right font-mono">{item.slices}</td>
+                  {sorten.map((s) => (
+                    <tr key={s.id}>
+                      <td>{s.name}</td>
+                      <td className="text-right font-mono">{`${Math.round(s.je100g.kcal)} kcal`}</td>
+                      <td className="text-right font-mono">{`${stueckKcal(s.id)} kcal`}</td>
+                      <td className="text-right font-mono">{`${ganzeKcal(s.id)} kcal`}</td>
+                      <td>
+                        {s.seite ? (
+                          <a href={`/kalorien/${s.seite}/`} className="link">
+                            {`Pizza ${s.name}`}
+                          </a>
+                        ) : (
+                          "Rezept aus FDC-Zutaten"
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>
               </table>
             </div>
             <p className="text-center text-sm opacity-70 mt-4">
-              * Werte sind Durchschnittswerte und können je nach Restaurant/Marke variieren
+              {`Klassischer Boden ohne Extra-Beläge. Zum Vergleich Tiefkühlpizza: ${tiefkuehl
+                .map((t) => `${t.name.replace("Tiefkühlpizza ", "")} (${t.gramm} g) ${t.kcal} kcal`)
+                .join(", ")}, laut unseren Seiten Pizza Margherita und Pizza Salami.`}
             </p>
           </div>
         </section>
@@ -574,9 +562,9 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">🫓 Der Teig</h3>
                   <p>
-                    Pizza-Teig besteht aus Weissmehl und Olivenöl – eine kalorienreiche Kombination.
-                    Der Boden einer normalen Pizza hat allein <strong>400-500 kcal</strong>.
-                    Vollkorn- oder dünner Teig spart hier Kalorien.
+                    {"Rund zwei Drittel einer Pizza sind Teig: bei unserer 30-cm-Pizza "}
+                    <strong>{`${TEIG_GRAMM} von ${PIZZA_GRAMM} g`}</strong>
+                    {`. Gerechnet wie Weißbrot (${zutaten.teig.kcal} kcal je 100 g) sind das ${zutatKcal("teig", TEIG_GRAMM)} kcal. Ein dünner Boden spart ${duennTeig} g Teig und damit ${duennSpart} kcal.`}
                   </p>
                 </div>
               </div>
@@ -585,9 +573,9 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">🧀 Der Käse</h3>
                   <p>
-                    Mozzarella ist der Hauptkalorienträger! Eine Pizza hat oft{" "}
-                    <strong>150-200g Käse</strong>, das entspricht ca. 400-600 kcal. Quattro Formaggi
-                    ist besonders kalorienreich.
+                    {`Mozzarella hat ${zutaten.mozzarella.kcal} kcal je 100 g. Extra Käse (${extraKaese.gramm} g) bringt `}
+                    <strong>{`${zutatKcal(extraKaese.zutat, extraKaese.gramm)} kcal`}</strong>
+                    {` je 30-cm-Pizza mehr, ein Käserand (${kaeserand.gramm} g) ${zutatKcal(kaeserand.zutat, kaeserand.gramm)} kcal. Quattro Formaggi hat mit ${sorte("quattro-formaggi").je100g.kcal} kcal je 100 g kaum mehr als Margherita (${margherita.kcal} kcal).`}
                   </p>
                 </div>
               </div>
@@ -596,19 +584,20 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">🍕 Die Beläge</h3>
                   <p>
-                    Salami, Schinken und Speck treiben die Kalorien hoch:{" "}
-                    <strong>50-100 kcal extra pro Belag</strong>. Gemüse wie Pilze, Paprika oder
-                    Zwiebeln sind kalorienarme Alternativen.
+                    {`Wurst und Speck treiben die Kalorien hoch: ${pepperoni.gramm} g Pepperoni-Salami bringen `}
+                    <strong>{`${zutatKcal(pepperoni.zutat, pepperoni.gramm)} kcal`}</strong>
+                    {`, ${speck.gramm} g Speck ${zutatKcal(speck.zutat, speck.gramm)} kcal. ${pilze.gramm} g Champignons haben nur ${zutatKcal(pilze.zutat, pilze.gramm)} kcal, ${zwiebeln.gramm} g Zwiebeln ${zutatKcal(zwiebeln.zutat, zwiebeln.gramm)} kcal.`}
                   </p>
                 </div>
               </div>
 
               <div className="card bg-base-100 shadow-lg">
                 <div className="card-body">
-                  <h3 className="card-title">📏 Die Grösse</h3>
+                  <h3 className="card-title">📏 Die Größe</h3>
                   <p>
-                    Eine grosse Pizza (36 cm) hat fast <strong>doppelt so viele Kalorien</strong>
-                    wie eine kleine (26 cm). Die Portion macht den Unterschied – teile oder wähle klein!
+                    {`Eine große Pizza (${gross.durchmesser} cm, ${Math.round(pizzaGramm(gross.id))} g) hat `}
+                    <strong>fast doppelt so viele Kalorien</strong>
+                    {` wie eine kleine (${klein.durchmesser} cm, ${Math.round(pizzaGramm(klein.id))} g): als Margherita ${zahl(ganzeKcal("margherita", gross.id))} statt ${zahl(ganzeKcal("margherita", klein.id))} kcal. Die Portion macht den Unterschied, teile oder wähle klein!`}
                   </p>
                 </div>
               </div>
@@ -624,65 +613,43 @@ function PizzaKalorienRechnerPage({ config }: Props) {
             </h2>
 
             <div className="max-w-2xl mx-auto space-y-4">
-              <div className="card bg-base-100 shadow">
-                <div className="card-body py-4 flex-row gap-4 items-center">
-                  <span className="text-3xl">📄</span>
-                  <div>
-                    <h3 className="font-bold">Dünnen Teig wählen</h3>
-                    <p className="text-sm opacity-70">
-                      Dünner, knuspriger Teig spart bis zu 150 kcal gegenüber dickem Pfannenteig.
-                    </p>
+              {[
+                {
+                  icon: "📄",
+                  titel: "Dünnen Teig wählen",
+                  text: `Ein dünner Boden spart bei einer 30-cm-Pizza ${duennSpart} kcal, gegenüber dem dicken Boden ${duennGegenDick} kcal.`,
+                },
+                {
+                  icon: "🥗",
+                  titel: "Gemüse-Beläge bevorzugen",
+                  text: `Pilze und Zwiebeln bringen je Stück ${jeStueck(pilze.id)} bis ${jeStueck(zwiebeln.id)} kcal, Speck ${jeStueck(speck.id)} und Pepperoni-Salami ${jeStueck(pepperoni.id)} kcal.`,
+                },
+                {
+                  icon: "🍕",
+                  titel: "Leichtere Sorten wählen",
+                  text: `Gemüse und Obst senken die Kalorien je 100 g: Ein Stück ${nachStueck[0].name} hat ${stueckKcal(nachStueck[0].id)} kcal, ${nachStueck[1].name} ${stueckKcal(nachStueck[1].id)}, Margherita ${stueckKcal("margherita")} und Salami ${stueckKcal("salami")} kcal.`,
+                },
+                {
+                  icon: "👥",
+                  titel: "Pizza teilen",
+                  text: `Teile eine Pizza zu zweit und bestell einen Salat dazu: Eine halbe Margherita mit 30 cm hat ${halbeMargherita} kcal.`,
+                },
+                {
+                  icon: "🧀",
+                  titel: "Weniger Käse bestellen",
+                  text: `Frag nach "leichtem Käsebelag": ${extraKaese.gramm} g Mozzarella weniger sparen ${zutatKcal(extraKaese.zutat, extraKaese.gramm)} kcal je Pizza.`,
+                },
+              ].map((tipp) => (
+                <div key={tipp.titel} className="card bg-base-100 shadow">
+                  <div className="card-body py-4 flex-row gap-4 items-center">
+                    <span className="text-3xl">{tipp.icon}</span>
+                    <div>
+                      <h3 className="font-bold">{tipp.titel}</h3>
+                      <p className="text-sm opacity-70">{tipp.text}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="card bg-base-100 shadow">
-                <div className="card-body py-4 flex-row gap-4 items-center">
-                  <span className="text-3xl">🥗</span>
-                  <div>
-                    <h3 className="font-bold">Gemüse-Beläge bevorzugen</h3>
-                    <p className="text-sm opacity-70">
-                      Pilze, Paprika, Zwiebeln und Tomaten haben kaum Kalorien – Salami und Speck viele.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="card bg-base-100 shadow">
-                <div className="card-body py-4 flex-row gap-4 items-center">
-                  <span className="text-3xl">🍕</span>
-                  <div>
-                    <h3 className="font-bold">Margherita als Basis</h3>
-                    <p className="text-sm opacity-70">
-                      Die klassische Margherita ist die kalorienärmste Pizza – nur ca. 200 kcal pro Stück.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="card bg-base-100 shadow">
-                <div className="card-body py-4 flex-row gap-4 items-center">
-                  <span className="text-3xl">👥</span>
-                  <div>
-                    <h3 className="font-bold">Pizza teilen</h3>
-                    <p className="text-sm opacity-70">
-                      Teile eine Pizza zu zweit und bestell einen Salat dazu – so isst du nur 400-500 kcal.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="card bg-base-100 shadow">
-                <div className="card-body py-4 flex-row gap-4 items-center">
-                  <span className="text-3xl">🧀</span>
-                  <div>
-                    <h3 className="font-bold">Weniger Käse bestellen</h3>
-                    <p className="text-sm opacity-70">
-                      Frag nach "leichtem Käsebelag" – das kann 200+ kcal sparen.
-                    </p>
-                  </div>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
@@ -695,89 +662,15 @@ function PizzaKalorienRechnerPage({ config }: Props) {
             </h2>
 
             <div className="max-w-2xl mx-auto space-y-4">
-              <div className="collapse collapse-plus bg-base-100 shadow">
-                <input type="radio" name="faq" defaultChecked />
-                <div className="collapse-title text-lg font-medium">
-                  Wie viele Kalorien hat ein Stück Pizza?
+              {faq.map((item, i) => (
+                <div key={item.q} className="collapse collapse-plus bg-base-100 shadow">
+                  <input type="radio" name="faq" defaultChecked={i === 0} />
+                  <div className="collapse-title text-lg font-medium">{item.q}</div>
+                  <div className="collapse-content">
+                    <p>{item.a}</p>
+                  </div>
                 </div>
-                <div className="collapse-content">
-                  <p>
-                    Ein Stück Pizza (1/8 einer 30cm Pizza) hat je nach Belag{" "}
-                    <strong>200-300 kcal</strong>. Margherita ca. 200 kcal, Salami ca. 260 kcal,
-                    Quattro Formaggi bis zu 290 kcal pro Stück.
-                  </p>
-                </div>
-              </div>
-
-              <div className="collapse collapse-plus bg-base-100 shadow">
-                <input type="radio" name="faq" />
-                <div className="collapse-title text-lg font-medium">
-                  Wie viele Kalorien hat eine ganze Pizza?
-                </div>
-                <div className="collapse-content">
-                  <p>
-                    Eine ganze Pizza (30 cm) hat durchschnittlich <strong>800-1200 kcal</strong>.
-                    Margherita ca. 800-900 kcal, Salami 1000-1100 kcal, Quattro Formaggi bis zu
-                    1200 kcal. Grosse Pizzen (36+ cm) können 1500+ kcal haben.
-                  </p>
-                </div>
-              </div>
-
-              <div className="collapse collapse-plus bg-base-100 shadow">
-                <input type="radio" name="faq" />
-                <div className="collapse-title text-lg font-medium">
-                  Welche Pizza hat am wenigsten Kalorien?
-                </div>
-                <div className="collapse-content">
-                  <p>
-                    Die <strong>Margherita</strong> ist die kalorienärmste klassische Pizza.
-                    Noch weniger hat eine <strong>Marinara</strong> (nur Tomaten, Knoblauch, Oregano
-                    – ohne Käse). Auch Vegetariana mit viel Gemüse ist relativ leicht.
-                  </p>
-                </div>
-              </div>
-
-              <div className="collapse collapse-plus bg-base-100 shadow">
-                <input type="radio" name="faq" />
-                <div className="collapse-title text-lg font-medium">
-                  Ist Pizza gut zum Abnehmen?
-                </div>
-                <div className="collapse-content">
-                  <p>
-                    Pizza kann in eine Diät passen, wenn du <strong>die Portion kontrollierst</strong>:
-                    2-3 Stücke mit Salat statt einer ganzen Pizza. Wähle dünnen Teig, wenig Käse
-                    und Gemüse-Beläge. So bleibst du bei 400-500 kcal.
-                  </p>
-                </div>
-              </div>
-
-              <div className="collapse collapse-plus bg-base-100 shadow">
-                <input type="radio" name="faq" />
-                <div className="collapse-title text-lg font-medium">
-                  Hat Tiefkühlpizza weniger Kalorien?
-                </div>
-                <div className="collapse-content">
-                  <p>
-                    Oft ja! Eine typische <strong>Tiefkühlpizza hat 650-850 kcal</strong> für die
-                    ganze Pizza – weniger als Restaurantpizza. Aber Achtung: Die Portionen sind
-                    kleiner. Kalorien pro 100g sind oft ähnlich.
-                  </p>
-                </div>
-              </div>
-
-              <div className="collapse collapse-plus bg-base-100 shadow">
-                <input type="radio" name="faq" />
-                <div className="collapse-title text-lg font-medium">
-                  Was ist kalorienärmer: Pizza oder Döner?
-                </div>
-                <div className="collapse-content">
-                  <p>
-                    Ein <strong>Döner (696 kcal)</strong> hat weniger Kalorien als eine ganze
-                    Pizza (800-1200 kcal), aber mehr als 2-3 Stücke Pizza. Entscheidend ist die
-                    Portion! Döner hat mehr Protein, Pizza mehr Kohlenhydrate.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </section>
