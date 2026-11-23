@@ -39,89 +39,86 @@
     },
     {
       "name": "Pizza Salami",
-      "portion_g": 370,
-      "calories": 1043,
-      "protein": 43,
-      "carbs": 118,
-      "fat": 44,
+      "portion_g": 350,
+      "calories": 987,
+      "protein": 41,
+      "carbs": 112,
+      "fat": 42,
       "basis": [
         {
           "fdcId": 2708638,
-          "g": 370
+          "g": 350
         }
       ]
     },
     {
       "name": "Pizza Funghi",
-      "portion_g": 340,
-      "calories": 796,
-      "protein": 34,
-      "carbs": 102,
-      "fat": 28,
+      "portion_g": 350,
+      "calories": 819,
+      "protein": 35,
+      "carbs": 105,
+      "fat": 29,
       "basis": [
         {
           "fdcId": 2708626,
-          "g": 340
+          "g": 350
         }
       ]
     },
     {
       "name": "Pizza Hawaii",
-      "portion_g": 380,
-      "calories": 863,
-      "protein": 41,
-      "carbs": 103,
-      "fat": 32,
+      "portion_g": 350,
+      "calories": 795,
+      "protein": 38,
+      "carbs": 95,
+      "fat": 29,
       "basis": [
         {
           "fdcId": 2708669,
-          "g": 380
+          "g": 350
         }
       ]
     },
     {
       "name": "Pizza Quattro Formaggi",
-      "portion_g": 360,
-      "calories": 965,
-      "protein": 43,
-      "carbs": 114,
-      "fat": 37,
+      "portion_g": 350,
+      "calories": 938,
+      "protein": 42,
+      "carbs": 111,
+      "fat": 36,
       "basis": [
         {
           "fdcId": 2708622,
-          "g": 360
+          "g": 350
         }
       ]
     },
     {
       "name": "Pizza Tonno",
       "portion_g": 350,
-      "calories": 841,
-      "protein": 44,
-      "carbs": 100,
-      "fat": 30,
+      "calories": 903,
+      "protein": 48,
+      "carbs": 102,
+      "fat": 33,
       "basis": [
         {
-          "g": 300
-        },
-        {
-          "slug": "thunfisch-dose",
-          "g": 50
+          "slug": "pizza-tonno",
+          "g": 350
         }
       ]
     },
     {
       "name": "Pizza Vegetariana",
-      "portion_g": 360,
-      "calories": 749,
-      "protein": 31,
-      "carbs": 94,
-      "fat": 28,
+      "portion_g": 350,
+      "calories": 819,
+      "protein": 35,
+      "carbs": 105,
+      "fat": 29,
       "tip": "Viel Gemüse",
       "basis": [
         {
-          "fdcId": 2708629,
-          "g": 360
+          "slug": "pizza-vegetariana",
+          "g": 350
         }
       ]
     },
@@ -207,7 +204,7 @@
     },
     {
       "title": "Selbst machen",
-      "text": "Selbstgemachte Pizza mit Vollkornteig und viel Gemüse hat weniger Kalorien als Lieferpizza.",
+      "text": "Selbstgemachte Pizza mit viel Gemüse und weniger Käse hat weniger Kalorien als Lieferpizza. Vollkornteig bringt mehr Ballaststoffe, aber kaum weniger Kalorien.",
       "icon": "👩‍🍳"
     },
     {
@@ -219,15 +216,15 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine ganze Pizza?",
-      "answer": "Eine ganze Pizza hat je nach Sorte zwischen 749 und 1043 kcal. Eine Pizza Margherita (350g) hat ca. 931 kcal, eine Pizza Salami (370g) ca. 1043 kcal. Eine Tiefkühlpizza (330g) liegt bei ca. 868 kcal."
+      "answer": "Eine ganze Pizza mit 30 cm (350 g) hat je nach Sorte zwischen 795 und 987 kcal: Pizza Margherita 931 kcal, Pizza Salami 987 kcal, Pizza Hawaii 795 kcal. Eine Tiefkühlpizza (330g) liegt bei ca. 868 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza?",
-      "answer": "Ein Stück Pizza (ca. 1/8 einer ganzen Pizza) hat zwischen 94 und 130 kcal. Bei einer Margherita sind es ca. 116 kcal pro Stück, bei einer Salami-Pizza ca. 130 kcal."
+      "answer": "Ein Stück Pizza, also ein Achtel einer 30-cm-Pizza (44 g), hat je nach Sorte zwischen 99 (Hawaii) und 123 kcal (Salami). Bei einer Margherita sind es 116 kcal pro Stück."
     },
     {
       "question": "Welche Pizza hat die wenigsten Kalorien?",
-      "answer": "Pizza Vegetariana ist mit ca. 749 kcal pro Pizza die kalorienärmste Variante. Auch Pizza Funghi (Pilz-Pizza, 796 kcal) und Pizza Tonno (841 kcal) sind gute Optionen."
+      "answer": "Unter den Sorten hier hat Pizza Hawaii mit 795 kcal je ganzer Pizza (30 cm, 350 g) die wenigsten Kalorien, gefolgt von Pizza Funghi und Pizza Vegetariana mit je 819 kcal. Am meisten hat Pizza Salami mit 987 kcal."
     },
     {
       "question": "Ist Tiefkühlpizza gesünder als Lieferpizza?",
@@ -239,7 +236,7 @@
     },
     {
       "question": "Hat Pizza Margherita weniger Kalorien als Salami?",
-      "answer": "Ja. Eine Pizza Margherita (350g) hat ca. 931 kcal, eine Pizza Salami (370g) ca. 1043 kcal. Das sind rund 112 kcal Unterschied, durch die Salami und die etwas schwerere Pizza."
+      "answer": "Ja. Bei gleichem Gewicht (30 cm, 350 g) hat eine Pizza Margherita 931 kcal, eine Pizza Salami 987 kcal. Die 56 kcal Unterschied kommen von der Salami."
     }
   ],
   "related_foods": [

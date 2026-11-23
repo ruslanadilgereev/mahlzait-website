@@ -3,17 +3,17 @@
   "name": "Pizza Tonno",
   "emoji": "🍕",
   "category": "fast-food",
-  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Pizza Tonno à 800 g): 700 g Käsepizza (Pizzeria, wie Pizza Margherita) (FDC-ID 2708614, Pizza, cheese, from restaurant or fast food, NS as to type of crust: 266 kcal), 100 g Thunfisch in Öl, abgetropft (FDC-ID 173708, Fish, tuna, light, canned in oil, drained solids: 198 kcal); Werte je 100 g",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 1 Pizza Tonno à 350 g): 306,25 g Käsepizza (Pizzeria, wie Pizza Margherita) (FDC-ID 2708614, Pizza, cheese, from restaurant or fast food, NS as to type of crust: 266 kcal), 43,75 g Thunfisch in Öl, abgetropft (FDC-ID 173708, Fish, tuna, light, canned in oil, drained solids: 198 kcal); Werte je 100 g",
   "rezept": {
     "zutaten": [
       {
         "name": "Käsepizza (Pizzeria, wie Pizza Margherita)",
-        "g": 700,
+        "g": 306.25,
         "fdcId": 2708614
       },
       {
         "name": "Thunfisch in Öl, abgetropft",
-        "g": 100,
+        "g": 43.75,
         "fdcId": 173708
       }
     ]
@@ -28,26 +28,26 @@
     "carbs_per_100g": 29.2,
     "fat_per_100g": 9.5,
     "fiber_per_100g": 2,
-    "typical_portion_g": 150,
-    "typical_portion_name": "1 Stück (150g)"
+    "typical_portion_g": 43.75,
+    "typical_portion_name": "1 Stück (1/8 Pizza, 44 g)"
   },
   "variants": [
     {
       "name": "Pizza Tonno (1 Stück, Pizzeria)",
-      "portion_g": 150,
-      "calories": 387,
-      "protein": 20,
-      "carbs": 44,
-      "fat": 14
+      "portion_g": 43.75,
+      "calories": 113,
+      "protein": 6,
+      "carbs": 13,
+      "fat": 4
     },
     {
       "name": "Pizza Tonno ganz (Pizzeria)",
-      "portion_g": 800,
-      "calories": 2064,
-      "protein": 109,
-      "carbs": 234,
-      "fat": 76,
-      "tip": "Ganze 30cm Pizza"
+      "portion_g": 350,
+      "calories": 903,
+      "protein": 48,
+      "carbs": 102,
+      "fat": 33,
+      "tip": "Ganze Pizza, 30 cm"
     },
     {
       "name": "TK-Pizza Tonno (320g)",
@@ -69,108 +69,110 @@
       ]
     },
     {
-      "name": "Pizza Tonno mit Zwiebeln",
-      "portion_g": 160,
-      "calories": 391,
-      "protein": 21,
-      "carbs": 45,
-      "fat": 14,
+      "name": "Pizza Tonno mit Zwiebeln (ganz, 30 cm)",
+      "portion_g": 380,
+      "calories": 915,
+      "protein": 48,
+      "carbs": 105,
+      "fat": 33,
       "tip": "Klassisch italienisch",
       "basis": [
         {
-          "g": 150
+          "g": 350
         },
         {
           "fdcId": 170000,
-          "g": 10
+          "g": 30
         }
       ]
     },
     {
-      "name": "Pizza Tonno mit Kapern",
-      "portion_g": 155,
-      "calories": 388,
-      "protein": 21,
-      "carbs": 44,
-      "fat": 14,
+      "name": "Pizza Tonno mit Kapern (ganz, 30 cm)",
+      "portion_g": 360,
+      "calories": 905,
+      "protein": 48,
+      "carbs": 103,
+      "fat": 33,
       "basis": [
         {
-          "g": 150
+          "g": 350
         },
         {
           "fdcId": 172238,
-          "g": 5
+          "g": 10
         }
       ]
     },
     {
       "name": "Pizza Tonno (halbe)",
-      "portion_g": 400,
-      "calories": 1032,
-      "protein": 54,
-      "carbs": 117,
-      "fat": 38
+      "portion_g": 175,
+      "calories": 452,
+      "protein": 24,
+      "carbs": 51,
+      "fat": 17
     },
     {
-      "name": "Pizza Tonno e Cipolla",
-      "portion_g": 165,
-      "calories": 397,
-      "protein": 21,
-      "carbs": 45,
-      "fat": 15,
+      "name": "Pizza Tonno e Cipolla (ganz, 30 cm)",
+      "portion_g": 400,
+      "calories": 938,
+      "protein": 48,
+      "carbs": 106,
+      "fat": 35,
       "tip": "Mit extra Zwiebeln & Oliven",
       "basis": [
         {
-          "g": 150
+          "g": 350
         },
         {
           "fdcId": 170000,
-          "g": 10
+          "g": 30
         },
         {
           "fdcId": 169094,
-          "g": 5
+          "g": 20
         }
       ]
     },
     {
-      "name": "Pizza Tonno mit Thunfisch im eigenen Saft (150g)",
-      "portion_g": 150,
-      "calories": 365,
-      "protein": 19,
-      "carbs": 44,
-      "fat": 13,
+      "name": "Pizza Tonno mit Thunfisch im eigenen Saft (ganz, 30 cm)",
+      "portion_g": 350,
+      "calories": 852,
+      "protein": 43,
+      "carbs": 102,
+      "fat": 30,
       "tip": "Thunfisch natur statt in Öl",
       "basis": [
         {
           "fdcId": 2708614,
-          "g": 131
+          "g": 306.25
         },
         {
           "fdcId": 173709,
-          "g": 19
+          "g": 43.75
         }
       ]
     }
   ],
   "comparison": [
     {
-      "name": "Pizza Margherita (1 Stück, 140g)",
-      "calories": 372,
+      "name": "Pizza Margherita (1 Stück, 44 g)",
+      "calories": 116,
       "emoji": "🍕",
       "basis": [
         {
-          "slug": "pizza-margherita"
+          "slug": "pizza-margherita",
+          "g": 43.75
         }
       ]
     },
     {
-      "name": "Pizza Salami (1 Stück, 150g)",
-      "calories": 423,
+      "name": "Pizza Salami (1 Stück, 44 g)",
+      "calories": 123,
       "emoji": "🍕",
       "basis": [
         {
-          "slug": "pizza-salami"
+          "slug": "pizza-salami",
+          "g": 43.75
         }
       ]
     },
@@ -210,7 +212,7 @@
     },
     {
       "title": "Thunfisch im eigenen Saft",
-      "text": "Zuhause Thunfisch im eigenen Saft statt in Öl verwenden, das spart pro Stück rund 22 kcal.",
+      "text": "Zuhause Thunfisch im eigenen Saft statt in Öl verwenden, das spart je ganzer 30-cm-Pizza rund 51 kcal (852 statt 903 kcal).",
       "icon": "🐟"
     },
     {
@@ -227,19 +229,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza Tonno?",
-      "answer": "Ein Stück Pizza Tonno (150g) hat ca. 387 kcal. Das liegt zwischen Margherita (1 Stück, 140g: 372 kcal) und Salami (1 Stück, 150g: 423 kcal). Gerechnet aus USDA-Werten für eine Käsepizza (700 g) mit 100 g Thunfisch in Öl."
+      "answer": "Ein Stück Pizza Tonno, also ein Achtel einer 30-cm-Pizza (44 g), hat 113 kcal, etwas weniger als ein Stück Margherita (116 kcal) oder Salami (123 kcal). Gerechnet aus USDA-Werten für eine Käsepizza mit Thunfisch in Öl (306,25 g Käsepizza und 43,75 g Thunfisch je 350-g-Pizza)."
     },
     {
       "question": "Ist Pizza Tonno gesund?",
-      "answer": "Für eine Pizza relativ gesund: proteinreich, weniger Fett als Wurst-Pizzen und Omega-3 vom Thunfisch. Trotzdem kalorienreich als ganze Pizza (2064 kcal)."
+      "answer": "Für eine Pizza relativ gesund: proteinreich, weniger Fett als Wurst-Pizzen und Omega-3 vom Thunfisch. Trotzdem kalorienreich als ganze Pizza (903 kcal)."
     },
     {
       "question": "Wie viel Protein hat Pizza Tonno?",
-      "answer": "Ein Stück Pizza Tonno liefert ca. 20g Protein, mehr als ein Stück Margherita oder Salami, dank des Thunfischs."
+      "answer": "Ein Stück Pizza Tonno (44 g) liefert 6 g Protein, die ganze 30-cm-Pizza 48 g, mehr als eine Margherita (40 g) oder Salami (41 g), dank des Thunfischs."
     },
     {
       "question": "Was hat weniger Kalorien: Pizza Tonno oder Döner?",
-      "answer": "Zwei Stücke Pizza Tonno (774 kcal) haben etwas mehr Kalorien als ein Döner (696 kcal). Ein einzelnes Stück (387 kcal) ist deutlich leichter."
+      "answer": "Ein Döner (696 kcal) hat etwa so viele Kalorien wie sechs Stücke Pizza Tonno (677 kcal). Die ganze 30-cm-Pizza hat mit 903 kcal mehr."
     },
     {
       "question": "Wie viel Fett hat Pizza Tonno?",

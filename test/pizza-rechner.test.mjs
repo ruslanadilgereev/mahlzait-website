@@ -9,14 +9,22 @@
 // Verhältnis der Fläche mehr (Vorschlag aus Commit 3d0369a, freigegeben am
 // 23.11.2026). Der Test prüft die Rechnung, die Grenzfälle, die gebaute Seite
 // und den Kalorienverbrauch-Rechner (vorher pnpm build).
+// Zweiter Schritt (Entscheidung des Leads, 23.11.2026): Ein Stück heißt überall
+// 1/8 einer 30-cm-Pizza mit 350 g, auf den allgemeinen Pizza-Seiten, in den
+// Vergleichen anderer Seiten, im Döner- und Alkohol-Rechner; Vollkorn rechnet mit
+// den FDC-Einträgen für Käsepizza mit Vollkornboden gegen normalen Boden; der
+// Cheatday-Rechner und der Intervallfasten-Artikel nennen Werte des Modells.
 import { test } from "node:test";
 import assert from "node:assert/strict";
+import { readdirSync } from "node:fs";
+import { join } from "node:path";
 import {
   faqFromSchema,
   jsonLd,
   pageExists,
   readPage,
   readRepoFile,
+  repoRoot,
   visibleText,
 } from "./dist-html.mjs";
 
@@ -109,9 +117,9 @@ test("Die ganze 30-cm-Pizza entspricht den 350-g-Varianten der Lebensmittelseite
   // Kalorienverbrauch-Rechner nennt dieselbe ganze Margherita
   const quelle = readRepoFile("src/components/calculators/DoenerRechner.tsx");
   assert.ok(quelle.includes('{ name: "Pizza Margherita", kcal: ' + R.ganzeKcal("margherita") + ","));
-  // Das große Pizzeria-Stück (140 g) der FAQ ist die Variante der Seite pizza-margherita
-  const gross = lade("pizza-margherita").variants.find((v) => v.name === "Pizza Margherita (1 Stück, Pizzeria)");
-  assert.deepEqual([gross.portion_g, gross.calories], [140, Math.round((R.sorte("margherita").je100g.kcal * 140) / 100)]);
+  // Das Stück der Seite pizza-margherita ist das Stück des Rechners
+  const stueck = lade("pizza-margherita").variants.find((v) => v.name === "Pizza Margherita (1 Stück, Pizzeria)");
+  assert.deepEqual([stueck.portion_g, stueck.calories], [R.STUECK_GRAMM, R.stueckKcal("margherita")]);
   // Tiefkühlpizzen der Kalorientabelle und FAQ: Varianten der Seiten
   for (const t of R.tiefkuehl) {
     const v = lade(t.seite).variants.find((x) => x.name === t.variante);
@@ -121,10 +129,14 @@ test("Die ganze 30-cm-Pizza entspricht den 350-g-Varianten der Lebensmittelseite
   }
 });
 
-// FDC-Werte je 100 g: Referenzdatei aus den Massendaten; 174183 steht auf keiner
-// Lebensmittelseite und damit nicht in der Referenz, Werte laut FDC-API (23.11.2026).
+// FDC-Werte je 100 g: Referenzdatei aus den Massendaten; 174183 und 2708687 stehen
+// auf keiner Lebensmittelseite und damit nicht in der Referenz. 174183 laut
+// FDC-API (23.11.2026), 2708687 aus den FNDDS-Massendaten 2024-10-31 (die API
+// rundet FNDDS-Werte auf drei Stellen: 267 kcal, 11,8 g Eiweiß, 28,6 g
+// Kohlenhydrate, 12,4 g Fett, 3,5 g Ballaststoffe).
 const FDC_API = {
   174183: { beschreibung: "Fish, anchovy, european, canned in oil, drained solids", kcal: 210, eiweiss: 28.89, kohlenhydrate: 0, fett: 9.71, ballaststoffe: 0 },
+  2708687: { beschreibung: "Pizza, cheese, whole wheat thin crust", kcal: 267, eiweiss: 11.77, kohlenhydrate: 28.62, fett: 12.38, ballaststoffe: 3.5 },
 };
 
 test("Zutaten haben die Werte ihres FDC-Eintrags, die Rezepte ergeben die Werte je 100 g", () => {
@@ -203,7 +215,7 @@ test("Boden und Beläge: Gramm je Pizza mit FDC-Werten je Gramm", () => {
       thin: [{ zutat: "teig", gramm: unterschied(500) }],
       thick: [{ zutat: "teig", gramm: unterschied(744) }],
       stuffed: [{ zutat: "mozzarella", gramm: unterschied(800) }],
-      wholegrain: [{ zutat: "teig", gramm: -231 }, { zutat: "vollkornteig", gramm: 231 }],
+      wholegrain: [{ zutat: "kaesepizzaDuenn", gramm: -350 }, { zutat: "vollkornpizza", gramm: 350 }],
     },
   );
   for (const b of R.boeden) {
@@ -238,7 +250,7 @@ test("Boden und Beläge: Gramm je Pizza mit FDC-Werten je Gramm", () => {
     nahe(R.belagJeStueck(b.id, "small"), (kcal * (26 / 30) ** 2) / 6, b.id + " 26 cm");
   }
   // so zeigen es die Knöpfe bei 30 cm (kcal je Stück)
-  assert.deepEqual(R.boeden.map((b) => Math.round(R.bodenJeStueck(b.id))), [0, -33, 9, 21, -10]);
+  assert.deepEqual(R.boeden.map((b) => Math.round(R.bodenJeStueck(b.id))), [0, -33, 9, 21, 0]);
   assert.deepEqual(R.belaege.map((b) => Math.round(R.belagJeStueck(b.id))), [19, 19, 1, 3, 2, 15, 1, 5]);
 });
 
@@ -297,6 +309,7 @@ test("Gebaute Seite: FAQ und Schema gleich, Annahmen sichtbar, keine alten Werte
     "mit normalem Boden 691 g, mit dünnem 500 g, mit dickem 744 g und mit Käserand 800 g",
     "97 g Teig weniger beim dünnen Boden, 27 g Teig mehr beim dicken und 55 g Mozzarella im Käserand",
     "Die ganze Margherita hat deshalb 931 kcal, nicht 8 × 116 = 928 kcal.",
+    "Für den Vollkornboden nennt FDC bei Käsepizza mit dünnem Boden je 100 g 267 statt 266 kcal (FDC 2708687 gegen 2708615), also praktisch gleich viel, dazu mehr Ballaststoffe (3,5 statt 2,3 g)",
   ]) {
     assert.ok(text.includes(satz), "fehlt: " + satz);
   }
@@ -347,4 +360,184 @@ test("Kalorienverbrauch-Rechner: Pizza-Zeile passt zur ganzen 30-cm-Margherita",
   const t = visibleText(seite("/kalorienverbrauch-rechner/"));
   assert.ok(t.includes("Pizza: " + Math.ceil(kcal / 10) + " Min Joggen"), "Liste Pizza");
   assert.doesNotMatch(t, /Pizza: 80 Min Joggen/);
+});
+
+// Allgemeine Pizza-Seiten: Stück, ganze, halbe und andere Größen wie im Rechner.
+// Sorte im Rechner oder null (Seite ohne Rechner-Sorte, Werte der Seite je 100 g).
+const RECHNER_SORTE = {
+  pizza: "margherita",
+  "pizza-margherita": "margherita",
+  "pizza-salami": "salami",
+  "pizza-tonno": "tonno",
+  "pizza-hawaii": "hawaii",
+  "pizza-quattro-formaggi": "quattro-formaggi",
+  "pizza-diavola": "diavola",
+  "pizza-diavolo": null,
+  "pizza-funghi": null,
+  "pizza-vegetariana": "vegetariana",
+};
+const MODELL = {
+  stueck: { groesse: "medium", stuecke: 1, gramm: 43.75 },
+  halbe: { groesse: "medium", stuecke: 4, gramm: 175 },
+  ganz: { groesse: "medium", stuecke: 8, gramm: 350 },
+  gross: { groesse: "large", stuecke: 10, gramm: 504 },
+  klein: { groesse: "small", stuecke: 6, gramm: 263 },
+};
+// [Seite, Variante, Art, Sorte im Rechner (sonst die der Seite), Extras, Boden]
+const SEITEN_VARIANTEN = [
+  ["pizza", "Pizza Margherita", "ganz"],
+  ["pizza", "Pizza Salami", "ganz", "salami"],
+  ["pizza", "Pizza Funghi", "ganz", "vegetariana"],
+  ["pizza", "Pizza Hawaii", "ganz", "hawaii"],
+  ["pizza", "Pizza Quattro Formaggi", "ganz", "quattro-formaggi"],
+  ["pizza", "Pizza Tonno", "ganz", "tonno"],
+  ["pizza", "Pizza Vegetariana", "ganz", "vegetariana"],
+  ["pizza-margherita", "Pizza Margherita (1 Stück, Pizzeria)", "stueck"],
+  ["pizza-margherita", "Pizza Margherita ganz (Pizzeria)", "ganz"],
+  ["pizza-salami", "Pizza Salami (1 Stück, Pizzeria)", "stueck"],
+  ["pizza-salami", "Pizza Salami ganz (Pizzeria)", "ganz"],
+  ["pizza-salami", "Pizza Salami (halbe Pizza)", "halbe"],
+  ["pizza-tonno", "Pizza Tonno (1 Stück, Pizzeria)", "stueck"],
+  ["pizza-tonno", "Pizza Tonno ganz (Pizzeria)", "ganz"],
+  ["pizza-tonno", "Pizza Tonno (halbe)", "halbe"],
+  ["pizza-tonno", "Pizza Tonno mit Zwiebeln (ganz, 30 cm)", "ganz", null, ["onions"]],
+  ["pizza-tonno", "Pizza Tonno e Cipolla (ganz, 30 cm)", "ganz", null, ["onions", "olives"]],
+  ["pizza-hawaii", "Pizza Hawaii (1 Stück, Pizzeria)", "stueck"],
+  ["pizza-hawaii", "Pizza Hawaii ganz (Pizzeria)", "ganz"],
+  ["pizza-hawaii", "Pizza Hawaii (halbe Pizza)", "halbe"],
+  ["pizza-hawaii", "Pizza Hawaii mit dickem Boden (ganz, 30 cm)", "ganz", null, [], "thick"],
+  ["pizza-hawaii", "Pizza Hawaii mit extra Käse (ganz, 30 cm)", "ganz", null, ["extra-cheese"]],
+  ["pizza-quattro-formaggi", "Pizza Quattro Formaggi (1 Stück)", "stueck"],
+  ["pizza-quattro-formaggi", "Pizza Quattro Formaggi ganz", "ganz"],
+  ["pizza-quattro-formaggi", "Pizza Quattro Formaggi (halbe)", "halbe"],
+  ["pizza-diavola", "1 Stück (1/8 Pizza, 44 g)", "stueck"],
+  ["pizza-diavola", "Halbe Pizza (175g)", "halbe"],
+  ["pizza-diavola", "Große Pizza (36 cm, 504 g)", "gross"],
+  ["pizza-diavola", "Kleine Pizza (26 cm, 263 g)", "klein"],
+  ["pizza-diavolo", "1 Stück (1/8 Pizza, 44 g)", "stueck"],
+  ["pizza-diavolo", "Halbe Pizza (175 g)", "halbe"],
+  ["pizza-diavolo", "Ganze Pizza (350g)", "ganz"],
+  ["pizza-diavolo", "Große Pizza (36 cm, 504 g)", "gross"],
+  ["pizza-funghi", "1 Stück (1/8 Pizza, 44 g)", "stueck"],
+  ["pizza-funghi", "Halbe Pizza (175 g)", "halbe"],
+  ["pizza-funghi", "Ganze Pizza (30 cm, 350 g)", "ganz"],
+  ["pizza-funghi", "Große Pizza (36 cm, 504 g)", "gross"],
+  ["pizza-vegetariana", "1 Stück (1/8 Pizza, 44 g)", "stueck"],
+  ["pizza-vegetariana", "Halbe Pizza (175g)", "halbe"],
+  ["pizza-vegetariana", "1 ganze Pizza (350g)", "ganz"],
+  ["pizza-vegetariana", "Große Pizza (36 cm, 504 g)", "gross"],
+];
+
+test("Allgemeine Pizza-Seiten: ein Stück, die ganze, halbe, große und kleine Pizza wie im Rechner", () => {
+  brauchtRechnung();
+  for (const [slug, name, art, sorteId, extras = [], boden = "classic"] of SEITEN_VARIANTEN) {
+    const food = lade(slug);
+    const v = food.variants.find((x) => x.name === name);
+    assert.ok(v, slug + ": Variante fehlt: " + name);
+    const m = MODELL[art];
+    const sorte = sorteId ?? RECHNER_SORTE[slug];
+    let erwartet;
+    if (sorte) {
+      const e = R.berechne(R.auswahl(sorte, m.groesse, boden, extras, m.stuecke));
+      const g = R.gerundet(e.gegessen);
+      erwartet = [extras.length || boden !== "classic" ? g.gramm : m.gramm, g.kcal, g.protein, g.kh, g.fett];
+    } else {
+      const o = food.overview;
+      const gramm = art === "klein" ? 350 * (26 / 30) ** 2 : m.gramm;
+      erwartet = [m.gramm, ...[o.calories_per_100g, o.protein_per_100g, o.carbs_per_100g, o.fat_per_100g].map((w) => Math.round((w * gramm) / 100))];
+    }
+    assert.deepEqual([v.portion_g, v.calories, v.protein, v.carbs, v.fat], erwartet, slug + ": " + name);
+  }
+  // typische Portion: ein Stück (43,75 g) oder die ganze 30-cm-Pizza (350 g)
+  const portionen = Object.fromEntries(Object.keys(RECHNER_SORTE).map((s) => [s, lade(s).overview.typical_portion_g]));
+  assert.deepEqual(portionen, {
+    pizza: 350, "pizza-margherita": 43.75, "pizza-salami": 43.75, "pizza-tonno": 43.75, "pizza-hawaii": 43.75,
+    "pizza-quattro-formaggi": 43.75, "pizza-diavola": 350, "pizza-diavolo": 350, "pizza-funghi": 350, "pizza-vegetariana": 350,
+  });
+  // keine andere Stück-, Halbe- oder Ganze-Pizza-Variante mit eigenem Gewicht auf diesen Seiten
+  for (const slug of Object.keys(RECHNER_SORTE)) {
+    for (const v of lade(slug).variants) {
+      if (/TK|Tiefkühl|Mini|Fertig/.test(v.name)) continue;
+      if (/Stück|halbe|Halbe|ganz|Ganze/.test(v.name)) {
+        assert.ok(SEITEN_VARIANTEN.some(([s, n]) => s === slug && n === v.name) || /ganz, 30 cm/.test(v.name), slug + ": nicht geprüfte Variante " + v.name);
+      }
+    }
+  }
+});
+
+// Markenseiten mit Herstellergewichten bleiben, wie sie sind.
+const MARKEN = new Set(["dominos-pizza", "pizza-hut", "pizza-hut-margherita", "dr-oetker-pizza", "ristorante-pizza", "gustavo-gusto-pizza", "gustavo-gusto-margherita", "l-osteria-pizza", "piccolinis", "vapiano"]);
+
+test("Vergleiche und Texte anderer Seiten: ein Stück Pizza = 43,75 g, eine ganze Pizza = 350 g", () => {
+  brauchtRechnung();
+  const alle = readdirSync(join(repoRoot, "src/data/foods")).filter((f) => f.endsWith(".json")).map((f) => JSON.parse(readRepoFile("src/data/foods/" + f)));
+  const gramm = (food, basis) => basis.reduce((s, b) => s + (b.g ?? lade(b.slug).overview.typical_portion_g), 0);
+  let stuecke = 0;
+  for (const food of alle.filter((f) => !MARKEN.has(f.slug))) {
+    for (const c of food.comparison) {
+      if (!/pizza/i.test(c.name) || /Baguette|Mini|TK|Tiefkühl|Fertig|Calzone/.test(c.name)) continue;
+      const n = c.name.match(/\((\d+) Stück/);
+      if (/Stück/.test(c.name)) {
+        assert.equal(gramm(food, c.basis), (n ? Number(n[1]) : 1) * 43.75, food.slug + ": " + c.name);
+        stuecke++;
+      } else if (/ganz/.test(c.name)) {
+        assert.equal(gramm(food, c.basis), 350, food.slug + ": " + c.name);
+      }
+    }
+    const texte = JSON.stringify([food.tips, food.faq, food.seo, food.variants.map((v) => v.name)]);
+    assert.doesNotMatch(texte, /Pizza-Scheibe|1 Stück, 140g|1 Stück, 150g|\(140g, ca\. 372 kcal\)|je ca\. 229 kcal|Salamipizza \(516g/, food.slug);
+  }
+  assert.ok(stuecke >= 24, "nur " + stuecke + " Stück-Vergleiche");
+});
+
+test("Döner-, Alkohol-Rechner und Alkohol-Artikel: ein Stück Pizza wie im Pizza-Rechner", () => {
+  brauchtRechnung();
+  const stueck = R.stueckKcal("margherita");
+  assert.equal(stueck, 116);
+  const doener = readRepoFile("src/modules/doener/index.tsx");
+  assert.ok(doener.includes('import { stueckKcal } from "@modules/pizza/rechnung";'), "Döner-Rechner rechnet mit dem Pizza-Rechner");
+  assert.ok(doener.includes('const pizzaStueck = stueckKcal("margherita");'), "Stück Margherita");
+  assert.ok(doener.includes('name: "Stücke Pizza",') && doener.includes("(calories / pizzaStueck)"), "Vergleich Stücke Pizza");
+  assert.doesNotMatch(doener, /Scheiben Pizza|calories \/ 266\)/);
+  const alkohol = readRepoFile("src/modules/alkohol/index.tsx");
+  assert.ok(alkohol.includes("(calories / " + stueck + ")"), "Alkohol-Rechner");
+  const artikel = readRepoFile("src/content/wissen/articles/alkohol-abnehmen-fettverbrennung.md");
+  assert.ok(artikel.includes("| Pizza-Slice von Freunden | " + stueck + " kcal |"), "Artikel Alkohol");
+});
+
+test("Vollkorn: FDC-Werte der Käsepizza mit Vollkornboden statt mit normalem Boden", () => {
+  brauchtRechnung();
+  const vk = R.zutaten.vollkornpizza;
+  const normal = R.zutaten.kaesepizzaDuenn;
+  assert.deepEqual([vk.fdcId, normal.fdcId], [2708687, 2708615]);
+  assert.equal(referenz["2708615"].beschreibung, "Pizza, cheese, from restaurant or fast food, thin crust");
+  const ganz = (boden) => R.berechne(R.auswahl("margherita", "medium", boden, [], 8)).ganz;
+  const unterschied = (k) => ganz("wholegrain")[k] - ganz("classic")[k];
+  nahe(unterschied("gramm"), 0, "Gewicht");
+  nahe(unterschied("kcal"), (350 * (267 - 266)) / 100, "kcal");
+  nahe(unterschied("ballaststoffe"), (350 * (3.5 - 2.3)) / 100, "Ballaststoffe");
+  nahe(unterschied("protein"), (350 * (11.77 - 11.39)) / 100, "Eiweiß");
+  nahe(unterschied("fett"), (350 * (12.38 - 9.69)) / 100, "Fett");
+  nahe(unterschied("kh"), (350 * (28.62 - 33.33)) / 100, "Kohlenhydrate");
+  // je Stück praktisch null, bei keiner Größe mehr als 1 kcal
+  for (const g of R.groessen) assert.ok(Math.abs(R.bodenJeStueck("wholegrain", g.id)) < 1, g.id);
+  assert.equal(R.zutaten.vollkornteig, undefined);
+});
+
+test("Cheatday-Rechner und Intervallfasten-Artikel nennen die Werte des Modells", () => {
+  brauchtRechnung();
+  const zahl = (w) => w.toLocaleString("de-DE");
+  const spanne = zahl(R.ganzeKcal("margherita", "small")) + "-" + zahl(R.ganzeKcal("margherita", "family"));
+  assert.equal(spanne, "699-2.095");
+  const cheatday = visibleText(seite("/cheat-day-rechner/"));
+  assert.ok(cheatday.includes("Pizza Margherita (ganz, 26 bis 45 cm) " + spanne + " kcal"), "Cheatday-Rechner");
+  assert.doesNotMatch(cheatday, /1800-2500/);
+  // Salat aus FDC-Werten: Eisbergsalat, Tomate, Gurke, 1 EL Olivenöl (10 g, Seite olivenoel)
+  const salat = [[169248, 100], [170457, 60], [168409, 40], [171413, 10]].reduce((s, [id, g]) => s + (referenz[String(id)].kcal * g) / 100, 0);
+  assert.equal(Math.round(salat), 119);
+  const klein = R.berechne(R.auswahl("margherita", "small", "classic", [], 6)).ganz.kcal;
+  const artikel = readRepoFile("src/content/wissen/articles/intervallfasten-16-8-anleitung-anfaenger.md");
+  const zeile = "- **19:30:** **Abendessen:** Pizza Margherita (ja, wirklich!), eine kleine mit 26 cm (263 g, " + Math.round(klein) + " kcal), dazu ein großer Beilagensalat aus 100 g Eisbergsalat, 60 g Tomate, 40 g Gurke und 1 EL Olivenöl (" + Math.round(salat) + " kcal): zusammen " + Math.round(klein + salat) + " kcal";
+  assert.ok(artikel.includes(zeile), zeile);
+  assert.doesNotMatch(artikel, /Beilagensalat \(~700 kcal\)/);
 });

@@ -8,6 +8,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
 import AuthorByline from "@components/AuthorByline";
+import { ganzeKcal, zahl } from "@modules/pizza/rechnung";
 interface Props {
   config: TemplateConfig;
 }
@@ -101,7 +102,12 @@ function CheatDayRechnerPage({ config }: Props) {
   };
 
   const cheatDayFoods = [
-    { food: "Pizza (ganze)", kcal: "1800-2500", emoji: "🍕" },
+    // ganze Pizza Margherita wie im Pizza-Rechner, von 26 cm (263 g) bis 45 cm (788 g)
+    {
+      food: "Pizza Margherita (ganz, 26 bis 45 cm)",
+      kcal: `${zahl(ganzeKcal("margherita", "small"))}-${zahl(ganzeKcal("margherita", "family"))}`,
+      emoji: "🍕",
+    },
     { food: "Burger + Pommes + Shake", kcal: "1500-2000", emoji: "🍔" },
     { food: "Döner mit allem", kcal: "800-1200", emoji: "🥙" },
     { food: "Eis (500ml Becher)", kcal: "800-1200", emoji: "🍨" },

@@ -94,7 +94,7 @@ function AlkoholKalorienRechnerPage({ config }: Props) {
     const comparisons = [
       { name: "Scheiben Brot", amount: Math.round((calories / 130) * 10) / 10, emoji: "🍞" },
       { name: "Äpfel", amount: Math.round((calories / 94) * 10) / 10, emoji: "🍎" },
-      { name: "Stücke Pizza", amount: Math.round((calories / 372) * 10) / 10, emoji: "🍕" },
+      { name: "Stücke Pizza", amount: Math.round((calories / 116) * 10) / 10, emoji: "🍕" },
       { name: "Minuten Joggen", amount: Math.round(calories / 10), emoji: "🏃" },
       { name: "Minuten Spazieren", amount: Math.round(calories / 4), emoji: "🚶" },
     ];

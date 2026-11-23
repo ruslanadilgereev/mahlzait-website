@@ -29,8 +29,6 @@ const schwerste = nachStueck[nachStueck.length - 1];
 const stueckG = Math.round(STUECK_GRAMM);
 
 const margherita = sorte("margherita").je100g;
-// großes Pizzeria-Stück der Seite pizza-margherita: 140 g
-const pizzeriaStueck = Math.round((margherita.kcal * 140) / 100);
 
 const halbe = gerundet(berechne(auswahl("margherita", "medium", "classic", [], 4)).gegessen);
 const zweiStuecke = gerundet(berechne(auswahl("margherita", "medium", "classic", [], 2)).gegessen);
@@ -65,7 +63,7 @@ const nachGanz = [...sorten].sort((a, b) => ganzeKcal(a.id) - ganzeKcal(b.id));
 export const faq: { q: string; a: string }[] = [
   {
     q: "Wie viele Kalorien hat ein Stück Pizza?",
-    a: `Ein Stück, also ein Achtel einer 30-cm-Pizza (${stueckG} g), hat je nach Sorte ${stueckKcal(leichteste.id)} bis ${stueckKcal(schwerste.id)} kcal: Margherita ${stueckKcal("margherita")}, Salami ${stueckKcal("salami")}, Quattro Formaggi ${stueckKcal("quattro-formaggi")} kcal. Ein großes Stück aus der Pizzeria mit 140 g hat als Margherita ${pizzeriaStueck} kcal.`,
+    a: `Ein Stück, also ein Achtel einer 30-cm-Pizza (${stueckG} g), hat je nach Sorte ${stueckKcal(leichteste.id)} bis ${stueckKcal(schwerste.id)} kcal: Margherita ${stueckKcal("margherita")}, Salami ${stueckKcal("salami")}, Quattro Formaggi ${stueckKcal("quattro-formaggi")} kcal. Dieselben Werte je Stück nennen unsere Lebensmittelseiten zu den Sorten.`,
   },
   {
     q: "Wie viel wiegt ein Stück Pizza?",

@@ -34,6 +34,10 @@ import {
 } from "./rezepte";
 import type { DoenerArt, Ergebnis, Zugabe } from "./rezepte";
 import { faq } from "./faq";
+import { stueckKcal } from "@modules/pizza/rechnung";
+
+// ein Stück Pizza Margherita wie im Pizza-Rechner: 1/8 einer 30-cm-Pizza mit 350 g
+const pizzaStueck = stueckKcal("margherita");
 
 interface Props {
   config: TemplateConfig;
@@ -141,8 +145,8 @@ function DoenerKalorienRechnerPage({ config }: Props) {
         emoji: "🍔",
       },
       {
-        name: "Scheiben Pizza",
-        amount: Math.round((calories / 266) * 10) / 10,
+        name: "Stücke Pizza",
+        amount: Math.round((calories / pizzaStueck) * 10) / 10,
         emoji: "🍕",
       },
       {

@@ -25,6 +25,7 @@ import {
   sorte,
   sorten,
   stueckKcal,
+  summe,
   STUECK_GRAMM,
   TEIG_GRAMM,
   tiefkuehl,
@@ -64,6 +65,7 @@ const klein = groesse("small");
 const gross = groesse("large");
 const fdc = (id: string) => `FDC ${zutaten[id].fdcId}`;
 const vorzeichen = (wert: number) => (wert > 0 ? "+" : "") + zahl(wert);
+const jeStueckText = (wert: number) => (wert === 0 ? "±0" : vorzeichen(wert));
 
 function PizzaKalorienRechnerPage({ config }: Props) {
   const [selectedSize, setSelectedSize] = useState<string>("medium");
@@ -205,7 +207,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                       {`${crust.icon} ${crust.name} `}
                       {crust.teile.length > 0 && (
                         <span className="text-xs opacity-70">
-                          {`(${vorzeichen(Math.round(bodenJeStueck(crust.id, selectedSize)))} kcal/Stück)`}
+                          {`(${jeStueckText(Math.round(bodenJeStueck(crust.id, selectedSize)))} kcal/Stück)`}
                         </span>
                       )}
                     </button>
@@ -421,7 +423,7 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                 </li>
                 <li>
                   <strong>Boden:</strong>
-                  {` Die Werte je 100 g gelten für jeden Boden, denn FDC nennt für Käsepizza mit normalem und mit dünnem Boden dieselben Werte je 100 g. Der Boden ändert das Gewicht: Eine mittlere Käsepizza (11 bis 12 Zoll) wiegt laut FDC mit normalem Boden ${fdcPortionen.mittlerePizza.normal.gramm} g, mit dünnem ${fdcPortionen.mittlerePizza.duenn.gramm} g, mit dickem ${fdcPortionen.mittlerePizza.dick.gramm} g und mit Käserand ${fdcPortionen.mittlerePizza.kaeserand.gramm} g. Auf unsere ${PIZZA_GRAMM}-g-Pizza übertragen sind das ${duennTeig} g Teig weniger beim dünnen Boden, ${dickTeig} g Teig mehr beim dicken und ${kaeserand.gramm} g Mozzarella im Käserand. Teig rechnen wir wie Weißbrot. Beim Vollkornboden sind die ${TEIG_GRAMM} g Teig einer 30-cm-Pizza aus Vollkorn; laut FDC wiegt der Belag einer Käsepizza ${zahl(fdcPortionen.quadratzoll.belag.gramm)} von ${zahl(fdcPortionen.quadratzoll.pizza.gramm)} g je Quadratzoll, der Rest ist Teig.`}
+                  {` Die Werte je 100 g gelten für jeden Boden, denn FDC nennt für Käsepizza mit normalem und mit dünnem Boden dieselben Werte je 100 g. Der Boden ändert das Gewicht: Eine mittlere Käsepizza (11 bis 12 Zoll) wiegt laut FDC mit normalem Boden ${fdcPortionen.mittlerePizza.normal.gramm} g, mit dünnem ${fdcPortionen.mittlerePizza.duenn.gramm} g, mit dickem ${fdcPortionen.mittlerePizza.dick.gramm} g und mit Käserand ${fdcPortionen.mittlerePizza.kaeserand.gramm} g. Auf unsere ${PIZZA_GRAMM}-g-Pizza übertragen sind das ${duennTeig} g Teig weniger beim dünnen Boden, ${dickTeig} g Teig mehr beim dicken und ${kaeserand.gramm} g Mozzarella im Käserand. Teig rechnen wir wie Weißbrot; von den ${PIZZA_GRAMM} g sind ${TEIG_GRAMM} g Teig, denn laut FDC wiegt der Belag einer Käsepizza ${zahl(fdcPortionen.quadratzoll.belag.gramm)} von ${zahl(fdcPortionen.quadratzoll.pizza.gramm)} g je Quadratzoll. Für den Vollkornboden nennt FDC bei Käsepizza mit dünnem Boden je 100 g ${zutaten.vollkornpizza.kcal} statt ${zutaten.kaesepizzaDuenn.kcal} kcal (FDC ${zutaten.vollkornpizza.fdcId} gegen ${zutaten.kaesepizzaDuenn.fdcId}), also praktisch gleich viel, dazu mehr Ballaststoffe (${zahl(zutaten.vollkornpizza.ballaststoffe)} statt ${zahl(zutaten.kaesepizzaDuenn.ballaststoffe)} g), etwas mehr Fett und weniger Kohlenhydrate. Diesen Unterschied je 100 g rechnen wir auf das Gewicht der Pizza.`}
                 </li>
                 <li>
                   <strong>Extra-Beläge:</strong> feste Mengen je 30-cm-Pizza mit den FDC-Werten der
@@ -447,18 +449,29 @@ function PizzaKalorienRechnerPage({ config }: Props) {
                     </tr>
                   </thead>
                   <tbody>
-                    {boeden.flatMap((b) =>
-                      b.teile.map((t, i) => (
-                        <tr key={b.id + i}>
-                          <td>{b.name}</td>
-                          <td>{`${zutaten[t.zutat].name} (${fdc(t.zutat)})`}</td>
-                          <td className="text-right font-mono">{`${vorzeichen(t.gramm)} g`}</td>
-                          <td className="text-right font-mono">
-                            {vorzeichen(zutatKcal(t.zutat, t.gramm))}
-                          </td>
-                        </tr>
-                      )),
-                    )}
+                    {boeden
+                      .filter((b) => b.teile.length > 0)
+                      .map((b) => {
+                        // Vollkorn tauscht die Werte je 100 g der ganzen Pizza, die übrigen Böden ändern eine Zutat
+                        const [erste, zweite] = b.teile;
+                        const tausch = zweite !== undefined && zweite.gramm === -erste.gramm;
+                        return (
+                          <tr key={b.id}>
+                            <td>{b.name}</td>
+                            <td>
+                              {tausch
+                                ? `${zutaten[zweite.zutat].name} (${fdc(zweite.zutat)}) statt ${zutaten[erste.zutat].name} (${fdc(erste.zutat)})`
+                                : `${zutaten[erste.zutat].name} (${fdc(erste.zutat)})`}
+                            </td>
+                            <td className="text-right font-mono">
+                              {tausch ? `${zweite.gramm} g` : `${vorzeichen(erste.gramm)} g`}
+                            </td>
+                            <td className="text-right font-mono">
+                              {vorzeichen(Math.round(summe(b.teile).kcal))}
+                            </td>
+                          </tr>
+                        );
+                      })}
                     {belaege.map((b) => (
                       <tr key={b.id}>
                         <td>{b.name}</td>

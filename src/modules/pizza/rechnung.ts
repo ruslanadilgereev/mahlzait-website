@@ -47,16 +47,27 @@ export const zutaten: Record<string, Zutat> = {
     fett: 2.42,
     ballaststoffe: 2.2,
   },
-  vollkornteig: {
-    name: "Vollkornteig, gerechnet wie Vollkornbrot",
-    fdcId: 174091,
-    fdcName: "Bread, french or vienna, whole wheat",
-    datentyp: "SR Legacy",
-    kcal: 239,
-    protein: 8.33,
-    kh: 49.1,
-    fett: 1.04,
-    ballaststoffe: 4.2,
+  kaesepizzaDuenn: {
+    name: "Käsepizza mit dünnem Boden",
+    fdcId: 2708615,
+    fdcName: "Pizza, cheese, from restaurant or fast food, thin crust",
+    datentyp: "Survey (FNDDS)",
+    kcal: 266,
+    protein: 11.39,
+    kh: 33.33,
+    fett: 9.69,
+    ballaststoffe: 2.3,
+  },
+  vollkornpizza: {
+    name: "Käsepizza mit dünnem Vollkornboden",
+    fdcId: 2708687,
+    fdcName: "Pizza, cheese, whole wheat thin crust",
+    datentyp: "Survey (FNDDS)",
+    kcal: 267,
+    protein: 11.77,
+    kh: 28.62,
+    fett: 12.38,
+    ballaststoffe: 3.5,
   },
   mozzarella: {
     name: "Mozzarella",
@@ -435,7 +446,9 @@ export interface Boden {
 // Gramm je 30-cm-Pizza. Dünn, dick und Käserand: Unterschied der mittleren
 // FDC-Käsepizza zum normalen Boden (500, 744 und 800 statt 691 g), übertragen
 // auf 350 g; beim dünnen und dicken Boden ist es Teig, beim Käserand Mozzarella.
-// Vollkorn: derselbe Teig aus Vollkorn statt Weißmehl.
+// Vollkorn: Werte je 100 g der Käsepizza mit dünnem Vollkornboden statt mit
+// dünnem Boden (FDC 2708687 gegen 2708615), auf das Gewicht der Pizza gerechnet:
+// kcal praktisch gleich, mehr Ballaststoffe.
 export const boeden: Boden[] = [
   { id: "classic", name: "Klassisch", icon: "🍞", teile: [] },
   {
@@ -461,8 +474,8 @@ export const boeden: Boden[] = [
     name: "Vollkorn",
     icon: "🌾",
     teile: [
-      { zutat: "teig", gramm: -TEIG_GRAMM },
-      { zutat: "vollkornteig", gramm: TEIG_GRAMM },
+      { zutat: "kaesepizzaDuenn", gramm: -PIZZA_GRAMM },
+      { zutat: "vollkornpizza", gramm: PIZZA_GRAMM },
     ],
   },
 ];

@@ -14,26 +14,26 @@
     "carbs_per_100g": 31.7,
     "fat_per_100g": 10.3,
     "fiber_per_100g": 2.2,
-    "typical_portion_g": 160,
-    "typical_portion_name": "1 Stück (160g)"
+    "typical_portion_g": 43.75,
+    "typical_portion_name": "1 Stück (1/8 Pizza, 44 g)"
   },
   "variants": [
     {
       "name": "Pizza Quattro Formaggi (1 Stück)",
-      "portion_g": 160,
-      "calories": 429,
-      "protein": 19,
-      "carbs": 51,
-      "fat": 16
+      "portion_g": 43.75,
+      "calories": 117,
+      "protein": 5,
+      "carbs": 14,
+      "fat": 5
     },
     {
       "name": "Pizza Quattro Formaggi ganz",
-      "portion_g": 900,
-      "calories": 2412,
-      "protein": 109,
-      "carbs": 285,
-      "fat": 93,
-      "tip": "Ganze 30cm Pizza"
+      "portion_g": 350,
+      "calories": 938,
+      "protein": 42,
+      "carbs": 111,
+      "fat": 36,
+      "tip": "Ganze Pizza, 30 cm"
     },
     {
       "name": "TK-Pizza Quattro Formaggi",
@@ -82,11 +82,11 @@
     },
     {
       "name": "Pizza Quattro Formaggi (halbe)",
-      "portion_g": 450,
-      "calories": 1206,
-      "protein": 54,
-      "carbs": 143,
-      "fat": 46
+      "portion_g": 175,
+      "calories": 469,
+      "protein": 21,
+      "carbs": 55,
+      "fat": 18
     },
     {
       "name": "Mini-Pizza Quattro Formaggi",
@@ -99,22 +99,24 @@
   ],
   "comparison": [
     {
-      "name": "Pizza Margherita (1 Stück, 140g)",
-      "calories": 372,
+      "name": "Pizza Margherita (1 Stück, 44 g)",
+      "calories": 116,
       "emoji": "🍕",
       "basis": [
         {
-          "slug": "pizza-margherita"
+          "slug": "pizza-margherita",
+          "g": 43.75
         }
       ]
     },
     {
-      "name": "Pizza Salami (1 Stück, 150g)",
-      "calories": 423,
+      "name": "Pizza Salami (1 Stück, 44 g)",
+      "calories": 123,
       "emoji": "🍕",
       "basis": [
         {
-          "slug": "pizza-salami"
+          "slug": "pizza-salami",
+          "g": 43.75
         }
       ]
     },
@@ -136,8 +138,8 @@
       "icon": "⚠️"
     },
     {
-      "title": "Zwei Stücke als Maximum",
-      "text": "Zwei Stücke (ca. 858 kcal) sind bereits eine volle Mahlzeit. Die ganze Pizza hat 2412 kcal.",
+      "title": "Halbe Pizza als Maximum",
+      "text": "Eine halbe Pizza (30 cm, 175 g) hat 469 kcal und ist bereits eine volle Mahlzeit. Die ganze Pizza hat 938 kcal.",
       "icon": "✌️"
     },
     {
@@ -159,7 +161,7 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza Quattro Formaggi?",
-      "answer": "Ein Stück Pizza Quattro Formaggi (160g) hat ca. 429 kcal, mehr als ein Stück Margherita (140g, 372 kcal) und etwa so viel wie ein Stück Salami (150g, 423 kcal)."
+      "answer": "Ein Stück Pizza Quattro Formaggi, also ein Achtel einer 30-cm-Pizza (44 g), hat 117 kcal, etwa so viel wie ein Stück Margherita (116 kcal) und weniger als ein Stück Salami (123 kcal)."
     },
     {
       "question": "Warum hat Quattro Formaggi so viele Kalorien?",
@@ -179,7 +181,7 @@
     },
     {
       "question": "Wie viel Protein hat Pizza Quattro Formaggi?",
-      "answer": "Ein Stück hat ca. 19g Protein, mehr als ein Stück Margherita (16g), da der viele Käse proteinreich ist."
+      "answer": "Ein Stück (44 g) hat 5 g Protein, die ganze 30-cm-Pizza 42 g, etwas mehr als eine Margherita (40 g), da der viele Käse proteinreich ist."
     }
   ],
   "related_foods": [

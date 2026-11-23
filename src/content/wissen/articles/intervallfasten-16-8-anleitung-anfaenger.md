@@ -276,7 +276,7 @@ Dieser Plan nutzt das 12:00–20:00 Uhr Essensfenster. Passe die Zeiten an deine
 ### Tag 5 (Freitag): Routine festigen
 - **12:00:** **Erste Mahlzeit** – Vollkornbrot mit Avocado, pochiertem Ei und Räucherlachs (~500 kcal, 25g Protein)
 - **15:30:** **Snack** – Proteinriegel oder 150g Magerquark mit Honig (~200 kcal)
-- **19:30:** **Abendessen** – Pizza Margherita (ja, wirklich!) mit großem Beilagensalat (~700 kcal)
+- **19:30:** **Abendessen:** Pizza Margherita (ja, wirklich!), eine kleine mit 26 cm (263 g, 699 kcal), dazu ein großer Beilagensalat aus 100 g Eisbergsalat, 60 g Tomate, 40 g Gurke und 1 EL Olivenöl (119 kcal): zusammen 818 kcal
 - **20:00:** Fastenstart
 
 *Keine Verbote: Du kannst auch "ungesundes" Essen in Maßen genießen. Das macht Intervallfasten so nachhaltig. Kein Jojo-Effekt durch strikte Verbote. Mehr dazu: [Jojo-Effekt vermeiden](/wissen/jojo-effekt-diaet-wieder-zunehmen)*

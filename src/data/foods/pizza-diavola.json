@@ -29,12 +29,12 @@
   },
   "variants": [
     {
-      "name": "1 Stück (80g)",
-      "portion_g": 80,
-      "calories": 219,
-      "protein": 10,
-      "carbs": 22,
-      "fat": 10
+      "name": "1 Stück (1/8 Pizza, 44 g)",
+      "portion_g": 43.75,
+      "calories": 120,
+      "protein": 5,
+      "carbs": 12,
+      "fat": 6
     },
     {
       "name": "Halbe Pizza (175g)",
@@ -54,27 +54,21 @@
       "tip": "Standard-Tiefkühlpizza"
     },
     {
-      "name": "Pizzeria-Pizza groß (450g)",
-      "portion_g": 450,
-      "calories": 1269,
-      "protein": 53,
-      "carbs": 144,
-      "fat": 54,
-      "tip": "Restaurantgröße ca. 32cm",
-      "basis": [
-        {
-          "fdcId": 2708639,
-          "g": 450
-        }
-      ]
+      "name": "Große Pizza (36 cm, 504 g)",
+      "portion_g": 504,
+      "calories": 1381,
+      "protein": 62,
+      "carbs": 139,
+      "fat": 64,
+      "tip": "Gewicht wächst mit der Fläche"
     },
     {
-      "name": "Kleine Pizza (250g)",
-      "portion_g": 250,
-      "calories": 685,
-      "protein": 31,
-      "carbs": 69,
-      "fat": 32
+      "name": "Kleine Pizza (26 cm, 263 g)",
+      "portion_g": 263,
+      "calories": 720,
+      "protein": 32,
+      "carbs": 72,
+      "fat": 33
     },
     {
       "name": "Pro 100g",
@@ -165,7 +159,7 @@
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Pizza Diavola?",
-      "answer": "Eine ganze Pizza Diavola wiegt meist 320 bis 350g und hat ca. 877 bis 959 kcal. Eine große Pizzeria-Pizza (450g) kann auf rund 1.269 kcal kommen."
+      "answer": "Eine ganze Pizza Diavola (30 cm, 350 g) hat 959 kcal. Eine große Pizza (36 cm, 504 g) kommt auf 1.381 kcal, eine kleine (26 cm, 263 g) auf 720 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Pizza Diavola?",

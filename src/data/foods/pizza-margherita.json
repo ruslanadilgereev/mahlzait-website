@@ -14,26 +14,26 @@
     "carbs_per_100g": 33.3,
     "fat_per_100g": 9.7,
     "fiber_per_100g": 2.3,
-    "typical_portion_g": 140,
-    "typical_portion_name": "1 Stück (140g)"
+    "typical_portion_g": 43.75,
+    "typical_portion_name": "1 Stück (1/8 Pizza, 44 g)"
   },
   "variants": [
     {
       "name": "Pizza Margherita (1 Stück, Pizzeria)",
-      "portion_g": 140,
-      "calories": 372,
-      "protein": 16,
-      "carbs": 47,
-      "fat": 14
+      "portion_g": 43.75,
+      "calories": 116,
+      "protein": 5,
+      "carbs": 15,
+      "fat": 4
     },
     {
       "name": "Pizza Margherita ganz (Pizzeria)",
-      "portion_g": 750,
-      "calories": 1995,
-      "protein": 86,
-      "carbs": 250,
-      "fat": 73,
-      "tip": "Ganze 30cm Pizza"
+      "portion_g": 350,
+      "calories": 931,
+      "protein": 40,
+      "carbs": 117,
+      "fat": 34,
+      "tip": "Ganze Pizza, 30 cm"
     },
     {
       "name": "TK-Pizza Margherita",
@@ -97,22 +97,24 @@
   ],
   "comparison": [
     {
-      "name": "Pizza Salami (1 Stück, 150g)",
-      "calories": 423,
+      "name": "Pizza Salami (1 Stück, 44 g)",
+      "calories": 123,
       "emoji": "🍕",
       "basis": [
         {
-          "slug": "pizza-salami"
+          "slug": "pizza-salami",
+          "g": 43.75
         }
       ]
     },
     {
-      "name": "Pizza Hawaii (1 Stück, 150g)",
-      "calories": 341,
+      "name": "Pizza Hawaii (1 Stück, 44 g)",
+      "calories": 99,
       "emoji": "🍕",
       "basis": [
         {
-          "slug": "pizza-hawaii"
+          "slug": "pizza-hawaii",
+          "g": 43.75
         }
       ]
     },
@@ -177,11 +179,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza Margherita?",
-      "answer": "Ein Stück Pizza Margherita (140g) hat ca. 372 kcal. Das ist weniger als ein Stück Pizza Salami (150g, 423 kcal)."
+      "answer": "Ein Stück Pizza Margherita, also ein Achtel einer 30-cm-Pizza (44 g), hat 116 kcal. Das ist weniger als ein Stück Pizza Salami (123 kcal)."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Pizza Margherita?",
-      "answer": "Eine ganze Pizza Margherita (30cm) hat ca. 1995 kcal. Eine TK-Pizza (300g) hat ca. 789 kcal, da sie deutlich kleiner ist."
+      "answer": "Eine ganze Pizza Margherita (30 cm, 350 g) hat 931 kcal. Eine TK-Pizza (300 g) hat 789 kcal, weil sie leichter ist."
     },
     {
       "question": "Ist Pizza Margherita die gesündeste Pizza?",
@@ -193,11 +195,11 @@
     },
     {
       "question": "Was hat weniger Kalorien: Pizza Margherita oder Döner?",
-      "answer": "Schon zwei Stücke Pizza Margherita (744 kcal) haben etwas mehr Kalorien als ein Döner (696 kcal). Ein Stück (372 kcal) hat gut die Hälfte."
+      "answer": "Ein Döner (696 kcal) hat etwa so viele Kalorien wie sechs Stücke Pizza Margherita (698 kcal). Die ganze 30-cm-Pizza hat mit 931 kcal mehr."
     },
     {
       "question": "Wie viel Protein hat Pizza Margherita?",
-      "answer": "Ein Stück Pizza Margherita liefert ca. 16g Protein, hauptsächlich aus dem Mozzarella. Das ist etwa so viel wie bei Pizza mit Fleischbelag."
+      "answer": "Ein Stück Pizza Margherita (44 g) liefert 5 g Protein, die ganze 30-cm-Pizza 40 g, hauptsächlich aus dem Mozzarella. Das ist etwa so viel wie bei Pizza mit Fleischbelag."
     }
   ],
   "related_foods": [

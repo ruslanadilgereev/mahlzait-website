@@ -14,26 +14,26 @@
     "carbs_per_100g": 32,
     "fat_per_100g": 11.9,
     "fiber_per_100g": 2.3,
-    "typical_portion_g": 150,
-    "typical_portion_name": "1 Stück (150g)"
+    "typical_portion_g": 43.75,
+    "typical_portion_name": "1 Stück (1/8 Pizza, 44 g)"
   },
   "variants": [
     {
       "name": "Pizza Salami (1 Stück, Pizzeria)",
-      "portion_g": 150,
-      "calories": 423,
-      "protein": 18,
-      "carbs": 48,
-      "fat": 18
+      "portion_g": 43.75,
+      "calories": 123,
+      "protein": 5,
+      "carbs": 14,
+      "fat": 5
     },
     {
       "name": "Pizza Salami ganz (Pizzeria)",
-      "portion_g": 850,
-      "calories": 2397,
-      "protein": 99,
-      "carbs": 272,
-      "fat": 101,
-      "tip": "Ganze 30cm Pizza"
+      "portion_g": 350,
+      "calories": 987,
+      "protein": 41,
+      "carbs": 112,
+      "fat": 42,
+      "tip": "Ganze Pizza, 30 cm"
     },
     {
       "name": "TK-Pizza Salami (320g)",
@@ -81,11 +81,11 @@
     },
     {
       "name": "Pizza Salami (halbe Pizza)",
-      "portion_g": 425,
-      "calories": 1199,
-      "protein": 50,
-      "carbs": 136,
-      "fat": 51
+      "portion_g": 175,
+      "calories": 494,
+      "protein": 20,
+      "carbs": 56,
+      "fat": 21
     },
     {
       "name": "Mini-Pizza Salami",
@@ -105,12 +105,13 @@
   ],
   "comparison": [
     {
-      "name": "Pizza Margherita (1 Stück, 140g)",
-      "calories": 372,
+      "name": "Pizza Margherita (1 Stück, 44 g)",
+      "calories": 116,
       "emoji": "🍕",
       "basis": [
         {
-          "slug": "pizza-margherita"
+          "slug": "pizza-margherita",
+          "g": 43.75
         }
       ]
     },
@@ -153,8 +154,8 @@
   ],
   "tips": [
     {
-      "title": "Zwei Stück reichen",
-      "text": "Zwei Stücke Pizza Salami (ca. 846 kcal) sind eine vollwertige Mahlzeit. Die ganze Pizza (2397 kcal) ist zu viel.",
+      "title": "Eine halbe Pizza reicht",
+      "text": "Eine halbe Pizza Salami (30 cm, 175 g) hat 494 kcal und ist eine vollwertige Mahlzeit. Die ganze Pizza (987 kcal) ist für eine Person viel.",
       "icon": "✌️"
     },
     {
@@ -181,11 +182,11 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Stück Pizza Salami?",
-      "answer": "Ein Stück Pizza Salami (150g) hat ca. 423 kcal. Die Kalorienzahl variiert je nach Größe, Belag und Teigdicke."
+      "answer": "Ein Stück Pizza Salami, also ein Achtel einer 30-cm-Pizza (44 g), hat 123 kcal. Die Kalorienzahl variiert je nach Größe, Belag und Teigdicke."
     },
     {
       "question": "Wie viele Kalorien hat eine ganze Pizza Salami?",
-      "answer": "Eine ganze Pizza Salami (30cm, Pizzeria) hat ca. 2397 kcal. Eine TK-Pizza Salami hat ca. 877 bis 963 kcal, da sie deutlich kleiner ist."
+      "answer": "Eine ganze Pizza Salami (30 cm, 350 g) hat 987 kcal. Eine TK-Pizza Salami hat 877 kcal (320 g) bis 963 kcal (350 g, mittlerer Boden)."
     },
     {
       "question": "Was hat mehr Kalorien: Pizza Salami oder Pizza Margherita?",
@@ -193,11 +194,11 @@
     },
     {
       "question": "Ist Pizza Salami ungesund?",
-      "answer": "Pizza Salami hat viel Fett, Natrium und Kalorien. Als gelegentliche Mahlzeit (2 Stücke) ist sie okay. Jeden Tag eine ganze Pizza ist definitiv zu viel."
+      "answer": "Pizza Salami hat viel Fett, Natrium und Kalorien. Als gelegentliche Mahlzeit (eine halbe Pizza) ist sie okay. Jeden Tag eine ganze Pizza ist definitiv zu viel."
     },
     {
       "question": "Wie viel Fett hat Pizza Salami?",
-      "answer": "Pizza Salami hat ca. 12g Fett pro 100g. Ein Stück (150g) enthält ca. 18g Fett, hauptsächlich aus dem Käse und der Salami."
+      "answer": "Pizza Salami hat ca. 12g Fett pro 100g. Ein Stück (44 g) enthält 5 g Fett, die ganze 30-cm-Pizza 42 g, hauptsächlich aus dem Käse und der Salami."
     },
     {
       "question": "Welche Pizza hat am wenigsten Kalorien?",
