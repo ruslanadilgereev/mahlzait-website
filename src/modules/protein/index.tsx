@@ -114,6 +114,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
     { name: "Garnelen", protein: 24, kcal: 99, serving: "100g", type: "tierisch" },
     { name: "Forelle", protein: 20, kcal: 141, serving: "100g", type: "tierisch" },
     // Milchprodukte
+    { name: "Magerquark", protein: 12, kcal: 68, serving: "100g", type: "tierisch" },
     { name: "Griechischer Joghurt", protein: 9, kcal: 97, serving: "100g", type: "tierisch" },
     { name: "Hüttenkäse", protein: 11, kcal: 98, serving: "100g", type: "tierisch" },
     { name: "Parmesan", protein: 36, kcal: 392, serving: "100g", type: "tierisch" },

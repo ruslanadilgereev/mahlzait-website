@@ -175,6 +175,7 @@ Du hast jetzt Kalorien und Makros. Aber welche Lebensmittel passen in deinen Pla
 | Lebensmittel | Protein/100g | Kalorien/100g | Protein pro Kalorie |
 |-------------|-------------|--------------|-------------------|
 | [Hähnchenbrust](/kalorien/haehnchenbrust/) | 31 g | 165 kcal | ⭐⭐⭐⭐⭐ |
+| [Magerquark](/kalorien/magerquark/) | 12 g | 68 kcal | ⭐⭐⭐⭐⭐ |
 | Thunfisch (Dose) | 26 g | 108 kcal | ⭐⭐⭐⭐⭐ |
 | [Eier](/kalorien/ei/) | 13 g | 155 kcal | ⭐⭐⭐⭐ |
 | Griechischer Joghurt | 9 g | 97 kcal | ⭐⭐⭐⭐ |

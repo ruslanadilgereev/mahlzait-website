@@ -3,14 +3,19 @@
   "name": "Matcha Latte",
   "emoji": "🍵",
   "category": "getraenk",
-  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (1 Becher 300 ml): 60 ml (62 g) Matcha, mit Wasser aufgeschlagen (gerechnet als grüner Tee, aufgebrüht) (FDC-ID 171917, Beverages, tea, green, brewed, regular: 1 kcal), 230 ml (237 g) Vollmilch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 8 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal); Werte je 100 g",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten und Herstellerangaben (1 Becher 300 ml): 2 g Matcha-Pulver (Seite matcha, Werte am Beispiel Raab Vitalfood Bio Matcha Pulver Premium, Herstellerangabe: 310 kcal), 60 ml (60 g) Wasser (FDC-ID 173647, Beverages, water, tap, drinking: 0 kcal), 230 ml (237 g) Vollmilch 3,5 % (FDC-ID 171265, Milk, whole, 3.25% milkfat, with added vitamin D: 61 kcal), 8 g Zucker (FDC-ID 169655, Sugars, granulated: 387 kcal); Werte je 100 g",
   "rezept": {
     "zutaten": [
       {
-        "name": "Matcha, mit Wasser aufgeschlagen (gerechnet als grüner Tee, aufgebrüht)",
-        "g": 62,
+        "name": "Matcha-Pulver",
+        "g": 2,
+        "slug": "matcha"
+      },
+      {
+        "name": "Wasser",
+        "g": 60,
         "ml": 60,
-        "fdcId": 171917
+        "fdcId": 173647
       },
       {
         "name": "Vollmilch 3,5 %",
@@ -27,7 +32,7 @@
   },
   "seo": {
     "title": "Matcha Latte Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Matcha Latte? Ein Standard-Becher (300ml) hat ca. 174 kcal. Nährwerte pro 100g, Varianten mit Hafer- & Mandelmilch im Vergleich.",
+    "description": "Wie viele Kalorien hat ein Matcha Latte? Ein Standard-Becher (300ml) hat ca. 181 kcal. Nährwerte pro 100g, Varianten mit Hafer- & Mandelmilch im Vergleich.",
     "keywords": [
       "matcha latte kalorien",
       "matcha latte kcal",
@@ -40,11 +45,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 57,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 6.3,
+    "calories_per_100g": 59,
+    "protein_per_100g": 2.6,
+    "carbs_per_100g": 6.5,
     "fat_per_100g": 2.5,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": 0.2,
     "typical_portion_g": 306,
     "typical_portion_name": "1 Becher (300ml)"
   },
@@ -52,41 +57,45 @@
     {
       "name": "Matcha Latte klein (250ml)",
       "portion_g": 255,
-      "calories": 145,
-      "protein": 6,
-      "carbs": 16,
+      "calories": 150,
+      "protein": 7,
+      "carbs": 17,
       "fat": 6
     },
     {
       "name": "Matcha Latte Standard (300ml)",
       "portion_g": 306,
-      "calories": 174,
+      "calories": 181,
       "protein": 8,
-      "carbs": 19,
+      "carbs": 20,
       "fat": 8,
       "tip": "Standard"
     },
     {
       "name": "Matcha Latte groß (400ml)",
       "portion_g": 408,
-      "calories": 233,
-      "protein": 10,
-      "carbs": 26,
+      "calories": 241,
+      "protein": 11,
+      "carbs": 27,
       "fat": 10
     },
     {
       "name": "Iced Matcha Latte (350ml)",
       "portion_g": 356,
-      "calories": 157,
+      "calories": 163,
       "protein": 7,
       "carbs": 18,
       "fat": 7,
       "tip": "Mit Eiswürfeln, etwas weniger Milch",
       "basis": [
         {
-          "fdcId": 171917,
+          "slug": "matcha",
+          "g": 2
+        },
+        {
+          "fdcId": 173647,
           "ml": 60,
-          "g": 62
+          "g": 60
         },
         {
           "fdcId": 171265,
@@ -106,16 +115,20 @@
     {
       "name": "Matcha Latte mit Hafermilch (300ml)",
       "portion_g": 307,
-      "calories": 138,
+      "calories": 144,
       "protein": 2,
       "carbs": 21,
       "fat": 6,
       "tip": "Vegan",
       "basis": [
         {
-          "fdcId": 171917,
+          "slug": "matcha",
+          "g": 2
+        },
+        {
+          "fdcId": 173647,
           "ml": 60,
-          "g": 62
+          "g": 60
         },
         {
           "fdcId": 2705412,
@@ -131,16 +144,20 @@
     {
       "name": "Matcha Latte mit Mandelmilch (300ml)",
       "portion_g": 310,
-      "calories": 38,
+      "calories": 43,
       "protein": 2,
       "carbs": 1,
       "fat": 3,
       "tip": "Kalorienarm, ungesüßt",
       "basis": [
         {
-          "fdcId": 171917,
+          "slug": "matcha",
+          "g": 2
+        },
+        {
+          "fdcId": 173647,
           "ml": 60,
-          "g": 62
+          "g": 60
         },
         {
           "fdcId": 2705409,
@@ -152,15 +169,19 @@
     {
       "name": "Matcha Latte mit Vollmilch, ungesüßt (300ml)",
       "portion_g": 310,
-      "calories": 152,
+      "calories": 157,
       "protein": 8,
       "carbs": 12,
       "fat": 8,
       "basis": [
         {
-          "fdcId": 171917,
+          "slug": "matcha",
+          "g": 2
+        },
+        {
+          "fdcId": 173647,
           "ml": 60,
-          "g": 62
+          "g": 60
         },
         {
           "fdcId": 171265,
@@ -221,12 +242,12 @@
   "tips": [
     {
       "title": "Pflanzendrinks sparen Kalorien",
-      "text": "Mit ungesüßter Mandelmilch hat ein Matcha Latte nur ca. 38 kcal statt 174 kcal mit Milch und Zucker, über 130 kcal Ersparnis pro Becher.",
+      "text": "Mit ungesüßter Mandelmilch hat ein Matcha Latte nur ca. 43 kcal statt 181 kcal mit Milch und Zucker, über 130 kcal Ersparnis pro Becher.",
       "icon": "🌱"
     },
     {
       "title": "Zucker ist der größte Hebel",
-      "text": "Zucker und Sirup bringen schnell zusätzliche Kalorien. Wer den Matcha Latte ungesüßt trinkt, spart bei Vollmilch rund 22 kcal pro Becher, und die Gewöhnung kommt schnell.",
+      "text": "Zucker und Sirup bringen schnell zusätzliche Kalorien. Wer den Matcha Latte ungesüßt trinkt, spart bei Vollmilch rund 24 kcal pro Becher, und die Gewöhnung kommt schnell.",
       "icon": "🍯"
     },
     {
@@ -241,22 +262,22 @@
     },
     {
       "title": "Halbe-Milch-Trick",
-      "text": "Halb Milch, halb Wasser senkt die Kalorien spürbar, ohne dass der Matcha-Geschmack verloren geht. So wird aus 174 kcal schnell rund 100 kcal pro Becher.",
+      "text": "Halb Milch, halb Wasser senkt die Kalorien spürbar, ohne dass der Matcha-Geschmack verloren geht. So wird aus 181 kcal schnell rund 110 kcal pro Becher.",
       "icon": "💧"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Matcha Latte?",
-      "answer": "Ein Standard-Becher (300ml) mit Milch und etwas Süße hat ca. 174 kcal. Ein kleiner Becher (250ml) hat rund 145 kcal, ein großer (400ml) ca. 233 kcal. Gerechnet aus USDA-Werten für 230 ml Vollmilch, 60 ml Wasser mit Matcha (als grüner Tee) und 8 g Zucker."
+      "answer": "Ein Standard-Becher (300ml) mit Milch und etwas Süße hat ca. 181 kcal. Ein kleiner Becher (250ml) hat rund 150 kcal, ein großer (400ml) ca. 241 kcal. Gerechnet aus 2 g Matcha-Pulver (am Beispiel Raab Vitalfood Bio Matcha Pulver Premium, Herstellerangabe) und USDA-Werten für 60 ml Wasser, 230 ml Vollmilch und 8 g Zucker."
     },
     {
       "question": "Wie viele Kalorien hat ein Matcha Latte mit Hafermilch?",
-      "answer": "Mit Hafermilch und etwas Zucker liegt ein 300ml-Becher bei ca. 138 kcal. Mit ungesüßter Mandelmilch sind es nur etwa 38 kcal, die kalorienärmste Variante."
+      "answer": "Mit Hafermilch und etwas Zucker liegt ein 300ml-Becher bei ca. 144 kcal. Mit ungesüßter Mandelmilch sind es nur etwa 43 kcal, die kalorienärmste Variante."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Matcha Latte?",
-      "answer": "Ein Standard-Becher (300ml) hat ca. 19g Kohlenhydrate, der Großteil davon Zucker aus Milch und Süßungsmittel. Ungesüßt mit Vollmilch sind es nur etwa 12g."
+      "answer": "Ein Standard-Becher (300ml) hat ca. 20g Kohlenhydrate, der Großteil davon Zucker aus Milch und Süßungsmittel. Ungesüßt mit Vollmilch sind es nur etwa 12g."
     },
     {
       "question": "Wie viel Protein steckt in einem Matcha Latte?",
@@ -264,7 +285,7 @@
     },
     {
       "question": "Ist ein Matcha Latte gut zum Abnehmen?",
-      "answer": "Es kommt auf die Zubereitung an. Ungesüßt mit Mandelmilch (ca. 38 kcal) passt er gut in eine Diät. Süße Café-Versionen mit 174 kcal oder mehr sind eher kleine Mahlzeiten als Durstlöscher."
+      "answer": "Es kommt auf die Zubereitung an. Ungesüßt mit Mandelmilch (ca. 43 kcal) passt er gut in eine Diät. Süße Café-Versionen mit 181 kcal oder mehr sind eher kleine Mahlzeiten als Durstlöscher."
     },
     {
       "question": "Ist ein Matcha Latte gesund?",

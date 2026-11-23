@@ -118,7 +118,8 @@ test("allgemeine Seite mit Herstellerangabe als Beispiel: sichtbar gekennzeichne
 
 test("Rezept mit Zutat aus einer Herstellerangabe: Fußzeile nennt sie mit Link, isBasedOn mit Herstellerseite", () => {
   // Regel 1 (23.11.2026): Zutaten ohne FDC-Eintrag (Quark, Matjes, Leberkäse) rechnen mit den Werten einer Seite mit Herstellerangabe
-  for (const slug of ["acai-bowl","kaesekuchen","kartoffeln-mit-quark","leberkassemmel","matjes-broetchen","quarktasche"]) {
+  // matcha-latte: Matcha-Pulver über die Seite matcha, nicht mehr als aufgebrühter grüner Tee (FDC 171917)
+  for (const slug of ["acai-bowl","kaesekuchen","kartoffeln-mit-quark","leberkassemmel","matcha-latte","matjes-broetchen","quarktasche"]) {
     const food = lade(slug);
     const zutaten = food.rezept.zutaten.filter((z) => z.slug != null);
     assert.ok(zutaten.length > 0, slug + ": keine Zutat aus einer Herstellerangabe");
