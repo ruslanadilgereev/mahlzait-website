@@ -3,9 +3,18 @@
   "name": "Yum Yum",
   "emoji": "🍜",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Yum Yum Chicken Flavour 60 g (Instant-Nudeln Huhn; Angabe für die fertige Suppe auf 100 g Nudeln umgerechnet) (https://www.rewe.de/shop/p/yum-yum-chicken-flavour-60g/6805612, abgerufen am 23.11.2026), Werte je 100 g; die Packung nennt Werte je 100 g fertiger Suppe (60 g Nudeln mit 320 ml Wasser: 76 kcal, Eiweiß 1,4 g, Fett 3,6 g, Kohlenhydrate 9,2 g); hier auf 100 g Nudeln umgerechnet (380 g Suppe aus 60 g Nudeln); allgemeine Seite, Werte am Beispiel Yum Yum Chicken Flavour 60 g (Instant-Nudeln Huhn; Angabe für die fertige Suppe auf 100 g Nudeln umgerechnet)",
+  "hersteller": {
+    "name": "Yum Yum",
+    "produkt": "Chicken Flavour 60 g (Instant-Nudeln Huhn; Angabe für die fertige Suppe auf 100 g Nudeln umgerechnet)",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/yum-yum-chicken-flavour-60g/6805612",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Yum Yum Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Yum Yum? Eine Packung (70g) hat ca. 314 kcal. Nährwerte pro 100g & Portion, alle Sorten im Vergleich und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Yum Yum? Am Beispiel Huhn: Eine Packung (60 g) hat rund 289 kcal, 100 g der fertigen Suppe 76 kcal. Nährwerte & Diät-Tipps.",
     "keywords": [
       "yum yum kalorien",
       "yum yum nudeln kalorien",
@@ -16,96 +25,126 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 448,
-    "protein_per_100g": 9.5,
-    "carbs_per_100g": 62,
-    "fat_per_100g": 17.5,
-    "fiber_per_100g": 2.5,
-    "typical_portion_g": 70,
-    "typical_portion_name": "1 Packung (70g)"
+    "calories_per_100g": 481,
+    "protein_per_100g": 8.9,
+    "carbs_per_100g": 58.3,
+    "fat_per_100g": 22.8,
+    "fiber_per_100g": null,
+    "typical_portion_g": 60,
+    "typical_portion_name": "1 Packung (60 g, trocken)"
   },
   "variants": [
     {
-      "name": "Yum Yum Becher klein (60g)",
+      "name": "1 Packung (60 g Nudeln, mit 320 ml Wasser rund 380 g Suppe)",
       "portion_g": 60,
-      "calories": 269,
-      "protein": 6,
-      "carbs": 37,
-      "fat": 11,
-      "tip": "Snack-Größe"
+      "calories": 289,
+      "protein": 5.3,
+      "carbs": 35,
+      "fat": 13.7,
+      "tip": "Weniger Würz- und Ölbeutel spart Salz und Fett"
     },
     {
-      "name": "Yum Yum Packung (70g)",
-      "portion_g": 70,
-      "calories": 314,
-      "protein": 7,
-      "carbs": 43,
-      "fat": 12,
-      "tip": "Standard"
+      "name": "Halbe Packung (30 g Nudeln)",
+      "portion_g": 30,
+      "calories": 144,
+      "protein": 2.7,
+      "carbs": 17.5,
+      "fat": 6.8
     },
     {
-      "name": "Yum Yum Big Bowl (107g)",
-      "portion_g": 107,
-      "calories": 479,
-      "protein": 10,
-      "carbs": 66,
-      "fat": 19,
-      "tip": "Sättigende Portion"
+      "name": "2 Packungen (120 g Nudeln)",
+      "portion_g": 120,
+      "calories": 577,
+      "protein": 10.7,
+      "carbs": 70,
+      "fat": 27.4
     },
     {
-      "name": "Yum Yum zubereitet (1 Schüssel)",
-      "portion_g": 250,
-      "calories": 320,
-      "protein": 7,
-      "carbs": 44,
-      "fat": 12,
-      "tip": "Mit Wasser aufgegossen, ähnlich kcal wie trocken"
+      "name": "100 g fertige Suppe (aus 15,8 g Nudeln)",
+      "portion_g": 15.8,
+      "calories": 76,
+      "protein": 1.4,
+      "carbs": 9.2,
+      "fat": 3.6,
+      "tip": "Je 100 g Suppe laut Packung",
+      "basis": [
+        {
+          "g": 15.8
+        }
+      ]
     },
     {
-      "name": "Yum Yum nur Nudeln, gekocht (180g)",
-      "portion_g": 180,
-      "calories": 252,
-      "protein": 5,
-      "carbs": 39,
+      "name": "250 g fertige Suppe (aus 39,5 g Nudeln)",
+      "portion_g": 39.5,
+      "calories": 190,
+      "protein": 3.5,
+      "carbs": 23,
       "fat": 9,
-      "tip": "Ohne kompletten Würzbeutel"
+      "basis": [
+        {
+          "g": 39.5
+        }
+      ]
     },
     {
-      "name": "Pro 100g (trocken)",
+      "name": "Pro 100 g (trocken)",
       "portion_g": 100,
-      "calories": 448,
-      "protein": 10,
-      "carbs": 62,
-      "fat": 18,
-      "tip": "Referenzwert"
+      "calories": 481,
+      "protein": 8.9,
+      "carbs": 58.3,
+      "fat": 22.8
     }
   ],
   "comparison": [
     {
-      "name": "Ramen",
-      "calories": 436,
-      "emoji": "🍜"
+      "name": "Instant-Ramen (1 Packung, 85 g trocken)",
+      "calories": 374,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "slug": "ramen",
+          "variante": "Instant-Ramen (1 Packung, 85g trocken)"
+        }
+      ]
     },
     {
-      "name": "Spaghetti (trocken)",
-      "calories": 350,
-      "emoji": "🍝"
+      "name": "Nudeln (ungekocht, 85 g)",
+      "calories": 315,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "nudeln",
+          "variante": "Nudeln ungekocht (85g)"
+        }
+      ]
     },
     {
-      "name": "Reis (roh)",
-      "calories": 350,
-      "emoji": "🍚"
+      "name": "Reis (ungekocht, 70 g)",
+      "calories": 256,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "variante": "Reis ungekocht (70g)"
+        }
+      ]
     },
     {
-      "name": "Couscous (trocken)",
-      "calories": 357,
-      "emoji": "🥣"
+      "name": "Couscous (trocken, 80 g)",
+      "calories": 301,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "couscous",
+          "variante": "Couscous trocken (Rohgewicht)"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Würzbeutel sparsam nutzen",
-      "text": "Ein Großteil des Fetts und Salzes steckt im Würz- und Ölbeutel. Wer nur die Hälfte verwendet, spart spürbar Kalorien und Salz.",
+      "text": "Im Würz- und Ölbeutel stecken viel Salz und ein Teil des Fetts. Wer nur die Hälfte verwendet, spart beides.",
       "icon": "🧂"
     },
     {
@@ -115,44 +154,44 @@
     },
     {
       "title": "Protein ergänzen",
-      "text": "Yum Yum liefert wenig Eiweiß. Ein Ei, etwas Hähnchen oder Tofu macht die Portion vollwertiger und hält länger satt.",
+      "text": "Yum Yum liefert wenig Eiweiß: rund 5,3 g je Packung (60 g). Ein Ei, etwas Hähnchen oder Tofu macht die Portion vollwertiger und hält länger satt.",
       "icon": "🥚"
     },
     {
       "title": "Bewusst portionieren",
-      "text": "Eine Packung wirkt klein, hat aber rund 314 kcal. Als Beilage statt Hauptmahlzeit lässt sich die Kalorienmenge gut steuern.",
+      "text": "Eine Packung (60 g) wirkt klein, hat aber rund 289 kcal. Als Beilage statt Hauptmahlzeit lässt sich die Kalorienmenge gut steuern.",
       "icon": "⚖️"
     },
     {
       "title": "Auf den Salzgehalt achten",
-      "text": "Instant-Nudeln enthalten viel Salz. An Tagen mit Yum Yum am besten beim restlichen Essen salzärmer bleiben.",
+      "text": "Die fertige Suppe enthält laut Packung 0,78 g Salz pro 100 g, eine Packung (rund 380 g Suppe) also rund 3 g. An Tagen mit Yum Yum am besten beim restlichen Essen salzärmer bleiben.",
       "icon": "💧"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Yum Yum?",
-      "answer": "Eine Standard-Packung Yum Yum (70g) hat etwa 314 kcal. Pro 100g sind es rund 448 kcal."
+      "answer": "Am Beispiel Yum Yum Instant-Nudeln Huhn: Eine Packung (60 g) hat rund 289 kcal. Auf der Packung stehen Werte für die fertige Suppe (60 g Nudeln mit 320 ml Wasser): 76 kcal pro 100 g. Umgerechnet auf 100 g trockene Nudeln sind das rund 481 kcal. Die Angabe der Packung ist bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kohlenhydrate stecken in Yum Yum?",
-      "answer": "Pro 100g enthält Yum Yum etwa 62g Kohlenhydrate. Eine 70g-Packung kommt damit auf rund 43g."
+      "answer": "Die fertige Suppe enthält laut Packung 9,2 g Kohlenhydrate pro 100 g. Eine Packung (60 g Nudeln) kommt damit auf rund 35 g."
     },
     {
       "question": "Wie viel Protein hat Yum Yum?",
-      "answer": "Yum Yum liefert nur etwa 9,5g Eiweiß pro 100g, also rund 7g je Packung. Als Eiweißquelle ist es daher kaum geeignet."
+      "answer": "Yum Yum liefert nur 1,4 g Eiweiß pro 100 g fertiger Suppe, also rund 5 g je Packung. Als Eiweißquelle ist es daher kaum geeignet."
     },
     {
       "question": "Ist Yum Yum zum Abnehmen geeignet?",
-      "answer": "Yum Yum ist mit rund 448 kcal pro 100g recht energiereich und enthält viel Fett und Salz. In kleinen Portionen und mit Gemüse kombiniert lässt es sich aber gut in eine Diät einbauen."
+      "answer": "Eine Packung (60 g) hat rund 289 kcal, rund 14 g Fett und viel Salz. In kleinen Portionen und mit Gemüse kombiniert lässt es sich aber gut in eine Diät einbauen."
     },
     {
       "question": "Ist Yum Yum gesund?",
-      "answer": "Yum Yum ist ein verarbeitetes Fertigprodukt mit viel Salz und Fett und wenig Ballaststoffen. Als gelegentliche Mahlzeit ist das unproblematisch, als Dauerkost aber nicht ideal."
+      "answer": "Yum Yum ist ein verarbeitetes Fertigprodukt mit viel Salz und Fett. Als gelegentliche Mahlzeit ist das unproblematisch, als Dauerkost aber nicht ideal."
     },
     {
       "question": "Hat zubereitetes Yum Yum mehr Kalorien als trockenes?",
-      "answer": "Nein. Beim Aufgießen mit Wasser ändert sich die Kalorienmenge kaum, da nur Wasser hinzukommt. Eine fertige Schüssel hat etwa so viele Kalorien wie die trockene Packung."
+      "answer": "Nein. Beim Aufgießen kommt nur Wasser hinzu, die Kalorien einer Packung bleiben gleich (rund 289 kcal bei 60 g). Andere Sorten und der Becher haben eigene Werte auf der Packung."
     }
   ],
   "related_foods": [

@@ -71,13 +71,12 @@ const HAENDLER = {
 
 // <OFFEN>
 const OFFEN = new Set([
-   "aperol-spritz", "aquafaba", "ben-and-jerry-s", "bowl", "campari", "captain-morgan",
-   "feta-light", "five-guys-burger", "fleisch", "fruehstueck", "gemuese", "giotto", "guinness",
-   "hans-im-glueck-burger", "kaese", "katjes", "klopfer", "l-osteria-pizza",
-   "magnum-double-caramel", "mate-tee", "mc-frappe", "oreo-donut", "pepsi-max",
-   "philadelphia-light", "pop-tarts", "praline", "proteinriegel", "schokoriegel", "smirnoff-ice",
-   "snickers-crisp", "twister-eis", "vapiano", "waterdrop", "wonderwaffel", "wurst", "yfood",
-   "yum-yum",
+   "ben-and-jerry-s", "bowl", "campari", "captain-morgan", "feta-light", "five-guys-burger",
+   "fleisch", "fruehstueck", "gemuese", "giotto", "guinness", "hans-im-glueck-burger", "kaese",
+   "katjes", "klopfer", "l-osteria-pizza", "magnum-double-caramel", "mate-tee", "mc-frappe",
+   "oreo-donut", "pepsi-max", "philadelphia-light", "pop-tarts", "praline", "proteinriegel",
+   "schokoriegel", "smirnoff-ice", "snickers-crisp", "twister-eis", "vapiano", "wonderwaffel",
+   "wurst", "yfood",
 ]);
 // </OFFEN>
 
@@ -113,7 +112,7 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 902, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 906, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
 test("jedes source-Feld nennt FDC, eine Herstellerangabe oder ein Händler-Etikett", () => {
@@ -228,7 +227,7 @@ test("Herstellerangaben nennen Hersteller, Produkt, https-Adresse und Abrufdatum
 test("Händler-Etikett: Art, Händler, Produkt, https-Adresse und Abrufdatum", () => {
   const mitEtikett = alle.filter(({ food }) => istEtikett(food));
   assert.deepEqual(mitEtikett.map(({ slug }) => slug).sort(), Object.keys(etiketten).sort());
-  assert.ok(mitEtikett.length >= 20, "nur " + mitEtikett.length + " Seiten mit Händler-Etikett");
+  assert.ok(mitEtikett.length >= 23, "nur " + mitEtikett.length + " Seiten mit Händler-Etikett");
   for (const { slug, food } of mitEtikett) {
     const h = food.hersteller;
     const e = etiketten[slug];
@@ -275,7 +274,7 @@ test("Händler-Etikett: Werte der Seite folgen aus der Nährwerttabelle der Hän
     const w = etikettWerte(e);
     const o = seiten.get(slug).overview;
     // Bezug: 100 g bzw. 100 ml wie auf der Seite, sonst Umrechnung auf das trockene Produkt
-    // (ebly: Portion aus 62,5 g ungekochtem Weizen)
+    // (ebly: Portion aus 62,5 g ungekochtem Weizen; yum-yum: 380 g Suppe aus 60 g Nudeln)
     if (!e.umrechnung) assert.equal(e.spalte, o.einheit === "ml" ? "pro 100 ml" : "pro 100 g", slug);
     const f = e.umrechnung ? e.umrechnung.mal / e.umrechnung.durch : 1;
     if (e.umrechnung) assert.match(seiten.get(slug).hersteller.produkt, /umgerechnet/, slug + ": Umrechnung nicht sichtbar");
@@ -444,8 +443,10 @@ test("Vergleiche offener Seiten mit Bestandteilen folgen aus deren Werten", () =
   }
   assert.deepEqual(abweichungen, []);
   for (const [slug, name] of [
+    ["campari", "Aperol Spritz (100 ml)"],
     ["kaese", "Quark 20%"],
     ["proteinriegel", "Quark 500g"],
+    ["smirnoff-ice", "Aperol Spritz (Flasche, 200 ml)"],
   ]) {
     const c = seiten.get(slug).comparison.find((x) => x.name === name);
     assert.ok(c?.basis?.length, slug + " / " + name + ": keine Bestandteile");

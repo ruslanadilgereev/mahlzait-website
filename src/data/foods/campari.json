@@ -87,9 +87,15 @@
   ],
   "comparison": [
     {
-      "name": "Aperol Spritz",
-      "calories": 145,
-      "emoji": "🍹"
+      "name": "Aperol Spritz (100 ml)",
+      "calories": 102,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Wein (rot)",

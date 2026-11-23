@@ -102,9 +102,15 @@
       "emoji": "🍻"
     },
     {
-      "name": "Aperol Spritz (Glas)",
-      "calories": 175,
-      "emoji": "🍹"
+      "name": "Aperol Spritz (Flasche, 200 ml)",
+      "calories": 204,
+      "emoji": "🍹",
+      "basis": [
+        {
+          "slug": "aperol-spritz",
+          "g": 200
+        }
+      ]
     }
   ],
   "tips": [

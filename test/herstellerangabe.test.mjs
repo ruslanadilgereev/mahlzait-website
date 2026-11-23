@@ -106,6 +106,8 @@ test("allgemeine Seite mit Herstellerangabe als Beispiel: sichtbar gekennzeichne
     ["topfen", "MILRAM Speisequark 20 % Fett"],
     ["traubenzucker", "Dextro Energy Classic (Traubenzuckerwürfel)"],
     ["udon", "Bamboo Garden Udon Nudeln (vorgegart)"],
+    // offizieller Shop des Herstellers (23.11.2026), die Seite nennt keine Sorte
+    ["waterdrop", "waterdrop Microdrink JOHANNISBEERE"],
     ["weingummi", "HARIBO Weinland"],
     ["weisswurst", "REWE Wilhelm Brandenburg Münchner Weißwurst"],
   ]) {
@@ -209,7 +211,7 @@ test("Herstellerangabe für den deutschen Markt, am 23.11.2026 neu gefunden: sic
 test("Händler-Etikett: sichtbarer Hinweis mit Händler, Abrufdatum und Link, Fußzeile und isBasedOn", () => {
   // Vorschlag vom 23.11.2026: Kennzeichnung des Herstellers auf der Verpackung, wie sie der Händler anzeigt
   const menge = (g, einheit) => String(g).replace(".", ",") + " " + einheit;
-  for (const slug of ["balisto","balisto-lila","balisto-orange","bounty","bounty-mini","daim-mini","ebly","kiri","lion-mini","maltesers","mars","mars-eis","mars-mini","mars-riegel","mikado","milky-way","mini-milky-way","nesquik","nuts","piccolinis"]) {
+  for (const slug of ["aperol-spritz","aquafaba","balisto","balisto-lila","balisto-orange","bounty","bounty-mini","daim-mini","ebly","kiri","lion-mini","maltesers","mars","mars-eis","mars-mini","mars-riegel","mikado","milky-way","mini-milky-way","nesquik","nuts","piccolinis","yum-yum"]) {
     const food = lade(slug);
     const h = food.hersteller;
     assert.ok(h?.haendler && food.source.startsWith(`Händler-Etikett ${h.haendler}: `), slug + ": kein Händler-Etikett");
