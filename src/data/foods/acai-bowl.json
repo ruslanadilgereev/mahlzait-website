@@ -3,9 +3,39 @@
   "name": "Açaí Bowl",
   "emoji": "🥣",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten und Herstellerangaben (1 Açaí Bowl, 350 g): 200 g Açaí-Püree, ungesüßt (Seite acai, Werte am Beispiel Wholey Açaí Drops, Herstellerangabe: 86 kcal), 80 g Banane (FDC-ID 173944, Bananas, raw: 89 kcal), 40 g Granola (FDC-ID 2708461, Cereal, granola: 420 kcal), 20 g Heidelbeeren (FDC-ID 171711, Blueberries, raw: 57 kcal), 10 g Honig (FDC-ID 169640, Honey: 304 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Açaí-Püree, ungesüßt",
+        "g": 200,
+        "slug": "acai"
+      },
+      {
+        "name": "Banane",
+        "g": 80,
+        "fdcId": 173944
+      },
+      {
+        "name": "Granola",
+        "g": 40,
+        "fdcId": 2708461
+      },
+      {
+        "name": "Heidelbeeren",
+        "g": 20,
+        "fdcId": 171711
+      },
+      {
+        "name": "Honig",
+        "g": 10,
+        "fdcId": 169640
+      }
+    ]
+  },
   "seo": {
     "title": "Açaí Bowl Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Açaí Bowl? Eine typische Bowl (350g) hat ca. 420 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat eine Açaí Bowl? Eine typische Bowl (350g) hat nach Rezeptrechnung rund 452 kcal. Nährwerte pro 100g, Varianten im Vergleich und Tipps zum Abnehmen.",
     "keywords": [
       "acai bowl kalorien",
       "açaí bowl kcal",
@@ -16,11 +46,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 120,
-    "protein_per_100g": 2.5,
-    "carbs_per_100g": 19,
-    "fat_per_100g": 4,
-    "fiber_per_100g": 3,
+    "calories_per_100g": 129,
+    "protein_per_100g": 2.1,
+    "carbs_per_100g": 18,
+    "fat_per_100g": 5.5,
+    "fiber_per_100g": 3.1,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Açaí Bowl (mittel)"
   },
@@ -28,77 +58,134 @@
     {
       "name": "Açaí Bowl klein (250g)",
       "portion_g": 250,
-      "calories": 300,
-      "protein": 6,
-      "carbs": 48,
-      "fat": 10,
+      "calories": 323,
+      "protein": 5,
+      "carbs": 45,
+      "fat": 14,
       "tip": "Kleine Portion als Snack"
     },
     {
       "name": "Açaí Bowl mittel (350g)",
       "portion_g": 350,
-      "calories": 420,
-      "protein": 9,
-      "carbs": 67,
-      "fat": 14,
+      "calories": 452,
+      "protein": 7,
+      "carbs": 63,
+      "fat": 19,
       "tip": "Standardportion im Café"
     },
     {
       "name": "Açaí Bowl groß (450g)",
       "portion_g": 450,
-      "calories": 540,
-      "protein": 11,
-      "carbs": 86,
-      "fat": 18
+      "calories": 581,
+      "protein": 9,
+      "carbs": 81,
+      "fat": 25
     },
     {
-      "name": "Açaí Bowl pur ohne Toppings (300g)",
-      "portion_g": 300,
-      "calories": 240,
-      "protein": 6,
-      "carbs": 39,
-      "fat": 7,
-      "tip": "Nur Açaí-Basis, kalorienärmer"
+      "name": "Açaí-Basis ohne Toppings (200g Açaí + 80g Banane)",
+      "portion_g": 280,
+      "calories": 243,
+      "protein": 3,
+      "carbs": 25,
+      "fat": 14,
+      "tip": "Nur Açaí-Basis, kalorienärmer",
+      "basis": [
+        {
+          "slug": "acai",
+          "g": 200
+        },
+        {
+          "fdcId": 173944,
+          "g": 80
+        }
+      ]
     },
     {
-      "name": "Açaí Bowl mit Granola & Honig (400g)",
+      "name": "Açaí Bowl mit extra Granola & Honig (350g + 30g Granola + 20g Honig)",
       "portion_g": 400,
-      "calories": 560,
-      "protein": 11,
-      "carbs": 92,
-      "fat": 16,
-      "tip": "Reichhaltige Variante mit viel Granola"
+      "calories": 638,
+      "protein": 10,
+      "carbs": 100,
+      "fat": 23,
+      "tip": "Reichhaltige Variante mit viel Granola",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 2708461,
+          "g": 30
+        },
+        {
+          "fdcId": 169640,
+          "g": 20
+        }
+      ]
     },
     {
-      "name": "Açaí-Basis pur pro 100g",
+      "name": "Açaí-Püree ungesüßt (100g)",
       "portion_g": 100,
-      "calories": 80,
+      "calories": 86,
       "protein": 1,
-      "carbs": 12,
-      "fat": 3,
-      "tip": "Reine gesüßte Açaí-Püree-Basis"
+      "carbs": 3,
+      "fat": 7,
+      "tip": "Reine Açaí-Basis ohne Zucker",
+      "basis": [
+        {
+          "slug": "acai",
+          "g": 100
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Smoothie Beeren",
-      "calories": 60,
-      "emoji": "🥤"
+      "name": "Beeren-Smoothie (300 ml)",
+      "calories": 148,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "smoothie-beeren"
+        }
+      ]
     },
     {
-      "name": "Müsli mit Milch",
-      "calories": 122,
-      "emoji": "🥣"
+      "name": "Müsli mit Milch (50g + 150 ml)",
+      "calories": 286,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "muesli",
+          "g": 50
+        },
+        {
+          "slug": "milch",
+          "ml": 150,
+          "g": 155
+        }
+      ]
     },
     {
-      "name": "Granola",
-      "calories": 471,
-      "emoji": "🌾"
+      "name": "Granola (50g)",
+      "calories": 210,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "granola",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Joghurt",
-      "calories": 61,
-      "emoji": "🍦"
+      "name": "Joghurt (150g)",
+      "calories": 92,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "joghurt",
+          "g": 150
+        }
+      ]
     }
   ],
   "tips": [
@@ -131,19 +218,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Açaí Bowl?",
-      "answer": "Eine typische mittelgroße Açaí Bowl (350g) mit Toppings hat ca. 420 kcal. Pro 100g sind es rund 120 kcal. Kleine Bowls liegen bei etwa 300 kcal, große reichlich belegte über 540 kcal."
+      "answer": "Eine mittelgroße Açaí Bowl (350g) aus 200g ungesüßtem Açaí-Püree, Banane, Granola, Heidelbeeren und Honig hat nach unserer Rezeptrechnung rund 452 kcal, pro 100g sind es 129 kcal. Kleine Bowls (250g) liegen bei etwa 323 kcal, große (450g) bei rund 581 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat eine Açaí Bowl?",
-      "answer": "Pro 100g enthält eine Açaí Bowl etwa 19g Kohlenhydrate. Eine mittlere Portion (350g) kommt auf rund 67g, vor allem durch gesüßte Açaí-Basis, Banane, Honig und Granola."
+      "answer": "Pro 100g enthält eine Açaí Bowl etwa 18g Kohlenhydrate. Eine mittlere Portion (350g) kommt auf rund 63g, vor allem durch Banane, Granola und Honig."
     },
     {
       "question": "Wie viel Protein steckt in einer Açaí Bowl?",
-      "answer": "Eine Açaí Bowl liefert pro 100g etwa 2,5g Eiweiß, eine mittlere Portion also rund 9g. Mit Magerquark, Skyr oder Proteinpulver lässt sich der Proteingehalt deutlich erhöhen."
+      "answer": "Eine Açaí Bowl liefert pro 100g etwa 2,1g Eiweiß, eine mittlere Portion also rund 7g. Mit Magerquark, Skyr oder Proteinpulver lässt sich der Proteingehalt deutlich erhöhen."
     },
     {
       "question": "Ist eine Açaí Bowl zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Die Açaí-Basis ist reich an Ballaststoffen und Antioxidantien. Da Granola, Honig und gesüßte Mischungen aber viele Kalorien beisteuern, sollte man Toppings sparsam dosieren und auf eine ungesüßte Basis achten."
+      "answer": "In Maßen ja. Die ungesüßte Açaí-Basis liefert Ballaststoffe und kaum Zucker. Da Granola, Honig und gesüßte Mischungen aber viele Kalorien beisteuern, sollte man Toppings sparsam dosieren und auf eine ungesüßte Basis achten."
     },
     {
       "question": "Ist eine Açaí Bowl gesund?",
@@ -151,7 +238,7 @@
     },
     {
       "question": "Wie viele Kalorien hat die reine Açaí-Basis?",
-      "answer": "Die gesüßte Açaí-Püree-Basis hat ohne Toppings rund 80 kcal pro 100g. Unverarbeitetes, ungesüßtes Açaí-Mark liegt sogar noch etwas niedriger."
+      "answer": "Ungesüßtes Açaí-Püree hat am Beispiel Wholey Açaí Drops 86 kcal pro 100g (Herstellerangabe). Gesüßte Mischungen liegen höher, weil Zucker oder Fruchtsaft dazukommen."
     }
   ],
   "related_foods": [

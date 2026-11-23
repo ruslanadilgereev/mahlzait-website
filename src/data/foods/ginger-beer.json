@@ -3,9 +3,17 @@
   "name": "Ginger Beer",
   "emoji": "🫚",
   "category": "getraenk",
+  "source": "Herstellerangabe Schweppes Deutschland, Spicy Ginger Beer (https://www.schweppes.de/produkte/schweppes-classic/spicy-ginger-beer, abgerufen am 23.11.2026), Werte je 100 ml; Ballaststoffe vom Hersteller nicht angegeben; allgemeine Seite, Werte am Beispiel Schweppes Spicy Ginger Beer",
+  "hersteller": {
+    "name": "Schweppes",
+    "produkt": "Spicy Ginger Beer",
+    "url": "https://www.schweppes.de/produkte/schweppes-classic/spicy-ginger-beer",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Ginger Beer Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Ginger Beer? Eine 330-ml-Dose hat ca. 125 kcal. Nährwerte pro 100 ml & Glas, Zero-Variante und Vergleich im Überblick.",
+    "description": "Wie viele Kalorien hat Ginger Beer? 49 kcal pro 100 ml am Beispiel Schweppes Spicy Ginger Beer, eine 0,2-l-Flasche 98 kcal. Nährwerte pro Glas, Flasche und Dose im Vergleich.",
     "keywords": [
       "ginger beer kcal",
       "ginger beer kalorien",
@@ -16,104 +24,138 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 38,
+    "calories_per_100g": 49,
     "protein_per_100g": 0,
-    "carbs_per_100g": 9.5,
+    "carbs_per_100g": 12,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 330,
-    "typical_portion_name": "1 Dose (330 ml)"
+    "fiber_per_100g": null,
+    "typical_portion_g": 200,
+    "typical_portion_name": "1 Flasche (200 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
       "name": "Glas (100 ml)",
       "portion_g": 100,
-      "calories": 38,
+      "calories": 49,
       "protein": 0,
-      "carbs": 9.5,
+      "carbs": 12,
       "fat": 0
     },
     {
-      "name": "Glas (200 ml)",
+      "name": "Flasche (200 ml)",
       "portion_g": 200,
-      "calories": 76,
+      "calories": 98,
       "protein": 0,
-      "carbs": 19,
+      "carbs": 24,
       "fat": 0,
-      "tip": "Übliches Trinkglas"
+      "tip": "Standardflasche (0,2 l)"
     },
     {
       "name": "Dose (330 ml)",
       "portion_g": 330,
-      "calories": 125,
+      "calories": 162,
       "protein": 0,
-      "carbs": 31,
-      "fat": 0,
-      "tip": "Standard"
+      "carbs": 39.6,
+      "fat": 0
     },
     {
       "name": "Flasche (500 ml)",
       "portion_g": 500,
-      "calories": 190,
+      "calories": 245,
       "protein": 0,
-      "carbs": 48,
+      "carbs": 60,
       "fat": 0
     },
     {
-      "name": "Zero / zuckerfrei (200 ml)",
-      "portion_g": 200,
-      "calories": 4,
+      "name": "PET-Flasche (1 l)",
+      "portion_g": 1000,
+      "calories": 490,
       "protein": 0,
-      "carbs": 0.5,
-      "fat": 0,
-      "tip": "Mit Süßstoff statt Zucker"
+      "carbs": 120,
+      "fat": 0
     },
     {
-      "name": "Moscow Mule (mit Wodka, 250 ml)",
-      "portion_g": 250,
-      "calories": 175,
-      "protein": 0,
-      "carbs": 17,
+      "name": "Moscow Mule (150 ml + 5 cl Wodka + 2 cl Limettensaft)",
+      "portion_g": 218,
+      "calories": 187,
+      "protein": 0.1,
+      "carbs": 19.8,
       "fat": 0,
-      "tip": "Inkl. ca. 4 cl Wodka"
+      "tip": "Rezept von Schweppes, Wodka und Limettensaft mitgerechnet",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "wodka",
+          "ml": 50,
+          "g": 47
+        },
+        {
+          "fdcId": 168156,
+          "ml": 20,
+          "g": 21
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Cola (330 ml)",
-      "calories": 139,
-      "emoji": "🥤"
+      "calories": 145,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "cola"
+        }
+      ]
     },
     {
       "name": "Ginger Ale (330 ml)",
-      "calories": 112,
-      "emoji": "🫚"
+      "calories": 118,
+      "emoji": "🫚",
+      "basis": [
+        {
+          "slug": "ginger-ale"
+        }
+      ]
     },
     {
       "name": "Bionade (330 ml)",
-      "calories": 79,
-      "emoji": "🍾"
+      "calories": 73,
+      "emoji": "🍾",
+      "basis": [
+        {
+          "slug": "bionade"
+        }
+      ]
     },
     {
-      "name": "Mineralwasser (330 ml)",
+      "name": "Mineralwasser (0,5 l)",
       "calories": 0,
-      "emoji": "💧"
+      "emoji": "💧",
+      "basis": [
+        {
+          "slug": "mineralwasser"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Mehr Zucker als gedacht",
-      "text": "Ginger Beer enthält mit rund 9,5 g Zucker pro 100 ml ähnlich viel wie Cola. Eine 330-ml-Dose liefert ca. 31 g Zucker, also fast 8 Würfelzucker.",
+      "text": "Ginger Beer enthält am Beispiel Schweppes Spicy Ginger Beer 11 g Zucker pro 100 ml, ähnlich viel wie Cola. Eine 0,2-l-Flasche liefert laut Hersteller 23 g Zucker.",
       "icon": "🧊"
     },
     {
       "title": "Zero-Variante spart deutlich",
-      "text": "Zuckerfreies Ginger Beer kommt auf nur etwa 2 kcal pro 100 ml. Statt 125 kcal pro Dose bleiben so nur wenige Kalorien übrig.",
+      "text": "Zuckerfreie Ginger-Beer-Varianten mit Süßstoff haben nur einen Bruchteil der Kalorien. Ein Blick aufs Etikett lohnt sich.",
       "icon": "🪶"
     },
     {
       "title": "Vorsicht beim Cocktail",
-      "text": "Im Moscow Mule kommen zum Ginger Beer noch die Kalorien des Wodkas dazu. Ein Glas (250 ml) landet schnell bei rund 175 kcal.",
+      "text": "Im Moscow Mule kommen zum Ginger Beer noch die Kalorien des Wodkas dazu. Nach dem Schweppes-Rezept (150 ml Ginger Beer, 5 cl Wodka, 2 cl Limettensaft) landet ein Glas bei rund 187 kcal.",
       "icon": "🍸"
     },
     {
@@ -130,19 +172,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Ginger Beer?",
-      "answer": "Ginger Beer hat etwa 38 kcal pro 100 ml. Eine 330-ml-Dose kommt damit auf rund 125 kcal, eine 500-ml-Flasche auf etwa 190 kcal."
+      "answer": "Ginger Beer hat am Beispiel Schweppes Spicy Ginger Beer 49 kcal pro 100 ml (Herstellerangabe). Eine 0,2-l-Flasche kommt damit auf rund 98 kcal, eine 330-ml-Dose auf etwa 162 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Ginger Beer?",
-      "answer": "Klassisches Ginger Beer enthält rund 9,5 g Zucker pro 100 ml. Eine 330-ml-Dose liefert also etwa 31 g Zucker, ähnlich viel wie Cola."
+      "answer": "Schweppes Spicy Ginger Beer enthält 11 g Zucker pro 100 ml, eine 0,2-l-Flasche laut Hersteller 23 g. Das ist ähnlich viel wie bei Cola."
     },
     {
       "question": "Hat Ginger Beer Eiweiß oder Fett?",
-      "answer": "Nein. Ginger Beer besteht praktisch nur aus Wasser, Zucker und Aroma und enthält weder nennenswertes Eiweiß noch Fett. Die Kalorien stammen fast ausschließlich aus Zucker."
+      "answer": "Nein. Ginger Beer besteht vor allem aus Wasser, Zucker, Kohlensäure und Ingwer und enthält weder Eiweiß noch Fett (laut Hersteller je 0 g). Die Kalorien stammen fast ausschließlich aus Zucker."
     },
     {
       "question": "Ist Ginger Beer zum Abnehmen geeignet?",
-      "answer": "Nur eingeschränkt. Durch den hohen Zuckergehalt ist klassisches Ginger Beer beim Abnehmen ungünstig. Die zuckerfreie Zero-Variante mit etwa 2 kcal pro 100 ml ist die bessere Wahl."
+      "answer": "Nur eingeschränkt. Durch den hohen Zuckergehalt ist klassisches Ginger Beer beim Abnehmen ungünstig. Zuckerfreie Varianten mit Süßstoff sind die bessere Wahl."
     },
     {
       "question": "Ist Ginger Beer gesund?",

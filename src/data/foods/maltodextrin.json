@@ -3,9 +3,17 @@
   "name": "Maltodextrin",
   "emoji": "🥄",
   "category": "supermarkt",
+  "source": "Herstellerangabe ZEC+ Nutrition, Maltodextrin Pulver (https://www.zecplus.de/products/zec-maltodextrin-pulver, abgerufen am 23.11.2026), Werte je 100 g; Eiweiß laut Hersteller unter 0,5 g, hier 0 g; allgemeine Seite, Werte am Beispiel ZEC+ Maltodextrin (Pulver)",
+  "hersteller": {
+    "name": "ZEC+",
+    "produkt": "Maltodextrin (Pulver)",
+    "url": "https://www.zecplus.de/products/zec-maltodextrin-pulver",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Maltodextrin Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Maltodextrin? 380 kcal pro 100g, fast reine Kohlenhydrate. Nährwerte pro Portion, Vergleich & Tipps für Sport und Diät.",
+    "description": "Wie viele Kalorien hat Maltodextrin? 384 kcal pro 100g am Beispiel ZEC+ Maltodextrin, fast reine Kohlenhydrate. Nährwerte pro Portion, Vergleich & Tipps für Sport und Diät.",
     "keywords": [
       "maltodextrin kcal",
       "maltodextrin kalorien",
@@ -16,9 +24,9 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 380,
+    "calories_per_100g": 384,
     "protein_per_100g": 0,
-    "carbs_per_100g": 95,
+    "carbs_per_100g": 96,
     "fat_per_100g": 0,
     "fiber_per_100g": 0,
     "typical_portion_g": 30,
@@ -36,72 +44,97 @@
     {
       "name": "1 Esslöffel (15g)",
       "portion_g": 15,
-      "calories": 57,
+      "calories": 58,
       "protein": 0,
-      "carbs": 14.3,
+      "carbs": 14.4,
       "fat": 0
     },
     {
       "name": "1 Portion (30g)",
       "portion_g": 30,
-      "calories": 114,
+      "calories": 115,
       "protein": 0,
-      "carbs": 28.5,
+      "carbs": 28.8,
       "fat": 0,
       "tip": "Standard im Sportgetränk"
     },
     {
       "name": "Großer Scoop (50g)",
       "portion_g": 50,
-      "calories": 190,
+      "calories": 192,
       "protein": 0,
-      "carbs": 47.5,
-      "fat": 0
+      "carbs": 48,
+      "fat": 0,
+      "tip": "Portionsangabe des Herstellers"
     },
     {
       "name": "Carbo-Loading (100g)",
       "portion_g": 100,
-      "calories": 380,
+      "calories": 384,
       "protein": 0,
-      "carbs": 95,
+      "carbs": 96,
       "fat": 0,
       "tip": "Vor Ausdauer-Wettkampf"
     },
     {
       "name": "1 Liter Sportdrink (60g)",
       "portion_g": 60,
-      "calories": 228,
+      "calories": 230,
       "protein": 0,
-      "carbs": 57,
+      "carbs": 57.6,
       "fat": 0
     }
   ],
   "comparison": [
     {
       "name": "Traubenzucker (30g)",
-      "calories": 113,
-      "emoji": "🍬"
+      "calories": 110,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "traubenzucker",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Haushaltszucker (30g)",
-      "calories": 118,
-      "emoji": "🥄"
+      "calories": 116,
+      "emoji": "🥄",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Honig (30g)",
-      "calories": 92,
-      "emoji": "🍯"
+      "calories": 91,
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Proteinpulver (30g)",
-      "calories": 113,
-      "emoji": "💪"
+      "calories": 106,
+      "emoji": "💪",
+      "basis": [
+        {
+          "slug": "proteinpulver",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Schneller Energielieferant",
-      "text": "Maltodextrin besteht fast vollständig aus Kohlenhydraten und geht schnell ins Blut. 30g liefern rund 114 kcal als rasch verfügbare Energie für lange Ausdauerbelastungen.",
+      "text": "Maltodextrin besteht fast vollständig aus Kohlenhydraten und geht schnell ins Blut. 30g liefern rund 115 kcal als rasch verfügbare Energie für lange Ausdauerbelastungen.",
       "icon": "⚡"
     },
     {
@@ -111,7 +144,7 @@
     },
     {
       "title": "In der Diät meist überflüssig",
-      "text": "Mit 380 kcal pro 100g und fast nur Kohlenhydraten liefert Maltodextrin reine Energie ohne Sättigung. Wer abnehmen will, braucht es in der Regel nicht.",
+      "text": "Mit 384 kcal pro 100g und fast nur Kohlenhydraten liefert Maltodextrin reine Energie ohne Sättigung. Wer abnehmen will, braucht es in der Regel nicht.",
       "icon": "📉"
     },
     {
@@ -128,19 +161,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Maltodextrin?",
-      "answer": "Maltodextrin hat etwa 380 kcal pro 100g. Eine typische Portion von 30g liefert rund 114 kcal."
+      "answer": "Maltodextrin hat am Beispiel ZEC+ Maltodextrin 384 kcal pro 100g (Herstellerangabe). Eine typische Portion von 30g liefert rund 115 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Maltodextrin?",
-      "answer": "Maltodextrin besteht zu rund 95g pro 100g aus Kohlenhydraten und ist damit fast reines Kohlenhydrat."
+      "answer": "Maltodextrin besteht zu rund 96g pro 100g aus Kohlenhydraten, davon nur 6g Zucker (ZEC+ Maltodextrin). Es ist damit fast reines Kohlenhydrat."
     },
     {
       "question": "Wie viel Protein hat Maltodextrin?",
-      "answer": "Maltodextrin enthält praktisch kein Protein und kein Fett. Es liefert nahezu ausschließlich Kohlenhydrate."
+      "answer": "Maltodextrin enthält praktisch kein Protein (laut Hersteller unter 0,5g pro 100g) und kein Fett. Es liefert nahezu ausschließlich Kohlenhydrate."
     },
     {
       "question": "Ist Maltodextrin zum Abnehmen geeignet?",
-      "answer": "Nein. Mit 380 kcal pro 100g und fast nur schnellen Kohlenhydraten liefert Maltodextrin viel Energie ohne Sättigung und ist beim Abnehmen meist überflüssig."
+      "answer": "Nein. Mit 384 kcal pro 100g und fast nur schnellen Kohlenhydraten liefert Maltodextrin viel Energie ohne Sättigung und ist beim Abnehmen meist überflüssig."
     },
     {
       "question": "Ist Maltodextrin gesund?",

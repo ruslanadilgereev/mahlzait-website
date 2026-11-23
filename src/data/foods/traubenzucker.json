@@ -3,9 +3,17 @@
   "name": "Traubenzucker",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe Dextro Energy, Dextrose Classic, Traubenzuckerwürfel 46 g (https://dextro-energy.com/products/wuerfel-classic, abgerufen am 23.11.2026), Werte je 100 g; Fett laut Hersteller unter 0,5 g, hier 0 g; Ballaststoffe vom Hersteller nicht angegeben; Täfelchen 5,75 g laut Verzehrsempfehlung (3 Täfelchen ca. 17,25 g); allgemeine Seite, Werte am Beispiel Dextro Energy Classic (Traubenzuckerwürfel)",
+  "hersteller": {
+    "name": "Dextro Energy",
+    "produkt": "Classic (Traubenzuckerwürfel)",
+    "url": "https://dextro-energy.com/products/wuerfel-classic",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Traubenzucker Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Traubenzucker? 100g haben ca. 380 kcal, ein Plättchen (3g) ca. 11 kcal. Alle Nährwerte, Kohlenhydrate & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Traubenzucker? 368 kcal pro 100g am Beispiel Dextro Energy Classic, ein Täfelchen (5,75g) 21 kcal. Alle Nährwerte, Kohlenhydrate & Tipps im Überblick.",
     "keywords": [
       "kalorien traubenzucker",
       "traubenzucker kalorien",
@@ -16,44 +24,53 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 380,
+    "calories_per_100g": 368,
     "protein_per_100g": 0,
-    "carbs_per_100g": 94,
+    "carbs_per_100g": 91,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 6,
-    "typical_portion_name": "2 Plättchen (6g)"
+    "fiber_per_100g": null,
+    "typical_portion_g": 11.5,
+    "typical_portion_name": "2 Täfelchen (11,5g)"
   },
   "variants": [
     {
-      "name": "1 Plättchen (3g)",
-      "portion_g": 3,
-      "calories": 11,
+      "name": "1 Täfelchen (5,75g)",
+      "portion_g": 5.75,
+      "calories": 21,
       "protein": 0,
-      "carbs": 3,
+      "carbs": 5,
       "fat": 0
     },
     {
-      "name": "2 Plättchen (6g)",
-      "portion_g": 6,
-      "calories": 23,
+      "name": "2 Täfelchen (11,5g)",
+      "portion_g": 11.5,
+      "calories": 42,
       "protein": 0,
-      "carbs": 6,
+      "carbs": 10,
       "fat": 0,
       "tip": "Typische Portion"
     },
     {
-      "name": "1 Rolle (40g)",
-      "portion_g": 40,
-      "calories": 152,
+      "name": "3 Täfelchen (17,25g)",
+      "portion_g": 17.25,
+      "calories": 63,
       "protein": 0,
-      "carbs": 38,
+      "carbs": 16,
+      "fat": 0,
+      "tip": "Verzehrsempfehlung des Herstellers"
+    },
+    {
+      "name": "1 Würfel (46g, 8 Täfelchen)",
+      "portion_g": 46,
+      "calories": 169,
+      "protein": 0,
+      "carbs": 42,
       "fat": 0
     },
     {
       "name": "1 Teelöffel Pulver (5g)",
       "portion_g": 5,
-      "calories": 19,
+      "calories": 18,
       "protein": 0,
       "carbs": 5,
       "fat": 0
@@ -61,7 +78,7 @@
     {
       "name": "1 Esslöffel Pulver (15g)",
       "portion_g": 15,
-      "calories": 57,
+      "calories": 55,
       "protein": 0,
       "carbs": 14,
       "fat": 0
@@ -69,32 +86,56 @@
     {
       "name": "100g Traubenzucker",
       "portion_g": 100,
-      "calories": 380,
+      "calories": 368,
       "protein": 0,
-      "carbs": 94,
+      "carbs": 91,
       "fat": 0
     }
   ],
   "comparison": [
     {
-      "name": "Zucker",
-      "calories": 405,
-      "emoji": "🍚"
+      "name": "Zucker (100g)",
+      "calories": 387,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Honig",
+      "name": "Honig (100g)",
       "calories": 304,
-      "emoji": "🍯"
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Gummibärchen",
+      "name": "Gummibärchen (100g)",
       "calories": 343,
-      "emoji": "🐻"
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Karamell-Bonbons",
-      "calories": 384,
-      "emoji": "🍬"
+      "name": "Karamell-Bonbons (100g)",
+      "calories": 382,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "karamell-bonbons",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -105,41 +146,41 @@
     },
     {
       "title": "Nicht zum Abnehmen",
-      "text": "Traubenzucker besteht zu fast 100 Prozent aus reinem Zucker, sättigt nicht und liefert nur leere Kalorien. Für eine Diät ungeeignet.",
+      "text": "Traubenzucker besteht fast vollständig aus Kohlenhydraten (Dextro Energy Classic: 91g pro 100g), sättigt nicht und liefert nur leere Kalorien. Für eine Diät ungeeignet.",
       "icon": "🚫"
     },
     {
       "title": "Kein Vorteil gegenüber Haushaltszucker",
-      "text": "Mit 380 kcal pro 100g liegt Traubenzucker auf einem ähnlichen Niveau wie normaler Zucker. Gesünder ist er trotz des Namens nicht.",
+      "text": "Mit 368 kcal pro 100g liegt Traubenzucker auf einem ähnlichen Niveau wie normaler Zucker (387 kcal). Gesünder ist er trotz des Namens nicht.",
       "icon": "⚖️"
     },
     {
       "title": "Hilfe bei Unterzuckerung",
-      "text": "Bei einer leichten Unterzuckerung helfen 1 bis 2 Plättchen, den Blutzucker rasch wieder anzuheben. Für Diabetiker eine bewährte Soforthilfe.",
+      "text": "Bei einer leichten Unterzuckerung helfen 1 bis 2 Täfelchen, den Blutzucker rasch wieder anzuheben. Für Diabetiker eine bewährte Soforthilfe.",
       "icon": "🩸"
     },
     {
       "title": "Sparsam dosieren",
-      "text": "Ein einzelnes Plättchen hat nur etwa 11 kcal. Mehrere Rollen am Tag summieren sich aber schnell zu reichlich Zucker.",
+      "text": "Ein einzelnes Täfelchen (5,75g) hat nur rund 21 kcal. Mehrere Würfel am Tag summieren sich aber schnell: Ein ganzer Würfel (46g) hat 169 kcal.",
       "icon": "📏"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Traubenzucker?",
-      "answer": "100g Traubenzucker haben rund 380 kcal. Ein einzelnes Plättchen (3g) liefert etwa 11 kcal, zwei Plättchen rund 23 kcal."
+      "answer": "Traubenzucker hat am Beispiel Dextro Energy Classic 368 kcal pro 100g (Herstellerangabe). Ein Täfelchen (5,75g) liefert rund 21 kcal, zwei Täfelchen rund 42 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Plättchen Traubenzucker?",
-      "answer": "Ein Plättchen wiegt etwa 3g und hat rund 11 kcal. Es besteht praktisch vollständig aus Kohlenhydraten."
+      "answer": "Ein Täfelchen Dextro Energy Classic wiegt etwa 5,75g (der Hersteller nennt für 3 Täfelchen ca. 17,25g) und hat rund 21 kcal. Ein ganzer Würfel mit 46g kommt auf 169 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Traubenzucker?",
-      "answer": "Traubenzucker besteht zu etwa 94 Prozent aus Kohlenhydraten, und zwar fast ausschließlich aus Zucker (Glukose). Pro 100g sind das rund 94g Kohlenhydrate."
+      "answer": "Traubenzucker besteht zu rund 91 Prozent aus Kohlenhydraten: Dextro Energy Classic hat 91g pro 100g, davon 82g Zucker. Neben Dextrose (89 Prozent) enthält er etwas Maltodextrin."
     },
     {
       "question": "Hat Traubenzucker Eiweiß oder Fett?",
-      "answer": "Nein. Traubenzucker enthält praktisch kein Eiweiß und kein Fett. Er liefert seine Energie ausschließlich über Kohlenhydrate."
+      "answer": "Nein. Traubenzucker enthält kein Eiweiß und praktisch kein Fett (laut Hersteller unter 0,5g pro 100g). Er liefert seine Energie über Kohlenhydrate."
     },
     {
       "question": "Ist Traubenzucker zum Abnehmen geeignet?",

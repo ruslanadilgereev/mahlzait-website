@@ -3,9 +3,17 @@
   "name": "Lachsschinken",
   "emoji": "🥓",
   "category": "supermarkt",
+  "source": "Herstellerangabe ALDI SÜD, Gut Drei Eichen Lachsschinken-Aufschnitt Klassik (https://www.aldi-sued.de/produkt/gut-drei-eichen-lachsschinken-aufschnitt-150-g-klassik-000000000202985003, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel ALDI SÜD Gut Drei Eichen Lachsschinken-Aufschnitt Klassik",
+  "hersteller": {
+    "name": "ALDI SÜD",
+    "produkt": "Gut Drei Eichen Lachsschinken-Aufschnitt Klassik",
+    "url": "https://www.aldi-sued.de/produkt/gut-drei-eichen-lachsschinken-aufschnitt-150-g-klassik-000000000202985003",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
-    "title": "Lachsschinken Kalorien: 118 kcal/100g, 24g Protein | Mahlzait",
-    "description": "Lachsschinken hat nur 118 kcal und 24g Protein pro 100g, der magerste Schweine-Aufschnitt. Nährwerte pro Scheibe & Vergleich mit Bresaola und Putenbrust.",
+    "title": "Lachsschinken Kalorien: 134 kcal/100g, 28g Protein | Mahlzait",
+    "description": "Lachsschinken hat am Beispiel Gut Drei Eichen nur 134 kcal und 27,9 g Protein pro 100 g. Nährwerte pro Scheibe & Vergleich mit Bresaola und Putenbrust.",
     "keywords": [
       "lachsschinken kalorien",
       "kalorien lachsschinken",
@@ -18,11 +26,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 118,
-    "protein_per_100g": 24,
+    "calories_per_100g": 134,
+    "protein_per_100g": 27.9,
     "carbs_per_100g": 1,
     "fat_per_100g": 2,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": 0.1,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Portion (2-3 Scheiben)"
   },
@@ -30,8 +38,8 @@
     {
       "name": "1 Scheibe Lachsschinken (12g)",
       "portion_g": 12,
-      "calories": 14,
-      "protein": 2.9,
+      "calories": 16,
+      "protein": 3.3,
       "carbs": 0.1,
       "fat": 0.2,
       "tip": "Hauchdünn geschnitten"
@@ -39,90 +47,131 @@
     {
       "name": "Portion aufs Brot (30g, 2-3 Scheiben)",
       "portion_g": 30,
-      "calories": 35,
-      "protein": 7.2,
+      "calories": 40,
+      "protein": 8.4,
       "carbs": 0.3,
       "fat": 0.6
     },
     {
-      "name": "Ganze Packung (80g)",
-      "portion_g": 80,
-      "calories": 94,
-      "protein": 19.2,
-      "carbs": 0.8,
-      "fat": 1.6,
-      "tip": "Selbst die ganze Packung bleibt unter 100 kcal"
+      "name": "Ganze Packung (150g)",
+      "portion_g": 150,
+      "calories": 201,
+      "protein": 41.8,
+      "carbs": 1.5,
+      "fat": 3,
+      "tip": "Die ganze Packung hat 201 kcal"
     },
     {
       "name": "Vollkornbrot mit Lachsschinken (1 Scheibe + 30g)",
       "portion_g": 80,
-      "calories": 135,
-      "protein": 12,
-      "carbs": 20,
-      "fat": 2.3,
-      "tip": "Mageres Frühstück mit 12g Protein"
+      "calories": 151,
+      "protein": 11.8,
+      "carbs": 25.1,
+      "fat": 1.2,
+      "tip": "Mageres Frühstück mit rund 12g Protein",
+      "basis": [
+        {
+          "slug": "vollkornbrot"
+        },
+        {
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Lachsschinken-Röllchen mit Frischkäse (30g + 30g)",
       "portion_g": 60,
-      "calories": 105,
-      "protein": 8.7,
-      "carbs": 1,
-      "fat": 7.5,
-      "tip": "Low-Carb-Snack"
+      "calories": 116,
+      "protein": 11.1,
+      "carbs": 1.4,
+      "fat": 7.4,
+      "tip": "Low-Carb-Snack",
+      "basis": [
+        {
+          "g": 30
+        },
+        {
+          "slug": "frischkaese",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Im Salat (40g)",
       "portion_g": 40,
-      "calories": 47,
-      "protein": 9.6,
+      "calories": 54,
+      "protein": 11.2,
       "carbs": 0.4,
       "fat": 0.8
     },
     {
       "name": "Statt Salami aufs Brot (30g)",
       "portion_g": 30,
-      "calories": 35,
-      "protein": 7.2,
+      "calories": 40,
+      "protein": 8.4,
       "carbs": 0.3,
       "fat": 0.6,
-      "tip": "Spart rund 66 kcal gegenüber Salami"
+      "tip": "Spart rund 73 kcal gegenüber Salami"
     },
     {
       "name": "Auf Spargel (2 Scheiben, 25g)",
       "portion_g": 25,
-      "calories": 30,
-      "protein": 6,
+      "calories": 34,
+      "protein": 7,
       "carbs": 0.3,
       "fat": 0.5
     }
   ],
   "comparison": [
     {
-      "name": "Putenbrust-Aufschnitt",
-      "calories": 111,
-      "emoji": "🍗"
+      "name": "Putenbrust-Aufschnitt (100g)",
+      "calories": 106,
+      "emoji": "🍗",
+      "basis": [
+        {
+          "fdcId": 172941,
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Kochschinken",
-      "calories": 114,
-      "emoji": "🥩"
+      "name": "Kochschinken (100g)",
+      "calories": 107,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schinken",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Bresaola",
-      "calories": 154,
-      "emoji": "🥩"
+      "name": "Bresaola (100g)",
+      "calories": 153,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "bresaola",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Parmaschinken",
-      "calories": 245,
-      "emoji": "🍖"
+      "name": "Parmaschinken (100g)",
+      "calories": 195,
+      "emoji": "🍖",
+      "basis": [
+        {
+          "slug": "parmaschinken",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Der magerste Schinken vom Schwein",
-      "text": "Lachsschinken wird aus dem entfetteten Schweinelachs (Kotelettstrang) gepökelt und leicht geräuchert: 118 kcal und nur 2g Fett pro 100g. Beim Schwein gibt es nichts Magereres an der Wursttheke.",
+      "text": "Lachsschinken wird aus dem entfetteten Schweinelachs (Kotelettstrang) gepökelt und leicht geräuchert: am Beispiel Gut Drei Eichen 134 kcal und nur 2 g Fett pro 100 g. Beim Schwein gibt es kaum etwas Magereres an der Wursttheke.",
       "icon": "🏆"
     },
     {
@@ -131,25 +180,25 @@
       "icon": "🏷️"
     },
     {
-      "title": "24g Protein bei 118 kcal",
-      "text": "Das Protein-Kalorien-Verhältnis von Lachsschinken schlägt fast jeden Aufschnitt: Eine 30g-Portion liefert 7g Eiweiß für 35 kcal, ideal für proteinreiche Brotzeiten.",
+      "title": "28 g Protein bei 134 kcal",
+      "text": "Das Protein-Kalorien-Verhältnis von Lachsschinken schlägt fast jeden Aufschnitt: Eine 30-g-Portion liefert gut 8 g Eiweiß für 40 kcal, ideal für proteinreiche Brotzeiten.",
       "icon": "💪"
     },
     {
       "title": "Salz im Blick behalten",
-      "text": "Wie alle Rohschinken ist Lachsschinken kräftig gepökelt: rund 3,3g Salz pro 100g. Eine 30g-Portion liefert etwa 1g, bei kleinen Portionen bleibt das unkritisch.",
+      "text": "Wie alle Rohschinken ist Lachsschinken kräftig gepökelt: am Beispiel Gut Drei Eichen 3,75 g Salz pro 100 g. Eine 30-g-Portion liefert etwa 1,1 g, bei kleinen Portionen bleibt das unkritisch.",
       "icon": "🧂"
     },
     {
       "title": "Das Schweine-Pendant zur Bresaola",
-      "text": "Wer luftgetrockneten mageren Aufschnitt mag: Bresaola (Rind, 154 kcal) und Lachsschinken (Schwein, 118 kcal) sind die zwei Protein-Könige der Theke, deutlich vor Parmaschinken (245 kcal).",
+      "text": "Wer mageren Rohschinken-Aufschnitt mag: Bresaola (Rind, 153 kcal) und Lachsschinken (Schwein, 134 kcal) sind die zwei Protein-Könige der Theke, deutlich vor Parmaschinken (195 kcal).",
       "icon": "🥩"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Lachsschinken?",
-      "answer": "Lachsschinken hat rund 118 kcal pro 100g (Herstellerangabe Hofmaier; deutsche Produkte liegen zwischen 118 und 134 kcal). Eine hauchdünne Scheibe (12g) kommt auf 14 kcal, eine 30g-Portion auf 35 kcal."
+      "answer": "Lachsschinken hat am Beispiel ALDI SÜD Gut Drei Eichen Lachsschinken-Aufschnitt 134 kcal pro 100 g (Herstellerangabe). Eine hauchdünne Scheibe (12 g) kommt auf 16 kcal, eine 30-g-Portion auf 40 kcal."
     },
     {
       "question": "Warum heißt Lachsschinken Lachsschinken?",
@@ -157,15 +206,15 @@
     },
     {
       "question": "Ist Lachsschinken gut zum Abnehmen?",
-      "answer": "Ja, er gehört mit 118 kcal, 24g Protein und nur 2g Fett pro 100g zu den besten Aufschnitten für die Diät. Selbst eine ganze 80g-Packung bleibt unter 100 kcal."
+      "answer": "Ja, er gehört mit 134 kcal, 27,9 g Protein und nur 2 g Fett pro 100 g zu den besten Aufschnitten für die Diät. Eine ganze 150-g-Packung hat 201 kcal."
     },
     {
       "question": "Wie viel Protein hat Lachsschinken?",
-      "answer": "24g pro 100g, eine übliche Brot-Portion (30g) liefert gut 7g. Damit spielt er in einer Liga mit Putenbrust und Bresaola."
+      "answer": "Am Beispiel Gut Drei Eichen 27,9 g pro 100 g, eine übliche Brot-Portion (30 g) liefert gut 8 g. Damit spielt er in einer Liga mit Putenbrust und Bresaola."
     },
     {
       "question": "Was ist magerer: Lachsschinken oder Putenbrust?",
-      "answer": "Beide sind Spitzenreiter: Putenbrust-Aufschnitt hat 111 kcal, Lachsschinken 118 kcal pro 100g. Lachsschinken liefert dafür mit 24g etwas mehr Protein und das kräftigere Raucharoma."
+      "answer": "Beide sind Spitzenreiter: Putenbrust-Aufschnitt hat 106 kcal (USDA), Lachsschinken am Beispiel Gut Drei Eichen 134 kcal pro 100 g. Lachsschinken liefert dafür mit 27,9 g deutlich mehr Protein (Putenbrust-Aufschnitt 14,8 g) und das kräftigere Raucharoma."
     },
     {
       "question": "Dürfen Schwangere Lachsschinken essen?",

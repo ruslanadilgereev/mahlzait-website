@@ -3,9 +3,17 @@
   "name": "Raclette",
   "emoji": "🧀",
   "category": "gericht",
+  "source": "Herstellerangabe ALDI SÜD, Roi de Trèfle Raclette Käse (https://www.aldi-sued.de/produkt/roi-de-trefle-raclette-kaese-400-g-000000000000205853, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel ALDI SÜD Roi de Trèfle Raclette Käse",
+  "hersteller": {
+    "name": "ALDI SÜD",
+    "produkt": "Roi de Trèfle Raclette Käse",
+    "url": "https://www.aldi-sued.de/produkt/roi-de-trefle-raclette-kaese-400-g-000000000000205853",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Raclette Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Raclette? Raclette-Käse hat ca. 357 kcal pro 100g. Nährwerte pro Pfännchen, Tipps zum Genießen & gesunde Beilagen.",
+    "description": "Wie viele Kalorien hat Raclette? Raclette-Käse hat am Beispiel ALDI SÜD Roi de Trèfle 360 kcal pro 100 g. Nährwerte pro Pfännchen, Tipps zum Genießen & gesunde Beilagen.",
     "keywords": [
       "raclette kalorien",
       "raclette kcal",
@@ -17,109 +25,163 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 357,
-    "protein_per_100g": 22.7,
-    "carbs_per_100g": 0.5,
+    "calories_per_100g": 360,
+    "protein_per_100g": 26,
+    "carbs_per_100g": 1,
     "fat_per_100g": 28,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 50,
     "typical_portion_name": "1 Pfännchen Käse (50g)"
   },
   "variants": [
     {
-      "name": "1 Scheibe Raclette-Käse (30g)",
+      "name": "1 Scheibe Raclette-Käse (ca. 30g)",
       "portion_g": 30,
-      "calories": 107,
-      "protein": 6.8,
-      "carbs": 0.2,
+      "calories": 108,
+      "protein": 7.8,
+      "carbs": 0.3,
       "fat": 8.4
     },
     {
       "name": "1 Pfännchen Käse (50g)",
       "portion_g": 50,
-      "calories": 179,
-      "protein": 11.4,
-      "carbs": 0.3,
+      "calories": 180,
+      "protein": 13,
+      "carbs": 0.5,
       "fat": 14,
       "tip": "Typische Pfännchen-Füllung pro Person"
     },
     {
       "name": "Raclette-Käse pro Person, ganzer Abend (200g)",
       "portion_g": 200,
-      "calories": 714,
-      "protein": 45.4,
-      "carbs": 1,
+      "calories": 720,
+      "protein": 52,
+      "carbs": 2,
       "fat": 56,
       "tip": "Realistischer Käse-Verbrauch über einen Raclette-Abend"
     },
     {
-      "name": "Gekochte Kartoffeln als Beilage (200g)",
+      "name": "Pellkartoffeln als Beilage (200g)",
       "portion_g": 200,
-      "calories": 172,
-      "protein": 4,
-      "carbs": 40,
+      "calories": 174,
+      "protein": 3.7,
+      "carbs": 40.3,
       "fat": 0.2,
-      "tip": "Sättigende, fettarme Grundlage"
+      "tip": "Sättigende, fettarme Grundlage",
+      "basis": [
+        {
+          "fdcId": 170438,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Komplette Raclette-Portion (150g Käse + 200g Kartoffeln)",
       "portion_g": 350,
-      "calories": 707,
-      "protein": 38,
-      "carbs": 41,
+      "calories": 714,
+      "protein": 42.7,
+      "carbs": 41.8,
       "fat": 42.2,
-      "tip": "Typischer Teller mit Käse und Kartoffeln"
+      "tip": "Typischer Teller mit Käse und Kartoffeln",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 170438,
+          "g": 200
+        }
+      ]
     },
     {
       "name": "Cornichons als Beilage (50g)",
       "portion_g": 50,
-      "calories": 12,
-      "protein": 0.4,
-      "carbs": 1.5,
-      "fat": 0.1,
-      "tip": "Kalorienarmer, saurer Frischekick"
+      "calories": 6,
+      "protein": 0.3,
+      "carbs": 1,
+      "fat": 0.2,
+      "tip": "Kalorienarmer, saurer Frischekick",
+      "basis": [
+        {
+          "slug": "gewuerzgurken",
+          "g": 50
+        }
+      ]
     },
     {
-      "name": "Raclette-Pfännchen mit Käse & Schinken (80g)",
+      "name": "Raclette-Pfännchen mit Käse & Schinken (50g + 30g)",
       "portion_g": 80,
-      "calories": 250,
-      "protein": 19,
-      "carbs": 0.5,
-      "fat": 19,
-      "tip": "Käse plus eine Scheibe Schinken"
+      "calories": 212,
+      "protein": 18.1,
+      "carbs": 0.7,
+      "fat": 15.2,
+      "tip": "Käse plus zwei Scheiben gekochter Schinken",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "slug": "schinken",
+          "g": 30
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Gouda",
+      "name": "Gouda (100g)",
       "calories": 356,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaese-gouda",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Camembert",
+      "name": "Camembert (100g)",
       "calories": 300,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "camembert",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Mozzarella",
-      "calories": 254,
-      "emoji": "🧀"
+      "name": "Mozzarella (100g)",
+      "calories": 299,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Feta",
-      "calories": 264,
-      "emoji": "🧀"
+      "name": "Feta (100g)",
+      "calories": 265,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "feta",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Käsemenge im Blick behalten",
-      "text": "Schon 50g Raclette-Käse pro Pfännchen liefern rund 179 kcal. Über einen geselligen Abend kommen schnell mehrere Pfännchen zusammen, sodass allein der Käse leicht über 700 kcal beitragen kann.",
+      "text": "Schon 50g Raclette-Käse pro Pfännchen liefern rund 180 kcal. Über einen geselligen Abend kommen schnell mehrere Pfännchen zusammen, sodass allein der Käse leicht über 700 kcal beitragen kann.",
       "icon": "🧀"
     },
     {
       "title": "Auf Kartoffeln statt Brot setzen",
-      "text": "Gekochte Kartoffeln haben nur etwa 86 kcal pro 100g und sättigen gut. Als Grundlage sind sie deutlich kalorienärmer als Baguette oder Brot.",
+      "text": "Pellkartoffeln haben nur etwa 87 kcal pro 100 g und sättigen gut. Als Grundlage sind sie deutlich kalorienärmer als Baguette oder Brot.",
       "icon": "🥔"
     },
     {
@@ -129,35 +191,35 @@
     },
     {
       "title": "Eiweißreich, aber fettreich",
-      "text": "Raclette-Käse liefert mit knapp 23g Protein pro 100g viel Eiweiß, enthält aber auch rund 28g Fett. Wer abnehmen möchte, genießt ihn bewusst in kleineren Portionen.",
+      "text": "Raclette-Käse liefert am Beispiel ALDI SÜD Roi de Trèfle 26 g Protein pro 100 g, enthält aber auch 28 g Fett. Wer abnehmen möchte, genießt ihn bewusst in kleineren Portionen.",
       "icon": "💪"
     },
     {
       "title": "Praktisch kohlenhydratfrei",
-      "text": "Mit nur etwa 0,5g Kohlenhydraten pro 100g passt der reine Raclette-Käse gut in eine kohlenhydratarme Ernährung. Die Kohlenhydrate kommen vor allem aus den Beilagen.",
+      "text": "Mit nur 1 g Kohlenhydraten pro 100 g passt der reine Raclette-Käse gut in eine kohlenhydratarme Ernährung. Die Kohlenhydrate kommen vor allem aus den Beilagen.",
       "icon": "🥖"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Raclette-Käse?",
-      "answer": "Raclette-Käse hat etwa 357 kcal pro 100g. Ein typisches Pfännchen mit 50g Käse liefert rund 179 kcal."
+      "answer": "Raclette-Käse hat am Beispiel ALDI SÜD Roi de Trèfle Raclette Käse 360 kcal pro 100 g (Herstellerangabe). Ein typisches Pfännchen mit 50 g Käse liefert rund 180 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Raclette-Abend?",
-      "answer": "Pro Person werden über einen Raclette-Abend oft etwa 200g Käse verzehrt, das sind rund 714 kcal allein für den Käse. Mit Kartoffeln und Beilagen kommt eine komplette Portion schnell auf 700 bis 1000 kcal oder mehr."
+      "answer": "Pro Person werden über einen Raclette-Abend oft etwa 200g Käse verzehrt, das sind rund 720 kcal allein für den Käse. Mit Kartoffeln und Beilagen kommt eine komplette Portion schnell auf 700 bis 1000 kcal oder mehr."
     },
     {
       "question": "Wie viel Eiweiß hat Raclette-Käse?",
-      "answer": "Raclette-Käse enthält rund 22,7g Protein pro 100g und ist damit eine gute Eiweißquelle. Ein Pfännchen mit 50g liefert etwa 11g Protein."
+      "answer": "Raclette-Käse enthält am Beispiel Roi de Trèfle 26 g Protein pro 100 g und ist damit eine gute Eiweißquelle. Ein Pfännchen mit 50 g liefert 13 g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Raclette?",
-      "answer": "Der reine Raclette-Käse ist mit etwa 0,5g Kohlenhydraten pro 100g nahezu kohlenhydratfrei. Die Kohlenhydrate beim Raclette stammen vor allem aus Beilagen wie Kartoffeln und Brot."
+      "answer": "Der reine Raclette-Käse ist mit 1 g Kohlenhydraten pro 100 g nahezu kohlenhydratfrei. Die Kohlenhydrate beim Raclette stammen vor allem aus Beilagen wie Kartoffeln und Brot."
     },
     {
       "question": "Ist Raclette zum Abnehmen geeignet?",
-      "answer": "Raclette-Käse ist mit 357 kcal und 28g Fett pro 100g recht kalorienreich. In kleinen Portionen und mit viel Gemüse statt Brot lässt er sich aber gut in eine bewusste Ernährung einbauen."
+      "answer": "Raclette-Käse ist mit 360 kcal und 28 g Fett pro 100 g recht kalorienreich. In kleinen Portionen und mit viel Gemüse statt Brot lässt er sich aber gut in eine bewusste Ernährung einbauen."
     },
     {
       "question": "Ist Raclette gesund?",

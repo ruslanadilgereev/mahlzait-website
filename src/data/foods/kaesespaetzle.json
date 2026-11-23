@@ -3,50 +3,219 @@
   "name": "Käsespätzle",
   "emoji": "🧀",
   "category": "gericht",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten (für 4 Teller à 350 g, 1.400 g): 900 g Spätzle, gekocht (FDC-ID 169732, Noodles, egg, enriched, cooked: 138 kcal), 250 g Emmentaler, gerieben (FDC-ID 171251, Cheese, swiss: 393 kcal), 300 g Zwiebeln, in Butter gebräunt (FDC-ID 170000, Onions, raw: 40 kcal), 40 g Butter (FDC-ID 173430, Butter, without salt: 717 kcal); 1490 g Zutaten ergeben 1400 g (Röst- und Backverlust rund 6 %, vor allem Wasser aus den Zwiebeln (Annahme)); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Spätzle, gekocht",
+        "g": 900,
+        "fdcId": 169732
+      },
+      {
+        "name": "Emmentaler, gerieben",
+        "g": 250,
+        "fdcId": 171251
+      },
+      {
+        "name": "Zwiebeln, in Butter gebräunt",
+        "g": 300,
+        "fdcId": 170000
+      },
+      {
+        "name": "Butter",
+        "g": 40,
+        "fdcId": 173430
+      }
+    ],
+    "gewicht_g": 1400
+  },
   "seo": {
     "title": "Käsespätzle Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Käsespätzle? Nährwerte pro Portion & 100g. Mit Röstzwiebeln, Light & vegan im Vergleich + Tipps.",
-    "keywords": ["käsespätzle kalorien", "kalorien käsespätzle", "käsespätzle nährwerte", "kässpätzle kalorien", "käsespätzle kalorien pro portion", "allgäuer käsespätzle kalorien", "käsespätzle fett", "spätzle mit käse kalorien"]
+    "description": "Wie viele Kalorien haben Käsespätzle? Ein Teller (350 g) hat rund 658 kcal. Nährwerte pro Portion & 100 g, mit Röstzwiebeln und extra Käse im Vergleich + Tipps.",
+    "keywords": [
+      "käsespätzle kalorien",
+      "kalorien käsespätzle",
+      "käsespätzle nährwerte",
+      "kässpätzle kalorien",
+      "käsespätzle kalorien pro portion",
+      "allgäuer käsespätzle kalorien",
+      "käsespätzle fett",
+      "spätzle mit käse kalorien"
+    ]
   },
   "overview": {
-    "calories_per_100g": 195,
-    "protein_per_100g": 9,
-    "carbs_per_100g": 20,
-    "fat_per_100g": 9,
-    "fiber_per_100g": 1,
+    "calories_per_100g": 188,
+    "protein_per_100g": 8,
+    "carbs_per_100g": 18.4,
+    "fat_per_100g": 9.2,
+    "fiber_per_100g": 1.1,
     "typical_portion_g": 350,
     "typical_portion_name": "1 Teller"
   },
   "variants": [
-    { "name": "Käsespätzle klassisch", "portion_g": 350, "calories": 680, "protein": 32, "carbs": 70, "fat": 32 },
-    { "name": "Käsespätzle mit Röstzwiebeln", "portion_g": 380, "calories": 750, "protein": 32, "carbs": 72, "fat": 38 },
-    { "name": "Allgäuer Käsespätzle (viel Käse)", "portion_g": 380, "calories": 820, "protein": 36, "carbs": 68, "fat": 42 },
-    { "name": "Käsespätzle Light (weniger Käse)", "portion_g": 350, "calories": 540, "protein": 24, "carbs": 70, "fat": 18, "tip": "Kalorienärmste" },
-    { "name": "TK-Käsespätzle", "portion_g": 400, "calories": 620, "protein": 22, "carbs": 68, "fat": 28 },
-    { "name": "Käsespätzle mit Salat", "portion_g": 450, "calories": 720, "protein": 32, "carbs": 72, "fat": 34 },
-    { "name": "Käsenudeln (einfach)", "portion_g": 350, "calories": 580, "protein": 24, "carbs": 68, "fat": 22 },
-    { "name": "Vegane Käsespätzle", "portion_g": 350, "calories": 490, "protein": 16, "carbs": 72, "fat": 14, "tip": "Pflanzlich" }
+    {
+      "name": "Käsespätzle klassisch",
+      "portion_g": 350,
+      "calories": 658,
+      "protein": 28,
+      "carbs": 64,
+      "fat": 32
+    },
+    {
+      "name": "Käsespätzle mit Röstzwiebeln (350g + 30g)",
+      "portion_g": 380,
+      "calories": 840,
+      "protein": 30,
+      "carbs": 76,
+      "fat": 46,
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "slug": "roestzwiebeln",
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Allgäuer Käsespätzle (350g + 30g Emmentaler extra)",
+      "portion_g": 380,
+      "calories": 776,
+      "protein": 36,
+      "carbs": 65,
+      "fat": 41,
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 171251,
+          "g": 30
+        }
+      ]
+    },
+    {
+      "name": "Käsespätzle mit grünem Salat (350g + 100g)",
+      "portion_g": 450,
+      "calories": 673,
+      "protein": 29,
+      "carbs": 67,
+      "fat": 32,
+      "tip": "Salat ohne Dressing gerechnet",
+      "basis": [
+        {
+          "g": 350
+        },
+        {
+          "fdcId": 169249,
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    { "name": "Schnitzel mit Pommes", "calories": 850, "emoji": "🥩" },
-    { "name": "Lasagne", "calories": 580, "emoji": "🧀" },
-    { "name": "Mac and Cheese", "calories": 620, "emoji": "🧀" },
-    { "name": "Spaghetti Carbonara", "calories": 620, "emoji": "🍝" }
+    {
+      "name": "Schnitzel mit Pommes (250g + 150g)",
+      "calories": 1063,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "schnitzel"
+        },
+        {
+          "slug": "pommes-frites"
+        }
+      ]
+    },
+    {
+      "name": "Lasagne (1 Stück, 400g)",
+      "calories": 556,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "lasagne"
+        }
+      ]
+    },
+    {
+      "name": "Mac and Cheese (250g)",
+      "calories": 558,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mac-and-cheese"
+        }
+      ]
+    },
+    {
+      "name": "Spaghetti Carbonara (1 Teller, 380g)",
+      "calories": 623,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti-carbonara"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Weniger Käse, mehr Geschmack", "text": "Würziger Bergkäse oder Emmentaler statt mildem Gouda, du brauchst weniger für intensiven Geschmack und sparst Kalorien.", "icon": "🧀" },
-    { "title": "Röstzwiebeln selbst machen", "text": "Fertige Röstzwiebeln haben 580 kcal/100g (frittiert). Selbst in wenig Öl geröstete Zwiebeln: nur 80 kcal.", "icon": "🧅" },
-    { "title": "Salat als Beilage", "text": "Ein grüner Salat als Beilage füllt den Magen und liefert Vitamine, ohne nennenswerte Extra-Kalorien.", "icon": "🥗" },
-    { "title": "Portionsgröße kontrollieren", "text": "Restaurant-Portionen sind oft 400-500g. Zuhause mit 300-350g starten, man ist trotzdem satt.", "icon": "📏" },
-    { "title": "Spätzle selber schaben", "text": "Selbstgemachte Spätzle mit weniger Ei und etwas Mineralwasser haben weniger Kalorien als Fertigspätzle.", "icon": "👨‍🍳" }
+    {
+      "title": "Weniger Käse, mehr Geschmack",
+      "text": "Würziger Bergkäse oder Emmentaler statt mildem Gouda, du brauchst weniger für intensiven Geschmack und sparst Kalorien.",
+      "icon": "🧀"
+    },
+    {
+      "title": "Röstzwiebeln selbst machen",
+      "text": "Fertige Röstzwiebeln haben am Beispiel Kühne 606 kcal pro 100 g (frittiert). 100 g Zwiebeln mit 1 TL Öl (5 g) selbst geröstet: rund 84 kcal.",
+      "icon": "🧅"
+    },
+    {
+      "title": "Salat als Beilage",
+      "text": "Ein grüner Salat als Beilage füllt den Magen und liefert Vitamine, ohne nennenswerte Extra-Kalorien.",
+      "icon": "🥗"
+    },
+    {
+      "title": "Portionsgröße kontrollieren",
+      "text": "Restaurant-Portionen sind oft 400-500g. Zuhause mit 300-350g starten, man ist trotzdem satt.",
+      "icon": "📏"
+    },
+    {
+      "title": "Spätzle selber schaben",
+      "text": "Selbstgemachte Spätzle mit weniger Ei und etwas Mineralwasser haben weniger Kalorien als Fertigspätzle.",
+      "icon": "👨‍🍳"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien haben Käsespätzle?", "answer": "Ein Teller Käsespätzle (350g) hat ca. 680 kcal. Mit Röstzwiebeln sind es ca. 750 kcal. Die Allgäuer Variante mit viel Käse erreicht 820 kcal." },
-    { "question": "Wie viele Kalorien haben Käsespätzle pro 100g?", "answer": "Käsespätzle haben ca. 195 kcal pro 100g. Das liegt hauptsächlich am Käse (356 kcal/100g) und den Eiern in den Spätzle." },
-    { "question": "Sind Käsespätzle gut zum Abnehmen?", "answer": "Eher nicht, mit 680+ kcal pro Portion sind sie sehr gehaltvoll. Tipp: Light-Version mit weniger Käse (540 kcal) oder als bewusste Genussmahlzeit einmal pro Woche." },
-    { "question": "Wie viel Fett haben Käsespätzle?", "answer": "Eine Portion klassische Käsespätzle hat ca. 32g Fett. Der Großteil kommt vom Käse. Mit weniger oder fettärmerem Käse lässt sich das deutlich reduzieren." },
-    { "question": "Was hat weniger Kalorien: Käsespätzle oder Schnitzel?", "answer": "Käsespätzle (680 kcal) haben weniger als Schnitzel mit Pommes (850 kcal). Allerdings haben Käsespätzle weniger Protein." },
-    { "question": "Wie viel Protein haben Käsespätzle?", "answer": "Eine Portion (350g) hat ca. 32g Protein, hauptsächlich aus Käse und Eiern. Für mehr Protein: extra Ei im Teig und proteinreichen Käse wie Emmentaler verwenden." }
+    {
+      "question": "Wie viele Kalorien haben Käsespätzle?",
+      "answer": "Ein Teller Käsespätzle (350 g) hat ca. 658 kcal. Mit 30 g Röstzwiebeln sind es ca. 840 kcal, mit 30 g extra Emmentaler ca. 776 kcal. Gerechnet aus USDA-Werten für 900 g gekochte Spätzle, 250 g Emmentaler, 300 g Zwiebeln und 40 g Butter (4 Teller)."
+    },
+    {
+      "question": "Wie viele Kalorien haben Käsespätzle pro 100g?",
+      "answer": "Käsespätzle haben ca. 188 kcal pro 100 g. Das liegt hauptsächlich am Käse (Emmentaler 393 kcal/100 g) und an der Butter."
+    },
+    {
+      "question": "Sind Käsespätzle gut zum Abnehmen?",
+      "answer": "Eher nicht, mit rund 658 kcal pro Portion sind sie sehr gehaltvoll. Tipp: kleinere Portion mit grünem Salat oder als bewusste Genussmahlzeit einmal pro Woche."
+    },
+    {
+      "question": "Wie viel Fett haben Käsespätzle?",
+      "answer": "Eine Portion klassische Käsespätzle hat ca. 32g Fett. Der Großteil kommt vom Käse. Mit weniger oder fettärmerem Käse lässt sich das deutlich reduzieren."
+    },
+    {
+      "question": "Was hat weniger Kalorien: Käsespätzle oder Schnitzel?",
+      "answer": "Käsespätzle (rund 658 kcal pro Teller) haben weniger als Schnitzel mit Pommes (rund 1063 kcal). Allerdings haben Käsespätzle weniger Protein."
+    },
+    {
+      "question": "Wie viel Protein haben Käsespätzle?",
+      "answer": "Eine Portion (350 g) hat ca. 28 g Protein, hauptsächlich aus Käse und Eiern. Für mehr Protein: extra Ei im Teig und proteinreichen Käse wie Emmentaler verwenden."
+    }
   ],
-  "related_foods": ["spaetzle", "schnitzel", "lasagne", "nudeln"]
+  "related_foods": [
+    "spaetzle",
+    "schnitzel",
+    "lasagne",
+    "nudeln"
+  ]
 }

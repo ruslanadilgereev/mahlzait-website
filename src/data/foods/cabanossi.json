@@ -3,9 +3,17 @@
   "name": "Cabanossi",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "Herstellerangabe Wiltmann, Salamissimo to go Mini-Cabanossi heißgeräuchert (https://www.wiltmann.de/produkte/snacks/salamissimo-to-go-mini-cabanossi-heissgeraeuchert-5-x-25-g.html, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel Wiltmann Salamissimo to go Mini-Cabanossi heißgeräuchert",
+  "hersteller": {
+    "name": "Wiltmann",
+    "produkt": "Salamissimo to go Mini-Cabanossi heißgeräuchert",
+    "url": "https://www.wiltmann.de/produkte/snacks/salamissimo-to-go-mini-cabanossi-heissgeraeuchert-5-x-25-g.html",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Cabanossi Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Cabanossi? Eine Cabanossi (25g) hat ca. 117 kcal, 100g rund 466 kcal. Nährwerte, Eiweiß & Tipps zum Abnehmen im Überblick.",
+    "description": "Wie viele Kalorien hat Cabanossi? Eine Mini-Cabanossi (25 g) hat rund 120 kcal, 100 g am Beispiel Wiltmann 481 kcal. Nährwerte, Eiweiß & Tipps zum Abnehmen im Überblick.",
     "keywords": [
       "cabanossi kalorien",
       "cabanossi kcal",
@@ -16,19 +24,19 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 466,
+    "calories_per_100g": 481,
     "protein_per_100g": 22,
-    "carbs_per_100g": 1.5,
-    "fat_per_100g": 41,
-    "fiber_per_100g": 0,
+    "carbs_per_100g": 1,
+    "fat_per_100g": 43,
+    "fiber_per_100g": null,
     "typical_portion_g": 25,
-    "typical_portion_name": "1 Cabanossi (ca. 25g)"
+    "typical_portion_name": "1 Cabanossi (25 g)"
   },
   "variants": [
     {
       "name": "1 Stick mini (12g)",
       "portion_g": 12,
-      "calories": 56,
+      "calories": 58,
       "protein": 3,
       "carbs": 0,
       "fat": 5
@@ -36,82 +44,97 @@
     {
       "name": "1 Cabanossi (25g)",
       "portion_g": 25,
-      "calories": 117,
+      "calories": 120,
       "protein": 6,
       "carbs": 0,
-      "fat": 10,
+      "fat": 11,
       "tip": "Standard"
     },
     {
-      "name": "Snack-Pack (50g)",
+      "name": "2 Mini-Cabanossi (50g)",
       "portion_g": 50,
-      "calories": 233,
+      "calories": 241,
       "protein": 11,
       "carbs": 1,
-      "fat": 21
+      "fat": 22
     },
     {
       "name": "Große Portion (75g)",
       "portion_g": 75,
-      "calories": 350,
+      "calories": 361,
       "protein": 17,
       "carbs": 1,
-      "fat": 31
+      "fat": 32
     },
     {
-      "name": "Packung (100g)",
-      "portion_g": 100,
-      "calories": 466,
-      "protein": 22,
-      "carbs": 2,
-      "fat": 41
-    },
-    {
-      "name": "Geflügel-Cabanossi (25g)",
-      "portion_g": 25,
-      "calories": 75,
-      "protein": 5,
-      "carbs": 0,
-      "fat": 6,
-      "tip": "Fettärmere Variante aus Putenfleisch"
+      "name": "Packung (125g, 5 Stück)",
+      "portion_g": 125,
+      "calories": 601,
+      "protein": 28,
+      "carbs": 1,
+      "fat": 54
     }
   ],
   "comparison": [
     {
-      "name": "Bifi",
-      "calories": 530,
-      "emoji": "🌭"
+      "name": "Bifi (100g)",
+      "calories": 514,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bifi",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Salami",
+      "name": "Salami (100g)",
       "calories": 378,
-      "emoji": "🍕"
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "salami",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Bockwurst",
-      "calories": 250,
-      "emoji": "🌭"
+      "name": "Bockwurst (100g)",
+      "calories": 269,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bockwurst",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Beef Jerky",
-      "calories": 410,
-      "emoji": "🥩"
+      "name": "Beef Jerky (100g)",
+      "calories": 278,
+      "emoji": "🥩",
+      "basis": [
+        {
+          "slug": "beef-jerky",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein, aber kalorienreich",
-      "text": "Cabanossi ist eine luftgetrocknete Dauerwurst und dadurch sehr kompakt: Schon 100g liefern rund 466 kcal. Der hohe Fettanteil von über 40g macht den Großteil der Energie aus.",
+      "text": "Cabanossi ist eine heißgeräucherte Dauerwurst und dadurch sehr kompakt: 100 g liefern am Beispiel Wiltmann Mini-Cabanossi 481 kcal. Der hohe Fettanteil von 43 g macht den Großteil der Energie aus.",
       "icon": "🌭"
     },
     {
       "title": "Eiweißlieferant für zwischendurch",
-      "text": "Mit etwa 22g Eiweiß pro 100g sättigt Cabanossi gut. Für einen proteinbetonten Snack reicht oft schon ein einzelner Stick mit rund 6g Eiweiß bei nur 117 kcal.",
+      "text": "Mit 22 g Eiweiß pro 100 g sättigt Cabanossi gut. Für einen proteinbetonten Snack reicht oft schon ein einzelner Stick (25 g) mit 5,5 g Eiweiß bei rund 120 kcal.",
       "icon": "💪"
     },
     {
       "title": "Fast keine Kohlenhydrate",
-      "text": "Mit nur etwa 1,5g Kohlenhydraten pro 100g passt Cabanossi gut in eine kohlenhydratarme oder ketogene Ernährung. Beim Abnehmen ist vor allem das Fett zu beachten.",
+      "text": "Mit nur 1 g Kohlenhydraten pro 100 g passt Cabanossi gut in eine kohlenhydratarme oder ketogene Ernährung. Beim Abnehmen ist vor allem das Fett zu beachten.",
       "icon": "🥩"
     },
     {
@@ -121,30 +144,30 @@
     },
     {
       "title": "Fettärmere Geflügel-Variante",
-      "text": "Cabanossi aus Putenfleisch hat oft nur rund 300 kcal pro 100g und deutlich weniger Fett. Ein Blick auf die Verpackung lohnt sich, da die Werte je Hersteller stark schwanken.",
+      "text": "Cabanossi aus Geflügel gibt es mit deutlich weniger Fett. Ein Blick auf die Verpackung lohnt sich, da die Werte je Hersteller stark schwanken.",
       "icon": "🦃"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Cabanossi?",
-      "answer": "Eine einzelne Cabanossi mit etwa 25g hat rund 117 kcal. 100g kommen auf circa 466 kcal."
+      "answer": "Cabanossi hat am Beispiel Wiltmann Salamissimo to go Mini-Cabanossi 481 kcal pro 100 g (Herstellerangabe). Eine einzelne Mini-Cabanossi mit 25 g hat rund 120 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Cabanossi pro 100g?",
-      "answer": "Klassische Cabanossi aus Schweinefleisch hat etwa 466 kcal pro 100g, da sie als Dauerwurst sehr fettreich ist."
+      "answer": "Cabanossi aus Schweinefleisch hat am Beispiel Wiltmann 481 kcal pro 100 g, da sie als Dauerwurst sehr fettreich ist (43 g Fett)."
     },
     {
       "question": "Wie viel Eiweiß steckt in Cabanossi?",
-      "answer": "Cabanossi liefert rund 22g Eiweiß pro 100g. Ein einzelner Stick (25g) enthält etwa 6g Protein."
+      "answer": "Cabanossi liefert am Beispiel Wiltmann 22 g Eiweiß pro 100 g. Ein einzelner Stick (25 g) enthält 5,5 g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Cabanossi?",
-      "answer": "Cabanossi ist sehr kohlenhydratarm: Pro 100g sind es nur etwa 1,5g. Sie eignet sich daher gut für eine Low-Carb-Ernährung."
+      "answer": "Cabanossi ist sehr kohlenhydratarm: Pro 100 g sind es am Beispiel Wiltmann nur 1 g. Sie eignet sich daher gut für eine Low-Carb-Ernährung."
     },
     {
       "question": "Ist Cabanossi zum Abnehmen geeignet?",
-      "answer": "In Maßen ja: Sie ist eiweißreich und kohlenhydratarm, aber durch über 40g Fett pro 100g sehr kalorienreich. Achte auf kleine Portionen."
+      "answer": "In Maßen ja: Sie ist eiweißreich und kohlenhydratarm, aber durch 43 g Fett pro 100 g sehr kalorienreich. Achte auf kleine Portionen."
     },
     {
       "question": "Ist Cabanossi gesund?",

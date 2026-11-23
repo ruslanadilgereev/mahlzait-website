@@ -34,9 +34,10 @@ export const DATENSAETZE = {
   foundation: "FoodData_Central_foundation_food_json_2026-10-29.json",
 };
 
-/** FDC-IDs in einem source-Feld: sechs- oder siebenstellige Zahlen. */
+/** FDC-IDs in einem source-Feld: sechs- oder siebenstellige Zahlen außerhalb von
+ * Adressen (Herstellerseiten haben oft Artikelnummern in der URL). */
 export function fdcIds(source) {
-  return [...source.matchAll(/\b\d{6,7}\b/g)].map((m) => Number(m[0]));
+  return [...source.replace(/https?:\/\/[^\s,;)]+/g, " ").matchAll(/\b\d{6,7}\b/g)].map((m) => Number(m[0]));
 }
 
 /** Alle Lebensmittel: [{ slug, food }] */
@@ -63,7 +64,7 @@ export function bestandteile(food) {
 export function fdcIdsDerSeite(food) {
   return [
     ...fdcIds(food.source ?? ""),
-    ...(food.rezept?.zutaten ?? []).map((z) => z.fdcId),
+    ...(food.rezept?.zutaten ?? []).filter((z) => z.fdcId != null).map((z) => z.fdcId),
     ...bestandteile(food).filter((b) => b.fdcId != null).map((b) => b.fdcId),
   ];
 }

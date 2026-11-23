@@ -12,7 +12,9 @@
 //   gelten als Rundung);
 // - eine Rezeptrechnung: das Feld rezept nennt jede Zutat mit Gramm und FDC-ID,
 //   die Werte je 100 g sind daraus gerechnet (die älteren Rezeptseiten ohne
-//   dieses Feld prüfen eigene Tests, siehe EIGENE_TESTS);
+//   dieses Feld prüfen eigene Tests, siehe EIGENE_TESTS); Zutaten ohne
+//   FDC-Eintrag (Quark, Matjes, Leberkäse) rechnen mit den Werten einer Seite
+//   mit Herstellerangabe (slug statt FDC-ID, Entscheidung vom 23.11.2026);
 // - eine Herstellerangabe: das Feld hersteller nennt Hersteller, Produkt, die
 //   https-Adresse der Herstellerseite und das Abrufdatum.
 // Portionswerte folgen aus den Werten je 100 g: Eine Variante, die nur eine
@@ -52,28 +54,22 @@ const DRITTE = ["fddb.info", "yazio.com", "openfoodfacts.org", "openfoodfacts.ne
 
 // <OFFEN>
 const OFFEN = new Set([
-   "acai", "acai-bowl", "amicelli", "aperol-spritz", "aquafaba", "balisto", "balisto-lila",
-   "balisto-orange", "ben-and-jerry-s", "bistro-baguette", "bounty", "bounty-mini", "bowl",
-   "cabanossi", "campari", "captain-morgan", "caro-kaffee", "celebrations", "daim-mini",
-   "dinkelnudeln", "dr-pepper", "ebly", "ferrero-kuesschen", "feta-light", "five-guys-burger",
-   "fleisch", "flips", "fritt", "fruehstueck", "gemuese", "ginger-beer", "giotto", "glucose",
-   "grillkaese", "guinness", "gustavo-gusto-margherita", "gustavo-gusto-pizza",
-   "hans-im-glueck-burger", "heisse-tasse", "iglo-backfisch", "kaese", "kaesekuchen",
-   "kaesespaetzle", "kartoffeln-mit-quark", "katjes", "kfc-hot-wings", "kfc-twister", "kiri",
-   "klopfer", "l-osteria-pizza", "labskaus", "lachsschinken", "leberkaese", "leberkassemmel",
-   "leibniz-butterkeks", "lidl-ciabatta", "lidl-croissant", "lidl-donut", "lillet", "lion",
-   "lion-mini", "magerquark", "maggi", "magnum-double-caramel", "maltesers", "maltodextrin",
-   "maoam", "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mars", "mars-eis", "mars-mini",
-   "mars-riegel", "matcha", "mate-tee", "matjes", "matjes-broetchen", "mc-frappe", "mc-toast",
-   "mentos", "mikado", "milka-noisette", "milka-schokolade", "milky-way", "mini-milky-way",
-   "mon-cheri", "muellermilch", "nesquik", "neuburger", "nordsee-backfisch-baguette",
-   "nougat-bits", "nuts", "oreo-donut", "pepsi-max", "philadelphia-light", "piccolinis",
-   "pop-tarts", "praline", "proteinriegel", "quark", "quarktasche", "raclette", "raclette-kaese",
-   "raeuchertofu", "ritter-sport", "ritter-sport-mini", "roestzwiebeln", "schogetten",
-   "schokoriegel", "skyr", "smarties", "smirnoff-ice", "snickers-crisp", "stella-artois", "sucuk",
-   "tassimo-milka", "topfen", "traubenzucker", "tuc", "tuc-cracker", "tuc-kekse", "twister-eis",
-   "udon", "vapiano", "waterdrop", "weingummi", "weisswurst", "wonderwaffel", "wurst", "yfood",
-   "yum-yum",
+   "amicelli", "aperol-spritz", "aquafaba", "balisto", "balisto-lila", "balisto-orange",
+   "ben-and-jerry-s", "bounty", "bounty-mini", "bowl", "campari", "captain-morgan", "caro-kaffee",
+   "celebrations", "daim-mini", "dr-pepper", "ebly", "ferrero-kuesschen", "feta-light",
+   "five-guys-burger", "fleisch", "fritt", "fruehstueck", "gemuese", "giotto", "guinness",
+   "gustavo-gusto-margherita", "gustavo-gusto-pizza", "hans-im-glueck-burger", "heisse-tasse",
+   "iglo-backfisch", "kaese", "katjes", "kfc-hot-wings", "kfc-twister", "kiri", "klopfer",
+   "l-osteria-pizza", "leibniz-butterkeks", "lidl-ciabatta", "lidl-croissant", "lidl-donut",
+   "lillet", "lion", "lion-mini", "maggi", "magnum-double-caramel", "maltesers", "maoam",
+   "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mars", "mars-eis", "mars-mini",
+   "mars-riegel", "mate-tee", "mc-frappe", "mc-toast", "mentos", "mikado", "milka-noisette",
+   "milka-schokolade", "milky-way", "mini-milky-way", "mon-cheri", "muellermilch", "nesquik",
+   "neuburger", "nordsee-backfisch-baguette", "nuts", "oreo-donut", "pepsi-max",
+   "philadelphia-light", "piccolinis", "pop-tarts", "praline", "proteinriegel", "ritter-sport",
+   "ritter-sport-mini", "schogetten", "schokoriegel", "smarties", "smirnoff-ice",
+   "snickers-crisp", "stella-artois", "tassimo-milka", "tuc", "tuc-cracker", "tuc-kekse",
+   "twister-eis", "vapiano", "waterdrop", "wonderwaffel", "wurst", "yfood", "yum-yum",
 ]);
 // </OFFEN>
 
@@ -99,7 +95,7 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 807, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 842, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
 test("jedes source-Feld nennt FDC oder eine Herstellerangabe", () => {
@@ -151,9 +147,21 @@ test("Rezeptrechnungen: Werte je 100 g folgen aus den Zutaten", () => {
     const summe = { kcal: 0, eiweiss: 0, fett: 0, kohlenhydrate: 0, ballaststoffe: 0 };
     let gramm = 0;
     for (const z of food.rezept.zutaten) {
-      const e = eintraege[String(z.fdcId)];
+      let e;
+      if (z.slug != null) {
+        // Zutat ohne FDC-Eintrag (z. B. Quark, Matjes): Werte einer Seite mit Herstellerangabe
+        const andere = seiten.get(z.slug);
+        assert.ok(andere && !OFFEN.has(z.slug) && istHersteller(andere), slug + ": Zutat " + z.name + " (Seite " + z.slug + ") ohne Herstellerangabe");
+        assert.notEqual(andere.overview.einheit, "ml", slug + ": Zutat " + z.name + " rechnet je 100 ml");
+        assert.ok(food.source.includes("Seite " + z.slug), slug + ": Seite " + z.slug + " fehlt im source-Text");
+        assert.ok(food.source.includes("Herstellerangabe"), slug + ": source nennt die Herstellerangabe nicht");
+        const o = andere.overview;
+        e = { kcal: o.calories_per_100g, eiweiss: o.protein_per_100g, fett: o.fat_per_100g, kohlenhydrate: o.carbs_per_100g, ballaststoffe: o.fiber_per_100g };
+      } else {
+        e = eintraege[String(z.fdcId)];
+        assert.ok(food.source.includes(String(z.fdcId)), slug + ": " + z.fdcId + " fehlt im source-Text");
+      }
       assert.ok(e && z.g > 0, slug + ": Zutat " + z.name);
-      assert.ok(food.source.includes(String(z.fdcId)), slug + ": " + z.fdcId + " fehlt im source-Text");
       gramm += z.g;
       for (const k of Object.keys(summe)) summe[k] += ((e[k] ?? 0) * z.g) / 100;
     }
@@ -280,6 +288,7 @@ test("Bestandteile verweisen nicht auf offene Seiten", () => {
     for (const x of [...food.variants, ...food.comparison]) {
       for (const b of x.basis ?? []) if (b.slug != null && OFFEN.has(b.slug)) verweise.push(slug + " / " + x.name + " -> " + b.slug);
     }
+    for (const z of food.rezept?.zutaten ?? []) if (z.slug != null && OFFEN.has(z.slug)) verweise.push(slug + " / Rezept " + z.name + " -> " + z.slug);
   }
   assert.deepEqual(verweise, []);
 });

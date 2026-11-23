@@ -3,9 +3,17 @@
   "name": "Sucuk",
   "emoji": "🌭",
   "category": "supermarkt",
+  "source": "Herstellerangabe Egetürk, Barış Kangal Sucuk (https://www.egetuerk.de/produkt/baris-kangal-sucuk/, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel Egetürk Barış Kangal Sucuk",
+  "hersteller": {
+    "name": "Egetürk",
+    "produkt": "Barış Kangal Sucuk",
+    "url": "https://www.egetuerk.de/produkt/baris-kangal-sucuk/",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Sucuk Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Sucuk? Die türkische Knoblauchwurst hat ca. 350 kcal pro 100g. Nährwerte pro Scheibe & Portion, Varianten und Diät-Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Sucuk? Die türkische Knoblauchwurst hat am Beispiel Egetürk 399 kcal pro 100 g. Nährwerte pro Scheibe & Portion, Varianten und Diät-Tipps im Überblick.",
     "keywords": [
       "sucuk kcal",
       "sucuk kalorien",
@@ -18,11 +26,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 350,
-    "protein_per_100g": 22,
-    "carbs_per_100g": 1.5,
-    "fat_per_100g": 28,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 399,
+    "protein_per_100g": 18,
+    "carbs_per_100g": 3.8,
+    "fat_per_100g": 34.7,
+    "fiber_per_100g": null,
     "typical_portion_g": 50,
     "typical_portion_name": "ca. 3-4 Scheiben (50g)"
   },
@@ -30,132 +38,156 @@
     {
       "name": "1 Scheibe (15g)",
       "portion_g": 15,
-      "calories": 53,
+      "calories": 60,
       "protein": 3,
-      "carbs": 0,
-      "fat": 4
+      "carbs": 1,
+      "fat": 5
     },
     {
       "name": "Kleine Portion (30g)",
       "portion_g": 30,
-      "calories": 105,
-      "protein": 7,
-      "carbs": 0,
-      "fat": 8
+      "calories": 120,
+      "protein": 5,
+      "carbs": 1,
+      "fat": 10
     },
     {
       "name": "Standard-Portion (50g)",
       "portion_g": 50,
-      "calories": 175,
-      "protein": 11,
-      "carbs": 1,
-      "fat": 14,
+      "calories": 200,
+      "protein": 9,
+      "carbs": 2,
+      "fat": 17,
       "tip": "Typische Menge als Belag oder Beilage"
     },
     {
-      "name": "Sucuk gebraten (100g)",
-      "portion_g": 100,
-      "calories": 370,
-      "protein": 24,
-      "carbs": 1,
-      "fat": 30,
-      "tip": "Beim Braten verliert die Wurst Wasser, der Energiegehalt pro 100g steigt leicht"
-    },
-    {
-      "name": "Sucuk mit Ei (1 Portion, 150g)",
+      "name": "Sucuk mit Ei (50g Sucuk + 2 Eier, 100g)",
       "portion_g": 150,
-      "calories": 480,
-      "protein": 32,
-      "carbs": 1,
-      "fat": 38,
-      "tip": "Mit 2 Eiern als klassisches Frühstück"
+      "calories": 343,
+      "protein": 22,
+      "carbs": 3,
+      "fat": 27,
+      "tip": "Mit 2 Eiern als klassisches Frühstück",
+      "basis": [
+        {
+          "g": 50
+        },
+        {
+          "fdcId": 171287,
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Halbe Packung (125g)",
       "portion_g": 125,
-      "calories": 438,
-      "protein": 28,
-      "carbs": 2,
-      "fat": 35
+      "calories": 499,
+      "protein": 23,
+      "carbs": 5,
+      "fat": 43
     },
     {
       "name": "Ganze Packung (250g)",
       "portion_g": 250,
-      "calories": 875,
-      "protein": 55,
-      "carbs": 4,
-      "fat": 70
+      "calories": 998,
+      "protein": 45,
+      "carbs": 10,
+      "fat": 87
     }
   ],
   "comparison": [
     {
       "name": "Salami (50g)",
-      "calories": 178,
-      "emoji": "🍕"
+      "calories": 189,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "salami",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Cabanossi (50g)",
-      "calories": 165,
-      "emoji": "🌭"
+      "calories": 241,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "cabanossi",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Cevapcici (50g)",
-      "calories": 122,
-      "emoji": "🍢"
+      "calories": 131,
+      "emoji": "🍢",
+      "basis": [
+        {
+          "slug": "cevapcici",
+          "g": 50
+        }
+      ]
     },
     {
       "name": "Putenbrust-Aufschnitt (50g)",
-      "calories": 52,
-      "emoji": "🦃"
+      "calories": 53,
+      "emoji": "🦃",
+      "basis": [
+        {
+          "fdcId": 172941,
+          "g": 50
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreicher Belag",
-      "text": "Sucuk liefert mit rund 22g Protein pro 100g viel Eiweiß. Eine 50g-Portion deckt etwa 11g und sättigt dadurch gut.",
+      "text": "Sucuk liefert am Beispiel Egetürk 18 g Protein pro 100 g. Eine 50-g-Portion deckt 9 g und sättigt dadurch gut.",
       "icon": "💪"
     },
     {
       "title": "Auf die Fettmenge achten",
-      "text": "Mit ca. 28g Fett pro 100g zählt Sucuk zu den fettreichen Wurstsorten. In der Pfanne brauchst du daher kaum zusätzliches Öl.",
+      "text": "Mit 34,7 g Fett pro 100 g zählt Sucuk zu den fettreichen Wurstsorten. In der Pfanne brauchst du daher kaum zusätzliches Öl.",
       "icon": "🔥"
     },
     {
       "title": "Sparsam dosieren beim Abnehmen",
-      "text": "Schon 50g schlagen mit 175 kcal zu Buche. Wer Kalorien sparen will, nutzt Sucuk eher als würzende Zutat statt als Hauptbestandteil.",
+      "text": "Schon 50 g schlagen mit rund 200 kcal zu Buche. Wer Kalorien sparen will, nutzt Sucuk eher als würzende Zutat statt als Hauptbestandteil.",
       "icon": "⚖️"
     },
     {
       "title": "Kaum Kohlenhydrate",
-      "text": "Sucuk enthält fast keine Kohlenhydrate (ca. 1,5g pro 100g) und passt damit gut in eine Low-Carb- oder ketogene Ernährung.",
+      "text": "Sucuk enthält wenig Kohlenhydrate (am Beispiel Egetürk 3,8 g pro 100 g) und passt damit gut in eine Low-Carb- oder ketogene Ernährung.",
       "icon": "🥩"
     },
     {
       "title": "Salzgehalt beachten",
-      "text": "Als gepökelte und gewürzte Wurst ist Sucuk recht salzig. Bei salzarmer Ernährung lieber kleine Mengen verwenden.",
+      "text": "Als gepökelte und gewürzte Wurst ist Sucuk recht salzig (am Beispiel Egetürk 3 g Salz pro 100 g). Bei salzarmer Ernährung lieber kleine Mengen verwenden.",
       "icon": "🧂"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Sucuk?",
-      "answer": "Sucuk hat etwa 350 kcal pro 100g. Eine typische Portion von 50g (rund 3-4 Scheiben) liefert ca. 175 kcal."
+      "answer": "Sucuk hat am Beispiel Egetürk Barış Kangal Sucuk 399 kcal pro 100 g (Herstellerangabe). Eine typische Portion von 50 g (rund 3 bis 4 Scheiben) liefert rund 200 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Sucuk?",
-      "answer": "Sucuk enthält rund 22g Protein pro 100g. Eine 50g-Portion liefert damit etwa 11g Eiweiß."
+      "answer": "Sucuk enthält am Beispiel Egetürk 18 g Protein pro 100 g. Eine 50-g-Portion liefert damit 9 g Eiweiß."
     },
     {
       "question": "Hat Sucuk viele Kohlenhydrate?",
-      "answer": "Nein, Sucuk hat mit ca. 1,5g pro 100g kaum Kohlenhydrate und eignet sich daher für eine kohlenhydratarme Ernährung."
+      "answer": "Nein, Sucuk hat am Beispiel Egetürk nur 3,8 g Kohlenhydrate pro 100 g und eignet sich daher für eine kohlenhydratarme Ernährung."
     },
     {
       "question": "Ist Sucuk zum Abnehmen geeignet?",
-      "answer": "Sucuk ist eiweißreich und kohlenhydratarm, aber mit 350 kcal und 28g Fett pro 100g sehr fett- und kalorienreich. In kleinen Mengen passt sie in eine Diät, große Portionen sind eher ungünstig."
+      "answer": "Sucuk ist eiweißreich und kohlenhydratarm, aber mit 399 kcal und 34,7 g Fett pro 100 g sehr fett- und kalorienreich. In kleinen Mengen passt sie in eine Diät, große Portionen sind eher ungünstig."
     },
     {
       "question": "Wie viele Kalorien hat Sucuk gebraten?",
-      "answer": "Gebratener Sucuk hat etwa 370 kcal pro 100g. Beim Braten verliert die Wurst Wasser, wodurch der Energiegehalt pro 100g leicht ansteigt."
+      "answer": "Für gebratenen Sucuk gibt es keine eigene Herstellerangabe. Beim Braten verliert die Wurst Wasser und etwas Fett. Wie viel davon auf dem Teller bleibt, hängt von der Zubereitung ab. Als Richtwert dienen die Werte der rohen Wurst: 399 kcal pro 100 g."
     },
     {
       "question": "Ist Sucuk gesund?",

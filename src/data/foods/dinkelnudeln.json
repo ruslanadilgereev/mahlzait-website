@@ -3,9 +3,17 @@
   "name": "Dinkelnudeln",
   "emoji": "🍝",
   "category": "supermarkt",
+  "source": "Herstellerangabe Bernbacher, Bio Dinkel Band (500 g) (https://bernbacher.de/products/bio-dinkel-band, abgerufen am 23.11.2026), Werte je 100 g ungekochte Teigware; allgemeine Seite, Werte am Beispiel Bernbacher Bio Dinkel Band",
+  "hersteller": {
+    "name": "Bernbacher",
+    "produkt": "Bio Dinkel Band",
+    "url": "https://bernbacher.de/products/bio-dinkel-band",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Dinkelnudeln Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Dinkelnudeln? Roh ca. 352 kcal/100g, gekocht nur ca. 138 kcal/100g. Nährwerte, Protein, Ballaststoffe & Abnehm-Tipps.",
+    "description": "Wie viele Kalorien haben Dinkelnudeln? Roh 357 kcal/100g am Beispiel Bernbacher Bio Dinkel Band. Nährwerte, Protein, Ballaststoffe & Abnehm-Tipps.",
     "keywords": [
       "dinkelnudeln kalorien",
       "dinkelnudeln gekocht kalorien",
@@ -16,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 352,
-    "protein_per_100g": 14,
+    "calories_per_100g": 357,
+    "protein_per_100g": 13,
     "carbs_per_100g": 70,
-    "fat_per_100g": 2.2,
-    "fiber_per_100g": 6,
+    "fat_per_100g": 1.5,
+    "fiber_per_100g": 4.7,
     "typical_portion_g": 125,
     "typical_portion_name": "1 Portion roh (125 g)"
   },
@@ -28,88 +36,94 @@
     {
       "name": "Kleine Portion roh (80 g)",
       "portion_g": 80,
-      "calories": 282,
-      "protein": 11.2,
+      "calories": 286,
+      "protein": 10.4,
       "carbs": 56,
-      "fat": 1.8,
+      "fat": 1.2,
       "tip": "Beilage"
     },
     {
       "name": "1 Portion roh (125 g)",
       "portion_g": 125,
-      "calories": 440,
-      "protein": 17.5,
+      "calories": 446,
+      "protein": 16.3,
       "carbs": 87.5,
-      "fat": 2.8,
+      "fat": 1.9,
       "tip": "Standard-Hauptgericht"
     },
     {
       "name": "Große Portion roh (250 g)",
       "portion_g": 250,
-      "calories": 880,
-      "protein": 35,
+      "calories": 893,
+      "protein": 32.5,
       "carbs": 175,
-      "fat": 5.5
+      "fat": 3.8
     },
     {
-      "name": "Dinkelnudeln gekocht (100 g)",
-      "portion_g": 100,
-      "calories": 138,
-      "protein": 5.5,
-      "carbs": 27,
-      "fat": 0.9,
-      "tip": "Nach dem Kochen"
-    },
-    {
-      "name": "Dinkelnudeln gekocht, 1 Portion (250 g)",
-      "portion_g": 250,
-      "calories": 345,
-      "protein": 13.8,
-      "carbs": 67.5,
-      "fat": 2.2,
-      "tip": "Teller fertig gekocht"
-    },
-    {
-      "name": "Dinkel-Vollkornnudeln roh (125 g)",
-      "portion_g": 125,
-      "calories": 438,
-      "protein": 18.8,
-      "carbs": 81.3,
-      "fat": 3.4,
-      "tip": "Mehr Ballaststoffe"
+      "name": "Ganze Packung roh (500 g)",
+      "portion_g": 500,
+      "calories": 1785,
+      "protein": 65,
+      "carbs": 350,
+      "fat": 7.5,
+      "tip": "Packungsgröße Bernbacher"
     }
   ],
   "comparison": [
     {
-      "name": "Nudeln (Weizen, roh)",
-      "calories": 360,
-      "emoji": "🍝"
+      "name": "Weizennudeln roh (100 g)",
+      "calories": 371,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "fdcId": 168927,
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Vollkornbrot",
-      "calories": 210,
-      "emoji": "🍞"
+      "name": "Vollkornbrot (100 g)",
+      "calories": 221,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "slug": "vollkornbrot",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Basmati-Reis (roh)",
-      "calories": 350,
-      "emoji": "🍚"
+      "name": "Langkornreis roh (100 g)",
+      "calories": 365,
+      "emoji": "🍚",
+      "basis": [
+        {
+          "fdcId": 169756,
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Couscous (roh)",
-      "calories": 360,
-      "emoji": "🌾"
+      "name": "Couscous roh (100 g)",
+      "calories": 376,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "fdcId": 169699,
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Roh oder gekocht unterscheiden",
-      "text": "Die 352 kcal pro 100 g gelten für rohe Dinkelnudeln. Beim Kochen nehmen sie Wasser auf, dadurch sinkt der Wert auf ca. 138 kcal pro 100 g gekochter Nudeln.",
+      "text": "Die 357 kcal pro 100 g gelten für rohe Dinkelnudeln (Bernbacher Bio Dinkel Band). Beim Kochen nehmen sie nur Wasser auf: Pro 100 g gekochter Nudeln sinkt der Wert deutlich, die Kalorien der Portion bleiben aber gleich. Am genauesten rechnest du mit dem Rohgewicht.",
       "icon": "♨️"
     },
     {
-      "title": "Mehr Eiweiß als Weizen-Pasta",
-      "text": "Dinkelnudeln liefern mit rund 14 g Protein pro 100 g etwas mehr Eiweiß als normale Weizennudeln und halten dadurch länger satt.",
+      "title": "Eiweiß wie bei Weizen-Pasta",
+      "text": "Dinkelnudeln liefern mit 13 g Protein pro 100 g (Bernbacher Bio Dinkel Band) etwa so viel Eiweiß wie normale Weizennudeln. Mehr Sättigung bringt eine eiweißreiche Soße, etwa mit Linsen, Tofu oder Käse.",
       "icon": "💪"
     },
     {
@@ -131,19 +145,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Dinkelnudeln?",
-      "answer": "Rohe Dinkelnudeln haben ca. 352 kcal pro 100 g. Eine Standard-Portion von 125 g roh kommt auf rund 440 kcal."
+      "answer": "Rohe Dinkelnudeln haben am Beispiel Bernbacher Bio Dinkel Band 357 kcal pro 100 g (Herstellerangabe). Eine Standard-Portion von 125 g roh kommt auf rund 446 kcal."
     },
     {
       "question": "Wie viele Kalorien haben gekochte Dinkelnudeln?",
-      "answer": "Gekochte Dinkelnudeln haben nur noch etwa 138 kcal pro 100 g, weil sie beim Kochen Wasser aufnehmen. Ein voller Teller (250 g gekocht) hat rund 345 kcal."
+      "answer": "Beim Kochen nehmen Dinkelnudeln nur Wasser auf, die Kalorien der Portion bleiben gleich: 100 g rohe Nudeln haben 357 kcal, auch wenn sie gekocht deutlich mehr wiegen. Pro 100 g gekochter Nudeln liegt der Wert entsprechend niedriger, wie viel genau, hängt von Kochzeit und Wasseraufnahme ab. Am genauesten rechnest du deshalb mit dem Rohgewicht."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Dinkelnudeln?",
-      "answer": "Rohe Dinkelnudeln enthalten ca. 70 g Kohlenhydrate pro 100 g. Damit sind sie wie alle Nudeln eine kohlenhydratreiche Beilage."
+      "answer": "Rohe Dinkelnudeln enthalten ca. 70 g Kohlenhydrate pro 100 g, davon 2,5 g Zucker (Bernbacher Bio Dinkel Band). Damit sind sie wie alle Nudeln eine kohlenhydratreiche Beilage."
     },
     {
       "question": "Wie viel Protein haben Dinkelnudeln?",
-      "answer": "Dinkelnudeln liefern etwa 14 g Eiweiß pro 100 g (roh) und damit tendenziell etwas mehr als klassische Weizennudeln."
+      "answer": "Dinkelnudeln liefern etwa 13 g Eiweiß pro 100 g (roh, Bernbacher Bio Dinkel Band) und damit ungefähr so viel wie klassische Weizennudeln."
     },
     {
       "question": "Sind Dinkelnudeln zum Abnehmen geeignet?",
@@ -151,7 +165,7 @@
     },
     {
       "question": "Sind Dinkelnudeln gesünder als normale Nudeln?",
-      "answer": "Dinkelnudeln haben einen ähnlichen Kaloriengehalt wie Weizennudeln, liefern aber oft etwas mehr Eiweiß und Mineralstoffe. Den größten Vorteil bringt die Vollkorn-Variante."
+      "answer": "Dinkelnudeln haben einen ähnlichen Kalorien- und Eiweißgehalt wie Weizennudeln. Bernbacher Bio Dinkel Band liefert mit 4,7 g Ballaststoffen pro 100 g etwas mehr als einfache Weizennudeln (3,2 g laut USDA). Den größten Vorteil bringt die Vollkorn-Variante."
     }
   ],
   "related_foods": [

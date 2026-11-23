@@ -3,9 +3,17 @@
   "name": "Flips",
   "emoji": "🥜",
   "category": "supermarkt",
+  "source": "Herstellerangabe Lorenz Snacks, ErdnußLocken Classic (https://lorenz-snacks.de/erdnusslocken-classic, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel Lorenz ErdnußLocken Classic",
+  "hersteller": {
+    "name": "Lorenz",
+    "produkt": "ErdnußLocken Classic",
+    "url": "https://lorenz-snacks.de/erdnusslocken-classic",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Flips Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Flips? Erdnussflips haben ca. 535 kcal pro 100g und 160 kcal pro Handvoll (30g). Nährwerte, Portionen & Snack-Tipps.",
+    "description": "Wie viele Kalorien haben Flips? 495 kcal pro 100g am Beispiel Lorenz ErdnußLocken Classic, 149 kcal pro Handvoll (30g). Nährwerte, Portionen & Snack-Tipps.",
     "keywords": [
       "flips kalorien",
       "flips kcal",
@@ -18,11 +26,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 535,
+    "calories_per_100g": 495,
     "protein_per_100g": 14,
-    "carbs_per_100g": 50,
-    "fat_per_100g": 31,
-    "fiber_per_100g": 5,
+    "carbs_per_100g": 51,
+    "fat_per_100g": 25,
+    "fiber_per_100g": 4.9,
     "typical_portion_g": 30,
     "typical_portion_name": "1 Handvoll (30g)"
   },
@@ -30,95 +38,119 @@
     {
       "name": "1 Handvoll (25g)",
       "portion_g": 25,
-      "calories": 134,
+      "calories": 124,
       "protein": 3.5,
-      "carbs": 12.5,
-      "fat": 7.8
+      "carbs": 12.8,
+      "fat": 6.3
     },
     {
       "name": "Kleine Portion (30g)",
       "portion_g": 30,
-      "calories": 160,
+      "calories": 149,
       "protein": 4.2,
-      "carbs": 15,
-      "fat": 9.3,
+      "carbs": 15.3,
+      "fat": 7.5,
       "tip": "Standard-Snackportion"
     },
     {
       "name": "Mittlere Portion (50g)",
       "portion_g": 50,
-      "calories": 268,
+      "calories": 248,
       "protein": 7,
-      "carbs": 25,
-      "fat": 15.5
+      "carbs": 25.5,
+      "fat": 12.5
     },
     {
       "name": "Kleine Schale (75g)",
       "portion_g": 75,
-      "calories": 401,
+      "calories": 371,
       "protein": 10.5,
-      "carbs": 37.5,
-      "fat": 23.2
+      "carbs": 38.3,
+      "fat": 18.8
     },
     {
-      "name": "Halbe Tüte (100g)",
+      "name": "Große Schale (100g)",
       "portion_g": 100,
-      "calories": 535,
+      "calories": 495,
       "protein": 14,
-      "carbs": 50,
-      "fat": 31
+      "carbs": 51,
+      "fat": 25
     },
     {
-      "name": "Ganze Tüte (200g)",
-      "portion_g": 200,
-      "calories": 1070,
-      "protein": 28,
-      "carbs": 100,
-      "fat": 62,
-      "tip": "Komplette Standardtüte"
+      "name": "Ganze Tüte (175g)",
+      "portion_g": 175,
+      "calories": 866,
+      "protein": 24.5,
+      "carbs": 89.3,
+      "fat": 43.8,
+      "tip": "Beutel ErdnußLocken Classic"
     }
   ],
   "comparison": [
     {
       "name": "Salzstangen (30g)",
-      "calories": 105,
-      "emoji": "🥨"
+      "calories": 115,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "salzstangen",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Popcorn (30g)",
+      "name": "Popcorn luftgepoppt (30g)",
       "calories": 115,
-      "emoji": "🍿"
+      "emoji": "🍿",
+      "basis": [
+        {
+          "slug": "popcorn",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Kartoffelchips (30g)",
-      "calories": 161,
-      "emoji": "🥔"
+      "calories": 160,
+      "emoji": "🥔",
+      "basis": [
+        {
+          "slug": "chips",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Erdnüsse (30g)",
-      "calories": 180,
-      "emoji": "🥜"
+      "calories": 170,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "erdnuss",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Klein abwiegen statt aus der Tüte",
-      "text": "Eine Handvoll (30g) hat nur 160 kcal. Aus der offenen Tüte isst man schnell die ganze Packung – das sind über 1000 kcal. Lieber eine Portion in eine Schale füllen.",
+      "text": "Eine Handvoll (30g) hat 149 kcal. Aus der offenen Tüte isst man schnell die ganze Packung: Ein Beutel ErdnußLocken Classic (175g) hat 866 kcal. Lieber eine Portion in eine Schale füllen.",
       "icon": "🥣"
     },
     {
       "title": "Hoher Fettanteil beachten",
-      "text": "Mit 31g Fett pro 100g sind Flips ein fettreicher Snack. Der Großteil stammt aus dem zum Würzen verwendeten Erdnussfett – sättigend, aber kalorienreich.",
+      "text": "Mit 25g Fett pro 100g (ErdnußLocken Classic) sind Flips ein fettreicher Snack. Das Fett stammt aus den Erdnüssen (33 Prozent) und aus Pflanzenöl: sättigend, aber kalorienreich.",
       "icon": "🧈"
     },
     {
       "title": "Kein Diät-Snack",
-      "text": "Mit 535 kcal pro 100g gehören Flips zu den kalorienreichen Knabbereien. Wer abnehmen will, greift besser zu Salzstangen oder luftgepopptem Popcorn.",
+      "text": "Mit 495 kcal pro 100g gehören Flips zu den kalorienreichen Knabbereien. Wer abnehmen will, greift besser zu Salzstangen oder luftgepopptem Popcorn.",
       "icon": "⚖️"
     },
     {
       "title": "Mehr Eiweiß als andere Knabbereien",
-      "text": "Durch den Erdnussanteil liefern Flips ca. 14g Eiweiß pro 100g – deutlich mehr als Chips. Das macht den Snack etwas sättigender.",
+      "text": "Durch den Erdnussanteil liefern Flips 14g Eiweiß pro 100g, deutlich mehr als Chips. Das macht den Snack etwas sättigender.",
       "icon": "💪"
     },
     {
@@ -130,23 +162,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Flips?",
-      "answer": "Erdnussflips haben ca. 535 kcal pro 100g. Eine Handvoll (30g) liefert rund 160 kcal, eine ganze Tüte (200g) etwa 1070 kcal."
+      "answer": "Erdnussflips haben am Beispiel Lorenz ErdnußLocken Classic 495 kcal pro 100g (Herstellerangabe). Eine Handvoll (30g) liefert rund 149 kcal, eine ganze Tüte (175g) etwa 866 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Tüte Flips?",
-      "answer": "Eine Standardtüte mit 200g hat ca. 1070 kcal. Schon eine halbe Tüte (100g) entspricht 535 kcal – etwa einem Viertel des Tagesbedarfs."
+      "answer": "Ein Beutel ErdnußLocken Classic mit 175g hat ca. 866 kcal. Schon 100g entsprechen 495 kcal, etwa einem Viertel des Tagesbedarfs."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Flips?",
-      "answer": "Flips enthalten ca. 50g Kohlenhydrate pro 100g, da die Basis aus Maisgrieß besteht. Eine Handvoll (30g) liefert rund 15g Kohlenhydrate."
+      "answer": "Flips enthalten ca. 51g Kohlenhydrate pro 100g, da die Basis aus Maisgrieß besteht. Eine Handvoll (30g) liefert rund 15g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß haben Erdnussflips?",
-      "answer": "Durch den Erdnussanteil haben Flips ca. 14g Eiweiß pro 100g – mehr als die meisten anderen Knabbereien wie Chips oder Salzstangen."
+      "answer": "Durch den Erdnussanteil haben Flips ca. 14g Eiweiß pro 100g, mehr als andere Knabbereien wie Chips oder Salzstangen."
     },
     {
       "question": "Sind Flips gut zum Abnehmen?",
-      "answer": "Nein, eher nicht. Mit 535 kcal und 31g Fett pro 100g sind Flips sehr kalorienreich. Wer abnehmen möchte, sollte sie nur in kleinen Mengen genießen."
+      "answer": "Nein, eher nicht. Mit 495 kcal und 25g Fett pro 100g sind Flips sehr kalorienreich. Wer abnehmen möchte, sollte sie nur in kleinen Mengen genießen."
     },
     {
       "question": "Sind Flips gesund?",

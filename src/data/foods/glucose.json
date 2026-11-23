@@ -3,9 +3,17 @@
   "name": "Glucose",
   "emoji": "🍯",
   "category": "supermarkt",
+  "source": "Herstellerangabe Dextro Energy, Dextrose Classic, Traubenzuckerwürfel 46 g (https://dextro-energy.com/products/wuerfel-classic, abgerufen am 23.11.2026), Werte je 100 g; Fett laut Hersteller unter 0,5 g, hier 0 g; Ballaststoffe vom Hersteller nicht angegeben; Täfelchen 5,75 g laut Verzehrsempfehlung (3 Täfelchen ca. 17,25 g); allgemeine Seite, Werte am Beispiel Dextro Energy Classic (Traubenzuckerwürfel)",
+  "hersteller": {
+    "name": "Dextro Energy",
+    "produkt": "Classic (Traubenzuckerwürfel)",
+    "url": "https://dextro-energy.com/products/wuerfel-classic",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Glucose Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Glucose? Reiner Traubenzucker hat 374 kcal pro 100g. Nährwerte, Kohlenhydrate & Tipps zum Einsatz beim Sport und in der Diät.",
+    "description": "Wie viele Kalorien hat Glucose? Traubenzucker hat 368 kcal pro 100g am Beispiel Dextro Energy Classic. Nährwerte, Kohlenhydrate & Tipps zum Einsatz beim Sport und in der Diät.",
     "keywords": [
       "glucose kcal",
       "glucose kalorien",
@@ -17,37 +25,37 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 374,
+    "calories_per_100g": 368,
     "protein_per_100g": 0,
-    "carbs_per_100g": 93,
+    "carbs_per_100g": 91,
     "fat_per_100g": 0,
-    "fiber_per_100g": 0,
-    "typical_portion_g": 6,
-    "typical_portion_name": "1 Plättchen Traubenzucker (6g)"
+    "fiber_per_100g": null,
+    "typical_portion_g": 5.75,
+    "typical_portion_name": "1 Täfelchen Traubenzucker (5,75g)"
   },
   "variants": [
     {
-      "name": "1 Plättchen Traubenzucker (6g)",
-      "portion_g": 6,
-      "calories": 22,
+      "name": "1 Täfelchen Traubenzucker (5,75g)",
+      "portion_g": 5.75,
+      "calories": 21,
       "protein": 0,
-      "carbs": 6,
+      "carbs": 5,
       "fat": 0,
       "tip": "Einzelnes Täfelchen"
     },
     {
-      "name": "1 Rolle Traubenzucker (40g)",
-      "portion_g": 40,
-      "calories": 150,
+      "name": "1 Würfel Traubenzucker (46g)",
+      "portion_g": 46,
+      "calories": 169,
       "protein": 0,
-      "carbs": 37,
+      "carbs": 42,
       "fat": 0,
-      "tip": "Standard-Packung"
+      "tip": "8 Täfelchen"
     },
     {
       "name": "1 Teelöffel (5g)",
       "portion_g": 5,
-      "calories": 19,
+      "calories": 18,
       "protein": 0,
       "carbs": 5,
       "fat": 0
@@ -55,7 +63,7 @@
     {
       "name": "1 Esslöffel (15g)",
       "portion_g": 15,
-      "calories": 56,
+      "calories": 55,
       "protein": 0,
       "carbs": 14,
       "fat": 0
@@ -63,17 +71,17 @@
     {
       "name": "1 Portion zum Backen (25g)",
       "portion_g": 25,
-      "calories": 94,
+      "calories": 92,
       "protein": 0,
       "carbs": 23,
       "fat": 0
     },
     {
-      "name": "100g Glucosepulver",
+      "name": "100g Glucose",
       "portion_g": 100,
-      "calories": 374,
+      "calories": 368,
       "protein": 0,
-      "carbs": 93,
+      "carbs": 91,
       "fat": 0,
       "tip": "Pro 100g"
     }
@@ -81,23 +89,47 @@
   "comparison": [
     {
       "name": "Haushaltszucker (100g)",
-      "calories": 405,
-      "emoji": "🍬"
+      "calories": 387,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "zucker",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Honig (100g)",
       "calories": 304,
-      "emoji": "🍯"
+      "emoji": "🍯",
+      "basis": [
+        {
+          "slug": "honig",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Ahornsirup (100g)",
       "calories": 260,
-      "emoji": "🍁"
+      "emoji": "🍁",
+      "basis": [
+        {
+          "slug": "ahornsirup",
+          "g": 100
+        }
+      ]
     },
     {
       "name": "Agavendicksaft (100g)",
       "calories": 310,
-      "emoji": "🌵"
+      "emoji": "🌵",
+      "basis": [
+        {
+          "slug": "agavendicksaft",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
@@ -107,13 +139,13 @@
       "icon": "⚡"
     },
     {
-      "title": "Reine Kohlenhydrate",
-      "text": "Glucose besteht zu rund 93g pro 100g aus Kohlenhydraten und enthält weder Eiweiß noch Fett. Sie ist also eine reine Kohlenhydratquelle ohne weitere Nährstoffe.",
+      "title": "Fast reine Kohlenhydrate",
+      "text": "Traubenzucker besteht zu rund 91g pro 100g aus Kohlenhydraten (Dextro Energy Classic, davon 82g Zucker). Eiweiß enthält er keines, Fett weniger als 0,5g. Die Energie stammt also praktisch nur aus Kohlenhydraten.",
       "icon": "🍬"
     },
     {
       "title": "Sparsam dosieren in der Diät",
-      "text": "Mit 374 kcal pro 100g ist Glucose energiereich und sättigt kaum. Wer abnehmen möchte, sollte sie nur gezielt einsetzen, etwa beim Sport.",
+      "text": "Mit 368 kcal pro 100g ist Glucose energiereich und sättigt kaum. Wer abnehmen möchte, sollte sie nur gezielt einsetzen, etwa beim Sport.",
       "icon": "⚖️"
     },
     {
@@ -130,23 +162,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Glucose?",
-      "answer": "100g Glucose (Traubenzucker) haben rund 374 kcal. Ein einzelnes Plättchen mit 6g kommt auf etwa 22 kcal."
+      "answer": "Glucose (Traubenzucker) hat am Beispiel Dextro Energy Classic 368 kcal pro 100g (Herstellerangabe). Ein einzelnes Täfelchen mit 5,75g kommt auf etwa 21 kcal, ein Esslöffel (15g) auf 55 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Glucose?",
-      "answer": "Glucose besteht fast vollständig aus Kohlenhydraten: rund 93g pro 100g. Sie ist ein reiner Einfachzucker (Monosaccharid)."
+      "answer": "Glucose besteht fast vollständig aus Kohlenhydraten: Dextro Energy Classic hat 91g pro 100g, davon 82g Zucker. Das Produkt enthält 89 Prozent Dextrose (Glucose) und etwas Maltodextrin. Glucose selbst ist ein Einfachzucker (Monosaccharid)."
     },
     {
       "question": "Enthält Glucose Eiweiß oder Fett?",
-      "answer": "Nein. Glucose enthält weder Eiweiß noch Fett. Die gesamte Energie stammt aus Kohlenhydraten."
+      "answer": "Nein. Laut Hersteller enthält Traubenzucker kein Eiweiß und weniger als 0,5g Fett pro 100g. Die Energie stammt fast vollständig aus Kohlenhydraten."
     },
     {
       "question": "Ist Glucose zum Abnehmen geeignet?",
-      "answer": "Nur bedingt. Glucose liefert mit 374 kcal pro 100g viel Energie, sättigt aber kaum. In einer Diät sollte sie sparsam und gezielt eingesetzt werden."
+      "answer": "Nur bedingt. Glucose liefert mit 368 kcal pro 100g viel Energie, sättigt aber kaum. In einer Diät sollte sie sparsam und gezielt eingesetzt werden."
     },
     {
       "question": "Ist Glucose gesünder als Haushaltszucker?",
-      "answer": "Nein, beide liefern ähnlich viel Energie. Haushaltszucker hat sogar etwas mehr Kalorien (405 kcal pro 100g). Glucose wirkt aber schneller, weil sie direkt aufgenommen wird."
+      "answer": "Nein, beide liefern ähnlich viel Energie. Haushaltszucker hat sogar etwas mehr Kalorien (387 kcal pro 100g). Glucose wirkt aber schneller, weil sie direkt aufgenommen wird."
     },
     {
       "question": "Wofür wird Glucose verwendet?",

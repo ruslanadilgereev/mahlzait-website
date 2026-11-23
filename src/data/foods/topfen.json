@@ -3,9 +3,17 @@
   "name": "Topfen",
   "emoji": "🧀",
   "category": "supermarkt",
+  "source": "Herstellerangabe MILRAM, Speisequark 20 % Fett (https://www.milram.de/produkte/quark-sahne-schmand-co/speisequark-20-prozent-fett/, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Topfen ist das österreichische Wort für Quark, Werte am Beispiel MILRAM Speisequark 20 % Fett",
+  "hersteller": {
+    "name": "MILRAM",
+    "produkt": "Speisequark 20 % Fett",
+    "url": "https://www.milram.de/produkte/quark-sahne-schmand-co/speisequark-20-prozent-fett/",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Topfen Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Topfen? Halbfetter Topfen hat ca. 110 kcal pro 100g. Nährwerte, Fettstufen im Vergleich & eiweißreiche Tipps zum Abnehmen.",
+    "description": "Wie viele Kalorien hat Topfen? Halbfetter Topfen (20 % Fett i. Tr.) hat am Beispiel MILRAM Speisequark 97 kcal pro 100 g. Nährwerte, Fettstufen im Vergleich & eiweißreiche Tipps zum Abnehmen.",
     "keywords": [
       "topfen kcal",
       "topfen kalorien",
@@ -18,11 +26,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 110,
-    "protein_per_100g": 12.5,
-    "carbs_per_100g": 3.5,
-    "fat_per_100g": 5,
-    "fiber_per_100g": 0,
+    "calories_per_100g": 97,
+    "protein_per_100g": 10.3,
+    "carbs_per_100g": 3.7,
+    "fat_per_100g": 4.3,
+    "fiber_per_100g": null,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Becher (250g)"
   },
@@ -30,105 +38,118 @@
     {
       "name": "1 EL Topfen (30g)",
       "portion_g": 30,
-      "calories": 33,
-      "protein": 4,
+      "calories": 29,
+      "protein": 3,
       "carbs": 1,
-      "fat": 2
+      "fat": 1
     },
     {
       "name": "Portion (125g)",
       "portion_g": 125,
-      "calories": 138,
-      "protein": 16,
-      "carbs": 4,
-      "fat": 6,
+      "calories": 121,
+      "protein": 13,
+      "carbs": 5,
+      "fat": 5,
       "tip": "Halbe Packung"
     },
     {
       "name": "1 Becher halbfett (250g)",
       "portion_g": 250,
-      "calories": 275,
-      "protein": 31,
+      "calories": 243,
+      "protein": 26,
       "carbs": 9,
-      "fat": 13,
+      "fat": 11,
       "tip": "Standard"
     },
     {
       "name": "Magertopfen (250g)",
       "portion_g": 250,
-      "calories": 168,
-      "protein": 33,
+      "calories": 170,
+      "protein": 30,
       "carbs": 10,
       "fat": 1,
-      "tip": "Eiweißreich & fettarm"
+      "tip": "Eiweißreich & fettarm",
+      "basis": [
+        {
+          "slug": "magerquark",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Topfen 20% Fett i.Tr. (250g)",
       "portion_g": 250,
-      "calories": 275,
-      "protein": 30,
+      "calories": 243,
+      "protein": 26,
       "carbs": 9,
-      "fat": 13
-    },
-    {
-      "name": "Topfen 40% Fett i.Tr. (250g)",
-      "portion_g": 250,
-      "calories": 405,
-      "protein": 28,
-      "carbs": 8,
-      "fat": 28,
-      "tip": "Vollfett, cremig"
-    },
-    {
-      "name": "Sahnetopfen 50% (200g)",
-      "portion_g": 200,
-      "calories": 380,
-      "protein": 20,
-      "carbs": 6,
-      "fat": 30
+      "fat": 11
     }
   ],
   "comparison": [
     {
       "name": "Magertopfen (250g)",
-      "calories": 168,
-      "emoji": "🧀"
+      "calories": 170,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "magerquark",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Skyr (250g)",
-      "calories": 162,
-      "emoji": "🥛"
+      "calories": 150,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "skyr",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Naturjoghurt (250g)",
-      "calories": 158,
-      "emoji": "🥛"
+      "calories": 153,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "joghurt",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Hüttenkäse (250g)",
       "calories": 245,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "huettenkaese",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißbombe zum Abnehmen",
-      "text": "Magertopfen liefert pro 250g rund 33g Eiweiß bei nur etwa 168 kcal. Das sättigt lange und schützt beim Abnehmen die Muskeln.",
+      "text": "Magertopfen liefert pro 250 g rund 30 g Eiweiß bei nur etwa 170 kcal (am Beispiel MILRAM Magerquark). Das sättigt lange und schützt beim Abnehmen die Muskeln.",
       "icon": "💪"
     },
     {
       "title": "Auf die Fettstufe achten",
-      "text": "Zwischen Magertopfen und 40% Fett i.Tr. liegen mehr als doppelt so viele Kalorien. Wer Kalorien sparen will, greift zu Magertopfen oder halbfettem Topfen.",
+      "text": "Halbfetter Topfen (20 % Fett i. Tr.) hat am Beispiel MILRAM 97 kcal pro 100 g, Magertopfen nur 68 kcal. Je höher die Fettstufe, desto mehr Kalorien: Wer sparen will, greift zu Magertopfen oder halbfettem Topfen.",
       "icon": "🔍"
     },
     {
       "title": "Topfen ist Quark",
-      "text": "Topfen ist die österreichische Bezeichnung für Quark. Nährwerte und Verwendung sind praktisch identisch, der Name unterscheidet sich nur regional.",
+      "text": "Topfen ist die österreichische Bezeichnung für Quark. Nährwerte und Verwendung sind praktisch identisch, der Name unterscheidet sich nur regional. Die Werte auf dieser Seite stammen deshalb von einem deutschen Speisequark mit 20 % Fett i. Tr. (MILRAM).",
       "icon": "🇦🇹"
     },
     {
       "title": "Wenig Kohlenhydrate",
-      "text": "Mit nur etwa 3,5g Kohlenhydraten pro 100g passt Topfen gut in eine kohlenhydratarme oder zuckerreduzierte Ernährung.",
+      "text": "Mit nur 3,7 g Kohlenhydraten pro 100 g passt Topfen gut in eine kohlenhydratarme oder zuckerreduzierte Ernährung.",
       "icon": "🥄"
     },
     {
@@ -140,19 +161,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Topfen?",
-      "answer": "Halbfetter Topfen (20% Fett i.Tr.) hat etwa 110 kcal pro 100g. Ein ganzer Becher mit 250g kommt damit auf rund 275 kcal."
+      "answer": "Topfen ist das österreichische Wort für Quark. Halbfetter Topfen (20 % Fett i. Tr.) hat am Beispiel des deutschen MILRAM Speisequarks 20 % Fett 97 kcal pro 100 g (Herstellerangabe). Ein ganzer Becher mit 250 g kommt damit auf rund 243 kcal."
     },
     {
       "question": "Wie viele Kalorien hat Magertopfen?",
-      "answer": "Magertopfen ist die kalorienärmste Variante mit nur etwa 67 kcal pro 100g, also rund 168 kcal pro 250g-Becher."
+      "answer": "Magertopfen entspricht Magerquark und ist die kalorienärmste Variante: am Beispiel MILRAM Magerquark 68 kcal pro 100 g, also rund 170 kcal pro 250-g-Becher."
     },
     {
       "question": "Wie viel Eiweiß hat Topfen?",
-      "answer": "Topfen ist sehr eiweißreich: Magertopfen liefert etwa 13g Protein pro 100g, ein 250g-Becher also rund 33g."
+      "answer": "Topfen ist sehr eiweißreich: Halbfetter Topfen liefert am Beispiel MILRAM 10,3 g Protein pro 100 g, Magertopfen (MILRAM Magerquark) 11,8 g, ein 250-g-Becher Magertopfen also rund 30 g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Topfen?",
-      "answer": "Topfen enthält nur etwa 3,5g Kohlenhydrate pro 100g, überwiegend in Form von Milchzucker. Ballaststoffe sind keine enthalten."
+      "answer": "Halbfetter Topfen enthält am Beispiel MILRAM nur 3,7 g Kohlenhydrate pro 100 g, überwiegend in Form von Milchzucker."
     },
     {
       "question": "Ist Topfen zum Abnehmen geeignet?",

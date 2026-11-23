@@ -3,9 +3,17 @@
   "name": "Bistro Baguette",
   "emoji": "🥖",
   "category": "supermarkt",
+  "source": "Herstellerangabe Dr. Oetker, Bistro Baguette Salami (https://www.oetker.de/produkte/p/bistro-baguette-salami, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel Dr. Oetker Bistro Baguette Salami",
+  "hersteller": {
+    "name": "Dr. Oetker",
+    "produkt": "Bistro Baguette Salami",
+    "url": "https://www.oetker.de/produkte/p/bistro-baguette-salami",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Bistro Baguette Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Bistro Baguette? Ein ganzes Ofen-Baguette (125 g) hat ca. 338 kcal. Nährwerte pro 100 g & Portion plus Diät-Tipps.",
+    "description": "Wie viele Kalorien hat ein Bistro Baguette? Am Beispiel Dr. Oetker Bistro Baguette Salami hat ein Baguette (125 g) ca. 290 kcal. Nährwerte pro 100 g & Portion plus Tipps.",
     "keywords": [
       "bistro baguette kalorien",
       "bistro baguette kcal",
@@ -16,147 +24,146 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 270,
-    "protein_per_100g": 8.7,
-    "carbs_per_100g": 51,
-    "fat_per_100g": 2.5,
-    "fiber_per_100g": 2.5,
+    "calories_per_100g": 232,
+    "protein_per_100g": 8.9,
+    "carbs_per_100g": 28,
+    "fat_per_100g": 9,
+    "fiber_per_100g": 2.4,
     "typical_portion_g": 125,
-    "typical_portion_name": "1 ganzes Baguette (aufgebacken)"
+    "typical_portion_name": "1 Baguette (125 g)"
   },
   "variants": [
     {
-      "name": "Halbes Baguette (63 g)",
-      "portion_g": 63,
-      "calories": 170,
-      "protein": 5.5,
-      "carbs": 32,
-      "fat": 1.6
+      "name": "Halbes Baguette (62,5 g)",
+      "portion_g": 62.5,
+      "calories": 145,
+      "protein": 5.6,
+      "carbs": 17.5,
+      "fat": 5.6
     },
     {
-      "name": "Ganzes Baguette (125 g)",
+      "name": "1 Baguette (125 g)",
       "portion_g": 125,
-      "calories": 338,
-      "protein": 10.9,
-      "carbs": 63.8,
-      "fat": 3.1,
-      "tip": "Standard-Portion"
+      "calories": 290,
+      "protein": 11.1,
+      "carbs": 35,
+      "fat": 11.3,
+      "tip": "Portion laut Hersteller"
     },
     {
-      "name": "Pro 100 g (aufgebacken)",
-      "portion_g": 100,
-      "calories": 270,
-      "protein": 8.7,
-      "carbs": 51,
-      "fat": 2.5
-    },
-    {
-      "name": "1 Scheibe (30 g)",
-      "portion_g": 30,
-      "calories": 81,
-      "protein": 2.6,
-      "carbs": 15.3,
-      "fat": 0.8
-    },
-    {
-      "name": "Bistro Baguette mit Butter (125 g + 10 g)",
-      "portion_g": 135,
-      "calories": 412,
-      "protein": 11,
-      "carbs": 64,
-      "fat": 11.4,
-      "tip": "Butter erhöht das Fett deutlich"
-    },
-    {
-      "name": "Mini-Baguette / Brötchen-Format (60 g)",
-      "portion_g": 60,
-      "calories": 162,
-      "protein": 5.2,
-      "carbs": 30.6,
-      "fat": 1.5
-    },
-    {
-      "name": "Großpackung 2 Baguettes (250 g)",
+      "name": "Packung, 2 Baguettes (250 g)",
       "portion_g": 250,
-      "calories": 675,
-      "protein": 21.8,
-      "carbs": 127.5,
-      "fat": 6.2
+      "calories": 580,
+      "protein": 22.3,
+      "carbs": 70,
+      "fat": 22.5
+    },
+    {
+      "name": "Pro 100 g",
+      "portion_g": 100,
+      "calories": 232,
+      "protein": 8.9,
+      "carbs": 28,
+      "fat": 9
     }
   ],
   "comparison": [
     {
-      "name": "Baguette (frisch)",
-      "calories": 270,
-      "emoji": "🥖"
+      "name": "Baguette, ungebelegt (125 g)",
+      "calories": 340,
+      "emoji": "🥖",
+      "basis": [
+        {
+          "slug": "baguette",
+          "variante": "Halbes Baguette (125g)"
+        }
+      ]
     },
     {
-      "name": "Brötchen",
-      "calories": 280,
-      "emoji": "🥐"
+      "name": "Pizza Salami (halbe Pizza, 175 g)",
+      "calories": 494,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami",
+          "variante": "Pizza Salami (halbe Pizza)"
+        }
+      ]
     },
     {
-      "name": "Ciabatta",
-      "calories": 271,
-      "emoji": "🍞"
+      "name": "Mini-Flammkuchen (150 g)",
+      "calories": 381,
+      "emoji": "🥧",
+      "basis": [
+        {
+          "slug": "flammkuchen",
+          "variante": "Mini-Flammkuchen (Snack)"
+        }
+      ]
     },
     {
-      "name": "Toastbrot",
-      "calories": 260,
-      "emoji": "🍞"
+      "name": "TK-Pizza Salami (320 g)",
+      "calories": 877,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami",
+          "variante": "TK-Pizza Salami (320g)"
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Erst nach dem Aufbacken wiegen",
-      "text": "Beim Aufbacken verliert das Bistro Baguette etwas Wasser. Die Kalorien pro Stück bleiben aber gleich, da nur Feuchtigkeit entweicht. Wiege am besten die fertige Portion und rechne mit rund 270 kcal pro 100 g.",
-      "icon": "⚖️"
+      "title": "Ein Baguette ist eine Portion",
+      "text": "Ein Bistro Baguette Salami (125 g) hat laut Hersteller ca. 290 kcal. Die Packung mit zwei Baguettes (250 g) kommt auf 580 kcal.",
+      "icon": "🥖"
     },
     {
-      "title": "Halbe Portion spart spürbar",
-      "text": "Ein halbes Baguette (63 g) hat nur etwa 170 kcal statt 338 kcal. Wer es als Beilage statt als Hauptkomponente isst, halbiert die Kohlenhydrate.",
-      "icon": "✂️"
+      "title": "Käse und Salami bringen das Fett",
+      "text": "Mit 9 g Fett pro 100 g stammt gut ein Drittel der Kalorien aus Fett, vor allem aus Edamer und Salami.",
+      "icon": "🧀"
     },
     {
-      "title": "Belag entscheidet über die Bilanz",
-      "text": "Das Baguette selbst ist mit 2,5 g Fett pro 100 g recht fettarm. Butter, Käse oder Aufschnitt verdoppeln den Energiewert schnell. Magerer Belag wie Frischkäse-light oder Tomate hält die Portion schlank.",
-      "icon": "🧈"
+      "title": "Mit Salat kombinieren",
+      "text": "Ein Baguette allein ist ein eher kleines Mittagessen. Mit einem großen Salat wird daraus eine sättigendere Mahlzeit, ohne viele Kalorien hinzuzufügen.",
+      "icon": "🥗"
     },
     {
-      "title": "Vollkorn statt Weißmehl wählen",
-      "text": "Klassisches Bistro Baguette besteht aus hellem Weizenmehl und liefert nur etwa 2,5 g Ballaststoffe pro 100 g. Eine Vollkorn-Variante sättigt länger und hält den Blutzucker stabiler.",
-      "icon": "🌾"
+      "title": "Salz beachten",
+      "text": "Ein Baguette (125 g) liefert laut Hersteller rund 1,5 g Salz (1,2 g pro 100 g). Den Rest des Tages lieber salzarm essen.",
+      "icon": "🧂"
     },
     {
-      "title": "Kohlenhydrate im Blick behalten",
-      "text": "Mit rund 51 g Kohlenhydraten pro 100 g ist Bistro Baguette eine kohlenhydratreiche Beilage. Bei Low-Carb-Ernährung lieber kleine Mengen einplanen und mit Eiweiß und Gemüse kombinieren.",
-      "icon": "📊"
+      "title": "Sorten unterscheiden sich",
+      "text": "Dr. Oetker bietet mehrere Sorten an, etwa Champignon, Hawaii oder Spéciale. Die Werte auf dieser Seite gelten für die Sorte Salami, andere Sorten weichen ab.",
+      "icon": "🏷️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Bistro Baguette?",
-      "answer": "Ein ganzes aufgebackenes Bistro Baguette (ca. 125 g) hat rund 338 kcal. Pro 100 g sind es etwa 270 kcal."
+      "answer": "Am Beispiel Dr. Oetker Bistro Baguette Salami hat ein Baguette (125 g) ca. 290 kcal, pro 100 g sind es laut Hersteller 232 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein halbes Bistro Baguette?",
-      "answer": "Ein halbes Baguette (ca. 63 g) liefert etwa 170 kcal und rund 32 g Kohlenhydrate."
+      "answer": "Ein halbes Baguette (62,5 g) liefert etwa 145 kcal und rund 18 g Kohlenhydrate."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Bistro Baguette?",
-      "answer": "Bistro Baguette enthält rund 51 g Kohlenhydrate pro 100 g. Ein ganzes Baguette (125 g) kommt damit auf etwa 64 g Kohlenhydrate."
+      "answer": "Bistro Baguette Salami enthält laut Hersteller 28 g Kohlenhydrate pro 100 g. Ein Baguette (125 g) kommt damit auf 35 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Bistro Baguette?",
-      "answer": "Pro 100 g liefert Bistro Baguette etwa 8,7 g Eiweiß, ein ganzes Baguette also rund 11 g. Damit ist es eine moderate, aber keine ausgeprägte Eiweißquelle."
+      "answer": "Pro 100 g liefert Bistro Baguette Salami laut Hersteller 8,9 g Eiweiß, ein Baguette (125 g) also rund 11 g. Damit ist es eine moderate, aber keine ausgeprägte Eiweißquelle."
     },
     {
       "question": "Ist Bistro Baguette zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Das Baguette ist fettarm, aber kohlenhydratreich. Wer abnehmen möchte, sollte auf die Portionsgröße achten, eine halbe Portion wählen und mageren Belag mit Gemüse kombinieren."
+      "answer": "In Maßen ja. Ein Baguette hat ca. 290 kcal und passt als kleine Mahlzeit in den Tagesplan. Die ganze Packung (580 kcal) ist dagegen schon eine große Portion."
     },
     {
       "question": "Ist Bistro Baguette gesund?",
-      "answer": "Bistro Baguette aus hellem Weizenmehl ist ein schneller Sattmacher, liefert aber wenig Ballaststoffe (ca. 2,5 g pro 100 g) und Mikronährstoffe. Eine Vollkorn-Variante ist die nährstoffreichere Wahl."
+      "answer": "Es ist ein Fertiggericht aus Weizenbaguette mit Käse und Salami. Es liefert etwas Eiweiß, aber auch Fett (9 g pro 100 g) und Salz (1,2 g pro 100 g), Ballaststoffe gibt es wenig (2,4 g pro 100 g). Als gelegentliche Mahlzeit ist es in Ordnung."
     }
   ],
   "related_foods": [

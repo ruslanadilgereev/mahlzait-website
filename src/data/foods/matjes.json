@@ -3,47 +3,225 @@
   "name": "Matjes",
   "emoji": "🐟",
   "category": "gericht",
+  "source": "Herstellerangabe Nadler, Edle Matjesfilets (https://www.nadler.de/fischfeinkost/matjes/edle-matjesfilets, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel Nadler Edle Matjesfilets",
+  "hersteller": {
+    "name": "Nadler",
+    "produkt": "Edle Matjesfilets",
+    "url": "https://www.nadler.de/fischfeinkost/matjes/edle-matjesfilets",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Matjes Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Matjes? Nährwerte für Matjes Hausfrauenart, mit Bratkartoffeln & mehr. Kostenloser Kalorien-Rechner mit Portionsgrößen."
+    "description": "Wie viele Kalorien hat Matjes? Am Beispiel Nadler Edle Matjesfilets 181 kcal pro 100 g. Nährwerte für Matjes Hausfrauenart, mit Bratkartoffeln & mehr. Kostenloser Kalorien-Rechner."
   },
   "overview": {
-    "calories_per_100g": 195,
-    "protein_per_100g": 14,
+    "calories_per_100g": 181,
+    "protein_per_100g": 16,
     "carbs_per_100g": 0,
-    "fat_per_100g": 15,
-    "fiber_per_100g": 0,
+    "fat_per_100g": 13,
+    "fiber_per_100g": null,
     "typical_portion_g": 150,
-    "typical_portion_name": "1 Filet"
+    "typical_portion_name": "1 Portion (150 g)"
   },
   "variants": [
-    {"name": "Matjes pur (1 Filet)", "portion_g": 150, "calories": 293, "protein": 21, "carbs": 0, "fat": 23, "tip": "Purer Genuss"},
-    {"name": "Matjes Hausfrauenart", "portion_g": 250, "calories": 420, "protein": 22, "carbs": 12, "fat": 32, "tip": "Klassiker mit Sahnesauce"},
-    {"name": "Matjes mit Bratkartoffeln", "portion_g": 400, "calories": 630, "protein": 25, "carbs": 42, "fat": 40, "tip": "Norddeutsches Hauptgericht"},
-    {"name": "Matjes im Brötchen", "portion_g": 200, "calories": 380, "protein": 18, "carbs": 28, "fat": 22, "tip": "Fischbrötchen-Variante"},
-    {"name": "Matjes mit Pellkartoffeln & Quark", "portion_g": 400, "calories": 480, "protein": 30, "carbs": 40, "fat": 22, "tip": "Leichtere Variante"},
-    {"name": "Matjes-Salat", "portion_g": 200, "calories": 350, "protein": 16, "carbs": 8, "fat": 28, "tip": "Als Vorspeise"}
+    {
+      "name": "Matjes pur (150g)",
+      "portion_g": 150,
+      "calories": 272,
+      "protein": 24,
+      "carbs": 0,
+      "fat": 20,
+      "tip": "Purer Genuss"
+    },
+    {
+      "name": "Matjes Hausfrauenart (150g Matjes + 100g Sauce)",
+      "portion_g": 250,
+      "calories": 412,
+      "protein": 26,
+      "carbs": 7,
+      "fat": 32,
+      "tip": "Sauce aus Schmand, Apfel, Zwiebel und Gewürzgurke",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "schmand",
+          "g": 50
+        },
+        {
+          "slug": "apfel",
+          "g": 25
+        },
+        {
+          "slug": "zwiebel",
+          "g": 15
+        },
+        {
+          "slug": "gewuerzgurken",
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Matjes mit Bratkartoffeln (150g + 250g)",
+      "portion_g": 400,
+      "calories": 734,
+      "protein": 29,
+      "carbs": 47,
+      "fat": 48,
+      "tip": "Norddeutsches Hauptgericht",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "slug": "bratkartoffeln",
+          "g": 250
+        }
+      ]
+    },
+    {
+      "name": "Matjesbrötchen (1 Stück)",
+      "portion_g": 150,
+      "calories": 294,
+      "protein": 16,
+      "carbs": 34,
+      "fat": 11,
+      "tip": "Fischbrötchen-Variante",
+      "basis": [
+        {
+          "slug": "matjes-broetchen"
+        }
+      ]
+    },
+    {
+      "name": "Matjes mit Pellkartoffeln & Quark (150g + 150g + 100g)",
+      "portion_g": 400,
+      "calories": 470,
+      "protein": 39,
+      "carbs": 34,
+      "fat": 20,
+      "tip": "Leichtere Variante",
+      "basis": [
+        {
+          "g": 150
+        },
+        {
+          "fdcId": 170438,
+          "g": 150
+        },
+        {
+          "slug": "magerquark",
+          "g": 100
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Lachs geräuchert", "calories": 200, "emoji": "🐟"},
-    {"name": "Rollmops", "calories": 195, "emoji": "🐟"},
-    {"name": "Hering gebraten", "calories": 230, "emoji": "🐟"},
-    {"name": "Thunfisch (Dose)", "calories": 110, "emoji": "🐟"}
+    {
+      "name": "Räucherlachs (100g)",
+      "calories": 117,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "raeucherlachs",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Rollmops (100g)",
+      "calories": 262,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "slug": "rollmops",
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Hering gebraten (100g)",
+      "calories": 203,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "fdcId": 175117,
+          "g": 100
+        }
+      ]
+    },
+    {
+      "name": "Thunfisch in Wasser, Dose (100g)",
+      "calories": 90,
+      "emoji": "🐟",
+      "basis": [
+        {
+          "fdcId": 334194,
+          "g": 100
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Omega-3-Quelle", "text": "Matjes ist reich an Omega-3-Fettsäuren, gut für Herz und Gehirn. Die Fette sind überwiegend gesund.", "icon": "❤️"},
-    {"title": "Sahnesauce reduzieren", "text": "Bei Matjes Hausfrauenart kannst du Joghurt statt Sahne verwenden, spart 80 kcal pro Portion.", "icon": "🥛"},
-    {"title": "Pellkartoffeln statt Bratkartoffeln", "text": "Pellkartoffeln (70 kcal/100g) statt Bratkartoffeln (185 kcal/100g), spart über 150 kcal als Beilage.", "icon": "🥔"},
-    {"title": "Saison beachten", "text": "Echter holländischer Matjes hat ab Juni Saison (Hollandse Nieuwe). Dann ist er am frischesten und besten.", "icon": "📅"},
-    {"title": "Nicht überwürzen", "text": "Guter Matjes braucht wenig: Zwiebeln, etwas Sahne und vielleicht grüne Bohnen. Weniger ist mehr.", "icon": "✨"}
+    {
+      "title": "Omega-3-Quelle",
+      "text": "Matjes ist reich an Omega-3-Fettsäuren, gut für Herz und Gehirn. Die Fette sind überwiegend gesund.",
+      "icon": "❤️"
+    },
+    {
+      "title": "Sahnesauce reduzieren",
+      "text": "Bei Matjes Hausfrauenart kannst du Joghurt statt Schmand verwenden: 50 g Joghurt statt 50 g Schmand sparen rund 90 kcal pro Portion.",
+      "icon": "🥛"
+    },
+    {
+      "title": "Pellkartoffeln statt Bratkartoffeln",
+      "text": "Pellkartoffeln (87 kcal/100 g) statt Bratkartoffeln (185 kcal/100 g) sparen bei 200 g Beilage rund 196 kcal.",
+      "icon": "🥔"
+    },
+    {
+      "title": "Saison beachten",
+      "text": "Echter holländischer Matjes hat ab Juni Saison (Hollandse Nieuwe). Dann ist er am frischesten und besten.",
+      "icon": "📅"
+    },
+    {
+      "title": "Nicht überwürzen",
+      "text": "Guter Matjes braucht wenig: Zwiebeln, etwas Sahne und vielleicht grüne Bohnen. Weniger ist mehr.",
+      "icon": "✨"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat Matjes?", "answer": "Ein Matjes-Filet (150g) hat ca. 293 kcal. Matjes Hausfrauenart mit Sahnesauce kommt auf ca. 420 kcal pro Portion."},
-    {"question": "Ist Matjes gesund?", "answer": "Ja, Matjes ist gesund! Er liefert viel Omega-3, Vitamin D, Protein und Jod. Der Fettgehalt ist relativ hoch, aber es sind überwiegend gesunde Fette."},
-    {"question": "Was ist der Unterschied zwischen Matjes und Hering?", "answer": "Matjes ist junger Hering, der noch nicht gelaicht hat. Er wird in Salzlake gereift und hat einen milderen, buttrigen Geschmack als normaler Hering."},
-    {"question": "Wie viel Matjes pro Person?", "answer": "Als Hauptgericht rechnet man 1-2 Filets (150-300g) pro Person. Als Vorspeise reicht ein halbes Filet (75g)."},
-    {"question": "Wie bewahrt man Matjes auf?", "answer": "Matjes im Kühlschrank lagern und innerhalb von 2-3 Tagen nach dem Öffnen verbrauchen. In der Originallake hält er länger."},
-    {"question": "Kann man Matjes einfrieren?", "answer": "Ja, Matjes lässt sich bis zu 3 Monate einfrieren. Am besten vakuumiert oder in Salzlake. Langsam im Kühlschrank auftauen."}
+    {
+      "question": "Wie viele Kalorien hat Matjes?",
+      "answer": "Matjesfilets haben am Beispiel Nadler Edle Matjesfilets (nach nordischer Art, in Rapsöl) 181 kcal pro 100 g (Herstellerangabe). Eine Portion von 150 g kommt auf rund 272 kcal, Matjes Hausfrauenart mit Schmandsauce (150 g Matjes und 100 g Sauce) auf rund 412 kcal."
+    },
+    {
+      "question": "Ist Matjes gesund?",
+      "answer": "Ja, Matjes ist gesund! Er liefert viel Omega-3, Vitamin D, Protein und Jod. Der Fettgehalt ist relativ hoch, aber es sind überwiegend gesunde Fette."
+    },
+    {
+      "question": "Was ist der Unterschied zwischen Matjes und Hering?",
+      "answer": "Matjes ist junger Hering, der noch nicht gelaicht hat. Er wird in Salzlake gereift und hat einen milderen, buttrigen Geschmack als normaler Hering."
+    },
+    {
+      "question": "Wie viel Matjes pro Person?",
+      "answer": "Als Hauptgericht rechnet man etwa 150 g Matjes pro Person, als Vorspeise reichen rund 75 g."
+    },
+    {
+      "question": "Wie bewahrt man Matjes auf?",
+      "answer": "Matjes im Kühlschrank lagern und innerhalb von 2-3 Tagen nach dem Öffnen verbrauchen. In der Originallake hält er länger."
+    },
+    {
+      "question": "Kann man Matjes einfrieren?",
+      "answer": "Ja, Matjes lässt sich bis zu 3 Monate einfrieren. Am besten vakuumiert oder in Salzlake. Langsam im Kühlschrank auftauen."
+    }
   ],
-  "related_foods": ["rollmops", "lachs-gebraten", "fischstaebchen", "labskaus"]
+  "related_foods": [
+    "rollmops",
+    "lachs-gebraten",
+    "fischstaebchen",
+    "labskaus"
+  ]
 }

@@ -3,9 +3,17 @@
   "name": "Matcha",
   "emoji": "🍵",
   "category": "getraenk",
+  "source": "Herstellerangabe Raab Vitalfood, Bio Matcha Pulver Premium (Dose 30 g) (https://www.raabvitalfood.de/products/bio-matcha-pulver, abgerufen am 23.11.2026), Werte je 100 g Pulver; allgemeine Seite, Werte am Beispiel Raab Vitalfood Bio Matcha Pulver Premium",
+  "hersteller": {
+    "name": "Raab Vitalfood",
+    "produkt": "Bio Matcha Pulver Premium",
+    "url": "https://www.raabvitalfood.de/products/bio-matcha-pulver",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Matcha Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Matcha? Reines Matcha-Pulver hat 4 kcal pro Gramm – eine Tasse Matcha-Tee nur ca. 6 kcal. Nährwerte, Varianten & Tipps.",
+    "description": "Wie viele Kalorien hat Matcha? Matcha-Pulver hat 310 kcal pro 100g am Beispiel Raab Vitalfood Bio Matcha, eine Tasse Matcha-Tee aus 2g Pulver nur ca. 6 kcal. Nährwerte, Varianten & Tipps.",
     "keywords": [
       "matcha kalorien",
       "matcha kcal",
@@ -17,11 +25,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 320,
-    "protein_per_100g": 31,
-    "carbs_per_100g": 39,
-    "fat_per_100g": 5,
-    "fiber_per_100g": 38,
+    "calories_per_100g": 310,
+    "protein_per_100g": 25,
+    "carbs_per_100g": 26,
+    "fat_per_100g": 4,
+    "fiber_per_100g": 35,
     "typical_portion_g": 2,
     "typical_portion_name": "1 Portion Pulver (2g)"
   },
@@ -30,111 +38,176 @@
       "name": "Matcha-Tee pur (1 Tasse, 2g Pulver)",
       "portion_g": 2,
       "calories": 6,
-      "protein": 1,
-      "carbs": 1,
-      "fat": 0,
+      "protein": 0.5,
+      "carbs": 0.5,
+      "fat": 0.1,
       "tip": "Standard"
     },
     {
       "name": "Matcha-Tee stark (1 Tasse, 4g Pulver)",
       "portion_g": 4,
-      "calories": 13,
+      "calories": 12,
       "protein": 1,
-      "carbs": 2,
-      "fat": 0
+      "carbs": 1,
+      "fat": 0.2
     },
     {
       "name": "Matcha-Pulver (1 TL, 2g)",
       "portion_g": 2,
       "calories": 6,
-      "protein": 1,
-      "carbs": 1,
-      "fat": 0
+      "protein": 0.5,
+      "carbs": 0.5,
+      "fat": 0.1
     },
     {
       "name": "Matcha-Pulver (1 EL, 6g)",
       "portion_g": 6,
       "calories": 19,
-      "protein": 2,
-      "carbs": 2,
-      "fat": 0
+      "protein": 1.5,
+      "carbs": 1.6,
+      "fat": 0.2
     },
     {
-      "name": "Matcha-Latte mit Kuhmilch (250ml)",
-      "portion_g": 250,
-      "calories": 130,
-      "protein": 8,
-      "carbs": 12,
-      "fat": 5,
-      "tip": "Mit Milch deutlich kalorienreicher"
+      "name": "Matcha-Latte mit Kuhmilch (2g Pulver + 200 ml Milch)",
+      "portion_g": 208,
+      "calories": 132,
+      "protein": 7.1,
+      "carbs": 10.4,
+      "fat": 6.9,
+      "tip": "Mit Milch deutlich kalorienreicher",
+      "basis": [
+        {
+          "g": 2
+        },
+        {
+          "slug": "milch",
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
-      "name": "Matcha-Latte mit Hafermilch (250ml)",
-      "portion_g": 250,
-      "calories": 115,
-      "protein": 3,
-      "carbs": 16,
-      "fat": 4
+      "name": "Matcha-Latte mit Hafermilch (2g Pulver + 200 ml Hafermilch)",
+      "portion_g": 208,
+      "calories": 105,
+      "protein": 2.1,
+      "carbs": 11,
+      "fat": 5.8,
+      "basis": [
+        {
+          "g": 2
+        },
+        {
+          "slug": "hafermilch",
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
-      "name": "Matcha-Latte gesüßt (250ml, mit Sirup)",
-      "portion_g": 250,
-      "calories": 180,
-      "protein": 8,
-      "carbs": 25,
-      "fat": 5,
-      "tip": "Zucker treibt die Kalorien hoch"
+      "name": "Matcha-Latte gesüßt (2g Pulver + 200 ml Milch + 10g Zucker)",
+      "portion_g": 218,
+      "calories": 171,
+      "protein": 7.1,
+      "carbs": 20.4,
+      "fat": 6.9,
+      "tip": "Zucker treibt die Kalorien hoch",
+      "basis": [
+        {
+          "g": 2
+        },
+        {
+          "slug": "milch",
+          "ml": 200,
+          "g": 206
+        },
+        {
+          "slug": "zucker",
+          "g": 10
+        }
+      ]
     },
     {
-      "name": "Matcha-Pulver (100g Packung)",
+      "name": "1 Dose Matcha-Pulver (30g)",
+      "portion_g": 30,
+      "calories": 93,
+      "protein": 7.5,
+      "carbs": 7.8,
+      "fat": 1.2,
+      "tip": "Dose Raab Vitalfood"
+    },
+    {
+      "name": "Matcha-Pulver (100g)",
       "portion_g": 100,
-      "calories": 320,
-      "protein": 31,
-      "carbs": 39,
-      "fat": 5
+      "calories": 310,
+      "protein": 25,
+      "carbs": 26,
+      "fat": 4
     }
   ],
   "comparison": [
     {
-      "name": "Matcha-Tee pur (1 Tasse)",
+      "name": "Matcha-Tee pur (2g Pulver)",
       "calories": 6,
-      "emoji": "🍵"
+      "emoji": "🍵",
+      "basis": [
+        {
+          "g": 2
+        }
+      ]
     },
     {
-      "name": "Grüner Tee (1 Tasse)",
+      "name": "Grüner Tee (1 Tasse, 200 ml)",
       "calories": 2,
-      "emoji": "🫖"
+      "emoji": "🫖",
+      "basis": [
+        {
+          "fdcId": 171917,
+          "ml": 200,
+          "g": 200
+        }
+      ]
     },
     {
-      "name": "Kaffee schwarz (1 Tasse)",
-      "calories": 4,
-      "emoji": "☕"
+      "name": "Kaffee schwarz (1 Tasse, 200 ml)",
+      "calories": 2,
+      "emoji": "☕",
+      "basis": [
+        {
+          "slug": "kaffee"
+        }
+      ]
     },
     {
-      "name": "Matcha-Latte (250ml)",
-      "calories": 130,
-      "emoji": "🥛"
+      "name": "Matcha-Latte (300 ml)",
+      "calories": 174,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "matcha-latte"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Pur fast kalorienfrei",
-      "text": "Matcha-Tee aus 2g Pulver mit heißem Wasser aufgeschlagen hat nur etwa 6 kcal – ideal für eine bewusste Ernährung.",
+      "text": "Matcha-Tee aus 2g Pulver mit heißem Wasser aufgeschlagen hat nur etwa 6 kcal, ideal für eine bewusste Ernährung.",
       "icon": "🍵"
     },
     {
       "title": "Die Milch macht den Unterschied",
-      "text": "Ein Matcha-Latte mit Kuhmilch kommt schnell auf 130 kcal. Mit ungesüßter Mandelmilch sparen Sie deutlich Kalorien.",
+      "text": "Ein Matcha-Latte mit 200 ml Kuhmilch kommt auf rund 132 kcal. Mit ungesüßter Mandelmilch sparen Sie deutlich Kalorien.",
       "icon": "🥛"
     },
     {
       "title": "Auf Sirup verzichten",
-      "text": "Vorgesüßte Matcha-Mischungen und Sirup im Café verdoppeln oft die Kalorien. Süßen Sie lieber selbst sparsam oder gar nicht.",
+      "text": "Vorgesüßte Matcha-Mischungen und Sirup im Café treiben die Kalorien deutlich nach oben. Süßen Sie lieber selbst sparsam oder gar nicht.",
       "icon": "🚫"
     },
     {
       "title": "Natürlicher Wachmacher",
-      "text": "Matcha liefert Koffein für anhaltende Wachheit, ohne dass Sie dafür Kalorien zu sich nehmen müssen – anders als ein Energy-Drink.",
+      "text": "Matcha liefert Koffein für anhaltende Wachheit, ohne dass Sie dafür nennenswert Kalorien zu sich nehmen, anders als bei einem gezuckerten Energy-Drink.",
       "icon": "⚡"
     },
     {
@@ -146,19 +219,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Matcha?",
-      "answer": "Reines Matcha-Pulver hat etwa 320 kcal pro 100g. Eine typische Tasse Matcha-Tee aus 2g Pulver enthält jedoch nur rund 6 kcal."
+      "answer": "Reines Matcha-Pulver hat am Beispiel Raab Vitalfood Bio Matcha Pulver 310 kcal pro 100g (Herstellerangabe). Eine typische Tasse Matcha-Tee aus 2g Pulver enthält jedoch nur rund 6 kcal."
     },
     {
       "question": "Wie viele Kalorien hat ein Matcha-Latte?",
-      "answer": "Ein Matcha-Latte mit Kuhmilch (250ml) hat etwa 130 kcal. Gesüßt mit Sirup steigt der Wert auf rund 180 kcal."
+      "answer": "Ein Matcha-Latte aus 2g Pulver und 200 ml Kuhmilch hat etwa 132 kcal. Mit 10g Zucker gesüßt steigt der Wert auf rund 171 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Matcha?",
-      "answer": "100g Matcha-Pulver enthalten etwa 39g Kohlenhydrate. Pro Tasse Tee (2g Pulver) ist das weniger als 1g – also praktisch vernachlässigbar."
+      "answer": "100g Matcha-Pulver enthalten etwa 26g Kohlenhydrate, davon 4,3g Zucker (Raab Vitalfood). Pro Tasse Tee (2g Pulver) ist das rund 0,5g, also praktisch vernachlässigbar."
     },
     {
       "question": "Wie viel Protein steckt in Matcha?",
-      "answer": "Matcha-Pulver hat rund 31g Protein pro 100g. Da pro Tasse nur etwa 2g Pulver verwendet werden, trägt es zur Eiweißversorgung kaum bei."
+      "answer": "Matcha-Pulver hat rund 25g Protein pro 100g (Raab Vitalfood). Da pro Tasse nur etwa 2g Pulver verwendet werden, trägt es zur Eiweißversorgung kaum bei."
     },
     {
       "question": "Ist Matcha zum Abnehmen geeignet?",

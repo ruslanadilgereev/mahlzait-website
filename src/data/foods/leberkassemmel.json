@@ -3,48 +3,267 @@
   "name": "Leberkässemmel",
   "emoji": "🥪",
   "category": "fast-food",
+  "source": "USDA FoodData Central, Rezeptrechnung aus FDC-Zutaten und Herstellerangaben (1 Semmel mit 120 g Leberkäse (190 g)): 60 g Semmel (Weizenbrötchen) (FDC-ID 175031, Rolls, hard (includes kaiser): 293 kcal), 120 g Leberkäse (Seite leberkaese, Werte am Beispiel REWE ja! Bayerischer Leberkäse, Herstellerangabe: 285 kcal), 10 g Senf (FDC-ID 172234, Mustard, prepared, yellow: 60 kcal); Werte je 100 g",
+  "rezept": {
+    "zutaten": [
+      {
+        "name": "Semmel (Weizenbrötchen)",
+        "g": 60,
+        "fdcId": 175031
+      },
+      {
+        "name": "Leberkäse",
+        "g": 120,
+        "slug": "leberkaese"
+      },
+      {
+        "name": "Senf",
+        "g": 10,
+        "fdcId": 172234
+      }
+    ]
+  },
   "seo": {
     "title": "Leberkässemmel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat eine Leberkässemmel? Dick oder dünn, mit Senf oder Käse, alle Nährwerte im Überblick."
+    "description": "Wie viele Kalorien hat eine Leberkässemmel? Dick oder dünn, mit Senf oder Käse: alle Nährwerte im Überblick."
   },
   "overview": {
-    "calories_per_100g": 270,
-    "protein_per_100g": 12,
-    "carbs_per_100g": 18,
-    "fat_per_100g": 17,
-    "fiber_per_100g": 0.8,
-    "typical_portion_g": 250,
+    "calories_per_100g": 276,
+    "protein_per_100g": 10.9,
+    "carbs_per_100g": 17.3,
+    "fat_per_100g": 18,
+    "fiber_per_100g": 0.9,
+    "typical_portion_g": 190,
     "typical_portion_name": "1 Leberkässemmel"
   },
   "variants": [
-    {"name": "Leberkässemmel klassisch", "portion_g": 250, "calories": 530, "protein": 25, "carbs": 40, "fat": 30, "tip": "Bayerischer Klassiker"},
-    {"name": "Leberkässemmel dünn geschnitten", "portion_g": 200, "calories": 420, "protein": 20, "carbs": 38, "fat": 22, "tip": "Kalorienärmere Variante"},
-    {"name": "Leberkässemmel dick geschnitten", "portion_g": 300, "calories": 650, "protein": 30, "carbs": 42, "fat": 38},
-    {"name": "Käseleberkäse-Semmel", "portion_g": 260, "calories": 590, "protein": 28, "carbs": 40, "fat": 35},
-    {"name": "Pizzaleberkäse-Semmel", "portion_g": 260, "calories": 570, "protein": 26, "carbs": 42, "fat": 32},
-    {"name": "Leberkäse mit Spiegelei", "portion_g": 310, "calories": 680, "protein": 32, "carbs": 40, "fat": 42},
-    {"name": "Leberkäse-Teller (mit Kartoffelsalat)", "portion_g": 450, "calories": 850, "protein": 35, "carbs": 65, "fat": 48}
+    {
+      "name": "Leberkässemmel klassisch",
+      "portion_g": 190,
+      "calories": 524,
+      "protein": 21,
+      "carbs": 33,
+      "fat": 34,
+      "tip": "Bayerischer Klassiker"
+    },
+    {
+      "name": "Leberkässemmel dünn geschnitten",
+      "portion_g": 150,
+      "calories": 410,
+      "protein": 16,
+      "carbs": 33,
+      "fat": 24,
+      "tip": "Kalorienärmere Variante",
+      "basis": [
+        {
+          "fdcId": 175031,
+          "g": 60
+        },
+        {
+          "slug": "leberkaese",
+          "g": 80
+        },
+        {
+          "fdcId": 172234,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Leberkässemmel dick geschnitten",
+      "portion_g": 250,
+      "calories": 695,
+      "protein": 28,
+      "carbs": 33,
+      "fat": 50,
+      "basis": [
+        {
+          "fdcId": 175031,
+          "g": 60
+        },
+        {
+          "slug": "leberkaese",
+          "g": 180
+        },
+        {
+          "fdcId": 172234,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Käseleberkäse-Semmel",
+      "portion_g": 190,
+      "calories": 540,
+      "protein": 23,
+      "carbs": 33,
+      "fat": 35,
+      "basis": [
+        {
+          "fdcId": 175031,
+          "g": 60
+        },
+        {
+          "slug": "leberkaese",
+          "g": 105
+        },
+        {
+          "fdcId": 171251,
+          "g": 15
+        },
+        {
+          "fdcId": 172234,
+          "g": 10
+        }
+      ]
+    },
+    {
+      "name": "Leberkäse mit Spiegelei",
+      "portion_g": 236,
+      "calories": 615,
+      "protein": 27,
+      "carbs": 33,
+      "fat": 41,
+      "basis": [
+        {
+          "g": 190
+        },
+        {
+          "fdcId": 173423,
+          "g": 46
+        }
+      ]
+    },
+    {
+      "name": "Leberkäse-Teller (mit Kartoffelsalat)",
+      "portion_g": 415,
+      "calories": 794,
+      "protein": 25,
+      "carbs": 30,
+      "fat": 60,
+      "basis": [
+        {
+          "slug": "leberkaese",
+          "g": 150
+        },
+        {
+          "slug": "kartoffelsalat",
+          "g": 250
+        },
+        {
+          "fdcId": 172234,
+          "g": 15
+        }
+      ]
+    }
   ],
   "comparison": [
-    {"name": "Bratwurst im Brötchen", "calories": 450, "emoji": "🌭"},
-    {"name": "Currywurst", "calories": 500, "emoji": "🌭"},
-    {"name": "Döner Kebab", "calories": 696, "emoji": "🥙"},
-    {"name": "Brezel mit Butter", "calories": 380, "emoji": "🥨"}
+    {
+      "name": "Bratwurst im Brötchen",
+      "calories": 675,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "bratwurst"
+        },
+        {
+          "slug": "broetchen"
+        }
+      ]
+    },
+    {
+      "name": "Currywurst",
+      "calories": 546,
+      "emoji": "🌭",
+      "basis": [
+        {
+          "slug": "currywurst"
+        }
+      ]
+    },
+    {
+      "name": "Döner Kebab",
+      "calories": 696,
+      "emoji": "🥙",
+      "basis": [
+        {
+          "slug": "doener",
+          "variante": "Döner Kebab (Kalb/Rind)"
+        }
+      ]
+    },
+    {
+      "name": "Brezel mit Butter",
+      "calories": 393,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        },
+        {
+          "fdcId": 173430,
+          "g": 10
+        }
+      ]
+    }
   ],
   "tips": [
-    {"title": "Dünn schneiden lassen", "text": "Eine dünne Scheibe statt einer dicken spart ca. 100-200 kcal. Frag einfach beim Metzger.", "icon": "📏"},
-    {"title": "Senf statt Ketchup", "text": "Senf hat fast keine Kalorien (15 kcal/Portion), Ketchup dagegen ca. 40 kcal und viel Zucker.", "icon": "🟡"},
-    {"title": "Vollkornsemmel wählen", "text": "Eine Vollkornsemmel hat gleich viele Kalorien, aber mehr Ballaststoffe und hält länger satt.", "icon": "🌾"},
-    {"title": "Putenleberkäse probieren", "text": "Putenleberkäse hat ca. 30% weniger Fett als die Schweinefleisch-Variante.", "icon": "🦃"},
-    {"title": "Nicht als Zwischensnack", "text": "Mit 530 kcal ist eine Leberkässemmel eine vollwertige Mahlzeit, nicht als Snack zwischendurch geeignet.", "icon": "⚠️"}
+    {
+      "title": "Dünn schneiden lassen",
+      "text": "Eine dünne Scheibe (80g) statt einer dicken (180g) spart rund 285 kcal. Frag einfach beim Metzger.",
+      "icon": "📏"
+    },
+    {
+      "title": "Senf statt Ketchup",
+      "text": "Senf hat fast keine Kalorien (rund 6 kcal für 10g), Ketchup enthält dagegen viel Zucker.",
+      "icon": "🟡"
+    },
+    {
+      "title": "Vollkornsemmel wählen",
+      "text": "Eine Vollkornsemmel hat gleich viele Kalorien, aber mehr Ballaststoffe und hält länger satt.",
+      "icon": "🌾"
+    },
+    {
+      "title": "Putenleberkäse probieren",
+      "text": "Putenleberkäse hat oft weniger Fett als die klassische Variante, die Werte stehen auf der Packung.",
+      "icon": "🦃"
+    },
+    {
+      "title": "Nicht als Zwischensnack",
+      "text": "Mit rund 524 kcal ist eine Leberkässemmel eine vollwertige Mahlzeit, nicht als Snack zwischendurch geeignet.",
+      "icon": "⚠️"
+    }
   ],
   "faq": [
-    {"question": "Wie viele Kalorien hat eine Leberkässemmel?", "answer": "Eine klassische Leberkässemmel hat ca. 530 kcal. Dünn geschnitten sind es ca. 420 kcal, dick geschnitten bis zu 650 kcal."},
-    {"question": "Ist Leberkäse ungesund?", "answer": "Leberkäse ist fett- und kalorienreich (270 kcal/100g, 17g Fett). Gelegentlich ist er vertretbar, aber nicht als tägliche Mahlzeit zu empfehlen."},
-    {"question": "Wie viel Fett hat eine Leberkässemmel?", "answer": "Eine Leberkässemmel enthält ca. 22-38g Fett je nach Scheibendicke. Das entspricht etwa 30-55% des täglichen Fettbedarfs."},
-    {"question": "Was hat mehr Kalorien: Leberkässemmel oder Döner?", "answer": "Ein Döner (696 kcal) hat mehr Kalorien als eine normal geschnittene Leberkässemmel (530 kcal), liefert aber auch mehr Protein."},
-    {"question": "Welcher Leberkäse hat am wenigsten Kalorien?", "answer": "Putenleberkäse hat mit ca. 200 kcal/100g die wenigsten Kalorien. Eine Semmel mit dünner Scheibe kommt auf ca. 350-400 kcal."},
-    {"question": "Wie viel Protein hat Leberkäse?", "answer": "Leberkäse enthält ca. 12g Protein pro 100g. Eine ganze Semmel liefert ca. 25g Protein, weniger als vergleichbare Fleischgerichte."}
+    {
+      "question": "Wie viele Kalorien hat eine Leberkässemmel?",
+      "answer": "Eine klassische Leberkässemmel hat ca. 524 kcal. Dünn geschnitten sind es ca. 410 kcal, dick geschnitten bis zu 695 kcal. Gerechnet aus USDA-Werten für eine Semmel (60g) und 10g Senf sowie der Herstellerangabe für 120g Leberkäse (am Beispiel REWE ja! Bayerischer Leberkäse)."
+    },
+    {
+      "question": "Ist Leberkäse ungesund?",
+      "answer": "Leberkäse ist fett- und kalorienreich (am Beispiel ja! Bayerischer Leberkäse 285 kcal/100g, 26g Fett). Gelegentlich ist er vertretbar, aber nicht als tägliche Mahlzeit zu empfehlen."
+    },
+    {
+      "question": "Wie viel Fett hat eine Leberkässemmel?",
+      "answer": "Eine Leberkässemmel enthält ca. 24 bis 50g Fett je nach Scheibendicke. Das ist etwa ein Drittel bis fast drei Viertel der Referenzmenge für Erwachsene (70g Fett pro Tag)."
+    },
+    {
+      "question": "Was hat mehr Kalorien: Leberkässemmel oder Döner?",
+      "answer": "Ein Döner (696 kcal) hat mehr Kalorien als eine normal geschnittene Leberkässemmel (524 kcal), liefert aber auch mehr Protein."
+    },
+    {
+      "question": "Welcher Leberkäse hat am wenigsten Kalorien?",
+      "answer": "Putenleberkäse hat meist weniger Fett und damit weniger Kalorien als klassischer Leberkäse, die genauen Werte stehen auf der Packung. Am meisten spart eine dünne Scheibe: Mit 80g Leberkäse kommt die Semmel auf rund 410 kcal."
+    },
+    {
+      "question": "Wie viel Protein hat Leberkäse?",
+      "answer": "Leberkäse enthält am Beispiel ja! Bayerischer Leberkäse 12g Protein pro 100g. Eine ganze Semmel liefert ca. 21g Protein, weniger als vergleichbare Fleischgerichte."
+    }
   ],
-  "related_foods": ["bratwurst", "brezel", "weisswurst", "kartoffelsalat"]
+  "related_foods": [
+    "bratwurst",
+    "brezel",
+    "weisswurst",
+    "kartoffelsalat"
+  ]
 }

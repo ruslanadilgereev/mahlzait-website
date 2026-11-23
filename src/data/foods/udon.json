@@ -3,9 +3,17 @@
   "name": "Udon",
   "emoji": "🍜",
   "category": "gericht",
+  "source": "Herstellerangabe Bamboo Garden (Theodor Kattus GmbH, Fuchs Gruppe), Udon Nudeln, vorgegart (2 Beutel à 150 g) (https://fuchsgruppe.shop/bamboogarden/produkte/udon-nudeln-0.3-kg-packung/, abgerufen am 23.11.2026), Werte je 100 g; Ballaststoffe vom Hersteller nicht angegeben; allgemeine Seite, Werte am Beispiel Bamboo Garden Udon Nudeln (vorgegart)",
+  "hersteller": {
+    "name": "Bamboo Garden",
+    "produkt": "Udon Nudeln (vorgegart)",
+    "url": "https://fuchsgruppe.shop/bamboogarden/produkte/udon-nudeln-0.3-kg-packung/",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Udon Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Udon-Nudeln? Gekocht ca. 127 kcal pro 100g. Nährwerte pro Portion, Kohlenhydrate & Protein im Überblick plus Tipps.",
+    "description": "Wie viele Kalorien haben Udon-Nudeln? Gekocht 129 kcal pro 100g am Beispiel Bamboo Garden Udon Nudeln. Nährwerte pro Portion, Kohlenhydrate & Protein im Überblick plus Tipps.",
     "keywords": [
       "udon kalorien",
       "udon nudeln kalorien",
@@ -16,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 127,
-    "protein_per_100g": 2.8,
-    "carbs_per_100g": 27,
-    "fat_per_100g": 0.4,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 129,
+    "protein_per_100g": 4.9,
+    "carbs_per_100g": 25.7,
+    "fat_per_100g": 0.1,
+    "fiber_per_100g": null,
     "typical_portion_g": 250,
     "typical_portion_name": "1 Portion gekocht (250g)"
   },
@@ -28,88 +36,112 @@
     {
       "name": "Udon gekocht (100g)",
       "portion_g": 100,
-      "calories": 127,
-      "protein": 2.8,
-      "carbs": 27,
-      "fat": 0.4
+      "calories": 129,
+      "protein": 4.9,
+      "carbs": 25.7,
+      "fat": 0.1
     },
     {
       "name": "Kleine Portion gekocht (180g)",
       "portion_g": 180,
-      "calories": 229,
-      "protein": 5,
-      "carbs": 49,
-      "fat": 1
+      "calories": 232,
+      "protein": 8.8,
+      "carbs": 46.3,
+      "fat": 0.2
     },
     {
       "name": "1 Portion gekocht (250g)",
       "portion_g": 250,
-      "calories": 318,
-      "protein": 7,
-      "carbs": 68,
-      "fat": 1,
+      "calories": 323,
+      "protein": 12.3,
+      "carbs": 64.3,
+      "fat": 0.3,
       "tip": "Standard-Portion"
     },
     {
       "name": "Große Portion gekocht (350g)",
       "portion_g": 350,
-      "calories": 445,
-      "protein": 10,
-      "carbs": 95,
-      "fat": 1
+      "calories": 452,
+      "protein": 17.2,
+      "carbs": 90,
+      "fat": 0.4
     },
     {
       "name": "Udon-Suppe (400g Nudeln)",
       "portion_g": 400,
-      "calories": 508,
-      "protein": 11,
-      "carbs": 108,
-      "fat": 2
+      "calories": 516,
+      "protein": 19.6,
+      "carbs": 102.8,
+      "fat": 0.4
     },
     {
-      "name": "Udon getrocknet (100g, ungekocht)",
-      "portion_g": 100,
-      "calories": 348,
-      "protein": 8.5,
-      "carbs": 73,
-      "fat": 1
+      "name": "1 Beutel vorgegart (150g)",
+      "portion_g": 150,
+      "calories": 194,
+      "protein": 7.4,
+      "carbs": 38.6,
+      "fat": 0.2,
+      "tip": "Beutel Bamboo Garden, fertig in 2 Minuten"
     },
     {
-      "name": "Udon getrocknet (80g, ungekocht)",
-      "portion_g": 80,
-      "calories": 278,
-      "protein": 7,
-      "carbs": 58,
-      "fat": 1,
-      "tip": "Trockengewicht für 1 Portion"
+      "name": "Packung mit 2 Beuteln (300g)",
+      "portion_g": 300,
+      "calories": 387,
+      "protein": 14.7,
+      "carbs": 77.1,
+      "fat": 0.3
     }
   ],
   "comparison": [
     {
       "name": "Spaghetti gekocht (250g)",
-      "calories": 393,
-      "emoji": "🍝"
+      "calories": 395,
+      "emoji": "🍝",
+      "basis": [
+        {
+          "slug": "spaghetti",
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Reis gekocht (250g)",
       "calories": 325,
-      "emoji": "🍚"
+      "emoji": "🍚",
+      "basis": [
+        {
+          "slug": "reis",
+          "g": 250
+        }
+      ]
     },
     {
-      "name": "Ramen-Nudeln gekocht (250g)",
-      "calories": 350,
-      "emoji": "🍜"
+      "name": "Soba-Nudeln gekocht (250g)",
+      "calories": 248,
+      "emoji": "🍜",
+      "basis": [
+        {
+          "fdcId": 168907,
+          "g": 250
+        }
+      ]
     },
     {
       "name": "Mie-Nudeln gekocht (250g)",
-      "calories": 343,
-      "emoji": "🍲"
+      "calories": 345,
+      "emoji": "🍲",
+      "basis": [
+        {
+          "slug": "mie-nudeln",
+          "g": 250
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Gekocht deutlich kalorienärmer",
-      "text": "Udon nehmen beim Kochen viel Wasser auf. Gekocht haben sie nur ca. 127 kcal pro 100g, getrocknet dagegen rund 348 kcal pro 100g.",
+      "text": "Fertig gegarte Udon haben viel Wasser aufgenommen und kommen nur auf 129 kcal pro 100g (Bamboo Garden, vorgegart). Getrocknete Udon haben ungekocht ein Vielfaches davon, wichtig ist also, ob sich eine Angabe auf trockene oder fertige Nudeln bezieht.",
       "icon": "💧"
     },
     {
@@ -129,34 +161,34 @@
     },
     {
       "title": "Realistisch portionieren",
-      "text": "Eine Standard-Portion sind rund 80g Trockengewicht (etwa 250g gekocht) mit ca. 318 kcal. Wer abnimmt, sollte die Portionsgröße im Blick behalten.",
+      "text": "Eine Standard-Portion sind rund 250g gegarte Udon mit ca. 323 kcal, ein Beutel vorgegarte Udon (150g) kommt auf 194 kcal. Wer abnimmt, sollte die Portionsgröße im Blick behalten.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Udon-Nudeln?",
-      "answer": "Gekochte Udon-Nudeln haben etwa 127 kcal pro 100g. Eine typische Portion von 250g liefert rund 318 kcal."
+      "answer": "Gekochte bzw. vorgegarte Udon-Nudeln haben am Beispiel Bamboo Garden Udon Nudeln 129 kcal pro 100g (Herstellerangabe). Eine typische Portion von 250g liefert rund 323 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Portion Udon?",
-      "answer": "Eine Standard-Portion von 250g gekochten Udon hat ca. 318 kcal. Große Portionen mit 350g kommen auf etwa 445 kcal."
+      "answer": "Eine Standard-Portion von 250g gekochten Udon hat ca. 323 kcal. Große Portionen mit 350g kommen auf etwa 452 kcal, ein Beutel vorgegarte Udon (150g) auf 194 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Udon?",
-      "answer": "Gekochte Udon enthalten rund 27g Kohlenhydrate pro 100g. Eine Portion von 250g liefert damit etwa 68g Kohlenhydrate."
+      "answer": "Gekochte Udon enthalten rund 25,7g Kohlenhydrate pro 100g. Eine Portion von 250g liefert damit etwa 64g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Udon?",
-      "answer": "Udon liefern nur wenig Protein, etwa 2,8g pro 100g. Für eine eiweißreiche Mahlzeit solltest du Tofu, Ei oder Fleisch kombinieren."
+      "answer": "Udon liefern nur wenig Protein, etwa 4,9g pro 100g (Bamboo Garden). Für eine eiweißreiche Mahlzeit solltest du Tofu, Ei oder Fleisch kombinieren."
     },
     {
       "question": "Sind Udon-Nudeln zum Abnehmen geeignet?",
-      "answer": "Gekocht sind Udon mit 127 kcal pro 100g relativ kalorienarm. Achte beim Abnehmen aber auf die Portionsgröße und eine kalorienarme Brühe ohne fettreiche Beilagen."
+      "answer": "Gekocht sind Udon mit 129 kcal pro 100g relativ kalorienarm. Achte beim Abnehmen aber auf die Portionsgröße und eine kalorienarme Brühe ohne fettreiche Beilagen."
     },
     {
       "question": "Sind Udon gesund?",
-      "answer": "Udon bestehen meist aus Weizenmehl und liefern vor allem Kohlenhydrate. Sie sind als Sättigungsbeilage in Ordnung, enthalten aber wenig Ballaststoffe und Eiweiß. Vollkorn-Varianten oder eine gemüsereiche Zubereitung machen sie ausgewogener."
+      "answer": "Udon bestehen meist aus Weizenmehl, Wasser und Salz und liefern vor allem Kohlenhydrate. Sie sind als Sättigungsbeilage in Ordnung, enthalten aber kaum Fett und vergleichsweise wenig Eiweiß. Eine gemüsereiche Zubereitung mit Tofu, Ei oder Fleisch macht sie ausgewogener."
     }
   ],
   "related_foods": [

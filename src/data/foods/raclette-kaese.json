@@ -3,9 +3,17 @@
   "name": "Raclette Käse",
   "emoji": "🧀",
   "category": "supermarkt",
+  "source": "Herstellerangabe ALDI SÜD, Roi de Trèfle Raclette Käse (https://www.aldi-sued.de/produkt/roi-de-trefle-raclette-kaese-400-g-000000000000205853, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel ALDI SÜD Roi de Trèfle Raclette Käse",
+  "hersteller": {
+    "name": "ALDI SÜD",
+    "produkt": "Roi de Trèfle Raclette Käse",
+    "url": "https://www.aldi-sued.de/produkt/roi-de-trefle-raclette-kaese-400-g-000000000000205853",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Raclette Käse Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Raclette Käse? 357 kcal pro 100g. Nährwerte, Protein & Fett im Überblick - plus Tipps für den Raclette-Abend.",
+    "description": "Wie viele Kalorien hat Raclette Käse? Am Beispiel ALDI SÜD Roi de Trèfle 360 kcal pro 100 g. Nährwerte, Protein & Fett im Überblick, plus Tipps für den Raclette-Abend.",
     "keywords": [
       "raclette käse kalorien",
       "raclette käse kcal",
@@ -16,106 +24,129 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 357,
-    "protein_per_100g": 23,
-    "carbs_per_100g": 0.5,
+    "calories_per_100g": 360,
+    "protein_per_100g": 26,
+    "carbs_per_100g": 1,
     "fat_per_100g": 28,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 30,
-    "typical_portion_name": "1 Raclette-Scheibe (30g)"
+    "typical_portion_name": "1 Raclette-Scheibe (ca. 30g)"
   },
   "variants": [
     {
-      "name": "1 Raclette-Scheibe (30g)",
+      "name": "1 Raclette-Scheibe (ca. 30g)",
       "portion_g": 30,
-      "calories": 107,
-      "protein": 7,
-      "carbs": 0.2,
+      "calories": 108,
+      "protein": 7.8,
+      "carbs": 0.3,
       "fat": 8.4,
       "tip": "Standard fürs Pfännchen"
     },
     {
-      "name": "2 Scheiben (60g)",
+      "name": "2 Scheiben (ca. 60g)",
       "portion_g": 60,
-      "calories": 214,
-      "protein": 14,
-      "carbs": 0.3,
+      "calories": 216,
+      "protein": 15.6,
+      "carbs": 0.6,
       "fat": 16.8
     },
     {
       "name": "Raclette-Portion ganzer Abend (150g)",
       "portion_g": 150,
-      "calories": 536,
-      "protein": 35,
-      "carbs": 0.8,
+      "calories": 540,
+      "protein": 39,
+      "carbs": 1.5,
       "fat": 42,
       "tip": "Typische Menge pro Person"
     },
     {
       "name": "Pro 100g",
       "portion_g": 100,
-      "calories": 357,
-      "protein": 23,
-      "carbs": 0.5,
+      "calories": 360,
+      "protein": 26,
+      "carbs": 1,
       "fat": 28
     },
     {
       "name": "Würfel zum Snacken (20g)",
       "portion_g": 20,
-      "calories": 71,
-      "protein": 4.6,
-      "carbs": 0.1,
+      "calories": 72,
+      "protein": 5.2,
+      "carbs": 0.2,
       "fat": 5.6
-    },
-    {
-      "name": "Raclette light / fettreduziert (30g)",
-      "portion_g": 30,
-      "calories": 80,
-      "protein": 8,
-      "carbs": 0.3,
-      "fat": 5,
-      "tip": "Variante mit weniger Fett"
     },
     {
       "name": "Halbe Packung (200g)",
       "portion_g": 200,
-      "calories": 714,
-      "protein": 46,
-      "carbs": 1,
+      "calories": 720,
+      "protein": 52,
+      "carbs": 2,
       "fat": 56
+    },
+    {
+      "name": "Ganze Packung (400g)",
+      "portion_g": 400,
+      "calories": 1440,
+      "protein": 104,
+      "carbs": 4,
+      "fat": 112
     }
   ],
   "comparison": [
     {
       "name": "Gouda (30g)",
       "calories": 107,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaese-gouda",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Mozzarella (30g)",
-      "calories": 75,
-      "emoji": "🧀"
+      "calories": 90,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Feta (30g)",
-      "calories": 79,
-      "emoji": "🧀"
+      "calories": 80,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "feta",
+          "g": 30
+        }
+      ]
     },
     {
       "name": "Parmesan (30g)",
       "calories": 118,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "parmesan",
+          "g": 30
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Eiweißreich, aber fettreich",
-      "text": "Raclette liefert mit 23g Protein pro 100g viel Eiweiß, enthält aber auch 28g Fett. Eine Scheibe (30g) hat rund 107 kcal.",
+      "text": "Raclette-Käse liefert am Beispiel ALDI SÜD Roi de Trèfle 26 g Protein pro 100 g, enthält aber auch 28 g Fett. Eine Scheibe (ca. 30 g) hat rund 108 kcal.",
       "icon": "🧀"
     },
     {
       "title": "Menge beim Raclette-Abend im Blick",
-      "text": "Beim Raclette kommen schnell 150g und mehr pro Person zusammen - das sind über 500 kcal nur durch den Käse, ohne Beilagen.",
+      "text": "Beim Raclette kommen schnell 150g und mehr pro Person zusammen: Das sind über 500 kcal nur durch den Käse, ohne Beilagen.",
       "icon": "⚖️"
     },
     {
@@ -125,31 +156,31 @@
     },
     {
       "title": "Leichtere Variante wählen",
-      "text": "Fettreduzierter Raclette spart pro Scheibe rund ein Drittel der Kalorien und liefert trotzdem reichlich Protein.",
+      "text": "Fettreduzierte Raclette-Sorten haben weniger Kalorien als klassischer Raclette-Käse, die genauen Werte stehen auf der Packung.",
       "icon": "🍃"
     },
     {
       "title": "Kohlenhydratarm",
-      "text": "Mit nur 0,5g Kohlenhydraten pro 100g passt Raclette gut in eine Low-Carb-Ernährung - die Kalorien stecken im Fett.",
+      "text": "Mit nur 1 g Kohlenhydraten pro 100 g passt Raclette gut in eine Low-Carb-Ernährung: Die Kalorien stecken im Fett.",
       "icon": "🔢"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Raclette Käse?",
-      "answer": "Raclette Käse hat etwa 357 kcal pro 100g. Eine einzelne Raclette-Scheibe (30g) liefert rund 107 kcal."
+      "answer": "Raclette Käse hat am Beispiel ALDI SÜD Roi de Trèfle Raclette Käse 360 kcal pro 100 g (Herstellerangabe). Eine einzelne Raclette-Scheibe (ca. 30 g) liefert rund 108 kcal."
     },
     {
       "question": "Wie viel Protein steckt in Raclette Käse?",
-      "answer": "Raclette enthält rund 23g Eiweiß pro 100g und zählt damit zu den proteinreichen Käsesorten."
+      "answer": "Raclette enthält am Beispiel Roi de Trèfle 26 g Eiweiß pro 100 g und zählt damit zu den proteinreichen Käsesorten."
     },
     {
       "question": "Hat Raclette Käse Kohlenhydrate?",
-      "answer": "Nein, praktisch nicht. Raclette hat nur etwa 0,5g Kohlenhydrate pro 100g und ist damit für Low-Carb-Ernährung geeignet."
+      "answer": "Nein, praktisch nicht. Raclette hat am Beispiel Roi de Trèfle nur 1 g Kohlenhydrate pro 100 g und ist damit für Low-Carb-Ernährung geeignet."
     },
     {
       "question": "Wie viele Kalorien hat ein ganzer Raclette-Abend?",
-      "answer": "Pro Person isst man oft rund 150g Käse, das entspricht etwa 536 kcal - dazu kommen noch Kartoffeln, Brot und Beilagen."
+      "answer": "Pro Person isst man oft rund 150g Käse, das entspricht rund 540 kcal, dazu kommen noch Kartoffeln, Brot und Beilagen."
     },
     {
       "question": "Ist Raclette Käse zum Abnehmen geeignet?",

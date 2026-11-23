@@ -3,9 +3,17 @@
   "name": "Röstzwiebeln",
   "emoji": "🧅",
   "category": "supermarkt",
+  "source": "Herstellerangabe Kühne, Röstzwiebeln (100 g) (https://www.kuehne.de/produkte/feinkost-fruchtiges/roestzwiebeln-becher, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel Kühne Röstzwiebeln",
+  "hersteller": {
+    "name": "Kühne",
+    "produkt": "Röstzwiebeln",
+    "url": "https://www.kuehne.de/produkte/feinkost-fruchtiges/roestzwiebeln-becher",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Röstzwiebeln Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Röstzwiebeln? 100g haben ca. 600 kcal, 1 EL nur 48 kcal. Nährwerte, Varianten & Tipps zum Sparen im Überblick.",
+    "description": "Wie viele Kalorien haben Röstzwiebeln? 606 kcal pro 100g am Beispiel Kühne Röstzwiebeln, 1 EL (8g) 48 kcal. Nährwerte, Varianten & Tipps zum Sparen im Überblick.",
     "keywords": [
       "röstzwiebeln kalorien",
       "roestzwiebeln kcal",
@@ -16,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 600,
+    "calories_per_100g": 606,
     "protein_per_100g": 6,
-    "carbs_per_100g": 42,
-    "fat_per_100g": 45,
-    "fiber_per_100g": 5,
+    "carbs_per_100g": 40,
+    "fat_per_100g": 46,
+    "fiber_per_100g": 4,
     "typical_portion_g": 15,
     "typical_portion_name": "2 EL (15g)"
   },
@@ -37,7 +45,7 @@
     {
       "name": "2 EL (15g)",
       "portion_g": 15,
-      "calories": 90,
+      "calories": 91,
       "protein": 1,
       "carbs": 6,
       "fat": 7,
@@ -46,7 +54,7 @@
     {
       "name": "Portion auf Salat (10g)",
       "portion_g": 10,
-      "calories": 60,
+      "calories": 61,
       "protein": 1,
       "carbs": 4,
       "fat": 5
@@ -54,57 +62,93 @@
     {
       "name": "1 Handvoll (25g)",
       "portion_g": 25,
-      "calories": 150,
+      "calories": 152,
       "protein": 2,
-      "carbs": 11,
-      "fat": 11
+      "carbs": 10,
+      "fat": 12
     },
     {
-      "name": "Pro 100g (Beutel)",
+      "name": "1 Becher (100g)",
       "portion_g": 100,
-      "calories": 600,
+      "calories": 606,
       "protein": 6,
-      "carbs": 42,
-      "fat": 45
+      "carbs": 40,
+      "fat": 46
     },
     {
       "name": "Selbstgemacht ohne Mehl, in der Pfanne (25g)",
       "portion_g": 25,
-      "calories": 70,
-      "protein": 1,
-      "carbs": 4,
-      "fat": 5,
-      "tip": "Deutlich kalorienärmer"
+      "calories": 31,
+      "protein": 0,
+      "carbs": 2,
+      "fat": 3,
+      "tip": "Deutlich kalorienärmer",
+      "basis": [
+        {
+          "fdcId": 170004,
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Geröstete Zwiebeln frisch, leicht angebraten (50g)",
       "portion_g": 50,
-      "calories": 65,
-      "protein": 1,
-      "carbs": 7,
-      "fat": 3
+      "calories": 62,
+      "protein": 0,
+      "carbs": 4,
+      "fat": 5,
+      "basis": [
+        {
+          "fdcId": 170004,
+          "g": 50
+        }
+      ]
     }
   ],
   "comparison": [
     {
       "name": "Croutons (15g)",
-      "calories": 65,
-      "emoji": "🍞"
+      "calories": 70,
+      "emoji": "🍞",
+      "basis": [
+        {
+          "fdcId": 172752,
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Speckwürfel (15g)",
-      "calories": 60,
-      "emoji": "🥓"
+      "calories": 59,
+      "emoji": "🥓",
+      "basis": [
+        {
+          "slug": "speck",
+          "g": 15
+        }
+      ]
     },
     {
-      "name": "Geriebener Käse (15g)",
-      "calories": 60,
-      "emoji": "🧀"
+      "name": "Geriebener Gouda (15g)",
+      "calories": 53,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "kaese-gouda",
+          "g": 15
+        }
+      ]
     },
     {
       "name": "Zwiebel roh (15g)",
-      "calories": 4,
-      "emoji": "🧅"
+      "calories": 6,
+      "emoji": "🧅",
+      "basis": [
+        {
+          "slug": "zwiebel",
+          "g": 15
+        }
+      ]
     }
   ],
   "tips": [
@@ -115,7 +159,7 @@
     },
     {
       "title": "Fett ist der Hauptgrund",
-      "text": "Röstzwiebeln werden in Öl frittiert und mit Mehl umhüllt. Daher kommen rund 45g Fett pro 100g und die hohe Kaloriendichte von 600 kcal.",
+      "text": "Röstzwiebeln werden in Öl frittiert und mit Mehl umhüllt. Daher kommen rund 46g Fett pro 100g und die hohe Kaloriendichte von 606 kcal (Kühne Röstzwiebeln).",
       "icon": "🛢️"
     },
     {
@@ -125,27 +169,27 @@
     },
     {
       "title": "Roh statt geröstet beim Abnehmen",
-      "text": "Eine rohe Zwiebel liefert je 100g nur etwa 28 kcal. Wer Kalorien sparen will, nutzt frische Zwiebeln und greift bei Röstzwiebeln nur sparsam zu.",
+      "text": "Eine rohe Zwiebel liefert je 100g nur etwa 40 kcal. Wer Kalorien sparen will, nutzt frische Zwiebeln und greift bei Röstzwiebeln nur sparsam zu.",
       "icon": "🥗"
     },
     {
       "title": "Auf die Menge achten",
-      "text": "Eine Handvoll (25g) hat bereits 150 kcal. Über Aufläufe oder Burger gestreut summiert sich das schnell.",
+      "text": "Eine Handvoll (25g) hat bereits 152 kcal. Über Aufläufe oder Burger gestreut summiert sich das schnell.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Röstzwiebeln?",
-      "answer": "100g Röstzwiebeln aus dem Supermarkt haben rund 600 kcal. Eine übliche Portion von 2 EL (15g) liefert etwa 90 kcal, 1 EL (8g) nur rund 48 kcal."
+      "answer": "Röstzwiebeln haben am Beispiel Kühne Röstzwiebeln 606 kcal pro 100g (Herstellerangabe). Eine übliche Portion von 2 EL (15g) liefert etwa 91 kcal, 1 EL (8g) rund 48 kcal."
     },
     {
       "question": "Warum haben Röstzwiebeln so viele Kalorien?",
-      "answer": "Die Zwiebeln werden in Mehl gewendet und in Öl frittiert. Durch das aufgenommene Fett (ca. 45g pro 100g) und das Mehl steigt die Kaloriendichte stark an, anders als bei rohen Zwiebeln mit nur etwa 28 kcal je 100g."
+      "answer": "Die Zwiebeln werden in Mehl gewendet und in Öl frittiert. Durch das aufgenommene Fett (46g pro 100g bei Kühne) und das Mehl steigt die Kaloriendichte stark an, anders als bei rohen Zwiebeln mit nur etwa 40 kcal je 100g."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Röstzwiebeln?",
-      "answer": "Röstzwiebeln enthalten etwa 42g Kohlenhydrate pro 100g, vor allem durch die Mehlpanade. In einer Portion von 15g sind das rund 6g."
+      "answer": "Röstzwiebeln enthalten etwa 40g Kohlenhydrate pro 100g, davon 10g Zucker, aus den Zwiebeln selbst und aus dem Mehl. In einer Portion von 15g sind das rund 6g."
     },
     {
       "question": "Wie viel Protein haben Röstzwiebeln?",
@@ -157,7 +201,7 @@
     },
     {
       "question": "Sind Röstzwiebeln gesund?",
-      "answer": "Röstzwiebeln liefern etwas Ballaststoffe, sind durch das Frittieren aber fett- und kalorienreich. In kleinen Mengen als Geschmackgeber sind sie in Ordnung, als Hauptbestandteil weniger empfehlenswert."
+      "answer": "Röstzwiebeln liefern etwas Ballaststoffe (4g pro 100g bei Kühne), sind durch das Frittieren aber fett- und kalorienreich. In kleinen Mengen als Geschmackgeber sind sie in Ordnung, als Hauptbestandteil weniger empfehlenswert."
     }
   ],
   "related_foods": [

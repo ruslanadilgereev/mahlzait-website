@@ -66,6 +66,17 @@ for (
 }
 const relatedFoodsMeta = [...curatedRelated, ...peerRelated];
 
+// Rezeptzutaten mit den Werten einer anderen Seite (slug), deren Werte eine
+// Herstellerangabe sind: Hinweis in der Fußzeile und isBasedOn
+const rezeptHerstellerangaben = (food.rezept?.zutaten ?? [])
+  .filter((z: any) => z.slug != null && allFoodsBySlug[z.slug]?.hersteller)
+  .map((z: any) => ({
+    zutat: z.name,
+    slug: z.slug,
+    seite: allFoodsBySlug[z.slug].name,
+    hersteller: allFoodsBySlug[z.slug].hersteller,
+  }));
+
 const seo = {
   title: food.seo.title,
   description: food.seo.description,
@@ -143,6 +154,12 @@ const howToSchema = {
 };
 
 const isBasedOn: object[] = [];
+const herstellerSeite = (h: any) => ({
+  "@type": "WebPage",
+  name: `${h.produkt}: Nährwertangabe von ${h.name}`,
+  url: h.url,
+  publisher: { "@type": "Organization", name: h.name },
+});
 if (typeof food.source === "string" && food.source.startsWith("USDA FoodData Central")) {
   isBasedOn.push({
     "@type": "Dataset",
@@ -157,13 +174,9 @@ if (typeof food.source === "string" && food.source.startsWith("USDA FoodData Cen
       url: "https://www.usda.gov",
     },
   });
+  for (const r of rezeptHerstellerangaben) isBasedOn.push(herstellerSeite(r.hersteller));
 } else if (food.hersteller) {
-  isBasedOn.push({
-    "@type": "WebPage",
-    name: `${food.hersteller.produkt}: Nährwertangabe von ${food.hersteller.name}`,
-    url: food.hersteller.url,
-    publisher: { "@type": "Organization", name: food.hersteller.name },
-  });
+  isBasedOn.push(herstellerSeite(food.hersteller));
 }
 
 const webAppSchema = {
@@ -266,5 +279,6 @@ const authorPersonSchema = {
     relatedFoodsMeta={relatedFoodsMeta}
     relatedArticles={relatedArticles}
     foodSpecificCalculators={foodSpecificCalculators}
+    rezeptHerstellerangaben={rezeptHerstellerangaben}
   />
 </Layout>

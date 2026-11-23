@@ -3,9 +3,17 @@
   "name": "Weingummi",
   "emoji": "🍬",
   "category": "supermarkt",
+  "source": "Herstellerangabe HARIBO, Weinland (https://www.haribo.com/de-de/produkte/haribo/weinland, abgerufen am 23.11.2026), Werte je 100 g; Fett laut Hersteller unter 0,5 g, hier 0 g; Ballaststoffe vom Hersteller nicht angegeben; allgemeine Seite, Werte am Beispiel HARIBO Weinland",
+  "hersteller": {
+    "name": "HARIBO",
+    "produkt": "Weinland",
+    "url": "https://www.haribo.com/de-de/produkte/haribo/weinland",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Weingummi Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Weingummi? 100g haben ca. 340 kcal, eine kleine Tüte (100g) ebenso. Nährwerte, Portionen & Tipps zum Naschen.",
+    "description": "Wie viele Kalorien hat Weingummi? 343 kcal pro 100g am Beispiel HARIBO Weinland, eine Handvoll (25g) 86 kcal. Nährwerte, Portionen & Tipps zum Naschen.",
     "keywords": [
       "weingummi kalorien",
       "weingummi kcal",
@@ -16,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 340,
-    "protein_per_100g": 7,
+    "calories_per_100g": 343,
+    "protein_per_100g": 6.9,
     "carbs_per_100g": 77,
-    "fat_per_100g": 0.1,
-    "fiber_per_100g": 0,
+    "fat_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 25,
     "typical_portion_name": "1 Handvoll (ca. 25g)"
   },
@@ -44,7 +52,7 @@
     {
       "name": "1 Handvoll (25g)",
       "portion_g": 25,
-      "calories": 85,
+      "calories": 86,
       "protein": 2,
       "carbs": 19,
       "fat": 0,
@@ -53,32 +61,33 @@
     {
       "name": "Halbe Tüte (50g)",
       "portion_g": 50,
-      "calories": 170,
-      "protein": 4,
+      "calories": 172,
+      "protein": 3,
       "carbs": 39,
       "fat": 0
     },
     {
       "name": "Kleine Tüte (100g)",
       "portion_g": 100,
-      "calories": 340,
+      "calories": 343,
       "protein": 7,
       "carbs": 77,
-      "fat": 0
+      "fat": 0,
+      "tip": "Kleiner Beutel HARIBO Weinland"
     },
     {
-      "name": "Große Tüte (200g)",
-      "portion_g": 200,
-      "calories": 680,
-      "protein": 14,
-      "carbs": 154,
+      "name": "Große Tüte (175g)",
+      "portion_g": 175,
+      "calories": 600,
+      "protein": 12,
+      "carbs": 135,
       "fat": 0,
-      "tip": "Ganze Standardtüte"
+      "tip": "Standardbeutel HARIBO Weinland"
     },
     {
       "name": "Familienpackung (300g)",
       "portion_g": 300,
-      "calories": 1020,
+      "calories": 1029,
       "protein": 21,
       "carbs": 231,
       "fat": 0
@@ -87,44 +96,68 @@
   "comparison": [
     {
       "name": "Lakritz (25g)",
-      "calories": 82,
-      "emoji": "🖤"
+      "calories": 99,
+      "emoji": "🖤",
+      "basis": [
+        {
+          "slug": "lakritz",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Schokolade (25g)",
-      "calories": 135,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (25g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 25
+        }
+      ]
     },
     {
       "name": "Apfel (180g)",
       "calories": 94,
-      "emoji": "🍎"
+      "emoji": "🍎",
+      "basis": [
+        {
+          "slug": "apfel",
+          "g": 180
+        }
+      ]
     },
     {
       "name": "Gummibärchen (25g)",
       "calories": 86,
-      "emoji": "🐻"
+      "emoji": "🐻",
+      "basis": [
+        {
+          "slug": "gummibaerchen",
+          "g": 25
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Fast fettfrei, aber zuckerreich",
-      "text": "Weingummi enthält kaum Fett, dafür besteht es fast komplett aus Zucker. Die 340 kcal pro 100g kommen also fast ausschließlich aus Kohlenhydraten.",
+      "text": "Weingummi enthält kaum Fett, dafür viel Zucker: HARIBO Weinland hat 77g Kohlenhydrate pro 100g, davon 46g Zucker. Die 343 kcal pro 100g kommen also überwiegend aus Kohlenhydraten.",
       "icon": "🍬"
     },
     {
       "title": "Portionen bewusst abteilen",
-      "text": "Aus der Tüte nascht man schnell zu viel. Teile dir lieber eine Handvoll (25g, ca. 85 kcal) ab und stelle die Tüte weg.",
+      "text": "Aus der Tüte nascht man schnell zu viel. Teile dir lieber eine Handvoll (25g, ca. 86 kcal) ab und stelle die Tüte weg.",
       "icon": "✋"
     },
     {
       "title": "Sattmacher es ist nicht",
-      "text": "Weingummi liefert keine Ballaststoffe und kaum sättigende Nährstoffe. Der Heißhunger kann nach dem Naschen schnell zurückkehren.",
+      "text": "Weingummi liefert kaum sättigende Nährstoffe. Der Heißhunger kann nach dem Naschen schnell zurückkehren.",
       "icon": "⚡"
     },
     {
       "title": "Protein aus Gelatine",
-      "text": "Die rund 7g Protein pro 100g stammen aus der Gelatine. Sie machen Weingummi aber nicht zu einer sinnvollen Eiweißquelle.",
+      "text": "Die knapp 7g Eiweiß pro 100g (HARIBO Weinland: 6,9g) stammen aus der Gelatine. Sie machen Weingummi aber nicht zu einer sinnvollen Eiweißquelle.",
       "icon": "💪"
     },
     {
@@ -136,19 +169,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Weingummi?",
-      "answer": "Weingummi hat etwa 340 kcal pro 100g. Eine typische Handvoll (25g) liefert rund 85 kcal."
+      "answer": "Weingummi hat am Beispiel HARIBO Weinland 343 kcal pro 100g (Herstellerangabe). Eine typische Handvoll (25g) liefert rund 86 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Tüte Weingummi?",
-      "answer": "Eine große Standardtüte mit 200g hat ca. 680 kcal, eine kleine Tüte mit 100g rund 340 kcal."
+      "answer": "Ein Standardbeutel HARIBO Weinland mit 175g hat rund 600 kcal, die kleine Tüte mit 100g 343 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Weingummi?",
-      "answer": "Weingummi besteht fast komplett aus Zucker und enthält etwa 77g Kohlenhydrate pro 100g."
+      "answer": "Weingummi enthält etwa 77g Kohlenhydrate pro 100g, davon 46g Zucker (HARIBO Weinland)."
     },
     {
       "question": "Hat Weingummi Protein?",
-      "answer": "Weingummi enthält rund 7g Protein pro 100g aus der Gelatine. Als Eiweißquelle ist es aber ungeeignet, da es vor allem Zucker liefert."
+      "answer": "Weingummi mit Gelatine enthält knapp 7g Eiweiß pro 100g (HARIBO Weinland: 6,9g). Als Eiweißquelle ist es aber ungeeignet, da es vor allem Zucker liefert."
     },
     {
       "question": "Ist Weingummi zum Abnehmen geeignet?",
@@ -156,7 +189,7 @@
     },
     {
       "question": "Ist Weingummi gesund?",
-      "answer": "Weingummi ist eine Süßigkeit ohne nennenswerte Nährstoffe oder Ballaststoffe. Es ist nicht gesund, in Maßen aber unbedenklich zu genießen."
+      "answer": "Weingummi ist eine Süßigkeit ohne nennenswerte Nährstoffe. Es ist nicht gesund, in Maßen aber unbedenklich zu genießen."
     }
   ],
   "related_foods": [

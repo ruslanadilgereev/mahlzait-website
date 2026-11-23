@@ -3,9 +3,17 @@
   "name": "Nougat Bits",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Herstellerangabe ALDI SÜD (Eigenmarke Golden Bridge), Nougat Bits 0,75 kg (https://www.aldi-sued.de/produkt/golden-bridge-nougat-bits-0-75-kg-000000000000503233, abgerufen am 23.11.2026), Werte je 100 g; allgemeine Seite, Werte am Beispiel Golden Bridge (ALDI SÜD) Nougat Bits",
+  "hersteller": {
+    "name": "Golden Bridge (ALDI SÜD)",
+    "produkt": "Nougat Bits",
+    "url": "https://www.aldi-sued.de/produkt/golden-bridge-nougat-bits-0-75-kg-000000000000503233",
+    "abgerufen": "2026-11-23",
+    "beispiel": true
+  },
   "seo": {
     "title": "Nougat Bits Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Nougat Bits? Eine Portion (40g) hat ca. 188 kcal, 100g rund 470 kcal. Alle Nährwerte, Portionen im Vergleich & Tipps.",
+    "description": "Wie viele Kalorien haben Nougat Bits? 482 kcal pro 100g am Beispiel Golden Bridge Nougat Bits (ALDI SÜD), eine Portion (40g) rund 193 kcal. Alle Nährwerte, Portionen im Vergleich & Tipps.",
     "keywords": [
       "nougat bits kalorien",
       "nougat bits kcal",
@@ -16,11 +24,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 470,
-    "protein_per_100g": 7,
-    "carbs_per_100g": 66,
-    "fat_per_100g": 16,
-    "fiber_per_100g": 3.5,
+    "calories_per_100g": 482,
+    "protein_per_100g": 6.7,
+    "carbs_per_100g": 62,
+    "fat_per_100g": 22,
+    "fiber_per_100g": 4.8,
     "typical_portion_g": 40,
     "typical_portion_name": "1 Portion (40g, ohne Milch)"
   },
@@ -28,100 +36,133 @@
     {
       "name": "Kleine Portion (30g)",
       "portion_g": 30,
-      "calories": 141,
-      "protein": 2.1,
-      "carbs": 19.8,
-      "fat": 4.8,
-      "tip": "Empfohlene Verzehrmenge laut Packung"
+      "calories": 145,
+      "protein": 2,
+      "carbs": 18.6,
+      "fat": 6.6
     },
     {
       "name": "1 Portion (40g)",
       "portion_g": 40,
-      "calories": 188,
-      "protein": 2.8,
-      "carbs": 26.4,
-      "fat": 6.4,
+      "calories": 193,
+      "protein": 2.7,
+      "carbs": 24.8,
+      "fat": 8.8,
       "tip": "Standard-Frühstücksportion ohne Milch"
     },
     {
       "name": "Große Portion (60g)",
       "portion_g": 60,
-      "calories": 282,
-      "protein": 4.2,
-      "carbs": 39.6,
-      "fat": 9.6
+      "calories": 289,
+      "protein": 4,
+      "carbs": 37.2,
+      "fat": 13.2
     },
     {
-      "name": "Portion mit 125ml Milch (40g + Milch)",
-      "portion_g": 165,
-      "calories": 268,
-      "protein": 7,
-      "carbs": 32.4,
-      "fat": 11,
-      "tip": "Inkl. fettarmer Milch (1,5%)"
+      "name": "Portion mit Milch (40g + 125 ml Vollmilch)",
+      "portion_g": 169,
+      "calories": 271,
+      "protein": 6.8,
+      "carbs": 31,
+      "fat": 13.1,
+      "tip": "Inkl. Vollmilch (3,5 %)",
+      "basis": [
+        {
+          "g": 40
+        },
+        {
+          "slug": "milch",
+          "ml": 125,
+          "g": 129
+        }
+      ]
     },
     {
       "name": "Handvoll als Snack (15g)",
       "portion_g": 15,
-      "calories": 71,
-      "protein": 1.1,
-      "carbs": 9.9,
-      "fat": 2.4
+      "calories": 72,
+      "protein": 1,
+      "carbs": 9.3,
+      "fat": 3.3
     },
     {
-      "name": "Halbe Packung (200g)",
-      "portion_g": 200,
-      "calories": 940,
-      "protein": 14,
-      "carbs": 132,
-      "fat": 32
-    },
-    {
-      "name": "Ganze Packung (375g)",
+      "name": "Halbe Packung (375g)",
       "portion_g": 375,
-      "calories": 1763,
-      "protein": 26.3,
-      "carbs": 247.5,
-      "fat": 60,
-      "tip": "Komplette Packung - reicht für mehrere Portionen"
+      "calories": 1808,
+      "protein": 25.1,
+      "carbs": 232.5,
+      "fat": 82.5
+    },
+    {
+      "name": "Ganze Packung (750g)",
+      "portion_g": 750,
+      "calories": 3615,
+      "protein": 50.3,
+      "carbs": 465,
+      "fat": 165,
+      "tip": "Packungsgröße Golden Bridge, reicht für viele Portionen"
     }
   ],
   "comparison": [
     {
-      "name": "Cornflakes",
-      "calories": 357,
-      "emoji": "🥣"
+      "name": "Cornflakes (100g)",
+      "calories": 365,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "cornflakes",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Müsli",
-      "calories": 367,
-      "emoji": "🥣"
+      "name": "Müsli (100g)",
+      "calories": 383,
+      "emoji": "🥣",
+      "basis": [
+        {
+          "slug": "muesli",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Granola",
-      "calories": 471,
-      "emoji": "🌾"
+      "name": "Granola (100g)",
+      "calories": 420,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "granola",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Schokolade Vollmilch",
+      "name": "Vollmilchschokolade (100g)",
       "calories": 535,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Auf die Portion achten",
-      "text": "Nougat Bits sind energiedicht (ca. 470 kcal pro 100g). Eine abgewogene 40g-Portion hat rund 188 kcal - eine voll gefüllte Schüssel kann schnell das Doppelte sein.",
+      "text": "Nougat Bits sind energiedicht (482 kcal pro 100g am Beispiel Golden Bridge). Eine abgewogene 40g-Portion hat rund 193 kcal, eine voll gefüllte Schüssel kann schnell das Doppelte sein.",
       "icon": "⚖️"
     },
     {
       "title": "Hoher Zuckeranteil",
-      "text": "Mit rund 30g Zucker pro 100g zählen Nougat Bits zu den süßen Frühstücksflocken. Als gelegentlicher Genuss sind sie in Ordnung, als tägliches Frühstück eher weniger geeignet.",
+      "text": "Mit rund 27g Zucker pro 100g zählen Nougat Bits zu den süßen Frühstücksflocken. Als gelegentlicher Genuss sind sie in Ordnung, als tägliches Frühstück eher weniger geeignet.",
       "icon": "🍬"
     },
     {
       "title": "Mit Milch wird daraus eine Mahlzeit",
-      "text": "Zusammen mit 125ml fettarmer Milch liefert die Portion etwas Eiweiß und Kalzium und sättigt besser als die Flocken pur.",
+      "text": "Zusammen mit 125 ml Milch liefert die Portion etwas Eiweiß und Kalzium und sättigt besser als die Flocken pur.",
       "icon": "🥛"
     },
     {
@@ -138,19 +179,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien haben Nougat Bits?",
-      "answer": "Nougat Bits haben rund 470 kcal pro 100g. Eine typische Portion von 40g (ohne Milch) liefert etwa 188 kcal, die auf der Packung empfohlene Menge von 30g rund 141 kcal."
+      "answer": "Nougat Bits haben am Beispiel Golden Bridge Nougat Bits (ALDI SÜD) 482 kcal pro 100g (Herstellerangabe). Eine typische Portion von 40g (ohne Milch) liefert etwa 193 kcal, eine kleine Portion von 30g rund 145 kcal."
     },
     {
       "question": "Wie viele Kalorien hat eine Schüssel Nougat Bits mit Milch?",
-      "answer": "Eine 40g-Portion mit 125ml fettarmer Milch (1,5%) kommt auf etwa 268 kcal. Mit Vollmilch sind es ein paar Kalorien mehr."
+      "answer": "Eine 40g-Portion mit 125 ml Vollmilch kommt auf etwa 271 kcal. Mit fettarmer Milch sind es etwas weniger."
     },
     {
       "question": "Wie viel Zucker steckt in Nougat Bits?",
-      "answer": "Nougat Bits enthalten rund 30g Zucker pro 100g. In einer 40g-Portion sind das etwa 12g Zucker - ein deutlicher Anteil für ein Frühstück."
+      "answer": "Nougat Bits enthalten rund 27g Zucker pro 100g (Golden Bridge). In einer 40g-Portion sind das etwa 11g Zucker, ein deutlicher Anteil für ein Frühstück."
     },
     {
       "question": "Wie viele Kohlenhydrate haben Nougat Bits?",
-      "answer": "Pro 100g enthalten Nougat Bits etwa 66g Kohlenhydrate. Eine 40g-Portion liefert rund 26g Kohlenhydrate, überwiegend aus Getreide und Zucker."
+      "answer": "Pro 100g enthalten Nougat Bits etwa 62g Kohlenhydrate. Eine 40g-Portion liefert rund 25g Kohlenhydrate, überwiegend aus Getreide und Zucker."
     },
     {
       "question": "Sind Nougat Bits zum Abnehmen geeignet?",
@@ -158,7 +199,7 @@
     },
     {
       "question": "Wie viel Eiweiß haben Nougat Bits?",
-      "answer": "Nougat Bits enthalten rund 7g Eiweiß pro 100g. Eine 40g-Portion liefert knapp 3g Protein - mit Milch kommen weitere 4g hinzu."
+      "answer": "Nougat Bits enthalten rund 6,7g Eiweiß pro 100g. Eine 40g-Portion liefert knapp 3g Protein, mit 125 ml Milch kommen weitere 4g hinzu."
     }
   ],
   "related_foods": [

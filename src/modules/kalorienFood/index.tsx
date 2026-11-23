@@ -54,14 +54,7 @@ interface FoodData {
     einheit?: "ml";
   };
   // Herstellerangabe für Markenprodukte, die USDA FoodData Central nicht führt
-  hersteller?: {
-    name: string;
-    produkt: string;
-    url: string;
-    abgerufen: string;
-    // allgemeine Seite, deren Werte ein Markenprodukt als Beispiel nennen
-    beispiel?: boolean;
-  };
+  hersteller?: Herstellerangabe;
   variants: FoodVariant[];
   comparison: FoodComparison[];
   tips: FoodTip[];
@@ -69,7 +62,36 @@ interface FoodData {
   related_foods: string[];
   // Herkunft der Werte (docs/naehrwerte-herkunft-audit.md); fehlt bei offenen Seiten
   source?: string;
-  rezept?: { zutaten: Array<{ name: string; g: number; fdcId: number }> };
+  // Zutaten mit FDC-ID oder mit den Werten einer anderen Seite (slug, Herstellerangabe)
+  rezept?: { zutaten: Array<{ name: string; g: number; ml?: number; fdcId?: number; slug?: string }>; gewicht_g?: number };
+}
+
+interface Herstellerangabe {
+  name: string;
+  produkt: string;
+  url: string;
+  abgerufen: string;
+  // allgemeine Seite, deren Werte ein Markenprodukt als Beispiel nennen
+  beispiel?: boolean;
+}
+
+// Rezeptzutat mit den Werten einer anderen Seite, deren Werte eine Herstellerangabe sind
+interface RezeptHerstellerangabe {
+  zutat: string;
+  slug: string;
+  seite: string;
+  hersteller: Herstellerangabe;
+}
+
+const datum = (iso: string) => iso.split("-").reverse().join(".");
+// Hinweis unter der Nährwerttabelle ("Herstellerangabe: ..."), Fußzeile ("Quelle: Herstellerangabe ...")
+// oder Rezeptzutat; allgemeine Seiten "Werte am Beispiel ... (Herstellerangabe)"
+function herstellerHinweis(h: Herstellerangabe, form: "hinweis" | "quelle" | "zutat") {
+  const vor = form === "quelle" ? "Quelle: " : "";
+  if (h.beispiel) return `${vor}Werte am Beispiel ${h.name} ${h.produkt} (Herstellerangabe), abgerufen am ${datum(h.abgerufen)}`;
+  const art = "Herstellerangabe";
+  if (form === "hinweis") return `${art}: ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}`;
+  return `${vor}${art} ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}`;
 }
 
 interface RelatedArticle {
@@ -95,9 +117,10 @@ interface Props {
   }>;
   relatedArticles?: RelatedArticle[];
   foodSpecificCalculators?: FoodSpecificCalculator[];
+  rezeptHerstellerangaben?: RezeptHerstellerangabe[];
 }
 
-function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foodSpecificCalculators }: Props) {
+function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foodSpecificCalculators, rezeptHerstellerangaben = [] }: Props) {
   const [portionGrams, setPortionGrams] = useState<number>(food.overview.typical_portion_g);
   const [openFaq, setOpenFaq] = useState<number | null>(null);
 
@@ -335,10 +358,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
               </div>
               {food.hersteller && (
                 <p className="mt-4 text-sm opacity-70">
-                  {food.hersteller.beispiel
-                    ? `Werte am Beispiel ${food.hersteller.name} ${food.hersteller.produkt} (Herstellerangabe), abgerufen am `
-                    : `Herstellerangabe: ${food.hersteller.name}, ${food.hersteller.produkt}, abgerufen am `}
-                  {food.hersteller.abgerufen.split("-").reverse().join(".")}.{" "}
+                  {herstellerHinweis(food.hersteller, "hinweis")}.{" "}
                   <a
                     href={food.hersteller.url}
                     className="link"
@@ -615,12 +635,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
           {/* Quelle der Werte laut source-Feld (für Zitierbarkeit); ohne belegte Quelle kein Hinweis */}
           <div className="max-w-2xl mx-auto mt-4 mb-12 text-xs opacity-60 text-center leading-relaxed">
             {food.hersteller ? (
-              <>
-                {food.hersteller.beispiel
-                  ? `Quelle: Werte am Beispiel ${food.hersteller.name} ${food.hersteller.produkt} (Herstellerangabe), abgerufen am `
-                  : `Quelle: Herstellerangabe ${food.hersteller.name}, ${food.hersteller.produkt}, abgerufen am `}
-                {food.hersteller.abgerufen.split("-").reverse().join(".")}.{" "}
-              </>
+              <>{herstellerHinweis(food.hersteller, "quelle")}. </>
             ) : fdcIds.length > 0 ? (
               <>
                 Quelle:{" "}
@@ -633,8 +648,19 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   USDA FoodData Central
                 </a>
                 {istRezept
-                  ? `, Rezeptrechnung aus Zutaten mit den FDC-IDs ${fdcIds.join(", ")}. `
+                  ? `, Rezeptrechnung aus Zutaten mit den FDC-IDs ${fdcIds.join(", ")}${rezeptHerstellerangaben.length ? "" : ". "}`
                   : `, FDC-ID ${fdcIds[0]}, Werte je 100 g. `}
+                {istRezept &&
+                  rezeptHerstellerangaben.map((r) => (
+                    <span key={r.slug}>
+                      {`; ${r.zutat}: ${herstellerHinweis(r.hersteller, "zutat")} (Seite `}
+                      <a href={`/kalorien/${r.slug}/`} className="underline hover:opacity-100">
+                        {r.seite}
+                      </a>
+                      )
+                    </span>
+                  ))}
+                {istRezept && rezeptHerstellerangaben.length > 0 && ". "}
               </>
             ) : null}
             Korrekturen an{" "}
