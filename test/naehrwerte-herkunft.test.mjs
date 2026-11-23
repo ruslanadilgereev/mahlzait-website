@@ -70,6 +70,12 @@ const OFFEN = new Set([
 // Seiten nach Regel 4 (Herstellerwerte je 100 g, Stückgewicht geschätzt)
 const STUECKGEWICHT_GESCHAETZT = new Set(["celebrations", "ferrero-kuesschen", "fritt", "gustavo-gusto-margherita", "gustavo-gusto-pizza", "heisse-tasse", "iglo-backfisch", "leibniz-butterkeks", "lidl-ciabatta", "lion", "maggi", "maoam", "maoam-bloxx", "maoam-joystixx", "maoam-stripes", "mentos", "milka-noisette", "milka-schokolade", "mon-cheri", "neuburger", "nordsee-backfisch-baguette", "ritter-sport", "schogetten", "smarties", "tuc", "tuc-cracker", "tuc-kekse"]);
 
+// Regel 5: nicht mehr im Sortiment des Herstellers (Stand 23.11.2026)
+const NICHT_IM_SORTIMENT = new Set(["magnum-double-caramel", "mc-frappe", "pepsi-max", "philadelphia-light", "snickers-crisp", "twister-eis", "yfood"]);
+
+// Regel 5: Herstellerangaben widersprechen sich
+const WIDERSPRUECHLICH = new Set(["giotto"]);
+
 const alle = alleLebensmittel();
 const seiten = new Map(alle.map(({ slug, food }) => [slug, food]));
 const umgestellt = alle.filter(({ slug }) => !OFFEN.has(slug));
@@ -220,6 +226,15 @@ test("geschätzte Stückgewichte nur bei Herstellerangaben und mit ca. im Namen"
     assert.ok(istHersteller(food), slug + ": keine Herstellerangabe");
     assert.ok(food.overview.portion_geschaetzt || food.variants.some((v) => v.stueck_geschaetzt), slug + ": Schätzung nicht gekennzeichnet");
   }
+});
+
+// Nicht mehr erhältliche Produkte und widersprüchliche Herstellerwerte
+// (Entscheidung vom 23.11.2026): Werte unverändert, Seite offen, sichtbarer Vermerk.
+test("Vermerk nur auf offenen Seiten, Auslaufprodukte und Widersprüche vermerkt", () => {
+  const ohneOffen = alle.filter(({ slug, food }) => food.vermerk != null && !OFFEN.has(slug)).map(({ slug }) => slug);
+  assert.deepEqual(ohneOffen, []);
+  for (const slug of NICHT_IM_SORTIMENT) assert.equal(seiten.get(slug).vermerk, "nicht mehr im Sortiment, Stand 23.11.2026", slug);
+  for (const slug of WIDERSPRUECHLICH) assert.match(seiten.get(slug).vermerk, /^Herstellerangaben widersprüchlich \(.+\), Stand 23\.11\.2026$/, slug);
 });
 
 test("kcal-Werte im source-Feld passen zum genannten FDC-Eintrag", () => {

@@ -59,6 +59,8 @@ interface FoodData {
   };
   // Herstellerangabe für Markenprodukte, die USDA FoodData Central nicht führt
   hersteller?: Herstellerangabe;
+  // offene Seite: sichtbarer Vermerk, warum die Werte nicht belegt sind
+  vermerk?: string;
   variants: FoodVariant[];
   comparison: FoodComparison[];
   tips: FoodTip[];
@@ -367,6 +369,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   {`${food.overview.typical_portion_name}: ca. ${amount(food.overview.typical_portion_g)}, Stückgewicht nicht vom Hersteller angegeben.`}
                 </p>
               )}
+              {food.vermerk && <p className="mt-4 text-sm opacity-70">{`Hinweis: ${food.vermerk}.`}</p>}
               {food.hersteller && (
                 <p className="mt-4 text-sm opacity-70">
                   {herstellerHinweis(food.hersteller, "hinweis")}.{" "}
@@ -676,6 +679,8 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   ))}
                 {istRezept && rezeptHerstellerangaben.length > 0 && ". "}
               </>
+            ) : food.vermerk ? (
+              <>{`Hinweis: ${food.vermerk}. `}</>
             ) : null}
             Korrekturen an{" "}
             <a href="mailto:kontakt@mahlzait.de" className="underline hover:opacity-100">

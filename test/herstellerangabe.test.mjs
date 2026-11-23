@@ -174,6 +174,19 @@ test("Stückgewicht nicht vom Hersteller: als Schätzung sichtbar", () => {
   }
 });
 
+test("Auslaufprodukt oder widersprüchliche Herstellerangaben: Vermerk sichtbar, keine Quelle", () => {
+  // Regel 5 (23.11.2026): Werte unverändert, Seite offen, sichtbarer Vermerk
+  for (const slug of ["giotto","magnum-double-caramel","mc-frappe","pepsi-max","philadelphia-light","snickers-crisp","twister-eis","yfood"]) {
+    const food = lade(slug);
+    assert.equal(food.source, undefined, slug);
+    assert.ok(food.vermerk, slug + ": kein Vermerk");
+    const t = text(slug);
+    assert.ok(t.includes(`Hinweis: ${food.vermerk}.`), slug + ": Vermerk nicht sichtbar");
+    assert.ok(!/Quelle:/.test(t), slug + ": Quellenhinweis");
+    assert.equal(webApp(slug).isBasedOn, undefined, slug);
+  }
+});
+
 test("Herstellerangabe für den deutschen Markt, am 23.11.2026 neu gefunden: sichtbarer Hinweis, Fußzeile und Link", () => {
   // vorher offen, weil die Herstellerseite gesperrt oder nicht erreichbar war (KFC-PDF, McDonald's, lillet.com) oder nicht gefunden wurde
   for (const slug of ["caro-kaffee","dr-pepper","kfc-hot-wings","kfc-twister","lillet","mc-toast","muellermilch","tassimo-milka"]) {

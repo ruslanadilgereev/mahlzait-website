@@ -5,8 +5,9 @@
 // src/utils/menge.ts jede sichtbare Menge aus den Daten: Dezimalkomma, Leerzeichen
 // vor der Einheit, ganze Zahlen ohne Nachkommastellen ("43,75 g", "350 g").
 // JSON-LD bleibt maschinenlesbar ("43.75g"). Die Daten selbst sind unverändert;
-// drei Datentexte mit Dezimalpunkt (z. B. "Mars Duo (2x 39.4g, 78.8g)") stehen so
-// in den JSON-Dateien und sind von der Prüfung ausgenommen.
+// zwei Datentexte mit Dezimalpunkt (die source-Felder von remoulade und
+// schoko-reiswaffeln) stehen so in den JSON-Dateien und sind von der Prüfung
+// ausgenommen; "Mars Duo" auf mars-riegel steht seit dem 23.11.2026 mit Dezimalkomma.
 // Gebaute Seiten aus dist/ (vorher pnpm build).
 import { test } from "node:test";
 import assert from "node:assert/strict";
@@ -94,7 +95,7 @@ test("Keine Lebensmittelseite zeigt eine Menge aus den Daten mit Dezimalpunkt", 
     if (m) befunde.push(route + ": " + m[0]);
   }
   assert.deepEqual(befunde, []);
-  assert.equal(ausgenommen, 3, "Datentexte mit Dezimalpunkt");
+  assert.equal(ausgenommen, 2, "Datentexte mit Dezimalpunkt");
 });
 
 test("Übersichts-, Kategorie-, Fast-Food- und Hub-Seiten nennen Mengen im deutschen Format", () => {
