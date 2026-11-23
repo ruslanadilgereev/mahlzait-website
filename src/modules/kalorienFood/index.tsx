@@ -6,6 +6,7 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import AuthorByline from "@components/AuthorByline";
 import { defaultFoodSupportLinks, foodSupportLinksByCategory } from "utils/seoHubLinks";
+import { menge } from "utils/menge";
 
 // Types for the food data JSON
 interface FoodVariant {
@@ -113,7 +114,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
     ? [...new Set([...food.source!.matchAll(/\b\d{6,7}\b/g)].map((m) => m[0]))]
     : [];
   const unit = food.overview.einheit === "ml" ? "ml" : "g";
-  const amount = (n: number) => (unit === "ml" ? `${n} ml` : `${n}g`);
+  const amount = (n: number) => menge(n, unit);
   const per100 = unit === "ml" ? "100 ml" : "100g";
   const currentFiber = fiberPer100g == null ? null : Math.round(fiberPer100g * multiplier * 10) / 10;
 
@@ -214,19 +215,19 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                 <div className="grid grid-cols-4 gap-3 mt-4">
                   <div className="text-center p-3 bg-base-100 rounded-xl">
                     <div className="text-xs opacity-60 mb-1">Protein</div>
-                    <div className="text-lg font-bold text-blue-500">{currentProtein}g</div>
+                    <div className="text-lg font-bold text-blue-500">{menge(currentProtein)}</div>
                   </div>
                   <div className="text-center p-3 bg-base-100 rounded-xl">
                     <div className="text-xs opacity-60 mb-1">Kohlenhydrate</div>
-                    <div className="text-lg font-bold text-yellow-500">{currentCarbs}g</div>
+                    <div className="text-lg font-bold text-yellow-500">{menge(currentCarbs)}</div>
                   </div>
                   <div className="text-center p-3 bg-base-100 rounded-xl">
                     <div className="text-xs opacity-60 mb-1">Fett</div>
-                    <div className="text-lg font-bold text-red-500">{currentFat}g</div>
+                    <div className="text-lg font-bold text-red-500">{menge(currentFat)}</div>
                   </div>
                   <div className="text-center p-3 bg-base-100 rounded-xl">
                     <div className="text-xs opacity-60 mb-1">Ballaststoffe</div>
-                    <div className="text-lg font-bold text-green-500">{currentFiber == null ? "k. A." : `${currentFiber}g`}</div>
+                    <div className="text-lg font-bold text-green-500">{currentFiber == null ? "k. A." : menge(currentFiber)}</div>
                   </div>
                 </div>
 
@@ -311,23 +312,23 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                     </tr>
                     <tr>
                       <td>Protein</td>
-                      <td className="text-right">{food.overview.protein_per_100g}g</td>
-                      <td className="text-right">{Math.round(food.overview.protein_per_100g * food.overview.typical_portion_g / 100 * 10) / 10}g</td>
+                      <td className="text-right">{menge(food.overview.protein_per_100g)}</td>
+                      <td className="text-right">{menge(Math.round(food.overview.protein_per_100g * food.overview.typical_portion_g / 100 * 10) / 10)}</td>
                     </tr>
                     <tr>
                       <td>Kohlenhydrate</td>
-                      <td className="text-right">{food.overview.carbs_per_100g}g</td>
-                      <td className="text-right">{Math.round(food.overview.carbs_per_100g * food.overview.typical_portion_g / 100 * 10) / 10}g</td>
+                      <td className="text-right">{menge(food.overview.carbs_per_100g)}</td>
+                      <td className="text-right">{menge(Math.round(food.overview.carbs_per_100g * food.overview.typical_portion_g / 100 * 10) / 10)}</td>
                     </tr>
                     <tr>
                       <td>Fett</td>
-                      <td className="text-right">{food.overview.fat_per_100g}g</td>
-                      <td className="text-right">{Math.round(food.overview.fat_per_100g * food.overview.typical_portion_g / 100 * 10) / 10}g</td>
+                      <td className="text-right">{menge(food.overview.fat_per_100g)}</td>
+                      <td className="text-right">{menge(Math.round(food.overview.fat_per_100g * food.overview.typical_portion_g / 100 * 10) / 10)}</td>
                     </tr>
                     <tr>
                       <td>Ballaststoffe</td>
-                      <td className="text-right">{fiberPer100g == null ? "k. A." : `${fiberPer100g}g`}</td>
-                      <td className="text-right">{fiberPer100g == null ? "k. A." : `${Math.round(fiberPer100g * food.overview.typical_portion_g / 100 * 10) / 10}g`}</td>
+                      <td className="text-right">{fiberPer100g == null ? "k. A." : menge(fiberPer100g)}</td>
+                      <td className="text-right">{fiberPer100g == null ? "k. A." : menge(Math.round(fiberPer100g * food.overview.typical_portion_g / 100 * 10) / 10)}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -374,14 +375,14 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                     {amountRows.map((row) => (
                       <tr key={row.grams} className={row.isTypical ? "font-semibold" : undefined}>
                         <td>
-                          {row.grams} {unit} {food.name}
+                          {`${amount(row.grams)} ${food.name}`}
                           {row.isTypical && (
                             <span className="opacity-60 font-normal"> ({food.overview.typical_portion_name})</span>
                           )}
                         </td>
                         <td className={`text-right ${row.isTypical ? "text-primary" : ""}`}>{row.calories} kcal</td>
-                        <td className="text-right">{row.protein} g</td>
-                        <td className="text-right">{row.fat} g</td>
+                        <td className="text-right">{menge(row.protein)}</td>
+                        <td className="text-right">{menge(row.fat)}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -414,8 +415,8 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                         </td>
                         <td className="text-right">{amount(v.portion_g)}</td>
                         <td className="text-right font-bold">{v.calories}</td>
-                        <td className="text-right">{v.protein}g</td>
-                        <td className="text-right">{v.fat}g</td>
+                        <td className="text-right">{menge(v.protein)}</td>
+                        <td className="text-right">{menge(v.fat)}</td>
                       </tr>
                     ))}
                   </tbody>

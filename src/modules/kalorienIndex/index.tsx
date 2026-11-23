@@ -4,6 +4,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { calculatorSupportLinks, guideSupportLinks } from "utils/seoHubLinks";
+import { menge } from "utils/menge";
 
 interface FoodData {
   slug: string;
@@ -231,7 +232,7 @@ function KalorienIndexPage({ config, foods }: Props) {
                           {food.name}
                         </div>
                         <div className="text-sm text-gray-500">
-                          {food.overview.calories_per_100g} kcal · {food.overview.protein_per_100g}g Protein · {food.overview.carbs_per_100g}g KH · {food.overview.fat_per_100g}g Fett
+                          {`${food.overview.calories_per_100g} kcal · ${menge(food.overview.protein_per_100g)} Protein · ${menge(food.overview.carbs_per_100g)} KH · ${menge(food.overview.fat_per_100g)} Fett`}
                         </div>
                       </div>
                     </a>

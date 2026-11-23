@@ -4,6 +4,7 @@ import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 import { useState } from "react";
+import { menge } from "utils/menge";
 
 interface FoodData {
   slug: string;
@@ -118,7 +119,7 @@ function KalorienCategoryPage({ config, category, categoryConfig, foods, related
             </div>
             <div className="card bg-base-200">
               <div className="card-body p-4 items-center text-center">
-                <div className="text-2xl font-bold text-primary">{avgProtein}g</div>
+                <div className="text-2xl font-bold text-primary">{menge(avgProtein)}</div>
                 <div className="text-sm opacity-70">Ø Protein/100g</div>
               </div>
             </div>
@@ -142,7 +143,7 @@ function KalorienCategoryPage({ config, category, categoryConfig, foods, related
                       {food.name}
                     </div>
                     <div className="text-sm opacity-60">
-                      {food.overview.calories_per_100g} kcal · {food.overview.protein_per_100g}g P · {food.overview.carbs_per_100g}g KH · {food.overview.fat_per_100g}g F
+                      {`${food.overview.calories_per_100g} kcal · ${menge(food.overview.protein_per_100g)} P · ${menge(food.overview.carbs_per_100g)} KH · ${menge(food.overview.fat_per_100g)} F`}
                     </div>
                   </div>
                 </a>

@@ -5,6 +5,7 @@ import Footer from "@components/footer";
 import Navbar from "@components/navbar";
 import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
+import { menge } from "utils/menge";
 
 export interface FastFoodItem {
   brand: string;
@@ -181,12 +182,12 @@ function FastfoodKalorienPage({ config, items }: Props) {
                     <td className="font-medium">{r.name}</td>
                     <td className="opacity-70">{r.brand}</td>
                     <td className="text-right opacity-70">
-                      {r.portion_g ? `${r.portion_g} g` : "-"}
+                      {r.portion_g ? menge(r.portion_g) : "-"}
                     </td>
                     <td className="text-right font-semibold">{r.calories}</td>
-                    <td className="text-right">{r.protein != null ? `${r.protein} g` : "-"}</td>
+                    <td className="text-right">{r.protein != null ? menge(r.protein) : "-"}</td>
                     <td className="text-right opacity-70">
-                      {r.proteinPerKcal ? `${r.proteinPerKcal.toFixed(1)} g` : "-"}
+                      {r.proteinPerKcal ? menge(r.proteinPerKcal, "g", 1) : "-"}
                     </td>
                   </tr>
                 ))}

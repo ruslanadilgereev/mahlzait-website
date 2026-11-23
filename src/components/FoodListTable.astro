@@ -3,6 +3,7 @@
 // Rendert crawlbare interne Links zu den Food-Detailseiten (SEO-relevant).
 import type { FoodEntry } from "utils/foodData";
 import { CATEGORY_LABELS } from "utils/foodData";
+import { menge } from "utils/menge";
 
 interface Props {
   foods: FoodEntry[];
@@ -13,7 +14,6 @@ interface Props {
 
 const { foods, highlight = "calories", showCategory = true } = Astro.props as Props;
 const r = (n: number) => Math.round(n);
-const r1 = (n: number) => Math.round(n * 10) / 10;
 ---
 
 <div class="overflow-x-auto rounded-2xl border border-base-300 bg-base-100 shadow-sm">
@@ -49,10 +49,10 @@ const r1 = (n: number) => Math.round(n * 10) / 10;
               {r(food.overview.calories_per_100g)} kcal
             </td>
             <td class={highlight === "protein" ? "font-bold" : ""}>
-              {r1(food.overview.protein_per_100g)} g
+              {menge(food.overview.protein_per_100g, "g", 1)}
             </td>
-            <td class="hidden md:table-cell">{r1(food.overview.carbs_per_100g)} g</td>
-            <td class="hidden md:table-cell">{r1(food.overview.fat_per_100g)} g</td>
+            <td class="hidden md:table-cell">{menge(food.overview.carbs_per_100g, "g", 1)}</td>
+            <td class="hidden md:table-cell">{menge(food.overview.fat_per_100g, "g", 1)}</td>
           </tr>
         ))
       }
