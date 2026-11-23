@@ -3,9 +3,17 @@
   "name": "Mars",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Mars 5 x 45 g (https://www.rewe.de/shop/p/mars-schokoriegel-5x45g/9053649, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Mars 5 x 45 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/mars-schokoriegel-5x45g/9053649",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Mars Kalorien: Nährwerte & Varianten | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Mars? Ein Standard-Riegel (45g) hat ca. 202 kcal. Nährwerte pro 100g, alle Gebinde im Vergleich und Tipps zum Genießen.",
+    "description": "Wie viele Kalorien hat ein Mars? Ein Riegel aus dem Multipack (45 g) hat rund 199 kcal, der Einzelriegel (51 g) 226 kcal. Nährwerte pro 100 g und Tipps.",
     "keywords": [
       "kalorien mars",
       "mars riegel kalorien",
@@ -16,102 +24,126 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 449,
-    "protein_per_100g": 3.8,
-    "carbs_per_100g": 69.3,
-    "fat_per_100g": 16.9,
-    "fiber_per_100g": 1.2,
+    "calories_per_100g": 443,
+    "protein_per_100g": 4.4,
+    "carbs_per_100g": 70,
+    "fat_per_100g": 16,
+    "fiber_per_100g": null,
     "typical_portion_g": 45,
-    "typical_portion_name": "1 Riegel (45g)"
+    "typical_portion_name": "1 Riegel (45 g)"
   },
   "variants": [
     {
-      "name": "Mars Minis (18g)",
-      "portion_g": 18,
-      "calories": 81,
-      "protein": 0.7,
-      "carbs": 12.5,
-      "fat": 3,
-      "tip": "Kleinste Portion"
-    },
-    {
-      "name": "Mars Riegel klein (45g)",
+      "name": "Mars Riegel aus dem Multipack (45 g)",
       "portion_g": 45,
-      "calories": 202,
-      "protein": 1.7,
-      "carbs": 31.2,
-      "fat": 7.6,
-      "tip": "Standard"
+      "calories": 199,
+      "protein": 2,
+      "carbs": 31.5,
+      "fat": 7.2
     },
     {
-      "name": "Mars Riegel (51g)",
+      "name": "Mars Einzelriegel (51 g)",
       "portion_g": 51,
-      "calories": 229,
-      "protein": 1.9,
-      "carbs": 35.3,
-      "fat": 8.6
+      "calories": 226,
+      "protein": 2.2,
+      "carbs": 35.7,
+      "fat": 8.2
     },
     {
-      "name": "Mars 2er-Pack (2x 40g)",
-      "portion_g": 80,
-      "calories": 359,
-      "protein": 3,
-      "carbs": 55.4,
-      "fat": 13.5
+      "name": "Mars Mini (18 g)",
+      "portion_g": 18,
+      "calories": 79,
+      "protein": 0.8,
+      "carbs": 12.8,
+      "fat": 2.7,
+      "basis": [
+        {
+          "slug": "mars-mini",
+          "g": 18
+        }
+      ]
     },
     {
-      "name": "Mars King Size (70g)",
-      "portion_g": 70,
-      "calories": 314,
-      "protein": 2.7,
-      "carbs": 48.5,
-      "fat": 11.8
+      "name": "2 Riegel aus dem Multipack (90 g)",
+      "portion_g": 90,
+      "calories": 399,
+      "protein": 4,
+      "carbs": 63,
+      "fat": 14.4
     },
     {
-      "name": "Mars pro 100g",
+      "name": "Multipack (5 Riegel, 225 g)",
+      "portion_g": 225,
+      "calories": 997,
+      "protein": 9.9,
+      "carbs": 157.5,
+      "fat": 36
+    },
+    {
+      "name": "Mars pro 100 g",
       "portion_g": 100,
-      "calories": 449,
-      "protein": 3.8,
-      "carbs": 69.3,
-      "fat": 16.9
+      "calories": 443,
+      "protein": 4.4,
+      "carbs": 70,
+      "fat": 16
     }
   ],
   "comparison": [
     {
-      "name": "Snickers",
-      "calories": 245,
-      "emoji": "🍫"
+      "name": "Snickers (50 g)",
+      "calories": 246,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "snickers"
+        }
+      ]
     },
     {
-      "name": "Twix (2 Riegel)",
+      "name": "Twix (2 Riegel, 50 g)",
       "calories": 251,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix"
+        }
+      ]
     },
     {
-      "name": "Kinderriegel",
-      "calories": 115,
-      "emoji": "🍫"
+      "name": "Kinderriegel (21 g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel"
+        }
+      ]
     },
     {
-      "name": "Vollmilchschokolade (Riegel)",
-      "calories": 270,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (1 Reihe, 25 g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Bewusst genießen",
-      "text": "Ein Mars-Riegel (45g) liefert rund 202 kcal, vor allem aus Zucker. Als gelegentlicher Genuss völlig in Ordnung, aber kein Sattmacher für den Alltag.",
+      "text": "Ein Mars-Riegel (45 g) liefert rund 199 kcal, vor allem aus Zucker. Als gelegentlicher Genuss völlig in Ordnung, aber kein Sattmacher für den Alltag.",
       "icon": "🍫"
     },
     {
       "title": "Kleinere Portion wählen",
-      "text": "Wer Lust auf Mars hat, aber Kalorien sparen möchte, greift zu den Mars Minis mit nur 81 kcal pro Stück statt zum ganzen Riegel.",
+      "text": "Wer Lust auf Mars hat, aber Kalorien sparen möchte, greift zu den Mars Minis mit nur rund 79 kcal pro Stück statt zum ganzen Riegel.",
       "icon": "🤏"
     },
     {
       "title": "Viel Zucker beachten",
-      "text": "Mit etwa 60g Zucker pro 100g zählt Mars zu den sehr süßen Riegeln. Am besten zu einer Mahlzeit statt auf nüchternen Magen, das bremst den Blutzucker-Anstieg.",
+      "text": "Mit 62 g Zucker pro 100 g zählt Mars zu den sehr süßen Riegeln. Am besten zu einer Mahlzeit statt auf nüchternen Magen, das bremst den Blutzucker-Anstieg.",
       "icon": "🩸"
     },
     {
@@ -121,26 +153,26 @@
     },
     {
       "title": "Im Kalorienbudget einplanen",
-      "text": "202 kcal entsprechen rund 10 Prozent des Tagesbedarfs einer Frau. Wer den Riegel einplant, kann ihn ohne schlechtes Gewissen genießen.",
+      "text": "199 kcal entsprechen rund 10 Prozent von 2.000 kcal am Tag. Wer den Riegel einplant, kann ihn ohne schlechtes Gewissen genießen.",
       "icon": "📊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Mars?",
-      "answer": "Ein Standard-Mars-Riegel (45g) hat ca. 202 kcal. Pro 100g sind es 449 kcal."
+      "answer": "Ein Mars aus dem Multipack (45 g) hat rund 199 kcal, der Einzelriegel (51 g) rund 226 kcal. Pro 100 g sind es 443 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat ein Mars pro 100g?",
-      "answer": "Mars hat laut Herstellerangabe 449 kcal pro 100g."
+      "answer": "Mars hat laut Packung 443 kcal pro 100 g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Mars?",
-      "answer": "Ein Mars-Riegel (45g) enthält rund 31g Kohlenhydrate, davon etwa 27g Zucker. Pro 100g sind es 69,3g Kohlenhydrate."
+      "answer": "Ein Mars-Riegel (45 g) enthält rund 32 g Kohlenhydrate, davon etwa 28 g Zucker. Pro 100 g sind es 70 g Kohlenhydrate und 62 g Zucker."
     },
     {
       "question": "Wie viel Protein hat ein Mars?",
-      "answer": "Ein Mars-Riegel (45g) liefert nur etwa 1,7g Eiweiß. Pro 100g sind es 3,8g, Mars ist also keine nennenswerte Proteinquelle."
+      "answer": "Ein Mars-Riegel (45 g) liefert nur etwa 2 g Eiweiß. Pro 100 g sind es 4,4 g, Mars ist also keine nennenswerte Proteinquelle."
     },
     {
       "question": "Ist Mars zum Abnehmen geeignet?",

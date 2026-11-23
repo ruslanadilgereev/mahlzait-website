@@ -3,9 +3,17 @@
   "name": "Milky Way",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Milky Way 5 x 21,5 g (https://www.rewe.de/shop/p/milky-way-multipack-5x21-5g/9470667, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Milky Way 5 x 21,5 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/milky-way-multipack-5x21-5g/9470667",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Milky Way Kalorien: Nährwerte & Riegel | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Milky Way? Ein Riegel (21,5g) hat ca. 97 kcal. Nährwerte pro 100g & pro Riegel plus Vergleich und Tipps.",
+    "description": "Wie viele Kalorien hat ein Milky Way? Ein Riegel (21,5 g) hat rund 96 kcal. Nährwerte pro 100 g & pro Riegel plus Vergleich und Tipps.",
     "keywords": [
       "milky way kalorien",
       "milky way kcal",
@@ -16,140 +24,155 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 449,
-    "protein_per_100g": 3.9,
-    "carbs_per_100g": 70,
+    "calories_per_100g": 447,
+    "protein_per_100g": 3.7,
+    "carbs_per_100g": 71,
     "fat_per_100g": 16,
-    "fiber_per_100g": 0.7,
+    "fiber_per_100g": null,
     "typical_portion_g": 21.5,
-    "typical_portion_name": "1 Riegel (21,5g)"
+    "typical_portion_name": "1 Riegel (21,5 g)"
   },
   "variants": [
     {
-      "name": "Milky Way Minis (9g)",
-      "portion_g": 9,
-      "calories": 40,
-      "protein": 0,
-      "carbs": 6,
-      "fat": 1,
-      "tip": "Kleine Portion zum Naschen"
-    },
-    {
-      "name": "Milky Way Riegel (21,5g)",
+      "name": "Milky Way Riegel (21,5 g)",
       "portion_g": 21.5,
-      "calories": 97,
-      "protein": 1,
-      "carbs": 15,
-      "fat": 3,
-      "tip": "Standard-Einzelriegel"
+      "calories": 96,
+      "protein": 0.8,
+      "carbs": 15.3,
+      "fat": 3.4
     },
     {
-      "name": "Milky Way Doppelpack (43g)",
+      "name": "2 Riegel (43 g)",
       "portion_g": 43,
-      "calories": 193,
-      "protein": 2,
-      "carbs": 30,
-      "fat": 7
+      "calories": 192,
+      "protein": 1.6,
+      "carbs": 30.5,
+      "fat": 6.9
     },
     {
-      "name": "Milky Way Crispy Rolls (25g)",
-      "portion_g": 25,
-      "calories": 137,
-      "protein": 1,
-      "carbs": 16,
-      "fat": 8,
-      "tip": "Knusprigere Variante, mehr Fett"
-    },
-    {
-      "name": "Handvoll Minis (45g)",
-      "portion_g": 45,
-      "calories": 202,
-      "protein": 2,
-      "carbs": 32,
-      "fat": 7
-    },
-    {
-      "name": "Milky Way pro 100g",
-      "portion_g": 100,
-      "calories": 449,
+      "name": "Packung (5 Riegel, 107,5 g)",
+      "portion_g": 107.5,
+      "calories": 481,
       "protein": 4,
-      "carbs": 70,
+      "carbs": 76.3,
+      "fat": 17.2
+    },
+    {
+      "name": "Milky Way Mini (15,5 g)",
+      "portion_g": 15.5,
+      "calories": 68,
+      "protein": 0.5,
+      "carbs": 11.5,
+      "fat": 2.2,
+      "basis": [
+        {
+          "slug": "mini-milky-way",
+          "g": 15.5
+        }
+      ]
+    },
+    {
+      "name": "Milky Way pro 100 g",
+      "portion_g": 100,
+      "calories": 447,
+      "protein": 3.7,
+      "carbs": 71,
       "fat": 16
     }
   ],
   "comparison": [
     {
-      "name": "Mars (Riegel)",
-      "calories": 230,
-      "emoji": "🍫"
+      "name": "Mars (Einzelriegel, 51 g)",
+      "calories": 226,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "mars-riegel"
+        }
+      ]
     },
     {
-      "name": "Snickers (Riegel)",
-      "calories": 245,
-      "emoji": "🥜"
+      "name": "Snickers (50 g)",
+      "calories": 246,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "snickers"
+        }
+      ]
     },
     {
-      "name": "Bounty (Riegel)",
-      "calories": 135,
-      "emoji": "🥥"
+      "name": "Bounty (2 Stück, 57 g)",
+      "calories": 278,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "bounty"
+        }
+      ]
     },
     {
-      "name": "Milky Way (Riegel)",
-      "calories": 97,
-      "emoji": "🍫"
+      "name": "Milky Way Mini (15,5 g)",
+      "calories": 68,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "mini-milky-way"
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Leichtester Schokoriegel",
-      "text": "Mit nur 97 kcal pro Riegel (21,5g) gehört Milky Way zu den kalorienärmsten Schokoriegeln. Die luftige Nougat-Füllung wiegt weniger als kompakte Riegel wie Mars oder Snickers.",
+      "title": "Kleiner Schokoriegel",
+      "text": "Mit rund 96 kcal pro Riegel (21,5 g) gehört Milky Way zu den kalorienärmeren Schokoriegeln. Laut Packung besteht er zu 60 % aus leicht und locker geschlagener Candy-Creme, deshalb wiegt er weniger als Mars oder Snickers.",
       "icon": "🪶"
     },
     {
       "title": "Wenig Eiweiß, viel Zucker",
-      "text": "Milky Way liefert kaum Protein (3,9g/100g), aber sehr viel Zucker. Als sättigender Snack ist er nicht geeignet, eher als kleine süße Belohnung.",
+      "text": "Milky Way liefert kaum Protein (3,7 g pro 100 g), aber sehr viel Zucker (64 g pro 100 g). Als sättigender Snack ist er nicht geeignet, eher als kleine süße Belohnung.",
       "icon": "🍬"
     },
     {
       "title": "Minis bewusst dosieren",
-      "text": "Bei den Minis (je 40 kcal) verliert man schnell den Überblick. Lege dir vorher eine feste Anzahl hin, statt aus der Tüte zu naschen.",
+      "text": "Bei den Minis (15,5 g, rund 68 kcal) verliert man schnell den Überblick. Lege dir vorher eine feste Anzahl hin, statt aus der Tüte zu naschen.",
       "icon": "🔢"
     },
     {
       "title": "Genuss bewusst einplanen",
-      "text": "Ein einzelner Riegel passt mit 97 kcal gut in einen ausgewogenen Tag. Trag ihn am besten direkt ein, damit dein Kalorienbudget stimmt.",
+      "text": "Ein einzelner Riegel passt mit rund 96 kcal gut in einen ausgewogenen Tag. Trag ihn am besten direkt ein, damit dein Kalorienbudget stimmt.",
       "icon": "📝"
     },
     {
       "title": "Kühl genießen",
-      "text": "Kurz im Kühlschrank gekühlt schmeckt die Nougat-Creme intensiver und du isst langsamer und bewusster.",
+      "text": "Kurz im Kühlschrank gekühlt schmeckt die Creme intensiver und du isst langsamer und bewusster.",
       "icon": "❄️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Milky Way?",
-      "answer": "Ein einzelner Milky Way Riegel (21,5g) hat etwa 97 kcal. Pro 100g sind es rund 449 kcal."
+      "answer": "Ein einzelner Milky Way Riegel (21,5 g) hat rund 96 kcal. Pro 100 g sind es 447 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat Milky Way pro 100g?",
-      "answer": "Milky Way hat laut Nährwertangabe des Herstellers etwa 449 kcal pro 100g."
+      "answer": "Milky Way hat laut Packung 447 kcal pro 100 g."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Milky Way?",
-      "answer": "Pro 100g enthält Milky Way rund 70g Kohlenhydrate, davon etwa 62g Zucker. Ein Riegel (21,5g) hat ca. 15g Kohlenhydrate."
+      "answer": "Pro 100 g enthält Milky Way 71 g Kohlenhydrate, davon 64 g Zucker. Ein Riegel (21,5 g) hat rund 15 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Milky Way?",
-      "answer": "Milky Way enthält nur wenig Eiweiß: etwa 3,9g pro 100g, also rund 1g pro Riegel. Als Proteinquelle ist er nicht geeignet."
+      "answer": "Milky Way enthält nur wenig Eiweiß: 3,7 g pro 100 g, also unter 1 g pro Riegel. Als Proteinquelle ist er nicht geeignet."
     },
     {
       "question": "Ist Milky Way zum Abnehmen geeignet?",
-      "answer": "Mit 97 kcal pro Riegel ist Milky Way einer der kalorienärmsten Schokoriegel und passt in Maßen in eine Diät. Wegen des hohen Zuckergehalts sollte er aber die Ausnahme bleiben."
+      "answer": "Mit rund 96 kcal pro Riegel gehört Milky Way zu den kalorienärmeren Schokoriegeln und passt in Maßen in eine Diät. Wegen des hohen Zuckergehalts sollte er aber die Ausnahme bleiben."
     },
     {
       "question": "Ist Milky Way kalorienärmer als Mars oder Snickers?",
-      "answer": "Ja. Ein Milky Way Riegel (97 kcal) ist deutlich kalorienärmer als ein Mars (ca. 230 kcal) oder ein Snickers (ca. 245 kcal), vor allem wegen der luftigen Füllung und des geringeren Gewichts."
+      "answer": "Pro Riegel ja: Ein Milky Way (21,5 g, rund 96 kcal) ist deutlich kalorienärmer als ein Mars (51 g, rund 226 kcal) oder ein Snickers (50 g, rund 246 kcal), vor allem weil er weniger wiegt. Pro 100 g liegen Milky Way (447 kcal) und Mars (443 kcal) fast gleichauf."
     }
   ],
   "related_foods": [

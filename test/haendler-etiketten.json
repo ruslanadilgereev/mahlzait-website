@@ -1,0 +1,1790 @@
+{
+ "hinweis": "Nährwerttabellen auf den Produktseiten der Händler, so wie sie am Abrufdatum angezeigt wurden (Kennzeichnung des Herstellers, Verordnung (EU) Nr. 1169/2011, Art. 14). test/naehrwerte-herkunft.test.mjs prüft die Seiten unter src/data/foods gegen diesen Stand: spalte nennt die verglichene Spalte, umrechnung die Menge, auf die sie sich bezieht, gewichte die Gewichte auf der Händlerseite, gegenprobe die kcal derselben Ware bei anderen Händlern.",
+ "eintraege": {
+  "balisto": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/balisto-schokoriegel-muesli-mix-8x18-5g/9060104",
+   "abgerufen": "2026-11-23",
+   "titel": "Balisto Schokoriegel Müsli-Mix 8x18,5g",
+   "ean": "5000159474818",
+   "bezeichnung": "Keks mit Vollkorn (36%) und einer Crème mit Haselnussgeschmack (1.9%) und Rosinen (6.8%), umhüllt von Milchschokolade (39%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.100 kJ",
+     "389 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "502 kcal",
+     "93 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "25 g",
+     "4,6 g",
+     "7 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "10 g",
+     "1,9 g",
+     "10 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "60 g",
+     "11 g",
+     "4 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "43 g",
+     "8 g",
+     "9 %"
+    ],
+    [
+     "Eiweiß",
+     "7 g",
+     "1,3 g",
+     "3 %"
+    ],
+    [
+     "Salz",
+     "0,66 g",
+     "0,12 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 18.5 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 8,
+   "gewichte": [
+    {
+     "wert": 18.5,
+     "angabe": "1 Portion entspricht 18.5 GR"
+    },
+    {
+     "wert": 148,
+     "angabe": "8x18,5g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "EDEKA24",
+     "url": "https://edeka24.de/Lebensmittel/Suess-Salzig/Schokoriegel/Balisto-Muesli-8ST-148G.html",
+     "kcal": 502
+    },
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/5000159474818/muesliriegel-original",
+     "kcal": 502
+    }
+   ]
+  },
+  "balisto-lila": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/balisto-schokoriegel-joghurt-beeren-mix-8x18-5g/7548410",
+   "abgerufen": "2026-11-23",
+   "titel": "Balisto Schokoriegel Joghurt-Beeren-Mix 8x18,5g",
+   "ean": "5000159474856",
+   "bezeichnung": "Keks mit Vollkorn (36%) und einer Crème mit Waldbeerengeschmack, umhüllt von Milchschokolade (39%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.094 kJ",
+     "387 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "500 kcal",
+     "93 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "24 g",
+     "4,5 g",
+     "6 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "11 g",
+     "2 g",
+     "10 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "61 g",
+     "11 g",
+     "4 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "45 g",
+     "8,3 g",
+     "9 %"
+    ],
+    [
+     "Eiweiß",
+     "7 g",
+     "1,3 g",
+     "3 %"
+    ],
+    [
+     "Salz",
+     "0,62 g",
+     "0,12 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 18.5 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 8,
+   "gewichte": [
+    {
+     "wert": 18.5,
+     "angabe": "1 Portion entspricht 18.5 GR"
+    },
+    {
+     "wert": 148,
+     "angabe": "8x18,5g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/5000159474856/muesliriegel-joghurt-beeren",
+     "kcal": 500
+    }
+   ]
+  },
+  "balisto-orange": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/balisto-schokoriegel-korn-cereal-8x18-5g/3345426",
+   "abgerufen": "2026-11-23",
+   "titel": "Balisto Schokoriegel Korn-Cereal 8x18,5g",
+   "ean": "5000159472852",
+   "bezeichnung": "Keks mit Vollkorn (45%), umhüllt von Milchschokolade (55%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.083 kJ",
+     "385 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "498 kcal",
+     "92 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "24 g",
+     "4,4 g",
+     "6 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "11 g",
+     "2 g",
+     "10 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "62 g",
+     "12 g",
+     "5 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "42 g",
+     "7,8 g",
+     "9 %"
+    ],
+    [
+     "Eiweiß",
+     "6,7 g",
+     "1,2 g",
+     "2 %"
+    ],
+    [
+     "Salz",
+     "0,76 g",
+     "0,14 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 18.5 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 8,
+   "gewichte": [
+    {
+     "wert": 18.5,
+     "angabe": "1 Portion entspricht 18.5 GR"
+    },
+    {
+     "wert": 148,
+     "angabe": "8x18,5g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "EDEKA24",
+     "url": "https://edeka24.de/Lebensmittel/Suess-Salzig/Schokoriegel/Balisto-Korn-8ST-148G.html",
+     "kcal": 498
+    },
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/5000159472852/muesliriegel-korn-cereal",
+     "kcal": 498
+    }
+   ]
+  },
+  "bounty": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/bounty-schokoriegel-57g/7608625",
+   "abgerufen": "2026-11-23",
+   "titel": "Bounty Schokoriegel 57g",
+   "ean": "5000159557771",
+   "bezeichnung": "Milchschokolade (36%), gefüllt mit zarter Kokosnuss (32%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.036 kJ",
+     "580 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "487 kcal",
+     "139 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "26 g",
+     "7,3 g",
+     "10 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "21 g",
+     "6 g",
+     "30 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "60 g",
+     "17 g",
+     "7 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "48 g",
+     "14 g",
+     "16 %"
+    ],
+    [
+     "Eiweiß",
+     "3,8 g",
+     "1,1 g",
+     "2 %"
+    ],
+    [
+     "Salz",
+     "0,26 g",
+     "0,07 g",
+     "1 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 28.5 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 2,
+   "gewichte": [
+    {
+     "wert": 28.5,
+     "angabe": "1 Portion entspricht 28.5 GR"
+    },
+    {
+     "wert": 57,
+     "angabe": "57g, 2 Portionen je Packung"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/5000159556637/kokos-schokoriegel",
+     "kcal": 487
+    }
+   ]
+  },
+  "bounty-mini": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/bounty-minis-227g/8158241",
+   "abgerufen": "2026-11-23",
+   "titel": "Bounty Minis 227g",
+   "ean": "5000159562508",
+   "bezeichnung": "Milchschokolade (36%), gefüllt mit zarter Kokosnuss (32%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.036 kJ",
+     "580 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "487 kcal",
+     "139 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "26 g",
+     "7,3 g",
+     "10 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "21 g",
+     "6 g",
+     "30 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "59 g",
+     "17 g",
+     "7 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "48 g",
+     "14 g",
+     "16 %"
+    ],
+    [
+     "Eiweiß",
+     "3,8 g",
+     "1,1 g",
+     "2 %"
+    ],
+    [
+     "Salz",
+     "0,28 g",
+     "0,08 g",
+     "1 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 28.5 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 7,
+   "gewichte": [
+    {
+     "wert": 28.5,
+     "angabe": "1 Portion entspricht 28.5 GR"
+    },
+    {
+     "wert": 227,
+     "angabe": "227g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/5000159562508/mini-kokos-schokoriegel",
+     "kcal": 487
+    },
+    {
+     "haendler": "myTime",
+     "url": "https://www.mytime.de/bounty_minis_4502039916.html",
+     "kcal": 487
+    }
+   ]
+  },
+  "mars": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/mars-schokoriegel-5x45g/9053649",
+   "abgerufen": "2026-11-23",
+   "titel": "Mars Schokoriegel 5x45g",
+   "ean": "5900951311390",
+   "bezeichnung": "Milchschokolade (40%), gefüllt mit feiner Candy-Creme (32%) und Karamell (27%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.861 kJ",
+     "837 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "443 kcal",
+     "199 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "16 g",
+     "7,1 g",
+     "10 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "7,4 g",
+     "3,3 g",
+     "17 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "70 g",
+     "31 g",
+     "12 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "62 g",
+     "28 g",
+     "31 %"
+    ],
+    [
+     "Eiweiß",
+     "4,4 g",
+     "2 g",
+     "4 %"
+    ],
+    [
+     "Salz",
+     "0,67 g",
+     "0,3 g",
+     "5 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 45.0 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 5,
+   "gewichte": [
+    {
+     "wert": 45,
+     "angabe": "1 Portion entspricht 45.0 GR"
+    },
+    {
+     "wert": 225,
+     "angabe": "5x45g"
+    },
+    {
+     "wert": 51,
+     "angabe": "Einzelriegel, siehe mars-riegel"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "EDEKA24",
+     "url": "https://edeka24.de/Lebensmittel/Suess-Salzig/Schokoriegel/Mars-5ST-225G.html",
+     "kcal": 443
+    },
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/5000159561877/schoko-karamell-riegel",
+     "kcal": 443
+    }
+   ]
+  },
+  "mars-riegel": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/mars-schokoriegel-51g/7603046",
+   "abgerufen": "2026-11-23",
+   "titel": "Mars Schokoriegel 51g",
+   "ean": "5900951311321",
+   "bezeichnung": "Milchschokolade (40%), gefüllt mit feiner Candy-Creme (32%) und Karamell (27%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.862 kJ",
+     "950 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "443 kcal",
+     "226 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "16 g",
+     "8,1 g",
+     "12 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "7,4 g",
+     "3,8 g",
+     "19 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "70 g",
+     "36 g",
+     "14 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "62 g",
+     "31 g",
+     "34 %"
+    ],
+    [
+     "Eiweiß",
+     "4,4 g",
+     "2,2 g",
+     "4 %"
+    ],
+    [
+     "Salz",
+     "0,67 g",
+     "0,34 g",
+     "6 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 51.0 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 1,
+   "gewichte": [
+    {
+     "wert": 51,
+     "angabe": "1 Portion entspricht 51.0 GR"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/5900951311321/schoko-karamell-riegel",
+     "kcal": 443
+    }
+   ]
+  },
+  "mars-eis": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/mars-eisriegel-5x49-5ml/8908933",
+   "abgerufen": "2026-11-23",
+   "titel": "Mars Eisriegel 5x49,5ml",
+   "ean": "5000159548519",
+   "bezeichnung": "Eis und Karamell (16%) mit einem kakaohaltigen Überzug (30%). / Glace und Karamell (16%) mit einem kakaohaltigen Überzug (30%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 ml",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 ml",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.102 kJ",
+     "546 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "264 kcal",
+     "130 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "14 g",
+     "6,9 g",
+     "10 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "9 g",
+     "4,5 g",
+     "23 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "31 g",
+     "15 g",
+     "6 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "24 g",
+     "12 g",
+     "13 %"
+    ],
+    [
+     "Eiweiß",
+     "2,9 g",
+     "1,4 g",
+     "3 %"
+    ],
+    [
+     "Salz",
+     "0,18 g",
+     "0,09 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 49.5 ML** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 5,
+   "gewichte": [
+    {
+     "wert": 49.5,
+     "angabe": "1 Portion entspricht 49.5 ML"
+    },
+    {
+     "wert": 247.5,
+     "angabe": "5x49,5ml"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/tiefkuehlprodukte/eis/eis-desserts/5000159541473/eis-riegel-schoko-karamell",
+     "kcal": 264
+    }
+   ]
+  },
+  "mars-mini": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/mars-minis-227g/8171620",
+   "abgerufen": "2026-11-23",
+   "titel": "Mars Minis 227g",
+   "ean": "5000159562232",
+   "bezeichnung": "Milchschokolade (36%), gefüllt mit feiner Candy-Creme (34%) und Karamell (29%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.840 kJ",
+     "331 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "437 kcal",
+     "79 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "15 g",
+     "2,7 g",
+     "4 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "6,7 g",
+     "1,2 g",
+     "6 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "71 g",
+     "13 g",
+     "5 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "62 g",
+     "11 g",
+     "12 %"
+    ],
+    [
+     "Eiweiß",
+     "4,2 g",
+     "0,8 g",
+     "2 %"
+    ],
+    [
+     "Salz",
+     "0,7 g",
+     "0,13 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 18.0 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 12,
+   "gewichte": [
+    {
+     "wert": 18,
+     "angabe": "1 Portion entspricht 18.0 GR"
+    },
+    {
+     "wert": 227,
+     "angabe": "227g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "EDEKA24",
+     "url": "https://edeka24.de/Lebensmittel/Suess-Salzig/Schokoriegel/Mars-Minis-12ST-227G.html",
+     "kcal": 437
+    },
+    {
+     "haendler": "myTime",
+     "url": "https://www.mytime.de/mars_minis_4502190336.html",
+     "kcal": 437
+    }
+   ]
+  },
+  "milky-way": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/milky-way-multipack-5x21-5g/9470667",
+   "abgerufen": "2026-11-23",
+   "titel": "Milky Way Multipack 5x21,5g",
+   "ean": "5000159605045",
+   "bezeichnung": "Milchschokolade (39%), gefüllt mit leicht und locker geschlagener Candy-Creme (60%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.879 kJ",
+     "404 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "447 kcal",
+     "96 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "16 g",
+     "3,5 g",
+     "5 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "7,4 g",
+     "1,6 g",
+     "8 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "71 g",
+     "15 g",
+     "6 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "64 g",
+     "14 g",
+     "16 %"
+    ],
+    [
+     "Eiweiß",
+     "3,7 g",
+     "0,8 g",
+     "2 %"
+    ],
+    [
+     "Salz",
+     "0,65 g",
+     "0,14 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 21.5 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 5,
+   "gewichte": [
+    {
+     "wert": 21.5,
+     "angabe": "1 Portion entspricht 21.5 GR"
+    },
+    {
+     "wert": 107.5,
+     "angabe": "5x21,5g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/weihnachten/weihnachtsgebaeck-suesses/5000159550512/schokoriegel",
+     "kcal": 447
+    }
+   ]
+  },
+  "mini-milky-way": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/milky-way-minis-227g/9959196",
+   "abgerufen": "2026-11-23",
+   "titel": "Milky Way Minis 227g",
+   "ean": "5000159562676",
+   "bezeichnung": "Milchschokolade (38%), gefüllt mit leicht und locker geschlagener Candy-Creme (62%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.848 kJ",
+     "286 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "439 kcal",
+     "68 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "14 g",
+     "2,2 g",
+     "3 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "6,4 g",
+     "1 g",
+     "5 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "74 g",
+     "11 g",
+     "4 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "66 g",
+     "10 g",
+     "11 %"
+    ],
+    [
+     "Eiweiß",
+     "3,2 g",
+     "0,5 g",
+     "1 %"
+    ],
+    [
+     "Salz",
+     "0,65 g",
+     "0,1 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 15.5 GR** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 14,
+   "gewichte": [
+    {
+     "wert": 15.5,
+     "angabe": "1 Portion entspricht 15.5 GR"
+    },
+    {
+     "wert": 227,
+     "angabe": "227g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Combi",
+     "url": "https://www.combi.de/milky_way_minis_4502039913.html",
+     "kcal": 439
+    }
+   ]
+  },
+  "maltesers": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/maltesers-schokokugeln-175g/9053142",
+   "abgerufen": "2026-11-23",
+   "titel": "Maltesers Schokokugeln 175g",
+   "ean": "5000159555500",
+   "bezeichnung": "Malzfüllung (23%) mit Milchschokoladenüberzug (73%).",
+   "hersteller": "Mars GmbH, Postfach 1414, D-82004 Unterhaching",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.104 kJ",
+     "919 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "502 kcal",
+     "219 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "24 g",
+     "11 g",
+     "16 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "15 g",
+     "6,6 g",
+     "33 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "62 g",
+     "27 g",
+     "10 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "54 g",
+     "24 g",
+     "27 %"
+    ],
+    [
+     "Eiweiß",
+     "8,3 g",
+     "3,6 g",
+     "7 %"
+    ],
+    [
+     "Salz",
+     "0,44 g",
+     "0,19 g",
+     "3 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht undefined** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 4,
+   "gewichte": [
+    {
+     "wert": 43.7,
+     "angabe": "Portion 919 kJ bei 2.104 kJ je 100 g, 4 Portionen je Packung"
+    },
+    {
+     "wert": 175,
+     "angabe": "175g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/dragierte-schokolade/5000159555500/maltesters",
+     "kcal": 502
+    }
+   ]
+  },
+  "lion-mini": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/nestl-lion-minis-180g/9480657",
+   "abgerufen": "2026-11-23",
+   "titel": "Nestlé Lion Minis 180g",
+   "ean": "8445292419925",
+   "bezeichnung": "Gefüllte Waffel mit Karamell (34,7%) und Weizencerealien (10,5%) , überzogen mit Milchschokolade (37,2%).",
+   "hersteller": "Nestlé Polska S.A., ul. Domaniewska 32, 02-672 Warszawa",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.995 kJ",
+     "359 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "475 kcal",
+     "86 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "20 g",
+     "3,6 g",
+     "5 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "10,8 g",
+     "1,9 g",
+     "10 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "68 g",
+     "12,2 g",
+     "5 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "51,9 g",
+     "9,3 g",
+     "10 %"
+    ],
+    [
+     "Ballaststoffe",
+     "1,3 g",
+     "< 0,5 g",
+     ""
+    ],
+    [
+     "Eiweiß",
+     "5,1 g",
+     "0,9 g",
+     "2 %"
+    ],
+    [
+     "Salz",
+     "0,53 g",
+     "0,09 g",
+     "2 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht undefined** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/ 2000 kcal).",
+   "portionen_je_packung": 10,
+   "gewichte": [
+    {
+     "wert": 18,
+     "angabe": "180g, 10 Portionen je Packung"
+    },
+    {
+     "wert": 180,
+     "angabe": "180g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "EDEKA24",
+     "url": "https://edeka24.de/Lebensmittel/Suess-Salzig/Schokoriegel/Lion-Minis-180-g.html",
+     "kcal": 475
+    }
+   ]
+  },
+  "nesquik": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/nestl-nesquik-original-kakao-350g/9060687",
+   "abgerufen": "2026-11-23",
+   "titel": "Nestlé Nesquik Original Kakao 350g",
+   "ean": "8445291238701",
+   "bezeichnung": "Kakaohaltiges Getränkepulver",
+   "hersteller": "Nestlé Deutschland AG, 60523 Frankfurt am Main",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "pro 100 ml"
+    ],
+    [
+     "Energie",
+     "1.621 kJ",
+     "636 kJ",
+     "303 kJ"
+    ],
+    [
+     "Energie",
+     "383 kcal",
+     "151 kcal",
+     "72 kcal"
+    ],
+    [
+     "Fett",
+     "3,6 g",
+     "3,7 g",
+     "1,8 g"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "1,6 g",
+     "2,3 g",
+     "1,1 g"
+    ],
+    [
+     "Kohlenhydrate",
+     "78,2 g",
+     "20,5 g",
+     "9,7 g"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "75,4 g",
+     "20,1 g",
+     "9,6 g"
+    ],
+    [
+     "Ballaststoffe",
+     "7,7 g",
+     "1 g",
+     "< 0,5 g"
+    ],
+    [
+     "Eiweiß",
+     "5,1 g",
+     "7,5 g",
+     "3,6 g"
+    ],
+    [
+     "Salz",
+     "0,37 g",
+     "0,29 g",
+     "0,14 g"
+    ]
+   ],
+   "fussnote": "",
+   "portionen_je_packung": 25,
+   "gewichte": [
+    {
+     "wert": 13.5,
+     "angabe": "Zubereitung: 2 gehäufte Teelöffel (13,5g)"
+    },
+    {
+     "wert": 350,
+     "angabe": "350g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "EDEKA24",
+     "url": "https://edeka24.de/Lebensmittel/Kaffee-Tee/Kakao/Nestle-Nesquik-Original-Nachfuellbeutel-350G.html",
+     "kcal": 383
+    }
+   ]
+  },
+  "nuts": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/nestl-nuts-schokoriegel-42g/900143",
+   "abgerufen": "2026-11-23",
+   "titel": "Nestlé Nuts Schokoriegel 42g",
+   "ean": "8593893719743",
+   "bezeichnung": "Kakaohaltige Fettglasur (30%) mit einer Füllung mit Karamell (20,4%) und ganzen Haselnüssen (11,2%).",
+   "hersteller": "Nestlé Česko s.r.o, 143 20 Prague 4, Czech Republic",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.041 kJ",
+     "857 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "488 kcal",
+     "205 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "24,2 g",
+     "10,2 g",
+     "15 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "9,9 g",
+     "4,1 g",
+     "21 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "61,6 g",
+     "25,9 g",
+     "10 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "53,1 g",
+     "22,3 g",
+     "25 %"
+    ],
+    [
+     "Ballaststoffe",
+     "1,7 g",
+     "0,7 g",
+     ""
+    ],
+    [
+     "Eiweiß",
+     "4,8 g",
+     "2 g",
+     "4 %"
+    ],
+    [
+     "Salz",
+     "0,17 g",
+     "0,07 g",
+     "1 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht undefined** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/ 2000 kcal).",
+   "portionen_je_packung": 1,
+   "gewichte": [
+    {
+     "wert": 42,
+     "angabe": "42g, 1 Portion je Packung"
+    },
+    {
+     "wert": 30,
+     "angabe": "1 Portion entspricht 30.0 GR (Snack Size 5x30g, gleiche Werte, https://www.rewe.de/shop/p/nestl-nuts-snack-size-5x30g/8353854)"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/schokolade/schokoriegel/8593893769687/nussriegel-5er",
+     "kcal": 488
+    }
+   ]
+  },
+  "daim-mini": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/daim-pralinen-200g/2994755",
+   "abgerufen": "2026-11-23",
+   "titel": "Daim Pralinen 200g",
+   "ean": "7622400928604",
+   "bezeichnung": "Pralinen aus knackigem Mandelkaramell umhüllt von Milchschokolade (46 %)",
+   "hersteller": "Genuport Trade GmbH, Gutenbergring 60, D-22848 Norderstedt",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g"
+    ],
+    [
+     "Energie",
+     "2.271 kJ"
+    ],
+    [
+     "Energie",
+     "544 kcal"
+    ],
+    [
+     "Fett",
+     "32 g"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "17 g"
+    ],
+    [
+     "Kohlenhydrate",
+     "61 g"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "60 g"
+    ],
+    [
+     "Ballaststoffe",
+     "1,3 g"
+    ],
+    [
+     "Eiweiß",
+     "3,1 g"
+    ],
+    [
+     "Salz",
+     "0,88 g"
+    ]
+   ],
+   "fussnote": "",
+   "portionen_je_packung": 7,
+   "gewichte": [
+    {
+     "wert": 7.7,
+     "angabe": "Packungsbild: 200 g, x 26"
+    },
+    {
+     "wert": 25.6,
+     "angabe": "Packungsbild: 25,6 g 581 kJ 139 kcal"
+    },
+    {
+     "wert": 200,
+     "angabe": "200g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/pralinen/7622400928604/pralinen",
+     "kcal": 544
+    }
+   ]
+  },
+  "ebly": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/ebly-sonnenweizen-4x125g/3657663",
+   "abgerufen": "2026-11-23",
+   "titel": "Ebly Sonnenweizen 4x125g",
+   "ean": "3487400000415",
+   "bezeichnung": "Vorgegarte Weizenkörner.",
+   "hersteller": "Mars GmbH, Postfach 1280, 27281 Verden (Aller)",
+   "spalte": "pro 1 Portion*",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "571 kJ",
+     "925 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "135 kcal",
+     "219 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "< 0,5 g",
+     "0,7 g",
+     "1 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "< 0,1 g",
+     "0,1 g",
+     "1 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "27 g",
+     "44 g",
+     "17 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "0,5 g",
+     "0,9 g",
+     "1 %"
+    ],
+    [
+     "Ballaststoffe",
+     "2,2 g",
+     "3,5 g",
+     ""
+    ],
+    [
+     "Eiweiß",
+     "4,7 g",
+     "7,5 g",
+     "15 %"
+    ],
+    [
+     "Salz",
+     "< 0,01 g",
+     "< 0,01 g",
+     "1 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht Pro zubereiteter Portion (basierend auf 62.5g ungekochtem Weizen) (162g)** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal)",
+   "portionen_je_packung": 8,
+   "gewichte": [
+    {
+     "wert": 62.5,
+     "angabe": "basierend auf 62.5g ungekochtem Weizen"
+    },
+    {
+     "wert": 125,
+     "angabe": "4x125g"
+    },
+    {
+     "wert": 500,
+     "angabe": "4x125g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/nudeln-reis-konserven/nudeln-reis-getreide/getreide/3487400000415/sonnenweizen-im-kochbeutel",
+     "kcal": 135
+    }
+   ],
+   "umrechnung": {
+    "mal": 100,
+    "durch": 62.5,
+    "angabe": "1 Portion basierend auf 62.5g ungekochtem Weizen (162g zubereitet)"
+   }
+  },
+  "kiri": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/kiri-mit-sahne-praktische-6er-portionen-108g/8273469",
+   "abgerufen": "2026-11-23",
+   "titel": "Kiri mit Sahne praktische 6er Portionen 108g",
+   "ean": "3073781109375",
+   "bezeichnung": "Schmelzkäse aus Frischkäse, Doppelrahmstufe. (AT: 65% Fett i. T.).",
+   "hersteller": "Bel S.A., B.P. 114, 92151 Suresnes Cedex France / Frankreich",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "% NRV** (100 g)",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.269 kJ",
+     "",
+     "228 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "303 kcal",
+     "",
+     "55 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "29 g",
+     "",
+     "5,2 g",
+     ""
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "19,5 g",
+     "",
+     "3,5 g",
+     ""
+    ],
+    [
+     "Kohlenhydrate",
+     "2 g",
+     "",
+     "0,4 g",
+     ""
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "2 g",
+     "",
+     "0,4 g",
+     ""
+    ],
+    [
+     "Eiweiß",
+     "9 g",
+     "",
+     "1,6 g",
+     ""
+    ],
+    [
+     "Salz",
+     "1,3 g",
+     "",
+     "0,23 g",
+     ""
+    ],
+    [
+     "Calcium",
+     "670 mg",
+     "84 %",
+     "121 mg",
+     "15 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht undefined** % der Referenzmenge für die tägliche Zufuhr (Erwachsene).",
+   "portionen_je_packung": 6,
+   "gewichte": [
+    {
+     "wert": 18,
+     "angabe": "108g, 6 Portionen je Packung"
+    },
+    {
+     "wert": 108,
+     "angabe": "108g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "myTime",
+     "url": "https://www.mytime.de/Kaese_und_Milchprodukte/Kaese/Frischkaese/Frischkaese_natur/Kiri_mit_Sahne_4503040064.html",
+     "kcal": 303
+    },
+    {
+     "haendler": "Combi",
+     "url": "https://www.combi.de/kiri_mit_sahne_4503040032.html",
+     "kcal": 303
+    },
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/milchprodukte-eier/kaese/weichkaese/3073781109375/frischkaese-mit-sahne",
+     "kcal": 305
+    }
+   ]
+  },
+  "mikado": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/mikado-keks-sticks-milchschokolade-75g/989744",
+   "abgerufen": "2026-11-23",
+   "titel": "Mikado Keks-Sticks Milchschokolade 75g",
+   "ean": "7622300476144",
+   "bezeichnung": "Kekse überzogen mit Milschokolade (49 %).",
+   "hersteller": "Mondelez Deutschland GmbH, D-28078 Bremen",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "2.003 kJ",
+     "601 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "477 kcal",
+     "143 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "19 g",
+     "5,7 g",
+     "8 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "11 g",
+     "3,3 g",
+     "16 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "67 g",
+     "20 g",
+     "8 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "34 g",
+     "10 g",
+     "11 %"
+    ],
+    [
+     "Ballaststoffe",
+     "2,8 g",
+     "0,8 g",
+     "0 %"
+    ],
+    [
+     "Eiweiß",
+     "7,7 g",
+     "2,3 g",
+     "5 %"
+    ],
+    [
+     "Salz",
+     "0,85 g",
+     "0,25 g",
+     "4 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht 30 g ≈ 13 Kekse.** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ / 2000 kcal).",
+   "gewichte": [
+    {
+     "wert": 30,
+     "angabe": "1 Portion entspricht 30 g ≈ 13 Kekse"
+    },
+    {
+     "wert": 75,
+     "angabe": "75g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/suesses-salziges/gebaeck/feingebaeck-kekse/7622300476144/keksstaebchen-milchschokolade",
+     "kcal": 477
+    }
+   ]
+  },
+  "piccolinis": {
+   "haendler": "REWE",
+   "url": "https://www.rewe.de/shop/p/original-wagner-piccolinis-salami-270g/1459732",
+   "abgerufen": "2026-11-23",
+   "titel": "Original Wagner Piccolinis Salami 270g",
+   "ean": "4009233014002",
+   "bezeichnung": "Mini Pizza belegt mit Salami und Mozzarella, tiefgefroren.",
+   "hersteller": "Original Wagner Pizza GmbH, In den Schemeln 4 DE-66620 Nonnweiler",
+   "spalte": "pro 100 g",
+   "tabelle": [
+    [
+     "Nährwerte",
+     "pro 100 g",
+     "pro 1 Portion*",
+     "% NRV** (1 Portion)"
+    ],
+    [
+     "Energie",
+     "1.053 kJ",
+     "948 kJ",
+     ""
+    ],
+    [
+     "Energie",
+     "251 kcal",
+     "226 kcal",
+     ""
+    ],
+    [
+     "Fett",
+     "10,2 g",
+     "9,2 g",
+     "13 %"
+    ],
+    [
+     "Fett, davon gesättigte Fettsäuren",
+     "3,9 g",
+     "3,5 g",
+     "18 %"
+    ],
+    [
+     "Kohlenhydrate",
+     "28,5 g",
+     "25,7 g",
+     "10 %"
+    ],
+    [
+     "Kohlenhydrate, davon Zucker",
+     "3,7 g",
+     "3,4 g",
+     "4 %"
+    ],
+    [
+     "Ballaststoffe",
+     "1,9 g",
+     "1,7 g",
+     ""
+    ],
+    [
+     "Eiweiß",
+     "10,4 g",
+     "9,3 g",
+     "19 %"
+    ],
+    [
+     "Salz",
+     "1,1 g",
+     "0,99 g",
+     "17 %"
+    ]
+   ],
+   "fussnote": "* 1 Portion entspricht Pro Portion 3 PICCOLINIS (90 g)** Referenzmenge für einen durchschnittlichen Erwachsenen (8400 kJ/2000 kcal).",
+   "portionen_je_packung": 3,
+   "gewichte": [
+    {
+     "wert": 90,
+     "angabe": "Pro Portion 3 PICCOLINIS (90 g)"
+    },
+    {
+     "wert": 270,
+     "angabe": "270g"
+    }
+   ],
+   "gegenprobe": [
+    {
+     "haendler": "Globus",
+     "url": "https://produkte.globus.de/tiefkuehlprodukte/tiefkuehl-fertiggerichte/pizza/4009233014002/piccolinis-salami-tiefgekuehlt",
+     "kcal": 251
+    }
+   ]
+  }
+ }
+}

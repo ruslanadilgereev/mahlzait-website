@@ -3,9 +3,17 @@
   "name": "Maltesers",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Maltesers 175 g (https://www.rewe.de/shop/p/maltesers-schokokugeln-175g/9053142, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Maltesers 175 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/maltesers-schokokugeln-175g/9053142",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Maltesers Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien haben Maltesers? Eine Standard-Tüte (37g) hat ca. 185 kcal. Nährwerte pro 100g, Portionen im Überblick & Diät-Tipps.",
+    "description": "Wie viele Kalorien haben Maltesers? Eine kleine Tüte (ca. 37 g) hat rund 186 kcal, 100 g haben 502 kcal. Nährwerte, Portionen & Diät-Tipps.",
     "keywords": [
       "maltesers kalorien",
       "maltesers kcal",
@@ -16,83 +24,97 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 501,
-    "protein_per_100g": 7.9,
-    "carbs_per_100g": 62.1,
-    "fat_per_100g": 24.3,
-    "fiber_per_100g": 1.5,
+    "calories_per_100g": 502,
+    "protein_per_100g": 8.3,
+    "carbs_per_100g": 62,
+    "fat_per_100g": 24,
+    "fiber_per_100g": null,
     "typical_portion_g": 37,
-    "typical_portion_name": "1 Standard-Tüte (37g)"
+    "typical_portion_name": "1 kleine Tüte (ca. 37 g)",
+    "portion_geschaetzt": true
   },
   "variants": [
     {
-      "name": "1 Malteser (Stück, ca. 1,3g)",
+      "name": "1 Malteser (ca. 1,3 g)",
       "portion_g": 1.3,
       "calories": 7,
       "protein": 0.1,
       "carbs": 0.8,
-      "fat": 0.3
+      "fat": 0.3,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "10 Maltesers (ca. 13g)",
+      "name": "10 Maltesers (ca. 13 g)",
       "portion_g": 13,
       "calories": 65,
-      "protein": 1,
+      "protein": 1.1,
       "carbs": 8.1,
-      "fat": 3.2
+      "fat": 3.1,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Fun-Size-Tüte (19,5g)",
-      "portion_g": 19.5,
-      "calories": 98,
-      "protein": 1.5,
-      "carbs": 12.1,
-      "fat": 4.7
-    },
-    {
-      "name": "Standard-Tüte (37g)",
+      "name": "Kleine Tüte (ca. 37 g)",
       "portion_g": 37,
-      "calories": 185,
-      "protein": 2.9,
-      "carbs": 23,
-      "fat": 9,
-      "tip": "Standard"
+      "calories": 186,
+      "protein": 3.1,
+      "carbs": 22.9,
+      "fat": 8.9,
+      "stueck_geschaetzt": true
     },
     {
-      "name": "Halbe große Tüte (50g)",
-      "portion_g": 50,
-      "calories": 251,
-      "protein": 4,
-      "carbs": 31.1,
-      "fat": 12.2
+      "name": "Portion laut Packung (43,7 g)",
+      "portion_g": 43.7,
+      "calories": 219,
+      "protein": 3.6,
+      "carbs": 27.1,
+      "fat": 10.5
     },
     {
-      "name": "Große Tüte (102g)",
-      "portion_g": 102,
-      "calories": 511,
-      "protein": 8.1,
-      "carbs": 63.3,
-      "fat": 24.8
+      "name": "Halbe Tüte (87,5 g)",
+      "portion_g": 87.5,
+      "calories": 439,
+      "protein": 7.3,
+      "carbs": 54.3,
+      "fat": 21
     },
     {
-      "name": "Pro 100g",
+      "name": "Tüte (175 g)",
+      "portion_g": 175,
+      "calories": 879,
+      "protein": 14.5,
+      "carbs": 108.5,
+      "fat": 42
+    },
+    {
+      "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 501,
-      "protein": 7.9,
-      "carbs": 62.1,
-      "fat": 24.3
+      "calories": 502,
+      "protein": 8.3,
+      "carbs": 62,
+      "fat": 24
     }
   ],
   "comparison": [
     {
-      "name": "M&M's (45g Tüte)",
-      "calories": 226,
-      "emoji": "🍬"
+      "name": "M&M's (45 g)",
+      "calories": 221,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "m-m",
+          "g": 45
+        }
+      ]
     },
     {
-      "name": "KitKat (1 Riegel 41,5g)",
-      "calories": 218,
-      "emoji": "🍫"
+      "name": "KitKat (4 Finger, 41,5 g)",
+      "calories": 215,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat"
+        }
+      ]
     },
     {
       "name": "Smarties (38g Rolle)",
@@ -105,25 +127,30 @@
       ]
     },
     {
-      "name": "Bounty (1 Riegel 57g)",
-      "calories": 270,
-      "emoji": "🥥"
+      "name": "Bounty (2 Stück, 57 g)",
+      "calories": 278,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "bounty"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Luftig, aber kalorienreich",
-      "text": "Maltesers wirken durch die luftige Malzkugel im Inneren leicht. Mit 501 kcal pro 100g liegen sie aber im typischen Bereich von Vollmilchschokolade.",
+      "text": "Maltesers wirken durch die luftige Malzkugel im Inneren leicht. Mit 502 kcal pro 100 g liegen sie aber nahe an Vollmilchschokolade (535 kcal).",
       "icon": "🍫"
     },
     {
       "title": "Portion abzählen statt aus der Tüte naschen",
-      "text": "Zähle dir 10 Maltesers (ca. 65 kcal) ab und stelle die Tüte weg. So vermeidest du das unkontrollierte Weiternaschen.",
+      "text": "Zähle dir 10 Maltesers (ca. 13 g, rund 65 kcal) ab und stelle die Tüte weg. So vermeidest du das unkontrollierte Weiternaschen.",
       "icon": "🔢"
     },
     {
       "title": "Auf den Fettanteil achten",
-      "text": "Mit 24,3g Fett pro 100g liefert ein Drittel des Gewichts Fett. Das macht die Kugeln trotz Luftkern energiedicht.",
+      "text": "Mit 24 g Fett pro 100 g besteht fast ein Viertel des Gewichts aus Fett. Das macht die Kugeln trotz Luftkern energiedicht.",
       "icon": "🧈"
     },
     {
@@ -132,35 +159,35 @@
       "icon": "😌"
     },
     {
-      "title": "Fun-Size für die kleine Portion",
-      "text": "Die kleinen Fun-Size-Tüten mit rund 98 kcal sind eine gute Wahl, wenn du naschen, aber die Menge begrenzen möchtest.",
+      "title": "Auf die Packung schauen",
+      "text": "Die 175-g-Tüte ist laut Packung für 4 Portionen gedacht. Eine Portion (43,7 g) hat rund 219 kcal, die ganze Tüte rund 879 kcal.",
       "icon": "🎯"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien haben Maltesers?",
-      "answer": "Eine Standard-Tüte Maltesers (37g) hat ca. 185 kcal. Pro 100g sind es rund 501 kcal."
+      "answer": "Maltesers haben 502 kcal pro 100 g. Eine kleine Tüte (ca. 37 g) kommt auf rund 186 kcal, die 175-g-Tüte auf rund 879 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat ein einzelner Malteser?",
-      "answer": "Ein einzelner Malteser (ca. 1,3g) hat etwa 7 kcal. 10 Stück kommen auf rund 65 kcal."
+      "answer": "Ein einzelner Malteser (ca. 1,3 g) hat rund 7 kcal, 10 Stück kommen auf rund 65 kcal (Stückgewicht nicht vom Hersteller angegeben)."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in Maltesers?",
-      "answer": "Maltesers enthalten 62,1g Kohlenhydrate pro 100g, davon der Großteil als Zucker. Eine Standard-Tüte (37g) liefert ca. 23g Kohlenhydrate."
+      "answer": "Maltesers enthalten 62 g Kohlenhydrate pro 100 g, davon 54 g Zucker. Eine kleine Tüte (ca. 37 g) liefert rund 23 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein haben Maltesers?",
-      "answer": "Maltesers liefern 7,9g Protein pro 100g. Das ist für eine Süßigkeit zwar ein nennenswerter Wert, als Eiweißquelle eignen sie sich aber nicht."
+      "answer": "Maltesers liefern 8,3 g Protein pro 100 g. Das ist für eine Süßigkeit zwar ein nennenswerter Wert, als Eiweißquelle eignen sie sich aber nicht."
     },
     {
       "question": "Sind Maltesers zum Abnehmen geeignet?",
-      "answer": "Maltesers sind mit 501 kcal pro 100g recht energiedicht und daher kein klassisches Diät-Lebensmittel. In kleinen, abgezählten Portionen passen sie aber in eine ausgewogene Ernährung."
+      "answer": "Maltesers sind mit 502 kcal pro 100 g recht energiedicht und daher kein klassisches Diät-Lebensmittel. In kleinen, abgezählten Portionen passen sie aber in eine ausgewogene Ernährung."
     },
     {
       "question": "Sind Maltesers gesünder als andere Schokolade?",
-      "answer": "Nein. Trotz der luftigen Malzkugel liegen Maltesers mit 501 kcal pro 100g im Bereich normaler Vollmilchschokolade und sind nicht kalorienärmer."
+      "answer": "Nein. Trotz der luftigen Malzkugel liegen Maltesers mit 502 kcal pro 100 g nur wenig unter Vollmilchschokolade (535 kcal)."
     }
   ],
   "related_foods": [

@@ -3,9 +3,17 @@
   "name": "Nesquik",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Nestlé, Nesquik Original Kakao 350 g (Pulver) (https://www.rewe.de/shop/p/nestl-nesquik-original-kakao-350g/9060687, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Nestlé",
+    "produkt": "Nesquik Original Kakao 350 g (Pulver)",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/nestl-nesquik-original-kakao-350g/9060687",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Nesquik Kalorien: Nährwerte, Portionen & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Nesquik? Das Pulver hat 382 kcal pro 100g, eine Portion (13,5g) ca. 52 kcal. Nährwerte, Zucker & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Nesquik? Das Pulver hat 383 kcal pro 100 g, eine Portion (13,5 g) rund 52 kcal. Nährwerte, Zucker & Tipps im Überblick.",
     "keywords": [
       "nesquik kcal",
       "nesquik kalorien",
@@ -17,140 +25,189 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 382,
-    "protein_per_100g": 5,
-    "carbs_per_100g": 79.9,
-    "fat_per_100g": 3.2,
-    "fiber_per_100g": 6.9,
+    "calories_per_100g": 383,
+    "protein_per_100g": 5.1,
+    "carbs_per_100g": 78.2,
+    "fat_per_100g": 3.6,
+    "fiber_per_100g": 7.7,
     "typical_portion_g": 13.5,
-    "typical_portion_name": "1 Portion (13,5g, 2 gehäufte TL)"
+    "typical_portion_name": "1 Portion (13,5 g, 2 gehäufte TL)"
   },
   "variants": [
     {
-      "name": "1 Portion Pulver (13,5g)",
+      "name": "1 Portion Pulver (13,5 g)",
       "portion_g": 13.5,
       "calories": 52,
       "protein": 0.7,
-      "carbs": 10.8,
-      "fat": 0.4,
-      "tip": "Standard"
+      "carbs": 10.6,
+      "fat": 0.5
     },
     {
-      "name": "1 TL gehäuft (7g)",
-      "portion_g": 7,
-      "calories": 27,
-      "protein": 0.4,
-      "carbs": 5.6,
+      "name": "1 gehäufter TL (6,75 g)",
+      "portion_g": 6.75,
+      "calories": 26,
+      "protein": 0.3,
+      "carbs": 5.3,
       "fat": 0.2
     },
     {
-      "name": "Maxi-Portion Pulver (27g, 4 TL)",
+      "name": "Doppelte Portion Pulver (27 g, 4 TL)",
       "portion_g": 27,
       "calories": 103,
       "protein": 1.4,
-      "carbs": 21.6,
-      "fat": 0.9
+      "carbs": 21.1,
+      "fat": 1
     },
     {
-      "name": "Glas mit fettarmer Milch (13,5g + 200ml, 1,5%)",
-      "portion_g": 214,
-      "calories": 148,
-      "protein": 7.7,
-      "carbs": 20.4,
-      "fat": 3.4,
-      "tip": "klassische Zubereitung"
-    },
-    {
-      "name": "Glas mit Vollmilch (13,5g + 200ml, 3,5%)",
-      "portion_g": 214,
-      "calories": 180,
+      "name": "Glas mit fettarmer Milch (13,5 g + 200 ml, 1,5 %)",
+      "portion_g": 219.5,
+      "calories": 155,
       "protein": 7.5,
-      "carbs": 20.2,
-      "fat": 7.4
+      "carbs": 20.4,
+      "fat": 4.6,
+      "tip": "Klassische Zubereitung",
+      "basis": [
+        {
+          "g": 13.5
+        },
+        {
+          "fdcId": 171267,
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
-      "name": "Glas mit Hafermilch (13,5g + 200ml)",
-      "portion_g": 214,
-      "calories": 138,
-      "protein": 1.5,
-      "carbs": 25,
-      "fat": 2.9,
-      "tip": "vegane Variante"
+      "name": "Glas mit Vollmilch (13,5 g + 200 ml, 3,5 %)",
+      "portion_g": 219.5,
+      "calories": 177,
+      "protein": 7.2,
+      "carbs": 20.4,
+      "fat": 7.2,
+      "basis": [
+        {
+          "g": 13.5
+        },
+        {
+          "fdcId": 171265,
+          "ml": 200,
+          "g": 206
+        }
+      ]
     },
     {
-      "name": "Ganze Packung (400g)",
-      "portion_g": 400,
-      "calories": 1528,
-      "protein": 20,
-      "carbs": 319.6,
-      "fat": 12.8
+      "name": "Glas mit Hafermilch (13,5 g + 200 ml)",
+      "portion_g": 219.5,
+      "calories": 151,
+      "protein": 2.3,
+      "carbs": 21.1,
+      "fat": 6.3,
+      "basis": [
+        {
+          "g": 13.5
+        },
+        {
+          "slug": "hafermilch",
+          "ml": 200,
+          "g": 206
+        }
+      ]
+    },
+    {
+      "name": "Ganze Packung (350 g)",
+      "portion_g": 350,
+      "calories": 1341,
+      "protein": 17.8,
+      "carbs": 273.7,
+      "fat": 12.6
+    },
+    {
+      "name": "100 g Pulver",
+      "portion_g": 100,
+      "calories": 383,
+      "protein": 5.1,
+      "carbs": 78.2,
+      "fat": 3.6
     }
   ],
   "comparison": [
     {
-      "name": "Nesquik (100g Pulver)",
-      "calories": 382,
-      "emoji": "🍫"
+      "name": "Backkakao (100 g)",
+      "calories": 228,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "backkakao",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Backkakao (100g)",
-      "calories": 350,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Nutella (100g)",
+      "name": "Nutella (100 g)",
       "calories": 539,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "nutella",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Ovomaltine (100g)",
-      "calories": 374,
-      "emoji": "🥤"
+      "name": "Ovomaltine (100 g)",
+      "calories": 376,
+      "emoji": "🥤",
+      "basis": [
+        {
+          "slug": "ovomaltine",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Pulver allein ist überraschend leicht",
-      "text": "Eine Portion Nesquik-Pulver (13,5g) hat nur etwa 52 kcal. Die meisten Kalorien im fertigen Getränk stammen aus der Milch, nicht aus dem Pulver.",
+      "text": "Eine Portion Nesquik-Pulver (13,5 g) hat nur rund 52 kcal. Die meisten Kalorien im fertigen Getränk stammen aus der Milch, nicht aus dem Pulver.",
       "icon": "🥄"
     },
     {
       "title": "Milch bewusst wählen",
-      "text": "Mit fettarmer Milch (1,5%) kommt ein Glas auf rund 148 kcal, mit Vollmilch (3,5%) auf etwa 180 kcal. Die Wahl der Milch macht den größten Unterschied.",
+      "text": "Mit 200 ml fettarmer Milch kommt ein Glas auf rund 155 kcal, mit Vollmilch auf rund 177 kcal. Die Wahl der Milch macht den größten Unterschied.",
       "icon": "🥛"
     },
     {
       "title": "Hoher Zuckeranteil beachten",
-      "text": "Nesquik besteht zu rund 77% aus Zucker. Eine Portion (13,5g) liefert etwa 10,4g Zucker, also rund 2 Stück Würfelzucker.",
+      "text": "Nesquik besteht zu rund 75 % aus Zucker. Eine Portion (13,5 g) liefert rund 10 g Zucker, also etwa 3 Stück Würfelzucker (je 3 g).",
       "icon": "🍬"
     },
     {
       "title": "Sparsam dosieren",
-      "text": "Wer kalorienbewusst genießen möchte, nimmt statt 2 gehäuften Teelöffeln nur 1 Teelöffel (7g, ca. 27 kcal). Der Schokogeschmack bleibt trotzdem deutlich.",
+      "text": "Wer kalorienbewusst genießen möchte, nimmt statt 2 gehäuften Teelöffeln nur einen (6,75 g, rund 26 kcal). Der Schokogeschmack bleibt trotzdem deutlich.",
       "icon": "⚖️"
     },
     {
       "title": "Pflanzendrink als Alternative",
-      "text": "Mit ungesüßter Hafermilch lässt sich ein Glas auf etwa 138 kcal bringen, allerdings mit deutlich weniger Eiweiß als bei Kuhmilch.",
+      "text": "Mit Hafermilch kommt ein Glas (13,5 g + 200 ml) auf rund 151 kcal, allerdings mit deutlich weniger Eiweiß als bei Kuhmilch.",
       "icon": "🌱"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Nesquik?",
-      "answer": "Nesquik-Pulver hat 382 kcal pro 100g. Eine Standardportion (13,5g, 2 gehäufte Teelöffel) liefert nur etwa 52 kcal. Mit 200ml fettarmer Milch zubereitet hat ein Glas rund 148 kcal."
+      "answer": "Nesquik-Pulver hat 383 kcal pro 100 g. Eine Portion (13,5 g, 2 gehäufte Teelöffel) liefert nur rund 52 kcal. Mit 200 ml fettarmer Milch hat ein Glas rund 155 kcal, auf der Packung stehen 151 kcal je zubereiteter Portion. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viel Zucker steckt in Nesquik?",
-      "answer": "Nesquik enthält 77,1g Zucker pro 100g, das Pulver besteht also zu rund 77% aus Zucker. Eine Portion (13,5g) liefert etwa 10,4g Zucker, das entspricht ungefähr 2 Stück Würfelzucker."
+      "answer": "Nesquik enthält 75,4 g Zucker pro 100 g, das Pulver besteht also zu rund 75 % aus Zucker. Eine Portion (13,5 g) liefert rund 10 g Zucker, das entspricht etwa 3 Stück Würfelzucker (je 3 g)."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Nesquik?",
-      "answer": "Nesquik hat 79,9g Kohlenhydrate pro 100g, davon 77,1g Zucker. Eine Portion (13,5g) enthält rund 10,8g Kohlenhydrate."
+      "answer": "Nesquik hat 78,2 g Kohlenhydrate pro 100 g, davon 75,4 g Zucker. Eine Portion (13,5 g) enthält rund 10,6 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Nesquik?",
-      "answer": "Das Pulver selbst hat nur 5g Eiweiß pro 100g (ca. 0,7g pro Portion). Das meiste Eiweiß im fertigen Kakao kommt aus der Milch: Ein Glas mit 200ml Milch liefert etwa 7 bis 8g Eiweiß."
+      "answer": "Das Pulver selbst hat nur 5,1 g Eiweiß pro 100 g (rund 0,7 g pro Portion). Das meiste Eiweiß im fertigen Kakao kommt aus der Milch: Laut Packung liefert ein Glas mit 200 ml fettarmer Milch 7,5 g Eiweiß."
     },
     {
       "question": "Ist Nesquik zum Abnehmen geeignet?",
@@ -158,7 +215,7 @@
     },
     {
       "question": "Ist Nesquik gesund?",
-      "answer": "Nesquik ist in erster Linie ein gezuckertes Genussprodukt mit rund 77% Zucker. Der Kakaoanteil von 23% liefert etwas Geschmack, ernährungsphysiologisch steht aber der Zucker im Vordergrund. Als gelegentlicher Genuss ist es in Ordnung, nicht als tägliche Grundlage."
+      "answer": "Nesquik ist in erster Linie ein gezuckertes Genussprodukt mit rund 75 % Zucker. Der Kakaoanteil von 23 % liefert etwas Geschmack, ernährungsphysiologisch steht aber der Zucker im Vordergrund. Als gelegentlicher Genuss ist es in Ordnung, nicht als tägliche Grundlage."
     }
   ],
   "related_foods": [

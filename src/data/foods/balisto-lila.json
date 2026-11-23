@@ -3,9 +3,17 @@
   "name": "Balisto Lila (Joghurt-Beeren-Mix)",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Balisto Joghurt-Beeren-Mix 8 x 18,5 g (https://www.rewe.de/shop/p/balisto-schokoriegel-joghurt-beeren-mix-8x18-5g/7548410, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Balisto Joghurt-Beeren-Mix 8 x 18,5 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/balisto-schokoriegel-joghurt-beeren-mix-8x18-5g/7548410",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Balisto Lila Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Balisto Lila? Ein Riegel (18,5 g) hat ca. 93 kcal, der Doppelriegel 37 g ca. 186 kcal. Nährwerte pro 100 g, Zucker & Tipps.",
+    "description": "Wie viele Kalorien hat Balisto Lila? Ein Riegel (18,5 g) hat rund 93 kcal, zwei Riegel (37 g) haben 185 kcal. Nährwerte pro 100 g, Zucker & Tipps.",
     "keywords": [
       "balisto lila kalorien",
       "balisto lila kcal",
@@ -16,13 +24,13 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 503,
+    "calories_per_100g": 500,
     "protein_per_100g": 7,
     "carbs_per_100g": 61,
-    "fat_per_100g": 24.8,
-    "fiber_per_100g": 3.2,
+    "fat_per_100g": 24,
+    "fiber_per_100g": null,
     "typical_portion_g": 37,
-    "typical_portion_name": "1 Doppelriegel (37 g)"
+    "typical_portion_name": "2 Riegel (37 g)"
   },
   "variants": [
     {
@@ -31,92 +39,119 @@
       "calories": 93,
       "protein": 1.3,
       "carbs": 11.3,
-      "fat": 4.6,
-      "tip": "Ein einzelner Riegel des Doppelpacks"
+      "fat": 4.4
     },
     {
-      "name": "1 Doppelriegel (37 g)",
+      "name": "2 Riegel (37 g)",
       "portion_g": 37,
-      "calories": 186,
+      "calories": 185,
       "protein": 2.6,
       "carbs": 22.6,
-      "fat": 9.2,
-      "tip": "Standard-Beutel"
+      "fat": 8.9
     },
     {
-      "name": "Halber Riegel (9 g)",
-      "portion_g": 9,
-      "calories": 45,
+      "name": "Halber Riegel (9,25 g)",
+      "portion_g": 9.25,
+      "calories": 46,
       "protein": 0.6,
-      "carbs": 5.5,
+      "carbs": 5.6,
       "fat": 2.2
     },
     {
       "name": "Kleine Portion (20 g)",
       "portion_g": 20,
-      "calories": 101,
+      "calories": 100,
       "protein": 1.4,
       "carbs": 12.2,
-      "fat": 5
+      "fat": 4.8
     },
     {
-      "name": "Zwei Doppelriegel (74 g)",
+      "name": "4 Riegel (74 g)",
       "portion_g": 74,
-      "calories": 372,
+      "calories": 370,
       "protein": 5.2,
       "carbs": 45.1,
-      "fat": 18.4
+      "fat": 17.8
+    },
+    {
+      "name": "Packung (8 Riegel, 148 g)",
+      "portion_g": 148,
+      "calories": 740,
+      "protein": 10.4,
+      "carbs": 90.3,
+      "fat": 35.5
     },
     {
       "name": "100 g",
       "portion_g": 100,
-      "calories": 503,
+      "calories": 500,
       "protein": 7,
       "carbs": 61,
-      "fat": 24.8
+      "fat": 24
     }
   ],
   "comparison": [
     {
-      "name": "Balisto (Müsli-Mix)",
-      "calories": 188,
-      "emoji": "🍫"
+      "name": "Balisto Müsli-Mix (2 Riegel, 37 g)",
+      "calories": 186,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "balisto",
+          "g": 37
+        }
+      ]
     },
     {
-      "name": "Knoppers",
-      "calories": 109,
-      "emoji": "🧇"
+      "name": "Knoppers (25 g)",
+      "calories": 137,
+      "emoji": "🧇",
+      "basis": [
+        {
+          "slug": "knoppers"
+        }
+      ]
     },
     {
-      "name": "Twix",
+      "name": "Twix (2 Riegel, 50 g)",
       "calories": 251,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix"
+        }
+      ]
     },
     {
-      "name": "Hanuta",
-      "calories": 110,
-      "emoji": "🍫"
+      "name": "Hanuta (22 g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "hanuta"
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Doppelriegel teilen",
-      "text": "Der Beutel enthält zwei Riegel zu je 18,5 g. Wer nur einen isst, spart die Hälfte, also rund 93 statt 186 kcal.",
+      "title": "Bei einem Riegel bleiben",
+      "text": "Ein Riegel wiegt 18,5 g. Wer nur einen statt zwei isst, spart die Hälfte, also rund 93 statt 185 kcal.",
       "icon": "✂️"
     },
     {
       "title": "Hoher Zuckeranteil",
-      "text": "Auf 100 g entfallen rund 44,6 g Zucker. Pro Doppelriegel sind das etwa 16,5 g, also gut die Hälfte des Riegelgewichts.",
+      "text": "Auf 100 g entfallen laut Packung 45 g Zucker. Zwei Riegel (37 g) liefern damit rund 16,7 g, also knapp die Hälfte ihres Gewichts.",
       "icon": "🍬"
     },
     {
       "title": "Snack mit Maß",
-      "text": "Mit knapp 25 g Fett und 503 kcal pro 100 g ist Balisto Lila ein typischer Schokoriegel und eher Genussmittel als Pausensnack.",
+      "text": "Mit 24 g Fett und 500 kcal pro 100 g ist Balisto Lila ein typischer Schokoriegel und eher Genussmittel als Pausensnack.",
       "icon": "⚖️"
     },
     {
       "title": "Bewusst genießen",
-      "text": "Ein einzelner Riegel zum Kaffee liefert etwa 93 kcal, das lässt sich gut in einen Tag mit ausgewogener Ernährung einplanen.",
+      "text": "Ein einzelner Riegel zum Kaffee liefert rund 93 kcal, das lässt sich gut in einen Tag mit ausgewogener Ernährung einplanen.",
       "icon": "☕"
     },
     {
@@ -128,19 +163,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat Balisto Lila?",
-      "answer": "Ein Doppelriegel Balisto Lila (Joghurt-Beeren-Mix) mit 37 g hat etwa 186 kcal. Ein einzelner Riegel (18,5 g) kommt auf rund 93 kcal."
+      "answer": "Ein Riegel Balisto Lila (Joghurt-Beeren-Mix, 18,5 g) hat rund 93 kcal, zwei Riegel (37 g) kommen auf 185 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat Balisto Lila pro 100 g?",
-      "answer": "Balisto Lila hat laut Herstellerangabe rund 503 kcal pro 100 g."
+      "answer": "Balisto Lila hat laut Packung 500 kcal pro 100 g."
     },
     {
       "question": "Wie viel Zucker steckt in Balisto Lila?",
-      "answer": "Pro 100 g enthält Balisto Lila etwa 44,6 g Zucker. Ein Doppelriegel (37 g) liefert damit rund 16,5 g Zucker."
+      "answer": "Pro 100 g enthält Balisto Lila 45 g Zucker. Zwei Riegel (37 g) liefern damit rund 16,7 g Zucker."
     },
     {
       "question": "Wie viel Eiweiß hat Balisto Lila?",
-      "answer": "Der Eiweißgehalt ist gering: rund 7 g pro 100 g, also etwa 2,6 g pro Doppelriegel."
+      "answer": "Der Eiweißgehalt ist gering: 7 g pro 100 g, also etwa 2,6 g in zwei Riegeln (37 g)."
     },
     {
       "question": "Ist Balisto Lila zum Abnehmen geeignet?",
@@ -148,7 +183,7 @@
     },
     {
       "question": "Was ist der Unterschied zwischen Balisto Lila und dem grünen Balisto?",
-      "answer": "Der lila Balisto ist der Joghurt-Beeren-Mix mit Joghurt- und Beerennote, der grüne der klassische Müsli-Mix. Die Nährwerte sind sehr ähnlich (rund 500 kcal pro 100 g)."
+      "answer": "Der lila Balisto ist der Joghurt-Beeren-Mix mit Waldbeerengeschmack, der grüne der klassische Müsli-Mix. Die Nährwerte sind fast gleich: 500 kcal pro 100 g beim lila, 502 kcal beim Müsli-Mix."
     }
   ],
   "related_foods": [

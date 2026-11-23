@@ -6,6 +6,9 @@
 // tatsächliche Quelle der Seite (FDC-Eintrag, Rezeptrechnung, Herstellerangabe)
 // statt pauschal "Open Food Facts und USDA"; Seiten ohne belegte Quelle nennen
 // keine. Das WebApplication-Schema verweist mit isBasedOn auf dieselbe Quelle.
+// Händler-Etikett (Vorschlag vom 23.11.2026): Werte aus der Kennzeichnung des
+// Herstellers auf der Verpackung, wie sie ein deutscher Händler zeigt, sichtbar
+// "Herstellerangabe laut Verpackung, angezeigt bei <Händler>, abgerufen am <Datum>".
 // Prüft Daten und das gebaute dist/ (vorher pnpm build).
 import { test } from "node:test";
 import assert from "node:assert/strict";
@@ -57,10 +60,11 @@ test("Rezeptseite: Fußzeile nennt die Rezeptrechnung mit den FDC-IDs", () => {
 });
 
 test("Seite ohne belegte Quelle: kein Quellenhinweis und kein isBasedOn", () => {
-  const food = lade("mars");
+  // bis 7311273 mars, seitdem mit Händler-Etikett
+  const food = lade("kaese");
   assert.equal(food.source, undefined);
-  assert.ok(!/Quelle:/.test(text("mars")), "Quellenhinweis");
-  assert.equal(webApp("mars").isBasedOn, undefined);
+  assert.ok(!/Quelle:/.test(text("kaese")), "Quellenhinweis");
+  assert.equal(webApp("kaese").isBasedOn, undefined);
 });
 
 test("Lebensmittelseiten nennen Open Food Facts nicht mehr als Grundlage der Werte", () => {
@@ -200,4 +204,27 @@ test("Herstellerangabe für den deutschen Markt, am 23.11.2026 neu gefunden: sic
     assert.ok(seite(slug).includes(`href="${h.url.replaceAll("&", "&amp;")}"`), slug + ": Link zur Herstellerseite");
     assert.deepEqual(webApp(slug).isBasedOn.map((q) => q.url), [h.url], slug);
   }
+});
+
+test("Händler-Etikett: sichtbarer Hinweis mit Händler, Abrufdatum und Link, Fußzeile und isBasedOn", () => {
+  // Vorschlag vom 23.11.2026: Kennzeichnung des Herstellers auf der Verpackung, wie sie der Händler anzeigt
+  const menge = (g, einheit) => String(g).replace(".", ",") + " " + einheit;
+  for (const slug of ["balisto","balisto-lila","balisto-orange","bounty","bounty-mini","daim-mini","ebly","kiri","lion-mini","maltesers","mars","mars-eis","mars-mini","mars-riegel","mikado","milky-way","mini-milky-way","nesquik","nuts","piccolinis"]) {
+    const food = lade(slug);
+    const h = food.hersteller;
+    assert.ok(h?.haendler && food.source.startsWith(`Händler-Etikett ${h.haendler}: `), slug + ": kein Händler-Etikett");
+    const etikett = `Herstellerangabe laut Verpackung, angezeigt bei ${h.haendler}, abgerufen am ${datum(h.abgerufen)}`;
+    const hinweis = h.beispiel ? `Werte am Beispiel ${h.name} ${h.produkt}, ${etikett}.` : `${etikett}: ${h.name}, ${h.produkt}.`;
+    const t = text(slug);
+    assert.ok(t.includes(hinweis + ` Produktseite bei ${h.haendler}`), slug + ": Hinweis unter der Nährwerttabelle");
+    assert.ok(t.includes("Quelle: " + hinweis), slug + ": Fußzeile");
+    assert.ok(seite(slug).includes(`href="${h.url}"`), slug + ": Link zur Produktseite des Händlers");
+    assert.deepEqual(webApp(slug).isBasedOn.map((q) => [q.url, q.publisher.name]), [[h.url, h.haendler]], slug);
+    // Gewicht nicht auf der Händlerseite: als Schätzung sichtbar (Regel 4 aus Batch F)
+    const einheit = food.overview.einheit === "ml" ? "ml" : "g";
+    for (const v of food.variants.filter((v) => v.stueck_geschaetzt)) {
+      assert.ok(t.includes(`ca. ${menge(v.portion_g, einheit)}, Stückgewicht nicht vom Hersteller angegeben`), slug + " / " + v.name);
+    }
+  }
+  assert.ok(lade("maltesers").overview.portion_geschaetzt, "maltesers");
 });

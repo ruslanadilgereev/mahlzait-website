@@ -3,9 +3,17 @@
   "name": "Balisto Orange",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Balisto Korn-Cereal 8 x 18,5 g (https://www.rewe.de/shop/p/balisto-schokoriegel-korn-cereal-8x18-5g/3345426, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Balisto Korn-Cereal 8 x 18,5 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/balisto-schokoriegel-korn-cereal-8x18-5g/3345426",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Balisto Orange Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Balisto Orange? Ein Riegel (18,5 g) hat ca. 93 kcal, ein Päckchen mit 2 Riegeln rund 185 kcal. Alle Nährwerte pro 100 g & Portion.",
+    "description": "Wie viele Kalorien hat Balisto Orange (Korn)? Ein Riegel (18,5 g) hat rund 92 kcal, zwei Riegel rund 184 kcal. Alle Nährwerte pro 100 g & Portion.",
     "keywords": [
       "balisto orange kalorien",
       "balisto orange kcal",
@@ -15,134 +23,155 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 500,
-    "protein_per_100g": 6.6,
+    "calories_per_100g": 498,
+    "protein_per_100g": 6.7,
     "carbs_per_100g": 62,
-    "fat_per_100g": 24.2,
-    "fiber_per_100g": 3.7,
+    "fat_per_100g": 24,
+    "fiber_per_100g": null,
     "typical_portion_g": 37,
-    "typical_portion_name": "1 Päckchen (2 Riegel, 37 g)"
+    "typical_portion_name": "2 Riegel (37 g)"
   },
   "variants": [
     {
       "name": "1 Riegel (18,5 g)",
       "portion_g": 18.5,
-      "calories": 93,
+      "calories": 92,
       "protein": 1.2,
       "carbs": 11.5,
-      "fat": 4.5
+      "fat": 4.4
     },
     {
-      "name": "1 Päckchen (2 Riegel, 37 g)",
+      "name": "2 Riegel (37 g)",
       "portion_g": 37,
-      "calories": 185,
-      "protein": 2.4,
-      "carbs": 23,
-      "fat": 9,
-      "tip": "Standard-Portion"
+      "calories": 184,
+      "protein": 2.5,
+      "carbs": 22.9,
+      "fat": 8.9
     },
     {
-      "name": "Halbes Päckchen (18,5 g)",
-      "portion_g": 18.5,
-      "calories": 93,
-      "protein": 1.2,
-      "carbs": 11.5,
-      "fat": 4.5,
-      "tip": "Wer naschen, aber sparen will"
+      "name": "Halber Riegel (9,25 g)",
+      "portion_g": 9.25,
+      "calories": 46,
+      "protein": 0.6,
+      "carbs": 5.7,
+      "fat": 2.2
     },
     {
       "name": "3 Riegel (55,5 g)",
       "portion_g": 55.5,
-      "calories": 278,
+      "calories": 276,
       "protein": 3.7,
-      "carbs": 34,
-      "fat": 13
+      "carbs": 34.4,
+      "fat": 13.3
     },
     {
       "name": "4 Riegel (74 g)",
       "portion_g": 74,
-      "calories": 370,
-      "protein": 4.9,
-      "carbs": 46,
-      "fat": 18
+      "calories": 369,
+      "protein": 5,
+      "carbs": 45.9,
+      "fat": 17.8
+    },
+    {
+      "name": "Packung (8 Riegel, 148 g)",
+      "portion_g": 148,
+      "calories": 737,
+      "protein": 9.9,
+      "carbs": 91.8,
+      "fat": 35.5
     },
     {
       "name": "100 g (Vergleichswert)",
       "portion_g": 100,
-      "calories": 500,
-      "protein": 6.6,
+      "calories": 498,
+      "protein": 6.7,
       "carbs": 62,
       "fat": 24
     }
   ],
   "comparison": [
     {
-      "name": "Knoppers (1 Riegel)",
-      "calories": 138,
-      "emoji": "🍫"
+      "name": "Knoppers (1 Riegel, 25 g)",
+      "calories": 137,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "knoppers"
+        }
+      ]
     },
     {
-      "name": "Müsli-Riegel (25 g)",
-      "calories": 110,
-      "emoji": "🌾"
+      "name": "Müsliriegel (25 g)",
+      "calories": 118,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "muesli-riegel"
+        }
+      ]
     },
     {
-      "name": "Twix (Doppelriegel, 50 g)",
-      "calories": 245,
-      "emoji": "🍫"
+      "name": "Twix (2 Riegel, 50 g)",
+      "calories": 251,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix"
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Päckchen statt Multipack",
-      "text": "Ein Päckchen mit 2 Riegeln hat rund 185 kcal. Wer das einzelne Päckchen statt einer ganzen Großpackung öffnet, behält die Portionsgröße leichter im Blick.",
+      "title": "Zwei Riegel statt Großpackung",
+      "text": "Zwei Riegel haben rund 184 kcal. Wer sie einzeln aus der Packung nimmt, statt sie offen liegen zu lassen, behält die Portionsgröße leichter im Blick.",
       "icon": "🍫"
     },
     {
       "title": "Einzelner Riegel als kleine Nascherei",
-      "text": "Mit nur etwa 93 kcal pro Riegel ist die halbe Portion ein guter Kompromiss, wenn die Lust auf Süßes überschaubar bleiben soll.",
+      "text": "Mit rund 92 kcal ist ein einzelner Riegel ein guter Kompromiss, wenn die Lust auf Süßes überschaubar bleiben soll.",
       "icon": "🍪"
     },
     {
       "title": "Auf den Fettanteil achten",
-      "text": "Balisto Orange besteht zu rund einem Viertel aus Fett (24,2 g pro 100 g). Das macht den Riegel energiereich, also bewusst und nicht nebenbei genießen.",
+      "text": "Balisto Orange besteht zu rund einem Viertel aus Fett (24 g pro 100 g). Das macht den Riegel energiereich, also bewusst und nicht nebenbei genießen.",
       "icon": "🧈"
     },
     {
       "title": "Kein Ersatz für eine Mahlzeit",
-      "text": "Trotz Vollkornanteil liefert der Riegel viel Zucker (42 g pro 100 g) und wenig Eiweiß. Als sättigender Snack eignen sich Nüsse oder Magerquark besser.",
+      "text": "Laut Packung besteht der Riegel zu 45 % aus Keks mit Vollkorn und zu 55 % aus Milchschokolade. Er liefert viel Zucker (42 g pro 100 g) und wenig Eiweiß. Als sättigender Snack eignen sich Nüsse oder Magerquark besser.",
       "icon": "💡"
     },
     {
       "title": "Bewusst genießen statt verzichten",
-      "text": "In einer ausgewogenen Ernährung hat ein Päckchen Balisto Platz. Wer abnehmen möchte, plant die rund 185 kcal einfach in die Tagesbilanz ein.",
+      "text": "In einer ausgewogenen Ernährung haben zwei Riegel Balisto Platz. Wer abnehmen möchte, plant die rund 184 kcal einfach in die Tagesbilanz ein.",
       "icon": "⚖️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Balisto Orange?",
-      "answer": "Ein einzelner Balisto-Orange-Riegel (18,5 g) hat ca. 93 kcal, ein Päckchen mit 2 Riegeln (37 g) rund 185 kcal. Pro 100 g sind es etwa 500 kcal."
+      "answer": "Ein einzelner Balisto Orange (Korn-Cereal, 18,5 g) hat rund 92 kcal, zwei Riegel (37 g) haben rund 184 kcal. Pro 100 g sind es 498 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat ein Päckchen Balisto Orange?",
-      "answer": "Ein Päckchen enthält 2 Riegel (37 g) und kommt auf etwa 185 kcal."
+      "answer": "Ein Päckchen mit 2 Riegeln (37 g) kommt auf rund 184 kcal, die Packung mit 8 Riegeln (148 g) auf rund 737 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Balisto Orange?",
-      "answer": "Balisto Orange enthält rund 62 g Kohlenhydrate pro 100 g, davon etwa 42 g Zucker. Ein Päckchen (37 g) liefert ca. 23 g Kohlenhydrate."
+      "answer": "Balisto Orange enthält 62 g Kohlenhydrate pro 100 g, davon 42 g Zucker. Zwei Riegel (37 g) liefern rund 23 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Balisto Orange?",
-      "answer": "Der Eiweißgehalt ist mit rund 6,6 g pro 100 g eher gering. Ein Päckchen (37 g) liefert nur etwa 2,4 g Eiweiß."
+      "answer": "Der Eiweißgehalt ist mit 6,7 g pro 100 g eher gering. Zwei Riegel (37 g) liefern rund 2,5 g Eiweiß."
     },
     {
       "question": "Ist Balisto Orange zum Abnehmen geeignet?",
-      "answer": "Als gelegentlicher Snack ja, sofern die rund 185 kcal pro Päckchen in die Tagesbilanz passen. Durch den hohen Zucker- und Fettanteil sättigt der Riegel allerdings nur kurz."
+      "answer": "Als gelegentlicher Snack ja, sofern die rund 184 kcal für zwei Riegel in die Tagesbilanz passen. Durch den hohen Zucker- und Fettanteil sättigt der Riegel allerdings nur kurz."
     },
     {
       "question": "Ist Balisto Orange gesund?",
-      "answer": "Balisto Orange enthält Vollkornanteile und etwas Ballaststoffe, ist aber vor allem zucker- und fettreich. Als Genussmittel in Maßen okay, ein gesunder Hauptsnack ist er nicht."
+      "answer": "Balisto Orange enthält Keks mit Vollkorn, ist aber vor allem zucker- und fettreich. Als Genussmittel in Maßen okay, ein gesunder Hauptsnack ist er nicht."
     }
   ],
   "related_foods": [

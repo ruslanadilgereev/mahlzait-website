@@ -17,7 +17,12 @@
 //   mit Herstellerangabe (slug statt FDC-ID, Entscheidung vom 23.11.2026);
 // - eine Herstellerangabe: das Feld hersteller nennt Hersteller, Produkt, die
 //   https-Adresse der Herstellerseite und das Abrufdatum; Seiten aus Österreich
-//   oder der Schweiz nennen das Land (hersteller.land).
+//   oder der Schweiz nennen das Land (hersteller.land);
+// - ein Händler-Etikett (Vorschlag vom 23.11.2026): die Kennzeichnung des
+//   Herstellers auf der Verpackung, wie sie die Produktseite eines großen
+//   deutschen Händlers zeigt (hersteller.haendler); test/haendler-etiketten.json
+//   hält die Nährwerttabelle so fest, wie sie am Abrufdatum angezeigt wurde, und
+//   die Werte der Seite folgen daraus.
 // Portionswerte folgen aus den Werten je 100 g: Eine Variante, die nur eine
 // andere Menge ist, rechnet mit den Werten der Seite; jede andere Variante und
 // jeder Vergleich nennt ihre Bestandteile (basis: eigene Seite, FDC-ID, andere
@@ -37,6 +42,7 @@ import {
 } from "../scripts/fdc-referenz.mjs";
 
 const eintraege = JSON.parse(readFileSync(referenzDatei, "utf8")).eintraege;
+const etiketten = JSON.parse(readFileSync(new URL("./haendler-etiketten.json", import.meta.url), "utf8")).eintraege;
 
 // Markeneintrag aus FDC Branded Foods, nicht Teil der drei Datensätze; Werte
 // prüft test/doener-kalorien.test.mjs gegen die FDC-API.
@@ -53,17 +59,25 @@ const EIGENE_TESTS = new Set([
 // Datenbanken Dritter, die als Herstellerangabe nicht zählen
 const DRITTE = ["fddb.info", "yazio.com", "openfoodfacts.org", "openfoodfacts.net", "codecheck.info", "naehrwertrechner.de", "kalorientabelle.net", "nutritionix.com", "myfitnesspal.com"];
 
+// Händler, deren Produktseiten als Händler-Etikett zählen (große deutsche Händler)
+const HAENDLER = {
+  REWE: ["www.rewe.de"],
+  EDEKA: ["www.edeka.de"],
+  EDEKA24: ["edeka24.de", "www.edeka24.de"],
+  Kaufland: ["www.kaufland.de"],
+  dm: ["www.dm.de"],
+  Rossmann: ["www.rossmann.de"],
+};
+
 // <OFFEN>
 const OFFEN = new Set([
-   "aperol-spritz", "aquafaba", "balisto", "balisto-lila", "balisto-orange", "ben-and-jerry-s",
-   "bounty", "bounty-mini", "bowl", "campari", "captain-morgan", "daim-mini", "ebly",
+   "aperol-spritz", "aquafaba", "ben-and-jerry-s", "bowl", "campari", "captain-morgan",
    "feta-light", "five-guys-burger", "fleisch", "fruehstueck", "gemuese", "giotto", "guinness",
-   "hans-im-glueck-burger", "kaese", "katjes", "kiri", "klopfer", "l-osteria-pizza", "lion-mini",
-   "magnum-double-caramel", "maltesers", "mars", "mars-eis", "mars-mini", "mars-riegel",
-   "mate-tee", "mc-frappe", "mikado", "milky-way", "mini-milky-way", "nesquik", "nuts",
-   "oreo-donut", "pepsi-max", "philadelphia-light", "piccolinis", "pop-tarts", "praline",
-   "proteinriegel", "schokoriegel", "smirnoff-ice", "snickers-crisp", "twister-eis", "vapiano",
-   "waterdrop", "wonderwaffel", "wurst", "yfood", "yum-yum",
+   "hans-im-glueck-burger", "kaese", "katjes", "klopfer", "l-osteria-pizza",
+   "magnum-double-caramel", "mate-tee", "mc-frappe", "oreo-donut", "pepsi-max",
+   "philadelphia-light", "pop-tarts", "praline", "proteinriegel", "schokoriegel", "smirnoff-ice",
+   "snickers-crisp", "twister-eis", "vapiano", "waterdrop", "wonderwaffel", "wurst", "yfood",
+   "yum-yum",
 ]);
 // </OFFEN>
 
@@ -83,6 +97,7 @@ const umgestellt = alle.filter(({ slug }) => !OFFEN.has(slug));
 const istFdc = (food) => typeof food.source === "string" && food.source.startsWith("USDA FoodData Central");
 const istRezept = (food) => istFdc(food) && (food.rezept != null || food.source.includes("Rezeptrechnung"));
 const istHersteller = (food) => typeof food.source === "string" && food.source.startsWith("Herstellerangabe");
+const istEtikett = (food) => typeof food.source === "string" && food.source.startsWith("Händler-Etikett ");
 
 function passt(seite, fdc, rundung) {
   return Math.abs(seite - fdc) <= Math.max(0.05 * Math.abs(fdc), rundung);
@@ -98,11 +113,11 @@ test("jede umgestellte Seite hat ein source-Feld, die offenen keines", () => {
   assert.deepEqual(ohne, []);
   const offenMitQuelle = [...OFFEN].filter((s) => seiten.get(s).source != null);
   assert.deepEqual(offenMitQuelle, []);
-  assert.ok(umgestellt.length >= 882, "nur " + umgestellt.length + " Seiten umgestellt");
+  assert.ok(umgestellt.length >= 902, "nur " + umgestellt.length + " Seiten umgestellt");
 });
 
-test("jedes source-Feld nennt FDC oder eine Herstellerangabe", () => {
-  const sonst = alle.filter(({ food }) => food.source != null && !istFdc(food) && !istHersteller(food)).map(({ slug }) => slug);
+test("jedes source-Feld nennt FDC, eine Herstellerangabe oder ein Händler-Etikett", () => {
+  const sonst = alle.filter(({ food }) => food.source != null && !istFdc(food) && !istHersteller(food) && !istEtikett(food)).map(({ slug }) => slug);
   assert.deepEqual(sonst, []);
 });
 
@@ -191,6 +206,7 @@ test("Herstellerangaben nennen Hersteller, Produkt, https-Adresse und Abrufdatum
     const url = new URL(h.url);
     assert.equal(url.protocol, "https:", slug);
     assert.ok(!DRITTE.some((d) => url.hostname === d || url.hostname.endsWith("." + d)), slug + ": " + url.hostname + " ist keine Herstellerseite");
+    assert.equal(h.haendler, undefined, slug + ": Händler bei einer Herstellerangabe (source muss mit Händler-Etikett beginnen)");
     assert.match(h.abgerufen, /^\d{4}-\d{2}-\d{2}$/, slug);
     assert.ok(food.source.includes(h.url), slug + ": URL fehlt im source-Text");
     const [j, m, t] = h.abgerufen.split("-");
@@ -206,17 +222,108 @@ test("Herstellerangaben nennen Hersteller, Produkt, https-Adresse und Abrufdatum
   }
 });
 
+// Händler-Etikett: Das source-Feld nennt die Art, den Händler, die Adresse der
+// Produktseite und das Abrufdatum; andere Händler, Marktplätze, Datenbanken und
+// Händlerseiten anderer Länder zählen nicht.
+test("Händler-Etikett: Art, Händler, Produkt, https-Adresse und Abrufdatum", () => {
+  const mitEtikett = alle.filter(({ food }) => istEtikett(food));
+  assert.deepEqual(mitEtikett.map(({ slug }) => slug).sort(), Object.keys(etiketten).sort());
+  assert.ok(mitEtikett.length >= 20, "nur " + mitEtikett.length + " Seiten mit Händler-Etikett");
+  for (const { slug, food } of mitEtikett) {
+    const h = food.hersteller;
+    const e = etiketten[slug];
+    assert.ok(h && h.name && h.produkt && h.haendler, slug + ": Feld hersteller unvollständig");
+    const url = new URL(h.url);
+    assert.equal(url.protocol, "https:", slug);
+    assert.ok(HAENDLER[h.haendler]?.includes(url.hostname), slug + ": " + url.hostname + " ist keine Produktseite von " + h.haendler);
+    assert.deepEqual([h.haendler, h.url, h.abgerufen], [e.haendler, e.url, e.abgerufen], slug + ": Referenz nennt andere Quelle");
+    assert.match(h.abgerufen, /^\d{4}-\d{2}-\d{2}$/, slug);
+    const [j, m, t] = h.abgerufen.split("-");
+    assert.ok(food.source.startsWith("Händler-Etikett " + h.haendler + ": Herstellerangabe laut Verpackung, "), slug + ": Art fehlt im source-Text");
+    assert.ok(food.source.includes("(" + h.url + ", abgerufen am " + t + "." + m + "." + j + "), Werte je 100 " + (food.overview.einheit === "ml" ? "ml" : "g")), slug + ": Adresse, Abrufdatum oder Bezug fehlt im source-Text");
+    assert.equal(h.land, undefined, slug);
+    assert.ok(!h.beispiel || food.source.includes("Werte am Beispiel " + h.name + " " + h.produkt), slug + ": Beispielprodukt fehlt im source-Text");
+  }
+});
+
+// Zelle der Nährwerttabelle: "1.862 kJ", "16 g", "0,66 g", "< 0,5 g" (zählt als 0)
+function zelle(e, name, einheit, spalte) {
+  const i = e.tabelle[0].indexOf(spalte);
+  assert.ok(i > 0, e.titel + ": Spalte " + spalte);
+  const text = e.tabelle.slice(1).find((z) => z[0] === name && z[i].endsWith(" " + einheit))?.[i];
+  if (text == null) return null;
+  if (text.startsWith("<")) return 0;
+  const m = text.match(/^(\d{1,3}(?:\.\d{3})*|\d+)(?:,(\d+))? [a-zJ]+$/);
+  assert.ok(m, e.titel + ": " + text);
+  return Number(m[1].replaceAll(".", "") + "." + (m[2] ?? "0"));
+}
+const etikettWerte = (e, spalte = e.spalte) => ({
+  kj: zelle(e, "Energie", "kJ", spalte),
+  kcal: zelle(e, "Energie", "kcal", spalte),
+  fett: zelle(e, "Fett", "g", spalte),
+  gesaettigt: zelle(e, "Fett, davon gesättigte Fettsäuren", "g", spalte),
+  kohlenhydrate: zelle(e, "Kohlenhydrate", "g", spalte),
+  zucker: zelle(e, "Kohlenhydrate, davon Zucker", "g", spalte),
+  eiweiss: zelle(e, "Eiweiß", "g", spalte),
+  salz: zelle(e, "Salz", "g", spalte),
+  ballaststoffe: zelle(e, "Ballaststoffe", "g", spalte),
+});
+
+test("Händler-Etikett: Werte der Seite folgen aus der Nährwerttabelle der Händlerseite", () => {
+  const abweichungen = [];
+  for (const [slug, e] of Object.entries(etiketten)) {
+    const w = etikettWerte(e);
+    const o = seiten.get(slug).overview;
+    // Bezug: 100 g bzw. 100 ml wie auf der Seite, sonst Umrechnung auf das trockene Produkt
+    // (ebly: Portion aus 62,5 g ungekochtem Weizen)
+    if (!e.umrechnung) assert.equal(e.spalte, o.einheit === "ml" ? "pro 100 ml" : "pro 100 g", slug);
+    const f = e.umrechnung ? e.umrechnung.mal / e.umrechnung.durch : 1;
+    if (e.umrechnung) assert.match(seiten.get(slug).hersteller.produkt, /umgerechnet/, slug + ": Umrechnung nicht sichtbar");
+    const paare = [
+      ["kcal", o.calories_per_100g, Math.round(w.kcal * f)],
+      ["Eiweiß", o.protein_per_100g, eineStelle(w.eiweiss * f)],
+      ["Fett", o.fat_per_100g, eineStelle(w.fett * f)],
+      ["Kohlenhydrate", o.carbs_per_100g, eineStelle(w.kohlenhydrate * f)],
+      ["Ballaststoffe", o.fiber_per_100g, w.ballaststoffe == null ? null : eineStelle(w.ballaststoffe * f)],
+    ];
+    for (const [name, seite, etikett] of paare) if (seite !== etikett) abweichungen.push(slug + ": " + name + " " + seite + " statt " + etikett);
+  }
+  assert.deepEqual(abweichungen, []);
+});
+
+test("Händler-Etikett: Tabelle vollständig, in sich stimmig und ohne Widerspruch zu anderen Händlern", () => {
+  for (const [slug, e] of Object.entries(etiketten)) {
+    const w = etikettWerte(e);
+    for (const k of ["kj", "kcal", "fett", "gesaettigt", "kohlenhydrate", "zucker", "eiweiss", "salz"]) assert.ok(w[k] != null, slug + ": " + k + " fehlt");
+    assert.ok(Math.abs(w.kj / 4.184 - w.kcal) <= 0.02 * w.kcal + 1, slug + ": " + w.kj + " kJ und " + w.kcal + " kcal");
+    // Energie aus den Nährstoffen (Alkohol 7 kcal/g, 0,789 g/ml), Abweichung durch Rundung
+    const energie = 4 * w.eiweiss + 4 * w.kohlenhydrate + 9 * w.fett + 2 * (w.ballaststoffe ?? 0) + 7 * 0.789 * (e.alkohol_vol ?? 0);
+    assert.ok(Math.abs(energie - w.kcal) <= 0.05 * w.kcal + 1, slug + ": " + w.kcal + " kcal, aus den Nährstoffen " + eineStelle(energie));
+    const je100 = etikettWerte(e, e.tabelle[0][1]).kcal;
+    for (const g of e.gegenprobe) assert.ok(passt(g.kcal, je100, 1), slug + ": " + g.haendler + " nennt " + g.kcal + " statt " + je100 + " kcal");
+  }
+});
+
+test("Händler-Etikett: Gewicht der typischen Portion steht auf der Händlerseite oder ist als Schätzung gekennzeichnet", () => {
+  for (const [slug, e] of Object.entries(etiketten)) {
+    const o = seiten.get(slug).overview;
+    if (o.portion_geschaetzt) continue;
+    const treffer = e.gewichte.some(({ wert }) => { const n = o.typical_portion_g / wert; return n >= 1 && Math.abs(n - Math.round(n)) < 1e-9; });
+    assert.ok(treffer, slug + ": " + o.typical_portion_g + " steht nicht auf der Händlerseite");
+  }
+});
+
 // Herstellerwerte je 100 g ohne Stückgewicht vom Hersteller (Entscheidung vom
 // 23.11.2026): Das bisherige Stückgewicht bleibt, als Schätzung gekennzeichnet
 // (stueck_geschaetzt an der Variante, portion_geschaetzt an der typischen
 // Portion, "ca." im Namen; die Seite zeigt "Stückgewicht nicht vom Hersteller
 // angegeben").
-test("geschätzte Stückgewichte nur bei Herstellerangaben und mit ca. im Namen", () => {
+test("geschätzte Stückgewichte nur bei Herstellerangaben und Händler-Etiketten und mit ca. im Namen", () => {
   const befunde = [];
   for (const { slug, food } of alle) {
     const geschaetzt = food.variants.filter((v) => v.stueck_geschaetzt);
     if (!geschaetzt.length && !food.overview.portion_geschaetzt) continue;
-    if (!istHersteller(food)) befunde.push(slug + ": geschätztes Stückgewicht ohne Herstellerangabe");
+    if (!istHersteller(food) && !istEtikett(food)) befunde.push(slug + ": geschätztes Stückgewicht ohne Herstellerangabe");
     for (const v of geschaetzt) if (!/\bca\. /.test(v.name)) befunde.push(slug + " / " + v.name + ": ohne ca.");
     if (food.overview.portion_geschaetzt && !/\bca\. /.test(food.overview.typical_portion_name)) befunde.push(slug + ": typische Portion ohne ca.");
   }
@@ -337,10 +444,7 @@ test("Vergleiche offener Seiten mit Bestandteilen folgen aus deren Werten", () =
   }
   assert.deepEqual(abweichungen, []);
   for (const [slug, name] of [
-    ["daim-mini", "Celebrations (1 Stück)"],
-    ["daim-mini", "Milka Schokolade (1 Reihe, 25g)"],
     ["kaese", "Quark 20%"],
-    ["maltesers", "Smarties (38g Rolle)"],
     ["proteinriegel", "Quark 500g"],
   ]) {
     const c = seiten.get(slug).comparison.find((x) => x.name === name);

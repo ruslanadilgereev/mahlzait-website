@@ -3,9 +3,17 @@
   "name": "Piccolinis",
   "emoji": "🍕",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Original Wagner, Piccolinis Salami 270 g (https://www.rewe.de/shop/p/original-wagner-piccolinis-salami-270g/1459732, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Original Wagner",
+    "produkt": "Piccolinis Salami 270 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/original-wagner-piccolinis-salami-270g/1459732",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Piccolinis Kalorien: Nährwerte & Portionen | Mahlzait",
-    "description": "Wie viele Kalorien haben Piccolinis? Eine Mini-Pizza (30g) hat ca. 76 kcal, 3 Stück 227 kcal. Nährwerte pro 100g & pro Stück plus Tipps.",
+    "description": "Wie viele Kalorien haben Piccolinis? Eine Mini-Pizza Salami (30 g) hat rund 75 kcal, 3 Stück 226 kcal. Nährwerte pro 100 g & pro Stück plus Tipps.",
     "keywords": [
       "piccolinis kalorien",
       "piccolinis kcal",
@@ -17,94 +25,106 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 252,
+    "calories_per_100g": 251,
     "protein_per_100g": 10.4,
     "carbs_per_100g": 28.5,
     "fat_per_100g": 10.2,
     "fiber_per_100g": 1.9,
     "typical_portion_g": 90,
-    "typical_portion_name": "3 Mini-Pizzen (90g)"
+    "typical_portion_name": "3 Mini-Pizzen (90 g)"
   },
   "variants": [
     {
-      "name": "1 Mini-Pizza Salami (30g)",
+      "name": "1 Mini-Pizza Salami (30 g)",
       "portion_g": 30,
-      "calories": 76,
+      "calories": 75,
       "protein": 3.1,
-      "carbs": 8.6,
-      "fat": 3.1,
-      "tip": "Ein einzelnes Stück"
+      "carbs": 8.5,
+      "fat": 3.1
     },
     {
-      "name": "3 Mini-Pizzen (90g)",
+      "name": "3 Mini-Pizzen (90 g)",
       "portion_g": 90,
-      "calories": 227,
+      "calories": 226,
       "protein": 9.4,
       "carbs": 25.7,
       "fat": 9.2,
-      "tip": "Übliche Portion"
+      "tip": "Portion laut Packung"
     },
     {
-      "name": "Halbe Packung (135g)",
+      "name": "Halbe Packung (135 g)",
       "portion_g": 135,
-      "calories": 340,
+      "calories": 339,
       "protein": 14,
       "carbs": 38.5,
       "fat": 13.8
     },
     {
-      "name": "Ganze Packung Salami (270g)",
+      "name": "Ganze Packung Salami (9 Stück, 270 g)",
       "portion_g": 270,
-      "calories": 680,
+      "calories": 678,
       "protein": 28.1,
       "carbs": 77,
-      "fat": 27.5,
-      "tip": "Komplette Tüte, eher viel"
+      "fat": 27.5
     },
     {
-      "name": "1 Mini-Pizza Drei Käse (30g)",
-      "portion_g": 30,
-      "calories": 87,
-      "protein": 3.2,
-      "carbs": 7.8,
-      "fat": 4.8,
-      "tip": "Käse-Variante, fettreicher"
-    },
-    {
-      "name": "Ganze Packung Drei Käse (270g)",
-      "portion_g": 270,
-      "calories": 783,
-      "protein": 28.6,
-      "carbs": 70.2,
-      "fat": 43.2
+      "name": "100 g",
+      "portion_g": 100,
+      "calories": 251,
+      "protein": 10.4,
+      "carbs": 28.5,
+      "fat": 10.2
     }
   ],
   "comparison": [
     {
-      "name": "Tiefkühl-Pizza Salami (Stück)",
-      "calories": 765,
-      "emoji": "🍕"
+      "name": "Tiefkühl-Pizza Salami (320 g)",
+      "calories": 877,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "pizza-salami",
+          "variante": "TK-Pizza Salami (320g)"
+        }
+      ]
     },
     {
-      "name": "Pizzabrötchen (3 Stück, 90g)",
-      "calories": 252,
-      "emoji": "🥖"
+      "name": "Fertigpizza (halbe, 175 g)",
+      "calories": 469,
+      "emoji": "🍕",
+      "basis": [
+        {
+          "slug": "fertigpizza",
+          "g": 175
+        }
+      ]
     },
     {
-      "name": "Mozzarella Sticks (90g)",
-      "calories": 270,
-      "emoji": "🧀"
+      "name": "Mozzarella Sticks (3 Stück, 78 g)",
+      "calories": 254,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella-sticks",
+          "g": 78
+        }
+      ]
     },
     {
       "name": "Brezel (1 Stück)",
-      "calories": 230,
-      "emoji": "🥨"
+      "calories": 321,
+      "emoji": "🥨",
+      "basis": [
+        {
+          "slug": "brezel"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portion bewusst abzählen",
-      "text": "Eine Mini-Pizza hat nur etwa 76 kcal. Wer 3 Stück (227 kcal) als Beilage isst, bleibt deutlich unter den 680 kcal einer ganzen Packung.",
+      "text": "Eine Mini-Pizza hat nur rund 75 kcal. Wer 3 Stück (226 kcal) als Beilage isst, bleibt deutlich unter den rund 678 kcal einer ganzen Packung.",
       "icon": "🔢"
     },
     {
@@ -114,12 +134,12 @@
     },
     {
       "title": "Salz im Blick behalten",
-      "text": "Mit 1,1g Salz pro 100g liefern Piccolinis bereits einen spürbaren Teil der empfohlenen Tagesmenge von 6g. Wer auf den Blutdruck achtet, sollte das einplanen.",
+      "text": "Mit 1,1 g Salz pro 100 g liefert eine Portion (90 g) schon 0,99 g Salz, laut Packung 17 % der Referenzmenge von 6 g. Wer auf den Blutdruck achtet, sollte das einplanen.",
       "icon": "🧂"
     },
     {
-      "title": "Variante macht den Unterschied",
-      "text": "Die Drei-Käse-Sorte ist mit rund 290 kcal pro 100g fettreicher als die Salami-Variante mit 252 kcal. Wer Kalorien sparen möchte, greift eher zur Salami- oder Schinken-Sorte.",
+      "title": "Auf die Sorte achten",
+      "text": "Die Werte gelten für die Sorte Salami. Andere Sorten wie Drei Käse oder Schinken haben eigene Werte auf der Packung.",
       "icon": "🧀"
     },
     {
@@ -131,27 +151,27 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Piccolinis Mini-Pizza?",
-      "answer": "Eine einzelne Mini-Pizza (30g) der Salami-Sorte hat etwa 76 kcal. Eine ganze Packung mit 9 Stück (270g) kommt auf rund 680 kcal."
+      "answer": "Eine einzelne Mini-Pizza (30 g) der Salami-Sorte hat rund 75 kcal. Eine ganze Packung mit 9 Stück (270 g) kommt auf rund 678 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien haben Piccolinis pro 100g?",
-      "answer": "Piccolinis Salami haben pro 100g etwa 252 kcal, 10,4g Eiweiß, 28,5g Kohlenhydrate und 10,2g Fett."
+      "answer": "Piccolinis Salami haben laut Packung pro 100 g 251 kcal, 10,4 g Eiweiß, 28,5 g Kohlenhydrate und 10,2 g Fett."
     },
     {
       "question": "Wie viele Piccolinis sind in einer Packung?",
-      "answer": "Eine Standard-Packung enthält 270g, das entspricht 9 Mini-Pizzen zu je 30g."
+      "answer": "Eine Packung enthält 270 g, das entspricht 9 Mini-Pizzen zu je 30 g, also 3 Portionen."
     },
     {
       "question": "Wie viel Eiweiß und Kohlenhydrate haben Piccolinis?",
-      "answer": "Pro 100g liefern Piccolinis 10,4g Eiweiß und 28,5g Kohlenhydrate, davon 3,7g Zucker. Eine Portion von 3 Stück (90g) hat etwa 9,4g Eiweiß und 25,7g Kohlenhydrate."
+      "answer": "Pro 100 g liefern Piccolinis Salami 10,4 g Eiweiß und 28,5 g Kohlenhydrate, davon 3,7 g Zucker. Eine Portion von 3 Stück (90 g) hat rund 9,4 g Eiweiß und 25,7 g Kohlenhydrate."
     },
     {
       "question": "Sind Piccolinis zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Mit 76 kcal pro Stück lassen sich Piccolinis gut portionieren. Problematisch wird es erst, wenn man die ganze Packung (680 kcal) isst. Wer abnehmen will, zählt die Stücke ab und kombiniert sie mit Gemüse oder Salat."
+      "answer": "In Maßen ja. Mit rund 75 kcal pro Stück lassen sich Piccolinis gut portionieren. Problematisch wird es erst, wenn man die ganze Packung (rund 678 kcal) isst. Wer abnehmen will, zählt die Stücke ab und kombiniert sie mit Gemüse oder Salat."
     },
     {
       "question": "Sind Piccolinis gesund?",
-      "answer": "Piccolinis sind ein verarbeitetes Tiefkühlprodukt mit relativ viel Salz (1,1g pro 100g) und wenig Ballaststoffen (1,9g). Als gelegentlicher Snack sind sie unbedenklich, als Hauptbestandteil der Ernährung weniger geeignet."
+      "answer": "Piccolinis sind ein verarbeitetes Tiefkühlprodukt mit relativ viel Salz (1,1 g pro 100 g) und wenig Ballaststoffen (1,9 g). Als gelegentlicher Snack sind sie unbedenklich, als Hauptbestandteil der Ernährung weniger geeignet."
     }
   ],
   "related_foods": [

@@ -3,9 +3,17 @@
   "name": "Mars Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Mars Minis 227 g (https://www.rewe.de/shop/p/mars-minis-227g/8171620, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Mars Minis 227 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/mars-minis-227g/8171620",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Mars Mini Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Mars Mini? Ein Riegel (18g) hat ca. 79 kcal. Nährwerte pro 100g & pro Stück, Vergleich und Tipps zum Naschen.",
+    "description": "Wie viele Kalorien hat ein Mars Mini? Ein Riegel (18 g) hat rund 79 kcal. Nährwerte pro 100 g & pro Stück, Vergleich und Tipps zum Naschen.",
     "keywords": [
       "mars mini kalorien",
       "mars mini kcal",
@@ -20,83 +28,114 @@
     "protein_per_100g": 4.2,
     "carbs_per_100g": 71,
     "fat_per_100g": 15,
-    "fiber_per_100g": 1.2,
+    "fiber_per_100g": null,
     "typical_portion_g": 18,
-    "typical_portion_name": "1 Mars Mini (18g)"
+    "typical_portion_name": "1 Mars Mini (18 g)"
   },
   "variants": [
     {
-      "name": "1 Mars Mini (18g)",
+      "name": "1 Mars Mini (18 g)",
       "portion_g": 18,
       "calories": 79,
-      "protein": 1,
-      "carbs": 13,
-      "fat": 3,
-      "tip": "Standard"
+      "protein": 0.8,
+      "carbs": 12.8,
+      "fat": 2.7
     },
     {
-      "name": "2 Mars Mini (36g)",
+      "name": "2 Mars Mini (36 g)",
       "portion_g": 36,
       "calories": 157,
-      "protein": 2,
-      "carbs": 26,
-      "fat": 5
+      "protein": 1.5,
+      "carbs": 25.6,
+      "fat": 5.4
     },
     {
-      "name": "3 Mars Mini (54g)",
+      "name": "3 Mars Mini (54 g)",
       "portion_g": 54,
       "calories": 236,
-      "protein": 2,
-      "carbs": 38,
-      "fat": 8
+      "protein": 2.3,
+      "carbs": 38.3,
+      "fat": 8.1
     },
     {
-      "name": "Handvoll (5 Stück, 90g)",
+      "name": "Handvoll (5 Stück, 90 g)",
       "portion_g": 90,
       "calories": 393,
-      "protein": 4,
-      "carbs": 64,
-      "fat": 14,
-      "tip": "Typische Naschportion aus dem Beutel"
+      "protein": 3.8,
+      "carbs": 63.9,
+      "fat": 13.5
     },
     {
-      "name": "Pro 100g",
+      "name": "Beutel (227 g)",
+      "portion_g": 227,
+      "calories": 992,
+      "protein": 9.5,
+      "carbs": 161.2,
+      "fat": 34.1
+    },
+    {
+      "name": "Pro 100 g",
       "portion_g": 100,
       "calories": 437,
-      "protein": 4,
+      "protein": 4.2,
       "carbs": 71,
       "fat": 15
     },
     {
-      "name": "Vergleich: 1 großer Mars (51g)",
+      "name": "Vergleich: 1 Mars Einzelriegel (51 g)",
       "portion_g": 51,
-      "calories": 223,
-      "protein": 2,
-      "carbs": 36,
-      "fat": 8,
-      "tip": "Entspricht knapp 3 Mini-Riegeln"
+      "calories": 226,
+      "protein": 2.2,
+      "carbs": 35.7,
+      "fat": 8.2,
+      "basis": [
+        {
+          "slug": "mars-riegel",
+          "g": 51
+        }
+      ]
     }
   ],
   "comparison": [
     {
-      "name": "Snickers Mini",
+      "name": "Snickers Mini (18 g)",
       "calories": 88,
-      "emoji": "🥜"
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "snickers-mini"
+        }
+      ]
     },
     {
-      "name": "Twix Mini",
-      "calories": 84,
-      "emoji": "🍫"
+      "name": "Twix Mini (20 g)",
+      "calories": 100,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix-mini"
+        }
+      ]
     },
     {
-      "name": "Bounty Mini",
-      "calories": 96,
-      "emoji": "🥥"
+      "name": "Bounty Mini (28,5 g)",
+      "calories": 139,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "bounty-mini"
+        }
+      ]
     },
     {
-      "name": "Duplo",
-      "calories": 117,
-      "emoji": "🍫"
+      "name": "Duplo (18,2 g)",
+      "calories": 100,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "duplo"
+        }
+      ]
     }
   ],
   "tips": [
@@ -107,12 +146,12 @@
     },
     {
       "title": "Vorsicht beim Beutel",
-      "text": "Die Minis verleiten zum Weiternaschen. Schon eine Handvoll von fünf Stück bringt fast 400 kcal mit, also etwa so viel wie eine kleine Mahlzeit.",
+      "text": "Die Minis verleiten zum Weiternaschen. Schon eine Handvoll von fünf Stück bringt rund 393 kcal mit, also etwa so viel wie eine kleine Mahlzeit.",
       "icon": "⚠️"
     },
     {
       "title": "Hoher Zuckeranteil",
-      "text": "Mars Minis bestehen zu rund 62 von 100 Gramm aus Zucker. Sie liefern schnelle Energie, aber kaum Sättigung. Als Snack zwischendurch eher sparsam einsetzen.",
+      "text": "Mars Minis bestehen zu 62 von 100 Gramm aus Zucker. Sie liefern schnelle Energie, aber kaum Sättigung. Als Snack zwischendurch eher sparsam einsetzen.",
       "icon": "🧁"
     },
     {
@@ -129,19 +168,19 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Mars Mini?",
-      "answer": "Ein Mars Mini wiegt 18 Gramm und hat etwa 79 kcal. Drei Stück kommen zusammen auf rund 236 kcal."
+      "answer": "Ein Mars Mini wiegt 18 g und hat rund 79 kcal. Drei Stück kommen zusammen auf rund 236 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien haben Mars Minis pro 100g?",
-      "answer": "Pro 100 Gramm haben Mars Minis laut Herstellerangabe 437 kcal."
+      "answer": "Pro 100 g haben Mars Minis laut Packung 437 kcal."
     },
     {
       "question": "Wie viel Zucker steckt in Mars Minis?",
-      "answer": "Mars Minis enthalten pro 100 Gramm etwa 62 Gramm Zucker. Ein einzelner Riegel von 18 Gramm hat damit rund 11 Gramm Zucker."
+      "answer": "Mars Minis enthalten pro 100 g 62 g Zucker. Ein einzelner Riegel von 18 g hat damit rund 11 g Zucker."
     },
     {
       "question": "Wie viel Eiweiß hat ein Mars Mini?",
-      "answer": "Der Eiweißgehalt ist gering: Pro 100 Gramm sind es 4,2 Gramm, ein einzelner Mini liefert also unter einem Gramm Protein."
+      "answer": "Der Eiweißgehalt ist gering: Pro 100 g sind es 4,2 g, ein einzelner Mini liefert also unter 1 g Protein."
     },
     {
       "question": "Sind Mars Minis zum Abnehmen geeignet?",
@@ -149,7 +188,7 @@
     },
     {
       "question": "Sind Mars Minis gesünder als ein normaler Mars?",
-      "answer": "Die Nährwerte pro 100 Gramm sind identisch. Der Vorteil liegt nur in der kleineren Portion: Ein Mini hat 79 kcal, ein normaler Mars Riegel mit 51 Gramm dagegen rund 223 kcal."
+      "answer": "Die Nährwerte pro 100 g sind fast gleich: 437 kcal bei den Minis, 443 kcal beim normalen Mars. Der Vorteil liegt in der kleineren Portion: Ein Mini hat rund 79 kcal, ein Mars Einzelriegel (51 g) dagegen rund 226 kcal."
     }
   ],
   "related_foods": [

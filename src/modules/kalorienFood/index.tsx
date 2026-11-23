@@ -81,6 +81,8 @@ interface Herstellerangabe {
   beispiel?: boolean;
   // offizielle Herstellerseite aus Österreich oder der Schweiz (keine für Deutschland)
   land?: "Österreich" | "Schweiz";
+  // deutscher Händler, dessen Produktseite (url) die Kennzeichnung des Herstellers zeigt
+  haendler?: string;
 }
 
 // Rezeptzutat mit den Werten einer anderen Seite, deren Werte eine Herstellerangabe sind
@@ -93,9 +95,14 @@ interface RezeptHerstellerangabe {
 
 const datum = (iso: string) => iso.split("-").reverse().join(".");
 // Hinweis unter der Nährwerttabelle ("Herstellerangabe: ...", "Herstellerangabe (Österreich): ..."), Fußzeile ("Quelle: Herstellerangabe ...")
-// oder Rezeptzutat; allgemeine Seiten "Werte am Beispiel ... (Herstellerangabe)"
+// oder Rezeptzutat; allgemeine Seiten "Werte am Beispiel ... (Herstellerangabe)";
+// Händler-Etikett "Herstellerangabe laut Verpackung, angezeigt bei ..."
 function herstellerHinweis(h: Herstellerangabe, form: "hinweis" | "quelle" | "zutat") {
   const vor = form === "quelle" ? "Quelle: " : "";
+  if (h.haendler) {
+    const etikett = `Herstellerangabe laut Verpackung, angezeigt bei ${h.haendler}, abgerufen am ${datum(h.abgerufen)}`;
+    return h.beispiel ? `${vor}Werte am Beispiel ${h.name} ${h.produkt}, ${etikett}` : `${vor}${etikett}: ${h.name}, ${h.produkt}`;
+  }
   if (h.beispiel) return `${vor}Werte am Beispiel ${h.name} ${h.produkt} (Herstellerangabe), abgerufen am ${datum(h.abgerufen)}`;
   const art = h.land ? `Herstellerangabe (${h.land})` : "Herstellerangabe";
   if (form === "hinweis") return `${art}: ${h.name}, ${h.produkt}, abgerufen am ${datum(h.abgerufen)}`;
@@ -379,7 +386,7 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   >
-                    Nährwerte beim Hersteller
+                    {food.hersteller.haendler ? `Produktseite bei ${food.hersteller.haendler}` : "Nährwerte beim Hersteller"}
                   </a>
                 </p>
               )}

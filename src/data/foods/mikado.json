@@ -3,9 +3,17 @@
   "name": "Mikado",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mondelez, Mikado Milchschokolade 75 g (https://www.rewe.de/shop/p/mikado-keks-sticks-milchschokolade-75g/989744, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mondelez",
+    "produkt": "Mikado Milchschokolade 75 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/mikado-keks-sticks-milchschokolade-75g/989744",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Mikado Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mikado? Eine 75g-Packung hat ca. 360 kcal, 100g rund 480 kcal. Nährwerte, Portionen & Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Mikado? Eine Packung Milchschokolade (75 g) hat rund 358 kcal, 100 g haben 477 kcal. Nährwerte, Portionen & Tipps.",
     "keywords": [
       "mikado kalorien",
       "mikado kcal",
@@ -17,144 +25,145 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 480,
-    "protein_per_100g": 6.8,
-    "carbs_per_100g": 68,
-    "fat_per_100g": 20,
-    "fiber_per_100g": 3.4,
+    "calories_per_100g": 477,
+    "protein_per_100g": 7.7,
+    "carbs_per_100g": 67,
+    "fat_per_100g": 19,
+    "fiber_per_100g": 2.8,
     "typical_portion_g": 75,
-    "typical_portion_name": "1 Packung (75g)"
+    "typical_portion_name": "1 Packung (75 g)"
   },
   "variants": [
     {
-      "name": "1 Stick (ca. 1,7g)",
-      "portion_g": 1.7,
-      "calories": 8,
-      "protein": 0.1,
-      "carbs": 1.2,
-      "fat": 0.3
+      "name": "1 Stick (ca. 2,3 g)",
+      "portion_g": 2.3,
+      "calories": 11,
+      "protein": 0.2,
+      "carbs": 1.5,
+      "fat": 0.4,
+      "tip": "Laut Packung rund 13 Sticks je 30 g"
     },
     {
-      "name": "10 Sticks (ca. 17g)",
-      "portion_g": 17,
-      "calories": 82,
-      "protein": 1.2,
-      "carbs": 11.6,
-      "fat": 3.4
+      "name": "10 Sticks (ca. 23 g)",
+      "portion_g": 23,
+      "calories": 110,
+      "protein": 1.8,
+      "carbs": 15.4,
+      "fat": 4.4
     },
     {
-      "name": "Kleine Handvoll (20g)",
-      "portion_g": 20,
-      "calories": 96,
-      "protein": 1.4,
-      "carbs": 13.6,
-      "fat": 4,
-      "tip": "Snack-Portion"
+      "name": "Portion laut Packung (30 g, rund 13 Sticks)",
+      "portion_g": 30,
+      "calories": 143,
+      "protein": 2.3,
+      "carbs": 20.1,
+      "fat": 5.7
     },
     {
-      "name": "Halbe Packung (ca. 38g)",
-      "portion_g": 38,
-      "calories": 182,
-      "protein": 2.6,
-      "carbs": 25.8,
-      "fat": 7.6
+      "name": "Halbe Packung (37,5 g)",
+      "portion_g": 37.5,
+      "calories": 179,
+      "protein": 2.9,
+      "carbs": 25.1,
+      "fat": 7.1
     },
     {
-      "name": "1 Packung Milchschokolade (75g)",
+      "name": "1 Packung Milchschokolade (75 g)",
       "portion_g": 75,
-      "calories": 360,
-      "protein": 5.1,
-      "carbs": 51,
-      "fat": 15,
-      "tip": "Standard-Gebinde"
+      "calories": 358,
+      "protein": 5.8,
+      "carbs": 50.3,
+      "fat": 14.3
     },
     {
-      "name": "1 Packung Sticks (70g)",
-      "portion_g": 70,
-      "calories": 336,
-      "protein": 4.8,
-      "carbs": 47.6,
-      "fat": 14
-    },
-    {
-      "name": "Mikado Zartherb (100g)",
+      "name": "100 g",
       "portion_g": 100,
-      "calories": 468,
-      "protein": 7.1,
-      "carbs": 66,
-      "fat": 18,
-      "tip": "Etwas weniger Zucker"
+      "calories": 477,
+      "protein": 7.7,
+      "carbs": 67,
+      "fat": 19
     }
   ],
   "comparison": [
     {
-      "name": "Mikado (1 Packung 75g)",
-      "calories": 360,
-      "emoji": "🍫"
+      "name": "Twix (2 Riegel, 50 g)",
+      "calories": 251,
+      "emoji": "🍬",
+      "basis": [
+        {
+          "slug": "twix"
+        }
+      ]
     },
     {
-      "name": "Schokoriegel (50g)",
-      "calories": 245,
-      "emoji": "🍬"
-    },
-    {
-      "name": "Butterkeks (5 Stück, 30g)",
+      "name": "Butterkeks (5 Stück, 30 g)",
       "calories": 140,
-      "emoji": "🍪"
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "butterkeks",
+          "g": 30
+        }
+      ]
     },
     {
-      "name": "Vollmilchschokolade (1 Reihe, 25g)",
-      "calories": 135,
-      "emoji": "🍫"
+      "name": "Vollmilchschokolade (1 Reihe, 25 g)",
+      "calories": 134,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "schokolade-vollmilch"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Sticks bewusst zählen",
-      "text": "Ein einzelner Mikado-Stick hat nur rund 8 kcal. Wer einzeln statt direkt aus der Packung nascht, behält die Menge besser im Blick.",
+      "text": "Ein einzelner Mikado-Stick hat nur rund 11 kcal. Wer einzeln statt direkt aus der Packung nascht, behält die Menge besser im Blick.",
       "icon": "🥢"
     },
     {
       "title": "Die Packung verführt",
-      "text": "Eine ganze 75g-Packung liefert ca. 360 kcal und 51g Kohlenhydrate, davon viel Zucker. Lieber in eine kleine Schale portionieren statt vor der offenen Packung zu sitzen.",
+      "text": "Eine ganze 75-g-Packung liefert rund 358 kcal und 50 g Kohlenhydrate, davon rund 26 g Zucker. Lieber in eine kleine Schale portionieren statt vor der offenen Packung zu sitzen.",
       "icon": "⚠️"
     },
     {
-      "title": "Zartherb statt Vollmilch",
-      "text": "Die zartherbe Variante hat etwas weniger Zucker und etwas mehr Ballaststoffe als die Milchschokoladen-Version, bei ähnlicher Kalorienzahl.",
+      "title": "Portion laut Packung",
+      "text": "Auf der Packung sind 30 g (rund 13 Sticks) als Portion angegeben, das sind rund 143 kcal. Die Sorten Zartherb und Weiße Schokolade haben eigene Werte auf der Packung.",
       "icon": "🍫"
     },
     {
       "title": "Zum Kaffee genießen",
-      "text": "10 Sticks zum Kaffee schlagen mit rund 82 kcal zu Buche, eine überschaubare Süßigkeit für zwischendurch.",
+      "text": "10 Sticks zum Kaffee schlagen mit rund 110 kcal zu Buche, eine überschaubare Süßigkeit für zwischendurch.",
       "icon": "☕"
     },
     {
       "title": "Kein Sattmacher",
-      "text": "Mit nur 6,8g Protein und wenig Ballaststoffen pro 100g sättigt Mikado kaum. Als Mahlzeitenersatz ist es ungeeignet, eher als kleine Belohnung gedacht.",
+      "text": "Mit 7,7 g Protein und 2,8 g Ballaststoffen pro 100 g sättigt Mikado kaum. Als Mahlzeitenersatz ist es ungeeignet, eher als kleine Belohnung gedacht.",
       "icon": "🍽️"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat Mikado?",
-      "answer": "Eine Standard-Packung Mikado Milchschokolade (75g) hat ca. 360 kcal. Pro 100g sind es rund 480 kcal."
+      "answer": "Eine Packung Mikado Milchschokolade (75 g) hat rund 358 kcal. Pro 100 g sind es 477 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat ein einzelner Mikado-Stick?",
-      "answer": "Ein einzelner Stick wiegt etwa 1,7g und hat nur rund 8 kcal. 10 Sticks kommen auf ca. 82 kcal."
+      "answer": "Laut Packung wiegen rund 13 Sticks zusammen 30 g, ein Stick also ca. 2,3 g. Das sind rund 11 kcal je Stick, 10 Sticks kommen auf rund 110 kcal."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mikado?",
-      "answer": "Mikado enthält rund 68g Kohlenhydrate pro 100g, davon etwa 33g Zucker. Eine 75g-Packung liefert somit etwa 51g Kohlenhydrate."
+      "answer": "Mikado Milchschokolade enthält 67 g Kohlenhydrate pro 100 g, davon 34 g Zucker. Eine 75-g-Packung liefert rund 50 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein steckt in Mikado?",
-      "answer": "Mikado liefert nur etwa 6,8g Eiweiß pro 100g. Eine ganze Packung (75g) enthält rund 5g Protein, es ist also kein nennenswerter Eiweißlieferant."
+      "answer": "Mikado Milchschokolade liefert 7,7 g Eiweiß pro 100 g. Eine ganze Packung (75 g) enthält rund 6 g Protein, es ist also kein nennenswerter Eiweißlieferant."
     },
     {
       "question": "Ist Mikado zum Abnehmen geeignet?",
-      "answer": "Mikado ist mit rund 480 kcal pro 100g recht kalorienreich und zuckerhaltig. In einer Diät ist es nur in kleinen Mengen sinnvoll, am besten einzelne Sticks abgezählt statt der ganzen Packung."
+      "answer": "Mikado ist mit 477 kcal pro 100 g recht kalorienreich und zuckerhaltig. In einer Diät ist es nur in kleinen Mengen sinnvoll, am besten einzelne Sticks abgezählt statt der ganzen Packung."
     },
     {
       "question": "Ist Mikado gesund?",

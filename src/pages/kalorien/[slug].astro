@@ -156,9 +156,12 @@ const howToSchema = {
 const isBasedOn: object[] = [];
 const herstellerSeite = (h: any) => ({
   "@type": "WebPage",
-  name: `${h.produkt}: Nährwertangabe von ${h.name}${h.land ? ` (${h.land})` : ""}`,
+  // Händler-Etikett: Produktseite eines deutschen Händlers mit der Kennzeichnung des Herstellers
+  name: h.haendler
+    ? `${h.produkt} (${h.name}): Herstellerangabe laut Verpackung, angezeigt bei ${h.haendler}`
+    : `${h.produkt}: Nährwertangabe von ${h.name}${h.land ? ` (${h.land})` : ""}`,
   url: h.url,
-  publisher: { "@type": "Organization", name: h.name },
+  publisher: { "@type": "Organization", name: h.haendler ?? h.name },
 });
 if (typeof food.source === "string" && food.source.startsWith("USDA FoodData Central")) {
   isBasedOn.push({

@@ -3,9 +3,17 @@
   "name": "Mars Eis",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Mars Eisriegel 5 x 49,5 ml (https://www.rewe.de/shop/p/mars-eisriegel-5x49-5ml/8908933, abgerufen am 23.11.2026), Werte je 100 ml",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Mars Eisriegel 5 x 49,5 ml",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/mars-eisriegel-5x49-5ml/8908933",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Mars Eis Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Mars Eis? Ein Riegel (31g) hat ca. 103 kcal, 100g rund 333 kcal. Nährwerte, Portionen im Vergleich und Diät-Tipps.",
+    "description": "Wie viele Kalorien hat Mars Eis? Ein Riegel (49,5 ml) hat rund 131 kcal, 100 ml haben 264 kcal. Nährwerte, Portionen im Vergleich und Diät-Tipps.",
     "keywords": [
       "mars eis kalorien",
       "mars eis kcal",
@@ -16,103 +24,113 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 333,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 41,
-    "fat_per_100g": 17,
-    "fiber_per_100g": 0.8,
-    "typical_portion_g": 31,
-    "typical_portion_name": "1 Riegel (51 ml)"
+    "calories_per_100g": 264,
+    "protein_per_100g": 2.9,
+    "carbs_per_100g": 31,
+    "fat_per_100g": 14,
+    "fiber_per_100g": null,
+    "typical_portion_g": 49.5,
+    "typical_portion_name": "1 Riegel (49,5 ml)",
+    "einheit": "ml"
   },
   "variants": [
     {
-      "name": "Halber Riegel (15g)",
-      "portion_g": 15,
-      "calories": 50,
-      "protein": 1,
-      "carbs": 6,
-      "fat": 3
+      "name": "Halber Riegel (24,75 ml)",
+      "portion_g": 24.75,
+      "calories": 65,
+      "protein": 0.7,
+      "carbs": 7.7,
+      "fat": 3.5
     },
     {
-      "name": "1 Riegel (31g / 51 ml)",
-      "portion_g": 31,
-      "calories": 103,
-      "protein": 1,
-      "carbs": 13,
-      "fat": 5,
-      "tip": "Standard-Portion, ein einzelner Riegel"
+      "name": "1 Riegel (49,5 ml)",
+      "portion_g": 49.5,
+      "calories": 131,
+      "protein": 1.4,
+      "carbs": 15.3,
+      "fat": 6.9
     },
     {
-      "name": "2 Riegel (62g)",
-      "portion_g": 62,
-      "calories": 206,
-      "protein": 2,
-      "carbs": 25,
-      "fat": 11
+      "name": "2 Riegel (99 ml)",
+      "portion_g": 99,
+      "calories": 261,
+      "protein": 2.9,
+      "carbs": 30.7,
+      "fat": 13.9
     },
     {
-      "name": "Multipack-Box (4 Riegel, 124g)",
-      "portion_g": 124,
-      "calories": 413,
-      "protein": 5,
-      "carbs": 51,
-      "fat": 21,
-      "tip": "Ganze Packung mit 4 Riegeln"
+      "name": "Packung (5 Riegel, 247,5 ml)",
+      "portion_g": 247.5,
+      "calories": 653,
+      "protein": 7.2,
+      "carbs": 76.7,
+      "fat": 34.7
     },
     {
-      "name": "Pro 100 g",
+      "name": "Pro 100 ml",
       "portion_g": 100,
-      "calories": 333,
-      "protein": 4,
-      "carbs": 41,
-      "fat": 17
-    },
-    {
-      "name": "Mini-Riegel (20g)",
-      "portion_g": 20,
-      "calories": 67,
-      "protein": 1,
-      "carbs": 8,
-      "fat": 3,
-      "tip": "Kleinere Snack-Variante"
+      "calories": 264,
+      "protein": 2.9,
+      "carbs": 31,
+      "fat": 14
     }
   ],
   "comparison": [
     {
-      "name": "Mars Riegel (Schoko, 51g)",
-      "calories": 230,
-      "emoji": "🍫"
+      "name": "Mars Riegel (Schoko, 51 g)",
+      "calories": 226,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "mars-riegel"
+        }
+      ]
     },
     {
-      "name": "Magnum Classic (1 Stück)",
-      "calories": 250,
-      "emoji": "🍦"
+      "name": "Magnum Classic (81 g)",
+      "calories": 247,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "magnum-eis"
+        }
+      ]
     },
     {
-      "name": "Snickers Eis (1 Riegel)",
-      "calories": 184,
-      "emoji": "🥜"
+      "name": "Snickers Eis (1 Riegel, 66 g)",
+      "calories": 226,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "snickers-eis"
+        }
+      ]
     },
     {
-      "name": "Wassereis (1 Stück)",
-      "calories": 40,
-      "emoji": "🧊"
+      "name": "Wassereis (60 g)",
+      "calories": 47,
+      "emoji": "🧊",
+      "basis": [
+        {
+          "slug": "wassereis"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ein Riegel als überschaubare Portion",
-      "text": "Ein einzelner Mars Eis Riegel hat nur rund 103 kcal. Wer es bei einem Riegel belässt, hält den Kalorienbeitrag gering.",
+      "text": "Ein einzelner Mars Eisriegel (49,5 ml) hat rund 131 kcal. Wer es bei einem Riegel belässt, hält den Kalorienbeitrag gering.",
       "icon": "🍫"
     },
     {
       "title": "Auf die Packungsgröße achten",
-      "text": "Eine Multipack-Box enthält meist 4 Riegel. Die ganze Box auf einmal bedeutet über 400 kcal, am besten einzeln genießen.",
+      "text": "Die Packung enthält 5 Riegel. Alle zusammen (247,5 ml) haben rund 653 kcal, am besten einzeln genießen.",
       "icon": "📦"
     },
     {
       "title": "Reich an Fett und Zucker",
-      "text": "Mit 17g Fett und 41g Kohlenhydraten pro 100g ist Mars Eis ein energiedichtes Genussprodukt, kein Durstlöscher für heiße Tage.",
+      "text": "Mit 14 g Fett und 31 g Kohlenhydraten (davon 24 g Zucker) pro 100 ml ist Mars Eis ein energiedichtes Genussprodukt, kein Durstlöscher für heiße Tage.",
       "icon": "⚖️"
     },
     {
@@ -122,30 +140,30 @@
     },
     {
       "title": "Leichtere Alternative bei Hitze",
-      "text": "Wer hauptsächlich Abkühlung sucht, fährt mit einem Wassereis (ca. 40 kcal) deutlich kalorienärmer als mit einem Mars Eis.",
+      "text": "Wer hauptsächlich Abkühlung sucht, fährt mit einem Wassereis (rund 47 kcal) deutlich kalorienärmer als mit einem Mars Eis.",
       "icon": "🧊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Mars Eis?",
-      "answer": "Ein Mars Eis Riegel (31g / 51 ml) hat ca. 103 kcal. Pro 100g sind es rund 333 kcal."
+      "answer": "Ein Mars Eisriegel (49,5 ml) hat rund 131 kcal. Pro 100 ml sind es 264 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
-      "question": "Wie viele Kalorien hat Mars Eis pro 100g?",
-      "answer": "Pro 100g hat Mars Eis etwa 333 kcal, 17g Fett, 41g Kohlenhydrate und 4g Eiweiß."
+      "question": "Wie viele Kalorien hat Mars Eis pro 100 ml?",
+      "answer": "Pro 100 ml hat Mars Eis laut Packung 264 kcal, 14 g Fett, 31 g Kohlenhydrate und 2,9 g Eiweiß. Bei Eis steht die Nährwerttabelle je 100 ml auf der Packung."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Mars Eis?",
-      "answer": "Mars Eis enthält rund 41g Kohlenhydrate pro 100g, davon ein hoher Anteil Zucker. Ein einzelner Riegel hat etwa 13g Kohlenhydrate."
+      "answer": "Mars Eis enthält 31 g Kohlenhydrate pro 100 ml, davon 24 g Zucker. Ein einzelner Riegel (49,5 ml) hat rund 15 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Mars Eis?",
-      "answer": "Mit etwa 4g Eiweiß pro 100g ist Mars Eis keine nennenswerte Proteinquelle. Ein Riegel liefert nur rund 1g Eiweiß."
+      "answer": "Mit 2,9 g Eiweiß pro 100 ml ist Mars Eis keine nennenswerte Proteinquelle. Ein Riegel liefert rund 1,4 g Eiweiß."
     },
     {
       "question": "Ist Mars Eis zum Abnehmen geeignet?",
-      "answer": "Mars Eis ist mit 333 kcal pro 100g sehr energiedicht und damit kein klassisches Diätprodukt. In kleinen Mengen und bewusst eingeplant passt ein einzelner Riegel mit 103 kcal aber auch in eine kalorienbewusste Ernährung."
+      "answer": "Mars Eis ist mit 264 kcal pro 100 ml recht energiedicht und damit kein klassisches Diätprodukt. Bewusst eingeplant passt ein einzelner Riegel mit rund 131 kcal aber auch in eine kalorienbewusste Ernährung."
     },
     {
       "question": "Ist Mars Eis gesund?",

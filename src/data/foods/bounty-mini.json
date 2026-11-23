@@ -3,9 +3,17 @@
   "name": "Bounty Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Bounty Minis 227 g (https://www.rewe.de/shop/p/bounty-minis-227g/8158241, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Bounty Minis 227 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/bounty-minis-227g/8158241",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Bounty Mini Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Bounty Mini? Ein Riegel (28g) hat ca. 135 kcal. Alle Nährwerte pro 100g, pro Riegel und Tipps zum Genuss.",
+    "description": "Wie viele Kalorien hat ein Bounty Mini? Ein Riegel (28,5 g) hat rund 139 kcal. Alle Nährwerte pro 100 g, pro Riegel und Tipps zum Genuss.",
     "keywords": [
       "bounty mini kalorien",
       "bounty mini kcal",
@@ -16,103 +24,128 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 481,
-    "protein_per_100g": 4,
-    "carbs_per_100g": 57.7,
-    "fat_per_100g": 26.1,
-    "fiber_per_100g": 1.8,
-    "typical_portion_g": 28,
-    "typical_portion_name": "1 Bounty Mini (28g)"
+    "calories_per_100g": 487,
+    "protein_per_100g": 3.8,
+    "carbs_per_100g": 59,
+    "fat_per_100g": 26,
+    "fiber_per_100g": null,
+    "typical_portion_g": 28.5,
+    "typical_portion_name": "1 Bounty Mini (28,5 g)"
   },
   "variants": [
     {
-      "name": "1 Bounty Mini (28g)",
-      "portion_g": 28,
-      "calories": 135,
+      "name": "1 Bounty Mini (28,5 g)",
+      "portion_g": 28.5,
+      "calories": 139,
       "protein": 1.1,
-      "carbs": 16.2,
-      "fat": 7.3,
-      "tip": "Standard-Riegel"
+      "carbs": 16.8,
+      "fat": 7.4
     },
     {
-      "name": "2 Bounty Mini (56g)",
-      "portion_g": 56,
-      "calories": 269,
+      "name": "2 Bounty Mini (57 g)",
+      "portion_g": 57,
+      "calories": 278,
       "protein": 2.2,
-      "carbs": 32.3,
-      "fat": 14.6
+      "carbs": 33.6,
+      "fat": 14.8
     },
     {
-      "name": "3 Bounty Mini (84g)",
-      "portion_g": 84,
-      "calories": 404,
-      "protein": 3.4,
-      "carbs": 48.5,
-      "fat": 21.9
+      "name": "3 Bounty Mini (85,5 g)",
+      "portion_g": 85.5,
+      "calories": 416,
+      "protein": 3.2,
+      "carbs": 50.4,
+      "fat": 22.2
     },
     {
-      "name": "Halber Riegel (14g)",
-      "portion_g": 14,
-      "calories": 67,
-      "protein": 0.6,
-      "carbs": 8.1,
-      "fat": 3.7,
-      "tip": "Für kleinen Appetit"
+      "name": "Halber Riegel (14,25 g)",
+      "portion_g": 14.25,
+      "calories": 69,
+      "protein": 0.5,
+      "carbs": 8.4,
+      "fat": 3.7
     },
     {
-      "name": "Kleine Handvoll (50g)",
+      "name": "Kleine Portion (50 g)",
       "portion_g": 50,
-      "calories": 241,
-      "protein": 2,
-      "carbs": 28.9,
-      "fat": 13.1
+      "calories": 244,
+      "protein": 1.9,
+      "carbs": 29.5,
+      "fat": 13
     },
     {
-      "name": "100g Bounty Mini",
+      "name": "100 g Bounty Mini",
       "portion_g": 100,
-      "calories": 481,
-      "protein": 4,
-      "carbs": 57.7,
-      "fat": 26.1,
-      "tip": "Referenzwert"
+      "calories": 487,
+      "protein": 3.8,
+      "carbs": 59,
+      "fat": 26
+    },
+    {
+      "name": "Beutel (227 g)",
+      "portion_g": 227,
+      "calories": 1105,
+      "protein": 8.6,
+      "carbs": 133.9,
+      "fat": 59
     }
   ],
   "comparison": [
     {
-      "name": "Bounty (Standard)",
-      "calories": 268,
-      "emoji": "🍫"
+      "name": "Bounty (2 Stück, 57 g)",
+      "calories": 278,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "bounty"
+        }
+      ]
     },
     {
-      "name": "Mars Mini",
-      "calories": 124,
-      "emoji": "🍫"
+      "name": "Mars Mini (18 g)",
+      "calories": 79,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "mars-mini"
+        }
+      ]
     },
     {
-      "name": "Twix",
-      "calories": 286,
-      "emoji": "🍫"
+      "name": "Twix Mini (20 g)",
+      "calories": 100,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix-mini"
+        }
+      ]
     },
     {
-      "name": "Raffaello",
+      "name": "Raffaello (10 g)",
       "calories": 63,
-      "emoji": "🥥"
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "raffaello"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Portionskontrolle nutzen",
-      "text": "Ein einzelner Bounty Mini hat nur etwa 135 kcal. Wer bei einem Riegel bleibt, genießt die Kokos-Schokolade ohne große Kalorienlast.",
+      "text": "Ein einzelner Bounty Mini hat rund 139 kcal. Wer bei einem Riegel bleibt, genießt die Kokos-Schokolade ohne große Kalorienlast.",
       "icon": "🍫"
     },
     {
-      "title": "Hoher Fettanteil beachten",
-      "text": "Durch die Kokosfüllung liefert Bounty Mini mit rund 26g Fett pro 100g mehr Fett als viele andere Schokoriegel. Das macht ihn energiereich.",
+      "title": "Hohen Fettanteil beachten",
+      "text": "Bounty Mini liefert 26 g Fett pro 100 g, davon 21 g gesättigte Fettsäuren. Das macht ihn energiereich.",
       "icon": "🥥"
     },
     {
       "title": "Viel Zucker im Riegel",
-      "text": "Der Großteil der Kohlenhydrate ist Zucker. Bounty Mini ist daher eher ein gelegentlicher Genuss als ein täglicher Snack.",
+      "text": "Von den 59 g Kohlenhydraten pro 100 g sind 48 g Zucker. Bounty Mini ist daher eher ein gelegentlicher Genuss als ein täglicher Snack.",
       "icon": "🍬"
     },
     {
@@ -122,30 +155,30 @@
     },
     {
       "title": "In die Tagesbilanz einplanen",
-      "text": "Logge den Riegel direkt nach dem Naschen. So behältst du auch bei mehreren Minis aus der Tüte den Überblick über deine Kalorien.",
+      "text": "Logge den Riegel direkt nach dem Naschen. So behältst du auch bei mehreren Minis aus dem Beutel (227 g, rund 1.105 kcal) den Überblick über deine Kalorien.",
       "icon": "📊"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Bounty Mini?",
-      "answer": "Ein Bounty Mini (28g) hat etwa 135 kcal. Pro 100g sind es rund 481 kcal."
+      "answer": "Ein Bounty Mini (28,5 g) hat rund 139 kcal. Pro 100 g sind es 487 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
-      "question": "Wie viele Kalorien haben Bounty Miniatures pro 100g?",
-      "answer": "Bounty Miniatures haben laut Herstellerangabe etwa 481 kcal pro 100g, mit 57,7g Kohlenhydraten und 26,1g Fett."
+      "question": "Wie viele Kalorien haben Bounty Minis pro 100g?",
+      "answer": "Bounty Minis haben laut Packung 487 kcal pro 100 g, mit 59 g Kohlenhydraten und 26 g Fett."
     },
     {
       "question": "Wie viel Zucker und Kohlenhydrate stecken in einem Bounty Mini?",
-      "answer": "Ein Bounty Mini (28g) enthält rund 16,2g Kohlenhydrate, davon ist der Großteil Zucker. Pro 100g sind es 57,7g Kohlenhydrate."
+      "answer": "Ein Bounty Mini (28,5 g) enthält rund 16,8 g Kohlenhydrate, davon rund 13,7 g Zucker. Pro 100 g sind es 59 g Kohlenhydrate und 48 g Zucker."
     },
     {
       "question": "Wie viel Protein hat ein Bounty Mini?",
-      "answer": "Ein Bounty Mini liefert nur etwa 1,1g Eiweiß (4,0g pro 100g). Als Eiweißquelle ist er daher nicht geeignet."
+      "answer": "Ein Bounty Mini liefert nur etwa 1,1 g Eiweiß (3,8 g pro 100 g). Als Eiweißquelle ist er daher nicht geeignet."
     },
     {
       "question": "Ist Bounty Mini zum Abnehmen geeignet?",
-      "answer": "Als gelegentlicher Genuss passt ein einzelner Bounty Mini mit 135 kcal in eine Diät. Wegen des hohen Fett- und Zuckergehalts sollte es aber bei einem Riegel bleiben."
+      "answer": "Als gelegentlicher Genuss passt ein einzelner Bounty Mini mit rund 139 kcal in eine Diät. Wegen des hohen Fett- und Zuckergehalts sollte es aber bei einem Riegel bleiben."
     },
     {
       "question": "Ist Bounty Mini gesund?",

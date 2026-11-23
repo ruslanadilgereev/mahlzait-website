@@ -3,9 +3,17 @@
   "name": "Nuts",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Nestlé, Nuts 42 g (https://www.rewe.de/shop/p/nestl-nuts-schokoriegel-42g/900143, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Nestlé",
+    "produkt": "Nuts 42 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/nestl-nuts-schokoriegel-42g/900143",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Nuts Kalorien: Nährwerte, Riegel & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Nuts Riegel? Ein 42g-Riegel hat ca. 206 kcal. Nährwerte pro 100g & Riegel, Vergleich mit Snickers & Co. plus Tipps.",
+    "description": "Wie viele Kalorien hat ein Nuts Riegel? Ein Riegel (42 g) hat rund 205 kcal. Nährwerte pro 100 g & Riegel, Vergleich mit Snickers & Co. plus Tipps.",
     "keywords": [
       "nuts kcal",
       "nuts kalorien",
@@ -16,134 +24,145 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 490,
-    "protein_per_100g": 4.9,
-    "carbs_per_100g": 61.5,
-    "fat_per_100g": 24.5,
+    "calories_per_100g": 488,
+    "protein_per_100g": 4.8,
+    "carbs_per_100g": 61.6,
+    "fat_per_100g": 24.2,
     "fiber_per_100g": 1.7,
     "typical_portion_g": 42,
-    "typical_portion_name": "1 Riegel (42g)"
+    "typical_portion_name": "1 Riegel (42 g)"
   },
   "variants": [
     {
-      "name": "Nuts Riegel (42g)",
+      "name": "Nuts Riegel (42 g)",
       "portion_g": 42,
-      "calories": 206,
+      "calories": 205,
       "protein": 2,
-      "carbs": 26,
-      "fat": 10,
-      "tip": "Standard"
+      "carbs": 25.9,
+      "fat": 10.2
     },
     {
-      "name": "Nuts King Size (50g)",
-      "portion_g": 50,
-      "calories": 245,
-      "protein": 2.5,
-      "carbs": 31,
-      "fat": 12
-    },
-    {
-      "name": "Nuts Snack Size (30g)",
+      "name": "Nuts Snack Size (30 g)",
       "portion_g": 30,
-      "calories": 147,
-      "protein": 1.5,
-      "carbs": 18,
-      "fat": 7
+      "calories": 146,
+      "protein": 1.4,
+      "carbs": 18.5,
+      "fat": 7.3
     },
     {
-      "name": "Nuts Mini-Stück (Beutel, ~14g)",
-      "portion_g": 14,
-      "calories": 69,
+      "name": "Multipack Snack Size (5 Riegel, 150 g)",
+      "portion_g": 150,
+      "calories": 732,
+      "protein": 7.2,
+      "carbs": 92.4,
+      "fat": 36.3
+    },
+    {
+      "name": "Halber Riegel (21 g)",
+      "portion_g": 21,
+      "calories": 102,
       "protein": 1,
-      "carbs": 9,
-      "fat": 3
+      "carbs": 12.9,
+      "fat": 5.1
     },
     {
-      "name": "Nuts Multipack (4 Riegel, 168g)",
-      "portion_g": 168,
-      "calories": 823,
-      "protein": 8,
-      "carbs": 103,
-      "fat": 41
-    },
-    {
-      "name": "Pro 100g",
+      "name": "Pro 100 g",
       "portion_g": 100,
-      "calories": 490,
-      "protein": 4.9,
-      "carbs": 62,
-      "fat": 25
+      "calories": 488,
+      "protein": 4.8,
+      "carbs": 61.6,
+      "fat": 24.2
     }
   ],
   "comparison": [
     {
-      "name": "Snickers (50g)",
-      "calories": 245,
-      "emoji": "🍫"
-    },
-    {
-      "name": "KitKat (4-Finger, 41,5g)",
-      "calories": 209,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Twix (Doppelriegel, 50g)",
+      "name": "Snickers (50 g)",
       "calories": 246,
-      "emoji": "🍫"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "snickers"
+        }
+      ]
     },
     {
-      "name": "Mars (51g)",
-      "calories": 229,
-      "emoji": "🍫"
+      "name": "KitKat (4 Finger, 41,5 g)",
+      "calories": 215,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kitkat"
+        }
+      ]
+    },
+    {
+      "name": "Twix (2 Riegel, 50 g)",
+      "calories": 251,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix"
+        }
+      ]
+    },
+    {
+      "name": "Mars (51 g)",
+      "calories": 226,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "mars-riegel"
+        }
+      ]
     }
   ],
   "tips": [
     {
-      "title": "Snack-Size statt ganzem Riegel",
-      "text": "Ein ganzer Nuts Riegel (42g) hat 206 kcal. Wer Lust auf etwas Süßes hat, kommt mit der Snack-Size (30g, 147 kcal) günstiger weg.",
+      "title": "Snack Size statt ganzem Riegel",
+      "text": "Ein ganzer Nuts Riegel (42 g) hat rund 205 kcal. Wer Lust auf etwas Süßes hat, kommt mit der Snack Size aus dem Multipack (30 g, rund 146 kcal) günstiger weg.",
       "icon": "🍫"
     },
     {
       "title": "Viel Zucker beachten",
-      "text": "Nuts besteht zu über der Hälfte aus Zucker (rund 53g pro 100g). Für eine stabile Blutzuckerkurve am besten nicht auf nüchternen Magen naschen.",
+      "text": "Nuts besteht zu über der Hälfte aus Zucker (53,1 g pro 100 g). Für eine stabile Blutzuckerkurve am besten nicht auf nüchternen Magen naschen.",
       "icon": "🍬"
     },
     {
       "title": "Bewusst genießen",
-      "text": "Mit 490 kcal pro 100g ist Nuts ein klassischer Genuss-Snack. Ein einzelner Riegel als Belohnung passt auch in eine kalorienbewusste Ernährung.",
+      "text": "Mit 488 kcal pro 100 g ist Nuts ein klassischer Genuss-Snack. Ein einzelner Riegel als Belohnung passt auch in eine kalorienbewusste Ernährung.",
       "icon": "⚖️"
     },
     {
       "title": "Kaum Eiweiß",
-      "text": "Mit nur 4,9g Protein pro 100g sättigt Nuts kaum nachhaltig. Als Sport-Snack eignet sich ein Proteinriegel deutlich besser.",
+      "text": "Mit nur 4,8 g Protein pro 100 g sättigt Nuts kaum nachhaltig. Als Sport-Snack eignet sich ein Proteinriegel deutlich besser.",
       "icon": "💪"
     },
     {
       "title": "Portion im Blick behalten",
-      "text": "Aus einem Sharing-Beutel verschwinden die Mini-Stücke schnell. Ein paar Stücke abzählen hilft, die Kalorien im Griff zu behalten.",
+      "text": "Laut Packung stecken 11,2 % ganze Haselnüsse im Riegel. Trotzdem bleibt Nuts eine Süßigkeit: ein Riegel abgezählt hilft, die Kalorien im Griff zu behalten.",
       "icon": "👀"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Nuts Riegel?",
-      "answer": "Ein klassischer Nuts Riegel (42g) hat ca. 206 kcal. Pro 100g sind es 490 kcal."
+      "answer": "Ein klassischer Nuts Riegel (42 g) hat rund 205 kcal. Pro 100 g sind es 488 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat Nuts pro 100g?",
-      "answer": "Nuts hat laut Nestlé-Deklaration 490 kcal pro 100g (2050 kJ)."
+      "answer": "Nuts hat laut Packung 488 kcal pro 100 g (2.041 kJ)."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Nuts Riegel?",
-      "answer": "Ein 42g-Riegel enthält rund 26g Kohlenhydrate, davon etwa 22g Zucker. Pro 100g sind es 61,5g Kohlenhydrate."
+      "answer": "Ein Riegel (42 g) enthält rund 26 g Kohlenhydrate, davon etwa 22 g Zucker. Pro 100 g sind es 61,6 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß hat Nuts?",
-      "answer": "Nuts enthält nur etwa 4,9g Eiweiß pro 100g, also rund 2g pro Riegel. Als Eiweißquelle ist es kaum geeignet."
+      "answer": "Nuts enthält nur 4,8 g Eiweiß pro 100 g, also rund 2 g pro Riegel. Als Eiweißquelle ist es kaum geeignet."
     },
     {
       "question": "Ist Nuts zum Abnehmen geeignet?",
-      "answer": "Nuts ist mit 490 kcal pro 100g und viel Zucker eher ein Genuss-Snack. Ein einzelner Riegel (206 kcal) passt in Maßen auch in eine Diät, sollte aber die Ausnahme bleiben."
+      "answer": "Nuts ist mit 488 kcal pro 100 g und viel Zucker eher ein Genuss-Snack. Ein einzelner Riegel (rund 205 kcal) passt in Maßen auch in eine Diät, sollte aber die Ausnahme bleiben."
     },
     {
       "question": "Ist Nuts gesund?",

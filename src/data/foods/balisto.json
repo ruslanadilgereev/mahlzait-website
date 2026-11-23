@@ -3,9 +3,17 @@
   "name": "Balisto",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Balisto Müsli-Mix 8 x 18,5 g (https://www.rewe.de/shop/p/balisto-schokoriegel-muesli-mix-8x18-5g/9060104, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Balisto Müsli-Mix 8 x 18,5 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/balisto-schokoriegel-muesli-mix-8x18-5g/9060104",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Balisto Kalorien: Nährwerte & Riegel-Vergleich | Mahlzait",
-    "description": "Wie viele Kalorien hat Balisto? Ein Riegel (18,5 g) hat ca. 92 kcal, 100 g rund 497 kcal. Nährwerte, Sorten und Tipps im Überblick.",
+    "description": "Wie viele Kalorien hat Balisto? Ein Riegel Müsli-Mix (18,5 g) hat rund 93 kcal, 100 g haben 502 kcal. Nährwerte, Vergleich und Tipps im Überblick.",
     "keywords": [
       "balisto kalorien",
       "balisto kcal",
@@ -17,11 +25,11 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 497,
-    "protein_per_100g": 6.4,
+    "calories_per_100g": 502,
+    "protein_per_100g": 7,
     "carbs_per_100g": 60,
-    "fat_per_100g": 24,
-    "fiber_per_100g": 3.5,
+    "fat_per_100g": 25,
+    "fiber_per_100g": null,
     "typical_portion_g": 18.5,
     "typical_portion_name": "1 Riegel (18,5 g)"
   },
@@ -29,129 +37,147 @@
     {
       "name": "1 Riegel (18,5 g)",
       "portion_g": 18.5,
-      "calories": 92,
-      "protein": 1.2,
+      "calories": 93,
+      "protein": 1.3,
       "carbs": 11.1,
-      "fat": 4.4,
-      "tip": "Standard, ein Einzelriegel"
+      "fat": 4.6
     },
     {
-      "name": "1 Doppelpack (37 g)",
+      "name": "2 Riegel (37 g)",
       "portion_g": 37,
-      "calories": 184,
-      "protein": 2.4,
+      "calories": 186,
+      "protein": 2.6,
       "carbs": 22.2,
-      "fat": 8.9,
-      "tip": "Komplette Verkaufseinheit mit 2 Riegeln"
+      "fat": 9.3
     },
     {
-      "name": "Mini-Riegel (10 g)",
-      "portion_g": 10,
-      "calories": 50,
+      "name": "Halber Riegel (9,25 g)",
+      "portion_g": 9.25,
+      "calories": 46,
       "protein": 0.6,
-      "carbs": 6,
-      "fat": 2.4,
-      "tip": "Aus der Minis-Tüte"
+      "carbs": 5.6,
+      "fat": 2.3
     },
     {
-      "name": "Halber Riegel (9 g)",
-      "portion_g": 9,
-      "calories": 45,
-      "protein": 0.6,
-      "carbs": 5.4,
-      "fat": 2.2
+      "name": "4 Riegel (74 g)",
+      "portion_g": 74,
+      "calories": 371,
+      "protein": 5.2,
+      "carbs": 44.4,
+      "fat": 18.5
+    },
+    {
+      "name": "Packung (8 Riegel, 148 g)",
+      "portion_g": 148,
+      "calories": 743,
+      "protein": 10.4,
+      "carbs": 88.8,
+      "fat": 37
     },
     {
       "name": "100 g",
       "portion_g": 100,
-      "calories": 497,
-      "protein": 6.4,
+      "calories": 502,
+      "protein": 7,
       "carbs": 60,
-      "fat": 24
-    },
-    {
-      "name": "2 Doppelpacks (74 g)",
-      "portion_g": 74,
-      "calories": 368,
-      "protein": 4.7,
-      "carbs": 44.4,
-      "fat": 17.8,
-      "tip": "Zwei komplette Packungen"
+      "fat": 25
     }
   ],
   "comparison": [
     {
-      "name": "Twix",
-      "calories": 100,
-      "emoji": "🍫"
+      "name": "Twix (1 Riegel, 25 g)",
+      "calories": 126,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "twix",
+          "g": 25
+        }
+      ]
     },
     {
-      "name": "Bounty",
+      "name": "Bounty (1 Stück, 28,5 g)",
+      "calories": 139,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "bounty",
+          "g": 28.5
+        }
+      ]
+    },
+    {
+      "name": "Knoppers (25 g)",
       "calories": 137,
-      "emoji": "🥥"
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "knoppers"
+        }
+      ]
     },
     {
-      "name": "Knoppers",
-      "calories": 105,
-      "emoji": "🍫"
-    },
-    {
-      "name": "Müsliriegel",
-      "calories": 100,
-      "emoji": "🌾"
+      "name": "Müsliriegel (25 g)",
+      "calories": 118,
+      "emoji": "🌾",
+      "basis": [
+        {
+          "slug": "muesli-riegel"
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Ein Riegel, klare Portion",
-      "text": "Ein einzelner Balisto hat rund 92 kcal. Wer beim Doppelpack bleibt und nicht weiter nascht, hat eine überschaubare Portion von etwa 184 kcal.",
+      "text": "Ein einzelner Balisto Müsli-Mix hat rund 93 kcal. Wer bei zwei Riegeln bleibt und nicht weiter nascht, hat eine überschaubare Portion von etwa 186 kcal.",
       "icon": "🍫"
     },
     {
       "title": "Müsliboden statt nur Schokolade",
-      "text": "Der Vollkorn-Keksboden bringt etwas mehr Ballaststoffe mit als reine Schokoriegel. Ein Sättigungswunder ist Balisto durch den hohen Zuckeranteil aber trotzdem nicht.",
+      "text": "Laut Packung steckt im Müsli-Mix Keks mit Vollkorn (36 %), umhüllt von Milchschokolade (39 %). Ein Sättigungswunder ist Balisto durch den hohen Zuckeranteil trotzdem nicht.",
       "icon": "🌾"
     },
     {
       "title": "Zuckergehalt im Blick",
-      "text": "Balisto besteht zu einem großen Teil aus Zucker und Fett. Als gelegentlicher Snack passt er, als täglicher Begleiter summiert sich die Kalorienmenge schnell.",
+      "text": "Balisto Müsli-Mix enthält je 100 g 43 g Zucker und 25 g Fett. Als gelegentlicher Snack passt er, als täglicher Begleiter summiert sich die Kalorienmenge schnell.",
       "icon": "🍬"
     },
     {
       "title": "Besser als Alternative zur Tafel",
-      "text": "Wer Lust auf Süßes hat, fährt mit einem einzelnen 92-kcal-Riegel oft besser als mit mehreren Stücken einer Tafel Schokolade, weil die Portion klar begrenzt ist.",
+      "text": "Wer Lust auf Süßes hat, fährt mit einem einzelnen 93-kcal-Riegel oft besser als mit mehreren Stücken einer Tafel Schokolade, weil die Portion klar begrenzt ist.",
       "icon": "✅"
     },
     {
-      "title": "Minis bewusst dosieren",
-      "text": "Bei der Minis-Tüte verliert man leicht den Überblick. Schon fünf Mini-Riegel entsprechen mit rund 250 kcal etwa einer kleinen Mahlzeit.",
+      "title": "Packung bewusst einteilen",
+      "text": "Die Packung mit 8 Riegeln (148 g) hat zusammen rund 743 kcal. Schon fünf Riegel entsprechen mit rund 464 kcal einer kleinen Mahlzeit.",
       "icon": "🎯"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Balisto?",
-      "answer": "Ein einzelner Balisto-Riegel (18,5 g) hat etwa 92 kcal. Der übliche Doppelpack mit zwei Riegeln (37 g) kommt auf rund 184 kcal."
+      "answer": "Ein einzelner Balisto Müsli-Mix (18,5 g) hat rund 93 kcal, zwei Riegel (37 g) kommen auf rund 186 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien hat Balisto pro 100 g?",
-      "answer": "Pro 100 g enthält Balisto rund 497 kcal. Das ist typisch für Schokoriegel mit Keks- und Schokoladenanteil."
+      "answer": "Pro 100 g hat Balisto Müsli-Mix laut Packung 502 kcal, dazu 25 g Fett, 60 g Kohlenhydrate und 7 g Eiweiß."
     },
     {
       "question": "Wie viele Kohlenhydrate hat ein Balisto?",
-      "answer": "Pro 100 g enthält Balisto etwa 60 g Kohlenhydrate, davon ein großer Teil Zucker. Ein einzelner Riegel (18,5 g) hat rund 11 g Kohlenhydrate."
+      "answer": "Pro 100 g enthält Balisto Müsli-Mix 60 g Kohlenhydrate, davon 43 g Zucker. Ein einzelner Riegel (18,5 g) hat rund 11 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Eiweiß steckt in Balisto?",
-      "answer": "Balisto liefert etwa 6,4 g Eiweiß pro 100 g, also nur rund 1,2 g pro Riegel. Als Eiweißquelle ist er deshalb nicht geeignet."
+      "answer": "Balisto Müsli-Mix liefert 7 g Eiweiß pro 100 g, also nur rund 1,3 g pro Riegel. Als Eiweißquelle ist er deshalb nicht geeignet."
     },
     {
       "question": "Ist Balisto zum Abnehmen geeignet?",
-      "answer": "Als seltener Snack lässt sich ein einzelner Balisto mit 92 kcal gut in eine kalorienbewusste Ernährung einbauen. Durch viel Zucker und Fett sättigt er aber kaum, deshalb ist Maßhalten wichtig."
+      "answer": "Als seltener Snack lässt sich ein einzelner Balisto mit rund 93 kcal gut in eine kalorienbewusste Ernährung einbauen. Durch viel Zucker und Fett sättigt er aber kaum, deshalb ist Maßhalten wichtig."
     },
     {
       "question": "Ist Balisto gesund?",
-      "answer": "Balisto ist eine Süßigkeit mit hohem Zucker- und Fettanteil. Der Vollkornanteil im Keksboden macht ihn nicht zu einem gesunden Lebensmittel, sondern bleibt ein Genussartikel für zwischendurch."
+      "answer": "Balisto ist eine Süßigkeit mit hohem Zucker- und Fettanteil. Der Vollkornanteil im Keks macht ihn nicht zu einem gesunden Lebensmittel, er bleibt ein Genussartikel für zwischendurch."
     }
   ],
   "related_foods": [

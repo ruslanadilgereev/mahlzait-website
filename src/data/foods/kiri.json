@@ -3,9 +3,17 @@
   "name": "Kiri",
   "emoji": "🧀",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Bel, Kiri mit Sahne 6 x 18 g (108 g) (https://www.rewe.de/shop/p/kiri-mit-sahne-praktische-6er-portionen-108g/8273469, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Bel",
+    "produkt": "Kiri mit Sahne 6 x 18 g (108 g)",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/kiri-mit-sahne-praktische-6er-portionen-108g/8273469",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Kiri Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Kiri? Eine Ecke (18g) hat ca. 55 kcal, 100g rund 303 kcal. Alle Nährwerte des Frischkäses, Portionen im Vergleich + Tipps.",
+    "description": "Wie viele Kalorien hat Kiri? Eine Portion (18 g) hat rund 55 kcal, 100 g haben 303 kcal. Alle Nährwerte, Portionen im Vergleich + Tipps.",
     "keywords": [
       "kiri kalorien",
       "kiri frischkäse kalorien",
@@ -21,135 +29,149 @@
     "protein_per_100g": 9,
     "carbs_per_100g": 2,
     "fat_per_100g": 29,
-    "fiber_per_100g": 0,
+    "fiber_per_100g": null,
     "typical_portion_g": 18,
-    "typical_portion_name": "1 Ecke (18g)"
+    "typical_portion_name": "1 Portion (18 g)"
   },
   "variants": [
     {
-      "name": "1 Ecke (18g)",
+      "name": "1 Portion (18 g)",
       "portion_g": 18,
       "calories": 55,
-      "protein": 2,
-      "carbs": 0,
-      "fat": 5,
-      "tip": "Standard-Portion"
+      "protein": 1.6,
+      "carbs": 0.4,
+      "fat": 5.2
     },
     {
-      "name": "2 Ecken (36g)",
+      "name": "2 Portionen (36 g)",
       "portion_g": 36,
       "calories": 109,
-      "protein": 3,
-      "carbs": 1,
-      "fat": 10
+      "protein": 3.2,
+      "carbs": 0.7,
+      "fat": 10.4
     },
     {
-      "name": "Aufstrich-Portion (30g)",
+      "name": "Aufstrich-Portion (30 g)",
       "portion_g": 30,
       "calories": 91,
-      "protein": 3,
-      "carbs": 1,
-      "fat": 9
+      "protein": 2.7,
+      "carbs": 0.6,
+      "fat": 8.7
     },
     {
-      "name": "Kiri pro 100g",
+      "name": "Packung (6 Portionen, 108 g)",
+      "portion_g": 108,
+      "calories": 327,
+      "protein": 9.7,
+      "carbs": 2.2,
+      "fat": 31.3
+    },
+    {
+      "name": "Kiri pro 100 g",
       "portion_g": 100,
       "calories": 303,
       "protein": 9,
       "carbs": 2,
       "fat": 29
-    },
-    {
-      "name": "Brötchenhälfte mit 1 Ecke (60g)",
-      "portion_g": 60,
-      "calories": 192,
-      "protein": 5,
-      "carbs": 24,
-      "fat": 7,
-      "tip": "inkl. halbem Brötchen"
-    },
-    {
-      "name": "Cracker mit 1 Ecke (25g)",
-      "portion_g": 25,
-      "calories": 90,
-      "protein": 2,
-      "carbs": 5,
-      "fat": 6
     }
   ],
   "comparison": [
     {
-      "name": "Frischkäse (Natur)",
+      "name": "Frischkäse (100 g)",
       "calories": 253,
-      "emoji": "🧀"
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "frischkaese",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Mozzarella",
-      "calories": 280,
-      "emoji": "🧀"
+      "name": "Mozzarella (100 g)",
+      "calories": 299,
+      "emoji": "🧀",
+      "basis": [
+        {
+          "slug": "mozzarella",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Magerquark",
-      "calories": 67,
-      "emoji": "🥛"
+      "name": "Magerquark (100 g)",
+      "calories": 68,
+      "emoji": "🥛",
+      "basis": [
+        {
+          "slug": "magerquark",
+          "g": 100
+        }
+      ]
     },
     {
-      "name": "Butter",
-      "calories": 741,
-      "emoji": "🧈"
+      "name": "Butter (100 g)",
+      "calories": 717,
+      "emoji": "🧈",
+      "basis": [
+        {
+          "slug": "butter",
+          "g": 100
+        }
+      ]
     }
   ],
   "tips": [
     {
       "title": "Kleine Portion, schnell satt",
-      "text": "Eine Ecke Kiri hat nur etwa 55 kcal. Durch den cremigen, intensiven Geschmack reicht meist eine Ecke pro Brotscheibe, das hält die Kalorien niedrig.",
+      "text": "Eine Portion Kiri hat nur rund 55 kcal. Durch den cremigen Geschmack reicht meist eine Portion pro Brotscheibe, das hält die Kalorien niedrig.",
       "icon": "🧀"
     },
     {
       "title": "Fettreich, aber kohlenhydratarm",
-      "text": "Mit nur 2g Kohlenhydraten pro 100g passt Kiri gut in eine kohlenhydratarme oder ketogene Ernährung. Der hohe Fettanteil von 29g sorgt allerdings für die Kalorien.",
+      "text": "Mit nur 2 g Kohlenhydraten pro 100 g passt Kiri gut in eine kohlenhydratarme oder ketogene Ernährung. Der hohe Fettanteil von 29 g sorgt allerdings für die Kalorien.",
       "icon": "🥑"
     },
     {
       "title": "Leichte Alternative kombinieren",
-      "text": "Wer Kalorien sparen möchte, streicht Kiri dünn aufs Vollkornbrot und ergänzt mit Gurke oder Tomate statt einer zweiten Ecke.",
+      "text": "Wer Kalorien sparen möchte, streicht Kiri dünn aufs Vollkornbrot und ergänzt mit Gurke oder Tomate statt einer zweiten Portion.",
       "icon": "🥒"
     },
     {
       "title": "Für die Brotdose der Kinder",
-      "text": "Die einzeln verpackten Ecken sind praktisch und hygienisch für unterwegs. Mit rund 55 kcal pro Ecke bleibt der Snack überschaubar.",
+      "text": "Die einzeln verpackten Portionen sind praktisch und hygienisch für unterwegs. Mit rund 55 kcal pro Portion bleibt der Snack überschaubar.",
       "icon": "🎒"
     },
     {
       "title": "Eiweiß ist moderat",
-      "text": "Mit 9g Protein pro 100g ist Kiri kein Eiweiß-Spitzenreiter. Wer mehr Protein möchte, greift zu Magerquark oder Hüttenkäse.",
+      "text": "Mit 9 g Protein pro 100 g ist Kiri kein Eiweiß-Spitzenreiter. Wer mehr Protein möchte, greift zu Magerquark oder Hüttenkäse.",
       "icon": "💪"
     }
   ],
   "faq": [
     {
       "question": "Wie viele Kalorien hat eine Ecke Kiri?",
-      "answer": "Eine einzelne Ecke Kiri (18g) hat etwa 55 kcal. Pro 100g sind es rund 303 kcal."
+      "answer": "Eine einzelne Portion Kiri (18 g) hat rund 55 kcal. Pro 100 g sind es 303 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viel Eiweiß hat Kiri?",
-      "answer": "Kiri enthält etwa 9g Eiweiß pro 100g. Eine Ecke (18g) liefert damit rund 1,6g Protein."
+      "answer": "Kiri enthält 9 g Eiweiß pro 100 g. Eine Portion (18 g) liefert damit rund 1,6 g Protein."
     },
     {
       "question": "Wie viele Kohlenhydrate hat Kiri?",
-      "answer": "Kiri ist sehr kohlenhydratarm: nur etwa 2g pro 100g, davon 2g Zucker. Eine Ecke enthält damit unter 0,5g Kohlenhydrate."
+      "answer": "Kiri ist sehr kohlenhydratarm: nur 2 g pro 100 g, davon 2 g Zucker. Eine Portion enthält damit unter 0,5 g Kohlenhydrate."
     },
     {
       "question": "Ist Kiri zum Abnehmen geeignet?",
-      "answer": "In Maßen ja. Eine Ecke hat nur rund 55 kcal. Da Kiri aber sehr fettreich ist (29g pro 100g), sollte man die Menge im Blick behalten und nicht zu dick aufstreichen."
+      "answer": "In Maßen ja. Eine Portion hat nur rund 55 kcal. Da Kiri aber sehr fettreich ist (29 g pro 100 g), sollte man die Menge im Blick behalten und nicht zu dick aufstreichen."
     },
     {
       "question": "Ist Kiri gesund?",
-      "answer": "Kiri ist ein verarbeiteter Schmelzkäse mit hohem Fett- und etwas Salzanteil. Als gelegentlicher Brotaufstrich ist er unbedenklich, sollte aber nicht den Großteil der täglichen Fettzufuhr ausmachen."
+      "answer": "Kiri ist ein Schmelzkäse aus Frischkäse mit hohem Fettanteil und 1,3 g Salz pro 100 g. Als gelegentlicher Brotaufstrich ist er unbedenklich, sollte aber nicht den Großteil der täglichen Fettzufuhr ausmachen."
     },
     {
       "question": "Wie viele Kalorien hat Kiri pro 100g?",
-      "answer": "Kiri (Der Klassiker mit Sahne) hat laut Hersteller etwa 303 kcal pro 100g, bei 29g Fett, 9g Eiweiß und 2g Kohlenhydraten."
+      "answer": "Kiri mit Sahne hat laut Packung 303 kcal pro 100 g, bei 29 g Fett, 9 g Eiweiß und 2 g Kohlenhydraten."
     }
   ],
   "related_foods": [

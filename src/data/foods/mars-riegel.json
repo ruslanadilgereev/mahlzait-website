@@ -3,50 +3,203 @@
   "name": "Mars Riegel",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Mars, Mars Einzelriegel 51 g (https://www.rewe.de/shop/p/mars-schokoriegel-51g/7603046, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Mars",
+    "produkt": "Mars Einzelriegel 51 g",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/mars-schokoriegel-51g/7603046",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Mars Riegel Kalorien: Nährwerte, Varianten & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat ein Mars Riegel? Nährwerte pro Stück & 100g. Original, Mini, Eis & Snickers im Vergleich + Tipps.",
-    "keywords": ["mars riegel kalorien", "mars kalorien", "mars riegel nährwerte", "mars kalorien pro stück", "mars zucker", "mars fett", "mars riegel gesund", "mars protein"]
+    "description": "Wie viele Kalorien hat ein Mars Riegel? Der Einzelriegel (51 g) hat rund 226 kcal, 100 g haben 443 kcal. Mini, Eis & Snickers im Vergleich + Tipps.",
+    "keywords": [
+      "mars riegel kalorien",
+      "mars kalorien",
+      "mars riegel nährwerte",
+      "mars kalorien pro stück",
+      "mars zucker",
+      "mars fett",
+      "mars riegel gesund",
+      "mars protein"
+    ]
   },
   "overview": {
-    "calories_per_100g": 448,
-    "protein_per_100g": 4,
+    "calories_per_100g": 443,
+    "protein_per_100g": 4.4,
     "carbs_per_100g": 70,
-    "fat_per_100g": 17,
-    "fiber_per_100g": 0.5,
+    "fat_per_100g": 16,
+    "fiber_per_100g": null,
     "typical_portion_g": 51,
-    "typical_portion_name": "1 Riegel"
+    "typical_portion_name": "1 Riegel (51 g)"
   },
   "variants": [
-    { "name": "Mars Original (51g)", "portion_g": 51, "calories": 228, "protein": 2, "carbs": 36, "fat": 9 },
-    { "name": "Mars Mini (18g)", "portion_g": 18, "calories": 81, "protein": 1, "carbs": 13, "fat": 3, "tip": "Kleine Portion" },
-    { "name": "Mars King Size (67g)", "portion_g": 67, "calories": 300, "protein": 3, "carbs": 47, "fat": 11 },
-    { "name": "Mars Duo (2x 39,4 g, 78,8 g)", "portion_g": 79, "calories": 354, "protein": 3, "carbs": 55, "fat": 13 },
-    { "name": "Mars Eis am Stiel (51g)", "portion_g": 51, "calories": 161, "protein": 2, "carbs": 21, "fat": 8, "tip": "Eisvariante" },
-    { "name": "Mars Protein Bar (59g)", "portion_g": 59, "calories": 200, "protein": 12, "carbs": 26, "fat": 6, "tip": "Mehr Protein" },
-    { "name": "Mars Bites (5 Stück, 30g)", "portion_g": 30, "calories": 134, "protein": 1, "carbs": 21, "fat": 5 },
-    { "name": "Mars Crispy (37g)", "portion_g": 37, "calories": 187, "protein": 2, "carbs": 27, "fat": 8 }
+    {
+      "name": "Mars Einzelriegel (51 g)",
+      "portion_g": 51,
+      "calories": 226,
+      "protein": 2.2,
+      "carbs": 35.7,
+      "fat": 8.2
+    },
+    {
+      "name": "Mars Riegel aus dem Multipack (45 g)",
+      "portion_g": 45,
+      "calories": 199,
+      "protein": 2,
+      "carbs": 31.5,
+      "fat": 7.2
+    },
+    {
+      "name": "Mars Mini (18 g)",
+      "portion_g": 18,
+      "calories": 79,
+      "protein": 0.8,
+      "carbs": 12.8,
+      "fat": 2.7,
+      "tip": "Gut für den kleinen Hunger",
+      "basis": [
+        {
+          "slug": "mars-mini",
+          "g": 18
+        }
+      ]
+    },
+    {
+      "name": "Halber Riegel (25,5 g)",
+      "portion_g": 25.5,
+      "calories": 113,
+      "protein": 1.1,
+      "carbs": 17.9,
+      "fat": 4.1
+    },
+    {
+      "name": "2 Einzelriegel (102 g)",
+      "portion_g": 102,
+      "calories": 452,
+      "protein": 4.5,
+      "carbs": 71.4,
+      "fat": 16.3
+    },
+    {
+      "name": "100 g",
+      "portion_g": 100,
+      "calories": 443,
+      "protein": 4.4,
+      "carbs": 70,
+      "fat": 16
+    }
   ],
   "comparison": [
-    { "name": "Snickers (52g)", "calories": 245, "emoji": "🥜" },
-    { "name": "Twix (50g)", "calories": 247, "emoji": "🍪" },
-    { "name": "Kinderriegel (21g)", "calories": 117, "emoji": "🍫" },
-    { "name": "Bounty (57g)", "calories": 269, "emoji": "🥥" }
+    {
+      "name": "Snickers (50 g)",
+      "calories": 246,
+      "emoji": "🥜",
+      "basis": [
+        {
+          "slug": "snickers"
+        }
+      ]
+    },
+    {
+      "name": "Twix (2 Riegel, 50 g)",
+      "calories": 251,
+      "emoji": "🍪",
+      "basis": [
+        {
+          "slug": "twix"
+        }
+      ]
+    },
+    {
+      "name": "Kinderriegel (21 g)",
+      "calories": 119,
+      "emoji": "🍫",
+      "basis": [
+        {
+          "slug": "kinderriegel"
+        }
+      ]
+    },
+    {
+      "name": "Bounty (2 Stück, 57 g)",
+      "calories": 278,
+      "emoji": "🥥",
+      "basis": [
+        {
+          "slug": "bounty"
+        }
+      ]
+    },
+    {
+      "name": "Mars Eis (1 Riegel, 49,5 ml)",
+      "calories": 131,
+      "emoji": "🍦",
+      "basis": [
+        {
+          "slug": "mars-eis"
+        }
+      ]
+    }
   ],
   "tips": [
-    { "title": "Mini statt Original", "text": "Mars Mini: 81 kcal vs. Original: 228 kcal. Gleicher Geschmack, 65% weniger Kalorien. Und du isst es bewusster.", "icon": "🤏" },
-    { "title": "Karamell = Hauptkalorienquelle", "text": "Das Karamell macht Mars besonders süß: 70g Kohlenhydrate pro 100g! Das ist mehr als bei den meisten Schokoriegeln.", "icon": "🍯" },
-    { "title": "Mars Eis statt Mars Riegel", "text": "Das Mars Eis (161 kcal) hat 67 kcal weniger als der Riegel (228 kcal). Die Eis-Basis verdünnt die Kaloriendichte.", "icon": "🍦" },
-    { "title": "Protein Bar für Sportler", "text": "Der Mars Protein Bar hat 12g Protein bei nur 200 kcal. Wenn du den Mars-Geschmack willst, die bessere Wahl nach dem Training.", "icon": "💪" },
-    { "title": "King Size = Fast eine Mahlzeit", "text": "Der King Size Mars (300 kcal) hat so viele Kalorien wie eine kleine Mahlzeit, macht aber deutlich weniger satt.", "icon": "👑" }
+    {
+      "title": "Mini statt Einzelriegel",
+      "text": "Mars Mini: rund 79 kcal, Einzelriegel: rund 226 kcal. Gleicher Geschmack, rund 65 % weniger Kalorien. Und du isst es bewusster.",
+      "icon": "🤏"
+    },
+    {
+      "title": "Sehr viel Zucker",
+      "text": "Laut Packung stecken in 100 g Mars 70 g Kohlenhydrate, davon 62 g Zucker. Das ist mehr als bei den meisten Schokoriegeln.",
+      "icon": "🍯"
+    },
+    {
+      "title": "Mars Eis statt Mars Riegel",
+      "text": "Ein Mars Eis (49,5 ml, rund 131 kcal) hat rund 95 kcal weniger als der Einzelriegel (rund 226 kcal).",
+      "icon": "🍦"
+    },
+    {
+      "title": "Riegel teilen",
+      "text": "Ein halber Einzelriegel (25,5 g) hat rund 113 kcal. Wer die zweite Hälfte einpackt, spart die Hälfte der Kalorien.",
+      "icon": "💪"
+    },
+    {
+      "title": "Zwei Riegel sind fast eine Mahlzeit",
+      "text": "Zwei Einzelriegel (102 g) haben rund 452 kcal, also so viele wie eine kleine Mahlzeit, machen aber mit rund 4,5 g Eiweiß deutlich weniger satt.",
+      "icon": "👑"
+    }
   ],
   "faq": [
-    { "question": "Wie viele Kalorien hat ein Mars Riegel?", "answer": "Ein Mars (51g) hat 228 kcal. Mars Mini: 81 kcal. King Size: 300 kcal. Mars Duo: 354 kcal. Pro 100g: 448 kcal." },
-    { "question": "Wie viele Kalorien hat ein Mars pro 100g?", "answer": "448 kcal pro 100g. Das ist weniger als Schokolade (536 kcal), weil das Karamell weniger fett ist. Aber der Zuckergehalt ist extrem hoch." },
-    { "question": "Mars oder Snickers: Was hat weniger Kalorien?", "answer": "Mars: 228 kcal (51g). Snickers: 245 kcal (52g). Mars hat etwas weniger, aber Snickers liefert dank Erdnüssen 4g mehr Protein." },
-    { "question": "Wie viel Zucker hat ein Mars Riegel?", "answer": "Ca. 30g Zucker pro Riegel (51g). Das sind 10 Würfelzucker! Pro 100g: ca. 60g Zucker. Mars gehört zu den zuckerreichsten Riegeln." },
-    { "question": "Ist Mars vegan?", "answer": "Nein. Mars enthält Milchschokolade, Milchpulver und Butterreinfett. Es gibt aktuell keine vegane Mars-Version von Mars Inc." },
-    { "question": "Was ist kalorienärmer: Mars oder Kinderriegel?", "answer": "Kinderriegel: 117 kcal (21g). Mars: 228 kcal (51g). Pro 100g: Kinderriegel 555, Mars 448. Pro Stück weniger: Kinderriegel. Pro 100g weniger: Mars." }
+    {
+      "question": "Wie viele Kalorien hat ein Mars Riegel?",
+      "answer": "Ein Mars Einzelriegel (51 g) hat rund 226 kcal, ein Riegel aus dem Multipack (45 g) rund 199 kcal, ein Mars Mini (18 g) rund 79 kcal. Pro 100 g sind es 443 kcal. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
+    },
+    {
+      "question": "Wie viele Kalorien hat ein Mars pro 100g?",
+      "answer": "443 kcal pro 100 g. Das ist weniger als Vollmilchschokolade (535 kcal), weil Mars weniger Fett enthält. Der Zuckergehalt ist mit 62 g pro 100 g aber sehr hoch."
+    },
+    {
+      "question": "Mars oder Snickers: Was hat weniger Kalorien?",
+      "answer": "Ein Mars (51 g) hat rund 226 kcal, ein Snickers (50 g) rund 246 kcal. Mars hat etwas weniger Kalorien, Snickers liefert dank Erdnüssen mehr Protein."
+    },
+    {
+      "question": "Wie viel Zucker hat ein Mars Riegel?",
+      "answer": "Rund 32 g Zucker pro Einzelriegel (51 g), also etwa 10 Stück Würfelzucker (je 3 g). Pro 100 g sind es 62 g Zucker. Mars gehört zu den zuckerreichsten Riegeln."
+    },
+    {
+      "question": "Ist Mars vegan?",
+      "answer": "Nein. Mars enthält laut Zutatenliste unter anderem Magermilchpulver, Molkepermeat, Butterreinfett und Hühnerei-Trockeneiweiß."
+    },
+    {
+      "question": "Was ist kalorienärmer: Mars oder Kinderriegel?",
+      "answer": "Kinderriegel (21 g): 119 kcal. Mars (51 g): rund 226 kcal. Pro 100 g hat der Kinderriegel 566 kcal, Mars 443 kcal. Pro Stück weniger: Kinderriegel. Pro 100 g weniger: Mars."
+    }
   ],
-  "related_foods": ["kinderriegel", "schokolade-vollmilch", "gummibaerchen", "knoppers"]
+  "related_foods": [
+    "kinderriegel",
+    "schokolade-vollmilch",
+    "gummibaerchen",
+    "knoppers"
+  ]
 }

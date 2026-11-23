@@ -3,9 +3,17 @@
   "name": "Daim Mini",
   "emoji": "🍫",
   "category": "supermarkt",
+  "source": "Händler-Etikett REWE: Herstellerangabe laut Verpackung, Daim, Daim Pralinen 200 g (26 Stück) (https://www.rewe.de/shop/p/daim-pralinen-200g/2994755, abgerufen am 23.11.2026), Werte je 100 g",
+  "hersteller": {
+    "name": "Daim",
+    "produkt": "Daim Pralinen 200 g (26 Stück)",
+    "haendler": "REWE",
+    "url": "https://www.rewe.de/shop/p/daim-pralinen-200g/2994755",
+    "abgerufen": "2026-11-23"
+  },
   "seo": {
     "title": "Daim Mini Kalorien: Nährwerte & Tipps | Mahlzait",
-    "description": "Wie viele Kalorien hat Daim Mini? Ein Stück (8g) hat ca. 43 kcal, 100g rund 535 kcal. Nährwerte pro Stück & 100g plus Vergleich und Tipps.",
+    "description": "Wie viele Kalorien hat Daim Mini? Ein Stück (7,7 g) hat rund 42 kcal, 100 g haben 544 kcal. Nährwerte pro Stück & 100 g plus Vergleich und Tipps.",
     "keywords": [
       "daim mini kcal",
       "daim mini kalorien",
@@ -16,79 +24,73 @@
     ]
   },
   "overview": {
-    "calories_per_100g": 535,
-    "protein_per_100g": 4.5,
-    "carbs_per_100g": 62,
-    "fat_per_100g": 29,
-    "fiber_per_100g": 1,
-    "typical_portion_g": 8,
-    "typical_portion_name": "1 Stück (8g)"
+    "calories_per_100g": 544,
+    "protein_per_100g": 3.1,
+    "carbs_per_100g": 61,
+    "fat_per_100g": 32,
+    "fiber_per_100g": 1.3,
+    "typical_portion_g": 7.7,
+    "typical_portion_name": "1 Stück (7,7 g)"
   },
   "variants": [
     {
-      "name": "1 Stück (8g)",
-      "portion_g": 8,
-      "calories": 43,
-      "protein": 0.4,
-      "carbs": 5,
-      "fat": 2.3,
-      "tip": "Standard"
+      "name": "1 Stück (7,7 g)",
+      "portion_g": 7.7,
+      "calories": 42,
+      "protein": 0.2,
+      "carbs": 4.7,
+      "fat": 2.5
     },
     {
-      "name": "2 Stück (16g)",
-      "portion_g": 16,
-      "calories": 86,
+      "name": "2 Stück (15,4 g)",
+      "portion_g": 15.4,
+      "calories": 84,
+      "protein": 0.5,
+      "carbs": 9.4,
+      "fat": 4.9
+    },
+    {
+      "name": "3 Stück (23,1 g)",
+      "portion_g": 23.1,
+      "calories": 126,
       "protein": 0.7,
-      "carbs": 9.9,
-      "fat": 4.6
+      "carbs": 14.1,
+      "fat": 7.4
     },
     {
-      "name": "3 Stück (24g)",
-      "portion_g": 24,
-      "calories": 128,
-      "protein": 1.1,
-      "carbs": 14.9,
-      "fat": 7
+      "name": "Portion laut Packung (25,6 g)",
+      "portion_g": 25.6,
+      "calories": 139,
+      "protein": 0.8,
+      "carbs": 15.6,
+      "fat": 8.2
     },
     {
-      "name": "Kleine Handvoll (40g)",
-      "portion_g": 40,
-      "calories": 214,
-      "protein": 1.8,
-      "carbs": 24.8,
-      "fat": 11.6
-    },
-    {
-      "name": "Portion (50g)",
+      "name": "Portion (50 g)",
       "portion_g": 50,
-      "calories": 268,
-      "protein": 2.3,
-      "carbs": 31,
-      "fat": 14.5
+      "calories": 272,
+      "protein": 1.6,
+      "carbs": 30.5,
+      "fat": 16
     },
     {
-      "name": "Kleiner Beutel (100g)",
+      "name": "100 g",
       "portion_g": 100,
-      "calories": 535,
-      "protein": 4.5,
-      "carbs": 62,
-      "fat": 29
+      "calories": 544,
+      "protein": 3.1,
+      "carbs": 61,
+      "fat": 32
     },
     {
-      "name": "Großer Beutel (200g)",
+      "name": "Beutel (26 Stück, 200 g)",
       "portion_g": 200,
-      "calories": 1070,
-      "protein": 9,
-      "carbs": 124,
-      "fat": 58
+      "calories": 1088,
+      "protein": 6.2,
+      "carbs": 122,
+      "fat": 64
     }
   ],
   "comparison": [
-    {
-      "name": "Daim Mini (3 Stück, 24g)",
-      "calories": 128,
-      "emoji": "🍫"
-    },
     {
       "name": "Celebrations (1 Stück)",
       "calories": 45,
@@ -101,9 +103,14 @@
       ]
     },
     {
-      "name": "Toffifee (1 Stück)",
-      "calories": 47,
-      "emoji": "🍮"
+      "name": "Toffifee (1 Stück, 8,3 g)",
+      "calories": 43,
+      "emoji": "🍮",
+      "basis": [
+        {
+          "slug": "toffifee"
+        }
+      ]
     },
     {
       "name": "Milka Schokolade (1 Reihe, 25g)",
@@ -120,22 +127,22 @@
   "tips": [
     {
       "title": "Ein Stück bewusst genießen",
-      "text": "Ein einzelnes Daim Mini hat nur etwa 43 kcal. Wer bewusst ein bis zwei Stück nimmt statt aus dem Beutel zu naschen, hält die Kalorien gut im Rahmen.",
+      "text": "Ein einzelnes Daim Mini (7,7 g) hat nur rund 42 kcal. Wer bewusst ein bis zwei Stück nimmt statt aus dem Beutel zu naschen, hält die Kalorien gut im Rahmen.",
       "icon": "🍫"
     },
     {
       "title": "Vorsicht beim Beutel",
-      "text": "Ein kleiner 100g-Beutel bringt es auf rund 535 kcal. Lieber eine kleine Portion abzählen, statt direkt aus der Tüte zu essen.",
+      "text": "Der Beutel mit 26 Stück (200 g) bringt es auf 1.088 kcal. Lieber eine kleine Portion abzählen, statt direkt aus der Tüte zu essen.",
       "icon": "⚠️"
     },
     {
       "title": "Hoher Zuckeranteil",
-      "text": "Daim Mini besteht zu einem großen Teil aus Zucker (rund 58g pro 100g). Als süßer Snack zwischendurch ok, aber kein Sattmacher.",
+      "text": "Daim Mini besteht zu einem großen Teil aus Zucker (60 g pro 100 g). Als süßer Snack zwischendurch ok, aber kein Sattmacher.",
       "icon": "🍬"
     },
     {
       "title": "Kaum Eiweiß oder Ballaststoffe",
-      "text": "Mit nur 4,5g Protein und 1g Ballaststoffen pro 100g sättigt Daim Mini wenig. Wer länger satt bleiben will, kombiniert es mit Obst oder Nüssen.",
+      "text": "Mit nur 3,1 g Protein und 1,3 g Ballaststoffen pro 100 g sättigt Daim Mini wenig. Wer länger satt bleiben will, kombiniert es mit Obst oder Nüssen.",
       "icon": "💪"
     },
     {
@@ -147,23 +154,23 @@
   "faq": [
     {
       "question": "Wie viele Kalorien hat ein Daim Mini?",
-      "answer": "Ein einzelnes Daim Mini (ca. 8g) hat etwa 43 kcal. Pro 100g sind es rund 535 kcal."
+      "answer": "Ein einzelnes Daim Mini aus dem 200-g-Beutel (26 Stück, also 7,7 g je Stück) hat rund 42 kcal. Pro 100 g sind es 544 kcal. REWE führt den Beutel als Daim Pralinen. Die Werte stehen so auf der Packung und sind bei REWE angezeigt (abgerufen am 23.11.2026)."
     },
     {
       "question": "Wie viele Kalorien haben 100g Daim Mini?",
-      "answer": "100g Daim Mini haben etwa 535 kcal. Das entspricht ungefähr einem kleinen Beutel."
+      "answer": "100 g Daim Mini haben laut Packung 544 kcal. Das entspricht 13 Stück, also dem halben Beutel."
     },
     {
       "question": "Wie viel Zucker steckt in Daim Mini?",
-      "answer": "Daim Mini enthält rund 62g Kohlenhydrate pro 100g, davon etwa 58g Zucker. Ein einzelnes Stück (8g) hat circa 5g Kohlenhydrate."
+      "answer": "Daim Mini enthält 61 g Kohlenhydrate pro 100 g, davon 60 g Zucker. Ein einzelnes Stück (7,7 g) hat rund 4,7 g Kohlenhydrate."
     },
     {
       "question": "Wie viel Protein hat Daim Mini?",
-      "answer": "Der Proteingehalt ist niedrig: nur etwa 4,5g pro 100g, also rund 0,4g pro Stück. Als Eiweißquelle ist Daim Mini nicht geeignet."
+      "answer": "Der Proteingehalt ist niedrig: nur 3,1 g pro 100 g, also rund 0,2 g pro Stück. Als Eiweißquelle ist Daim Mini nicht geeignet."
     },
     {
       "question": "Ist Daim Mini zum Abnehmen geeignet?",
-      "answer": "Daim Mini ist sehr kalorien- und zuckerreich und sättigt kaum. In kleinen, geplanten Mengen (1-2 Stück) lässt es sich aber gut in eine Diät einbauen."
+      "answer": "Daim Mini ist sehr kalorien- und zuckerreich und sättigt kaum. In kleinen, geplanten Mengen (1 bis 2 Stück) lässt es sich aber gut in eine Diät einbauen."
     },
     {
       "question": "Ist Daim Mini gesund?",
