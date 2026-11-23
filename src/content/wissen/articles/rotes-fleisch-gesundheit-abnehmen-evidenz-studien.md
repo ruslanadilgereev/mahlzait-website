@@ -33,7 +33,7 @@ Entscheidend ist die Zubereitung: Mageres Rinderfilet (rund 139 kcal/100 g) ist 
 ## Was heißt das praktisch?
 
 - **Verarbeitetes Fleisch reduzieren**: Wurst, Schinken, Salami und Speck haben die stärkste Evidenz für ein erhöhtes Risiko - hier lohnt Zurückhaltung am meisten.
-- **Maßvoll statt Verzicht**: Ernährungsgesellschaften empfehlen, den Fleischkonsum insgesamt zu begrenzen (Größenordnung 300-600 g Fleisch und Wurst pro Woche).
+- **Maßvoll statt Verzicht**: Die Deutsche Gesellschaft für Ernährung (DGE) empfiehlt seit März 2024, nicht mehr als 300 g Fleisch und Wurst pro Woche zu essen.
 - **Magere Stücke wählen**: Filet, mageres Hackfleisch oder Geflügel statt fetter, panierter Varianten - das senkt Kalorien und gesättigte Fette.
 - **Schonend garen**: Starkes Anbraten und Grillen über offener Flamme fördert die Bildung problematischer Verbindungen; Schmoren oder kürzeres Garen ist günstiger.
 - **Fürs Abnehmen**: Auf die Gesamtkalorien achten - der [Kalorienbedarf](/kalorienbedarf-berechnen/) gibt den Rahmen vor, in dem Fleisch problemlos Platz hat.

@@ -4893,6 +4893,7 @@ export const articlesMeta: ArticleMeta[] = [
       "kaloriendefizit-berechnen"
     ],
     publishedAt: "2026-06-16",
+    updatedAt: "2026-11-24",
     readingTime: 7,
     sources: [
       {
@@ -4915,6 +4916,13 @@ export const articlesMeta: ArticleMeta[] = [
         journal: "Annals of Internal Medicine",
         year: 2019,
         doi: "10.7326/M19-1621"
+      },
+      {
+        title: "Fleisch und Wurst: weniger ist mehr",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE-Empfehlungen „Gut essen und trinken“",
+        year: 2024,
+        url: "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/fleisch-und-wurst/"
       }
     ],
     kernaussage: "Die WHO/IARC stuft verarbeitetes Fleisch als krebserregend (Gruppe 1) und unverarbeitetes rotes Fleisch als wahrscheinlich krebserregend (Gruppe 2A) ein. Große Kohortenstudien verbinden vor allem verarbeitetes Fleisch mit erhöhtem Risiko für Darmkrebs und Herz-Kreislauf-Erkrankungen. Die absolute Risikoerhöhung ist moderat, die Evidenzstärke umstritten. Fürs Abnehmen entscheidet die Kalorienbilanz, nicht das Fleisch selbst.",
@@ -4929,7 +4937,7 @@ export const articlesMeta: ArticleMeta[] = [
       },
       {
         question: "Wie viel Fleisch pro Woche ist gesund?",
-        answer: "Ernährungsgesellschaften empfehlen, den Konsum zu begrenzen - eine häufig genannte Größenordnung sind rund 300 bis 600 g Fleisch und Wurst pro Woche. Wichtiger als eine exakte Zahl ist, verarbeitetes Fleisch zu reduzieren und magere, unverarbeitete Stücke zu bevorzugen."
+        answer: "Die Deutsche Gesellschaft für Ernährung (DGE) empfiehlt seit März 2024, nicht mehr als 300 g Fleisch und Wurst pro Woche zu essen. Wichtiger als eine exakte Zahl ist, verarbeitetes Fleisch zu reduzieren und magere, unverarbeitete Stücke zu bevorzugen."
       },
       {
         question: "Macht rotes Fleisch dick?",
