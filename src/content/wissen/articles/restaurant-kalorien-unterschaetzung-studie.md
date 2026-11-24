@@ -1,5 +1,3 @@
-# Warum du im Restaurant mehr isst als du denkst (Studie 2023)
-
 ## TL;DR
 
 - **Restaurant-Portionen** enthalten durchschnittlich **~1.200 Kalorien** – oft doppelt so viel wie gedacht

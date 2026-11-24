@@ -1,5 +1,3 @@
-# Detox Diät: Hilft Entgiften wirklich beim Abnehmen?
-
 **Grüne Säfte, Detox-Tees, Entschlackungskuren – überall verspricht "Entgiften" den schnellen Weg zur Traumfigur. Doch was sagt die Wissenschaft? Spoiler: Dein Körper hat seine eigene "Detox-Zentrale" – und die funktioniert ohne teure Pulver.**
 
 ---

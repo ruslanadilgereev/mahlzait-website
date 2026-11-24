@@ -1,5 +1,3 @@
-# Cheat Days: Helfen sie wirklich beim Abnehmen? (Scoping Review 2025)
-
 ## TL;DR
 
 - **Cheat Days/Meals** sind kurze Pausen vom Kaloriendefizit mit uneingeschränktem Essen

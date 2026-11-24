@@ -1,5 +1,3 @@
-# Abnehmen ohne Sport: Funktioniert es wirklich?
-
 Kein Bock auf Fitnessstudio? Keine Zeit zum Joggen? Dann fragst du dich wahrscheinlich: **Kann ich auch ohne Sport abnehmen?**
 
 Die kurze Antwort: **Ja, absolut.**

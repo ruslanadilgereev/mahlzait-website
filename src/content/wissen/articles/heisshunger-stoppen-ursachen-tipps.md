@@ -1,5 +1,3 @@
-# Heißhunger stoppen: Warum Diäten ihn nicht verstärken
-
 **Du kennst das:** Du willst abnehmen, hältst dich tagsüber zurück – und abends überfällt dich der Heißhunger. Schokolade, Chips, Käse. Alles gleichzeitig am liebsten.
 
 Und dann der Gedanke: "Ich esse zu wenig, deshalb hab ich so viel Hunger." Viele glauben, dass Diäten Heißhunger verstärken. Klingt logisch, oder?
