@@ -21,7 +21,8 @@ export default defineConfig({
     },
   },
   integrations: [
-    react(),
+    // Ohne Streaming: React 18 schreibt beim Streamen NUL-Zeichen vor Zeichen an Puffergrenzen (Umlaute, Emojis).
+    react({ experimentalDisableStreaming: true }),
     tailwind(),
     agentsSummary(),
     ...(enableIndexNow
