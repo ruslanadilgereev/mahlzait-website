@@ -102,8 +102,8 @@ function AlkoholKalorienRechnerPage({ config }: Props) {
   };
 
   const alcoholTable = [
-    { drink: "Bier (0.5L, 5%)", calories: 138, alcohol: 15.8 },
-    { drink: "Weisswein (200ml, 11.5%)", calories: 127, alcohol: 18.2 },
+    { drink: "Bier (0.5L, 5%)", calories: 138, alcohol: 19.7 },
+    { drink: "Weisswein (200ml, 11.5%)", calories: 127, alcohol: 18.1 },
     { drink: "Rotwein (200ml, 13%)", calories: 144, alcohol: 20.5 },
     { drink: "Wodka Shot (40ml, 40%)", calories: 88, alcohol: 12.6 },
     { drink: "Gin Tonic (300ml, 10%)", calories: 166, alcohol: 23.7 },
