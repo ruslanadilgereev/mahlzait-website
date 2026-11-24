@@ -56,7 +56,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
     let activity = activityMultipliers[activityLevel];
     let goalFactor = goalMultipliers[goal].factor;
     
-    // Age adjustments - seniors need more protein (DGE recommendation)
+    // Age adjustments - seniors need more protein (DGE ab 65: Schätzwert 1,0 statt 0,8 g/kg)
     let ageFactor = 1.0;
     if (age >= 65) {
       ageFactor = 1.2; // 20% more for seniors
@@ -229,7 +229,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-primary font-bold">•</span>
-                <span><strong>Senioren (65+):</strong> Erhöhter Bedarf von 1,0-1,2g/kg empfohlen</span>
+                <span><strong>Senioren (65+):</strong> DGE-Schätzwert 1,0g pro kg, Expertengruppe PROT-AGE 1,0-1,2g pro kg</span>
               </li>
             </ul>
           </div>
@@ -339,7 +339,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                   </div>
                   {age >= 65 && (
                     <p className="text-sm text-info mt-2">
-                      💡 Ab 65 Jahren empfiehlt die DGE einen erhöhten Proteinbedarf
+                      💡 Ab 65 Jahren nennt die DGE einen höheren Schätzwert (1,0 statt 0,8g pro kg)
                     </p>
                   )}
                 </div>
@@ -686,22 +686,27 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                     <tr>
                       <td>Erwachsene (19-64 Jahre)</td>
                       <td><span className="badge badge-primary">0,8g</span></td>
-                      <td>DGE 2024</td>
+                      <td><a href="https://www.dge.de/wissenschaft/referenzwerte/protein/" target="_blank" rel="noopener noreferrer" className="link">DGE-Referenzwert</a></td>
+                    </tr>
+                    <tr>
+                      <td>Senioren (65+ Jahre)</td>
+                      <td><span className="badge badge-secondary">1,0g</span></td>
+                      <td><a href="https://www.dge.de/wissenschaft/referenzwerte/protein/" target="_blank" rel="noopener noreferrer" className="link">DGE-Referenzwert</a> (Schätzwert)</td>
                     </tr>
                     <tr>
                       <td>Senioren (65+ Jahre)</td>
                       <td><span className="badge badge-secondary">1,0-1,2g</span></td>
-                      <td>DGE 2024</td>
+                      <td>PROT-AGE 2013</td>
                     </tr>
                     <tr>
-                      <td>Schwangere (ab 4. Monat)</td>
-                      <td><span className="badge badge-accent">1,1g</span> + 10-30g extra</td>
-                      <td>DACH Referenzwerte</td>
+                      <td>Schwangere (2. und 3. Trimester)</td>
+                      <td><span className="badge badge-accent">0,9g</span> und <span className="badge badge-accent">1,0g</span> (+7g und +21g am Tag)</td>
+                      <td><a href="https://www.dge.de/wissenschaft/referenzwerte/protein/" target="_blank" rel="noopener noreferrer" className="link">DGE-Referenzwert</a></td>
                     </tr>
                     <tr>
                       <td>Stillende</td>
-                      <td><span className="badge badge-accent">1,3g</span></td>
-                      <td>DACH Referenzwerte</td>
+                      <td><span className="badge badge-accent">1,2g</span> (+23g am Tag)</td>
+                      <td><a href="https://www.dge.de/wissenschaft/referenzwerte/protein/" target="_blank" rel="noopener noreferrer" className="link">DGE-Referenzwert</a></td>
                     </tr>
                     <tr>
                       <td>Freizeitsportler</td>
@@ -975,10 +980,10 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">👴 Senioren (65+)</h3>
                   <p className="opacity-80">
-                    Mit dem Alter nimmt die Fähigkeit ab, Muskeln aufzubauen (anabole Resistenz). Die DGE empfiehlt daher <strong>1,0-1,2g/kg</strong> – also 20-50% mehr als für jüngere Erwachsene.
+                    Mit dem Alter nimmt die Fähigkeit ab, Muskeln aufzubauen (anabole Resistenz). Die DGE nennt ab 65 Jahren einen Schätzwert von <strong>1,0g/kg</strong> (jüngere Erwachsene 0,8g/kg), die Expertengruppe PROT-AGE empfiehlt 1,0-1,2g/kg.
                   </p>
                   <div className="mt-4">
-                    <span className="badge badge-lg badge-secondary">1,0-1,2g pro kg</span>
+                    <span className="badge badge-lg badge-secondary">1,0g pro kg (DGE)</span>
                   </div>
                 </div>
               </div>
@@ -990,9 +995,8 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                     Während der Schwangerschaft steigt der Proteinbedarf, besonders im 3. Trimester. Die zusätzlichen Aminosäuren werden für die Entwicklung des Babys benötigt.
                   </p>
                   <ul className="mt-2 text-sm space-y-1">
-                    <li>1. Trimester: +6g/Tag</li>
-                    <li>2. Trimester: +15g/Tag</li>
-                    <li>3. Trimester: +21g/Tag</li>
+                    <li>2. Trimester: +7g/Tag (DGE)</li>
+                    <li>3. Trimester: +21g/Tag (DGE)</li>
                   </ul>
                 </div>
               </div>
@@ -1001,10 +1005,10 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">🍼 Stillende</h3>
                   <p className="opacity-80">
-                    Die Produktion von Muttermilch ist sehr proteinintensiv. Stillende Mütter sollten etwa <strong>+25g Protein pro Tag</strong> mehr aufnehmen.
+                    Die Produktion von Muttermilch ist sehr proteinintensiv. Stillende Mütter sollten laut DGE <strong>23g Protein pro Tag</strong> mehr aufnehmen.
                   </p>
                   <div className="mt-4">
-                    <span className="badge badge-lg badge-accent">≈1,3g pro kg</span>
+                    <span className="badge badge-lg badge-accent">1,2g pro kg</span>
                   </div>
                 </div>
               </div>
@@ -1296,7 +1300,7 @@ function ProteinBedarfRechnerPage({ config }: Props) {
                 },
                 {
                   q: "Wie viel Protein brauchen Senioren?",
-                  a: "Menschen über 65 Jahren benötigen mehr Protein (1,0-1,2g/kg statt 0,8g/kg), da die Fähigkeit zum Muskelaufbau abnimmt (anabole Resistenz). Die DGE empfiehlt diese erhöhte Zufuhr offiziell.",
+                  a: "Ab 65 Jahren nennt die DGE einen Schätzwert von 1,0g Protein pro kg Körpergewicht, für jüngere Erwachsene 0,8g. Im Alter nimmt die Fähigkeit zum Muskelaufbau ab (anabole Resistenz), die internationale Expertengruppe PROT-AGE empfiehlt deshalb 1,0-1,2g pro kg.",
                 },
                 {
                   q: "Brauchen Veganer mehr Protein?",
@@ -1328,11 +1332,11 @@ function ProteinBedarfRechnerPage({ config }: Props) {
           <div className="max-w-screen-lg mx-auto px-4">
             <h3 className="text-lg font-bold mb-6 text-center">📚 Wissenschaftliche Quellen</h3>
             <div className="text-sm opacity-70 max-w-3xl mx-auto space-y-2">
-              <p>• Deutsche Gesellschaft für Ernährung (DGE): Referenzwerte für die Nährstoffzufuhr, 2024</p>
+              <p>• Deutsche Gesellschaft für Ernährung (DGE): <a href="https://www.dge.de/wissenschaft/referenzwerte/protein/" target="_blank" rel="noopener noreferrer" className="link">Referenzwerte für die Nährstoffzufuhr, Protein</a> (Stand der Ableitung 2017), <a href="https://www.dge.de/gesunde-ernaehrung/faq/ausgewaehlte-fragen-und-antworten-zu-protein-und-unentbehrlichen-aminosaeuren/" target="_blank" rel="noopener noreferrer" className="link">Fragen und Antworten zu Protein</a> (Stand 10.09.2025)</p>
               <p>• Morton RW et al. (2018): A systematic review, meta-analysis and meta-regression of the effect of protein supplementation on resistance training-induced gains in muscle mass. British Journal of Sports Medicine</p>
               <p>• Phillips SM, Van Loon LJ (2011): Dietary protein for athletes: from requirements to optimum adaptation. Journal of Sports Sciences</p>
               <p>• Helms ER et al. (2014): A systematic review of dietary protein during caloric restriction in resistance trained lean athletes. Int J Sport Nutr Exerc Metab</p>
-              <p>• Bauer J et al. (2013): Evidence-based recommendations for optimal dietary protein intake in older people. JAMDA</p>
+              <p>• Bauer J et al. (2013): <a href="https://doi.org/10.1016/j.jamda.2013.05.021" target="_blank" rel="noopener noreferrer" className="link">Evidence-based recommendations for optimal dietary protein intake in older people: a position paper from the PROT-AGE Study Group</a>. JAMDA</p>
             </div>
           </div>
         </section>

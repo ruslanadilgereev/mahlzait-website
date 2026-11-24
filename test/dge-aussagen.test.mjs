@@ -6,6 +6,11 @@
 // Burger, Pizza, Haxe, Martini und Weißwein hießen gelegentlich oder in kleinen Mengen
 // unbedenklich, unproblematisch oder kein Problem, Rippchen verarbeitetes Fleisch,
 // Kochschinken eines der gesünderen verarbeiteten Fleischprodukte, jeweils ohne Quelle.
+// In einer zweiten Runde (ebenfalls 24.11.2026) kamen die alten DGE-Zahlen zu Brot (200 bis
+// 300 g), Streichfett (15 bis 30 g), Öl (10 bis 15 g), Fisch (2 Portionen), Protein ab 65,
+// in Schwangerschaft und Stillzeit, Energie ab 51 Jahren und Fett (20 bis 35 %) dazu, dieselben
+// Entwarnungen auf 66 weiteren Seiten zu Fast Food, Fertigprodukten und verarbeitetem
+// Fleisch und die Quellenlinks der Seiten aus dem Vorgänger-Commit 51e5216.
 // Primärquellen, gelesen am 24.11.2026:
 // - DGE, Fragen und Antworten zu den Ernährungsempfehlungen, Stand 29.05.2026: „Hier ist
 //   ein Ei pro Woche, z. B. als Frühstücksei, angegeben. [...] Die Portionsangabe von
@@ -33,6 +38,18 @@
 //   meat or processed meat", "about 34 000 cancer deaths per year worldwide are attributable
 //   to diets high in processed meat. [...] These numbers contrast with about 1 million
 //   cancer deaths per year globally due to tobacco smoking".
+// - DGE-Ernährungskreis (seit März 2024): „Rund 5 Portionen pro Tag können es je nach
+//   Energiebedarf sein. 1 Portion entspricht 60 g, Brot (ca. 1 Scheibe)“, „Mindestens 1/3 der
+//   Getreideprodukte sollten aus Vollkorn sein“; „10 g Raps-, Oliven-, Walnuss- oder Sojaöl und
+//   10 g Margarine oder Butter. 10 g entsprechen ungefähr 1 Esslöffel“; „Pro Woche können 1 bis 2
+//   Portionen Fisch auf den Tisch kommen. 1 Portion entspricht rund 120 g Seefisch [...] oder
+//   fettreichem Fisch“, „Wenn Sie die Menge von 300 g pro Woche nicht überschreiten, können Sie
+//   frei wählen, ob Sie rotes oder weißes Fleisch essen.“
+// - DGE, Referenzwerte: Protein (Ableitung 2017) ab 65 Jahren Schätzwert 1,0 g/kg, 2. und 3.
+//   Trimester 0,9 und 1,0 g/kg (+7 und +21 g am Tag), Stillende 1,2 g/kg (+23 g); Energie
+//   (Ableitung 2015) bei PAL 1,4 51 bis unter 65 Jahre 2200/1700, ab 65 Jahren 2100/1700 kcal;
+//   Fett (Ableitung 2000) 30 % der Energie, „Personen mit erhöhtem Energiebedarf (PAL > 1,7)
+//   können höhere Prozentsätze benötigen“.
 // Prüft die Daten und das gebaute dist/ (vorher pnpm build).
 import { test } from "node:test";
 import assert from "node:assert/strict";
@@ -51,9 +68,55 @@ const ALKOHOL = DGE + "faq/alkohol/";
 const ALKOHOL_POSITION = "https://www.dge.de/wissenschaft/stellungnahmen-und-positionspapiere/positionen/alkohol/";
 const WHO = "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat";
 const IARC = "https://www.iarc.who.int/wp-content/uploads/2018/11/Monographs-QA_Vol114.pdf";
+const IARC_MITTEILUNG = "https://www.iarc.who.int/wp-content/uploads/2018/07/pr240_E.pdf";
+const GETREIDE = KREIS + "getreide-getreideprodukte-und-kartoffeln/";
+const FETTE = KREIS + "oele-und-fette/";
+const FISCH_FLEISCH = KREIS + "fleisch-wurst-fisch-und-eier/";
+const FISCH = EMPFEHLUNGEN + "fisch/";
+const REFERENZ = "https://www.dge.de/wissenschaft/referenzwerte/";
 
+// Zweite Runde: Entwarnungen ersetzt, Fast Food und Fertigprodukte nach DGE, verarbeitetes
+// Fleisch nach WHO
+const FAST_FOOD = [
+  "20er-nuggets", "big-king-xxl", "burek", "burger-king-crispy-chicken",
+  "burger-king-long-chicken", "burger-king-pommes", "chicken-wings", "chili-cheese-nuggets",
+  "curly-fries", "double-burger", "five-guys-burger", "fruehlingsrolle", "gyros-pita",
+  "hamburger-menue", "kebap-pizza", "kfc", "kfc-hot-wings", "kfc-twister", "l-osteria-pizza",
+  "langos", "mc-toast", "mcdonalds", "nordsee-backfisch-baguette", "onion-rings", "pizza-funghi",
+  "pizza-hut", "pizza-kebab", "pizza-vegetariana", "pommes-mayo",
+];
+const FERTIGPRODUKTE = [
+  "backfischstaebchen", "dr-oetker-pizza", "fertigpizza", "gustavo-gusto-margherita",
+  "gustavo-gusto-pizza", "heisse-tasse", "iglo-backfisch", "instant-noodles", "mini-pizza",
+  "piccolinis", "pizza-baguette", "ravioli-maggi", "ristorante-pizza", "tk-pizza", "yum-yum",
+];
+const VERARBEITETES_FLEISCH = [
+  "berner-wuerstel", "bistro-baguette", "bockwurst", "bosna", "carbonara", "cordon-bleu",
+  "corn-dog", "corned-beef", "curry-king", "currywurst", "debreziner", "hot-dog", "kaesekrainer",
+  "leberkaese", "leberkassemmel", "pizza-salami", "serrano-schinken", "strammer-max", "sucuk",
+  "wiener", "wiener-wuerstchen", "wurstsalat",
+];
+
+const mitQuellen = (slugs, urls) => Object.fromEntries(slugs.map((slug) => [slug, urls]));
 // Am 24.11.2026 geänderte Lebensmittelseiten mit ihren Quellen
 const SEITEN = {
+  ...mitQuellen(FAST_FOOD, [FETTIGES]),
+  ...mitQuellen(FERTIGPRODUKTE, [FETTIGES]),
+  ...mitQuellen(VERARBEITETES_FLEISCH, [WHO]),
+  "wiener-wuerstchen": [WHO, FLEISCH],
+  brot: [GETREIDE],
+  ...mitQuellen(["butter", "oel"], [FETTE]),
+  ...mitQuellen(["hering", "lachs", "lachs-gebraten", "lachsfilet"], [FISCH, FISCH_FLEISCH]),
+  "reis-mit-haehnchen": [FISCH_FLEISCH],
+  // Seiten aus Commit 51e5216
+  ...mitQuellen(["beef-jerky", "salami"], [WHO]),
+  ...mitQuellen([
+    "bifi", "bifi-roll", "cabanossi", "gefluegel-wiener", "krakauer", "leberwurst", "lyoner",
+    "mettwurst", "mortadella", "speck",
+  ], [WHO, FLEISCH]),
+  ...mitQuellen(["rindfleisch", "schweinefleisch"], [FLEISCH]),
+  fleisch: [WHO, FLEISCH, FISCH_FLEISCH],
+  wurst: [WHO, IARC, IARC_MITTEILUNG, FLEISCH],
   ei: [FRAGEN, KREIS, FLEISCH],
   gemuese: [OBST_GEMUESE, FRAGEN],
   erdbeeren: [OBST_GEMUESE, FRAGEN],
@@ -124,6 +187,18 @@ test("im ganzen Build steht keine der alten Aussagen", () => {
     /rotem, verarbeitetem Fleisch/,
     /um Größenordnungen geringer als durch Rauchen/,
     /deutlich geringer als etwa beim Rauchen/,
+    // zweite Runde
+    /DGE empfiehlt 200 ?- ?300 ?g Brot/,
+    /DGE empfiehlt 15 ?- ?30 ?g Streichfett/,
+    /15 ?- ?30 ?g\/Tag\) ist Butter/,
+    /DGE empfiehlt 10 ?- ?15 ?g Speisefette/,
+    /DGE empfiehlt 2 Portionen Fisch/,
+    /Fisch(?: pro Woche)?, davon (?:1 Portion|eine|einmal) fettreich/,
+    /Beste Strategie: 2x Fisch/,
+    /DGE empfiehlt diese erhöhte Zufuhr offiziell/,
+    /DGE empfiehlt daher/,
+    /DACH Referenzwerte/,
+    /% der Kalorien aus Fett \(DGE-Empfehlung\)/,
   ];
   const funde = [];
   for (const pfad of textdateien()) {
@@ -264,6 +339,102 @@ test("Artikel zu rotem Fleisch: Vergleich mit dem Rauchen nach IARC, keine Entwa
   assert.ok(visibleText(html).includes(faq.answer), "sichtbare FAQ");
 });
 
+test("brot, butter, oel: Orientierungswerte der DGE seit März 2024", () => {
+  const brot = antwort("brot", "Wie viele Scheiben Brot pro Tag sind okay?");
+  for (const teil of [
+    "Die DGE nennt seit März 2024 als Orientierungswert rund 5 Portionen Getreide, Brot und Nudeln pro Tag, mindestens ein Drittel davon aus Vollkorn.",
+    "Eine Portion sind 60g, das ist etwa 1 Scheibe Brot",
+  ]) assert.ok(brot.includes(teil), brot);
+  const kcal10 = (slug) => Math.round(lebensmittel(slug).overview.calories_per_100g / 10);
+  const butter = antwort("butter", "Wie viel Butter am Tag ist okay?");
+  assert.equal(butter, "Die DGE nennt seit März 2024 als Orientierungswert rund 1 Esslöffel (10g) Butter oder Margarine pro Tag, dazu 10g pflanzliches Öl. 10g Butter haben rund " + kcal10("butter") + " kcal.");
+  assert.ok(antwort("butter", "Ist Butter gesund oder ungesund?").includes("nennt rund 1 Esslöffel (10g) Butter oder Margarine pro Tag als Orientierung"));
+  const oel = antwort("oel", "Wie viel Öl pro Tag ist okay?");
+  assert.equal(oel, "Die DGE nennt seit März 2024 als Orientierungswert 10g pflanzliches Öl pro Tag, ungefähr 1 Esslöffel, dazu 10g Butter oder Margarine. 10g Öl haben rund " + kcal10("oel") + " kcal.");
+});
+
+test("Fisch und Geflügel: ein- bis zweimal Fisch, höchstens 300 g Fleisch pro Woche nach DGE", () => {
+  for (const slug of ["hering", "lachs", "lachs-gebraten", "lachsfilet", "fleisch", "reis-mit-haehnchen"]) {
+    for (const satz of texte(lebensmittel(slug)).flatMap(saetze)) {
+      // Titel „1 bis 2 Portionen Fisch pro Woche“ der Tipps zu lachs und lachsfilet
+      if (satz === "1 bis 2 Portionen Fisch pro Woche") continue;
+      if (/\d\s*(?:-\s*\d+)?\s*(?:x|[Mm]al|Portionen|g)\b[^.]*pro Woche|mehr als \dx/.test(satz)) assert.match(satz, /DGE|Gesellschaft für Ernährung/, slug);
+    }
+  }
+  for (const slug of ["hering", "lachs", "lachs-gebraten", "lachsfilet"]) {
+    const text = texte(lebensmittel(slug)).join("\n");
+    assert.match(text, /(?:DGE|\(DGE\)) empfiehlt ein- bis zweimal Fisch pro Woche/, slug);
+    assert.match(text, /(?:Eine|eine) Portion sind rund 120 g/, slug);
+    assert.doesNotMatch(text, /deckt den (?:Omega-3-)?Bedarf|Schadstoffbelastung|Schwermetall/, slug);
+  }
+  const geflugel = "nicht mehr als 300 g Fleisch und Wurst pro Woche";
+  assert.ok(antwort("fleisch", "Fleisch oder Fisch zum Abnehmen?").endsWith("Die DGE empfiehlt ein- bis zweimal Fisch und " + geflugel + ", Geflügel zählt dazu."));
+  assert.ok(antwort("reis-mit-haehnchen", "Wie oft pro Woche kann man Reis mit Hähnchen essen?").startsWith("Die DGE empfiehlt, " + geflugel + " zu essen, Geflügel zählt dazu."));
+});
+
+test("Protein-Rechner: Referenzwerte der DGE, PROT-AGE als eigene Angabe, Rechenweg unverändert", () => {
+  const route = "/protein-bedarf-rechner/";
+  const html = readPage(route);
+  const text = visibleText(html);
+  const faq = faqFromSchema(html).find((f) => f.question === "Wie viel Protein brauchen Senioren?").answer;
+  assert.equal(faq, "Ab 65 Jahren nennt die DGE einen Schätzwert von 1,0g Protein pro kg Körpergewicht, für jüngere Erwachsene 0,8g. Im Alter nimmt die Fähigkeit zum Muskelaufbau ab (anabole Resistenz), die internationale Expertengruppe PROT-AGE empfiehlt deshalb 1,0-1,2g pro kg.");
+  assert.ok(text.includes(faq), "sichtbare FAQ");
+  for (const zeile of [
+    "Senioren (65+ Jahre) 1,0g DGE-Referenzwert (Schätzwert)",
+    "Senioren (65+ Jahre) 1,0-1,2g PROT-AGE 2013",
+    "Schwangere (2. und 3. Trimester) 0,9g und 1,0g (+7g und +21g am Tag) DGE-Referenzwert",
+    "Stillende 1,2g (+23g am Tag) DGE-Referenzwert",
+    "Senioren (65+): DGE-Schätzwert 1,0g pro kg, Expertengruppe PROT-AGE 1,0-1,2g pro kg",
+    "Die DGE nennt ab 65 Jahren einen Schätzwert von 1,0g/kg (jüngere Erwachsene 0,8g/kg), die Expertengruppe PROT-AGE empfiehlt 1,0-1,2g/kg.",
+    "2. Trimester: +7g/Tag (DGE) 3. Trimester: +21g/Tag (DGE)",
+    "Stillende Mütter sollten laut DGE 23g Protein pro Tag mehr aufnehmen.",
+  ]) assert.ok(text.includes(zeile), zeile);
+  assert.doesNotMatch(text, /DGE 2024|DACH|1\. Trimester|1,3g pro kg/);
+  for (const url of [REFERENZ + "protein/", "https://doi.org/10.1016/j.jamda.2013.05.021"]) assert.ok(html.includes('href="' + url + '"'), url);
+  const artikelSchema = jsonLd(html).find((block) => block["@type"] === "Article");
+  assert.ok(artikelSchema.dateModified >= "2026-11-24", artikelSchema.dateModified);
+  const quelle = readRepoFile("src/modules/protein/index.tsx").replaceAll("\r\n", "\n");
+  for (const teil of ["ageFactor = 1.2;", "ageFactor = 1.1;", "lifeStageFactor = 1.1;", "lifeStageFactor = 1.3;", "lifeStageFactor = 1.4;", "sedentary: { min: 0.8, max: 1.0,"]) assert.ok(quelle.includes(teil), teil);
+});
+
+test("Kalorienbedarf: Tabelle mit den Richtwerten der DGE bei PAL 1,4", () => {
+  const html = readPage("/kalorienbedarf-berechnen/");
+  const text = visibleText(html);
+  for (const zeile of ["19 bis unter 25 Jahre 2.400 1.900", "25 bis unter 51 Jahre 2.300 1.800", "51 bis unter 65 Jahre 2.200 1.700", "65 Jahre und älter 2.100 1.700"]) {
+    assert.ok(text.includes(zeile), zeile);
+  }
+  assert.ok(html.includes('href="' + REFERENZ + 'energie/"'), "Link zur DGE");
+});
+
+test("Fett-Artikel: Richtwert der DGE 30 % der Kalorien", () => {
+  const html = readPage("/wissen/fett-macht-fett-mythos-abnehmen/");
+  const faq = faqFromSchema(html).find((f) => f.question === "Wie viel Fett sollte ich täglich essen?").answer;
+  assert.ok(faq.startsWith("Die DGE nennt für Erwachsene als Richtwert 30 % der Kalorien aus Fett, bei viel körperlicher Aktivität kann es mehr sein. Bei 2.000 kcal sind das rund " + Math.round((2000 * 0.3) / 9) + " g Fett."), faq);
+  assert.ok(visibleText(html).includes(faq), "sichtbare FAQ");
+});
+
+test("Fast Food, Fertigprodukte und verarbeitetes Fleisch: keine Entwarnung, Aussage nach DGE oder WHO", () => {
+  const risiko = "steigt laut DGE das Risiko für Übergewicht, Bluthochdruck, Herz-Kreislauf-Erkrankungen und Typ-2-Diabetes.";
+  for (const [slugs, muster] of [
+    [FAST_FOOD, (text) => text.includes("Wird viel Fast Food gegessen, " + risiko)],
+    [FERTIGPRODUKTE, (text) => text.includes("Werden viele Fertigprodukte gegessen, " + risiko)],
+    [VERARBEITETES_FLEISCH, (text) => /WHO keine unbedenkliche Menge/.test(text)],
+  ]) {
+    for (const slug of slugs) {
+      const alle = texte(lebensmittel(slug));
+      assert.ok(muster(alle.join("\n")), slug);
+      for (const satz of alle.flatMap(saetze)) {
+        if (/nennt die WHO keine unbedenkliche Menge|die WHO keine unbedenkliche Menge nennt/.test(satz)) continue;
+        assert.doesNotMatch(satz, /unbedenklich|unproblematisch|in Ordnung|\bokay\b|\bok\b|vertretbar|nicht ungesund|in einen ausgewogenen Ernährungsplan/i, slug);
+      }
+    }
+  }
+  // dieselben Seiten aus Commit 51e5216 und lyoner
+  for (const slug of ["bifi", "bifi-roll", "lyoner"]) {
+    for (const satz of texte(lebensmittel(slug)).flatMap(saetze)) assert.doesNotMatch(satz, /\bokay\b|in eine ausgewogene Ernährung/i, slug);
+  }
+});
+
 test("geänderte Lebensmittelseiten: Quellen verlinkt, FAQ-Schema und sichtbarer Text wie in den Daten, lastmod angepasst", () => {
   const lastmod = JSON.parse(readRepoFile("src/data/food-lastmod.json"));
   for (const [slug, urls] of Object.entries(SEITEN)) {
@@ -290,6 +461,7 @@ test("geänderte Artikel: Aktualisierungsdatum und Quellen mit Link", () => {
     ["alkohol-abnehmen-fettverbrennung", [ALKOHOL_POSITION, ALKOHOL]],
     ["rotes-fleisch-gesundheit-abnehmen-evidenz-studien", [FLEISCH, WHO, IARC]],
     ["teller-methode-harvard-teller-portionskontrolle-evidenz", [EMPFEHLUNGEN]],
+    ["fett-macht-fett-mythos-abnehmen", [REFERENZ + "fett-essenzielle-fettsaeuren/"]],
   ]) {
     const html = readPage("/wissen/" + slug + "/");
     const schema = jsonLd(html).find((block) => Array.isArray(block["@type"]) && block["@type"].includes("Article"));

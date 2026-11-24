@@ -381,6 +381,7 @@ export const articlesMeta: ArticleMeta[] = [
     tags: ["Abnehmen", "Mythen", "Fett", "Ernährung", "Low-Fat"],
     relatedCalculators: ["makros-berechnen", "kaloriendefizit-berechnen"],
     publishedAt: "2026-02-20",
+    updatedAt: "2026-11-24",
     readingTime: 8,
     featured: true,
     sources: [
@@ -422,6 +423,13 @@ export const articlesMeta: ArticleMeta[] = [
         pmid: "16373948",
         url: "https://pubmed.ncbi.nlm.nih.gov/16373948/",
       },
+      {
+        title: "Referenzwerte für die Nährstoffzufuhr: Fett, essenzielle Fettsäuren",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE, 3. Auflage",
+        year: 2025,
+        url: "https://www.dge.de/wissenschaft/referenzwerte/fett-essenzielle-fettsaeuren/",
+      },
     ],
     kernaussage:
       "Die Low-Fat-Welle der 80er ist wissenschaftlich widerlegt: Meta-Analysen (Tobias 2015, Sackner-Bernstein 2015) zeigen, dass Low-Fat-Diäten nicht besser beim Abnehmen funktionieren als andere Ansätze. Fett hat 9 kcal/g, sättigt aber stark und verlangsamt die Magenentleerung. Entscheidend ist das Gesamt-Kaloriendefizit, nicht die Fettquelle. Gute Fette wie Omega-3, Olivenöl und Nüsse unterstützen sogar gesunden Gewichtsverlust.",
@@ -444,7 +452,7 @@ export const articlesMeta: ArticleMeta[] = [
       {
         question: "Wie viel Fett sollte ich täglich essen?",
         answer:
-          "Je nach Ziel: 20–35 % der Kalorien aus Fett (DGE-Empfehlung). Bei 2.000 kcal entspricht das 44–78 g Fett. Low-Carb und Keto liegen deutlich höher (60–75 %), mediterrane Kost bei 30–40 %. Unter 15 % Fett wird hormonell ungünstig.",
+          "Die DGE nennt für Erwachsene als Richtwert 30 % der Kalorien aus Fett, bei viel körperlicher Aktivität kann es mehr sein. Bei 2.000 kcal sind das rund 67 g Fett. Low-Carb und Keto liegen deutlich höher (60 bis 75 %), mediterrane Kost bei 30 bis 40 %. Unter 15 % Fett wird hormonell ungünstig.",
       },
       {
         question: "Macht Butter wirklich dick?",

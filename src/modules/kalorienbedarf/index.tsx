@@ -499,7 +499,7 @@ function KalorienbedarfPage({ config }: Props) {
             
             <h3 className="text-xl font-bold mt-6 mb-4">Durchschnittlicher Kalorienbedarf – Richtwerte</h3>
             <p>
-              Die Deutsche Gesellschaft für Ernährung (DGE) gibt folgende Richtwerte für den durchschnittlichen Kalorienbedarf an. Diese Werte gelten für Personen mit geringer körperlicher Aktivität (PAL 1,4):
+              Die <a href="https://www.dge.de/wissenschaft/referenzwerte/energie/" target="_blank" rel="noopener noreferrer" className="link link-primary">Deutsche Gesellschaft für Ernährung (DGE)</a> gibt folgende Richtwerte für den durchschnittlichen Kalorienbedarf an. Diese Werte gelten für Personen mit geringer körperlicher Aktivität (PAL 1,4):
             </p>
             <div className="overflow-x-auto my-4 not-prose">
               <table className="table bg-base-100 shadow">
@@ -511,10 +511,10 @@ function KalorienbedarfPage({ config }: Props) {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td>19–25 Jahre</td><td>2.400</td><td>1.900</td></tr>
-                  <tr><td>25–51 Jahre</td><td>2.300</td><td>1.800</td></tr>
-                  <tr><td>51–65 Jahre</td><td>2.100</td><td>1.700</td></tr>
-                  <tr><td>65+ Jahre</td><td>1.900</td><td>1.600</td></tr>
+                  <tr><td>19 bis unter 25 Jahre</td><td>2.400</td><td>1.900</td></tr>
+                  <tr><td>25 bis unter 51 Jahre</td><td>2.300</td><td>1.800</td></tr>
+                  <tr><td>51 bis unter 65 Jahre</td><td>2.200</td><td>1.700</td></tr>
+                  <tr><td>65 Jahre und älter</td><td>2.100</td><td>1.700</td></tr>
                 </tbody>
               </table>
             </div>

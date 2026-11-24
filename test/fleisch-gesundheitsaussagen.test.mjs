@@ -167,13 +167,11 @@ test("fleisch, rindfleisch, schweinefleisch und der Wissensartikel: DGE höchste
 });
 
 test("Seiten zu verarbeitetem und rotem Fleisch: Mengen pro Woche oder Tag nur als Empfehlung der DGE", () => {
-  // Fisch und Geflügel, nicht Gegenstand dieser Regel
-  const AUSGENOMMEN = new Set(["fleisch: Beste Strategie: 2x Fisch + 2-3x Geflügel pro Woche."]);
   const MENGE = /\d[^.!?]*\b(?:pro|je|in der|am) (?:Woche|Tag)\b|\d\s*(?:x|mal|g)?\s*\/\s*(?:Woche|Tag)\b/;
   const funde = [];
   for (const slug of [...VERARBEITET, ...ROT]) {
     for (const satz of texte(lebensmittel(slug)).flatMap(saetze)) {
-      if (!MENGE.test(satz) || satz.includes("DGE") || AUSGENOMMEN.has(slug + ": " + satz)) continue;
+      if (!MENGE.test(satz) || satz.includes("DGE")) continue;
       // Salz ist nicht Gegenstand dieser Regel („Die WHO empfiehlt max. 5g/Tag insgesamt.“ auf salami)
       if (satz === "Die WHO empfiehlt max. 5g/Tag insgesamt.") continue;
       funde.push(slug + ": " + satz);
