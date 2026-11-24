@@ -11,6 +11,9 @@
 // in Schwangerschaft und Stillzeit, Energie ab 51 Jahren und Fett (20 bis 35 %) dazu, dieselben
 // Entwarnungen auf 66 weiteren Seiten zu Fast Food, Fertigprodukten und verarbeitetem
 // Fleisch und die Quellenlinks der Seiten aus dem Vorgänger-Commit 51e5216.
+// In einer dritten Runde (ebenfalls 24.11.2026) kamen das Defizit von 300 bis 500 kcal (stand als
+// Empfehlung der DGE auf der Startseite), 2 bis 3 Dosen Thunfisch pro Woche (als Empfehlung der
+// EFSA) und die Entwarnungen zu zuckergesüßten Getränken, Energy Drinks und Koffein dazu.
 // Primärquellen, gelesen am 24.11.2026:
 // - DGE, Fragen und Antworten zu den Ernährungsempfehlungen, Stand 29.05.2026: „Hier ist
 //   ein Ei pro Woche, z. B. als Frühstücksei, angegeben. [...] Die Portionsangabe von
@@ -50,6 +53,42 @@
 //   (Ableitung 2015) bei PAL 1,4 51 bis unter 65 Jahre 2200/1700, ab 65 Jahren 2100/1700 kcal;
 //   Fett (Ableitung 2000) 30 % der Energie, „Personen mit erhöhtem Energiebedarf (PAL > 1,7)
 //   können höhere Prozentsätze benötigen“.
+// - DGE, „Diäten und Fasten“: „Die DGE empfiehlt eine langfristige Gewichtsabnahme, die auf einer
+//   Kombination aus Ernährungsumstellung, Verhaltensänderung und einer Steigerung der
+//   körperlichen Aktivität basiert.“ (keine Zahl zum Defizit)
+// - Leitfaden Ernährungstherapie in Klinik und Praxis (LEKuP, 2019; DGE, DAG und weitere), 4.1
+//   Übergewicht bzw. Adipositas: Energiedefizit von 500 bis 600 kcal/Tag.
+// - DGE, „Am besten Wasser trinken“: „Zuckergesüßte und alkoholische Getränke sind nicht
+//   empfehlenswert.“, „Ungeeignete Durstlöscher sind Limonaden, Brausen, Nektare, Eistees,
+//   Energydrinks, Cola- Fruchtsaft-, und Milchmischgetränke (z. B. Eiskaffee). [...]
+//   Zuckergesüßte Getränke erhöhen das Risiko für Übergewicht und Typ-2-Diabetes.“,
+//   Lightgetränke „sind daher weniger empfehlenswert“.
+// - BfR, Fragen und Antworten zu Koffein, Stand 05.01.2026: Höchstmenge in Energy Drinks „320 mg
+//   pro Liter“; 250 ml enthalten 80 mg, „Diese Koffeinmenge ist für gesunde Erwachsene
+//   gesundheitlich unbedenklich“; „Bereits bei einem Verzehr von drei Dosen Energy Drinks á 250 ml
+//   (entsprechend 240 mg Koffein) innerhalb kurzer Zeit wird die für gesunde Erwachsene noch als
+//   sicher geltende Koffein-Einzeldosis von 200 mg überschritten.“; Kinder, Schwangere, Stillende
+//   und koffeinempfindliche Personen „sollten [...] verzichten“.
+// - EFSA, Thema Koffein: "Single doses of caffeine up to 200mg [...] do not raise safety concerns
+//   for the general healthy adult population", "Intakes up to 400mg per day [...] do not raise
+//   safety concerns for healthy adults", "caffeine is unlikely to mask the subjective perception
+//   of alcohol intoxication" (bis 200 mg Koffein und rund 0,8 Promille).
+// - BfR, Methylquecksilber, Stand 15.04.2026: „Für die meisten Menschen ist bei üblichen
+//   Verzehrgewohnheiten von Fisch und Meeresfrüchten nicht mit gesundheitlichen
+//   Beeinträchtigungen durch Methylquecksilber zu rechnen.“, „Auch das BfR empfiehlt Schwangeren
+//   und Stillenden, den Konsum von [...] Thunfisch einzuschränken.“
+// - BfR, Stellungnahme 047/2023 vom 11.10.2023 (Portion 150 g, 65 kg): „Die Exposition über
+//   Thunfisch mit mittleren Gehalten bleibt bei den empfohlenen zwei wöchentlichen Mahlzeiten weit
+//   unterhalb des TWI, nähert sich diesem bei drei Mahlzeiten aber an. Bei hohen Gehalten (95.
+//   Perzentil) wird der TWI schon mit einer Thunfisch-Portion pro Woche annähernd ausgeschöpft.“
+// - EFSA, Mitteilung vom 22.01.2015: "EFSA recommends that individual Member States consider
+//   their national patterns of fish consumption" (keine Portionszahl der EFSA).
+// - BfR, Slush-Ice-Getränke mit Glycerin, Stand 26.06.2026: „dass jüngere Kinder bereits bei
+//   Verzehrmengen unterhalb von 200 Milliliter [...] Glycerin-Mengen aufnehmen können, die der
+//   therapeutisch wirksamen Dosis entsprechen oder sie sogar überschreiten“; Nebenwirkungen
+//   „darunter Kopfschmerzen, Übelkeit, Erbrechen, Durchfall und Benommenheit“.
+// - BfR, chininhaltige Getränke, 09.05.2008: „empfiehlt das BfR Schwangeren daher, vorsorglich
+//   auf den Konsum chininhaltiger Getränke zu verzichten“.
 // Prüft die Daten und das gebaute dist/ (vorher pnpm build).
 import { test } from "node:test";
 import assert from "node:assert/strict";
@@ -74,6 +113,14 @@ const FETTE = KREIS + "oele-und-fette/";
 const FISCH_FLEISCH = KREIS + "fleisch-wurst-fisch-und-eier/";
 const FISCH = EMPFEHLUNGEN + "fisch/";
 const REFERENZ = "https://www.dge.de/wissenschaft/referenzwerte/";
+const WASSER = EMPFEHLUNGEN + "am-besten-wasser-trinken/";
+const BFR_FRAGEN = "https://www.bfr.bund.de/fragen-und-antworten/thema/";
+const BFR_KOFFEIN = BFR_FRAGEN + "fragen-und-antworten-zu-koffein-und-koffeinhaltigen-lebensmitteln-einschliesslich-energy-drinks/";
+const BFR_SLUSH = BFR_FRAGEN + "slush-ice-getraenke-mit-glycerin/";
+const BFR_QUECKSILBER = BFR_FRAGEN + "methylquecksilber-warum-schwangere-und-stillende-manche-arten-von-fisch-meiden-sollten/";
+const BFR_CHININ = "https://www.bfr.bund.de/cm/343/chininhaltige_getraenke_koennen_gesundheitliich_problematisch_sein.pdf";
+const BFR_FISCH = "https://www.bfr.bund.de/cm/343/fischverzehr-in-schwangerschaft-und-stillzeit-einige-fischarten-weisen-hohe-methylquecksilber-gehalte-auf.pdf";
+const EFSA_KOFFEIN = "https://www.efsa.europa.eu/en/topics/topic/caffeine";
 
 // Zweite Runde: Entwarnungen ersetzt, Fast Food und Fertigprodukte nach DGE, verarbeitetes
 // Fleisch nach WHO
@@ -95,6 +142,11 @@ const VERARBEITETES_FLEISCH = [
   "corn-dog", "corned-beef", "curry-king", "currywurst", "debreziner", "hot-dog", "kaesekrainer",
   "leberkaese", "leberkassemmel", "pizza-salami", "serrano-schinken", "strammer-max", "sucuk",
   "wiener", "wiener-wuerstchen", "wurstsalat",
+];
+// Dritte Runde: Entwarnungen zu zuckergesüßten Getränken ersetzt
+const ZUCKERGETRAENKE = [
+  "almdudler", "club-mate", "dr-pepper", "eisschokolade", "ginger-ale", "mc-frappe",
+  "milchshake-vanille", "muellermilch", "nesquik", "ovomaltine",
 ];
 
 const mitQuellen = (slugs, urls) => Object.fromEntries(slugs.map((slug) => [slug, urls]));
@@ -133,6 +185,13 @@ const SEITEN = {
   schweinshaxe: [FLEISCH],
   schinken: [WHO, IARC, FLEISCH],
   spareribs: [WHO],
+  // dritte Runde
+  ...mitQuellen([...ZUCKERGETRAENKE, "pepsi-max"], [WASSER]),
+  "slush-eis": [WASSER, BFR_SLUSH],
+  tonic: [WASSER, BFR_CHININ],
+  "energy-drink": [WASSER, BFR_KOFFEIN, EFSA_KOFFEIN],
+  kaffee: [EFSA_KOFFEIN, BFR_KOFFEIN],
+  "thunfisch-dose": [BFR_QUECKSILBER, BFR_FISCH, FISCH, FISCH_FLEISCH],
 };
 // Alle Seiten zu alkoholischen Getränken
 const ALKOHOLISCH = [
@@ -199,6 +258,15 @@ test("im ganzen Build steht keine der alten Aussagen", () => {
     /DGE empfiehlt daher/,
     /DACH Referenzwerte/,
     /% der Kalorien aus Fett \(DGE-Empfehlung\)/,
+    // dritte Runde
+    /DGE empfiehlt ein Defizit/,
+    /2-3 Dosen/,
+    /Max\. 2 Dosen pro Woche/,
+    /In Maßen \(1-2 Dosen\/Tag\)/,
+    /EFSA empfiehlt max\. 400 ?mg/,
+    /Mehr ist meist unbedenklich/,
+    /ca\. 173 ?mg Koffein|Monster \(500ml\): ca\. 173 ?mg/,
+    /maskiert die Alkoholwirkung/,
   ];
   const funde = [];
   for (const pfad of textdateien()) {
@@ -433,6 +501,85 @@ test("Fast Food, Fertigprodukte und verarbeitetes Fleisch: keine Entwarnung, Aus
   for (const slug of ["bifi", "bifi-roll", "lyoner"]) {
     for (const satz of texte(lebensmittel(slug)).flatMap(saetze)) assert.doesNotMatch(satz, /\bokay\b|in eine ausgewogene Ernährung/i, slug);
   }
+});
+
+test("Startseite: Defizit zum Abnehmen ohne Zahl der DGE, Leitfaden LEKuP für Adipositas", () => {
+  const html = readPage("/");
+  const faq = faqFromSchema(html).find((f) => f.question === "Wie viele Kalorien sollte ich zum Abnehmen essen?").answer;
+  for (const teil of [
+    "Die DGE empfiehlt eine langfristige Gewichtsabnahme, die Ernährungsumstellung, Verhaltensänderung und mehr Bewegung verbindet (dge.de/gesunde-ernaehrung/diaeten-und-fasten).",
+    "Für die Behandlung von Adipositas nennt der Leitfaden LEKuP von DGE, Deutscher Adipositas-Gesellschaft und weiteren Fachgesellschaften (2019, doi.org/10.1055/a-1030-5207) ein Energiedefizit von 500 bis 600 kcal pro Tag.",
+  ]) assert.ok(faq.includes(teil), faq);
+  assert.deepEqual(faq.match(/\d[\d.,]*(?: bis \d[\d.,]*)? ?(?:kcal|kg)/g), ["500 bis 600 kcal"], faq);
+  assert.doesNotMatch(faq, strich);
+  // sichtbare FAQ, API und llms-full.txt lesen dieselbe Antwort aus src/utils/config.ts
+  assert.ok(visibleText(html).includes(faq), "sichtbare FAQ");
+  assert.ok(readFileSync(join(distDir, "api/content.json"), "utf8").includes(JSON.stringify(faq)), "api/content.json");
+  assert.ok(readFileSync(join(distDir, "llms-full.txt"), "utf8").includes(faq), "llms-full.txt");
+});
+
+test("thunfisch-dose: Methylquecksilber nach BfR und EFSA, keine Zahl an Dosen pro Woche", () => {
+  const food = lebensmittel("thunfisch-dose");
+  const tipp = food.tips.find((t) => t.title === "Auf Quecksilber achten")?.text;
+  assert.equal(tipp, "Thunfisch enthält vergleichsweise viel Methylquecksilber, Schwangere und Stillende sollten ihn laut BfR nur eingeschränkt essen. Bei mittleren Gehalten bleiben zwei Portionen (je 150g) pro Woche weit unter der tolerierbaren Wochenmenge der EFSA, drei nähern sich ihr an (BfR, gerechnet für 65kg Körpergewicht).");
+  assert.ok(antwort("thunfisch-dose", "Ist Thunfisch aus der Dose gesund?").endsWith("Laut BfR sollten Schwangere und Stillende ihn deshalb nur eingeschränkt essen; für die meisten Menschen ist bei üblichem Fischverzehr nicht mit Beeinträchtigungen zu rechnen."));
+  const taeglich = antwort("thunfisch-dose", "Kann man jeden Tag Thunfisch essen?");
+  for (const teil of [
+    "Die DGE empfiehlt ein- bis zweimal Fisch pro Woche, eine Portion sind rund 120 g.",
+    "Laut BfR bleiben zwei Portionen Thunfisch (je 150g) pro Woche bei mittleren Gehalten weit unter der tolerierbaren Wochenmenge der EFSA (1,3 µg pro kg Körpergewicht), drei nähern sich ihr an; bei hohen Gehalten schöpft schon eine Portion sie fast aus (gerechnet für 65kg Körpergewicht).",
+  ]) assert.ok(taeglich.includes(teil), taeglich);
+  // Mengen pro Woche nur mit Quelle, keine Empfehlung der EFSA
+  for (const satz of texte(food).flatMap(saetze)) {
+    assert.doesNotMatch(satz, /\bDosen\b[^.]*pro Woche|EFSA empfiehlt|empfiehlt die EFSA|gelten als sicher/, satz);
+    if (/pro Woche/.test(satz)) assert.match(satz, /BfR|DGE/, satz);
+  }
+});
+
+test("zuckergesüßte Getränke: nicht empfehlenswert nach DGE, keine Entwarnung", () => {
+  for (const slug of [...ZUCKERGETRAENKE, "slush-eis", "tonic", "energy-drink"]) {
+    assert.match(texte(lebensmittel(slug)).join("\n"), /Zuckergesüßte Getränke (?:wie Energy Drinks )?sind laut DGE nicht empfehlenswert, (?:sie erhöhen das Risiko für Übergewicht und Typ-2-Diabetes|Milchmischgetränke zählt sie zu den ungeeigneten Durstlöschern)\b/, slug);
+  }
+  assert.ok(antwort("pepsi-max", "Ist Pepsi Max gesund?").includes("Lightgetränke sind laut DGE weniger empfehlenswert."));
+  assert.ok(antwort("slush-eis", "Ist Slush-Eis gesund?").endsWith("Enthält Slush-Eis Glycerin (E 422), können jüngere Kinder laut BfR schon mit weniger als 200 ml so viel davon aufnehmen, dass Kopfschmerzen, Übelkeit oder Erbrechen möglich sind."));
+  assert.ok(antwort("tonic", "Ist Tonic Water gesund?").endsWith("Schwangeren rät das BfR wegen des Chinins, vorsorglich auf chininhaltige Getränke zu verzichten."));
+  assert.doesNotMatch(antwort("muellermilch", "Ist Müllermilch zum Abnehmen geeignet?"), /empfehlenswert/);
+  // alle gesüßten Getränke ohne Alkohol, auch die unveränderten; Aussagen mit Beleg (EFSA, BfR) ausgenommen
+  for (const slug of [
+    ...ZUCKERGETRAENKE, "slush-eis", "tonic", "energy-drink", "pepsi-max",
+    "bionade", "chai-latte", "cola", "cola-zero", "eiskaffee", "eistee", "fanta", "ginger-beer", "kakao",
+    "karamalz", "malzbier", "mango-lassi", "matcha-latte", "mate-tee", "milchshake-schoko", "powerade",
+    "redbull", "spezi", "sprite", "sprite-zero", "tassimo-milka",
+  ]) {
+    for (const satz of texte(lebensmittel(slug)).flatMap(saetze)) {
+      if (/EFSA|BfR/.test(satz)) continue;
+      assert.doesNotMatch(satz, /unbedenklich|unproblematisch|in Ordnung|\bokay\b|\bok\b|kein Problem|harmlos/i, slug);
+    }
+  }
+});
+
+test("Energy Drinks und Kaffee: Koffein nach BfR und EFSA", () => {
+  const koffein = antwort("energy-drink", "Wie viel Koffein hat ein Energy Drink?");
+  assert.ok(koffein.startsWith("Eine 250ml-Dose hat laut BfR rund 80mg Koffein. In Deutschland sind höchstens 32mg pro 100ml erlaubt, eine 500ml-Dose enthält also bis zu 160mg."), koffein);
+  assert.ok(koffein.endsWith("Die EFSA hält für gesunde Erwachsene bis zu 200mg auf einmal und bis zu 400mg über den Tag aus allen Quellen für unbedenklich."), koffein);
+  // dieselben Werte wie im Koffein-Rechner
+  const rechner = readRepoFile("src/modules/koffein/index.tsx");
+  for (const [ml, mg] of [[250, 80], [500, 160]]) {
+    assert.equal((ml * 32) / 100, mg);
+    assert.ok(rechner.includes("caffeine: " + mg + ', serving: "1 Dose (' + ml + 'ml)"'), ml + " ml");
+  }
+  const gesund = antwort("energy-drink", "Sind Energy Drinks ungesund?");
+  for (const teil of [
+    "Beim Koffein gilt laut BfR eine 250ml-Dose für gesunde Erwachsene als unbedenklich, drei Dosen in kurzer Zeit (" + 3 * 80 + "mg) überschreiten die noch als sicher geltende Einzeldosis von 200mg.",
+    "Kinder, Schwangere, Stillende und koffeinempfindliche Menschen sollten auf Energy Drinks verzichten.",
+    "Problematisch ist laut BfR auch die Kombination mit größeren Mengen Alkohol oder ausgiebigem Sport.",
+  ]) assert.ok(gesund.includes(teil), gesund);
+  const tipps = lebensmittel("energy-drink").tips;
+  assert.equal(tipps.find((t) => t.title === "500ml-Dosen meiden").text, "Monster 500ml = ca. 246 kcal + bis zu 160mg Koffein. Das ist viel auf einmal. Lieber kleine 250ml-Dosen.");
+  assert.ok(tipps.find((t) => t.title === "Nicht mit Alkohol mischen").text.endsWith("größere Mengen Alkohol können sich zusammen mit dem Koffein laut BfR zusätzlich negativ auf das Herz-Kreislauf-System auswirken."));
+  assert.equal(
+    lebensmittel("kaffee").tips.find((t) => t.title === "EFSA-Limit beachten").text,
+    "Die EFSA hält für gesunde Erwachsene bis zu 400mg Koffein über den Tag (ca. 4 Tassen Filterkaffee) und bis zu 200mg auf einmal für unbedenklich. Höhere Mengen können laut BfR zu Nervosität, Schlaflosigkeit und Herzrasen führen.",
+  );
 });
 
 test("geänderte Lebensmittelseiten: Quellen verlinkt, FAQ-Schema und sichtbarer Text wie in den Daten, lastmod angepasst", () => {

@@ -389,7 +389,7 @@ const templateConfig: TemplateConfig = {
         {
           question: "Wie viele Kalorien sollte ich zum Abnehmen essen?",
           answer:
-            "Der individuelle Kalorienbedarf wird nach der Mifflin-St Jeor-Formel berechnet (validiert durch Frankenfield et al., 2005). Die DGE empfiehlt ein Defizit von 300–500 kcal/Tag für gesundes Abnehmen – das entspricht ca. 0,5 kg Gewichtsverlust pro Woche.",
+            "Der individuelle Kalorienbedarf wird nach der Mifflin-St Jeor-Formel berechnet (validiert durch Frankenfield et al., 2005). Zum Abnehmen isst du weniger Kalorien, als dein Körper verbraucht. Die DGE empfiehlt eine langfristige Gewichtsabnahme, die Ernährungsumstellung, Verhaltensänderung und mehr Bewegung verbindet (dge.de/gesunde-ernaehrung/diaeten-und-fasten). Für die Behandlung von Adipositas nennt der Leitfaden LEKuP von DGE, Deutscher Adipositas-Gesellschaft und weiteren Fachgesellschaften (2019, doi.org/10.1055/a-1030-5207) ein Energiedefizit von 500 bis 600 kcal pro Tag.",
         },
         {
           question:

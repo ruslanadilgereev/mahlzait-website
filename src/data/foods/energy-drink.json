@@ -184,12 +184,12 @@
     },
     {
       "title": "500ml-Dosen meiden",
-      "text": "Monster 500ml = ca. 246 kcal + ca. 173mg Koffein. Das ist zu viel auf einmal. Lieber kleine 250ml-Dosen.",
+      "text": "Monster 500ml = ca. 246 kcal + bis zu 160mg Koffein. Das ist viel auf einmal. Lieber kleine 250ml-Dosen.",
       "icon": "📏"
     },
     {
       "title": "Nicht mit Alkohol mischen",
-      "text": "Energy Drink + Alkohol (Vodka-Bull): zusätzliche Kalorien, und die Kombination maskiert die Alkoholwirkung. Gefährlich.",
+      "text": "Energy Drink + Alkohol (Vodka-Bull): zusätzliche Kalorien, und größere Mengen Alkohol können sich zusammen mit dem Koffein laut BfR zusätzlich negativ auf das Herz-Kreislauf-System auswirken.",
       "icon": "🚫"
     },
     {
@@ -209,7 +209,7 @@
     },
     {
       "question": "Wie viel Koffein hat ein Energy Drink?",
-      "answer": "Red Bull (250ml): ca. 76mg. Monster (500ml): ca. 173mg. Zum Vergleich: Kaffee (250ml) hat laut USDA ca. 100mg. Die EFSA empfiehlt max. 400mg/Tag."
+      "answer": "Eine 250ml-Dose hat laut BfR rund 80mg Koffein. In Deutschland sind höchstens 32mg pro 100ml erlaubt, eine 500ml-Dose enthält also bis zu 160mg. Zum Vergleich: Kaffee (250ml) hat laut USDA ca. 100mg. Die EFSA hält für gesunde Erwachsene bis zu 200mg auf einmal und bis zu 400mg über den Tag aus allen Quellen für unbedenklich."
     },
     {
       "question": "Machen Energy Drinks dick?",
@@ -217,11 +217,25 @@
     },
     {
       "question": "Sind Energy Drinks ungesund?",
-      "answer": "In Maßen (1-2 Dosen/Tag) sind sie für gesunde Erwachsene unbedenklich. Problematisch: hoher Zucker, viel Koffein auf einmal, und die Kombination mit Alkohol."
+      "answer": "Zuckergesüßte Getränke wie Energy Drinks sind laut DGE nicht empfehlenswert, sie erhöhen das Risiko für Übergewicht und Typ-2-Diabetes. Beim Koffein gilt laut BfR eine 250ml-Dose für gesunde Erwachsene als unbedenklich, drei Dosen in kurzer Zeit (240mg) überschreiten die noch als sicher geltende Einzeldosis von 200mg. Kinder, Schwangere, Stillende und koffeinempfindliche Menschen sollten auf Energy Drinks verzichten. Problematisch ist laut BfR auch die Kombination mit größeren Mengen Alkohol oder ausgiebigem Sport."
     },
     {
       "question": "Energy Drink oder Kaffee: Was hat weniger Kalorien?",
       "answer": "Schwarzer Kaffee (250ml): ca. 3 kcal. Red Bull (250ml): ca. 113 kcal. Sogar ein Cappuccino (ca. 55 kcal) hat weniger als ein Energy Drink. Sugar Free Energy Drinks liegen kalorienmäßig nahe bei Kaffee."
+    }
+  ],
+  "quellen": [
+    {
+      "titel": "DGE: Am besten Wasser trinken",
+      "url": "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/am-besten-wasser-trinken/"
+    },
+    {
+      "titel": "BfR: Fragen und Antworten zu Koffein (05.01.2026)",
+      "url": "https://www.bfr.bund.de/fragen-und-antworten/thema/fragen-und-antworten-zu-koffein-und-koffeinhaltigen-lebensmitteln-einschliesslich-energy-drinks/"
+    },
+    {
+      "titel": "EFSA: Koffein",
+      "url": "https://www.efsa.europa.eu/en/topics/topic/caffeine"
     }
   ],
   "related_foods": [
