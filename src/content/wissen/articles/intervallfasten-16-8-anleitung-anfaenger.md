@@ -307,7 +307,7 @@ Dieser Plan nutzt das 12:00–20:00 Uhr Essensfenster. Passe die Zeiten an deine
 
 ### Fehler 2: Zu wenig trinken
 ❌ Vergessen, in der Fastenphase zu trinken
-✅ Mindestens 2-3 Liter Wasser/Tag – hilft gegen Hunger und Kopfschmerzen
+✅ Auch in der Fastenphase trinken: Die DGE empfiehlt gesunden Erwachsenen [rund 1,5 Liter am Tag](https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/am-besten-wasser-trinken/), bei Sport oder Hitze mehr
 
 ### Fehler 3: In der Essensphase überessen
 ❌ "Ich hab 16 Stunden gefastet, jetzt darf ich alles"

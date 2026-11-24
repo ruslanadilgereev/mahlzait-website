@@ -78,7 +78,7 @@ Ultra-processed Foods sind das eigentliche Problem – nicht mysteriöse "Giftst
 
 ### 2. Ausreichend Wasser trinken
 
-Deine Nieren brauchen Flüssigkeit, um optimal zu arbeiten. 1,5-2 Liter am Tag reichen völlig – kein teurer Detox-Tee nötig.
+Deine Nieren brauchen Flüssigkeit, um optimal zu arbeiten. Die DGE empfiehlt gesunden Erwachsenen [rund 1,5 Liter am Tag](https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/am-besten-wasser-trinken/), ein teurer Detox-Tee ist dafür nicht nötig.
 
 ### 3. Genug Ballaststoffe essen
 

@@ -8,88 +8,75 @@ import { ConfigContext } from "utils/configContext";
 import type { TemplateConfig } from "utils/configType";
 
 import AuthorByline from "@components/AuthorByline";
+import { beispiele, beispielKg, faq, grundlage, hinweis, links, quellen, STAND } from "./faq";
+import {
+  ALTER_MAX,
+  ALTER_MIN,
+  ERWACHSEN_AB,
+  flaschen,
+  glaeser,
+  HITZETAG,
+  LEBENSLAGE_AB,
+  type Lebenslage,
+  liter,
+  richtwert,
+  richtwerte,
+  spanne,
+  SPORT_JE_STUNDE,
+  type Tag,
+  type Trinkmenge,
+  trinkmenge,
+  zahl,
+} from "./rechnung";
+
 interface Props {
   config: TemplateConfig;
 }
 
-interface WaterResult {
-  minimum: number;
-  optimal: number;
-  maximum: number;
-  perHour: number;
-  glasses: number;
-  bottles: number;
-}
+const lebenslagen: { id: Lebenslage; label: string; emoji: string }[] = [
+  { id: "keine", label: "Nein", emoji: "🙂" },
+  { id: "schwanger", label: "Schwanger", emoji: "🤰" },
+  { id: "stillend", label: "Stillend", emoji: "🤱" },
+];
 
-type ActivityLevel = "sedentary" | "light" | "moderate" | "active" | "athlete";
-type Climate = "cold" | "moderate" | "warm" | "hot";
+const tage: { id: Tag; label: string; desc: string; emoji: string }[] = [
+  { id: "normal", label: "Normaler Tag", desc: "Ohne Sport und Hitze", emoji: "🌤️" },
+  { id: "sport1", label: "1 Stunde Sport", desc: "oder anstrengende Arbeit", emoji: "🏃" },
+  { id: "sport2", label: "2 Stunden Sport", desc: "oder anstrengende Arbeit", emoji: "🏋️" },
+  { id: "hitze", label: "Hitzetag", desc: "Während einer Hitzewelle", emoji: "🔥" },
+];
 
 function WasserbedarfsRechnerPage({ config }: Props) {
-  const [weight, setWeight] = useState(75);
-  const [activityLevel, setActivityLevel] = useState<ActivityLevel>("moderate");
-  const [climate, setClimate] = useState<Climate>("moderate");
-  const [result, setResult] = useState<WaterResult | null>(null);
-
-  const activityMultipliers: Record<ActivityLevel, { factor: number; label: string; desc: string; emoji: string }> = {
-    sedentary: { factor: 1.0, label: "Wenig aktiv", desc: "Bürojob, kaum Bewegung", emoji: "💻" },
-    light: { factor: 1.1, label: "Leicht aktiv", desc: "1-2x Sport pro Woche", emoji: "🚶" },
-    moderate: { factor: 1.2, label: "Mässig aktiv", desc: "3-4x Sport pro Woche", emoji: "🏃" },
-    active: { factor: 1.35, label: "Sehr aktiv", desc: "5-6x Sport pro Woche", emoji: "🏋️" },
-    athlete: { factor: 1.5, label: "Athlet", desc: "Tägliches intensives Training", emoji: "🏆" },
-  };
-
-  const climateMultipliers: Record<Climate, { factor: number; label: string; desc: string; emoji: string }> = {
-    cold: { factor: 0.9, label: "Kalt", desc: "Unter 10°C", emoji: "❄️" },
-    moderate: { factor: 1.0, label: "Gemässigt", desc: "10-20°C", emoji: "🌤️" },
-    warm: { factor: 1.15, label: "Warm", desc: "20-30°C", emoji: "☀️" },
-    hot: { factor: 1.3, label: "Heiss", desc: "Über 30°C", emoji: "🔥" },
-  };
+  const [age, setAge] = useState(40);
+  const [lebenslage, setLebenslage] = useState<Lebenslage>("keine");
+  const [tag, setTag] = useState<Tag>("normal");
+  const [result, setResult] = useState<Trinkmenge | null>(null);
 
   const calculateWater = () => {
-    // Base: 35ml per kg body weight (DGE recommendation)
-    const baseWater = weight * 35;
-    
-    const activityFactor = activityMultipliers[activityLevel].factor;
-    const climateFactor = climateMultipliers[climate].factor;
-    
-    const optimal = Math.round(baseWater * activityFactor * climateFactor);
-    const minimum = Math.round(optimal * 0.8);
-    const maximum = Math.round(optimal * 1.2);
-    
-    // Assuming 16 waking hours
-    const perHour = Math.round(optimal / 16);
-    const glasses = Math.round(optimal / 250); // 250ml per glass
-    const bottles = Math.round((optimal / 500) * 10) / 10; // 500ml bottles
-
-    setResult({
-      minimum,
-      optimal,
-      maximum,
-      perHour,
-      glasses,
-      bottles,
-    });
+    setResult(trinkmenge(age, lebenslage, tag));
   };
 
   const waterSources = [
-    { name: "Wasser", ml: 250, emoji: "💧", note: "Beste Wahl" },
-    { name: "Ungesüsster Tee", ml: 250, emoji: "🍵", note: "Zählt voll" },
-    { name: "Kaffee", ml: 150, emoji: "☕", note: "Zählt zu ~50%" },
-    { name: "Mineralwasser", ml: 250, emoji: "🫧", note: "Beste Wahl" },
-    { name: "Verdünnte Säfte", ml: 200, emoji: "🧃", note: "1:3 mit Wasser" },
-    { name: "Suppen & Brühen", ml: 200, emoji: "🍲", note: "Zählt mit" },
+    { name: "Wasser", emoji: "💧", note: "Beste Wahl" },
+    { name: "Kräuter- und Früchtetee", emoji: "🍵", note: "Ungesüßt, zählt voll" },
+    { name: "Kaffee, schwarzer Tee", emoji: "☕", note: "Zählt mit, 3 bis 4 Tassen am Tag" },
+    { name: "Mineralwasser", emoji: "🫧", note: "Beste Wahl" },
+    { name: "Saftschorle", emoji: "🧃", note: "1 Teil Saft, 3 Teile Wasser" },
+    { name: "Suppen & Brühen", emoji: "🍲", note: "Zählen zum Wasser im Essen" },
   ];
 
   const dehydrationSigns = [
-    { sign: "Durst", severity: "leicht", emoji: "😐" },
-    { sign: "Dunkler Urin", severity: "leicht", emoji: "🚽" },
-    { sign: "Trockene Lippen", severity: "leicht", emoji: "👄" },
-    { sign: "Kopfschmerzen", severity: "mittel", emoji: "🤕" },
-    { sign: "Müdigkeit", severity: "mittel", emoji: "😴" },
-    { sign: "Konzentrationsschwäche", severity: "mittel", emoji: "🧠" },
-    { sign: "Schwindel", severity: "schwer", emoji: "💫" },
-    { sign: "Muskelkrämpfe", severity: "schwer", emoji: "💪" },
+    { sign: "Durst", emoji: "😐" },
+    { sign: "Dunkler Urin", emoji: "🚽" },
+    { sign: "Trockene Lippen", emoji: "👄" },
+    { sign: "Kopfschmerzen", emoji: "🤕" },
+    { sign: "Müdigkeit", emoji: "😴" },
+    { sign: "Konzentrationsschwäche", emoji: "🧠" },
+    { sign: "Schwindel", emoji: "💫" },
+    { sign: "Verwirrtheit", emoji: "😵" },
   ];
+
+  const note = result && hinweis(result);
 
   return (
     <ConfigContext.Provider value={config}>
@@ -108,9 +95,12 @@ function WasserbedarfsRechnerPage({ config }: Props) {
             <h1 className="text-3xl md:text-5xl font-extrabold leading-tight">
               Wasserbedarfs-Rechner 💧
             </h1>
-            <AuthorByline />
+            <AuthorByline updatedAt="2026-11-24" />
             <p className="mt-4 text-lg md:text-xl opacity-80 max-w-2xl mx-auto">
-              Berechne deinen optimalen täglichen Wasserbedarf basierend auf Gewicht, Aktivität und Klima. Trink genug – dein Körper wird es dir danken!
+              Wie viel solltest du am Tag trinken? Der Rechner zeigt den Richtwert der Deutschen Gesellschaft für Ernährung (DGE) für dein Alter und was sich an Tagen mit Sport oder Hitze ändert.
+            </p>
+            <p className="mt-4 text-sm opacity-70 max-w-2xl mx-auto">
+              Korrektur vom {STAND}: Bisher rechnete diese Seite mit 35 ml pro kg Körpergewicht als Trinkmenge. Laut DGE gilt dieser Wert für Getränke und Essen zusammen.
             </p>
           </header>
 
@@ -119,96 +109,104 @@ function WasserbedarfsRechnerPage({ config }: Props) {
             <div className="card-body p-6 md:p-8">
               <h2 className="card-title text-2xl mb-8">💧 Wasserbedarf berechnen</h2>
 
-              {/* Weight - Prominent Display */}
+              {/* Age - Prominent Display */}
               <div className="mb-8">
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-lg font-semibold">Körpergewicht</span>
+                  <span className="text-lg font-semibold">Alter</span>
                   <div className="flex items-baseline gap-1">
                     <input
                       type="number"
-                      min="40"
-                      max="180"
-                      value={weight}
-                      onChange={(e) => setWeight(Math.min(180, Math.max(40, Number(e.target.value))))}
+                      min={ALTER_MIN}
+                      max={ALTER_MAX}
+                      value={age}
+                      aria-label="Alter in Jahren"
+                      onFocus={(e) => e.target.select()}
+                      onChange={(e) => setAge(Math.min(ALTER_MAX, Math.max(ALTER_MIN, Number(e.target.value))))}
                       className="input input-bordered input-lg w-24 text-center text-3xl font-bold text-primary"
                     />
-                    <span className="text-xl font-medium opacity-70">kg</span>
+                    <span className="text-xl font-medium opacity-70">Jahre</span>
                   </div>
                 </div>
                 <input
                   type="range"
-                  min="40"
-                  max="180"
-                  value={weight}
-                  onChange={(e) => setWeight(Number(e.target.value))}
+                  min={ALTER_MIN}
+                  max={ALTER_MAX}
+                  value={age}
+                  aria-label="Alter in Jahren"
+                  onChange={(e) => setAge(Number(e.target.value))}
                   className="range range-primary range-lg"
                 />
                 <div className="flex justify-between text-sm px-1 mt-2 opacity-50">
-                  <span>40</span>
-                  <span>80</span>
-                  <span>120</span>
-                  <span>160</span>
-                  <span>180</span>
+                  <span>1</span>
+                  <span>25</span>
+                  <span>50</span>
+                  <span>75</span>
+                  <span>100</span>
                 </div>
               </div>
 
-              {/* Activity Level */}
-              <div className="mb-8">
-                <span className="text-lg font-semibold block mb-4">Aktivitätslevel</span>
-                <div className="grid gap-2">
-                  {Object.entries(activityMultipliers).map(([key, value]) => (
-                    <label
-                      key={key}
-                      className={`flex items-center gap-4 p-4 rounded-lg cursor-pointer transition-all ${
-                        activityLevel === key
-                          ? "bg-primary/10 border-2 border-primary"
-                          : "bg-base-200 border-2 border-transparent hover:border-base-300"
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="activity"
-                        className="radio radio-primary"
-                        checked={activityLevel === key}
-                        onChange={() => setActivityLevel(key as ActivityLevel)}
-                      />
-                      <span className="text-2xl">{value.emoji}</span>
-                      <div className="flex-1">
-                        <span className="font-medium">{value.label}</span>
-                        <span className="text-sm opacity-70 ml-2">({value.desc})</span>
-                      </div>
-                    </label>
-                  ))}
+              {/* Pregnancy and breastfeeding */}
+              {age >= LEBENSLAGE_AB && (
+                <div className="mb-8">
+                  <span className="text-lg font-semibold block mb-4">Schwanger oder stillend?</span>
+                  <div className="grid grid-cols-3 gap-3">
+                    {lebenslagen.map((item) => (
+                      <label
+                        key={item.id}
+                        className={`flex flex-col items-center p-4 rounded-lg cursor-pointer transition-all text-center ${
+                          lebenslage === item.id
+                            ? "bg-primary/10 border-2 border-primary"
+                            : "bg-base-200 border-2 border-transparent hover:border-base-300"
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name="lebenslage"
+                          className="radio radio-primary mb-2"
+                          checked={lebenslage === item.id}
+                          onChange={() => setLebenslage(item.id)}
+                        />
+                        <span className="text-3xl mb-1">{item.emoji}</span>
+                        <span className="font-medium">{item.label}</span>
+                      </label>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
 
-              {/* Climate */}
-              <div className="mb-8">
-                <span className="text-lg font-semibold block mb-4">Klima / Temperatur</span>
-                <div className="grid grid-cols-2 gap-3">
-                  {Object.entries(climateMultipliers).map(([key, value]) => (
-                    <label
-                      key={key}
-                      className={`flex flex-col items-center p-4 rounded-lg cursor-pointer transition-all text-center ${
-                        climate === key
-                          ? "bg-primary/10 border-2 border-primary"
-                          : "bg-base-200 border-2 border-transparent hover:border-base-300"
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="climate"
-                        className="radio radio-primary mb-2"
-                        checked={climate === key}
-                        onChange={() => setClimate(key as Climate)}
-                      />
-                      <span className="text-3xl mb-1">{value.emoji}</span>
-                      <span className="font-medium">{value.label}</span>
-                      <span className="text-xs opacity-70">{value.desc}</span>
-                    </label>
-                  ))}
+              {/* Sport and heat */}
+              {age >= ERWACHSEN_AB ? (
+                <div className="mb-8">
+                  <span className="text-lg font-semibold block mb-4">Wie sieht dein Tag aus?</span>
+                  <div className="grid grid-cols-2 gap-3">
+                    {tage.map((item) => (
+                      <label
+                        key={item.id}
+                        className={`flex flex-col items-center p-4 rounded-lg cursor-pointer transition-all text-center ${
+                          tag === item.id
+                            ? "bg-primary/10 border-2 border-primary"
+                            : "bg-base-200 border-2 border-transparent hover:border-base-300"
+                        }`}
+                      >
+                        <input
+                          type="radio"
+                          name="tag"
+                          className="radio radio-primary mb-2"
+                          checked={tag === item.id}
+                          onChange={() => setTag(item.id)}
+                        />
+                        <span className="text-3xl mb-1">{item.emoji}</span>
+                        <span className="font-medium">{item.label}</span>
+                        <span className="text-xs opacity-70">{item.desc}</span>
+                      </label>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ) : (
+                <p className="mb-8 text-sm opacity-70">
+                  Bei Sport und Hitze brauchen auch Kinder und Jugendliche mehr. Die Mengen dafür gelten für Erwachsene, deshalb rechnet der Rechner sie erst ab {ERWACHSEN_AB} Jahren dazu.
+                </p>
+              )}
 
               <button className="btn btn-primary btn-lg w-full text-lg" onClick={calculateWater}>
                 💧 Wasserbedarf berechnen
@@ -220,54 +218,62 @@ function WasserbedarfsRechnerPage({ config }: Props) {
                   <div className="divider">Dein Ergebnis</div>
 
                   <div className="text-center py-6">
-                    <div className="text-6xl font-bold text-primary">
-                      {(result.optimal / 1000).toFixed(1)}L
+                    <div className="text-4xl sm:text-6xl font-bold text-primary">
+                      {spanne(result, liter)} l
                     </div>
                     <div className="text-xl font-semibold mt-2 opacity-80">
-                      optimaler Wasserbedarf pro Tag
+                      Getränke pro Tag
                     </div>
                     <div className="text-lg mt-1 opacity-60">
-                      ({result.optimal} ml)
+                      ({spanne(result)} ml)
                     </div>
+                    <p className="text-sm mt-3 opacity-80 max-w-md mx-auto">{grundlage(result)}</p>
                   </div>
 
                   {/* Water Visual */}
                   <div className="flex flex-wrap justify-center gap-2 my-6 max-w-xs mx-auto">
-                    {Array.from({ length: Math.min(result.glasses, 8) }).map((_, i) => (
+                    {Array.from({ length: Math.min(glaeser(result.von), 8) }).map((_, i) => (
                       <div key={i} className="text-2xl">🥛</div>
                     ))}
-                    {result.glasses > 8 && <span className="text-xl self-center">+{result.glasses - 8}</span>}
+                    {glaeser(result.von) > 8 && <span className="text-xl self-center">+{glaeser(result.von) - 8}</span>}
                   </div>
 
                   <div className="grid gap-4 md:grid-cols-3 mt-6">
                     <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <h3 className="text-sm opacity-70">Gläser (250ml)</h3>
-                        <p className="text-2xl font-bold text-primary">{result.glasses}</p>
+                        <h3 className="text-sm opacity-70">Gläser (250 ml)</h3>
+                        <p className="text-2xl font-bold text-primary">{spanne(result, (ml) => zahl(glaeser(ml)))}</p>
                         <p className="text-xs opacity-60">pro Tag</p>
                       </div>
                     </div>
                     <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <h3 className="text-sm opacity-70">Flaschen (500ml)</h3>
-                        <p className="text-2xl font-bold text-secondary">{result.bottles}</p>
+                        <h3 className="text-sm opacity-70">Flaschen (500 ml)</h3>
+                        <p className="text-2xl font-bold text-secondary">{spanne(result, flaschen)}</p>
                         <p className="text-xs opacity-60">pro Tag</p>
                       </div>
                     </div>
                     <div className="card bg-base-200">
                       <div className="card-body py-4 text-center">
-                        <h3 className="text-sm opacity-70">Pro Stunde</h3>
-                        <p className="text-2xl font-bold">{result.perHour} ml</p>
-                        <p className="text-xs opacity-60">bei 16 Std. wach</p>
+                        <h3 className="text-sm opacity-70">Gesamtwasser</h3>
+                        <p className="text-2xl font-bold">{zahl(result.richtwert.gesamt)} ml</p>
+                        <p className="text-xs opacity-60">mit Essen, normaler Tag</p>
                       </div>
                     </div>
                   </div>
 
-                  <div className="flex justify-between text-sm mt-4 px-4">
-                    <span>Minimum: <strong>{(result.minimum / 1000).toFixed(1)}L</strong></span>
-                    <span>Optimal: <strong className="text-primary">{(result.optimal / 1000).toFixed(1)}L</strong></span>
-                    <span>Maximum: <strong>{(result.maximum / 1000).toFixed(1)}L</strong></span>
+                  <div className="flex flex-wrap justify-between gap-x-4 text-sm mt-4 px-4">
+                    <span>Getränke: <strong className="text-primary">{zahl(result.richtwert.getraenke)} ml</strong></span>
+                    <span>Wasser im Essen: <strong>{zahl(result.richtwert.festeNahrung)} ml</strong></span>
+                    <span>Oxidationswasser: <strong>{zahl(result.richtwert.oxidationswasser)} ml</strong></span>
                   </div>
+                  <p className="text-xs opacity-60 px-4">
+                    Zur Einordnung: So setzen sich laut DGE an einem normalen Tag {zahl(result.richtwert.gesamt)} ml Gesamtwasserzufuhr zusammen. Oxidationswasser entsteht im Stoffwechsel.
+                  </p>
+                  {note && <p className="text-sm opacity-80 px-4">{note}</p>}
+                  <p className="text-xs opacity-60 px-4">
+                    Der Richtwert gilt für gesunde Menschen bei durchschnittlichem Klima. Er ist nach unten begrenzt, es darf also mehr sein. Der Rechner ersetzt keine ärztliche Beratung.
+                  </p>
 
                   <div className="alert alert-info mt-4">
                     <svg
@@ -296,6 +302,104 @@ function WasserbedarfsRechnerPage({ config }: Props) {
           </div>
         </section>
 
+        {/* Calculation Section */}
+        <section className="pb-16">
+          <div className="max-w-screen-lg mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+                So rechnet der Wasserbedarfs-Rechner
+              </h2>
+              <p className="opacity-80">
+                Grundlage sind die{" "}
+                <a href={links.richtwerte} target="_blank" rel="noopener noreferrer" className="link link-primary">
+                  Richtwerte der DGE für die Wasserzufuhr
+                </a>{" "}
+                (Stand der Ableitung 2000, abgerufen am {STAND}). Die DGE leitet sie aus dem Energieumsatz ab, bei durchschnittlichem Klima in Deutschland: Gesamtwasserzufuhr minus Oxidationswasser minus Wasser aus dem Essen ergibt die Menge, die du trinken solltest. Dieser Wert hängt vom Alter ab, nicht vom Körpergewicht.
+              </p>
+
+              <div className="overflow-x-auto my-6">
+                <table className="table table-sm bg-base-200">
+                  <thead>
+                    <tr>
+                      <th>Gruppe</th>
+                      <th className="text-right">Getränke</th>
+                      <th className="text-right">Wasser im Essen</th>
+                      <th className="text-right">Oxidationswasser</th>
+                      <th className="text-right">Gesamt</th>
+                      <th className="text-right">Getränke und Essen je kg</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {richtwerte.map((r) => (
+                      <tr key={r.gruppe}>
+                        <td>{r.gruppe}</td>
+                        <td className="text-right whitespace-nowrap font-bold">{zahl(r.getraenke)} ml</td>
+                        <td className="text-right whitespace-nowrap">{zahl(r.festeNahrung)} ml</td>
+                        <td className="text-right whitespace-nowrap">{zahl(r.oxidationswasser)} ml</td>
+                        <td className="text-right whitespace-nowrap">{zahl(r.gesamt)} ml</td>
+                        <td className="text-right whitespace-nowrap">{r.jeKg} ml</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-sm opacity-70">
+                Werte pro Tag. Für Säuglinge gelten eigene Richtwerte (Muttermilch und Säuglingsnahrung), sie fehlen hier deshalb. Der Rechner gibt den Richtwert für Getränke aus, die DGE{" "}
+                <a href={links.fragenRichtwert} target="_blank" rel="noopener noreferrer" className="link">
+                  begrenzt ihn nach unten
+                </a>
+                .
+              </p>
+
+              <h3 className="text-xl font-bold mt-8 mb-3">Und die 35 ml pro kg Körpergewicht?</h3>
+              <p className="opacity-80">
+                Die stehen auch in der Tabelle der DGE, gelten aber für Getränke und feste Nahrung zusammen, ab 51 Jahren sind es {richtwert(58).jeKg} ml. Bei {beispielKg} kg sind {richtwert(40).jeKg} ml pro kg {zahl(beispielKg * richtwert(40).jeKg)} ml, das entspricht den {zahl(richtwert(40).getraenke)} ml Getränken und {zahl(richtwert(40).festeNahrung)} ml Wasser im Essen der Gruppe {richtwert(40).gruppe}. Einen Wert für Getränke pro kg nennt die DGE nicht.
+              </p>
+
+              <h3 className="text-xl font-bold mt-8 mb-3">Sport und Hitze</h3>
+              <ul className="list-disc pl-6 space-y-2 opacity-80">
+                <li>
+                  <strong>Sport und körperlich anstrengende Arbeit:</strong> zusätzlich {liter(SPORT_JE_STUNDE.von)} bis {liter(SPORT_JE_STUNDE.bis)} Liter pro Stunde können laut{" "}
+                  <a href={links.flyer} target="_blank" rel="noopener noreferrer" className="link link-primary">DGE</a>{" "}
+                  nötig sein. Der Rechner zählt das für 1 und 2 Stunden dazu. Pauschale Trinkmengen im Sport hält die{" "}
+                  <a href={links.sport} target="_blank" rel="noopener noreferrer" className="link link-primary">Arbeitsgruppe Sporternährung der DGE</a>{" "}
+                  für wenig sinnvoll, sie rät zum Trinken nach Durst und für lange Belastungen zum Wiegen vorher und nachher.
+                </li>
+                <li>
+                  <strong>Hitzewelle:</strong> etwa {HITZETAG.von / 1000} bis {HITZETAG.bis / 1000} Liter über den Tag verteilt empfiehlt das{" "}
+                  <a href={links.hitze} target="_blank" rel="noopener noreferrer" className="link link-primary">Bundesinstitut für Öffentliche Gesundheit (BIÖG)</a>
+                  . Faustregel der{" "}
+                  <a href={links.hitzeBlog} target="_blank" rel="noopener noreferrer" className="link link-primary">DGE</a>
+                  : tagsüber alle 1 bis 2 Stunden ein Glas Wasser (0,2 Liter). Für Sport an Hitzetagen nennen beide keine gemeinsame Menge, deshalb zählt der Rechner sie nicht zusammen.
+                </li>
+                <li>
+                  <strong>Ohne Zahl:</strong> Mehr brauchst du laut DGE auch bei trockener kalter Luft, Fieber, Erbrechen und Durchfall, viel Salz oder viel Protein.
+                </li>
+              </ul>
+
+              <h3 className="text-xl font-bold mt-8 mb-3">Beispiele</h3>
+              <div className="overflow-x-auto">
+                <table className="table table-sm bg-base-200">
+                  <thead>
+                    <tr>
+                      <th>Person und Tag</th>
+                      <th className="text-right">Getränke pro Tag</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {beispiele.map((b) => (
+                      <tr key={b.person}>
+                        <td>{b.person}</td>
+                        <td className="text-right font-bold">{spanne(trinkmenge(b.alter, b.lebenslage, b.tag))} ml</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Water Sources Section */}
         <section className="bg-base-200 py-16">
           <div className="max-w-screen-lg mx-auto px-4">
@@ -313,8 +417,14 @@ function WasserbedarfsRechnerPage({ config }: Props) {
                 </div>
               ))}
             </div>
-            <p className="text-center text-sm opacity-70 mt-6">
-              ⚠️ Alkohol und stark gezuckerte Getränke zählen nicht und entziehen dem Körper sogar Wasser!
+            <p className="text-center text-sm opacity-70 mt-6 max-w-3xl mx-auto">
+              Angaben nach{" "}
+              <a href={links.flyer} target="_blank" rel="noopener noreferrer" className="link">Flyer</a>{" "}
+              und{" "}
+              <a href={links.getraenke} target="_blank" rel="noopener noreferrer" className="link">Ernährungskreis der DGE</a>
+              . ⚠️ Alkoholische Getränke zählen dort nicht zu den Getränken, Milch zählt zu den Lebensmitteln. Zuckergesüßte Getränke sind mit etwa 80 bis 100 g Zucker pro Liter als{" "}
+              <a href={links.wasserTrinken} target="_blank" rel="noopener noreferrer" className="link">Durstlöscher ungeeignet</a>
+              .
             </p>
           </div>
         </section>
@@ -327,28 +437,21 @@ function WasserbedarfsRechnerPage({ config }: Props) {
             </h2>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4 max-w-4xl mx-auto">
               {dehydrationSigns.map((item, i) => (
-                <div 
-                  key={i} 
-                  className={`card shadow-xl ${
-                    item.severity === 'leicht' ? 'bg-warning/20' :
-                    item.severity === 'mittel' ? 'bg-orange-500/20' :
-                    'bg-error/20'
-                  }`}
-                >
+                <div key={i} className="card shadow-xl bg-warning/20">
                   <div className="card-body py-4 text-center">
                     <span className="text-3xl">{item.emoji}</span>
                     <h3 className="font-bold">{item.sign}</h3>
-                    <span className={`badge ${
-                      item.severity === 'leicht' ? 'badge-warning' :
-                      item.severity === 'mittel' ? 'badge-secondary' :
-                      'badge-error'
-                    }`}>
-                      {item.severity}
-                    </span>
                   </div>
                 </div>
               ))}
             </div>
+            <p className="text-center text-sm opacity-70 mt-6 max-w-3xl mx-auto">
+              Erste Anzeichen nach{" "}
+              <a href={links.fitImAlter} target="_blank" rel="noopener noreferrer" className="link">DGE, Fit im Alter</a>{" "}
+              und dem{" "}
+              <a href={links.flyer} target="_blank" rel="noopener noreferrer" className="link">Flyer der DGE</a>
+              . Verwirrtheit trifft vor allem ältere Menschen. Schon nach wenigen Tagen kann ein Flüssigkeitsmangel durch Kreislauf- und Nierenversagen lebensbedrohlich werden.
+            </p>
           </div>
         </section>
 
@@ -361,24 +464,14 @@ function WasserbedarfsRechnerPage({ config }: Props) {
             <div className="grid gap-6 md:grid-cols-2">
               <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title">🧠 Geistige Leistung</h3>
+                  <h3 className="card-title">🧠 Konzentration</h3>
                   <p className="opacity-80">
-                    Schon 1-2% Dehydrierung beeinträchtigt Konzentration und Gedächtnis. Dein Gehirn besteht zu 75% aus Wasser!
+                    Wer zu wenig trinkt, wird laut{" "}
+                    <a href={links.flyer} target="_blank" rel="noopener noreferrer" className="link">DGE</a>{" "}
+                    schnell müde und kann sich schlecht konzentrieren. Bei stärkerem Mangel nennt sie im{" "}
+                    <a href={links.hitzeBlog} target="_blank" rel="noopener noreferrer" className="link">Blog</a>{" "}
+                    auch Kopfschmerzen und eine verlängerte Reaktionszeit.
                   </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Bessere Konzentration</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Weniger Kopfschmerzen</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Schnellere Reaktionszeit</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
 
@@ -386,68 +479,37 @@ function WasserbedarfsRechnerPage({ config }: Props) {
                 <div className="card-body">
                   <h3 className="card-title">🏃 Körperliche Leistung</h3>
                   <p className="opacity-80">
-                    Muskeln bestehen zu 75% aus Wasser. Dehydrierung führt zu Leistungseinbrüchen und erhöht das Verletzungsrisiko.
+                    Schon leichte Flüssigkeitsdefizite vermindern laut{" "}
+                    <a href={links.hitzeBlog} target="_blank" rel="noopener noreferrer" className="link">DGE-Blog</a>{" "}
+                    die körperliche Leistungsfähigkeit. Defizite von 2 bis 4 Prozent des Körpergewichts gehen laut{" "}
+                    <a href={links.sport} target="_blank" rel="noopener noreferrer" className="link">Arbeitsgruppe Sporternährung</a>{" "}
+                    mit Einbußen bei Ausdauer, Kraft und kognitiver Leistung einher.
                   </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Mehr Ausdauer & Kraft</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Schnellere Regeneration</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Weniger Muskelkrämpfe</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
 
               <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title">🔥 Stoffwechsel & Abnehmen</h3>
+                  <h3 className="card-title">⚖️ Abnehmen</h3>
                   <p className="opacity-80">
-                    Wasser kurbelt den Stoffwechsel an und kann beim Abnehmen helfen. Ein Glas vor dem Essen reduziert Hunger.
+                    Mehr Wasser allein macht nicht schlank: In einer{" "}
+                    <a href={links.abnehmen} target="_blank" rel="noopener noreferrer" className="link">Meta-Analyse von acht Studien</a>{" "}
+                    mit übergewichtigen Erwachsenen war der Unterschied beim Gewicht mit 0,33 kg nicht signifikant. Sinnvoll ist Wasser statt zuckergesüßter Getränke, mehr dazu im Artikel{" "}
+                    <a href="/wissen/wasser-trinken-abnehmen-meta-analyse/" className="link">Hilft Wasser trinken beim Abnehmen?</a>
                   </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Erhöhter Grundumsatz (+30 kcal/500ml)</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Weniger Heisshunger</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Bessere Fettverbrennung</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
 
               <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
-                  <h3 className="card-title">✨ Haut & Aussehen</h3>
+                  <h3 className="card-title">🌡️ Transport und Temperatur</h3>
                   <p className="opacity-80">
-                    Ausreichend Wasser sorgt für strahlende Haut und reduziert Falten. Die Haut ist das grösste Organ deines Körpers.
+                    Dein Körper besteht laut{" "}
+                    <a href={links.wasserTrinken} target="_blank" rel="noopener noreferrer" className="link">DGE</a>{" "}
+                    ungefähr zur Hälfte aus Wasser. Es ist Bestandteil von Zellen und Körperflüssigkeiten, transportiert Nährstoffe und reguliert die Körpertemperatur. Über Nieren, Darm, Haut und Lunge gibst du ständig Wasser ab, im Schnitt 2.650 ml am Tag (
+                    <a href={links.richtwerte} target="_blank" rel="noopener noreferrer" className="link">DGE</a>
+                    , 19 bis unter 51 Jahre).
                   </p>
-                  <ul className="mt-4 space-y-2">
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Prallere, glattere Haut</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Weniger Augenringe</span>
-                    </li>
-                    <li className="flex items-start gap-2">
-                      <span className="text-success">✓</span>
-                      <span className="text-sm">Schnellere Heilung</span>
-                    </li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -485,36 +547,31 @@ function WasserbedarfsRechnerPage({ config }: Props) {
               Häufig gestellte Fragen zum Wasserbedarf
             </h2>
             <div className="space-y-4 max-w-2xl mx-auto">
-              {[
-                {
-                  q: "Wie viel Wasser sollte ich am Tag trinken?",
-                  a: "Die Faustregel ist 35ml pro kg Körpergewicht. Bei 70kg wären das 2.45 Liter. Sport, Hitze und bestimmte Erkrankungen erhöhen den Bedarf. Unser Rechner berücksichtigt all diese Faktoren.",
-                },
-                {
-                  q: "Kann ich zu viel Wasser trinken?",
-                  a: "Ja, aber es ist selten. Mehr als 5-6 Liter pro Tag können gefährlich sein (Wasservergiftung/Hyponatriämie). Halte dich an die Empfehlung und trinke nicht mehr als 1 Liter pro Stunde.",
-                },
-                {
-                  q: "Zählt Kaffee zur Flüssigkeitszufuhr?",
-                  a: "Teilweise. Kaffee hat eine leicht entwässernde Wirkung, aber der Effekt ist gering. 2-3 Tassen können zu etwa 50% angerechnet werden. Besser ist reines Wasser oder ungesüsster Tee.",
-                },
-                {
-                  q: "Woran erkenne ich, ob ich genug trinke?",
-                  a: "Der beste Indikator ist die Urinfarbe: hellgelb bis fast farblos = gut hydriert. Dunkelgelb oder bernsteinfarben = mehr trinken! Auch Durst, trockene Lippen und Kopfschmerzen sind Warnsignale.",
-                },
-                {
-                  q: "Sollte ich auch nachts trinken?",
-                  a: "Nachts pausiert der Körper und braucht weniger Wasser. Ein Glas vor dem Schlafen ist ok, aber zu viel stört den Schlaf. Trinke lieber morgens direkt ein grosses Glas, um das Defizit auszugleichen.",
-                },
-              ].map((faq, i) => (
+              {faq.map((item, i) => (
                 <div key={i} className="collapse collapse-plus bg-base-100 shadow">
                   <input type="radio" name="faq-accordion" />
-                  <div className="collapse-title text-lg font-medium">{faq.q}</div>
+                  <div className="collapse-title text-lg font-medium">{item.q}</div>
                   <div className="collapse-content">
-                    <p className="opacity-80">{faq.a}</p>
+                    <p className="opacity-80">{item.a}</p>
                   </div>
                 </div>
               ))}
+            </div>
+
+            <div className="max-w-2xl mx-auto">
+              <h2 className="text-xl font-bold mt-12 mb-3">Quellen</h2>
+              <ul className="list-disc pl-6 space-y-2 text-sm opacity-80">
+                {quellen.map((quelle) => (
+                  <li key={quelle.url}>
+                    <a href={quelle.url} className="link" target="_blank" rel="noopener noreferrer">
+                      {quelle.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm opacity-60 mt-6">
+                Alle Quellen gelesen am {STAND}. Der Rechner ersetzt keine ärztliche oder ernährungstherapeutische Beratung.
+              </p>
             </div>
           </div>
         </section>
@@ -526,7 +583,7 @@ function WasserbedarfsRechnerPage({ config }: Props) {
               Tracke deine Ernährung mit Mahlzait
             </h2>
             <p className="opacity-90 max-w-xl mx-auto mb-8">
-              Du weisst jetzt, wie viel du trinken solltest. Mit Mahlzait trackst du Kalorien, Makros und Flüssigkeit – einfach per Foto!
+              Du weißt jetzt, wie viel du trinken solltest. Mit Mahlzait trackst du Kalorien, Makros und Flüssigkeit, einfach per Foto!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a href={config.appStoreLink} className="btn btn-lg bg-white text-primary">

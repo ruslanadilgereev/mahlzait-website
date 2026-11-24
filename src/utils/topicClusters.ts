@@ -110,7 +110,7 @@ export const calculators: CalculatorEntry[] = [
     slug: "wasserbedarf-rechner",
     title: "Wasserbedarfs-Rechner",
     description:
-      "Wie viel Wasser brauchst du? Nach Gewicht, Aktivität und Klima.",
+      "Wie viel solltest du trinken? Nach Alter, mit den Richtwerten der DGE.",
     tags: ["Wasser", "Flüssigkeit", "Hydration"],
   },
   {

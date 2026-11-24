@@ -84,10 +84,10 @@ const calculators = [
   },
   {
     title: "Wasserbedarfs-Rechner",
-    desc: "Wie viel Wasser solltest du täglich trinken? Berechne deinen optimalen Wasserbedarf basierend auf Gewicht, Aktivität und Klima.",
+    desc: "Wie viel Wasser solltest du täglich trinken? Berechne deine Trinkmenge nach Alter mit den Richtwerten der DGE, dazu Sport und Hitze.",
     link: "/wasserbedarf-rechner",
     icon: "/3D/heart-front-color.webp",
-    features: ["Individueller Wasserbedarf", "Aktivität & Klima", "Praktische Tipps"],
+    features: ["Richtwerte der DGE", "Sport & Hitze", "Praktische Tipps"],
     color: "primary",
   },
   {

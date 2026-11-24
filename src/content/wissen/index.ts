@@ -209,7 +209,7 @@ export const articlesMeta: ArticleMeta[] = [
     tags: ["Intervallfasten", "Abnehmen", "16:8", "Anfänger", "Fastenzeit", "Anleitung", "Plan"],
     relatedCalculators: ["intervallfasten-rechner", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-22",
-    updatedAt: "2026-02-28",
+    updatedAt: "2026-11-24",
     readingTime: 18,
     featured: true,
     sources: [
@@ -248,6 +248,13 @@ export const articlesMeta: ArticleMeta[] = [
         journal: "uniklinik-ulm.de",
         year: 2026,
         url: "https://www.uniklinik-ulm.de/aktuelles/detailansicht/16-stunden-ohne-essen-wie-geht-intervallfasten.html",
+      },
+      {
+        title: "Gut essen und trinken: Am besten Wasser trinken",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE",
+        year: 2024,
+        url: "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/am-besten-wasser-trinken/",
       },
     ],
     kernaussage:
@@ -718,6 +725,7 @@ export const articlesMeta: ArticleMeta[] = [
     tags: ["Abnehmen", "Mythen", "Detox", "Ernährung", "Diät"],
     relatedCalculators: ["kaloriendefizit-berechnen", "kalorienbedarf-berechnen"],
     publishedAt: "2026-02-15",
+    updatedAt: "2026-11-24",
     readingTime: 7,
     featured: true,
     sources: [
@@ -755,6 +763,13 @@ export const articlesMeta: ArticleMeta[] = [
         journal: "Cochrane Österreich",
         year: 2023,
         url: "https://medizin-transparent.at/detox-der-mythos-vom-entgiften/",
+      },
+      {
+        title: "Gut essen und trinken: Am besten Wasser trinken",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE",
+        year: 2024,
+        url: "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/am-besten-wasser-trinken/",
       },
     ],
   },

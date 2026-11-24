@@ -351,7 +351,7 @@ function EssensplanPage({ config }: Props) {
               <li><strong>Einkaufsliste erstellen:</strong> Geh den Plan durch und notiere alle Zutaten. So kaufst du nur das, was du brauchst — das spart Geld und reduziert Food Waste.</li>
               <li><strong>Flexibel bleiben:</strong> Tausche Mahlzeiten innerhalb des Plans, wenn dir etwas nicht schmeckt. Achte nur darauf, dass die Kalorien und Makros ähnlich bleiben.</li>
               <li><strong>Mit Mahlzait tracken:</strong> Nutze die App, um deine tatsächliche Aufnahme zu tracken. So siehst du, ob Plan und Realität übereinstimmen.</li>
-              <li><strong>Wasser nicht vergessen:</strong> Trinke mindestens 2-3 Liter pro Tag. Oft wird Durst mit Hunger verwechselt.</li>
+              <li><strong>Wasser nicht vergessen:</strong> Die DGE empfiehlt gesunden Erwachsenen <a href="https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/am-besten-wasser-trinken/" target="_blank" rel="noopener noreferrer">rund 1,5 Liter am Tag</a>, bei Sport oder Hitze brauchst du mehr. Den Richtwert für dein Alter zeigt der <a href="/wasserbedarf-rechner/">Wasserbedarfs-Rechner</a>.</li>
               <li><strong>Nicht perfekt sein müssen:</strong> 80% Planeinhaltung reicht für gute Ergebnisse. Der beste Plan ist der, an den du dich halten kannst.</li>
             </ul>
           </div>
