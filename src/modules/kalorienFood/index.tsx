@@ -69,6 +69,8 @@ interface FoodData {
   tips: FoodTip[];
   faq: FoodFAQ[];
   related_foods: string[];
+  // Quellen zu Empfehlungen und Gesundheitsaussagen in Tipps und Fragen
+  quellen?: Array<{ titel: string; url: string }>;
   // Herkunft der Werte (docs/naehrwerte-herkunft-audit.md); fehlt bei offenen Seiten
   source?: string;
   // Zutaten mit FDC-ID oder mit den Werten einer anderen Seite (slug, Herstellerangabe)
@@ -567,6 +569,19 @@ function KalorienFoodPage({ config, food, relatedFoodsMeta, relatedArticles, foo
                   </div>
                 ))}
               </div>
+              {food.quellen && (
+                <p className="mt-4 text-sm opacity-70">
+                  Quellen zu den Empfehlungen:{" "}
+                  {food.quellen.map((quelle, i) => (
+                    <span key={quelle.url}>
+                      {i > 0 && " · "}
+                      <a href={quelle.url} target="_blank" rel="noopener noreferrer" className="underline hover:opacity-100">
+                        {quelle.titel}
+                      </a>
+                    </span>
+                  ))}
+                </p>
+              )}
             </div>
           </div>
 

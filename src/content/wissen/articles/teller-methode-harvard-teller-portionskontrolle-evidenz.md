@@ -28,7 +28,7 @@ Eine Meta-Analyse von Robinson und Kollegen (2022) bestätigte diesen "Portion-S
 
 ### Warum gerade dieses Verhältnis?
 
-Die 50/25/25-Aufteilung ist keine willkürliche Zahl, sondern eine praktische Umsetzung beider Prinzipien zugleich: Die Gemüsehälfte maximiert das kalorienarme Volumen (niedrige Energiedichte), das Protein-Viertel unterstützt Sättigung und Muskelerhalt im Defizit, und das begrenzte Beilagen-Viertel deckelt die energiedichteste Komponente. Empfehlungen wie der Healthy Eating Plate der Harvard School of Public Health und die Botschaften der [Deutschen Gesellschaft für Ernährung](https://www.dge.de/) ("Gemüse und Obst – nimm 5 am Tag", reichlich pflanzlich) gehen in dieselbe Richtung.
+Die 50/25/25-Aufteilung ist keine willkürliche Zahl, sondern eine praktische Umsetzung beider Prinzipien zugleich: Die Gemüsehälfte maximiert das kalorienarme Volumen (niedrige Energiedichte), das Protein-Viertel unterstützt Sättigung und Muskelerhalt im Defizit, und das begrenzte Beilagen-Viertel deckelt die energiedichteste Komponente. Empfehlungen wie der Healthy Eating Plate der Harvard School of Public Health und die der [Deutschen Gesellschaft für Ernährung](https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/) (mindestens 5 Portionen Obst und Gemüse pro Tag, überwiegend pflanzlich) gehen in dieselbe Richtung.
 
 ## Was heißt das praktisch?
 

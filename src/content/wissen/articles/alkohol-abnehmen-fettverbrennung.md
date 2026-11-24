@@ -162,7 +162,7 @@ Eine Studie zeigte: Nach einem Abend mit Alkohol ist die Muskelproteinsynthese u
 
 5. **Der Fressflash ist dein Feind:** Das ist der Moment, wo Diäten sterben. Plane deine Snacks vorher. Stelle dir was bereit. Oder geh ins Bett, bevor der Döner ruft
 
-6. **Nicht wöchentlich:** Gelegentlich ist okay. Jedes Wochenende durchsaufen ist mit Abnehmen kaum vereinbar
+6. **Nicht wöchentlich:** Ein gelegentliches Glas lässt sich in die Kalorienbilanz einplanen. Jedes Wochenende durchsaufen ist mit Abnehmen kaum vereinbar
 
 ### Die niedrigkalorischen Optionen
 
@@ -182,6 +182,7 @@ Eine Studie zeigte: Nach einem Abend mit Alkohol ist die Muskelproteinsynthese u
 - **Suchtgefahr:** Wir reden hier über moderaten Konsum. Bei Alkoholproblemen gelten andere Regeln
 - **Leberwerte:** Regelmäßiger Alkohol belastet die Leber – auch ohne Gewichtsprobleme ein Thema
 - **Schlafeffekte:** Selbst kleine Mengen verschlechtern die Schlafqualität, was indirekt Abnehmen erschwert
+- **Gesundheit:** „Moderat“ heißt hier nicht unbedenklich. Laut DGE gibt es keine sichere Alkoholmenge für einen unbedenklichen Konsum, sie empfiehlt seit August 2024, [auf alkoholische Getränke zu verzichten](https://www.dge.de/wissenschaft/stellungnahmen-und-positionspapiere/positionen/alkohol/). Mehr als 6 alkoholische Getränke pro Woche (mehr als 81 g Alkohol) sind [laut DGE](https://www.dge.de/gesunde-ernaehrung/faq/alkohol/) mit einem hohen Risiko für Folgeschäden verbunden.
 
 ---
 
@@ -189,7 +190,7 @@ Eine Studie zeigte: Nach einem Abend mit Alkohol ist die Muskelproteinsynthese u
 
 **Alkohol ist kein automatischer Diätkiller – aber ein Stolperstein mit Ansage.** Ja, er pausiert die Fettverbrennung temporär. Ja, er hat viele leere Kalorien. Aber das eigentliche Problem sind meist der Heißhunger danach und die Summe aller Kalorien eines Abends.
 
-Gelegentlich ein Glas Wein? Kein Drama, wenn du es einplanst. Jedes Wochenende durchfeiern mit Vollrausch und Döner? Dann darfst du dich nicht wundern, warum die Waage nicht runtergeht.
+Gelegentlich ein Glas Wein? Für die Kalorienbilanz machbar, wenn du es einplanst. Jedes Wochenende durchfeiern mit Vollrausch und Döner? Dann darfst du dich nicht wundern, warum die Waage nicht runtergeht.
 
 **Die Faustregel:** Je öfter und mehr du trinkst, desto schwerer wird Abnehmen. Aber "schwerer" heißt nicht "unmöglich" – wenn du die Kalorien ehrlich zählst und den Fressflash im Griff hast.
 

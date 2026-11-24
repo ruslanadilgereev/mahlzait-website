@@ -310,20 +310,23 @@ function AlkoholKalorienRechnerPage({ config }: Props) {
                     </div>
                   </div>
 
-                  {/* Health Warning */}
-                  {result.pureAlcoholGrams > 20 && (
-                    <div className="alert alert-warning mt-4">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                      </svg>
-                      <div>
-                        <p className="font-semibold">Hinweis zur Gesundheit</p>
-                        <p className="text-sm">
-                          Die DGE empfiehlt maximal 10g Alkohol/Tag für Frauen und 20g für Männer.
-                        </p>
-                      </div>
+                  {/* Health Warning: zu jedem Ergebnis, die DGE nennt keine sichere Menge */}
+                  <div className="alert alert-warning mt-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                    </svg>
+                    <div>
+                      <p className="font-semibold">Hinweis zur Gesundheit</p>
+                      <p className="text-sm">
+                        Laut DGE gibt es keine sichere Alkoholmenge für einen unbedenklichen Konsum, sie empfiehlt,
+                        auf alkoholische Getränke zu verzichten. Die früheren Richtwerte (10 g Alkohol am Tag für
+                        Frauen, 20 g für Männer) hat sie im August 2024 abgelöst. Quelle:{" "}
+                        <a href="https://www.dge.de/gesunde-ernaehrung/faq/alkohol/" target="_blank" rel="noopener noreferrer" className="underline">
+                          DGE, Fragen und Antworten zu Alkohol
+                        </a>
+                      </p>
                     </div>
-                  )}
+                  </div>
 
                   <div className="alert alert-info mt-4">
                     <svg

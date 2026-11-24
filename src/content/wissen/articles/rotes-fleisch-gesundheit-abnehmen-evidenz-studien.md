@@ -16,7 +16,7 @@ Rotes Fleisch hat einen schlechten Ruf - mal als Krebsrisiko, mal als unverzicht
 
 2015 wertete eine Arbeitsgruppe der Internationalen Agentur für Krebsforschung (IARC) über 800 Studien aus. Das Ergebnis: Verarbeitetes Fleisch wurde in **Gruppe 1** ("krebserregend für den Menschen") eingestuft, unverarbeitetes rotes Fleisch in **Gruppe 2A** ("wahrscheinlich krebserregend"). Die Gruppe gab an, dass jede täglich verzehrte Portion von 50 g verarbeitetem Fleisch das Risiko für Darmkrebs (kolorektales Karzinom) um etwa **18 %** erhöht (Bouvard et al., Lancet Oncology 2015).
 
-Wichtig zur Einordnung: Die Gruppen-Einstufung beschreibt die **Stärke der Beweislage**, nicht die Gefährlichkeit. Verarbeitetes Fleisch ist in der gleichen Beweis-Gruppe wie Tabak, aber das absolute Krebsrisiko durch eine Scheibe Schinken ist um Größenordnungen geringer als durch Rauchen.
+Wichtig zur Einordnung: Die Gruppen-Einstufung beschreibt die **Stärke der Beweislage**, nicht die Gefährlichkeit. Verarbeitetes Fleisch steht in derselben Gruppe wie Tabakrauchen, das heißt laut [IARC](https://www.iarc.who.int/wp-content/uploads/2018/11/Monographs-QA_Vol114.pdf) aber nicht, dass beides gleich gefährlich ist. Zum Vergleich nennt sie (Stand 2015) weltweit rund 34.000 Krebstodesfälle pro Jahr durch eine Ernährung mit viel verarbeitetem Fleisch und etwa 1 Million durch Tabakrauchen.
 
 ### Herz-Kreislauf-Erkrankungen und Gesamtsterblichkeit
 
@@ -36,13 +36,13 @@ Entscheidend ist die Zubereitung: Mageres Rinderfilet (rund 139 kcal/100 g) ist 
 - **Maßvoll statt Verzicht**: Die Deutsche Gesellschaft für Ernährung (DGE) empfiehlt seit März 2024, nicht mehr als 300 g Fleisch und Wurst pro Woche zu essen.
 - **Magere Stücke wählen**: Filet, mageres Hackfleisch oder Geflügel statt fetter, panierter Varianten - das senkt Kalorien und gesättigte Fette.
 - **Schonend garen**: Starkes Anbraten und Grillen über offener Flamme fördert die Bildung problematischer Verbindungen; Schmoren oder kürzeres Garen ist günstiger.
-- **Fürs Abnehmen**: Auf die Gesamtkalorien achten - der [Kalorienbedarf](/kalorienbedarf-berechnen/) gibt den Rahmen vor, in dem Fleisch problemlos Platz hat.
+- **Fürs Abnehmen**: Auf die Gesamtkalorien achten - der [Kalorienbedarf](/kalorienbedarf-berechnen/) gibt den Rahmen vor.
 
 ## Limitationen und Einordnung
 
 Die wichtigste Einschränkung: Fast alle Daten stammen aus **Beobachtungsstudien**. Diese können Assoziationen, aber keine Ursache-Wirkung-Beziehung beweisen. Menschen mit hohem Wurstkonsum rauchen statistisch häufiger, bewegen sich weniger und essen weniger Gemüse - solche Störfaktoren lassen sich nie vollständig herausrechnen.
 
-2019 sorgte eine umstrittene Leitliniengruppe (NutriRECS) für Aufsehen, indem sie auf Basis derselben Daten empfahl, den bisherigen Fleischkonsum nicht zwingend zu reduzieren - mit der Begründung, die Evidenz sei von **niedriger Sicherheit** und die absoluten Effekte klein. Diese Einschätzung wurde heftig kritisiert, zeigt aber: Die Effektgrößen sind real, ihre praktische Relevanz für die einzelne Person ist aber begrenzt und Gegenstand der Debatte. Wer ohnehin abwechslungsreich isst und wenig verarbeitetes Fleisch konsumiert, muss sich keine großen Sorgen machen.
+2019 sorgte eine umstrittene Leitliniengruppe (NutriRECS) für Aufsehen, indem sie auf Basis derselben Daten empfahl, den bisherigen Fleischkonsum nicht zwingend zu reduzieren - mit der Begründung, die Evidenz sei von **niedriger Sicherheit** und die absoluten Effekte klein. Diese Einschätzung wurde heftig kritisiert, zeigt aber: Die Effektgrößen sind real, ihre praktische Relevanz für die einzelne Person ist aber begrenzt und Gegenstand der Debatte. Eine unbedenkliche Menge nennt die [WHO](https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat) nicht: Das Risiko steigt mit der Menge.
 
 ## Fazit
 

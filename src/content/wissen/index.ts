@@ -758,6 +758,7 @@ export const articlesMeta: ArticleMeta[] = [
     tags: ["Abnehmen", "Alkohol", "Fettverbrennung", "Mythen", "Kalorien"],
     relatedCalculators: ["alkohol-kalorien-rechner", "kaloriendefizit-berechnen"],
     publishedAt: "2026-02-14",
+    updatedAt: "2026-11-24",
     readingTime: 9,
     featured: true,
     sources: [
@@ -806,6 +807,20 @@ export const articlesMeta: ArticleMeta[] = [
         year: 2014,
         doi: "10.1371/journal.pone.0088384",
         url: "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0088384",
+      },
+      {
+        title: "Alkohol: Zufuhr in Deutschland, gesundheitliche sowie soziale Folgen und Ableitung von Handlungsempfehlungen",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE-Positionspapier",
+        year: 2024,
+        url: "https://www.dge.de/wissenschaft/stellungnahmen-und-positionspapiere/positionen/alkohol/",
+      },
+      {
+        title: "Ausgewählte Fragen und Antworten zur Position der DGE zu Alkohol",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE",
+        year: 2025,
+        url: "https://www.dge.de/gesunde-ernaehrung/faq/alkohol/",
       },
     ],
   },
@@ -4923,13 +4938,27 @@ export const articlesMeta: ArticleMeta[] = [
         journal: "DGE-Empfehlungen „Gut essen und trinken“",
         year: 2024,
         url: "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/fleisch-und-wurst/"
+      },
+      {
+        title: "Carcinogenicity of red and processed meat",
+        authors: "World Health Organization",
+        journal: "WHO, Questions and answers",
+        year: 2026,
+        url: "https://www.who.int/news-room/questions-and-answers/item/cancer-carcinogenicity-of-the-consumption-of-red-meat-and-processed-meat"
+      },
+      {
+        title: "Q&A on the carcinogenicity of the consumption of red meat and processed meat",
+        authors: "International Agency for Research on Cancer",
+        journal: "IARC Monographs, Volume 114",
+        year: 2015,
+        url: "https://www.iarc.who.int/wp-content/uploads/2018/11/Monographs-QA_Vol114.pdf"
       }
     ],
     kernaussage: "Die WHO/IARC stuft verarbeitetes Fleisch als krebserregend (Gruppe 1) und unverarbeitetes rotes Fleisch als wahrscheinlich krebserregend (Gruppe 2A) ein. Große Kohortenstudien verbinden vor allem verarbeitetes Fleisch mit erhöhtem Risiko für Darmkrebs und Herz-Kreislauf-Erkrankungen. Die absolute Risikoerhöhung ist moderat, die Evidenzstärke umstritten. Fürs Abnehmen entscheidet die Kalorienbilanz, nicht das Fleisch selbst.",
     faqs: [
       {
         question: "Ist rotes Fleisch wirklich krebserregend?",
-        answer: "Die WHO-Krebsforschungsagentur IARC stuft verarbeitetes Fleisch als krebserregend (Gruppe 1) und unverarbeitetes rotes Fleisch als wahrscheinlich krebserregend (Gruppe 2A) ein. Die Einstufung beschreibt die Stärke der Beweislage, nicht das absolute Risiko - dieses ist bei normalem Konsum deutlich geringer als etwa beim Rauchen."
+        answer: "Die WHO-Krebsforschungsagentur IARC stuft verarbeitetes Fleisch als krebserregend (Gruppe 1) und unverarbeitetes rotes Fleisch als wahrscheinlich krebserregend (Gruppe 2A) ein. Die Einstufung beschreibt die Stärke der Beweislage, nicht die Höhe des Risikos: Dass verarbeitetes Fleisch in derselben Gruppe steht wie Tabakrauchen, heißt laut IARC nicht, dass beides gleich gefährlich ist."
       },
       {
         question: "Worin liegt der Unterschied zwischen rotem und verarbeitetem Fleisch?",
@@ -6841,6 +6870,7 @@ export const articlesMeta: ArticleMeta[] = [
       "kalorienbedarf-berechnen"
     ],
     publishedAt: "2026-06-16",
+    updatedAt: "2026-11-24",
     readingTime: 7,
     sources: [
       {
@@ -6865,6 +6895,13 @@ export const articlesMeta: ArticleMeta[] = [
         year: 2022,
         doi: "10.1017/S0007114522000903",
         pmid: "35387692"
+      },
+      {
+        title: "Gut essen und trinken: die DGE-Empfehlungen",
+        authors: "Deutsche Gesellschaft für Ernährung",
+        journal: "DGE",
+        year: 2024,
+        url: "https://www.dge.de/gesunde-ernaehrung/gut-essen-und-trinken/dge-empfehlungen/"
       }
     ],
     kernaussage: "Die Teller-Methode füllt den Teller zur Hälfte mit Gemüse und je zu einem Viertel mit Protein und stärkehaltiger Beilage. Das senkt die Energiedichte der Mahlzeit. In randomisierten Studien reduzierte eine geringere Energiedichte die tägliche Kalorienaufnahme deutlich (gepoolter Effekt SMD −1,0), während kleinere Portionen die akute Aufnahme um rund ein Drittel senken. Die Methode ist eine einfache, evidenzbasierte Strategie zur Kalorienreduktion ohne Zählen.",
